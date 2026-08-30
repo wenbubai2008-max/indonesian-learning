@@ -1,14 +1,10 @@
 {
   "dates": [
-    {"date":"2026-08-22","am":true,"pm":false,"historical_reconstruction":true,"day":1},
-    {"date":"2026-08-23","am":true,"pm":false,"historical_reconstruction":true,"day":2},
-    {"date":"2026-08-24","am":true,"pm":false,"historical_reconstruction":true,"day":3},
-    {"date":"2026-08-25","am":true,"pm":false,"historical_reconstruction":true,"day":4},
-    {"date":"2026-08-26","am":true,"pm":false,"historical_reconstruction":true,"day":5},
-    {"date":"2026-08-27","am":true,"pm":false,"historical_reconstruction":true},
-    {"date":"2026-08-28","am":true,"pm":false,"historical_reconstruction":true,"day":6},
-    {"date":"2026-08-29","am":true,"pm":false,"historical_reconstruction":true,"day":7}
+    {"date":"2026-08-27","am":true,"pm":false,"historical_reconstruction":true,"verified":"known_history"},
+    {"date":"2026-08-28","am":true,"pm":false,"historical_reconstruction":true,"verified":"known_history","day":6},
+    {"date":"2026-08-29","am":true,"pm":false,"historical_reconstruction":true,"verified":"known_history","day":7},
+    {"date":"2026-08-30","am":true,"pm":false,"historical_reconstruction":true,"verified":"partial_screenshot"}
   ],
   "updated":"2026-08-30",
-  "note":"08:00 historical archive reconstructed from the original 每日印尼语学习8点 conversation. Exact recoverable content is preserved; missing original passages/questions are marked as historical summaries rather than fabricated. Automated full archive continues from 2026-08-31."
+  "note":"Only historical lessons supported by verifiable prior records or user-provided screenshots are listed. 2026-08-30 currently contains the directly visible screenshot segment only. Unverified reconstructed dates were removed."
 }
