@@ -1,1 +1,9 @@
-{"dates":[],"updated":"2026-08-30","note":"Daily archive starts from automated website delivery."}
+{
+  "dates": [
+    {"date":"2026-08-27","am":true,"pm":false,"historical_reconstruction":true},
+    {"date":"2026-08-28","am":true,"pm":false,"historical_reconstruction":true},
+    {"date":"2026-08-29","am":true,"pm":false,"historical_reconstruction":true}
+  ],
+  "updated":"2026-08-30",
+  "note":"Recovered historical 08:00 lessons are included where records are verifiable; automated full archive continues from 2026-08-31."
+}
