@@ -1,133 +1,91 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>印尼语学习 · 互动试用版</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>印尼语学习</title>
 <style>
-  :root{
-    --bg:#f6f7fb;--card:#fff;--text:#1f2937;--muted:#6b7280;--line:#e5e7eb;
-    --accent:#4f46e5;--ok:#15803d;--bad:#b91c1c;--soft:#eef2ff;--warn:#b45309;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text)}
-  .wrap{max-width:860px;margin:0 auto;padding:28px 18px 60px}
-  .top{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:18px}
-  h1{margin:0;font-size:28px}.sub{color:var(--muted);font-size:14px;margin-top:6px}
-  .stats{background:var(--card);border:1px solid var(--line);padding:10px 14px;border-radius:14px;font-size:14px;white-space:nowrap}
-  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 18px}
-  .tab{border:1px solid var(--line);background:#fff;padding:9px 14px;border-radius:999px;cursor:pointer;font-weight:600}
-  .tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 8px 30px rgba(31,41,55,.06)}
-  .meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:14px;margin-bottom:16px}
-  .word{font-size:34px;font-weight:800;letter-spacing:.2px;margin:4px 0 10px}
-  .root{color:var(--muted);font-size:15px;margin-bottom:18px}
-  .question{font-size:20px;font-weight:700;margin:10px 0 16px}
-  .options{display:grid;gap:10px}
-  .opt{width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:14px;padding:14px 16px;font-size:16px;cursor:pointer;transition:.15s}
-  .opt:hover{border-color:#a5b4fc;background:#fafaff}.opt.correct{border-color:#86efac;background:#f0fdf4}.opt.wrong{border-color:#fecaca;background:#fef2f2}
-  .feedback{min-height:46px;margin-top:14px;padding:12px 14px;border-radius:12px;display:none;font-size:15px;line-height:1.6}
-  .feedback.show{display:block}.feedback.ok{background:#f0fdf4;color:var(--ok)}.feedback.bad{background:#fef2f2;color:var(--bad)}
-  .cn{margin-top:14px;padding:14px;background:#f9fafb;border-radius:12px;display:none;line-height:1.7}.cn.show{display:block}
-  .controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-  button.action{border:0;border-radius:12px;padding:11px 16px;font-weight:700;cursor:pointer}
-  .primary{background:var(--accent);color:#fff}.secondary{background:#eef2f7;color:#374151}.ghost{background:#fff;border:1px solid var(--line)!important}
-  .memory{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;border-top:1px solid var(--line);padding-top:18px}
-  .memory button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 13px;cursor:pointer}
-  .memory .know{color:var(--ok)}.memory .fuzzy{color:var(--warn)}.memory .dont{color:var(--bad)}
-  .hidden{display:none}
-  .sentence{font-size:20px;line-height:1.65;font-weight:650;margin:10px 0 14px}
-  .pill{display:inline-block;background:var(--soft);color:var(--accent);border-radius:999px;padding:5px 9px;font-size:13px;margin-right:6px}
-  @media(max-width:640px){.top{align-items:flex-start;flex-direction:column}.word{font-size:30px}.card{padding:18px}.sentence{font-size:18px}}
+:root{--bg:#f4f7fb;--card:#fff;--text:#172033;--muted:#6b7280;--line:#e5e7eb;--accent:#3157d5;--soft:#eef3ff;--ok:#16803b;--bad:#b42318;--warn:#a15c00}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text)}
+.wrap{max-width:920px;margin:auto;padding:24px 16px 60px}.head{display:flex;justify-content:space-between;gap:16px;align-items:center}.head h1{margin:0;font-size:28px}.sub{color:var(--muted);font-size:14px;margin-top:5px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}.stat b{display:block;font-size:22px;margin-top:4px}.label{font-size:12px;color:var(--muted)}
+.nav{display:flex;gap:8px;overflow:auto;padding-bottom:6px;margin-bottom:14px}.nav button,.filter button{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font-weight:700;cursor:pointer}.nav button.active,.filter button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 28px rgba(20,30,60,.05)}.hidden{display:none}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:13px}.word{font-size:34px;font-weight:800;margin:10px 0 4px}.root{color:var(--muted);margin-bottom:14px}.q{font-size:19px;font-weight:750;line-height:1.55;margin:12px 0}.opts{display:grid;gap:9px}.opt{border:1px solid var(--line);background:#fff;padding:13px 14px;border-radius:13px;text-align:left;font-size:16px;cursor:pointer}.opt:hover{background:#fafbff;border-color:#aab8ef}.opt.good{background:#eefaf1;border-color:#8fd3a4}.opt.bad{background:#fff2f0;border-color:#f0aaa2}
+.feedback,.explain,.cn{margin-top:12px;padding:12px 14px;border-radius:12px;line-height:1.65}.feedback{display:none}.feedback.show{display:block}.feedback.good{background:#eefaf1;color:var(--ok)}.feedback.bad{background:#fff2f0;color:var(--bad)}.explain,.cn{display:none;background:#f7f8fb}.showblock{display:block!important}
+.actions,.memory,.filter{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.actions button,.memory button{border:0;border-radius:11px;padding:10px 14px;font-weight:700;cursor:pointer}.primary{background:var(--accent);color:#fff}.secondary{background:#eef1f6}.memory{border-top:1px solid var(--line);padding-top:14px}.memory button{background:#fff;border:1px solid var(--line)}.know{color:var(--ok)}.fuzzy{color:var(--warn)}.dont{color:var(--bad)}
+.sentence{font-size:19px;line-height:1.75;font-weight:650}.chips{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.chip{background:var(--soft);color:var(--accent);padding:5px 9px;border-radius:999px;font-size:13px}.list{display:grid;gap:10px}.item{border:1px solid var(--line);border-radius:14px;padding:14px}.item b{font-size:18px}.muted{color:var(--muted);font-size:14px}.empty{text-align:center;color:var(--muted);padding:28px}
+@media(max-width:650px){.head{align-items:flex-start;flex-direction:column}.stats{grid-template-columns:repeat(2,1fr)}.word{font-size:30px}.card{padding:18px}}
 </style>
 </head>
-<body>
-<div class="wrap">
-  <div class="top">
-    <div>
-      <h1>印尼语学习</h1>
-      <div class="sub">互动试用版 · 选择题可直接点击作答</div>
-    </div>
-    <div class="stats">今日：<b id="done">0</b> 题 ｜ 正确：<b id="correct">0</b></div>
-  </div>
+<body><div class="wrap">
+<div class="head"><div><h1>印尼语学习</h1><div class="sub">高频词 · 真实口语 · 词根词缀 · 自动记录掌握度</div></div><div class="muted" id="today"></div></div>
+<div class="stats"><div class="stat"><span class="label">今日答题</span><b id="sDone">0</b></div><div class="stat"><span class="label">正确率</span><b id="sRate">0%</b></div><div class="stat"><span class="label">已会</span><b id="sKnow">0</b></div><div class="stat"><span class="label">待复习</span><b id="sReview">0</b></div></div>
+<div class="nav"><button class="active" data-page="quiz">选择题</button><button data-page="review">复习不会的</button><button data-page="sentence">句子</button><button data-page="affix">前后缀</button><button data-page="progress">学习记录</button></div>
 
-  <div class="tabs">
-    <button class="tab active" data-mode="quiz">选择题</button>
-    <button class="tab" data-mode="sentence">句子学习</button>
-    <button class="tab" data-mode="root">词根词缀</button>
-  </div>
+<section id="quiz" class="card page"><div class="filter"><button class="active" data-mode="all">综合</button><button data-mode="cn2id">中文 → 印尼语</button><button data-mode="id2cn">印尼语 → 中文</button><button data-mode="scene">场景句</button></div><div class="meta"><span id="qnum"></span><span id="qtag"></span></div><div class="word" id="qword"></div><div class="root" id="qroot"></div><div class="q" id="qtext"></div><div class="opts" id="opts"></div><div class="feedback" id="feedback"></div><div class="actions"><button class="secondary" id="exBtn">显示解析</button><button class="primary" id="nextBtn">下一题</button></div><div class="explain" id="explain"></div><div class="memory"><span class="muted" style="align-self:center">掌握度：</span><button class="know" onclick="mark('know')">会了</button><button class="fuzzy" onclick="mark('fuzzy')">模糊</button><button class="dont" onclick="mark('dont')">不会</button><span id="markTip" class="muted" style="align-self:center"></span></div></section>
 
-  <div class="card" id="quizMode">
-    <div class="meta"><span id="qnum">第 1 / 5 题</span><span class="pill">A2-B1</span></div>
-    <div class="word" id="qword"></div>
-    <div class="root" id="qroot"></div>
-    <div class="question" id="qtext"></div>
-    <div class="options" id="options"></div>
-    <div class="feedback" id="feedback"></div>
-    <div class="controls">
-      <button class="action secondary" id="showExplain">显示解析</button>
-      <button class="action primary" id="nextBtn">下一题</button>
-    </div>
-    <div class="cn" id="explain"></div>
-    <div class="memory">
-      <span style="color:var(--muted);align-self:center">这个词：</span>
-      <button class="know" onclick="remember('会了')">✓ 会了</button>
-      <button class="fuzzy" onclick="remember('模糊')">~ 模糊</button>
-      <button class="dont" onclick="remember('不会')">× 不会</button>
-      <span id="memStatus" style="color:var(--muted);align-self:center"></span>
-    </div>
-  </div>
-
-  <div class="card hidden" id="sentenceMode">
-    <div class="meta"><span>句子学习</span><span class="pill">真实理解</span></div>
-    <div class="sentence">Cuaca amat cerah tapi ada ancaman badai yang mengancam.</div>
-    <div><span class="pill">ancaman = 威胁</span><span class="pill">mengancam = 威胁、构成威胁</span></div>
-    <div class="controls">
-      <button class="action secondary" onclick="document.getElementById('sentenceCn').classList.toggle('show')">显示 / 隐藏中文</button>
-    </div>
-    <div class="cn" id="sentenceCn">天气非常晴朗，但有暴风雨的威胁正在逼近。</div>
-  </div>
-
-  <div class="card hidden" id="rootMode">
-    <div class="meta"><span>词根词缀</span><span class="pill">构词</span></div>
-    <div class="word">mengancam</div>
-    <div class="root">词根：<b>ancam</b>（威胁）</div>
-    <div class="sentence">meng- + ancam → mengancam</div>
-    <div class="cn show">词根 <b>ancam</b> 表示“威胁”。加上动词前缀后形成 <b>mengancam</b>，意思是“威胁某人 / 对……构成威胁”。相关名词：<b>ancaman</b> = 威胁。</div>
-  </div>
+<section id="review" class="card page hidden"><div class="meta"><span>优先复习“不会 / 模糊”</span><span id="reviewCount"></span></div><div id="reviewBox"></div></section>
+<section id="sentence" class="card page hidden"><div class="meta"><span>自然句子学习</span><span id="sentNum"></span></div><div class="sentence" id="sentText"></div><div class="chips" id="sentChips"></div><div class="actions"><button class="secondary" id="sentCnBtn">显示 / 隐藏中文</button><button class="primary" id="sentNext">下一句</button></div><div class="cn" id="sentCn"></div></section>
+<section id="affix" class="card page hidden"><div class="meta"><span>前后缀规律</span><span>先看规律，再看例词</span></div><div class="list" id="affixList"></div></section>
+<section id="progress" class="card page hidden"><div class="meta"><span>浏览器本地学习记录</span><span>不会上传个人数据</span></div><div class="filter"><button onclick="clearProgress()">清空学习记录</button></div><div class="list" id="progressList"></div></section>
 </div>
-
 <script>
-const data = [
-  {w:'mengancam',root:'词根：ancam',q:'“mengancam” 最接近下面哪个意思？',opts:['保护','威胁','等待','解释'],ans:1,ex:'mengancam = 威胁、构成威胁。词根 ancam；ancaman = 威胁（名词）。来源句：Cuaca amat cerah tapi ada ancaman badai yang mengancam.'},
-  {w:'beruntung',root:'词根：untung',q:'“beruntung” 是什么意思？',opts:['幸运的','生气的','疲劳的','危险的'],ans:0,ex:'beruntung = 幸运的。untung 可表示好运、利润；keberuntungan = 好运、幸运。'},
-  {w:'mengisi',root:'词根：isi',q:'“mengisi tempat pakan” 中 mengisi 的意思是？',opts:['清空','填充','移动','寻找'],ans:1,ex:'mengisi = 填、装入、填写。词根 isi = 内容、里面的东西。例：mengisi formulir = 填表。'},
-  {w:'membutuhkan',root:'词根：butuh',q:'“membutuhkan” 的意思是？',opts:['需要','拒绝','忘记','相信'],ans:0,ex:'membutuhkan = 需要某物。词根 butuh = 需要。口语中 butuh 本身也非常常见。'},
-  {w:'memperbaiki',root:'词根：baik',q:'“memperbaiki sistem” 最自然的意思是？',opts:['破坏系统','复制系统','改善 / 修复系统','关闭系统'],ans:2,ex:'memperbaiki = 修理、改善。词根 baik = 好；perbaikan = 改善、修理。'}
+const bank=[
+{w:'soalnya',cn:'因为嘛 / 因为',root:'口语连接词',scene:'Gak jadi, soalnya hujan.',feel:'非常常见的口语“因为嘛”'},
+{w:'padahal',cn:'明明 / 可是其实',root:'连接词',scene:'Padahal dekat.',feel:'表示事实和预期相反'},
+{w:'bahkan',cn:'甚至',root:'副词',scene:'Bahkan dia gak tahu.',feel:'“甚至连……”'},
+{w:'sekalian',cn:'顺便一起',root:'口语副词',scene:'Beli sekalian.',feel:'顺手一起做'},
+{w:'kebetulan',cn:'碰巧 / 正好',root:'betul（对、正确）',scene:'Kebetulan ketemu.',feel:'正好碰上'},
+{w:'ternyata',cn:'原来 / 结果发现',root:'nyata（真实、明显）',scene:'Ternyata mahal.',feel:'结果和原来想的不一样'},
+{w:'mengancam',cn:'威胁 / 构成威胁',root:'ancam',scene:'Ada ancaman badai yang mengancam.',feel:'ancaman 是名词“威胁”'},
+{w:'beruntung',cn:'幸运的',root:'untung',scene:'Dia beruntung dapat bantuan.',feel:'keberuntungan = 幸运、好运'},
+{w:'mengisi',cn:'填写 / 填充 / 装入',root:'isi',scene:'Tolong mengisi formulir ini.',feel:'口语里 mengisi formulir 很常见'},
+{w:'membutuhkan',cn:'需要',root:'butuh',scene:'Saya membutuhkan waktu.',feel:'日常口语直接说 butuh 也非常自然'},
+{w:'memperbaiki',cn:'修理 / 改善',root:'baik',scene:'Kita perlu memperbaiki sistem.',feel:'perbaikan = 改善、维修'},
+{w:'memastikan',cn:'确保 / 确认',root:'pasti',scene:'Saya mau memastikan jadwalnya.',feel:'办公室非常常用'},
+{w:'memutuskan',cn:'决定',root:'putus',scene:'Kami belum memutuskan.',feel:'keputusan = 决定（名词）'},
+{w:'mendirikan',cn:'建立 / 成立',root:'diri',scene:'Mereka mendirikan perusahaan baru.',feel:'常用于公司、组织、建筑'},
+{w:'memisahkan',cn:'分开 / 分离',root:'pisah',scene:'Tolong pisahkan barang ini.',feel:'口语命令常见 pisahkan'}
 ];
-let idx=0, answered=false, done=0, correct=0;
-const qword=document.getElementById('qword'), qroot=document.getElementById('qroot'), qtext=document.getElementById('qtext'), options=document.getElementById('options'), feedback=document.getElementById('feedback'), explain=document.getElementById('explain');
-function render(){
-  answered=false; feedback.className='feedback'; feedback.textContent=''; explain.classList.remove('show'); document.getElementById('memStatus').textContent='';
-  const x=data[idx]; document.getElementById('qnum').textContent=`第 ${idx+1} / ${data.length} 题`; qword.textContent=x.w; qroot.textContent=x.root; qtext.textContent=x.q; options.innerHTML=''; explain.innerHTML=x.ex;
-  x.opts.forEach((o,i)=>{const b=document.createElement('button'); b.className='opt'; b.textContent=String.fromCharCode(65+i)+'. '+o; b.onclick=()=>choose(i,b); options.appendChild(b);});
+const distract={
+'因为嘛 / 因为':['所以','虽然','然后'],'明明 / 可是其实':['大概','终于','一起'],'甚至':['只是','尤其','偶尔'],'顺便一起':['马上','故意','单独'],'碰巧 / 正好':['必须','刚才','一直'],'原来 / 结果发现':['可能','通常','立刻'],'威胁 / 构成威胁':['保护','等待','解释'],'幸运的':['危险的','生气的','疲劳的'],'填写 / 填充 / 装入':['删除','移动','寻找'],'需要':['拒绝','忘记','相信'],'修理 / 改善':['破坏','关闭','复制'],'确保 / 确认':['猜测','取消','隐藏'],'决定':['犹豫','忘记','跟随'],'建立 / 成立':['拆除','借用','关闭'],'分开 / 分离':['合并','重复','接受']};
+const sentences=[
+['Nanti malam jadi makan bareng nggak?','今晚还一起吃饭吗？','jadi = 还按原计划吗','bareng = 一起'],
+['Gimana kalau kita makan di luar aja?','要不我们就在外面吃吧？','gimana kalau = 要不……怎么样','aja = 就、吧'],
+['Saya mau memastikan jadwal meeting besok.','我想确认一下明天会议的时间。','memastikan = 确认','jadwal = 日程'],
+['Kebetulan saya lagi di dekat sini.','正好我现在就在这附近。','kebetulan = 正好','lagi = 正在'],
+['Padahal tadi dia bilang mau datang.','明明刚才他说要来的。','padahal = 明明','tadi = 刚才'],
+['Ternyata harganya lebih mahal dari yang saya kira.','结果价格比我想的更贵。','ternyata = 原来/结果发现','kira = 以为/估计']
+];
+const affixes=[
+['meN- 主动动词','词根前加 meN-，常表示主动做某动作。具体会变成 meng-/mem-/men-/meny-。','meng + ambil → mengambil（拿）；meng + kirim → mengirim（发送，k 消失）；mem + baca → membaca（读）'],
+['ber- 状态 / 活动','常表示处于某状态、从事某活动、拥有某物。','untung → beruntung（幸运）；latih → berlatih（练习）'],
+['-kan 使…… / 对象化','常让动作带有“使、把……怎么样、为别人做”的感觉。','pasti → memastikan（确认/确保）；putus → memutuskan（决定）'],
+['-i 作用于地点/对象','经常强调动作反复作用于某对象或地点。','isi → mengisi（填入）；datang → mendatangi（前往拜访）']
+];
+let mode='all',idx=0,answered=false,sessionDone=0,sessionCorrect=0,sidx=0;
+const $=id=>document.getElementById(id); const mem=()=>JSON.parse(localStorage.getItem('indo_mem')||'{}'); const save=o=>localStorage.setItem('indo_mem',JSON.stringify(o));
+$('today').textContent=new Date().toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric'});
+function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
+function current(){return bank[idx%bank.length]}
+function makeQ(x){
+ let q,opts,ans,word=x.w,root='词根/类型：'+x.root;
+ if(mode==='cn2id'){q='“'+x.cn+'” 对应哪个印尼语？';word=x.cn;opts=shuffle([x.w,...shuffle(bank.filter(y=>y.w!==x.w)).slice(0,3).map(y=>y.w)]);ans=opts.indexOf(x.w)}
+ else if(mode==='scene'){q='下面哪个词最适合这个句子：'+x.scene.replace(new RegExp(x.w,'i'),'_____');word='场景填空';opts=shuffle([x.w,...shuffle(bank.filter(y=>y.w!==x.w)).slice(0,3).map(y=>y.w)]);ans=opts.indexOf(x.w)}
+ else{q='“'+x.w+'” 最接近哪个意思？';let ds=distract[x.cn]||shuffle(bank.filter(y=>y.w!==x.w)).slice(0,3).map(y=>y.cn);opts=shuffle([x.cn,...ds.slice(0,3)]);ans=opts.indexOf(x.cn)}
+ return {q,opts,ans,word,root};
 }
-function choose(i,b){
-  if(answered)return; answered=true; done++; document.getElementById('done').textContent=done;
-  [...options.children].forEach((el,j)=>{if(j===data[idx].ans)el.classList.add('correct')});
-  if(i===data[idx].ans){correct++;document.getElementById('correct').textContent=correct;feedback.className='feedback show ok';feedback.textContent='回答正确 ✓';}
-  else{b.classList.add('wrong');feedback.className='feedback show bad';feedback.textContent='回答错误。正确答案已标绿。';}
-}
-document.getElementById('nextBtn').onclick=()=>{idx=(idx+1)%data.length;render()};
-document.getElementById('showExplain').onclick=()=>explain.classList.toggle('show');
-function remember(v){document.getElementById('memStatus').textContent='已标记：'+v;localStorage.setItem('mem_'+data[idx].w,v)}
-window.remember=remember;
-document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
-  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));t.classList.add('active');
-  ['quizMode','sentenceMode','rootMode'].forEach(id=>document.getElementById(id).classList.add('hidden'));
-  document.getElementById(t.dataset.mode+'Mode').classList.remove('hidden');
-});
-render();
-</script>
-</body>
-</html>
+function renderQuiz(){answered=false;let x=current(),z=makeQ(x);$('qnum').textContent='题库 '+(idx%bank.length+1)+' / '+bank.length;$('qtag').textContent=mode==='all'?'综合':mode==='cn2id'?'中文→印尼语':mode==='scene'?'场景句':'印尼语→中文';$('qword').textContent=z.word;$('qroot').textContent=z.root;$('qtext').textContent=z.q;$('feedback').className='feedback';$('explain').className='explain';$('explain').innerHTML='<b>'+x.w+'</b> = '+x.cn+'<br>'+x.feel+'<br><span class="muted">例句：'+x.scene+'</span>';$('markTip').textContent='';$('opts').innerHTML='';z.opts.forEach((o,i)=>{let b=document.createElement('button');b.className='opt';b.textContent=String.fromCharCode(65+i)+'. '+o;b.onclick=()=>choose(i,z.ans,b);$('opts').appendChild(b)});}
+function choose(i,ans,b){if(answered)return;answered=true;sessionDone++;[...$('opts').children].forEach((el,j)=>{if(j===ans)el.classList.add('good')});if(i===ans){sessionCorrect++;$('feedback').className='feedback show good';$('feedback').textContent='回答正确 ✓'}else{b.classList.add('bad');$('feedback').className='feedback show bad';$('feedback').textContent='回答错误，正确答案已经标绿。';let m=mem();if(!m[current().w]){m[current().w]='fuzzy';save(m)}}updateStats()}
+$('nextBtn').onclick=()=>{idx=(idx+1)%bank.length;renderQuiz()};$('exBtn').onclick=()=>$('explain').classList.toggle('showblock');
+function mark(v){let m=mem();m[current().w]=v;save(m);$('markTip').textContent='已标记：'+({know:'会了',fuzzy:'模糊',dont:'不会'}[v]);updateStats();renderReview();renderProgress()} window.mark=mark;
+function updateStats(){let m=mem(),vals=Object.values(m);$('sDone').textContent=sessionDone;$('sRate').textContent=sessionDone?Math.round(sessionCorrect/sessionDone*100)+'%':'0%';$('sKnow').textContent=vals.filter(x=>x==='know').length;$('sReview').textContent=vals.filter(x=>x==='fuzzy'||x==='dont').length}
+function renderReview(){let m=mem(),arr=bank.filter(x=>m[x.w]==='fuzzy'||m[x.w]==='dont');$('reviewCount').textContent=arr.length+' 个';if(!arr.length){$('reviewBox').innerHTML='<div class="empty">还没有待复习词。做题后把词标记为“模糊”或“不会”，这里会自动出现。</div>';return}$('reviewBox').innerHTML='<div class="list">'+arr.map(x=>'<div class="item"><b>'+x.w+'</b>　'+x.cn+'<div class="muted">词根：'+x.root+' ｜ '+x.scene+'</div></div>').join('')+'</div>'}
+function renderSentence(){let s=sentences[sidx%sentences.length];$('sentNum').textContent=(sidx%sentences.length+1)+' / '+sentences.length;$('sentText').textContent=s[0];$('sentCn').textContent=s[1];$('sentCn').className='cn';$('sentChips').innerHTML='<span class="chip">'+s[2]+'</span><span class="chip">'+s[3]+'</span>'}
+$('sentCnBtn').onclick=()=>$('sentCn').classList.toggle('showblock');$('sentNext').onclick=()=>{sidx++;renderSentence()};
+function renderAffix(){$('affixList').innerHTML=affixes.map(a=>'<div class="item"><b>'+a[0]+'</b><div style="margin:7px 0">'+a[1]+'</div><div class="muted">'+a[2]+'</div></div>').join('')}
+function renderProgress(){let m=mem(),arr=bank.filter(x=>m[x.w]);$('progressList').innerHTML=arr.length?arr.map(x=>'<div class="item"><b>'+x.w+'</b>　'+x.cn+'<div class="muted">掌握度：'+({know:'会了',fuzzy:'模糊',dont:'不会'}[m[x.w]])+'</div></div>').join(''):'<div class="empty">还没有学习记录。</div>'}
+function clearProgress(){if(confirm('确定清空本机上的掌握度记录吗？')){localStorage.removeItem('indo_mem');updateStats();renderReview();renderProgress()}}window.clearProgress=clearProgress;
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.page').forEach(x=>x.classList.add('hidden'));$(b.dataset.page).classList.remove('hidden');if(b.dataset.page==='review')renderReview();if(b.dataset.page==='progress')renderProgress()});
+document.querySelectorAll('.filter button[data-mode]').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter button[data-mode]').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.mode;renderQuiz()});
+renderQuiz();renderSentence();renderAffix();renderReview();renderProgress();updateStats();
+</script></body></html>
