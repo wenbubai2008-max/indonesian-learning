@@ -1,10 +1,11 @@
 {
   "dates": [
+    {"date":"2026-08-22","am":true,"pm":false,"verified":"original_chat_text","day":1},
     {"date":"2026-08-27","am":true,"pm":false,"historical_reconstruction":true,"verified":"known_history"},
     {"date":"2026-08-28","am":true,"pm":false,"historical_reconstruction":true,"verified":"known_history","day":6},
     {"date":"2026-08-29","am":true,"pm":false,"verified":"original_chat_text","day":7},
     {"date":"2026-08-30","am":true,"pm":false,"verified":"original_chat_text","day":8}
   ],
   "updated":"2026-08-30",
-  "note":"2026-08-29 Day 7 and 2026-08-30 Day 8 were restored from the original shared ChatGPT conversation text. Earlier dates remain limited to previously verifiable records only."
+  "note":"2026-08-22 Day1, 2026-08-29 Day7, and 2026-08-30 Day8 are restored from original user-provided chat text. Other dates remain limited to previously verifiable records until their original text is supplied."
 }
