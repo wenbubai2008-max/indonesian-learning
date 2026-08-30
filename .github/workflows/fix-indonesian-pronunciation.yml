@@ -1,0 +1,75 @@
+name: Fix Indonesian pronunciation
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-indonesian-pronunciation.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch pronunciation player
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          old="function current(){return FILTER[idx%Math.max(FILTER.length,1)]||null}function speak(t){if(!t)return;const u=new SpeechSynthesisUtterance(t);u.lang='id-ID';u.rate=.9;speechSynthesis.cancel();speechSynthesis.speak(u)}window.speak=speak;"
+          new=r'''function current(){return FILTER[idx%Math.max(FILTER.length,1)]||null}
+let activeAudio=null;
+function getIndonesianVoice(){
+  const voices=(window.speechSynthesis&&speechSynthesis.getVoices())||[];
+  return voices.find(v=>/^id(-|$)/i.test(v.lang))||voices.find(v=>/indones/i.test(v.name))||null;
+}
+function remoteIndonesianTTS(t){
+  try{
+    if(activeAudio){activeAudio.pause();activeAudio=null}
+    const url='https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=id&q='+encodeURIComponent(t);
+    activeAudio=new Audio(url);
+    activeAudio.play().catch(()=>{});
+  }catch(e){}
+}
+function speak(t){
+  if(!t)return;
+  const text=String(t).trim();
+  if(!text)return;
+  try{
+    if(activeAudio){activeAudio.pause();activeAudio=null}
+    if(!window.speechSynthesis){remoteIndonesianTTS(text);return}
+    const play=()=>{
+      const voice=getIndonesianVoice();
+      if(!voice){remoteIndonesianTTS(text);return}
+      speechSynthesis.cancel();
+      const u=new SpeechSynthesisUtterance(text);
+      u.lang='id-ID';u.voice=voice;u.rate=.88;u.pitch=1;u.volume=1;
+      let started=false;
+      u.onstart=()=>{started=true};
+      u.onerror=()=>remoteIndonesianTTS(text);
+      speechSynthesis.speak(u);
+      setTimeout(()=>{if(!started&&!speechSynthesis.speaking)remoteIndonesianTTS(text)},700);
+    };
+    const voices=speechSynthesis.getVoices();
+    if(voices.length)play();
+    else{
+      let done=false;
+      const f=()=>{if(done)return;done=true;speechSynthesis.removeEventListener?.('voiceschanged',f);play()};
+      speechSynthesis.addEventListener?.('voiceschanged',f);
+      setTimeout(f,500);
+    }
+  }catch(e){remoteIndonesianTTS(text)}
+}
+window.speak=speak;'''
+          if old not in s:
+              raise SystemExit('target pronunciation function not found')
+          s=s.replace(old,new)
+          p.write_text(s)
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Use reliable Indonesian pronunciation playback" || exit 0
+          git push
