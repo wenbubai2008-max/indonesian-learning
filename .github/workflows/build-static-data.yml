@@ -1,7 +1,10 @@
-name: Build static vocabulary assets
+name: Load uploaded vocabulary
 
 on:
   push:
+    paths:
+      - 'data/vocab-data.js'
+      - '.github/workflows/build-static-data.yml'
   workflow_dispatch:
 
 permissions:
@@ -13,34 +16,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build static JS and patch page
+      - name: Point vocabulary page to static data
         run: |
           python - <<'PY'
-          import json, gzip, base64, re, pathlib
-          root = pathlib.Path('.')
-          mf = json.loads((root/'data/vocab-manifest.json').read_text(encoding='utf-8'))
-          raw = ''.join((root/'data'/p).read_text(encoding='utf-8').strip() for p in mf['parts'])
-          db = json.loads(gzip.decompress(base64.b64decode(raw)).decode('utf-8'))
-          (root/'data/vocab-data.js').write_text('window.EMBEDDED_DB='+json.dumps(db,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
-          aff = json.loads((root/'data/affixes.json').read_text(encoding='utf-8'))
-          (root/'data/affixes-data.js').write_text('window.EMBEDDED_AFFIXES='+json.dumps(aff,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
-
-          p = root/'index.html'
+          import re, pathlib
+          p = pathlib.Path('index.html')
           s = p.read_text(encoding='utf-8')
-          # Remove older static data tags if present, then add fresh tags before the main script.
-          s = re.sub(r'<script src="data/(?:vocab-data|affixes-data)\.js(?:\?[^\"]*)?"></script>', '', s)
+
+          # Remove any older vocab static tag, then insert the current static word list.
+          s = re.sub(r'<script src="data/vocab-data\.js(?:\?[^\"]*)?"></script>', '', s)
           marker = '<script>\nconst BASE='
-          tags = '<script src="data/vocab-data.js?v=4"></script><script src="data/affixes-data.js?v=4"></script>\n'
-          if marker in s:
-              s = s.replace(marker, tags + marker, 1)
-          else:
+          tag = '<script src="data/vocab-data.js?v=715"></script>\n'
+          if marker not in s:
               raise SystemExit('main script marker not found')
+          s = s.replace(marker, tag + marker, 1)
 
           new_load_db = r'''function loadDB(){
             try{
               DB = Array.isArray(window.EMBEDDED_DB) ? window.EMBEDDED_DB : [];
-              if(!DB.length) throw new Error('静态词库脚本未加载');
-              FILTER=DB.filter(x=>!(x.categories||[]).includes('粗口/俚语'));
+              if(!DB.length) throw new Error('715词词库脚本未加载');
+              FILTER=DB.slice();
               $('vocabCount').textContent=DB.length;
               $('vocabTag').textContent=DB.length+' 个词条';
               $('dbStatus').textContent=DB.length+' 个词条';
@@ -48,32 +43,34 @@ jobs:
               $('cat').innerHTML='<option value="">全部分类</option>'+cats.map(c=>'<option>'+esc(c)+'</option>').join('');
               idx=0; renderVocab(); updateStats();
             }catch(e){
-              $('vocabCount').textContent='失败'; $('dbStatus').textContent='加载失败';
-              $('vocabBox').innerHTML='<div class="error"><b>词库脚本加载失败</b><div>'+esc(e.message)+'</div><div class="diag">现在已不使用 fetch / XHR / manifest。</div></div>';
+              $('vocabCount').textContent='失败';
+              $('dbStatus').textContent='加载失败';
+              $('vocabBox').innerHTML='<div class="error"><b>词库加载失败</b><div>'+esc(e.message)+'</div></div>';
             }
           }
           window.loadDB=loadDB;'''
-          s, n = re.subn(r'async function loadDB\(\)\{.*?\}\nwindow\.loadDB=loadDB;', new_load_db, s, count=1, flags=re.S)
-          if n != 1: raise SystemExit('loadDB patch failed')
 
-          new_aff = r'''function loadAffixes(){
-            try{
-              affixes = Array.isArray(window.EMBEDDED_AFFIXES) ? window.EMBEDDED_AFFIXES : [];
-              let h='';
-              affixes.forEach(x=>{if(x.type==='section')h+='<div class="affixTitle">'+esc(x.title)+'</div>';else if(x.variant!=='变体形行')h+='<div class="item"><b>'+esc(x.variant||x.class)+'</b>｜'+esc(x.class)+'<div>'+esc(x.example)+'</div><div class="muted">'+esc(x.rule)+'</div></div>'});
-              $('affixBody').innerHTML=h || '<div class="empty">暂无前后缀数据</div>';
-            }catch(e){$('affixBody').innerHTML='<div class="error">前后缀加载失败<div class="diag">'+esc(e.message)+'</div></div>'}
-          }'''
-          s, n = re.subn(r'async function loadAffixes\(\)\{.*?\}\nfunction fmtDate', new_aff+'\nfunction fmtDate', s, count=1, flags=re.S)
-          if n != 1: raise SystemExit('loadAffixes patch failed')
-          p.write_text(s,encoding='utf-8')
-          print('built vocab entries:', len(db))
+          patterns = [
+              r'async function loadDB\(\)\{.*?\}\nwindow\.loadDB=loadDB;',
+              r'function loadDB\(\)\{.*?\}\nwindow\.loadDB=loadDB;'
+          ]
+          replaced = False
+          for pat in patterns:
+              ns, n = re.subn(pat, new_load_db, s, count=1, flags=re.S)
+              if n == 1:
+                  s = ns
+                  replaced = True
+                  break
+          if not replaced:
+              raise SystemExit('loadDB block not found')
+
+          p.write_text(s, encoding='utf-8')
           PY
-      - name: Commit generated static files
+      - name: Commit vocabulary page update
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html data/vocab-data.js data/affixes-data.js
+          git add index.html
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Use static JS data instead of runtime fetch"
+          git commit -m "Load uploaded 715-word vocabulary"
           git push
