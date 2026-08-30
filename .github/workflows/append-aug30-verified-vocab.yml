@@ -1,0 +1,55 @@
+name: Append verified Aug 30 vocabulary
+on:
+  push:
+    paths:
+      - '.github/workflows/append-aug30-verified-vocab.yml'
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append verified vocabulary
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,re
+          p=Path('data/daily-vocab-data.js')
+          s=p.read_text(encoding='utf-8')
+          m=re.search(r'window\.DAILY_VOCAB_DB\s*=\s*(\[.*\])\s*;\s*$',s,re.S)
+          if not m: raise SystemExit('daily vocab format not recognized')
+          arr=json.loads(m.group(1))
+          additions=[
+            {"word":"kepikiran","cn":"","en":"","root":"","categories":["每日学习","08:00","2026-08-30","截图确认"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"ngerasa","cn":"觉得；感觉","en":"","root":"rasa","categories":["每日学习","08:00","2026-08-30","截图确认"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"nyangka","cn":"想到；料到","en":"","root":"sangka","categories":["每日学习","08:00","2026-08-30","截图确认"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"beres","cn":"搞定；处理完；整齐","en":"","root":"","categories":["每日学习","08:00","2026-08-30","截图确认"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"telanjur","cn":"已经做了、来不及改变","en":"","root":"","categories":["每日学习","08:00","2026-08-30","截图确认"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"bakal","cn":"将会、要","en":"","root":"","categories":["每日学习","08:00","2026-08-30","截图确认"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"giliran","cn":"轮到；轮班；顺序","en":"","root":"gilir","categories":["每日学习","08:00","2026-08-30","截图确认"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"janjian","cn":"约好见面；约时间","en":"","root":"janji","categories":["每日学习","08:00","2026-08-30","截图确认"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"nongkrong","cn":"闲坐、聚会、泡在某处","en":"","root":"","categories":["每日学习","08:00","2026-08-30","截图确认"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]}
+          ]
+          by={str(x.get('word','')).strip().lower():x for x in arr}
+          for a in additions:
+            k=a['word'].lower()
+            if k in by:
+              x=by[k]
+              dates=list(dict.fromkeys((x.get('dates') or [])+a['dates']))
+              sessions=list(dict.fromkeys((x.get('sessions') or [])+a['sessions']))
+              cats=list(dict.fromkeys((x.get('categories') or [])+a['categories']))
+              x['dates']=dates;x['sessions']=sessions;x['categories']=cats
+              x['times_seen']=max(int(x.get('times_seen',1)),len(dates))
+              x['last_seen']='2026-08-30 08:00'
+            else:
+              arr.append(a);by[k]=a
+          p.write_text('window.DAILY_VOCAB_DB = '+json.dumps(arr,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily-vocab-data.js
+          git commit -m "Append verified Aug 30 daily vocabulary" || exit 0
+          git push
