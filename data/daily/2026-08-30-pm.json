@@ -1,0 +1,51 @@
+{
+  "date":"2026-08-30","session":"pm","time":"19:00","level":"A2+ → B1","day":9,
+  "title":"2026年8月30日｜Day 9｜19:00 晚间学习","source_status":"original_chat_text","history_complete":true,
+  "source_note":"原聊天该课标题未写 Day 编号；根据8月29日晚间课归档为 Day 8、连续日期与19:00课程顺序归档为 Day 9。",
+  "vocab":[
+    {"word":"menyadari","audio_text":"menyadari","cn":"意识到","root":"sadar","formation":"meN- + sadar + -i","family":["sadar","menyadari","kesadaran"],"example":"Baru sadar ternyata salah.","example_cn":"刚意识到原来弄错了。"},
+    {"word":"memastikan","audio_text":"memastikan","cn":"确认、确保","root":"pasti","formation":"meN- + pasti + -kan","family":["pasti","memastikan","kepastian"],"example":"Aku mau pastiin dulu.","example_cn":"我想先确认一下。"},
+    {"word":"menangani","audio_text":"menangani","cn":"处理、负责处理","root":"tangan","formation":"meN- + tangan + -i","example":"Yang nangani siapa?","example_cn":"谁负责处理？"},
+    {"word":"menyelesaikan","audio_text":"menyelesaikan","cn":"完成、解决","root":"selesai","formation":"meN- + selesai + -kan","family":["selesai","menyelesaikan","penyelesaian"],"example":"Hari ini harus diselesain.","example_cn":"今天必须弄完。"},
+    {"word":"mengalami","audio_text":"mengalami","cn":"经历、遇到","root":"alam","formation":"原课程写作 meng- + alami；该课将 alam/alam(i) 作为词根提示","example":"Kemarin sempat ngalamin masalah yang sama.","example_cn":"昨天也遇到过同样的问题。"},
+    {"word":"menghindari","audio_text":"menghindari","cn":"避免、躲开","root":"hindar","formation":"meN- + hindar + -i","example":"Biar nggak kejadian lagi, kita hindarin ini.","example_cn":"为了别再发生，我们避开这个。"},
+    {"word":"menyesuaikan","audio_text":"menyesuaikan","cn":"调整、适应","root":"sesuai","formation":"meN- + sesuai + -kan","example":"Nanti kita sesuaikan aja.","example_cn":"到时候我们调整一下就行。"},
+    {"word":"tergantung","audio_text":"tergantung","cn":"取决于、看情况","root":"gantung","formation":"ter- + gantung","example":"Tergantung situasinya sih.","example_cn":"得看情况。"},
+    {"word":"ternyata","audio_text":"ternyata","cn":"原来、结果发现","root":"nyata","formation":"ter- + nyata","example":"Ternyata lebih ribet dari yang aku kira.","example_cn":"原来比我想的麻烦。"},
+    {"word":"seharusnya","audio_text":"seharusnya","cn":"本应该、按理说","root":"harus","formation":"se- + harus + -nya","example":"Seharusnya hari ini udah selesai.","example_cn":"按理今天应该好了。"},
+    {"word":"sementara","audio_text":"sementara","cn":"暂时；与此同时","example":"Sementara pakai cara ini dulu.","example_cn":"暂时先用这个办法。"},
+    {"word":"terlanjur","audio_text":"terlanjur","cn":"已经……了、来不及改变","example":"Udah terlanjur beli.","example_cn":"都已经买了。"}
+  ],
+  "affix_training":{"title":"menyadari / memastikan / menyelesaikan 词根与词族","items":[
+    {"form":"sadar","cn":"清醒；意识到"},
+    {"form":"menyadari","cn":"意识到","root":"sadar","formation":"meN- + sadar + -i","example":"Aku baru menyadari ada masalah.","example_cn":"我刚意识到有问题。","usage_note":"真实聊天更常直接说 Aku baru sadar ada masalah."},
+    {"form":"kesadaran","cn":"意识、觉悟","root":"sadar"},
+    {"form":"pasti","cn":"确定、肯定"},
+    {"form":"memastikan","cn":"确认、确保","root":"pasti","formation":"meN- + pasti + -kan","example":"Saya mau memastikan jadwalnya dulu.","example_cn":"我想先确认一下时间安排。","colloquial":"Aku mau pastiin jadwalnya dulu."},
+    {"form":"kepastian","cn":"确定性、明确答复","root":"pasti","example":"Belum ada kepastian.","example_cn":"目前还没有明确消息。"},
+    {"form":"selesai","cn":"完成、结束"},
+    {"form":"menyelesaikan","cn":"把某事完成","root":"selesai","formation":"meN- + selesai + -kan","example":"Aku harus menyelesaikan ini hari ini.","example_cn":"我今天得把这个弄完。","colloquial":"Aku harus selesain ini hari ini."},
+    {"form":"penyelesaian","cn":"解决、解决方案/处理过程","root":"selesai"}
+  ]},
+  "rewrite":[
+    {"task":"我想先确认一下时间。","reference_answer":"Aku mau pastiin waktunya dulu.","reference_cn":"我想先确认一下时间。","standard_answer":"Saya ingin memastikan waktunya terlebih dahulu."},
+    {"task":"这件事谁负责处理？","reference_answer":"Yang nangani masalah ini siapa?","reference_cn":"这件事谁负责处理？","standard_answer":"Siapa yang menangani masalah ini?"},
+    {"task":"我刚意识到这里有个问题。","reference_answer":"Aku baru sadar ternyata ada masalah di sini.","reference_cn":"我刚意识到原来这里有个问题。","alternate_answer":"Aku baru sadar ada yang salah di sini."},
+    {"task":"这个今天必须处理完。","reference_answer":"Ini harus diselesain hari ini.","reference_cn":"这个今天必须处理完。","standard_answer":"Ini harus diselesaikan hari ini."},
+    {"task":"现在还不能决定，要看情况。","reference_answer":"Sekarang belum bisa diputusin, tergantung situasinya nanti.","reference_cn":"现在还不能决定，要看到时候的情况。","source_note":"原课程同时补充：memutuskan ← putus；口语 mutusin；被动口语 diputusin。"}
+  ],
+  "reading":{"title":"办公室里发现之前的方案有问题","text":"Tadi aku baru sadar ternyata ada masalah sama rencana yang kemarin. Awalnya aku kira semuanya udah beres, tapi pas dicek lagi ternyata ada beberapa bagian yang harus disesuaikan. Aku udah ngomong sama orang yang nangani. Katanya hari ini mereka coba selesain dulu. Tapi belum ada kepastian bisa selesai hari ini atau nggak. Jadi sementara kita tunggu aja dulu. Kalau sampai sore masih belum beres, kita harus cari cara lain biar masalahnya nggak makin ribet.","cn":"刚才我才意识到，原来昨天那个方案有点问题。一开始我以为全部已经搞定了，但重新检查以后，发现有几个部分还需要调整。我已经跟负责处理的人说了。他说今天他们会先尽量处理完。不过目前还不能确定今天到底能不能完成。所以我们暂时先等等。如果到下午还没搞定，我们就得想别的办法，避免事情越来越麻烦。"},
+  "reading_notes":["Aku baru sadar ternyata... = 我刚意识到原来……","Awalnya aku kira... = 一开始我以为……","Belum ada kepastian... = 目前还没有明确消息。","Sementara ... dulu. = 暂时先……","Kalau masih belum beres... = 如果还是没搞定……"],
+  "dialogue":{"title":"昨天那个事情现在怎么样","lines":[
+    {"speaker":"A","id":"Yang kemarin gimana? Udah ada kepastian belum?","cn":"昨天那个怎么样？有明确消息了吗？"},{"speaker":"B","id":"Belum nih. Ternyata ada sedikit masalah.","cn":"还没有。结果发现有点问题。"},{"speaker":"A","id":"Masalah apa?","cn":"什么问题？"},{"speaker":"B","id":"Ada beberapa bagian yang harus disesuaikan.","cn":"有几个部分需要调整。"},{"speaker":"A","id":"Terus sekarang siapa yang nangani?","cn":"那现在谁在处理？"},{"speaker":"B","id":"Tim mereka. Katanya hari ini mau diselesain.","cn":"他们团队。他们说今天要处理完。"},{"speaker":"A","id":"Bisa selesai hari ini nggak?","cn":"今天能搞定吗？"},{"speaker":"B","id":"Belum tahu. Tergantung mereka juga sih.","cn":"还不知道，也得看他们那边。"},{"speaker":"A","id":"Ya udah. Kalau sore belum beres, kabarin aku.","cn":"行。如果下午还没搞定，告诉我。"},{"speaker":"B","id":"Siap. Nanti aku pastiin lagi.","cn":"好的。等会我再确认一下。"}
+  ],"notes":["Tergantung mereka juga sih. 的自然中文语感更像‘这个也得看他们那边。’"]},
+  "quiz":[
+    {"question":"memastikan 的词根是什么？","options":["pasti","selesai","sadar"],"answer_index":0,"explain":"meN- + pasti + -kan → memastikan = 确认、确保。"},
+    {"question":"‘目前还没有明确消息’怎么说？","options":["Belum ada kepastian.","Belum ada pasti.","Tidak kepastian."],"answer_index":0,"explain":"kepastian = 明确性、确定消息。"},
+    {"question":"‘这得看情况’怎么说？","options":["Tergantung situasinya.","Situasi gantung.","Tentu situasi."],"answer_index":0,"explain":"Tergantung situasinya. = 得看情况。"},
+    {"question":"把 Saya ingin memastikan hal ini terlebih dahulu. 改成自然聊天口语。","options":["Aku mau pastiin ini dulu.","Aku pasti ini.","Saya akan kepastian."],"answer_index":0,"explain":"pastiin 是 memastikan 的常见雅加达口语形式。"},
+    {"question":"用 ternyata + terlanjur 表达‘结果发现买错了，但已经买了。’","options":["Ternyata salah beli, tapi udah terlanjur beli.","Terlanjur ternyata salah.","Ternyata tidak beli."],"answer_index":0,"explain":"原课程给出的答案即该句。"}
+  ],
+  "output":{"task":"昨天我以为事情已经解决了，今天才发现还有问题。目前负责的人正在处理，但还不能确定今天能不能完成。如果今天不能完成，我们明天再调整方案。","reference_answer":"Kemarin aku kira masalahnya udah beres. Ternyata hari ini baru sadar masih ada masalah. Sekarang lagi ditangani sama orang yang bertanggung jawab, tapi belum ada kepastian hari ini bisa selesai atau nggak. Kalau hari ini belum selesai, besok kita sesuaikan lagi rencananya.","reference_cn":"昨天我以为问题已经解决了，结果今天才意识到还有问题。现在负责人正在处理，但还不能确定今天能不能完成。如果今天还没完成，明天我们再调整一下方案。"},
+  "review":["sadar → menyadari","pasti → memastikan","tangan → menangani","selesai → menyelesaikan","tergantung","terlanjur"]
+}
