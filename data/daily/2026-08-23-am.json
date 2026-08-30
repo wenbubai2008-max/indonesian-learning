@@ -1,0 +1,22 @@
+{
+  "date":"2026-08-23","session":"am","time":"08:00","level":"A2+ → B1","title":"Day 2 · 每日印尼语学习8点","historical_reconstruction":true,
+  "recovery_note":"根据历史记录恢复。词汇、阅读标题与课程模块可确认；原题全文未完整保留的地方仅做历史摘要。",
+  "vocab":[
+    {"word":"memutuskan","display":"memutuskan","audio_text":"memutuskan","cn":"决定","en":"decide","root":"putus","formation":"meN- + putus + -kan"},
+    {"word":"keputusan","display":"keputusan","audio_text":"keputusan","cn":"决定；决策","en":"decision","root":"putus","formation":"ke- + putus + -an"},
+    {"word":"berusaha","display":"berusaha","audio_text":"berusaha","cn":"努力；设法","en":"try / make an effort","root":"usaha","formation":"ber- + usaha"},
+    {"word":"mengalami","display":"mengalami","audio_text":"mengalami","cn":"经历；遭遇","en":"experience","root":"alam","formation":"meN- + alam + -i"},
+    {"word":"menjelaskan","display":"menjelaskan","audio_text":"menjelaskan","cn":"解释；说明","en":"explain","root":"jelas","formation":"meN- + jelas + -kan；词族：jelas → menjelaskan → dijelaskan → penjelasan"},
+    {"word":"memahami","display":"memahami","audio_text":"memahami","cn":"理解","en":"understand","root":"paham","formation":"meN- + paham + -i"},
+    {"word":"terbiasa","display":"terbiasa","audio_text":"terbiasa","cn":"习惯于","en":"be accustomed to","root":"biasa","formation":"ter- + biasa"},
+    {"word":"kesempatan","display":"kesempatan","audio_text":"kesempatan","cn":"机会","en":"opportunity","root":"sempat","formation":"ke- + sempat + -an"},
+    {"word":"berubah","display":"berubah","audio_text":"berubah","cn":"改变；发生变化","en":"change","root":"ubah","formation":"ber- + ubah"},
+    {"word":"perubahan","display":"perubahan","audio_text":"perubahan","cn":"变化；改变","en":"change / alteration","root":"ubah","formation":"per- + ubah + -an"}
+  ],
+  "recovered_sections":[
+    {"type":"sentences","title":"句子练习","summary":"历史记录确认当天包含句子练习与参考答案。"},
+    {"type":"reading","title":"阅读 · Belajar Sedikit demi Sedikit","summary":"历史记录确认当天阅读为《Belajar Sedikit demi Sedikit》，并配有中文翻译。"},
+    {"type":"quiz","title":"小测","summary":"历史记录确认当天有小测及答案解析。"},
+    {"type":"output","title":"主动输出与复习","summary":"历史记录确认当天有输出任务、参考答案和复习部分。"}
+  ]
+}
