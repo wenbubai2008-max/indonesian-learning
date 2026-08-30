@@ -1,0 +1,66 @@
+{
+  "date":"2026-08-24",
+  "session":"pm",
+  "time":"19:00",
+  "level":"A2 → B1",
+  "day":3,
+  "title":"2026年8月24日｜Day 3｜19:00 晚间学习",
+  "source_status":"original_chat_text",
+  "history_complete":true,
+  "vocab":[
+    {"word":"berubah","audio_text":"berubah","cn":"改变、发生变化","root":"ubah","formation":"ber- + ubah","example":"Situasinya sudah berubah.","example_cn":"情况已经变了。"},
+    {"word":"mengubah","audio_text":"mengubah","cn":"改变某物","root":"ubah","formation":"meN- + ubah","example":"Saya mau mengubah rencana.","example_cn":"我想改变计划。"},
+    {"word":"perubahan","audio_text":"perubahan","cn":"变化、改变","root":"ubah","formation":"per- + ubah + -an","example":"Ada sedikit perubahan.","example_cn":"有一点变化。"},
+    {"word":"mengatasi","audio_text":"mengatasi","cn":"解决、克服","root":"atas","formation":"meng- + atas + -i → mengatasi","family":["atas","mengatasi","teratasi"],"example":"Saya sedang berusaha mengatasi masalah ini.","example_cn":"我正在努力解决这个问题。","source_note":"词根与构词关系按用户后续明确纠正规则补入；不改动原课程语义。"},
+    {"word":"menyelesaikan","audio_text":"menyelesaikan","cn":"完成、解决","root":"selesai","formation":"meN- + selesai + -kan","family":["selesai","menyelesaikan","penyelesaian"],"example":"Saya akan menyelesaikannya satu per satu.","example_cn":"我会一个一个处理完。"},
+    {"word":"berusaha","audio_text":"berusaha","cn":"努力、设法","root":"usaha","formation":"ber- + usaha","example":"Saya akan berusaha.","example_cn":"我会努力。"},
+    {"word":"berencana","audio_text":"berencana","cn":"计划","root":"rencana","formation":"ber- + rencana","example":"Saya berencana untuk pergi besok.","example_cn":"我计划明天去。"},
+    {"word":"terbiasa","audio_text":"terbiasa","cn":"习惯于","root":"biasa","formation":"ter- + biasa","example":"Saya sudah terbiasa tinggal di Indonesia.","example_cn":"我已经习惯住在印尼了。"},
+    {"word":"memastikan","audio_text":"memastikan","cn":"确保、确认","root":"pasti","formation":"meN- + pasti + -kan","example":"Saya coba pastikan dulu.","example_cn":"我先确认一下。"},
+    {"word":"terutama","audio_text":"terutama","cn":"尤其、特别是","example":"Terutama kalau sedang sibuk.","example_cn":"尤其是忙的时候。"},
+    {"word":"sementara","audio_text":"sementara","cn":"暂时；与此同时","example":"Untuk sementara, saya belum tahu.","example_cn":"暂时我还不知道。"},
+    {"word":"setidaknya","audio_text":"setidaknya","cn":"至少","example":"Setidaknya kita sudah berusaha.","example_cn":"至少我们已经努力过了。"}
+  ],
+  "affix_training":{
+    "title":"ubah → berubah → mengubah → diubah → perubahan",
+    "items":[
+      {"form":"ubah","cn":"改、改变（词根）"},
+      {"form":"berubah","cn":"自己发生变化","root":"ubah","formation":"ber- + ubah","example":"Situasinya sudah berubah.","example_cn":"情况已经变了。"},
+      {"form":"mengubah + 东西","cn":"改变某个东西","root":"ubah","formation":"meN- + ubah","example":"Saya mau mengubah rencana.","example_cn":"我想改变计划。"},
+      {"form":"diubah","cn":"被改变","root":"ubah","formation":"di- + ubah","example":"Rencananya sudah diubah.","example_cn":"计划已经被修改了。"},
+      {"form":"perubahan","cn":"变化（名词）","root":"ubah","formation":"per- + ubah + -an","example":"Ada sedikit perubahan.","example_cn":"有一点变化。"}
+    ],
+    "note":"原课程重点：ber- 更偏主体自身状态/变化；meN- 动词常作用于一个对象。"
+  },
+  "rewrite":[
+    {"task":"情况已经改变了。关键词：berubah","reference_answer":"Situasinya sudah berubah.","reference_cn":"情况已经改变了。"},
+    {"task":"所以我必须改变我的计划。关键词：jadi + mengubah","reference_answer":"Jadi saya harus mengubah rencana saya.","reference_cn":"所以我必须改变我的计划。"},
+    {"task":"我正在努力解决这个问题。关键词：berusaha + mengatasi","reference_answer":"Saya sedang berusaha mengatasi masalah ini.","reference_cn":"我正在努力解决这个问题。","alternate_answer":"Saya sedang berusaha untuk mengatasi masalah ini."},
+    {"task":"我已经习惯住在印尼了。关键词：terbiasa","reference_answer":"Saya sudah terbiasa tinggal di Indonesia.","reference_cn":"我已经习惯住在印尼了。","alternate_answer":"Saya sudah terbiasa dengan kehidupan di Indonesia."},
+    {"task":"把 Ada perubahan. / Rencana saya harus diubah. / Saya akan mencari solusi lain. 合成一句。","reference_answer":"Karena ada perubahan, rencana saya harus diubah, jadi saya akan mencoba mencari solusi lain.","reference_cn":"因为出现了变化，我的计划必须调整，所以我会尝试寻找其他解决办法。"}
+  ],
+  "reading":{
+    "title":"计划变化",
+    "text":"Awalnya saya sudah punya rencana, tetapi situasinya tiba-tiba berubah. Karena itu, saya harus mengubah beberapa bagian dari rencana saya. Untuk sementara, saya belum tahu apakah cara baru ini akan berhasil. Tapi saya akan berusaha mengatasi masalah satu per satu. Menurut saya, kalau ada masalah, yang paling penting bukan merasa khawatir, tetapi mencoba mencari solusi. Setidaknya kita sudah berusaha.",
+    "cn":"一开始我已经有了计划，但是情况突然发生了变化。因此，我必须修改计划中的一些部分。暂时我还不知道这个新办法是否会成功。但是我会努力一个一个解决问题。我认为，遇到问题时，最重要的不是担心，而是尝试寻找解决办法。至少我们已经努力过。"
+  },
+  "reading_task":{"task":"读2遍后，关掉原文，用自己的话说30秒：有计划 → 情况改变 → 调整计划 → 解决问题。","reference_unavailable":true,"source_note":"原聊天没有为该复述任务提供参考答案。"},
+  "dialogue":{
+    "title":"原来约好见面，但临时计划变了",
+    "lines":[
+      {"speaker":"A","id":"Jadi malam ini kita jadi ketemu?","cn":"所以我们今晚还见面吗？"},
+      {"speaker":"B","id":"Kayaknya nggak jadi. Ada sedikit perubahan rencana.","cn":"好像不行了，计划有点变化。"},
+      {"speaker":"A","id":"Kenapa? Ada masalah?","cn":"为什么？出什么问题了吗？"},
+      {"speaker":"B","id":"Iya, tiba-tiba ada urusan yang harus saya selesaikan.","cn":"对，突然有点事情我必须处理。"},
+      {"speaker":"A","id":"Terus kapan kita bisa ketemu?","cn":"那我们什么时候能见？"},
+      {"speaker":"B","id":"Gimana kalau besok malam? Saya coba pastikan dulu, nanti saya kabari kamu.","cn":"明晚怎么样？我先确认一下，之后告诉你。"}
+    ],
+    "notes":["Saya pastikan dulu. = 我先确认一下。","Nanti saya kabari kamu. = 我晚点告诉你 / 到时候通知你。"]
+  },
+  "review":["Situasinya berubah. = 情况变了。","Saya mau mengubah rencana. = 我要改变计划。","Rencananya sudah diubah. = 计划已经被修改了。","Saya sedang berusaha mengatasi masalah ini. = 我正在努力解决这个问题。","Saya pastikan dulu, nanti saya kabari kamu. = 我先确认一下，晚点告诉你。"],
+  "output":{
+    "task":"最近我的计划发生了一些变化。虽然有些事情还没有解决，但我会努力一个一个处理。暂时我还不知道结果怎么样，但至少我已经在尝试寻找解决办法。",
+    "reference_answer":"Akhir-akhir ini ada beberapa perubahan dalam rencana saya. Walaupun masih ada beberapa hal yang belum selesai, saya akan berusaha menyelesaikannya satu per satu. Untuk sementara, saya belum tahu bagaimana hasilnya nanti, tapi setidaknya saya sudah mencoba mencari solusi.",
+    "reference_cn":"最近我的计划发生了一些变化。虽然有些事情还没有解决，但我会努力一个一个处理。暂时我还不知道结果怎么样，但至少我已经在尝试寻找解决办法。"
+  }
+}
