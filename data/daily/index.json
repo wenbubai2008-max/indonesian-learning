@@ -1,11 +1,9 @@
 {
   "dates": [
     {"date":"2026-08-22","am":true,"pm":false,"verified":"original_chat_text","day":1},
-    {"date":"2026-08-27","am":true,"pm":false,"historical_reconstruction":true,"verified":"known_history"},
-    {"date":"2026-08-28","am":true,"pm":false,"historical_reconstruction":true,"verified":"known_history","day":6},
     {"date":"2026-08-29","am":true,"pm":false,"verified":"original_chat_text","day":7},
     {"date":"2026-08-30","am":true,"pm":false,"verified":"original_chat_text","day":8}
   ],
   "updated":"2026-08-30",
-  "note":"2026-08-22 Day1, 2026-08-29 Day7, and 2026-08-30 Day8 are restored from original user-provided chat text. Other dates remain limited to previously verifiable records until their original text is supplied."
+  "note":"Only complete morning lessons backed by user-provided original chat text are shown in the dated archive. Day2-Day6 will be added only when their original lesson text is available; incomplete reconstructions are not shown as full history."
 }
