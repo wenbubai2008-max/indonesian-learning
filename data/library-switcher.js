@@ -28,6 +28,64 @@
     updateStats();
     localStorage.setItem('selected_vocab_library',key);
   }
+
+  let activeAudio=null;
+  function getIndonesianVoice(){
+    if(!window.speechSynthesis)return null;
+    const voices=speechSynthesis.getVoices()||[];
+    return voices.find(v=>/^id(-|$)/i.test(v.lang))||voices.find(v=>/indones/i.test(v.name))||null;
+  }
+  function remoteTTS(text){
+    try{
+      if(activeAudio){activeAudio.pause();activeAudio=null;}
+      const url='https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=id&q='+encodeURIComponent(text);
+      activeAudio=new Audio(url);
+      activeAudio.play().catch(function(){
+        alert('当前浏览器没有可用的印尼语发音，请检查浏览器是否允许网页播放声音。');
+      });
+    }catch(e){
+      alert('发音播放失败，请检查浏览器声音权限。');
+    }
+  }
+  function robustSpeak(text){
+    if(!text)return;
+    text=String(text).trim();
+    if(!text)return;
+    if(activeAudio){activeAudio.pause();activeAudio=null;}
+    if(!window.speechSynthesis){remoteTTS(text);return;}
+    const playLocal=function(){
+      const voice=getIndonesianVoice();
+      if(!voice){remoteTTS(text);return;}
+      try{
+        speechSynthesis.cancel();
+        const u=new SpeechSynthesisUtterance(text);
+        u.lang='id-ID';
+        u.voice=voice;
+        u.rate=.88;
+        u.pitch=1;
+        u.volume=1;
+        let started=false;
+        u.onstart=function(){started=true;};
+        u.onerror=function(){remoteTTS(text);};
+        speechSynthesis.speak(u);
+        setTimeout(function(){if(!started&&!speechSynthesis.speaking)remoteTTS(text);},700);
+      }catch(e){remoteTTS(text);}
+    };
+    if(speechSynthesis.getVoices().length){
+      playLocal();
+    }else{
+      let done=false;
+      const ready=function(){
+        if(done)return;
+        done=true;
+        if(speechSynthesis.removeEventListener)speechSynthesis.removeEventListener('voiceschanged',ready);
+        playLocal();
+      };
+      if(speechSynthesis.addEventListener)speechSynthesis.addEventListener('voiceschanged',ready);
+      setTimeout(ready,500);
+    }
+  }
+
   function install(){
     const toolbar=document.querySelector('#vocab .toolbar');
     if(!toolbar||document.getElementById('librarySelect'))return;
@@ -40,6 +98,8 @@
     toolbar.insertBefore(select,toolbar.firstChild);
     loadDB=function(){setLibrary(document.getElementById('librarySelect')?.value||'top1000')};
     window.loadDB=loadDB;
+    window.speak=robustSpeak;
+    speak=robustSpeak;
     setLibrary(localStorage.getItem('selected_vocab_library')||'top1000');
   }
   window.switchVocabLibrary=setLibrary;
