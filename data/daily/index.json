@@ -2,9 +2,9 @@
   "dates": [
     {"date":"2026-08-27","am":true,"pm":false,"historical_reconstruction":true,"verified":"known_history"},
     {"date":"2026-08-28","am":true,"pm":false,"historical_reconstruction":true,"verified":"known_history","day":6},
-    {"date":"2026-08-29","am":true,"pm":false,"historical_reconstruction":true,"verified":"known_history","day":7},
-    {"date":"2026-08-30","am":true,"pm":false,"historical_reconstruction":true,"verified":"partial_screenshot"}
+    {"date":"2026-08-29","am":true,"pm":false,"verified":"original_chat_text","day":7},
+    {"date":"2026-08-30","am":true,"pm":false,"verified":"original_chat_text","day":8}
   ],
   "updated":"2026-08-30",
-  "note":"Only historical lessons supported by verifiable prior records or user-provided screenshots are listed. 2026-08-30 currently contains the directly visible screenshot segment only. Unverified reconstructed dates were removed."
+  "note":"2026-08-29 Day 7 and 2026-08-30 Day 8 were restored from the original shared ChatGPT conversation text. Earlier dates remain limited to previously verifiable records only."
 }
