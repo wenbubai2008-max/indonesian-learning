@@ -3,19 +3,48 @@
   "session":"am",
   "time":"08:00",
   "level":"A2+ → B1",
-  "title":"Day 7 · 历史晨课恢复",
-  "historical_reconstruction":true,
-  "recovery_note":"根据可确认的历史晨课记录恢复。词汇列表为历史可确认内容；释义与词根按现有词表及既定学习规则补齐。不补造无法找回的原句、阅读、小测或输出题。",
+  "day":7,
+  "title":"2026年8月29日｜Day 7",
+  "source_status":"original_chat_text",
+  "progress":{"new":10,"cumulative":70,"range":"61–70"},
   "vocab":[
-    {"word":"kabarin","display":"kabarin","audio_text":"kabarin","cn":"告诉我 / 通知一下","en":"let someone know / inform","root":"kabar","formation":"口语 kabar + -in","example":"","example_cn":"","synonym_note":"标准表达常见 beri kabar / kabari。"},
-    {"word":"ketemu","display":"ketemu","audio_text":"ketemu","cn":"遇到 / 见面","en":"meet / run into","root":"temu","formation":"口语 ke- + temu","example":"","example_cn":"","synonym_note":"标准表达常见 bertemu。"},
-    {"word":"mampir","display":"mampir","audio_text":"mampir","cn":"顺路去一下 / 短暂停留","en":"drop by / stop by","root":"","formation":"","example":"","example_cn":"","synonym_note":"常用于去某处途中顺便停一下。"},
-    {"word":"buru-buru","display":"buru-buru","audio_text":"buru-buru","cn":"匆忙 / 急急忙忙","en":"in a hurry","root":"buru","formation":"重叠形式 buru-buru","example":"","example_cn":"","synonym_note":"日常口语高频。"},
-    {"word":"sengaja","display":"sengaja","audio_text":"sengaja","cn":"故意 / 特意","en":"intentionally / deliberately","root":"","formation":"","example":"","example_cn":"","synonym_note":"既可表示故意，也可表示特意。"},
-    {"word":"sekalian","display":"sekalian","audio_text":"sekalian","cn":"顺便一起","en":"at the same time / while you're at it","root":"sekali","formation":"sekali + -an","example":"","example_cn":"","synonym_note":"常见于‘既然做A，就顺便做B’。"},
-    {"word":"kebetulan","display":"kebetulan","audio_text":"kebetulan","cn":"碰巧 / 恰好","en":"coincidentally / happen to","root":"betul","formation":"ke- + betul + -an","example":"","example_cn":"","synonym_note":"表达巧合或正好发生。"},
-    {"word":"nyari","display":"nyari","audio_text":"nyari","cn":"找 / 寻找","en":"look for / search","root":"cari","formation":"口语 ny- + cari","example":"","example_cn":"","synonym_note":"标准表达 cari / mencari。"},
-    {"word":"cocok","display":"cocok","audio_text":"cocok","cn":"合适 / 匹配","en":"suitable / match","root":"","formation":"","example":"","example_cn":"","synonym_note":"可用于人、工作、衣服、口味等是否合适。"},
-    {"word":"bawain","display":"bawain","audio_text":"bawain","cn":"给……带来 / 带一下","en":"bring something for someone","root":"bawa","formation":"口语 bawa + -in","example":"","example_cn":"","synonym_note":"标准表达可根据语境用 bawakan。"}
+    {"order":61,"word":"kabarin","display":"kabarin","audio_text":"kabarin","cn":"告诉、通知","en":"","root":"kabar","formation":"标准：kabari / memberi tahu","example":"Nanti kabarin aku ya.","example_cn":"等会儿告诉我一声。"},
+    {"order":62,"word":"ketemu","display":"ketemu","audio_text":"ketemu","cn":"见面、碰到","en":"","root":"temu","formation":"标准：bertemu｜根：temu","example":"Besok kita ketemu di kantor.","example_cn":"明天我们在办公室见。"},
+    {"order":63,"word":"mampir","display":"mampir","audio_text":"mampir","cn":"顺路去、进去坐一下","en":"","root":"","formation":"","example":"Kalau sempat, mampir ke sini ya.","example_cn":"有空的话顺路过来一下。"},
+    {"order":64,"word":"buru-buru","display":"buru-buru","audio_text":"buru-buru","cn":"匆忙、急急忙忙","en":"","root":"buru","formation":"","example":"Nggak usah buru-buru.","example_cn":"不用这么急。"},
+    {"order":65,"word":"sengaja","display":"sengaja","audio_text":"sengaja","cn":"故意；特意","en":"","root":"","formation":"","example":"Aku sengaja datang lebih pagi.","example_cn":"我特意早点来。"},
+    {"order":66,"word":"sekalian","display":"sekalian","audio_text":"sekalian","cn":"顺便；一起做","en":"","root":"sekali","formation":"","example":"Sekalian beli kopi ya.","example_cn":"顺便买杯咖啡。"},
+    {"order":67,"word":"kebetulan","display":"kebetulan","audio_text":"kebetulan","cn":"正好、碰巧","en":"","root":"betul","formation":"","example":"Kebetulan aku lagi di dekat sana.","example_cn":"正好我就在那附近。"},
+    {"order":68,"word":"nyari","display":"nyari","audio_text":"nyari","cn":"找、寻找","en":"","root":"cari","formation":"标准：mencari｜根：cari","example":"Aku lagi nyari charger.","example_cn":"我正在找充电器。"},
+    {"order":69,"word":"cocok","display":"cocok","audio_text":"cocok","cn":"合适、适合、搭","en":"","root":"","formation":"","example":"Tempat ini cocok buat meeting.","example_cn":"这个地方很适合开会。"},
+    {"order":70,"word":"bawain","display":"bawain","audio_text":"bawain","cn":"帮带来、给某人带","en":"","root":"bawa","formation":"标准：bawakan｜根：bawa","example":"Bisa bawain aku air?","example_cn":"能帮我带瓶水吗？"}
+  ],
+  "sentences":[
+    {"id":"Nanti kalau udah sampai, kabarin aku ya.","cn":"等你到了告诉我一声。"},
+    {"id":"Kebetulan aku lagi di sana, sekalian kita ketemu aja.","cn":"正好我也在那里，我们顺便见个面吧。"},
+    {"id":"Kalau nggak buru-buru, mampir dulu aja.","cn":"如果不赶时间，就先过来坐一下吧。"},
+    {"id":"Aku lagi nyari tempat yang cocok buat makan.","cn":"我正在找个适合吃饭的地方。"},
+    {"id":"Kalau kamu ke minimarket, bawain aku kopi sekalian ya.","cn":"如果你去便利店，顺便帮我带杯咖啡。"}
+  ],
+  "reading":{
+    "title":"",
+    "text":"Tadi siang aku sengaja keluar kantor lebih cepat karena mau ketemu teman. Kebetulan dia kerja nggak jauh dari sini. Dia bilang kalau aku sempat, mampir aja ke kantornya. Sebelum pergi, aku lagi nyari charger yang ketinggalan kemarin, jadi agak buru-buru. Akhirnya chargernya ketemu. Temanku lalu bilang, “Kalau ke sini, bawain kopi sekalian ya.” Setelah sampai, aku langsung kabarin dia. Ternyata tempat kerjanya lumayan nyaman dan cocok juga buat ngobrol santai.",
+    "cn":"今天中午我特意早点离开办公室，因为想去见一个朋友。正好他工作的地方离这里不远。他说如果我有空，就顺路去他办公室坐一下。出发前，我一直在找昨天落下的充电器，所以有点赶。最后终于找到了。朋友又跟我说：“你过来的话，顺便帮我带杯咖啡。”到了以后我马上告诉他。结果发现他的办公环境还挺舒服，也很适合随便聊聊天。"
+  },
+  "quiz":[
+    {"question":"“Sekalian beli air ya.” 最自然的意思是：","options":["只买水","顺便买水","马上买水"],"answer_index":1,"explain":"sekalian = 顺便、一起做。"},
+    {"question":"“Aku sengaja datang ke sini.” 是：","options":["我碰巧来了","我被迫来了","我特意来的"],"answer_index":2,"explain":"sengaja = 故意、特意。"},
+    {"question":"“Aku lagi nyari tempat yang cocok.” 是：","options":["我正在找合适的地方","我已经找到地方了","我不喜欢这个地方"],"answer_index":0,"explain":"lagi + 动词 表示“正在……”。"}
+  ],
+  "output":{
+    "task":"用自然口语表达：“正好我下午也去那里。如果你不赶时间，我们顺便见一下。到了以后告诉我。”",
+    "reference_answer":"Kebetulan nanti sore aku juga ke sana. Kalau kamu nggak buru-buru, sekalian kita ketemu aja. Kalau udah sampai, kabarin aku ya.",
+    "reference_cn":"正好我下午也去那里。如果你不赶时间，我们顺便见一下吧。到了以后告诉我。",
+    "standard_answer":"Kebetulan nanti sore saya juga pergi ke sana. Kalau kamu tidak terburu-buru, sekalian kita bertemu. Kalau sudah sampai, beri tahu saya ya."
+  },
+  "review":[
+    "kebetulan = 正好、碰巧；sengaja = 特意、故意，两者正好相反。",
+    "sekalian = 做一件事时“顺便”把另一件也做了。",
+    "kabarin / nyari / bawain 都是非常常见的口语形式，标准形式分别是 kabari / mencari / bawakan。"
   ]
 }
