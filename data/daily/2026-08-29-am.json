@@ -1,21 +1,21 @@
 {
-  "date": "2026-08-29",
-  "session": "am",
-  "time": "08:00",
-  "level": "A2+ → B1",
-  "title": "Day 7 · 历史晨课恢复",
-  "historical_reconstruction": true,
-  "recovery_note": "根据可确认的历史晨课记录恢复。仅恢复能够确认的词汇，不补造原先未能找回的句子、阅读、小测或输出题。",
-  "vocab": [
-    {"word":"kabarin","display":"kabarin","audio_text":"kabarin","cn":"","en":"","root":"kabar","formation":"口语 kabar + -in","example":"","example_cn":"","synonym_note":""},
-    {"word":"ketemu","display":"ketemu","audio_text":"ketemu","cn":"","en":"","root":"temu","formation":"口语 ke- + temu","example":"","example_cn":"","synonym_note":""},
-    {"word":"mampir","display":"mampir","audio_text":"mampir","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"buru-buru","display":"buru-buru","audio_text":"buru-buru","cn":"","en":"","root":"buru","formation":"重叠形式 buru-buru","example":"","example_cn":"","synonym_note":""},
-    {"word":"sengaja","display":"sengaja","audio_text":"sengaja","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"sekalian","display":"sekalian","audio_text":"sekalian","cn":"","en":"","root":"sekali","formation":"sekali + -an","example":"","example_cn":"","synonym_note":""},
-    {"word":"kebetulan","display":"kebetulan","audio_text":"kebetulan","cn":"","en":"","root":"betul","formation":"ke- + betul + -an","example":"","example_cn":"","synonym_note":""},
-    {"word":"nyari","display":"nyari","audio_text":"nyari","cn":"","en":"","root":"cari","formation":"口语 ny- + cari","example":"","example_cn":"","synonym_note":""},
-    {"word":"cocok","display":"cocok","audio_text":"cocok","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"bawain","display":"bawain","audio_text":"bawain","cn":"","en":"","root":"bawa","formation":"口语 bawa + -in","example":"","example_cn":"","synonym_note":""}
+  "date":"2026-08-29",
+  "session":"am",
+  "time":"08:00",
+  "level":"A2+ → B1",
+  "title":"Day 7 · 历史晨课恢复",
+  "historical_reconstruction":true,
+  "recovery_note":"根据可确认的历史晨课记录恢复。词汇列表为历史可确认内容；释义与词根按现有词表及既定学习规则补齐。不补造无法找回的原句、阅读、小测或输出题。",
+  "vocab":[
+    {"word":"kabarin","display":"kabarin","audio_text":"kabarin","cn":"告诉我 / 通知一下","en":"let someone know / inform","root":"kabar","formation":"口语 kabar + -in","example":"","example_cn":"","synonym_note":"标准表达常见 beri kabar / kabari。"},
+    {"word":"ketemu","display":"ketemu","audio_text":"ketemu","cn":"遇到 / 见面","en":"meet / run into","root":"temu","formation":"口语 ke- + temu","example":"","example_cn":"","synonym_note":"标准表达常见 bertemu。"},
+    {"word":"mampir","display":"mampir","audio_text":"mampir","cn":"顺路去一下 / 短暂停留","en":"drop by / stop by","root":"","formation":"","example":"","example_cn":"","synonym_note":"常用于去某处途中顺便停一下。"},
+    {"word":"buru-buru","display":"buru-buru","audio_text":"buru-buru","cn":"匆忙 / 急急忙忙","en":"in a hurry","root":"buru","formation":"重叠形式 buru-buru","example":"","example_cn":"","synonym_note":"日常口语高频。"},
+    {"word":"sengaja","display":"sengaja","audio_text":"sengaja","cn":"故意 / 特意","en":"intentionally / deliberately","root":"","formation":"","example":"","example_cn":"","synonym_note":"既可表示故意，也可表示特意。"},
+    {"word":"sekalian","display":"sekalian","audio_text":"sekalian","cn":"顺便一起","en":"at the same time / while you're at it","root":"sekali","formation":"sekali + -an","example":"","example_cn":"","synonym_note":"常见于‘既然做A，就顺便做B’。"},
+    {"word":"kebetulan","display":"kebetulan","audio_text":"kebetulan","cn":"碰巧 / 恰好","en":"coincidentally / happen to","root":"betul","formation":"ke- + betul + -an","example":"","example_cn":"","synonym_note":"表达巧合或正好发生。"},
+    {"word":"nyari","display":"nyari","audio_text":"nyari","cn":"找 / 寻找","en":"look for / search","root":"cari","formation":"口语 ny- + cari","example":"","example_cn":"","synonym_note":"标准表达 cari / mencari。"},
+    {"word":"cocok","display":"cocok","audio_text":"cocok","cn":"合适 / 匹配","en":"suitable / match","root":"","formation":"","example":"","example_cn":"","synonym_note":"可用于人、工作、衣服、口味等是否合适。"},
+    {"word":"bawain","display":"bawain","audio_text":"bawain","cn":"给……带来 / 带一下","en":"bring something for someone","root":"bawa","formation":"口语 bawa + -in","example":"","example_cn":"","synonym_note":"标准表达可根据语境用 bawakan。"}
   ]
 }
