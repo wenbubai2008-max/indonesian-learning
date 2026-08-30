@@ -1,0 +1,86 @@
+name: Enhance restored history
+on:
+  push:
+    paths:
+      - '.github/workflows/enhance-restored-history.yml'
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enhance history layout and daily vocab
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,re
+
+          p=Path('data/history-layout.js')
+          s=p.read_text(encoding='utf-8')
+          old="""return `<div class=\"historyVocabGrid\">${(list||[]).map(v=>`<div class=\"historyVocab\"><div class=\"vw\">${esc(v.display||v.word)} <button class=\"sound\" onclick='speak(${JSON.stringify(v.audio_text||v.word)})'>🔊</button></div><div class=\"vc\">${esc(v.cn||'')}</div><div class=\"ve\">${esc(v.en||'')}</div>${(v.root||v.formation||v.synonym_note)?`<div class=\"vr\">${v.root?`词根：${esc(v.root)}<br>`:''}${esc(v.formation||'')}${v.synonym_note?`<br>${esc(v.synonym_note)}`:''}</div>`:''}</div>`).join('')}</div>`;"""
+          new="""return `<div class=\"historyVocabGrid\">${(list||[]).map(v=>`<div class=\"historyVocab\"><div class=\"vw\">${v.order?`<span style=\"color:var(--muted);font-size:13px\">${v.order}. </span>`:''}${esc(v.display||v.word)} <button class=\"sound\" onclick='speak(${JSON.stringify(v.audio_text||v.word)})'>🔊</button></div><div class=\"vc\">${esc(v.cn||'')}</div><div class=\"ve\">${esc(v.en||'')}</div>${(v.root||v.formation||v.synonym_note)?`<div class=\"vr\">${v.root?`词根：${esc(v.root)}<br>`:''}${esc(v.formation||'')}${v.synonym_note?`<br>${esc(v.synonym_note)}`:''}</div>`:''}${v.example?`<div style=\"margin-top:10px;line-height:1.55\"><i>${esc(v.example)}</i></div>`:''}${v.example_cn?`<div class=\"muted\" style=\"margin-top:3px\">${esc(v.example_cn)}</div>`:''}${v.source_note?`<div class=\"muted\" style=\"margin-top:6px;font-size:12px\">${esc(v.source_note)}</div>`:''}</div>`).join('')}</div>`;"""
+          if old in s:
+              s=s.replace(old,new)
+          else:
+              raise SystemExit('vocab renderer target not found')
+
+          old2="""const chips=[];if(x.vocab?.length)chips.push(`词汇 ${x.vocab.length}`);if(x.sentences?.length)chips.push(`句子 ${x.sentences.length}`);if(x.reading)chips.push('阅读 1');if(x.quiz?.length)chips.push(`小测 ${x.quiz.length}`);if(x.output||x.rewrite?.length)chips.push('输出练习');if(x.recovered_sections?.length)chips.push(`恢复模块 ${x.recovered_sections.length}`);"""
+          new2="""const chips=[];if(x.progress){chips.push(`今日新增 ${x.progress.new||0}`);chips.push(`累计 ${x.progress.cumulative||0}`);if(x.progress.range)chips.push(`编号 ${x.progress.range}`)}if(x.vocab?.length)chips.push(`词汇 ${x.vocab.length}`);if(x.sentences?.length)chips.push(`句子 ${x.sentences.length}`);if(x.reading)chips.push('阅读 1');if(x.quiz?.length)chips.push(`小测 ${x.quiz.length}`);if(x.output||x.rewrite?.length)chips.push('输出练习');if(x.recovered_sections?.length)chips.push(`恢复模块 ${x.recovered_sections.length}`);"""
+          if old2 in s:s=s.replace(old2,new2)
+          else:raise SystemExit('summary chips target not found')
+
+          old3="""if(x.output)h+=section(n++,'主动输出',`<div class=\"item\">${esc(x.output.task||'')}<button class=\"answerToggle\" onclick=\"this.parentElement.classList.toggle('showAnswer')\">参考答案</button><div class=\"historyAnswer\">${esc(x.output.reference_answer||'')}<br><span class=\"muted\">${esc(x.output.reference_cn||'')}</span></div></div>`);"""
+          new3="""if(x.output)h+=section(n++,'主动输出',`<div class=\"item\">${esc(x.output.task||'')}<button class=\"answerToggle\" onclick=\"this.parentElement.classList.toggle('showAnswer')\">参考答案</button><div class=\"historyAnswer\"><b>自然口语</b><br>${esc(x.output.reference_answer||'')}<br><span class=\"muted\">${esc(x.output.reference_cn||'')}</span>${x.output.standard_answer?`<br><br><b>标准版</b><br>${esc(x.output.standard_answer)}`:''}</div></div>`);"""
+          if old3 in s:s=s.replace(old3,new3)
+          else:raise SystemExit('output renderer target not found')
+
+          old4="""const x=await fetchJSON('data/daily/'+d+'-am.json');
+      let h=navFor(d,'am')+datePicker(d,'am')+summaryChips(x);"""
+          new4="""const x=await fetchJSON('data/daily/'+d+'-am.json');
+      $('dailyTitle').textContent=x.title||'08:00 早间学习';
+      let h=navFor(d,'am')+datePicker(d,'am')+summaryChips(x);"""
+          if old4 in s:s=s.replace(old4,new4)
+          else:raise SystemExit('title target not found')
+          p.write_text(s,encoding='utf-8')
+
+          vp=Path('data/daily-vocab-data.js')
+          vs=vp.read_text(encoding='utf-8')
+          m=re.search(r'window\.DAILY_VOCAB_DB\s*=\s*(\[.*\])\s*;\s*$',vs,re.S)
+          if not m: raise SystemExit('daily vocab format not recognized')
+          arr=json.loads(m.group(1))
+          key=lambda x:str(x.get('word','')).strip().lower()
+          by={key(x):x for x in arr}
+          additions=[
+            {"word":"kepikiran","cn":"想到；一直惦记；脑子里冒出","en":"","root":"pikir","categories":["每日学习","08:00","Day 8"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"ngerasa","cn":"觉得；感觉","en":"","root":"rasa","categories":["每日学习","08:00","Day 8"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"nyangka","cn":"想到；料到","en":"","root":"sangka","categories":["每日学习","08:00","Day 8"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"beres","cn":"搞定；处理完；整齐","en":"","root":"","categories":["每日学习","08:00","Day 8"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"telanjur","cn":"已经做了、来不及改变","en":"","root":"","categories":["每日学习","08:00","Day 8"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"bakal","cn":"将会、要","en":"","root":"","categories":["每日学习","08:00","Day 8"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"giliran","cn":"轮到；轮班；顺序","en":"","root":"gilir","categories":["每日学习","08:00","Day 8"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"janjian","cn":"约好见面；约时间","en":"","root":"janji","categories":["每日学习","08:00","Day 8"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"nongkrong","cn":"闲坐、聚会、泡在某处","en":"","root":"","categories":["每日学习","08:00","Day 8"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]},
+            {"word":"nyusul","cn":"随后赶来；追上","en":"","root":"susul","categories":["每日学习","08:00","Day 8"],"times_seen":1,"first_seen":"2026-08-30 08:00","last_seen":"2026-08-30 08:00","sessions":["08:00"],"dates":["2026-08-30"]}
+          ]
+          for a in additions:
+            k=key(a)
+            if k in by:
+              x=by[k]
+              x['cn']=x.get('cn') or a['cn'];x['root']=x.get('root') or a['root']
+              x['categories']=list(dict.fromkeys((x.get('categories') or [])+a['categories']))
+              x['sessions']=list(dict.fromkeys((x.get('sessions') or [])+a['sessions']))
+              x['dates']=list(dict.fromkeys((x.get('dates') or [])+a['dates']))
+              x['times_seen']=max(int(x.get('times_seen',1)),len(x['dates']))
+              x['last_seen']='2026-08-30 08:00'
+            else:
+              arr.append(a);by[k]=a
+          vp.write_text('window.DAILY_VOCAB_DB = '+json.dumps(arr,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history-layout.js data/daily-vocab-data.js
+          git commit -m "Show complete restored lessons and sync Day 8 vocabulary" || exit 0
+          git push
