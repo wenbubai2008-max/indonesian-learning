@@ -1,0 +1,46 @@
+{
+  "date":"2026-08-29","session":"pm","time":"19:00","level":"A2+ → B1","day":8,
+  "title":"2026年8月29日｜Day 8｜19:00 晚间学习","source_status":"original_chat_text","history_complete":true,
+  "source_note":"原聊天该课标题未写 Day 编号；根据前一晚 Day 7、连续日期与19:00课程顺序归档为 Day 8。",
+  "vocab":[
+    {"word":"padahal","audio_text":"padahal","cn":"明明、可是实际上","example":"Padahal tadi katanya bisa.","example_cn":"明明刚才他说可以。"},
+    {"word":"kebetulan","audio_text":"kebetulan","cn":"正好、碰巧","root":"betul","example":"Kebetulan aku lagi di dekat sini.","example_cn":"正好我就在附近。"},
+    {"word":"sekalian","audio_text":"sekalian","cn":"顺便","example":"Sekalian beli kopi ya.","example_cn":"顺便买杯咖啡啊。"},
+    {"word":"lumayan","audio_text":"lumayan","cn":"还不错；挺……的","example":"Lumayan enak sih.","example_cn":"还挺好吃的。"},
+    {"word":"heran","audio_text":"heran","cn":"纳闷、觉得奇怪","example":"Aku heran, kok dia belum datang?","example_cn":"我纳闷，他怎么还没来？"},
+    {"word":"harusnya","audio_text":"harusnya","cn":"按理说、本来应该","root":"harus","formation":"harus + -nya（口语常用）","example":"Harusnya udah selesai.","example_cn":"按理说应该已经好了。"},
+    {"word":"setidaknya","audio_text":"setidaknya","cn":"至少","example":"Setidaknya kita udah coba.","example_cn":"至少我们试过了。"},
+    {"word":"nyaris","audio_text":"nyaris","cn":"差点、几乎","example":"Tadi aku nyaris telat.","example_cn":"我刚才差点迟到。"},
+    {"word":"ternyata","audio_text":"ternyata","cn":"原来、结果发现","root":"nyata","formation":"ter- + nyata","example":"Ternyata dia nggak jadi datang.","example_cn":"原来他不来了。"},
+    {"word":"terpaksa","audio_text":"terpaksa","cn":"不得不、被迫","root":"paksa","formation":"ter- + paksa","example":"Aku terpaksa pulang dulu.","example_cn":"我没办法，只能先回去了。"},
+    {"word":"mengatasi","audio_text":"mengatasi","cn":"应对、解决","root":"atas","formation":"meng- + atas + -i → mengatasi","family":["atas","mengatasi","teratasi"],"example":"Gimana cara ngatasin masalah ini?","example_cn":"这个问题怎么解决？","source_note":"词根/构词关系按用户后续明确纠正补入。"},
+    {"word":"menentukan","audio_text":"menentukan","cn":"确定、决定","root":"tentu","formation":"meN- + tentu + -kan","family":["tentu","menentukan","ditentukan"],"example":"Belum ditentuin nih.","example_cn":"还没定呢。"}
+  ],
+  "affix_training":{"title":"tentu → menentukan → ditentukan → ditentuin；mengatasi → ngatasin","items":[
+    {"form":"menentukan","cn":"确定、决定某事","root":"tentu","formation":"meN- + tentu + -kan","example":"Kita harus menentukan waktunya dulu.","example_cn":"我们得先确定时间。"},
+    {"form":"tentuin","cn":"确定、定下来（雅加达口语）","root":"tentu","example":"Kita tentuin waktunya dulu.","example_cn":"咱们先把时间定下来。"},
+    {"form":"ditentukan","cn":"被确定（标准）","root":"tentu","example":"Waktunya belum ditentukan.","example_cn":"时间还没确定。"},
+    {"form":"ditentuin","cn":"还没定（口语被动）","root":"tentu","example":"Waktunya belum ditentuin.","example_cn":"时间还没定呢。"},
+    {"form":"mengatasi","cn":"解决、应对（标准）","root":"atas","formation":"meng- + atas + -i","example":"Kita harus mengatasi masalah ini.","example_cn":"我们得把这个问题解决掉。"},
+    {"form":"ngatasin","cn":"解决、处理（口语）","root":"atas","example":"Kita harus ngatasin masalah ini.","example_cn":"我们得把这个问题解决掉。"}
+  ]},
+  "rewrite":[
+    {"task":"明明他说今天会来的。","reference_answer":"Padahal dia bilang hari ini bakal datang.","reference_cn":"明明他说今天会来的。"},
+    {"task":"正好我明天有空。","reference_answer":"Kebetulan besok aku kosong.","reference_cn":"正好我明天有空。","alternate_answer":"Kebetulan besok aku ada waktu."},
+    {"task":"你去买饭的话，顺便帮我买咖啡。","reference_answer":"Kalau kamu pergi beli makan, sekalian beliin aku kopi ya.","reference_cn":"你去买饭的话，顺便帮我买咖啡。"},
+    {"task":"按理说今天应该已经完成了。","reference_answer":"Harusnya hari ini udah selesai.","reference_cn":"按理说今天应该已经完成了。"},
+    {"task":"我差点忘了告诉你。","reference_answer":"Aku nyaris lupa kasih tahu kamu.","reference_cn":"我差点忘了告诉你。","alternate_answer":"Aku hampir lupa kasih tahu kamu."}
+  ],
+  "reading":{"title":"约人办事迟到","text":"Tadi aku janjian sama orang jam dua. Harusnya dia datang tepat waktu, tapi sampai jam setengah tiga masih belum muncul. Aku heran juga, padahal tadi pagi dia bilang udah OTW. Ternyata dia kena macet parah. Aku sebenarnya mau pergi, tapi karena urusannya lumayan penting, akhirnya aku terpaksa nunggu. Untungnya sekitar jam tiga dia datang. Sekalian aja kami beresin semuanya hari ini, biar besok nggak perlu ketemu lagi.","cn":"今天我跟一个人约了两点见。按理说他应该准时来，但是到两点半还没出现。我也挺纳闷的，明明早上他说已经在路上了。结果原来是遇到了严重堵车。我本来想走了，不过因为这个事情还挺重要，最后没办法只能等。好在三点左右他来了。干脆我们今天顺便把所有事情都处理完，这样明天就不用再见面了。"},
+  "reading_notes":["harusnya... tapi... = 按理应该……但是……","padahal... = 明明……","ternyata... = 结果发现……","akhirnya... = 最后……","sekalian aja... = 干脆顺便……"],
+  "dialogue":{"title":"朋友问今天事情办得怎么样","lines":[
+    {"speaker":"A","id":"Gimana tadi? Udah beres?","cn":"刚才怎么样？搞定了吗？"},{"speaker":"B","id":"Udah sih, tapi lama banget.","cn":"搞定了，不过太久了。"},{"speaker":"A","id":"Kok bisa?","cn":"怎么回事？"},{"speaker":"B","id":"Harusnya jam dua mulai, tapi orangnya telat hampir sejam.","cn":"按理说两点开始，但那个人迟到了快一个小时。"},{"speaker":"A","id":"Padahal udah janjian, kan?","cn":"明明都约好了，对吧？"},{"speaker":"B","id":"Iya. Katanya kena macet.","cn":"对。他说堵车了。"},{"speaker":"A","id":"Terus akhirnya gimana?","cn":"然后最后怎么样？"},{"speaker":"B","id":"Ya udah, aku tungguin aja. Sekalian semuanya diberesin hari ini.","cn":"没办法，我就等他了。顺便今天把所有事情都处理完。"},{"speaker":"A","id":"Lumayan lah, setidaknya udah beres.","cn":"也还行啦，至少搞定了。"}
+  ]},
+  "review":["padahal = 明明……","harusnya = 按理说应该……","kebetulan = 正好、碰巧","sekalian = 顺便","setidaknya = 至少"],
+  "quiz":[
+    {"question":"把‘明明……’说成印尼语。","options":["padahal","setidaknya","nyaris"],"answer_index":0,"explain":"padahal 常表示事实与预期相反，有‘明明……却……’的感觉。"},
+    {"question":"把‘按理说应该……’说成自然口语。","options":["harusnya","kebetulan","sekalian"],"answer_index":0,"explain":"harusnya = seharusnya 的常见口语。"},
+    {"question":"把‘至少……’说成印尼语。","options":["setidaknya","ternyata","terpaksa"],"answer_index":0,"explain":"setidaknya = 至少。"}
+  ],
+  "output":{"task":"讲一件‘本来应该怎样，结果却发生了意外，最后怎么解决’的事情。强制使用至少4个：harusnya / padahal / ternyata / akhirnya / terpaksa / setidaknya / sekalian。","reference_unavailable":true,"source_note":"原聊天只布置了60秒主动输出，没有给参考答案；按历史真实性规则不补造。"}
+}
