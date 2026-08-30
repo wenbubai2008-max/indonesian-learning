@@ -1,21 +1,21 @@
 {
-  "date": "2026-08-28",
-  "session": "am",
-  "time": "08:00",
-  "level": "A2+ → B1",
-  "title": "Day 6 · 历史晨课恢复",
-  "historical_reconstruction": true,
-  "recovery_note": "根据可确认的历史晨课记录恢复。仅恢复能够确认的词汇，不补造原先未能找回的句子、阅读、小测或输出题。",
-  "vocab": [
-    {"word":"bentar","display":"bentar","audio_text":"bentar","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"lumayan","display":"lumayan","audio_text":"lumayan","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"ternyata","display":"ternyata","audio_text":"ternyata","cn":"","en":"","root":"nyata","formation":"ter- + nyata","example":"","example_cn":"","synonym_note":""},
-    {"word":"malah","display":"malah","audio_text":"malah","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"padahal","display":"padahal","audio_text":"padahal","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"cuma","display":"cuma","audio_text":"cuma","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"langsung","display":"langsung","audio_text":"langsung","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"ngobrol","display":"ngobrol","audio_text":"ngobrol","cn":"","en":"","root":"obrol","formation":"口语 ng- + obrol","example":"","example_cn":"","synonym_note":""},
-    {"word":"ngerepotin","display":"ngerepotin","audio_text":"ngerepotin","cn":"","en":"","root":"repot","formation":"口语 nge- + repot + -in","example":"","example_cn":"","synonym_note":""},
-    {"word":"ketinggalan","display":"ketinggalan","audio_text":"ketinggalan","cn":"","en":"","root":"tinggal","formation":"ke- + tinggal + -an","example":"","example_cn":"","synonym_note":""}
+  "date":"2026-08-28",
+  "session":"am",
+  "time":"08:00",
+  "level":"A2+ → B1",
+  "title":"Day 6 · 历史晨课恢复",
+  "historical_reconstruction":true,
+  "recovery_note":"根据可确认的历史晨课记录恢复。词汇列表为历史可确认内容；释义与词根按现有词表及既定学习规则补齐。不补造无法找回的原句、阅读、小测或输出题。",
+  "vocab":[
+    {"word":"bentar","display":"bentar","audio_text":"bentar","cn":"等一下 / 一会儿","en":"a moment / wait a sec","root":"sebentar","formation":"sebentar 的口语缩略形式","example":"","example_cn":"","synonym_note":"雅加达口语里非常常见。"},
+    {"word":"lumayan","display":"lumayan","audio_text":"lumayan","cn":"还不错 / 还可以","en":"quite / not bad","root":"","formation":"","example":"","example_cn":"","synonym_note":"常用于程度评价。"},
+    {"word":"ternyata","display":"ternyata","audio_text":"ternyata","cn":"原来 / 结果和想的不一样","en":"turns out / actually","root":"nyata","formation":"ter- + nyata","example":"","example_cn":"","synonym_note":"常用于发现结果与预期不同。"},
+    {"word":"malah","display":"malah","audio_text":"malah","cn":"反而 / 却","en":"instead / on the contrary","root":"","formation":"","example":"","example_cn":"","synonym_note":"表示实际结果与预期相反。"},
+    {"word":"padahal","display":"padahal","audio_text":"padahal","cn":"明明…… / 其实……却","en":"even though / whereas","root":"","formation":"","example":"","example_cn":"","synonym_note":"常带‘明明如此却……’的反差感。"},
+    {"word":"cuma","display":"cuma","audio_text":"cuma","cn":"只是 / 仅仅","en":"only / just","root":"","formation":"","example":"","example_cn":"","synonym_note":"标准表达可用 hanya。"},
+    {"word":"langsung","display":"langsung","audio_text":"langsung","cn":"直接 / 马上","en":"directly / immediately","root":"","formation":"","example":"","example_cn":"","synonym_note":"可表示动作没有中间步骤，也可表示马上发生。"},
+    {"word":"ngobrol","display":"ngobrol","audio_text":"ngobrol","cn":"聊天","en":"chat / talk casually","root":"obrol","formation":"口语 ng- + obrol","example":"","example_cn":"","synonym_note":"标准形式常见 mengobrol。"},
+    {"word":"ngerepotin","display":"ngerepotin","audio_text":"ngerepotin","cn":"给别人添麻烦","en":"trouble / inconvenience someone","root":"repot","formation":"口语 nge- + repot + -in","example":"","example_cn":"","synonym_note":"标准表达常见 merepotkan。"},
+    {"word":"ketinggalan","display":"ketinggalan","audio_text":"ketinggalan","cn":"落下 / 忘带 / 错过","en":"left behind / miss","root":"tinggal","formation":"ke- + tinggal + -an","example":"","example_cn":"","synonym_note":"可用于东西忘带、被落下、错过车等。"}
   ]
 }
