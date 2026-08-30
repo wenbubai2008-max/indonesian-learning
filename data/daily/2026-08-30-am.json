@@ -3,49 +3,53 @@
   "session":"am",
   "time":"08:00",
   "level":"A2+ → B1",
-  "day":8,
-  "title":"2026年8月30日｜Day 8",
-  "source_status":"original_chat_text",
-  "source_note":"原聊天导出文本第二课标题重复写成2026年8月29日；根据课程连续编号71–80、Day 8以及用户明确要求，网站归档为2026-08-30。",
-  "progress":{"new":10,"cumulative":80,"range":"71–80"},
+  "day":9,
+  "title":"2026年8月30日｜Day 9",
+  "source_status":"original_chat_text_corrected",
+  "source_note":"采用本聊天实际 Day 9 原文，并应用后续发音显示纠正：pantes → pantés，ngaret → ngarét；标准拼写/audio_text 仍不带 é。",
+  "progress":{"new":10,"cumulative":90,"range":"81–90"},
   "vocab":[
-    {"order":71,"word":"kepikiran","display":"kepikiran","audio_text":"kepikiran","cn":"想到；一直惦记；脑子里冒出","en":"","root":"pikir","formation":"标准：terpikir / memikirkan｜根：pikir","example":"Aku jadi kepikiran terus.","example_cn":"我就一直在想这件事。"},
-    {"order":72,"word":"ngerasa","display":"ngerasa","audio_text":"ngerasa","cn":"觉得；感觉","en":"","root":"rasa","formation":"标准：merasa｜根：rasa","example":"Aku ngerasa ada yang aneh.","example_cn":"我感觉有点不对劲。"},
-    {"order":73,"word":"nyangka","display":"nyangka","audio_text":"nyangka","cn":"想到；料到","en":"","root":"sangka","formation":"标准：menyangka｜根：sangka","example":"Aku nggak nyangka dia datang.","example_cn":"我没想到他会来。"},
-    {"order":74,"word":"beres","display":"bérés","audio_text":"beres","cn":"搞定；处理完；整齐","en":"","root":"","formation":"标准拼写：beres","example":"Tenang, semuanya udah bérés.","example_cn":"放心，都搞定了。","source_note":"KBBI 标注其读音为 /bérés/。"},
-    {"order":75,"word":"telanjur","display":"telanjur","audio_text":"telanjur","cn":"已经做了、来不及改变","en":"","root":"","formation":"常见口语也会说 terlanjur","example":"Udah telanjur beli.","example_cn":"都已经买了。","source_note":"标准词条以 telanjur 为主。"},
-    {"order":76,"word":"bakal","display":"bakal","audio_text":"bakal","cn":"将会、要","en":"","root":"","formation":"标准：akan","example":"Besok bakal hujan kayaknya.","example_cn":"明天好像会下雨。"},
-    {"order":77,"word":"giliran","display":"giliran","audio_text":"giliran","cn":"轮到；轮班；顺序","en":"","root":"gilir","formation":"根：gilir","example":"Sekarang giliran kamu.","example_cn":"现在轮到你了。"},
-    {"order":78,"word":"janjian","display":"janjian","audio_text":"janjian","cn":"约好见面；约时间","en":"","root":"janji","formation":"根：janji","example":"Kita janjian jam tujuh ya.","example_cn":"我们约七点吧。"},
-    {"order":79,"word":"nongkrong","display":"nongkrong","audio_text":"nongkrong","cn":"闲坐、聚会、泡在某处","en":"","root":"","formation":"","example":"Nanti malam nongkrong yuk.","example_cn":"晚上一起出去坐坐吧。"},
-    {"order":80,"word":"nyusul","display":"nyusul","audio_text":"nyusul","cn":"随后赶来；追上","en":"","root":"susul","formation":"标准：menyusul｜根：susul","example":"Kalian duluan aja, aku nyusul.","example_cn":"你们先走，我随后就来。"}
+    {"order":81,"word":"pantes","display":"pantés","audio_text":"pantes","cn":"难怪、怪不得","en":"","root":"","formation":"标准：pantas","example":"Pantes kamu capek, dari pagi belum istirahat.","example_cn":"难怪你累，从早上就没休息。"},
+    {"order":82,"word":"kebagian","display":"kebagian","audio_text":"kebagian","cn":"分到、轮到、得到一份","en":"","root":"bagi","formation":"根：bagi","example":"Aku nggak kebagian tempat duduk.","example_cn":"我没分到座位。"},
+    {"order":83,"word":"kehabisan","display":"kehabisan","audio_text":"kehabisan","cn":"用完、卖光、耗尽","en":"","root":"habis","formation":"根：habis","example":"Aku kehabisan baterai.","example_cn":"我手机没电了。"},
+    {"order":84,"word":"ketiduran","display":"ketiduran","audio_text":"ketiduran","cn":"不小心睡着、睡过头","en":"","root":"tidur","formation":"根：tidur","example":"Maaf, tadi aku ketiduran.","example_cn":"不好意思，我刚才不小心睡着了。"},
+    {"order":85,"word":"ngantuk","display":"ngantuk","audio_text":"ngantuk","cn":"困、犯困","en":"","root":"","formation":"","example":"Aku ngantuk banget habis makan.","example_cn":"我吃完饭特别困。"},
+    {"order":86,"word":"penasaran","display":"penasaran","audio_text":"penasaran","cn":"好奇、很想知道","en":"","root":"","formation":"","example":"Aku penasaran dia bakal bilang apa.","example_cn":"我很好奇他会说什么。"},
+    {"order":87,"word":"ngaret","display":"ngarét","audio_text":"ngaret","cn":"拖延、迟到","en":"","root":"","formation":"很口语，尤其雅加达常见","example":"Dia kalau janjian suka ngarét.","example_cn":"他约时间经常迟到。","synonym_note":"telat vs ngarét：telat 更客观表示‘迟到/晚了’；ngarét 更口语，常带‘拖、磨蹭、不准时’的感觉。例：Aku telat 10 menit. / Dia kalau janjian suka ngarét."},
+    {"order":88,"word":"mager","display":"mager","audio_text":"mager","cn":"懒得动、不想动","en":"","root":"","formation":"来自：malas gerak","example":"Hari ini aku mager keluar.","example_cn":"今天我懒得出门。"},
+    {"order":89,"word":"bingung","display":"bingung","audio_text":"bingung","cn":"困惑、不知道怎么办","en":"","root":"","formation":"","example":"Aku bingung mau pilih yang mana.","example_cn":"我不知道该选哪个。"},
+    {"order":90,"word":"kebanyakan","display":"kebanyakan","audio_text":"kebanyakan","cn":"太多；大多数","en":"","root":"banyak","formation":"根：banyak","example":"Jangan kebanyakan kopi.","example_cn":"别喝太多咖啡。"}
   ],
   "sentences":[
-    {"id":"Aku jadi kepikiran terus sejak tadi.","cn":"从刚才开始我就一直在想这件事。"},
-    {"id":"Aku nggak nyangka bakal seribét ini.","cn":"我没想到会这么麻烦。"},
-    {"id":"Kalau semuanya udah bérés, kabarin aku ya.","cn":"都搞定以后告诉我一声。"},
-    {"id":"Kalian nongkrong dulu aja, nanti aku nyusul.","cn":"你们先去坐着，我待会儿过去。"},
-    {"id":"Kita janjian jam tujuh, tapi sekarang giliran dia yang telat.","cn":"我们约好七点，结果这次轮到他迟到了。"}
+    {"id":"Pantés dia belum datang, ternyata masih di jalan.","cn":"难怪他还没来，原来还在路上。"},
+    {"id":"Maaf ya, tadi aku ketiduran jadi agak ngarét.","cn":"不好意思，我刚才睡着了，所以有点迟到。"},
+    {"id":"Aku penasaran, tapi sekarang malah bingung mau pilih yang mana.","cn":"我很好奇，但现在反而不知道该选哪个。"},
+    {"id":"Aku kehabisan baterai, makanya tadi nggak bisa kabarin kamu.","cn":"我手机没电了，所以刚才没法通知你。"},
+    {"id":"Hari ini mager banget, apalagi habis makan jadi ngantuk.","cn":"今天特别懒得动，尤其吃完饭以后更困。"}
   ],
   "reading":{
     "title":"",
-    "text":"Tadi aku janjian sama teman buat nongkrong setelah kerja. Awalnya aku pikir bakal selesai cepat, tapi ternyata ada kerjaan tambahan. Aku mulai ngerasa nggak enak karena dia sudah nunggu. Aku juga nggak nyangka kerjaannya bakal selama ini. Untung sekitar jam tujuh semuanya akhirnya bérés. Aku langsung kabarin dia, “Kamu duluan aja, nanti aku nyusul.” Karena sudah telanjur janjian, aku tetap datang. Di jalan aku malah kepikiran, minggu lalu dia yang telat, sekarang giliran aku.",
-    "cn":"刚才我和朋友约好下班后一起出去坐坐。本来我觉得会很快做完，结果突然又多了工作。我开始有点过意不去，因为他已经在等了。我也没想到工作会拖这么久。幸好大概七点的时候终于全部搞定了。我马上告诉他：“你先过去吧，我随后就到。”因为都已经约好了，我还是过去了。路上我反而想到，上周是他迟到，这次轮到我了。"
+    "text":"Tadi aku janjian nongkrong sama teman jam dua siang. Tapi habis makan aku ngantuk banget dan akhirnya ketiduran. Pas bangun, sudah hampir jam tiga. Pantés HP-ku sepi, ternyata baterainya juga kehabisan. Aku langsung charge HP dan kabarin teman. Dia cuma bilang, “Santai aja, aku juga baru sampai.” Ternyata dia juga ngarét. Aku sempat mager keluar, tapi akhirnya tetap pergi karena penasaran sama tempat barunya. Sampai sana malah bingung mau pesan apa karena pilihannya kebanyakan. Untung aku masih kebagian meja dekat jendela.",
+    "cn":"刚才我和朋友约好下午两点出去坐坐。但吃完饭以后我特别困，结果不小心睡着了。醒来的时候已经快到三点。难怪手机一点动静都没有，原来电也用完了。我马上给手机充电，然后告诉朋友。他只说：“没事，我也刚到。”结果他也迟到了。我一度懒得出门，但最后还是去了，因为我很好奇那个新地方。到了以后反而不知道点什么，因为选择太多了。还好我最后分到了靠窗的位置。"
   },
   "quiz":[
-    {"question":"Aku nggak nyangka dia datang. 最自然的意思是：","options":["我不希望他来","我没想到他会来","我让他来"],"answer_index":1,"explain":"nggak nyangka = 没想到、没料到。"},
-    {"question":"Kalian duluan aja, aku nyusul. 是：","options":["你们等我","你们先走，我随后来","我不去了"],"answer_index":1,"explain":"nyusul = 随后赶上、随后过去。"},
-    {"question":"Semuanya udah bérés. 最自然是：","options":["全部都搞定了","全部坏了","全部很贵"],"answer_index":0,"explain":"udah bérés = 已经搞定、处理完。"}
+    {"question":"“Aku ketiduran.” 最自然的意思是：","options":["我准备睡觉","我不小心睡着了","我不困"],"answer_index":1,"explain":"ketiduran 通常是不小心睡着。"},
+    {"question":"“Pantés dia capek.” 是：","options":["难怪他累","他假装累","他不应该累"],"answer_index":0,"explain":"pantes = 难怪、怪不得；学习页按发音显示为 pantés。"},
+    {"question":"“Aku nggak kebagian.” 通常表示：","options":["我不想要","我没分到/没轮到","我已经拿到了"],"answer_index":1,"explain":"kebagian = 分到、轮到；否定后就是‘没分到’。"}
   ],
   "output":{
-    "task":"用自然口语表达：“我没想到今天工作这么多。本来约好和朋友见面，不过还好现在已经都搞定了。我让他先过去，我随后就到。”",
-    "reference_answer":"Aku nggak nyangka kerjaan hari ini banyak banget. Padahal aku udah janjian sama teman, tapi untung sekarang semuanya udah bérés. Aku suruh dia duluan aja, nanti aku nyusul.",
-    "reference_cn":"我没想到今天工作这么多。本来已经约好和朋友见面，不过还好现在都搞定了。我让他先过去，我随后就到。",
-    "standard_answer":"Saya tidak menyangka pekerjaan hari ini begitu banyak. Padahal saya sudah berjanji untuk bertemu teman, tetapi untung sekarang semuanya sudah selesai. Saya meminta dia pergi lebih dulu, nanti saya menyusul."
+    "task":"用自然口语表达：“难怪你迟到了，原来你刚才睡着了。我还以为你懒得出门。没关系，我也刚到。”",
+    "reference_answer":"Pantés kamu ngarét, ternyata tadi ketiduran. Aku kira kamu mager keluar. Nggak apa-apa, aku juga baru sampai.",
+    "reference_cn":"难怪你迟到了，原来刚才睡着了。我还以为你懒得出门。没关系，我也刚到。",
+    "standard_answer":"Pantas kamu terlambat, ternyata tadi tertidur. Saya kira kamu malas keluar. Tidak apa-apa, saya juga baru sampai."
   },
   "review":[
-    "nggak nyangka + 事实 = “没想到……”",
-    "bérés = 日常极常见的“搞定、处理完”。",
-    "duluan aja, nanti aku nyusul = “你先去，我随后来”，非常实用。"
+    "pantés = ‘难怪’，聊天里特别常见。",
+    "ketiduran / kehabisan / kebagian 都带有‘进入某种结果状态’的感觉。",
+    "ngarét / mager 都是很口语的表达，朋友聊天、WhatsApp里很常见。"
+  ],
+  "post_lesson_notes":[
+    "telat vs ngarét：telat = 单纯迟到/晚了；ngarét = 拖晚了、磨蹭、不准时，更口语。",
+    "学习页显示 pantés、ngarét；词库与 audio_text 保留标准拼写 pantes、ngaret。"
   ]
 }
