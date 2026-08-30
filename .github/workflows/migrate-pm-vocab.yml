@@ -64,14 +64,40 @@ jobs:
             git add data/daily-vocab-data.js
             if git diff --cached --quiet; then
               echo 'PM vocab already synchronized.'
-              exit 0
+              break
             fi
             git commit -m 'Sync 19:00 historical lesson vocabulary'
             if git push origin HEAD:main; then
-              exit 0
+              break
             fi
             echo "Push attempt $attempt conflicted; retrying from latest main..."
             sleep 2
           done
-          echo 'Failed to push after 3 attempts.' >&2
-          exit 1
+      - name: Report PM vocabulary classification
+        shell: bash
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          node <<'NODE'
+          const fs=require('fs');
+          const db=JSON.parse(fs.readFileSync('data/daily-vocab-data.js','utf8').replace(/^window\.DAILY_VOCAB_DB\s*=\s*/,'').replace(/;\s*$/,''));
+          const lessonDates=['2026-08-23','2026-08-24','2026-08-25','2026-08-26','2026-08-27','2026-08-28','2026-08-29','2026-08-30'];
+          const key=s=>String(s||'').trim().toLowerCase();
+          const counts=new Map(), display=new Map();
+          for(const date of lessonDates){
+            const x=JSON.parse(fs.readFileSync(`data/daily/${date}-pm.json`,'utf8'));
+            for(const v of (x.vocab||[])){const k=key(v.word);counts.set(k,(counts.get(k)||0)+1);display.set(k,v.word)}
+          }
+          const map=new Map(db.map(x=>[key(x.word),x]));
+          const all=[...counts.keys()].sort();
+          const both=all.filter(k=>(map.get(k)?.sessions||[]).includes('08:00'));
+          const pmOnly=all.filter(k=>!(map.get(k)?.sessions||[]).includes('08:00'));
+          const repeatedPM=all.filter(k=>counts.get(k)>1);
+          console.log('PM_UNIQUE_COUNT='+all.length);
+          console.log('PM_ONLY_COUNT='+pmOnly.length);
+          console.log('AM_AND_PM_COUNT='+both.length);
+          console.log('REPEATED_WITHIN_PM_COUNT='+repeatedPM.length);
+          console.log('PM_ONLY='+pmOnly.map(k=>display.get(k)).join(' | '));
+          console.log('AM_AND_PM='+both.map(k=>display.get(k)).join(' | '));
+          console.log('REPEATED_WITHIN_PM='+repeatedPM.map(k=>`${display.get(k)}(${counts.get(k)})`).join(' | '));
+          NODE
