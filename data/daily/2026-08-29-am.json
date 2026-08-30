@@ -6,6 +6,8 @@
   "day":7,
   "title":"2026年8月29日｜Day 7",
   "source_status":"original_chat_text",
+  "date_conflict":true,
+  "date_conflict_note":"原聊天中 Day 7 与 Day 8 的标题都写成 2026年8月29日。这里保留原始冲突，不擅自改日期；Day 8 作为同日追加历史课保存在 additional_lessons。",
   "progress":{"new":10,"cumulative":70,"range":"61–70"},
   "vocab":[
     {"order":61,"word":"kabarin","display":"kabarin","audio_text":"kabarin","cn":"告诉、通知","en":"","root":"kabar","formation":"标准：kabari / memberi tahu","example":"Nanti kabarin aku ya.","example_cn":"等会儿告诉我一声。"},
@@ -46,5 +48,65 @@
     "kebetulan = 正好、碰巧；sengaja = 特意、故意，两者正好相反。",
     "sekalian = 做一件事时“顺便”把另一件也做了。",
     "kabarin / nyari / bawain 都是非常常见的口语形式，标准形式分别是 kabari / mencari / bawakan。"
+  ],
+  "additional_lessons":[
+    {
+      "date":"2026-08-29",
+      "session":"am",
+      "time":"08:00",
+      "level":"A2+ → B1",
+      "day":8,
+      "title":"2026年8月29日｜Day 8",
+      "source_status":"original_chat_text",
+      "source_note":"原聊天标题明确写为 2026年8月29日｜Day 8，与同日 Day 7 冲突；按原文保留。",
+      "progress":{"new":10,"cumulative":80,"range":"71–80"},
+      "vocab":[
+        {"order":71,"word":"kepikiran","display":"kepikiran","audio_text":"kepikiran","cn":"想到；一直惦记；脑子里冒出","en":"","root":"pikir","formation":"标准：terpikir / memikirkan｜根：pikir","example":"Aku jadi kepikiran terus.","example_cn":"我就一直在想这件事。"},
+        {"order":72,"word":"ngerasa","display":"ngerasa","audio_text":"ngerasa","cn":"觉得；感觉","en":"","root":"rasa","formation":"标准：merasa｜根：rasa","example":"Aku ngerasa ada yang aneh.","example_cn":"我感觉有点不对劲。"},
+        {"order":73,"word":"nyangka","display":"nyangka","audio_text":"nyangka","cn":"想到；料到","en":"","root":"sangka","formation":"标准：menyangka｜根：sangka","example":"Aku nggak nyangka dia datang.","example_cn":"我没想到他会来。"},
+        {"order":74,"word":"beres","display":"bérés","audio_text":"beres","cn":"搞定；处理完；整齐","en":"","root":"","formation":"标准拼写：beres","example":"Tenang, semuanya udah bérés.","example_cn":"放心，都搞定了。","source_note":"KBBI 标注其读音为 /bérés/。"},
+        {"order":75,"word":"telanjur","display":"telanjur","audio_text":"telanjur","cn":"已经做了、来不及改变","en":"","root":"","formation":"常见口语也会说 terlanjur","example":"Udah telanjur beli.","example_cn":"都已经买了。","source_note":"标准词条以 telanjur 为主。"},
+        {"order":76,"word":"bakal","display":"bakal","audio_text":"bakal","cn":"将会、要","en":"","root":"","formation":"标准：akan","example":"Besok bakal hujan kayaknya.","example_cn":"明天好像会下雨。"},
+        {"order":77,"word":"giliran","display":"giliran","audio_text":"giliran","cn":"轮到；轮班；顺序","en":"","root":"gilir","formation":"根：gilir","example":"Sekarang giliran kamu.","example_cn":"现在轮到你了。"},
+        {"order":78,"word":"janjian","display":"janjian","audio_text":"janjian","cn":"约好见面；约时间","en":"","root":"janji","formation":"根：janji","example":"Kita janjian jam tujuh ya.","example_cn":"我们约七点吧。"},
+        {"order":79,"word":"nongkrong","display":"nongkrong","audio_text":"nongkrong","cn":"闲坐、聚会、泡在某处","en":"","root":"","formation":"","example":"Nanti malam nongkrong yuk.","example_cn":"晚上一起出去坐坐吧。"},
+        {"order":80,"word":"nyusul","display":"nyusul","audio_text":"nyusul","cn":"随后赶来；追上","en":"","root":"susul","formation":"标准：menyusul｜根：susul","example":"Kalian duluan aja, aku nyusul.","example_cn":"你们先走，我随后就来。"}
+      ],
+      "sentences":[
+        {"id":"Aku jadi kepikiran terus sejak tadi.","cn":"从刚才开始我就一直在想这件事。"},
+        {"id":"Aku nggak nyangka bakal seribét ini.","cn":"我没想到会这么麻烦。"},
+        {"id":"Kalau semuanya udah bérés, kabarin aku ya.","cn":"都搞定以后告诉我一声。"},
+        {"id":"Kalian nongkrong dulu aja, nanti aku nyusul.","cn":"你们先去坐着，我待会儿过去。"},
+        {"id":"Kita janjian jam tujuh, tapi sekarang giliran dia yang telat.","cn":"我们约好七点，结果这次轮到他迟到了。"}
+      ],
+      "reading":{
+        "title":"",
+        "text":"Tadi aku janjian sama teman buat nongkrong setelah kerja. Awalnya aku pikir bakal selesai cepat, tapi ternyata ada kerjaan tambahan. Aku mulai ngerasa nggak enak karena dia sudah nunggu. Aku juga nggak nyangka kerjaannya bakal selama ini. Untung sekitar jam tujuh semuanya akhirnya bérés. Aku langsung kabarin dia, “Kamu duluan aja, nanti aku nyusul.” Karena sudah telanjur janjian, aku tetap datang. Di jalan aku malah kepikiran, minggu lalu dia yang telat, sekarang giliran aku.",
+        "cn":"刚才我和朋友约好下班后一起出去坐坐。本来我觉得会很快做完，结果突然又多了工作。我开始有点过意不去，因为他已经在等了。我也没想到工作会拖这么久。幸好大概七点的时候终于全部搞定了。我马上告诉他：“你先过去吧，我随后就到。”因为都已经约好了，我还是过去了。路上我反而想到，上周是他迟到，这次轮到我了。"
+      },
+      "quiz":[
+        {"question":"Aku nggak nyangka dia datang. 最自然的意思是：","options":["我不希望他来","我没想到他会来","我让他来"],"answer_index":1,"explain":"nggak nyangka = 没想到、没料到。"},
+        {"question":"Kalian duluan aja, aku nyusul. 是：","options":["你们等我","你们先走，我随后来","我不去了"],"answer_index":1,"explain":"nyusul = 随后赶上、随后过去。"},
+        {"question":"Semuanya udah bérés. 最自然是：","options":["全部都搞定了","全部坏了","全部很贵"],"answer_index":0,"explain":"udah bérés = 已经搞定、处理完。"}
+      ],
+      "output":{
+        "task":"用自然口语表达：“我没想到今天工作这么多。本来约好和朋友见面，不过还好现在已经都搞定了。我让他先过去，我随后就到。”",
+        "reference_answer":"Aku nggak nyangka kerjaan hari ini banyak banget. Padahal aku udah janjian sama teman, tapi untung sekarang semuanya udah bérés. Aku suruh dia duluan aja, nanti aku nyusul.",
+        "reference_cn":"我没想到今天工作这么多。本来已经约好和朋友见面，不过还好现在都搞定了。我让他先过去，我随后就到。",
+        "standard_answer":"Saya tidak menyangka pekerjaan hari ini begitu banyak. Padahal saya sudah berjanji untuk bertemu teman, tetapi untung sekarang semuanya sudah selesai. Saya meminta dia pergi lebih dulu, nanti saya menyusul."
+      },
+      "review":[
+        "nggak nyangka + 事实 = “没想到……”",
+        "bérés = 日常极常见的“搞定、处理完”。",
+        "duluan aja, nanti aku nyusul = “你先去，我随后来”，非常实用。"
+      ],
+      "post_lesson_notes":[
+        "sejak tadi = 从刚才开始一直持续到现在；dulu = 以前/从前；lalu 常用于‘……之前’或‘然后’，不等同于 sejak tadi。",
+        "nyangka 很常用，尤其 nggak nyangka = 没想到。",
+        "bakal 比 akan 更口语；akan 更标准、中性。",
+        "beres 更像‘搞定/处理妥当’，selesai 更偏‘完成/结束一个过程’。",
+        "suruh + 人 + 动词 = 叫/让某人做；minta = 请求，语气更客气。"
+      ]
+    }
   ]
 }
