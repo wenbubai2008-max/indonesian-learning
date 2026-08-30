@@ -1,0 +1,38 @@
+{
+  "date":"2026-08-26","session":"pm","time":"19:00","level":"A2 → B1","day":5,
+  "title":"2026年8月26日｜Day 5｜19:00 晚间学习","source_status":"original_chat_text","history_complete":true,
+  "vocab":[
+    {"word":"kayaknya","audio_text":"kayaknya","cn":"好像、看起来","standard":"sepertinya","example":"Kayaknya nggak jadi.","example_cn":"好像去不了了 / 好像取消了。"},
+    {"word":"nggak jadi","audio_text":"nggak jadi","cn":"不去了/取消了","standard":"tidak jadi","example":"Kayaknya hari ini nggak jadi deh.","example_cn":"今天好像不去了。"},
+    {"word":"mendadak","audio_text":"mendadak","cn":"突然、临时","example":"Aku ada urusan mendadak.","example_cn":"我临时有点事。"},
+    {"word":"ada urusan","audio_text":"ada urusan","cn":"有事要处理","example":"Aku ada urusan mendadak.","example_cn":"我临时有点事。"},
+    {"word":"sempat","audio_text":"sempat","cn":"有时间/来得及","example":"Kalau sempat, aku datang.","example_cn":"如果来得及，我就来。"},
+    {"word":"nggak sempat","audio_text":"nggak sempat","cn":"没时间/来不及","standard":"tidak sempat","example":"Aku nggak sempat makan siang.","example_cn":"我没时间吃午饭。"},
+    {"word":"telat","audio_text":"telat","cn":"迟到、晚了","standard":"terlambat","example":"Kayaknya aku bakal telat dikit.","example_cn":"我可能会晚一点到。"},
+    {"word":"buru-buru","audio_text":"buru-buru","cn":"匆忙、赶时间","standard":"tergesa-gesa","example":"Biar nggak buru-buru.","example_cn":"这样不用赶。"},
+    {"word":"sekalian","audio_text":"sekalian","cn":"顺便","example":"Sekalian beli kopi ya.","example_cn":"顺便买杯咖啡啊。"},
+    {"word":"terserah","audio_text":"terserah","cn":"随你、都行","example":"Terserah kamu.","example_cn":"随你。"},
+    {"word":"gimana kalau","audio_text":"gimana kalau","cn":"……怎么样？","standard":"bagaimana kalau","example":"Gimana kalau besok aja?","example_cn":"要不就明天？"},
+    {"word":"kabari aja","audio_text":"kabari aja","cn":"告诉我就行","standard":"beri tahu saja","example":"Nanti kabari aja.","example_cn":"到时候告诉我就行。"}
+  ],
+  "affix_training":{"title":"真实口语里的 -in","items":[
+    {"form":"kabarin","standard":"mengabari / kabari","root":"kabar","cn":"告诉、通知一下","example":"Nanti kabarin aku ya.","example_cn":"晚点告诉我啊。"},
+    {"form":"selesain","standard":"menyelesaikan","root":"selesai","cn":"把事情弄完","example":"Aku selesain dulu kerjaan ini.","example_cn":"我先把这个工作搞完。"},
+    {"form":"pindahin","standard":"memindahkan","root":"pindah","cn":"挪、搬一下","example":"Tolong pindahin ke sini.","example_cn":"帮我挪到这里。"},
+    {"form":"kirimin","standard":"mengirimkan","root":"kirim","cn":"发给某人 / 帮忙发一下","example":"Nanti kirimin fotonya ya.","example_cn":"等会把照片发给我哦。","source_note":"用户随后追问后确认：直接说 kirim 也完全自然；kirimin 比 kirim 多一点‘发给某人/给我’的方向感，口语中很常见。标准形式通常对应 mengirimkan。"}
+  ],"note":"原课程强调先做到听得懂 -in 口语形式，不要求所有动词都刻意加 -in。"},
+  "rewrite":[
+    {"task":"我今天可能去不了了，临时有点事。","reference_answer":"Kayaknya hari ini aku nggak jadi pergi, ada urusan mendadak.","reference_cn":"我今天可能去不了了，临时有点事。","alternate_answer":"Kayaknya hari ini nggak jadi deh, ada urusan mendadak."},
+    {"task":"我今天没时间吃午饭。","reference_answer":"Hari ini aku nggak sempat makan siang.","reference_cn":"我今天没时间吃午饭。"},
+    {"task":"我可能会晚一点到。","reference_answer":"Kayaknya aku bakal telat dikit.","reference_cn":"我可能会晚一点到。"},
+    {"task":"要不明天晚上吧？","reference_answer":"Gimana kalau besok malam aja?","reference_cn":"要不明天晚上吧？"},
+    {"task":"你到了以后告诉我。","reference_answer":"Kalau udah sampai, kabarin aku ya.","reference_cn":"你到了以后告诉我。","standard_answer":"Kalau sudah sampai, kabari saya.","alternate_answer":"Udah nyampe kabarin ya."}
+  ],
+  "reading":{"title":"WhatsApp：临时取消晚上的安排","text":"Bro, kayaknya nanti malam gue nggak jadi ikut deh. Tadi tiba-tiba ada urusan kantor. Awalnya gue kira bisa selesai cepet, tapi ternyata sampai sekarang belum beres juga. Kalau nanti udah selesai, gue kabarin lagi ya. Kalau nggak sempat, besok aja gimana?","cn":"哥们，我今晚好像去不了了。刚才公司突然有点事。本来我以为很快能搞完，结果到现在还没搞定。如果等会弄完了，我再告诉你。如果来不及的话，明天怎么样？"},
+  "reading_notes":["gue = 我（雅加达口语）","cepet = cepat（快）","beres = 搞定、弄完","belum beres juga = 到现在还没搞定","besok aja = 就明天吧"],
+  "dialogue":{"title":"朋友约你今晚吃饭，但你可能加班","lines":[
+    {"speaker":"A","id":"Nanti malam jadi makan bareng nggak?","cn":"今晚还一起吃饭吗？"},{"speaker":"B","id":"Belum tahu nih. Kayaknya aku harus lembur.","cn":"还不知道呢，我好像得加班。"},{"speaker":"A","id":"Loh, kok mendadak?","cn":"啊？怎么这么突然？"},{"speaker":"B","id":"Iya, tadi tiba-tiba ada kerjaan. Belum beres.","cn":"对，刚才突然来了点工作，还没搞完。"},{"speaker":"A","id":"Kira-kira jam berapa selesai?","cn":"大概几点结束？"},{"speaker":"B","id":"Nggak tahu juga sih. Mungkin jam delapan atau sembilan.","cn":"我也不知道，可能八九点吧。"},{"speaker":"A","id":"Ya udah, nanti kabarin aja.","cn":"那行，到时候告诉我就行。"},{"speaker":"B","id":"Oke. Kalau nggak sempat, besok aja ya.","cn":"好。如果来不及，就明天吧。"}
+  ],"notes":["jadi 在 Nanti malam jadi makan bareng nggak? 中表示‘原计划还成不成/还照常进行吗’，不是普通的‘所以’。","aja = saja，常有‘就……吧/就行/干脆……’的语气；Gimana kalau besok aja? 比 Gimana kalau besok? 更像‘要不就明天吧？’。","以上两点来自用户随后追问后的实际解释。"]},
+  "review":["kayaknya = 好像","nggak sempat = 没时间/没来得及","ada urusan mendadak = 临时有事","belum beres = 还没搞定","Gimana kalau besok aja? = 要不就明天吧？","Udah sampai, kabarin aku ya. = 你到了告诉我。"],
+  "output":{"task":"今晚我本来想和朋友吃饭，但是公司突然有点事。我现在还没处理完，也不知道几点能结束。如果八点之前能弄完，我就过去。如果来不及，就改明天。","reference_answer":"Tadinya malam ini aku mau makan bareng temen, tapi tiba-tiba ada urusan kantor. Sampai sekarang masih belum beres, jadi aku juga nggak tahu bakal selesai jam berapa. Kalau sebelum jam delapan udah beres, aku langsung ke sana. Kalau nggak sempat, ya besok aja.","reference_cn":"今晚我本来想和朋友吃饭，但是公司突然有点事。我现在还没处理完，也不知道几点能结束。如果八点之前能弄完，我就过去。如果来不及，就改明天。"}
+}
