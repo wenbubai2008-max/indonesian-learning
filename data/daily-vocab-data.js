@@ -787,5 +787,215 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-30"
     ]
+  },
+  {
+    "word": "tingkat",
+    "cn": "等级、层次",
+    "en": "level",
+    "root": "tingkat",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "Day1",
+      "原聊天确认"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-22 08:00",
+    "last_seen": "2026-08-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-22"
+    ]
+  },
+  {
+    "word": "meningkat",
+    "cn": "提高、上升",
+    "en": "increase / rise",
+    "root": "tingkat",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "Day1",
+      "原聊天确认"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-22 08:00",
+    "last_seen": "2026-08-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-22"
+    ]
+  },
+  {
+    "word": "meningkatkan",
+    "cn": "提高某事物",
+    "en": "improve / increase something",
+    "root": "tingkat",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "Day1",
+      "原聊天确认"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-22 08:00",
+    "last_seen": "2026-08-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-22"
+    ]
+  },
+  {
+    "word": "peningkatan",
+    "cn": "提升、增长",
+    "en": "improvement / increase",
+    "root": "tingkat",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "Day1",
+      "原聊天确认"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-22 08:00",
+    "last_seen": "2026-08-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-22"
+    ]
+  },
+  {
+    "word": "ganggu",
+    "cn": "打扰",
+    "en": "disturb / bother",
+    "root": "ganggu",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "Day1",
+      "原聊天确认"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-22 08:00",
+    "last_seen": "2026-08-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-22"
+    ]
+  },
+  {
+    "word": "mengganggu",
+    "cn": "打扰、干扰",
+    "en": "disturb / interfere",
+    "root": "ganggu",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "Day1",
+      "原聊天确认"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-22 08:00",
+    "last_seen": "2026-08-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-22"
+    ]
+  },
+  {
+    "word": "pilih",
+    "cn": "选择",
+    "en": "choose / select",
+    "root": "pilih",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "Day1",
+      "原聊天确认"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-22 08:00",
+    "last_seen": "2026-08-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-22"
+    ]
+  },
+  {
+    "word": "pilihan",
+    "cn": "选择、选项",
+    "en": "choice / option",
+    "root": "pilih",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "Day1",
+      "原聊天确认"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-22 08:00",
+    "last_seen": "2026-08-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-22"
+    ]
+  },
+  {
+    "word": "untung",
+    "cn": "幸运；赚到",
+    "en": "lucky / profit",
+    "root": "untung",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "Day1",
+      "原聊天确认"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-22 08:00",
+    "last_seen": "2026-08-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-22"
+    ]
+  },
+  {
+    "word": "keuntungan",
+    "cn": "利润、好处",
+    "en": "profit / advantage",
+    "root": "untung",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "Day1",
+      "原聊天确认"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-22 08:00",
+    "last_seen": "2026-08-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-22"
+    ]
   }
 ];
