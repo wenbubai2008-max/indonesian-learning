@@ -1,0 +1,37 @@
+{
+  "date":"2026-08-25","session":"pm","time":"19:00","level":"A2 → B1","day":4,
+  "title":"2026年8月25日｜Day 4｜19:00 晚间学习","source_status":"original_chat_text","history_complete":true,
+  "vocab":[
+    {"word":"selesai","audio_text":"selesai","cn":"完成、结束","example":"Pekerjaan ini sudah selesai.","example_cn":"这项工作已经完成了。"},
+    {"word":"menyelesaikan","audio_text":"menyelesaikan","cn":"完成/解决某事","root":"selesai","formation":"meN- + selesai + -kan","family":["selesai","menyelesaikan","penyelesaian"],"example":"Saya sudah menyelesaikan pekerjaan ini.","example_cn":"我已经完成了这项工作。"},
+    {"word":"memerlukan","audio_text":"memerlukan","cn":"需要","root":"perlu","formation":"meN- + perlu + -kan","example":"Proses ini memerlukan sedikit waktu.","example_cn":"这个流程需要一点时间。"},
+    {"word":"menyiapkan","audio_text":"menyiapkan","cn":"准备好某物","root":"siap","formation":"meN- + siap + -kan","example":"Saya menyiapkan dokumen.","example_cn":"我准备文件。"},
+    {"word":"mengirim","audio_text":"mengirim","cn":"发送","root":"kirim","formation":"meN- + kirim","example":"Dokumennya sudah dikirim.","example_cn":"文件已经发了。"},
+    {"word":"memeriksa","audio_text":"memeriksa","cn":"检查","root":"periksa","formation":"meN- + periksa","example":"Dokumennya sedang diperiksa.","example_cn":"文件正在审核。"},
+    {"word":"menunggu","audio_text":"menunggu","cn":"等待","root":"tunggu","formation":"meN- + tunggu","example":"Saya masih menunggu jawaban.","example_cn":"我还在等回复。"},
+    {"word":"melanjutkan","audio_text":"melanjutkan","cn":"继续某事","root":"lanjut","formation":"meN- + lanjut + -kan","example":"Saya akan melanjutkan pekerjaan.","example_cn":"我会继续工作。"},
+    {"word":"meminta","audio_text":"meminta","cn":"请求、索要","root":"minta","formation":"meN- + minta","example":"Saya meminta informasi.","example_cn":"我询问信息。"},
+    {"word":"memberikan","audio_text":"memberikan","cn":"给予、提供","root":"beri","formation":"meN- + beri + -kan","example":"Mereka memberikan informasi.","example_cn":"他们提供信息。"},
+    {"word":"segera","audio_text":"segera","cn":"尽快、马上","example":"Harus segera diselesaikan.","example_cn":"必须尽快处理完。"},
+    {"word":"proses","audio_text":"proses","cn":"过程、流程","example":"Masih dalam proses.","example_cn":"还在处理中。"}
+  ],
+  "affix_training":{"title":"selesai → menyelesaikan → diselesaikan","items":[
+    {"form":"selesai","cn":"完成、结束；描述状态","example":"Pekerjaan ini sudah selesai.","example_cn":"这项工作已经完成了。"},
+    {"form":"menyelesaikan","cn":"把某件事情完成","root":"selesai","formation":"meN- + selesai + -kan","example":"Saya sudah menyelesaikan pekerjaan ini.","example_cn":"我已经完成了这项工作。"},
+    {"form":"diselesaikan","cn":"被完成、被处理好","root":"selesai","formation":"di- + selesai + -kan","example":"Pekerjaan ini sudah diselesaikan.","example_cn":"这件事已经处理好了。"},
+    {"form":"menyelesaikannya","cn":"把它/这件事处理完","root":"selesai","formation":"menyelesaikan + -nya","example":"Saya akan menyelesaikannya besok.","example_cn":"我明天会把它处理完。"}
+  ]},
+  "rewrite":[
+    {"task":"这个事情还没有完成。","reference_answer":"Hal ini belum selesai.","reference_cn":"这个事情还没有完成。","alternate_answer":"Prosesnya belum selesai."},
+    {"task":"我正在等他们的回复。","reference_answer":"Saya masih menunggu jawaban mereka.","reference_cn":"我还在等他们回复。","alternate_answer":"Saya sedang menunggu jawaban mereka."},
+    {"task":"这个流程需要一点时间。","reference_answer":"Proses ini memerlukan sedikit waktu.","reference_cn":"这个流程需要一点时间。","alternate_answer":"Proses ini butuh waktu."},
+    {"task":"文件已经发送了，但是还没有被检查。","reference_answer":"Dokumennya sudah dikirim, tapi belum diperiksa.","reference_cn":"文件已经发送了，但是还没有被检查。"},
+    {"task":"把 Dokumennya sudah dikirim. / Prosesnya belum selesai. / Saya masih menunggu jawaban. / Saya akan menghubungi mereka lagi. 合成一段。","reference_answer":"Dokumennya sudah dikirim, tapi prosesnya belum selesai. Sekarang saya masih menunggu jawaban. Kalau belum ada kabar, saya akan menghubungi mereka lagi.","reference_cn":"文件已经发送了，但是流程还没有完成。我现在还在等回复。如果还没有消息，我会再次联系他们。"}
+  ],
+  "reading":{"title":"文件审核进度","text":"Minggu lalu saya sudah mengirim semua dokumen yang diperlukan. Awalnya saya kira prosesnya akan cepat selesai, tetapi sampai sekarang masih dalam proses. Kemarin saya menghubungi mereka untuk meminta informasi terbaru. Mereka mengatakan bahwa dokumennya sedang diperiksa dan masih memerlukan waktu beberapa hari. Jadi untuk sementara saya hanya bisa menunggu. Kalau minggu ini belum ada kabar, saya akan menghubungi mereka lagi.","cn":"上周我已经发送了所有需要的文件。开始我以为流程会很快完成，但是到现在仍然在处理中。昨天我联系他们询问最新信息。他们说文件正在审核，还需要几天时间。所以目前我只能等待。如果这周还没有消息，我会再次联系他们。"},
+  "dialogue":{"title":"同事问事情办到哪一步了","lines":[
+    {"speaker":"A","id":"Gimana prosesnya? Sudah selesai belum?","cn":"流程怎么样？办完了吗？"},{"speaker":"B","id":"Belum. Sekarang masih dalam proses.","cn":"还没有，现在还在处理中。"},{"speaker":"A","id":"Dokumennya sudah dikirim?","cn":"文件已经发了吗？"},{"speaker":"B","id":"Sudah. Semuanya sudah saya kirim minggu lalu.","cn":"发了。上周我已经全部发过去了。"},{"speaker":"A","id":"Terus sekarang tinggal apa?","cn":"那现在还差什么？"},{"speaker":"B","id":"Tinggal tunggu mereka periksa. Katanya butuh beberapa hari lagi.","cn":"就等他们审核了。他们说还需要几天。"},{"speaker":"A","id":"Kalau belum ada kabar gimana?","cn":"如果还没有消息怎么办？"},{"speaker":"B","id":"Nanti saya follow up lagi.","cn":"我之后再跟进一下。"}
+  ],"notes":["tinggal apa? 在这里表示‘还剩什么？’","Saya follow up dulu. = 我先跟进一下。"]},
+  "review":["Belum selesai. = 还没完成。","Masih dalam proses. = 还在处理中。","Dokumennya sudah dikirim. = 文件已经发了。","Saya masih menunggu jawaban. = 我还在等回复。","Nanti saya follow up lagi. = 我之后再跟进。"],
+  "output":{"task":"一件事情目前还没有办完，我已经提交资料，现在正在等回复。","reference_answer":"Prosesnya sampai sekarang belum selesai. Semua dokumen yang diperlukan sudah saya kirim. Sekarang saya masih menunggu jawaban dari mereka. Katanya dokumennya sedang diperiksa dan masih memerlukan waktu. Kalau beberapa hari lagi belum ada kabar, saya akan menghubungi mereka dan follow up lagi.","reference_cn":"流程到现在还没有完成。所有需要的文件我已经提交了。现在我还在等他们的回复。他们说文件正在审核，还需要一点时间。如果再过几天还没消息，我会再次联系并跟进。"}
+}
