@@ -1,0 +1,54 @@
+{
+  "date":"2026-08-28","session":"pm","time":"19:00","level":"A2 → B1","day":7,
+  "title":"2026年8月28日｜Day 7｜19:00 晚间学习","source_status":"original_chat_text","history_complete":true,
+  "source_note":"本课原文确实把 tolong、minta、cek 等作为重点词；用户随后明确表示这些词已会，之后的选词规则调整为 A2+～B1，但历史课内容不据此重写。",
+  "vocab":[
+    {"word":"tolong","audio_text":"tolong","cn":"请、麻烦","example":"Tolong cek dulu.","example_cn":"麻烦先查一下。"},
+    {"word":"minta","audio_text":"minta","cn":"要、请求","standard":"meminta","example":"Minta info dong.","example_cn":"给点信息吧。"},
+    {"word":"tanyain","audio_text":"tanyain","cn":"帮忙问/问一下","standard":"menanyakan","root":"tanya","formation":"tanya + -in（口语）","example":"Bisa tanyain nggak?","example_cn":"能帮忙问一下吗？"},
+    {"word":"cek","audio_text":"cek","cn":"查一下、检查","standard":"memeriksa","example":"Aku belum sempat cek.","example_cn":"我还没来得及看。"},
+    {"word":"ingetin","audio_text":"ingetin","cn":"提醒一下","standard":"mengingatkan","root":"ingat","formation":"ingat + -in（口语）","example":"Nanti ingetin aku ya.","example_cn":"等下提醒我一下。"},
+    {"word":"nunggu","audio_text":"nunggu","cn":"等","standard":"menunggu","root":"tunggu","example":"Aku lagi nunggu.","example_cn":"我在等。"},
+    {"word":"buru-buru","audio_text":"buru-buru","cn":"着急、匆忙","standard":"tergesa-gesa","example":"Nggak usah buru-buru.","example_cn":"不用着急。"},
+    {"word":"belum sempat","audio_text":"belum sempat","cn":"还没来得及","example":"Aku belum sempat cek.","example_cn":"我还没来得及看。"},
+    {"word":"sebentar / bentar","audio_text":"sebentar","cn":"等一下","example":"Bentar ya.","example_cn":"等一下啊。"},
+    {"word":"nanti dulu","audio_text":"nanti dulu","cn":"先等等","example":"Nanti dulu ya.","example_cn":"先等等啊。"},
+    {"word":"nggak apa-apa","audio_text":"nggak apa-apa","cn":"没关系","standard":"tidak apa-apa","example":"Nggak apa-apa.","example_cn":"没关系。"},
+    {"word":"nggak usah","audio_text":"nggak usah","cn":"不用、不必","standard":"tidak perlu","example":"Nggak usah datang.","example_cn":"不用来了。"}
+  ],
+  "usage_notes":[
+    "nggak mau = 不想",
+    "nggak bisa = 不能",
+    "nggak usah = 不用做",
+    "Nggak usah beli. = 不用买。",
+    "Nggak usah khawatir. = 不用担心。"
+  ],
+  "affix_training":{"title":"ingat → ingetin → mengingatkan → diingatkan","items":[
+    {"form":"ingat","cn":"记得","example":"Aku masih ingat.","example_cn":"我还记得。"},
+    {"form":"mengingatkan","cn":"提醒（标准）","root":"ingat","formation":"meN- + ingat + -kan","example":"Tolong ingatkan saya besok.","example_cn":"请明天提醒我。"},
+    {"form":"ingetin","cn":"提醒（雅加达口语）","root":"ingat","formation":"ingat + -in","example":"Besok ingetin aku ya.","example_cn":"明天提醒我一下啊。"},
+    {"form":"diingatkan / diingetin","cn":"被提醒","root":"ingat","example":"Aku udah diingetin sama dia.","example_cn":"他已经提醒过我了。"},
+    {"form":"tanya → menanyakan → tanyain","cn":"问 → 询问某事（标准）→ 问一下（口语）","root":"tanya","example":"Coba tanyain dia.","example_cn":"你问问他。"}
+  ],"note":"coba 在 Coba tanyain dia. 里不一定表示真正‘尝试’，常用于让要求更柔和。"},
+  "rewrite":[
+    {"task":"你能帮我问一下他吗？","reference_answer":"Bisa tanyain dia nggak?","reference_cn":"你能帮我问一下他吗？","alternate_answer":"Bisa bantu tanyain dia nggak?","standard_answer":"Bisa bantu tanyakan kepada dia?"},
+    {"task":"我还没来得及看。","reference_answer":"Aku belum sempat cek.","reference_cn":"我还没来得及看。"},
+    {"task":"明天提醒我一下啊。","reference_answer":"Besok ingetin aku ya.","reference_cn":"明天提醒我一下啊。","standard_answer":"Besok tolong ingatkan saya."},
+    {"task":"不用着急，慢慢来就行。","reference_answer":"Nggak usah buru-buru, pelan-pelan aja.","reference_cn":"不用着急，慢慢来就行。"},
+    {"task":"我已经问过了，但是他还没回复。等他回复了我再告诉你。","reference_answer":"Aku udah tanya, tapi dia belum bales. Nanti kalau dia udah bales, aku kabarin kamu.","reference_cn":"我已经问过了，但是他还没回复。等他回复了我再告诉你。","standard_answer":"Saya sudah bertanya, tetapi dia belum membalas. Nanti kalau dia sudah membalas, saya akan memberi tahu kamu."}
+  ],
+  "reading":{"title":"WhatsApp：帮忙问进度","text":"Bro, tadi gue udah tanyain soal itu. Katanya masih dicek. Orangnya juga belum bisa kasih jawaban pasti. Jadi tunggu dulu aja ya. Kalau nanti udah ada kabar, gue langsung kabarin. Kalau besok masih belum ada update, nanti gue tanyain lagi.","cn":"哥们，刚才我已经帮你问过那件事了。他说还在查。那个人现在也还没办法给明确答复。所以先等等吧。如果等会有消息，我马上告诉你。如果明天还是没有进展，我再帮你问一次。"},
+  "reading_notes":["soal itu = 关于那件事","masih dicek = 还在查","belum bisa kasih jawaban pasti = 还没办法给明确答复","tunggu dulu aja = 先等等吧","langsung kabarin = 马上告诉你","kasih 在口语里常替代 memberikan。"],
+  "dialogue":{"title":"让同事帮忙问一件事情的进度","lines":[
+    {"speaker":"A","id":"Eh, yang kemarin udah ditanyain belum?","cn":"诶，昨天那个事情问了吗？"},{"speaker":"B","id":"Belum nih, tadi pagi aku agak sibuk.","cn":"还没呢，今天上午我有点忙。"},{"speaker":"A","id":"Oh, oke. Nanti kalau sempat, tolong tanyain ya.","cn":"哦，好。等下有空的话麻烦问一下。"},{"speaker":"B","id":"Oke. Tapi buru-buru nggak?","cn":"好的。不过急不急？"},{"speaker":"A","id":"Nggak terlalu sih. Tapi kalau bisa hari ini.","cn":"不是特别急，不过最好今天。"},{"speaker":"B","id":"Oke, nanti siang aku tanyain.","cn":"好，中午我帮你问。"},{"speaker":"A","id":"Sip. Kalau udah ada kabar, kasih tahu aku ya.","cn":"好。有消息了告诉我。"},{"speaker":"B","id":"Siap.","cn":"没问题。"}
+  ],"notes":["kalau sempat = 如果有时间 / 如果来得及","kalau bisa = 如果可以的话 / 最好能……","Siap = 收到 / 好的 / 没问题。"]},
+  "quiz":[
+    {"question":"明天还去吗？","options":["Besok pergi tidak?","Besok jadi pergi nggak?"],"answer_index":1,"explain":"之前已有计划时用 jadi 更自然。"},
+    {"question":"就这里吧。","options":["Di sini aja.","Hanya di sini."],"answer_index":0,"explain":"aja 是自然口语。"},
+    {"question":"我还没来得及看。","options":["Aku belum sempat cek.","Aku tidak sudah lihat."],"answer_index":0,"explain":"belum sempat + 动词 = 还没来得及做……"},
+    {"question":"不用着急。","options":["Jangan cepat.","Nggak usah buru-buru."],"answer_index":1,"explain":"nggak usah = 不用；buru-buru = 匆忙。"},
+    {"question":"有消息告诉我。","options":["Kalau udah ada kabar, kasih tahu aku ya.","Kalau ada berita tulis saya."],"answer_index":0,"explain":"也可以说 Kalau udah ada kabar, kabarin aku ya."}
+  ],
+  "output":{"task":"朋友让我帮忙问一件事情。我今天上午比较忙，还没来得及问。我告诉他不用着急，下午有时间我会帮他问。如果有消息，我马上告诉他。","reference_answer":"Temen aku minta tolong tanyain sesuatu. Tadi pagi aku agak sibuk, jadi belum sempat tanya. Aku bilang ke dia nggak usah buru-buru. Nanti siang kalau sempat, aku tanyain. Kalau udah ada kabar, langsung aku kabarin dia.","reference_cn":"朋友让我帮忙问一件事情。我今天上午比较忙，还没来得及问。我告诉他不用着急，下午有时间我会帮他问。如果有消息，我马上告诉他。"},
+  "review":["belum sempat... = 还没来得及……","kalau sempat... = 如果有时间……","nggak usah... = 不用……","tolong tanyain... = 麻烦问一下……","kasih tahu aku = 告诉我","kalau udah ada kabar... = 如果有消息……"]
+}
