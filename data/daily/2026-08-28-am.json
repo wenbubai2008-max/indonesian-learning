@@ -1,21 +1,42 @@
 {
-  "date":"2026-08-28",
-  "session":"am",
-  "time":"08:00",
-  "level":"A2+ → B1",
-  "title":"Day 6 · 历史晨课恢复",
-  "historical_reconstruction":true,
-  "recovery_note":"根据可确认的历史晨课记录恢复。词汇列表为历史可确认内容；释义与词根按现有词表及既定学习规则补齐。不补造无法找回的原句、阅读、小测或输出题。",
+  "date":"2026-08-28","session":"am","time":"08:00","level":"A2+ → B1","day":6,"title":"2026年8月28日｜Day 6","source_status":"original_chat_text_corrected",
+  "source_note":"原先51–60曾生成另一组基础词，用户指出已学过后整组替换；本文件采用最终替换版。ngerepotin 的学习页显示按后续纠正改为 ngerépotin，标准拼写/audio_text 仍为 ngerepotin。",
+  "progress":{"new":10,"cumulative":60,"range":"51–60"},
   "vocab":[
-    {"word":"bentar","display":"bentar","audio_text":"bentar","cn":"等一下 / 一会儿","en":"a moment / wait a sec","root":"sebentar","formation":"sebentar 的口语缩略形式","example":"","example_cn":"","synonym_note":"雅加达口语里非常常见。"},
-    {"word":"lumayan","display":"lumayan","audio_text":"lumayan","cn":"还不错 / 还可以","en":"quite / not bad","root":"","formation":"","example":"","example_cn":"","synonym_note":"常用于程度评价。"},
-    {"word":"ternyata","display":"ternyata","audio_text":"ternyata","cn":"原来 / 结果和想的不一样","en":"turns out / actually","root":"nyata","formation":"ter- + nyata","example":"","example_cn":"","synonym_note":"常用于发现结果与预期不同。"},
-    {"word":"malah","display":"malah","audio_text":"malah","cn":"反而 / 却","en":"instead / on the contrary","root":"","formation":"","example":"","example_cn":"","synonym_note":"表示实际结果与预期相反。"},
-    {"word":"padahal","display":"padahal","audio_text":"padahal","cn":"明明…… / 其实……却","en":"even though / whereas","root":"","formation":"","example":"","example_cn":"","synonym_note":"常带‘明明如此却……’的反差感。"},
-    {"word":"cuma","display":"cuma","audio_text":"cuma","cn":"只是 / 仅仅","en":"only / just","root":"","formation":"","example":"","example_cn":"","synonym_note":"标准表达可用 hanya。"},
-    {"word":"langsung","display":"langsung","audio_text":"langsung","cn":"直接 / 马上","en":"directly / immediately","root":"","formation":"","example":"","example_cn":"","synonym_note":"可表示动作没有中间步骤，也可表示马上发生。"},
-    {"word":"ngobrol","display":"ngobrol","audio_text":"ngobrol","cn":"聊天","en":"chat / talk casually","root":"obrol","formation":"口语 ng- + obrol","example":"","example_cn":"","synonym_note":"标准形式常见 mengobrol。"},
-    {"word":"ngerepotin","display":"ngerepotin","audio_text":"ngerepotin","cn":"给别人添麻烦","en":"trouble / inconvenience someone","root":"repot","formation":"口语 nge- + repot + -in","example":"","example_cn":"","synonym_note":"标准表达常见 merepotkan。"},
-    {"word":"ketinggalan","display":"ketinggalan","audio_text":"ketinggalan","cn":"落下 / 忘带 / 错过","en":"left behind / miss","root":"tinggal","formation":"ke- + tinggal + -an","example":"","example_cn":"","synonym_note":"可用于东西忘带、被落下、错过车等。"}
-  ]
+    {"order":51,"word":"bentar","display":"bentar","audio_text":"bentar","cn":"等一下、一会儿","en":"","root":"","formation":"标准：sebentar","example":"Bentar ya, aku lagi makan.","example_cn":"等一下，我正在吃饭。"},
+    {"order":52,"word":"lumayan","display":"lumayan","audio_text":"lumayan","cn":"还不错；挺……","en":"","root":"","formation":"","example":"Makanannya lumayan enak.","example_cn":"这个东西还挺好吃。"},
+    {"order":53,"word":"ternyata","display":"ternyata","audio_text":"ternyata","cn":"原来；结果发现","en":"","root":"","formation":"","example":"Ternyata dia belum datang.","example_cn":"原来他还没来。"},
+    {"order":54,"word":"malah","display":"malah","audio_text":"malah","cn":"反而、却","en":"","root":"","formation":"","example":"Aku mau bantu, malah bikin tambah ribét.","example_cn":"我本来想帮忙，反而搞得更麻烦。"},
+    {"order":55,"word":"padahal","display":"padahal","audio_text":"padahal","cn":"明明；其实却","en":"","root":"","formation":"","example":"Padahal tadi dia bilang mau datang.","example_cn":"明明刚才他说要来的。"},
+    {"order":56,"word":"cuma","display":"cuma","audio_text":"cuma","cn":"只是、只有","en":"","root":"","formation":"较正式：hanya","example":"Aku cuma tanya aja.","example_cn":"我只是问一下。"},
+    {"order":57,"word":"langsung","display":"langsung","audio_text":"langsung","cn":"直接；马上","en":"","root":"","formation":"","example":"Kalau sudah sampai, langsung kabarin aku.","example_cn":"到了就马上告诉我。"},
+    {"order":58,"word":"ngobrol","display":"ngobrol","audio_text":"ngobrol","cn":"聊天","en":"","root":"obrol","formation":"标准：mengobrol｜根：obrol","example":"Kita ngobrol bentar yuk.","example_cn":"我们聊一会儿吧。"},
+    {"order":59,"word":"ngerepotin","display":"ngerépotin","audio_text":"ngerepotin","cn":"给人添麻烦","en":"","root":"repot","formation":"标准：merepotkan｜学习页词根显示：répot","example":"Maaf ya, jadi ngerépotin kamu.","example_cn":"不好意思，给你添麻烦了。"},
+    {"order":60,"word":"ketinggalan","display":"ketinggalan","audio_text":"ketinggalan","cn":"落下、忘带、错过","en":"","root":"tinggal","formation":"根：tinggal","example":"HP-ku ketinggalan di mobil.","example_cn":"我的手机落在车里了。"}
+  ],
+  "sentences":[
+    {"id":"Bentar ya, aku lagi ada kerjaan.","cn":"等一下，我现在还有点工作。"},
+    {"id":"Lumayan sih, tapi agak mahal.","cn":"还不错，不过有点贵。"},
+    {"id":"Ternyata hari ini dia nggak masuk.","cn":"原来他今天没来上班。"},
+    {"id":"Aku cuma mau ngobrol bentar.","cn":"我只是想聊一会儿。"},
+    {"id":"Maaf ya, malah jadi ngerépotin kamu.","cn":"不好意思，反而给你添麻烦了。"}
+  ],
+  "dialogue":{"lines":[
+    {"speaker":"A","id":"Bentar, kamu udah kirim file-nya belum?","cn":"等一下，你已经把文件发了吗？"},
+    {"speaker":"B","id":"Belum. Ternyata ada satu data yang ketinggalan.","cn":"还没有。结果发现有一个数据漏掉了。"},
+    {"speaker":"A","id":"Oh, pantes. Aku tadi lihat kayaknya belum lengkap.","cn":"哦，难怪。我刚才看的时候就觉得好像还不完整。"},
+    {"speaker":"B","id":"Iya. Padahal aku udah cek dua kali. Malah masih ada yang kurang.","cn":"对啊。明明我已经检查两遍了，结果还是有东西漏了。"},
+    {"speaker":"A","id":"Nggak apa-apa. Kalau datanya udah lengkap, langsung kirim aja.","cn":"没事。数据完整以后直接发就行。"},
+    {"speaker":"B","id":"Oke. Cuma butuh sekitar sepuluh menit lagi.","cn":"好。大概只需要再十分钟。"},
+    {"speaker":"A","id":"Santai. Nanti kalau sudah selesai kita ngobrol bentar soal meeting besok.","cn":"不急。待会做完以后，我们聊一会儿明天会议的事。"},
+    {"speaker":"B","id":"Siap. Maaf ya, jadi ngerépotin.","cn":"好。不好意思，给你添麻烦了。"},
+    {"speaker":"A","id":"Nggak kok. Lumayan juga sekalian kita cek bareng.","cn":"没有啦。正好我们也可以一起再检查一下。"}
+  ]},
+  "quiz":[
+    {"question":"“Ternyata dia sudah pulang.” 最自然是：","options":["他准备回家","原来他已经回去了","他直接回去了"],"answer_index":1,"explain":"ternyata 强调后来才发现事实。"},
+    {"question":"“Padahal aku udah bilang.” 是：","options":["明明我已经说过了","所以我说了","我只是说说"],"answer_index":0,"explain":"padahal 常有“明明……却……”的感觉。"},
+    {"question":"“HP-ku ketinggalan.” 通常表示：","options":["手机坏了","手机忘带/落下了","手机没电了"],"answer_index":1,"explain":"ketinggalan 很常用于“东西落下、忘带”。"}
+  ],
+  "output":{"task":"用口语表达：“原来我的手机落在车里了。我本来只是想回去拿手机，结果反而给你添麻烦了。”","reference_answer":"Ternyata HP-ku ketinggalan di mobil. Aku cuma mau balik ambil HP, malah jadi ngerépotin kamu.","reference_cn":"原来我的手机落在车里了。我本来只是想回去拿手机，结果反而给你添麻烦了。"},
+  "review":["ternyata = “原来…… / 结果发现……”","padahal ↔ malah = “明明…… / 结果反而……”","cuma / bentar / langsung = 日常聊天使用频率非常高。"]
 }
