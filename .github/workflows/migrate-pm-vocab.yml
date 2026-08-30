@@ -1,0 +1,62 @@
+name: Migrate PM history vocab
+on:
+  push:
+    paths:
+      - '.github/workflows/migrate-pm-vocab.yml'
+permissions:
+  contents: write
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Merge 19:00 lesson vocab into daily vocab DB
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+          const path='data/daily-vocab-data.js';
+          const src=fs.readFileSync(path,'utf8');
+          const jsonText=src.replace(/^window\.DAILY_VOCAB_DB\s*=\s*/, '').replace(/;\s*$/, '');
+          const db=JSON.parse(jsonText);
+          const lessonDates=['2026-08-23','2026-08-24','2026-08-25','2026-08-26','2026-08-27','2026-08-28','2026-08-29','2026-08-30'];
+          const key=s=>String(s||'').trim().toLowerCase();
+          const map=new Map(db.map(x=>[key(x.word),x]));
+          const addUnique=(arr,v)=>{arr=Array.isArray(arr)?arr:[];if(!arr.includes(v))arr.push(v);return arr};
+          for(const date of lessonDates){
+            const f=`data/daily/${date}-pm.json`;
+            if(!fs.existsSync(f)) continue;
+            const lesson=JSON.parse(fs.readFileSync(f,'utf8'));
+            for(const v of (lesson.vocab||[])){
+              const k=key(v.word); if(!k) continue;
+              const stamp=`${date} 19:00`;
+              if(map.has(k)){
+                const x=map.get(k);
+                const already=(x.sessions||[]).includes('19:00') && (x.dates||[]).includes(date);
+                if(!already) x.times_seen=(Number(x.times_seen)||0)+1;
+                x.sessions=addUnique(x.sessions,'19:00');
+                x.dates=addUnique(x.dates,date).sort();
+                x.categories=addUnique(addUnique(x.categories,'每日学习'),'19:00');
+                if(!x.root && v.root) x.root=v.root;
+                if(!x.cn && v.cn) x.cn=v.cn;
+                if(!x.en && v.en) x.en=v.en;
+                if(!x.first_seen || stamp<x.first_seen) x.first_seen=stamp;
+                if(!x.last_seen || stamp>x.last_seen) x.last_seen=stamp;
+              }else{
+                const x={word:String(v.word).trim(),cn:v.cn||'',en:v.en||'',root:v.root||'',categories:['每日学习','19:00','原始课程'],times_seen:1,first_seen:stamp,last_seen:stamp,sessions:['19:00'],dates:[date]};
+                db.push(x); map.set(k,x);
+              }
+            }
+          }
+          fs.writeFileSync(path,'window.DAILY_VOCAB_DB = '+JSON.stringify(db,null,2)+';\n');
+          NODE
+      - name: Commit merged vocab
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/daily-vocab-data.js
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Sync 19:00 historical lesson vocabulary'
+          git push
