@@ -1,0 +1,24 @@
+{
+  "date":"2026-08-25","session":"am","time":"08:00","level":"A2+ → B1","day":3,"title":"2026年8月25日｜Day 3","source_status":"historical_record_incomplete","historical_reconstruction":true,
+  "recovery_note":"仅迁移当前可从聊天历史确认的内容；未能完整找回的例句、5句、阅读正文、小测题目不补写。",
+  "progress":{"new":10,"cumulative":30,"range":"21–30"},
+  "vocab":[
+    {"order":21,"word":"mencapai","display":"mencapai","audio_text":"mencapai","cn":"达到；实现","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":22,"word":"mendukung","display":"mendukung","audio_text":"mendukung","cn":"支持","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":23,"word":"menghindari","display":"menghindari","audio_text":"menghindari","cn":"避免","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":24,"word":"menyelesaikan","display":"menyelesaikan","audio_text":"menyelesaikan","cn":"完成；解决","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":25,"word":"mempertimbangkan","display":"mempertimbangkan","audio_text":"mempertimbangkan","cn":"考虑","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":26,"word":"memastikan","display":"memastikan","audio_text":"memastikan","cn":"确保；确认","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":27,"word":"menerima","display":"menerima","audio_text":"menerima","cn":"接受；收到","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":28,"word":"menolak","display":"menolak","audio_text":"menolak","cn":"拒绝","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":29,"word":"menyesuaikan","display":"menyesuaikan","audio_text":"menyesuaikan","cn":"调整；适应","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":30,"word":"kebiasaan","display":"kebiasaan","audio_text":"kebiasaan","cn":"习惯","en":"","root":"","formation":"","example":"","example_cn":""}
+  ],
+  "reading":{"title":"Membangun Kebiasaan yang Baik","text":"","cn":"","source_note":"原聊天历史只确认到阅读标题。"},
+  "quiz":[
+    {"question":"","options":[],"answer_text":"B mempertimbangkan","explain":"","source_note":"原记录仅确认答案"},
+    {"question":"","options":[],"answer_text":"C menyelesaikan","explain":"","source_note":"原记录仅确认答案"},
+    {"question":"","options":[],"answer_text":"A menyesuaikan diri = adapt","explain":"","source_note":"原记录仅确认答案"}
+  ],
+  "output":{"task":"","reference_answer":"Saya ingin membangun kebiasaan belajar bahasa Indonesia setiap hari. Walaupun hanya dua puluh menit sehari, saya ingin terus melakukannya.","reference_cn":"","colloquial_answer":"Aku mau biasakan belajar bahasa Indonesia setiap hari. Walaupun cuma dua puluh menit, aku mau terus belajar.","source_note":"原聊天历史可确认参考答案，输出题目本身未完整找回。"}
+}
