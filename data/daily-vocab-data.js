@@ -407,7 +407,8 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "历史恢复"
+      "历史恢复",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-29 08:00",
@@ -427,7 +428,8 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "历史恢复"
+      "历史恢复",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-29 08:00",
@@ -447,7 +449,8 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "历史恢复"
+      "历史恢复",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-29 08:00",
@@ -467,7 +470,8 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "历史恢复"
+      "历史恢复",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-29 08:00",
@@ -487,7 +491,8 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "历史恢复"
+      "历史恢复",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-29 08:00",
@@ -507,7 +512,8 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "历史恢复"
+      "历史恢复",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-29 08:00",
@@ -527,7 +533,8 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "历史恢复"
+      "历史恢复",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-29 08:00",
@@ -547,7 +554,8 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "历史恢复"
+      "历史恢复",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-29 08:00",
@@ -567,7 +575,8 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "历史恢复"
+      "历史恢复",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-29 08:00",
@@ -587,7 +596,8 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "历史恢复"
+      "历史恢复",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-29 08:00",
@@ -601,14 +611,15 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "kepikiran",
-    "cn": "",
+    "cn": "想到；一直惦记；脑子里冒出",
     "en": "",
-    "root": "",
+    "root": "pikir",
     "categories": [
       "每日学习",
       "08:00",
       "2026-08-30",
-      "截图确认"
+      "截图确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-30 08:00",
@@ -629,7 +640,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "2026-08-30",
-      "截图确认"
+      "截图确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-30 08:00",
@@ -650,7 +662,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "2026-08-30",
-      "截图确认"
+      "截图确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-30 08:00",
@@ -671,7 +684,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "2026-08-30",
-      "截图确认"
+      "截图确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-30 08:00",
@@ -692,7 +706,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "2026-08-30",
-      "截图确认"
+      "截图确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-30 08:00",
@@ -713,7 +728,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "2026-08-30",
-      "截图确认"
+      "截图确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-30 08:00",
@@ -734,7 +750,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "2026-08-30",
-      "截图确认"
+      "截图确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-30 08:00",
@@ -755,7 +772,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "2026-08-30",
-      "截图确认"
+      "截图确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-30 08:00",
@@ -776,7 +794,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "2026-08-30",
-      "截图确认"
+      "截图确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-30 08:00",
@@ -797,7 +816,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "Day1",
-      "原聊天确认"
+      "原聊天确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-22 08:00",
@@ -818,7 +838,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "Day1",
-      "原聊天确认"
+      "原聊天确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-22 08:00",
@@ -839,7 +860,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "Day1",
-      "原聊天确认"
+      "原聊天确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-22 08:00",
@@ -860,7 +882,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "Day1",
-      "原聊天确认"
+      "原聊天确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-22 08:00",
@@ -881,7 +904,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "Day1",
-      "原聊天确认"
+      "原聊天确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-22 08:00",
@@ -902,7 +926,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "Day1",
-      "原聊天确认"
+      "原聊天确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-22 08:00",
@@ -923,7 +948,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "Day1",
-      "原聊天确认"
+      "原聊天确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-22 08:00",
@@ -944,7 +970,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "Day1",
-      "原聊天确认"
+      "原聊天确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-22 08:00",
@@ -965,7 +992,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "Day1",
-      "原聊天确认"
+      "原聊天确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-22 08:00",
@@ -986,7 +1014,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "Day1",
-      "原聊天确认"
+      "原聊天确认",
+      "原始课程"
     ],
     "times_seen": 1,
     "first_seen": "2026-08-22 08:00",
@@ -996,6 +1025,26 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-22"
+    ]
+  },
+  {
+    "word": "nyusul",
+    "cn": "随后赶来；追上",
+    "en": "",
+    "root": "susul",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "原始课程"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-08-30 08:00",
+    "last_seen": "2026-08-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-08-30"
     ]
   }
 ];
