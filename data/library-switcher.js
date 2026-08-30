@@ -30,59 +30,92 @@
   }
 
   let activeAudio=null;
+  let activeUtterance=null;
+  let speechTimer=null;
+
   function getIndonesianVoice(){
     if(!window.speechSynthesis)return null;
     const voices=speechSynthesis.getVoices()||[];
     return voices.find(v=>/^id(-|$)/i.test(v.lang))||voices.find(v=>/indones/i.test(v.name))||null;
   }
+
+  function stopSpeech(){
+    if(speechTimer){clearTimeout(speechTimer);speechTimer=null;}
+    if(activeAudio){try{activeAudio.pause();}catch(e){} activeAudio=null;}
+    if(window.speechSynthesis){try{speechSynthesis.cancel();speechSynthesis.resume();}catch(e){}}
+    activeUtterance=null;
+  }
+
   function remoteTTS(text){
     try{
       if(activeAudio){activeAudio.pause();activeAudio=null;}
       const url='https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=id&q='+encodeURIComponent(text);
-      activeAudio=new Audio(url);
-      activeAudio.play().catch(function(){
-        alert('当前浏览器没有可用的印尼语发音，请检查浏览器是否允许网页播放声音。');
-      });
-    }catch(e){
-      alert('发音播放失败，请检查浏览器声音权限。');
-    }
+      activeAudio=new Audio();
+      activeAudio.preload='auto';
+      activeAudio.src=url;
+      activeAudio.volume=1;
+      const p=activeAudio.play();
+      if(p&&p.catch)p.catch(function(){});
+    }catch(e){}
   }
+
   function robustSpeak(text){
     if(!text)return;
     text=String(text).trim();
     if(!text)return;
-    if(activeAudio){activeAudio.pause();activeAudio=null;}
-    if(!window.speechSynthesis){remoteTTS(text);return;}
-    const playLocal=function(){
-      const voice=getIndonesianVoice();
-      if(!voice){remoteTTS(text);return;}
+    stopSpeech();
+
+    if(!window.speechSynthesis || typeof SpeechSynthesisUtterance==='undefined'){
+      remoteTTS(text);
+      return;
+    }
+
+    const start=function(){
       try{
         speechSynthesis.cancel();
-        const u=new SpeechSynthesisUtterance(text);
-        u.lang='id-ID';
-        u.voice=voice;
-        u.rate=.88;
-        u.pitch=1;
-        u.volume=1;
+        speechSynthesis.resume();
+        activeUtterance=new SpeechSynthesisUtterance(text);
+        activeUtterance.lang='id-ID';
+        const voice=getIndonesianVoice();
+        if(voice)activeUtterance.voice=voice;
+        activeUtterance.rate=.88;
+        activeUtterance.pitch=1;
+        activeUtterance.volume=1;
         let started=false;
-        u.onstart=function(){started=true;};
-        u.onerror=function(){remoteTTS(text);};
-        speechSynthesis.speak(u);
-        setTimeout(function(){if(!started&&!speechSynthesis.speaking)remoteTTS(text);},700);
-      }catch(e){remoteTTS(text);}
+        activeUtterance.onstart=function(){started=true;};
+        activeUtterance.onend=function(){activeUtterance=null;};
+        activeUtterance.onerror=function(){
+          activeUtterance=null;
+          remoteTTS(text);
+        };
+        speechSynthesis.speak(activeUtterance);
+        speechSynthesis.resume();
+        speechTimer=setTimeout(function(){
+          if(!started && !speechSynthesis.speaking){
+            try{speechSynthesis.cancel();}catch(e){}
+            activeUtterance=null;
+            remoteTTS(text);
+          }
+        },1800);
+      }catch(e){
+        activeUtterance=null;
+        remoteTTS(text);
+      }
     };
-    if(speechSynthesis.getVoices().length){
-      playLocal();
+
+    const voices=speechSynthesis.getVoices();
+    if(voices&&voices.length){
+      start();
     }else{
-      let done=false;
+      let fired=false;
       const ready=function(){
-        if(done)return;
-        done=true;
+        if(fired)return;
+        fired=true;
         if(speechSynthesis.removeEventListener)speechSynthesis.removeEventListener('voiceschanged',ready);
-        playLocal();
+        start();
       };
       if(speechSynthesis.addEventListener)speechSynthesis.addEventListener('voiceschanged',ready);
-      setTimeout(ready,500);
+      setTimeout(ready,700);
     }
   }
 
