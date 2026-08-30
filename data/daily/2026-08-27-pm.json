@@ -1,0 +1,45 @@
+{
+  "date":"2026-08-27","session":"pm","time":"19:00","level":"A2 → B1","day":6,
+  "title":"2026年8月27日｜Day 6｜19:00 晚间学习","source_status":"original_chat_text","history_complete":true,
+  "vocab":[
+    {"word":"jadi","audio_text":"jadi","cn":"最终成不成、还做不做；也可表示所以","example":"Besok jadi pergi nggak?","example_cn":"明天还去吗？"},
+    {"word":"aja","audio_text":"aja","cn":"就……吧/就行","standard":"saja","example":"Di sini aja.","example_cn":"就这里吧。"},
+    {"word":"kan","audio_text":"kan","cn":"不是……嘛/你知道的","example":"Aku udah bilang, kan?","example_cn":"我不是说过了吗？"},
+    {"word":"sih","audio_text":"sih","cn":"到底/其实/缓和语气","example":"Kamu lagi ngapain sih?","example_cn":"你到底在干嘛呢？"},
+    {"word":"kok","audio_text":"kok","cn":"怎么会/怎么……","example":"Kok mahal banget?","example_cn":"怎么这么贵？"},
+    {"word":"dong","audio_text":"dong","cn":"嘛/呗；加强要求","example":"Bantuin aku dong.","example_cn":"帮帮我嘛。"},
+    {"word":"nih","audio_text":"nih","cn":"呢/这个啊；提示当前情况","example":"Aku lagi sibuk nih.","example_cn":"我现在正忙呢。"},
+    {"word":"deh","audio_text":"deh","cn":"吧/好了；做决定时常用","example":"Besok aja deh.","example_cn":"还是明天吧。"},
+    {"word":"emang","audio_text":"emang","cn":"确实/本来就/难道","example":"Emang kamu nggak tahu?","example_cn":"你真不知道？"},
+    {"word":"soalnya","audio_text":"soalnya","cn":"因为嘛","example":"Soalnya aku lagi sibuk.","example_cn":"因为我现在忙。"},
+    {"word":"terus","audio_text":"terus","cn":"然后呢/接着","example":"Terus gimana?","example_cn":"然后怎么办？"},
+    {"word":"biar","audio_text":"biar","cn":"好让/为了","example":"Biar aku aja.","example_cn":"让我来就行。"}
+  ],
+  "affix_training":{"title":"bantu → membantu → bantuin → dibantu","items":[
+    {"form":"membantu","cn":"帮助（标准）","root":"bantu","formation":"meN- + bantu","example":"Bisa membantu saya?","example_cn":"可以帮我吗？"},
+    {"form":"bantu","cn":"普通口语","root":"bantu","example":"Bisa bantu aku nggak?","example_cn":"能帮我一下吗？"},
+    {"form":"bantuin","cn":"很自然的雅加达口语","root":"bantu","formation":"bantu + -in（口语）","example":"Bantuin aku dong.","example_cn":"帮帮我嘛。"},
+    {"form":"dibantu","cn":"被帮助","root":"bantu","formation":"di- + bantu","example":"Aku dibantu sama dia.","example_cn":"他帮了我 / 我是他帮的。"}
+  ],"note":"日常口语里 sama 经常代替正式的 oleh：Saya dibantu oleh dia. → Aku dibantu sama dia."},
+  "rewrite":[
+    {"task":"明天还去商场吗？","reference_answer":"Besok jadi ke mal nggak?","reference_cn":"明天还去商场吗？"},
+    {"task":"要不就在这里吃吧？","reference_answer":"Gimana kalau makan di sini aja?","reference_cn":"要不就在这里吃吧？"},
+    {"task":"你不是已经吃过了吗？","reference_answer":"Kamu kan udah makan?","reference_cn":"你不是已经吃过了吗？"},
+    {"task":"怎么这么贵？","reference_answer":"Kok mahal banget?","reference_cn":"怎么这么贵？"},
+    {"task":"把‘我今天不去了，因为有点累。’改成更自然的聊天口语。","reference_answer":"Hari ini aku nggak jadi pergi deh, soalnya agak capek.","reference_cn":"我今天不去了，因为有点累。"}
+  ],
+  "reading":{"title":"WhatsApp：今晚还出去吗","text":"A: Bro, nanti malam jadi keluar nggak?\nB: Kayaknya nggak jadi deh. Aku agak capek nih.\nA: Lah, kemarin kan kamu yang ngajak.\nB: Iya sih, tapi hari ini kerjaan banyak banget.\nA: Terus gimana? Besok?\nB: Besok aja deh. Biar nggak buru-buru.\nA: Ya udah, besok kabarin aku ya.\nB: Oke, nanti aku kabarin.","cn":"A：哥们，今晚还出去吗？\nB：好像不去了，我现在有点累。\nA：啊？昨天不是你约的吗？\nB：是啊，不过今天工作实在太多了。\nA：那怎么办？明天？\nB：那就明天吧，这样不用赶。\nA：行，那明天你告诉我啊。\nB：好，到时候我告诉你。"},
+  "reading_notes":["ngajak = mengajak = 邀请、约某人一起做事。","Kemarin kan kamu yang ngajak. = 昨天明明是你约的嘛。"],
+  "dialogue":{"title":"同事问午饭怎么办","lines":[
+    {"speaker":"A","id":"Makan siang di mana?","cn":"午饭去哪吃？"},{"speaker":"B","id":"Terserah sih. Kamu mau makan apa?","cn":"都行啊，你想吃什么？"},{"speaker":"A","id":"Gimana kalau makan nasi Padang?","cn":"吃巴东饭怎么样？"},{"speaker":"B","id":"Boleh. Tapi jangan yang jauh-jauh ya.","cn":"可以，不过别去太远的。"},{"speaker":"A","id":"Yang depan kantor aja gimana?","cn":"就公司前面那家怎么样？"},{"speaker":"B","id":"Boleh. Biar cepet.","cn":"可以，这样快点。"},{"speaker":"A","id":"Mau jalan sekarang?","cn":"现在走吗？"},{"speaker":"B","id":"Bentar, aku selesain ini dulu. Lima menit lagi ya.","cn":"等一下，我先把这个弄完。再五分钟啊。"}
+  ],"notes":["bentar = sebentar = 等一下","yang + 形容/位置 + aja 很常用：Yang ini aja / Yang murah aja / Yang dekat aja。"]},
+  "quiz":[
+    {"question":"之前约好了明天去，现在问‘明天还去吗？’","options":["Besok pergi nggak?","Besok jadi pergi nggak?"],"answer_index":1,"explain":"有既定计划时 jadi 表示‘最终成不成/还照常进行吗’。"},
+    {"question":"‘就这个吧。’","options":["Yang ini aja.","Hanya ini."],"answer_index":0,"explain":"aja 是日常高频口语。"},
+    {"question":"朋友突然说不去了，你很惊讶：‘怎么不去了？’","options":["Kok nggak jadi?","Kenapa tidak akan?"],"answer_index":0,"explain":"Kok nggak jadi? 很自然。"},
+    {"question":"‘然后怎么办？’","options":["Terus gimana?","Lalu bagaimana secara resmi?"],"answer_index":0,"explain":"Terus gimana? 是自然口语。"},
+    {"question":"‘让我来吧。’","options":["Biar aku aja.","Hanya saya."],"answer_index":0,"explain":"Biar aku aja. = 让我来就行。"}
+  ],
+  "output":{"task":"朋友问你今晚还去不去吃饭。你今天工作很多，有点累，所以想改到明天。至少主动用 jadi / kan / sih / soalnya / aja。","reference_answer":"Kayaknya nanti malam aku nggak jadi ikut deh. Hari ini kerjaan banyak banget, jadi agak capek. Aku tahu kemarin kan udah janjian, tapi gimana kalau besok aja? Besok aku kayaknya lebih santai. Nanti aku kabarin lagi ya.","reference_cn":"今晚我好像不去了。今天工作特别多，所以有点累。我知道昨天已经约好了，不过要不就明天吧？明天我应该比较闲。到时候我再告诉你。"},
+  "review":["jadi = 原计划最终成不成/还做不做","aja = 就……吧/就行","kok bisa? = 怎么会？","Terus gimana? = 那怎么办？","Biar aku aja. = 我来就行。"]
+}
