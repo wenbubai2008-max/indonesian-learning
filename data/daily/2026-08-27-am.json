@@ -1,21 +1,21 @@
 {
-  "date": "2026-08-27",
-  "session": "am",
-  "time": "08:00",
-  "level": "A2+ → B1",
-  "title": "Day 5 · 历史晨课恢复",
-  "historical_reconstruction": true,
-  "recovery_note": "根据可确认的历史晨课记录恢复。仅恢复能够确认的词汇，不补造原先未能找回的句子、阅读、小测或输出题。",
-  "vocab": [
-    {"word":"kayak","display":"kayak","audio_text":"kayak","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"soalnya","display":"soalnya","audio_text":"soalnya","cn":"","en":"","root":"soal","formation":"soal + -nya","example":"","example_cn":"","synonym_note":""},
-    {"word":"makanya","display":"makanya","audio_text":"makanya","cn":"","en":"","root":"maka","formation":"maka + -nya","example":"","example_cn":"","synonym_note":""},
-    {"word":"sempat","display":"sempat","audio_text":"sempat","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"keburu","display":"keburu","audio_text":"keburu","cn":"","en":"","root":"buru","formation":"ke- + buru（口语）","example":"","example_cn":"","synonym_note":""},
-    {"word":"mending","display":"mending","audio_text":"mending","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"ribet","display":"ribet","audio_text":"ribet","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
-    {"word":"nyebelin","display":"nyebelin","audio_text":"nyebelin","cn":"","en":"","root":"sebel","formation":"口语 ny- + sebel + -in","example":"","example_cn":"","synonym_note":""},
-    {"word":"terserah","display":"terserah","audio_text":"terserah","cn":"","en":"","root":"serah","formation":"ter- + serah","example":"","example_cn":"","synonym_note":""},
-    {"word":"nggak apa-apa","display":"nggak apa-apa","audio_text":"nggak apa-apa","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""}
+  "date":"2026-08-27",
+  "session":"am",
+  "time":"08:00",
+  "level":"A2+ → B1",
+  "title":"Day 5 · 历史晨课恢复",
+  "historical_reconstruction":true,
+  "recovery_note":"根据可确认的历史晨课记录恢复。词汇列表为历史可确认内容；释义与词根按现有词表及既定学习规则补齐。不补造无法找回的原句、阅读、小测或输出题。",
+  "vocab":[
+    {"word":"kayak","display":"kayak","audio_text":"kayak","cn":"像……一样","en":"like / similar to","root":"","formation":"","example":"","example_cn":"","synonym_note":"口语中常对应 seperti。"},
+    {"word":"soalnya","display":"soalnya","audio_text":"soalnya","cn":"因为嘛 / 因为是……","en":"because / the thing is","root":"soal","formation":"soal + -nya","example":"","example_cn":"","synonym_note":"比 karena 更口语，常用于解释原因。"},
+    {"word":"makanya","display":"makanya","audio_text":"makanya","cn":"所以嘛 / 难怪","en":"that's why","root":"maka","formation":"maka + -nya","example":"","example_cn":"","synonym_note":"口语里常用来承接前面的原因。"},
+    {"word":"sempat","display":"sempat","audio_text":"sempat","cn":"曾经有时间 / 来得及","en":"have time / manage to","root":"","formation":"","example":"","example_cn":"","synonym_note":"常表示‘抽得出时间做了某事’。"},
+    {"word":"keburu","display":"keburu","audio_text":"keburu","cn":"还没来得及就…… / 赶在……之前","en":"before it's too late / end up too soon","root":"buru","formation":"ke- + buru（口语）","example":"","example_cn":"","synonym_note":"常见结构：keburu + 动词/情况。"},
+    {"word":"mending","display":"mending","audio_text":"mending","cn":"还不如 / 最好","en":"better / might as well","root":"","formation":"","example":"","example_cn":"","synonym_note":"口语建议非常常见，对应 lebih baik。"},
+    {"word":"ribet","display":"ribet","audio_text":"ribet","cn":"麻烦 / 复杂","en":"complicated / troublesome","root":"","formation":"","example":"","example_cn":"","synonym_note":"日常口语高频。"},
+    {"word":"nyebelin","display":"nyebelin","audio_text":"nyebelin","cn":"招人烦 / 很烦人","en":"annoying","root":"sebel","formation":"口语 ny- + sebel + -in","example":"","example_cn":"","synonym_note":"标准表达可用 menyebalkan。"},
+    {"word":"terserah","display":"terserah","audio_text":"terserah","cn":"随你 / 听你的","en":"up to you","root":"serah","formation":"ter- + serah","example":"","example_cn":"","synonym_note":"语气取决于场景，可中性也可显得不耐烦。"},
+    {"word":"nggak apa-apa","display":"nggak apa-apa","audio_text":"nggak apa-apa","cn":"没关系 / 没事","en":"it's okay / no problem","root":"","formation":"口语 nggak + apa-apa","example":"","example_cn":"","synonym_note":"标准写法常见 tidak apa-apa。"}
   ]
 }
