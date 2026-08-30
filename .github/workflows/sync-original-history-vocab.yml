@@ -1,0 +1,69 @@
+name: Sync original history vocabulary
+on:
+  push:
+    paths:
+      - '.github/workflows/sync-original-history-vocab.yml'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync Day1 Day7 Day8 vocab
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,re
+
+          target=Path('data/daily-vocab-data.js')
+          raw=target.read_text(encoding='utf-8')
+          m=re.search(r'window\.DAILY_VOCAB_DB\s*=\s*(\[.*\])\s*;\s*$', raw, re.S)
+          if not m:
+              raise SystemExit('DAILY_VOCAB_DB format not recognized')
+          db=json.loads(m.group(1))
+          by={str(x.get('word','')).strip().lower():x for x in db}
+
+          for date in ['2026-08-22','2026-08-29','2026-08-30']:
+              p=Path(f'data/daily/{date}-am.json')
+              lesson=json.loads(p.read_text(encoding='utf-8'))
+              for v in lesson.get('vocab',[]):
+                  word=str(v.get('word','')).strip()
+                  if not word: continue
+                  k=word.lower()
+                  rec=by.get(k)
+                  if rec is None:
+                      rec={
+                          'word':word,
+                          'cn':v.get('cn',''),
+                          'en':v.get('en',''),
+                          'root':v.get('root',''),
+                          'categories':['每日学习','08:00','原始课程'],
+                          'times_seen':1,
+                          'first_seen':date+' 08:00',
+                          'last_seen':date+' 08:00',
+                          'sessions':['08:00'],
+                          'dates':[date]
+                      }
+                      db.append(rec); by[k]=rec
+                  else:
+                      if not rec.get('cn') and v.get('cn'): rec['cn']=v.get('cn')
+                      if not rec.get('en') and v.get('en'): rec['en']=v.get('en')
+                      if not rec.get('root') and v.get('root'): rec['root']=v.get('root')
+                      rec['categories']=list(dict.fromkeys((rec.get('categories') or [])+['每日学习','08:00','原始课程']))
+                      rec['sessions']=list(dict.fromkeys((rec.get('sessions') or [])+['08:00']))
+                      old_dates=rec.get('dates') or []
+                      rec['dates']=list(dict.fromkeys(old_dates+[date]))
+                      rec['times_seen']=max(int(rec.get('times_seen',1)),len(rec['dates']))
+                      rec['first_seen']=min(rec.get('first_seen',date+' 08:00'),date+' 08:00')
+                      rec['last_seen']=max(rec.get('last_seen',date+' 08:00'),date+' 08:00')
+
+          target.write_text('window.DAILY_VOCAB_DB = '+json.dumps(db,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
+          PY
+      - name: Commit synced vocabulary
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily-vocab-data.js
+          git commit -m "Sync source-backed historical vocabulary" || exit 0
+          git push
