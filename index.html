@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>印尼语学习 · 互动试用版</title>
+<style>
+  :root{
+    --bg:#f6f7fb;--card:#fff;--text:#1f2937;--muted:#6b7280;--line:#e5e7eb;
+    --accent:#4f46e5;--ok:#15803d;--bad:#b91c1c;--soft:#eef2ff;--warn:#b45309;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text)}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 18px 60px}
+  .top{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:18px}
+  h1{margin:0;font-size:28px}.sub{color:var(--muted);font-size:14px;margin-top:6px}
+  .stats{background:var(--card);border:1px solid var(--line);padding:10px 14px;border-radius:14px;font-size:14px;white-space:nowrap}
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 18px}
+  .tab{border:1px solid var(--line);background:#fff;padding:9px 14px;border-radius:999px;cursor:pointer;font-weight:600}
+  .tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 8px 30px rgba(31,41,55,.06)}
+  .meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:14px;margin-bottom:16px}
+  .word{font-size:34px;font-weight:800;letter-spacing:.2px;margin:4px 0 10px}
+  .root{color:var(--muted);font-size:15px;margin-bottom:18px}
+  .question{font-size:20px;font-weight:700;margin:10px 0 16px}
+  .options{display:grid;gap:10px}
+  .opt{width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:14px;padding:14px 16px;font-size:16px;cursor:pointer;transition:.15s}
+  .opt:hover{border-color:#a5b4fc;background:#fafaff}.opt.correct{border-color:#86efac;background:#f0fdf4}.opt.wrong{border-color:#fecaca;background:#fef2f2}
+  .feedback{min-height:46px;margin-top:14px;padding:12px 14px;border-radius:12px;display:none;font-size:15px;line-height:1.6}
+  .feedback.show{display:block}.feedback.ok{background:#f0fdf4;color:var(--ok)}.feedback.bad{background:#fef2f2;color:var(--bad)}
+  .cn{margin-top:14px;padding:14px;background:#f9fafb;border-radius:12px;display:none;line-height:1.7}.cn.show{display:block}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+  button.action{border:0;border-radius:12px;padding:11px 16px;font-weight:700;cursor:pointer}
+  .primary{background:var(--accent);color:#fff}.secondary{background:#eef2f7;color:#374151}.ghost{background:#fff;border:1px solid var(--line)!important}
+  .memory{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;border-top:1px solid var(--line);padding-top:18px}
+  .memory button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 13px;cursor:pointer}
+  .memory .know{color:var(--ok)}.memory .fuzzy{color:var(--warn)}.memory .dont{color:var(--bad)}
+  .hidden{display:none}
+  .sentence{font-size:20px;line-height:1.65;font-weight:650;margin:10px 0 14px}
+  .pill{display:inline-block;background:var(--soft);color:var(--accent);border-radius:999px;padding:5px 9px;font-size:13px;margin-right:6px}
+  @media(max-width:640px){.top{align-items:flex-start;flex-direction:column}.word{font-size:30px}.card{padding:18px}.sentence{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>印尼语学习</h1>
+      <div class="sub">互动试用版 · 选择题可直接点击作答</div>
+    </div>
+    <div class="stats">今日：<b id="done">0</b> 题 ｜ 正确：<b id="correct">0</b></div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-mode="quiz">选择题</button>
+    <button class="tab" data-mode="sentence">句子学习</button>
+    <button class="tab" data-mode="root">词根词缀</button>
+  </div>
+
+  <div class="card" id="quizMode">
+    <div class="meta"><span id="qnum">第 1 / 5 题</span><span class="pill">A2-B1</span></div>
+    <div class="word" id="qword"></div>
+    <div class="root" id="qroot"></div>
+    <div class="question" id="qtext"></div>
+    <div class="options" id="options"></div>
+    <div class="feedback" id="feedback"></div>
+    <div class="controls">
+      <button class="action secondary" id="showExplain">显示解析</button>
+      <button class="action primary" id="nextBtn">下一题</button>
+    </div>
+    <div class="cn" id="explain"></div>
+    <div class="memory">
+      <span style="color:var(--muted);align-self:center">这个词：</span>
+      <button class="know" onclick="remember('会了')">✓ 会了</button>
+      <button class="fuzzy" onclick="remember('模糊')">~ 模糊</button>
+      <button class="dont" onclick="remember('不会')">× 不会</button>
+      <span id="memStatus" style="color:var(--muted);align-self:center"></span>
+    </div>
+  </div>
+
+  <div class="card hidden" id="sentenceMode">
+    <div class="meta"><span>句子学习</span><span class="pill">真实理解</span></div>
+    <div class="sentence">Cuaca amat cerah tapi ada ancaman badai yang mengancam.</div>
+    <div><span class="pill">ancaman = 威胁</span><span class="pill">mengancam = 威胁、构成威胁</span></div>
+    <div class="controls">
+      <button class="action secondary" onclick="document.getElementById('sentenceCn').classList.toggle('show')">显示 / 隐藏中文</button>
+    </div>
+    <div class="cn" id="sentenceCn">天气非常晴朗，但有暴风雨的威胁正在逼近。</div>
+  </div>
+
+  <div class="card hidden" id="rootMode">
+    <div class="meta"><span>词根词缀</span><span class="pill">构词</span></div>
+    <div class="word">mengancam</div>
+    <div class="root">词根：<b>ancam</b>（威胁）</div>
+    <div class="sentence">meng- + ancam → mengancam</div>
+    <div class="cn show">词根 <b>ancam</b> 表示“威胁”。加上动词前缀后形成 <b>mengancam</b>，意思是“威胁某人 / 对……构成威胁”。相关名词：<b>ancaman</b> = 威胁。</div>
+  </div>
+</div>
+
+<script>
+const data = [
+  {w:'mengancam',root:'词根：ancam',q:'“mengancam” 最接近下面哪个意思？',opts:['保护','威胁','等待','解释'],ans:1,ex:'mengancam = 威胁、构成威胁。词根 ancam；ancaman = 威胁（名词）。来源句：Cuaca amat cerah tapi ada ancaman badai yang mengancam.'},
+  {w:'beruntung',root:'词根：untung',q:'“beruntung” 是什么意思？',opts:['幸运的','生气的','疲劳的','危险的'],ans:0,ex:'beruntung = 幸运的。untung 可表示好运、利润；keberuntungan = 好运、幸运。'},
+  {w:'mengisi',root:'词根：isi',q:'“mengisi tempat pakan” 中 mengisi 的意思是？',opts:['清空','填充','移动','寻找'],ans:1,ex:'mengisi = 填、装入、填写。词根 isi = 内容、里面的东西。例：mengisi formulir = 填表。'},
+  {w:'membutuhkan',root:'词根：butuh',q:'“membutuhkan” 的意思是？',opts:['需要','拒绝','忘记','相信'],ans:0,ex:'membutuhkan = 需要某物。词根 butuh = 需要。口语中 butuh 本身也非常常见。'},
+  {w:'memperbaiki',root:'词根：baik',q:'“memperbaiki sistem” 最自然的意思是？',opts:['破坏系统','复制系统','改善 / 修复系统','关闭系统'],ans:2,ex:'memperbaiki = 修理、改善。词根 baik = 好；perbaikan = 改善、修理。'}
+];
+let idx=0, answered=false, done=0, correct=0;
+const qword=document.getElementById('qword'), qroot=document.getElementById('qroot'), qtext=document.getElementById('qtext'), options=document.getElementById('options'), feedback=document.getElementById('feedback'), explain=document.getElementById('explain');
+function render(){
+  answered=false; feedback.className='feedback'; feedback.textContent=''; explain.classList.remove('show'); document.getElementById('memStatus').textContent='';
+  const x=data[idx]; document.getElementById('qnum').textContent=`第 ${idx+1} / ${data.length} 题`; qword.textContent=x.w; qroot.textContent=x.root; qtext.textContent=x.q; options.innerHTML=''; explain.innerHTML=x.ex;
+  x.opts.forEach((o,i)=>{const b=document.createElement('button'); b.className='opt'; b.textContent=String.fromCharCode(65+i)+'. '+o; b.onclick=()=>choose(i,b); options.appendChild(b);});
+}
+function choose(i,b){
+  if(answered)return; answered=true; done++; document.getElementById('done').textContent=done;
+  [...options.children].forEach((el,j)=>{if(j===data[idx].ans)el.classList.add('correct')});
+  if(i===data[idx].ans){correct++;document.getElementById('correct').textContent=correct;feedback.className='feedback show ok';feedback.textContent='回答正确 ✓';}
+  else{b.classList.add('wrong');feedback.className='feedback show bad';feedback.textContent='回答错误。正确答案已标绿。';}
+}
+document.getElementById('nextBtn').onclick=()=>{idx=(idx+1)%data.length;render()};
+document.getElementById('showExplain').onclick=()=>explain.classList.toggle('show');
+function remember(v){document.getElementById('memStatus').textContent='已标记：'+v;localStorage.setItem('mem_'+data[idx].w,v)}
+window.remember=remember;
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));t.classList.add('active');
+  ['quizMode','sentenceMode','rootMode'].forEach(id=>document.getElementById(id).classList.add('hidden'));
+  document.getElementById(t.dataset.mode+'Mode').classList.remove('hidden');
+});
+render();
+</script>
+</body>
+</html>
