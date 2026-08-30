@@ -1,0 +1,25 @@
+{
+  "date":"2026-08-24","session":"am","time":"08:00","level":"A2+ → B1","title":"Day 3 · 每日印尼语学习8点","historical_reconstruction":true,
+  "recovery_note":"根据历史记录恢复。词汇与课程模块可确认；具体原句未完整保留的部分仅做摘要。",
+  "vocab":[
+    {"word":"berubah","display":"berubah","audio_text":"berubah","cn":"改变；发生变化","en":"change","root":"ubah","formation":"ber- + ubah"},
+    {"word":"mengubah","display":"mengubah","audio_text":"mengubah","cn":"改变某事物","en":"change / alter something","root":"ubah","formation":"meN- + ubah"},
+    {"word":"perubahan","display":"perubahan","audio_text":"perubahan","cn":"变化","en":"change","root":"ubah","formation":"per- + ubah + -an"},
+    {"word":"mengatasi","display":"mengatasi","audio_text":"mengatasi","cn":"克服；解决","en":"overcome / handle","root":"atas","formation":"meN- + atas + -i"},
+    {"word":"menyelesaikan","display":"menyelesaikan","audio_text":"menyelesaikan","cn":"完成；解决","en":"finish / resolve","root":"selesai","formation":"meN- + selesai + -kan"},
+    {"word":"berusaha","display":"berusaha","audio_text":"berusaha","cn":"努力；设法","en":"try / make an effort","root":"usaha","formation":"ber- + usaha"},
+    {"word":"berencana","display":"berencana","audio_text":"berencana","cn":"计划；打算","en":"plan / intend","root":"rencana","formation":"ber- + rencana"},
+    {"word":"terbiasa","display":"terbiasa","audio_text":"terbiasa","cn":"习惯于","en":"be accustomed to","root":"biasa","formation":"ter- + biasa"},
+    {"word":"memastikan","display":"memastikan","audio_text":"memastikan","cn":"确认；确保","en":"make sure / ensure","root":"pasti","formation":"meN- + pasti + -kan"},
+    {"word":"terutama","display":"terutama","audio_text":"terutama","cn":"尤其；主要是","en":"especially / mainly","root":"utama","formation":"ter- + utama"},
+    {"word":"sementara","display":"sementara","audio_text":"sementara","cn":"暂时；与此同时","en":"temporarily / meanwhile","root":"","formation":""},
+    {"word":"setidaknya","display":"setidaknya","audio_text":"setidaknya","cn":"至少","en":"at least","root":"tidak","formation":"setidak + -nya（固定表达）"}
+  ],
+  "recovered_sections":[
+    {"type":"morphology","title":"词族重点","summary":"历史记录确认重点讲了 ubah → berubah → mengubah → diubah → perubahan。"},
+    {"type":"sentences","title":"5个句子 / 改写练习","summary":"历史记录确认当天有 5 个句子或改写任务，并附参考答案。"},
+    {"type":"reading","title":"阅读","summary":"历史记录确认当天包含一篇 A2+→B1 阅读及中文翻译。"},
+    {"type":"dialogue","title":"情景对话","summary":"历史记录确认当天包含实用对话练习。"},
+    {"type":"output","title":"1分钟主动输出","summary":"历史记录确认当天安排了约1分钟主动输出及参考答案。"}
+  ]
+}
