@@ -1,0 +1,26 @@
+{
+  "date": "2026-08-24",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 2,
+  "title": "2026年8月24日｜Day 2",
+  "source_status": "historical_record_incomplete",
+  "historical_reconstruction": true,
+  "recovery_note": "仅迁移当前可从聊天历史确认的内容；原聊天中未能完整找回的句子、阅读正文、小测题目等保持缺失，不补写。",
+  "progress": {"new": 10, "cumulative": 20, "range": "11–20"},
+  "vocab": [
+    {"order":11,"word":"menghadapi","display":"menghadapi","audio_text":"menghadapi","cn":"面对；应对","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":12,"word":"meningkatkan","display":"meningkatkan","audio_text":"meningkatkan","cn":"提高；提升","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":13,"word":"mengurangi","display":"mengurangi","audio_text":"mengurangi","cn":"减少；降低","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":14,"word":"memilih","display":"memilih","audio_text":"memilih","cn":"选择","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":15,"word":"pilihan","display":"pilihan","audio_text":"pilihan","cn":"选择；选项","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":16,"word":"kesalahan","display":"kesalahan","audio_text":"kesalahan","cn":"错误","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":17,"word":"menyadari","display":"menyadari","audio_text":"menyadari","cn":"意识到","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":18,"word":"berkembang","display":"berkembang","audio_text":"berkembang","cn":"发展；成长","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":19,"word":"kemampuan","display":"kemampuan","audio_text":"kemampuan","cn":"能力","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":20,"word":"berbeda","display":"berbéda","audio_text":"berbeda","cn":"不同；有区别","en":"","root":"","formation":"","example":"","example_cn":""}
+  ],
+  "reading": {"title":"Belajar dari Kesalahan","text":"","cn":"","source_note":"原聊天历史只确认到阅读标题，正文与完整中文未能找回。"},
+  "output": {"task":"","reference_answer":"Dulu saya takut membuat kesalahan, tapi sekarang saya menyadari bahwa membuat kesalahan itu hal yang normal. Saya ingin terus meningkatkan kemampuan bahasa Indonesia saya.","reference_cn":"","colloquial_answer":"Dulu aku takut salah, tapi sekarang aku sadar kalau salah itu wajar. Aku mau terus meningkatkan bahasa Indonesiaku.","source_note":"原聊天历史可确认到参考答案；输出题目本身未能完整找回。"}
+}
