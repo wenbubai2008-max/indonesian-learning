@@ -1,0 +1,25 @@
+{
+  "date":"2026-08-26","session":"am","time":"08:00","level":"A2+ → B1","day":4,"title":"2026年8月26日｜Day 4","source_status":"historical_record_incomplete","historical_reconstruction":true,
+  "recovery_note":"仅迁移当前可从聊天历史确认的内容；未能完整找回的例句、5句、阅读正文、小测题目不补写。",
+  "progress":{"new":10,"cumulative":40,"range":"31–40"},
+  "vocab":[
+    {"order":31,"word":"menunggu","display":"menunggu","audio_text":"menunggu","cn":"等待","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":32,"word":"menghubungi","display":"menghubungi","audio_text":"menghubungi","cn":"联系","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":33,"word":"mengirimkan","display":"mengirimkan","audio_text":"mengirimkan","cn":"发送；寄送","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":34,"word":"meminta","display":"meminta","audio_text":"meminta","cn":"请求；要求","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":35,"word":"memberikan","display":"memberikan","audio_text":"memberikan","cn":"给予；提供","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":36,"word":"menjelaskan","display":"menjelaskan","audio_text":"menjelaskan","cn":"解释；说明","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":37,"word":"menyampaikan","display":"menyampaikan","audio_text":"menyampaikan","cn":"传达；表达","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":38,"word":"mengingatkan","display":"mengingatkan","audio_text":"mengingatkan","cn":"提醒","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":39,"word":"terlambat","display":"terlambat","audio_text":"terlambat","cn":"迟到；延迟","en":"","root":"","formation":"","example":"","example_cn":""},
+    {"order":40,"word":"tersedia","display":"tersedia","audio_text":"tersedia","cn":"可用；有现货","en":"","root":"","formation":"","example":"","example_cn":""}
+  ],
+  "reading":{"title":"Menunggu Jawaban dari Klien","text":"","cn":"","source_note":"原聊天历史只确认到阅读标题。"},
+  "quiz":[
+    {"question":"","options":[],"answer_text":"B menunggu","explain":"","source_note":"原记录仅确认答案"},
+    {"question":"","options":[],"answer_text":"A mengingatkan","explain":"","source_note":"原记录仅确认答案"},
+    {"question":"","options":[],"answer_text":"C tersedia","explain":"","source_note":"原记录仅确认答案"}
+  ],
+  "output":{"task":"","reference_answer":"Saya sudah mengirimkan dokumen kepada mereka, tapi belum menerima jawaban. Kalau hari ini masih belum ada kabar, saya akan menghubungi mereka lagi.","reference_cn":"","colloquial_answer":"Aku sudah kirim dokumennya, tapi belum ada balasan. Kalau hari ini masih belum ada kabar, aku hubungi mereka lagi.","source_note":"原聊天历史可确认参考答案，输出题目本身未完整找回。"},
+  "review":["hubung → menghubungi","ingat → mengingatkan","jelas → menjelaskan"]
+}
