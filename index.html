@@ -4,88 +4,123 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>印尼语学习</title>
 <style>
-:root{--bg:#f4f7fb;--card:#fff;--text:#172033;--muted:#6b7280;--line:#e5e7eb;--accent:#3157d5;--soft:#eef3ff;--ok:#16803b;--bad:#b42318;--warn:#a15c00}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text)}
-.wrap{max-width:920px;margin:auto;padding:24px 16px 60px}.head{display:flex;justify-content:space-between;gap:16px;align-items:center}.head h1{margin:0;font-size:28px}.sub{color:var(--muted);font-size:14px;margin-top:5px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}.stat b{display:block;font-size:22px;margin-top:4px}.label{font-size:12px;color:var(--muted)}
-.nav{display:flex;gap:8px;overflow:auto;padding-bottom:6px;margin-bottom:14px}.nav button,.filter button{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font-weight:700;cursor:pointer}.nav button.active,.filter button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 28px rgba(20,30,60,.05)}.hidden{display:none}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:13px}.word{font-size:34px;font-weight:800;margin:10px 0 4px}.root{color:var(--muted);margin-bottom:14px}.q{font-size:19px;font-weight:750;line-height:1.55;margin:12px 0}.opts{display:grid;gap:9px}.opt{border:1px solid var(--line);background:#fff;padding:13px 14px;border-radius:13px;text-align:left;font-size:16px;cursor:pointer}.opt:hover{background:#fafbff;border-color:#aab8ef}.opt.good{background:#eefaf1;border-color:#8fd3a4}.opt.bad{background:#fff2f0;border-color:#f0aaa2}
-.feedback,.explain,.cn{margin-top:12px;padding:12px 14px;border-radius:12px;line-height:1.65}.feedback{display:none}.feedback.show{display:block}.feedback.good{background:#eefaf1;color:var(--ok)}.feedback.bad{background:#fff2f0;color:var(--bad)}.explain,.cn{display:none;background:#f7f8fb}.showblock{display:block!important}
-.actions,.memory,.filter{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.actions button,.memory button{border:0;border-radius:11px;padding:10px 14px;font-weight:700;cursor:pointer}.primary{background:var(--accent);color:#fff}.secondary{background:#eef1f6}.memory{border-top:1px solid var(--line);padding-top:14px}.memory button{background:#fff;border:1px solid var(--line)}.know{color:var(--ok)}.fuzzy{color:var(--warn)}.dont{color:var(--bad)}
-.sentence{font-size:19px;line-height:1.75;font-weight:650}.chips{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.chip{background:var(--soft);color:var(--accent);padding:5px 9px;border-radius:999px;font-size:13px}.list{display:grid;gap:10px}.item{border:1px solid var(--line);border-radius:14px;padding:14px}.item b{font-size:18px}.muted{color:var(--muted);font-size:14px}.empty{text-align:center;color:var(--muted);padding:28px}
-@media(max-width:650px){.head{align-items:flex-start;flex-direction:column}.stats{grid-template-columns:repeat(2,1fr)}.word{font-size:30px}.card{padding:18px}}
+:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#6b7280;--line:#e6e9ef;--accent:#3157d5;--accent2:#eef3ff;--ok:#14833b;--bad:#b42318;--warn:#a15c00}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text)}button{font:inherit}.app{max-width:980px;margin:auto;padding:24px 16px 70px}.top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.top h1{margin:0;font-size:30px}.sub,.muted{color:var(--muted);font-size:14px}.date{color:var(--muted);font-size:14px;padding-top:6px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}.stat span{font-size:12px;color:var(--muted)}.stat b{display:block;font-size:22px;margin-top:3px}
+.page{display:none}.page.active{display:block}.back{border:0;background:transparent;color:var(--accent);font-weight:700;cursor:pointer;margin-bottom:12px;padding:0}.homeHero{background:linear-gradient(135deg,#3157d5,#5f7bea);color:#fff;border-radius:24px;padding:24px;margin-bottom:16px}.homeHero h2{margin:0 0 6px;font-size:25px}.homeHero p{margin:0 0 16px;opacity:.9}.homeHero button{border:0;background:#fff;color:#2445b7;border-radius:12px;padding:11px 16px;font-weight:800;cursor:pointer}
+.modules{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.module{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;cursor:pointer;text-align:left;transition:.15s}.module:hover{transform:translateY(-1px);border-color:#bac6f2}.module .icon{font-size:26px}.module h3{margin:9px 0 5px;font-size:19px}.module p{margin:0;color:var(--muted);line-height:1.55;font-size:14px}.module .count{display:inline-block;margin-top:10px;background:var(--accent2);color:var(--accent);padding:5px 9px;border-radius:999px;font-size:12px;font-weight:700}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 28px rgba(20,30,60,.04)}.sectionTitle{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:14px}.sectionTitle h2{margin:0;font-size:22px}.pill{background:var(--accent2);color:var(--accent);padding:5px 9px;border-radius:999px;font-size:12px;font-weight:700}
+.tabs,.actions,.memory,.filters{display:flex;gap:8px;flex-wrap:wrap}.tabs{margin-bottom:14px}.tabs button,.filters button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 13px;font-weight:700;cursor:pointer}.tabs button.active,.filters button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.word{font-size:36px;font-weight:850;margin:10px 0 4px}.root{color:var(--muted);margin-bottom:14px}.sound{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 11px;cursor:pointer;margin-left:8px}.flash{min-height:330px;display:flex;flex-direction:column;justify-content:center;text-align:center;background:#fbfcff;border:1px solid var(--line);border-radius:20px;padding:24px}.flash .meaning{display:none;margin-top:16px;font-size:19px;line-height:1.7}.flash.revealed .meaning{display:block}.flash .scene{color:var(--muted);font-size:15px;margin-top:10px}.primary,.secondary{border:0;border-radius:11px;padding:10px 14px;font-weight:800;cursor:pointer}.primary{background:var(--accent);color:#fff}.secondary{background:#eef1f6;color:#374151}.actions{margin-top:14px;justify-content:center}.memory{margin-top:14px;border-top:1px solid var(--line);padding-top:14px;justify-content:center}.memory button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;cursor:pointer}.know{color:var(--ok)}.fuzzy{color:var(--warn)}.dont{color:var(--bad)}
+.q{font-size:19px;font-weight:750;line-height:1.5;margin:12px 0}.opts{display:grid;gap:9px}.opt{border:1px solid var(--line);background:#fff;padding:13px 14px;border-radius:13px;text-align:left;font-size:16px;cursor:pointer}.opt.good{background:#eefaf1;border-color:#8fd3a4}.opt.bad{background:#fff2f0;border-color:#efaaa2}.feedback{display:none;margin-top:12px;padding:12px;border-radius:12px}.feedback.show{display:block}.feedback.good{background:#eefaf1;color:var(--ok)}.feedback.bad{background:#fff2f0;color:var(--bad)}.explain{display:none;margin-top:12px;padding:13px;background:#f7f8fb;border-radius:12px;line-height:1.65}.explain.show{display:block}
+.dailyList{display:grid;gap:9px;margin:14px 0}.dailyItem{display:flex;justify-content:space-between;gap:10px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:13px}.dailyItem b{font-size:15px}.dailyItem span{font-size:13px;color:var(--muted)}
+.readingText{font-size:18px;line-height:1.9;margin:8px 0 16px}.readingText mark{background:#fff3bf;padding:1px 3px;border-radius:4px;cursor:pointer}.translation{display:none;background:#f7f8fb;border-radius:12px;padding:13px;line-height:1.7;margin-top:12px}.translation.show{display:block}.vocabBox{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px}.vocab{border:1px solid var(--line);border-radius:12px;padding:11px}.vocab b{display:block;margin-bottom:3px}.miniQ{border-top:1px solid var(--line);margin-top:16px;padding-top:16px}
+.affixList,.reviewList,.progressList{display:grid;gap:10px}.affix,.review,.prog{border:1px solid var(--line);border-radius:14px;padding:14px}.affix h3{margin:0 0 6px;font-size:17px}.affix p,.review p,.prog p{margin:5px 0;color:var(--muted);line-height:1.55}.empty{text-align:center;padding:28px;color:var(--muted)}
+@media(max-width:650px){.top{flex-direction:column}.stats{grid-template-columns:repeat(2,1fr)}.modules{grid-template-columns:1fr}.vocabBox{grid-template-columns:1fr}.word{font-size:31px}.card{padding:18px}}
 </style>
 </head>
-<body><div class="wrap">
-<div class="head"><div><h1>印尼语学习</h1><div class="sub">高频词 · 真实口语 · 词根词缀 · 自动记录掌握度</div></div><div class="muted" id="today"></div></div>
-<div class="stats"><div class="stat"><span class="label">今日答题</span><b id="sDone">0</b></div><div class="stat"><span class="label">正确率</span><b id="sRate">0%</b></div><div class="stat"><span class="label">已会</span><b id="sKnow">0</b></div><div class="stat"><span class="label">待复习</span><b id="sReview">0</b></div></div>
-<div class="nav"><button class="active" data-page="quiz">选择题</button><button data-page="review">复习不会的</button><button data-page="sentence">句子</button><button data-page="affix">前后缀</button><button data-page="progress">学习记录</button></div>
+<body><div class="app">
+<div class="top"><div><h1>🇮🇩 印尼语学习</h1><div class="sub">你的个人词库 · 口语 · 高频动词 · 前后缀 · 阅读</div></div><div class="date" id="date"></div></div>
+<div class="stats"><div class="stat"><span>今日答题</span><b id="sDone">0</b></div><div class="stat"><span>正确率</span><b id="sRate">0%</b></div><div class="stat"><span>已掌握</span><b id="sKnow">0</b></div><div class="stat"><span>待复习</span><b id="sReview">0</b></div></div>
 
-<section id="quiz" class="card page"><div class="filter"><button class="active" data-mode="all">综合</button><button data-mode="cn2id">中文 → 印尼语</button><button data-mode="id2cn">印尼语 → 中文</button><button data-mode="scene">场景句</button></div><div class="meta"><span id="qnum"></span><span id="qtag"></span></div><div class="word" id="qword"></div><div class="root" id="qroot"></div><div class="q" id="qtext"></div><div class="opts" id="opts"></div><div class="feedback" id="feedback"></div><div class="actions"><button class="secondary" id="exBtn">显示解析</button><button class="primary" id="nextBtn">下一题</button></div><div class="explain" id="explain"></div><div class="memory"><span class="muted" style="align-self:center">掌握度：</span><button class="know" onclick="mark('know')">会了</button><button class="fuzzy" onclick="mark('fuzzy')">模糊</button><button class="dont" onclick="mark('dont')">不会</button><span id="markTip" class="muted" style="align-self:center"></span></div></section>
+<section id="home" class="page active">
+<div class="homeHero"><h2>今日学习</h2><p>10 个词汇 · 5 个复习 · 1 篇短文 · 5 道测试</p><button onclick="go('daily')">开始今日学习 →</button></div>
+<div class="modules">
+<button class="module" onclick="go('vocab')"><div class="icon">🧠</div><h3>词汇学习</h3><p>闪卡、选择题、场景题；每个词都可以直接听标准印尼语发音。</p><span class="count">词库试接入 34 个</span></button>
+<button class="module" onclick="go('reading')"><div class="icon">📖</div><h3>阅读短文</h3><p>短篇印尼语阅读，重点词高亮，带中文翻译和理解题。</p><span class="count">A2 → B1</span></button>
+<button class="module" onclick="go('affix')"><div class="icon">🧩</div><h3>前后缀</h3><p>meN-、peN-、ber-、di-、ter-、-kan、-i，用例词理解构词。</p><span class="count">来自你的前后缀表</span></button>
+<button class="module" onclick="go('review')"><div class="icon">🔁</div><h3>错词复习</h3><p>“不会 / 模糊 / 做错”的词自动进入复习，不需要自己整理。</p><span class="count" id="homeReview">0 个待复习</span></button>
+<button class="module" onclick="go('progress')"><div class="icon">📊</div><h3>学习记录</h3><p>查看已会、模糊、不会的词。记录保存在当前浏览器。</p><span class="count">自动记录</span></button>
+<button class="module" onclick="go('vocab')"><div class="icon">💬</div><h3>口语高频</h3><p>优先学习 soalnya、padahal、ternyata、lumayan 这类真实常用表达。</p><span class="count">雅加达口语优先</span></button>
+</div></section>
 
-<section id="review" class="card page hidden"><div class="meta"><span>优先复习“不会 / 模糊”</span><span id="reviewCount"></span></div><div id="reviewBox"></div></section>
-<section id="sentence" class="card page hidden"><div class="meta"><span>自然句子学习</span><span id="sentNum"></span></div><div class="sentence" id="sentText"></div><div class="chips" id="sentChips"></div><div class="actions"><button class="secondary" id="sentCnBtn">显示 / 隐藏中文</button><button class="primary" id="sentNext">下一句</button></div><div class="cn" id="sentCn"></div></section>
-<section id="affix" class="card page hidden"><div class="meta"><span>前后缀规律</span><span>先看规律，再看例词</span></div><div class="list" id="affixList"></div></section>
-<section id="progress" class="card page hidden"><div class="meta"><span>浏览器本地学习记录</span><span>不会上传个人数据</span></div><div class="filter"><button onclick="clearProgress()">清空学习记录</button></div><div class="list" id="progressList"></div></section>
+<section id="daily" class="page"><button class="back" onclick="go('home')">← 返回首页</button><div class="card"><div class="sectionTitle"><h2>今日学习</h2><span class="pill">约 20–30 分钟</span></div><div class="dailyList"><div class="dailyItem"><div><b>① 新词学习</b><br><span>今天先学 10 个高价值词</span></div><button class="primary" onclick="startDailyVocab()">开始</button></div><div class="dailyItem"><div><b>② 复习错词</b><br><span>优先复习“模糊 / 不会”</span></div><button class="secondary" onclick="go('review')">复习</button></div><div class="dailyItem"><div><b>③ 阅读短文</b><br><span>1 篇 A2–B1 小短文</span></div><button class="secondary" onclick="go('reading')">阅读</button></div><div class="dailyItem"><div><b>④ 综合测试</b><br><span>印尼语 → 中文 / 中文 → 印尼语 / 场景题</span></div><button class="secondary" onclick="startQuiz()">测试</button></div></div></div></section>
+
+<section id="vocab" class="page"><button class="back" onclick="go('home')">← 返回首页</button><div class="card"><div class="sectionTitle"><h2>词汇学习</h2><span class="pill" id="vCount"></span></div><div class="tabs"><button class="active" data-vmode="flash">闪卡</button><button data-vmode="quiz">选择题</button></div><div class="filters"><button class="active" data-cat="all">综合</button><button data-cat="oral">口语</button><button data-cat="verb">动词</button><button data-cat="core">高频</button></div><div id="flashPanel"><div class="flash" id="flashCard"><div><span class="pill" id="fCat"></span></div><div class="word"><span id="fWord"></span><button class="sound" onclick="speakCurrentWord()">🔊 发音</button></div><div class="root" id="fRoot"></div><div class="muted">先自己回忆意思，再翻卡</div><div class="meaning"><b id="fCn"></b><div class="scene" id="fScene"></div><div class="scene" id="fFeel"></div></div></div><div class="actions"><button class="secondary" onclick="revealCard()">翻卡</button><button class="primary" onclick="nextCard()">下一个</button></div><div class="memory"><button class="know" onclick="markCurrent('know')">会了</button><button class="fuzzy" onclick="markCurrent('fuzzy')">模糊</button><button class="dont" onclick="markCurrent('dont')">不会</button><span class="muted" id="markTip"></span></div></div>
+<div id="quizPanel" style="display:none"><div class="word" id="qWord"></div><button class="sound" onclick="speakQuizWord()">🔊 发音</button><div class="q" id="qText"></div><div class="opts" id="qOpts"></div><div class="feedback" id="qFeedback"></div><div class="actions"><button class="secondary" onclick="toggleExplain()">显示解析</button><button class="primary" onclick="nextQuiz()">下一题</button></div><div class="explain" id="qExplain"></div></div></div></section>
+
+<section id="reading" class="page"><button class="back" onclick="go('home')">← 返回首页</button><div class="card"><div class="sectionTitle"><h2 id="rTitle"></h2><span class="pill" id="rLevel"></span></div><div class="actions" style="justify-content:flex-start;margin-top:0"><button class="secondary" onclick="speakReading()">🔊 朗读全文</button><button class="secondary" onclick="toggleTranslation()">显示 / 隐藏中文</button><button class="primary" onclick="nextReading()">下一篇</button></div><div class="readingText" id="rText"></div><div class="translation" id="rCn"></div><div class="vocabBox" id="rVocab"></div><div class="miniQ"><div class="q" id="rQ"></div><div class="opts" id="rOpts"></div><div class="feedback" id="rFeedback"></div></div></div></section>
+
+<section id="affix" class="page"><button class="back" onclick="go('home')">← 返回首页</button><div class="card"><div class="sectionTitle"><h2>前后缀训练</h2><span class="pill">来自你的 Excel 规则表</span></div><div class="affixList" id="affixList"></div></div></section>
+<section id="review" class="page"><button class="back" onclick="go('home')">← 返回首页</button><div class="card"><div class="sectionTitle"><h2>错词复习</h2><span class="pill" id="reviewCount"></span></div><div class="reviewList" id="reviewList"></div></div></section>
+<section id="progress" class="page"><button class="back" onclick="go('home')">← 返回首页</button><div class="card"><div class="sectionTitle"><h2>学习记录</h2><button class="secondary" onclick="clearProgress()">清空记录</button></div><div class="progressList" id="progressList"></div></div></section>
 </div>
 <script>
 const bank=[
-{w:'soalnya',cn:'因为嘛 / 因为',root:'口语连接词',scene:'Gak jadi, soalnya hujan.',feel:'非常常见的口语“因为嘛”'},
-{w:'padahal',cn:'明明 / 可是其实',root:'连接词',scene:'Padahal dekat.',feel:'表示事实和预期相反'},
-{w:'bahkan',cn:'甚至',root:'副词',scene:'Bahkan dia gak tahu.',feel:'“甚至连……”'},
-{w:'sekalian',cn:'顺便一起',root:'口语副词',scene:'Beli sekalian.',feel:'顺手一起做'},
-{w:'kebetulan',cn:'碰巧 / 正好',root:'betul（对、正确）',scene:'Kebetulan ketemu.',feel:'正好碰上'},
-{w:'ternyata',cn:'原来 / 结果发现',root:'nyata（真实、明显）',scene:'Ternyata mahal.',feel:'结果和原来想的不一样'},
-{w:'mengancam',cn:'威胁 / 构成威胁',root:'ancam',scene:'Ada ancaman badai yang mengancam.',feel:'ancaman 是名词“威胁”'},
-{w:'beruntung',cn:'幸运的',root:'untung',scene:'Dia beruntung dapat bantuan.',feel:'keberuntungan = 幸运、好运'},
-{w:'mengisi',cn:'填写 / 填充 / 装入',root:'isi',scene:'Tolong mengisi formulir ini.',feel:'口语里 mengisi formulir 很常见'},
-{w:'membutuhkan',cn:'需要',root:'butuh',scene:'Saya membutuhkan waktu.',feel:'日常口语直接说 butuh 也非常自然'},
-{w:'memperbaiki',cn:'修理 / 改善',root:'baik',scene:'Kita perlu memperbaiki sistem.',feel:'perbaikan = 改善、维修'},
-{w:'memastikan',cn:'确保 / 确认',root:'pasti',scene:'Saya mau memastikan jadwalnya.',feel:'办公室非常常用'},
-{w:'memutuskan',cn:'决定',root:'putus',scene:'Kami belum memutuskan.',feel:'keputusan = 决定（名词）'},
-{w:'mendirikan',cn:'建立 / 成立',root:'diri',scene:'Mereka mendirikan perusahaan baru.',feel:'常用于公司、组织、建筑'},
-{w:'memisahkan',cn:'分开 / 分离',root:'pisah',scene:'Tolong pisahkan barang ini.',feel:'口语命令常见 pisahkan'}
+{w:'soalnya',cn:'因为嘛 / 因为',root:'口语连接词',scene:'Gak jadi, soalnya hujan.',feel:'真实感觉：因为嘛',cat:'oral'},
+{w:'padahal',cn:'明明 / 可是其实',root:'连接词',scene:'Padahal dekat.',feel:'真实感觉：明明……',cat:'oral'},
+{w:'bahkan',cn:'甚至',root:'副词',scene:'Bahkan dia gak tahu.',feel:'甚至连……',cat:'oral'},
+{w:'sekalian',cn:'顺便一起',root:'口语副词',scene:'Beli sekalian.',feel:'顺便一起做',cat:'oral'},
+{w:'kebetulan',cn:'碰巧 / 正好',root:'betul',scene:'Kebetulan ketemu.',feel:'正好碰上',cat:'oral'},
+{w:'ternyata',cn:'原来 / 结果发现',root:'nyata',scene:'Ternyata mahal.',feel:'结果和原来想的不一样',cat:'oral'},
+{w:'semacam',cn:'类似于 / 某种',root:'macam',scene:'Semacam kopi susu.',feel:'类似于……',cat:'oral'},
+{w:'lumayan',cn:'还不错 / 还可以',root:'固定用法',scene:'Lumayan enak.',feel:'口语里非常常用',cat:'oral'},
+{w:'parah',cn:'严重 / 离谱',root:'形容词',scene:'Macetnya parah.',feel:'情况很严重、很夸张',cat:'oral'},
+{w:'cuek',cn:'冷淡 / 不怎么搭理',root:'口语形容词',scene:'Dia cuek banget.',feel:'人比较冷淡',cat:'oral'},
+{w:'kepo',cn:'爱打听 / 好奇过头',root:'网络口语',scene:'Jangan kepo.',feel:'别瞎打听',cat:'oral'},
+{w:'buru-buru',cn:'匆忙 / 着急',root:'重复词',scene:'Jangan buru-buru.',feel:'别急',cat:'oral'},
+{w:'mencetak',cn:'打印',root:'cetak',scene:'Saya perlu mencetak dokumen ini.',feel:'办公行为',cat:'verb'},
+{w:'menawarkan',cn:'提供 / 报价',root:'tawar',scene:'Mereka menawarkan harga baru.',feel:'商务常用',cat:'verb'},
+{w:'memproduksi',cn:'生产',root:'produksi',scene:'Pabrik ini memproduksi makanan.',feel:'工业 / 商务',cat:'verb'},
+{w:'menjamin',cn:'保证',root:'jamin',scene:'Kami tidak bisa menjamin hasilnya.',feel:'商务 / 正式表达',cat:'verb'},
+{w:'melakukan',cn:'做 / 进行',root:'laku',scene:'Kami akan melakukan pengecekan.',feel:'工作中高频',cat:'verb'},
+{w:'memeriksa',cn:'检查',root:'periksa',scene:'Tolong periksa dokumen ini.',feel:'工作中高频',cat:'verb'},
+{w:'menyelesaikan',cn:'解决 / 完成',root:'selesai',scene:'Saya akan menyelesaikannya hari ini.',feel:'工作结果',cat:'verb'},
+{w:'menyiapkan',cn:'准备',root:'siap',scene:'Saya sedang menyiapkan laporan.',feel:'日常 / 工作',cat:'verb'},
+{w:'mengarahkan',cn:'指导 / 引导',root:'arah',scene:'Bos mengarahkan tim dengan jelas.',feel:'管理行为',cat:'verb'},
+{w:'menyimpan',cn:'保存 / 存放',root:'simpan',scene:'Tolong simpan file ini.',feel:'日常 / 工作',cat:'verb'},
+{w:'menghabiskan',cn:'花费 / 消耗',root:'habis',scene:'Saya menghabiskan banyak waktu di jalan.',feel:'时间和金钱都常用',cat:'verb'},
+{w:'mencapai',cn:'达到 / 实现',root:'capai',scene:'Kami berhasil mencapai target.',feel:'目标结果',cat:'verb'},
+{w:'menemukan',cn:'发现 / 找到',root:'temu',scene:'Saya belum menemukan solusinya.',feel:'认知结果',cat:'verb'},
+{w:'mendapatkan',cn:'获得 / 得到',root:'dapat',scene:'Dia mendapatkan kesempatan baru.',feel:'结果状态',cat:'verb'},
+{w:'penting',cn:'重要的',root:'固定词',scene:'Ini sangat penting.',feel:'高频核心词',cat:'core'},
+{w:'bangga',cn:'自豪的',root:'固定词',scene:'Saya bangga sama kamu.',feel:'日常常见',cat:'core'},
+{w:'penasaran',cn:'好奇的 / 想知道',root:'固定词',scene:'Saya penasaran sama hasilnya.',feel:'日常口语高频',cat:'core'},
+{w:'gugup',cn:'紧张的',root:'固定词',scene:'Saya agak gugup sebelum meeting.',feel:'情绪高频',cat:'core'},
+{w:'pasti',cn:'一定 / 肯定',root:'固定词',scene:'Pasti bisa.',feel:'超高频',cat:'core'},
+{w:'cemas',cn:'担忧 / 焦虑',root:'固定词',scene:'Jangan terlalu cemas.',feel:'情绪表达',cat:'core'},
+{w:'percaya',cn:'相信',root:'caya',scene:'Saya percaya sama kamu.',feel:'常用表达',cat:'core'},
+{w:'bebas',cn:'自由 / 随意',root:'固定词',scene:'Bebas, kamu pilih aja.',feel:'口语里也有“随你”感觉',cat:'core'}
 ];
-const distract={
-'因为嘛 / 因为':['所以','虽然','然后'],'明明 / 可是其实':['大概','终于','一起'],'甚至':['只是','尤其','偶尔'],'顺便一起':['马上','故意','单独'],'碰巧 / 正好':['必须','刚才','一直'],'原来 / 结果发现':['可能','通常','立刻'],'威胁 / 构成威胁':['保护','等待','解释'],'幸运的':['危险的','生气的','疲劳的'],'填写 / 填充 / 装入':['删除','移动','寻找'],'需要':['拒绝','忘记','相信'],'修理 / 改善':['破坏','关闭','复制'],'确保 / 确认':['猜测','取消','隐藏'],'决定':['犹豫','忘记','跟随'],'建立 / 成立':['拆除','借用','关闭'],'分开 / 分离':['合并','重复','接受']};
-const sentences=[
-['Nanti malam jadi makan bareng nggak?','今晚还一起吃饭吗？','jadi = 还按原计划吗','bareng = 一起'],
-['Gimana kalau kita makan di luar aja?','要不我们就在外面吃吧？','gimana kalau = 要不……怎么样','aja = 就、吧'],
-['Saya mau memastikan jadwal meeting besok.','我想确认一下明天会议的时间。','memastikan = 确认','jadwal = 日程'],
-['Kebetulan saya lagi di dekat sini.','正好我现在就在这附近。','kebetulan = 正好','lagi = 正在'],
-['Padahal tadi dia bilang mau datang.','明明刚才他说要来的。','padahal = 明明','tadi = 刚才'],
-['Ternyata harganya lebih mahal dari yang saya kira.','结果价格比我想的更贵。','ternyata = 原来/结果发现','kira = 以为/估计']
+const readings=[
+{title:'Meeting Mendadak di Kantor',level:'A2–B1 · 办公室',text:'Pagi ini saya datang ke kantor agak terlambat. Ternyata ada meeting mendadak dengan bos. Saya harus memastikan semua dokumen sudah siap. Setelah itu, kami membahas masalah penjualan dan mencoba menemukan solusi yang paling masuk akal. Meeting selesai satu jam kemudian. Lumayan capek, tapi akhirnya semua jelas.',cn:'今天早上我到办公室稍微晚了一点。结果老板临时开会。我必须确认所有文件都准备好了。之后，我们讨论销售问题，并尝试找到最合理的解决方案。会议一小时后结束。挺累的，不过最后所有事情都清楚了。',v:[['ternyata','原来 / 结果发现'],['memastikan','确认 / 确保'],['menemukan','发现 / 找到'],['lumayan','还算 / 挺']],q:'为什么作者需要检查文件？',opts:['因为要去旅行','因为突然有会议','因为要回家','因为电脑坏了'],ans:1},
+{title:'Macet di Jakarta',level:'A2 · 日常生活',text:'Sore ini jalanan macetnya parah. Saya sebenarnya mau cepat pulang, tapi mobil hampir tidak bergerak. Padahal rumah saya tidak terlalu jauh. Teman saya bilang, “Santai aja, jangan buru-buru.” Akhirnya saya beli kopi sekalian sambil menunggu jalan lebih lancar.',cn:'今天傍晚路上堵得很严重。我本来想快点回家，但车几乎不动。明明我家也不算太远。朋友跟我说：“放松点，别着急。”最后我顺便买了杯咖啡，一边等路况变好。',v:[['parah','严重 / 离谱'],['padahal','明明'],['buru-buru','匆忙 / 着急'],['sekalian','顺便一起']],q:'作者最后做了什么？',opts:['继续跑步','顺便买了咖啡','坐飞机回家','取消工作'],ans:1},
+{title:'Harga yang Tidak Sesuai Dugaan',level:'A2 · 购物',text:'Saya masuk ke sebuah toko karena penasaran dengan produk baru. Saya kira harganya murah, ternyata lebih mahal dari yang saya bayangkan. Penjual lalu menawarkan diskon kecil. Lumayan, tapi saya belum memutuskan untuk membeli. Saya ingin membandingkan harga dulu.',cn:'我因为对新产品好奇走进了一家商店。我原以为价格便宜，结果比想象中贵。店员随后给了一个小折扣。还可以，不过我还没决定买。我想先比较一下价格。',v:[['penasaran','好奇'],['ternyata','结果发现'],['menawarkan','提供 / 报价'],['lumayan','还不错']],q:'作者为什么没有马上购买？',opts:['没有带钱','想先比较价格','店关门了','不喜欢颜色'],ans:1}
 ];
 const affixes=[
-['meN- 主动动词','词根前加 meN-，常表示主动做某动作。具体会变成 meng-/mem-/men-/meny-。','meng + ambil → mengambil（拿）；meng + kirim → mengirim（发送，k 消失）；mem + baca → membaca（读）'],
-['ber- 状态 / 活动','常表示处于某状态、从事某活动、拥有某物。','untung → beruntung（幸运）；latih → berlatih（练习）'],
-['-kan 使…… / 对象化','常让动作带有“使、把……怎么样、为别人做”的感觉。','pasti → memastikan（确认/确保）；putus → memutuskan（决定）'],
-['-i 作用于地点/对象','经常强调动作反复作用于某对象或地点。','isi → mengisi（填入）；datang → mendatangi（前往拜访）']
+{t:'meN-：主动动作',d:'你的表格中把 meN- 分成 meng- / mem- / men- / meny- / menge- 等变体。',e:'meng + kirim → mengirim（k 消失）；men + tulis → menulis（t 消失）；meny + sapu → menyapu（s 消失）'},
+{t:'peN-：施事者 / 工具',d:'常表示“做这个动作的人”或工具。',e:'peng + kirim → pengirim；pen + tulis → penulis；pem + baca → pembaca'},
+{t:'ber-：状态 / 进行动作',d:'常表示正在进行某种活动或处于某种状态。',e:'ber + main → bermain；ber + kerja → bekerja'},
+{t:'di-：被动动作',d:'构成常见被动语态。',e:'di + buka → dibuka（被打开）'},
+{t:'ter-：偶然 / 状态 / 最高级',d:'可表示无意发生、结果状态或最高级。',e:'terbuka（打开着 / 被打开）；terbaik（最好的）'},
+{t:'-kan：使役 / 让动作指向对象',d:'常带有“使……、为……做”的作用。',e:'baca + kan → bacakan（为……读）'},
+{t:'-i：作用于对象 / 地点',d:'常强调动作落到某个对象或地点上。',e:'datang → mendatangi（前往 / 拜访某处或某人）'},
+{t:'-an：名词化',d:'常把动作或词根变成结果、事物或集合名词。',e:'makan → makanan（食物）'}
 ];
-let mode='all',idx=0,answered=false,sessionDone=0,sessionCorrect=0,sidx=0;
-const $=id=>document.getElementById(id); const mem=()=>JSON.parse(localStorage.getItem('indo_mem')||'{}'); const save=o=>localStorage.setItem('indo_mem',JSON.stringify(o));
-$('today').textContent=new Date().toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric'});
+let cardIndex=0,quizIndex=0,readingIndex=0,cat='all',vmode='flash',answered=false,done=0,correct=0;
+const $=id=>document.getElementById(id);const memory=()=>JSON.parse(localStorage.getItem('indo_memory_v2')||'{}');const save=m=>localStorage.setItem('indo_memory_v2',JSON.stringify(m));
+$('date').textContent=new Date().toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric'});
+function go(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));$(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});if(id==='review')renderReview();if(id==='progress')renderProgress()}window.go=go;
+function filtered(){return cat==='all'?bank:bank.filter(x=>x.cat===cat)}
+function current(){let a=filtered();return a[cardIndex%a.length]}
+function speak(text){if(!('speechSynthesis'in window)){alert('当前浏览器不支持语音朗读');return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(text);u.lang='id-ID';let vs=speechSynthesis.getVoices();let v=vs.find(x=>x.lang&&x.lang.toLowerCase().startsWith('id'));if(v)u.voice=v;u.rate=.88;speechSynthesis.speak(u)}
+function speakCurrentWord(){speak(current().w)}window.speakCurrentWord=speakCurrentWord;function speakQuizWord(){speak(filtered()[quizIndex%filtered().length].w)}window.speakQuizWord=speakQuizWord;
+function renderCard(){let a=filtered();if(!a.length)return;cardIndex%=a.length;let x=a[cardIndex];$('flashCard').classList.remove('revealed');$('fWord').textContent=x.w;$('fRoot').textContent='词根 / 类型：'+x.root;$('fCn').textContent=x.cn;$('fScene').textContent='例句：'+x.scene;$('fFeel').textContent=x.feel;$('fCat').textContent=x.cat==='oral'?'口语':x.cat==='verb'?'动词':'高频';$('vCount').textContent=a.length+' 个';$('markTip').textContent=''}
+function revealCard(){$('flashCard').classList.add('revealed')}window.revealCard=revealCard;function nextCard(){cardIndex++;renderCard()}window.nextCard=nextCard;
+function markCurrent(v){let m=memory();m[current().w]=v;save(m);$('markTip').textContent='已标记：'+({know:'会了',fuzzy:'模糊',dont:'不会'}[v]);updateStats();renderReview()}window.markCurrent=markCurrent;
 function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
-function current(){return bank[idx%bank.length]}
-function makeQ(x){
- let q,opts,ans,word=x.w,root='词根/类型：'+x.root;
- if(mode==='cn2id'){q='“'+x.cn+'” 对应哪个印尼语？';word=x.cn;opts=shuffle([x.w,...shuffle(bank.filter(y=>y.w!==x.w)).slice(0,3).map(y=>y.w)]);ans=opts.indexOf(x.w)}
- else if(mode==='scene'){q='下面哪个词最适合这个句子：'+x.scene.replace(new RegExp(x.w,'i'),'_____');word='场景填空';opts=shuffle([x.w,...shuffle(bank.filter(y=>y.w!==x.w)).slice(0,3).map(y=>y.w)]);ans=opts.indexOf(x.w)}
- else{q='“'+x.w+'” 最接近哪个意思？';let ds=distract[x.cn]||shuffle(bank.filter(y=>y.w!==x.w)).slice(0,3).map(y=>y.cn);opts=shuffle([x.cn,...ds.slice(0,3)]);ans=opts.indexOf(x.cn)}
- return {q,opts,ans,word,root};
-}
-function renderQuiz(){answered=false;let x=current(),z=makeQ(x);$('qnum').textContent='题库 '+(idx%bank.length+1)+' / '+bank.length;$('qtag').textContent=mode==='all'?'综合':mode==='cn2id'?'中文→印尼语':mode==='scene'?'场景句':'印尼语→中文';$('qword').textContent=z.word;$('qroot').textContent=z.root;$('qtext').textContent=z.q;$('feedback').className='feedback';$('explain').className='explain';$('explain').innerHTML='<b>'+x.w+'</b> = '+x.cn+'<br>'+x.feel+'<br><span class="muted">例句：'+x.scene+'</span>';$('markTip').textContent='';$('opts').innerHTML='';z.opts.forEach((o,i)=>{let b=document.createElement('button');b.className='opt';b.textContent=String.fromCharCode(65+i)+'. '+o;b.onclick=()=>choose(i,z.ans,b);$('opts').appendChild(b)});}
-function choose(i,ans,b){if(answered)return;answered=true;sessionDone++;[...$('opts').children].forEach((el,j)=>{if(j===ans)el.classList.add('good')});if(i===ans){sessionCorrect++;$('feedback').className='feedback show good';$('feedback').textContent='回答正确 ✓'}else{b.classList.add('bad');$('feedback').className='feedback show bad';$('feedback').textContent='回答错误，正确答案已经标绿。';let m=mem();if(!m[current().w]){m[current().w]='fuzzy';save(m)}}updateStats()}
-$('nextBtn').onclick=()=>{idx=(idx+1)%bank.length;renderQuiz()};$('exBtn').onclick=()=>$('explain').classList.toggle('showblock');
-function mark(v){let m=mem();m[current().w]=v;save(m);$('markTip').textContent='已标记：'+({know:'会了',fuzzy:'模糊',dont:'不会'}[v]);updateStats();renderReview();renderProgress()} window.mark=mark;
-function updateStats(){let m=mem(),vals=Object.values(m);$('sDone').textContent=sessionDone;$('sRate').textContent=sessionDone?Math.round(sessionCorrect/sessionDone*100)+'%':'0%';$('sKnow').textContent=vals.filter(x=>x==='know').length;$('sReview').textContent=vals.filter(x=>x==='fuzzy'||x==='dont').length}
-function renderReview(){let m=mem(),arr=bank.filter(x=>m[x.w]==='fuzzy'||m[x.w]==='dont');$('reviewCount').textContent=arr.length+' 个';if(!arr.length){$('reviewBox').innerHTML='<div class="empty">还没有待复习词。做题后把词标记为“模糊”或“不会”，这里会自动出现。</div>';return}$('reviewBox').innerHTML='<div class="list">'+arr.map(x=>'<div class="item"><b>'+x.w+'</b>　'+x.cn+'<div class="muted">词根：'+x.root+' ｜ '+x.scene+'</div></div>').join('')+'</div>'}
-function renderSentence(){let s=sentences[sidx%sentences.length];$('sentNum').textContent=(sidx%sentences.length+1)+' / '+sentences.length;$('sentText').textContent=s[0];$('sentCn').textContent=s[1];$('sentCn').className='cn';$('sentChips').innerHTML='<span class="chip">'+s[2]+'</span><span class="chip">'+s[3]+'</span>'}
-$('sentCnBtn').onclick=()=>$('sentCn').classList.toggle('showblock');$('sentNext').onclick=()=>{sidx++;renderSentence()};
-function renderAffix(){$('affixList').innerHTML=affixes.map(a=>'<div class="item"><b>'+a[0]+'</b><div style="margin:7px 0">'+a[1]+'</div><div class="muted">'+a[2]+'</div></div>').join('')}
-function renderProgress(){let m=mem(),arr=bank.filter(x=>m[x.w]);$('progressList').innerHTML=arr.length?arr.map(x=>'<div class="item"><b>'+x.w+'</b>　'+x.cn+'<div class="muted">掌握度：'+({know:'会了',fuzzy:'模糊',dont:'不会'}[m[x.w]])+'</div></div>').join(''):'<div class="empty">还没有学习记录。</div>'}
-function clearProgress(){if(confirm('确定清空本机上的掌握度记录吗？')){localStorage.removeItem('indo_mem');updateStats();renderReview();renderProgress()}}window.clearProgress=clearProgress;
-document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.page').forEach(x=>x.classList.add('hidden'));$(b.dataset.page).classList.remove('hidden');if(b.dataset.page==='review')renderReview();if(b.dataset.page==='progress')renderProgress()});
-document.querySelectorAll('.filter button[data-mode]').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter button[data-mode]').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.mode;renderQuiz()});
-renderQuiz();renderSentence();renderAffix();renderReview();renderProgress();updateStats();
+function renderQuiz(){let a=filtered();if(!a.length)return;quizIndex%=a.length;answered=false;let x=a[quizIndex],wrong=shuffle(bank.filter(y=>y.w!==x.w)).slice(0,3).map(y=>y.cn),opts=shuffle([x.cn,...wrong]);$('qWord').textContent=x.w;$('qText').textContent='“'+x.w+'” 最接近哪个意思？';$('qOpts').innerHTML='';$('qFeedback').className='feedback';$('qExplain').className='explain';$('qExplain').innerHTML='<b>'+x.w+'</b> = '+x.cn+'<br>词根 / 类型：'+x.root+'<br>例句：'+x.scene+'<br>'+x.feel;opts.forEach((o,i)=>{let b=document.createElement('button');b.className='opt';b.textContent=String.fromCharCode(65+i)+'. '+o;b.onclick=()=>answerQuiz(o===x.cn,b,opts.indexOf(x.cn));$('qOpts').appendChild(b)})}
+function answerQuiz(ok,b,ans){if(answered)return;answered=true;done++;[...$('qOpts').children].forEach((el,i)=>{if(i===ans)el.classList.add('good')});if(ok){correct++;$('qFeedback').className='feedback show good';$('qFeedback').textContent='回答正确 ✓'}else{b.classList.add('bad');$('qFeedback').className='feedback show bad';$('qFeedback').textContent='回答错误，正确答案已标绿。';let x=filtered()[quizIndex%filtered().length],m=memory();if(!m[x.w])m[x.w]='fuzzy';save(m)}updateStats()}
+function nextQuiz(){quizIndex++;renderQuiz()}window.nextQuiz=nextQuiz;function toggleExplain(){$('qExplain').classList.toggle('show')}window.toggleExplain=toggleExplain;
+function startQuiz(){go('vocab');vmode='quiz';document.querySelectorAll('[data-vmode]').forEach(b=>b.classList.toggle('active',b.dataset.vmode==='quiz'));$('flashPanel').style.display='none';$('quizPanel').style.display='block';renderQuiz()}window.startQuiz=startQuiz;function startDailyVocab(){go('vocab');vmode='flash';document.querySelectorAll('[data-vmode]').forEach(b=>b.classList.toggle('active',b.dataset.vmode==='flash'));$('flashPanel').style.display='block';$('quizPanel').style.display='none';renderCard()}window.startDailyVocab=startDailyVocab;
+function renderReading(){let r=readings[readingIndex%readings.length];$('rTitle').textContent=r.title;$('rLevel').textContent=r.level;$('rText').textContent=r.text;$('rCn').textContent=r.cn;$('rCn').className='translation';$('rVocab').innerHTML=r.v.map(v=>'<div class="vocab"><b>'+v[0]+' <button class="sound" style="padding:4px 7px" onclick="speak(\''+v[0]+'\')">🔊</button></b><span class="muted">'+v[1]+'</span></div>').join('');$('rQ').textContent=r.q;$('rFeedback').className='feedback';$('rOpts').innerHTML='';r.opts.forEach((o,i)=>{let b=document.createElement('button');b.className='opt';b.textContent=String.fromCharCode(65+i)+'. '+o;b.onclick=()=>{[...$('rOpts').children].forEach((el,j)=>{if(j===r.ans)el.classList.add('good')});$('rFeedback').className='feedback show '+(i===r.ans?'good':'bad');$('rFeedback').textContent=i===r.ans?'回答正确 ✓':'回答错误，正确答案已标绿。'};$('rOpts').appendChild(b)})}
+function speakReading(){speak(readings[readingIndex%readings.length].text)}window.speakReading=speakReading;function toggleTranslation(){$('rCn').classList.toggle('show')}window.toggleTranslation=toggleTranslation;function nextReading(){readingIndex++;renderReading()}window.nextReading=nextReading;window.speak=speak;
+function renderAffix(){$('affixList').innerHTML=affixes.map(a=>'<div class="affix"><h3>'+a.t+'</h3><p>'+a.d+'</p><p><b>例：</b>'+a.e+'</p></div>').join('')}
+function renderReview(){let m=memory(),arr=bank.filter(x=>m[x.w]==='fuzzy'||m[x.w]==='dont');$('reviewCount').textContent=arr.length+' 个';$('homeReview').textContent=arr.length+' 个待复习';$('reviewList').innerHTML=arr.length?arr.map(x=>'<div class="review"><b>'+x.w+' <button class="sound" style="padding:4px 7px" onclick="speak(\''+x.w+'\')">🔊</button></b><p>'+x.cn+' ｜ '+x.scene+'</p></div>').join(''):'<div class="empty">目前没有待复习词。学习时把词标记为“模糊”或“不会”，这里会自动出现。</div>'}
+function renderProgress(){let m=memory(),arr=bank.filter(x=>m[x.w]);$('progressList').innerHTML=arr.length?arr.map(x=>'<div class="prog"><b>'+x.w+'</b><p>'+x.cn+' ｜ 掌握度：'+({know:'会了',fuzzy:'模糊',dont:'不会'}[m[x.w]])+'</p></div>').join(''):'<div class="empty">还没有学习记录。</div>'}
+function updateStats(){let m=memory(),vals=Object.values(m);$('sDone').textContent=done;$('sRate').textContent=done?Math.round(correct/done*100)+'%':'0%';$('sKnow').textContent=vals.filter(v=>v==='know').length;$('sReview').textContent=vals.filter(v=>v==='fuzzy'||v==='dont').length;renderReview()}
+function clearProgress(){if(confirm('确定清空本机学习记录吗？')){localStorage.removeItem('indo_memory_v2');updateStats();renderProgress()}}window.clearProgress=clearProgress;
+document.querySelectorAll('[data-vmode]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-vmode]').forEach(x=>x.classList.remove('active'));b.classList.add('active');vmode=b.dataset.vmode;$('flashPanel').style.display=vmode==='flash'?'block':'none';$('quizPanel').style.display=vmode==='quiz'?'block':'none';if(vmode==='quiz')renderQuiz()});
+document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-cat]').forEach(x=>x.classList.remove('active'));b.classList.add('active');cat=b.dataset.cat;cardIndex=0;quizIndex=0;renderCard();renderQuiz()});
+renderCard();renderQuiz();renderReading();renderAffix();renderReview();renderProgress();updateStats();
 </script></body></html>
