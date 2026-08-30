@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-27",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "title": "Day 5 · 历史晨课恢复",
+  "historical_reconstruction": true,
+  "recovery_note": "根据可确认的历史晨课记录恢复。仅恢复能够确认的词汇，不补造原先未能找回的句子、阅读、小测或输出题。",
+  "vocab": [
+    {"word":"kayak","display":"kayak","audio_text":"kayak","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"soalnya","display":"soalnya","audio_text":"soalnya","cn":"","en":"","root":"soal","formation":"soal + -nya","example":"","example_cn":"","synonym_note":""},
+    {"word":"makanya","display":"makanya","audio_text":"makanya","cn":"","en":"","root":"maka","formation":"maka + -nya","example":"","example_cn":"","synonym_note":""},
+    {"word":"sempat","display":"sempat","audio_text":"sempat","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"keburu","display":"keburu","audio_text":"keburu","cn":"","en":"","root":"buru","formation":"ke- + buru（口语）","example":"","example_cn":"","synonym_note":""},
+    {"word":"mending","display":"mending","audio_text":"mending","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"ribet","display":"ribet","audio_text":"ribet","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"nyebelin","display":"nyebelin","audio_text":"nyebelin","cn":"","en":"","root":"sebel","formation":"口语 ny- + sebel + -in","example":"","example_cn":"","synonym_note":""},
+    {"word":"terserah","display":"terserah","audio_text":"terserah","cn":"","en":"","root":"serah","formation":"ter- + serah","example":"","example_cn":"","synonym_note":""},
+    {"word":"nggak apa-apa","display":"nggak apa-apa","audio_text":"nggak apa-apa","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""}
+  ]
+}
