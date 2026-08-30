@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-29",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "title": "Day 7 · 历史晨课恢复",
+  "historical_reconstruction": true,
+  "recovery_note": "根据可确认的历史晨课记录恢复。仅恢复能够确认的词汇，不补造原先未能找回的句子、阅读、小测或输出题。",
+  "vocab": [
+    {"word":"kabarin","display":"kabarin","audio_text":"kabarin","cn":"","en":"","root":"kabar","formation":"口语 kabar + -in","example":"","example_cn":"","synonym_note":""},
+    {"word":"ketemu","display":"ketemu","audio_text":"ketemu","cn":"","en":"","root":"temu","formation":"口语 ke- + temu","example":"","example_cn":"","synonym_note":""},
+    {"word":"mampir","display":"mampir","audio_text":"mampir","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"buru-buru","display":"buru-buru","audio_text":"buru-buru","cn":"","en":"","root":"buru","formation":"重叠形式 buru-buru","example":"","example_cn":"","synonym_note":""},
+    {"word":"sengaja","display":"sengaja","audio_text":"sengaja","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"sekalian","display":"sekalian","audio_text":"sekalian","cn":"","en":"","root":"sekali","formation":"sekali + -an","example":"","example_cn":"","synonym_note":""},
+    {"word":"kebetulan","display":"kebetulan","audio_text":"kebetulan","cn":"","en":"","root":"betul","formation":"ke- + betul + -an","example":"","example_cn":"","synonym_note":""},
+    {"word":"nyari","display":"nyari","audio_text":"nyari","cn":"","en":"","root":"cari","formation":"口语 ny- + cari","example":"","example_cn":"","synonym_note":""},
+    {"word":"cocok","display":"cocok","audio_text":"cocok","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"bawain","display":"bawain","audio_text":"bawain","cn":"","en":"","root":"bawa","formation":"口语 bawa + -in","example":"","example_cn":"","synonym_note":""}
+  ]
+}
