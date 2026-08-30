@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-28",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "title": "Day 6 · 历史晨课恢复",
+  "historical_reconstruction": true,
+  "recovery_note": "根据可确认的历史晨课记录恢复。仅恢复能够确认的词汇，不补造原先未能找回的句子、阅读、小测或输出题。",
+  "vocab": [
+    {"word":"bentar","display":"bentar","audio_text":"bentar","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"lumayan","display":"lumayan","audio_text":"lumayan","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"ternyata","display":"ternyata","audio_text":"ternyata","cn":"","en":"","root":"nyata","formation":"ter- + nyata","example":"","example_cn":"","synonym_note":""},
+    {"word":"malah","display":"malah","audio_text":"malah","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"padahal","display":"padahal","audio_text":"padahal","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"cuma","display":"cuma","audio_text":"cuma","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"langsung","display":"langsung","audio_text":"langsung","cn":"","en":"","root":"","formation":"","example":"","example_cn":"","synonym_note":""},
+    {"word":"ngobrol","display":"ngobrol","audio_text":"ngobrol","cn":"","en":"","root":"obrol","formation":"口语 ng- + obrol","example":"","example_cn":"","synonym_note":""},
+    {"word":"ngerepotin","display":"ngerepotin","audio_text":"ngerepotin","cn":"","en":"","root":"repot","formation":"口语 nge- + repot + -in","example":"","example_cn":"","synonym_note":""},
+    {"word":"ketinggalan","display":"ketinggalan","audio_text":"ketinggalan","cn":"","en":"","root":"tinggal","formation":"ke- + tinggal + -an","example":"","example_cn":"","synonym_note":""}
+  ]
+}
