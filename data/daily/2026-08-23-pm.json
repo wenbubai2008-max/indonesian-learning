@@ -1,0 +1,82 @@
+{
+  "date":"2026-08-23",
+  "session":"pm",
+  "time":"19:00",
+  "level":"A2 → B1",
+  "day":2,
+  "title":"2026年8月23日｜Day 2｜19:00 晚间学习",
+  "source_status":"original_chat_text",
+  "history_complete":true,
+  "source_note":"本文件只迁移本聊天中实际出现的 Day 2 晚间课程；当天更早出现的 Day 1 课程发生在用户把固定时间改为19:00之前，因此未并入本19:00历史文件。",
+  "vocab":[
+    {"word":"terjadi","audio_text":"terjadi","cn":"发生","root":"jadi","formation":"ter- + jadi","example":"Apa yang terjadi?","example_cn":"发生了什么？"},
+    {"word":"berubah","audio_text":"berubah","cn":"改变、发生变化","root":"ubah","formation":"ber- + ubah","example":"Situasinya berubah.","example_cn":"情况变了。"},
+    {"word":"memutuskan","audio_text":"memutuskan","cn":"决定","root":"putus","formation":"meN- + putus + -kan","example":"Saya memutuskan untuk tetap tinggal di Indonesia.","example_cn":"我决定继续留在印尼。"},
+    {"word":"menyadari","audio_text":"menyadari","cn":"意识到","root":"sadar","formation":"meN- + sadar + -i","example":"Saya menyadari kesalahan saya.","example_cn":"我意识到了自己的错误。"},
+    {"word":"mengalami","audio_text":"mengalami","cn":"经历、遭遇","root":"alami","formation":"原课程按整体词教授","example":"Saya pernah mengalami hal itu.","example_cn":"我经历过那件事。"},
+    {"word":"mencoba","audio_text":"mencoba","cn":"尝试","root":"coba","formation":"meN- + coba","example":"Saya mau mencoba.","example_cn":"我想试一下。"},
+    {"word":"menolak","audio_text":"menolak","cn":"拒绝","root":"tolak","formation":"meN- + tolak","example":"Ada juga yang menolak.","example_cn":"也有人拒绝。"},
+    {"word":"menerima","audio_text":"menerima","cn":"接受、收到","root":"terima","formation":"meN- + terima","example":"Ada yang menerima saran saya.","example_cn":"有人接受了我的建议。"},
+    {"word":"menghubungi","audio_text":"menghubungi","cn":"联系某人","root":"hubung","formation":"meN- + hubung + -i","example":"Saya mencoba menghubungi beberapa orang.","example_cn":"我尝试联系了一些人。"},
+    {"word":"menunggu","audio_text":"menunggu","cn":"等待","root":"tunggu","formation":"meN- + tunggu","example":"Saya masih menunggu.","example_cn":"我还在等。"},
+    {"word":"menurut","audio_text":"menurut","cn":"根据；依……看","example":"Menurut saya, ini cukup penting.","example_cn":"我认为这个挺重要。"},
+    {"word":"walaupun","audio_text":"walaupun","cn":"虽然、即使","example":"Walaupun sulit, saya tetap mau mencoba.","example_cn":"虽然困难，我还是想试试。"}
+  ],
+  "affix_training":{
+    "title":"sadar → menyadari → disadari",
+    "items":[
+      {"form":"sadar","cn":"意识到、清醒的","example":"Saya sadar.","example_cn":"我意识到了。"},
+      {"form":"menyadari + 对象","cn":"意识到某件事情","root":"sadar","formation":"meN- + sadar + -i","example":"Saya menyadari kesalahan saya.","example_cn":"我意识到了自己的错误。"},
+      {"form":"disadari","cn":"被意识到","root":"sadar","formation":"di- + sadar + -i","example":"Masalah ini baru disadari kemarin.","example_cn":"这个问题昨天才被意识到。"},
+      {"form":"menghubungi seseorang","cn":"联系某人","root":"hubung","formation":"meN- + hubung + -i"},
+      {"form":"mendatangi tempat/seseorang","cn":"前往某地 / 去找某人","root":"datang","formation":"meN- + datang + -i"}
+    ],
+    "note":"原课程强调先建立“动词 + 具体对象”的感觉，不要求死背 -i 的全部规则。"
+  },
+  "rewrite":[
+    {"task":"我昨天遇到了一个问题。关键词：mengalami","reference_answer":"Kemarin saya mengalami masalah.","reference_cn":"我昨天遇到了一个问题。"},
+    {"task":"我决定明天联系他。关键词：memutuskan + menghubungi","reference_answer":"Saya memutuskan untuk menghubungi dia besok.","reference_cn":"我决定明天联系他。"},
+    {"task":"我现在才意识到这个问题。关键词：baru + menyadari","reference_answer":"Sekarang saya baru menyadari masalah ini.","reference_cn":"我现在才意识到这个问题。"},
+    {"task":"虽然很困难，但是我想试一下。","reference_answer":"Walaupun sulit, saya tetap mau mencoba.","reference_cn":"虽然很困难，但是我还是想试一下。"},
+    {"task":"把 Ada masalah. / Saya tidak mau menyerah. / Saya mau mencari solusi. 合成一句。","reference_answer":"Walaupun ada masalah, saya tidak mau menyerah dan akan mencoba mencari solusi.","reference_cn":"虽然有问题，但我不想放弃，我会尝试寻找解决办法。"}
+  ],
+  "reading":{
+    "title":"工作中遇到问题",
+    "text":"Beberapa hari yang lalu, saya mengalami masalah di tempat kerja. Awalnya saya kira masalah itu mudah diselesaikan, tetapi ternyata lebih sulit daripada yang saya bayangkan. Saya mencoba menghubungi beberapa orang untuk mencari solusi. Ada yang menerima saran saya, tetapi ada juga yang menolak. Akhirnya saya menyadari bahwa saya harus lebih sabar. Walaupun masalahnya belum selesai, saya memutuskan untuk terus mencoba.",
+    "cn":"几天前，我在工作中遇到了一个问题。开始我以为这个问题很容易解决，但结果发现比我想象的更困难。我尝试联系了一些人寻找解决办法。有些人接受了我的建议，但也有人拒绝。最后我意识到自己应该更有耐心。虽然问题还没有解决，但我决定继续尝试。"
+  },
+  "reading_questions":[
+    {"question":"Apa yang dia alami di tempat kerja?","cn":"他在工作中遇到了什么？"},
+    {"question":"Apa yang dia lakukan untuk mencari solusi?","cn":"他为了寻找解决办法做了什么？"},
+    {"question":"Apa yang akhirnya dia sadari?","cn":"最后他意识到了什么？"}
+  ],
+  "dialogue":{
+    "title":"朋友问你最近工作怎么样",
+    "lines":[
+      {"speaker":"A","id":"Gimana kerjaan kamu akhir-akhir ini?","cn":"你最近工作怎么样？"},
+      {"speaker":"B","id":"Lumayan, tapi akhir-akhir ini ada beberapa masalah.","cn":"还行，不过最近有几个问题。"},
+      {"speaker":"A","id":"Masalah apa?","cn":"什么问题？"},
+      {"speaker":"B","id":"Agak susah dijelaskan. Saya masih mencoba mencari solusi.","cn":"有点难解释。我还在尝试寻找解决办法。"},
+      {"speaker":"A","id":"Udah coba hubungi orang lain?","cn":"已经试着联系其他人了吗？"},
+      {"speaker":"B","id":"Udah. Ada yang bisa bantu, ada juga yang nggak bisa.","cn":"联系了。有些人能帮忙，也有些人帮不了。"},
+      {"speaker":"A","id":"Terus gimana?","cn":"然后怎么办？"},
+      {"speaker":"B","id":"Ya, pelan-pelan aja. Walaupun agak sulit, saya tetap mau mencoba.","cn":"慢慢来吧。虽然有点困难，我还是想继续试试。"}
+    ],
+    "notes":["sudah → udah（口语）","Ada yang bisa..., ada juga yang nggak bisa... = 有些……，也有些不……"]
+  },
+  "review":[
+    "terjadi = 发生",
+    "mengalami = 经历、遭遇",
+    "menyadari = 意识到",
+    "memutuskan = 决定",
+    "menolak = 拒绝",
+    "menghubungi = 联系"
+  ],
+  "output":{
+    "task":"不看答案连续说：‘最近我遇到了一个问题。虽然有点困难，但是我不想放弃。我决定继续尝试寻找解决办法。’",
+    "reference_answer":"Belakangan ini saya lagi ada masalah. Walaupun agak susah, saya nggak mau menyerah. Saya mau terus coba cari solusi.",
+    "reference_cn":"最近我遇到了一个问题。虽然有点困难，但是我不想放弃。我会继续尝试寻找解决办法。",
+    "standard_answer":"Akhir-akhir ini saya mengalami sebuah masalah. Walaupun agak sulit, saya tidak mau menyerah. Saya memutuskan untuk terus mencoba mencari solusi.",
+    "source_note":"本参考答案来自用户随后追问该句答案时的实际聊天回复；按最后确认版本纳入。"
+  }
+}
