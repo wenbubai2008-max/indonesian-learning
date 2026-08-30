@@ -20,7 +20,7 @@
   function pmDates(){return lessonRows().filter(x=>x.pm).map(x=>x.date).sort()}
   function latestDate(session){const a=session==='pm'?pmDates():amDates();return a.length?a[a.length-1]:TODAY}
   function hasExact(d,s){const r=lessonRows().find(x=>x.date===d);return !!(r&&r[s])}
-  function labelForDate(d){const r=lessonRows().find(x=>x.date===d);return r&&r.day?`${d} · Day ${r.day}`:d}
+  function labelForDate(d){const r=lessonRows().find(x=>x.date===d);if(!r)return d;const ds=r.additional_days?.length?`Day ${r.day} + Day ${r.additional_days.join(' + Day ')}`:(r.day?`Day ${r.day}`:'');return ds?`${d} · ${ds}`:d}
   function navFor(d,s){
     const dates=s==='pm'?pmDates():amDates();const i=dates.indexOf(d);const prev=i>0?dates[i-1]:null;const next=i>=0&&i<dates.length-1?dates[i+1]:null;
     return `<div class="historyNav"><button ${!prev?'disabled':''} onclick="${prev?`openDaily('${s}','${prev}')`:''}">← 上一天</button><div class="historyDate"><b>${esc(d)}</b><span>${s==='am'?'08:00 早间课程':'19:00 晚间课程'}</span></div><button ${!next?'disabled':''} onclick="${next?`openDaily('${s}','${next}')`:''}">下一天 →</button></div>`;
@@ -31,20 +31,24 @@
   }
   function section(no,title,body){return `<div class="lessonSection"><h3><span class="sectionNo">${String(no).padStart(2,'0')}</span>${title}</h3>${body}</div>`}
   function vocabHTML(list){
-    return `<div class="historyVocabGrid">${(list||[]).map(v=>`<div class="historyVocab"><div class="vw">${esc(v.display||v.word)} <button class="sound" onclick='speak(${JSON.stringify(v.audio_text||v.word)})'>🔊</button></div><div class="vc">${esc(v.cn||'')}</div><div class="ve">${esc(v.en||'')}</div>${(v.root||v.formation||v.synonym_note)?`<div class="vr">${v.root?`词根：${esc(v.root)}<br>`:''}${esc(v.formation||'')}${v.synonym_note?`<br>${esc(v.synonym_note)}`:''}</div>`:''}</div>`).join('')}</div>`;
+    return `<div class="historyVocabGrid">${(list||[]).map(v=>`<div class="historyVocab"><div class="vw">${esc(v.display||v.word)} <button class="sound" onclick='speak(${JSON.stringify(v.audio_text||v.word)})'>🔊</button></div><div class="vc">${esc(v.cn||'')}</div><div class="ve">${esc(v.en||'')}</div>${(v.root||v.formation||v.synonym_note)?`<div class="vr">${v.root?`词根：${esc(v.root)}<br>`:''}${esc(v.formation||'')}${v.synonym_note?`<br>${esc(v.synonym_note)}`:''}</div>`:''}${v.example?`<div class="vr">${esc(v.example)}${v.example_cn?`<br>${esc(v.example_cn)}`:''}</div>`:''}</div>`).join('')}</div>`;
   }
   function recoveredHTML(list){return (list||[]).map(x=>`<div class="recoverCard"><b>${esc(x.title||x.type||'历史内容')}</b><div>${esc(x.summary||'')}</div></div>`).join('')}
+  function quizAnswer(q){if(q.answer_unavailable)return '原记录未提供';if(q.answer_text)return esc(q.answer_text);if(Number.isInteger(q.answer_index))return String.fromCharCode(65+q.answer_index);return '原记录未提供'}
+  function outputAnswer(o){if(!o||o.reference_unavailable||!o.reference_answer)return '原记录未提供';let h=esc(o.reference_answer||'');if(o.reference_cn)h+=`<br><span class="muted">${esc(o.reference_cn)}</span>`;if(o.colloquial_answer)h+=`<br><br><b>口语版：</b>${esc(o.colloquial_answer)}`;if(o.standard_answer)h+=`<br><br><b>标准版：</b>${esc(o.standard_answer)}`;return h}
   function standardSections(x){
     let n=1,h='';
     if(x.vocab?.length)h+=section(n++,'今日词汇',vocabHTML(x.vocab));
     if(x.sentences?.length)h+=section(n++,'高频句子',x.sentences.map(v=>`<div class="item"><div>${esc(v.id||v.text||'')}</div><div class="muted">${esc(v.cn||'')}</div></div>`).join(''));
     if(x.morphology?.length)h+=section(n++,'词根 / 词形训练',x.morphology.map(v=>`<div class="item">${esc(v.task||v.word||String(v))}${v.answer?`<div class="answer">${esc(v.answer)}</div>`:''}</div>`).join(''));
-    if(x.reading)h+=section(n++,'阅读 · '+esc(x.reading.title||''),`<div class="reading">${esc(x.reading.text||'')}</div><div class="actions"><button class="secondary" onclick='speak(${JSON.stringify(x.reading.text||'')})'>🔊 朗读全文</button></div><div class="answer">${esc(x.reading.cn||'')}</div>`);
-    if(x.quiz?.length)h+=section(n++,'今日小测',x.quiz.map((q,i)=>`<div class="item"><b>${i+1}. ${esc(q.question||'')}</b><div>${(q.options||[]).map((o,j)=>`${String.fromCharCode(65+j)}. ${esc(o)}`).join('<br>')}</div><button class="answerToggle" onclick="this.parentElement.classList.toggle('showAnswer')">查看答案</button><div class="historyAnswer">答案：${String.fromCharCode(65+(q.answer_index||0))}<br>${esc(q.explain||'')}</div></div>`).join(''));
-    if(x.rewrite?.length)h+=section(n++,'造句 / 改写',x.rewrite.map(r=>`<div class="item">${esc(r.task||'')}<button class="answerToggle" onclick="this.parentElement.classList.toggle('showAnswer')">参考答案</button><div class="historyAnswer">${esc(r.reference_answer||'')}<br><span class="muted">${esc(r.reference_cn||'')}</span></div></div>`).join(''));
+    if(x.reading){const rb=x.reading.text?`<div class="reading">${esc(x.reading.text)}</div><div class="actions"><button class="secondary" onclick='speak(${JSON.stringify(x.reading.text)})'>🔊 朗读全文</button></div><div class="answer">${esc(x.reading.cn||'')}</div>`:`<div class="historyNotice">${esc(x.reading.source_note||'原记录未完整找回')}</div>`;h+=section(n++,'阅读 · '+esc(x.reading.title||''),rb)}
+    if(x.quiz?.length)h+=section(n++,'今日小测',x.quiz.map((q,i)=>`<div class="item"><b>${i+1}. ${esc(q.question||'原题未完整找回')}</b>${q.options?.length?`<div>${q.options.map((o,j)=>`${String.fromCharCode(65+j)}. ${esc(o)}`).join('<br>')}</div>`:''}<button class="answerToggle" onclick="this.parentElement.classList.toggle('showAnswer')">查看答案</button><div class="historyAnswer">答案：${quizAnswer(q)}${q.explain?`<br>${esc(q.explain)}`:''}${q.source_note?`<br><span class="muted">${esc(q.source_note)}</span>`:''}</div></div>`).join(''));
+    if(x.rewrite?.length)h+=section(n++,'造句 / 改写',x.rewrite.map(r=>`<div class="item">${esc(r.task||'')}<button class="answerToggle" onclick="this.parentElement.classList.toggle('showAnswer')">参考答案</button><div class="historyAnswer">${r.reference_answer?esc(r.reference_answer):'原记录未提供'}${r.reference_cn?`<br><span class="muted">${esc(r.reference_cn)}</span>`:''}</div></div>`).join(''));
     if(x.dialogue?.lines)h+=section(n++,'情景对话',x.dialogue.lines.map(l=>`<div class="item"><b>${esc(l.speaker||'')}：</b>${esc(l.id||'')}<div class="muted">${esc(l.cn||'')}</div></div>`).join(''));
-    if(x.output)h+=section(n++,'主动输出',`<div class="item">${esc(x.output.task||'')}<button class="answerToggle" onclick="this.parentElement.classList.toggle('showAnswer')">参考答案</button><div class="historyAnswer">${esc(x.output.reference_answer||'')}<br><span class="muted">${esc(x.output.reference_cn||'')}</span></div></div>`);
+    if(x.output)h+=section(n++,'主动输出',`<div class="item">${esc(x.output.task||'原输出题目未完整找回')}<button class="answerToggle" onclick="this.parentElement.classList.toggle('showAnswer')">参考答案</button><div class="historyAnswer">${outputAnswer(x.output)}</div></div>`);
     if(x.review?.length)h+=section(n++,'今日复习',x.review.map(r=>`<div class="item">${esc(typeof r==='string'?r:(r.text||r.word||JSON.stringify(r)))}</div>`).join(''));
+    if(x.post_lesson_notes?.length)h+=section(n++,'课后补充 / 后续纠正',x.post_lesson_notes.map(r=>`<div class="item">${esc(r)}</div>`).join(''));
+    if(x.focus?.items?.length)h+=section(n++,esc(x.focus.title||'重点'),x.focus.items.map(r=>`<div class="item">${esc(r)}</div>`).join(''));
     if(x.recovered_sections?.length)h+=section(n++,'历史恢复内容',recoveredHTML(x.recovered_sections));
     return h;
   }
@@ -64,8 +68,12 @@
     try{
       const x=await fetchJSON('data/daily/'+d+'-am.json');
       let h=navFor(d,'am')+datePicker(d,'am')+summaryChips(x);
-      if(x.historical_reconstruction)h+=`<div class="historyNotice"><b>历史课程恢复</b><br>${esc(x.recovery_note||'该课程依据可确认的历史记录恢复。')}</div>`;
+      if(x.historical_reconstruction)h+=`<div class="historyNotice"><b>历史记录不完整</b><br>${esc(x.recovery_note||'该课程仅保留可确认的历史内容。')}</div>`;
+      if(x.date_conflict)h+=`<div class="historyNotice"><b>日期冲突（按原聊天保留）</b><br>${esc(x.date_conflict_note||'')}</div>`;
       h+=standardSections(x);
+      for(const y of (x.additional_lessons||[])){
+        h+=`<div class="historyNotice"><b>同日追加历史课：${esc(y.title||'')}</b><br>${esc(y.source_note||'')}</div>`+summaryChips(y)+standardSections(y);
+      }
       h+=`<div class="contentSection" style="text-align:center"><button class="primary" onclick="completeSession('${d}','am')">${isDone(d,'am')?'✓ 已学完':'我学完了'}</button></div>`;
       $('dailyBody').innerHTML=h;
     }catch(e){$('dailyBody').innerHTML='<div class="error">当天课程文件读取失败<div class="diag">'+esc(e.message)+'</div></div>'}
