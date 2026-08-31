@@ -1,6 +1,7 @@
 (function(){
   let ARTICLE_LIST=[];
   let currentIndex=0;
+  const READING_START_DATE='2026-08-30';
 
   const titleTranslations={
     'Belajar Bahasa Indonesia':'学习印尼语',
@@ -11,12 +12,14 @@
   function sessionRank(s){return s==='am'?0:1}
   function sourceLabel(a){return `${a.date} · ${a.session==='am'?'08:00':'19:00'}`}
   function chineseTitle(r){
-    return r.title_cn||titleTranslations[r.title||'']||((r.title||'').trim()?'中文标题待补':'无标题');
+    const title=(r.title||'').trim();
+    if(!title)return '';
+    return (r.title_cn||titleTranslations[title]||'').trim();
   }
 
   async function collectArticles(){
     const out=[];
-    const rs=rows().slice().sort((a,b)=>a.date.localeCompare(b.date));
+    const rs=rows().filter(x=>x.date>=READING_START_DATE).slice().sort((a,b)=>a.date.localeCompare(b.date));
     for(const row of rs){
       for(const session of ['am','pm']){
         if(!row[session])continue;
@@ -27,8 +30,9 @@
           }
           if(Array.isArray(x&&x.additional_lessons)){
             x.additional_lessons.forEach((lesson,extraIndex)=>{
-              if(lesson&&lesson.reading&&lesson.reading.text){
-                out.push({date:lesson.date||row.date,session:lesson.session||session,day:lesson.day||null,reading:lesson.reading,extra:true,extraIndex});
+              const lessonDate=lesson.date||row.date;
+              if(lessonDate>=READING_START_DATE&&lesson&&lesson.reading&&lesson.reading.text){
+                out.push({date:lessonDate,session:lesson.session||session,day:lesson.day||null,reading:lesson.reading,extra:true,extraIndex});
               }
             });
           }
@@ -71,12 +75,13 @@
     const a=ARTICLE_LIST[currentIndex];
     if(!a){
       $('readingMeta').textContent='暂无阅读';
-      $('readingBody').innerHTML='<div class="empty">目前还没有可读取的短文。</div>';
+      $('readingBody').innerHTML='<div class="empty">2026-08-30 之后暂时还没有可读取的短文。</div>';
       return;
     }
     const r=a.reading;
-    const title=(r.title||'').trim()||'Tanpa Judul';
+    const title=(r.title||'').trim();
     const titleCn=chineseTitle(r);
+    const titleHtml=title?`<h3 class="rl-title">${esc(title)}</h3>${titleCn?`<div class="rl-title-cn">${esc(titleCn)}</div>`:''}`:'';
     $('readingMeta').textContent=`第${currentIndex+1}篇 · ${sourceLabel(a)}`;
     $('readingBody').innerHTML=`
       <div class="rl-nav">
@@ -86,8 +91,7 @@
       </div>
       <article class="rl-article">
         <div class="rl-index">第 ${currentIndex+1} 篇 / 共 ${ARTICLE_LIST.length} 篇</div>
-        <h3 class="rl-title">${esc(title)}</h3>
-        <div class="rl-title-cn">${esc(titleCn)}</div>
+        ${titleHtml}
         <div class="rl-text">${esc(r.text||'')}</div>
         <div class="rl-actions"><button class="secondary" onclick='speak(${JSON.stringify(r.text||'')})'>🔊 朗读全文</button></div>
         <div class="rl-cn">${esc(r.cn||'')}</div>
