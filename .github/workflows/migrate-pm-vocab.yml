@@ -1,7 +1,8 @@
-name: Migrate PM history vocab
+name: Sync PM daily vocab
 on:
   push:
     paths:
+      - 'data/daily/*-pm.json'
       - '.github/workflows/migrate-pm-vocab.yml'
 permissions:
   contents: write
@@ -15,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Merge and push 19:00 historical vocab safely
+      - name: Merge and push 19:00 vocab safely
         shell: bash
         run: |
           set -e
@@ -30,14 +31,13 @@ jobs:
           const src=fs.readFileSync(path,'utf8');
           const jsonText=src.replace(/^window\.DAILY_VOCAB_DB\s*=\s*/, '').replace(/;\s*$/, '');
           const db=JSON.parse(jsonText);
-          const lessonDates=['2026-08-23','2026-08-24','2026-08-25','2026-08-26','2026-08-27','2026-08-28','2026-08-29','2026-08-30'];
+          const files=fs.readdirSync('data/daily').filter(f=>/^\d{4}-\d{2}-\d{2}-pm\.json$/.test(f)).sort();
           const key=s=>String(s||'').trim().toLowerCase();
           const map=new Map(db.map(x=>[key(x.word),x]));
           const addUnique=(arr,v)=>{arr=Array.isArray(arr)?arr:[];if(!arr.includes(v))arr.push(v);return arr};
-          for(const date of lessonDates){
-            const f=`data/daily/${date}-pm.json`;
-            if(!fs.existsSync(f)) continue;
-            const lesson=JSON.parse(fs.readFileSync(f,'utf8'));
+          for(const file of files){
+            const date=file.slice(0,10);
+            const lesson=JSON.parse(fs.readFileSync(`data/daily/${file}`,'utf8'));
             for(const v of (lesson.vocab||[])){
               const k=key(v.word); if(!k) continue;
               const stamp=`${date} 19:00`;
@@ -54,7 +54,7 @@ jobs:
                 if(!x.first_seen || stamp<x.first_seen) x.first_seen=stamp;
                 if(!x.last_seen || stamp>x.last_seen) x.last_seen=stamp;
               }else{
-                const x={word:String(v.word).trim(),cn:v.cn||'',en:v.en||'',root:v.root||'',categories:['每日学习','19:00','原始课程'],times_seen:1,first_seen:stamp,last_seen:stamp,sessions:['19:00'],dates:[date]};
+                const x={word:String(v.word).trim(),cn:v.cn||'',en:v.en||'',root:v.root||'',categories:['每日学习','19:00'],times_seen:1,first_seen:stamp,last_seen:stamp,sessions:['19:00'],dates:[date]};
                 db.push(x); map.set(k,x);
               }
             }
@@ -66,38 +66,10 @@ jobs:
               echo 'PM vocab already synchronized.'
               break
             fi
-            git commit -m 'Sync 19:00 historical lesson vocabulary'
+            git commit -m 'Sync 19:00 daily lesson vocabulary'
             if git push origin HEAD:main; then
               break
             fi
             echo "Push attempt $attempt conflicted; retrying from latest main..."
             sleep 2
           done
-      - name: Report PM vocabulary classification
-        shell: bash
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
-          node <<'NODE'
-          const fs=require('fs');
-          const db=JSON.parse(fs.readFileSync('data/daily-vocab-data.js','utf8').replace(/^window\.DAILY_VOCAB_DB\s*=\s*/,'').replace(/;\s*$/,''));
-          const lessonDates=['2026-08-23','2026-08-24','2026-08-25','2026-08-26','2026-08-27','2026-08-28','2026-08-29','2026-08-30'];
-          const key=s=>String(s||'').trim().toLowerCase();
-          const counts=new Map(), display=new Map();
-          for(const date of lessonDates){
-            const x=JSON.parse(fs.readFileSync(`data/daily/${date}-pm.json`,'utf8'));
-            for(const v of (x.vocab||[])){const k=key(v.word);counts.set(k,(counts.get(k)||0)+1);display.set(k,v.word)}
-          }
-          const map=new Map(db.map(x=>[key(x.word),x]));
-          const all=[...counts.keys()].sort();
-          const both=all.filter(k=>(map.get(k)?.sessions||[]).includes('08:00'));
-          const pmOnly=all.filter(k=>!(map.get(k)?.sessions||[]).includes('08:00'));
-          const repeatedPM=all.filter(k=>counts.get(k)>1);
-          console.log('PM_UNIQUE_COUNT='+all.length);
-          console.log('PM_ONLY_COUNT='+pmOnly.length);
-          console.log('AM_AND_PM_COUNT='+both.length);
-          console.log('REPEATED_WITHIN_PM_COUNT='+repeatedPM.length);
-          console.log('PM_ONLY='+pmOnly.map(k=>display.get(k)).join(' | '));
-          console.log('AM_AND_PM='+both.map(k=>display.get(k)).join(' | '));
-          console.log('REPEATED_WITHIN_PM='+repeatedPM.map(k=>`${display.get(k)}(${counts.get(k)})`).join(' | '));
-          NODE
