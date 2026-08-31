@@ -1,0 +1,31 @@
+name: Install reading sync
+on:
+  push:
+    paths:
+      - '.github/workflows/install-reading-sync.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Load reading sync script
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          s=re.sub(r'<script src="data/reading-sync\.js\?v=[^"]+"></script>\s*','',s)
+          tag='<script src="data/reading-sync.js?v=20260831-1"></script>'
+          s=s.replace('</body>',tag+'\n</body>')
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Load synced daily reading page" || exit 0
+          git push
