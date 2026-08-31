@@ -12,6 +12,40 @@
     @media(max-width:650px){.hv-grid{grid-template-columns:1fr}.hv-top{grid-template-columns:1fr 1fr}.hv-mid{grid-column:1/-1;grid-row:1}.hv-top button{grid-row:2}.hv-picker select{width:100%;min-width:0}}
   `;
   document.head.appendChild(style);
+
+  // 免费、无需注册：强制优先使用当前设备/浏览器真正的印尼语 TTS voice。
+  // 旧版只设置 u.lang='id-ID'，部分浏览器仍可能选到非印尼语默认声音。
+  let indoVoice=null;
+  function pickIndonesianVoice(){
+    if(!('speechSynthesis' in window))return null;
+    const voices=window.speechSynthesis.getVoices()||[];
+    const exact=voices.filter(v=>/^id(?:-ID)?$/i.test(v.lang||''));
+    const byName=voices.filter(v=>/indones|bahasa indonesia|damayanti|gadis|ardi/i.test((v.name||'')+' '+(v.lang||'')));
+    const preferred=[...exact,...byName];
+    indoVoice=preferred.find(v=>/google.*indones|bahasa indonesia|damayanti|gadis|ardi/i.test(v.name||''))||preferred[0]||null;
+    return indoVoice;
+  }
+  pickIndonesianVoice();
+  if('speechSynthesis' in window){
+    window.speechSynthesis.addEventListener?.('voiceschanged',pickIndonesianVoice);
+    window.speechSynthesis.onvoiceschanged=pickIndonesianVoice;
+  }
+  window.speak=function(t){
+    if(!t||!('speechSynthesis' in window))return;
+    const voice=pickIndonesianVoice();
+    if(!voice){
+      alert('当前浏览器/系统没有检测到印尼语语音（id-ID）。为了避免再次读成其他语言，本次不播放。请在系统语音设置中添加 Indonesian / Bahasa Indonesia voice。');
+      return;
+    }
+    const u=new SpeechSynthesisUtterance(String(t));
+    u.voice=voice;
+    u.lang=voice.lang||'id-ID';
+    u.rate=.88;
+    u.pitch=1;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  };
+
   function rows(){return (archive.dates||[]).map(x=>typeof x==='string'?{date:x}:x)}
   function dates(s){return rows().filter(x=>x[s]).map(x=>x.date).sort()}
   function exists(d,s){const r=rows().find(x=>x.date===d);return !!(r&&r[s])}
