@@ -1,0 +1,255 @@
+{
+  "date": "2026-08-31",
+  "session": "pm",
+  "time": "19:00",
+  "level": "A2+ → B1",
+  "title": "2026年8月31日｜19:00 晚间学习",
+  "vocab": [
+    {
+      "word": "pengeluaran",
+      "display": "pengeluaran",
+      "audio_text": "pengeluaran",
+      "cn": "支出；花销",
+      "en": "expense; spending",
+      "root": "keluar",
+      "formation": "peN- + keluar + -an → pengeluaran；表示花出去的钱、支出。常见词族：keluar（出去）、mengeluarkan（拿出；支出）、pengeluaran（支出）。",
+      "example": "Aku lagi nyatet pengeluaran bulan ini biar nggak kebablasan.",
+      "example_cn": "我正在记这个月的支出，免得花过头。",
+      "usage_note": "日常理财和办公室报销都常用；比 uang keluar 更标准、也更清楚。"
+    },
+    {
+      "word": "pemasukan",
+      "display": "pemasukan",
+      "audio_text": "pemasukan",
+      "cn": "收入；进账",
+      "en": "income; incoming funds",
+      "root": "masuk",
+      "formation": "peN- + masuk + -an → pemasukan；表示进入的钱或收入。常见词族：masuk（进入）、memasukkan（放入）、pemasukan（收入）。",
+      "example": "Pemasukan bulan ini lumayan, tapi pengeluarannya juga naik.",
+      "example_cn": "这个月收入还可以，但支出也涨了。",
+      "usage_note": "个人和公司都能用；日常聊天也很自然。"
+    },
+    {
+      "word": "anggaran",
+      "display": "anggaran",
+      "audio_text": "anggaran",
+      "cn": "预算",
+      "en": "budget",
+      "root": "anggar",
+      "formation": "anggar + -an → anggaran。常见词族：menganggarkan（编列预算）、anggaran（预算）。",
+      "example": "Anggaran buat bulan depan kayaknya harus dikurangin.",
+      "example_cn": "下个月的预算看来得压一压。",
+      "usage_note": "办公室很常用；聊天里也会直接说 budget，但 anggaran 更标准。"
+    },
+    {
+      "word": "biaya",
+      "display": "biaya",
+      "audio_text": "biaya",
+      "cn": "费用；成本",
+      "en": "cost; expense; fee",
+      "root": "biaya",
+      "formation": "基础词；常见搭配：biaya hidup（生活成本）、biaya tambahan（额外费用）、biaya operasional（运营成本）。",
+      "example": "Biaya hidup di Jakarta emang lumayan tinggi.",
+      "example_cn": "雅加达的生活成本确实挺高。",
+      "usage_note": "通用词，日常、工作、财务场景都高频。"
+    },
+    {
+      "word": "cicilan",
+      "display": "cicilan",
+      "audio_text": "cicilan",
+      "cn": "分期付款；每期应付款",
+      "en": "installment; installment payment",
+      "root": "cicil",
+      "formation": "cicil + -an → cicilan。常见词族：mencicil（分期支付）、cicilan（分期款）。",
+      "example": "Bulan ini masih ada cicilan yang harus dibayar.",
+      "example_cn": "这个月还有分期款要付。",
+      "usage_note": "买手机、车、房等分期场景非常常见。"
+    },
+    {
+      "word": "prioritas",
+      "display": "prioritas",
+      "audio_text": "prioritas",
+      "cn": "优先事项；优先级",
+      "en": "priority",
+      "root": "prioritas",
+      "formation": "借词；常见搭配：jadi prioritas（成为优先事项）、prioritas utama（首要优先事项）。",
+      "example": "Kalau duitnya terbatas, tentuin dulu mana yang jadi prioritas.",
+      "example_cn": "如果钱有限，先确定什么最优先。",
+      "usage_note": "办公室和生活决策都很常用。"
+    },
+    {
+      "word": "mengatur",
+      "display": "mengatur",
+      "audio_text": "mengatur",
+      "cn": "安排；管理；调节",
+      "en": "arrange; manage; regulate",
+      "root": "atur",
+      "formation": "meN- + atur → mengatur。常见词族：atur（安排）、mengatur（管理/安排）、pengaturan（安排；设置）。",
+      "example": "Aku lagi belajar ngatur uang biar akhir bulan nggak kehabisan.",
+      "example_cn": "我在学着管钱，免得月底没钱。",
+      "usage_note": "标准形式 mengatur；聊天里常说 ngatur。"
+    },
+    {
+      "word": "membatasi",
+      "display": "membatasi",
+      "audio_text": "membatasi",
+      "cn": "限制；控制在一定范围内",
+      "en": "limit; restrict",
+      "root": "batas",
+      "formation": "meN- + batas + -i → membatasi。常见词族：batas（界限）、membatasi（限制）、terbatas（有限的）。",
+      "example": "Aku mulai ngebatasin jajan kopi tiap hari.",
+      "example_cn": "我开始限制自己每天买咖啡了。",
+      "usage_note": "标准 membatasi；雅加达口语常听到 ngebatasin。"
+    },
+    {
+      "word": "menunda",
+      "display": "menunda",
+      "audio_text": "menunda",
+      "cn": "推迟；延后",
+      "en": "postpone; delay",
+      "root": "tunda",
+      "formation": "meN- + tunda → menunda。常见词族：tunda（延期）、menunda（推迟）、penundaan（延期）。",
+      "example": "Kalau nggak mendesak, pembeliannya bisa ditunda dulu.",
+      "example_cn": "如果不急，这笔购买可以先推迟。",
+      "usage_note": "工作和生活都常用；口语里也直接说 tunda dulu。"
+    },
+    {
+      "word": "memperkirakan",
+      "display": "memperkirakan",
+      "audio_text": "memperkirakan",
+      "cn": "估计；预估",
+      "en": "estimate; predict",
+      "root": "kira",
+      "formation": "memper- + kira + -kan → memperkirakan。常见词族：kira-kira（大约/你觉得）、perkiraan（估计）、memperkirakan（预估）。",
+      "example": "Coba perkirain dulu total biayanya sebelum beli.",
+      "example_cn": "买之前先估一下总费用。",
+      "usage_note": "标准 memperkirakan；聊天常说 perkirain。"
+    },
+    {
+      "word": "keperluan",
+      "display": "keperluan",
+      "audio_text": "keperluan",
+      "cn": "用途；需要办的事；所需物品",
+      "en": "need; purpose; necessity",
+      "root": "perlu",
+      "formation": "ke- + perlu + -an → keperluan。常见词族：perlu（需要）、memerlukan（需要）、keperluan（需要/用途）。",
+      "example": "Uangnya aku pisahin buat keperluan rumah sama kerja.",
+      "example_cn": "我把钱分开用于家里和工作的开销。",
+      "usage_note": "比 kebutuhan 更偏具体用途或要办的事情。"
+    },
+    {
+      "word": "cadangan",
+      "display": "cadangan",
+      "audio_text": "cadangan",
+      "cn": "备用；储备；后备",
+      "en": "reserve; backup",
+      "root": "cadang",
+      "formation": "cadang + -an → cadangan。常见搭配：dana cadangan（备用金）、rencana cadangan（备用方案）。",
+      "example": "Sisihin sedikit buat dana cadangan, jangan dihabisin semua.",
+      "example_cn": "留一点做备用金，别全花掉。",
+      "usage_note": "生活理财和办公室计划中都很实用。"
+    }
+  ],
+  "morphology": [
+    {
+      "form": "pengeluaran",
+      "root": "keluar",
+      "formation": "peN- + keluar + -an → pengeluaran",
+      "explain_cn": "从“出去”变成“出去的钱”，也就是支出。",
+      "example": "Pengeluaran bulan ini harus dikontrol.",
+      "example_cn": "这个月的支出得控制一下。"
+    },
+    {
+      "form": "pemasukan",
+      "root": "masuk",
+      "formation": "peN- + masuk + -an → pemasukan",
+      "explain_cn": "从“进入”变成“进入的钱”，也就是收入。",
+      "example": "Pemasukan nggak selalu tetap tiap bulan.",
+      "example_cn": "每个月的收入不一定都固定。"
+    },
+    {
+      "form": "membatasi",
+      "root": "batas",
+      "formation": "meN- + batas + -i → membatasi",
+      "explain_cn": "batas 是界限；membatasi 就是给某事设界限、限制。",
+      "example": "Aku lagi ngebatasin pengeluaran yang nggak penting.",
+      "example_cn": "我正在控制不重要的支出。"
+    },
+    {
+      "form": "menunda",
+      "root": "tunda",
+      "formation": "meN- + tunda → menunda",
+      "explain_cn": "tunda 是延期；menunda 是主动把某件事往后推。",
+      "example": "Kita tunda dulu yang nggak mendesak.",
+      "example_cn": "不急的事情我们先往后放。"
+    },
+    {
+      "form": "memperkirakan",
+      "root": "kira",
+      "formation": "memper- + kira + -kan → memperkirakan",
+      "explain_cn": "kira 是估计/想；加构词后表示对数量、结果进行预估。",
+      "example": "Aku belum bisa memperkirakan totalnya dengan pasti.",
+      "example_cn": "我还没法准确估计总额。"
+    },
+    {
+      "form": "keperluan",
+      "root": "perlu",
+      "formation": "ke- + perlu + -an → keperluan",
+      "explain_cn": "perlu 是需要；keperluan 表示具体的需要、用途或要办的事。",
+      "example": "Ini buat keperluan kantor, bukan pribadi.",
+      "example_cn": "这是办公用途，不是个人用途。"
+    }
+  ],
+  "rewrite": [
+    {
+      "task": "用自然口语说：我得开始控制这个月的支出了。",
+      "reference_answer": "Aku harus mulai ngebatasin pengeluaran bulan ini.",
+      "reference_cn": "我得开始控制这个月的支出了。"
+    },
+    {
+      "task": "翻译：如果不急，这个可以先推迟。",
+      "reference_answer": "Kalau nggak mendesak, ini bisa ditunda dulu.",
+      "reference_cn": "如果不急，这个可以先推迟。"
+    },
+    {
+      "task": "改成自然口语：Saya ingin memperkirakan total biaya terlebih dahulu.",
+      "reference_answer": "Aku mau perkirain dulu total biayanya.",
+      "reference_cn": "我想先估一下总费用。"
+    },
+    {
+      "task": "用 prioritas 造句：钱有限的话，先处理最重要的。",
+      "reference_answer": "Kalau duitnya terbatas, urusin yang jadi prioritas dulu.",
+      "reference_cn": "如果钱有限，先处理最优先的事情。"
+    },
+    {
+      "task": "翻译：我会留一点钱当备用金。",
+      "reference_answer": "Aku bakal sisihin sedikit uang buat dana cadangan.",
+      "reference_cn": "我会留一点钱当备用金。"
+    }
+  ],
+  "reading": {
+    "title": "Akhir Bulan, Duit Harus Diatur",
+    "text": "Akhir bulan ini aku baru sadar pengeluaranku agak kebanyakan. Pemasukan sebenarnya masih aman, tapi biaya kecil yang sering dianggap sepele ternyata kalau ditotal lumayan juga. Kopi, ojek, parkir, sama belanja online sedikit-sedikit bikin anggaran cepat habis. Mulai bulan depan aku mau ngatur uang lebih rapi. Cicilan dan tagihan tetap jadi prioritas, terus pengeluaran yang nggak terlalu penting bakal aku batasin. Kalau ada barang yang pengin dibeli tapi nggak mendesak, mending ditunda dulu. Aku juga mau perkirain biaya bulanan dari awal dan sisihin sedikit buat dana cadangan. Pagi tadi aku sempat kena macet dan driver-nya nyasar, jadi kepikiran juga: kadang pilih kendaraan yang lebih hemat bisa lumayan ngurangin biaya.",
+    "cn": "这个月底我才意识到自己的支出有点太多。收入其实还算稳定，但那些经常被觉得不起眼的小费用，加起来其实也不少。咖啡、摩托车、停车费和一点点网购，很快就把预算吃掉了。从下个月开始，我想把钱管得更有条理。分期款和账单仍然是优先项，然后不太重要的支出我会限制一下。如果有想买但并不急的东西，最好先推迟。我也想从月初就先估算每月费用，并留一点做备用金。今天早上我还遇到堵车，司机又走错路，所以我也想到：有时候选择更省钱的交通方式，也能减少不少成本。",
+    "vocab": ["pengeluaran", "pemasukan", "biaya", "anggaran", "cicilan", "prioritas", "mengatur", "membatasi", "menunda", "memperkirakan", "cadangan", "macet", "nyasar", "hemat", "tagihan"]
+  },
+  "dialogue": {
+    "lines": [
+      {"speaker": "A", "id": "Kok akhir bulan ini duit gue cepet banget habis ya?", "cn": "怎么这个月底我的钱花得这么快啊？"},
+      {"speaker": "B", "id": "Coba lihat pengeluarannya. Yang kecil-kecil kadang justru numpuk.", "cn": "看看支出吧。那些小钱有时候反而会越积越多。"},
+      {"speaker": "A", "id": "Iya sih. Kopi, parkir, sama ojek lumayan juga kalau ditotal.", "cn": "也是。咖啡、停车和摩托车，加起来其实也不少。"},
+      {"speaker": "B", "id": "Cicilan sama tagihan duluin aja. Itu prioritas.", "cn": "分期款和账单先付吧，那些是优先项。"},
+      {"speaker": "A", "id": "Terus yang lain?", "cn": "那其他的呢？"},
+      {"speaker": "B", "id": "Yang nggak mendesak ditunda dulu. Sama batasin jajan yang nggak perlu.", "cn": "不急的先往后放，也控制一下没必要的消费。"},
+      {"speaker": "A", "id": "Kayaknya gue juga harus mulai bikin anggaran deh.", "cn": "看来我也得开始做预算了。"},
+      {"speaker": "B", "id": "Iya. Sama sisihin dana cadangan sedikit, biar nggak panik kalau ada biaya mendadak.", "cn": "对，再留一点备用金，这样突然有额外费用时不会慌。"}
+    ]
+  },
+  "review": [
+    "5分钟复盘：不看中文说出 pengeluaran / pemasukan / anggaran / cicilan / prioritas 的意思，并各造一个短句。",
+    "词根复盘：keluar → pengeluaran；masuk → pemasukan；batas → membatasi；tunda → menunda；kira → memperkirakan。",
+    "口语转换：mengatur → ngatur；membatasi → ngebatasin；memperkirakan → perkirain。",
+    "把早间 macet / nyasar / hemat / tagihan 带入今天晚间主题，但不要当作新词再背。",
+    "主动输出：用40–60秒说说你会怎样控制一个月的支出。参考：Bulan depan aku mau ngatur pengeluaran lebih rapi. Tagihan sama cicilan aku jadiin prioritas dulu. Yang nggak penting bakal aku batasin, terus kalau ada barang yang nggak mendesak, aku tunda dulu. Aku juga mau sisihin sedikit buat dana cadangan. 中文：下个月我想把支出管理得更清楚。账单和分期先作为优先项，不重要的消费我会控制，非急需的东西先推迟买，同时留一点备用金。"
+  ]
+}
