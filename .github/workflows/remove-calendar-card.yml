@@ -1,0 +1,32 @@
+name: Remove redundant calendar card
+on:
+  push:
+    paths:
+      - '.github/workflows/remove-calendar-card.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove home calendar module only
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          pattern=r'<button class="module" onclick="go\(\'calendar\'\)"><div>📅</div><h3>学习日历</h3><p>查看每天早晚内容与完成情况。</p><span class="tag">历史归档</span></button>'
+          ns,n=re.subn(pattern,'',s,count=1)
+          if n!=1:
+              raise SystemExit(f'calendar card match count={n}')
+          p.write_text(ns,encoding='utf-8')
+          PY
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Remove redundant calendar card from home" || exit 0
+          git push
