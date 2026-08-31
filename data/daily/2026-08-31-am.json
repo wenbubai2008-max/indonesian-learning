@@ -138,22 +138,80 @@
     }
   ],
   "sentences": [
-    {"id": "Pantes tadi ngaret, jalan ke kantor macet banget.", "cn": "难怪刚才迟到了，去办公室的路堵得特别厉害。"},
-    {"id": "Kalau driver-nya nyasar, langsung kabarin aku ya.", "cn": "如果司机走错路了，马上告诉我。"},
-    {"id": "Sekalian jemput aku, nanti aku yang bayar parkir.", "cn": "顺便接我一下，等会儿停车费我来付。"},
-    {"id": "Saldo aku hampir habis, padahal masih ada dua tagihan.", "cn": "我的余额快没了，明明还有两笔账单要付。"},
-    {"id": "Aku lagi nyari cara yang lebih hemat karena akhir-akhir ini agak boros.", "cn": "我正在找更省钱的办法，因为最近花钱有点大手大脚。"}
+    {
+      "id": "Pantes tadi ngaret, jalan ke kantor macet banget.",
+      "cn": "难怪刚才迟到了，去办公室的路堵得特别厉害。"
+    },
+    {
+      "id": "Kalau driver-nya nyasar, langsung kabarin aku ya.",
+      "cn": "如果司机走错路了，马上告诉我。"
+    },
+    {
+      "id": "Sekalian jemput aku, nanti aku yang bayar parkir.",
+      "cn": "顺便接我一下，等会儿停车费我来付。"
+    },
+    {
+      "id": "Saldo aku hampir habis, padahal masih ada dua tagihan.",
+      "cn": "我的余额快没了，明明还有两笔账单要付。"
+    },
+    {
+      "id": "Aku lagi nyari cara yang lebih hemat karena akhir-akhir ini agak boros.",
+      "cn": "我正在找更省钱的办法，因为最近花钱有点大手大脚。"
+    }
   ],
   "reading": {
     "title": "Pagi yang Agak Ribet",
     "text": "Pagi ini aku harus ketemu klien di daerah Kuningan. Aku berangkat lebih awal karena takut macet, tapi ternyata tetap padat. Di tengah jalan sopir sempat nyasar, jadi kami agak ngaret. Untung aku langsung kabarin klien. Setelah selesai meeting, aku mau sekalian ke bank karena saldo e-wallet hampir habis dan ada tagihan yang harus dibayar. Aku juga perlu cek rekening kantor. Siangnya teman minta dijemput, tapi aku bilang cuma bisa nganter sampai stasiun. Parkir di sana lumayan ribet. Pantes akhir bulan aku harus lebih hemat, soalnya kalau terlalu sering pesan ojek dan kopi, pengeluaran jadi boros.",
     "cn": "今天早上我要去 Kuningan 一带见客户。我提前出发，因为担心堵车，但结果路上还是很拥挤。半路司机走错了路，所以我们有点迟到。还好我马上告诉了客户。开完会后，我想顺便去银行，因为电子钱包余额快没了，还有账单要付。我也需要查一下公司的银行账户。中午朋友让我去接他，但我说只能送他到车站。那里停车挺麻烦的。难怪月底我得更省一点，因为如果太经常叫摩托车和点咖啡，花销就会变得很浪费。",
-    "vocab": ["macet", "nyasar", "ngaret", "kabarin", "sekalian", "saldo", "tagihan", "rekening", "nganter", "parkir", "ribet", "hemat", "boros", "pantes"]
+    "vocab": [
+      "macet",
+      "nyasar",
+      "ngaret",
+      "kabarin",
+      "sekalian",
+      "saldo",
+      "tagihan",
+      "rekening",
+      "nganter",
+      "parkir",
+      "ribet",
+      "hemat",
+      "boros",
+      "pantes"
+    ],
+    "title_cn": "有点忙乱的早晨"
   },
   "quiz": [
-    {"question": "“Aku nyasar tadi.” 最自然的意思是：", "options": ["我刚才迷路了", "我刚才停车了", "我刚才接人了"], "answer_index": 0, "explain": "nyasar 是很常见的口语，表示走错路、迷路。"},
-    {"question": "hemat 和 boros 的关系最接近：", "options": ["接人 / 送人", "节省 / 浪费", "余额 / 账单"], "answer_index": 1, "explain": "hemat = 节省；boros = 浪费、花钱大手大脚。"},
-    {"question": "复习：如果想说“顺便告诉我一声”，最自然的是：", "options": ["Sekalian kabarin aku ya.", "Pantes kabarin aku ya.", "Ngaret kabarin aku ya."], "answer_index": 0, "explain": "sekalian = 顺便；kabarin = 告诉、通知，都是之前学过的高频口语。"}
+    {
+      "question": "“Aku nyasar tadi.” 最自然的意思是：",
+      "options": [
+        "我刚才迷路了",
+        "我刚才停车了",
+        "我刚才接人了"
+      ],
+      "answer_index": 0,
+      "explain": "nyasar 是很常见的口语，表示走错路、迷路。"
+    },
+    {
+      "question": "hemat 和 boros 的关系最接近：",
+      "options": [
+        "接人 / 送人",
+        "节省 / 浪费",
+        "余额 / 账单"
+      ],
+      "answer_index": 1,
+      "explain": "hemat = 节省；boros = 浪费、花钱大手大脚。"
+    },
+    {
+      "question": "复习：如果想说“顺便告诉我一声”，最自然的是：",
+      "options": [
+        "Sekalian kabarin aku ya.",
+        "Pantes kabarin aku ya.",
+        "Ngaret kabarin aku ya."
+      ],
+      "answer_index": 0,
+      "explain": "sekalian = 顺便；kabarin = 告诉、通知，都是之前学过的高频口语。"
+    }
   ],
   "output": {
     "task": "用自然口语表达：‘今天路上很堵，司机还走错路了，所以我有点迟到。我已经告诉客户了。回来的时候顺便接我一下，我想省点钱，不想再叫车了。’",

@@ -1,50 +1,203 @@
 {
-  "date":"2026-08-22",
-  "session":"am",
-  "time":"08:00",
-  "level":"A2+ → B1",
-  "title":"今日印尼语学习 Day 1",
-  "verified":"original_chat_text",
-  "source_note":"按用户粘贴的原聊天正文恢复。原文的小测明确写着‘先别看答案’，主动表达也只要求用户提交后再改，因此历史页不补造原文未提供的答案。",
-  "new_vocab_count":10,
-  "cumulative_vocab_count":10,
-  "vocab":[
-    {"order":1,"word":"tingkat","display":"tingkat","audio_text":"tingkat","cn":"等级、层次","en":"level","root":"tingkat","formation":"","example":"Tingkat bahasa Indonesia saya masih A2.","example_cn":"我的印尼语水平还在 A2。"},
-    {"order":2,"word":"meningkat","display":"meningkat","audio_text":"meningkat","cn":"提高、上升","en":"increase / rise","root":"tingkat","formation":"meN- + tingkat","example":"Kemampuan saya mulai meningkat.","example_cn":"我的能力开始提高了。"},
-    {"order":3,"word":"meningkatkan","display":"meningkatkan","audio_text":"meningkatkan","cn":"提高某事物","en":"improve / increase something","root":"tingkat","formation":"meN- + tingkat + -kan","example":"Saya ingin meningkatkan bahasa Indonesia saya.","example_cn":"我想提高我的印尼语。"},
-    {"order":4,"word":"peningkatan","display":"peningkatan","audio_text":"peningkatan","cn":"提升、增长","en":"improvement / increase","root":"tingkat","formation":"peN- + tingkat + -an","example":"Ada peningkatan dalam kemampuan berbicara saya.","example_cn":"我的口语能力有所提升。"},
-    {"order":5,"word":"ganggu","display":"ganggu","audio_text":"ganggu","cn":"打扰","en":"disturb / bother","root":"ganggu","formation":"","example":"Maaf, saya ganggu sebentar.","example_cn":"不好意思，我打扰一下。"},
-    {"order":6,"word":"mengganggu","display":"mengganggu","audio_text":"mengganggu","cn":"打扰、干扰","en":"disturb / interfere","root":"ganggu","formation":"meN- + ganggu","example":"Suara itu mengganggu saya.","example_cn":"那个声音打扰到我了。"},
-    {"order":7,"word":"pilih","display":"pilih","audio_text":"pilih","cn":"选择","en":"choose / select","root":"pilih","formation":"","example":"Saya pilih yang ini.","example_cn":"我选这个。"},
-    {"order":8,"word":"pilihan","display":"pilihan","audio_text":"pilihan","cn":"选择、选项","en":"choice / option","root":"pilih","formation":"pilih + -an","example":"Ini pilihan terbaik.","example_cn":"这是最好的选择。"},
-    {"order":9,"word":"untung","display":"untung","audio_text":"untung","cn":"幸运；赚到","en":"lucky / profit","root":"untung","formation":"","example":"Untung saya datang lebih awal.","example_cn":"幸好我来得早。"},
-    {"order":10,"word":"keuntungan","display":"keuntungan","audio_text":"keuntungan","cn":"利润、好处","en":"profit / advantage","root":"untung","formation":"ke- + untung + -an","example":"Bisnis ini punya keuntungan yang cukup bagus.","example_cn":"这个生意有不错的利润。"}
+  "date": "2026-08-22",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "title": "今日印尼语学习 Day 1",
+  "verified": "original_chat_text",
+  "source_note": "按用户粘贴的原聊天正文恢复。原文的小测明确写着‘先别看答案’，主动表达也只要求用户提交后再改，因此历史页不补造原文未提供的答案。",
+  "new_vocab_count": 10,
+  "cumulative_vocab_count": 10,
+  "vocab": [
+    {
+      "order": 1,
+      "word": "tingkat",
+      "display": "tingkat",
+      "audio_text": "tingkat",
+      "cn": "等级、层次",
+      "en": "level",
+      "root": "tingkat",
+      "formation": "",
+      "example": "Tingkat bahasa Indonesia saya masih A2.",
+      "example_cn": "我的印尼语水平还在 A2。"
+    },
+    {
+      "order": 2,
+      "word": "meningkat",
+      "display": "meningkat",
+      "audio_text": "meningkat",
+      "cn": "提高、上升",
+      "en": "increase / rise",
+      "root": "tingkat",
+      "formation": "meN- + tingkat",
+      "example": "Kemampuan saya mulai meningkat.",
+      "example_cn": "我的能力开始提高了。"
+    },
+    {
+      "order": 3,
+      "word": "meningkatkan",
+      "display": "meningkatkan",
+      "audio_text": "meningkatkan",
+      "cn": "提高某事物",
+      "en": "improve / increase something",
+      "root": "tingkat",
+      "formation": "meN- + tingkat + -kan",
+      "example": "Saya ingin meningkatkan bahasa Indonesia saya.",
+      "example_cn": "我想提高我的印尼语。"
+    },
+    {
+      "order": 4,
+      "word": "peningkatan",
+      "display": "peningkatan",
+      "audio_text": "peningkatan",
+      "cn": "提升、增长",
+      "en": "improvement / increase",
+      "root": "tingkat",
+      "formation": "peN- + tingkat + -an",
+      "example": "Ada peningkatan dalam kemampuan berbicara saya.",
+      "example_cn": "我的口语能力有所提升。"
+    },
+    {
+      "order": 5,
+      "word": "ganggu",
+      "display": "ganggu",
+      "audio_text": "ganggu",
+      "cn": "打扰",
+      "en": "disturb / bother",
+      "root": "ganggu",
+      "formation": "",
+      "example": "Maaf, saya ganggu sebentar.",
+      "example_cn": "不好意思，我打扰一下。"
+    },
+    {
+      "order": 6,
+      "word": "mengganggu",
+      "display": "mengganggu",
+      "audio_text": "mengganggu",
+      "cn": "打扰、干扰",
+      "en": "disturb / interfere",
+      "root": "ganggu",
+      "formation": "meN- + ganggu",
+      "example": "Suara itu mengganggu saya.",
+      "example_cn": "那个声音打扰到我了。"
+    },
+    {
+      "order": 7,
+      "word": "pilih",
+      "display": "pilih",
+      "audio_text": "pilih",
+      "cn": "选择",
+      "en": "choose / select",
+      "root": "pilih",
+      "formation": "",
+      "example": "Saya pilih yang ini.",
+      "example_cn": "我选这个。"
+    },
+    {
+      "order": 8,
+      "word": "pilihan",
+      "display": "pilihan",
+      "audio_text": "pilihan",
+      "cn": "选择、选项",
+      "en": "choice / option",
+      "root": "pilih",
+      "formation": "pilih + -an",
+      "example": "Ini pilihan terbaik.",
+      "example_cn": "这是最好的选择。"
+    },
+    {
+      "order": 9,
+      "word": "untung",
+      "display": "untung",
+      "audio_text": "untung",
+      "cn": "幸运；赚到",
+      "en": "lucky / profit",
+      "root": "untung",
+      "formation": "",
+      "example": "Untung saya datang lebih awal.",
+      "example_cn": "幸好我来得早。"
+    },
+    {
+      "order": 10,
+      "word": "keuntungan",
+      "display": "keuntungan",
+      "audio_text": "keuntungan",
+      "cn": "利润、好处",
+      "en": "profit / advantage",
+      "root": "untung",
+      "formation": "ke- + untung + -an",
+      "example": "Bisnis ini punya keuntungan yang cukup bagus.",
+      "example_cn": "这个生意有不错的利润。"
+    }
   ],
-  "sentences":[
-    {"id":"Saya belum terbiasa, tapi saya sedang belajar.","cn":"我还不习惯，不过我正在学习。"},
-    {"id":"Kayaknya besok saya nggak bisa datang.","cn":"我觉得明天可能来不了。"},
-    {"id":"Jangan terlalu dipikirin.","cn":"不要想太多。"},
-    {"id":"Saya mau tinggal di Indonesia, jadi bahasa Indonesia saya harus lebih bagus.","cn":"我想留在印尼，所以我的印尼语得更好。"},
-    {"id":"Kalau ada pilihan yang lebih baik, saya akan pilih yang itu.","cn":"如果有更好的选择，我会选那个。"}
+  "sentences": [
+    {
+      "id": "Saya belum terbiasa, tapi saya sedang belajar.",
+      "cn": "我还不习惯，不过我正在学习。"
+    },
+    {
+      "id": "Kayaknya besok saya nggak bisa datang.",
+      "cn": "我觉得明天可能来不了。"
+    },
+    {
+      "id": "Jangan terlalu dipikirin.",
+      "cn": "不要想太多。"
+    },
+    {
+      "id": "Saya mau tinggal di Indonesia, jadi bahasa Indonesia saya harus lebih bagus.",
+      "cn": "我想留在印尼，所以我的印尼语得更好。"
+    },
+    {
+      "id": "Kalau ada pilihan yang lebih baik, saya akan pilih yang itu.",
+      "cn": "如果有更好的选择，我会选那个。"
+    }
   ],
-  "reading":{
-    "title":"Belajar Bahasa Indonesia",
-    "text":"Saya sudah tinggal di Indonesia cukup lama, tetapi bahasa Indonesia saya masih belum terlalu bagus. Saya bisa memahami percakapan sederhana, tetapi kadang sulit menjelaskan sesuatu dengan kalimat yang panjang. Sekarang saya ingin meningkatkan kemampuan bahasa Indonesia saya. Saya mulai belajar setiap hari, terutama kosakata, percakapan, dan cara menggunakan imbuhan seperti me-, ber-, dan ke-an. Saya berharap kemampuan saya bisa meningkat sedikit demi sedikit. Bagi saya, yang penting bukan belajar terlalu banyak dalam satu hari, tetapi belajar terus setiap hari.",
-    "cn":"我已经在印尼生活了一段时间，但印尼语还不算特别好。简单对话能听懂，但长句表达有时还比较困难。现在想通过每天学习词汇、口语和前后缀，提高自己的印尼语。重点不是一天学很多，而是每天持续学习。"
+  "reading": {
+    "title": "Belajar Bahasa Indonesia",
+    "text": "Saya sudah tinggal di Indonesia cukup lama, tetapi bahasa Indonesia saya masih belum terlalu bagus. Saya bisa memahami percakapan sederhana, tetapi kadang sulit menjelaskan sesuatu dengan kalimat yang panjang. Sekarang saya ingin meningkatkan kemampuan bahasa Indonesia saya. Saya mulai belajar setiap hari, terutama kosakata, percakapan, dan cara menggunakan imbuhan seperti me-, ber-, dan ke-an. Saya berharap kemampuan saya bisa meningkat sedikit demi sedikit. Bagi saya, yang penting bukan belajar terlalu banyak dalam satu hari, tetapi belajar terus setiap hari.",
+    "cn": "我已经在印尼生活了一段时间，但印尼语还不算特别好。简单对话能听懂，但长句表达有时还比较困难。现在想通过每天学习词汇、口语和前后缀，提高自己的印尼语。重点不是一天学很多，而是每天持续学习。",
+    "title_cn": "学习印尼语"
   },
-  "quiz":[
-    {"question":"“Saya ingin meningkatkan bahasa Indonesia saya.” 中 meningkatkan 是什么意思？","options":["我的印尼语自己提高","我提高我的印尼语","我停止学印尼语","我听懂印尼语"],"answer_unavailable":true},
-    {"question":"哪一句更自然？","options":["Saya pilihan ini.","Saya memilih ini.","Saya pilihan kepada ini.","Saya meningkat ini."],"answer_unavailable":true},
-    {"question":"“Kemampuan saya mulai meningkat.” 是什么意思？","options":["我的能力开始下降","我的能力开始提高","我的能力没有变化","我的能力很差"],"answer_unavailable":true}
+  "quiz": [
+    {
+      "question": "“Saya ingin meningkatkan bahasa Indonesia saya.” 中 meningkatkan 是什么意思？",
+      "options": [
+        "我的印尼语自己提高",
+        "我提高我的印尼语",
+        "我停止学印尼语",
+        "我听懂印尼语"
+      ],
+      "answer_unavailable": true
+    },
+    {
+      "question": "哪一句更自然？",
+      "options": [
+        "Saya pilihan ini.",
+        "Saya memilih ini.",
+        "Saya pilihan kepada ini.",
+        "Saya meningkat ini."
+      ],
+      "answer_unavailable": true
+    },
+    {
+      "question": "“Kemampuan saya mulai meningkat.” 是什么意思？",
+      "options": [
+        "我的能力开始下降",
+        "我的能力开始提高",
+        "我的能力没有变化",
+        "我的能力很差"
+      ],
+      "answer_unavailable": true
+    }
   ],
-  "output":{
-    "task":"用印尼语说 2 句话：① 我的印尼语还不好，但是我每天都学习。② 我想提高口语，因为我想和印尼人交流得更自然。",
-    "reference_unavailable":true,
-    "source_note":"原文要求用户直接写给助手再修改，没有在这条历史消息中给参考答案。"
+  "output": {
+    "task": "用印尼语说 2 句话：① 我的印尼语还不好，但是我每天都学习。② 我想提高口语，因为我想和印尼人交流得更自然。",
+    "reference_unavailable": true,
+    "source_note": "原文要求用户直接写给助手再修改，没有在这条历史消息中给参考答案。"
   },
-  "focus":{
-    "title":"今天只记住这一个重点",
-    "items":[
+  "focus": {
+    "title": "今天只记住这一个重点",
+    "items": [
       "tingkat = 等级",
       "meningkat = 自己上升",
       "meningkatkan = 让某东西提高",
