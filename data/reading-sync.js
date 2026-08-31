@@ -62,9 +62,9 @@
   }
 
   function articleOption(a,i){
-    const t=(a.reading.title||'').trim()||'Tanpa Judul';
-    const cn=chineseTitle(a.reading);
-    return `<option value="${i}" ${i===currentIndex?'selected':''}>第${i+1}篇 · ${esc(t)}${cn?`｜${esc(cn)}`:''}</option>`;
+    const sameDateCount=ARTICLE_LIST.filter(x=>x.date===a.date).length;
+    const time=sameDateCount>1?` · ${a.session==='am'?'08:00':'19:00'}`:'';
+    return `<option value="${i}" ${i===currentIndex?'selected':''}>第${i+1}篇 · ${esc(a.date)}${time}</option>`;
   }
 
   function renderArticle(){
