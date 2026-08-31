@@ -1,0 +1,187 @@
+{
+  "date": "2026-08-31",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "title": "2026年8月31日｜08:00 早间学习",
+  "vocab": [
+    {
+      "word": "macet",
+      "display": "macet",
+      "audio_text": "macet",
+      "cn": "堵车；交通拥堵",
+      "en": "traffic jam; congested",
+      "root": "macet",
+      "formation": "基础词；在雅加达日常通勤里非常高频。",
+      "example": "Kalau berangkat jam delapan, biasanya macet banget.",
+      "example_cn": "如果八点出发，通常会堵得很厉害。",
+      "synonym_note": "padat 也可表示‘拥挤/车多’，但 macet 更直接表示交通堵塞。"
+    },
+    {
+      "word": "nyasar",
+      "display": "nyasar",
+      "audio_text": "nyasar",
+      "cn": "迷路；走错路",
+      "en": "get lost; take the wrong way",
+      "root": "sasar",
+      "formation": "口语形式；sasar → nyasar，标准表达常见 tersesat。",
+      "example": "Tadi driver-nya nyasar, jadi muter agak jauh.",
+      "example_cn": "刚才司机走错路了，所以绕得有点远。",
+      "synonym_note": "tersesat 更标准；nyasar 更口语，聊天里很常见。"
+    },
+    {
+      "word": "nganter",
+      "display": "nganter",
+      "audio_text": "nganter",
+      "cn": "送某人去；送到",
+      "en": "take; drop someone off",
+      "root": "antar",
+      "formation": "antar → mengantar（标准）→ nganter（雅加达常见口语）。",
+      "example": "Nanti aku nganter kamu sampai stasiun aja.",
+      "example_cn": "等会儿我就送你到车站吧。",
+      "synonym_note": "antar 是词根/较中性；mengantar 标准；nganter 最口语。"
+    },
+    {
+      "word": "jemput",
+      "display": "jemput",
+      "audio_text": "jemput",
+      "cn": "接人；去接",
+      "en": "pick up someone",
+      "root": "jemput",
+      "formation": "基础词；常见词族：menjemput（接）、penjemputan（接送/接人安排）。",
+      "example": "Jam enam bisa jemput aku di depan kantor nggak?",
+      "example_cn": "六点能到办公室门口接我吗？",
+      "synonym_note": "antar = 送；jemput = 接，两个词经常成对使用。"
+    },
+    {
+      "word": "parkir",
+      "display": "parkir",
+      "audio_text": "parkir",
+      "cn": "停车；停放",
+      "en": "park; parking",
+      "root": "parkir",
+      "formation": "基础词；常见：tempat parkir（停车位/停车场）、biaya parkir（停车费）。",
+      "example": "Di sini susah cari tempat parkir.",
+      "example_cn": "这里很难找停车位。",
+      "synonym_note": "parkir 既可作动词‘停车’，也常直接表示‘停车相关’。"
+    },
+    {
+      "word": "saldo",
+      "display": "saldo",
+      "audio_text": "saldo",
+      "cn": "余额",
+      "en": "balance; account balance",
+      "root": "saldo",
+      "formation": "基础词；电子钱包、银行卡、电话卡场景都很常见。",
+      "example": "Saldo e-wallet aku tinggal sedikit.",
+      "example_cn": "我的电子钱包余额只剩一点了。",
+      "synonym_note": "uang = 钱；saldo 特指账户/钱包里的余额。"
+    },
+    {
+      "word": "rekening",
+      "display": "rekening",
+      "audio_text": "rekening",
+      "cn": "银行账户；账号",
+      "en": "bank account; account number",
+      "root": "rekening",
+      "formation": "基础词；常见搭配：nomor rekening（银行账号）、rekening bank（银行账户）。",
+      "example": "Kirim nomor rekening kamu ya.",
+      "example_cn": "把你的银行账号发给我。",
+      "synonym_note": "akun 更泛指各种‘账户’；rekening 通常指银行账户。"
+    },
+    {
+      "word": "tagihan",
+      "display": "tagihan",
+      "audio_text": "tagihan",
+      "cn": "账单；应付款",
+      "en": "bill; charge; amount due",
+      "root": "tagih",
+      "formation": "tagih（催收/索要款项）+ -an → tagihan（账单、应付款）。常见词族：menagih（催款）。",
+      "example": "Tagihan internet bulan ini sudah dibayar belum?",
+      "example_cn": "这个月的网费账单付了吗？",
+      "synonym_note": "nota/struk 更像收据；tagihan 是还需要支付或应付的账单。"
+    },
+    {
+      "word": "hemat",
+      "display": "hemat",
+      "audio_text": "hemat",
+      "cn": "节省；省钱；节约的",
+      "en": "save; economical; frugal",
+      "root": "hemat",
+      "formation": "基础词；常见：hemat uang（省钱）、hemat waktu（省时间）。",
+      "example": "Bulan ini aku harus lebih hemat.",
+      "example_cn": "这个月我得更省一点。",
+      "synonym_note": "irit 也常表示省、节俭，口语感更强；hemat 更通用。"
+    },
+    {
+      "word": "boros",
+      "display": "boros",
+      "audio_text": "boros",
+      "cn": "浪费；花钱大手大脚；耗费多",
+      "en": "wasteful; spend too much",
+      "root": "boros",
+      "formation": "基础词；可说 boros uang、boros bensin、boros baterai。",
+      "example": "Kalau tiap hari pesan kopi, lumayan boros juga.",
+      "example_cn": "如果每天都点咖啡，其实也挺费钱的。",
+      "synonym_note": "hemat 和 boros 是常用反义词：节省 vs 浪费。"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "Pantes tadi ngaret, jalan ke kantor macet banget.",
+      "cn": "难怪刚才迟到了，去办公室的路堵得特别厉害。"
+    },
+    {
+      "id": "Kalau driver-nya nyasar, langsung kabarin aku ya.",
+      "cn": "如果司机走错路了，马上告诉我。"
+    },
+    {
+      "id": "Sekalian jemput aku, nanti aku yang bayar parkir.",
+      "cn": "顺便接我一下，等会儿停车费我来付。"
+    },
+    {
+      "id": "Saldo aku hampir habis, padahal masih ada dua tagihan.",
+      "cn": "我的余额快没了，明明还有两笔账单要付。"
+    },
+    {
+      "id": "Aku lagi nyari cara yang lebih hemat karena akhir-akhir ini agak boros.",
+      "cn": "我正在找更省钱的办法，因为最近花钱有点大手大脚。"
+    }
+  ],
+  "reading": {
+    "title": "Pagi yang Agak Ribet",
+    "text": "Pagi ini aku harus ketemu klien di daerah Kuningan. Aku berangkat lebih awal karena takut macet, tapi ternyata tetap padat. Di tengah jalan sopir sempat nyasar, jadi kami agak ngaret. Untung aku langsung kabarin klien. Setelah selesai meeting, aku mau sekalian ke bank karena saldo e-wallet hampir habis dan ada tagihan yang harus dibayar. Aku juga perlu cek rekening kantor. Siangnya teman minta dijemput, tapi aku bilang cuma bisa nganter sampai stasiun. Parkir di sana lumayan ribet. Pantes akhir bulan aku harus lebih hemat, soalnya kalau terlalu sering pesan ojek dan kopi, pengeluaran jadi boros.",
+    "cn": "今天早上我要去 Kuningan 一带见客户。我提前出发，因为担心堵车，但结果路上还是很拥挤。半路司机走错了路，所以我们有点迟到。还好我马上告诉了客户。开完会后，我想顺便去银行，因为电子钱包余额快没了，还有账单要付。我也需要查一下公司的银行账户。中午朋友让我去接他，但我说只能送他到车站。那里停车挺麻烦的。难怪月底我得更省一点，因为如果太经常叫摩托车和点咖啡，花销就会变得很浪费。",
+    "vocab": ["macet", "nyasar", "ngaret", "kabarin", "sekalian", "saldo", "tagihan", "rekening", "nganter", "parkir", "ribet", "hemat", "boros", "pantes"]
+  },
+  "quiz": [
+    {
+      "question": "“Aku nyasar tadi.” 最自然的意思是：",
+      "options": ["我刚才迷路了", "我刚才停车了", "我刚才接人了"],
+      "answer_index": 0,
+      "explain": "nyasar 是很常见的口语，表示走错路、迷路。"
+    },
+    {
+      "question": "hemat 和 boros 的关系最接近：",
+      "options": ["接人 / 送人", "节省 / 浪费", "余额 / 账单"],
+      "answer_index": 1,
+      "explain": "hemat = 节省；boros = 浪费、花钱大手大脚。"
+    },
+    {
+      "question": "复习：如果想说“顺便告诉我一声”，最自然的是：",
+      "options": ["Sekalian kabarin aku ya.", "Pantes kabarin aku ya.", "Ngaret kabarin aku ya."],
+      "answer_index": 0,
+      "explain": "sekalian = 顺便；kabarin = 告诉、通知，都是之前学过的高频口语。"
+    }
+  ],
+  "output": {
+    "task": "用自然口语表达：‘今天路上很堵，司机还走错路了，所以我有点迟到。我已经告诉客户了。回来的时候顺便接我一下，我想省点钱，不想再叫车了。’",
+    "reference_answer": "Hari ini macet banget, terus driver-nya sempat nyasar, jadi aku agak ngaret. Aku udah kabarin klien. Nanti pas balik sekalian jemput aku ya. Aku lagi mau hemat, nggak mau pesan kendaraan lagi.",
+    "reference_cn": "今天路上很堵，司机还走错路了，所以我有点迟到。我已经告诉客户了。回来的时候顺便接我一下，我想省点钱，不想再叫车了。"
+  },
+  "review": [
+    "复习旧词：pantes / ngaret / kabarin / sekalian / ribet，注意把它们放回真实通勤和工作场景里。",
+    "新词成对记：antar/nganter = 送，jemput = 接；hemat = 节省，boros = 浪费。",
+    "账户场景区分：saldo = 余额，rekening = 银行账户，tagihan = 待支付的账单。"
+  ]
+}
