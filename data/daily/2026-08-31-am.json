@@ -3,9 +3,11 @@
   "session": "am",
   "time": "08:00",
   "level": "A2+ → B1",
-  "title": "2026年8月31日｜08:00 早间学习",
+  "day": 10,
+  "title": "2026年8月31日｜Day 10",
   "vocab": [
     {
+      "order": 91,
       "word": "macet",
       "display": "macet",
       "audio_text": "macet",
@@ -18,6 +20,7 @@
       "synonym_note": "padat 也可表示‘拥挤/车多’，但 macet 更直接表示交通堵塞。"
     },
     {
+      "order": 92,
       "word": "nyasar",
       "display": "nyasar",
       "audio_text": "nyasar",
@@ -30,6 +33,7 @@
       "synonym_note": "tersesat 更标准；nyasar 更口语，聊天里很常见。"
     },
     {
+      "order": 93,
       "word": "nganter",
       "display": "nganter",
       "audio_text": "nganter",
@@ -42,6 +46,7 @@
       "synonym_note": "antar 是词根/较中性；mengantar 标准；nganter 最口语。"
     },
     {
+      "order": 94,
       "word": "jemput",
       "display": "jemput",
       "audio_text": "jemput",
@@ -54,6 +59,7 @@
       "synonym_note": "antar = 送；jemput = 接，两个词经常成对使用。"
     },
     {
+      "order": 95,
       "word": "parkir",
       "display": "parkir",
       "audio_text": "parkir",
@@ -66,6 +72,7 @@
       "synonym_note": "parkir 既可作动词‘停车’，也常直接表示‘停车相关’。"
     },
     {
+      "order": 96,
       "word": "saldo",
       "display": "saldo",
       "audio_text": "saldo",
@@ -78,8 +85,9 @@
       "synonym_note": "uang = 钱；saldo 特指账户/钱包里的余额。"
     },
     {
+      "order": 97,
       "word": "rekening",
-      "display": "rekening",
+      "display": "rékening",
       "audio_text": "rekening",
       "cn": "银行账户；账号",
       "en": "bank account; account number",
@@ -90,6 +98,7 @@
       "synonym_note": "akun 更泛指各种‘账户’；rekening 通常指银行账户。"
     },
     {
+      "order": 98,
       "word": "tagihan",
       "display": "tagihan",
       "audio_text": "tagihan",
@@ -102,8 +111,9 @@
       "synonym_note": "nota/struk 更像收据；tagihan 是还需要支付或应付的账单。"
     },
     {
+      "order": 99,
       "word": "hemat",
-      "display": "hemat",
+      "display": "hémat",
       "audio_text": "hemat",
       "cn": "节省；省钱；节约的",
       "en": "save; economical; frugal",
@@ -114,6 +124,7 @@
       "synonym_note": "irit 也常表示省、节俭，口语感更强；hemat 更通用。"
     },
     {
+      "order": 100,
       "word": "boros",
       "display": "boros",
       "audio_text": "boros",
@@ -127,26 +138,11 @@
     }
   ],
   "sentences": [
-    {
-      "id": "Pantes tadi ngaret, jalan ke kantor macet banget.",
-      "cn": "难怪刚才迟到了，去办公室的路堵得特别厉害。"
-    },
-    {
-      "id": "Kalau driver-nya nyasar, langsung kabarin aku ya.",
-      "cn": "如果司机走错路了，马上告诉我。"
-    },
-    {
-      "id": "Sekalian jemput aku, nanti aku yang bayar parkir.",
-      "cn": "顺便接我一下，等会儿停车费我来付。"
-    },
-    {
-      "id": "Saldo aku hampir habis, padahal masih ada dua tagihan.",
-      "cn": "我的余额快没了，明明还有两笔账单要付。"
-    },
-    {
-      "id": "Aku lagi nyari cara yang lebih hemat karena akhir-akhir ini agak boros.",
-      "cn": "我正在找更省钱的办法，因为最近花钱有点大手大脚。"
-    }
+    {"id": "Pantes tadi ngaret, jalan ke kantor macet banget.", "cn": "难怪刚才迟到了，去办公室的路堵得特别厉害。"},
+    {"id": "Kalau driver-nya nyasar, langsung kabarin aku ya.", "cn": "如果司机走错路了，马上告诉我。"},
+    {"id": "Sekalian jemput aku, nanti aku yang bayar parkir.", "cn": "顺便接我一下，等会儿停车费我来付。"},
+    {"id": "Saldo aku hampir habis, padahal masih ada dua tagihan.", "cn": "我的余额快没了，明明还有两笔账单要付。"},
+    {"id": "Aku lagi nyari cara yang lebih hemat karena akhir-akhir ini agak boros.", "cn": "我正在找更省钱的办法，因为最近花钱有点大手大脚。"}
   ],
   "reading": {
     "title": "Pagi yang Agak Ribet",
@@ -155,24 +151,9 @@
     "vocab": ["macet", "nyasar", "ngaret", "kabarin", "sekalian", "saldo", "tagihan", "rekening", "nganter", "parkir", "ribet", "hemat", "boros", "pantes"]
   },
   "quiz": [
-    {
-      "question": "“Aku nyasar tadi.” 最自然的意思是：",
-      "options": ["我刚才迷路了", "我刚才停车了", "我刚才接人了"],
-      "answer_index": 0,
-      "explain": "nyasar 是很常见的口语，表示走错路、迷路。"
-    },
-    {
-      "question": "hemat 和 boros 的关系最接近：",
-      "options": ["接人 / 送人", "节省 / 浪费", "余额 / 账单"],
-      "answer_index": 1,
-      "explain": "hemat = 节省；boros = 浪费、花钱大手大脚。"
-    },
-    {
-      "question": "复习：如果想说“顺便告诉我一声”，最自然的是：",
-      "options": ["Sekalian kabarin aku ya.", "Pantes kabarin aku ya.", "Ngaret kabarin aku ya."],
-      "answer_index": 0,
-      "explain": "sekalian = 顺便；kabarin = 告诉、通知，都是之前学过的高频口语。"
-    }
+    {"question": "“Aku nyasar tadi.” 最自然的意思是：", "options": ["我刚才迷路了", "我刚才停车了", "我刚才接人了"], "answer_index": 0, "explain": "nyasar 是很常见的口语，表示走错路、迷路。"},
+    {"question": "hemat 和 boros 的关系最接近：", "options": ["接人 / 送人", "节省 / 浪费", "余额 / 账单"], "answer_index": 1, "explain": "hemat = 节省；boros = 浪费、花钱大手大脚。"},
+    {"question": "复习：如果想说“顺便告诉我一声”，最自然的是：", "options": ["Sekalian kabarin aku ya.", "Pantes kabarin aku ya.", "Ngaret kabarin aku ya."], "answer_index": 0, "explain": "sekalian = 顺便；kabarin = 告诉、通知，都是之前学过的高频口语。"}
   ],
   "output": {
     "task": "用自然口语表达：‘今天路上很堵，司机还走错路了，所以我有点迟到。我已经告诉客户了。回来的时候顺便接我一下，我想省点钱，不想再叫车了。’",
