@@ -1,0 +1,57 @@
+name: Make vocab stats clickable and clean home
+on:
+  push:
+    paths:
+      - '.github/workflows/vocab-stats-clickable-home-clean.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch index.html
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+
+          old='<div class="stats"><div class="stat"><span>词库</span><b id="vocabCount">加载中</b></div><div class="stat"><span>已掌握</span><b id="knownCount">0</b></div><div class="stat"><span>待复习</span><b id="reviewCount">0</b></div><div class="stat"><span>今日完成</span><b id="sessionCount">0 / 2</b></div></div>'
+          new='<div class="stats" id="statsBar"><div class="stat"><span>词库</span><b id="vocabCount">加载中</b></div><button class="stat statAction" type="button" onclick="showKnownWords()" title="查看已掌握词汇"><span>已掌握</span><b id="knownCount">0</b></button><button class="stat statAction" type="button" onclick="go(\'review\')" title="查看待复习词汇"><span>待复习</span><b id="reviewCount">0</b></button><div class="stat"><span>今日完成</span><b id="sessionCount">0 / 2</b></div></div>'
+          if old not in s:
+              raise SystemExit('stats block not found')
+          s=s.replace(old,new,1)
+
+          css_old='.stat{border-radius:16px;padding:14px}.stat span{font-size:12px;color:var(--muted)}'
+          css_new='.stat{border-radius:16px;padding:14px}.statAction{appearance:none;text-align:left;color:inherit;cursor:pointer}.statAction:hover{border-color:#3157d5;box-shadow:0 4px 16px rgba(49,87,213,.10)}.statAction:active{transform:translateY(1px)}.stat span{font-size:12px;color:var(--muted)}'
+          if css_old in s:
+              s=s.replace(css_old,css_new,1)
+
+          go_old="function go(id){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));$(id).classList.add('active');window.scrollTo(0,0);if(id==='calendar')renderCalendar();if(id==='review')renderReview()}window.go=go;"
+          go_new="function go(id){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));$(id).classList.add('active');const sb=$('statsBar');if(sb)sb.style.display=id==='home'?'none':'grid';window.scrollTo(0,0);if(id==='calendar')renderCalendar();if(id==='review')renderReview()}window.go=go;"
+          if go_old not in s:
+              raise SystemExit('go function not found')
+          s=s.replace(go_old,go_new,1)
+
+          anchor='window.applyFilter=applyFilter;'
+          inject="window.applyFilter=applyFilter;function showKnownWords(){go('vocab');const m=memory();FILTER=DB.filter(x=>m[x.word]==='know');idx=0;const search=$('search');if(search)search.value='';const cat=$('cat');if(cat)cat.value='';$('dbStatus').textContent='已掌握 · '+FILTER.length+' 词';renderVocab()}window.showKnownWords=showKnownWords;"
+          if anchor not in s:
+              raise SystemExit('applyFilter anchor not found')
+          s=s.replace(anchor,inject,1)
+
+          init='loadDB();loadArchive();loadAffixes();updateStats();'
+          init_new="loadDB();loadArchive();loadAffixes();updateStats();const _sb=$('statsBar');if(_sb)_sb.style.display='none';"
+          if init not in s:
+              raise SystemExit('init anchor not found')
+          s=s.replace(init,init_new,1)
+
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Make vocab stats clickable and hide stats on home" || exit 0
+          git push
