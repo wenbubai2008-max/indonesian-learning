@@ -18,7 +18,7 @@ jobs:
           p=Path('index.html')
           s=p.read_text(encoding='utf-8')
           s=re.sub(r'<script src="data/pronunciation(?:-fix)?\.js\?v=[^"]+"></script>\s*','',s)
-          tag='<script src="data/pronunciation-fix.js?v=20260831-1"></script>'
+          tag='<script src="data/pronunciation-fix.js?v=20260831-2"></script>'
           s=s.replace('</body>',tag+'\n</body>')
           p.write_text(s,encoding='utf-8')
           PY
@@ -27,5 +27,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html
-          git commit -m "Load reliable Indonesian pronunciation fix" || exit 0
+          git commit -m "Load pronunciation fix v2" || exit 0
           git push
