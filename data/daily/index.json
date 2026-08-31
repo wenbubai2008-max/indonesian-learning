@@ -9,7 +9,7 @@
     {"date":"2026-08-28","am":true,"pm":true,"verified":"original_chat_text","day":6,"am_day":6,"pm_day":7,"am_status":"original_chat_text_corrected"},
     {"date":"2026-08-29","am":true,"pm":true,"verified":"original_chat_text","day":7,"am_day":7,"additional_days":[8],"date_conflict":true,"pm_day":8,"day_note":"08:00 原聊天中 Day 7 与 Day 8 均标题为 2026-08-29，AM 文件保留两课；PM 为独立晚课 Day 8。"},
     {"date":"2026-08-30","am":true,"pm":true,"verified":"original_chat_text","day":9,"am_day":9,"pm_day":9,"am_status":"original_chat_text_corrected","day_note":"08:00 为 Day 9；PM 原聊天未写 Day，按连续晚课顺序归档为 Day 9。"},
-    {"date":"2026-08-31","am":true,"pm":false,"verified":"generated_daily_lesson","day":10,"am_day":10,"am_status":"generated"}
+    {"date":"2026-08-31","am":true,"pm":true,"verified":"generated_daily_lesson","day":10,"am_day":10,"pm_status":"generated","am_status":"generated"}
   ],
   "updated":"2026-08-31",
   "note":"08:00 历史原文迁移：Day 2–4 仅导入聊天中可确认部分并明确标记不完整；Day 7 与 Day 8 的 08:00 标题均为 2026-08-29，冲突按原聊天保留。已有19:00晚课索引保持不删除。"
