@@ -1,0 +1,46 @@
+name: Finalize sequential reading library
+on:
+  push:
+    paths:
+      - '.github/workflows/finalize-reading-library.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update reading library labels and title translations
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,re
+
+          # Add Chinese titles to known reading records.
+          known={
+            'data/daily/2026-08-22-am.json':'学习印尼语',
+            'data/daily/2026-08-31-am.json':'有点忙乱的早晨',
+          }
+          for fn,title_cn in known.items():
+            p=Path(fn)
+            if not p.exists(): continue
+            x=json.loads(p.read_text(encoding='utf-8'))
+            if isinstance(x.get('reading'),dict):
+              x['reading']['title_cn']=title_cn
+              p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          # Rename section and force-load the new reading library script.
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('<h2>今日阅读</h2><span id="readingMeta"','<h2>阅读短文</h2><span id="readingMeta"')
+          s=re.sub(r'<script src="data/reading-sync\.js\?v=[^"]+"></script>',
+                   '<script src="data/reading-sync.js?v=20260831-2"></script>',s)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/daily/2026-08-22-am.json data/daily/2026-08-31-am.json
+          git commit -m "Polish sequential reading library and Chinese titles" || exit 0
+          git push
