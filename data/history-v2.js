@@ -1,6 +1,7 @@
 (function(){
   const style=document.createElement('style');
   style.textContent=`
+    .app.learningMode>.stats{display:none!important}
     .hv-top{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;margin:0 0 12px;padding:13px;border:1px solid var(--line);border-radius:14px;background:#fafbff}
     .hv-top button{border:0;background:#eef3ff;color:var(--blue);font-weight:800;padding:9px 12px;border-radius:10px;cursor:pointer}.hv-top button:disabled{opacity:.35}
     .hv-mid{text-align:center}.hv-mid b{display:block}.hv-mid span{font-size:12px;color:var(--muted)}
@@ -13,8 +14,6 @@
   `;
   document.head.appendChild(style);
 
-  // 免费、无需注册：强制优先使用当前设备/浏览器真正的印尼语 TTS voice。
-  // 旧版只设置 u.lang='id-ID'，部分浏览器仍可能选到非印尼语默认声音。
   let indoVoice=null;
   function pickIndonesianVoice(){
     if(!('speechSynthesis' in window))return null;
@@ -38,12 +37,15 @@
       return;
     }
     const u=new SpeechSynthesisUtterance(String(t));
-    u.voice=voice;
-    u.lang=voice.lang||'id-ID';
-    u.rate=.88;
-    u.pitch=1;
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(u);
+    u.voice=voice;u.lang=voice.lang||'id-ID';u.rate=.88;u.pitch=1;
+    window.speechSynthesis.cancel();window.speechSynthesis.speak(u);
+  };
+
+  const originalGo=window.go;
+  window.go=function(id){
+    const app=document.querySelector('.app');
+    if(app)app.classList.toggle('learningMode',id==='daily');
+    return originalGo(id);
   };
 
   function rows(){return (archive.dates||[]).map(x=>typeof x==='string'?{date:x}:x)}
@@ -78,6 +80,7 @@
   }
   function chips(x){const a=[];if(x.day)a.push(`Day ${x.day}`);a.push(x.session==='pm'?'19:00 晚间学习':'08:00 早间学习');if(x.vocab?.length)a.push(`词汇 ${x.vocab.length}`);if(x.rewrite?.length)a.push(`练习 ${x.rewrite.length}`);if(x.reading)a.push('阅读 1');if(x.dialogue?.lines)a.push('对话 1');if(x.quiz?.length)a.push(`小测 ${x.quiz.length}`);return `<div class="hv-chips">${a.map(t=>`<span class="hv-chip">${esc(t)}</span>`).join('')}</div>`}
   window.openDaily=async function(s,d){
+    const app=document.querySelector('.app');if(app)app.classList.add('learningMode');
     if(!d||!exists(d,s))d=latest(s);
     if(!d){go('daily');$('dailyBody').innerHTML='<div class="empty">暂无课程</div>';return}
     go('daily');$('dailyBody').innerHTML='<div class="loading">加载中…</div>';
