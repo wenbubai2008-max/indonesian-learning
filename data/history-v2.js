@@ -1,107 +1,37 @@
 (function(){
-  const style=document.createElement('style');
-  style.textContent=`
+  const css=`
     .app.learningMode>.stats{display:none!important}
-    .hv-top{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;margin:0 0 12px;padding:13px;border:1px solid var(--line);border-radius:14px;background:#fafbff}
-    .hv-top button{border:0;background:#eef3ff;color:var(--blue);font-weight:800;padding:9px 12px;border-radius:10px;cursor:pointer}.hv-top button:disabled{opacity:.35}
-    .hv-mid{text-align:center}.hv-mid b{display:block}.hv-mid span{font-size:12px;color:var(--muted)}
-    .hv-picker{display:flex;justify-content:center;align-items:center;gap:8px;margin-bottom:16px;flex-wrap:wrap}.hv-picker select{min-width:240px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;background:#fff}
-    .hv-chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}.hv-chip{font-size:12px;font-weight:800;color:var(--blue);background:#eef3ff;border-radius:999px;padding:6px 10px}
-    .hv-sec{border:1px solid var(--line);border-radius:18px;padding:18px;margin:12px 0;background:#fff}.hv-sec h3{margin:0 0 13px;font-size:19px}.hv-no{display:inline-grid;place-items:center;width:29px;height:29px;border-radius:9px;background:#eef3ff;color:var(--blue);font-size:13px;margin-right:8px}
-    .hv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.hv-vocab{border:1px solid var(--line);background:#fbfcff;border-radius:14px;padding:14px;text-align:left}.hv-word{font-size:20px;font-weight:850;color:#202b42;display:flex;align-items:center;gap:7px;flex-wrap:wrap}.hv-num{font-size:14px;color:#4e6fca;font-weight:800}.hv-cn{margin-top:7px;color:#334155;font-weight:700}.hv-vocab>.muted{color:#7a8496}.hv-meta{font-size:12px;color:#52627a;line-height:1.65;margin-top:7px}.hv-ex{margin-top:11px;line-height:1.7;color:#315b93;font-style:normal}.hv-ex i{font-style:normal}.hv-excn{font-size:13px;color:#7b6757;margin-top:3px;line-height:1.6}
-    .hv-sec>.item{text-align:left;line-height:1.7}.hv-sec>.item>b{color:#26364f}.hv-sec>.item>.muted{color:#7b6757;margin-top:3px}.reading{text-align:left!important;color:#26364f;background:#f7faff;border-left:4px solid #91ace8;border-radius:12px;padding:16px;line-height:1.9}.reading+.actions{justify-content:flex-start}.answer{text-align:left;color:#6f5a48;background:#fffaf4;line-height:1.75}
-    .hv-answer{display:none;background:#f7f8fb;border-radius:11px;padding:11px;margin-top:9px;line-height:1.65}.hv-open .hv-answer{display:block}.hv-toggle{border:0;background:#eef1f6;border-radius:9px;padding:7px 10px;margin-top:9px;font-weight:700;cursor:pointer}.hv-note{background:#fff8e8;border:1px solid #f0ddb0;color:#805300;border-radius:11px;padding:10px 12px;margin-top:8px;font-size:13px;line-height:1.6}.historyNotice{background:#fff8e8;border:1px solid #f0ddb0;color:#805300;border-radius:12px;padding:12px 14px;margin:12px 0;line-height:1.65}
-    .hv-quiz-item{text-align:left}.hv-quiz-options{display:grid;gap:9px;margin-top:12px}.hv-choice{width:100%;border:1px solid #dce3ef;background:#fff;border-radius:11px;padding:11px 13px;text-align:left;cursor:pointer;color:#3b465b;font-weight:650;transition:.15s}.hv-choice:hover{border-color:#9fb2df;background:#f8faff}.hv-choice.correct{background:#edf9f0;border-color:#74be86;color:#17652d}.hv-choice.wrong{background:#fff0ef;border-color:#dd8a83;color:#9d2f28}.hv-choice:disabled{cursor:default;opacity:1}.hv-quiz-feedback{display:none;margin-top:10px;padding:10px 12px;border-radius:10px;background:#f5f7fb;color:#586579;font-size:13px;line-height:1.6}.hv-quiz-feedback.show{display:block}
-    @media(max-width:650px){.hv-grid{grid-template-columns:1fr}.hv-top{grid-template-columns:1fr 1fr}.hv-mid{grid-column:1/-1;grid-row:1}.hv-top button{grid-row:2}.hv-picker select{width:100%;min-width:0}.hv-vocab{padding:13px}.reading{padding:13px}}
+    .dailyFixNav{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;margin:0 0 12px;padding:13px;border:1px solid var(--line);border-radius:14px;background:#fafbff}
+    .dailyFixNav button{border:0;background:#eef3ff;color:var(--blue);font-weight:800;padding:9px 12px;border-radius:10px;cursor:pointer}.dailyFixNav button:disabled{opacity:.35}.dailyFixMid{text-align:center}.dailyFixMid b{display:block}.dailyFixMid span{font-size:12px;color:var(--muted)}
+    .dailyFixPicker{display:flex;justify-content:center;align-items:center;gap:8px;margin-bottom:16px;flex-wrap:wrap}.dailyFixPicker select{min-width:240px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;background:#fff}
+    .dailyFixChips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}.dailyFixChip{font-size:12px;font-weight:800;color:var(--blue);background:#eef3ff;border-radius:999px;padding:6px 10px}
+    .dailyFixSec{border:1px solid var(--line);border-radius:18px;padding:18px;margin:12px 0;background:#fff}.dailyFixSec h3{margin:0 0 13px;font-size:19px}.dailyFixNo{display:inline-grid;place-items:center;width:29px;height:29px;border-radius:9px;background:#eef3ff;color:var(--blue);font-size:13px;margin-right:8px}
+    .dailyFixGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.dailyFixVocab{border:1px solid var(--line);background:#fbfcff;border-radius:14px;padding:14px;text-align:left}.dailyFixWord{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:20px;font-weight:850;color:#202b42}.dailyFixNum{font-size:14px;color:#4e6fca;font-weight:850}.dailyFixCn{margin-top:7px;color:#334155;font-weight:700}.dailyFixEn{font-size:13px;color:#7a8496;margin-top:2px}.dailyFixMeta{font-size:12px;color:#52627a;line-height:1.65;margin-top:7px}.dailyFixEx{margin-top:11px;line-height:1.7;color:#315b93}.dailyFixExCn{font-size:13px;color:#7b6757;margin-top:3px;line-height:1.6}
+    .dailyFixItem{text-align:left;border:1px solid var(--line);border-radius:13px;padding:13px;margin-bottom:9px;line-height:1.75}.dailyFixId{color:#284f83;font-weight:700}.dailyFixCnLine{color:#7b6757;margin-top:4px}.dailyFixReading{text-align:left!important;color:#26364f;background:#f7faff;border-left:4px solid #91ace8;border-radius:12px;padding:16px;line-height:1.9}.dailyFixTranslation{text-align:left;color:#6f5a48;background:#fffaf4;border-radius:11px;padding:13px;margin-top:10px;line-height:1.75}.dailyFixActions{display:flex;justify-content:flex-start;margin-top:10px}
+    .dailyFixChoiceWrap{display:grid;gap:9px;margin-top:12px}.dailyFixChoice{width:100%;border:1px solid #dce3ef;background:#fff;border-radius:11px;padding:11px 13px;text-align:left;cursor:pointer;color:#3b465b;font-weight:650}.dailyFixChoice.correct{background:#edf9f0;border-color:#74be86;color:#17652d}.dailyFixChoice.wrong{background:#fff0ef;border-color:#dd8a83;color:#9d2f28}.dailyFixChoice:disabled{opacity:1;cursor:default}.dailyFixFeedback{display:none;margin-top:10px;padding:10px 12px;border-radius:10px;background:#f5f7fb;color:#586579;font-size:13px;line-height:1.6}.dailyFixFeedback.show{display:block}
+    .dailyFixAnswer{display:none;background:#f7f8fb;border-radius:11px;padding:11px;margin-top:9px;line-height:1.65;text-align:left}.dailyFixOpen .dailyFixAnswer{display:block}.dailyFixToggle{border:0;background:#eef1f6;border-radius:9px;padding:7px 10px;margin-top:9px;font-weight:700;cursor:pointer}
+    @media(max-width:650px){.dailyFixGrid{grid-template-columns:1fr}.dailyFixNav{grid-template-columns:1fr 1fr}.dailyFixMid{grid-column:1/-1;grid-row:1}.dailyFixNav button{grid-row:2}.dailyFixPicker select{width:100%;min-width:0}.dailyFixSec{padding:14px}.dailyFixVocab{padding:13px}.dailyFixReading{padding:13px}}
   `;
-  document.head.appendChild(style);
+  const st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
 
-  let indoVoice=null;
-  function pickIndonesianVoice(){
-    if(!('speechSynthesis' in window))return null;
-    const voices=window.speechSynthesis.getVoices()||[];
-    const exact=voices.filter(v=>/^id(?:-ID)?$/i.test(v.lang||''));
-    const byName=voices.filter(v=>/indones|bahasa indonesia|damayanti|gadis|ardi/i.test((v.name||'')+' '+(v.lang||'')));
-    const preferred=[...exact,...byName];
-    indoVoice=preferred.find(v=>/google.*indones|bahasa indonesia|damayanti|gadis|ardi/i.test(v.name||''))||preferred[0]||null;
-    return indoVoice;
-  }
-  pickIndonesianVoice();
-  if('speechSynthesis' in window){
-    window.speechSynthesis.addEventListener?.('voiceschanged',pickIndonesianVoice);
-    window.speechSynthesis.onvoiceschanged=pickIndonesianVoice;
-  }
-  window.speak=function(t){
-    if(!t||!('speechSynthesis' in window))return;
-    const voice=pickIndonesianVoice();
-    if(!voice){
-      alert('当前浏览器/系统没有检测到印尼语语音（id-ID）。为了避免再次读成其他语言，本次不播放。请在系统语音设置中添加 Indonesian / Bahasa Indonesia voice。');
-      return;
-    }
-    const u=new SpeechSynthesisUtterance(String(t));
-    u.voice=voice;u.lang=voice.lang||'id-ID';u.rate=.88;u.pitch=1;
-    window.speechSynthesis.cancel();window.speechSynthesis.speak(u);
-  };
+  const baseGo=window.go;
+  window.go=function(id){const app=document.querySelector('.app');if(app)app.classList.toggle('learningMode',id==='daily');return baseGo(id)};
 
-  const originalGo=window.go;
-  window.go=function(id){
-    const app=document.querySelector('.app');
-    if(app)app.classList.toggle('learningMode',id==='daily');
-    return originalGo(id);
-  };
-
+  function esc2(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[m]))}
   function rows(){return (archive.dates||[]).map(x=>typeof x==='string'?{date:x}:x)}
   function dates(s){return rows().filter(x=>x[s]).map(x=>x.date).sort()}
   function exists(d,s){const r=rows().find(x=>x.date===d);return !!(r&&r[s])}
   function latest(s){const a=dates(s);return a.length?a[a.length-1]:null}
-  function dayOf(r,s){return r?(r[s+'_day']??r.day):null}
-  function label(d,s){const r=rows().find(x=>x.date===d),day=dayOf(r,s);return day?`${d} · Day ${day}`:d}
-  function nav(d,s){const a=dates(s),i=a.indexOf(d),p=i>0?a[i-1]:null,n=i>=0&&i<a.length-1?a[i+1]:null;return `<div class="hv-top"><button ${p?'':'disabled'} ${p?`onclick="openDaily('${s}','${p}')"`:''}>← 上一天</button><div class="hv-mid"><b>${esc(d)}</b><span>${s==='am'?'08:00 早间学习':'19:00 晚间学习'}</span></div><button ${n?'':'disabled'} ${n?`onclick="openDaily('${s}','${n}')"`:''}>下一天 →</button></div><div class="hv-picker"><span class="muted">按日期查看</span><select onchange="openDaily('${s}',this.value)">${a.map(x=>`<option value="${x}" ${x===d?'selected':''}>${esc(label(x,s))}</option>`).join('')}</select></div>`}
-  function sec(no,title,body){return `<div class="hv-sec"><h3><span class="hv-no">${String(no).padStart(2,'0')}</span>${esc(title)}</h3>${body}</div>`}
-  function indoDisplay(text,list){
-    let out=String(text??'');
-    const map={pantes:'pantés',ngaret:'ngarét',beres:'bérés',ngerepotin:'ngerépotin'};
-    (list||[]).forEach(v=>{if(v.word&&v.display&&v.word!==v.display)map[String(v.word).toLowerCase()]=v.display});
-    Object.keys(map).sort((a,b)=>b.length-a.length).forEach(k=>{
-      const re=new RegExp(`(^|[^A-Za-zÀ-ÿ])(${k})(?=$|[^A-Za-zÀ-ÿ])`,'gi');
-      out=out.replace(re,(m,p,w)=>p+(w[0]===w[0].toUpperCase()?map[k][0].toUpperCase()+map[k].slice(1):map[k]));
-    });
-    return out;
-  }
-  function vocab(list){return `<div class="hv-grid">${(list||[]).map(v=>`<div class="hv-vocab"><div class="hv-word">${v.order?`<span class="hv-num">${v.order}.</span>`:''}<span>${esc(v.display||v.word)}</span><button class="sound" onclick='speak(${JSON.stringify(v.audio_text||v.word)})'>🔊</button></div><div class="hv-cn">${esc(v.cn||'')}</div>${v.en?`<div class="muted">${esc(v.en)}</div>`:''}${v.standard?`<div class="hv-meta">标准：${esc(v.standard)}</div>`:''}${v.colloquial?`<div class="hv-meta">口语：${esc(v.colloquial)}</div>`:''}${(v.root||v.formation)?`<div class="hv-meta">${v.root?`词根：${esc(v.root)}<br>`:''}${esc(v.formation||'')}</div>`:''}${v.family?.length?`<div class="hv-meta">词族：${esc(v.family.join(' / '))}</div>`:''}${v.synonym_note?`<div class="hv-meta">辨析：${esc(v.synonym_note)}</div>`:''}${v.example?`<div class="hv-ex">${esc(indoDisplay(v.example,list))}</div>`:''}${v.example_cn?`<div class="hv-excn">${esc(v.example_cn)}</div>`:''}${v.source_note?`<div class="hv-note">${esc(v.source_note)}</div>`:''}</div>`).join('')}</div>`}
-  function simpleItems(items,list){return (items||[]).map(r=>`<div class="item">${esc(indoDisplay(typeof r==='string'?r:(r.text||r.word||''),list))}</div>`).join('')}
-  function affix(x){return (x.items||[]).map(v=>`<div class="item"><b>${esc(v.form||'')}</b>${v.standard?` <span class="muted">标准：${esc(v.standard)}</span>`:''}<div>${esc(v.cn||'')}</div>${(v.root||v.formation)?`<div class="hv-meta">${v.root?`词根：${esc(v.root)}<br>`:''}${esc(v.formation||'')}</div>`:''}${v.colloquial?`<div class="hv-meta">口语：${esc(v.colloquial)}</div>`:''}${v.example?`<div class="hv-ex">${esc(v.example)}</div>`:''}${v.example_cn?`<div class="hv-excn">${esc(v.example_cn)}</div>`:''}${v.usage_note?`<div class="hv-note">${esc(v.usage_note)}</div>`:''}</div>`).join('')+(x.note?`<div class="hv-note">${esc(x.note)}</div>`:'')}
-  function exercises(list){return (list||[]).map((r,i)=>`<div class="item"><b>${i+1}. ${esc(r.task||'')}</b>${r.reference_unavailable?`<div class="hv-note">${esc(r.source_note||'原聊天没有提供参考答案。')}</div>`:`<button class="hv-toggle" onclick="this.parentElement.classList.toggle('hv-open')">参考答案</button><div class="hv-answer"><b>${esc(r.reference_answer||'')}</b>${r.reference_cn?`<br><span class="muted">${esc(r.reference_cn)}</span>`:''}${r.alternate_answer?`<br><br>其他原答案：${esc(r.alternate_answer)}`:''}${r.standard_answer?`<br><br><b>标准版</b><br>${esc(r.standard_answer)}`:''}</div>`}</div>`).join('')}
-  window.gradeHistoryQuiz=function(btn,correct,explain){
-    const box=btn.closest('.hv-quiz-item');if(!box||box.dataset.done==='1')return;box.dataset.done='1';
-    const choices=[...box.querySelectorAll('.hv-choice')];choices.forEach(x=>x.disabled=true);
-    if(correct){btn.classList.add('correct')}else{btn.classList.add('wrong');const right=box.querySelector('.hv-choice[data-correct="1"]');if(right)right.classList.add('correct')}
-    const fb=box.querySelector('.hv-quiz-feedback');if(fb){fb.textContent=(correct?'答对了。':'答错了。')+(explain||'');fb.classList.add('show')}
-  };
-  function content(x){let no=1,h='';
-    if(x.vocab?.length)h+=sec(no++,'今日词汇',vocab(x.vocab));
-    if(x.usage_notes?.length)h+=sec(no++,'用法提示',simpleItems(x.usage_notes,x.vocab));
-    if(x.affix_training?.items?.length)h+=sec(no++,x.affix_training.title||'词根 / 词形训练',affix(x.affix_training));
-    if(x.sentences?.length)h+=sec(no++,'高频句子',x.sentences.map(v=>`<div class="item"><b>${esc(indoDisplay(v.id||v.text||'',x.vocab))}</b><div class="muted">${esc(v.cn||'')}</div></div>`).join(''));
-    if(x.rewrite?.length)h+=sec(no++,'造句 / 改写',exercises(x.rewrite));
-    if(x.reading)h+=sec(no++,'阅读'+(x.reading.title?` · ${x.reading.title}`:''),`<div class="reading">${esc(indoDisplay(x.reading.text||'',x.vocab)).replace(/\n/g,'<br>')}</div><div class="actions"><button class="secondary" onclick='speak(${JSON.stringify(x.reading.text||'')})'>🔊 朗读全文</button></div><div class="answer">${esc(x.reading.cn||'').replace(/\n/g,'<br>')}</div>`);
-    if(x.reading_notes?.length)h+=sec(no++,'阅读重点',simpleItems(x.reading_notes,x.vocab));
-    if(x.reading_questions?.length)h+=sec(no++,'阅读问题',x.reading_questions.map((q,i)=>`<div class="item"><b>${i+1}. ${esc(indoDisplay(q.question||'',x.vocab))}</b><div class="muted">${esc(q.cn||'')}</div></div>`).join(''));
-    if(x.reading_task)h+=sec(no++,'阅读复述',exercises([x.reading_task]));
-    if(x.dialogue?.lines)h+=sec(no++,x.dialogue.title||'情景对话',x.dialogue.lines.map(l=>`<div class="item"><b>${esc(l.speaker||'')}${l.speaker?': ':':''}</b>${esc(indoDisplay(l.id||'',x.vocab))}<div class="muted">${esc(l.cn||'')}</div></div>`).join('')+(x.dialogue.notes?.length?`<div class="hv-note">${x.dialogue.notes.map(esc).join('<br>')}</div>`:''));
-    if(x.quiz?.length)h+=sec(no++,'小测',x.quiz.map((q,i)=>`<div class="item hv-quiz-item"><b>${i+1}. ${esc(indoDisplay(q.question||'',x.vocab))}</b>${q.answer_unavailable?`<div class="hv-note">原始历史记录没有答案，因此不补写。</div>`:`<div class="hv-quiz-options">${(q.options||[]).map((o,j)=>`<button class="hv-choice" data-correct="${j===q.answer_index?'1':'0'}" onclick='gradeHistoryQuiz(this,${j===q.answer_index},${JSON.stringify(q.explain||'')})'>${String.fromCharCode(65+j)}. ${esc(indoDisplay(o,x.vocab))}</button>`).join('')}</div><div class="hv-quiz-feedback"></div>`}</div>`).join(''));
-    if(x.output)h+=sec(no++,'主动输出',`<div class="item">${esc(x.output.task||'')}${x.output.reference_unavailable?`<div class="hv-note">${esc(x.output.source_note||'原始历史消息未提供参考答案。')}</div>`:`<br><button class="hv-toggle" onclick="this.parentElement.classList.toggle('hv-open')">参考答案</button><div class="hv-answer"><b>自然口语 / 原答案</b><br>${esc(indoDisplay(x.output.reference_answer||'',x.vocab))}<br><span class="muted">${esc(x.output.reference_cn||'')}</span>${x.output.standard_answer?`<br><br><b>标准版</b><br>${esc(x.output.standard_answer)}`:''}</div>`}</div>`);
-    if(x.focus?.items?.length)h+=sec(no++,x.focus.title||'今日重点',simpleItems(x.focus.items,x.vocab));
-    if(x.review?.length)h+=sec(no++,'复习',simpleItems(x.review,x.vocab));
-    if(x.recovered_sections?.length)h+=sec(no++,'历史恢复摘要',x.recovered_sections.map(r=>`<div class="item"><b>${esc(r.title||'')}</b><div class="muted">${esc(r.summary||'')}</div></div>`).join(''));
-    return h;
-  }
-  function chips(x){const a=[];if(x.day)a.push(`Day ${x.day}`);a.push(x.session==='pm'?'19:00 晚间学习':'08:00 早间学习');if(x.vocab?.length)a.push(`词汇 ${x.vocab.length}`);if(x.rewrite?.length)a.push(`练习 ${x.rewrite.length}`);if(x.reading)a.push('阅读 1');if(x.dialogue?.lines)a.push('对话 1');if(x.quiz?.length)a.push(`小测 ${x.quiz.length}`);return `<div class="hv-chips">${a.map(t=>`<span class="hv-chip">${esc(t)}</span>`).join('')}</div>`}
-  window.openDaily=async function(s,d){
-    const app=document.querySelector('.app');if(app)app.classList.add('learningMode');
-    if(!d||!exists(d,s))d=latest(s);
-    if(!d){go('daily');$('dailyBody').innerHTML='<div class="empty">暂无课程</div>';return}
-    go('daily');$('dailyBody').innerHTML='<div class="loading">加载中…</div>';
-    try{const x=await fetchJSON(`data/daily/${d}-${s}.json`);$('dailyTitle').textContent=x.title||(s==='am'?'08:00 早间学习':'19:00 晚间学习');$('dailyMeta').textContent=d;let h=nav(d,s)+chips(x);if(x.source_note)h+=`<div class="historyNotice">${esc(x.source_note)}</div>`;if(x.history_complete===false)h+=`<div class="historyNotice">历史记录不完整：页面只展示原聊天能够直接确认的部分，缺失内容未补造。</div>`;if(x.historical_reconstruction&&x.recovery_note)h+=`<div class="historyNotice">${esc(x.recovery_note)}</div>`;h+=content(x);h+=`<div style="text-align:center;margin-top:18px"><button class="primary" onclick="completeSession('${d}','${s}')">${isDone(d,s)?'✓ 已学完':'我学完了'}</button></div>`;$('dailyBody').innerHTML=h}catch(e){$('dailyBody').innerHTML=`<div class="error">课程读取失败<div class="diag">${esc(e.message)}</div></div>`}
-  };
+  function dayOf(d,s){const r=rows().find(x=>x.date===d);return r?(r[s+'_day']??r.day):null}
+  function titleLabel(d,s){const day=dayOf(d,s);return day?d+' · Day '+day:d}
+  function nav(d,s){const a=dates(s),i=a.indexOf(d),p=i>0?a[i-1]:null,n=i>=0&&i<a.length-1?a[i+1]:null;return `<div class="dailyFixNav"><button ${p?'':'disabled'} ${p?`onclick="openDaily('${s}','${p}')"`:''}>← 上一天</button><div class="dailyFixMid"><b>${esc2(d)}</b><span>${s==='am'?'08:00 早间学习':'19:00 晚间学习'}</span></div><button ${n?'':'disabled'} ${n?`onclick="openDaily('${s}','${n}')"`:''}>下一天 →</button></div><div class="dailyFixPicker"><span class="muted">按日期查看</span><select onchange="openDaily('${s}',this.value)">${a.map(x=>`<option value="${x}" ${x===d?'selected':''}>${esc2(titleLabel(x,s))}</option>`).join('')}</select></div>`}
+  function chips(x){const a=[];if(x.day)a.push('Day '+x.day);a.push(x.session==='pm'?'19:00 晚间学习':'08:00 早间学习');if(x.vocab?.length)a.push('词汇 '+x.vocab.length);if(x.sentences?.length)a.push('句子 '+x.sentences.length);if(x.reading)a.push('阅读 1');if(x.quiz?.length)a.push('小测 '+x.quiz.length);return `<div class="dailyFixChips">${a.map(t=>`<span class="dailyFixChip">${esc2(t)}</span>`).join('')}</div>`}
+  function sec(no,title,body){return `<div class="dailyFixSec"><h3><span class="dailyFixNo">${String(no).padStart(2,'0')}</span>${esc2(title)}</h3>${body}</div>`}
+  function displayText(text,list){let out=String(text??'');const map={pantes:'pantés',ngaret:'ngarét',beres:'bérés',ngerepotin:'ngerépotin',rekening:'rékening',hemat:'hémat'};(list||[]).forEach(v=>{if(v.word&&v.display)map[String(v.word).toLowerCase()]=v.display});Object.keys(map).sort((a,b)=>b.length-a.length).forEach(k=>{const re=new RegExp('(^|[^A-Za-zÀ-ÿ])('+k+')(?=$|[^A-Za-zÀ-ÿ])','gi');out=out.replace(re,(m,p,w)=>p+(w[0]===w[0].toUpperCase()?map[k][0].toUpperCase()+map[k].slice(1):map[k]))});return out}
+  function vocabHtml(list){return `<div class="dailyFixGrid">${(list||[]).map((v,i)=>`<div class="dailyFixVocab"><div class="dailyFixWord"><span class="dailyFixNum">${esc2(v.order??(i+1))}.</span><span>${esc2(v.display||v.word)}</span><button class="sound" onclick='speak(${JSON.stringify(v.audio_text||v.word)})'>🔊</button></div><div class="dailyFixCn">${esc2(v.cn||'')}</div>${v.en?`<div class="dailyFixEn">${esc2(v.en)}</div>`:''}${(v.root||v.formation)?`<div class="dailyFixMeta">${v.root?`词根：${esc2(v.root)}<br>`:''}${esc2(v.formation||'')}</div>`:''}${v.synonym_note?`<div class="dailyFixMeta">辨析：${esc2(v.synonym_note)}</div>`:''}${v.example?`<div class="dailyFixEx">${esc2(displayText(v.example,list))}</div>`:''}${v.example_cn?`<div class="dailyFixExCn">${esc2(v.example_cn)}</div>`:''}</div>`).join('')}</div>`}
+  window.dailyFixGrade=function(btn,correct,explain){const box=btn.closest('.dailyFixItem');if(!box||box.dataset.done==='1')return;box.dataset.done='1';const all=[...box.querySelectorAll('.dailyFixChoice')];all.forEach(b=>b.disabled=true);if(correct)btn.classList.add('correct');else{btn.classList.add('wrong');const right=box.querySelector('[data-correct="1"]');if(right)right.classList.add('correct')}const fb=box.querySelector('.dailyFixFeedback');if(fb){fb.textContent=(correct?'答对了。':'答错了。')+(explain||'');fb.classList.add('show')}};
+  function quizHtml(q,i,list){if(q.answer_unavailable)return `<div class="dailyFixItem"><b>${i+1}. ${esc2(displayText(q.question||'',list))}</b><div class="dailyFixMeta">原始记录未提供答案</div></div>`;const opts=q.options||[];return `<div class="dailyFixItem"><b>${i+1}. ${esc2(displayText(q.question||'',list))}</b><div class="dailyFixChoiceWrap">${opts.map((o,j)=>`<button class="dailyFixChoice" data-correct="${j===q.answer_index?1:0}" onclick='dailyFixGrade(this,${j===q.answer_index},${JSON.stringify(q.explain||'')})'>${String.fromCharCode(65+j)}. ${esc2(displayText(o,list))}</button>`).join('')}</div><div class="dailyFixFeedback"></div></div>`}
+  function outputHtml(o,list){if(!o)return '';if(o.reference_unavailable)return `<div class="dailyFixItem">${esc2(o.task||'')}<div class="dailyFixMeta">原记录未提供参考答案</div></div>`;return `<div class="dailyFixItem">${esc2(o.task||'')}<br><button class="dailyFixToggle" onclick="this.parentElement.classList.toggle('dailyFixOpen')">参考答案</button><div class="dailyFixAnswer"><div class="dailyFixId">${esc2(displayText(o.reference_answer||'',list))}</div>${o.reference_cn?`<div class="dailyFixCnLine">${esc2(o.reference_cn)}</div>`:''}${o.standard_answer?`<br><b>标准版</b><br>${esc2(o.standard_answer)}`:''}</div></div>`}
+  function content(x){let no=1,h='';if(x.vocab?.length)h+=sec(no++,'今日词汇',vocabHtml(x.vocab));if(x.sentences?.length)h+=sec(no++,'高频句子',x.sentences.map(v=>`<div class="dailyFixItem"><div class="dailyFixId">${esc2(displayText(v.id||v.text||'',x.vocab))}</div><div class="dailyFixCnLine">${esc2(v.cn||'')}</div></div>`).join(''));if(x.reading)h+=sec(no++,'阅读'+(x.reading.title?' · '+x.reading.title:''),`<div class="dailyFixReading">${esc2(displayText(x.reading.text||'',x.vocab)).replace(/\n/g,'<br>')}</div><div class="dailyFixActions"><button class="secondary" onclick='speak(${JSON.stringify(x.reading.text||'')})'>🔊 朗读全文</button></div><div class="dailyFixTranslation">${esc2(x.reading.cn||'').replace(/\n/g,'<br>')}</div>`);if(x.quiz?.length)h+=sec(no++,'小测',x.quiz.map((q,i)=>quizHtml(q,i,x.vocab)).join(''));if(x.output)h+=sec(no++,'主动输出',outputHtml(x.output,x.vocab));if(x.review?.length)h+=sec(no++,'复习',x.review.map(r=>`<div class="dailyFixItem">${esc2(displayText(typeof r==='string'?r:(r.text||''),x.vocab))}</div>`).join(''));if(x.dialogue?.lines)h+=sec(no++,x.dialogue.title||'情景对话',x.dialogue.lines.map(l=>`<div class="dailyFixItem"><div class="dailyFixId"><b>${esc2(l.speaker||'')}</b>${l.speaker?': ':''}${esc2(displayText(l.id||'',x.vocab))}</div><div class="dailyFixCnLine">${esc2(l.cn||'')}</div></div>`).join(''));return h}
+  window.openDaily=async function(s,d){const app=document.querySelector('.app');if(app)app.classList.add('learningMode');if(!d||!exists(d,s))d=latest(s);if(!d){go('daily');$('dailyBody').innerHTML='<div class="empty">暂无课程</div>';return}go('daily');$('dailyBody').innerHTML='<div class="loading">加载中…</div>';try{const x=await fetchJSON(`data/daily/${d}-${s}.json`);$('dailyTitle').textContent=x.title||(s==='am'?'08:00 早间学习':'19:00 晚间学习');$('dailyMeta').textContent=d;let h=nav(d,s)+chips(x);if(x.source_note)h+=`<div class="historyNotice">${esc2(x.source_note)}</div>`;if(x.history_complete===false||x.historical_reconstruction)h+=`<div class="historyNotice">历史记录不完整：仅展示可确认的原始内容。</div>`;h+=content(x);h+=`<div style="text-align:center;margin-top:18px"><button class="primary" onclick="completeSession('${d}','${s}')">${isDone(d,s)?'✓ 已学完':'我学完了'}</button></div>`;$('dailyBody').innerHTML=h}catch(e){$('dailyBody').innerHTML=`<div class="error">课程读取失败<div class="diag">${esc2(e.message)}</div></div>`}}
 })();
