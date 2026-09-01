@@ -1,0 +1,255 @@
+{
+  "date": "2026-09-01",
+  "session": "pm",
+  "time": "19:00",
+  "level": "A2+ → B1",
+  "title": "2026年9月1日｜19:00 晚间学习｜转折、判断与理解",
+  "vocab": [
+    {
+      "word": "akhirnya",
+      "display": "akhirnya",
+      "audio_text": "akhirnya",
+      "cn": "终于；最后结果是",
+      "en": "finally; in the end",
+      "root": "akhir",
+      "formation": "akhir + -nya → akhirnya。常见词族：akhir（最后）、berakhir（结束）、akhirnya（终于/最后）。",
+      "example": "Akhirnya masalah itu selesai juga.",
+      "example_cn": "那个问题终于解决了。",
+      "usage_note": "非常高频，既能表示‘终于’，也能表示前面一连串事情之后的最终结果。"
+    },
+    {
+      "word": "sebenarnya",
+      "display": "sebenarnya",
+      "audio_text": "sebenarnya",
+      "cn": "其实；实际上",
+      "en": "actually; in fact",
+      "root": "benar",
+      "formation": "se- + benar + -nya → sebenarnya。常见词族：benar（正确）、sebenarnya（其实）、kebenaran（真相/真实性）。",
+      "example": "Sebenarnya aku udah tahu dari kemarin.",
+      "example_cn": "其实我从昨天就已经知道了。",
+      "usage_note": "日常解释、纠正印象时非常常用；口语和标准语都自然。"
+    },
+    {
+      "word": "justru",
+      "display": "justru",
+      "audio_text": "justru",
+      "cn": "反而；恰恰",
+      "en": "instead; on the contrary; precisely",
+      "root": "",
+      "formation": "基础副词，无需拆词缀。",
+      "example": "Justru sekarang aku lebih tenang.",
+      "example_cn": "反而现在我更平静了。",
+      "usage_note": "常用来表达结果和预期相反，比 malah 更偏‘恰恰相反/反而正是’。"
+    },
+    {
+      "word": "meskipun",
+      "display": "meskipun",
+      "audio_text": "meskipun",
+      "cn": "虽然；即使",
+      "en": "although; even though",
+      "root": "",
+      "formation": "固定连接词，通常整体记忆。",
+      "example": "Meskipun capek, aku tetap lanjut kerja.",
+      "example_cn": "虽然累，我还是继续工作。",
+      "usage_note": "非常常见的让步连接词；口语中 walaupun 也很常见。"
+    },
+    {
+      "word": "tetap",
+      "display": "tetap",
+      "audio_text": "tetap",
+      "cn": "仍然；还是；保持",
+      "en": "still; remain; keep",
+      "root": "tetap",
+      "formation": "基础词。常见词族：tetap（保持/仍然）、menetapkan（确定/规定）、ketetapan（决定/规定）。",
+      "example": "Tetap kabarin aku kalau ada perubahan.",
+      "example_cn": "如果有变化还是告诉我一声。",
+      "usage_note": "日常口语极高频，常和 meskipun/walaupun 搭配：meskipun..., tetap...。"
+    },
+    {
+      "word": "bahkan",
+      "display": "bahkan",
+      "audio_text": "bahkan",
+      "cn": "甚至；甚至还",
+      "en": "even; moreover",
+      "root": "",
+      "formation": "基础副词，无需拆词缀。",
+      "example": "Bahkan dia sendiri belum tahu hasilnya.",
+      "example_cn": "甚至连他自己都还不知道结果。",
+      "usage_note": "用来加强信息层级，非常适合从 A2 过渡到 B1 的连续表达。"
+    },
+    {
+      "word": "berarti",
+      "display": "berarti",
+      "audio_text": "berarti",
+      "cn": "意味着；也就是说",
+      "en": "mean; that means",
+      "root": "arti",
+      "formation": "ber- + arti → berarti。常见词族：arti（意思）、berarti（意味着）、mengartikan（解释为）。",
+      "example": "Berarti besok kita nggak perlu datang pagi-pagi.",
+      "example_cn": "也就是说，明天我们不用一大早来。",
+      "usage_note": "聊天里极常用来根据前一句得出结论，接近中文‘那就是说……’。"
+    },
+    {
+      "word": "termasuk",
+      "display": "termasuk",
+      "audio_text": "termasuk",
+      "cn": "包括；属于",
+      "en": "include; be included; belong to",
+      "root": "masuk",
+      "formation": "ter- + masuk → termasuk。常见词族：masuk（进入）、memasukkan（放入）、termasuk（包括/属于）。",
+      "example": "Termasuk biaya parkir juga, ya?",
+      "example_cn": "也包括停车费，对吧？",
+      "usage_note": "日常和工作都高频，既能表示‘包括’，也能表示‘属于某类’。"
+    },
+    {
+      "word": "menganggap",
+      "display": "menganggap",
+      "audio_text": "menganggap",
+      "cn": "认为；把……看作",
+      "en": "consider; regard; think of as",
+      "root": "anggap",
+      "formation": "meN- + anggap → menganggap。常见词族：anggap（认为）、menganggap（认为/视为）、anggapan（看法/假设）。",
+      "example": "Aku menganggap masalah ini cukup penting.",
+      "example_cn": "我认为这个问题挺重要。",
+      "usage_note": "标准语和工作中很常用；日常聊天也自然，口语里有时直接说 aku rasa / menurutku。"
+    },
+    {
+      "word": "memahami",
+      "display": "memahami",
+      "audio_text": "memahami",
+      "cn": "理解；明白",
+      "en": "understand; comprehend",
+      "root": "paham",
+      "formation": "meN- + paham + -i → memahami。常见词族：paham（明白）、memahami（理解）、pemahaman（理解/认识）。",
+      "example": "Aku memahami maksud kamu, kok.",
+      "example_cn": "我明白你的意思啊。",
+      "usage_note": "标准形式 memahami；聊天里直接说 paham 更短更自然，但 memahami 很值得主动掌握。"
+    },
+    {
+      "word": "menjaga",
+      "display": "menjaga",
+      "audio_text": "menjaga",
+      "cn": "保持；照顾；守护",
+      "en": "keep; maintain; take care of; guard",
+      "root": "jaga",
+      "formation": "meN- + jaga → menjaga。常见词族：jaga（看守/保持）、menjaga（保持/照顾）、penjaga（看守者）。",
+      "example": "Menjaga komunikasi tetap jelas itu penting.",
+      "example_cn": "保持沟通清楚很重要。",
+      "usage_note": "很高频，既能用于 menjaga kesehatan，也能说 menjaga hubungan / menjaga komunikasi。"
+    },
+    {
+      "word": "kemungkinan",
+      "display": "kemungkinan",
+      "audio_text": "kemungkinan",
+      "cn": "可能性；有可能",
+      "en": "possibility; likelihood",
+      "root": "mungkin",
+      "formation": "ke- + mungkin + -an → kemungkinan。常见词族：mungkin（可能）、kemungkinan（可能性）、kemungkinan besar（很可能）。",
+      "example": "Kemungkinan besok jadwalnya berubah.",
+      "example_cn": "明天的安排有可能会变。",
+      "usage_note": "办公室和日常判断都非常实用；常见口语块：kemungkinan besar = 很可能。"
+    }
+  ],
+  "morphology": [
+    {
+      "form": "sebenarnya",
+      "root": "benar",
+      "formation": "se- + benar + -nya → sebenarnya",
+      "explain_cn": "benar 是‘正确/真实’，sebenarnya 用来引出‘其实、实际情况是……’。",
+      "example": "Sebenarnya aku nggak keberatan.",
+      "example_cn": "其实我并不介意。"
+    },
+    {
+      "form": "berarti",
+      "root": "arti",
+      "formation": "ber- + arti → berarti",
+      "explain_cn": "arti 是‘意思’，berarti 表示‘有这个意思/意味着’，聊天里常用来推导结论。",
+      "example": "Berarti kita lanjut besok aja.",
+      "example_cn": "也就是说，我们明天再继续吧。"
+    },
+    {
+      "form": "termasuk",
+      "root": "masuk",
+      "formation": "ter- + masuk → termasuk",
+      "explain_cn": "从‘进入’延伸成‘被算进去、包括在内’。",
+      "example": "Harga itu termasuk pajak belum?",
+      "example_cn": "那个价格包含税了吗？"
+    },
+    {
+      "form": "menganggap",
+      "root": "anggap",
+      "formation": "meN- + anggap → menganggap",
+      "explain_cn": "表示主动形成一个判断：认为、把某事看作。",
+      "example": "Aku menganggap ini cuma salah paham.",
+      "example_cn": "我觉得这只是个误会。"
+    },
+    {
+      "form": "memahami",
+      "root": "paham",
+      "formation": "meN- + paham + -i → memahami",
+      "explain_cn": "paham 是‘明白’，memahami 更完整地表示‘理解某人/某事’。",
+      "example": "Aku memahami situasinya sekarang.",
+      "example_cn": "我现在理解这个情况了。"
+    },
+    {
+      "form": "kemungkinan",
+      "root": "mungkin",
+      "formation": "ke- + mungkin + -an → kemungkinan",
+      "explain_cn": "mungkin 是‘可能’，kemungkinan 把它名词化，表示‘可能性’。",
+      "example": "Kemungkinan besar dia datang agak telat.",
+      "example_cn": "他很可能会晚一点到。"
+    }
+  ],
+  "rewrite": [
+    {
+      "task": "用自然口语说：其实我一开始也这么想。",
+      "reference_answer": "Sebenarnya awalnya aku juga mikir gitu.",
+      "reference_cn": "其实我一开始也这么想。"
+    },
+    {
+      "task": "翻译：虽然有点麻烦，我还是会处理完。",
+      "reference_answer": "Meskipun agak ribet, aku tetap bakal beresin.",
+      "reference_cn": "虽然有点麻烦，我还是会把它处理完。"
+    },
+    {
+      "task": "改写成更自然的聊天表达：Itu berarti kita harus menunggu sampai besok.",
+      "reference_answer": "Berarti kita nunggu sampai besok, ya.",
+      "reference_cn": "也就是说，我们得等到明天，对吧。"
+    },
+    {
+      "task": "用 justru 造句：我以为会更难，结果反而更简单。",
+      "reference_answer": "Aku kira bakal lebih susah, ternyata justru lebih gampang.",
+      "reference_cn": "我以为会更难，结果反而更简单。"
+    },
+    {
+      "task": "翻译：很可能明天时间会变，如果有变化还是告诉我。",
+      "reference_answer": "Kemungkinan besar besok waktunya berubah. Kalau ada perubahan, tetap kabarin aku ya.",
+      "reference_cn": "很可能明天时间会变，如果有变化还是告诉我。"
+    }
+  ],
+  "reading": {
+    "title": "Ternyata Rencananya Berubah",
+    "text": "Sebenarnya pagi tadi aku kira jadwal hari ini bakal lancar. Tapi siang ada kabar kalau meeting sama klien kemungkinan harus dimundurin. Aku sempat menganggap masalahnya karena mereka belum siap, tapi ternyata justru tim kita yang masih nunggu satu dokumen. Berarti kami harus ubah urutan kerja dulu. Meskipun agak ribet, aku tetap lanjut beresin bagian lain biar waktu nggak kebuang. Bahkan sambil nunggu, aku sekalian cek stok barang yang mulai sedikit. Sore tadi jalan juga macet dan driver sempat nyasar sampai harus putar balik. Akhirnya kami sampai kantor agak telat, tapi semuanya masih aman. Dari situ aku makin memahami satu hal: kalau situasi berubah, yang penting tetap jaga komunikasi dan kasih kabar yang jelas.",
+    "cn": "其实今天早上我以为今天的安排会很顺利。但中午收到消息，说和客户的会议很可能要往后推。我一开始还以为是他们没准备好，结果反而是我们团队还在等一份文件。也就是说，我们得先调整工作顺序。虽然有点麻烦，我还是继续把其他部分处理完，免得浪费时间。甚至在等的时候，我还顺便查了一下开始变少的库存。下午路上也堵车，司机一度走错路，最后还得掉头。最终我们稍微晚一点到办公室，不过整体还没问题。通过这件事我更明白一件事：情况发生变化时，最重要的是保持沟通，并把信息说清楚。",
+    "vocab": ["sebenarnya", "kemungkinan", "menganggap", "justru", "berarti", "meskipun", "tetap", "bahkan", "akhirnya", "memahami", "macet", "nyasar", "putar balik", "stok"]
+  },
+  "dialogue": {
+    "lines": [
+      {"speaker": "A", "id": "Meeting besok jadi jam sepuluh, ya?", "cn": "明天会议还是十点，对吧？"},
+      {"speaker": "B", "id": "Kemungkinan berubah. Klien baru kasih kabar tadi.", "cn": "有可能会变。客户刚才才通知。"},
+      {"speaker": "A", "id": "Oh, berarti belum pasti dong?", "cn": "哦，也就是说还没确定，对吧？"},
+      {"speaker": "B", "id": "Iya. Sebenarnya mereka mau pagi, tapi ada urusan mendadak.", "cn": "对。其实他们本来想上午，但临时有事。"},
+      {"speaker": "A", "id": "Aku kira jadi lebih ribet.", "cn": "我还以为会变得更麻烦。"},
+      {"speaker": "B", "id": "Justru nggak terlalu. Kita tinggal atur ulang aja.", "cn": "反而没有太麻烦。我们重新安排一下就行。"},
+      {"speaker": "A", "id": "Oke. Meskipun berubah, aku tetap siapin bahan dari sekarang.", "cn": "好。虽然会变，我还是从现在开始准备材料。"},
+      {"speaker": "B", "id": "Sip. Kalau ada update, aku langsung kabarin.", "cn": "行。有更新的话我马上告诉你。"}
+    ]
+  },
+  "review": [
+    "5分钟复盘：先口头说出 sebenarnya / justru / meskipun / tetap / berarti 的中文功能，再各说一个自己的句子。",
+    "把 meskipun... tetap... 当成一个完整句型练：虽然……，还是……。",
+    "把 berarti 当作聊天中的推论连接词：前面听到一个信息，后面马上用 Berarti... 得出结论。",
+    "区分 justru 和 malah：两者都可表示‘反而’，justru 更强调‘恰恰相反/正是如此’。",
+    "复现早间词：用 macet、nyasar、putar balik、stok 中至少3个词讲30秒今天的出行或工作小故事。参考：Tadi jalan macet, driver sempat nyasar sampai harus putar balik. Sampai kantor aku sekalian cek stok barang."
+  ]
+}
