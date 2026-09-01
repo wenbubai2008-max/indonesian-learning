@@ -3523,5 +3523,195 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-31"
     ]
+  },
+  {
+    "word": "kendaraan",
+    "cn": "车辆；交通工具",
+    "en": "vehicle; means of transport",
+    "root": "kendara",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "belok",
+    "cn": "转弯；拐弯",
+    "en": "turn",
+    "root": "belok",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "lurus",
+    "cn": "直；直走",
+    "en": "straight; go straight",
+    "root": "lurus",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "putar balik",
+    "cn": "掉头；调头",
+    "en": "make a U-turn; turn back",
+    "root": "putar + balik",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "tunai",
+    "cn": "现金；现金支付",
+    "en": "cash; in cash",
+    "root": "tunai",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "kembalian",
+    "cn": "找零；找回的钱",
+    "en": "change (money returned)",
+    "root": "kembali",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "transfer",
+    "cn": "转账；转移",
+    "en": "transfer; bank transfer",
+    "root": "transfer",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "utang",
+    "cn": "债；欠款；欠的钱",
+    "en": "debt; money owed",
+    "root": "utang",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "pinjam",
+    "cn": "借；借用",
+    "en": "borrow; lend (context-dependent)",
+    "root": "pinjam",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "stok",
+    "cn": "库存；存货",
+    "en": "stock; inventory",
+    "root": "stok",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
   }
 ];
