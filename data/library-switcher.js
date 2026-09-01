@@ -3,138 +3,81 @@
     const seen=new Set();
     return (arr||[]).filter(x=>x&&x.word&&!seen.has(String(x.word).toLowerCase())&&seen.add(String(x.word).toLowerCase()));
   }
+  function unknownWords(){
+    let m={};try{m=JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){}
+    return Object.values(m).map(x=>({
+      word:x.word,display:x.display||x.word,cn:x.cn||'暂无释义',en:x.en||'',root:x.root||'',
+      scene:(x.contexts&&x.contexts.length)?x.contexts[x.contexts.length-1]:'',
+      note:'遇到 '+(x.times_seen||1)+' 次'+(x.source_date?' · '+x.source_date:'')+(x.session?' · '+x.session:'')
+    }));
+  }
   function sourceFor(key){
     if(key==='daily') return uniqueByWord(window.DAILY_VOCAB_DB||[]);
+    if(key==='unknown') return uniqueByWord(unknownWords());
     return uniqueByWord(window.EMBEDDED_DB||[]);
   }
+  function labelFor(key){return key==='daily'?'每日学习词汇':key==='unknown'?'陌生词汇':'Top1000'}
   function rebuildCategories(){
-    const cat=document.getElementById('cat');
-    if(!cat)return;
+    const cat=document.getElementById('cat');if(!cat)return;
     const cats=[...new Set((DB||[]).flatMap(x=>x.categories||[]))].sort();
     cat.innerHTML='<option value="">全部分类</option>'+cats.map(c=>'<option>'+esc(c)+'</option>').join('');
   }
-  function setLibrary(key){
-    const select=document.getElementById('librarySelect');
-    if(select&&select.value!==key)select.value=key;
-    DB=sourceFor(key);
-    FILTER=DB.slice();
-    idx=0;
-    rebuildCategories();
-    document.getElementById('search').value='';
-    document.getElementById('vocabCount').textContent=DB.length;
-    document.getElementById('vocabTag').textContent=(key==='daily'?'每日学习词汇 ':'Top1000 ')+DB.length+' 词';
-    document.getElementById('dbStatus').textContent=(key==='daily'?'每日学习词汇':'Top1000')+' · '+DB.length+' 词';
-    if(DB.length){renderVocab();}else{document.getElementById('vocabBox').innerHTML='<div class="empty">这个词库目前还没有词。每日学习生成后会自动累计到这里。</div>';}
-    updateStats();
-    localStorage.setItem('selected_vocab_library',key);
-  }
-
-  let activeAudio=null;
-  let activeUtterance=null;
-  let speechTimer=null;
-
-  function getIndonesianVoice(){
-    if(!window.speechSynthesis)return null;
-    const voices=speechSynthesis.getVoices()||[];
-    return voices.find(v=>/^id(-|$)/i.test(v.lang))||voices.find(v=>/indones/i.test(v.name))||null;
-  }
-
-  function stopSpeech(){
-    if(speechTimer){clearTimeout(speechTimer);speechTimer=null;}
-    if(activeAudio){try{activeAudio.pause();}catch(e){} activeAudio=null;}
-    if(window.speechSynthesis){try{speechSynthesis.cancel();speechSynthesis.resume();}catch(e){}}
-    activeUtterance=null;
-  }
-
-  function remoteTTS(text){
-    try{
-      if(activeAudio){activeAudio.pause();activeAudio=null;}
-      const url='https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=id&q='+encodeURIComponent(text);
-      activeAudio=new Audio();
-      activeAudio.preload='auto';
-      activeAudio.src=url;
-      activeAudio.volume=1;
-      const p=activeAudio.play();
-      if(p&&p.catch)p.catch(function(){});
-    }catch(e){}
-  }
-
-  function robustSpeak(text){
-    if(!text)return;
-    text=String(text).trim();
-    if(!text)return;
-    stopSpeech();
-
-    if(!window.speechSynthesis || typeof SpeechSynthesisUtterance==='undefined'){
-      remoteTTS(text);
-      return;
-    }
-
-    const start=function(){
-      try{
-        speechSynthesis.cancel();
-        speechSynthesis.resume();
-        activeUtterance=new SpeechSynthesisUtterance(text);
-        activeUtterance.lang='id-ID';
-        const voice=getIndonesianVoice();
-        if(voice)activeUtterance.voice=voice;
-        activeUtterance.rate=.88;
-        activeUtterance.pitch=1;
-        activeUtterance.volume=1;
-        let started=false;
-        activeUtterance.onstart=function(){started=true;};
-        activeUtterance.onend=function(){activeUtterance=null;};
-        activeUtterance.onerror=function(){
-          activeUtterance=null;
-          remoteTTS(text);
-        };
-        speechSynthesis.speak(activeUtterance);
-        speechSynthesis.resume();
-        speechTimer=setTimeout(function(){
-          if(!started && !speechSynthesis.speaking){
-            try{speechSynthesis.cancel();}catch(e){}
-            activeUtterance=null;
-            remoteTTS(text);
-          }
-        },1800);
-      }catch(e){
-        activeUtterance=null;
-        remoteTTS(text);
-      }
-    };
-
-    const voices=speechSynthesis.getVoices();
-    if(voices&&voices.length){
-      start();
-    }else{
-      let fired=false;
-      const ready=function(){
-        if(fired)return;
-        fired=true;
-        if(speechSynthesis.removeEventListener)speechSynthesis.removeEventListener('voiceschanged',ready);
-        start();
-      };
-      if(speechSynthesis.addEventListener)speechSynthesis.addEventListener('voiceschanged',ready);
-      setTimeout(ready,700);
-    }
-  }
-
-  function install(){
-    const toolbar=document.querySelector('#vocab .toolbar');
-    if(!toolbar||document.getElementById('librarySelect'))return;
-    const select=document.createElement('select');
-    select.id='librarySelect';
+  function refreshOptions(){
+    const select=document.getElementById('librarySelect');if(!select)return;
+    const cur=select.value||localStorage.getItem('selected_vocab_library')||'top1000';
     const topCount=(window.EMBEDDED_DB||[]).length;
     const dailyCount=(window.DAILY_VOCAB_DB||[]).length;
-    select.innerHTML='<option value="top1000">Top1000（'+topCount+'）</option><option value="daily">每日学习词汇（'+dailyCount+'）</option>';
-    select.onchange=function(){setLibrary(this.value)};
-    toolbar.insertBefore(select,toolbar.firstChild);
-    loadDB=function(){setLibrary(document.getElementById('librarySelect')?.value||'top1000')};
-    window.loadDB=loadDB;
-    window.speak=robustSpeak;
-    speak=robustSpeak;
+    const unknownCount=unknownWords().length;
+    select.innerHTML='<option value="top1000">Top1000（'+topCount+'）</option><option value="daily">每日学习词汇（'+dailyCount+'）</option><option value="unknown">陌生词汇（'+unknownCount+'）</option>';
+    select.value=['top1000','daily','unknown'].includes(cur)?cur:'top1000';
+  }
+  function setLibrary(key){
+    const select=document.getElementById('librarySelect');if(select&&select.value!==key)select.value=key;
+    DB=sourceFor(key);FILTER=DB.slice();idx=0;rebuildCategories();
+    const search=document.getElementById('search');if(search)search.value='';
+    document.getElementById('vocabCount').textContent=DB.length;
+    document.getElementById('vocabTag').textContent=labelFor(key)+' '+DB.length+' 词';
+    document.getElementById('dbStatus').textContent=labelFor(key)+' · '+DB.length+' 词';
+    if(DB.length){renderVocab();}else{document.getElementById('vocabBox').innerHTML='<div class="empty">这个词库目前还没有词。</div>';}
+    updateStats();localStorage.setItem('selected_vocab_library',key);
+  }
+  function removeUnknown(word){
+    let m={};try{m=JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){}
+    const k=String(word||'').trim().toLowerCase();
+    Object.keys(m).forEach(key=>{if(key===k||String(m[key]?.word||'').toLowerCase()===k)delete m[key]});
+    localStorage.setItem('indo_unknown_words',JSON.stringify(m));
+    window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));
+  }
+
+  let activeAudio=null,activeUtterance=null,speechTimer=null;
+  function getIndonesianVoice(){if(!window.speechSynthesis)return null;const voices=speechSynthesis.getVoices()||[];return voices.find(v=>/^id(-|$)/i.test(v.lang))||voices.find(v=>/indones/i.test(v.name))||null;}
+  function stopSpeech(){if(speechTimer){clearTimeout(speechTimer);speechTimer=null;}if(activeAudio){try{activeAudio.pause();}catch(e){}activeAudio=null;}if(window.speechSynthesis){try{speechSynthesis.cancel();speechSynthesis.resume();}catch(e){}}activeUtterance=null;}
+  function remoteTTS(text){try{if(activeAudio){activeAudio.pause();activeAudio=null;}const url='https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=id&q='+encodeURIComponent(text);activeAudio=new Audio();activeAudio.preload='auto';activeAudio.src=url;activeAudio.volume=1;const p=activeAudio.play();if(p&&p.catch)p.catch(function(){});}catch(e){}}
+  function robustSpeak(text){if(!text)return;text=String(text).trim();if(!text)return;stopSpeech();remoteTTS(text);}
+
+  function install(){
+    const toolbar=document.querySelector('#vocab .toolbar');if(!toolbar)return;
+    let select=document.getElementById('librarySelect');
+    if(!select){select=document.createElement('select');select.id='librarySelect';select.onchange=function(){setLibrary(this.value)};toolbar.insertBefore(select,toolbar.firstChild);}
+    refreshOptions();
+    loadDB=function(){setLibrary(document.getElementById('librarySelect')?.value||'top1000')};window.loadDB=loadDB;
+    window.speak=robustSpeak;speak=robustSpeak;
+
+    const originalMark=window.mark;
+    const unknownAwareMark=function(v){
+      const lib=document.getElementById('librarySelect')?.value;
+      if(lib!=='unknown')return originalMark(v);
+      const x=current();if(!x)return;
+      let m=memory();m[x.word]=v;localStorage.setItem('indo_mem',JSON.stringify(m));
+      if(v==='know')removeUnknown(x.word);
+      updateStats();renderReview();refreshOptions();setLibrary('unknown');
+    };
+    window.mark=unknownAwareMark;mark=unknownAwareMark;
+
     setLibrary(localStorage.getItem('selected_vocab_library')||'top1000');
   }
   window.switchVocabLibrary=setLibrary;
+  window.refreshUnknownLibrary=function(){refreshOptions();if(document.getElementById('librarySelect')?.value==='unknown')setLibrary('unknown')};
+  window.addEventListener('unknown-vocab-changed',function(){window.refreshUnknownLibrary&&window.refreshUnknownLibrary()});
   window.addEventListener('load',function(){setTimeout(install,0)});
 })();
