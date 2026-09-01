@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-01",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 11,
+  "title": "2026年9月1日｜Day 11",
+  "vocab": [
+    {"order":101,"word":"kendaraan","display":"kendaraan","audio_text":"kendaraan","cn":"车辆；交通工具","en":"vehicle; means of transport","root":"kendara","formation":"kendara + -an → kendaraan，表示车辆/交通工具。常见词族：berkendara（驾驶、出行）。","example":"Kalau jam segini, kendaraan di jalan mulai banyak.","example_cn":"这个时间路上的车开始多起来了。","synonym_note":"mobil 特指汽车；kendaraan 是更泛的‘车辆/交通工具’。"},
+    {"order":102,"word":"belok","display":"belok","audio_text":"belok","cn":"转弯；拐弯","en":"turn","root":"belok","formation":"基础词。常见：belok kiri（左转）、belok kanan（右转）。","example":"Nanti belok kiri setelah minimarket.","example_cn":"等会儿过了便利店左转。","synonym_note":"belok = 转弯；putar balik = 掉头，不是一回事。"},
+    {"order":103,"word":"lurus","display":"lurus","audio_text":"lurus","cn":"直；直走","en":"straight; go straight","root":"lurus","formation":"基础词；问路时 jalan lurus / lurus aja 都很常见。","example":"Dari sini lurus aja sampai lampu merah.","example_cn":"从这里一直直走到红绿灯。","synonym_note":"terus 也能表示‘继续往前’，但 lurus 更明确是‘直走’。"},
+    {"order":104,"word":"putar balik","display":"putar balik","audio_text":"putar balik","cn":"掉头；调头","en":"make a U-turn; turn back","root":"putar + balik","formation":"putar（转）+ balik（返回）→ putar balik（掉头）。","example":"Kita kelewatan, mending putar balik di depan.","example_cn":"我们开过头了，最好在前面掉头。","synonym_note":"balik = 回去；putar balik 更具体表示车辆掉头。"},
+    {"order":105,"word":"tunai","display":"tunai","audio_text":"tunai","cn":"现金；现金支付","en":"cash; in cash","root":"tunai","formation":"基础词；常见搭配：bayar tunai（现金支付）、uang tunai（现金）。","example":"Kalau bayar tunai, ada kembalian nggak?","example_cn":"如果付现金，有零钱找吗？","synonym_note":"cash 在口语里也常听到；tunai 是标准且高频的印尼语表达。"},
+    {"order":106,"word":"kembalian","display":"kembalian","audio_text":"kembalian","cn":"找零；找回的钱","en":"change (money returned)","root":"kembali","formation":"kembali（回来）+ -an → kembalian，日常支付中表示找零。","example":"Nggak usah kembalian, pas aja.","example_cn":"不用找零了，刚好。","synonym_note":"uang kecil = 零钱；kembalian = 付款后应找回的钱。"},
+    {"order":107,"word":"transfer","display":"transfer","audio_text":"transfer","cn":"转账；转移","en":"transfer; bank transfer","root":"transfer","formation":"外来基础词；银行和电子钱包场景非常高频。","example":"Aku transfer sekarang, nanti kamu cek ya.","example_cn":"我现在转账，等会儿你查一下。","synonym_note":"bayar = 付款的泛称；transfer = 通过账户/电子钱包转账。"},
+    {"order":108,"word":"utang","display":"utang","audio_text":"utang","cn":"债；欠款；欠的钱","en":"debt; money owed","root":"utang","formation":"基础词；常见：punya utang（有欠款）、bayar utang（还债）。","example":"Aku masih punya utang kecil sama dia.","example_cn":"我还欠他一点钱。","synonym_note":"utang 是‘欠的钱/债务’；pinjam 是‘借’这个动作。"},
+    {"order":109,"word":"pinjam","display":"pinjam","audio_text":"pinjam","cn":"借；借用","en":"borrow; lend (context-dependent)","root":"pinjam","formation":"基础词；常见词族：meminjam（借）、meminjamkan（借给别人）、pinjaman（借款）。","example":"Boleh pinjam charger sebentar?","example_cn":"充电器能借我一会儿吗？","synonym_note":"pinjam 在口语里可直接用；meminjam 更标准。注意 meminjamkan = 借给别人。"},
+    {"order":110,"word":"stok","display":"stok","audio_text":"stok","cn":"库存；存货","en":"stock; inventory","root":"stok","formation":"外来基础词；购物和办公室物资场景都很常见。","example":"Stok barang ini tinggal sedikit, harus pesan lagi.","example_cn":"这个商品库存只剩一点了，得再订一些。","synonym_note":"persediaan 更正式；stok 更日常、更适合电商和仓库场景。"}
+  ],
+  "sentences": [
+    {"id":"Kalau macet, mending lurus dulu lalu belok kanan di lampu merah.","cn":"如果堵车，最好先直走，然后在红绿灯右转。"},
+    {"id":"Tadi driver sempat nyasar, jadi akhirnya putar balik.","cn":"刚才司机一度走错路，所以最后掉头了。"},
+    {"id":"Aku nggak bawa tunai, jadi langsung transfer aja.","cn":"我没带现金，所以直接转账吧。"},
+    {"id":"Sekalian cek stok, kalau tinggal sedikit kabarin aku.","cn":"顺便查一下库存，如果只剩一点就告诉我。"},
+    {"id":"Aku pinjam dulu ya, besok aku balikin biar nggak jadi utang lama.","cn":"我先借一下，明天还你，免得欠太久。"}
+  ],
+  "reading": {
+    "title":"Pagi Muter Sebentar",
+    "text":"Pagi ini aku naik kendaraan kantor ke tempat klien. Jalan utama macet, jadi driver cari jalan lain. Awalnya kami lurus, lalu belok kanan dekat minimarket. Ternyata jalan itu ditutup, jadi kami harus putar balik. Untung driver langsung kabarin klien kalau kami agak terlambat. Setelah meeting, aku mampir beli beberapa barang kantor. Stok tinta printer tinggal sedikit. Aku mau bayar tunai, tapi uangku terlalu besar dan kasir nggak punya kembalian. Akhirnya aku transfer. Temanku juga sempat pinjam uang kecil kemarin, tapi dia sudah balikin, jadi nggak ada utang lagi.",
+    "cn":"今天早上我坐公司的车去客户那里。主路堵车，所以司机找了别的路。开始我们一直直走，然后在便利店附近右转。结果那条路封了，所以我们只能掉头。还好司机马上告诉客户我们会稍微迟到。开完会后，我顺路去买了一些办公用品。打印机墨水库存只剩一点。我本来想付现金，但我的钱面额太大，收银员没有零钱找。最后我转了账。朋友昨天也借过一点钱，不过他已经还了，所以现在没有欠款了。",
+    "vocab":["kendaraan","macet","lurus","belok","putar balik","kabarin","stok","tunai","kembalian","transfer","pinjam","utang"]
+  },
+  "quiz": [
+    {"question":"司机说“Lurus aja, nanti belok kiri.” 最自然的意思是：","options":["一直直走，等会儿左转","马上掉头，然后停车","先下车，再右转"],"answer_index":0,"explain":"lurus aja = 一直直走；belok kiri = 左转。"},
+    {"question":"kembalian 最接近下面哪个意思？","options":["银行余额","付款后的找零","欠款"],"answer_index":1,"explain":"kembalian 是付款以后应该找回来的钱。"},
+    {"question":"复习：nyasar 和 putar balik 的关系最合理的是：","options":["走错路后可能需要掉头","两者都表示停车","两者都表示接人"],"answer_index":0,"explain":"nyasar = 走错路/迷路；putar balik = 掉头。走错路后常常需要掉头。"}
+  ],
+  "output": {
+    "task":"用自然口语表达：‘刚才路上堵车，司机走错路了，所以我们掉了个头。等会儿你一直直走，在便利店右转。我没带现金，我直接转账给你。’",
+    "reference_answer":"Tadi jalan macet, driver-nya nyasar, jadi kami putar balik. Nanti kamu lurus aja, terus belok kanan di minimarket. Aku nggak bawa tunai, jadi langsung transfer ke kamu aja.",
+    "reference_cn":"刚才路上堵车，司机走错路了，所以我们掉了个头。等会儿你一直直走，在便利店右转。我没带现金，我直接转账给你。"
+  },
+  "review": [
+    "导航连起来记：lurus = 直走，belok = 转弯，putar balik = 掉头；和旧词 macet / nyasar 一起放在真实出行情景里。",
+    "支付场景区分：tunai = 现金，kembalian = 找零，transfer = 转账；旧词 saldo / rekening 后续继续轮换复习。",
+    "借钱场景：pinjam 是借的动作，utang 是欠款状态；复习 sekalian / kabarin，不要只记单词，要放进句子。"
+  ]
+}
