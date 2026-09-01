@@ -1,15 +1,31 @@
 (function(){
+  function normWord(w){return String(w||'').trim().toLowerCase()}
   function uniqueByWord(arr){
     const seen=new Set();
-    return (arr||[]).filter(x=>x&&x.word&&!seen.has(String(x.word).toLowerCase())&&seen.add(String(x.word).toLowerCase()));
+    return (arr||[]).filter(x=>x&&x.word&&!seen.has(normWord(x.word))&&seen.add(normWord(x.word)));
   }
-  function unknownWords(){
+  function localUnknownWords(){
     let m={};try{m=JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){}
     return Object.values(m).map(x=>({
       word:x.word,display:x.display||x.word,cn:x.cn||'暂无释义',en:x.en||'',root:x.root||'',
       scene:(x.contexts&&x.contexts.length)?x.contexts[x.contexts.length-1]:'',
-      note:'遇到 '+(x.times_seen||1)+' 次'+(x.source_date?' · '+x.source_date:'')+(x.session?' · '+x.session:'')
+      note:'遇到 '+(x.times_seen||1)+' 次'+(x.source_date?' · '+x.source_date:'')+(x.session?' · '+x.session:''),
+      contexts:x.contexts||[],times_seen:x.times_seen||1,source:'电脑新增'
     }));
+  }
+  function sharedUnknownWords(){
+    return Array.isArray(window.UNFAMILIAR_VOCAB_DB)?window.UNFAMILIAR_VOCAB_DB:[];
+  }
+  function unknownWords(){
+    const merged=new Map();
+    sharedUnknownWords().forEach(x=>{if(x&&x.word)merged.set(normWord(x.word),Object.assign({},x,{source:x.source||'共享陌生词'}))});
+    localUnknownWords().forEach(x=>{
+      if(!x||!x.word)return;
+      const k=normWord(x.word),old=merged.get(k)||{};
+      merged.set(k,Object.assign({},old,x,{cn:(x.cn&&x.cn!=='暂无释义'?x.cn:(old.cn||x.cn)),contexts:[...(old.contexts||[]),...(x.contexts||[])].filter((v,i,a)=>v&&a.indexOf(v)===i),times_seen:Math.max(Number(old.times_seen||0),Number(x.times_seen||0),1)}));
+    });
+    let mem={};try{mem=memory()}catch(e){}
+    return [...merged.values()].filter(x=>mem[x.word]!=='know');
   }
   function sourceFor(key){
     if(key==='daily') return uniqueByWord(window.DAILY_VOCAB_DB||[]);
@@ -18,21 +34,15 @@
   }
   function labelFor(key){return key==='daily'?'每日学习词汇':key==='unknown'?'陌生词汇':'Top1000'}
   function progressKey(key){return 'vocab_progress_'+key}
-  function saveProgress(key,word){
-    if(!key||!word)return;
-    localStorage.setItem(progressKey(key),String(word).trim().toLowerCase());
-  }
+  function saveProgress(key,word){if(key&&word)localStorage.setItem(progressKey(key),normWord(word));}
   function restoreIndex(key,arr){
-    const saved=(localStorage.getItem(progressKey(key))||'').trim().toLowerCase();
+    const saved=normWord(localStorage.getItem(progressKey(key))||'');
     if(!saved||!arr.length)return 0;
-    const found=arr.findIndex(x=>String(x.word||'').trim().toLowerCase()===saved);
+    const found=arr.findIndex(x=>normWord(x.word)===saved);
     return found>=0?found:0;
   }
   function activeLibrary(){return document.getElementById('librarySelect')?.value||localStorage.getItem('selected_vocab_library')||'top1000'}
-  function saveCurrentProgress(){
-    const x=typeof current==='function'?current():null;
-    if(x&&x.word)saveProgress(activeLibrary(),x.word);
-  }
+  function saveCurrentProgress(){const x=typeof current==='function'?current():null;if(x&&x.word)saveProgress(activeLibrary(),x.word);}
   function rebuildCategories(){
     const cat=document.getElementById('cat');if(!cat)return;
     const cats=[...new Set((DB||[]).flatMap(x=>x.categories||[]))].sort();
@@ -57,19 +67,18 @@
     if(DB.length){renderVocab();saveCurrentProgress();}else{document.getElementById('vocabBox').innerHTML='<div class="empty">这个词库目前还没有词。</div>';}
     updateStats();localStorage.setItem('selected_vocab_library',key);
   }
-  function removeUnknown(word){
+  function removeLocalUnknown(word){
     let m={};try{m=JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){}
-    const k=String(word||'').trim().toLowerCase();
-    Object.keys(m).forEach(key=>{if(key===k||String(m[key]?.word||'').toLowerCase()===k)delete m[key]});
+    const k=normWord(word);
+    Object.keys(m).forEach(key=>{if(key===k||normWord(m[key]?.word)===k)delete m[key]});
     localStorage.setItem('indo_unknown_words',JSON.stringify(m));
     window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));
   }
 
-  let activeAudio=null,activeUtterance=null,speechTimer=null;
-  function getIndonesianVoice(){if(!window.speechSynthesis)return null;const voices=speechSynthesis.getVoices()||[];return voices.find(v=>/^id(-|$)/i.test(v.lang))||voices.find(v=>/indones/i.test(v.name))||null;}
-  function stopSpeech(){if(speechTimer){clearTimeout(speechTimer);speechTimer=null;}if(activeAudio){try{activeAudio.pause();}catch(e){}activeAudio=null;}if(window.speechSynthesis){try{speechSynthesis.cancel();speechSynthesis.resume();}catch(e){}}activeUtterance=null;}
-  function remoteTTS(text){try{if(activeAudio){activeAudio.pause();activeAudio=null;}const url='https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=id&q='+encodeURIComponent(text);activeAudio=new Audio();activeAudio.preload='auto';activeAudio.src=url;activeAudio.volume=1;const p=activeAudio.play();if(p&&p.catch)p.catch(function(){});}catch(e){}}
-  function robustSpeak(text){if(!text)return;text=String(text).trim();if(!text)return;stopSpeech();remoteTTS(text);}
+  let activeAudio=null;
+  function stopSpeech(){if(activeAudio){try{activeAudio.pause();}catch(e){}activeAudio=null;}}
+  function remoteTTS(text){try{stopSpeech();const url='https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=id&q='+encodeURIComponent(text);activeAudio=new Audio();activeAudio.preload='auto';activeAudio.src=url;activeAudio.volume=1;const p=activeAudio.play();if(p&&p.catch)p.catch(function(){});}catch(e){}}
+  function robustSpeak(text){if(!text)return;text=String(text).trim();if(text)remoteTTS(text);}
 
   function install(){
     const toolbar=document.querySelector('#vocab .toolbar');if(!toolbar)return;
@@ -80,10 +89,7 @@
     window.speak=robustSpeak;speak=robustSpeak;
 
     const originalNextWord=window.nextWord;
-    const progressNextWord=function(){
-      originalNextWord();
-      saveCurrentProgress();
-    };
+    const progressNextWord=function(){originalNextWord();saveCurrentProgress();};
     window.nextWord=progressNextWord;nextWord=progressNextWord;
 
     const originalMark=window.mark;
@@ -92,7 +98,7 @@
       if(lib!=='unknown')return originalMark(v);
       const x=current();if(!x)return;
       let m=memory();m[x.word]=v;localStorage.setItem('indo_mem',JSON.stringify(m));
-      if(v==='know')removeUnknown(x.word);
+      if(v==='know')removeLocalUnknown(x.word);
       updateStats();renderReview();refreshOptions();setLibrary('unknown');
     };
     window.mark=unknownAwareMark;mark=unknownAwareMark;
@@ -100,6 +106,7 @@
     setLibrary(localStorage.getItem('selected_vocab_library')||'top1000');
   }
   window.switchVocabLibrary=setLibrary;
+  window.getUnfamiliarVocabulary=unknownWords;
   window.refreshUnknownLibrary=function(){refreshOptions();if(document.getElementById('librarySelect')?.value==='unknown')setLibrary('unknown')};
   window.addEventListener('unknown-vocab-changed',function(){window.refreshUnknownLibrary&&window.refreshUnknownLibrary()});
   window.addEventListener('beforeunload',saveCurrentProgress);
