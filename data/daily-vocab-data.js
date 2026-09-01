@@ -3713,5 +3713,233 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-01"
     ]
+  },
+  {
+    "word": "akhirnya",
+    "cn": "终于；最后结果是",
+    "en": "finally; in the end",
+    "root": "akhir",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "sebenarnya",
+    "cn": "其实；实际上",
+    "en": "actually; in fact",
+    "root": "benar",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "justru",
+    "cn": "反而；恰恰",
+    "en": "instead; on the contrary; precisely",
+    "root": "",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "meskipun",
+    "cn": "虽然；即使",
+    "en": "although; even though",
+    "root": "",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "tetap",
+    "cn": "仍然；还是；保持",
+    "en": "still; remain; keep",
+    "root": "tetap",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "bahkan",
+    "cn": "甚至；甚至还",
+    "en": "even; moreover",
+    "root": "",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "berarti",
+    "cn": "意味着；也就是说",
+    "en": "mean; that means",
+    "root": "arti",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "termasuk",
+    "cn": "包括；属于",
+    "en": "include; be included; belong to",
+    "root": "masuk",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "menganggap",
+    "cn": "认为；把……看作",
+    "en": "consider; regard; think of as",
+    "root": "anggap",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "memahami",
+    "cn": "理解；明白",
+    "en": "understand; comprehend",
+    "root": "paham",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "menjaga",
+    "cn": "保持；照顾；守护",
+    "en": "keep; maintain; take care of; guard",
+    "root": "jaga",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "word": "kemungkinan",
+    "cn": "可能性；有可能",
+    "en": "possibility; likelihood",
+    "root": "mungkin",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-01 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-01"
+    ]
   }
 ];
