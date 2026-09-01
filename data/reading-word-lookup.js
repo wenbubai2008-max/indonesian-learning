@@ -9,6 +9,7 @@
       .rw-popup{position:fixed;z-index:99999;min-width:150px;max-width:280px;background:#172033;color:#fff;border-radius:12px;padding:10px 13px;box-shadow:0 8px 28px rgba(0,0,0,.22);font-size:14px;line-height:1.45;pointer-events:none}
       .rw-word{font-weight:850;font-size:15px;margin-bottom:3px}.rw-cn{color:#f4f6fb}.rw-empty{color:#cbd2df}
       .rw-popup:after{content:"";position:absolute;left:18px;bottom:-6px;border-width:6px 6px 0;border-style:solid;border-color:#172033 transparent transparent}
+      .rl-text,.dailyFixReading{cursor:text}
     `;
     document.head.appendChild(st);
   }
@@ -70,7 +71,7 @@
     if(!txt || txt.length>40 || /\s/.test(txt)){hide();return;}
     const range=sel.getRangeAt(0);
     const node=range.commonAncestorContainer.nodeType===1?range.commonAncestorContainer:range.commonAncestorContainer.parentElement;
-    if(!node || !node.closest || !node.closest('.rl-text')){hide();return;}
+    if(!node || !node.closest || !node.closest('.rl-text,.dailyFixReading')){hide();return;}
     const rect=range.getBoundingClientRect();
     if(!rect || (!rect.width&&!rect.height)){hide();return;}
     show(txt,rect);
@@ -80,4 +81,5 @@
   document.addEventListener('touchend',()=>setTimeout(handleSelection,80));
   document.addEventListener('mousedown',e=>{if(!e.target.closest('.rw-popup'))hide();});
   document.addEventListener('scroll',hide,true);
+  ensureStyle();
 })();
