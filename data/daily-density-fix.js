@@ -3,9 +3,9 @@
   const st=document.createElement('style');
   st.id='dailyDensityFixStyle';
   st.textContent=`
-    /* Prevent two cards in the same grid row from being forced to equal height */
-    #daily .dailyFixGrid{align-items:start!important}
-    #daily .dailyFixVocab{align-self:start!important;padding:16px 18px!important}
+    /* Keep each desktop row visually aligned */
+    #daily .dailyFixGrid{align-items:stretch!important}
+    #daily .dailyFixVocab{align-self:stretch!important;height:100%!important;padding:16px 18px!important}
 
     /* Word + Chinese meaning on the same headline row */
     #daily .dailyFixWord{row-gap:5px!important}
@@ -13,18 +13,20 @@
     #daily .dailyFixCnInline::before{content:'·';margin-right:7px;color:#9aa4b5}
     #daily .dailyFixEn{margin-top:5px!important}
 
-    /* Compress secondary information without shrinking the important text */
+    /* Compact secondary information without shrinking the key text */
     #daily .dailyFixMeta{margin-top:8px!important;padding:7px 10px!important;line-height:1.55!important}
     #daily .dailyFixMeta + .dailyFixMeta{margin-top:5px!important}
     #daily .dailyFixEx{margin-top:10px!important;padding-top:10px!important;line-height:1.55!important}
     #daily .dailyFixExCn{margin-top:3px!important;line-height:1.5!important}
 
-    /* Use the empty right half of desktop sentence sections */
-    #daily .dailySentenceGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
-    #daily .dailySentenceGrid>.dailyFixItem{margin:0!important;padding:12px 15px!important;min-width:0}
+    /* Two-column sentence layout on desktop */
+    #daily .dailySentenceGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:stretch}
+    #daily .dailySentenceGrid>.dailyFixItem{margin:0!important;padding:12px 15px!important;min-width:0;height:100%}
     #daily .dailySentenceGrid>.dailyFixItem:last-child:nth-child(odd){grid-column:1/-1}
 
     @media(max-width:760px){
+      #daily .dailyFixGrid{align-items:start!important}
+      #daily .dailyFixVocab{height:auto!important;align-self:start!important}
       #daily .dailySentenceGrid{grid-template-columns:1fr}
       #daily .dailySentenceGrid>.dailyFixItem:last-child:nth-child(odd){grid-column:auto}
       #daily .dailyFixVocab{padding:14px 12px!important}
