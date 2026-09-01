@@ -1,28 +1,22 @@
-.app.learningMode{max-width:1360px!important;padding-left:20px!important;padding-right:20px!important}
-.app.learningMode #daily>.card{width:100%!important;max-width:none!important;margin:0 auto!important;padding-left:24px!important;padding-right:24px!important}
+.app.learningMode{max-width:1440px!important;width:100%!important;padding-left:14px!important;padding-right:14px!important}
+.app.learningMode #daily{width:100%!important}
+.app.learningMode #daily>.card{width:100%!important;max-width:none!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important}
 .app.learningMode .dailyFixNav,.app.learningMode .dailyFixPicker,.app.learningMode .dailyFixChips,.app.learningMode .dailyFixSec{max-width:none!important;width:100%!important}
-.app.learningMode .dailyFixSec{padding:22px!important}
-.app.learningMode .dailyFixGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important}
-.app.learningMode .dailyFixVocab{min-width:0!important;width:100%!important;padding:20px!important}
+.app.learningMode .dailyFixGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+.app.learningMode .dailyFixVocab{min-width:0!important;width:100%!important}
 .app.learningMode .dailyFixMeta{max-width:none!important}
 .app.learningMode .dailyFixReading,.app.learningMode .dailyFixTranslation{max-width:none!important;width:100%!important}
 @media (min-width:1200px){
-  .app.learningMode{max-width:1400px!important}
-  .app.learningMode #daily>.card{padding-left:30px!important;padding-right:30px!important}
-  .app.learningMode .dailyFixGrid{gap:20px!important}
+  .app.learningMode{max-width:1480px!important;padding-left:18px!important;padding-right:18px!important}
+  .app.learningMode .dailyFixGrid{gap:14px!important}
 }
 @media (max-width:700px){
-  .app.learningMode{width:100%!important;max-width:none!important;padding-left:8px!important;padding-right:8px!important}
-  .app.learningMode #daily{width:100%!important}
-  .app.learningMode #daily>.card{width:100%!important;border-radius:16px!important;padding:14px 10px 18px!important}
-  .app.learningMode .back{margin-left:4px!important}
-  .app.learningMode .dailyFixSec{width:100%!important;padding:14px 10px!important;border-radius:15px!important}
-  .app.learningMode .dailyFixGrid{grid-template-columns:1fr!important;gap:12px!important}
-  .app.learningMode .dailyFixVocab{width:100%!important;padding:16px 14px!important;border-radius:14px!important}
-  .app.learningMode .dailyFixWord{font-size:26px!important}
-  .app.learningMode .dailyFixCn{font-size:19px!important}
-  .app.learningMode .dailyFixMeta{font-size:15px!important;line-height:1.75!important}
-  .app.learningMode .dailyFixEx{font-size:18px!important;line-height:1.7!important}
-  .app.learningMode .dailyFixExCn{font-size:16px!important;line-height:1.65!important}
-  .app.learningMode .dailyFixNav{padding:10px!important}
+  .app.learningMode{width:100%!important;max-width:none!important;padding-left:4px!important;padding-right:4px!important}
+  .app.learningMode #daily{width:100%!important;margin:0!important}
+  .app.learningMode #daily>.card{width:100%!important;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:transparent!important}
+  .app.learningMode .back{margin-left:2px!important;margin-bottom:7px!important}
+  .app.learningMode .dailyFixSec{width:100%!important;margin-left:0!important;margin-right:0!important}
+  .app.learningMode .dailyFixGrid{grid-template-columns:1fr!important;gap:8px!important}
+  .app.learningMode .dailyFixVocab{width:100%!important}
+  .app.learningMode .dailyFixNav{width:100%!important}
 }
