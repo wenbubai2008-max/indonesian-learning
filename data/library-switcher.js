@@ -17,6 +17,22 @@
     return uniqueByWord(window.EMBEDDED_DB||[]);
   }
   function labelFor(key){return key==='daily'?'每日学习词汇':key==='unknown'?'陌生词汇':'Top1000'}
+  function progressKey(key){return 'vocab_progress_'+key}
+  function saveProgress(key,word){
+    if(!key||!word)return;
+    localStorage.setItem(progressKey(key),String(word).trim().toLowerCase());
+  }
+  function restoreIndex(key,arr){
+    const saved=(localStorage.getItem(progressKey(key))||'').trim().toLowerCase();
+    if(!saved||!arr.length)return 0;
+    const found=arr.findIndex(x=>String(x.word||'').trim().toLowerCase()===saved);
+    return found>=0?found:0;
+  }
+  function activeLibrary(){return document.getElementById('librarySelect')?.value||localStorage.getItem('selected_vocab_library')||'top1000'}
+  function saveCurrentProgress(){
+    const x=typeof current==='function'?current():null;
+    if(x&&x.word)saveProgress(activeLibrary(),x.word);
+  }
   function rebuildCategories(){
     const cat=document.getElementById('cat');if(!cat)return;
     const cats=[...new Set((DB||[]).flatMap(x=>x.categories||[]))].sort();
@@ -33,12 +49,12 @@
   }
   function setLibrary(key){
     const select=document.getElementById('librarySelect');if(select&&select.value!==key)select.value=key;
-    DB=sourceFor(key);FILTER=DB.slice();idx=0;rebuildCategories();
+    DB=sourceFor(key);FILTER=DB.slice();idx=restoreIndex(key,FILTER);rebuildCategories();
     const search=document.getElementById('search');if(search)search.value='';
     document.getElementById('vocabCount').textContent=DB.length;
     document.getElementById('vocabTag').textContent=labelFor(key)+' '+DB.length+' 词';
     document.getElementById('dbStatus').textContent=labelFor(key)+' · '+DB.length+' 词';
-    if(DB.length){renderVocab();}else{document.getElementById('vocabBox').innerHTML='<div class="empty">这个词库目前还没有词。</div>';}
+    if(DB.length){renderVocab();saveCurrentProgress();}else{document.getElementById('vocabBox').innerHTML='<div class="empty">这个词库目前还没有词。</div>';}
     updateStats();localStorage.setItem('selected_vocab_library',key);
   }
   function removeUnknown(word){
@@ -58,10 +74,17 @@
   function install(){
     const toolbar=document.querySelector('#vocab .toolbar');if(!toolbar)return;
     let select=document.getElementById('librarySelect');
-    if(!select){select=document.createElement('select');select.id='librarySelect';select.onchange=function(){setLibrary(this.value)};toolbar.insertBefore(select,toolbar.firstChild);}
+    if(!select){select=document.createElement('select');select.id='librarySelect';select.onchange=function(){saveCurrentProgress();setLibrary(this.value)};toolbar.insertBefore(select,toolbar.firstChild);}
     refreshOptions();
     loadDB=function(){setLibrary(document.getElementById('librarySelect')?.value||'top1000')};window.loadDB=loadDB;
     window.speak=robustSpeak;speak=robustSpeak;
+
+    const originalNextWord=window.nextWord;
+    const progressNextWord=function(){
+      originalNextWord();
+      saveCurrentProgress();
+    };
+    window.nextWord=progressNextWord;nextWord=progressNextWord;
 
     const originalMark=window.mark;
     const unknownAwareMark=function(v){
@@ -79,5 +102,6 @@
   window.switchVocabLibrary=setLibrary;
   window.refreshUnknownLibrary=function(){refreshOptions();if(document.getElementById('librarySelect')?.value==='unknown')setLibrary('unknown')};
   window.addEventListener('unknown-vocab-changed',function(){window.refreshUnknownLibrary&&window.refreshUnknownLibrary()});
+  window.addEventListener('beforeunload',saveCurrentProgress);
   window.addEventListener('load',function(){setTimeout(install,0)});
 })();
