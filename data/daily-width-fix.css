@@ -1,17 +1,20 @@
-.app.learningMode{max-width:1440px!important;width:100%!important;padding-left:14px!important;padding-right:14px!important}
+.app.learningMode{max-width:1160px!important;width:100%!important;margin:0 auto!important;padding-left:20px!important;padding-right:20px!important}
 .app.learningMode #daily{width:100%!important}
 .app.learningMode #daily>.card{width:100%!important;max-width:none!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important}
 .app.learningMode .dailyFixNav,.app.learningMode .dailyFixPicker,.app.learningMode .dailyFixChips,.app.learningMode .dailyFixSec{max-width:none!important;width:100%!important}
-.app.learningMode .dailyFixGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+.app.learningMode .dailyFixGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}
 .app.learningMode .dailyFixVocab{min-width:0!important;width:100%!important}
 .app.learningMode .dailyFixMeta{max-width:none!important}
 .app.learningMode .dailyFixReading,.app.learningMode .dailyFixTranslation{max-width:none!important;width:100%!important}
-@media (min-width:1200px){
-  .app.learningMode{max-width:1480px!important;padding-left:18px!important;padding-right:18px!important}
-  .app.learningMode .dailyFixGrid{gap:14px!important}
+@media (min-width:1400px){
+  .app.learningMode{max-width:1200px!important;padding-left:24px!important;padding-right:24px!important}
+}
+@media (max-width:900px){
+  .app.learningMode{max-width:100%!important;padding-left:12px!important;padding-right:12px!important}
+  .app.learningMode .dailyFixGrid{grid-template-columns:1fr!important;gap:10px!important}
 }
 @media (max-width:700px){
-  .app.learningMode{width:100%!important;max-width:none!important;padding-left:4px!important;padding-right:4px!important}
+  .app.learningMode{width:100%!important;max-width:none!important;padding-left:6px!important;padding-right:6px!important}
   .app.learningMode #daily{width:100%!important;margin:0!important}
   .app.learningMode #daily>.card{width:100%!important;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:transparent!important}
   .app.learningMode .back{margin-left:2px!important;margin-bottom:7px!important}
