@@ -1,0 +1,73 @@
+name: Sync daily vocab
+on:
+  push:
+    paths:
+      - 'data/daily/*-am.json'
+      - 'data/daily/*-pm.json'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Sync vocab safely
+        shell: bash
+        run: |
+          set -e
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git reset --hard origin/main
+          node <<'NODE'
+          const fs=require('fs');
+          const cp=require('child_process');
+          const dbPath='data/daily-vocab-data.js';
+          const src=fs.readFileSync(dbPath,'utf8');
+          const db=JSON.parse(src.replace(/^window\.DAILY_VOCAB_DB\s*=\s*/,'').replace(/;\s*$/,''));
+          const key=s=>String(s||'').trim().toLowerCase();
+          const map=new Map(db.map(x=>[key(x.word),x]));
+          const addUnique=(arr,v)=>{arr=Array.isArray(arr)?arr:[];if(!arr.includes(v))arr.push(v);return arr};
+          let files=[];
+          try{files=cp.execSync("git diff-tree --no-commit-id --name-only -r HEAD | grep -E '^data/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}-(am|pm)\\.json$' || true",{encoding:'utf8'}).trim().split(/\n+/).filter(Boolean)}catch(e){}
+          if(!files.length){
+            files=fs.readdirSync('data/daily').filter(f=>/-((am)|(pm))\.json$/.test(f)).map(f=>'data/daily/'+f).slice(-2);
+          }
+          for(const f of files){
+            if(!fs.existsSync(f)) continue;
+            const lesson=JSON.parse(fs.readFileSync(f,'utf8'));
+            const session=lesson.time || (lesson.session==='pm'?'19:00':'08:00');
+            const date=lesson.date;
+            for(const v of (lesson.vocab||[])){
+              const k=key(v.word); if(!k) continue;
+              const stamp=`${date} ${session}`;
+              if(map.has(k)){
+                const x=map.get(k);
+                const already=(x.sessions||[]).includes(session)&&(x.dates||[]).includes(date);
+                if(!already)x.times_seen=(Number(x.times_seen)||0)+1;
+                x.sessions=addUnique(x.sessions,session);
+                x.dates=addUnique(x.dates,date).sort();
+                x.categories=addUnique(addUnique(x.categories,'每日学习'),session);
+                if(!x.root&&v.root)x.root=v.root;
+                if(!x.cn&&v.cn)x.cn=v.cn;
+                if(!x.en&&v.en)x.en=v.en;
+                if(!x.first_seen||stamp<x.first_seen)x.first_seen=stamp;
+                if(!x.last_seen||stamp>x.last_seen)x.last_seen=stamp;
+              }else{
+                const x={word:String(v.word).trim(),cn:v.cn||'',en:v.en||'',root:v.root||'',categories:['每日学习',session],times_seen:1,first_seen:stamp,last_seen:stamp,sessions:[session],dates:[date]};
+                db.push(x);map.set(k,x);
+              }
+            }
+          }
+          fs.writeFileSync(dbPath,'window.DAILY_VOCAB_DB = '+JSON.stringify(db,null,2)+';\n');
+          NODE
+          git add data/daily-vocab-data.js
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Sync daily lesson vocabulary'
+          git pull --rebase origin main
+          git push origin HEAD:main
