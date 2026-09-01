@@ -1,0 +1,35 @@
+name: Install shared unfamiliar vocabulary
+on:
+  push:
+    paths:
+      - 'data/unfamiliar-vocab-data.js'
+      - 'data/library-switcher.js'
+      - '.github/workflows/install-shared-unfamiliar-vocab.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Insert shared unfamiliar vocab script and bump cache
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          tag='<script src="data/unfamiliar-vocab-data.js?v=20260901-1"></script>'
+          if 'data/unfamiliar-vocab-data.js' not in s:
+              s=s.replace('<script src="data/library-switcher.js', tag+'<script src="data/library-switcher.js')
+          import re
+          s=re.sub(r'data/library-switcher\.js\?v=[^"<]+','data/library-switcher.js?v=20260901-5',s)
+          p.write_text(s)
+          PY
+      - name: Commit changes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git diff --cached --quiet || git commit -m 'Load shared unfamiliar vocabulary library'
+          git push
