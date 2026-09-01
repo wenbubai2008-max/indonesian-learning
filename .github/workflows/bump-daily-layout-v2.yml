@@ -1,0 +1,29 @@
+name: Bump daily layout v2
+on:
+  push:
+    paths:
+      - '.github/workflows/bump-daily-layout-v2.yml'
+permissions:
+  contents: write
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump layout cache versions
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('data/daily-width-fix.css?v=20260901-1','data/daily-width-fix.css?v=20260901-2')
+          s=s.replace('data/daily-ui-polish.js?v=20260901-1','data/daily-ui-polish.js?v=20260901-2')
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Bump compact daily layout cache" || exit 0
+          git push
