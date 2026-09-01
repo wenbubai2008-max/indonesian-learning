@@ -1,0 +1,32 @@
+name: Install unfamiliar daily review
+on:
+  push:
+    paths:
+      - '.github/workflows/install-unfamiliar-daily-review.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install scripts
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          s=s.replace('data/reading-word-lookup.js?v=20260901-1','data/reading-word-lookup.js?v=20260901-3')
+          s=s.replace('data/reading-word-lookup.js?v=20260901-2','data/reading-word-lookup.js?v=20260901-3')
+          if 'data/unfamiliar-daily-review.js' not in s:
+              s=s.replace('</body>','<script src="data/unfamiliar-daily-review.js?v=20260901-1"></script>\n</body>')
+          p.write_text(s)
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add index.html
+          git diff --cached --quiet || git commit -m 'Enable unfamiliar vocabulary review in daily lessons'
+          git push
