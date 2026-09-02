@@ -4,10 +4,17 @@
     const seen=new Set();
     return (arr||[]).filter(x=>x&&x.word&&!seen.has(normWord(x.word))&&seen.add(normWord(x.word)));
   }
+  function missingMeaning(v){
+    const s=String(v||'').trim();
+    return !s||s==='暂无释义'||s==='暂未查到释义'||s==='查询中文释义…'||s==='查询中文释义...';
+  }
+  function localUnknownMap(){
+    try{return JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){return {}}
+  }
   function localUnknownWords(){
-    let m={};try{m=JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){}
+    const m=localUnknownMap();
     return Object.values(m).map(x=>({
-      word:x.word,display:x.display||x.word,cn:x.cn||'暂无释义',en:x.en||'',root:x.root||'',
+      word:x.word,display:x.display||x.word,cn:x.cn||'',en:x.en||'',root:x.root||'',
       scene:(x.contexts&&x.contexts.length)?x.contexts[x.contexts.length-1]:'',
       note:'遇到 '+(x.times_seen||1)+' 次'+(x.source_date?' · '+x.source_date:'')+(x.session?' · '+x.session:''),
       contexts:x.contexts||[],times_seen:x.times_seen||1,source:'电脑新增'
@@ -22,11 +29,50 @@
     localUnknownWords().forEach(x=>{
       if(!x||!x.word)return;
       const k=normWord(x.word),old=merged.get(k)||{};
-      merged.set(k,Object.assign({},old,x,{cn:(x.cn&&x.cn!=='暂无释义'?x.cn:(old.cn||x.cn)),contexts:[...(old.contexts||[]),...(x.contexts||[])].filter((v,i,a)=>v&&a.indexOf(v)===i),times_seen:Math.max(Number(old.times_seen||0),Number(x.times_seen||0),1)}));
+      const cn=!missingMeaning(x.cn)?x.cn:(!missingMeaning(old.cn)?old.cn:(x.cn||old.cn||''));
+      merged.set(k,Object.assign({},old,x,{cn:cn,contexts:[...(old.contexts||[]),...(x.contexts||[])].filter((v,i,a)=>v&&a.indexOf(v)===i),times_seen:Math.max(Number(old.times_seen||0),Number(x.times_seen||0),1)}));
     });
     let mem={};try{mem=memory()}catch(e){}
     return [...merged.values()].filter(x=>mem[x.word]!=='know');
   }
+
+  const meaningAttempts=new Set();
+  async function translateZh(word){
+    const w=String(word||'').trim();if(!w)return '';
+    try{
+      const url='https://translate.googleapis.com/translate_a/single?client=gtx&sl=id&tl=zh-CN&dt=t&q='+encodeURIComponent(w);
+      const r=await fetch(url,{method:'GET',mode:'cors',cache:'no-store'});
+      if(!r.ok)return '';
+      const data=await r.json();
+      return Array.isArray(data?.[0])?data[0].map(x=>Array.isArray(x)?x[0]:'').join('').trim():'';
+    }catch(e){return ''}
+  }
+  async function fillMissingMeanings(){
+    const map=localUnknownMap();
+    let changed=false;
+    for(const [key,item] of Object.entries(map)){
+      if(!item||!item.word||!missingMeaning(item.cn))continue;
+      const shared=sharedUnknownWords().find(x=>normWord(x.word)===normWord(item.word));
+      if(shared&&!missingMeaning(shared.cn)){
+        item.cn=shared.cn;map[key]=item;changed=true;continue;
+      }
+      const attemptKey=normWord(item.word);
+      if(meaningAttempts.has(attemptKey))continue;
+      meaningAttempts.add(attemptKey);
+      const zh=await translateZh(item.word);
+      if(zh){item.cn=zh;map[key]=item;changed=true;}
+    }
+    if(changed){
+      localStorage.setItem('indo_unknown_words',JSON.stringify(map));
+      if(document.getElementById('librarySelect')?.value==='unknown'){
+        DB=sourceFor('unknown');FILTER=DB.slice();idx=restoreIndex('unknown',FILTER);rebuildCategories();renderVocab();
+        document.getElementById('vocabCount').textContent=DB.length;
+        document.getElementById('vocabTag').textContent='陌生词汇 '+DB.length+' 词';
+        document.getElementById('dbStatus').textContent='陌生词汇 · '+DB.length+' 词';
+      }
+    }
+  }
+
   function sourceFor(key){
     if(key==='daily') return uniqueByWord(window.DAILY_VOCAB_DB||[]);
     if(key==='unknown') return uniqueByWord(unknownWords());
@@ -66,9 +112,10 @@
     document.getElementById('dbStatus').textContent=labelFor(key)+' · '+DB.length+' 词';
     if(DB.length){renderVocab();saveCurrentProgress();}else{document.getElementById('vocabBox').innerHTML='<div class="empty">这个词库目前还没有词。</div>';}
     updateStats();localStorage.setItem('selected_vocab_library',key);
+    if(key==='unknown')setTimeout(fillMissingMeanings,0);
   }
   function removeLocalUnknown(word){
-    let m={};try{m=JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){}
+    let m=localUnknownMap();
     const k=normWord(word);
     Object.keys(m).forEach(key=>{if(key===k||normWord(m[key]?.word)===k)delete m[key]});
     localStorage.setItem('indo_unknown_words',JSON.stringify(m));
