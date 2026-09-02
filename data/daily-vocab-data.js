@@ -2395,7 +2395,8 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00",
       "原始课程",
-      "08:00"
+      "08:00",
+      "2026-09-02"
     ],
     "times_seen": 2,
     "first_seen": "2026-08-26 19:00",
@@ -3952,7 +3953,8 @@ window.DAILY_VOCAB_DB = [
     "root": "jadwal",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "2026-09-02"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-02 08:00",
@@ -3971,7 +3973,8 @@ window.DAILY_VOCAB_DB = [
     "root": "batal",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "2026-09-02"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-02 08:00",
@@ -3990,7 +3993,8 @@ window.DAILY_VOCAB_DB = [
     "root": "lanjut",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "2026-09-02"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-02 08:00",
@@ -4009,7 +4013,8 @@ window.DAILY_VOCAB_DB = [
     "root": "izin",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "2026-09-02"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-02 08:00",
@@ -4028,7 +4033,8 @@ window.DAILY_VOCAB_DB = [
     "root": "cuti",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "2026-09-02"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-02 08:00",
@@ -4047,7 +4053,8 @@ window.DAILY_VOCAB_DB = [
     "root": "lembur",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "2026-09-02"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-02 08:00",
@@ -4066,7 +4073,8 @@ window.DAILY_VOCAB_DB = [
     "root": "urus",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "2026-09-02"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-02 08:00",
@@ -4085,7 +4093,8 @@ window.DAILY_VOCAB_DB = [
     "root": "urus",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "2026-09-02"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-02 08:00",
@@ -4104,7 +4113,8 @@ window.DAILY_VOCAB_DB = [
     "root": "kejar",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "2026-09-02"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-02 08:00",
