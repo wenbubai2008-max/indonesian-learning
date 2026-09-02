@@ -11,22 +11,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: git pull --rebase origin main
       - name: Patch index
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
           p=Path('index.html')
           s=p.read_text()
-          import re
           s=re.sub(r'\s*<script src="data/daily-speaking-input\.js\?v=[^"]+"></script>\s*','\n',s)
           if 'data/today-mastery-test.js' not in s:
               s=s.replace('</body></html>','<script src="data/today-mastery-test.js?v=20260902-1"></script>\n</body></html>')
           p.write_text(s)
           PY
-      - name: Commit
+      - name: Commit and push
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add index.html
-          git diff --cached --quiet || git commit -m "Remove speaking module and load Sep 2 mastery test"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "Remove speaking module and load Sep 2 mastery test"
+            git pull --rebase origin main
+            git push origin main
+          fi
