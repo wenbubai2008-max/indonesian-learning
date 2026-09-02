@@ -1,0 +1,58 @@
+name: Append Sep 2 daily vocabulary
+on:
+  push:
+    paths:
+      - '.github/workflows/append-sep02-vocab.yml'
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append Sep 2 vocabulary
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,re
+          p=Path('data/daily-vocab-data.js')
+          s=p.read_text(encoding='utf-8')
+          m=re.search(r'window\.DAILY_VOCAB_DB\s*=\s*(\[.*\])\s*;\s*$',s,re.S)
+          if not m: raise SystemExit('daily vocab format not recognized')
+          arr=json.loads(m.group(1))
+          additions=[
+            {"word":"mendadak","cn":"突然；临时发生","en":"sudden; unexpectedly","root":"dadak","categories":["每日学习","08:00","2026-09-02"],"times_seen":1,"first_seen":"2026-09-02 08:00","last_seen":"2026-09-02 08:00","sessions":["08:00"],"dates":["2026-09-02"]},
+            {"word":"jadwal","cn":"日程；时间安排","en":"schedule; timetable","root":"jadwal","categories":["每日学习","08:00","2026-09-02"],"times_seen":1,"first_seen":"2026-09-02 08:00","last_seen":"2026-09-02 08:00","sessions":["08:00"],"dates":["2026-09-02"]},
+            {"word":"batal","cn":"取消；作废；没成","en":"cancel; be called off","root":"batal","categories":["每日学习","08:00","2026-09-02"],"times_seen":1,"first_seen":"2026-09-02 08:00","last_seen":"2026-09-02 08:00","sessions":["08:00"],"dates":["2026-09-02"]},
+            {"word":"lanjut","cn":"继续；接着进行","en":"continue; proceed","root":"lanjut","categories":["每日学习","08:00","2026-09-02"],"times_seen":1,"first_seen":"2026-09-02 08:00","last_seen":"2026-09-02 08:00","sessions":["08:00"],"dates":["2026-09-02"]},
+            {"word":"izin","cn":"许可；请假；先告知一声","en":"permission; leave; excuse oneself","root":"izin","categories":["每日学习","08:00","2026-09-02"],"times_seen":1,"first_seen":"2026-09-02 08:00","last_seen":"2026-09-02 08:00","sessions":["08:00"],"dates":["2026-09-02"]},
+            {"word":"cuti","cn":"休假；年假","en":"leave; vacation from work","root":"cuti","categories":["每日学习","08:00","2026-09-02"],"times_seen":1,"first_seen":"2026-09-02 08:00","last_seen":"2026-09-02 08:00","sessions":["08:00"],"dates":["2026-09-02"]},
+            {"word":"lembur","cn":"加班","en":"work overtime; overtime","root":"lembur","categories":["每日学习","08:00","2026-09-02"],"times_seen":1,"first_seen":"2026-09-02 08:00","last_seen":"2026-09-02 08:00","sessions":["08:00"],"dates":["2026-09-02"]},
+            {"word":"urusan","cn":"事情；事务；要处理的事","en":"matter; business; affair","root":"urus","categories":["每日学习","08:00","2026-09-02"],"times_seen":1,"first_seen":"2026-09-02 08:00","last_seen":"2026-09-02 08:00","sessions":["08:00"],"dates":["2026-09-02"]},
+            {"word":"ngurus","cn":"处理；办理；照管（口语）","en":"handle; take care of; arrange","root":"urus","categories":["每日学习","08:00","2026-09-02"],"times_seen":1,"first_seen":"2026-09-02 08:00","last_seen":"2026-09-02 08:00","sessions":["08:00"],"dates":["2026-09-02"]},
+            {"word":"ngejar","cn":"追赶；赶进度；争取赶上（口语）","en":"chase; catch up; rush to meet","root":"kejar","categories":["每日学习","08:00","2026-09-02"],"times_seen":1,"first_seen":"2026-09-02 08:00","last_seen":"2026-09-02 08:00","sessions":["08:00"],"dates":["2026-09-02"]}
+          ]
+          by={str(x.get('word','')).strip().lower():x for x in arr}
+          for a in additions:
+            k=a['word'].lower()
+            if k in by:
+              x=by[k]
+              x['categories']=list(dict.fromkeys((x.get('categories') or [])+a['categories']))
+              x['sessions']=list(dict.fromkeys((x.get('sessions') or [])+a['sessions']))
+              x['dates']=list(dict.fromkeys((x.get('dates') or [])+a['dates']))
+              x['last_seen']='2026-09-02 08:00'
+              x['times_seen']=max(int(x.get('times_seen',1)),len(x['dates']))
+              if not x.get('cn'): x['cn']=a['cn']
+              if not x.get('en'): x['en']=a['en']
+              if not x.get('root'): x['root']=a['root']
+            else:
+              arr.append(a);by[k]=a
+          p.write_text('window.DAILY_VOCAB_DB = '+json.dumps(arr,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily-vocab-data.js
+          git commit -m "Append Sep 2 daily vocabulary" || exit 0
+          git push
