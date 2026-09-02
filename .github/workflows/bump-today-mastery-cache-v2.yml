@@ -1,0 +1,32 @@
+name: bump-today-mastery-cache-v2
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/bump-today-mastery-cache-v2.yml'
+permissions:
+  contents: write
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump mastery test cache
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          import re
+          s2=re.sub(r'data/today-mastery-test\.js\?v=[^"\']+', 'data/today-mastery-test.js?v=20260902-2', s)
+          if s2==s:
+              raise SystemExit('mastery script reference not found or already v2')
+          p.write_text(s2)
+          PY
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git commit -m 'Bump Sep 2 mastery test cache to v2'
+          git push
