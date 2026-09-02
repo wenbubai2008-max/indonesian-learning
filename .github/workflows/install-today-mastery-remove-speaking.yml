@@ -1,0 +1,32 @@
+name: Install today mastery test and remove speaking module
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/install-today-mastery-remove-speaking.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch index
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          import re
+          s=re.sub(r'\s*<script src="data/daily-speaking-input\.js\?v=[^"]+"></script>\s*','\n',s)
+          if 'data/today-mastery-test.js' not in s:
+              s=s.replace('</body></html>','<script src="data/today-mastery-test.js?v=20260902-1"></script>\n</body></html>')
+          p.write_text(s)
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add index.html
+          git diff --cached --quiet || git commit -m "Remove speaking module and load Sep 2 mastery test"
+          git push
