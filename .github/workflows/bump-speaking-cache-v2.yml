@@ -1,0 +1,33 @@
+name: Bump speaking cache v2
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/bump-speaking-cache-v2.yml'
+permissions:
+  contents: write
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump daily speaking script cache
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          old='data/daily-speaking-input.js?v=20260902-1'
+          new='data/daily-speaking-input.js?v=20260902-2'
+          if old not in s:
+              raise SystemExit(f'not found: {old}')
+          p.write_text(s.replace(old,new))
+          PY
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git diff --cached --quiet && exit 0
+          git commit -m 'Bump speaking input cache to v2'
+          git push
