@@ -2389,21 +2389,24 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "mendadak",
     "cn": "突然、临时",
-    "en": "",
-    "root": "",
+    "en": "sudden; unexpectedly",
+    "root": "dadak",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-26 19:00",
-    "last_seen": "2026-08-26 19:00",
+    "last_seen": "2026-09-02 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-26"
+      "2026-08-26",
+      "2026-09-02"
     ]
   },
   {
@@ -3940,6 +3943,177 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
+    ]
+  },
+  {
+    "word": "jadwal",
+    "cn": "日程；时间安排",
+    "en": "schedule; timetable",
+    "root": "jadwal",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "batal",
+    "cn": "取消；作废；没成",
+    "en": "cancel; be called off",
+    "root": "batal",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "lanjut",
+    "cn": "继续；接着进行",
+    "en": "continue; proceed",
+    "root": "lanjut",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "izin",
+    "cn": "许可；请假；先告知一声",
+    "en": "permission; leave; excuse oneself",
+    "root": "izin",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "cuti",
+    "cn": "休假；年假",
+    "en": "leave; vacation from work",
+    "root": "cuti",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "lembur",
+    "cn": "加班",
+    "en": "work overtime; overtime",
+    "root": "lembur",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "urusan",
+    "cn": "事情；事务；要处理的事",
+    "en": "matter; business; affair",
+    "root": "urus",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "ngurus",
+    "cn": "处理；办理；照管（口语）",
+    "en": "handle; take care of; arrange",
+    "root": "urus",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "ngejar",
+    "cn": "追赶；赶进度；争取赶上（口语）",
+    "en": "chase; catch up; rush to meet",
+    "root": "kejar",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
     ]
   }
 ];
