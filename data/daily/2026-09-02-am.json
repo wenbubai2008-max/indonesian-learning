@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-02",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 12,
+  "title": "2026年9月2日｜Day 12",
+  "vocab": [
+    {"order":111,"word":"mendadak","display":"mendadak","audio_text":"mendadak","cn":"突然；临时发生","en":"sudden; unexpectedly","root":"dadak","formation":"meN- + dadak → mendadak，表示事情突然发生、没有提前安排。","example":"Tadi pagi ada meeting mendadak sama atasan.","example_cn":"今天早上突然有个和上司的临时会议。","synonym_note":"tiba-tiba 也表示‘突然’，更泛用；mendadak 常形容临时出现的安排、变化或情况。"},
+    {"order":112,"word":"jadwal","display":"jadwal","audio_text":"jadwal","cn":"日程；时间安排","en":"schedule; timetable","root":"jadwal","formation":"基础词；常见搭配：ubah jadwal（改时间）、jadwal meeting（会议日程）。","example":"Jadwal siang ini berubah lagi.","example_cn":"今天下午的日程又变了。","synonym_note":"waktu = 时间；jadwal = 已经安排好的时间表或日程。"},
+    {"order":113,"word":"batal","display":"batal","audio_text":"batal","cn":"取消；作废；没成","en":"cancel; be called off","root":"batal","formation":"基础词；口语可直接说 jadi batal（结果取消了）、batal pergi（不去了）。","example":"Meeting jam dua akhirnya batal.","example_cn":"两点的会议最后取消了。","synonym_note":"batal = 取消、不成；tunda = 延后，之后通常还会继续。"},
+    {"order":114,"word":"lanjut","display":"lanjut","audio_text":"lanjut","cn":"继续；接着进行","en":"continue; proceed","root":"lanjut","formation":"基础词；常见词族：melanjutkan（继续某事）、lanjutan（后续）。","example":"Kalau sudah beres, kita lanjut bahas bagian berikutnya.","example_cn":"如果已经处理完，我们继续讨论下一部分。","synonym_note":"terus 常表示‘继续/然后’，更口语泛用；lanjut 更明确是把某件事继续做下去。"},
+    {"order":115,"word":"izin","display":"izin","audio_text":"izin","cn":"许可；请假；先告知一声","en":"permission; leave; excuse oneself","root":"izin","formation":"基础词；常见：minta izin（请求许可）、izin pulang（请示先走）、izin sakit（病假）。","example":"Besok aku izin datang agak siang ya.","example_cn":"明天我请示一下，会晚一点来。","synonym_note":"cuti 通常是正式休假；izin 更广，可以是临时请假、请示或征得同意。"},
+    {"order":116,"word":"cuti","display":"cuti","audio_text":"cuti","cn":"休假；年假","en":"leave; vacation from work","root":"cuti","formation":"基础词；常见：ambil cuti（休假）、cuti tahunan（年假）。","example":"Aku mau ambil cuti dua hari minggu depan.","example_cn":"我下周想休两天假。","synonym_note":"libur = 不上班/放假；cuti = 员工主动申请的正式休假。"},
+    {"order":117,"word":"lembur","display":"lembur","audio_text":"lembur","cn":"加班","en":"work overtime; overtime","root":"lembur","formation":"基础词；常见：kerja lembur / lembur sampai malam（加班到晚上）。","example":"Kalau kerjaan belum beres, mungkin malam ini harus lembur.","example_cn":"如果工作还没做完，今晚可能得加班。","synonym_note":"kerja malam 只是‘晚上工作’；lembur 特指超过正常工作时间加班。"},
+    {"order":118,"word":"urusan","display":"urusan","audio_text":"urusan","cn":"事情；事务；要处理的事","en":"matter; business; affair","root":"urus","formation":"urus + -an → urusan，表示需要处理的事情或事务。常见词族：mengurus（处理）、pengurusan（办理）。","example":"Siang ini aku ada urusan di luar kantor.","example_cn":"今天下午我有事情要去办公室外处理。","synonym_note":"masalah 偏‘问题/麻烦’；urusan 是更中性的‘事情、事务’。"},
+    {"order":119,"word":"ngurus","display":"ngurus","audio_text":"ngurus","cn":"处理；办理；照管（口语）","en":"handle; take care of; arrange","root":"urus","formation":"urus → mengurus（标准）→ ngurus（雅加达口语常见）。","example":"Aku lagi ngurus dokumen buat klien.","example_cn":"我正在给客户处理文件。","synonym_note":"ngurus 很口语；mengurus 更标准，写邮件或正式场合优先用 mengurus。"},
+    {"order":120,"word":"ngejar","display":"ngejar","audio_text":"ngejar","cn":"追赶；赶进度；争取赶上（口语）","en":"chase; catch up; rush to meet","root":"kejar","formation":"kejar → mengejar（标准）→ ngejar（常见口语）。办公室里常说 ngejar deadline。","example":"Hari ini aku harus ngejar deadline sebelum jam lima.","example_cn":"今天我得在五点前赶上截止时间。","synonym_note":"buru-buru = 动作很匆忙；ngejar 强调为了赶上目标、时间或进度而加快。"}
+  ],
+  "sentences": [
+    {"id":"Tadi ada urusan mendadak, jadi jadwal meeting harus diubah.","cn":"刚才突然有事情，所以会议时间得改。"},
+    {"id":"Kalau meeting-nya batal, kabarin aku biar aku bisa lanjut kerjaan lain.","cn":"如果会议取消了，告诉我一声，我好继续做别的工作。"},
+    {"id":"Besok aku izin datang siang karena harus ngurus dokumen dulu.","cn":"明天我请示晚点来，因为要先去办文件。"},
+    {"id":"Aku lagi ngejar deadline, takut nanti malah harus lembur.","cn":"我正在赶截止时间，怕等会儿反而得加班。"},
+    {"id":"Sebelum ambil cuti, aku mau mengingatkan tim soal stok yang tinggal sedikit.","cn":"休假前，我想提醒团队库存已经不多了。"}
+  ],
+  "reading": {
+    "title":"Pagi yang Jadwalnya Berubah",
+    "text":"Pagi ini jadwal kerjaku berubah karena ada urusan mendadak dari klien. Meeting yang awalnya jam sembilan ditunda, lalu meeting kedua malah batal. Aku langsung menghubungi tim supaya mereka nggak menunggu. Setelah itu aku lanjut ngurus dokumen yang harus dikirim hari ini. Aku juga lagi ngejar deadline sebelum jam lima karena besok mau izin datang siang. Minggu depan aku rencana ambil cuti dua hari. Sebelum cuti, aku harus mengingatkan tim soal stok yang tinggal sedikit. Kalau semua belum beres sore ini, mungkin aku harus lembur sebentar. Untung jalan ke kantor tadi nggak macet.",
+    "cn":"今天早上的工作安排变了，因为客户那边临时有事。原本九点的会议被推迟，第二个会议反而取消了。我马上联系团队，让他们别一直等。之后我继续处理今天必须发出去的文件。我还在赶五点前的截止时间，因为明天想请示晚点来。下周我计划休两天假。休假前，我得提醒团队库存已经不多了。如果今天下午还没全部处理完，可能得加一会儿班。还好今天来办公室的路上不堵。",
+    "vocab":["jadwal","urusan","mendadak","batal","menghubungi","lanjut","ngurus","ngejar","deadline","izin","cuti","mengingatkan","stok","lembur","macet"]
+  },
+  "quiz": [
+    {"question":"“Meeting-nya batal.” 最自然的意思是：","options":["会议提前了","会议取消了","会议结束了"],"answer_index":1,"explain":"batal 表示取消、没成；如果只是推迟，通常用 tunda / ditunda。"},
+    {"question":"izin 和 cuti 最合适的区别是：","options":["izin 更广，可临时请示或请假；cuti 更像正式休假","两个词完全一样","cuti 只表示下班"],"answer_index":0,"explain":"izin 可以是临时请假、请示、征得同意；cuti 通常是正式申请的休假。"},
+    {"question":"复习：想表达‘提醒团队库存快没了’，最自然的是：","options":["Mengingatkan tim kalau stok tinggal sedikit.","Transfer tim kalau stok tinggal sedikit.","Nyasar tim kalau stok tinggal sedikit."],"answer_index":0,"explain":"mengingatkan = 提醒；stok = 库存。这里复习了之前学过的 mengingatkan 和昨天的 stok。"}
+  ],
+  "output": {
+    "task":"用自然口语表达：‘今天突然有事，九点的会议取消了。我先继续处理文件，下午还要赶截止时间。如果做不完，今晚可能得加班。明天我想请示晚点来。’",
+    "reference_answer":"Hari ini ada urusan mendadak, jadi meeting jam sembilan batal. Aku lanjut ngurus dokumen dulu, terus siang ini masih harus ngejar deadline. Kalau belum beres, mungkin malam ini harus lembur. Besok aku mau izin datang agak siang.",
+    "reference_cn":"今天突然有事，九点的会议取消了。我先继续处理文件，下午还要赶截止时间。如果做不完，今晚可能得加班。明天我想请示晚点来。"
+  },
+  "review": [
+    "工作安排：jadwal = 日程，batal = 取消，lanjut = 继续；mendadak 常用来形容临时出现的会议、任务或变化。",
+    "请假场景：izin 更广、更临时；cuti 更像正式休假。办公室口语里常说 izin datang siang / ambil cuti。",
+    "轮换复习旧词：menghubungi / mengingatkan（约7天前）、pantes / ngaret（约3天前）、stok / macet（昨天），不要连续只刷同一批词。"
+  ]
+}
