@@ -11,7 +11,7 @@
     {"date":"2026-08-30","am":true,"pm":true,"verified":"original_chat_text","day":9,"am_day":9,"pm_day":9,"am_status":"original_chat_text_corrected","day_note":"08:00 为 Day 9；PM 原聊天未写 Day，按连续晚课顺序归档为 Day 9。"},
     {"date":"2026-08-31","am":true,"pm":true,"verified":"generated_daily_lesson","day":10,"am_day":10,"pm_day":10,"pm_status":"generated","am_status":"generated"},
     {"date":"2026-09-01","am":true,"pm":true,"verified":"generated_daily_lesson","day":11,"am_day":11,"pm_day":11,"am_status":"generated","pm_status":"generated"},
-    {"date":"2026-09-02","am":true,"pm":false,"verified":"generated_daily_lesson","day":12,"am_day":12,"am_status":"generated"}
+    {"date":"2026-09-02","am":true,"pm":true,"verified":"generated_daily_lesson","day":12,"am_day":12,"pm_day":12,"am_status":"generated","pm_status":"generated_interactive_experiment"}
   ],
   "updated":"2026-09-02",
   "note":"08:00 历史原文迁移：Day 2–4 仅导入聊天中可确认部分并明确标记不完整；Day 7 与 Day 8 的 08:00 标题均为 2026-08-29，冲突按原聊天保留。已有19:00晚课索引保持不删除。"
