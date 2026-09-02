@@ -1,0 +1,37 @@
+name: Install daily vocabulary examples helper
+on:
+  push:
+    paths:
+      - 'data/daily-vocab-examples.js'
+      - '.github/workflows/install-daily-vocab-examples.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch index
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          tag='<script src="data/daily-vocab-examples.js?v=20260902-1"></script>'
+          anchor='<script src="data/library-switcher.js'
+          if tag not in s:
+              i=s.find(anchor)
+              if i<0: raise SystemExit('library-switcher anchor not found')
+              s=s[:i]+tag+s[i:]
+          import re
+          s=re.sub(r'data/library-switcher\.js\?v=[^"\']+', 'data/library-switcher.js?v=20260902-2', s)
+          p.write_text(s)
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add index.html
+          git diff --cached --quiet || git commit -m "Load daily vocabulary examples helper"
+          git push
