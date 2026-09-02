@@ -916,21 +916,24 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "keburu",
     "cn": "来不及；在某事发生前已经……",
-    "en": "",
-    "root": "",
+    "en": "already before; before it is too late",
+    "root": "buru",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-08-27 08:00",
+    "last_seen": "2026-09-02 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-08-27"
+      "2026-08-27",
+      "2026-09-02"
     ]
   },
   {
@@ -1233,21 +1236,24 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "ketinggalan",
     "cn": "落下、忘带、错过",
-    "en": "",
+    "en": "be left behind; miss; leave behind",
     "root": "tinggal",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-28 08:00",
-    "last_seen": "2026-08-28 08:00",
+    "last_seen": "2026-09-02 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-08-28"
+      "2026-08-28",
+      "2026-09-02"
     ]
   },
   {
@@ -4136,6 +4142,158 @@ window.DAILY_VOCAB_DB = [
     "last_seen": "2026-09-02 08:00",
     "sessions": [
       "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "kebuang",
+    "cn": "被白白浪费掉",
+    "en": "go to waste; be wasted",
+    "root": "buang",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-02 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "beresin",
+    "cn": "把……弄完、处理好（口语）",
+    "en": "finish; sort out",
+    "root": "beres",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-02 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "ngabarin",
+    "cn": "通知；告诉一声（口语）",
+    "en": "let someone know; inform",
+    "root": "kabar",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-02 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "sempetin",
+    "cn": "挤出时间做……（口语）",
+    "en": "make time for; manage to fit in",
+    "root": "sempat",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-02 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "keteteran",
+    "cn": "忙不过来；跟不上进度",
+    "en": "struggle to keep up; be overwhelmed",
+    "root": "keteter",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-02 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "kepending",
+    "cn": "被搁着；卡着没推进（口语混用）",
+    "en": "left pending; stuck pending",
+    "root": "pending",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-02 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "ngejar deadline",
+    "cn": "赶截止时间；赶进度",
+    "en": "race to meet a deadline",
+    "root": "kejar",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-02 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
+  },
+  {
+    "word": "urusan dadakan",
+    "cn": "临时冒出来的事",
+    "en": "last-minute matter",
+    "root": "urus / dadak",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-02 19:00",
+    "sessions": [
+      "19:00"
     ],
     "dates": [
       "2026-09-02"
