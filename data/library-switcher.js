@@ -54,7 +54,20 @@
   function rebuildCategories(){const cat=document.getElementById('cat');if(!cat)return;const cats=[...new Set((DB||[]).flatMap(x=>x.categories||[]).filter(c=>!['每日学习','08:00','19:00','原始课程','历史记录不完整'].includes(c)))].sort();cat.innerHTML='<option value="">全部分类</option>'+cats.map(c=>'<option>'+esc(c)+'</option>').join('');}
   function refreshOptions(){const select=document.getElementById('librarySelect');if(!select)return;const cur=select.value||localStorage.getItem('selected_vocab_library')||'top1000';const topCount=(window.EMBEDDED_DB||[]).length,dailyCount=(window.DAILY_VOCAB_DB||[]).length,unknownCount=unknownWords().length;select.innerHTML='<option value="top1000">Top1000（'+topCount+'）</option><option value="daily">每日学习词汇（'+dailyCount+'）</option><option value="unknown">陌生词汇（'+unknownCount+'）</option>';select.value=['top1000','daily','unknown'].includes(cur)?cur:'top1000';}
 
+  function addPrevButton(){
+    const box=document.getElementById('vocabBox');if(!box)return;
+    const actions=box.querySelector('.actions');if(!actions||actions.querySelector('[data-prev-word]'))return;
+    const btn=document.createElement('button');btn.type='button';btn.className='secondary';btn.dataset.prevWord='1';btn.textContent='上一个';
+    btn.addEventListener('click',function(){
+      if(!FILTER||!FILTER.length)return;
+      idx=(idx-1+FILTER.length)%FILTER.length;
+      renderVocab();decorateCard();saveCurrentProgress();
+    });
+    actions.insertBefore(btn,actions.firstChild);
+  }
+
   function decorateCard(){
+    addPrevButton();
     const lib=activeLibrary();if(lib!=='daily')return;
     const x=typeof current==='function'?current():null,flash=document.getElementById('flash');if(!x||!flash)return;
     const firstMuted=flash.querySelector(':scope > .muted');
