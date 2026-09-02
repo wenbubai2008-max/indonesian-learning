@@ -4125,5 +4125,24 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-02"
     ]
+  },
+  {
+    "word": "dadakan",
+    "cn": "临时的；突然安排的（口语）",
+    "en": "impromptu; last-minute",
+    "root": "dadak",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-02"
+    ]
   }
 ];
