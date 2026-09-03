@@ -1,0 +1,32 @@
+name: Install learning loop v2
+on:
+  push:
+    paths:
+      - '.github/workflows/install-learning-loop-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update script loading
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          if 'data/unfamiliar-vocab-data.js' not in s:
+              s=s.replace('<script src="data/extensive-reading-data.js', '<script src="data/unfamiliar-vocab-data.js?v=20260903-1"></script>\n<script src="data/extensive-reading-data.js')
+          s=s.replace('data/extensive-reading-data.js?v=20260903-2','data/extensive-reading-data.js?v=20260903-3')
+          s=s.replace('data/home-learning-upgrade-v2.js?v=20260903-1','data/home-learning-upgrade-v2.js?v=20260903-2')
+          p.write_text(s)
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add index.html
+          git diff --cached --quiet || git commit -m 'Load updated adaptive learning modules'
+          git push
