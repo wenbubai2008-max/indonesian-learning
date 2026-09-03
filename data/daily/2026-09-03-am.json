@@ -15,20 +15,20 @@
     {"order":127,"word":"setuju","display":"setuju","audio_text":"setuju","cn":"同意；赞成","en":"agree; approve","root":"tuju","formation":"常用固定词 setuju；词族：menyetujui（批准、同意某事）、persetujuan（同意、批准）。","example":"Aku setuju sama idenya, tapi waktunya perlu diubah.","example_cn":"我同意这个想法，不过时间需要调整。","synonym_note":"setuju = 同意观点或方案；oke 更随意，也可只是表示‘收到/可以’。"},
     {"order":128,"word":"ngeluh","display":"ngeluh","audio_text":"ngeluh","cn":"抱怨；发牢骚（口语）","en":"complain; grumble","root":"keluh","formation":"keluh → mengeluh（标准）→ ngeluh（雅加达常见口语）。","example":"Dia dari tadi ngeluh soal kerjaan yang numpuk.","example_cn":"他从刚才开始就一直抱怨工作堆太多。","synonym_note":"curhat = 倾诉心事；ngeluh 更偏抱怨某件让人不爽或辛苦的事。"},
     {"order":129,"word":"masukan","display":"masukan","audio_text":"masukan","cn":"意见；反馈；建议","en":"input; feedback; suggestion","root":"masuk","formation":"masuk + -an → masukan，在工作中常指别人给的意见或反馈。","example":"Kalau ada masukan, langsung bilang aja ya.","example_cn":"如果有意见，直接说就行。","synonym_note":"saran 更像建议；masukan 范围更广，可以是意见、反馈、改进点。"},
-    {"order":130,"word":"prioritas","display":"prioritas","audio_text":"prioritas","cn":"优先事项；优先级","en":"priority","root":"prioritas","formation":"基础外来词；常见：jadi prioritas（成为优先事项）、prioritas utama（首要优先事项）。","example":"Yang ini prioritas dulu, yang lain bisa nanti.","example_cn":"这个先优先处理，其他的可以晚点。","synonym_note":"penting = 重要；prioritas = 需要优先处理，强调处理顺序。"}
+    {"order":130,"word":"rapihin","display":"rapihin","audio_text":"rapihin","cn":"整理好；收拾整齐；把……弄顺（口语）","en":"tidy up; organize; straighten out","root":"rapi","formation":"rapi → merapikan（标准）→ rapihin（雅加达常见口语）。","example":"Sebelum meeting, aku mau rapihin file ini dulu.","example_cn":"开会前，我想先把这个文件整理好。","synonym_note":"beresin 更偏把事情处理完；rapihin 更强调把东西、文件或安排整理得更整齐。"}
   ],
   "sentences": [
     {"id":"Karena ada urusan dadakan, jadwal meeting sore ini kita tunda dulu.","cn":"因为临时有事，今天下午的会议安排我们先推迟。"},
-    {"id":"Aku lagi ngerjain kerjaan yang prioritas, jadi mau fokus dulu satu jam.","cn":"我正在处理优先任务，所以想先专心一个小时。"},
+    {"id":"Aku lagi ngerjain laporan, habis itu mau rapihin file buat meeting.","cn":"我正在做报告，做完后想把会议文件整理一下。"},
     {"id":"Tadi aku sempat nyatet beberapa masukan dari klien.","cn":"刚才我抽空记下了客户提的几条意见。"},
     {"id":"Kalau bahan meeting sudah disiapin dan semuanya beres, langsung kabarin aku.","cn":"如果会议材料准备好了、事情也都处理完了，就马上告诉我。"},
     {"id":"Aku setuju idenya, cuma jangan ngeluh dulu sebelum kita coba.","cn":"我同意这个想法，只是我们还没试之前先别抱怨。"}
   ],
   "reading": {
-    "title":"Pagi yang Harus Pilih Prioritas",
-    "text":"Pagi ini ada perubahan jadwal karena klien minta meeting sore ditunda. Aku sebenarnya lagi ngerjain laporan yang harus beres sebelum siang, jadi aku pilih fokus ke kerjaan yang paling prioritas dulu. Tadi aku sempat nyatet beberapa masukan dari tim dan sekarang lagi nyiapin versi baru. Ada satu teman yang ngeluh karena kerjaannya numpuk, tapi akhirnya dia setuju bantu bagian yang paling penting. Setelah makan siang, aku mau menghubungi klien lagi untuk memastikan jadwal baru. Kalau laporan sudah beres, aku juga perlu cek saldo dan rekening kantor sebelum pulang.",
-    "cn":"今天早上日程有变化，因为客户要求把下午的会议推迟。我其实正在做一份中午前必须完成的报告，所以我先选择专注于最优先的工作。刚才我抽空记下了团队的一些反馈，现在正在准备新版。有个同事因为工作堆积而抱怨，不过最后他同意帮忙处理最重要的部分。午饭后，我想再联系客户确认新的时间安排。如果报告做完了，我还需要在下班前查一下公司的余额和银行账户。",
-    "vocab":["jadwal","tunda","ngerjain","beres","fokus","kerjaan","prioritas","sempat","nyatet","masukan","nyiapin","ngeluh","setuju","menghubungi","saldo","rekening"]
+    "title":"Pagi yang Harus Fokus",
+    "text":"Pagi ini ada perubahan jadwal karena klien minta meeting sore ditunda. Aku sebenarnya lagi ngerjain laporan yang harus beres sebelum siang, jadi aku mau fokus ke kerjaan itu dulu. Tadi aku sempat nyatet beberapa masukan dari tim dan sekarang lagi nyiapin versi baru. Setelah itu aku perlu rapihin file supaya lebih gampang dibaca saat meeting. Ada satu teman yang ngeluh karena kerjaannya numpuk, tapi akhirnya dia setuju bantu bagian yang paling penting. Setelah makan siang, aku mau menghubungi klien lagi. Kalau laporan sudah beres, aku juga perlu cek saldo dan rekening kantor sebelum pulang.",
+    "cn":"今天早上日程有变化，因为客户要求把下午的会议推迟。我其实正在做一份中午前必须完成的报告，所以我想先专注把这项工作做完。刚才我抽空记下了团队的一些反馈，现在正在准备新版。之后我还需要把文件整理好，这样开会时更容易阅读。有个同事因为工作堆积而抱怨，不过最后他同意帮忙处理最重要的部分。午饭后，我想再联系客户。如果报告做完了，我还需要在下班前查一下公司的余额和银行账户。",
+    "vocab":["jadwal","tunda","ngerjain","beres","fokus","kerjaan","sempat","nyatet","masukan","nyiapin","rapihin","ngeluh","setuju","menghubungi","saldo","rekening"]
   },
   "quiz": [
     {"question":"tunda 和 batal 最自然的区别是：","options":["tunda 是推迟，通常之后继续；batal 是取消","tunda 是加班；batal 是请假","两个词完全一样"],"answer_index":0,"explain":"tunda 强调往后延；batal 强调取消、不成。"},
@@ -36,13 +36,13 @@
     {"question":"复习：如果想说‘我刚才有抽空记下来’，最自然的是：","options":["Tadi aku sempat nyatet.","Tadi aku batal nyatet.","Tadi aku boros nyatet."],"answer_index":0,"explain":"sempat 表示曾有时间/有机会做某事；这里和新词 nyatet 搭配很自然。"}
   ],
   "output": {
-    "task":"用自然口语表达：‘下午的会议推迟了。我先处理最优先的工作，想专心一个小时。刚才我已经记下客户的意见，等报告做完后再准备新版。’",
-    "reference_answer":"Meeting sore ini ditunda. Aku ngerjain kerjaan yang paling prioritas dulu, mau fokus satu jam. Tadi aku sudah nyatet masukan dari klien. Nanti kalau laporannya sudah beres, aku lanjut nyiapin versi baru.",
-    "reference_cn":"下午的会议推迟了。我先处理最优先的工作，想专心一个小时。刚才我已经记下客户的意见，等报告做完后再准备新版。"
+    "task":"用自然口语表达：‘下午的会议推迟了。我先做报告，想专心一个小时。刚才我已经记下客户的意见，等报告做完后再准备新版并整理文件。’",
+    "reference_answer":"Meeting sore ini ditunda. Aku ngerjain laporan dulu, mau fokus satu jam. Tadi aku sudah nyatet masukan dari klien. Nanti kalau laporannya sudah beres, aku lanjut nyiapin versi baru terus rapihin filenya.",
+    "reference_cn":"下午的会议推迟了。我先做报告，想专心一个小时。刚才我已经记下客户的意见，等报告做完后再准备新版并整理文件。"
   },
   "review": [
     "安排变化：tunda = 推迟，和昨天的 batal = 取消要分清；jadwal 继续放进真实办公室场景里复习。",
-    "口语工作链：kerjaan → ngerjain；siap → nyiapin；catat → nyatet；这些都是雅加达聊天里非常常见的口语形式。",
+    "口语工作链：kerjaan → ngerjain；siap → nyiapin；catat → nyatet；rapi → rapihin，都是雅加达聊天里很常见的口语形式。",
     "轮换复习旧词：sempat / beres（较早）、saldo / rekening（约3天）、menghubungi / jadwal（近期），避免连续几天只刷同一批。"
   ]
 }
