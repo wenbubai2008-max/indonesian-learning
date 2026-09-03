@@ -1,0 +1,46 @@
+name: Add quick practice refresh button
+on:
+  push:
+    paths:
+      - '.github/workflows/add-quick-practice-refresh.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch quick practice refresh
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('data/home-learning-upgrade-v2.js')
+          s=p.read_text()
+          old="html='<div class=\"v2-note\">不是第三节必修课。推荐每天做一次：老词不会消失，答得越稳出现频率越低，做错会重新提高频率。</div>'"
+          new="html='<div class=\"v2-refresh\"><button class=\"secondary\" type=\"button\" onclick=\"refreshQuickPracticeV2()\">↻ 换一组</button></div><div class=\"v2-note\">不是第三节必修课。推荐每天做一次：老词不会消失，答得越稳出现频率越低，做错会重新提高频率。</div>'"
+          if old not in s:
+              raise SystemExit('quick practice note pattern not found')
+          s=s.replace(old,new,1)
+          anchor="window.openQuickPracticeV2=function(){setupPages();go('quickPractice');renderQuick();};"
+          repl="window.refreshQuickPracticeV2=function(){renderQuick();window.scrollTo({top:0,behavior:'smooth'});};\n  "+anchor
+          if anchor not in s:
+              raise SystemExit('openQuickPracticeV2 anchor not found')
+          s=s.replace(anchor,repl,1)
+          css_anchor="#home .v2-wide{grid-column:1/-1}"
+          s=s.replace(css_anchor,css_anchor+".v2-refresh{display:flex;justify-content:flex-end;margin-bottom:10px}",1)
+          p.write_text(s)
+
+          idx=Path('index.html')
+          t=idx.read_text()
+          t=re.sub(r'data/home-learning-upgrade-v2\.js\?v=[^\"\']+', 'data/home-learning-upgrade-v2.js?v=20260903-4', t)
+          idx.write_text(t)
+          PY
+      - name: Commit changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add data/home-learning-upgrade-v2.js index.html
+          git diff --cached --quiet || git commit -m 'Add refresh button to quick practice'
+          git push
