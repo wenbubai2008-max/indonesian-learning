@@ -4298,5 +4298,176 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-02"
     ]
+  },
+  {
+    "word": "tunda",
+    "cn": "推迟；延期",
+    "en": "postpone; delay",
+    "root": "tunda",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "kerjaan",
+    "cn": "工作；手头要做的事（口语）",
+    "en": "work; tasks; workload",
+    "root": "kerja",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "ngerjain",
+    "cn": "做；处理某项工作（口语）",
+    "en": "do; work on; handle",
+    "root": "kerja",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "nyatet",
+    "cn": "记下来；做笔记（口语）",
+    "en": "write down; take notes",
+    "root": "catat",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "nyiapin",
+    "cn": "准备；准备好某物（口语）",
+    "en": "prepare; get something ready",
+    "root": "siap",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "fokus",
+    "cn": "专注；集中注意力",
+    "en": "focus; concentrate",
+    "root": "fokus",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "setuju",
+    "cn": "同意；赞成",
+    "en": "agree; approve",
+    "root": "tuju",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "ngeluh",
+    "cn": "抱怨；发牢骚（口语）",
+    "en": "complain; grumble",
+    "root": "keluh",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "masukan",
+    "cn": "意见；反馈；建议",
+    "en": "input; feedback; suggestion",
+    "root": "masuk",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
   }
 ];
