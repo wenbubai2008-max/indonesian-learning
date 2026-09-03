@@ -1,0 +1,52 @@
+name: Add daily light test renderer
+on:
+  push:
+    paths:
+      - '.github/workflows/add-daily-light-test-renderer.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch history renderer
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('data/history-v2.js')
+          s=p.read_text()
+          marker="  function content(x){"
+          if 'function dailyTestHtml' not in s:
+              insert=r'''  function normTest(s){return String(s||'').toLowerCase().trim().replace(/[.,!?;:，。！？；：]/g,'').replace(/\s+/g,' ')}
+  window.dailyFixCheckFill=function(btn,answer,cn){const box=btn.closest('.dailyFixItem'),inp=box&&box.querySelector('.dailyFixFillInput'),fb=box&&box.querySelector('.dailyFixFeedback');if(!inp||!fb)return;const ok=normTest(inp.value)===normTest(answer);inp.disabled=true;btn.disabled=true;fb.innerHTML=(ok?'答对了。':'参考答案：<b>'+esc2(answer)+'</b>')+(cn?'<div class="dailyFixCnLine">'+esc2(cn)+'</div>':'');fb.classList.add('show');if(!ok)fb.style.background='#fff5f3'};
+  window.dailyFixOrderPick=function(btn){const box=btn.closest('.dailyFixItem'),out=box&&box.querySelector('.dailyFixOrderOut');if(!box||!out||btn.disabled)return;const arr=JSON.parse(box.dataset.order||'[]');arr.push(btn.dataset.token||'');box.dataset.order=JSON.stringify(arr);btn.disabled=true;out.textContent=arr.join(' ')};
+  window.dailyFixOrderReset=function(btn){const box=btn.closest('.dailyFixItem');if(!box)return;box.dataset.order='[]';const out=box.querySelector('.dailyFixOrderOut');if(out)out.textContent='';box.querySelectorAll('.dailyFixOrderToken').forEach(b=>b.disabled=false);const fb=box.querySelector('.dailyFixFeedback');if(fb){fb.classList.remove('show');fb.textContent=''}};
+  window.dailyFixOrderCheck=function(btn,answer,cn){const box=btn.closest('.dailyFixItem'),fb=box&&box.querySelector('.dailyFixFeedback');if(!box||!fb)return;const arr=JSON.parse(box.dataset.order||'[]'),got=arr.join(' '),ok=normTest(got)===normTest(answer);fb.innerHTML=(ok?'顺序正确。':'参考答案：<b>'+esc2(answer)+'</b>')+(cn?'<div class="dailyFixCnLine">'+esc2(cn)+'</div>':'');fb.classList.add('show')};
+  window.dailyFixSelfCheck=function(btn,key,val){try{localStorage.setItem('daily_test_self_'+key,val)}catch(e){}const wrap=btn.parentElement;if(wrap)wrap.querySelectorAll('button').forEach(b=>b.classList.remove('correct'));btn.classList.add('correct')};
+  function dailyTestHtml(t,x){if(!t||!Array.isArray(t.items))return '';let h='<div class="dailyFixMeta" style="margin-bottom:10px">先凭感觉完成，不追求全对。这里主要检测今天刚学的内容有没有留下来。</div>';t.items.forEach((it,i)=>{if(it.type==='choice'){h+=quizHtml({question:it.prompt||'',options:it.options||[],answer_index:it.answer_index||0,explain:it.explain||''},i,x.vocab);return}if(it.type==='fill'){h+=`<div class="dailyFixItem"><b>${i+1}. ${esc2(it.prompt||'')}</b><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px"><input class="dailyFixFillInput" autocomplete="off" style="flex:1;min-width:180px;border:1px solid #dce3ef;border-radius:10px;padding:9px 11px" placeholder="只补一个词或短词块"><button class="dailyFixToggle" style="margin-top:0" onclick='dailyFixCheckFill(this,${JSON.stringify(it.answer||'')},${JSON.stringify(it.answer_cn||'')})'>检查</button></div><div class="dailyFixFeedback"></div></div>`;return}if(it.type==='order'){h+=`<div class="dailyFixItem" data-order="[]"><b>${i+1}. ${esc2(it.prompt||'')}</b><div class="dailyFixChoiceWrap" style="display:flex;flex-wrap:wrap">${(it.tokens||[]).map(tok=>`<button class="dailyFixChoice dailyFixOrderToken" data-token="${esc2(tok)}" onclick="dailyFixOrderPick(this)">${esc2(tok)}</button>`).join('')}</div><div class="dailyFixOrderOut" style="min-height:42px;margin-top:10px;padding:9px 11px;background:#f8faff;border-radius:9px"></div><div style="display:flex;gap:8px"><button class="dailyFixToggle" onclick='dailyFixOrderCheck(this,${JSON.stringify(it.answer||'')},${JSON.stringify(it.answer_cn||'')})'>检查顺序</button><button class="dailyFixToggle" onclick="dailyFixOrderReset(this)">重排</button></div><div class="dailyFixFeedback"></div></div>`}});if(t.self_check&&Array.isArray(t.self_check.options)){const key=(x.date||'')+'_'+(x.session||'pm');h+=`<div class="dailyFixItem"><b>${esc2(t.self_check.prompt||'今天这些内容你感觉怎么样？')}</b><div class="dailyFixChoiceWrap" style="display:flex;flex-wrap:wrap">${t.self_check.options.map(o=>`<button class="dailyFixChoice" onclick='dailyFixSelfCheck(this,${JSON.stringify(key)},${JSON.stringify(o)})'>${esc2(o)}</button>`).join('')}</div></div>`}return h}
+'''
+              s=s.replace(marker,insert+marker)
+          old="if(x.dialogue?.lines)h+=sec(no++,x.dialogue.title||'情景对话',x.dialogue.lines.map(l=>`<div class=\"dailyFixItem\"><div class=\"dailyFixId\"><b>${esc2(l.speaker||'')}</b>${l.speaker?': ':''}${esc2(displayText(l.id||'',x.vocab))}</div><div class=\"dailyFixCnLine\">${esc2(l.cn||'')}</div></div>`).join(''));return h}"
+          new="if(x.dialogue?.lines)h+=sec(no++,x.dialogue.title||'情景对话',x.dialogue.lines.map(l=>`<div class=\"dailyFixItem\"><div class=\"dailyFixId\"><b>${esc2(l.speaker||'')}</b>${l.speaker?': ':''}${esc2(displayText(l.id||'',x.vocab))}</div><div class=\"dailyFixCnLine\">${esc2(l.cn||'')}</div></div>`).join(''));if(x.daily_test)h+=sec(no++,x.daily_test.title||'当日小测 · 5–8分钟',dailyTestHtml(x.daily_test,x));return h}"
+          if old in s:
+              s=s.replace(old,new)
+          elif 'if(x.daily_test)h+=sec' not in s:
+              raise SystemExit('content marker not found')
+          p.write_text(s)
+
+          ip=Path('index.html')
+          t=ip.read_text()
+          t=t.replace('data/history-v2.js?v=20260831-3','data/history-v2.js?v=20260903-4')
+          ip.write_text(t)
+          PY
+      - name: Syntax check
+        run: node --check data/history-v2.js
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add data/history-v2.js index.html
+          git diff --cached --quiet || git commit -m 'Render future daily light tests'
+          git push
