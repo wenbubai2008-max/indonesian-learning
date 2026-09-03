@@ -17,7 +17,7 @@ jobs:
           from pathlib import Path
           p=Path('index.html')
           s=p.read_text()
-          s=s.replace('data/unfamiliar-daily-review.js?v=20260902-2','data/unfamiliar-daily-review.js?v=20260903-1')
+          s=s.replace('data/unfamiliar-daily-review.js?v=20260903-1','data/unfamiliar-daily-review.js?v=20260903-2')
           p.write_text(s)
           PY
       - name: Commit
@@ -25,5 +25,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add index.html
-          git diff --cached --quiet || git commit -m 'Bump home learning upgrade cache'
+          git diff --cached --quiet || git commit -m 'Bump home learning upgrade cache to v2'
           git push
