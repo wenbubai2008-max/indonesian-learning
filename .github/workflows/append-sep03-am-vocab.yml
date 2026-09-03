@@ -1,0 +1,58 @@
+name: Append Sep 03 AM vocab
+on:
+  push:
+    paths:
+      - '.github/workflows/append-sep03-am-vocab.yml'
+permissions:
+  contents: write
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append daily vocabulary safely
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, re
+          p=Path('data/daily-vocab-data.js')
+          s=p.read_text(encoding='utf-8')
+          m=re.match(r'\s*window\.DAILY_VOCAB_DB\s*=\s*(\[.*\])\s*;\s*$', s, re.S)
+          if not m:
+              raise SystemExit('Unexpected daily-vocab-data.js format')
+          arr=json.loads(m.group(1))
+          seen={str(x.get('word','')).lower() for x in arr}
+          new=[
+            {"word":"tunda","cn":"推迟；延期","en":"postpone; delay","root":"tunda"},
+            {"word":"kerjaan","cn":"工作；手头要做的事（口语）","en":"work; tasks; workload","root":"kerja"},
+            {"word":"ngerjain","cn":"做；处理某项工作（口语）","en":"do; work on; handle","root":"kerja"},
+            {"word":"nyatet","cn":"记下来；做笔记（口语）","en":"write down; take notes","root":"catat"},
+            {"word":"nyiapin","cn":"准备；准备好某物（口语）","en":"prepare; get something ready","root":"siap"},
+            {"word":"fokus","cn":"专注；集中注意力","en":"focus; concentrate","root":"fokus"},
+            {"word":"setuju","cn":"同意；赞成","en":"agree; approve","root":"tuju"},
+            {"word":"ngeluh","cn":"抱怨；发牢骚（口语）","en":"complain; grumble","root":"keluh"},
+            {"word":"masukan","cn":"意见；反馈；建议","en":"input; feedback; suggestion","root":"masuk"},
+            {"word":"prioritas","cn":"优先事项；优先级","en":"priority","root":"prioritas"}
+          ]
+          for x in new:
+              k=x['word'].lower()
+              if k in seen:
+                  continue
+              x.update({
+                "categories":["每日学习","08:00"],
+                "times_seen":1,
+                "first_seen":"2026-09-03 08:00",
+                "last_seen":"2026-09-03 08:00",
+                "sessions":["08:00"],
+                "dates":["2026-09-03"]
+              })
+              arr.append(x); seen.add(k)
+          p.write_text('window.DAILY_VOCAB_DB = '+json.dumps(arr,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
+          PY
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily-vocab-data.js
+          git commit -m "Append 2026-09-03 AM daily vocabulary" || exit 0
+          git push
