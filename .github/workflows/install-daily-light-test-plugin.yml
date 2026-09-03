@@ -1,0 +1,38 @@
+name: Install daily light test plugin
+on:
+  push:
+    paths:
+      - '.github/workflows/install-daily-light-test-plugin.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install plugin
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          tag='<script src="data/daily-light-test.js?v=20260903-1"></script>'
+          if tag not in s:
+              anchor='<script src="data/history-v2.js?v=20260831-3"></script>'
+              anchor2='<script src="data/history-v2.js?v=20260903-4"></script>'
+              if anchor2 in s:
+                  s=s.replace(anchor2,anchor2+'\n'+tag)
+              elif anchor in s:
+                  s=s.replace(anchor,anchor+'\n'+tag)
+              else:
+                  s=s.replace('</body>',tag+'\n</body>')
+          p.write_text(s)
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add index.html
+          git diff --cached --quiet || git commit -m 'Install daily light test plugin'
+          git push
