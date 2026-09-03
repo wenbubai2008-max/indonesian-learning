@@ -1,0 +1,41 @@
+name: Add Sep 03 light daily test
+on:
+  push:
+    paths:
+      - '.github/workflows/add-sep03-light-test.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add light test to Sep 03 PM only
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/daily/2026-09-03-pm.json')
+          x=json.loads(p.read_text())
+          x['daily_test']={
+            'title':'当日小测 · 5–8分钟',
+            'items':[
+              {'type':'choice','prompt':'同事提出一个听起来合理的方案，你最自然会说什么？','options':['Masuk akal.','Kurang cocok.','Tergantung situasinya.','Aku keberatan.'],'answer_index':0,'explain':'masuk akal = 有道理、说得通。'},
+              {'type':'choice','prompt':'你想表达“我不介意把会议提前半小时”，最合适的是？','options':['Aku belum sepakat.','Aku nggak keberatan.','Aku kurang cocok.','Aku mempertimbangkan.'],'answer_index':1,'explain':'nggak keberatan = 不介意。'},
+              {'type':'choice','prompt':'你想柔和地表达“这个方法不太适合现在”，应该选？','options':['kurang cocok','masuk akal','sepakat','nggak masalah'],'answer_index':0,'explain':'kurang cocok 比直接说 nggak cocok 更柔和。'},
+              {'type':'fill','prompt':'补一个词块：Kalau semua ______, kita lanjut pakai rencana ini.','answer':'sepakat','answer_cn':'如果大家都达成一致，我们就继续用这个方案。'},
+              {'type':'fill','prompt':'补一个词块：Mau lanjut sekarang atau besok, ______.','answer':'tergantung situasinya','answer_cn':'现在继续还是明天再做，要看具体情况。'},
+              {'type':'order','prompt':'点击排序成自然句子：我觉得这个想法有道理。','tokens':['idenya','menurutku','masuk akal'],'answer':'Menurutku idenya masuk akal.','answer_cn':'我觉得这个想法有道理。'}
+            ],
+            'self_check':{'prompt':'今天这些内容你感觉怎么样？','options':['大部分能快速认出','一半左右需要想一下','很多还会卡']}
+          }
+          p.write_text(json.dumps(x,ensure_ascii=False,separators=(',',':')))
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add data/daily/2026-09-03-pm.json
+          git diff --cached --quiet || git commit -m 'Add Sep 03 lightweight daily test'
+          git push
