@@ -469,22 +469,25 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "mempertimbangkan",
     "cn": "考虑",
-    "en": "",
-    "root": "",
+    "en": "consider; weigh up",
+    "root": "timbang",
     "categories": [
       "每日学习",
       "08:00",
       "原始课程",
-      "历史记录不完整"
+      "历史记录不完整",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-25 08:00",
-    "last_seen": "2026-08-25 08:00",
+    "last_seen": "2026-09-03 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-08-25"
+      "2026-08-25",
+      "2026-09-03"
     ]
   },
   {
@@ -3748,14 +3751,15 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-01 19:00",
-    "last_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-03 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-01"
+      "2026-09-01",
+      "2026-09-03"
     ]
   },
   {
@@ -4156,14 +4160,15 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-03 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-03"
     ]
   },
   {
@@ -4420,13 +4425,15 @@ window.DAILY_VOCAB_DB = [
     "root": "tuju",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-03"
@@ -4458,13 +4465,15 @@ window.DAILY_VOCAB_DB = [
     "root": "masuk",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-03"
@@ -4484,6 +4493,120 @@ window.DAILY_VOCAB_DB = [
     "last_seen": "2026-09-03 08:00",
     "sessions": [
       "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "masuk akal",
+    "cn": "有道理；说得通",
+    "en": "make sense; reasonable",
+    "root": "akal",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-03 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "keberatan",
+    "cn": "有异议；介意",
+    "en": "object; mind",
+    "root": "berat",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-03 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "sepakat",
+    "cn": "达成一致；同意",
+    "en": "agree; reach agreement",
+    "root": "sepakat",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-03 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "tergantung situasinya",
+    "cn": "要看具体情况",
+    "en": "it depends on the situation",
+    "root": "gantung",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-03 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "kurang cocok",
+    "cn": "不太合适",
+    "en": "not quite suitable",
+    "root": "cocok",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-03 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "word": "nggak masalah",
+    "cn": "没问题；不介意",
+    "en": "no problem; fine by me",
+    "root": "masalah",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-03 19:00",
+    "sessions": [
+      "19:00"
     ],
     "dates": [
       "2026-09-03"
