@@ -32,20 +32,13 @@ jobs:
             {"word":"setuju","cn":"同意；赞成","en":"agree; approve","root":"tuju"},
             {"word":"ngeluh","cn":"抱怨；发牢骚（口语）","en":"complain; grumble","root":"keluh"},
             {"word":"masukan","cn":"意见；反馈；建议","en":"input; feedback; suggestion","root":"masuk"},
-            {"word":"prioritas","cn":"优先事项；优先级","en":"priority","root":"prioritas"}
+            {"word":"rapihin","cn":"整理好；收拾整齐；把……弄顺（口语）","en":"tidy up; organize; straighten out","root":"rapi"}
           ]
           for x in new:
               k=x['word'].lower()
               if k in seen:
                   continue
-              x.update({
-                "categories":["每日学习","08:00"],
-                "times_seen":1,
-                "first_seen":"2026-09-03 08:00",
-                "last_seen":"2026-09-03 08:00",
-                "sessions":["08:00"],
-                "dates":["2026-09-03"]
-              })
+              x.update({"categories":["每日学习","08:00"],"times_seen":1,"first_seen":"2026-09-03 08:00","last_seen":"2026-09-03 08:00","sessions":["08:00"],"dates":["2026-09-03"]})
               arr.append(x); seen.add(k)
           p.write_text('window.DAILY_VOCAB_DB = '+json.dumps(arr,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
           PY
