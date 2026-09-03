@@ -488,7 +488,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-25",
       "2026-09-03"
-    ]
+    ],
+    "example": "Kita perlu mempertimbangkan waktunya sebelum ambil keputusan.",
+    "example_cn": "我们做决定前需要考虑一下时间。"
   },
   {
     "word": "memastikan",
@@ -3760,7 +3762,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-01",
       "2026-09-03"
-    ]
+    ],
+    "example": "Sebenarnya aku setuju, cuma ada satu bagian yang perlu diubah.",
+    "example_cn": "其实我是同意的，只是有一个部分需要修改。"
   },
   {
     "word": "justru",
@@ -4169,7 +4173,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-02",
       "2026-09-03"
-    ]
+    ],
+    "example": "Kalau kita debat terus tanpa keputusan, waktunya malah kebuang.",
+    "example_cn": "如果我们一直争论却不做决定，时间反而会被浪费掉。"
   },
   {
     "word": "beresin",
@@ -4321,7 +4327,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Meeting jam tiga kita tunda ke besok aja.",
+    "example_cn": "三点的会议我们就推迟到明天吧。"
   },
   {
     "word": "kerjaan",
@@ -4340,7 +4348,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Kerjaan hari ini lumayan banyak, tapi masih aman.",
+    "example_cn": "今天手头的工作挺多，不过还应付得来。"
   },
   {
     "word": "ngerjain",
@@ -4359,7 +4369,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Aku lagi ngerjain laporan, nanti aku balas ya.",
+    "example_cn": "我正在做报告，等会儿再回你。"
   },
   {
     "word": "nyatet",
@@ -4378,7 +4390,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Tolong ulang sekali lagi, aku mau nyatet poin pentingnya.",
+    "example_cn": "请再说一遍，我想把重点记下来。"
   },
   {
     "word": "nyiapin",
@@ -4397,7 +4411,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Aku lagi nyiapin bahan buat meeting besok.",
+    "example_cn": "我正在准备明天会议要用的材料。"
   },
   {
     "word": "fokus",
@@ -4416,7 +4432,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Aku mau fokus satu jam dulu biar cepat beres.",
+    "example_cn": "我想先专心一个小时，好快点做完。"
   },
   {
     "word": "setuju",
@@ -4437,7 +4455,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Aku setuju sama idenya, tapi kita perlu mempertimbangkan risikonya juga.",
+    "example_cn": "我同意这个想法，但我们也需要考虑风险。"
   },
   {
     "word": "ngeluh",
@@ -4456,7 +4476,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Dia dari tadi ngeluh soal kerjaan yang numpuk.",
+    "example_cn": "他从刚才开始就一直抱怨工作堆太多。"
   },
   {
     "word": "masukan",
@@ -4477,7 +4499,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Masukan dari tim cukup masuk akal, jadi sebaiknya kita pertimbangkan.",
+    "example_cn": "团队的意见挺有道理，所以我们最好考虑一下。"
   },
   {
     "word": "rapihin",
@@ -4496,7 +4520,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Sebelum meeting, aku mau rapihin file ini dulu.",
+    "example_cn": "开会前，我想先把这个文件整理好。"
   },
   {
     "word": "masuk akal",
@@ -4515,7 +4541,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Menurutku idenya masuk akal, cuma waktunya perlu diatur lagi.",
+    "example_cn": "我觉得这个想法有道理，只是时间需要重新安排。"
   },
   {
     "word": "keberatan",
@@ -4534,7 +4562,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Aku nggak keberatan kalau meeting-nya dimajuin setengah jam.",
+    "example_cn": "如果会议提前半小时，我不介意。"
   },
   {
     "word": "sepakat",
@@ -4553,7 +4583,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Kalau semua sepakat, kita lanjut pakai rencana yang ini.",
+    "example_cn": "如果大家都同意，我们就继续用这个方案。"
   },
   {
     "word": "tergantung situasinya",
@@ -4572,7 +4604,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Mau lanjut sekarang atau besok, tergantung situasinya.",
+    "example_cn": "现在继续还是明天再做，要看具体情况。"
   },
   {
     "word": "kurang cocok",
@@ -4591,7 +4625,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Menurutku cara ini kurang cocok buat kondisi sekarang.",
+    "example_cn": "我觉得这个方法不太适合现在的情况。"
   },
   {
     "word": "nggak masalah",
@@ -4610,6 +4646,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-03"
-    ]
+    ],
+    "example": "Kalau harus mulai lebih awal, buat aku nggak masalah.",
+    "example_cn": "如果必须早点开始，对我来说没问题。"
   }
 ];
