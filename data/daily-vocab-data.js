@@ -4469,5 +4469,24 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-03"
     ]
+  },
+  {
+    "word": "rapihin",
+    "cn": "整理好；收拾整齐；把……弄顺（口语）",
+    "en": "tidy up; organize; straighten out",
+    "root": "rapi",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-03"
+    ]
   }
 ];
