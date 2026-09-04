@@ -4649,5 +4649,215 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Kalau harus mulai lebih awal, buat aku nggak masalah.",
     "example_cn": "如果必须早点开始，对我来说没问题。"
+  },
+  {
+    "word": "mepet",
+    "cn": "时间很紧；离得很近；卡得很近（口语）",
+    "en": "tight; very close; close to the deadline",
+    "root": "mepet",
+    "example": "Deadline-nya mepet banget, jadi pagi ini aku fokus dulu.",
+    "example_cn": "截止时间特别紧，所以今天早上我先专心做事。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
+  },
+  {
+    "word": "kelewatan",
+    "cn": "错过；坐过站；超过头；过分（口语）",
+    "en": "miss; go past; overshoot; go too far",
+    "root": "lewat",
+    "example": "Aku tadi hampir kelewatan halte karena lagi baca chat.",
+    "example_cn": "我刚才因为在看聊天消息，差点坐过站。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
+  },
+  {
+    "word": "nyambung",
+    "cn": "连得上；接得上；说得通；聊得来（口语）",
+    "en": "connect; make sense; click with someone",
+    "root": "sambung",
+    "example": "Penjelasannya jelas, jadi semua poinnya nyambung.",
+    "example_cn": "他的解释很清楚，所以所有要点都能连得起来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
+  },
+  {
+    "word": "kepake",
+    "cn": "用得上；派得上用场；被用到（口语）",
+    "en": "get used; come in handy; be useful",
+    "root": "pakai",
+    "example": "Template ini simpel, tapi justru lebih kepake buat kerja harian.",
+    "example_cn": "这个模板很简单，但反而更适合日常工作、比较用得上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
+  },
+  {
+    "word": "ketukar",
+    "cn": "弄混；拿错；互相调换了（口语）",
+    "en": "get mixed up; be swapped by mistake",
+    "root": "tukar",
+    "example": "File versi lama sama versi baru tadi ketukar.",
+    "example_cn": "旧版本和新版本的文件刚才弄混了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
+  },
+  {
+    "word": "kebaca",
+    "cn": "看得清；读得出来；不小心被看到（口语）",
+    "en": "readable; can be read; accidentally seen/read",
+    "root": "baca",
+    "example": "Tulisan di foto ini kecil banget, tapi masih kebaca.",
+    "example_cn": "照片里的字特别小，不过还是能看清。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
+  },
+  {
+    "word": "kebayang",
+    "cn": "想象得到；脑子里浮现出来（口语）",
+    "en": "can imagine; picture in one's mind",
+    "root": "bayang",
+    "example": "Kalau semua dikerjain hari ini, aku udah kebayang bakal capek.",
+    "example_cn": "如果今天把所有事情都做完，我已经能想象会有多累了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
+  },
+  {
+    "word": "ngikutin",
+    "cn": "跟着；持续关注；跟上进度（口语）",
+    "en": "follow; keep up with; follow along",
+    "root": "ikut",
+    "example": "Aku belum sempat ngikutin semua update dari grup kantor.",
+    "example_cn": "我还没来得及跟完办公室群里的所有更新。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
+  },
+  {
+    "word": "berantakan",
+    "cn": "乱七八糟；一团乱；很凌乱",
+    "en": "messy; chaotic; in a mess",
+    "root": "berantak",
+    "example": "Folder-nya berantakan, nanti aku rapihin dulu.",
+    "example_cn": "文件夹很乱，等会儿我先整理一下。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
+  },
+  {
+    "word": "beneran",
+    "cn": "真的；来真的；确实如此（口语）",
+    "en": "really; for real; seriously",
+    "root": "benar",
+    "example": "Kalau klien beneran minta revisi lagi, kita bahas siang ini.",
+    "example_cn": "如果客户真的又要求修改，我们今天下午再讨论。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
   }
 ];
