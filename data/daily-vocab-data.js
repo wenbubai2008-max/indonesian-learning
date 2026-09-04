@@ -568,7 +568,7 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "menyesuaikan",
     "cn": "调整；适应",
-    "en": "",
+    "en": "adjust; adapt; align",
     "root": "sesuai",
     "categories": [
       "每日学习",
@@ -577,16 +577,17 @@ window.DAILY_VOCAB_DB = [
       "历史记录不完整",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-25 08:00",
-    "last_seen": "2026-08-30 19:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-08-25",
-      "2026-08-30"
+      "2026-08-30",
+      "2026-09-04"
     ]
   },
   {
@@ -929,16 +930,17 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-08-27",
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-04"
     ]
   },
   {
@@ -1368,24 +1370,25 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "sekalian",
     "cn": "顺便；一起做",
-    "en": "",
-    "root": "",
+    "en": "while you're at it; at the same time",
+    "root": "sekali",
     "categories": [
       "每日学习",
       "08:00",
       "原始课程",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-26 19:00",
-    "last_seen": "2026-08-29 19:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-08-26",
-      "2026-08-29"
+      "2026-08-29",
+      "2026-09-04"
     ]
   },
   {
@@ -3040,21 +3043,22 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "menangani",
     "cn": "处理、负责处理",
-    "en": "",
+    "en": "handle; deal with; take care of",
     "root": "tangan",
     "categories": [
       "每日学习",
       "19:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 19:00",
-    "last_seen": "2026-08-30 19:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-08-30"
+      "2026-08-30",
+      "2026-09-04"
     ]
   },
   {
@@ -3100,21 +3104,22 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "terlanjur",
     "cn": "已经……了、来不及改变",
-    "en": "",
-    "root": "",
+    "en": "already; too late to undo; have gone ahead",
+    "root": "lanjur",
     "categories": [
       "每日学习",
       "19:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 19:00",
-    "last_seen": "2026-08-30 19:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-08-30"
+      "2026-08-30",
+      "2026-09-04"
     ]
   },
   {
@@ -4143,16 +4148,19 @@ window.DAILY_VOCAB_DB = [
     "root": "dadak",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-02 08:00",
-    "last_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-04"
     ]
   },
   {
@@ -4164,15 +4172,16 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
       "2026-09-02",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-04"
     ],
     "example": "Kalau kita debat terus tanpa keputusan, waktunya malah kebuang.",
     "example_cn": "如果我们一直争论却不做决定，时间反而会被浪费掉。"
@@ -4243,14 +4252,15 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-04"
     ]
   },
   {
@@ -4659,13 +4669,15 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "截止时间特别紧，所以今天早上我先专心做事。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-04"
@@ -4806,13 +4818,15 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "我还没来得及跟完办公室群里的所有更新。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-04"
@@ -4855,6 +4869,25 @@ window.DAILY_VOCAB_DB = [
     "last_seen": "2026-09-04 08:00",
     "sessions": [
       "08:00"
+    ],
+    "dates": [
+      "2026-09-04"
+    ]
+  },
+  {
+    "word": "kerjaan numpuk",
+    "cn": "工作堆了一堆；事情越积越多",
+    "en": "work piling up; backlog of tasks",
+    "root": "kerja + tumpuk",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-04 19:00",
+    "last_seen": "2026-09-04 19:00",
+    "sessions": [
+      "19:00"
     ],
     "dates": [
       "2026-09-04"
