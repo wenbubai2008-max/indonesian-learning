@@ -1,0 +1,107 @@
+name: Sync PM daily vocabulary
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/daily/*-pm.json'
+      - '.github/workflows/sync-pm-daily-vocab.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Merge today's PM vocabulary
+        env:
+          TZ: Asia/Jakarta
+        run: |
+          python - <<'PY'
+          import json, pathlib, re, datetime
+
+          today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).date().isoformat()
+          lesson_path = pathlib.Path(f'data/daily/{today}-pm.json')
+          vocab_path = pathlib.Path('data/daily-vocab-data.js')
+          if not lesson_path.exists():
+              print(f'No PM lesson for {today}; nothing to sync.')
+              raise SystemExit(0)
+
+          lesson = json.loads(lesson_path.read_text(encoding='utf-8'))
+          raw = vocab_path.read_text(encoding='utf-8')
+          m = re.fullmatch(r'\s*window\.DAILY_VOCAB_DB\s*=\s*(\[.*\]);\s*', raw, flags=re.S)
+          if not m:
+              raise SystemExit('Unexpected daily-vocab-data.js format')
+          db = json.loads(m.group(1))
+
+          def key(s):
+              return str(s or '').strip().lower()
+
+          index = {key(x.get('word')): x for x in db if key(x.get('word'))}
+          session = '19:00'
+          seen_at = f'{today} {session}'
+
+          for v in lesson.get('vocab', []):
+              w = str(v.get('word') or '').strip()
+              if not w:
+                  continue
+              k = key(w)
+              if k in index:
+                  x = index[k]
+                  cats = list(x.get('categories') or [])
+                  for c in ['每日学习', session]:
+                      if c not in cats:
+                          cats.append(c)
+                  x['categories'] = cats
+                  sessions = list(x.get('sessions') or [])
+                  if session not in sessions:
+                      sessions.append(session)
+                  x['sessions'] = sessions
+                  dates = list(x.get('dates') or [])
+                  if today not in dates:
+                      dates.append(today)
+                  x['dates'] = dates
+                  if x.get('last_seen') != seen_at:
+                      x['times_seen'] = int(x.get('times_seen') or 0) + 1
+                  x['last_seen'] = seen_at
+                  if not x.get('first_seen'):
+                      x['first_seen'] = seen_at
+                  for field in ['cn','en','root','root_cn','example','example_cn']:
+                      if v.get(field) not in (None, ''):
+                          x[field] = v[field]
+              else:
+                  x = {
+                      'word': w,
+                      'cn': v.get('cn',''),
+                      'en': v.get('en',''),
+                      'root': v.get('root',''),
+                      'root_cn': v.get('root_cn',''),
+                      'categories': ['每日学习', session],
+                      'times_seen': 1,
+                      'first_seen': seen_at,
+                      'last_seen': seen_at,
+                      'sessions': [session],
+                      'dates': [today],
+                      'example': v.get('example',''),
+                      'example_cn': v.get('example_cn','')
+                  }
+                  db.append(x)
+                  index[k] = x
+
+          vocab_path.write_text(
+              'window.DAILY_VOCAB_DB = ' + json.dumps(db, ensure_ascii=False, indent=2) + ';\n',
+              encoding='utf-8'
+          )
+          PY
+      - name: Commit synced vocabulary
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily-vocab-data.js
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Sync today's 19:00 vocabulary"
+          git push
