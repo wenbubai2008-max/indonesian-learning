@@ -27,13 +27,10 @@
         else if(title==='弱项强化') card.classList.add('homeModWeak');
         else if(title==='前后缀') card.classList.add('homeModAffix');
       });
-
       const current=cards.map(titleOf).filter(Boolean);
       const desired=ORDER.filter(t=>map[t]);
       const same=current.length===desired.length&&current.every((t,i)=>t===desired[i]);
-      if(!same){
-        desired.forEach(function(t){box.appendChild(map[t]);});
-      }
+      if(!same)desired.forEach(function(t){box.appendChild(map[t]);});
     } finally {
       applying=false;
     }
@@ -65,14 +62,6 @@
 
   style();
   apply();
-  const box=document.querySelector('#home .modules');
-  if(box){
-    const observer=new MutationObserver(function(mutations){
-      if(applying) return;
-      const changed=mutations.some(m=>m.type==='childList'&&m.addedNodes.length);
-      if(changed) requestAnimationFrame(apply);
-    });
-    observer.observe(box,{childList:true,subtree:false});
-  }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',apply,{once:true});
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){apply();setTimeout(apply,180);},{once:true});
+  else setTimeout(apply,60);
 })();
