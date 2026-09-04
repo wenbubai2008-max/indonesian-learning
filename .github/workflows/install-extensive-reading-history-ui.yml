@@ -1,0 +1,42 @@
+name: Install extensive reading history UI
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/install-extensive-reading-history-ui.yml'
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install scripts
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          hist='<script src="data/extensive-reading-history.js?v=20260904-1"></script>'
+          ui='<script src="data/extensive-reading-history-ui.js?v=20260904-1"></script>'
+          if hist not in s:
+              anchor='<script src="data/extensive-reading-data.js?v=20260903-3"></script>'
+              if anchor in s:
+                  s=s.replace(anchor, anchor+'\n'+hist)
+              else:
+                  s=s.replace('</body>', hist+'\n</body>')
+          if ui not in s:
+              anchor='<script src="data/home-learning-upgrade-v2.js?v=20260903-4"></script>'
+              if anchor in s:
+                  s=s.replace(anchor, anchor+'\n'+ui)
+              else:
+                  s=s.replace('</body>', ui+'\n</body>')
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add index.html
+          git diff --cached --quiet || git commit -m "Install extensive reading history browser"
+          git push
