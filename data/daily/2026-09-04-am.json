@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-04",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 14,
+  "title": "2026年9月4日｜Day 14",
+  "vocab": [
+    {"order":131,"word":"mepet","display":"mepet","audio_text":"mepet","cn":"时间很紧；离得很近；卡得很近（口语）","en":"tight; very close; close to the deadline","root":"mepet","formation":"高频口语基础词；常说 waktunya mepet / deadline-nya mepet，表示时间或距离很紧。","example":"Deadline-nya mepet banget, jadi pagi ini aku fokus dulu.","example_cn":"截止时间特别紧，所以今天早上我先专心做事。","synonym_note":"dekat = 近，范围更广；mepet 更强调‘挨得很近/时间卡得很紧’。"},
+    {"order":132,"word":"kelewatan","display":"kelewatan","audio_text":"kelewatan","cn":"错过；坐过站；超过头；过分（口语）","en":"miss; go past; overshoot; go too far","root":"lewat","formation":"ke- + lewat + -an → kelewatan；日常可表示走过头、错过，也可表示‘太过分’。","example":"Aku tadi hampir kelewatan halte karena lagi baca chat.","example_cn":"我刚才因为在看聊天消息，差点坐过站。","synonym_note":"ketinggalan = 没赶上/落下；kelewatan = 已经经过目标、走过头或做过头。"},
+    {"order":133,"word":"nyambung","display":"nyambung","audio_text":"nyambung","cn":"连得上；接得上；说得通；聊得来（口语）","en":"connect; make sense; click with someone","root":"sambung","formation":"sambung → menyambung（标准）→ nyambung（常见口语）；也常形容话题、逻辑或两个人很合拍。","example":"Penjelasannya jelas, jadi semua poinnya nyambung.","example_cn":"他的解释很清楚，所以所有要点都能连得起来。","synonym_note":"cocok 偏‘合适/匹配’；nyambung 更强调逻辑接得上或聊天聊得来。"},
+    {"order":134,"word":"kepake","display":"kepake","audio_text":"kepake","cn":"用得上；派得上用场；被用到（口语）","en":"get used; come in handy; be useful","root":"pakai","formation":"pakai → terpakai（较标准）→ kepake（雅加达常见口语）；常说 nanti kepake / lebih kepake。","example":"Template ini simpel, tapi justru lebih kepake buat kerja harian.","example_cn":"这个模板很简单，但反而更适合日常工作、比较用得上。","synonym_note":"berguna = 有用；kepake 更口语，强调‘实际上会被拿来用’。"},
+    {"order":135,"word":"ketukar","display":"ketukar","audio_text":"ketukar","cn":"弄混；拿错；互相调换了（口语）","en":"get mixed up; be swapped by mistake","root":"tukar","formation":"tukar → tertukar（标准）→ ketukar（高频口语），通常带有‘不小心弄错’的感觉。","example":"File versi lama sama versi baru tadi ketukar.","example_cn":"旧版本和新版本的文件刚才弄混了。","synonym_note":"salah ambil = 拿错；ketukar 更强调两个东西彼此被弄混或调换。"},
+    {"order":136,"word":"kebaca","display":"kebaca","audio_text":"kebaca","cn":"看得清；读得出来；不小心被看到（口语）","en":"readable; can be read; accidentally seen/read","root":"baca","formation":"baca → terbaca（较标准）→ kebaca（常见口语）；可表示文字能否看清，也可表示消息被看到。","example":"Tulisan di foto ini kecil banget, tapi masih kebaca.","example_cn":"照片里的字特别小，不过还是能看清。","synonym_note":"terlihat = 看得见；kebaca 强调文字或内容‘读得出来’。"},
+    {"order":137,"word":"kebayang","display":"kebayang","audio_text":"kebayang","cn":"想象得到；脑子里浮现出来（口语）","en":"can imagine; picture in one's mind","root":"bayang","formation":"bayang → terbayang（较标准）→ kebayang（口语）；常见 nggak kebayang / udah kebayang。","example":"Kalau semua dikerjain hari ini, aku udah kebayang bakal capek.","example_cn":"如果今天把所有事情都做完，我已经能想象会有多累了。","synonym_note":"kepikiran = 想到/惦记；kebayang 更像脑子里已经能形成画面。"},
+    {"order":138,"word":"ngikutin","display":"ngikutin","audio_text":"ngikutin","cn":"跟着；持续关注；跟上进度（口语）","en":"follow; keep up with; follow along","root":"ikut","formation":"ikut → mengikuti（标准）→ ngikutin（雅加达常见口语）；常用于 ngikutin update / ngikutin perkembangan。","example":"Aku belum sempat ngikutin semua update dari grup kantor.","example_cn":"我还没来得及跟完办公室群里的所有更新。","synonym_note":"ikut = 跟随/参加；ngikutin 更强调持续跟着某个过程、内容或更新。"},
+    {"order":139,"word":"berantakan","display":"berantakan","audio_text":"berantakan","cn":"乱七八糟；一团乱；很凌乱","en":"messy; chaotic; in a mess","root":"berantak","formation":"固定高频形式 berantakan；可形容房间、文件、日程，也可说 rencana jadi berantakan。","example":"Folder-nya berantakan, nanti aku rapihin dulu.","example_cn":"文件夹很乱，等会儿我先整理一下。","synonym_note":"acak-acakan 也表示乱，口语感更强；berantakan 更通用。"},
+    {"order":140,"word":"beneran","display":"beneran","audio_text":"beneran","cn":"真的；来真的；确实如此（口语）","en":"really; for real; seriously","root":"benar","formation":"benar（标准‘正确/真的’）→ bener（口语）→ beneran（‘真的、来真的’），雅加达聊天非常常见。","example":"Kalau klien beneran minta revisi lagi, kita bahas siang ini.","example_cn":"如果客户真的又要求修改，我们今天下午再讨论。","synonym_note":"benar 更标准；beneran 更像聊天里的‘真的啊/真的是’。"}
+  ],
+  "sentences": [
+    {"id":"Waktunya mepet, jadi masukan dari klien yang penting aja kita kerjain dulu.","cn":"时间很紧，所以客户反馈里重要的部分我们先处理。"},
+    {"id":"File-nya tadi ketukar dan folder-nya berantakan, nanti aku rapihin sekalian.","cn":"文件刚才弄混了，文件夹也很乱，等会儿我顺便一起整理。"},
+    {"id":"Aku hampir kelewatan tempatnya, untung sempat mampir sebentar.","cn":"我差点走过头了，还好来得及顺路停一下。"},
+    {"id":"Template yang ini lebih kepake karena tulisannya gampang kebaca.","cn":"这个模板更实用，因为文字比较容易看清。"},
+    {"id":"Aku lagi ngikutin update-nya; kalau semuanya nyambung, nanti aku kabarin.","cn":"我正在跟进这些更新；如果都能对得上，等会儿我告诉你。"}
+  ],
+  "reading": {
+    "title":"Pagi dengan Deadline Mepet",
+    "text":"Pagi ini deadline lumayan mepet. Aku buka folder proyek dan ternyata beberapa file berantakan, bahkan versi lama sama versi baru sempat ketukar. Aku langsung rapihin yang paling penting dulu supaya nama file gampang kebaca. Setelah itu aku ngikutin update dari grup kantor dan mencocokkan masukan klien satu per satu. Untung sebagian besar masih nyambung sama revisi kemarin. Ada satu template lama yang ternyata lebih kepake daripada versi baru. Aku juga hampir kelewatan satu catatan penting. Sekarang sudah kebayang bagian mana yang harus dikerjain dulu. Kalau klien beneran minta perubahan tambahan, siang nanti aku kabarin tim dan memastikan jadwalnya lagi.",
+    "cn":"今天早上的截止时间挺紧。我打开项目文件夹，发现有些文件乱七八糟，甚至旧版和新版一度弄混了。我先马上整理最重要的部分，让文件名更容易看清。之后我跟进办公室群里的更新，并逐条核对客户的意见。还好大部分内容和昨天的修改都能衔接上。有一个旧模板结果比新版更实用。我还差点漏掉一条重要记录。现在我已经能想象出应该先做哪一部分了。如果客户真的再要求额外修改，下午我会通知团队，并再次确认日程。",
+    "vocab":["mepet","berantakan","ketukar","rapihin","kebaca","ngikutin","masukan","nyambung","kepake","kelewatan","kebayang","beneran","kabarin","memastikan"]
+  },
+  "quiz": [
+    {"question":"“Deadline-nya mepet.” 最自然的意思是：","options":["截止时间很宽松","截止时间很紧","截止时间取消了"],"answer_index":1,"explain":"mepet 在时间场景里表示卡得很紧、剩余时间不多。"},
+    {"question":"ketukar 和 ketinggalan 最自然的区别是：","options":["ketukar 是弄混/拿错；ketinggalan 是落下/忘带/错过","两个都只表示迟到","ketukar 是整理；ketinggalan 是跟进"],"answer_index":0,"explain":"ketukar 强调两个东西被弄混；旧词 ketinggalan 强调东西落下、忘带或没赶上。"},
+    {"question":"复习：想说‘我会再确认一下’，哪句更自然？","options":["Nanti aku memastikan lagi.","Nanti aku kelewatan lagi.","Nanti aku ketukar lagi."],"answer_index":0,"explain":"memastikan = 确认、确保，是之前学过的高频工作词。"}
+  ],
+  "output": {
+    "task":"用自然口语表达：‘时间有点紧，刚才两个文件还弄混了。我先把文件夹整理好，再跟进群里的更新。如果内容都能对得上，我再告诉团队。’",
+    "reference_answer":"Waktunya agak mepet, terus tadi dua file sempat ketukar. Aku rapihin folder-nya dulu, habis itu baru ngikutin update di grup. Kalau semuanya nyambung, nanti aku kabarin tim.",
+    "reference_cn":"时间有点紧，刚才两个文件还弄混了。我先把文件夹整理好，再跟进群里的更新。如果内容都能对得上，我再告诉团队。"
+  },
+  "review": [
+    "今天的新口语重点放在真实办公室场景：mepet / ketukar / kebaca / kepake / nyambung，比单纯背正式词更容易直接用出来。",
+    "轮换复习旧词：masukan、rapihin（近期），ketinggalan、mampir、kabarin（较早），memastikan（更早），避免连续重复昨天同一批词。",
+    "注意语义区别：kelewatan = 走过头/错过/过分；ketinggalan = 落下/忘带/没赶上；kepikiran = 想到，kebayang = 能想象出画面。"
+  ]
+}
