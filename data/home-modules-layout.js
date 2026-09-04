@@ -1,27 +1,47 @@
 (function(){
-  function apply(){
-    var box=document.querySelector('#home .modules');
-    if(!box) return;
-    box.classList.add('homeModulesCompact');
-    var cards=[].slice.call(box.querySelectorAll('.module'));
-    if(!cards.length) return;
-    var map={};
-    cards.forEach(function(card){
-      var h=card.querySelector('h3');
-      var title=h?(h.textContent||'').trim():'';
-      map[title]=card;
-      card.classList.remove('homeModVocab','homeModReading','homeModQuick','homeModWeak','homeModAffix','v2-wide');
-      if(title==='词汇学习') card.classList.add('homeModVocab');
-      else if(title==='泛读') card.classList.add('homeModReading');
-      else if(title==='快速练习') card.classList.add('homeModQuick');
-      else if(title==='弱项强化') card.classList.add('homeModWeak');
-      else if(title==='前后缀') card.classList.add('homeModAffix');
-    });
-    ['词汇学习','泛读','快速练习','弱项强化','前后缀'].forEach(function(t){if(map[t]) box.appendChild(map[t]);});
+  const ORDER=['词汇学习','泛读','快速练习','弱项强化','前后缀'];
+  let applying=false;
+
+  function titleOf(card){
+    const h=card&&card.querySelector('h3');
+    return h?(h.textContent||'').trim():'';
   }
+
+  function apply(){
+    if(applying) return;
+    const box=document.querySelector('#home .modules');
+    if(!box) return;
+    applying=true;
+    try{
+      box.classList.add('homeModulesCompact');
+      const cards=[].slice.call(box.querySelectorAll(':scope > .module'));
+      if(!cards.length) return;
+      const map={};
+      cards.forEach(function(card){
+        const title=titleOf(card);
+        map[title]=card;
+        card.classList.remove('homeModVocab','homeModReading','homeModQuick','homeModWeak','homeModAffix','v2-wide');
+        if(title==='词汇学习') card.classList.add('homeModVocab');
+        else if(title==='泛读') card.classList.add('homeModReading');
+        else if(title==='快速练习') card.classList.add('homeModQuick');
+        else if(title==='弱项强化') card.classList.add('homeModWeak');
+        else if(title==='前后缀') card.classList.add('homeModAffix');
+      });
+
+      const current=cards.map(titleOf).filter(Boolean);
+      const desired=ORDER.filter(t=>map[t]);
+      const same=current.length===desired.length&&current.every((t,i)=>t===desired[i]);
+      if(!same){
+        desired.forEach(function(t){box.appendChild(map[t]);});
+      }
+    } finally {
+      applying=false;
+    }
+  }
+
   function style(){
     if(document.getElementById('homeModulesCompactStyle')) return;
-    var s=document.createElement('style');
+    const s=document.createElement('style');
     s.id='homeModulesCompactStyle';
     s.textContent=`
       #home .modules.homeModulesCompact{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:10px!important;align-items:stretch}
@@ -42,13 +62,17 @@
     `;
     document.head.appendChild(s);
   }
+
   style();
   apply();
-  var box=document.querySelector('#home .modules');
+  const box=document.querySelector('#home .modules');
   if(box){
-    new MutationObserver(function(){apply();}).observe(box,{childList:true,subtree:false});
+    const observer=new MutationObserver(function(mutations){
+      if(applying) return;
+      const changed=mutations.some(m=>m.type==='childList'&&m.addedNodes.length);
+      if(changed) requestAnimationFrame(apply);
+    });
+    observer.observe(box,{childList:true,subtree:false});
   }
-  document.addEventListener('DOMContentLoaded',apply);
-  setTimeout(apply,300);
-  setTimeout(apply,1000);
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',apply,{once:true});
 })();
