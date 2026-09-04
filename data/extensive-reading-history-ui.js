@@ -2,6 +2,8 @@
   function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m];});}
   function splitParas(s){return String(s||'').trim().split(/\n\s*\n+/).map(function(x){return x.trim();}).filter(Boolean);}
   var currentIndex=0;
+  var currentParagraphs=[];
+  var activeUtterance=null;
   function allArticles(){
     var cur=(window.EXTENSIVE_READING_DB||[]).slice();
     var hist=(window.EXTENSIVE_READING_HISTORY||[]).slice();
@@ -10,15 +12,69 @@
     out.sort(function(a,b){return String(b.date||'').localeCompare(String(a.date||''));});
     return out;
   }
+  function getIndonesianVoice(){
+    if(!('speechSynthesis' in window))return null;
+    var voices=window.speechSynthesis.getVoices()||[];
+    return voices.find(function(v){return /^id([-_]|$)/i.test(v.lang||'');}) ||
+           voices.find(function(v){return /indonesia|bahasa/i.test((v.name||'')+' '+(v.lang||''));}) || null;
+  }
+  function doSpeak(text,btn){
+    if(!('speechSynthesis' in window)||!window.SpeechSynthesisUtterance){
+      alert('当前浏览器不支持网页朗读，请用 Chrome / Edge / Safari 最新版打开。');
+      return;
+    }
+    var synth=window.speechSynthesis;
+    try{synth.cancel();}catch(e){}
+    var u=new SpeechSynthesisUtterance(text);
+    u.lang='id-ID';
+    u.rate=0.92;
+    u.pitch=1;
+    u.volume=1;
+    var v=getIndonesianVoice();
+    if(v)u.voice=v;
+    activeUtterance=u;
+    var old=btn?btn.textContent:'';
+    if(btn){btn.textContent='⏹ 停止朗读';btn.dataset.speaking='1';}
+    u.onend=u.onerror=function(){
+      if(btn){btn.textContent=old||'🔊 朗读本段';delete btn.dataset.speaking;}
+      activeUtterance=null;
+    };
+    try{
+      synth.speak(u);
+      if(synth.paused)synth.resume();
+    }catch(e){
+      if(btn){btn.textContent=old||'🔊 朗读本段';delete btn.dataset.speaking;}
+      alert('朗读启动失败，请刷新页面后再试。');
+    }
+  }
+  window.speakExtensiveParagraph=function(i,btn){
+    if(btn&&btn.dataset.speaking==='1'){
+      try{window.speechSynthesis.cancel();}catch(e){}
+      btn.textContent='🔊 朗读本段';delete btn.dataset.speaking;activeUtterance=null;return;
+    }
+    var text=currentParagraphs[Number(i)]||'';
+    if(!text)return;
+    var synth=window.speechSynthesis;
+    if(synth&&(!synth.getVoices||!synth.getVoices().length)){
+      var started=false;
+      var launch=function(){if(started)return;started=true;doSpeak(text,btn);};
+      if('onvoiceschanged' in synth){
+        var prev=synth.onvoiceschanged;
+        synth.onvoiceschanged=function(){if(typeof prev==='function')try{prev.apply(this,arguments);}catch(e){}launch();};
+        setTimeout(launch,450);
+      }else launch();
+    }else doSpeak(text,btn);
+  };
   function paragraphHtml(x){
     var ids=splitParas(x.text),cns=splitParas(x.cn);
+    currentParagraphs=ids.slice();
     return ids.map(function(p,i){
       var cn=cns[i]||'';
       var cid='erCnPara'+i;
       return '<div class="erPara">'+
         '<div class="rl-text erParaText">'+esc(p).replace(/\n/g,'<br>')+'</div>'+
         '<div class="erParaActions">'+
-          '<button class="secondary" type="button" onclick=\'speak('+JSON.stringify(p)+')\'>🔊 朗读本段</button>'+
+          '<button class="secondary" type="button" onclick="speakExtensiveParagraph('+i+',this)">🔊 朗读本段</button>'+
           (cn?'<button class="secondary" type="button" onclick="toggleExtensiveParagraphCn(\''+cid+'\',this)">查看中文翻译</button>':'')+
         '</div>'+
         (cn?'<div class="erParaCn" id="'+cid+'">'+esc(cn).replace(/\n/g,'<br>')+'</div>':'')+
@@ -39,8 +95,8 @@
       '<div class="erParaList">'+paragraphHtml(x)+'</div>'+
       (x.source_name?'<div class="muted" style="margin-top:12px">改写来源：'+esc(x.source_name)+(x.source_date?' · '+esc(x.source_date):'')+'</div>':'');
   }
-  window.extensiveHistoryMove=function(delta){currentIndex+=delta;render();window.scrollTo({top:0,behavior:'smooth'});};
-  window.extensiveHistorySelect=function(i){currentIndex=Number(i)||0;render();};
+  window.extensiveHistoryMove=function(delta){try{window.speechSynthesis.cancel();}catch(e){}currentIndex+=delta;render();window.scrollTo({top:0,behavior:'smooth'});};
+  window.extensiveHistorySelect=function(i){try{window.speechSynthesis.cancel();}catch(e){}currentIndex=Number(i)||0;render();};
   window.toggleExtensiveParagraphCn=function(id,btn){var e=document.getElementById(id);if(!e)return;e.classList.toggle('show');if(btn)btn.textContent=e.classList.contains('show')?'隐藏中文翻译':'查看中文翻译';};
   window.openExtensiveV2=function(){if(window.setupPages)window.setupPages();if(window.go)go('extensive');currentIndex=0;render();};
   var s=document.createElement('style');s.textContent='.erHistNav{display:grid;grid-template-columns:auto minmax(220px,1fr) auto;gap:8px;align-items:center;margin-bottom:14px}.erHistNav select{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fff;min-width:0}.erHistNav button:disabled{opacity:.35}.erParaList{margin-top:14px}.erPara{background:#f8faff;border-left:4px solid #91ace8;border-radius:14px;padding:20px;margin-top:14px}.erParaText{font-size:20px;line-height:2;text-align:left}.erParaActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.erParaCn{display:none;background:#fffaf4;color:#705a47;border-radius:12px;padding:15px;line-height:1.8;margin-top:10px}.erParaCn.show{display:block}@media(max-width:700px){.erHistNav{grid-template-columns:1fr 1fr}.erHistNav select{grid-column:1/-1;grid-row:1}.erHistNav button{grid-row:2}.erPara{padding:15px}.erParaText{font-size:18px}}';document.head.appendChild(s);
