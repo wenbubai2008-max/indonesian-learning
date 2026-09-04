@@ -1,6 +1,7 @@
 (function(){
   let activeAudio=null;
   let activeUtterance=null;
+  let playToken=0;
   const statusId='ttsStatusBox';
 
   function status(msg,bad){
@@ -18,12 +19,33 @@
   }
 
   function stopAll(){
+    playToken++;
     try{if(window.speechSynthesis)speechSynthesis.cancel()}catch(e){}
     try{if(activeAudio){activeAudio.pause();activeAudio.src=''}}catch(e){}
     activeAudio=null;activeUtterance=null;
   }
 
-  function localTTS(text){
+  function splitText(text,maxLen){
+    text=String(text||'').replace(/\s+/g,' ').trim();
+    if(!text)return [];
+    maxLen=maxLen||150;
+    const sentences=text.match(/[^.!?]+[.!?]?/g)||[text];
+    const out=[];
+    sentences.forEach(function(s){
+      s=s.trim();
+      if(!s)return;
+      if(s.length<=maxLen){out.push(s);return;}
+      const words=s.split(/\s+/);let cur='';
+      words.forEach(function(w){
+        const next=cur?(cur+' '+w):w;
+        if(next.length>maxLen&&cur){out.push(cur);cur=w;}else cur=next;
+      });
+      if(cur)out.push(cur);
+    });
+    return out;
+  }
+
+  function localTTS(text,waitEnd){
     return new Promise((resolve,reject)=>{
       if(!('speechSynthesis' in window)||typeof SpeechSynthesisUtterance==='undefined')return reject(new Error('no speech synthesis'));
       try{
@@ -36,8 +58,9 @@
         if(idVoice)u.voice=idVoice;else if(fallback)u.voice=fallback;
         u.rate=.86;u.pitch=1;u.volume=1;
         let settled=false;
-        const timer=setTimeout(()=>{if(!settled){try{speechSynthesis.cancel()}catch(e){};reject(new Error('local timeout'))}},1800);
-        u.onstart=()=>{settled=true;clearTimeout(timer);status('🔊 正在播放：'+text);resolve(true)};
+        const timer=setTimeout(()=>{if(!settled){try{speechSynthesis.cancel()}catch(e){};reject(new Error('local timeout'))}},2200);
+        u.onstart=()=>{settled=true;clearTimeout(timer);if(!waitEnd)resolve(true)};
+        u.onend=()=>{settled=true;clearTimeout(timer);if(waitEnd)resolve(true)};
         u.onerror=()=>{clearTimeout(timer);reject(new Error('local error'))};
         speechSynthesis.cancel();
         speechSynthesis.resume();
@@ -46,10 +69,11 @@
     });
   }
 
-  function onlineTTS(text){
+  function onlineTTS(text,waitEnd){
     return new Promise((resolve,reject)=>{
       try{
         const candidates=[
+          'https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=id&q='+encodeURIComponent(text),
           'https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=id&q='+encodeURIComponent(text),
           'https://translate.googleusercontent.com/translate_tts?ie=UTF-8&client=tw-ob&tl=id&q='+encodeURIComponent(text)
         ];
@@ -57,20 +81,40 @@
         const tryNext=()=>{
           if(i>=candidates.length)return reject(new Error('online failed'));
           const a=new Audio();activeAudio=a;a.preload='auto';a.src=candidates[i++];
-          a.onplaying=()=>{status('🔊 在线发音：'+text);resolve(true)};
-          a.onerror=tryNext;
-          const p=a.play();if(p&&p.catch)p.catch(tryNext);
+          let started=false;
+          a.onplaying=()=>{started=true;if(!waitEnd)resolve(true)};
+          a.onended=()=>{if(waitEnd)resolve(true)};
+          a.onerror=()=>{if(!started)tryNext();else reject(new Error('online interrupted'))};
+          const p=a.play();if(p&&p.catch)p.catch(()=>{if(!started)tryNext();else reject(new Error('play blocked'))});
         };
         tryNext();
       }catch(e){reject(e)}
     });
   }
 
+  async function speakLong(text){
+    const chunks=splitText(text,145);
+    if(!chunks.length)return;
+    stopAll();
+    const token=playToken;
+    status('🔊 开始朗读全文 · '+chunks.length+' 段');
+    for(let i=0;i<chunks.length;i++){
+      if(token!==playToken)return;
+      const chunk=chunks[i];
+      let ok=false;
+      try{await onlineTTS(chunk,true);ok=true}catch(e){}
+      if(!ok){try{await localTTS(chunk,true);ok=true}catch(e){}}
+      if(!ok){status('全文朗读中断：第 '+(i+1)+' 段播放失败',true);return;}
+    }
+    if(token===playToken)status('✓ 全文朗读完成');
+  }
+
   async function reliableSpeak(text){
     text=String(text||'').trim();if(!text)return;
-    stopAll();status('准备发音：'+text);
-    try{await localTTS(text);return}catch(e){}
-    try{await onlineTTS(text);return}catch(e){}
+    if(text.length>180){return speakLong(text);}
+    stopAll();status('准备发音：'+(text.length>50?text.slice(0,50)+'…':text));
+    try{await localTTS(text,false);return}catch(e){}
+    try{await onlineTTS(text,false);return}catch(e){}
     status('发音失败：浏览器未提供可用语音，在线音频也被拦截',true);
   }
 
@@ -91,6 +135,7 @@
   }
 
   window.speak=reliableSpeak;
+  window.speakLongIndonesian=speakLong;
   try{window.speechSynthesis&&speechSynthesis.getVoices()}catch(e){}
   document.addEventListener('click',function(ev){
     const btn=ev.target.closest&&ev.target.closest('.sound');
