@@ -1,0 +1,338 @@
+{
+  "date": "2026-09-04",
+  "session": "pm",
+  "time": "19:00",
+  "level": "A2+ → B1",
+  "day": 14,
+  "title": "2026年9月4日｜19:00 晚间学习｜临时变化时怎么调整计划",
+  "duration": "45–60分钟",
+  "mode": "高频功能词 + 真实场景 + 主动调用",
+  "vocab": [
+    {
+      "word": "dadakan",
+      "display": "dadakan",
+      "audio_text": "dadakan",
+      "cn": "临时的；突然安排的",
+      "en": "last-minute; sudden; impromptu",
+      "root": "dadak",
+      "root_cn": "突然；临时发生",
+      "formation": "dadak + -an → dadakan；日常常说 urusan dadakan / meeting dadakan / kerjaan dadakan。",
+      "example": "Tadi ada meeting dadakan, jadi jadwalku langsung berubah.",
+      "example_cn": "刚才突然加了个临时会议，所以我的安排马上变了。",
+      "usage_note": "雅加达工作和聊天都很常见；标准表达也可用 mendadak 作副词。"
+    },
+    {
+      "word": "terlanjur",
+      "display": "terlanjur",
+      "audio_text": "terlanjur",
+      "cn": "已经做了；已经来不及回头了",
+      "en": "already; too late to undo; have gone ahead",
+      "root": "lanjur",
+      "root_cn": "继续往前；超过原本界限",
+      "formation": "ter- + lanjur → terlanjur；常见 terlanjur bilang / terlanjur beli / terlanjur janji。",
+      "example": "Aku terlanjur bilang ke klien kalau file-nya selesai hari ini.",
+      "example_cn": "我已经跟客户说了文件今天能完成，现在也不好改口了。",
+      "usage_note": "重点不是单纯“已经”，而是事情已经发生，改回去会比较麻烦。"
+    },
+    {
+      "word": "keburu",
+      "display": "keburu",
+      "audio_text": "keburu",
+      "cn": "赶在……之前；来得及；还没等到就……",
+      "en": "in time; before it is too late; before something else happens",
+      "root": "buru",
+      "root_cn": "追赶；赶",
+      "formation": "buru → keburu（高频口语）；常见 keburu telat / nggak keburu / sebelum keburu…。",
+      "example": "Aku kerjain bagian penting dulu sebelum keburu malam.",
+      "example_cn": "我先把重要的部分做掉，免得一转眼就到晚上了。",
+      "usage_note": "雅加达口语非常实用；nggak keburu 常表示时间不够、赶不上。"
+    },
+    {
+      "word": "sekalian",
+      "display": "sekalian",
+      "audio_text": "sekalian",
+      "cn": "顺便一起；干脆一并",
+      "en": "while you're at it; at the same time",
+      "root": "sekali",
+      "root_cn": "一次；一回",
+      "formation": "sekali → sekalian；固定高频形式，表示做一件事时顺便把另一件也一起做。",
+      "example": "Kalau kamu ke kantor depan, sekalian bawa dokumen ini ya.",
+      "example_cn": "你要是去前面的办公室，顺便把这份文件也带过去。",
+      "usage_note": "比 kemudian 再做一件事更自然地表达“顺手一起做”。"
+    },
+    {
+      "word": "menyesuaikan",
+      "display": "menyesuaikan",
+      "audio_text": "menyesuaikan",
+      "cn": "调整；使适应；配合",
+      "en": "adjust; adapt; align",
+      "root": "sesuai",
+      "root_cn": "合适；符合",
+      "formation": "meN- + sesuai + -kan → menyesuaikan；词族：sesuai（合适）、penyesuaian（调整）。",
+      "example": "Kita perlu menyesuaikan jadwal karena klien minta jamnya diganti.",
+      "example_cn": "因为客户要求换时间，我们需要调整日程。",
+      "usage_note": "办公室高频；口语也常说 nyesuaiin，但正式工作表达优先掌握 menyesuaikan。"
+    },
+    {
+      "word": "menangani",
+      "display": "menangani",
+      "audio_text": "menangani",
+      "cn": "处理；负责应对",
+      "en": "handle; deal with; take care of",
+      "root": "tangan",
+      "root_cn": "手",
+      "formation": "meN- + tangan + -i → menangani；从“用手处理”引申为处理问题、客户、项目。词族：penanganan（处理；处置）。",
+      "example": "Bagian ini aku yang menangani, kamu fokus ke yang lain aja.",
+      "example_cn": "这一部分我来处理，你专心做别的就行。",
+      "usage_note": "比做某件事更强调“负责处理/应对”，工作里很值得主动掌握。"
+    },
+    {
+      "word": "keteteran",
+      "display": "keteteran",
+      "audio_text": "keteteran",
+      "cn": "忙不过来；跟不上；应付不过来",
+      "en": "struggle to keep up; be overwhelmed",
+      "root": "keteteran",
+      "root_cn": "忙不过来；跟不上",
+      "formation": "固定高频口语形式；常说 jadi keteteran / takut keteteran / kerjaan bikin keteteran。",
+      "example": "Kalau semua dikerjain barengan, aku malah keteteran.",
+      "example_cn": "如果所有事情一起做，我反而会忙不过来。",
+      "usage_note": "比 sibuk 更具体：不是单纯忙，而是任务多到有点跟不上。"
+    },
+    {
+      "word": "kebuang",
+      "display": "kebuang",
+      "audio_text": "kebuang",
+      "cn": "被白白浪费掉",
+      "en": "go to waste; be wasted",
+      "root": "buang",
+      "root_cn": "扔掉；浪费",
+      "formation": "buang → kebuang（口语）；较标准 terbuang。",
+      "example": "Aku atur ulang prioritas biar waktunya nggak kebuang.",
+      "example_cn": "我重新排一下优先顺序，免得时间白白浪费。",
+      "usage_note": "共享陌生词库中的弱项词，今天放进真实计划调整场景里再次调用。"
+    },
+    {
+      "word": "kerjaan numpuk",
+      "display": "kerjaan numpuk",
+      "audio_text": "kerjaan numpuk",
+      "cn": "工作堆了一堆；事情越积越多",
+      "en": "work piling up; backlog of tasks",
+      "root": "kerja + tumpuk",
+      "root_cn": "工作；堆积",
+      "formation": "kerjaan 是 pekerjaan 的口语形式；tumpuk → numpuk 是常见口语变化。整块记：kerjaan numpuk。",
+      "example": "Kalau ditunda terus, nanti kerjaan numpuk di akhir minggu.",
+      "example_cn": "如果一直往后拖，到周末工作就会堆成一堆。",
+      "usage_note": "近期学过 kerjaan 和 ngeluh，今天把它们升级成更常直接说出口的词块。"
+    },
+    {
+      "word": "mepet",
+      "display": "mepet",
+      "audio_text": "mepet",
+      "cn": "时间很紧；卡得很近",
+      "en": "tight; close to the deadline",
+      "root": "mepet",
+      "root_cn": "紧挨；逼近；时间很紧",
+      "formation": "高频口语基础词；常见 waktunya mepet / deadline-nya mepet。",
+      "example": "Karena waktunya mepet, malam ini aku cuma kerjain yang paling penting.",
+      "example_cn": "因为时间很紧，今晚我只处理最重要的事情。",
+      "usage_note": "今天08:00词汇自然复现，不作为真正新词。"
+    },
+    {
+      "word": "ngikutin",
+      "display": "ngikutin",
+      "audio_text": "ngikutin",
+      "cn": "持续跟进；跟上；关注",
+      "en": "follow; keep up with; follow along",
+      "root": "ikut",
+      "root_cn": "跟随；参加",
+      "formation": "ikut → mengikuti（标准）→ ngikutin（雅加达常见口语）。",
+      "example": "Aku masih ngikutin update dari grup sebelum ubah jadwal lagi.",
+      "example_cn": "我还在跟进群里的更新，再决定要不要继续改日程。",
+      "usage_note": "今天08:00词汇自然复现，重点是和 update / perkembangan 一起整块使用。"
+    }
+  ],
+  "morphology": [
+    {
+      "form": "terlanjur",
+      "root": "lanjur",
+      "root_cn": "继续往前；超过原本界限",
+      "formation": "ter- + lanjur → terlanjur",
+      "explain_cn": "表示事情已经发生并推进到不容易撤回的程度。",
+      "example": "Aku terlanjur janji, jadi harus aku selesaikan.",
+      "example_cn": "我都已经答应了，所以得把它完成。"
+    },
+    {
+      "form": "menyesuaikan",
+      "root": "sesuai",
+      "root_cn": "合适；符合",
+      "formation": "meN- + sesuai + -kan → menyesuaikan",
+      "explain_cn": "让某件事变得更符合当前条件，也就是调整、适配。",
+      "example": "Kita menyesuaikan rencana sama kondisi sekarang.",
+      "example_cn": "我们根据现在的情况调整计划。"
+    },
+    {
+      "form": "menangani",
+      "root": "tangan",
+      "root_cn": "手",
+      "formation": "meN- + tangan + -i → menangani",
+      "explain_cn": "引申为亲自处理、负责应对某个问题或事务。",
+      "example": "Siapa yang menangani masalah ini?",
+      "example_cn": "谁负责处理这个问题？"
+    },
+    {
+      "form": "kebuang",
+      "root": "buang",
+      "root_cn": "扔掉；浪费",
+      "formation": "buang → kebuang（口语）；标准 terbuang",
+      "explain_cn": "表示东西、机会或时间被白白浪费掉。",
+      "example": "Jangan sampai waktunya kebuang percuma.",
+      "example_cn": "别让时间白白浪费掉。"
+    },
+    {
+      "form": "ngikutin",
+      "root": "ikut",
+      "root_cn": "跟随；参加",
+      "formation": "ikut → mengikuti（标准）→ ngikutin（口语）",
+      "explain_cn": "口语中常用来表示持续跟进一个过程、消息或进度。",
+      "example": "Aku masih ngikutin perkembangan proyeknya.",
+      "example_cn": "我还在持续跟进这个项目的进展。"
+    }
+  ],
+  "rewrite": [
+    {
+      "task": "中文→印尼语：刚才突然有个临时任务，所以我的计划变了。",
+      "reference_answer": "Tadi ada kerjaan dadakan, jadi rencanaku berubah.",
+      "reference_cn": "刚才突然有个临时任务，所以我的计划变了。"
+    },
+    {
+      "task": "中文→印尼语：我已经答应客户了，所以现在不好取消。",
+      "reference_answer": "Aku terlanjur janji ke klien, jadi sekarang nggak enak kalau dibatalin.",
+      "reference_cn": "我已经答应客户了，所以现在不好取消。"
+    },
+    {
+      "task": "把这句话改得更自然：Kalau kamu ke sana, bawa dokumen ini juga.",
+      "reference_answer": "Kalau kamu ke sana, sekalian bawa dokumen ini ya.",
+      "reference_cn": "你如果去那边，顺便把这份文件也带上。"
+    },
+    {
+      "task": "情境造句：任务突然变多，你想说‘如果全部一起做，我会忙不过来’。",
+      "reference_answer": "Kalau semuanya dikerjain barengan, aku bakal keteteran.",
+      "reference_cn": "如果全部一起做，我会忙不过来。"
+    },
+    {
+      "task": "中文→印尼语：我们先调整日程，免得时间白白浪费。",
+      "reference_answer": "Kita menyesuaikan jadwal dulu biar waktunya nggak kebuang.",
+      "reference_cn": "我们先调整日程，免得时间白白浪费。"
+    }
+  ],
+  "reading": {
+    "title": "Rencana Berubah Lagi",
+    "text": "Sore tadi ada meeting dadakan dari klien. Padahal jadwalku udah lumayan mepet dan masih ada beberapa kerjaan numpuk. Aku terlanjur janji bakal kirim hasil revisi malam ini, jadi mau nggak mau harus atur ulang prioritas. Bagian yang paling penting aku tangani dulu sebelum keburu malam. Setelah itu aku menyesuaikan jadwal buat besok dan sekalian ngikutin update terbaru dari grup kantor. Aku nggak mau ngerjain semuanya barengan karena nanti malah keteteran. Ada beberapa hal kecil yang akhirnya aku tunda supaya waktu nggak kebuang. Buatku, kalau rencana tiba-tiba berubah, yang penting bukan panik, tapi cepat tentuin mana yang memang harus diberesin dulu.",
+    "cn": "今天傍晚客户突然安排了一个临时会议。偏偏我的时间本来就挺紧，而且还有一些工作堆着。我已经答应今晚会把修改结果发出去，所以只能重新调整优先顺序。我先处理最重要的部分，免得一转眼就到晚上。之后我调整了明天的日程，也顺便跟进办公室群里的最新消息。我不想把所有事情一起做，因为那样反而会忙不过来。有些小事情我最后先推迟了，避免浪费时间。对我来说，计划突然改变时，重点不是慌，而是赶紧判断什么事情确实必须先处理完。",
+    "vocab": ["dadakan", "mepet", "kerjaan numpuk", "terlanjur", "menangani", "keburu", "menyesuaikan", "sekalian", "ngikutin", "keteteran", "kebuang"],
+    "active_questions": [
+      {
+        "task": "为什么作者没有把所有工作一起做？请用 keteteran 回答。",
+        "reference_answer": "Soalnya kalau semuanya dikerjain barengan, dia bakal keteteran.",
+        "reference_cn": "因为如果所有事情一起做，他会忙不过来。"
+      },
+      {
+        "task": "如果你今晚突然多了一个临时任务，你会怎么调整？至少用2个今晚词块。",
+        "reference_answer": "Kalau ada kerjaan dadakan, aku bakal menyesuaikan jadwal dulu. Yang paling penting aku tangani sebelum keburu malam.",
+        "reference_cn": "如果突然有临时任务，我会先调整日程。最重要的部分我会赶在晚上前先处理。"
+      }
+    ]
+  },
+  "dialogue": {
+    "title": "雅加达办公室｜临时加任务",
+    "lines": [
+      {
+        "speaker": "Rina",
+        "id": "Eh, barusan ada request dadakan dari klien. Bisa selesai malam ini nggak?",
+        "cn": "哎，客户刚刚临时加了个要求。今晚能做完吗？"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Waduh, waktunya mepet banget. Aku juga masih ada kerjaan numpuk nih.",
+        "cn": "哎呀，时间太紧了。我这边也还有一堆工作。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Yang ini aku tangani dulu deh. Kamu sekalian ngikutin update dari grup aja.",
+        "cn": "这个我先处理吧。你顺便跟一下群里的更新就行。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Oke. Soalnya kalau semua aku pegang, takut keteteran.",
+        "cn": "好。因为如果全都让我处理，我怕忙不过来。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Iya, kita menyesuaikan prioritas aja. Jangan sampai waktunya kebuang buat hal kecil.",
+        "cn": "对，我们就调整一下优先顺序。别把时间浪费在小事上。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Sip. Aku beresin yang penting dulu sebelum keburu malam.",
+        "cn": "行。我先把重要的处理完，免得一转眼就到晚上。"
+      }
+    ]
+  },
+  "daily_test": {
+    "title": "当日小测 · 5–8分钟",
+    "items": [
+      {
+        "type": "choice",
+        "prompt": "同事说 ‘Ada meeting dadakan.’ 最自然的意思是：",
+        "options": ["有个临时加的会议", "会议被正式取消了", "会议已经结束很久了"],
+        "answer_index": 0,
+        "explain": "dadakan 表示临时、突然安排的。"
+      },
+      {
+        "type": "choice",
+        "prompt": "‘Aku terlanjur janji ke klien.’ 的重点语气是：",
+        "options": ["我准备以后再答应", "我已经答应了，现在不好改", "我完全没答应"],
+        "answer_index": 1,
+        "explain": "terlanjur 强调事情已经做了，想撤回会比较麻烦。"
+      },
+      {
+        "type": "choice",
+        "prompt": "如果任务太多，想表达‘我会忙不过来’，最合适的是：",
+        "options": ["Aku bakal keteteran.", "Aku bakal sekalian.", "Aku bakal kebuang."],
+        "answer_index": 0,
+        "explain": "keteteran = 忙不过来、跟不上。"
+      },
+      {
+        "type": "fill",
+        "prompt": "补一个词块：Kalau kamu ke bawah, _____ bawa paket ini ya.（你下楼的话，顺便把这个包裹带上。）",
+        "answer": "sekalian",
+        "answer_cn": "顺便一起"
+      },
+      {
+        "type": "fill",
+        "prompt": "补一个词：Kita perlu _____ jadwal karena ada perubahan.（因为有变化，我们需要调整日程。）",
+        "answer": "menyesuaikan",
+        "answer_cn": "调整；适配"
+      },
+      {
+        "type": "order",
+        "prompt": "排序成自然句：时间很紧，所以我先处理最重要的。",
+        "tokens": ["jadi", "aku", "yang paling penting", "waktunya mepet", "tangani dulu"],
+        "answer": "Waktunya mepet, jadi aku tangani dulu yang paling penting.",
+        "answer_cn": "时间很紧，所以我先处理最重要的。"
+      }
+    ],
+    "self_check": {
+      "prompt": "今天这些内容你感觉怎么样？",
+      "options": ["大部分能快速认出", "一半左右需要想一下", "很多还会卡"]
+    }
+  },
+  "review": [
+    "5分钟复盘：不看中文，快速说出 dadakan / terlanjur / keburu / sekalian / menyesuaikan / menangani / keteteran 的核心意思。",
+    "把 terlanjur + 动词、sekalian + 动词、sebelum keburu + 状态 三个结构各说一遍，重点练成整块调用。",
+    "弱项词 kebuang 今天只做自然复现，不单独扩展陌生词章节。",
+    "复现早课 mepet 和 ngikutin：今晚重点是把它们放进临时调整计划的真实场景。",
+    "如果一个词只能看懂但说不出来，把它记为‘想很久’，明天优先再出现一次。"
+  ]
+}
