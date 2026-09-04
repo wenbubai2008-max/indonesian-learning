@@ -567,7 +567,7 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "menyesuaikan",
-    "cn": "调整；适应",
+    "cn": "调整；使适应；配合",
     "en": "adjust; adapt; align",
     "root": "sesuai",
     "categories": [
@@ -590,7 +590,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04"
     ],
     "example": "Kita perlu menyesuaikan jadwal karena klien minta jamnya diganti.",
-    "example_cn": "因为客户要求换时间，我们需要调整日程。"
+    "example_cn": "因为客户要求换时间，我们需要调整日程。",
+    "root_cn": "合适；符合"
   },
   {
     "word": "kebiasaan",
@@ -923,8 +924,8 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "keburu",
-    "cn": "来不及；在某事发生前已经……",
-    "en": "already before; before it is too late",
+    "cn": "赶在……之前；来得及；还没等到就……",
+    "en": "in time; before it is too late; before something else happens",
     "root": "buru",
     "categories": [
       "每日学习",
@@ -945,7 +946,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04"
     ],
     "example": "Aku kerjain bagian penting dulu sebelum keburu malam.",
-    "example_cn": "我先把重要的部分做掉，免得一转眼就到晚上了。"
+    "example_cn": "我先把重要的部分做掉，免得一转眼就到晚上了。",
+    "root_cn": "追赶；赶"
   },
   {
     "word": "mending",
@@ -1373,7 +1375,7 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "sekalian",
-    "cn": "顺便；一起做",
+    "cn": "顺便一起；干脆一并",
     "en": "while you're at it; at the same time",
     "root": "sekali",
     "categories": [
@@ -1395,7 +1397,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04"
     ],
     "example": "Kalau kamu ke kantor depan, sekalian bawa dokumen ini ya.",
-    "example_cn": "你要是去前面的办公室，顺便把这份文件也带过去。"
+    "example_cn": "你要是去前面的办公室，顺便把这份文件也带过去。",
+    "root_cn": "一次；一回"
   },
   {
     "word": "kebetulan",
@@ -3048,7 +3051,7 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "menangani",
-    "cn": "处理、负责处理",
+    "cn": "处理；负责应对",
     "en": "handle; deal with; take care of",
     "root": "tangan",
     "categories": [
@@ -3067,7 +3070,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04"
     ],
     "example": "Bagian ini aku yang menangani, kamu fokus ke yang lain aja.",
-    "example_cn": "这一部分我来处理，你专心做别的就行。"
+    "example_cn": "这一部分我来处理，你专心做别的就行。",
+    "root_cn": "手"
   },
   {
     "word": "tergantung",
@@ -3111,7 +3115,7 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "terlanjur",
-    "cn": "已经……了、来不及改变",
+    "cn": "已经做了；已经来不及回头了",
     "en": "already; too late to undo; have gone ahead",
     "root": "lanjur",
     "categories": [
@@ -3130,7 +3134,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04"
     ],
     "example": "Aku terlanjur bilang ke klien kalau file-nya selesai hari ini.",
-    "example_cn": "我已经跟客户说了文件今天能完成，现在也不好改口了。"
+    "example_cn": "我已经跟客户说了文件今天能完成，现在也不好改口了。",
+    "root_cn": "继续往前；超过原本界限"
   },
   {
     "word": "macet",
@@ -4153,8 +4158,8 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "dadakan",
-    "cn": "临时的；突然安排的（口语）",
-    "en": "impromptu; last-minute",
+    "cn": "临时的；突然安排的",
+    "en": "last-minute; sudden; impromptu",
     "root": "dadak",
     "categories": [
       "每日学习",
@@ -4173,7 +4178,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04"
     ],
     "example": "Tadi ada meeting dadakan, jadi jadwalku langsung berubah.",
-    "example_cn": "刚才突然加了个临时会议，所以我的安排马上变了。"
+    "example_cn": "刚才突然加了个临时会议，所以我的安排马上变了。",
+    "root_cn": "突然；临时发生"
   },
   {
     "word": "kebuang",
@@ -4196,7 +4202,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04"
     ],
     "example": "Aku atur ulang prioritas biar waktunya nggak kebuang.",
-    "example_cn": "我重新排一下优先顺序，免得时间白白浪费。"
+    "example_cn": "我重新排一下优先顺序，免得时间白白浪费。",
+    "root_cn": "扔掉；浪费"
   },
   {
     "word": "beresin",
@@ -4257,9 +4264,9 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "keteteran",
-    "cn": "忙不过来；跟不上进度",
+    "cn": "忙不过来；跟不上；应付不过来",
     "en": "struggle to keep up; be overwhelmed",
-    "root": "keteter",
+    "root": "keteteran",
     "categories": [
       "每日学习",
       "19:00"
@@ -4275,7 +4282,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04"
     ],
     "example": "Kalau semua dikerjain barengan, aku malah keteteran.",
-    "example_cn": "如果所有事情一起做，我反而会忙不过来。"
+    "example_cn": "如果所有事情一起做，我反而会忙不过来。",
+    "root_cn": "忙不过来；跟不上"
   },
   {
     "word": "kepending",
@@ -4676,8 +4684,8 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "mepet",
-    "cn": "时间很紧；离得很近；卡得很近（口语）",
-    "en": "tight; very close; close to the deadline",
+    "cn": "时间很紧；卡得很近",
+    "en": "tight; close to the deadline",
     "root": "mepet",
     "example": "Karena waktunya mepet, malam ini aku cuma kerjain yang paling penting.",
     "example_cn": "因为时间很紧，今晚我只处理最重要的事情。",
@@ -4695,7 +4703,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-04"
-    ]
+    ],
+    "root_cn": "紧挨；逼近；时间很紧"
   },
   {
     "word": "kelewatan",
@@ -4825,7 +4834,7 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "ngikutin",
-    "cn": "跟着；持续关注；跟上进度（口语）",
+    "cn": "持续跟进；跟上；关注",
     "en": "follow; keep up with; follow along",
     "root": "ikut",
     "example": "Aku masih ngikutin update dari grup sebelum ubah jadwal lagi.",
@@ -4844,7 +4853,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-04"
-    ]
+    ],
+    "root_cn": "跟随；参加"
   },
   {
     "word": "berantakan",
@@ -4907,6 +4917,7 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04"
     ],
     "example": "Kalau ditunda terus, nanti kerjaan numpuk di akhir minggu.",
-    "example_cn": "如果一直往后拖，到周末工作就会堆成一堆。"
+    "example_cn": "如果一直往后拖，到周末工作就会堆成一堆。",
+    "root_cn": "工作；堆积"
   }
 ];
