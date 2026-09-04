@@ -1,0 +1,29 @@
+name: Bump pronunciation cache 20260904
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/bump-pronunciation-cache-20260904.yml'
+permissions:
+  contents: write
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump pronunciation script cache
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          s=s.replace('data/pronunciation-fix.js?v=20260831-2','data/pronunciation-fix.js?v=20260904-1')
+          p.write_text(s)
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add index.html
+          git diff --cached --quiet || git commit -m 'Bump pronunciation cache for long reading fix'
+          git push
