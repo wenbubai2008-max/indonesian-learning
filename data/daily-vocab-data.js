@@ -588,7 +588,9 @@ window.DAILY_VOCAB_DB = [
       "2026-08-25",
       "2026-08-30",
       "2026-09-04"
-    ]
+    ],
+    "example": "Kita perlu menyesuaikan jadwal karena klien minta jamnya diganti.",
+    "example_cn": "因为客户要求换时间，我们需要调整日程。"
   },
   {
     "word": "kebiasaan",
@@ -941,7 +943,9 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27",
       "2026-09-02",
       "2026-09-04"
-    ]
+    ],
+    "example": "Aku kerjain bagian penting dulu sebelum keburu malam.",
+    "example_cn": "我先把重要的部分做掉，免得一转眼就到晚上了。"
   },
   {
     "word": "mending",
@@ -1389,7 +1393,9 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26",
       "2026-08-29",
       "2026-09-04"
-    ]
+    ],
+    "example": "Kalau kamu ke kantor depan, sekalian bawa dokumen ini ya.",
+    "example_cn": "你要是去前面的办公室，顺便把这份文件也带过去。"
   },
   {
     "word": "kebetulan",
@@ -3059,7 +3065,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-30",
       "2026-09-04"
-    ]
+    ],
+    "example": "Bagian ini aku yang menangani, kamu fokus ke yang lain aja.",
+    "example_cn": "这一部分我来处理，你专心做别的就行。"
   },
   {
     "word": "tergantung",
@@ -3120,7 +3128,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-30",
       "2026-09-04"
-    ]
+    ],
+    "example": "Aku terlanjur bilang ke klien kalau file-nya selesai hari ini.",
+    "example_cn": "我已经跟客户说了文件今天能完成，现在也不好改口了。"
   },
   {
     "word": "macet",
@@ -4161,7 +4171,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-02",
       "2026-09-04"
-    ]
+    ],
+    "example": "Tadi ada meeting dadakan, jadi jadwalku langsung berubah.",
+    "example_cn": "刚才突然加了个临时会议，所以我的安排马上变了。"
   },
   {
     "word": "kebuang",
@@ -4183,8 +4195,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03",
       "2026-09-04"
     ],
-    "example": "Kalau kita debat terus tanpa keputusan, waktunya malah kebuang.",
-    "example_cn": "如果我们一直争论却不做决定，时间反而会被浪费掉。"
+    "example": "Aku atur ulang prioritas biar waktunya nggak kebuang.",
+    "example_cn": "我重新排一下优先顺序，免得时间白白浪费。"
   },
   {
     "word": "beresin",
@@ -4261,7 +4273,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-02",
       "2026-09-04"
-    ]
+    ],
+    "example": "Kalau semua dikerjain barengan, aku malah keteteran.",
+    "example_cn": "如果所有事情一起做，我反而会忙不过来。"
   },
   {
     "word": "kepending",
@@ -4665,8 +4679,8 @@ window.DAILY_VOCAB_DB = [
     "cn": "时间很紧；离得很近；卡得很近（口语）",
     "en": "tight; very close; close to the deadline",
     "root": "mepet",
-    "example": "Deadline-nya mepet banget, jadi pagi ini aku fokus dulu.",
-    "example_cn": "截止时间特别紧，所以今天早上我先专心做事。",
+    "example": "Karena waktunya mepet, malam ini aku cuma kerjain yang paling penting.",
+    "example_cn": "因为时间很紧，今晚我只处理最重要的事情。",
     "categories": [
       "每日学习",
       "08:00",
@@ -4814,8 +4828,8 @@ window.DAILY_VOCAB_DB = [
     "cn": "跟着；持续关注；跟上进度（口语）",
     "en": "follow; keep up with; follow along",
     "root": "ikut",
-    "example": "Aku belum sempat ngikutin semua update dari grup kantor.",
-    "example_cn": "我还没来得及跟完办公室群里的所有更新。",
+    "example": "Aku masih ngikutin update dari grup sebelum ubah jadwal lagi.",
+    "example_cn": "我还在跟进群里的更新，再决定要不要继续改日程。",
     "categories": [
       "每日学习",
       "08:00",
@@ -4891,6 +4905,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-04"
-    ]
+    ],
+    "example": "Kalau ditunda terus, nanti kerjaan numpuk di akhir minggu.",
+    "example_cn": "如果一直往后拖，到周末工作就会堆成一堆。"
   }
 ];
