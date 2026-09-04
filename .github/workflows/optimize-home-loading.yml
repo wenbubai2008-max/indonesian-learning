@@ -1,0 +1,50 @@
+name: Optimize homepage loading
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/optimize-home-loading.yml'
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Optimize data cache and home layout init
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+
+          old="function xhrText(path){return new Promise((resolve,reject)=>{const u=BASE+path+'?v='+Date.now();const x=new XMLHttpRequest();x.open('GET',u,true);x.timeout=15000;x.onload=()=>{if(x.status>=200&&x.status<300)resolve(x.responseText);else reject(new Error('HTTP '+x.status+' '+u))};x.onerror=()=>reject(new Error('XHR network error '+u));x.ontimeout=()=>reject(new Error('XHR timeout '+u));x.send()})}"
+          new="""function xhrText(path){
+  const ttl=5*60*1000,now=Date.now(),key='indo_cache_v2:'+path;
+  try{const hit=JSON.parse(sessionStorage.getItem(key)||'null');if(hit&&hit.t&&now-hit.t<ttl&&typeof hit.v==='string')return Promise.resolve(hit.v)}catch(e){}
+  return new Promise((resolve,reject)=>{const bucket=Math.floor(now/ttl);const u=BASE+path+'?v='+bucket;const x=new XMLHttpRequest();x.open('GET',u,true);x.timeout=15000;x.onload=()=>{if(x.status>=200&&x.status<300){try{sessionStorage.setItem(key,JSON.stringify({t:Date.now(),v:x.responseText}))}catch(e){}resolve(x.responseText)}else reject(new Error('HTTP '+x.status+' '+u))};x.onerror=()=>reject(new Error('XHR network error '+u));x.ontimeout=()=>reject(new Error('XHR timeout '+u));x.send()})
+}"""
+          if old in s:
+              s=s.replace(old,new,1)
+          else:
+              s=re.sub(r"function xhrText\(path\)\{.*?\n?\}",new,s,count=1,flags=re.S)
+
+          p.write_text(s,encoding='utf-8')
+
+          hp=Path('data/home-modules-layout.js')
+          if hp.exists():
+              h=hp.read_text(encoding='utf-8')
+              h=h.replace("  const box=document.querySelector('#home .modules');\n  if(box){\n    const observer=new MutationObserver(function(mutations){\n      if(applying) return;\n      const changed=mutations.some(m=>m.type==='childList'&&m.addedNodes.length);\n      if(changed) requestAnimationFrame(apply);\n    });\n    observer.observe(box,{childList:true,subtree:false});\n  }\n  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',apply,{once:true});",
+              "  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',function(){apply();setTimeout(apply,220);},{once:true});\n  else setTimeout(apply,60);")
+              hp.write_text(h,encoding='utf-8')
+          PY
+      - name: Commit optimization
+        run: |
+          if git diff --quiet; then exit 0; fi
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@github.com'
+          git add index.html data/home-modules-layout.js
+          git commit -m 'Optimize homepage loading and cache data requests'
+          git push
