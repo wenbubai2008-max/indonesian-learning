@@ -28,16 +28,28 @@ jobs:
 }"""
           if old in s:
               s=s.replace(old,new,1)
-          else:
-              s=re.sub(r"function xhrText\(path\)\{.*?\n?\}",new,s,count=1,flags=re.S)
+          elif 'indo_cache_v2:' not in s:
+              s=re.sub(r"function xhrText\(path\)\{return new Promise\(\(resolve,reject\)=>\{const u=BASE\+path\+'\?v='\+Date\.now\(\);.*?\}\)\}",new,s,count=1,flags=re.S)
 
           p.write_text(s,encoding='utf-8')
 
           hp=Path('data/home-modules-layout.js')
           if hp.exists():
               h=hp.read_text(encoding='utf-8')
-              h=h.replace("  const box=document.querySelector('#home .modules');\n  if(box){\n    const observer=new MutationObserver(function(mutations){\n      if(applying) return;\n      const changed=mutations.some(m=>m.type==='childList'&&m.addedNodes.length);\n      if(changed) requestAnimationFrame(apply);\n    });\n    observer.observe(box,{childList:true,subtree:false});\n  }\n  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',apply,{once:true});",
-              "  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',function(){apply();setTimeout(apply,220);},{once:true});\n  else setTimeout(apply,60);")
+              old_obs="""  const box=document.querySelector('#home .modules');
+  if(box){
+    const observer=new MutationObserver(function(mutations){
+      if(applying) return;
+      const changed=mutations.some(m=>m.type==='childList'&&m.addedNodes.length);
+      if(changed) requestAnimationFrame(apply);
+    });
+    observer.observe(box,{childList:true,subtree:false});
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',apply,{once:true});"""
+              new_obs="""  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',function(){apply();setTimeout(apply,220);},{once:true});
+  else setTimeout(apply,60);"""
+              if old_obs in h:
+                  h=h.replace(old_obs,new_obs,1)
               hp.write_text(h,encoding='utf-8')
           PY
       - name: Commit optimization
