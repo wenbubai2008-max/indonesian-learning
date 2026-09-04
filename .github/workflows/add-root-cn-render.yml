@@ -1,0 +1,32 @@
+name: Add root Chinese meaning renderer
+on:
+  push:
+    paths:
+      - '.github/workflows/add-root-cn-render.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch history renderer
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('data/history-v2.js')
+          s=p.read_text()
+          old="${v.root?`词根：${esc2(v.root)}<br>`:''}"
+          new="${v.root?`词根：${esc2(v.root)}${v.root_cn?`（${esc2(v.root_cn)}）`:''}<br>`:''}"
+          if old not in s:
+              raise SystemExit('target not found')
+          p.write_text(s.replace(old,new,1))
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add data/history-v2.js
+          git commit -m 'Show root Chinese meanings in daily vocab cards' || exit 0
+          git push
