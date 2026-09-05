@@ -4939,7 +4939,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-05"
-    ]
+    ],
+    "root_cn": "尝试；试"
   },
   {
     "word": "cukup",
@@ -4960,7 +4961,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-05"
-    ]
+    ],
+    "root_cn": "足够；充足"
   },
   {
     "word": "kurang",
@@ -4981,7 +4983,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-05"
-    ]
+    ],
+    "root_cn": "不足；少"
   },
   {
     "word": "hampir",
@@ -5002,7 +5005,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-05"
-    ]
+    ],
+    "root_cn": "接近；几乎"
   },
   {
     "word": "sekitar",
@@ -5023,7 +5027,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-05"
-    ]
+    ],
+    "root_cn": "环绕；周围"
   },
   {
     "word": "habis",
@@ -5044,7 +5049,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-05"
-    ]
+    ],
+    "root_cn": "完；用尽"
   },
   {
     "word": "pesan",
@@ -5065,7 +5071,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-05"
-    ]
+    ],
+    "root_cn": "订购；留言"
   },
   {
     "word": "tambah",
@@ -5086,7 +5093,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-05"
-    ]
+    ],
+    "root_cn": "增加；添加"
   },
   {
     "word": "diskon",
@@ -5107,7 +5115,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-05"
-    ]
+    ],
+    "root_cn": "折扣；优惠"
   },
   {
     "word": "promo",
@@ -5128,6 +5137,7 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-05"
-    ]
+    ],
+    "root_cn": "促销；推广"
   }
 ];
