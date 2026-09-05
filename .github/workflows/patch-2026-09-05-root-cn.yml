@@ -1,0 +1,43 @@
+name: Patch 2026-09-05 root cn
+on:
+  push:
+    paths:
+      - '.github/workflows/patch-2026-09-05-root-cn.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch root_cn and examples
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          lesson=json.loads(Path('data/daily/2026-09-05-am.json').read_text(encoding='utf-8'))
+          src={v['word'].lower():v for v in lesson['vocab']}
+          p=Path('data/daily-vocab-data.js')
+          text=p.read_text(encoding='utf-8').strip()
+          prefix='window.DAILY_VOCAB_DB = '
+          if not text.startswith(prefix) or not text.endswith(';'):
+              raise SystemExit('Unexpected DAILY_VOCAB_DB format')
+          db=json.loads(text[len(prefix):-1])
+          for x in db:
+              v=src.get(str(x.get('word','')).lower())
+              if not v: continue
+              x['root']=v['root']
+              x['root_cn']=v['root_cn']
+              x['example']=v['example']
+              x['example_cn']=v['example_cn']
+              cats=list(dict.fromkeys((x.get('categories') or [])+['每日学习','08:00']))
+              x['categories']=cats
+          p.write_text(prefix+json.dumps(db,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily-vocab-data.js
+          git commit -m "Add root_cn to 2026-09-05 daily vocab" || exit 0
+          git push
