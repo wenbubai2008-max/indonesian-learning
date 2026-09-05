@@ -4919,5 +4919,215 @@ window.DAILY_VOCAB_DB = [
     "example": "Kalau ditunda terus, nanti kerjaan numpuk di akhir minggu.",
     "example_cn": "如果一直往后拖，到周末工作就会堆成一堆。",
     "root_cn": "工作；堆积"
+  },
+  {
+    "word": "cobain",
+    "cn": "试试看；尝一下（口语）",
+    "en": "try it; give it a try",
+    "root": "coba",
+    "example": "Kalau belum yakin, cobain versi yang ini dulu.",
+    "example_cn": "如果还不确定，先试试这个版本。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ]
+  },
+  {
+    "word": "cukup",
+    "cn": "足够；够了；相当",
+    "en": "enough; sufficient; fairly",
+    "root": "cukup",
+    "example": "Waktunya cukup kalau kita mulai sekarang.",
+    "example_cn": "如果我们现在开始，时间是够的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ]
+  },
+  {
+    "word": "kurang",
+    "cn": "少；不足；不够；不太",
+    "en": "less; lack; not enough; not quite",
+    "root": "kurang",
+    "example": "File ini masih kurang satu halaman.",
+    "example_cn": "这个文件还少一页。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ]
+  },
+  {
+    "word": "hampir",
+    "cn": "几乎；差点",
+    "en": "almost; nearly",
+    "root": "hampir",
+    "example": "Aku hampir lupa kabarin tim soal perubahan jadwal.",
+    "example_cn": "我差点忘了告诉团队日程有变化。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ]
+  },
+  {
+    "word": "sekitar",
+    "cn": "大约；周围；附近",
+    "en": "around; approximately; nearby",
+    "root": "kitar",
+    "example": "Meeting-nya selesai sekitar jam sebelas.",
+    "example_cn": "会议大约十一点结束。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ]
+  },
+  {
+    "word": "habis",
+    "cn": "用完；卖光；结束；之后",
+    "en": "finished; used up; sold out; after",
+    "root": "habis",
+    "example": "Promo-nya bagus, tapi stok-nya hampir habis.",
+    "example_cn": "促销不错，不过库存快卖光了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ]
+  },
+  {
+    "word": "pesan",
+    "cn": "订；点单；预订；消息",
+    "en": "order; book; message",
+    "root": "pesan",
+    "example": "Aku mau pesan makan siang buat tim sekalian.",
+    "example_cn": "我想顺便给团队一起点午饭。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ]
+  },
+  {
+    "word": "tambah",
+    "cn": "增加；加；再来",
+    "en": "add; increase; extra",
+    "root": "tambah",
+    "example": "Kalau masih kurang, kita tambah satu porsi lagi.",
+    "example_cn": "如果还不够，我们再加一份。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ]
+  },
+  {
+    "word": "diskon",
+    "cn": "折扣；打折",
+    "en": "discount",
+    "root": "diskon",
+    "example": "Kalau pakai aplikasi ini, ada diskon sepuluh persen.",
+    "example_cn": "如果用这个应用，有九折优惠。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ]
+  },
+  {
+    "word": "promo",
+    "cn": "促销；优惠活动",
+    "en": "promotion; special offer",
+    "root": "promo",
+    "example": "Hari ini lagi ada promo buat pesanan kantor.",
+    "example_cn": "今天办公室订单正好有促销。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ]
   }
 ];
