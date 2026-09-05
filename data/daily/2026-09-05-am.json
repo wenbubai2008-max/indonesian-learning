@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-05",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 15,
+  "title": "2026年9月5日｜Day 15",
+  "vocab": [
+    {"order":141,"word":"cobain","display":"cobain","audio_text":"cobain","cn":"试试看；尝一下（口语）","en":"try it; give it a try","root":"coba","root_cn":"尝试；试","formation":"coba → mencoba（标准‘尝试’）→ cobain（高频口语，常表示‘试试看这个’）。","example":"Kalau belum yakin, cobain versi yang ini dulu.","example_cn":"如果还不确定，先试试这个版本。","synonym_note":"coba 可直接说‘试试’；cobain 更口语，也更常带具体对象。"},
+    {"order":142,"word":"cukup","display":"cukup","audio_text":"cukup","cn":"足够；够了；相当","en":"enough; sufficient; fairly","root":"cukup","root_cn":"足够；充足","formation":"基础高频词；可说 cukup waktu（时间够）、cukup bagus（相当不错）。","example":"Waktunya cukup kalau kita mulai sekarang.","example_cn":"如果我们现在开始，时间是够的。","synonym_note":"lumayan = 挺、还不错；cukup 更强调‘够用/达到所需程度’。"},
+    {"order":143,"word":"kurang","display":"kurang","audio_text":"kurang","cn":"少；不足；不够；不太","en":"less; lack; not enough; not quite","root":"kurang","root_cn":"不足；少","formation":"基础高频词；可说 kurang waktu（时间不够）、kurang cocok（不太合适）。","example":"File ini masih kurang satu halaman.","example_cn":"这个文件还少一页。","synonym_note":"sedikit = 少量；kurang 更强调‘比需要的少/不够’。"},
+    {"order":144,"word":"hampir","display":"hampir","audio_text":"hampir","cn":"几乎；差点","en":"almost; nearly","root":"hampir","root_cn":"接近；几乎","formation":"基础高频词；常见 hampir selesai（快完成）、hampir lupa（差点忘了）。","example":"Aku hampir lupa kabarin tim soal perubahan jadwal.","example_cn":"我差点忘了告诉团队日程有变化。","synonym_note":"nyaris 也表示‘差点/几乎’，但 hampir 更日常、更通用。"},
+    {"order":145,"word":"sekitar","display":"sekitar","audio_text":"sekitar","cn":"大约；周围；附近","en":"around; approximately; nearby","root":"kitar","root_cn":"环绕；周围","formation":"se- + kitar → sekitar；可表示数量、时间的大约，也可表示周围区域。","example":"Meeting-nya selesai sekitar jam sebelas.","example_cn":"会议大约十一点结束。","synonym_note":"kira-kira 也可表示‘大约’，口语里还常用于‘你觉得大概……？’；sekitar 更中性。"},
+    {"order":146,"word":"habis","display":"habis","audio_text":"habis","cn":"用完；卖光；结束；之后","en":"finished; used up; sold out; after","root":"habis","root_cn":"完；用尽","formation":"基础高频词；habis makan（吃完后）、stok habis（没货了）、uang habis（钱花完了）。","example":"Promo-nya bagus, tapi stok-nya hampir habis.","example_cn":"促销不错，不过库存快卖光了。","synonym_note":"selesai = 完成某件事；habis 更常表示东西耗尽、活动结束，也可口语表示‘……之后’。"},
+    {"order":147,"word":"pesan","display":"pesan","audio_text":"pesan","cn":"订；点单；预订；消息","en":"order; book; message","root":"pesan","root_cn":"订购；留言","formation":"基础高频词；pesan makanan（点餐）、pesan tiket（订票）、pesan singkat（短消息）。","example":"Aku mau pesan makan siang buat tim sekalian.","example_cn":"我想顺便给团队一起点午饭。","synonym_note":"beli = 买；pesan 强调先下单、预订或点单，不一定当场拿到。"},
+    {"order":148,"word":"tambah","display":"tambah","audio_text":"tambah","cn":"增加；加；再来","en":"add; increase; extra","root":"tambah","root_cn":"增加；添加","formation":"基础高频词；常见 tambah satu（再加一个）、tambah waktu（增加时间）。词族：menambah（增加某物）。","example":"Kalau masih kurang, kita tambah satu porsi lagi.","example_cn":"如果还不够，我们再加一份。","synonym_note":"lebih = 更多/更；tambah 强调‘在现有基础上再加’这个动作。"},
+    {"order":149,"word":"diskon","display":"diskon","audio_text":"diskon","cn":"折扣；打折","en":"discount","root":"diskon","root_cn":"折扣；优惠","formation":"外来高频词，购物和外卖场景非常常见；常说 ada diskon / diskon 20 persen。","example":"Kalau pakai aplikasi ini, ada diskon sepuluh persen.","example_cn":"如果用这个应用，有九折优惠。","synonym_note":"promo = 促销活动，范围更广；diskon 特指价格直接打折。"},
+    {"order":150,"word":"promo","display":"promo","audio_text":"promo","cn":"促销；优惠活动","en":"promotion; special offer","root":"promo","root_cn":"促销；推广","formation":"口语和商业场景高频外来词；常见 promo hari ini / lagi ada promo。","example":"Hari ini lagi ada promo buat pesanan kantor.","example_cn":"今天办公室订单正好有促销。","synonym_note":"diskon 是折扣本身；promo 可以包含折扣、赠品、满减等多种优惠。"}
+  ],
+  "sentences": [
+    {"id":"Kalau waktunya masih cukup, cobain cek versi baru ini dulu.","cn":"如果时间还够，先试着看一下这个新版本。"},
+    {"id":"Aku hampir salah pesan karena dua menunya mirip banget.","cn":"我差点点错，因为两个菜单看起来太像了。"},
+    {"id":"Stok-nya hampir habis, jadi kalau cocok mending pesan sekarang.","cn":"库存快没了，所以如果合适最好现在就下单。"},
+    {"id":"Kalau porsinya kurang, nanti kita tambah satu lagi sekalian.","cn":"如果份量不够，等会儿我们顺便再加一份。"},
+    {"id":"Promo-nya cuma sampai sekitar jam dua, nanti kabarin aku kalau jadi pesan.","cn":"促销大概只到两点，如果决定下单就告诉我。"}
+  ],
+  "reading": {
+    "title":"Pesan Makan Siang Buat Tim",
+    "text":"Pagi ini kerjaan lumayan mepet, jadi aku mau pesan makan siang lebih awal buat tim. Ada satu restoran dekat kantor yang lagi kasih promo. Diskonnya cukup besar, tapi stok menu favorit hampir habis. Aku sempat cobain tempat itu minggu lalu dan rasanya lumayan cocok. Aku tanya tim dulu karena takut porsinya kurang. Kalau ternyata kurang, kita bisa tambah satu atau dua porsi. Promo-nya cuma sampai sekitar jam dua. Tadi aku hampir salah pilih menu karena fotonya mirip. Untung belum jadi pesan. Setelah semuanya setuju, aku langsung order dan kabarin tim supaya mereka nggak perlu buru-buru keluar kantor saat jam makan siang.",
+    "cn":"今天早上的工作时间比较紧，所以我想早点给团队订午饭。办公室附近有一家餐厅正在做促销，折扣挺大，不过最受欢迎的菜快卖光了。我上周抽空试过那家，味道还挺合适。我先问了团队，因为怕份量不够。如果确实不够，我们可以再加一两份。促销大约只到下午两点。刚才我差点选错菜单，因为照片很像。还好还没下单。大家都同意以后，我就马上下单并告诉团队，这样午饭时间他们不用急着跑出去。",
+    "vocab":["mepet","pesan","promo","diskon","cukup","hampir","habis","sempat","cobain","cocok","kurang","tambah","sekitar","setuju","kabarin","buru-buru"]
+  },
+  "quiz": [
+    {"question":"“Stok-nya hampir habis.” 最自然的意思是：","options":["库存刚刚增加","库存快没了","库存很便宜"],"answer_index":1,"explain":"hampir = 几乎/快要；habis = 用完、卖光。"},
+    {"question":"diskon 和 promo 最自然的区别是：","options":["diskon 是直接打折；promo 是更广的促销活动","promo 只表示库存；diskon 只表示消息","两个词完全没有区别"],"answer_index":0,"explain":"promo 可以包括折扣、赠品、满减等；diskon 更具体是价格下降。"},
+    {"question":"复习：想说‘如果合适，就顺便订一下’，哪句最自然？","options":["Kalau cocok, sekalian pesan aja.","Kalau ketukar, sekalian habis aja.","Kalau izin, sekalian kurang aja."],"answer_index":0,"explain":"cocok = 合适；sekalian = 顺便，这两个都是之前学过的高频词。"}
+  ],
+  "output": {
+    "task":"用自然口语表达：‘这个促销大概到两点，折扣还不错。不过库存快没了。如果你觉得合适就先下单，份量不够的话我们再加一份。下单以后告诉我。’",
+    "reference_answer":"Promo ini kira-kira sampai jam dua, diskonnya juga lumayan. Tapi stok-nya hampir habis. Kalau menurut kamu cocok, pesan dulu aja. Kalau porsinya kurang, nanti kita tambah satu lagi. Habis pesan, kabarin aku ya.",
+    "reference_cn":"这个促销大概到两点，折扣还不错。不过库存快没了。如果你觉得合适就先下单，份量不够的话我们再加一份。下单以后告诉我。"
+  },
+  "review": [
+    "数量与程度：cukup = 够，kurang = 不够，tambah = 再加；这三个词放在真实点餐和工作安排里一起记。",
+    "轮换复习旧词：mepet（昨天）、setuju（约2天前）、cocok / sekalian / kabarin / sempat / buru-buru（约1周前），避免重复只刷最近一批。",
+    "购物表达：promo 是促销活动，diskon 是直接折扣；hampir habis = 快没了，pesan = 先下单/预订。"
+  ]
+}
