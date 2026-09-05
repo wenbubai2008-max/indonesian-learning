@@ -1,0 +1,55 @@
+name: Append 2026-09-05 AM vocab
+on:
+  push:
+    paths:
+      - '.github/workflows/append-2026-09-05-am-vocab.yml'
+permissions:
+  contents: write
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append daily vocab safely
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          lesson = json.loads(Path('data/daily/2026-09-05-am.json').read_text(encoding='utf-8'))
+          p = Path('data/daily-vocab-data.js')
+          text = p.read_text(encoding='utf-8').strip()
+          prefix = 'window.DAILY_VOCAB_DB = '
+          if not text.startswith(prefix) or not text.endswith(';'):
+              raise SystemExit('Unexpected DAILY_VOCAB_DB format')
+          db = json.loads(text[len(prefix):-1])
+          seen = {str(x.get('word','')).lower() for x in db}
+          for v in lesson['vocab']:
+              key = v['word'].lower()
+              if key in seen:
+                  continue
+              db.append({
+                  'word': v['word'],
+                  'cn': v['cn'],
+                  'en': v['en'],
+                  'root': v['root'],
+                  'root_cn': v['root_cn'],
+                  'example': v['example'],
+                  'example_cn': v['example_cn'],
+                  'categories': ['每日学习','08:00'],
+                  'times_seen': 1,
+                  'first_seen': '2026-09-05 08:00',
+                  'last_seen': '2026-09-05 08:00',
+                  'sessions': ['08:00'],
+                  'dates': ['2026-09-05']
+              })
+              seen.add(key)
+          p.write_text(prefix + json.dumps(db, ensure_ascii=False, indent=2) + ';\n', encoding='utf-8')
+          PY
+      - name: Commit updated vocab library
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily-vocab-data.js
+          git commit -m "Append 2026-09-05 AM vocabulary" || exit 0
+          git push
