@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-05",
+  "session": "pm",
+  "time": "19:00",
+  "level": "A2+ → B1",
+  "day": 15,
+  "title": "2026年9月5日｜19:00 晚间学习｜解释意外和真实反应",
+  "duration": "45–60分钟",
+  "mode": "高频功能词块 + 雅加达口语 + 主动调用",
+  "vocab": [
+    {"word":"kebetulan","display":"kebetulan","audio_text":"kebetulan","cn":"碰巧；正好","en":"coincidentally; by chance","root":"betul","root_cn":"对；正确","formation":"ke- + betul + -an → kebetulan；现代高频固定义为‘碰巧、正好’。","example":"Kebetulan aku lagi di daerah sana, jadi sekalian mampir aja.","example_cn":"正好我就在那一带，所以顺便过去一下。","usage_note":"聊天高频；整块记 kebetulan lagi... / kebetulan ada...。"},
+    {"word":"nggak sengaja","display":"nggak sengaja","audio_text":"nggak sengaja","cn":"不是故意的；不小心","en":"accidentally; unintentionally","root":"sengaja","root_cn":"故意；有意","formation":"nggak + sengaja；标准形式 tidak sengaja。","example":"Aku nggak sengaja salah pencet, jadi pesannya kehapus.","example_cn":"我不小心按错了，所以消息被删掉了。","usage_note":"比教材式 tanpa sengaja 更符合日常聊天；和 sengaja‘故意’成对记。"},
+    {"word":"kepikiran","display":"kepikiran","audio_text":"kepikiran","cn":"突然想到；一直挂在心上","en":"come to mind; be on one's mind","root":"pikir","root_cn":"想；思考","formation":"pikir → kepikiran（高频口语）；标准语境可用 terpikir / terpikirkan。","example":"Tadi aku kepikiran satu cara yang mungkin lebih simpel.","example_cn":"刚才我想到一个可能更简单的办法。","usage_note":"既可表示‘突然想到’，也可表示某事一直让你惦记。"},
+    {"word":"ternyata","display":"ternyata","audio_text":"ternyata","cn":"原来；结果发现","en":"it turns out; apparently","root":"nyata","root_cn":"真实；明显","formation":"ter- + nyata → ternyata；表示事实与原先预期不同。","example":"Aku kira bakal ribet, ternyata prosesnya lumayan gampang.","example_cn":"我以为会很麻烦，结果发现流程还挺简单。","usage_note":"B1前非常值得主动掌握的叙事连接词；常和 aku kira... ternyata... 搭配。"},
+    {"word":"malah","display":"malah","audio_text":"malah","cn":"反而；却","en":"instead; on the contrary","root":"malah","root_cn":"反而；却","formation":"基础高频功能词；常见 bukannya..., malah...。","example":"Aku kira bakal lebih cepat, malah jadi lebih lama.","example_cn":"我以为会更快，反而变得更久了。","usage_note":"雅加达口语非常常见，用来表达结果和预期相反。"},
+    {"word":"nggak heran","display":"nggak heran","audio_text":"nggak heran","cn":"难怪；不奇怪","en":"no wonder; not surprising","root":"heran","root_cn":"惊讶；觉得奇怪","formation":"nggak + heran；标准形式 tidak heran。","example":"Pantes dia capek terus. Nggak heran sih, tiap hari pulangnya malam.","example_cn":"难怪他总是累。也不奇怪，他每天都很晚回去。","usage_note":"常用于知道原因后的判断；口语里 pantes... nggak heran... 都很自然。"},
+    {"word":"masuk akal","display":"masuk akal","audio_text":"masuk akal","cn":"说得通；合理","en":"make sense; reasonable","root":"akal","root_cn":"理智；思考能力","formation":"固定词块 masuk + akal，字面‘进入理智’，实际表示合理、说得通。","example":"Alasannya masuk akal, jadi aku nggak masalah kalau jadwalnya diganti.","example_cn":"他的理由说得通，所以改时间我没意见。","usage_note":"工作讨论和聊天都高频；否定直接说 nggak masuk akal。"},
+    {"word":"tergantung","display":"tergantung","audio_text":"tergantung","cn":"取决于；看情况","en":"depend on; it depends","root":"gantung","root_cn":"挂；悬挂","formation":"ter- + gantung → tergantung；常见 tergantung kondisi / tergantung kamu。","example":"Jadi atau nggaknya tergantung kondisi besok.","example_cn":"最后做不做要看明天的情况。","usage_note":"回答不确定问题时极实用；单独说 Tergantung. 就是‘看情况’。"},
+    {"word":"kebuang","display":"kebuang","audio_text":"kebuang","cn":"被白白浪费掉","en":"go to waste; be wasted","root":"buang","root_cn":"扔掉；浪费","formation":"buang → kebuang（口语）；较标准 terbuang。","example":"Mending siapin dari sekarang biar waktunya nggak kebuang besok.","example_cn":"最好现在就准备，免得明天白白浪费时间。","usage_note":"共享陌生词库弱项词，继续放进自然语境调用，不单独做陌生词章节。"},
+    {"word":"hampir","display":"hampir","audio_text":"hampir","cn":"几乎；差点","en":"almost; nearly","root":"hampir","root_cn":"接近；几乎","formation":"基础高频词；常见 hampir lupa / hampir selesai / hampir habis。","example":"Aku hampir salah masuk ruangan karena nomor pintunya mirip.","example_cn":"我差点走错房间，因为门牌号很像。","usage_note":"今天08:00自然复现，不作为真正新词。"},
+    {"word":"cukup","display":"cukup","audio_text":"cukup","cn":"足够；够；相当","en":"enough; fairly","root":"cukup","root_cn":"足够；充足","formation":"基础高频词；常见 cukup waktu / cukup jelas / cukup bagus。","example":"Penjelasannya cukup jelas, jadi aku langsung ngerti maksudnya.","example_cn":"解释得挺清楚，所以我马上明白他的意思了。","usage_note":"今天08:00自然复现；这里强化 cukup + 形容词 的用法。"}
+  ],
+  "morphology": [
+    {"form":"kebetulan","root":"betul","root_cn":"对；正确","formation":"ke- + betul + -an → kebetulan","explain_cn":"现在作为固定高频词使用，表示事情碰巧发生。","example":"Kebetulan aku lagi kosong sore ini.","example_cn":"正好我今天下午有空。"},
+    {"form":"kepikiran","root":"pikir","root_cn":"想；思考","formation":"pikir → kepikiran（口语）","explain_cn":"表示某个想法进入脑子，或某件事一直挂在心上。","example":"Aku tiba-tiba kepikiran soal itu lagi.","example_cn":"我突然又想到那件事了。"},
+    {"form":"ternyata","root":"nyata","root_cn":"真实；明显","formation":"ter- + nyata → ternyata","explain_cn":"从‘显现为事实’发展为口语里的‘原来/结果发现’。","example":"Ternyata dia udah tahu dari kemarin.","example_cn":"原来他昨天就知道了。"},
+    {"form":"tergantung","root":"gantung","root_cn":"挂；悬挂","formation":"ter- + gantung → tergantung","explain_cn":"引申为某个结果由另一个条件决定。","example":"Harganya tergantung ukuran.","example_cn":"价格取决于尺寸。"},
+    {"form":"kebuang","root":"buang","root_cn":"扔掉；浪费","formation":"buang → kebuang（口语）；标准 terbuang","explain_cn":"表示时间、机会或东西被白白浪费。","example":"Sayang kalau kesempatan ini kebuang.","example_cn":"这个机会浪费掉就可惜了。"}
+  ],
+  "rewrite": [
+    {"task":"中文→印尼语：正好我也要去那边，所以顺便一起吧。","reference_answer":"Kebetulan aku juga mau ke sana, jadi sekalian aja.","reference_cn":"正好我也要去那边，所以顺便一起吧。"},
+    {"task":"中文→印尼语：我不是故意的，刚才不小心按错了。","reference_answer":"Aku nggak sengaja, tadi salah pencet.","reference_cn":"我不是故意的，刚才不小心按错了。"},
+    {"task":"情境：你本来以为流程很麻烦，结果发现很简单。","reference_answer":"Aku kira prosesnya ribet, ternyata gampang banget.","reference_cn":"我以为流程很麻烦，结果发现特别简单。"},
+    {"task":"改写成自然口语：Hasilnya tidak lebih cepat, tetapi justru lebih lama.","reference_answer":"Bukannya lebih cepat, malah jadi lebih lama.","reference_cn":"不但没更快，反而变得更久了。"},
+    {"task":"中文→印尼语：要不要继续得看明天的情况，这个理由还是说得通的。","reference_answer":"Mau lanjut atau nggak tergantung kondisi besok. Alasannya sih masih masuk akal.","reference_cn":"要不要继续得看明天的情况，这个理由还是说得通的。"}
+  ],
+  "reading": {
+    "title":"Rencana yang Tiba-tiba Berubah",
+    "text":"Sore tadi aku hampir pulang lebih awal, tapi kebetulan ada teman kantor yang ngajak ngobrol soal satu masalah. Awalnya aku kira cuma sebentar, ternyata ada beberapa hal yang perlu dibahas. Dia nggak sengaja salah masukin data, jadi hasilnya malah beda dari yang kami harapkan. Setelah dijelasin, alasannya cukup masuk akal. Aku juga kepikiran cara yang lebih simpel buat beresinnya. Mau dipakai atau nggak tergantung keputusan tim besok. Yang penting, malam ini kami siapin bagian dasarnya dulu biar waktu besok nggak kebuang. Nggak heran dia kelihatan capek, soalnya dari pagi kerjaannya memang padat banget.",
+    "cn":"今天傍晚我差点提前回家，不过正好有个同事找我聊一个问题。一开始我以为只要一会儿，结果发现有好几件事需要讨论。他不小心把数据填错了，所以结果反而和我们预想的不一样。解释之后，他的理由还算说得通。我也想到一个更简单的处理办法。到底用不用，要看团队明天的决定。重要的是，今晚我们先把基础部分准备好，免得明天浪费时间。难怪他看起来很累，因为从早上开始工作就一直特别忙。",
+    "vocab":["hampir","kebetulan","ternyata","nggak sengaja","malah","cukup","masuk akal","kepikiran","tergantung","kebuang","nggak heran"],
+    "questions":[
+      {"task":"主动回答：为什么最后的结果和他们预想的不一样？","reference_answer":"Karena dia nggak sengaja salah masukin data.","reference_cn":"因为他不小心把数据填错了。"},
+      {"task":"主动回答：他们为什么今晚先准备基础部分？","reference_answer":"Biar waktu besok nggak kebuang.","reference_cn":"为了避免明天白白浪费时间。"}
+    ]
+  },
+  "dialogue": {
+    "title":"办公室里解释一个意外",
+    "lines":[
+      {"speaker":"A","id":"Kok hasilnya beda dari yang kemarin?","cn":"怎么结果跟昨天的不一样？"},
+      {"speaker":"B","id":"Tadi aku nggak sengaja salah masukin satu angka.","cn":"刚才我不小心输错了一个数字。"},
+      {"speaker":"A","id":"Oh, pantes. Aku kira sistemnya yang bermasalah.","cn":"哦，难怪。我还以为是系统出问题了。"},
+      {"speaker":"B","id":"Iya, ternyata datanya. Aku malah baru sadar pas mau pulang.","cn":"对，原来是数据。我反而是快下班时才发现。"},
+      {"speaker":"A","id":"Kalau dibenerin sekarang, waktunya cukup nggak?","cn":"如果现在改，时间够吗？"},
+      {"speaker":"B","id":"Cukup sih. Aku juga udah kepikiran cara yang lebih cepat.","cn":"应该够。我也已经想到一个更快的办法了。"},
+      {"speaker":"A","id":"Oke, kerjain yang penting dulu biar waktu nggak kebuang.","cn":"好，先做重要的，免得浪费时间。"}
+    ]
+  },
+  "daily_test": {
+    "title":"当日小测 · 5–8分钟",
+    "items":[
+      {"type":"choice","prompt":"‘原来他今天不来。’最自然的开头是？","options":["Ternyata...","Kebuang...","Cukup..."],"answer_index":0,"explain":"ternyata 用于发现与原先认知不同的事实。"},
+      {"type":"choice","prompt":"你想说‘反而更麻烦了’，选哪一个？","options":["malah jadi lebih ribet","nggak sengaja cukup","tergantung hampir"],"answer_index":0,"explain":"malah = 反而，常用于结果与预期相反。"},
+      {"type":"choice","prompt":"‘这个解释说得通。’最自然的是？","options":["Penjelasannya masuk akal.","Penjelasannya kebetulan.","Penjelasannya kebuang."],"answer_index":0,"explain":"masuk akal = 合理、说得通。"},
+      {"type":"fill","prompt":"Aku ___ salah pencet, bukan sengaja.（补：不小心）","answer":"nggak sengaja","answer_cn":"我是不小心按错的，不是故意。"},
+      {"type":"fill","prompt":"Jadi atau nggaknya ___ kondisi besok.（补：取决于）","answer":"tergantung","answer_cn":"做不做取决于明天的情况。"},
+      {"type":"order","prompt":"排序成自然句：‘正好我也在那边。’","tokens":["aku","kebetulan","juga","di sana"],"answer":"Kebetulan aku juga di sana.","answer_cn":"正好我也在那边。"}
+    ],
+    "self_check":{"prompt":"今天这些内容你感觉怎么样？","options":["大部分能快速认出","一半左右需要想一下","很多还会卡"]}
+  },
+  "review":[
+    "5分钟复盘：不看答案说出 kebetulan、ternyata、malah、tergantung、masuk akal 的中文和一个常见搭配。",
+    "把 nggak sengaja ↔ sengaja、masuk akal ↔ nggak masuk akal 成对快速回忆。",
+    "自然复现早间词：hampir、cukup；弱项词 kebuang 放进‘biar waktu nggak kebuang’整块记。",
+    "最后快速说一遍：Aku kira..., ternyata...；Bukannya..., malah...；Tergantung...。"
+  ]
+}
