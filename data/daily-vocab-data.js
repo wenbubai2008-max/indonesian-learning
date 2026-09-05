@@ -1101,7 +1101,7 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "ternyata",
     "cn": "原来；结果发现",
-    "en": "",
+    "en": "it turns out; apparently",
     "root": "nyata",
     "categories": [
       "每日学习",
@@ -1109,9 +1109,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-28 08:00",
-    "last_seen": "2026-08-30 19:00",
+    "last_seen": "2026-09-05 19:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -1119,28 +1119,38 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-28",
       "2026-08-29",
-      "2026-08-30"
-    ]
+      "2026-08-30",
+      "2026-09-05"
+    ],
+    "root_cn": "真实；明显",
+    "example": "Aku kira bakal ribet, ternyata prosesnya lumayan gampang.",
+    "example_cn": "我以为会很麻烦，结果发现流程还挺简单。"
   },
   {
     "word": "malah",
-    "cn": "反而、却",
-    "en": "",
-    "root": "",
+    "cn": "反而；却",
+    "en": "instead; on the contrary",
+    "root": "malah",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-28 08:00",
-    "last_seen": "2026-08-28 08:00",
+    "last_seen": "2026-09-05 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-08-28"
-    ]
+      "2026-08-28",
+      "2026-09-05"
+    ],
+    "root_cn": "反而；却",
+    "example": "Aku kira bakal lebih cepat, malah jadi lebih lama.",
+    "example_cn": "我以为会更快，反而变得更久了。"
   },
   {
     "word": "padahal",
@@ -1402,8 +1412,8 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "kebetulan",
-    "cn": "正好、碰巧",
-    "en": "",
+    "cn": "碰巧；正好",
+    "en": "coincidentally; by chance",
     "root": "betul",
     "categories": [
       "每日学习",
@@ -1411,16 +1421,20 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-08-29 19:00",
+    "last_seen": "2026-09-05 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-08-29"
-    ]
+      "2026-08-29",
+      "2026-09-05"
+    ],
+    "root_cn": "对；正确",
+    "example": "Kebetulan aku lagi di daerah sana, jadi sekalian mampir aja.",
+    "example_cn": "正好我就在那一带，所以顺便过去一下。"
   },
   {
     "word": "nyari",
@@ -1484,23 +1498,29 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "kepikiran",
-    "cn": "想到；一直惦记；脑子里冒出",
-    "en": "",
+    "cn": "突然想到；一直挂在心上",
+    "en": "come to mind; be on one's mind",
     "root": "pikir",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-08-29 08:00",
+    "last_seen": "2026-09-05 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-08-29"
-    ]
+      "2026-08-29",
+      "2026-09-05"
+    ],
+    "root_cn": "想；思考",
+    "example": "Tadi aku kepikiran satu cara yang mungkin lebih simpel.",
+    "example_cn": "刚才我想到一个可能更简单的办法。"
   },
   {
     "word": "ngerasa",
@@ -3075,23 +3095,27 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "tergantung",
-    "cn": "取决于、看情况",
-    "en": "",
+    "cn": "取决于；看情况",
+    "en": "depend on; it depends",
     "root": "gantung",
     "categories": [
       "每日学习",
       "19:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 19:00",
-    "last_seen": "2026-08-30 19:00",
+    "last_seen": "2026-09-05 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-08-30"
-    ]
+      "2026-08-30",
+      "2026-09-05"
+    ],
+    "root_cn": "挂；悬挂",
+    "example": "Jadi atau nggaknya tergantung kondisi besok.",
+    "example_cn": "最后做不做要看明天的情况。"
   },
   {
     "word": "seharusnya",
@@ -4190,19 +4214,20 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-04 19:00",
+    "last_seen": "2026-09-05 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
       "2026-09-02",
       "2026-09-03",
-      "2026-09-04"
+      "2026-09-04",
+      "2026-09-05"
     ],
-    "example": "Aku atur ulang prioritas biar waktunya nggak kebuang.",
-    "example_cn": "我重新排一下优先顺序，免得时间白白浪费。",
+    "example": "Mending siapin dari sekarang biar waktunya nggak kebuang besok.",
+    "example_cn": "最好现在就准备，免得明天白白浪费时间。",
     "root_cn": "扔掉；浪费"
   },
   {
@@ -4558,24 +4583,26 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "masuk akal",
-    "cn": "有道理；说得通",
+    "cn": "说得通；合理",
     "en": "make sense; reasonable",
     "root": "akal",
     "categories": [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-03 19:00",
-    "last_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-05 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-05"
     ],
-    "example": "Menurutku idenya masuk akal, cuma waktunya perlu diatur lagi.",
-    "example_cn": "我觉得这个想法有道理，只是时间需要重新安排。"
+    "example": "Alasannya masuk akal, jadi aku nggak masalah kalau jadwalnya diganti.",
+    "example_cn": "他的理由说得通，所以改时间我没意见。",
+    "root_cn": "理智；思考能力"
   },
   {
     "word": "keberatan",
@@ -4944,20 +4971,22 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "cukup",
-    "cn": "足够；够了；相当",
-    "en": "enough; sufficient; fairly",
+    "cn": "足够；够；相当",
+    "en": "enough; fairly",
     "root": "cukup",
-    "example": "Waktunya cukup kalau kita mulai sekarang.",
-    "example_cn": "如果我们现在开始，时间是够的。",
+    "example": "Penjelasannya cukup jelas, jadi aku langsung ngerti maksudnya.",
+    "example_cn": "解释得挺清楚，所以我马上明白他的意思了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-05 08:00",
-    "last_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-05"
@@ -4991,17 +5020,19 @@ window.DAILY_VOCAB_DB = [
     "cn": "几乎；差点",
     "en": "almost; nearly",
     "root": "hampir",
-    "example": "Aku hampir lupa kabarin tim soal perubahan jadwal.",
-    "example_cn": "我差点忘了告诉团队日程有变化。",
+    "example": "Aku hampir salah masuk ruangan karena nomor pintunya mirip.",
+    "example_cn": "我差点走错房间，因为门牌号很像。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-05 08:00",
-    "last_seen": "2026-09-05 08:00",
+    "last_seen": "2026-09-05 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-05"
@@ -5139,5 +5170,49 @@ window.DAILY_VOCAB_DB = [
       "2026-09-05"
     ],
     "root_cn": "促销；推广"
+  },
+  {
+    "word": "nggak sengaja",
+    "cn": "不是故意的；不小心",
+    "en": "accidentally; unintentionally",
+    "root": "sengaja",
+    "root_cn": "故意；有意",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 19:00",
+    "last_seen": "2026-09-05 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ],
+    "example": "Aku nggak sengaja salah pencet, jadi pesannya kehapus.",
+    "example_cn": "我不小心按错了，所以消息被删掉了。"
+  },
+  {
+    "word": "nggak heran",
+    "cn": "难怪；不奇怪",
+    "en": "no wonder; not surprising",
+    "root": "heran",
+    "root_cn": "惊讶；觉得奇怪",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-05 19:00",
+    "last_seen": "2026-09-05 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-05"
+    ],
+    "example": "Pantes dia capek terus. Nggak heran sih, tiap hari pulangnya malam.",
+    "example_cn": "难怪他总是累。也不奇怪，他每天都很晚回去。"
   }
 ];
