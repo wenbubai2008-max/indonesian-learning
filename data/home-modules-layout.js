@@ -53,15 +53,103 @@
       #home .homeModQuick{background:#fffaf3!important;border-color:#f0e2c9!important;border-top:3px solid #d6a653!important}
       #home .homeModWeak{background:#fff8f8!important;border-color:#f0dcdc!important;border-top:3px solid #d98b8b!important}
       #home .homeModAffix{background:#faf8ff!important;border-color:#e5ddf4!important;border-top:3px solid #9b83ca!important}
+      .siteNav{display:flex;align-items:center;gap:8px;margin:0 0 12px;min-height:38px}
+      .siteNav button{appearance:none;border:1px solid #dfe4ee;background:#fff;color:#3157d5;border-radius:10px;padding:8px 12px;font-weight:750;cursor:pointer;box-shadow:0 1px 2px rgba(23,32,51,.03)}
+      .siteNav button:hover{background:#f5f7ff;border-color:#b9c7f1}
+      .siteNav button:active{transform:translateY(1px)}
+      .siteNav .navHome{color:#4b5563}
+      .page>.back{display:none!important}
       @media(max-width:1050px){#home .modules.homeModulesCompact{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
-      @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}}
+      @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}}
       @media(max-width:430px){#home .modules.homeModulesCompact{grid-template-columns:1fr!important}#home .homeModulesCompact .module{min-height:0!important}}
     `;
     document.head.appendChild(s);
   }
 
-  style();
-  apply();
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){apply();setTimeout(apply,180);},{once:true});
-  else setTimeout(apply,60);
+  function currentPage(){
+    const el=document.querySelector('.page.active');
+    return el?el.id:'home';
+  }
+
+  function renderPage(id){
+    const el=document.getElementById(id)||document.getElementById('home');
+    if(!el) return;
+    document.querySelectorAll('.page').forEach(function(x){x.classList.remove('active');});
+    el.classList.add('active');
+    const actual=el.id;
+    const sb=document.getElementById('statsBar');
+    if(sb) sb.style.display=actual==='home'?'none':'grid';
+    window.scrollTo(0,0);
+    if(actual==='calendar'&&typeof window.renderCalendar==='function')window.renderCalendar();
+    if(actual==='review'&&typeof window.renderReview==='function')window.renderReview();
+  }
+
+  function installHistoryNavigation(){
+    if(window.__indoHistoryNavInstalled||typeof window.go!=='function')return;
+    window.__indoHistoryNavInstalled=true;
+
+    const initial=currentPage();
+    const hashPage=(location.hash||'').replace(/^#/,'');
+    const wanted=document.getElementById(hashPage)&&document.getElementById(hashPage).classList.contains('page')?hashPage:initial;
+    const initialState={__indoSite:true,page:wanted,depth:0};
+    history.replaceState(initialState,'',wanted==='home'?location.pathname+location.search:'#'+wanted);
+    if(wanted!==initial)renderPage(wanted);
+
+    window.go=function(id,options){
+      options=options||{};
+      if(!document.getElementById(id))id='home';
+      const from=currentPage();
+      if(from===id){
+        renderPage(id);
+        return;
+      }
+      renderPage(id);
+      if(options.history===false)return;
+      const prevDepth=(history.state&&history.state.__indoSite)?Number(history.state.depth||0):0;
+      history.pushState({__indoSite:true,page:id,depth:prevDepth+1},'',id==='home'?location.pathname+location.search:'#'+id);
+    };
+
+    window.siteBack=function(){
+      const st=history.state;
+      if(st&&st.__indoSite&&Number(st.depth||0)>0){
+        history.back();
+      }else if(currentPage()!=='home'){
+        window.go('home');
+      }
+    };
+
+    window.addEventListener('popstate',function(e){
+      const st=e.state;
+      if(st&&st.__indoSite&&st.page){
+        renderPage(st.page);
+      }else{
+        const hp=(location.hash||'').replace(/^#/,'');
+        renderPage(document.getElementById(hp)?hp:'home');
+      }
+    });
+  }
+
+  function installNavBars(){
+    document.querySelectorAll('.page').forEach(function(page){
+      if(page.id==='home'||page.querySelector(':scope > .siteNav'))return;
+      const nav=document.createElement('div');
+      nav.className='siteNav';
+      nav.setAttribute('aria-label','页面导航');
+      nav.innerHTML='<button type="button" class="navBack" title="返回上一页">← 上一页</button><button type="button" class="navHome" title="返回首页">⌂ 首页</button>';
+      nav.querySelector('.navBack').addEventListener('click',function(){window.siteBack?window.siteBack():window.go('home');});
+      nav.querySelector('.navHome').addEventListener('click',function(){window.go('home');});
+      page.insertBefore(nav,page.firstChild);
+    });
+  }
+
+  function boot(){
+    style();
+    apply();
+    installHistoryNavigation();
+    installNavBars();
+    setTimeout(function(){apply();installNavBars();},180);
+  }
+
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});
+  else setTimeout(boot,0);
 })();
