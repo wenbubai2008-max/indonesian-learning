@@ -5214,5 +5214,215 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Pantes dia capek terus. Nggak heran sih, tiap hari pulangnya malam.",
     "example_cn": "难怪他总是累。也不奇怪，他每天都很晚回去。"
+  },
+  {
+    "word": "bayar",
+    "cn": "支付；付款",
+    "en": "pay; make a payment",
+    "root": "bayar",
+    "example": "Nanti makan siangnya aku bayar dulu, kamu transfer belakangan aja.",
+    "example_cn": "等会儿午饭我先付，你之后再转账给我就行。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ]
+  },
+  {
+    "word": "murah",
+    "cn": "便宜；价格低",
+    "en": "cheap; inexpensive",
+    "root": "murah",
+    "example": "Tempat ini lumayan murah buat makan siang dekat kantor.",
+    "example_cn": "在办公室附近吃午饭的话，这家算挺便宜的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ]
+  },
+  {
+    "word": "mahal",
+    "cn": "贵；价格高",
+    "en": "expensive; costly",
+    "root": "mahal",
+    "example": "Kopinya enak, cuma menurutku agak mahal.",
+    "example_cn": "咖啡挺好喝，只是我觉得有点贵。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ]
+  },
+  {
+    "word": "tawar",
+    "cn": "讨价还价；讲价",
+    "en": "bargain; negotiate a price",
+    "root": "tawar",
+    "example": "Kalau belanja di pasar, biasanya masih bisa tawar sedikit.",
+    "example_cn": "如果在市场买东西，通常还能稍微讲一下价。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ]
+  },
+  {
+    "word": "bungkus",
+    "cn": "打包；包装；包起来",
+    "en": "wrap; pack; takeaway",
+    "root": "bungkus",
+    "example": "Kalau nggak habis, bungkus aja buat nanti sore.",
+    "example_cn": "如果吃不完，就打包留到下午吧。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ]
+  },
+  {
+    "word": "porsi",
+    "cn": "份量；一份的量",
+    "en": "portion; serving",
+    "root": "porsi",
+    "example": "Porsinya cukup besar, jadi satu aja kayaknya cukup.",
+    "example_cn": "份量挺大的，所以一份感觉就够了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ]
+  },
+  {
+    "word": "rasa",
+    "cn": "味道；感觉；感受",
+    "en": "taste; feeling; sensation",
+    "root": "rasa",
+    "example": "Rasanya enak, tapi buat aku sedikit terlalu manis.",
+    "example_cn": "味道不错，不过对我来说有点太甜。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ]
+  },
+  {
+    "word": "naik",
+    "cn": "上；乘坐；上涨",
+    "en": "go up; ride; increase",
+    "root": "naik",
+    "example": "Kalau lagi macet, aku lebih suka naik MRT.",
+    "example_cn": "如果堵车，我更喜欢坐地铁。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ]
+  },
+  {
+    "word": "turun",
+    "cn": "下；下车；下降",
+    "en": "go down; get off; decrease",
+    "root": "turun",
+    "example": "Aku turun di stasiun berikutnya, terus jalan kaki ke kantor.",
+    "example_cn": "我下一站下车，然后走路去办公室。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ]
+  },
+  {
+    "word": "sampai",
+    "cn": "到达；直到；到……为止",
+    "en": "arrive; until; up to",
+    "root": "sampai",
+    "example": "Kalau nggak macet, aku sampai kantor sekitar jam sembilan.",
+    "example_cn": "如果不堵车，我大概九点到办公室。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ]
   }
 ];
