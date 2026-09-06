@@ -1,0 +1,178 @@
+{
+  "date": "2026-09-06",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 16,
+  "title": "2026年9月6日｜Day 16",
+  "vocab": [
+    {
+      "order": 151,
+      "word": "bayar",
+      "display": "bayar",
+      "audio_text": "bayar",
+      "cn": "支付；付款",
+      "en": "pay; make a payment",
+      "root": "bayar",
+      "root_cn": "支付；付款",
+      "formation": "基础高频词；常见词族：membayar（支付某项费用）、pembayaran（付款；支付）。日常口语里直接说 bayar 很自然。",
+      "example": "Nanti makan siangnya aku bayar dulu, kamu transfer belakangan aja.",
+      "example_cn": "等会儿午饭我先付，你之后再转账给我就行。",
+      "synonym_note": "bayar 强调付款这个动作；transfer 只是一种具体的转账方式。"
+    },
+    {
+      "order": 152,
+      "word": "murah",
+      "display": "murah",
+      "audio_text": "murah",
+      "cn": "便宜；价格低",
+      "en": "cheap; inexpensive",
+      "root": "murah",
+      "root_cn": "便宜；价格低",
+      "formation": "基础高频形容词；常见 lebih murah（更便宜）、murah banget（特别便宜）。",
+      "example": "Tempat ini lumayan murah buat makan siang dekat kantor.",
+      "example_cn": "在办公室附近吃午饭的话，这家算挺便宜的。",
+      "synonym_note": "hemat = 节省、会省；murah = 东西本身价格便宜。"
+    },
+    {
+      "order": 153,
+      "word": "mahal",
+      "display": "mahal",
+      "audio_text": "mahal",
+      "cn": "贵；价格高",
+      "en": "expensive; costly",
+      "root": "mahal",
+      "root_cn": "贵；价格高",
+      "formation": "基础高频形容词；常说 terlalu mahal（太贵）、agak mahal（有点贵）。",
+      "example": "Kopinya enak, cuma menurutku agak mahal.",
+      "example_cn": "咖啡挺好喝，只是我觉得有点贵。",
+      "synonym_note": "mahal 和 murah 是最常用的一对价格反义词：贵 / 便宜。"
+    },
+    {
+      "order": 154,
+      "word": "tawar",
+      "display": "tawar",
+      "audio_text": "tawar",
+      "cn": "讨价还价；讲价",
+      "en": "bargain; negotiate a price",
+      "root": "tawar",
+      "root_cn": "讲价；还价",
+      "formation": "基础词；购物里常说 boleh tawar?（可以讲价吗？）。词族：menawar（出价；还价）。",
+      "example": "Kalau belanja di pasar, biasanya masih bisa tawar sedikit.",
+      "example_cn": "如果在市场买东西，通常还能稍微讲一下价。",
+      "synonym_note": "nego 是 negotiation 的口语缩写，也很常见；tawar 更直接指价格上的讲价。"
+    },
+    {
+      "order": 155,
+      "word": "bungkus",
+      "display": "bungkus",
+      "audio_text": "bungkus",
+      "cn": "打包；包装；包起来",
+      "en": "wrap; pack; takeaway",
+      "root": "bungkus",
+      "root_cn": "包；包装；打包",
+      "formation": "基础高频词；餐饮里 Bungkus ya 很自然，表示‘帮我打包/带走’。词族：membungkus（把……包起来）。",
+      "example": "Kalau nggak habis, bungkus aja buat nanti sore.",
+      "example_cn": "如果吃不完，就打包留到下午吧。",
+      "synonym_note": "take away 在部分店也听得到，但日常印尼语里 bungkus 更自然、更普遍。"
+    },
+    {
+      "order": 156,
+      "word": "porsi",
+      "display": "porsi",
+      "audio_text": "porsi",
+      "cn": "份量；一份的量",
+      "en": "portion; serving",
+      "root": "porsi",
+      "root_cn": "份量；一份",
+      "formation": "高频外来词；常见 satu porsi（一份）、porsinya besar（份量大）。",
+      "example": "Porsinya cukup besar, jadi satu aja kayaknya cukup.",
+      "example_cn": "份量挺大的，所以一份感觉就够了。",
+      "synonym_note": "jumlah = 数量总数；porsi 更具体指食物或分配的一份量。"
+    },
+    {
+      "order": 157,
+      "word": "rasa",
+      "display": "rasa",
+      "audio_text": "rasa",
+      "cn": "味道；感觉；感受",
+      "en": "taste; feeling; sensation",
+      "root": "rasa",
+      "root_cn": "味道；感觉；感受",
+      "formation": "基础高频词；可说 rasanya enak（味道很好），也可表示感受。词族：merasa（感觉；觉得）、perasaan（感受；情绪）。",
+      "example": "Rasanya enak, tapi buat aku sedikit terlalu manis.",
+      "example_cn": "味道不错，不过对我来说有点太甜。",
+      "synonym_note": "ngerasa / merasa 更像动词‘觉得、感觉到’；rasa 可直接指味道或感觉这个名词。"
+    },
+    {
+      "order": 158,
+      "word": "naik",
+      "display": "naik",
+      "audio_text": "naik",
+      "cn": "上；乘坐；上涨",
+      "en": "go up; ride; increase",
+      "root": "naik",
+      "root_cn": "上；上升；乘坐",
+      "formation": "基础高频词；交通里 naik MRT / naik motor = 坐地铁 / 骑摩托；价格里 harga naik = 涨价。",
+      "example": "Kalau lagi macet, aku lebih suka naik MRT.",
+      "example_cn": "如果堵车，我更喜欢坐地铁。",
+      "synonym_note": "naik 强调上车/乘坐或上升；pergi 只表示去，不说明交通方式。"
+    },
+    {
+      "order": 159,
+      "word": "turun",
+      "display": "turun",
+      "audio_text": "turun",
+      "cn": "下；下车；下降",
+      "en": "go down; get off; decrease",
+      "root": "turun",
+      "root_cn": "下；下降；下车",
+      "formation": "基础高频词；交通里 turun di sini（在这里下车），价格里 harga turun（价格下降）。",
+      "example": "Aku turun di stasiun berikutnya, terus jalan kaki ke kantor.",
+      "example_cn": "我下一站下车，然后走路去办公室。",
+      "synonym_note": "turun 和 naik 是高频反义词：下 / 上；下车 / 上车；下降 / 上涨。"
+    },
+    {
+      "order": 160,
+      "word": "sampai",
+      "display": "sampai",
+      "audio_text": "sampai",
+      "cn": "到达；直到；到……为止",
+      "en": "arrive; until; up to",
+      "root": "sampai",
+      "root_cn": "到达；直到",
+      "formation": "基础超高频词；sampai kantor（到办公室）、sampai jam lima（直到五点）。",
+      "example": "Kalau nggak macet, aku sampai kantor sekitar jam sembilan.",
+      "example_cn": "如果不堵车，我大概九点到办公室。",
+      "synonym_note": "datang = 来、到场；sampai 更强调‘抵达目的地/到达那个时间点’。"
+    }
+  ],
+  "sentences": [
+    {"id": "Kalau macet, mending naik MRT terus turun dekat kantor.", "cn": "如果堵车，最好坐地铁，然后在办公室附近下车。"},
+    {"id": "Aku sampai sekitar jam sembilan, tapi meeting-nya ternyata ditunda.", "cn": "我大概九点到，不过会议结果被推迟了。"},
+    {"id": "Tempat makan ini murah, porsinya juga cukup besar.", "cn": "这家吃饭的地方很便宜，份量也挺大。"},
+    {"id": "Kalau harganya terlalu mahal, coba tawar sedikit dulu.", "cn": "如果价格太贵，先试着稍微讲一下价。"},
+    {"id": "Aku hampir nggak habis, jadi sisanya aku bungkus aja.", "cn": "我差点没吃完，所以剩下的我就打包了。"}
+  ],
+  "reading": {
+    "title": "Meeting Ditunda, Mampir Makan Dulu",
+    "text": "Pagi ini aku ada meeting di luar kantor. Karena jalanan macet, aku pilih naik MRT dan turun di stasiun dekat lokasi. Aku sampai sekitar jam sembilan lewat sedikit. Ternyata meeting-nya ditunda setengah jam, jadi aku mampir makan dulu. Harga makanannya nggak mahal, malah cukup murah. Aku pesan ayam, tapi porsinya kebanyakan buat sarapan, jadi setengahnya aku minta bungkus. Rasanya enak dan nggak terlalu pedas. Waktu bayar, saldo e-wallet-ku hampir habis, jadi aku pakai kartu. Di depan warung ada toko kecil; temanku sempat tawar harga charger, tapi akhirnya nggak jadi beli. Pantés dia bilang mau hemat hari ini.",
+    "cn": "今天早上我在公司外面有个会议。因为路上堵车，我选择坐地铁，并在目的地附近的车站下车。我大概九点多一点到。结果会议推迟了半小时，所以我先顺路去吃点东西。那里的饭不贵，反而挺便宜。我点了鸡肉，但早餐来说份量有点太大，所以让店家把一半打包。味道不错，也不太辣。付款时我的电子钱包余额快没了，所以改用银行卡。餐馆前面有一家小店，朋友还试着跟老板讲了下充电器的价格，不过最后没买。难怪他说今天想省钱。",
+    "vocab": ["macet", "naik", "turun", "sampai", "sekitar", "tunda", "mampir", "mahal", "murah", "porsi", "kebanyakan", "bungkus", "rasa", "bayar", "saldo", "hampir", "sempat", "tawar", "pantes", "hemat"]
+  },
+  "quiz": [
+    {"question": "“Aku turun di stasiun berikutnya.” 最自然的意思是：", "options": ["我在下一站上车", "我在下一站下车", "我走到下一站"], "answer_index": 1, "explain": "turun 在交通场景里最常表示下车；naik 则表示上车、乘坐。"},
+    {"question": "murah 和 hemat 最自然的区别是：", "options": ["murah 是东西价格便宜；hemat 是节省、少花钱", "murah 是讲价；hemat 是付款", "两个词完全一样"], "answer_index": 0, "explain": "murah 描述价格低；hemat 描述节省资源或花费的行为/状态。"},
+    {"question": "复习：看到原因以后说‘难怪今天这么堵’，最自然的是：", "options": ["Pantés hari ini macet banget.", "Tunda hari ini macet banget.", "Bungkus hari ini macet banget."], "answer_index": 0, "explain": "pantes（学习页可显示 pantés）= 难怪、怪不得，是之前学过的高频口语。"}
+  ],
+  "output": {
+    "task": "用自然口语表达：‘我大概九点到。会议推迟了，所以我先去吃点东西。那家不贵，份量也很大。吃不完的话我会打包。付款的时候电子钱包余额快没了，所以我用银行卡。’",
+    "reference_answer": "Aku sampai sekitar jam sembilan. Meeting-nya ditunda, jadi aku makan dulu. Tempatnya nggak mahal, porsinya juga besar. Kalau nggak habis, nanti aku bungkus. Pas bayar, saldo e-wallet-ku hampir habis, jadi aku pakai kartu.",
+    "reference_cn": "我大概九点到。会议推迟了，所以我先去吃点东西。那家不贵，份量也很大。吃不完的话我会打包。付款的时候电子钱包余额快没了，所以我用银行卡。"
+  },
+  "review": [
+    "交通链一起记：naik = 上车/乘坐，turun = 下车，sampai = 到达；放进雅加达通勤场景最容易形成条件反射。",
+    "价格与消费：murah = 价格便宜，mahal = 贵，tawar = 讲价，bayar = 付款；不要和 hemat（节省）混在一起。",
+    "轮换复习旧词：hampir / sekitar（近期）、tunda（约3天）、macet / saldo（约1周）、pantes / mampir（较早），并继续放进真实句子和阅读。"
+  ]
+}
