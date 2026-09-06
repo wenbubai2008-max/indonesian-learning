@@ -1,0 +1,59 @@
+name: Append daily vocab 2026-09-06
+on:
+  push:
+    paths:
+      - '.github/workflows/append-daily-vocab-2026-09-06.yml'
+permissions:
+  contents: write
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append lesson vocab without duplicates
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          db_path = Path('data/daily-vocab-data.js')
+          lesson_path = Path('data/daily/2026-09-06-am.json')
+          raw = db_path.read_text(encoding='utf-8').strip()
+          prefix = 'window.DAILY_VOCAB_DB = '
+          if not raw.startswith(prefix) or not raw.endswith(';'):
+              raise SystemExit('Unexpected DAILY_VOCAB_DB format')
+          db = json.loads(raw[len(prefix):-1])
+          lesson = json.loads(lesson_path.read_text(encoding='utf-8'))
+          seen = {str(x.get('word','')).lower() for x in db}
+          added = 0
+          for v in lesson.get('vocab', []):
+              key = str(v.get('word','')).lower()
+              if not key or key in seen:
+                  continue
+              db.append({
+                  'word': v.get('word',''),
+                  'cn': v.get('cn',''),
+                  'en': v.get('en',''),
+                  'root': v.get('root',''),
+                  'root_cn': v.get('root_cn',''),
+                  'example': v.get('example',''),
+                  'example_cn': v.get('example_cn',''),
+                  'categories': ['每日学习','08:00'],
+                  'times_seen': 1,
+                  'first_seen': '2026-09-06 08:00',
+                  'last_seen': '2026-09-06 08:00',
+                  'sessions': ['08:00'],
+                  'dates': ['2026-09-06']
+              })
+              seen.add(key)
+              added += 1
+          db_path.write_text(prefix + json.dumps(db, ensure_ascii=False, indent=2) + ';\n', encoding='utf-8')
+          print('added', added)
+          PY
+      - name: Commit updated daily vocab DB
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily-vocab-data.js
+          git commit -m "Append 2026-09-06 AM vocab" || exit 0
+          git push
