@@ -1,0 +1,302 @@
+{
+  "date": "2026-09-06",
+  "session": "pm",
+  "time": "19:00",
+  "level": "A2+ → B1",
+  "day": 16,
+  "title": "2026年9月6日｜19:00 晚间学习｜做选择时说得更自然",
+  "duration": "45–60分钟",
+  "mode": "高频功能词块 + 雅加达口语 + 主动调用",
+  "vocab": [
+    {
+      "word": "daripada",
+      "display": "daripada",
+      "audio_text": "daripada",
+      "cn": "与其……不如；比起",
+      "en": "rather than; than",
+      "root": "daripada",
+      "root_cn": "比起；与其",
+      "formation": "固定高频连接词；最值得整块记：daripada + 动作，mending + 动作。",
+      "example": "Daripada muter jauh, mending naik MRT aja.",
+      "example_cn": "与其绕远路，不如直接坐地铁。",
+      "usage_note": "日常做选择时非常高频；口语里常和 mending 搭配。"
+    },
+    {
+      "word": "ujung-ujungnya",
+      "display": "ujung-ujungnya",
+      "audio_text": "ujung-ujungnya",
+      "cn": "到头来；结果最后还是",
+      "en": "in the end; eventually anyway",
+      "root": "ujung",
+      "root_cn": "末端；结尾",
+      "formation": "ujung 重叠 + -nya → ujung-ujungnya；口语固定词块，强调绕了一圈后最后还是那个结果。",
+      "example": "Kalau pilih yang terlalu murah, ujung-ujungnya malah beli lagi.",
+      "example_cn": "如果选太便宜的，到头来反而还得再买一次。",
+      "usage_note": "比 akhirnya 多一层‘折腾半天最后还是……’的感觉。"
+    },
+    {
+      "word": "kepake",
+      "display": "kepake",
+      "audio_text": "kepake",
+      "cn": "用得上；派得上用场",
+      "en": "get used; come in handy",
+      "root": "pakai",
+      "root_cn": "使用；穿戴",
+      "formation": "pakai → kepake（雅加达高频口语）；较标准可说 terpakai。",
+      "example": "Kalau barangnya sering kepake, mahal sedikit masih oke.",
+      "example_cn": "如果这个东西经常用得上，贵一点也还可以。",
+      "usage_note": "买东西、工作工具、生活用品都很实用；整块记 sering kepake / jarang kepake。"
+    },
+    {
+      "word": "nggak worth it",
+      "display": "nggak worth it",
+      "audio_text": "nggak worth it",
+      "cn": "不划算；不值得",
+      "en": "not worth it",
+      "root": "worth it",
+      "root_cn": "值得；划算",
+      "formation": "印尼都市口语常直接混用英语 worth it；否定常说 nggak worth it。较标准可说 tidak sepadan。",
+      "example": "Kalau ongkirnya lebih mahal dari barangnya, menurutku nggak worth it.",
+      "example_cn": "如果运费比东西本身还贵，我觉得就不划算了。",
+      "usage_note": "雅加达聊天很自然；正式文本更适合 tidak sepadan / tidak sebanding。"
+    },
+    {
+      "word": "seenggaknya",
+      "display": "seenggaknya",
+      "audio_text": "seenggaknya",
+      "cn": "至少；起码",
+      "en": "at least",
+      "root": "enggak",
+      "root_cn": "不；不是",
+      "formation": "口语固定形式 seenggaknya；标准形式 setidaknya。",
+      "example": "Kalau belum yakin, seenggaknya bandingin dua tempat dulu.",
+      "example_cn": "如果还不确定，至少先比较两家。",
+      "usage_note": "聊天里很常见；工作正式表达优先 setidaknya。"
+    },
+    {
+      "word": "sekadar",
+      "display": "sekadar",
+      "audio_text": "sekadar",
+      "cn": "只是；仅仅；不过是",
+      "en": "merely; just; simply",
+      "root": "kadar",
+      "root_cn": "程度；分量",
+      "formation": "se- + kadar → sekadar；现代常用义为‘仅仅、只是’。",
+      "example": "Aku cuma nanya sekadar buat bandingin harga, belum tentu beli.",
+      "example_cn": "我只是问问来比较价格，不一定会买。",
+      "usage_note": "比 cuma 更适合表达‘只是出于某个目的’，工作和聊天都能用。"
+    },
+    {
+      "word": "sayang kalau",
+      "display": "sayang kalau",
+      "audio_text": "sayang kalau",
+      "cn": "如果……就可惜了",
+      "en": "it would be a shame if",
+      "root": "sayang",
+      "root_cn": "可惜；珍惜；亲爱的",
+      "formation": "sayang + kalau 构成高频判断词块；这里 sayang 不是‘亲爱的’，而是‘可惜’。",
+      "example": "Sayang kalau beli mahal tapi akhirnya jarang kepake.",
+      "example_cn": "如果买得很贵，结果却很少用，那就可惜了。",
+      "usage_note": "非常适合表达成本、机会和浪费。"
+    },
+    {
+      "word": "kebuang",
+      "display": "kebuang",
+      "audio_text": "kebuang",
+      "cn": "被白白浪费掉",
+      "en": "go to waste; be wasted",
+      "root": "buang",
+      "root_cn": "扔掉；浪费",
+      "formation": "buang → kebuang（口语）；较标准 terbuang。",
+      "example": "Aku bandingin dulu biar uangnya nggak kebuang buat barang yang nggak perlu.",
+      "example_cn": "我先比较一下，免得钱浪费在不需要的东西上。",
+      "usage_note": "共享陌生词库中的弱项词；今晚继续放进真实消费场景里调用。"
+    },
+    {
+      "word": "tawar",
+      "display": "tawar",
+      "audio_text": "tawar",
+      "cn": "讲价；还价",
+      "en": "bargain; negotiate a price",
+      "root": "tawar",
+      "root_cn": "讲价；还价",
+      "formation": "基础词；词族：menawar（出价；还价）。",
+      "example": "Kalau harganya masih bisa tawar, aku coba tanya dulu sebelum beli.",
+      "example_cn": "如果价格还能讲，我会先问问再买。",
+      "usage_note": "今天08:00自然复现，不作为真正新词。"
+    },
+    {
+      "word": "bungkus",
+      "display": "bungkus",
+      "audio_text": "bungkus",
+      "cn": "打包；包起来",
+      "en": "wrap; pack; takeaway",
+      "root": "bungkus",
+      "root_cn": "包；包装；打包",
+      "formation": "基础高频词；餐饮里 Bungkus aja / Bungkus ya 很自然。",
+      "example": "Kalau porsinya kebanyakan, sisanya bungkus aja daripada kebuang.",
+      "example_cn": "如果份量太多，剩下的就打包吧，总比浪费掉好。",
+      "usage_note": "今天08:00自然复现，并和 daripada、kebuang 组合使用。"
+    }
+  ],
+  "morphology": [
+    {
+      "form": "ujung-ujungnya",
+      "root": "ujung",
+      "root_cn": "末端；结尾",
+      "formation": "ujung + 重叠 + -nya → ujung-ujungnya",
+      "explain_cn": "从‘最后的结尾’引申成口语里的‘到头来、折腾半天最后还是’。",
+      "example": "Ujung-ujungnya kita balik ke pilihan pertama.",
+      "example_cn": "到头来我们还是回到了第一个选择。"
+    },
+    {
+      "form": "kepake",
+      "root": "pakai",
+      "root_cn": "使用；穿戴",
+      "formation": "pakai → kepake（口语）；标准 terpakai",
+      "explain_cn": "表示某个东西实际被使用、派得上用场。",
+      "example": "Barang ini ternyata sering kepake.",
+      "example_cn": "这个东西结果还挺经常用得上的。"
+    },
+    {
+      "form": "seenggaknya",
+      "root": "enggak",
+      "root_cn": "不；不是",
+      "formation": "口语固定形式 seenggaknya；标准 setidaknya",
+      "explain_cn": "口语中表示最低限度：至少、起码。",
+      "example": "Seenggaknya kasih kabar dulu.",
+      "example_cn": "至少先说一声。"
+    },
+    {
+      "form": "sekadar",
+      "root": "kadar",
+      "root_cn": "程度；分量",
+      "formation": "se- + kadar → sekadar",
+      "explain_cn": "表示范围被限制在某个程度，也就是‘仅仅、只是’。",
+      "example": "Ini sekadar saran, keputusan tetap di kamu.",
+      "example_cn": "这只是个建议，决定还是在你。"
+    },
+    {
+      "form": "kebuang",
+      "root": "buang",
+      "root_cn": "扔掉；浪费",
+      "formation": "buang → kebuang（口语）；标准 terbuang",
+      "explain_cn": "时间、钱、机会或物品白白浪费掉。",
+      "example": "Jangan sampai uangnya kebuang percuma.",
+      "example_cn": "别让钱白白浪费掉。"
+    }
+  ],
+  "rewrite": [
+    {
+      "task": "中文→印尼语：与其绕远路，不如直接坐地铁。",
+      "reference_answer": "Daripada muter jauh, mending naik MRT aja.",
+      "reference_cn": "与其绕远路，不如直接坐地铁。"
+    },
+    {
+      "task": "中文→印尼语：如果这个东西经常用得上，贵一点也没关系。",
+      "reference_answer": "Kalau barangnya sering kepake, mahal sedikit nggak apa-apa.",
+      "reference_cn": "如果这个东西经常用得上，贵一点也没关系。"
+    },
+    {
+      "task": "情境造句：运费比商品还贵，你想说‘这样不划算’。",
+      "reference_answer": "Kalau ongkirnya lebih mahal dari barangnya, nggak worth it sih.",
+      "reference_cn": "如果运费比商品还贵，这样确实不划算。"
+    },
+    {
+      "task": "中文→印尼语：如果还不确定，至少先比较两家。",
+      "reference_answer": "Kalau belum yakin, seenggaknya bandingin dua tempat dulu.",
+      "reference_cn": "如果还不确定，至少先比较两家。"
+    },
+    {
+      "task": "改写成自然口语：Kalau makanannya tidak habis, lebih baik dibawa pulang agar tidak terbuang.",
+      "reference_answer": "Kalau nggak habis, bungkus aja daripada kebuang.",
+      "reference_cn": "如果吃不完，就打包吧，总比浪费掉好。"
+    }
+  ],
+  "reading": {
+    "title": "Beli Murah Belum Tentu Hemat",
+    "text": "Kemarin aku mau beli charger baru. Awalnya aku cari yang paling murah, tapi setelah dibandingin, selisih harganya ternyata nggak jauh. Yang murah garansinya pendek dan review-nya biasa aja. Aku mikir, daripada beli murah terus ujung-ujungnya rusak dan beli lagi, mending pilih yang agak bagus. Seenggaknya barangnya lebih sering kepake dan nggak bikin repot. Aku juga sekadar tanya apakah harganya masih bisa tawar. Penjualnya kasih sedikit diskon. Menurutku jadi lebih worth it. Sayang kalau uang kebuang cuma karena dari awal fokus ke harga termurah tanpa mikirin kualitas.",
+    "cn": "昨天我想买一个新充电器。一开始我找最便宜的，但比较之后发现价差其实不大。便宜的保修期短，评价也一般。我想，与其买便宜的，最后坏了还得再买，不如选一个稍微好一点的。至少东西更能经常派上用场，也不会那么麻烦。我还只是顺便问了问价格能不能再讲，卖家给了一点折扣。我觉得这样反而更划算。要是一开始只盯着最低价、不考虑质量，最后把钱浪费掉就可惜了。",
+    "vocab": ["daripada", "ujung-ujungnya", "kepake", "seenggaknya", "sekadar", "tawar", "worth it", "sayang kalau", "kebuang"],
+    "questions": [
+      {
+        "task": "主动回答：为什么他最后没有选最便宜的充电器？",
+        "reference_answer": "Karena selisih harganya nggak jauh, tapi yang murah garansinya pendek dan review-nya biasa aja.",
+        "reference_cn": "因为价差不大，但便宜的保修期短，而且评价一般。"
+      },
+      {
+        "task": "主动回答：他为什么觉得最后的选择更划算？",
+        "reference_answer": "Karena barangnya lebih bagus, lebih sering kepake, dan penjualnya juga kasih sedikit diskon.",
+        "reference_cn": "因为东西更好、更常用得上，而且卖家还给了一点折扣。"
+      }
+    ]
+  },
+  "dialogue": {
+    "title": "雅加达商场里选东西",
+    "lines": [
+      {"speaker": "A", "id": "Yang ini lebih murah, ambil ini aja?", "cn": "这个更便宜，就拿这个？"},
+      {"speaker": "B", "id": "Murah sih, tapi kayaknya jarang kepake deh.", "cn": "是便宜，不过感觉不太用得上。"},
+      {"speaker": "A", "id": "Terus yang satunya?", "cn": "那另一个呢？"},
+      {"speaker": "B", "id": "Lebih mahal sedikit, tapi kualitasnya lebih bagus. Menurutku lebih worth it.", "cn": "贵一点，不过质量更好。我觉得更划算。"},
+      {"speaker": "A", "id": "Masih bisa tawar nggak ya?", "cn": "不知道还能不能讲价？"},
+      {"speaker": "B", "id": "Coba aja. Seenggaknya tanya dulu.", "cn": "试试呗，至少先问一下。"},
+      {"speaker": "A", "id": "Iya juga. Daripada beli murah terus ujung-ujungnya beli lagi.", "cn": "也是。总比买便宜的，最后还得再买一次强。"}
+    ]
+  },
+  "daily_test": {
+    "title": "当日小测 · 5–8分钟",
+    "items": [
+      {
+        "type": "choice",
+        "prompt": "‘到头来还是得再买一次’最适合用哪个词块？",
+        "options": ["sekadar", "ujung-ujungnya", "seenggaknya"],
+        "answer_index": 1,
+        "explain": "ujung-ujungnya 强调绕了一圈，最后还是落到同一个结果。"
+      },
+      {
+        "type": "choice",
+        "prompt": "‘这个东西经常派得上用场’最自然的是：",
+        "options": ["Barang ini sering kepake.", "Barang ini sering kebuang.", "Barang ini sering tawar."],
+        "answer_index": 0,
+        "explain": "kepake = 用得上、实际会被使用；kebuang = 被浪费掉。"
+      },
+      {
+        "type": "choice",
+        "prompt": "‘至少先问一下’最自然的雅加达口语是：",
+        "options": ["Sekadar tanya dulu.", "Seenggaknya tanya dulu.", "Ujung-ujungnya tanya dulu."],
+        "answer_index": 1,
+        "explain": "seenggaknya = 至少、起码；标准形式 setidaknya。"
+      },
+      {
+        "type": "fill",
+        "prompt": "补一个词块：Daripada beli murah terus rusak, ______ pilih yang agak bagus.",
+        "answer": "mending",
+        "answer_cn": "与其买便宜的又坏掉，不如选一个稍微好一点的。"
+      },
+      {
+        "type": "fill",
+        "prompt": "补一个词块：Kalau ongkirnya lebih mahal dari barangnya, ______.",
+        "answer": "nggak worth it",
+        "answer_cn": "如果运费比商品还贵，那就不划算。"
+      },
+      {
+        "type": "order",
+        "prompt": "排序成自然句子：‘如果吃不完，就打包吧，总比浪费掉好。’",
+        "tokens": ["daripada", "kalau nggak habis", "bungkus aja", "kebuang"],
+        "answer": "Kalau nggak habis, bungkus aja daripada kebuang.",
+        "answer_cn": "如果吃不完，就打包吧，总比浪费掉好。"
+      }
+    ],
+    "self_check": {
+      "prompt": "今天这些内容你感觉怎么样？",
+      "options": ["大部分能快速认出", "一半左右需要想一下", "很多还会卡"]
+    }
+  },
+  "review": [
+    "5分钟复盘：先不看答案，回忆 daripada... mending... 的完整结构。",
+    "说出 ujung-ujungnya 和 akhirnya 的区别：前者更强调折腾后最后还是那个结果。",
+    "把 kepake / kebuang 成对复习：用得上 vs 被浪费掉。",
+    "快速造两个短句：一个用 seenggaknya，一个用 nggak worth it。",
+    "回看今天08:00的 tawar、bungkus，并分别和今晚新词组合成一句自然口语。"
+  ]
+}
