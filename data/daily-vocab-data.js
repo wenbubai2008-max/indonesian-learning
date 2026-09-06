@@ -4214,9 +4214,9 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-05 19:00",
+    "last_seen": "2026-09-06 19:00",
     "sessions": [
       "19:00"
     ],
@@ -4224,10 +4224,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-06"
     ],
-    "example": "Mending siapin dari sekarang biar waktunya nggak kebuang besok.",
-    "example_cn": "最好现在就准备，免得明天白白浪费时间。",
+    "example": "Aku bandingin dulu biar uangnya nggak kebuang buat barang yang nggak perlu.",
+    "example_cn": "我先比较一下，免得钱浪费在不需要的东西上。",
     "root_cn": "扔掉；浪费"
   },
   {
@@ -4777,24 +4778,28 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "kepake",
-    "cn": "用得上；派得上用场；被用到（口语）",
-    "en": "get used; come in handy; be useful",
+    "cn": "用得上；派得上用场",
+    "en": "get used; come in handy",
     "root": "pakai",
-    "example": "Template ini simpel, tapi justru lebih kepake buat kerja harian.",
-    "example_cn": "这个模板很简单，但反而更适合日常工作、比较用得上。",
+    "example": "Kalau barangnya sering kepake, mahal sedikit masih oke.",
+    "example_cn": "如果这个东西经常用得上，贵一点也还可以。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-06 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-09-04"
-    ]
+      "2026-09-04",
+      "2026-09-06"
+    ],
+    "root_cn": "使用；穿戴"
   },
   {
     "word": "ketukar",
@@ -5280,45 +5285,51 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "tawar",
-    "cn": "讨价还价；讲价",
+    "cn": "讲价；还价",
     "en": "bargain; negotiate a price",
     "root": "tawar",
-    "example": "Kalau belanja di pasar, biasanya masih bisa tawar sedikit.",
-    "example_cn": "如果在市场买东西，通常还能稍微讲一下价。",
+    "example": "Kalau harganya masih bisa tawar, aku coba tanya dulu sebelum beli.",
+    "example_cn": "如果价格还能讲，我会先问问再买。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-06 08:00",
-    "last_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-06"
-    ]
+    ],
+    "root_cn": "讲价；还价"
   },
   {
     "word": "bungkus",
-    "cn": "打包；包装；包起来",
+    "cn": "打包；包起来",
     "en": "wrap; pack; takeaway",
     "root": "bungkus",
-    "example": "Kalau nggak habis, bungkus aja buat nanti sore.",
-    "example_cn": "如果吃不完，就打包留到下午吧。",
+    "example": "Kalau porsinya kebanyakan, sisanya bungkus aja daripada kebuang.",
+    "example_cn": "如果份量太多，剩下的就打包吧，总比浪费掉好。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-06 08:00",
-    "last_seen": "2026-09-06 08:00",
+    "last_seen": "2026-09-06 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-06"
-    ]
+    ],
+    "root_cn": "包；包装；打包"
   },
   {
     "word": "porsi",
@@ -5424,5 +5435,137 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ]
+  },
+  {
+    "word": "daripada",
+    "cn": "与其……不如；比起",
+    "en": "rather than; than",
+    "root": "daripada",
+    "root_cn": "比起；与其",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 19:00",
+    "last_seen": "2026-09-06 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ],
+    "example": "Daripada muter jauh, mending naik MRT aja.",
+    "example_cn": "与其绕远路，不如直接坐地铁。"
+  },
+  {
+    "word": "ujung-ujungnya",
+    "cn": "到头来；结果最后还是",
+    "en": "in the end; eventually anyway",
+    "root": "ujung",
+    "root_cn": "末端；结尾",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 19:00",
+    "last_seen": "2026-09-06 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ],
+    "example": "Kalau pilih yang terlalu murah, ujung-ujungnya malah beli lagi.",
+    "example_cn": "如果选太便宜的，到头来反而还得再买一次。"
+  },
+  {
+    "word": "nggak worth it",
+    "cn": "不划算；不值得",
+    "en": "not worth it",
+    "root": "worth it",
+    "root_cn": "值得；划算",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 19:00",
+    "last_seen": "2026-09-06 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ],
+    "example": "Kalau ongkirnya lebih mahal dari barangnya, menurutku nggak worth it.",
+    "example_cn": "如果运费比东西本身还贵，我觉得就不划算了。"
+  },
+  {
+    "word": "seenggaknya",
+    "cn": "至少；起码",
+    "en": "at least",
+    "root": "enggak",
+    "root_cn": "不；不是",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 19:00",
+    "last_seen": "2026-09-06 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ],
+    "example": "Kalau belum yakin, seenggaknya bandingin dua tempat dulu.",
+    "example_cn": "如果还不确定，至少先比较两家。"
+  },
+  {
+    "word": "sekadar",
+    "cn": "只是；仅仅；不过是",
+    "en": "merely; just; simply",
+    "root": "kadar",
+    "root_cn": "程度；分量",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 19:00",
+    "last_seen": "2026-09-06 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ],
+    "example": "Aku cuma nanya sekadar buat bandingin harga, belum tentu beli.",
+    "example_cn": "我只是问问来比较价格，不一定会买。"
+  },
+  {
+    "word": "sayang kalau",
+    "cn": "如果……就可惜了",
+    "en": "it would be a shame if",
+    "root": "sayang",
+    "root_cn": "可惜；珍惜；亲爱的",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-06 19:00",
+    "last_seen": "2026-09-06 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-06"
+    ],
+    "example": "Sayang kalau beli mahal tapi akhirnya jarang kepake.",
+    "example_cn": "如果买得很贵，结果却很少用，那就可惜了。"
   }
 ];
