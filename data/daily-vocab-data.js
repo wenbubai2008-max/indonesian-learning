@@ -924,8 +924,8 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "keburu",
-    "cn": "赶在……之前；来得及；还没等到就……",
-    "en": "in time; before it is too late; before something else happens",
+    "cn": "来不及就……；抢先已经……",
+    "en": "before one gets the chance; already too late",
     "root": "buru",
     "categories": [
       "每日学习",
@@ -933,9 +933,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-09-04 19:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -943,11 +943,12 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-27",
       "2026-09-02",
-      "2026-09-04"
+      "2026-09-04",
+      "2026-09-07"
     ],
-    "example": "Aku kerjain bagian penting dulu sebelum keburu malam.",
-    "example_cn": "我先把重要的部分做掉，免得一转眼就到晚上了。",
-    "root_cn": "追赶；赶"
+    "example": "Aku mau jelasin dulu, tapi dia keburu pulang.",
+    "example_cn": "我本来想先解释一下，但他已经先回去了。",
+    "root_cn": "赶；追赶"
   },
   {
     "word": "mending",
@@ -1385,18 +1386,18 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "sekalian",
-    "cn": "顺便一起；干脆一并",
-    "en": "while you're at it; at the same time",
-    "root": "sekali",
+    "cn": "顺便；干脆一起",
+    "en": "while at it; at the same time",
+    "root": "sekalian",
     "categories": [
       "每日学习",
       "08:00",
       "原始课程",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-26 19:00",
-    "last_seen": "2026-09-04 19:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -1404,11 +1405,12 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-26",
       "2026-08-29",
-      "2026-09-04"
+      "2026-09-04",
+      "2026-09-07"
     ],
-    "example": "Kalau kamu ke kantor depan, sekalian bawa dokumen ini ya.",
-    "example_cn": "你要是去前面的办公室，顺便把这份文件也带过去。",
-    "root_cn": "一次；一回"
+    "example": "Kalau kamu ke lantai bawah, sekalian ambil paketku ya.",
+    "example_cn": "如果你去楼下，顺便帮我拿一下包裹吧。",
+    "root_cn": "一起；顺便一次做掉"
   },
   {
     "word": "kebetulan",
@@ -1684,23 +1686,29 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "nyusul",
-    "cn": "随后赶来；追上",
-    "en": "",
+    "cn": "随后跟上；晚点再过去会合",
+    "en": "follow later; catch up; join later",
     "root": "susul",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-08-29 08:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-08-29"
-    ]
+      "2026-08-29",
+      "2026-09-07"
+    ],
+    "root_cn": "追上；随后跟上",
+    "example": "Kalian jalan dulu aja, nanti aku nyusul habis meeting.",
+    "example_cn": "你们先走吧，我开完会晚点再过去找你们。"
   },
   {
     "word": "pantes",
@@ -1725,23 +1733,29 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "kebagian",
-    "cn": "分到、轮到、得到一份",
-    "en": "",
+    "cn": "分到；轮到；得到一份",
+    "en": "get a share; get a turn",
     "root": "bagi",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 08:00",
-    "last_seen": "2026-08-30 08:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-08-30"
-    ]
+      "2026-08-30",
+      "2026-09-07"
+    ],
+    "root_cn": "分；分配",
+    "example": "Aku kebagian tugas follow up vendor yang satu ini.",
+    "example_cn": "我分到的任务是跟进这家供应商。"
   },
   {
     "word": "kehabisan",
@@ -3139,27 +3153,28 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "terlanjur",
-    "cn": "已经做了；已经来不及回头了",
-    "en": "already; too late to undo; have gone ahead",
+    "cn": "已经做了；事情已经到这一步",
+    "en": "already; gone too far to undo easily",
     "root": "lanjur",
     "categories": [
       "每日学习",
       "19:00",
       "原始课程"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-30 19:00",
-    "last_seen": "2026-09-04 19:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
       "2026-08-30",
-      "2026-09-04"
+      "2026-09-04",
+      "2026-09-07"
     ],
-    "example": "Aku terlanjur bilang ke klien kalau file-nya selesai hari ini.",
-    "example_cn": "我已经跟客户说了文件今天能完成，现在也不好改口了。",
-    "root_cn": "继续往前；超过原本界限"
+    "example": "Aku udah terlanjur janji, jadi nggak enak kalau batal sekarang.",
+    "example_cn": "我都已经答应了，现在再取消就不太好。",
+    "root_cn": "继续向前；进一步"
   },
   {
     "word": "macet",
@@ -4214,9 +4229,9 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-06 19:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
       "19:00"
     ],
@@ -4225,10 +4240,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
-    "example": "Aku bandingin dulu biar uangnya nggak kebuang buat barang yang nggak perlu.",
-    "example_cn": "我先比较一下，免得钱浪费在不需要的东西上。",
+    "example": "Kalau terus nunggu tanpa kepastian, waktunya malah kebuang.",
+    "example_cn": "如果一直没有确定消息地等着，时间反而会白白浪费。",
     "root_cn": "扔掉；浪费"
   },
   {
@@ -5691,21 +5707,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "ngulur",
-    "cn": "拖时间；故意往后拖（口语）",
-    "en": "stall; drag out; delay deliberately",
+    "cn": "拖时间；故意往后拖",
+    "en": "stall; drag out",
     "root": "ulur",
-    "root_cn": "延长；往外放；拖长",
-    "example": "Kalau vendor terus ngulur waktu, deadline kita ikut kena.",
-    "example_cn": "如果供应商一直拖时间，我们的截止时间也会受影响。",
+    "root_cn": "延长；拖长",
+    "example": "Kalau mereka masih ngulur, kita kasih batas waktu yang jelas aja.",
+    "example_cn": "如果他们还在拖，我们就直接给一个明确的截止时间吧。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-07"
@@ -5713,21 +5731,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "ngandelin",
-    "cn": "依赖；指望；靠某人/某事（口语）",
-    "en": "rely on; count on; depend on",
+    "cn": "依赖；指望；靠",
+    "en": "rely on; count on",
     "root": "andal",
     "root_cn": "可靠；可依靠",
-    "example": "Jangan ngandelin satu vendor aja, siapin pilihan cadangan juga.",
-    "example_cn": "别只依赖一家供应商，也准备一个备用选择。",
+    "example": "Jangan ngandelin satu orang buat semua follow up.",
+    "example_cn": "别把所有跟进都只指望一个人。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-07"
@@ -5798,5 +5818,71 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-07"
     ]
+  },
+  {
+    "word": "kepotong",
+    "cn": "被打断；被截断；被扣掉",
+    "en": "get cut off; be interrupted; be deducted",
+    "root": "potong",
+    "root_cn": "切；剪；扣除",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-07 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ],
+    "example": "Tadi penjelasanku kepotong karena ada telepon masuk.",
+    "example_cn": "刚才我的说明因为有电话打进来被打断了。"
+  },
+  {
+    "word": "ngingetin",
+    "cn": "提醒一下（口语）",
+    "en": "remind; give a reminder",
+    "root": "ingat",
+    "root_cn": "记得；想起",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-07 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ],
+    "example": "Besok pagi ngingetin aku soal dokumen itu ya.",
+    "example_cn": "明天早上提醒我一下那份文件。"
+  },
+  {
+    "word": "asal jangan",
+    "cn": "只要别……就行",
+    "en": "as long as not; provided that ... not",
+    "root": "asal",
+    "root_cn": "只要；条件是",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-07 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ],
+    "example": "Jam berapa aja boleh, asal jangan terlalu malam.",
+    "example_cn": "几点都可以，只要别太晚就行。"
   }
 ];
