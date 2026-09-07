@@ -1,31 +1,6 @@
-window.EXTENSIVE_READING_DB = [
-  {
-    id:'er-20260906-soetta-abu-vulkanik',
-    date:'2026-09-06',
-    title:'Abu Vulkanik Sempat Ganggu Penerbangan di Bandara Soetta',
-    title_cn:'火山灰一度影响苏加诺-哈达机场航班',
-    category:'雅加达 · 出行 · 实时新闻改写',
-    level:'A2+ → B1',
-    minutes:5,
-    source_name:'ANTARA News',
-    source_date:'2026-09-06',
-    text:`Bandara Internasional Soekarno-Hatta sempat ditutup sementara pada Minggu dini hari karena ada indikasi sebaran abu vulkanik dari Gunung Anak Krakatau. Kementerian Perhubungan menjelaskan bahwa keputusan ini diambil untuk menjaga keselamatan penerbangan. Penutupan berlaku dari pukul 01.30 sampai 05.30 WIB.\n\nBuat penumpang, kondisi seperti ini bisa membuat jadwal penerbangan berubah. Maskapai dapat melakukan penyesuaian jadwal sesuai kondisi di lapangan. Karena itu, kalau mau pergi ke bandara saat ada gangguan seperti erupsi gunung, sebaiknya cek informasi penerbangan lebih dulu sebelum berangkat dari rumah.\n\nKejadian ini juga menunjukkan bahwa perjalanan udara tidak cuma dipengaruhi masalah teknis atau cuaca biasa. Aktivitas gunung berapi juga bisa berdampak pada penerbangan kalau abu vulkanik menyebar ke wilayah bandara. Dalam situasi seperti ini, keselamatan tetap menjadi prioritas utama. Jadi, meskipun perubahan jadwal terasa merepotkan, keputusan operasional perlu mengikuti kondisi yang benar-benar terjadi di lapangan.`,
-    cn:`周日凌晨，苏加诺-哈达国际机场因检测到喀拉喀托之子火山的火山灰扩散迹象，一度临时关闭。印尼交通部解释说，这一决定是为了保障航空安全。机场关闭时间为凌晨1点30分至5点30分。\n\n对乘客来说，这种情况可能导致航班时间发生变化。航空公司会根据现场情况调整航班。因此，如果遇到火山喷发等干扰，准备去机场之前最好先查看航班信息，再从家里出发。\n\n这件事也说明，航空出行并不只会受到技术问题或普通天气影响。如果火山灰扩散到机场区域，火山活动同样可能影响航班。在这种情况下，安全仍然是最优先考虑的事情。所以，即使航班时间调整让人觉得麻烦，实际运营决定仍需要根据现场真实情况来做。`,
-    hints:[
-      {term:'ditutup sementara',cn:'暂时关闭',root:'tutup',formation:'di- + tutup；sementara＝暂时'},
-      {term:'indikasi',cn:'迹象；征兆'},
-      {term:'sebaran abu vulkanik',cn:'火山灰扩散；火山灰分布',root:'sebar',formation:'sebar + -an'},
-      {term:'keselamatan penerbangan',cn:'航空安全',root:'selamat',formation:'ke- + selamat + -an'},
-      {term:'penutupan',cn:'关闭；封闭',root:'tutup',formation:'peN- + tutup + -an'},
-      {term:'penyesuaian jadwal',cn:'时间安排调整；航班调整',root:'sesuai',formation:'peN- + sesuai + -an'},
-      {term:'kondisi di lapangan',cn:'现场情况；实际情况'},
-      {term:'gangguan',cn:'干扰；故障；影响',root:'ganggu',formation:'ganggu + -an'},
-      {term:'erupsi',cn:'火山喷发'},
-      {term:'dipengaruhi',cn:'受到……影响',root:'pengaruh',formation:'di- + pengaruh + -i'},
-      {term:'berdampak',cn:'产生影响',root:'dampak',formation:'ber- + dampak'},
-      {term:'menyebar',cn:'扩散；传播',root:'sebar',formation:'meN- + sebar'},
-      {term:'prioritas utama',cn:'首要优先事项'},
-      {term:'merepotkan',cn:'让人觉得麻烦；给人添麻烦',root:'repot',formation:'meN- + repot + -kan'}
-    ]
-  }
-];
+window.EXTENSIVE_READING_DB = [{
+id:'er-20260907-transport-alternatif',date:'2026-09-07',title:'Penerbangan Terganggu, Ada Transportasi Alternatif dari Soetta',title_cn:'航班受影响，苏加诺-哈达机场提供替代交通',category:'雅加达 · 出行 · 实时新闻改写',level:'A2+ → B1',minutes:5,source_name:'ANTARA News',source_date:'2026-09-07',
+text:`Dampak abu vulkanik Gunung Anak Krakatau masih memengaruhi perjalanan udara di sekitar Jakarta. Pemerintah mengatakan transportasi darat dan laut perlu disiapkan karena sebagian penumpang mengalami perubahan rencana perjalanan. Kalau penerbangan dialihkan dari Bandara Soekarno-Hatta ke bandara lain, penumpang tetap perlu punya cara yang aman untuk melanjutkan perjalanan.\n\nKementerian Perhubungan menyebut bus dan kereta api disiapkan gratis untuk penumpang yang penerbangannya dipindahkan ke bandara alternatif. Beberapa bandara yang disiapkan antara lain Kertajati, Juanda, Yogyakarta International Airport, serta bandara di Semarang dan Solo. Pemerintah juga terus berkoordinasi supaya pilihan transportasi tetap tersedia saat penerbangan terganggu.\n\nBuat orang yang punya jadwal perjalanan, informasi terbaru menjadi sangat penting. Sebelum berangkat ke bandara, sebaiknya cek status penerbangan dan informasi resmi dari maskapai atau pemerintah. Kalau jadwal berubah, cari tahu apakah penerbangan dipindahkan, apakah tersedia transportasi alternatif, dan bagaimana cara menuju lokasi baru. Dengan begitu, perubahan rencana memang tetap merepotkan, tapi perjalanan bisa diatur dengan lebih jelas.`,
+cn:`喀拉喀托之子火山的火山灰仍在影响雅加达周边的航空出行。政府表示，由于部分乘客的行程发生变化，需要准备陆路和海上交通。如果航班从苏加诺-哈达机场转移到其他机场，乘客仍然需要安全的方式继续行程。\n\n印尼交通部表示，将为航班被转移到替代机场的乘客提供免费的公交车和火车。准备使用的替代机场包括Kertajati、Juanda、日惹国际机场，以及三宝垄和梭罗的机场。政府也在继续协调，确保航班受影响时仍有其他交通选择。\n\n对于有出行计划的人来说，最新信息非常重要。去机场之前，最好先查看航班状态以及航空公司或政府发布的官方信息。如果时间发生变化，先确认航班是否被转移、有没有替代交通，以及怎样前往新的地点。这样一来，行程变化虽然仍然麻烦，但可以安排得更加清楚。`,
+hints:[{term:'memengaruhi',cn:'影响',root:'pengaruh',formation:'meN- + pengaruh + -i'},{term:'dialihkan',cn:'被转移；改到其他地方',root:'alih',formation:'di- + alih + -kan'},{term:'melanjutkan perjalanan',cn:'继续行程',root:'lanjut',formation:'meN- + lanjut + -kan'},{term:'dipindahkan',cn:'被转移',root:'pindah',formation:'di- + pindah + -kan'},{term:'bandara alternatif',cn:'替代机场；备选机场'},{term:'berkoordinasi',cn:'进行协调',root:'koordinasi',formation:'ber- + koordinasi'},{term:'tersedia',cn:'可用的；有提供的',root:'sedia',formation:'ter- + sedia'},{term:'terganggu',cn:'受到干扰；受影响',root:'ganggu',formation:'ter- + ganggu'},{term:'status penerbangan',cn:'航班状态'},{term:'informasi resmi',cn:'官方信息'},{term:'menuju lokasi',cn:'前往某个地点',root:'tuju',formation:'meN- + tuju'},{term:'dengan begitu',cn:'这样一来；因此'},{term:'diatur',cn:'被安排；被调整',root:'atur',formation:'di- + atur'}]
+}];
