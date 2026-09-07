@@ -4295,20 +4295,23 @@ window.DAILY_VOCAB_DB = [
     "root": "keteteran",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-04 19:00",
+    "last_seen": "2026-09-07 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-02",
-      "2026-09-04"
+      "2026-09-04",
+      "2026-09-07"
     ],
-    "example": "Kalau semua dikerjain barengan, aku malah keteteran.",
-    "example_cn": "如果所有事情一起做，我反而会忙不过来。",
+    "example": "Minggu ini meeting terlalu banyak, jadi kerjaan utama agak keteteran.",
+    "example_cn": "这周会议太多，所以主要工作有点跟不上进度。",
     "root_cn": "忙不过来；跟不上"
   },
   {
@@ -5575,5 +5578,203 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Sayang kalau beli mahal tapi akhirnya jarang kepake.",
     "example_cn": "如果买得很贵，结果却很少用，那就可惜了。"
+  },
+  {
+    "word": "patungan",
+    "cn": "一起分摊；凑钱；AA出钱（口语）",
+    "en": "chip in; split the cost; contribute together",
+    "root": "patungan",
+    "root_cn": "共同凑钱；分摊费用",
+    "example": "Hadiah buat dia kita patungan aja biar nggak berat sendiri.",
+    "example_cn": "给他的礼物我们一起凑钱吧，这样不用一个人承担太多。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ]
+  },
+  {
+    "word": "nombok",
+    "cn": "自己垫钱；补差额（口语）",
+    "en": "cover the shortfall; pay extra out of pocket",
+    "root": "tombok",
+    "root_cn": "补上差额；贴补",
+    "example": "Kasnya kurang sedikit, jadi tadi aku nombok dulu.",
+    "example_cn": "公款差一点，所以刚才我先自己垫上了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ]
+  },
+  {
+    "word": "ngirit",
+    "cn": "省着花；节省开支（口语）",
+    "en": "save money; cut spending; be frugal",
+    "root": "irit",
+    "root_cn": "节省；省着用",
+    "example": "Bulan ini aku lagi ngirit, jadi jarang pesan kopi.",
+    "example_cn": "这个月我正在省钱，所以很少点咖啡。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ]
+  },
+  {
+    "word": "kemahalan",
+    "cn": "觉得太贵；价格高过头",
+    "en": "too expensive; find something overpriced",
+    "root": "mahal",
+    "root_cn": "贵；价格高",
+    "example": "Kalau segitu harganya, buat aku sih kemahalan.",
+    "example_cn": "如果是这个价格，对我来说就太贵了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ]
+  },
+  {
+    "word": "kewalahan",
+    "cn": "忙不过来；招架不住；应付不过来",
+    "en": "overwhelmed; unable to cope",
+    "root": "kewalahan",
+    "root_cn": "应付不过来；招架不住",
+    "example": "Kalau semua masuk hari ini, tim kecil kita bisa kewalahan.",
+    "example_cn": "如果所有事情今天都进来，我们这个小团队可能会忙不过来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ]
+  },
+  {
+    "word": "ngulur",
+    "cn": "拖时间；故意往后拖（口语）",
+    "en": "stall; drag out; delay deliberately",
+    "root": "ulur",
+    "root_cn": "延长；往外放；拖长",
+    "example": "Kalau vendor terus ngulur waktu, deadline kita ikut kena.",
+    "example_cn": "如果供应商一直拖时间，我们的截止时间也会受影响。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ]
+  },
+  {
+    "word": "ngandelin",
+    "cn": "依赖；指望；靠某人/某事（口语）",
+    "en": "rely on; count on; depend on",
+    "root": "andal",
+    "root_cn": "可靠；可依靠",
+    "example": "Jangan ngandelin satu vendor aja, siapin pilihan cadangan juga.",
+    "example_cn": "别只依赖一家供应商，也准备一个备用选择。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ]
+  },
+  {
+    "word": "nggak enakan",
+    "cn": "不好意思拒绝；怕麻烦别人；碍于情面",
+    "en": "feel bad saying no; be reluctant to inconvenience others",
+    "root": "enak",
+    "root_cn": "舒服；合适；好受",
+    "example": "Aku sebenarnya nggak enakan nagih dia, tapi tagihannya sudah lewat.",
+    "example_cn": "其实我不太好意思催他，但这笔账已经过期了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ]
+  },
+  {
+    "word": "nanggung",
+    "cn": "做到一半很尴尬；不上不下；既然都做到这了（口语）",
+    "en": "awkwardly incomplete; halfway; might as well finish",
+    "root": "tanggung",
+    "root_cn": "承担；未完全结束（相关语境）",
+    "example": "Udah nanggung, sekalian beresin sekarang aja.",
+    "example_cn": "都已经做到这个份上了，干脆现在顺便弄完吧。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ]
   }
 ];
