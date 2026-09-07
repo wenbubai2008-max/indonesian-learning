@@ -50,11 +50,11 @@ jobs:
                 const already=(x.sessions||[]).includes(session)&&(x.dates||[]).includes(date);
                 if(!already)x.times_seen=(Number(x.times_seen)||0)+1;
                 x.sessions=addUnique(x.sessions,session);x.dates=addUnique(x.dates,date).sort();x.categories=addUnique(addUnique(x.categories,'每日学习'),session);
-                if(!x.root&&v.root)x.root=v.root;if(!x.cn&&v.cn)x.cn=v.cn;if(!x.en&&v.en)x.en=v.en;
+                if(!x.root&&v.root)x.root=v.root;if(!x.root_cn&&v.root_cn)x.root_cn=v.root_cn;if(!x.cn&&v.cn)x.cn=v.cn;if(!x.en&&v.en)x.en=v.en;
                 if(v.example)x.example=v.example;if(v.example_cn)x.example_cn=v.example_cn;
                 if(!x.first_seen||stamp<x.first_seen)x.first_seen=stamp;if(!x.last_seen||stamp>x.last_seen)x.last_seen=stamp;
               }else{
-                const x={word:String(v.word).trim(),cn:v.cn||'',en:v.en||'',root:v.root||'',example:v.example||'',example_cn:v.example_cn||'',categories:['每日学习',session],times_seen:1,first_seen:stamp,last_seen:stamp,sessions:[session],dates:[date]};db.push(x);map.set(k,x);
+                const x={word:String(v.word).trim(),cn:v.cn||'',en:v.en||'',root:v.root||'',root_cn:v.root_cn||'',example:v.example||'',example_cn:v.example_cn||'',categories:['每日学习',session],times_seen:1,first_seen:stamp,last_seen:stamp,sessions:[session],dates:[date]};db.push(x);map.set(k,x);
               }
             }
           }
