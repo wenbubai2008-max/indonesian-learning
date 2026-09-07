@@ -5239,7 +5239,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-06"
-    ]
+    ],
+    "root_cn": "支付；付款"
   },
   {
     "word": "murah",
@@ -5260,7 +5261,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-06"
-    ]
+    ],
+    "root_cn": "便宜；价格低"
   },
   {
     "word": "mahal",
@@ -5281,7 +5283,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-06"
-    ]
+    ],
+    "root_cn": "贵；价格高"
   },
   {
     "word": "tawar",
@@ -5350,7 +5353,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-06"
-    ]
+    ],
+    "root_cn": "份量；一份"
   },
   {
     "word": "rasa",
@@ -5371,7 +5375,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-06"
-    ]
+    ],
+    "root_cn": "味道；感觉；感受"
   },
   {
     "word": "naik",
@@ -5392,7 +5397,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-06"
-    ]
+    ],
+    "root_cn": "上；上升；乘坐"
   },
   {
     "word": "turun",
@@ -5413,7 +5419,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-06"
-    ]
+    ],
+    "root_cn": "下；下降；下车"
   },
   {
     "word": "sampai",
@@ -5434,7 +5441,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-06"
-    ]
+    ],
+    "root_cn": "到达；直到"
   },
   {
     "word": "daripada",
