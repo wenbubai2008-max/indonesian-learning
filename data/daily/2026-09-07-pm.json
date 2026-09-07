@@ -1,0 +1,330 @@
+{
+  "date": "2026-09-07",
+  "session": "pm",
+  "time": "19:00",
+  "level": "A2+ → B1",
+  "day": 17,
+  "title": "2026年9月7日｜19:00 晚间学习｜时间变化与临时跟进",
+  "duration": "45–60分钟",
+  "mode": "高频功能词块 + 雅加达口语 + 主动调用",
+  "vocab": [
+    {
+      "word": "keburu",
+      "display": "keburu",
+      "audio_text": "keburu",
+      "cn": "来不及就……；抢先已经……",
+      "en": "before one gets the chance; already too late",
+      "root": "buru",
+      "root_cn": "赶；追赶",
+      "formation": "buru → keburu（高频口语）；常见 keburu + 动作，表示‘还没来得及做A，B就先发生了’。",
+      "example": "Aku mau jelasin dulu, tapi dia keburu pulang.",
+      "example_cn": "我本来想先解释一下，但他已经先回去了。",
+      "usage_note": "雅加达日常非常高频。和 nggak sempat 不同：keburu 更强调另一件事先发生了。"
+    },
+    {
+      "word": "terlanjur",
+      "display": "terlanjur",
+      "audio_text": "terlanjur",
+      "cn": "已经做了；事情已经到这一步",
+      "en": "already; gone too far to undo easily",
+      "root": "lanjur",
+      "root_cn": "继续向前；进一步",
+      "formation": "ter- + lanjur → terlanjur；常表示某件事已经发生，再撤回或改变比较麻烦。",
+      "example": "Aku udah terlanjur janji, jadi nggak enak kalau batal sekarang.",
+      "example_cn": "我都已经答应了，现在再取消就不太好。",
+      "usage_note": "整块记 udah terlanjur + 动作，比单纯 udah 多一层‘已经这样了，不太好回头’。"
+    },
+    {
+      "word": "sekalian",
+      "display": "sekalian",
+      "audio_text": "sekalian",
+      "cn": "顺便；干脆一起",
+      "en": "while at it; at the same time",
+      "root": "sekalian",
+      "root_cn": "一起；顺便一次做掉",
+      "formation": "高频固定口语副词；常说 sekalian aja / sekalian + 动作。",
+      "example": "Kalau kamu ke lantai bawah, sekalian ambil paketku ya.",
+      "example_cn": "如果你去楼下，顺便帮我拿一下包裹吧。",
+      "usage_note": "比教材式 sambil 更适合‘既然都要去/做了，就顺便做另一件事’。"
+    },
+    {
+      "word": "nyusul",
+      "display": "nyusul",
+      "audio_text": "nyusul",
+      "cn": "随后跟上；晚点再过去会合",
+      "en": "follow later; catch up; join later",
+      "root": "susul",
+      "root_cn": "追上；随后跟上",
+      "formation": "susul → menyusul（标准）→ nyusul（雅加达常见口语）。",
+      "example": "Kalian jalan dulu aja, nanti aku nyusul habis meeting.",
+      "example_cn": "你们先走吧，我开完会晚点再过去找你们。",
+      "usage_note": "聚会、出门、办公室都很实用；不是‘追赶速度’，而是‘稍后跟上/会合’。"
+    },
+    {
+      "word": "kepotong",
+      "display": "kepotong",
+      "audio_text": "kepotong",
+      "cn": "被打断；被截断；被扣掉",
+      "en": "get cut off; be interrupted; be deducted",
+      "root": "potong",
+      "root_cn": "切；剪；扣除",
+      "formation": "potong → kepotong（口语）；较标准可说 terpotong。语境不同可指话被打断、时间被占掉、金额被扣。",
+      "example": "Tadi penjelasanku kepotong karena ada telepon masuk.",
+      "example_cn": "刚才我的说明因为有电话打进来被打断了。",
+      "usage_note": "工作聊天很实用；gaji kepotong 也可以表示工资被扣。"
+    },
+    {
+      "word": "kebagian",
+      "display": "kebagian",
+      "audio_text": "kebagian",
+      "cn": "分到；轮到；得到一份",
+      "en": "get a share; get a turn",
+      "root": "bagi",
+      "root_cn": "分；分配",
+      "formation": "bagi → kebagian（口语高频）；表示某人最终分到某份东西、名额或任务。",
+      "example": "Aku kebagian tugas follow up vendor yang satu ini.",
+      "example_cn": "我分到的任务是跟进这家供应商。",
+      "usage_note": "可用于食物、座位、名额、任务。否定常说 nggak kebagian。"
+    },
+    {
+      "word": "ngingetin",
+      "display": "ngingetin",
+      "audio_text": "ngingetin",
+      "cn": "提醒一下（口语）",
+      "en": "remind; give a reminder",
+      "root": "ingat",
+      "root_cn": "记得；想起",
+      "formation": "ingat → mengingatkan（标准）→ ngingetin（雅加达口语）。",
+      "example": "Besok pagi ngingetin aku soal dokumen itu ya.",
+      "example_cn": "明天早上提醒我一下那份文件。",
+      "usage_note": "日常比 mengingatkan 更自然；工作正式邮件仍优先 mengingatkan。"
+    },
+    {
+      "word": "asal jangan",
+      "display": "asal jangan",
+      "audio_text": "asal jangan",
+      "cn": "只要别……就行",
+      "en": "as long as not; provided that ... not",
+      "root": "asal",
+      "root_cn": "只要；条件是",
+      "formation": "固定条件词块 asal + jangan；用于给出一个可以接受的底线条件。",
+      "example": "Jam berapa aja boleh, asal jangan terlalu malam.",
+      "example_cn": "几点都可以，只要别太晚就行。",
+      "usage_note": "口语很自然，比正式的 selama tidak 更轻松。"
+    },
+    {
+      "word": "kebuang",
+      "display": "kebuang",
+      "audio_text": "kebuang",
+      "cn": "被白白浪费掉",
+      "en": "go to waste; be wasted",
+      "root": "buang",
+      "root_cn": "扔掉；浪费",
+      "formation": "buang → kebuang（口语）；较标准 terbuang。",
+      "example": "Kalau terus nunggu tanpa kepastian, waktunya malah kebuang.",
+      "example_cn": "如果一直没有确定消息地等着，时间反而会白白浪费。",
+      "usage_note": "来自共享陌生词库的弱项词；今晚放进时间安排语境复现，不单独开陌生词章节。"
+    },
+    {
+      "word": "ngulur",
+      "display": "ngulur",
+      "audio_text": "ngulur",
+      "cn": "拖时间；故意往后拖",
+      "en": "stall; drag out",
+      "root": "ulur",
+      "root_cn": "延长；拖长",
+      "formation": "ulur → mengulur（标准）→ ngulur（口语）。",
+      "example": "Kalau mereka masih ngulur, kita kasih batas waktu yang jelas aja.",
+      "example_cn": "如果他们还在拖，我们就直接给一个明确的截止时间吧。",
+      "usage_note": "今天08:00自然复现，不作为真正新词。"
+    },
+    {
+      "word": "ngandelin",
+      "display": "ngandelin",
+      "audio_text": "ngandelin",
+      "cn": "依赖；指望；靠",
+      "en": "rely on; count on",
+      "root": "andal",
+      "root_cn": "可靠；可依靠",
+      "formation": "andal → mengandalkan（标准）→ ngandelin（雅加达口语）。",
+      "example": "Jangan ngandelin satu orang buat semua follow up.",
+      "example_cn": "别把所有跟进都只指望一个人。",
+      "usage_note": "今天08:00自然复现，重点练和任务安排搭配。"
+    }
+  ],
+  "morphology": [
+    {
+      "form": "keburu",
+      "root": "buru",
+      "root_cn": "赶；追赶",
+      "formation": "buru → keburu",
+      "explain_cn": "口语里常表示某件事先发生，以至于原计划来不及做。",
+      "example": "Aku belum jawab, dia keburu pergi.",
+      "example_cn": "我还没回答，他就已经先走了。"
+    },
+    {
+      "form": "terlanjur",
+      "root": "lanjur",
+      "root_cn": "继续向前；进一步",
+      "formation": "ter- + lanjur → terlanjur",
+      "explain_cn": "表示事情已经发生到某一步，回头或撤销会比较麻烦。",
+      "example": "Udah terlanjur pesan, ya udah kita pakai aja.",
+      "example_cn": "都已经订了，那就用吧。"
+    },
+    {
+      "form": "nyusul",
+      "root": "susul",
+      "root_cn": "追上；随后跟上",
+      "formation": "susul → menyusul（标准）→ nyusul（口语）",
+      "explain_cn": "表示晚一点跟上前面的人或去同一个地方会合。",
+      "example": "Aku nyusul sekitar jam delapan.",
+      "example_cn": "我大概八点再过去跟你们会合。"
+    },
+    {
+      "form": "kepotong",
+      "root": "potong",
+      "root_cn": "切；剪；扣除",
+      "formation": "potong → kepotong（口语）；标准 terpotong",
+      "explain_cn": "可表示说话被打断、时间被切碎或金额被扣掉。",
+      "example": "Waktu istirahatku kepotong meeting.",
+      "example_cn": "我的休息时间被会议占掉了一部分。"
+    },
+    {
+      "form": "kebagian",
+      "root": "bagi",
+      "root_cn": "分；分配",
+      "formation": "bagi → kebagian",
+      "explain_cn": "表示最终分到某一份东西、任务或机会。",
+      "example": "Aku nggak kebagian kursi dekat depan.",
+      "example_cn": "我没分到靠前的座位。"
+    },
+    {
+      "form": "ngingetin",
+      "root": "ingat",
+      "root_cn": "记得；想起",
+      "formation": "ingat → mengingatkan（标准）→ ngingetin（口语）",
+      "explain_cn": "表示让别人不要忘记某件事。",
+      "example": "Nanti aku ngingetin dia lagi.",
+      "example_cn": "晚点我再提醒他一次。"
+    }
+  ],
+  "rewrite": [
+    {
+      "task": "中文→印尼语：我本来想先解释，但他已经先回去了。",
+      "reference_answer": "Aku mau jelasin dulu, tapi dia keburu pulang.",
+      "reference_cn": "我本来想先解释，但他已经先回去了。"
+    },
+    {
+      "task": "中文→印尼语：我都已经答应了，现在取消不太好。",
+      "reference_answer": "Aku udah terlanjur janji, jadi nggak enak kalau batal sekarang.",
+      "reference_cn": "我都已经答应了，现在取消不太好。"
+    },
+    {
+      "task": "情境造句：同事要下楼，你让他顺便帮你拿包裹。",
+      "reference_answer": "Kalau kamu ke bawah, sekalian ambil paketku ya.",
+      "reference_cn": "如果你下楼，顺便帮我拿一下包裹吧。"
+    },
+    {
+      "task": "中文→印尼语：你们先走，我开完会再过去跟你们会合。",
+      "reference_answer": "Kalian jalan dulu aja, nanti aku nyusul habis meeting.",
+      "reference_cn": "你们先走，我开完会再过去跟你们会合。"
+    },
+    {
+      "task": "情境造句：供应商还在拖，你想说‘给一个明确截止时间吧，别只指望他一个人。’",
+      "reference_answer": "Kalau vendor-nya masih ngulur, kasih deadline yang jelas aja. Jangan ngandelin dia sendirian.",
+      "reference_cn": "如果供应商还在拖，就给一个明确的截止时间吧。别只指望他一个人。"
+    }
+  ],
+  "reading": {
+    "title": "Jadwal Berubah Lagi",
+    "text": "Sore tadi rencanaku agak berubah. Aku mau jelasin satu masalah ke vendor, tapi dia keburu pulang. Karena aku udah terlanjur siapin datanya, aku sekalian rapihin bagian lain dulu. Teman kantor ngajak makan jam tujuh, tapi aku bilang mereka jalan dulu aja dan nanti aku nyusul. Di tengah kerja, penjelasanku sempat kepotong telepon. Aku juga kebagian follow up dua hal tambahan. Besok pagi aku minta teman ngingetin aku lagi. Jam meeting sebenarnya bebas, asal jangan terlalu pagi. Kalau vendor terus ngulur dan kita cuma ngandelin satu orang, waktunya malah bisa kebuang.",
+    "cn": "今天傍晚我的安排又有点变化。我本来想给供应商解释一个问题，但他已经先下班了。因为我都已经把数据准备好了，我就顺便先整理其他部分。同事约七点吃饭，我跟他们说先走，我晚点再过去会合。工作过程中，我的说明一度被电话打断。我还分到了另外两个跟进任务。明早我让同事再提醒我一下。会议几点其实都行，只要别太早。如果供应商一直拖，而我们又只依赖一个人，时间反而可能会白白浪费。",
+    "vocab": ["keburu", "terlanjur", "sekalian", "nyusul", "kepotong", "kebagian", "ngingetin", "asal jangan", "ngulur", "ngandelin", "kebuang"],
+    "questions": [
+      {
+        "task": "主动回答：为什么说话人没有马上联系上 vendor？",
+        "reference_answer": "Karena vendor-nya keburu pulang sebelum dia sempat jelasin masalahnya.",
+        "reference_cn": "因为供应商在他说清问题之前就已经先回去了。"
+      },
+      {
+        "task": "主动回答：为什么说话人还是继续整理其他部分？",
+        "reference_answer": "Karena dia udah terlanjur siapin datanya, jadi sekalian rapihin bagian lain.",
+        "reference_cn": "因为他都已经把数据准备好了，所以就顺便整理其他部分。"
+      },
+      {
+        "task": "主动回答：他们应该怎样避免时间继续被浪费？",
+        "reference_answer": "Jangan cuma ngandelin satu orang, dan kalau vendor terus ngulur, kasih batas waktu yang jelas.",
+        "reference_cn": "不要只依赖一个人；如果供应商继续拖，就给一个明确的截止时间。"
+      }
+    ]
+  },
+  "dialogue": {
+    "title": "雅加达办公室：临时改安排",
+    "lines": [
+      {"speaker": "A", "id": "Bro, jadi makan bareng jam tujuh?", "cn": "哥们，七点还一起吃饭吗？"},
+      {"speaker": "B", "id": "Jadi sih, tapi aku masih ada follow up. Kalian jalan dulu aja.", "cn": "去是去，不过我还有个跟进。你们先走吧。"},
+      {"speaker": "A", "id": "Terus lo nyusul?", "cn": "那你晚点再过来？"},
+      {"speaker": "B", "id": "Iya. Tadi mau beresin cepat, eh kepotong telepon terus.", "cn": "对。本来想快点弄完，结果一直被电话打断。"},
+      {"speaker": "A", "id": "Kalau gitu sekalian gue pesenin dulu ya?", "cn": "那我顺便先帮你点了？"},
+      {"speaker": "B", "id": "Boleh, asal jangan yang pedes banget.", "cn": "可以，只要别点特别辣的。"},
+      {"speaker": "A", "id": "Sip. Nanti gue ngingetin lokasi lagi.", "cn": "行。晚点我再把地点提醒你一下。"},
+      {"speaker": "B", "id": "Oke. Jangan ngandelin gue tepat waktu ya, vendor-nya masih ngulur nih.", "cn": "好。别指望我准时啊，这供应商还在拖呢。"}
+    ]
+  },
+  "daily_test": {
+    "title": "当日小测 · 5–8分钟",
+    "items": [
+      {
+        "type": "choice",
+        "prompt": "‘Aku mau ngomong, tapi dia keburu pergi.’ 这里 keburu 最接近：",
+        "options": ["他还没来", "还没来得及说，他就先走了", "他故意拖时间"],
+        "answer_index": 1,
+        "explain": "keburu 强调另一件事先发生，导致原本想做的事来不及完成。"
+      },
+      {
+        "type": "choice",
+        "prompt": "哪一句最自然地表达‘都已经答应了，不好再取消’？",
+        "options": ["Udah terlanjur janji, nggak enak kalau batal.", "Udah nyusul janji, nggak enak kalau batal.", "Udah kepotong janji, nggak enak kalau batal."],
+        "answer_index": 0,
+        "explain": "terlanjur 表示事情已经发生到不太好回头的程度。"
+      },
+      {
+        "type": "choice",
+        "prompt": "你想说‘你们先走，我晚点过去会合’，最自然的关键词是：",
+        "options": ["nyusul", "ngulur", "kebagian"],
+        "answer_index": 0,
+        "explain": "nyusul = 随后跟上、晚点去会合。"
+      },
+      {
+        "type": "fill",
+        "prompt": "补一个词：Kalau kamu ke bawah, ____ ambil paketku ya.（顺便）",
+        "answer": "sekalian",
+        "answer_cn": "顺便"
+      },
+      {
+        "type": "fill",
+        "prompt": "补一个短词块：Jam berapa aja boleh, ____ terlalu malam.（只要别）",
+        "answer": "asal jangan",
+        "answer_cn": "只要别"
+      },
+      {
+        "type": "order",
+        "prompt": "把词块排成自然口语：‘别只指望一个人。’",
+        "tokens": ["satu orang", "jangan", "aja", "ngandelin"],
+        "answer": "Jangan ngandelin satu orang aja.",
+        "answer_cn": "别只指望一个人。"
+      }
+    ],
+    "self_check": {
+      "prompt": "今天这些内容你感觉怎么样？",
+      "options": ["大部分能快速认出", "一半左右需要想一下", "很多还会卡"]
+    }
+  },
+  "review": [
+    "5分钟复盘①：不看答案，快速说出 keburu、terlanjur、sekalian、nyusul 的中文核心意思，再反向从中文说回印尼语。",
+    "5分钟复盘②：区分 keburu 和 terlanjur：keburu = 别的事先发生；terlanjur = 事情已经做了/已经到这一步。",
+    "5分钟复盘③：把 kepotong、kebagian、ngingetin 各放进一个自己的工作场景里；说不出来时再看例句。",
+    "5分钟复盘④：复现上午词 ngulur、ngandelin，但不要单独背，整块说 Kalau masih ngulur... / Jangan ngandelin satu orang aja。",
+    "5分钟复盘⑤：共享陌生词 kebuang 只再做一次主动调用：Waktunya jangan sampai kebuang."
+  ]
+}
