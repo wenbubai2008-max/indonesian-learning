@@ -1,0 +1,93 @@
+name: Append daily vocab 2026-09-07 PM
+on:
+  push:
+    paths:
+      - '.github/workflows/append-2026-09-07-pm-vocab.yml'
+permissions:
+  contents: write
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append or update PM lesson vocab safely
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          db_path = Path('data/daily-vocab-data.js')
+          lesson_path = Path('data/daily/2026-09-07-pm.json')
+          raw = db_path.read_text(encoding='utf-8').strip()
+          prefix = 'window.DAILY_VOCAB_DB = '
+          if not raw.startswith(prefix) or not raw.endswith(';'):
+              raise SystemExit('Unexpected DAILY_VOCAB_DB format')
+
+          db = json.loads(raw[len(prefix):-1])
+          lesson = json.loads(lesson_path.read_text(encoding='utf-8'))
+          by_key = {str(x.get('word','')).strip().lower(): x for x in db if str(x.get('word','')).strip()}
+          added = 0
+          updated = 0
+          stamp = '2026-09-07 19:00'
+          date = '2026-09-07'
+
+          for v in lesson.get('vocab', []):
+              word = str(v.get('word','')).strip()
+              key = word.lower()
+              if not key:
+                  continue
+
+              if key in by_key:
+                  item = by_key[key]
+                  categories = item.setdefault('categories', [])
+                  for c in ['每日学习', '19:00']:
+                      if c not in categories:
+                          categories.append(c)
+                  sessions = item.setdefault('sessions', [])
+                  dates = item.setdefault('dates', [])
+                  is_new_session = not ('19:00' in sessions and date in dates)
+                  if '19:00' not in sessions:
+                      sessions.append('19:00')
+                  if date not in dates:
+                      dates.append(date)
+                  if is_new_session:
+                      item['times_seen'] = int(item.get('times_seen', 0) or 0) + 1
+                  item['last_seen'] = stamp
+                  item.setdefault('first_seen', stamp)
+                  item['cn'] = v.get('cn', item.get('cn',''))
+                  item['en'] = v.get('en', item.get('en',''))
+                  item['root'] = v.get('root', item.get('root',''))
+                  item['root_cn'] = v.get('root_cn', item.get('root_cn',''))
+                  item['example'] = v.get('example', item.get('example',''))
+                  item['example_cn'] = v.get('example_cn', item.get('example_cn',''))
+                  updated += 1
+              else:
+                  item = {
+                      'word': word,
+                      'cn': v.get('cn',''),
+                      'en': v.get('en',''),
+                      'root': v.get('root',''),
+                      'root_cn': v.get('root_cn',''),
+                      'example': v.get('example',''),
+                      'example_cn': v.get('example_cn',''),
+                      'categories': ['每日学习','19:00'],
+                      'times_seen': 1,
+                      'first_seen': stamp,
+                      'last_seen': stamp,
+                      'sessions': ['19:00'],
+                      'dates': [date]
+                  }
+                  db.append(item)
+                  by_key[key] = item
+                  added += 1
+
+          db_path.write_text(prefix + json.dumps(db, ensure_ascii=False, indent=2) + ';\n', encoding='utf-8')
+          print('added', added, 'updated', updated)
+          PY
+      - name: Commit updated daily vocab DB
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily-vocab-data.js
+          git commit -m "Append 2026-09-07 PM vocab" || exit 0
+          git push
