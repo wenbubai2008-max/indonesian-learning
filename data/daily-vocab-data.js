@@ -5776,5 +5776,27 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-07"
     ]
+  },
+  {
+    "word": "nggak tega",
+    "cn": "不忍心；狠不下心（口语）",
+    "en": "cannot bear to; do not have the heart to",
+    "root": "tega",
+    "root_cn": "忍心；狠得下心",
+    "example": "Aku nggak tega nolak langsung, tapi tetap harus kasih batas yang jelas.",
+    "example_cn": "我不忍心直接拒绝，但还是得把界限说清楚。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-07"
+    ]
   }
 ];
