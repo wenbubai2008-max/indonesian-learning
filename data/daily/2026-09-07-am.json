@@ -6,173 +6,43 @@
   "day": 17,
   "title": "2026年9月7日｜Day 17",
   "vocab": [
-    {
-      "order": 161,
-      "word": "patungan",
-      "display": "patungan",
-      "audio_text": "patungan",
-      "cn": "一起分摊；凑钱；AA出钱（口语）",
-      "en": "chip in; split the cost; contribute together",
-      "root": "patungan",
-      "root_cn": "共同凑钱；分摊费用",
-      "formation": "高频日常口语词，常用于吃饭、买礼物、办公室活动一起出钱：kita patungan aja。",
-      "example": "Hadiah buat dia kita patungan aja biar nggak berat sendiri.",
-      "example_cn": "给他的礼物我们一起凑钱吧，这样不用一个人承担太多。",
-      "synonym_note": "bagi dua = 对半分；patungan 不一定平均，重点是大家一起出钱。"
-    },
-    {
-      "order": 162,
-      "word": "nombok",
-      "display": "nombok",
-      "audio_text": "nombok",
-      "cn": "自己垫钱；补差额（口语）",
-      "en": "cover the shortfall; pay extra out of pocket",
-      "root": "tombok",
-      "root_cn": "补上差额；贴补",
-      "formation": "tombok → menombok（标准）→ nombok（常见口语）；表示金额不够时自己补进去。",
-      "example": "Kasnya kurang sedikit, jadi tadi aku nombok dulu.",
-      "example_cn": "公款差一点，所以刚才我先自己垫上了。",
-      "synonym_note": "bayar = 一般付款；nombok 特指原本的钱不够，自己额外补差额。"
-    },
-    {
-      "order": 163,
-      "word": "ngirit",
-      "display": "ngirit",
-      "audio_text": "ngirit",
-      "cn": "省着花；节省开支（口语）",
-      "en": "save money; cut spending; be frugal",
-      "root": "irit",
-      "root_cn": "节省；省着用",
-      "formation": "irit → mengirit（标准）→ ngirit（雅加达常见口语）；常说 lagi ngirit。",
-      "example": "Bulan ini aku lagi ngirit, jadi jarang pesan kopi.",
-      "example_cn": "这个月我正在省钱，所以很少点咖啡。",
-      "synonym_note": "hemat 更通用，可省钱、省时间、省电；ngirit 更口语，常直接指省着花。"
-    },
-    {
-      "order": 164,
-      "word": "kemahalan",
-      "display": "kemahalan",
-      "audio_text": "kemahalan",
-      "cn": "觉得太贵；价格高过头",
-      "en": "too expensive; find something overpriced",
-      "root": "mahal",
-      "root_cn": "贵；价格高",
-      "formation": "ke- + mahal + -an → kemahalan；不是单纯‘贵’，而是‘对我来说太贵/贵过头’。",
-      "example": "Kalau segitu harganya, buat aku sih kemahalan.",
-      "example_cn": "如果是这个价格，对我来说就太贵了。",
-      "synonym_note": "mahal = 贵；kemahalan = 贵过头、觉得这个价格不能接受。"
-    },
-    {
-      "order": 165,
-      "word": "kewalahan",
-      "display": "kewalahan",
-      "audio_text": "kewalahan",
-      "cn": "忙不过来；招架不住；应付不过来",
-      "en": "overwhelmed; unable to cope",
-      "root": "kewalahan",
-      "root_cn": "应付不过来；招架不住",
-      "formation": "固定高频词，常说 kewalahan ngurus / kewalahan kerja，表示事情多到应付不过来。",
-      "example": "Kalau semua masuk hari ini, tim kecil kita bisa kewalahan.",
-      "example_cn": "如果所有事情今天都进来，我们这个小团队可能会忙不过来。",
-      "synonym_note": "sibuk = 忙；kewalahan 更强，表示已经快处理不过来了。"
-    },
-    {
-      "order": 166,
-      "word": "keteteran",
-      "display": "keteteran",
-      "audio_text": "keteteran",
-      "cn": "跟不上；忙得顾不过来；进度落后（口语）",
-      "en": "fall behind; struggle to keep up",
-      "root": "keteteran",
-      "root_cn": "跟不上；顾不过来",
-      "formation": "固定高频口语词，常用于工作、学习、进度：keteteran kerja / keteteran ngikutin update。",
-      "example": "Minggu ini meeting terlalu banyak, jadi kerjaan utama agak keteteran.",
-      "example_cn": "这周会议太多，所以主要工作有点跟不上进度。",
-      "synonym_note": "kewalahan 强调压力大到应付不过来；keteteran 更强调进度或任务开始跟不上。"
-    },
-    {
-      "order": 167,
-      "word": "ngulur",
-      "display": "ngulur",
-      "audio_text": "ngulur",
-      "cn": "拖时间；故意往后拖（口语）",
-      "en": "stall; drag out; delay deliberately",
-      "root": "ulur",
-      "root_cn": "延长；往外放；拖长",
-      "formation": "ulur → mengulur（标准）→ ngulur（口语）；ngulur waktu = 拖时间，是工作沟通里很常见的搭配。",
-      "example": "Kalau vendor terus ngulur waktu, deadline kita ikut kena.",
-      "example_cn": "如果供应商一直拖时间，我们的截止时间也会受影响。",
-      "synonym_note": "tunda = 推迟某件事；ngulur 强调把时间故意拖长、迟迟不处理。"
-    },
-    {
-      "order": 168,
-      "word": "terpaksa",
-      "display": "terpaksa",
-      "audio_text": "terpaksa",
-      "cn": "不得不；被迫；没办法只好",
-      "en": "be forced to; have no choice but to",
-      "root": "paksa",
-      "root_cn": "强迫；逼迫",
-      "formation": "ter- + paksa → terpaksa，表示不是主动选择，而是因为情况所迫只能这么做。",
-      "example": "Karena sistemnya error, kami terpaksa input ulang datanya.",
-      "example_cn": "因为系统出错，我们没办法，只好重新录入数据。",
-      "synonym_note": "harus = 必须；terpaksa 多了一层‘本来不想这样，但没别的办法’。"
-    },
-    {
-      "order": 169,
-      "word": "nggak enakan",
-      "display": "nggak enakan",
-      "audio_text": "nggak enakan",
-      "cn": "不好意思拒绝；怕麻烦别人；碍于情面",
-      "en": "feel bad saying no; be reluctant to inconvenience others",
-      "root": "enak",
-      "root_cn": "舒服；合适；好受",
-      "formation": "口语固定表达：nggak + enakan。不是‘不舒服’，而是在人际关系里因为顾及情面而不好意思拒绝或催促。",
-      "example": "Aku sebenarnya nggak enakan nagih dia, tapi tagihannya sudah lewat.",
-      "example_cn": "其实我不太好意思催他，但这笔账已经过期了。",
-      "synonym_note": "malu = 害羞/不好意思；nggak enakan 更强调怕给别人压力、怕伤情面。"
-    },
-    {
-      "order": 170,
-      "word": "nanggung",
-      "display": "nanggung",
-      "audio_text": "nanggung",
-      "cn": "做到一半很尴尬；不上不下；既然都做到这了（口语）",
-      "en": "awkwardly incomplete; halfway; might as well finish",
-      "root": "tanggung",
-      "root_cn": "承担；未完全结束（相关语境）",
-      "formation": "雅加达高频口语。常说 nanggung banget 或 udah nanggung，表示事情卡在一半，停下反而不划算。",
-      "example": "Udah nanggung, sekalian beresin sekarang aja.",
-      "example_cn": "都已经做到这个份上了，干脆现在顺便弄完吧。",
-      "synonym_note": "setengah = 一半，是客观数量；nanggung 带有‘卡在一半、不继续很别扭’的语感。"
-    }
+    {"order":161,"word":"patungan","display":"patungan","audio_text":"patungan","cn":"一起分摊；凑钱；AA出钱（口语）","en":"chip in; split the cost; contribute together","root":"patungan","root_cn":"共同凑钱；分摊费用","formation":"高频日常口语词，常用于吃饭、买礼物、办公室活动一起出钱：kita patungan aja。","example":"Hadiah buat dia kita patungan aja biar nggak berat sendiri.","example_cn":"给他的礼物我们一起凑钱吧，这样不用一个人承担太多。","synonym_note":"bagi dua = 对半分；patungan 不一定平均，重点是大家一起出钱。"},
+    {"order":162,"word":"nombok","display":"nombok","audio_text":"nombok","cn":"自己垫钱；补差额（口语）","en":"cover the shortfall; pay extra out of pocket","root":"tombok","root_cn":"补上差额；贴补","formation":"tombok → menombok（标准）→ nombok（常见口语）；表示金额不够时自己补进去。","example":"Kasnya kurang sedikit, jadi tadi aku nombok dulu.","example_cn":"公款差一点，所以刚才我先自己垫上了。","synonym_note":"bayar = 一般付款；nombok 特指原本的钱不够，自己额外补差额。"},
+    {"order":163,"word":"ngirit","display":"ngirit","audio_text":"ngirit","cn":"省着花；节省开支（口语）","en":"save money; cut spending; be frugal","root":"irit","root_cn":"节省；省着用","formation":"irit → mengirit（标准）→ ngirit（雅加达常见口语）；常说 lagi ngirit。","example":"Bulan ini aku lagi ngirit, jadi jarang pesan kopi.","example_cn":"这个月我正在省钱，所以很少点咖啡。","synonym_note":"hemat 更通用，可省钱、省时间、省电；ngirit 更口语，常直接指省着花。"},
+    {"order":164,"word":"kemahalan","display":"kemahalan","audio_text":"kemahalan","cn":"觉得太贵；价格高过头","en":"too expensive; find something overpriced","root":"mahal","root_cn":"贵；价格高","formation":"ke- + mahal + -an → kemahalan；不是单纯‘贵’，而是‘对我来说太贵/贵过头’。","example":"Kalau segitu harganya, buat aku sih kemahalan.","example_cn":"如果是这个价格，对我来说就太贵了。","synonym_note":"mahal = 贵；kemahalan = 贵过头、觉得这个价格不能接受。"},
+    {"order":165,"word":"kewalahan","display":"kewalahan","audio_text":"kewalahan","cn":"忙不过来；招架不住；应付不过来","en":"overwhelmed; unable to cope","root":"kewalahan","root_cn":"应付不过来；招架不住","formation":"固定高频词，常说 kewalahan ngurus / kewalahan kerja，表示事情多到应付不过来。","example":"Kalau semua masuk hari ini, tim kecil kita bisa kewalahan.","example_cn":"如果所有事情今天都进来，我们这个小团队可能会忙不过来。","synonym_note":"sibuk = 忙；kewalahan 更强，表示已经快处理不过来了。"},
+    {"order":166,"word":"keteteran","display":"keteteran","audio_text":"keteteran","cn":"跟不上；忙得顾不过来；进度落后（口语）","en":"fall behind; struggle to keep up","root":"keteteran","root_cn":"跟不上；顾不过来","formation":"固定高频口语词，常用于工作、学习、进度：keteteran kerja / keteteran ngikutin update。","example":"Minggu ini meeting terlalu banyak, jadi kerjaan utama agak keteteran.","example_cn":"这周会议太多，所以主要工作有点跟不上进度。","synonym_note":"kewalahan 强调压力大到应付不过来；keteteran 更强调进度或任务开始跟不上。"},
+    {"order":167,"word":"ngulur","display":"ngulur","audio_text":"ngulur","cn":"拖时间；故意往后拖（口语）","en":"stall; drag out; delay deliberately","root":"ulur","root_cn":"延长；往外放；拖长","formation":"ulur → mengulur（标准）→ ngulur（口语）；ngulur waktu = 拖时间，是工作沟通里很常见的搭配。","example":"Kalau vendor terus ngulur waktu, deadline kita ikut kena.","example_cn":"如果供应商一直拖时间，我们的截止时间也会受影响。","synonym_note":"tunda = 推迟某件事；ngulur 强调把时间故意拖长、迟迟不处理。"},
+    {"order":168,"word":"ngandelin","display":"ngandelin","audio_text":"ngandelin","cn":"依赖；指望；靠某人/某事（口语）","en":"rely on; count on; depend on","root":"andal","root_cn":"可靠；可依靠","formation":"andal → mengandalkan（标准）→ ngandelin（雅加达常见口语）；常说 jangan ngandelin satu orang。","example":"Jangan ngandelin satu vendor aja, siapin pilihan cadangan juga.","example_cn":"别只依赖一家供应商，也准备一个备用选择。","synonym_note":"tergantung = 取决于；ngandelin 更强调主动把希望或任务寄托在某人/某事上。"},
+    {"order":169,"word":"nggak enakan","display":"nggak enakan","audio_text":"nggak enakan","cn":"不好意思拒绝；怕麻烦别人；碍于情面","en":"feel bad saying no; be reluctant to inconvenience others","root":"enak","root_cn":"舒服；合适；好受","formation":"口语固定表达：nggak + enakan。不是‘不舒服’，而是在人际关系里因为顾及情面而不好意思拒绝或催促。","example":"Aku sebenarnya nggak enakan nagih dia, tapi tagihannya sudah lewat.","example_cn":"其实我不太好意思催他，但这笔账已经过期了。","synonym_note":"malu = 害羞/不好意思；nggak enakan 更强调怕给别人压力、怕伤情面。"},
+    {"order":170,"word":"nanggung","display":"nanggung","audio_text":"nanggung","cn":"做到一半很尴尬；不上不下；既然都做到这了（口语）","en":"awkwardly incomplete; halfway; might as well finish","root":"tanggung","root_cn":"承担；未完全结束（相关语境）","formation":"雅加达高频口语。常说 nanggung banget 或 udah nanggung，表示事情卡在一半，停下反而不划算。","example":"Udah nanggung, sekalian beresin sekarang aja.","example_cn":"都已经做到这个份上了，干脆现在顺便弄完吧。","synonym_note":"setengah = 一半，是客观数量；nanggung 带有‘卡在一半、不继续很别扭’的语感。"}
   ],
   "sentences": [
-    {"id": "Budget-nya mepet, jadi beberapa biaya kecil kita patungan aja.", "cn": "预算很紧，所以几笔小费用我们就一起分摊吧。"},
-    {"id": "Kasnya kurang, tadi aku nombok dulu; nanti kalau saldo masuk baru diganti.", "cn": "公款不够，刚才我先垫了；等余额到账后再补给我。"},
-    {"id": "Aku lagi ngirit, jadi kalau tempatnya kemahalan aku cari pilihan lain.", "cn": "我最近在省钱，所以如果那家太贵，我就找别的选择。"},
-    {"id": "Kerjaan lagi banyak; kalau semua diambil sendiri, kita bisa kewalahan dan keteteran.", "cn": "工作正多着；如果全都自己接下来，可能会忙不过来而且跟不上进度。"},
-    {"id": "Vendor-nya terus ngulur waktu, jadi aku terpaksa nagih walaupun agak nggak enakan.", "cn": "供应商一直拖时间，所以虽然有点碍于情面，我还是不得不催。"}
+    {"id":"Budget-nya mepet, jadi beberapa biaya kecil kita patungan aja.","cn":"预算很紧，所以几笔小费用我们就一起分摊吧。"},
+    {"id":"Kasnya kurang, tadi aku nombok dulu; nanti kalau saldo masuk baru diganti.","cn":"公款不够，刚才我先垫了；等余额到账后再补给我。"},
+    {"id":"Aku lagi ngirit, jadi kalau tempatnya kemahalan aku cari pilihan lain.","cn":"我最近在省钱，所以如果那家太贵，我就找别的选择。"},
+    {"id":"Kerjaan lagi banyak; kalau semua diambil sendiri, kita bisa kewalahan dan keteteran.","cn":"工作正多着；如果全都自己接下来，可能会忙不过来而且跟不上进度。"},
+    {"id":"Vendor-nya terus ngulur waktu, jadi jangan ngandelin dia sendirian walaupun kita agak nggak enakan.","cn":"供应商一直拖时间，所以即使我们有点碍于情面，也别只指望他一家。"}
   ],
   "reading": {
-    "title": "Budget Mepet, Kerjaan Jangan Ikut Keteteran",
-    "text": "Pagi ini tim lagi bahas biaya acara kantor. Budget-nya mepet, jadi kami sepakat patungan buat beberapa kebutuhan kecil. Ada satu teman yang sempat nombok karena saldo kas kurang. Aku juga lagi ngirit, jadi pas lihat tempat yang kemahalan, langsung cari pilihan lain. Kerjaan pagi ini lumayan banyak dan aku hampir kewalahan, tapi nggak sampai keteteran karena tugasnya dibagi. Satu vendor terus ngulur waktu, jadi kami terpaksa kasih batas jam. Aku sebenarnya nggak enakan buat nagih. Tapi kalau dibiarkan nanggung, urusannya malah nggak beres. Untung akhirnya semua nyambung dan tagihannya bisa ditutup hari ini.",
-    "cn": "今天早上团队在讨论办公室活动的费用。预算很紧，所以我们决定几笔小费用大家一起分摊。有个同事因为公款余额不够，刚才先自己垫了一部分。我最近也在省钱，所以看到某个地方贵过头，就马上找其他选择。今天早上的工作挺多，我差点忙不过来，不过因为任务分开了，还没有到跟不上进度的程度。有一家供应商一直拖时间，所以我们不得不给出明确的时间限制。其实我不太好意思催款，但如果事情一直卡在一半，反而更难收尾。还好最后所有事情都衔接上了，账单今天也能处理完。",
-    "vocab": ["mepet", "patungan", "nombok", "saldo", "ngirit", "kemahalan", "kewalahan", "keteteran", "ngulur", "terpaksa", "nggak enakan", "nanggung", "nyambung", "tagihan"]
+    "title":"Budget Mepet, Kerjaan Jangan Ikut Keteteran",
+    "text":"Pagi ini tim lagi bahas biaya acara kantor. Budget-nya mepet, jadi kami sepakat patungan buat beberapa kebutuhan kecil. Ada satu teman yang sempat nombok karena saldo kas kurang. Aku juga lagi ngirit, jadi pas lihat tempat yang kemahalan, langsung cari pilihan lain. Kerjaan pagi ini lumayan banyak dan aku hampir kewalahan, tapi nggak sampai keteteran karena tugasnya dibagi. Satu vendor terus ngulur waktu, jadi kami nggak mau ngandelin dia sendirian. Aku sebenarnya nggak enakan buat nagih. Tapi kalau dibiarkan nanggung, urusannya malah nggak beres. Untung akhirnya semua nyambung dan tagihannya bisa ditutup hari ini.",
+    "cn":"今天早上团队在讨论办公室活动的费用。预算很紧，所以我们决定几笔小费用大家一起分摊。有个同事因为公款余额不够，刚才先自己垫了一部分。我最近也在省钱，所以看到某个地方贵过头，就马上找其他选择。今天早上的工作挺多，我差点忙不过来，不过因为任务分开了，还没有到跟不上进度的程度。有一家供应商一直拖时间，所以我们不想只依赖他一家。其实我不太好意思催款，但如果事情一直卡在一半，反而更难收尾。还好最后所有事情都衔接上了，账单今天也能处理完。",
+    "vocab":["mepet","patungan","nombok","saldo","ngirit","kemahalan","kewalahan","keteteran","ngulur","ngandelin","nggak enakan","nanggung","nyambung","tagihan"]
   },
   "quiz": [
-    {"question": "“Kasnya kurang, jadi aku nombok dulu.” 最自然的意思是：", "options": ["公款不够，所以我先自己垫上", "公款太多，所以我先取走", "公款不够，所以我取消付款"], "answer_index": 0, "explain": "nombok 指原来的钱不够时，自己额外补上差额。"},
-    {"question": "kewalahan 和 keteteran 最自然的区别是：", "options": ["kewalahan 偏应付不过来；keteteran 偏进度开始跟不上", "kewalahan 是省钱；keteteran 是垫钱", "两个词只表示迟到"], "answer_index": 0, "explain": "两者都可表示忙不过来，但 kewalahan 更偏整体压力，keteteran 更偏任务或进度跟不上。"},
-    {"question": "复习：想说‘文件内容能接得上、逻辑说得通’，最自然的是：", "options": ["nyambung", "nyasar", "bungkus"], "answer_index": 0, "explain": "nyambung 是之前学过的高频口语，可表示连接得上、逻辑说得通或两个人聊得来。"}
+    {"question":"“Kasnya kurang, jadi aku nombok dulu.” 最自然的意思是：","options":["公款不够，所以我先自己垫上","公款太多，所以我先取走","公款不够，所以我取消付款"],"answer_index":0,"explain":"nombok 指原来的钱不够时，自己额外补上差额。"},
+    {"question":"kewalahan 和 keteteran 最自然的区别是：","options":["kewalahan 偏应付不过来；keteteran 偏进度开始跟不上","kewalahan 是省钱；keteteran 是垫钱","两个词只表示迟到"],"answer_index":0,"explain":"两者都可表示忙不过来，但 kewalahan 更偏整体压力，keteteran 更偏任务或进度跟不上。"},
+    {"question":"复习：想说‘文件内容能接得上、逻辑说得通’，最自然的是：","options":["nyambung","nyasar","bungkus"],"answer_index":0,"explain":"nyambung 是之前学过的高频口语，可表示连接得上、逻辑说得通或两个人聊得来。"}
   ],
   "output": {
-    "task": "用自然口语表达：‘预算有点紧，我们一起分摊吧。刚才钱不够，我先垫了一点。我最近也在省钱。供应商还一直拖时间，所以虽然有点不好意思，我还是得催一下。’",
-    "reference_answer": "Budget-nya agak mepet, kita patungan aja. Tadi uangnya kurang, jadi aku nombok sedikit dulu. Aku juga lagi ngirit. Vendor-nya masih ngulur waktu, jadi walaupun agak nggak enakan, aku tetap harus nagih.",
-    "reference_cn": "预算有点紧，我们一起分摊吧。刚才钱不够，我先垫了一点。我最近也在省钱。供应商还一直拖时间，所以虽然有点不好意思，我还是得催一下。"
+    "task":"用自然口语表达：‘预算有点紧，我们一起分摊吧。刚才钱不够，我先垫了一点。我最近也在省钱。供应商还一直拖时间，所以别只指望他一家。虽然有点不好意思，我还是得催一下。’",
+    "reference_answer":"Budget-nya agak mepet, kita patungan aja. Tadi uangnya kurang, jadi aku nombok sedikit dulu. Aku juga lagi ngirit. Vendor-nya masih ngulur waktu, jadi jangan ngandelin dia sendirian. Walaupun agak nggak enakan, aku tetap harus nagih.",
+    "reference_cn":"预算有点紧，我们一起分摊吧。刚才钱不够，我先垫了一点。我最近也在省钱。供应商还一直拖时间，所以别只指望他一家。虽然有点不好意思，我还是得催一下。"
   },
   "review": [
     "钱和分摊场景重点区分：patungan = 大家一起出钱；nombok = 自己补差额；ngirit = 省着花；kemahalan = 觉得贵过头。",
-    "工作压力场景区分：kewalahan = 整体应付不过来；keteteran = 任务/进度开始跟不上；ngulur = 故意拖时间；terpaksa = 情况所迫不得不。",
+    "工作压力场景区分：kewalahan = 整体应付不过来；keteteran = 任务/进度开始跟不上；ngulur = 故意拖时间；ngandelin = 依赖/指望。",
     "轮换复习旧词：mepet、saldo、nyambung、tagihan，并在小测复习 nyambung；避免继续重复前一天以 murah/mahal/naik/turun 为核心的基础词。"
   ]
 }
