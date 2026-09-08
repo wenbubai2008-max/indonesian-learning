@@ -5884,5 +5884,225 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Jam berapa aja boleh, asal jangan terlalu malam.",
     "example_cn": "几点都可以，只要别太晚就行。"
+  },
+  {
+    "word": "ketahuan",
+    "cn": "被发现；被看出来；终于查到（口语）",
+    "en": "get found out; be discovered",
+    "root": "tahu",
+    "root_cn": "知道；了解",
+    "example": "Untung salahnya ketahuan sebelum file dikirim ke klien.",
+    "example_cn": "还好错误在文件发给客户之前被发现了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-08"
+    ]
+  },
+  {
+    "word": "kepepet",
+    "cn": "被逼到没余地；时间/钱紧到不得不处理（口语）",
+    "en": "be pressed; be in a tight spot",
+    "root": "pepet",
+    "root_cn": "逼近；紧逼",
+    "example": "Kalau udah kepepet deadline, biasanya malah susah fokus.",
+    "example_cn": "如果已经被截止时间逼得很紧，通常反而很难专心。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-08"
+    ]
+  },
+  {
+    "word": "keduluan",
+    "cn": "被别人抢先；还没来得及就被先做了（口语）",
+    "en": "be beaten to it; someone gets there first",
+    "root": "dulu",
+    "root_cn": "先；以前",
+    "example": "Aku mau booking tempat itu, tapi keduluan tim lain.",
+    "example_cn": "我本来想订那个地方，但被别的团队抢先了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-08"
+    ]
+  },
+  {
+    "word": "kecolongan",
+    "cn": "一时疏忽没防住；漏掉重要问题",
+    "en": "be caught off guard; let something slip through",
+    "root": "colong",
+    "root_cn": "偷拿；趁人不注意拿走",
+    "example": "Kita kecolongan satu detail kecil di invoice kemarin.",
+    "example_cn": "我们昨天的发票里漏掉了一个小细节。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-08"
+    ]
+  },
+  {
+    "word": "nyangkut",
+    "cn": "卡住；挂住；事情卡在某一步（口语）",
+    "en": "get stuck; be held up",
+    "root": "sangkut",
+    "root_cn": "挂住；卡住；牵连",
+    "example": "Dokumennya masih nyangkut di bagian approval, jadi belum bisa lanjut.",
+    "example_cn": "文件还卡在审批环节，所以暂时没法继续。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-08"
+    ]
+  },
+  {
+    "word": "nyicil",
+    "cn": "一点点做完；分批处理；分期付（口语）",
+    "en": "do gradually; pay in installments",
+    "root": "cicil",
+    "root_cn": "分期；分批完成",
+    "example": "Daripada numpuk sore nanti, mending dari pagi aku nyicil kerjaannya.",
+    "example_cn": "与其下午全堆起来，不如我从早上开始一点点把工作做掉。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-08"
+    ]
+  },
+  {
+    "word": "nyelip",
+    "cn": "夹进去；塞在中间；顺便插进一件事（口语）",
+    "en": "slip in; squeeze in between",
+    "root": "selip",
+    "root_cn": "夹入；插入",
+    "example": "Kalau ada waktu kosong setengah jam, aku mau nyelip satu tugas kecil.",
+    "example_cn": "如果有半小时空档，我想顺便插进一个小任务做掉。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-08"
+    ]
+  },
+  {
+    "word": "ngebut",
+    "cn": "加速赶；猛赶进度；开快车（口语）",
+    "en": "rush; speed up; work at full speed",
+    "root": "kebut",
+    "root_cn": "快速赶；高速行进",
+    "example": "Kalau baru mulai sore, nanti kita harus ngebut sebelum deadline.",
+    "example_cn": "如果下午才开始，我们截止前就得猛赶进度了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-08"
+    ]
+  },
+  {
+    "word": "ngurusin",
+    "cn": "处理；操心；负责某件事（口语）",
+    "en": "take care of; deal with; handle",
+    "root": "urus",
+    "root_cn": "处理；料理；负责",
+    "example": "Pagi ini aku harus ngurusin dokumen dulu sebelum meeting.",
+    "example_cn": "今天早上开会前我得先处理文件。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-08"
+    ]
+  },
+  {
+    "word": "kebawa",
+    "cn": "不小心带走；被带着影响；情绪被带进去（口语）",
+    "en": "get carried along; accidentally take; be influenced",
+    "root": "bawa",
+    "root_cn": "带；携带",
+    "example": "Aku tadi kebawa suasana ngobrol sampai lupa waktu.",
+    "example_cn": "我刚才聊天聊得太投入，被气氛带着走，结果忘了时间。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-08"
+    ]
   }
 ];
