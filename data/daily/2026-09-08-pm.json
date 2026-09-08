@@ -1,0 +1,301 @@
+{
+  "date": "2026-09-08",
+  "session": "pm",
+  "time": "19:00",
+  "level": "A2+ → B1",
+  "day": 18,
+  "title": "2026年9月8日｜19:00 晚间学习｜复习应用：别让小问题越拖越大",
+  "duration": "45–60分钟",
+  "mode": "复习 + 应用 + 少量补充新词",
+  "vocab": [
+    {
+      "word": "ngerembet",
+      "display": "ngerembet",
+      "audio_text": "ngerembet",
+      "cn": "蔓延到；牵连到别的问题（口语）",
+      "en": "spread to; spill over into",
+      "root": "rembet",
+      "root_cn": "蔓延；牵连",
+      "formation": "merembet（标准）→ ngerembet（雅加达常见口语）；常说 masalahnya ngerembet ke bagian lain。",
+      "example": "Kalau masalah kecil ini nggak diberesin, nanti bisa ngerembet ke bagian lain.",
+      "example_cn": "如果这个小问题不处理好，之后可能会蔓延到其他部分。",
+      "usage_note": "高价值工作口语。既可说问题、影响、情绪，也可说 biaya ngerembet ke... 表示成本牵连到别处。"
+    },
+    {
+      "word": "ketutup",
+      "display": "ketutup",
+      "audio_text": "ketutup",
+      "cn": "被盖住；被其他事情淹没而没注意到（口语）",
+      "en": "get covered; be buried/overlooked",
+      "root": "tutup",
+      "root_cn": "关闭；盖住",
+      "formation": "tertutup（标准）→ ketutup（口语）；工作聊天里常说 chat-nya ketutup / poinnya ketutup。",
+      "example": "Chat vendor tadi ketutup pesan lain, jadi aku baru sadar sekarang.",
+      "example_cn": "刚才供应商的消息被其他消息淹没了，所以我现在才注意到。",
+      "usage_note": "很适合聊天、工作群和消息场景；不是单纯‘关上’，而是‘被盖住/被淹没’。"
+    },
+    {
+      "word": "nahan dulu",
+      "display": "nahan dulu",
+      "audio_text": "nahan dulu",
+      "cn": "先按住；先别推进；暂缓一下（口语）",
+      "en": "hold off for now; pause temporarily",
+      "root": "tahan",
+      "root_cn": "忍住；承受；阻止继续",
+      "formation": "menahan（标准）→ nahan（口语）+ dulu；固定词块 nahan dulu = 先暂缓。",
+      "example": "Bagian ini mending kita nahan dulu sampai datanya jelas.",
+      "example_cn": "这一部分我们最好先暂缓，等数据明确了再说。",
+      "usage_note": "适合办公室讨论，比 langsung batal 更轻，强调‘先暂停，不代表取消’。"
+    },
+    {
+      "word": "kebuang",
+      "display": "kebuang",
+      "audio_text": "kebuang",
+      "cn": "被白白浪费掉",
+      "en": "go to waste; be wasted",
+      "root": "buang",
+      "root_cn": "扔掉；浪费",
+      "formation": "terbuang（标准）→ kebuang（口语）。",
+      "example": "Jangan nunggu terlalu lama tanpa keputusan, nanti waktunya kebuang.",
+      "example_cn": "别在没有决定的情况下等太久，不然时间会白白浪费。",
+      "usage_note": "共享陌生词库弱项词；今晚放进工作安排语境继续调用。"
+    },
+    {
+      "word": "kewalahan",
+      "display": "kewalahan",
+      "audio_text": "kewalahan",
+      "cn": "忙不过来；招架不住",
+      "en": "overwhelmed; unable to cope",
+      "root": "kewalahan",
+      "root_cn": "应付不过来；招架不住",
+      "formation": "固定状态词，常与 tim / orang / kerjaan 搭配。",
+      "example": "Kalau semua tugas masuk barengan, tim kecil kita bisa kewalahan.",
+      "example_cn": "如果所有任务一起进来，我们这个小团队可能会忙不过来。",
+      "usage_note": "近期词，今晚重点练和工作量、优先级一起使用。"
+    },
+    {
+      "word": "nggak enakan",
+      "display": "nggak enakan",
+      "audio_text": "nggak enakan",
+      "cn": "不好意思拒绝；碍于情面",
+      "en": "feel bad saying no; be reluctant to inconvenience others",
+      "root": "enak",
+      "root_cn": "舒服；合适；好受",
+      "formation": "nggak + enak + -an；口语固定状态表达，强调因为情面而不太敢拒绝或催促。",
+      "example": "Aku nggak enakan nagih lagi, tapi kalau didiemin terus malah makin lama.",
+      "example_cn": "我不太好意思再催，但如果一直不说，反而会拖得更久。",
+      "usage_note": "生活和办公室都很常用，尤其描述‘怕麻烦别人/不好意思开口’。"
+    },
+    {
+      "word": "nyangkut",
+      "display": "nyangkut",
+      "audio_text": "nyangkut",
+      "cn": "卡住；事情卡在某一步",
+      "en": "get stuck; be held up",
+      "root": "sangkut",
+      "root_cn": "挂住；卡住；牵连",
+      "formation": "tersangkut（较标准）→ nyangkut（高频口语）。",
+      "example": "Approval-nya masih nyangkut di satu orang, jadi proses berikutnya belum jalan.",
+      "example_cn": "审批还卡在一个人那里，所以后面的流程还没动。",
+      "usage_note": "今天08:00词，今晚不当新词，重点练具体工作语境。"
+    },
+    {
+      "word": "kecolongan",
+      "display": "kecolongan",
+      "audio_text": "kecolongan",
+      "cn": "一时疏忽没防住；漏掉问题",
+      "en": "be caught off guard; let something slip through",
+      "root": "colong",
+      "root_cn": "偷拿；趁人不注意拿走",
+      "formation": "ke-...-an 状态词；常比喻检查时没把住关。",
+      "example": "Kemarin kita kecolongan satu angka di laporan, jadi hari ini harus lebih teliti.",
+      "example_cn": "昨天我们报告里漏掉了一个数字，所以今天得更仔细。",
+      "usage_note": "今天08:00词，今晚与 ketutup 对比：ketutup 是被别的东西淹没；kecolongan 是本应检查到却漏过去。"
+    },
+    {
+      "word": "nyicil",
+      "display": "nyicil",
+      "audio_text": "nyicil",
+      "cn": "一点点做完；分批处理",
+      "en": "do gradually; pay in installments",
+      "root": "cicil",
+      "root_cn": "分期；分批完成",
+      "formation": "mencicil（标准）→ nyicil（口语）。",
+      "example": "Daripada malam nanti ngebut, aku pilih nyicil dari sekarang.",
+      "example_cn": "与其今晚再猛赶，我选择从现在开始一点点做。",
+      "usage_note": "今天08:00词；今晚重点把它和 ngebut / kepepet 做反向对比。"
+    },
+    {
+      "word": "kepepet",
+      "display": "kepepet",
+      "audio_text": "kepepet",
+      "cn": "被逼到很紧；没什么余地",
+      "en": "be pressed; be in a tight spot",
+      "root": "pepet",
+      "root_cn": "逼近；紧逼",
+      "formation": "口语状态词，常说 kepepet deadline / kepepet duit。",
+      "example": "Jangan tunggu sampai kepepet baru beresin semuanya.",
+      "example_cn": "别等到已经被逼得很紧了才一次性把所有事情处理掉。",
+      "usage_note": "今天08:00词；今晚练‘提前处理 vs 被逼到最后’的表达。"
+    }
+  ],
+  "morphology": [
+    {
+      "form": "ngerembet",
+      "root": "rembet",
+      "root_cn": "蔓延；牵连",
+      "formation": "merembet → ngerembet",
+      "explain_cn": "雅加达口语里常把 meN- 形式口语化成 nge-/ng-，这里表示问题或影响蔓延到别处。",
+      "example": "Masalahnya mulai ngerembet ke tim lain.",
+      "example_cn": "这个问题开始牵连到别的团队了。"
+    },
+    {
+      "form": "ketutup",
+      "root": "tutup",
+      "root_cn": "关闭；盖住",
+      "formation": "tertutup → ketutup",
+      "explain_cn": "口语中 ke- 常替代部分 ter- 状态表达，表示被盖住、被淹没。",
+      "example": "Pesannya ketutup chat baru.",
+      "example_cn": "这条消息被新的聊天消息淹没了。"
+    },
+    {
+      "form": "nahan",
+      "root": "tahan",
+      "root_cn": "忍住；承受；阻止继续",
+      "formation": "menahan → nahan",
+      "explain_cn": "nahan dulu 在工作口语里常表示暂缓，不等于取消。",
+      "example": "Kita nahan dulu keputusan ini.",
+      "example_cn": "我们先暂缓这个决定。"
+    },
+    {
+      "form": "kecolongan",
+      "root": "colong",
+      "root_cn": "偷拿；趁人不注意拿走",
+      "formation": "ke- + colong + -an → kecolongan",
+      "explain_cn": "从‘趁没注意被拿走’延伸为‘本该防住，却因疏忽漏过去’。",
+      "example": "Kita kecolongan satu detail penting.",
+      "example_cn": "我们漏掉了一个重要细节。"
+    },
+    {
+      "form": "nyicil",
+      "root": "cicil",
+      "root_cn": "分期；分批完成",
+      "formation": "mencicil → nyicil",
+      "explain_cn": "除了分期付款，也很常用于工作：把大任务拆开一点点做。",
+      "example": "Aku nyicil laporan dari pagi.",
+      "example_cn": "我从早上开始一点点做报告。"
+    }
+  ],
+  "rewrite": [
+    {
+      "task": "中文→印尼语：如果这个问题不处理，之后可能会牵连到其他部分。",
+      "reference_answer": "Kalau masalah ini nggak diberesin, nanti bisa ngerembet ke bagian lain.",
+      "reference_cn": "如果这个问题不处理，之后可能会牵连到其他部分。"
+    },
+    {
+      "task": "情境改写：供应商的消息被群里其他消息淹没了，所以你现在才看到。",
+      "reference_answer": "Chat vendor tadi ketutup pesan lain, jadi aku baru lihat sekarang.",
+      "reference_cn": "供应商刚才的消息被其他消息淹没了，所以我现在才看到。"
+    },
+    {
+      "task": "中文→印尼语：这一部分先别推进，等数据明确了再说。",
+      "reference_answer": "Bagian ini kita nahan dulu sampai datanya jelas.",
+      "reference_cn": "这一部分先别推进，等数据明确了再说。"
+    },
+    {
+      "task": "情境造句：工作很多，但你不想最后被 deadline 逼得太紧，所以准备现在一点点做。",
+      "reference_answer": "Kerjaannya lumayan banyak, jadi aku mau nyicil dari sekarang biar nanti nggak kepepet deadline.",
+      "reference_cn": "工作挺多，所以我想从现在开始一点点做，免得之后被截止时间逼得太紧。"
+    },
+    {
+      "task": "中文→印尼语：我有点不好意思再催，但如果一直不说，时间反而会浪费。",
+      "reference_answer": "Aku agak nggak enakan nagih lagi, tapi kalau didiemin terus waktunya malah kebuang.",
+      "reference_cn": "我有点不好意思再催，但如果一直不说，时间反而会浪费。"
+    }
+  ],
+  "reading": {
+    "title": "Jangan Tunggu Sampai Kepepet",
+    "text": "Hari ini ada beberapa kerjaan yang masih nyangkut. Satu chat vendor sempat ketutup pesan lain, dan kemarin kami juga kecolongan satu detail kecil. Aku sebenarnya agak nggak enakan nagih lagi, tapi kalau didiemin terus waktunya malah kebuang. Jadi bagian yang datanya belum jelas kami nahan dulu, sementara tugas lain mulai aku nyicil dari sekarang. Kalau semua dibiarkan sampai mepet, tim kecil bisa kewalahan dan masalahnya malah ngerembet ke bagian lain. Menurutku lebih enak beresin sedikit-sedikit daripada nanti kepepet lalu harus ngebut semuanya sekaligus.",
+    "cn": "今天还有几项工作卡着。有一条供应商消息被其他消息淹没了，昨天我们也因为疏忽漏掉了一个小细节。其实我有点不好意思再催，但如果一直不处理，时间反而会白白浪费。所以数据还不明确的部分我们先暂缓，其他任务我从现在开始一点点做。如果所有事情都拖到时间很紧，小团队可能会忙不过来，问题还会牵连到其他部分。我觉得一点点处理，比最后被逼得很紧再一次性猛赶舒服得多。",
+    "vocab": ["nyangkut", "ketutup", "kecolongan", "nggak enakan", "kebuang", "nahan dulu", "nyicil", "kewalahan", "ngerembet", "kepepet"],
+    "questions": [
+      {
+        "question": "为什么文中的人决定先 nahan dulu 一部分工作？",
+        "reference_answer": "Karena datanya belum jelas, jadi bagian itu ditahan dulu sementara tugas lain dikerjain.",
+        "reference_cn": "因为数据还不明确，所以那部分先暂缓，同时处理其他任务。"
+      },
+      {
+        "question": "如果所有事情都拖到最后，文中说可能出现哪两个问题？请用印尼语回答。",
+        "reference_answer": "Tim bisa kewalahan dan masalahnya bisa ngerembet ke bagian lain.",
+        "reference_cn": "团队可能会忙不过来，而且问题可能会牵连到其他部分。"
+      }
+    ]
+  },
+  "dialogue": {
+    "title": "雅加达办公室：一个流程卡住了",
+    "lines": [
+      {"speaker": "A", "id": "Yang approval kemarin masih nyangkut ya?", "cn": "昨天那个审批还卡着吗？"},
+      {"speaker": "B", "id": "Iya. Chat terakhirnya juga sempat ketutup, jadi aku baru follow up lagi tadi.", "cn": "对。最后一条消息之前也被淹没了，所以我刚才才又跟进。"},
+      {"speaker": "A", "id": "Kalau datanya belum jelas, bagian itu nahan dulu aja deh.", "cn": "如果数据还不清楚，那部分就先暂缓吧。"},
+      {"speaker": "B", "id": "Setuju. Yang lain aku nyicil dulu biar nggak kepepet sore nanti.", "cn": "同意。其他的我先一点点做，免得下午被逼得太紧。"},
+      {"speaker": "A", "id": "Soalnya kalau telat terus, nanti masalahnya ngerembet ke tim lain.", "cn": "主要是如果一直拖，之后问题会牵连到别的团队。"},
+      {"speaker": "B", "id": "Iya, jangan sampai kita kecolongan lagi.", "cn": "对，别再因为疏忽漏掉问题了。"}
+    ]
+  },
+  "daily_test": {
+    "title": "当日小测 · 5–8分钟",
+    "items": [
+      {
+        "type": "choice",
+        "prompt": "‘这个问题可能会牵连到别的部门’最自然用哪个词？",
+        "options": ["ngerembet", "ketutup", "nyicil"],
+        "answer_index": 0,
+        "explain": "ngerembet 表示问题或影响蔓延、牵连到其他地方。"
+      },
+      {
+        "type": "choice",
+        "prompt": "群里消息太多，一条重要消息‘被淹没了’，最自然的是：",
+        "options": ["chat-nya ketutup", "chat-nya kepepet", "chat-nya kewalahan"],
+        "answer_index": 0,
+        "explain": "ketutup 在聊天场景里可表示被后来的消息盖住、淹没。"
+      },
+      {
+        "type": "choice",
+        "prompt": "‘数据还不清楚，所以这一部分先暂缓’最合适的词块是：",
+        "options": ["nahan dulu", "ngerembet dulu", "kecolongan dulu"],
+        "answer_index": 0,
+        "explain": "nahan dulu = 先按住、暂缓，不代表取消。"
+      },
+      {
+        "type": "fill",
+        "prompt": "补一个词块：Daripada nanti kepepet, aku mau ____ dari sekarang.（与其之后很赶，我想从现在开始一点点做。）",
+        "answer": "nyicil",
+        "answer_cn": "一点点做；分批处理"
+      },
+      {
+        "type": "fill",
+        "prompt": "补一个词：Kalau semua masuk barengan, tim kita bisa ____.（如果所有事情一起进来，团队可能会忙不过来。）",
+        "answer": "kewalahan",
+        "answer_cn": "忙不过来；招架不住"
+      },
+      {
+        "type": "order",
+        "prompt": "排序成自然口语：如果一直不处理，时间反而会浪费。",
+        "tokens": ["kalau", "didiemin terus", "waktunya", "malah", "kebuang"],
+        "answer": "Kalau didiemin terus, waktunya malah kebuang.",
+        "answer_cn": "如果一直不处理，时间反而会浪费。"
+      }
+    ],
+    "self_check": {
+      "prompt": "今天这些内容你感觉怎么样？",
+      "options": ["大部分能快速认出", "一半左右需要想一下", "很多还会卡"]
+    }
+  },
+  "review": [
+    "新补充：ngerembet = 问题牵连扩散；ketutup = 被别的信息淹没；nahan dulu = 先暂缓，不等于取消。",
+    "弱项调用：kebuang = 白白浪费；kewalahan = 忙不过来；nggak enakan = 不好意思拒绝或催。",
+    "早课复现：nyangkut = 卡在环节；kecolongan = 疏忽漏掉；nyicil = 分批做；kepepet = 被逼得很紧。",
+    "对比记忆：提前 nyicil，可以减少最后 kepepet；问题 nyangkut 太久，可能 ngerembet；信息 ketutup 容易导致 kecolongan。",
+    "5分钟复盘：盖住中文，看印尼语能否在3秒内说出核心意思；再用 ngerembet / nahan dulu / nyicil 各说一个自己的工作场景。"
+  ]
+}
