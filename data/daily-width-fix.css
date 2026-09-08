@@ -6,6 +6,11 @@
 .app.learningMode .dailyFixVocab{min-width:0!important;width:100%!important}
 .app.learningMode .dailyFixMeta{max-width:none!important}
 .app.learningMode .dailyFixReading,.app.learningMode .dailyFixTranslation{max-width:none!important;width:100%!important}
+
+/* 词库/已掌握/待复习只属于“词汇学习”，其他模块统一隐藏 */
+#statsBar{display:none!important}
+.app:has(#vocab.page.active) #statsBar{display:grid!important}
+
 @media (min-width:1400px){
   .app.learningMode{max-width:1080px!important;padding-left:20px!important;padding-right:20px!important}
 }
