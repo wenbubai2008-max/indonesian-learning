@@ -25,6 +25,50 @@
   }
   window.openDifficulty01=openDifficulty01;
 
+  function pickIndoVoice(){
+    if(!window.speechSynthesis)return null;
+    const voices=window.speechSynthesis.getVoices()||[];
+    return voices.find(function(v){return /^id(?:-|$)/i.test(v.lang||'');})||
+      voices.find(function(v){return /indonesia|bahasa indonesia/i.test(v.name||'');})||
+      voices.find(function(v){return /^ms(?:-|$)/i.test(v.lang||'');})||null;
+  }
+
+  window.speakIdText=function(text,btn){
+    if(!text||!window.speechSynthesis)return;
+    const synth=window.speechSynthesis;
+    let finished=false;
+    function restore(){
+      if(finished)return;
+      finished=true;
+      if(btn){btn.disabled=false;btn.classList.remove('isSpeaking');}
+    }
+    function run(){
+      try{
+        synth.cancel();
+        const u=new SpeechSynthesisUtterance(text);
+        u.lang='id-ID';
+        u.rate=.88;
+        u.pitch=1;
+        const voice=pickIndoVoice();
+        if(voice)u.voice=voice;
+        if(btn){btn.disabled=true;btn.classList.add('isSpeaking');}
+        u.onend=restore;
+        u.onerror=restore;
+        synth.speak(u);
+        setTimeout(function(){
+          if(synth.paused)try{synth.resume();}catch(e){}
+        },120);
+        setTimeout(restore,15000);
+      }catch(e){restore();}
+    }
+    const voices=synth.getVoices()||[];
+    if(voices.length){run();return;}
+    let started=false;
+    const startOnce=function(){if(started)return;started=true;run();};
+    if('onvoiceschanged' in synth)synth.onvoiceschanged=startOnce;
+    setTimeout(startOnce,350);
+  };
+
   function ensureDifficulty(){
     const box=document.querySelector('#home .modules');
     if(box&&!document.getElementById('difficultyModule')){
@@ -66,7 +110,7 @@
 
             <div class="difficultyWordHero">
               <div class="difficultyWordTop"><span class="difficultyNo big">01</span><span class="difficultyType">时间窗口词</span></div>
-              <div class="difficultyWordLine"><strong>sempat</strong><button class="sound" type="button" onclick="speak('sempat')">🔊</button></div>
+              <div class="difficultyWordLine"><strong>sempat</strong><button class="sound" type="button" title="播放 sempat" onclick="speakIdText('sempat',this)">🔊</button></div>
               <div class="difficultyMemory">先不要直接翻译成“曾经”。先想：<b>有过这么一个时间 / 机会 / 阶段。</b></div>
             </div>
 
@@ -84,11 +128,17 @@
               <div class="timeNode happenNode"><span>事情发生了</span><small>jadi dilakukan / terjadi</small></div>
             </div>
 
+            <div class="senseBridge" aria-label="下面三个卡片都是 sempat 的常见用法">
+              <div class="senseBridgeStem"></div>
+              <div class="senseBridgeLabel"><b>sempat</b> 在不同场景里的常见表现</div>
+              <div class="senseBridgeFork"><span></span><span></span><span></span></div>
+            </div>
+
             <div class="difficultyThree">
               <div class="senseCard senseBlue">
                 <div class="senseIcon">⏱️</div><h3>① 有时间 / 有机会</h3>
                 <div class="senseEn">got the chance to / had time to</div>
-                <div class="exampleId">Aku sempat makan sebelum pergi. <button class="miniSound" type="button" onclick="speak('Aku sempat makan sebelum pergi.')">🔊</button></div>
+                <div class="exampleId">Aku sempat makan sebelum pergi. <button class="miniSound" type="button" title="播放例句" onclick="speakIdText('Aku sempat makan sebelum pergi.',this)">🔊</button></div>
                 <div class="exampleCn">我出发前还来得及吃了饭。</div>
                 <div class="senseTip">重点不是“吃过”，而是当时<b>有那个时间窗口</b>。</div>
               </div>
@@ -96,7 +146,7 @@
               <div class="senseCard sensePurple">
                 <div class="senseIcon">🕰️</div><h3>② 有那么一个阶段</h3>
                 <div class="senseEn">at one point / for a while</div>
-                <div class="exampleId">Aku sempat tinggal di Semarang. <button class="miniSound" type="button" onclick="speak('Aku sempat tinggal di Semarang.')">🔊</button></div>
+                <div class="exampleId">Aku sempat tinggal di Semarang. <button class="miniSound" type="button" title="播放例句" onclick="speakIdText('Aku sempat tinggal di Semarang.',this)">🔊</button></div>
                 <div class="exampleCn">我有一阵子住在三宝垄。</div>
                 <div class="senseTip">强调过去<b>出现过一段时期</b>，通常暗示后来变了。</div>
               </div>
@@ -104,7 +154,7 @@
               <div class="senseCard senseRed">
                 <div class="senseIcon">🚫</div><h3>③ nggak sempat</h3>
                 <div class="senseEn">didn't have time / didn't get the chance</div>
-                <div class="exampleId">Aku nggak sempat balas chat. <button class="miniSound" type="button" onclick="speak('Aku nggak sempat balas chat.')">🔊</button></div>
+                <div class="exampleId">Aku nggak sempat balas chat. <button class="miniSound" type="button" title="播放例句" onclick="speakIdText('Aku nggak sempat balas chat.',this)">🔊</button></div>
                 <div class="exampleCn">我没来得及回消息。</div>
                 <div class="senseTip">这个最直观：<b>那个时间 / 机会窗口没有出现。</b></div>
               </div>
@@ -216,17 +266,35 @@
       .difficultyCore{margin:15px 0;border-left:4px solid #4c9bc7;background:#f6fbff;border-radius:12px;padding:15px 17px}
       .difficultyCoreLabel{font-size:12px;font-weight:850;color:#287ca8;margin-bottom:6px}
       .difficultyCoreId{font-size:18px;font-weight:850;line-height:1.55;color:#173f5c}.difficultyCoreCn{font-size:14px;color:#667085;margin-top:5px}
-      .timeWindowDiagram{display:grid;grid-template-columns:1fr 36px 1.35fr 36px 1fr;align-items:center;margin:20px 0;padding:15px;border:1px dashed #ced9e5;border-radius:16px;background:#fcfdff}
+      .timeWindowDiagram{display:grid;grid-template-columns:1fr 36px 1.35fr 36px 1fr;align-items:center;margin:20px 0 0;padding:15px;border:1px dashed #ced9e5;border-radius:16px;background:#fcfdff}
       .timeNode{text-align:center;border-radius:13px;padding:12px 8px;border:1px solid #e4e9f0;background:#fff}.timeNode span{display:block;font-weight:850;font-size:14px}.timeNode small{display:block;color:#7b8796;font-size:11px;margin-top:4px;line-height:1.35}
       .mutedNode{opacity:.72}.windowNode{border-color:#9ed0eb;background:#eef9ff;color:#226f99}.happenNode{border-color:#a8d9b6;background:#f1fbf4;color:#24743d}
       .timeLine{height:2px;background:#d8e0e8;position:relative}.timeLine:after{content:'›';position:absolute;right:-3px;top:50%;transform:translateY(-56%);font-size:22px;color:#a4b0bf}.activeLine{background:#8fc7a0}.activeLine:after{color:#5aaf73}
-      .difficultyThree{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}.senseCard{border:1px solid #e2e7ef;border-radius:17px;padding:16px;background:#fff;min-width:0}.senseCard h3{font-size:16px;margin:7px 0}.senseIcon{font-size:22px}.senseEn{font-size:12px;font-weight:800;color:#667085;margin-bottom:12px}.exampleId{font-size:15px;font-weight:800;line-height:1.55;color:#243246}.exampleCn{font-size:13px;color:#596579;margin-top:4px}.senseTip{font-size:12px;line-height:1.55;color:#6b7280;margin-top:11px;padding-top:10px;border-top:1px solid rgba(0,0,0,.06)}
-      .senseBlue{background:#f8fbff;border-color:#d9e9f7}.sensePurple{background:#fbf9ff;border-color:#e5ddf3}.senseRed{background:#fff9f8;border-color:#f0dfdc}.miniSound{border:0;background:transparent;padding:2px 4px;cursor:pointer;font-size:13px}
+
+      .senseBridge{display:flex;flex-direction:column;align-items:center;margin:0 4% 3px;position:relative;color:#64748b}
+      .senseBridgeStem{width:2px;height:20px;background:#b8c8d8}
+      .senseBridgeLabel{font-size:12px;line-height:1.3;background:#fff;padding:3px 10px;border:1px solid #dbe5ee;border-radius:999px;position:relative;z-index:2}
+      .senseBridgeLabel b{color:#277ba6}
+      .senseBridgeFork{width:100%;height:22px;display:grid;grid-template-columns:repeat(3,1fr);position:relative;margin-top:1px}
+      .senseBridgeFork:before{content:'';position:absolute;left:16.666%;right:16.666%;top:6px;height:2px;background:#b8c8d8}
+      .senseBridgeFork span{justify-self:center;width:2px;height:16px;background:#b8c8d8;margin-top:6px}
+
+      .difficultyThree{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 16px}.senseCard{border:1px solid #e2e7ef;border-radius:17px;padding:16px;background:#fff;min-width:0}.senseCard h3{font-size:16px;margin:7px 0}.senseIcon{font-size:22px}.senseEn{font-size:12px;font-weight:800;color:#667085;margin-bottom:12px}.exampleId{font-size:15px;font-weight:800;line-height:1.55;color:#243246}.exampleCn{font-size:13px;color:#596579;margin-top:4px}.senseTip{font-size:12px;line-height:1.55;color:#6b7280;margin-top:11px;padding-top:10px;border-top:1px solid rgba(0,0,0,.06)}
+      .senseBlue{background:#f8fbff;border-color:#d9e9f7}.sensePurple{background:#fbf9ff;border-color:#e5ddf3}.senseRed{background:#fff9f8;border-color:#f0dfdc}
+      .miniSound,.difficultyWordLine .sound{appearance:none;border:1px solid #dbe4ed;background:#fff;border-radius:8px;min-width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;padding:0 7px;cursor:pointer;vertical-align:middle;line-height:1;transition:.15s ease}
+      .miniSound{margin-left:5px;font-size:14px}.miniSound:hover,.difficultyWordLine .sound:hover{background:#f1f8ff;border-color:#a8cde3}.miniSound.isSpeaking,.difficultyWordLine .sound.isSpeaking{background:#e9f6ff;border-color:#78b7dc;box-shadow:0 0 0 2px rgba(120,183,220,.15)}
+      .miniSound:disabled,.difficultyWordLine .sound:disabled{cursor:default;opacity:.75}
       .compareBlock{margin-top:22px}.compareTitle{font-size:18px;font-weight:900;margin-bottom:11px}.compareGrid{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:stretch}.compareVs{align-self:center;font-size:12px;font-weight:900;color:#8a94a3;background:#eef1f5;border-radius:999px;padding:7px}.compareCard{border:1px solid #e0e6ee;border-radius:17px;padding:17px}.pernahCard{background:#fafafa}.sempatCard{background:#f4faff;border-color:#cfe6f5}.compareWord{font-size:24px;font-weight:900}.compareQuestion{font-size:13px;line-height:1.55;margin:7px 0}.compareEn{font-size:12px;color:#728096}.compareExample{font-size:14px;font-weight:800;margin-top:13px}.compareCn{font-size:12px;color:#667085;line-height:1.55;margin-top:5px}
       .difficultyFormula{margin-top:18px;border-radius:16px;padding:16px 18px;background:#173f5c;color:#fff;display:flex;flex-direction:column;gap:5px}.difficultyFormula span{font-size:12px;opacity:.78}.difficultyFormula b{font-size:18px;line-height:1.55}.difficultyFormula small{opacity:.78;line-height:1.5}
 
       @media(max-width:1050px){#home .modules.homeModulesCompact{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
-      @media(max-width:760px){.difficultyThree{grid-template-columns:1fr}.compareGrid{grid-template-columns:1fr}.compareVs{justify-self:center}.timeWindowDiagram{grid-template-columns:1fr;gap:7px}.timeLine{width:2px;height:20px;justify-self:center}.timeLine:after{content:'⌄';right:auto;left:50%;top:auto;bottom:-8px;transform:translateX(-50%)}.difficultyWordLine strong{font-size:36px}}
+      @media(max-width:760px){
+        .difficultyThree{grid-template-columns:1fr}
+        .compareGrid{grid-template-columns:1fr}.compareVs{justify-self:center}
+        .timeWindowDiagram{grid-template-columns:1fr;gap:7px}.timeLine{width:2px;height:20px;justify-self:center}.timeLine:after{content:'⌄';right:auto;left:50%;top:auto;bottom:-8px;transform:translateX(-50%)}
+        .difficultyWordLine strong{font-size:36px}
+        .senseBridge{margin:0 12% 5px}.senseBridgeFork{height:16px}.senseBridgeFork:before{left:50%;right:auto;width:2px;height:10px;top:2px}.senseBridgeFork span{display:none}.senseBridgeFork span:first-child{display:block;width:2px;height:12px;margin-top:2px;grid-column:2}
+      }
       @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}.difficultyPageCard{padding:16px!important}}
       @media(max-width:430px){#home .modules.homeModulesCompact{grid-template-columns:1fr!important}#home .homeModulesCompact .module{min-height:0!important}}
     `;
