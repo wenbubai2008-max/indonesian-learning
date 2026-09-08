@@ -16,8 +16,21 @@
       .memory button.mem-flash-know{animation:memFlashKnow .34s ease}
       .memory button.mem-flash-fuzzy{animation:memFlashFuzzy .34s ease}
       .memory button.mem-flash-dont{animation:memFlashDont .34s ease}
+      #vocab>#statsBar{margin:0 0 16px!important}
     `;
     document.head.appendChild(s);
+  }
+
+  function moveStatsIntoVocab(){
+    const stats=document.getElementById('statsBar');
+    const page=document.getElementById('vocab');
+    if(!stats||!page)return;
+    if(stats.parentElement!==page){
+      const card=page.querySelector(':scope > .card');
+      if(card)page.insertBefore(stats,card);
+      else page.appendChild(stats);
+    }
+    if(page.classList.contains('active'))stats.style.display='grid';
   }
 
   function feedbackButton(v){
@@ -52,7 +65,7 @@
   function install(){
     if(installed)return;
     if(typeof window.mark!=='function'||typeof window.go!=='function'){setTimeout(install,120);return;}
-    installed=true;addStyle();
+    installed=true;addStyle();moveStatsIntoVocab();
 
     const baseMark=window.mark;
     const wrappedMark=function(v){
@@ -73,6 +86,7 @@
     window.go=function(id){
       const fromHome=!!document.getElementById('home')?.classList.contains('active');
       baseGo(id);
+      moveStatsIntoVocab();
       if(id==='vocab'&&fromHome)setTimeout(()=>pruneKnown(true),30);
     };
     try{go=window.go}catch(e){}
@@ -83,6 +97,7 @@
       const t=e.target;if(t&&t.tagName==='BUTTON'&&(t.textContent||'').includes('重新加载'))setTimeout(()=>pruneKnown(true),80);
     });
 
+    setTimeout(moveStatsIntoVocab,180);
     if(document.getElementById('vocab')?.classList.contains('active'))pruneKnown(true);
   }
 
