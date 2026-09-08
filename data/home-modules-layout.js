@@ -1,10 +1,123 @@
 (function(){
-  const ORDER=['词汇学习','泛读','快速练习','弱项强化','前后缀'];
+  const ORDER=['词汇学习','泛读','快速练习','弱项强化','前后缀','难点解释'];
   let applying=false;
 
   function titleOf(card){
     const h=card&&card.querySelector('h3');
     return h?(h.textContent||'').trim():'';
+  }
+
+  function ensureDifficulty(){
+    const box=document.querySelector('#home .modules');
+    if(box&&!document.getElementById('difficultyModule')){
+      const card=document.createElement('button');
+      card.id='difficultyModule';
+      card.className='module';
+      card.type='button';
+      card.innerHTML='<div class="difficultyIconWrap"><span>💡</span><b class="difficultyCount">1</b></div><h3>难点解释</h3><p>把中文里难直接对应的词，拆成“核心感觉 + 场景 + 对比”来理解。</p><span class="tag">1 个难点</span>';
+      card.addEventListener('click',function(){window.go('difficulty');});
+      box.appendChild(card);
+    }
+
+    if(!document.getElementById('difficulty')){
+      const app=document.querySelector('.app');
+      if(!app)return;
+      const page=document.createElement('section');
+      page.id='difficulty';
+      page.className='page';
+      page.innerHTML=`
+        <button class="back" onclick="go('home')">← 返回首页</button>
+        <div class="card difficultyPageCard">
+          <div class="sectionHead difficultyHead">
+            <div><h2>难点解释</h2><div class="muted">不是背一个中文释义，而是建立这个词真正的“脑内感觉”。</div></div>
+            <span class="pill">已整理 1 个</span>
+          </div>
+
+          <div class="difficultyIndex">
+            <button class="difficultyIndexItem active" type="button" onclick="document.getElementById('difficulty01').scrollIntoView({behavior:'smooth',block:'start'})">
+              <span class="difficultyNo">01</span>
+              <span><b>sempat</b><small>时间 / 机会 / 阶段窗口</small></span>
+              <span class="difficultyArrow">→</span>
+            </button>
+          </div>
+
+          <article id="difficulty01" class="difficultyLesson">
+            <div class="difficultyWordHero">
+              <div class="difficultyWordTop"><span class="difficultyNo big">01</span><span class="difficultyType">时间窗口词</span></div>
+              <div class="difficultyWordLine"><strong>sempat</strong><button class="sound" type="button" onclick="speak('sempat')">🔊</button></div>
+              <div class="difficultyMemory">脑子里先不要翻译成“曾经”。先想：<b>有过这么一个时间 / 机会 / 阶段。</b></div>
+            </div>
+
+            <div class="difficultyCore">
+              <div class="difficultyCoreLabel">最核心的印尼语解释</div>
+              <div class="difficultyCoreId">Ada waktu / kesempatan / momen → sesuatu benar-benar terjadi.</div>
+              <div class="difficultyCoreCn">有一个时间、机会或阶段 → 这件事确实发生了。</div>
+            </div>
+
+            <div class="timeWindowDiagram" aria-label="sempat 时间窗口示意">
+              <div class="timeNode mutedNode"><span>平时</span><small>belum terjadi</small></div>
+              <div class="timeLine"></div>
+              <div class="timeNode windowNode"><span>出现一个窗口</span><small>waktu / kesempatan / momen</small></div>
+              <div class="timeLine activeLine"></div>
+              <div class="timeNode happenNode"><span>事情发生了</span><small>jadi dilakukan / terjadi</small></div>
+            </div>
+
+            <div class="difficultyThree">
+              <div class="senseCard senseBlue">
+                <div class="senseIcon">⏱️</div><h3>① 有时间 / 有机会</h3>
+                <div class="senseEn">got the chance to / had time to</div>
+                <div class="exampleId">Aku sempat makan sebelum pergi. <button class="miniSound" type="button" onclick="speak('Aku sempat makan sebelum pergi.')">🔊</button></div>
+                <div class="exampleCn">我出发前还来得及吃了饭。</div>
+                <div class="senseTip">重点不是“吃过”，而是当时<b>有那个时间窗口</b>。</div>
+              </div>
+
+              <div class="senseCard sensePurple">
+                <div class="senseIcon">🕰️</div><h3>② 有那么一个阶段</h3>
+                <div class="senseEn">at one point / for a while</div>
+                <div class="exampleId">Aku sempat tinggal di Semarang. <button class="miniSound" type="button" onclick="speak('Aku sempat tinggal di Semarang.')">🔊</button></div>
+                <div class="exampleCn">我有一阵子住在三宝垄。</div>
+                <div class="senseTip">强调过去<b>出现过一段时期</b>，通常暗示后来变了。</div>
+              </div>
+
+              <div class="senseCard senseRed">
+                <div class="senseIcon">🚫</div><h3>③ nggak sempat</h3>
+                <div class="senseEn">didn't have time / didn't get the chance</div>
+                <div class="exampleId">Aku nggak sempat balas chat. <button class="miniSound" type="button" onclick="speak('Aku nggak sempat balas chat.')">🔊</button></div>
+                <div class="exampleCn">我没来得及回消息。</div>
+                <div class="senseTip">这个最直观：<b>那个时间 / 机会窗口没有出现。</b></div>
+              </div>
+            </div>
+
+            <div class="compareBlock">
+              <div class="compareTitle">sempat 和 pernah 到底差在哪？</div>
+              <div class="compareGrid">
+                <div class="compareCard pernahCard">
+                  <div class="compareWord">pernah</div>
+                  <div class="compareQuestion">关注：<b>“这件事发生过吗？”</b></div>
+                  <div class="compareEn">have ever / have done before</div>
+                  <div class="compareExample">Aku pernah tinggal di Semarang.</div>
+                  <div class="compareCn">我住过三宝垄。→ 强调“人生经历里有这件事”。</div>
+                </div>
+                <div class="compareVs">VS</div>
+                <div class="compareCard sempatCard">
+                  <div class="compareWord">sempat</div>
+                  <div class="compareQuestion">关注：<b>“当时有没有一个窗口 / 阶段？”</b></div>
+                  <div class="compareEn">got the chance / at one point</div>
+                  <div class="compareExample">Aku sempat tinggal di Semarang.</div>
+                  <div class="compareCn">我有一阵子住在三宝垄。→ 强调“那段时期曾经存在”。</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="difficultyFormula">
+              <span>🧠 一句话记忆</span>
+              <b>sempat = “当时有一个窗口，所以这件事发生了。”</b>
+              <small>根据语境，这个“窗口”可以是时间、机会，也可以是一段时期。</small>
+            </div>
+          </article>
+        </div>`;
+      app.appendChild(page);
+    }
   }
 
   function apply(){
@@ -20,12 +133,13 @@
       cards.forEach(function(card){
         const title=titleOf(card);
         map[title]=card;
-        card.classList.remove('homeModVocab','homeModReading','homeModQuick','homeModWeak','homeModAffix','v2-wide');
+        card.classList.remove('homeModVocab','homeModReading','homeModQuick','homeModWeak','homeModAffix','homeModDifficulty','v2-wide');
         if(title==='词汇学习') card.classList.add('homeModVocab');
         else if(title==='泛读') card.classList.add('homeModReading');
         else if(title==='快速练习') card.classList.add('homeModQuick');
         else if(title==='弱项强化') card.classList.add('homeModWeak');
         else if(title==='前后缀') card.classList.add('homeModAffix');
+        else if(title==='难点解释') card.classList.add('homeModDifficulty');
       });
       const current=cards.map(titleOf).filter(Boolean);
       const desired=ORDER.filter(t=>map[t]);
@@ -41,7 +155,7 @@
     const s=document.createElement('style');
     s.id='homeModulesCompactStyle';
     s.textContent=`
-      #home .modules.homeModulesCompact{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:10px!important;align-items:stretch}
+      #home .modules.homeModulesCompact{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:10px!important;align-items:stretch}
       #home .homeModulesCompact .module{min-width:0!important;grid-column:auto!important;border-radius:16px!important;padding:14px 13px!important;min-height:158px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;box-shadow:0 2px 8px rgba(23,32,51,.035)!important;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease!important}
       #home .homeModulesCompact .module:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(23,32,51,.08)!important}
       #home .homeModulesCompact .module>div:first-child{font-size:20px!important;line-height:1!important;margin-bottom:3px!important}
@@ -53,14 +167,54 @@
       #home .homeModQuick{background:#fffaf3!important;border-color:#f0e2c9!important;border-top:3px solid #d6a653!important}
       #home .homeModWeak{background:#fff8f8!important;border-color:#f0dcdc!important;border-top:3px solid #d98b8b!important}
       #home .homeModAffix{background:#faf8ff!important;border-color:#e5ddf4!important;border-top:3px solid #9b83ca!important}
+      #home .homeModDifficulty{background:#f7fbff!important;border-color:#d8e8f5!important;border-top:3px solid #63a6cf!important;position:relative}
+      #home .difficultyIconWrap{display:flex!important;align-items:center!important;gap:7px!important;width:100%!important}
+      #home .difficultyCount{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:#e4f3ff;color:#24749f;font-size:11px;line-height:1}
+
       .siteNav{display:flex;align-items:center;gap:8px;margin:0 0 12px;min-height:38px}
       .siteNav button{appearance:none;border:1px solid #dfe4ee;background:#fff;color:#3157d5;border-radius:10px;padding:8px 12px;font-weight:750;cursor:pointer;box-shadow:0 1px 2px rgba(23,32,51,.03)}
       .siteNav button:hover{background:#f5f7ff;border-color:#b9c7f1}
       .siteNav button:active{transform:translateY(1px)}
       .siteNav .navHome{color:#4b5563}
       .page>.back{display:none!important}
+
+      .difficultyPageCard{overflow:hidden}
+      .difficultyHead{align-items:flex-start!important;gap:14px}
+      .difficultyHead h2{margin:0 0 5px}
+      .difficultyIndex{margin:20px 0 22px}
+      .difficultyIndexItem{width:100%;border:1px solid #dfe7f0;background:#fbfdff;border-radius:15px;padding:13px 15px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;text-align:left;cursor:pointer;color:#172033}
+      .difficultyIndexItem:hover{border-color:#9ac5df;background:#f6fbff}
+      .difficultyIndexItem small{display:block;color:#6b7280;margin-top:3px;font-size:12px}
+      .difficultyNo{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;border-radius:10px;background:#e9f5fc;color:#277ba6;font-weight:900;font-size:13px;letter-spacing:.04em}
+      .difficultyNo.big{min-width:42px;height:42px;border-radius:12px;font-size:15px}
+      .difficultyArrow{font-size:20px;color:#7a8ba3}
+      .difficultyLesson{scroll-margin-top:78px}
+      .difficultyWordHero{border-radius:20px;padding:22px;background:linear-gradient(135deg,#f1f8ff,#f8fbff);border:1px solid #dcecf7}
+      .difficultyWordTop{display:flex;align-items:center;gap:9px}
+      .difficultyType{font-size:12px;font-weight:800;color:#276f97;background:#e8f4fb;border-radius:999px;padding:5px 9px}
+      .difficultyWordLine{display:flex;align-items:center;gap:10px;margin:12px 0 7px}
+      .difficultyWordLine strong{font-size:42px;line-height:1;color:#173f5c;letter-spacing:-.02em}
+      .difficultyMemory{font-size:17px;line-height:1.7;color:#3f5265}
+      .difficultyMemory b{color:#173f5c}
+      .difficultyCore{margin:15px 0;border-left:4px solid #4c9bc7;background:#f6fbff;border-radius:12px;padding:15px 17px}
+      .difficultyCoreLabel{font-size:12px;font-weight:850;color:#287ca8;margin-bottom:6px}
+      .difficultyCoreId{font-size:18px;font-weight:850;line-height:1.55;color:#173f5c}
+      .difficultyCoreCn{font-size:14px;color:#667085;margin-top:5px}
+      .timeWindowDiagram{display:grid;grid-template-columns:1fr 36px 1.35fr 36px 1fr;align-items:center;margin:20px 0;padding:15px;border:1px dashed #ced9e5;border-radius:16px;background:#fcfdff}
+      .timeNode{text-align:center;border-radius:13px;padding:12px 8px;border:1px solid #e4e9f0;background:#fff}
+      .timeNode span{display:block;font-weight:850;font-size:14px}.timeNode small{display:block;color:#7b8796;font-size:11px;margin-top:4px;line-height:1.35}
+      .mutedNode{opacity:.72}.windowNode{border-color:#9ed0eb;background:#eef9ff;color:#226f99}.happenNode{border-color:#a8d9b6;background:#f1fbf4;color:#24743d}
+      .timeLine{height:2px;background:#d8e0e8;position:relative}.timeLine:after{content:'›';position:absolute;right:-3px;top:50%;transform:translateY(-56%);font-size:22px;color:#a4b0bf}.activeLine{background:#8fc7a0}.activeLine:after{color:#5aaf73}
+      .difficultyThree{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+      .senseCard{border:1px solid #e2e7ef;border-radius:17px;padding:16px;background:#fff;min-width:0}
+      .senseCard h3{font-size:16px;margin:7px 0}.senseIcon{font-size:22px}.senseEn{font-size:12px;font-weight:800;color:#667085;margin-bottom:12px}.exampleId{font-size:15px;font-weight:800;line-height:1.55;color:#243246}.exampleCn{font-size:13px;color:#596579;margin-top:4px}.senseTip{font-size:12px;line-height:1.55;color:#6b7280;margin-top:11px;padding-top:10px;border-top:1px solid rgba(0,0,0,.06)}
+      .senseBlue{background:#f8fbff;border-color:#d9e9f7}.sensePurple{background:#fbf9ff;border-color:#e5ddf3}.senseRed{background:#fff9f8;border-color:#f0dfdc}.miniSound{border:0;background:transparent;padding:2px 4px;cursor:pointer;font-size:13px}
+      .compareBlock{margin-top:22px}.compareTitle{font-size:18px;font-weight:900;margin-bottom:11px}.compareGrid{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:stretch}.compareVs{align-self:center;font-size:12px;font-weight:900;color:#8a94a3;background:#eef1f5;border-radius:999px;padding:7px}.compareCard{border:1px solid #e0e6ee;border-radius:17px;padding:17px}.pernahCard{background:#fafafa}.sempatCard{background:#f4faff;border-color:#cfe6f5}.compareWord{font-size:24px;font-weight:900}.compareQuestion{font-size:13px;line-height:1.55;margin:7px 0}.compareEn{font-size:12px;color:#728096}.compareExample{font-size:14px;font-weight:800;margin-top:13px}.compareCn{font-size:12px;color:#667085;line-height:1.55;margin-top:5px}
+      .difficultyFormula{margin-top:18px;border-radius:16px;padding:16px 18px;background:#173f5c;color:#fff;display:flex;flex-direction:column;gap:5px}.difficultyFormula span{font-size:12px;opacity:.78}.difficultyFormula b{font-size:18px;line-height:1.55}.difficultyFormula small{opacity:.78;line-height:1.5}
+
       @media(max-width:1050px){#home .modules.homeModulesCompact{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
-      @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}}
+      @media(max-width:760px){.difficultyThree{grid-template-columns:1fr}.compareGrid{grid-template-columns:1fr}.compareVs{justify-self:center}.timeWindowDiagram{grid-template-columns:1fr;gap:7px}.timeLine{width:2px;height:20px;justify-self:center}.timeLine:after{content:'⌄';right:auto;left:50%;top:auto;bottom:-8px;transform:translateX(-50%)}.difficultyWordLine strong{font-size:36px}}
+      @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}.difficultyPageCard{padding:16px!important}}
       @media(max-width:430px){#home .modules.homeModulesCompact{grid-template-columns:1fr!important}#home .homeModulesCompact .module{min-height:0!important}}
     `;
     document.head.appendChild(s);
@@ -144,10 +298,11 @@
 
   function boot(){
     style();
+    ensureDifficulty();
     apply();
     installHistoryNavigation();
     installNavBars();
-    setTimeout(function(){apply();installNavBars();},180);
+    setTimeout(function(){ensureDifficulty();apply();installNavBars();},180);
   }
 
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});
