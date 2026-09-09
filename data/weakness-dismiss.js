@@ -26,10 +26,12 @@
       const word=(b.textContent||'').trim(), k=norm(word);
       if(dismissed[k]){card.style.display='none';return;}
       visible++;
+      card.classList.add('weakCardHasDone');
       if(!card.querySelector('.weakDoneBtn')){
         const btn=document.createElement('button');
         btn.type='button'; btn.className='weakDoneBtn'; btn.textContent='✓ 会了';
         btn.title='移出弱项强化';
+        btn.setAttribute('aria-label','会了，移出弱项强化');
         btn.addEventListener('click',function(){dismiss(word);});
         card.appendChild(btn);
       }
@@ -46,7 +48,7 @@
   function style(){
     if(document.getElementById('weakDismissStyle'))return;
     const s=document.createElement('style');s.id='weakDismissStyle';
-    s.textContent='.weakDoneBtn{margin-top:10px;border:1px solid #cfe5d6;background:#f1faf4;color:#17652d;border-radius:9px;padding:7px 11px;font-weight:700;cursor:pointer}.weakDoneBtn:hover{background:#e7f7ec}.weakRestoreWrap{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 2px;color:#667085;font-size:13px}.weakRestoreBtn{border:0;background:transparent;color:var(--blue);cursor:pointer;padding:6px}.v2-card .sound{margin-right:6px}@media(max-width:700px){.weakRestoreWrap{align-items:flex-start;flex-direction:column}}';
+    s.textContent='.v2-card.weakCardHasDone{position:relative;padding-bottom:54px}.weakDoneBtn{position:absolute;right:12px;bottom:12px;margin:0;border:1px solid #cfe5d6;background:#f1faf4;color:#17652d;border-radius:9px;padding:7px 11px;font-weight:700;cursor:pointer;line-height:1.2}.weakDoneBtn:hover{background:#e7f7ec}.weakDoneBtn:focus-visible{outline:2px solid #6ba97b;outline-offset:2px}.weakRestoreWrap{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 2px;color:#667085;font-size:13px}.weakRestoreBtn{border:0;background:transparent;color:var(--blue);cursor:pointer;padding:6px}.v2-card .sound{margin-right:6px}@media(max-width:700px){.weakRestoreWrap{align-items:flex-start;flex-direction:column}.v2-card.weakCardHasDone{padding-bottom:56px}.weakDoneBtn{right:10px;bottom:10px}}';
     document.head.appendChild(s);
   }
   const obs=new MutationObserver(function(){apply();});
