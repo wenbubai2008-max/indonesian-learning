@@ -4229,9 +4229,9 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-08 19:00",
+    "last_seen": "2026-09-09 19:00",
     "sessions": [
       "19:00"
     ],
@@ -4242,10 +4242,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-05",
       "2026-09-06",
       "2026-09-07",
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-09"
     ],
-    "example": "Jangan nunggu terlalu lama tanpa keputusan, nanti waktunya kebuang.",
-    "example_cn": "别在没有决定的情况下等太久，不然时间会白白浪费。",
+    "example": "Kalau meeting-nya nggak jelas arahnya, waktu tim malah kebuang.",
+    "example_cn": "如果会议方向不清楚，团队的时间反而会被浪费。",
     "root_cn": "扔掉；浪费"
   },
   {
@@ -5715,22 +5716,23 @@ window.DAILY_VOCAB_DB = [
     "en": "stall; drag out",
     "root": "ulur",
     "root_cn": "延长；拖长",
-    "example": "Kalau mereka masih ngulur, kita kasih batas waktu yang jelas aja.",
-    "example_cn": "如果他们还在拖，我们就直接给一个明确的截止时间吧。",
+    "example": "Kalau vendor terus ngulur, kita kasih deadline yang jelas aja.",
+    "example_cn": "如果供应商一直拖，我们就直接给一个明确截止时间。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-09 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-09"
     ]
   },
   {
@@ -6166,25 +6168,26 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "nahan dulu",
-    "cn": "先按住；先别推进；暂缓一下（口语）",
-    "en": "hold off for now; pause temporarily",
+    "cn": "先按住；暂缓一下",
+    "en": "hold off for now",
     "root": "tahan",
     "root_cn": "忍住；承受；阻止继续",
     "categories": [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-08 19:00",
-    "last_seen": "2026-09-08 19:00",
+    "last_seen": "2026-09-09 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-09"
     ],
-    "example": "Bagian ini mending kita nahan dulu sampai datanya jelas.",
-    "example_cn": "这一部分我们最好先暂缓，等数据明确了再说。"
+    "example": "Datanya belum jelas, jadi bagian ini mending kita nahan dulu.",
+    "example_cn": "数据还不明确，所以这一部分我们最好先暂缓。"
   },
   {
     "word": "ngelarin",
@@ -6192,17 +6195,19 @@ window.DAILY_VOCAB_DB = [
     "en": "finish; wrap up",
     "root": "kelar",
     "root_cn": "完成；结束",
-    "example": "Aku mau ngelarin laporan ini dulu sebelum makan siang.",
-    "example_cn": "我想先把这份报告做完再吃午饭。",
+    "example": "Aku mau ngelarin dua hal penting dulu sebelum bahas yang lain.",
+    "example_cn": "我想先把两件重要的事情做完，再讨论其他的。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-09"
@@ -6210,21 +6215,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "ketumpuk",
-    "cn": "堆在一起；事情积压在一起（口语）",
+    "cn": "堆在一起；事情积压（口语）",
     "en": "pile up; get stacked up",
     "root": "tumpuk",
     "root_cn": "堆；叠放",
-    "example": "Kalau semua ditunda, besok kerjaannya malah ketumpuk.",
-    "example_cn": "如果全都推迟，明天工作反而会堆在一起。",
+    "example": "Kalau semua ditahan sampai besok, kerjaannya bisa ketumpuk.",
+    "example_cn": "如果所有事情都拖到明天，工作可能会积压。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-09"
@@ -6232,21 +6239,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "ketiban",
-    "cn": "突然摊上；意外落到自己头上（口语）",
-    "en": "unexpectedly get saddled with; have something fall on one",
+    "cn": "突然摊上；意外落到自己头上",
+    "en": "unexpectedly get saddled with",
     "root": "tiban",
     "root_cn": "落到；压到",
-    "example": "Hari ini aku ketiban dua tugas tambahan karena temanku izin.",
-    "example_cn": "今天因为同事请假，我突然又摊上了两个额外任务。",
+    "example": "Temanku izin, jadi aku ketiban follow up tambahan.",
+    "example_cn": "同事请假了，所以我突然又摊上一项额外跟进。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-09"
@@ -6342,21 +6351,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "ngeribetin",
-    "cn": "把事情搞复杂；让人觉得很麻烦（口语）",
+    "cn": "把事情搞复杂；让事情更麻烦",
     "en": "complicate; make troublesome",
     "root": "ribet",
     "root_cn": "麻烦；复杂",
-    "example": "Kalau cukup lewat chat, nggak usah ngeribetin dengan meeting lagi.",
-    "example_cn": "如果聊天就能解决，就不用再开会把事情搞复杂。",
+    "example": "Kalau lewat chat udah cukup, nggak usah ngeribetin dengan meeting lagi.",
+    "example_cn": "如果聊天就够了，就不用再开会把事情搞复杂。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-09"
@@ -6405,5 +6416,93 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-09"
     ]
+  },
+  {
+    "word": "kebentur",
+    "cn": "碰上阻碍；卡在限制上（口语）",
+    "en": "run into an obstacle; be constrained",
+    "root": "bentur",
+    "root_cn": "碰撞；撞上",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-09 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ],
+    "example": "Rencananya oke, cuma sekarang kebentur waktu dan anggaran.",
+    "example_cn": "计划没问题，只是现在卡在时间和预算上。"
+  },
+  {
+    "word": "keganggu",
+    "cn": "被打扰；受到影响（口语）",
+    "en": "get disturbed; be disrupted",
+    "root": "ganggu",
+    "root_cn": "打扰；干扰",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-09 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ],
+    "example": "Fokusku tadi agak keganggu karena chat masuk terus.",
+    "example_cn": "我刚才因为消息一直进来，专注度有点被影响。"
+  },
+  {
+    "word": "serba salah",
+    "cn": "怎么做都不对；左右为难",
+    "en": "be in a no-win situation; feel stuck",
+    "root": "salah",
+    "root_cn": "错误；不对",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-09 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ],
+    "example": "Kalau aku lanjut dibilang buru-buru, kalau nahan dulu dibilang lambat. Jadi serba salah.",
+    "example_cn": "我继续推进会被说太急，先按住又会被说太慢，真是怎么做都不对。"
+  },
+  {
+    "word": "kejebak",
+    "cn": "陷进去；被困在某个情况里（口语）",
+    "en": "get trapped; get stuck in a situation",
+    "root": "jebak",
+    "root_cn": "设陷阱；困住",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-09 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ],
+    "example": "Jangan sampai kita kejebak ngurus hal kecil terus kerjaan utama malah ketumpuk.",
+    "example_cn": "别让我们一直陷在小事里，反而把主要工作积压了。"
   }
 ];
