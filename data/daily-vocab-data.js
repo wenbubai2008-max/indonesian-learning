@@ -6185,5 +6185,225 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Bagian ini mending kita nahan dulu sampai datanya jelas.",
     "example_cn": "这一部分我们最好先暂缓，等数据明确了再说。"
+  },
+  {
+    "word": "ngelarin",
+    "cn": "把事情做完；收尾（口语）",
+    "en": "finish; wrap up",
+    "root": "kelar",
+    "root_cn": "完成；结束",
+    "example": "Aku mau ngelarin laporan ini dulu sebelum makan siang.",
+    "example_cn": "我想先把这份报告做完再吃午饭。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ]
+  },
+  {
+    "word": "ketumpuk",
+    "cn": "堆在一起；事情积压在一起（口语）",
+    "en": "pile up; get stacked up",
+    "root": "tumpuk",
+    "root_cn": "堆；叠放",
+    "example": "Kalau semua ditunda, besok kerjaannya malah ketumpuk.",
+    "example_cn": "如果全都推迟，明天工作反而会堆在一起。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ]
+  },
+  {
+    "word": "ketiban",
+    "cn": "突然摊上；意外落到自己头上（口语）",
+    "en": "unexpectedly get saddled with; have something fall on one",
+    "root": "tiban",
+    "root_cn": "落到；压到",
+    "example": "Hari ini aku ketiban dua tugas tambahan karena temanku izin.",
+    "example_cn": "今天因为同事请假，我突然又摊上了两个额外任务。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ]
+  },
+  {
+    "word": "kecipratan",
+    "cn": "被波及；顺带沾到一点好处或麻烦（口语）",
+    "en": "get splashed; get a share/spillover effect",
+    "root": "ciprat",
+    "root_cn": "溅；飞溅",
+    "example": "Tim kita ikut kecipratan masalah karena datanya dipakai bareng.",
+    "example_cn": "因为数据是共用的，我们团队也被这个问题波及了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ]
+  },
+  {
+    "word": "ngilang",
+    "cn": "消失；突然不回消息；人不见了（口语）",
+    "en": "disappear; go silent",
+    "root": "hilang",
+    "root_cn": "消失；丢失",
+    "example": "Vendor-nya jangan ngilang pas kita lagi butuh konfirmasi.",
+    "example_cn": "我们正需要确认的时候，供应商可别突然失联。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ]
+  },
+  {
+    "word": "ngedrop",
+    "cn": "状态掉下来；体力、表现突然下降（口语）",
+    "en": "drop; slump; lose energy",
+    "root": "drop",
+    "root_cn": "下降；掉下来",
+    "example": "Kalau tidur terlalu malam, siang biasanya energiku ngedrop.",
+    "example_cn": "如果睡得太晚，我中午通常就会没精神。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ]
+  },
+  {
+    "word": "nyusahin",
+    "cn": "给别人添麻烦；让事情变困难（口语）",
+    "en": "cause trouble; make things difficult for someone",
+    "root": "susah",
+    "root_cn": "困难；麻烦",
+    "example": "Kalau bisa selesai sendiri, aku nggak mau nyusahin tim lain.",
+    "example_cn": "如果自己能解决，我不想给其他团队添麻烦。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ]
+  },
+  {
+    "word": "ngeribetin",
+    "cn": "把事情搞复杂；让人觉得很麻烦（口语）",
+    "en": "complicate; make troublesome",
+    "root": "ribet",
+    "root_cn": "麻烦；复杂",
+    "example": "Kalau cukup lewat chat, nggak usah ngeribetin dengan meeting lagi.",
+    "example_cn": "如果聊天就能解决，就不用再开会把事情搞复杂。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ]
+  },
+  {
+    "word": "kebablasan",
+    "cn": "过头；超过原本界限；一不小心做过了（口语）",
+    "en": "go too far; overshoot; overdo it",
+    "root": "bablas",
+    "root_cn": "一直冲过去；越过",
+    "example": "Tadi ngobrolnya kebablasan, jadi aku telat mulai kerja.",
+    "example_cn": "刚才聊天聊过头了，所以我开始工作晚了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ]
+  },
+  {
+    "word": "nyantai",
+    "cn": "放松一点；悠着来；轻松待着（口语）",
+    "en": "relax; take it easy",
+    "root": "santai",
+    "root_cn": "轻松；悠闲",
+    "example": "Kalau kerjaan utama udah kelar, sore bisa agak nyantai.",
+    "example_cn": "如果主要工作已经做完，下午就可以稍微轻松一点。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-09 08:00",
+    "last_seen": "2026-09-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-09"
+    ]
   }
 ];
