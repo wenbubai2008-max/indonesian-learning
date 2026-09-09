@@ -18,3 +18,11 @@
     if(hit){x.example=hit[0];x.example_cn=hit[1];x.example_source='学习例句';}
   });
 })();
+(function(){
+  if(document.querySelector('script[data-weakness-dismiss-loader]'))return;
+  const s=document.createElement('script');
+  s.src='data/weakness-dismiss.js?v=20260909-1';
+  s.async=false;
+  s.setAttribute('data-weakness-dismiss-loader','1');
+  document.head.appendChild(s);
+})();
