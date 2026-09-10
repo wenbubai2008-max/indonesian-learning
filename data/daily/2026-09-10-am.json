@@ -1,0 +1,168 @@
+{
+  "date": "2026-09-10",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 20,
+  "title": "2026年9月10日｜Day 20｜时间安排与临时变化",
+  "vocab": [
+    {
+      "word": "ngaret",
+      "display": "ngaret",
+      "audio_text": "ngaret",
+      "cn": "迟到；拖到比原定时间晚（口语）",
+      "en": "run late; be delayed",
+      "root": "karet",
+      "root_cn": "橡胶；引申为时间被‘拉长’",
+      "formation": "karet → ngaret；雅加达口语很常见，常说 meeting-nya ngaret / orangnya suka ngaret。",
+      "example": "Meeting-nya ngaret hampir setengah jam, jadi jadwal setelahnya ikut mundur.",
+      "example_cn": "会议晚了快半小时，所以后面的安排也跟着往后推。",
+      "synonym_note": "telat 更直接说迟到；ngaret 常带‘原定时间被拖晚’的口语感。"
+    },
+    {
+      "word": "molor",
+      "display": "molor",
+      "audio_text": "molor",
+      "cn": "延期；拖长；时间超出原计划（口语）",
+      "en": "overrun; drag on; be extended",
+      "root": "molor",
+      "root_cn": "拖长；延后",
+      "formation": "基础口语词；常用于 jadwal / proyek / meeting molor，强调持续时间或完成时间往后拖。",
+      "example": "Kalau diskusinya terus panjang, meeting ini bisa molor sampai siang.",
+      "example_cn": "如果讨论一直这么长，这个会议可能会拖到中午。",
+      "synonym_note": "ngaret 常指开始晚；molor 更常指过程或结束时间被拖长。"
+    },
+    {
+      "word": "keteteran",
+      "display": "keteteran",
+      "audio_text": "keteteran",
+      "cn": "忙乱得跟不上；被进度追着跑",
+      "en": "struggle to keep up; fall behind",
+      "root": "keteteran",
+      "root_cn": "跟不上；忙乱应付",
+      "formation": "固定高频口语词，常说 keteteran kerja / keteteran ngejar deadline，表示事情太多而跟不上节奏。",
+      "example": "Kalau semua dikerjain mendadak, aku pasti keteteran.",
+      "example_cn": "如果所有事情都临时做，我肯定会忙得跟不上。",
+      "synonym_note": "kewalahan 偏‘应付不过来’；keteteran 更有‘进度跟不上、一直在追’的感觉。"
+    },
+    {
+      "word": "nyusul",
+      "display": "nyusul",
+      "audio_text": "nyusul",
+      "cn": "随后赶来；之后补上；跟上来（口语）",
+      "en": "catch up; follow later; join afterward",
+      "root": "susul",
+      "root_cn": "追上；随后跟上",
+      "formation": "menyusul → nyusul；聊天里常说 kalian duluan aja, aku nyusul。",
+      "example": "Kalian masuk dulu aja, aku nyusul setelah telepon ini selesai.",
+      "example_cn": "你们先进去吧，我打完这个电话就随后过去。",
+      "synonym_note": "datang 只是到达；nyusul 强调别人先走/先开始，自己之后跟上。"
+    },
+    {
+      "word": "kelewatan",
+      "display": "kelewatan",
+      "audio_text": "kelewatan",
+      "cn": "错过；坐过站；做得过头",
+      "en": "miss; pass by; go too far",
+      "root": "lewat",
+      "root_cn": "经过；超过",
+      "formation": "ke- + lewat + -an → kelewatan；既可说 kelewatan halte，也可说 bercandanya kelewatan。",
+      "example": "Aku tadi hampir kelewatan stasiun karena lagi fokus balas chat.",
+      "example_cn": "我刚才因为专心回消息，差点坐过站。",
+      "synonym_note": "kebablasan 偏不知不觉做过头；kelewatan 还常用于错过地点、时间或界限。"
+    },
+    {
+      "word": "ngejar",
+      "display": "ngejar",
+      "audio_text": "ngejar",
+      "cn": "追赶；赶进度；赶时间（口语）",
+      "en": "chase; catch up; rush to meet",
+      "root": "kejar",
+      "root_cn": "追；赶",
+      "formation": "mengejar → ngejar；办公室里常说 ngejar deadline / ngejar target。",
+      "example": "Hari ini aku harus ngejar dua follow-up yang kemarin belum beres.",
+      "example_cn": "今天我得赶两项昨天还没处理完的跟进。",
+      "synonym_note": "ngebut 强调加快速度猛赶；ngejar 强调为了追上目标、时间或进度而赶。"
+    },
+    {
+      "word": "ngingetin",
+      "display": "ngingetin",
+      "audio_text": "ngingetin",
+      "cn": "提醒某人（口语）",
+      "en": "remind someone",
+      "root": "ingat",
+      "root_cn": "记得；想起",
+      "formation": "mengingatkan → ngingetin；聊天和办公室口语里非常自然。",
+      "example": "Nanti jam dua ngingetin aku buat follow up vendor ya.",
+      "example_cn": "等会儿两点提醒我跟进供应商。",
+      "synonym_note": "ingat = 记得；ngingetin = 主动提醒别人别忘。"
+    },
+    {
+      "word": "nentuin",
+      "display": "nentuin",
+      "audio_text": "nentuin",
+      "cn": "决定；确定具体安排（口语）",
+      "en": "decide; determine; set",
+      "root": "tentu",
+      "root_cn": "确定；一定",
+      "formation": "menentukan → nentuin；常用于 nentuin waktu / tempat / pilihan。",
+      "example": "Kita nentuin jam meeting sekarang aja biar semua bisa atur jadwal.",
+      "example_cn": "我们现在就把会议时间定下来吧，这样大家都能安排日程。",
+      "synonym_note": "memutuskan 偏‘作决定’；nentuin 更口语，也常指把具体时间、地点、方案定下来。"
+    },
+    {
+      "word": "ketuker",
+      "display": "ketuker",
+      "audio_text": "ketuker",
+      "cn": "弄反了；拿错了；互相弄混（口语）",
+      "en": "get mixed up; be swapped",
+      "root": "tukar",
+      "root_cn": "交换；更换",
+      "formation": "tertukar → ketuker；日常口语常用于 barang / nama / jadwal ketuker。",
+      "example": "Jam meeting-nya ketuker di kalenderku, makanya tadi aku sempat bingung.",
+      "example_cn": "我日历里的会议时间弄反了，所以刚才我有点搞懵。",
+      "synonym_note": "salah = 一般出错；ketuker 特指两个东西被互换、搞混。"
+    },
+    {
+      "word": "ngepasin",
+      "display": "ngepasin",
+      "audio_text": "ngepasin",
+      "cn": "把时间/安排调到刚好合适（口语）",
+      "en": "fit; time; adjust to match",
+      "root": "pas",
+      "root_cn": "刚好；合适",
+      "formation": "pas → mengepaskan → ngepasin；口语里可说 ngepasin waktu / jadwal，表示调到合适。",
+      "example": "Aku lagi ngepasin jadwal biar bisa ketemu klien sebelum makan siang.",
+      "example_cn": "我正在调整时间，好让自己能在午饭前见客户。",
+      "synonym_note": "menyesuaikan 更标准、更广；ngepasin 更口语，强调‘调到刚刚好’。"
+    }
+  ],
+  "sentences": [
+    {"id": "Meeting pagi ini ngaret, jadi aku harus ngepasin ulang jadwal setelahnya.", "cn": "今天早上的会议晚了，所以我得重新调整后面的日程。"},
+    {"id": "Kalau proyeknya molor terus, tim bisa keteteran ngejar target minggu ini.", "cn": "如果项目一直拖延，团队这周可能会忙乱着追目标。"},
+    {"id": "Kalian jalan dulu aja, aku nyusul setelah ngingetin vendor soal dokumen yang masih nyangkut.", "cn": "你们先走吧，我提醒完供应商那份还卡着的文件后就跟上。"},
+    {"id": "Aku hampir kelewatan halte karena lagi mikirin kerjaan yang belum beres.", "cn": "我刚才因为想着还没做完的工作，差点坐过站。"},
+    {"id": "Jadwalnya sempat ketuker, jadi sekarang kita nentuin ulang waktunya biar nggak ngulur lagi.", "cn": "时间表刚才弄混了，所以我们现在重新把时间定好，免得再拖。"}
+  ],
+  "reading": {
+    "title": "Jadwal Berubah Lagi",
+    "text": "Pagi ini meeting pertama ngaret sekitar dua puluh menit. Karena diskusinya panjang, jadwal berikutnya ikut molor. Aku mulai keteteran karena masih harus ngejar dua follow-up yang kemarin belum beres. Temanku bilang dia bakal nyusul setelah selesai telepon. Sementara itu, aku ngingetin vendor soal dokumen yang masih nyangkut. Ternyata jam meeting siang sempat ketuker di kalender, jadi kami harus nentuin ulang waktunya. Aku juga ngepasin jadwal supaya masih sempat makan siang. Untung aku nyicil beberapa tugas dari pagi. Kalau semuanya ditunda, nanti malah makin susah dan vendor bisa terus ngulur waktu.",
+    "cn": "今天早上的第一个会议晚了大约二十分钟。因为讨论时间很长，后面的安排也跟着延后。我开始有点跟不上，因为还得赶两项昨天没做完的跟进。同事说他打完电话后会随后过来。同时，我提醒供应商那份还卡着的文件。结果中午会议的时间在日历里一度弄反了，所以我们得重新确定时间。我也在调整日程，尽量还能赶得上午饭。好在我从早上就已经分批做了一些任务。如果所有事情都往后拖，之后只会更难，供应商也可能继续拖时间。",
+    "vocab": ["ngaret", "molor", "keteteran", "ngejar", "nyusul", "ngingetin", "nyangkut", "ketuker", "nentuin", "ngepasin", "nyicil", "ngulur"]
+  },
+  "quiz": [
+    {"question": "“Meeting-nya ngaret, terus diskusinya molor.” 最自然的理解是：", "options": ["会议开始晚了，而且讨论也拖长了", "会议提前开始，而且很快结束", "会议被取消了"], "answer_index": 0, "explain": "ngaret 常指原定开始时间变晚；molor 更常指过程或结束时间被拖长。"},
+    {"question": "“Kalian duluan aja, aku nyusul.” 最自然的意思是：", "options": ["你们先走，我随后跟上", "你们等我一起走", "你们先取消吧"], "answer_index": 0, "explain": "nyusul 表示别人先走或先开始，自己稍后跟上。"},
+    {"question": "复习：流程卡在审批环节动不了，最自然的是：", "options": ["nyangkut di approval", "ketuker di approval", "ngaret di approval"], "answer_index": 0, "explain": "nyangkut 是近期旧词，强调卡在某个具体环节无法继续推进。"}
+  ],
+  "output": {
+    "task": "用自然口语表达：‘今天早上的会议晚了，后面的时间也被拖长了。我还有两个任务要赶，所以有点跟不上。你们先去，我等提醒完供应商就过去。中午的时间刚才弄反了，我们重新定一下吧。’",
+    "reference_answer": "Meeting pagi ini ngaret, jadi jadwal setelahnya ikut molor. Aku masih harus ngejar dua tugas, jadi agak keteteran. Kalian duluan aja, aku nyusul setelah ngingetin vendor. Jam siangnya tadi sempat ketuker, jadi kita nentuin ulang aja.",
+    "reference_cn": "今天早上的会议晚了，后面的时间也被拖长了。我还有两个任务要赶，所以有点跟不上。你们先去，我等提醒完供应商就过去。中午的时间刚才弄反了，我们重新定一下吧。"
+  },
+  "review": [
+    "时间变化：ngaret = 开始晚；molor = 过程/结束拖长；kelewatan = 错过或过头。",
+    "赶进度：keteteran = 跟不上节奏；ngejar = 为了追上目标而赶；nyusul = 别人先走后自己跟上。",
+    "自然复习旧词 nyangkut、nyicil、ngulur、kewalahan、kebablasan，避免连续重复昨天整组任务词。"
+  ]
+}
