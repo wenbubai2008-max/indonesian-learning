@@ -1,0 +1,265 @@
+{
+  "date": "2026-09-10",
+  "session": "pm",
+  "time": "19:00",
+  "level": "A2+ → B1",
+  "day": 20,
+  "title": "19:00｜复习 + 应用：日程一乱，怎么自然说‘顾不过来、赶时间、忙乱’",
+  "vocab": [
+    {
+      "word": "nggak kepegang",
+      "display": "nggak kepegang",
+      "audio_text": "nggak kepegang",
+      "cn": "顾不过来；管不过来；掌控不住（口语）",
+      "en": "too much to handle; hard to keep under control",
+      "root": "pegang",
+      "root_cn": "拿；握；掌握",
+      "formation": "pegang → kepegang（能被掌握/控制住）→ nggak kepegang（顾不过来、掌控不住）；工作口语很自然。",
+      "example": "Kalau semua masuk barengan, kerjaannya jadi nggak kepegang.",
+      "example_cn": "如果所有事情一起进来，工作就会顾不过来。",
+      "usage_note": "新词块。适合工作量、项目、客户跟进等场景；比 kewalahan 更强调‘事情多到无法一一顾到’。"
+    },
+    {
+      "word": "kelabakan",
+      "display": "kelabakan",
+      "audio_text": "kelabakan",
+      "cn": "忙乱；手忙脚乱",
+      "en": "flustered; scrambling; in a panic",
+      "root": "kelabakan",
+      "root_cn": "手忙脚乱；慌着应付",
+      "formation": "固定口语状态词，常说 jadi kelabakan / bikin kelabakan。",
+      "example": "Tadi jadwal berubah mendadak, jadi semua orang sempat kelabakan.",
+      "example_cn": "刚才日程突然变了，所以大家一度都有点手忙脚乱。",
+      "usage_note": "新词。适合日程突然变化、临时任务、现场忙乱。"
+    },
+    {
+      "word": "ngejar waktu",
+      "display": "ngejar waktu",
+      "audio_text": "ngejar waktu",
+      "cn": "赶时间；抢时间",
+      "en": "race against time; be pressed for time",
+      "root": "kejar",
+      "root_cn": "追；赶",
+      "formation": "kejar → ngejar（口语）+ waktu；整块表达‘时间不够，只能赶着做’。",
+      "example": "Aku lagi ngejar waktu nih, jadi kita bahas poin pentingnya aja dulu.",
+      "example_cn": "我现在在赶时间，所以我们先只讲重点吧。",
+      "usage_note": "新词块。比 buru-buru 更强调客观时间压力。"
+    },
+    {
+      "word": "kecapean",
+      "display": "kecapean",
+      "audio_text": "kecapean",
+      "cn": "累过头；累坏了（口语）",
+      "en": "overly tired; exhausted from doing too much",
+      "root": "capek",
+      "root_cn": "累；疲劳",
+      "formation": "ke- + capek + -an → kecapean；表示因为做太多而累过头。标准表达可用 terlalu lelah / kelelahan。",
+      "example": "Kalau tiap hari pulang malam terus, lama-lama bisa kecapean.",
+      "example_cn": "如果每天都一直很晚回家，久了会累过头。",
+      "usage_note": "新词。雅加达日常口语常见，生活和办公室都能用。"
+    },
+    {
+      "word": "kebuang",
+      "display": "kebuang",
+      "audio_text": "kebuang",
+      "cn": "被白白浪费掉",
+      "en": "go to waste; be wasted",
+      "root": "buang",
+      "root_cn": "扔掉；浪费",
+      "formation": "ke- + buang → kebuang；口语常说 waktu/tenaga kebuang。",
+      "example": "Kalau nunggu tanpa kepastian terus, waktu kita malah kebuang.",
+      "example_cn": "如果一直没有明确结果地等，我们的时间反而会被浪费。",
+      "usage_note": "近期陌生词/弱项词，继续放进真实语境主动调用。"
+    },
+    {
+      "word": "ngulur",
+      "display": "ngulur",
+      "audio_text": "ngulur",
+      "cn": "拖时间；故意往后拖",
+      "en": "stall; drag out",
+      "root": "ulur",
+      "root_cn": "延长；拖长",
+      "formation": "ulur → ngulur；口语里常带‘故意拖’的感觉。",
+      "example": "Kalau vendor masih ngulur, kita perlu kasih batas waktu yang lebih tegas.",
+      "example_cn": "如果供应商还在拖，我们需要给一个更明确的时间限制。",
+      "usage_note": "近期弱项词，和 ketunda 区分：ketunda 偏被动耽搁，ngulur 常带主动拖延。"
+    },
+    {
+      "word": "nahan dulu",
+      "display": "nahan dulu",
+      "audio_text": "nahan dulu",
+      "cn": "先按住；暂缓一下",
+      "en": "hold off for now",
+      "root": "tahan",
+      "root_cn": "忍住；承受；阻止继续",
+      "formation": "tahan → nahan（口语）+ dulu；表示先不往下推进。",
+      "example": "Kalau datanya masih berubah-ubah, mending bagian ini kita nahan dulu.",
+      "example_cn": "如果数据还一直变，我们最好先把这一部分按住。",
+      "usage_note": "近期弱项词，适合会议、项目推进和风险控制场景。"
+    },
+    {
+      "word": "bentrok",
+      "display": "bentrok",
+      "audio_text": "bentrok",
+      "cn": "时间冲突；撞期",
+      "en": "clash; conflict in schedule",
+      "root": "bentrok",
+      "root_cn": "冲突；相撞",
+      "formation": "基础高频口语词；常说 jadwal bentrok。",
+      "example": "Jam empat aku bentrok sama meeting lain, jadi harus geser sedikit.",
+      "example_cn": "四点我和另一个会议撞期了，所以得稍微挪一下。",
+      "usage_note": "今天08:00复现，不算新词。"
+    },
+    {
+      "word": "mundurin",
+      "display": "mundurin",
+      "audio_text": "mundurin",
+      "cn": "把时间往后推；推迟（口语）",
+      "en": "move back; postpone",
+      "root": "mundur",
+      "root_cn": "后退；往后",
+      "formation": "mundur → memundurkan → mundurin；口语常说 mundurin meeting / deadline。",
+      "example": "Kalau jam empat bentrok, kita mundurin meeting-nya ke setengah lima aja.",
+      "example_cn": "如果四点撞期，我们就把会议往后推到四点半吧。",
+      "usage_note": "今天08:00复现。"
+    },
+    {
+      "word": "nyempetin",
+      "display": "nyempetin",
+      "audio_text": "nyempetin",
+      "cn": "特意挤出时间做某事（口语）",
+      "en": "make time; squeeze something in",
+      "root": "sempat",
+      "root_cn": "有空；来得及",
+      "formation": "sempat → menyempatkan → nyempetin；表示即使忙也主动挤出时间。",
+      "example": "Walaupun sore padat, aku mau nyempetin follow up satu klien dulu.",
+      "example_cn": "虽然下午很忙，我还是想挤时间先跟进一个客户。",
+      "usage_note": "今天08:00复现。"
+    },
+    {
+      "word": "ketunda",
+      "display": "ketunda",
+      "audio_text": "ketunda",
+      "cn": "被耽搁；被推迟（口语）",
+      "en": "get delayed; be postponed",
+      "root": "tunda",
+      "root_cn": "推迟；延后",
+      "formation": "tertunda → ketunda；口语常说 kerjaannya ketunda / meeting-nya ketunda。",
+      "example": "Karena jadwal sore bentrok, satu follow up akhirnya ketunda sampai besok.",
+      "example_cn": "因为下午的时间撞期，一项跟进最后被拖到明天。",
+      "usage_note": "今天08:00复现，重点和 ngulur 做语义对比。"
+    }
+  ],
+  "rewrite": [
+    {
+      "task": "中文→印尼语：如果所有事情一起进来，我就顾不过来了。",
+      "reference_answer": "Kalau semua masuk barengan, aku jadi nggak kepegang.",
+      "reference_cn": "如果所有事情一起进来，我就顾不过来了。"
+    },
+    {
+      "task": "情境表达：你现在在赶时间，想让对方先讲重点。",
+      "reference_answer": "Aku lagi ngejar waktu nih, jadi bahas poin pentingnya aja dulu ya.",
+      "reference_cn": "我现在在赶时间，所以先讲重点吧。"
+    },
+    {
+      "task": "中文→印尼语：日程突然变了，大家都有点手忙脚乱。",
+      "reference_answer": "Jadwalnya berubah mendadak, jadi semua orang sempat kelabakan.",
+      "reference_cn": "日程突然变了，所以大家一度都有点手忙脚乱。"
+    },
+    {
+      "task": "改成更自然口语：Karena jadwal saya bertabrakan, saya akan menunda meeting tiga puluh menit.",
+      "reference_answer": "Karena jadwalku bentrok, meeting-nya aku mundurin setengah jam aja.",
+      "reference_cn": "因为我的时间撞期，我就把会议往后推半小时。"
+    },
+    {
+      "task": "情境表达：供应商还在故意拖，你建议先别继续投入太多时间。",
+      "reference_answer": "Kalau vendor masih ngulur, mending kita nahan dulu biar waktu nggak kebuang.",
+      "reference_cn": "如果供应商还在拖，我们最好先按住，免得浪费时间。"
+    }
+  ],
+  "reading": {
+    "title": "Sore yang Jadwalnya Berubah Terus",
+    "text": "Sore ini jadwalku berubah dua kali. Meeting jam empat bentrok sama agenda lain, jadi akhirnya kami mundurin setengah jam. Masalahnya, vendor yang harusnya kasih jawaban malah masih ngulur. Kalau ditunggu terus, waktu tim bisa kebuang dan kerjaan lain jadi nggak kepegang. Aku sempat kelabakan karena ada dua chat penting masuk barengan, tapi akhirnya aku pilih nahan satu pembahasan dulu. Aku juga lagi ngejar waktu, jadi cuma fokus ke hal yang paling penting. Sebelum pulang, aku masih nyempetin satu follow up. Kalau tiap hari begini terus, bisa-bisa malah kecapean.",
+    "cn": "今天下午我的日程改了两次。四点的会议和另一个安排撞期了，所以最后我们往后推了半小时。问题是，本来应该给答复的供应商还在拖。如果一直等，团队时间可能会被浪费，其他工作也会顾不过来。我一度有点手忙脚乱，因为两条重要消息同时进来，但最后我决定先按住一个讨论。我也正在赶时间，所以只专注最重要的事情。下班前，我还是挤时间跟进了一件事。如果每天都这样，搞不好反而会累过头。",
+    "vocab": ["bentrok", "mundurin", "ngulur", "kebuang", "nggak kepegang", "kelabakan", "nahan dulu", "ngejar waktu", "nyempetin", "kecapean"],
+    "questions": [
+      {
+        "task": "为什么说话人决定先按住一个讨论？",
+        "reference_answer": "Karena dia lagi ngejar waktu, ada beberapa hal masuk barengan, dan dia mau fokus ke hal yang paling penting dulu.",
+        "reference_cn": "因为他正在赶时间，又有几件事同时进来，所以他想先专注最重要的事情。"
+      },
+      {
+        "task": "如果供应商继续拖，会带来什么后果？",
+        "reference_answer": "Waktu tim bisa kebuang dan kerjaan lain jadi nggak kepegang.",
+        "reference_cn": "团队时间可能被浪费，其他工作也会顾不过来。"
+      }
+    ]
+  },
+  "dialogue": {
+    "title": "雅加达办公室口语｜时间撞了，先改哪个？",
+    "lines": [
+      {"speaker":"A","id":"Jam empat bentrok nih. Yang vendor mau kita mundurin atau gimana?","cn":"四点撞期了。供应商那个会议我们往后推还是怎么办？"},
+      {"speaker":"B","id":"Mundurin setengah jam aja deh. Aku lagi ngejar waktu juga.","cn":"往后推半小时吧。我也正在赶时间。"},
+      {"speaker":"A","id":"Tapi vendor-nya dari tadi masih ngulur terus.","cn":"但供应商从刚才开始就一直在拖。"},
+      {"speaker":"B","id":"Kalau gitu nahan dulu aja. Jangan sampai waktu kita kebuang.","cn":"那就先按住吧。别让我们的时间白白浪费。"},
+      {"speaker":"A","id":"Oke. Soalnya kalau semua masuk barengan, nanti malah nggak kepegang.","cn":"好。因为如果所有事情一起进来，之后反而会顾不过来。"},
+      {"speaker":"B","id":"Iya, tadi aja aku udah sempat kelabakan. Yang penting beresin prioritas dulu.","cn":"对，刚才我都已经一度手忙脚乱了。先把优先事项搞定最重要。"}
+    ]
+  },
+  "daily_test": {
+    "title": "当日小测 · 5–8分钟",
+    "items": [
+      {
+        "type": "choice",
+        "prompt": "事情太多，已经顾不过来了，最自然的是：",
+        "options": ["nggak kepegang", "kebuang", "mundurin"],
+        "answer_index": 0,
+        "explain": "nggak kepegang 强调事情多到无法一一顾到、掌控住。"
+      },
+      {
+        "type": "choice",
+        "prompt": "‘供应商还在故意拖时间’最自然的是：",
+        "options": ["vendor masih ngulur", "vendor masih ketunda", "vendor masih bentrok"],
+        "answer_index": 0,
+        "explain": "ngulur 常带主动、故意拖延的感觉；ketunda 更偏被动耽搁。"
+      },
+      {
+        "type": "choice",
+        "prompt": "日程突然变动，大家手忙脚乱，最贴切的是：",
+        "options": ["kelabakan", "nyempetin", "kecapean"],
+        "answer_index": 0,
+        "explain": "kelabakan 表示突然忙乱、手忙脚乱。"
+      },
+      {
+        "type": "fill",
+        "prompt": "Aku lagi ___ nih, jadi bahas poin pentingnya aja dulu.（我正在赶时间）",
+        "answer": "ngejar waktu",
+        "answer_cn": "赶时间"
+      },
+      {
+        "type": "fill",
+        "prompt": "Kalau datanya belum jelas, mending kita ___ dulu.（先暂缓一下）",
+        "answer": "nahan",
+        "answer_cn": "先按住；暂缓"
+      },
+      {
+        "type": "order",
+        "prompt": "把词块排成自然口语：‘因为时间撞期，我们把会议往后推半小时。’",
+        "tokens": ["karena jadwalnya bentrok", "meeting-nya", "kita mundurin", "setengah jam aja"],
+        "answer": "Karena jadwalnya bentrok, meeting-nya kita mundurin setengah jam aja.",
+        "answer_cn": "因为时间撞期，我们把会议往后推半小时。"
+      }
+    ],
+    "self_check": {
+      "prompt": "今天这些内容你感觉怎么样？",
+      "options": ["大部分能快速认出", "一半左右需要想一下", "很多还会卡"]
+    }
+  },
+  "review": [
+    "新词重点：nggak kepegang = 顾不过来；kelabakan = 手忙脚乱；ngejar waktu = 赶时间；kecapean = 累过头。",
+    "时间应用：bentrok → 撞期；mundurin → 往后推；ketunda → 被耽搁。",
+    "弱项对比：ngulur = 主动拖时间；ketunda = 被动耽搁；nahan dulu = 主动暂缓。",
+    "口语串联：Aku lagi ngejar waktu, jadi yang ini nahan dulu aja biar kerjaan lain nggak kepegang.",
+    "5分钟复盘：不看答案，用自己的话说一遍‘下午日程突然变化后，你怎么重新安排工作’。参考：Sore tadi jadwalku bentrok, jadi satu meeting aku mundurin. Karena lagi ngejar waktu, satu pembahasan aku nahan dulu biar kerjaan lain tetap kepegang."
+  ]
+}
