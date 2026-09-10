@@ -1695,20 +1695,21 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-10 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-08-29",
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-10"
     ],
     "root_cn": "追上；随后跟上",
-    "example": "Kalian jalan dulu aja, nanti aku nyusul habis meeting.",
-    "example_cn": "你们先走吧，我开完会晚点再过去找你们。"
+    "example": "Kalian masuk dulu aja, aku nyusul setelah telepon ini selesai.",
+    "example_cn": "你们先进去吧，我打完这个电话就随后过去。"
   },
   {
     "word": "pantes",
@@ -1840,23 +1841,27 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "ngaret",
     "cn": "拖延、迟到",
-    "en": "",
-    "root": "",
+    "en": "run late; be delayed",
+    "root": "karet",
     "categories": [
       "每日学习",
       "08:00",
       "原始课程",
       "后续纠正版"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 08:00",
-    "last_seen": "2026-08-30 08:00",
+    "last_seen": "2026-09-10 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-30"
-    ]
+      "2026-08-30",
+      "2026-09-10"
+    ],
+    "root_cn": "橡胶；引申为时间被‘拉长’",
+    "example": "Meeting-nya ngaret hampir setengah jam, jadi jadwal setelahnya ikut mundur.",
+    "example_cn": "会议晚了快半小时，所以后面的安排也跟着往后推。"
   },
   {
     "word": "mager",
@@ -4185,15 +4190,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "2026-09-02"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-02 08:00",
-    "last_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-10 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-02"
-    ]
+      "2026-09-02",
+      "2026-09-10"
+    ],
+    "root_cn": "追；赶",
+    "example": "Hari ini aku harus ngejar dua follow-up yang kemarin belum beres.",
+    "example_cn": "今天我得赶两项昨天还没处理完的跟进。"
   },
   {
     "word": "dadakan",
@@ -4316,9 +4325,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-10 08:00",
     "sessions": [
       "19:00",
       "08:00"
@@ -4326,10 +4335,11 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-02",
       "2026-09-04",
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-10"
     ],
-    "example": "Minggu ini meeting terlalu banyak, jadi kerjaan utama agak keteteran.",
-    "example_cn": "这周会议太多，所以主要工作有点跟不上进度。",
+    "example": "Kalau semua dikerjain mendadak, aku pasti keteteran.",
+    "example_cn": "如果所有事情都临时做，我肯定会忙得跟不上。",
     "root_cn": "忙不过来；跟不上"
   },
   {
@@ -4760,21 +4770,23 @@ window.DAILY_VOCAB_DB = [
     "cn": "错过；坐过站；超过头；过分（口语）",
     "en": "miss; go past; overshoot; go too far",
     "root": "lewat",
-    "example": "Aku tadi hampir kelewatan halte karena lagi baca chat.",
-    "example_cn": "我刚才因为在看聊天消息，差点坐过站。",
+    "example": "Aku tadi hampir kelewatan stasiun karena lagi fokus balas chat.",
+    "example_cn": "我刚才因为专心回消息，差点坐过站。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-10 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-04"
-    ]
+      "2026-09-04",
+      "2026-09-10"
+    ],
+    "root_cn": "经过；超过"
   },
   {
     "word": "nyambung",
@@ -5858,19 +5870,22 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "记得；想起",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-10 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-10"
     ],
-    "example": "Besok pagi ngingetin aku soal dokumen itu ya.",
-    "example_cn": "明天早上提醒我一下那份文件。"
+    "example": "Nanti jam dua ngingetin aku buat follow up vendor ya.",
+    "example_cn": "等会儿两点提醒我跟进供应商。"
   },
   {
     "word": "asal jangan",
@@ -6504,5 +6519,93 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Jangan sampai kita kejebak ngurus hal kecil terus kerjaan utama malah ketumpuk.",
     "example_cn": "别让我们一直陷在小事里，反而把主要工作积压了。"
+  },
+  {
+    "word": "molor",
+    "cn": "延期；拖长；时间超出原计划（口语）",
+    "en": "overrun; drag on; be extended",
+    "root": "molor",
+    "root_cn": "拖长；延后",
+    "example": "Kalau diskusinya terus panjang, meeting ini bisa molor sampai siang.",
+    "example_cn": "如果讨论一直这么长，这个会议可能会拖到中午。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ]
+  },
+  {
+    "word": "nentuin",
+    "cn": "决定；确定具体安排（口语）",
+    "en": "decide; determine; set",
+    "root": "tentu",
+    "root_cn": "确定；一定",
+    "example": "Kita nentuin jam meeting sekarang aja biar semua bisa atur jadwal.",
+    "example_cn": "我们现在就把会议时间定下来吧，这样大家都能安排日程。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ]
+  },
+  {
+    "word": "ketuker",
+    "cn": "弄反了；拿错了；互相弄混（口语）",
+    "en": "get mixed up; be swapped",
+    "root": "tukar",
+    "root_cn": "交换；更换",
+    "example": "Jam meeting-nya ketuker di kalenderku, makanya tadi aku sempat bingung.",
+    "example_cn": "我日历里的会议时间弄反了，所以刚才我有点搞懵。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ]
+  },
+  {
+    "word": "ngepasin",
+    "cn": "把时间/安排调到刚好合适（口语）",
+    "en": "fit; time; adjust to match",
+    "root": "pas",
+    "root_cn": "刚好；合适",
+    "example": "Aku lagi ngepasin jadwal biar bisa ketemu klien sebelum makan siang.",
+    "example_cn": "我正在调整时间，好让自己能在午饭前见客户。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ]
   }
 ];
