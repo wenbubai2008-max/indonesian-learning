@@ -48,6 +48,10 @@
     #daily .dailyFixAnswer{font-size:16px;line-height:1.6;padding:11px 13px}
     #daily .dailyFixToggle{font-size:14px;padding:7px 10px}
 
+    #daily .dailyCompleteDone{background:#eaf8ef!important;color:#17652d!important;border:1px solid #b9dfc4!important;cursor:default!important;transform:scale(1.02);box-shadow:0 5px 16px rgba(23,101,45,.12);transition:.18s ease}
+    .dailyCompleteToast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,18px);z-index:9999;background:#173b25;color:#fff;padding:12px 18px;border-radius:12px;font-weight:750;box-shadow:0 10px 28px rgba(0,0,0,.18);opacity:0;pointer-events:none;transition:.22s ease}
+    .dailyCompleteToast.show{opacity:1;transform:translate(-50%,0)}
+
     @media(max-width:820px){
       #daily .dailyFixGrid{grid-template-columns:1fr}
       #daily .dailyFixSec{padding:11px 10px;margin:8px 0;border-radius:14px}
@@ -75,7 +79,38 @@
       #daily .dailyFixExCn{font-size:15px;line-height:1.45}
       #daily .dailyFixReading{font-size:18px;line-height:1.7;padding:12px}
       #daily .dailyFixTranslation{padding:11px 12px}
+      .dailyCompleteToast{bottom:18px;max-width:calc(100vw - 28px);text-align:center}
     }
   `;
   document.head.appendChild(st);
+
+  function showCompleteToast(text){
+    let t=document.getElementById('dailyCompleteToast');
+    if(!t){t=document.createElement('div');t.id='dailyCompleteToast';t.className='dailyCompleteToast';document.body.appendChild(t);}
+    t.textContent=text||'✓ 已记录完成';
+    requestAnimationFrame(function(){t.classList.add('show');});
+    clearTimeout(t._timer);
+    t._timer=setTimeout(function(){t.classList.remove('show');},1500);
+  }
+
+  function installCompleteFeedback(){
+    if(window.__dailyCompleteFeedbackInstalled||typeof window.completeSession!=='function')return;
+    window.__dailyCompleteFeedbackInstalled=true;
+    window.completeSession=function(d,s){
+      localStorage.setItem('done_'+d+'_'+s,'1');
+      if(typeof window.updateHome==='function')window.updateHome();
+      else if(typeof window.updateStats==='function')window.updateStats();
+      const btn=document.querySelector('#daily button[onclick*="completeSession"]');
+      if(btn){
+        btn.textContent='✓ 已完成';
+        btn.disabled=true;
+        btn.classList.add('dailyCompleteDone');
+      }
+      showCompleteToast((s==='am'?'08:00 早间学习':'19:00 晚间学习')+' · 已记录完成');
+    };
+  }
+
+  installCompleteFeedback();
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',installCompleteFeedback,{once:true});
+  else setTimeout(installCompleteFeedback,0);
 })();
