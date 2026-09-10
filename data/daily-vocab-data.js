@@ -6607,5 +6607,137 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-10"
     ]
+  },
+  {
+    "word": "bentrok",
+    "cn": "时间冲突；撞期（口语）",
+    "en": "clash; conflict in schedule",
+    "root": "bentrok",
+    "root_cn": "冲突；相撞",
+    "example": "Jam dua aku nggak bisa, jadwalku bentrok sama meeting lain.",
+    "example_cn": "两点我不行，我的时间和另一个会议撞了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ]
+  },
+  {
+    "word": "mundurin",
+    "cn": "把时间往后推；推迟（口语）",
+    "en": "move back; postpone",
+    "root": "mundur",
+    "root_cn": "后退；往后",
+    "example": "Kalau klien belum siap, kita mundurin meeting-nya setengah jam aja.",
+    "example_cn": "如果客户还没准备好，我们就把会议往后推半小时吧。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ]
+  },
+  {
+    "word": "majuin",
+    "cn": "把时间提前；往前挪（口语）",
+    "en": "bring forward; move earlier",
+    "root": "maju",
+    "root_cn": "向前；前进",
+    "example": "Kalau semua sudah siap, meeting sore bisa kita majuin ke jam tiga.",
+    "example_cn": "如果大家都准备好了，下午的会议可以提前到三点。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ]
+  },
+  {
+    "word": "nyempetin",
+    "cn": "特意挤出时间做某事（口语）",
+    "en": "make time; squeeze something in",
+    "root": "sempat",
+    "root_cn": "有空；来得及",
+    "example": "Walaupun pagi ini padat, aku mau nyempetin follow up satu klien dulu.",
+    "example_cn": "虽然今天早上很忙，我还是想挤时间先跟进一个客户。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ]
+  },
+  {
+    "word": "kesiangan",
+    "cn": "起晚了；早上的事情拖到太晚（口语）",
+    "en": "wake up late; get started too late in the morning",
+    "root": "siang",
+    "root_cn": "白天；中午",
+    "example": "Aku tadi kesiangan, jadi harus atur ulang jadwal pagi.",
+    "example_cn": "我今天起晚了，所以得重新安排上午的日程。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ]
+  },
+  {
+    "word": "ketunda",
+    "cn": "被耽搁；被推迟（口语）",
+    "en": "get delayed; be postponed",
+    "root": "tunda",
+    "root_cn": "推迟；延后",
+    "example": "Karena ada urusan mendadak, follow up pagi tadi ketunda sampai siang.",
+    "example_cn": "因为突然有事，今天早上的跟进被耽搁到中午。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ]
   }
 ];
