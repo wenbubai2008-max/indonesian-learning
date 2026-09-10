@@ -4238,9 +4238,9 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-10 19:00",
     "sessions": [
       "19:00"
     ],
@@ -4252,10 +4252,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-06",
       "2026-09-07",
       "2026-09-08",
-      "2026-09-09"
+      "2026-09-09",
+      "2026-09-10"
     ],
-    "example": "Kalau meeting-nya nggak jelas arahnya, waktu tim malah kebuang.",
-    "example_cn": "如果会议方向不清楚，团队的时间反而会被浪费。",
+    "example": "Kalau nunggu tanpa kepastian terus, waktu kita malah kebuang.",
+    "example_cn": "如果一直没有明确结果地等，我们的时间反而会被浪费。",
     "root_cn": "扔掉；浪费"
   },
   {
@@ -5728,23 +5729,24 @@ window.DAILY_VOCAB_DB = [
     "en": "stall; drag out",
     "root": "ulur",
     "root_cn": "延长；拖长",
-    "example": "Kalau vendor terus ngulur, kita kasih deadline yang jelas aja.",
-    "example_cn": "如果供应商一直拖，我们就直接给一个明确截止时间。",
+    "example": "Kalau vendor masih ngulur, kita perlu kasih batas waktu yang lebih tegas.",
+    "example_cn": "如果供应商还在拖，我们需要给一个更明确的时间限制。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-10 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-09-09"
+      "2026-09-09",
+      "2026-09-10"
     ]
   },
   {
@@ -6191,18 +6193,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-08 19:00",
-    "last_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-10 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
       "2026-09-08",
-      "2026-09-09"
+      "2026-09-09",
+      "2026-09-10"
     ],
-    "example": "Datanya belum jelas, jadi bagian ini mending kita nahan dulu.",
-    "example_cn": "数据还不明确，所以这一部分我们最好先暂缓。"
+    "example": "Kalau datanya masih berubah-ubah, mending bagian ini kita nahan dulu.",
+    "example_cn": "如果数据还一直变，我们最好先把这一部分按住。"
   },
   {
     "word": "ngelarin",
@@ -6610,21 +6613,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "bentrok",
-    "cn": "时间冲突；撞期（口语）",
+    "cn": "时间冲突；撞期",
     "en": "clash; conflict in schedule",
     "root": "bentrok",
     "root_cn": "冲突；相撞",
-    "example": "Jam dua aku nggak bisa, jadwalku bentrok sama meeting lain.",
-    "example_cn": "两点我不行，我的时间和另一个会议撞了。",
+    "example": "Jam empat aku bentrok sama meeting lain, jadi harus geser sedikit.",
+    "example_cn": "四点我和另一个会议撞期了，所以得稍微挪一下。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-10"
@@ -6636,17 +6641,19 @@ window.DAILY_VOCAB_DB = [
     "en": "move back; postpone",
     "root": "mundur",
     "root_cn": "后退；往后",
-    "example": "Kalau klien belum siap, kita mundurin meeting-nya setengah jam aja.",
-    "example_cn": "如果客户还没准备好，我们就把会议往后推半小时吧。",
+    "example": "Kalau jam empat bentrok, kita mundurin meeting-nya ke setengah lima aja.",
+    "example_cn": "如果四点撞期，我们就把会议往后推到四点半吧。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-10"
@@ -6680,17 +6687,19 @@ window.DAILY_VOCAB_DB = [
     "en": "make time; squeeze something in",
     "root": "sempat",
     "root_cn": "有空；来得及",
-    "example": "Walaupun pagi ini padat, aku mau nyempetin follow up satu klien dulu.",
-    "example_cn": "虽然今天早上很忙，我还是想挤时间先跟进一个客户。",
+    "example": "Walaupun sore padat, aku mau nyempetin follow up satu klien dulu.",
+    "example_cn": "虽然下午很忙，我还是想挤时间先跟进一个客户。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-10"
@@ -6724,20 +6733,110 @@ window.DAILY_VOCAB_DB = [
     "en": "get delayed; be postponed",
     "root": "tunda",
     "root_cn": "推迟；延后",
-    "example": "Karena ada urusan mendadak, follow up pagi tadi ketunda sampai siang.",
-    "example_cn": "因为突然有事，今天早上的跟进被耽搁到中午。",
+    "example": "Karena jadwal sore bentrok, satu follow up akhirnya ketunda sampai besok.",
+    "example_cn": "因为下午的时间撞期，一项跟进最后被拖到明天。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-10 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-10"
     ]
+  },
+  {
+    "word": "nggak kepegang",
+    "cn": "顾不过来；管不过来；掌控不住（口语）",
+    "en": "too much to handle; hard to keep under control",
+    "root": "pegang",
+    "root_cn": "拿；握；掌握",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 19:00",
+    "last_seen": "2026-09-10 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ],
+    "example": "Kalau semua masuk barengan, kerjaannya jadi nggak kepegang.",
+    "example_cn": "如果所有事情一起进来，工作就会顾不过来。"
+  },
+  {
+    "word": "kelabakan",
+    "cn": "忙乱；手忙脚乱",
+    "en": "flustered; scrambling; in a panic",
+    "root": "kelabakan",
+    "root_cn": "手忙脚乱；慌着应付",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 19:00",
+    "last_seen": "2026-09-10 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ],
+    "example": "Tadi jadwal berubah mendadak, jadi semua orang sempat kelabakan.",
+    "example_cn": "刚才日程突然变了，所以大家一度都有点手忙脚乱。"
+  },
+  {
+    "word": "ngejar waktu",
+    "cn": "赶时间；抢时间",
+    "en": "race against time; be pressed for time",
+    "root": "kejar",
+    "root_cn": "追；赶",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 19:00",
+    "last_seen": "2026-09-10 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ],
+    "example": "Aku lagi ngejar waktu nih, jadi kita bahas poin pentingnya aja dulu.",
+    "example_cn": "我现在在赶时间，所以我们先只讲重点吧。"
+  },
+  {
+    "word": "kecapean",
+    "cn": "累过头；累坏了（口语）",
+    "en": "overly tired; exhausted from doing too much",
+    "root": "capek",
+    "root_cn": "累；疲劳",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-10 19:00",
+    "last_seen": "2026-09-10 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-10"
+    ],
+    "example": "Kalau tiap hari pulang malam terus, lama-lama bisa kecapean.",
+    "example_cn": "如果每天都一直很晚回家，久了会累过头。"
   }
 ];
