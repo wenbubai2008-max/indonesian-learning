@@ -7006,5 +7006,71 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-11"
     ]
+  },
+  {
+    "word": "nyimak",
+    "cn": "认真听；跟着听懂内容（口语）",
+    "en": "listen closely; follow attentively",
+    "root": "simak",
+    "root_cn": "仔细听；留意",
+    "example": "Aku tadi nyimak dari awal, jadi kurang lebih sudah ngerti konteksnya.",
+    "example_cn": "我刚才从头一直认真听，所以大概已经明白背景了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
+  },
+  {
+    "word": "nyeletuk",
+    "cn": "突然插一句；随口冒出一句（口语）",
+    "en": "blurt out; make a spontaneous remark",
+    "root": "celetuk",
+    "root_cn": "随口插话；突然说一句",
+    "example": "Tadi dia nyeletuk satu komentar yang bikin semua orang ketawa.",
+    "example_cn": "刚才他突然插了一句，逗得大家都笑了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
+  },
+  {
+    "word": "ngegas",
+    "cn": "突然语气很冲；强势顶上去（口语）",
+    "en": "get aggressive; come on strong verbally",
+    "root": "gas",
+    "root_cn": "油门；加速",
+    "example": "Santai aja, nggak usah langsung ngegas kalau ada yang beda pendapat.",
+    "example_cn": "放轻松，有人意见不同时不用马上语气那么冲。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
   }
 ];
