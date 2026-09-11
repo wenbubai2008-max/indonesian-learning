@@ -28,11 +28,12 @@
     else localStorage.removeItem(KEY);
     apply();
     if(typeof window.openWeaknessV2==='function'&&document.getElementById('weakness')?.classList.contains('active'))setTimeout(window.openWeaknessV2,0);
+    else if(typeof window.goWeakness==='function'&&document.getElementById('weakness')?.classList.contains('active'))setTimeout(window.goWeakness,0);
   }
   function apply(){
     const box=document.getElementById('weaknessBody'); if(!box)return;
     const dismissed=load(),wp=pool(); let visible=0;
-    box.querySelectorAll('.v2-card').forEach(function(card){
+    box.querySelectorAll('.v2-card,.weak-card').forEach(function(card){
       const b=card.querySelector('b'); if(!b)return;
       const word=(b.textContent||'').trim(), k=norm(word),mastered=wp&&wp.get(word)?.status==='mastered';
       if(dismissed[k]||mastered){card.style.display='none';return;}
@@ -48,7 +49,7 @@
       }
     });
     const meta=document.getElementById('weaknessMeta'); if(meta)meta.textContent=visible+' 个';
-    const note=box.querySelector('.v2-note');
+    const note=box.querySelector('.v2-note,.weak-summary');
     if(note&&!box.querySelector('.weakRestoreWrap')){
       const wrap=document.createElement('div');wrap.className='weakRestoreWrap';
       wrap.innerHTML='<span>点“会了”会退出当前强化；以后再次答错会自动回来。</span><button type="button" class="weakRestoreBtn">恢复已移出</button>';
@@ -88,7 +89,7 @@
   function style(){
     if(document.getElementById('weakDismissStyle'))return;
     const s=document.createElement('style');s.id='weakDismissStyle';
-    s.textContent='.v2-card.weakCardHasDone{position:relative;padding-bottom:54px}.weakDoneBtn{position:absolute;right:12px;bottom:12px;margin:0;border:1px solid #cfe5d6;background:#f1faf4;color:#17652d;border-radius:9px;padding:7px 11px;font-weight:700;cursor:pointer;line-height:1.2}.weakDoneBtn:hover{background:#e7f7ec}.weakDoneBtn:focus-visible{outline:2px solid #6ba97b;outline-offset:2px}.weakRestoreWrap{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 2px;color:#667085;font-size:13px}.weakRestoreBtn{border:0;background:transparent;color:var(--blue);cursor:pointer;padding:6px}.v2-card .sound{margin-right:6px}.v2-q[data-done="1"] .v2-opts button{min-width:128px;text-align:left;display:flex;flex-direction:column;align-items:flex-start;gap:3px}.quickMeaning{display:block;font-size:12px;line-height:1.35;font-weight:500;color:#6b7280;white-space:normal}.v2-opts .v2-ok .quickMeaning{color:#3f7650}.v2-opts .v2-bad .quickMeaning{color:#a05049}@media(max-width:700px){.weakRestoreWrap{align-items:flex-start;flex-direction:column}.v2-card.weakCardHasDone{padding-bottom:56px}.weakDoneBtn{right:10px;bottom:10px}.v2-q[data-done="1"] .v2-opts button{min-width:0;flex:1 1 45%}}';
+    s.textContent='.v2-card.weakCardHasDone,.weak-card.weakCardHasDone{position:relative;padding-bottom:54px}.weakDoneBtn{position:absolute;right:12px;bottom:12px;margin:0;border:1px solid #cfe5d6;background:#f1faf4;color:#17652d;border-radius:9px;padding:7px 11px;font-weight:700;cursor:pointer;line-height:1.2}.weakDoneBtn:hover{background:#e7f7ec}.weakDoneBtn:focus-visible{outline:2px solid #6ba97b;outline-offset:2px}.weakRestoreWrap{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 2px;color:#667085;font-size:13px}.weakRestoreBtn{border:0;background:transparent;color:var(--blue);cursor:pointer;padding:6px}.v2-card .sound,.weak-card .sound{margin-right:6px}.v2-q[data-done="1"] .v2-opts button{min-width:128px;text-align:left;display:flex;flex-direction:column;align-items:flex-start;gap:3px}.quickMeaning{display:block;font-size:12px;line-height:1.35;font-weight:500;color:#6b7280;white-space:normal}.v2-opts .v2-ok .quickMeaning{color:#3f7650}.v2-opts .v2-bad .quickMeaning{color:#a05049}@media(max-width:700px){.weakRestoreWrap{align-items:flex-start;flex-direction:column}.v2-card.weakCardHasDone,.weak-card.weakCardHasDone{padding-bottom:56px}.weakDoneBtn{right:10px;bottom:10px}.v2-q[data-done="1"] .v2-opts button{min-width:0;flex:1 1 45%}}';
     document.head.appendChild(s);
   }
   const obs=new MutationObserver(function(){apply();decorateQuickAnswers();});
