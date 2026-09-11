@@ -1501,8 +1501,8 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "kepikiran",
-    "cn": "突然想到；一直挂在心上",
-    "en": "come to mind; be on one's mind",
+    "cn": "一直想到；挂在心上",
+    "en": "keep thinking about; have something on your mind",
     "root": "pikir",
     "categories": [
       "每日学习",
@@ -1510,9 +1510,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 19:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -1523,8 +1523,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-11"
     ],
     "root_cn": "想；思考",
-    "example": "Tadi aku kepikiran satu cara yang mungkin lebih simpel.",
-    "example_cn": "刚才我突然想到一个可能更简单的办法。"
+    "example": "Setelah meeting tadi aku masih kepikiran, takut ada bagian yang kelewat.",
+    "example_cn": "刚才开完会我还一直惦记着，怕有哪个部分漏掉了。"
   },
   {
     "word": "ngerasa",
@@ -4242,9 +4242,9 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 9,
+    "times_seen": 10,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-10 19:00",
+    "last_seen": "2026-09-11 19:00",
     "sessions": [
       "19:00"
     ],
@@ -4257,10 +4257,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-07",
       "2026-09-08",
       "2026-09-09",
-      "2026-09-10"
+      "2026-09-10",
+      "2026-09-11"
     ],
-    "example": "Kalau nunggu tanpa kepastian terus, waktu kita malah kebuang.",
-    "example_cn": "如果一直没有明确结果地等，我们的时间反而会被浪费。",
+    "example": "Kalau terus mikirin hal kecil, energi kita malah kebuang.",
+    "example_cn": "如果一直纠结小事，我们的精力反而会被浪费。",
     "root_cn": "扔掉；浪费"
   },
   {
@@ -5738,16 +5739,16 @@ window.DAILY_VOCAB_DB = [
     "en": "stall; drag out",
     "root": "ulur",
     "root_cn": "延长；拖长",
-    "example": "Kalau vendor masih ngulur, kita perlu kasih batas waktu yang lebih tegas.",
-    "example_cn": "如果供应商还在拖，我们需要给一个更明确的时间限制。",
+    "example": "Kalau memang belum siap, bilang aja terus terang, jangan ngulur terus.",
+    "example_cn": "如果确实还没准备好，就直接说，别一直拖。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-10 19:00",
+    "last_seen": "2026-09-11 19:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -5755,7 +5756,8 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-07",
       "2026-09-09",
-      "2026-09-10"
+      "2026-09-10",
+      "2026-09-11"
     ]
   },
   {
@@ -5784,20 +5786,20 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "nggak enakan",
-    "cn": "不好意思拒绝；碍于情面",
-    "en": "feel bad saying no; be reluctant to inconvenience others",
+    "cn": "太顾及别人；不好意思拒绝",
+    "en": "feel bad saying no; be overly considerate",
     "root": "enak",
-    "root_cn": "舒服；合适；好受",
-    "example": "Kalau terlalu nggak enakan, kerjaan orang lain bisa ikut kamu ambil semua.",
-    "example_cn": "如果太不好意思拒绝别人，别人的工作最后可能也全被你接过来。",
+    "root_cn": "舒服；好",
+    "example": "Aku tuh kadang nggak enakan, jadi susah nolak kalau teman minta bantuan.",
+    "example_cn": "我有时太顾及别人，所以朋友求帮忙时很难拒绝。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 19:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -6496,18 +6498,18 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "serba salah",
-    "cn": "怎么做都不对；左右为难",
-    "en": "be in a no-win situation; feel stuck",
+    "cn": "左右为难；怎么做都不对",
+    "en": "feel stuck; whatever you do feels wrong",
     "root": "salah",
-    "root_cn": "错误；不对",
+    "root_cn": "错；不对",
     "categories": [
       "每日学习",
       "19:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-09 19:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 19:00",
     "sessions": [
       "19:00",
       "08:00"
@@ -6516,8 +6518,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-09",
       "2026-09-11"
     ],
-    "example": "Kalau aku nolak sungkan, tapi kalau diterima semua malah kewalahan; jadinya serba salah.",
-    "example_cn": "拒绝又不好意思，可全接下来又会忙不过来，结果左右为难。"
+    "example": "Kalau ngomong takut bikin dia nggak enak, tapi kalau diam juga serba salah.",
+    "example_cn": "说了怕让他不舒服，但不说又觉得左右为难。"
   },
   {
     "word": "kejebak",
@@ -6771,25 +6773,26 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "nggak kepegang",
-    "cn": "顾不过来；管不过来；掌控不住（口语）",
-    "en": "too much to handle; hard to keep under control",
+    "cn": "顾不过来；管不过来",
+    "en": "too much to handle",
     "root": "pegang",
     "root_cn": "拿；握；掌握",
     "categories": [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-09-10 19:00",
+    "last_seen": "2026-09-11 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-09-11"
     ],
-    "example": "Kalau semua masuk barengan, kerjaannya jadi nggak kepegang.",
-    "example_cn": "如果所有事情一起进来，工作就会顾不过来。"
+    "example": "Kalau semua masalah dipikirin sendiri, lama-lama kerjaan lain nggak kepegang.",
+    "example_cn": "如果所有问题都自己想，久了其他工作就顾不过来了。"
   },
   {
     "word": "kelabakan",
@@ -6991,21 +6994,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "ngeh",
-    "cn": "意识到；反应过来；注意到（很口语）",
-    "en": "realize; notice; get it",
+    "cn": "意识到；反应过来",
+    "en": "realize; notice",
     "root": "ngeh",
     "root_cn": "意识到；注意到",
-    "example": "Aku baru ngeh ternyata angka di file itu salah.",
-    "example_cn": "我才反应过来，原来文件里的数字是错的。",
+    "example": "Aku baru ngeh ternyata dia sebenarnya cuma nggak enakan.",
+    "example_cn": "我才反应过来，原来他其实只是太顾及别人。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-11"
@@ -7079,21 +7084,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "sungkan",
-    "cn": "因为客气、尊重而不好意思开口或拒绝",
-    "en": "feel hesitant out of politeness or respect",
+    "cn": "因为礼貌或尊重而不好意思开口",
+    "en": "hesitant out of politeness or respect",
     "root": "sungkan",
     "root_cn": "客气拘谨；不好意思开口",
-    "example": "Aku sebenarnya mau nolak, tapi agak sungkan karena dia lebih senior.",
-    "example_cn": "其实我想拒绝，但因为他资历更深，我有点不好意思开口。",
+    "example": "Dia sungkan ngomong langsung karena yang ngajak lebih senior.",
+    "example_cn": "他不好意思直接说，因为邀请他的人资历更深。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-11"
@@ -7101,21 +7108,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "ceplas-ceplos",
-    "cn": "说话直来直去；想到什么就说什么（口语）",
+    "cn": "说话直来直去；想到什么说什么",
     "en": "speak bluntly; speak without much filter",
     "root": "ceplas-ceplos",
-    "root_cn": "直来直去地说；不太过滤措辞",
-    "example": "Dia orangnya ceplas-ceplos, jadi kadang kedengarannya terlalu langsung.",
-    "example_cn": "他说话很直，所以有时候听起来会太直接。",
+    "root_cn": "直来直去地说",
+    "example": "Dia memang ceplas-ceplos, tapi kadang justru bikin masalah cepat kelihatan.",
+    "example_cn": "他说话确实很直，但有时候反而能让问题很快暴露出来。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-11"
@@ -7123,21 +7132,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "salah tingkah",
-    "cn": "不知所措；因为紧张或尴尬而举止不自然",
-    "en": "act awkward; become flustered",
+    "cn": "紧张尴尬到不知所措",
+    "en": "become awkward or flustered",
     "root": "tingkah",
     "root_cn": "举止；行为",
-    "example": "Pas ditanya langsung sama bos, dia malah salah tingkah dan jawabnya jadi nggak jelas.",
-    "example_cn": "老板直接问他的时候，他反而紧张得不知所措，回答也变得不清楚。",
+    "example": "Pas ditanya kenapa belum selesai, dia langsung salah tingkah.",
+    "example_cn": "被问为什么还没完成时，他一下就不知所措了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-11"
