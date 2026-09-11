@@ -4,7 +4,7 @@
   "time": "08:00",
   "level": "A2+ → B1",
   "day": 21,
-  "title": "2026年9月11日｜Day 21｜聊天和工作里自然接话、跟进与补充",
+  "title": "2026年9月11日｜Day 21｜工作沟通里的漏看、插入与优先处理",
   "vocab": [
     {
       "word": "nangkep",
@@ -20,32 +20,6 @@
       "synonym_note": "paham = 理解，范围更广；nangkep 更口语，常强调刚刚听懂、抓到对方的意思。"
     },
     {
-      "word": "kepotong",
-      "display": "kepotong",
-      "audio_text": "kepotong",
-      "cn": "被打断；被截掉；话没说完（口语）",
-      "en": "get cut off; be interrupted",
-      "root": "potong",
-      "root_cn": "切；截断",
-      "formation": "terpotong → kepotong；聊天、电话、会议里常说 omongannya kepotong。",
-      "example": "Tadi penjelasanku kepotong karena ada telepon masuk.",
-      "example_cn": "刚才我的说明被一个来电打断了。",
-      "synonym_note": "diganggu = 被打扰；kepotong 更具体指话、流程或连接在中间被截断。"
-    },
-    {
-      "word": "keburu",
-      "display": "keburu",
-      "audio_text": "keburu",
-      "cn": "来不及之前就已经……；赶在某事发生前（口语）",
-      "en": "before it is too late; already happen first",
-      "root": "buru",
-      "root_cn": "赶；追赶",
-      "formation": "口语高频状态词；常见 keburu pulang、keburu lupa、sebelum keburu terlambat。",
-      "example": "Kabarin sekarang aja sebelum aku keburu masuk meeting.",
-      "example_cn": "现在就跟我说吧，免得我先进去开会了。",
-      "synonym_note": "terlambat = 已经迟了；keburu 常强调另一件事先发生，导致后面不方便或来不及。"
-    },
-    {
       "word": "kelewat",
       "display": "kelewat",
       "audio_text": "kelewat",
@@ -59,71 +33,6 @@
       "synonym_note": "ketinggalan = 落下、没跟上；kelewat 更常指某条消息、站点或机会从眼前过去而错过。"
     },
     {
-      "word": "nyusul",
-      "display": "nyusul",
-      "audio_text": "nyusul",
-      "cn": "随后跟上；晚一点补上（口语）",
-      "en": "follow later; catch up; send later",
-      "root": "susul",
-      "root_cn": "追上；随后跟上",
-      "formation": "menyusul → nyusul；人、文件、信息都能用，常说 aku nyusul / filenya nyusul。",
-      "example": "Kamu mulai dulu aja, aku nyusul sekitar sepuluh menit lagi.",
-      "example_cn": "你先开始吧，我大概十分钟后跟上。",
-      "synonym_note": "menyusul 是标准形式；nyusul 是日常聊天和办公室里更自然的口语形式。"
-    },
-    {
-      "word": "ngingetin",
-      "display": "ngingetin",
-      "audio_text": "ngingetin",
-      "cn": "提醒某人（口语）",
-      "en": "remind someone",
-      "root": "ingat",
-      "root_cn": "记得；想起",
-      "formation": "mengingatkan → ngingetin；常说 makasih udah ngingetin = 谢谢提醒。",
-      "example": "Nanti siang ngingetin aku buat follow up vendor itu ya.",
-      "example_cn": "中午提醒我跟进一下那个供应商。",
-      "synonym_note": "ingat = 记得；ngingetin = 主动提醒别人别忘了。"
-    },
-    {
-      "word": "kebagian",
-      "display": "kebagian",
-      "audio_text": "kebagian",
-      "cn": "分到；轮到；得到自己那一份（口语）",
-      "en": "get a share; be assigned a portion",
-      "root": "bagi",
-      "root_cn": "分；分配",
-      "formation": "ke- + bagian → kebagian；工作中可说 kebagian tugas，生活中也可说 nggak kebagian makanan。",
-      "example": "Aku kebagian bagian follow up klien, kamu pegang laporan aja.",
-      "example_cn": "我分到客户跟进这一块，你负责报告就行。",
-      "synonym_note": "ketiban 常带突然摊上、甚至有点倒霉；kebagian 更中性，表示正常分到。"
-    },
-    {
-      "word": "kepikiran",
-      "display": "kepikiran",
-      "audio_text": "kepikiran",
-      "cn": "突然想到；一直挂在心上（口语）",
-      "en": "come to mind; keep thinking about",
-      "root": "pikir",
-      "root_cn": "想；思考",
-      "formation": "terpikir → kepikiran；既可表示‘突然想到’，也可表示某件事一直让自己惦记。",
-      "example": "Tadi aku kepikiran satu cara yang mungkin lebih simpel.",
-      "example_cn": "刚才我突然想到一个可能更简单的办法。",
-      "synonym_note": "mikir = 在想；kepikiran 常表示想法自己冒出来，或某件事一直萦绕在脑子里。"
-    },
-    {
-      "word": "nyambung",
-      "display": "nyambung",
-      "audio_text": "nyambung",
-      "cn": "接得上；说得通；能聊到一起（口语）",
-      "en": "connect; make sense; click in conversation",
-      "root": "sambung",
-      "root_cn": "连接；接上",
-      "formation": "menyambung → nyambung；可用于话题、逻辑、网络，也可形容两个人聊得来。",
-      "example": "Kalau konteks awalnya nggak dijelasin, bagian ini jadi kurang nyambung.",
-      "example_cn": "如果前面的背景没说明，这一部分就有点接不上。",
-      "synonym_note": "cocok = 合适、匹配；nyambung 更强调逻辑、话题或人与人交流能接得起来。"
-    },
-    {
       "word": "ngobrolin",
       "display": "ngobrolin",
       "audio_text": "ngobrolin",
@@ -135,90 +44,125 @@
       "example": "Nanti kita ngobrolin detailnya pas semua orang sudah ada.",
       "example_cn": "等大家都到了，我们再聊具体细节。",
       "synonym_note": "bahas = 讨论，工作场景更中性；ngobrolin 更轻松、更口语。"
+    },
+    {
+      "word": "keteteran",
+      "display": "keteteran",
+      "audio_text": "keteteran",
+      "cn": "忙不过来；跟不上进度（口语）",
+      "en": "struggle to keep up; fall behind",
+      "root": "teter",
+      "root_cn": "跟不上；被甩在后面",
+      "formation": "口语状态词 keteteran；常用于 kerjaan / tugas 太多导致进度跟不上。",
+      "example": "Kalau semua tugas masuk barengan, aku bisa keteteran.",
+      "example_cn": "如果所有任务一起进来，我可能会忙不过来。",
+      "synonym_note": "kewalahan = 应付不过来、压力大；keteteran 更强调进度跟不上。"
+    },
+    {
+      "word": "kecolongan",
+      "display": "kecolongan",
+      "audio_text": "kecolongan",
+      "cn": "一时疏忽没防住；漏掉重要情况（口语）",
+      "en": "get caught off guard; let something slip through",
+      "root": "colong",
+      "root_cn": "偷拿；趁人不注意拿走",
+      "formation": "ke- + colong + -an → kecolongan；引申为因为没注意而让问题、错误或机会从眼皮底下溜过去。",
+      "example": "Kita kecolongan satu detail penting waktu cek dokumennya.",
+      "example_cn": "我们检查文件时漏掉了一个重要细节。",
+      "synonym_note": "kelewat 偏没看到、错过；kecolongan 更带‘本该注意到却疏忽了’的感觉。"
+    },
+    {
+      "word": "kelepasan",
+      "display": "kelepasan",
+      "audio_text": "kelepasan",
+      "cn": "一不小心说出/做出；没控制住（口语）",
+      "en": "let slip; accidentally go too far",
+      "root": "lepas",
+      "root_cn": "松开；脱离",
+      "formation": "ke- + lepas + -an → kelepasan；常说 kelepasan ngomong，表示话不小心说出口。",
+      "example": "Tadi aku kelepasan ngomong soal harga padahal belum final.",
+      "example_cn": "刚才价格还没最终确定，我却一不小心说出来了。",
+      "synonym_note": "kebablasan = 做过头、超过界限；kelepasan 更常强调无意间脱口而出或没控制住。"
+    },
+    {
+      "word": "nyelipin",
+      "display": "nyelipin",
+      "audio_text": "nyelipin",
+      "cn": "顺便插入；塞进安排里（口语）",
+      "en": "slip in; squeeze into a schedule",
+      "root": "selip",
+      "root_cn": "夹入；插入",
+      "formation": "menyelipkan → nyelipin；可用于把话题、文件或小任务插进现有安排。",
+      "example": "Aku coba nyelipin follow up ini sebelum meeting siang.",
+      "example_cn": "我试着在中午会议前插空跟进一下这件事。",
+      "synonym_note": "nyempetin = 特意挤出时间；nyelipin 更强调把某件小事插进现有安排。"
+    },
+    {
+      "word": "ngeduluin",
+      "display": "ngeduluin",
+      "audio_text": "ngeduluin",
+      "cn": "优先先做；把某事放前面（口语）",
+      "en": "do first; prioritize",
+      "root": "dulu",
+      "root_cn": "先；以前",
+      "formation": "mendahulukan 的日常口语表达可说 ngeduluin；常用于 ngeduluin yang penting / yang urgent。",
+      "example": "Yang urgent kita ngeduluin dulu, sisanya bisa nyicil nanti.",
+      "example_cn": "紧急的我们先优先处理，其他的之后可以一点点做。",
+      "synonym_note": "prioritas 是名词‘优先事项’；ngeduluin 是动作，表示实际把某件事放在前面先做。"
+    },
+    {
+      "word": "ngeh",
+      "display": "ngeh",
+      "audio_text": "ngeh",
+      "cn": "意识到；反应过来；注意到（很口语）",
+      "en": "realize; notice; get it",
+      "root": "ngeh",
+      "root_cn": "意识到；注意到",
+      "formation": "固定口语词；常说 baru ngeh = 才反应过来，nggak ngeh = 没注意到/没意识到。",
+      "example": "Aku baru ngeh ternyata angka di file itu salah.",
+      "example_cn": "我才反应过来，原来文件里的数字是错的。",
+      "synonym_note": "sadar = 意识到，较中性；ngeh 更口语，常带‘突然反应过来’的感觉。"
+    },
+    {
+      "word": "nyatet",
+      "display": "nyatet",
+      "audio_text": "nyatet",
+      "cn": "记下来；做笔记（口语）",
+      "en": "note down; take notes",
+      "root": "catat",
+      "root_cn": "记录；记下",
+      "formation": "mencatat → nyatet；日常会议和聊天里常用，表示把重点记下来。",
+      "example": "Aku nyatet tiga poin penting biar nanti nggak lupa.",
+      "example_cn": "我把三个重点记下来了，免得之后忘记。",
+      "synonym_note": "catat 是标准形式；nyatet 是雅加达日常口语常见形式。"
     }
   ],
   "sentences": [
-    {
-      "id": "Aku nangkep garis besarnya, tapi tadi penjelasan terakhir kepotong.",
-      "cn": "大意我听懂了，不过刚才最后的说明被打断了。"
-    },
-    {
-      "id": "Kabarin sekarang sebelum aku keburu masuk meeting, nanti takut chat-nya kelewat.",
-      "cn": "现在就告诉我吧，免得我先进去开会，之后怕把消息漏掉。"
-    },
-    {
-      "id": "Kamu mulai dulu, aku nyusul; kalau aku lupa, tolong ngingetin sekali aja.",
-      "cn": "你先开始，我随后跟上；如果我忘了，提醒我一下就行。"
-    },
-    {
-      "id": "Aku kebagian follow up klien, dan tadi kepikiran cara biar prosesnya nggak nyangkut lagi.",
-      "cn": "我分到客户跟进这一块，刚才还想到一个办法，免得流程又卡住。"
-    },
-    {
-      "id": "Nanti kita ngobrolin lagi dari awal biar ceritanya lebih nyambung dan nggak bikin orang kewalahan.",
-      "cn": "等会儿我们从头再聊一下，这样逻辑更连贯，也不会让人听得顾不过来。"
-    }
+    {"id": "Aku nangkep maksudnya, tapi satu chat penting tadi kelewat.", "cn": "我听懂他的意思了，不过刚才漏掉了一条重要消息。"},
+    {"id": "Kalau semua dikerjain barengan, kita malah keteteran; mending ngeduluin yang urgent.", "cn": "如果所有事情一起做，我们反而会忙不过来；最好先做紧急的。"},
+    {"id": "Aku baru ngeh kita kecolongan satu detail, jadi sekarang aku nyatet ulang poinnya.", "cn": "我才发现我们漏掉了一个细节，所以现在重新把重点记下来。"},
+    {"id": "Tadi aku kelepasan ngomong, jadi nanti kita ngobrolin lagi biar konteksnya jelas.", "cn": "刚才我一不小心说漏了，所以等会儿我们再聊一下，把背景说清楚。"},
+    {"id": "Aku coba nyelipin follow up ini pagi ini supaya prosesnya nggak nyangkut lagi.", "cn": "我试着今天早上插空跟进一下，免得流程又卡住。"}
   ],
   "reading": {
-    "title": "Chat Kelewat, Penjelasan Kepotong",
-    "text": "Pagi ini grup kantor ramai banget. Satu chat dari klien sempat kelewat karena pesan masuk terus. Pas aku mau jawab, aku keburu dipanggil meeting. Di meeting, penjelasanku juga kepotong karena ada telepon penting. Untung temanku nangkep maksud utamanya dan ngingetin aku soal satu follow up yang masih nyangkut. Setelah meeting, aku kebagian hubungi klien lagi. Temanku bilang dia nyusul kirim datanya. Tadi aku juga kepikiran cara yang lebih simpel supaya pembahasannya lebih nyambung. Nanti siang kami mau ngobrolin detailnya lagi. Kalau vendor masih ngulur, kami akan kasih batas waktu yang lebih jelas supaya tim nggak kewalahan.",
-    "cn": "今天早上公司群特别热闹。客户的一条消息因为信息不断进来被我漏掉了。正准备回复时，我又先被叫去开会。开会时，我的说明也因为一个重要电话被打断。好在同事听懂了主要意思，还提醒我有一项跟进仍然卡着。会议结束后，我分到再次联系客户的任务。同事说数据稍后补发。刚才我还想到一个更简单的办法，让讨论更连贯。中午我们准备再聊一下细节。如果供应商还继续拖，我们会给更明确的期限，免得团队忙不过来。",
-    "vocab": [
-      "kelewat",
-      "keburu",
-      "kepotong",
-      "nangkep",
-      "ngingetin",
-      "nyangkut",
-      "kebagian",
-      "nyusul",
-      "kepikiran",
-      "nyambung",
-      "ngobrolin",
-      "ngulur",
-      "kewalahan"
-    ]
+    "title": "Jangan Sampai Kecolongan Lagi",
+    "text": "Pagi ini aku baru ngeh ada satu detail penting yang kemarin kelewat. Untung belum terlambat, tapi kami memang sempat kecolongan waktu cek dokumen. Aku langsung nyatet poin yang perlu dibenerin dan ngobrolin lagi sama tim. Kerjaan hari ini lumayan banyak, jadi kalau semuanya dikerjain barengan kami bisa keteteran. Akhirnya kami ngeduluin yang paling urgent dan nyelipin satu follow up sebelum meeting. Ada satu orang yang kemarin kelepasan ngomong ke vendor sebelum keputusan final. Sekarang prosesnya masih sedikit nyangkut. Kalau vendor terus ngulur, tim bisa kewalahan, jadi hari ini kami mau lebih rapi dan jelas.",
+    "cn": "今天早上我才发现昨天漏掉了一个重要细节。好在还不算晚，不过我们检查文件时确实一时疏忽了。我马上把需要修改的重点记下来，并和团队重新聊了一遍。今天事情不少，如果全部一起做，我们可能会跟不上进度。最后我们先处理最紧急的，再在会议前插入一次跟进。昨天还有一个人，在最终决定出来前一不小心先跟供应商说了。现在流程还有点卡。如果供应商继续拖，团队会应付不过来，所以今天我们准备把事情处理得更清楚、更有条理。",
+    "vocab": ["ngeh", "kelewat", "kecolongan", "nyatet", "ngobrolin", "keteteran", "ngeduluin", "nyelipin", "kelepasan", "nyangkut", "ngulur", "kewalahan"]
   },
   "quiz": [
-    {
-      "question": "“Chat kamu tadi kelewat.” 最自然的意思是：",
-      "options": [
-        "我刚才把你的消息漏掉了",
-        "我刚才把你的消息删掉了",
-        "我刚才把你的消息转发了"
-      ],
-      "answer_index": 0,
-      "explain": "kelewat 在聊天场景里常表示某条消息从眼前过去了、没有注意到。"
-    },
-    {
-      "question": "kebagian 和 ketiban 最自然的区别是：",
-      "options": [
-        "kebagian 偏正常分到；ketiban 常带突然摊上额外事情的感觉",
-        "kebagian 是拖延；ketiban 是提前",
-        "两个词完全一样"
-      ],
-      "answer_index": 0,
-      "explain": "kebagian 是中性的‘分到一份/轮到’，ketiban 常带意外落到自己头上的语气。"
-    },
-    {
-      "question": "复习：流程卡在审批环节，一直不能继续，最自然的是：",
-      "options": [
-        "masih nyangkut di approval",
-        "masih nyambung di approval",
-        "masih kelewat di approval"
-      ],
-      "answer_index": 0,
-      "explain": "nyangkut 是近期旧词，表示卡在某个具体环节动不了。"
-    }
+    {"question": "“Aku baru ngeh.” 最自然的意思是：", "options": ["我才反应过来", "我已经忘了", "我正在催别人"], "answer_index": 0, "explain": "baru ngeh 是很自然的口语，表示刚刚才注意到或反应过来。"},
+    {"question": "kecolongan 和 kelewat 最自然的区别是：", "options": ["kecolongan 更强调本该注意却疏忽了；kelewat 更偏漏看或错过", "kecolongan 是提前；kelewat 是推迟", "两个词只用于交通"], "answer_index": 0, "explain": "两者都可涉及‘漏掉’，但 kecolongan 的疏忽和失守感更强。"},
+    {"question": "复习：流程卡在审批环节不能继续，最自然的是：", "options": ["masih nyangkut di approval", "masih keteteran di approval", "masih nyatet di approval"], "answer_index": 0, "explain": "nyangkut 是近期旧词，表示卡在具体环节无法继续推进。"}
   ],
   "output": {
-    "task": "用自然口语表达：‘刚才你的消息我漏掉了，因为我先被叫去开会。会议里我的说明又被打断了。大意你听懂了吗？数据可以晚一点补发。中午我们再把细节聊一下，如果我忘了记得提醒我。’",
-    "reference_answer": "Tadi chat kamu kelewat karena aku keburu dipanggil meeting. Di meeting, penjelasanku juga kepotong. Kamu nangkep garis besarnya nggak? Datanya bisa nyusul nanti. Siang kita ngobrolin detailnya lagi ya. Kalau aku lupa, ngingetin aku aja.",
-    "reference_cn": "刚才你的消息我漏掉了，因为我先被叫去开会。会议里我的说明又被打断了。大意你听懂了吗？数据可以晚一点补发。中午我们再把细节聊一下，如果我忘了记得提醒我。"
+    "task": "用自然口语表达：‘我刚才才发现我们漏掉了一个细节。我先把重点记下来。今天事情很多，所以先处理最紧急的，不然会跟不上进度。中午前我再插空跟进一次。’",
+    "reference_answer": "Aku baru ngeh kita kecolongan satu detail. Aku nyatet poin pentingnya dulu. Hari ini kerjaan banyak, jadi kita ngeduluin yang paling urgent biar nggak keteteran. Sebelum siang aku coba nyelipin satu follow up lagi.",
+    "reference_cn": "我刚才才发现我们漏掉了一个细节。我先把重点记下来。今天事情很多，所以先处理最紧急的，不然会跟不上进度。中午前我再插空跟进一次。"
   },
   "review": [
-    "沟通链：nangkep = 听懂/抓住意思；kepotong = 话被打断；nyambung = 逻辑或话题接得上。",
-    "时间与跟进：keburu = 另一件事先发生；kelewat = 漏掉/错过；nyusul = 稍后跟上或补发；ngingetin = 提醒。",
-    "自然复习旧词 nyangkut、ngulur、kewalahan、sempat、ketiban，并用 kebagian vs ketiban 做近义对比。"
+    "发现与漏项：ngeh = 突然反应过来；kelewat = 漏看/错过；kecolongan = 本该注意却疏忽漏掉。",
+    "工作节奏：keteteran = 跟不上进度；ngeduluin = 优先先做；nyelipin = 把小任务插进现有安排。",
+    "自然复习旧词 nyangkut、ngulur、kewalahan、nyicil、sempat，避免连续机械复习同一整组词。"
   ]
 }
