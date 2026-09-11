@@ -4,10 +4,12 @@
   cleanup();const body=document.getElementById('dailyBody');if(body)new MutationObserver(cleanup).observe(body,{childList:true,subtree:true});
 
   // 统一弱项池：阅读陌生词、快速练习错题、模糊/不会、专项强化共用同一状态。
+  // 同步采用事件触发：本地立即保存，停止操作约10秒后后台发送；没有变化时不会轮询，也不会刷新页面。
   if(window.__homeLearningUpgradeLoading)return;window.__homeLearningUpgradeLoading=true;
   function load(src,done){const s=document.createElement('script');s.src=src;s.onload=()=>done&&done();s.onerror=()=>{window.__homeLearningUpgradeLoading=false};document.body.appendChild(s);}
   function loadHome(){load('data/extensive-reading-data.js?v=20260903-1',()=>load('data/home-learning-upgrade.js?v=20260911-1'));}
   function loadWeakControls(){if(window.dismissWeaknessWord)loadHome();else load('data/weakness-dismiss.js?v=20260911-2',loadHome);}
-  if(window.WeaknessPool)loadWeakControls();
-  else load('data/weakness-pool.js?v=20260911-2',loadWeakControls);
+  function loadSync(){if(window.WeaknessSync)loadWeakControls();else load('data/weakness-sync-client.js?v=20260911-1',loadWeakControls);}
+  if(window.WeaknessPool)loadSync();
+  else load('data/weakness-pool.js?v=20260911-2',loadSync);
 })();
