@@ -7,6 +7,7 @@
   if(window.__homeLearningUpgradeLoading)return;window.__homeLearningUpgradeLoading=true;
   function load(src,done){const s=document.createElement('script');s.src=src;s.onload=()=>done&&done();s.onerror=()=>{window.__homeLearningUpgradeLoading=false};document.body.appendChild(s);}
   function loadHome(){load('data/extensive-reading-data.js?v=20260903-1',()=>load('data/home-learning-upgrade.js?v=20260911-1'));}
-  if(window.WeaknessPool)loadHome();
-  else load('data/weakness-pool.js?v=20260911-2',loadHome);
+  function loadWeakControls(){if(window.dismissWeaknessWord)loadHome();else load('data/weakness-dismiss.js?v=20260911-2',loadHome);}
+  if(window.WeaknessPool)loadWeakControls();
+  else load('data/weakness-pool.js?v=20260911-2',loadWeakControls);
 })();
