@@ -5788,23 +5788,24 @@ window.DAILY_VOCAB_DB = [
     "en": "feel bad saying no; be reluctant to inconvenience others",
     "root": "enak",
     "root_cn": "舒服；合适；好受",
-    "example": "Aku nggak enakan nagih lagi, tapi kalau didiemin terus malah makin lama.",
-    "example_cn": "我不太好意思再催，但如果一直不说，反而会拖得更久。",
+    "example": "Kalau terlalu nggak enakan, kerjaan orang lain bisa ikut kamu ambil semua.",
+    "example_cn": "如果太不好意思拒绝别人，别人的工作最后可能也全被你接过来。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-08 19:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   {
@@ -7059,6 +7060,50 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "油门；加速",
     "example": "Santai aja, nggak usah langsung ngegas kalau ada yang beda pendapat.",
     "example_cn": "放轻松，有人意见不同时不用马上语气那么冲。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
+  },
+  {
+    "word": "sungkan",
+    "cn": "因为客气、尊重而不好意思开口或拒绝",
+    "en": "feel hesitant out of politeness or respect",
+    "root": "sungkan",
+    "root_cn": "客气拘谨；不好意思开口",
+    "example": "Aku sebenarnya mau nolak, tapi agak sungkan karena dia lebih senior.",
+    "example_cn": "其实我想拒绝，但因为他资历更深，我有点不好意思开口。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
+  },
+  {
+    "word": "ceplas-ceplos",
+    "cn": "说话直来直去；想到什么就说什么（口语）",
+    "en": "speak bluntly; speak without much filter",
+    "root": "ceplas-ceplos",
+    "root_cn": "直来直去地说；不太过滤措辞",
+    "example": "Dia orangnya ceplas-ceplos, jadi kadang kedengarannya terlalu langsung.",
+    "example_cn": "他说话很直，所以有时候听起来会太直接。",
     "categories": [
       "每日学习",
       "08:00"
