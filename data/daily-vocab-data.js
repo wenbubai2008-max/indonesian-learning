@@ -933,9 +933,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -944,10 +944,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-11"
     ],
-    "example": "Aku mau jelasin dulu, tapi dia keburu pulang.",
-    "example_cn": "我本来想先解释一下，但他已经先回去了。",
+    "example": "Kabarin sekarang aja sebelum aku keburu masuk meeting.",
+    "example_cn": "现在就跟我说吧，免得我先进去开会了。",
     "root_cn": "赶；追赶"
   },
   {
@@ -1509,20 +1510,21 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-09-05 19:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-08-29",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-11"
     ],
     "root_cn": "想；思考",
     "example": "Tadi aku kepikiran satu cara yang mungkin lebih simpel.",
-    "example_cn": "刚才我想到一个可能更简单的办法。"
+    "example_cn": "刚才我突然想到一个可能更简单的办法。"
   },
   {
     "word": "ngerasa",
@@ -1695,9 +1697,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -1705,11 +1707,12 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-29",
       "2026-09-07",
-      "2026-09-10"
+      "2026-09-10",
+      "2026-09-11"
     ],
     "root_cn": "追上；随后跟上",
-    "example": "Kalian masuk dulu aja, aku nyusul setelah telepon ini selesai.",
-    "example_cn": "你们先进去吧，我打完这个电话就随后过去。"
+    "example": "Kamu mulai dulu aja, aku nyusul sekitar sepuluh menit lagi.",
+    "example_cn": "你先开始吧，我大概十分钟后跟上。"
   },
   {
     "word": "pantes",
@@ -1743,20 +1746,21 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-30 08:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-08-30",
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-11"
     ],
     "root_cn": "分；分配",
-    "example": "Aku kebagian tugas follow up vendor yang satu ini.",
-    "example_cn": "我分到的任务是跟进这家供应商。"
+    "example": "Aku kebagian bagian follow up klien, kamu pegang laporan aja.",
+    "example_cn": "我分到客户跟进这一块，你负责报告就行。"
   },
   {
     "word": "kehabisan",
@@ -4794,21 +4798,23 @@ window.DAILY_VOCAB_DB = [
     "cn": "连得上；接得上；说得通；聊得来（口语）",
     "en": "connect; make sense; click with someone",
     "root": "sambung",
-    "example": "Penjelasannya jelas, jadi semua poinnya nyambung.",
-    "example_cn": "他的解释很清楚，所以所有要点都能连得起来。",
+    "example": "Kalau konteks awalnya nggak dijelasin, bagian ini jadi kurang nyambung.",
+    "example_cn": "如果前面的背景没说明，这一部分就有点接不上。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-04 08:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-04"
-    ]
+      "2026-09-04",
+      "2026-09-11"
+    ],
+    "root_cn": "连接；接上"
   },
   {
     "word": "kepake",
@@ -5850,19 +5856,22 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "切；剪；扣除",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-11"
     ],
     "example": "Tadi penjelasanku kepotong karena ada telepon masuk.",
-    "example_cn": "刚才我的说明因为有电话打进来被打断了。"
+    "example_cn": "刚才我的说明被一个来电打断了。"
   },
   {
     "word": "ngingetin",
@@ -5875,19 +5884,20 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
       "19:00",
       "08:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-09-10"
+      "2026-09-10",
+      "2026-09-11"
     ],
-    "example": "Nanti jam dua ngingetin aku buat follow up vendor ya.",
-    "example_cn": "等会儿两点提醒我跟进供应商。"
+    "example": "Nanti siang ngingetin aku buat follow up vendor itu ya.",
+    "example_cn": "中午提醒我跟进一下那个供应商。"
   },
   {
     "word": "asal jangan",
@@ -6838,5 +6848,71 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Kalau tiap hari pulang malam terus, lama-lama bisa kecapean.",
     "example_cn": "如果每天都一直很晚回家，久了会累过头。"
+  },
+  {
+    "word": "nangkep",
+    "cn": "听懂；抓住意思（口语）",
+    "en": "get; catch; understand",
+    "root": "tangkap",
+    "root_cn": "抓住；捕捉",
+    "example": "Aku nangkep maksudmu, cuma bagian terakhir masih agak kurang jelas.",
+    "example_cn": "我明白你的意思，只是最后那部分还有点不清楚。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
+  },
+  {
+    "word": "kelewat",
+    "cn": "错过；漏掉；超过（口语）",
+    "en": "miss; pass; go beyond",
+    "root": "lewat",
+    "root_cn": "经过；超过",
+    "example": "Maaf, chat kamu tadi kelewat karena grupnya lagi ramai banget.",
+    "example_cn": "不好意思，你刚才的消息被我漏掉了，因为群里当时特别热闹。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
+  },
+  {
+    "word": "ngobrolin",
+    "cn": "聊某件事；讨论某个话题（口语）",
+    "en": "talk about; discuss casually",
+    "root": "obrol",
+    "root_cn": "聊天；交谈",
+    "example": "Nanti kita ngobrolin detailnya pas semua orang sudah ada.",
+    "example_cn": "等大家都到了，我们再聊具体细节。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
   }
 ];
