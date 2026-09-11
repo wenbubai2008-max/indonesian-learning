@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-11T14:59:56.454Z",
+  "updated_at": "2026-09-11T15:09:38.309Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -442,16 +442,17 @@
     "nentuin": {
       "word": "nentuin",
       "status": "active",
-      "updated_at": "2026-09-11T14:40:15.508Z",
+      "updated_at": "2026-09-11T15:09:28.118Z",
       "display": "nentuin",
       "cn": "决定；确定具体安排（口语）",
       "root": "tentu",
       "root_cn": "确定；一定",
+      "last_review": "2026-09-11T15:09:28.118Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "sekadar": {
       "word": "sekadar",
@@ -498,16 +499,17 @@
     "kejebak": {
       "word": "kejebak",
       "status": "active",
-      "updated_at": "2026-09-11T14:40:15.508Z",
+      "updated_at": "2026-09-11T15:07:38.837Z",
       "display": "kejebak",
       "cn": "陷进去；被困在某个情况里（口语）",
       "root": "jebak",
       "root_cn": "设陷阱；困住",
+      "last_review": "2026-09-11T15:07:38.837Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kebaca": {
       "word": "kebaca",
@@ -553,16 +555,17 @@
     "molor": {
       "word": "molor",
       "status": "active",
-      "updated_at": "2026-09-11T14:40:15.508Z",
+      "updated_at": "2026-09-11T15:00:17.385Z",
       "display": "molor",
       "cn": "延期；拖长；时间超出原计划（口语）",
       "root": "molor",
       "root_cn": "拖长；延后",
+      "last_review": "2026-09-11T15:00:17.384Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nyaris": {
       "word": "nyaris",
@@ -570,6 +573,54 @@
       "updated_at": "2026-09-11T14:40:15.508Z",
       "display": "nyaris",
       "cn": "差点、几乎",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "bentrok": {
+      "word": "bentrok",
+      "status": "active",
+      "updated_at": "2026-09-11T15:03:45.011Z",
+      "display": "bentrok",
+      "cn": "时间冲突；撞期",
+      "root": "bentrok",
+      "root_cn": "冲突；相撞",
+      "last_wrong": "2026-09-11T15:03:45.009Z",
+      "last_review": "2026-09-11T15:03:45.009Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "nyimak": {
+      "word": "nyimak",
+      "status": "active",
+      "updated_at": "2026-09-11T15:04:23.880Z",
+      "display": "nyimak",
+      "cn": "认真听；跟着听懂内容（口语）",
+      "root": "simak",
+      "root_cn": "仔细听；留意",
+      "last_wrong": "2026-09-11T15:04:23.880Z",
+      "last_review": "2026-09-11T15:04:23.880Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "nggak kepegang": {
+      "word": "nggak kepegang",
+      "status": "active",
+      "updated_at": "2026-09-11T15:09:12.618Z",
+      "display": "nggak kepegang",
+      "cn": "顾不过来；管不过来",
+      "root": "pegang",
+      "root_cn": "拿；握；掌握",
+      "last_wrong": "2026-09-11T15:09:12.617Z",
+      "last_review": "2026-09-11T15:09:12.617Z",
       "reasons": [
         "quick_wrong"
       ],
