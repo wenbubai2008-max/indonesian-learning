@@ -7,7 +7,7 @@
   const SHADOW_KEY='indo_weak_sync_shadow_v1';
   const DEVICE_KEY='indo_weak_sync_device_v1';
   const DEBOUNCE_MS=10000;
-  let timer=null,applyingRemote=false,pending=false,lastMessage='';
+  let timer=null,applyingRemote=false,readingPool=false,pending=false,lastMessage='';
 
   function parse(key,fallback){try{return JSON.parse(localStorage.getItem(key)||'')||fallback;}catch(e){return fallback;}}
   function save(key,val){localStorage.setItem(key,JSON.stringify(val));}
@@ -41,7 +41,11 @@
   }
   function signature(x){return JSON.stringify(baseRecord(x));}
   function currentMaps(){
-    const p=pool(),items=p&&typeof p.all==='function'?p.all():[];
+    const p=pool();let items=[];
+    if(p&&typeof p.all==='function'){
+      readingPool=true;
+      try{items=p.all();}finally{readingPool=false;}
+    }
     const meta=parse(META_KEY,{}),words={},shadow={};
     items.forEach(function(x){
       if(!x||!x.word)return;const k=norm(x.word);if(!k)return;
@@ -52,7 +56,7 @@
   }
   function refreshShadow(){const x=currentMaps();save(SHADOW_KEY,x.shadow);return x;}
   function detectLocalChanges(){
-    if(applyingRemote)return false;
+    if(applyingRemote||readingPool)return false;
     const p=pool();if(!p)return false;
     const old=parse(SHADOW_KEY,{}),x=currentMaps(),meta=x.meta,now=new Date().toISOString();let changed=false;
     Object.keys(x.shadow).forEach(function(k){if(old[k]!==x.shadow[k]){meta[k]={updated_at:now};changed=true;}});
@@ -149,7 +153,7 @@
     finally{setBusy(false);}
   }
 
-  function onWeakChange(){if(applyingRemote)return;if(detectLocalChanges()){setStatus(configured()?'有新变化 · 10秒后同步':'有新变化 · 仅保存在本机');scheduleSync();}}
+  function onWeakChange(){if(applyingRemote||readingPool)return;if(detectLocalChanges()){setStatus(configured()?'有新变化 · 10秒后同步':'有新变化 · 仅保存在本机');scheduleSync();}}
   window.addEventListener('weak-pool-changed',onWeakChange);
   window.addEventListener('online',function(){if(pending||configured()){setStatus('网络已恢复 · 准备同步');scheduleSync(1000);}});
   window.addEventListener('offline',function(){setStatus('离线 · 学习状态继续保存在本机');});
