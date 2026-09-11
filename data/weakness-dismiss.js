@@ -3,35 +3,46 @@
   function norm(s){return String(s||'').trim().toLowerCase();}
   function load(){try{return JSON.parse(localStorage.getItem(KEY)||'{}');}catch(e){return {};}}
   function save(x){localStorage.setItem(KEY,JSON.stringify(x));}
+  function pool(){return window.WeaknessPool||null;}
   function dismiss(word){
     const k=norm(word); if(!k)return;
-    const d=load(); d[k]={word:word,at:Date.now()}; save(d);
+    const wp=pool();
+    if(wp)wp.markMastered(word,'weakness_done');
+    else{
+      const d=load(); d[k]={word:word,at:Date.now()}; save(d);
+      try{
+        const u=JSON.parse(localStorage.getItem('indo_unknown_words')||'{}');
+        Object.keys(u).forEach(function(x){if(norm(x)===k||norm((u[x]||{}).word)===k)delete u[x];});
+        localStorage.setItem('indo_unknown_words',JSON.stringify(u));
+      }catch(e){}
+    }
     try{
       const m=JSON.parse(localStorage.getItem('indo_mem')||'{}');
       m[word]='know'; localStorage.setItem('indo_mem',JSON.stringify(m));
     }catch(e){}
-    try{
-      const u=JSON.parse(localStorage.getItem('indo_unknown_words')||'{}');
-      Object.keys(u).forEach(function(x){if(norm(x)===k||norm((u[x]||{}).word)===k)delete u[x];});
-      localStorage.setItem('indo_unknown_words',JSON.stringify(u));
-    }catch(e){}
     apply();
   }
-  function restoreAll(){localStorage.removeItem(KEY);apply();}
+  function restoreAll(){
+    const wp=pool();
+    if(wp)wp.restoreDismissed();
+    else localStorage.removeItem(KEY);
+    apply();
+    if(typeof window.openWeaknessV2==='function'&&document.getElementById('weakness')?.classList.contains('active'))setTimeout(window.openWeaknessV2,0);
+  }
   function apply(){
     const box=document.getElementById('weaknessBody'); if(!box)return;
-    const dismissed=load(); let visible=0;
+    const dismissed=load(),wp=pool(); let visible=0;
     box.querySelectorAll('.v2-card').forEach(function(card){
       const b=card.querySelector('b'); if(!b)return;
-      const word=(b.textContent||'').trim(), k=norm(word);
-      if(dismissed[k]){card.style.display='none';return;}
+      const word=(b.textContent||'').trim(), k=norm(word),mastered=wp&&wp.get(word)?.status==='mastered';
+      if(dismissed[k]||mastered){card.style.display='none';return;}
       visible++;
       card.classList.add('weakCardHasDone');
       if(!card.querySelector('.weakDoneBtn')){
         const btn=document.createElement('button');
         btn.type='button'; btn.className='weakDoneBtn'; btn.textContent='✓ 会了';
-        btn.title='移出弱项强化';
-        btn.setAttribute('aria-label','会了，移出弱项强化');
+        btn.title='标记已掌握并退出弱项强化';
+        btn.setAttribute('aria-label','会了，标记已掌握并退出弱项强化');
         btn.addEventListener('click',function(){dismiss(word);});
         card.appendChild(btn);
       }
@@ -40,7 +51,7 @@
     const note=box.querySelector('.v2-note');
     if(note&&!box.querySelector('.weakRestoreWrap')){
       const wrap=document.createElement('div');wrap.className='weakRestoreWrap';
-      wrap.innerHTML='<span>会了的词可直接移出弱项。</span><button type="button" class="weakRestoreBtn">恢复已移出</button>';
+      wrap.innerHTML='<span>点“会了”会退出当前强化；以后再次答错会自动回来。</span><button type="button" class="weakRestoreBtn">恢复已移出</button>';
       wrap.querySelector('button').onclick=restoreAll;
       note.insertAdjacentElement('afterend',wrap);
     }
@@ -88,6 +99,7 @@
     document.addEventListener('click',function(e){
       if(e.target&&e.target.closest&&e.target.closest('#quickPracticeBody .v2-opts button'))setTimeout(decorateQuickAnswers,0);
     },true);
+    window.addEventListener('weak-pool-changed',()=>setTimeout(apply,0));
     apply();decorateQuickAnswers();
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
