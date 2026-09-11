@@ -4330,9 +4330,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
       "19:00",
       "08:00"
@@ -4341,10 +4341,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02",
       "2026-09-04",
       "2026-09-07",
-      "2026-09-10"
+      "2026-09-10",
+      "2026-09-11"
     ],
-    "example": "Kalau semua dikerjain mendadak, aku pasti keteteran.",
-    "example_cn": "如果所有事情都临时做，我肯定会忙得跟不上。",
+    "example": "Kalau semua tugas masuk barengan, aku bisa keteteran.",
+    "example_cn": "如果所有任务一起进来，我可能会忙不过来。",
     "root_cn": "忙不过来；跟不上"
   },
   {
@@ -4476,17 +4477,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-09-03 08:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-11"
     ],
-    "example": "Tolong ulang sekali lagi, aku mau nyatet poin pentingnya.",
-    "example_cn": "请再说一遍，我想把重点记下来。"
+    "example": "Aku nyatet tiga poin penting biar nanti nggak lupa.",
+    "example_cn": "我把三个重点记下来了，免得之后忘记。",
+    "root_cn": "记录；记下"
   },
   {
     "word": "nyiapin",
@@ -5995,22 +5998,23 @@ window.DAILY_VOCAB_DB = [
     "en": "be caught off guard; let something slip through",
     "root": "colong",
     "root_cn": "偷拿；趁人不注意拿走",
-    "example": "Kemarin kita kecolongan satu angka di laporan, jadi hari ini harus lebih teliti.",
-    "example_cn": "昨天我们报告里漏掉了一个数字，所以今天得更仔细。",
+    "example": "Kita kecolongan satu detail penting waktu cek dokumennya.",
+    "example_cn": "我们检查文件时漏掉了一个重要细节。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-08 19:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   {
@@ -6901,6 +6905,94 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "聊天；交谈",
     "example": "Nanti kita ngobrolin detailnya pas semua orang sudah ada.",
     "example_cn": "等大家都到了，我们再聊具体细节。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
+  },
+  {
+    "word": "kelepasan",
+    "cn": "一不小心说出/做出；没控制住（口语）",
+    "en": "let slip; accidentally go too far",
+    "root": "lepas",
+    "root_cn": "松开；脱离",
+    "example": "Tadi aku kelepasan ngomong soal harga padahal belum final.",
+    "example_cn": "刚才价格还没最终确定，我却一不小心说出来了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
+  },
+  {
+    "word": "nyelipin",
+    "cn": "顺便插入；塞进安排里（口语）",
+    "en": "slip in; squeeze into a schedule",
+    "root": "selip",
+    "root_cn": "夹入；插入",
+    "example": "Aku coba nyelipin follow up ini sebelum meeting siang.",
+    "example_cn": "我试着在中午会议前插空跟进一下这件事。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
+  },
+  {
+    "word": "ngeduluin",
+    "cn": "优先先做；把某事放前面（口语）",
+    "en": "do first; prioritize",
+    "root": "dulu",
+    "root_cn": "先；以前",
+    "example": "Yang urgent kita ngeduluin dulu, sisanya bisa nyicil nanti.",
+    "example_cn": "紧急的我们先优先处理，其他的之后可以一点点做。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
+  },
+  {
+    "word": "ngeh",
+    "cn": "意识到；反应过来；注意到（很口语）",
+    "en": "realize; notice; get it",
+    "root": "ngeh",
+    "root_cn": "意识到；注意到",
+    "example": "Aku baru ngeh ternyata angka di file itu salah.",
+    "example_cn": "我才反应过来，原来文件里的数字是错的。",
     "categories": [
       "每日学习",
       "08:00"
