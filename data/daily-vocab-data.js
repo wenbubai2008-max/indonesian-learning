@@ -6502,19 +6502,22 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "错误；不对",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-09 19:00",
-    "last_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-11 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-09"
+      "2026-09-09",
+      "2026-09-11"
     ],
-    "example": "Kalau aku lanjut dibilang buru-buru, kalau nahan dulu dibilang lambat. Jadi serba salah.",
-    "example_cn": "我继续推进会被说太急，先按住又会被说太慢，真是怎么做都不对。"
+    "example": "Kalau aku nolak sungkan, tapi kalau diterima semua malah kewalahan; jadinya serba salah.",
+    "example_cn": "拒绝又不好意思，可全接下来又会忙不过来，结果左右为难。"
   },
   {
     "word": "kejebak",
