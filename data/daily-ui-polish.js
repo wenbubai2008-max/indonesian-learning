@@ -93,24 +93,64 @@
     t._timer=setTimeout(function(){t.classList.remove('show');},1500);
   }
 
-  function installCompleteFeedback(){
-    if(window.__dailyCompleteFeedbackInstalled||typeof window.completeSession!=='function')return;
-    window.__dailyCompleteFeedbackInstalled=true;
-    window.completeSession=function(d,s){
+  function parseCompleteButton(btn){
+    const code=btn&&btn.getAttribute('onclick')||'';
+    const m=code.match(/completeSession\(\s*['\"]([^'\"]+)['\"]\s*,\s*['\"](am|pm)['\"]\s*\)/i);
+    return m?{date:m[1],session:m[2].toLowerCase()}:null;
+  }
+
+  function markButtonDone(btn){
+    if(!btn)return;
+    btn.textContent='✓ 已完成';
+    btn.disabled=true;
+    btn.classList.add('dailyCompleteDone');
+    btn.setAttribute('aria-disabled','true');
+  }
+
+  function syncCompletionButtons(){
+    document.querySelectorAll('#daily button[onclick*="completeSession"]').forEach(function(btn){
+      const info=parseCompleteButton(btn); if(!info)return;
+      if(localStorage.getItem('done_'+info.date+'_'+info.session)==='1')markButtonDone(btn);
+    });
+  }
+
+  function wrapCompleteSession(){
+    const current=window.completeSession;
+    if(typeof current!=='function')return false;
+    if(current.__dailyFeedbackWrapped){syncCompletionButtons();return true;}
+    const wrapped=function(d,s){
       localStorage.setItem('done_'+d+'_'+s,'1');
       if(typeof window.updateHome==='function')window.updateHome();
       else if(typeof window.updateStats==='function')window.updateStats();
-      const btn=document.querySelector('#daily button[onclick*="completeSession"]');
-      if(btn){
-        btn.textContent='✓ 已完成';
-        btn.disabled=true;
-        btn.classList.add('dailyCompleteDone');
-      }
+      document.querySelectorAll('#daily button[onclick*="completeSession"]').forEach(function(btn){
+        const info=parseCompleteButton(btn);
+        if(info&&info.date===String(d)&&info.session===String(s))markButtonDone(btn);
+      });
       showCompleteToast((s==='am'?'08:00 早间学习':'19:00 晚间学习')+' · 已记录完成');
     };
+    wrapped.__dailyFeedbackWrapped=true;
+    wrapped.__original=current;
+    window.completeSession=wrapped;
+    syncCompletionButtons();
+    return true;
   }
 
-  installCompleteFeedback();
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',installCompleteFeedback,{once:true});
-  else setTimeout(installCompleteFeedback,0);
+  function bootCompletionFix(){
+    wrapCompleteSession();
+    syncCompletionButtons();
+    const daily=document.getElementById('daily');
+    if(daily&&!daily.__completeObserver){
+      daily.__completeObserver=true;
+      new MutationObserver(function(){wrapCompleteSession();syncCompletionButtons();}).observe(daily,{childList:true,subtree:true});
+    }
+    let tries=0;
+    const timer=setInterval(function(){
+      wrapCompleteSession();
+      syncCompletionButtons();
+      if(++tries>40)clearInterval(timer);
+    },250);
+  }
+
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bootCompletionFix,{once:true});
+  else bootCompletionFix();
 })();
