@@ -7120,5 +7120,27 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-11"
     ]
+  },
+  {
+    "word": "salah tingkah",
+    "cn": "不知所措；因为紧张或尴尬而举止不自然",
+    "en": "act awkward; become flustered",
+    "root": "tingkah",
+    "root_cn": "举止；行为",
+    "example": "Pas ditanya langsung sama bos, dia malah salah tingkah dan jawabnya jadi nggak jelas.",
+    "example_cn": "老板直接问他的时候，他反而紧张得不知所措，回答也变得不清楚。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-11"
+    ]
   }
 ];
