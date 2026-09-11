@@ -1,0 +1,224 @@
+{
+  "date": "2026-09-11",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 21,
+  "title": "2026年9月11日｜Day 21｜聊天和工作里自然接话、跟进与补充",
+  "vocab": [
+    {
+      "word": "nangkep",
+      "display": "nangkep",
+      "audio_text": "nangkep",
+      "cn": "听懂；抓住意思（口语）",
+      "en": "get; catch; understand",
+      "root": "tangkap",
+      "root_cn": "抓住；捕捉",
+      "formation": "menangkap → nangkep；雅加达口语里常说 aku nangkep maksudnya，表示‘我明白你的意思了’。",
+      "example": "Aku nangkep maksudmu, cuma bagian terakhir masih agak kurang jelas.",
+      "example_cn": "我明白你的意思，只是最后那部分还有点不清楚。",
+      "synonym_note": "paham = 理解，范围更广；nangkep 更口语，常强调刚刚听懂、抓到对方的意思。"
+    },
+    {
+      "word": "kepotong",
+      "display": "kepotong",
+      "audio_text": "kepotong",
+      "cn": "被打断；被截掉；话没说完（口语）",
+      "en": "get cut off; be interrupted",
+      "root": "potong",
+      "root_cn": "切；截断",
+      "formation": "terpotong → kepotong；聊天、电话、会议里常说 omongannya kepotong。",
+      "example": "Tadi penjelasanku kepotong karena ada telepon masuk.",
+      "example_cn": "刚才我的说明被一个来电打断了。",
+      "synonym_note": "diganggu = 被打扰；kepotong 更具体指话、流程或连接在中间被截断。"
+    },
+    {
+      "word": "keburu",
+      "display": "keburu",
+      "audio_text": "keburu",
+      "cn": "来不及之前就已经……；赶在某事发生前（口语）",
+      "en": "before it is too late; already happen first",
+      "root": "buru",
+      "root_cn": "赶；追赶",
+      "formation": "口语高频状态词；常见 keburu pulang、keburu lupa、sebelum keburu terlambat。",
+      "example": "Kabarin sekarang aja sebelum aku keburu masuk meeting.",
+      "example_cn": "现在就跟我说吧，免得我先进去开会了。",
+      "synonym_note": "terlambat = 已经迟了；keburu 常强调另一件事先发生，导致后面不方便或来不及。"
+    },
+    {
+      "word": "kelewat",
+      "display": "kelewat",
+      "audio_text": "kelewat",
+      "cn": "错过；漏掉；超过（口语）",
+      "en": "miss; pass; go beyond",
+      "root": "lewat",
+      "root_cn": "经过；超过",
+      "formation": "terlewat → kelewat；口语里可说 chat-nya kelewat、stasiunnya kelewat，表示漏看或错过。",
+      "example": "Maaf, chat kamu tadi kelewat karena grupnya lagi ramai banget.",
+      "example_cn": "不好意思，你刚才的消息被我漏掉了，因为群里当时特别热闹。",
+      "synonym_note": "ketinggalan = 落下、没跟上；kelewat 更常指某条消息、站点或机会从眼前过去而错过。"
+    },
+    {
+      "word": "nyusul",
+      "display": "nyusul",
+      "audio_text": "nyusul",
+      "cn": "随后跟上；晚一点补上（口语）",
+      "en": "follow later; catch up; send later",
+      "root": "susul",
+      "root_cn": "追上；随后跟上",
+      "formation": "menyusul → nyusul；人、文件、信息都能用，常说 aku nyusul / filenya nyusul。",
+      "example": "Kamu mulai dulu aja, aku nyusul sekitar sepuluh menit lagi.",
+      "example_cn": "你先开始吧，我大概十分钟后跟上。",
+      "synonym_note": "menyusul 是标准形式；nyusul 是日常聊天和办公室里更自然的口语形式。"
+    },
+    {
+      "word": "ngingetin",
+      "display": "ngingetin",
+      "audio_text": "ngingetin",
+      "cn": "提醒某人（口语）",
+      "en": "remind someone",
+      "root": "ingat",
+      "root_cn": "记得；想起",
+      "formation": "mengingatkan → ngingetin；常说 makasih udah ngingetin = 谢谢提醒。",
+      "example": "Nanti siang ngingetin aku buat follow up vendor itu ya.",
+      "example_cn": "中午提醒我跟进一下那个供应商。",
+      "synonym_note": "ingat = 记得；ngingetin = 主动提醒别人别忘了。"
+    },
+    {
+      "word": "kebagian",
+      "display": "kebagian",
+      "audio_text": "kebagian",
+      "cn": "分到；轮到；得到自己那一份（口语）",
+      "en": "get a share; be assigned a portion",
+      "root": "bagi",
+      "root_cn": "分；分配",
+      "formation": "ke- + bagian → kebagian；工作中可说 kebagian tugas，生活中也可说 nggak kebagian makanan。",
+      "example": "Aku kebagian bagian follow up klien, kamu pegang laporan aja.",
+      "example_cn": "我分到客户跟进这一块，你负责报告就行。",
+      "synonym_note": "ketiban 常带突然摊上、甚至有点倒霉；kebagian 更中性，表示正常分到。"
+    },
+    {
+      "word": "kepikiran",
+      "display": "kepikiran",
+      "audio_text": "kepikiran",
+      "cn": "突然想到；一直挂在心上（口语）",
+      "en": "come to mind; keep thinking about",
+      "root": "pikir",
+      "root_cn": "想；思考",
+      "formation": "terpikir → kepikiran；既可表示‘突然想到’，也可表示某件事一直让自己惦记。",
+      "example": "Tadi aku kepikiran satu cara yang mungkin lebih simpel.",
+      "example_cn": "刚才我突然想到一个可能更简单的办法。",
+      "synonym_note": "mikir = 在想；kepikiran 常表示想法自己冒出来，或某件事一直萦绕在脑子里。"
+    },
+    {
+      "word": "nyambung",
+      "display": "nyambung",
+      "audio_text": "nyambung",
+      "cn": "接得上；说得通；能聊到一起（口语）",
+      "en": "connect; make sense; click in conversation",
+      "root": "sambung",
+      "root_cn": "连接；接上",
+      "formation": "menyambung → nyambung；可用于话题、逻辑、网络，也可形容两个人聊得来。",
+      "example": "Kalau konteks awalnya nggak dijelasin, bagian ini jadi kurang nyambung.",
+      "example_cn": "如果前面的背景没说明，这一部分就有点接不上。",
+      "synonym_note": "cocok = 合适、匹配；nyambung 更强调逻辑、话题或人与人交流能接得起来。"
+    },
+    {
+      "word": "ngobrolin",
+      "display": "ngobrolin",
+      "audio_text": "ngobrolin",
+      "cn": "聊某件事；讨论某个话题（口语）",
+      "en": "talk about; discuss casually",
+      "root": "obrol",
+      "root_cn": "聊天；交谈",
+      "formation": "mengobrolkan / ngobrol soal → ngobrolin；雅加达口语里很自然，后面直接接话题。",
+      "example": "Nanti kita ngobrolin detailnya pas semua orang sudah ada.",
+      "example_cn": "等大家都到了，我们再聊具体细节。",
+      "synonym_note": "bahas = 讨论，工作场景更中性；ngobrolin 更轻松、更口语。"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "Aku nangkep garis besarnya, tapi tadi penjelasan terakhir kepotong.",
+      "cn": "大意我听懂了，不过刚才最后的说明被打断了。"
+    },
+    {
+      "id": "Kabarin sekarang sebelum aku keburu masuk meeting, nanti takut chat-nya kelewat.",
+      "cn": "现在就告诉我吧，免得我先进去开会，之后怕把消息漏掉。"
+    },
+    {
+      "id": "Kamu mulai dulu, aku nyusul; kalau aku lupa, tolong ngingetin sekali aja.",
+      "cn": "你先开始，我随后跟上；如果我忘了，提醒我一下就行。"
+    },
+    {
+      "id": "Aku kebagian follow up klien, dan tadi kepikiran cara biar prosesnya nggak nyangkut lagi.",
+      "cn": "我分到客户跟进这一块，刚才还想到一个办法，免得流程又卡住。"
+    },
+    {
+      "id": "Nanti kita ngobrolin lagi dari awal biar ceritanya lebih nyambung dan nggak bikin orang kewalahan.",
+      "cn": "等会儿我们从头再聊一下，这样逻辑更连贯，也不会让人听得顾不过来。"
+    }
+  ],
+  "reading": {
+    "title": "Chat Kelewat, Penjelasan Kepotong",
+    "text": "Pagi ini grup kantor ramai banget. Satu chat dari klien sempat kelewat karena pesan masuk terus. Pas aku mau jawab, aku keburu dipanggil meeting. Di meeting, penjelasanku juga kepotong karena ada telepon penting. Untung temanku nangkep maksud utamanya dan ngingetin aku soal satu follow up yang masih nyangkut. Setelah meeting, aku kebagian hubungi klien lagi. Temanku bilang dia nyusul kirim datanya. Tadi aku juga kepikiran cara yang lebih simpel supaya pembahasannya lebih nyambung. Nanti siang kami mau ngobrolin detailnya lagi. Kalau vendor masih ngulur, kami akan kasih batas waktu yang lebih jelas supaya tim nggak kewalahan.",
+    "cn": "今天早上公司群特别热闹。客户的一条消息因为信息不断进来被我漏掉了。正准备回复时，我又先被叫去开会。开会时，我的说明也因为一个重要电话被打断。好在同事听懂了主要意思，还提醒我有一项跟进仍然卡着。会议结束后，我分到再次联系客户的任务。同事说数据稍后补发。刚才我还想到一个更简单的办法，让讨论更连贯。中午我们准备再聊一下细节。如果供应商还继续拖，我们会给更明确的期限，免得团队忙不过来。",
+    "vocab": [
+      "kelewat",
+      "keburu",
+      "kepotong",
+      "nangkep",
+      "ngingetin",
+      "nyangkut",
+      "kebagian",
+      "nyusul",
+      "kepikiran",
+      "nyambung",
+      "ngobrolin",
+      "ngulur",
+      "kewalahan"
+    ]
+  },
+  "quiz": [
+    {
+      "question": "“Chat kamu tadi kelewat.” 最自然的意思是：",
+      "options": [
+        "我刚才把你的消息漏掉了",
+        "我刚才把你的消息删掉了",
+        "我刚才把你的消息转发了"
+      ],
+      "answer_index": 0,
+      "explain": "kelewat 在聊天场景里常表示某条消息从眼前过去了、没有注意到。"
+    },
+    {
+      "question": "kebagian 和 ketiban 最自然的区别是：",
+      "options": [
+        "kebagian 偏正常分到；ketiban 常带突然摊上额外事情的感觉",
+        "kebagian 是拖延；ketiban 是提前",
+        "两个词完全一样"
+      ],
+      "answer_index": 0,
+      "explain": "kebagian 是中性的‘分到一份/轮到’，ketiban 常带意外落到自己头上的语气。"
+    },
+    {
+      "question": "复习：流程卡在审批环节，一直不能继续，最自然的是：",
+      "options": [
+        "masih nyangkut di approval",
+        "masih nyambung di approval",
+        "masih kelewat di approval"
+      ],
+      "answer_index": 0,
+      "explain": "nyangkut 是近期旧词，表示卡在某个具体环节动不了。"
+    }
+  ],
+  "output": {
+    "task": "用自然口语表达：‘刚才你的消息我漏掉了，因为我先被叫去开会。会议里我的说明又被打断了。大意你听懂了吗？数据可以晚一点补发。中午我们再把细节聊一下，如果我忘了记得提醒我。’",
+    "reference_answer": "Tadi chat kamu kelewat karena aku keburu dipanggil meeting. Di meeting, penjelasanku juga kepotong. Kamu nangkep garis besarnya nggak? Datanya bisa nyusul nanti. Siang kita ngobrolin detailnya lagi ya. Kalau aku lupa, ngingetin aku aja.",
+    "reference_cn": "刚才你的消息我漏掉了，因为我先被叫去开会。会议里我的说明又被打断了。大意你听懂了吗？数据可以晚一点补发。中午我们再把细节聊一下，如果我忘了记得提醒我。"
+  },
+  "review": [
+    "沟通链：nangkep = 听懂/抓住意思；kepotong = 话被打断；nyambung = 逻辑或话题接得上。",
+    "时间与跟进：keburu = 另一件事先发生；kelewat = 漏掉/错过；nyusul = 稍后跟上或补发；ngingetin = 提醒。",
+    "自然复习旧词 nyangkut、ngulur、kewalahan、sempat、ketiban，并用 kebagian vs ketiban 做近义对比。"
+  ]
+}
