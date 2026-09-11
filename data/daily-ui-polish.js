@@ -43,8 +43,10 @@
     #daily .dailyCompleteDone{background:#eaf8ef!important;color:#17652d!important;border:1px solid #b9dfc4!important;cursor:default!important;transform:scale(1.02);box-shadow:0 5px 16px rgba(23,101,45,.12);transition:.18s ease}
     .dailyCompleteToast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,18px);z-index:9999;background:#173b25;color:#fff;padding:12px 18px;border-radius:12px;font-weight:750;box-shadow:0 10px 28px rgba(0,0,0,.18);opacity:0;pointer-events:none;transition:.22s ease}
     .dailyCompleteToast.show{opacity:1;transform:translate(-50%,0)}
+    .dailyNotReady{max-width:620px;margin:70px auto;text-align:center;background:#fff;border:1px solid #e2e7f0;border-radius:18px;padding:28px 24px;color:#5f6b7d;line-height:1.7}
+    .dailyNotReady b{display:block;color:#273248;font-size:21px;margin-bottom:7px}
     @media(max-width:820px){#daily .dailyFixGrid{grid-template-columns:1fr}#daily .dailyFixSec{padding:11px 10px;margin:8px 0;border-radius:14px}#daily .dailyFixVocab{padding:13px 12px}#daily .dailyFixSec h3{margin-bottom:11px}}
-    @media(max-width:520px){#daily .sectionHead{margin:0 2px 9px}#daily #dailyTitle{font-size:24px}#daily #dailyMeta{font-size:12px;padding:5px 8px}#daily .dailyFixNav{padding:8px;margin-bottom:7px}#daily .dailyFixPicker{margin-bottom:8px}#daily .dailyFixChips{margin-bottom:8px}#daily .dailyFixSec{padding:9px 6px;border-radius:12px}#daily .dailyFixSec h3{font-size:21px;margin-bottom:9px}#daily .dailyFixNo{width:31px;height:31px;font-size:13px}#daily .dailyFixGrid{gap:8px}#daily .dailyFixVocab{padding:12px 11px;border-radius:12px}#daily .dailyFixWord{font-size:27px}#daily .dailyFixNum{font-size:15px;min-width:34px}#daily .dailyFixCn{font-size:19px;margin-top:8px}#daily .dailyFixEn{font-size:14px}#daily .dailyFixMeta{font-size:14px;line-height:1.5;padding:6px 8px;margin-top:6px}#daily .dailyFixEx{font-size:17px;line-height:1.5;margin-top:9px;padding-top:8px}#daily .dailyFixExCn{font-size:15px;line-height:1.45}#daily .dailyFixReading{font-size:18px;line-height:1.7;padding:12px}#daily .dailyFixTranslation{padding:11px 12px}.dailyCompleteToast{bottom:18px;max-width:calc(100vw - 28px);text-align:center}}
+    @media(max-width:520px){#daily .sectionHead{margin:0 2px 9px}#daily #dailyTitle{font-size:24px}#daily #dailyMeta{font-size:12px;padding:5px 8px}#daily .dailyFixNav{padding:8px;margin-bottom:7px}#daily .dailyFixPicker{margin-bottom:8px}#daily .dailyFixChips{margin-bottom:8px}#daily .dailyFixSec{padding:9px 6px;border-radius:12px}#daily .dailyFixSec h3{font-size:21px;margin-bottom:9px}#daily .dailyFixNo{width:31px;height:31px;font-size:13px}#daily .dailyFixGrid{gap:8px}#daily .dailyFixVocab{padding:12px 11px;border-radius:12px}#daily .dailyFixWord{font-size:27px}#daily .dailyFixNum{font-size:15px;min-width:34px}#daily .dailyFixCn{font-size:19px;margin-top:8px}#daily .dailyFixEn{font-size:14px}#daily .dailyFixMeta{font-size:14px;line-height:1.5;padding:6px 8px;margin-top:6px}#daily .dailyFixEx{font-size:17px;line-height:1.5;margin-top:9px;padding-top:8px}#daily .dailyFixExCn{font-size:15px;line-height:1.45}#daily .dailyFixReading{font-size:18px;line-height:1.7;padding:12px}#daily .dailyFixTranslation{padding:11px 12px}.dailyCompleteToast{bottom:18px;max-width:calc(100vw - 28px);text-align:center}.dailyNotReady{margin:36px auto;padding:22px 16px}}
   `;
   document.head.appendChild(st);
 
@@ -108,9 +110,33 @@
     showCompleteToast((info.session==='am'?'08:00 早间学习':'19:00 晚间学习')+' · 已记录完成');
   }
 
+  function installOpenDailyGuard(){
+    const original=window.openDaily;
+    if(typeof original!=='function'||original.__notReadyGuard)return;
+    const guarded=function(session,date){
+      const d=date||jakartaToday();
+      const exists=typeof window.hasSession==='function'?window.hasSession(d,session):true;
+      if(!exists){
+        if(typeof window.go==='function')window.go('daily');
+        const title=document.getElementById('dailyTitle');
+        const meta=document.getElementById('dailyMeta');
+        const body=document.getElementById('dailyBody');
+        if(title)title.textContent=session==='am'?'08:00 早间学习':'19:00 晚间学习';
+        if(meta)meta.textContent=d;
+        if(body)body.innerHTML='<div class="dailyNotReady"><b>'+((session==='am')?'08:00':'19:00')+' 课程尚未生成</b><div>课程生成后这里会自动可用，不需要反复刷新。</div></div>';
+        return Promise.resolve(false);
+      }
+      return original(session,d);
+    };
+    guarded.__notReadyGuard=true;
+    guarded.__original=original;
+    window.openDaily=guarded;
+  }
+
   function bootCompletionFix(){
     document.addEventListener('click',handleCompleteClick,true);
     syncCompletionButtons();
+    installOpenDailyGuard();
     const daily=document.getElementById('daily');
     if(daily){
       let queued=false;
