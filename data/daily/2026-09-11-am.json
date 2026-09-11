@@ -4,165 +4,45 @@
   "time": "08:00",
   "level": "A2+ → B1",
   "day": 21,
-  "title": "2026年9月11日｜Day 21｜听懂、插话与自然沟通",
+  "title": "2026年9月11日｜Day 21｜听懂、顾虑与自然表达",
   "vocab": [
-    {
-      "word": "nangkep",
-      "display": "nangkep",
-      "audio_text": "nangkep",
-      "cn": "听懂；抓住意思（口语）",
-      "en": "get; catch; understand",
-      "root": "tangkap",
-      "root_cn": "抓住；捕捉",
-      "formation": "menangkap → nangkep；雅加达口语里常说 aku nangkep maksudnya，表示‘我明白你的意思了’。",
-      "example": "Aku nangkep maksudmu, cuma bagian terakhir masih agak kurang jelas.",
-      "example_cn": "我明白你的意思，只是最后那部分还有点不清楚。",
-      "synonym_note": "paham = 理解，范围更广；nangkep 更口语，常强调刚刚听懂、抓到对方的意思。"
-    },
-    {
-      "word": "kelewat",
-      "display": "kelewat",
-      "audio_text": "kelewat",
-      "cn": "错过；漏掉；超过（口语）",
-      "en": "miss; pass; go beyond",
-      "root": "lewat",
-      "root_cn": "经过；超过",
-      "formation": "terlewat → kelewat；口语里可说 chat-nya kelewat、stasiunnya kelewat，表示漏看或错过。",
-      "example": "Maaf, chat kamu tadi kelewat karena grupnya lagi ramai banget.",
-      "example_cn": "不好意思，你刚才的消息被我漏掉了，因为群里当时特别热闹。",
-      "synonym_note": "ketinggalan = 落下、没跟上；kelewat 更常指某条消息、站点或机会从眼前过去而错过。"
-    },
-    {
-      "word": "ngobrolin",
-      "display": "ngobrolin",
-      "audio_text": "ngobrolin",
-      "cn": "聊某件事；讨论某个话题（口语）",
-      "en": "talk about; discuss casually",
-      "root": "obrol",
-      "root_cn": "聊天；交谈",
-      "formation": "mengobrolkan / ngobrol soal → ngobrolin；雅加达口语里很自然，后面直接接话题。",
-      "example": "Nanti kita ngobrolin detailnya pas semua orang sudah ada.",
-      "example_cn": "等大家都到了，我们再聊具体细节。",
-      "synonym_note": "bahas = 讨论，工作场景更中性；ngobrolin 更轻松、更口语。"
-    },
-    {
-      "word": "kelepasan",
-      "display": "kelepasan",
-      "audio_text": "kelepasan",
-      "cn": "一不小心说出/做出；没控制住（口语）",
-      "en": "let slip; accidentally go too far",
-      "root": "lepas",
-      "root_cn": "松开；脱离",
-      "formation": "ke- + lepas + -an → kelepasan；常说 kelepasan ngomong，表示话不小心说出口。",
-      "example": "Tadi aku kelepasan ngomong soal harga padahal belum final.",
-      "example_cn": "刚才价格还没最终确定，我却一不小心说出来了。",
-      "synonym_note": "kebablasan = 做过头、超过界限；kelepasan 更常强调无意间脱口而出或没控制住。"
-    },
-    {
-      "word": "nyelipin",
-      "display": "nyelipin",
-      "audio_text": "nyelipin",
-      "cn": "顺便插入；塞进安排里（口语）",
-      "en": "slip in; squeeze into a schedule",
-      "root": "selip",
-      "root_cn": "夹入；插入",
-      "formation": "menyelipkan → nyelipin；可用于把话题、文件或小任务插进现有安排。",
-      "example": "Aku coba nyelipin follow up ini sebelum meeting siang.",
-      "example_cn": "我试着在中午会议前插空跟进一下这件事。",
-      "synonym_note": "nyempetin = 特意挤出时间；nyelipin 更强调把某件小事插进现有安排。"
-    },
-    {
-      "word": "ngeduluin",
-      "display": "ngeduluin",
-      "audio_text": "ngeduluin",
-      "cn": "优先先做；把某事放前面（口语）",
-      "en": "do first; prioritize",
-      "root": "dulu",
-      "root_cn": "先；以前",
-      "formation": "mendahulukan 的日常口语表达可说 ngeduluin；常用于 ngeduluin yang penting / yang urgent。",
-      "example": "Yang urgent kita ngeduluin dulu, sisanya bisa nyicil nanti.",
-      "example_cn": "紧急的我们先优先处理，其他的之后可以一点点做。",
-      "synonym_note": "prioritas 是名词‘优先事项’；ngeduluin 是动作，表示实际把某件事放在前面先做。"
-    },
-    {
-      "word": "ngeh",
-      "display": "ngeh",
-      "audio_text": "ngeh",
-      "cn": "意识到；反应过来；注意到（很口语）",
-      "en": "realize; notice; get it",
-      "root": "ngeh",
-      "root_cn": "意识到；注意到",
-      "formation": "固定口语词；常说 baru ngeh = 才反应过来，nggak ngeh = 没注意到/没意识到。",
-      "example": "Aku baru ngeh ternyata angka di file itu salah.",
-      "example_cn": "我才反应过来，原来文件里的数字是错的。",
-      "synonym_note": "sadar = 意识到，较中性；ngeh 更口语，常带‘突然反应过来’的感觉。"
-    },
-    {
-      "word": "nyimak",
-      "display": "nyimak",
-      "audio_text": "nyimak",
-      "cn": "认真听；跟着听懂内容（口语）",
-      "en": "listen closely; follow attentively",
-      "root": "simak",
-      "root_cn": "仔细听；留意",
-      "formation": "menyimak → nyimak；聊天、会议、直播里都很常见，强调认真跟着听。",
-      "example": "Aku tadi nyimak dari awal, jadi kurang lebih sudah ngerti konteksnya.",
-      "example_cn": "我刚才从头一直认真听，所以大概已经明白背景了。",
-      "synonym_note": "dengar = 听见/听；nyimak 更强调集中注意力认真听。"
-    },
-    {
-      "word": "nyeletuk",
-      "display": "nyeletuk",
-      "audio_text": "nyeletuk",
-      "cn": "突然插一句；随口冒出一句（口语）",
-      "en": "blurt out; make a spontaneous remark",
-      "root": "celetuk",
-      "root_cn": "随口插话；突然说一句",
-      "formation": "menyeletuk → nyeletuk；常表示别人说话时突然随口插一句，不一定是正式打断。",
-      "example": "Tadi dia nyeletuk satu komentar yang bikin semua orang ketawa.",
-      "example_cn": "刚才他突然插了一句，逗得大家都笑了。",
-      "synonym_note": "motong pembicaraan = 打断别人讲话；nyeletuk 更像随口插一句，语气可以很轻。"
-    },
-    {
-      "word": "ngegas",
-      "display": "ngegas",
-      "audio_text": "ngegas",
-      "cn": "突然语气很冲；强势顶上去（口语）",
-      "en": "get aggressive; come on strong verbally",
-      "root": "gas",
-      "root_cn": "油门；加速",
-      "formation": "gas → ngegas；本义是踩油门，口语里常比喻说话突然变冲、情绪一下顶上来。",
-      "example": "Santai aja, nggak usah langsung ngegas kalau ada yang beda pendapat.",
-      "example_cn": "放轻松，有人意见不同时不用马上语气那么冲。",
-      "synonym_note": "marah = 生气；ngegas 更强调说话方式突然变强硬、冲起来，不一定真的发火。"
-    }
+    {"word":"nangkep","display":"nangkep","audio_text":"nangkep","cn":"听懂；抓住意思（口语）","en":"get; catch; understand","root":"tangkap","root_cn":"抓住；捕捉","formation":"menangkap → nangkep；雅加达口语里常说 aku nangkep maksudnya。","example":"Aku nangkep maksudmu, cuma bagian terakhir masih agak kurang jelas.","example_cn":"我明白你的意思，只是最后那部分还有点不清楚。","synonym_note":"paham 范围更广；nangkep 更口语，常强调刚刚抓到对方的意思。"},
+    {"word":"kelewat","display":"kelewat","audio_text":"kelewat","cn":"错过；漏掉；超过（口语）","en":"miss; pass; go beyond","root":"lewat","root_cn":"经过；超过","formation":"terlewat → kelewat；口语里常说 chat-nya kelewat。","example":"Maaf, chat kamu tadi kelewat karena grupnya lagi ramai banget.","example_cn":"不好意思，你刚才的消息被我漏掉了，因为群里当时特别热闹。","synonym_note":"ketinggalan 偏落下、没跟上；kelewat 更常指消息、站点或机会被错过。"},
+    {"word":"ngobrolin","display":"ngobrolin","audio_text":"ngobrolin","cn":"聊某件事；讨论某个话题（口语）","en":"talk about; discuss casually","root":"obrol","root_cn":"聊天；交谈","formation":"ngobrol + -in → ngobrolin；雅加达口语里后面可直接接话题。","example":"Nanti kita ngobrolin detailnya pas semua orang sudah ada.","example_cn":"等大家都到了，我们再聊具体细节。","synonym_note":"bahas 更中性；ngobrolin 更轻松、更口语。"},
+    {"word":"kelepasan","display":"kelepasan","audio_text":"kelepasan","cn":"一不小心说出/做出；没控制住（口语）","en":"let slip; accidentally go too far","root":"lepas","root_cn":"松开；脱离","formation":"ke- + lepas + -an → kelepasan；常说 kelepasan ngomong。","example":"Tadi aku kelepasan ngomong soal harga padahal belum final.","example_cn":"刚才价格还没最终确定，我却一不小心说出来了。","synonym_note":"kebablasan 偏做过头；kelepasan 更常强调无意间脱口而出或没控制住。"},
+    {"word":"nyelipin","display":"nyelipin","audio_text":"nyelipin","cn":"顺便插入；塞进安排里（口语）","en":"slip in; squeeze into a schedule","root":"selip","root_cn":"夹入；插入","formation":"menyelipkan → nyelipin；可把话题、文件或小任务插进现有安排。","example":"Aku coba nyelipin follow up ini sebelum meeting siang.","example_cn":"我试着在中午会议前插空跟进一下这件事。","synonym_note":"nyempetin 强调挤出时间；nyelipin 更强调把事情插进已有安排。"},
+    {"word":"ngeduluin","display":"ngeduluin","audio_text":"ngeduluin","cn":"优先先做；把某事放前面（口语）","en":"do first; prioritize","root":"dulu","root_cn":"先；以前","formation":"口语 ngeduluin 对应较正式的 mendahulukan；常说 ngeduluin yang urgent。","example":"Yang urgent kita ngeduluin dulu, sisanya bisa nyicil nanti.","example_cn":"紧急的我们先优先处理，其他的之后可以一点点做。","synonym_note":"prioritas 是名词；ngeduluin 是实际把某件事放前面先做。"},
+    {"word":"ngeh","display":"ngeh","audio_text":"ngeh","cn":"意识到；反应过来；注意到（很口语）","en":"realize; notice; get it","root":"ngeh","root_cn":"意识到；注意到","formation":"固定口语词；baru ngeh = 才反应过来，nggak ngeh = 没注意到。","example":"Aku baru ngeh ternyata angka di file itu salah.","example_cn":"我才反应过来，原来文件里的数字是错的。","synonym_note":"sadar 较中性；ngeh 更口语，常带突然反应过来的感觉。"},
+    {"word":"sungkan","display":"sungkan","audio_text":"sungkan","cn":"因为客气、尊重而不好意思开口或拒绝","en":"feel hesitant out of politeness or respect","root":"sungkan","root_cn":"客气拘谨；不好意思开口","formation":"基础状态词；常说 aku sungkan ngomong / sungkan nolak，印尼社交和办公室都很常用。","example":"Aku sebenarnya mau nolak, tapi agak sungkan karena dia lebih senior.","example_cn":"其实我想拒绝，但因为他资历更深，我有点不好意思开口。","synonym_note":"malu 偏害羞或丢脸；sungkan 更强调因为礼貌、尊重或关系而拘谨。"},
+    {"word":"nggak enakan","display":"nggak enakan","audio_text":"nggak enakan","cn":"太顾虑别人；不好意思拒绝别人（口语）","en":"feel bad saying no; be overly considerate","root":"enak","root_cn":"舒服；自在","formation":"nggak enak + -an → nggak enakan；形容总怕让别人不舒服，所以难拒绝。","example":"Kalau terlalu nggak enakan, kerjaan orang lain bisa ikut kamu ambil semua.","example_cn":"如果太不好意思拒绝别人，别人的工作最后可能也全被你接过来。","synonym_note":"sungkan 常针对具体对象或场合；nggak enakan 更像一种容易顾虑别人、难说不的性格或状态。"},
+    {"word":"ceplas-ceplos","display":"ceplas-ceplos","audio_text":"ceplas-ceplos","cn":"说话直来直去；想到什么就说什么（口语）","en":"speak bluntly; speak without much filter","root":"ceplas-ceplos","root_cn":"直来直去地说；不太过滤措辞","formation":"固定口语表达，常说 orangnya ceplas-ceplos，形容说话直接、不太绕。","example":"Dia orangnya ceplas-ceplos, jadi kadang kedengarannya terlalu langsung.","example_cn":"他说话很直，所以有时候听起来会太直接。","synonym_note":"jujur = 诚实；ceplas-ceplos 强调表达方式直接，未必等于内容一定正确。"}
   ],
   "sentences": [
-    {"id": "Aku nyimak dari awal, jadi nangkep maksudnya walaupun satu chat tadi kelewat.", "cn": "我从头认真听了，所以虽然刚才漏掉一条消息，还是听懂了他的意思。"},
-    {"id": "Tadi dia nyeletuk soal harga, terus temannya malah ngegas sedikit.", "cn": "刚才他随口提了一句价格，结果他同事语气一下有点冲。"},
-    {"id": "Aku kelepasan ngomong satu detail, jadi nanti kita ngobrolin lagi biar jelas.", "cn": "我一不小心说出了一个细节，所以等会儿我们再聊一下，把事情说清楚。"},
-    {"id": "Yang urgent kita ngeduluin dulu, terus aku nyelipin follow up yang prosesnya masih nyangkut.", "cn": "紧急的我们先优先处理，然后我插空跟进一下那个还卡着的流程。"},
-    {"id": "Aku baru ngeh masalahnya mulai ngerembet, jadi jangan sampai tim kewalahan lagi.", "cn": "我才意识到问题开始蔓延，所以别再让团队忙不过来了。"}
+    {"id":"Aku nangkep maksudnya, tapi satu chat penting tadi kelewat.","cn":"我听懂他的意思了，不过刚才漏掉了一条重要消息。"},
+    {"id":"Tadi aku kelepasan ngomong, jadi nanti kita ngobrolin lagi biar konteksnya jelas.","cn":"刚才我一不小心说漏了，所以等会儿我们再聊一下，把背景说清楚。"},
+    {"id":"Yang urgent kita ngeduluin dulu, terus aku nyelipin follow up yang masih nyangkut.","cn":"紧急的我们先处理，然后我插空跟进一下那个还卡着的事项。"},
+    {"id":"Aku baru ngeh dia sebenarnya sungkan nolak karena orangnya agak nggak enakan.","cn":"我才意识到他其实是不好意思拒绝，因为他比较顾虑别人。"},
+    {"id":"Dia memang ceplas-ceplos, tapi bukan berarti sengaja mau bikin orang lain nggak nyaman.","cn":"他说话确实比较直，但不代表他是故意让别人不舒服。"}
   ],
   "reading": {
-    "title": "Dengerin Dulu, Jangan Langsung Ngegas",
-    "text": "Pagi ini aku ikut meeting singkat sama tim. Aku nyimak dari awal supaya nangkep konteksnya. Ada satu pesan klien yang sempat kelewat, tapi masalah utamanya sudah jelas. Di tengah meeting, seorang teman nyeletuk soal harga yang belum final. Dia sebenarnya cuma bercanda, tapi orang lain langsung ngegas sedikit. Setelah itu dia bilang tadi cuma kelepasan ngomong. Supaya nggak makin ribet, kami ngobrolin ulang poin pentingnya. Aku juga baru ngeh ada follow up yang masih nyangkut. Akhirnya kami ngeduluin yang urgent dan aku nyelipin satu tugas kecil sebelum makan siang. Kalau masalahnya dibiarkan ngerembet, tim bisa kewalahan lagi.",
-    "cn": "今天早上我参加了一个简短的团队会议。我从头认真听，好把背景搞清楚。有一条客户消息刚才漏掉了，不过主要问题已经明确。会议中间，一个同事随口提到了还没最终确定的价格。他其实只是开玩笑，但另一个人的语气马上有点冲。之后他说自己刚才只是不小心说出来了。为了不让事情更麻烦，我们重新聊了一遍重点。我也才发现还有一项跟进卡着。最后我们先处理最紧急的，我再在午饭前插入一个小任务。如果任由问题继续蔓延，团队又会忙不过来。",
-    "vocab": ["nyimak", "nangkep", "kelewat", "nyeletuk", "ngegas", "kelepasan", "ngobrolin", "ngeh", "nyangkut", "ngeduluin", "nyelipin", "ngerembet", "kewalahan"]
+    "title":"Sungkan Bilang Tidak",
+    "text":"Pagi ini aku baru ngeh kenapa satu teman selalu ambil tugas tambahan. Ternyata dia orangnya nggak enakan dan agak sungkan kalau harus nolak orang yang lebih senior. Kemarin satu chat penting juga kelewat, lalu dia kelepasan bilang semuanya aman padahal prosesnya masih nyangkut. Aku nangkep maksudnya bukan mau menutupi masalah. Dia cuma terlalu hati-hati sama orang lain. Akhirnya kami ngobrolin cara kerja yang lebih jelas. Yang urgent kami ngeduluin dulu, lalu aku nyelipin satu follow up sebelum siang. Ada teman lain yang ceplas-ceplos, jadi dia langsung bilang kalau vendor terus ngulur, tim bisa kewalahan lagi.",
+    "cn":"今天早上我才意识到，为什么一个同事总是接额外任务。原来他比较顾虑别人，面对资历更深的人也不好意思拒绝。昨天还有一条重要消息被漏掉了，之后他又不小心说一切没问题，其实流程还卡着。我明白他并不是想掩盖问题，只是太顾虑别人。最后我们重新聊了更清楚的工作方式。紧急的先处理，我再在中午前插空做一次跟进。另一个同事说话比较直，他直接指出，如果供应商继续拖，团队又会忙不过来。",
+    "vocab":["ngeh","nggak enakan","sungkan","kelewat","kelepasan","nyangkut","nangkep","ngobrolin","ngeduluin","nyelipin","ceplas-ceplos","ngulur","kewalahan"]
   },
   "quiz": [
-    {"question": "nyimak 和 dengar 最自然的区别是：", "options": ["nyimak 更强调认真听并跟内容；dengar 更泛指听见或听", "nyimak 是打断；dengar 是生气", "两个只用于正式会议"], "answer_index": 0, "explain": "nyimak 带集中注意力认真听的感觉，dengar 的范围更广。"},
-    {"question": "“Dia langsung ngegas.” 在聊天里最可能是什么意思？", "options": ["他语气一下变得很冲", "他马上离开办公室", "他突然忘了内容"], "answer_index": 0, "explain": "ngegas 本义是踩油门，口语里常比喻说话突然变强硬、变冲。"},
-    {"question": "复习：流程卡在审批环节，一直不能继续，最自然的是：", "options": ["masih nyangkut di approval", "masih nyeletuk di approval", "masih ngegas di approval"], "answer_index": 0, "explain": "nyangkut 是近期旧词，表示卡在某个具体环节无法继续推进。"}
+    {"question":"sungkan 和 malu 最自然的区别是：","options":["sungkan 更强调因为礼貌或尊重而不好意思开口；malu 更偏害羞或丢脸","sungkan 是生气；malu 是加班","两个只用于正式场合"],"answer_index":0,"explain":"sungkan 是非常有印尼语特色的社交词，重点是关系、礼貌和尊重带来的拘谨。"},
+    {"question":"“Dia orangnya nggak enakan.” 最自然的意思是：","options":["他很顾虑别人，不太好意思拒绝","他脾气很差","他总是听不懂别人"],"answer_index":0,"explain":"nggak enakan 常形容一个人怕让别人不舒服，因此难拒绝、容易迁就。"},
+    {"question":"复习：供应商流程卡在审批环节，最自然的是：","options":["masih nyangkut di approval","masih sungkan di approval","masih ceplas-ceplos di approval"],"answer_index":0,"explain":"nyangkut 是近期旧词，表示卡在某个具体环节不能继续推进。"}
   ],
   "output": {
-    "task": "用自然口语表达：‘你先认真听完，不要马上语气很冲。刚才他只是随口插了一句，而且后来也说自己是不小心讲出来的。我们先把最紧急的处理掉，再聊剩下的。’",
-    "reference_answer": "Nyimak dulu sampai selesai, jangan langsung ngegas. Tadi dia cuma nyeletuk, terus dia juga bilang kelepasan ngomong. Kita ngeduluin yang paling urgent dulu, habis itu baru ngobrolin sisanya.",
-    "reference_cn": "你先认真听完，不要马上语气很冲。刚才他只是随口插了一句，而且后来也说自己是不小心讲出来的。我们先把最紧急的处理掉，再聊剩下的。"
+    "task":"用自然口语表达：‘我才发现他不是不想拒绝，而是比较顾虑别人。面对资历更深的人，他会不好意思开口。我们先把最紧急的处理掉，再聊其他问题。’",
+    "reference_answer":"Aku baru ngeh dia bukan nggak mau nolak, tapi memang agak nggak enakan. Kalau sama orang yang lebih senior, dia suka sungkan ngomong. Kita ngeduluin yang paling urgent dulu, habis itu baru ngobrolin masalah yang lain.",
+    "reference_cn":"我才发现他不是不想拒绝，而是比较顾虑别人。面对资历更深的人，他会不好意思开口。我们先把最紧急的处理掉，再聊其他问题。"
   },
   "review": [
-    "沟通理解：nyimak = 认真听；nangkep = 抓住意思；ngeh = 突然反应过来。",
-    "说话状态：nyeletuk = 随口插一句；kelepasan = 不小心说出口；ngegas = 语气突然变冲。",
-    "自然复习旧词 nyangkut、ngerembet、kewalahan、nyicil、sempat，并继续避免连续机械重复同一批词。"
+    "理解与漏项：nangkep = 抓住意思；ngeh = 突然反应过来；kelewat = 漏看或错过。",
+    "印尼社交高频：sungkan = 因礼貌/尊重而拘谨；nggak enakan = 太顾虑别人、难拒绝；ceplas-ceplos = 说话直来直去。",
+    "自然复习旧词 nyangkut、ngulur、kewalahan、nyicil、sempat，继续避免连续几天机械重复同一批词。"
   ]
 }
