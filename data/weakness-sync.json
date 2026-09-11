@@ -1,5 +1,580 @@
 {
   "version": 1,
-  "updated_at": null,
-  "words": {}
+  "updated_at": "2026-09-11T14:52:25.077Z",
+  "words": {
+    "tunda": {
+      "word": "tunda",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "tunda",
+      "cn": "暂无释义",
+      "source": "每日学习阅读",
+      "source_date": "2026-09-02",
+      "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "supaya": {
+      "word": "supaya",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "supaya",
+      "cn": "为了；以便",
+      "root": "supaya",
+      "source": "每日学习阅读",
+      "source_date": "2026-09-02",
+      "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "keberatan": {
+      "word": "keberatan",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "keberatan",
+      "cn": "有异议；介意",
+      "root": "berat",
+      "source": "每日学习阅读",
+      "source_date": "2026-09-03",
+      "session": "19:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "panik": {
+      "word": "panik",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "panik",
+      "cn": "恐慌",
+      "source": "每日学习阅读",
+      "source_date": "2026-09-04",
+      "session": "19:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "nagih": {
+      "word": "nagih",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "nagih",
+      "cn": "上瘾的",
+      "source": "每日学习阅读",
+      "source_date": "2026-09-07",
+      "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "dampak": {
+      "word": "dampak",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "Dampak",
+      "cn": "影响",
+      "source": "阅读短文",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "padat": {
+      "word": "padat",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "padat",
+      "cn": "拥挤的",
+      "source": "每日学习阅读",
+      "source_date": "2026-09-10",
+      "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "sederhana": {
+      "word": "sederhana",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "sederhana",
+      "cn": "简单的",
+      "source": "阅读短文",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kebuang": {
+      "word": "kebuang",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "kebuang",
+      "cn": "被浪费掉；白白浪费",
+      "root": "buang",
+      "source": "阅读陌生词",
+      "reasons": [
+        "seed_unfamiliar"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mepet": {
+      "word": "mepet",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "mepet",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kayak": {
+      "word": "kayak",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.505Z",
+      "display": "kayak",
+      "cn": "像、好像",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "kesalahan": {
+      "word": "kesalahan",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "kesalahan",
+      "cn": "错误",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "memastikan": {
+      "word": "memastikan",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "memastikan",
+      "cn": "确保；确认",
+      "root": "pasti",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "menghindari": {
+      "word": "menghindari",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "menghindari",
+      "cn": "避免",
+      "root": "hindar",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mencapai": {
+      "word": "mencapai",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "mencapai",
+      "cn": "达到；实现",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mendukung": {
+      "word": "mendukung",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "mendukung",
+      "cn": "支持",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "nyebelin": {
+      "word": "nyebelin",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "nyebelin",
+      "cn": "烦人、让人不爽",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mengatasi": {
+      "word": "mengatasi",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "mengatasi",
+      "cn": "解决、克服",
+      "root": "atas",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "setidaknya": {
+      "word": "setidaknya",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "setidaknya",
+      "cn": "至少",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mengatur": {
+      "word": "mengatur",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "mengatur",
+      "cn": "安排；管理；调节",
+      "root": "atur",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "membatasi": {
+      "word": "membatasi",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "membatasi",
+      "cn": "限制；控制在一定范围内",
+      "root": "batas",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "cadangan": {
+      "word": "cadangan",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "cadangan",
+      "cn": "备用；储备；后备",
+      "root": "cadang",
+      "reasons": [
+        "memory_fuzzy",
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 2
+    },
+    "ngeluh": {
+      "word": "ngeluh",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "ngeluh",
+      "cn": "抱怨；发牢骚（口语）",
+      "root": "keluh",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "menangani": {
+      "word": "menangani",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "menangani",
+      "cn": "处理；负责应对",
+      "root": "tangan",
+      "root_cn": "手",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 1
+    },
+    "utang": {
+      "word": "utang",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "utang",
+      "cn": "债；欠款；欠的钱",
+      "root": "utang",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 1
+    },
+    "giliran": {
+      "word": "giliran",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "giliran",
+      "cn": "轮到；轮班；顺序",
+      "root": "gilir",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 1
+    },
+    "tergantung": {
+      "word": "tergantung",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "tergantung",
+      "cn": "取决于；看情况",
+      "root": "gantung",
+      "root_cn": "挂；悬挂",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 1
+    },
+    "kebetulan": {
+      "word": "kebetulan",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "kebetulan",
+      "cn": "碰巧；正好",
+      "root": "betul",
+      "root_cn": "对；正确",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 2,
+      "right_streak": 0
+    },
+    "justru": {
+      "word": "justru",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "justru",
+      "cn": "反而；恰恰",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 1
+    },
+    "beneran": {
+      "word": "beneran",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "beneran",
+      "cn": "真的；来真的；确实如此（口语）",
+      "root": "benar",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 1
+    },
+    "menentukan": {
+      "word": "menentukan",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "menentukan",
+      "cn": "确定、决定",
+      "root": "tentu",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 2,
+      "right_streak": 1
+    },
+    "beres": {
+      "word": "beres",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "beres",
+      "cn": "搞定；处理完；整齐",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "kebawa": {
+      "word": "kebawa",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "kebawa",
+      "cn": "不小心带走；被带着影响；情绪被带进去（口语）",
+      "root": "bawa",
+      "root_cn": "带；携带",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "nentuin": {
+      "word": "nentuin",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "nentuin",
+      "cn": "决定；确定具体安排（口语）",
+      "root": "tentu",
+      "root_cn": "确定；一定",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "sekadar": {
+      "word": "sekadar",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "sekadar",
+      "cn": "只是；仅仅；不过是",
+      "root": "kadar",
+      "root_cn": "程度；分量",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "ngepasin": {
+      "word": "ngepasin",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "ngepasin",
+      "cn": "把时间/安排调到刚好合适（口语）",
+      "root": "pas",
+      "root_cn": "刚好；合适",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 1
+    },
+    "ngelarin": {
+      "word": "ngelarin",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "ngelarin",
+      "cn": "把事情做完；收尾（口语）",
+      "root": "kelar",
+      "root_cn": "完成；结束",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 2,
+      "right_streak": 2
+    },
+    "kejebak": {
+      "word": "kejebak",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "kejebak",
+      "cn": "陷进去；被困在某个情况里（口语）",
+      "root": "jebak",
+      "root_cn": "设陷阱；困住",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "kebaca": {
+      "word": "kebaca",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "kebaca",
+      "cn": "看得清；读得出来；不小心被看到（口语）",
+      "root": "baca",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "kebentur": {
+      "word": "kebentur",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "kebentur",
+      "cn": "碰上阻碍；卡在限制上（口语）",
+      "root": "bentur",
+      "root_cn": "碰撞；撞上",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "nanggung": {
+      "word": "nanggung",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "nanggung",
+      "cn": "做到一半很尴尬；不上不下；既然都做到这了（口语）",
+      "root": "tanggung",
+      "root_cn": "承担；未完全结束（相关语境）",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "molor": {
+      "word": "molor",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "molor",
+      "cn": "延期；拖长；时间超出原计划（口语）",
+      "root": "molor",
+      "root_cn": "拖长；延后",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "nyaris": {
+      "word": "nyaris",
+      "status": "active",
+      "updated_at": "2026-09-11T14:40:15.508Z",
+      "display": "nyaris",
+      "cn": "差点、几乎",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    }
+  }
 }
