@@ -4,6 +4,13 @@
 
   function mem(){try{return JSON.parse(localStorage.getItem(MEM_KEY)||'{}')}catch(e){return {}}}
   function isKnown(x){if(!x||!x.word)return false;return mem()[x.word]==='know';}
+  function currentItem(){try{return (typeof FILTER!=='undefined'&&Array.isArray(FILTER)&&FILTER.length)?FILTER[Math.max(0,Math.min(typeof idx==='number'?idx:0,FILTER.length-1))]:null;}catch(e){return null;}}
+  function syncWeakness(item,v){
+    if(!item||!item.word||!window.WeaknessPool)return;
+    if(v==='know')window.WeaknessPool.markKnown(item.word,'vocab_known');
+    else if(v==='fuzzy')window.WeaknessPool.markWeak(item.word,item,'memory_fuzzy');
+    else if(v==='dont')window.WeaknessPool.markWeak(item.word,item,'memory_dont');
+  }
 
   function addStyle(){
     if(document.getElementById('vocabMemoryFeedbackStyle'))return;
@@ -71,9 +78,10 @@
     const wrappedMark=function(v){
       if(pending)return;
       pending=true;
+      const item=currentItem();
       feedbackButton(v);
       setTimeout(function(){
-        try{baseMark(v);}finally{
+        try{baseMark(v);syncWeakness(item,v);}finally{
           if(v==='know')setTimeout(()=>pruneKnown(true),20);
           pending=false;
         }
