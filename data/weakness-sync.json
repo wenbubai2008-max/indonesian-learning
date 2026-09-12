@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T15:25:03.498Z",
+  "updated_at": "2026-09-12T15:27:15.233Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -17864,6 +17864,219 @@
       "display": "kurir",
       "cn": "快递员",
       "root": "kurir",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mengelilingi": {
+      "word": "mengelilingi",
+      "status": "active",
+      "updated_at": "2026-09-12T15:25:05.365Z",
+      "display": "mengelilingi",
+      "cn": "环绕",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "material": {
+      "word": "material",
+      "status": "active",
+      "updated_at": "2026-09-12T15:25:12.484Z",
+      "display": "material",
+      "cn": "材料",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "penemuan": {
+      "word": "penemuan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:25:21.382Z",
+      "display": "penemuan",
+      "cn": "发现",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "berminat": {
+      "word": "berminat",
+      "status": "active",
+      "updated_at": "2026-09-12T15:25:27.631Z",
+      "display": "berminat",
+      "cn": "有兴趣",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pertunjukan": {
+      "word": "pertunjukan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:25:32.640Z",
+      "display": "pertunjukan",
+      "cn": "表演",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "lirik": {
+      "word": "lirik",
+      "status": "active",
+      "updated_at": "2026-09-12T15:25:40.288Z",
+      "display": "lirik",
+      "cn": "歌词",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kesepian": {
+      "word": "kesepian",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:25:45.397Z",
+      "display": "kesepian",
+      "last_review": "2026-09-12T15:25:45.383Z",
+      "last_mastered": "2026-09-12T15:25:45.383Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kemudahan": {
+      "word": "kemudahan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:25:50.141Z",
+      "display": "kemudahan",
+      "cn": "便利",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "melatih": {
+      "word": "melatih",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:25:53.878Z",
+      "display": "melatih",
+      "last_review": "2026-09-12T15:25:53.865Z",
+      "last_mastered": "2026-09-12T15:25:53.865Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "keseimbangan": {
+      "word": "keseimbangan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:26:02.104Z",
+      "display": "keseimbangan",
+      "cn": "平衡",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "berdiskusi": {
+      "word": "berdiskusi",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:26:08.030Z",
+      "display": "berdiskusi",
+      "last_review": "2026-09-12T15:26:08.012Z",
+      "last_mastered": "2026-09-12T15:26:08.012Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "gendut": {
+      "word": "gendut",
+      "status": "active",
+      "updated_at": "2026-09-12T15:26:11.854Z",
+      "display": "gendut",
+      "cn": "胖",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "sedekah": {
+      "word": "sedekah",
+      "status": "active",
+      "updated_at": "2026-09-12T15:26:16.752Z",
+      "display": "sedekah",
+      "cn": "施舍",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "lilin": {
+      "word": "lilin",
+      "status": "active",
+      "updated_at": "2026-09-12T15:26:22.316Z",
+      "display": "lilin",
+      "cn": "蜡烛",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "beranak": {
+      "word": "beranak",
+      "status": "active",
+      "updated_at": "2026-09-12T15:26:34.159Z",
+      "display": "beranak",
+      "cn": "生孩子",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bergaul": {
+      "word": "bergaul",
+      "status": "active",
+      "updated_at": "2026-09-12T15:26:42.878Z",
+      "display": "bergaul",
+      "cn": "交往，社交",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "magang": {
+      "word": "magang",
+      "status": "active",
+      "updated_at": "2026-09-12T15:26:47.044Z",
+      "display": "magang",
+      "cn": "实习、见习",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "logam": {
+      "word": "logam",
+      "status": "active",
+      "updated_at": "2026-09-12T15:26:52.107Z",
+      "display": "logam",
+      "cn": "金属",
       "reasons": [
         "memory_fuzzy"
       ],
