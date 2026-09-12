@@ -5,7 +5,15 @@
   function norm(s){return String(s||'').trim().toLowerCase();}
   function mem(){try{return JSON.parse(localStorage.getItem('indo_mem')||'{}')}catch(e){return {}}}
   function stateOf(m,word){const k=norm(word);return m[word]||m[k]||'';}
-  function uniqueWords(arr){const seen=new Set();return (arr||[]).filter(x=>{const k=norm(x&&x.word);if(!k||seen.has(k))return false;seen.add(k);return true;});}
+  function asWordObj(x){
+    if(Array.isArray(x))return {word:String(x[0]||'').trim(),cn:String(x[1]||'').trim()};
+    return x&&typeof x==='object'?x:null;
+  }
+  function uniqueWords(arr){
+    const seen=new Set(),out=[];
+    (arr||[]).forEach(raw=>{const x=asWordObj(raw),k=norm(x&&x.word);if(!k||seen.has(k))return;seen.add(k);out.push(x);});
+    return out;
+  }
   function isMasterSelected(){const sel=document.getElementById('librarySelect');return !!sel&&sel.value==='master';}
   function currentDb(){
     try{
@@ -53,6 +61,7 @@
   document.addEventListener('click',function(e){if(e.target&&e.target.closest&&e.target.closest('#vocabBox .memory'))setTimeout(schedule,240);},true);
   window.addEventListener('weak-pool-changed',schedule);
   window.addEventListener('unknown-vocab-changed',schedule);
+  window.addEventListener('master-vocab-ready',schedule);
   window.addEventListener('storage',function(e){if(e.key==='indo_mem')schedule();});
 
   function bootObserver(){
