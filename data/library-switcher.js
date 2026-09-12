@@ -43,8 +43,8 @@
   function saveProgress(key,word){if(key&&word)localStorage.setItem(progressKey(key),normWord(word));}
   function activeLibrary(){return document.getElementById('librarySelect')?.value||localStorage.getItem('selected_vocab_library')||'top1000'}
   function saveCurrentProgress(){const x=typeof current==='function'?current():null;if(x&&x.word)saveProgress(activeLibrary(),x.word);}
-  function masterOrdered(arr){const m=mem(),fresh=[],review=[];arr.forEach(x=>{const s=statusOf(m,x.word);if(s==='know')return;if(s==='fuzzy'||s==='dont')review.push(x);else fresh.push(x);});return fresh.concat(review);}
-  function restoreIndex(key,arr){const saved=normWord(localStorage.getItem(progressKey(key))||'');if(!saved||!arr.length)return 0;if(key==='master'){const m=mem(),savedItem=arr.find(x=>normWord(x.word)===saved);if(savedItem&&statusOf(m,savedItem.word))return 0;}const found=arr.findIndex(x=>normWord(x.word)===saved);return found>=0?found:0;}
+  function pendingOrdered(arr){const m=mem(),fresh=[],review=[];arr.forEach(x=>{const s=statusOf(m,x.word);if(s==='know')return;if(s==='fuzzy'||s==='dont')review.push(x);else fresh.push(x);});return fresh.concat(review);}
+  function restoreIndex(key,arr){const saved=normWord(localStorage.getItem(progressKey(key))||'');if(!saved||!arr.length)return 0;const found=arr.findIndex(x=>normWord(x.word)===saved);return found>=0?found:0;}
   function rebuildCategories(){const cat=document.getElementById('cat');if(!cat)return;const cats=[...new Set((DB||[]).flatMap(x=>x.categories||[]).filter(c=>!['每日学习','08:00','19:00','原始课程','历史记录不完整'].includes(c)))].sort();cat.innerHTML='<option value="">全部分类</option>'+cats.map(c=>'<option>'+esc(c)+'</option>').join('');}
   function refreshOptions(){
     const select=document.getElementById('librarySelect');if(!select)return;
@@ -53,7 +53,15 @@
     select.innerHTML='<option value="top1000">Top1000（'+topCount+'）</option><option value="master">主学习词库（'+masterCount+'）</option><option value="daily">每日学习词汇（'+dailyCount+'）</option><option value="unknown">陌生词汇（'+unknownCount+'）</option>';
     select.value=['top1000','master','daily','unknown'].includes(cur)?cur:'top1000';
   }
-  function updateScopedStats(key,arr){const m=mem();let known=0,review=0;arr.forEach(x=>{const s=statusOf(m,x.word);if(s==='know')known++;else if(s==='fuzzy'||s==='dont')review++;});const kc=document.getElementById('knownCount'),rc=document.getElementById('reviewCount');if(kc)kc.textContent=known;if(rc)rc.textContent=review;if(key==='master'){const unchecked=Math.max(0,arr.length-known-review),st=document.getElementById('dbStatus');if(st)st.textContent='主学习词库 · '+unchecked+' 未核对 · '+review+' 待复习 · '+known+' 已掌握 · '+arr.length+' 总词';}}
+  function updateScopedStats(key,arr){
+    const m=mem();let known=0;
+    arr.forEach(x=>{if(statusOf(m,x.word)==='know')known++;});
+    const pending=Math.max(0,arr.length-known);
+    const vc=document.getElementById('vocabCount'),kc=document.getElementById('knownCount'),rc=document.getElementById('reviewCount');
+    if(vc)vc.textContent=arr.length;if(kc)kc.textContent=known;if(rc)rc.textContent=pending;
+    const st=document.getElementById('dbStatus');if(st)st.textContent=labelFor(key)+' · '+pending+' 待复习 · '+known+' 已掌握 · '+arr.length+' 总词';
+    return {total:arr.length,known:known,review:pending};
+  }
 
   function addPrevButton(){const box=document.getElementById('vocabBox');if(!box)return;const actions=box.querySelector('.actions');if(!actions||actions.querySelector('[data-prev-word]'))return;const btn=document.createElement('button');btn.type='button';btn.className='secondary';btn.dataset.prevWord='1';btn.textContent='上一个';btn.addEventListener('click',function(){if(!FILTER||!FILTER.length)return;idx=(idx-1+FILTER.length)%FILTER.length;renderVocab();decorateCard();saveCurrentProgress();});actions.insertBefore(btn,actions.firstChild);}
   function decorateCard(){addPrevButton();const lib=activeLibrary();if(lib!=='daily')return;const x=typeof current==='function'?current():null,flash=document.getElementById('flash');if(!x||!flash)return;const firstMuted=flash.querySelector(':scope > .muted');if(firstMuted)firstMuted.remove();let meaning=flash.querySelector('.meaning');if(!meaning)return;const oldScene=meaning.querySelector('[data-daily-example]');if(oldScene)oldScene.remove();const ex=String(x.example||x.scene||'').trim(),exCn=String(x.example_cn||x.scene_cn||'').trim();if(ex){const box=document.createElement('div');box.dataset.dailyExample='1';box.style.marginTop='16px';box.style.lineHeight='1.65';box.innerHTML='<div style="font-size:17px">'+esc(ex)+'</div>'+(exCn?'<div class="muted" style="margin-top:4px">'+esc(exCn)+'</div>':'');meaning.appendChild(box);}}
@@ -61,19 +69,28 @@
   function setLibrary(key){
     if(!['top1000','master','daily','unknown'].includes(key))key='top1000';
     const select=document.getElementById('librarySelect');if(select&&select.value!==key)select.value=key;
-    const source=sourceFor(key);DB=source;FILTER=key==='master'?masterOrdered(source):source.slice();idx=restoreIndex(key,FILTER);rebuildCategories();
+    const source=sourceFor(key);DB=source;FILTER=pendingOrdered(source);idx=restoreIndex(key,FILTER);rebuildCategories();
     const search=document.getElementById('search');if(search)search.value='';
-    document.getElementById('vocabCount').textContent=source.length;document.getElementById('vocabTag').textContent=labelFor(key)+' '+source.length+' 词';document.getElementById('dbStatus').textContent=labelFor(key)+' · '+source.length+' 词';
+    document.getElementById('vocabTag').textContent=labelFor(key)+' '+source.length+' 词';
     updateScopedStats(key,source);
-    if(FILTER.length){renderVocab();decorateCard();saveCurrentProgress();}else{document.getElementById('vocabBox').innerHTML='<div class="empty">这个词库目前还没有待学习词。</div>';}
-    localStorage.setItem('selected_vocab_library',key);if(key==='unknown')setTimeout(fillMissingMeanings,0);
+    if(FILTER.length){renderVocab();decorateCard();saveCurrentProgress();}else{document.getElementById('vocabBox').innerHTML='<div class="empty">这个词库已经全部掌握 ✓</div>';}
+    localStorage.setItem('selected_vocab_library',key);localStorage.removeItem('vocab_view_mode');if(key==='unknown')setTimeout(fillMissingMeanings,0);
   }
   function showKnownCurrent(){
     const key=activeLibrary(),source=sourceFor(key),m=mem();
     DB=source;FILTER=source.filter(x=>statusOf(m,x.word)==='know');idx=0;rebuildCategories();
+    localStorage.setItem('vocab_view_mode','known');
     const search=document.getElementById('search');if(search)search.value='';const cat=document.getElementById('cat');if(cat)cat.value='';
-    const st=document.getElementById('dbStatus');if(st)st.textContent=labelFor(key)+' · 已掌握 '+FILTER.length+' 词（查看中）';
+    updateScopedStats(key,source);const st=document.getElementById('dbStatus');if(st)st.textContent=labelFor(key)+' · 已掌握 '+FILTER.length+' 词（查看中）';
     if(FILTER.length){renderVocab();decorateCard();}else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty">当前词库还没有标记“会了”的词。</div>';}
+  }
+  function showReviewCurrent(){
+    const key=activeLibrary(),source=sourceFor(key),m=mem();
+    DB=source;FILTER=source.filter(x=>statusOf(m,x.word)!=='know');idx=0;rebuildCategories();
+    localStorage.setItem('vocab_view_mode','review');
+    const search=document.getElementById('search');if(search)search.value='';const cat=document.getElementById('cat');if(cat)cat.value='';
+    updateScopedStats(key,source);const st=document.getElementById('dbStatus');if(st)st.textContent=labelFor(key)+' · 待复习 '+FILTER.length+' 词（查看中）';
+    if(FILTER.length){renderVocab();decorateCard();}else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty">当前词库没有待复习词。</div>';}
   }
   function removeLocalUnknown(word){let m=localUnknownMap();const k=normWord(word);Object.keys(m).forEach(key=>{if(key===k||normWord(m[key]?.word)===k)delete m[key]});localStorage.setItem('indo_unknown_words',JSON.stringify(m));window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));}
   function syncWeakness(item,v){const p=window.WeaknessPool;if(!p||!item||!item.word)return;if(v==='know'){if(typeof p.markMastered==='function')p.markMastered(item.word,'vocab_known');else if(typeof p.markKnown==='function')p.markKnown(item.word,'vocab_known');}else if(v==='fuzzy'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_fuzzy');else if(v==='dont'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_dont');}
@@ -91,18 +108,17 @@
     loadDB=function(){setLibrary(document.getElementById('librarySelect')?.value||'top1000')};window.loadDB=loadDB;window.speak=robustSpeak;speak=robustSpeak;
     const originalRender=window.renderVocab;const decoratedRender=function(){originalRender();decorateCard();};window.renderVocab=decoratedRender;renderVocab=decoratedRender;
     const originalNextWord=window.nextWord;const progressNextWord=function(){originalNextWord();saveCurrentProgress();decorateCard();};window.nextWord=progressNextWord;nextWord=progressNextWord;
-    const originalMark=window.mark;const controlledMark=function(v){
+    const controlledMark=function(v){
       const lib=activeLibrary(),x=typeof current==='function'?current():null;if(!x)return;
-      if(lib==='master'){
-        const m=mem();m[x.word]=v;localStorage.setItem('indo_mem',JSON.stringify(m));syncWeakness(x,v);setLibrary('master');return;
-      }
-      if(lib==='unknown'){
-        const m=mem();m[x.word]=v;localStorage.setItem('indo_mem',JSON.stringify(m));if(v==='know')removeLocalUnknown(x.word);syncWeakness(x,v);refreshOptions();setLibrary('unknown');return;
-      }
-      originalMark(v);syncWeakness(x,v);updateScopedStats(lib,sourceFor(lib));
+      const m=mem();m[x.word]=v;m[normWord(x.word)]=v;localStorage.setItem('indo_mem',JSON.stringify(m));syncWeakness(x,v);
+      const mode=localStorage.getItem('vocab_view_mode')||'';
+      if(mode==='known')showKnownCurrent();else if(mode==='review')showReviewCurrent();else setLibrary(lib);
     };window.mark=controlledMark;mark=controlledMark;
+    const scopedUpdate=function(){return updateScopedStats(activeLibrary(),sourceFor(activeLibrary()));};window.updateStats=scopedUpdate;try{updateStats=scopedUpdate}catch(e){}
     window.showKnownWords=showKnownCurrent;try{showKnownWords=showKnownCurrent}catch(e){}
-    const knownCard=document.getElementById('knownCount')?.closest('button');if(knownCard){knownCard.title='查看当前词库已掌握词汇';knownCard.style.cursor='pointer';}
+    window.showReviewWords=showReviewCurrent;
+    const knownCard=document.getElementById('knownCount')?.closest('button');if(knownCard){knownCard.onclick=function(e){e&&e.preventDefault();showKnownCurrent();};knownCard.title='查看当前词库已掌握词汇';knownCard.style.cursor='pointer';}
+    const reviewCard=document.getElementById('reviewCount')?.closest('button');if(reviewCard){reviewCard.onclick=function(e){e&&e.preventDefault();showReviewCurrent();};reviewCard.title='查看当前词库待复习词汇';reviewCard.style.cursor='pointer';}
     window.switchVocabLibrary=setLibrary;window.openMasterVocabulary=()=>setLibrary('master');window.refreshMasterVocabulary=()=>setLibrary('master');
     window.getUnfamiliarVocabulary=unknownWords;window.refreshUnknownLibrary=function(){refreshOptions();if(activeLibrary()==='unknown')setLibrary('unknown')};
     window.addEventListener('unknown-vocab-changed',function(){window.refreshUnknownLibrary&&window.refreshUnknownLibrary()});
