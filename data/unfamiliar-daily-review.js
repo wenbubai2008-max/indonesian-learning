@@ -3,6 +3,9 @@
   function cleanup(){const old=document.getElementById('unfamiliarDailyReview');if(old)old.remove();}
   cleanup();const body=document.getElementById('dailyBody');if(body)new MutationObserver(cleanup).observe(body,{childList:true,subtree:true});
 
+  // 词汇页顶部统计始终只统计当前选中的词库。
+  if(!window.__vocabScopedStatsRequested){window.__vocabScopedStatsRequested=true;const ss=document.createElement('script');ss.src='data/vocab-scoped-stats.js?v=20260912-1';document.body.appendChild(ss);}
+
   // 主学习词库独立加载：用于人工核对“会了 / 模糊 / 不会”，并把“会了”反馈给后续每日出词。
   if(!window.__masterVocabIntegrationRequested){window.__masterVocabIntegrationRequested=true;const m=document.createElement('script');m.src='data/master-vocab-integration.js?v=20260912-2';document.body.appendChild(m);}
 
