@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T15:14:56.497Z",
+  "updated_at": "2026-09-12T15:20:20.804Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -17387,6 +17387,101 @@
       "cn": "细菌",
       "reasons": [
         "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kepuasan": {
+      "word": "kepuasan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:19:28.786Z",
+      "display": "kepuasan",
+      "cn": "满足",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "baja": {
+      "word": "baja",
+      "status": "active",
+      "updated_at": "2026-09-12T15:19:34.014Z",
+      "display": "baja",
+      "cn": "钢铁",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pipa": {
+      "word": "pipa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:19:37.774Z",
+      "display": "pipa",
+      "last_review": "2026-09-12T15:19:37.761Z",
+      "last_mastered": "2026-09-12T15:19:37.761Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "balapan": {
+      "word": "balapan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:19:42.269Z",
+      "display": "balapan",
+      "cn": "比赛、赛跑",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "keberanian": {
+      "word": "keberanian",
+      "status": "active",
+      "updated_at": "2026-09-12T15:19:50.222Z",
+      "display": "keberanian",
+      "cn": "勇气",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "berjumlah": {
+      "word": "berjumlah",
+      "status": "active",
+      "updated_at": "2026-09-12T15:19:56.225Z",
+      "display": "berjumlah",
+      "cn": "总共有",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "petualangan": {
+      "word": "petualangan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:20:04.750Z",
+      "display": "petualangan",
+      "cn": "冒险",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kabel": {
+      "word": "kabel",
+      "status": "active",
+      "updated_at": "2026-09-12T15:20:10.395Z",
+      "display": "kabel",
+      "cn": "电线",
+      "reasons": [
+        "memory_fuzzy"
       ],
       "wrong_count": 0,
       "right_streak": 0
