@@ -23,12 +23,12 @@
     const s=document.createElement('style');
     s.id='vocabMemoryFeedbackStyle';
     s.textContent=`
-      @keyframes memFlashKnow{0%{transform:scale(1);background:#fff}35%{transform:scale(1.08);background:#dff6e7;border-color:#63b879;color:#166534;box-shadow:0 0 0 6px rgba(34,197,94,.10)}100%{transform:scale(1);background:#fff}}
-      @keyframes memFlashFuzzy{0%{transform:scale(1);background:#fff}35%{transform:scale(1.08);background:#fff2cc;border-color:#d6a63d;color:#8a5a00;box-shadow:0 0 0 6px rgba(245,158,11,.10)}100%{transform:scale(1);background:#fff}}
-      @keyframes memFlashDont{0%{transform:scale(1);background:#fff}35%{transform:scale(1.08);background:#ffe1de;border-color:#d87870;color:#a52b22;box-shadow:0 0 0 6px rgba(239,68,68,.10)}100%{transform:scale(1);background:#fff}}
-      .memory button.mem-flash-know{animation:memFlashKnow .34s ease}
-      .memory button.mem-flash-fuzzy{animation:memFlashFuzzy .34s ease}
-      .memory button.mem-flash-dont{animation:memFlashDont .34s ease}
+      @keyframes memFlashKnow{0%{background:#fff}45%{background:#dff6e7;border-color:#63b879;color:#166534}100%{background:#fff}}
+      @keyframes memFlashFuzzy{0%{background:#fff}45%{background:#fff2cc;border-color:#d6a63d;color:#8a5a00}100%{background:#fff}}
+      @keyframes memFlashDont{0%{background:#fff}45%{background:#ffe1de;border-color:#d87870;color:#a52b22}100%{background:#fff}}
+      .memory button.mem-flash-know{animation:memFlashKnow .18s ease}
+      .memory button.mem-flash-fuzzy{animation:memFlashFuzzy .18s ease}
+      .memory button.mem-flash-dont{animation:memFlashDont .18s ease}
       #vocab>#statsBar{margin:0 0 16px!important}
     `;
     document.head.appendChild(s);
@@ -55,7 +55,6 @@
     btn.classList.remove('mem-flash-know','mem-flash-fuzzy','mem-flash-dont');
     void btn.offsetWidth;
     btn.classList.add(cls);
-    setTimeout(()=>btn.classList.remove(cls),380);
   }
 
   function renderEmpty(){
@@ -75,6 +74,17 @@
     }catch(e){console.warn('pruneKnown failed',e)}
   }
 
+  function markMasterDirect(v,item){
+    const m=mem();
+    m[item.word]=v;
+    localStorage.setItem(MEM_KEY,JSON.stringify(m));
+    syncWeakness(item,v);
+    if(typeof window.refreshMasterVocabulary==='function')window.refreshMasterVocabulary();
+    else pruneKnown(true);
+    try{if(typeof updateStats==='function')updateStats();}catch(e){}
+    try{if(typeof renderReview==='function')renderReview();}catch(e){}
+  }
+
   function install(){
     if(installed)return;
     if(typeof window.mark!=='function'||typeof window.go!=='function'){setTimeout(install,120);return;}
@@ -83,16 +93,16 @@
     const baseMark=window.mark;
     const wrappedMark=function(v){
       if(pending)return;
+      const item=currentItem();if(!item)return;
       pending=true;
-      const item=currentItem();
       const masterAtClick=isMaster();
       feedbackButton(v);
       setTimeout(function(){
-        try{baseMark(v);syncWeakness(item,v);}finally{
-          if(masterAtClick||v==='know')setTimeout(()=>pruneKnown(true),20);
-          pending=false;
-        }
-      },190);
+        try{
+          if(masterAtClick)markMasterDirect(v,item);
+          else{baseMark(v);syncWeakness(item,v);if(v==='know')setTimeout(()=>pruneKnown(true),20);}
+        }finally{pending=false;}
+      },120);
     };
     window.mark=wrappedMark;
     try{mark=wrappedMark}catch(e){}
