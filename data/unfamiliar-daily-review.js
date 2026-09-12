@@ -18,5 +18,5 @@
   function loadWeakControls(){if(window.dismissWeaknessWord)loadHome();else load('data/weakness-dismiss.js?v=20260911-2',loadHome);}
   function loadSync(){if(window.WeaknessSync)loadWeakControls();else load('data/weakness-sync-client.js?v=20260911-1',loadWeakControls);}
   if(window.WeaknessPool)loadSync();
-  else load('data/weakness-pool.js?v=20260911-2',loadSync);
+  else load('data/weakness-pool.js?v=20260912-4',loadSync);
 })();
