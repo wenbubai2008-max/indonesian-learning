@@ -68,6 +68,13 @@
     if(FILTER.length){renderVocab();decorateCard();saveCurrentProgress();}else{document.getElementById('vocabBox').innerHTML='<div class="empty">这个词库目前还没有待学习词。</div>';}
     localStorage.setItem('selected_vocab_library',key);if(key==='unknown')setTimeout(fillMissingMeanings,0);
   }
+  function showKnownCurrent(){
+    const key=activeLibrary(),source=sourceFor(key),m=mem();
+    DB=source;FILTER=source.filter(x=>statusOf(m,x.word)==='know');idx=0;rebuildCategories();
+    const search=document.getElementById('search');if(search)search.value='';const cat=document.getElementById('cat');if(cat)cat.value='';
+    const st=document.getElementById('dbStatus');if(st)st.textContent=labelFor(key)+' · 已掌握 '+FILTER.length+' 词（查看中）';
+    if(FILTER.length){renderVocab();decorateCard();}else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty">当前词库还没有标记“会了”的词。</div>';}
+  }
   function removeLocalUnknown(word){let m=localUnknownMap();const k=normWord(word);Object.keys(m).forEach(key=>{if(key===k||normWord(m[key]?.word)===k)delete m[key]});localStorage.setItem('indo_unknown_words',JSON.stringify(m));window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));}
   function syncWeakness(item,v){const p=window.WeaknessPool;if(!p||!item||!item.word)return;if(v==='know'){if(typeof p.markMastered==='function')p.markMastered(item.word,'vocab_known');else if(typeof p.markKnown==='function')p.markKnown(item.word,'vocab_known');}else if(v==='fuzzy'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_fuzzy');else if(v==='dont'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_dont');}
 
@@ -94,6 +101,8 @@
       }
       originalMark(v);syncWeakness(x,v);updateScopedStats(lib,sourceFor(lib));
     };window.mark=controlledMark;mark=controlledMark;
+    window.showKnownWords=showKnownCurrent;try{showKnownWords=showKnownCurrent}catch(e){}
+    const knownCard=document.getElementById('knownCount')?.closest('button');if(knownCard){knownCard.title='查看当前词库已掌握词汇';knownCard.style.cursor='pointer';}
     window.switchVocabLibrary=setLibrary;window.openMasterVocabulary=()=>setLibrary('master');window.refreshMasterVocabulary=()=>setLibrary('master');
     window.getUnfamiliarVocabulary=unknownWords;window.refreshUnknownLibrary=function(){refreshOptions();if(activeLibrary()==='unknown')setLibrary('unknown')};
     window.addEventListener('unknown-vocab-changed',function(){window.refreshUnknownLibrary&&window.refreshUnknownLibrary()});
