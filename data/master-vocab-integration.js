@@ -103,5 +103,5 @@
     window.refreshMasterVocabulary=renderMaster;
   }
   window.MASTER_VOCAB_DB=[];
-  load('data/master-vocab-data.js?v=20260912-2',()=>load('data/master-vocab-data-2.js?v=20260912-2',()=>load('data/master-vocab-data-3.js?v=20260912-2',install)));
+  load('data/master-vocab-data.js?v=20260912-3',()=>load('data/master-vocab-data-2.js?v=20260912-3',()=>load('data/master-vocab-data-3.js?v=20260912-3',install)));
 })();
