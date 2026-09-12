@@ -3,7 +3,10 @@
   let installed=false,pending=false;
 
   function mem(){try{return JSON.parse(localStorage.getItem(MEM_KEY)||'{}')}catch(e){return {}}}
-  function isKnown(x){if(!x||!x.word)return false;return mem()[x.word]==='know';}
+  function statusOf(x){if(!x||!x.word)return '';const m=mem(),k=String(x.word||'').trim().toLowerCase();return m[x.word]||m[k]||'';}
+  function isKnown(x){return statusOf(x)==='know';}
+  function isMarked(x){const s=statusOf(x);return s==='know'||s==='fuzzy'||s==='dont';}
+  function isMaster(){return document.getElementById('librarySelect')?.value==='master';}
   function currentItem(){try{return (typeof FILTER!=='undefined'&&Array.isArray(FILTER)&&FILTER.length)?FILTER[Math.max(0,Math.min(typeof idx==='number'?idx:0,FILTER.length-1))]:null;}catch(e){return null;}}
   function syncWeakness(item,v){
     if(!item||!item.word||!window.WeaknessPool)return;
@@ -57,7 +60,7 @@
 
   function renderEmpty(){
     const box=document.getElementById('vocabBox');
-    if(box)box.innerHTML='<div class="empty"><b>这一词库当前没有待学习词 ✓</b><div style="margin-top:8px">点过“会了”的词仍保留在总词汇和“已掌握”中。</div></div>';
+    if(box)box.innerHTML='<div class="empty"><b>这一词库当前没有待核对词 ✓</b><div style="margin-top:8px">已点过“会了 / 模糊 / 不会”的词不会在本轮再次出现。</div></div>';
   }
 
   function pruneKnown(force){
@@ -65,7 +68,7 @@
       if(typeof FILTER==='undefined'||typeof DB==='undefined'||!Array.isArray(DB))return;
       const status=(document.getElementById('dbStatus')?.textContent||'').trim();
       if(!force&&(/已掌握|全部词汇/.test(status)))return;
-      FILTER=(DB||[]).filter(x=>!isKnown(x));
+      FILTER=(DB||[]).filter(x=>isMaster()?!isMarked(x):!isKnown(x));
       if(typeof idx!=='undefined')idx=Math.max(0,Math.min(idx||0,Math.max(0,FILTER.length-1)));
       if(!FILTER.length){renderEmpty();return;}
       if(typeof renderVocab==='function')renderVocab();
@@ -82,10 +85,11 @@
       if(pending)return;
       pending=true;
       const item=currentItem();
+      const masterAtClick=isMaster();
       feedbackButton(v);
       setTimeout(function(){
         try{baseMark(v);syncWeakness(item,v);}finally{
-          if(v==='know')setTimeout(()=>pruneKnown(true),20);
+          if(masterAtClick||v==='know')setTimeout(()=>pruneKnown(true),20);
           pending=false;
         }
       },190);
