@@ -1,7 +1,7 @@
 (function(){
   if(window.__masterVocabIntegrationLoading)return;
   window.__masterVocabIntegrationLoading=true;
-  const KEY='master',LABEL='主学习词库';
+  const KEY='master',LABEL='主学习词库',BACKFILL_KEY='master_known_backfill_v1';
   function norm(w){return String(w||'').trim().toLowerCase();}
   function mem(){try{return JSON.parse(localStorage.getItem('indo_mem')||'{}')}catch(e){return {}}}
   function load(src,done){const s=document.createElement('script');s.src=src;s.onload=()=>done&&done();s.onerror=()=>console.warn('master vocab load failed',src);document.body.appendChild(s);}
@@ -58,13 +58,27 @@
     if(localStorage.getItem('selected_vocab_library')===KEY&&select.value!==KEY)setMaster();
     return true;
   }
+  function backfillKnownOnce(p){
+    if(!p||typeof p.markMastered!=='function')return;
+    if(localStorage.getItem(BACKFILL_KEY)==='done')return;
+    const m=mem();let n=0;
+    Object.keys(m).forEach(function(word){
+      if(m[word]!=='know')return;
+      try{p.markMastered(word,'master_known_backfill');n++;}catch(e){}
+    });
+    localStorage.setItem(BACKFILL_KEY,'done');
+    if(n&&window.WeaknessSync&&typeof window.WeaknessSync.syncNow==='function'){
+      setTimeout(function(){window.WeaknessSync.syncNow();},1200);
+    }
+  }
   function patchKnownBridge(tries){
     const p=window.WeaknessPool;
     if(p&&typeof p.markMastered==='function'){
       if(!p.__masterKnownBridge){p.__masterKnownBridge=true;p.markKnown=function(word,reason){return p.markMastered(word,reason||'vocab_known');};}
+      backfillKnownOnce(p);
       return;
     }
-    if((tries||0)<40)setTimeout(()=>patchKnownBridge((tries||0)+1),100);
+    if((tries||0)<80)setTimeout(()=>patchKnownBridge((tries||0)+1),100);
   }
   function install(){
     let tries=0;const timer=setInterval(function(){if(ensureOption()||++tries>50)clearInterval(timer);},100);
@@ -75,7 +89,7 @@
     window.addEventListener('pagehide',saveProgress);
     document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')saveProgress();});
     window.addEventListener('unknown-vocab-changed',()=>setTimeout(ensureOption,0));
-    window.addEventListener('weak-pool-changed',patchKnownBridge);
+    window.addEventListener('weak-pool-changed',function(){patchKnownBridge(0);});
     window.openMasterVocabulary=setMaster;
   }
   window.MASTER_VOCAB_DB=[];
