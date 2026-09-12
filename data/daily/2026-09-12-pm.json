@@ -1,0 +1,221 @@
+{
+  "date": "2026-09-12",
+  "session": "pm",
+  "time": "19:00",
+  "level": "A2+ → B1",
+  "day": 22,
+  "title": "19:00｜复习 + 应用：意见不同时，先判断再决定",
+  "vocab": [
+    {
+      "word": "keputusan",
+      "display": "keputusan",
+      "audio_text": "keputusan",
+      "cn": "决定；决策",
+      "en": "decision",
+      "root": "putus",
+      "root_cn": "断开；结束；作出决定",
+      "formation": "ke- + putus + -an → keputusan；高频通用名词，常搭配 ambil keputusan / buat keputusan。",
+      "example": "Sebelum ambil keputusan, kita dengar pendapat semua orang dulu.",
+      "example_cn": "做决定之前，我们先听听所有人的意见。",
+      "usage_note": "真正新词；来自主学习词库。"
+    },
+    {
+      "word": "kesempatan",
+      "display": "kesempatan",
+      "audio_text": "kesempatan",
+      "cn": "机会；时机",
+      "en": "opportunity; chance",
+      "root": "sempat",
+      "root_cn": "有空；来得及；有机会",
+      "formation": "ke- + sempat + -an → kesempatan；非常高频，可说 ada kesempatan / kasih kesempatan。",
+      "example": "Kasih dia kesempatan buat jelasin maksudnya dulu.",
+      "example_cn": "先给他一个机会解释一下自己的意思。",
+      "usage_note": "真正新词；来自主学习词库。"
+    },
+    {
+      "word": "sikap",
+      "display": "sikap",
+      "audio_text": "sikap",
+      "cn": "态度；立场；举止",
+      "en": "attitude; stance",
+      "root": "sikap",
+      "root_cn": "态度；立场",
+      "formation": "基础高频名词；常说 sikapnya tenang / ambil sikap。",
+      "example": "Walaupun beda pendapat, sikap kita tetap harus tenang.",
+      "example_cn": "即使意见不同，我们的态度还是要冷静。",
+      "usage_note": "真正新词；来自主学习词库。"
+    },
+    {
+      "word": "kebetulan",
+      "display": "kebetulan",
+      "audio_text": "kebetulan",
+      "cn": "碰巧；正好",
+      "en": "coincidentally; by chance",
+      "root": "betul",
+      "root_cn": "对；正确",
+      "formation": "ke- + betul + -an → kebetulan；日常极常用。",
+      "example": "Kebetulan aku pernah menangani masalah yang mirip, jadi mungkin bisa bantu.",
+      "example_cn": "正好我以前处理过类似的问题，所以也许能帮上忙。",
+      "usage_note": "active 弱项；近期 quick_wrong，今晚重新主动调用。"
+    },
+    {
+      "word": "menentukan",
+      "display": "menentukan",
+      "audio_text": "menentukan",
+      "cn": "确定；决定",
+      "en": "determine; decide; set",
+      "root": "tentu",
+      "root_cn": "确定；一定",
+      "formation": "meN- + tentu + -kan → menentukan；可用于时间、方案、标准等。",
+      "example": "Kita belum bisa menentukan jadwal final sebelum semua orang konfirmasi.",
+      "example_cn": "所有人确认之前，我们还不能确定最终时间。",
+      "usage_note": "active 弱项；曾多次答错，距上次重点复习已过冷却期。"
+    },
+    {
+      "word": "cadangan",
+      "display": "cadangan",
+      "audio_text": "cadangan",
+      "cn": "备用；储备；后备方案",
+      "en": "backup; reserve",
+      "root": "cadang",
+      "root_cn": "预留；准备备用",
+      "formation": "cadang + -an → cadangan；常见搭配 rencana cadangan / dana cadangan。",
+      "example": "Kalau rencana utama nggak jalan, kita masih punya rencana cadangan.",
+      "example_cn": "如果主要方案行不通，我们还有备用方案。",
+      "usage_note": "active 弱项；memory_fuzzy + quick_wrong。"
+    },
+    {
+      "word": "menangani",
+      "display": "menangani",
+      "audio_text": "menangani",
+      "cn": "处理；负责应对",
+      "en": "handle; deal with",
+      "root": "tangan",
+      "root_cn": "手",
+      "formation": "meN- + tangan + -i → menangani；高频工作表达。",
+      "example": "Kalau situasinya mulai panas, siapa yang paling cocok menangani pembicaraan ini?",
+      "example_cn": "如果气氛开始紧张，谁最适合来处理这次沟通？",
+      "usage_note": "active 弱项；quick_wrong，已过最近课程冷却期。"
+    },
+    {
+      "word": "salah paham",
+      "display": "salah paham",
+      "audio_text": "salah paham",
+      "cn": "误会；理解错",
+      "en": "misunderstanding; misunderstand",
+      "root": "paham",
+      "root_cn": "理解；明白",
+      "formation": "salah + paham；今天 08:00 旧词复现。",
+      "example": "Biar nggak salah paham, coba ulangi inti maksudmu dengan lebih singkat.",
+      "example_cn": "为了避免误会，试着更简短地再说一遍你的核心意思。"
+    },
+    {
+      "word": "canggung",
+      "display": "canggung",
+      "audio_text": "canggung",
+      "cn": "尴尬拘谨；相处不自然",
+      "en": "awkward; uneasy",
+      "root": "canggung",
+      "root_cn": "拘谨；不自然",
+      "formation": "今天 08:00 旧词复现。",
+      "example": "Setelah beda pendapat, suasananya sempat canggung tapi cepat normal lagi.",
+      "example_cn": "意见不一致以后，气氛一度有点尴尬，不过很快又正常了。"
+    },
+    {
+      "word": "ngotot",
+      "display": "ngotot",
+      "audio_text": "ngotot",
+      "cn": "强硬坚持；硬要",
+      "en": "insist strongly; be stubborn",
+      "root": "ngotot",
+      "root_cn": "强硬坚持；不肯让步",
+      "formation": "今天 08:00 旧词复现。",
+      "example": "Kalau belum ada bukti yang jelas, jangan ngotot mempertahankan satu pilihan.",
+      "example_cn": "如果还没有明确证据，就别强硬地死守一个选择。"
+    },
+    {
+      "word": "nyindir",
+      "display": "nyindir",
+      "audio_text": "nyindir",
+      "cn": "暗讽；含沙射影地说",
+      "en": "make an indirect jab; speak sarcastically",
+      "root": "sindir",
+      "root_cn": "讽刺；暗指",
+      "formation": "menyindir → nyindir；今天 08:00 旧词复现。",
+      "example": "Kalau ada masalah, bilang langsung aja daripada nyindir di grup.",
+      "example_cn": "如果有问题就直接说，比在群里暗讽更好。"
+    }
+  ],
+  "rewrite": [
+    {
+      "task": "中文→印尼语：做决定前，先给他机会解释。",
+      "reference_answer": "Sebelum ambil keputusan, kasih dia kesempatan buat jelasin dulu.",
+      "reference_cn": "做决定前，先给他机会解释。"
+    },
+    {
+      "task": "情境表达：你们还不能确定最终时间，因为还有两个人没确认。",
+      "reference_answer": "Kita belum bisa menentukan jadwal final karena masih ada dua orang yang belum konfirmasi.",
+      "reference_cn": "我们还不能确定最终时间，因为还有两个人没确认。"
+    },
+    {
+      "task": "中文→印尼语：如果主要方案不行，我们还有备用方案。",
+      "reference_answer": "Kalau rencana utama nggak jalan, kita masih punya rencana cadangan.",
+      "reference_cn": "如果主要方案不行，我们还有备用方案。"
+    },
+    {
+      "task": "把这句话说得更自然：Walaupun kami berbeda pendapat, kami tidak perlu bersikap agresif.",
+      "reference_answer": "Walaupun beda pendapat, sikap kita tetap harus tenang, nggak perlu ngotot.",
+      "reference_cn": "即使意见不同，我们的态度还是要冷静，没必要强硬坚持。"
+    }
+  ],
+  "reading": {
+    "title": "Beda Pendapat, Tapi Tetap Bisa Ambil Keputusan",
+    "text": "Sore ini timku belum sepakat soal satu rencana. Satu orang agak ngotot, sementara yang lain merasa komentarnya seperti nyindir. Suasana sempat canggung karena ada salah paham. Kebetulan aku pernah menangani situasi mirip, jadi aku minta semua orang jelasin alasan masing-masing dulu. Kami belum langsung menentukan pilihan. Aku bilang lebih baik kasih semua orang kesempatan bicara, lalu baru ambil keputusan. Setelah datanya dibandingkan, satu pilihan memang lebih masuk akal. Kami juga menyiapkan rencana cadangan kalau hasilnya tidak sesuai harapan. Akhirnya diskusi selesai tanpa ribut, dan sikap semua orang jauh lebih tenang.",
+    "cn": "今天下午团队对一个方案还没达成一致。有个人比较强硬，另一个人觉得对方的话像是在暗讽自己。因为有误会，气氛一度有点尴尬。正好我以前处理过类似情况，所以我让大家先分别解释自己的理由。我们没有马上确定选项。我说最好先给每个人说话的机会，然后再做决定。比较完数据后，其中一个选项确实更合理。我们也准备了备用方案，以防结果不符合预期。最后讨论没有吵起来就结束了，大家的态度也平静多了。",
+    "vocab": ["ngotot", "nyindir", "canggung", "salah paham", "kebetulan", "menangani", "menentukan", "kesempatan", "keputusan", "cadangan", "sikap"],
+    "questions": [
+      {
+        "task": "为什么团队没有马上做决定？",
+        "reference_answer": "Karena mereka mau kasih semua orang kesempatan menjelaskan alasan dan membandingkan datanya dulu.",
+        "reference_cn": "因为他们想先给所有人解释理由的机会，并先比较数据。"
+      },
+      {
+        "task": "他们为什么准备 rencana cadangan？",
+        "reference_answer": "Supaya tetap punya pilihan kalau rencana utama hasilnya tidak sesuai harapan.",
+        "reference_cn": "这样如果主要方案结果不符合预期，他们仍然有另一个选择。"
+      }
+    ]
+  },
+  "dialogue": {
+    "title": "办公室口语｜意见不一致时先把话说清楚",
+    "lines": [
+      {"speaker":"A","id":"Kayaknya kita beda pendapat cukup jauh nih.","cn":"感觉我们意见差得有点远。"},
+      {"speaker":"B","id":"Iya, tapi jangan langsung ngotot dulu. Kasih dia kesempatan jelasin.","cn":"是，不过先别马上硬顶。给他机会解释一下。"},
+      {"speaker":"A","id":"Takutnya tadi ada salah paham. Suasananya juga sempat canggung.","cn":"我担心刚才有误会，而且气氛也一度有点尴尬。"},
+      {"speaker":"B","id":"Kebetulan aku pernah menangani kasus mirip. Kita cek datanya dulu aja.","cn":"正好我以前处理过类似情况。我们先看看数据吧。"},
+      {"speaker":"A","id":"Oke. Habis itu baru kita menentukan pilihan dan ambil keputusan.","cn":"好。之后我们再确定选项并做决定。"},
+      {"speaker":"B","id":"Setuju. Kalau perlu, siapin rencana cadangan juga.","cn":"同意。如果需要，也准备一个备用方案。"}
+    ]
+  },
+  "daily_test": {
+    "title": "当日小测 · 5–8分钟",
+    "items": [
+      {"type":"choice","prompt":"‘做决定’最自然的固定搭配是：","options":["ambil keputusan","ambil kesempatan","ambil sikapnya"],"answer_index":0,"explain":"ambil keputusan = 作出决定，是非常常见的搭配。"},
+      {"type":"choice","prompt":"‘备用方案’是：","options":["rencana cadangan","rencana kebetulan","rencana canggung"],"answer_index":0,"explain":"cadangan 表示备用、储备，因此 rencana cadangan = 备用方案。"},
+      {"type":"choice","prompt":"‘给他一个机会解释’最自然的是：","options":["Kasih dia kesempatan buat jelasin.","Kasih dia keputusan buat jelasin.","Kasih dia sikap buat jelasin."],"answer_index":0,"explain":"kesempatan = 机会；kasih kesempatan = 给机会。"},
+      {"type":"fill","prompt":"Kita belum bisa ___ jadwal final sebelum semua orang konfirmasi.","answer":"menentukan","answer_cn":"所有人确认前，我们还不能确定最终时间。"},
+      {"type":"fill","prompt":"___ aku pernah menangani masalah yang mirip, jadi aku bisa bantu.","answer":"Kebetulan","answer_cn":"正好我以前处理过类似的问题，所以我可以帮忙。"},
+      {"type":"order","prompt":"排序成自然句子：‘做决定前，先给大家机会说话。’","tokens":["sebelum","ambil","keputusan","kasih","semua orang","kesempatan","bicara","dulu"],"answer":"Sebelum ambil keputusan, kasih semua orang kesempatan bicara dulu.","answer_cn":"做决定前，先给大家机会说话。"}
+    ],
+    "self_check": {
+      "prompt": "今天这些内容你感觉怎么样？",
+      "options": ["大部分能快速认出", "一半左右需要想一下", "很多还会卡"]
+    }
+  },
+  "review": [
+    "真正新词：keputusan、kesempatan、sikap；都属于高频通用表达，不是冷门口语变体。",
+    "弱项复习：kebetulan、menentukan、cadangan、menangani；重点做主动调用，不当作新词。",
+    "08:00 复现：salah paham、canggung、ngotot、nyindir；练习在真实分歧场景里区分和组合。",
+    "5分钟复盘：不看中文，口头说出 ambil keputusan、kasih kesempatan、menentukan jadwal、rencana cadangan，并各造一句。"
+  ]
+}
