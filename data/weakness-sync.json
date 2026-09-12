@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T16:32:33.337Z",
+  "updated_at": "2026-09-12T16:50:25.222Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -332,12 +332,13 @@
     "utang": {
       "word": "utang",
       "status": "active",
-      "updated_at": "2026-09-11T14:40:15.508Z",
+      "updated_at": "2026-09-12T16:50:15.060Z",
       "display": "utang",
       "cn": "债；欠款；欠的钱",
       "root": "utang",
       "reasons": [
-        "quick_wrong"
+        "quick_wrong",
+        "memory_fuzzy"
       ],
       "wrong_count": 1,
       "right_streak": 1
@@ -18089,6 +18090,89 @@
       "display": "belok",
       "last_review": "2026-09-12T16:30:11.811Z",
       "last_mastered": "2026-09-12T16:30:11.811Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "nyasar": {
+      "word": "nyasar",
+      "status": "active",
+      "updated_at": "2026-09-12T16:34:09.832Z",
+      "display": "nyasar",
+      "cn": "迷路；走错路",
+      "root": "sasar",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "putar balik": {
+      "word": "putar balik",
+      "status": "active",
+      "updated_at": "2026-09-12T16:48:16.211Z",
+      "display": "putar balik",
+      "cn": "掉头；调头",
+      "root": "putar + balik",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bom": {
+      "word": "bom",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:49:28.109Z",
+      "display": "bom",
+      "last_review": "2026-09-12T16:49:28.095Z",
+      "last_mastered": "2026-09-12T16:49:28.095Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "tunai": {
+      "word": "tunai",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:49:46.798Z",
+      "display": "tunai",
+      "cn": "现金；现金支付",
+      "root": "tunai",
+      "last_review": "2026-09-12T16:49:46.782Z",
+      "last_mastered": "2026-09-12T16:49:46.782Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kembalian": {
+      "word": "kembalian",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:50:01.528Z",
+      "display": "kembalian",
+      "last_review": "2026-09-12T16:50:01.517Z",
+      "last_mastered": "2026-09-12T16:50:01.517Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "transfer": {
+      "word": "transfer",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:50:05.772Z",
+      "display": "transfer",
+      "last_review": "2026-09-12T16:50:05.759Z",
+      "last_mastered": "2026-09-12T16:50:05.759Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "saldo": {
+      "word": "saldo",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:50:08.125Z",
+      "display": "saldo",
+      "last_review": "2026-09-12T16:50:08.113Z",
+      "last_mastered": "2026-09-12T16:50:08.113Z",
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
