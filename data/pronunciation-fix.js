@@ -88,15 +88,21 @@
           'https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=id&q='+encodeURIComponent(text),
           'https://translate.googleusercontent.com/translate_tts?ie=UTF-8&client=tw-ob&tl=id&q='+encodeURIComponent(text)
         ];
-        let i=0,settled=false;
-        const done=function(ok,err){if(settled)return;settled=true;clearTimeout(timer);ok?resolve(true):reject(err||new Error('online failed'))};
-        const timer=setTimeout(()=>done(false,new Error('online timeout')),7000);
+        let i=0,settled=false,startTimer=null,endTimer=null;
+        const clearTimers=()=>{clearTimeout(startTimer);clearTimeout(endTimer)};
+        const done=function(ok,err){if(settled)return;settled=true;clearTimers();ok?resolve(true):reject(err||new Error('online failed'))};
         const tryNext=()=>{
           if(settled)return;
+          clearTimeout(startTimer);
           if(i>=candidates.length)return done(false,new Error('online failed'));
           const a=new Audio();activeAudio=a;a.preload='auto';a.src=candidates[i++];
           let started=false;
-          a.onplaying=()=>{started=true;if(!waitEnd)done(true)};
+          startTimer=setTimeout(()=>{if(!started){try{a.pause()}catch(e){};tryNext()}},5500);
+          a.onplaying=()=>{
+            started=true;clearTimeout(startTimer);
+            if(!waitEnd)done(true);
+            else endTimer=setTimeout(()=>done(false,new Error('online end timeout')),26000);
+          };
           a.onended=()=>done(true);
           a.onerror=()=>{if(!started)tryNext();else done(false,new Error('online interrupted'))};
           const p=a.play();if(p&&p.catch)p.catch(()=>{if(!started)tryNext();else done(false,new Error('play blocked'))});
