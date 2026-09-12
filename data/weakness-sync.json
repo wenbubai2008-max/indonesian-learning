@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T14:25:46.191Z",
+  "updated_at": "2026-09-12T14:34:59.545Z",
   "words": {
     "tunda": {
       "word": "tunda",
       "status": "active",
       "updated_at": "2026-09-11T14:40:15.505Z",
       "display": "tunda",
-      "cn": "暂无释义",
+      "cn": "推迟",
       "source": "每日学习阅读",
       "source_date": "2026-09-02",
       "session": "08:00",
@@ -1733,10 +1733,12 @@
     "beliau": {
       "word": "beliau",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-12T14:34:48.028Z",
       "display": "beliau",
+      "cn": "他/她（尊称）",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "memory_fuzzy"
       ],
       "wrong_count": 0,
       "right_streak": 0
@@ -13665,6 +13667,39 @@
       ],
       "wrong_count": 0,
       "right_streak": 0
+    },
+    "kekurangan": {
+      "word": "kekurangan",
+      "status": "active",
+      "updated_at": "2026-09-12T14:26:28.097Z",
+      "display": "kekurangan",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "maling": {
+      "word": "maling",
+      "status": "active",
+      "updated_at": "2026-09-12T14:26:28.097Z",
+      "display": "maling",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "penjualan": {
+      "word": "penjualan",
+      "status": "mastered",
+      "updated_at": "2026-09-12T14:34:36.265Z",
+      "display": "penjualan",
+      "last_review": "2026-09-12T14:34:36.256Z",
+      "last_mastered": "2026-09-12T14:34:36.256Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
     }
   }
 }
