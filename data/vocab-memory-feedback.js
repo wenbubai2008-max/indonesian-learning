@@ -1,131 +1,24 @@
 (function(){
   const MEM_KEY='indo_mem';
   let installed=false,pending=false;
-
   function mem(){try{return JSON.parse(localStorage.getItem(MEM_KEY)||'{}')}catch(e){return {}}}
   function statusOf(x){if(!x||!x.word)return '';const m=mem(),k=String(x.word||'').trim().toLowerCase();return m[x.word]||m[k]||'';}
   function isKnown(x){return statusOf(x)==='know';}
-  function isMarked(x){const s=statusOf(x);return s==='know'||s==='fuzzy'||s==='dont';}
   function isMaster(){return document.getElementById('librarySelect')?.value==='master';}
   function currentItem(){try{return (typeof FILTER!=='undefined'&&Array.isArray(FILTER)&&FILTER.length)?FILTER[Math.max(0,Math.min(typeof idx==='number'?idx:0,FILTER.length-1))]:null;}catch(e){return null;}}
-  function syncWeakness(item,v){
-    if(!item||!item.word||!window.WeaknessPool)return;
-    if(v==='know'){
-      if(typeof window.WeaknessPool.markMastered==='function')window.WeaknessPool.markMastered(item.word,'vocab_known');
-      else if(typeof window.WeaknessPool.markKnown==='function')window.WeaknessPool.markKnown(item.word,'vocab_known');
-    }
-    else if(v==='fuzzy')window.WeaknessPool.markWeak(item.word,item,'memory_fuzzy');
-    else if(v==='dont')window.WeaknessPool.markWeak(item.word,item,'memory_dont');
-  }
-
-  function addStyle(){
-    if(document.getElementById('vocabMemoryFeedbackStyle'))return;
-    const s=document.createElement('style');
-    s.id='vocabMemoryFeedbackStyle';
-    s.textContent=`
-      @keyframes memFlashKnow{0%{background:#fff}45%{background:#dff6e7;border-color:#63b879;color:#166534}100%{background:#fff}}
-      @keyframes memFlashFuzzy{0%{background:#fff}45%{background:#fff2cc;border-color:#d6a63d;color:#8a5a00}100%{background:#fff}}
-      @keyframes memFlashDont{0%{background:#fff}45%{background:#ffe1de;border-color:#d87870;color:#a52b22}100%{background:#fff}}
-      .memory button.mem-flash-know{animation:memFlashKnow .18s ease}
-      .memory button.mem-flash-fuzzy{animation:memFlashFuzzy .18s ease}
-      .memory button.mem-flash-dont{animation:memFlashDont .18s ease}
-      #vocab>#statsBar{margin:0 0 16px!important}
-    `;
-    document.head.appendChild(s);
-  }
-
-  function moveStatsIntoVocab(){
-    const stats=document.getElementById('statsBar');
-    const page=document.getElementById('vocab');
-    if(!stats||!page)return;
-    if(stats.parentElement!==page){
-      const card=page.querySelector(':scope > .card');
-      if(card)page.insertBefore(stats,card);
-      else page.appendChild(stats);
-    }
-    if(page.classList.contains('active'))stats.style.display='grid';
-  }
-
-  function feedbackButton(v){
-    const buttons=[...document.querySelectorAll('#vocabBox .memory button')];
-    const label=v==='know'?'会了':v==='fuzzy'?'模糊':'不会';
-    const btn=buttons.find(b=>(b.textContent||'').trim().includes(label));
-    if(!btn)return;
-    const cls=v==='know'?'mem-flash-know':v==='fuzzy'?'mem-flash-fuzzy':'mem-flash-dont';
-    btn.classList.remove('mem-flash-know','mem-flash-fuzzy','mem-flash-dont');
-    void btn.offsetWidth;
-    btn.classList.add(cls);
-  }
-
-  function renderEmpty(){
-    const box=document.getElementById('vocabBox');
-    if(box)box.innerHTML='<div class="empty"><b>这一词库当前没有待核对词 ✓</b><div style="margin-top:8px">已点过“会了 / 模糊 / 不会”的词不会在本轮再次出现。</div></div>';
-  }
-
-  function pruneKnown(force){
-    try{
-      if(typeof FILTER==='undefined'||typeof DB==='undefined'||!Array.isArray(DB))return;
-      const status=(document.getElementById('dbStatus')?.textContent||'').trim();
-      if(!force&&(/已掌握|全部词汇/.test(status)))return;
-      FILTER=(DB||[]).filter(x=>isMaster()?!isMarked(x):!isKnown(x));
-      if(typeof idx!=='undefined')idx=Math.max(0,Math.min(idx||0,Math.max(0,FILTER.length-1)));
-      if(!FILTER.length){renderEmpty();return;}
-      if(typeof renderVocab==='function')renderVocab();
-    }catch(e){console.warn('pruneKnown failed',e)}
-  }
-
-  function markMasterDirect(v,item){
-    const m=mem();
-    m[item.word]=v;
-    localStorage.setItem(MEM_KEY,JSON.stringify(m));
-    syncWeakness(item,v);
-    if(typeof window.refreshMasterVocabulary==='function')window.refreshMasterVocabulary();
-    else pruneKnown(true);
-    try{if(typeof updateStats==='function')updateStats();}catch(e){}
-    try{if(typeof renderReview==='function')renderReview();}catch(e){}
-  }
-
+  function syncWeakness(item,v){if(!item||!item.word||!window.WeaknessPool)return;if(v==='know'){if(typeof window.WeaknessPool.markMastered==='function')window.WeaknessPool.markMastered(item.word,'vocab_known');else if(typeof window.WeaknessPool.markKnown==='function')window.WeaknessPool.markKnown(item.word,'vocab_known');}else if(v==='fuzzy'&&typeof window.WeaknessPool.markWeak==='function')window.WeaknessPool.markWeak(item.word,item,'memory_fuzzy');else if(v==='dont'&&typeof window.WeaknessPool.markWeak==='function')window.WeaknessPool.markWeak(item.word,item,'memory_dont');}
+  function addStyle(){if(document.getElementById('vocabMemoryFeedbackStyle'))return;const s=document.createElement('style');s.id='vocabMemoryFeedbackStyle';s.textContent=`@keyframes memFlashKnow{0%{background:#fff}45%{background:#dff6e7;border-color:#63b879;color:#166534}100%{background:#fff}}@keyframes memFlashFuzzy{0%{background:#fff}45%{background:#fff2cc;border-color:#d6a63d;color:#8a5a00}100%{background:#fff}}@keyframes memFlashDont{0%{background:#fff}45%{background:#ffe1de;border-color:#d87870;color:#a52b22}100%{background:#fff}}.memory button.mem-flash-know{animation:memFlashKnow .18s ease}.memory button.mem-flash-fuzzy{animation:memFlashFuzzy .18s ease}.memory button.mem-flash-dont{animation:memFlashDont .18s ease}#vocab>#statsBar{margin:0 0 16px!important}`;document.head.appendChild(s);}
+  function moveStatsIntoVocab(){const stats=document.getElementById('statsBar'),page=document.getElementById('vocab');if(!stats||!page)return;if(stats.parentElement!==page){const card=page.querySelector(':scope > .card');if(card)page.insertBefore(stats,card);else page.appendChild(stats);}if(page.classList.contains('active'))stats.style.display='grid';}
+  function feedbackButton(v){const buttons=[...document.querySelectorAll('#vocabBox .memory button')],label=v==='know'?'会了':v==='fuzzy'?'模糊':'不会',btn=buttons.find(b=>(b.textContent||'').trim().includes(label));if(!btn)return;const cls=v==='know'?'mem-flash-know':v==='fuzzy'?'mem-flash-fuzzy':'mem-flash-dont';btn.classList.remove('mem-flash-know','mem-flash-fuzzy','mem-flash-dont');void btn.offsetWidth;btn.classList.add(cls);}
+  function pruneKnown(){try{if(isMaster()){if(typeof window.refreshMasterVocabulary==='function')window.refreshMasterVocabulary();return;}if(typeof FILTER==='undefined'||typeof DB==='undefined'||!Array.isArray(DB))return;FILTER=(DB||[]).filter(x=>!isKnown(x));if(typeof idx!=='undefined')idx=Math.max(0,Math.min(idx||0,Math.max(0,FILTER.length-1)));if(typeof renderVocab==='function')renderVocab();}catch(e){console.warn('pruneKnown failed',e)}}
+  function markMasterDirect(v,item){const m=mem();m[item.word]=v;m[String(item.word||'').trim().toLowerCase()]=v;localStorage.setItem(MEM_KEY,JSON.stringify(m));syncWeakness(item,v);if(typeof window.refreshMasterVocabulary==='function')window.refreshMasterVocabulary();try{if(typeof updateStats==='function')updateStats();}catch(e){}try{if(typeof renderReview==='function')renderReview();}catch(e){}}
   function install(){
-    if(installed)return;
-    if(typeof window.mark!=='function'||typeof window.go!=='function'){setTimeout(install,120);return;}
-    installed=true;addStyle();moveStatsIntoVocab();
-
-    const baseMark=window.mark;
-    const wrappedMark=function(v){
-      if(pending)return;
-      const item=currentItem();if(!item)return;
-      pending=true;
-      const masterAtClick=isMaster();
-      feedbackButton(v);
-      setTimeout(function(){
-        try{
-          if(masterAtClick)markMasterDirect(v,item);
-          else{baseMark(v);syncWeakness(item,v);if(v==='know')setTimeout(()=>pruneKnown(true),20);}
-        }finally{pending=false;}
-      },120);
-    };
-    window.mark=wrappedMark;
-    try{mark=wrappedMark}catch(e){}
-
-    const baseGo=window.go;
-    window.go=function(id){
-      const fromHome=!!document.getElementById('home')?.classList.contains('active');
-      baseGo(id);
-      moveStatsIntoVocab();
-      if(id==='vocab'&&fromHome)setTimeout(()=>pruneKnown(true),30);
-    };
-    try{go=window.go}catch(e){}
-
-    const sel=document.getElementById('librarySelect');
-    if(sel)sel.addEventListener('change',()=>setTimeout(()=>pruneKnown(true),30));
-    document.querySelector('#vocab .toolbar')?.addEventListener('click',function(e){
-      const t=e.target;if(t&&t.tagName==='BUTTON'&&(t.textContent||'').includes('重新加载'))setTimeout(()=>pruneKnown(true),80);
-    });
-
+    if(installed)return;if(typeof window.mark!=='function'||typeof window.go!=='function'){setTimeout(install,120);return;}installed=true;addStyle();moveStatsIntoVocab();
+    const baseMark=window.mark;const wrappedMark=function(v){if(pending)return;const item=currentItem();if(!item)return;pending=true;const masterAtClick=isMaster();feedbackButton(v);setTimeout(function(){try{if(masterAtClick)markMasterDirect(v,item);else{baseMark(v);syncWeakness(item,v);if(v==='know')setTimeout(pruneKnown,20);}}finally{pending=false;}},120);};window.mark=wrappedMark;try{mark=wrappedMark}catch(e){}
+    const baseGo=window.go;window.go=function(id){baseGo(id);moveStatsIntoVocab();if(id==='vocab')setTimeout(function(){if(isMaster()&&typeof window.refreshMasterVocabulary==='function')window.refreshMasterVocabulary();else pruneKnown();},60);};try{go=window.go}catch(e){}
+    const sel=document.getElementById('librarySelect');if(sel)sel.addEventListener('change',function(){setTimeout(function(){if(isMaster()&&typeof window.refreshMasterVocabulary==='function')window.refreshMasterVocabulary();else pruneKnown();},60);});
+    document.querySelector('#vocab .toolbar')?.addEventListener('click',function(e){const t=e.target;if(t&&t.tagName==='BUTTON'&&(t.textContent||'').includes('重新加载'))setTimeout(function(){if(isMaster()&&typeof window.refreshMasterVocabulary==='function')window.refreshMasterVocabulary();else pruneKnown();},100);});
     setTimeout(moveStatsIntoVocab,180);
-    if(document.getElementById('vocab')?.classList.contains('active'))pruneKnown(true);
   }
-
-  if(document.readyState==='complete')setTimeout(install,120);
-  else window.addEventListener('load',()=>setTimeout(install,120),{once:true});
+  if(document.readyState==='complete')setTimeout(install,120);else window.addEventListener('load',()=>setTimeout(install,120),{once:true});
 })();
