@@ -3,6 +3,9 @@
   function cleanup(){const old=document.getElementById('unfamiliarDailyReview');if(old)old.remove();}
   cleanup();const body=document.getElementById('dailyBody');if(body)new MutationObserver(cleanup).observe(body,{childList:true,subtree:true});
 
+  // 主学习词库独立加载：用于人工核对“会了 / 模糊 / 不会”，并把“会了”反馈给后续每日出词。
+  if(!window.__masterVocabIntegrationRequested){window.__masterVocabIntegrationRequested=true;const m=document.createElement('script');m.src='data/master-vocab-integration.js?v=20260912-1';document.body.appendChild(m);}
+
   // 统一弱项池：阅读陌生词、快速练习错题、模糊/不会、专项强化共用同一状态。
   // 同步采用事件触发：本地立即保存，停止操作约10秒后后台发送；没有变化时不会轮询，也不会刷新页面。
   if(window.__homeLearningUpgradeLoading)return;window.__homeLearningUpgradeLoading=true;
