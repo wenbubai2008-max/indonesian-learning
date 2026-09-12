@@ -60,3 +60,10 @@
   }
   if(document.readyState==='complete')setTimeout(install,120);else window.addEventListener('load',()=>setTimeout(install,120),{once:true});
 })();
+(function(){
+  if(document.querySelector('script[data-master-top1000-weak-merge]'))return;
+  const s=document.createElement('script');
+  s.src='data/master-top1000-weak-merge.js?v=20260912-1';
+  s.dataset.masterTop1000WeakMerge='1';
+  document.head.appendChild(s);
+})();
