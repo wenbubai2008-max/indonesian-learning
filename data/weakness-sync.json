@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T15:20:20.804Z",
+  "updated_at": "2026-09-12T15:25:03.498Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -17480,6 +17480,390 @@
       "updated_at": "2026-09-12T15:20:10.395Z",
       "display": "kabel",
       "cn": "电线",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "perak": {
+      "word": "perak",
+      "status": "active",
+      "updated_at": "2026-09-12T15:20:46.064Z",
+      "display": "perak",
+      "cn": "银",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bergantung": {
+      "word": "bergantung",
+      "status": "active",
+      "updated_at": "2026-09-12T15:20:50.975Z",
+      "display": "bergantung",
+      "cn": "依赖",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "sesudah": {
+      "word": "sesudah",
+      "status": "active",
+      "updated_at": "2026-09-12T15:20:56.133Z",
+      "display": "sesudah",
+      "cn": "在……之后",
+      "root": "sudah",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pistol": {
+      "word": "pistol",
+      "status": "active",
+      "updated_at": "2026-09-12T15:21:00.690Z",
+      "display": "pistol",
+      "cn": "手枪",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "terikat": {
+      "word": "terikat",
+      "status": "active",
+      "updated_at": "2026-09-12T15:21:07.628Z",
+      "display": "terikat",
+      "cn": "被绑住",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "merekam": {
+      "word": "merekam",
+      "status": "active",
+      "updated_at": "2026-09-12T15:21:17.044Z",
+      "display": "merekam",
+      "cn": "录音 / 录像",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "aura": {
+      "word": "aura",
+      "status": "active",
+      "updated_at": "2026-09-12T15:21:32.565Z",
+      "display": "aura",
+      "cn": "气场，光环",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "telanjang": {
+      "word": "telanjang",
+      "status": "active",
+      "updated_at": "2026-09-12T15:21:38.876Z",
+      "display": "telanjang",
+      "cn": "裸体",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "properti": {
+      "word": "properti",
+      "status": "active",
+      "updated_at": "2026-09-12T15:21:47.617Z",
+      "display": "properti",
+      "cn": "财产",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "santet": {
+      "word": "santet",
+      "status": "active",
+      "updated_at": "2026-09-12T15:21:52.534Z",
+      "display": "santet",
+      "cn": "巫术",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "malaikat": {
+      "word": "malaikat",
+      "status": "active",
+      "updated_at": "2026-09-12T15:22:00.973Z",
+      "display": "malaikat",
+      "cn": "天使",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kehormatan": {
+      "word": "kehormatan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:22:09.877Z",
+      "display": "kehormatan",
+      "cn": "荣誉",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "tombol": {
+      "word": "tombol",
+      "status": "active",
+      "updated_at": "2026-09-12T15:22:14.335Z",
+      "display": "tombol",
+      "cn": "按钮",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "sehabis": {
+      "word": "sehabis",
+      "status": "active",
+      "updated_at": "2026-09-12T15:22:17.864Z",
+      "display": "sehabis",
+      "cn": "之后",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "alur": {
+      "word": "alur",
+      "status": "active",
+      "updated_at": "2026-09-12T15:22:21.143Z",
+      "display": "alur",
+      "cn": "线索、脉络",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "skala": {
+      "word": "skala",
+      "status": "active",
+      "updated_at": "2026-09-12T15:22:24.976Z",
+      "display": "skala",
+      "cn": "比例、等级、规模",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pasokan": {
+      "word": "pasokan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:23:22.021Z",
+      "display": "pasokan",
+      "cn": "供应",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "teratur": {
+      "word": "teratur",
+      "status": "active",
+      "updated_at": "2026-09-12T15:23:26.106Z",
+      "display": "teratur",
+      "cn": "有条理",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "dorong": {
+      "word": "dorong",
+      "status": "active",
+      "updated_at": "2026-09-12T15:23:32.497Z",
+      "display": "dorong",
+      "cn": "推动",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "seekor": {
+      "word": "seekor",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:23:36.194Z",
+      "display": "seekor",
+      "last_review": "2026-09-12T15:23:36.181Z",
+      "last_mastered": "2026-09-12T15:23:36.181Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "gembira": {
+      "word": "gembira",
+      "status": "active",
+      "updated_at": "2026-09-12T15:23:42.539Z",
+      "display": "gembira",
+      "cn": "开心",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "dibersihkan": {
+      "word": "dibersihkan",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:23:53.113Z",
+      "display": "dibersihkan",
+      "last_review": "2026-09-12T15:23:53.100Z",
+      "last_mastered": "2026-09-12T15:23:53.100Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "awam": {
+      "word": "awam",
+      "status": "active",
+      "updated_at": "2026-09-12T15:23:57.605Z",
+      "display": "awam",
+      "cn": "普通的，外行的",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "budak": {
+      "word": "budak",
+      "status": "active",
+      "updated_at": "2026-09-12T15:24:00.969Z",
+      "display": "budak",
+      "cn": "奴隶",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pembantu": {
+      "word": "pembantu",
+      "status": "active",
+      "updated_at": "2026-09-12T15:24:05.366Z",
+      "display": "pembantu",
+      "cn": "助手",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kerumunan": {
+      "word": "kerumunan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:24:14.686Z",
+      "display": "kerumunan",
+      "cn": "人群、聚集",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "serangga": {
+      "word": "serangga",
+      "status": "active",
+      "updated_at": "2026-09-12T15:24:19.984Z",
+      "display": "serangga",
+      "cn": "昆虫",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pukulan": {
+      "word": "pukulan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:24:23.310Z",
+      "display": "pukulan",
+      "cn": "打击",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kebanggaan": {
+      "word": "kebanggaan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:24:28.494Z",
+      "display": "kebanggaan",
+      "cn": "自豪",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "gaib": {
+      "word": "gaib",
+      "status": "active",
+      "updated_at": "2026-09-12T15:24:37.688Z",
+      "display": "gaib",
+      "cn": "超自然、看不见的",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kuil": {
+      "word": "kuil",
+      "status": "active",
+      "updated_at": "2026-09-12T15:24:43.730Z",
+      "display": "kuil",
+      "cn": "庙宇",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kurir": {
+      "word": "kurir",
+      "status": "active",
+      "updated_at": "2026-09-12T15:24:52.889Z",
+      "display": "kurir",
+      "cn": "快递员",
+      "root": "kurir",
       "reasons": [
         "memory_fuzzy"
       ],
