@@ -35,6 +35,14 @@
     });
     return fresh.concat(weak);
   }
+  function updateMasterStatus(arr,m){
+    arr=arr||master();m=m||mem();
+    let known=0,review=0;
+    arr.forEach(function(x){const s=statusOf(m,x.word);if(s==='know')known++;else if(s==='fuzzy'||s==='dont')review++;});
+    const unchecked=Math.max(0,arr.length-known-review);
+    const st=document.getElementById('dbStatus');
+    if(st)st.textContent=LABEL+' · '+unchecked+' 未核对 · '+review+' 待复习 · '+known+' 已掌握 · '+arr.length+' 总词';
+  }
   function setMaster(){
     const arr=master(),m=mem();
     DB=arr;FILTER=orderedPending(arr,m);idx=restoreIndex(FILTER);rebuildCategories();
@@ -42,8 +50,7 @@
     const select=document.getElementById('librarySelect');if(select)select.value=KEY;
     const count=document.getElementById('vocabCount');if(count)count.textContent=arr.length;
     const tag=document.getElementById('vocabTag');if(tag)tag.textContent=LABEL+' '+arr.length+' 词';
-    const weakCount=arr.filter(x=>isWeak(m,x.word)).length;
-    const st=document.getElementById('dbStatus');if(st)st.textContent=LABEL+' · '+FILTER.length+' 待核对 / '+arr.length+' 总词'+(weakCount?' · '+weakCount+' 模糊/不会排末尾':'');
+    updateMasterStatus(arr,m);
     if(FILTER.length&&typeof renderVocab==='function'){renderVocab();saveProgress();}
     else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty"><b>主学习词库已全部核对 ✓</b><div style="margin-top:8px">点过“会了”的词仍保留在总词库，但不再占每日新词名额。</div></div>';}
     localStorage.setItem('selected_vocab_library',KEY);
@@ -80,6 +87,7 @@
     }
     if((tries||0)<80)setTimeout(()=>patchKnownBridge((tries||0)+1),100);
   }
+  function refreshStatusIfMaster(){const select=document.getElementById('librarySelect');if(select&&select.value===KEY)updateMasterStatus();}
   function install(){
     let tries=0;const timer=setInterval(function(){if(ensureOption()||++tries>50)clearInterval(timer);},100);
     patchKnownBridge(0);
@@ -88,8 +96,10 @@
     const back=document.querySelector('#vocab .back');if(back)back.addEventListener('click',saveProgress,true);
     window.addEventListener('pagehide',saveProgress);
     document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')saveProgress();});
-    window.addEventListener('unknown-vocab-changed',()=>setTimeout(ensureOption,0));
-    window.addEventListener('weak-pool-changed',function(){patchKnownBridge(0);});
+    document.addEventListener('click',function(e){if(e.target&&e.target.closest&&e.target.closest('#vocabBox .memory'))setTimeout(refreshStatusIfMaster,260);},true);
+    window.addEventListener('unknown-vocab-changed',function(){setTimeout(ensureOption,0);setTimeout(refreshStatusIfMaster,0);});
+    window.addEventListener('weak-pool-changed',function(){patchKnownBridge(0);setTimeout(refreshStatusIfMaster,0);});
+    window.addEventListener('storage',function(e){if(e.key==='indo_mem')setTimeout(refreshStatusIfMaster,0);});
     window.openMasterVocabulary=setMaster;
   }
   window.MASTER_VOCAB_DB=[];
