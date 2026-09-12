@@ -2,6 +2,7 @@
   const KEY='indo_weak_pool_v1';
   const LEGACY_UNKNOWN='indo_unknown_words';
   const LEGACY_DISMISSED='indo_weakness_dismissed';
+  const LEGACY_MEM='indo_mem';
 
   function norm(s){return String(s||'').trim().toLowerCase();}
   function parse(key){try{return JSON.parse(localStorage.getItem(key)||'{}')||{};}catch(e){return {};}}
@@ -76,6 +77,18 @@
       }
       if(!same(before,x))changed=true;
     });
+    // Backfill old "会了" clicks that were only stored in indo_mem.
+    // Only create a mastered record when the unified pool has no record yet,
+    // so an existing newer active/wrong state is never overwritten by stale legacy memory.
+    const memory=parse(LEGACY_MEM);
+    Object.keys(memory).forEach(function(k0){
+      if(memory[k0]!=='know')return;
+      const k=norm(k0);if(!k||pool[k])return;
+      const pair=ensureRecord(pool,k,{word:k}),x=pair[1];if(!x)return;
+      const n=nowISO();
+      x.status='mastered';x.last_mastered=n;x.last_review=n;x.right_streak=Math.max(3,x.right_streak||0);
+      x.mastered_reason='memory_know_backfill';archiveReasons(x);changed=true;
+    });
     if(changed)save(pool);return pool;
   }
 
@@ -105,7 +118,9 @@
     const n=nowISO();x.status='mastered';x.last_mastered=n;x.last_review=n;x.right_streak=Math.max(3,x.right_streak||0);x.mastered_reason=reason||'user_mastered';archiveReasons(x);removeLegacyUnknown(k);
     const d=parse(LEGACY_DISMISSED);d[k]={word:x.word,at:Date.now()};localStorage.setItem(LEGACY_DISMISSED,JSON.stringify(d));save(pool);window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));return x;
   }
-  function markKnown(word,reason){const x=get(word);if(!x)return null;return markMastered(word,reason||'known');}
+  // "会了" must always create/update a mastered record, even if this word has never
+  // appeared in the weak pool before. This is essential for master-vocab candidates.
+  function markKnown(word,reason){return markMastered(word,reason||'known');}
   function reactivate(word,reason){const x=get(word);return activate(word,x||{word:word},reason||'manual_reactivate');}
 
   function recordPractice(word,ok,item){
