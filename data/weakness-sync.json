@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T14:39:24.536Z",
+  "updated_at": "2026-09-12T14:45:06.188Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -13708,6 +13708,244 @@
       "updated_at": "2026-09-12T14:39:14.191Z",
       "display": "hak",
       "cn": "权利 / 法律",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "daku": {
+      "word": "daku",
+      "status": "active",
+      "updated_at": "2026-09-12T14:43:04.977Z",
+      "display": "daku",
+      "cn": "吾、我",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "jajan": {
+      "word": "jajan",
+      "status": "active",
+      "updated_at": "2026-09-12T14:43:11.009Z",
+      "display": "jajan",
+      "cn": "吃零食",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bendera": {
+      "word": "bendera",
+      "status": "active",
+      "updated_at": "2026-09-12T14:43:15.466Z",
+      "display": "bendera",
+      "cn": "旗帜",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pola": {
+      "word": "pola",
+      "status": "active",
+      "updated_at": "2026-09-12T14:43:19.482Z",
+      "display": "pola",
+      "cn": "模式",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "sebaliknya": {
+      "word": "sebaliknya",
+      "status": "active",
+      "updated_at": "2026-09-12T14:43:31.034Z",
+      "display": "sebaliknya",
+      "cn": "相反",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "uji": {
+      "word": "uji",
+      "status": "mastered",
+      "updated_at": "2026-09-12T14:43:34.410Z",
+      "display": "uji",
+      "last_review": "2026-09-12T14:43:34.402Z",
+      "last_mastered": "2026-09-12T14:43:34.402Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "metode": {
+      "word": "metode",
+      "status": "active",
+      "updated_at": "2026-09-12T14:43:43.084Z",
+      "display": "metode",
+      "cn": "方法",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "strategi": {
+      "word": "strategi",
+      "status": "active",
+      "updated_at": "2026-09-12T14:43:50.133Z",
+      "display": "strategi",
+      "cn": "战略",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "tahanan": {
+      "word": "tahanan",
+      "status": "active",
+      "updated_at": "2026-09-12T14:43:54.123Z",
+      "display": "tahanan",
+      "cn": "囚犯",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mengisi": {
+      "word": "mengisi",
+      "status": "active",
+      "updated_at": "2026-09-12T14:44:00.419Z",
+      "display": "mengisi",
+      "cn": "填充",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kenangan": {
+      "word": "kenangan",
+      "status": "active",
+      "updated_at": "2026-09-12T14:44:05.737Z",
+      "display": "kenangan",
+      "cn": "回忆",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "roda": {
+      "word": "roda",
+      "status": "active",
+      "updated_at": "2026-09-12T14:44:09.661Z",
+      "display": "roda",
+      "cn": "轮子",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "artis": {
+      "word": "artis",
+      "status": "active",
+      "updated_at": "2026-09-12T14:44:14.297Z",
+      "display": "artis",
+      "cn": "艺人",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "dosa": {
+      "word": "dosa",
+      "status": "active",
+      "updated_at": "2026-09-12T14:44:17.694Z",
+      "display": "dosa",
+      "cn": "罪",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "horor": {
+      "word": "horor",
+      "status": "active",
+      "updated_at": "2026-09-12T14:44:28.439Z",
+      "display": "horor",
+      "cn": "恐怖",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "berdoa": {
+      "word": "berdoa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T14:44:32.066Z",
+      "display": "berdoa",
+      "last_review": "2026-09-12T14:44:32.055Z",
+      "last_mastered": "2026-09-12T14:44:32.055Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "gempa": {
+      "word": "gempa",
+      "status": "active",
+      "updated_at": "2026-09-12T14:44:36.573Z",
+      "display": "gempa",
+      "cn": "地震",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "akrab": {
+      "word": "akrab",
+      "status": "active",
+      "updated_at": "2026-09-12T14:44:43.986Z",
+      "display": "akrab",
+      "cn": "亲密的",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "komunitas": {
+      "word": "komunitas",
+      "status": "active",
+      "updated_at": "2026-09-12T14:44:49.712Z",
+      "display": "komunitas",
+      "cn": "社群",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pengetahuan": {
+      "word": "pengetahuan",
+      "status": "active",
+      "updated_at": "2026-09-12T14:44:55.839Z",
+      "display": "pengetahuan",
+      "cn": "知识",
       "reasons": [
         "memory_dont"
       ],
