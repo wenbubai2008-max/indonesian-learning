@@ -63,15 +63,6 @@
     else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty"><b>主学习词库已全部核对 ✓</b><div style="margin-top:8px">“会了 / 模糊 / 不会”只用于记录状态；点过的词都不会在本轮再次出现。</div></div>';}
     localStorage.setItem('selected_vocab_library',KEY);
   }
-  function removeCurrentAfterMark(word){
-    if(document.getElementById('librarySelect')?.value!==KEY)return;
-    const arr=master(),m=mem();
-    FILTER=uncheckedOnly(arr,m);idx=0;
-    if(FILTER.length)localStorage.setItem(PROGRESS_KEY,norm(FILTER[0].word));
-    updateMasterStatus(arr,m);
-    if(FILTER.length&&typeof renderVocab==='function')renderVocab();
-    else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty"><b>主学习词库已全部核对 ✓</b><div style="margin-top:8px">“会了 / 模糊 / 不会”只用于记录状态；点过的词都不会在本轮再次出现。</div></div>';}
-  }
   function ensureOption(){
     const select=document.getElementById('librarySelect');if(!select)return false;
     const n=master().length;if(!n)return false;
@@ -106,15 +97,10 @@
     const back=document.querySelector('#vocab .back');if(back)back.addEventListener('click',saveProgress,true);
     window.addEventListener('pagehide',saveProgress);
     document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')saveProgress();});
-    document.addEventListener('click',function(e){
-      const btn=e.target&&e.target.closest?e.target.closest('#vocabBox .memory button'):null;
-      if(!btn||document.getElementById('librarySelect')?.value!==KEY)return;
-      const x=typeof current==='function'?current():null,word=x&&x.word;if(!word)return;
-      setTimeout(function(){removeCurrentAfterMark(word);},360);
-    },true);
     window.addEventListener('unknown-vocab-changed',function(){setTimeout(ensureOption,0);});
     window.addEventListener('weak-pool-changed',function(){patchKnownBridge(0);});
     window.openMasterVocabulary=renderMaster;
+    window.refreshMasterVocabulary=renderMaster;
   }
   window.MASTER_VOCAB_DB=[];
   load('data/master-vocab-data.js?v=20260912-2',()=>load('data/master-vocab-data-2.js?v=20260912-2',()=>load('data/master-vocab-data-3.js?v=20260912-2',install)));
