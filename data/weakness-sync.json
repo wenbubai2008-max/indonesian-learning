@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T15:27:15.233Z",
+  "updated_at": "2026-09-12T16:30:22.031Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -18082,6 +18082,17 @@
       ],
       "wrong_count": 0,
       "right_streak": 0
+    },
+    "belok": {
+      "word": "belok",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:30:11.830Z",
+      "display": "belok",
+      "last_review": "2026-09-12T16:30:11.811Z",
+      "last_mastered": "2026-09-12T16:30:11.811Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
     }
   }
 }
