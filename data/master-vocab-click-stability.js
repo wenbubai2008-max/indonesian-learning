@@ -1,41 +1,10 @@
 (function(){
+  if(document.querySelector('script[src*="library-switcher.js"]'))return;
   if(window.__masterVocabClickStability)return;window.__masterVocabClickStability=true;
   let pending=false;
   function norm(w){return String(w||'').trim().toLowerCase();}
   function valueFromButton(btn){const t=(btn.textContent||'').trim();if(t.includes('会了'))return 'know';if(t.includes('模糊'))return 'fuzzy';if(t.includes('不会'))return 'dont';return '';}
-  function syncWeakness(item,v){
-    const p=window.WeaknessPool;if(!p||!item||!item.word)return;
-    if(v==='know'){
-      if(typeof p.markMastered==='function')p.markMastered(item.word,'vocab_known');
-      else if(typeof p.markKnown==='function')p.markKnown(item.word,'vocab_known');
-    }else if(v==='fuzzy'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_fuzzy');
-    else if(v==='dont'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_dont');
-  }
-  function flash(btn,v){
-    const old=btn.style.background,oldBorder=btn.style.borderColor,oldColor=btn.style.color;
-    if(v==='know'){btn.style.background='#e9f8ee';btn.style.borderColor='#63b879';btn.style.color='#166534';}
-    else if(v==='fuzzy'){btn.style.background='#fff2cc';btn.style.borderColor='#d6a63d';btn.style.color='#8a5a00';}
-    else{btn.style.background='#ffe1de';btn.style.borderColor='#d87870';btn.style.color='#a52b22';}
-    return function(){btn.style.background=old;btn.style.borderColor=oldBorder;btn.style.color=oldColor;};
-  }
-  document.addEventListener('click',function(e){
-    const btn=e.target&&e.target.closest?e.target.closest('#vocabBox .memory button'):null;
-    if(!btn||document.getElementById('librarySelect')?.value!=='master')return;
-    const v=valueFromButton(btn);if(!v)return;
-    e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();
-    if(pending)return;pending=true;
-    const item=typeof current==='function'?current():null;if(!item||!item.word){pending=false;return;}
-    const restore=flash(btn,v);
-    let m={};try{m=JSON.parse(localStorage.getItem('indo_mem')||'{}')}catch(err){}
-    m[item.word]=v;m[norm(item.word)]=v;localStorage.setItem('indo_mem',JSON.stringify(m));
-    syncWeakness(item,v);
-    setTimeout(function(){
-      restore();
-      if(typeof window.refreshMasterVocabulary==='function')window.refreshMasterVocabulary();
-      else if(typeof renderVocab==='function')renderVocab();
-      try{if(typeof updateStats==='function')updateStats();}catch(err){}
-      try{if(typeof renderReview==='function')renderReview();}catch(err){}
-      pending=false;
-    },90);
-  },true);
+  function syncWeakness(item,v){const p=window.WeaknessPool;if(!p||!item||!item.word)return;if(v==='know'){if(typeof p.markMastered==='function')p.markMastered(item.word,'vocab_known');else if(typeof p.markKnown==='function')p.markKnown(item.word,'vocab_known');}else if(v==='fuzzy'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_fuzzy');else if(v==='dont'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_dont');}
+  function flash(btn,v){const old=btn.style.background,oldBorder=btn.style.borderColor,oldColor=btn.style.color;if(v==='know'){btn.style.background='#e9f8ee';btn.style.borderColor='#63b879';btn.style.color='#166534';}else if(v==='fuzzy'){btn.style.background='#fff2cc';btn.style.borderColor='#d6a63d';btn.style.color='#8a5a00';}else{btn.style.background='#ffe1de';btn.style.borderColor='#d87870';btn.style.color='#a52b22';}return function(){btn.style.background=old;btn.style.borderColor=oldBorder;btn.style.color=oldColor;};}
+  document.addEventListener('click',function(e){const btn=e.target&&e.target.closest?e.target.closest('#vocabBox .memory button'):null;if(!btn||document.getElementById('librarySelect')?.value!=='master')return;const v=valueFromButton(btn);if(!v)return;e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();if(pending)return;pending=true;const item=typeof current==='function'?current():null;if(!item||!item.word){pending=false;return;}const restore=flash(btn,v);let m={};try{m=JSON.parse(localStorage.getItem('indo_mem')||'{}')}catch(err){}m[item.word]=v;m[norm(item.word)]=v;localStorage.setItem('indo_mem',JSON.stringify(m));syncWeakness(item,v);setTimeout(function(){restore();if(typeof window.refreshMasterVocabulary==='function')window.refreshMasterVocabulary();else if(typeof renderVocab==='function')renderVocab();try{if(typeof updateStats==='function')updateStats();}catch(err){}try{if(typeof renderReview==='function')renderReview();}catch(err){}pending=false;},90);},true);
 })();
