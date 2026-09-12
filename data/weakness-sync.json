@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T16:58:42.619Z",
+  "updated_at": "2026-09-12T17:02:44.765Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -19570,6 +19570,1096 @@
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
+    },
+    "bahkan": {
+      "word": "bahkan",
+      "status": "active",
+      "updated_at": "2026-09-12T16:58:22.063Z",
+      "display": "bahkan",
+      "cn": "甚至；甚至还",
+      "root": "bahkan",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "hanya": {
+      "word": "hanya",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:23.752Z",
+      "display": "hanya",
+      "last_review": "2026-09-12T16:58:23.738Z",
+      "last_mastered": "2026-09-12T16:58:23.738Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "juga": {
+      "word": "juga",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:24.918Z",
+      "display": "juga",
+      "last_review": "2026-09-12T16:58:24.904Z",
+      "last_mastered": "2026-09-12T16:58:24.904Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "lagi": {
+      "word": "lagi",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:25.838Z",
+      "display": "lagi",
+      "last_review": "2026-09-12T16:58:25.824Z",
+      "last_mastered": "2026-09-12T16:58:25.824Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "masih": {
+      "word": "masih",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:27.288Z",
+      "display": "masih",
+      "last_review": "2026-09-12T16:58:27.274Z",
+      "last_mastered": "2026-09-12T16:58:27.274Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "sudah": {
+      "word": "sudah",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:28.219Z",
+      "display": "sudah",
+      "last_review": "2026-09-12T16:58:28.204Z",
+      "last_mastered": "2026-09-12T16:58:28.204Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "udah": {
+      "word": "udah",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:29.130Z",
+      "display": "udah",
+      "last_review": "2026-09-12T16:58:29.115Z",
+      "last_mastered": "2026-09-12T16:58:29.115Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "belum": {
+      "word": "belum",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:30.050Z",
+      "display": "belum",
+      "last_review": "2026-09-12T16:58:30.036Z",
+      "last_mastered": "2026-09-12T16:58:30.036Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "perlu": {
+      "word": "perlu",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:31.077Z",
+      "display": "perlu",
+      "last_review": "2026-09-12T16:58:31.062Z",
+      "last_mastered": "2026-09-12T16:58:31.062Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "harus": {
+      "word": "harus",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:31.984Z",
+      "display": "harus",
+      "last_review": "2026-09-12T16:58:31.971Z",
+      "last_mastered": "2026-09-12T16:58:31.971Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "boleh": {
+      "word": "boleh",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:32.930Z",
+      "display": "boleh",
+      "last_review": "2026-09-12T16:58:32.917Z",
+      "last_mastered": "2026-09-12T16:58:32.917Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "bisa": {
+      "word": "bisa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:33.794Z",
+      "display": "bisa",
+      "last_review": "2026-09-12T16:58:33.781Z",
+      "last_mastered": "2026-09-12T16:58:33.781Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "mau": {
+      "word": "mau",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:34.716Z",
+      "display": "mau",
+      "last_review": "2026-09-12T16:58:34.703Z",
+      "last_mastered": "2026-09-12T16:58:34.703Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "ingin": {
+      "word": "ingin",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:35.604Z",
+      "display": "ingin",
+      "last_review": "2026-09-12T16:58:35.591Z",
+      "last_mastered": "2026-09-12T16:58:35.591Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "suka": {
+      "word": "suka",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:36.503Z",
+      "display": "suka",
+      "last_review": "2026-09-12T16:58:36.490Z",
+      "last_mastered": "2026-09-12T16:58:36.490Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "lebih suka": {
+      "word": "lebih suka",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:37.784Z",
+      "display": "lebih suka",
+      "last_review": "2026-09-12T16:58:37.771Z",
+      "last_mastered": "2026-09-12T16:58:37.771Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "tuh": {
+      "word": "tuh",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:42.322Z",
+      "display": "tuh",
+      "last_review": "2026-09-12T16:58:42.309Z",
+      "last_mastered": "2026-09-12T16:58:42.309Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "lah": {
+      "word": "lah",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:43.306Z",
+      "display": "lah",
+      "last_review": "2026-09-12T16:58:43.293Z",
+      "last_mastered": "2026-09-12T16:58:43.293Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "gimana": {
+      "word": "gimana",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:46.249Z",
+      "display": "gimana",
+      "last_review": "2026-09-12T16:58:46.235Z",
+      "last_mastered": "2026-09-12T16:58:46.235Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kenapa": {
+      "word": "kenapa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:49.841Z",
+      "display": "kenapa",
+      "last_review": "2026-09-12T16:58:49.828Z",
+      "last_mastered": "2026-09-12T16:58:49.828Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "ngapain": {
+      "word": "ngapain",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:55.046Z",
+      "display": "ngapain",
+      "last_review": "2026-09-12T16:58:55.033Z",
+      "last_mastered": "2026-09-12T16:58:55.033Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "siapa": {
+      "word": "siapa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:57.293Z",
+      "display": "siapa",
+      "last_review": "2026-09-12T16:58:57.280Z",
+      "last_mastered": "2026-09-12T16:58:57.280Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "apa": {
+      "word": "apa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:58.220Z",
+      "display": "apa",
+      "last_review": "2026-09-12T16:58:58.206Z",
+      "last_mastered": "2026-09-12T16:58:58.206Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "mana": {
+      "word": "mana",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:58:59.116Z",
+      "display": "mana",
+      "last_review": "2026-09-12T16:58:59.103Z",
+      "last_mastered": "2026-09-12T16:58:59.103Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kapan": {
+      "word": "kapan",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:00.020Z",
+      "display": "kapan",
+      "last_review": "2026-09-12T16:59:00.007Z",
+      "last_mastered": "2026-09-12T16:59:00.007Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "berapa": {
+      "word": "berapa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:01.824Z",
+      "display": "berapa",
+      "last_review": "2026-09-12T16:59:01.810Z",
+      "last_mastered": "2026-09-12T16:59:01.810Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "berapa lama": {
+      "word": "berapa lama",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:02.766Z",
+      "display": "berapa lama",
+      "last_review": "2026-09-12T16:59:02.753Z",
+      "last_mastered": "2026-09-12T16:59:02.753Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "berapa kali": {
+      "word": "berapa kali",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:03.774Z",
+      "display": "berapa kali",
+      "last_review": "2026-09-12T16:59:03.760Z",
+      "last_mastered": "2026-09-12T16:59:03.760Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "seberapa": {
+      "word": "seberapa",
+      "status": "active",
+      "updated_at": "2026-09-12T16:59:09.120Z",
+      "display": "seberapa",
+      "cn": "多么；多大程度",
+      "root": "berapa",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mana yang": {
+      "word": "mana yang",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:12.932Z",
+      "display": "mana yang",
+      "last_review": "2026-09-12T16:59:12.918Z",
+      "last_mastered": "2026-09-12T16:59:12.918Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "dari mana": {
+      "word": "dari mana",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:14.114Z",
+      "display": "dari mana",
+      "last_review": "2026-09-12T16:59:14.101Z",
+      "last_mastered": "2026-09-12T16:59:14.101Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "ke mana": {
+      "word": "ke mana",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:15.054Z",
+      "display": "ke mana",
+      "last_review": "2026-09-12T16:59:15.041Z",
+      "last_mastered": "2026-09-12T16:59:15.041Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "di mana": {
+      "word": "di mana",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:15.812Z",
+      "display": "di mana",
+      "last_review": "2026-09-12T16:59:15.799Z",
+      "last_mastered": "2026-09-12T16:59:15.799Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "sama siapa": {
+      "word": "sama siapa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:17.232Z",
+      "display": "sama siapa",
+      "last_review": "2026-09-12T16:59:17.219Z",
+      "last_mastered": "2026-09-12T16:59:17.219Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "buat apa": {
+      "word": "buat apa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:20.606Z",
+      "display": "buat apa",
+      "last_review": "2026-09-12T16:59:20.593Z",
+      "last_mastered": "2026-09-12T16:59:20.593Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kayak apa": {
+      "word": "kayak apa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:24.564Z",
+      "display": "kayak apa",
+      "last_review": "2026-09-12T16:59:24.551Z",
+      "last_mastered": "2026-09-12T16:59:24.551Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kenapa nggak": {
+      "word": "kenapa nggak",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:26.049Z",
+      "display": "kenapa nggak",
+      "last_review": "2026-09-12T16:59:26.036Z",
+      "last_mastered": "2026-09-12T16:59:26.036Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kok bisa": {
+      "word": "kok bisa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:27.983Z",
+      "display": "kok bisa",
+      "last_review": "2026-09-12T16:59:27.970Z",
+      "last_mastered": "2026-09-12T16:59:27.970Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "masa sih": {
+      "word": "masa sih",
+      "status": "active",
+      "updated_at": "2026-09-12T16:59:31.429Z",
+      "display": "masa sih",
+      "cn": "真的吗；不会吧",
+      "root": "masa sih",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "serius?": {
+      "word": "serius?",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:34.347Z",
+      "display": "serius?",
+      "last_review": "2026-09-12T16:59:34.334Z",
+      "last_mastered": "2026-09-12T16:59:34.334Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "beneran?": {
+      "word": "beneran?",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:37.644Z",
+      "display": "beneran?",
+      "last_review": "2026-09-12T16:59:37.630Z",
+      "last_mastered": "2026-09-12T16:59:37.630Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "iya": {
+      "word": "iya",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:38.828Z",
+      "display": "iya",
+      "last_review": "2026-09-12T16:59:38.815Z",
+      "last_mastered": "2026-09-12T16:59:38.815Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "nggak": {
+      "word": "nggak",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:39.805Z",
+      "display": "nggak",
+      "last_review": "2026-09-12T16:59:39.791Z",
+      "last_mastered": "2026-09-12T16:59:39.791Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "enggak": {
+      "word": "enggak",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:41.274Z",
+      "display": "enggak",
+      "last_review": "2026-09-12T16:59:41.259Z",
+      "last_mastered": "2026-09-12T16:59:41.259Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "ga": {
+      "word": "ga",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:42.099Z",
+      "display": "ga",
+      "last_review": "2026-09-12T16:59:42.085Z",
+      "last_mastered": "2026-09-12T16:59:42.085Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "gak": {
+      "word": "gak",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:42.831Z",
+      "display": "gak",
+      "last_review": "2026-09-12T16:59:42.817Z",
+      "last_mastered": "2026-09-12T16:59:42.817Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "tidak": {
+      "word": "tidak",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:43.623Z",
+      "display": "tidak",
+      "last_review": "2026-09-12T16:59:43.610Z",
+      "last_mastered": "2026-09-12T16:59:43.610Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "bukan": {
+      "word": "bukan",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:44.399Z",
+      "display": "bukan",
+      "last_review": "2026-09-12T16:59:44.385Z",
+      "last_mastered": "2026-09-12T16:59:44.385Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "jangan": {
+      "word": "jangan",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:45.211Z",
+      "display": "jangan",
+      "last_review": "2026-09-12T16:59:45.197Z",
+      "last_mastered": "2026-09-12T16:59:45.197Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "gak usah": {
+      "word": "gak usah",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:47.250Z",
+      "display": "gak usah",
+      "last_review": "2026-09-12T16:59:47.236Z",
+      "last_mastered": "2026-09-12T16:59:47.236Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "jangan dulu": {
+      "word": "jangan dulu",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:51.798Z",
+      "display": "jangan dulu",
+      "last_review": "2026-09-12T16:59:51.785Z",
+      "last_mastered": "2026-09-12T16:59:51.785Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "boleh nggak": {
+      "word": "boleh nggak",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:53.379Z",
+      "display": "boleh nggak",
+      "last_review": "2026-09-12T16:59:53.365Z",
+      "last_mastered": "2026-09-12T16:59:53.365Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "bisa nggak": {
+      "word": "bisa nggak",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:54.321Z",
+      "display": "bisa nggak",
+      "last_review": "2026-09-12T16:59:54.308Z",
+      "last_mastered": "2026-09-12T16:59:54.308Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "mau nggak": {
+      "word": "mau nggak",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:55.139Z",
+      "display": "mau nggak",
+      "last_review": "2026-09-12T16:59:55.125Z",
+      "last_mastered": "2026-09-12T16:59:55.125Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "udah belum": {
+      "word": "udah belum",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:56.089Z",
+      "display": "udah belum",
+      "last_review": "2026-09-12T16:59:56.075Z",
+      "last_mastered": "2026-09-12T16:59:56.075Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "gimana kalau": {
+      "word": "gimana kalau",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:59:57.147Z",
+      "display": "gimana kalau",
+      "last_review": "2026-09-12T16:59:57.133Z",
+      "last_mastered": "2026-09-12T16:59:57.133Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "mending": {
+      "word": "mending",
+      "status": "active",
+      "updated_at": "2026-09-12T17:00:01.744Z",
+      "display": "mending",
+      "cn": "最好还是、不如",
+      "root": "mending",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "gapapa": {
+      "word": "gapapa",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:04.349Z",
+      "display": "gapapa",
+      "last_review": "2026-09-12T17:00:04.336Z",
+      "last_mastered": "2026-09-12T17:00:04.336Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "santai aja": {
+      "word": "santai aja",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:08.287Z",
+      "display": "santai aja",
+      "last_review": "2026-09-12T17:00:08.273Z",
+      "last_mastered": "2026-09-12T17:00:08.273Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "tenang aja": {
+      "word": "tenang aja",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:11.716Z",
+      "display": "tenang aja",
+      "last_review": "2026-09-12T17:00:11.703Z",
+      "last_mastered": "2026-09-12T17:00:11.703Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "hati-hati": {
+      "word": "hati-hati",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:13.053Z",
+      "display": "hati-hati",
+      "last_review": "2026-09-12T17:00:13.039Z",
+      "last_mastered": "2026-09-12T17:00:13.039Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "jaga diri": {
+      "word": "jaga diri",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:16.598Z",
+      "display": "jaga diri",
+      "last_review": "2026-09-12T17:00:16.584Z",
+      "last_mastered": "2026-09-12T17:00:16.584Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "semoga": {
+      "word": "semoga",
+      "status": "active",
+      "updated_at": "2026-09-12T17:00:20.936Z",
+      "display": "semoga",
+      "cn": "希望；祝愿",
+      "root": "semoga",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "selamat": {
+      "word": "selamat",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:22.699Z",
+      "display": "selamat",
+      "last_review": "2026-09-12T17:00:22.685Z",
+      "last_mastered": "2026-09-12T17:00:22.685Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "maaf": {
+      "word": "maaf",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:23.788Z",
+      "display": "maaf",
+      "last_review": "2026-09-12T17:00:23.774Z",
+      "last_mastered": "2026-09-12T17:00:23.774Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "permisi": {
+      "word": "permisi",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:24.958Z",
+      "display": "permisi",
+      "last_review": "2026-09-12T17:00:24.945Z",
+      "last_mastered": "2026-09-12T17:00:24.945Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "makasih": {
+      "word": "makasih",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:26.518Z",
+      "display": "makasih",
+      "last_review": "2026-09-12T17:00:26.504Z",
+      "last_mastered": "2026-09-12T17:00:26.504Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "terima kasih": {
+      "word": "terima kasih",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:27.522Z",
+      "display": "terima kasih",
+      "last_review": "2026-09-12T17:00:27.509Z",
+      "last_mastered": "2026-09-12T17:00:27.509Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "sama-sama": {
+      "word": "sama-sama",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:28.415Z",
+      "display": "sama-sama",
+      "last_review": "2026-09-12T17:00:28.401Z",
+      "last_mastered": "2026-09-12T17:00:28.401Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "oke": {
+      "word": "oke",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:29.186Z",
+      "display": "oke",
+      "last_review": "2026-09-12T17:00:29.172Z",
+      "last_mastered": "2026-09-12T17:00:29.172Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "sip": {
+      "word": "sip",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:29.894Z",
+      "display": "sip",
+      "last_review": "2026-09-12T17:00:29.880Z",
+      "last_mastered": "2026-09-12T17:00:29.880Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "siap": {
+      "word": "siap",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:30.643Z",
+      "display": "siap",
+      "last_review": "2026-09-12T17:00:30.629Z",
+      "last_mastered": "2026-09-12T17:00:30.629Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "deal": {
+      "word": "deal",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:31.863Z",
+      "display": "deal",
+      "last_review": "2026-09-12T17:00:31.850Z",
+      "last_mastered": "2026-09-12T17:00:31.850Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "deadline": {
+      "word": "deadline",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:33.167Z",
+      "display": "deadline",
+      "last_review": "2026-09-12T17:00:33.153Z",
+      "last_mastered": "2026-09-12T17:00:33.153Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "laporan": {
+      "word": "laporan",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:36.771Z",
+      "display": "laporan",
+      "last_review": "2026-09-12T17:00:36.757Z",
+      "last_mastered": "2026-09-12T17:00:36.757Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "data": {
+      "word": "data",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:38.362Z",
+      "display": "data",
+      "last_review": "2026-09-12T17:00:38.348Z",
+      "last_mastered": "2026-09-12T17:00:38.348Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "target": {
+      "word": "target",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:40.013Z",
+      "display": "target",
+      "last_review": "2026-09-12T17:00:39.999Z",
+      "last_mastered": "2026-09-12T17:00:39.999Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "masalah": {
+      "word": "masalah",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:42.799Z",
+      "display": "masalah",
+      "last_review": "2026-09-12T17:00:42.786Z",
+      "last_mastered": "2026-09-12T17:00:42.786Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kendala": {
+      "word": "kendala",
+      "status": "active",
+      "updated_at": "2026-09-12T17:00:47.452Z",
+      "display": "kendala",
+      "cn": "障碍；困难；卡点",
+      "root": "kendala",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "peluang": {
+      "word": "peluang",
+      "status": "active",
+      "updated_at": "2026-09-12T17:00:52.151Z",
+      "display": "peluang",
+      "cn": "机会",
+      "root": "peluang",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kemampuan": {
+      "word": "kemampuan",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:00:57.745Z",
+      "display": "kemampuan",
+      "last_review": "2026-09-12T17:00:57.731Z",
+      "last_mastered": "2026-09-12T17:00:57.731Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "keahlian": {
+      "word": "keahlian",
+      "status": "active",
+      "updated_at": "2026-09-12T17:01:05.777Z",
+      "display": "keahlian",
+      "cn": "专业技能",
+      "root": "ahli",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "tanggung jawab": {
+      "word": "tanggung jawab",
+      "status": "active",
+      "updated_at": "2026-09-12T17:01:15.434Z",
+      "display": "tanggung jawab",
+      "cn": "责任",
+      "root": "tanggung jawab",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "atasan": {
+      "word": "atasan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:01:19.868Z",
+      "display": "atasan",
+      "cn": "上司",
+      "root": "atas",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bawahan": {
+      "word": "bawahan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:01:23.681Z",
+      "display": "bawahan",
+      "cn": "下属",
+      "root": "bawah",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "rekan kerja": {
+      "word": "rekan kerja",
+      "status": "active",
+      "updated_at": "2026-09-12T17:01:31.356Z",
+      "display": "rekan kerja",
+      "cn": "同事",
+      "root": "rekan kerja",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "karyawan": {
+      "word": "karyawan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:01:33.723Z",
+      "display": "karyawan",
+      "cn": "员工",
+      "root": "karya",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bos": {
+      "word": "bos",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:01:35.543Z",
+      "display": "bos",
+      "last_review": "2026-09-12T17:01:35.529Z",
+      "last_mastered": "2026-09-12T17:01:35.529Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "gaji": {
+      "word": "gaji",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:01:36.589Z",
+      "display": "gaji",
+      "last_review": "2026-09-12T17:01:36.574Z",
+      "last_mastered": "2026-09-12T17:01:36.574Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "bonus": {
+      "word": "bonus",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:01:37.865Z",
+      "display": "bonus",
+      "last_review": "2026-09-12T17:01:37.850Z",
+      "last_mastered": "2026-09-12T17:01:37.850Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "naik gaji": {
+      "word": "naik gaji",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:01:43.033Z",
+      "display": "naik gaji",
+      "last_review": "2026-09-12T17:01:43.017Z",
+      "last_mastered": "2026-09-12T17:01:43.017Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "resign": {
+      "word": "resign",
+      "status": "active",
+      "updated_at": "2026-09-12T17:01:55.777Z",
+      "display": "resign",
+      "cn": "辞职",
+      "root": "resign",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pecat": {
+      "word": "pecat",
+      "status": "active",
+      "updated_at": "2026-09-12T17:02:02.817Z",
+      "display": "pecat",
+      "cn": "解雇",
+      "root": "pecat",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kontrak kerja": {
+      "word": "kontrak kerja",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:02:05.423Z",
+      "display": "kontrak kerja",
+      "last_review": "2026-09-12T17:02:05.409Z",
+      "last_mastered": "2026-09-12T17:02:05.409Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "lamaran": {
+      "word": "lamaran",
+      "status": "active",
+      "updated_at": "2026-09-12T17:02:09.592Z",
+      "display": "lamaran",
+      "cn": "申请；求婚",
+      "root": "lamar",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "lowongan": {
+      "word": "lowongan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:02:13.981Z",
+      "display": "lowongan",
+      "cn": "职位空缺；招聘信息",
+      "root": "lowong",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
     }
   }
 }
