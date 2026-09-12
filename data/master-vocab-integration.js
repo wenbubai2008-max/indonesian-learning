@@ -23,30 +23,11 @@
   }
   function rebuildCategories(){const cat=document.getElementById('cat');if(!cat)return;cat.innerHTML='<option value="">全部分类</option><option>主学习词库</option>';}
   function statusOf(m,word){const k=norm(word);return m[word]||m[k]||'';}
-  function isKnown(m,word){return statusOf(m,word)==='know';}
-  function isWeak(m,word){const s=statusOf(m,word);return s==='fuzzy'||s==='dont';}
   function isFresh(m,word){return !statusOf(m,word);}
-  function orderedPending(arr,m){
-    const fresh=[],weak=[];
-    arr.forEach(function(x){
-      if(isKnown(m,x.word))return;
-      (isWeak(m,x.word)?weak:fresh).push(x);
-    });
-    return fresh.concat(weak);
-  }
-  function firstFreshAfter(word,arr,m){
-    const k=norm(word),start=Math.max(-1,arr.findIndex(x=>norm(x.word)===k));
-    for(let i=start+1;i<arr.length;i++)if(isFresh(m,arr[i].word))return arr[i].word;
-    for(let i=0;i<=start;i++)if(isFresh(m,arr[i].word))return arr[i].word;
-    return '';
-  }
+  function uncheckedOnly(arr,m){return arr.filter(x=>isFresh(m,x.word));}
   function resolveResumeWord(arr,m){
     const saved=norm(localStorage.getItem(PROGRESS_KEY)||'');
-    if(saved){
-      const exact=arr.find(x=>norm(x.word)===saved);
-      if(exact&&isFresh(m,exact.word))return exact.word;
-      const next=firstFreshAfter(saved,arr,m);if(next)return next;
-    }
+    if(saved){const exact=arr.find(x=>norm(x.word)===saved);if(exact&&isFresh(m,exact.word))return exact.word;}
     const first=arr.find(x=>isFresh(m,x.word));return first?first.word:'';
   }
   function restoreIndex(pending,arr,m){
@@ -58,10 +39,8 @@
   function saveProgress(){
     try{
       if(document.getElementById('librarySelect')?.value!==KEY)return;
-      const arr=master(),m=mem(),x=typeof current==='function'?current():null;
-      if(!x||!x.word)return;
-      let target=isFresh(m,x.word)?x.word:firstFreshAfter(x.word,arr,m);
-      if(target)localStorage.setItem(PROGRESS_KEY,norm(target));
+      const x=typeof current==='function'?current():null;
+      if(x&&x.word&&isFresh(mem(),x.word))localStorage.setItem(PROGRESS_KEY,norm(x.word));
     }catch(e){}
   }
   function updateMasterStatus(arr,m){
@@ -70,29 +49,28 @@
     arr.forEach(function(x){const s=statusOf(m,x.word);if(s==='know')known++;else if(s==='fuzzy'||s==='dont')review++;});
     const unchecked=Math.max(0,arr.length-known-review);
     const st=document.getElementById('dbStatus');
-    if(st)st.textContent=LABEL+' · '+unchecked+' 未核对 · '+review+' 待复习 · '+known+' 已掌握 · '+arr.length+' 总词';
+    if(st)st.textContent=LABEL+' · '+unchecked+' 未核对 · '+review+' 已标待复习 · '+known+' 已掌握 · '+arr.length+' 总词';
   }
-  function setMaster(){
+  function renderMaster(){
     const arr=master(),m=mem();
-    DB=arr;FILTER=orderedPending(arr,m);idx=restoreIndex(FILTER,arr,m);rebuildCategories();
+    DB=arr;FILTER=uncheckedOnly(arr,m);idx=restoreIndex(FILTER,arr,m);rebuildCategories();
     const search=document.getElementById('search');if(search)search.value='';
     const select=document.getElementById('librarySelect');if(select)select.value=KEY;
     const count=document.getElementById('vocabCount');if(count)count.textContent=arr.length;
     const tag=document.getElementById('vocabTag');if(tag)tag.textContent=LABEL+' '+arr.length+' 词';
     updateMasterStatus(arr,m);
     if(FILTER.length&&typeof renderVocab==='function'){renderVocab();saveProgress();}
-    else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty"><b>主学习词库已全部核对 ✓</b><div style="margin-top:8px">点过“会了”的词仍保留在总词库，但不再占每日新词名额。</div></div>';}
+    else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty"><b>主学习词库已全部核对 ✓</b><div style="margin-top:8px">“会了 / 模糊 / 不会”只用于记录状态；点过的词都不会在本轮再次出现。</div></div>';}
     localStorage.setItem('selected_vocab_library',KEY);
   }
-  function moveMarkedWordOutOfFirstPass(markedWord){
+  function removeCurrentAfterMark(word){
     if(document.getElementById('librarySelect')?.value!==KEY)return;
     const arr=master(),m=mem();
-    const next=firstFreshAfter(markedWord,arr,m);
-    FILTER=orderedPending(arr,m);
-    if(next){const i=FILTER.findIndex(x=>norm(x.word)===norm(next));idx=i>=0?i:0;localStorage.setItem(PROGRESS_KEY,norm(next));}
-    else{idx=0;}
+    FILTER=uncheckedOnly(arr,m);idx=0;
+    if(FILTER.length)localStorage.setItem(PROGRESS_KEY,norm(FILTER[0].word));
     updateMasterStatus(arr,m);
-    if(typeof renderVocab==='function')renderVocab();
+    if(FILTER.length&&typeof renderVocab==='function')renderVocab();
+    else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty"><b>主学习词库已全部核对 ✓</b><div style="margin-top:8px">“会了 / 模糊 / 不会”只用于记录状态；点过的词都不会在本轮再次出现。</div></div>';}
   }
   function ensureOption(){
     const select=document.getElementById('librarySelect');if(!select)return false;
@@ -100,18 +78,15 @@
     let opt=select.querySelector('option[value="master"]');
     if(!opt){opt=document.createElement('option');opt.value=KEY;const daily=select.querySelector('option[value="daily"]');if(daily)select.insertBefore(opt,daily);else select.appendChild(opt);}
     opt.textContent=LABEL+'（'+n+'）';
-    select.onchange=function(){saveProgress();const key=this.value;if(key===KEY)setMaster();else if(typeof window.switchVocabLibrary==='function')window.switchVocabLibrary(key);};
-    if(localStorage.getItem('selected_vocab_library')===KEY&&select.value!==KEY)setMaster();
+    select.onchange=function(){saveProgress();const key=this.value;if(key===KEY)renderMaster();else if(typeof window.switchVocabLibrary==='function')window.switchVocabLibrary(key);};
+    if(localStorage.getItem('selected_vocab_library')===KEY&&select.value!==KEY)renderMaster();
     return true;
   }
   function backfillKnownOnce(p){
     if(!p||typeof p.markMastered!=='function')return;
     if(localStorage.getItem(BACKFILL_KEY)==='done')return;
     const m=mem();let n=0;
-    Object.keys(m).forEach(function(word){
-      if(m[word]!=='know')return;
-      try{p.markMastered(word,'master_known_backfill');n++;}catch(e){}
-    });
+    Object.keys(m).forEach(function(word){if(m[word]!=='know')return;try{p.markMastered(word,'master_known_backfill');n++;}catch(e){}});
     localStorage.setItem(BACKFILL_KEY,'done');
     if(n&&window.WeaknessSync&&typeof window.WeaknessSync.syncNow==='function')setTimeout(function(){window.WeaknessSync.syncNow();},1200);
   }
@@ -123,7 +98,6 @@
     }
     if((tries||0)<80)setTimeout(()=>patchKnownBridge((tries||0)+1),100);
   }
-  function refreshStatusIfMaster(){const select=document.getElementById('librarySelect');if(select&&select.value===KEY)updateMasterStatus();}
   function install(){
     let tries=0;const timer=setInterval(function(){if(ensureOption()||++tries>50)clearInterval(timer);},100);
     patchKnownBridge(0);
@@ -135,14 +109,12 @@
     document.addEventListener('click',function(e){
       const btn=e.target&&e.target.closest?e.target.closest('#vocabBox .memory button'):null;
       if(!btn||document.getElementById('librarySelect')?.value!==KEY)return;
-      const x=typeof current==='function'?current():null,word=x&&x.word;
-      if(!word)return;
-      setTimeout(function(){moveMarkedWordOutOfFirstPass(word);},340);
+      const x=typeof current==='function'?current():null,word=x&&x.word;if(!word)return;
+      setTimeout(function(){removeCurrentAfterMark(word);},360);
     },true);
-    window.addEventListener('unknown-vocab-changed',function(){setTimeout(ensureOption,0);setTimeout(refreshStatusIfMaster,0);});
-    window.addEventListener('weak-pool-changed',function(){patchKnownBridge(0);setTimeout(refreshStatusIfMaster,0);});
-    window.addEventListener('storage',function(e){if(e.key==='indo_mem')setTimeout(refreshStatusIfMaster,0);});
-    window.openMasterVocabulary=setMaster;
+    window.addEventListener('unknown-vocab-changed',function(){setTimeout(ensureOption,0);});
+    window.addEventListener('weak-pool-changed',function(){patchKnownBridge(0);});
+    window.openMasterVocabulary=renderMaster;
   }
   window.MASTER_VOCAB_DB=[];
   load('data/master-vocab-data.js?v=20260912-2',()=>load('data/master-vocab-data-2.js?v=20260912-2',()=>load('data/master-vocab-data-3.js?v=20260912-2',install)));
