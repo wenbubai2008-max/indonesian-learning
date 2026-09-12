@@ -7,7 +7,10 @@
   function currentItem(){try{return (typeof FILTER!=='undefined'&&Array.isArray(FILTER)&&FILTER.length)?FILTER[Math.max(0,Math.min(typeof idx==='number'?idx:0,FILTER.length-1))]:null;}catch(e){return null;}}
   function syncWeakness(item,v){
     if(!item||!item.word||!window.WeaknessPool)return;
-    if(v==='know')window.WeaknessPool.markKnown(item.word,'vocab_known');
+    if(v==='know'){
+      if(typeof window.WeaknessPool.markMastered==='function')window.WeaknessPool.markMastered(item.word,'vocab_known');
+      else if(typeof window.WeaknessPool.markKnown==='function')window.WeaknessPool.markKnown(item.word,'vocab_known');
+    }
     else if(v==='fuzzy')window.WeaknessPool.markWeak(item.word,item,'memory_fuzzy');
     else if(v==='dont')window.WeaknessPool.markWeak(item.word,item,'memory_dont');
   }
