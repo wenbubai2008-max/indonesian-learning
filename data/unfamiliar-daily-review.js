@@ -4,13 +4,13 @@
   cleanup();const body=document.getElementById('dailyBody');if(body)new MutationObserver(cleanup).observe(body,{childList:true,subtree:true});
 
   // 词汇页顶部统计始终只统计当前选中的词库。
-  if(!window.__vocabScopedStatsRequested){window.__vocabScopedStatsRequested=true;const ss=document.createElement('script');ss.src='data/vocab-scoped-stats.js?v=20260912-3';document.body.appendChild(ss);}
+  if(!window.__vocabScopedStatsRequested){window.__vocabScopedStatsRequested=true;const ss=document.createElement('script');ss.src='data/vocab-scoped-stats.js?v=20260912-4';document.body.appendChild(ss);}
 
   // 主学习词库：本轮只出现从未点过“会了 / 模糊 / 不会”的词。
-  if(!window.__masterVocabIntegrationRequested){window.__masterVocabIntegrationRequested=true;const m=document.createElement('script');m.src='data/master-vocab-integration.js?v=20260912-9';document.body.appendChild(m);}
+  if(!window.__masterVocabIntegrationRequested){window.__masterVocabIntegrationRequested=true;const m=document.createElement('script');m.src='data/master-vocab-integration.js?v=20260912-10';document.body.appendChild(m);}
 
   // 主学习词库点击采用单次渲染，避免“模糊 / 不会”后新词出现时发生二次跳动。
-  if(!window.__masterVocabClickStabilityRequested){window.__masterVocabClickStabilityRequested=true;const c=document.createElement('script');c.src='data/master-vocab-click-stability.js?v=20260912-1';document.body.appendChild(c);}
+  if(!window.__masterVocabClickStabilityRequested){window.__masterVocabClickStabilityRequested=true;const c=document.createElement('script');c.src='data/master-vocab-click-stability.js?v=20260912-2';document.body.appendChild(c);}
 
   // 统一弱项池：阅读陌生词、快速练习错题、模糊/不会、专项强化共用同一状态。
   // 同步采用事件触发：本地立即保存，停止操作约10秒后后台发送；没有变化时不会轮询，也不会刷新页面。
