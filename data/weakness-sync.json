@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T14:25:35.043Z",
+  "updated_at": "2026-09-12T14:25:46.191Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -641,12 +641,13 @@
     "pajak": {
       "word": "pajak",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-12T14:25:36.043Z",
       "display": "pajak",
       "cn": "税",
       "root": "pajak",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "memory_dont"
       ],
       "wrong_count": 0,
       "right_streak": 0
