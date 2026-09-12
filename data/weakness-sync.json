@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T17:02:44.765Z",
+  "updated_at": "2026-09-12T17:07:04.426Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -428,11 +428,13 @@
     "beres": {
       "word": "beres",
       "status": "active",
-      "updated_at": "2026-09-11T14:40:15.508Z",
+      "updated_at": "2026-09-12T17:06:01.347Z",
       "display": "beres",
       "cn": "搞定；处理完；整齐",
+      "root": "beres",
       "reasons": [
-        "quick_wrong"
+        "quick_wrong",
+        "memory_dont"
       ],
       "wrong_count": 1,
       "right_streak": 0
@@ -20660,6 +20662,838 @@
       ],
       "wrong_count": 0,
       "right_streak": 0
+    },
+    "diterima": {
+      "word": "diterima",
+      "status": "active",
+      "updated_at": "2026-09-12T17:02:33.331Z",
+      "display": "diterima",
+      "cn": "被接受；被录用",
+      "root": "terima",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "ditolak": {
+      "word": "ditolak",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:02:36.794Z",
+      "display": "ditolak",
+      "last_review": "2026-09-12T17:02:36.779Z",
+      "last_mastered": "2026-09-12T17:02:36.779Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "promosi": {
+      "word": "promosi",
+      "status": "active",
+      "updated_at": "2026-09-12T17:02:45.192Z",
+      "display": "promosi",
+      "cn": "晋升；推广",
+      "root": "promosi",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "jabatan": {
+      "word": "jabatan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:02:48.892Z",
+      "display": "jabatan",
+      "cn": "职位；职务",
+      "root": "jabat",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "divisi": {
+      "word": "divisi",
+      "status": "active",
+      "updated_at": "2026-09-12T17:02:52.446Z",
+      "display": "divisi",
+      "cn": "部门；事业部",
+      "root": "divisi",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "departemen": {
+      "word": "departemen",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:02:54.452Z",
+      "display": "departemen",
+      "last_review": "2026-09-12T17:02:54.437Z",
+      "last_mastered": "2026-09-12T17:02:54.437Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "perusahaan": {
+      "word": "perusahaan",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:02:56.970Z",
+      "display": "perusahaan",
+      "last_review": "2026-09-12T17:02:56.954Z",
+      "last_mastered": "2026-09-12T17:02:56.954Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "bisnis": {
+      "word": "bisnis",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:02:58.116Z",
+      "display": "bisnis",
+      "last_review": "2026-09-12T17:02:58.100Z",
+      "last_mastered": "2026-09-12T17:02:58.100Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "pelanggan": {
+      "word": "pelanggan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:03:03.245Z",
+      "display": "pelanggan",
+      "cn": "顾客；客户",
+      "root": "langgan",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pemasok": {
+      "word": "pemasok",
+      "status": "active",
+      "updated_at": "2026-09-12T17:03:08.590Z",
+      "display": "pemasok",
+      "cn": "供应商",
+      "root": "pasok",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "vendor": {
+      "word": "vendor",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:03:10.682Z",
+      "display": "vendor",
+      "last_review": "2026-09-12T17:03:10.667Z",
+      "last_mastered": "2026-09-12T17:03:10.667Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "produk": {
+      "word": "produk",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:03:12.016Z",
+      "display": "produk",
+      "last_review": "2026-09-12T17:03:12.000Z",
+      "last_mastered": "2026-09-12T17:03:12.000Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "harga": {
+      "word": "harga",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:03:13.181Z",
+      "display": "harga",
+      "last_review": "2026-09-12T17:03:13.166Z",
+      "last_mastered": "2026-09-12T17:03:13.166Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "untung": {
+      "word": "untung",
+      "status": "active",
+      "updated_at": "2026-09-12T17:03:17.511Z",
+      "display": "untung",
+      "cn": "幸运；赚到",
+      "root": "untung",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "rugi": {
+      "word": "rugi",
+      "status": "active",
+      "updated_at": "2026-09-12T17:03:20.295Z",
+      "display": "rugi",
+      "cn": "亏损；损失",
+      "root": "rugi",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "omzet": {
+      "word": "omzet",
+      "status": "active",
+      "updated_at": "2026-09-12T17:03:26.339Z",
+      "display": "omzet",
+      "cn": "营业额",
+      "root": "omzet",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pendapatan": {
+      "word": "pendapatan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:03:32.491Z",
+      "display": "pendapatan",
+      "cn": "收入",
+      "root": "dapat",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pengeluaran": {
+      "word": "pengeluaran",
+      "status": "active",
+      "updated_at": "2026-09-12T17:03:36.388Z",
+      "display": "pengeluaran",
+      "cn": "支出；花销",
+      "root": "keluar",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "invoice": {
+      "word": "invoice",
+      "status": "active",
+      "updated_at": "2026-09-12T17:03:41.481Z",
+      "display": "invoice",
+      "cn": "发票；账单",
+      "root": "invoice",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kwitansi": {
+      "word": "kwitansi",
+      "status": "active",
+      "updated_at": "2026-09-12T17:03:45.462Z",
+      "display": "kwitansi",
+      "cn": "收据",
+      "root": "kwitansi",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "nota": {
+      "word": "nota",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:03:47.526Z",
+      "display": "nota",
+      "last_review": "2026-09-12T17:03:47.512Z",
+      "last_mastered": "2026-09-12T17:03:47.512Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "pesanan": {
+      "word": "pesanan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:03:52.560Z",
+      "display": "pesanan",
+      "cn": "订单",
+      "root": "pesan",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pengiriman": {
+      "word": "pengiriman",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:03:58.427Z",
+      "display": "pengiriman",
+      "last_review": "2026-09-12T17:03:58.412Z",
+      "last_mastered": "2026-09-12T17:03:58.412Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "paket": {
+      "word": "paket",
+      "status": "active",
+      "updated_at": "2026-09-12T17:04:04.607Z",
+      "display": "paket",
+      "cn": "包裹",
+      "root": "paket",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "gudang": {
+      "word": "gudang",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:04:06.779Z",
+      "display": "gudang",
+      "last_review": "2026-09-12T17:04:06.765Z",
+      "last_mastered": "2026-09-12T17:04:06.765Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "muat": {
+      "word": "muat",
+      "status": "active",
+      "updated_at": "2026-09-12T17:04:13.390Z",
+      "display": "muat",
+      "cn": "装载；容纳",
+      "root": "muat",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bongkar": {
+      "word": "bongkar",
+      "status": "active",
+      "updated_at": "2026-09-12T17:04:18.131Z",
+      "display": "bongkar",
+      "cn": "卸货；拆卸",
+      "root": "bongkar",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "terima": {
+      "word": "terima",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:04:20.490Z",
+      "display": "terima",
+      "last_review": "2026-09-12T17:04:20.476Z",
+      "last_mastered": "2026-09-12T17:04:20.476Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "retur": {
+      "word": "retur",
+      "status": "active",
+      "updated_at": "2026-09-12T17:04:24.442Z",
+      "display": "retur",
+      "cn": "退货",
+      "root": "retur",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "tukar": {
+      "word": "tukar",
+      "status": "active",
+      "updated_at": "2026-09-12T17:04:27.689Z",
+      "display": "tukar",
+      "cn": "更换；交换",
+      "root": "tukar",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "refund": {
+      "word": "refund",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:04:33.010Z",
+      "display": "refund",
+      "last_review": "2026-09-12T17:04:32.995Z",
+      "last_mastered": "2026-09-12T17:04:32.995Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "komplain": {
+      "word": "komplain",
+      "status": "active",
+      "updated_at": "2026-09-12T17:04:36.882Z",
+      "display": "komplain",
+      "cn": "投诉；抱怨",
+      "root": "komplain",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "keluhan": {
+      "word": "keluhan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:04:40.938Z",
+      "display": "keluhan",
+      "cn": "投诉；抱怨",
+      "root": "keluh",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pelayanan": {
+      "word": "pelayanan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:04:44.958Z",
+      "display": "pelayanan",
+      "cn": "服务；接待",
+      "root": "layan",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bagus": {
+      "word": "bagus",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:04:46.837Z",
+      "display": "bagus",
+      "last_review": "2026-09-12T17:04:46.821Z",
+      "last_mastered": "2026-09-12T17:04:46.821Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "pas": {
+      "word": "pas",
+      "status": "active",
+      "updated_at": "2026-09-12T17:04:50.105Z",
+      "display": "pas",
+      "cn": "正好；合适",
+      "root": "pas",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "beda": {
+      "word": "beda",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:04:52.997Z",
+      "display": "beda",
+      "last_review": "2026-09-12T17:04:52.983Z",
+      "last_mastered": "2026-09-12T17:04:52.983Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "sama": {
+      "word": "sama",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:04:54.702Z",
+      "display": "sama",
+      "last_review": "2026-09-12T17:04:54.687Z",
+      "last_mastered": "2026-09-12T17:04:54.687Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "mirip": {
+      "word": "mirip",
+      "status": "active",
+      "updated_at": "2026-09-12T17:04:58.412Z",
+      "display": "mirip",
+      "cn": "相似",
+      "root": "mirip",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bandingkan": {
+      "word": "bandingkan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:04.100Z",
+      "display": "bandingkan",
+      "cn": "比较",
+      "root": "banding",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "lebih baik": {
+      "word": "lebih baik",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:05:06.243Z",
+      "display": "lebih baik",
+      "last_review": "2026-09-12T17:05:06.227Z",
+      "last_mastered": "2026-09-12T17:05:06.227Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "lebih buruk": {
+      "word": "lebih buruk",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:05:07.817Z",
+      "display": "lebih buruk",
+      "last_review": "2026-09-12T17:05:07.803Z",
+      "last_mastered": "2026-09-12T17:05:07.803Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "berguna": {
+      "word": "berguna",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:12.334Z",
+      "display": "berguna",
+      "cn": "有用",
+      "root": "guna",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "percuma": {
+      "word": "percuma",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:19.321Z",
+      "display": "percuma",
+      "cn": "白费；没用",
+      "root": "percuma",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "sia-sia": {
+      "word": "sia-sia",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:22.792Z",
+      "display": "sia-sia",
+      "cn": "徒劳；白费",
+      "root": "sia",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "gampang": {
+      "word": "gampang",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:25.732Z",
+      "display": "gampang",
+      "cn": "容易",
+      "root": "gampang",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "ribet": {
+      "word": "ribet",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:30.909Z",
+      "display": "ribet",
+      "cn": "麻烦、复杂",
+      "root": "ribet",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "praktis": {
+      "word": "praktis",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:33.961Z",
+      "display": "praktis",
+      "cn": "方便；实用",
+      "root": "praktis",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "repot": {
+      "word": "repot",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:37.105Z",
+      "display": "repot",
+      "cn": "麻烦；费事",
+      "root": "repot",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "ngerepotin": {
+      "word": "ngerepotin",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:40.699Z",
+      "display": "ngerepotin",
+      "cn": "给人添麻烦",
+      "root": "repot",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bantu": {
+      "word": "bantu",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:05:43.298Z",
+      "display": "bantu",
+      "last_review": "2026-09-12T17:05:43.284Z",
+      "last_mastered": "2026-09-12T17:05:43.284Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "urus": {
+      "word": "urus",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:46.842Z",
+      "display": "urus",
+      "cn": "处理；照料",
+      "root": "urus",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "ngurus": {
+      "word": "ngurus",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:50.325Z",
+      "display": "ngurus",
+      "cn": "处理；办理；照管（口语）",
+      "root": "urus",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "selesaikan": {
+      "word": "selesaikan",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:05:54.220Z",
+      "display": "selesaikan",
+      "last_review": "2026-09-12T17:05:54.205Z",
+      "last_mastered": "2026-09-12T17:05:54.205Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "beresin": {
+      "word": "beresin",
+      "status": "active",
+      "updated_at": "2026-09-12T17:05:58.474Z",
+      "display": "beresin",
+      "cn": "把……弄完、处理好（口语）",
+      "root": "beres",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "atur": {
+      "word": "atur",
+      "status": "active",
+      "updated_at": "2026-09-12T17:06:04.285Z",
+      "display": "atur",
+      "cn": "安排；整理",
+      "root": "atur",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "ngatur": {
+      "word": "ngatur",
+      "status": "active",
+      "updated_at": "2026-09-12T17:06:08.690Z",
+      "display": "ngatur",
+      "cn": "安排；管理",
+      "root": "atur",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "siapkan": {
+      "word": "siapkan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:06:12.582Z",
+      "display": "siapkan",
+      "cn": "准备好",
+      "root": "siap",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "siapin": {
+      "word": "siapin",
+      "status": "active",
+      "updated_at": "2026-09-12T17:06:15.263Z",
+      "display": "siapin",
+      "cn": "准备好",
+      "root": "siap",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pastikan": {
+      "word": "pastikan",
+      "status": "active",
+      "updated_at": "2026-09-12T17:06:20.064Z",
+      "display": "pastikan",
+      "cn": "确保",
+      "root": "pasti",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "periksa": {
+      "word": "periksa",
+      "status": "active",
+      "updated_at": "2026-09-12T17:06:24.808Z",
+      "display": "periksa",
+      "cn": "检查；看病",
+      "root": "periksa",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "lihat": {
+      "word": "lihat",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:06:26.547Z",
+      "display": "lihat",
+      "last_review": "2026-09-12T17:06:26.533Z",
+      "last_mastered": "2026-09-12T17:06:26.533Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "nonton": {
+      "word": "nonton",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:06:27.582Z",
+      "display": "nonton",
+      "last_review": "2026-09-12T17:06:27.568Z",
+      "last_mastered": "2026-09-12T17:06:27.568Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "denger": {
+      "word": "denger",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:06:28.605Z",
+      "display": "denger",
+      "last_review": "2026-09-12T17:06:28.590Z",
+      "last_mastered": "2026-09-12T17:06:28.590Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "bilang": {
+      "word": "bilang",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:06:29.629Z",
+      "display": "bilang",
+      "last_review": "2026-09-12T17:06:29.614Z",
+      "last_mastered": "2026-09-12T17:06:29.614Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "bicara": {
+      "word": "bicara",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:06:30.822Z",
+      "display": "bicara",
+      "last_review": "2026-09-12T17:06:30.808Z",
+      "last_mastered": "2026-09-12T17:06:30.808Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "jelaskan": {
+      "word": "jelaskan",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:06:32.005Z",
+      "display": "jelaskan",
+      "last_review": "2026-09-12T17:06:31.991Z",
+      "last_mastered": "2026-09-12T17:06:31.991Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "jelasin": {
+      "word": "jelasin",
+      "status": "mastered",
+      "updated_at": "2026-09-12T17:06:35.684Z",
+      "display": "jelasin",
+      "last_review": "2026-09-12T17:06:35.670Z",
+      "last_mastered": "2026-09-12T17:06:35.670Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
     }
   }
 }
