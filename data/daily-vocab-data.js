@@ -7153,5 +7153,225 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-11"
     ]
+  },
+  {
+    "word": "ngotot",
+    "cn": "坚持己见；硬要；很强势地坚持（口语）",
+    "en": "insist strongly; be stubborn about something",
+    "root": "ngotot",
+    "root_cn": "强硬坚持；不肯让步",
+    "example": "Kalau datanya belum lengkap, jangan ngotot bilang rencana ini pasti aman.",
+    "example_cn": "如果数据还不完整，就别硬说这个方案一定没问题。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ]
+  },
+  {
+    "word": "ngeles",
+    "cn": "找借口；绕着说；回避真正问题（口语）",
+    "en": "make excuses; evade; dodge the point",
+    "root": "ngeles",
+    "root_cn": "找借口；回避重点",
+    "example": "Kalau memang salah, bilang aja terus terang, nggak usah ngeles panjang-panjang.",
+    "example_cn": "如果确实错了，就直接说，不用绕一大圈找借口。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ]
+  },
+  {
+    "word": "nyindir",
+    "cn": "阴阳一下；含沙射影地说；暗讽（口语）",
+    "en": "make an indirect jab; speak sarcastically",
+    "root": "sindir",
+    "root_cn": "讽刺；暗指",
+    "example": "Kalau ada masalah sama aku, bilang langsung aja, nggak perlu nyindir di grup.",
+    "example_cn": "如果对我有意见就直接说，不用在群里含沙射影。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ]
+  },
+  {
+    "word": "nyinggung",
+    "cn": "提到；触及；说到让人不舒服的话题（口语）",
+    "en": "mention; touch on; offend",
+    "root": "singgung",
+    "root_cn": "触及；提到",
+    "example": "Tadi aku cuma nyinggung soal deadline, bukan bermaksud nyalahin siapa-siapa.",
+    "example_cn": "我刚才只是提了一下截止时间，不是想怪任何人。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ]
+  },
+  {
+    "word": "nimpalin",
+    "cn": "接话；回一句；顺着对方的话回应（口语）",
+    "en": "reply; chime in; respond to a remark",
+    "root": "timpal",
+    "root_cn": "接话；回应",
+    "example": "Dia baru selesai ngomong, terus temanku langsung nimpalin dengan contoh lain.",
+    "example_cn": "他刚说完，我朋友马上接了一句，补了另一个例子。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ]
+  },
+  {
+    "word": "kepancing",
+    "cn": "被激到；被带着回应；忍不住上钩（口语）",
+    "en": "get provoked; take the bait; be drawn into reacting",
+    "root": "pancing",
+    "root_cn": "钓；引诱；诱出反应",
+    "example": "Aku tadi hampir kepancing, tapi akhirnya milih diam dulu.",
+    "example_cn": "我刚才差点被激得回嘴，不过最后还是选择先不说。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ]
+  },
+  {
+    "word": "canggung",
+    "cn": "尴尬拘谨；相处不自然",
+    "en": "awkward; uneasy; uncomfortable socially",
+    "root": "canggung",
+    "root_cn": "拘谨；不自然",
+    "example": "Setelah debat tadi, suasana meeting sempat jadi agak canggung.",
+    "example_cn": "刚才争论之后，会议气氛一度有点尴尬。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ]
+  },
+  {
+    "word": "ganjel",
+    "cn": "心里有点卡；觉得哪里不对劲；有件事没说开（口语）",
+    "en": "feel something is off; have something unresolved",
+    "root": "ganjal",
+    "root_cn": "垫住；卡住；妨碍",
+    "example": "Sebenarnya semuanya sudah selesai, cuma aku masih ngerasa ada yang ganjel.",
+    "example_cn": "其实事情都处理完了，只是我心里还是觉得有点不对劲。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ]
+  },
+  {
+    "word": "salah paham",
+    "cn": "误会；理解错对方的意思",
+    "en": "misunderstand; misunderstanding",
+    "root": "paham",
+    "root_cn": "理解；明白",
+    "example": "Biar nggak salah paham, aku jelasin dulu maksudku dari awal.",
+    "example_cn": "为了避免误会，我先从头解释一下我的意思。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ]
+  },
+  {
+    "word": "baper",
+    "cn": "太往心里去；因为一句话情绪受影响（口语）",
+    "en": "take it personally; get emotionally affected",
+    "root": "bawa perasaan",
+    "root_cn": "把情绪带进去；往心里去",
+    "example": "Dia cuma kasih masukan soal kerjaan, jadi jangan langsung baper.",
+    "example_cn": "他只是对工作提意见，所以别马上往心里去。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ]
   }
 ];
