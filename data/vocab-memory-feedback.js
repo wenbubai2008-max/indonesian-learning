@@ -1,41 +1,62 @@
 (function(){
   const MEM_KEY='indo_mem';
-  let installed=false,pending=false;
+  let installed=false, syncing=false;
+  function norm(w){return String(w||'').trim().toLowerCase()}
   function mem(){try{return JSON.parse(localStorage.getItem(MEM_KEY)||'{}')}catch(e){return {}}}
-  function statusOf(x){if(!x||!x.word)return '';const m=mem(),k=String(x.word||'').trim().toLowerCase();return m[x.word]||m[k]||'';}
-  function isKnown(x){return statusOf(x)==='know';}
-  function isWeak(x){const s=statusOf(x);return s==='fuzzy'||s==='dont';}
-  function currentItem(){try{return (typeof FILTER!=='undefined'&&Array.isArray(FILTER)&&FILTER.length)?FILTER[Math.max(0,Math.min(typeof idx==='number'?idx:0,FILTER.length-1))]:null;}catch(e){return null;}}
-  function currentSource(){try{return (typeof DB!=='undefined'&&Array.isArray(DB))?DB:[];}catch(e){return [];}}
-  function activeLabel(){const sel=document.getElementById('librarySelect');if(!sel)return '词库';const opt=sel.options&&sel.selectedIndex>=0?sel.options[sel.selectedIndex]:null;return String(opt?.textContent||'词库').replace(/（[^）]*）/g,'').trim();}
-  function addStyle(){if(document.getElementById('vocabMemoryFeedbackStyle'))return;const s=document.createElement('style');s.id='vocabMemoryFeedbackStyle';s.textContent=`@keyframes memFlashKnow{0%{background:#fff}45%{background:#dff6e7;border-color:#63b879;color:#166534}100%{background:#fff}}@keyframes memFlashFuzzy{0%{background:#fff}45%{background:#fff2cc;border-color:#d6a63d;color:#8a5a00}100%{background:#fff}}@keyframes memFlashDont{0%{background:#fff}45%{background:#ffe1de;border-color:#d87870;color:#a52b22}100%{background:#fff}}.memory button.mem-flash-know{animation:memFlashKnow .18s ease}.memory button.mem-flash-fuzzy{animation:memFlashFuzzy .18s ease}.memory button.mem-flash-dont{animation:memFlashDont .18s ease}#vocab>#statsBar{margin:0 0 16px!important}`;document.head.appendChild(s);}
-  function moveStatsIntoVocab(){const stats=document.getElementById('statsBar'),page=document.getElementById('vocab');if(!stats||!page)return;if(stats.parentElement!==page){const card=page.querySelector(':scope > .card');if(card)page.insertBefore(stats,card);else page.appendChild(stats);}if(page.classList.contains('active'))stats.style.display='grid';}
-  function renameWeakCard(){const rc=document.getElementById('reviewCount'),card=rc?.closest('button');if(!card)return;const label=card.querySelector('span');if(label)label.textContent='不会';card.title='查看当前词库“模糊 / 不会”的词';card.style.cursor='pointer';card.onclick=function(e){e&&e.preventDefault();showWeakCurrent();};}
-  function feedbackButton(v){const buttons=[...document.querySelectorAll('#vocabBox .memory button')],label=v==='know'?'会了':v==='fuzzy'?'模糊':'不会',btn=buttons.find(b=>(b.textContent||'').trim().includes(label));if(!btn)return;const cls=v==='know'?'mem-flash-know':v==='fuzzy'?'mem-flash-fuzzy':'mem-flash-dont';btn.classList.remove('mem-flash-know','mem-flash-fuzzy','mem-flash-dont');void btn.offsetWidth;btn.classList.add(cls);}
-  function syncScopedStats(){
-    const arr=currentSource(),total=arr.length,known=arr.filter(isKnown).length,weak=arr.filter(isWeak).length,unchecked=Math.max(0,total-known-weak);
-    const vc=document.getElementById('vocabCount'),kc=document.getElementById('knownCount'),rc=document.getElementById('reviewCount');
-    if(vc)vc.textContent=total;if(kc)kc.textContent=known;if(rc)rc.textContent=weak;renameWeakCard();
-    const st=document.getElementById('dbStatus'),mode=localStorage.getItem('vocab_view_mode')||'';
-    if(st&&document.getElementById('vocab')?.classList.contains('active')&&!['known','weak'].includes(mode))st.textContent=activeLabel()+' · '+unchecked+' 未判断 · '+weak+' 不会 · '+known+' 已掌握 · '+total+' 总词';
-    return {total,known,weak,unchecked};
+  function statusOf(m,w){const k=norm(w);return m[w]||m[k]||''}
+  function unique(arr){const seen=new Set();return (arr||[]).filter(x=>x&&x.word&&!seen.has(norm(x.word))&&seen.add(norm(x.word)))}
+  function currentKey(){return document.getElementById('librarySelect')?.value||localStorage.getItem('selected_vocab_library')||'top1000'}
+  function sourceFor(key){
+    if(key==='master')return unique(window.MASTER_VOCAB_OBJECTS||[]);
+    if(key==='daily')return unique(window.DAILY_VOCAB_DB||[]);
+    if(key==='unknown')return unique(typeof window.getUnfamiliarVocabulary==='function'?window.getUnfamiliarVocabulary():[]);
+    return unique(window.EMBEDDED_DB||[]);
   }
-  function showWeakCurrent(){
-    const arr=currentSource();
-    try{FILTER=arr.filter(isWeak);idx=0;}catch(e){return;}
-    localStorage.setItem('vocab_view_mode','weak');
-    const search=document.getElementById('search');if(search)search.value='';const cat=document.getElementById('cat');if(cat)cat.value='';
-    syncScopedStats();const st=document.getElementById('dbStatus');if(st)st.textContent=activeLabel()+' · 不会 '+FILTER.length+' 词（模糊 + 不会）';
-    if(FILTER.length&&typeof renderVocab==='function')renderVocab();else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty">当前词库还没有标记“模糊 / 不会”的词。</div>';}
+  function labelFor(key){return key==='master'?'主学习词库':key==='daily'?'每日学习词汇':key==='unknown'?'陌生词汇':'Top1000'}
+  function stats(){
+    const key=currentKey(),src=sourceFor(key),m=mem();let known=0,review=0;
+    src.forEach(x=>{const s=statusOf(m,x.word);if(s==='know')known++;else if(s==='fuzzy'||s==='dont')review++;});
+    return {key,src,total:src.length,known,review,unchecked:Math.max(0,src.length-known-review)};
+  }
+  function setText(id,value){const el=document.getElementById(id);if(el&&el.textContent!==String(value))el.textContent=String(value)}
+  function setLabel(){const rc=document.getElementById('reviewCount');const card=rc?.closest('button');const span=card?.querySelector('span');if(span&&span.textContent!=='不会')span.textContent='不会';if(card)card.title='查看当前词库“模糊 / 不会”的词汇'}
+  function clearActive(){document.querySelectorAll('#statsBar .statAction').forEach(x=>x.classList.remove('vocabStatActive'))}
+  function applyActive(){
+    clearActive();const mode=localStorage.getItem('vocab_view_mode')||'';
+    if(mode==='known')document.getElementById('knownCount')?.closest('button')?.classList.add('vocabStatActive');
+    if(mode==='review')document.getElementById('reviewCount')?.closest('button')?.classList.add('vocabStatActive');
+  }
+  function sync(){
+    if(syncing)return;syncing=true;
+    try{
+      const s=stats();setText('vocabCount',s.total);setText('knownCount',s.known);setText('reviewCount',s.review);setLabel();
+      const st=document.getElementById('dbStatus'),mode=localStorage.getItem('vocab_view_mode')||'';
+      if(st){
+        let text='';
+        if(mode==='known')text=labelFor(s.key)+' · 已掌握 '+s.known+' 词（查看中）';
+        else if(mode==='review')text=labelFor(s.key)+' · 不会 '+s.review+' 词（查看中）';
+        else text=labelFor(s.key)+' · '+s.unchecked+' 未判断 · '+s.review+' 不会 · '+s.known+' 已掌握 · '+s.total+' 总词';
+        if(st.textContent!==text)st.textContent=text;
+      }
+      applyActive();
+    }finally{syncing=false;}
+  }
+  function addStyle(){
+    if(document.getElementById('vocabViewStateStyle'))return;
+    const s=document.createElement('style');s.id='vocabViewStateStyle';s.textContent=`#statsBar .statAction.vocabStatActive{border-color:#3157d5!important;background:#eef3ff!important;box-shadow:0 0 0 2px rgba(49,87,213,.10) inset!important}#statsBar .statAction.vocabStatActive span,#statsBar .statAction.vocabStatActive b{color:#2445b7!important}`;document.head.appendChild(s);
   }
   function install(){
-    if(installed)return;if(typeof window.mark!=='function'||typeof window.go!=='function'){setTimeout(install,120);return;}installed=true;addStyle();moveStatsIntoVocab();renameWeakCard();
-    const baseMark=window.mark;const wrappedMark=function(v){if(pending)return;const item=currentItem();if(!item)return;pending=true;feedbackButton(v);setTimeout(function(){try{baseMark(v);setTimeout(function(){syncScopedStats();if(localStorage.getItem('vocab_view_mode')==='weak')showWeakCurrent();},60);}finally{pending=false;}},120);};window.mark=wrappedMark;try{mark=wrappedMark}catch(e){}
-    const baseGo=window.go;window.go=function(id){baseGo(id);moveStatsIntoVocab();if(id==='vocab')setTimeout(function(){renameWeakCard();syncScopedStats();},100);};try{go=window.go}catch(e){}
-    const sel=document.getElementById('librarySelect');if(sel)sel.addEventListener('change',function(){localStorage.removeItem('vocab_view_mode');setTimeout(function(){renameWeakCard();syncScopedStats();},100);});
-    document.querySelector('#vocab .toolbar')?.addEventListener('click',function(e){const t=e.target;if(t&&t.tagName==='BUTTON'&&(t.textContent||'').includes('重新加载')){localStorage.removeItem('vocab_view_mode');setTimeout(function(){renameWeakCard();syncScopedStats();},140);}});
-    window.showWeakWords=showWeakCurrent;
-    setTimeout(function(){renameWeakCard();syncScopedStats();},220);
+    if(installed)return;installed=true;addStyle();
+    const known=document.getElementById('knownCount')?.closest('button'),review=document.getElementById('reviewCount')?.closest('button');
+    if(known)known.addEventListener('click',()=>setTimeout(sync,0),true);
+    if(review)review.addEventListener('click',()=>setTimeout(sync,0),true);
+    document.getElementById('librarySelect')?.addEventListener('change',()=>setTimeout(sync,0));
+    document.querySelector('#vocab .toolbar')?.addEventListener('click',e=>{if(e.target?.tagName==='BUTTON'&&(e.target.textContent||'').includes('重新加载'))setTimeout(sync,30)});
+    const statsBar=document.getElementById('statsBar');if(statsBar)new MutationObserver(()=>{if(!syncing)requestAnimationFrame(sync)}).observe(statsBar,{subtree:true,childList:true,characterData:true});
+    const dbStatus=document.getElementById('dbStatus');if(dbStatus)new MutationObserver(()=>{if(!syncing)requestAnimationFrame(sync)}).observe(dbStatus,{subtree:true,childList:true,characterData:true});
+    window.addEventListener('storage',e=>{if(e.key===MEM_KEY)setTimeout(sync,0)});
+    window.addEventListener('vocab-library-ready',()=>setTimeout(sync,0));
+    setTimeout(sync,150);
   }
   if(document.readyState==='complete')setTimeout(install,120);else window.addEventListener('load',()=>setTimeout(install,120),{once:true});
 })();
