@@ -1424,20 +1424,21 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-09-05 19:00",
+    "last_seen": "2026-09-12 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-08-29",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-12"
     ],
     "root_cn": "对；正确",
-    "example": "Kebetulan aku lagi di daerah sana, jadi sekalian mampir aja.",
-    "example_cn": "正好我就在那一带，所以顺便过去一下。"
+    "example": "Kebetulan aku pernah menangani masalah yang mirip, jadi mungkin bisa bantu.",
+    "example_cn": "正好我以前处理过类似的问题，所以也许能帮上忙。"
   },
   {
     "word": "nyari",
@@ -3074,46 +3075,51 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "menentukan",
-    "cn": "确定、决定",
-    "en": "",
+    "cn": "确定；决定",
+    "en": "determine; decide; set",
     "root": "tentu",
     "categories": [
       "每日学习",
       "19:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-08-29 19:00",
+    "last_seen": "2026-09-12 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-08-29"
-    ]
+      "2026-08-29",
+      "2026-09-12"
+    ],
+    "root_cn": "确定；一定",
+    "example": "Kita belum bisa menentukan jadwal final sebelum semua orang konfirmasi.",
+    "example_cn": "所有人确认之前，我们还不能确定最终时间。"
   },
   {
     "word": "menangani",
     "cn": "处理；负责应对",
-    "en": "handle; deal with; take care of",
+    "en": "handle; deal with",
     "root": "tangan",
     "categories": [
       "每日学习",
       "19:00",
       "原始课程"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-30 19:00",
-    "last_seen": "2026-09-04 19:00",
+    "last_seen": "2026-09-12 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
       "2026-08-30",
-      "2026-09-04"
+      "2026-09-04",
+      "2026-09-12"
     ],
-    "example": "Bagian ini aku yang menangani, kamu fokus ke yang lain aja.",
-    "example_cn": "这一部分我来处理，你专心做别的就行。",
+    "example": "Kalau situasinya mulai panas, siapa yang paling cocok menangani pembicaraan ini?",
+    "example_cn": "如果气氛开始紧张，谁最适合来处理这次沟通？",
     "root_cn": "手"
   },
   {
@@ -3586,22 +3592,26 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "cadangan",
-    "cn": "备用；储备；后备",
-    "en": "reserve; backup",
+    "cn": "备用；储备；后备方案",
+    "en": "backup; reserve",
     "root": "cadang",
     "categories": [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 19:00",
-    "last_seen": "2026-08-31 19:00",
+    "last_seen": "2026-09-12 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-08-31"
-    ]
+      "2026-08-31",
+      "2026-09-12"
+    ],
+    "root_cn": "预留；准备备用",
+    "example": "Kalau rencana utama nggak jalan, kita masih punya rencana cadangan.",
+    "example_cn": "如果主要方案行不通，我们还有备用方案。"
   },
   {
     "word": "kendaraan",
@@ -7156,21 +7166,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "ngotot",
-    "cn": "坚持己见；硬要；很强势地坚持（口语）",
-    "en": "insist strongly; be stubborn about something",
+    "cn": "强硬坚持；硬要",
+    "en": "insist strongly; be stubborn",
     "root": "ngotot",
     "root_cn": "强硬坚持；不肯让步",
-    "example": "Kalau datanya belum lengkap, jangan ngotot bilang rencana ini pasti aman.",
-    "example_cn": "如果数据还不完整，就别硬说这个方案一定没问题。",
+    "example": "Kalau belum ada bukti yang jelas, jangan ngotot mempertahankan satu pilihan.",
+    "example_cn": "如果还没有明确证据，就别强硬地死守一个选择。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-12"
@@ -7200,21 +7212,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "nyindir",
-    "cn": "阴阳一下；含沙射影地说；暗讽（口语）",
+    "cn": "暗讽；含沙射影地说",
     "en": "make an indirect jab; speak sarcastically",
     "root": "sindir",
     "root_cn": "讽刺；暗指",
-    "example": "Kalau ada masalah sama aku, bilang langsung aja, nggak perlu nyindir di grup.",
-    "example_cn": "如果对我有意见就直接说，不用在群里含沙射影。",
+    "example": "Kalau ada masalah, bilang langsung aja daripada nyindir di grup.",
+    "example_cn": "如果有问题就直接说，比在群里暗讽更好。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-12"
@@ -7289,20 +7303,22 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "canggung",
     "cn": "尴尬拘谨；相处不自然",
-    "en": "awkward; uneasy; uncomfortable socially",
+    "en": "awkward; uneasy",
     "root": "canggung",
     "root_cn": "拘谨；不自然",
-    "example": "Setelah debat tadi, suasana meeting sempat jadi agak canggung.",
-    "example_cn": "刚才争论之后，会议气氛一度有点尴尬。",
+    "example": "Setelah beda pendapat, suasananya sempat canggung tapi cepat normal lagi.",
+    "example_cn": "意见不一致以后，气氛一度有点尴尬，不过很快又正常了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-12"
@@ -7332,21 +7348,23 @@ window.DAILY_VOCAB_DB = [
   },
   {
     "word": "salah paham",
-    "cn": "误会；理解错对方的意思",
-    "en": "misunderstand; misunderstanding",
+    "cn": "误会；理解错",
+    "en": "misunderstanding; misunderstand",
     "root": "paham",
     "root_cn": "理解；明白",
-    "example": "Biar nggak salah paham, aku jelasin dulu maksudku dari awal.",
-    "example_cn": "为了避免误会，我先从头解释一下我的意思。",
+    "example": "Biar nggak salah paham, coba ulangi inti maksudmu dengan lebih singkat.",
+    "example_cn": "为了避免误会，试着更简短地再说一遍你的核心意思。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-12 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-12"
@@ -7373,5 +7391,71 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-12"
     ]
+  },
+  {
+    "word": "keputusan",
+    "cn": "决定；决策",
+    "en": "decision",
+    "root": "putus",
+    "root_cn": "断开；结束；作出决定",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 19:00",
+    "last_seen": "2026-09-12 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ],
+    "example": "Sebelum ambil keputusan, kita dengar pendapat semua orang dulu.",
+    "example_cn": "做决定之前，我们先听听所有人的意见。"
+  },
+  {
+    "word": "kesempatan",
+    "cn": "机会；时机",
+    "en": "opportunity; chance",
+    "root": "sempat",
+    "root_cn": "有空；来得及；有机会",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 19:00",
+    "last_seen": "2026-09-12 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ],
+    "example": "Kasih dia kesempatan buat jelasin maksudnya dulu.",
+    "example_cn": "先给他一个机会解释一下自己的意思。"
+  },
+  {
+    "word": "sikap",
+    "cn": "态度；立场；举止",
+    "en": "attitude; stance",
+    "root": "sikap",
+    "root_cn": "态度；立场",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-12 19:00",
+    "last_seen": "2026-09-12 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-12"
+    ],
+    "example": "Walaupun beda pendapat, sikap kita tetap harus tenang.",
+    "example_cn": "即使意见不同，我们的态度还是要冷静。"
   }
 ];
