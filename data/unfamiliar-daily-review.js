@@ -3,14 +3,11 @@
   function cleanup(){const old=document.getElementById('unfamiliarDailyReview');if(old)old.remove();}
   cleanup();const body=document.getElementById('dailyBody');if(body)new MutationObserver(cleanup).observe(body,{childList:true,subtree:true});
 
-  // 词汇页顶部统计始终只统计当前选中的词库。
-  if(!window.__vocabScopedStatsRequested){window.__vocabScopedStatsRequested=true;const ss=document.createElement('script');ss.src='data/vocab-scoped-stats.js?v=20260912-5';document.body.appendChild(ss);}
-
-  // 主学习词库：800 词固定读取；进入词汇页或重新选择时强制按主词库重新渲染，避免被其他词库脚本覆盖。
-  if(!window.__masterVocabIntegrationRequested){window.__masterVocabIntegrationRequested=true;const m=document.createElement('script');m.src='data/master-vocab-integration.js?v=20260912-11';document.body.appendChild(m);}
-
-  // 主学习词库点击采用单次渲染，避免“模糊 / 不会”后新词出现时发生二次跳动。
-  if(!window.__masterVocabClickStabilityRequested){window.__masterVocabClickStabilityRequested=true;const c=document.createElement('script');c.src='data/master-vocab-click-stability.js?v=20260912-2';document.body.appendChild(c);}
+  // 主学习词库、当前词库统计和切换现在统一由 library-switcher.js 管理。
+  // 这里不再重复加载 master-vocab-integration / click-stability / scoped-stats，避免多个脚本争抢同一个下拉菜单。
+  window.__masterVocabIntegrationRequested=true;
+  window.__masterVocabClickStabilityRequested=true;
+  window.__vocabScopedStatsRequested=true;
 
   // 统一弱项池：阅读陌生词、快速练习错题、模糊/不会、专项强化共用同一状态。
   if(window.__homeLearningUpgradeLoading)return;window.__homeLearningUpgradeLoading=true;
