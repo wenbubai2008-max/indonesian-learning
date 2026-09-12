@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T14:34:59.545Z",
+  "updated_at": "2026-09-12T14:39:24.536Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -668,8 +668,9 @@
     "pihak": {
       "word": "pihak",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-12T14:39:07.886Z",
       "display": "pihak",
+      "cn": "方面，方",
       "reasons": [
         "memory_dont"
       ],
@@ -13700,6 +13701,18 @@
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
+    },
+    "hak": {
+      "word": "hak",
+      "status": "active",
+      "updated_at": "2026-09-12T14:39:14.191Z",
+      "display": "hak",
+      "cn": "权利 / 法律",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
     }
   }
 }
