@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T16:30:22.031Z",
+  "updated_at": "2026-09-12T16:32:33.337Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -641,17 +641,16 @@
     },
     "pajak": {
       "word": "pajak",
-      "status": "active",
-      "updated_at": "2026-09-12T14:25:36.043Z",
+      "status": "mastered",
+      "updated_at": "2026-09-12T16:32:22.897Z",
       "display": "pajak",
       "cn": "税",
       "root": "pajak",
-      "reasons": [
-        "memory_fuzzy",
-        "memory_dont"
-      ],
+      "last_review": "2026-09-12T16:32:22.885Z",
+      "last_mastered": "2026-09-12T16:32:22.885Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "sesuai": {
       "word": "sesuai",
