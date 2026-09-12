@@ -1,7 +1,7 @@
 (function(){
   if(window.__masterVocabIntegrationLoading)return;
   window.__masterVocabIntegrationLoading=true;
-  const KEY='master',LABEL='主学习词库',BACKFILL_KEY='master_known_backfill_v1';
+  const KEY='master',LABEL='主学习词库',BACKFILL_KEY='master_known_backfill_v1',PROGRESS_KEY='vocab_progress_master';
   function norm(w){return String(w||'').trim().toLowerCase();}
   function mem(){try{return JSON.parse(localStorage.getItem('indo_mem')||'{}')}catch(e){return {}}}
   function load(src,done){const s=document.createElement('script');s.src=src;s.onload=()=>done&&done();s.onerror=()=>console.warn('master vocab load failed',src);document.body.appendChild(s);}
@@ -22,11 +22,10 @@
     return out;
   }
   function rebuildCategories(){const cat=document.getElementById('cat');if(!cat)return;cat.innerHTML='<option value="">全部分类</option><option>主学习词库</option>';}
-  function restoreIndex(arr){const saved=norm(localStorage.getItem('vocab_progress_master')||'');if(!saved)return 0;const i=arr.findIndex(x=>norm(x.word)===saved);return i>=0?i:0;}
-  function saveProgress(){try{const x=typeof current==='function'?current():null;if(x&&x.word)localStorage.setItem('vocab_progress_master',norm(x.word));}catch(e){}}
   function statusOf(m,word){const k=norm(word);return m[word]||m[k]||'';}
   function isKnown(m,word){return statusOf(m,word)==='know';}
   function isWeak(m,word){const s=statusOf(m,word);return s==='fuzzy'||s==='dont';}
+  function isFresh(m,word){return !statusOf(m,word);}
   function orderedPending(arr,m){
     const fresh=[],weak=[];
     arr.forEach(function(x){
@@ -34,6 +33,36 @@
       (isWeak(m,x.word)?weak:fresh).push(x);
     });
     return fresh.concat(weak);
+  }
+  function firstFreshAfter(word,arr,m){
+    const k=norm(word),start=Math.max(-1,arr.findIndex(x=>norm(x.word)===k));
+    for(let i=start+1;i<arr.length;i++)if(isFresh(m,arr[i].word))return arr[i].word;
+    for(let i=0;i<=start;i++)if(isFresh(m,arr[i].word))return arr[i].word;
+    return '';
+  }
+  function resolveResumeWord(arr,m){
+    const saved=norm(localStorage.getItem(PROGRESS_KEY)||'');
+    if(saved){
+      const exact=arr.find(x=>norm(x.word)===saved);
+      if(exact&&isFresh(m,exact.word))return exact.word;
+      const next=firstFreshAfter(saved,arr,m);if(next)return next;
+    }
+    const first=arr.find(x=>isFresh(m,x.word));return first?first.word:'';
+  }
+  function restoreIndex(pending,arr,m){
+    if(!pending.length)return 0;
+    const target=norm(resolveResumeWord(arr,m));
+    if(target){const i=pending.findIndex(x=>norm(x.word)===target);if(i>=0)return i;}
+    return 0;
+  }
+  function saveProgress(){
+    try{
+      if(document.getElementById('librarySelect')?.value!==KEY)return;
+      const arr=master(),m=mem(),x=typeof current==='function'?current():null;
+      if(!x||!x.word)return;
+      let target=isFresh(m,x.word)?x.word:firstFreshAfter(x.word,arr,m);
+      if(target)localStorage.setItem(PROGRESS_KEY,norm(target));
+    }catch(e){}
   }
   function updateMasterStatus(arr,m){
     arr=arr||master();m=m||mem();
@@ -45,7 +74,7 @@
   }
   function setMaster(){
     const arr=master(),m=mem();
-    DB=arr;FILTER=orderedPending(arr,m);idx=restoreIndex(FILTER);rebuildCategories();
+    DB=arr;FILTER=orderedPending(arr,m);idx=restoreIndex(FILTER,arr,m);rebuildCategories();
     const search=document.getElementById('search');if(search)search.value='';
     const select=document.getElementById('librarySelect');if(select)select.value=KEY;
     const count=document.getElementById('vocabCount');if(count)count.textContent=arr.length;
@@ -54,6 +83,16 @@
     if(FILTER.length&&typeof renderVocab==='function'){renderVocab();saveProgress();}
     else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty"><b>主学习词库已全部核对 ✓</b><div style="margin-top:8px">点过“会了”的词仍保留在总词库，但不再占每日新词名额。</div></div>';}
     localStorage.setItem('selected_vocab_library',KEY);
+  }
+  function moveMarkedWordOutOfFirstPass(markedWord){
+    if(document.getElementById('librarySelect')?.value!==KEY)return;
+    const arr=master(),m=mem();
+    const next=firstFreshAfter(markedWord,arr,m);
+    FILTER=orderedPending(arr,m);
+    if(next){const i=FILTER.findIndex(x=>norm(x.word)===norm(next));idx=i>=0?i:0;localStorage.setItem(PROGRESS_KEY,norm(next));}
+    else{idx=0;}
+    updateMasterStatus(arr,m);
+    if(typeof renderVocab==='function')renderVocab();
   }
   function ensureOption(){
     const select=document.getElementById('librarySelect');if(!select)return false;
@@ -74,16 +113,13 @@
       try{p.markMastered(word,'master_known_backfill');n++;}catch(e){}
     });
     localStorage.setItem(BACKFILL_KEY,'done');
-    if(n&&window.WeaknessSync&&typeof window.WeaknessSync.syncNow==='function'){
-      setTimeout(function(){window.WeaknessSync.syncNow();},1200);
-    }
+    if(n&&window.WeaknessSync&&typeof window.WeaknessSync.syncNow==='function')setTimeout(function(){window.WeaknessSync.syncNow();},1200);
   }
   function patchKnownBridge(tries){
     const p=window.WeaknessPool;
     if(p&&typeof p.markMastered==='function'){
       if(!p.__masterKnownBridge){p.__masterKnownBridge=true;p.markKnown=function(word,reason){return p.markMastered(word,reason||'vocab_known');};}
-      backfillKnownOnce(p);
-      return;
+      backfillKnownOnce(p);return;
     }
     if((tries||0)<80)setTimeout(()=>patchKnownBridge((tries||0)+1),100);
   }
@@ -96,7 +132,13 @@
     const back=document.querySelector('#vocab .back');if(back)back.addEventListener('click',saveProgress,true);
     window.addEventListener('pagehide',saveProgress);
     document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')saveProgress();});
-    document.addEventListener('click',function(e){if(e.target&&e.target.closest&&e.target.closest('#vocabBox .memory'))setTimeout(refreshStatusIfMaster,260);},true);
+    document.addEventListener('click',function(e){
+      const btn=e.target&&e.target.closest?e.target.closest('#vocabBox .memory button'):null;
+      if(!btn||document.getElementById('librarySelect')?.value!==KEY)return;
+      const x=typeof current==='function'?current():null,word=x&&x.word;
+      if(!word)return;
+      setTimeout(function(){moveMarkedWordOutOfFirstPass(word);},340);
+    },true);
     window.addEventListener('unknown-vocab-changed',function(){setTimeout(ensureOption,0);setTimeout(refreshStatusIfMaster,0);});
     window.addEventListener('weak-pool-changed',function(){patchKnownBridge(0);setTimeout(refreshStatusIfMaster,0);});
     window.addEventListener('storage',function(e){if(e.key==='indo_mem')setTimeout(refreshStatusIfMaster,0);});
