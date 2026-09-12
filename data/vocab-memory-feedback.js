@@ -7,7 +7,7 @@
   function unique(arr){const seen=new Set();return (arr||[]).filter(x=>x&&x.word&&!seen.has(norm(x.word))&&seen.add(norm(x.word)))}
   function currentKey(){return document.getElementById('librarySelect')?.value||localStorage.getItem('selected_vocab_library')||'top1000'}
   function sourceFor(key){
-    if(key==='master')return unique(window.MASTER_VOCAB_OBJECTS||[]);
+    if(key==='master')return unique(typeof window.getEffectiveMasterVocabulary==='function'?window.getEffectiveMasterVocabulary():(window.MASTER_VOCAB_OBJECTS||[]));
     if(key==='daily')return unique(window.DAILY_VOCAB_DB||[]);
     if(key==='unknown')return unique(typeof window.getUnfamiliarVocabulary==='function'?window.getUnfamiliarVocabulary():[]);
     return unique(window.EMBEDDED_DB||[]);
@@ -56,6 +56,7 @@
     const dbStatus=document.getElementById('dbStatus');if(dbStatus)new MutationObserver(()=>{if(!syncing)requestAnimationFrame(sync)}).observe(dbStatus,{subtree:true,childList:true,characterData:true});
     window.addEventListener('storage',e=>{if(e.key===MEM_KEY)setTimeout(sync,0)});
     window.addEventListener('vocab-library-ready',()=>setTimeout(sync,0));
+    window.addEventListener('master-top1000-weak-merged',()=>setTimeout(sync,0));
     setTimeout(sync,150);
   }
   if(document.readyState==='complete')setTimeout(install,120);else window.addEventListener('load',()=>setTimeout(install,120),{once:true});
@@ -63,7 +64,7 @@
 (function(){
   if(document.querySelector('script[data-master-top1000-weak-merge]'))return;
   const s=document.createElement('script');
-  s.src='data/master-top1000-weak-merge.js?v=20260912-1';
+  s.src='data/master-top1000-weak-merge.js?v=20260913-1';
   s.dataset.masterTop1000WeakMerge='1';
   document.head.appendChild(s);
 })();
