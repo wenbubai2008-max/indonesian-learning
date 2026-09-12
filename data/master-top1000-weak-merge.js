@@ -1,5 +1,6 @@
 (function(){
   const MEMBER_KEY='master_top1000_members_v1';
+  let scheduled=false;
   function norm(w){return String(w||'').trim().toLowerCase()}
   function mem(){try{return JSON.parse(localStorage.getItem('indo_mem')||'{}')}catch(e){return {}}}
   function statusOf(m,w){const k=norm(w);return m[w]||m[k]||''}
@@ -42,8 +43,8 @@
     const topMap=new Map();top.forEach(x=>{const k=norm(x&&x.word);if(k&&!topMap.has(k))topMap.set(k,x)});
     let weak=0,duplicates=0,newMembers=0;
 
-    // First migration: any Top1000 word the user marked fuzzy/don't becomes a permanent
-    // member of the main-learning library unless it was already in the static master base.
+    // A Top1000 word marked fuzzy/don't becomes a permanent member of the main library
+    // unless it was already present in the static master base.
     topMap.forEach((x,k)=>{
       const s=statusOf(m,x.word);
       if(s!=='fuzzy'&&s!=='dont')return;
@@ -53,8 +54,8 @@
     });
     saveMembers(members);
 
-    // Re-apply the saved membership on every load. Once added to the main library,
-    // changing the learning status to "know" must not make the word disappear later.
+    // Re-apply saved membership on every load. Learning the word later changes its
+    // status, not its membership in the main-learning library.
     const seen=new Set(master.map(x=>norm(x&&x.word)).filter(Boolean));
     let restored=0;
     members.forEach(k=>{
@@ -74,9 +75,14 @@
     window.dispatchEvent(new CustomEvent('master-top1000-weak-merged',{detail:result}));
     return result;
   }
-  function run(){merge();}
+  function schedule(){
+    if(scheduled)return;scheduled=true;
+    setTimeout(function(){scheduled=false;merge();},80);
+  }
   window.getEffectiveMasterVocabulary=effective;
   window.mergeTop1000WeakIntoMaster=merge;
-  window.addEventListener('vocab-library-ready',()=>setTimeout(run,0));
-  if(document.readyState==='complete')setTimeout(run,250);else window.addEventListener('load',()=>setTimeout(run,250),{once:true});
+  window.addEventListener('vocab-library-ready',schedule);
+  window.addEventListener('weak-pool-changed',schedule);
+  window.addEventListener('storage',e=>{if(e.key==='indo_mem'||e.key===MEMBER_KEY)schedule()});
+  if(document.readyState==='complete')schedule();else window.addEventListener('load',schedule,{once:true});
 })();
