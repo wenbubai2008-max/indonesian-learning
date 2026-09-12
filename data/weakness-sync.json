@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T15:03:51.675Z",
+  "updated_at": "2026-09-12T15:09:39.269Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -16075,6 +16075,686 @@
       "updated_at": "2026-09-12T15:03:41.286Z",
       "display": "simbol",
       "cn": "符号",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pengangguran": {
+      "word": "pengangguran",
+      "status": "active",
+      "updated_at": "2026-09-12T15:03:52.889Z",
+      "display": "pengangguran",
+      "cn": "失业",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "iman": {
+      "word": "iman",
+      "status": "active",
+      "updated_at": "2026-09-12T15:03:56.123Z",
+      "display": "iman",
+      "cn": "信仰",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bahu": {
+      "word": "bahu",
+      "status": "active",
+      "updated_at": "2026-09-12T15:03:59.625Z",
+      "display": "bahu",
+      "cn": "肩膀",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "ras": {
+      "word": "ras",
+      "status": "active",
+      "updated_at": "2026-09-12T15:04:04.161Z",
+      "display": "ras",
+      "cn": "种族、人种",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "analisis": {
+      "word": "analisis",
+      "status": "active",
+      "updated_at": "2026-09-12T15:04:10.305Z",
+      "display": "analisis",
+      "cn": "分析",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "salju": {
+      "word": "salju",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:04:13.659Z",
+      "display": "salju",
+      "last_review": "2026-09-12T15:04:13.646Z",
+      "last_mastered": "2026-09-12T15:04:13.646Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "tumbuhan": {
+      "word": "tumbuhan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:04:18.844Z",
+      "display": "tumbuhan",
+      "cn": "植物",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "klien": {
+      "word": "klien",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:04:25.580Z",
+      "display": "klien",
+      "last_review": "2026-09-12T15:04:25.569Z",
+      "last_mastered": "2026-09-12T15:04:25.569Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "raksasa": {
+      "word": "raksasa",
+      "status": "active",
+      "updated_at": "2026-09-12T15:04:32.227Z",
+      "display": "raksasa",
+      "cn": "巨人",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bersedia": {
+      "word": "bersedia",
+      "status": "active",
+      "updated_at": "2026-09-12T15:04:42.218Z",
+      "display": "bersedia",
+      "cn": "愿意，准备好",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "perkebunan": {
+      "word": "perkebunan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:04:51.505Z",
+      "display": "perkebunan",
+      "cn": "种植园",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kesadaran": {
+      "word": "kesadaran",
+      "status": "active",
+      "updated_at": "2026-09-12T15:04:56.863Z",
+      "display": "kesadaran",
+      "cn": "意识、觉察",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "baterai": {
+      "word": "baterai",
+      "status": "active",
+      "updated_at": "2026-09-12T15:05:03.917Z",
+      "display": "baterai",
+      "cn": "电池",
+      "root": "baterai",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "gerak": {
+      "word": "gerak",
+      "status": "active",
+      "updated_at": "2026-09-12T15:05:09.851Z",
+      "display": "gerak",
+      "cn": "动作",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "petunjuk": {
+      "word": "petunjuk",
+      "status": "active",
+      "updated_at": "2026-09-12T15:05:16.169Z",
+      "display": "petunjuk",
+      "cn": "指引",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kebingungan": {
+      "word": "kebingungan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:05:21.076Z",
+      "display": "kebingungan",
+      "cn": "困惑",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "membicarakan": {
+      "word": "membicarakan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:05:29.576Z",
+      "display": "membicarakan",
+      "cn": "讨论 / 谈论",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "sinetron": {
+      "word": "sinetron",
+      "status": "active",
+      "updated_at": "2026-09-12T15:05:36.245Z",
+      "display": "sinetron",
+      "cn": "肥皂剧",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kuburan": {
+      "word": "kuburan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:05:40.995Z",
+      "display": "kuburan",
+      "cn": "坟墓",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "cangkir": {
+      "word": "cangkir",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:05:44.482Z",
+      "display": "cangkir",
+      "last_review": "2026-09-12T15:05:44.471Z",
+      "last_mastered": "2026-09-12T15:05:44.471Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "ganggu": {
+      "word": "ganggu",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:05:47.659Z",
+      "display": "ganggu",
+      "last_review": "2026-09-12T15:05:47.648Z",
+      "last_mastered": "2026-09-12T15:05:47.648Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "aktor": {
+      "word": "aktor",
+      "status": "active",
+      "updated_at": "2026-09-12T15:05:51.953Z",
+      "display": "aktor",
+      "cn": "男演员",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "ranjang": {
+      "word": "ranjang",
+      "status": "active",
+      "updated_at": "2026-09-12T15:05:56.473Z",
+      "display": "ranjang",
+      "cn": "床架",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "ekspresi": {
+      "word": "ekspresi",
+      "status": "active",
+      "updated_at": "2026-09-12T15:06:03.696Z",
+      "display": "ekspresi",
+      "cn": "表情、表达",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "tampan": {
+      "word": "tampan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:06:08.352Z",
+      "display": "tampan",
+      "cn": "英俊",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "akar": {
+      "word": "akar",
+      "status": "active",
+      "updated_at": "2026-09-12T15:06:12.504Z",
+      "display": "akar",
+      "cn": "根",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "petir": {
+      "word": "petir",
+      "status": "active",
+      "updated_at": "2026-09-12T15:06:19.281Z",
+      "display": "petir",
+      "cn": "闪电",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pengemudi": {
+      "word": "pengemudi",
+      "status": "active",
+      "updated_at": "2026-09-12T15:06:40.000Z",
+      "display": "pengemudi",
+      "cn": "司机",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "senapan": {
+      "word": "senapan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:06:45.064Z",
+      "display": "senapan",
+      "cn": "步枪",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "perawat": {
+      "word": "perawat",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:06:49.743Z",
+      "display": "perawat",
+      "last_review": "2026-09-12T15:06:49.731Z",
+      "last_mastered": "2026-09-12T15:06:49.731Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "dompet": {
+      "word": "dompet",
+      "status": "active",
+      "updated_at": "2026-09-12T15:06:53.858Z",
+      "display": "dompet",
+      "cn": "钱包",
+      "root": "dompet",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pengumuman": {
+      "word": "pengumuman",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:06.547Z",
+      "display": "pengumuman",
+      "cn": "宣布，通知",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "senyuman": {
+      "word": "senyuman",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:11.444Z",
+      "display": "senyuman",
+      "cn": "微笑",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "berburu": {
+      "word": "berburu",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:16.886Z",
+      "display": "berburu",
+      "cn": "打猎",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "seberang": {
+      "word": "seberang",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:23.330Z",
+      "display": "seberang",
+      "cn": "对面",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "cermin": {
+      "word": "cermin",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:27.364Z",
+      "display": "cermin",
+      "cn": "镜子",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "lomba": {
+      "word": "lomba",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:30.965Z",
+      "display": "lomba",
+      "cn": "比赛",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "keringat": {
+      "word": "keringat",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:35.551Z",
+      "display": "keringat",
+      "cn": "汗",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "cemas": {
+      "word": "cemas",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:39.315Z",
+      "display": "cemas",
+      "cn": "焦虑；担忧",
+      "root": "cemas",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mengerjakan": {
+      "word": "mengerjakan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:44.777Z",
+      "display": "mengerjakan",
+      "cn": "做作业 / 做事",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "perselingkuhan": {
+      "word": "perselingkuhan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:53.427Z",
+      "display": "perselingkuhan",
+      "cn": "婚外情",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "atap": {
+      "word": "atap",
+      "status": "active",
+      "updated_at": "2026-09-12T15:07:56.774Z",
+      "display": "atap",
+      "cn": "屋顶",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mengalahkan": {
+      "word": "mengalahkan",
+      "status": "active",
+      "updated_at": "2026-09-12T15:08:05.176Z",
+      "display": "mengalahkan",
+      "cn": "打败",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "berpisah": {
+      "word": "berpisah",
+      "status": "active",
+      "updated_at": "2026-09-12T15:08:09.391Z",
+      "display": "berpisah",
+      "cn": "分离，分别",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "sebatang": {
+      "word": "sebatang",
+      "status": "active",
+      "updated_at": "2026-09-12T15:08:14.184Z",
+      "display": "sebatang",
+      "cn": "一根、一条",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "menaruh": {
+      "word": "menaruh",
+      "status": "active",
+      "updated_at": "2026-09-12T15:08:36.089Z",
+      "display": "menaruh",
+      "cn": "放、置",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pandai": {
+      "word": "pandai",
+      "status": "active",
+      "updated_at": "2026-09-12T15:08:41.247Z",
+      "display": "pandai",
+      "cn": "聪明、会",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "penyebaran": {
+      "word": "penyebaran",
+      "status": "active",
+      "updated_at": "2026-09-12T15:08:46.446Z",
+      "display": "penyebaran",
+      "cn": "扩散",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bioskop": {
+      "word": "bioskop",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:08:49.921Z",
+      "display": "bioskop",
+      "last_review": "2026-09-12T15:08:49.910Z",
+      "last_mastered": "2026-09-12T15:08:49.910Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "polos": {
+      "word": "polos",
+      "status": "active",
+      "updated_at": "2026-09-12T15:08:53.245Z",
+      "display": "polos",
+      "cn": "朴素",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "puisi": {
+      "word": "puisi",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:08:58.572Z",
+      "display": "puisi",
+      "last_review": "2026-09-12T15:08:58.559Z",
+      "last_mastered": "2026-09-12T15:08:58.559Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "otoritas": {
+      "word": "otoritas",
+      "status": "active",
+      "updated_at": "2026-09-12T15:09:04.611Z",
+      "display": "otoritas",
+      "cn": "权威",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "putaran": {
+      "word": "putaran",
+      "status": "active",
+      "updated_at": "2026-09-12T15:09:10.703Z",
+      "display": "putaran",
+      "cn": "环岛；转弯处；旋转",
+      "root": "putar",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bagai": {
+      "word": "bagai",
+      "status": "active",
+      "updated_at": "2026-09-12T15:09:13.197Z",
+      "display": "bagai",
+      "cn": "如同，好像",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "payung": {
+      "word": "payung",
+      "status": "mastered",
+      "updated_at": "2026-09-12T15:09:18.504Z",
+      "display": "payung",
+      "last_review": "2026-09-12T15:09:18.491Z",
+      "last_mastered": "2026-09-12T15:09:18.491Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "ilmiah": {
+      "word": "ilmiah",
+      "status": "active",
+      "updated_at": "2026-09-12T15:09:24.813Z",
+      "display": "ilmiah",
+      "cn": "科学的",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mustahil": {
+      "word": "mustahil",
+      "status": "active",
+      "updated_at": "2026-09-12T15:09:28.894Z",
+      "display": "mustahil",
+      "cn": "不可能",
       "reasons": [
         "memory_dont"
       ],
