@@ -13,6 +13,7 @@
       var url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));
       await load(url);
       await load('data/vocab-ui-cleanup-20260913.js?v=20260913-2');
+      await load('data/vocab-final-fix-20260913.js?v=20260913-1');
       setTimeout(function(){URL.revokeObjectURL(url)},1000);
     }catch(e){console.error('[vocab upgrade]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面升级加载失败，请刷新页面重试';}
   }
