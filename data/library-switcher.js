@@ -27,7 +27,7 @@
   }
   function loadScript(src){return new Promise(resolve=>{const s=document.createElement('script');s.src=src;s.onload=()=>resolve(true);s.onerror=()=>resolve(false);document.head.appendChild(s);});}
   async function ensureMasterData(){
-    if(masterObjects().length>=800)return;
+    if(masterObjects().length>=977)return;
     window.MASTER_VOCAB_DB=[];
     for(const src of MASTER_SCRIPTS)await loadScript(src);
     window.MASTER_VOCAB_OBJECTS=masterObjects();
@@ -59,7 +59,7 @@
     const unchecked=Math.max(0,arr.length-known-review);
     const vc=document.getElementById('vocabCount'),kc=document.getElementById('knownCount'),rc=document.getElementById('reviewCount');
     if(vc)vc.textContent=arr.length;if(kc)kc.textContent=known;if(rc)rc.textContent=review;
-    const st=document.getElementById('dbStatus');if(st)st.textContent=labelFor(key)+' · '+unchecked+' 未判断 · '+review+' 不会 · '+known+' 已掌握 · '+arr.length+' 总词';
+    const st=document.getElementById('dbStatus');if(st)st.textContent=labelFor(key)+' · '+unchecked+' 未判断 · '+review+' 待掌握 · '+known+' 已掌握 · '+arr.length+' 总词';
     return {total:arr.length,known:known,review:review,unchecked:unchecked};
   }
 
@@ -89,7 +89,7 @@
     DB=source;FILTER=source.filter(x=>{const s=statusOf(m,x.word);return s==='fuzzy'||s==='dont';});idx=0;rebuildCategories();
     localStorage.setItem('vocab_view_mode','review');
     const search=document.getElementById('search');if(search)search.value='';const cat=document.getElementById('cat');if(cat)cat.value='';
-    updateScopedStats(key,source);const st=document.getElementById('dbStatus');if(st)st.textContent=labelFor(key)+' · 不会 '+FILTER.length+' 词（查看中）';
+    updateScopedStats(key,source);const st=document.getElementById('dbStatus');if(st)st.textContent=labelFor(key)+' · 待掌握 '+FILTER.length+' 词（查看中）';
     if(FILTER.length){renderVocab();decorateCard();}else{const box=document.getElementById('vocabBox');if(box)box.innerHTML='<div class="empty">当前词库没有“模糊 / 不会”的词。</div>';}
   }
   function removeLocalUnknown(word){let m=localUnknownMap();const k=normWord(word);Object.keys(m).forEach(key=>{if(key===k||normWord(m[key]?.word)===k)delete m[key]});localStorage.setItem('indo_unknown_words',JSON.stringify(m));window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "master_total": 977,
+  "semantics": {
+    "mastered": "已掌握：用户明确会了；不得作为新词或重点复习词。",
+    "active": "待掌握：当前模糊/不会/陌生/答错；是否属于新词或复习词还要看 daily-vocab。",
+    "daily_vocab": "已正式教过：只表示进过每日课程，不等于已经掌握。"
+  },
+  "selection": {
+    "new_word": "master ∩ active ∩ NOT daily-vocab",
+    "review_word": "active ∩ daily-vocab",
+    "excluded": "mastered",
+    "note": "同一词不得同时进入新词和复习词。模糊/不会但从未正式教过的主词库词，按新词学习；已经正式教过仍 active 的词，按复习处理。"
+  }
+}
