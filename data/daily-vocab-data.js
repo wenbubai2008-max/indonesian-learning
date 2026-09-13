@@ -7457,5 +7457,225 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Walaupun beda pendapat, sikap kita tetap harus tenang.",
     "example_cn": "即使意见不同，我们的态度还是要冷静。"
+  },
+  {
+    "word": "layak",
+    "cn": "值得；合适；够资格",
+    "en": "worthy; suitable; eligible",
+    "root": "layak",
+    "root_cn": "值得；合适",
+    "example": "Menurutku pilihan ini masih layak dipertimbangkan kalau biayanya masuk akal.",
+    "example_cn": "我觉得如果成本合理，这个选择还是值得考虑的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ]
+  },
+  {
+    "word": "niat",
+    "cn": "打算；意图；认真想做的心意",
+    "en": "intention; intent",
+    "root": "niat",
+    "root_cn": "打算；意图",
+    "example": "Aku sebenarnya niat beresin ini pagi-pagi, tapi tadi ada urusan lain.",
+    "example_cn": "我本来打算一早把这个处理完，但刚才有别的事。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ]
+  },
+  {
+    "word": "lengkap",
+    "cn": "完整；齐全",
+    "en": "complete; comprehensive",
+    "root": "lengkap",
+    "root_cn": "完整；齐全",
+    "example": "Kita jangan ambil keputusan dulu kalau datanya belum lengkap.",
+    "example_cn": "如果数据还不完整，我们先别做决定。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ]
+  },
+  {
+    "word": "mampu",
+    "cn": "有能力做到；负担得起",
+    "en": "be capable of; be able to afford",
+    "root": "mampu",
+    "root_cn": "有能力；负担得起",
+    "example": "Tim kecil kita masih mampu menangani proyek ini asal waktunya cukup.",
+    "example_cn": "只要时间够，我们这个小团队还是有能力处理这个项目的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ]
+  },
+  {
+    "word": "khawatir",
+    "cn": "担心；忧虑",
+    "en": "worried; concerned",
+    "root": "khawatir",
+    "root_cn": "担心；忧虑",
+    "example": "Aku agak khawatir jadwalnya terlalu padat kalau semua dikerjain hari ini.",
+    "example_cn": "如果今天把所有事情都做，我有点担心日程会太满。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ]
+  },
+  {
+    "word": "berani",
+    "cn": "敢；有勇气",
+    "en": "brave; dare",
+    "root": "berani",
+    "root_cn": "敢；有勇气",
+    "example": "Kalau memang nggak masuk akal, kita harus berani bilang dari awal.",
+    "example_cn": "如果确实不合理，我们就应该敢于一开始就说出来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ]
+  },
+  {
+    "word": "tertentu",
+    "cn": "特定的；某些特定的",
+    "en": "certain; specific",
+    "root": "tentu",
+    "root_cn": "确定；一定",
+    "example": "Cara ini cocok, tapi cuma untuk kondisi tertentu.",
+    "example_cn": "这个方法合适，但只适用于特定情况。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ]
+  },
+  {
+    "word": "intinya",
+    "cn": "重点是；核心就是",
+    "en": "the point is; essentially",
+    "root": "inti",
+    "root_cn": "核心；要点",
+    "example": "Intinya, kita butuh data yang lengkap sebelum lanjut.",
+    "example_cn": "重点是，我们继续之前需要完整的数据。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ]
+  },
+  {
+    "word": "pokoknya",
+    "cn": "总之；反正；不管怎样",
+    "en": "anyway; basically; the main thing is",
+    "root": "pokok",
+    "root_cn": "要点；主要部分",
+    "example": "Pokoknya jangan buru-buru setuju sebelum semua detailnya jelas.",
+    "example_cn": "总之，在所有细节都清楚之前别急着同意。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ]
+  },
+  {
+    "word": "bertanggung jawab",
+    "cn": "负责；承担责任",
+    "en": "be responsible; take responsibility",
+    "root": "tanggung jawab",
+    "root_cn": "责任；负责",
+    "example": "Kalau kita pilih cara ini, harus jelas siapa yang bertanggung jawab atas hasilnya.",
+    "example_cn": "如果我们选择这种做法，就必须明确谁对结果负责。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ]
   }
 ];
