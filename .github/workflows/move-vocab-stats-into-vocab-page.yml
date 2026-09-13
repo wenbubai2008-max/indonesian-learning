@@ -1,0 +1,63 @@
+name: Move vocab stats into vocab page
+on:
+  push:
+    paths:
+      - '.github/workflows/move-vocab-stats-into-vocab-page.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Move stats bar structurally into vocab page
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          stats='<div class="stats" id="statsBar"><div class="stat"><span>词库</span><b id="vocabCount">加载中</b></div><button class="stat statAction" type="button" onclick="showKnownWords()" title="查看当前词库已掌握词汇"><span>已掌握</span><b id="knownCount">0</b></button><button class="stat statAction" type="button" onclick="go(\'review\')" title="查看待掌握词汇"><span>待掌握</span><b id="reviewCount">0</b></button><div class="stat"><span>今日完成</span><b id="sessionCount">0 / 2</b></div></div>'
+          # Remove the single global stats bar if present.
+          if stats in s:
+              s=s.replace(stats,'',1)
+          else:
+              # Robust fallback: remove by id from opening div through its known closing pattern.
+              start=s.find('<div class="stats" id="statsBar">')
+              if start!=-1:
+                  end=s.find('</div></div>\n<section id="home"',start)
+                  if end!=-1:
+                      # include the two closing divs that terminate the stats content
+                      s=s[:start]+s[end+12:]
+          marker='<section id="vocab" class="page"><button class="back" onclick="go(\'home\')">← 返回首页</button>'
+          insert=marker+stats
+          if marker not in s:
+              raise SystemExit('vocab section marker not found')
+          if '<section id="vocab" class="page"><button class="back" onclick="go(\'home\')">← 返回首页</button><div class="stats" id="statsBar">' not in s:
+              s=s.replace(marker,insert,1)
+          # statsBar now belongs to vocab page structurally; remove page-switch show/hide logic.
+          old="const sb=$('statsBar');if(sb)sb.style.display=id==='home'?'none':'grid';"
+          s=s.replace(old,'')
+          # Remove old startup hiding line if still present.
+          s=s.replace("const _sb=$('statsBar');if(_sb)_sb.style.display='none';",'')
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Verify stats exists only inside vocab page
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          s=Path('index.html').read_text(encoding='utf-8')
+          assert s.count('id="statsBar"') == 1, s.count('id="statsBar"')
+          v=s.index('<section id="vocab"')
+          r=s.index('<section id="readingPage"')
+          st=s.index('id="statsBar"')
+          assert v < st < r, (v,st,r)
+          assert "sb.style.display" not in s
+          print('OK: statsBar structurally exists only in vocab page')
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Keep vocabulary stats only on vocab page" || exit 0
+          git push
