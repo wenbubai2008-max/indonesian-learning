@@ -1,0 +1,39 @@
+name: Check active outside master
+
+on:
+  push:
+    paths:
+      - '.github/workflows/check-active-outside-master.yml'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Count relevant active words
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('fs'),vm=require('vm');
+          const norm=w=>String(w||'').trim().toLowerCase();
+          const mctx={window:{MASTER_VOCAB_DB:[]}};
+          ['data/master-vocab-data.js','data/master-vocab-data-2.js','data/master-vocab-data-3.js'].forEach(f=>vm.runInNewContext(fs.readFileSync(f,'utf8'),mctx));
+          const master=new Set((mctx.window.MASTER_VOCAB_DB||[]).map(x=>norm(Array.isArray(x)?x[0]:x.word)).filter(Boolean));
+          const dctx={window:{DAILY_VOCAB_DB:[]}};
+          vm.runInNewContext(fs.readFileSync('data/daily-vocab-data.js','utf8'),dctx);
+          const daily=new Set((dctx.window.DAILY_VOCAB_DB||[]).map(x=>norm(Array.isArray(x)?x[0]:x.word)).filter(Boolean));
+          const weak=JSON.parse(fs.readFileSync('data/weakness-sync.json','utf8'));
+          const active=[];
+          for(const [k,v] of Object.entries(weak.words||{})){
+            const w=norm(v?.word||k); if(w&&v?.status==='active') active.push(w);
+          }
+          const aset=new Set(active);
+          const outside=[...aset].filter(w=>!master.has(w));
+          const outsideDaily=outside.filter(w=>daily.has(w));
+          const outsideNotDaily=outside.filter(w=>!daily.has(w));
+          const masterActive=[...aset].filter(w=>master.has(w));
+          const masterActiveDaily=masterActive.filter(w=>daily.has(w));
+          const masterActiveNotDaily=masterActive.filter(w=>!daily.has(w));
+          const eligibleReview=[...aset].filter(w=>daily.has(w));
+          console.log('RESULT='+JSON.stringify({active_total:aset.size,active_in_master:masterActive.length,active_outside_master:outside.length,outside_active_in_daily:outsideDaily.length,outside_active_not_in_daily:outsideNotDaily.length,master_active_in_daily:masterActiveDaily.length,master_active_not_in_daily:masterActiveNotDaily.length,total_active_in_daily:eligibleReview.length,new_pool_master_active_not_daily:masterActiveNotDaily.length,can_ignore_now_outside_not_daily:outsideNotDaily.length,sample_outside_daily:outsideDaily.slice(0,40),sample_outside_not_daily:outsideNotDaily.slice(0,40)}));
+          NODE
