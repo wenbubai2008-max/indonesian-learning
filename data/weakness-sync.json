@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-13T11:46:29.549Z",
+  "updated_at": "2026-09-13T11:54:26.558Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -375,17 +375,18 @@
     "kebetulan": {
       "word": "kebetulan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-13T11:53:59.232Z",
       "display": "kebetulan",
       "cn": "碰巧；正好",
       "root": "betul",
       "root_cn": "对；正确",
+      "last_review": "2026-09-13T11:53:59.205Z",
       "reasons": [
         "quick_wrong",
         "memory_fuzzy"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "justru": {
       "word": "justru",
@@ -487,16 +488,17 @@
     "ngepasin": {
       "word": "ngepasin",
       "status": "active",
-      "updated_at": "2026-09-11T14:40:15.508Z",
+      "updated_at": "2026-09-13T11:53:00.000Z",
       "display": "ngepasin",
       "cn": "把时间/安排调到刚好合适（口语）",
       "root": "pas",
       "root_cn": "刚好；合适",
+      "last_review": "2026-09-13T11:52:59.974Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "ngelarin": {
       "word": "ngelarin",
@@ -530,15 +532,16 @@
     "kebaca": {
       "word": "kebaca",
       "status": "active",
-      "updated_at": "2026-09-11T14:40:15.508Z",
+      "updated_at": "2026-09-13T11:54:16.336Z",
       "display": "kebaca",
       "cn": "看得清；读得出来；不小心被看到（口语）",
       "root": "baca",
+      "last_review": "2026-09-13T11:54:16.319Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kebentur": {
       "word": "kebentur",
@@ -19579,15 +19582,16 @@
     "bahkan": {
       "word": "bahkan",
       "status": "active",
-      "updated_at": "2026-09-12T16:58:22.063Z",
+      "updated_at": "2026-09-13T11:54:03.105Z",
       "display": "bahkan",
       "cn": "甚至；甚至还",
       "root": "bahkan",
+      "last_review": "2026-09-13T11:54:03.084Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "hanya": {
       "word": "hanya",
@@ -23127,6 +23131,21 @@
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
+    },
+    "urusan dadakan": {
+      "word": "urusan dadakan",
+      "status": "active",
+      "updated_at": "2026-09-13T11:53:43.256Z",
+      "display": "urusan dadakan",
+      "cn": "临时冒出来的事",
+      "root": "urus / dadak",
+      "last_wrong": "2026-09-13T11:53:43.234Z",
+      "last_review": "2026-09-13T11:53:43.234Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
     }
   }
 }
