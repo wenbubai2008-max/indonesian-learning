@@ -1,0 +1,10 @@
+{
+  "base_core": 800,
+  "top1000": 676,
+  "reconstructed_additions": 179,
+  "reconstructed_total": 979,
+  "before_snapshot": "29c309829282765ac7fb1bc829fd1e4ab7c16983",
+  "after_snapshot": "1083bfbb0bb49b8e3dded7c7614ea0ac3824a01d",
+  "merge_time_utc": "2026-09-12T17:15:48.000Z",
+  "method": "state before merge + after-snapshot records whose own updated_at <= original merge time"
+}
