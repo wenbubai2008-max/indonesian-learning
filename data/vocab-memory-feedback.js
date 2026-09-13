@@ -11,7 +11,9 @@
       var stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
       var code=await new Response(stream).text();window.VOCAB_UPGRADE_GZ='';
       var url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));
-      await load(url);setTimeout(function(){URL.revokeObjectURL(url)},1000);
+      await load(url);
+      await load('data/vocab-ui-cleanup-20260913.js?v=20260913-2');
+      setTimeout(function(){URL.revokeObjectURL(url)},1000);
     }catch(e){console.error('[vocab upgrade]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面升级加载失败，请刷新页面重试';}
   }
   if(document.readyState==='complete')setTimeout(boot,80);else window.addEventListener('load',function(){setTimeout(boot,80)},{once:true});
