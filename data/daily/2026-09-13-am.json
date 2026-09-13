@@ -1,0 +1,168 @@
+{
+  "date": "2026-09-13",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 23,
+  "title": "2026年9月13日｜Day 23｜判断一件事值不值得做",
+  "vocab": [
+    {
+      "word": "layak",
+      "display": "layak",
+      "audio_text": "layak",
+      "cn": "值得；合适；够资格",
+      "en": "worthy; suitable; eligible",
+      "root": "layak",
+      "root_cn": "值得；合适",
+      "formation": "基础高频词；常见 layak dicoba（值得试）、layak dipertimbangkan（值得考虑）、tidak layak（不合适/不值得）。",
+      "example": "Menurutku pilihan ini masih layak dipertimbangkan kalau biayanya masuk akal.",
+      "example_cn": "我觉得如果成本合理，这个选择还是值得考虑的。",
+      "synonym_note": "pantas 也可表示合适，但 layak 更常用于‘值得、达到条件、适合被做’。"
+    },
+    {
+      "word": "niat",
+      "display": "niat",
+      "audio_text": "niat",
+      "cn": "打算；意图；认真想做的心意",
+      "en": "intention; intent",
+      "root": "niat",
+      "root_cn": "打算；意图",
+      "formation": "高频名词，也常口语化地说 niat mau...；词族 berniat = 打算、计划做。",
+      "example": "Aku sebenarnya niat beresin ini pagi-pagi, tapi tadi ada urusan lain.",
+      "example_cn": "我本来打算一早把这个处理完，但刚才有别的事。",
+      "synonym_note": "rencana = 计划本身；niat 更强调‘心里确实想做’。"
+    },
+    {
+      "word": "lengkap",
+      "display": "lengkap",
+      "audio_text": "lengkap",
+      "cn": "完整；齐全",
+      "en": "complete; comprehensive",
+      "root": "lengkap",
+      "root_cn": "完整；齐全",
+      "formation": "基础高频形容词；常说 data lengkap、dokumen lengkap、belum lengkap。",
+      "example": "Kita jangan ambil keputusan dulu kalau datanya belum lengkap.",
+      "example_cn": "如果数据还不完整，我们先别做决定。",
+      "synonym_note": "penuh = 满、装满；lengkap = 所需部分都齐了。"
+    },
+    {
+      "word": "mampu",
+      "display": "mampu",
+      "audio_text": "mampu",
+      "cn": "有能力做到；负担得起",
+      "en": "be capable of; be able to afford",
+      "root": "mampu",
+      "root_cn": "有能力；负担得起",
+      "formation": "高频标准词；既可表示能力，也可表示经济上承担得起，如 mampu bayar。",
+      "example": "Tim kecil kita masih mampu menangani proyek ini asal waktunya cukup.",
+      "example_cn": "只要时间够，我们这个小团队还是有能力处理这个项目的。",
+      "synonym_note": "bisa 更泛、更口语；mampu 更强调真实能力、资源或承受能力。"
+    },
+    {
+      "word": "khawatir",
+      "display": "khawatir",
+      "audio_text": "khawatir",
+      "cn": "担心；忧虑",
+      "en": "worried; concerned",
+      "root": "khawatir",
+      "root_cn": "担心；忧虑",
+      "formation": "高频状态词；常说 aku khawatir... / nggak perlu khawatir。",
+      "example": "Aku agak khawatir jadwalnya terlalu padat kalau semua dikerjain hari ini.",
+      "example_cn": "如果今天把所有事情都做，我有点担心日程会太满。",
+      "synonym_note": "takut 更偏害怕；khawatir 更偏对可能出现的问题感到担忧。"
+    },
+    {
+      "word": "berani",
+      "display": "berani",
+      "audio_text": "berani",
+      "cn": "敢；有勇气",
+      "en": "brave; dare",
+      "root": "berani",
+      "root_cn": "敢；有勇气",
+      "formation": "高频词；常见 berani bilang、berani ambil risiko、nggak berani。",
+      "example": "Kalau memang nggak masuk akal, kita harus berani bilang dari awal.",
+      "example_cn": "如果确实不合理，我们就应该敢于一开始就说出来。",
+      "synonym_note": "nekat = 不顾风险硬上；berani 是中性的‘敢、有勇气’。"
+    },
+    {
+      "word": "tertentu",
+      "display": "tertentu",
+      "audio_text": "tertentu",
+      "cn": "特定的；某些特定的",
+      "en": "certain; specific",
+      "root": "tentu",
+      "root_cn": "确定；一定",
+      "formation": "ter- + tentu → tertentu，表示被限定到某个范围；常见 pada kondisi tertentu、orang tertentu。",
+      "example": "Cara ini cocok, tapi cuma untuk kondisi tertentu.",
+      "example_cn": "这个方法合适，但只适用于特定情况。",
+      "synonym_note": "khusus = 专门、特别；tertentu 更强调‘限定为某一些/某一个’。"
+    },
+    {
+      "word": "intinya",
+      "display": "intinya",
+      "audio_text": "intinya",
+      "cn": "重点是；核心就是",
+      "en": "the point is; essentially",
+      "root": "inti",
+      "root_cn": "核心；要点",
+      "formation": "inti + -nya；日常解释、会议总结非常常见，用来把复杂内容收束成一句重点。",
+      "example": "Intinya, kita butuh data yang lengkap sebelum lanjut.",
+      "example_cn": "重点是，我们继续之前需要完整的数据。",
+      "synonym_note": "kesimpulannya = 结论是，稍正式；intinya 更自然、更像‘核心就是’。"
+    },
+    {
+      "word": "pokoknya",
+      "display": "pokoknya",
+      "audio_text": "pokoknya",
+      "cn": "总之；反正；不管怎样",
+      "en": "anyway; basically; the main thing is",
+      "root": "pokok",
+      "root_cn": "要点；主要部分",
+      "formation": "pokok + -nya；高频口语连接词，可总结，也可表达‘反正就这样’。语气比 intinya 更口语、更主观。",
+      "example": "Pokoknya jangan buru-buru setuju sebelum semua detailnya jelas.",
+      "example_cn": "总之，在所有细节都清楚之前别急着同意。",
+      "synonym_note": "intinya 偏客观总结重点；pokoknya 更口语，有时带‘反正’的语气。"
+    },
+    {
+      "word": "bertanggung jawab",
+      "display": "bertanggung jawab",
+      "audio_text": "bertanggung jawab",
+      "cn": "负责；承担责任",
+      "en": "be responsible; take responsibility",
+      "root": "tanggung jawab",
+      "root_cn": "责任；负责",
+      "formation": "ber- + tanggung jawab → bertanggung jawab；工作和生活里都非常高频，常接 atas + 事项。",
+      "example": "Kalau kita pilih cara ini, harus jelas siapa yang bertanggung jawab atas hasilnya.",
+      "example_cn": "如果我们选择这种做法，就必须明确谁对结果负责。",
+      "synonym_note": "menangani = 负责处理事情；bertanggung jawab 更强调对结果承担责任。"
+    }
+  ],
+  "sentences": [
+    {"id": "Kalau datanya belum lengkap, menurutku rencana ini belum layak diputuskan sekarang.", "cn": "如果数据还不完整，我觉得这个方案现在还不适合马上定下来。"},
+    {"id": "Aku niat bantu, tapi aku khawatir tim kita nggak mampu kalau jadwalnya terlalu padat.", "cn": "我是打算帮忙的，但我担心如果日程太满，我们团队可能应付不了。"},
+    {"id": "Untuk kondisi tertentu kita harus berani bilang tidak, terutama kalau risikonya terlalu besar.", "cn": "在某些特定情况下我们得敢于说不，尤其是风险太大的时候。"},
+    {"id": "Intinya, kita perlu rencana cadangan dan orang yang bertanggung jawab dengan jelas.", "cn": "重点是，我们需要备用方案，也要明确负责人。"},
+    {"id": "Pokoknya jangan buru-buru; kalau masih khawatir, kasih giliran semua orang buat kasih masukan dulu.", "cn": "总之别急；如果还有担心，就先让每个人轮流提意见。"}
+  ],
+  "reading": {
+    "title": "Layak Dilanjutkan atau Nggak?",
+    "text": "Pagi ini timku bahas satu rencana baru. Datanya sebenarnya belum lengkap, jadi aku agak khawatir kalau kami langsung setuju. Ada bagian tertentu yang terlihat layak, tapi jadwal minggu ini juga cukup padat. Aku niat bantu dan tim kami masih mampu menangani sebagian besar pekerjaan, cuma kami perlu rencana cadangan kalau ada yang tunda lagi. Intinya, kami harus berani menilai risikonya dengan realistis. Pokoknya jangan cuma ikut karena orang lain setuju. Kami kasih giliran semua orang buat bicara, lalu menentukan siapa yang bertanggung jawab atas tiap bagian. Kebetulan siang ini masih ada waktu buat cek ulang.",
+    "cn": "今天早上我们团队讨论了一个新方案。数据其实还不完整，所以如果大家马上同意，我有点担心。其中有些部分看起来值得做，但这周的日程也挺满。我本来就打算帮忙，而且团队仍有能力处理大部分工作，只是如果又有事情被推迟，我们需要一个备用方案。重点是，我们得敢于现实地评估风险。总之，不要只是因为别人同意就跟着同意。我们让每个人轮流发言，再确定每一部分由谁负责。正好今天中午还有时间再检查一次。",
+    "vocab": ["lengkap", "khawatir", "tertentu", "layak", "padat", "niat", "mampu", "cadangan", "tunda", "intinya", "berani", "pokoknya", "giliran", "bertanggung jawab", "kebetulan"]
+  },
+  "quiz": [
+    {"question": "layak dipertimbangkan 最自然的意思是：", "options": ["值得考虑", "必须拒绝", "已经失败"], "answer_index": 0, "explain": "layak 表示值得、合适；layak dipertimbangkan 就是值得被考虑。"},
+    {"question": "intinya 和 pokoknya 最自然的区别是：", "options": ["intinya 更偏总结核心；pokoknya 更口语，也可带‘反正/总之’语气", "intinya 表示害怕；pokoknya 表示负责", "两个只用于正式文件"], "answer_index": 0, "explain": "两者都能总结，但 intinya 更像‘核心是’，pokoknya 更像日常口语里的‘总之/反正’。"},
+    {"question": "复习：如果主方案不行，还有备用方案，最适合用哪个旧词？", "options": ["cadangan", "giliran", "kebetulan"], "answer_index": 0, "explain": "cadangan = 备用、储备；rencana cadangan = 备用方案。"}
+  ],
+  "output": {
+    "task": "用自然印尼语表达：‘我有点担心，因为数据还不完整。这个方案有些部分值得做，但我们要先确认团队有没有能力承担。重点是，要明确谁负责，也要准备备用方案。’",
+    "reference_answer": "Aku agak khawatir karena datanya belum lengkap. Ada beberapa bagian dari rencana ini yang layak dijalankan, tapi kita perlu pastikan dulu timnya mampu atau nggak. Intinya, harus jelas siapa yang bertanggung jawab, dan kita juga perlu siapin rencana cadangan.",
+    "reference_cn": "我有点担心，因为数据还不完整。这个方案有些部分值得做，但我们要先确认团队有没有能力承担。重点是，要明确谁负责，也要准备备用方案。"
+  },
+  "review": [
+    "判断价值：layak = 值得/合适；mampu = 有能力做到；tertentu = 特定的。",
+    "表达立场：niat = 有意去做；khawatir = 担心；berani = 敢于；bertanggung jawab = 对结果负责。",
+    "总结观点：intinya 更像‘核心是’，pokoknya 更口语、更像‘总之/反正’；自然复习 cadangan、tunda、padat、giliran、kebetulan。"
+  ]
+}
