@@ -20,32 +20,16 @@ jobs:
           const fs=require('fs');
           const f='data/home-learning-upgrade-v2.js';
           let s=fs.readFileSync(f,'utf8');
-
           const anchor="  function mem(){try{return JSON.parse(localStorage.getItem('indo_mem')||'{}');}catch(e){return {};}}\n";
           const helper="  function taughtSet(){var s=new Set();(window.DAILY_VOCAB_DB||[]).forEach(function(x){if(x&&x.word)s.add(norm(x.word));});return s;}\n";
-          if(!s.includes('function taughtSet(){')){
-            if(!s.includes(anchor)) throw new Error('mem anchor not found');
-            s=s.replace(anchor,anchor+helper);
-          }
-
-          const start=s.indexOf('  function weaknessList(){');
-          const end=s.indexOf('  function renderWeak(){',start);
-          if(start<0||end<0) throw new Error('weaknessList block not found');
-          const replacement=`  function weaknessList(){
-    var map=wordMap(),mm=mem(),ps=practiceState(),wp=weakPool(),out=[],taught=taughtSet();
-    if(wp){
-      wp.syncSignals(map,mm,ps);
-      wp.listActive().filter(function(x){return taught.has(norm(x.word));}).forEach(function(x){var k=norm(x.word),base=map[k]||{},fb=fallbackExample(k);out.push({word:x.word||base.word||k,cn:x.cn||base.cn||fallbackMeaning(k)||'待补释义',example:x.example||((x.contexts||[]).slice(-1)[0])||base.example||fb[0],example_cn:x.example_cn||base.example_cn||fb[1],reason:wp.primaryReason(x)});});
-      return out;
-    }
-    var unknown=localUnknown(),keys={};Object.keys(map).forEach(function(k){if(!taught.has(k))return;var x=map[k],st=mm[x.word],p=ps[k]||{},reason='';if(st==='dont')reason='不会';else if(st==='fuzzy')reason='模糊';else if(unknown[k]||((window.UNFAMILIAR_VOCAB_DB||[]).some(function(u){return norm(u.word)===k;})))reason='陌生词';else if((p.wrong||0)>0&&(p.streak||0)<3)reason='快速练习错题';if(reason&&!keys[k]){keys[k]=1;var fb=fallbackExample(k);out.push({word:x.word,cn:x.cn||fallbackMeaning(k)||'待补释义',example:x.example||((x.contexts||[]).slice(-1)[0])||fb[0],example_cn:x.example_cn||fb[1],reason:reason});}});Object.keys(unknown).forEach(function(k){if(keys[k]||!taught.has(k))return;var u=unknown[k]||{},fb=fallbackExample(k),base=map[k]||{};out.push({word:u.word||base.word||k,cn:u.cn&&!/暂无|暂未/.test(u.cn)?u.cn:(base.cn||fallbackMeaning(k)||'待补释义'),example:(u.contexts||[]).slice(-1)[0]||base.example||fb[0],example_cn:base.example_cn||fb[1],reason:'陌生词'});});return out;
-  }
-`;
-          s=s.slice(0,start)+replacement+s.slice(end);
-
-          s=s.replace("if(!arr.length){body.innerHTML='<div class=\"empty\"><b>目前没有明显弱项 ✓</b><div style=\"margin-top:8px\">模糊、不会、陌生词和快速练习错题会动态进入统一弱项池。</div></div>';return;}","if(!arr.length){body.innerHTML='<div class=\"empty\"><b>目前没有需要复习的已学弱项 ✓</b><div style=\"margin-top:8px\">这里只显示已经正式学过、但当前仍是模糊 / 不会 / 答错的词。</div></div>';return;}");
-          s=s.replace("body.innerHTML='<div class=\"v2-note\">这里是统一弱项池的训练视图：陌生词、模糊/不会、快速练习错题都集中到这里。点“会了”后退出强化；以后再次答错会自动回来。</div><div class=\"v2-weak\">'","body.innerHTML='<div class=\"v2-note\">这里只做复习，不提前教新词：仅显示已进入每日课程（daily-vocab）且当前仍为 active 的词。未正式学过的 active 词继续留在新词池或暂存区，不会出现在这里。点“会了”后退出强化；以后再次答错会自动回来。</div><div class=\"v2-weak\">'");
-
+          if(!s.includes('function taughtSet(){')){if(!s.includes(anchor))throw new Error('mem anchor not found');s=s.replace(anchor,anchor+helper);}
+          s=s.replace("var map=wordMap(),mm=mem(),ps=practiceState(),wp=weakPool(),out=[];","var map=wordMap(),mm=mem(),ps=practiceState(),wp=weakPool(),out=[],taught=taughtSet();");
+          s=s.replace("wp.listActive().forEach(function(x){","wp.listActive().filter(function(x){return taught.has(norm(x.word));}).forEach(function(x){");
+          s=s.replace("Object.keys(map).forEach(function(k){var x=map[k]","Object.keys(map).forEach(function(k){if(!taught.has(k))return;var x=map[k]");
+          s=s.replace("Object.keys(unknown).forEach(function(k){if(keys[k])return;","Object.keys(unknown).forEach(function(k){if(keys[k]||!taught.has(k))return;");
+          s=s.replace("目前没有明显弱项 ✓","目前没有需要复习的已学弱项 ✓");
+          s=s.replace("模糊、不会、陌生词和快速练习错题会动态进入统一弱项池。","这里只显示已经正式学过、但当前仍是模糊 / 不会 / 答错的词。");
+          s=s.replace("这里是统一弱项池的训练视图：陌生词、模糊/不会、快速练习错题都集中到这里。点“会了”后退出强化；以后再次答错会自动回来。","这里只做复习，不提前教新词：仅显示已进入每日课程（daily-vocab）且当前仍为 active 的词。未正式学过的 active 词继续留在新词池或暂存区，不会出现在这里。点“会了”后退出强化；以后再次答错会自动回来。");
           fs.writeFileSync(f,s,'utf8');
           NODE
       - name: Verify rule and commit
