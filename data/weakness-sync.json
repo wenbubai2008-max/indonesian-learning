@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-13T12:03:52.337Z",
+  "updated_at": "2026-09-13T12:09:27.876Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1472,8 +1472,9 @@
     "kegiatan": {
       "word": "kegiatan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-13T12:09:17.384Z",
       "display": "kegiatan",
+      "cn": "活动",
       "reasons": [
         "memory_dont"
       ],
