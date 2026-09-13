@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-13T12:00:02.538Z",
+  "updated_at": "2026-09-13T12:03:52.337Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -698,8 +698,9 @@
     "berbagai": {
       "word": "berbagai",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-13T12:02:51.723Z",
       "display": "berbagai",
+      "cn": "各种各样的",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -1986,8 +1987,9 @@
     "menunjukkan": {
       "word": "menunjukkan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-13T12:03:42.004Z",
       "display": "menunjukkan",
+      "cn": "展示",
       "reasons": [
         "memory_dont"
       ],
