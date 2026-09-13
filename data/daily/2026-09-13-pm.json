@@ -164,7 +164,20 @@
     "title": "Jangan Cuma Punya Pendapat, Jelasin Alasannya",
     "text": "Sore ini timku membahas satu rencana baru. Sebelumnya kami mengira semua data sudah lengkap, tetapi ternyata masih ada satu laporan yang belum masuk. Kebetulan aku punya data tambahan yang bisa jadi bukti. Aku bilang, meskipun kita ingin cepat ambil keputusan, jangan terburu-buru. Setiap orang harus berani menjelaskan alasan pilihannya. Bahkan kalau hasil sementara terlihat bagus, kami tetap perlu memastikan siapa yang bertanggung jawab kalau ada masalah. Intinya, sebuah pilihan baru layak dilanjutkan kalau alasannya jelas, buktinya cukup, dan hasilnya bisa diperiksa. Setelah semua informasi terkumpul, barulah kami menentukan langkah berikutnya.",
     "cn": "今天下午我们团队讨论一个新方案。之前我们以为所有数据已经齐全，但后来发现还有一份报告没提交。正好我有一份补充数据，可以作为证据。我说，虽然我们想尽快做决定，但不要太急。每个人都应该敢于说明自己选择的理由。即使当前结果看起来不错，我们仍然需要确认如果出问题由谁负责。重点是，一个选择只有在理由清楚、证据足够、结果可以核查时，才值得继续。等所有信息收齐后，我们再决定下一步。",
-    "vocab": ["sebelumnya", "lengkap", "kebetulan", "bukti", "meskipun", "berani", "alasan", "bahkan", "hasil", "bertanggung jawab", "intinya", "layak"],
+    "vocab": [
+      "sebelumnya",
+      "lengkap",
+      "kebetulan",
+      "bukti",
+      "meskipun",
+      "berani",
+      "alasan",
+      "bahkan",
+      "hasil",
+      "bertanggung jawab",
+      "intinya",
+      "layak"
+    ],
     "questions": [
       {
         "task": "团队为什么没有马上做决定？请用印尼语回答。",
@@ -181,12 +194,36 @@
   "dialogue": {
     "title": "雅加达办公室口语｜别只说同不同意，把理由讲清楚",
     "lines": [
-      {"speaker":"A","id":"Menurutmu rencana ini layak lanjut nggak?","cn":"你觉得这个方案值得继续吗？"},
-      {"speaker":"B","id":"Belum yakin. Sebelumnya aku kira datanya lengkap, ternyata masih kurang satu laporan.","cn":"还不确定。之前我以为数据齐了，结果还少一份报告。"},
-      {"speaker":"A","id":"Kebetulan aku punya data tambahan. Bisa jadi bukti juga.","cn":"正好我有补充数据，也可以当证据。"},
-      {"speaker":"B","id":"Oke. Tapi jelasin juga alasannya kenapa kamu pilih opsi ini.","cn":"好。不过也解释一下你为什么选这个方案。"},
-      {"speaker":"A","id":"Meskipun hasil awalnya bagus, aku setuju kita cek dulu semuanya.","cn":"虽然初步结果不错，但我同意先全部检查一遍。"},
-      {"speaker":"B","id":"Nah, intinya jangan buru-buru. Habis lengkap baru ambil keputusan.","cn":"对，重点就是别急。资料齐了以后再做决定。"}
+      {
+        "speaker": "A",
+        "id": "Menurutmu rencana ini layak lanjut nggak?",
+        "cn": "你觉得这个方案值得继续吗？"
+      },
+      {
+        "speaker": "B",
+        "id": "Belum yakin. Sebelumnya aku kira datanya lengkap, ternyata masih kurang satu laporan.",
+        "cn": "还不确定。之前我以为数据齐了，结果还少一份报告。"
+      },
+      {
+        "speaker": "A",
+        "id": "Kebetulan aku punya data tambahan. Bisa jadi bukti juga.",
+        "cn": "正好我有补充数据，也可以当证据。"
+      },
+      {
+        "speaker": "B",
+        "id": "Oke. Tapi jelasin juga alasannya kenapa kamu pilih opsi ini.",
+        "cn": "好。不过也解释一下你为什么选这个方案。"
+      },
+      {
+        "speaker": "A",
+        "id": "Meskipun hasil awalnya bagus, aku setuju kita cek dulu semuanya.",
+        "cn": "虽然初步结果不错，但我同意先全部检查一遍。"
+      },
+      {
+        "speaker": "B",
+        "id": "Nah, intinya jangan buru-buru. Habis lengkap baru ambil keputusan.",
+        "cn": "对，重点就是别急。资料齐了以后再做决定。"
+      }
     ]
   },
   "rewrite": [
@@ -217,21 +254,33 @@
       {
         "type": "choice",
         "prompt": "‘理由；原因’最合适的是：",
-        "options": ["alasan", "hasil", "bukti"],
+        "options": [
+          "alasan",
+          "hasil",
+          "bukti"
+        ],
         "answer_index": 0,
         "explain": "alasan = 理由、原因。"
       },
       {
         "type": "choice",
         "prompt": "‘证据；证明’最合适的是：",
-        "options": ["lengkap", "bukti", "layak"],
+        "options": [
+          "lengkap",
+          "bukti",
+          "layak"
+        ],
         "answer_index": 1,
         "explain": "bukti = 证据、证明。"
       },
       {
         "type": "choice",
         "prompt": "Sebelumnya 最接近：",
-        "options": ["之后", "之前；先前", "甚至"],
+        "options": [
+          "之后",
+          "之前；先前",
+          "甚至"
+        ],
         "answer_index": 1,
         "explain": "sebelumnya = 之前、先前。"
       },
@@ -249,10 +298,18 @@
       },
       {
         "type": "order",
-        "prompt": "排序成自然句：jelas / harus / alasannya / keputusan / sebelum / ambil",
-        "tokens": ["jelas", "harus", "alasannya", "keputusan", "sebelum", "ambil"],
+        "prompt": "按照中文排成自然的印尼语句子：做决定之前，理由必须清楚。",
+        "tokens": [
+          "jelas",
+          "harus",
+          "alasannya",
+          "keputusan",
+          "sebelum",
+          "ambil"
+        ],
         "answer": "Alasannya harus jelas sebelum ambil keputusan.",
-        "explain": "自然顺序：Alasannya harus jelas sebelum ambil keputusan."
+        "explain": "自然顺序：Alasannya harus jelas sebelum ambil keputusan.",
+        "answer_cn": "做决定之前，理由必须清楚。"
       }
     ],
     "self_check": [
