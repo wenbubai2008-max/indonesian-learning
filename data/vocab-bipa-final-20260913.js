@@ -54,7 +54,6 @@
       #vocab.bipaFinalV7 .toolbar>*{min-width:0!important;max-width:100%!important;width:100%!important;height:48px!important;margin:0!important}
       #vocab.bipaFinalV7 #sabFilterStable{display:block}
       #vocab .bipaV7Card{height:330px;min-height:330px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;background:#fbfcff;border:1px solid #dfe5f1;border-radius:24px;padding:40px 30px 30px;overflow:hidden}
-      #vocab .bipaV7Progress{position:absolute;left:34px;top:24px;color:#8a94a8;font-size:16px;font-weight:800}
       #vocab .bipaV7Topic{position:absolute;right:28px;top:20px;background:#eef3ff;color:#3157d5;border-radius:999px;padding:7px 12px;font-size:14px;font-weight:800;max-width:46%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
       #vocab .bipaV7Core{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;transform:translateY(-2px)}
       #vocab .bipaV7Badge{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:24px;font-size:21px;font-weight:900;border:1px solid transparent;box-shadow:0 5px 16px rgba(23,32,51,.09)}
@@ -70,7 +69,7 @@
       #vocab .bipaV7Actions .prev,#vocab .bipaV7Actions .flip{border:0;background:#eef1f6;color:#172033}.bipaV7Actions .next{border:0;background:#3157d5;color:#fff}
       #vocab .bipaV7Memory{border-top:1px solid #e5e9f1;padding-top:16px}.bipaV7Memory button{background:#fff;border:1px solid #e0e5ee;color:#283246}
       @media(max-width:900px){#vocab.bipaFinalV7 .toolbar{grid-template-columns:1fr 1fr 1fr!important}#vocab.bipaFinalV7 #search{grid-column:span 2}}
-      @media(max-width:620px){#vocab.bipaFinalV7 .toolbar{grid-template-columns:1fr 1fr!important}#vocab.bipaFinalV7 #search{grid-column:1/-1}#vocab .bipaV7Card{height:320px;min-height:320px;padding:38px 16px 24px}#vocab .bipaV7Progress{left:18px;top:18px;font-size:14px}#vocab .bipaV7Topic{right:16px;top:15px;max-width:55%;font-size:12px;padding:6px 9px}#vocab .bipaV7Badge{width:52px;height:52px;margin-bottom:20px}#vocab .bipaV7Word{font-size:38px}#vocab .bipaV7Sound{width:48px!important;height:48px!important;min-width:48px!important}#vocab .bipaV7Meaning{top:180px;width:88vw}}
+      @media(max-width:620px){#vocab.bipaFinalV7 .toolbar{grid-template-columns:1fr 1fr!important}#vocab.bipaFinalV7 #search{grid-column:1/-1}#vocab .bipaV7Card{height:320px;min-height:320px;padding:38px 16px 24px}#vocab .bipaV7Topic{right:16px;top:15px;max-width:55%;font-size:12px;padding:6px 9px}#vocab .bipaV7Badge{width:52px;height:52px;margin-bottom:20px}#vocab .bipaV7Word{font-size:38px}#vocab .bipaV7Sound{width:48px!important;height:48px!important;min-width:48px!important}#vocab .bipaV7Meaning{top:180px;width:88vw}}
     `;document.head.appendChild(st);
   }
 
@@ -154,11 +153,11 @@
     const box=$('vocabBox'),a=list(),x=currentFinal();if(!box)return;
     if(!a.length||!x){box.innerHTML='<div class="empty">没有匹配词汇</div>';return}
     if(($('mode')?.value||'flash')==='quiz'){if(typeof oldRender==='function')return oldRender();return}
-    const d=info(x),p=((pos()%a.length)+a.length)%a.length+1;
+    const d=info(x);
     const sab=['S','A','B'].includes(d.sab)?d.sab:'A';
     const topic=d.theme?'<div class="bipaV7Topic">'+esc(d.theme)+'</div>':'';
     const root=d.root?'<div class="bipaV7Root">词根 · '+esc(d.root)+'</div>':'';
-    box.innerHTML='<div id="bipaV7Card" class="bipaV7Card"><div class="bipaV7Progress">第 '+p+' / '+a.length+' 个</div>'+topic+'<div class="bipaV7Core"><div class="bipaV7Badge '+sab+'">'+sab+'</div><div class="bipaV7WordLine"><div class="bipaV7Word">'+esc(d.word)+'</div><button class="bipaV7Sound" type="button" onclick="event.preventDefault();event.stopPropagation();bipaSpeakFinal('+JSON.stringify(d.word).replace(/"/g,'&quot;')+')">🔊</button></div></div><div class="bipaV7Meaning"><div class="bipaV7Cn">'+esc(d.cn||'暂无中文')+'</div><div class="bipaV7En">'+esc(d.en||'')+'</div>'+root+'</div></div><div class="bipaV7Actions"><button class="prev" onclick="bipaPrevFinal()">上一个</button><button class="flip" id="bipaV7Flip" onclick="bipaFlipFinal()">翻卡</button><button class="next" onclick="bipaNextFinal()">下一个</button></div><div class="bipaV7Memory"><button onclick="bipaMarkFinal(\'know\')">会了</button><button onclick="bipaMarkFinal(\'fuzzy\')">模糊</button><button onclick="bipaMarkFinal(\'dont\')">不会</button></div>';
+    box.innerHTML='<div id="bipaV7Card" class="bipaV7Card">'+topic+'<div class="bipaV7Core"><div class="bipaV7Badge '+sab+'">'+sab+'</div><div class="bipaV7WordLine"><div class="bipaV7Word">'+esc(d.word)+'</div><button class="bipaV7Sound" type="button" onclick="event.preventDefault();event.stopPropagation();bipaSpeakFinal('+JSON.stringify(d.word).replace(/"/g,'&quot;')+')">🔊</button></div></div><div class="bipaV7Meaning"><div class="bipaV7Cn">'+esc(d.cn||'暂无中文')+'</div><div class="bipaV7En">'+esc(d.en||'')+'</div>'+root+'</div></div><div class="bipaV7Actions"><button class="prev" onclick="bipaPrevFinal()">上一个</button><button class="flip" id="bipaV7Flip" onclick="bipaFlipFinal()">翻卡</button><button class="next" onclick="bipaNextFinal()">下一个</button></div><div class="bipaV7Memory"><button onclick="bipaMarkFinal(\'know\')">会了</button><button onclick="bipaMarkFinal(\'fuzzy\')">模糊</button><button onclick="bipaMarkFinal(\'dont\')">不会</button></div>';
   }
 
   window.bipaPrevFinal=function(){const a=list();if(!a.length)return;try{idx=(pos()-1+a.length)%a.length}catch(e){}renderFinal()};
