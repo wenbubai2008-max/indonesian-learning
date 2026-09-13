@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-13T07:10:27.905Z",
+  "updated_at": "2026-09-13T07:13:20.492Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -23111,6 +23111,17 @@
       "display": "kakek",
       "last_review": "2026-09-13T07:07:58.028Z",
       "last_mastered": "2026-09-13T07:07:58.028Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "halo": {
+      "word": "halo",
+      "status": "mastered",
+      "updated_at": "2026-09-13T07:13:09.201Z",
+      "display": "halo",
+      "last_review": "2026-09-13T07:13:09.183Z",
+      "last_mastered": "2026-09-13T07:13:09.183Z",
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
