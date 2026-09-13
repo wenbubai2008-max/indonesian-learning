@@ -1,0 +1,47 @@
+name: Fix 2026-09-13 PM order Chinese prompt
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-2026-09-13-pm-order-cn.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch tonight order item and cache version
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          p=Path('data/daily/2026-09-13-pm.json')
+          x=json.loads(p.read_text(encoding='utf-8'))
+          changed=False
+          for it in x.get('daily_test',{}).get('items',[]):
+              if it.get('type')=='order' and it.get('answer')=='Alasannya harus jelas sebelum ambil keputusan.':
+                  it['prompt']='按照中文排成自然的印尼语句子：做决定之前，理由必须清楚。'
+                  it['answer_cn']='做决定之前，理由必须清楚。'
+                  changed=True
+          if not changed:
+              raise SystemExit('Target order item not found')
+          p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          ip=Path('index.html')
+          s=ip.read_text(encoding='utf-8')
+          old='data/daily-light-test.js?v=20260903-1'
+          new='data/daily-light-test.js?v=20260913-cn2'
+          if old in s:
+              s=s.replace(old,new)
+          elif new not in s:
+              s=s.replace('data/daily-light-test.js',new)
+          ip.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily/2026-09-13-pm.json index.html
+          git commit -m "Fix tonight order exercise Chinese prompt" || exit 0
+          git push
