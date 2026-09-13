@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "total": 977,
+  "base_core": 800,
+  "fixed_top1000_additions": 177,
+  "reconstructed_candidates": 179,
+  "selection_rule": "keep the 177 highest-priority historical Top1000 fuzzy/dont candidates by original rank",
+  "dropped_to_fix_historical_count": [
+    {
+      "word": "surat",
+      "cn": "信；文件；证明",
+      "rank": 717
+    },
+    {
+      "word": "identitas",
+      "cn": "身份；身份信息",
+      "rank": 719
+    }
+  ],
+  "before_snapshot": "29c309829282765ac7fb1bc829fd1e4ab7c16983",
+  "after_snapshot": "1083bfbb0bb49b8e3dded7c7614ea0ac3824a01d",
+  "original_merge_time_utc": "2026-09-12T17:15:48.000Z",
+  "dynamic_top1000_merge": false,
+  "generated_at": "2026-09-13T14:20:57.412Z"
+}

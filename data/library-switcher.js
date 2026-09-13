@@ -1,5 +1,5 @@
 (function(){
-  const MASTER_SCRIPTS=['data/master-vocab-data.js?v=20260912-core1','data/master-vocab-data-2.js?v=20260912-core1','data/master-vocab-data-3.js?v=20260912-core1'];
+  const MASTER_SCRIPTS=['data/master-vocab-data.js?v=20260913-master977-final','data/master-vocab-data-2.js?v=20260913-master977-final','data/master-vocab-data-3.js?v=20260913-master977-final'];
   function normWord(w){return String(w||'').trim().toLowerCase()}
   function uniqueByWord(arr){const seen=new Set();return (arr||[]).filter(x=>x&&x.word&&!seen.has(normWord(x.word))&&seen.add(normWord(x.word)));}
   function missingMeaning(v){const s=String(v||'').trim();return !s||s==='暂无释义'||s==='暂未查到释义'||s==='查询中文释义…'||s==='查询中文释义...';}
