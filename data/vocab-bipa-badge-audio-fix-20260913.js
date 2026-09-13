@@ -1,6 +1,6 @@
 (function(){
-  if(window.__BIPA_BADGE_AUDIO_FIX_V8__)return;
-  window.__BIPA_BADGE_AUDIO_FIX_V8__=true;
+  if(window.__BIPA_BADGE_AUDIO_FIX_V10__)return;
+  window.__BIPA_BADGE_AUDIO_FIX_V10__=true;
   const $=id=>document.getElementById(id);
   const norm=s=>String(s||'').trim().toLowerCase();
   function level(){const s=$('librarySelect'),t=s&&s.selectedIndex>=0?String(s.options[s.selectedIndex]?.textContent||''):'';const m=t.match(/BIPA\s*[（(]?\s*(A1|A2|B1|B2)/i);return m?m[1].toUpperCase():''}
@@ -16,13 +16,10 @@
     if(!isBipa())return;
     const word=currentWord();if(!word)return;
     const r=raw(word);const sab=String((r&&r[8])||'').toUpperCase();if(!['S','A','B'].includes(sab))return;
-    if(document.querySelector('#vocabBox .bipaV7Badge,#vocabBox .bipaSab,#vocabBox .cleanSab'))return;
+    if(document.querySelector('#vocabBox .bipaV7Badge,#vocabBox .bipaSab,#vocabBox .cleanSab,#vocabBox .bipaV8Badge'))return;
     const core=document.querySelector('#vocabBox .bipaV7Core,#vocabBox .bipaCore');
     if(core){
       const d=document.createElement('div');d.className='bipaV8Badge '+sab;d.textContent=sab;core.insertBefore(d,core.firstChild);return;
-    }
-    const wordEl=document.querySelector('#vocabBox .word');if(wordEl){
-      const d=document.createElement('div');d.className='bipaV8Badge '+sab;d.textContent=sab;wordEl.parentNode.insertBefore(d,wordEl);
     }
   }
   function addStyle(){if($('bipaV8BadgeStyle'))return;const st=document.createElement('style');st.id='bipaV8BadgeStyle';st.textContent=`
@@ -62,8 +59,8 @@
   },true);
 
   addStyle();
-  const box=$('vocabBox');if(box){new MutationObserver(()=>setTimeout(ensureBadge,0)).observe(box,{childList:true,subtree:true});}
-  window.addEventListener('vocab-library-ready',()=>setTimeout(ensureBadge,400));
-  setInterval(()=>{if(isBipa())ensureBadge()},1200);
+  const lib=$('librarySelect');
+  if(lib)lib.addEventListener('change',()=>setTimeout(ensureBadge,450));
+  window.addEventListener('vocab-library-ready',()=>setTimeout(ensureBadge,450));
   setTimeout(ensureBadge,500);
 })();
