@@ -19,8 +19,8 @@ jobs:
           import pathlib, re
           p=pathlib.Path('index.html')
           s=p.read_text(encoding='utf-8')
-          s=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"\']+', 'data/vocab-memory-feedback.js?v=20260913-stable10', s)
-          s=re.sub(r'data/pronunciation-fix\.js\?v=[^"\']+', 'data/pronunciation-fix.js?v=20260913-stable10', s)
+          s=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"\']+', 'data/vocab-memory-feedback.js?v=20260913-stable11', s)
+          s=re.sub(r'data/pronunciation-fix\.js\?v=[^"\']+', 'data/pronunciation-fix.js?v=20260913-stable11', s)
           p.write_text(s,encoding='utf-8')
           PY
       - name: Commit cache bust
@@ -29,5 +29,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Force refresh vocabulary UI assets stable10"
+          git commit -m "Force refresh vocabulary UI assets stable11"
           git push
