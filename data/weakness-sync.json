@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-13T07:04:55.699Z",
+  "updated_at": "2026-09-13T07:10:27.905Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -23052,10 +23052,10 @@
     "hai": {
       "word": "hai",
       "status": "mastered",
-      "updated_at": "2026-09-13T07:01:03.668Z",
+      "updated_at": "2026-09-13T07:10:17.683Z",
       "display": "hai",
-      "last_review": "2026-09-13T07:01:03.650Z",
-      "last_mastered": "2026-09-13T07:01:03.650Z",
+      "last_review": "2026-09-13T07:10:17.666Z",
+      "last_mastered": "2026-09-13T07:10:17.666Z",
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
@@ -23100,6 +23100,17 @@
       "display": "selamat malam",
       "last_review": "2026-09-13T07:04:44.872Z",
       "last_mastered": "2026-09-13T07:04:44.872Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kakek": {
+      "word": "kakek",
+      "status": "mastered",
+      "updated_at": "2026-09-13T07:07:58.049Z",
+      "display": "kakek",
+      "last_review": "2026-09-13T07:07:58.028Z",
+      "last_mastered": "2026-09-13T07:07:58.028Z",
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
