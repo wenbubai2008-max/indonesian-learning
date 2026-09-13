@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "master_total": 977,
+  "oral_candidate_total": 206,
+  "new_pool_formula": "M ∩ A − D",
+  "review_pool_formula": "A ∩ D",
+  "symbols": {
+    "M": "977主学习词库",
+    "A": "weak active（当前待掌握）",
+    "D": "daily-vocab（已正式教过）",
+    "K": "weak mastered（已掌握）"
+  },
+  "rules": [
+    "K不进入新词或重点复习",
+    "未教过的active主词库词=新词",
+    "已教过且active=复习词",
+    "弱项强化只显示A∩D",
+    "口语词候选来自oral-vocab-candidates.js",
+    "每日新词约20%口语：08点优先2个，19点优先1个；但口语词仍必须满足M∩A−D"
+  ],
+  "updated_at": "2026-09-13T15:30:04.710Z"
+}

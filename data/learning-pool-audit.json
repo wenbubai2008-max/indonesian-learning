@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-09-13T15:30:04.703Z",
+  "master_unique": 977,
+  "weak_active_total": 1164,
+  "weak_mastered_total": 852,
+  "weak_active_mastered_overlap": 0,
+  "master_active": 623,
+  "master_mastered": 354,
+  "master_unjudged": 0,
+  "daily_taught_unique": 361,
+  "new_pool_total": 556,
+  "review_pool_total": 98,
+  "oral_candidates_total": 206,
+  "oral_candidates_in_master": 86,
+  "oral_new_pool": 60,
+  "oral_review_pool": 12,
+  "rules": {
+    "new_pool": "master977 ∩ weak_active − daily_vocab",
+    "review_pool": "weak_active ∩ daily_vocab",
+    "mastered": "excluded from new and重点复习",
+    "weakness_training": "weak_active ∩ daily_vocab only",
+    "oral_candidate": "register=口语 OR oral field non-empty",
+    "oral_daily_target": "约20%；08:00优先2/10，19:00优先1个/3-4新词；只能从合法新词池取，不为凑比例越界"
+  }
+}
