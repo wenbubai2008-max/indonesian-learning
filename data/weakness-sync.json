@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-12T17:13:35.227Z",
+  "updated_at": "2026-09-13T07:04:55.699Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -23023,6 +23023,83 @@
       "display": "visa",
       "last_review": "2026-09-12T17:13:00.739Z",
       "last_mastered": "2026-09-12T17:13:00.739Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "ibu": {
+      "word": "ibu",
+      "status": "mastered",
+      "updated_at": "2026-09-13T07:00:43.009Z",
+      "display": "ibu",
+      "last_review": "2026-09-13T07:00:42.990Z",
+      "last_mastered": "2026-09-13T07:00:42.990Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "orang tua": {
+      "word": "orang tua",
+      "status": "mastered",
+      "updated_at": "2026-09-13T07:00:58.300Z",
+      "display": "orang tua",
+      "last_review": "2026-09-13T07:00:58.282Z",
+      "last_mastered": "2026-09-13T07:00:58.282Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "hai": {
+      "word": "hai",
+      "status": "mastered",
+      "updated_at": "2026-09-13T07:01:03.668Z",
+      "display": "hai",
+      "last_review": "2026-09-13T07:01:03.650Z",
+      "last_mastered": "2026-09-13T07:01:03.650Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kakak perempuan": {
+      "word": "kakak perempuan",
+      "status": "mastered",
+      "updated_at": "2026-09-13T07:02:24.984Z",
+      "display": "kakak perempuan",
+      "last_review": "2026-09-13T07:02:24.965Z",
+      "last_mastered": "2026-09-13T07:02:24.965Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "dikit": {
+      "word": "dikit",
+      "status": "mastered",
+      "updated_at": "2026-09-13T07:03:09.016Z",
+      "display": "dikit",
+      "last_review": "2026-09-13T07:03:08.998Z",
+      "last_mastered": "2026-09-13T07:03:08.998Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kakak laki-laki": {
+      "word": "kakak laki-laki",
+      "status": "mastered",
+      "updated_at": "2026-09-13T07:04:05.532Z",
+      "display": "kakak laki-laki",
+      "last_review": "2026-09-13T07:04:05.511Z",
+      "last_mastered": "2026-09-13T07:04:05.511Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "selamat malam": {
+      "word": "selamat malam",
+      "status": "mastered",
+      "updated_at": "2026-09-13T07:04:44.891Z",
+      "display": "selamat malam",
+      "last_review": "2026-09-13T07:04:44.872Z",
+      "last_mastered": "2026-09-13T07:04:44.872Z",
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
