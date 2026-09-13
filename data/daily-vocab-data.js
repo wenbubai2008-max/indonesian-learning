@@ -1424,9 +1424,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-09-12 19:00",
+    "last_seen": "2026-09-13 19:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -1434,11 +1434,12 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-29",
       "2026-09-05",
-      "2026-09-12"
+      "2026-09-12",
+      "2026-09-13"
     ],
     "root_cn": "对；正确",
-    "example": "Kebetulan aku pernah menangani masalah yang mirip, jadi mungkin bisa bantu.",
-    "example_cn": "正好我以前处理过类似的问题，所以也许能帮上忙。"
+    "example": "Kebetulan aku punya data yang bisa jadi bukti tambahan.",
+    "example_cn": "正好我有一份数据，可以作为补充证据。"
   },
   {
     "word": "nyari",
@@ -3867,20 +3868,24 @@ window.DAILY_VOCAB_DB = [
     "word": "meskipun",
     "cn": "虽然；即使",
     "en": "although; even though",
-    "root": "",
+    "root": "meskipun",
     "categories": [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-01 19:00",
-    "last_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-13 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-01"
-    ]
+      "2026-09-01",
+      "2026-09-13"
+    ],
+    "root_cn": "虽然；即使",
+    "example": "Meskipun hasilnya belum pasti, kita tetap bisa menyiapkan rencana cadangan.",
+    "example_cn": "虽然结果还不确定，我们仍然可以准备备用方案。"
   },
   {
     "word": "tetap",
@@ -3905,20 +3910,24 @@ window.DAILY_VOCAB_DB = [
     "word": "bahkan",
     "cn": "甚至；甚至还",
     "en": "even; moreover",
-    "root": "",
+    "root": "bahkan",
     "categories": [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-01 19:00",
-    "last_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-13 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-01"
-    ]
+      "2026-09-01",
+      "2026-09-13"
+    ],
+    "root_cn": "甚至",
+    "example": "Datanya belum lengkap, bahkan satu laporan belum masuk sama sekali.",
+    "example_cn": "数据还不完整，甚至还有一份报告完全没提交。"
   },
   {
     "word": "berarti",
@@ -7464,17 +7473,19 @@ window.DAILY_VOCAB_DB = [
     "en": "worthy; suitable; eligible",
     "root": "layak",
     "root_cn": "值得；合适",
-    "example": "Menurutku pilihan ini masih layak dipertimbangkan kalau biayanya masuk akal.",
-    "example_cn": "我觉得如果成本合理，这个选择还是值得考虑的。",
+    "example": "Kalau hasilnya konsisten, pilihan ini layak dilanjutkan.",
+    "example_cn": "如果结果稳定，这个选择值得继续。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-13"
@@ -7508,17 +7519,19 @@ window.DAILY_VOCAB_DB = [
     "en": "complete; comprehensive",
     "root": "lengkap",
     "root_cn": "完整；齐全",
-    "example": "Kita jangan ambil keputusan dulu kalau datanya belum lengkap.",
-    "example_cn": "如果数据还不完整，我们先别做决定。",
+    "example": "Pastikan datanya lengkap sebelum kita bahas hasil akhirnya.",
+    "example_cn": "讨论最终结果之前，先确认数据齐全。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-13"
@@ -7574,17 +7587,19 @@ window.DAILY_VOCAB_DB = [
     "en": "brave; dare",
     "root": "berani",
     "root_cn": "敢；有勇气",
-    "example": "Kalau memang nggak masuk akal, kita harus berani bilang dari awal.",
-    "example_cn": "如果确实不合理，我们就应该敢于一开始就说出来。",
+    "example": "Kalau alasannya kuat, kita harus berani menyampaikan pendapat.",
+    "example_cn": "如果理由充分，我们就应该敢于表达意见。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-13"
@@ -7618,17 +7633,19 @@ window.DAILY_VOCAB_DB = [
     "en": "the point is; essentially",
     "root": "inti",
     "root_cn": "核心；要点",
-    "example": "Intinya, kita butuh data yang lengkap sebelum lanjut.",
-    "example_cn": "重点是，我们继续之前需要完整的数据。",
+    "example": "Intinya, keputusan harus punya alasan yang jelas.",
+    "example_cn": "重点是，决定必须有清楚的理由。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-13"
@@ -7662,20 +7679,110 @@ window.DAILY_VOCAB_DB = [
     "en": "be responsible; take responsibility",
     "root": "tanggung jawab",
     "root_cn": "责任；负责",
-    "example": "Kalau kita pilih cara ini, harus jelas siapa yang bertanggung jawab atas hasilnya.",
-    "example_cn": "如果我们选择这种做法，就必须明确谁对结果负责。",
+    "example": "Harus jelas siapa yang bertanggung jawab kalau hasilnya tidak sesuai rencana.",
+    "example_cn": "如果结果不符合计划，必须明确谁负责。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-13 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-13"
     ]
+  },
+  {
+    "word": "hasil",
+    "cn": "结果；成果",
+    "en": "result; outcome",
+    "root": "hasil",
+    "root_cn": "结果；成果",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 19:00",
+    "last_seen": "2026-09-13 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ],
+    "example": "Kita lihat hasilnya dulu sebelum menentukan langkah berikutnya.",
+    "example_cn": "我们先看看结果，再决定下一步。"
+  },
+  {
+    "word": "alasan",
+    "cn": "理由；原因",
+    "en": "reason",
+    "root": "alas",
+    "root_cn": "垫；基础（词源相关）",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 19:00",
+    "last_seen": "2026-09-13 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ],
+    "example": "Kalau kamu nggak setuju, jelasin alasannya dengan singkat.",
+    "example_cn": "如果你不同意，就简短说明理由。"
+  },
+  {
+    "word": "bukti",
+    "cn": "证据；证明",
+    "en": "evidence; proof",
+    "root": "bukti",
+    "root_cn": "证据；证明",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 19:00",
+    "last_seen": "2026-09-13 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ],
+    "example": "Jangan buru-buru menyimpulkan kalau belum ada bukti yang jelas.",
+    "example_cn": "如果还没有明确证据，就别急着下结论。"
+  },
+  {
+    "word": "sebelumnya",
+    "cn": "之前；先前",
+    "en": "previously; before that",
+    "root": "sebelum",
+    "root_cn": "在……之前",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-13 19:00",
+    "last_seen": "2026-09-13 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-13"
+    ],
+    "example": "Sebelumnya aku kira datanya sudah lengkap, ternyata masih kurang satu bagian.",
+    "example_cn": "之前我以为数据已经齐全了，结果还缺一部分。"
   }
 ];
