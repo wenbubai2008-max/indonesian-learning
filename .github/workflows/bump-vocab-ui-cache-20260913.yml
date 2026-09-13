@@ -1,0 +1,33 @@
+name: Bump vocabulary UI cache 20260913
+
+on:
+  push:
+    paths:
+      - '.github/workflows/bump-vocab-ui-cache-20260913.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump browser cache keys
+        run: |
+          python - <<'PY'
+          import pathlib, re
+          p=pathlib.Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          s=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"\']+', 'data/vocab-memory-feedback.js?v=20260913-stable4', s)
+          s=re.sub(r'data/pronunciation-fix\.js\?v=[^"\']+', 'data/pronunciation-fix.js?v=20260913-stable4', s)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit cache bust
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Force refresh vocabulary UI assets"
+          git push
