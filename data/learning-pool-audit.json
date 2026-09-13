@@ -21,5 +21,12 @@
     "weakness_training": "weak_active ∩ daily_vocab only",
     "oral_candidate": "register=口语 OR oral field non-empty",
     "oral_daily_target": "约20%；08:00优先2/10，19:00优先1个/3-4新词；只能从合法新词池取，不为凑比例越界"
-  }
+  },
+  "direct_oral_total": 130,
+  "direct_oral_in_master": 46,
+  "direct_oral_new_pool": 32,
+  "direct_oral_review_pool": 10,
+  "mapped_form_total": 160,
+  "mapped_form_new_pool": 47,
+  "oral_selection_check": "PASS: enough direct oral words for normal daily 2+1 target"
 }
