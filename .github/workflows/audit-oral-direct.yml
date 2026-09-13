@@ -1,0 +1,55 @@
+name: Audit direct oral vocabulary eligibility
+
+on:
+  push:
+    paths:
+      - '.github/workflows/audit-oral-direct.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit direct oral eligibility
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('fs'),vm=require('vm');
+          const norm=w=>String(w||'').trim().toLowerCase();
+          function load(path,seed={}){const c={window:seed};vm.runInNewContext(fs.readFileSync(path,'utf8'),c,{filename:path});return c.window;}
+          const vocab=load('data/vocab-data.js',{}).EMBEDDED_DB||[];
+          const m={MASTER_VOCAB_DB:[]};['data/master-vocab-data.js','data/master-vocab-data-2.js','data/master-vocab-data-3.js'].forEach(f=>vm.runInNewContext(fs.readFileSync(f,'utf8'),{window:m},{filename:f}));
+          const daily=load('data/daily-vocab-data.js',{}).DAILY_VOCAB_DB||[];
+          const weak=JSON.parse(fs.readFileSync('data/weakness-sync.json','utf8'));
+          const master=new Set((m.MASTER_VOCAB_DB||[]).map(x=>norm(Array.isArray(x)?x[0]:x.word)));
+          const taught=new Set(daily.map(x=>norm(x.word)));
+          const active=new Set(Object.entries(weak.words||{}).filter(([,v])=>v&&v.status==='active').map(([k])=>norm(k)));
+          const direct=[...new Set(vocab.filter(x=>String(x.register||'').trim()==='口语').map(x=>norm(x.word)).filter(Boolean))];
+          const mapped=[...new Set(vocab.filter(x=>String(x.oral||'').trim()!=='').map(x=>norm(x.word)).filter(Boolean))];
+          const newPool=[...master].filter(k=>active.has(k)&&!taught.has(k));
+          const review=[...active].filter(k=>taught.has(k));
+          const audit=JSON.parse(fs.readFileSync('data/learning-pool-audit.json','utf8'));
+          audit.direct_oral_total=direct.length;
+          audit.direct_oral_in_master=direct.filter(k=>master.has(k)).length;
+          audit.direct_oral_new_pool=newPool.filter(k=>direct.includes(k)).length;
+          audit.direct_oral_review_pool=review.filter(k=>direct.includes(k)).length;
+          audit.mapped_form_total=mapped.length;
+          audit.mapped_form_new_pool=newPool.filter(k=>mapped.includes(k)).length;
+          audit.oral_selection_check=audit.direct_oral_new_pool>=3?'PASS: enough direct oral words for normal daily 2+1 target':'WARN: direct oral pool below normal daily target; use mapped-form fallback';
+          fs.writeFileSync('data/learning-pool-audit.json',JSON.stringify(audit,null,2)+'\n');
+          console.log(JSON.stringify({direct_oral_total:audit.direct_oral_total,direct_oral_in_master:audit.direct_oral_in_master,direct_oral_new_pool:audit.direct_oral_new_pool,direct_oral_review_pool:audit.direct_oral_review_pool,mapped_form_new_pool:audit.mapped_form_new_pool,check:audit.oral_selection_check}));
+          if(audit.direct_oral_new_pool<3)process.exitCode=2;
+          NODE
+      - name: Commit audit and remove workflow
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/learning-pool-audit.json
+          git rm .github/workflows/audit-oral-direct.yml
+          git commit -m "Record direct oral learning pool audit"
+          git push origin HEAD:main
