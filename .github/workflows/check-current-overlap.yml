@@ -1,0 +1,37 @@
+name: Check current master weakness overlap
+
+on:
+  push:
+    paths:
+      - '.github/workflows/check-current-overlap.yml'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Count sets and overlaps
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('fs'),vm=require('vm');
+          const norm=w=>String(w||'').trim().toLowerCase();
+          const mctx={window:{MASTER_VOCAB_DB:[]}};
+          ['data/master-vocab-data.js','data/master-vocab-data-2.js','data/master-vocab-data-3.js'].forEach(f=>vm.runInNewContext(fs.readFileSync(f,'utf8'),mctx,{filename:f}));
+          const master=new Set((mctx.window.MASTER_VOCAB_DB||[]).map(x=>norm(Array.isArray(x)?x[0]:x.word)).filter(Boolean));
+          const weak=JSON.parse(fs.readFileSync('data/weakness-sync.json','utf8'));
+          const active=new Set(), mastered=new Set();
+          for(const [k,v] of Object.entries(weak.words||{})){
+            const w=norm(v?.word||k); if(!w)continue;
+            if(v?.status==='active')active.add(w);
+            if(v?.status==='mastered')mastered.add(w);
+          }
+          const intersect=(a,b)=>[...a].filter(x=>b.has(x));
+          const ma=intersect(master,active), mm=intersect(master,mastered);
+          const union=new Set([...ma,...mm]);
+          const outsideActive=[...active].filter(x=>!master.has(x));
+          const outsideMastered=[...mastered].filter(x=>!master.has(x));
+          const masterNoWeak=[...master].filter(x=>!active.has(x)&&!mastered.has(x));
+          const both=[...active].filter(x=>mastered.has(x));
+          console.log('RESULT='+JSON.stringify({master:master.size,active:active.size,mastered:mastered.size,master_x_active:ma.length,master_x_mastered:mm.length,master_covered_by_weak:union.size,master_without_weak_state:masterNoWeak.length,active_outside_master:outsideActive.length,mastered_outside_master:outsideMastered.length,active_x_mastered:both.length,sample_active_outside_master:outsideActive.slice(0,20),sample_mastered_outside_master:outsideMastered.slice(0,20)}));
+          NODE
