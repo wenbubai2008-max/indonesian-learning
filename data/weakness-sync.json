@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-13T07:13:20.492Z",
+  "updated_at": "2026-09-13T11:46:29.549Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1443,14 +1443,15 @@
     "penasaran": {
       "word": "penasaran",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-13T11:46:18.148Z",
       "display": "penasaran",
       "cn": "好奇、很想知道",
+      "last_review": "2026-09-13T11:46:18.119Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "khusus": {
       "word": "khusus",
@@ -6332,13 +6333,14 @@
     "pokoknya": {
       "word": "pokoknya",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-13T11:46:02.400Z",
       "display": "pokoknya",
+      "last_review": "2026-09-13T11:46:02.357Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "penulis": {
       "word": "penulis",
