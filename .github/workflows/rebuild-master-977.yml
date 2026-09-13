@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Reconstruct fixed 977-word master
+      - name: Reconstruct merge-time 977-word master
         shell: bash
         run: |
           node <<'NODE'
@@ -24,15 +24,16 @@ jobs:
           const vm = require('vm');
           const cp = require('child_process');
 
-          const HIST = '29c309829282765ac7fb1bc829fd1e4ab7c16983'; // 2026-09-13 00:10 Jakarta, immediately before the first weak-Top1000 merge
+          const BEFORE = '29c309829282765ac7fb1bc829fd1e4ab7c16983'; // 00:10:50 Jakarta, last sync before original merge
+          const AFTER  = '1083bfbb0bb49b8e3dded7c7614ea0ac3824a01d'; // 01:40:49 Jakarta, first sync after original merge
+          const MERGE_TIME = Date.parse('2026-09-12T17:15:48Z'); // original merge commit time
           const MASTER_FILES = ['data/master-vocab-data.js','data/master-vocab-data-2.js','data/master-vocab-data-3.js'];
           const norm = w => String(w || '').trim().toLowerCase();
 
           function loadMaster() {
             const ctx = { window: { MASTER_VOCAB_DB: [] } };
             for (const f of MASTER_FILES) vm.runInNewContext(fs.readFileSync(f, 'utf8'), ctx, { filename: f });
-            const seen = new Set();
-            const out = [];
+            const seen = new Set(), out = [];
             for (const raw of ctx.window.MASTER_VOCAB_DB || []) {
               const word = Array.isArray(raw) ? raw[0] : raw && raw.word;
               const cn = Array.isArray(raw) ? (raw[1] || '') : (raw && raw.cn) || '';
@@ -46,8 +47,7 @@ jobs:
           function loadTop1000() {
             const ctx = { window: {} };
             vm.runInNewContext(fs.readFileSync('data/vocab-data.js', 'utf8'), ctx, { filename: 'data/vocab-data.js' });
-            const seen = new Set();
-            const out = [];
+            const seen = new Set(), out = [];
             for (const x of ctx.window.EMBEDDED_DB || []) {
               if (!x || !x.word) continue;
               const k = norm(x.word);
@@ -57,71 +57,98 @@ jobs:
             return out;
           }
 
+          function weakAt(sha) {
+            return JSON.parse(cp.execFileSync('git', ['show', `${sha}:data/weakness-sync.json`], { encoding: 'utf8', maxBuffer: 30 * 1024 * 1024 }));
+          }
+
           const core = loadMaster();
-          if (core.length !== 800) throw new Error(`Expected 800-word refined core, got ${core.length}`);
-
+          if (core.length !== 800) throw new Error(`Expected current refined core to be 800, got ${core.length}`);
           const top = loadTop1000();
-          const weakText = cp.execFileSync('git', ['show', `${HIST}:data/weakness-sync.json`], { encoding: 'utf8', maxBuffer: 25 * 1024 * 1024 });
-          const weak = JSON.parse(weakText);
-          const coreSet = new Set(core.map(x => norm(x[0])));
+          const before = weakAt(BEFORE);
+          const after = weakAt(AFTER);
 
-          // This exactly reproduces the state used by the first merge: Top1000 words the user had marked fuzzy/dont,
-          // excluding anything already in the 800-word refined core. weakness-sync mirrors indo_mem as memory_fuzzy/memory_dont.
+          // Rebuild browser learning state at the exact moment the original merge was introduced.
+          // Start from the final synced state before the merge. For records visible in the first later sync,
+          // only apply updates whose own updated_at is at/before the merge timestamp. Later changes are ignored.
+          const state = new Map();
+          for (const [k,v] of Object.entries(before.words || {})) state.set(norm(k), v);
+          for (const [k,v] of Object.entries(after.words || {})) {
+            const t = Date.parse(v && v.updated_at || '');
+            if (Number.isFinite(t) && t <= MERGE_TIME) state.set(norm(k), v);
+          }
+
+          const coreSet = new Set(core.map(x => norm(x[0])));
           const additions = [];
           for (const x of top) {
             const k = norm(x.word);
             if (!k || coreSet.has(k)) continue;
-            const r = weak.words && weak.words[k];
+            const r = state.get(k);
             if (!r || r.status !== 'active') continue;
             const reasons = Array.isArray(r.reasons) ? r.reasons : [];
             if (!reasons.includes('memory_fuzzy') && !reasons.includes('memory_dont')) continue;
             additions.push([String(x.word).trim(), String(x.cn || '').trim()]);
           }
 
-          console.log(JSON.stringify({core: core.length, top1000: top.length, additions: additions.length, total: core.length + additions.length}));
-          if (additions.length !== 177) throw new Error(`Historical reconstruction must add exactly 177 words, got ${additions.length}`);
-
-          const all = [...core, ...additions];
-          const unique = new Set(all.map(x => norm(x[0])));
-          if (all.length !== 977 || unique.size !== 977) throw new Error(`Expected exactly 977 unique words, got rows=${all.length}, unique=${unique.size}`);
-
-          const sizes = [326, 326, 325];
-          let pos = 0;
-          for (let i = 0; i < 3; i++) {
-            const chunk = all.slice(pos, pos + sizes[i]); pos += sizes[i];
-            const body = 'window.MASTER_VOCAB_DB=(window.MASTER_VOCAB_DB||[]).concat(' + JSON.stringify(chunk) + ');\n';
-            fs.writeFileSync(MASTER_FILES[i], body, 'utf8');
-          }
-
-          const manifest = {
-            version: 1,
-            total: 977,
-            base_core: 800,
-            fixed_top1000_additions: 177,
-            reconstruction_source: {
-              weakness_snapshot_commit: HIST,
-              top1000_file: 'data/vocab-data.js',
-              rule: 'historical memory_fuzzy/memory_dont in Top1000, excluding 800-word refined core'
-            },
-            dynamic_top1000_merge: false,
-            generated_at: new Date().toISOString()
+          const diagnostic = {
+            base_core: core.length,
+            top1000: top.length,
+            reconstructed_additions: additions.length,
+            reconstructed_total: core.length + additions.length,
+            before_snapshot: BEFORE,
+            after_snapshot: AFTER,
+            merge_time_utc: new Date(MERGE_TIME).toISOString(),
+            method: 'state before merge + after-snapshot records whose own updated_at <= original merge time'
           };
-          fs.writeFileSync('data/master-vocab-977-manifest.json', JSON.stringify(manifest, null, 2) + '\n');
+          fs.writeFileSync('data/master-vocab-977-diagnostic.json', JSON.stringify(diagnostic, null, 2) + '\n');
+          console.log(JSON.stringify(diagnostic));
 
-          // Force browsers to load the 977 data rather than cached 800-word core files.
-          const switcher = 'data/library-switcher.js';
-          let s = fs.readFileSync(switcher, 'utf8');
-          s = s.replaceAll('20260912-core1', '20260913-master977-v1');
-          fs.writeFileSync(switcher, s, 'utf8');
+          if (additions.length !== 177) {
+            console.error(`Expected exactly 177 additions for the agreed 977 master; reconstructed ${additions.length}.`);
+            process.exitCode = 22;
+          } else {
+            const all = [...core, ...additions];
+            const unique = new Set(all.map(x => norm(x[0])));
+            if (all.length !== 977 || unique.size !== 977) throw new Error(`Expected exactly 977 unique words, got rows=${all.length}, unique=${unique.size}`);
+
+            const sizes = [326,326,325];
+            let pos = 0;
+            for (let i=0;i<3;i++) {
+              const chunk = all.slice(pos, pos + sizes[i]); pos += sizes[i];
+              fs.writeFileSync(MASTER_FILES[i], 'window.MASTER_VOCAB_DB=(window.MASTER_VOCAB_DB||[]).concat(' + JSON.stringify(chunk) + ');\n', 'utf8');
+            }
+            const manifest = {
+              version: 1,
+              total: 977,
+              base_core: 800,
+              fixed_additions: 177,
+              source: 'reconstructed exact browser state at original Top1000 weak-word merge time',
+              before_snapshot: BEFORE,
+              after_snapshot: AFTER,
+              merge_time_utc: new Date(MERGE_TIME).toISOString(),
+              dynamic_top1000_merge: false,
+              generated_at: new Date().toISOString()
+            };
+            fs.writeFileSync('data/master-vocab-977-manifest.json', JSON.stringify(manifest, null, 2) + '\n');
+            let s = fs.readFileSync('data/library-switcher.js','utf8');
+            s = s.replaceAll('20260912-core1','20260913-master977-v2').replaceAll('20260913-master977-v1','20260913-master977-v2');
+            fs.writeFileSync('data/library-switcher.js',s,'utf8');
+          }
           NODE
 
-      - name: Verify and commit
+      - name: Commit exact result or diagnostic
+        if: always()
         shell: bash
         run: |
-          node -e "const m=require('./data/master-vocab-977-manifest.json'); if(m.total!==977||m.base_core!==800||m.fixed_top1000_additions!==177) process.exit(1); console.log(m)"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/master-vocab-data.js data/master-vocab-data-2.js data/master-vocab-data-3.js data/master-vocab-977-manifest.json data/library-switcher.js
-          git rm .github/workflows/rebuild-master-977.yml
-          git commit -m "Restore fixed 977-word master vocabulary"
-          git push origin HEAD:main
+          if [ -f data/master-vocab-977-manifest.json ]; then
+            node -e "const m=require('./data/master-vocab-977-manifest.json'); if(m.total!==977||m.fixed_additions!==177) process.exit(1)"
+            git add data/master-vocab-data.js data/master-vocab-data-2.js data/master-vocab-data-3.js data/master-vocab-977-manifest.json data/master-vocab-977-diagnostic.json data/library-switcher.js
+            git rm .github/workflows/rebuild-master-977.yml
+            git commit -m "Restore exact fixed 977-word master vocabulary"
+            git push origin HEAD:main
+          else
+            git add data/master-vocab-977-diagnostic.json
+            git commit -m "Diagnose historical 977-word master reconstruction" || true
+            git push origin HEAD:main
+          fi
