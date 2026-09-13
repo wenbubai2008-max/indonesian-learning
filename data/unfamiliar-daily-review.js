@@ -3,6 +3,22 @@
   function cleanup(){const old=document.getElementById('unfamiliarDailyReview');if(old)old.remove();}
   cleanup();const body=document.getElementById('dailyBody');if(body)new MutationObserver(cleanup).observe(body,{childList:true,subtree:true});
 
+  // 主学习词库固定为人工筛选后的静态核心词库。
+  // 显式加载 core guard，彻底取消旧的“Top1000 模糊/不会永久并入 master”逻辑。
+  // Top1000 弱项继续通过 WeaknessPool / weakness-sync.json 复习，不计入 master 总数。
+  function ensureMasterCoreGuard(){
+    if(window.lockMasterToCore){window.lockMasterToCore();return;}
+    if(document.querySelector('script[data-master-core-guard]'))return;
+    const s=document.createElement('script');
+    s.src='data/master-top1000-weak-merge.js?v=20260913-core-only1';
+    s.dataset.masterCoreGuard='1';
+    s.onload=function(){if(window.lockMasterToCore)window.lockMasterToCore();};
+    document.body.appendChild(s);
+  }
+  ensureMasterCoreGuard();
+  window.addEventListener('master-vocab-ready',ensureMasterCoreGuard);
+  window.addEventListener('vocab-library-ready',ensureMasterCoreGuard);
+
   // 主学习词库、当前词库统计和切换现在统一由 library-switcher.js 管理。
   // 这里不再重复加载 master-vocab-integration / click-stability / scoped-stats，避免多个脚本争抢同一个下拉菜单。
   window.__masterVocabIntegrationRequested=true;
