@@ -80,3 +80,5 @@ jobs:
           git add data/daily-vocab-data.js
           git commit -m 'content: append 2026-09-13 pm vocabulary'
           git push
+
+# one-time trigger: 2026-09-13T19:08+07:00
