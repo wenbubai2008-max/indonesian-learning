@@ -1,0 +1,37 @@
+name: Bump learning state UI cache
+
+on:
+  push:
+    paths:
+      - '.github/workflows/bump-learning-state-ui-cache.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump cache and tooltip
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+          let idx=fs.readFileSync('index.html','utf8');
+          idx=idx.replace('data/library-switcher.js?v=20260901-5','data/library-switcher.js?v=20260913-state2');
+          fs.writeFileSync('index.html',idx,'utf8');
+          let sw=fs.readFileSync('data/library-switcher.js','utf8');
+          sw=sw.replace("reviewCard.title='查看当前词库“模糊 / 不会”的词汇'","reviewCard.title='查看当前词库待掌握词汇（模糊 / 不会）'");
+          fs.writeFileSync('data/library-switcher.js',sw,'utf8');
+          if(!idx.includes('data/library-switcher.js?v=20260913-state2')) throw new Error('cache version not bumped');
+          NODE
+      - name: Commit
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/library-switcher.js
+          git rm .github/workflows/bump-learning-state-ui-cache.yml
+          git commit -m "Refresh pending-learning vocabulary UI"
+          git push origin HEAD:main
