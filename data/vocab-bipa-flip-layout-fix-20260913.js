@@ -4,6 +4,7 @@
   const st=document.createElement('style');
   st.id='bipaFlipLayoutFix20260913';
   st.textContent=`
+    #vocab .bipaV7Progress{display:none!important;}
     #vocab .bipaV7Core{transform:translateY(-42px)!important;}
     #vocab .bipaV7Badge{margin-bottom:14px!important;}
     #vocab .bipaV7Meaning{top:218px!important;width:min(720px,82vw)!important;}
