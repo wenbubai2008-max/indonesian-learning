@@ -118,7 +118,7 @@
     window.showKnownWords=showKnownCurrent;try{showKnownWords=showKnownCurrent}catch(e){}
     window.showReviewWords=showReviewCurrent;
     const knownCard=document.getElementById('knownCount')?.closest('button');if(knownCard){knownCard.onclick=function(e){e&&e.preventDefault();showKnownCurrent();};knownCard.title='查看当前词库已掌握词汇';knownCard.style.cursor='pointer';}
-    const reviewCard=document.getElementById('reviewCount')?.closest('button');if(reviewCard){reviewCard.onclick=function(e){e&&e.preventDefault();showReviewCurrent();};reviewCard.title='查看当前词库“模糊 / 不会”的词汇';reviewCard.style.cursor='pointer';}
+    const reviewCard=document.getElementById('reviewCount')?.closest('button');if(reviewCard){reviewCard.onclick=function(e){e&&e.preventDefault();showReviewCurrent();};reviewCard.title='查看当前词库待掌握词汇（模糊 / 不会）';reviewCard.style.cursor='pointer';}
     window.switchVocabLibrary=setLibrary;window.openMasterVocabulary=()=>setLibrary('master');window.refreshMasterVocabulary=()=>setLibrary('master');
     window.getUnfamiliarVocabulary=unknownWords;window.refreshUnknownLibrary=function(){refreshOptions();if(activeLibrary()==='unknown')setLibrary('unknown')};
     window.addEventListener('unknown-vocab-changed',function(){window.refreshUnknownLibrary&&window.refreshUnknownLibrary()});
