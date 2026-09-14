@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{id:'er-20260914-beras-klaim',date:'2026-09-14',title:'Pemerintah Soroti Klaim Beras yang Tidak Sesuai Isi Produk',title_cn:'印尼政府关注大米宣传与实际产品不符问题',path:'data/extensive-reading-history/2026-09-14-beras-klaim.js'},
 {id:'er-20260913-dukcapil-jelambar',date:'2026-09-13',title:'Urus KTP dan KK Bisa Setelah Jam Kerja di Jelambar',title_cn:'Jelambar 下班后也能办理 KTP 和 KK 等证件',path:'data/extensive-reading-history/2026-09-13.js'},
 {id:'er-20260912-lrt-jabodebek',date:'2026-09-12',title:'LRT Jabodebek Makin Sering Dipakai untuk Kerja dan Akhir Pekan',title_cn:'LRT Jabodebek 越来越多用于通勤和周末出行',path:'data/extensive-reading-history/2026-09-12.js'},
 {id:'er-20260911-lrt-uji-coba',date:'2026-09-11',title:'Jadwal LRT Manggarai–Velodrome Masih Menunggu Hasil Uji Coba',title_cn:'Manggarai–Velodrome LRT 运营时间仍需等待测试结果',path:'data/extensive-reading-history/2026-09-11.js'},
