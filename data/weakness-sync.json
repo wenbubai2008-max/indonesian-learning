@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-14T09:55:04.842Z",
+  "updated_at": "2026-09-14T09:56:56.137Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -174,16 +174,16 @@
     },
     "memastikan": {
       "word": "memastikan",
-      "status": "active",
-      "updated_at": "2026-09-11T14:40:15.508Z",
+      "status": "mastered",
+      "updated_at": "2026-09-14T09:56:45.671Z",
       "display": "memastikan",
       "cn": "确保；确认",
       "root": "pasti",
-      "reasons": [
-        "memory_dont"
-      ],
+      "last_review": "2026-09-14T09:56:45.645Z",
+      "last_mastered": "2026-09-14T09:56:45.645Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "menghindari": {
       "word": "menghindari",
