@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-14T09:40:34.589Z",
+  "updated_at": "2026-09-14T09:41:32.822Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -973,8 +973,9 @@
     "wilayah": {
       "word": "wilayah",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-14T09:41:11.909Z",
       "display": "wilayah",
+      "cn": "地区",
       "reasons": [
         "memory_dont"
       ],
@@ -1008,8 +1009,9 @@
     "jenis": {
       "word": "jenis",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-14T09:41:22.615Z",
       "display": "jenis",
+      "cn": "类型",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -13245,8 +13247,9 @@
     "serupa": {
       "word": "serupa",
       "status": "active",
-      "updated_at": "2026-09-12T14:25:24.886Z",
+      "updated_at": "2026-09-14T09:40:57.206Z",
       "display": "serupa",
+      "cn": "相似的",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -18271,9 +18274,9 @@
     "tersedia": {
       "word": "tersedia",
       "status": "active",
-      "updated_at": "2026-09-12T16:51:53.538Z",
+      "updated_at": "2026-09-14T09:41:03.054Z",
       "display": "tersedia",
-      "cn": "可用；有现货",
+      "cn": "可用；有货",
       "root": "sedia",
       "reasons": [
         "memory_fuzzy"
