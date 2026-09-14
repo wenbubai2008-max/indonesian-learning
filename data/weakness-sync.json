@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-14T01:55:46.430Z",
+  "updated_at": "2026-09-14T09:30:41.193Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -318,16 +318,17 @@
     "menangani": {
       "word": "menangani",
       "status": "active",
-      "updated_at": "2026-09-11T14:40:15.508Z",
+      "updated_at": "2026-09-14T09:30:30.714Z",
       "display": "menangani",
       "cn": "处理；负责应对",
       "root": "tangan",
       "root_cn": "手",
+      "last_review": "2026-09-14T09:30:30.690Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "utang": {
       "word": "utang",
@@ -23170,17 +23171,17 @@
     "urusan dadakan": {
       "word": "urusan dadakan",
       "status": "active",
-      "updated_at": "2026-09-13T11:53:43.256Z",
+      "updated_at": "2026-09-14T09:30:22.137Z",
       "display": "urusan dadakan",
       "cn": "临时冒出来的事",
       "root": "urus / dadak",
       "last_wrong": "2026-09-13T11:53:43.234Z",
-      "last_review": "2026-09-13T11:53:43.234Z",
+      "last_review": "2026-09-14T09:30:22.098Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "ngotot": {
       "word": "ngotot",
