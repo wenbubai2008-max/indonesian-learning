@@ -1,0 +1,339 @@
+{
+  "date": "2026-09-14",
+  "session": "pm",
+  "time": "19:00",
+  "level": "A2+ → B1",
+  "day": 24,
+  "duration_minutes": 55,
+  "title": "19:00｜复习 + 应用：临时变化时，把方案调整到合适",
+  "vocab": [
+    {
+      "word": "sesuai",
+      "display": "sesuai",
+      "audio_text": "sesuai",
+      "cn": "符合；适合；与……一致",
+      "en": "suitable; appropriate; in accordance with",
+      "root": "suai",
+      "root_cn": "匹配；合适",
+      "formation": "suai → sesuai；高频用法包括 sesuai kebutuhan（符合需求）、sesuai rencana（按计划）、sesuai dengan...（与……一致）。",
+      "example": "Kita cari tempat yang sesuai sama kebutuhan semua anggota.",
+      "example_cn": "我们找一个符合所有成员需求的地方。",
+      "synonym_note": "cocok 更偏‘合适、匹配得上’；sesuai 更强调符合条件、要求、计划或标准。",
+      "usage_note": "真正新词；来自 977 主词库 ∩ active − daily-vocab。"
+    },
+    {
+      "word": "solusi",
+      "display": "solusi",
+      "audio_text": "solusi",
+      "cn": "解决方案；办法",
+      "en": "solution",
+      "root": "solusi",
+      "root_cn": "解决方案",
+      "formation": "外来高频名词；常见 cari solusi（找办法）、solusi sementara（临时方案）、solusi terbaik（最佳方案）。",
+      "example": "Kalau jadwalnya bentrok, kita cari solusi yang paling sederhana dulu.",
+      "example_cn": "如果时间冲突，我们先找最简单的解决办法。",
+      "synonym_note": "jalan keluar 也表示‘出路、解决办法’，更口语、更有‘摆脱问题’的感觉。",
+      "usage_note": "真正新词；来自 977 主词库 ∩ active − daily-vocab。"
+    },
+    {
+      "word": "misalnya",
+      "display": "misalnya",
+      "audio_text": "misalnya",
+      "cn": "例如；比如说",
+      "en": "for example; for instance",
+      "root": "misal",
+      "root_cn": "例子；假设",
+      "formation": "misal + -nya → misalnya；用于举例，日常和工作表达都非常常用。",
+      "example": "Misalnya hujan, kita bisa pindah ke tempat yang di dalam ruangan.",
+      "example_cn": "比如下雨的话，我们可以换到室内的地方。",
+      "synonym_note": "contohnya = 举个例子；misalnya 更适合直接接一个假设或具体例子。",
+      "usage_note": "真正新词；来自 977 主词库 ∩ active − daily-vocab。"
+    },
+    {
+      "word": "antar",
+      "display": "antar",
+      "audio_text": "antar",
+      "cn": "送；送到（口语高频）",
+      "en": "take; deliver; drop off",
+      "root": "antar",
+      "root_cn": "送；递送",
+      "formation": "口语里常直接用 antar，也常说 nganter；标准形式为 mengantar。",
+      "example": "Kalau pulangnya kemalaman, nanti aku antar kamu sampai depan.",
+      "example_cn": "如果回去太晚，我等会儿送你到门口。",
+      "synonym_note": "口语：antar / nganter；标准/较正式：mengantar。这里学的是日常‘送人/送东西’的用法。",
+      "usage_note": "真正新词；今天晚课口语配额词，来自口语候选池 ∩ 977主词库 ∩ active − daily-vocab。"
+    },
+    {
+      "word": "ujung-ujungnya",
+      "display": "ujung-ujungnya",
+      "audio_text": "ujung-ujungnya",
+      "cn": "到头来；结果最后",
+      "en": "in the end; eventually",
+      "root": "ujung",
+      "root_cn": "尽头；末端",
+      "formation": "ujung 重叠 + -nya → ujung-ujungnya；很自然的口语结果表达，常带‘折腾半天最后还是……’的语气。",
+      "example": "Kalau semua orang terus ganti pilihan, ujung-ujungnya kita nggak jadi pergi.",
+      "example_cn": "如果大家一直换选择，到头来我们可能就去不成了。",
+      "usage_note": "重点复习；今天 quick_wrong + memory_dont，优先级最高。"
+    },
+    {
+      "word": "tergantung",
+      "display": "tergantung",
+      "audio_text": "tergantung",
+      "cn": "取决于；看……情况",
+      "en": "depend on; it depends",
+      "root": "gantung",
+      "root_cn": "挂；悬挂",
+      "formation": "ter- + gantung → tergantung；高频结构 tergantung + 名词 / tergantung apakah...，表示‘取决于……’。",
+      "example": "Jadi atau nggaknya tergantung berapa orang yang bisa ikut.",
+      "example_cn": "到底办不办取决于有多少人能参加。",
+      "usage_note": "重点复习；今天 quick_wrong + memory_fuzzy。"
+    },
+    {
+      "word": "masukan",
+      "display": "masukan",
+      "audio_text": "masukan",
+      "cn": "意见；建议；反馈",
+      "en": "input; feedback; suggestion",
+      "root": "masuk",
+      "root_cn": "进入；进",
+      "formation": "masuk + -an → masukan；工作场景里 sangat常用，常见 kasih masukan / minta masukan。",
+      "example": "Kalau ada masukan, bilang sekarang biar bisa langsung kita bahas.",
+      "example_cn": "如果有意见，现在就说，这样我们可以马上讨论。",
+      "usage_note": "重点复习；今天 quick_wrong。"
+    },
+    {
+      "word": "urusan dadakan",
+      "display": "urusan dadakan",
+      "audio_text": "urusan dadakan",
+      "cn": "临时突发的事情；突然有事",
+      "en": "last-minute matter; unexpected errand",
+      "root": "urus / dadak",
+      "root_cn": "处理；临时突然发生",
+      "formation": "urusan（事情/事务）+ dadakan（临时突然的）→ urusan dadakan；口语里非常实用。",
+      "example": "Maaf, aku nggak bisa ikut karena ada urusan dadakan.",
+      "example_cn": "抱歉，我不能参加，因为临时突然有点事。",
+      "usage_note": "重点复习；今天 quick_wrong。"
+    },
+    {
+      "word": "tagihan",
+      "display": "tagihan",
+      "audio_text": "tagihan",
+      "cn": "账单；应付款",
+      "en": "bill; invoice; amount due",
+      "root": "tagih",
+      "root_cn": "催款；要求付款",
+      "formation": "tagih + -an → tagihan；常见 tagihan listrik / tagihan kartu / bayar tagihan。",
+      "example": "Sebelum bayar, cek dulu tagihannya sesuai sama harga yang disepakati atau nggak.",
+      "example_cn": "付款前先确认账单是否和商定的价格一致。",
+      "usage_note": "重点复习；今天 memory_fuzzy，且未进入最近晚课冷却。"
+    },
+    {
+      "word": "pihak",
+      "display": "pihak",
+      "audio_text": "pihak",
+      "cn": "一方；相关方",
+      "en": "party; side",
+      "root": "pihak",
+      "root_cn": "一方；方面",
+      "formation": "今天 08:00 已教；常见 pihak kami / pihak mereka / kedua pihak。",
+      "example": "Kedua pihak sebenarnya setuju, cuma detail waktunya belum beres.",
+      "example_cn": "双方其实都同意，只是时间细节还没处理好。",
+      "usage_note": "今天08:00已教词应用复现；当前 memory_dont。"
+    },
+    {
+      "word": "anggota",
+      "display": "anggota",
+      "audio_text": "anggota",
+      "cn": "成员；会员",
+      "en": "member",
+      "root": "anggota",
+      "root_cn": "成员；会员",
+      "formation": "今天 08:00 已教；常见 anggota tim / anggota keluarga / anggota grup。",
+      "example": "Kita cek dulu anggota mana yang benar-benar bisa ikut.",
+      "example_cn": "我们先确认哪些成员确实能参加。",
+      "usage_note": "今天08:00已教词应用复现；当前 memory_dont。"
+    },
+    {
+      "word": "mantap",
+      "display": "mantap",
+      "audio_text": "mantap",
+      "cn": "很棒；很稳；很可以（口语）",
+      "en": "great; solid; excellent",
+      "root": "mantap",
+      "root_cn": "稳；确定；很棒",
+      "formation": "今天 08:00 已教的口语词；可评价方案、表现、食物或决定。",
+      "example": "Kalau tempatnya dekat dan harganya masuk akal, menurutku sudah mantap.",
+      "example_cn": "如果地方近、价格也合理，我觉得就很不错了。",
+      "usage_note": "今天08:00已教词应用复现；当前 memory_fuzzy。"
+    }
+  ],
+  "reading": {
+    "title": "Rencana Berubah di Menit Terakhir",
+    "text": "Sore ini kami finalisasi kegiatan tim. Tempatnya sebenarnya sudah mantap, tapi satu anggota tiba-tiba punya urusan dadakan. Ada juga masukan supaya lokasi diganti karena tagihan paket pertama agak mahal. Menurutku, solusi paling sesuai bukan langsung ganti semuanya. Misalnya, anggota yang rumahnya jauh bisa kami antar ke titik yang lebih dekat. Tapi keputusan akhirnya tergantung kondisi lalu lintas dan jumlah orang yang ikut. Aku minta kedua pihak cek lagi detailnya. Kalau semua orang terus ubah pilihan, ujung-ujungnya acara malah nggak jadi. Jadi kami sepakat pakai rencana yang paling sederhana dan tetap fleksibel.",
+    "cn": "今天下午我们敲定团队活动。地方本来已经很不错了，但一名成员突然临时有事。还有人提出意见，因为第一个套餐的账单有点贵，希望换地点。我觉得最合适的解决办法不是把所有东西都推翻重来。比如，住得远的成员我们可以送到更近的地点。不过最终决定还是取决于交通情况和参加人数。我让双方再检查一下细节。如果所有人一直改选择，到头来活动反而可能办不成。所以我们最后同意采用最简单、同时保留灵活性的方案。",
+    "vocab": [
+      "mantap",
+      "anggota",
+      "urusan dadakan",
+      "masukan",
+      "tagihan",
+      "solusi",
+      "sesuai",
+      "misalnya",
+      "antar",
+      "tergantung",
+      "pihak",
+      "ujung-ujungnya"
+    ],
+    "questions": [
+      {
+        "task": "为什么作者不赞成马上把整个方案都换掉？请用印尼语回答。",
+        "reference_answer": "Karena menurut dia masih ada solusi yang lebih sederhana dan sesuai tanpa harus ganti semuanya.",
+        "reference_cn": "因为他认为还有更简单、更合适的解决办法，不需要把所有东西都换掉。"
+      },
+      {
+        "task": "最后的决定取决于什么？请用印尼语回答。",
+        "reference_answer": "Tergantung kondisi lalu lintas dan jumlah anggota yang bisa ikut.",
+        "reference_cn": "取决于交通情况和能参加的成员人数。"
+      }
+    ]
+  },
+  "dialogue": {
+    "title": "雅加达办公室口语｜临时有人不能来，方案怎么改",
+    "lines": [
+      {
+        "speaker": "A",
+        "id": "Ada satu anggota yang tiba-tiba punya urusan dadakan.",
+        "cn": "有一个成员突然临时有事。"
+      },
+      {
+        "speaker": "B",
+        "id": "Oke. Terus menurutmu solusi yang paling sesuai apa?",
+        "cn": "好。那你觉得最合适的解决办法是什么？"
+      },
+      {
+        "speaker": "A",
+        "id": "Nggak perlu ganti semuanya. Misalnya, yang rumahnya jauh bisa kita antar.",
+        "cn": "不用全部换掉。比如住得远的，我们可以送一下。"
+      },
+      {
+        "speaker": "B",
+        "id": "Bisa sih, tapi tergantung macetnya juga.",
+        "cn": "可以，不过也得看堵不堵车。"
+      },
+      {
+        "speaker": "A",
+        "id": "Iya. Kita minta masukan dari kedua pihak dulu.",
+        "cn": "对。我们先听听双方的意见。"
+      },
+      {
+        "speaker": "B",
+        "id": "Setuju. Jangan sampai ujung-ujungnya malah nggak jadi gara-gara kebanyakan ubah rencana.",
+        "cn": "同意。别最后因为改太多方案，反而活动办不成。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "中文→印尼语：这个方案更符合我们的需求。",
+      "reference_answer": "Solusi ini lebih sesuai sama kebutuhan kita.",
+      "reference_cn": "这个方案更符合我们的需求。"
+    },
+    {
+      "task": "中文→印尼语：比如你回去太晚，我可以送你。",
+      "reference_answer": "Misalnya kamu pulangnya kemalaman, aku bisa antar kamu.",
+      "reference_cn": "比如你回去太晚，我可以送你。"
+    },
+    {
+      "task": "主动回忆：不用看词表，用 tergantung、masukan、ujung-ujungnya 各造一个短句。",
+      "reference_answer": "Tergantung cuacanya. / Aku punya sedikit masukan. / Ujung-ujungnya kita pilih tempat yang sama.",
+      "reference_cn": "看天气。/ 我有一点意见。/ 到头来我们还是选了同一个地方。"
+    },
+    {
+      "task": "改写：把 ‘Rencananya berubah.’ 扩成一句自然口语，说明因为临时有事所以要调整。",
+      "reference_answer": "Rencananya berubah karena ada anggota yang tiba-tiba punya urusan dadakan.",
+      "reference_cn": "计划变了，因为有个成员突然临时有事。"
+    }
+  ],
+  "daily_test": {
+    "title": "当日小测 · 5–8分钟",
+    "items": [
+      {
+        "type": "choice",
+        "prompt": "sesuai kebutuhan 最自然的意思是：",
+        "options": [
+          "符合需求",
+          "超过需求",
+          "取消需求"
+        ],
+        "answer_index": 0,
+        "explain": "sesuai = 符合、适合；sesuai kebutuhan = 符合需求。"
+      },
+      {
+        "type": "choice",
+        "prompt": "‘解决方案；办法’最合适的是：",
+        "options": [
+          "tagihan",
+          "solusi",
+          "masukan"
+        ],
+        "answer_index": 1,
+        "explain": "solusi = 解决方案、办法。"
+      },
+      {
+        "type": "choice",
+        "prompt": "日常说‘我送你回去’，最自然可以说：",
+        "options": [
+          "Aku antar kamu pulang.",
+          "Aku pihak kamu pulang.",
+          "Aku solusi kamu pulang."
+        ],
+        "answer_index": 0,
+        "explain": "口语 antar / nganter = 送；标准形式 mengantar。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Jadi atau nggaknya ______ berapa orang yang bisa ikut.（取决于）",
+        "answer": "tergantung",
+        "explain": "tergantung = 取决于、看……情况。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kalau terus ganti rencana, ______ acaranya malah nggak jadi.（到头来）",
+        "answer": "ujung-ujungnya",
+        "explain": "ujung-ujungnya = 到头来、结果最后。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排成自然的印尼语句子：这个解决方案最适合所有成员。",
+        "tokens": [
+          "semua",
+          "paling",
+          "solusi",
+          "anggota",
+          "ini",
+          "sesuai",
+          "untuk"
+        ],
+        "answer": "Solusi ini paling sesuai untuk semua anggota.",
+        "explain": "自然顺序：Solusi ini paling sesuai untuk semua anggota.",
+        "answer_cn": "这个解决方案最适合所有成员。"
+      }
+    ],
+    "self_check": [
+      "我能区分 sesuai（符合条件）和 cocok（匹配、合适）。",
+      "我能自然说出 misalnya、antar、tergantung，而不是只看得懂。",
+      "我能用 2–3 句说明临时变化、解决办法和最终结果。"
+    ]
+  },
+  "review": {
+    "title": "最后 5 分钟复盘",
+    "steps": [
+      "1 分钟：遮住中文，快速回忆 12 个核心词。",
+      "2 分钟：重点再说一遍今天新错的 ujung-ujungnya / tergantung / masukan / urusan dadakan。",
+      "1 分钟：口头完成句型 ‘Kalau ada perubahan, solusi yang paling sesuai adalah ... Misalnya ...’。",
+      "1 分钟：复现早课 pihak / anggota / mantap，不额外扩词。"
+    ]
+  }
+}

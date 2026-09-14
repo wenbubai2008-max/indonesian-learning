@@ -8006,5 +8006,94 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-14"
     ]
+  },
+  {
+    "word": "sesuai",
+    "cn": "符合；适合；与……一致",
+    "en": "suitable; appropriate; in accordance with",
+    "root": "suai",
+    "root_cn": "匹配；合适",
+    "example": "Kita cari tempat yang sesuai sama kebutuhan semua anggota.",
+    "example_cn": "我们找一个符合所有成员需求的地方。",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 19:00",
+    "last_seen": "2026-09-14 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "solusi",
+    "cn": "解决方案；办法",
+    "en": "solution",
+    "root": "solusi",
+    "root_cn": "解决方案",
+    "example": "Kalau jadwalnya bentrok, kita cari solusi yang paling sederhana dulu.",
+    "example_cn": "如果时间冲突，我们先找最简单的解决办法。",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 19:00",
+    "last_seen": "2026-09-14 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "misalnya",
+    "cn": "例如；比如说",
+    "en": "for example; for instance",
+    "root": "misal",
+    "root_cn": "例子；假设",
+    "example": "Misalnya hujan, kita bisa pindah ke tempat yang di dalam ruangan.",
+    "example_cn": "比如下雨的话，我们可以换到室内的地方。",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 19:00",
+    "last_seen": "2026-09-14 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "antar",
+    "cn": "送；送到（口语高频）",
+    "en": "take; deliver; drop off",
+    "root": "antar",
+    "root_cn": "送；递送",
+    "example": "Kalau pulangnya kemalaman, nanti aku antar kamu sampai depan.",
+    "example_cn": "如果回去太晚，我等会儿送你到门口。",
+    "categories": [
+      "每日学习",
+      "19:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 19:00",
+    "last_seen": "2026-09-14 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
   }
 ];
