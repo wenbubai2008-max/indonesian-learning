@@ -7971,7 +7971,8 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "那个地方看起来很不错，价格也还算合理。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "口语"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-14 08:00",
@@ -7993,7 +7994,8 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "如果每个人的时间都不同，确实很难找到合适的时间。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "口语"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-14 08:00",
