@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-14T09:33:47.728Z",
+  "updated_at": "2026-09-14T09:40:34.589Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -5903,8 +5903,9 @@
     "petugas": {
       "word": "petugas",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-14T09:37:46.119Z",
       "display": "petugas",
+      "cn": "官",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -6248,8 +6249,9 @@
     "kebutuhan": {
       "word": "kebutuhan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-14T09:36:19.612Z",
       "display": "kebutuhan",
+      "cn": "需要",
       "reasons": [
         "memory_dont"
       ],
@@ -9842,8 +9844,9 @@
     "mengikuti": {
       "word": "mengikuti",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:52.781Z",
+      "updated_at": "2026-09-14T09:40:24.103Z",
       "display": "mengikuti",
+      "cn": "跟随",
       "last_review": "2026-09-12T14:13:52.774Z",
       "last_mastered": "2026-09-12T14:13:52.774Z",
       "reasons": [],
@@ -12933,8 +12936,9 @@
     "kematian": {
       "word": "kematian",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:57.693Z",
+      "updated_at": "2026-09-14T09:37:05.501Z",
       "display": "kematian",
+      "cn": "死亡",
       "last_review": "2026-09-12T14:13:57.686Z",
       "last_mastered": "2026-09-12T14:13:57.686Z",
       "reasons": [],
