@@ -14,26 +14,31 @@ jobs:
           node <<'NODE'
           const fs=require('fs'),vm=require('vm');
           const norm=x=>String(x||'').trim().toLowerCase();
+          const masterCtx={window:{}};
+          for(const p of ['data/master-vocab-data.js','data/master-vocab-data-2.js','data/master-vocab-data-3.js']) vm.runInNewContext(fs.readFileSync(p,'utf8'),masterCtx,{filename:p});
+          const masterRaw=masterCtx.window.MASTER_VOCAB_DB||[];
+          const masterMap=new Map();
+          for(const x of masterRaw){const word=Array.isArray(x)?x[0]:x.word; const cn=Array.isArray(x)?x[1]:(x.cn||''); const k=norm(word); if(k&&!masterMap.has(k)) masterMap.set(k,{word,cn});}
           const loadWin=(path,key)=>{const c={window:{}};vm.runInNewContext(fs.readFileSync(path,'utf8'),c,{filename:path});return c.window[key]||[]};
-          const masters=[...loadWin('data/master-vocab-data.js','MASTER_VOCAB_DB'),...loadWin('data/master-vocab-data-2.js','MASTER_VOCAB_DB_2'),...loadWin('data/master-vocab-data-3.js','MASTER_VOCAB_DB_3')];
-          const masterMap=new Map(); for(const x of masters){const k=norm(x.word);if(k&&!masterMap.has(k))masterMap.set(k,x)}
           const daily=loadWin('data/daily-vocab-data.js','DAILY_VOCAB_DB'); const dailySet=new Set(daily.map(x=>norm(x.word)).filter(Boolean));
           const oral=loadWin('data/oral-vocab-candidates.js','ORAL_VOCAB_CANDIDATES'); const oralMap=new Map(oral.map(x=>[norm(x.word),x]));
+          const top=loadWin('data/vocab-data.js','EMBEDDED_DB'); const topMap=new Map(top.map(x=>[norm(x.word),x]));
           const weak=JSON.parse(fs.readFileSync('data/weakness-sync.json','utf8')); const raw=Array.isArray(weak)?weak:(weak.records||weak.items||weak.words||[]); const records=Array.isArray(raw)?raw:Object.values(raw||{});
           const activeMap=new Map(), mastered=new Set();
           for(const r of records){const k=norm(r.word);if(!k)continue;if(r.status==='active')activeMap.set(k,r);if(r.status==='mastered')mastered.add(k)}
           const newPool=[...masterMap.keys()].filter(k=>activeMap.has(k)&&!dailySet.has(k));
           const review=[...activeMap.keys()].filter(k=>dailySet.has(k));
           const oralNew=newPool.filter(k=>oralMap.has(k));
-          function details(k){const m=masterMap.get(k)||{};const o=oralMap.get(k)||{};const w=activeMap.get(k)||{};return {word:k,cn:m.cn||o.cn||'',en:m.en||o.en||'',root:m.root||o.root||'',register:o.register||'',oral:o.oral||'',source_type:o.source_type||'',reasons:w.reasons||[],source:w.source||'',updated_at:w.updated_at||'',wrong_count:w.wrong_count||0,categories:m.categories||[]}}
+          function details(k){const m=masterMap.get(k)||{};const o=oralMap.get(k)||{};const t=topMap.get(k)||{};const w=activeMap.get(k)||{};return {word:k,cn:m.cn||o.cn||t.cn||'',en:o.en||t.en||'',root:o.root||t.root||'',register:o.register||t.register||'',oral:o.oral||t.oral||'',rank:o.rank||t.rank||null,source_type:o.source_type||t.source_type||'',reasons:w.reasons||[],source:w.source||'',updated_at:w.updated_at||'',wrong_count:w.wrong_count||0}}
           const am=JSON.parse(fs.readFileSync('data/daily/2026-09-14-am.json','utf8')); const amWords=(am.vocab||[]).map(x=>norm(x.word));
           const recent=[]; for(const d of ['2026-09-13','2026-09-12','2026-09-11']){const p=`data/daily/${d}-pm.json`;if(fs.existsSync(p)){const j=JSON.parse(fs.readFileSync(p,'utf8'));recent.push({date:d,words:(j.vocab||[]).map(x=>norm(x.word))})}}
           const recentSet=new Set(recent.flatMap(x=>x.words));
           const reviewSorted=review.slice().sort((a,b)=>String(activeMap.get(b)?.updated_at||'').localeCompare(String(activeMap.get(a)?.updated_at||'')));
           const freshReview=reviewSorted.filter(k=>!recentSet.has(k));
+          oralNew.sort((a,b)=>(oralMap.get(a)?.rank||99999)-(oralMap.get(b)?.rank||99999));
           console.log('COUNTS='+JSON.stringify({master:masterMap.size,daily:dailySet.size,active:activeMap.size,mastered:mastered.size,newPool:newPool.length,review:review.length,oralNew:oralNew.length,amWords,recent}));
           console.log('ORAL_NEW='+JSON.stringify(oralNew.map(details).slice(0,100)));
-          console.log('NEW_SAMPLE='+JSON.stringify(newPool.map(details).slice(0,160)));
+          console.log('NEW_SAMPLE='+JSON.stringify(newPool.map(details).slice(0,220)));
           console.log('REVIEW_FRESH='+JSON.stringify(freshReview.map(details).slice(0,120)));
           console.log('REVIEW_RECENT='+JSON.stringify(reviewSorted.filter(k=>recentSet.has(k)).map(details).slice(0,80)));
           NODE
