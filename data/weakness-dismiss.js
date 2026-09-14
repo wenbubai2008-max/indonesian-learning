@@ -74,8 +74,8 @@
     return sessionItems.slice(start,start+PAGE_SIZE);
   }
 
-  function remainingOnCurrentPage(){
-    return pageItems(currentPage).filter(itemStillActive).length;
+  function remainingTotal(){
+    return sessionItems.filter(itemStillActive).length;
   }
 
   function dismiss(word){
@@ -136,17 +136,16 @@
     const totalPages=Math.max(1,Math.ceil(sessionItems.length/PAGE_SIZE));
     if(currentPage>=totalPages)currentPage=totalPages-1;
     const page=pageItems(currentPage);
-    const remaining=page.filter(itemStillActive);
     const meta=document.getElementById('weaknessMeta');
-    if(meta)meta.textContent=remaining.length+' 个';
+    if(meta)meta.textContent=remainingTotal()+' 个';
 
     if(!sessionItems.length){
       body.innerHTML='<div class="v2-note">这里现在只显示两类词：快速练习答错的词，以及阅读中你主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词不在这里展示。</div><div class="empty"><b>目前没有这两类待强化词 ✓</b></div>';
       return;
     }
 
-    body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词继续保留在原学习体系中，但不在这里展示。每页最多 30 个，右上角数字表示当前页还剩多少个。</div>'
-      +'<div class="weakRestoreWrap"><span>点“会了”后，本页数量会立即减 1；以后再次答错仍可重新进入。</span><button type="button" class="weakRestoreBtn">恢复已移出</button></div>'
+    body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词继续保留在原学习体系中，但不在这里展示。每页最多 30 个，右上角数字表示所有页面当前剩余总数。</div>'
+      +'<div class="weakRestoreWrap"><span>点“会了”后，总数会立即减 1；以后再次答错仍可重新进入。</span><button type="button" class="weakRestoreBtn">恢复已移出</button></div>'
       +navHtml(totalPages)
       +'<div class="v2-weak">'+page.map(cardHtml).join('')+'</div>'
       +navHtml(totalPages);
@@ -165,7 +164,7 @@
       card.style.display=itemStillActive({word:word})?'':'none';
     });
     const meta=document.getElementById('weaknessMeta');
-    if(meta)meta.textContent=remainingOnCurrentPage()+' 个';
+    if(meta)meta.textContent=remainingTotal()+' 个';
   }
 
   function quickMeaningMap(){
