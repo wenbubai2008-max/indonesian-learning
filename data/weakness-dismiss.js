@@ -1,5 +1,6 @@
 (function(){
   const KEY='indo_weakness_dismissed';
+  let sessionWords=null;
   function norm(s){return String(s||'').trim().toLowerCase();}
   function load(){try{return JSON.parse(localStorage.getItem(KEY)||'{}');}catch(e){return {};}}
   function save(x){localStorage.setItem(KEY,JSON.stringify(x));}
@@ -26,17 +27,25 @@
     const wp=pool();
     if(wp)wp.restoreDismissed();
     else localStorage.removeItem(KEY);
+    sessionWords=null;
     apply();
     if(typeof window.openWeaknessV2==='function'&&document.getElementById('weakness')?.classList.contains('active'))setTimeout(window.openWeaknessV2,0);
     else if(typeof window.goWeakness==='function'&&document.getElementById('weakness')?.classList.contains('active'))setTimeout(window.goWeakness,0);
   }
   function apply(){
     const box=document.getElementById('weaknessBody'); if(!box)return;
-    const dismissed=load(),wp=pool(); let visible=0;
-    box.querySelectorAll('.v2-card,.weak-card').forEach(function(card){
+    const dismissed=load(),wp=pool();
+    const cards=Array.from(box.querySelectorAll('.v2-card,.weak-card'));
+    if(!sessionWords&&cards.length){
+      sessionWords=new Set(cards.map(function(card){const b=card.querySelector('b');return b?norm((b.textContent||'').trim()):'';}).filter(Boolean));
+    }
+    let visible=0;
+    cards.forEach(function(card){
       const b=card.querySelector('b'); if(!b)return;
       const word=(b.textContent||'').trim(), k=norm(word),mastered=wp&&wp.get(word)?.status==='mastered';
-      if(dismissed[k]||mastered){card.style.display='none';return;}
+      const outsideSession=sessionWords&&!sessionWords.has(k);
+      if(outsideSession||dismissed[k]||mastered){card.style.display='none';return;}
+      card.style.display='';
       visible++;
       card.classList.add('weakCardHasDone');
       if(!card.querySelector('.weakDoneBtn')){
@@ -93,8 +102,15 @@
     document.head.appendChild(s);
   }
   const obs=new MutationObserver(function(){apply();decorateQuickAnswers();});
+  function wrapOpen(){
+    const original=window.openWeaknessV2;
+    if(typeof original!=='function'||original.__remainingCountWrapped)return;
+    const wrapped=function(){sessionWords=null;const r=original.apply(this,arguments);setTimeout(apply,0);return r;};
+    wrapped.__remainingCountWrapped=true;
+    window.openWeaknessV2=wrapped;
+  }
   function boot(){
-    style();
+    style();wrapOpen();
     const weak=document.getElementById('weaknessBody');if(weak)obs.observe(weak,{childList:true,subtree:true});
     const quick=document.getElementById('quickPracticeBody');if(quick)obs.observe(quick,{childList:true,subtree:true,attributes:true,attributeFilter:['data-done']});
     document.addEventListener('click',function(e){
