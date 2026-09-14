@@ -7784,5 +7784,225 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Sebelumnya aku kira datanya sudah lengkap, ternyata masih kurang satu bagian.",
     "example_cn": "之前我以为数据已经齐全了，结果还缺一部分。"
+  },
+  {
+    "word": "berbagai",
+    "cn": "各种；多种多样的",
+    "en": "various; a variety of",
+    "root": "bagai",
+    "root_cn": "种类；方式",
+    "example": "Kami punya berbagai pilihan kegiatan untuk akhir bulan.",
+    "example_cn": "我们月底有各种活动选择。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "kegiatan",
+    "cn": "活动；要做的事情",
+    "en": "activity; activities",
+    "root": "giat",
+    "root_cn": "积极；活跃；勤奋",
+    "example": "Kegiatan tim bulan ini rencananya dibuat lebih santai.",
+    "example_cn": "这个月的团队活动计划安排得轻松一些。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "yakin",
+    "cn": "确信；确定；有把握",
+    "en": "sure; certain; confident",
+    "root": "yakin",
+    "root_cn": "确信；相信",
+    "example": "Aku belum yakin semua anggota bisa ikut hari Sabtu.",
+    "example_cn": "我还不确定所有成员星期六都能参加。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "khusus",
+    "cn": "特别的；专门的；特定用途的",
+    "en": "special; specific; dedicated",
+    "root": "khusus",
+    "root_cn": "特别；专门",
+    "example": "Tempat itu punya ruangan khusus untuk kelompok kecil.",
+    "example_cn": "那个地方有专门给小团队用的房间。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "pribadi",
+    "cn": "个人的；私人的；个人",
+    "en": "personal; private; individual",
+    "root": "pribadi",
+    "root_cn": "个人；私人",
+    "example": "Dia nggak bisa ikut karena ada urusan pribadi.",
+    "example_cn": "他因为有私事不能参加。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "anggota",
+    "cn": "成员；会员",
+    "en": "member",
+    "root": "anggota",
+    "root_cn": "成员；会员",
+    "example": "Setiap anggota boleh kasih satu pilihan tempat.",
+    "example_cn": "每个成员都可以提一个地点选择。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "selanjutnya",
+    "cn": "接下来；下一步；之后的",
+    "en": "next; subsequently; further",
+    "root": "lanjut",
+    "root_cn": "继续；后续",
+    "example": "Selanjutnya kita cek siapa saja yang benar-benar bisa ikut.",
+    "example_cn": "接下来我们确认一下到底有哪些人能参加。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "pihak",
+    "cn": "一方；方面；相关方",
+    "en": "party; side; party involved",
+    "root": "pihak",
+    "root_cn": "一方；方面",
+    "example": "Satu pihak maunya di luar kantor, pihak lain lebih pilih tempat yang dekat.",
+    "example_cn": "一方想在办公室外面，另一方更想选近一点的地方。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "mantap",
+    "cn": "很棒；很稳；很可以（口语）",
+    "en": "great; solid; excellent",
+    "root": "mantap",
+    "root_cn": "稳；确定；很棒",
+    "example": "Tempatnya kelihatan mantap dan harganya juga masih masuk akal.",
+    "example_cn": "那个地方看起来很不错，价格也还算合理。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "word": "susah",
+    "cn": "难；费劲；麻烦（口语高频）",
+    "en": "difficult; hard; troublesome",
+    "root": "susah",
+    "root_cn": "困难；费劲",
+    "example": "Kalau semua orang punya jadwal beda, memang susah cari waktu yang pas.",
+    "example_cn": "如果每个人的时间都不同，确实很难找到合适的时间。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-14"
+    ]
   }
 ];
