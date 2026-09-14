@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-14T12:30:03.161Z",
+  "updated_at": "2026-09-14T14:09:17.975Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1131,8 +1131,9 @@
     "acara": {
       "word": "acara",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-14T14:09:05.686Z",
       "display": "acara",
+      "cn": "程序",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -13368,8 +13369,9 @@
     "lintas": {
       "word": "lintas",
       "status": "active",
-      "updated_at": "2026-09-12T14:25:24.886Z",
+      "updated_at": "2026-09-14T14:08:14.540Z",
       "display": "lintas",
+      "cn": "叉",
       "reasons": [
         "memory_dont"
       ],
