@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15T04:43:45.831Z",
+  "updated_at": "2026-09-15T04:47:49.130Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -67,9 +67,11 @@
     "nagih": {
       "word": "nagih",
       "status": "active",
-      "updated_at": "2026-09-11T14:40:15.505Z",
+      "updated_at": "2026-09-15T04:47:38.910Z",
       "display": "nagih",
       "cn": "上瘾的",
+      "root": "tagih",
+      "root_cn": "催；索取应付款项",
       "source": "每日学习阅读",
       "source_date": "2026-09-07",
       "session": "08:00",
@@ -23242,18 +23244,17 @@
     },
     "urusan dadakan": {
       "word": "urusan dadakan",
-      "status": "active",
-      "updated_at": "2026-09-15T04:28:32.537Z",
+      "status": "mastered",
+      "updated_at": "2026-09-15T04:46:58.241Z",
       "display": "urusan dadakan",
       "cn": "临时冒出来的事",
       "root": "urus / dadak",
       "last_wrong": "2026-09-13T11:53:43.234Z",
-      "last_review": "2026-09-15T04:28:32.519Z",
-      "reasons": [
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-15T04:46:57.969Z",
+      "last_mastered": "2026-09-15T04:46:57.969Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "ngotot": {
       "word": "ngotot",
