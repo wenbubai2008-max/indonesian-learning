@@ -32,7 +32,7 @@
   function load(src,done){const s=document.createElement('script');s.src=src;s.onload=()=>done&&done();s.onerror=()=>{window.__homeLearningUpgradeLoading=false};document.body.appendChild(s);}
   function loadStability(){load('data/home-modules-stability.js?v=20260912-1');}
   function loadHome(){load('data/extensive-reading-data.js?v=20260903-1',loadStability);}
-  function loadPagingRoots(){load('data/weakness-paging-roots.js?v=20260915-2',loadHome);}
+  function loadPagingRoots(){load('data/weakness-paging-roots.js?v=20260915-3',loadHome);}
   function loadMeaningFix(){load('data/weakness-meaning-fix.js?v=20260915-1',loadPagingRoots);}
   function loadWeakControls(){if(window.dismissWeaknessWord)loadMeaningFix();else load('data/weakness-dismiss.js?v=20260911-2',loadMeaningFix);}
   function loadSync(){if(window.WeaknessSync)loadWeakControls();else load('data/weakness-sync-client.js?v=20260911-1',loadWeakControls);}
