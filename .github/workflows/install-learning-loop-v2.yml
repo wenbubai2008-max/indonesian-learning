@@ -19,7 +19,7 @@ jobs:
 
           p=Path('index.html')
           s=p.read_text()
-          pool='<script src="data/weakness-pool.js?v=20260915-runtime2"></script>'
+          pool='<script src="data/weakness-pool.js?v=20260915-runtime3"></script>'
           paging='<script src="data/weakness-paging-roots.js?v=20260915-roots5"></script>'
           if '<meta name="google" content="notranslate">' not in s:
               s=s.replace('<meta charset="UTF-8">','<meta charset="UTF-8">\n<meta name="google" content="notranslate">')
@@ -27,12 +27,13 @@ jobs:
           if 'data/weakness-pool.js' not in s:
               s=s.replace('<script src="data/reading-word-lookup.js', pool+'\n<script src="data/reading-word-lookup.js')
           else:
-              s=re.sub(r'data/weakness-pool\.js\?v=[^"<]+','data/weakness-pool.js?v=20260915-runtime2',s)
+              s=re.sub(r'data/weakness-pool\.js\?v=[^"<]+','data/weakness-pool.js?v=20260915-runtime3',s)
           if 'data/weakness-paging-roots.js' not in s:
               s=s.replace('<script src="data/extensive-reading-history-ui.js', paging+'\n<script src="data/extensive-reading-history-ui.js')
           else:
               s=re.sub(r'data/weakness-paging-roots\.js\?v=[^"<]+','data/weakness-paging-roots.js?v=20260915-roots5',s)
           s=re.sub(r'data/pronunciation-fix\.js\?v=[^"<]+','data/pronunciation-fix.js?v=20260915-fast1',s)
+          s=re.sub(r'data/reading-word-lookup\.js\?v=[^"<]+','data/reading-word-lookup.js?v=20260915-bgqueue2',s)
           s=re.sub(r'data/unfamiliar-daily-review\.js\?v=[^"<]+','data/unfamiliar-daily-review.js?v=20260915-no-legacy1',s)
           s=re.sub(r'data/home-learning-upgrade-v2\.js\?v=[^"<]+','data/home-learning-upgrade-v2.js?v=20260915-weak-runtime1',s)
           p.write_text(s)
@@ -44,11 +45,27 @@ jobs:
           if old in t:
               t=t.replace(old,new)
           q.write_text(t)
+
+          r=Path('data/weakness-pool.js')
+          u=r.read_text()
+          if 'let legacyMigrated=false' not in u:
+              u=u.replace("  const LEGACY_MEM='indo_mem';\n", "  const LEGACY_MEM='indo_mem';\n  let legacyMigrated=false;\n  let legacyMigrating=false;\n")
+              u=u.replace("  function migrate(){\n    const pool=load();let changed=false;", "  function migrate(){\n    if(legacyMigrated||legacyMigrating)return load();\n    legacyMigrating=true;\n    const pool=load();let changed=false;")
+              u=u.replace("    if(changed)save(pool);return pool;\n  }", "    legacyMigrated=true;legacyMigrating=false;\n    if(changed)save(pool);return pool;\n  }",1)
+          r.write_text(u)
+
+          z=Path('data/reading-word-lookup.js')
+          v=z.read_text()
+          old2="  async function drainWeakQueue(){\n    if(weakWorkerBusy||!navigator.onLine)return;"
+          new2="  async function drainWeakQueue(){\n    if(weakWorkerBusy||!navigator.onLine)return;\n    if(document.getElementById('weakness')?.classList.contains('active')){scheduleWeakWorker(2200);return;}"
+          if old2 in v:
+              v=v.replace(old2,new2,1)
+          z.write_text(v)
           PY
       - name: Commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add index.html data/home-learning-upgrade-v2.js
-          git diff --cached --quiet || git commit -m 'Refresh weakness and pronunciation runtimes'
+          git add index.html data/home-learning-upgrade-v2.js data/weakness-pool.js data/reading-word-lookup.js
+          git diff --cached --quiet || git commit -m 'Reduce weakness page runtime work'
           git push
