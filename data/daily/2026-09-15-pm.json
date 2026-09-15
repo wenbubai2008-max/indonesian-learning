@@ -136,7 +136,7 @@
       "en": "get carried along; be affected; be accidentally taken",
       "root": "bawa",
       "root_cn": "带；携带",
-      "formation": "kebawa 是 sangat natural 的口语形式，对应较标准的 terbawa。既可表示东西‘不小心被带走’，也可表示情绪、气氛把人‘带进去’：kebawa emosi、kebawa suasana。",
+      "formation": "kebawa 是很自然的口语形式，对应较标准的 terbawa。既可表示东西‘不小心被带走’，也可表示情绪、气氛把人‘带进去’：kebawa emosi、kebawa suasana。",
       "example": "Jangan sampai kebawa emosi waktu bahas masalah kerja.",
       "example_cn": "讨论工作问题时别被情绪带着走。",
       "synonym_note": "kebawa 偏日常口语；terbawa 是标准形式。kebawa emosi 比 terpengaruh emosi 更口语、更像‘情绪上头/被带着走’。",
@@ -170,11 +170,11 @@
       "en": "real; actual; evident",
       "root": "nyata",
       "root_cn": "真实；明显",
-      "formation": "nyata 是基本词，常见 hasil nyata（实际成果）、bukti nyata（确凿/实际证据）、dampak nyata（实际影响）。派生词 kenyataan 表示‘现实、事实’。",
+      "formation": "今天 08:00 已教；nyata 是基本词，常见 hasil nyata（实际成果）、bukti nyata（确凿/实际证据）、dampak nyata（实际影响）。派生词 kenyataan 表示‘现实、事实’。",
       "example": "Kita butuh hasil nyata, bukan cuma janji.",
       "example_cn": "我们需要实际成果，不只是承诺。",
       "synonym_note": "nyata 强调‘真实存在、看得见效果’；asli 更强调‘原装、真正的、非假的’；real 在口语中偶尔借用，但正式表达通常用 nyata。",
-      "usage_note": "应用复现；已教词，本晚放进真实语境再次主动调用。",
+      "usage_note": "今天08:00已教；应用复现。本晚放进真实语境再次主动调用。",
       "source_group": "application",
       "is_new": false,
       "is_oral_new": false
@@ -187,11 +187,11 @@
       "en": "had better; should; preferably",
       "root": "baik",
       "root_cn": "好；良好",
-      "formation": "se- + baik + -nya → sebaiknya，字面上有‘最好是……’的感觉。常放在句首或主语后，用来给建议：Sebaiknya kita... / Kamu sebaiknya...。",
+      "formation": "今天 08:00 已教；se- + baik + -nya → sebaiknya，字面上有‘最好是……’的感觉。常放在句首或主语后，用来给建议：Sebaiknya kita... / Kamu sebaiknya...。",
       "example": "Kalau arahnya belum jelas, sebaiknya cek lagi sebelum berangkat.",
       "example_cn": "如果方向还不清楚，最好出发前再确认一下。",
       "synonym_note": "sebaiknya 是比较柔和的建议；harus 是‘必须’，力度更强；seharusnya 更像‘按理应该、本来应该’，常带规范或预期。",
-      "usage_note": "应用复现；已教词，本晚继续练习建议表达。",
+      "usage_note": "今天08:00已教；应用复现。本晚继续练习建议表达。",
       "source_group": "application",
       "is_new": false,
       "is_oral_new": false
@@ -214,17 +214,48 @@
       {"speaker": "B", "id": "Oke, sebaiknya pilih yang aman aja biar cepat beres.", "cn": "好，最好选安全的，这样能快点搞定。"}
     ]
   },
+  "rewrite": [
+    {
+      "task": "中文→印尼语：我刚刚收到消息，需要一点时间确认一下方向。",
+      "reference_answer": "Barusan aku dapat kabar. Aku butuh waktu sebentar buat cek arahnya.",
+      "reference_cn": "我刚刚收到消息，需要一点时间确认一下方向。"
+    },
+    {
+      "task": "中文→印尼语：别只靠记忆，最好再检查一下。",
+      "reference_answer": "Jangan cuma ngandelin ingatan, sebaiknya cek lagi.",
+      "reference_cn": "别只靠记忆，最好再检查一下。"
+    },
+    {
+      "task": "主动回忆：不用看词表，用 kecolongan、kebentur、kebawa 各造一个短句。",
+      "reference_answer": "Kami kecolongan satu detail. / Rencananya kebentur biaya. / Jangan kebawa emosi.",
+      "reference_cn": "我们疏忽漏掉了一个细节。/ 计划卡在费用上。/ 别被情绪带着走。"
+    },
+    {
+      "task": "改写：把 ‘Rencananya berubah.’ 扩成一句自然口语，说明刚收到消息，所以要重新确认方向。",
+      "reference_answer": "Barusan aku dapat kabar rencananya berubah, jadi kita perlu cek arahnya lagi.",
+      "reference_cn": "我刚刚收到消息说计划变了，所以我们需要重新确认一下方向。"
+    }
+  ],
   "daily_test": {
     "title": "当日小测 · 6题",
     "items": [
       {"type": "choice", "prompt": "‘刚刚他给我打电话’最自然的开头是：", "options": ["Barusan", "Tanah", "Arah"], "answer_index": 0, "explain": "barusan = 刚刚，是高频口语。"},
       {"type": "choice", "prompt": "‘别只依赖一个人’里的‘依赖’最适合：", "options": ["ngandelin", "kebentur", "kecolongan"], "answer_index": 0, "explain": "ngandelin = 依赖、指望。"},
       {"type": "choice", "prompt": "‘计划卡在预算上’最自然的是：", "options": ["Rencananya kebentur biaya.", "Rencananya kebawa biaya.", "Rencananya tanah biaya."], "answer_index": 0, "explain": "kebentur 可表示碰上限制、卡在某个障碍上。"},
-      {"type": "fill", "prompt": "Aku ___ waktu sebentar buat cek arahnya.", "answer": "butuh", "explain": "butuh = 需要。"},
-      {"type": "fill", "prompt": "Jangan sampai ___ emosi waktu bicara.", "answer": "kebawa", "explain": "kebawa emosi = 被情绪带着走。"},
-      {"type": "order", "prompt": "排序：sebaiknya / kita / arah / cek / lagi / dulu", "answer": "Sebaiknya kita cek arah lagi dulu.", "explain": "sebaiknya 放句首可自然表达‘最好……’。"}
+      {"type": "fill", "prompt": "填空：Aku ___ waktu sebentar buat cek arahnya.（需要）", "hint_cn": "需要", "answer": "butuh", "explain": "butuh = 需要。"},
+      {"type": "fill", "prompt": "填空：Jangan sampai ___ emosi waktu bicara.（被情绪带着走）", "hint_cn": "被情绪带着走", "answer": "kebawa", "explain": "kebawa emosi = 被情绪带着走。"},
+      {"type": "order", "prompt": "按照中文排成自然的印尼语句子：我们最好先再确认一下方向。", "tokens": ["sebaiknya", "kita", "cek", "arah", "lagi", "dulu"], "answer": "Sebaiknya kita cek arah lagi dulu.", "answer_cn": "我们最好先再确认一下方向。", "explain": "sebaiknya 放句首可自然表达‘最好……’。"}
     ],
     "self_check": ["我能用 barusan 说刚发生的事。", "我能区分 ngandelin、kecolongan、kebentur。", "我能主动用 arah、butuh、sebaiknya 组织一句话。"]
+  },
+  "review": {
+    "title": "最后 5 分钟复盘",
+    "steps": [
+      "1 分钟：遮住中文，快速回忆本晚 11 个核心词。",
+      "2 分钟：重点再说一遍 ngandelin / kecolongan / kebentur / kebawa / beres，并各放进一个短句。",
+      "1 分钟：口头完成句型 ‘Barusan ... Aku butuh ... Sebaiknya ...’。",
+      "1 分钟：复现早课 nyata / sebaiknya，并明确它们是今天08:00已教词。"
+    ]
   },
   "selection_validation": {
     "runtime_version": 4,
@@ -236,6 +267,7 @@
     "group_overlap": 0,
     "oral_new_count": 1,
     "new_words_checked": true,
-    "review_words_checked": true
+    "review_words_checked": true,
+    "content_contract_checked": true
   }
 }
