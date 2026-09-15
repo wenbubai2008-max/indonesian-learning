@@ -17,10 +17,15 @@ jobs:
           from pathlib import Path
           p=Path('index.html')
           s=p.read_text()
-          if 'data/unfamiliar-vocab-data.js' not in s:
-              s=s.replace('<script src="data/extensive-reading-data.js', '<script src="data/unfamiliar-vocab-data.js?v=20260903-1"></script>\n<script src="data/extensive-reading-data.js')
-          s=s.replace('data/extensive-reading-data.js?v=20260903-2','data/extensive-reading-data.js?v=20260903-3')
-          s=s.replace('data/home-learning-upgrade-v2.js?v=20260903-1','data/home-learning-upgrade-v2.js?v=20260903-2')
+          pool='<script src="data/weakness-pool.js?v=20260915-runtime1"></script>'
+          paging='<script src="data/weakness-paging-roots.js?v=20260915-runtime2"></script>'
+          if 'data/weakness-pool.js' not in s:
+              s=s.replace('<script src="data/reading-word-lookup.js', pool+'\n<script src="data/reading-word-lookup.js')
+          if 'data/weakness-paging-roots.js' not in s:
+              s=s.replace('<script src="data/extensive-reading-history-ui.js', paging+'\n<script src="data/extensive-reading-history-ui.js')
+          else:
+              import re
+              s=re.sub(r'data/weakness-paging-roots\.js\?v=[^"<]+','data/weakness-paging-roots.js?v=20260915-runtime2',s)
           p.write_text(s)
           PY
       - name: Commit
@@ -28,5 +33,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add index.html
-          git diff --cached --quiet || git commit -m 'Load updated adaptive learning modules'
+          git diff --cached --quiet || git commit -m 'Load unified weakness runtime'
           git push
