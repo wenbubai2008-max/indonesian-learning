@@ -51,14 +51,26 @@ const reviewFull=[];
 for(const x of activeMap.values()){
   const k=key(x.word);if(!dailySet.has(k))continue;
   const reasons=Array.isArray(x.reasons)?x.reasons:[];
-  let p=4;if(reasons.includes('quick_wrong')||x.last_wrong)p=1;else if(reasons.includes('memory_dont'))p=2;else if(reasons.includes('memory_fuzzy'))p=3;
+  // Agreed order: recent wrong / taught word re-marked unknown > memory_dont > memory_fuzzy > other active.
+  // Do not make an old last_wrong timestamp permanently priority 1 by itself.
+  let p=4;
+  if(reasons.includes('quick_wrong')||reasons.includes('manual_unknown'))p=1;
+  else if(reasons.includes('memory_dont'))p=2;
+  else if(reasons.includes('memory_fuzzy'))p=3;
   const d=dailyMeta.get(k)||{};
   reviewFull.push([
     String(x.word||'').trim(),p,Number(x.wrong_count||0),x.last_wrong||'',x.last_review||'',
     d.cn||x.cn||'',d.root||x.root||'',d.root_cn||x.root_cn||''
   ]);
 }
-reviewFull.sort((a,b)=>a[1]-b[1]||String(b[3]||'').localeCompare(String(a[3]||''))||String(a[0]).localeCompare(String(b[0])));
+reviewFull.sort((a,b)=>{
+  if(a[1]!==b[1])return a[1]-b[1];
+  if(a[2]!==b[2])return b[2]-a[2];
+  if(a[1]===1&&String(a[3]||'')!==String(b[3]||''))return String(b[3]||'').localeCompare(String(a[3]||''));
+  const ar=String(a[4]||''),br=String(b[4]||'');
+  if(ar!==br)return ar.localeCompare(br); // never/older reviewed first
+  return String(a[0]).localeCompare(String(b[0]));
+});
 const reviewExposed=reviewFull.slice(0,60);
 
 const runtime={
