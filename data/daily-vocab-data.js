@@ -1580,7 +1580,7 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "beres",
     "cn": "搞定；处理完；整齐",
-    "en": "",
+    "en": "done; settled; in order; tidy",
     "root": "beres",
     "categories": [
       "每日学习",
@@ -8263,7 +8263,7 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "tanah",
     "cn": "泥土；土地",
-    "en": "",
+    "en": "soil; land; ground",
     "root": "tanah",
     "categories": [
       "每日学习",
@@ -8279,13 +8279,13 @@ window.DAILY_VOCAB_DB = [
       "2026-09-15"
     ],
     "root_cn": "泥土；土地",
-    "example": "Jalan di depan masih penuh tanah karena barusan hujan.",
-    "example_cn": "前面的路上还有很多泥，因为刚刚下过雨。"
+    "example": "Jalan di depan masih banyak tanah basah karena barusan hujan.",
+    "example_cn": "前面的路上还有很多湿泥土，因为刚刚下过雨。"
   },
   {
     "word": "arah",
     "cn": "方向",
-    "en": "",
+    "en": "direction; way",
     "root": "arah",
     "categories": [
       "每日学习",
@@ -8307,7 +8307,7 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "butuh",
     "cn": "需要",
-    "en": "",
+    "en": "need; require",
     "root": "butuh",
     "categories": [
       "每日学习",
@@ -8329,7 +8329,7 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "barusan",
     "cn": "刚刚",
-    "en": "",
+    "en": "just now; a moment ago",
     "root": "baru",
     "categories": [
       "每日学习",
