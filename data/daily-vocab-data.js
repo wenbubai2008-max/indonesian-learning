@@ -8095,5 +8095,225 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-14"
     ]
+  },
+  {
+    "word": "berhasil",
+    "cn": "成功；顺利做到",
+    "en": "succeed; manage to",
+    "root": "hasil",
+    "root_cn": "结果；成果",
+    "example": "Kami berhasil menyelesaikan masalah itu sebelum siang.",
+    "example_cn": "我们成功在中午前解决了那个问题。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "peluang",
+    "cn": "机会；可能性",
+    "en": "opportunity; chance",
+    "root": "peluang",
+    "root_cn": "机会；可能性",
+    "example": "Masih ada peluang untuk memperbaiki hasil bulan ini.",
+    "example_cn": "这个月的结果还有改善的机会。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "kendala",
+    "cn": "障碍；困难；卡点",
+    "en": "obstacle; constraint",
+    "root": "kendala",
+    "root_cn": "障碍；限制",
+    "example": "Kalau ada kendala, bilang lebih awal supaya kita bisa cari solusi.",
+    "example_cn": "如果有困难，早点说，这样我们可以找解决办法。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "keahlian",
+    "cn": "专业技能；专长",
+    "en": "skill; expertise",
+    "root": "ahli",
+    "root_cn": "专家；擅长的人",
+    "example": "Keahlian komunikasi penting saat menangani pelanggan.",
+    "example_cn": "处理客户时，沟通能力很重要。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "rekan kerja",
+    "cn": "同事",
+    "en": "colleague",
+    "root": "rekan",
+    "root_cn": "伙伴；同伴",
+    "example": "Aku minta bantuan rekan kerja yang lebih paham soal ini.",
+    "example_cn": "我请更懂这件事的同事帮忙。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "pelanggan",
+    "cn": "顾客；客户",
+    "en": "customer; client",
+    "root": "langgan",
+    "root_cn": "经常购买；订购",
+    "example": "Pelanggan itu minta penjelasan yang lebih jelas.",
+    "example_cn": "那位客户要求更清楚的解释。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "pendapatan",
+    "cn": "收入",
+    "en": "income; revenue",
+    "root": "dapat",
+    "root_cn": "得到；获得",
+    "example": "Pendapatan naik, tapi pengeluaran juga ikut bertambah.",
+    "example_cn": "收入增加了，但支出也跟着增加。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "pemasok",
+    "cn": "供应商",
+    "en": "supplier",
+    "root": "pasok",
+    "root_cn": "供应；供给",
+    "example": "Kami sedang mencari pemasok yang lebih stabil.",
+    "example_cn": "我们正在寻找更稳定的供应商。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "lemot",
+    "cn": "卡；慢（设备/网络，口语）",
+    "en": "slow; laggy",
+    "root": "lemot",
+    "root_cn": "慢；卡",
+    "example": "Internet kantor lagi lemot, jadi file-nya belum terkirim.",
+    "example_cn": "办公室网络现在很卡，所以文件还没发出去。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "resign",
+    "cn": "辞职（口语/职场常用）",
+    "en": "resign; quit a job",
+    "root": "resign",
+    "root_cn": "辞职",
+    "example": "Dia belum mau resign karena masih ada tanggung jawab yang harus diselesaikan.",
+    "example_cn": "他还不想辞职，因为还有责任需要完成。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
   }
 ];
