@@ -452,6 +452,14 @@
     if(actual==='review'&&typeof window.renderReview==='function')window.renderReview();
   }
 
+  function refreshHistoryPage(id){
+    if(id==='weakness'&&typeof window.openWeaknessV2==='function'){
+      setTimeout(function(){
+        if(currentPage()==='weakness')window.openWeaknessV2();
+      },0);
+    }
+  }
+
   function installHistoryNavigation(){
     if(window.__indoHistoryNavInstalled||typeof window.go!=='function')return;
     window.__indoHistoryNavInstalled=true;
@@ -460,6 +468,7 @@
     const wanted=document.getElementById(hashPage)&&document.getElementById(hashPage).classList.contains('page')?hashPage:initial;
     history.replaceState({__indoSite:true,page:wanted,depth:0},'',wanted==='home'?location.pathname+location.search:'#'+wanted);
     if(wanted!==initial)renderPage(wanted);
+    if(wanted!==initial)refreshHistoryPage(wanted);
 
     window.go=function(id,options){
       options=options||{};
@@ -480,11 +489,14 @@
 
     window.addEventListener('popstate',function(e){
       const st=e.state;
-      if(st&&st.__indoSite&&st.page)renderPage(st.page);
+      let target='home';
+      if(st&&st.__indoSite&&st.page)target=st.page;
       else{
         const hp=(location.hash||'').replace(/^#/,'');
-        renderPage(document.getElementById(hp)?hp:'home');
+        target=document.getElementById(hp)?hp:'home';
       }
+      renderPage(target);
+      refreshHistoryPage(target);
     });
   }
 
