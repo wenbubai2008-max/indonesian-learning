@@ -1581,20 +1581,23 @@ window.DAILY_VOCAB_DB = [
     "word": "beres",
     "cn": "搞定；处理完；整齐",
     "en": "",
-    "root": "",
+    "root": "beres",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-08-29 08:00",
+    "last_seen": "2026-09-15 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-08-29"
+      "2026-08-29",
+      "2026-09-15"
     ]
   },
   {
@@ -5821,15 +5824,16 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-15 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-15"
     ]
   },
   {
@@ -6056,16 +6060,17 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-15 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-09-08",
-      "2026-09-11"
+      "2026-09-11",
+      "2026-09-15"
     ]
   },
   {
@@ -6192,16 +6197,19 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "我刚才聊天聊得太投入，被气氛带着走，结果忘了时间。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-08 08:00",
+    "last_seen": "2026-09-15 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-15"
     ]
   },
   {
@@ -6510,14 +6518,15 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-09 19:00",
-    "last_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-15 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-09"
+      "2026-09-09",
+      "2026-09-15"
     ],
     "example": "Rencananya oke, cuma sekarang kebentur waktu dan anggaran.",
     "example_cn": "计划没问题，只是现在卡在时间和预算上。"
@@ -8210,13 +8219,15 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "比起太多承诺，我更相信实际成果。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-15 08:00",
-    "last_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-15"
@@ -8232,13 +8243,91 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "如果还不确定，最好现在先别决定。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
+    ],
+    "times_seen": 2,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 19:00",
+    "sessions": [
+      "08:00",
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "tanah",
+    "cn": "泥土；土地",
+    "en": "",
+    "root": "tanah",
+    "categories": [
+      "每日学习",
+      "19:00"
     ],
     "times_seen": 1,
-    "first_seen": "2026-09-15 08:00",
-    "last_seen": "2026-09-15 08:00",
+    "first_seen": "2026-09-15 19:00",
+    "last_seen": "2026-09-15 19:00",
     "sessions": [
-      "08:00"
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "arah",
+    "cn": "方向",
+    "en": "",
+    "root": "arah",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 19:00",
+    "last_seen": "2026-09-15 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "butuh",
+    "cn": "需要",
+    "en": "",
+    "root": "butuh",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 19:00",
+    "last_seen": "2026-09-15 19:00",
+    "sessions": [
+      "19:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "barusan",
+    "cn": "刚刚",
+    "en": "",
+    "root": "baru",
+    "categories": [
+      "每日学习",
+      "19:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 19:00",
+    "last_seen": "2026-09-15 19:00",
+    "sessions": [
+      "19:00"
     ],
     "dates": [
       "2026-09-15"
