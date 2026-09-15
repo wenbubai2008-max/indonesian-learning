@@ -16,8 +16,9 @@
   };
 
   function norm(s){return String(s||'').trim().toLowerCase();}
-  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m];});}
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[m];});}
   function pool(){return window.WeaknessPool||null;}
+  function practiceState(){try{return JSON.parse(localStorage.getItem('indo_quick_practice_state')||'{}')||{};}catch(e){return {};}}
 
   function sourceMap(){
     const out={};
@@ -55,6 +56,7 @@
   function items(){
     const wp=pool();if(!wp)return [];
     const map=sourceMap();
+    if(typeof wp.syncSignals==='function')wp.syncSignals(map,{},practiceState());
     return wp.listActive().filter(allowedSource).map(function(x){
       const k=norm(x.word),base=map[k]||{},contexts=x.contexts||[];
       const word=x.word||base.word||k;
@@ -103,6 +105,7 @@
     const wp=pool();if(!wp||!word)return;
     wp.markMastered(word,'weakness_done');
     try{const m=JSON.parse(localStorage.getItem('indo_mem')||'{}');m[word]='know';m[norm(word)]='know';localStorage.setItem('indo_mem',JSON.stringify(m));}catch(e){}
+    const s=practiceState(),k=norm(word);if(s[k]){s[k].streak=Math.max(3,Number(s[k].streak||0));s[k].last_result='mastered';s[k].last=Date.now();localStorage.setItem('indo_quick_practice_state',JSON.stringify(s));}
     scheduleRender(0);
   }
 
@@ -124,7 +127,7 @@
       return;
     }
 
-    body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。每页最多 30 个；点“会了”后，后面的词会自动向前补位，剩余不足 31 个时第二页自动消失。</div>'
+    body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词不在这里展示。每页最多 30 个，右上角显示所有页剩余总数。</div>'
       +'<div class="weakRestoreWrap"><span>点“会了”后，总数立即减 1；以后再次答错仍可重新进入。</span><button type="button" class="weakRestoreBtn">恢复已移出</button></div>'
       +navHtml(totalPages)
       +'<div class="v2-weak">'+visible.map(cardHtml).join('')+'</div>'
@@ -139,7 +142,7 @@
   function installStyle(){
     if(document.getElementById('weakPagingRootsStyle'))return;
     const s=document.createElement('style');s.id='weakPagingRootsStyle';
-    s.textContent='.v2-card>.weakRootLine{display:flex!important;justify-content:flex-start!important;align-items:baseline!important;gap:6px!important;text-align:left!important;margin-top:6px;font-size:13px;line-height:1.45;color:#667085}.v2-card>.weakRootLine span{color:#7a8495!important;background:transparent!important;padding:0!important;font-size:13px!important;flex:0 0 auto!important}.v2-card>.weakRootLine b{font-size:14px!important;color:#354052;flex:0 0 auto!important}.v2-card>.weakRootLine em{font-style:normal;color:#667085;flex:0 1 auto!important}.v2-card .weakRootLine+.v2-ex{margin-top:8px}';
+    s.textContent='.v2-card>.weakRootLine{display:flex!important;justify-content:flex-start!important;align-items:baseline!important;gap:6px!important;text-align:left!important;margin-top:6px;font-size:13px;line-height:1.45;color:#667085}.v2-card>.weakRootLine span{color:#7a8495!important;background:transparent!important;padding:0!important;font-size:13px!important;flex:0 0 auto!important}.v2-card>.weakRootLine b{font-size:14px!important;color:#354052;flex:0 0 auto!important}.v2-card>.weakRootLine em{font-style:normal;color:#667085;flex:0 1 auto!important}.v2-card .weakRootLine+.v2-ex{margin-top:8px}.weakPager{display:flex;justify-content:center;align-items:center;gap:12px;margin:14px 0}.weakPager span{color:#667085;font-size:13px}.weakPager button:disabled{opacity:.35}.weakRestoreWrap{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 2px;color:#667085;font-size:13px}.weakRestoreBtn{border:0;background:transparent;color:var(--blue);cursor:pointer;padding:6px}.v2-card.weakCardHasDone{position:relative;padding-bottom:54px}.weakDoneBtn{position:absolute;right:12px;bottom:12px;margin:0;border:1px solid #cfe5d6;background:#f1faf4;color:#17652d;border-radius:9px;padding:7px 11px;font-weight:700;cursor:pointer;line-height:1.2}@media(max-width:700px){.weakRestoreWrap{align-items:flex-start;flex-direction:column}.weakPager{gap:7px}.v2-card.weakCardHasDone{padding-bottom:56px}.weakDoneBtn{right:10px;bottom:10px}}';
     document.head.appendChild(s);
   }
 
