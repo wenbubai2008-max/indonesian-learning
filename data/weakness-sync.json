@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-14T14:09:17.975Z",
+  "updated_at": "2026-09-15T02:15:13.989Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -20508,8 +20508,10 @@
     "masalah": {
       "word": "masalah",
       "status": "mastered",
-      "updated_at": "2026-09-12T17:00:42.799Z",
+      "updated_at": "2026-09-15T02:15:03.511Z",
       "display": "masalah",
+      "cn": "问题",
+      "root": "masalah",
       "last_review": "2026-09-12T17:00:42.786Z",
       "last_mastered": "2026-09-12T17:00:42.786Z",
       "reasons": [],
