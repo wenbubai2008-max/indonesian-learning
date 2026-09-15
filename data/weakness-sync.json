@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15T02:41:43.620Z",
+  "updated_at": "2026-09-15T04:10:46.579Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -687,8 +687,9 @@
     "antara": {
       "word": "antara",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-15T04:10:36.140Z",
       "display": "antara",
+      "cn": "之间",
       "reasons": [
         "memory_fuzzy"
       ],
