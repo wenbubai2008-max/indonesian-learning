@@ -12,7 +12,9 @@
   },
   "runtime": {
     "file": "data/learning-runtime.json",
-    "builder": ".github/workflows/build-learning-runtime.yml",
+    "builder_script": ".github/scripts/build-learning-runtime.js",
+    "builder_workflow": ".github/workflows/build-learning-runtime.yml",
+    "lesson_sync_workflow": ".github/workflows/sync-daily-vocab.yml",
     "lesson_tasks_use_runtime_only": true,
     "large_source_files_read_in_github_runner_only": true,
     "runtime_is_derived_not_source_of_truth": true
@@ -36,9 +38,10 @@
     "复习写入前逐词校验：每个重点复习词必须存在于runtime.review_pool",
     "新词集合与复习集合交集必须为0；mastered命中数必须为0",
     "课程任务写入顺序固定为：读取runtime快照→从合法窗口选词→生成课程→写入前校验→写AM/PM课程JSON→更新index；课程任务本身不写daily-vocab",
-    "课程JSON提交后，由唯一的sync-daily-vocab.yml在GitHub Runner本地完整读取daily-vocab-data.js并安全同步；随后build-learning-runtime.yml自动刷新runtime",
-    "PM中只有is_new=true或new_words明确列出的词允许作为缺失词追加到daily-vocab；review/application只允许更新已存在词的复现记录，若缺失应视为一致性异常而非当作新词追加",
-    "写入后复核由同步链负责：新课程JSON存在、daily-vocab同步成功、runtime随后重建；失败不得自动关闭08:00或19:00任务",
+    "课程JSON提交后，由唯一的sync-daily-vocab.yml在GitHub Runner本地完整读取并安全同步daily-vocab，同时调用共享build-learning-runtime.js用更新后的daily-vocab重建runtime，并将daily-vocab与runtime在同一同步提交中写回；不依赖GitHub Actions机器人提交再次触发另一个工作流",
+    "weakness-sync、master、口语候选或规则本身变化时，由build-learning-runtime.yml调用同一个共享build-learning-runtime.js单独刷新runtime",
+    "PM中只有is_new=true、source_group=new或new_words明确列出的词允许作为缺失词追加到daily-vocab；review/application只允许更新已存在词的复现记录，若缺失应视为一致性异常而非当作新词追加",
+    "写入后复核由同步链负责：新课程JSON存在、daily-vocab同步成功、runtime在同一同步链中重建；失败不得自动关闭08:00或19:00任务",
     "若硬校验失败，不得用模型常识、高频度或A2-B1适配度绕过；应停止错误写入并重新从合法runtime候选选择"
   ],
   "validation_gate": {
@@ -50,7 +53,8 @@
     "forbid_mastered": true,
     "require_new_review_disjoint": true,
     "lesson_task_forbid_direct_daily_vocab_write": true,
-    "sync_workflow_is_single_writer": true
+    "sync_workflow_is_single_writer": true,
+    "lesson_sync_refreshes_runtime_atomically": true
   },
-  "updated_at": "2026-09-15T19:47:00+07:00"
+  "updated_at": "2026-09-15T19:55:00+07:00"
 }
