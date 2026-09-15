@@ -6,25 +6,32 @@
   if(!document.getElementById('dailyLightPatchStyle')){
     const st=document.createElement('style');
     st.id='dailyLightPatchStyle';
-    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.dailyLightHintCn{margin-top:5px;color:#7b6757;font-size:14px;font-weight:600}';
+    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}';
     document.head.appendChild(st);
   }
 
   function sec(title,body){return `<div class="dailyFixSec dailyLightTest"><h3><span class="dailyFixNo">✓</span>${esc(title)}</h3>${body}</div>`}
   function choice(it,i){return `<div class="dailyFixItem"><b>${i+1}. ${esc(it.prompt||'')}</b><div class="dailyFixChoiceWrap">${(it.options||[]).map((o,j)=>`<button class="dailyFixChoice" data-correct="${j===it.answer_index?1:0}" onclick='dailyLightChoice(this,${j===it.answer_index},${JSON.stringify(it.explain||'')})'>${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="dailyFixFeedback"></div></div>`}
 
-  const fillCnFallback={
-    'aku ___ waktu sebentar buat cek arahnya':'我需要一点时间确认一下方向。',
-    'jangan sampai ___ emosi waktu bicara':'说话时别被情绪带着走。'
+  const fillHintFallback={
+    'aku ___ waktu sebentar buat cek arahnya':'需要',
+    'jangan sampai ___ emosi waktu bicara':'被情绪带着走'
   };
-  function fillCn(it){
-    const explicit=String(it.answer_cn||it.prompt_cn||'').trim();
+  function fillHint(it){
+    const explicit=String(it.hint_cn||'').trim();
     if(explicit)return explicit;
-    return fillCnFallback[norm(it.prompt||'')]||'';
+    const ex=String(it.explain||'').trim();
+    const m=ex.match(/=\s*([^。；;]+)[。；;]?$/);
+    if(m&&m[1])return m[1].trim();
+    return fillHintFallback[norm(it.prompt||'')]||'';
+  }
+  function fillPrompt(it){
+    const p=String(it.prompt||'').trim(),hint=fillHint(it);
+    if(/^填空\s*[：:]/.test(p))return p;
+    return `填空： ${p}${hint?` （${hint}）`:''}`;
   }
   function fill(it,i){
-    const cn=fillCn(it);
-    return `<div class="dailyFixItem"><b>${i+1}. ${esc(it.prompt||'')}</b>${cn?`<div class="dailyLightHintCn">中文：${esc(cn)}</div>`:''}<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px"><input class="dailyLightFill" autocomplete="off" style="flex:1;min-width:180px;border:1px solid #dce3ef;border-radius:10px;padding:9px 11px" placeholder="只补一个词或短词块"><button class="dailyFixToggle" style="margin-top:0" onclick='dailyLightFillCheck(this,${JSON.stringify(it.answer||'')},${JSON.stringify(cn)})'>检查</button></div><div class="dailyFixFeedback"></div></div>`;
+    return `<div class="dailyFixItem"><b>${i+1}. ${esc(fillPrompt(it))}</b><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px"><input class="dailyLightFill" autocomplete="off" style="flex:1;min-width:180px;border:1px solid #dce3ef;border-radius:10px;padding:9px 11px" placeholder="只补一个词或短词块"><button class="dailyFixToggle" style="margin-top:0" onclick='dailyLightFillCheck(this,${JSON.stringify(it.answer||'')},${JSON.stringify(it.answer_cn||'')})'>检查</button></div><div class="dailyFixFeedback"></div></div>`;
   }
 
   function shuffleTokens(tokens){
@@ -52,8 +59,10 @@
   }
   function tokenButtons(tokens){return shuffleTokens(tokens).map(t=>`<button type="button" class="dailyFixChoice dailyLightToken" data-token="${esc(t)}" onclick="dailyLightPick(this)">${esc(t)}</button>`).join('')}
   function orderPrompt(it){
+    const p=String(it.prompt||'').trim();
+    if(/按照中文|根据中文/.test(p)&&!p.includes('/'))return p;
     const cn=orderCn(it);
-    return cn?`按照中文排成自然的印尼语句子：${cn}`:'请点击下面的词，排成自然的印尼语句子';
+    return cn?`按照中文排成自然的印尼语句子：${cn}`:'按照中文排成自然的印尼语句子';
   }
   function order(it,i){
     const tokens=orderTokens(it),cn=orderCn(it);
