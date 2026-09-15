@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15T02:15:13.989Z",
+  "updated_at": "2026-09-15T02:18:18.760Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -6995,8 +6995,9 @@
     "berikutnya": {
       "word": "berikutnya",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-15T02:18:08.292Z",
       "display": "berikutnya",
+      "cn": "下一个",
       "reasons": [
         "memory_dont"
       ],
