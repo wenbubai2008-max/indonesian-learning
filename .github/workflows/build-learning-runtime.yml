@@ -1,0 +1,180 @@
+name: Build learning runtime
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/weakness-sync.json'
+      - 'data/daily-vocab-data.js'
+      - 'data/master-vocab-data.js'
+      - 'data/master-vocab-data-2.js'
+      - 'data/master-vocab-data-3.js'
+      - 'data/oral-vocab-candidates.js'
+      - '.github/workflows/build-learning-runtime.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-learning-runtime
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Build compact runtime pools
+        shell: bash
+        run: |
+          set -e
+          git fetch origin main
+          git reset --hard origin/main
+          node <<'NODE'
+          const fs = require('fs');
+          const vm = require('vm');
+
+          const ctx = { window: {} };
+          vm.createContext(ctx);
+          for (const p of [
+            'data/master-vocab-data.js',
+            'data/master-vocab-data-2.js',
+            'data/master-vocab-data-3.js',
+            'data/oral-vocab-candidates.js',
+            'data/daily-vocab-data.js'
+          ]) {
+            vm.runInContext(fs.readFileSync(p, 'utf8'), ctx, { filename: p });
+          }
+
+          const key = s => String(s || '').trim().toLowerCase();
+          const masterRaw = Array.isArray(ctx.window.MASTER_VOCAB_DB) ? ctx.window.MASTER_VOCAB_DB : [];
+          const dailyRaw = Array.isArray(ctx.window.DAILY_VOCAB_DB) ? ctx.window.DAILY_VOCAB_DB : [];
+          const oralRaw = Array.isArray(ctx.window.ORAL_VOCAB_CANDIDATES) ? ctx.window.ORAL_VOCAB_CANDIDATES : [];
+          const weakDoc = JSON.parse(fs.readFileSync('data/weakness-sync.json', 'utf8'));
+          const weakWords = weakDoc && weakDoc.words && typeof weakDoc.words === 'object'
+            ? Object.values(weakDoc.words)
+            : (Array.isArray(weakDoc) ? weakDoc : Object.values(weakDoc || {}).filter(x => x && typeof x === 'object' && x.word));
+
+          const master = [];
+          const masterSeen = new Set();
+          for (const item of masterRaw) {
+            let word = '', cn = '';
+            if (Array.isArray(item)) { word = item[0]; cn = item[1] || ''; }
+            else if (item && typeof item === 'object') { word = item.word; cn = item.cn || ''; }
+            const k = key(word);
+            if (!k || masterSeen.has(k)) continue;
+            masterSeen.add(k);
+            master.push({ word: String(word).trim(), cn: String(cn || '').trim() });
+          }
+
+          const dailySet = new Set(dailyRaw.map(x => key(x && x.word)).filter(Boolean));
+          const weakMap = new Map();
+          for (const x of weakWords) {
+            const k = key(x && x.word);
+            if (k) weakMap.set(k, x);
+          }
+          const activeMap = new Map([...weakMap].filter(([,x]) => x && x.status === 'active'));
+          const masteredCount = [...weakMap.values()].filter(x => x && x.status === 'mastered').length;
+
+          const oralMap = new Map();
+          for (const x of oralRaw) {
+            const k = key(x && x.word);
+            if (k && !oralMap.has(k)) oralMap.set(k, x);
+          }
+
+          const newPool = master
+            .filter(x => activeMap.has(key(x.word)) && !dailySet.has(key(x.word)))
+            .map(x => x.word);
+          const newSet = new Set(newPool.map(key));
+
+          const oralNewPool = oralRaw
+            .filter(x => newSet.has(key(x && x.word)))
+            .map(x => ({
+              word: String(x.word || '').trim(),
+              register: x.register || '',
+              oral: x.oral || '',
+              root: x.root || '',
+              rank: Number.isFinite(Number(x.rank)) ? Number(x.rank) : null
+            }));
+
+          const reviewPool = [];
+          for (const x of activeMap.values()) {
+            const k = key(x.word);
+            if (!dailySet.has(k)) continue;
+            const reasons = Array.isArray(x.reasons) ? x.reasons : [];
+            let priority = 4;
+            if (reasons.includes('quick_wrong') || x.last_wrong) priority = 1;
+            else if (reasons.includes('memory_dont')) priority = 2;
+            else if (reasons.includes('memory_fuzzy')) priority = 3;
+            reviewPool.push({
+              word: String(x.word || '').trim(),
+              reasons,
+              wrong_count: Number(x.wrong_count || 0),
+              right_streak: Number(x.right_streak || 0),
+              last_wrong: x.last_wrong || '',
+              last_review: x.last_review || '',
+              updated_at: x.updated_at || x.last_seen || '',
+              priority
+            });
+          }
+          reviewPool.sort((a,b) => {
+            if (a.priority !== b.priority) return a.priority - b.priority;
+            return String(b.updated_at || '').localeCompare(String(a.updated_at || ''));
+          });
+
+          const reviewSet = new Set(reviewPool.map(x => key(x.word)));
+          const oralReviewPool = oralRaw
+            .filter(x => reviewSet.has(key(x && x.word)))
+            .map(x => ({
+              word: String(x.word || '').trim(),
+              register: x.register || '',
+              oral: x.oral || '',
+              root: x.root || '',
+              rank: Number.isFinite(Number(x.rank)) ? Number(x.rank) : null
+            }));
+
+          const runtime = {
+            version: 1,
+            generated_at: new Date().toISOString(),
+            weakness_updated_at: weakDoc && weakDoc.updated_at ? weakDoc.updated_at : '',
+            stats: {
+              master_unique: master.length,
+              weak_active_total: activeMap.size,
+              weak_mastered_total: masteredCount,
+              daily_taught_unique: dailySet.size,
+              new_pool_total: newPool.length,
+              review_pool_total: reviewPool.length,
+              oral_new_pool_total: oralNewPool.length,
+              oral_review_pool_total: oralReviewPool.length
+            },
+            rules: {
+              new_pool: 'master977 ∩ weakness_active − daily_vocab',
+              review_pool: 'weakness_active ∩ daily_vocab',
+              mastered: 'excluded from core new/review selection'
+            },
+            new_pool: newPool,
+            oral_new_pool: oralNewPool,
+            review_pool: reviewPool,
+            oral_review_pool: oralReviewPool
+          };
+
+          fs.writeFileSync('data/learning-runtime.json', JSON.stringify(runtime, null, 2) + '\n');
+          console.log(runtime.stats);
+          NODE
+      - name: Commit runtime if changed
+        shell: bash
+        run: |
+          set -e
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/learning-runtime.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Build learning runtime pools'
+          git pull --rebase origin main
+          git push origin HEAD:main
