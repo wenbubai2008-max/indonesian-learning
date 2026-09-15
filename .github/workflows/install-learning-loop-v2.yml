@@ -15,6 +15,8 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
+
           p=Path('index.html')
           s=p.read_text()
           pool='<script src="data/weakness-pool.js?v=20260915-runtime1"></script>'
@@ -24,14 +26,22 @@ jobs:
           if 'data/weakness-paging-roots.js' not in s:
               s=s.replace('<script src="data/extensive-reading-history-ui.js', paging+'\n<script src="data/extensive-reading-history-ui.js')
           else:
-              import re
               s=re.sub(r'data/weakness-paging-roots\.js\?v=[^"<]+','data/weakness-paging-roots.js?v=20260915-runtime2',s)
+          s=re.sub(r'data/home-learning-upgrade-v2\.js\?v=[^"<]+','data/home-learning-upgrade-v2.js?v=20260915-weak-runtime1',s)
           p.write_text(s)
+
+          q=Path('data/home-learning-upgrade-v2.js')
+          t=q.read_text()
+          old="window.addEventListener('weak-pool-changed',function(){if(document.getElementById('weakness')?.classList.contains('active'))setTimeout(renderWeak,0);});"
+          new="window.addEventListener('weak-pool-changed',function(){if(window.__weaknessPagingRootsLoaded)return;if(document.getElementById('weakness')?.classList.contains('active'))setTimeout(renderWeak,0);});"
+          if old in t:
+              t=t.replace(old,new)
+          q.write_text(t)
           PY
       - name: Commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add index.html
-          git diff --cached --quiet || git commit -m 'Load unified weakness runtime'
+          git add index.html data/home-learning-upgrade-v2.js
+          git diff --cached --quiet || git commit -m 'Prevent legacy weakness rerender conflicts'
           git push
