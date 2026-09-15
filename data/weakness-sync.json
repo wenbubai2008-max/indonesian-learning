@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15T12:39:59.580Z",
+  "updated_at": "2026-09-15T12:42:57.571Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -362,7 +362,7 @@
     "tergantung": {
       "word": "tergantung",
       "status": "active",
-      "updated_at": "2026-09-15T12:39:53.258Z",
+      "updated_at": "2026-09-15T12:40:44.160Z",
       "display": "tergantung",
       "cn": "取决于；看情况",
       "root": "gantung",
@@ -474,7 +474,7 @@
     "sekadar": {
       "word": "sekadar",
       "status": "active",
-      "updated_at": "2026-09-15T12:39:53.258Z",
+      "updated_at": "2026-09-15T12:40:44.160Z",
       "display": "sekadar",
       "cn": "只是；仅仅；不过是",
       "root": "kadar",
@@ -5193,7 +5193,7 @@
     "ujung-ujungnya": {
       "word": "ujung-ujungnya",
       "status": "active",
-      "updated_at": "2026-09-15T12:39:53.258Z",
+      "updated_at": "2026-09-15T12:40:44.160Z",
       "display": "ujung-ujungnya",
       "cn": "到头来；结果最后还是",
       "root": "ujung",
@@ -23276,10 +23276,11 @@
     "masukan": {
       "word": "masukan",
       "status": "active",
-      "updated_at": "2026-09-14T09:30:41.653Z",
+      "updated_at": "2026-09-15T12:42:51.395Z",
       "display": "masukan",
       "cn": "意见；反馈；建议",
       "root": "masuk",
+      "root_cn": "进入；进",
       "last_wrong": "2026-09-14T09:30:41.623Z",
       "last_review": "2026-09-14T09:30:41.623Z",
       "reasons": [
