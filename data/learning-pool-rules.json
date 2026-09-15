@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "master_total": 977,
   "oral_candidate_total": 206,
   "new_pool_formula": "M ∩ A − D",
@@ -21,7 +21,25 @@
     "口语名额优先选择register=口语的口语本体；oral字段非空但register不是口语的词仅作为次选，用于学习标准语↔口语对应",
     "同一组标准语↔口语对应不要在同一天拆成两个独立新词名额；作为一组教学即可",
     "不得为了凑口语比例从977外、mastered或daily-vocab已教词中补新词",
-    "口语词优先雅加达/全国高频自然表达，排除粗口、低频俚语和猎奇网络词"
+    "口语词优先雅加达/全国高频自然表达，排除粗口、低频俚语和猎奇网络词",
+    "硬闸门：AI不得先自行想新词再回查资格；必须先计算M∩A−D的完整合法候选集合，再且只能从该集合选新词",
+    "写入前逐词校验：每个新词必须同时满足in_master=true、weak_status=active、in_daily_vocab_before=false；任一条件失败则整批禁止写入",
+    "口语写入前额外校验：口语名额必须满足in_oral_candidates=true，且仍通过全部新词硬条件",
+    "复习写入前逐词校验：每个重点复习词必须满足weak_status=active且in_daily_vocab_before=true",
+    "新词集合与复习集合交集必须为0；mastered命中数必须为0",
+    "写入顺序固定为：读取快照→计算合法池→选词→生成课程→写入前校验→更新daily-vocab→更新课程/index→写入后复核",
+    "写入后复核必须确认：课程真正新词集合与本次daily-vocab新增集合完全相等；数量、word标准化去重结果均一致",
+    "若硬校验失败，不得用模型常识、高频度或A2-B1适配度绕过；应停止错误写入并重新从合法池选择"
   ],
-  "updated_at": "2026-09-13T15:32:00Z"
+  "validation_gate": {
+    "required_before_write": true,
+    "new_word_checks": ["in_master", "weak_status_active", "not_in_daily_vocab_before"],
+    "oral_word_extra_check": "in_oral_candidates",
+    "review_word_checks": ["weak_status_active", "in_daily_vocab_before"],
+    "forbid_ai_free_selection": true,
+    "forbid_mastered": true,
+    "require_new_review_disjoint": true,
+    "require_course_daily_vocab_new_words_equal": true
+  },
+  "updated_at": "2026-09-15T08:00:00+07:00"
 }
