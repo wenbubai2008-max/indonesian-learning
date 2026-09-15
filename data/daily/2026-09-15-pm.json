@@ -1,0 +1,28 @@
+{
+  "date":"2026-09-15",
+  "session":"pm",
+  "time":"19:00",
+  "level":"A2+ → B1",
+  "day":25,
+  "duration_minutes":55,
+  "title":"19:00｜复习 + 应用：临时出问题时，把方向和处理方式说清楚",
+  "write_status":"lesson_complete",
+  "new_words":["tanah","arah","butuh","barusan"],
+  "vocab":[
+    {"word":"tanah","cn":"泥土；土地","root":"tanah","root_cn":"泥土；土地","example":"Jalan di depan masih penuh tanah karena barusan hujan.","example_cn":"前面的路上还有很多泥，因为刚刚下过雨。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"arah","cn":"方向","root":"arah","root_cn":"方向","example":"Kalau salah arah, kita bisa muter cukup jauh.","example_cn":"如果走错方向，我们可能要绕很远。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"butuh","cn":"需要","root":"butuh","root_cn":"需要","example":"Aku butuh waktu sebentar buat cek semuanya.","example_cn":"我需要一点时间检查所有东西。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"barusan","cn":"刚刚","root":"baru","root_cn":"新；刚刚","example":"Barusan dia telepon dan bilang jadwalnya berubah.","example_cn":"他刚刚打电话说时间变了。","source_group":"new","is_new":true,"is_oral_new":true,"synonym_note":"barusan 是自然口语；标准/较中性的对应说法是 baru saja。"},
+    {"word":"ngandelin","cn":"依赖；指望；靠","root":"andal","root_cn":"可靠；可依靠","example":"Jangan cuma ngandelin satu orang buat beresin semuanya.","example_cn":"别只指望一个人把所有事情都处理完。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"kecolongan","cn":"一时疏忽没防住；漏掉问题","root":"colong","root_cn":"偷拿；趁人不注意拿走","example":"Kami kecolongan satu detail kecil waktu cek dokumen.","example_cn":"我们检查文件时疏忽漏掉了一个小细节。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"beres","cn":"搞定；处理完；整齐","root":"beres","root_cn":"搞定；整齐","example":"Tenang, masalah ini bisa beres malam ini.","example_cn":"放心，这个问题今晚能搞定。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"kebawa","cn":"不小心带走；被带着影响；情绪被带进去","root":"bawa","root_cn":"带；携带","example":"Jangan sampai kebawa emosi waktu bahas masalah kerja.","example_cn":"讨论工作问题时别被情绪带着走。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"kebentur","cn":"碰上阻碍；卡在限制上","root":"bentur","root_cn":"碰撞；撞上","example":"Rencananya bagus, tapi kebentur biaya.","example_cn":"计划不错，但卡在费用上了。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"nyata","cn":"真实的；实际存在的；明显的","root":"nyata","root_cn":"真实；明显","example":"Kita butuh hasil nyata, bukan cuma janji.","example_cn":"我们需要实际成果，不只是承诺。","source_group":"application","is_new":false,"is_oral_new":false},
+    {"word":"sebaiknya","cn":"最好；应该（委婉建议）","root":"baik","root_cn":"好；良好","example":"Kalau arahnya belum jelas, sebaiknya cek lagi sebelum berangkat.","example_cn":"如果方向还不清楚，最好出发前再确认一下。","source_group":"application","is_new":false,"is_oral_new":false}
+  ],
+  "reading":{"title":"Jangan Panik Kalau Rencana Berubah","text":"Barusan tim kami dapat kabar bahwa jalan menuju lokasi utama ditutup. Kami sempat salah arah dan masuk ke jalan yang penuh tanah. Aku bilang kami butuh beberapa menit untuk cek peta lagi. Sebaiknya jangan cuma ngandelin satu orang, karena kami pernah kecolongan detail kecil sebelumnya. Ada pilihan lain yang cukup jelas, tetapi rencana itu kebentur biaya tambahan. Untungnya semua orang tetap tenang dan nggak kebawa emosi. Setelah membandingkan dua pilihan, kami menemukan arah yang lebih aman. Intinya, kami butuh solusi nyata supaya urusan cepat beres tanpa membuat masalah baru.","cn":"刚刚我们团队收到消息，去主要地点的道路封闭了。我们一度走错方向，进入了一条满是泥土的路。我说我们需要几分钟重新看地图。最好不要只依赖一个人，因为之前我们曾疏忽漏掉过小细节。还有另一个比较明确的选择，但那个方案卡在额外费用上。幸运的是，大家都保持冷静，没有被情绪带着走。比较两个选择后，我们找到了更安全的方向。重点是，我们需要实际可行的解决办法，让事情尽快搞定，同时不制造新问题。","vocab":["barusan","arah","tanah","butuh","sebaiknya","ngandelin","kecolongan","kebentur","kebawa","nyata","beres"]},
+  "dialogue":{"title":"口语对话｜临时改路线","lines":[{"speaker":"A","id":"Barusan aku dapat kabar, jalan depan ditutup.","cn":"我刚刚收到消息，前面的路封了。"},{"speaker":"B","id":"Terus kita harus ambil arah mana?","cn":"那我们该走哪个方向？"},{"speaker":"A","id":"Sebentar, aku butuh waktu buat cek peta. Jangan cuma ngandelin ingatan.","cn":"等一下，我需要点时间看地图。别只靠记忆。"},{"speaker":"B","id":"Iya, takut kecolongan lagi. Kemarin kita juga salah belok.","cn":"对，怕又疏忽了。昨天我们也拐错了。"},{"speaker":"A","id":"Yang satu lebih dekat, tapi kebentur jalan yang penuh tanah.","cn":"有一条更近，但碰上满是泥土的路。"},{"speaker":"B","id":"Oke, sebaiknya pilih yang aman aja biar cepat beres.","cn":"好，最好选安全的，这样能快点搞定。"}]},
+  "daily_test":{"title":"当日小测 · 6题","items":[{"type":"choice","prompt":"‘刚刚他给我打电话’最自然的开头是：","options":["Barusan","Tanah","Arah"],"answer_index":0,"explain":"barusan = 刚刚，是高频口语。"},{"type":"choice","prompt":"‘别只依赖一个人’里的‘依赖’最适合：","options":["ngandelin","kebentur","kecolongan"],"answer_index":0,"explain":"ngandelin = 依赖、指望。"},{"type":"choice","prompt":"‘计划卡在预算上’最自然的是：","options":["Rencananya kebentur biaya.","Rencananya kebawa biaya.","Rencananya tanah biaya."],"answer_index":0,"explain":"kebentur 可表示碰上限制、卡在某个障碍上。"},{"type":"fill","prompt":"Aku ___ waktu sebentar buat cek arahnya.","answer":"butuh","explain":"butuh = 需要。"},{"type":"fill","prompt":"Jangan sampai ___ emosi waktu bicara.","answer":"kebawa","explain":"kebawa emosi = 被情绪带着走。"},{"type":"order","prompt":"排序：sebaiknya / kita / arah / cek / lagi / dulu","answer":"Sebaiknya kita cek arah lagi dulu.","explain":"sebaiknya 放句首可自然表达‘最好……’。"}],"self_check":["我能用 barusan 说刚发生的事。","我能区分 ngandelin、kecolongan、kebentur。","我能主动用 arah、butuh、sebaiknya 组织一句话。"]},
+  "selection_validation":{"runtime_version":4,"rules_version":4,"master_unique":977,"new_count":4,"review_count":5,"application_count":2,"group_overlap":0,"oral_new_count":1,"new_words_checked":true,"review_words_checked":true}
+}
