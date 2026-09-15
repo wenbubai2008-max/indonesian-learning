@@ -188,7 +188,16 @@
     return {date:'',session:'',source:'阅读短文'};
   }
   function unknownMap(){return parseStore('indo_unknown_words');}
-  function isUnknown(word){const p=weakPool();if(p)return p.isActive(word);return !!unknownMap()[norm(word)];}
+  function isUnknown(word){
+    const p=weakPool();
+    if(p){
+      const x=typeof p.get==='function'?p.get(word):null;if(!x||x.status!=='active')return false;
+      const r=x.reasons||[],h=x.reason_history||[];
+      if(r.includes('manual_unknown')||r.includes('quick_wrong'))return true;
+      return r.includes('manual_restore')&&(h.includes('manual_unknown')||h.includes('quick_wrong'));
+    }
+    return !!unknownMap()[norm(word)];
+  }
   function backfillExisting(hit){
     const key=norm(hit.base||hit.word);if(!key||!hit.cn)return;
     const p=weakPool();if(p&&p.get(key))p.enrich(key,{cn:hit.cn,en:hit.en,root:hit.root,root_cn:hit.root_cn,example:hit.example,example_cn:hit.example_cn});
