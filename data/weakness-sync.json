@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15T04:10:46.579Z",
+  "updated_at": "2026-09-15T04:14:22.600Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1569,8 +1569,9 @@
     "kelompok": {
       "word": "kelompok",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-15T04:14:12.204Z",
       "display": "kelompok",
+      "cn": "团体",
       "reasons": [
         "memory_dont"
       ],
@@ -7087,8 +7088,9 @@
     "penumpang": {
       "word": "penumpang",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-15T04:11:20.799Z",
       "display": "penumpang",
+      "cn": "乘客",
       "reasons": [
         "memory_fuzzy"
       ],
