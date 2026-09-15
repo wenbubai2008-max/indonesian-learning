@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15T04:18:04.997Z",
+  "updated_at": "2026-09-15T04:30:24.929Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -599,18 +599,18 @@
     "bentrok": {
       "word": "bentrok",
       "status": "active",
-      "updated_at": "2026-09-11T15:03:45.011Z",
+      "updated_at": "2026-09-15T04:29:11.946Z",
       "display": "bentrok",
       "cn": "时间冲突；撞期",
       "root": "bentrok",
       "root_cn": "冲突；相撞",
       "last_wrong": "2026-09-11T15:03:45.009Z",
-      "last_review": "2026-09-11T15:03:45.009Z",
+      "last_review": "2026-09-15T04:29:11.929Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nyimak": {
       "word": "nyimak",
@@ -1497,16 +1497,17 @@
     "kegiatan": {
       "word": "kegiatan",
       "status": "active",
-      "updated_at": "2026-09-14T09:52:16.973Z",
+      "updated_at": "2026-09-15T04:28:52.073Z",
       "display": "kegiatan",
       "cn": "活动；要做的事情",
       "root": "giat",
       "root_cn": "积极；活跃；勤奋",
+      "last_review": "2026-09-15T04:28:52.051Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "terkenal": {
       "word": "terkenal",
@@ -4701,16 +4702,17 @@
     "ngaret": {
       "word": "ngaret",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-15T04:29:36.176Z",
       "display": "ngaret",
       "cn": "拖延、迟到",
       "root": "karet",
       "root_cn": "橡胶；引申为时间被‘拉长’",
+      "last_review": "2026-09-15T04:29:36.151Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "norak": {
       "word": "norak",
@@ -6250,15 +6252,16 @@
     "misalnya": {
       "word": "misalnya",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-15T04:29:26.954Z",
       "display": "misalnya",
       "cn": "例如",
       "root": "misal",
+      "last_review": "2026-09-15T04:29:26.927Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "jarak": {
       "word": "jarak",
@@ -23222,17 +23225,17 @@
     "urusan dadakan": {
       "word": "urusan dadakan",
       "status": "active",
-      "updated_at": "2026-09-14T09:30:22.137Z",
+      "updated_at": "2026-09-15T04:28:32.537Z",
       "display": "urusan dadakan",
       "cn": "临时冒出来的事",
       "root": "urus / dadak",
       "last_wrong": "2026-09-13T11:53:43.234Z",
-      "last_review": "2026-09-14T09:30:22.098Z",
+      "last_review": "2026-09-15T04:28:32.519Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "ngotot": {
       "word": "ngotot",
@@ -23259,6 +23262,38 @@
       "root": "masuk",
       "last_wrong": "2026-09-14T09:30:41.623Z",
       "last_review": "2026-09-14T09:30:41.623Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "kecolongan": {
+      "word": "kecolongan",
+      "status": "active",
+      "updated_at": "2026-09-15T04:29:01.901Z",
+      "display": "kecolongan",
+      "cn": "一时疏忽没防住；漏掉问题",
+      "root": "colong",
+      "root_cn": "偷拿；趁人不注意拿走",
+      "last_wrong": "2026-09-15T04:29:01.877Z",
+      "last_review": "2026-09-15T04:29:01.877Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "ngandelin": {
+      "word": "ngandelin",
+      "status": "active",
+      "updated_at": "2026-09-15T04:30:14.709Z",
+      "display": "ngandelin",
+      "cn": "依赖；指望；靠",
+      "root": "andal",
+      "root_cn": "可靠；可依靠",
+      "last_wrong": "2026-09-15T04:30:14.684Z",
+      "last_review": "2026-09-15T04:30:14.684Z",
       "reasons": [
         "quick_wrong"
       ],
