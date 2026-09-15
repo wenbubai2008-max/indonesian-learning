@@ -28,15 +28,16 @@
 
   function hide(){popupSeq++;if(popup){popup.remove();popup=null;}}
   function norm(s){return String(s||'').trim().toLowerCase().replace(/^[^a-zA-ZÀ-ÿ]+|[^a-zA-ZÀ-ÿ-]+$/g,'');}
+  function plainNorm(s){const w=norm(s);if(!w)return '';try{return w.normalize('NFD').replace(/[\u0300-\u036f]/g,'');}catch(e){return w;}}
   function parseStore(key){try{return JSON.parse(localStorage.getItem(key)||'{}')||{};}catch(e){return {};}}
   function saveStore(key,val){try{localStorage.setItem(key,JSON.stringify(val));}catch(e){}}
   function weakPool(){return window.WeaknessPool||null;}
   function allWords(){
     return [].concat(
-      Array.isArray(window.EMBEDDED_DB)?window.EMBEDDED_DB:[],
       Array.isArray(window.DAILY_VOCAB_DB)?window.DAILY_VOCAB_DB:[],
       Array.isArray(window.UNFAMILIAR_VOCAB_DB)?window.UNFAMILIAR_VOCAB_DB:[],
-      Array.isArray(window.MASTER_VOCAB_OBJECTS)?window.MASTER_VOCAB_OBJECTS:[]
+      Array.isArray(window.MASTER_VOCAB_OBJECTS)?window.MASTER_VOCAB_OBJECTS:[],
+      Array.isArray(window.EMBEDDED_DB)?window.EMBEDDED_DB:[]
     );
   }
 
@@ -163,19 +164,18 @@
   function hitFromRecord(raw,hit,base){return {word:String(raw).trim(),base:hit.word||base||norm(raw),cn:String(hit.cn||hit.zh||'').trim(),en:String(hit.en||'').trim(),root:String(hit.root||'').trim(),root_cn:String(hit.root_cn||'').trim(),example:String(hit.example||'').trim(),example_cn:String(hit.example_cn||'').trim()};}
   function lookup(raw,node){
     const fromHint=hintLookup(node,raw);if(fromHint)return fromHint;
-    const w=norm(raw);if(!w)return null;
-    const p=weakPool(),pooled=p&&typeof p.get==='function'?p.get(w):null;if(pooled&&pooled.cn)return hitFromRecord(raw,pooled,w);
-    const variants=[w];
-    if(/-(ku|mu|nya)$/.test(w))variants.push(w.replace(/-(ku|mu|nya)$/,''));
-    if(/(ku|mu|nya)$/.test(w)&&w.length>5)variants.push(w.replace(/(ku|mu|nya)$/,''));
+    const w=norm(raw),plain=plainNorm(raw);if(!w)return null;
+    const p=weakPool(),pooled=p&&typeof p.get==='function'?(p.get(w)||(plain!==w?p.get(plain):null)):null;if(pooled&&pooled.cn)return hitFromRecord(raw,pooled,plain||w);
+    const variants=[];[w,plain].forEach(function(v){if(v&&!variants.includes(v))variants.push(v);});
+    variants.slice().forEach(function(v){if(/-(ku|mu|nya)$/.test(v)){const x=v.replace(/-(ku|mu|nya)$/,'');if(x&&!variants.includes(x))variants.push(x);}if(/(ku|mu|nya)$/.test(v)&&v.length>5){const x=v.replace(/(ku|mu|nya)$/,'');if(x&&!variants.includes(x))variants.push(x);}});
     const words=allWords();
-    for(const v of variants){const hit=words.find(x=>x&&(norm(x.word)===v||norm(x.display)===v||norm(x.audio_text)===v));if(hit)return hitFromRecord(raw,hit,v);}
-    return {word:String(raw).trim(),base:w,cn:persistentCached(w),en:'',root:'',root_cn:'',example:'',example_cn:''};
+    for(const v of variants){const hit=words.find(x=>x&&(plainNorm(x.word)===v||plainNorm(x.display)===v||plainNorm(x.audio_text)===v));if(hit)return hitFromRecord(raw,hit,v);}
+    const base=plain||w;return {word:String(raw).trim(),base:base,cn:persistentCached(base)||persistentCached(w),en:'',root:'',root_cn:'',example:'',example_cn:''};
   }
 
   function escapeHtml(s){return String(s==null?'':s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
   function sentenceFrom(node,raw){
-    const box=node.closest('.rl-text,.dailyFixReading');const text=(box&&(box.innerText||box.textContent)||'').replace(/\s+/g,' ').trim();if(!text)return '';
+    const box=node.closest('.rl-text,.dailyFixReading,#daily .reading');const text=(box&&(box.innerText||box.textContent)||'').replace(/\s+/g,' ').trim();if(!text)return '';
     const p=text.toLowerCase().indexOf(String(raw).toLowerCase());if(p<0)return text.slice(0,220);
     let a=Math.max(0,p-120),b=Math.min(text.length,p+String(raw).length+120);
     const left=text.slice(0,p).search(/[.!?。！？][^.!?。！？]*$/);if(left>=0)a=left+1;
@@ -183,7 +183,9 @@
     return text.slice(a,b).trim();
   }
   function sourceInfo(node){
-    const daily=node.closest('#daily');if(daily)return {date:(document.getElementById('dailyMeta')&&document.getElementById('dailyMeta').textContent||'').trim(),session:(document.getElementById('dailyTitle')&&document.getElementById('dailyTitle').textContent||'').includes('19:00')?'19:00':'08:00',source:'每日学习阅读'};
+    const daily=node.closest('#daily');
+    if(daily){const date=(document.getElementById('dailyMeta')&&document.getElementById('dailyMeta').textContent||'').trim();const nav=daily.querySelector('.dailyFixMid span');const title=document.getElementById('dailyTitle');const label=String((nav&&nav.textContent)||(title&&title.textContent)||'');const session=/19:00|晚间/.test(label)?'19:00':(/08:00|早间/.test(label)?'08:00':'');return {date:date,session:session,source:'每日学习阅读'};}
+    const readingPage=node.closest('#readingPage');if(readingPage){const meta=String(document.getElementById('readingMeta')&&document.getElementById('readingMeta').textContent||'');const dm=meta.match(/\b(20\d{2}-\d{2}-\d{2})\b/),tm=meta.match(/\b(08:00|19:00)\b/);return {date:dm?dm[1]:'',session:tm?tm[1]:'',source:'每日阅读库'};}
     const extensive=node.closest('#extensive');if(extensive)return {date:(document.getElementById('extensiveMeta')&&document.getElementById('extensiveMeta').textContent||'').split('·')[0].trim(),session:'',source:'泛读'};
     return {date:'',session:'',source:'阅读短文'};
   }
@@ -238,7 +240,7 @@
     const sel=window.getSelection&&window.getSelection();if(!sel||sel.rangeCount===0||sel.isCollapsed)return;
     const txt=sel.toString().trim();if(!txt||txt.length>40||/\s/.test(txt))return;
     const range=sel.getRangeAt(0),node=range.commonAncestorContainer.nodeType===1?range.commonAncestorContainer:range.commonAncestorContainer.parentElement;
-    if(!node||!node.closest||!node.closest('.rl-text,.dailyFixReading'))return;
+    if(!node||!node.closest||!node.closest('.rl-text,.dailyFixReading,#daily .reading'))return;
     const rect=range.getBoundingClientRect();if(!rect||(!rect.width&&!rect.height))return;
     const sig=norm(txt)+'|'+Math.round(rect.left)+'|'+Math.round(rect.top),now=Date.now();if(sig===lastSelection&&now-lastSelectionAt<350)return;lastSelection=sig;lastSelectionAt=now;show(txt,rect,node);
   }
