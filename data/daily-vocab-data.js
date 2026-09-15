@@ -520,7 +520,7 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "menerima",
     "cn": "接受；收到",
-    "en": "",
+    "en": "receive; accept",
     "root": "terima",
     "categories": [
       "每日学习",
@@ -529,17 +529,21 @@ window.DAILY_VOCAB_DB = [
       "历史记录不完整",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-23 19:00",
-    "last_seen": "2026-08-25 08:00",
+    "last_seen": "2026-09-15 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-08-23",
-      "2026-08-25"
-    ]
+      "2026-08-25",
+      "2026-09-15"
+    ],
+    "root_cn": "接受；收到",
+    "example": "Kami sudah menerima dokumennya, tapi belum memeriksa semuanya.",
+    "example_cn": "我们已经收到文件了，但还没有全部检查。"
   },
   {
     "word": "menolak",
@@ -994,22 +998,26 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "nyebelin",
     "cn": "烦人、让人不爽",
-    "en": "",
-    "root": "",
+    "en": "annoying",
+    "root": "sebel",
     "categories": [
       "每日学习",
       "08:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-08-27 08:00",
+    "last_seen": "2026-09-15 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-27"
-    ]
+      "2026-08-27",
+      "2026-09-15"
+    ],
+    "root_cn": "烦；恼火",
+    "example": "Yang nyebelin itu bukan masalahnya, tapi dia nggak pernah kasih kabar.",
+    "example_cn": "烦人的不是这个问题，而是他从来不提前说。"
   },
   {
     "word": "terserah",
@@ -1512,9 +1520,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-09-11 19:00",
+    "last_seen": "2026-09-15 08:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -1522,11 +1530,12 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-29",
       "2026-09-05",
-      "2026-09-11"
+      "2026-09-11",
+      "2026-09-15"
     ],
     "root_cn": "想；思考",
-    "example": "Setelah meeting tadi aku masih kepikiran, takut ada bagian yang kelewat.",
-    "example_cn": "刚才开完会我还一直惦记着，怕有哪个部分漏掉了。"
+    "example": "Aku masih kepikiran hasil meeting kemarin.",
+    "example_cn": "我还一直想着昨天会议的结果。"
   },
   {
     "word": "ngerasa",
@@ -2377,22 +2386,28 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "segera",
     "cn": "尽快、马上",
-    "en": "",
-    "root": "",
+    "en": "immediately; promptly",
+    "root": "segera",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-25 19:00",
-    "last_seen": "2026-08-25 19:00",
+    "last_seen": "2026-09-15 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-25"
-    ]
+      "2026-08-25",
+      "2026-09-15"
+    ],
+    "root_cn": "立即；马上",
+    "example": "Kalau ada perubahan, tolong segera kasih tahu aku.",
+    "example_cn": "如果有变化，请马上告诉我。"
   },
   {
     "word": "proses",
@@ -7705,19 +7720,22 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "结果；成果",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-13 19:00",
-    "last_seen": "2026-09-13 19:00",
+    "last_seen": "2026-09-15 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-13"
+      "2026-09-13",
+      "2026-09-15"
     ],
-    "example": "Kita lihat hasilnya dulu sebelum menentukan langkah berikutnya.",
-    "example_cn": "我们先看看结果，再决定下一步。"
+    "example": "Hasil akhirnya lebih baik daripada yang kami kira.",
+    "example_cn": "最后的结果比我们原先想的更好。"
   },
   {
     "word": "alasan",
@@ -8302,6 +8320,116 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "辞职",
     "example": "Dia belum mau resign karena masih ada tanggung jawab yang harus diselesaikan.",
     "example_cn": "他还不想辞职，因为还有责任需要完成。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "menarik",
+    "cn": "有趣的；吸引人的；引人注意的",
+    "en": "interesting; attractive",
+    "root": "tarik",
+    "root_cn": "拉；吸引",
+    "example": "Menurutku, idenya menarik dan layak dicoba.",
+    "example_cn": "我觉得这个想法挺有意思，值得试试。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "umum",
+    "cn": "一般的；普遍的；公共的",
+    "en": "general; common; public",
+    "root": "umum",
+    "root_cn": "一般；公共",
+    "example": "Secara umum, cara ini cukup mudah dipahami.",
+    "example_cn": "总体来说，这种方法比较容易理解。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "muncul",
+    "cn": "出现；冒出来",
+    "en": "appear; emerge",
+    "root": "muncul",
+    "root_cn": "出现",
+    "example": "Masalah baru muncul setelah kami mengganti sistem.",
+    "example_cn": "我们更换系统后出现了新的问题。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "nyata",
+    "cn": "真实的；实际存在的；明显的",
+    "en": "real; actual; evident",
+    "root": "nyata",
+    "root_cn": "真实；明显",
+    "example": "Aku lebih percaya hasil nyata daripada janji yang terlalu banyak.",
+    "example_cn": "比起太多承诺，我更相信实际成果。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-15"
+    ]
+  },
+  {
+    "word": "sebaiknya",
+    "cn": "最好；应该（委婉建议）",
+    "en": "should; had better",
+    "root": "baik",
+    "root_cn": "好；良好",
+    "example": "Kalau belum yakin, sebaiknya jangan putuskan sekarang.",
+    "example_cn": "如果还不确定，最好现在先别决定。",
     "categories": [
       "每日学习",
       "08:00"
