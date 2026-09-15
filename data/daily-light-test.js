@@ -6,11 +6,11 @@
   if(!document.getElementById('dailyLightPatchStyle')){
     const st=document.createElement('style');
     st.id='dailyLightPatchStyle';
-    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}';
+    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.dailyLightExtra .dailyFixAnswer{margin-top:8px}';
     document.head.appendChild(st);
   }
 
-  function sec(title,body){return `<div class="dailyFixSec dailyLightTest"><h3><span class="dailyFixNo">✓</span>${esc(title)}</h3>${body}</div>`}
+  function sec(title,body,extraClass=''){return `<div class="dailyFixSec ${extraClass}"><h3><span class="dailyFixNo">✓</span>${esc(title)}</h3>${body}</div>`}
   function choice(it,i){return `<div class="dailyFixItem"><b>${i+1}. ${esc(it.prompt||'')}</b><div class="dailyFixChoiceWrap">${(it.options||[]).map((o,j)=>`<button class="dailyFixChoice" data-correct="${j===it.answer_index?1:0}" onclick='dailyLightChoice(this,${j===it.answer_index},${JSON.stringify(it.explain||'')})'>${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="dailyFixFeedback"></div></div>`}
 
   const fillHintFallback={
@@ -20,15 +20,16 @@
   function fillHint(it){
     const explicit=String(it.hint_cn||'').trim();
     if(explicit)return explicit;
+    const p=String(it.prompt||'').trim();
+    const pm=p.match(/[（(]([^（）()]+)[）)]\s*$/);if(pm&&pm[1])return pm[1].trim();
     const ex=String(it.explain||'').trim();
-    const m=ex.match(/=\s*([^。；;]+)[。；;]?$/);
-    if(m&&m[1])return m[1].trim();
-    return fillHintFallback[norm(it.prompt||'')]||'';
+    const m=ex.match(/=\s*([^。；;]+)[。；;]?$/);if(m&&m[1])return m[1].trim();
+    return fillHintFallback[norm(p)]||'';
   }
   function fillPrompt(it){
     const p=String(it.prompt||'').trim(),hint=fillHint(it);
     if(/^填空\s*[：:]/.test(p))return p;
-    return `填空： ${p}${hint?` （${hint}）`:''}`;
+    return `填空： ${p}${hint?`（${hint}）`:''}`;
   }
   function fill(it,i){
     return `<div class="dailyFixItem"><b>${i+1}. ${esc(fillPrompt(it))}</b><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px"><input class="dailyLightFill" autocomplete="off" style="flex:1;min-width:180px;border:1px solid #dce3ef;border-radius:10px;padding:9px 11px" placeholder="只补一个词或短词块"><button class="dailyFixToggle" style="margin-top:0" onclick='dailyLightFillCheck(this,${JSON.stringify(it.answer||'')},${JSON.stringify(it.answer_cn||'')})'>检查</button></div><div class="dailyFixFeedback"></div></div>`;
@@ -49,14 +50,8 @@
     if(tail.includes('/'))return tail.split('/').map(x=>x.trim()).filter(Boolean);
     return [];
   }
-  const orderCnFallback={
-    'sebaiknya kita cek arah lagi dulu':'我们最好先再确认一下方向。'
-  };
-  function orderCn(it){
-    const explicit=String(it.answer_cn||'').trim();
-    if(explicit)return explicit;
-    return orderCnFallback[norm(it.answer||'')]||'';
-  }
+  const orderCnFallback={'sebaiknya kita cek arah lagi dulu':'我们最好先再确认一下方向。'};
+  function orderCn(it){const explicit=String(it.answer_cn||'').trim();if(explicit)return explicit;return orderCnFallback[norm(it.answer||'')]||'';}
   function tokenButtons(tokens){return shuffleTokens(tokens).map(t=>`<button type="button" class="dailyFixChoice dailyLightToken" data-token="${esc(t)}" onclick="dailyLightPick(this)">${esc(t)}</button>`).join('')}
   function orderPrompt(it){
     const p=String(it.prompt||'').trim();
@@ -69,7 +64,35 @@
     return `<div class="dailyFixItem dailyLightOrder" data-order="[]"><b>${i+1}. ${esc(orderPrompt(it))}</b><div class="dailyLightTokenWrap" data-tokens='${esc(JSON.stringify(tokens))}' style="display:flex;gap:7px;flex-wrap:wrap;margin-top:10px">${tokenButtons(tokens)}</div><div class="dailyLightOrderOut" style="min-height:42px;margin-top:10px;padding:9px 11px;background:#f8faff;border-radius:9px"></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="dailyFixToggle" onclick='dailyLightOrderCheck(this,${JSON.stringify(it.answer||'')},${JSON.stringify(cn)})'>检查顺序</button><button type="button" class="dailyFixToggle" onclick="dailyLightOrderReset(this)">重排</button></div><div class="dailyFixFeedback"></div></div>`;
   }
 
-  function render(t,x){let h='<div class="dailyFixMeta" style="margin-bottom:10px">轻量检测今天刚学的内容，不追求全对，也不用写长句。</div>';(t.items||[]).forEach((it,i)=>{if(it.type==='choice')h+=choice(it,i);else if(it.type==='fill')h+=fill(it,i);else if(it.type==='order')h+=order(it,i)});if(t.self_check?.options?.length){const key=(x.date||'')+'_'+(x.session||'pm');h+=`<div class="dailyFixItem"><b>${esc(t.self_check.prompt||'今天这些内容你感觉怎么样？')}</b><div class="dailyFixChoiceWrap" style="display:flex;flex-wrap:wrap">${t.self_check.options.map(o=>`<button class="dailyFixChoice" onclick='dailyLightSelf(this,${JSON.stringify(key)},${JSON.stringify(o)})'>${esc(o)}</button>`).join('')}</div></div>`}return sec(t.title||'当日小测 · 5–8分钟',h)}
+  function selfCheckHtml(sc,x){
+    const options=Array.isArray(sc)?sc:(Array.isArray(sc?.options)?sc.options:[]);
+    if(!options.length)return '';
+    const prompt=Array.isArray(sc)?'自我检查：今天这些内容你能主动用出来吗？':(sc.prompt||'今天这些内容你感觉怎么样？');
+    const key=(x.date||'')+'_'+(x.session||'pm');
+    return `<div class="dailyFixItem"><b>${esc(prompt)}</b><div class="dailyFixChoiceWrap" style="display:flex;flex-wrap:wrap">${options.map(o=>`<button class="dailyFixChoice" onclick='dailyLightSelf(this,${JSON.stringify(key)},${JSON.stringify(o)})'>${esc(o)}</button>`).join('')}</div></div>`;
+  }
+  function renderTest(t,x){
+    let h='<div class="dailyFixMeta" style="margin-bottom:10px">轻量检测今天刚学的内容，不追求全对，也不用写长句。</div>';
+    (t.items||[]).forEach((it,i)=>{if(it.type==='choice')h+=choice(it,i);else if(it.type==='fill')h+=fill(it,i);else if(it.type==='order')h+=order(it,i)});
+    h+=selfCheckHtml(t.self_check,x);
+    return sec(t.title||'当日小测 · 5–8分钟',h,'dailyLightTest');
+  }
+
+  function taskHtml(it,i){
+    const task=it.task||it.prompt||'';
+    const ans=it.reference_answer||it.answer||'';
+    const cn=it.reference_cn||it.answer_cn||'';
+    return `<div class="dailyFixItem"><b>${i+1}. ${esc(task)}</b>${ans?`<br><button class="dailyFixToggle" onclick="this.parentElement.classList.toggle('dailyFixOpen')">参考答案</button><div class="dailyFixAnswer"><div class="dailyFixId">${esc(ans)}</div>${cn?`<div class="dailyFixCnLine">${esc(cn)}</div>`:''}</div>`:''}</div>`;
+  }
+  function rewriteHtml(x){
+    if(!Array.isArray(x.rewrite)||!x.rewrite.length)return '';
+    return sec('主动改写 · 应用练习',x.rewrite.map(taskHtml).join(''),'dailyLightExtra dailyRewritePatch');
+  }
+  function finalReviewHtml(x){
+    if(!x.review||Array.isArray(x.review))return '';
+    const steps=Array.isArray(x.review.steps)?x.review.steps:[];if(!steps.length)return '';
+    return sec(x.review.title||'最后 5 分钟复盘',steps.map(s=>`<div class="dailyFixItem">${esc(typeof s==='string'?s:(s.text||''))}</div>`).join(''),'dailyLightExtra dailyReviewPatch');
+  }
 
   async function markSameDayAm(x,date,s){
     if(s!=='pm'||!Array.isArray(x.vocab))return;
@@ -99,10 +122,17 @@
     try{
       const x=await fetchJSON(`data/daily/${date}-${s}.json`);
       await markSameDayAm(x,date,s);
-      if(!x.daily_test)return;
-      const body=document.getElementById('dailyBody');if(!body||body.querySelector('.dailyLightTest'))return;
-      const done=body.lastElementChild,wrap=document.createElement('div');wrap.innerHTML=render(x.daily_test,x);const node=wrap.firstElementChild;
-      if(done)body.insertBefore(node,done);else body.appendChild(node);
+      const body=document.getElementById('dailyBody');if(!body)return;
+      const done=body.lastElementChild;
+      if(Array.isArray(x.rewrite)&&x.rewrite.length&&!body.querySelector('.dailyRewritePatch')){
+        const wrap=document.createElement('div');wrap.innerHTML=rewriteHtml(x);const node=wrap.firstElementChild;if(node){if(done)body.insertBefore(node,done);else body.appendChild(node)}
+      }
+      if(x.daily_test&&!body.querySelector('.dailyLightTest')){
+        const wrap=document.createElement('div');wrap.innerHTML=renderTest(x.daily_test,x);const node=wrap.firstElementChild;if(node){if(done)body.insertBefore(node,done);else body.appendChild(node)}
+      }
+      if(x.review&&!Array.isArray(x.review)&&!body.querySelector('.dailyReviewPatch')){
+        const wrap=document.createElement('div');wrap.innerHTML=finalReviewHtml(x);const node=wrap.firstElementChild;if(node){if(done)body.insertBefore(node,done);else body.appendChild(node)}
+      }
     }catch(e){}
   };
 })();
