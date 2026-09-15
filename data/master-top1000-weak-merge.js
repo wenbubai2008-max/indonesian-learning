@@ -1,4 +1,7 @@
 (function(){
+  if(window.__masterTop1000WeakMergeLoaded)return;
+  window.__masterTop1000WeakMergeLoaded=true;
+
   // 主学习词库只保留人工筛选后的静态核心词库。
   // Top1000 中“模糊 / 不会”的词继续留在 weakness-sync / indo_mem 里复习，
   // 不再永久合并进主学习词库，也不再计入 master 总数。
@@ -58,7 +61,7 @@
   window.lockMasterToCore=apply;
   window.getEffectiveMasterVocabulary=function(){return uniqueCore(window.MASTER_VOCAB_OBJECTS||[])};
 
-  ['vocab-library-ready','master-vocab-ready','master-library-selected','master-top1000-weak-merged','weak-pool-changed'].forEach(ev=>window.addEventListener(ev,schedule));
+  ['vocab-library-ready','master-vocab-ready','master-library-selected','master-top1000-weak-merged'].forEach(ev=>window.addEventListener(ev,schedule));
   if(document.readyState==='complete')schedule();else window.addEventListener('load',schedule,{once:true});
   setTimeout(schedule,250);
   setTimeout(schedule,1200);
