@@ -35,9 +35,29 @@
   function unknownMap(){try{return JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){return {}}}
   function isUnknown(word){const p=weakPool();if(p)return p.isActive(word);return !!unknownMap()[norm(word)];}
 
+  const translateCache=new Map();
+  const translatePending=new Map();
   async function translateZh(text){
     const w=String(text||'').trim();if(!w)return '';
-    try{const url='https://translate.googleapis.com/translate_a/single?client=gtx&sl=id&tl=zh-CN&dt=t&q='+encodeURIComponent(w);const r=await fetch(url,{method:'GET',mode:'cors',cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);const data=await r.json();return Array.isArray(data?.[0])?data[0].map(x=>Array.isArray(x)?x[0]:'').join('').trim():'';}catch(e){return '';}
+    if(translateCache.has(w))return translateCache.get(w);
+    if(translatePending.has(w))return translatePending.get(w);
+    const task=(async function(){
+      const controller=typeof AbortController!=='undefined'?new AbortController():null;
+      const timer=controller?setTimeout(function(){try{controller.abort();}catch(e){}},5000):null;
+      try{
+        const url='https://translate.googleapis.com/translate_a/single?client=gtx&sl=id&tl=zh-CN&dt=t&q='+encodeURIComponent(w);
+        const opt={method:'GET',mode:'cors',cache:'no-store'};
+        if(controller)opt.signal=controller.signal;
+        const r=await fetch(url,opt);if(!r.ok)throw new Error('HTTP '+r.status);
+        const data=await r.json();
+        const zh=Array.isArray(data?.[0])?data[0].map(x=>Array.isArray(x)?x[0]:'').join('').trim():'';
+        if(zh)translateCache.set(w,zh);
+        return zh;
+      }catch(e){return '';}
+      finally{if(timer)clearTimeout(timer);translatePending.delete(w);}
+    })();
+    translatePending.set(w,task);
+    return task;
   }
 
   const WEAK_EXAMPLE_CN_OVERRIDES={
@@ -55,20 +75,27 @@
     el.dataset.weakCnReady='1';
   }
   async function ensureWeakExampleCn(card){
-    if(!card||card.dataset.weakCnLoading==='1')return;
-    const exEl=card.querySelector('.v2-ex');if(!exEl)return;
-    const example=sentenceKey(exEl.textContent||'');if(!example)return;
+    if(!card||card.dataset.weakCnDone==='1'||card.dataset.weakCnLoading==='1')return;
+    const exEl=card.querySelector('.v2-ex');if(!exEl){card.dataset.weakCnDone='1';return;}
+    const example=sentenceKey(exEl.textContent||'');if(!example){card.dataset.weakCnDone='1';return;}
     let cnEl=card.querySelector('.v2-excn');
     if(cnEl){
       const raw=String(cnEl.textContent||'').trim();
       if(cnEl.dataset.weakCnReady==='1'){
         if(/^中文[：:]/.test(raw))cnEl.textContent=raw.replace(/^中文[：:]\s*/,'');
+        card.dataset.weakCnDone='1';
         return;
       }
-      if(raw&&!/翻译中|加载失败/.test(raw)){setWeakExampleCn(cnEl,raw);return;}
+      if(raw&&!/翻译中|加载失败/.test(raw)){
+        setWeakExampleCn(cnEl,raw);
+        card.dataset.weakCnDone='1';
+        return;
+      }
     }else{
       cnEl=document.createElement('p');cnEl.className='v2-excn';exEl.insertAdjacentElement('afterend',cnEl);
     }
+    if(card.dataset.weakCnAttempted==='1')return;
+    card.dataset.weakCnAttempted='1';
     card.dataset.weakCnLoading='1';
     cnEl.textContent='翻译中…';
     const word=String(card.getAttribute('data-weak-word')||card.querySelector('b')?.textContent||'').trim();
@@ -80,20 +107,29 @@
       if(card.isConnected)setWeakExampleCn(cnEl,zh);
       const p=weakPool();
       if(p&&word&&typeof p.enrich==='function')p.enrich(word,{example:example,example_cn:zh});
+      card.dataset.weakCnDone='1';
     }else if(card.isConnected){
       cnEl.textContent='暂时加载失败';
     }
     delete card.dataset.weakCnLoading;
   }
-  function decorateWeakExamples(){
+  function decorateWeakExamples(root){
     const box=document.getElementById('weaknessBody');if(!box)return;
-    box.querySelectorAll('.v2-card,.weak-card').forEach(function(card){ensureWeakExampleCn(card);});
+    const scope=root&&root.nodeType===1?root:box;
+    if(scope.matches&&scope.matches('.v2-card,.weak-card'))ensureWeakExampleCn(scope);
+    if(scope.querySelectorAll)scope.querySelectorAll('.v2-card,.weak-card').forEach(function(card){ensureWeakExampleCn(card);});
   }
   function installWeakExampleObserver(){
     const box=document.getElementById('weaknessBody');if(!box||box.dataset.weakCnObserver==='1')return;
     box.dataset.weakCnObserver='1';
-    decorateWeakExamples();
-    new MutationObserver(function(){decorateWeakExamples();}).observe(box,{childList:true,subtree:true});
+    decorateWeakExamples(box);
+    new MutationObserver(function(mutations){
+      mutations.forEach(function(m){
+        Array.from(m.addedNodes||[]).forEach(function(node){
+          if(node&&node.nodeType===1)decorateWeakExamples(node);
+        });
+      });
+    }).observe(box,{childList:true,subtree:true});
   }
 
   function backfillExisting(hit){
