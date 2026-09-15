@@ -24,6 +24,6 @@
   if(document.readyState==='complete')setTimeout(boot,80);else window.addEventListener('load',function(){setTimeout(boot,80)},{once:true});
 })();
 (function(){
-  if(document.querySelector('script[data-master-top1000-weak-merge]'))return;
-  var s=document.createElement('script');s.src='data/master-top1000-weak-merge.js?v=20260913-stable12';s.dataset.masterTop1000WeakMerge='1';document.head.appendChild(s);
+  if(window.__masterTop1000WeakMergeLoaded||window.lockMasterToCore||document.querySelector('script[data-master-core-guard],script[data-master-top1000-weak-merge]'))return;
+  var s=document.createElement('script');s.src='data/master-top1000-weak-merge.js?v=20260915-core-only2';s.dataset.masterTop1000WeakMerge='1';document.head.appendChild(s);
 })();
