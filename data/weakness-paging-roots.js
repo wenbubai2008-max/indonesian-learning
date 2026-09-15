@@ -33,12 +33,7 @@
   function practiceState(){try{return JSON.parse(localStorage.getItem('indo_quick_practice_state')||'{}')||{};}catch(e){return {};}}
 
   function mapSignature(){
-    return [
-      (window.DAILY_VOCAB_DB||[]).length,
-      (window.EMBEDDED_DB||[]).length,
-      (window.UNFAMILIAR_VOCAB_DB||[]).length,
-      (window.MASTER_VOCAB_OBJECTS||[]).length
-    ].join('|');
+    return [(window.DAILY_VOCAB_DB||[]).length,(window.EMBEDDED_DB||[]).length,(window.UNFAMILIAR_VOCAB_DB||[]).length,(window.MASTER_VOCAB_OBJECTS||[]).length].join('|');
   }
 
   function sourceMap(){
@@ -101,20 +96,13 @@
     const root=inferRoot(word,base,x,map);
     const rootBase=root?(map[norm(root)]||{}):{};
     const rootCn=String(x.root_cn||base.root_cn||rootBase.cn||ROOT_CN_FALLBACK[norm(root)]||'').trim();
-    return {
-      word:word,
-      cn:x.cn||base.cn||'待补释义',
-      root:root&&norm(root)!==norm(word)?root:'',
-      root_cn:root&&norm(root)!==norm(word)?rootCn:'',
-      example:x.example||contexts.slice(-1)[0]||base.example||'',
-      example_cn:x.example_cn||base.example_cn||'',
-      reason:reasonLabel(x)
-    };
+    return {word:word,cn:x.cn||base.cn||'待补释义',root:root&&norm(root)!==norm(word)?root:'',root_cn:root&&norm(root)!==norm(word)?rootCn:'',example:x.example||contexts.slice(-1)[0]||base.example||'',example_cn:x.example_cn||base.example_cn||'',reason:reasonLabel(x)};
   }
 
-  function eligibleRecords(){
-    const wp=pool();if(!wp)return [];
-    return wp.listActive().filter(allowedSource);
+  function eligibleRecords(){const wp=pool();if(!wp)return [];return wp.listActive().filter(allowedSource);}
+
+  function activeMapSnapshot(){
+    const out={};eligibleRecords().forEach(function(x){const k=norm(x.word);if(k)out[k]=x;});return out;
   }
 
   function makeSession(){
@@ -123,28 +111,16 @@
     currentPage=0;
   }
 
-  function activeRecord(word){
-    const wp=pool();if(!wp)return null;
-    const x=wp.get(word);return x&&allowedSource(x)?x:null;
-  }
-
-  function remainingTotal(){
-    let n=0;sessionWords.forEach(function(w){if(activeRecord(w))n++;});return n;
-  }
-
+  function remainingTotal(active){let n=0;sessionWords.forEach(function(w){if(active[w])n++;});return n;}
   function pageWords(page){return sessionWords.slice(page*PAGE_SIZE,page*PAGE_SIZE+PAGE_SIZE);}
-  function pageItems(page){return pageWords(page).map(activeRecord).filter(Boolean).map(itemFromRecord).filter(Boolean);}
+  function pageItems(page,active){return pageWords(page).map(function(w){return active[w]||null;}).filter(Boolean).map(itemFromRecord).filter(Boolean);}
 
-  function rootHtml(x){
-    if(!x.root)return '';
-    return '<div class="weakRootLine"><span>词根：</span><b>'+esc(x.root)+'</b>'+(x.root_cn?'<em> · '+esc(x.root_cn)+'</em>':'')+'</div>';
-  }
+  function rootHtml(x){if(!x.root)return '';return '<div class="weakRootLine"><span>词根：</span><b>'+esc(x.root)+'</b>'+(x.root_cn?'<em> · '+esc(x.root_cn)+'</em>':'')+'</div>';}
 
   function cardHtml(x){
     return '<div class="v2-card weakCardHasDone" data-weak-word="'+esc(x.word)+'">'
       +'<div class="weakCardHead"><b>'+esc(x.word)+'</b><span>'+esc(x.reason)+'</span></div>'
-      +'<strong>'+esc(x.cn)+'</strong>'
-      +rootHtml(x)
+      +'<strong>'+esc(x.cn)+'</strong>'+rootHtml(x)
       +(x.example?'<p class="v2-ex">'+esc(x.example)+'</p>':'')
       +(x.example_cn?'<p class="v2-excn">'+esc(x.example_cn)+'</p>':'')
       +'<button class="sound" type="button" data-tts-text="'+esc(x.word)+'">🔊</button>'
@@ -154,11 +130,7 @@
 
   function navHtml(totalPages){
     if(totalPages<=1)return '';
-    return '<div class="weakPager">'
-      +'<button class="secondary" type="button" '+(currentPage===0?'disabled':'')+' data-page-move="-1">← 上一页</button>'
-      +'<span>第 '+(currentPage+1)+' / '+totalPages+' 页</span>'
-      +'<button class="secondary" type="button" '+(currentPage>=totalPages-1?'disabled':'')+' data-page-move="1">下一页 →</button>'
-      +'</div>';
+    return '<div class="weakPager"><button class="secondary" type="button" '+(currentPage===0?'disabled':'')+' data-page-move="-1">← 上一页</button><span>第 '+(currentPage+1)+' / '+totalPages+' 页</span><button class="secondary" type="button" '+(currentPage>=totalPages-1?'disabled':'')+' data-page-move="1">下一页 →</button></div>';
   }
 
   function updateRootLine(card,item){
@@ -170,47 +142,35 @@
 
   function refreshVisibleDetails(){
     const body=document.getElementById('weaknessBody');if(!body)return;
+    const active=activeMapSnapshot();
     body.querySelectorAll('[data-weak-word]').forEach(function(card){
-      const word=card.getAttribute('data-weak-word')||'';
-      const rec=activeRecord(word);
+      const word=norm(card.getAttribute('data-weak-word')||''),rec=active[word];
       if(!rec){card.style.display='none';return;}
-      card.style.display='';
-      const item=itemFromRecord(rec);if(!item)return;
+      card.style.display='';const item=itemFromRecord(rec);if(!item)return;
       const strong=card.querySelector('strong');if(strong&&strong.textContent!==item.cn)strong.textContent=item.cn;
-      const head=card.querySelector('.weakCardHead')||card.firstElementChild;
-      const tag=head&&head.querySelector('span');if(tag&&tag.textContent!==item.reason)tag.textContent=item.reason;
+      const head=card.querySelector('.weakCardHead')||card.firstElementChild,tag=head&&head.querySelector('span');if(tag&&tag.textContent!==item.reason)tag.textContent=item.reason;
       updateRootLine(card,item);
       let ex=card.querySelector('.v2-ex');
-      if(item.example){if(!ex){ex=document.createElement('p');ex.className='v2-ex';const root=card.querySelector('.weakRootLine')||strong;if(root)root.insertAdjacentElement('afterend',ex);}if(ex&&ex.textContent!==item.example)ex.textContent=item.example;}
+      if(item.example){if(!ex){ex=document.createElement('p');ex.className='v2-ex';const anchor=card.querySelector('.weakRootLine')||strong;if(anchor)anchor.insertAdjacentElement('afterend',ex);}if(ex&&ex.textContent!==item.example)ex.textContent=item.example;}
       let excn=card.querySelector('.v2-excn');
       if(item.example_cn){if(!excn){excn=document.createElement('p');excn.className='v2-excn';const anchor=ex||card.querySelector('.weakRootLine')||strong;if(anchor)anchor.insertAdjacentElement('afterend',excn);}if(excn&&excn.textContent!==item.example_cn)excn.textContent=item.example_cn;}
     });
-    const meta=document.getElementById('weaknessMeta');if(meta)meta.textContent=remainingTotal()+' 个';
+    const meta=document.getElementById('weaknessMeta');if(meta)meta.textContent=remainingTotal(active)+' 个';
   }
 
-  function scheduleDecorate(){
-    clearTimeout(decorateTimer);decorateTimer=setTimeout(refreshVisibleDetails,0);
-  }
+  function scheduleDecorate(){clearTimeout(decorateTimer);decorateTimer=setTimeout(refreshVisibleDetails,0);}
 
   function render(){
     const body=document.getElementById('weaknessBody'),page=document.getElementById('weakness');
     if(!body||!page||!page.classList.contains('active'))return;
     if(!sessionWords.length)makeSession();
-    const total=remainingTotal(),totalPages=Math.max(1,Math.ceil(sessionWords.length/PAGE_SIZE));
+    const active=activeMapSnapshot(),total=remainingTotal(active),totalPages=Math.max(1,Math.ceil(sessionWords.length/PAGE_SIZE));
     if(currentPage>=totalPages)currentPage=totalPages-1;if(currentPage<0)currentPage=0;
-    const visible=pageItems(currentPage);
-    const meta=document.getElementById('weaknessMeta');if(meta)meta.textContent=total+' 个';
-
-    if(!sessionWords.length||!total){
-      body.innerHTML='<div class="v2-note">这里现在只显示两类词：快速练习答错的词，以及阅读中你主动加入的陌生词。</div><div class="empty"><b>目前没有这两类待强化词 ✓</b></div>';
-      return;
-    }
-
+    const visible=pageItems(currentPage,active),meta=document.getElementById('weaknessMeta');if(meta)meta.textContent=total+' 个';
+    if(!sessionWords.length||!total){body.innerHTML='<div class="v2-note">这里现在只显示两类词：快速练习答错的词，以及阅读中你主动加入的陌生词。</div><div class="empty"><b>目前没有这两类待强化词 ✓</b></div>';return;}
     body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词不在这里展示。每页最多 30 个，右上角显示所有页剩余总数。派生词显示词根和词根中文；点“会了”后本页不会从下一页自动补词。</div>'
       +'<div class="weakRestoreWrap"><span>点“会了”后，总数立即减 1；以后再次答错仍可重新进入。</span><button type="button" class="weakRestoreBtn">恢复已移出</button></div>'
-      +navHtml(totalPages)
-      +'<div class="v2-weak">'+visible.map(cardHtml).join('')+'</div>'
-      +navHtml(totalPages);
+      +navHtml(totalPages)+'<div class="v2-weak">'+visible.map(cardHtml).join('')+'</div>'+navHtml(totalPages);
     refreshVisibleDetails();
   }
 
@@ -243,37 +203,22 @@
 
   function takeOver(){
     window.openWeaknessV2=openWeak;
-    window.weaknessPageMove=function(delta){
-      const totalPages=Math.max(1,Math.ceil(sessionWords.length/PAGE_SIZE));
-      currentPage=Math.max(0,Math.min(totalPages-1,currentPage+Number(delta||0)));
-      render();window.scrollTo({top:0,behavior:'smooth'});
-    };
-    window.dismissWeaknessWord=dismiss;
-    window.renderWeaknessPagedRoots=render;
+    window.weaknessPageMove=function(delta){const totalPages=Math.max(1,Math.ceil(sessionWords.length/PAGE_SIZE));currentPage=Math.max(0,Math.min(totalPages-1,currentPage+Number(delta||0)));render();window.scrollTo({top:0,behavior:'smooth'});};
+    window.dismissWeaknessWord=dismiss;window.renderWeaknessPagedRoots=render;
   }
 
   function install(){
     if(!pool()){setTimeout(install,80);return;}
     installStyle();initialQuickSync();takeOver();
     const body=document.getElementById('weaknessBody');
-    if(body&&!body.__weakRootObserver){
-      body.__weakRootObserver=true;
-      new MutationObserver(function(){scheduleDecorate();}).observe(body,{childList:true,subtree:true});
-    }
+    if(body&&!body.__weakRootObserver){body.__weakRootObserver=true;new MutationObserver(function(){scheduleDecorate();}).observe(body,{childList:true,subtree:true});}
     document.addEventListener('click',function(e){
-      const openBtn=e.target&&e.target.closest?e.target.closest('button[onclick*="openWeaknessV2"]'):null;
-      if(openBtn){e.preventDefault();e.stopImmediatePropagation();openWeak();return;}
-      const done=e.target&&e.target.closest?e.target.closest('#weaknessBody .weakDoneBtn'):null;
-      if(done){e.preventDefault();dismiss(done.getAttribute('data-done-word')||'');return;}
-      const restore=e.target&&e.target.closest?e.target.closest('#weaknessBody .weakRestoreBtn'):null;
-      if(restore){e.preventDefault();restoreAll();return;}
-      const move=e.target&&e.target.closest?e.target.closest('#weaknessBody [data-page-move]'):null;
-      if(move){e.preventDefault();window.weaknessPageMove(Number(move.getAttribute('data-page-move')||0));}
+      const openBtn=e.target&&e.target.closest?e.target.closest('button[onclick*="openWeaknessV2"]'):null;if(openBtn){e.preventDefault();e.stopImmediatePropagation();openWeak();return;}
+      const done=e.target&&e.target.closest?e.target.closest('#weaknessBody .weakDoneBtn'):null;if(done){e.preventDefault();dismiss(done.getAttribute('data-done-word')||'');return;}
+      const restore=e.target&&e.target.closest?e.target.closest('#weaknessBody .weakRestoreBtn'):null;if(restore){e.preventDefault();restoreAll();return;}
+      const move=e.target&&e.target.closest?e.target.closest('#weaknessBody [data-page-move]'):null;if(move){e.preventDefault();window.weaknessPageMove(Number(move.getAttribute('data-page-move')||0));}
     },true);
-    window.addEventListener('weak-pool-changed',function(){
-      if(!document.getElementById('weakness')?.classList.contains('active'))return;
-      scheduleDecorate();
-    });
+    window.addEventListener('weak-pool-changed',function(){if(document.getElementById('weakness')?.classList.contains('active'))scheduleDecorate();});
     window.addEventListener('master-vocab-ready',function(){invalidateSourceMap();scheduleDecorate();});
     window.addEventListener('vocab-library-ready',function(){invalidateSourceMap();scheduleDecorate();});
     if(document.getElementById('weakness')?.classList.contains('active')){makeSession();scheduleRender(0);}
