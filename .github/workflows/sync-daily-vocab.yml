@@ -38,18 +38,24 @@ jobs:
           const key=s=>String(s||'').trim().toLowerCase();
           const map=new Map(db.map(x=>[key(x.word),x]));
           const addUnique=(arr,v)=>{arr=Array.isArray(arr)?arr:[];if(!arr.includes(v))arr.push(v);return arr};
+
           let files=[];
           try{files=cp.execSync("git diff-tree --no-commit-id --name-only -r HEAD | grep -E '^data/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}-(am|pm)\\.json$' || true",{encoding:'utf8'}).trim().split(/\n+/).filter(Boolean)}catch(e){}
-          if(!files.length){files=fs.readdirSync('data/daily').filter(f=>/-((am)|(pm))\.json$/.test(f)).sort().slice(-2).map(f=>'data/daily/'+f)}
+          if(!files.length)files=fs.readdirSync('data/daily').filter(f=>/-((am)|(pm))\.json$/.test(f)).sort().slice(-2).map(f=>'data/daily/'+f);
+
           for(const f of files){
             if(!fs.existsSync(f))continue;
             const lesson=JSON.parse(fs.readFileSync(f,'utf8'));
             const session=lesson.time||(lesson.session==='pm'?'19:00':'08:00');
             const date=lesson.date;
+            const lessonNewSet=new Set((lesson.new_words||[]).map(key).filter(Boolean));
+
             for(const v of (lesson.vocab||[])){
               const k=key(v.word);if(!k)continue;
               const stamp=`${date} ${session}`;
               const oralFlag=v.is_oral_new===true||(Array.isArray(v.categories)&&v.categories.includes('口语'));
+              const mayAppend=session==='08:00'||v.is_new===true||v.source_group==='new'||lessonNewSet.has(k);
+
               if(map.has(k)){
                 const x=map.get(k);
                 const already=(x.sessions||[]).includes(session)&&(x.dates||[]).includes(date);
@@ -67,12 +73,14 @@ jobs:
                 if(!x.first_seen||stamp<x.first_seen)x.first_seen=stamp;
                 if(!x.last_seen||stamp>x.last_seen)x.last_seen=stamp;
               }else{
+                if(!mayAppend)throw new Error(`Refusing to append non-new ${session} vocab missing from daily-vocab: ${v.word}`);
                 const categories=['每日学习',session];if(oralFlag)categories.push('口语');
                 const x={word:String(v.word).trim(),cn:v.cn||'',en:v.en||'',root:v.root||'',root_cn:v.root_cn||'',example:v.example||'',example_cn:v.example_cn||'',categories,times_seen:1,first_seen:stamp,last_seen:stamp,sessions:[session],dates:[date]};
                 db.push(x);map.set(k,x);
               }
             }
           }
+
           fs.writeFileSync(dbPath,'window.DAILY_VOCAB_DB = '+JSON.stringify(db,null,2)+';\n');
           NODE
           git add data/daily-vocab-data.js
