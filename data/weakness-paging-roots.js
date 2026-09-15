@@ -112,6 +112,7 @@
   }
 
   function remainingTotal(active){let n=0;sessionWords.forEach(function(w){if(active[w])n++;});return n;}
+  function activePageCount(active){let last=-1;sessionWords.forEach(function(w,i){if(active[w])last=i;});return Math.max(1,last<0?1:Math.floor(last/PAGE_SIZE)+1);}
   function pageWords(page){return sessionWords.slice(page*PAGE_SIZE,page*PAGE_SIZE+PAGE_SIZE);}
   function pageItems(page,active){return pageWords(page).map(function(w){return active[w]||null;}).filter(Boolean).map(itemFromRecord).filter(Boolean);}
 
@@ -137,7 +138,8 @@
     let line=card.querySelector('.weakRootLine');
     if(!item.root){if(line)line.remove();return;}
     if(!line){line=document.createElement('div');line.className='weakRootLine';const strong=card.querySelector('strong');if(strong)strong.insertAdjacentElement('afterend',line);else card.prepend(line);}
-    line.innerHTML='<span>词根：</span><b>'+esc(item.root)+'</b>'+(item.root_cn?'<em> · '+esc(item.root_cn)+'</em>':'');
+    const html='<span>词根：</span><b>'+esc(item.root)+'</b>'+(item.root_cn?'<em> · '+esc(item.root_cn)+'</em>':'');
+    if(line.innerHTML!==html)line.innerHTML=html;
   }
 
   function refreshVisibleDetails(){
@@ -164,13 +166,13 @@
     const body=document.getElementById('weaknessBody'),page=document.getElementById('weakness');
     if(!body||!page||!page.classList.contains('active'))return;
     if(!sessionWords.length)makeSession();
-    const active=activeMapSnapshot(),total=remainingTotal(active),totalPages=Math.max(1,Math.ceil(sessionWords.length/PAGE_SIZE));
+    const active=activeMapSnapshot(),total=remainingTotal(active),totalPages=activePageCount(active);
     if(currentPage>=totalPages)currentPage=totalPages-1;if(currentPage<0)currentPage=0;
     const visible=pageItems(currentPage,active),meta=document.getElementById('weaknessMeta');if(meta)meta.textContent=total+' 个';
     if(!sessionWords.length||!total){body.innerHTML='<div class="v2-note">这里现在只显示两类词：快速练习答错的词，以及阅读中你主动加入的陌生词。</div><div class="empty"><b>目前没有这两类待强化词 ✓</b></div>';return;}
     body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词不在这里展示。每页最多 30 个，右上角显示所有页剩余总数。派生词显示词根和词根中文；点“会了”后本页不会从下一页自动补词。</div>'
       +'<div class="weakRestoreWrap"><span>点“会了”后，总数立即减 1；以后再次答错仍可重新进入。</span><button type="button" class="weakRestoreBtn">恢复已移出</button></div>'
-      +navHtml(totalPages)+'<div class="v2-weak">'+visible.map(cardHtml).join('')+'</div>'+navHtml(totalPages);
+      +navHtml(totalPages)+'<div class="v2-weak">'+(visible.length?visible.map(cardHtml).join(''):'<div class="empty">本页已完成，请点击“下一页”继续。</div>')+'</div>'+navHtml(totalPages);
     refreshVisibleDetails();
   }
 
@@ -184,7 +186,7 @@
     render();
   }
 
-  function restoreAll(){const wp=pool();if(!wp)return;wp.restoreDismissed();makeSession();render();}
+  function restoreAll(){const wp=pool();if(!wp)return;wp.restoreDismissed(['quick_wrong','manual_unknown']);makeSession();render();}
 
   function installStyle(){
     if(document.getElementById('weakPagingRootsStyle'))return;
@@ -203,15 +205,13 @@
 
   function takeOver(){
     window.openWeaknessV2=openWeak;
-    window.weaknessPageMove=function(delta){const totalPages=Math.max(1,Math.ceil(sessionWords.length/PAGE_SIZE));currentPage=Math.max(0,Math.min(totalPages-1,currentPage+Number(delta||0)));render();window.scrollTo({top:0,behavior:'smooth'});};
+    window.weaknessPageMove=function(delta){const active=activeMapSnapshot(),totalPages=activePageCount(active);currentPage=Math.max(0,Math.min(totalPages-1,currentPage+Number(delta||0)));render();window.scrollTo({top:0,behavior:'smooth'});};
     window.dismissWeaknessWord=dismiss;window.renderWeaknessPagedRoots=render;
   }
 
   function install(){
     if(!pool()){setTimeout(install,80);return;}
     installStyle();initialQuickSync();takeOver();
-    const body=document.getElementById('weaknessBody');
-    if(body&&!body.__weakRootObserver){body.__weakRootObserver=true;new MutationObserver(function(){scheduleDecorate();}).observe(body,{childList:true,subtree:true});}
     document.addEventListener('click',function(e){
       const openBtn=e.target&&e.target.closest?e.target.closest('button[onclick*="openWeaknessV2"]'):null;if(openBtn){e.preventDefault();e.stopImmediatePropagation();openWeak();return;}
       const done=e.target&&e.target.closest?e.target.closest('#weaknessBody .weakDoneBtn'):null;if(done){e.preventDefault();dismiss(done.getAttribute('data-done-word')||'');return;}

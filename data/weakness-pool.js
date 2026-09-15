@@ -174,8 +174,18 @@
     return '待强化';
   }
   function activeMap(){const out={};list('active').forEach(function(x){out[norm(x.word)]=x;});return out;}
-  function restoreDismissed(){
-    const d=parse(LEGACY_DISMISSED),keys=Object.keys(d);keys.forEach(function(k){reactivate((d[k]||{}).word||k,'manual_restore');});localStorage.removeItem(LEGACY_DISMISSED);return keys.length;
+  function restoreDismissed(onlyReasons){
+    const d=parse(LEGACY_DISMISSED),pool=migrate(),wanted=Array.isArray(onlyReasons)?onlyReasons.filter(Boolean):[];
+    let restored=0,changed=false;
+    Object.keys(d).forEach(function(k0){
+      const item=d[k0]||{},k=norm(item.word||k0),existing=pool[k];if(!k)return;
+      if(wanted.length){const h=existing&&existing.reason_history||[];if(!wanted.some(function(r){return h.includes(r);}))return;}
+      const pair=ensureRecord(pool,item.word||k,existing||{}),x=pair[1];if(!x)return;
+      x.status='active';x.last_seen=nowISO();x.times_seen=(x.times_seen||0)+1;x.mastered_reason='';setReason(x,'manual_restore');
+      delete d[k0];restored++;changed=true;
+    });
+    if(Object.keys(d).length)localStorage.setItem(LEGACY_DISMISSED,JSON.stringify(d));else localStorage.removeItem(LEGACY_DISMISSED);
+    if(changed)save(pool);return restored;
   }
   function exportActive(){return list('active').map(function(x){return Object.assign({},x);});}
 

@@ -35,6 +35,6 @@
   }
 
   // 保留单独、无冲突的释义修正和首页模块稳定脚本。
-  loadOnce('data/weakness-meaning-fix.js?v=20260915-2','data-weakness-meaning-fix');
+  loadOnce('data/weakness-meaning-fix.js?v=20260915-3','data-weakness-meaning-fix');
   loadOnce('data/home-modules-stability.js?v=20260915-2','data-home-modules-stability');
 })();
