@@ -115,6 +115,7 @@
 
   async function drainWeakQueue(){
     if(weakWorkerBusy||!navigator.onLine)return;
+    if(document.getElementById('weakness')?.classList.contains('active')){scheduleWeakWorker(2200);return;}
     const q=weakQueue(),now=Date.now(),keys=Object.keys(q);
     const due=keys.filter(k=>Number((q[k]||{}).next_at||0)<=now).sort((a,b)=>Number((q[a]||{}).created_at||0)-Number((q[b]||{}).created_at||0));
     if(!due.length){

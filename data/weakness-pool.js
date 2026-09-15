@@ -3,6 +3,8 @@
   const LEGACY_UNKNOWN='indo_unknown_words';
   const LEGACY_DISMISSED='indo_weakness_dismissed';
   const LEGACY_MEM='indo_mem';
+  let legacyMigrated=false;
+  let legacyMigrating=false;
 
   function norm(s){return String(s||'').trim().toLowerCase();}
   function parse(key){try{return JSON.parse(localStorage.getItem(key)||'{}')||{};}catch(e){return {};}}
@@ -60,6 +62,8 @@
   }
 
   function migrate(){
+    if(legacyMigrated||legacyMigrating)return load();
+    legacyMigrating=true;
     const pool=load();let changed=false;
     const unknown=parse(LEGACY_UNKNOWN);
     Object.keys(unknown).forEach(function(k0){
@@ -93,6 +97,7 @@
       x.status='mastered';x.last_mastered=n;x.last_review=n;x.right_streak=Math.max(3,x.right_streak||0);
       x.mastered_reason='memory_know_backfill';archiveReasons(x);changed=true;
     });
+    legacyMigrated=true;legacyMigrating=false;
     if(changed)save(pool);return pool;
   }
 
