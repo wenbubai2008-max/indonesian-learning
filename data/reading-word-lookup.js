@@ -51,7 +51,7 @@
   function overrideExampleCn(text){return WEAK_EXAMPLE_CN_OVERRIDES[sentenceKey(text)]||'';}
   function setWeakExampleCn(el,cn){
     const zh=String(cn||'').trim();if(!el||!zh)return;
-    el.textContent='中文：'+zh;
+    el.textContent=zh.replace(/^中文[：:]\s*/, '');
     el.dataset.weakCnReady='1';
   }
   async function ensureWeakExampleCn(card){
@@ -61,14 +61,16 @@
     let cnEl=card.querySelector('.v2-excn');
     if(cnEl){
       const raw=String(cnEl.textContent||'').trim();
-      if(cnEl.dataset.weakCnReady==='1')return;
-      if(raw&&/^中文[：:]/.test(raw)&&!/翻译中|加载失败/.test(raw)){cnEl.dataset.weakCnReady='1';return;}
-      if(raw&&!/翻译中|加载失败/.test(raw)){setWeakExampleCn(cnEl,raw.replace(/^中文[：:]\s*/,''));return;}
+      if(cnEl.dataset.weakCnReady==='1'){
+        if(/^中文[：:]/.test(raw))cnEl.textContent=raw.replace(/^中文[：:]\s*/,'');
+        return;
+      }
+      if(raw&&!/翻译中|加载失败/.test(raw)){setWeakExampleCn(cnEl,raw);return;}
     }else{
       cnEl=document.createElement('p');cnEl.className='v2-excn';exEl.insertAdjacentElement('afterend',cnEl);
     }
     card.dataset.weakCnLoading='1';
-    cnEl.textContent='中文：翻译中…';
+    cnEl.textContent='翻译中…';
     const word=String(card.getAttribute('data-weak-word')||card.querySelector('b')?.textContent||'').trim();
     const cacheKey=(word.toLowerCase()+'\n'+example);
     let zh=overrideExampleCn(example)||weakExampleCnCache.get(cacheKey)||'';
@@ -79,7 +81,7 @@
       const p=weakPool();
       if(p&&word&&typeof p.enrich==='function')p.enrich(word,{example:example,example_cn:zh});
     }else if(card.isConnected){
-      cnEl.textContent='中文：暂时加载失败';
+      cnEl.textContent='暂时加载失败';
     }
     delete card.dataset.weakCnLoading;
   }
