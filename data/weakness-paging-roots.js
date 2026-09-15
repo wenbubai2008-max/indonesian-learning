@@ -7,12 +7,19 @@
   let renderTimer=null;
 
   const ROOT_CN_FALLBACK={
-    berat:'重；沉重；严重',tagih:'催；索取应付款项',tangan:'手',gantung:'挂；悬挂',
+    berat:'重；沉重；严重',tagih:'催；索取应付款项',tangan:'手',gantung:'挂；悬挂',bawa:'带；拿；携带',
     batas:'界限；边界',atur:'安排；整理',keluh:'抱怨；诉苦',atas:'上；上面',
-    sebel:'烦；恼火',selesai:'完成；结束',pasti:'确定；肯定',hindar:'躲避；避开',
-    sadar:'意识；清醒',timbang:'称重；权衡',buang:'扔掉；丢弃',gilir:'轮换；轮流',
-    ikut:'跟；参加',sesuai:'合适；符合',lanjur:'继续往前',buru:'追；赶',
-    cadang:'预留；准备备用',kelar:'完成；搞定'
+    selesai:'完成；结束',pasti:'确定；肯定',hindar:'躲避；避开',sadar:'意识；清醒',
+    timbang:'称重；权衡',buang:'扔掉；丢弃',gilir:'轮换；轮流',ikut:'跟；参加',
+    sesuai:'合适；符合',lanjur:'继续往前',cadang:'预留；准备备用'
+  };
+
+  const ROOT_WORD_FALLBACK={
+    menangani:'tangan',tergantung:'gantung',kebawa:'bawa',keberatan:'berat',nagih:'tagih',
+    dibatasi:'batas',batasan:'batas',mengatur:'atur',ngatur:'atur',mengeluh:'keluh',ngeluh:'keluh',
+    mengatasi:'atas',ngatasin:'atas',menyelesaikan:'selesai',memastikan:'pasti',menghindari:'hindar',
+    menyadari:'sadar',mempertimbangkan:'timbang',kebuang:'buang',bergiliran:'gilir',mengikuti:'ikut',
+    menyesuaikan:'sesuai',terlanjur:'lanjur',cadangan:'cadang'
   };
 
   function norm(s){return String(s||'').trim().toLowerCase();}
@@ -53,6 +60,24 @@
     return '待强化';
   }
 
+  function inferRoot(word,base,x,map){
+    const k=norm(word);
+    let root=String((x&&x.root)||(base&&base.root)||ROOT_WORD_FALLBACK[k]||'').trim();
+    if(root)return root;
+    const candidates=[];
+    if(/^ter.+/.test(k))candidates.push(k.replace(/^ter/,''));
+    if(/^ber.+/.test(k))candidates.push(k.replace(/^ber/,''));
+    if(/^ke.+/.test(k))candidates.push(k.replace(/^ke/,''));
+    if(/^di.+/.test(k))candidates.push(k.replace(/^di/,''));
+    for(const c0 of candidates){
+      const forms=[c0,c0.replace(/(kan|i|an)$/,'')];
+      for(const c of forms){
+        if(c&&c!==k&&(map[c]||ROOT_CN_FALLBACK[c]))return c;
+      }
+    }
+    return '';
+  }
+
   function items(){
     const wp=pool();if(!wp)return [];
     const map=sourceMap();
@@ -60,7 +85,7 @@
     return wp.listActive().filter(allowedSource).map(function(x){
       const k=norm(x.word),base=map[k]||{},contexts=x.contexts||[];
       const word=x.word||base.word||k;
-      const root=String(x.root||base.root||'').trim();
+      const root=inferRoot(word,base,x,map);
       const rootBase=root?(map[norm(root)]||{}):{};
       const rootCn=String(x.root_cn||base.root_cn||rootBase.cn||ROOT_CN_FALLBACK[norm(root)]||'').trim();
       return {
@@ -127,7 +152,7 @@
       return;
     }
 
-    body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词不在这里展示。每页最多 30 个，右上角显示所有页剩余总数。</div>'
+    body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词不在这里展示。每页最多 30 个，右上角显示所有页剩余总数。派生词会显示词根和词根中文；基础词本身不重复显示词根。</div>'
       +'<div class="weakRestoreWrap"><span>点“会了”后，总数立即减 1；以后再次答错仍可重新进入。</span><button type="button" class="weakRestoreBtn">恢复已移出</button></div>'
       +navHtml(totalPages)
       +'<div class="v2-weak">'+visible.map(cardHtml).join('')+'</div>'
