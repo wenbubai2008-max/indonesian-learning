@@ -40,6 +40,13 @@
   function archiveReasons(x){x.reason_history=uniq((x.reason_history||[]).concat(x.reasons||[]));x.reasons=[];}
   function clearLegacyDismissed(k){const d=parse(LEGACY_DISMISSED);if(d[k]){delete d[k];localStorage.setItem(LEGACY_DISMISSED,JSON.stringify(d));}}
   function removeLegacyUnknown(k){const u=parse(LEGACY_UNKNOWN);let changed=false;Object.keys(u).forEach(function(a){if(norm(a)===k||norm((u[a]||{}).word)===k){delete u[a];changed=true;}});if(changed)localStorage.setItem(LEGACY_UNKNOWN,JSON.stringify(u));}
+  function queueExampleTranslation(x){
+    if(!x||!x.word||x.example_cn)return;
+    const example=String(x.example||((x.contexts||[]).slice(-1)[0])||'').trim();if(!example)return;
+    if(typeof window.enqueueWeakExampleTranslation==='function'){
+      try{window.enqueueWeakExampleTranslation(x.word,Object.assign({},x,{example:example}));}catch(e){}
+    }
+  }
 
   function mergeCandidate(pool,word,item,reason,meta){
     const k=norm(word||(item||{}).word);if(!k)return false;
@@ -77,9 +84,6 @@
       }
       if(!same(before,x))changed=true;
     });
-    // Backfill old "会了" clicks that were only stored in indo_mem.
-    // Only create a mastered record when the unified pool has no record yet,
-    // so an existing newer active/wrong state is never overwritten by stale legacy memory.
     const memory=parse(LEGACY_MEM);
     Object.keys(memory).forEach(function(k0){
       if(memory[k0]!=='know')return;
@@ -106,6 +110,7 @@
     if(x){
       const u=parse(LEGACY_UNKNOWN),k=norm(x.word);u[k]=Object.assign({},u[k]||{},x,{status:undefined,reasons:undefined,reason_history:undefined,wrong_count:undefined,right_streak:undefined,last_wrong:undefined,last_review:undefined,last_mastered:undefined,mastered_reason:undefined});
       Object.keys(u[k]).forEach(function(a){if(u[k][a]===undefined)delete u[k][a];});localStorage.setItem(LEGACY_UNKNOWN,JSON.stringify(u));window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));
+      queueExampleTranslation(x);
     }
     return x;
   }
@@ -118,8 +123,6 @@
     const n=nowISO();x.status='mastered';x.last_mastered=n;x.last_review=n;x.right_streak=Math.max(3,x.right_streak||0);x.mastered_reason=reason||'user_mastered';archiveReasons(x);removeLegacyUnknown(k);
     const d=parse(LEGACY_DISMISSED);d[k]={word:x.word,at:Date.now()};localStorage.setItem(LEGACY_DISMISSED,JSON.stringify(d));save(pool);window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));return x;
   }
-  // "会了" must always create/update a mastered record, even if this word has never
-  // appeared in the weak pool before. This is essential for master-vocab candidates.
   function markKnown(word,reason){return markMastered(word,reason||'known');}
   function reactivate(word,reason){const x=get(word);return activate(word,x||{word:word},reason||'manual_reactivate');}
 
@@ -127,7 +130,7 @@
     const pool=migrate(),k=norm(word);if(!k)return null;
     let x=pool[k]||null;
     if(!ok){
-      const pair=ensureRecord(pool,word,item||{});x=pair[1];x.status='active';setReason(x,'quick_wrong');x.wrong_count=(x.wrong_count||0)+1;x.right_streak=0;x.last_wrong=nowISO();x.last_review=x.last_wrong;x.last_seen=x.last_wrong;clearLegacyDismissed(k);save(pool);return x;
+      const pair=ensureRecord(pool,word,item||{});x=pair[1];x.status='active';setReason(x,'quick_wrong');x.wrong_count=(x.wrong_count||0)+1;x.right_streak=0;x.last_wrong=nowISO();x.last_review=x.last_wrong;x.last_seen=x.last_wrong;clearLegacyDismissed(k);save(pool);queueExampleTranslation(x);return x;
     }
     if(!x)return null;
     x.last_review=nowISO();x.right_streak=(x.right_streak||0)+1;
