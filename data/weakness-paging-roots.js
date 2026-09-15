@@ -139,7 +139,7 @@
   function installStyle(){
     if(document.getElementById('weakPagingRootsStyle'))return;
     const s=document.createElement('style');s.id='weakPagingRootsStyle';
-    s.textContent='.weakRootLine{margin-top:6px;font-size:13px;line-height:1.45;color:#667085}.weakRootLine span{color:#7a8495!important;background:transparent!important;padding:0!important;font-size:13px!important}.weakRootLine b{font-size:14px!important;color:#354052}.weakRootLine em{font-style:normal;color:#667085}.v2-card .weakRootLine+.v2-ex{margin-top:8px}';
+    s.textContent='.v2-card>.weakRootLine{display:flex!important;justify-content:flex-start!important;align-items:baseline!important;gap:6px!important;text-align:left!important;margin-top:6px;font-size:13px;line-height:1.45;color:#667085}.v2-card>.weakRootLine span{color:#7a8495!important;background:transparent!important;padding:0!important;font-size:13px!important;flex:0 0 auto!important}.v2-card>.weakRootLine b{font-size:14px!important;color:#354052;flex:0 0 auto!important}.v2-card>.weakRootLine em{font-style:normal;color:#667085;flex:0 1 auto!important}.v2-card .weakRootLine+.v2-ex{margin-top:8px}';
     document.head.appendChild(s);
   }
 
