@@ -1598,7 +1598,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-29",
       "2026-09-15"
-    ]
+    ],
+    "root_cn": "搞定；整齐",
+    "example": "Tenang, masalah ini bisa beres malam ini.",
+    "example_cn": "放心，这个问题今晚能搞定。"
   },
   {
     "word": "telanjur",
@@ -5817,8 +5820,8 @@ window.DAILY_VOCAB_DB = [
     "en": "rely on; count on",
     "root": "andal",
     "root_cn": "可靠；可依靠",
-    "example": "Jangan ngandelin satu orang buat semua follow up.",
-    "example_cn": "别把所有跟进都只指望一个人。",
+    "example": "Jangan cuma ngandelin satu orang buat beresin semuanya.",
+    "example_cn": "别只指望一个人把所有事情都处理完。",
     "categories": [
       "每日学习",
       "08:00",
@@ -6053,8 +6056,8 @@ window.DAILY_VOCAB_DB = [
     "en": "be caught off guard; let something slip through",
     "root": "colong",
     "root_cn": "偷拿；趁人不注意拿走",
-    "example": "Kita kecolongan satu detail penting waktu cek dokumennya.",
-    "example_cn": "我们检查文件时漏掉了一个重要细节。",
+    "example": "Kami kecolongan satu detail kecil waktu cek dokumen.",
+    "example_cn": "我们检查文件时疏忽漏掉了一个小细节。",
     "categories": [
       "每日学习",
       "08:00",
@@ -6193,8 +6196,8 @@ window.DAILY_VOCAB_DB = [
     "en": "get carried along; accidentally take; be influenced",
     "root": "bawa",
     "root_cn": "带；携带",
-    "example": "Aku tadi kebawa suasana ngobrol sampai lupa waktu.",
-    "example_cn": "我刚才聊天聊得太投入，被气氛带着走，结果忘了时间。",
+    "example": "Jangan sampai kebawa emosi waktu bahas masalah kerja.",
+    "example_cn": "讨论工作问题时别被情绪带着走。",
     "categories": [
       "每日学习",
       "08:00",
@@ -6528,8 +6531,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-09",
       "2026-09-15"
     ],
-    "example": "Rencananya oke, cuma sekarang kebentur waktu dan anggaran.",
-    "example_cn": "计划没问题，只是现在卡在时间和预算上。"
+    "example": "Rencananya bagus, tapi kebentur biaya.",
+    "example_cn": "计划不错，但卡在费用上了。"
   },
   {
     "word": "keganggu",
@@ -8215,8 +8218,8 @@ window.DAILY_VOCAB_DB = [
     "en": "real; actual; evident",
     "root": "nyata",
     "root_cn": "真实；明显",
-    "example": "Aku lebih percaya hasil nyata daripada janji yang terlalu banyak.",
-    "example_cn": "比起太多承诺，我更相信实际成果。",
+    "example": "Kita butuh hasil nyata, bukan cuma janji.",
+    "example_cn": "我们需要实际成果，不只是承诺。",
     "categories": [
       "每日学习",
       "08:00",
@@ -8239,8 +8242,8 @@ window.DAILY_VOCAB_DB = [
     "en": "should; had better",
     "root": "baik",
     "root_cn": "好；良好",
-    "example": "Kalau belum yakin, sebaiknya jangan putuskan sekarang.",
-    "example_cn": "如果还不确定，最好现在先别决定。",
+    "example": "Kalau arahnya belum jelas, sebaiknya cek lagi sebelum berangkat.",
+    "example_cn": "如果方向还不清楚，最好出发前再确认一下。",
     "categories": [
       "每日学习",
       "08:00",
@@ -8274,7 +8277,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-15"
-    ]
+    ],
+    "root_cn": "泥土；土地",
+    "example": "Jalan di depan masih penuh tanah karena barusan hujan.",
+    "example_cn": "前面的路上还有很多泥，因为刚刚下过雨。"
   },
   {
     "word": "arah",
@@ -8293,7 +8299,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-15"
-    ]
+    ],
+    "root_cn": "方向",
+    "example": "Kalau salah arah, kita bisa muter cukup jauh.",
+    "example_cn": "如果走错方向，我们可能要绕很远。"
   },
   {
     "word": "butuh",
@@ -8312,7 +8321,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-15"
-    ]
+    ],
+    "root_cn": "需要",
+    "example": "Aku butuh waktu sebentar buat cek semuanya.",
+    "example_cn": "我需要一点时间检查所有东西。"
   },
   {
     "word": "barusan",
@@ -8321,7 +8333,8 @@ window.DAILY_VOCAB_DB = [
     "root": "baru",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "口语"
     ],
     "times_seen": 1,
     "first_seen": "2026-09-15 19:00",
@@ -8331,6 +8344,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-15"
-    ]
+    ],
+    "root_cn": "新；刚刚",
+    "example": "Barusan dia telepon dan bilang jadwalnya berubah.",
+    "example_cn": "他刚刚打电话说时间变了。"
   }
 ];
