@@ -4,33 +4,55 @@
   "time": "08:00",
   "level": "A2+ → B1",
   "day": 25,
-  "title": "2026年9月15日｜Day 25｜工作推进：机会、卡点与解决结果",
+  "title": "2026年9月15日｜Day 25｜表达判断：结果、变化与更自然的说法",
+  "selection_validation": {
+    "formula": "977 ∩ weakness active − daily-vocab(before lesson)",
+    "new_words_count": 10,
+    "oral_words_count": 2,
+    "oral_words": ["nyebelin", "kepikiran"],
+    "validated_against_snapshot": "fbcb161037e6da69e5870cf2174897f44fda8432",
+    "new_review_overlap": 0,
+    "mastered_hits": 0
+  },
   "vocab": [
-    {"word":"berhasil","cn":"成功；顺利做到","en":"succeed; manage to","root":"hasil","root_cn":"结果；成果","formation":"ber- + hasil → berhasil，表示“成功做到、取得成功”。","example":"Kami berhasil menyelesaikan masalah itu sebelum siang.","example_cn":"我们成功在中午前解决了那个问题。","synonym_note":"sukses 也表示“成功”，但 berhasil 更常直接接动作：berhasil + 动词。","display":"berhasil","audio_text":"berhasil"},
-    {"word":"peluang","cn":"机会；可能性","en":"opportunity; chance","root":"peluang","root_cn":"机会；可能性","formation":"基础高频名词；常见 ada peluang、peluang kerja、peluang untuk...。","example":"Masih ada peluang untuk memperbaiki hasil bulan ini.","example_cn":"这个月的结果还有改善的机会。","synonym_note":"kesempatan 也表示“机会”；peluang 更常强调可能性或发展空间。","display":"peluang","audio_text":"peluang"},
-    {"word":"kendala","cn":"障碍；困难；卡点","en":"obstacle; constraint","root":"kendala","root_cn":"障碍；限制","formation":"基础高频名词；工作中常见 ada kendala、kendala teknis、tanpa kendala。","example":"Kalau ada kendala, bilang lebih awal supaya kita bisa cari solusi.","example_cn":"如果有困难，早点说，这样我们可以找解决办法。","synonym_note":"masalah = 问题；kendala 更强调阻碍事情推进的卡点。","display":"kendala","audio_text":"kendala"},
-    {"word":"keahlian","cn":"专业技能；专长","en":"skill; expertise","root":"ahli","root_cn":"专家；擅长的人","formation":"ke- + ahli + -an → keahlian，表示“专业技能、专长”。","example":"Keahlian komunikasi penting saat menangani pelanggan.","example_cn":"处理客户时，沟通能力很重要。","synonym_note":"kemampuan = 一般能力；keahlian = 更具体、经过训练的专业技能。","display":"keahlian","audio_text":"keahlian"},
-    {"word":"rekan kerja","cn":"同事","en":"colleague","root":"rekan","root_cn":"伙伴；同伴","formation":"rekan + kerja → rekan kerja，表示工作上的同事。","example":"Aku minta bantuan rekan kerja yang lebih paham soal ini.","example_cn":"我请更懂这件事的同事帮忙。","synonym_note":"teman kantor 更口语；rekan kerja 更中性，日常和工作都自然。","display":"rekan kerja","audio_text":"rekan kerja"},
-    {"word":"pelanggan","cn":"顾客；客户","en":"customer; client","root":"langgan","root_cn":"经常购买；订购","formation":"pe- + langgan → pelanggan，表示经常购买商品或服务的人，即顾客/客户。","example":"Pelanggan itu minta penjelasan yang lebih jelas.","example_cn":"那位客户要求更清楚的解释。","synonym_note":"klien 常用于专业服务客户；pelanggan 更广，可指商店、电商、服务业顾客。","display":"pelanggan","audio_text":"pelanggan"},
-    {"word":"pendapatan","cn":"收入","en":"income; revenue","root":"dapat","root_cn":"得到；获得","formation":"peN- + dapat + -an → pendapatan，表示“获得的收入”。","example":"Pendapatan naik, tapi pengeluaran juga ikut bertambah.","example_cn":"收入增加了，但支出也跟着增加。","synonym_note":"penghasilan 也表示个人收入；pendapatan 可用于个人、公司或整体收入。","display":"pendapatan","audio_text":"pendapatan"},
-    {"word":"pemasok","cn":"供应商","en":"supplier","root":"pasok","root_cn":"供应；供给","formation":"peN- + pasok → pemasok，表示提供货物或原料的一方。","example":"Kami sedang mencari pemasok yang lebih stabil.","example_cn":"我们正在寻找更稳定的供应商。","synonym_note":"supplier 在商业口语中也常见；pemasok 是标准印尼语。","display":"pemasok","audio_text":"pemasok"},
-    {"word":"lemot","cn":"卡；慢（设备/网络，口语）","en":"slow; laggy","root":"lemot","root_cn":"慢；卡","formation":"日常口语词，常形容手机、网络、应用反应慢。","example":"Internet kantor lagi lemot, jadi file-nya belum terkirim.","example_cn":"办公室网络现在很卡，所以文件还没发出去。","synonym_note":"口语：lemot；标准/较正式：lambat。lemot 特别常用于网络、手机和电脑。","display":"lemot","audio_text":"lemot"},
-    {"word":"resign","cn":"辞职（口语/职场常用）","en":"resign; quit a job","root":"resign","root_cn":"辞职","formation":"英语借词，在印尼职场口语中非常常见；常说 mau resign、sudah resign。","example":"Dia belum mau resign karena masih ada tanggung jawab yang harus diselesaikan.","example_cn":"他还不想辞职，因为还有责任需要完成。","synonym_note":"口语：resign；标准/较正式：mengundurkan diri。","display":"resign","audio_text":"resign"}
+    {"word":"segera","display":"segera","audio_text":"segera","cn":"尽快；马上；立即","en":"immediately; promptly","root":"segera","root_cn":"立即；马上","formation":"基础高频副词，常见 segera kirim、segera hubungi、segera selesai。","example":"Kalau ada perubahan, tolong segera kasih tahu aku.","example_cn":"如果有变化，请马上告诉我。","synonym_note":"langsung 更强调‘直接/马上就做’；segera 稍中性，也很常用于工作场景。"},
+    {"word":"hasil","display":"hasil","audio_text":"hasil","cn":"结果；成果","en":"result; outcome","root":"hasil","root_cn":"结果；成果","formation":"高频名词；常见 hasil kerja、hasil tes、hasil akhirnya。","example":"Hasil akhirnya lebih baik daripada yang kami kira.","example_cn":"最后的结果比我们原先想的更好。","synonym_note":"akibat 更偏‘后果’，常强调某个原因造成的结果；hasil 更中性，可好可坏。"},
+    {"word":"menarik","display":"menarik","audio_text":"menarik","cn":"有趣的；吸引人的；引人注意的","en":"interesting; attractive","root":"tarik","root_cn":"拉；吸引","formation":"meN- + tarik → menarik；既可表示‘吸引’，也常作形容意义‘有趣、吸引人’。","example":"Menurutku, idenya menarik dan layak dicoba.","example_cn":"我觉得这个想法挺有意思，值得试试。","synonym_note":"seru 更口语、更偏‘好玩/精彩’；menarik 适用范围更广。"},
+    {"word":"umum","display":"umum","audio_text":"umum","cn":"一般的；普遍的；公共的","en":"general; common; public","root":"umum","root_cn":"一般；公共","formation":"高频词；常见 secara umum（总体来说）、tempat umum（公共场所）、hal yang umum（常见的事）。","example":"Secara umum, cara ini cukup mudah dipahami.","example_cn":"总体来说，这种方法比较容易理解。","synonym_note":"biasa 更偏‘普通/平常’；umum 更强调普遍、总体或公共范围。"},
+    {"word":"menerima","display":"menerima","audio_text":"menerima","cn":"接受；收到；接收","en":"receive; accept","root":"terima","root_cn":"接受；收到","formation":"meN- + terima → menerima；可表示收到东西，也可表示接受意见、条件或事实。","example":"Kami sudah menerima dokumennya, tapi belum memeriksa semuanya.","example_cn":"我们已经收到文件了，但还没有全部检查。","synonym_note":"dapat 可表示‘得到’；menerima 更强调从别人那里接收或接受。"},
+    {"word":"muncul","display":"muncul","audio_text":"muncul","cn":"出现；冒出来","en":"appear; emerge","root":"muncul","root_cn":"出现","formation":"基础高频动词；可用于问题、想法、人物、提示等‘出现’。","example":"Masalah baru muncul setelah kami mengganti sistem.","example_cn":"我们更换系统后出现了新的问题。","synonym_note":"timbul 也可表示‘产生/出现’，稍正式；muncul 日常使用更广。"},
+    {"word":"nyata","display":"nyata","audio_text":"nyata","cn":"真实的；实际存在的；明显的","en":"real; actual; evident","root":"nyata","root_cn":"真实；明显","formation":"高频形容词；常见 dunia nyata（现实世界）、bukti nyata（实际证据）、hasil nyata（实际成果）。","example":"Aku lebih percaya hasil nyata daripada janji yang terlalu banyak.","example_cn":"比起太多承诺，我更相信实际成果。","synonym_note":"asli 更偏‘原装/真正的，不是假货’；nyata 强调现实存在、实际可见。"},
+    {"word":"sebaiknya","display":"sebaiknya","audio_text":"sebaiknya","cn":"最好；应该（委婉建议）","en":"should; had better","root":"baik","root_cn":"好；良好","formation":"se- + baik + -nya → sebaiknya；用于给出较柔和的建议。","example":"Kalau belum yakin, sebaiknya jangan putuskan sekarang.","example_cn":"如果还不确定，最好现在先别决定。","synonym_note":"harus = 必须，语气更强；sebaiknya = 最好，属于建议。"},
+    {"word":"nyebelin","display":"nyebelin","audio_text":"nyebelin","cn":"烦人；让人不爽（口语）","en":"annoying","root":"sebel","root_cn":"烦；恼火","formation":"雅加达及全国口语中常见，用来形容人、行为或事情很烦。","example":"Yang nyebelin itu bukan masalahnya, tapi dia nggak pernah kasih kabar.","example_cn":"烦人的不是这个问题，而是他从来不提前说。","synonym_note":"口语：nyebelin；标准/较正式：menjengkelkan / menyebalkan。"},
+    {"word":"kepikiran","display":"kepikiran","audio_text":"kepikiran","cn":"一直想到；挂在心上；忍不住想（口语）","en":"keep thinking about; have on one's mind","root":"pikir","root_cn":"想；思考","formation":"口语 ke- + pikir + -an；常表达某件事一直在脑子里、让人挂心。","example":"Aku masih kepikiran hasil meeting kemarin.","example_cn":"我还一直想着昨天会议的结果。","synonym_note":"口语：kepikiran；标准/较正式可说 terus memikirkan / masih memikirkan。"}
   ],
-  "review_vocab": ["menangani","tergantung","membatasi","utang","giliran"],
+  "review_vocab": ["menangani","tergantung","utang","giliran","sederhana"],
   "sentences": [
-    {"id":"Kalau ada kendala, rekan kerja yang punya keahlian itu biasanya bisa membantu.","cn":"如果遇到卡点，有这方面专业技能的同事通常能帮忙。"},
-    {"id":"Kami berhasil menemukan pemasok baru yang lebih stabil.","cn":"我们成功找到了一个更稳定的新供应商。"},
-    {"id":"Peluang bisnisnya bagus, tapi tetap tergantung kebutuhan pelanggan.","cn":"这个生意机会不错，但还是取决于客户需求。"},
-    {"id":"Pendapatan belum naik banyak, jadi kami harus membatasi pengeluaran dan utang.","cn":"收入还没有增加很多，所以我们必须控制支出和债务。"},
-    {"id":"Internet lagi lemot; kalau sudah giliran aku menangani laporan ini, aku selesaikan dulu sebelum mikir resign.","cn":"网络现在很卡；轮到我处理这份报告时，我会先把它做完，再考虑辞职。"}
+    {"id":"Kalau masalah baru muncul, sebaiknya segera ditangani sebelum jadi lebih besar.","cn":"如果出现新问题，最好马上处理，别让它变得更严重。"},
+    {"id":"Hasil nyata biasanya lebih menarik daripada janji yang terlalu umum.","cn":"实际成果通常比过于笼统的承诺更有吸引力。"},
+    {"id":"Kami sudah menerima informasinya, tapi keputusan akhirnya tetap tergantung kondisi.","cn":"我们已经收到信息了，但最终决定仍然取决于情况。"},
+    {"id":"Aku masih kepikiran soal utang itu, jadi sebaiknya kita cari cara yang sederhana.","cn":"我还一直惦记那笔债，所以我们最好找个简单的办法。"},
+    {"id":"Yang paling nyebelin adalah masalah yang muncul lagi setelah giliran kita menangani semuanya.","cn":"最烦人的是，我们轮到把事情都处理完以后，问题又出现了。"}
   ],
-  "reading": {"title":"Masalah Kecil, Peluang Baru","text":"Pagi ini tim kami menemukan kendala saat memproses pesanan pelanggan. Internet kantor lemot, dan pemasok lama juga terlambat memberi informasi. Aku dan satu rekan kerja mencoba menangani masalah itu bersama. Dia punya keahlian di bidang operasional, jadi kami cepat menemukan pilihan lain. Ternyata ada pemasok baru yang bisa mengirim barang lebih cepat. Kami berhasil menjaga pesanan tetap berjalan. Menurutku, setiap kendala juga bisa membuka peluang baru. Namun keputusan berikutnya tetap tergantung harga dan kualitas. Kalau kerja sama ini stabil, pendapatan mungkin meningkat. Untuk sekarang, kami membatasi risiko dulu dan tidak menambah utang. Soal resign? Belum. Aku masih ingin melihat hasilnya.","cn":"今天早上，我们团队在处理客户订单时遇到了一个卡点。办公室网络很卡，原来的供应商也迟迟没有提供信息。我和一位同事一起尝试处理这个问题。他有运营方面的专业技能，所以我们很快找到了另一个选择。结果发现有一家新供应商可以更快发货。我们成功让订单继续推进。我觉得，每个困难也可能打开新的机会。不过下一步决定仍然取决于价格和质量。如果合作稳定，收入可能会提高。现在我们先控制风险，不增加债务。至于辞职？还没有。我还想看看结果。","vocab":["kendala","pelanggan","lemot","pemasok","rekan kerja","menangani","keahlian","berhasil","peluang","tergantung","pendapatan","membatasi","utang","resign"]},
+  "reading": {
+    "title":"Jangan Cuma Lihat Janji",
+    "text":"Kemarin kami menerima rencana baru dari tim lain. Secara umum, idenya cukup menarik, tetapi aku masih kepikiran beberapa bagian. Ada masalah kecil yang bisa muncul kalau jadwal berubah lagi. Menurutku, sebaiknya kami segera cek hasil sebelumnya sebelum membuat keputusan. Aku lebih percaya hasil nyata daripada janji yang terlalu besar. Bagian yang agak nyebelin adalah informasi sering datang terlambat, jadi orang yang menangani pekerjaan harus mengatur ulang semuanya. Keputusan akhirnya tetap tergantung kondisi dan biaya. Kalau ada utang atau risiko tambahan, kami akan pilih cara yang lebih sederhana. Setelah semua data jelas, baru kami tentukan giliran kerja berikutnya.",
+    "cn":"昨天我们收到了另一个团队的新方案。总体来说，这个想法挺有意思，但有几个部分我还一直放在心上。如果日程再次变化，可能会出现一些小问题。我觉得，在做决定之前，我们最好马上检查之前的结果。比起过大的承诺，我更相信实际成果。比较烦人的是，信息经常来得很晚，所以负责处理工作的人不得不重新安排所有事情。最终决定仍然取决于实际情况和成本。如果还有债务或额外风险，我们会选择更简单的办法。等所有数据都明确以后，再确定下一轮工作安排。",
+    "vocab":["menerima","umum","menarik","kepikiran","muncul","sebaiknya","segera","hasil","nyata","nyebelin","menangani","tergantung","utang","sederhana","giliran"]
+  },
   "quiz": [
-    {"question":"“事情推进时遇到卡点/阻碍”最适合用哪个词？","options":["kendala","peluang","pendapatan"],"answer_index":0,"explain":"kendala 强调阻碍事情继续推进的困难或限制。"},
-    {"question":"“专业技能、专长”最自然的是：","options":["keahlian","pelanggan","pemasok"],"answer_index":0,"explain":"keahlian = 专业技能；kemampuan 更泛指能力。"},
-    {"question":"复习：结果“取决于”价格和质量，应该用哪个词？","options":["tergantung","giliran","utang"],"answer_index":0,"explain":"tergantung = 取决于；tergantung harga dan kualitas = 取决于价格和质量。"}
+    {"question":"想委婉表达‘最好先检查一下’，最适合用哪个词？","options":["sebaiknya","nyata","umum"],"answer_index":0,"explain":"sebaiknya 用于给建议，语气比 harus 更柔和。"},
+    {"question":"‘实际成果/真实可见的结果’最自然的搭配是：","options":["hasil nyata","hasil umum","hasil nyebelin"],"answer_index":0,"explain":"hasil nyata = 实际成果、真实可见的结果。"},
+    {"question":"复习：‘最终决定取决于实际情况’中的‘取决于’应该用：","options":["tergantung","giliran","menangani"],"answer_index":0,"explain":"tergantung = 取决于、看情况。"}
   ],
-  "output": {"task":"用自然印尼语表达：‘我们遇到了一个卡点，但最后成功找到了新的供应商。这也可能是一个新机会，不过下一步还是取决于价格和质量。’","reference_answer":"Kami sempat mengalami kendala, tapi akhirnya berhasil menemukan pemasok baru. Ini juga bisa jadi peluang baru, tapi langkah selanjutnya tetap tergantung harga dan kualitas.","reference_cn":"我们遇到了一个卡点，但最后成功找到了新的供应商。这也可能是一个新机会，不过下一步还是取决于价格和质量。"},
-  "review": ["berhasil + 动词 = 成功做到……；peluang = 机会/可能性；kendala = 推进中的卡点。","keahlian 是专业技能，rekan kerja 是同事，pelanggan 是客户，pemasok 是供应商。","口语重点：lemot = 设备/网络很卡；resign = 辞职；正式说法分别是 lambat、mengundurkan diri。"]
+  "output": {
+    "task":"用自然印尼语表达：‘我已经收到信息了。总体来说这个想法挺有意思，但我还有点放不下。最好先看看实际结果，再马上决定。’",
+    "reference_answer":"Aku sudah menerima informasinya. Secara umum idenya cukup menarik, tapi aku masih agak kepikiran. Sebaiknya kita lihat hasil nyatanya dulu, baru segera putuskan.",
+    "reference_cn":"我已经收到信息了。总体来说这个想法挺有意思，但我还有点放不下。最好先看看实际结果，再马上决定。"
+  },
+  "review": [
+    "hasil = 结果/成果；nyata = 真实、实际存在；hasil nyata = 实际成果。",
+    "sebaiknya 用于委婉建议；segera 表示尽快、马上；muncul 表示出现。",
+    "口语重点：nyebelin = 烦人；kepikiran = 一直挂在心上、忍不住想。"
+  ]
 }
