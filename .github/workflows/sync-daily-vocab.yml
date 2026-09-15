@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/sync-daily-vocab.yml'
+      - '.github/scripts/build-learning-runtime.js'
       - 'data/daily/*-am.json'
       - 'data/daily/*-pm.json'
 permissions:
@@ -83,8 +84,9 @@ jobs:
 
           fs.writeFileSync(dbPath,'window.DAILY_VOCAB_DB = '+JSON.stringify(db,null,2)+';\n');
           NODE
-          git add data/daily-vocab-data.js
+          node .github/scripts/build-learning-runtime.js
+          git add data/daily-vocab-data.js data/learning-runtime.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'Sync daily lesson vocabulary'
+          git commit -m 'Sync daily lesson vocabulary and runtime'
           git pull --rebase origin main
           git push origin HEAD:main
