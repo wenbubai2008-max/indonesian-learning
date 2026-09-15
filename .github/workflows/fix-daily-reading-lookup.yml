@@ -1,0 +1,130 @@
+name: Fix daily reading lookup
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-daily-reading-lookup.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Harden 08 and 19 reading word lookup
+        shell: bash
+        run: |
+          set -e
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          p=Path('data/reading-word-lookup.js')
+          s=p.read_text()
+
+          # 1) Daily lesson words should win over older embedded definitions.
+          old="""  function allWords(){
+    return [].concat(
+      Array.isArray(window.EMBEDDED_DB)?window.EMBEDDED_DB:[],
+      Array.isArray(window.DAILY_VOCAB_DB)?window.DAILY_VOCAB_DB:[],
+      Array.isArray(window.UNFAMILIAR_VOCAB_DB)?window.UNFAMILIAR_VOCAB_DB:[],
+      Array.isArray(window.MASTER_VOCAB_OBJECTS)?window.MASTER_VOCAB_OBJECTS:[]
+    );
+  }"""
+          new="""  function allWords(){
+    return [].concat(
+      Array.isArray(window.DAILY_VOCAB_DB)?window.DAILY_VOCAB_DB:[],
+      Array.isArray(window.UNFAMILIAR_VOCAB_DB)?window.UNFAMILIAR_VOCAB_DB:[],
+      Array.isArray(window.MASTER_VOCAB_OBJECTS)?window.MASTER_VOCAB_OBJECTS:[],
+      Array.isArray(window.EMBEDDED_DB)?window.EMBEDDED_DB:[]
+    );
+  }"""
+          if old not in s: raise SystemExit('allWords target not found')
+          s=s.replace(old,new)
+
+          # 2) Pronunciation accent marks used by the daily renderer (pantés/ngarét/etc.)
+          #    must still resolve to canonical vocabulary keys.
+          old="""  function norm(s){return String(s||'').trim().toLowerCase().replace(/^[^a-zA-ZÀ-ÿ]+|[^a-zA-ZÀ-ÿ-]+$/g,'');}"""
+          new="""  function norm(s){return String(s||'').trim().toLowerCase().replace(/^[^a-zA-ZÀ-ÿ]+|[^a-zA-ZÀ-ÿ-]+$/g,'');}
+  function plainNorm(s){
+    const w=norm(s);if(!w)return '';
+    try{return w.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');}catch(e){return w;}
+  }"""
+          if old not in s: raise SystemExit('norm target not found')
+          s=s.replace(old,new)
+
+          old="""  function lookup(raw,node){
+    const fromHint=hintLookup(node,raw);if(fromHint)return fromHint;
+    const w=norm(raw);if(!w)return null;
+    const p=weakPool(),pooled=p&&typeof p.get==='function'?p.get(w):null;if(pooled&&pooled.cn)return hitFromRecord(raw,pooled,w);
+    const variants=[w];
+    if(/-(ku|mu|nya)$/.test(w))variants.push(w.replace(/-(ku|mu|nya)$/,''));
+    if(/(ku|mu|nya)$/.test(w)&&w.length>5)variants.push(w.replace(/(ku|mu|nya)$/,''));
+    const words=allWords();
+    for(const v of variants){const hit=words.find(x=>x&&(norm(x.word)===v||norm(x.display)===v||norm(x.audio_text)===v));if(hit)return hitFromRecord(raw,hit,v);}
+    return {word:String(raw).trim(),base:w,cn:persistentCached(w),en:'',root:'',root_cn:'',example:'',example_cn:''};
+  }"""
+          new="""  function lookup(raw,node){
+    const fromHint=hintLookup(node,raw);if(fromHint)return fromHint;
+    const w=norm(raw),plain=plainNorm(raw);if(!w)return null;
+    const p=weakPool(),pooled=p&&typeof p.get==='function'?(p.get(w)||(plain!==w?p.get(plain):null)):null;if(pooled&&pooled.cn)return hitFromRecord(raw,pooled,plain||w);
+    const variants=[];
+    [w,plain].forEach(function(v){if(v&&!variants.includes(v))variants.push(v);});
+    variants.slice().forEach(function(v){
+      if(/-(ku|mu|nya)$/.test(v)){const x=v.replace(/-(ku|mu|nya)$/,'');if(x&&!variants.includes(x))variants.push(x);}
+      if(/(ku|mu|nya)$/.test(v)&&v.length>5){const x=v.replace(/(ku|mu|nya)$/,'');if(x&&!variants.includes(x))variants.push(x);}
+    });
+    const words=allWords();
+    for(const v of variants){const hit=words.find(x=>x&&(plainNorm(x.word)===v||plainNorm(x.display)===v||plainNorm(x.audio_text)===v));if(hit)return hitFromRecord(raw,hit,v);}
+    const base=plain||w;
+    return {word:String(raw).trim(),base:base,cn:persistentCached(base)||persistentCached(w),en:'',root:'',root_cn:'',example:'',example_cn:''};
+  }"""
+          if old not in s: raise SystemExit('lookup target not found')
+          s=s.replace(old,new)
+
+          # 3) Support both the enhanced daily renderer and the base daily renderer.
+          s=s.replace("node.closest('.rl-text,.dailyFixReading')","node.closest('.rl-text,.dailyFixReading,#daily .reading')")
+          s=s.replace("node.closest('.rl-text,.dailyFixReading'))return","node.closest('.rl-text,.dailyFixReading,#daily .reading'))return")
+
+          # 4) Resolve AM/PM from the daily navigation instead of relying on the lesson title.
+          old="""  function sourceInfo(node){
+    const daily=node.closest('#daily');if(daily)return {date:(document.getElementById('dailyMeta')&&document.getElementById('dailyMeta').textContent||'').trim(),session:(document.getElementById('dailyTitle')&&document.getElementById('dailyTitle').textContent||'').includes('19:00')?'19:00':'08:00',source:'每日学习阅读'};
+    const extensive=node.closest('#extensive');if(extensive)return {date:(document.getElementById('extensiveMeta')&&document.getElementById('extensiveMeta').textContent||'').split('·')[0].trim(),session:'',source:'泛读'};
+    return {date:'',session:'',source:'阅读短文'};
+  }"""
+          new="""  function sourceInfo(node){
+    const daily=node.closest('#daily');
+    if(daily){
+      const date=(document.getElementById('dailyMeta')&&document.getElementById('dailyMeta').textContent||'').trim();
+      const label=String((daily.querySelector('.dailyFixMid span')&&daily.querySelector('.dailyFixMid span').textContent)||(document.getElementById('dailyTitle')&&document.getElementById('dailyTitle').textContent)||'');
+      const session=/19:00|晚间/.test(label)?'19:00':(/08:00|早间/.test(label)?'08:00':'');
+      return {date:date,session:session,source:'每日学习阅读'};
+    }
+    const readingPage=node.closest('#readingPage');
+    if(readingPage){
+      const meta=String(document.getElementById('readingMeta')&&document.getElementById('readingMeta').textContent||'');
+      const dm=meta.match(/\\b(20\\d{2}-\\d{2}-\\d{2})\\b/),tm=meta.match(/\\b(08:00|19:00)\\b/);
+      return {date:dm?dm[1]:'',session:tm?tm[1]:'',source:'每日阅读库'};
+    }
+    const extensive=node.closest('#extensive');if(extensive)return {date:(document.getElementById('extensiveMeta')&&document.getElementById('extensiveMeta').textContent||'').split('·')[0].trim(),session:'',source:'泛读'};
+    return {date:'',session:'',source:'阅读短文'};
+  }"""
+          if old not in s: raise SystemExit('sourceInfo target not found')
+          s=s.replace(old,new)
+
+          p.write_text(s)
+
+          # Cache-bust the audited lookup runtime.
+          p=Path('index.html')
+          s=p.read_text()
+          s=re.sub(r'data/reading-word-lookup\\.js\\?v=[^\"<]+','data/reading-word-lookup.js?v=20260915-dailylookup1',s)
+          p.write_text(s)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/reading-word-lookup.js index.html
+          git diff --cached --quiet || git commit -m 'Harden daily reading word lookup'
+          git pull --rebase origin main
+          git push origin HEAD:main
