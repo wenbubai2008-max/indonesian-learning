@@ -1,0 +1,40 @@
+name: Fix reading weak source
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-reading-weak-source.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Align reading added state with visible weakness sources
+        shell: bash
+        run: |
+          set -e
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('data/reading-word-lookup.js')
+          s=p.read_text()
+          old="  function isUnknown(word){const p=weakPool();if(p)return p.isActive(word);return !!unknownMap()[norm(word)];}"
+          new="  function isUnknown(word){\n    const p=weakPool();\n    if(p){\n      const x=typeof p.get==='function'?p.get(word):null;if(!x||x.status!=='active')return false;\n      const r=x.reasons||[],h=x.reason_history||[];\n      if(r.includes('manual_unknown')||r.includes('quick_wrong'))return true;\n      return r.includes('manual_restore')&&(h.includes('manual_unknown')||h.includes('quick_wrong'));\n    }\n    return !!unknownMap()[norm(word)];\n  }"
+          if old not in s: raise SystemExit('isUnknown target not found')
+          s=s.replace(old,new)
+          p.write_text(s)
+          p=Path('index.html')
+          s=p.read_text()
+          s=re.sub(r'data/reading-word-lookup\.js\?v=[^\"<]+','data/reading-word-lookup.js?v=20260915-bgqueue3',s)
+          p.write_text(s)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/reading-word-lookup.js index.html
+          git diff --cached --quiet || git commit -m 'Align reading added state with weakness sources'
+          git pull --rebase origin main
+          git push origin HEAD:main
