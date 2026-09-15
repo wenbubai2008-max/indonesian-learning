@@ -17,7 +17,7 @@ jobs:
           from pathlib import Path
           p=Path('index.html')
           s=p.read_text()
-          s=s.replace('data/reading-word-lookup.js?v=20260901-1','data/reading-word-lookup.js?v=20260901-2')
+          s=s.replace('data/reading-word-lookup.js?v=20260901-3','data/reading-word-lookup.js?v=20260915-stable2')
           p.write_text(s)
           PY
       - name: Commit
@@ -25,5 +25,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html
-          git diff --cached --quiet || git commit -m "Bump daily reading word lookup cache"
+          git diff --cached --quiet || git commit -m "Bump stabilized reading lookup cache"
           git push
