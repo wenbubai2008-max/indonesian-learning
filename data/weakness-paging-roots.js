@@ -111,10 +111,12 @@
     currentPage=0;
   }
 
-  function remainingTotal(active){let n=0;sessionWords.forEach(function(w){if(active[w])n++;});return n;}
-  function activePageCount(active){let last=-1;sessionWords.forEach(function(w,i){if(active[w])last=i;});return Math.max(1,last<0?1:Math.floor(last/PAGE_SIZE)+1);}
-  function pageWords(page){return sessionWords.slice(page*PAGE_SIZE,page*PAGE_SIZE+PAGE_SIZE);}
-  function pageItems(page,active){return pageWords(page).map(function(w){return active[w]||null;}).filter(Boolean).map(itemFromRecord).filter(Boolean);}
+  function activeWords(active){return sessionWords.filter(function(w){return !!active[w];});}
+  function remainingTotal(active){return activeWords(active).length;}
+  function activePageCount(active){return Math.max(1,Math.ceil(remainingTotal(active)/PAGE_SIZE));}
+  function pageItems(page,active){
+    return activeWords(active).slice(page*PAGE_SIZE,page*PAGE_SIZE+PAGE_SIZE).map(function(w){return active[w]||null;}).filter(Boolean).map(itemFromRecord).filter(Boolean);
+  }
 
   function rootHtml(x){if(!x.root)return '';return '<div class="weakRootLine"><span>词根：</span><b>'+esc(x.root)+'</b>'+(x.root_cn?'<em> · '+esc(x.root_cn)+'</em>':'')+'</div>';}
 
@@ -170,9 +172,9 @@
     if(currentPage>=totalPages)currentPage=totalPages-1;if(currentPage<0)currentPage=0;
     const visible=pageItems(currentPage,active),meta=document.getElementById('weaknessMeta');if(meta)meta.textContent=total+' 个';
     if(!sessionWords.length||!total){body.innerHTML='<div class="v2-note">这里现在只显示两类词：快速练习答错的词，以及阅读中你主动加入的陌生词。</div><div class="empty"><b>目前没有这两类待强化词 ✓</b></div>';return;}
-    body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词不在这里展示。每页最多 30 个，右上角显示所有页剩余总数。派生词显示词根和词根中文；点“会了”后本页不会从下一页自动补词。</div>'
+    body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词不在这里展示。每页最多 30 个，右上角显示所有页剩余总数。派生词显示词根和词根中文；点“会了”后如果后面还有词，会自动从下一页补到当前页。</div>'
       +'<div class="weakRestoreWrap"><span>点“会了”后，总数立即减 1；以后再次答错仍可重新进入。</span><button type="button" class="weakRestoreBtn">恢复已移出</button></div>'
-      +navHtml(totalPages)+'<div class="v2-weak">'+(visible.length?visible.map(cardHtml).join(''):'<div class="empty">本页已完成，请点击“下一页”继续。</div>')+'</div>'+navHtml(totalPages);
+      +navHtml(totalPages)+'<div class="v2-weak">'+visible.map(cardHtml).join('')+'</div>'+navHtml(totalPages);
     refreshVisibleDetails();
   }
 
