@@ -10,17 +10,79 @@
     "D": "daily-vocab（已正式教过）",
     "K": "weak mastered（已掌握）"
   },
+  "semantics": {
+    "daily_vocab": "记录已正式教过/出现过，不等于已掌握",
+    "mastered_source": "是否掌握只看 weakness-sync 的 status=mastered",
+    "runtime": "派生索引，不是源数据"
+  },
   "runtime": {
     "file": "data/learning-runtime.json",
     "builder_script": ".github/scripts/build-learning-runtime.js",
     "builder_workflow": ".github/workflows/build-learning-runtime.yml",
     "lesson_sync_workflow": ".github/workflows/sync-daily-vocab.yml",
-    "lesson_tasks_use_runtime_only": true,
+    "lesson_tasks_use_runtime_only_for_eligibility": true,
     "large_source_files_read_in_github_runner_only": true,
     "runtime_is_derived_not_source_of_truth": true
   },
+  "am_contract": {
+    "new_words": "恰好10个真正新词，只能来自runtime.new_pool",
+    "oral_new_words": "合法候选充足时优先2个；不得越过新词资格；同一标准语↔口语组不重复占两个新词名额",
+    "review_recurrence": "约5个，只能来自runtime.review_pool，不占10个新词名额",
+    "sentences": 5,
+    "reading_words": "80-120",
+    "quiz": "3题，至少1题复习",
+    "active_output": "1个主动输出任务，含自然印尼语参考答案和中文",
+    "final_review": "3个重点",
+    "content_guard": "优先使用当天新词和已教复习词，不额外引入尚未正式教过的新master词"
+  },
+  "pm_contract": {
+    "core_total": "10-12",
+    "new_words": "3-4个，只能来自runtime.new_pool",
+    "review_words": "4-5个，只能来自runtime.review_pool",
+    "application_words": "2-3个当天08:00或近期已教且仍active的词；当天AM优先；mastered不得进入应用核心词",
+    "review_priority": [
+      "最近答错或已教后重新标为不会/陌生",
+      "memory_dont",
+      "memory_fuzzy",
+      "其他active"
+    ],
+    "cooling": {
+      "recent_pm_focus": "最近2-3天刚做重点复习的词降权",
+      "consecutive_pm": "连续两次晚课作为核心出现后默认冷却约3天",
+      "override": "出现新的答错/重新激活可打破冷却"
+    },
+    "automation_value": "只在资格、记忆优先级、复习到期/冷却状态都相同时作为最后平局排序；优先更高频、更值得主动调用的词",
+    "oral_new_words": "结合当天08:00口语新词数，晚课3-4个新词中优先约1个合法口语新词，使全天新词口语比例约20%；不得为凑比例越界",
+    "vocab_fields": [
+      "word",
+      "display",
+      "audio_text",
+      "cn",
+      "en",
+      "root",
+      "root_cn",
+      "formation",
+      "example",
+      "example_cn",
+      "synonym_note",
+      "usage_note",
+      "source_group",
+      "is_new",
+      "is_oral_new"
+    ],
+    "vocab_detail": "保持2026-09-14晚课详细度；formation解释构词/派生或2-4个高频搭配；synonym_note至少1组实用辨析；有root必须有root_cn",
+    "same_day_am_mark": "当天AM真实出现且source_group=application时，明确显示‘今天08:00已教’；不得误标其他日期",
+    "reading_words": "80-120并附中文",
+    "dialogue": "必须有自然口语对话并逐句附中文",
+    "rewrite_application": "必须有3-4个主动改写/中译印/主动回忆任务，含参考答案和中文",
+    "daily_test": "固定6题：3 choice + 2 fill + 1 order，并有self_check",
+    "fill_style": "沿用2026-09-14：prompt同一行写‘填空：<印尼语句>（目标词中文提示）’，不要另起一行给完整中文",
+    "order_style": "沿用2026-09-14：prompt先给完整中文句子，另有可点击tokens、answer、answer_cn、explain",
+    "final_review": "必须有最后约5分钟复盘",
+    "content_guard": "阅读、对话、练习优先使用本晚核心词、当天AM已教词和已教复习词，不为写内容额外塞入尚未正式教过的新master词"
+  },
   "rules": [
-    "K不进入新词或重点复习",
+    "K不进入新词、重点复习或PM应用复现核心词",
     "未教过的active主词库词=新词",
     "已教过且active=复习词",
     "弱项强化只显示A∩D",
@@ -41,6 +103,7 @@
     "课程JSON提交后，由唯一的sync-daily-vocab.yml在GitHub Runner本地完整读取并安全同步daily-vocab，同时调用共享build-learning-runtime.js用更新后的daily-vocab重建runtime，并将daily-vocab与runtime在同一同步提交中写回；不依赖GitHub Actions机器人提交再次触发另一个工作流",
     "weakness-sync、master、口语候选或规则本身变化时，由build-learning-runtime.yml调用同一个共享build-learning-runtime.js单独刷新runtime",
     "PM中只有is_new=true、source_group=new或new_words明确列出的词允许作为缺失词追加到daily-vocab；review/application只允许更新已存在词的复现记录，若缺失应视为一致性异常而非当作新词追加",
+    "daily-vocab只表示已正式教过，不代表mastered；掌握状态不得由是否进入daily-vocab推断",
     "写入后复核由同步链负责：新课程JSON存在、daily-vocab同步成功、runtime在同一同步链中重建；失败不得自动关闭08:00或19:00任务",
     "若硬校验失败，不得用模型常识、高频度或A2-B1适配度绕过；应停止错误写入并重新从合法runtime候选选择"
   ],
@@ -56,5 +119,5 @@
     "sync_workflow_is_single_writer": true,
     "lesson_sync_refreshes_runtime_atomically": true
   },
-  "updated_at": "2026-09-15T19:55:00+07:00"
+  "updated_at": "2026-09-15"
 }
