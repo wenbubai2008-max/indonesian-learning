@@ -13,7 +13,7 @@
     if(window.lockMasterToCore){window.lockMasterToCore();return;}
     if(document.querySelector('script[data-master-core-guard]'))return;
     const s=document.createElement('script');
-    s.src='data/master-top1000-weak-merge.js?v=20260913-core-only1';
+    s.src='data/master-top1000-weak-merge.js?v=20260915-core-only2';
     s.dataset.masterCoreGuard='1';
     s.onload=function(){if(window.lockMasterToCore)window.lockMasterToCore();};
     document.body.appendChild(s);
@@ -34,7 +34,6 @@
     const s=document.createElement('script');s.src=src;s.setAttribute(attr,'1');document.body.appendChild(s);
   }
 
-  // 保留单独、无冲突的释义修正和首页模块稳定脚本。
+  // 保留单独、无冲突的释义修正。首页布局统一交给 index.html 中的 home-modules-layout.js。
   loadOnce('data/weakness-meaning-fix.js?v=20260915-3','data-weakness-meaning-fix');
-  loadOnce('data/home-modules-stability.js?v=20260915-2','data-home-modules-stability');
 })();
