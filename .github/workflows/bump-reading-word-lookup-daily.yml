@@ -1,4 +1,4 @@
-name: Bump daily reading word lookup cache
+name: Refresh reading and weakness runtime caches
 on:
   workflow_dispatch:
   push:
@@ -11,13 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Update script version
+      - name: Update script versions
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
           p=Path('index.html')
           s=p.read_text()
-          s=s.replace('data/reading-word-lookup.js?v=20260901-3','data/reading-word-lookup.js?v=20260915-stable2')
+          s=re.sub(r'data/reading-word-lookup\.js\?v=[^"<]+','data/reading-word-lookup.js?v=20260915-bgqueue1',s)
+          s=re.sub(r'data/weakness-pool\.js\?v=[^"<]+','data/weakness-pool.js?v=20260915-runtime2',s)
           p.write_text(s)
           PY
       - name: Commit
@@ -25,5 +27,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html
-          git diff --cached --quiet || git commit -m "Bump stabilized reading lookup cache"
+          git diff --cached --quiet || git commit -m "Refresh reading and weakness runtime caches"
           git push
