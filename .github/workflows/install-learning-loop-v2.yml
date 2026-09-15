@@ -19,14 +19,17 @@ jobs:
 
           p=Path('index.html')
           s=p.read_text()
-          pool='<script src="data/weakness-pool.js?v=20260915-runtime1"></script>'
-          paging='<script src="data/weakness-paging-roots.js?v=20260915-runtime2"></script>'
+          pool='<script src="data/weakness-pool.js?v=20260915-runtime2"></script>'
+          paging='<script src="data/weakness-paging-roots.js?v=20260915-roots3"></script>'
           if 'data/weakness-pool.js' not in s:
               s=s.replace('<script src="data/reading-word-lookup.js', pool+'\n<script src="data/reading-word-lookup.js')
+          else:
+              s=re.sub(r'data/weakness-pool\.js\?v=[^"<]+','data/weakness-pool.js?v=20260915-runtime2',s)
           if 'data/weakness-paging-roots.js' not in s:
               s=s.replace('<script src="data/extensive-reading-history-ui.js', paging+'\n<script src="data/extensive-reading-history-ui.js')
           else:
-              s=re.sub(r'data/weakness-paging-roots\.js\?v=[^"<]+','data/weakness-paging-roots.js?v=20260915-runtime2',s)
+              s=re.sub(r'data/weakness-paging-roots\.js\?v=[^"<]+','data/weakness-paging-roots.js?v=20260915-roots3',s)
+          s=re.sub(r'data/unfamiliar-daily-review\.js\?v=[^"<]+','data/unfamiliar-daily-review.js?v=20260915-no-legacy1',s)
           s=re.sub(r'data/home-learning-upgrade-v2\.js\?v=[^"<]+','data/home-learning-upgrade-v2.js?v=20260915-weak-runtime1',s)
           p.write_text(s)
 
@@ -43,5 +46,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add index.html data/home-learning-upgrade-v2.js
-          git diff --cached --quiet || git commit -m 'Prevent legacy weakness rerender conflicts'
+          git diff --cached --quiet || git commit -m 'Refresh weakness root runtime loaders'
           git push
