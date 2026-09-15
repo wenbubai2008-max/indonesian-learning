@@ -3148,19 +3148,20 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "原始课程"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-30 19:00",
-    "last_seen": "2026-09-05 19:00",
+    "last_seen": "2026-09-14 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
       "2026-08-30",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-14"
     ],
     "root_cn": "挂；悬挂",
-    "example": "Jadi atau nggaknya tergantung kondisi besok.",
-    "example_cn": "最后做不做要看明天的情况。"
+    "example": "Jadi atau nggaknya tergantung berapa orang yang bisa ikut.",
+    "example_cn": "到底办不办取决于有多少人能参加。"
   },
   {
     "word": "seharusnya",
@@ -3347,17 +3348,23 @@ window.DAILY_VOCAB_DB = [
     "root": "tagih",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 08:00",
-    "last_seen": "2026-08-31 08:00",
+    "last_seen": "2026-09-14 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
-      "2026-08-31"
-    ]
+      "2026-08-31",
+      "2026-09-14"
+    ],
+    "root_cn": "催款；要求付款",
+    "example": "Sebelum bayar, cek dulu tagihannya sesuai sama harga yang disepakati atau nggak.",
+    "example_cn": "付款前先确认账单是否和商定的价格一致。"
   },
   {
     "word": "hemat",
@@ -4430,15 +4437,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-14 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-02"
-    ]
+      "2026-09-02",
+      "2026-09-14"
+    ],
+    "root_cn": "处理；临时突然发生",
+    "example": "Maaf, aku nggak bisa ikut karena ada urusan dadakan.",
+    "example_cn": "抱歉，我不能参加，因为临时突然有点事。"
   },
   {
     "word": "tunda",
@@ -4622,18 +4633,20 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-14 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-14"
     ],
-    "example": "Masukan dari tim cukup masuk akal, jadi sebaiknya kita pertimbangkan.",
-    "example_cn": "团队的意见挺有道理，所以我们最好考虑一下。"
+    "example": "Kalau ada masukan, bilang sekarang biar bisa langsung kita bahas.",
+    "example_cn": "如果有意见，现在就说，这样我们可以马上讨论。",
+    "root_cn": "进入；进"
   },
   {
     "word": "rapihin",
@@ -5554,17 +5567,18 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-06 19:00",
-    "last_seen": "2026-09-06 19:00",
+    "last_seen": "2026-09-14 19:00",
     "sessions": [
       "19:00"
     ],
     "dates": [
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-14"
     ],
-    "example": "Kalau pilih yang terlalu murah, ujung-ujungnya malah beli lagi.",
-    "example_cn": "如果选太便宜的，到头来反而还得再买一次。"
+    "example": "Kalau semua orang terus ganti pilihan, ujung-ujungnya kita nggak jadi pergi.",
+    "example_cn": "如果大家一直换选择，到头来我们可能就去不成了。"
   },
   {
     "word": "nggak worth it",
@@ -7919,17 +7933,19 @@ window.DAILY_VOCAB_DB = [
     "en": "member",
     "root": "anggota",
     "root_cn": "成员；会员",
-    "example": "Setiap anggota boleh kasih satu pilihan tempat.",
-    "example_cn": "每个成员都可以提一个地点选择。",
+    "example": "Kita cek dulu anggota mana yang benar-benar bisa ikut.",
+    "example_cn": "我们先确认哪些成员确实能参加。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-14"
@@ -7963,17 +7979,19 @@ window.DAILY_VOCAB_DB = [
     "en": "party; side; party involved",
     "root": "pihak",
     "root_cn": "一方；方面",
-    "example": "Satu pihak maunya di luar kantor, pihak lain lebih pilih tempat yang dekat.",
-    "example_cn": "一方想在办公室外面，另一方更想选近一点的地方。",
+    "example": "Kedua pihak sebenarnya setuju, cuma detail waktunya belum beres.",
+    "example_cn": "双方其实都同意，只是时间细节还没处理好。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-14"
@@ -7985,18 +8003,20 @@ window.DAILY_VOCAB_DB = [
     "en": "great; solid; excellent",
     "root": "mantap",
     "root_cn": "稳；确定；很棒",
-    "example": "Tempatnya kelihatan mantap dan harganya juga masih masuk akal.",
-    "example_cn": "那个地方看起来很不错，价格也还算合理。",
+    "example": "Kalau tempatnya dekat dan harganya masuk akal, menurutku sudah mantap.",
+    "example_cn": "如果地方近、价格也合理，我觉得就很不错了。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "19:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 08:00",
+    "last_seen": "2026-09-14 19:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "19:00"
     ],
     "dates": [
       "2026-09-14"
