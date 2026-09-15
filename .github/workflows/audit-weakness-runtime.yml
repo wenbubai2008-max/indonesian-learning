@@ -1,0 +1,117 @@
+name: Audit weakness runtime
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-weakness-runtime.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Harden weakness runtime
+        shell: bash
+        run: |
+          set -e
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          # A. Remove the obsolete home-module stability loader. It had a MutationObserver
+          #    that repeatedly appendChild'ed already ordered cards and could create an rAF loop.
+          p=Path('data/unfamiliar-daily-review.js')
+          s=p.read_text()
+          s=s.replace("  // 保留单独、无冲突的释义修正和首页模块稳定脚本。\n  loadOnce('data/weakness-meaning-fix.js?v=20260915-3','data-weakness-meaning-fix');\n  loadOnce('data/home-modules-stability.js?v=20260915-2','data-home-modules-stability');",
+                      "  // 保留单独、无冲突的释义修正。首页布局统一交给 index.html 中的 home-modules-layout.js。\n  loadOnce('data/weakness-meaning-fix.js?v=20260915-3','data-weakness-meaning-fix');")
+          s=s.replace("data/master-top1000-weak-merge.js?v=20260913-core-only1","data/master-top1000-weak-merge.js?v=20260915-core-only2")
+          p.write_text(s)
+
+          # B. Make the master-core guard genuinely singleton and stop doing 977-item work
+          #    on every weakness-pool change (the master list no longer depends on weak state).
+          p=Path('data/master-top1000-weak-merge.js')
+          s=p.read_text()
+          if 'window.__masterTop1000WeakMergeLoaded' not in s:
+              s=s.replace("(function(){\n", "(function(){\n  if(window.__masterTop1000WeakMergeLoaded)return;\n  window.__masterTop1000WeakMergeLoaded=true;\n", 1)
+          s=s.replace("['vocab-library-ready','master-vocab-ready','master-library-selected','master-top1000-weak-merged','weak-pool-changed']",
+                      "['vocab-library-ready','master-vocab-ready','master-library-selected','master-top1000-weak-merged']")
+          p.write_text(s)
+
+          # C. The vocab upgrade used a different data-* marker and could load the same
+          #    master guard a second time. Respect either marker and the already-loaded API.
+          p=Path('data/vocab-memory-feedback.js')
+          s=p.read_text()
+          old="""(function(){
+  if(document.querySelector('script[data-master-top1000-weak-merge]'))return;
+  var s=document.createElement('script');s.src='data/master-top1000-weak-merge.js?v=20260913-stable12';s.dataset.masterTop1000WeakMerge='1';document.head.appendChild(s);
+})();"""
+          new="""(function(){
+  if(window.__masterTop1000WeakMergeLoaded||window.lockMasterToCore||document.querySelector('script[data-master-core-guard],script[data-master-top1000-weak-merge]'))return;
+  var s=document.createElement('script');s.src='data/master-top1000-weak-merge.js?v=20260915-core-only2';s.dataset.masterTop1000WeakMerge='1';document.head.appendChild(s);
+})();"""
+          if old not in s:
+              raise SystemExit('vocab-memory-feedback master loader target not found')
+          s=s.replace(old,new)
+          p.write_text(s)
+
+          # D. Browser back/forward or a direct #weakness URL previously only revealed the
+          #    old DOM. Refresh the weakness session without creating another history entry.
+          p=Path('data/home-modules-layout.js')
+          s=p.read_text()
+          marker="""  function installHistoryNavigation(){
+    if(window.__indoHistoryNavInstalled||typeof window.go!=='function')return;"""
+          if 'function refreshHistoryPage(' not in s:
+              helper="""  function refreshHistoryPage(id){
+    if(id==='weakness'&&typeof window.openWeaknessV2==='function'){
+      setTimeout(function(){
+        if(currentPage()==='weakness')window.openWeaknessV2();
+      },0);
+    }
+  }
+
+"""
+              if marker not in s:
+                  raise SystemExit('home-modules-layout installHistoryNavigation marker not found')
+              s=s.replace(marker,helper+marker)
+          s=s.replace("    if(wanted!==initial)renderPage(wanted);\n", "    if(wanted!==initial)renderPage(wanted);\n    if(wanted!==initial)refreshHistoryPage(wanted);\n")
+          old_pop="""    window.addEventListener('popstate',function(e){
+      const st=e.state;
+      if(st&&st.__indoSite&&st.page)renderPage(st.page);
+      else{
+        const hp=(location.hash||'').replace(/^#/,'');
+        renderPage(document.getElementById(hp)?hp:'home');
+      }
+    });"""
+          new_pop="""    window.addEventListener('popstate',function(e){
+      const st=e.state;
+      let target='home';
+      if(st&&st.__indoSite&&st.page)target=st.page;
+      else{
+        const hp=(location.hash||'').replace(/^#/,'');
+        target=document.getElementById(hp)?hp:'home';
+      }
+      renderPage(target);
+      refreshHistoryPage(target);
+    });"""
+          if old_pop not in s:
+              raise SystemExit('home-modules-layout popstate target not found')
+          s=s.replace(old_pop,new_pop)
+          p.write_text(s)
+
+          # E. Force browsers to receive the audited runtime files.
+          p=Path('index.html')
+          s=p.read_text()
+          s=re.sub(r'data/unfamiliar-daily-review\.js\?v=[^"<]+','data/unfamiliar-daily-review.js?v=20260915-audit1',s)
+          s=re.sub(r'data/home-modules-layout\.js\?v=[^"<]+','data/home-modules-layout.js?v=20260915-audit1',s)
+          s=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"<]+','data/vocab-memory-feedback.js?v=20260915-audit1',s)
+          p.write_text(s)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/unfamiliar-daily-review.js data/master-top1000-weak-merge.js data/vocab-memory-feedback.js data/home-modules-layout.js index.html
+          git diff --cached --quiet || git commit -m 'Harden weakness runtime after full audit'
+          git pull --rebase origin main
+          git push origin HEAD:main
