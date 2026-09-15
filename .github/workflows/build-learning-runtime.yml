@@ -39,9 +39,7 @@ jobs:
           node <<'NODE'
           const fs=require('fs'),vm=require('vm');
           const ctx={window:{}};vm.createContext(ctx);
-          for(const p of ['data/master-vocab-data.js','data/master-vocab-data-2.js','data/master-vocab-data-3.js','data/oral-vocab-candidates.js','data/daily-vocab-data.js']){
-            vm.runInContext(fs.readFileSync(p,'utf8'),ctx,{filename:p});
-          }
+          for(const p of ['data/master-vocab-data.js','data/master-vocab-data-2.js','data/master-vocab-data-3.js','data/oral-vocab-candidates.js','data/daily-vocab-data.js'])vm.runInContext(fs.readFileSync(p,'utf8'),ctx,{filename:p});
           const key=s=>String(s||'').trim().toLowerCase();
           const masterRaw=Array.isArray(ctx.window.MASTER_VOCAB_DB)?ctx.window.MASTER_VOCAB_DB:[];
           const dailyRaw=Array.isArray(ctx.window.DAILY_VOCAB_DB)?ctx.window.DAILY_VOCAB_DB:[];
@@ -50,40 +48,38 @@ jobs:
           const weakWords=weakDoc&&weakDoc.words&&typeof weakDoc.words==='object'?Object.values(weakDoc.words):(Array.isArray(weakDoc)?weakDoc:Object.values(weakDoc||{}).filter(x=>x&&typeof x==='object'&&x.word));
 
           const master=[],seen=new Set();
-          for(const item of masterRaw){
-            const w=Array.isArray(item)?item[0]:(item&&item.word);const k=key(w);
-            if(!k||seen.has(k))continue;seen.add(k);master.push(String(w).trim());
-          }
+          for(const item of masterRaw){const w=Array.isArray(item)?item[0]:(item&&item.word),k=key(w);if(!k||seen.has(k))continue;seen.add(k);master.push(String(w).trim())}
           const dailySet=new Set(dailyRaw.map(x=>key(x&&x.word)).filter(Boolean));
           const weakMap=new Map();for(const x of weakWords){const k=key(x&&x.word);if(k)weakMap.set(k,x)}
           const activeMap=new Map([...weakMap].filter(([,x])=>x&&x.status==='active'));
           const masteredCount=[...weakMap.values()].filter(x=>x&&x.status==='mastered').length;
 
-          const newPool=master.filter(w=>activeMap.has(key(w))&&!dailySet.has(key(w)));
-          const newSet=new Set(newPool.map(key));
-          const oralNew=oralRaw.filter(x=>newSet.has(key(x&&x.word))).map(x=>[String(x.word||'').trim(),x.register||'',x.oral||'',x.root||'',Number.isFinite(Number(x.rank))?Number(x.rank):null]);
+          const newFull=master.filter(w=>activeMap.has(key(w))&&!dailySet.has(key(w)));
+          const newFullSet=new Set(newFull.map(key));
+          const oralFull=oralRaw.filter(x=>newFullSet.has(key(x&&x.word))).map(x=>[String(x.word||'').trim(),x.register||'',x.oral||'',x.root||'',Number.isFinite(Number(x.rank))?Number(x.rank):null]);
+          const oralExposed=oralFull.slice(0,40);
+          const newExposed=[];const newSeen=new Set();
+          for(const w of [...newFull.slice(0,140),...oralExposed.map(x=>x[0])]){const k=key(w);if(!k||newSeen.has(k))continue;newSeen.add(k);newExposed.push(w)}
 
-          const review=[];
+          const reviewFull=[];
           for(const x of activeMap.values()){
             if(!dailySet.has(key(x.word)))continue;
             const reasons=Array.isArray(x.reasons)?x.reasons:[];
             let p=4;if(reasons.includes('quick_wrong')||x.last_wrong)p=1;else if(reasons.includes('memory_dont'))p=2;else if(reasons.includes('memory_fuzzy'))p=3;
-            review.push([String(x.word||'').trim(),p,reasons,Number(x.wrong_count||0),Number(x.right_streak||0),x.last_wrong||'',x.last_review||'',x.updated_at||x.last_seen||'']);
+            reviewFull.push([String(x.word||'').trim(),p,Number(x.wrong_count||0),x.last_wrong||'',x.last_review||'',x.updated_at||x.last_seen||'']);
           }
-          review.sort((a,b)=>a[1]-b[1]||String(b[7]||'').localeCompare(String(a[7]||'')));
-          const reviewSet=new Set(review.map(x=>key(x[0])));
-          const oralReview=oralRaw.filter(x=>reviewSet.has(key(x&&x.word))).map(x=>[String(x.word||'').trim(),x.register||'',x.oral||'',x.root||'',Number.isFinite(Number(x.rank))?Number(x.rank):null]);
+          reviewFull.sort((a,b)=>a[1]-b[1]||String(b[5]||'').localeCompare(String(a[5]||'')));
+          const reviewExposed=reviewFull.slice(0,60).map(x=>x.slice(0,5));
 
           const runtime={
-            version:2,
+            version:3,
             generated_at:new Date().toISOString(),
             weakness_updated_at:weakDoc&&weakDoc.updated_at?weakDoc.updated_at:'',
-            stats:{master_unique:master.length,weak_active_total:activeMap.size,weak_mastered_total:masteredCount,daily_taught_unique:dailySet.size,new_pool_total:newPool.length,review_pool_total:review.length,oral_new_pool_total:oralNew.length,oral_review_pool_total:oralReview.length},
-            schema:{oral:['word','register','counterpart','root','rank'],review:['word','priority','reasons','wrong_count','right_streak','last_wrong','last_review','updated_at']},
-            new_pool:newPool,
-            oral_new_pool:oralNew,
-            review_pool:review,
-            oral_review_pool:oralReview
+            stats:{master_unique:master.length,weak_active_total:activeMap.size,weak_mastered_total:masteredCount,daily_taught_unique:dailySet.size,new_pool_total_full:newFull.length,new_pool_exposed:newExposed.length,review_pool_total_full:reviewFull.length,review_pool_exposed:reviewExposed.length,oral_new_pool_total_full:oralFull.length,oral_new_pool_exposed:oralExposed.length},
+            schema:{oral:['word','register','counterpart','root','rank'],review:['word','priority','wrong_count','last_wrong','last_review']},
+            new_pool:newExposed,
+            oral_new_pool:oralExposed,
+            review_pool:reviewExposed
           };
           fs.writeFileSync('data/learning-runtime.json',JSON.stringify(runtime)+'\n');
           console.log(runtime.stats);
