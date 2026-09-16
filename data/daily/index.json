@@ -25,7 +25,7 @@
     {"date":"2026-09-13","am":true,"pm":true,"verified":"generated_daily_lesson","day":23,"am_day":23,"pm_day":23,"pm_status":"generated","am_status":"generated"},
     {"date":"2026-09-14","am":true,"pm":true,"verified":"generated_daily_lesson","day":24,"am_day":24,"am_status":"generated","pm_day":24,"pm_status":"generated_manual_recovery"},
     {"date":"2026-09-15","am":true,"pm":true,"verified":"generated_daily_lesson","day":25,"am_day":25,"am_status":"generated","pm_day":25,"pm_status":"lesson_complete"},
-    {"date":"2026-09-16","am":true,"pm":false,"verified":"generated_daily_lesson","day":26,"am_day":26,"am_status":"generated"}
+    {"date":"2026-09-16","am":true,"pm":true,"verified":"generated_daily_lesson","day":26,"am_day":26,"am_status":"generated","pm_day":26,"pm_status":"lesson_complete"}
   ],
   "updated":"2026-09-16",
   "note":"08:00 历史原文迁移：Day 2–4 仅导入聊天中可确认部分并明确标记不完整；Day 7 与 Day 8 的 08:00 标题均为 2026-08-29，冲突按原聊天保留。已有19:00晚课索引保持不删除。"
