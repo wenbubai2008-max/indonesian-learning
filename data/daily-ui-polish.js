@@ -48,6 +48,9 @@
   `;
   document.head.appendChild(st);
 
+  const PM_SWITCH_DATE='2026-09-16';
+  function pmTimeForDate(date){return String(date||'')>=PM_SWITCH_DATE?'18:00':'19:00';}
+
   function showCompleteToast(text){
     let t=document.getElementById('dailyCompleteToast');
     if(!t){t=document.createElement('div');t.id='dailyCompleteToast';t.className='dailyCompleteToast';document.body.appendChild(t);}
@@ -105,7 +108,8 @@
     localStorage.setItem('done_'+info.date+'_'+info.session,'1');
     markButtonDone(btn);
     syncHomeStatus(info.date,info.session);
-    showCompleteToast((info.session==='am'?'08:00 早间学习':'19:00 晚间学习')+' · 已记录完成');
+    const label=info.session==='am'?'08:00 早间学习':pmTimeForDate(info.date)+' 晚间学习';
+    showCompleteToast(label+' · 已记录完成');
   }
 
   async function latestAvailableDate(session,requested){
