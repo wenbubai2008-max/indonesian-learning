@@ -14,6 +14,118 @@ function ok(cond, msg){
   else failures.push(msg);
 }
 function warn(cond, msg){ if(cond) warnings.push(msg); }
+function norm(s){ return String(s == null ? '' : s).trim().toLowerCase().replace(/[.,!?;:，。！？；：]/g,'').replace(/\s+/g,' '); }
+function wordCount(s){ return String(s || '').trim().split(/\s+/).filter(Boolean).length; }
+function inRange(n,a,b){ return Number.isInteger(n) && n >= a && n <= b; }
+function unique(arr){ return new Set(arr).size === arr.length; }
+
+function validateLatestPm(){
+  const dir = rel('data/daily');
+  const files = fs.readdirSync(dir).filter(f => /^\d{4}-\d{2}-\d{2}-pm\.json$/.test(f)).sort();
+  if(!files.length){ warnings.push('No PM lesson files found'); return; }
+  const file = files[files.length - 1];
+  const pm = readJSON('data/daily/' + file);
+  const date = String(pm.date || file.slice(0,10));
+  if(date < '2026-09-16') return;
+
+  ok(pm.session === 'pm', `latest PM ${date}: session=pm`);
+  ok(pm.time === '18:00', `latest PM ${date}: time=18:00`);
+  ok(pm.write_status === 'lesson_complete', `latest PM ${date}: write_status=lesson_complete`);
+  ok(/^18:00/.test(String(pm.title || '')), `latest PM ${date}: title starts with 18:00`);
+
+  const vocab = Array.isArray(pm.vocab) ? pm.vocab : [];
+  const groups = {
+    new: vocab.filter(v => v && v.source_group === 'new'),
+    review: vocab.filter(v => v && v.source_group === 'review'),
+    application: vocab.filter(v => v && v.source_group === 'application')
+  };
+  ok(inRange(vocab.length,10,12), `latest PM ${date}: 10-12 core vocab`);
+  ok(inRange(groups.new.length,3,4), `latest PM ${date}: 3-4 new words`);
+  ok(inRange(groups.review.length,4,5), `latest PM ${date}: 4-5 review words`);
+  ok(inRange(groups.application.length,2,3), `latest PM ${date}: 2-3 application words`);
+
+  const words = vocab.map(v => norm(v && v.word)).filter(Boolean);
+  ok(unique(words), `latest PM ${date}: core vocab has no duplicates`);
+  const newSet = new Set(groups.new.map(v => norm(v.word)));
+  const reviewSet = new Set(groups.review.map(v => norm(v.word)));
+  const appSet = new Set(groups.application.map(v => norm(v.word)));
+  const overlap = [...newSet].filter(w => reviewSet.has(w) || appSet.has(w)).concat([...reviewSet].filter(w => appSet.has(w)));
+  ok(overlap.length === 0, `latest PM ${date}: new/review/application groups are disjoint`);
+
+  const declaredNew = Array.isArray(pm.new_words) ? pm.new_words.map(norm).filter(Boolean).sort() : [];
+  const actualNew = [...newSet].sort();
+  ok(JSON.stringify(declaredNew) === JSON.stringify(actualNew), `latest PM ${date}: new_words matches source_group=new`);
+
+  const requiredFields = ['word','display','audio_text','cn','en','root','root_cn','formation','example','example_cn','synonym_note','usage_note','source_group','is_new','is_oral_new'];
+  vocab.forEach((v,i) => {
+    const label = v && v.word ? v.word : `#${i+1}`;
+    for(const f of requiredFields){
+      ok(Object.prototype.hasOwnProperty.call(v || {}, f), `latest PM ${date}: ${label} has ${f}`);
+    }
+    ok(Boolean(String(v && v.formation || '').trim()), `latest PM ${date}: ${label} formation non-empty`);
+    ok(Boolean(String(v && v.synonym_note || '').trim()), `latest PM ${date}: ${label} synonym_note non-empty`);
+    if(String(v && v.root || '').trim()) ok(Boolean(String(v && v.root_cn || '').trim()), `latest PM ${date}: ${label} root_cn present`);
+  });
+
+  const reading = pm.reading || {};
+  const wc = wordCount(reading.text);
+  ok(inRange(wc,80,120), `latest PM ${date}: reading is 80-120 words (${wc})`);
+  ok(Boolean(String(reading.cn || '').trim()), `latest PM ${date}: reading Chinese translation exists`);
+
+  const lines = pm.dialogue && Array.isArray(pm.dialogue.lines) ? pm.dialogue.lines : [];
+  ok(lines.length >= 4, `latest PM ${date}: dialogue exists`);
+  ok(lines.length > 0 && lines.every(x => String(x && x.id || '').trim() && String(x && x.cn || '').trim()), `latest PM ${date}: dialogue lines have Indonesian and Chinese`);
+
+  const rewrite = Array.isArray(pm.rewrite) ? pm.rewrite : [];
+  ok(inRange(rewrite.length,3,4), `latest PM ${date}: rewrite/application has 3-4 tasks`);
+  ok(rewrite.length > 0 && rewrite.every(x => String(x && x.task || '').trim() && String(x && x.reference_answer || '').trim() && String(x && x.reference_cn || '').trim()), `latest PM ${date}: rewrite tasks have answer + Chinese`);
+
+  const test = pm.daily_test || {};
+  const items = Array.isArray(test.items) ? test.items : [];
+  const choices = items.filter(x => x && x.type === 'choice');
+  const fills = items.filter(x => x && x.type === 'fill');
+  const orders = items.filter(x => x && x.type === 'order');
+  ok(items.length === 6 && choices.length === 3 && fills.length === 2 && orders.length === 1, `latest PM ${date}: daily_test is 3 choice + 2 fill + 1 order`);
+
+  choices.forEach((x,i) => {
+    const opts = Array.isArray(x.options) ? x.options : [];
+    const ai = x.answer_index;
+    ok(String(x.prompt || '').trim().length > 0 && opts.length >= 2 && Number.isInteger(ai) && ai >= 0 && ai < opts.length && String(x.explain || '').trim().length > 0, `latest PM ${date}: choice ${i+1} canonical schema valid`);
+    if(x.answer != null && Number.isInteger(ai) && ai >= 0 && ai < opts.length){
+      ok(norm(opts[ai]) === norm(x.answer), `latest PM ${date}: choice ${i+1} answer_index matches answer`);
+    }
+  });
+
+  fills.forEach((x,i) => {
+    const prompt = String(x.prompt || '');
+    ok(/^填空\s*[：:]/.test(prompt) && /[（(][^（）()]+[）)]/.test(prompt) && String(x.answer || '').trim() && String(x.explain || '').trim(), `latest PM ${date}: fill ${i+1} has inline Chinese hint + answer`);
+  });
+
+  if(orders.length){
+    const x = orders[0];
+    const tokens = Array.isArray(x.tokens) ? x.tokens : [];
+    ok(/按照中文|根据中文/.test(String(x.prompt || '')) && inRange(tokens.length,5,8) && String(x.answer || '').trim() && String(x.answer_cn || '').trim() && String(x.explain || '').trim(), `latest PM ${date}: order has Chinese prompt + 5-8 tokens + answers`);
+  }
+
+  const selfCheck = Array.isArray(test.self_check) ? test.self_check : [];
+  ok(selfCheck.length > 0 && selfCheck.every(x => typeof x === 'string' && x.trim()), `latest PM ${date}: self_check is non-empty string array`);
+  const review = pm.review;
+  ok(review && !Array.isArray(review) && String(review.title || '').trim() && Array.isArray(review.steps) && review.steps.length > 0 && review.steps.every(x => typeof x === 'string' && x.trim()), `latest PM ${date}: final review uses {title, steps[]}`);
+
+  const amPath = `data/daily/${date}-am.json`;
+  if(fs.existsSync(rel(amPath))){
+    const am = readJSON(amPath);
+    const amWords = new Set([
+      ...(Array.isArray(am.vocab) ? am.vocab.map(v => norm(v && v.word)) : []),
+      ...(Array.isArray(am.review_vocab) ? am.review_vocab.map(v => norm(typeof v === 'string' ? v : v && v.word)) : [])
+    ].filter(Boolean));
+    groups.application.forEach(v => {
+      const marked = /今天\s*08:00\s*已教/.test(String(v.formation || '') + ' ' + String(v.usage_note || ''));
+      if(amWords.has(norm(v.word))) ok(marked, `latest PM ${date}: same-day application ${v.word} is marked 08:00 taught`);
+      if(marked) ok(amWords.has(norm(v.word)), `latest PM ${date}: 08:00 marker for ${v.word} is not false`);
+    });
+  }
+}
 
 try {
   const rules = readJSON('data/learning-pool-rules.json');
@@ -85,20 +197,32 @@ try {
   ok(css.includes('@media (max-width:430px)') && css.includes('grid-template-columns:1fr'), 'first-paint narrow layout keeps 1 column');
   ok(css.includes('[onclick*="vocab"]{order:1') && css.includes('[onclick*="openExtensiveV2"]{order:2') && css.includes('[onclick*="openQuickPracticeV2"]{order:3') && css.includes('[onclick*="openWeaknessV2"]{order:4') && css.includes('[onclick*="affix"]{order:5'), 'first-paint card order is protected');
 
+  const protectedOrder = "const ORDER=['词汇学习','泛读','快速练习','弱项强化','前后缀','难点解释'];";
   const layout = read('data/home-modules-layout.js');
-  ok(layout.includes("const ORDER=['词汇学习','泛读','快速练习','弱项强化','前后缀','难点解释'];"), 'JS card order matches the protected order');
+  ok(layout.includes(protectedOrder), 'JS card order matches the protected order');
+  if(fs.existsSync(rel('data/home-modules-stability.js'))){
+    ok(read('data/home-modules-stability.js').includes(protectedOrder), 'secondary homepage stability order cannot contradict primary order');
+  }
 
   const compat = read('data/vocab-dom-compat.js');
   ok(!/characterData\s*:\s*true/.test(compat), 'compat layer does not observe all character-data changes');
-  const observerMatch = compat.match(/new MutationObserver\(([\s\S]*?)\)\.observe/);
-  ok(!observerMatch || !/patchHomeTime|patchDailyPmDisplay|wrapOpenDaily|wrapLoadReading/.test(observerMatch[1]), 'MutationObserver does not rewrite PM time/layout');
+  ok(!/new MutationObserver/.test(compat), 'compat layer has no whole-page MutationObserver');
   ok(compat.includes("const PM_SWITCH_DATE='2026-09-16'"), 'PM historical switch date is protected');
+
+  const historyV2 = read('data/history-v2.js');
+  ok(historyV2.includes("const PM_SWITCH_DATE='2026-09-16'") && /pmTimeForDate\(d\)/.test(historyV2), 'loaded lesson renderer handles 18:00/19:00 by lesson date');
+
+  const polish = read('data/daily-ui-polish.js');
+  ok(/pmTimeForDate\(info\.date\)/.test(polish), 'completion toast uses date-aware PM time');
 
   const light = read('data/daily-light-test.js');
   ok(/function choiceAnswerIndex/.test(light) && /it\.answer_index/.test(light) && /it\.answer/.test(light), 'PM choice renderer supports canonical answer_index and legacy answer fallback');
+  ok(/if\(!ok\)btn\.classList\.add\('wrong'\)/.test(light) && /data-correct=['\"]?1/.test(light), 'PM choice UI distinguishes correct green from wrong red');
   ok(/function selfCheckHtml\(items\)/.test(light) && !/function selfCheckHtml\([^)]*\)\{return ''/.test(light), 'PM self_check is rendered');
   ok(/x\.review\.steps/.test(light) && /x\.review\.items/.test(light), 'PM final review renders steps and legacy items');
   ok(/am\.review_vocab/.test(light), 'same-day AM review_vocab is recognized for application marker');
+
+  validateLatestPm();
 
   const index = read('index.html');
   warn(index.includes('每天 08:00 / 19:00') || index.includes('>19:00<'), 'Known legacy debt: index.html still contains old 19:00 literals. Do not fix this by adding a global DOM observer; migrate source directly when safely editing index.html.');
