@@ -46,7 +46,7 @@ jobs:
           for(const f of files){
             if(!fs.existsSync(f))continue;
             const lesson=JSON.parse(fs.readFileSync(f,'utf8'));
-            const session=lesson.time||(lesson.session==='pm'?'19:00':'08:00');
+            const session=lesson.time||(lesson.session==='pm'?'18:00':'08:00');
             const date=lesson.date;
             const lessonNewSet=new Set((lesson.new_words||[]).map(key).filter(Boolean));
 
