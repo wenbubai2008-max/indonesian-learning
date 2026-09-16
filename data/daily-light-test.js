@@ -6,12 +6,17 @@
   if(!document.getElementById('dailyLightPatchStyle')){
     const st=document.createElement('style');
     st.id='dailyLightPatchStyle';
-    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.dailyLightExtra .dailyFixAnswer{margin-top:8px}';
+    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.dailyLightExtra .dailyFixAnswer{margin-top:8px}.dailyLightSelf{margin-top:12px;padding:10px 12px;background:#f8faff;border-radius:10px}.dailyLightSelf ul{margin:7px 0 0;padding-left:20px}.dailyLightSelf li{margin:4px 0}';
     document.head.appendChild(st);
   }
 
   function sec(title,body,extraClass=''){return `<div class="dailyFixSec ${extraClass}"><h3><span class="dailyFixNo">✓</span>${esc(title)}</h3>${body}</div>`}
-  function choice(it,i){return `<div class="dailyFixItem"><b>${i+1}. ${esc(it.prompt||'')}</b><div class="dailyFixChoiceWrap">${(it.options||[]).map((o,j)=>`<button class="dailyFixChoice" data-correct="${j===it.answer_index?1:0}" onclick='dailyLightChoice(this,${j===it.answer_index},${JSON.stringify(it.explain||'')})'>${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="dailyFixFeedback"></div></div>`}
+  function choiceAnswerIndex(it){
+    if(Number.isInteger(it.answer_index)&&it.answer_index>=0&&it.answer_index<(it.options||[]).length)return it.answer_index;
+    if(it.answer!=null){const a=norm(it.answer),idx=(it.options||[]).findIndex(o=>norm(o)===a);if(idx>=0)return idx;}
+    return -1;
+  }
+  function choice(it,i){const ai=choiceAnswerIndex(it);return `<div class="dailyFixItem"><b>${i+1}. ${esc(it.prompt||'')}</b><div class="dailyFixChoiceWrap">${(it.options||[]).map((o,j)=>`<button class="dailyFixChoice" data-correct="${j===ai?1:0}" onclick='dailyLightChoice(this,${j===ai},${JSON.stringify(it.explain||'')})'>${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="dailyFixFeedback"></div></div>`}
 
   const fillHintFallback={
     'aku ___ waktu sebentar buat cek arahnya':'需要',
@@ -64,7 +69,10 @@
     return `<div class="dailyFixItem dailyLightOrder" data-order="[]"><b>${i+1}. ${esc(orderPrompt(it))}</b><div class="dailyLightTokenWrap" data-tokens='${esc(JSON.stringify(tokens))}' style="display:flex;gap:7px;flex-wrap:wrap;margin-top:10px">${tokenButtons(tokens)}</div><div class="dailyLightOrderOut" style="min-height:42px;margin-top:10px;padding:9px 11px;background:#f8faff;border-radius:9px"></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="dailyFixToggle" onclick='dailyLightOrderCheck(this,${JSON.stringify(it.answer||'')},${JSON.stringify(cn)})'>检查顺序</button><button type="button" class="dailyFixToggle" onclick="dailyLightOrderReset(this)">重排</button></div><div class="dailyFixFeedback"></div></div>`;
   }
 
-  function selfCheckHtml(){return '';}
+  function selfCheckHtml(items){
+    if(!Array.isArray(items)||!items.length)return '';
+    return `<div class="dailyLightSelf"><b>自检</b><ul>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`;
+  }
   function renderTest(t,x){
     let h='<div class="dailyFixMeta" style="margin-bottom:10px">轻量检测今天刚学的内容，不追求全对，也不用写长句。</div>';
     (t.items||[]).forEach((it,i)=>{if(it.type==='choice')h+=choice(it,i);else if(it.type==='fill')h+=fill(it,i);else if(it.type==='order')h+=order(it,i)});
@@ -84,14 +92,14 @@
   }
   function finalReviewHtml(x){
     if(!x.review||Array.isArray(x.review))return '';
-    const steps=Array.isArray(x.review.steps)?x.review.steps:[];if(!steps.length)return '';
+    const steps=Array.isArray(x.review.steps)?x.review.steps:(Array.isArray(x.review.items)?x.review.items:[]);if(!steps.length)return '';
     return sec(x.review.title||'最后 5 分钟复盘',steps.map(s=>`<div class="dailyFixItem">${esc(typeof s==='string'?s:(s.text||''))}</div>`).join(''),'dailyLightExtra dailyReviewPatch');
   }
 
   async function markSameDayAm(x,date,s){
     if(s!=='pm'||!Array.isArray(x.vocab))return;
     let am;try{am=await fetchJSON(`data/daily/${date}-am.json`)}catch(e){return}
-    const amSet=new Set((am.vocab||[]).map(v=>norm(v.word)));
+    const amSet=new Set([...(am.vocab||[]).map(v=>norm(v.word)),...(am.review_vocab||[]).map(v=>norm(typeof v==='string'?v:v.word))]);
     const cards=[...document.querySelectorAll('#dailyBody .dailyFixVocab')];
     x.vocab.forEach((v,i)=>{
       if(v.source_group!=='application'||!amSet.has(norm(v.word)))return;
