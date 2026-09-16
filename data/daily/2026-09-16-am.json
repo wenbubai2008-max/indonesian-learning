@@ -31,18 +31,18 @@
     "cn":"今天早上团队负责人叫我们讨论下个月的活动。我们收到了一些关于适合哪种活动的建议。最开始我们想去远一点的地方，但路程会需要很长时间。重新寻找后，我们发现了一个更近、更舒服的地方。有时候计划确实需要改变。有一处日程写错了，所以我马上把它改好。我们也把工作分开，避免只依赖一个人。这样我们可以更快完成准备，也不会因为疏忽漏掉重要事情。到头来，简单一点的活动反而更容易安排。"
   },
   "quiz": [
-    {"task":"用 mendapatkan 完成：Kami ___ informasi baru dari ketua tim.","answer":"mendapatkan","answer_cn":"我们从团队负责人那里得到了新信息。"},
-    {"task":"kadang 的较完整标准形式是什么？","answer":"kadang-kadang","answer_cn":"有时。"},
-    {"task":"复习：ngandelin 在句子 Jangan cuma ngandelin satu orang 里是什么意思？","answer":"依赖、指望。","answer_cn":"不要只依赖一个人。"}
+    {"question":"用 mendapatkan 完成：Kami ___ informasi baru dari ketua tim.","options":["mendapatkan","menemukan","membutuhkan"],"answer_index":0,"explain":"mendapatkan = 获得、得到。完整句：Kami mendapatkan informasi baru dari ketua tim."},
+    {"question":"kadang 的较完整标准形式是什么？","options":["kadang-kadang","kadang saja","terkadang-kadang"],"answer_index":0,"explain":"kadang-kadang = 有时；日常口语中常简化为 kadang。"},
+    {"question":"复习：ngandelin 在 Jangan cuma ngandelin satu orang 里是什么意思？","options":["依赖、指望","批评、责怪","提醒、通知"],"answer_index":0,"explain":"ngandelin = 依赖、指望、靠。Jangan cuma ngandelin satu orang = 不要只依赖一个人。"}
   ],
-  "output_task": {
+  "output": {
     "task":"请用至少4个今天的新词，说3–4句：你要和同事安排一次活动，但计划临时有变化，你会怎么办？",
     "reference_answer":"Kadang rencana acara bisa berubah. Aku akan minta masukan dari ketua tim lalu mencari jenis kegiatan yang lebih mudah. Kalau menemukan masalah di jadwal, aku akan langsung benerin. Kita juga membutuhkan pembagian tugas yang jelas supaya semuanya cepat selesai.",
     "reference_cn":"有时候活动计划会变化。我会先听团队负责人的意见，再找一种更容易安排的活动。如果发现日程有问题，我会马上改好。我们也需要明确分工，这样所有事情能更快完成。"
   },
   "review": [
-    {"word":"ngandelin","cn":"依赖；指望；靠","focus":"不要只会认，尝试主动说：Jangan cuma ngandelin satu orang."},
-    {"word":"kecolongan","cn":"一时疏忽没防住；漏掉问题","focus":"和工作检查场景绑定：Jangan sampai kecolongan."},
-    {"word":"ujung-ujungnya","cn":"到头来；结果最后还是","focus":"练习表达一个过程最后产生的结果。"}
+    "ngandelin = 依赖、指望、靠；主动表达：Jangan cuma ngandelin satu orang.",
+    "kecolongan = 一时疏忽没防住、漏掉问题；工作检查场景可说：Jangan sampai kecolongan.",
+    "ujung-ujungnya = 到头来、结果最后还是；用来表达一个过程最终产生的结果。"
   ]
 }
