@@ -27,7 +27,7 @@
 - PM：18:00
 - PM 切换日期：`2026-09-16`
 - `2026-09-15` 及以前历史 PM 仍属于 19:00，不得批量改成 18:00
-- 20:00 目前只是临时补漏，不属于课程合同本身，可在正式 18:00 连续稳定后关闭
+- 20:00 补漏任务已于 `2026-09-16` 关闭；正式学习任务只保留 08:00、12:00、18:00
 
 ## 2. 已发生过的错误，禁止再次出现
 
@@ -60,6 +60,7 @@
 以后：
 - 禁止为静态时间、文字、卡片布局增加 whole-page / character-data observer
 - observer 只能用于非常局部且不可避免的动态节点，而且不得在回调中制造同类 DOM 变化循环
+- `data/vocab-dom-compat.js` 不得再增加全页面 MutationObserver
 
 ### E. FOUC：刷新先看到旧长卡，再变成新卡
 发生过：HTML 首屏按旧两列大卡渲染，JS 后加载再改成 6 个小卡。
@@ -80,7 +81,7 @@
 5. 前后缀
 6. 难点解释
 
-`daily-width-fix.css` 的 first-paint order 和 `home-modules-layout.js` 的 `ORDER` 必须一致。
+`daily-width-fix.css`、`home-modules-layout.js` 以及任何备用稳定脚本的顺序必须一致。
 
 ### G. 改时间牵连布局/逻辑
 发生过：用户只要求 19→18，却通过运行后 DOM patch 带来卡顿、闪烁和卡片变化。
@@ -88,6 +89,7 @@
 以后采用“范围锁”：
 - 只改时间 = 只改 schedule / time contract / 必要显示兼容
 - 不动学习卡结构、不动词池、不动课程详细度、不重构无关代码
+- PM 页面时间必须按日期判断：`2026-09-16` 起 18:00，之前历史 19:00
 
 ### H. 临时 workflow 污染仓库
 发生过：补课/审计过程中创建大量一次性 Actions workflow，导致噪声与潜在竞争。
@@ -97,6 +99,19 @@
 - `sync-daily-vocab.yml`
 
 任何新增 workflow 必须有长期必要性，不能只是一次性修复手段。
+
+### I. 课程规则写对了，但实际 JSON Schema 仍写错
+发生过：`2026-09-16` 18:00 晚课内容本身正确，但 3 道 choice 漏写 `answer_index`，导致网页把正确答案判成红色；同一份课还一度把 `review.steps` 写成 `review.items`，self_check 前端也曾不显示。
+
+以后：
+- 不允许只检查 `learning-pool-rules.json` 里的“规则文字正确”
+- `.github/scripts/regression-guard.js` 必须直接读取最新 PM JSON 做实际结构校验
+- 3 个 choice 必须逐题校验 `answer_index` 是有效整数，并且若同时有 `answer`，两者必须指向同一个答案
+- 2 个 fill 必须有同行中文提示、answer、explain
+- 1 个 order 必须有完整中文 prompt、5–8 个 tokens、answer、answer_cn、explain
+- `daily_test.self_check` 必须是非空字符串数组
+- final review 固定 `{title, steps:[...]}`
+- 前端保留 legacy fallback 只是容错，不能代替标准 JSON Schema
 
 ## 3. 每次修改前：Preflight
 
@@ -109,25 +124,30 @@
 5. 搜索相关关键词后，影响面有哪些？
 
 ### 常见影响面搜索
-改 PM 时间时至少搜索：
+改 PM 时间时至少检查：
 - `19:00`
 - `18:00`
 - `晚间学习`
 - `loadReading('pm')`
 - `PM_SWITCH_DATE`
 - `scheduled_time`
+- `history-v2.js`
+- `daily-ui-polish.js`
+- `vocab-dom-compat.js`
 
 改晚课内容时至少检查：
 - `learning-pool-rules.json`
 - `learning-runtime.json`
 - 18点自动任务 prompt
-- 20点补漏 prompt
 - PM 渲染脚本
+- 最新 `data/daily/YYYY-MM-DD-pm.json`
+- `regression-guard.js` 对真实课程文件的检查
 
 改首页卡片时至少检查：
 - `index.html`
 - `data/daily-width-fix.css`
 - `data/home-modules-layout.js`
+- `data/home-modules-stability.js`
 - `data/vocab-dom-compat.js`
 
 ## 4. 每次修改后：固定回归检查
@@ -167,10 +187,12 @@
 - [ ] dialogue 存在且逐句中文
 - [ ] rewrite/application 3–4项
 - [ ] daily_test = 3 choice + 2 fill + 1 order
+- [ ] 3 个 choice 的 `answer_index` 都有效；如果同时有 `answer` 必须一致
 - [ ] fill 同行有括号中文提示
-- [ ] order 有完整中文 + tokens + answer + answer_cn
+- [ ] order 有完整中文 + 5–8 tokens + answer + answer_cn
 - [ ] self_check 存在
-- [ ] final review 存在
+- [ ] final review 使用 `review.steps`
+- [ ] 最新真实 PM JSON 通过 regression guard，而不是只看规则文件
 
 ### D. 首页/UI
 - [ ] 首次打开不卡
@@ -184,12 +206,15 @@
 - [ ] 首页显示 08:00 / 18:00
 - [ ] 今日 PM 卡显示18:00
 - [ ] 今日 PM 短文入口显示18:00
+- [ ] 今日 PM 课程导航/标签/完成提示显示18:00
 - [ ] 2026-09-15及以前历史PM仍显示19:00
+- [ ] 正确答案绿色；错误选择红色且同时标出正确答案
 
 ### E. 自动任务/Actions
 - [ ] 08:00 task enabled
+- [ ] 12:00 task enabled
 - [ ] 18:00 task enabled
-- [ ] 补漏 task 如仍存在则20:00 enabled
+- [ ] 20:00补漏保持 disabled，除非用户明确重新开启
 - [ ] 任务失败不得自动把正式任务 disabled
 - [ ] `.github/workflows` 没有临时/重复 workflow
 - [ ] `sync-daily-vocab.yml` 是唯一 daily-vocab writer
@@ -219,10 +244,10 @@
 
 ## 6. 已知技术债务
 
-当前 `index.html` 仍保留部分历史 19:00 字面值，现代页面通过轻量兼容层按照日期显示 18:00/19:00。未来如果直接整理 `index.html`：
+当前 `index.html` 仍保留少量历史 `19:00` 静态字面值，现代页面通过轻量、无全局 observer 的兼容层把当前首页/当前PM短文入口显示为18:00。未来安全整理 `index.html` 时：
 
 - 应直接把当前首页/当前PM静态默认值迁移到18:00
 - 同时保留 `2026-09-16` 前历史PM=19:00 的日期兼容
-- 完成后应删减兼容补丁，而不是再加新的全局 observer
+- 完成后应进一步删减兼容补丁，而不是增加新的全局 observer
 
 在这项迁移完成前，不要为了消除字面值而再次增加运行后全页面重写逻辑。
