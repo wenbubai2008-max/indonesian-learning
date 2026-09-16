@@ -2,6 +2,7 @@
   const base=window.openDaily;if(typeof base!=='function')return;
   const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
   const norm=s=>String(s||'').toLowerCase().trim().replace(/[.,!?;:，。！？；：]/g,'').replace(/\s+/g,' ');
+  const correctSelector='[data-correct="1"]';
 
   if(!document.getElementById('dailyLightPatchStyle')){
     const st=document.createElement('style');
@@ -111,7 +112,7 @@
     });
   }
 
-  window.dailyLightChoice=function(btn,ok,explain){const box=btn.closest('.dailyFixItem');if(!box||box.dataset.done)return;box.dataset.done='1';box.querySelectorAll('.dailyFixChoice').forEach(b=>{b.disabled=true;if(b.dataset.correct==='1')b.classList.add('correct')});if(!ok)btn.classList.add('wrong');const fb=box.querySelector('.dailyFixFeedback');if(fb){fb.textContent=(ok?'答对了。':'答错了。')+(explain||'');fb.classList.add('show')}};
+  window.dailyLightChoice=function(btn,ok,explain){const box=btn.closest('.dailyFixItem');if(!box||box.dataset.done)return;box.dataset.done='1';box.querySelectorAll('.dailyFixChoice').forEach(b=>{b.disabled=true});box.querySelectorAll(correctSelector).forEach(b=>b.classList.add('correct'));if(!ok)btn.classList.add('wrong');const fb=box.querySelector('.dailyFixFeedback');if(fb){fb.textContent=(ok?'答对了。':'答错了。')+(explain||'');fb.classList.add('show')}};
   window.dailyLightFillCheck=function(btn,answer,cn){const box=btn.closest('.dailyFixItem'),inp=box.querySelector('.dailyLightFill'),fb=box.querySelector('.dailyFixFeedback');if(!inp||!fb)return;const ok=norm(inp.value)===norm(answer);inp.disabled=true;btn.disabled=true;fb.innerHTML=ok?'答对了。':`参考答案：<b>${esc(answer)}</b>${cn?`<div class="dailyFixCnLine">${esc(cn)}</div>`:''}`;fb.classList.add('show')};
   window.dailyLightPick=function(btn){const box=btn.closest('.dailyLightOrder'),out=box.querySelector('.dailyLightOrderOut'),arr=JSON.parse(box.dataset.order||'[]');arr.push(btn.dataset.token||'');box.dataset.order=JSON.stringify(arr);btn.disabled=true;out.textContent=arr.join(' ')};
   window.dailyLightOrderReset=function(btn){const box=btn.closest('.dailyLightOrder');box.dataset.order='[]';box.querySelector('.dailyLightOrderOut').textContent='';const wrap=box.querySelector('.dailyLightTokenWrap');if(wrap){let tokens=[];try{tokens=JSON.parse(wrap.dataset.tokens||'[]')}catch(e){}wrap.innerHTML=tokenButtons(tokens)}const fb=box.querySelector('.dailyFixFeedback');if(fb){fb.classList.remove('show');fb.textContent=''}};
