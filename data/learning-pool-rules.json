@@ -40,7 +40,7 @@
     "core_total": "10-12",
     "new_words": "3-4个，只能来自runtime.new_pool",
     "review_words": "4-5个，只能来自runtime.review_pool",
-    "application_words": "2-3个当天08:00或近期已教且仍active的词；当天AM优先；mastered不得进入应用核心词",
+    "application_words": "2-3个当天08:00课程中出现或近期已教且仍active的词；当天AM vocab或review_vocab均可作为当天复现来源；mastered不得进入应用核心词",
     "review_priority": [
       "最近答错或已教后重新标为不会/陌生",
       "memory_dont",
@@ -72,14 +72,17 @@
       "is_oral_new"
     ],
     "vocab_detail": "保持2026-09-14晚课详细度；formation解释构词/派生或2-4个高频搭配；synonym_note至少1组实用辨析；有root必须有root_cn",
-    "same_day_am_mark": "当天AM真实出现且source_group=application时，明确显示‘今天08:00已教’；不得误标其他日期",
+    "same_day_am_mark": "当天AM vocab或review_vocab真实出现且source_group=application时，明确显示‘今天08:00已教’；不得误标其他日期",
     "reading_words": "80-120并附中文",
     "dialogue": "必须有自然口语对话并逐句附中文",
     "rewrite_application": "必须有3-4个主动改写/中译印/主动回忆任务，含参考答案和中文",
     "daily_test": "固定6题：3 choice + 2 fill + 1 order，并有self_check",
+    "choice_schema": "3个choice每题必须有type=choice、prompt、非空options、有效整数answer_index、explain；可额外有answer，但不能只写answer",
     "fill_style": "沿用2026-09-14：prompt同一行写‘填空：<印尼语句>（目标词中文提示）’，不要另起一行给完整中文",
     "order_style": "沿用2026-09-14：prompt先给完整中文句子，另有可点击tokens、answer、answer_cn、explain",
+    "self_check_schema": "daily_test.self_check必须为非空字符串数组并在网页显示",
     "final_review": "必须有最后约5分钟复盘",
+    "final_review_schema": "review必须为对象并包含title与非空steps字符串数组；禁止用items替代steps",
     "content_guard": "阅读、对话、练习优先使用本晚核心词、当天AM已教词和已教复习词，不为写内容额外塞入尚未正式教过的新master词"
   },
   "rules": [
