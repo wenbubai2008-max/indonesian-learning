@@ -207,7 +207,7 @@ try {
   const compat = read('data/vocab-dom-compat.js');
   ok(!/characterData\s*:\s*true/.test(compat), 'compat layer does not observe all character-data changes');
   ok(!/new MutationObserver/.test(compat), 'compat layer has no whole-page MutationObserver');
-  ok(compat.includes("const PM_SWITCH_DATE='2026-09-16'"), 'PM historical switch date is protected');
+  ok(!/patchHomeTime|wrapLoadReading|__pm18Compat|PM_SWITCH_DATE/.test(compat), 'compat layer no longer patches PM time after render');
 
   const historyV2 = read('data/history-v2.js');
   ok(historyV2.includes("const PM_SWITCH_DATE='2026-09-16'") && /pmTimeForDate\(d\)/.test(historyV2), 'loaded lesson renderer handles 18:00/19:00 by lesson date');
@@ -225,7 +225,13 @@ try {
   validateLatestPm();
 
   const index = read('index.html');
-  warn(index.includes('每天 08:00 / 19:00') || index.includes('>19:00<'), 'Known legacy debt: index.html still contains old 19:00 literals. Do not fix this by adding a global DOM observer; migrate source directly when safely editing index.html.');
+  ok(index.includes('每天 08:00 / 18:00 自动生成到网站'), 'index source homepage schedule is 08:00 / 18:00');
+  ok(index.includes('<span class="slotTime">18:00</span><span id="pmStatus"'), 'index source PM card first paint is 18:00');
+  ok(index.includes("loadReading('pm')\">18:00短文"), 'index source PM reading button first paint is 18:00');
+  ok(index.includes("const PM_SWITCH_DATE='2026-09-16'") && /function pmTimeForDate\(d\)/.test(index), 'index source keeps historical PM switch date');
+  ok(/pmTimeForDate\(d\)\+' 晚间学习'/.test(index), 'index source lesson title is date-aware');
+  ok(/pmTimeForDate\(TODAY\)/.test(index), 'index source PM reading meta uses current date-aware time');
+  ok(!index.includes('每天 08:00 / 19:00') && !index.includes("loadReading('pm')\">19:00短文") && !index.includes("<span class=\"slotTime\">19:00</span><span id=\"pmStatus\""), 'index source has no stale current 19:00 static labels');
 
 } catch (e) {
   failures.push('guard script crashed: ' + (e && e.stack ? e.stack : e));
