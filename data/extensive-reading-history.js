@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{id:'er-20260915-kai-paylater-waspada',date:'2026-09-15',title:'KAI Ingatkan Penumpang Hati-hati Saat Beli Tiket dengan PayLater',title_cn:'KAI 提醒乘客使用 PayLater 买票时警惕诈骗',path:'data/extensive-reading-history/2026-09-15.js'},
 {id:'er-20260914-lrt-layanan',date:'2026-09-14',title:'LRT Jabodebek Terus Menambah Layanan untuk Penumpang',title_cn:'LRT Jabodebek 持续改善乘客服务',path:'data/extensive-reading-history/2026-09-14-lrt-layanan.js'},
 {id:'er-20260914-beras-klaim',date:'2026-09-14',title:'Pemerintah Soroti Klaim Beras yang Tidak Sesuai Isi Produk',title_cn:'印尼政府关注大米宣传与实际产品不符问题',path:'data/extensive-reading-history/2026-09-14-beras-klaim.js'},
 {id:'er-20260913-dukcapil-jelambar',date:'2026-09-13',title:'Urus KTP dan KK Bisa Setelah Jam Kerja di Jelambar',title_cn:'Jelambar 下班后也能办理 KTP 和 KK 等证件',path:'data/extensive-reading-history/2026-09-13.js'},
