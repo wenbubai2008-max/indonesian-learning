@@ -14,7 +14,8 @@ Then follow this mandatory sequence:
 5. **Run the regression guard:** `node .github/scripts/regression-guard.js`.
 6. **Inspect the diff.** Confirm only intended files/lines changed.
 7. **For UI changes:** verify first paint, refresh behavior, card order/size, responsiveness, and that GitHub Pages deployment succeeds.
-8. **For lesson/task changes:** verify 08:00 and 18:00 contracts, runtime=977, single daily-vocab writer, and that tasks are not auto-disabled.
+8. **For lesson/task changes:** verify 08:00 and 18:00 contracts, runtime=977, single daily-vocab writer, tasks are not auto-disabled, and the latest real AM/PM JSON—not only the rule text—passes schema validation.
+9. **Do not claim “all fixed” while a required workflow/deployment is still pending.** State what is verified and what is still waiting.
 
 ## Never reintroduce these failures
 
@@ -25,5 +26,7 @@ Then follow this mandatory sequence:
 - Do not use whole-page/character-data MutationObservers to change static UI text, time labels, or layout.
 - Do not render one layout first and then transform it into another with JS; critical first-paint layout must exist in early CSS.
 - Do not change historical PM display semantics when changing the current schedule. PM switched from 19:00 to 18:00 starting `2026-09-16`; older history remains 19:00.
+- Do not trust a generated lesson merely because it says `write_status="lesson_complete"`; validate the actual question/review schema before treating it as complete.
+- Do not re-enable the disabled 20:00 fallback unless the user explicitly asks.
 
 If a proposed change conflicts with `docs/REGRESSION-GUARD.md`, stop and resolve the conflict before writing.
