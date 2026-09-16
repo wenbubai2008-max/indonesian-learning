@@ -7,8 +7,20 @@
 .app.learningMode .dailyFixMeta{max-width:none!important}
 .app.learningMode .dailyFixReading,.app.learningMode .dailyFixTranslation{max-width:none!important;width:100%!important}
 
+/* Critical homepage module layout: render the final compact shape on the first paint,
+   before home-modules-layout.js runs. This prevents the old 2-column/long-card FOUC. */
+#home .modules{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:10px!important;align-items:stretch!important}
+#home .modules>.module{min-width:0!important;grid-column:auto!important;border-radius:16px!important;padding:14px 13px!important;min-height:158px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;box-shadow:0 2px 8px rgba(23,32,51,.035)!important}
+#home .modules>.module>div:first-child{font-size:20px!important;line-height:1!important;margin-bottom:3px!important}
+#home .modules>.module h3{font-size:18px!important;margin:6px 0 5px!important;line-height:1.25!important}
+#home .modules>.module p{font-size:13px!important;line-height:1.45!important;margin:0!important;color:#667085!important;display:-webkit-box!important;-webkit-line-clamp:3!important;-webkit-box-orient:vertical!important;overflow:hidden!important}
+#home .modules>.module .tag{font-size:11px!important;padding:4px 7px!important;margin-top:auto!important;position:relative!important;top:8px!important}
+
 @media (min-width:1400px){
   .app.learningMode{max-width:1080px!important;padding-left:20px!important;padding-right:20px!important}
+}
+@media (max-width:1050px){
+  #home .modules{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 }
 @media (max-width:900px){
   .app.learningMode{max-width:100%!important;padding-left:12px!important;padding-right:12px!important}
@@ -23,4 +35,12 @@
   .app.learningMode .dailyFixGrid{grid-template-columns:1fr!important;gap:8px!important}
   .app.learningMode .dailyFixVocab{width:100%!important}
   .app.learningMode .dailyFixNav{width:100%!important}
+  #home .modules{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+  #home .modules>.module{min-height:145px!important;padding:12px!important}
+  #home .modules>.module h3{font-size:17px!important}
+  #home .modules>.module p{font-size:12px!important}
+}
+@media (max-width:430px){
+  #home .modules{grid-template-columns:1fr!important}
+  #home .modules>.module{min-height:0!important}
 }
