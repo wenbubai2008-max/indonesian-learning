@@ -46,9 +46,12 @@ try {
   ok(/3-4/.test(String(pm.rewrite_application || '')), 'PM rewrite/application stays 3-4 tasks');
   ok(/3 choice/.test(String(pm.daily_test || '')) && /2 fill/.test(String(pm.daily_test || '')) && /1 order/.test(String(pm.daily_test || '')), 'PM daily_test remains 3 choice + 2 fill + 1 order');
   ok(Boolean(pm.final_review), 'PM final review contract exists');
-  ok(/今天08:00已教/.test(String(pm.same_day_am_mark || '')), 'same-day AM application mark is protected');
+  ok(/今天08:00已教/.test(String(pm.same_day_am_mark || '')) && /review_vocab/.test(String(pm.same_day_am_mark || '')), 'same-day AM vocab/review marker is protected');
   ok(/(?:括号中文提示|目标词中文提示)/.test(String(pm.fill_style || '')), 'fill question Chinese hint style is protected');
   ok(/tokens/.test(String(pm.order_style || '')) && /answer_cn/.test(String(pm.order_style || '')), 'order question tokens/answer_cn are protected');
+  ok(/answer_index/.test(String(pm.choice_schema || '')), 'choice answer_index schema is protected');
+  ok(/self_check/.test(String(pm.self_check_schema || '')) && /非空/.test(String(pm.self_check_schema || '')), 'self_check schema is protected');
+  ok(/steps/.test(String(pm.final_review_schema || '')) && /items/.test(String(pm.final_review_schema || '')), 'final review steps schema is protected');
 
   const requiredVocabFields = ['word','display','audio_text','cn','en','root','root_cn','formation','example','example_cn','synonym_note','usage_note','source_group','is_new','is_oral_new'];
   const vocabFields = Array.isArray(pm.vocab_fields) ? pm.vocab_fields : [];
@@ -90,6 +93,12 @@ try {
   const observerMatch = compat.match(/new MutationObserver\(([\s\S]*?)\)\.observe/);
   ok(!observerMatch || !/patchHomeTime|patchDailyPmDisplay|wrapOpenDaily|wrapLoadReading/.test(observerMatch[1]), 'MutationObserver does not rewrite PM time/layout');
   ok(compat.includes("const PM_SWITCH_DATE='2026-09-16'"), 'PM historical switch date is protected');
+
+  const light = read('data/daily-light-test.js');
+  ok(/function choiceAnswerIndex/.test(light) && /it\.answer_index/.test(light) && /it\.answer/.test(light), 'PM choice renderer supports canonical answer_index and legacy answer fallback');
+  ok(/function selfCheckHtml\(items\)/.test(light) && !/function selfCheckHtml\([^)]*\)\{return ''/.test(light), 'PM self_check is rendered');
+  ok(/x\.review\.steps/.test(light) && /x\.review\.items/.test(light), 'PM final review renders steps and legacy items');
+  ok(/am\.review_vocab/.test(light), 'same-day AM review_vocab is recognized for application marker');
 
   const index = read('index.html');
   warn(index.includes('每天 08:00 / 19:00') || index.includes('>19:00<'), 'Known legacy debt: index.html still contains old 19:00 literals. Do not fix this by adding a global DOM observer; migrate source directly when safely editing index.html.');
