@@ -64,13 +64,7 @@
     return `<div class="dailyFixItem dailyLightOrder" data-order="[]"><b>${i+1}. ${esc(orderPrompt(it))}</b><div class="dailyLightTokenWrap" data-tokens='${esc(JSON.stringify(tokens))}' style="display:flex;gap:7px;flex-wrap:wrap;margin-top:10px">${tokenButtons(tokens)}</div><div class="dailyLightOrderOut" style="min-height:42px;margin-top:10px;padding:9px 11px;background:#f8faff;border-radius:9px"></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="dailyFixToggle" onclick='dailyLightOrderCheck(this,${JSON.stringify(it.answer||'')},${JSON.stringify(cn)})'>检查顺序</button><button type="button" class="dailyFixToggle" onclick="dailyLightOrderReset(this)">重排</button></div><div class="dailyFixFeedback"></div></div>`;
   }
 
-  function selfCheckHtml(sc,x){
-    const options=Array.isArray(sc)?sc:(Array.isArray(sc?.options)?sc.options:[]);
-    if(!options.length)return '';
-    const prompt=Array.isArray(sc)?'自我检查：今天这些内容你能主动用出来吗？':(sc.prompt||'今天这些内容你感觉怎么样？');
-    const key=(x.date||'')+'_'+(x.session||'pm');
-    return `<div class="dailyFixItem"><b>${esc(prompt)}</b><div class="dailyFixChoiceWrap" style="display:flex;flex-wrap:wrap">${options.map(o=>`<button class="dailyFixChoice" onclick='dailyLightSelf(this,${JSON.stringify(key)},${JSON.stringify(o)})'>${esc(o)}</button>`).join('')}</div></div>`;
-  }
+  function selfCheckHtml(){return '';}
   function renderTest(t,x){
     let h='<div class="dailyFixMeta" style="margin-bottom:10px">轻量检测今天刚学的内容，不追求全对，也不用写长句。</div>';
     (t.items||[]).forEach((it,i)=>{if(it.type==='choice')h+=choice(it,i);else if(it.type==='fill')h+=fill(it,i);else if(it.type==='order')h+=order(it,i)});
