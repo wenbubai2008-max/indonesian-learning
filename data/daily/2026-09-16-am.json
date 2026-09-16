@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-16",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 26,
+  "title": "08:00｜新词 + 应用：安排一次团队活动",
+  "vocab": [
+    {"word":"ketua","display":"ketua","audio_text":"ketua","cn":"领导、主席","en":"leader; chairperson","root":"ketua","root_cn":"领导；主席","formation":"常用名词；可说 ketua tim（团队负责人）、ketua kelompok（小组长）。","example":"Ketua tim akan menentukan jadwal rapat.","example_cn":"团队负责人会确定会议时间。","synonym_note":"pemimpin 也表示领导者；ketua 更常指一个组织、小组或委员会的负责人。","is_oral_new":false},
+    {"word":"perjalanan","display":"perjalanan","audio_text":"perjalanan","cn":"旅行","en":"journey; trip","root":"jalan","root_cn":"走；道路","formation":"per- + jalan + -an → perjalanan，表示旅程、出行过程。","example":"Perjalanan ke kantor biasanya sekitar satu jam.","example_cn":"去办公室的路程通常大约一小时。","synonym_note":"trip 在口语中也能听到；perjalanan 更通用。","is_oral_new":false},
+    {"word":"mendapatkan","display":"mendapatkan","audio_text":"mendapatkan","cn":"获得 / 得到","en":"get; obtain; receive","root":"dapat","root_cn":"得到；可以","formation":"meN- + dapat + -kan → mendapatkan，强调获得某物、机会或结果。","example":"Kami mendapatkan informasi baru pagi ini.","example_cn":"我们今天早上得到了新信息。","synonym_note":"dapat 在口语中可更简洁地表示得到；mendapatkan 更完整。","is_oral_new":false},
+    {"word":"jenis","display":"jenis","audio_text":"jenis","cn":"种类 / 类型","en":"type; kind","root":"jenis","root_cn":"种类；类型","formation":"基础名词；常见 jenis produk（产品类型）、jenis pekerjaan（工作种类）。","example":"Ada beberapa jenis kegiatan yang bisa kita pilih.","example_cn":"有几种活动可以选择。","synonym_note":"macam 也表示种类，日常表达中常见 berbagai macam。","is_oral_new":false},
+    {"word":"acara","display":"acara","audio_text":"acara","cn":"活动，节目","en":"event; program; show","root":"acara","root_cn":"活动；节目","formation":"高频名词；可指活动、仪式或电视节目。","example":"Acara kantor akan dimulai jam sembilan.","example_cn":"公司的活动九点开始。","synonym_note":"kegiatan 更偏活动/行动本身；acara 更像有安排的活动或节目。","is_oral_new":false},
+    {"word":"pengalaman","display":"pengalaman","audio_text":"pengalaman","cn":"经历","en":"experience","root":"alam","root_cn":"经历；体验（词根用法）","formation":"peN- + alam + -an → pengalaman，表示经历、经验。","example":"Pengalaman kerja di Indonesia sangat membantu aku.","example_cn":"在印尼的工作经历对我帮助很大。","synonym_note":"常见搭配 pengalaman kerja（工作经验）、punya pengalaman（有经验）。","is_oral_new":false},
+    {"word":"menemukan","display":"menemukan","audio_text":"menemukan","cn":"发现 / 找到","en":"find; discover","root":"temu","root_cn":"遇见；找到","formation":"meN- + temu + -kan → menemukan，表示找到或发现。","example":"Kami menemukan tempat yang lebih dekat.","example_cn":"我们找到了一个更近的地方。","synonym_note":"ketemu 更口语，常表示碰到、见到；menemukan 强调找到或发现。","is_oral_new":false},
+    {"word":"membutuhkan","display":"membutuhkan","audio_text":"membutuhkan","cn":"需要","en":"need; require","root":"butuh","root_cn":"需要","formation":"meN- + butuh + -kan → membutuhkan，表示需要某物或某种条件。","example":"Kita membutuhkan waktu untuk menyiapkan semuanya.","example_cn":"我们需要时间把一切准备好。","synonym_note":"butuh 更简洁、更口语；membutuhkan 更完整，工作场景常见。","is_oral_new":false},
+    {"word":"kadang","display":"kadang","audio_text":"kadang","cn":"有时","en":"sometimes","root":"kadang","root_cn":"有时","formation":"口语中常直接说 kadang；完整形式 kadang-kadang。","example":"Kadang rencana berubah karena kondisi di lapangan.","example_cn":"有时候计划会因为现场情况而改变。","synonym_note":"标准完整形式是 kadang-kadang；日常口语常直接说 kadang。","is_oral_new":true},
+    {"word":"benerin","display":"benerin","audio_text":"benerin","cn":"修好；弄对","en":"fix; correct","root":"benar","root_cn":"正确","formation":"口语形式，来自 benar；常用于修东西或把问题弄好。","example":"Kalau ada data yang salah, nanti aku benerin.","example_cn":"如果有数据错了，我等会儿改好。","synonym_note":"较标准表达可用 memperbaiki；benerin 是非常自然的日常口语。","is_oral_new":true}
+  ],
+  "review_vocab": ["ngelarin","ngandelin","kecolongan","ujung-ujungnya","masukan"],
+  "sentences": [
+    {"id":"Ketua tim mendapatkan masukan tentang jenis acara yang cocok.","cn":"团队负责人收到了关于适合哪种活动的建议。"},
+    {"id":"Kadang kami membutuhkan waktu lebih lama untuk ngelarin pekerjaan.","cn":"有时我们需要更长时间把工作做完。"},
+    {"id":"Dalam perjalanan, kami menemukan tempat yang lebih nyaman.","cn":"途中我们发现了一个更舒服的地方。"},
+    {"id":"Jangan cuma ngandelin satu orang, nanti kita bisa kecolongan.","cn":"不要只依赖一个人，不然我们可能会因为疏忽漏掉问题。"},
+    {"id":"Kalau ada yang salah, benerin sekarang supaya ujung-ujungnya nggak jadi masalah besar.","cn":"如果有错现在就改好，免得到头来变成大问题。"}
+  ],
+  "reading": {
+    "title":"Acara Tim yang Berubah",
+    "text":"Pagi ini ketua tim mengajak kami membahas acara bulan depan. Kami mendapatkan beberapa masukan tentang jenis kegiatan yang cocok. Awalnya kami ingin pergi agak jauh, tetapi perjalanan akan membutuhkan waktu lama. Setelah mencari lagi, kami menemukan tempat yang lebih dekat dan nyaman. Kadang rencana memang harus berubah. Ada satu bagian jadwal yang salah, jadi aku langsung benerin. Kami juga membagi pekerjaan supaya tidak cuma ngandelin satu orang. Dengan cara itu, kami bisa ngelarin persiapan lebih cepat dan tidak kecolongan hal penting. Ujung-ujungnya, acara yang sederhana justru terasa lebih mudah diatur.",
+    "cn":"今天早上团队负责人叫我们讨论下个月的活动。我们收到了一些关于适合哪种活动的建议。最开始我们想去远一点的地方，但路程会需要很长时间。重新寻找后，我们发现了一个更近、更舒服的地方。有时候计划确实需要改变。有一处日程写错了，所以我马上把它改好。我们也把工作分开，避免只依赖一个人。这样我们可以更快完成准备，也不会因为疏忽漏掉重要事情。到头来，简单一点的活动反而更容易安排。"
+  },
+  "quiz": [
+    {"task":"用 mendapatkan 完成：Kami ___ informasi baru dari ketua tim.","answer":"mendapatkan","answer_cn":"我们从团队负责人那里得到了新信息。"},
+    {"task":"kadang 的较完整标准形式是什么？","answer":"kadang-kadang","answer_cn":"有时。"},
+    {"task":"复习：ngandelin 在句子 Jangan cuma ngandelin satu orang 里是什么意思？","answer":"依赖、指望。","answer_cn":"不要只依赖一个人。"}
+  ],
+  "output_task": {
+    "task":"请用至少4个今天的新词，说3–4句：你要和同事安排一次活动，但计划临时有变化，你会怎么办？",
+    "reference_answer":"Kadang rencana acara bisa berubah. Aku akan minta masukan dari ketua tim lalu mencari jenis kegiatan yang lebih mudah. Kalau menemukan masalah di jadwal, aku akan langsung benerin. Kita juga membutuhkan pembagian tugas yang jelas supaya semuanya cepat selesai.",
+    "reference_cn":"有时候活动计划会变化。我会先听团队负责人的意见，再找一种更容易安排的活动。如果发现日程有问题，我会马上改好。我们也需要明确分工，这样所有事情能更快完成。"
+  },
+  "review": [
+    {"word":"ngandelin","cn":"依赖；指望；靠","focus":"不要只会认，尝试主动说：Jangan cuma ngandelin satu orang."},
+    {"word":"kecolongan","cn":"一时疏忽没防住；漏掉问题","focus":"和工作检查场景绑定：Jangan sampai kecolongan."},
+    {"word":"ujung-ujungnya","cn":"到头来；结果最后还是","focus":"练习表达一个过程最后产生的结果。"}
+  ]
+}
