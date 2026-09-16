@@ -36,6 +36,7 @@
     "content_guard": "优先使用当天新词和已教复习词，不额外引入尚未正式教过的新master词"
   },
   "pm_contract": {
+    "scheduled_time": "18:00",
     "core_total": "10-12",
     "new_words": "3-4个，只能来自runtime.new_pool",
     "review_words": "4-5个，只能来自runtime.review_pool",
@@ -88,13 +89,13 @@
     "弱项强化只显示A∩D",
     "977外且active但未教过的词暂存，不进入新词或弱项强化",
     "口语候选来自oral-vocab-candidates.js；候选定义为register=口语或oral字段非空",
-    "每日新词约20%口语：08点优先2个，19点优先1个；但口语词仍必须满足M∩A−D",
+    "每日新词约20%口语：08点优先2个，18点优先1个；但口语词仍必须满足M∩A−D",
     "口语名额优先选择register=口语的口语本体；oral字段非空但register不是口语的词仅作为次选，用于学习标准语↔口语对应",
     "同一组标准语↔口语对应不要在同一天拆成两个独立新词名额；作为一组教学即可",
     "不得为了凑口语比例从977外、mastered或daily-vocab已教词中补新词",
     "口语词优先雅加达/全国高频自然表达，排除粗口、低频俚语和猎奇网络词",
-    "硬闸门：AI不得先自行想新词再回查资格；GitHub Runner必须先根据M、A、D计算完整合法池，再生成learning-runtime；08:00和19:00只能从runtime暴露的合法候选窗口选词",
-    "08:00和19:00不得直接读取完整weakness-sync.json或daily-vocab-data.js来重新计算词池，也不得直接覆盖daily-vocab-data.js",
+    "硬闸门：AI不得先自行想新词再回查资格；GitHub Runner必须先根据M、A、D计算完整合法池，再生成learning-runtime；08:00和18:00只能从runtime暴露的合法候选窗口选词",
+    "08:00和18:00不得直接读取完整weakness-sync.json或daily-vocab-data.js来重新计算词池，也不得直接覆盖daily-vocab-data.js",
     "写入前逐词校验：每个新词必须存在于本次runtime.new_pool；任一条件失败则整批禁止写入",
     "口语写入前额外校验：口语名额必须存在于runtime.oral_new_pool；优先register=口语",
     "复习写入前逐词校验：每个重点复习词必须存在于runtime.review_pool",
@@ -104,7 +105,7 @@
     "weakness-sync、master、口语候选或规则本身变化时，由build-learning-runtime.yml调用同一个共享build-learning-runtime.js单独刷新runtime",
     "PM中只有is_new=true、source_group=new或new_words明确列出的词允许作为缺失词追加到daily-vocab；review/application只允许更新已存在词的复现记录，若缺失应视为一致性异常而非当作新词追加",
     "daily-vocab只表示已正式教过，不代表mastered；掌握状态不得由是否进入daily-vocab推断",
-    "写入后复核由同步链负责：新课程JSON存在、daily-vocab同步成功、runtime在同一同步链中重建；失败不得自动关闭08:00或19:00任务",
+    "写入后复核由同步链负责：新课程JSON存在、daily-vocab同步成功、runtime在同一同步链中重建；失败不得自动关闭08:00或18:00任务",
     "若硬校验失败，不得用模型常识、高频度或A2-B1适配度绕过；应停止错误写入并重新从合法runtime候选选择"
   ],
   "validation_gate": {
@@ -119,5 +120,5 @@
     "sync_workflow_is_single_writer": true,
     "lesson_sync_refreshes_runtime_atomically": true
   },
-  "updated_at": "2026-09-15"
+  "updated_at": "2026-09-16"
 }
