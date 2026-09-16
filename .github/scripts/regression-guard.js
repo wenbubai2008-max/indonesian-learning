@@ -47,7 +47,7 @@ try {
   ok(/3 choice/.test(String(pm.daily_test || '')) && /2 fill/.test(String(pm.daily_test || '')) && /1 order/.test(String(pm.daily_test || '')), 'PM daily_test remains 3 choice + 2 fill + 1 order');
   ok(Boolean(pm.final_review), 'PM final review contract exists');
   ok(/今天08:00已教/.test(String(pm.same_day_am_mark || '')), 'same-day AM application mark is protected');
-  ok(/括号中文提示/.test(String(pm.fill_style || '')), 'fill question Chinese hint style is protected');
+  ok(/(?:括号中文提示|目标词中文提示)/.test(String(pm.fill_style || '')), 'fill question Chinese hint style is protected');
   ok(/tokens/.test(String(pm.order_style || '')) && /answer_cn/.test(String(pm.order_style || '')), 'order question tokens/answer_cn are protected');
 
   const requiredVocabFields = ['word','display','audio_text','cn','en','root','root_cn','formation','example','example_cn','synonym_note','usage_note','source_group','is_new','is_oral_new'];
