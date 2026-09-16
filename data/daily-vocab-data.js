@@ -4637,21 +4637,24 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-09-14 19:00",
+    "last_seen": "2026-09-16 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-03",
-      "2026-09-14"
+      "2026-09-14",
+      "2026-09-16"
     ],
-    "example": "Kalau ada masukan, bilang sekarang biar bisa langsung kita bahas.",
-    "example_cn": "如果有意见，现在就说，这样我们可以马上讨论。",
+    "example": "Sebelum rapat selesai, aku mau minta masukan dari semua orang.",
+    "example_cn": "会议结束前，我想听听大家的意见。",
     "root_cn": "进入；进"
   },
   {
@@ -5571,20 +5574,23 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "末端；结尾",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-06 19:00",
-    "last_seen": "2026-09-14 19:00",
+    "last_seen": "2026-09-16 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-06",
-      "2026-09-14"
+      "2026-09-14",
+      "2026-09-16"
     ],
-    "example": "Kalau semua orang terus ganti pilihan, ujung-ujungnya kita nggak jadi pergi.",
-    "example_cn": "如果大家一直换选择，到头来我们可能就去不成了。"
+    "example": "Kalau terus ganti rencana, ujung-ujungnya nggak ada yang selesai.",
+    "example_cn": "如果一直改计划，到头来什么都完成不了。"
   },
   {
     "word": "nggak worth it",
@@ -5820,23 +5826,26 @@ window.DAILY_VOCAB_DB = [
     "en": "rely on; count on",
     "root": "andal",
     "root_cn": "可靠；可依靠",
-    "example": "Jangan cuma ngandelin satu orang buat beresin semuanya.",
-    "example_cn": "别只指望一个人把所有事情都处理完。",
+    "example": "Jangan cuma ngandelin satu orang untuk cek semua dokumen.",
+    "example_cn": "别只靠一个人检查所有文件。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-15 19:00",
+    "last_seen": "2026-09-16 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-09-15"
+      "2026-09-15",
+      "2026-09-16"
     ]
   },
   {
@@ -6056,24 +6065,27 @@ window.DAILY_VOCAB_DB = [
     "en": "be caught off guard; let something slip through",
     "root": "colong",
     "root_cn": "偷拿；趁人不注意拿走",
-    "example": "Kami kecolongan satu detail kecil waktu cek dokumen.",
-    "example_cn": "我们检查文件时疏忽漏掉了一个小细节。",
+    "example": "Kalau ceknya terlalu cepat, kita bisa kecolongan detail penting.",
+    "example_cn": "如果检查太快，我们可能会漏掉重要细节。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-15 19:00",
+    "last_seen": "2026-09-16 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-08",
       "2026-09-11",
-      "2026-09-15"
+      "2026-09-15",
+      "2026-09-16"
     ]
   },
   {
@@ -6289,22 +6301,25 @@ window.DAILY_VOCAB_DB = [
     "en": "finish; wrap up",
     "root": "kelar",
     "root_cn": "完成；结束",
-    "example": "Aku mau ngelarin dua hal penting dulu sebelum bahas yang lain.",
-    "example_cn": "我想先把两件重要的事情做完，再讨论其他的。",
+    "example": "Kita bagi tugas supaya bisa ngelarin semuanya hari ini.",
+    "example_cn": "我们分一下任务，这样今天能把所有事情做完。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-16 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-09"
+      "2026-09-09",
+      "2026-09-16"
     ]
   },
   {
@@ -6839,20 +6854,23 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "拿；握；掌握",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-09-11 19:00",
+    "last_seen": "2026-09-16 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-10",
-      "2026-09-11"
+      "2026-09-11",
+      "2026-09-16"
     ],
-    "example": "Kalau semua masalah dipikirin sendiri, lama-lama kerjaan lain nggak kepegang.",
-    "example_cn": "如果所有问题都自己想，久了其他工作就顾不过来了。"
+    "example": "Kalau semua tugas dikasih ke satu orang, nanti nggak kepegang.",
+    "example_cn": "如果所有任务都给一个人，最后会顾不过来。"
   },
   {
     "word": "kelabakan",
@@ -7220,22 +7238,25 @@ window.DAILY_VOCAB_DB = [
     "en": "insist strongly; be stubborn",
     "root": "ngotot",
     "root_cn": "强硬坚持；不肯让步",
-    "example": "Kalau belum ada bukti yang jelas, jangan ngotot mempertahankan satu pilihan.",
-    "example_cn": "如果还没有明确证据，就别强硬地死守一个选择。",
+    "example": "Kalau datanya belum jelas, jangan ngotot ambil keputusan sekarang.",
+    "example_cn": "如果数据还不清楚，就别硬要现在做决定。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 19:00",
+    "last_seen": "2026-09-16 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-12"
+      "2026-09-12",
+      "2026-09-16"
     ]
   },
   {
@@ -8566,6 +8587,95 @@ window.DAILY_VOCAB_DB = [
     "last_seen": "2026-09-16 08:00",
     "sessions": [
       "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "pusat",
+    "cn": "中心",
+    "en": "center; central point",
+    "root": "pusat",
+    "root_cn": "中心",
+    "example": "Kantor baru kami dekat pusat kota.",
+    "example_cn": "我们的新办公室靠近市中心。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-16 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "mengaku",
+    "cn": "承认；自称",
+    "en": "admit; claim",
+    "root": "aku",
+    "root_cn": "我；自我",
+    "example": "Dia akhirnya mengaku kalau datanya belum lengkap.",
+    "example_cn": "他最后承认数据还不完整。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-16 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "penuh",
+    "cn": "满的；充满的",
+    "en": "full; filled",
+    "root": "penuh",
+    "root_cn": "满；充满",
+    "example": "Jadwal minggu ini sudah penuh, jadi kita perlu atur ulang.",
+    "example_cn": "这周日程已经满了，所以我们需要重新安排。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-16 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "colok",
+    "cn": "插；插上插头",
+    "en": "plug in; insert",
+    "root": "colok",
+    "root_cn": "插；插入",
+    "example": "Colok charger dulu, baterai HP-ku hampir habis.",
+    "example_cn": "先把充电器插上，我手机快没电了。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-16 18:00",
+    "sessions": [
+      "18:00"
     ],
     "dates": [
       "2026-09-16"
