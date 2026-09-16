@@ -8348,5 +8348,227 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "新；刚刚",
     "example": "Barusan dia telepon dan bilang jadwalnya berubah.",
     "example_cn": "他刚刚打电话说时间变了。"
+  },
+  {
+    "word": "ketua",
+    "cn": "领导、主席",
+    "en": "leader; chairperson",
+    "root": "ketua",
+    "root_cn": "领导；主席",
+    "example": "Ketua tim akan menentukan jadwal rapat.",
+    "example_cn": "团队负责人会确定会议时间。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "perjalanan",
+    "cn": "旅行",
+    "en": "journey; trip",
+    "root": "jalan",
+    "root_cn": "走；道路",
+    "example": "Perjalanan ke kantor biasanya sekitar satu jam.",
+    "example_cn": "去办公室的路程通常大约一小时。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "mendapatkan",
+    "cn": "获得 / 得到",
+    "en": "get; obtain; receive",
+    "root": "dapat",
+    "root_cn": "得到；可以",
+    "example": "Kami mendapatkan informasi baru pagi ini.",
+    "example_cn": "我们今天早上得到了新信息。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "jenis",
+    "cn": "种类 / 类型",
+    "en": "type; kind",
+    "root": "jenis",
+    "root_cn": "种类；类型",
+    "example": "Ada beberapa jenis kegiatan yang bisa kita pilih.",
+    "example_cn": "有几种活动可以选择。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "acara",
+    "cn": "活动，节目",
+    "en": "event; program; show",
+    "root": "acara",
+    "root_cn": "活动；节目",
+    "example": "Acara kantor akan dimulai jam sembilan.",
+    "example_cn": "公司的活动九点开始。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "pengalaman",
+    "cn": "经历",
+    "en": "experience",
+    "root": "alam",
+    "root_cn": "经历；体验（词根用法）",
+    "example": "Pengalaman kerja di Indonesia sangat membantu aku.",
+    "example_cn": "在印尼的工作经历对我帮助很大。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "menemukan",
+    "cn": "发现 / 找到",
+    "en": "find; discover",
+    "root": "temu",
+    "root_cn": "遇见；找到",
+    "example": "Kami menemukan tempat yang lebih dekat.",
+    "example_cn": "我们找到了一个更近的地方。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "membutuhkan",
+    "cn": "需要",
+    "en": "need; require",
+    "root": "butuh",
+    "root_cn": "需要",
+    "example": "Kita membutuhkan waktu untuk menyiapkan semuanya.",
+    "example_cn": "我们需要时间把一切准备好。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "kadang",
+    "cn": "有时",
+    "en": "sometimes",
+    "root": "kadang",
+    "root_cn": "有时",
+    "example": "Kadang rencana berubah karena kondisi di lapangan.",
+    "example_cn": "有时候计划会因为现场情况而改变。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
+  },
+  {
+    "word": "benerin",
+    "cn": "修好；弄对",
+    "en": "fix; correct",
+    "root": "benar",
+    "root_cn": "正确",
+    "example": "Kalau ada data yang salah, nanti aku benerin.",
+    "example_cn": "如果有数据错了，我等会儿改好。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-16"
+    ]
   }
 ];
