@@ -16,6 +16,14 @@
 #home .modules>.module p{font-size:13px!important;line-height:1.45!important;margin:0!important;color:#667085!important;display:-webkit-box!important;-webkit-line-clamp:3!important;-webkit-box-orient:vertical!important;overflow:hidden!important}
 #home .modules>.module .tag{font-size:11px!important;padding:4px 7px!important;margin-top:auto!important;position:relative!important;top:8px!important}
 
+/* Match the final JS order before JS executes, so cards do not swap positions on refresh. */
+#home .modules>.module[onclick*="vocab"]{order:1;background:#f8faff!important;border-color:#dbe5ff!important;border-top:3px solid #7897e8!important}
+#home .modules>.module[onclick*="openExtensiveV2"]{order:2;background:#f7fbf8!important;border-color:#d8eadf!important;border-top:3px solid #74b58a!important}
+#home .modules>.module[onclick*="openQuickPracticeV2"]{order:3;background:#fffaf3!important;border-color:#f0e2c9!important;border-top:3px solid #d6a653!important}
+#home .modules>.module[onclick*="openWeaknessV2"]{order:4;background:#fff8f8!important;border-color:#f0dcdc!important;border-top:3px solid #d98b8b!important}
+#home .modules>.module[onclick*="affix"]{order:5;background:#faf8ff!important;border-color:#e5ddf4!important;border-top:3px solid #9b83ca!important}
+#home .modules>#difficultyModule{order:6;background:#f7fbff!important;border-color:#d8e8f5!important;border-top:3px solid #63a6cf!important}
+
 @media (min-width:1400px){
   .app.learningMode{max-width:1080px!important;padding-left:20px!important;padding-right:20px!important}
 }
