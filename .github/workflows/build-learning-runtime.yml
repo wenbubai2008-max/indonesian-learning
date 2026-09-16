@@ -12,7 +12,15 @@ on:
       - 'data/oral-vocab-candidates.js'
       - 'data/learning-pool-rules.json'
       - '.github/scripts/build-learning-runtime.js'
+      - '.github/scripts/regression-guard.js'
       - '.github/workflows/build-learning-runtime.yml'
+      - '.github/workflows/sync-daily-vocab.yml'
+      - 'index.html'
+      - 'data/daily-width-fix.css'
+      - 'data/home-modules-layout.js'
+      - 'data/vocab-dom-compat.js'
+      - 'AGENTS.md'
+      - 'docs/REGRESSION-GUARD.md'
   workflow_dispatch:
 
 permissions:
@@ -32,13 +40,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Build compact runtime pools
+      - name: Build compact runtime pools and run regression guard
         shell: bash
         run: |
           set -e
           git fetch origin main
           git reset --hard origin/main
           node .github/scripts/build-learning-runtime.js
+          node .github/scripts/regression-guard.js
       - name: Commit runtime if changed
         shell: bash
         run: |
