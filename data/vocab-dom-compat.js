@@ -14,11 +14,7 @@
       vocabModule.appendChild(tag);
       return tag;
     }
-    tag=document.createElement('span');
-    tag.id='vocabTag';
-    tag.style.display='none';
-    document.body.appendChild(tag);
-    return tag;
+    return null;
   }
 
   function pmTimeForDate(date){
@@ -43,46 +39,6 @@
     if(pmReadingBtn&&pmReadingBtn.textContent!=='18:00短文')pmReadingBtn.textContent='18:00短文';
   }
 
-  function patchDailyPmDisplay(date){
-    var time=pmTimeForDate(date);
-    var mid=document.querySelector('#daily .dailyFixMid span');
-    if(mid&&/晚间学习/.test(mid.textContent||'')){
-      var target=time+' 晚间学习';
-      if(mid.textContent!==target)mid.textContent=target;
-    }
-    document.querySelectorAll('#daily .dailyFixChip').forEach(function(chip){
-      if(/晚间学习/.test(chip.textContent||'')){
-        var target=time+' 晚间学习';
-        if(chip.textContent!==target)chip.textContent=target;
-      }
-    });
-    var title=document.getElementById('dailyTitle');
-    if(title){
-      var t=(title.textContent||'').trim();
-      if(/^(18:00|19:00)\s+晚间学习$/.test(t)){
-        var target=time+' 晚间学习';
-        if(t!==target)title.textContent=target;
-      }else if(/^19:00｜/.test(t)&&time==='18:00'){
-        title.textContent=t.replace(/^19:00｜/,'18:00｜');
-      }
-    }
-  }
-
-  function wrapOpenDaily(){
-    if(typeof window.openDaily!=='function'||window.openDaily.__pm18Compat)return;
-    var original=window.openDaily;
-    var wrapped=async function(session,date){
-      var r=await original.apply(this,arguments);
-      if(session==='pm'){
-        var shown=(document.getElementById('dailyMeta')&&document.getElementById('dailyMeta').textContent||date||'').trim();
-        patchDailyPmDisplay(shown);
-      }
-      return r;
-    };
-    wrapped.__pm18Compat=true;
-    window.openDaily=wrapped;
-  }
-
   function wrapLoadReading(){
     if(typeof window.loadReading!=='function'||window.loadReading.__pm18Compat)return;
     var original=window.loadReading;
@@ -103,7 +59,6 @@
   function patch(){
     ensureVocabTag();
     patchHomeTime();
-    wrapOpenDaily();
     wrapLoadReading();
     if(typeof window.loadDB==='function'&&!window.loadDB.__domCompat){
       var original=window.loadDB;
@@ -117,7 +72,6 @@
   }
 
   patch();
-  document.addEventListener('DOMContentLoaded',patch);
-  new MutationObserver(function(){ensureVocabTag();}).observe(document.documentElement,{childList:true,subtree:true});
-  window.addEventListener('load',patch);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',patch,{once:true});
+  window.addEventListener('load',patch,{once:true});
 })();
