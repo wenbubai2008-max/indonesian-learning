@@ -36,10 +36,11 @@
       cn:(r&&r.cn)||(x&&x.cn)||'',
       en:(r&&r.en)||(x&&x.en)||'',
       root:(r&&r.root)||(x&&x.root)||'',
-      theme:(r&&r.theme)||(x&&x.theme)||((x&&x.categories&&x.categories[0])||''),
+      theme:(r&&r.theme)||'',
       sab:(r&&r.sab)||String((x&&(x.sab||x.grade||x.priority))||'').toUpperCase(),
       example:(x&&(x.example||x.scene))||'',
-      exampleCn:(x&&(x.example_cn||x.scene_cn))||''
+      exampleCn:(x&&(x.example_cn||x.scene_cn))||'',
+      note:(x&&x.note)||''
     };
   }
 
@@ -59,9 +60,10 @@
       #vocab .vocabUnifiedWordLine{display:flex;align-items:center;justify-content:center;gap:18px;max-width:100%}
       #vocab .vocabUnifiedWord{font-size:52px;line-height:1.12;font-weight:880;color:#626d83;overflow-wrap:anywhere}
       #vocab .vocabUnifiedSound{width:58px!important;height:58px!important;min-width:58px!important;border-radius:16px;border:1px solid #dde3ee;background:#fff;box-shadow:0 6px 18px rgba(23,32,51,.06);cursor:pointer;font-size:26px;display:flex;align-items:center;justify-content:center;padding:0!important}
-      #vocab .vocabUnifiedMeaning{display:none;margin-top:34px;max-width:760px}.vocabUnifiedCard.revealed .vocabUnifiedMeaning{display:block}
+      #vocab .vocabUnifiedMeaning{display:none;margin-top:34px;max-width:760px}
+      #vocab .vocabUnifiedCard.revealed .vocabUnifiedMeaning{display:block}
       #vocab .vocabUnifiedCn{font-size:27px;font-weight:850;color:#5d687e;line-height:1.45}.vocabUnifiedEn{font-size:20px;color:#778197;margin-top:11px;line-height:1.45}.vocabUnifiedRoot{font-size:16px;color:#8a94a8;font-weight:750;margin-top:20px}
-      #vocab .vocabUnifiedExample{font-size:17px;color:#566174;line-height:1.65;margin-top:18px}.vocabUnifiedExampleCn{font-size:14px;color:#8a94a8;line-height:1.6;margin-top:4px}
+      #vocab .vocabUnifiedExample{font-size:17px;color:#566174;line-height:1.65;margin-top:18px}.vocabUnifiedExampleCn{font-size:14px;color:#8a94a8;line-height:1.6;margin-top:4px}.vocabUnifiedNote{font-size:14px;color:#8a94a8;line-height:1.6;margin-top:9px}
       #vocab .vocabUnifiedActions,#vocab .vocabUnifiedMemory{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
       #vocab .vocabUnifiedActions button,#vocab .vocabUnifiedMemory button{border-radius:14px;padding:12px 22px;font-weight:800;cursor:pointer}.vocabUnifiedActions .nav{border:0;background:#eef1f6;color:#172033}.vocabUnifiedActions .next{border:0;background:#3157d5;color:#fff}.vocabUnifiedMemory{border-top:1px solid #e5e9f1;padding-top:17px}.vocabUnifiedMemory button{background:#fff;border:1px solid #e0e5ee;color:#283246}
       #vocab .vocabUnifiedMemory .know{border-color:#bfe8cb}#vocab .vocabUnifiedMemory .fuzzy{border-color:#f2d89c}#vocab .vocabUnifiedMemory .dont{border-color:#efc8c4}
@@ -96,12 +98,14 @@
       return;
     }
     const d=info(x), p=((pos()%a.length)+a.length)%a.length+1;
-    const topic=d.theme?'<div class="vocabUnifiedTopic">'+esc(d.theme)+'</div>':'';
+    const topic=isBipa()&&d.theme?'<div class="vocabUnifiedTopic">'+esc(d.theme)+'</div>':'';
     const badge=isBipa()&&['S','A','B'].includes(d.sab)?'<div class="vocabUnifiedBadge '+d.sab+'">'+d.sab+'</div>':'';
     const root=d.root?'<div class="vocabUnifiedRoot">词根 · '+esc(d.root)+'</div>':'';
-    const example=d.example?'<div class="vocabUnifiedExample">'+esc(d.example)+'</div>':'';
-    const exampleCn=d.exampleCn?'<div class="vocabUnifiedExampleCn">'+esc(d.exampleCn)+'</div>':'';
-    box.innerHTML='<div id="vocabUnifiedCard" class="vocabUnifiedCard"><div class="vocabUnifiedProgress">第 '+p+' / '+a.length+' 个</div>'+topic+'<div>'+badge+'<div class="vocabUnifiedWordLine"><div class="vocabUnifiedWord">'+esc(d.word)+'</div><button class="vocabUnifiedSound" type="button" onclick="event.preventDefault();event.stopPropagation();vocabUnifiedSpeak('+JSON.stringify(d.word).replace(/"/g,'&quot;')+')">🔊</button></div><div class="vocabUnifiedMeaning"><div class="vocabUnifiedCn">'+esc(d.cn||'暂无中文')+'</div><div class="vocabUnifiedEn">'+esc(d.en||'')+'</div>'+root+example+exampleCn+'</div></div></div><div class="vocabUnifiedActions"><button class="nav" type="button" onclick="vocabUnifiedPrev()">上一个</button><button class="nav" id="vocabUnifiedFlipBtn" type="button" onclick="vocabUnifiedFlip()">翻卡</button><button class="next" type="button" onclick="vocabUnifiedNext()">下一个</button></div><div class="vocabUnifiedMemory"><button class="know" type="button" onclick="vocabUnifiedMark(\'know\')">会了</button><button class="fuzzy" type="button" onclick="vocabUnifiedMark(\'fuzzy\')">模糊</button><button class="dont" type="button" onclick="vocabUnifiedMark(\'dont\')">不会</button></div>';
+    const en=d.en?'<div class="vocabUnifiedEn">'+esc(d.en)+'</div>':'';
+    const example=!isBipa()&&d.example?'<div class="vocabUnifiedExample">'+esc(d.example)+'</div>':'';
+    const exampleCn=!isBipa()&&d.exampleCn?'<div class="vocabUnifiedExampleCn">'+esc(d.exampleCn)+'</div>':'';
+    const note=!isBipa()&&d.note?'<div class="vocabUnifiedNote">'+esc(d.note)+'</div>':'';
+    box.innerHTML='<div id="vocabUnifiedCard" class="vocabUnifiedCard"><div class="vocabUnifiedProgress">第 '+p+' / '+a.length+' 个</div>'+topic+'<div>'+badge+'<div class="vocabUnifiedWordLine"><div class="vocabUnifiedWord">'+esc(d.word)+'</div><button class="vocabUnifiedSound" type="button" onclick="event.preventDefault();event.stopPropagation();vocabUnifiedSpeak('+JSON.stringify(d.word).replace(/"/g,'&quot;')+')">🔊</button></div><div class="vocabUnifiedMeaning"><div class="vocabUnifiedCn">'+esc(d.cn||'暂无中文')+'</div>'+en+root+example+exampleCn+note+'</div></div></div><div class="vocabUnifiedActions"><button class="nav" type="button" onclick="vocabUnifiedPrev()">上一个</button><button class="nav" id="vocabUnifiedFlipBtn" type="button" onclick="vocabUnifiedFlip()">翻卡</button><button class="next" type="button" onclick="vocabUnifiedNext()">下一个</button></div><div class="vocabUnifiedMemory"><button class="know" type="button" onclick="vocabUnifiedMark(\'know\')">会了</button><button class="fuzzy" type="button" onclick="vocabUnifiedMark(\'fuzzy\')">模糊</button><button class="dont" type="button" onclick="vocabUnifiedMark(\'dont\')">不会</button></div>';
   }
 
   function filterByView(reset){
@@ -121,7 +125,7 @@
         else if(!(x.categories||[]).includes(cat))return false;
       }
       if(sab&&d.sab!==sab)return false;
-      if(q&&!([x.word,d.cn,d.en,d.root,d.theme].join(' ').toLowerCase().includes(q)))return false;
+      if(q&&!([x.word,d.cn,d.en,d.root,d.theme,d.example,d.exampleCn,d.note].join(' ').toLowerCase().includes(q)))return false;
       return true;
     });
     try{FILTER=out;if(reset)idx=0;else if(out.length)idx=Math.min(Math.max(0,pos()),out.length-1);else idx=0}catch(e){}
@@ -139,7 +143,14 @@
     }
   }
 
-  window.vocabUnifiedFlip=function(){const c=$('vocabUnifiedCard'),b=$('vocabUnifiedFlipBtn');if(!c)return;c.classList.toggle('revealed');if(b)b.textContent=c.classList.contains('revealed')?'收起':'翻卡'};
+  window.vocabUnifiedFlip=function(){
+    const c=$('vocabUnifiedCard'),b=$('vocabUnifiedFlipBtn');if(!c)return;
+    c.classList.toggle('revealed');
+    const opened=c.classList.contains('revealed');
+    const meaning=c.querySelector('.vocabUnifiedMeaning');
+    if(meaning)meaning.style.display=opened?'block':'none';
+    if(b)b.textContent=opened?'收起':'翻卡';
+  };
   window.vocabUnifiedPrev=function(){const a=arr();if(!a.length)return;try{idx=(pos()-1+a.length)%a.length}catch(e){}render()};
   window.vocabUnifiedNext=function(){const a=arr();if(!a.length)return;try{idx=(pos()+1)%a.length}catch(e){}render()};
   window.vocabUnifiedMark=function(v){
@@ -177,7 +188,6 @@
       fixing=true;render();queueMicrotask(()=>{fixing=false});
     }
   });
-
   function bindDynamicControls(){
     const g=gradeSelect();if(g&&!g.dataset.unifiedBound){g.dataset.unifiedBound='1';g.addEventListener('change',()=>setTimeout(()=>filterByView(true),0));}
   }
