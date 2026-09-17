@@ -9,9 +9,20 @@
   function hasWords(){try{return Array.isArray(FILTER)&&FILTER.length>0}catch(e){return false}}
   function flashMode(){const m=document.getElementById('mode');return !m||m.value!=='quiz'}
   function box(){return document.getElementById('vocabBox')}
+  function isBipa(){
+    const s=document.getElementById('librarySelect');
+    const t=s&&s.selectedIndex>=0?String(s.options[s.selectedIndex]?.textContent||''):'';
+    return /BIPA\s*[（(]?\s*(A1|A2|B1|B2)/i.test(t);
+  }
+  function syncSection(){
+    const sec=document.getElementById('vocab');if(!sec)return;
+    sec.classList.remove('bipaStable','bipaSwitching');
+    sec.classList.toggle('bipaFinalV7',isBipa());
+  }
 
   function restore(){
     if(busy)return;
+    syncSection();
     const b=box();if(!b)return;
     window.renderVocab=unifiedRender;try{renderVocab=unifiedRender}catch(e){}
     if(!flashMode()||!hasWords())return;
