@@ -6,6 +6,7 @@ const ROOT=path.resolve(__dirname,'../..');
 const read=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const exists=p=>fs.existsSync(path.join(ROOT,p));
 const failures=[];
+const EXPECTED_BIPA={A1:515,A2:290,B1:204,B2:274};
 function ok(cond,msg){if(!cond)failures.push(msg)}
 
 try{
@@ -17,6 +18,9 @@ try{
   const toolbar=read('data/vocab-bipa-toolbar-compact-20260917.js');
   const guard=read('data/vocab-unified-ui-guard-20260917.js');
   const flip=read('data/vocab-flip-content-fix-20260917.js');
+  const secondarySeed=read('data/bipa-secondary-seed-20260917.js');
+  const weaknessPool=read('data/weakness-pool.js');
+  const weaknessSync=read('data/weakness-sync-client.js');
   const libraryStub=read('data/library-switcher.js');
   const reviewStub=read('data/vocab-review-ui.js');
   const bipaStateStub=read('data/vocab-bipa-state-20260917.js');
@@ -29,6 +33,9 @@ try{
     ['data/vocab-bipa-toolbar-compact-20260917.js',toolbar],
     ['data/vocab-unified-ui-guard-20260917.js',guard],
     ['data/vocab-flip-content-fix-20260917.js',flip],
+    ['data/bipa-secondary-seed-20260917.js',secondarySeed],
+    ['data/weakness-pool.js',weaknessPool],
+    ['data/weakness-sync-client.js',weaknessSync],
     ['data/library-switcher.js',libraryStub],
     ['data/vocab-review-ui.js',reviewStub],
     ['data/vocab-bipa-state-20260917.js',bipaStateStub]
@@ -62,8 +69,8 @@ try{
 
   ok(bipaLoader.includes('JSON.parse(text)'),'BIPA gzip payload must be parsed as JSON, never executed as JavaScript');
   ok(!bipaLoader.includes("type:'text/javascript'"),'BIPA JSON loader must not wrap decompressed JSON as a script blob');
-  ok(bipaLoader.includes("for(const lv of ['A1','A2','B1','B2'])"),'BIPA loader must validate all four levels');
-  ok(bipaLoader.includes('window.BIPA_VOCAB_RAW=raw'),'BIPA loader must publish complete raw data before controller starts');
+  ok(bipaLoader.includes('const EXPECTED={A1:515,A2:290,B1:204,B2:274}'),'BIPA loader must pin the complete expected counts');
+  ok(bipaLoader.includes("window.BIPA_VOCAB_RAW=raw"),'BIPA loader must publish complete raw data before controller starts');
 
   const chunks=[];
   for(let i=1;i<=8;i++){
@@ -77,11 +84,19 @@ try{
     try{raw=JSON.parse(zlib.gunzipSync(Buffer.from(chunks.join(''),'base64')).toString('utf8'))}catch(e){failures.push('BIPA compressed JSON decode failed: '+e.message)}
     if(raw){
       const counts={};
-      ['A1','A2','B1','B2'].forEach(lv=>{counts[lv]=Array.isArray(raw[lv])?raw[lv].length:0;ok(counts[lv]>0,'BIPA compressed source missing '+lv)});
+      Object.keys(EXPECTED_BIPA).forEach(lv=>{
+        counts[lv]=Array.isArray(raw[lv])?raw[lv].length:0;
+        ok(counts[lv]===EXPECTED_BIPA[lv],`BIPA ${lv} count mismatch: ${counts[lv]} / ${EXPECTED_BIPA[lv]}`);
+      });
       console.log('BIPA compressed source counts:',counts);
     }
   }
 
+  ok(controller.includes("const EXPECTED_MASTER_COUNT=977"),'single controller must pin master count to 977');
+  ok(controller.includes("const EXPECTED_BIPA_COUNTS={A1:515,A2:290,B1:204,B2:274}"),'single controller must pin all BIPA counts');
+  ok(!controller.includes('runGzipPayload'),'single controller must never execute decompressed BIPA JSON as JavaScript');
+  ok(!controller.includes('BIPA_PLAIN_SCRIPTS'),'single controller must not fall back to incomplete plain BIPA fragments');
+  ok(controller.includes("window.BipaDataLoader&&typeof window.BipaDataLoader.load==='function'"),'controller BIPA recovery must use the JSON data loader');
   ok(controller.includes("const BIPA_KEYS=['bipa-a1','bipa-a2','bipa-b1','bipa-b2']"),'single controller must own all BIPA libraries');
   ok(controller.includes("return lv?'indo_bipa_mem_'+lv:'indo_mem'"),'BIPA must use independent per-level memory while normal vocab uses indo_mem');
   ok(controller.includes('function sourceFor(key=activeKey)'),'single controller must own every vocabulary data source');
@@ -99,9 +114,19 @@ try{
   ok(controller.includes("window.showReviewWords=()=>setView('review')"),'待掌握 must route to the single controller');
   ok(controller.includes('window.applyFilter=()=>rebuild(true)'),'search/category/SAB filters must route to the single controller');
   ok(controller.includes('window.mark=mark'),'memory marking must route to the single controller');
+  ok(controller.includes("new CustomEvent('bipa-memory-changed'"),'BIPA memory changes must notify the secondary-pool reconciler immediately');
+  ok(controller.includes('let initPromise=null'),'controller initialization must be promise-idempotent');
+  ok(controller.includes('if(initPromise)return initPromise'),'concurrent controller init calls must await the same initialization');
   ok(controller.includes('window.VocabController={'),'single VocabController API must be installed');
   ok(!controller.includes('oldRender'),'single controller must not retain old renderer fallback');
   ok(!controller.includes('bipaV7Card'),'single controller must not render legacy BIPA cards');
+
+  ok(secondarySeed.includes("window.addEventListener('bipa-memory-changed',queueSeed)"),'secondary BIPA pool must reconcile immediately after a BIPA judgment changes');
+  ok(secondarySeed.includes('pool.removeReasons'),'secondary BIPA pool must remove stale dont/fuzzy reasons when status changes');
+  ok(secondarySeed.includes('master-core-locked'),'secondary BIPA pool must reconcile if primary master membership changes');
+  ok(weaknessPool.includes('removeReasons:removeReasons'),'WeaknessPool must support scoped reason removal');
+  ok(weaknessPool.includes('importRecord:importRecord'),'WeaknessPool must support lossless remote record import');
+  ok(weaknessSync.includes("typeof p.importRecord==='function'"),'cloud pull must preserve complete weakness reason/counter state');
 
   ok(unified.includes('vocabUnifiedCard'),'unified renderer must output vocabUnifiedCard');
   ok(/window\.renderVocab\s*=\s*render/.test(unified),'unified renderer must own window.renderVocab');
