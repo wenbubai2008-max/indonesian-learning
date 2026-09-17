@@ -6,6 +6,9 @@ on:
       - '.github/workflows/sync-daily-vocab.yml'
       - 'data/daily/*-am.json'
       - 'data/daily/*-pm.json'
+  schedule:
+    - cron: '10 1,11,12 * * *'
+  workflow_dispatch:
 permissions:
   contents: write
 concurrency:
