@@ -29,26 +29,29 @@ if(master.length!==977) throw new Error(`Master vocabulary count mismatch: ${mas
 const primarySet=new Set(master.map(key));
 
 function loadBipaRaw(){
-  const bctx={window:{}};vm.createContext(bctx);
+  if(fs.existsSync('data/bipa-runtime-data.js')){
+    const bctx={window:{}};vm.createContext(bctx);
+    vm.runInContext(fs.readFileSync('data/bipa-runtime-data.js','utf8'),bctx,{filename:'data/bipa-runtime-data.js'});
+    const raw=bctx.window.BIPA_VOCAB_RAW||{};
+    if(['A1','A2','B1','B2'].every(lv=>Array.isArray(raw[lv])&&raw[lv].length))return raw;
+  }
+  const parts=[];
   for(let i=1;i<=8;i++){
     const p=`data/bipa-gz-${String(i).padStart(2,'0')}.js`;
-    if(fs.existsSync(p))vm.runInContext(fs.readFileSync(p,'utf8'),bctx,{filename:p});
+    if(!fs.existsSync(p))continue;
+    const s=fs.readFileSync(p,'utf8'),m=s.match(/\+'([^']+)'\s*;?\s*$/);
+    if(m)parts.push(m[1]);
   }
-  if(bctx.window.BIPA_GZ){
-    const code=zlib.gunzipSync(Buffer.from(String(bctx.window.BIPA_GZ),'base64')).toString('utf8');
-    vm.runInContext(code,bctx,{filename:'bipa-gzip-payload.js'});
+  if(parts.length===8){
+    const text=zlib.gunzipSync(Buffer.from(parts.join(''),'base64')).toString('utf8');
+    const raw=JSON.parse(text);
+    if(['A1','A2','B1','B2'].every(lv=>Array.isArray(raw[lv])&&raw[lv].length))return raw;
   }
-  const ready=['A1','A2','B1','B2'].every(lv=>Array.isArray((bctx.window.BIPA_VOCAB_RAW||{})[lv]));
-  if(!ready){
-    for(const p of ['data/bipa-vocab-01.js','data/bipa-vocab-02.js']){
-      if(fs.existsSync(p))vm.runInContext(fs.readFileSync(p,'utf8'),bctx,{filename:p});
-    }
-  }
-  return bctx.window.BIPA_VOCAB_RAW||{};
+  throw new Error('BIPA source is incomplete');
 }
 
 const bipaRaw=loadBipaRaw();
-const secondaryCatalog=[],secondaryCatalogMap=new Map(),secondarySeen=new Set();
+const secondaryCatalog=[],secondarySeen=new Set();
 for(const lv of ['A1','A2','B1','B2']){
   const rows=Array.isArray(bipaRaw[lv])?bipaRaw[lv]:[];
   for(const r of rows){
@@ -57,7 +60,7 @@ for(const lv of ['A1','A2','B1','B2']){
     const sab=String(r[8]||'').trim().toUpperCase();
     if(lv==='B2'&&sab!=='S')continue;
     const x={word,cn:String(r[1]||'').trim(),en:String(r[2]||'').trim(),root:String(r[3]||'').trim(),root_cn:'',formation:String(r[4]||'').trim(),bipa_level:lv,sab};
-    secondarySeen.add(k);secondaryCatalog.push(x);secondaryCatalogMap.set(k,x);
+    secondarySeen.add(k);secondaryCatalog.push(x);
   }
 }
 
