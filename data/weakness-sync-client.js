@@ -99,9 +99,13 @@
 
   function applyRemoteRecord(r){
     const p=pool();if(!p||!r||!r.word)return;
+    if(typeof p.importRecord==='function'){p.importRecord(r);return;}
     const item={word:r.word,display:r.display||r.word,cn:r.cn||'',root:r.root||'',root_cn:r.root_cn||'',source:r.source||'',source_date:r.source_date||'',session:r.session||''};
     if(r.status==='mastered')p.markMastered(r.word,'cloud_sync');
-    else p.markWeak(r.word,item,(r.reasons&&r.reasons[0])||'cloud_sync');
+    else{
+      const reasons=Array.isArray(r.reasons)&&r.reasons.length?r.reasons:['cloud_sync'];
+      reasons.forEach(reason=>p.markWeak(r.word,item,reason));
+    }
     if(typeof p.enrich==='function')p.enrich(r.word,item);
   }
 
