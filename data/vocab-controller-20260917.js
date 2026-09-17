@@ -6,14 +6,15 @@
   const norm=s=>String(s||'').trim().toLowerCase();
   const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
   const MASTER_SCRIPTS=['data/master-vocab-data.js?v=20260917-controller1','data/master-vocab-data-2.js?v=20260917-controller1','data/master-vocab-data-3.js?v=20260917-controller1'];
-  const BIPA_GZ_SCRIPTS=Array.from({length:8},(_,i)=>'data/bipa-gz-'+String(i+1).padStart(2,'0')+'.js?v=20260917-controller1');
-  const BIPA_PLAIN_SCRIPTS=['data/bipa-vocab-01.js?v=20260917-controller1','data/bipa-vocab-02.js?v=20260917-controller1'];
+  const EXPECTED_MASTER_COUNT=977;
+  const EXPECTED_BIPA_COUNTS={A1:515,A2:290,B1:204,B2:274};
   const NORMAL_KEYS=['top1000','master','daily','unknown'];
   const BIPA_KEYS=['bipa-a1','bipa-a2','bipa-b1','bipa-b2'];
   const ALL_KEYS=[...NORMAL_KEYS,...BIPA_KEYS];
   let activeKey='top1000';
   let activeView='';
   let installed=false;
+  let initPromise=null;
   let dataReady=false;
   let activeAudio=null;
   const meaningAttempts=new Set();
@@ -29,16 +30,6 @@
       s.onload=()=>resolve(true);s.onerror=()=>resolve(false);document.head.appendChild(s);
     });
   }
-  async function runGzipPayload(base64){
-    if(!base64||typeof DecompressionStream==='undefined')return false;
-    try{
-      const bin=atob(base64),bytes=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
-      const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
-      const code=await new Response(stream).text();
-      const url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));
-      const ok=await loadScript(url);setTimeout(()=>URL.revokeObjectURL(url),500);return ok;
-    }catch(e){console.error('[vocab controller] BIPA data decompress failed',e);return false;}
-  }
   function masterObjects(){
     const seen=new Set(),out=[];
     (window.MASTER_VOCAB_DB||[]).forEach(raw=>{
@@ -51,24 +42,27 @@
     return out;
   }
   async function ensureMasterData(){
-    if(masterObjects().length>=900){window.MASTER_VOCAB_OBJECTS=masterObjects();return;}
+    let current=masterObjects();
+    if(current.length===EXPECTED_MASTER_COUNT){window.MASTER_VOCAB_OBJECTS=current;return;}
     window.MASTER_VOCAB_DB=[];
-    for(const src of MASTER_SCRIPTS)await loadScript(src);
-    window.MASTER_VOCAB_OBJECTS=masterObjects();
+    for(const src of MASTER_SCRIPTS){const ok=await loadScript(src);if(!ok)throw new Error('主学习词库加载失败：'+src)}
+    current=masterObjects();
+    if(current.length!==EXPECTED_MASTER_COUNT)throw new Error('主学习词库数量异常：'+current.length+' / '+EXPECTED_MASTER_COUNT);
+    window.MASTER_VOCAB_OBJECTS=current;
+  }
+  function bipaCounts(){
+    const r=window.BIPA_VOCAB_RAW||{},out={};
+    Object.keys(EXPECTED_BIPA_COUNTS).forEach(k=>{out[k]=Array.isArray(r[k])?r[k].length:0});
+    return out;
   }
   function bipaReady(){
-    const r=window.BIPA_VOCAB_RAW||{};
-    return ['A1','A2','B1','B2'].every(k=>Array.isArray(r[k])&&r[k].length>0);
+    const c=bipaCounts();
+    return Object.keys(EXPECTED_BIPA_COUNTS).every(k=>c[k]===EXPECTED_BIPA_COUNTS[k]);
   }
   async function ensureBipaData(){
     if(bipaReady())return;
-    window.BIPA_GZ='';
-    for(const src of BIPA_GZ_SCRIPTS)await loadScript(src);
-    if(window.BIPA_GZ){await runGzipPayload(window.BIPA_GZ);window.BIPA_GZ='';}
-    if(!bipaReady()){
-      for(const src of BIPA_PLAIN_SCRIPTS)await loadScript(src);
-    }
-    if(!bipaReady())console.warn('[vocab controller] BIPA data incomplete',Object.fromEntries(['A1','A2','B1','B2'].map(k=>[k,(window.BIPA_VOCAB_RAW?.[k]||[]).length])));
+    if(window.BipaDataLoader&&typeof window.BipaDataLoader.load==='function')await window.BipaDataLoader.load();
+    if(!bipaReady())throw new Error('BIPA 词库数量异常：'+JSON.stringify(bipaCounts()));
   }
 
   function localUnknownMap(){try{return JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){return {}}}
@@ -216,7 +210,10 @@
   }
   function mark(v){
     if(!['know','fuzzy','dont'].includes(v))return;const x=currentItem();if(!x||!x.word)return;
-    const m=memoryFor();const k=norm(x.word);if(isBipaKey())m[k]=v;else{m[x.word]=v;m[k]=v}localStorage.setItem(memKeyFor(),JSON.stringify(m));syncWeakness(x,v);
+    const m=memoryFor(),k=norm(x.word),lv=bipaLevelForKey();
+    if(lv)m[k]=v;else{m[x.word]=v;m[k]=v}
+    localStorage.setItem(memKeyFor(),JSON.stringify(m));syncWeakness(x,v);
+    if(lv)window.dispatchEvent(new CustomEvent('bipa-memory-changed',{detail:{level:lv,word:x.word,status:v}}));
     rebuild(false);
   }
   function emptyMessage(){
@@ -257,18 +254,24 @@
     window.getUnfamiliarVocabulary=unknownWords;window.refreshUnknownLibrary=()=>{populateLibraryOptions();if(activeKey==='unknown')setLibrary('unknown')};
     window.speak=speak;try{speak=window.speak}catch(e){}
   }
-  async function init(){
-    if(installed)return;installed=true;
-    ensureLibrarySelect();
-    await Promise.all([ensureMasterData(),ensureBipaData()]);dataReady=true;
-    populateLibraryOptions();bindControls();installOwnership();
-    const stored=canonicalKey(localStorage.getItem('selected_vocab_library')||$('librarySelect')?.value||'top1000');
-    setLibrary(stored,{restore:true});
-    window.addEventListener('unknown-vocab-changed',()=>{populateLibraryOptions();if(activeKey==='unknown')setLibrary('unknown')});
-    window.addEventListener('master-core-locked',()=>{populateLibraryOptions();if(activeKey==='master')setLibrary('master')});
-    window.addEventListener('beforeunload',saveProgress);
-    if(activeKey==='unknown')setTimeout(fillMissingUnknownMeanings,0);
-    window.dispatchEvent(new CustomEvent('vocab-controller-ready',{detail:{key:activeKey}}));
+  function init(){
+    if(initPromise)return initPromise;
+    initPromise=(async function(){
+      if(installed)return true;
+      ensureLibrarySelect();
+      await Promise.all([ensureMasterData(),ensureBipaData()]);
+      populateLibraryOptions();bindControls();installOwnership();
+      const stored=canonicalKey(localStorage.getItem('selected_vocab_library')||$('librarySelect')?.value||'top1000');
+      setLibrary(stored,{restore:true});
+      window.addEventListener('unknown-vocab-changed',()=>{populateLibraryOptions();if(activeKey==='unknown')setLibrary('unknown')});
+      window.addEventListener('master-core-locked',()=>{populateLibraryOptions();if(activeKey==='master')setLibrary('master')});
+      window.addEventListener('beforeunload',saveProgress);
+      if(activeKey==='unknown')setTimeout(fillMissingUnknownMeanings,0);
+      dataReady=true;installed=true;
+      window.dispatchEvent(new CustomEvent('vocab-controller-ready',{detail:{key:activeKey}}));
+      return true;
+    })().catch(e=>{initPromise=null;installed=false;dataReady=false;throw e});
+    return initPromise;
   }
 
   window.VocabController={
