@@ -7,12 +7,14 @@
        * 正式运行链只有：single controller -> unified renderer -> toolbar -> UI guard -> flip layout。
        * BIPA gzip 文件只作为数据载荷，由 controller 自己解压，不拥有 DB/FILTER/render 权限。
        */
-      await load('data/vocab-controller-20260917.js?v=20260917-controller1');
-      await load('data/vocab-unified-renderer-20260917.js?v=20260917-controller1');
-      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-controller1');
-      await load('data/vocab-unified-ui-guard-20260917.js?v=20260917-controller1');
-      await load('data/vocab-flip-content-fix-20260917.js?v=20260917-controller1');
+      await load('data/vocab-controller-20260917.js?v=20260917-secondary1');
+      await load('data/vocab-unified-renderer-20260917.js?v=20260917-secondary1');
+      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-secondary1');
+      await load('data/vocab-unified-ui-guard-20260917.js?v=20260917-secondary1');
+      await load('data/vocab-flip-content-fix-20260917.js?v=20260917-secondary1');
+      await load('data/weakness-sync-client.js?v=20260917-secondary1');
       if(window.VocabController&&typeof window.VocabController.init==='function')await window.VocabController.init();
+      await load('data/bipa-secondary-seed-20260917.js?v=20260917-secondary1');
       if(window.VocabController&&typeof window.VocabController.refresh==='function')window.VocabController.refresh(false);
     }catch(e){console.error('[vocab controller boot]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面加载失败，请刷新页面重试';}
   }
@@ -20,5 +22,5 @@
 })();
 (function(){
   if(window.__masterTop1000WeakMergeLoaded||window.lockMasterToCore||document.querySelector('script[data-master-core-guard]'))return;
-  var s=document.createElement('script');s.src='data/master-top1000-weak-merge.js?v=20260917-controller1';s.dataset.masterCoreGuard='1';document.head.appendChild(s);
+  var s=document.createElement('script');s.src='data/master-top1000-weak-merge.js?v=20260917-secondary1';s.dataset.masterCoreGuard='1';document.head.appendChild(s);
 })();
