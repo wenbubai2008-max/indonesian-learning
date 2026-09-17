@@ -4,7 +4,7 @@
 
   const $=id=>document.getElementById(id);
   const norm=s=>String(s||'').trim().toLowerCase();
-  const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[m]));
   const MASTER_SCRIPTS=['data/master-vocab-data.js?v=20260917-controller1','data/master-vocab-data-2.js?v=20260917-controller1','data/master-vocab-data-3.js?v=20260917-controller1'];
   const EXPECTED_MASTER_COUNT=977;
   const EXPECTED_BIPA_COUNTS={A1:515,A2:290,B1:204,B2:274};
@@ -59,15 +59,18 @@
     Object.keys(EXPECTED_BIPA_COUNTS).forEach(k=>{out[k]=Array.isArray(r[k])?r[k].length:0});
     return out;
   }
-  function bipaReady(){
-    const c=bipaCounts();
-    return Object.keys(EXPECTED_BIPA_COUNTS).every(k=>c[k]===EXPECTED_BIPA_COUNTS[k]);
+  function bipaReady(level){
+    const lv=String(level||'').toUpperCase(),r=window.BIPA_VOCAB_RAW||{};
+    if(lv&&EXPECTED_BIPA_COUNTS[lv])return Array.isArray(r[lv])&&r[lv].length===EXPECTED_BIPA_COUNTS[lv];
+    return Object.keys(EXPECTED_BIPA_COUNTS).every(k=>Array.isArray(r[k])&&r[k].length===EXPECTED_BIPA_COUNTS[k]);
   }
-  async function ensureBipaData(){
-    if(bipaReady())return;
-    if(window.BipaDataLoader&&typeof window.BipaDataLoader.load==='function')await window.BipaDataLoader.load();
-    if(!bipaReady())throw new Error('BIPA 词库数量异常：'+JSON.stringify(bipaCounts()));
-    ['A1','A2','B1','B2'].forEach(lv=>sourceCache.delete('bipa-'+lv.toLowerCase()));
+  async function ensureBipaData(level){
+    const lv=String(level||'').toUpperCase();
+    if(!EXPECTED_BIPA_COUNTS[lv])throw new Error('未知 BIPA 级别：'+level);
+    if(bipaReady(lv))return;
+    if(window.BipaDataLoader&&typeof window.BipaDataLoader.load==='function')await window.BipaDataLoader.load(lv);
+    if(!bipaReady(lv))throw new Error('BIPA '+lv+' 词库数量异常：'+(bipaCounts()[lv]||0)+' / '+EXPECTED_BIPA_COUNTS[lv]);
+    sourceCache.delete('bipa-'+lv.toLowerCase());
   }
 
   function localUnknownMap(){try{return JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){return {}}}
@@ -140,7 +143,7 @@
     cat.innerHTML='<option value="">'+(isBipaKey()?'全部主题':'全部分类')+'</option>'+values.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('');
     if(values.includes(cur))cat.value=cur;
   }
-  function libraryCount(key){const lv=bipaLevelForKey(key);if(lv&&!bipaReady())return EXPECTED_BIPA_COUNTS[lv]||0;return sourceFor(key).length}
+  function libraryCount(key){const lv=bipaLevelForKey(key);if(lv&&!bipaReady(lv))return EXPECTED_BIPA_COUNTS[lv]||0;return sourceFor(key).length}
   function populateLibraryOptions(){
     const select=$('librarySelect');if(!select)return;
     const cur=canonicalKey(select.value||localStorage.getItem('selected_vocab_library')||activeKey);
@@ -184,10 +187,10 @@
     if($('search'))$('search').value='';if($('cat'))$('cat').value='';if($('sabFilterStable'))$('sabFilterStable').value='';rebuild(true);
   }
   async function setLibrary(key,opts={}){
-    key=canonicalKey(key);const mySeq=++switchSeq;
-    if(isBipaKey(key)&&!bipaReady()){
+    key=canonicalKey(key);const mySeq=++switchSeq,lv=bipaLevelForKey(key);
+    if(lv&&!bipaReady(lv)){
       if($('dbStatus'))$('dbStatus').textContent=labelFor(key)+' · 正在加载…';
-      await ensureBipaData();if(mySeq!==switchSeq)return [];
+      await ensureBipaData(lv);if(mySeq!==switchSeq)return [];
     }
     saveProgress();activeKey=key;activeView='';localStorage.removeItem('vocab_view_mode');
     const select=$('librarySelect');if(select&&select.value!==key)select.value=key;localStorage.setItem('selected_vocab_library',key);
