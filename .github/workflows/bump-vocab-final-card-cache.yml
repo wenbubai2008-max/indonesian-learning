@@ -16,7 +16,7 @@ jobs:
           from pathlib import Path
           p=Path('index.html')
           s=p.read_text()
-          old='data/vocab-memory-feedback.js?v=20260915-audit1'
+          old='data/vocab-memory-feedback.js?v=20260917-unified1'
           new='data/vocab-memory-feedback.js?v=20260917-finalcard1'
           if old not in s and new not in s:
               raise SystemExit('vocab-memory-feedback script tag not found')
