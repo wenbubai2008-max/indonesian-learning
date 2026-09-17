@@ -1,32 +1,27 @@
 {
-  "generated_at": "2026-09-13T15:30:04.703Z",
+  "generated_at": "2026-09-17T08:34:15.842Z",
   "master_unique": 977,
-  "weak_active_total": 1164,
-  "weak_mastered_total": 852,
-  "weak_active_mastered_overlap": 0,
-  "master_active": 623,
-  "master_mastered": 354,
-  "master_unjudged": 0,
-  "daily_taught_unique": 361,
-  "new_pool_total": 556,
-  "review_pool_total": 98,
-  "oral_candidates_total": 206,
-  "oral_candidates_in_master": 86,
-  "oral_new_pool": 60,
-  "oral_review_pool": 12,
-  "rules": {
-    "new_pool": "master977 ∩ weak_active − daily_vocab",
-    "review_pool": "weak_active ∩ daily_vocab",
-    "mastered": "excluded from new and重点复习",
-    "weakness_training": "weak_active ∩ daily_vocab only",
-    "oral_candidate": "register=口语 OR oral field non-empty",
-    "oral_daily_target": "约20%；08:00优先2/10，19:00优先1个/3-4新词；只能从合法新词池取，不为凑比例越界"
+  "primary_new_pool_total": 518,
+  "secondary_master_unique": 342,
+  "secondary_new_pool_total": 340,
+  "active_master_pool": "primary_977",
+  "handoff": {
+    "phase": "primary",
+    "committed_secondary": false,
+    "fill_target": 10,
+    "primary_remaining": 518,
+    "secondary_available": 340,
+    "switched_at": ""
   },
-  "direct_oral_total": 130,
-  "direct_oral_in_master": 46,
-  "direct_oral_new_pool": 32,
-  "direct_oral_review_pool": 10,
-  "mapped_form_total": 160,
-  "mapped_form_new_pool": 47,
-  "oral_selection_check": "PASS: enough direct oral words for normal daily 2+1 target"
+  "weak_active_total": 1461,
+  "weak_mastered_total": 862,
+  "daily_taught_unique": 398,
+  "new_pool_total": 518,
+  "review_pool_total": 126,
+  "oral_new_pool_total": 52,
+  "rules": {
+    "new_pool": "primary first; when primary has 1-9 legal words, expose them first and top up from secondary to keep the 10-word AM contract; after primary reaches 0, secondary handoff is committed and never falls back automatically",
+    "review_pool": "weak_active ∩ daily_vocab",
+    "secondary": "BIPA人工筛选不会/模糊；B2仅S；与977重复永久剔除"
+  }
 }
