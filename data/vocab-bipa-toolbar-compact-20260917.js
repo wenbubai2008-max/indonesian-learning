@@ -1,6 +1,6 @@
 (function(){
-  if(window.__BIPA_TOOLBAR_COMPACT_20260917_V3__)return;
-  window.__BIPA_TOOLBAR_COMPACT_20260917_V3__=true;
+  if(window.__BIPA_TOOLBAR_COMPACT_20260917_V4__)return;
+  window.__BIPA_TOOLBAR_COMPACT_20260917_V4__=true;
 
   function isGradeSelect(s){
     if(!s||s.tagName!=='SELECT')return false;
@@ -25,7 +25,7 @@
     @media(min-width:901px){
       #vocab.bipaFinalV7 .toolbar{
         display:grid!important;
-        grid-template-columns:160px minmax(220px,1fr) 145px 120px 100px 145px!important;
+        grid-template-columns:195px minmax(180px,1fr) 145px 120px 100px 145px!important;
         gap:8px!important;
         align-items:center!important;
         width:100%!important;
@@ -41,11 +41,12 @@
         padding-right:12px!important;
         white-space:nowrap!important;
       }
+      #vocab.bipaFinalV7 #search{max-width:360px!important;}
       #vocab.bipaFinalV7 .toolbar button{font-weight:750!important;}
     }
     @media(max-width:900px){
       #vocab.bipaFinalV7 .toolbar{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;gap:8px!important;}
-      #vocab.bipaFinalV7 #search{grid-column:span 2!important;}
+      #vocab.bipaFinalV7 #search{grid-column:span 2!important;max-width:none!important;}
     }
     @media(max-width:620px){
       #vocab.bipaFinalV7 .toolbar{grid-template-columns:1fr 1fr!important;}
@@ -55,7 +56,6 @@
   const old=document.getElementById('bipaToolbarCompact20260917');if(old)old.remove();
   document.head.appendChild(st);
 
-  function queueDedupe(){requestAnimationFrame(dedupeGradeFilter)}
   dedupeGradeFilter();
   [50,150,350,800,1500].forEach(ms=>setTimeout(dedupeGradeFilter,ms));
   window.addEventListener('vocab-library-ready',()=>{
