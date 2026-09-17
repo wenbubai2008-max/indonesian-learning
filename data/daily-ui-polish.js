@@ -51,6 +51,29 @@
   const PM_SWITCH_DATE='2026-09-16';
   function pmTimeForDate(date){return String(date||'')>=PM_SWITCH_DATE?'18:00':'19:00';}
 
+  // Daily lesson JSON is read by the base renderer and then again by the
+  // light-test enhancer. Keep one in-memory copy per date/session so the
+  // second read is free. PM may also reuse an already-loaded AM lesson.
+  function installDailyLessonCache(){
+    const original=window.fetchJSON;
+    if(typeof original!=='function'||original.__dailyLessonCache)return;
+    const cache=window.__dailyLessonCache instanceof Map?window.__dailyLessonCache:new Map();
+    window.__dailyLessonCache=cache;
+    const wrapped=async function(path){
+      const raw=String(path||'');
+      const m=raw.match(/^data\/daily\/(\d{4}-\d{2}-\d{2})-(am|pm)\.json(?:[?#].*)?$/i);
+      const key=m?(m[1]+'-'+m[2].toLowerCase()):'';
+      if(key&&cache.has(key))return cache.get(key);
+      const data=await original.apply(this,arguments);
+      if(key)cache.set(key,data);
+      return data;
+    };
+    wrapped.__dailyLessonCache=true;
+    wrapped.__original=original;
+    window.fetchJSON=wrapped;
+  }
+  installDailyLessonCache();
+
   function showCompleteToast(text){
     let t=document.getElementById('dailyCompleteToast');
     if(!t){t=document.createElement('div');t.id='dailyCompleteToast';t.className='dailyCompleteToast';document.body.appendChild(t);}
@@ -112,11 +135,29 @@
     showCompleteToast(label+' · 已记录完成');
   }
 
-  async function latestAvailableDate(session,requested){
+  function currentArchiveHas(date,session){
+    try{return typeof window.hasSession==='function'&&window.hasSession(date,session);}catch(e){return false;}
+  }
+
+  function adoptArchive(data){
     try{
+      if(data&&Array.isArray(data.dates)&&typeof archive!=='undefined')archive=data;
+      if(typeof window.updateHome==='function')window.updateHome();
+    }catch(e){}
+  }
+
+  async function latestAvailableDate(session,requested){
+    // Normal path: the homepage already loaded index.json and knows today's
+    // lesson exists. Do not request index.json again just to open it.
+    if(currentArchiveHas(requested,session))return requested;
+    try{
+      // Fallback path: refresh the index only when today's lesson is not in
+      // the in-memory archive (for example, the page was opened before the
+      // lesson was generated), then find today or the latest previous lesson.
       const r=await fetch('/indonesian-learning/data/daily/index.json?v='+Date.now(),{cache:'no-store'});
       if(!r.ok)throw new Error(String(r.status));
       const data=await r.json();
+      adoptArchive(data);
       const rows=(data&&Array.isArray(data.dates)?data.dates:[]).filter(function(x){return x&&typeof x==='object'&&x.date;});
       const exact=rows.find(function(x){return x.date===requested;});
       if(exact&&exact[session])return requested;
