@@ -73,3 +73,4 @@ if(failures.length){
   process.exit(1);
 }
 console.log('Vocabulary UI regression guard passed');
+// Triggered after obsolete cache workflow cleanup so both guard suites run on the final repository state.
