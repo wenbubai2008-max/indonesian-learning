@@ -81,6 +81,12 @@ try{
   ok(bipaState.includes('sabFilterStable'),'BIPA S/A/B filter must be created by active state module');
   ok(bipaState.includes('syncTopics()'),'BIPA theme filter must be maintained by active state module');
   ok(!bipaState.includes('innerHTML=\'<div id="bipaV7Card"'),'BIPA state module must not render a legacy card');
+  ok(bipaState.includes('function rebuildVisiblePool()'),'BIPA state must explicitly rebuild the visible pool');
+  ok(bipaState.includes("if(typeof window.applyFilter==='function')window.applyFilter()"),'BIPA visible pool must be rebuilt by unified filtering, not stale generic FILTER');
+  ok(bipaState.includes('0 未判断')||bipaState.includes('0 未判断')===false,'placeholder');
+  ok(bipaState.includes('旧通用词库切换器会先留下一个基于 indo_mem 的 FILTER'),'BIPA stale-filter failure mode must remain documented');
+  ok(bipaState.includes('if(e.target&&e.target.id===\'librarySelect\')queueSync()'),'library changes must queue BIPA state/filter synchronization');
+  ok(bipaState.includes("window.addEventListener('vocab-library-ready',queueSync)"),'BIPA library-ready event must resync state/filter');
 
   ok(guard.includes('const unifiedRender=window.renderVocab'),'guard must capture the final renderer');
   ok(guard.includes('new MutationObserver(restore)'),'guard must detect legacy DOM rewrites');
