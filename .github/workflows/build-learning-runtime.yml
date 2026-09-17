@@ -67,6 +67,9 @@ jobs:
           s2=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"\']+',f'data/vocab-memory-feedback.js?v={sys.argv[1]}',s)
           if s2!=s:p.write_text(s2,encoding='utf-8')
           PY
+          node --check data/vocab-memory-feedback.js
+          node --check data/vocab-controller-20260917.js
+          node --check data/bipa-json-loader-20260917.js
           node .github/scripts/build-learning-runtime.js
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
