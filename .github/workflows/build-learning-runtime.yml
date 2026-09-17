@@ -11,6 +11,8 @@ on:
       - 'data/master-vocab-data-3.js'
       - 'data/oral-vocab-candidates.js'
       - 'data/learning-pool-rules.json'
+      - 'data/bipa-gz-*.js'
+      - '.github/scripts/build-bipa-runtime.js'
       - '.github/scripts/build-learning-runtime.js'
       - '.github/scripts/regression-guard.js'
       - '.github/scripts/vocab-ui-regression-guard.js'
@@ -25,6 +27,7 @@ on:
       - 'data/daily-ui-polish.js'
       - 'data/vocab-dom-compat.js'
       - 'data/vocab-memory-feedback.js'
+      - 'data/vocab-controller-20260917.js'
       - 'data/vocab-unified-renderer-20260917.js'
       - 'data/vocab-unified-ui-guard-20260917.js'
       - 'AGENTS.md'
@@ -48,12 +51,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Build compact runtime pools and run regression guards
+      - name: Build runtime data and run regression guards
         shell: bash
         run: |
           set -e
           git fetch origin main
           git reset --hard origin/main
+          node .github/scripts/build-bipa-runtime.js
           node .github/scripts/build-learning-runtime.js
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
@@ -63,7 +67,7 @@ jobs:
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/learning-runtime.json
+          git add data/bipa-runtime-data.js data/learning-runtime.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Build learning runtime pools'
           git pull --rebase origin main
