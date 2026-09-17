@@ -130,6 +130,31 @@
   }
   function markKnown(word,reason){return markMastered(word,reason||'known');}
   function reactivate(word,reason){const x=get(word);return activate(word,x||{word:word},reason||'manual_reactivate');}
+  function removeReasons(word,reasons,masterIfEmpty,masterReason){
+    const pool=migrate(),k=norm(word),x=pool[k];if(!k||!x)return null;
+    const wanted=new Set((Array.isArray(reasons)?reasons:[reasons]).filter(Boolean));if(!wanted.size)return x;
+    const current=Array.isArray(x.reasons)?x.reasons:[],removed=current.filter(r=>wanted.has(r));if(!removed.length)return x;
+    x.reason_history=uniq((x.reason_history||[]).concat(removed));x.reasons=current.filter(r=>!wanted.has(r));
+    let becameMastered=false;
+    if(masterIfEmpty&&x.status==='active'&&!x.reasons.length){
+      const n=nowISO();x.status='mastered';x.last_mastered=n;x.last_review=n;x.right_streak=Math.max(3,x.right_streak||0);x.mastered_reason=masterReason||'reasons_cleared';removeLegacyUnknown(k);
+      const d=parse(LEGACY_DISMISSED);d[k]={word:x.word,at:Date.now()};localStorage.setItem(LEGACY_DISMISSED,JSON.stringify(d));becameMastered=true;
+    }
+    save(pool);if(becameMastered)window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));return x;
+  }
+  function importRecord(record){
+    if(!record||!record.word)return null;
+    const pool=migrate(),pair=ensureRecord(pool,record.word,record),k=pair[0],x=pair[1];if(!x)return null;
+    x.status=record.status==='mastered'?'mastered':'active';
+    x.reasons=uniq(Array.isArray(record.reasons)?record.reasons:[]);
+    x.wrong_count=Math.max(0,Number(record.wrong_count||0));x.right_streak=Math.max(0,Number(record.right_streak||0));
+    ['last_wrong','last_review','last_mastered'].forEach(function(a){if(record[a])x[a]=record[a];else if(a==='last_mastered'&&x.status!=='mastered')delete x[a];});
+    if(x.status==='mastered'){
+      x.mastered_reason=x.mastered_reason||'cloud_sync';removeLegacyUnknown(k);
+      const d=parse(LEGACY_DISMISSED);d[k]={word:x.word,at:ms(x.last_mastered)||Date.now()};localStorage.setItem(LEGACY_DISMISSED,JSON.stringify(d));
+    }else{x.mastered_reason='';clearLegacyDismissed(k);}
+    save(pool);return x;
+  }
 
   function recordPractice(word,ok,item){
     const pool=migrate(),k=norm(word);if(!k)return null;
@@ -189,6 +214,6 @@
   }
   function exportActive(){return list('active').map(function(x){return Object.assign({},x);});}
 
-  window.WeaknessPool={KEY:KEY,norm:norm,migrate:migrate,get:get,all:all,listActive:function(){return list('active');},listMastered:function(){return list('mastered');},activeMap:activeMap,isActive:isActive,markUnknown:markUnknown,enrich:enrich,markWeak:markWeak,markMastered:markMastered,markKnown:markKnown,reactivate:reactivate,recordPractice:recordPractice,syncSignals:syncSignals,primaryReason:primaryReason,restoreDismissed:restoreDismissed,exportActive:exportActive};
+  window.WeaknessPool={KEY:KEY,norm:norm,migrate:migrate,get:get,all:all,listActive:function(){return list('active');},listMastered:function(){return list('mastered');},activeMap:activeMap,isActive:isActive,markUnknown:markUnknown,enrich:enrich,markWeak:markWeak,markMastered:markMastered,markKnown:markKnown,reactivate:reactivate,removeReasons:removeReasons,importRecord:importRecord,recordPractice:recordPractice,syncSignals:syncSignals,primaryReason:primaryReason,restoreDismissed:restoreDismissed,exportActive:exportActive};
   migrate();
 })();
