@@ -3,8 +3,8 @@
   async function boot(){
     try{
       window.VOCAB_UPGRADE_GZ='';
-      await load('data/vocab-upgrade-gz-01.js?v=20260917-unified-ui8');
-      await load('data/vocab-upgrade-gz-02.js?v=20260917-unified-ui8');
+      await load('data/vocab-upgrade-gz-01.js?v=20260917-unified-ui9');
+      await load('data/vocab-upgrade-gz-02.js?v=20260917-unified-ui9');
       if(!window.VOCAB_UPGRADE_GZ)throw new Error('词汇页面升级数据为空');
       if(typeof DecompressionStream==='undefined')throw new Error('当前浏览器版本过旧，请升级 Chrome 或 Safari 后使用新版词汇页面');
       var bin=atob(window.VOCAB_UPGRADE_GZ),bytes=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
@@ -18,11 +18,11 @@
        * unified renderer -> BIPA state/toolbar -> UI guard -> flip content/layout。
        * 20260913 旧 renderer/hotfix 已封存，不再动态加载。
        */
-      await load('data/vocab-unified-renderer-20260917.js?v=20260917-unified-ui8');
-      await load('data/vocab-bipa-state-20260917.js?v=20260917-unified-ui8');
-      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-unified-ui8');
-      await load('data/vocab-unified-ui-guard-20260917.js?v=20260917-unified-ui8');
-      await load('data/vocab-flip-content-fix-20260917.js?v=20260917-unified-ui8');
+      await load('data/vocab-unified-renderer-20260917.js?v=20260917-unified-ui9');
+      await load('data/vocab-bipa-state-20260917.js?v=20260917-unified-ui9');
+      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-unified-ui9');
+      await load('data/vocab-unified-ui-guard-20260917.js?v=20260917-unified-ui9');
+      await load('data/vocab-flip-content-fix-20260917.js?v=20260917-unified-ui9');
 
       setTimeout(function(){URL.revokeObjectURL(url)},1000);
     }catch(e){console.error('[vocab upgrade]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面升级加载失败，请刷新页面重试';}
