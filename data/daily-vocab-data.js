@@ -8680,5 +8680,227 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-16"
     ]
+  },
+  {
+    "word": "mudah",
+    "cn": "容易的",
+    "en": "easy",
+    "root": "mudah",
+    "root_cn": "容易",
+    "example": "Cara ini lebih mudah dipahami oleh semua orang.",
+    "example_cn": "这个方法更容易被大家理解。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "sedangkan",
+    "cn": "然而（对比）",
+    "en": "whereas; while",
+    "root": "sedang",
+    "root_cn": "正在；中等",
+    "example": "Aku bekerja dari kantor, sedangkan dia bekerja dari rumah.",
+    "example_cn": "我在办公室工作，而他在家工作。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "akibat",
+    "cn": "后果",
+    "en": "result; consequence",
+    "root": "akibat",
+    "root_cn": "后果；结果",
+    "example": "Keterlambatan itu adalah akibat dari masalah teknis.",
+    "example_cn": "那次延误是技术问题造成的后果。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "menunjukkan",
+    "cn": "指出",
+    "en": "show; indicate",
+    "root": "tunjuk",
+    "root_cn": "指；指出",
+    "example": "Data ini menunjukkan bahwa penjualan mulai naik.",
+    "example_cn": "这些数据显示销售开始上升。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "perasaan",
+    "cn": "感情",
+    "en": "feeling; emotion",
+    "root": "rasa",
+    "root_cn": "感觉；味道",
+    "example": "Aku mengerti perasaan kamu dalam situasi seperti ini.",
+    "example_cn": "我理解你在这种情况下的感受。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "menawarkan",
+    "cn": "提供 / 报价",
+    "en": "offer",
+    "root": "tawar",
+    "root_cn": "议价；出价",
+    "example": "Mereka menawarkan solusi yang lebih sederhana.",
+    "example_cn": "他们提出了一个更简单的解决方案。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "mengenal",
+    "cn": "认识",
+    "en": "know; be acquainted with",
+    "root": "kenal",
+    "root_cn": "认识；熟悉",
+    "example": "Aku mulai mengenal cara kerja tim ini.",
+    "example_cn": "我开始了解这个团队的工作方式。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "walau",
+    "cn": "尽管，虽然",
+    "en": "although; even though",
+    "root": "walau",
+    "root_cn": "虽然；尽管",
+    "example": "Walau ada masalah, kami tetap melanjutkan pekerjaan.",
+    "example_cn": "虽然有问题，我们还是继续工作。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "cas",
+    "cn": "充电",
+    "en": "charge",
+    "root": "cas",
+    "root_cn": "充电",
+    "example": "Baterai HP-ku hampir habis, jadi aku mau cas dulu.",
+    "example_cn": "我的手机快没电了，所以我先充一下电。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "lemot",
+    "cn": "卡；慢（设备/网络）",
+    "en": "slow; laggy",
+    "root": "lemot",
+    "root_cn": "慢；卡顿",
+    "example": "Internet di kantor agak lemot pagi ini.",
+    "example_cn": "今天早上办公室的网络有点卡。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
   }
 ];
