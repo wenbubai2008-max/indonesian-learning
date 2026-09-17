@@ -58,21 +58,30 @@
     let h='<div class="vocabUnifiedCn">'+esc(cn)+'</div>';
     if(d.en)h+='<div class="vocabUnifiedEn">'+esc(d.en)+'</div>';
     if(d.root)h+='<div class="vocabUnifiedRoot">词根 · '+esc(d.root)+'</div>';
-    // 历史约定：BIPA 翻卡只显示中文、英文、词根；普通词库保留例句/备注。
+    // BIPA：中文 → 英文 → 词根。普通词库：中文 → 英文 → 词根 → 例句/备注。
     if(!d.bipa&&d.example)h+='<div class="vocabUnifiedExample">'+esc(d.example)+'</div>';
     if(!d.bipa&&d.exampleCn)h+='<div class="vocabUnifiedExampleCn">'+esc(d.exampleCn)+'</div>';
     if(!d.bipa&&d.note)h+='<div class="vocabUnifiedNote">'+esc(d.note)+'</div>';
     return h;
   }
-  function ensureMeaning(){
+  function decorateCard(){
     const card=$('vocabUnifiedCard');
     if(!card)return null;
+    const line=card.querySelector('.vocabUnifiedWordLine');
+    const core=line&&line.parentElement;
+    if(core)core.classList.add('vocabUnifiedCore');
+    card.classList.toggle('vocabUnifiedBipa',!!bipaLevel());
+    return {card,core};
+  }
+  function ensureMeaning(){
+    const d=decorateCard();
+    if(!d)return null;
+    const card=d.card,core=d.core;
     let m=card.querySelector('.vocabUnifiedMeaning');
     if(!m){
       m=document.createElement('div');
       m.className='vocabUnifiedMeaning';
-      const line=card.querySelector('.vocabUnifiedWordLine');
-      if(line&&line.parentNode)line.parentNode.appendChild(m);else card.appendChild(m);
+      if(core)core.appendChild(m);else card.appendChild(m);
     }
     m.innerHTML=meaningHtml();
     return m;
@@ -83,19 +92,28 @@
   st=document.createElement('style');
   st.id='vocabFlipContentFixStyle20260917';
   st.textContent=`
+    /* 单词区固定在“翻开后”的位置，翻卡只显示/隐藏解释，不再推动单词上下跳。 */
+    #vocab .vocabUnifiedCard{justify-content:flex-start!important;}
+    #vocab .vocabUnifiedCore{width:100%!important;margin-top:145px!important;transform:none!important;}
+    #vocab .vocabUnifiedCard.vocabUnifiedBipa .vocabUnifiedCore{margin-top:85px!important;}
     #vocab .vocabUnifiedMeaning{display:none!important;visibility:hidden!important;opacity:0!important;margin-top:30px!important;max-width:760px!important;position:static!important;transform:none!important;}
     #vocab .vocabUnifiedCard.revealed .vocabUnifiedMeaning{display:block!important;visibility:visible!important;opacity:1!important;}
     #vocab .vocabUnifiedCard.revealed{height:auto!important;min-height:510px!important;overflow:visible!important;}
     #vocab .vocabUnifiedCard.revealed .vocabUnifiedCn{display:block!important;font-size:27px!important;font-weight:850!important;color:#5d687e!important;line-height:1.45!important;}
     #vocab .vocabUnifiedCard.revealed .vocabUnifiedEn{display:block!important;font-size:20px!important;color:#778197!important;margin-top:8px!important;line-height:1.45!important;}
     #vocab .vocabUnifiedCard.revealed .vocabUnifiedRoot{display:block!important;font-size:16px!important;color:#8a94a8!important;font-weight:750!important;margin-top:16px!important;}
-    @media(max-width:700px){#vocab .vocabUnifiedCard.revealed .vocabUnifiedCn{font-size:23px!important}}
+    @media(max-width:700px){
+      #vocab .vocabUnifiedCore{margin-top:105px!important;}
+      #vocab .vocabUnifiedCard.vocabUnifiedBipa .vocabUnifiedCore{margin-top:45px!important;}
+      #vocab .vocabUnifiedCard.revealed .vocabUnifiedCn{font-size:23px!important;}
+    }
   `;
   document.head.appendChild(st);
 
   window.vocabUnifiedFlip=function(){
     const card=$('vocabUnifiedCard'),btn=$('vocabUnifiedFlipBtn');
     if(!card)return;
+    decorateCard();
     const opening=!card.classList.contains('revealed');
     if(opening){
       const m=ensureMeaning();
@@ -118,14 +136,17 @@
     }
   };
 
-  // 每次统一卡片重新渲染后，确保 meaning 容器仍含有当前词的正确内容。
+  function syncCard(){
+    const d=decorateCard();
+    if(!d)return;
+    const m=d.card.querySelector('.vocabUnifiedMeaning');
+    if(m&&!m.textContent.trim())m.innerHTML=meaningHtml();
+  }
+
+  // 统一 renderer 每次换词后重新标记 core/BIPA，使未翻卡和翻卡状态使用同一固定位置。
   const box=$('vocabBox');
   if(box){
-    new MutationObserver(function(){
-      const card=$('vocabUnifiedCard');
-      if(!card)return;
-      const m=card.querySelector('.vocabUnifiedMeaning');
-      if(m&&!m.textContent.trim())m.innerHTML=meaningHtml();
-    }).observe(box,{childList:true,subtree:false});
+    new MutationObserver(function(){setTimeout(syncCard,0)}).observe(box,{childList:true,subtree:false});
   }
+  [0,80,250,700].forEach(ms=>setTimeout(syncCard,ms));
 })();
