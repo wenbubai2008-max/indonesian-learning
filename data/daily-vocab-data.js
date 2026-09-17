@@ -1003,21 +1003,24 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-17 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-27",
-      "2026-09-15"
+      "2026-09-15",
+      "2026-09-17"
     ],
     "root_cn": "烦；恼火",
-    "example": "Yang nyebelin itu bukan masalahnya, tapi dia nggak pernah kasih kabar.",
-    "example_cn": "烦人的不是这个问题，而是他从来不提前说。"
+    "example": "Perubahan mendadak memang nyebelin, tapi tetap harus kita urus.",
+    "example_cn": "临时变化确实很烦，但我们还是得处理。"
   },
   {
     "word": "terserah",
@@ -1430,24 +1433,27 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "原始课程",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-09-13 19:00",
+    "last_seen": "2026-09-17 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-29",
       "2026-09-05",
       "2026-09-12",
-      "2026-09-13"
+      "2026-09-13",
+      "2026-09-17"
     ],
     "root_cn": "对；正确",
-    "example": "Kebetulan aku punya data yang bisa jadi bukti tambahan.",
-    "example_cn": "正好我有一份数据，可以作为补充证据。"
+    "example": "Kebetulan aku masih ada waktu, jadi bisa bantu ngurus bagian ini.",
+    "example_cn": "正好我还有时间，所以可以帮忙处理这部分。"
   },
   {
     "word": "nyari",
@@ -3103,21 +3109,24 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-09-12 19:00",
+    "last_seen": "2026-09-17 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-29",
-      "2026-09-12"
+      "2026-09-12",
+      "2026-09-17"
     ],
     "root_cn": "确定；一定",
-    "example": "Kita belum bisa menentukan jadwal final sebelum semua orang konfirmasi.",
-    "example_cn": "所有人确认之前，我们还不能确定最终时间。"
+    "example": "Kita perlu menentukan siapa yang ngurus bagian terakhir.",
+    "example_cn": "我们需要确定谁来处理最后一部分。"
   },
   {
     "word": "menangani",
@@ -4219,17 +4228,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "2026-09-02"
+      "2026-09-02",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-02 08:00",
-    "last_seen": "2026-09-02 08:00",
+    "last_seen": "2026-09-17 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-02"
-    ]
+      "2026-09-02",
+      "2026-09-17"
+    ],
+    "root_cn": "处理；照管",
+    "example": "Aku ngurus dokumen ini, kamu cek bagian terakhir.",
+    "example_cn": "我来处理这份文件，你检查最后一部分。"
   },
   {
     "word": "ngejar",
@@ -6301,17 +6316,17 @@ window.DAILY_VOCAB_DB = [
     "en": "finish; wrap up",
     "root": "kelar",
     "root_cn": "完成；结束",
-    "example": "Kita bagi tugas supaya bisa ngelarin semuanya hari ini.",
-    "example_cn": "我们分一下任务，这样今天能把所有事情做完。",
+    "example": "Kita bagi tugas supaya bisa ngelarin semuanya sebelum malam.",
+    "example_cn": "我们分一下任务，好在晚上前全部做完。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-17 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -6319,7 +6334,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09",
-      "2026-09-16"
+      "2026-09-16",
+      "2026-09-17"
     ]
   },
   {
@@ -6880,19 +6896,22 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "手忙脚乱；慌着应付",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-09-10 19:00",
+    "last_seen": "2026-09-17 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-09-17"
     ],
-    "example": "Tadi jadwal berubah mendadak, jadi semua orang sempat kelabakan.",
-    "example_cn": "刚才日程突然变了，所以大家一度都有点手忙脚乱。"
+    "example": "Kalau semua datang bersamaan, tim bisa kelabakan.",
+    "example_cn": "如果所有事情同时来，团队可能会手忙脚乱。"
   },
   {
     "word": "ngejar waktu",
@@ -7535,22 +7554,25 @@ window.DAILY_VOCAB_DB = [
     "en": "worthy; suitable; eligible",
     "root": "layak",
     "root_cn": "值得；合适",
-    "example": "Kalau hasilnya konsisten, pilihan ini layak dilanjutkan.",
-    "example_cn": "如果结果稳定，这个选择值得继续。",
+    "example": "Solusi ini layak dicoba karena lebih sederhana.",
+    "example_cn": "这个方案值得尝试，因为更简单。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 19:00",
+    "last_seen": "2026-09-17 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-13"
+      "2026-09-13",
+      "2026-09-17"
     ]
   },
   {
@@ -8898,6 +8920,73 @@ window.DAILY_VOCAB_DB = [
     "last_seen": "2026-09-17 08:00",
     "sessions": [
       "08:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "begini",
+    "cn": "这样；像这样",
+    "en": "like this; this way",
+    "root": "begini",
+    "root_cn": "这样",
+    "example": "Kalau begini, kita perlu bagi tugas lagi.",
+    "example_cn": "如果这样，我们需要重新分一下任务。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-17 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "lakukan",
+    "cn": "做；执行",
+    "en": "do; carry out",
+    "root": "laku",
+    "root_cn": "行为；做法",
+    "example": "Kalau sudah jelas, lakukan bagian yang paling penting dulu.",
+    "example_cn": "如果已经清楚了，就先做最重要的部分。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-17 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-17"
+    ]
+  },
+  {
+    "word": "kaget",
+    "cn": "吓一跳；吃惊",
+    "en": "surprised; startled",
+    "root": "kaget",
+    "root_cn": "吃惊；受惊",
+    "example": "Aku sempat kaget waktu jadwalnya tiba-tiba berubah.",
+    "example_cn": "时间突然改变时，我一度吓了一跳。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-17 18:00",
+    "sessions": [
+      "18:00"
     ],
     "dates": [
       "2026-09-17"
