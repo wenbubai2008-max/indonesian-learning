@@ -1,0 +1,278 @@
+(function(){
+  if(window.__VOCAB_CONTROLLER_20260917__) return;
+  window.__VOCAB_CONTROLLER_20260917__=true;
+
+  const $=id=>document.getElementById(id);
+  const norm=s=>String(s||'').trim().toLowerCase();
+  const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  const MASTER_SCRIPTS=['data/master-vocab-data.js?v=20260917-controller1','data/master-vocab-data-2.js?v=20260917-controller1','data/master-vocab-data-3.js?v=20260917-controller1'];
+  const BIPA_GZ_SCRIPTS=Array.from({length:8},(_,i)=>'data/bipa-gz-'+String(i+1).padStart(2,'0')+'.js?v=20260917-controller1');
+  const BIPA_PLAIN_SCRIPTS=['data/bipa-vocab-01.js?v=20260917-controller1','data/bipa-vocab-02.js?v=20260917-controller1'];
+  const NORMAL_KEYS=['top1000','master','daily','unknown'];
+  const BIPA_KEYS=['bipa-a1','bipa-a2','bipa-b1','bipa-b2'];
+  const ALL_KEYS=[...NORMAL_KEYS,...BIPA_KEYS];
+  let activeKey='top1000';
+  let activeView='';
+  let installed=false;
+  let dataReady=false;
+  let activeAudio=null;
+  const meaningAttempts=new Set();
+
+  function uniqueByWord(arr){
+    const seen=new Set(),out=[];
+    (arr||[]).forEach(x=>{if(!x||!x.word)return;const k=norm(x.word);if(!k||seen.has(k))return;seen.add(k);out.push(x)});
+    return out;
+  }
+  function loadScript(src){
+    return new Promise(resolve=>{
+      const s=document.createElement('script');s.src=src;s.async=false;
+      s.onload=()=>resolve(true);s.onerror=()=>resolve(false);document.head.appendChild(s);
+    });
+  }
+  async function runGzipPayload(base64){
+    if(!base64||typeof DecompressionStream==='undefined')return false;
+    try{
+      const bin=atob(base64),bytes=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
+      const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+      const code=await new Response(stream).text();
+      const url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));
+      const ok=await loadScript(url);setTimeout(()=>URL.revokeObjectURL(url),500);return ok;
+    }catch(e){console.error('[vocab controller] BIPA data decompress failed',e);return false;}
+  }
+  function masterObjects(){
+    const seen=new Set(),out=[];
+    (window.MASTER_VOCAB_DB||[]).forEach(raw=>{
+      let x;
+      if(Array.isArray(raw))x={word:String(raw[0]||'').trim(),cn:String(raw[1]||'').trim(),en:'',root:'',root_cn:'',scene:'',note:'',categories:['主学习词库']};
+      else if(raw&&typeof raw==='object'){x=Object.assign({},raw);x.categories=Array.isArray(x.categories)?x.categories.slice():[];if(!x.categories.includes('主学习词库'))x.categories.push('主学习词库');}
+      else return;
+      const k=norm(x.word);if(!k||seen.has(k))return;seen.add(k);out.push(x);
+    });
+    return out;
+  }
+  async function ensureMasterData(){
+    if(masterObjects().length>=900){window.MASTER_VOCAB_OBJECTS=masterObjects();return;}
+    window.MASTER_VOCAB_DB=[];
+    for(const src of MASTER_SCRIPTS)await loadScript(src);
+    window.MASTER_VOCAB_OBJECTS=masterObjects();
+  }
+  function bipaReady(){
+    const r=window.BIPA_VOCAB_RAW||{};
+    return ['A1','A2','B1','B2'].every(k=>Array.isArray(r[k])&&r[k].length>0);
+  }
+  async function ensureBipaData(){
+    if(bipaReady())return;
+    window.BIPA_GZ='';
+    for(const src of BIPA_GZ_SCRIPTS)await loadScript(src);
+    if(window.BIPA_GZ){await runGzipPayload(window.BIPA_GZ);window.BIPA_GZ='';}
+    if(!bipaReady()){
+      for(const src of BIPA_PLAIN_SCRIPTS)await loadScript(src);
+    }
+    if(!bipaReady())console.warn('[vocab controller] BIPA data incomplete',Object.fromEntries(['A1','A2','B1','B2'].map(k=>[k,(window.BIPA_VOCAB_RAW?.[k]||[]).length])));
+  }
+
+  function localUnknownMap(){try{return JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){return {}}}
+  function missingMeaning(v){const s=String(v||'').trim();return !s||['暂无释义','暂未查到释义','查询中文释义…','查询中文释义...'].includes(s)}
+  function localUnknownWords(){
+    return Object.values(localUnknownMap()).map(x=>({word:x.word,display:x.display||x.word,cn:x.cn||'',en:x.en||'',root:x.root||'',scene:(x.contexts&&x.contexts.length)?x.contexts[x.contexts.length-1]:'',note:'遇到 '+(x.times_seen||1)+' 次'+(x.source_date?' · '+x.source_date:'')+(x.session?' · '+x.session:''),contexts:x.contexts||[],times_seen:x.times_seen||1,source:'电脑新增'}));
+  }
+  function sharedUnknownWords(){return Array.isArray(window.UNFAMILIAR_VOCAB_DB)?window.UNFAMILIAR_VOCAB_DB:[]}
+  function normalMem(){try{return JSON.parse(localStorage.getItem('indo_mem')||'{}')}catch(e){return {}}}
+  function bipaLevelForKey(key){const m=String(key||'').match(/^bipa-(a1|a2|b1|b2)$/i);return m?m[1].toUpperCase():''}
+  function isBipaKey(key=activeKey){return !!bipaLevelForKey(key)}
+  function memKeyFor(key=activeKey){const lv=bipaLevelForKey(key);return lv?'indo_bipa_mem_'+lv:'indo_mem'}
+  function memoryFor(key=activeKey){try{return JSON.parse(localStorage.getItem(memKeyFor(key))||'{}')}catch(e){return {}}}
+  function statusOf(word,key=activeKey){const m=memoryFor(key),k=norm(word);return isBipaKey(key)?(m[k]||''):(m[word]||m[k]||'')}
+  function unknownWords(){
+    const merged=new Map();
+    sharedUnknownWords().forEach(x=>{if(x&&x.word)merged.set(norm(x.word),Object.assign({},x,{source:x.source||'共享陌生词'}))});
+    localUnknownWords().forEach(x=>{if(!x||!x.word)return;const k=norm(x.word),old=merged.get(k)||{},cn=!missingMeaning(x.cn)?x.cn:(!missingMeaning(old.cn)?old.cn:(x.cn||old.cn||''));merged.set(k,Object.assign({},old,x,{cn,contexts:[...(old.contexts||[]),...(x.contexts||[])].filter((v,i,a)=>v&&a.indexOf(v)===i),times_seen:Math.max(Number(old.times_seen||0),Number(x.times_seen||0),1)}))});
+    const m=normalMem();return [...merged.values()].filter(x=>(m[x.word]||m[norm(x.word)]||'')!=='know');
+  }
+  function bipaObjects(level){
+    const rows=(window.BIPA_VOCAB_RAW&&window.BIPA_VOCAB_RAW[level])||[];
+    return uniqueByWord(rows.map(r=>Array.isArray(r)?({word:String(r[0]||'').trim(),cn:String(r[1]||'').trim(),en:String(r[2]||'').trim(),root:String(r[3]||'').trim(),root_note:String(r[4]||'').trim(),theme:String(r[5]||'').trim(),lesson:String(r[6]||'').trim(),pages:String(r[7]||'').trim(),sab:String(r[8]||'').trim().toUpperCase(),note:String(r[9]||'').trim(),categories:[String(r[5]||'').trim()].filter(Boolean)}):null));
+  }
+  function sourceFor(key=activeKey){
+    if(key==='master')return uniqueByWord(window.MASTER_VOCAB_OBJECTS||masterObjects());
+    if(key==='daily')return uniqueByWord(window.DAILY_VOCAB_DB||[]);
+    if(key==='unknown')return uniqueByWord(unknownWords());
+    if(key==='top1000')return uniqueByWord(window.EMBEDDED_DB||[]);
+    const lv=bipaLevelForKey(key);if(lv)return bipaObjects(lv);
+    return [];
+  }
+  function labelFor(key=activeKey){
+    if(key==='master')return '主学习词库';if(key==='daily')return '每日学习词汇';if(key==='unknown')return '陌生词汇';if(key==='top1000')return 'Top1000';
+    const lv=bipaLevelForKey(key);return lv?'BIPA（'+lv+'）':'当前词库';
+  }
+  function canonicalKey(v){
+    const s=String(v||'').trim().toLowerCase();
+    if(ALL_KEYS.includes(s))return s;
+    if(s.includes('bipa')){for(const lv of ['a1','a2','b1','b2'])if(s.includes(lv))return 'bipa-'+lv;}
+    return NORMAL_KEYS.includes(s)?s:'top1000';
+  }
+  function currentItem(){try{const a=Array.isArray(FILTER)?FILTER:[];if(!a.length)return null;const i=((Number(idx||0)%a.length)+a.length)%a.length;return a[i]||null}catch(e){return null}}
+  function progressKey(key=activeKey){return 'vocab_progress_'+key}
+  function saveProgress(){const x=currentItem();if(x&&x.word)try{localStorage.setItem(progressKey(),norm(x.word))}catch(e){}}
+  function restoreIndex(arr){const saved=norm(localStorage.getItem(progressKey())||'');if(!saved||!arr.length)return 0;const i=arr.findIndex(x=>norm(x.word)===saved);return i>=0?i:0}
+
+  function ensureGradeSelect(){
+    const tb=document.querySelector('#vocab .toolbar');if(!tb)return null;
+    let s=$('sabFilterStable');
+    if(!s){s=document.createElement('select');s.id='sabFilterStable';s.innerHTML='<option value="">全部分级</option><option value="S">S · 核心</option><option value="A">A · 常用</option><option value="B">B · 低频</option>';const cat=$('cat');if(cat&&cat.nextSibling)tb.insertBefore(s,cat.nextSibling);else tb.appendChild(s);}
+    s.style.display=isBipaKey()?'':'none';
+    if(!isBipaKey())s.value='';
+    s.onchange=()=>rebuild(true);
+    return s;
+  }
+  function rebuildCategories(){
+    const cat=$('cat');if(!cat)return;
+    const cur=cat.value,src=sourceFor();
+    let values=[];
+    if(isBipaKey())values=[...new Set(src.map(x=>x.theme).filter(Boolean))].sort();
+    else values=[...new Set(src.flatMap(x=>x.categories||[]).filter(c=>c&&!['每日学习','08:00','19:00','原始课程','历史记录不完整'].includes(c)))].sort();
+    cat.innerHTML='<option value="">'+(isBipaKey()?'全部主题':'全部分类')+'</option>'+values.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('');
+    if(values.includes(cur))cat.value=cur;
+  }
+  function populateLibraryOptions(){
+    const select=$('librarySelect');if(!select)return;
+    const cur=canonicalKey(select.value||localStorage.getItem('selected_vocab_library')||activeKey);
+    const opts=[
+      ['top1000','Top1000',sourceFor('top1000').length],['master','主学习词库',sourceFor('master').length],['daily','每日学习词汇',sourceFor('daily').length],['unknown','陌生词汇',sourceFor('unknown').length],
+      ...['A1','A2','B1','B2'].map(lv=>['bipa-'+lv.toLowerCase(),'BIPA（'+lv+'）',sourceFor('bipa-'+lv.toLowerCase()).length])
+    ];
+    select.innerHTML=opts.map(([k,l,n])=>'<option value="'+k+'">'+l+'（'+n+'）</option>').join('');
+    select.value=opts.some(x=>x[0]===cur)?cur:'top1000';
+  }
+  function ensureLibrarySelect(){
+    const tb=document.querySelector('#vocab .toolbar');if(!tb)return null;
+    let s=$('librarySelect');if(!s){s=document.createElement('select');s.id='librarySelect';tb.insertBefore(s,tb.firstChild)}
+    return s;
+  }
+  function syncUiMode(){
+    const sec=$('vocab');if(sec){sec.classList.toggle('bipaFinalV7',isBipaKey());sec.classList.remove('bipaStable','bipaSwitching')}
+    ensureGradeSelect();
+  }
+  function computeStats(src=sourceFor()){
+    let known=0,review=0;src.forEach(x=>{const s=statusOf(x.word);if(s==='know')known++;else if(s==='fuzzy'||s==='dont')review++});
+    return {total:src.length,known,review,unchecked:Math.max(0,src.length-known-review)};
+  }
+  function updateStats(src=sourceFor()){
+    const s=computeStats(src);
+    if($('vocabCount'))$('vocabCount').textContent=s.total;if($('knownCount'))$('knownCount').textContent=s.known;if($('reviewCount'))$('reviewCount').textContent=s.review;
+    let suffix='';if(activeView==='known')suffix=' · 查看已掌握';else if(activeView==='review')suffix=' · 查看待掌握';
+    if($('dbStatus'))$('dbStatus').textContent=labelFor()+' · '+s.unchecked+' 未判断 · '+s.review+' 待掌握 · '+s.known+' 已掌握 · '+s.total+' 总词'+suffix;
+    if($('vocabTag'))$('vocabTag').textContent=labelFor()+' '+s.total+' 词';
+    return s;
+  }
+  function currentFilterPredicate(x){
+    if(!x||!x.word)return false;
+    if((x.categories||[]).includes('粗口/俚语'))return false;
+    const st=statusOf(x.word);
+    if(activeView==='known'){if(st!=='know')return false}
+    else if(activeView==='review'){if(st!=='fuzzy'&&st!=='dont')return false}
+    else if(st)return false;
+    const q=String($('search')?.value||'').trim().toLowerCase(),cat=String($('cat')?.value||''),sab=isBipaKey()?String($('sabFilterStable')?.value||''):'';
+    if(cat){if(isBipaKey()){if(String(x.theme||'')!==cat)return false}else if(!(x.categories||[]).includes(cat))return false}
+    if(sab&&String(x.sab||'').toUpperCase()!==sab)return false;
+    if(q&&!([x.word,x.cn,x.en,x.root,x.theme,x.example,x.example_cn,x.scene,x.scene_cn,x.note].join(' ').toLowerCase().includes(q)))return false;
+    return true;
+  }
+  function renderCurrent(){
+    if(window.__VOCAB_UNIFIED_RENDERER_20260917__&&typeof window.renderVocab==='function')window.renderVocab();
+  }
+  function rebuild(reset=false){
+    const src=sourceFor();
+    try{DB=src.slice()}catch(e){}
+    const out=src.filter(currentFilterPredicate);
+    try{FILTER=out;if(reset)idx=0;else if(out.length)idx=Math.min(Math.max(0,Number(idx||0)),out.length-1);else idx=0}catch(e){}
+    updateStats(src);renderCurrent();
+    return out;
+  }
+  function setView(mode=''){
+    activeView=mode==='known'||mode==='review'?mode:'';
+    if(activeView)localStorage.setItem('vocab_view_mode',activeView);else localStorage.removeItem('vocab_view_mode');
+    if($('search'))$('search').value='';if($('cat'))$('cat').value='';if($('sabFilterStable'))$('sabFilterStable').value='';
+    rebuild(true);
+  }
+  function setLibrary(key,opts={}){
+    key=canonicalKey(key);saveProgress();activeKey=key;activeView='';localStorage.removeItem('vocab_view_mode');
+    const select=$('librarySelect');if(select&&select.value!==key)select.value=key;
+    localStorage.setItem('selected_vocab_library',key);
+    if($('search'))$('search').value='';syncUiMode();rebuildCategories();if($('cat'))$('cat').value='';if($('sabFilterStable'))$('sabFilterStable').value='';
+    const src=sourceFor();try{DB=src.slice()}catch(e){}
+    const out=src.filter(x=>{const st=statusOf(x.word);return !st&&!(x.categories||[]).includes('粗口/俚语')});
+    try{FILTER=out;idx=opts.restore===false?0:restoreIndex(out)}catch(e){}
+    updateStats(src);renderCurrent();
+    window.dispatchEvent(new CustomEvent('vocab-library-ready',{detail:{key,total:src.length}}));
+    return out;
+  }
+  function move(delta){const a=Array.isArray(FILTER)?FILTER:[];if(!a.length)return;try{idx=(Number(idx||0)+delta+a.length)%a.length}catch(e){}saveProgress();renderCurrent()}
+  function syncWeakness(item,v){
+    if(isBipaKey()||!item||!item.word)return;const p=window.WeaknessPool;if(!p)return;
+    if(v==='know'){if(typeof p.markMastered==='function')p.markMastered(item.word,'vocab_known');else if(typeof p.markKnown==='function')p.markKnown(item.word,'vocab_known')}
+    else if(v==='fuzzy'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_fuzzy');
+    else if(v==='dont'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_dont');
+  }
+  function mark(v){
+    if(!['know','fuzzy','dont'].includes(v))return;const x=currentItem();if(!x||!x.word)return;
+    const m=memoryFor();const k=norm(x.word);if(isBipaKey())m[k]=v;else{m[x.word]=v;m[k]=v}localStorage.setItem(memKeyFor(),JSON.stringify(m));syncWeakness(x,v);
+    rebuild(false);
+  }
+  function emptyMessage(){
+    const q=String($('search')?.value||'').trim(),cat=String($('cat')?.value||''),sab=String($('sabFilterStable')?.value||'');
+    if(q||cat||sab)return '没有匹配词汇';
+    if(activeView==='known')return '当前词库还没有标记“会了”的词。';
+    if(activeView==='review')return '当前词库没有“模糊 / 不会”的词。';
+    return '当前词库没有未判断词 ✓';
+  }
+  function speak(text){
+    text=String(text||'').trim();if(!text)return;try{if(activeAudio){activeAudio.pause();activeAudio=null}}catch(e){}try{if(window.speechSynthesis)window.speechSynthesis.cancel()}catch(e){}
+    try{if(window.speechSynthesis&&typeof SpeechSynthesisUtterance!=='undefined'){const u=new SpeechSynthesisUtterance(text);u.lang='id-ID';u.rate=.88;const vs=window.speechSynthesis.getVoices?window.speechSynthesis.getVoices():[];const v=vs.find(v=>/^id(?:-|_)/i.test(v.lang||''))||vs.find(v=>/indones/i.test((v.name||'')+' '+(v.lang||'')));if(v)u.voice=v;window.speechSynthesis.speak(u);return}}catch(e){}
+    try{activeAudio=new Audio('https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=id&q='+encodeURIComponent(text));activeAudio.play().catch(()=>{})}catch(e){}
+  }
+  async function translateZh(word){const w=String(word||'').trim();if(!w)return '';try{const r=await fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=id&tl=zh-CN&dt=t&q='+encodeURIComponent(w),{cache:'no-store'});if(!r.ok)return '';const data=await r.json();return Array.isArray(data?.[0])?data[0].map(x=>Array.isArray(x)?x[0]:'').join('').trim():''}catch(e){return ''}}
+  async function fillMissingUnknownMeanings(){
+    const map=localUnknownMap();let changed=false;
+    for(const [key,item] of Object.entries(map)){if(!item||!item.word||!missingMeaning(item.cn))continue;const shared=sharedUnknownWords().find(x=>norm(x.word)===norm(item.word));if(shared&&!missingMeaning(shared.cn)){item.cn=shared.cn;map[key]=item;changed=true;continue}const k=norm(item.word);if(meaningAttempts.has(k))continue;meaningAttempts.add(k);const zh=await translateZh(item.word);if(zh){item.cn=zh;map[key]=item;changed=true}}
+    if(changed){localStorage.setItem('indo_unknown_words',JSON.stringify(map));populateLibraryOptions();if(activeKey==='unknown')setLibrary('unknown')}
+  }
+  function bindControls(){
+    const select=ensureLibrarySelect();if(select)select.onchange=function(){setLibrary(this.value)};
+    const search=$('search');if(search)search.oninput=()=>rebuild(true);
+    const cat=$('cat');if(cat)cat.onchange=()=>rebuild(true);
+    const mode=$('mode');if(mode)mode.onchange=()=>renderCurrent();
+    const known=$('knownCount')?.closest('button');if(known)known.onclick=e=>{e&&e.preventDefault();setView('known')};
+    const review=$('reviewCount')?.closest('button');if(review)review.onclick=e=>{e&&e.preventDefault();setView('review')};
+    ensureGradeSelect();
+  }
+  function installOwnership(){
+    window.loadDB=()=>setLibrary(activeKey,{restore:true});try{loadDB=window.loadDB}catch(e){}
+    window.applyFilter=()=>rebuild(true);try{applyFilter=window.applyFilter}catch(e){}
+    window.showKnownWords=()=>setView('known');try{showKnownWords=window.showKnownWords}catch(e){}
+    window.showReviewWords=()=>setView('review');
+    window.mark=mark;try{mark=window.mark}catch(e){}
+    window.nextWord=()=>move(1);try{nextWord=window.nextWord}catch(e){}
+    window.switchVocabLibrary=setLibrary;window.openMasterVocabulary=()=>setLibrary('master');window.refreshMasterVocabulary=()=>setLibrary('master');
+    window.getUnfamiliarVocabulary=unknownWords;window.refreshUnknownLibrary=()=>{populateLibraryOptions();if(activeKey==='unknown')setLibrary('unknown')};
+    window.speak=speak;try{speak=window.speak}catch(e){}
+  }
+  async function init(){
+    if(installed)return;installed=true;
+    ensureLibrarySelect();
+    await Promise.all([ensureMasterData(),ensureBipaData()]);dataReady=true;
+    populateLibraryOptions();bindControls();installOwnership();
+    const stored=canonicalKey(localStorage.getItem('selected_vocab_library')||$('librarySelect')?.value||'top1000');
+    setLibrary(stored,{restore:true});
+    window.addEventListener('unknown-vocab-changed',()=>{populateLibraryOptions();if(activeKey==='unknown')setLibrary('unknown')});
+    window.addEventListener('master-core-locked',()=>{populateLibraryOptions();if(activeKey==='master')setLibrary('master')});
+    window.addEventListener('beforeunload',saveProgress);
+    if(activeKey==='unknown')setTimeout(fillMissingUnknownMeanings,0);
+    window.dispatchEvent(new CustomEvent('vocab-controller-ready',{detail:{key:activeKey}}));
+  }
+
+  window.VocabController={
+    init,rebuild,setLibrary,setView,mark,move,sourceFor,statusOf,currentItem,updateStats,emptyMessage,speak,activeKey:()=>activeKey,activeView:()=>activeView,isBipa:()=>isBipaKey(),bipaLevel:()=>bipaLevelForKey(),refresh:function(reset=false){bindControls();installOwnership();syncUiMode();rebuildCategories();return rebuild(reset)},dataReady:()=>dataReady
+  };
+  if(document.readyState==='complete')setTimeout(init,0);else window.addEventListener('load',()=>setTimeout(init,0),{once:true});
+})();
