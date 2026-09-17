@@ -1,6 +1,6 @@
 (function(){
-  if(window.__BIPA_TOOLBAR_COMPACT_20260917_V4__)return;
-  window.__BIPA_TOOLBAR_COMPACT_20260917_V4__=true;
+  if(window.__BIPA_TOOLBAR_COMPACT_20260917_V5__)return;
+  window.__BIPA_TOOLBAR_COMPACT_20260917_V5__=true;
 
   function isGradeSelect(s){
     if(!s||s.tagName!=='SELECT')return false;
@@ -25,11 +25,13 @@
     @media(min-width:901px){
       #vocab.bipaFinalV7 .toolbar{
         display:grid!important;
-        grid-template-columns:195px minmax(180px,1fr) 145px 120px 100px 145px!important;
+        grid-template-columns:190px minmax(140px,1fr) 140px 110px 95px 135px!important;
         gap:8px!important;
         align-items:center!important;
         width:100%!important;
+        max-width:100%!important;
         grid-auto-flow:row!important;
+        overflow:hidden!important;
       }
       #vocab.bipaFinalV7 .toolbar>*{
         min-width:0!important;
@@ -40,12 +42,13 @@
         padding-left:12px!important;
         padding-right:12px!important;
         white-space:nowrap!important;
+        box-sizing:border-box!important;
       }
-      #vocab.bipaFinalV7 #search{max-width:360px!important;}
+      #vocab.bipaFinalV7 #search{min-width:0!important;max-width:none!important;}
       #vocab.bipaFinalV7 .toolbar button{font-weight:750!important;}
     }
     @media(max-width:900px){
-      #vocab.bipaFinalV7 .toolbar{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;gap:8px!important;}
+      #vocab.bipaFinalV7 .toolbar{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;gap:8px!important;overflow:visible!important;}
       #vocab.bipaFinalV7 #search{grid-column:span 2!important;max-width:none!important;}
     }
     @media(max-width:620px){
