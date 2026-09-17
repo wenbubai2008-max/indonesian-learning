@@ -3,8 +3,8 @@
   async function boot(){
     try{
       window.VOCAB_UPGRADE_GZ='';
-      await load('data/vocab-upgrade-gz-01.js?v=20260917-unified1');
-      await load('data/vocab-upgrade-gz-02.js?v=20260917-unified1');
+      await load('data/vocab-upgrade-gz-01.js?v=20260917-finalcard1');
+      await load('data/vocab-upgrade-gz-02.js?v=20260917-finalcard1');
       if(!window.VOCAB_UPGRADE_GZ)throw new Error('词汇页面升级数据为空');
       if(typeof DecompressionStream==='undefined')throw new Error('当前浏览器版本过旧，请升级 Chrome 或 Safari 后使用新版词汇页面');
       var bin=atob(window.VOCAB_UPGRADE_GZ),bytes=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
@@ -12,14 +12,18 @@
       var code=await new Response(stream).text();window.VOCAB_UPGRADE_GZ='';
       var url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));
       await load(url);
+
       /*
-       * 2026-09-17: BIPA 只保留压缩升级包中的统一渲染器。
-       * 旧的 stable/progress/final/badge/flip/switch-polish 会重复接管
-       * renderVocab/applyFilter，尤其在选择 S/A/B 分级时把卡片切回旧界面。
-       * 不再加载这些历史补丁，分级只负责筛选，不再更换界面。
+       * BIPA 最终界面只由这一套 renderer 接管：
+       * - 单词上方保留 S/A/B 小圆圈
+       * - 主题只在卡片右上角出现一次
+       * - 翻卡后只显示中文、英文、词根（有才显示）
+       * - 不显示“词库 / 单元 / 构词 / 来源”等旧信息块
+       * - S/A/B 分级只筛词，不切换成另一套卡片界面
+       * 其它历史 BIPA stable/progress/badge/flip/switch 补丁不再加载。
        */
-      ['bipaStableStyle','bipaFinalV7Style','bipaV8BadgeStyle','bipaFlipLayoutFix20260913','bipaSwitchPolishStyle'].forEach(function(id){var el=document.getElementById(id);if(el)el.remove();});
-      var sec=document.getElementById('vocab');if(sec){sec.classList.remove('bipaStable','bipaFinalV7','bipaSwitching');}
+      await load('data/vocab-bipa-final-20260913.js?v=20260917-finalcard1');
+
       setTimeout(function(){URL.revokeObjectURL(url)},1000);
     }catch(e){console.error('[vocab upgrade]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面升级加载失败，请刷新页面重试';}
   }
