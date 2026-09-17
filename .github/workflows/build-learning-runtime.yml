@@ -74,6 +74,10 @@ jobs:
           node --check data/vocab-memory-feedback.js
           node --check data/vocab-controller-20260917.js
           node --check data/bipa-json-loader-20260917.js
+          node --check data/bipa-level-a1-gz.js
+          node --check data/bipa-level-a2-gz.js
+          node --check data/bipa-level-b1-gz.js
+          node --check data/bipa-level-b2-gz.js
           node .github/scripts/build-learning-runtime.js
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
@@ -82,7 +86,7 @@ jobs:
         run: |
           set -e
           git config user.name 'github-actions[bot]'
-          git config user.email '4189822+github-actions[bot]@users.noreply.github.com'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html data/learning-runtime.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Build learning runtime pools'
