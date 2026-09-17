@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-17",
+  "session": "am",
+  "time": "08:00",
+  "level": "A2+ → B1",
+  "day": 27,
+  "title": "08:00｜新词 + 应用：工作中的变化与沟通",
+  "vocab": [
+    {"word":"mudah","display":"mudah","audio_text":"mudah","cn":"容易的","en":"easy","root":"mudah","root_cn":"容易","formation":"基本形容词；常见搭配：mudah dipahami（容易理解）、mudah dilakukan（容易做）、lebih mudah（更容易）。","example":"Cara ini lebih mudah dipahami oleh semua orang.","example_cn":"这个方法更容易被大家理解。","synonym_note":"gampang 也表示‘容易’，但更口语；mudah 更通用。","is_oral_new":false},
+    {"word":"sedangkan","display":"sedangkan","audio_text":"sedangkan","cn":"然而（对比）","en":"whereas; while","root":"sedang","root_cn":"正在；中等","formation":"连接词，用来对比两个不同情况，常放在第二个分句开头。","example":"Aku bekerja dari kantor, sedangkan dia bekerja dari rumah.","example_cn":"我在办公室工作，而他在家工作。","synonym_note":"sementara 也可表达对比；sedangkan 的对照关系通常更明确。","is_oral_new":false},
+    {"word":"akibat","display":"akibat","audio_text":"akibat","cn":"后果","en":"result; consequence","root":"akibat","root_cn":"后果；结果","formation":"基本名词；常见 akibat dari（由……造成的后果）、berakibat（导致）。","example":"Keterlambatan itu adalah akibat dari masalah teknis.","example_cn":"那次延误是技术问题造成的后果。","synonym_note":"hasil 偏中性的‘结果/成果’；akibat 常用于某个原因带来的后果。","is_oral_new":false},
+    {"word":"menunjukkan","display":"menunjukkan","audio_text":"menunjukkan","cn":"指出","en":"show; indicate","root":"tunjuk","root_cn":"指；指出","formation":"meN- + tunjuk + -kan → menunjukkan，表示展示、表明或指出。","example":"Data ini menunjukkan bahwa penjualan mulai naik.","example_cn":"这些数据显示销售开始上升。","synonym_note":"memperlihatkan 更偏‘展示给人看’；menunjukkan 也常用于数据或事实‘表明’。","is_oral_new":false},
+    {"word":"perasaan","display":"perasaan","audio_text":"perasaan","cn":"感情","en":"feeling; emotion","root":"rasa","root_cn":"感觉；味道","formation":"pe- + rasa + -an → perasaan，表示感受、情绪或感情。","example":"Aku mengerti perasaan kamu dalam situasi seperti ini.","example_cn":"我理解你在这种情况下的感受。","synonym_note":"rasa 范围更广，可指感觉或味道；perasaan 更常指人的内在感受。","is_oral_new":false},
+    {"word":"menawarkan","display":"menawarkan","audio_text":"menawarkan","cn":"提供 / 报价","en":"offer","root":"tawar","root_cn":"议价；出价","formation":"meN- + tawar + -kan → menawarkan，表示主动提供、提出或报价。","example":"Mereka menawarkan solusi yang lebih sederhana.","example_cn":"他们提出了一个更简单的解决方案。","synonym_note":"memberikan 是一般的‘给予’；menawarkan 强调先提出让对方选择或接受。","is_oral_new":false},
+    {"word":"mengenal","display":"mengenal","audio_text":"mengenal","cn":"认识","en":"know; be acquainted with","root":"kenal","root_cn":"认识；熟悉","formation":"meN- + kenal → mengenal，表示认识某人或了解某事物。","example":"Aku mulai mengenal cara kerja tim ini.","example_cn":"我开始了解这个团队的工作方式。","synonym_note":"kenal 更常见于日常口语；mengenal 更完整，也可用于‘逐渐了解’。","is_oral_new":false},
+    {"word":"walau","display":"walau","audio_text":"walau","cn":"尽管，虽然","en":"although; even though","root":"walau","root_cn":"虽然；尽管","formation":"基本连接词；常见结构 walau + 分句，也可用 walaupun。","example":"Walau ada masalah, kami tetap melanjutkan pekerjaan.","example_cn":"虽然有问题，我们还是继续工作。","synonym_note":"walaupun 意思基本相同且形式更完整；meskipun 也表示‘尽管’。","is_oral_new":false},
+    {"word":"cas","display":"cas","audio_text":"cas","cn":"充电","en":"charge","root":"cas","root_cn":"充电","formation":"日常口语借词；常说 cas HP（给手机充电）、lagi dicas（正在充电）。","example":"Baterai HP-ku hampir habis, jadi aku mau cas dulu.","example_cn":"我的手机快没电了，所以我先充一下电。","synonym_note":"mengisi daya 是更正式、标准的‘充电’；日常交流中 cas 非常常见。","is_oral_new":true},
+    {"word":"lemot","display":"lemot","audio_text":"lemot","cn":"卡；慢（设备/网络）","en":"slow; laggy","root":"lemot","root_cn":"慢；卡顿","formation":"常用口语形容词，主要形容网络、手机、电脑或反应很慢。","example":"Internet di kantor agak lemot pagi ini.","example_cn":"今天早上办公室的网络有点卡。","synonym_note":"lambat 是通用、标准的‘慢’；lemot 更口语，尤其常用于网络和设备。","is_oral_new":true}
+  ],
+  "review_vocab": ["ngelarin","ngandelin","kecolongan","ujung-ujungnya","masukan"],
+  "sentences": [
+    {"id":"Walau internet agak lemot, pekerjaan ini masih mudah untuk ngelarin hari ini.","cn":"虽然网络有点卡，这项工作今天还是比较容易完成。"},
+    {"id":"Data baru menunjukkan akibat dari perubahan rencana kemarin.","cn":"新数据显示了昨天计划变化带来的后果。"},
+    {"id":"Aku menawarkan bantuan, sedangkan dia memberikan masukan untuk langkah berikutnya.","cn":"我提出帮忙，而他为下一步提供了建议。"},
+    {"id":"Setelah lebih mengenal tim ini, aku jadi lebih mengerti perasaan mereka.","cn":"更了解这个团队后，我也更理解他们的感受了。"},
+    {"id":"Jangan cuma ngandelin satu orang supaya kita tidak kecolongan hal penting.","cn":"不要只依赖一个人，这样我们才不会疏忽漏掉重要事情。"}
+  ],
+  "reading": {
+    "title":"Rencana yang Harus Disesuaikan",
+    "text":"Pagi ini internet kantor agak lemot, sedangkan kami harus ngelarin laporan sebelum siang. Data terbaru menunjukkan ada beberapa bagian yang perlu diperiksa lagi. Walau waktunya terbatas, pekerjaan sebenarnya cukup mudah kalau dibagi dengan jelas. Aku menawarkan bantuan kepada rekan kerja dan meminta masukan dari tim. Setelah lebih mengenal cara kerja mereka, aku juga lebih mengerti perasaan setiap orang saat ada tekanan. Kami tidak mau cuma ngandelin satu orang karena bisa kecolongan hal penting. Ujung-ujungnya, kami membagi tugas, memperbaiki bagian yang salah, lalu mengirim laporan tepat waktu. Setelah itu aku baru sempat cas HP.",
+    "cn":"今天早上办公室网络有点卡，而我们必须在中午前完成报告。最新数据显示有几个部分需要重新检查。虽然时间有限，但如果分工明确，工作其实并不难。我主动提出帮助同事，也向团队征求意见。更了解他们的工作方式以后，我也更理解每个人面对压力时的感受。我们不想只依赖一个人，因为那样可能会疏忽漏掉重要事情。到头来，我们分好任务，修改了错误部分，然后按时发出了报告。之后我才有空给手机充电。"
+  },
+  "quiz": [
+    {"question":"哪一个词最适合填空：Mereka ___ solusi yang lebih sederhana kepada klien.","options":["menawarkan","mengenal","menunjukkan"],"answer_index":0,"explain":"menawarkan 表示主动提出、提供或报价。完整句：Mereka menawarkan solusi yang lebih sederhana kepada klien."},
+    {"question":"哪一个词最适合表达‘虽然时间不多，我们还是继续’中的‘虽然/尽管’？","options":["akibat","walau","sedangkan"],"answer_index":1,"explain":"walau 表示‘虽然、尽管’，可引出让步关系。"},
+    {"question":"复习：ngandelin 在工作场景中通常是什么意思？","options":["依赖、指望","漏掉问题","完成收尾"],"answer_index":0,"explain":"ngandelin 是口语，表示依赖、指望、靠；例如 Jangan cuma ngandelin satu orang."}
+  ],
+  "output": {
+    "task":"请用至少4个今天的新词，说3–4句：工作中网络很慢，而且时间紧，你会怎么和同事一起解决？",
+    "reference_answer":"Walau internet agak lemot, aku akan tetap ngelarin bagian yang bisa dikerjakan dulu. Aku akan menawarkan bantuan kepada rekan kerja, sedangkan bagian lain bisa dibagi ke orang lain. Kalau data menunjukkan ada masalah, kami akan segera memperbaikinya. Dengan pembagian yang jelas, pekerjaan jadi lebih mudah.",
+    "reference_cn":"虽然网络有点卡，我还是会先完成目前能做的部分。我会主动帮助同事，同时把其他部分分给别人。如果数据显示有问题，我们会马上修改。分工清楚以后，工作就会更容易。"
+  },
+  "review": [
+    "ngandelin = 依赖、指望、靠；工作中可说：Jangan cuma ngandelin satu orang.",
+    "kecolongan = 因疏忽没防住、漏掉问题；常见：Jangan sampai kecolongan.",
+    "ujung-ujungnya = 到头来、最后结果还是；适合总结一连串事情后的最终结果。"
+  ]
+}
