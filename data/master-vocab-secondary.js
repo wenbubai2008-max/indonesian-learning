@@ -1,0 +1,1 @@
+window.SECONDARY_MASTER_VOCAB_DB = [];
