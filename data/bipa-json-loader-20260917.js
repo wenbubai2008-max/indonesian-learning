@@ -1,8 +1,10 @@
 (function(){
   if(window.BipaDataLoader)return;
-  const SCRIPTS=Array.from({length:8},(_,i)=>'data/bipa-gz-'+String(i+1).padStart(2,'0')+'.js?v=20260917-json1');
+  const SCRIPTS=Array.from({length:8},(_,i)=>'data/bipa-gz-'+String(i+1).padStart(2,'0')+'.js?v=20260917-json2');
+  const EXPECTED={A1:515,A2:290,B1:204,B2:274};
   function loadScript(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.async=false;s.onload=()=>resolve();s.onerror=()=>reject(new Error('加载失败：'+src));document.head.appendChild(s);});}
-  function ready(){const r=window.BIPA_VOCAB_RAW||{};return ['A1','A2','B1','B2'].every(k=>Array.isArray(r[k])&&r[k].length>0)}
+  function countsOf(raw){const out={};Object.keys(EXPECTED).forEach(k=>{out[k]=Array.isArray(raw&&raw[k])?raw[k].length:0});return out}
+  function ready(){const c=countsOf(window.BIPA_VOCAB_RAW||{});return Object.keys(EXPECTED).every(k=>c[k]===EXPECTED[k])}
   async function load(){
     if(ready())return window.BIPA_VOCAB_RAW;
     if(typeof DecompressionStream==='undefined')throw new Error('浏览器不支持 BIPA gzip 数据解压');
@@ -15,15 +17,14 @@
     window.BIPA_GZ='';
     let raw;
     try{raw=JSON.parse(text)}catch(e){throw new Error('BIPA 压缩数据不是有效 JSON：'+e.message)}
-    const counts={};
-    for(const lv of ['A1','A2','B1','B2']){
-      if(!Array.isArray(raw[lv])||!raw[lv].length)throw new Error('BIPA '+lv+' 数据缺失');
-      counts[lv]=raw[lv].length;
+    const counts=countsOf(raw);
+    for(const lv of Object.keys(EXPECTED)){
+      if(counts[lv]!==EXPECTED[lv])throw new Error('BIPA '+lv+' 数量异常：'+counts[lv]+' / '+EXPECTED[lv]);
     }
     window.BIPA_VOCAB_RAW=raw;
     window.BIPA_RUNTIME_COUNTS=counts;
     window.dispatchEvent(new CustomEvent('bipa-data-ready',{detail:counts}));
     return raw;
   }
-  window.BipaDataLoader={load,ready};
+  window.BipaDataLoader={load,ready,expected:Object.assign({},EXPECTED)};
 })();
