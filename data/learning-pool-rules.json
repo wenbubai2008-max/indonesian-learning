@@ -5,7 +5,7 @@
   "new_pool_formula": "M ∩ A − D",
   "review_pool_formula": "A ∩ D",
   "symbols": {
-    "M": "977主学习词库",
+    "M": "当前激活主学习词库（优先977；其合法新词耗尽后自动切换第二主词库）",
     "A": "weak active（当前待掌握）",
     "D": "daily-vocab（已正式教过）",
     "K": "weak mastered（已掌握）"
@@ -13,7 +13,17 @@
   "semantics": {
     "daily_vocab": "记录已正式教过/出现过，不等于已掌握",
     "mastered_source": "是否掌握只看 weakness-sync 的 status=mastered",
-    "runtime": "派生索引，不是源数据"
+    "runtime": "派生索引，不是源数据",
+    "secondary_master": "第二主词库只收人工筛选为不会/模糊的BIPA词；A1/A2/B1按已筛结果，B2暂只收已筛S级；与977完全重复的词永久剔除"
+  },
+  "master_handoff": {
+    "primary": "977主学习词库",
+    "secondary": "BIPA人工筛选第二主词库",
+    "secondary_file": "data/master-vocab-secondary.js",
+    "switch_condition": "primary_legal_new_pool=0",
+    "secondary_selection": "只收不会/模糊；B2仅S级；去除与977重复词",
+    "lesson_interface": "08:00与18:00仍只读取runtime.new_pool，不需要感知词库来源",
+    "review_interface": "两个主词库共用同一个runtime.review_pool与daily-vocab去重逻辑"
   },
   "runtime": {
     "file": "data/learning-runtime.json",
@@ -87,15 +97,17 @@
   },
   "rules": [
     "K不进入新词、重点复习或PM应用复现核心词",
-    "未教过的active主词库词=新词",
+    "未教过的active当前主词库词=新词",
     "已教过且active=复习词",
     "弱项强化只显示A∩D",
-    "977外且active但未教过的词暂存，不进入新词或弱项强化",
+    "第一主词库977优先；只有当其合法新词池为0时，runtime.new_pool才切换到第二主词库",
+    "第二主词库仅由人工筛选为不会/模糊的BIPA词生成；A1/A2/B1按已筛结果，B2暂只收已筛S级；与977完全重复词永久剔除",
+    "当前两套主词库之外且active但未教过的词暂存，不进入新词或弱项强化",
     "口语候选来自oral-vocab-candidates.js；候选定义为register=口语或oral字段非空",
     "每日新词约20%口语：08点优先2个，18点优先1个；但口语词仍必须满足M∩A−D",
     "口语名额优先选择register=口语的口语本体；oral字段非空但register不是口语的词仅作为次选，用于学习标准语↔口语对应",
     "同一组标准语↔口语对应不要在同一天拆成两个独立新词名额；作为一组教学即可",
-    "不得为了凑口语比例从977外、mastered或daily-vocab已教词中补新词",
+    "不得为了凑口语比例从当前激活主词库之外、mastered或daily-vocab已教词中补新词",
     "口语词优先雅加达/全国高频自然表达，排除粗口、低频俚语和猎奇网络词",
     "硬闸门：AI不得先自行想新词再回查资格；GitHub Runner必须先根据M、A、D计算完整合法池，再生成learning-runtime；08:00和18:00只能从runtime暴露的合法候选窗口选词",
     "08:00和18:00不得直接读取完整weakness-sync.json或daily-vocab-data.js来重新计算词池，也不得直接覆盖daily-vocab-data.js",
@@ -105,7 +117,7 @@
     "新词集合与复习集合交集必须为0；mastered命中数必须为0",
     "课程任务写入顺序固定为：读取runtime快照→从合法窗口选词→生成课程→写入前校验→写AM/PM课程JSON→更新index；课程任务本身不写daily-vocab",
     "课程JSON提交后，由唯一的sync-daily-vocab.yml在GitHub Runner本地完整读取并安全同步daily-vocab，同时调用共享build-learning-runtime.js用更新后的daily-vocab重建runtime，并将daily-vocab与runtime在同一同步提交中写回；不依赖GitHub Actions机器人提交再次触发另一个工作流",
-    "weakness-sync、master、口语候选或规则本身变化时，由build-learning-runtime.yml调用同一个共享build-learning-runtime.js单独刷新runtime",
+    "weakness-sync、主词库、口语候选或规则本身变化时，由build-learning-runtime.yml调用同一个共享build-learning-runtime.js单独刷新runtime",
     "PM中只有is_new=true、source_group=new或new_words明确列出的词允许作为缺失词追加到daily-vocab；review/application只允许更新已存在词的复现记录，若缺失应视为一致性异常而非当作新词追加",
     "daily-vocab只表示已正式教过，不代表mastered；掌握状态不得由是否进入daily-vocab推断",
     "写入后复核由同步链负责：新课程JSON存在、daily-vocab同步成功、runtime在同一同步链中重建；失败不得自动关闭08:00或18:00任务",
@@ -123,5 +135,5 @@
     "sync_workflow_is_single_writer": true,
     "lesson_sync_refreshes_runtime_atomically": true
   },
-  "updated_at": "2026-09-16"
+  "updated_at": "2026-09-17"
 }
