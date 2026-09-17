@@ -61,8 +61,11 @@ try{
     ok(exists('archive/vocab-legacy/'+name),'retired script must exist in archive: '+name);
   });
   ok(exists('archive/vocab-legacy/vocab-review-ui-legacy-20260831.js'),'old review UI must be archived');
-  ok(reviewStub.includes('__VOCAB_REVIEW_UI_RETIRED_20260917__'),'review UI path must remain an inert compatibility stub');
-  ok(!reviewStub.includes('renderReviewQueue'),'review stub must not contain legacy renderer');
+  ok(reviewStub.includes('__VOCAB_REVIEW_UI_RETIRED_20260917__'),'review UI path must remain a retired compatibility shim');
+  ok(!reviewStub.includes('renderReviewQueue'),'review shim must not contain legacy renderer');
+  ok(reviewStub.includes("bar.style.gridTemplateColumns='repeat(3,minmax(0,1fr))'"),'vocabulary stats bar must stay at three visible cards');
+  ok(reviewStub.includes("card.style.display='none'"),'retired 今日完成 stat must remain hidden');
+  ok(reviewStub.includes("card.dataset.retiredVocabStat='today-session'"),'retired 今日完成 stat must be explicitly tagged as retired');
   ok(exists('archive/vocab-legacy/README.md'),'legacy archive must include rules README');
 
   ok(unified.includes('vocabUnifiedCard'),'unified renderer must output vocabUnifiedCard');
