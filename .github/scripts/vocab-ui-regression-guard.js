@@ -39,6 +39,14 @@ try{
   ok(unified.includes('vocabUnifiedFlip'),'flip action must stay inside unified card renderer');
   ok(!unified.includes('<div class="item"><span>主题'),'unified renderer must not restore retired metadata tile layout');
 
+  ok(unified.includes('#vocab .vocabUnifiedMeaning{display:none'),'flip detail block must start hidden');
+  ok(unified.includes('#vocab .vocabUnifiedCard.revealed .vocabUnifiedMeaning{display:block}'),'revealed selector must outrank hidden selector so meanings can actually open');
+  ok(unified.includes("meaning.style.display=opened?'block':'none'"),'flip must also explicitly show/hide meanings as a runtime fallback');
+  ok(unified.includes('<div class="vocabUnifiedCn">'),'flip must contain Chinese meaning');
+  ok(unified.includes("const root=d.root?'<div class=\"vocabUnifiedRoot\">词根 · "),'flip must show root when the word has one');
+  ok(unified.includes("const topic=isBipa()&&d.theme?"),'only BIPA cards may show the theme badge');
+  ok(unified.includes("const example=!isBipa()&&d.example?"),'non-BIPA cards keep their example detail while BIPA flip stays Chinese/English/root only');
+
   ok(guard.includes('const unifiedRender=window.renderVocab'),'guard must capture the final renderer');
   ok(guard.includes('new MutationObserver(restore)'),'guard must detect legacy DOM rewrites');
   ok(guard.includes("window.renderVocab=unifiedRender"),'guard must restore final renderer ownership');
