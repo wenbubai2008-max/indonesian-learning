@@ -3,8 +3,8 @@
   async function boot(){
     try{
       window.VOCAB_UPGRADE_GZ='';
-      await load('data/vocab-upgrade-gz-01.js?v=20260917-finalcard1');
-      await load('data/vocab-upgrade-gz-02.js?v=20260917-finalcard1');
+      await load('data/vocab-upgrade-gz-01.js?v=20260917-finalcard2');
+      await load('data/vocab-upgrade-gz-02.js?v=20260917-finalcard2');
       if(!window.VOCAB_UPGRADE_GZ)throw new Error('词汇页面升级数据为空');
       if(typeof DecompressionStream==='undefined')throw new Error('当前浏览器版本过旧，请升级 Chrome 或 Safari 后使用新版词汇页面');
       var bin=atob(window.VOCAB_UPGRADE_GZ),bytes=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
@@ -14,15 +14,12 @@
       await load(url);
 
       /*
-       * BIPA 最终界面只由这一套 renderer 接管：
-       * - 单词上方保留 S/A/B 小圆圈
-       * - 主题只在卡片右上角出现一次
-       * - 翻卡后只显示中文、英文、词根（有才显示）
-       * - 不显示“词库 / 单元 / 构词 / 来源”等旧信息块
-       * - S/A/B 分级只筛词，不切换成另一套卡片界面
-       * 其它历史 BIPA stable/progress/badge/flip/switch 补丁不再加载。
+       * BIPA 最终界面只由 final renderer 接管。
+       * 小圆圈 S/A/B 保留；分级只筛词；旧信息块不恢复。
        */
-      await load('data/vocab-bipa-final-20260913.js?v=20260917-finalcard1');
+      await load('data/vocab-bipa-final-20260913.js?v=20260917-finalcard2');
+      /* 最终工具栏布局：桌面端 7 个控件缩小后固定一排。 */
+      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-finalcard2');
 
       setTimeout(function(){URL.revokeObjectURL(url)},1000);
     }catch(e){console.error('[vocab upgrade]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面升级加载失败，请刷新页面重试';}
