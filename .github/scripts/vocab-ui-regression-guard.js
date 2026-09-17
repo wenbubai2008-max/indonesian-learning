@@ -1,6 +1,7 @@
 const fs=require('fs');
 const path=require('path');
 const vm=require('vm');
+const zlib=require('zlib');
 const ROOT=path.resolve(__dirname,'../..');
 const read=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const exists=p=>fs.existsSync(path.join(ROOT,p));
@@ -10,6 +11,7 @@ function ok(cond,msg){if(!cond)failures.push(msg)}
 try{
   const index=read('index.html');
   const loader=read('data/vocab-memory-feedback.js');
+  const bipaLoader=read('data/bipa-json-loader-20260917.js');
   const controller=read('data/vocab-controller-20260917.js');
   const unified=read('data/vocab-unified-renderer-20260917.js');
   const toolbar=read('data/vocab-bipa-toolbar-compact-20260917.js');
@@ -21,6 +23,7 @@ try{
 
   [
     ['data/vocab-memory-feedback.js',loader],
+    ['data/bipa-json-loader-20260917.js',bipaLoader],
     ['data/vocab-controller-20260917.js',controller],
     ['data/vocab-unified-renderer-20260917.js',unified],
     ['data/vocab-bipa-toolbar-compact-20260917.js',toolbar],
@@ -41,6 +44,11 @@ try{
   ok(index.includes('grid-template-columns:repeat(3,1fr)'),'vocabulary stats bar must be three columns');
   ok(index.includes('onclick="showReviewWords()"'),'待掌握 card must stay inside the vocabulary controller flow');
 
+  const pData=loader.indexOf('bipa-json-loader-20260917.js');
+  const pController=loader.indexOf('vocab-controller-20260917.js');
+  ok(pData>=0&&pController>pData,'complete BIPA JSON data must load before VocabController');
+  ok(loader.includes('await window.BipaDataLoader.load()'),'boot must await complete BIPA data before controller init');
+
   const activeOrder=[
     'vocab-controller-20260917.js',
     'vocab-unified-renderer-20260917.js',
@@ -51,6 +59,28 @@ try{
   let last=-1;
   activeOrder.forEach(name=>{const p=loader.indexOf(name);ok(p>last,'active vocabulary chain order broken at '+name);last=p;});
   ['vocab-upgrade-gz-01.js','vocab-upgrade-gz-02.js','library-switcher.js','vocab-bipa-state-20260917.js'].forEach(name=>ok(!loader.includes(name),'loader must not execute retired controller/state module: '+name));
+
+  ok(bipaLoader.includes('JSON.parse(text)'),'BIPA gzip payload must be parsed as JSON, never executed as JavaScript');
+  ok(!bipaLoader.includes("type:'text/javascript'"),'BIPA JSON loader must not wrap decompressed JSON as a script blob');
+  ok(bipaLoader.includes("for(const lv of ['A1','A2','B1','B2'])"),'BIPA loader must validate all four levels');
+  ok(bipaLoader.includes('window.BIPA_VOCAB_RAW=raw'),'BIPA loader must publish complete raw data before controller starts');
+
+  const chunks=[];
+  for(let i=1;i<=8;i++){
+    const p=`data/bipa-gz-${String(i).padStart(2,'0')}.js`;
+    const s=read(p),m=s.match(/\+'([^']+)'\s*;?\s*$/);
+    ok(!!m,'BIPA compressed chunk cannot be parsed: '+p);
+    if(m)chunks.push(m[1]);
+  }
+  if(chunks.length===8){
+    let raw=null;
+    try{raw=JSON.parse(zlib.gunzipSync(Buffer.from(chunks.join(''),'base64')).toString('utf8'))}catch(e){failures.push('BIPA compressed JSON decode failed: '+e.message)}
+    if(raw){
+      const counts={};
+      ['A1','A2','B1','B2'].forEach(lv=>{counts[lv]=Array.isArray(raw[lv])?raw[lv].length:0;ok(counts[lv]>0,'BIPA compressed source missing '+lv)});
+      console.log('BIPA compressed source counts:',counts);
+    }
+  }
 
   ok(controller.includes("const BIPA_KEYS=['bipa-a1','bipa-a2','bipa-b1','bipa-b2']"),'single controller must own all BIPA libraries');
   ok(controller.includes("return lv?'indo_bipa_mem_'+lv:'indo_mem'"),'BIPA must use independent per-level memory while normal vocab uses indo_mem');
