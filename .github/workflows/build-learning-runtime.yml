@@ -9,6 +9,7 @@ on:
       - 'data/master-vocab-data.js'
       - 'data/master-vocab-data-2.js'
       - 'data/master-vocab-data-3.js'
+      - 'data/master-handoff-state.json'
       - 'data/oral-vocab-candidates.js'
       - 'data/learning-pool-rules.json'
       - 'data/bipa-gz-*.js'
@@ -67,7 +68,7 @@ jobs:
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/learning-runtime.json data/master-vocab-secondary.js
+          git add data/learning-runtime.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Build learning runtime pools'
           git pull --rebase origin main
