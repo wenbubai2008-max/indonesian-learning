@@ -2,6 +2,7 @@ const fs=require('fs');
 const path=require('path');
 const vm=require('vm');
 const zlib=require('zlib');
+const crypto=require('crypto');
 const ROOT=path.resolve(__dirname,'../..');
 const read=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const exists=p=>fs.existsSync(path.join(ROOT,p));
@@ -23,6 +24,7 @@ try{
   const libraryStub=read('data/library-switcher.js');
   const reviewStub=read('data/vocab-review-ui.js');
   const bipaStateStub=read('data/vocab-bipa-state-20260917.js');
+  const levelManifest=JSON.parse(read('data/bipa-level-manifest.json'));
 
   [
     ['data/vocab-memory-feedback.js',loader],
@@ -53,23 +55,47 @@ try{
   ok(!loader.includes('await window.BipaDataLoader.load()'),'homepage boot must not eagerly decompress BIPA data');
   ok(!loader.includes('bipa-secondary-seed-20260917.js'),'completed BIPA secondary migration must not reseed on every page load');
   ok(!loader.includes('VocabController.refresh'),'hidden vocabulary page must not be rebuilt again during global boot');
+  ok(loader.includes('进入 B2 只请求和解压 B2'),'loader contract must document per-level BIPA loading');
 
   const activeOrder=['vocab-controller-20260917.js','vocab-unified-renderer-20260917.js','vocab-bipa-toolbar-compact-20260917.js','vocab-unified-ui-guard-20260917.js','vocab-flip-content-fix-20260917.js'];
   let last=-1;activeOrder.forEach(name=>{const p=loader.indexOf(name);ok(p>last,'active vocabulary chain order broken at '+name);last=p;});
   ['vocab-upgrade-gz-01.js','vocab-upgrade-gz-02.js','library-switcher.js','vocab-bipa-state-20260917.js'].forEach(name=>ok(!loader.includes(name),'loader must not execute retired controller/state module: '+name));
 
-  ok(bipaLoader.includes('JSON.parse(text)'),'BIPA gzip payload must be parsed as JSON');
-  ok(bipaLoader.includes('const EXPECTED={A1:515,A2:290,B1:204,B2:274}'),'BIPA loader must pin complete counts');
-  ok(bipaLoader.includes('window.BIPA_VOCAB_RAW=raw'),'BIPA loader must publish complete raw data');
+  ok(bipaLoader.includes("const EXPECTED={A1:515,A2:290,B1:204,B2:274}"),'BIPA loader must pin complete counts');
+  ok(bipaLoader.includes("function levelScript(lv){return 'data/bipa-level-'"),'BIPA loader must address one level file at a time');
+  ok(bipaLoader.includes('async function loadOne(level)'),'BIPA loader must expose one-level loading');
+  ok(bipaLoader.includes('async function load(level)'),'BIPA loader must keep compatible load API');
+  ok(bipaLoader.includes('if(lv)return loadOne(lv)'),'load(level) must only load the requested BIPA level');
+  ok(bipaLoader.includes('window.BIPA_VOCAB_RAW[lv]=rows'),'BIPA loader must publish only the loaded level');
+  ok(!bipaLoader.includes("data/bipa-gz-"),'browser BIPA loader must not request the combined all-level payload');
 
   const chunks=[];
   for(let i=1;i<=8;i++){
     const p=`data/bipa-gz-${String(i).padStart(2,'0')}.js`,s=read(p),m=s.match(/\+'([^']+)'\s*;?\s*$/);
-    ok(!!m,'BIPA compressed chunk cannot be parsed: '+p);if(m)chunks.push(m[1]);
+    ok(!!m,'canonical BIPA compressed chunk cannot be parsed: '+p);if(m)chunks.push(m[1]);
   }
+  let canonical=null;
   if(chunks.length===8){
-    let raw=null;try{raw=JSON.parse(zlib.gunzipSync(Buffer.from(chunks.join(''),'base64')).toString('utf8'))}catch(e){failures.push('BIPA compressed JSON decode failed: '+e.message)}
-    if(raw){const counts={};Object.keys(EXPECTED_BIPA).forEach(lv=>{counts[lv]=Array.isArray(raw[lv])?raw[lv].length:0;ok(counts[lv]===EXPECTED_BIPA[lv],`BIPA ${lv} count mismatch: ${counts[lv]} / ${EXPECTED_BIPA[lv]}`)});console.log('BIPA compressed source counts:',counts)}
+    try{canonical=JSON.parse(zlib.gunzipSync(Buffer.from(chunks.join(''),'base64')).toString('utf8'))}catch(e){failures.push('canonical BIPA compressed JSON decode failed: '+e.message)}
+    if(canonical){const counts={};Object.keys(EXPECTED_BIPA).forEach(lv=>{counts[lv]=Array.isArray(canonical[lv])?canonical[lv].length:0;ok(counts[lv]===EXPECTED_BIPA[lv],`canonical BIPA ${lv} count mismatch: ${counts[lv]} / ${EXPECTED_BIPA[lv]}`)});console.log('BIPA canonical counts:',counts)}
+  }
+
+  ok(levelManifest&&levelManifest.version===1,'BIPA level manifest version must be 1');
+  for(const [lv,count] of Object.entries(EXPECTED_BIPA)){
+    const p=`data/bipa-level-${lv.toLowerCase()}-gz.js`;
+    ok(exists(p),'missing per-level BIPA payload: '+p);
+    if(!exists(p))continue;
+    const s=read(p);new vm.Script(s,{filename:p});
+    const m=s.match(new RegExp('BIPA_LEVEL_GZ\\.'+lv+"='([^']+)'"));
+    ok(!!m,'cannot parse per-level BIPA payload: '+p);if(!m)continue;
+    let rows=null;try{rows=JSON.parse(zlib.gunzipSync(Buffer.from(m[1],'base64')).toString('utf8'))}catch(e){failures.push('per-level '+lv+' decode failed: '+e.message)}
+    if(!rows)continue;
+    ok(Array.isArray(rows)&&rows.length===count,`per-level BIPA ${lv} count mismatch: ${Array.isArray(rows)?rows.length:0} / ${count}`);
+    if(canonical)ok(JSON.stringify(rows)===JSON.stringify(canonical[lv]),'per-level BIPA '+lv+' must exactly match canonical source');
+    const meta=levelManifest.levels&&levelManifest.levels[lv];
+    ok(meta&&meta.count===count,'manifest count mismatch for '+lv);
+    const hash=crypto.createHash('sha256').update(JSON.stringify(rows)).digest('hex');
+    ok(meta&&meta.sha256===hash,'manifest hash mismatch for '+lv);
   }
 
   ok(controller.includes('const EXPECTED_MASTER_COUNT=977'),'controller must pin master count to 977');
@@ -80,9 +106,12 @@ try{
   ok(controller.includes('function computeStats(src=sourceFor(),mem=memoryFor())'),'stats must reuse cached memory');
   ok(controller.includes('function currentFilterPredicate(x,mem=memoryFor())'),'FILTER predicate must accept cached memory');
   ok(controller.includes('src.filter(x=>currentFilterPredicate(x,mem))'),'rebuild must not parse localStorage once per word');
-  ok(controller.includes('async function setLibrary'),'library switching must support on-demand BIPA load');
-  ok(controller.includes('if(isBipaKey(key)&&!bipaReady())'),'BIPA must only load when a BIPA library is actually selected');
-  ok(controller.includes('await ensureBipaData()'),'BIPA library switch must await complete BIPA data before rendering');
+  ok(controller.includes('function bipaReady(level)'),'controller must support per-level BIPA readiness');
+  ok(controller.includes('async function ensureBipaData(level)'),'controller must load one BIPA level on demand');
+  ok(controller.includes("await window.BipaDataLoader.load(lv)"),'controller must request only the selected BIPA level');
+  ok(controller.includes('const mySeq=++switchSeq,lv=bipaLevelForKey(key)'),'library switch must resolve the selected BIPA level');
+  ok(controller.includes('if(lv&&!bipaReady(lv))'),'BIPA switch must test readiness for that level only');
+  ok(controller.includes('await ensureBipaData(lv)'),'BIPA switch must await only that selected level');
   ok(controller.includes('function prepareHiddenLibrary'),'hidden vocabulary page must defer heavy library rendering until opened');
   ok(controller.includes("return lv?'indo_bipa_mem_'+lv:'indo_mem'"),'BIPA must keep independent per-level memory');
   ok(controller.includes("if(activeView==='known'){if(st!=='know')return false}"),'known view must filter current-library status');
