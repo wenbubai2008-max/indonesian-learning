@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "source": "data/bipa-gz-01.js..08.js",
+  "levels": {
+    "A1": {
+      "count": 515,
+      "raw_bytes": 71121,
+      "gzip_bytes": 12211,
+      "sha256": "40219b14b90756d70d0f6db50793d9e45eeab6853f39a25d4f98b84ca46f7144"
+    },
+    "A2": {
+      "count": 290,
+      "raw_bytes": 35622,
+      "gzip_bytes": 8157,
+      "sha256": "ca42bfa8b2be7cb1fd277f3ed045e42fbf76ab7123e5808b8feeaa2ac2399e09"
+    },
+    "B1": {
+      "count": 204,
+      "raw_bytes": 30441,
+      "gzip_bytes": 7805,
+      "sha256": "58524b7f1c4cc611e9045ff1a05eaca364038b39e5d3ebf9987b6e9cf3286d27"
+    },
+    "B2": {
+      "count": 274,
+      "raw_bytes": 40265,
+      "gzip_bytes": 10374,
+      "sha256": "5dda1c5ac42a692e4890abde53feb7ead7131501fa020603e49ead2871460687"
+    }
+  }
+}
