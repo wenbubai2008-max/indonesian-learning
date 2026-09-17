@@ -3,8 +3,8 @@
   async function boot(){
     try{
       window.VOCAB_UPGRADE_GZ='';
-      await load('data/vocab-upgrade-gz-01.js?v=20260917-unified-ui7');
-      await load('data/vocab-upgrade-gz-02.js?v=20260917-unified-ui7');
+      await load('data/vocab-upgrade-gz-01.js?v=20260917-unified-ui8');
+      await load('data/vocab-upgrade-gz-02.js?v=20260917-unified-ui8');
       if(!window.VOCAB_UPGRADE_GZ)throw new Error('词汇页面升级数据为空');
       if(typeof DecompressionStream==='undefined')throw new Error('当前浏览器版本过旧，请升级 Chrome 或 Safari 后使用新版词汇页面');
       var bin=atob(window.VOCAB_UPGRADE_GZ),bytes=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
@@ -13,18 +13,16 @@
       var url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));
       await load(url);
 
-      /* 历史 BIPA 数据/工具栏逻辑仍可使用，但不再拥有最终卡片 UI。 */
-      await load('data/vocab-bipa-final-20260913.js?v=20260917-unified-ui7');
-      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-unified-ui7');
-      await load('data/vocab-bipa-flip-layout-fix-20260913.js?v=20260917-unified-ui7');
-
       /*
-       * 所有词库、已掌握、待掌握、筛选、BIPA S/A/B 最终都只允许统一 renderer 输出卡片。
-       * guard 防旧卡片回流；flip-content-fix 恢复翻卡内容，并固定单词位置不随翻卡上下跳。
+       * 正式词汇 UI 只允许这一条链路：
+       * unified renderer -> BIPA state/toolbar -> UI guard -> flip content/layout。
+       * 20260913 旧 renderer/hotfix 已封存，不再动态加载。
        */
-      await load('data/vocab-unified-renderer-20260917.js?v=20260917-unified-ui7');
-      await load('data/vocab-unified-ui-guard-20260917.js?v=20260917-unified-ui7');
-      await load('data/vocab-flip-content-fix-20260917.js?v=20260917-unified-ui7');
+      await load('data/vocab-unified-renderer-20260917.js?v=20260917-unified-ui8');
+      await load('data/vocab-bipa-state-20260917.js?v=20260917-unified-ui8');
+      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-unified-ui8');
+      await load('data/vocab-unified-ui-guard-20260917.js?v=20260917-unified-ui8');
+      await load('data/vocab-flip-content-fix-20260917.js?v=20260917-unified-ui8');
 
       setTimeout(function(){URL.revokeObjectURL(url)},1000);
     }catch(e){console.error('[vocab upgrade]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面升级加载失败，请刷新页面重试';}
