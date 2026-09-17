@@ -2,34 +2,23 @@
   function load(src){return new Promise(function(resolve,reject){var s=document.createElement('script');s.src=src;s.onload=function(){resolve(s)};s.onerror=function(){reject(new Error('加载失败：'+src))};document.head.appendChild(s);});}
   async function boot(){
     try{
-      window.VOCAB_UPGRADE_GZ='';
-      await load('data/vocab-upgrade-gz-01.js?v=20260917-unified-ui9');
-      await load('data/vocab-upgrade-gz-02.js?v=20260917-unified-ui9');
-      if(!window.VOCAB_UPGRADE_GZ)throw new Error('词汇页面升级数据为空');
-      if(typeof DecompressionStream==='undefined')throw new Error('当前浏览器版本过旧，请升级 Chrome 或 Safari 后使用新版词汇页面');
-      var bin=atob(window.VOCAB_UPGRADE_GZ),bytes=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
-      var stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
-      var code=await new Response(stream).text();window.VOCAB_UPGRADE_GZ='';
-      var url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));
-      await load(url);
-
       /*
-       * 正式词汇 UI 只允许这一条链路：
-       * unified renderer -> BIPA state/toolbar -> UI guard -> flip content/layout。
-       * 20260913 旧 renderer/hotfix 已封存，不再动态加载。
+       * 2026-09-17 起：词汇页不再执行 vocab-upgrade-gz-* 或旧 library-switcher 控制层。
+       * 正式运行链只有：single controller -> unified renderer -> toolbar -> UI guard -> flip layout。
+       * BIPA gzip 文件只作为数据载荷，由 controller 自己解压，不拥有 DB/FILTER/render 权限。
        */
-      await load('data/vocab-unified-renderer-20260917.js?v=20260917-unified-ui9');
-      await load('data/vocab-bipa-state-20260917.js?v=20260917-unified-ui9');
-      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-unified-ui9');
-      await load('data/vocab-unified-ui-guard-20260917.js?v=20260917-unified-ui9');
-      await load('data/vocab-flip-content-fix-20260917.js?v=20260917-unified-ui9');
-
-      setTimeout(function(){URL.revokeObjectURL(url)},1000);
-    }catch(e){console.error('[vocab upgrade]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面升级加载失败，请刷新页面重试';}
+      await load('data/vocab-controller-20260917.js?v=20260917-controller1');
+      await load('data/vocab-unified-renderer-20260917.js?v=20260917-controller1');
+      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-controller1');
+      await load('data/vocab-unified-ui-guard-20260917.js?v=20260917-controller1');
+      await load('data/vocab-flip-content-fix-20260917.js?v=20260917-controller1');
+      if(window.VocabController&&typeof window.VocabController.init==='function')await window.VocabController.init();
+      if(window.VocabController&&typeof window.VocabController.refresh==='function')window.VocabController.refresh(false);
+    }catch(e){console.error('[vocab controller boot]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面加载失败，请刷新页面重试';}
   }
-  if(document.readyState==='complete')setTimeout(boot,80);else window.addEventListener('load',function(){setTimeout(boot,80)},{once:true});
+  if(document.readyState==='complete')setTimeout(boot,40);else window.addEventListener('load',function(){setTimeout(boot,40)},{once:true});
 })();
 (function(){
-  if(window.__masterTop1000WeakMergeLoaded||window.lockMasterToCore||document.querySelector('script[data-master-core-guard],script[data-master-top1000-weak-merge]'))return;
-  var s=document.createElement('script');s.src='data/master-top1000-weak-merge.js?v=20260915-core-only2';s.dataset.masterTop1000WeakMerge='1';document.head.appendChild(s);
+  if(window.__masterTop1000WeakMergeLoaded||window.lockMasterToCore||document.querySelector('script[data-master-core-guard]'))return;
+  var s=document.createElement('script');s.src='data/master-top1000-weak-merge.js?v=20260917-controller1';s.dataset.masterCoreGuard='1';document.head.appendChild(s);
 })();
