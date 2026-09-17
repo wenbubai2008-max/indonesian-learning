@@ -89,7 +89,7 @@ jobs:
           NODE
           node .github/scripts/build-learning-runtime.js
           node .github/scripts/regression-guard.js
-          git add data/daily-vocab-data.js data/learning-runtime.json
+          git add data/daily-vocab-data.js data/learning-runtime.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Sync daily lesson vocabulary and runtime'
           git pull --rebase origin main
