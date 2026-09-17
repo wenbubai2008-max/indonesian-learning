@@ -82,10 +82,47 @@ fs.writeFileSync('data/master-vocab-secondary.js','window.SECONDARY_MASTER_VOCAB
 
 const primaryNewFull=master.filter(w=>activeMap.has(key(w))&&!dailySet.has(key(w)));
 const secondaryNewFull=secondaryMaster.map(x=>x.word).filter(w=>activeMap.has(key(w))&&!dailySet.has(key(w)));
-const activeMasterPool=primaryNewFull.length?'primary_977':(secondaryNewFull.length?'secondary_bipa':'exhausted');
-const newFull=activeMasterPool==='primary_977'?primaryNewFull:(activeMasterPool==='secondary_bipa'?secondaryNewFull:[]);
-const newFullSet=new Set(newFull.map(key));
 
+const HANDOFF_FILE='data/master-handoff-state.json';
+const HANDOFF_FILL_TARGET=10;
+function defaultHandoff(){return {version:1,phase:'primary',committed_secondary:false,switched_at:'',updated_at:''}}
+function readHandoff(){
+  if(!fs.existsSync(HANDOFF_FILE))return defaultHandoff();
+  try{return Object.assign(defaultHandoff(),JSON.parse(fs.readFileSync(HANDOFF_FILE,'utf8'))||{})}
+  catch(e){throw new Error('Invalid master-handoff-state.json: '+e.message)}
+}
+function handoffCore(x){return {version:1,phase:x.phase,committed_secondary:!!x.committed_secondary,switched_at:x.switched_at||''}}
+const oldHandoff=readHandoff();
+let handoff=Object.assign({},oldHandoff),activeMasterPool='exhausted',newFull=[];
+
+if(oldHandoff.committed_secondary||oldHandoff.phase==='secondary'){
+  handoff.phase='secondary';handoff.committed_secondary=true;
+  activeMasterPool=secondaryNewFull.length?'secondary_bipa':'exhausted';
+  newFull=secondaryNewFull.slice();
+}else if(primaryNewFull.length>=HANDOFF_FILL_TARGET){
+  handoff.phase='primary';handoff.committed_secondary=false;handoff.switched_at='';
+  activeMasterPool='primary_977';
+  newFull=primaryNewFull.slice();
+}else if(primaryNewFull.length>0){
+  handoff.phase='transition';handoff.committed_secondary=false;
+  activeMasterPool='primary_to_secondary';
+  newFull=[...primaryNewFull,...secondaryNewFull];
+}else if(secondaryNewFull.length){
+  handoff.phase='secondary';handoff.committed_secondary=true;
+  if(!handoff.switched_at)handoff.switched_at=new Date().toISOString();
+  activeMasterPool='secondary_bipa';
+  newFull=secondaryNewFull.slice();
+}else{
+  handoff.phase='primary_exhausted';handoff.committed_secondary=false;
+  activeMasterPool='exhausted';
+  newFull=[];
+}
+
+if(JSON.stringify(handoffCore(oldHandoff))!==JSON.stringify(handoffCore(handoff)))handoff.updated_at=new Date().toISOString();
+else handoff.updated_at=oldHandoff.updated_at||'';
+fs.writeFileSync(HANDOFF_FILE,JSON.stringify(handoff,null,2)+'\n');
+
+const newFullSet=new Set(newFull.map(key));
 const oralFull=oralRaw
   .filter(x=>newFullSet.has(key(x&&x.word)))
   .map(x=>[String(x.word||'').trim(),x.register||'',x.oral||'',x.root||'',Number.isFinite(Number(x.rank))?Number(x.rank):999999])
@@ -97,7 +134,10 @@ for(const w of [...newFull.slice(0,140),...oralExposed.map(x=>x[0])]){
   const k=key(w);if(!k||newSeen.has(k))continue;newSeen.add(k);newExposed.push(w);
 }
 const secondaryMeta=new Map(secondaryMaster.map(x=>[key(x.word),x]));
-const newMeta=newExposed.map(w=>[w,(activeMasterPool==='secondary_bipa'?(secondaryMeta.get(key(w))||{}):(masterMeta.get(key(w))||{})).cn||'']);
+const newMeta=newExposed.map(w=>{
+  const k=key(w),meta=secondaryMeta.get(k)||masterMeta.get(k)||{};
+  return [w,meta.cn||''];
+});
 
 const reviewFull=[];
 for(const x of activeMap.values()){
@@ -130,6 +170,14 @@ const runtime={
   weakness_updated_at:weakDoc&&weakDoc.updated_at?weakDoc.updated_at:'',
   active_master_pool:activeMasterPool,
   secondary_master_file:'data/master-vocab-secondary.js',
+  handoff:{
+    phase:handoff.phase,
+    committed_secondary:handoff.committed_secondary,
+    fill_target:HANDOFF_FILL_TARGET,
+    primary_remaining:primaryNewFull.length,
+    secondary_available:secondaryNewFull.length,
+    switched_at:handoff.switched_at||''
+  },
   stats:{
     master_unique:master.length,
     primary_master_unique:master.length,
@@ -159,4 +207,25 @@ const runtime={
 };
 
 fs.writeFileSync('data/learning-runtime.json',JSON.stringify(runtime)+'\n');
-console.log(runtime.stats, 'active_master_pool='+activeMasterPool);
+const audit={
+  generated_at:runtime.generated_at,
+  master_unique:master.length,
+  primary_new_pool_total:primaryNewFull.length,
+  secondary_master_unique:secondaryMaster.length,
+  secondary_new_pool_total:secondaryNewFull.length,
+  active_master_pool:activeMasterPool,
+  handoff:runtime.handoff,
+  weak_active_total:activeMap.size,
+  weak_mastered_total:masteredCount,
+  daily_taught_unique:dailySet.size,
+  new_pool_total:runtime.stats.new_pool_total_full,
+  review_pool_total:runtime.stats.review_pool_total_full,
+  oral_new_pool_total:runtime.stats.oral_new_pool_total_full,
+  rules:{
+    new_pool:'primary first; when primary has 1-9 legal words, expose them first and top up from secondary to keep the 10-word AM contract; after primary reaches 0, secondary handoff is committed and never falls back automatically',
+    review_pool:'weak_active ∩ daily_vocab',
+    secondary:'BIPA人工筛选不会/模糊；B2仅S；与977重复永久剔除'
+  }
+};
+fs.writeFileSync('data/learning-pool-audit.json',JSON.stringify(audit,null,2)+'\n');
+console.log(runtime.stats,'active_master_pool='+activeMasterPool,'handoff_phase='+handoff.phase);
