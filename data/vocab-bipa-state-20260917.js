@@ -52,6 +52,17 @@
     if($('vocabTag'))$('vocabTag').textContent='BIPA（'+level()+'） '+all.length+' 词';
   }
 
+  /*
+   * BIPA 的可见词池必须和上方统计使用同一份 indo_bipa_mem_<level> 状态。
+   * 旧通用词库切换器会先留下一个基于 indo_mem 的 FILTER；如果不重建，
+   * 就会出现“0 未判断”但卡片仍显示“1 / 220”之类的矛盾数字。
+   * 这里不自己渲染卡片，只要求统一 renderer 按 BIPA 独立状态重建 FILTER。
+   */
+  function rebuildVisiblePool(){
+    if(!isBipa())return;
+    if(typeof window.applyFilter==='function')window.applyFilter();
+  }
+
   window.bipaMarkFinal=function(v){
     if(!isBipa())return;
     const x=current();if(!x||!x.word)return;
@@ -61,11 +72,18 @@
 
   function sync(){
     ensureGrade();
-    if(isBipa()){syncTopics();updateStats();}
+    if(isBipa()){
+      syncTopics();
+      updateStats();
+      rebuildVisiblePool();
+    }
+  }
+  function queueSync(){
+    [0,40,140].forEach(ms=>setTimeout(sync,ms));
   }
   document.addEventListener('change',function(e){
-    if(e.target&&e.target.id==='librarySelect')setTimeout(sync,0);
+    if(e.target&&e.target.id==='librarySelect')queueSync();
   },true);
-  window.addEventListener('vocab-library-ready',function(){setTimeout(sync,0);});
+  window.addEventListener('vocab-library-ready',queueSync);
   [0,80,250,700].forEach(ms=>setTimeout(sync,ms));
 })();
