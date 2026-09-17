@@ -59,6 +59,14 @@ jobs:
           set -e
           git fetch origin main
           git reset --hard origin/main
+          VHASH=$(sha256sum data/vocab-memory-feedback.js | cut -c1-12)
+          python - "$VHASH" <<'PY'
+          import pathlib,re,sys
+          p=pathlib.Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          s2=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"\']+',f'data/vocab-memory-feedback.js?v={sys.argv[1]}',s)
+          if s2!=s:p.write_text(s2,encoding='utf-8')
+          PY
           node .github/scripts/build-learning-runtime.js
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
@@ -68,7 +76,7 @@ jobs:
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/learning-runtime.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
+          git add index.html data/learning-runtime.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Build learning runtime pools'
           git pull --rebase origin main
