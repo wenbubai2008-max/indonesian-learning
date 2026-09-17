@@ -1,11 +1,11 @@
 (function(){
-  if(window.__BIPA_TOOLBAR_COMPACT_20260917_V2__)return;
-  window.__BIPA_TOOLBAR_COMPACT_20260917_V2__=true;
+  if(window.__BIPA_TOOLBAR_COMPACT_20260917_V3__)return;
+  window.__BIPA_TOOLBAR_COMPACT_20260917_V3__=true;
 
   function isGradeSelect(s){
     if(!s||s.tagName!=='SELECT')return false;
-    const t=[...s.options].map(o=>String(o.textContent||'').trim()).join('|');
-    return /全部分级/.test(t)&&/S\s*[·.、-]?\s*核心/.test(t)&&/A\s*[·.、-]?\s*常用/.test(t)&&/B\s*[·.、-]?\s*低频/.test(t);
+    const opts=[...s.options].map(o=>String(o.textContent||'').trim());
+    return opts.some(t=>t==='全部分级'||t.indexOf('全部分级')>=0);
   }
 
   function dedupeGradeFilter(){
@@ -13,10 +13,9 @@
     if(!tb)return;
     const grades=[...tb.querySelectorAll('select')].filter(isGradeSelect);
     if(grades.length<=1)return;
-    const keep=document.getElementById('sabFilterStable')&&grades.includes(document.getElementById('sabFilterStable'))
-      ? document.getElementById('sabFilterStable')
-      : grades[0];
-    if(keep.id!=='sabFilterStable')keep.id='sabFilterStable';
+    const stable=document.getElementById('sabFilterStable');
+    const keep=stable&&grades.includes(stable)?stable:grades[0];
+    if(!keep.id)keep.id='sabFilterStable';
     grades.forEach(s=>{if(s!==keep)s.remove();});
   }
 
@@ -56,14 +55,22 @@
   const old=document.getElementById('bipaToolbarCompact20260917');if(old)old.remove();
   document.head.appendChild(st);
 
+  function queueDedupe(){requestAnimationFrame(dedupeGradeFilter)}
   dedupeGradeFilter();
-  window.addEventListener('vocab-library-ready',()=>setTimeout(dedupeGradeFilter,0));
+  [50,150,350,800,1500].forEach(ms=>setTimeout(dedupeGradeFilter,ms));
+  window.addEventListener('vocab-library-ready',()=>{
+    dedupeGradeFilter();
+    setTimeout(dedupeGradeFilter,50);
+    setTimeout(dedupeGradeFilter,250);
+  });
+
   const tb=document.querySelector('#vocab .toolbar');
   if(tb){
     let queued=false;
     new MutationObserver(()=>{
-      if(queued)return;queued=true;
+      if(queued)return;
+      queued=true;
       requestAnimationFrame(()=>{queued=false;dedupeGradeFilter();});
-    }).observe(tb,{childList:true,subtree:false});
+    }).observe(tb,{childList:true,subtree:true,characterData:true});
   }
 })();
