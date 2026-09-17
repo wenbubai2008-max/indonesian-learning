@@ -3,8 +3,9 @@
   window.__BIPA_SECONDARY_SEED_20260917__=true;
 
   const LEVELS=['A1','A2','B1','B2'];
-  const SIG_KEY='bipa_secondary_seed_signature_v1';
-  const SUMMARY_KEY='bipa_secondary_seed_summary_v1';
+  const BIPA_REASONS=['bipa_secondary_dont','bipa_secondary_fuzzy'];
+  const SIG_KEY='bipa_secondary_seed_signature_v2';
+  const SUMMARY_KEY='bipa_secondary_seed_summary_v2';
   const norm=s=>String(s||'').trim().toLowerCase();
   const parse=k=>{try{return JSON.parse(localStorage.getItem(k)||'{}')||{}}catch(e){return {}}};
 
@@ -19,11 +20,6 @@
     ((window.BIPA_VOCAB_RAW&&window.BIPA_VOCAB_RAW[level])||[]).forEach(r=>{if(!Array.isArray(r))return;const k=norm(r[0]);if(k&&!m.has(k))m.set(k,r)});
     return m;
   }
-  function eligible(level,row,primary){
-    if(!row)return false;
-    if(level==='B2'&&String(row[8]||'').trim().toUpperCase()!=='S')return false;
-    return !primary.has(norm(row[0]));
-  }
   function itemFrom(level,row){
     return {
       word:String(row[0]||'').trim(),display:String(row[0]||'').trim(),cn:String(row[1]||'').trim(),en:String(row[2]||'').trim(),
@@ -32,11 +28,12 @@
     };
   }
   function signature(){
-    return JSON.stringify(LEVELS.map(lv=>[lv,parse('indo_bipa_mem_'+lv)]));
+    const primary=[...masterSet()].sort();
+    return JSON.stringify({primary,mem:LEVELS.map(lv=>[lv,parse('indo_bipa_mem_'+lv)])});
   }
-  function hasBipaReason(x){
-    return !!(x&&Array.isArray(x.reasons)&&x.reasons.some(r=>r==='bipa_secondary_dont'||r==='bipa_secondary_fuzzy'));
-  }
+  function bipaReasonsOf(x){return x&&Array.isArray(x.reasons)?x.reasons.filter(r=>BIPA_REASONS.includes(r)):[]}
+  function hasBipaReason(x){return bipaReasonsOf(x).length>0}
+  function sameOnlyReason(x,reason){const r=bipaReasonsOf(x);return r.length===1&&r[0]===reason}
   async function seed(force){
     const pool=window.WeaknessPool;if(!pool||typeof pool.get!=='function'||typeof pool.markWeak!=='function')return null;
     if(!window.BIPA_VOCAB_RAW)return null;
@@ -44,7 +41,7 @@
     if(!force&&localStorage.getItem(SIG_KEY)===sig)return JSON.parse(localStorage.getItem(SUMMARY_KEY)||'null');
     const primary=masterSet();
     const seen=new Set();
-    let selected=0,changed=0,skippedPrimary=0,skippedB2=0,knownRemoved=0;
+    let selected=0,changed=0,skippedPrimary=0,skippedB2=0,knownRemoved=0,reclassified=0;
     const perLevel={};
     for(const lv of LEVELS){
       const mem=parse('indo_bipa_mem_'+lv),rows=rowMap(lv);let kept=0;
@@ -55,22 +52,30 @@
         const k=norm(row[0]);if(primary.has(k)){skippedPrimary++;continue}
         if(seen.has(k))continue;
         seen.add(k);
-        const existing=pool.get(row[0]);
+        let existing=pool.get(row[0]);
         if(status==='know'){
-          if(existing&&existing.status!=='mastered'&&hasBipaReason(existing)&&typeof pool.markMastered==='function'){
-            pool.markMastered(row[0],'bipa_secondary_known');changed++;knownRemoved++;
+          if(existing&&existing.status!=='mastered'&&hasBipaReason(existing)){
+            if(typeof pool.removeReasons==='function'){
+              pool.removeReasons(row[0],BIPA_REASONS,true,'bipa_secondary_known');changed++;knownRemoved++;
+            }else{
+              const nonBipa=(existing.reasons||[]).filter(r=>!BIPA_REASONS.includes(r));
+              if(!nonBipa.length&&typeof pool.markMastered==='function'){pool.markMastered(row[0],'bipa_secondary_known');changed++;knownRemoved++;}
+            }
           }
           continue;
         }
         selected++;kept++;
         const reason=status==='dont'?'bipa_secondary_dont':'bipa_secondary_fuzzy';
-        const already=existing&&existing.status==='active'&&Array.isArray(existing.reasons)&&existing.reasons.includes(reason);
+        if(existing&&existing.status==='active'&&hasBipaReason(existing)&&!sameOnlyReason(existing,reason)&&typeof pool.removeReasons==='function'){
+          pool.removeReasons(row[0],BIPA_REASONS,false);existing=pool.get(row[0]);reclassified++;
+        }
+        const already=existing&&existing.status==='active'&&Array.isArray(existing.reasons)&&existing.reasons.includes(reason)&&sameOnlyReason(existing,reason);
         if(!already){pool.markWeak(row[0],itemFrom(lv,row),reason);changed++;}
         else if(typeof pool.enrich==='function')pool.enrich(row[0],itemFrom(lv,row));
       }
       perLevel[lv]=kept;
     }
-    const summary={version:1,selected,changed,known_removed:knownRemoved,skipped_primary:skippedPrimary,skipped_b2_unreviewed:skippedB2,per_level:perLevel,generated_at:new Date().toISOString()};
+    const summary={version:2,selected,changed,reclassified,known_removed:knownRemoved,skipped_primary:skippedPrimary,skipped_b2_unreviewed:skippedB2,per_level:perLevel,generated_at:new Date().toISOString()};
     localStorage.setItem(SIG_KEY,sig);localStorage.setItem(SUMMARY_KEY,JSON.stringify(summary));
     window.BIPA_SECONDARY_SEED_SUMMARY=summary;
     const sync=window.WeaknessSync;
@@ -79,6 +84,13 @@
     }
     return summary;
   }
+  let queued=false;
+  function queueSeed(){
+    if(queued)return;queued=true;
+    queueMicrotask(()=>{queued=false;seed(true).catch(()=>{})});
+  }
   window.BipaSecondarySeed={run:()=>seed(true),summary:()=>JSON.parse(localStorage.getItem(SUMMARY_KEY)||'null')};
+  window.addEventListener('bipa-memory-changed',queueSeed);
+  window.addEventListener('master-core-locked',queueSeed);
   setTimeout(()=>seed(false),120);
 })();
