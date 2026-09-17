@@ -44,11 +44,11 @@ try{
   ok(!unified.includes('<div class="item"><span>主题'),'unified renderer must not restore retired metadata tile layout');
 
   ok(unified.includes('#vocab .vocabUnifiedMeaning{display:none'),'flip detail block must start hidden');
-  ok(unified.includes('#vocab .vocabUnifiedCard.revealed .vocabUnifiedMeaning{display:block}'),'revealed selector must outrank hidden selector so meanings can actually open');
+  ok(unified.includes('#vocab .vocabUnifiedCard.revealed .vocabUnifiedMeaning{display:block}'),'revealed selector must allow meanings to open');
   ok(unified.includes('<div class="vocabUnifiedCn">'),'base renderer must contain Chinese meaning');
   ok(unified.includes("const root=d.root?'<div class=\"vocabUnifiedRoot\">词根 · "),'base renderer must show root when the word has one');
   ok(unified.includes("const topic=isBipa()&&d.theme?"),'only BIPA cards may show the theme badge');
-  ok(unified.includes("const example=!isBipa()&&d.example?"),'non-BIPA cards keep their example detail while BIPA flip stays Chinese/English/root only');
+  ok(unified.includes("const example=!isBipa()&&d.example?"),'non-BIPA cards keep their example detail while BIPA flip stays concise');
 
   ok(guard.includes('const unifiedRender=window.renderVocab'),'guard must capture the final renderer');
   ok(guard.includes('new MutationObserver(restore)'),'guard must detect legacy DOM rewrites');
@@ -62,7 +62,12 @@ try{
   ok(flip.includes('<div class="vocabUnifiedRoot">词根 · '),'flip fix must render root when present');
   ok(flip.includes("m.style.setProperty('display','block','important')"),'flip fix must force details visible even if stale CSS exists');
   ok(flip.includes('if(!d.bipa&&d.example)'),'ordinary vocab cards must retain example content');
-  ok(flip.includes('BIPA 翻卡只显示中文、英文、词根'),'BIPA flip contract must remain explicit');
+  ok(flip.includes('BIPA：中文 → 英文 → 词根'),'BIPA detail order must stay Chinese, English, then root');
+  ok(flip.includes('#vocab .vocabUnifiedCard{justify-content:flex-start!important;}'),'card must not vertically recenter when details open');
+  ok(flip.includes('#vocab .vocabUnifiedCore{width:100%!important;margin-top:145px!important;transform:none!important;}'),'ordinary vocab word area must have a fixed desktop position');
+  ok(flip.includes('#vocab .vocabUnifiedCard.vocabUnifiedBipa .vocabUnifiedCore{margin-top:85px!important;}'),'BIPA word area must have a fixed desktop position');
+  ok(flip.includes("core.classList.add('vocabUnifiedCore')"),'word line parent must be marked as the fixed core area');
+  ok(flip.includes("card.classList.toggle('vocabUnifiedBipa',!!bipaLevel())"),'BIPA cards must receive the fixed-layout variant');
 }catch(e){
   failures.push('vocab UI guard crashed: '+(e&&e.stack?e.stack:e));
 }
@@ -73,4 +78,3 @@ if(failures.length){
   process.exit(1);
 }
 console.log('Vocabulary UI regression guard passed');
-// Triggered after obsolete cache workflow cleanup so both guard suites run on the final repository state.
