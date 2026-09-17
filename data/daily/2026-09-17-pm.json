@@ -1,0 +1,47 @@
+{
+  "date":"2026-09-17",
+  "session":"pm",
+  "time":"18:00",
+  "level":"A2+ → B1",
+  "day":27,
+  "duration_minutes":55,
+  "title":"18:00｜复习 + 应用：临时变化时把事情处理清楚",
+  "write_status":"lesson_complete",
+  "new_words":["begini","lakukan","kaget"],
+  "vocab":[
+    {"word":"begini","display":"begini","audio_text":"begini","cn":"这样；像这样","en":"like this; this way","root":"begini","root_cn":"这样","formation":"begini 是基本指示表达。高频结构：begini saja（就这样吧）、kalau begini（如果这样）、caranya begini（方法是这样）、jangan begini（别这样）。","example":"Kalau begini, kita perlu bagi tugas lagi.","example_cn":"如果这样，我们需要重新分一下任务。","synonym_note":"begini 指靠近说话者或眼前这种情况；begitu 更偏‘那样’，也常指前面提过的情况。","usage_note":"真正新词；来自 runtime.new_pool，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"lakukan","display":"lakukan","audio_text":"lakukan","cn":"做；执行","en":"do; carry out","root":"laku","root_cn":"行为；做法","formation":"laku + -kan → lakukan，常作为 melakukan 的命令/省略形式。高频结构：lakukan sekarang（现在做）、lakukan dengan benar（正确地做）、lakukan lagi（再做一次）。","example":"Kalau sudah jelas, lakukan bagian yang paling penting dulu.","example_cn":"如果已经清楚了，就先做最重要的部分。","synonym_note":"lakukan 强调执行某个动作或任务；kerjakan 更常用于‘做某项工作/作业’，做事对象更具体。","usage_note":"真正新词；来自 runtime.new_pool，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"kaget","display":"kaget","audio_text":"kaget","cn":"吓一跳；吃惊","en":"surprised; startled","root":"kaget","root_cn":"吃惊；受惊","formation":"kaget 是高频口语基本词。常见：kaget banget（非常吃惊）、bikin kaget（让人吓一跳）、jangan kaget（别吃惊）、aku kaget（我吓了一跳）。","example":"Aku sempat kaget waktu jadwalnya tiba-tiba berubah.","example_cn":"时间突然改变时，我一度吓了一跳。","synonym_note":"kaget 是自然高频口语；terkejut 更标准、较正式，也表示惊讶或受惊。","usage_note":"真正新词；来自 runtime.new_pool 与 runtime.oral_new_pool；本晚口语新词配额。","source_group":"new","is_new":true,"is_oral_new":true},
+    {"word":"ngurus","display":"ngurus","audio_text":"ngurus","cn":"处理；办理；照管","en":"handle; take care of","root":"urus","root_cn":"处理；照管","formation":"ngurus 是 mengurus 的高频口语形式。常见 ngurus dokumen（办文件）、ngurus kerjaan（处理工作）、ngurus sendiri（自己处理）。","example":"Aku ngurus dokumen ini, kamu cek bagian terakhir.","example_cn":"我来处理这份文件，你检查最后一部分。","synonym_note":"ngurus 很口语；mengurus 是标准形式；menangani 更偏正式的‘处理、应对某个事项/问题’。","usage_note":"重点复习；来自 runtime.review_pool，priority 1。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"layak","display":"layak","audio_text":"layak","cn":"值得；合适；够资格","en":"worthy; suitable; eligible","root":"layak","root_cn":"值得；合适","formation":"layak 是基本形容词。常见 layak dipakai（值得/适合使用）、layak dicoba（值得尝试）、tidak layak（不合适）、layak mendapat...（有资格得到……）。","example":"Solusi ini layak dicoba karena lebih sederhana.","example_cn":"这个方案值得尝试，因为更简单。","synonym_note":"layak 强调达到应有标准、值得或够资格；pantas 更常表达‘合适、应该’，也可涉及礼貌和身份。","usage_note":"重点复习；来自 runtime.review_pool，priority 1。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"kelabakan","display":"kelabakan","audio_text":"kelabakan","cn":"手忙脚乱；忙乱","en":"flustered; overwhelmed","root":"kelabakan","root_cn":"手忙脚乱；慌着应付","formation":"kelabakan 是固定基本形式。常见 jadi kelabakan（变得手忙脚乱）、bikin kelabakan（弄得人手忙脚乱）、sampai kelabakan（忙乱到不行）。","example":"Kalau semua datang bersamaan, tim bisa kelabakan.","example_cn":"如果所有事情同时来，团队可能会手忙脚乱。","synonym_note":"kelabakan 强调突然事情太多而慌乱；kewalahan 更强调任务量超过能力、应付不过来。","usage_note":"重点复习；来自 runtime.review_pool，priority 1。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"nyebelin","display":"nyebelin","audio_text":"nyebelin","cn":"烦人；让人恼火","en":"annoying","root":"sebel","root_cn":"烦；恼火","formation":"nyebelin 是 menyebalkan 的高频口语形式。常见 nyebelin banget（特别烦人）、agak nyebelin（有点烦）、bikin nyebelin 不如 bikin sebel 自然。","example":"Perubahan mendadak memang nyebelin, tapi tetap harus kita urus.","example_cn":"临时变化确实很烦，但我们还是得处理。","synonym_note":"nyebelin 形容‘某人/某事很烦人’；sebel 更常说自己的感受‘我很烦/恼火’；menyebalkan 更标准。","usage_note":"重点复习；来自 runtime.review_pool，priority 1。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"ngelarin","display":"ngelarin","audio_text":"ngelarin","cn":"把事情做完；收尾","en":"finish; wrap up","root":"kelar","root_cn":"完成；结束","formation":"今天 08:00 已教；ngelarin 是 kelar 的口语派生，较标准可用 menyelesaikan。常见 ngelarin kerjaan（把工作做完）。","example":"Kita bagi tugas supaya bisa ngelarin semuanya sebelum malam.","example_cn":"我们分一下任务，好在晚上前全部做完。","synonym_note":"ngelarin 很口语；menyelesaikan 更标准；beresin 还带‘处理妥、整理好’的感觉。","usage_note":"今天08:00已教；应用复现。当前仍为 active 已教词。","source_group":"application","is_new":false,"is_oral_new":false},
+    {"word":"kebetulan","display":"kebetulan","audio_text":"kebetulan","cn":"碰巧；正好","en":"coincidentally; happen to","root":"betul","root_cn":"对；正确","formation":"ke- + betul + -an → kebetulan，表示事情恰好发生。常见 kebetulan ada waktu（正好有时间）、kebetulan ketemu（碰巧遇到）。","example":"Kebetulan aku masih ada waktu, jadi bisa bantu ngurus bagian ini.","example_cn":"正好我还有时间，所以可以帮忙处理这部分。","synonym_note":"kebetulan 表示‘碰巧、正好’；pas 也可说‘正好’，但更口语且还可表示尺寸/时间合适。","usage_note":"应用复现；近期已教且仍在 runtime.review_pool。","source_group":"application","is_new":false,"is_oral_new":false},
+    {"word":"menentukan","display":"menentukan","audio_text":"menentukan","cn":"确定；决定","en":"determine; decide","root":"tentu","root_cn":"确定；一定","formation":"meN- + tentu + -kan → menentukan，表示确定、决定某事。常见 menentukan waktu（确定时间）、menentukan pilihan（做出选择）、menentukan arah（确定方向）。","example":"Kita perlu menentukan siapa yang ngurus bagian terakhir.","example_cn":"我们需要确定谁来处理最后一部分。","synonym_note":"menentukan 强调把时间、方向、选择等确定下来；memutuskan 更强调经过考虑后‘作出决定’。","usage_note":"应用复现；近期已教且仍在 runtime.review_pool。","source_group":"application","is_new":false,"is_oral_new":false}
+  ],
+  "reading":{"title":"Rencana Mendadak Berubah","text":"Sore ini rencana kerja tiba-tiba berubah dan aku sempat kaget. Kalau begini, kami tidak boleh kelabakan. Aku langsung menentukan bagian yang paling penting, lalu bilang kepada tim untuk lakukan itu dulu. Satu rekan ngurus dokumen, sementara yang lain membantu ngelarin laporan. Perubahan mendadak memang agak nyebelin, tetapi kebetulan semua orang masih punya waktu. Kami juga melihat solusi baru yang layak dicoba karena caranya lebih sederhana. Setelah tugas dibagi dengan jelas, pekerjaan jadi lebih mudah dan tidak ada orang yang harus mengerjakan semuanya sendiri. Akhirnya kami bisa menyelesaikan pekerjaan sebelum malam tanpa terlalu banyak masalah.","cn":"今天傍晚工作计划突然改变，我一度很吃惊。遇到这种情况，我们不能手忙脚乱。我马上确定最重要的部分，然后告诉团队先做那一项。一位同事处理文件，其他人帮忙完成报告。临时变化确实有点烦，不过正好大家还有时间。我们还发现一个值得尝试的新方案，因为方法更简单。任务分清楚以后，工作变得更容易，也不需要某一个人独自承担所有事情。最后我们在晚上之前顺利完成了工作，没有出现太多问题。"},
+  "dialogue":{"title":"工作口语｜计划突然变了怎么办","lines":[
+    {"speaker":"A","id":"Aku kaget, jadwalnya tiba-tiba berubah.","cn":"我吓了一跳，时间突然变了。"},
+    {"speaker":"B","id":"Kalau begini, jangan kelabakan dulu. Kita tentukan yang paling penting.","cn":"这样的话先别慌，我们先确定最重要的事情。"},
+    {"speaker":"A","id":"Oke. Aku ngurus dokumen, kamu bantu ngelarin laporan ya.","cn":"好。我处理文件，你帮忙把报告做完。"},
+    {"speaker":"B","id":"Boleh. Kebetulan aku masih ada waktu.","cn":"可以，正好我还有时间。"},
+    {"speaker":"A","id":"Menurutku cara ini layak dicoba.","cn":"我觉得这个方法值得试试。"},
+    {"speaker":"B","id":"Iya. Perubahannya memang nyebelin, tapi lakukan yang bisa kita lakukan dulu.","cn":"对。变化确实挺烦，但我们先做现在能做的。"}
+  ]},
+  "rewrite":[
+    {"task":"中文→印尼语：如果这样，我们先做最重要的部分。","reference_answer":"Kalau begini, kita lakukan bagian yang paling penting dulu.","reference_cn":"如果这样，我们先做最重要的部分。"},
+    {"task":"中文→印尼语：我刚才真的吓了一跳。","reference_answer":"Aku tadi benar-benar kaget.","reference_cn":"我刚才真的吓了一跳。"},
+    {"task":"改写：把 Tim sangat sibuk. 改成‘如果所有事情同时来，团队会手忙脚乱。’","reference_answer":"Kalau semua datang bersamaan, tim akan kelabakan.","reference_cn":"如果所有事情同时来，团队会手忙脚乱。"},
+    {"task":"主动回忆：用 ngurus、ngelarin、layak 说一句工作场景的话。","reference_answer":"Aku ngurus dokumennya dulu, lalu kita ngelarin laporan dengan cara yang paling layak.","reference_cn":"我先处理文件，然后我们用最合适的方式把报告做完。"}
+  ],
+  "daily_test":{"title":"当日小测 · 5–8分钟","items":[
+    {"type":"choice","prompt":"哪一个词最适合：Aku ___ waktu jadwalnya tiba-tiba berubah.","options":["kaget","layak","begini"],"answer_index":0,"answer":"kaget","explain":"kaget 表示‘吃惊、吓一跳’。"},
+    {"type":"choice","prompt":"哪一个词最接近‘手忙脚乱’？","options":["kelabakan","menentukan","lakukan"],"answer_index":0,"answer":"kelabakan","explain":"kelabakan 强调突然事情太多而忙乱。"},
+    {"type":"choice","prompt":"ngurus 在日常工作中最自然的意思是什么？","options":["处理；办理","吃惊","值得"],"answer_index":0,"answer":"处理；办理","explain":"ngurus 是 mengurus 的高频口语形式。"},
+    {"type":"fill","prompt":"填空：Kalau ___, kita perlu bagi tugas lagi.（这样）","answer":"begini","hint_cn":"这样","explain":"begini 表示‘这样、像这样’。"},
+    {"type":"fill","prompt":"填空：Solusi ini ___ dicoba karena lebih sederhana.（值得/合适）","answer":"layak","hint_cn":"值得；合适","explain":"layak dicoba 是‘值得尝试’的自然搭配。"},
+    {"type":"order","prompt":"按照中文排成自然的印尼语句子：我们需要确定谁来处理这份文件。","tokens":["Kita","perlu","menentukan","siapa yang","ngurus","dokumen ini"],"answer":"Kita perlu menentukan siapa yang ngurus dokumen ini.","answer_cn":"我们需要确定谁来处理这份文件。","explain":"menentukan + siapa yang... 用来确定由谁负责；ngurus 是自然口语。"}
+  ],"self_check":["我能主动用 begini 表达‘这样/这种情况’。","我能区分 kaget 与较标准的 terkejut。","我能在工作场景主动说 ngurus、ngelarin 和 menentukan。","我能区分 layak（值得/够标准）和 pantas（合适/应该）。"]},
+  "review":{"title":"最后5分钟复盘","steps":["不看中文，依次说出 begini、lakukan、kaget 的意思，并各造一个短句。","快速对比：ngurus=mengurus；nyebelin=menyebalkan；kaget=terkejut，说出口语与标准形式。","用 kelabakan、layak 各说一句工作场景句子。","复现应用词：用 ngelarin、kebetulan、menentukan 连成2句自然口语。","最后口头总结：Kalau rencana tiba-tiba berubah, apa yang akan kamu lakukan? 至少使用3个本晚核心词。"]}
+}
