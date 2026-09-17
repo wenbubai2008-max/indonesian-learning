@@ -3,8 +3,8 @@
   async function boot(){
     try{
       window.VOCAB_UPGRADE_GZ='';
-      await load('data/vocab-upgrade-gz-01.js?v=20260917-finalcard4');
-      await load('data/vocab-upgrade-gz-02.js?v=20260917-finalcard4');
+      await load('data/vocab-upgrade-gz-01.js?v=20260917-finalcard5');
+      await load('data/vocab-upgrade-gz-02.js?v=20260917-finalcard5');
       if(!window.VOCAB_UPGRADE_GZ)throw new Error('词汇页面升级数据为空');
       if(typeof DecompressionStream==='undefined')throw new Error('当前浏览器版本过旧，请升级 Chrome 或 Safari 后使用新版词汇页面');
       var bin=atob(window.VOCAB_UPGRADE_GZ),bytes=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
@@ -14,11 +14,11 @@
       await load(url);
 
       /* BIPA 最终卡片：小圆圈 S/A/B + 单词；翻卡只显示中文/英文/词根。 */
-      await load('data/vocab-bipa-final-20260913.js?v=20260917-finalcard4');
+      await load('data/vocab-bipa-final-20260913.js?v=20260917-finalcard5');
       /* 桌面端筛选工具栏：只保留一个“全部分级”，控件缩窄但字体保持原字号。 */
-      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-finalcard4');
+      await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-finalcard5');
       /* 9/13 已确认的翻卡布局：圆圈+单词整体上移，释义固定在下方不重叠。 */
-      await load('data/vocab-bipa-flip-layout-fix-20260913.js?v=20260917-finalcard4');
+      await load('data/vocab-bipa-flip-layout-fix-20260913.js?v=20260917-finalcard5');
 
       setTimeout(function(){URL.revokeObjectURL(url)},1000);
     }catch(e){console.error('[vocab upgrade]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面升级加载失败，请刷新页面重试';}
