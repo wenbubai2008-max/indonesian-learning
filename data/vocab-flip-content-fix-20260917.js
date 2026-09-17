@@ -143,10 +143,15 @@
     if(m&&!m.textContent.trim())m.innerHTML=meaningHtml();
   }
 
-  // 统一 renderer 每次换词后重新标记 core/BIPA，使未翻卡和翻卡状态使用同一固定位置。
+  /*
+   * 关键：换词时 renderer 会整块替换 vocabBox。
+   * MutationObserver 本身在浏览器绘制前的微任务阶段执行，所以这里必须同步 syncCard；
+   * 不能再 setTimeout(0)，否则浏览器可能先画一帧“未定位的卡片”，下一帧再移动，表现成闪一下。
+   */
   const box=$('vocabBox');
   if(box){
-    new MutationObserver(function(){setTimeout(syncCard,0)}).observe(box,{childList:true,subtree:false});
+    new MutationObserver(function(){syncCard()}).observe(box,{childList:true,subtree:false});
   }
-  [0,80,250,700].forEach(ms=>setTimeout(syncCard,ms));
+  syncCard();
+  [80,250,700].forEach(ms=>setTimeout(syncCard,ms));
 })();
