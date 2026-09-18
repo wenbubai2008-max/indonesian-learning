@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-18",
+  "session": "am",
+  "day": 28,
+  "level": "A2+→B1",
+  "vocab": [
+    {"word":"alam","display":"alam","audio_text":"alam","cn":"自然","en":"nature","root":"alam","root_cn":"自然","formation":"常见搭配：alam sekitar（周围环境）、sumber daya alam（自然资源）。","example":"Aku suka tempat yang dekat dengan alam.","example_cn":"我喜欢亲近自然的地方。","synonym_note":"lingkungan 更强调‘环境’，alam 更强调自然界。","is_oral_new":false},
+    {"word":"persen","display":"persen","audio_text":"persen","cn":"百分比","en":"percent","root":"persen","root_cn":"百分比","formation":"数字后直接接 persen，如 20 persen；persentase 表示‘百分比/比例’这一概念。","example":"Penjualan naik sepuluh persen bulan ini.","example_cn":"这个月销售额上涨了百分之十。","synonym_note":"persen 用在具体数字后；persentase 更像名词‘百分比、比例’。","is_oral_new":false},
+    {"word":"calon","display":"calon","audio_text":"calon","cn":"候选人","en":"candidate / prospective","root":"calon","root_cn":"候选；准……","formation":"可放在身份前：calon karyawan（准员工）、calon suami（准丈夫）、calon pemimpin（候选领导人）。","example":"Ada tiga calon untuk posisi itu.","example_cn":"那个职位有三名候选人。","synonym_note":"kandidat 也表示候选人，calon 在日常表达中用途更广，还可表示‘未来的/准……’。","is_oral_new":false},
+    {"word":"bangun","display":"bangun","audio_text":"bangun","cn":"醒来 / 起床","en":"wake up / get up","root":"bangun","root_cn":"醒；起；建","formation":"bangun tidur=睡醒/起床；注意 membangun 常表示‘建设、建立’。","example":"Aku biasanya bangun pukul enam pagi.","example_cn":"我通常早上六点起床。","synonym_note":"bangun 强调醒来或起身；bangkit 更常指站起、振作或崛起。","is_oral_new":false},
+    {"word":"sejarah","display":"sejarah","audio_text":"sejarah","cn":"历史 / 故事","en":"history","root":"sejarah","root_cn":"历史","formation":"常见搭配：sejarah Indonesia（印尼历史）、dalam sejarah（在历史上）。","example":"Aku mulai tertarik membaca sejarah Indonesia.","example_cn":"我开始对阅读印尼历史感兴趣。","synonym_note":"cerita 是‘故事’，sejarah 主要指真实历史、历史记录。","is_oral_new":false},
+    {"word":"bebas","display":"bebas","audio_text":"bebas","cn":"自由的 / 免费的","en":"free / unrestricted","root":"bebas","root_cn":"自由；免于","formation":"bebas memilih=自由选择；bebas biaya=免收费；bebas dari=免受……。","example":"Kamu bebas memilih cara yang paling cocok.","example_cn":"你可以自由选择最适合的方法。","synonym_note":"gratis 只表示‘免费’，bebas 的核心是‘不受限制/免于’，特定搭配中才有免费含义。","is_oral_new":false},
+    {"word":"pikiran","display":"pikiran","audio_text":"pikiran","cn":"思想","en":"thought / mind","root":"pikir","root_cn":"想；思考","formation":"pikir + -an → pikiran，表示想法、念头或心思；常见 banyak pikiran（心事多）。","example":"Malam hari kadang pikiranku masih penuh.","example_cn":"晚上有时我的脑子里还是很多事情。","synonym_note":"pendapat 偏‘意见/观点’，pikiran 更广，可指念头、思想或心思。","is_oral_new":false},
+    {"word":"tenang","display":"tenang","audio_text":"tenang","cn":"冷静、安静","en":"calm / quiet","root":"tenang","root_cn":"平静","formation":"tetap tenang=保持冷静；tempat yang tenang=安静的地方；menenangkan=使平静。","example":"Coba tetap tenang saat ada masalah.","example_cn":"遇到问题时尽量保持冷静。","synonym_note":"diam 是‘不说话/静止’，tenang 强调情绪或环境平静。","is_oral_new":false},
+    {"word":"kenalan","display":"kenalan","audio_text":"kenalan","cn":"认识；熟人","en":"get acquainted / acquaintance","root":"kenal","root_cn":"认识；熟悉","formation":"kenalan yuk=认识一下吧；teman kenalan=认识的人。口语中既可表示认识一下，也可指熟人。","example":"Kami kenalan lewat teman kantor.","example_cn":"我们是通过同事认识的。","synonym_note":"口语常用 kenalan；berkenalan 更完整、稍正式，表示‘互相认识’。","is_oral_new":true},
+    {"word":"pas","display":"pas","audio_text":"pas","cn":"正好；合适","en":"just right / exactly","root":"pas","root_cn":"正好；合适","formation":"pas banget=正正好；ukurannya pas=尺寸合适；pas waktu itu=正好在那个时候。","example":"Ukuran baju ini pas banget buat aku.","example_cn":"这件衣服的尺寸对我来说正合适。","synonym_note":"口语里 pas 很高频；tepat 更偏‘准确、恰当’，cocok 更偏‘匹配、适合’。","is_oral_new":true}
+  ],
+  "review_vocab": ["ngelarin","kebetulan","menentukan","ngurus","kelabakan"],
+  "sentences": [
+    {"text":"Kebetulan aku bangun lebih pagi, jadi sempat berjalan dekat alam.","cn":"碰巧我今天起得更早，所以有时间去自然环境附近走走。"},
+    {"text":"Kami harus menentukan calon yang paling pas untuk pekerjaan ini.","cn":"我们必须确定最适合这份工作的候选人。"},
+    {"text":"Kalau banyak pikiran, coba cari tempat yang tenang.","cn":"如果心事很多，试着找个安静的地方。"},
+    {"text":"Dia sedang ngurus laporan dan ingin ngelarin semuanya hari ini.","cn":"他正在处理报告，想今天把所有事情都做完。"},
+    {"text":"Penjualan naik lima persen, jadi tim tidak terlalu kelabakan bulan ini.","cn":"销售额上涨了5%，所以团队这个月没有那么手忙脚乱。"}
+  ],
+  "reading": {
+    "text":"Pagi ini aku bangun lebih awal dan pergi ke taman yang dekat dengan alam. Tempatnya tenang, jadi pikiranku terasa lebih ringan. Kebetulan aku bertemu seorang kenalan lama di sana. Kami berbicara tentang pekerjaan. Perusahaannya sedang mencari calon karyawan baru karena jumlah pesanan naik sekitar dua puluh persen. Dia bilang mereka harus menentukan orang yang pas agar tim tidak kelabakan. Setelah ngobrol sebentar, aku pulang. Menurutku, punya waktu bebas pada pagi hari bisa membuat hari terasa lebih teratur dan membantu kita ngelarin pekerjaan dengan kepala yang lebih jernih.",
+    "cn":"今天早上我起得比较早，去了一个亲近自然的公园。那里很安静，所以我的思绪也轻松了一些。碰巧我在那里遇到了一位老熟人。我们聊到了工作。他的公司正在招聘新员工，因为订单量上涨了大约20%。他说他们必须确定合适的人选，这样团队才不会手忙脚乱。聊了一会儿后我就回家了。我觉得早上拥有一点自由时间，会让一天更有条理，也能帮助我们用更清醒的头脑把工作做完。"
+  },
+  "quiz": [
+    {"question":"哪一个词最适合填空：Perusahaan sedang mencari ___ baru untuk posisi manajer.","options":["calon","alam","pikiran","persen"],"answer_index":0,"explain":"calon 可表示职位的候选人或未来将担任某身份的人。"},
+    {"question":"哪一个词最适合填空：Setelah rencana berubah mendadak, seluruh tim jadi ___ dan tidak tahu harus mulai dari mana.","options":["tenang","kelabakan","bebas","pas"],"answer_index":1,"explain":"kelabakan 表示因为情况突然或任务繁杂而手忙脚乱，是今天复现的已教词。"},
+    {"question":"‘这双鞋的尺寸正合适’中，‘正合适’最自然的口语词是哪一个？","options":["sejarah","pas","bangun","kenalan"],"answer_index":1,"explain":"口语里 pas 常表示尺寸、时间、数量等‘正好、合适’。"}
+  ],
+  "output": {
+    "task":"用今天的新词写3—4句印尼语：说你通常几点起床、什么环境让你感觉平静，以及最近有没有一件需要尽快做完的事情。尽量使用 bangun、tenang、pikiran，并自然复现 ngelarin。",
+    "reference_answer":"Aku biasanya bangun pukul enam pagi. Kalau banyak pikiran, aku suka pergi ke tempat yang tenang. Suasana yang dekat dengan alam bikin aku lebih santai. Hari ini aku juga harus ngelarin beberapa pekerjaan sebelum sore.",
+    "reference_cn":"我通常早上六点起床。如果心事很多，我喜欢去安静的地方。亲近自然的环境会让我更放松。今天下午之前我还必须把几项工作做完。"
+  },
+  "review": [
+    "区分 pas、tepat、cocok：pas 常用于口语中的‘正好’，tepat 偏准确，cocok 偏匹配适合。",
+    "记住 calon 不只表示‘候选人’，还可以放在身份前表示‘准……/未来的……’。",
+    "主动复现：bangun → tenang → pikiran → ngelarin，尝试不用中文提示连续说出自己的早晨状态。"
+  ]
+}
