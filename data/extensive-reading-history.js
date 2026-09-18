@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{id:'er-20260917-lrt-jakarta-rp8',date:'2026-09-17',title:'LRT Kelapa Gading–Manggarai Bisa Dicoba dengan Tarif Rp8',title_cn:'Kelapa Gading–Manggarai LRT 可用 8 印尼盾体验',path:'data/extensive-reading-history/2026-09-17.js'},
 {id:'er-20260916-transjakarta-klg-gratis',date:'2026-09-16',title:'Kartu Layanan Gratis Transjakarta Tidak Boleh Dijual',title_cn:'Transjakarta 免费乘车卡不能买卖',path:'data/extensive-reading-history/2026-09-16.js'},
 {id:'er-20260915-kai-paylater-waspada',date:'2026-09-15',title:'KAI Ingatkan Penumpang Hati-hati Saat Beli Tiket dengan PayLater',title_cn:'KAI 提醒乘客使用 PayLater 买票时警惕诈骗',path:'data/extensive-reading-history/2026-09-15.js'},
 {id:'er-20260914-lrt-layanan',date:'2026-09-14',title:'LRT Jabodebek Terus Menambah Layanan untuk Penumpang',title_cn:'LRT Jabodebek 持续改善乘客服务',path:'data/extensive-reading-history/2026-09-14-lrt-layanan.js'},
