@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-18T07:35:41.224Z",
+  "updated_at": "2026-09-18T15:00:42.957Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -128,16 +128,16 @@
     "kebuang": {
       "word": "kebuang",
       "status": "mastered",
-      "updated_at": "2026-09-17T15:28:28.313Z",
+      "updated_at": "2026-09-18T15:00:28.281Z",
       "display": "kebuang",
       "cn": "被浪费掉；白白浪费",
       "root": "buang",
-      "last_review": "2026-09-17T15:28:28.289Z",
+      "last_review": "2026-09-18T15:00:28.256Z",
       "last_mastered": "2026-09-12T14:13:50.580Z",
       "source": "阅读陌生词",
       "reasons": [],
       "wrong_count": 0,
-      "right_streak": 4
+      "right_streak": 5
     },
     "mepet": {
       "word": "mepet",
@@ -598,9 +598,10 @@
     "nyaris": {
       "word": "nyaris",
       "status": "active",
-      "updated_at": "2026-09-17T08:52:45.247Z",
+      "updated_at": "2026-09-18T15:00:21.707Z",
       "display": "nyaris",
       "cn": "差点、几乎",
+      "last_review": "2026-09-18T15:00:21.682Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -608,7 +609,7 @@
         "bipa_secondary_dont"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "bentrok": {
       "word": "bentrok",
@@ -879,17 +880,17 @@
     "hasil": {
       "word": "hasil",
       "status": "active",
-      "updated_at": "2026-09-18T07:34:00.753Z",
+      "updated_at": "2026-09-18T15:00:24.176Z",
       "display": "hasil",
       "cn": "结果；成果",
       "root": "hasil",
       "root_cn": "结果；成果",
-      "last_review": "2026-09-18T07:34:00.735Z",
+      "last_review": "2026-09-18T15:00:24.147Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "menarik": {
       "word": "menarik",
@@ -1260,17 +1261,17 @@
     "susah": {
       "word": "susah",
       "status": "active",
-      "updated_at": "2026-09-14T09:52:16.973Z",
+      "updated_at": "2026-09-18T15:00:31.961Z",
       "display": "susah",
       "cn": "难；费劲；麻烦（口语高频）",
       "root": "susah",
       "root_cn": "困难；费劲",
-      "last_review": "2026-09-17T06:37:31.871Z",
+      "last_review": "2026-09-18T15:00:31.945Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "sedangkan": {
       "word": "sedangkan",
@@ -1669,17 +1670,17 @@
     "yakin": {
       "word": "yakin",
       "status": "active",
-      "updated_at": "2026-09-14T09:52:16.973Z",
+      "updated_at": "2026-09-18T15:00:15.596Z",
       "display": "yakin",
       "cn": "确信；确定；有把握",
       "root": "yakin",
       "root_cn": "确信；相信",
-      "last_review": "2026-09-15T14:56:32.490Z",
+      "last_review": "2026-09-18T15:00:15.547Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "selanjutnya": {
       "word": "selanjutnya",
@@ -19687,17 +19688,17 @@
     "malah": {
       "word": "malah",
       "status": "active",
-      "updated_at": "2026-09-12T16:57:22.695Z",
+      "updated_at": "2026-09-18T15:00:18.325Z",
       "display": "malah",
       "cn": "反而；却",
       "root": "malah",
       "root_cn": "反而；却",
-      "last_review": "2026-09-17T06:37:22.391Z",
+      "last_review": "2026-09-18T15:00:18.297Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "namun": {
       "word": "namun",
