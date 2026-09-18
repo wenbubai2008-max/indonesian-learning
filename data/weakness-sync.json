@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-18T07:19:47.183Z",
+  "updated_at": "2026-09-18T07:25:22.774Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -776,15 +776,16 @@
     "mudah": {
       "word": "mudah",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-18T07:24:27.760Z",
       "display": "mudah",
       "cn": "容易",
       "root": "mudah",
+      "last_review": "2026-09-18T07:24:27.736Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "negeri": {
       "word": "negeri",
@@ -1045,14 +1046,15 @@
     "jenis": {
       "word": "jenis",
       "status": "active",
-      "updated_at": "2026-09-14T09:41:22.615Z",
+      "updated_at": "2026-09-18T07:25:11.857Z",
       "display": "jenis",
       "cn": "类型",
+      "last_review": "2026-09-18T07:25:11.830Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menteri": {
       "word": "menteri",
@@ -1068,13 +1070,14 @@
     "alam": {
       "word": "alam",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-18T07:24:25.455Z",
       "display": "alam",
+      "last_review": "2026-09-18T07:24:25.433Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "asal": {
       "word": "asal",
@@ -1164,14 +1167,15 @@
     "acara": {
       "word": "acara",
       "status": "active",
-      "updated_at": "2026-09-14T14:09:05.686Z",
+      "updated_at": "2026-09-18T07:23:40.337Z",
       "display": "acara",
       "cn": "程序",
+      "last_review": "2026-09-18T07:23:40.321Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "berarti": {
       "word": "berarti",
@@ -1501,13 +1505,14 @@
     "calon": {
       "word": "calon",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-18T07:23:43.076Z",
       "display": "calon",
+      "last_review": "2026-09-18T07:23:43.049Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "penasaran": {
       "word": "penasaran",
@@ -1592,15 +1597,16 @@
     "butuh": {
       "word": "butuh",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-18T07:25:05.280Z",
       "display": "butuh",
       "cn": "需要",
       "root": "butuh",
+      "last_review": "2026-09-18T07:25:05.255Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pukul": {
       "word": "pukul",
@@ -2793,14 +2799,14 @@
     "mengenal": {
       "word": "mengenal",
       "status": "active",
-      "updated_at": "2026-09-17T15:29:04.315Z",
+      "updated_at": "2026-09-18T07:24:57.564Z",
       "display": "mengenal",
-      "last_review": "2026-09-17T15:29:04.297Z",
+      "last_review": "2026-09-18T07:24:57.536Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "basah": {
       "word": "basah",
@@ -12882,13 +12888,13 @@
     "khawatir": {
       "word": "khawatir",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:57.335Z",
+      "updated_at": "2026-09-18T07:24:18.889Z",
       "display": "khawatir",
-      "last_review": "2026-09-15T14:57:41.111Z",
+      "last_review": "2026-09-18T07:24:18.860Z",
       "last_mastered": "2026-09-12T14:13:57.326Z",
       "reasons": [],
       "wrong_count": 0,
-      "right_streak": 4
+      "right_streak": 5
     },
     "kayu": {
       "word": "kayu",
@@ -18823,15 +18829,16 @@
     "kadang": {
       "word": "kadang",
       "status": "active",
-      "updated_at": "2026-09-12T16:53:11.253Z",
+      "updated_at": "2026-09-18T07:23:57.055Z",
       "display": "kadang",
       "cn": "有时",
       "root": "kadang",
+      "last_review": "2026-09-18T07:23:57.037Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "selalu": {
       "word": "selalu",
