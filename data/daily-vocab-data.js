@@ -1436,9 +1436,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-18 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -1449,11 +1449,12 @@ window.DAILY_VOCAB_DB = [
       "2026-09-05",
       "2026-09-12",
       "2026-09-13",
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-18"
     ],
     "root_cn": "对；正确",
-    "example": "Kebetulan aku masih ada waktu, jadi bisa bantu ngurus bagian ini.",
-    "example_cn": "正好我还有时间，所以可以帮忙处理这部分。"
+    "example": "Kebetulan aku masih ada waktu, jadi bisa bantu.",
+    "example_cn": "正好我还有时间，所以可以帮忙。"
   },
   {
     "word": "nyari",
@@ -3064,22 +3065,27 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "nyaris",
     "cn": "差点、几乎",
-    "en": "",
+    "en": "nearly; almost",
     "root": "",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-08-29 19:00",
+    "last_seen": "2026-09-18 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-29"
-    ]
+      "2026-08-29",
+      "2026-09-18"
+    ],
+    "example": "Aku nyaris terlambat karena jalan tadi ramai.",
+    "example_cn": "因为刚才路上很拥挤，我差点迟到。"
   },
   {
     "word": "terpaksa",
@@ -3112,9 +3118,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-18 18:00",
     "sessions": [
       "19:00",
       "18:00"
@@ -3122,11 +3128,12 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-29",
       "2026-09-12",
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-18"
     ],
     "root_cn": "确定；一定",
-    "example": "Kita perlu menentukan siapa yang ngurus bagian terakhir.",
-    "example_cn": "我们需要确定谁来处理最后一部分。"
+    "example": "Kita perlu menentukan waktu yang pas untuk mulai.",
+    "example_cn": "我们需要确定一个合适的开始时间。"
   },
   {
     "word": "menangani",
@@ -5895,20 +5902,23 @@ window.DAILY_VOCAB_DB = [
     "en": "awkwardly incomplete; halfway; might as well finish",
     "root": "tanggung",
     "root_cn": "承担；未完全结束（相关语境）",
-    "example": "Udah nanggung, sekalian beresin sekarang aja.",
-    "example_cn": "都已经做到这个份上了，干脆现在顺便弄完吧。",
+    "example": "Sudah nanggung, kita selesaikan bagian ini dulu.",
+    "example_cn": "都做到这一步了，我们先把这部分完成吧。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-18 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-18"
     ]
   },
   {
@@ -7119,20 +7129,23 @@ window.DAILY_VOCAB_DB = [
     "en": "listen closely; follow attentively",
     "root": "simak",
     "root_cn": "仔细听；留意",
-    "example": "Aku tadi nyimak dari awal, jadi kurang lebih sudah ngerti konteksnya.",
-    "example_cn": "我刚才从头一直认真听，所以大概已经明白背景了。",
+    "example": "Coba nyimak dulu sampai dia selesai bicara.",
+    "example_cn": "先认真听，等他说完。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-18 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-11"
+      "2026-09-11",
+      "2026-09-18"
     ]
   },
   {
@@ -7330,20 +7343,23 @@ window.DAILY_VOCAB_DB = [
     "en": "mention; touch on; offend",
     "root": "singgung",
     "root_cn": "触及；提到",
-    "example": "Tadi aku cuma nyinggung soal deadline, bukan bermaksud nyalahin siapa-siapa.",
-    "example_cn": "我刚才只是提了一下截止时间，不是想怪任何人。",
+    "example": "Tadi aku cuma nyinggung soal jadwal, bukan mau bikin dia tidak nyaman.",
+    "example_cn": "刚才我只是提到日程，不是想让他不舒服。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-18 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-12"
+      "2026-09-12",
+      "2026-09-18"
     ]
   },
   {
@@ -9197,18 +9213,109 @@ window.DAILY_VOCAB_DB = [
     "en": "just right / exactly",
     "root": "pas",
     "root_cn": "正好；合适",
-    "example": "Ukuran baju ini pas banget buat aku.",
-    "example_cn": "这件衣服的尺寸对我来说正合适。",
+    "example": "Waktunya pas, jadi kita bisa mulai sekarang.",
+    "example_cn": "时间正合适，所以我们现在可以开始。",
     "categories": [
       "每日学习",
       "08:00",
+      "口语",
+      "18:00"
+    ],
+    "times_seen": 2,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 18:00",
+    "sessions": [
+      "08:00",
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "usah",
+    "cn": "努力；费心；尝试",
+    "en": "effort; bother; try",
+    "root": "usaha",
+    "root_cn": "努力；事业；尝试",
+    "example": "Tidak usah buru-buru, kita kerjakan satu per satu.",
+    "example_cn": "不用着急，我们一件一件做。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 18:00",
+    "last_seen": "2026-09-18 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "sejumlah",
+    "cn": "若干；一定数量的",
+    "en": "a number of; some",
+    "root": "jumlah",
+    "root_cn": "数量；总数",
+    "example": "Sejumlah rekan sudah datang lebih awal.",
+    "example_cn": "有一些同事已经提前到了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 18:00",
+    "last_seen": "2026-09-18 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "pembangunan",
+    "cn": "建设；发展；建造过程",
+    "en": "development; construction",
+    "root": "bangun",
+    "root_cn": "建；起；醒",
+    "example": "Pembangunan jalan itu hampir selesai.",
+    "example_cn": "那条道路的建设快完成了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 18:00",
+    "last_seen": "2026-09-18 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "jomblo",
+    "cn": "单身；没有对象",
+    "en": "single; unattached",
+    "root": "jomblo",
+    "root_cn": "单身",
+    "example": "Dia masih jomblo dan sekarang lebih fokus pada pekerjaan.",
+    "example_cn": "他还是单身，现在更专注于工作。",
+    "categories": [
+      "每日学习",
+      "18:00",
       "口语"
     ],
     "times_seen": 1,
-    "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-09-18 08:00",
+    "first_seen": "2026-09-18 18:00",
+    "last_seen": "2026-09-18 18:00",
     "sessions": [
-      "08:00"
+      "18:00"
     ],
     "dates": [
       "2026-09-18"
