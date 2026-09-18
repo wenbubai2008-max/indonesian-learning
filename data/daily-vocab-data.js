@@ -8991,5 +8991,227 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-17"
     ]
+  },
+  {
+    "word": "alam",
+    "cn": "自然",
+    "en": "nature",
+    "root": "alam",
+    "root_cn": "自然",
+    "example": "Aku suka tempat yang dekat dengan alam.",
+    "example_cn": "我喜欢亲近自然的地方。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "persen",
+    "cn": "百分比",
+    "en": "percent",
+    "root": "persen",
+    "root_cn": "百分比",
+    "example": "Penjualan naik sepuluh persen bulan ini.",
+    "example_cn": "这个月销售额上涨了百分之十。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "calon",
+    "cn": "候选人",
+    "en": "candidate / prospective",
+    "root": "calon",
+    "root_cn": "候选；准……",
+    "example": "Ada tiga calon untuk posisi itu.",
+    "example_cn": "那个职位有三名候选人。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "bangun",
+    "cn": "醒来 / 起床",
+    "en": "wake up / get up",
+    "root": "bangun",
+    "root_cn": "醒；起；建",
+    "example": "Aku biasanya bangun pukul enam pagi.",
+    "example_cn": "我通常早上六点起床。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "sejarah",
+    "cn": "历史 / 故事",
+    "en": "history",
+    "root": "sejarah",
+    "root_cn": "历史",
+    "example": "Aku mulai tertarik membaca sejarah Indonesia.",
+    "example_cn": "我开始对阅读印尼历史感兴趣。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "bebas",
+    "cn": "自由的 / 免费的",
+    "en": "free / unrestricted",
+    "root": "bebas",
+    "root_cn": "自由；免于",
+    "example": "Kamu bebas memilih cara yang paling cocok.",
+    "example_cn": "你可以自由选择最适合的方法。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "pikiran",
+    "cn": "思想",
+    "en": "thought / mind",
+    "root": "pikir",
+    "root_cn": "想；思考",
+    "example": "Malam hari kadang pikiranku masih penuh.",
+    "example_cn": "晚上有时我的脑子里还是很多事情。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "tenang",
+    "cn": "冷静、安静",
+    "en": "calm / quiet",
+    "root": "tenang",
+    "root_cn": "平静",
+    "example": "Coba tetap tenang saat ada masalah.",
+    "example_cn": "遇到问题时尽量保持冷静。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "kenalan",
+    "cn": "认识；熟人",
+    "en": "get acquainted / acquaintance",
+    "root": "kenal",
+    "root_cn": "认识；熟悉",
+    "example": "Kami kenalan lewat teman kantor.",
+    "example_cn": "我们是通过同事认识的。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "word": "pas",
+    "cn": "正好；合适",
+    "en": "just right / exactly",
+    "root": "pas",
+    "root_cn": "正好；合适",
+    "example": "Ukuran baju ini pas banget buat aku.",
+    "example_cn": "这件衣服的尺寸对我来说正合适。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-18"
+    ]
   }
 ];
