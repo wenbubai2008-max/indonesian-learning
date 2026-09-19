@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T03:55:57.059Z",
+  "generated_at": "2026-09-19T04:00:59.123Z",
   "master_unique": 977,
   "primary_new_pool_total": 481,
   "secondary_master_unique": 342,
@@ -13,11 +13,11 @@
     "secondary_available": 340,
     "switched_at": ""
   },
-  "weak_active_total": 1460,
-  "weak_mastered_total": 865,
+  "weak_active_total": 1459,
+  "weak_mastered_total": 866,
   "daily_taught_unique": 435,
   "new_pool_total": 481,
-  "review_pool_total": 162,
+  "review_pool_total": 161,
   "oral_new_pool_total": 43,
   "rules": {
     "new_pool": "primary first; when primary has 1-9 legal words, expose them first and top up from secondary to keep the 10-word AM contract; after primary reaches 0, secondary handoff is committed and never falls back automatically",
