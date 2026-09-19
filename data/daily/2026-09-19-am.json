@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-19",
+  "session": "am",
+  "day": 29,
+  "level": "A2+→B1",
+  "vocab": [
+    {"word":"ramai","display":"ramai","audio_text":"ramai","cn":"拥挤的 / 热闹的","en":"crowded / lively","root":"ramai","root_cn":"热闹；人多","formation":"常见搭配：tempat ramai（人多的地方）、ramai pengunjung（游客很多）、suasana ramai（热闹的气氛）。","example":"Pasar itu sangat ramai pada akhir pekan.","example_cn":"那个市场周末非常热闹。","synonym_note":"ramai 强调人多、热闹；padat 更强调拥挤、密集。","is_oral_new":false},
+    {"word":"ringan","display":"ringan","audio_text":"ringan","cn":"重量轻的","en":"light / mild","root":"ringan","root_cn":"轻","formation":"除重量外也常表示程度轻：pekerjaan ringan（轻松的工作）、sakit ringan（轻症）、terasa ringan（感觉轻松）。","example":"Tas ini cukup ringan untuk dibawa ke mana-mana.","example_cn":"这个包很轻，带到哪里都方便。","synonym_note":"ringan 的反义词是 berat；也可引申为负担小、程度轻。","is_oral_new":false},
+    {"word":"berbicara","display":"berbicara","audio_text":"berbicara","cn":"说话","en":"speak / talk","root":"bicara","root_cn":"说话；谈话","formation":"ber- + bicara → berbicara；常见 berbicara dengan（和……说话）、berbicara tentang（谈论……）。","example":"Saya ingin berbicara dengan atasan tentang masalah ini.","example_cn":"我想和上司谈谈这个问题。","synonym_note":"ngobrol 更口语、偏闲聊；berbicara 更通用，可用于正式场合。","is_oral_new":false},
+    {"word":"berangkat","display":"berangkat","audio_text":"berangkat","cn":"出发","en":"depart / leave","root":"berangkat","root_cn":"出发","formation":"常见搭配：berangkat kerja（出发去上班）、berangkat pagi（早上出发）、jam berangkat（出发时间）。","example":"Besok aku harus berangkat lebih pagi.","example_cn":"明天我必须更早出发。","synonym_note":"pergi 是一般的‘去/离开’，berangkat 更强调从起点出发。","is_oral_new":false},
+    {"word":"saran","display":"saran","audio_text":"saran","cn":"建议","en":"suggestion / advice","root":"saran","root_cn":"建议","formation":"常见搭配：memberi saran（给建议）、minta saran（征求建议）、menerima saran（接受建议）。","example":"Aku butuh saran sebelum mengambil keputusan.","example_cn":"做决定之前我需要一些建议。","synonym_note":"nasihat 常带劝告、忠告意味；saran 更中性，适用于工作和日常建议。","is_oral_new":false},
+    {"word":"tegas","display":"tegas","audio_text":"tegas","cn":"坚定","en":"firm / assertive","root":"tegas","root_cn":"明确；坚定","formation":"常见搭配：bersikap tegas（态度坚定）、jawaban tegas（明确回答）、menegaskan（强调/明确说明）。","example":"Seorang pemimpin harus tegas tetapi tetap mau mendengarkan.","example_cn":"一个领导者应该坚定，但仍愿意倾听。","synonym_note":"keras 可能带强硬、严厉意味；tegas 强调立场清楚、果断。","is_oral_new":false},
+    {"word":"kehidupan","display":"kehidupan","audio_text":"kehidupan","cn":"生活 / 生命","en":"life","root":"hidup","root_cn":"活；生活","formation":"ke- + hidup + -an → kehidupan，表示生活、生命状态；常见 kehidupan sehari-hari（日常生活）。","example":"Teknologi sudah menjadi bagian dari kehidupan sehari-hari.","example_cn":"科技已经成为日常生活的一部分。","synonym_note":"hidup 可作动词或形容词‘活着’；kehidupan 是名词‘生活/生命’。","is_oral_new":false},
+    {"word":"sabar","display":"sabar","audio_text":"sabar","cn":"有耐心的","en":"patient","root":"sabar","root_cn":"耐心","formation":"常见 tetap sabar（保持耐心）、lebih sabar（更有耐心）；kesabaran 是名词‘耐心’。","example":"Kita harus sabar kalau prosesnya belum selesai.","example_cn":"如果流程还没结束，我们就得耐心一点。","synonym_note":"tenang 强调平静；sabar 强调面对等待、困难或烦恼时有耐心。","is_oral_new":false},
+    {"word":"sebel","display":"sebel","audio_text":"sebel","cn":"烦；恼火","en":"annoyed / irritated","root":"sebel","root_cn":"烦；恼火","formation":"雅加达日常口语高频：aku sebel（我很烦）、bikin sebel（让人恼火）。","example":"Aku sebel karena dia mengubah rencana tanpa bilang dulu.","example_cn":"我很烦，因为他没提前说就改了计划。","synonym_note":"口语常用 sebel；kesal 更标准，也表示恼火、不爽。","is_oral_new":true},
+    {"word":"cerewet","display":"cerewet","audio_text":"cerewet","cn":"话多；唠叨","en":"talkative / fussy / nagging","root":"cerewet","root_cn":"话多；挑剔唠叨","formation":"常见 orang cerewet（话多/爱唠叨的人）、jangan cerewet（别唠叨了）。语气取决于关系和场景。","example":"Dia baik, cuma kadang agak cerewet soal pekerjaan.","example_cn":"他人很好，只是有时在工作方面有点唠叨。","synonym_note":"banyak bicara 只是‘话多’；cerewet 常带爱念叨、挑剔的语感。","is_oral_new":true}
+  ],
+  "review_vocab": ["nentuin","ngelarin","menentukan","nangkep","nyinggung"],
+  "sentences": [
+    {"text":"Pagi ini jalan cukup ramai, jadi aku berangkat lebih awal.","cn":"今天早上路上很拥挤，所以我更早出发。"},
+    {"text":"Kalau belum bisa nentuin pilihan, coba minta saran dari orang yang kamu percaya.","cn":"如果还决定不了，可以向你信任的人征求建议。"},
+    {"text":"Dia berbicara dengan tegas, tapi aku tetap bisa nangkep maksudnya dengan baik.","cn":"他说话很坚定，但我仍然能很好地理解他的意思。"},
+    {"text":"Aku agak sebel karena pekerjaan belum selesai, tetapi aku harus sabar dan ngelarin satu per satu.","cn":"工作还没完成让我有点烦，但我得耐心地一件件做完。"},
+    {"text":"Topik itu cukup sensitif, jadi jangan nyinggung kehidupan pribadinya terlalu jauh.","cn":"那个话题比较敏感，所以不要过多触及他的私人生活。"}
+  ],
+  "reading": {
+    "text":"Hari ini aku berangkat kerja lebih pagi karena jalan biasanya ramai. Di kantor, aku harus berbicara dengan atasan tentang sebuah rencana baru. Aku belum bisa nentuin pilihan terbaik, jadi aku minta saran darinya. Dia menjelaskan pendapatnya dengan tegas, dan untungnya aku bisa nangkep maksudnya. Ada beberapa bagian yang bikin aku sebel karena prosesnya cukup lama, tetapi aku mencoba tetap sabar. Setelah itu, aku mulai ngelarin pekerjaan satu per satu. Menurutku, dalam kehidupan sehari-hari kita tidak selalu bisa menghindari masalah. Yang penting adalah tetap tenang, tidak terlalu cerewet, dan berusaha menyelesaikan apa yang bisa kita kerjakan.",
+    "cn":"今天我更早出发去上班，因为路上通常很拥挤。在办公室，我需要和上司谈一个新计划。我还无法确定最好的选择，所以向他征求建议。他很明确地解释了自己的观点，幸运的是我能听懂他的意思。有些环节因为流程很慢让我有点烦，但我尽量保持耐心。之后，我开始一件一件把工作做完。我觉得日常生活中我们不可能总是避开问题，重要的是保持冷静，不要一直抱怨唠叨，并努力完成自己能做的事情。"
+  },
+  "quiz": [
+    {"question":"哪一个词最适合填空：Besok penerbangan pagi, jadi kami harus ___ dari rumah sebelum jam lima.","options":["berangkat","ramai","sabar","ringan"],"answer_index":0,"explain":"berangkat 强调从某个地点出发，和航班、上班、旅行等场景很常见。"},
+    {"question":"如果想表达‘态度坚定、立场明确’，最合适的是哪一个词？","options":["cerewet","ringan","tegas","ramai"],"answer_index":2,"explain":"tegas 表示坚定、明确、果断，不等于 keras 那种强硬或严厉。"},
+    {"question":"哪一个词最适合填空：Aku belum bisa ___ mau pilih yang mana, jadi kasih aku waktu sebentar.","options":["nyinggung","nentuin","nangkep","ngelarin"],"answer_index":1,"explain":"nentuin 是 menentukan 的常见口语形式，表示决定、确定具体选择；这是今天复现的已教词。"}
+  ],
+  "output": {
+    "task":"用3—4句印尼语说一个你最近需要处理的事情：什么时候出发或开始、遇到了什么让你烦的地方、你向谁征求建议，以及你准备怎样耐心处理。尽量使用 berangkat、sebel、saran、sabar，并自然复现 nentuin 或 ngelarin。",
+    "reference_answer":"Besok aku harus berangkat lebih pagi untuk mengurus pekerjaan. Aku agak sebel karena masih ada beberapa hal yang belum jelas. Aku akan minta saran dari teman kerja sebelum nentuin langkah berikutnya. Setelah itu, aku harus sabar dan ngelarin semuanya satu per satu.",
+    "reference_cn":"明天我得更早出发去处理工作。有几件事情还不清楚，让我有点烦。我会在决定下一步之前向同事征求建议。之后我得耐心一点，把事情一件件做完。"
+  },
+  "review": [
+    "区分 tegas 和 keras：tegas 是立场明确、坚定，keras 更容易带强硬、严厉或猛烈的感觉。",
+    "记住 sebel 是高频口语‘烦、恼火’，较标准的对应表达是 kesal；cerewet 则偏‘话多、爱唠叨’。",
+    "主动串联：berangkat → ramai → saran → nentuin → sabar → ngelarin，用这些词口头讲一次今天要处理的事情。"
+  ]
+}
