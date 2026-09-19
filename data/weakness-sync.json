@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-19T11:20:29.642Z",
+  "updated_at": "2026-09-19T11:21:18.470Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -6477,8 +6477,11 @@
     "tegas": {
       "word": "tegas",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-19T11:21:08.145Z",
       "display": "tegas",
+      "cn": "坚定",
+      "root": "tegas",
+      "root_cn": "明确；坚定",
       "reasons": [
         "memory_dont"
       ],
