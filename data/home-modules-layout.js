@@ -29,6 +29,19 @@
   }
   window.openDifficulty01=function(){openDifficulty('difficulty01');};
   window.openDifficulty02=function(){openDifficulty('difficulty02');};
+  window.openDifficulty03=function(){openDifficulty('difficulty03');};
+
+  window.answerDpQuiz=function(btn,choice,answer){
+    const row=btn&&btn.closest('.dpQuizRow');
+    if(!row||row.dataset.done)return;
+    row.dataset.done='1';
+    row.querySelectorAll('button').forEach(function(b){b.disabled=true;b.classList.remove('dpQuizOk','dpQuizBad');});
+    const ok=choice===answer;
+    btn.classList.add(ok?'dpQuizOk':'dpQuizBad');
+    row.querySelectorAll('button').forEach(function(b){if(b.dataset.choice===answer)b.classList.add('dpQuizOk');});
+    const result=row.querySelector('.dpQuizResult');
+    if(result)result.textContent=ok?'✓ 对，就是 '+answer:'正确是 '+answer;
+  };
 
   function pickIndoVoice(){
     if(!window.speechSynthesis)return null;
@@ -79,7 +92,7 @@
       card.id='difficultyModule';
       card.className='module';
       card.type='button';
-      card.innerHTML='<div class="difficultyIconWrap"><span>💡</span><b class="difficultyCount">2</b></div><h3>难点解释</h3><p>整理中文难直译、容易混淆的词，用场景和对比帮助理解。</p><span class="tag">2 个难点</span>';
+      card.innerHTML='<div class="difficultyIconWrap"><span>💡</span><b class="difficultyCount">3</b></div><h3>难点解释</h3><p>整理中文难直译、容易混淆的词，用场景和对比帮助理解。</p><span class="tag">3 个难点</span>';
       card.addEventListener('click',function(){showDifficultyList();window.go('difficulty');});
       box.appendChild(card);
     }
@@ -96,7 +109,7 @@
           <div id="difficultyListView">
             <div class="sectionHead difficultyHead">
               <div><h2>难点解释</h2><div class="muted">专门整理难直译、容易混淆的印尼语词。</div></div>
-              <span class="pill">已整理 2 个</span>
+              <span class="pill">已整理 3 个</span>
             </div>
 
             <div class="difficultyIndex">
@@ -108,6 +121,11 @@
               <button class="difficultyIndexItem" type="button" onclick="openDifficulty02()">
                 <span class="difficultyNo keanNo">02</span>
                 <span class="difficultyIndexText"><b>ke-…-an</b><small>状态 / 遭遇 / 非主动结果</small></span>
+                <span class="difficultyArrow">→</span>
+              </button>
+              <button class="difficultyIndexItem" type="button" onclick="openDifficulty03()">
+                <span class="difficultyNo dpNo">03</span>
+                <span class="difficultyIndexText"><b>dapat vs padat</b><small>长得像、听着像，但思路完全不同</small></span>
                 <span class="difficultyArrow">→</span>
               </button>
             </div>
@@ -299,6 +317,110 @@
               <small>看到新词时先判断：① 它是在说一种状态/概念？还是 ②③ 某种情况发生到了主体身上？不要机械翻译成固定的“被”。</small>
             </div>
           </article>
+
+          <article id="difficulty03" class="difficultyLesson" style="display:none">
+            <button class="difficultyInnerBack" type="button" onclick="showDifficultyList()">← 返回难点列表</button>
+
+            <div class="difficultyWordHero dpHero">
+              <div class="difficultyWordTop"><span class="difficultyNo big dpNo">03</span><span class="difficultyType dpType">易混音词 · 核心概念对比</span></div>
+              <div class="dpWordPair"><strong class="dpDapat">dapat</strong><span>↔</span><strong class="dpPadat">padat</strong></div>
+              <div class="difficultyMemory">不要靠中文释义硬背。先固定两个画面：<b>dapat = 手里“拿到 / 能做到”</b>；<b>padat = 一个空间“塞得满 / 很密”</b>。</div>
+              <div class="dpSoundRow">
+                <button class="dpSoundButton" type="button" onclick="speakIdText('dapat',this)">🔊 dapat</button>
+                <button class="dpSoundButton" type="button" onclick="speakIdText('padat',this)">🔊 padat</button>
+                <button class="dpSoundButton compare" type="button" onclick="speakIdText('dapat. padat. dapat. padat.',this)">🔁 连续对比听</button>
+              </div>
+            </div>
+
+            <div class="dpPronounce">
+              <div><b><span class="dpSyllableHot">da</span> · pat</b><small>dapat：先听开头 <strong>DA-</strong></small></div>
+              <span class="dpSwap">⇄</span>
+              <div><b><span class="dpSyllableHot alt">pa</span> · dat</b><small>padat：先听开头 <strong>PA-</strong></small></div>
+            </div>
+
+            <div class="dpCoreGrid">
+              <div class="dpCoreCard dapatCard">
+                <div class="dpCoreIcon">🤲</div>
+                <h3>dapat</h3>
+                <div class="dpCoreBig">GET / CAN</div>
+                <p class="dpCoreCn">核心画面：<b>得到、拿到；有条件做到 → 可以</b></p>
+                <div class="dpLang"><span>EN</span> get · obtain · can</div>
+                <div class="dpLang"><span>ID</span> memperoleh · menerima · bisa</div>
+              </div>
+              <div class="dpCoreVs">VS</div>
+              <div class="dpCoreCard padatCard">
+                <div class="dpCoreIcon">📦</div>
+                <h3>padat</h3>
+                <div class="dpCoreBig">DENSE / PACKED</div>
+                <p class="dpCoreCn">核心画面：<b>空间里东西很多 → 满、密、挤、紧实</b></p>
+                <div class="dpLang"><span>EN</span> dense · packed · compact · solid</div>
+                <div class="dpLang"><span>ID</span> penuh · rapat · tidak renggang</div>
+              </div>
+            </div>
+
+            <div class="dpBridge">
+              <div class="dpBridgeTitle">为什么 dapat 既能“得到”，又能“可以”？</div>
+              <div class="dpBridgeFlow"><span>得到机会 / 条件</span><b>→</b><span>有能力或条件做</span><b>→</b><span>dapat = can</span></div>
+              <p>所以不要把这两个意思完全拆开。可以先把它们连成：<b>“拿得到 / 条件允许” → “能够”。</b></p>
+            </div>
+
+            <div class="compareBlock">
+              <div class="compareTitle">放到句子里，多组并排看</div>
+              <div class="dpSentencePairs">
+                <div class="dpPairRow">
+                  <div class="dpSentence dapatTint"><b>Saya dapat pekerjaan baru.</b><button class="miniSound" type="button" onclick="speakIdText('Saya dapat pekerjaan baru.',this)">🔊</button><span>我得到了一份新工作。</span><small>I got a new job.</small></div>
+                  <div class="dpSentence padatTint"><b>Jadwal saya padat.</b><button class="miniSound" type="button" onclick="speakIdText('Jadwal saya padat.',this)">🔊</button><span>我的日程很满。</span><small>My schedule is packed.</small></div>
+                </div>
+                <div class="dpPairRow">
+                  <div class="dpSentence dapatTint"><b>Aku dapat tiketnya.</b><button class="miniSound" type="button" onclick="speakIdText('Aku dapat tiketnya.',this)">🔊</button><span>我拿到票了。</span><small>I got the ticket.</small></div>
+                  <div class="dpSentence padatTint"><b>Busnya padat.</b><button class="miniSound" type="button" onclick="speakIdText('Busnya padat.',this)">🔊</button><span>公交车里很挤。</span><small>The bus is packed.</small></div>
+                </div>
+                <div class="dpPairRow">
+                  <div class="dpSentence dapatTint"><b>Saya dapat datang besok.</b><button class="miniSound" type="button" onclick="speakIdText('Saya dapat datang besok.',this)">🔊</button><span>我明天可以来。</span><small>I can come tomorrow.</small></div>
+                  <div class="dpSentence padatTint"><b>Daerah ini padat penduduk.</b><button class="miniSound" type="button" onclick="speakIdText('Daerah ini padat penduduk.',this)">🔊</button><span>这个地区人口密集。</span><small>This area is densely populated.</small></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dpFamilyGrid">
+              <div class="dpFamilyCard dapatFamily">
+                <div class="dpFamilyHead"><span>🌱</span><div><h3>dapat 词族</h3><small>大多围绕“得到 / 获得 / 能够”</small></div></div>
+                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>mendapat</strong><button class="miniSound" type="button" onclick="speakIdText('mendapat',this)">🔊</button><small>得到、获得 · get / receive</small></div>
+                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>mendapatkan</strong><button class="miniSound" type="button" onclick="speakIdText('mendapatkan',this)">🔊</button><small>获得、取得 · obtain / get</small></div>
+                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>pendapatan</strong><button class="miniSound" type="button" onclick="speakIdText('pendapatan',this)">🔊</button><small>收入 · income / revenue</small></div>
+                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>terdapat</strong><button class="miniSound" type="button" onclick="speakIdText('terdapat',this)">🔊</button><small>有、存在、可见于 · there is/are · be found</small></div>
+                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>didapat / didapatkan</strong><button class="miniSound" type="button" onclick="speakIdText('didapatkan',this)">🔊</button><small>被获得、得到 · obtained</small></div>
+              </div>
+              <div class="dpFamilyCard padatFamily">
+                <div class="dpFamilyHead"><span>🧱</span><div><h3>padat 词族</h3><small>大多围绕“密 / 满 / 压实”</small></div></div>
+                <div class="wordFamily audioFamily"><b>padat</b><span>→</span><strong>kepadatan</strong><button class="miniSound" type="button" onclick="speakIdText('kepadatan',this)">🔊</button><small>密度、拥挤程度 · density</small></div>
+                <div class="wordFamily audioFamily"><b>padat</b><span>→</span><strong>memadatkan</strong><button class="miniSound" type="button" onclick="speakIdText('memadatkan',this)">🔊</button><small>使变紧实、压实 · compact</small></div>
+                <div class="wordFamily audioFamily"><b>padat</b><span>→</span><strong>pemadatan</strong><button class="miniSound" type="button" onclick="speakIdText('pemadatan',this)">🔊</button><small>压实、压密 · compaction</small></div>
+                <div class="wordFamily audioFamily"><b>padat</b><span>→</span><strong>dipadatkan</strong><button class="miniSound" type="button" onclick="speakIdText('dipadatkan',this)">🔊</button><small>被压实 · compacted</small></div>
+                <div class="dpCollocations"><b>高频组合</b><span>padat penduduk</span><span>lalu lintas padat</span><span>jadwal padat</span><span>makanan padat</span><span>padat karya</span></div>
+              </div>
+            </div>
+
+            <div class="dpQuickRule">
+              <div><span>🤲</span><b>“能不能 / 得到没有？”</b><strong>→ dapat</strong></div>
+              <div class="dpRuleDivider"></div>
+              <div><span>📦</span><b>“满不满 / 密不密 / 挤不挤？”</b><strong>→ padat</strong></div>
+            </div>
+
+            <div class="dpQuiz">
+              <div class="compareTitle">马上判断：你脑子里应该跳出哪个词？</div>
+              <div class="dpQuizRow"><span>① “我拿到票了。”</span><div><button data-choice="dapat" onclick="answerDpQuiz(this,'dapat','dapat')">dapat</button><button data-choice="padat" onclick="answerDpQuiz(this,'padat','dapat')">padat</button></div><small class="dpQuizResult"></small></div>
+              <div class="dpQuizRow"><span>② “今天日程很满。”</span><div><button data-choice="dapat" onclick="answerDpQuiz(this,'dapat','padat')">dapat</button><button data-choice="padat" onclick="answerDpQuiz(this,'padat','padat')">padat</button></div><small class="dpQuizResult"></small></div>
+              <div class="dpQuizRow"><span>③ “这个地区人口密集。”</span><div><button data-choice="dapat" onclick="answerDpQuiz(this,'dapat','padat')">dapat</button><button data-choice="padat" onclick="answerDpQuiz(this,'padat','padat')">padat</button></div><small class="dpQuizResult"></small></div>
+              <div class="dpQuizRow"><span>④ “我明天可以来。”</span><div><button data-choice="dapat" onclick="answerDpQuiz(this,'dapat','dapat')">dapat</button><button data-choice="padat" onclick="answerDpQuiz(this,'padat','dapat')">padat</button></div><small class="dpQuizResult"></small></div>
+            </div>
+
+            <div class="difficultyFormula dpFormula">
+              <span>一句话记忆</span>
+              <b>dapat = “拿到 / 能做到”；padat = “塞满 / 很密”。</b>
+              <small>先听第一个音节：DA-pat vs PA-dat；再看句子是在说“获得/能够”，还是“密/满/挤”。</small>
+            </div>
+          </article>
         </div>`;
       app.appendChild(page);
     }
@@ -418,6 +540,20 @@
       .exampleStrip{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:18px}.exampleStrip>div{border:1px solid #e1e6ed;border-radius:13px;padding:12px;background:#fff}.exampleStrip b{font-size:14px;color:#27364a}.exampleStrip span{display:block;color:#667085;font-size:12px;margin-top:5px;line-height:1.5}
       .difficultyFormula{margin-top:18px;border-radius:16px;padding:16px 18px;background:#173f5c;color:#fff;display:flex;flex-direction:column;gap:5px}.difficultyFormula span{font-size:12px;opacity:.78}.difficultyFormula b{font-size:18px;line-height:1.55}.difficultyFormula small{opacity:.78;line-height:1.5}.keanFormula{background:#513c7c}
 
+      .dpNo{background:#fff0df;color:#a45d13}
+      .difficultyWordHero.dpHero{background:linear-gradient(135deg,#fff8ee,#fffdf8);border-color:#f1dec5}
+      .dpType{color:#9a5b1c!important;background:#fff0dc!important}
+      .dpWordPair{display:flex;align-items:center;gap:14px;margin:14px 0 8px}.dpWordPair strong{font-size:42px;line-height:1}.dpWordPair>span{color:#9aa4b2;font-size:22px}.dpDapat{color:#2d67a5}.dpPadat{color:#9a5b1c}
+      .dpSoundRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.dpSoundButton{border:1px solid #e2d8ca;background:#fff;border-radius:10px;padding:8px 11px;font-weight:800;color:#4c5969;cursor:pointer}.dpSoundButton:hover{background:#fff8ee;border-color:#d8b98f}.dpSoundButton.compare{color:#8c551d;background:#fffaf2}
+      .dpPronounce{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin:15px 0;padding:15px;border:1px dashed #dfd6ca;border-radius:16px;background:#fffdf9}.dpPronounce>div{text-align:center}.dpPronounce b{font-size:25px;letter-spacing:.04em}.dpPronounce small{display:block;color:#6d7786;font-size:12px;margin-top:5px}.dpSyllableHot{color:#2d67a5;background:#edf5ff;border-radius:7px;padding:2px 6px}.dpSyllableHot.alt{color:#9a5b1c;background:#fff0df}.dpSwap{font-size:21px;color:#9aa4b2}
+      .dpCoreGrid{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:stretch;margin:16px 0}.dpCoreCard{border:1px solid #e0e6ee;border-radius:18px;padding:18px;background:#fff}.dpCoreCard h3{font-size:27px;margin:5px 0}.dpCoreIcon{font-size:25px}.dpCoreBig{font-size:13px;font-weight:900;letter-spacing:.08em;color:#667085}.dpCoreCn{font-size:14px;line-height:1.65;color:#4e5b6d}.dapatCard{background:#f6faff;border-color:#d6e6f7}.dapatCard h3{color:#2d67a5}.padatCard{background:#fffaf4;border-color:#efdfca}.padatCard h3{color:#9a5b1c}.dpCoreVs{align-self:center;font-size:12px;font-weight:900;color:#8b95a5;background:#eef1f5;border-radius:999px;padding:7px}.dpLang{margin-top:7px;font-size:12px;color:#667085}.dpLang span{display:inline-flex;min-width:27px;justify-content:center;margin-right:6px;border-radius:6px;padding:2px 5px;background:#fff;font-weight:900;color:#475467}
+      .dpBridge{border:1px solid #dbe5f1;border-radius:16px;background:#f9fbff;padding:16px;margin:18px 0}.dpBridgeTitle{font-size:17px;font-weight:900;color:#2d5e93}.dpBridgeFlow{display:flex;gap:9px;align-items:center;justify-content:center;margin:13px 0;flex-wrap:wrap}.dpBridgeFlow span{background:#fff;border:1px solid #d8e4f0;border-radius:9px;padding:7px 10px;font-size:12px;font-weight:800}.dpBridgeFlow b{color:#7793b0}.dpBridge p{margin:0;color:#5f6c7d;font-size:13px;line-height:1.65}
+      .dpSentencePairs{display:grid;gap:9px}.dpPairRow{display:grid;grid-template-columns:1fr 1fr;gap:9px}.dpSentence{border:1px solid #e1e6ed;border-radius:14px;padding:13px;min-width:0}.dpSentence b{font-size:14px}.dpSentence>span,.dpSentence>small{display:block;margin-top:5px;color:#667085;line-height:1.45}.dpSentence>small{font-size:11px;color:#8791a0}.dapatTint{background:#f7fbff;border-color:#dceaf7}.padatTint{background:#fffaf5;border-color:#eee0cf}
+      .dpFamilyGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}.dpFamilyCard{border:1px solid #e0e6ee;border-radius:18px;padding:16px;background:#fff}.dapatFamily{background:#f8fbff;border-color:#dce9f5}.padatFamily{background:#fffaf5;border-color:#eee0cf}.dpFamilyHead{display:flex;gap:9px;align-items:center;margin-bottom:5px}.dpFamilyHead>span{font-size:24px}.dpFamilyHead h3{margin:0;font-size:19px}.dpFamilyHead small{color:#7b8795}.dpCollocations{border-top:1px solid rgba(0,0,0,.06);margin-top:8px;padding-top:10px;display:flex;gap:6px;flex-wrap:wrap}.dpCollocations b{width:100%;font-size:12px;color:#7b5b34}.dpCollocations span{background:#fff;border:1px solid #eadbc8;border-radius:999px;padding:5px 8px;font-size:11px;color:#68543d}
+      .dpQuickRule{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:stretch;border-radius:17px;padding:16px;background:#27364a;color:#fff;margin-top:18px}.dpQuickRule>div:not(.dpRuleDivider){display:grid;grid-template-columns:auto 1fr;gap:4px 9px;align-items:center}.dpQuickRule span{font-size:22px;grid-row:1/3}.dpQuickRule b{font-size:13px}.dpQuickRule strong{font-size:18px}.dpQuickRule>div:first-child strong{color:#9dcbff}.dpQuickRule>div:last-child strong{color:#ffd29e}.dpRuleDivider{width:1px;background:rgba(255,255,255,.2)}
+      .dpQuiz{margin-top:22px}.dpQuizRow{display:grid;grid-template-columns:1fr auto minmax(95px,auto);gap:10px;align-items:center;border-top:1px solid #e8ebf0;padding:10px 0}.dpQuizRow:first-of-type{border-top:0}.dpQuizRow>span{font-size:13px;font-weight:750}.dpQuizRow>div{display:flex;gap:6px}.dpQuizRow button{border:1px solid #dfe4eb;background:#fff;border-radius:9px;padding:7px 10px;cursor:pointer}.dpQuizRow button:hover{background:#f7f9fc}.dpQuizRow button.dpQuizOk{background:#edf9f0;border-color:#76bd87;color:#17652d}.dpQuizRow button.dpQuizBad{background:#fff0ef;border-color:#dd8b84;color:#9d2f28}.dpQuizRow button:disabled{cursor:default}.dpQuizResult{font-size:11px;color:#657386}
+      .dpFormula{background:linear-gradient(135deg,#244d77,#80511f)}
+
       @media(max-width:1050px){#home .modules.homeModulesCompact{grid-template-columns:repeat(3,minmax(0,1fr))!important}.triExplain{grid-template-columns:1fr}}
       @media(max-width:760px){
         .difficultyThree{grid-template-columns:1fr}
@@ -426,6 +562,7 @@
         .difficultyWordLine strong{font-size:36px}
         .senseBridge{margin:0 12% 5px}.senseBridgeFork{height:16px}.senseBridgeFork:before{left:50%;right:auto;width:2px;height:10px;top:2px}.senseBridgeFork span{display:none}.senseBridgeFork span:first-child{display:block;width:2px;height:12px;margin-top:2px;grid-column:2}
         .exampleStrip{grid-template-columns:1fr}.keanBigRuleFlow{flex-direction:column}.keanBigRuleFlow b{text-align:center}
+        .dpCoreGrid{grid-template-columns:1fr}.dpCoreVs{justify-self:center}.dpPairRow,.dpFamilyGrid{grid-template-columns:1fr}.dpPronounce{grid-template-columns:1fr}.dpSwap{transform:rotate(90deg)}.dpQuickRule{grid-template-columns:1fr}.dpRuleDivider{width:100%;height:1px}.dpQuizRow{grid-template-columns:1fr}.dpQuizResult{min-height:14px}
       }
       @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}.difficultyPageCard{padding:16px!important}}
       @media(max-width:430px){#home .modules.homeModulesCompact{grid-template-columns:1fr!important}#home .homeModulesCompact .module{min-height:0!important}}
