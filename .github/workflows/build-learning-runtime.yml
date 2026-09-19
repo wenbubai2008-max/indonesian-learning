@@ -27,6 +27,8 @@ on:
       - 'data/daily-width-fix.css'
       - 'data/home-modules-layout.js'
       - 'data/home-modules-stability.js'
+      - 'data/home-learning-upgrade-v2.js'
+      - 'data/automation-training.js'
       - 'data/history-v2.js'
       - 'data/daily-light-test.js'
       - 'data/daily-ui-polish.js'
@@ -73,6 +75,9 @@ jobs:
           node .github/scripts/build-bipa-level-chunks.js
           node --check data/vocab-memory-feedback.js
           node --check data/vocab-controller-20260917.js
+          node --check data/home-learning-upgrade-v2.js
+          node --check data/automation-training.js
+          node --check data/home-modules-layout.js
           node --check data/bipa-json-loader-20260917.js
           node --check data/bipa-level-a1-gz.js
           node --check data/bipa-level-a2-gz.js
