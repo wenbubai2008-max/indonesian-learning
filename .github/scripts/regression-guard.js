@@ -220,6 +220,14 @@ try {
   ok(/window\.openExtensiveV2=async function\(\).*await refreshLatestSources\(\)/s.test(extensiveUi), 'extensive reading loads latest available content when opened');
   ok(!/setInterval\s*\(|new MutationObserver|location\.reload\s*\(/.test(historyV2+extensiveUi), 'on-demand refresh adds no polling, whole-page observer, or forced reload');
 
+  const pronunciation = read('data/pronunciation-fix.js');
+  ok(/u\.lang='id-ID'/.test(pronunciation), 'main speaker TTS locale is Indonesian id-ID');
+  ok(/tl=id/.test(pronunciation), 'online pronunciation fallback explicitly uses Indonesian');
+  ok(/function isIndonesianVoice\(v\)/.test(pronunciation) && /no Indonesian voice/.test(pronunciation), 'local pronunciation refuses non-Indonesian voices');
+  ok(!/\^ms\[-_\]|\^en\[-_\]|voices\[0\]/.test(pronunciation), 'main pronunciation has no Malay, English, or arbitrary voice fallback');
+  ok(/function getIndonesianVoice\(\)/.test(extensiveUi) && /u\.lang='id-ID'/.test(extensiveUi) && /u\.voice=v/.test(extensiveUi), 'extensive-reading paragraph speaker uses an Indonesian voice');
+  ok(/if\(!v\).*window\.speak\(text\)/s.test(extensiveUi), 'extensive-reading paragraph falls back to the unified Indonesian speaker when no local Indonesian voice exists');
+
   const polish = read('data/daily-ui-polish.js');
   ok(/pmTimeForDate\(info\.date\)/.test(polish), 'completion toast uses date-aware PM time');
 
