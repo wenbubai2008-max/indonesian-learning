@@ -1,6 +1,33 @@
 (function(){
-  const ORDER=['词汇学习','泛读','快速练习','弱项强化','前后缀','难点解释'];
+  const ORDER=['词汇学习','泛读','快速练习','弱项强化','自动训练','难点解释','前后缀'];
   let applying=false;
+
+  const HOME_MODULES=[
+    {key:'vocab',title:'词汇学习',icon:'🧠',desc:'词库、闪卡、发音、例句和学习进度。',tag:'词库',tagId:'vocabTag',open:function(){if(typeof window.go==='function')window.go('vocab');}},
+    {key:'reading',title:'泛读',icon:'📚',desc:'独立于每日课程：聊天、办公室、生活和真实交流场景。',tag:'划词查义 · 可加陌生词',open:function(){if(typeof window.openExtensiveV2==='function')window.openExtensiveV2();}},
+    {key:'quick',title:'快速练习',icon:'⚡',desc:'5–10分钟，用最近学过的词做情境选词和补空。',tag:'间隔复现',open:function(){if(typeof window.openQuickPracticeV2==='function')window.openQuickPracticeV2();}},
+    {key:'weak',title:'弱项强化',icon:'🎯',desc:'集中练快速练习错题和阅读中加入的陌生词。',tag:'针对弱项',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
+    {key:'automation',title:'自动训练',icon:'⚙️',desc:'把眼熟但调不出来的词，逐步练到主动使用。',tag:'计算中',tagId:'automationTag',open:function(){if(typeof window.openAutomationTraining==='function')window.openAutomationTraining();}},
+    {key:'difficulty',title:'难点解释',icon:'💡',desc:'整理中文难直译、容易混淆的词，用场景和对比帮助理解。',tag:'3 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
+    {key:'affix',title:'前后缀',icon:'🧩',desc:'meN-、peN-、ber-、di-、ter-、-kan、-i 等。',tag:'词根词族',open:function(){if(typeof window.go==='function')window.go('affix');}}
+  ];
+
+  function renderHomeModules(){
+    const box=document.querySelector('#home .modules');if(!box)return;
+    box.replaceChildren();
+    HOME_MODULES.forEach(function(def){
+      const card=document.createElement('button');
+      card.type='button';card.className='module';
+      if(def.id)card.id=def.id;
+      card.setAttribute('data-home-module',def.key);
+      card.innerHTML='<div>'+def.icon+'</div><h3>'+def.title+'</h3><p>'+def.desc+'</p><span class="tag"'+(def.tagId?' id="'+def.tagId+'"':'')+'>'+def.tag+'</span>';
+      card.addEventListener('click',def.open);box.appendChild(card);
+    });
+    const vt=document.getElementById('vocabTag'),count=(window.DAILY_VOCAB_DB||[]).length||(window.EMBEDDED_DB||[]).length||0;
+    if(vt&&count)vt.textContent=count+' 个词';
+    if(window.AutomationTraining&&typeof window.AutomationTraining.refreshTag==='function')setTimeout(window.AutomationTraining.refreshTag,0);
+  }
+  window.renderHomeModules=renderHomeModules;
 
   function titleOf(card){
     const h=card&&card.querySelector('h3');
@@ -86,17 +113,6 @@
   };
 
   function ensureDifficulty(){
-    const box=document.querySelector('#home .modules');
-    if(box&&!document.getElementById('difficultyModule')){
-      const card=document.createElement('button');
-      card.id='difficultyModule';
-      card.className='module';
-      card.type='button';
-      card.innerHTML='<div class="difficultyIconWrap"><span>💡</span><b class="difficultyCount">3</b></div><h3>难点解释</h3><p>整理中文难直译、容易混淆的词，用场景和对比帮助理解。</p><span class="tag">3 个难点</span>';
-      card.addEventListener('click',function(){showDifficultyList();window.go('difficulty');});
-      box.appendChild(card);
-    }
-
     if(!document.getElementById('difficulty')){
       const app=document.querySelector('.app');
       if(!app)return;
@@ -439,11 +455,12 @@
       cards.forEach(function(card){
         const title=titleOf(card);
         map[title]=card;
-        card.classList.remove('homeModVocab','homeModReading','homeModQuick','homeModWeak','homeModAffix','homeModDifficulty','v2-wide');
+        card.classList.remove('homeModVocab','homeModReading','homeModQuick','homeModWeak','homeModAutomation','homeModAffix','homeModDifficulty','v2-wide');
         if(title==='词汇学习')card.classList.add('homeModVocab');
         else if(title==='泛读')card.classList.add('homeModReading');
         else if(title==='快速练习')card.classList.add('homeModQuick');
         else if(title==='弱项强化')card.classList.add('homeModWeak');
+        else if(title==='自动训练')card.classList.add('homeModAutomation');
         else if(title==='前后缀')card.classList.add('homeModAffix');
         else if(title==='难点解释')card.classList.add('homeModDifficulty');
       });
@@ -468,6 +485,7 @@
       #home .homeModReading{background:#f7fbf8!important;border-color:#d8eadf!important;border-top:3px solid #74b58a!important}
       #home .homeModQuick{background:#fffaf3!important;border-color:#f0e2c9!important;border-top:3px solid #d6a653!important}
       #home .homeModWeak{background:#fff8f8!important;border-color:#f0dcdc!important;border-top:3px solid #d98b8b!important}
+      #home .homeModAutomation{background:#f8f6ff!important;border-color:#e4def5!important;border-top:3px solid #8d73c9!important}
       #home .homeModAffix{background:#faf8ff!important;border-color:#e5ddf4!important;border-top:3px solid #9b83ca!important}
       #home .homeModDifficulty{background:#f7fbff!important;border-color:#d8e8f5!important;border-top:3px solid #63a6cf!important;position:relative}
       #home .difficultyIconWrap{display:flex!important;align-items:center!important;gap:7px!important;width:100%!important}
@@ -651,13 +669,16 @@
     });
   }
 
+  window.installSiteNavBars=installNavBars;
+
   function boot(){
+    renderHomeModules();
     style();
     ensureDifficulty();
     apply();
     installHistoryNavigation();
     installNavBars();
-    setTimeout(function(){ensureDifficulty();apply();installNavBars();},180);
+    setTimeout(function(){renderHomeModules();ensureDifficulty();apply();installNavBars();},180);
   }
 
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});
