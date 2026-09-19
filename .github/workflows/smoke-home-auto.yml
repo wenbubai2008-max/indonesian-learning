@@ -21,7 +21,7 @@ jobs:
           cd ..
           python3 -m http.server 8000 >/tmp/indo-http.log 2>&1 &
           cd "$GITHUB_WORKSPACE"
-          cat >/tmp/smoke.mjs <<'JS'
+          cat >smoke.mjs <<'JS'
           import {JSDOM, VirtualConsole} from 'jsdom';
           import assert from 'node:assert/strict';
 
@@ -106,4 +106,4 @@ jobs:
           console.log('AUTOMATION_PICK_OK='+latest.word);
           dom.window.close();
           JS
-          node /tmp/smoke.mjs
+          node smoke.mjs
