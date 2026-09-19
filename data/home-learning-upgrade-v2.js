@@ -19,9 +19,59 @@
   function mem(){try{return JSON.parse(localStorage.getItem('indo_mem')||'{}');}catch(e){return {};}}
   function taughtSet(){var s=new Set();(window.DAILY_VOCAB_DB||[]).forEach(function(x){if(x&&x.word)s.add(norm(x.word));});return s;}
   function recentPool(){var now=new Date(),arr=(window.DAILY_VOCAB_DB||[]).filter(function(x){return x&&x.word&&x.cn;});arr.forEach(function(x){var d=(x.last_seen||x.first_seen||'').slice(0,10);var days=999;if(d){var dt=new Date(d+'T00:00:00');days=Math.max(0,Math.floor((now-dt)/86400000));}x.__days=days;});return arr.filter(function(x){return x.__days<=14;});}
-  function weightedPool(){var pool=recentPool(),ps=practiceState(),mm=mem(),wp=weakPool(),active=wp?wp.activeMap():localUnknown();return pool.map(function(x){var k=norm(x.word),p=ps[k]||{},w=1;if(x.__days<=3)w+=2;else if(x.__days<=7)w+=1;if(mm[x.word]==='fuzzy'||mm[x.word]==='dont')w+=4;if(active[k])w+=4;if((p.wrong||0)>(p.right||0))w+=3;if((p.streak||0)>=3)w=Math.max(.25,w-2.5);return {x:x,w:w};});}
+  function quickCooldown(p){
+    if(!p||!Number(p.last||0))return 0;
+    var streak=Number(p.streak||0);
+    if(p.last_result==='wrong')return 15*60*1000;
+    if(streak>=3)return 48*60*60*1000;
+    if(streak===2)return 20*60*60*1000;
+    if(streak===1)return 6*60*60*1000;
+    return 0;
+  }
+  function weightedPool(){
+    var pool=recentPool(),ps=practiceState(),mm=mem(),wp=weakPool(),active=wp?wp.activeMap():localUnknown(),now=Date.now();
+    return pool.map(function(x){
+      var k=norm(x.word),p=ps[k]||{},w=1,last=Number(p.last||0),due=last+quickCooldown(p);
+      if(x.__days<=3)w+=2;else if(x.__days<=7)w+=1;
+      if(mm[x.word]==='fuzzy'||mm[x.word]==='dont')w+=4;
+      if(active[k])w+=4;
+      if((p.wrong||0)>(p.right||0))w+=3;
+      if((p.streak||0)>=3)w=Math.max(.25,w-2.5);
+      return {x:x,w:w,due:due};
+    }).filter(function(a){return a.due<=now;});
+  }
   function sampleWeighted(items,n){var src=items.slice(),out=[];while(src.length&&out.length<n){var total=src.reduce(function(s,a){return s+a.w;},0),r=Math.random()*total,idx=0;for(;idx<src.length;idx++){r-=src[idx].w;if(r<=0)break;}out.push(src[Math.min(idx,src.length-1)].x);src.splice(Math.min(idx,src.length-1),1);}return out;}
-  function renderQuick(){var body=document.getElementById('quickPracticeBody');if(!body)return;var pool=weightedPool(),meta=document.getElementById('quickPracticeMeta');if(meta)meta.textContent='滚动 7–14 天 · 10题';if(pool.length<4){body.innerHTML='<div class="empty">最近词汇数量还不够。</div>';return;}var picks=sampleWeighted(pool,Math.min(10,pool.length)),all=recentPool(),html='<div class="v2-refresh"><button class="secondary" type="button" onclick="refreshQuickPracticeV2()">↻ 换一组</button></div><div class="v2-note">不是第三节必修课。推荐每天做一次：老词不会消失，答得越稳出现频率越低；答错会进入统一弱项池，之后答稳或点“会了”再退出。</div>';picks.forEach(function(x,i){var wrong=shuffle(all.filter(function(y){return norm(y.word)!==norm(x.word);})).slice(0,3).map(function(y){return y.word;}),opts=shuffle([x.word].concat(wrong));html+='<div class="v2-q" data-answer="'+esc(x.word)+'"><b>'+(i+1)+'. '+esc(x.cn)+'</b><div class="v2-opts">';opts.forEach(function(o){html+='<button type="button" data-v="'+esc(o)+'">'+esc(o)+'</button>';});html+='</div><div class="v2-result"></div></div>';});body.innerHTML=html;body.querySelectorAll('.v2-opts button').forEach(function(btn){btn.onclick=function(){var row=btn.closest('.v2-q');if(row.dataset.done)return;row.dataset.done='1';var ans=row.dataset.answer,ok=btn.dataset.v===ans,k=norm(ans),s=practiceState(),p=s[k]||{right:0,wrong:0,streak:0};if(ok){p.right++;p.streak++;p.last_result='right';}else{p.wrong++;p.streak=0;p.last_result='wrong';p.last_wrong=Date.now();}p.last=Date.now();s[k]=p;savePracticeState(s);var wp=weakPool(),item=(wordMap()[k]||{word:ans});if(wp)wp.recordPractice(ans,ok,item);btn.classList.add(ok?'v2-ok':'v2-bad');row.querySelectorAll('.v2-opts button').forEach(function(b){b.disabled=true;if(b.dataset.v===ans)b.classList.add('v2-ok');});row.querySelector('.v2-result').textContent=ok?'答对了。':'正确答案：'+ans+'（已进入统一弱项池，提高后续复现频率）';};});}
+  function renderQuick(){
+    var body=document.getElementById('quickPracticeBody');if(!body)return;
+    var pool=weightedPool(),meta=document.getElementById('quickPracticeMeta');
+    if(meta)meta.textContent='到期 '+pool.length+' 词 · 本轮最多10题';
+    if(!pool.length){
+      body.innerHTML='<div class="empty"><b>这会儿没有到期词。</b><div style="margin-top:8px">刚答对的词已经进入冷却期，不会因为刷新马上又出现；到时间后会再验证。</div></div>';
+      return;
+    }
+    var picks=sampleWeighted(pool,Math.min(10,pool.length)),all=recentPool(),html='<div class="v2-refresh"><button class="secondary" type="button" onclick="refreshQuickPracticeV2()">↻ 换一组</button></div><div class="v2-note">答对后会进入冷却：1次约6小时、连续2次约到第二天、连续3次以上约2天；答错提高优先级，但也会先隔开约15分钟再出现。</div>';
+    picks.forEach(function(x,i){
+      var wrong=shuffle(all.filter(function(y){return norm(y.word)!==norm(x.word);})).slice(0,3).map(function(y){return y.word;}),opts=shuffle([x.word].concat(wrong));
+      html+='<div class="v2-q" data-answer="'+esc(x.word)+'"><b>'+(i+1)+'. '+esc(x.cn)+'</b><div class="v2-opts">';
+      opts.forEach(function(o){html+='<button type="button" data-v="'+esc(o)+'">'+esc(o)+'</button>';});
+      html+='</div><div class="v2-result"></div></div>';
+    });
+    body.innerHTML=html;
+    body.querySelectorAll('.v2-opts button').forEach(function(btn){
+      btn.onclick=function(){
+        var row=btn.closest('.v2-q');if(row.dataset.done)return;row.dataset.done='1';
+        var ans=row.dataset.answer,ok=btn.dataset.v===ans,k=norm(ans),s=practiceState(),p=s[k]||{right:0,wrong:0,streak:0},now=Date.now();
+        if(ok){p.right++;p.streak++;p.last_result='right';p.last_right=now;}
+        else{p.wrong++;p.streak=0;p.last_result='wrong';p.last_wrong=now;}
+        p.last=now;s[k]=p;savePracticeState(s);
+        var wp=weakPool(),item=(wordMap()[k]||{word:ans});if(wp)wp.recordPractice(ans,ok,item);
+        try{window.dispatchEvent(new CustomEvent('quick-practice-updated',{detail:{word:ans,ok:ok,state:p}}));}catch(e){}
+        btn.classList.add(ok?'v2-ok':'v2-bad');
+        row.querySelectorAll('.v2-opts button').forEach(function(b){b.disabled=true;if(b.dataset.v===ans)b.classList.add('v2-ok');});
+        row.querySelector('.v2-result').textContent=ok?'答对了。这个词已进入冷却，刷新不会马上再抽到。':'正确答案：'+ans+'（已进入统一弱项池；稍后再测，不会立刻连刷）';
+      };
+    });
+  }
   function fallbackMeaning(k){var m={kebuang:'被浪费掉；白白浪费',tunda:'推迟；延期',supaya:'为了；以便',keberatan:'有异议；介意'};return m[k]||'';}
   function fallbackExample(k){var m={kebuang:['Jangan sampai waktunya kebuang sia-sia.','别让时间白白浪费。'],tunda:['Meeting-nya ditunda sampai besok pagi.','会议推迟到明天早上。'],supaya:['Aku catat dulu supaya nggak lupa.','我先记下来，免得忘记。'],keberatan:['Kalau kamu keberatan, bilang aja dari awal.','如果你介意，一开始就直接说。']};return m[k]||['',''];}
   function weaknessList(){
