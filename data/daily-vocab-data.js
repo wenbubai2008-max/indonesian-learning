@@ -4730,19 +4730,23 @@ window.DAILY_VOCAB_DB = [
     "root": "berat",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-03 19:00",
-    "last_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-19 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-19"
     ],
-    "example": "Aku nggak keberatan kalau meeting-nya dimajuin setengah jam.",
-    "example_cn": "如果会议提前半小时，我不介意。"
+    "example": "Kalau tidak keberatan, kita bahas bagian ini dulu.",
+    "example_cn": "如果你不介意，我们先讨论这一部分。",
+    "root_cn": "重；沉重"
   },
   {
     "word": "sepakat",
@@ -4751,19 +4755,23 @@ window.DAILY_VOCAB_DB = [
     "root": "sepakat",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-03 19:00",
-    "last_seen": "2026-09-03 19:00",
+    "last_seen": "2026-09-19 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-19"
     ],
-    "example": "Kalau semua sepakat, kita lanjut pakai rencana yang ini.",
-    "example_cn": "如果大家都同意，我们就继续用这个方案。"
+    "example": "Kami sepakat untuk membahas masalah itu besok pagi.",
+    "example_cn": "我们一致同意明天早上讨论那个问题。",
+    "root_cn": "一致；同意"
   },
   {
     "word": "tergantung situasinya",
@@ -6560,20 +6568,23 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "碰撞；撞上",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-09 19:00",
-    "last_seen": "2026-09-15 19:00",
+    "last_seen": "2026-09-19 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-09",
-      "2026-09-15"
+      "2026-09-15",
+      "2026-09-19"
     ],
-    "example": "Rencananya bagus, tapi kebentur biaya.",
-    "example_cn": "计划不错，但卡在费用上了。"
+    "example": "Rencana ini kebentur waktu, jadi kita perlu cara yang lebih sederhana.",
+    "example_cn": "这个计划受时间限制，所以我们需要更简单的方法。"
   },
   {
     "word": "keganggu",
@@ -6630,19 +6641,22 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "设陷阱；困住",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-09 19:00",
-    "last_seen": "2026-09-09 19:00",
+    "last_seen": "2026-09-19 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-09"
+      "2026-09-09",
+      "2026-09-19"
     ],
-    "example": "Jangan sampai kita kejebak ngurus hal kecil terus kerjaan utama malah ketumpuk.",
-    "example_cn": "别让我们一直陷在小事里，反而把主要工作积压了。"
+    "example": "Jangan sampai kita kejebak masalah yang sama lagi.",
+    "example_cn": "别让我们再次陷入同样的问题。"
   },
   {
     "word": "molor",
@@ -6672,20 +6686,23 @@ window.DAILY_VOCAB_DB = [
     "en": "decide; determine; set",
     "root": "tentu",
     "root_cn": "确定；一定",
-    "example": "Kita nentuin jam meeting sekarang aja biar semua bisa atur jadwal.",
-    "example_cn": "我们现在就把会议时间定下来吧，这样大家都能安排日程。",
+    "example": "Aku belum bisa nentuin pilihan sebelum semua informasi jelas.",
+    "example_cn": "所有信息清楚之前，我还无法作出选择。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-09-19"
     ]
   },
   {
@@ -6973,20 +6990,23 @@ window.DAILY_VOCAB_DB = [
     "en": "get; catch; understand",
     "root": "tangkap",
     "root_cn": "抓住；捕捉",
-    "example": "Aku nangkep maksudmu, cuma bagian terakhir masih agak kurang jelas.",
-    "example_cn": "我明白你的意思，只是最后那部分还有点不清楚。",
+    "example": "Setelah dia menjelaskan lagi, aku baru nangkep maksudnya.",
+    "example_cn": "他重新解释以后，我才听懂他的意思。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-11"
+      "2026-09-11",
+      "2026-09-19"
     ]
   },
   {
@@ -8568,20 +8588,23 @@ window.DAILY_VOCAB_DB = [
     "en": "need; require",
     "root": "butuh",
     "root_cn": "需要",
-    "example": "Kita membutuhkan waktu untuk menyiapkan semuanya.",
-    "example_cn": "我们需要时间把一切准备好。",
+    "example": "Kita membutuhkan waktu sebentar sebelum membuat keputusan.",
+    "example_cn": "我们在作决定之前需要一点时间。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-16 08:00",
+    "last_seen": "2026-09-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-09-19"
     ]
   },
   {
@@ -9538,6 +9561,73 @@ window.DAILY_VOCAB_DB = [
     "last_seen": "2026-09-19 08:00",
     "sessions": [
       "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "menegaskan",
+    "cn": "强调；明确说明；确认",
+    "en": "emphasize; affirm; clarify",
+    "root": "tegas",
+    "root_cn": "明确；坚定",
+    "example": "Atasan menegaskan bahwa keputusan harus dibuat hari ini.",
+    "example_cn": "上司明确说明，今天必须作出决定。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 18:00",
+    "last_seen": "2026-09-19 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "luas",
+    "cn": "宽阔的；广泛的",
+    "en": "wide; broad; extensive",
+    "root": "luas",
+    "root_cn": "宽广；广泛",
+    "example": "Masalah ini punya dampak yang cukup luas.",
+    "example_cn": "这个问题有相当广泛的影响。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 18:00",
+    "last_seen": "2026-09-19 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "masa sih",
+    "cn": "真的吗？不会吧？",
+    "en": "really? no way?",
+    "root": "masa sih",
+    "root_cn": "真的吗；不会吧",
+    "example": "Masa sih kita harus mengubah rencana lagi?",
+    "example_cn": "不会吧，我们又得改计划？",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 18:00",
+    "last_seen": "2026-09-19 18:00",
+    "sessions": [
+      "18:00"
     ],
     "dates": [
       "2026-09-19"
