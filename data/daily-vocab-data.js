@@ -9320,5 +9320,227 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-18"
     ]
+  },
+  {
+    "word": "ramai",
+    "cn": "拥挤的 / 热闹的",
+    "en": "crowded / lively",
+    "root": "ramai",
+    "root_cn": "热闹；人多",
+    "example": "Pasar itu sangat ramai pada akhir pekan.",
+    "example_cn": "那个市场周末非常热闹。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "ringan",
+    "cn": "重量轻的",
+    "en": "light / mild",
+    "root": "ringan",
+    "root_cn": "轻",
+    "example": "Tas ini cukup ringan untuk dibawa ke mana-mana.",
+    "example_cn": "这个包很轻，带到哪里都方便。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "berbicara",
+    "cn": "说话",
+    "en": "speak / talk",
+    "root": "bicara",
+    "root_cn": "说话；谈话",
+    "example": "Saya ingin berbicara dengan atasan tentang masalah ini.",
+    "example_cn": "我想和上司谈谈这个问题。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "berangkat",
+    "cn": "出发",
+    "en": "depart / leave",
+    "root": "berangkat",
+    "root_cn": "出发",
+    "example": "Besok aku harus berangkat lebih pagi.",
+    "example_cn": "明天我必须更早出发。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "saran",
+    "cn": "建议",
+    "en": "suggestion / advice",
+    "root": "saran",
+    "root_cn": "建议",
+    "example": "Aku butuh saran sebelum mengambil keputusan.",
+    "example_cn": "做决定之前我需要一些建议。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "tegas",
+    "cn": "坚定",
+    "en": "firm / assertive",
+    "root": "tegas",
+    "root_cn": "明确；坚定",
+    "example": "Seorang pemimpin harus tegas tetapi tetap mau mendengarkan.",
+    "example_cn": "一个领导者应该坚定，但仍愿意倾听。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "kehidupan",
+    "cn": "生活 / 生命",
+    "en": "life",
+    "root": "hidup",
+    "root_cn": "活；生活",
+    "example": "Teknologi sudah menjadi bagian dari kehidupan sehari-hari.",
+    "example_cn": "科技已经成为日常生活的一部分。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "sabar",
+    "cn": "有耐心的",
+    "en": "patient",
+    "root": "sabar",
+    "root_cn": "耐心",
+    "example": "Kita harus sabar kalau prosesnya belum selesai.",
+    "example_cn": "如果流程还没结束，我们就得耐心一点。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "sebel",
+    "cn": "烦；恼火",
+    "en": "annoyed / irritated",
+    "root": "sebel",
+    "root_cn": "烦；恼火",
+    "example": "Aku sebel karena dia mengubah rencana tanpa bilang dulu.",
+    "example_cn": "我很烦，因为他没提前说就改了计划。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
+  },
+  {
+    "word": "cerewet",
+    "cn": "话多；唠叨",
+    "en": "talkative / fussy / nagging",
+    "root": "cerewet",
+    "root_cn": "话多；挑剔唠叨",
+    "example": "Dia baik, cuma kadang agak cerewet soal pekerjaan.",
+    "example_cn": "他人很好，只是有时在工作方面有点唠叨。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-19"
+    ]
   }
 ];
