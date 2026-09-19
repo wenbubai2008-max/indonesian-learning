@@ -58,6 +58,16 @@
     return out;
   }
   function memState(mm,word){return mm[word]||mm[norm(word)]||'';}
+  function completedLesson(x){
+    const dates=[];
+    (x&&x.dates||[]).forEach(function(d){d=String(d||'').slice(0,10);if(d&&!dates.includes(d))dates.push(d);});
+    [x&&x.first_seen,x&&x.last_seen].forEach(function(v){const d=String(v||'').slice(0,10);if(d&&!dates.includes(d))dates.push(d);});
+    const sessions=(x&&x.sessions||[]).map(String);
+    return dates.some(function(d){
+      if(!sessions.length)return localStorage.getItem('done_'+d+'_am')==='1'||localStorage.getItem('done_'+d+'_pm')==='1';
+      return sessions.some(function(s){const key=/08:00|早间/.test(s)?'am':(/18:00|19:00|晚间/.test(s)?'pm':'');return key&&localStorage.getItem('done_'+d+'_'+key)==='1';});
+    });
+  }
   function candidateList(){
     const now=Date.now(),states=stateMap(),qs=quickState(),mm=memory(),wm=weakMap(),out=[];
     dailyWords().forEach(function(x){
@@ -70,6 +80,8 @@
       const freshFailure=hardWrong||!!(weakSignal&&(!autoLast||weakSignal>autoLast));
       const fuzzy=m==='fuzzy',dont=m==='dont';
       const strong=hardWrong||weak||fuzzy||dont;
+      const learned=completedLesson(x)||!!p.last||!!w||!!m||!!st;
+      if(!learned)return;
       if(m==='know'&&!strong&&(!st||st.status==='stable'))return;
       if(st&&st.status==='stable'&&!strong)return;
       if(age===0&&!strong&&!st)return;
