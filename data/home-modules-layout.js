@@ -483,14 +483,14 @@
       .difficultyPageCard{overflow:hidden}
       .difficultyHead{align-items:flex-start!important;gap:14px}
       .difficultyHead h2{margin:0 0 5px}
-      .difficultyIndex{margin:20px 0 2px;display:grid;gap:9px}
-      .difficultyIndexItem{width:100%;border:1px solid #dfe7f0;background:#fbfdff;border-radius:15px;padding:15px 16px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;text-align:left;cursor:pointer;color:#172033;transition:.16s ease}
-      .difficultyIndexItem:hover{border-color:#9ac5df;background:#f6fbff;transform:translateY(-1px)}
-      .difficultyIndexText b{font-size:19px}.difficultyIndexItem small{display:block;color:#6b7280;margin-top:4px;font-size:12px}
+      .difficultyIndex{margin:20px 0 2px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+      .difficultyIndexItem{width:100%;min-width:0;min-height:108px;border:1px solid #dfe7f0;background:#fbfdff;border-radius:15px;padding:15px 42px 15px 15px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:center;text-align:left;cursor:pointer;color:#172033;transition:.16s ease;position:relative}
+      .difficultyIndexItem:hover{border-color:#9ac5df;background:#f6fbff;transform:translateY(-2px);box-shadow:0 6px 16px rgba(23,32,51,.05)}
+      .difficultyIndexText{min-width:0}.difficultyIndexText b{font-size:18px;line-height:1.25}.difficultyIndexItem small{display:block;color:#6b7280;margin-top:5px;font-size:12px;line-height:1.45}
       .difficultyNo{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;border-radius:10px;background:#e9f5fc;color:#277ba6;font-weight:900;font-size:13px;letter-spacing:.04em}
       .difficultyNo.big{min-width:42px;height:42px;border-radius:12px;font-size:15px}
       .keanNo{background:#f0ebff;color:#6d51a7}
-      .difficultyArrow{font-size:20px;color:#7a8ba3}
+      .difficultyArrow{font-size:20px;color:#7a8ba3;position:absolute;right:15px;top:50%;transform:translateY(-50%)}
       .difficultyInnerBack{border:0;background:transparent;color:#3157d5;font-weight:800;cursor:pointer;padding:4px 0 13px}
       .difficultyWordHero{border-radius:20px;padding:22px;background:linear-gradient(135deg,#f1f8ff,#f8fbff);border:1px solid #dcecf7}
       .difficultyWordHero.keanHero{background:linear-gradient(135deg,#f8f5ff,#fcfbff);border-color:#e6ddf6}
@@ -554,7 +554,8 @@
       .dpQuiz{margin-top:22px}.dpQuizRow{display:grid;grid-template-columns:1fr auto minmax(95px,auto);gap:10px;align-items:center;border-top:1px solid #e8ebf0;padding:10px 0}.dpQuizRow:first-of-type{border-top:0}.dpQuizRow>span{font-size:13px;font-weight:750}.dpQuizRow>div{display:flex;gap:6px}.dpQuizRow button{border:1px solid #dfe4eb;background:#fff;border-radius:9px;padding:7px 10px;cursor:pointer}.dpQuizRow button:hover{background:#f7f9fc}.dpQuizRow button.dpQuizOk{background:#edf9f0;border-color:#76bd87;color:#17652d}.dpQuizRow button.dpQuizBad{background:#fff0ef;border-color:#dd8b84;color:#9d2f28}.dpQuizRow button:disabled{cursor:default}.dpQuizResult{font-size:11px;color:#657386}
       .dpFormula{background:linear-gradient(135deg,#244d77,#80511f)}
 
-      @media(max-width:1050px){#home .modules.homeModulesCompact{grid-template-columns:repeat(3,minmax(0,1fr))!important}.triExplain{grid-template-columns:1fr}}
+      @media(max-width:1050px){#home .modules.homeModulesCompact{grid-template-columns:repeat(3,minmax(0,1fr))!important}.triExplain{grid-template-columns:1fr}.difficultyIndex{grid-template-columns:repeat(2,minmax(0,1fr))}}
+      @media(max-width:620px){.difficultyIndex{grid-template-columns:1fr}.difficultyIndexItem{min-height:92px}}
       @media(max-width:760px){
         .difficultyThree{grid-template-columns:1fr}
         .compareGrid{grid-template-columns:1fr}.compareVs{justify-self:center}
