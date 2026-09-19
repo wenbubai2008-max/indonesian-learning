@@ -1,0 +1,13 @@
+window.EXTENSIVE_READING_ARCHIVE_ITEM={id:'er-20260918-cek-kesehatan-gratis',date:'2026-09-18',title:'Cek Kesehatan Gratis Sekarang Ada Tindak Lanjut',title_cn:'印尼免费健康检查现在提供后续处理',category:'印尼 · 日常生活 · 健康 · 公共服务 · 实时新闻改写',level:'A2+ → B1',minutes:4,source_name:'ANTARA News',source_date:'2026-09-18',text:`Masyarakat Indonesia dianjurkan memanfaatkan program Cek Kesehatan Gratis atau CKG setidaknya satu kali setiap tahun. Kementerian Kesehatan menjelaskan bahwa layanan ini sekarang tidak berhenti setelah pemeriksaan awal. Jika ditemukan faktor risiko atau penyakit, peserta akan mendapatkan tindak lanjut medis dan pendampingan sesuai kebutuhan.
+
+Pemeriksaan sejak awal penting karena beberapa masalah kesehatan belum tentu langsung terasa. Dengan mengetahui risikonya lebih cepat, masyarakat bisa mengambil langkah yang diperlukan sebelum kondisi menjadi lebih berat. Penanganan lanjutan juga dapat dikoordinasikan dengan Jaminan Kesehatan Nasional sesuai ketentuan yang berlaku.
+
+Proses CKG dibuat agar cukup mudah diakses. Di puskesmas dan fasilitas kesehatan tingkat pertama, rangkaian layanan mulai dari pendaftaran, pemeriksaan identitas, pemeriksaan kesehatan, sampai edukasi dan rekomendasi tindak lanjut dirancang berlangsung sekitar 60 menit.
+
+Ada beberapa cara untuk mendaftar. Masyarakat dapat menggunakan aplikasi SATUSEHAT Mobile, menghubungi WhatsApp Chatbot Kementerian Kesehatan, atau datang langsung ke puskesmas terdekat. Jika memilih datang langsung, cukup membawa KTP atau kartu keluarga.`,cn:`印尼政府建议民众每年至少参加一次“免费健康检查”（CKG）。卫生部说明，这项服务现在不会在初步检查结束后就停止。如果发现疾病风险因素或疾病，参加者会根据需要获得后续医疗处理和指导。
+
+尽早检查很重要，因为有些健康问题不一定马上让人感觉到。更早知道风险，可以让人们在情况变得更严重之前采取必要措施。后续处理也可以按照相关规定与国家健康保险 JKN 进行协调。
+
+CKG 的流程被设计得比较容易使用。在社区卫生中心和基层医疗机构，从登记、身份核验、健康检查，到健康教育以及后续建议，整个服务流程设计为大约 60 分钟。
+
+登记方式有几种。民众可以使用 SATUSEHAT Mobile 应用、联系印尼卫生部的 WhatsApp Chatbot，或者直接前往最近的社区卫生中心。如果选择直接前往，只需要携带 KTP 身份证或家庭卡。`,hints:[{term:'dianjurkan',cn:'被建议；被鼓励',root:'anjur',formation:'di- + anjur + -kan'},{term:'setidaknya',cn:'至少'},{term:'pemeriksaan awal',cn:'初步检查',root:'periksa',formation:'peN- + periksa + -an'},{term:'faktor risiko',cn:'风险因素'},{term:'tindak lanjut',cn:'后续处理；跟进'},{term:'pendampingan',cn:'陪伴式指导；协助',root:'damping',formation:'peN- + damping + -an'},{term:'sesuai kebutuhan',cn:'根据需要'},{term:'mengambil langkah',cn:'采取措施'},{term:'dikoordinasikan',cn:'被协调；进行协调',root:'koordinasi',formation:'di- + koordinasi + -kan'},{term:'sesuai ketentuan',cn:'按照规定',root:'tentu',formation:'ke- + tentu + -an'},{term:'mudah diakses',cn:'容易获得；方便使用',root:'akses',formation:'di- + akses'},{term:'rangkaian layanan',cn:'一系列服务流程'},{term:'pendaftaran',cn:'登记；注册',root:'daftar',formation:'peN- + daftar + -an'},{term:'rekomendasi',cn:'建议；推荐'},{term:'datang langsung',cn:'直接前往'}]};
