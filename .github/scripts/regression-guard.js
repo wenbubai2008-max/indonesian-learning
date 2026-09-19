@@ -195,13 +195,18 @@ try {
   ok(css.includes('@media (max-width:1050px)') && css.includes('repeat(3,minmax(0,1fr))'), 'first-paint medium layout keeps 3 columns');
   ok(css.includes('@media (max-width:700px)') && css.includes('repeat(2,minmax(0,1fr))'), 'first-paint mobile layout keeps 2 columns');
   ok(css.includes('@media (max-width:430px)') && css.includes('grid-template-columns:1fr'), 'first-paint narrow layout keeps 1 column');
-  ok(css.includes('[onclick*="vocab"]{order:1') && css.includes('[onclick*="openExtensiveV2"]{order:2') && css.includes('[onclick*="openQuickPracticeV2"]{order:3') && css.includes('[onclick*="openWeaknessV2"]{order:4') && css.includes('[onclick*="affix"]{order:5'), 'first-paint card order is protected');
+  ok(css.includes('[data-home-module="vocab"]{order:1') && css.includes('[data-home-module="reading"]{order:2') && css.includes('[data-home-module="quick"]{order:3') && css.includes('[data-home-module="weak"]{order:4') && css.includes('[data-home-module="automation"]{order:5') && css.includes('[data-home-module="difficulty"]{order:6') && css.includes('[data-home-module="affix"]{order:7'), 'homepage CSS order matches the single module renderer');
 
-  const protectedOrder = "const ORDER=['词汇学习','泛读','快速练习','弱项强化','前后缀','难点解释'];";
+  const protectedOrder = "const ORDER=['词汇学习','泛读','快速练习','弱项强化','自动训练','难点解释','前后缀'];";
   const layout = read('data/home-modules-layout.js');
+  const indexHtml = read('index.html');
   ok(layout.includes(protectedOrder), 'JS card order matches the protected order');
+  ok(layout.includes('const HOME_MODULES=[') && layout.includes('window.renderHomeModules=renderHomeModules'), 'homepage has one HOME_MODULES renderer');
+  ok(indexHtml.includes('<div class="modules" id="homeModules"></div>'), 'index keeps only the homepage module mount point');
+  ok(!/<div class="modules"[^>]*>\s*<button/s.test(indexHtml), 'index does not hard-code homepage cards');
   if(fs.existsSync(rel('data/home-modules-stability.js'))){
-    ok(read('data/home-modules-stability.js').includes(protectedOrder), 'secondary homepage stability order cannot contradict primary order');
+    const stability = read('data/home-modules-stability.js');
+    ok(/Retired 2026-09-19/.test(stability) && !/const ORDER=|MutationObserver/.test(stability), 'retired homepage stability script cannot reorder cards');
   }
 
   const compat = read('data/vocab-dom-compat.js');
