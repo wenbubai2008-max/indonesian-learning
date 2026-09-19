@@ -19,20 +19,25 @@
     el._timer=setTimeout(()=>{if(el&&el.remove)el.remove()},2400);
   }
 
+  function isIndonesianVoice(v){
+    if(!v)return false;
+    const lang=String(v.lang||'');
+    const label=((v.name||'')+' '+lang).toLowerCase();
+    return /^id(?:[-_]|$)/i.test(lang)||/indones/.test(label);
+  }
+
   function pickVoice(voices){
-    return voices.find(x=>/^id[-_]/i.test(x.lang||''))||
-      voices.find(x=>(x.lang||'').toLowerCase().includes('indones'))||
-      voices.find(x=>/^ms[-_]/i.test(x.lang||''))||
-      voices.find(x=>/^en[-_]/i.test(x.lang||''))||voices[0]||null;
+    return (voices||[]).find(x=>/^id(?:[-_]|$)/i.test(x.lang||''))||
+      (voices||[]).find(isIndonesianVoice)||null;
   }
 
   function refreshVoices(){
     try{
       if(!window.speechSynthesis)return null;
       const voices=speechSynthesis.getVoices()||[];
-      const found=pickVoice(voices);if(found)preferredVoice=found;
+      preferredVoice=pickVoice(voices);
       return preferredVoice;
-    }catch(e){return preferredVoice;}
+    }catch(e){preferredVoice=null;return null;}
   }
 
   function prewarmVoices(){
@@ -73,9 +78,10 @@
     return new Promise((resolve,reject)=>{
       if(!('speechSynthesis' in window)||typeof SpeechSynthesisUtterance==='undefined')return reject(new Error('no speech synthesis'));
       try{
+        const voice=(preferredVoice&&isIndonesianVoice(preferredVoice))?preferredVoice:refreshVoices();
+        if(!voice)return reject(new Error('no Indonesian voice'));
         const u=new SpeechSynthesisUtterance(text);
-        activeUtterance=u;u.lang='id-ID';
-        const voice=preferredVoice||refreshVoices();if(voice)u.voice=voice;
+        activeUtterance=u;u.lang='id-ID';u.voice=voice;
         u.rate=.88;u.pitch=1;u.volume=1;
         let settled=false,started=false;
         const startLimit=String(text||'').length<=40?1800:2800;
