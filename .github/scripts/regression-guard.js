@@ -211,6 +211,14 @@ try {
 
   const historyV2 = read('data/history-v2.js');
   ok(historyV2.includes("const PM_SWITCH_DATE='2026-09-16'") && /pmTimeForDate\(d\)/.test(historyV2), 'loaded lesson renderer handles 18:00/19:00 by lesson date');
+  ok(/async function refreshDailyArchiveOnOpen\(\)/.test(historyV2) && /fetchJSON\('data\/daily\/index\.json'\)/.test(historyV2), 'daily lesson entry refreshes the course index only when opened');
+  ok(/await refreshDailyArchiveOnOpen\(\);d=exists\(TODAY,s\)\?TODAY:latest\(s\)/.test(historyV2), 'daily lesson entry prefers today and falls back to latest available lesson');
+
+  const extensiveUi = read('data/extensive-reading-history-ui.js');
+  ok(/function loadFreshSource\(path\)/.test(extensiveUi) && /\?v='\+Date\.now\(\)/.test(extensiveUi), 'extensive reading entry bypasses stale browser cache on demand');
+  ok(/loadFreshSource\('data\/extensive-reading-data\.js'\)/.test(extensiveUi) && /loadFreshSource\('data\/extensive-reading-history\.js'\)/.test(extensiveUi), 'extensive reading refreshes current article and history index on entry');
+  ok(/window\.openExtensiveV2=async function\(\).*await refreshLatestSources\(\)/s.test(extensiveUi), 'extensive reading loads latest available content when opened');
+  ok(!/setInterval\s*\(|new MutationObserver|location\.reload\s*\(/.test(historyV2+extensiveUi), 'on-demand refresh adds no polling, whole-page observer, or forced reload');
 
   const polish = read('data/daily-ui-polish.js');
   ok(/pmTimeForDate\(info\.date\)/.test(polish), 'completion toast uses date-aware PM time');
