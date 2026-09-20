@@ -360,8 +360,8 @@
                 <h3>dapat</h3>
                 <div class="dpCoreBig">GET / CAN</div>
                 <p class="dpCoreCn">核心画面：<b>得到、拿到；有条件做到 → 可以</b></p>
-                <div class="dpLang"><span>EN</span> get · obtain · can</div>
-                <div class="dpLang"><span>ID</span> memperoleh · menerima · bisa</div>
+                <div class="dpLang"><span>EN</span> get · receive · obtain · can</div>
+                <div class="dpLang"><span>ID</span> mendapat / memperoleh · bisa</div>
               </div>
               <div class="dpCoreVs">VS</div>
               <div class="dpCoreCard padatCard">
@@ -378,21 +378,22 @@
               <div class="dpBridgeTitle">为什么 dapat 既能“得到”，又能“可以”？</div>
               <div class="dpBridgeFlow"><span>得到机会 / 条件</span><b>→</b><span>有能力或条件做</span><b>→</b><span>dapat = can</span></div>
               <p>所以不要把这两个意思完全拆开。可以先把它们连成：<b>“拿得到 / 条件允许” → “能够”。</b></p>
+              <div class="dpSpeechNote"><b>雅加达口语提醒：</b><span>表示“得到”时常听到 <strong>dapet</strong>；表示“能够”时，日常聊天通常更爱说 <strong>bisa</strong>。<strong>dapat = can</strong> 更偏正式、书面或较正式表达。</span></div>
             </div>
 
             <div class="compareBlock">
               <div class="compareTitle">放到句子里，多组并排看</div>
               <div class="dpSentencePairs">
                 <div class="dpPairRow">
-                  <div class="dpSentence dapatTint"><b>Saya dapat pekerjaan baru.</b><button class="miniSound" type="button" onclick="speakIdText('Saya dapat pekerjaan baru.',this)">🔊</button><span>我得到了一份新工作。</span><small>I got a new job.</small></div>
+                  <div class="dpSentence dapatTint"><b>Aku dapat kerjaan baru.</b><button class="miniSound" type="button" onclick="speakIdText('Aku dapat kerjaan baru.',this)">🔊</button><span>我找到 / 得到了一份新工作。</span><small>Jakarta口语常听到：Aku <b>dapet</b> kerjaan baru.</small></div>
                   <div class="dpSentence padatTint"><b>Jadwal saya padat.</b><button class="miniSound" type="button" onclick="speakIdText('Jadwal saya padat.',this)">🔊</button><span>我的日程很满。</span><small>My schedule is packed.</small></div>
                 </div>
                 <div class="dpPairRow">
                   <div class="dpSentence dapatTint"><b>Aku dapat tiketnya.</b><button class="miniSound" type="button" onclick="speakIdText('Aku dapat tiketnya.',this)">🔊</button><span>我拿到票了。</span><small>I got the ticket.</small></div>
-                  <div class="dpSentence padatTint"><b>Busnya padat.</b><button class="miniSound" type="button" onclick="speakIdText('Busnya padat.',this)">🔊</button><span>公交车里很挤。</span><small>The bus is packed.</small></div>
+                  <div class="dpSentence padatTint"><b>Jalanan lagi padat.</b><button class="miniSound" type="button" onclick="speakIdText('Jalanan lagi padat.',this)">🔊</button><span>现在路上很堵。</span><small>Traffic is heavy right now.</small></div>
                 </div>
                 <div class="dpPairRow">
-                  <div class="dpSentence dapatTint"><b>Saya dapat datang besok.</b><button class="miniSound" type="button" onclick="speakIdText('Saya dapat datang besok.',this)">🔊</button><span>我明天可以来。</span><small>I can come tomorrow.</small></div>
+                  <div class="dpSentence dapatTint"><b>Saya dapat datang besok.</b><button class="miniSound" type="button" onclick="speakIdText('Saya dapat datang besok.',this)">🔊</button><span>我明天可以来。</span><small>正确但偏正式；口语更常：Aku bisa datang besok.</small></div>
                   <div class="dpSentence padatTint"><b>Daerah ini padat penduduk.</b><button class="miniSound" type="button" onclick="speakIdText('Daerah ini padat penduduk.',this)">🔊</button><span>这个地区人口密集。</span><small>This area is densely populated.</small></div>
                 </div>
               </div>
@@ -402,22 +403,21 @@
               <div class="dpFamilyCard dapatFamily">
                 <div class="dpFamilyHead"><span>🌱</span><div><h3>dapat 词族</h3><small>大多围绕“得到 / 获得 / 能够”</small></div></div>
                 <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>mendapat</strong><button class="miniSound" type="button" onclick="speakIdText('mendapat',this)">🔊</button><small>得到、获得 · get / receive</small></div>
-                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>mendapatkan</strong><button class="miniSound" type="button" onclick="speakIdText('mendapatkan',this)">🔊</button><small>获得、取得 · obtain / get</small></div>
-                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>pendapat</strong><button class="miniSound" type="button" onclick="speakIdText('pendapat',this)">🔊</button><small>意见、看法 · opinion / view（词义已经固定化，不要按“得到”直译）</small></div>
-                <div class="wordFamily audioFamily"><b>pendapat</b><span>→</span><strong>berpendapat</strong><button class="miniSound" type="button" onclick="speakIdText('berpendapat',this)">🔊</button><small>认为、持有看法 · think / be of the opinion</small></div>
-                <div class="wordFamily audioFamily"><b>pendapat</b><span>→</span><strong>sependapat</strong><button class="miniSound" type="button" onclick="speakIdText('sependapat',this)">🔊</button><small>意见一致 · agree / be of the same opinion</small></div>
+                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>mendapatkan</strong><button class="miniSound" type="button" onclick="speakIdText('mendapatkan',this)">🔊</button><small>获得、取得 · get / obtain</small></div>
+                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>pendapat</strong><button class="miniSound" type="button" onclick="speakIdText('pendapat',this)">🔊</button><small>意见、看法 · opinion / view（高频固定词义）</small></div>
+                <div class="wordFamily audioFamily"><b>pendapat</b><span>→</span><strong>berpendapat</strong><button class="miniSound" type="button" onclick="speakIdText('berpendapat',this)">🔊</button><small>认为、持某种看法 · be of the opinion</small></div>
+                <div class="wordFamily audioFamily"><b>pendapat</b><span>→</span><strong>sependapat</strong><button class="miniSound" type="button" onclick="speakIdText('sependapat',this)">🔊</button><small>意见一致 · agree / share the same view</small></div>
                 <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>pendapatan</strong><button class="miniSound" type="button" onclick="speakIdText('pendapatan',this)">🔊</button><small>收入 · income / revenue</small></div>
-                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>terdapat</strong><button class="miniSound" type="button" onclick="speakIdText('terdapat',this)">🔊</button><small>有、存在、可见于 · there is/are · be found</small></div>
-                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>didapat / didapatkan</strong><button class="miniSound" type="button" onclick="speakIdText('didapatkan',this)">🔊</button><small>被获得、得到 · obtained</small></div>
+                <div class="wordFamily audioFamily"><b>dapat</b><span>→</span><strong>terdapat</strong><button class="miniSound" type="button" onclick="speakIdText('terdapat',this)">🔊</button><small>有、存在于 · there is/are / be found（书面、正式很常见）</small></div>
+                <div class="dpFamilyNote"><b>优先掌握这 7 个：</b><span>日常和常见书面语已经够用，不再把透明的被动形式和低频派生词单独堆进来。</span></div>
                 <div class="dpFamilyNote"><b>特别注意：</b><span><strong>pendapat</strong> = 意见 / 看法；<strong>pendapatan</strong> = 收入。只差 <b>-an</b>，意思已经完全不同。</span></div>
               </div>
               <div class="dpFamilyCard padatFamily">
                 <div class="dpFamilyHead"><span>🧱</span><div><h3>padat 词族</h3><small>大多围绕“密 / 满 / 压实”</small></div></div>
                 <div class="wordFamily audioFamily"><b>padat</b><span>→</span><strong>kepadatan</strong><button class="miniSound" type="button" onclick="speakIdText('kepadatan',this)">🔊</button><small>密度、拥挤程度 · density</small></div>
-                <div class="wordFamily audioFamily"><b>padat</b><span>→</span><strong>memadatkan</strong><button class="miniSound" type="button" onclick="speakIdText('memadatkan',this)">🔊</button><small>使变紧实、压实 · compact</small></div>
-                <div class="wordFamily audioFamily"><b>padat</b><span>→</span><strong>pemadatan</strong><button class="miniSound" type="button" onclick="speakIdText('pemadatan',this)">🔊</button><small>压实、压密 · compaction</small></div>
-                <div class="wordFamily audioFamily"><b>padat</b><span>→</span><strong>dipadatkan</strong><button class="miniSound" type="button" onclick="speakIdText('dipadatkan',this)">🔊</button><small>被压实 · compacted</small></div>
-                <div class="dpCollocations"><b>高频组合</b><span>padat penduduk</span><span>lalu lintas padat</span><span>jadwal padat</span><span>makanan padat</span><span>padat karya</span></div>
+                <div class="wordFamily audioFamily"><b>padat</b><span>→</span><strong>terpadat</strong><button class="miniSound" type="button" onclick="speakIdText('terpadat',this)">🔊</button><small>最密集、最拥挤 · densest / most crowded</small></div>
+                <div class="dpFamilyNote"><b>词族不用背太多：</b><span><strong>pemadatan / pemadat / dipadatkan</strong> 等更多出现在施工、技术语境，这里先不作为重点。</span></div>
+                <div class="dpCollocations"><b>真正高频的 padat 组合</b><span>padat penduduk</span><span>lalu lintas padat</span><span>jalanan padat</span><span>jadwal padat</span><span>padat merayap</span><span>zat / benda padat</span><span>padat karya</span></div>
               </div>
             </div>
 
@@ -569,7 +569,7 @@
       .dpSoundRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.dpSoundButton{border:1px solid #e2d8ca;background:#fff;border-radius:10px;padding:8px 11px;font-weight:800;color:#4c5969;cursor:pointer}.dpSoundButton:hover{background:#fff8ee;border-color:#d8b98f}.dpSoundButton.compare{color:#8c551d;background:#fffaf2}
       .dpPronounce{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin:15px 0;padding:15px;border:1px dashed #dfd6ca;border-radius:16px;background:#fffdf9}.dpPronounce>div{text-align:center}.dpPronounce b{font-size:25px;letter-spacing:.04em}.dpPronounce small{display:block;color:#6d7786;font-size:12px;margin-top:5px}.dpSyllableHot{color:#2d67a5;background:#edf5ff;border-radius:7px;padding:2px 6px}.dpSyllableHot.alt{color:#9a5b1c;background:#fff0df}.dpSwap{font-size:21px;color:#9aa4b2}
       .dpCoreGrid{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:stretch;margin:16px 0}.dpCoreCard{border:1px solid #e0e6ee;border-radius:18px;padding:18px;background:#fff}.dpCoreCard h3{font-size:27px;margin:5px 0}.dpCoreIcon{font-size:25px}.dpCoreBig{font-size:13px;font-weight:900;letter-spacing:.08em;color:#667085}.dpCoreCn{font-size:14px;line-height:1.65;color:#4e5b6d}.dapatCard{background:#f6faff;border-color:#d6e6f7}.dapatCard h3{color:#2d67a5}.padatCard{background:#fffaf4;border-color:#efdfca}.padatCard h3{color:#9a5b1c}.dpCoreVs{align-self:center;font-size:12px;font-weight:900;color:#8b95a5;background:#eef1f5;border-radius:999px;padding:7px}.dpLang{margin-top:7px;font-size:12px;color:#667085}.dpLang span{display:inline-flex;min-width:27px;justify-content:center;margin-right:6px;border-radius:6px;padding:2px 5px;background:#fff;font-weight:900;color:#475467}
-      .dpBridge{border:1px solid #dbe5f1;border-radius:16px;background:#f9fbff;padding:16px;margin:18px 0}.dpBridgeTitle{font-size:17px;font-weight:900;color:#2d5e93}.dpBridgeFlow{display:flex;gap:9px;align-items:center;justify-content:center;margin:13px 0;flex-wrap:wrap}.dpBridgeFlow span{background:#fff;border:1px solid #d8e4f0;border-radius:9px;padding:7px 10px;font-size:12px;font-weight:800}.dpBridgeFlow b{color:#7793b0}.dpBridge p{margin:0;color:#5f6c7d;font-size:13px;line-height:1.65}
+      .dpBridge{border:1px solid #dbe5f1;border-radius:16px;background:#f9fbff;padding:16px;margin:18px 0}.dpBridgeTitle{font-size:17px;font-weight:900;color:#2d5e93}.dpBridgeFlow{display:flex;gap:9px;align-items:center;justify-content:center;margin:13px 0;flex-wrap:wrap}.dpBridgeFlow span{background:#fff;border:1px solid #d8e4f0;border-radius:9px;padding:7px 10px;font-size:12px;font-weight:800}.dpBridgeFlow b{color:#7793b0}.dpBridge p{margin:0;color:#5f6c7d;font-size:13px;line-height:1.65}.dpSpeechNote{margin-top:12px;padding:10px 11px;border-radius:10px;background:#eef6ff;border:1px solid #d5e5f5;font-size:12px;line-height:1.6;color:#52647a}.dpSpeechNote b{color:#2d67a5}.dpSpeechNote strong{color:#263c55}
       .dpSentencePairs{display:grid;gap:9px}.dpPairRow{display:grid;grid-template-columns:1fr 1fr;gap:9px}.dpSentence{border:1px solid #e1e6ed;border-radius:14px;padding:13px;min-width:0}.dpSentence b{font-size:14px}.dpSentence>span,.dpSentence>small{display:block;margin-top:5px;color:#667085;line-height:1.45}.dpSentence>small{font-size:11px;color:#8791a0}.dapatTint{background:#f7fbff;border-color:#dceaf7}.padatTint{background:#fffaf5;border-color:#eee0cf}
       .dpFamilyGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}.dpFamilyCard{border:1px solid #e0e6ee;border-radius:18px;padding:16px;background:#fff}.dapatFamily{background:#f8fbff;border-color:#dce9f5}.padatFamily{background:#fffaf5;border-color:#eee0cf}.dpFamilyHead{display:flex;gap:9px;align-items:center;margin-bottom:5px}.dpFamilyHead>span{font-size:24px}.dpFamilyHead h3{margin:0;font-size:19px}.dpFamilyHead small{color:#7b8795}.dpFamilyNote{margin-top:10px;padding:10px 11px;border-radius:11px;background:#fff;border:1px solid #d9e7f4;font-size:12px;line-height:1.55;color:#5d6b7c}.dpFamilyNote b{color:#2d67a5}.dpFamilyNote strong{color:#24364c}.dpCollocations{border-top:1px solid rgba(0,0,0,.06);margin-top:8px;padding-top:10px;display:flex;gap:6px;flex-wrap:wrap}.dpCollocations b{width:100%;font-size:12px;color:#7b5b34}.dpCollocations span{background:#fff;border:1px solid #eadbc8;border-radius:999px;padding:5px 8px;font-size:11px;color:#68543d}
       .dpQuickRule{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:stretch;border-radius:17px;padding:16px;background:#27364a;color:#fff;margin-top:18px}.dpQuickRule>div:not(.dpRuleDivider){display:grid;grid-template-columns:auto 1fr;gap:4px 9px;align-items:center}.dpQuickRule span{font-size:22px;grid-row:1/3}.dpQuickRule b{font-size:13px}.dpQuickRule strong{font-size:18px}.dpQuickRule>div:first-child strong{color:#9dcbff}.dpQuickRule>div:last-child strong{color:#ffd29e}.dpRuleDivider{width:1px;background:rgba(255,255,255,.2)}
