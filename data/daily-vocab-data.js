@@ -3118,9 +3118,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-09-18 18:00",
+    "last_seen": "2026-09-20 18:00",
     "sessions": [
       "19:00",
       "18:00"
@@ -3129,11 +3129,12 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29",
       "2026-09-12",
       "2026-09-17",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-20"
     ],
     "root_cn": "确定；一定",
-    "example": "Kita perlu menentukan waktu yang pas untuk mulai.",
-    "example_cn": "我们需要确定一个合适的开始时间。"
+    "example": "Kami perlu menentukan siapa yang akan menjawab komplain itu.",
+    "example_cn": "我们需要确定由谁来回复那条投诉。"
   },
   {
     "word": "menangani",
@@ -6686,23 +6687,24 @@ window.DAILY_VOCAB_DB = [
     "en": "decide; determine; set",
     "root": "tentu",
     "root_cn": "确定；一定",
-    "example": "Aku belum bisa nentuin pilihan sebelum semua informasi jelas.",
-    "example_cn": "所有信息清楚之前，我还无法作出选择。",
+    "example": "Kita harus nentuin waktu yang paling pas untuk menghubungi pelanggan.",
+    "example_cn": "我们得确定最合适的时间联系顾客。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-19 18:00",
+    "last_seen": "2026-09-20 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-10",
-      "2026-09-19"
+      "2026-09-19",
+      "2026-09-20"
     ]
   },
   {
@@ -7410,20 +7412,23 @@ window.DAILY_VOCAB_DB = [
     "en": "get provoked; take the bait; be drawn into reacting",
     "root": "pancing",
     "root_cn": "钓；引诱；诱出反应",
-    "example": "Aku tadi hampir kepancing, tapi akhirnya milih diam dulu.",
-    "example_cn": "我刚才差点被激得回嘴，不过最后还是选择先不说。",
+    "example": "Kalau ada komplain keras, jangan langsung kepancing emosi.",
+    "example_cn": "如果遇到语气很冲的投诉，不要马上被激起情绪。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 08:00",
+    "last_seen": "2026-09-20 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-12"
+      "2026-09-12",
+      "2026-09-20"
     ]
   },
   {
@@ -8588,23 +8593,24 @@ window.DAILY_VOCAB_DB = [
     "en": "need; require",
     "root": "butuh",
     "root_cn": "需要",
-    "example": "Kita membutuhkan waktu sebentar sebelum membuat keputusan.",
-    "example_cn": "我们在作决定之前需要一点时间。",
+    "example": "Masalah pelanggan ini membutuhkan jawaban yang jelas.",
+    "example_cn": "这个顾客问题需要一个清楚的答复。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-19 18:00",
+    "last_seen": "2026-09-20 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-16",
-      "2026-09-19"
+      "2026-09-19",
+      "2026-09-20"
     ]
   },
   {
@@ -8725,21 +8731,22 @@ window.DAILY_VOCAB_DB = [
     "en": "plug in; insert",
     "root": "colok",
     "root_cn": "插；插入",
-    "example": "Colok charger dulu, baterai HP-ku hampir habis.",
-    "example_cn": "先把充电器插上，我手机快没电了。",
+    "example": "Tolong colok charger ini ke stopkontak dekat meja.",
+    "example_cn": "请把这个充电器插到桌子旁边的插座上。",
     "categories": [
       "每日学习",
       "18:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 18:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-20 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-09-20"
     ]
   },
   {
@@ -8992,20 +8999,21 @@ window.DAILY_VOCAB_DB = [
     "en": "do; carry out",
     "root": "laku",
     "root_cn": "行为；做法",
-    "example": "Kalau sudah jelas, lakukan bagian yang paling penting dulu.",
-    "example_cn": "如果已经清楚了，就先做最重要的部分。",
+    "example": "Kalau informasinya sudah jelas, lakukan pemeriksaan sekali lagi.",
+    "example_cn": "如果信息已经清楚了，再检查一次。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 18:00",
-    "last_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-20 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-20"
     ]
   },
   {
@@ -9850,6 +9858,95 @@ window.DAILY_VOCAB_DB = [
     "last_seen": "2026-09-20 08:00",
     "sessions": [
       "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "raya",
+    "cn": "盛大的；节庆的；大规模的",
+    "en": "grand; festive; major",
+    "root": "raya",
+    "root_cn": "盛大；节庆；大",
+    "example": "Keluarga kami biasanya berkumpul saat hari raya.",
+    "example_cn": "我们家通常会在节日期间团聚。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 18:00",
+    "last_seen": "2026-09-20 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "amat",
+    "cn": "非常；很",
+    "en": "very; extremely",
+    "root": "amat",
+    "root_cn": "非常；很",
+    "example": "Masalah ini amat penting, jadi kita perlu membahasnya dengan tenang.",
+    "example_cn": "这个问题非常重要，所以我们需要冷静讨论。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 18:00",
+    "last_seen": "2026-09-20 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "langit",
+    "cn": "天空",
+    "en": "sky",
+    "root": "langit",
+    "root_cn": "天空",
+    "example": "Sore ini langit masih cerah meskipun tadi sempat hujan.",
+    "example_cn": "今天傍晚天空仍然晴朗，虽然刚才一度下过雨。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 18:00",
+    "last_seen": "2026-09-20 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "komplain",
+    "cn": "投诉；抱怨",
+    "en": "complain; complaint",
+    "root": "komplain",
+    "root_cn": "投诉；抱怨",
+    "example": "Pelanggan komplain karena pesanannya datang terlambat.",
+    "example_cn": "顾客因为订单送晚了而投诉。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 18:00",
+    "last_seen": "2026-09-20 18:00",
+    "sessions": [
+      "18:00"
     ],
     "dates": [
       "2026-09-20"
