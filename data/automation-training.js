@@ -190,7 +190,7 @@
     input.addEventListener('focus',begin);input.addEventListener('input',begin);
     function submit(){if(card.dataset.done)return;begin();const good=norm(input.value)===norm(word),elapsed=Date.now()-start;if(!good){resultBox(card,'还不对，再想一下；也可以点“想不出”。',false);return;}const kind=elapsed<=5000?'direct':'slow';finishCard(card,word,1,{ok:true,kind:kind},item,kind==='direct'?'✓ 主动提取成功':'✓ 答对了，但这次提取偏慢，下一次仍会继续验证');}
     card.querySelector('.autoSubmit').onclick=submit;input.onkeydown=function(e){if(e.key==='Enter')submit();};
-    card.querySelector('.autoGiveUp').onclick=function(){finishCard(card,word,1,{ok:false,kind:'fail'},item,'答案：'+word+'。这个词会继续留在自动化候选里。');};
+    card.querySelector('.autoGiveUp').onclick=function(){if(card.dataset.done)return;begin();if(norm(input.value)===norm(word)){const elapsed=Date.now()-start,kind=elapsed<=5000?'direct':'slow';finishCard(card,word,1,{ok:true,kind:kind},item,kind==='direct'?'✓ 主动提取成功':'✓ 答对了，但这次提取偏慢，下一次仍会继续验证');return;}finishCard(card,word,1,{ok:false,kind:'fail'},item,'答案：'+word+'。这个词会继续留在自动化候选里。');};
   }
   function renderStage2(card,word,item,state){
     const ctx=contextFor(word,item,state);
@@ -211,7 +211,7 @@
     card.innerHTML+='<div class="autoPrompt"><b>'+esc(prompt)+'</b><small>这是延迟验证：隔了一段时间再看还能不能主动调出来。不给选项。</small></div><div class="autoInputRow"><input class="autoAnswer" autocomplete="off" placeholder="输入印尼语"><button class="primary autoSubmit" type="button">确认</button><button class="secondary autoGiveUp" type="button">想不出</button></div><div class="autoResult"></div>';
     const input=card.querySelector('.autoAnswer');
     function submit(){const good=norm(input.value)===norm(word);if(!good){resultBox(card,'还不对。想不出来就点“想不出”，系统会重新提高这个词的优先级。',false);return;}finishCard(card,word,4,{ok:true,kind:'right'},item,'✓ 延迟验证通过');}
-    card.querySelector('.autoSubmit').onclick=submit;input.onkeydown=function(e){if(e.key==='Enter')submit();};card.querySelector('.autoGiveUp').onclick=function(){finishCard(card,word,4,{ok:false,kind:'fail'},item,'答案：'+word+'。已重新降回强化阶段。');};
+    card.querySelector('.autoSubmit').onclick=submit;input.onkeydown=function(e){if(e.key==='Enter')submit();};card.querySelector('.autoGiveUp').onclick=function(){if(card.dataset.done)return;if(norm(input.value)===norm(word)){finishCard(card,word,4,{ok:true,kind:'right'},item,'✓ 延迟验证通过');return;}finishCard(card,word,4,{ok:false,kind:'fail'},item,'答案：'+word+'。已重新降回强化阶段。');};
   }
   function ensurePage(){
     if(document.getElementById('automationTraining'))return;
