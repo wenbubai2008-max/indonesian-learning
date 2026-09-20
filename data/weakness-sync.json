@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-20T07:30:52.886Z",
+  "updated_at": "2026-09-20T07:50:32.919Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -228,19 +228,19 @@
     "nyebelin": {
       "word": "nyebelin",
       "status": "active",
-      "updated_at": "2026-09-15T04:31:29.989Z",
+      "updated_at": "2026-09-20T07:50:08.248Z",
       "display": "nyebelin",
       "cn": "烦人、让人不爽",
       "root": "sebel",
       "root_cn": "烦；恼火",
       "last_wrong": "2026-09-15T14:56:01.361Z",
-      "last_review": "2026-09-16T07:55:35.406Z",
+      "last_review": "2026-09-20T07:50:08.211Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "mengatasi": {
       "word": "mengatasi",
@@ -988,28 +988,28 @@
     "arah": {
       "word": "arah",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-20T07:49:51.630Z",
       "display": "arah",
       "cn": "方向",
       "root": "arah",
-      "last_review": "2026-09-17T06:36:46.075Z",
+      "last_review": "2026-09-20T07:49:51.601Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "mendapatkan": {
       "word": "mendapatkan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-20T07:49:00.703Z",
       "display": "mendapatkan",
-      "last_review": "2026-09-16T08:11:39.933Z",
+      "last_review": "2026-09-20T07:49:00.667Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "wilayah": {
       "word": "wilayah",
@@ -1326,14 +1326,14 @@
     "persen": {
       "word": "persen",
       "status": "active",
-      "updated_at": "2026-09-18T15:07:13.924Z",
+      "updated_at": "2026-09-20T07:48:55.179Z",
       "display": "persen",
-      "last_review": "2026-09-18T15:07:13.898Z",
+      "last_review": "2026-09-20T07:48:55.148Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "demi": {
       "word": "demi",
@@ -1513,14 +1513,14 @@
     "calon": {
       "word": "calon",
       "status": "active",
-      "updated_at": "2026-09-18T15:05:43.780Z",
+      "updated_at": "2026-09-20T07:49:38.360Z",
       "display": "calon",
-      "last_review": "2026-09-18T15:05:43.764Z",
+      "last_review": "2026-09-20T07:49:38.327Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "penasaran": {
       "word": "penasaran",
@@ -1999,14 +1999,19 @@
     "lakukan": {
       "word": "lakukan",
       "status": "active",
-      "updated_at": "2026-09-17T15:28:10.877Z",
+      "updated_at": "2026-09-20T07:49:14.264Z",
       "display": "lakukan",
-      "last_review": "2026-09-17T15:28:10.861Z",
+      "cn": "做；执行",
+      "root": "laku",
+      "root_cn": "行为；做法",
+      "last_wrong": "2026-09-20T07:49:14.242Z",
+      "last_review": "2026-09-20T07:49:14.242Z",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "quick_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 1
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "udara": {
       "word": "udara",
@@ -2185,16 +2190,16 @@
     "tenang": {
       "word": "tenang",
       "status": "active",
-      "updated_at": "2026-09-18T15:09:59.681Z",
+      "updated_at": "2026-09-20T07:48:57.355Z",
       "display": "tenang",
       "cn": "平静",
       "root": "tenang",
-      "last_review": "2026-09-18T15:09:59.663Z",
+      "last_review": "2026-09-20T07:48:57.326Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "menatap": {
       "word": "menatap",
@@ -6504,17 +6509,17 @@
     "pokoknya": {
       "word": "pokoknya",
       "status": "active",
-      "updated_at": "2026-09-13T14:50:05.884Z",
+      "updated_at": "2026-09-20T07:49:30.537Z",
       "display": "pokoknya",
       "cn": "总之；反正；不管怎样",
       "root": "pokok",
       "root_cn": "要点；主要部分",
-      "last_review": "2026-09-13T11:46:02.357Z",
+      "last_review": "2026-09-20T07:49:30.514Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "penulis": {
       "word": "penulis",
@@ -8325,13 +8330,13 @@
     "naik": {
       "word": "naik",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:50.533Z",
+      "updated_at": "2026-09-20T07:49:05.561Z",
       "display": "naik",
-      "last_review": "2026-09-12T14:13:50.527Z",
+      "last_review": "2026-09-20T07:49:05.540Z",
       "last_mastered": "2026-09-12T14:13:50.527Z",
       "reasons": [],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "turun": {
       "word": "turun",
@@ -10002,13 +10007,13 @@
     "sekalian": {
       "word": "sekalian",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:52.766Z",
+      "updated_at": "2026-09-20T07:49:03.523Z",
       "display": "sekalian",
-      "last_review": "2026-09-12T14:13:52.760Z",
+      "last_review": "2026-09-20T07:49:03.496Z",
       "last_mastered": "2026-09-12T14:13:52.760Z",
       "reasons": [],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "mengikuti": {
       "word": "mengikuti",
@@ -18864,16 +18869,16 @@
     "kadang": {
       "word": "kadang",
       "status": "active",
-      "updated_at": "2026-09-18T07:23:57.055Z",
+      "updated_at": "2026-09-20T07:49:36.272Z",
       "display": "kadang",
       "cn": "有时",
       "root": "kadang",
-      "last_review": "2026-09-18T07:23:57.037Z",
+      "last_review": "2026-09-20T07:49:36.245Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "selalu": {
       "word": "selalu",
@@ -19485,16 +19490,16 @@
     "jomblo": {
       "word": "jomblo",
       "status": "active",
-      "updated_at": "2026-09-18T15:05:29.373Z",
+      "updated_at": "2026-09-20T07:49:40.934Z",
       "display": "jomblo",
       "cn": "单身",
       "root": "jomblo",
-      "last_review": "2026-09-18T15:05:29.356Z",
+      "last_review": "2026-09-20T07:49:40.907Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "sayang": {
       "word": "sayang",
@@ -19534,15 +19539,16 @@
     "sebel": {
       "word": "sebel",
       "status": "active",
-      "updated_at": "2026-09-12T16:56:26.687Z",
+      "updated_at": "2026-09-20T07:49:53.365Z",
       "display": "sebel",
       "cn": "烦；恼火",
       "root": "sebel",
+      "last_review": "2026-09-20T07:49:53.337Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "malu": {
       "word": "malu",
@@ -27979,6 +27985,22 @@
       "root_cn": "抓住；捕捉",
       "last_wrong": "2026-09-18T15:08:18.035Z",
       "last_review": "2026-09-18T15:08:18.035Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "kepancing": {
+      "word": "kepancing",
+      "status": "active",
+      "updated_at": "2026-09-20T07:50:22.652Z",
+      "display": "kepancing",
+      "cn": "被激到；被带着回应；忍不住上钩（口语）",
+      "root": "pancing",
+      "root_cn": "钓；引诱；诱出反应",
+      "last_wrong": "2026-09-20T07:50:22.623Z",
+      "last_review": "2026-09-20T07:50:22.623Z",
       "reasons": [
         "quick_wrong"
       ],
