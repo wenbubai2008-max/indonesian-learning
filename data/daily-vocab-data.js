@@ -9632,5 +9632,227 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-19"
     ]
+  },
+  {
+    "word": "kereta",
+    "cn": "火车",
+    "en": "train",
+    "root": "kereta",
+    "root_cn": "火车；车辆",
+    "example": "Kami naik kereta pagi agar tiba sebelum siang.",
+    "example_cn": "我们坐早班火车，以便中午前到达。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "melawan",
+    "cn": "反对、对抗",
+    "en": "oppose / fight against",
+    "root": "lawan",
+    "root_cn": "对手；反对",
+    "example": "Kita tidak perlu melawan setiap pendapat yang berbeda.",
+    "example_cn": "我们没必要反对每一个不同的观点。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "tumbuh",
+    "cn": "生长",
+    "en": "grow",
+    "root": "tumbuh",
+    "root_cn": "生长；成长",
+    "example": "Kepercayaan biasanya tumbuh sedikit demi sedikit.",
+    "example_cn": "信任通常是一点一点建立起来的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "berbahaya",
+    "cn": "危险的",
+    "en": "dangerous",
+    "root": "bahaya",
+    "root_cn": "危险",
+    "example": "Mengemudi saat sangat mengantuk bisa berbahaya.",
+    "example_cn": "非常困的时候开车可能很危险。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "berkat",
+    "cn": "多亏了",
+    "en": "thanks to / blessing",
+    "root": "berkat",
+    "root_cn": "福气；恩惠",
+    "example": "Berkat bantuan tim, pekerjaan selesai tepat waktu.",
+    "example_cn": "多亏团队的帮助，工作按时完成了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "kenyang",
+    "cn": "饱的",
+    "en": "full / satiated",
+    "root": "kenyang",
+    "root_cn": "饱",
+    "example": "Aku sudah kenyang, jadi tidak mau pesan makanan lagi.",
+    "example_cn": "我已经吃饱了，所以不想再点东西。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "memanggil",
+    "cn": "呼唤 / 叫",
+    "en": "call / summon",
+    "root": "panggil",
+    "root_cn": "叫；呼唤",
+    "example": "Tolong panggil saya kalau pelanggan itu datang.",
+    "example_cn": "那位顾客来了请叫我。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "mengizinkan",
+    "cn": "允许",
+    "en": "allow / permit",
+    "root": "izin",
+    "root_cn": "许可；允许",
+    "example": "Atasan mengizinkan saya pulang lebih awal hari ini.",
+    "example_cn": "上司允许我今天早点回家。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "resign",
+    "cn": "辞职",
+    "en": "resign",
+    "root": "resign",
+    "root_cn": "辞职",
+    "example": "Dia mau resign karena mendapat pekerjaan yang lebih cocok.",
+    "example_cn": "他想辞职，因为找到了更合适的工作。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "word": "gampang",
+    "cn": "容易",
+    "en": "easy",
+    "root": "gampang",
+    "root_cn": "容易",
+    "example": "Kelihatannya gampang, tapi praktiknya butuh waktu.",
+    "example_cn": "看起来容易，但实际做起来需要时间。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-20"
+    ]
   }
 ];
