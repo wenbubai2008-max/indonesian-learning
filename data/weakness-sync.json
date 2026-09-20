@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-19T11:21:18.470Z",
+  "updated_at": "2026-09-20T05:21:17.740Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1063,8 +1063,9 @@
     "menteri": {
       "word": "menteri",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-20T05:21:07.199Z",
       "display": "menteri",
+      "cn": "部长",
       "reasons": [
         "memory_fuzzy"
       ],
