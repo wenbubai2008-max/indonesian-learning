@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-20T07:52:34.069Z",
+  "updated_at": "2026-09-20T13:53:32.981Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -3136,8 +3136,11 @@
     "berkat": {
       "word": "berkat",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-20T13:53:22.237Z",
       "display": "berkat",
+      "cn": "多亏了",
+      "root": "berkat",
+      "root_cn": "福气；恩惠",
       "reasons": [
         "memory_dont"
       ],
