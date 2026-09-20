@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{id:'er-20260919-kereta-petani-pedagang',date:'2026-09-19',title:'Kereta Rp3.000 Membantu Petani dan Pedagang di Banten',title_cn:'3000印尼盾的列车帮助万丹农民和商贩出行',path:'data/extensive-reading-history/2026-09-19.js'},
 {id:'er-20260918-cek-kesehatan-gratis',date:'2026-09-18',title:'Cek Kesehatan Gratis Sekarang Ada Tindak Lanjut',title_cn:'印尼免费健康检查现在提供后续处理',path:'data/extensive-reading-history/2026-09-18.js'},
 {id:'er-20260917-lrt-jakarta-rp8',date:'2026-09-17',title:'LRT Kelapa Gading–Manggarai Bisa Dicoba dengan Tarif Rp8',title_cn:'Kelapa Gading–Manggarai LRT 可用 8 印尼盾体验',path:'data/extensive-reading-history/2026-09-17.js'},
 {id:'er-20260916-transjakarta-klg-gratis',date:'2026-09-16',title:'Kartu Layanan Gratis Transjakarta Tidak Boleh Dijual',title_cn:'Transjakarta 免费乘车卡不能买卖',path:'data/extensive-reading-history/2026-09-16.js'},
