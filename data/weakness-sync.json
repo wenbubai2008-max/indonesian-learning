@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-20T05:21:17.740Z",
+  "updated_at": "2026-09-20T05:25:49.752Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -6022,8 +6022,9 @@
     "tindakan": {
       "word": "tindakan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-20T05:25:39.227Z",
       "display": "tindakan",
+      "cn": "行动",
       "reasons": [
         "memory_dont"
       ],
