@@ -1,0 +1,13 @@
+window.EXTENSIVE_READING_ARCHIVE_ITEM={id:'er-20260919-kereta-petani-pedagang',date:'2026-09-19',title:'Kereta Rp3.000 Membantu Petani dan Pedagang di Banten',title_cn:'3000印尼盾的列车帮助万丹农民和商贩出行',category:'印尼 · 日常生活 · 交通 · 工作 · 实时新闻改写',level:'A2+ → B1',minutes:4,source_name:'ANTARA News',source_date:'2026-09-17',text:`Kereta Petani dan Pedagang di jalur Merak–Rangkasbitung menjadi salah satu pilihan transportasi murah bagi masyarakat Banten. Menurut KAI, sejak mulai beroperasi pada 1 Desember 2025 sampai 14 September 2026, layanan ini sudah digunakan oleh 43.780 penumpang.
+
+Tarifnya Rp3.000 untuk satu kali perjalanan. Harga yang terjangkau membantu warga yang perlu bepergian untuk bekerja, berdagang, atau melakukan kegiatan sehari-hari. Bagi petani dan pedagang, biaya transportasi tentu penting karena perjalanan bisa dilakukan secara rutin.
+
+KAI menjelaskan bahwa layanan ini dibuat untuk menyesuaikan kebutuhan mobilitas masyarakat di jalur Merak–Rangkasbitung. Kereta tersebut bukan hanya dipakai untuk menuju tempat kerja. Sebagian penumpang juga menggunakannya untuk kegiatan perdagangan dan kebutuhan perjalanan lainnya.
+
+Kehadiran kereta dengan tarif murah memberi masyarakat pilihan selain menggunakan kendaraan pribadi. KAI menyatakan akan terus menjaga layanan agar aman dan nyaman serta sesuai dengan kebutuhan penumpang. Data jumlah pengguna juga menunjukkan bahwa transportasi sederhana dengan biaya terjangkau tetap dibutuhkan untuk mendukung aktivitas harian masyarakat.`,cn:`万丹省 Merak–Rangkasbitung 线路上的“农民和商贩列车”，已经成为当地居民较便宜的一种交通选择。KAI 表示，从2025年12月1日开始运营到2026年9月14日，这项服务已经有43,780名乘客使用。
+
+每次乘车票价为3000印尼盾。较低的价格可以帮助需要上班、做生意或处理日常事务的居民。对农民和商贩来说，交通成本尤其重要，因为他们可能需要经常出行。
+
+KAI 说明，这项服务是为了适应 Merak–Rangkasbitung 沿线居民的出行需求。这趟列车不仅用于上班通勤，一部分乘客也会利用它从事贸易活动以及其他出行。
+
+低票价列车的存在，让居民除了私人交通工具之外多了一个选择。KAI 表示，将继续维持安全、舒适并符合乘客需求的服务。乘客数量也说明，价格负担得起的基础公共交通，依然是支持普通居民日常活动的重要需求。`,hints:[{term:'jalur',cn:'线路；路线'},{term:'menjadi salah satu pilihan',cn:'成为其中一种选择'},{term:'mulai beroperasi',cn:'开始运营',root:'operasi',formation:'ber- + operasi'},{term:'terjangkau',cn:'负担得起的；价格亲民的',root:'jangkau',formation:'ter- + jangkau'},{term:'bepergian',cn:'出行；旅行',root:'pergi',formation:'be- + pergi + -an'},{term:'secara rutin',cn:'经常地；定期地'},{term:'menyesuaikan',cn:'使适应；根据……调整',root:'sesuai',formation:'meN- + sesuai + -kan'},{term:'kebutuhan mobilitas',cn:'出行需求；流动需求'},{term:'kegiatan perdagangan',cn:'贸易活动；经商活动',root:'dagang',formation:'per- + dagang + -an'},{term:'kendaraan pribadi',cn:'私人交通工具'},{term:'kehadiran',cn:'存在；出现',root:'hadir',formation:'ke- + hadir + -an'},{term:'sesuai dengan kebutuhan',cn:'符合需求'},{term:'mendukung aktivitas harian',cn:'支持日常活动',root:'dukung',formation:'meN- + dukung'}]};
