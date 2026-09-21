@@ -76,7 +76,7 @@
   }
   function renderTest(t,x){
     let h='<div class="dailyFixMeta" style="margin-bottom:10px">轻量检测今天刚学的内容，不追求全对，也不用写长句。</div>';
-    (t.items||[]).forEach((it,i)=>{if(it.type==='choice')h+=choice(it,i);else if(it.type==='fill')h+=fill(it,i);else if(it.type==='order')h+=order(it,i)});
+    const questions=(Array.isArray(t.items)&&t.items.length)?t.items:(Array.isArray(t.questions)?t.questions:[]);questions.forEach((it,i)=>{if(it.type==='choice')h+=choice(it,i);else if(it.type==='fill')h+=fill(it,i);else if(it.type==='order')h+=order(it,i)});
     h+=selfCheckHtml(t.self_check,x);
     return sec(t.title||'当日小测 · 5–8分钟',h,'dailyLightTest');
   }
