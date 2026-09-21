@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-21T12:14:58.194Z",
+  "updated_at": "2026-09-21T14:40:00.520Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1932,8 +1932,9 @@
     "langkah": {
       "word": "langkah",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-21T14:39:48.470Z",
       "display": "langkah",
+      "cn": "步伐",
       "reasons": [
         "memory_dont"
       ],
@@ -2808,8 +2809,9 @@
     "melainkan": {
       "word": "melainkan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-21T14:38:16.938Z",
       "display": "melainkan",
+      "cn": "而是",
       "reasons": [
         "memory_dont"
       ],
@@ -6128,8 +6130,9 @@
     "komentar": {
       "word": "komentar",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-21T14:36:16.621Z",
       "display": "komentar",
+      "cn": "评论",
       "reasons": [
         "memory_fuzzy"
       ],
