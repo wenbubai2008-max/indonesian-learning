@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-21",
+  "session": "am",
+  "time": "08:00",
+  "day": 31,
+  "level": "A2+→B1",
+  "title": "08:00｜新词 + 应用：工作中的安排与判断",
+  "vocab": [
+    {
+      "word": "berhenti",
+      "display": "berhenti",
+      "audio_text": "berhenti",
+      "cn": "停止",
+      "en": "stop; cease",
+      "root": "henti",
+      "root_cn": "停；停止",
+      "formation": "ber- + henti → berhenti，表示停止某个动作或状态。常见：berhenti bekerja（停止工作）、berhenti sebentar（停一下）、berhenti di sini（停在这里）。",
+      "example": "Kita berhenti sebentar sebelum melanjutkan pekerjaan.",
+      "example_cn": "我们先停一下，再继续工作。",
+      "synonym_note": "berhenti 是通用的“停止”；stop 常见于口语借词，但正式表达仍优先 berhenti。",
+      "is_oral_new": false
+    },
+    {
+      "word": "budaya",
+      "display": "budaya",
+      "audio_text": "budaya",
+      "cn": "文化",
+      "en": "culture",
+      "root": "budaya",
+      "root_cn": "文化",
+      "formation": "基本名词。常见：budaya kerja（工作文化）、budaya lokal（当地文化）、perbedaan budaya（文化差异）。",
+      "example": "Budaya kerja setiap perusahaan bisa berbeda.",
+      "example_cn": "每家公司的工作文化都可能不同。",
+      "synonym_note": "budaya 指文化、习惯体系；kebiasaan 更偏个人或群体的具体习惯。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bidang",
+      "display": "bidang",
+      "audio_text": "bidang",
+      "cn": "领域、范围",
+      "en": "field; area",
+      "root": "bidang",
+      "root_cn": "领域；范围",
+      "formation": "基本名词。常见：bidang pekerjaan（工作领域）、bidang kesehatan（健康领域）、di bidang ini（在这个领域）。",
+      "example": "Dia sudah lama bekerja di bidang penjualan.",
+      "example_cn": "他已经在销售领域工作很久了。",
+      "synonym_note": "bidang 强调专业、行业或范围；bagian 更常指整体中的一个部分。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pemimpin",
+      "display": "pemimpin",
+      "audio_text": "pemimpin",
+      "cn": "领导",
+      "en": "leader",
+      "root": "pimpin",
+      "root_cn": "领导；带领",
+      "formation": "peN- + pimpin → pemimpin，表示领导者、带领团队的人。常见：pemimpin tim（团队负责人）、pemimpin perusahaan（公司领导）。",
+      "example": "Pemimpin tim harus bisa mendengar pendapat anggota.",
+      "example_cn": "团队负责人应该能够听取成员的意见。",
+      "synonym_note": "pemimpin 是“领导者”；atasan 是“上司”，两者角色可能重合，但含义不同。",
+      "is_oral_new": false
+    },
+    {
+      "word": "upaya",
+      "display": "upaya",
+      "audio_text": "upaya",
+      "cn": "努力、尝试",
+      "en": "effort; attempt",
+      "root": "upaya",
+      "root_cn": "努力；办法",
+      "formation": "基本名词。常见：melakukan upaya（采取努力/措施）、upaya untuk...（为了……的努力）、sebagai upaya（作为一种努力）。",
+      "example": "Kami melakukan beberapa upaya untuk memperbaiki pelayanan.",
+      "example_cn": "我们采取了一些措施来改善服务。",
+      "synonym_note": "upaya 偏“努力、措施”；usaha 也表示努力，但还常表示生意、企业。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berisi",
+      "display": "berisi",
+      "audio_text": "berisi",
+      "cn": "包含",
+      "en": "contain; be filled with",
+      "root": "isi",
+      "root_cn": "内容；填充",
+      "formation": "ber- + isi → berisi，表示“里面有、包含”。常见：berisi data（包含数据）、berisi informasi（包含信息）、kotak berisi barang（装有物品的箱子）。",
+      "example": "Laporan ini berisi informasi penting tentang penjualan.",
+      "example_cn": "这份报告包含重要的销售信息。",
+      "synonym_note": "berisi 强调“内容中包含”；mengandung 也可表示“含有”，更常见于成分、抽象内容等语境。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ukuran",
+      "display": "ukuran",
+      "audio_text": "ukuran",
+      "cn": "尺寸，测量",
+      "en": "size; measurement",
+      "root": "ukur",
+      "root_cn": "测量",
+      "formation": "ukur + -an → ukuran，表示尺寸、规格或测量结果。常见：ukuran baju（衣服尺码）、ukuran besar（大尺寸）、sesuai ukuran（符合尺寸）。",
+      "example": "Tolong periksa ukuran barang sebelum dikirim.",
+      "example_cn": "发货前请检查商品尺寸。",
+      "synonym_note": "ukuran 是尺寸/规格；besar-kecil 只是描述大小，不等同于具体尺寸。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ancaman",
+      "display": "ancaman",
+      "audio_text": "ancaman",
+      "cn": "威胁",
+      "en": "threat",
+      "root": "ancam",
+      "root_cn": "威胁",
+      "formation": "ancam + -an → ancaman，表示威胁、风险来源。常见：ancaman keamanan（安全威胁）、menjadi ancaman（成为威胁）。",
+      "example": "Keterlambatan besar bisa menjadi ancaman bagi proyek ini.",
+      "example_cn": "严重延误可能成为这个项目的威胁。",
+      "synonym_note": "ancaman 是明确的威胁；risiko 是风险，不一定有人或事物主动造成威胁。",
+      "is_oral_new": false
+    },
+    {
+      "word": "percuma",
+      "display": "percuma",
+      "audio_text": "percuma",
+      "cn": "白费；没用",
+      "en": "useless; in vain",
+      "root": "percuma",
+      "root_cn": "白费；没用",
+      "formation": "高频口语词。常见：percuma saja（白费而已）、percuma kalau...（如果……就没用）、semuanya percuma（全都白费）。",
+      "example": "Percuma marah kalau masalahnya tidak kita selesaikan.",
+      "example_cn": "如果问题不解决，光生气也没用。",
+      "synonym_note": "percuma 是日常口语高频；sia-sia 更中性、书面一些，也表示“徒劳、白费”。",
+      "is_oral_new": true
+    },
+    {
+      "word": "ngatur",
+      "display": "ngatur",
+      "audio_text": "ngatur",
+      "cn": "安排；管理",
+      "en": "arrange; manage",
+      "root": "atur",
+      "root_cn": "安排；整理",
+      "formation": "mengatur 的常见口语缩略形式。常见：ngatur jadwal（安排日程）、ngatur kerjaan（安排工作）、ngatur waktu（安排时间）。",
+      "example": "Aku lagi ngatur jadwal untuk minggu depan.",
+      "example_cn": "我正在安排下周的日程。",
+      "synonym_note": "ngatur 是口语；标准形式是 mengatur。正式写作或正式场合优先使用 mengatur。",
+      "is_oral_new": true
+    }
+  ],
+  "review_vocab": [
+    "colok",
+    "membutuhkan",
+    "nangkep",
+    "nyinggung",
+    "kepancing"
+  ],
+  "sentences": [
+    {
+      "text": "Pemimpin tim meminta kami berhenti sebentar untuk ngatur tugas dengan lebih jelas.",
+      "cn": "团队负责人让我们先停一下，把任务安排得更清楚。"
+    },
+    {
+      "text": "Laporan ini berisi data dari beberapa bidang yang berbeda.",
+      "cn": "这份报告包含来自几个不同领域的数据。"
+    },
+    {
+      "text": "Kami melakukan upaya baru karena cara lama sudah terasa percuma.",
+      "cn": "我们采取了新的努力，因为旧办法已经显得没用了。"
+    },
+    {
+      "text": "Sebelum mengirim barang, aku harus memeriksa ukuran dan memastikan tidak ada ancaman masalah.",
+      "cn": "发货前我必须检查尺寸，并确认不会有问题风险。"
+    },
+    {
+      "text": "Aku hampir kepancing komentar itu, tetapi akhirnya bisa nangkep maksudnya tanpa nyinggung hal pribadi.",
+      "cn": "我差点被那句话带着情绪回应，但最后还是听懂了他的意思，也没有触及私人话题。"
+    }
+  ],
+  "reading": {
+    "text": "Di kantor, pemimpin tim sedang membahas upaya baru untuk memperbaiki cara kerja kami. Laporan yang kami terima berisi data dari beberapa bidang. Ada satu ancaman utama, yaitu jadwal yang terlalu padat. Karena itu, kami berhenti sebentar untuk ngatur pekerjaan lagi. Aku juga harus memeriksa ukuran beberapa barang sebelum dikirim. Teman kerja menjelaskan masalahnya dengan cepat, tetapi aku masih bisa nangkep maksudnya. Aku hampir kepancing saat dia mengkritik hasil pekerjaanku, namun aku memilih tidak nyinggung hal pribadi. Menurutku, percuma berdebat kalau tujuan utama belum selesai. Yang penting adalah membagi tugas dengan jelas dan terus mencari upaya yang lebih efektif.",
+    "cn": "在办公室，团队负责人正在讨论一种新的努力方向，以改善我们的工作方式。我们收到的报告包含几个不同领域的数据。主要威胁之一是日程太紧。因此，我们先停下来重新安排工作。我还必须在发货前检查一些商品的尺寸。同事很快地解释了问题，但我还是能听懂他的意思。当他批评我的工作结果时，我差点被带着情绪回应，不过我选择不触及私人话题。我觉得，如果主要目标还没完成，争论也是白费。重要的是把任务分清楚，并继续寻找更有效的办法。"
+  },
+  "quiz": [
+    {
+      "question": "哪一个词最适合填空：Laporan ini ___ tiga bagian utama dan beberapa catatan tambahan.",
+      "options": [
+        "berisi",
+        "budaya",
+        "ukuran",
+        "ancaman"
+      ],
+      "answer_index": 0,
+      "explain": "berisi 表示“包含、里面有”。"
+    },
+    {
+      "question": "哪一个词最适合表达“某个行业或专业领域”？",
+      "options": [
+        "pemimpin",
+        "bidang",
+        "upaya",
+        "budaya"
+      ],
+      "answer_index": 1,
+      "explain": "bidang 常用于 bidang pekerjaan、bidang kesehatan 等，表示领域或范围。"
+    },
+    {
+      "question": "复习：哪一个词最适合填空：Aku hampir ___ komentar itu dan mau langsung membalas.",
+      "options": [
+        "nangkep",
+        "nyinggung",
+        "kepancing",
+        "colok"
+      ],
+      "answer_index": 2,
+      "explain": "kepancing 是口语，表示被激到、被带着回应、忍不住上钩。"
+    }
+  ],
+  "output": {
+    "task": "请用3—4句印尼语描述一次你需要重新安排工作或计划的情况。尽量使用 ngatur、upaya、berisi、pemimpin，并自然加入一个今天的复习词。",
+    "reference_answer": "Kemarin pemimpin tim meminta kami ngatur ulang pekerjaan karena jadwal terlalu padat. Laporan yang kami terima berisi beberapa masalah penting. Kami mencoba upaya baru supaya pekerjaan lebih jelas. Aku juga harus nangkep maksud semua orang sebelum mengambil keputusan.",
+    "reference_cn": "昨天团队负责人让我们重新安排工作，因为日程太满。我们收到的报告包含几个重要问题。我们尝试了新的办法，让工作更清楚。我也需要先理解大家的意思，再做决定。"
+  },
+  "review": [
+    "percuma = 白费、没用；更中性或书面的对应表达是 sia-sia。",
+    "ngatur 是 mengatur 的高频口语形式，可用于 ngatur jadwal、ngatur kerjaan、ngatur waktu。",
+    "复习 kepancing / nangkep / nyinggung：分别是“被带着回应”“听懂抓住意思”“触及/提到敏感话题”。"
+  ]
+}
