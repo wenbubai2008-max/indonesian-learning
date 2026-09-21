@@ -9951,5 +9951,227 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-20"
     ]
+  },
+  {
+    "word": "berhenti",
+    "cn": "停止",
+    "en": "stop; cease",
+    "root": "henti",
+    "root_cn": "停；停止",
+    "example": "Kita berhenti sebentar sebelum melanjutkan pekerjaan.",
+    "example_cn": "我们先停一下，再继续工作。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "budaya",
+    "cn": "文化",
+    "en": "culture",
+    "root": "budaya",
+    "root_cn": "文化",
+    "example": "Budaya kerja setiap perusahaan bisa berbeda.",
+    "example_cn": "每家公司的工作文化都可能不同。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "bidang",
+    "cn": "领域、范围",
+    "en": "field; area",
+    "root": "bidang",
+    "root_cn": "领域；范围",
+    "example": "Dia sudah lama bekerja di bidang penjualan.",
+    "example_cn": "他已经在销售领域工作很久了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "pemimpin",
+    "cn": "领导",
+    "en": "leader",
+    "root": "pimpin",
+    "root_cn": "领导；带领",
+    "example": "Pemimpin tim harus bisa mendengar pendapat anggota.",
+    "example_cn": "团队负责人应该能够听取成员的意见。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "upaya",
+    "cn": "努力、尝试",
+    "en": "effort; attempt",
+    "root": "upaya",
+    "root_cn": "努力；办法",
+    "example": "Kami melakukan beberapa upaya untuk memperbaiki pelayanan.",
+    "example_cn": "我们采取了一些措施来改善服务。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "berisi",
+    "cn": "包含",
+    "en": "contain; be filled with",
+    "root": "isi",
+    "root_cn": "内容；填充",
+    "example": "Laporan ini berisi informasi penting tentang penjualan.",
+    "example_cn": "这份报告包含重要的销售信息。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "ukuran",
+    "cn": "尺寸，测量",
+    "en": "size; measurement",
+    "root": "ukur",
+    "root_cn": "测量",
+    "example": "Tolong periksa ukuran barang sebelum dikirim.",
+    "example_cn": "发货前请检查商品尺寸。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "ancaman",
+    "cn": "威胁",
+    "en": "threat",
+    "root": "ancam",
+    "root_cn": "威胁",
+    "example": "Keterlambatan besar bisa menjadi ancaman bagi proyek ini.",
+    "example_cn": "严重延误可能成为这个项目的威胁。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "percuma",
+    "cn": "白费；没用",
+    "en": "useless; in vain",
+    "root": "percuma",
+    "root_cn": "白费；没用",
+    "example": "Percuma marah kalau masalahnya tidak kita selesaikan.",
+    "example_cn": "如果问题不解决，光生气也没用。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "ngatur",
+    "cn": "安排；管理",
+    "en": "arrange; manage",
+    "root": "atur",
+    "root_cn": "安排；整理",
+    "example": "Aku lagi ngatur jadwal untuk minggu depan.",
+    "example_cn": "我正在安排下周的日程。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
   }
 ];
