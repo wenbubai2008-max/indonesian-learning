@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{id:'er-20260920-beras-premium-ritel',date:'2026-09-20',title:'Pasokan Beras Premium di Ritel Dipastikan Tetap Aman',title_cn:'印尼确保零售店优质大米供应保持充足',path:'data/extensive-reading-history/2026-09-20.js'},
 {id:'er-20260919-kereta-petani-pedagang',date:'2026-09-19',title:'Kereta Rp3.000 Membantu Petani dan Pedagang di Banten',title_cn:'3000印尼盾的列车帮助万丹农民和商贩出行',path:'data/extensive-reading-history/2026-09-19.js'},
 {id:'er-20260918-cek-kesehatan-gratis',date:'2026-09-18',title:'Cek Kesehatan Gratis Sekarang Ada Tindak Lanjut',title_cn:'印尼免费健康检查现在提供后续处理',path:'data/extensive-reading-history/2026-09-18.js'},
 {id:'er-20260917-lrt-jakarta-rp8',date:'2026-09-17',title:'LRT Kelapa Gading–Manggarai Bisa Dicoba dengan Tarif Rp8',title_cn:'Kelapa Gading–Manggarai LRT 可用 8 印尼盾体验',path:'data/extensive-reading-history/2026-09-17.js'},
@@ -19,4 +20,3 @@ window.EXTENSIVE_READING_HISTORY_INDEX=[
 {id:'er-20260904',date:'2026-09-04',title:'Truk Logistik Mulai Disiapkan untuk Aturan Zero ODOL',title_cn:'物流卡车开始为“零超限超载”规定做准备',path:'data/extensive-reading-history/2026-09-04-zero-odol.js'},
 {id:'er-20260903',date:'2026-09-03',title:'Jakarta Mau Tambah Jalur Sepeda untuk Kurangi Macet',title_cn:'雅加达想增加自行车道来缓解拥堵',path:'data/extensive-reading-history/2026-09-03.js'}
 ];
-window.EXTENSIVE_READING_HISTORY=[];
