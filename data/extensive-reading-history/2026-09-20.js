@@ -1,0 +1,13 @@
+window.EXTENSIVE_READING_ARCHIVE_ITEM={id:'er-20260920-beras-premium-ritel',date:'2026-09-20',title:'Pasokan Beras Premium di Ritel Dipastikan Tetap Aman',title_cn:'印尼确保零售店优质大米供应保持充足',category:'印尼 · 日常生活 · 消费 · 食品 · 实时新闻改写',level:'A2+ → B1',minutes:4,source_name:'ANTARA News',source_date:'2026-09-20',text:`Pemerintah memastikan pasokan beras premium di toko ritel tetap tersedia setelah 25 merek beras fortifikasi ditarik dari peredaran. Menteri Pertanian sekaligus Kepala Badan Pangan Nasional, Andi Amran Sulaiman, mengatakan Bulog diminta mengoptimalkan pasokan ke toko-toko ritel modern.
+
+Menurut Amran, stok beras premium tersedia dalam jumlah yang cukup. Pemerintah ingin distribusi diperkuat agar masyarakat tetap bisa membeli beras sesuai kebutuhan. Pengawasan juga dilakukan terhadap peredaran beras premium dan kepatuhan pada harga eceran tertinggi.
+
+Sementara itu, pemerintah mengambil tindakan terhadap 25 merek beras fortifikasi yang ditemukan tidak sesuai dengan standar dan kandungan yang tercantum pada label. Produk tersebut diperintahkan untuk ditarik dari pasar dan izin edarnya dicabut. Pihak yang diduga terlibat juga diproses sesuai aturan yang berlaku.
+
+Bagi konsumen, kasus ini menunjukkan pentingnya informasi pada kemasan makanan. Pemerintah menyatakan pengawasan dilakukan untuk menjaga mutu produk, melindungi konsumen, dan memastikan pilihan beras di pasar tetap tersedia. Dengan pasokan premium yang cukup, penarikan produk bermasalah diharapkan tidak membuat kebutuhan masyarakat terganggu.`,cn:`印尼政府表示，在25个强化大米品牌被要求下架后，零售店里的优质大米供应仍会保持充足。农业部长兼国家粮食局局长 Andi Amran Sulaiman 表示，已经要求 Bulog 加强向现代零售店供应优质大米。
+
+Amran 表示，目前优质大米库存数量充足。政府希望加强配送，让居民仍然能够按照需要购买大米。同时，政府也会监督优质大米的市场流通情况，以及是否遵守最高零售价格规定。
+
+另一方面，政府对25个被发现不符合标准、实际成分与包装标签不一致的强化大米品牌采取了措施。这些产品被要求退出市场，销售许可也被撤销。涉嫌参与违规的相关方也将按照现行规定接受处理。
+
+对消费者来说，这件事也说明食品包装信息非常重要。政府表示，相关监督是为了保证产品质量、保护消费者，并确保市场上仍有足够的大米选择。由于优质大米供应充足，政府希望问题产品下架不会影响居民正常购买大米。`,hints:[{term:'pasokan',cn:'供应；供给',root:'pasok',formation:'pasok + -an'},{term:'tetap tersedia',cn:'仍然有供应；保持可获得'},{term:'ditarik dari peredaran',cn:'从市场流通中撤回',root:'tarik',formation:'di- + tarik'},{term:'beras fortifikasi',cn:'强化大米；添加营养成分的大米'},{term:'mengoptimalkan pasokan',cn:'优化、加强供应',root:'optimal',formation:'meN- + optimal + -kan'},{term:'distribusi diperkuat',cn:'加强配送／流通'},{term:'kepatuhan',cn:'遵守；合规',root:'patuh',formation:'ke- + patuh + -an'},{term:'harga eceran tertinggi',cn:'最高零售价格'},{term:'tercantum pada label',cn:'标注在标签上',root:'cantum',formation:'ter- + cantum'},{term:'izin edar',cn:'流通／销售许可'},{term:'sesuai aturan yang berlaku',cn:'按照现行规定'},{term:'mutu produk',cn:'产品质量'},{term:'melindungi konsumen',cn:'保护消费者',root:'lindung',formation:'meN- + lindung + -i'}]};
