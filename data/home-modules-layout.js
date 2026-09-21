@@ -8,7 +8,7 @@
     {key:'quick',title:'快速练习',icon:'⚡',desc:'5–10分钟，用最近学过的词做情境选词和补空。',tag:'间隔复现',open:function(){if(typeof window.openQuickPracticeV2==='function')window.openQuickPracticeV2();}},
     {key:'weak',title:'弱项强化',icon:'🎯',desc:'集中练快速练习错题和阅读中加入的陌生词。',tag:'针对弱项',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
     {key:'automation',title:'自动训练',icon:'⚙️',desc:'把眼熟但调不出来的词，逐步练到主动使用。',tag:'计算中',tagId:'automationTag',open:function(){if(typeof window.openAutomationTraining==='function')window.openAutomationTraining();}},
-    {key:'difficulty',title:'难点解释',icon:'💡',desc:'整理中文难直译、容易混淆的词，用场景和对比帮助理解。',tag:'3 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
+    {key:'difficulty',title:'难点解释',icon:'💡',desc:'整理中文难直译、容易混淆的词，用场景和对比帮助理解。',tag:'4 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
     {key:'affix',title:'前后缀',icon:'🧩',desc:'meN-、peN-、ber-、di-、ter-、-kan、-i 等。',tag:'词根词族',open:function(){if(typeof window.go==='function')window.go('affix');}}
   ];
 
@@ -57,6 +57,19 @@
   window.openDifficulty01=function(){openDifficulty('difficulty01');};
   window.openDifficulty02=function(){openDifficulty('difficulty02');};
   window.openDifficulty03=function(){openDifficulty('difficulty03');};
+  window.openDifficulty04=function(){openDifficulty('difficulty04');};
+
+  window.answerSimilarQuiz=function(btn,choice,answer){
+    const row=btn&&btn.closest('.simQuizRow');
+    if(!row||row.dataset.done)return;
+    row.dataset.done='1';
+    row.querySelectorAll('button').forEach(function(b){b.disabled=true;b.classList.remove('simQuizOk','simQuizBad');});
+    const ok=choice===answer;
+    btn.classList.add(ok?'simQuizOk':'simQuizBad');
+    row.querySelectorAll('button').forEach(function(b){if(b.dataset.choice===answer)b.classList.add('simQuizOk');});
+    const result=row.querySelector('.simQuizResult');
+    if(result)result.textContent=ok?'✓ 对，就是 '+answer:'正确是 '+answer;
+  };
 
   window.answerDpQuiz=function(btn,choice,answer){
     const row=btn&&btn.closest('.dpQuizRow');
@@ -125,7 +138,7 @@
           <div id="difficultyListView">
             <div class="sectionHead difficultyHead">
               <div><h2>难点解释</h2><div class="muted">专门整理难直译、容易混淆的印尼语词。</div></div>
-              <span class="pill">已整理 3 个</span>
+              <span class="pill">已整理 4 个</span>
             </div>
 
             <div class="difficultyIndex">
@@ -142,6 +155,11 @@
               <button class="difficultyIndexItem" type="button" onclick="openDifficulty03()">
                 <span class="difficultyNo dpNo">03</span>
                 <span class="difficultyIndexText"><b>dapat vs padat</b><small>长得像、听着像，但思路完全不同</small></span>
+                <span class="difficultyArrow">→</span>
+              </button>
+              <button class="difficultyIndexItem" type="button" onclick="openDifficulty04()">
+                <span class="difficultyNo simNo">04</span>
+                <span class="difficultyIndexText"><b>音形易混词</b><small>只差一个音 / 一个字母，意思完全不同</small></span>
                 <span class="difficultyArrow">→</span>
               </button>
             </div>
@@ -441,6 +459,161 @@
               <small>先听第一个音节：DA-pat vs PA-dat；再看句子是在说“获得/能够”，还是“密/满/挤”。</small>
             </div>
           </article>
+
+          <article id="difficulty04" class="difficultyLesson" style="display:none">
+            <button class="difficultyInnerBack" type="button" onclick="showDifficultyList()">← 返回难点列表</button>
+
+            <div class="difficultyWordHero simHero">
+              <div class="difficultyWordTop"><span class="difficultyNo big simNo">04</span><span class="difficultyType simType">音形易混词 · 最小区别音</span></div>
+              <div class="simHeroTitle">看起来差不多，听起来也很像，为什么总串词？</div>
+              <div class="difficultyMemory">这类词多数<b>不是同一个词根</b>。不要把它们绑成一个“词族”背；真正有效的方法是：<b>找到最小的区别音，再把每个词绑定到完全不同的场景。</b></div>
+              <div class="simMethod">
+                <div><span>1</span><b>先看共同骨架</b><small>例如 m-rah</small></div>
+                <div><span>2</span><b>只盯区别音</b><small>a / e / u</small></div>
+                <div><span>3</span><b>绑定场景</b><small>生气 / 红色 / 便宜</small></div>
+              </div>
+              <div class="simAlready"><b>dapat / padat</b> 已在第 03 个难点单独讲，这里不重复。</div>
+            </div>
+
+            <div class="simSectionTitle">A. 最容易混的一大组：tang-</div>
+            <div class="simGroup simWide">
+              <div class="simGroupHead">
+                <div><b>tang- 密集区</b><small>重点先分清 ng / ngg / ngk</small></div>
+                <button class="simListen" type="button" onclick="speakIdText('tangan. tangga. tanggal. tanggap. tangkap. tanggung. tangguh.',this)">🔁 连续听</button>
+              </div>
+              <div class="simNgRule">
+                <span><b>ng</b><small>/ŋ/</small></span>
+                <span><b>ngg</b><small>/ŋg/</small></span>
+                <span><b>ngk</b><small>/ŋk/</small></span>
+                <p>中文耳朵容易把这三种都听成“ng”。但印尼语里后面有没有 <b>g / k</b> 会直接换成另一个词。</p>
+              </div>
+              <div class="simWordGrid tangGrid">
+                <div class="simWord"><button onclick="speakIdText('tangan',this)">🔊</button><strong>ta<span>ng</span>an</strong><b>手</b><small>body · 手这个场景</small></div>
+                <div class="simWord"><button onclick="speakIdText('tangga',this)">🔊</button><strong>ta<span>ngg</span>a</strong><b>楼梯 / 梯子</b><small>stairs / ladder</small></div>
+                <div class="simWord"><button onclick="speakIdText('tanggal',this)">🔊</button><strong>ta<span>ngg</span>al</strong><b>日期；脱落</b><small>tanggal lahir = 出生日期</small></div>
+                <div class="simWord"><button onclick="speakIdText('tanggap',this)">🔊</button><strong>ta<span>ngg</span>ap</strong><b>反应快、善于回应</b><small>responsive</small></div>
+                <div class="simWord"><button onclick="speakIdText('tangkap',this)">🔊</button><strong>ta<span>ngk</span>ap</strong><b>抓住、捕捉</b><small>catch / capture</small></div>
+                <div class="simWord"><button onclick="speakIdText('tanggung',this)">🔊</button><strong>ta<span>ngg</span>ung</strong><b>承担；不上不下</b><small>tanggung jawab = 责任</small></div>
+                <div class="simWord"><button onclick="speakIdText('tangguh',this)">🔊</button><strong>ta<span>ngg</span>uh</strong><b>坚韧、强悍</b><small>tough / resilient</small></div>
+              </div>
+              <div class="simCue"><b>识别诀窍：</b>先不要猜整个词。听到 <strong>tang-</strong> 后，马上把注意力放到后半段：<strong>-an / -ga / -gal / -gap / -kap / -gung / -guh</strong>。</div>
+            </div>
+
+            <div class="simSectionTitle">B. 高频“最小差异”组</div>
+            <div class="simGroups">
+
+              <div class="simGroup">
+                <div class="simGroupHead"><div><b>marah / merah / murah</b><small>只换中间元音</small></div><button class="simListen" onclick="speakIdText('marah. merah. murah.',this)">🔁</button></div>
+                <div class="simPattern"><span>m<strong>a</strong>rah</span><span>m<strong>e</strong>rah</span><span>m<strong>u</strong>rah</span></div>
+                <div class="simMiniRows">
+                  <div><b>marah</b><span>生气</span><small>情绪</small></div>
+                  <div><b>merah</b><span>红色</span><small>颜色</small></div>
+                  <div><b>murah</b><span>便宜</span><small>价格</small></div>
+                </div>
+                <div class="simCue"><b>不要看整词：</b>只听第二个元音。<strong>a = angry，e = red，u = cheap</strong>。</div>
+              </div>
+
+              <div class="simGroup">
+                <div class="simGroupHead"><div><b>malam / malah / malas / malu</b><small>mala- 周围的高频词</small></div><button class="simListen" onclick="speakIdText('malam. malah. malas. malu.',this)">🔁</button></div>
+                <div class="simMiniRows">
+                  <div><b>malam</b><span>夜晚</span><small>时间</small></div>
+                  <div><b>malah</b><span>反而、却</span><small>转折结果</small></div>
+                  <div><b>malas</b><span>懒、不想做</span><small>状态</small></div>
+                  <div><b>malu</b><span>害羞、丢脸</span><small>情绪</small></div>
+                </div>
+                <div class="simCue"><b>前三个只看尾音：</b><strong>-m 夜晚 / -h 反而 / -s 懒</strong>；malu 则直接绑定“害羞”。</div>
+              </div>
+
+              <div class="simGroup">
+                <div class="simGroupHead"><div><b>singkat / tingkat</b><small>只差开头 s / t</small></div><button class="simListen" onclick="speakIdText('singkat. tingkat.',this)">🔁</button></div>
+                <div class="simPattern"><span><strong>s</strong>ingkat</span><span><strong>t</strong>ingkat</span></div>
+                <div class="simMiniRows">
+                  <div><b>singkat</b><span>简短、短暂</span><small>short / brief</small></div>
+                  <div><b>tingkat</b><span>层、等级、程度</span><small>level / floor</small></div>
+                </div>
+                <div class="simCue"><b>场景切开：</b><strong>singkat</strong> 说“长短”；<strong>tingkat</strong> 说“层级、高低”。</div>
+              </div>
+
+              <div class="simGroup">
+                <div class="simGroupHead"><div><b>kepala / kelapa</b><small>pa / la 位置互换</small></div><button class="simListen" onclick="speakIdText('kepala. kelapa.',this)">🔁</button></div>
+                <div class="simPattern swapPattern"><span>ke-<strong>pa-la</strong></span><span>ke-<strong>la-pa</strong></span></div>
+                <div class="simMiniRows">
+                  <div><b>kepala</b><span>头</span><small>body</small></div>
+                  <div><b>kelapa</b><span>椰子</span><small>food / plant</small></div>
+                </div>
+                <div class="simCue"><b>这是“位置互换型”：</b>不是多一个字母，而是 <strong>pa-la ↔ la-pa</strong>。</div>
+              </div>
+
+              <div class="simGroup">
+                <div class="simGroupHead"><div><b>kurang / kurung / karung</b><small>元音位置决定词义</small></div><button class="simListen" onclick="speakIdText('kurang. kurung. karung.',this)">🔁</button></div>
+                <div class="simMiniRows">
+                  <div><b>kurang</b><span>少、不足、不够</span><small>quantity</small></div>
+                  <div><b>kurung</b><span>关起来、圈住</span><small>confine</small></div>
+                  <div><b>karung</b><span>大袋子、麻袋</span><small>sack</small></div>
+                </div>
+                <div class="simCue"><b>场景法：</b>钱不够 = <strong>kurang</strong>；把动物关起来 = <strong>kurung</strong>；一麻袋米 = <strong>karung</strong>。</div>
+              </div>
+
+              <div class="simGroup">
+                <div class="simGroupHead"><div><b>tinggal / tinggi / tingkat / tingkah</b><small>共同开头 ting-</small></div><button class="simListen" onclick="speakIdText('tinggal. tinggi. tingkat. tingkah.',this)">🔁</button></div>
+                <div class="simMiniRows">
+                  <div><b>tinggal</b><span>住；剩下</span><small>live / remain</small></div>
+                  <div><b>tinggi</b><span>高</span><small>high / tall</small></div>
+                  <div><b>tingkat</b><span>层、等级、程度</span><small>level</small></div>
+                  <div><b>tingkah</b><span>举止、行为</span><small>behavior</small></div>
+                </div>
+                <div class="simCue"><b>只抓后半段：</b><strong>-gal 住 / -gi 高 / -kat 层级 / -kah 行为</strong>。</div>
+              </div>
+
+              <div class="simGroup">
+                <div class="simGroupHead"><div><b>langkah / langka / lengkap</b><small>ngkah / ngka / ngkap</small></div><button class="simListen" onclick="speakIdText('langkah. langka. lengkap.',this)">🔁</button></div>
+                <div class="simMiniRows">
+                  <div><b>langkah</b><span>步、步骤</span><small>step</small></div>
+                  <div><b>langka</b><span>稀有、罕见</span><small>rare</small></div>
+                  <div><b>lengkap</b><span>完整、齐全</span><small>complete</small></div>
+                </div>
+                <div class="simCue"><b>视觉上很像，但骨架不同：</b><strong>langkah</strong> 有 h；<strong>langka</strong> 到 a 就结束；<strong>lengkap</strong> 是 leng-kap。</div>
+              </div>
+
+              <div class="simGroup">
+                <div class="simGroupHead"><div><b>rasa / rata / rapat / rawat</b><small>ra- 开头的常用词</small></div><button class="simListen" onclick="speakIdText('rasa. rata. rapat. rawat.',this)">🔁</button></div>
+                <div class="simMiniRows">
+                  <div><b>rasa</b><span>感觉、味道</span><small>feel / taste</small></div>
+                  <div><b>rata</b><span>平、平均</span><small>flat / even</small></div>
+                  <div><b>rapat</b><span>紧密；会议</span><small>tight / meeting</small></div>
+                  <div><b>rawat</b><span>照顾、护理</span><small>care / treat</small></div>
+                </div>
+                <div class="simCue"><b>把它们放进四个场景：</b>舌头/感觉 → rasa；表面 → rata；会议室 → rapat；医院/照顾 → rawat。</div>
+              </div>
+
+            </div>
+
+            <div class="simRuleBox">
+              <div class="simRuleTitle">真正有效的辨析方式</div>
+              <div class="simRuleGrid">
+                <div><b>不要：</b><span>把一组相似词从头到尾反复看中文。</span></div>
+                <div><b>要：</b><span>先圈出“唯一不同的音”，再给每个词放一个完全不同的场景。</span></div>
+                <div><b>听到时：</b><span>不要等整词结束才猜；一出现区别音，就立即切到对应意思。</span></div>
+                <div><b>复习时：</b><span>连续对比读，比把这些词分开背更容易建立边界。</span></div>
+              </div>
+            </div>
+
+            <div class="simQuiz">
+              <div class="compareTitle">快速辨析</div>
+              <div class="simQuizRow"><span>① “便宜”</span><div><button data-choice="marah" onclick="answerSimilarQuiz(this,'marah','murah')">marah</button><button data-choice="merah" onclick="answerSimilarQuiz(this,'merah','murah')">merah</button><button data-choice="murah" onclick="answerSimilarQuiz(this,'murah','murah')">murah</button></div><small class="simQuizResult"></small></div>
+              <div class="simQuizRow"><span>② “楼梯”</span><div><button data-choice="tangan" onclick="answerSimilarQuiz(this,'tangan','tangga')">tangan</button><button data-choice="tangga" onclick="answerSimilarQuiz(this,'tangga','tangga')">tangga</button><button data-choice="tanggal" onclick="answerSimilarQuiz(this,'tanggal','tangga')">tanggal</button></div><small class="simQuizResult"></small></div>
+              <div class="simQuizRow"><span>③ “简短”</span><div><button data-choice="singkat" onclick="answerSimilarQuiz(this,'singkat','singkat')">singkat</button><button data-choice="tingkat" onclick="answerSimilarQuiz(this,'tingkat','singkat')">tingkat</button></div><small class="simQuizResult"></small></div>
+              <div class="simQuizRow"><span>④ “椰子”</span><div><button data-choice="kepala" onclick="answerSimilarQuiz(this,'kepala','kelapa')">kepala</button><button data-choice="kelapa" onclick="answerSimilarQuiz(this,'kelapa','kelapa')">kelapa</button></div><small class="simQuizResult"></small></div>
+              <div class="simQuizRow"><span>⑤ “不够”</span><div><button data-choice="kurang" onclick="answerSimilarQuiz(this,'kurang','kurang')">kurang</button><button data-choice="kurung" onclick="answerSimilarQuiz(this,'kurung','kurang')">kurung</button><button data-choice="karung" onclick="answerSimilarQuiz(this,'karung','kurang')">karung</button></div><small class="simQuizResult"></small></div>
+              <div class="simQuizRow"><span>⑥ “举止、行为”</span><div><button data-choice="tinggal" onclick="answerSimilarQuiz(this,'tinggal','tingkah')">tinggal</button><button data-choice="tingkat" onclick="answerSimilarQuiz(this,'tingkat','tingkah')">tingkat</button><button data-choice="tingkah" onclick="answerSimilarQuiz(this,'tingkah','tingkah')">tingkah</button></div><small class="simQuizResult"></small></div>
+            </div>
+
+            <div class="difficultyFormula simFormula">
+              <span>一句话记忆</span>
+              <b>相似词不要“整词硬背”，要抓最小区别音：一个音变了，就是另一个场景、另一个词。</b>
+              <small>先建立边界，再扩大词汇量。这样比把相似词混在一起反复背更稳。</small>
+            </div>
+          </article>
         </div>`;
       app.appendChild(page);
     }
@@ -576,6 +749,23 @@
       .dpQuiz{margin-top:22px}.dpQuizRow{display:grid;grid-template-columns:1fr auto minmax(95px,auto);gap:10px;align-items:center;border-top:1px solid #e8ebf0;padding:10px 0}.dpQuizRow:first-of-type{border-top:0}.dpQuizRow>span{font-size:13px;font-weight:750}.dpQuizRow>div{display:flex;gap:6px}.dpQuizRow button{border:1px solid #dfe4eb;background:#fff;border-radius:9px;padding:7px 10px;cursor:pointer}.dpQuizRow button:hover{background:#f7f9fc}.dpQuizRow button.dpQuizOk{background:#edf9f0;border-color:#76bd87;color:#17652d}.dpQuizRow button.dpQuizBad{background:#fff0ef;border-color:#dd8b84;color:#9d2f28}.dpQuizRow button:disabled{cursor:default}.dpQuizResult{font-size:11px;color:#657386}
       .dpFormula{background:linear-gradient(135deg,#244d77,#80511f)}
 
+      .simNo{background:#e9f8ef;color:#2e7d4a}
+      .difficultyWordHero.simHero{background:linear-gradient(135deg,#f3fbf6,#fbfefc);border-color:#d6ebdd}
+      .simType{color:#2f7b4a!important;background:#e9f7ee!important}
+      .simHeroTitle{font-size:28px;font-weight:900;color:#284f37;margin:14px 0 8px;line-height:1.25}
+      .simMethod{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:15px}.simMethod>div{background:#fff;border:1px solid #dcebe1;border-radius:12px;padding:11px;display:grid;grid-template-columns:auto 1fr;gap:2px 8px;align-items:center}.simMethod span{grid-row:1/3;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e7f5ec;color:#277245;font-weight:900}.simMethod b{font-size:12px;color:#334b3c}.simMethod small{font-size:11px;color:#758177}.simAlready{margin-top:11px;font-size:12px;color:#6d7a70}
+      .simSectionTitle{font-size:18px;font-weight:900;color:#2f3e35;margin:22px 0 10px}
+      .simGroups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.simGroup{border:1px solid #e0e7e2;border-radius:17px;background:#fff;padding:15px;min-width:0}.simWide{background:#fbfefc}
+      .simGroupHead{display:flex;align-items:flex-start;justify-content:space-between;gap:9px;margin-bottom:10px}.simGroupHead>div b{display:block;font-size:16px;color:#263b2e}.simGroupHead>div small{display:block;font-size:11px;color:#78857c;margin-top:3px}
+      .simListen,.simWord button{border:1px solid #dce7df;background:#fff;border-radius:8px;cursor:pointer;color:#41624e}.simListen{padding:6px 8px;font-size:11px;white-space:nowrap}.simListen:hover,.simWord button:hover{background:#eff8f2}
+      .simNgRule{display:grid;grid-template-columns:auto auto auto 1fr;gap:8px;align-items:center;margin-bottom:12px;padding:10px;background:#f3faf5;border-radius:12px}.simNgRule>span{min-width:55px;text-align:center;background:#fff;border:1px solid #d9e9de;border-radius:9px;padding:6px}.simNgRule>span b{display:block;font-size:15px;color:#2b7144}.simNgRule>span small{font-size:10px;color:#7a887f}.simNgRule p{margin:0;font-size:12px;line-height:1.55;color:#5f6d63}
+      .simWordGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.simWord{position:relative;border:1px solid #e4e9e5;border-radius:12px;padding:11px;background:#fff;min-width:0}.simWord button{position:absolute;right:7px;top:7px;width:28px;height:28px}.simWord strong{display:block;font-size:16px;color:#26372c;padding-right:30px}.simWord strong span{color:#2d8a52;background:#e9f8ef;border-radius:4px;padding:0 2px}.simWord>b{display:block;font-size:13px;margin-top:7px;color:#344b3c}.simWord small{display:block;font-size:10px;color:#7c8780;margin-top:3px;line-height:1.35}
+      .simPattern{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 10px}.simPattern span{background:#f5f8f6;border:1px solid #e1e7e3;border-radius:8px;padding:6px 9px;font-size:14px;font-weight:800}.simPattern strong{color:#27804a;background:#e6f5eb;padding:0 2px;border-radius:3px}.swapPattern strong{color:#7a5a23;background:#fff3d7}
+      .simMiniRows{display:grid;gap:5px}.simMiniRows>div{display:grid;grid-template-columns:minmax(72px,.8fr) 1.2fr auto;gap:7px;align-items:center;padding:6px 0;border-top:1px solid #eef1ef}.simMiniRows>div:first-child{border-top:0}.simMiniRows b{font-size:13px;color:#2d3e33}.simMiniRows span{font-size:12px;color:#45574b}.simMiniRows small{font-size:10px;color:#8a948d}
+      .simCue{margin-top:10px;padding:9px 10px;border-radius:10px;background:#f7faf8;font-size:11px;line-height:1.55;color:#657269}.simCue b{color:#2f6e45}.simCue strong{color:#263e30}
+      .simRuleBox{margin-top:20px;border:1px solid #d6e6db;border-radius:17px;background:#f7fcf9;padding:16px}.simRuleTitle{font-size:17px;font-weight:900;color:#2c6540;margin-bottom:10px}.simRuleGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.simRuleGrid>div{background:#fff;border:1px solid #e0ebe3;border-radius:10px;padding:10px;font-size:12px;line-height:1.5}.simRuleGrid b{color:#2f7046}.simRuleGrid span{color:#5f6d64}
+      .simQuiz{margin-top:22px}.simQuizRow{display:grid;grid-template-columns:1fr auto minmax(90px,auto);gap:10px;align-items:center;border-top:1px solid #e8ece9;padding:10px 0}.simQuizRow:first-of-type{border-top:0}.simQuizRow>span{font-size:13px;font-weight:750}.simQuizRow>div{display:flex;gap:6px;flex-wrap:wrap}.simQuizRow button{border:1px solid #dfe6e1;background:#fff;border-radius:9px;padding:7px 10px;cursor:pointer}.simQuizRow button:hover{background:#f6faf7}.simQuizRow button.simQuizOk{background:#edf9f0;border-color:#76bd87;color:#17652d}.simQuizRow button.simQuizBad{background:#fff0ef;border-color:#dd8b84;color:#9d2f28}.simQuizRow button:disabled{cursor:default}.simQuizResult{font-size:11px;color:#657386}.simFormula{background:linear-gradient(135deg,#24543a,#496f5a)}
+
       @media(max-width:1050px){#home .modules.homeModulesCompact{grid-template-columns:repeat(3,minmax(0,1fr))!important}.triExplain{grid-template-columns:1fr}.difficultyIndex{grid-template-columns:repeat(2,minmax(0,1fr))}}
       @media(max-width:620px){.difficultyIndex{grid-template-columns:1fr}.difficultyIndexItem{min-height:92px}}
       @media(max-width:760px){
@@ -586,6 +776,7 @@
         .senseBridge{margin:0 12% 5px}.senseBridgeFork{height:16px}.senseBridgeFork:before{left:50%;right:auto;width:2px;height:10px;top:2px}.senseBridgeFork span{display:none}.senseBridgeFork span:first-child{display:block;width:2px;height:12px;margin-top:2px;grid-column:2}
         .exampleStrip{grid-template-columns:1fr}.keanBigRuleFlow{flex-direction:column}.keanBigRuleFlow b{text-align:center}
         .dpCoreGrid{grid-template-columns:1fr}.dpCoreVs{justify-self:center}.dpPairRow,.dpFamilyGrid{grid-template-columns:1fr}.dpPronounce{grid-template-columns:1fr}.dpSwap{transform:rotate(90deg)}.dpQuickRule{grid-template-columns:1fr}.dpRuleDivider{width:100%;height:1px}.dpQuizRow{grid-template-columns:1fr}.dpQuizResult{min-height:14px}
+        .simGroups{grid-template-columns:1fr}.simWordGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.simNgRule{grid-template-columns:repeat(3,1fr)}.simNgRule p{grid-column:1/-1}.simMethod{grid-template-columns:1fr}.simRuleGrid{grid-template-columns:1fr}.simQuizRow{grid-template-columns:1fr}.simHeroTitle{font-size:23px}
       }
       @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}.difficultyPageCard{padding:16px!important}}
       @media(max-width:430px){#home .modules.homeModulesCompact{grid-template-columns:1fr!important}#home .homeModulesCompact .module{min-height:0!important}}
