@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{id:'er-20260921-lrt-tarif-rute',date:'2026-09-21',title:'LRT Kelapa Gading–Manggarai: Tarif Rp8 Sampai 24 September',title_cn:'Kelapa Gading–Manggarai LRT：8印尼盾票价持续到9月24日',path:'data/extensive-reading-history/2026-09-21.js'},
 {id:'er-20260920-beras-premium-ritel',date:'2026-09-20',title:'Pasokan Beras Premium di Ritel Dipastikan Tetap Aman',title_cn:'印尼确保零售店优质大米供应保持充足',path:'data/extensive-reading-history/2026-09-20.js'},
 {id:'er-20260919-kereta-petani-pedagang',date:'2026-09-19',title:'Kereta Rp3.000 Membantu Petani dan Pedagang di Banten',title_cn:'3000印尼盾的列车帮助万丹农民和商贩出行',path:'data/extensive-reading-history/2026-09-19.js'},
 {id:'er-20260918-cek-kesehatan-gratis',date:'2026-09-18',title:'Cek Kesehatan Gratis Sekarang Ada Tindak Lanjut',title_cn:'印尼免费健康检查现在提供后续处理',path:'data/extensive-reading-history/2026-09-18.js'},
