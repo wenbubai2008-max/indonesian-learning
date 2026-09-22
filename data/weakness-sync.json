@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T10:30:28.227Z",
+  "updated_at": "2026-09-22T10:34:48.432Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2066,13 +2066,14 @@
     "bebas": {
       "word": "bebas",
       "status": "active",
-      "updated_at": "2026-09-18T15:06:26.003Z",
+      "updated_at": "2026-09-22T10:31:44.026Z",
       "display": "bebas",
       "cn": "自由；随便",
       "root": "bebas",
       "last_review": "2026-09-18T15:06:25.986Z",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "automation_fail"
       ],
       "wrong_count": 0,
       "right_streak": 3
@@ -7133,7 +7134,7 @@
     "layak": {
       "word": "layak",
       "status": "active",
-      "updated_at": "2026-09-22T08:17:05.177Z",
+      "updated_at": "2026-09-22T10:34:37.887Z",
       "display": "layak",
       "cn": "值得；合适；够资格",
       "root": "layak",
@@ -7142,7 +7143,8 @@
       "last_review": "2026-09-22T08:17:05.155Z",
       "reasons": [
         "memory_fuzzy",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 3
