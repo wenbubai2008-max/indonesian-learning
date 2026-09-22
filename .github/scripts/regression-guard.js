@@ -81,7 +81,7 @@ function validateLatestPm(){
   ok(rewrite.length > 0 && rewrite.every(x => String(x && x.task || '').trim() && String(x && x.reference_answer || '').trim() && String(x && x.reference_cn || '').trim()), `latest PM ${date}: rewrite tasks have answer + Chinese`);
 
   const test = pm.daily_test || {};
-  const items = Array.isArray(test.items) ? test.items : [];
+  const items = Array.isArray(test.questions) ? test.questions : [];
   const choices = items.filter(x => x && x.type === 'choice');
   const fills = items.filter(x => x && x.type === 'fill');
   const orders = items.filter(x => x && x.type === 'order');
