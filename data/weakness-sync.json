@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T13:20:02.386Z",
+  "updated_at": "2026-09-22T13:23:16.203Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -309,16 +309,16 @@
     "cadangan": {
       "word": "cadangan",
       "status": "mastered",
-      "updated_at": "2026-09-14T09:53:47.748Z",
+      "updated_at": "2026-09-22T13:22:07.121Z",
       "display": "cadangan",
       "cn": "备用；储备；后备方案",
       "root": "cadang",
       "root_cn": "预留；准备备用",
-      "last_review": "2026-09-16T07:55:46.212Z",
+      "last_review": "2026-09-22T13:22:07.098Z",
       "last_mastered": "2026-09-14T09:53:47.728Z",
       "reasons": [],
       "wrong_count": 1,
-      "right_streak": 4
+      "right_streak": 5
     },
     "ngeluh": {
       "word": "ngeluh",
@@ -391,16 +391,16 @@
     "kebetulan": {
       "word": "kebetulan",
       "status": "mastered",
-      "updated_at": "2026-09-18T15:05:20.636Z",
+      "updated_at": "2026-09-22T13:23:05.989Z",
       "display": "kebetulan",
       "cn": "碰巧；正好",
       "root": "betul",
       "root_cn": "对；正确",
-      "last_review": "2026-09-18T15:05:20.611Z",
+      "last_review": "2026-09-22T13:23:05.970Z",
       "last_mastered": "2026-09-18T15:05:20.611Z",
       "reasons": [],
       "wrong_count": 2,
-      "right_streak": 3
+      "right_streak": 4
     },
     "justru": {
       "word": "justru",
@@ -517,16 +517,16 @@
     "ngelarin": {
       "word": "ngelarin",
       "status": "mastered",
-      "updated_at": "2026-09-19T03:55:47.340Z",
+      "updated_at": "2026-09-22T13:22:14.836Z",
       "display": "ngelarin",
       "cn": "把事情做完；收尾（口语）",
       "root": "kelar",
       "root_cn": "完成；结束",
-      "last_review": "2026-09-19T03:55:47.326Z",
+      "last_review": "2026-09-22T13:22:14.812Z",
       "last_mastered": "2026-09-19T03:55:47.326Z",
       "reasons": [],
       "wrong_count": 2,
-      "right_streak": 3
+      "right_streak": 4
     },
     "kejebak": {
       "word": "kejebak",
@@ -618,17 +618,17 @@
     "bentrok": {
       "word": "bentrok",
       "status": "mastered",
-      "updated_at": "2026-09-15T04:29:11.946Z",
+      "updated_at": "2026-09-22T13:22:04.645Z",
       "display": "bentrok",
       "cn": "时间冲突；撞期",
       "root": "bentrok",
       "root_cn": "冲突；相撞",
       "last_wrong": "2026-09-11T15:03:45.009Z",
-      "last_review": "2026-09-16T07:56:51.137Z",
+      "last_review": "2026-09-22T13:22:04.622Z",
       "last_mastered": "2026-09-16T07:56:51.137Z",
       "reasons": [],
       "wrong_count": 1,
-      "right_streak": 3
+      "right_streak": 4
     },
     "nyimak": {
       "word": "nyimak",
@@ -2123,20 +2123,20 @@
     "menunjukkan": {
       "word": "menunjukkan",
       "status": "active",
-      "updated_at": "2026-09-22T13:07:20.793Z",
+      "updated_at": "2026-09-22T13:23:00.281Z",
       "display": "menunjukkan",
       "cn": "指出",
       "root": "tunjuk",
       "root_cn": "指；指出",
       "last_wrong": "2026-09-22T13:07:20.767Z",
-      "last_review": "2026-09-22T13:07:20.767Z",
+      "last_review": "2026-09-22T13:23:00.262Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kehidupan": {
       "word": "kehidupan",
@@ -7039,19 +7039,19 @@
     "niat": {
       "word": "niat",
       "status": "active",
-      "updated_at": "2026-09-22T13:06:57.991Z",
+      "updated_at": "2026-09-22T13:22:54.389Z",
       "display": "niat",
       "cn": "打算；意图；认真想做的心意",
       "root": "niat",
       "root_cn": "打算；意图",
       "last_wrong": "2026-09-22T13:06:57.963Z",
-      "last_review": "2026-09-22T13:06:57.963Z",
+      "last_review": "2026-09-22T13:22:54.364Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "bergerak": {
       "word": "bergerak",
@@ -10063,13 +10063,13 @@
     "bukti": {
       "word": "bukti",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:52.707Z",
+      "updated_at": "2026-09-22T13:21:24.648Z",
       "display": "bukti",
-      "last_review": "2026-09-12T14:13:52.701Z",
+      "last_review": "2026-09-22T13:21:24.630Z",
       "last_mastered": "2026-09-12T14:13:52.701Z",
       "reasons": [],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "aturan": {
       "word": "aturan",
@@ -12566,13 +12566,13 @@
     "kesempatan": {
       "word": "kesempatan",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:56.576Z",
+      "updated_at": "2026-09-22T13:20:37.697Z",
       "display": "kesempatan",
-      "last_review": "2026-09-12T14:13:56.569Z",
+      "last_review": "2026-09-22T13:20:37.665Z",
       "last_mastered": "2026-09-12T14:13:56.569Z",
       "reasons": [],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "setengah": {
       "word": "setengah",
@@ -12665,13 +12665,13 @@
     "lengkap": {
       "word": "lengkap",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:56.741Z",
+      "updated_at": "2026-09-22T13:21:10.336Z",
       "display": "lengkap",
-      "last_review": "2026-09-12T14:13:56.734Z",
+      "last_review": "2026-09-22T13:21:10.312Z",
       "last_mastered": "2026-09-12T14:13:56.734Z",
       "reasons": [],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "lebaran": {
       "word": "lebaran",
@@ -13028,13 +13028,13 @@
     "khawatir": {
       "word": "khawatir",
       "status": "mastered",
-      "updated_at": "2026-09-18T07:24:18.889Z",
+      "updated_at": "2026-09-22T13:20:52.757Z",
       "display": "khawatir",
-      "last_review": "2026-09-18T07:24:18.860Z",
+      "last_review": "2026-09-22T13:20:52.738Z",
       "last_mastered": "2026-09-12T14:13:57.326Z",
       "reasons": [],
       "wrong_count": 0,
-      "right_streak": 5
+      "right_streak": 6
     },
     "kayu": {
       "word": "kayu",
@@ -22889,18 +22889,18 @@
     "mampir": {
       "word": "mampir",
       "status": "active",
-      "updated_at": "2026-09-22T13:06:13.944Z",
+      "updated_at": "2026-09-22T13:21:44.538Z",
       "display": "mampir",
       "cn": "顺路去、进去坐一下",
       "root": "mampir",
       "last_wrong": "2026-09-22T13:06:13.927Z",
-      "last_review": "2026-09-22T13:06:13.927Z",
+      "last_review": "2026-09-22T13:21:44.519Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "sengaja": {
       "word": "sengaja",
@@ -23645,16 +23645,16 @@
     "urusan dadakan": {
       "word": "urusan dadakan",
       "status": "mastered",
-      "updated_at": "2026-09-15T04:46:58.241Z",
+      "updated_at": "2026-09-22T13:21:06.291Z",
       "display": "urusan dadakan",
       "cn": "临时冒出来的事",
       "root": "urus / dadak",
       "last_wrong": "2026-09-13T11:53:43.234Z",
-      "last_review": "2026-09-16T08:11:32.908Z",
+      "last_review": "2026-09-22T13:21:06.272Z",
       "last_mastered": "2026-09-15T04:46:57.969Z",
       "reasons": [],
       "wrong_count": 1,
-      "right_streak": 4
+      "right_streak": 5
     },
     "ngotot": {
       "word": "ngotot",
@@ -23689,18 +23689,20 @@
     },
     "kecolongan": {
       "word": "kecolongan",
-      "status": "mastered",
-      "updated_at": "2026-09-18T07:35:30.969Z",
+      "status": "active",
+      "updated_at": "2026-09-22T13:22:38.461Z",
       "display": "kecolongan",
       "cn": "一时疏忽没防住；漏掉问题",
       "root": "colong",
       "root_cn": "偷拿；趁人不注意拿走",
-      "last_wrong": "2026-09-15T04:29:01.877Z",
-      "last_review": "2026-09-18T07:35:30.948Z",
+      "last_wrong": "2026-09-22T13:22:38.445Z",
+      "last_review": "2026-09-22T13:22:38.445Z",
       "last_mastered": "2026-09-18T07:35:30.948Z",
-      "reasons": [],
-      "wrong_count": 1,
-      "right_streak": 3
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 2,
+      "right_streak": 0
     },
     "ngandelin": {
       "word": "ngandelin",
@@ -28165,6 +28167,22 @@
       ],
       "wrong_count": 1,
       "right_streak": 1
+    },
+    "ngurusin": {
+      "word": "ngurusin",
+      "status": "active",
+      "updated_at": "2026-09-22T13:22:26.455Z",
+      "display": "ngurusin",
+      "cn": "处理；操心；负责某件事（口语）",
+      "root": "urus",
+      "root_cn": "处理；料理；负责",
+      "last_wrong": "2026-09-22T13:22:26.432Z",
+      "last_review": "2026-09-22T13:22:26.432Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
     }
   }
 }
