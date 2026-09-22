@@ -1,5 +1,5 @@
 (function(){
-  const ORDER=['词汇学习','泛读','快速练习','弱项强化','自动训练','难点解释','前后缀'];
+  const ORDER=['词汇学习','泛读','快速练习','弱项强化','自动训练','难点解释'];
   let applying=false;
 
   const HOME_MODULES=[
@@ -9,7 +9,6 @@
     {key:'weak',title:'弱项强化',icon:'🎯',desc:'集中练快速练习错题和阅读中加入的陌生词。',tag:'针对弱项',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
     {key:'automation',title:'自动训练',icon:'⚙️',desc:'把眼熟但调不出来的词，逐步练到主动使用。',tag:'计算中',tagId:'automationTag',open:function(){if(typeof window.openAutomationTraining==='function')window.openAutomationTraining();}},
     {key:'difficulty',title:'难点解释',icon:'💡',desc:'整理中文难直译、容易混淆的词，用场景和对比帮助理解。',tag:'6 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
-    {key:'affix',title:'前后缀',icon:'🧩',desc:'meN-、peN-、ber-、di-、ter-、-kan、-i 等。',tag:'词根词族',open:function(){if(typeof window.go==='function')window.go('affix');}}
   ];
 
   function renderHomeModules(){
