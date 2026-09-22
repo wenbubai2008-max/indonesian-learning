@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T10:36:51.529Z",
+  "updated_at": "2026-09-22T12:09:06.096Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -21617,12 +21617,16 @@
     "berguna": {
       "word": "berguna",
       "status": "active",
-      "updated_at": "2026-09-12T17:05:12.334Z",
+      "updated_at": "2026-09-22T12:08:55.566Z",
       "display": "berguna",
       "cn": "有用",
       "root": "guna",
+      "source": "每日学习阅读",
+      "source_date": "2026-09-22",
+      "session": "19:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "manual_unknown"
       ],
       "wrong_count": 0,
       "right_streak": 0
