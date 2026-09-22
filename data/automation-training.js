@@ -153,7 +153,9 @@
       st.fail_streak=0;
       st.last_result=result.kind||'right';
       if(stage===1){
-        if(result.kind==='direct'){st.stage=2;st.next_due=now+20*HOUR;}else{st.stage=1;st.next_due=now+12*HOUR;}
+        if(Number.isFinite(Number(result.recall_ms)))st.last_recall_ms=Math.max(0,Number(result.recall_ms));
+        st.stage=2;
+        st.next_due=now+(result.kind==='direct'?20*HOUR:12*HOUR);
       }else if(stage===2){
         st.context_index=Number(st.context_index||0)+1;
         if(Number(result.hints||0)===0){st.stage=3;st.next_due=now+30*HOUR;st.last_result='right';}
@@ -227,14 +229,21 @@
     box.innerHTML=parts.join('');
   }
   function renderStage1(card,word,item,state){
-    let start=0;
-    card.innerHTML+='<div class="autoRecallBox"><div class="autoRecallWord">'+esc(item.cn||'看中文，想印尼语')+'</div><div class="autoRecallTip">尽量在 3–5 秒内自己写出来，不给选项。</div></div><div class="autoInputRow"><input class="autoAnswer" autocomplete="off" placeholder="输入印尼语"><button class="primary autoSubmit" type="button">确认</button><button class="secondary autoGiveUp" type="button">想不出</button></div><div class="autoResult"></div><div class="autoRescue"></div>';
+    let start=0,firstInputAt=0;
+    card.innerHTML+='<div class="autoRecallBox"><div class="autoRecallWord">'+esc(item.cn||'看中文，想印尼语')+'</div><div class="autoRecallTip">尽量在 3–5 秒内想起答案；输入长短不作为主要判断。</div></div><div class="autoInputRow"><input class="autoAnswer" autocomplete="off" placeholder="输入印尼语"><button class="primary autoSubmit" type="button">确认</button><button class="secondary autoGiveUp" type="button">想不出</button></div><div class="autoResult"></div><div class="autoRescue"></div>';
     const input=card.querySelector('.autoAnswer');
     function begin(){if(!start)start=Date.now();}
-    input.addEventListener('focus',begin);input.addEventListener('input',function(){begin();clearResult(card);});
-    function submit(){if(card.dataset.done)return;begin();const good=norm(input.value)===norm(word),elapsed=Date.now()-start;if(!good){resultBox(card,'还不对，再想一下；也可以点“想不出”。',false);return;}const kind=elapsed<=5000?'direct':'slow';finishCard(card,word,1,{ok:true,kind:kind},item,kind==='direct'?'✓ 主动提取成功':'✓ 答对了，但这次提取偏慢，下一次仍会继续验证');}
+    function recallMs(){return firstInputAt&&start?Math.max(0,firstInputAt-start):0;}
+    input.addEventListener('focus',begin);
+    input.addEventListener('input',function(){begin();if(!firstInputAt&&input.value.trim())firstInputAt=Date.now();clearResult(card);});
+    function finishCorrect(){
+      const ms=recallMs(),kind=ms>0&&ms<=5000?'direct':'slow';
+      const msg=kind==='direct'?'✓ 主动提取成功':'✓ 答对了；想到答案稍慢，但输入时长不影响升级，下一次进入语境补词';
+      finishCard(card,word,1,{ok:true,kind:kind,recall_ms:ms},item,msg);
+    }
+    function submit(){if(card.dataset.done)return;begin();if(norm(input.value)!==norm(word)){resultBox(card,'还不对，再想一下；也可以点“想不出”。',false);return;}finishCorrect();}
     card.querySelector('.autoSubmit').onclick=submit;
-    card.querySelector('.autoGiveUp').onclick=function(){if(card.dataset.done)return;begin();if(norm(input.value)===norm(word)){const elapsed=Date.now()-start,kind=elapsed<=5000?'direct':'slow';finishCard(card,word,1,{ok:true,kind:kind},item,kind==='direct'?'✓ 主动提取成功':'✓ 答对了，但这次提取偏慢，下一次仍会继续验证');return;}const wrong=input.value.trim(),newState=finishCard(card,word,1,{ok:false,kind:'fail'},item,'');failureHelp(card,word,item,newState,wrong);};
+    card.querySelector('.autoGiveUp').onclick=function(){if(card.dataset.done)return;begin();if(norm(input.value)===norm(word)){finishCorrect();return;}const wrong=input.value.trim(),newState=finishCard(card,word,1,{ok:false,kind:'fail'},item,'');failureHelp(card,word,item,newState,wrong);};
   }
   function renderStage2(card,word,item,state){
     const ctx=contextFor(word,item,state);
