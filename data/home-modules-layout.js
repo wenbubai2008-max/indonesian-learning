@@ -1007,13 +1007,12 @@
       cards.forEach(function(card){
         const title=titleOf(card);
         map[title]=card;
-        card.classList.remove('homeModVocab','homeModReading','homeModQuick','homeModWeak','homeModAutomation','homeModAffix','homeModDifficulty','v2-wide');
+        card.classList.remove('homeModVocab','homeModReading','homeModQuick','homeModWeak','homeModAutomation','homeModDifficulty','v2-wide');
         if(title==='词汇学习')card.classList.add('homeModVocab');
         else if(title==='泛读')card.classList.add('homeModReading');
         else if(title==='快速练习')card.classList.add('homeModQuick');
         else if(title==='弱项强化')card.classList.add('homeModWeak');
         else if(title==='自动训练')card.classList.add('homeModAutomation');
-        else if(title==='前后缀')card.classList.add('homeModAffix');
         else if(title==='难点解释')card.classList.add('homeModDifficulty');
       });
       const desired=ORDER.filter(function(t){return map[t];});
@@ -1038,7 +1037,7 @@
       #home .homeModQuick{background:#fffaf3!important;border-color:#f0e2c9!important;border-top:3px solid #d6a653!important}
       #home .homeModWeak{background:#fff8f8!important;border-color:#f0dcdc!important;border-top:3px solid #d98b8b!important}
       #home .homeModAutomation{background:#f8f6ff!important;border-color:#e4def5!important;border-top:3px solid #8d73c9!important}
-      #home .homeModAffix{background:#faf8ff!important;border-color:#e5ddf4!important;border-top:3px solid #9b83ca!important}
+      #home 
       #home .homeModDifficulty{background:#f7fbff!important;border-color:#d8e8f5!important;border-top:3px solid #63a6cf!important;position:relative}
       #home .difficultyIconWrap{display:flex!important;align-items:center!important;gap:7px!important;width:100%!important}
       #home .difficultyCount{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:#e4f3ff;color:#24749f;font-size:11px;line-height:1}
