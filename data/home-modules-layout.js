@@ -850,84 +850,89 @@
               <span><strong>dibuka</strong> 连写 = 被打开（前缀）；<strong>di rumah</strong> 分开写 = 在家（介词）。</span>
             </div>
 
-            <div class="affixSectionTitle">② 第二层：不是“谁做”，而是主体处在什么状态</div>
-            <div class="affixStateGrid">
-              <div class="affixStateCard berCard">
-                <div class="affixStateHead"><span>ber-</span><b>自己在做 / 处于 / 拥有 X</b></div>
-                <p>最适合先理解成：<strong>主体进入或处于一个和词根有关的活动、状态或拥有关系。</strong></p>
-                <div class="affixExamples">
-                  <span><b>bermain</b><small>玩、在玩</small></span>
-                  <span><b>bekerja</b><small>工作</small></span>
-                  <span><b>berumur</b><small>有……岁 / 年龄为</small></span>
+            <div class="affixSectionTitle">② 七张统一卡片：看到它，先想到这一句话</div>
+            <div class="affixUnifiedGrid">
+
+              <div class="affixUnifiedCard berUnified">
+                <div class="affixUnifiedHead"><span class="affixCircle">①</span><div><b>ber-</b><small>活动 / 状态 / 拥有</small></div></div>
+                <div class="affixOneLine">主体自己在做，或处于一个和词根有关的状态。</div>
+                <div class="affixUnifiedExamples">
+                  <span><strong>bermain</strong><small>玩、在玩</small></span>
+                  <span><strong>bekerja</strong><small>工作</small></span>
+                  <span><strong>berumur</strong><small>有……岁</small></span>
                 </div>
-                <div class="affixMiniTip">所以 ber- 不要只死记成“正在”。它的范围比中文“正在”大。</div>
+                <div class="affixBrain"><b>先想到：</b>“主语自己进入了一个活动 / 状态。”</div>
               </div>
 
-              <div class="affixStateCard terCard">
-                <div class="affixStateHead"><span>ter-</span><b>结果 / 偶然 / 最……</b></div>
-                <p>ter- 有几个高频分支，核心要靠场景判断。</p>
-                <div class="affixExamples">
-                  <span><b>terbuka</b><small>开着、处于打开状态</small></span>
-                  <span><b>tertidur</b><small>不知不觉睡着</small></span>
-                  <span><b>terbaik</b><small>最好的</small></span>
+              <div class="affixUnifiedCard terUnified">
+                <div class="affixUnifiedHead"><span class="affixCircle">②</span><div><b>ter-</b><small>三个高频分支</small></div></div>
+                <div class="affixOneLine">不要固定翻译；先判断它走的是哪一条路。</div>
+                <div class="terBranches">
+                  <div><span>①</span><strong>terbuka</strong><b>结果状态</b><small>开着、处于打开状态</small></div>
+                  <div><span>②</span><strong>tertidur</strong><b>偶然发生</b><small>不知不觉睡着</small></div>
+                  <div><span>③</span><strong>terbaik</strong><b>最高级</b><small>最好的</small></div>
                 </div>
-                <div class="affixMiniTip">先问：是“已经成了某种状态”，还是“无意发生”，还是“最高级”？</div>
+                <div class="affixBrain"><b>先想到：</b>“这是状态？偶然？还是最……？”</div>
               </div>
-            </div>
 
-            <div class="affixSectionTitle">③ 第三层：关系、数量和“状态框”</div>
-            <div class="affixRelationGrid">
-              <div class="affixRelationCard seCard">
-                <div class="affixRelationHead"><span>se-</span><b>一个 / 同样 / 一样……</b></div>
-                <div class="affixRelExamples">
-                  <div><strong>seorang</strong><span>一个人</span></div>
-                  <div><strong>sehari</strong><span>一天</span></div>
-                  <div><strong>sependapat</strong><span>意见一致</span></div>
-                  <div><strong>sebesar</strong><span>和……一样大 / 如此大</span></div>
+              <div class="affixUnifiedCard seUnified">
+                <div class="affixUnifiedHead"><span class="affixCircle">③</span><div><b>se-</b><small>一个 / 同样 / 同一程度</small></div></div>
+                <div class="affixOneLine">把数量、单位或程度拉到“同一个框”里。</div>
+                <div class="affixUnifiedExamples twoCol">
+                  <span><strong>seorang</strong><small>一个人</small></span>
+                  <span><strong>sehari</strong><small>一天</small></span>
+                  <span><strong>sependapat</strong><small>意见一致</small></span>
+                  <span><strong>sebesar</strong><small>一样大 / 那么大</small></span>
                 </div>
-                <div class="affixThought">脑内感觉：<b>“把两个东西拉到同一个单位 / 程度里。”</b></div>
+                <div class="affixBrain"><b>先想到：</b>“一个、一样、同一程度。”</div>
               </div>
 
-              <div class="affixRelationCard keanCard">
-                <div class="affixRelationHead"><span>ke-…-an</span><b>状态 / 概念 / 遭遇</b></div>
-                <div class="affixRelExamples">
-                  <div><strong>keindahan</strong><span>美、美丽这种状态</span></div>
-                  <div><strong>kesulitan</strong><span>困难、难处</span></div>
-                  <div><strong>kehujanan</strong><span>淋雨、受到雨影响</span></div>
-                  <div><strong>ketahuan</strong><span>结果被发现</span></div>
+              <div class="affixUnifiedCard keanUnified">
+                <div class="affixUnifiedHead"><span class="affixCircle">④</span><div><b>ke-…-an</b><small>状态 / 概念 / 遭遇</small></div></div>
+                <div class="affixOneLine">进入一种状态，或者某种情况“落到主体身上”。</div>
+                <div class="affixUnifiedExamples twoCol">
+                  <span><strong>keindahan</strong><small>美 / 美丽这种状态</small></span>
+                  <span><strong>kesulitan</strong><small>困难、难处</small></span>
+                  <span><strong>kehujanan</strong><small>淋雨</small></span>
+                  <span><strong>ketahuan</strong><small>结果被发现</small></span>
                 </div>
-                <button class="affixDeepBtn" onclick="openDifficulty02()">去看 02：ke-…-an 详细解释 →</button>
-              </div>
-            </div>
-
-            <div class="affixSectionTitle">④ 第四层：后缀决定“动作往哪里去”</div>
-            <div class="affixSuffixGrid">
-              <div class="affixSuffixCard kanCard">
-                <div class="affixSuffixHead"><span>-kan</span><b>把动作往外推</b></div>
-                <p>常见感觉：<strong>使……变成、把某物弄到某处、替别人做。</strong></p>
-                <div class="affixSuffixExample"><b>besar → membesarkan</b><span>使变大；养大</span></div>
-                <div class="affixSuffixExample"><b>buka → bukakan</b><span>替我 / 替某人打开</span></div>
-                <div class="affixSuffixExample"><b>masuk → memasukkan</b><span>把某物放进去</span></div>
-                <div class="affixDirection">感觉：<strong>动作 → 推向一个结果 / 对象</strong></div>
+                <div class="affixBrain"><b>先想到：</b>“状态，还是遭遇 / 结果？”</div>
+                <button class="affixDeepBtn unifiedDeep" onclick="openDifficulty02()">去看 02：ke-…-an 详细解释 →</button>
               </div>
 
-              <div class="affixSuffixCard iCard">
-                <div class="affixSuffixHead"><span>-i</span><b>动作落在目标 / 地点上</b></div>
-                <p>常见感觉：<strong>把某个地点、对象、接受者当作动作落点。</strong></p>
-                <div class="affixSuffixExample"><b>masuk → memasuki</b><span>进入某个地方</span></div>
-                <div class="affixSuffixExample"><b>kunjung → mengunjungi</b><span>拜访某人 / 某地</span></div>
-                <div class="affixSuffixExample"><b>isi → mengisi</b><span>填写 / 装入（把目标填上）</span></div>
-                <div class="affixDirection">感觉：<strong>动作 → 落在一个地点 / 对象上</strong></div>
+              <div class="affixUnifiedCard kanUnified">
+                <div class="affixUnifiedHead"><span class="affixCircle">⑤</span><div><b>-kan</b><small>把动作往外推</small></div></div>
+                <div class="affixOneLine">常有“使……、把……弄到某处、替别人做”的感觉。</div>
+                <div class="affixUnifiedExamples">
+                  <span><strong>membesarkan</strong><small>使变大 / 养大</small></span>
+                  <span><strong>bukakan</strong><small>替某人打开</small></span>
+                  <span><strong>memasukkan</strong><small>把某物放进去</small></span>
+                </div>
+                <div class="affixBrain"><b>先想到：</b>“动作被推出去，造成一个结果。”</div>
               </div>
 
-              <div class="affixSuffixCard anCard">
-                <div class="affixSuffixHead"><span>-an</span><b>把动作 / 状态变成“东西或结果”</b></div>
-                <p>非常常见的名词化方式。</p>
-                <div class="affixSuffixExample"><b>makan → makanan</b><span>吃 → 食物</span></div>
-                <div class="affixSuffixExample"><b>minum → minuman</b><span>喝 → 饮料</span></div>
-                <div class="affixSuffixExample"><b>tulis → tulisan</b><span>写 → 文字 / 写的东西</span></div>
-                <div class="affixDirection">感觉：<strong>动作 / 状态 → 一个可以指称的东西或结果</strong></div>
+              <div class="affixUnifiedCard iUnified">
+                <div class="affixUnifiedHead"><span class="affixCircle">⑥</span><div><b>-i</b><small>动作落在目标 / 地点</small></div></div>
+                <div class="affixOneLine">把地点、对象或接受者当作动作落点。</div>
+                <div class="affixUnifiedExamples">
+                  <span><strong>memasuki</strong><small>进入某个地方</small></span>
+                  <span><strong>mengunjungi</strong><small>拜访某人 / 某地</small></span>
+                  <span><strong>mengisi</strong><small>填写 / 填入</small></span>
+                </div>
+                <div class="affixBrain"><b>先想到：</b>“这个动作落到哪里？”</div>
               </div>
+
+              <div class="affixUnifiedCard anUnified">
+                <div class="affixUnifiedHead"><span class="affixCircle">⑦</span><div><b>-an</b><small>名词 / 东西 / 结果</small></div></div>
+                <div class="affixOneLine">把动作或状态变成一个可以指称的“东西、结果或集合”。</div>
+                <div class="affixUnifiedExamples">
+                  <span><strong>makanan</strong><small>食物</small></span>
+                  <span><strong>minuman</strong><small>饮料</small></span>
+                  <span><strong>tulisan</strong><small>文字 / 写的东西</small></span>
+                </div>
+                <div class="affixBrain"><b>先想到：</b>“这个动作最后变成了什么东西？”</div>
+              </div>
+
             </div>
 
             <div class="affixSectionTitle">⑤ 最容易真正看懂的一张图：同一个词根 buka 怎么变</div>
@@ -1166,6 +1171,11 @@
       .affixDecision{margin-top:20px;border-radius:17px;background:#203d52;color:#fff;padding:16px}.affixDecisionTitle{font-size:18px;font-weight:950}.affixDecisionSteps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:11px}.affixDecisionSteps>div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:11px;padding:10px;display:grid;grid-template-columns:auto 1fr;gap:2px 8px;align-items:center}.affixDecisionSteps span{grid-row:1/3;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;color:#203d52;font-weight:950}.affixDecisionSteps b{font-size:13px}.affixDecisionSteps small{font-size:10px;opacity:.74;line-height:1.4}
       .affixQuiz{margin-top:22px}.affixQuizRow{display:grid;grid-template-columns:1fr auto minmax(90px,auto);gap:10px;align-items:center;border-top:1px solid #e5eaed;padding:10px 0}.affixQuizRow:first-of-type{border-top:0}.affixQuizRow>span{font-size:14px;font-weight:850;color:#2c4254}.affixQuizRow>div{display:flex;gap:6px;flex-wrap:wrap}.affixQuizRow button{border:1.5px solid #d8e1e7;background:#fff;border-radius:9px;padding:8px 10px;font-weight:800;color:#344b5e;cursor:pointer}.affixQuizRow button.affixQuizOk{background:#edf9f0;border-color:#76bd87;color:#17652d}.affixQuizRow button.affixQuizBad{background:#fff0ef;border-color:#dd8b84;color:#9d2f28}.affixQuizRow button:disabled{cursor:default}.affixQuizResult{font-size:11px;color:#657386}.affixFormula{background:linear-gradient(135deg,#1f5555,#5b4f91)}
 
+      .affixUnifiedGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.affixUnifiedCard{border:1.5px solid #dce5e8;border-radius:18px;padding:17px;background:#fff;min-width:0;box-shadow:0 2px 8px rgba(35,52,70,.025)}.berUnified{border-top:6px solid #4c9b69;background:#f5fbf7}.terUnified{border-top:6px solid #7558b1;background:#faf7ff}.seUnified{border-top:6px solid #3a929b;background:#f4fbfc}.keanUnified{border-top:6px solid #835db5;background:#fbf7ff}.kanUnified{border-top:6px solid #d37b30;background:#fff8f1}.iUnified{border-top:6px solid #3d7fb8;background:#f4f9ff}.anUnified{border-top:6px solid #68768a;background:#f7f8fa}
+      .affixUnifiedHead{display:flex;align-items:center;gap:10px}.affixCircle{width:36px;height:36px;flex:0 0 36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#203d52;color:#fff;font-size:15px;font-weight:950}.affixUnifiedHead>div{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.affixUnifiedHead b{font-size:23px;color:#1e354a}.affixUnifiedHead small{font-size:13px;color:#5d6f80;font-weight:800}
+      .affixOneLine{margin-top:11px;font-size:15px;line-height:1.65;color:#394f63;font-weight:700}.affixUnifiedExamples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}.affixUnifiedExamples.twoCol{grid-template-columns:repeat(2,minmax(0,1fr))}.affixUnifiedExamples>span{background:#fff;border:1px solid #dfe7e9;border-radius:11px;padding:10px;text-align:center;min-width:0}.affixUnifiedExamples strong{display:block;font-size:15px;color:#233c50;word-break:break-word}.affixUnifiedExamples small{display:block;font-size:12px;color:#607383;margin-top:4px;line-height:1.4}.affixBrain{margin-top:11px;padding:10px 11px;border-radius:10px;background:rgba(255,255,255,.86);font-size:13px;line-height:1.55;color:#4d6070}.affixBrain b{color:#223d52}.unifiedDeep{margin-top:9px}
+      .terBranches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}.terBranches>div{position:relative;background:#fff;border:1px solid #ded7ed;border-radius:12px;padding:11px 9px 10px 36px;min-width:0}.terBranches>div>span{position:absolute;left:9px;top:9px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#7558b1;color:#fff;font-size:11px;font-weight:950}.terBranches strong{display:block;font-size:15px;color:#342952}.terBranches b{display:block;font-size:12px;color:#6b4ea0;margin-top:4px}.terBranches small{display:block;font-size:11px;color:#6b7280;margin-top:3px;line-height:1.4}
+
       @media(max-width:1500px){.nasalRuleGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
       @media(max-width:1050px){#home .modules.homeModulesCompact{grid-template-columns:repeat(3,minmax(0,1fr))!important}.triExplain{grid-template-columns:1fr}.difficultyIndex{grid-template-columns:repeat(2,minmax(0,1fr))}}
       @media(max-width:620px){.difficultyIndex{grid-template-columns:1fr}.difficultyIndexItem{min-height:92px}}
@@ -1180,6 +1190,7 @@
         .simGroups{grid-template-columns:1fr}.simWordGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.simNgRule{grid-template-columns:repeat(3,1fr)}.simNgRule p{grid-column:1/-1}.simMethod{grid-template-columns:1fr}.simRuleGrid{grid-template-columns:1fr}.simQuizRow{grid-template-columns:1fr}.simHeroTitle{font-size:23px}
         .nasalHeroTitle{font-size:29px}.nasalMapBottom{grid-template-columns:repeat(2,1fr)}.nasalRuleGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.nasalMirrorGrid,.nasalDropGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.nasalPanelHead{flex-direction:column}.nasalSpecialRow,.nasalSummaryGrid{grid-template-columns:1fr}.nasalQuizRow{grid-template-columns:1fr}
         .affixHeroTitle{font-size:27px}.affixHeroFlow{grid-template-columns:1fr}.affixHeroFlow i{transform:rotate(90deg);text-align:center}.affixRoleGrid,.affixSuffixGrid{grid-template-columns:1fr}.affixStateGrid,.affixRelationGrid{grid-template-columns:1fr}.affixFactory{grid-template-columns:1fr}.affixFactoryArrow{transform:rotate(90deg)}.affixFactoryBranches{grid-template-columns:repeat(2,minmax(0,1fr))}.affixCompareGrid{grid-template-columns:1fr}.affixKanIFlow{grid-template-columns:1fr}.affixVs{text-align:center}.affixDecisionSteps{grid-template-columns:1fr 1fr}.affixQuizRow{grid-template-columns:1fr}.affixCorrection>div:not(.affixCorrectionTitle){grid-template-columns:1fr}
+        .affixUnifiedGrid{grid-template-columns:1fr}.terBranches{grid-template-columns:1fr}.affixUnifiedExamples,.affixUnifiedExamples.twoCol{grid-template-columns:1fr 1fr}
       }
       @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}.difficultyPageCard{padding:16px!important}}
       @media(max-width:430px){#home .modules.homeModulesCompact{grid-template-columns:1fr!important}#home .homeModulesCompact .module{min-height:0!important}}
