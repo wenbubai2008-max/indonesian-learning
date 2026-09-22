@@ -29,14 +29,22 @@
     return 0;
   }
   function weightedPool(){
-    var pool=recentPool(),ps=practiceState(),mm=mem(),wp=weakPool(),active=wp?wp.activeMap():localUnknown(),now=Date.now();
+    var pool=recentPool(),ps=practiceState(),mm=mem(),wp=weakPool(),active=wp?wp.activeMap():localUnknown(),now=Date.now(),seen={};
+    pool.forEach(function(x){seen[norm(x.word)]=1;});
+    (window.DAILY_VOCAB_DB||[]).forEach(function(raw){
+      if(!raw||!raw.word||!raw.cn)return;var k=norm(raw.word);if(!active[k]||seen[k])return;
+      var x=Object.assign({},raw),d=(x.last_seen||x.first_seen||'').slice(0,10),days=999;
+      if(d){var dt=new Date(d+'T00:00:00');days=Math.max(0,Math.floor((new Date()-dt)/86400000));}
+      x.__days=days;pool.push(x);seen[k]=1;
+    });
     return pool.map(function(x){
-      var k=norm(x.word),p=ps[k]||{},w=1,last=Number(p.last||0),due=last+quickCooldown(p);
+      var k=norm(x.word),p=ps[k]||{},w=1,last=Number(p.last||0),due=last+quickCooldown(p),weak=active[k]||null,reasons=weak&&Array.isArray(weak.reasons)?weak.reasons:[];
       if(x.__days<=3)w+=2;else if(x.__days<=7)w+=1;
       if(mm[x.word]==='fuzzy'||mm[x.word]==='dont')w+=4;
-      if(active[k])w+=4;
+      if(weak)w+=4;
+      if(reasons.includes('automation_fail'))w+=7;
       if((p.wrong||0)>(p.right||0))w+=3;
-      if((p.streak||0)>=3)w=Math.max(.25,w-2.5);
+      if((p.streak||0)>=3&&!reasons.includes('automation_fail'))w=Math.max(.25,w-2.5);
       return {x:x,w:w,due:due};
     }).filter(function(a){return a.due<=now;});
   }
