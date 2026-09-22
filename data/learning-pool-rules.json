@@ -14,7 +14,8 @@
     "daily_vocab": "记录已正式教过/出现过，不等于已掌握",
     "mastered_source": "是否掌握只看 weakness-sync 的 status=mastered",
     "runtime": "派生索引，不是源数据",
-    "secondary_master": "第二主词库只收人工筛选为不会/模糊的BIPA词；A1/A2/B1按已筛结果，B2暂只收已筛S级；与977完全重复的词永久剔除；跨级重复词先汇总判断，状态按dont > fuzzy > know保守合并"
+    "secondary_master": "第二主词库只收人工筛选为不会/模糊的BIPA词；A1/A2/B1按已筛结果，B2暂只收已筛S级；与977完全重复的词永久剔除；跨级重复词先汇总判断，状态按dont > fuzzy > know保守合并",
+    "focus_pool": "当前最需要跨模块反复复现的已学未掌握词；只从已正式教过且仍active的词中产生，mastered永不进入"
   },
   "master_handoff": {
     "primary": "977主学习词库",
@@ -35,7 +36,8 @@
     "lesson_sync_workflow": ".github/workflows/sync-daily-vocab.yml",
     "lesson_tasks_use_runtime_only_for_eligibility": true,
     "large_source_files_read_in_github_runner_only": true,
-    "runtime_is_derived_not_source_of_truth": true
+    "runtime_is_derived_not_source_of_truth": true,
+    "focus_pool": "focus_pool是小型跨模块重点弱词窗口，供自动训练、快速练习、18:00复习和泛读自然复现使用；模块不得自行重算完整词库"
   },
   "am_contract": {
     "new_words": "恰好10个真正新词，只能来自runtime.new_pool；transition阶段若977剩余不足10个，必须先用完剩余977，再从第二库补足到10个",
@@ -98,13 +100,17 @@
     "final_review_schema": "review必须为对象并包含title与非空steps字符串数组；禁止用items替代steps",
     "content_guard": "阅读、对话、练习优先使用本晚核心词、当天AM已教词和已教复习词，不为写内容额外塞入尚未正式教过的新master词",
     "daily_test_container": "唯一标准结构为 daily_test.questions；questions 必须是恰好6题的数组，禁止使用 daily_test.items 或其他字段名替代；daily_test.self_check 必须单独存在。",
-    "daily_test_schema": "daily_test={questions:[3 choice,2 fill,1 order],self_check:[非空字符串...]}; questions.length必须=6。"
+    "daily_test_schema": "daily_test={questions:[3 choice,2 fill,1 order],self_check:[非空字符串...]}; questions.length必须=6。",
+    "focus_words": "4-5个重点复习中优先从runtime.focus_pool选2-3个；不足再从review_pool补。focus_pool只是review_pool的高优先级子集，不新增复习资格"
   },
   "rules": [
     "K不进入新词、重点复习或PM应用复现核心词",
     "未教过的active当前主词库词=新词",
     "已教过且active=复习词",
     "弱项强化只显示A∩D",
+    "runtime.focus_pool只从A∩D生成，是review_pool的高优先级子集；不得包含未教词或mastered",
+    "自动训练失败通过统一weak状态写入automation_fail信号；各模块只读取focus_pool或统一weak状态，不直接互相改数据",
+    "快速练习、18:00和泛读可优先复现focus_pool，但不得挤占新词硬名额，也不得把被动阅读复现直接视为mastered",
     "977合法新词>=10时只用977；剩余1-9时进入transition，runtime.new_pool必须把剩余977排在前面并用第二库补足候选，08:00必须优先用完剩余977后再补第二库",
     "当977合法新词=0时，master-handoff-state永久提交到第二主词库；提交后即使977旧词重新active，也不得自动把新词源切回第一库",
     "第二主词库仅由人工筛选为不会/模糊的BIPA词生成；A1/A2/B1按已筛结果，B2暂只收已筛S级；与977完全重复词永久剔除；跨级重复判断按dont > fuzzy > know合并",
@@ -140,7 +146,9 @@
     "lesson_task_forbid_direct_daily_vocab_write": true,
     "sync_workflow_is_single_writer": true,
     "lesson_sync_refreshes_runtime_atomically": true,
-    "daily_test_schema_check": "写入前必须校验 daily_test 为对象、daily_test.questions 为唯一题目数组且 length=6、类型计数=3 choice+2 fill+1 order、self_check 为非空字符串数组；若仅有 items 或其他容器字段则校验失败并禁止写入。"
+    "daily_test_schema_check": "写入前必须校验 daily_test 为对象、daily_test.questions 为唯一题目数组且 length=6、类型计数=3 choice+2 fill+1 order、self_check 为非空字符串数组；若仅有 items 或其他容器字段则校验失败并禁止写入。",
+    "focus_word_check": "in_runtime_focus_pool_or_review_pool"
   },
-  "updated_at": "2026-09-17"
+  "updated_at": "2026-09-22",
+  "focus_pool_formula": "重点弱词 = A ∩ D，按自动训练失败、快速练习答错、不会/模糊等信号综合排序；只做派生索引，不改变词库归属"
 }
