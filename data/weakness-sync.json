@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-21T15:34:17.005Z",
+  "updated_at": "2026-09-22T03:40:03.526Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -4455,8 +4455,9 @@
     "mengunci": {
       "word": "mengunci",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-22T03:39:52.991Z",
       "display": "mengunci",
+      "cn": "锁上",
       "reasons": [
         "memory_fuzzy"
       ],
