@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-22",
+  "session": "pm",
+  "time": "18:00",
+  "level": "A2+ → B1",
+  "day": 32,
+  "duration_minutes": 55,
+  "title": "18:00｜复习 + 应用：先把情况听清楚，再决定怎么处理",
+  "write_status": "lesson_complete",
+  "new_words": ["sok", "seraya", "bolak-balik", "balik"],
+  "vocab": [
+    {"word":"sok","display":"sok","audio_text":"sok","cn":"装作；自以为；故意摆出某种样子","en":"act as if; pretend to be","root":"sok","root_cn":"装作；自以为","formation":"sok 是高频口语基本词。常见：sok tahu（装懂）、sok sibuk（装忙）、sok keren（装酷）、jangan sok...（别装……）。","example":"Kalau belum paham, jangan sok tahu; lebih baik nanya dulu.","example_cn":"如果还不懂，别装懂；最好先问一下。","synonym_note":"sok 常带轻微批评或调侃，表示故意摆出某种样子；pura-pura 更中性，单纯表示‘假装’。","usage_note":"真正新词；来自 runtime.new_pool，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"seraya","display":"seraya","audio_text":"seraya","cn":"同时；一边……一边……","en":"while; at the same time","root":"seraya","root_cn":"同时；一边……一边……","formation":"seraya 是基本连接词，常用于较完整叙述，表示两个动作同时发生。常见：berkata seraya tersenyum（边说边笑）、berjalan seraya berbicara（边走边说）、melihat seraya berpikir（边看边想）。","example":"Dia menjelaskan masalah itu seraya menunjukkan catatannya.","example_cn":"他一边解释那个问题，一边给我看记录。","synonym_note":"seraya 表示两个动作同时进行，略偏书面或叙述；sambil 在日常口语中更常见、更自然。","usage_note":"真正新词；来自 runtime.new_pool，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"bolak-balik","display":"bolak-balik","audio_text":"bolak-balik","cn":"来来回回；反复往返","en":"back and forth; repeatedly","root":"bolak-balik","root_cn":"来回；反复","formation":"bolak-balik 是固定重叠式表达。常见：bolak-balik kantor（来回跑办公室）、bolak-balik tanya（反复问）、bolak-balik cek（反复检查）、jalan bolak-balik（走来走去）。","example":"Aku bolak-balik cek dokumen karena informasinya belum jelas.","example_cn":"因为信息还不清楚，我反复检查文件。","synonym_note":"bolak-balik 强调来回或反复做同一动作；berulang-ulang 更一般地表示‘一再、反复’，不一定包含来回移动。","usage_note":"真正新词；来自 runtime.new_pool，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"balik","display":"balik","audio_text":"balik","cn":"回去；回来；返回","en":"go back; come back; return","root":"balik","root_cn":"返回；翻转","formation":"balik 是高频口语基本词。常见：balik rumah（回家）、balik kantor（回办公室）、balik lagi（再回来）、kapan balik?（什么时候回来？）。","example":"Setelah rapat selesai, aku langsung balik ke meja kerja.","example_cn":"会议结束后，我马上回到工位。","synonym_note":"balik 是非常自然的日常口语；kembali 是标准、较正式的‘返回’。balik 还可表示翻面，具体看语境。","usage_note":"真正新词；来自 runtime.new_pool 与 runtime.oral_new_pool；当天AM已有2个口语新词，本晚补1个合法口语新词。","source_group":"new","is_new":true,"is_oral_new":true},
+    {"word":"berkat","display":"berkat","audio_text":"berkat","cn":"多亏；由于……的帮助","en":"thanks to; blessing","root":"berkat","root_cn":"福气；恩惠","formation":"berkat 是基本词。常见：berkat bantuan（多亏帮助）、berkat kerja sama（多亏合作）、berkat dia（多亏他/她）、berkat dukungan（多亏支持）。","example":"Berkat bantuan rekan kerja, masalah itu cepat selesai.","example_cn":"多亏同事帮忙，那个问题很快解决了。","synonym_note":"berkat 通常引出积极原因；karena 只是中性的‘因为’，好坏原因都能用。","usage_note":"重点复习；来自 runtime.review_pool，priority 1；今天出现新的错误信号，属于当前高优先级弱词。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"menunjukkan","display":"menunjukkan","audio_text":"menunjukkan","cn":"指出；展示；表明","en":"show; point out; indicate","root":"tunjuk","root_cn":"指；指出","formation":"meN- + tunjuk + -kan → menunjukkan。常见：menunjukkan hasil（展示结果）、menunjukkan arah（指路）、menunjukkan bahwa...（表明……）、menunjukkan bukti（出示证据）。","example":"Dia menunjukkan bagian yang masih salah di dokumen itu.","example_cn":"他指出了文件里仍然有错的部分。","synonym_note":"menunjukkan 可表示展示、指出或表明；memperlihatkan 更偏‘给别人看’，指出方向或证据时 menunjukkan 更常用。","usage_note":"重点复习；来自 runtime.review_pool，priority 1；今天出现新的错误信号，属于当前高优先级弱词。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"ngerepotin","display":"ngerepotin","audio_text":"ngerepotin","cn":"给人添麻烦；麻烦别人","en":"trouble; inconvenience someone","root":"repot","root_cn":"麻烦；忙乱","formation":"ngerepotin 是 merepotkan 的高频口语形式。常见：ngerepotin orang（麻烦别人）、nggak mau ngerepotin（不想麻烦别人）、maaf ngerepotin（抱歉添麻烦了）。","example":"Maaf kalau aku bolak-balik nanya dan ngerepotin kamu.","example_cn":"如果我反复问、给你添麻烦了，抱歉。","synonym_note":"ngerepotin 很口语；merepotkan 是标准形式；mengganggu 更偏‘打扰、干扰’，不完全等于给人增加麻烦。","usage_note":"重点复习；来自 runtime.review_pool，priority 1；今天出现新的错误信号，属于当前高优先级弱词。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"mengizinkan","display":"mengizinkan","audio_text":"mengizinkan","cn":"允许；准许","en":"allow; permit","root":"izin","root_cn":"许可；允许","formation":"meN- + izin + -kan → mengizinkan。常见：mengizinkan saya（允许我）、tidak mengizinkan（不允许）、mengizinkan masuk（允许进入）、mengizinkan penggunaan（允许使用）。","example":"Atasan mengizinkan kami balik lebih awal setelah pekerjaan selesai.","example_cn":"工作完成后，上司允许我们早点回去。","synonym_note":"mengizinkan 强调给予许可；membolehkan 也表示允许，日常语气通常更直接；izin 本身常用于‘请假/请求许可’。","usage_note":"重点复习；来自 runtime.review_pool，priority 1；今天有新的错误记录，可打破近期冷却。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"mendengarkan","display":"mendengarkan","audio_text":"mendengarkan","cn":"听；倾听","en":"listen to","root":"dengar","root_cn":"听；听见","formation":"今天 08:00 已教；meN- + dengar + -kan → mendengarkan，强调主动去听。常见：mendengarkan pendapat、mendengarkan penjelasan、mendengarkan dulu。","example":"Aku memilih mendengarkan penjelasannya dulu sebelum menjawab.","example_cn":"我选择先听完他的解释再回答。","synonym_note":"mendengarkan 强调主动倾听；mendengar 更偏听见、听到。","usage_note":"今天08:00已教；应用复现。","source_group":"application","is_new":false,"is_oral_new":false},
+    {"word":"gagal","display":"gagal","audio_text":"gagal","cn":"失败；没成功","en":"fail; failure","root":"gagal","root_cn":"失败","formation":"今天 08:00 已教；gagal 是基本词。常见：gagal mencoba（尝试失败）、gagal mencapai target（未达到目标）、rencana gagal（计划失败）、kalau gagal...（如果失败……）。","example":"Kalau cara pertama gagal, kita cari cara lain tanpa panik.","example_cn":"如果第一个办法失败了，我们不慌，换个办法。","synonym_note":"gagal 是通用的‘失败、没成功’；tidak berhasil 更中性，常用于说明结果没有成功。","usage_note":"今天08:00已教；应用复现。","source_group":"application","is_new":false,"is_oral_new":false}
+  ],
+  "reading": {
+    "title": "Dengar Dulu, Baru Bertindak",
+    "text": "Sore ini aku bolak-balik memeriksa dokumen karena ada bagian yang belum jelas. Seorang rekan datang seraya menunjukkan catatan yang berbeda. Aku tidak mau sok tahu, jadi aku memilih mendengarkan penjelasannya dulu. Ternyata cara pertama memang gagal. Berkat informasi baru itu, kami bisa menemukan masalahnya. Aku sempat merasa ngerepotin karena harus bertanya beberapa kali, tetapi dia bilang tidak apa-apa. Atasan juga mengizinkan kami memperbaiki dokumen sebelum dikirim. Setelah semuanya selesai, aku balik ke meja dan mengecek hasil terakhir. Situasi seperti ini mengingatkanku bahwa bertanya dan mendengarkan sering lebih berguna daripada pura-pura sudah paham.",
+    "cn": "今天傍晚，因为文件里有一部分还不清楚，我来回检查了好几次。一位同事一边过来，一边给我看一份不同的记录。我不想装懂，所以选择先听他的解释。原来第一个办法确实失败了。多亏这条新信息，我们找到了问题。我一度觉得自己反复提问是在给别人添麻烦，但他说没关系。上司也允许我们在发送前修改文件。全部完成后，我回到工位，又检查了一遍最终结果。这种情况提醒我，提问和倾听往往比假装已经明白更有用。"
+  },
+  "dialogue": {
+    "title": "工作口语｜不懂就先问清楚",
+    "lines": [
+      {"speaker":"A","id":"Kok kamu bolak-balik cek dokumen itu?","cn":"你怎么反复检查那份文件？"},
+      {"speaker":"B","id":"Ada bagian yang belum jelas. Aku nggak mau sok tahu.","cn":"有一部分还不清楚。我不想装懂。"},
+      {"speaker":"A","id":"Coba dengarkan penjelasanku dulu. Aku bisa menunjukkan bagian yang salah.","cn":"先听我解释一下。我可以指出出错的部分。"},
+      {"speaker":"B","id":"Oke. Maaf kalau aku jadi ngerepotin dan banyak nanya.","cn":"好。如果我一直问、给你添麻烦了，抱歉。"},
+      {"speaker":"A","id":"Nggak apa-apa. Atasan juga mengizinkan kita memperbaikinya dulu.","cn":"没关系。上司也允许我们先修改。"},
+      {"speaker":"B","id":"Sip. Kalau sudah selesai, aku balik ke meja dan cek sekali lagi.","cn":"好。完成以后我回工位再检查一次。"}
+    ]
+  },
+  "rewrite": [
+    {"task":"中文→印尼语：我不想装懂，所以我先听他的解释。","reference_answer":"Aku nggak mau sok tahu, jadi aku mendengarkan penjelasannya dulu.","reference_cn":"我不想装懂，所以我先听他的解释。"},
+    {"task":"中文→印尼语：多亏你的帮助，我们不用来回检查了。","reference_answer":"Berkat bantuanmu, kami tidak perlu bolak-balik memeriksa lagi.","reference_cn":"多亏你的帮助，我们不用来回检查了。"},
+    {"task":"改写：把 Dia datang sambil menunjukkan catatan. 改成使用 seraya 的表达。","reference_answer":"Dia datang seraya menunjukkan catatan.","reference_cn":"他一边过来，一边给我看记录。"},
+    {"task":"主动造句：用 ngerepotin 和 balik 说一句自然的日常口语。","reference_answer":"Maaf ngerepotin, nanti aku balik lagi setelah makan.","reference_cn":"抱歉给你添麻烦了，我吃完饭再回来。"}
+  ],
+  "daily_test": {
+    "questions": [
+      {"type":"choice","prompt":"哪一个词最适合表达‘装懂’？","options":["sok tahu","seraya","balik","berkat"],"answer_index":0,"explain":"sok tahu 是高频口语，表示‘装懂、自以为什么都知道’。"},
+      {"type":"choice","prompt":"哪一个词最适合表达‘多亏同事的帮助’中的‘多亏’？","options":["gagal","berkat","bolak-balik","mengizinkan"],"answer_index":1,"explain":"berkat 常引出积极原因，如 berkat bantuan rekan kerja。"},
+      {"type":"choice","prompt":"要表达‘上司允许我们早点回去’，核心动词最合适的是哪一个？","options":["menunjukkan","mendengarkan","mengizinkan","ngerepotin"],"answer_index":2,"explain":"mengizinkan 表示给予许可、允许。"},
+      {"type":"fill","prompt":"填空：Aku ___ cek dokumen karena masih ada bagian yang salah.（来来回回；反复）","answer":"bolak-balik","explain":"bolak-balik 可表示反复做同一个动作，也可表示来回移动。"},
+      {"type":"fill","prompt":"填空：Setelah pekerjaan selesai, aku langsung ___ ke rumah.（回去；返回）","answer":"balik","explain":"balik 是日常高频口语，表示回去、回来；标准形式常用 kembali。"},
+      {"type":"order","prompt":"按照中文排成自然的印尼语句子：多亏你的帮助，我终于听懂了他的解释。","tokens":["Berkat bantuanmu","aku","akhirnya","mendengarkan","penjelasannya","dengan jelas"],"answer":"Berkat bantuanmu, aku akhirnya mendengarkan penjelasannya dengan jelas.","answer_cn":"多亏你的帮助，我终于把他的解释听清楚了。","explain":"Berkat + 名词表示‘多亏……’；akhirnya 表示‘终于’。"}
+    ],
+    "self_check": [
+      "我能主动用 sok tahu 表达‘装懂’，并知道它带有轻微批评语气。",
+      "我能区分 seraya 与更口语的 sambil。",
+      "我能主动说出 bolak-balik 和 balik，并用于真实生活场景。",
+      "我能用 berkat、menunjukkan、ngerepotin、mengizinkan 完成一句自然表达。"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "不看中文，依次主动说出：sok、seraya、bolak-balik、balik，并各说一个短句。",
+      "重点复习：berkat、menunjukkan、ngerepotin、mengizinkan；先回忆中文，再用印尼语各造一句。",
+      "复现今天08:00的 mendengarkan 和 gagal：用两词连成一句‘失败后先听清楚再处理’的表达。",
+      "最后口头复述阅读内容30—45秒，至少自然使用3个本晚核心词。"
+    ]
+  }
+}
