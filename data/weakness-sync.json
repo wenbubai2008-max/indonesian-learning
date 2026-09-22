@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T10:22:57.938Z",
+  "updated_at": "2026-09-22T10:30:28.227Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1739,11 +1739,13 @@
     "pembangunan": {
       "word": "pembangunan",
       "status": "active",
-      "updated_at": "2026-09-22T08:19:49.489Z",
+      "updated_at": "2026-09-22T10:27:16.532Z",
       "display": "pembangunan",
+      "cn": "建设",
       "last_review": "2026-09-22T08:19:49.467Z",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "automation_fail"
       ],
       "wrong_count": 0,
       "right_streak": 1
@@ -3075,7 +3077,7 @@
     "barusan": {
       "word": "barusan",
       "status": "active",
-      "updated_at": "2026-09-22T08:20:24.166Z",
+      "updated_at": "2026-09-22T10:29:52.240Z",
       "display": "barusan",
       "cn": "刚刚",
       "root": "baru",
@@ -3084,7 +3086,8 @@
       "last_review": "2026-09-22T08:20:24.134Z",
       "reasons": [
         "memory_fuzzy",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 0
@@ -5329,7 +5332,7 @@
     "ujung-ujungnya": {
       "word": "ujung-ujungnya",
       "status": "active",
-      "updated_at": "2026-09-22T08:20:32.579Z",
+      "updated_at": "2026-09-22T10:29:22.773Z",
       "display": "ujung-ujungnya",
       "cn": "到头来；结果最后还是",
       "root": "ujung",
@@ -5338,7 +5341,8 @@
       "last_review": "2026-09-22T08:20:32.550Z",
       "reasons": [
         "memory_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 3
@@ -19606,13 +19610,14 @@
     "sebel": {
       "word": "sebel",
       "status": "active",
-      "updated_at": "2026-09-22T08:19:18.245Z",
+      "updated_at": "2026-09-22T10:30:17.985Z",
       "display": "sebel",
       "cn": "烦；恼火",
       "root": "sebel",
       "last_review": "2026-09-22T08:19:18.217Z",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "automation_fail"
       ],
       "wrong_count": 0,
       "right_streak": 2
