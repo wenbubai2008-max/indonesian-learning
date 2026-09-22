@@ -145,11 +145,12 @@
   }
   function record(word,stage,result,item){
     const states=stateMap(),k=norm(word),old=states[k]||{},now=Date.now();
-    const st=Object.assign({word:word,stage:stage,status:'active',attempts:0,successes:0,failures:0,verify_streak:0,context_index:0},old);
+    const st=Object.assign({word:word,stage:stage,status:'active',attempts:0,successes:0,failures:0,fail_streak:0,verify_streak:0,context_index:0},old);
     st.word=word;st.attempts=Number(st.attempts||0)+1;st.last_at=now;st.last_stage=stage;
     if(result.ok){
       st.status='active';
       st.successes=Number(st.successes||0)+1;
+      st.fail_streak=0;
       st.last_result=result.kind||'right';
       if(stage===1){
         if(result.kind==='direct'){st.stage=2;st.next_due=now+20*HOUR;}else{st.stage=1;st.next_due=now+12*HOUR;}
@@ -165,7 +166,8 @@
         else{const gaps=[2*DAY,4*DAY,7*DAY];st.stage=4;st.next_due=now+gaps[Math.min(st.verify_streak-1,gaps.length-1)];st.last_result='right';}
       }
     }else{
-      st.failures=Number(st.failures||0)+1;st.status='active';st.verify_streak=0;st.last_result='fail';st.next_due=now+12*HOUR;
+      st.failures=Number(st.failures||0)+1;st.fail_streak=Number(st.fail_streak||0)+1;st.status='active';st.verify_streak=0;st.last_result='fail';
+      st.next_due=now+(st.fail_streak>=3?2*HOUR:(st.fail_streak===2?6*HOUR:12*HOUR));
       if(stage>=3)st.stage=2;else if(stage===2)st.stage=1;else st.stage=1;
     }
     states[k]=st;saveState(states);
@@ -181,24 +183,44 @@
   function finishCard(card,word,stage,result,item,message){
     if(card.dataset.done)return;card.dataset.done='1';
     card.querySelectorAll('input,textarea,button').forEach(function(el){if(!el.classList.contains('autoSound'))el.disabled=true;});
-    record(word,stage,result,item);markPlanDone(word,result.ok?(result.kind||'right'):'fail');resultBox(card,message,result.ok);refreshMeta();refreshTag();
+    const newState=record(word,stage,result,item);markPlanDone(word,result.ok?(result.kind||'right'):'fail');if(message)resultBox(card,message,result.ok);else clearResult(card);refreshMeta();refreshTag();return newState;
+  }
+  function failureHelp(card,word,item,newState,wrongAnswer){
+    const box=card.querySelector('.autoRescue');if(!box)return;
+    const streak=Number(newState&&newState.fail_streak||1),parts=[];
+    parts.push('<div class="autoRescueTop"><span>答案</span><b>'+esc(word)+'</b></div>');
+    if(item&&item.cn)parts.push('<div class="autoRescueRow"><span>意思</span><strong>'+esc(item.cn)+'</strong></div>');
+    if(item&&item.root&&norm(item.root)!==norm(word)){
+      parts.push('<div class="autoRescueRow"><span>词根</span><strong>'+esc(item.root)+(item.root_cn?' = '+esc(item.root_cn):'')+'</strong></div>');
+    }else if(item&&item.root_cn&&norm(item.root_cn)!==norm(item.cn||'')){
+      parts.push('<div class="autoRescueRow"><span>相关义</span><strong>'+esc(item.root_cn)+'</strong></div>');
+    }
+    const wrong=norm(wrongAnswer);
+    if(wrong&&wrong!==norm(word)){
+      const other=wordMap()[wrong];
+      if(other&&other.cn)parts.push('<div class="autoRescueCompare"><span>你刚写的</span><b>'+esc(wrongAnswer)+'</b> = '+esc(other.cn)+'<br><span>目标词</span><b>'+esc(word)+'</b> = '+esc(item&&item.cn||'')+'</div>');
+    }
+    if(item&&item.example)parts.push('<div class="autoRescueExample"><span>例句</span>'+esc(item.example)+(item.example_cn?'<small>'+esc(item.example_cn)+'</small>':'')+'</div>');
+    if(streak===2)parts.push('<div class="autoRescueNote">这个词已经连续 2 次没提取出来。先看清“意思 + 用法”，下次不要只认答案。</div>');
+    else if(streak>=3)parts.push('<div class="autoRescueNote strong">顽固词 · 连续 '+streak+' 次没提取出来。系统会缩短再次训练的间隔。</div>');
+    box.innerHTML=parts.join('');
   }
   function renderStage1(card,word,item,state){
     let start=0;
-    card.innerHTML+='<div class="autoRecallBox"><div class="autoRecallWord">'+esc(item.cn||'看中文，想印尼语')+'</div><div class="autoRecallTip">尽量在 3–5 秒内自己写出来，不给选项。</div></div><div class="autoInputRow"><input class="autoAnswer" autocomplete="off" placeholder="输入印尼语"><button class="primary autoSubmit" type="button">确认</button><button class="secondary autoGiveUp" type="button">想不出</button></div><div class="autoResult"></div>';
+    card.innerHTML+='<div class="autoRecallBox"><div class="autoRecallWord">'+esc(item.cn||'看中文，想印尼语')+'</div><div class="autoRecallTip">尽量在 3–5 秒内自己写出来，不给选项。</div></div><div class="autoInputRow"><input class="autoAnswer" autocomplete="off" placeholder="输入印尼语"><button class="primary autoSubmit" type="button">确认</button><button class="secondary autoGiveUp" type="button">想不出</button></div><div class="autoResult"></div><div class="autoRescue"></div>';
     const input=card.querySelector('.autoAnswer');
     function begin(){if(!start)start=Date.now();}
     input.addEventListener('focus',begin);input.addEventListener('input',function(){begin();clearResult(card);});
     function submit(){if(card.dataset.done)return;begin();const good=norm(input.value)===norm(word),elapsed=Date.now()-start;if(!good){resultBox(card,'还不对，再想一下；也可以点“想不出”。',false);return;}const kind=elapsed<=5000?'direct':'slow';finishCard(card,word,1,{ok:true,kind:kind},item,kind==='direct'?'✓ 主动提取成功':'✓ 答对了，但这次提取偏慢，下一次仍会继续验证');}
     card.querySelector('.autoSubmit').onclick=submit;
-    card.querySelector('.autoGiveUp').onclick=function(){if(card.dataset.done)return;begin();if(norm(input.value)===norm(word)){const elapsed=Date.now()-start,kind=elapsed<=5000?'direct':'slow';finishCard(card,word,1,{ok:true,kind:kind},item,kind==='direct'?'✓ 主动提取成功':'✓ 答对了，但这次提取偏慢，下一次仍会继续验证');return;}finishCard(card,word,1,{ok:false,kind:'fail'},item,'答案：'+word+'。这个词会继续留在自动化候选里。');};
+    card.querySelector('.autoGiveUp').onclick=function(){if(card.dataset.done)return;begin();if(norm(input.value)===norm(word)){const elapsed=Date.now()-start,kind=elapsed<=5000?'direct':'slow';finishCard(card,word,1,{ok:true,kind:kind},item,kind==='direct'?'✓ 主动提取成功':'✓ 答对了，但这次提取偏慢，下一次仍会继续验证');return;}const wrong=input.value.trim(),newState=finishCard(card,word,1,{ok:false,kind:'fail'},item,'');failureHelp(card,word,item,newState,wrong);};
   }
   function renderStage2(card,word,item,state){
     const ctx=contextFor(word,item,state);
     const sentence=ctx.text||'请用 ______ 表达：「'+(item.cn||'这个意思')+'」';
     card.innerHTML+='<div class="autoPrompt"><b>'+esc(sentence)+'</b><small>中文提示：'+esc(item.cn||'')+'。没有选项，先自己提取；需要时再逐级看提示。</small></div><div class="autoHintLine" data-level="0"></div><div class="autoInputRow"><input class="autoAnswer" autocomplete="off" placeholder="填入目标词"><button class="primary autoSubmit" type="button">确认</button><button class="secondary autoHint" type="button">提示</button></div><div class="autoResult"></div>';
     const input=card.querySelector('.autoAnswer'),hint=card.querySelector('.autoHintLine');
-    card.querySelector('.autoHint').onclick=function(){let level=Number(hint.dataset.level||0)+1;hint.dataset.level=String(Math.min(level,3));if(level===1)hint.textContent='提示 1：'+word.slice(0,1)+'…';else if(level===2)hint.textContent='提示 2：'+word.slice(0,Math.min(3,word.length))+'…';else{hint.textContent='答案：'+word;this.disabled=true;}};
+    card.querySelector('.autoHint').onclick=function(){let level=Number(hint.dataset.level||0)+1;hint.dataset.level=String(Math.min(level,3));if(level===1)hint.textContent='提示 1：'+word.slice(0,1)+'…';else if(level===2)hint.textContent='提示 2：'+word.slice(0,Math.min(3,word.length))+'…';else{hint.textContent='答案：'+word;this.disabled=true;let rescue=card.querySelector('.autoRescue');if(!rescue){rescue=document.createElement('div');rescue.className='autoRescue';card.appendChild(rescue);}failureHelp(card,word,item,Object.assign({},state,{fail_streak:Number(state&&state.fail_streak||0)}),'');}};
     function submit(){if(card.dataset.done)return;const good=norm(input.value)===norm(word);if(!good){resultBox(card,'还不对，可以继续想或点“提示”。',false);return;}const hints=Number(hint.dataset.level||0);finishCard(card,word,2,{ok:true,kind:hints?'hinted':'right',hints:hints},item,hints?'✓ 借助提示答出，暂时不升级，隔一段时间再测':'✓ 无提示完成，下一次进入主动表达');}
     input.addEventListener('input',function(){clearResult(card);});
     card.querySelector('.autoSubmit').onclick=submit;
@@ -210,11 +232,11 @@
   }
   function renderStage4(card,word,item,state){
     const ctx=contextFor(word,item,state),prompt=ctx.text||('中文：'+(item.cn||''));
-    card.innerHTML+='<div class="autoPrompt"><b>'+esc(prompt)+'</b><small>这是延迟验证：隔了一段时间再看还能不能主动调出来。不给选项。</small></div><div class="autoInputRow"><input class="autoAnswer" autocomplete="off" placeholder="输入印尼语"><button class="primary autoSubmit" type="button">确认</button><button class="secondary autoGiveUp" type="button">想不出</button></div><div class="autoResult"></div>';
+    card.innerHTML+='<div class="autoPrompt"><b>'+esc(prompt)+'</b><small>这是延迟验证：隔了一段时间再看还能不能主动调出来。不给选项。</small></div><div class="autoInputRow"><input class="autoAnswer" autocomplete="off" placeholder="输入印尼语"><button class="primary autoSubmit" type="button">确认</button><button class="secondary autoGiveUp" type="button">想不出</button></div><div class="autoResult"></div><div class="autoRescue"></div>';
     const input=card.querySelector('.autoAnswer');
     function submit(){const good=norm(input.value)===norm(word);if(!good){resultBox(card,'还不对。想不出来就点“想不出”，系统会重新提高这个词的优先级。',false);return;}finishCard(card,word,4,{ok:true,kind:'right'},item,'✓ 延迟验证通过');}
     input.addEventListener('input',function(){clearResult(card);});
-    card.querySelector('.autoSubmit').onclick=submit;card.querySelector('.autoGiveUp').onclick=function(){if(card.dataset.done)return;if(norm(input.value)===norm(word)){finishCard(card,word,4,{ok:true,kind:'right'},item,'✓ 延迟验证通过');return;}finishCard(card,word,4,{ok:false,kind:'fail'},item,'答案：'+word+'。已重新降回强化阶段。');};
+    card.querySelector('.autoSubmit').onclick=submit;card.querySelector('.autoGiveUp').onclick=function(){if(card.dataset.done)return;if(norm(input.value)===norm(word)){finishCard(card,word,4,{ok:true,kind:'right'},item,'✓ 延迟验证通过');return;}const wrong=input.value.trim(),newState=finishCard(card,word,4,{ok:false,kind:'fail'},item,'');failureHelp(card,word,item,newState,wrong);};
   }
   function ensurePage(){
     if(document.getElementById('automationTraining'))return;
@@ -253,7 +275,7 @@
   function rebuildPlan(){buildPlan(true);render();refreshTag();}
   function style(){
     if(document.getElementById('automationTrainingStyle'))return;
-    const s=document.createElement('style');s.id='automationTrainingStyle';s.textContent='.autoIntro{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center;background:#f8f6ff;border:1px solid #e4def5;border-radius:14px;padding:14px 15px}.autoIntro>b{font-size:16px}.autoIntro>span{grid-column:1/2;color:#667085;font-size:13px;line-height:1.6}.autoIntro>button{grid-column:2;grid-row:1/3}.autoStages{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:13px 0}.autoStages span{background:#fff;border:1px solid #e2e6ee;border-radius:10px;padding:9px 8px;text-align:center;font-size:12px;font-weight:800;color:#596579}.autoList{display:grid;gap:11px}.autoCard{border:1px solid #e1e6ef;border-radius:15px;background:#fff;padding:14px}.autoHead{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:11px}.autoHead>div{display:flex;align-items:center;gap:8px}.autoNo{display:inline-flex;width:25px;height:25px;border-radius:8px;background:#eee9ff;color:#6549a3;align-items:center;justify-content:center;font-size:12px;font-weight:900}.autoHead small{color:#7a8493;text-align:right}.autoPrompt{background:#f8faff;border-radius:12px;padding:13px 14px;line-height:1.65}.autoPrompt b{display:block;font-size:17px}.autoPrompt small{display:block;color:#667085;margin-top:4px}.autoRecallBox{padding:4px 0 2px}.autoRecallWord{display:inline-block;background:#fff4cf;border:1px solid #f2df96;border-radius:12px;padding:10px 14px;font-size:22px;line-height:1.35;font-weight:900;color:#1f2937;letter-spacing:.01em}.autoRecallTip{margin-top:8px;color:#98a2b3;font-size:12px;line-height:1.45}.autoCard[data-stage="1"] .autoHead b{font-size:15px;font-weight:800;color:#667085}.autoCard[data-stage="1"] .autoHead{margin-bottom:8px}.autoInputRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.autoInputRow input,.autoSentence{border:1px solid #dfe4ec;border-radius:10px;padding:10px 11px;background:#fff}.autoInputRow input{flex:1;min-width:180px}.autoSentence{width:100%;resize:vertical}.autoHintLine{min-height:23px;color:#6b4fa4;font-weight:800;font-size:13px;margin-top:8px}.autoResult{min-height:22px;font-size:13px;margin-top:8px;color:#64748b}.autoResult.ok{color:#17652d}.autoResult.bad{color:#9d2f28}.autoDone{background:#f3faf5;color:#287341;border-radius:10px;padding:11px 12px;font-size:13px}.autoSample{font-size:13px;color:#667085;margin-top:8px}.autoCard[data-done="1"]{opacity:.72}@media(max-width:700px){.autoIntro{grid-template-columns:1fr}.autoIntro>span,.autoIntro>button{grid-column:1;grid-row:auto}.autoStages{grid-template-columns:repeat(2,1fr)}.autoHead{align-items:flex-start;flex-direction:column}.autoHead small{text-align:left}}';document.head.appendChild(s);
+    const s=document.createElement('style');s.id='automationTrainingStyle';s.textContent='.autoIntro{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center;background:#f8f6ff;border:1px solid #e4def5;border-radius:14px;padding:14px 15px}.autoIntro>b{font-size:16px}.autoIntro>span{grid-column:1/2;color:#667085;font-size:13px;line-height:1.6}.autoIntro>button{grid-column:2;grid-row:1/3}.autoStages{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:13px 0}.autoStages span{background:#fff;border:1px solid #e2e6ee;border-radius:10px;padding:9px 8px;text-align:center;font-size:12px;font-weight:800;color:#596579}.autoList{display:grid;gap:11px}.autoCard{border:1px solid #e1e6ef;border-radius:15px;background:#fff;padding:14px}.autoHead{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:11px}.autoHead>div{display:flex;align-items:center;gap:8px}.autoNo{display:inline-flex;width:25px;height:25px;border-radius:8px;background:#eee9ff;color:#6549a3;align-items:center;justify-content:center;font-size:12px;font-weight:900}.autoHead small{color:#7a8493;text-align:right}.autoPrompt{background:#f8faff;border-radius:12px;padding:13px 14px;line-height:1.65}.autoPrompt b{display:block;font-size:17px}.autoPrompt small{display:block;color:#667085;margin-top:4px}.autoRecallBox{padding:4px 0 2px}.autoRecallWord{display:inline-block;background:#fff4cf;border:1px solid #f2df96;border-radius:12px;padding:10px 14px;font-size:22px;line-height:1.35;font-weight:900;color:#1f2937;letter-spacing:.01em}.autoRecallTip{margin-top:8px;color:#98a2b3;font-size:12px;line-height:1.45}.autoCard[data-stage="1"] .autoHead b{font-size:15px;font-weight:800;color:#667085}.autoCard[data-stage="1"] .autoHead{margin-bottom:8px}.autoInputRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.autoInputRow input,.autoSentence{border:1px solid #dfe4ec;border-radius:10px;padding:10px 11px;background:#fff}.autoInputRow input{flex:1;min-width:180px}.autoSentence{width:100%;resize:vertical}.autoHintLine{min-height:23px;color:#6b4fa4;font-weight:800;font-size:13px;margin-top:8px}.autoResult{min-height:22px;font-size:13px;margin-top:8px;color:#64748b}.autoResult.ok{color:#17652d}.autoResult.bad{color:#9d2f28}.autoRescue{margin-top:10px}.autoRescue:empty{display:none}.autoRescueTop{display:flex;align-items:center;gap:10px;background:#fff8df;border:1px solid #f1df9b;border-radius:12px;padding:10px 12px}.autoRescueTop span,.autoRescueRow span,.autoRescueExample>span,.autoRescueCompare span{font-size:11px;font-weight:800;color:#8a6d1d;margin-right:8px}.autoRescueTop b{font-size:20px;color:#1f2937}.autoRescueRow{padding:8px 12px 0;font-size:13px;color:#475467}.autoRescueRow strong{color:#1f2937}.autoRescueExample{margin-top:8px;background:#f8faff;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.55;color:#344054}.autoRescueExample small{display:block;margin-top:3px;color:#7a8493}.autoRescueCompare{margin-top:8px;border-left:3px solid #d8cdf8;background:#faf8ff;border-radius:8px;padding:9px 11px;font-size:13px;line-height:1.6;color:#475467}.autoRescueCompare b{color:#2d3748}.autoRescueNote{margin-top:8px;font-size:12px;color:#667085;padding:7px 10px;background:#f7f8fa;border-radius:8px}.autoRescueNote.strong{color:#7a4b00;background:#fff4e5}.autoDone{background:#f3faf5;color:#287341;border-radius:10px;padding:11px 12px;font-size:13px}.autoSample{font-size:13px;color:#667085;margin-top:8px}.autoCard[data-done="1"]{opacity:.72}@media(max-width:700px){.autoIntro{grid-template-columns:1fr}.autoIntro>span,.autoIntro>button{grid-column:1;grid-row:auto}.autoStages{grid-template-columns:repeat(2,1fr)}.autoHead{align-items:flex-start;flex-direction:column}.autoHead small{text-align:left}}';document.head.appendChild(s);
   }
   window.openAutomationTraining=open;
   window.AutomationTraining={open:open,render:render,rebuildPlan:rebuildPlan,refreshTag:refreshTag,candidates:candidateList};
