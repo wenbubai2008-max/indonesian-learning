@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T10:34:48.432Z",
+  "updated_at": "2026-09-22T10:36:51.529Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -19706,13 +19706,14 @@
     "cerewet": {
       "word": "cerewet",
       "status": "active",
-      "updated_at": "2026-09-22T09:21:18.493Z",
+      "updated_at": "2026-09-22T10:35:42.997Z",
       "display": "cerewet",
       "cn": "话多；唠叨",
       "root": "cerewet",
       "last_review": "2026-09-22T09:21:18.469Z",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "automation_fail"
       ],
       "wrong_count": 0,
       "right_streak": 1
@@ -21750,7 +21751,7 @@
     "ngurus": {
       "word": "ngurus",
       "status": "active",
-      "updated_at": "2026-09-12T17:05:50.325Z",
+      "updated_at": "2026-09-22T10:36:32.311Z",
       "display": "ngurus",
       "cn": "处理；照料",
       "root": "urus",
@@ -21759,7 +21760,8 @@
       "last_review": "2026-09-16T08:11:44.978Z",
       "reasons": [
         "memory_fuzzy",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 0
