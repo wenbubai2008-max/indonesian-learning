@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T03:40:03.526Z",
+  "updated_at": "2026-09-22T05:57:01.626Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2252,8 +2252,9 @@
     "membangun": {
       "word": "membangun",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-22T05:56:27.844Z",
       "display": "membangun",
+      "cn": "建造 / 建设",
       "reasons": [
         "memory_dont"
       ],
@@ -4672,8 +4673,9 @@
     "menyimpan": {
       "word": "menyimpan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-22T05:56:51.385Z",
       "display": "menyimpan",
+      "cn": "存(钱) / 保存",
       "reasons": [
         "memory_dont"
       ],
