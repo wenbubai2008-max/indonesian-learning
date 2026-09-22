@@ -707,7 +707,7 @@
                 <div><b>双唇区</b><span>b / p / f / v 附近 → m</span></div>
                 <div><b>舌尖区</b><span>d / t / c / j / z 附近 → n</span></div>
                 <div><b>s 这一支</b><span>s 常消失 → ny</span></div>
-                <div><b>舌根区</b><span>g / k / h / 元音 → ng</span></div>
+                <div><b>舌根区</b><span>g / k / h / 元音（a / i / u / e / o）→ ng</span></div>
               </div>
             </div>
 
@@ -721,7 +721,7 @@
                 <div class="nasalRuleCard mZone"><div class="nasalRuleTop"><b>m → mem-</b><span>嘴唇区</span></div><p><strong>b / f / v</strong> 保留；<strong>p</strong> 常消失。</p><div class="nasalExample"><span>baca</span><i>→</i><b>membaca</b><button onclick="speakIdText('membaca',this)">🔊</button></div><div class="nasalExample"><span>pakai</span><i>→</i><b>memakai</b><button onclick="speakIdText('memakai',this)">🔊</button></div></div>
                 <div class="nasalRuleCard nZone"><div class="nasalRuleTop"><b>n → men-</b><span>舌尖区</span></div><p><strong>d / c / j / z</strong> 保留；<strong>t</strong> 常消失。</p><div class="nasalExample"><span>dengar</span><i>→</i><b>mendengar</b><button onclick="speakIdText('mendengar',this)">🔊</button></div><div class="nasalExample"><span>tulis</span><i>→</i><b>menulis</b><button onclick="speakIdText('menulis',this)">🔊</button></div></div>
                 <div class="nasalRuleCard nyZone"><div class="nasalRuleTop"><b>ny → meny-</b><span>s 这一支</span></div><p><strong>s</strong> 通常消失，鼻音变成 <strong>ny</strong>。</p><div class="nasalExample"><span>sapu</span><i>→</i><b>menyapu</b><button onclick="speakIdText('menyapu',this)">🔊</button></div></div>
-                <div class="nasalRuleCard ngZone"><div class="nasalRuleTop"><b>ng → meng-</b><span>舌根区</span></div><p><strong>元音 / g / h</strong> 保留；<strong>k</strong> 常消失。</p><div class="nasalExample"><span>ambil</span><i>→</i><b>mengambil</b><button onclick="speakIdText('mengambil',this)">🔊</button></div><div class="nasalExample"><span>kirim</span><i>→</i><b>mengirim</b><button onclick="speakIdText('mengirim',this)">🔊</button></div></div>
+                <div class="nasalRuleCard ngZone"><div class="nasalRuleTop"><b>ng → meng-</b><span>舌根区</span></div><p><strong>元音（a / i / u / e / o）/ g / h</strong> 保留；<strong>k</strong> 常消失。</p><div class="nasalExample"><span>ambil</span><i>→</i><b>mengambil</b><button onclick="speakIdText('mengambil',this)">🔊</button></div><div class="nasalExample"><span>kirim</span><i>→</i><b>mengirim</b><button onclick="speakIdText('mengirim',this)">🔊</button></div></div>
               </div>
               <div class="nasalSpecialRow">
                 <div><b>顺滑音 → me-</b><span>l / m / n / r / w / y 前通常不需要额外鼻音</span><small>lihat → <strong>melihat</strong> · rasa → <strong>merasa</strong> · warna → <strong>mewarnai</strong> · yakin → <strong>meyakinkan</strong></small></div>
@@ -740,7 +740,7 @@
                 <div class="nasalRuleCard mZone"><div class="nasalRuleTop"><b>m → pem-</b><span>嘴唇区</span></div><p><strong>b / f / v</strong> 保留；<strong>p</strong> 常消失。</p><div class="nasalExample"><span>baca</span><i>→</i><b>pembaca</b><button onclick="speakIdText('pembaca',this)">🔊</button></div><div class="nasalExample"><span>pakai</span><i>→</i><b>pemakai</b><button onclick="speakIdText('pemakai',this)">🔊</button></div></div>
                 <div class="nasalRuleCard nZone"><div class="nasalRuleTop"><b>n → pen-</b><span>舌尖区</span></div><p><strong>d / c / j / z</strong> 保留；<strong>t</strong> 常消失。</p><div class="nasalExample"><span>dengar</span><i>→</i><b>pendengar</b><button onclick="speakIdText('pendengar',this)">🔊</button></div><div class="nasalExample"><span>tulis</span><i>→</i><b>penulis</b><button onclick="speakIdText('penulis',this)">🔊</button></div></div>
                 <div class="nasalRuleCard nyZone"><div class="nasalRuleTop"><b>ny → peny-</b><span>s 这一支</span></div><p><strong>s</strong> 通常消失，鼻音变成 <strong>ny</strong>。</p><div class="nasalExample"><span>sapu</span><i>→</i><b>penyapu</b><button onclick="speakIdText('penyapu',this)">🔊</button></div></div>
-                <div class="nasalRuleCard ngZone"><div class="nasalRuleTop"><b>ng → peng-</b><span>舌根区</span></div><p><strong>元音 / g / h</strong> 保留；<strong>k</strong> 常消失。</p><div class="nasalExample"><span>ajar</span><i>→</i><b>pengajar</b><button onclick="speakIdText('pengajar',this)">🔊</button></div><div class="nasalExample"><span>kirim</span><i>→</i><b>pengirim</b><button onclick="speakIdText('pengirim',this)">🔊</button></div></div>
+                <div class="nasalRuleCard ngZone"><div class="nasalRuleTop"><b>ng → peng-</b><span>舌根区</span></div><p><strong>元音（a / i / u / e / o）/ g / h</strong> 保留；<strong>k</strong> 常消失。</p><div class="nasalExample"><span>ajar</span><i>→</i><b>pengajar</b><button onclick="speakIdText('pengajar',this)">🔊</button></div><div class="nasalExample"><span>kirim</span><i>→</i><b>pengirim</b><button onclick="speakIdText('pengirim',this)">🔊</button></div></div>
               </div>
               <div class="nasalSpecialRow">
                 <div><b>顺滑音 → pe-</b><span>l / m / n / r / w / y 前通常不需要额外鼻音</span><small>lari → <strong>pelari</strong> · rawat → <strong>perawat</strong> · warna → <strong>pewarna</strong></small></div>
