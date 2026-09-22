@@ -163,6 +163,34 @@ reviewFull.sort((a,b)=>{
 });
 const reviewExposed=reviewFull.slice(0,60);
 
+const focusFull=[];
+for(const x of activeMap.values()){
+  const k=key(x.word);if(!dailySet.has(k))continue;
+  const reasons=Array.isArray(x.reasons)?x.reasons:[];
+  let score=0,signals=[];
+  if(reasons.includes('automation_fail')){score+=50;signals.push('automation_fail');}
+  if(reasons.includes('quick_wrong')){score+=36;signals.push('quick_wrong');}
+  if(reasons.includes('manual_unknown')||reasons.includes('seed_unfamiliar')){score+=30;signals.push('unknown');}
+  if(reasons.includes('memory_dont')||reasons.includes('bipa_secondary_dont')){score+=28;signals.push('dont');}
+  if(reasons.includes('memory_fuzzy')||reasons.includes('bipa_secondary_fuzzy')){score+=20;signals.push('fuzzy');}
+  if(!score)continue;
+  score+=Math.min(12,Number(x.wrong_count||0)*2);
+  const d=dailyMeta.get(k)||{},meta=secondaryMeta.get(k)||{};
+  focusFull.push([
+    String(x.word||'').trim(),score,signals,Number(x.wrong_count||0),
+    x.last_wrong||'',x.last_review||'',d.cn||x.cn||meta.cn||'',
+    d.root||x.root||meta.root||'',d.root_cn||x.root_cn||''
+  ]);
+}
+focusFull.sort((a,b)=>{
+  if(a[1]!==b[1])return b[1]-a[1];
+  if(a[3]!==b[3])return b[3]-a[3];
+  const ar=String(a[4]||a[5]||''),br=String(b[4]||b[5]||'');
+  if(ar!==br)return br.localeCompare(ar);
+  return String(a[0]).localeCompare(String(b[0]));
+});
+const focusExposed=focusFull.slice(0,30);
+
 const runtime={
   version:4,
   rules_version:Number(rules.version||0),
@@ -192,18 +220,22 @@ const runtime={
     new_pool_exposed:newExposed.length,
     review_pool_total_full:reviewFull.length,
     review_pool_exposed:reviewExposed.length,
+    focus_pool_total_full:focusFull.length,
+    focus_pool_exposed:focusExposed.length,
     oral_new_pool_total_full:oralFull.length,
     oral_new_pool_exposed:oralExposed.length
   },
   schema:{
     new_meta:['word','cn'],
     oral:['word','register','counterpart','root','rank'],
-    review:['word','priority','wrong_count','last_wrong','last_review','cn','root','root_cn']
+    review:['word','priority','wrong_count','last_wrong','last_review','cn','root','root_cn'],
+    focus:['word','score','signals','wrong_count','last_wrong','last_review','cn','root','root_cn']
   },
   new_pool:newExposed,
   new_meta:newMeta,
   oral_new_pool:oralExposed,
-  review_pool:reviewExposed
+  review_pool:reviewExposed,
+  focus_pool:focusExposed
 };
 
 fs.writeFileSync('data/learning-runtime.json',JSON.stringify(runtime)+'\n');
@@ -220,10 +252,12 @@ const audit={
   daily_taught_unique:dailySet.size,
   new_pool_total:runtime.stats.new_pool_total_full,
   review_pool_total:runtime.stats.review_pool_total_full,
+  focus_pool_total:runtime.stats.focus_pool_total_full,
   oral_new_pool_total:runtime.stats.oral_new_pool_total_full,
   rules:{
     new_pool:'primary first; when primary has 1-9 legal words, expose them first and top up from secondary to keep the 10-word AM contract; after primary reaches 0, secondary handoff is committed and never falls back automatically',
     review_pool:'weak_active ∩ daily_vocab',
+    focus_pool:'high-priority subset of weak_active ∩ daily_vocab; automation_fail > quick_wrong > unknown > dont > fuzzy',
     secondary:'BIPA人工筛选不会/模糊；B2仅S；与977重复永久剔除'
   }
 };
