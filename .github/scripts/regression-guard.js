@@ -150,6 +150,7 @@ try {
   ok(/10-12/.test(String(pm.core_total || '')), 'PM keeps 10-12 core words');
   ok(/3-4/.test(String(pm.new_words || '')), 'PM keeps 3-4 new words');
   ok(/4-5/.test(String(pm.review_words || '')), 'PM keeps 4-5 review words');
+  ok(/focus_pool/.test(String(pm.focus_words || '')) && /2-3/.test(String(pm.focus_words || '')), 'PM focus pool contract exists');
   ok(/2-3/.test(String(pm.application_words || '')), 'PM keeps 2-3 application words');
   ok(Boolean(pm.cooling), 'PM cooling contract exists');
   ok(Boolean(pm.automation_value), 'PM automation-value tie-break rule exists');
@@ -176,7 +177,14 @@ try {
   ok(runtime.stats && runtime.stats.master_unique === 977, 'runtime master_unique = 977');
   ok(Array.isArray(runtime.new_pool), 'runtime.new_pool exists');
   ok(Array.isArray(runtime.review_pool), 'runtime.review_pool exists');
+  ok(Array.isArray(runtime.focus_pool), 'runtime.focus_pool exists');
   ok(Array.isArray(runtime.oral_new_pool), 'runtime.oral_new_pool exists');
+  const reviewSet = new Set((runtime.review_pool || []).map(x => norm(Array.isArray(x) ? x[0] : x && x.word)).filter(Boolean));
+  const focusWords = (runtime.focus_pool || []).map(x => norm(Array.isArray(x) ? x[0] : x && x.word)).filter(Boolean);
+  const newSet = new Set((runtime.new_pool || []).map(x => norm(Array.isArray(x) ? x[0] : x && x.word)).filter(Boolean));
+  ok(focusWords.length <= 30, 'runtime.focus_pool stays small (<=30 exposed)');
+  ok(focusWords.every(w => reviewSet.has(w)), 'runtime.focus_pool is a subset of review_pool');
+  ok(focusWords.every(w => !newSet.has(w)), 'runtime.focus_pool never overlaps new_pool');
 
   const workflowDir = rel('.github/workflows');
   const workflows = fs.readdirSync(workflowDir).filter(x => /\.ya?ml$/i.test(x)).sort();
