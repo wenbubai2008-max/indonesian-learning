@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T10:13:41.275Z",
+  "updated_at": "2026-09-22T10:17:51.822Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -4456,7 +4456,7 @@
     "mengizinkan": {
       "word": "mengizinkan",
       "status": "active",
-      "updated_at": "2026-09-22T09:19:01.125Z",
+      "updated_at": "2026-09-22T10:16:29.675Z",
       "display": "mengizinkan",
       "cn": "允许",
       "root": "izin",
@@ -4465,7 +4465,8 @@
       "last_review": "2026-09-22T09:19:01.106Z",
       "reasons": [
         "memory_fuzzy",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 0
@@ -21698,7 +21699,7 @@
     "ngerepotin": {
       "word": "ngerepotin",
       "status": "active",
-      "updated_at": "2026-09-22T09:19:22.274Z",
+      "updated_at": "2026-09-22T10:17:25.412Z",
       "display": "ngerepotin",
       "cn": "给人添麻烦",
       "root": "repot",
@@ -21706,7 +21707,8 @@
       "last_review": "2026-09-22T09:19:22.248Z",
       "reasons": [
         "memory_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 0
