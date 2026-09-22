@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T09:23:34.393Z",
+  "updated_at": "2026-09-22T10:13:41.275Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2101,7 +2101,7 @@
     "menunjukkan": {
       "word": "menunjukkan",
       "status": "active",
-      "updated_at": "2026-09-22T09:19:59.043Z",
+      "updated_at": "2026-09-22T10:13:30.754Z",
       "display": "menunjukkan",
       "cn": "指出",
       "root": "tunjuk",
@@ -2110,7 +2110,8 @@
       "last_review": "2026-09-22T09:19:59.022Z",
       "reasons": [
         "memory_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 0
@@ -3158,7 +3159,7 @@
     "berkat": {
       "word": "berkat",
       "status": "active",
-      "updated_at": "2026-09-22T09:21:50.695Z",
+      "updated_at": "2026-09-22T10:11:51.370Z",
       "display": "berkat",
       "cn": "多亏了",
       "root": "berkat",
@@ -3167,7 +3168,8 @@
       "last_review": "2026-09-22T09:21:50.679Z",
       "reasons": [
         "memory_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 0
