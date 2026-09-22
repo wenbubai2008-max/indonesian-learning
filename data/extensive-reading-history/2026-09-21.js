@@ -1,0 +1,13 @@
+window.EXTENSIVE_READING_ARCHIVE_ITEM={id:'er-20260921-lrt-tarif-rute',date:'2026-09-21',title:'LRT Kelapa Gading–Manggarai: Tarif Rp8 Sampai 24 September',title_cn:'Kelapa Gading–Manggarai LRT：8印尼盾票价持续到9月24日',category:'印尼 · 雅加达 · 交通 · 日常生活 · 实时新闻改写',level:'A2+ → B1',minutes:4,source_name:'ANTARA News',source_date:'2026-09-20',text:`Warga Jakarta masih bisa mencoba LRT rute Kelapa Gading–Manggarai dengan tarif khusus Rp8 sampai 24 September 2026. Rute baru ini mulai beroperasi pada 16 September dan menghubungkan kawasan Jakarta Utara dengan Manggarai.
+
+Tarif Rp8 hanya berlaku selama delapan hari sebagai bagian dari masa pengenalan layanan baru. Mulai 25 September, tarif normal menjadi Rp5.000 untuk satu kali perjalanan. Sistem tarifnya flat, jadi harga tidak berubah meskipun jarak perjalanan berbeda.
+
+Rute Kelapa Gading–Manggarai memiliki panjang sekitar 12,2 kilometer dan melewati 11 stasiun. Satu rangkaian LRT dapat membawa sekitar 270 penumpang. Jalur ini dibuat untuk menambah pilihan transportasi umum dan memperkuat koneksi antarkawasan di Jakarta.
+
+Bagi warga yang biasa memakai kendaraan pribadi, rute baru ini bisa menjadi pilihan lain untuk pergi bekerja atau melakukan kegiatan sehari-hari. Masa tarif Rp8 juga memberi kesempatan kepada masyarakat untuk mencoba perjalanan dengan biaya sangat murah sebelum tarif normal berlaku. Pemerintah berharap jaringan yang lebih luas membuat transportasi umum semakin mudah digunakan dan semakin menarik bagi warga Jakarta.`,cn:`雅加达居民在2026年9月24日之前，仍可以用8印尼盾的特别票价体验 Kelapa Gading–Manggarai LRT。这条新线路从9月16日开始运营，连接雅加达北部地区与 Manggarai。
+
+8印尼盾票价只在新线路推广期内实行8天。从9月25日起，单次乘车恢复为5000印尼盾。该线路采用统一票价，因此无论乘坐距离长短，价格都一样。
+
+Kelapa Gading–Manggarai 线路全长约12.2公里，共经过11座车站。一列LRT大约可以搭载270名乘客。这条线路的建设目的是增加公共交通选择，并加强雅加达不同地区之间的连接。
+
+对于平时使用私人车辆的居民来说，这条新线路可以成为上班或日常出行的另一种选择。8印尼盾的体验票价也让居民可以在正常票价开始前，用非常低的成本尝试这条线路。政府希望随着交通网络扩大，公共交通会变得更容易使用，也更能吸引雅加达居民。`,hints:[{term:'tarif khusus',cn:'特别票价；优惠票价'},{term:'menghubungkan',cn:'连接',root:'hubung',formation:'meN- + hubung + -kan'},{term:'masa pengenalan',cn:'推广／介绍阶段',root:'kenal',formation:'peN- + kenal + -an'},{term:'berlaku',cn:'生效；适用'},{term:'satu kali perjalanan',cn:'单次行程'},{term:'tarif flat',cn:'统一票价；不按距离变化的票价'},{term:'meskipun',cn:'尽管；即使'},{term:'rangkaian LRT',cn:'一列／一组LRT列车'},{term:'memperkuat koneksi',cn:'加强连接',root:'kuat',formation:'memper- + kuat'},{term:'antarkawasan',cn:'不同区域之间',root:'kawasan',formation:'antar- + kawasan'},{term:'kendaraan pribadi',cn:'私人车辆'},{term:'kegiatan sehari-hari',cn:'日常活动'},{term:'memberi kesempatan',cn:'提供机会',root:'sempat',formation:'ke- + sempat + -an'},{term:'semakin menarik',cn:'越来越有吸引力'}]};
