@@ -161,7 +161,7 @@ reviewFull.sort((a,b)=>{
   if(ar!==br)return ar.localeCompare(br);
   return String(a[0]).localeCompare(String(b[0]));
 });
-const reviewExposed=reviewFull.slice(0,60);
+let reviewExposed=reviewFull.slice(0,60);
 
 const focusFull=[];
 for(const x of activeMap.values()){
@@ -190,6 +190,12 @@ focusFull.sort((a,b)=>{
   return String(a[0]).localeCompare(String(b[0]));
 });
 const focusExposed=focusFull.slice(0,30);
+const reviewByKey=new Map(reviewFull.map(x=>[key(x[0]),x]));
+const mergedReview=[],mergedSeen=new Set();
+for(const x of [...focusExposed.map(f=>reviewByKey.get(key(f[0]))).filter(Boolean),...reviewExposed]){
+  const k=key(x&&x[0]);if(!k||mergedSeen.has(k))continue;mergedSeen.add(k);mergedReview.push(x);if(mergedReview.length>=60)break;
+}
+reviewExposed=mergedReview;
 
 const runtime={
   version:4,
