@@ -8,7 +8,7 @@
     {key:'quick',title:'快速练习',icon:'⚡',desc:'5–10分钟，用最近学过的词做情境选词和补空。',tag:'间隔复现',open:function(){if(typeof window.openQuickPracticeV2==='function')window.openQuickPracticeV2();}},
     {key:'weak',title:'弱项强化',icon:'🎯',desc:'集中练快速练习错题和阅读中加入的陌生词。',tag:'针对弱项',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
     {key:'automation',title:'自动训练',icon:'⚙️',desc:'把眼熟但调不出来的词，逐步练到主动使用。',tag:'计算中',tagId:'automationTag',open:function(){if(typeof window.openAutomationTraining==='function')window.openAutomationTraining();}},
-    {key:'difficulty',title:'难点解释',icon:'💡',desc:'整理中文难直译、容易混淆的词，用场景和对比帮助理解。',tag:'4 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
+    {key:'difficulty',title:'难点解释',icon:'💡',desc:'整理中文难直译、容易混淆的词，用场景和对比帮助理解。',tag:'5 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
     {key:'affix',title:'前后缀',icon:'🧩',desc:'meN-、peN-、ber-、di-、ter-、-kan、-i 等。',tag:'词根词族',open:function(){if(typeof window.go==='function')window.go('affix');}}
   ];
 
@@ -58,6 +58,19 @@
   window.openDifficulty02=function(){openDifficulty('difficulty02');};
   window.openDifficulty03=function(){openDifficulty('difficulty03');};
   window.openDifficulty04=function(){openDifficulty('difficulty04');};
+  window.openDifficulty05=function(){openDifficulty('difficulty05');};
+
+  window.answerNasalQuiz=function(btn,choice,answer){
+    const row=btn&&btn.closest('.nasalQuizRow');
+    if(!row||row.dataset.done)return;
+    row.dataset.done='1';
+    row.querySelectorAll('button').forEach(function(b){b.disabled=true;b.classList.remove('nasalQuizOk','nasalQuizBad');});
+    const ok=choice===answer;
+    btn.classList.add(ok?'nasalQuizOk':'nasalQuizBad');
+    row.querySelectorAll('button').forEach(function(b){if(b.dataset.choice===answer)b.classList.add('nasalQuizOk');});
+    const result=row.querySelector('.nasalQuizResult');
+    if(result)result.textContent=ok?'✓ 对，就是 '+answer:'正确是 '+answer;
+  };
 
   window.answerSimilarQuiz=function(btn,choice,answer){
     const row=btn&&btn.closest('.simQuizRow');
@@ -138,7 +151,7 @@
           <div id="difficultyListView">
             <div class="sectionHead difficultyHead">
               <div><h2>难点解释</h2><div class="muted">专门整理难直译、容易混淆的印尼语词。</div></div>
-              <span class="pill">已整理 4 个</span>
+              <span class="pill">已整理 5 个</span>
             </div>
 
             <div class="difficultyIndex">
@@ -160,6 +173,11 @@
               <button class="difficultyIndexItem" type="button" onclick="openDifficulty04()">
                 <span class="difficultyNo simNo">04</span>
                 <span class="difficultyIndexText"><b>音形易混词</b><small>只差一个音 / 一个字母，意思完全不同</small></span>
+                <span class="difficultyArrow">→</span>
+              </button>
+              <button class="difficultyIndexItem" type="button" onclick="openDifficulty05()">
+                <span class="difficultyNo nasalNo">05</span>
+                <span class="difficultyIndexText"><b>meN- / peN- 为什么会变形？</b><small>鼻音同化 · 发音位置 · 主动动作 vs 人/工具</small></span>
                 <span class="difficultyArrow">→</span>
               </button>
             </div>
@@ -614,6 +632,147 @@
               <small>先建立边界，再扩大词汇量。这样比把相似词混在一起反复背更稳。</small>
             </div>
           </article>
+
+          <article id="difficulty05" class="difficultyLesson" style="display:none">
+            <button class="difficultyInnerBack" type="button" onclick="showDifficultyList()">← 返回难点列表</button>
+
+            <div class="difficultyWordHero nasalHero">
+              <div class="difficultyWordTop"><span class="difficultyNo big nasalNo">05</span><span class="difficultyType nasalType">前缀 · 鼻音同化</span></div>
+              <div class="nasalHeroTitle"><span class="meNColor">meN-</span> 和 <span class="peNColor">peN-</span> 为什么总在变？</div>
+              <div class="difficultyMemory">先不要背一大张字母表。真正的核心只有一句：<b>前缀里的鼻音会“迁就”后面的第一个音，跑到更接近的发音位置，让连接更顺。</b></div>
+              <div class="nasalHeroRule">
+                <span>嘴唇附近 → m</span><i>→</i>
+                <span>舌尖附近 → n</span><i>→</i>
+                <span>舌面附近 → ny</span><i>→</i>
+                <span>舌根附近 → ng</span>
+              </div>
+              <div class="nasalHeroNote">可以把“省劲”当作记忆法；语言学上更准确叫 <b>鼻音同化（nasal assimilation）</b>。它已经是固定构词规则，不是临时偷懒。</div>
+            </div>
+
+            <div class="nasalSectionTitle">① 先看一张“发音位置地图”</div>
+            <div class="nasalMouthCard">
+              <div class="nasalMapIntro"><b>从嘴巴前面一路往后看</b><span>这不是精细解剖图，而是帮助记住“鼻音为什么会换位置”的学习图。</span></div>
+              <svg class="nasalMouthSvg" viewBox="0 0 760 235" role="img" aria-label="meN 和 peN 鼻音发音位置示意图">
+                <defs>
+                  <linearGradient id="mouthGrad" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#fff4f1"/>
+                    <stop offset="100%" stop-color="#f5f8ff"/>
+                  </linearGradient>
+                  <marker id="nasalArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+                    <path d="M0,0 L8,4 L0,8 Z" fill="#98a2b3"></path>
+                  </marker>
+                </defs>
+                <path d="M65 106 C115 62, 188 43, 292 48 C402 53, 520 43, 672 83 C704 92, 707 139, 675 151 C530 204, 383 197, 271 186 C173 177, 105 160, 65 132 Z" fill="url(#mouthGrad)" stroke="#d9e1ea" stroke-width="3"/>
+                <path d="M117 121 C206 102, 307 105, 408 128 C469 142, 530 146, 604 129" fill="none" stroke="#d7a8a1" stroke-width="9" stroke-linecap="round"/>
+                <path d="M138 87 C247 71, 378 74, 598 98" fill="none" stroke="#c7d3e2" stroke-width="5" stroke-linecap="round"/>
+                <circle cx="94" cy="119" r="13" fill="#e8f4ff" stroke="#4b88c8" stroke-width="3"/>
+                <circle cx="245" cy="111" r="13" fill="#eef8f1" stroke="#4e9d67" stroke-width="3"/>
+                <circle cx="409" cy="128" r="13" fill="#fff6df" stroke="#c49a37" stroke-width="3"/>
+                <circle cx="588" cy="119" r="13" fill="#f5efff" stroke="#7d62b3" stroke-width="3"/>
+                <line x1="108" y1="119" x2="229" y2="112" stroke="#98a2b3" stroke-width="2" marker-end="url(#nasalArrow)"/>
+                <line x1="259" y1="113" x2="393" y2="126" stroke="#98a2b3" stroke-width="2" marker-end="url(#nasalArrow)"/>
+                <line x1="423" y1="128" x2="572" y2="120" stroke="#98a2b3" stroke-width="2" marker-end="url(#nasalArrow)"/>
+                <text x="94" y="29" text-anchor="middle" class="nasalSvgMain">m</text>
+                <text x="94" y="48" text-anchor="middle" class="nasalSvgSub">双唇</text>
+                <text x="245" y="29" text-anchor="middle" class="nasalSvgMain">n</text>
+                <text x="245" y="48" text-anchor="middle" class="nasalSvgSub">舌尖 / 舌前</text>
+                <text x="409" y="29" text-anchor="middle" class="nasalSvgMain">ny</text>
+                <text x="409" y="48" text-anchor="middle" class="nasalSvgSub">舌面</text>
+                <text x="588" y="29" text-anchor="middle" class="nasalSvgMain">ng</text>
+                <text x="588" y="48" text-anchor="middle" class="nasalSvgSub">舌根 / 后部</text>
+                <text x="94" y="218" text-anchor="middle" class="nasalSvgPair">mem- / pem-</text>
+                <text x="245" y="218" text-anchor="middle" class="nasalSvgPair">men- / pen-</text>
+                <text x="409" y="218" text-anchor="middle" class="nasalSvgPair">meny- / peny-</text>
+                <text x="588" y="218" text-anchor="middle" class="nasalSvgPair">meng- / peng-</text>
+              </svg>
+              <div class="nasalMapBottom">
+                <div><b>双唇区</b><span>b / p / f / v 附近 → m</span></div>
+                <div><b>舌尖区</b><span>d / t / c / j / z 附近 → n</span></div>
+                <div><b>s 这一支</b><span>s 常消失 → ny</span></div>
+                <div><b>舌根区</b><span>g / k / h / 元音 → ng</span></div>
+              </div>
+            </div>
+
+            <div class="nasalSectionTitle">② meN-：重点是“做动作”</div>
+            <div class="nasalPrefixPanel meNPanel">
+              <div class="nasalPanelHead">
+                <div><span class="nasalPanelBadge">meN-</span><h3>把词根变成主动动作</h3><small>大致可以先理解成：do / perform the action</small></div>
+                <button class="nasalListenAll" onclick="speakIdText('membaca. menulis. menyapu. mengirim. melihat. mengecat.',this)">🔊 连续听一遍</button>
+              </div>
+              <div class="nasalRuleGrid">
+                <div class="nasalRuleCard mZone"><div class="nasalRuleTop"><b>m → mem-</b><span>嘴唇区</span></div><p><strong>b / f / v</strong> 保留；<strong>p</strong> 常消失。</p><div class="nasalExample"><span>baca</span><i>→</i><b>membaca</b><button onclick="speakIdText('membaca',this)">🔊</button></div><div class="nasalExample"><span>pakai</span><i>→</i><b>memakai</b><button onclick="speakIdText('memakai',this)">🔊</button></div></div>
+                <div class="nasalRuleCard nZone"><div class="nasalRuleTop"><b>n → men-</b><span>舌尖区</span></div><p><strong>d / c / j / z</strong> 保留；<strong>t</strong> 常消失。</p><div class="nasalExample"><span>dengar</span><i>→</i><b>mendengar</b><button onclick="speakIdText('mendengar',this)">🔊</button></div><div class="nasalExample"><span>tulis</span><i>→</i><b>menulis</b><button onclick="speakIdText('menulis',this)">🔊</button></div></div>
+                <div class="nasalRuleCard nyZone"><div class="nasalRuleTop"><b>ny → meny-</b><span>s 这一支</span></div><p><strong>s</strong> 通常消失，鼻音变成 <strong>ny</strong>。</p><div class="nasalExample"><span>sapu</span><i>→</i><b>menyapu</b><button onclick="speakIdText('menyapu',this)">🔊</button></div></div>
+                <div class="nasalRuleCard ngZone"><div class="nasalRuleTop"><b>ng → meng-</b><span>舌根区</span></div><p><strong>元音 / g / h</strong> 保留；<strong>k</strong> 常消失。</p><div class="nasalExample"><span>ambil</span><i>→</i><b>mengambil</b><button onclick="speakIdText('mengambil',this)">🔊</button></div><div class="nasalExample"><span>kirim</span><i>→</i><b>mengirim</b><button onclick="speakIdText('mengirim',this)">🔊</button></div></div>
+              </div>
+              <div class="nasalSpecialRow">
+                <div><b>顺滑音 → me-</b><span>l / m / n / r / w / y 前通常不需要额外鼻音</span><small>lihat → <strong>melihat</strong> · rasa → <strong>merasa</strong> · warna → <strong>mewarnai</strong> · yakin → <strong>meyakinkan</strong></small></div>
+                <div><b>单音节 → menge-</b><span>为了不让结构太挤，多一个过渡音节</span><small>cat → <strong>mengecat</strong></small></div>
+              </div>
+              <div class="nasalSurfaceNote"><b>一个容易看错的例子：</b><span><strong>masak → memasak</strong> 表面看起来像 “mem-”，但更适合按 <strong>me- + masak</strong> 理解；不要只靠字面硬切前缀。</span></div>
+            </div>
+
+            <div class="nasalSectionTitle">③ peN-：同一套发音规则，但更常指“人 / 工具 / 施事者”</div>
+            <div class="nasalPrefixPanel peNPanel">
+              <div class="nasalPanelHead">
+                <div><span class="nasalPanelBadge">peN-</span><h3>把动作变成执行者、人物或工具</h3><small>大致可以先理解成：the doer / person / tool</small></div>
+                <button class="nasalListenAll" onclick="speakIdText('pembaca. penulis. penyapu. pengirim. pelari. pengecat.',this)">🔊 连续听一遍</button>
+              </div>
+              <div class="nasalRuleGrid">
+                <div class="nasalRuleCard mZone"><div class="nasalRuleTop"><b>m → pem-</b><span>嘴唇区</span></div><p><strong>b / f / v</strong> 保留；<strong>p</strong> 常消失。</p><div class="nasalExample"><span>baca</span><i>→</i><b>pembaca</b><button onclick="speakIdText('pembaca',this)">🔊</button></div><div class="nasalExample"><span>pakai</span><i>→</i><b>pemakai</b><button onclick="speakIdText('pemakai',this)">🔊</button></div></div>
+                <div class="nasalRuleCard nZone"><div class="nasalRuleTop"><b>n → pen-</b><span>舌尖区</span></div><p><strong>d / c / j / z</strong> 保留；<strong>t</strong> 常消失。</p><div class="nasalExample"><span>dengar</span><i>→</i><b>pendengar</b><button onclick="speakIdText('pendengar',this)">🔊</button></div><div class="nasalExample"><span>tulis</span><i>→</i><b>penulis</b><button onclick="speakIdText('penulis',this)">🔊</button></div></div>
+                <div class="nasalRuleCard nyZone"><div class="nasalRuleTop"><b>ny → peny-</b><span>s 这一支</span></div><p><strong>s</strong> 通常消失，鼻音变成 <strong>ny</strong>。</p><div class="nasalExample"><span>sapu</span><i>→</i><b>penyapu</b><button onclick="speakIdText('penyapu',this)">🔊</button></div></div>
+                <div class="nasalRuleCard ngZone"><div class="nasalRuleTop"><b>ng → peng-</b><span>舌根区</span></div><p><strong>元音 / g / h</strong> 保留；<strong>k</strong> 常消失。</p><div class="nasalExample"><span>ajar</span><i>→</i><b>pengajar</b><button onclick="speakIdText('pengajar',this)">🔊</button></div><div class="nasalExample"><span>kirim</span><i>→</i><b>pengirim</b><button onclick="speakIdText('pengirim',this)">🔊</button></div></div>
+              </div>
+              <div class="nasalSpecialRow">
+                <div><b>顺滑音 → pe-</b><span>l / m / n / r / w / y 前通常不需要额外鼻音</span><small>lari → <strong>pelari</strong> · rawat → <strong>perawat</strong> · warna → <strong>pewarna</strong></small></div>
+                <div><b>单音节 → penge-</b><span>和 menge- 平行</span><small>cat → <strong>pengecat</strong></small></div>
+              </div>
+            </div>
+
+            <div class="nasalSectionTitle">④ 最值得背的不是整张表，而是这 4 个“镜像对”</div>
+            <div class="nasalMirrorGrid">
+              <div class="nasalMirrorCard"><div class="rootChip">baca</div><div class="mirrorPair"><span class="meNColor">membaca<small>读</small></span><i>↔</i><span class="peNColor">pembaca<small>读者</small></span></div><button onclick="speakIdText('membaca. pembaca.',this)">🔊 对比听</button></div>
+              <div class="nasalMirrorCard"><div class="rootChip">tulis</div><div class="mirrorPair"><span class="meNColor">menulis<small>写</small></span><i>↔</i><span class="peNColor">penulis<small>作者 / 写作者</small></span></div><button onclick="speakIdText('menulis. penulis.',this)">🔊 对比听</button></div>
+              <div class="nasalMirrorCard"><div class="rootChip">sapu</div><div class="mirrorPair"><span class="meNColor">menyapu<small>扫</small></span><i>↔</i><span class="peNColor">penyapu<small>扫的人 / 扫具</small></span></div><button onclick="speakIdText('menyapu. penyapu.',this)">🔊 对比听</button></div>
+              <div class="nasalMirrorCard"><div class="rootChip">kirim</div><div class="mirrorPair"><span class="meNColor">mengirim<small>发送</small></span><i>↔</i><span class="peNColor">pengirim<small>发送者 / 寄件人</small></span></div><button onclick="speakIdText('mengirim. pengirim.',this)">🔊 对比听</button></div>
+            </div>
+
+            <div class="nasalDropBox">
+              <div class="nasalDropTitle">⑤ 为什么 P / T / S / K 经常“消失”？</div>
+              <p>把它先理解成：前面的鼻音已经占住了相近的发音位置，后面的清辅音再完整发出来会更费动作，所以在常规构词里经常被吸收掉。</p>
+              <div class="nasalDropGrid">
+                <div><b>P</b><span>pakai</span><i>→</i><strong>memakai / pemakai</strong><small>p 消失，留下 m</small></div>
+                <div><b>T</b><span>tulis</span><i>→</i><strong>menulis / penulis</strong><small>t 消失，留下 n</small></div>
+                <div><b>S</b><span>sapu</span><i>→</i><strong>menyapu / penyapu</strong><small>s 消失，变 ny</small></div>
+                <div><b>K</b><span>kirim</span><i>→</i><strong>mengirim / pengirim</strong><small>k 消失，留下 ng</small></div>
+              </div>
+              <div class="nasalDropCaveat">记忆口诀：<b>P · T · S · K 常被鼻音“吃掉”</b>。这是最常见规则；外来词、辅音群和部分固定词会有例外，不要把口诀当成百分之百机械公式。</div>
+            </div>
+
+            <div class="nasalSummary">
+              <div class="nasalSummaryTitle">把整套系统压缩成两句话</div>
+              <div class="nasalSummaryGrid">
+                <div><span class="meNColor">meN-</span><b>做这个动作</b><small>membaca · menulis · menyapu · mengirim</small></div>
+                <div><span class="peNColor">peN-</span><b>做这个动作的人 / 工具</b><small>pembaca · penulis · penyapu · pengirim</small></div>
+              </div>
+              <p>两者<b>语法功能不同</b>，但<b>鼻音为什么变成 m / n / ny / ng</b>，背后基本是同一套发音位置逻辑。</p>
+            </div>
+
+            <div class="nasalQuiz">
+              <div class="compareTitle">快速判断：动作还是“人 / 工具”？</div>
+              <div class="nasalQuizRow"><span>① “写”</span><div><button data-choice="menulis" onclick="answerNasalQuiz(this,'menulis','menulis')">menulis</button><button data-choice="penulis" onclick="answerNasalQuiz(this,'penulis','menulis')">penulis</button></div><small class="nasalQuizResult"></small></div>
+              <div class="nasalQuizRow"><span>② “作者 / 写作者”</span><div><button data-choice="menulis" onclick="answerNasalQuiz(this,'menulis','penulis')">menulis</button><button data-choice="penulis" onclick="answerNasalQuiz(this,'penulis','penulis')">penulis</button></div><small class="nasalQuizResult"></small></div>
+              <div class="nasalQuizRow"><span>③ “发送”</span><div><button data-choice="mengirim" onclick="answerNasalQuiz(this,'mengirim','mengirim')">mengirim</button><button data-choice="pengirim" onclick="answerNasalQuiz(this,'pengirim','mengirim')">pengirim</button></div><small class="nasalQuizResult"></small></div>
+              <div class="nasalQuizRow"><span>④ “寄件人 / 发送者”</span><div><button data-choice="mengirim" onclick="answerNasalQuiz(this,'mengirim','pengirim')">mengirim</button><button data-choice="pengirim" onclick="answerNasalQuiz(this,'pengirim','pengirim')">pengirim</button></div><small class="nasalQuizResult"></small></div>
+            </div>
+
+            <div class="difficultyFormula nasalFormula">
+              <span>一句话记忆</span>
+              <b>后面的音在哪里发，鼻音就尽量往哪里靠；meN- 负责“做”，peN- 常负责“做的人 / 工具”。</b>
+              <small>先理解发音位置，再记变体；这样比死背 mem-/men-/meny-/meng- 与 pem-/pen-/peny-/peng- 两张表更稳。</small>
+            </div>
+          </article>
         </div>`;
       app.appendChild(page);
     }
@@ -766,6 +925,21 @@
       .simRuleBox{margin-top:20px;border:1px solid #d6e6db;border-radius:17px;background:#f7fcf9;padding:16px}.simRuleTitle{font-size:17px;font-weight:900;color:#2c6540;margin-bottom:10px}.simRuleGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.simRuleGrid>div{background:#fff;border:1px solid #e0ebe3;border-radius:10px;padding:10px;font-size:12px;line-height:1.5}.simRuleGrid b{color:#2f7046}.simRuleGrid span{color:#5f6d64}
       .simQuiz{margin-top:22px}.simQuizRow{display:grid;grid-template-columns:1fr auto minmax(90px,auto);gap:10px;align-items:center;border-top:1px solid #e8ece9;padding:10px 0}.simQuizRow:first-of-type{border-top:0}.simQuizRow>span{font-size:13px;font-weight:750}.simQuizRow>div{display:flex;gap:6px;flex-wrap:wrap}.simQuizRow button{border:1px solid #dfe6e1;background:#fff;border-radius:9px;padding:7px 10px;cursor:pointer}.simQuizRow button:hover{background:#f6faf7}.simQuizRow button.simQuizOk{background:#edf9f0;border-color:#76bd87;color:#17652d}.simQuizRow button.simQuizBad{background:#fff0ef;border-color:#dd8b84;color:#9d2f28}.simQuizRow button:disabled{cursor:default}.simQuizResult{font-size:11px;color:#657386}.simFormula{background:linear-gradient(135deg,#24543a,#496f5a)}
 
+      .nasalNo{background:#eaf3ff;color:#315f9b}
+      .difficultyWordHero.nasalHero{background:linear-gradient(135deg,#f1f7ff,#fff8f1);border-color:#d9e5f4}
+      .nasalType{color:#395f92!important;background:#e7f0fc!important}.nasalHeroTitle{font-size:30px;font-weight:900;color:#263951;margin:14px 0 8px;line-height:1.2}
+      .meNColor{color:#2f6fb2!important}.peNColor{color:#b66b28!important}
+      .nasalHeroRule{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:15px}.nasalHeroRule span{background:#fff;border:1px solid #dce5ef;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:850;color:#40536a}.nasalHeroRule i{font-style:normal;color:#9aa7b5}.nasalHeroNote{margin-top:11px;font-size:12px;line-height:1.6;color:#667488}
+      .nasalSectionTitle{font-size:19px;font-weight:900;color:#26384d;margin:23px 0 10px}
+      .nasalMouthCard{border:1px solid #dfe6ef;border-radius:18px;background:#fff;padding:16px;overflow:hidden}.nasalMapIntro{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}.nasalMapIntro b{font-size:16px}.nasalMapIntro span{font-size:11px;color:#7a8796}.nasalMouthSvg{width:100%;height:auto;display:block;margin-top:6px}.nasalSvgMain{font-size:22px;font-weight:900;fill:#2f3e52}.nasalSvgSub{font-size:11px;fill:#748091}.nasalSvgPair{font-size:12px;font-weight:850;fill:#44566c}.nasalMapBottom{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.nasalMapBottom>div{border:1px solid #e3e8ee;border-radius:11px;background:#fafcff;padding:9px}.nasalMapBottom b{display:block;font-size:12px;color:#33465b}.nasalMapBottom span{display:block;font-size:10px;color:#748092;margin-top:3px;line-height:1.4}
+      .nasalPrefixPanel{border:1px solid #dfe6ef;border-radius:18px;padding:16px;background:#fff}.meNPanel{background:#f8fbff;border-color:#d7e6f6}.peNPanel{background:#fffaf5;border-color:#efdfcb}.nasalPanelHead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:13px}.nasalPanelHead>div{display:grid;grid-template-columns:auto 1fr;gap:2px 9px;align-items:center}.nasalPanelBadge{grid-row:1/3;display:flex;align-items:center;justify-content:center;min-width:54px;height:42px;border-radius:11px;background:#fff;font-size:16px;font-weight:900}.meNPanel .nasalPanelBadge{color:#2f6fb2;border:1px solid #cfe0f4}.peNPanel .nasalPanelBadge{color:#b66b28;border:1px solid #ead5bd}.nasalPanelHead h3{margin:0;font-size:18px}.nasalPanelHead small{color:#758195;font-size:11px}.nasalListenAll{border:1px solid #dce4ed;background:#fff;border-radius:9px;padding:7px 9px;font-size:11px;cursor:pointer;white-space:nowrap}
+      .nasalRuleGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.nasalRuleCard{border:1px solid #e1e7ee;border-radius:14px;padding:12px;background:#fff;min-width:0}.nasalRuleTop{display:flex;align-items:center;justify-content:space-between;gap:6px}.nasalRuleTop b{font-size:14px}.nasalRuleTop span{font-size:10px;border-radius:999px;padding:3px 6px;background:#f3f5f8;color:#687487}.nasalRuleCard p{font-size:11px;color:#69768a;line-height:1.55;min-height:34px}.mZone{border-top:3px solid #4b88c8}.nZone{border-top:3px solid #4e9d67}.nyZone{border-top:3px solid #c49a37}.ngZone{border-top:3px solid #7d62b3}.nasalExample{display:grid;grid-template-columns:1fr auto 1.1fr auto;gap:5px;align-items:center;padding:6px 0;border-top:1px solid #edf0f3;font-size:11px}.nasalExample:first-of-type{border-top:0}.nasalExample span{color:#728094}.nasalExample i{font-style:normal;color:#a1a9b3}.nasalExample b{font-size:12px;color:#26394d}.nasalExample button,.nasalMirrorCard>button{border:1px solid #dfe6ed;background:#fff;border-radius:7px;cursor:pointer;font-size:11px;padding:4px 6px}
+      .nasalSpecialRow{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.nasalSpecialRow>div{background:#fff;border:1px dashed #dbe3ec;border-radius:12px;padding:10px}.nasalSpecialRow b{font-size:12px;color:#3a4b60}.nasalSpecialRow span{display:block;font-size:10px;color:#788598;margin-top:2px}.nasalSpecialRow small{display:block;font-size:11px;color:#4e5f73;margin-top:6px;line-height:1.5}.nasalSurfaceNote{margin-top:10px;padding:10px 11px;border-radius:11px;background:#fff;border:1px solid #dce6f0;font-size:11px;line-height:1.55;color:#5f6d80}.nasalSurfaceNote b{color:#325e90}
+      .nasalMirrorGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.nasalMirrorCard{border:1px solid #e0e6ed;border-radius:15px;background:#fff;padding:12px;text-align:center}.rootChip{display:inline-block;border-radius:999px;background:#f1f4f8;color:#536174;padding:4px 8px;font-size:11px;font-weight:800}.mirrorPair{display:grid;grid-template-columns:1fr auto 1fr;gap:6px;align-items:center;margin:11px 0}.mirrorPair>span{font-size:13px;font-weight:900}.mirrorPair>span small{display:block;font-size:9px;font-weight:600;color:#7c8794;margin-top:3px}.mirrorPair i{font-style:normal;color:#a0a8b1}
+      .nasalDropBox{margin-top:20px;border:1px solid #eadcc9;border-radius:17px;background:#fffaf4;padding:16px}.nasalDropTitle{font-size:17px;font-weight:900;color:#805323}.nasalDropBox>p{font-size:12px;line-height:1.6;color:#6f655a}.nasalDropGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.nasalDropGrid>div{border:1px solid #eadfce;background:#fff;border-radius:12px;padding:10px;display:grid;grid-template-columns:auto 1fr;gap:3px 7px;align-items:center}.nasalDropGrid b{grid-row:1/4;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff0dc;color:#a96523}.nasalDropGrid span{font-size:11px;color:#6f655a}.nasalDropGrid i{display:none}.nasalDropGrid strong{font-size:11px;color:#3f4b59}.nasalDropGrid small{font-size:9px;color:#948675}.nasalDropCaveat{margin-top:10px;font-size:11px;line-height:1.6;color:#756b60}
+      .nasalSummary{margin-top:20px;border:1px solid #dce5ee;border-radius:17px;background:#f9fbfd;padding:16px}.nasalSummaryTitle{font-size:17px;font-weight:900;color:#314257}.nasalSummaryGrid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:10px 0}.nasalSummaryGrid>div{background:#fff;border:1px solid #e0e6ec;border-radius:12px;padding:11px;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;align-items:center}.nasalSummaryGrid span{grid-row:1/3;font-size:18px;font-weight:900}.nasalSummaryGrid b{font-size:13px}.nasalSummaryGrid small{font-size:10px;color:#7e8995}.nasalSummary p{margin:0;font-size:12px;color:#617083;line-height:1.6}
+      .nasalQuiz{margin-top:22px}.nasalQuizRow{display:grid;grid-template-columns:1fr auto minmax(90px,auto);gap:10px;align-items:center;border-top:1px solid #e7ebef;padding:10px 0}.nasalQuizRow:first-of-type{border-top:0}.nasalQuizRow>span{font-size:13px;font-weight:750}.nasalQuizRow>div{display:flex;gap:6px;flex-wrap:wrap}.nasalQuizRow button{border:1px solid #dfe5ec;background:#fff;border-radius:9px;padding:7px 10px;cursor:pointer}.nasalQuizRow button.nasalQuizOk{background:#edf9f0;border-color:#76bd87;color:#17652d}.nasalQuizRow button.nasalQuizBad{background:#fff0ef;border-color:#dd8b84;color:#9d2f28}.nasalQuizRow button:disabled{cursor:default}.nasalQuizResult{font-size:11px;color:#657386}.nasalFormula{background:linear-gradient(135deg,#2c5d91,#9a5f29)}
+
       @media(max-width:1050px){#home .modules.homeModulesCompact{grid-template-columns:repeat(3,minmax(0,1fr))!important}.triExplain{grid-template-columns:1fr}.difficultyIndex{grid-template-columns:repeat(2,minmax(0,1fr))}}
       @media(max-width:620px){.difficultyIndex{grid-template-columns:1fr}.difficultyIndexItem{min-height:92px}}
       @media(max-width:760px){
@@ -777,6 +951,7 @@
         .exampleStrip{grid-template-columns:1fr}.keanBigRuleFlow{flex-direction:column}.keanBigRuleFlow b{text-align:center}
         .dpCoreGrid{grid-template-columns:1fr}.dpCoreVs{justify-self:center}.dpPairRow,.dpFamilyGrid{grid-template-columns:1fr}.dpPronounce{grid-template-columns:1fr}.dpSwap{transform:rotate(90deg)}.dpQuickRule{grid-template-columns:1fr}.dpRuleDivider{width:100%;height:1px}.dpQuizRow{grid-template-columns:1fr}.dpQuizResult{min-height:14px}
         .simGroups{grid-template-columns:1fr}.simWordGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.simNgRule{grid-template-columns:repeat(3,1fr)}.simNgRule p{grid-column:1/-1}.simMethod{grid-template-columns:1fr}.simRuleGrid{grid-template-columns:1fr}.simQuizRow{grid-template-columns:1fr}.simHeroTitle{font-size:23px}
+        .nasalHeroTitle{font-size:24px}.nasalMapBottom{grid-template-columns:repeat(2,1fr)}.nasalRuleGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.nasalMirrorGrid,.nasalDropGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.nasalPanelHead{flex-direction:column}.nasalSpecialRow,.nasalSummaryGrid{grid-template-columns:1fr}.nasalQuizRow{grid-template-columns:1fr}
       }
       @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}.difficultyPageCard{padding:16px!important}}
       @media(max-width:430px){#home .modules.homeModulesCompact{grid-template-columns:1fr!important}#home .homeModulesCompact .module{min-height:0!important}}
