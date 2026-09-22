@@ -167,7 +167,7 @@
       }
     }else{
       st.failures=Number(st.failures||0)+1;st.fail_streak=Number(st.fail_streak||0)+1;st.status='active';st.verify_streak=0;st.last_result='fail';
-      st.next_due=now+(st.fail_streak>=3?2*HOUR:(st.fail_streak===2?6*HOUR:12*HOUR));
+      st.next_due=now+(st.fail_streak>=3?1*HOUR:(st.fail_streak===2?3*HOUR:6*HOUR));
       if(stage>=3)st.stage=2;else if(stage===2)st.stage=1;else st.stage=1;
     }
     states[k]=st;saveState(states);
@@ -177,6 +177,20 @@
   function markPlanDone(word,result){
     const plan=loadPlan();if(plan.date!==today())return;
     plan.results=plan.results||{};plan.results[norm(word)]={at:Date.now(),result:result};savePlan(plan);
+  }
+  function releaseDueRetries(plan,states){
+    if(!plan||plan.date!==today()||!Array.isArray(plan.words))return false;
+    plan.results=plan.results||{};let changed=false,now=Date.now();
+    plan.words.forEach(function(p){
+      const k=norm(p.word),r=plan.results[k],st=states[k]||{};
+      if(r&&r.result==='fail'&&Number(st.next_due||0)>0&&Number(st.next_due)<=now){
+        delete plan.results[k];
+        p.stage=Math.max(1,Math.min(4,Number(st.stage||p.stage||1)));
+        changed=true;
+      }
+    });
+    if(changed)savePlan(plan);
+    return changed;
   }
   function resultBox(card,text,ok){const box=card.querySelector('.autoResult');if(box){box.textContent=text;box.className='autoResult '+(ok?'ok':'bad');}}
   function clearResult(card){const box=card.querySelector('.autoResult');if(box){box.textContent='';box.className='autoResult';}}
@@ -253,7 +267,7 @@
   }
   function render(){
     ensurePage();const body=document.getElementById('automationTrainingBody');if(!body)return;
-    const plan=buildPlan(false),map=wordMap(),states=stateMap(),done=plan.results||{};
+    const plan=buildPlan(false),map=wordMap(),states=stateMap();releaseDueRetries(plan,states);const done=plan.results||{};
     refreshMeta();
     let html='<div class="autoIntro"><b>每天只练真正需要自动化的词。</b><span>新学词默认是“待稳定”，不是“已掌握”。快速练习答错、模糊/不会、弱项、到期验证都会提高优先级；同一天的计划不会因为普通刷新而乱变。</span><button class="secondary" type="button" id="autoRebuildPlan">更新今日训练</button></div>';
     html+='<div class="autoStages"><span>1 快速主动提取</span><span>2 语境补词</span><span>3 主动表达</span><span>4 延迟验证</span></div>';
@@ -269,7 +283,7 @@
       if(stage===1)renderStage1(task,word,item,st);else if(stage===2)renderStage2(task,word,item,st);else if(stage===3)renderStage3(task,word,item,st);else renderStage4(task,word,item,st);
     });
   }
-  function dueCount(){const p=loadPlan();if(p.date===today()&&Array.isArray(p.words))return Math.max(0,p.words.length-Object.keys(p.results||{}).length);return Math.min(MAX_DAILY,candidateList().length);}
+  function dueCount(){const p=loadPlan();if(p.date===today()&&Array.isArray(p.words)){const states=stateMap();releaseDueRetries(p,states);return Math.max(0,p.words.length-Object.keys(p.results||{}).length);}return Math.min(MAX_DAILY,candidateList().length);}
   function refreshTag(){const tag=document.getElementById('automationTag');if(tag){const n=dueCount();tag.textContent=n?n+' 个待训练':'暂无到期词';}}
   function open(){ensurePage();if(typeof window.go==='function')window.go('automationTraining');render();}
   function rebuildPlan(){buildPlan(true);render();refreshTag();}
