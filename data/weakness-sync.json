@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T13:15:07.221Z",
+  "updated_at": "2026-09-22T13:20:02.386Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -36,10 +36,11 @@
     "keberatan": {
       "word": "keberatan",
       "status": "active",
-      "updated_at": "2026-09-11T14:40:15.505Z",
+      "updated_at": "2026-09-22T13:15:32.810Z",
       "display": "keberatan",
       "cn": "有异议；介意",
       "root": "berat",
+      "last_review": "2026-09-22T13:15:32.778Z",
       "source": "每日学习阅读",
       "source_date": "2026-09-03",
       "session": "19:00",
@@ -47,7 +48,7 @@
         "manual_unknown"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "panik": {
       "word": "panik",
@@ -126,17 +127,21 @@
     },
     "kebuang": {
       "word": "kebuang",
-      "status": "mastered",
-      "updated_at": "2026-09-18T15:00:28.281Z",
+      "status": "active",
+      "updated_at": "2026-09-22T13:15:49.179Z",
       "display": "kebuang",
       "cn": "被浪费掉；白白浪费",
       "root": "buang",
-      "last_review": "2026-09-18T15:00:28.256Z",
+      "root_cn": "扔掉；浪费",
+      "last_wrong": "2026-09-22T13:15:49.160Z",
+      "last_review": "2026-09-22T13:15:49.160Z",
       "last_mastered": "2026-09-12T14:13:50.580Z",
       "source": "阅读陌生词",
-      "reasons": [],
-      "wrong_count": 0,
-      "right_streak": 5
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "mepet": {
       "word": "mepet",
@@ -453,16 +458,16 @@
     "kebawa": {
       "word": "kebawa",
       "status": "mastered",
-      "updated_at": "2026-09-11T14:40:15.508Z",
+      "updated_at": "2026-09-22T13:17:08.706Z",
       "display": "kebawa",
       "cn": "不小心带走；被带着影响；情绪被带进去（口语）",
       "root": "bawa",
       "root_cn": "带；携带",
-      "last_review": "2026-09-16T08:01:02.357Z",
+      "last_review": "2026-09-22T13:17:08.682Z",
       "last_mastered": "2026-09-16T08:01:02.357Z",
       "reasons": [],
       "wrong_count": 1,
-      "right_streak": 3
+      "right_streak": 4
     },
     "nentuin": {
       "word": "nentuin",
@@ -498,16 +503,16 @@
     "ngepasin": {
       "word": "ngepasin",
       "status": "mastered",
-      "updated_at": "2026-09-18T15:06:07.367Z",
+      "updated_at": "2026-09-22T13:19:51.734Z",
       "display": "ngepasin",
       "cn": "把时间/安排调到刚好合适（口语）",
       "root": "pas",
       "root_cn": "刚好；合适",
-      "last_review": "2026-09-18T15:06:07.341Z",
+      "last_review": "2026-09-22T13:19:51.715Z",
       "last_mastered": "2026-09-18T15:06:07.341Z",
       "reasons": [],
       "wrong_count": 1,
-      "right_streak": 3
+      "right_streak": 4
     },
     "ngelarin": {
       "word": "ngelarin",
@@ -597,10 +602,10 @@
     "nyaris": {
       "word": "nyaris",
       "status": "active",
-      "updated_at": "2026-09-18T15:00:21.707Z",
+      "updated_at": "2026-09-22T13:16:01.538Z",
       "display": "nyaris",
       "cn": "差点、几乎",
-      "last_review": "2026-09-18T15:00:21.682Z",
+      "last_review": "2026-09-22T13:16:01.511Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -608,7 +613,7 @@
         "bipa_secondary_dont"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "bentrok": {
       "word": "bentrok",
@@ -2918,17 +2923,17 @@
     "antar": {
       "word": "antar",
       "status": "active",
-      "updated_at": "2026-09-17T15:29:54.451Z",
+      "updated_at": "2026-09-22T13:16:23.072Z",
       "display": "antar",
       "cn": "送；送到（口语高频）",
       "root": "antar",
       "root_cn": "送；递送",
-      "last_review": "2026-09-17T15:29:54.427Z",
+      "last_review": "2026-09-22T13:16:23.045Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "menyelesaikan": {
       "word": "menyelesaikan",
@@ -8590,16 +8595,16 @@
     "sebelumnya": {
       "word": "sebelumnya",
       "status": "mastered",
-      "updated_at": "2026-09-15T04:16:19.625Z",
+      "updated_at": "2026-09-22T13:16:19.856Z",
       "display": "sebelumnya",
       "cn": "之前；先前",
       "root": "sebelum",
       "root_cn": "在……之前",
-      "last_review": "2026-09-12T14:13:50.751Z",
+      "last_review": "2026-09-22T13:16:19.827Z",
       "last_mastered": "2026-09-12T14:13:50.751Z",
       "reasons": [],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "tadi": {
       "word": "tadi",
@@ -21573,16 +21578,19 @@
     "pas": {
       "word": "pas",
       "status": "active",
-      "updated_at": "2026-09-19T03:55:38.464Z",
+      "updated_at": "2026-09-22T13:15:41.506Z",
       "display": "pas",
       "cn": "正好；合适",
       "root": "pas",
-      "last_review": "2026-09-19T03:55:38.435Z",
+      "root_cn": "正好；合适",
+      "last_wrong": "2026-09-22T13:15:41.483Z",
+      "last_review": "2026-09-22T13:15:41.483Z",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "quick_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 2
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "beda": {
       "word": "beda",
