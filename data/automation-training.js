@@ -171,6 +171,13 @@
       if(stage>=3)st.stage=2;else if(stage===2)st.stage=1;else st.stage=1;
     }
     states[k]=st;saveState(states);
+    try{
+      const wp=window.WeaknessPool;
+      if(wp){
+        if(!result.ok&&typeof wp.markWeak==='function')wp.markWeak(word,item||{word:word},'automation_fail');
+        else if(st.status==='stable'&&typeof wp.removeReasons==='function')wp.removeReasons(word,'automation_fail',true,'automation_stable');
+      }
+    }catch(e){}
     window.dispatchEvent(new CustomEvent('automation-training-updated',{detail:{word:word,state:st}}));
     return st;
   }
