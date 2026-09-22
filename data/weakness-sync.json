@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T10:17:51.822Z",
+  "updated_at": "2026-09-22T10:22:57.938Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -3924,11 +3924,13 @@
     "memanggil": {
       "word": "memanggil",
       "status": "active",
-      "updated_at": "2026-09-22T08:17:02.694Z",
+      "updated_at": "2026-09-22T10:21:38.070Z",
       "display": "memanggil",
+      "cn": "呼唤 / 叫",
       "last_review": "2026-09-22T08:17:02.665Z",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "automation_fail"
       ],
       "wrong_count": 0,
       "right_streak": 1
@@ -19554,13 +19556,14 @@
     "jomblo": {
       "word": "jomblo",
       "status": "active",
-      "updated_at": "2026-09-22T08:18:25.121Z",
+      "updated_at": "2026-09-22T10:22:47.409Z",
       "display": "jomblo",
       "cn": "单身",
       "root": "jomblo",
       "last_review": "2026-09-22T08:18:25.091Z",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "automation_fail"
       ],
       "wrong_count": 0,
       "right_streak": 3
