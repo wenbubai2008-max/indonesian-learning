@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T06:15:55.472Z",
+  "generated_at": "2026-09-22T09:01:08.171Z",
   "master_unique": 977,
-  "primary_new_pool_total": 454,
+  "primary_new_pool_total": 453,
   "secondary_master_unique": 342,
   "secondary_new_pool_total": 340,
   "active_master_pool": "primary_977",
@@ -9,19 +9,21 @@
     "phase": "primary",
     "committed_secondary": false,
     "fill_target": 10,
-    "primary_remaining": 454,
+    "primary_remaining": 453,
     "secondary_available": 340,
     "switched_at": ""
   },
-  "weak_active_total": 1460,
-  "weak_mastered_total": 866,
+  "weak_active_total": 1450,
+  "weak_mastered_total": 877,
   "daily_taught_unique": 462,
-  "new_pool_total": 454,
-  "review_pool_total": 189,
+  "new_pool_total": 453,
+  "review_pool_total": 180,
+  "focus_pool_total": 180,
   "oral_new_pool_total": 37,
   "rules": {
     "new_pool": "primary first; when primary has 1-9 legal words, expose them first and top up from secondary to keep the 10-word AM contract; after primary reaches 0, secondary handoff is committed and never falls back automatically",
     "review_pool": "weak_active ∩ daily_vocab",
+    "focus_pool": "high-priority subset of weak_active ∩ daily_vocab; automation_fail > quick_wrong > unknown > dont > fuzzy",
     "secondary": "BIPA人工筛选不会/模糊；B2仅S；与977重复永久剔除"
   }
 }
