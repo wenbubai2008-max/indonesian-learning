@@ -10282,5 +10282,227 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-23"
     ]
+  },
+  {
+    "word": "menyalin",
+    "cn": "复制",
+    "en": "copy",
+    "root": "salin",
+    "root_cn": "复制；抄写",
+    "example": "Saya menyalin data penting sebelum mengubah dokumen.",
+    "example_cn": "修改文件前，我先复制重要数据。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "mengarahkan",
+    "cn": "指导 / 导向",
+    "en": "direct; guide",
+    "root": "arah",
+    "root_cn": "方向",
+    "example": "Atasan mengarahkan tim untuk fokus pada masalah utama.",
+    "example_cn": "上司指导团队把注意力放在主要问题上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "mengetuk",
+    "cn": "敲",
+    "en": "knock; tap",
+    "root": "ketuk",
+    "root_cn": "敲；轻击",
+    "example": "Dia mengetuk pintu sebelum masuk ke ruang rapat.",
+    "example_cn": "他进入会议室前先敲了门。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "menambahkan",
+    "cn": "增加",
+    "en": "add",
+    "root": "tambah",
+    "root_cn": "增加；添加",
+    "example": "Saya menambahkan satu catatan agar informasinya lebih jelas.",
+    "example_cn": "我加了一条备注，让信息更清楚。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "kehilangan",
+    "cn": "失去",
+    "en": "lose; loss",
+    "root": "hilang",
+    "root_cn": "消失；丢失",
+    "example": "Saya hampir kehilangan file penting karena lupa menyimpannya.",
+    "example_cn": "因为忘记保存，我差点丢失重要文件。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "terkejut",
+    "cn": "惊讶；震惊",
+    "en": "surprised; shocked",
+    "root": "kejut",
+    "root_cn": "惊；使吃惊",
+    "example": "Saya terkejut ketika melihat hasil pemeriksaan itu.",
+    "example_cn": "看到检查结果时，我很惊讶。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "mengeluh",
+    "cn": "抱怨",
+    "en": "complain",
+    "root": "keluh",
+    "root_cn": "抱怨；叹息",
+    "example": "Dia tidak mengeluh meskipun pekerjaannya cukup banyak.",
+    "example_cn": "尽管工作很多，他也没有抱怨。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "menyimpan",
+    "cn": "存(钱) / 保存",
+    "en": "save; store; keep",
+    "root": "simpan",
+    "root_cn": "保存；存放",
+    "example": "Jangan lupa menyimpan dokumen sebelum menutup laptop.",
+    "example_cn": "关电脑前别忘了保存文件。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "antri",
+    "cn": "排队",
+    "en": "queue; line up",
+    "root": "antre",
+    "root_cn": "排队",
+    "example": "Aku harus antri sebentar sebelum masuk.",
+    "example_cn": "进去之前我得排一会儿队。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "nyampe",
+    "cn": "到达",
+    "en": "arrive; reach",
+    "root": "sampai",
+    "root_cn": "到达；直到",
+    "example": "Kalau sudah nyampe kantor, kabari aku ya.",
+    "example_cn": "到了办公室以后告诉我一声。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
   }
 ];
