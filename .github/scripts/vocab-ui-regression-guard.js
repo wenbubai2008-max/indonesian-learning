@@ -155,8 +155,8 @@ try{
   retired.forEach(name=>{ok(!loader.includes(name),'retired script must not be loaded: '+name);ok(!index.includes('data/'+name),'retired script must not be in index: '+name);ok(!exists('data/'+name),'retired script must not remain active: '+name);ok(exists('archive/vocab-legacy/'+name),'retired script must be archived: '+name)});
 
   const workflows=fs.readdirSync(path.join(ROOT,'.github/workflows')).filter(x=>/\.ya?ml$/i.test(x)).sort();
-  const expected=['build-learning-runtime.yml','sync-daily-vocab.yml'].sort();
-  ok(JSON.stringify(workflows)===JSON.stringify(expected),'temporary one-shot workflows must not remain');
+  const expected=['build-learning-runtime.yml','build-vocab-profile.yml','sync-daily-vocab.yml'].sort();
+  ok(JSON.stringify(workflows)===JSON.stringify(expected),'only approved learning and vocabulary-profile workflows may remain');
 }catch(e){failures.push('vocab UI guard crashed: '+(e&&e.stack?e.stack:e))}
 
 if(failures.length){console.error('Vocabulary UI regression guard failed:');failures.forEach(x=>console.error('  FAIL  '+x));process.exit(1)}
