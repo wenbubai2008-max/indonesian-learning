@@ -135,6 +135,7 @@
 
   function renderQuestion(){
     const body=$('listeningWordBody'); if(!body)return;
+    body.classList.remove('listenAnswered');
     if(state.pos>=state.queue.length){renderSummary();return;}
     state.current=state.queue[state.pos];
     state.replays=0;state.answered=false;state.startedAt=Date.now();
@@ -146,8 +147,8 @@
         '<div class="listenHint">听声音，选择中文意思</div>'+
         '<button id="listenReplay" class="listenReplay" type="button">↻ 再听一次</button>'+
       '</div>'+
-      '<div class="listenOptions">'+choices.map((x,i)=>'<button class="listenOption" type="button" data-word="'+esc(x.word)+'" data-i="'+i+'">'+esc(x.cn)+'</button>').join('')+'</div>'+
-      '<div id="listenFeedback"></div>';
+      '<div id="listenFeedback"></div>'+
+      '<div class="listenOptions">'+choices.map((x,i)=>'<button class="listenOption" type="button" data-word="'+esc(x.word)+'" data-i="'+i+'">'+esc(x.cn)+'</button>').join('')+'</div>';
     $('listenSpeaker').addEventListener('click',()=>speakWord(true));
     $('listenReplay').addEventListener('click',()=>speakWord(true));
     body.querySelectorAll('.listenOption').forEach(btn=>btn.addEventListener('click',()=>answer(btn)));
@@ -201,15 +202,22 @@
       if(contrast)state.queue.splice(Math.min(state.pos+1,state.queue.length),0,contrast);
       if(state.queue.length>SESSION_SIZE)state.queue=state.queue.slice(0,SESSION_SIZE);
     }
-    const level=ok?(elapsed<=FAST_MS?'听觉自动化':'听懂了，但还不够快'):'这次没听出来';
+    const headline=ok?'✓ 听懂了':'✕ 没听出来';
+    const speedTag=ok?(elapsed<=FAST_MS?'3秒内':'反应偏慢'):'需要加强';
+    const body=$('listeningWordBody');
+    if(body)body.classList.add('listenAnswered');
     const feedback=$('listenFeedback');
     feedback.innerHTML='<div class="listenAnswer '+(ok?'ok':'bad')+'">'+
-      '<div class="listenAnswerTop">'+(ok?'✓':'✕')+' '+esc(level)+'</div>'+
-      '<div class="listenReveal"><b>'+esc(item.word)+'</b><button class="sound" type="button" id="listenAnswerSound">🔊</button></div>'+
-      '<div class="listenMeaning">'+esc(item.cn)+'</div>'+
-      '<div class="listenTiming">首次作答 '+(elapsed/1000).toFixed(1)+' 秒 · 重播 '+state.replays+' 次</div>'+
-      (!ok?'<div class="listenContrastNote">下一题会优先安排一个声音接近的已学词做对比。</div>':'')+
-      '<button class="primary listenNext" type="button">'+(state.pos+1>=state.queue.length?'看结果':'下一题 →')+'</button>'+
+      '<div class="listenAnswerInfo">'+
+        '<div class="listenAnswerHeadline"><span class="listenAnswerTop">'+esc(headline)+'</span><span class="listenSpeedTag">'+esc(speedTag)+'</span></div>'+
+        '<div class="listenAnswerWordRow"><b>'+esc(item.word)+'</b><span>'+esc(item.cn)+'</span></div>'+
+        '<div class="listenTiming">首次作答 '+(elapsed/1000).toFixed(1)+' 秒 · 重播 '+state.replays+' 次</div>'+
+        (!ok?'<div class="listenContrastNote">下一题优先安排声音接近的已学词做对比。</div>':'')+
+      '</div>'+
+      '<div class="listenAnswerActions">'+
+        '<button class="secondary listenAnswerReplay" type="button" id="listenAnswerSound">🔊 再听一遍</button>'+
+        '<button class="primary listenNext" type="button">'+(state.pos+1>=state.queue.length?'看结果':'下一题 →')+'</button>'+
+      '</div>'+
       '</div>';
     $('listenAnswerSound').addEventListener('click',function(){if(typeof window.speakIdText==='function')window.speakIdText(item.word,this);else if(typeof window.speak==='function')window.speak(item.word);});
     feedback.querySelector('.listenNext').addEventListener('click',()=>{state.pos++;renderQuestion();});
