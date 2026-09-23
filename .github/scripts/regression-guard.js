@@ -188,7 +188,7 @@ try {
 
   const workflowDir = rel('.github/workflows');
   const workflows = fs.readdirSync(workflowDir).filter(x => /\.ya?ml$/i.test(x)).sort();
-  const expectedWorkflows = ['build-learning-runtime.yml','build-vocab-profile.yml','sync-daily-vocab.yml'].sort();
+  const expectedWorkflows = ['build-learning-runtime.yml','sync-daily-vocab.yml'].sort();
   ok(JSON.stringify(workflows) === JSON.stringify(expectedWorkflows), `workflow set is exactly: ${expectedWorkflows.join(', ')}`);
 
   const sync = read('.github/workflows/sync-daily-vocab.yml');
