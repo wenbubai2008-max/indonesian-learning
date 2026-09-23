@@ -188,7 +188,7 @@ try {
 
   const workflowDir = rel('.github/workflows');
   const workflows = fs.readdirSync(workflowDir).filter(x => /\.ya?ml$/i.test(x)).sort();
-  const expectedWorkflows = ['build-learning-runtime.yml','sync-daily-vocab.yml'].sort();
+  const expectedWorkflows = ['build-learning-runtime.yml','build-vocab-profile.yml','sync-daily-vocab.yml'].sort();
   ok(JSON.stringify(workflows) === JSON.stringify(expectedWorkflows), `workflow set is exactly: ${expectedWorkflows.join(', ')}`);
 
   const sync = read('.github/workflows/sync-daily-vocab.yml');
@@ -199,13 +199,13 @@ try {
   ok(!/fs\.writeFileSync\([^\n]*daily-vocab-data\.js/.test(build), 'build-learning-runtime workflow does not directly write daily-vocab');
 
   const css = read('data/daily-width-fix.css');
-  ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))'), 'first-paint desktop homepage layout is 6 compact columns');
+  ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))'), 'first-paint desktop homepage layout is 3 compact columns');
   ok(css.includes('@media (max-width:1050px)') && css.includes('repeat(3,minmax(0,1fr))'), 'first-paint medium layout keeps 3 columns');
   ok(css.includes('@media (max-width:700px)') && css.includes('repeat(2,minmax(0,1fr))'), 'first-paint mobile layout keeps 2 columns');
   ok(css.includes('@media (max-width:430px)') && css.includes('grid-template-columns:1fr'), 'first-paint narrow layout keeps 1 column');
-  ok(css.includes('[data-home-module="vocab"]{order:1') && css.includes('[data-home-module="reading"]{order:2') && css.includes('[data-home-module="quick"]{order:3') && css.includes('[data-home-module="weak"]{order:4') && css.includes('[data-home-module="automation"]{order:5') && css.includes('[data-home-module="difficulty"]{order:6') && css.includes('[data-home-module="affix"]{order:7'), 'homepage CSS order matches the single module renderer');
+  ok(css.includes('[data-home-module="automation"]{order:1') && css.includes('[data-home-module="quick"]{order:2') && css.includes('[data-home-module="reading"]{order:3') && css.includes('[data-home-module="vocab"]{order:4') && css.includes('[data-home-module="weak"]{order:5') && css.includes('[data-home-module="difficulty"]{order:6') && css.includes('[data-home-module="affix"]{order:7'), 'homepage CSS order matches the single module renderer');
 
-  const protectedOrder = "const ORDER=['词汇学习','泛读','快速练习','弱项强化','自动训练','难点解释','前后缀'];";
+  const protectedOrder = "const ORDER=['自动训练','快速练习','泛读','词汇学习','弱项强化','难点解释','前后缀'];";
   const layout = read('data/home-modules-layout.js');
   const indexHtml = read('index.html');
   ok(layout.includes(protectedOrder), 'JS card order matches the protected order');
@@ -254,7 +254,8 @@ try {
   validateLatestPm();
 
   const index = read('index.html');
-  ok(index.includes('每天 08:00 / 18:00 自动生成到网站'), 'index source homepage schedule is 08:00 / 18:00');
+  ok(index.includes('<span class="slotTime">08:00</span><span id="amStatus"') && index.includes('<span class="slotTime">18:00</span><span id="pmStatus"'), 'index source homepage exposes the 08:00 / 18:00 lesson cards');
+  ok(!index.includes('每天 08:00 / 18:00 自动生成到网站。学完后只点一次'), 'homepage obsolete lesson instructions remain removed');
   ok(index.includes('<span class="slotTime">18:00</span><span id="pmStatus"'), 'index source PM card first paint is 18:00');
   ok(index.includes("loadReading('pm')\">18:00短文"), 'index source PM reading button first paint is 18:00');
   ok(index.includes("const PM_SWITCH_DATE='2026-09-16'") && /function pmTimeForDate\(d\)/.test(index), 'index source keeps historical PM switch date');
