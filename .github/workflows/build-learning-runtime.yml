@@ -20,6 +20,7 @@ on:
       - '.github/scripts/build-bipa-level-chunks.js'
       - '.github/scripts/build-learning-runtime.js'
       - '.github/scripts/build-vocab-profile.js'
+      - '.github/scripts/inject-vocab-profile.js'
       - '.github/scripts/regression-guard.js'
       - '.github/scripts/vocab-ui-regression-guard.js'
       - '.github/workflows/build-learning-runtime.yml'
@@ -67,19 +68,14 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
           VHASH=$(sha256sum data/vocab-memory-feedback.js | cut -c1-12)
-          PHASH=$(sha256sum data/vocab-profile-ui.js | cut -c1-12)
-          python - "$VHASH" "$PHASH" <<'PY'
+          python - "$VHASH" <<'PY'
           import pathlib,re,sys
           p=pathlib.Path('index.html')
           s=p.read_text(encoding='utf-8')
-          s=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"\']+',f'data/vocab-memory-feedback.js?v={sys.argv[1]}',s)
-          tag=f'<script src="data/vocab-profile-ui.js?v={sys.argv[2]}"></script>'
-          if 'data/vocab-profile-ui.js' in s:
-              s=re.sub(r'<script src="data/vocab-profile-ui\.js\?v=[^"\']+"></script>',tag,s)
-          else:
-              s=s.replace('</body>',tag+'\n</body>')
-          p.write_text(s,encoding='utf-8')
+          s2=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"\']+',f'data/vocab-memory-feedback.js?v={sys.argv[1]}',s)
+          if s2!=s:p.write_text(s2,encoding='utf-8')
           PY
+          node .github/scripts/inject-vocab-profile.js
           node .github/scripts/build-bipa-level-chunks.js
           node --check data/vocab-memory-feedback.js
           node --check data/vocab-controller-20260917.js
@@ -88,6 +84,7 @@ jobs:
           node --check data/home-modules-layout.js
           node --check data/vocab-profile-ui.js
           node --check .github/scripts/build-vocab-profile.js
+          node --check .github/scripts/inject-vocab-profile.js
           node --check data/bipa-json-loader-20260917.js
           node --check data/bipa-level-a1-gz.js
           node --check data/bipa-level-a2-gz.js
