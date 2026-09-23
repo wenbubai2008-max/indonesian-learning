@@ -196,9 +196,26 @@
     if(r.includes('memory_fuzzy'))return '模糊';
     if(r.includes('manual_unknown')||r.includes('seed_unfamiliar'))return '陌生词';
     if(r.includes('quick_wrong'))return '快速练习错题';
+    if(r.includes('listening_wrong'))return '听音连续答错';
+    if(r.includes('listening_slow'))return '听音反应慢';
+    if(r.includes('automation_fail'))return '自动训练不稳';
     return '待强化';
   }
   function activeMap(){const out={};list('active').forEach(function(x){out[norm(x.word)]=x;});return out;}
+  function hasListeningReason(x){const r=x&&x.reasons||[];return r.includes('listening_wrong')||r.includes('listening_slow');}
+  function listeningWeak(){return all().filter(function(x){return hasListeningReason(x);});}
+  function focusMap(){const out={};all().forEach(function(x){if(x&&x.word&&(x.status==='active'||hasListeningReason(x)))out[norm(x.word)]=x;});return out;}
+  function recordListening(word,item,signal){
+    const allowed=new Set(['listening_wrong','listening_slow','clear_listening']);if(!allowed.has(signal))return get(word);
+    const pool=migrate(),k=norm(word||(item||{}).word);if(!k)return null;const existing=pool[k]||null;
+    if(signal==='clear_listening'){
+      if(!existing)return null;const before=(existing.reasons||[]).slice();existing.reason_history=uniq((existing.reason_history||[]).concat(before.filter(function(r){return r==='listening_wrong'||r==='listening_slow';})));existing.reasons=before.filter(function(r){return r!=='listening_wrong'&&r!=='listening_slow';});
+      if(!same(before,existing.reasons))save(pool);return existing;
+    }
+    const wasMastered=!!(existing&&existing.status==='mastered'),pair=ensureRecord(pool,word,item||{}),x=pair[1];if(!x)return null;
+    if(wasMastered)x.status='mastered';else x.status='active';setReason(x,signal);x.last_review=nowISO();x.last_seen=x.last_review;x.times_seen=(x.times_seen||0)+1;
+    if(!wasMastered){x.mastered_reason='';clearLegacyDismissed(k);}save(pool);return x;
+  }
   function restoreDismissed(onlyReasons){
     const d=parse(LEGACY_DISMISSED),pool=migrate(),wanted=Array.isArray(onlyReasons)?onlyReasons.filter(Boolean):[];
     let restored=0,changed=false;
@@ -214,6 +231,6 @@
   }
   function exportActive(){return list('active').map(function(x){return Object.assign({},x);});}
 
-  window.WeaknessPool={KEY:KEY,norm:norm,migrate:migrate,get:get,all:all,listActive:function(){return list('active');},listMastered:function(){return list('mastered');},activeMap:activeMap,isActive:isActive,markUnknown:markUnknown,enrich:enrich,markWeak:markWeak,markMastered:markMastered,markKnown:markKnown,reactivate:reactivate,removeReasons:removeReasons,importRecord:importRecord,recordPractice:recordPractice,syncSignals:syncSignals,primaryReason:primaryReason,restoreDismissed:restoreDismissed,exportActive:exportActive};
+  window.WeaknessPool={KEY:KEY,norm:norm,migrate:migrate,get:get,all:all,listActive:function(){return list('active');},listMastered:function(){return list('mastered');},listListeningWeak:listeningWeak,activeMap:activeMap,focusMap:focusMap,isActive:isActive,markUnknown:markUnknown,enrich:enrich,markWeak:markWeak,markMastered:markMastered,markKnown:markKnown,reactivate:reactivate,removeReasons:removeReasons,importRecord:importRecord,recordPractice:recordPractice,recordListening:recordListening,syncSignals:syncSignals,primaryReason:primaryReason,restoreDismissed:restoreDismissed,exportActive:exportActive};
   migrate();
 })();
