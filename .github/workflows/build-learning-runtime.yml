@@ -19,6 +19,7 @@ on:
       - 'data/bipa-secondary-seed-20260917.js'
       - '.github/scripts/build-bipa-level-chunks.js'
       - '.github/scripts/build-learning-runtime.js'
+      - '.github/scripts/build-vocab-profile.js'
       - '.github/scripts/regression-guard.js'
       - '.github/scripts/vocab-ui-regression-guard.js'
       - '.github/workflows/build-learning-runtime.yml'
@@ -29,6 +30,7 @@ on:
       - 'data/home-modules-stability.js'
       - 'data/home-learning-upgrade-v2.js'
       - 'data/automation-training.js'
+      - 'data/vocab-profile-ui.js'
       - 'data/history-v2.js'
       - 'data/daily-light-test.js'
       - 'data/daily-ui-polish.js'
@@ -65,12 +67,18 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
           VHASH=$(sha256sum data/vocab-memory-feedback.js | cut -c1-12)
-          python - "$VHASH" <<'PY'
+          PHASH=$(sha256sum data/vocab-profile-ui.js | cut -c1-12)
+          python - "$VHASH" "$PHASH" <<'PY'
           import pathlib,re,sys
           p=pathlib.Path('index.html')
           s=p.read_text(encoding='utf-8')
-          s2=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"\']+',f'data/vocab-memory-feedback.js?v={sys.argv[1]}',s)
-          if s2!=s:p.write_text(s2,encoding='utf-8')
+          s=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"\']+',f'data/vocab-memory-feedback.js?v={sys.argv[1]}',s)
+          tag=f'<script src="data/vocab-profile-ui.js?v={sys.argv[2]}"></script>'
+          if 'data/vocab-profile-ui.js' in s:
+              s=re.sub(r'<script src="data/vocab-profile-ui\.js\?v=[^"\']+"></script>',tag,s)
+          else:
+              s=s.replace('</body>',tag+'\n</body>')
+          p.write_text(s,encoding='utf-8')
           PY
           node .github/scripts/build-bipa-level-chunks.js
           node --check data/vocab-memory-feedback.js
@@ -78,12 +86,15 @@ jobs:
           node --check data/home-learning-upgrade-v2.js
           node --check data/automation-training.js
           node --check data/home-modules-layout.js
+          node --check data/vocab-profile-ui.js
+          node --check .github/scripts/build-vocab-profile.js
           node --check data/bipa-json-loader-20260917.js
           node --check data/bipa-level-a1-gz.js
           node --check data/bipa-level-a2-gz.js
           node --check data/bipa-level-b1-gz.js
           node --check data/bipa-level-b2-gz.js
           node .github/scripts/build-learning-runtime.js
+          node .github/scripts/build-vocab-profile.js
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
       - name: Commit runtime if changed
@@ -92,7 +103,7 @@ jobs:
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html data/learning-runtime.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json
+          git add index.html data/learning-runtime.json data/vocab-profile.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Build learning runtime pools'
           git pull --rebase origin main
