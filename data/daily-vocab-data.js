@@ -399,23 +399,29 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "mendukung",
     "cn": "支持",
-    "en": "",
-    "root": "",
+    "en": "support",
+    "root": "dukung",
     "categories": [
       "每日学习",
       "08:00",
       "原始课程",
-      "历史记录不完整"
+      "历史记录不完整",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-25 08:00",
-    "last_seen": "2026-08-25 08:00",
+    "last_seen": "2026-09-23 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-25"
-    ]
+      "2026-08-25",
+      "2026-09-23"
+    ],
+    "root_cn": "支持；支撑",
+    "example": "Tim kami saling mendukung ketika pekerjaan sedang banyak.",
+    "example_cn": "工作很多的时候，我们团队会互相支持。"
   },
   {
     "word": "menghindari",
@@ -2136,23 +2142,29 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "mengatasi",
     "cn": "解决、克服",
-    "en": "",
+    "en": "overcome; handle; resolve",
     "root": "atas",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-08-29 19:00",
+    "last_seen": "2026-09-23 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-24",
-      "2026-08-29"
-    ]
+      "2026-08-29",
+      "2026-09-23"
+    ],
+    "root_cn": "上；上方",
+    "example": "Kita perlu mengatasi masalah ini tanpa membuat suasana semakin tegang.",
+    "example_cn": "我们需要解决这个问题，同时不要让气氛更加紧张。"
   },
   {
     "word": "berusaha",
@@ -4239,20 +4251,21 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-02 08:00",
-    "last_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-23 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-02",
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-23"
     ],
     "root_cn": "处理；照管",
-    "example": "Aku ngurus dokumen ini, kamu cek bagian terakhir.",
-    "example_cn": "我来处理这份文件，你检查最后一部分。"
+    "example": "Aku siapin datanya, lalu kamu bantu ngurus bagian yang belum selesai.",
+    "example_cn": "我准备数据，然后你帮忙处理还没完成的部分。"
   },
   {
     "word": "ngejar",
@@ -5911,23 +5924,24 @@ window.DAILY_VOCAB_DB = [
     "en": "awkwardly incomplete; halfway; might as well finish",
     "root": "tanggung",
     "root_cn": "承担；未完全结束（相关语境）",
-    "example": "Sudah nanggung, kita selesaikan bagian ini dulu.",
-    "example_cn": "都做到这一步了，我们先把这部分完成吧。",
+    "example": "Kerjaannya sudah nanggung, jadi sekalian kita selesaikan malam ini.",
+    "example_cn": "工作都做到一半了，干脆今晚一起做完。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-18 18:00",
+    "last_seen": "2026-09-23 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-23"
     ]
   },
   {
@@ -8821,20 +8835,23 @@ window.DAILY_VOCAB_DB = [
     "en": "show; indicate",
     "root": "tunjuk",
     "root_cn": "指；指出",
-    "example": "Data ini menunjukkan bahwa penjualan mulai naik.",
-    "example_cn": "这些数据显示销售开始上升。",
+    "example": "Dia menunjukkan bagian dokumen yang masih perlu diperbaiki.",
+    "example_cn": "他指出了文件里仍需修改的部分。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-23 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-23"
     ]
   },
   {
@@ -9735,20 +9752,23 @@ window.DAILY_VOCAB_DB = [
     "en": "thanks to / blessing",
     "root": "berkat",
     "root_cn": "福气；恩惠",
-    "example": "Berkat bantuan tim, pekerjaan selesai tepat waktu.",
-    "example_cn": "多亏团队的帮助，工作按时完成了。",
+    "example": "Berkat dukungan teman, dia bisa kembali ceria setelah menghadapi masalah.",
+    "example_cn": "多亏朋友的支持，她在面对问题后又恢复了开朗。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-23 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-09-23"
     ]
   },
   {
@@ -10172,6 +10192,95 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ]
+  },
+  {
+    "word": "menangis",
+    "cn": "哭；哭泣",
+    "en": "cry",
+    "root": "tangis",
+    "root_cn": "哭泣；哭声",
+    "example": "Dia sempat menangis setelah mendengar kabar itu, tetapi kemudian mulai tenang.",
+    "example_cn": "听到那个消息后他一度哭了，但后来慢慢平静下来。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 18:00",
+    "last_seen": "2026-09-23 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "bercerai",
+    "cn": "离婚；分开",
+    "en": "divorce; separate",
+    "root": "cerai",
+    "root_cn": "分开；离婚",
+    "example": "Mereka memilih bercerai setelah lama mencoba menyelesaikan masalah keluarga.",
+    "example_cn": "在长期尝试解决家庭问题后，他们选择了离婚。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 18:00",
+    "last_seen": "2026-09-23 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "ceria",
+    "cn": "开朗的；愉快的；欢快的",
+    "en": "cheerful; bright",
+    "root": "ceria",
+    "root_cn": "开朗；愉快",
+    "example": "Walaupun tadi ada masalah, dia tetap terlihat ceria saat bertemu teman-temannya.",
+    "example_cn": "虽然刚才有问题，但见到朋友时她看起来仍然很开朗。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 18:00",
+    "last_seen": "2026-09-23 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-23"
+    ]
+  },
+  {
+    "word": "siapin",
+    "cn": "准备好；给……准备",
+    "en": "prepare; get ready",
+    "root": "siap",
+    "root_cn": "准备好",
+    "example": "Aku siapin dokumennya dulu sebelum kita bicara dengan atasan.",
+    "example_cn": "在我们和上司谈之前，我先把文件准备好。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-23 18:00",
+    "last_seen": "2026-09-23 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-23"
     ]
   }
 ];
