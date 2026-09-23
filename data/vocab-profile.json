@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "generated_at": "2026-09-23T12:02:20.604Z",
+  "source_updated_at": "2026-09-23T03:52:52.818Z",
+  "taught_total": 466,
+  "confirmed_mastered": 153,
+  "needs_reinforcement": 179,
+  "unverified": 134,
+  "mastery_percent": 32.8,
+  "focus_total": 179,
+  "focus_words": [
+    {
+      "word": "menunjukkan",
+      "score": 120,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "cn": "指出"
+    },
+    {
+      "word": "berkat",
+      "score": 116,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "cn": "多亏了"
+    },
+    {
+      "word": "ngerepotin",
+      "score": 116,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "cn": "给人添麻烦"
+    },
+    {
+      "word": "mengizinkan",
+      "score": 108,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "fuzzy"
+      ],
+      "cn": "允许"
+    },
+    {
+      "word": "ngurus",
+      "score": 108,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "fuzzy"
+      ],
+      "cn": "处理；办理；照管（口语）"
+    },
+    {
+      "word": "layak",
+      "score": 108,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "fuzzy"
+      ],
+      "cn": "值得；合适；够资格"
+    },
+    {
+      "word": "mendukung",
+      "score": 86,
+      "signals": [
+        "quick_wrong",
+        "dont",
+        "fuzzy"
+      ],
+      "cn": "支持"
+    },
+    {
+      "word": "pembangunan",
+      "score": 78,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "cn": "建设；发展；建造过程"
+    }
+  ],
+  "definitions": {
+    "taught_total": "已正式进入每日学习词库的去重词数",
+    "confirmed_mastered": "已正式学习且统一状态为mastered",
+    "needs_reinforcement": "已正式学习且统一状态仍为active",
+    "unverified": "已正式学习但尚无足够统一状态证据",
+    "mastery_percent": "confirmed_mastered / taught_total；仅表示已学词中的确认掌握比例"
+  }
+}
