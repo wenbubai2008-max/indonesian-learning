@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T05:59:02.086Z",
+  "generated_at": "2026-09-23T05:59:48.399Z",
   "master_unique": 977,
   "primary_new_pool_total": 453,
   "secondary_master_unique": 342,
@@ -19,11 +19,13 @@
   "new_pool_total": 453,
   "review_pool_total": 175,
   "focus_pool_total": 175,
+  "listening_focus_pool_total": 0,
   "oral_new_pool_total": 37,
   "rules": {
     "new_pool": "primary first; when primary has 1-9 legal words, expose them first and top up from secondary to keep the 10-word AM contract; after primary reaches 0, secondary handoff is committed and never falls back automatically",
     "review_pool": "weak_active ∩ daily_vocab",
-    "focus_pool": "high-priority subset of weak_active ∩ daily_vocab; automation_fail > quick_wrong > unknown > dont > fuzzy",
+    "focus_pool": "high-priority subset of weak_active ∩ daily_vocab; automation_fail > quick_wrong > listening_wrong > unknown > dont > fuzzy > listening_slow",
+    "listening_focus_pool": "auditory weakness overlay for taught words; may include mastered without changing mastered status",
     "secondary": "BIPA人工筛选不会/模糊；B2仅S；与977重复永久剔除"
   }
 }
