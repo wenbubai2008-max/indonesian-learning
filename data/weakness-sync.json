@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-23T03:25:16.254Z",
+  "updated_at": "2026-09-23T03:26:56.191Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1716,20 +1716,18 @@
     },
     "begini": {
       "word": "begini",
-      "status": "active",
-      "updated_at": "2026-09-23T03:23:34.735Z",
+      "status": "mastered",
+      "updated_at": "2026-09-23T03:25:51.719Z",
       "display": "begini",
       "cn": "这样；像这样",
       "root": "begini",
       "root_cn": "这样",
       "last_wrong": "2026-09-23T03:23:34.713Z",
-      "last_review": "2026-09-23T03:23:34.713Z",
-      "reasons": [
-        "memory_fuzzy",
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-23T03:25:51.545Z",
+      "last_mastered": "2026-09-23T03:25:51.545Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 3
     },
     "selera": {
       "word": "selera",
@@ -3107,21 +3105,18 @@
     },
     "barusan": {
       "word": "barusan",
-      "status": "active",
-      "updated_at": "2026-09-23T03:24:06.915Z",
+      "status": "mastered",
+      "updated_at": "2026-09-23T03:25:55.351Z",
       "display": "barusan",
       "cn": "刚刚",
       "root": "baru",
       "root_cn": "新；刚刚",
       "last_wrong": "2026-09-22T08:20:24.134Z",
-      "last_review": "2026-09-23T03:24:06.893Z",
-      "reasons": [
-        "memory_fuzzy",
-        "quick_wrong",
-        "automation_fail"
-      ],
+      "last_review": "2026-09-23T03:25:55.183Z",
+      "last_mastered": "2026-09-23T03:25:55.183Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "bawel": {
       "word": "bawel",
@@ -5365,19 +5360,16 @@
     },
     "ujung-ujungnya": {
       "word": "ujung-ujungnya",
-      "status": "active",
-      "updated_at": "2026-09-22T10:29:22.773Z",
+      "status": "mastered",
+      "updated_at": "2026-09-23T03:26:03.972Z",
       "display": "ujung-ujungnya",
       "cn": "到头来；结果最后还是",
       "root": "ujung",
       "root_cn": "末端；结尾",
       "last_wrong": "2026-09-14T09:33:11.203Z",
-      "last_review": "2026-09-22T08:20:32.550Z",
-      "reasons": [
-        "memory_dont",
-        "quick_wrong",
-        "automation_fail"
-      ],
+      "last_review": "2026-09-23T03:26:03.805Z",
+      "last_mastered": "2026-09-23T03:26:03.805Z",
+      "reasons": [],
       "wrong_count": 1,
       "right_streak": 3
     },
@@ -13616,19 +13608,17 @@
     },
     "meningkat": {
       "word": "meningkat",
-      "status": "active",
-      "updated_at": "2026-09-23T03:23:50.610Z",
+      "status": "mastered",
+      "updated_at": "2026-09-23T03:26:14.075Z",
       "display": "meningkat",
       "cn": "提高、上升",
       "root": "tingkat",
       "last_wrong": "2026-09-23T03:23:50.587Z",
-      "last_review": "2026-09-23T03:23:50.587Z",
-      "reasons": [
-        "memory_fuzzy",
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-23T03:26:13.906Z",
+      "last_mastered": "2026-09-23T03:26:13.906Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 3
     },
     "beragama": {
       "word": "beragama",
@@ -19847,20 +19837,18 @@
     },
     "malah": {
       "word": "malah",
-      "status": "active",
-      "updated_at": "2026-09-22T13:14:07.775Z",
+      "status": "mastered",
+      "updated_at": "2026-09-23T03:26:45.960Z",
       "display": "malah",
       "cn": "反而；却",
       "root": "malah",
       "root_cn": "反而；却",
       "last_wrong": "2026-09-22T13:14:07.756Z",
-      "last_review": "2026-09-22T13:14:07.756Z",
-      "reasons": [
-        "memory_fuzzy",
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-23T03:26:45.804Z",
+      "last_mastered": "2026-09-23T03:26:45.804Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 3
     },
     "namun": {
       "word": "namun",
@@ -21582,20 +21570,18 @@
     },
     "pas": {
       "word": "pas",
-      "status": "active",
-      "updated_at": "2026-09-22T13:15:41.506Z",
+      "status": "mastered",
+      "updated_at": "2026-09-23T03:26:18.132Z",
       "display": "pas",
       "cn": "正好；合适",
       "root": "pas",
       "root_cn": "正好；合适",
       "last_wrong": "2026-09-22T13:15:41.483Z",
-      "last_review": "2026-09-22T13:15:41.483Z",
-      "reasons": [
-        "memory_dont",
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-23T03:26:17.965Z",
+      "last_mastered": "2026-09-23T03:26:17.965Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 3
     },
     "beda": {
       "word": "beda",
