@@ -45,6 +45,16 @@ try{
   const memoryPos=externalScripts.findIndex(x=>x.includes('vocab-memory-feedback.js'));
   ok(memoryPos>=0,'index must load vocab-memory-feedback.js');
   ok(memoryPos===externalScripts.length-1,'vocab-memory-feedback.js must remain the last external script in index.html');
+  // Homepage is one entry point: index owns the structural slots, each module only fills its own container.
+  const heroPos=index.indexOf('<div class="hero">'),profilePos=index.indexOf('id="vocabProfile"'),listenPos=index.indexOf('id="listenQuickCard"'),modsPos=index.indexOf('id="homeModules"');
+  ok(heroPos>=0&&heroPos<profilePos&&profilePos<listenPos&&listenPos<modsPos,'homepage order must be daily > profile > listening > other modules');
+  ok((index.match(/id="vocabProfile"/g)||[]).length===1,'homepage profile must have exactly one mount container');
+  ok(!index.includes('A2+ → B1 · 雅加达真实口语优先 · 你的个人词库'),'retired homepage subtitle must stay removed');
+  ok(!index.includes('每天 08:00 / 18:00 自动生成到网站。学完后只点一次'),'retired homepage lesson instructions must stay removed');
+  const profileUi=read('data/vocab-profile-ui.js');
+  new vm.Script(profileUi,{filename:'data/vocab-profile-ui.js'});
+  ok(profileUi.includes("home.querySelector(':scope > .hero')"),'profile fallback must mount directly after daily hero');
+  ok(!profileUi.includes('DAILY_VOCAB_DB')&&!profileUi.includes('WeaknessPool'),'profile homepage must not recompute full vocab databases');
   ok(!externalScripts.some(x=>x.includes('library-switcher.js')),'legacy library-switcher must not be loaded by index.html');
   ok(!index.includes('sessionCount'),'retired 今日完成 vocab stat must not exist in index.html');
   ok(index.includes('grid-template-columns:repeat(3,1fr)'),'vocabulary stats bar must be three columns');

@@ -1,14 +1,14 @@
 (function(){
-  const ORDER=['词汇学习','泛读','快速练习','弱项强化','自动训练','难点解释','前后缀'];
+  const ORDER=['自动训练','快速练习','泛读','词汇学习','弱项强化','难点解释','前后缀'];
   let applying=false;
 
   const HOME_MODULES=[
-    {key:'vocab',title:'词汇学习',icon:'🧠',desc:'词库、闪卡、发音、例句和学习进度。',tag:'词库',tagId:'vocabTag',open:function(){if(typeof window.go==='function')window.go('vocab');}},
-    {key:'reading',title:'泛读',icon:'📚',desc:'独立于每日课程：聊天、办公室、生活和真实交流场景。',tag:'划词查义 · 可加陌生词',open:function(){if(typeof window.openExtensiveV2==='function')window.openExtensiveV2();}},
-    {key:'quick',title:'快速练习',icon:'⚡',desc:'5–10分钟，用最近学过的词做情境选词和补空。',tag:'间隔复现',open:function(){if(typeof window.openQuickPracticeV2==='function')window.openQuickPracticeV2();}},
-    {key:'weak',title:'弱项强化',icon:'🎯',desc:'集中练快速练习错题和阅读中加入的陌生词。',tag:'针对弱项',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
-    {key:'automation',title:'自动训练',icon:'⚙️',desc:'把眼熟但调不出来的词，逐步练到主动使用。',tag:'计算中',tagId:'automationTag',open:function(){if(typeof window.openAutomationTraining==='function')window.openAutomationTraining();}},
-    {key:'difficulty',title:'难点解释',icon:'💡',desc:'整理中文难直译、容易混淆的词，用场景和对比帮助理解。',tag:'6 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
+    {key:'vocab',title:'词汇学习',icon:'🧠',desc:'按词库学习，结合闪卡、例句和发音。',tag:'词库',tagId:'vocabTag',open:function(){if(typeof window.go==='function')window.go('vocab');}},
+    {key:'reading',title:'泛读',icon:'📚',desc:'今日短文 · 自然复现 · 划词查义。',tag:'划词查义 · 可加陌生词',open:function(){if(typeof window.openExtensiveV2==='function')window.openExtensiveV2();}},
+    {key:'quick',title:'快速练习',icon:'⚡',desc:'短时练习到期词和容易答错的词。',tag:'间隔复现',open:function(){if(typeof window.openQuickPracticeV2==='function')window.openQuickPracticeV2();}},
+    {key:'weak',title:'弱项强化',icon:'🎯',desc:'集中巩固已学但仍不稳定的词。',tag:'针对弱项',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
+    {key:'automation',title:'自动训练',icon:'⚙️',desc:'主动提取 · 语境补词 · 延迟验证。',tag:'计算中',tagId:'automationTag',open:function(){if(typeof window.openAutomationTraining==='function')window.openAutomationTraining();}},
+    {key:'difficulty',title:'难点解释',icon:'💡',desc:'辨析易混词，理解构词和真实用法。',tag:'6 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
   ];
 
   function renderHomeModules(){
@@ -1025,19 +1025,18 @@
     const s=document.createElement('style');
     s.id='homeModulesCompactStyle';
     s.textContent=`
-      #home .modules.homeModulesCompact{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:10px!important;align-items:stretch}
-      #home .homeModulesCompact .module{min-width:0!important;grid-column:auto!important;border-radius:16px!important;padding:14px 13px!important;min-height:158px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;box-shadow:0 2px 8px rgba(23,32,51,.035)!important;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease!important}
+      #home .modules.homeModulesCompact{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;align-items:stretch}
+      #home .homeModulesCompact .module{min-width:0!important;grid-column:auto!important;border-radius:16px!important;padding:14px 13px!important;min-height:139px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;box-shadow:0 2px 8px rgba(23,32,51,.035)!important;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease!important}
       #home .homeModulesCompact .module:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(23,32,51,.08)!important}
       #home .homeModulesCompact .module>div:first-child{font-size:20px!important;line-height:1!important;margin-bottom:3px!important}
       #home .homeModulesCompact .module h3{font-size:18px!important;margin:6px 0 5px!important;line-height:1.25!important}
-      #home .homeModulesCompact .module p{font-size:13px!important;line-height:1.45!important;margin:0!important;color:#667085!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+      #home .homeModulesCompact .module p{font-size:13px!important;line-height:1.45!important;margin:0!important;color:#667085!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
       #home .homeModulesCompact .module .tag{font-size:11px!important;padding:4px 7px!important;margin-top:auto!important;position:relative;top:8px}
       #home .homeModVocab{background:#f8faff!important;border-color:#dbe5ff!important;border-top:3px solid #7897e8!important}
       #home .homeModReading{background:#f7fbf8!important;border-color:#d8eadf!important;border-top:3px solid #74b58a!important}
       #home .homeModQuick{background:#fffaf3!important;border-color:#f0e2c9!important;border-top:3px solid #d6a653!important}
       #home .homeModWeak{background:#fff8f8!important;border-color:#f0dcdc!important;border-top:3px solid #d98b8b!important}
       #home .homeModAutomation{background:#f8f6ff!important;border-color:#e4def5!important;border-top:3px solid #8d73c9!important}
-      #home 
       #home .homeModDifficulty{background:#f7fbff!important;border-color:#d8e8f5!important;border-top:3px solid #63a6cf!important;position:relative}
       #home .difficultyIconWrap{display:flex!important;align-items:center!important;gap:7px!important;width:100%!important}
       #home .difficultyCount{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:#e4f3ff;color:#24749f;font-size:11px;line-height:1}
