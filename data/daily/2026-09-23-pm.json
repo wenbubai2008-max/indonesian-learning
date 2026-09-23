@@ -1,0 +1,72 @@
+{
+  "date":"2026-09-23",
+  "session":"pm",
+  "time":"18:00",
+  "level":"A2+ → B1",
+  "day":33,
+  "duration_minutes":55,
+  "title":"18:00｜复习 + 应用：情绪来了，也把事情处理清楚",
+  "write_status":"lesson_complete",
+  "new_words":["menangis","bercerai","ceria","siapin"],
+  "vocab":[
+    {"word":"menangis","display":"menangis","audio_text":"menangis","cn":"哭；哭泣","en":"cry","root":"tangis","root_cn":"哭泣；哭声","formation":"meN- + tangis → menangis，表示哭、流泪。常见：menangis karena sedih（因为难过而哭）、menangis diam-diam（偷偷哭）、sampai menangis（哭了出来）、jangan menangis（别哭）。","example":"Dia sempat menangis setelah mendengar kabar itu, tetapi kemudian mulai tenang.","example_cn":"听到那个消息后他一度哭了，但后来慢慢平静下来。","synonym_note":"menangis 是标准通用的“哭”；nangis 是非常常见的口语形式，聊天中更随意。","usage_note":"真正新词；来自 runtime.new_pool，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"bercerai","display":"bercerai","audio_text":"bercerai","cn":"离婚；分开","en":"divorce; separate","root":"cerai","root_cn":"分开；离婚","formation":"ber- + cerai → bercerai，最常见表示夫妻离婚。常见：sudah bercerai（已经离婚）、ingin bercerai（想离婚）、orang tua bercerai（父母离婚）、setelah bercerai（离婚后）。","example":"Mereka memilih bercerai setelah lama mencoba menyelesaikan masalah keluarga.","example_cn":"在长期尝试解决家庭问题后，他们选择了离婚。","synonym_note":"bercerai 通常专指婚姻关系结束；berpisah 是更广泛的“分开、分别”，不一定涉及婚姻。","usage_note":"真正新词；来自 runtime.new_pool，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"ceria","display":"ceria","audio_text":"ceria","cn":"开朗的；愉快的；欢快的","en":"cheerful; bright","root":"ceria","root_cn":"开朗；愉快","formation":"ceria 是基本形容词。常见：wajah ceria（笑容满面的脸）、suasana ceria（欢快的气氛）、terlihat ceria（看起来很开心）、tetap ceria（保持开朗）。","example":"Walaupun tadi ada masalah, dia tetap terlihat ceria saat bertemu teman-temannya.","example_cn":"虽然刚才有问题，但见到朋友时她看起来仍然很开朗。","synonym_note":"ceria 强调外在表现出的开朗、明快；senang 更直接表示“高兴”；bahagia 更偏较深的幸福感。","usage_note":"真正新词；来自 runtime.new_pool，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"siapin","display":"siapin","audio_text":"siapin","cn":"准备好；给……准备","en":"prepare; get ready","root":"siap","root_cn":"准备好","formation":"siapin 是 siapkan 的高频口语形式，来自 siap。常见：siapin dulu（先准备好）、siapin dokumen（准备文件）、siapin makanan（准备食物）、aku siapin（我来准备）。","example":"Aku siapin dokumennya dulu sebelum kita bicara dengan atasan.","example_cn":"在我们和上司谈之前，我先把文件准备好。","synonym_note":"siapin 很口语；siapkan 是标准命令/使役形式；mempersiapkan 更完整、更正式，常用于较正式的准备工作。","usage_note":"真正新词；来自 runtime.new_pool 与 runtime.oral_new_pool；当天AM已有2个口语新词，本晚补1个合法口语新词。","source_group":"new","is_new":true,"is_oral_new":true},
+    {"word":"menunjukkan","display":"menunjukkan","audio_text":"menunjukkan","cn":"指出；展示；表明","en":"show; point out; indicate","root":"tunjuk","root_cn":"指；指出","formation":"meN- + tunjuk + -kan → menunjukkan。常见：menunjukkan hasil（展示结果）、menunjukkan arah（指路）、menunjukkan bahwa...（表明……）、menunjukkan bukti（出示证据）。","example":"Dia menunjukkan bagian dokumen yang masih perlu diperbaiki.","example_cn":"他指出了文件里仍需修改的部分。","synonym_note":"menunjukkan 可表示展示、指出或表明；memperlihatkan 更偏“给别人看”，而 menunjukkan 还能用于方向、证据和结论。","usage_note":"重点复习；来自 runtime.focus_pool 且同时属于 runtime.review_pool；今天有新的 automation_fail、quick_wrong 与 dont 信号，可打破近期冷却。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"mendukung","display":"mendukung","audio_text":"mendukung","cn":"支持","en":"support","root":"dukung","root_cn":"支持；支撑","formation":"meN- + dukung → mendukung。常见：mendukung keputusan（支持决定）、mendukung tim（支持团队）、mendukung rencana（支持计划）、saling mendukung（互相支持）。","example":"Tim kami saling mendukung ketika pekerjaan sedang banyak.","example_cn":"工作很多的时候，我们团队会互相支持。","synonym_note":"mendukung 是通用的“支持”；membantu 更强调实际提供帮助；setuju 只表示同意，不一定包含支持行动。","usage_note":"重点复习；来自 runtime.focus_pool 且同时属于 runtime.review_pool；当前有 quick_wrong 信号。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"nanggung","display":"nanggung","audio_text":"nanggung","cn":"做到一半不上不下；既然都做到这了","en":"awkwardly unfinished; might as well continue","root":"tanggung","root_cn":"承担；未完全结束（相关语境）","formation":"nanggung 是高频口语词。常见：udah nanggung（都做到这一步了）、tanggung banget（太不上不下了）、kalau berhenti sekarang nanggung（现在停很尴尬）、sekalian aja（干脆一起做完，常与语境搭配）。","example":"Kerjaannya sudah nanggung, jadi sekalian kita selesaikan malam ini.","example_cn":"工作都做到一半了，干脆今晚一起做完。","synonym_note":"nanggung 强调停在中间很别扭、差一点没完成；setengah-setengah 更强调做事不彻底；tanggung jawab 是“责任”，不要混淆。","usage_note":"重点复习；来自 runtime.focus_pool 且同时属于 runtime.review_pool；今天出现新的 quick_wrong 信号。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"mengatasi","display":"mengatasi","audio_text":"mengatasi","cn":"解决；克服；应对","en":"overcome; handle; resolve","root":"atas","root_cn":"上；上方","formation":"meN- + atas + -i → mengatasi，表示处理并克服问题。常见：mengatasi masalah（解决问题）、mengatasi kesulitan（克服困难）、mengatasi keluhan（处理投诉）、cara mengatasi（解决办法）。","example":"Kita perlu mengatasi masalah ini tanpa membuat suasana semakin tegang.","example_cn":"我们需要解决这个问题，同时不要让气氛更加紧张。","synonym_note":"mengatasi 强调克服、处理问题；menyelesaikan 更强调把事情完成或解决到结束；menangani 偏“着手处理、负责处理”。","usage_note":"重点复习；来自 runtime.focus_pool 且同时属于 runtime.review_pool；当前有 quick_wrong 与 dont 信号。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"berkat","display":"berkat","audio_text":"berkat","cn":"多亏；由于……的帮助","en":"thanks to","root":"berkat","root_cn":"福气；恩惠","formation":"今天 08:00 已教；berkat 是基本词。常见：berkat bantuan（多亏帮助）、berkat dukungan（多亏支持）、berkat dia（多亏他/她）、berkat kerja sama（多亏合作）。","example":"Berkat dukungan teman, dia bisa kembali ceria setelah menghadapi masalah.","example_cn":"多亏朋友的支持，她在面对问题后又恢复了开朗。","synonym_note":"berkat 通常引出积极原因；karena 是中性的“因为”，积极或消极原因都可以使用。","usage_note":"今天08:00已教；应用复现。当天AM review_vocab中真实出现，当前仍在 runtime.review_pool。","source_group":"application","is_new":false,"is_oral_new":false},
+    {"word":"ngurus","display":"ngurus","audio_text":"ngurus","cn":"处理；办理；照管（口语）","en":"handle; take care of","root":"urus","root_cn":"处理；照管","formation":"今天 08:00 已教；ngurus 是 mengurus 的高频口语形式。常见：ngurus kerjaan（处理工作）、ngurus dokumen（办文件）、ngurus anak（照顾孩子）、aku yang ngurus（我来处理）。","example":"Aku siapin datanya, lalu kamu bantu ngurus bagian yang belum selesai.","example_cn":"我准备数据，然后你帮忙处理还没完成的部分。","synonym_note":"ngurus 很口语；mengurus 是标准形式；menangani 更偏负责处理某个问题、案件或事务。","usage_note":"今天08:00已教；应用复现。当天AM review_vocab中真实出现，当前仍在 runtime.review_pool。","source_group":"application","is_new":false,"is_oral_new":false}
+  ],
+  "reading":{
+    "title":"Tetap Tenang Saat Masalah Datang",
+    "text":"Sore ini seorang rekan terlihat sedih dan sempat menangis karena masalah keluarga. Dia bercerita bahwa kakaknya akan bercerai. Kami tidak banyak bertanya, tetapi tetap mendukung dia. Berkat teman-teman kantor, suasana perlahan menjadi lebih tenang dan dia mulai terlihat ceria lagi. Setelah itu kami kembali bekerja. Aku siapin beberapa dokumen, lalu menunjukkan bagian yang harus diperiksa. Ada satu pekerjaan yang masih nanggung, jadi kami memilih menyelesaikannya bersama. Aku membantu ngurus data sementara rekan lain mengatasi masalah pada laporan. Hari itu aku belajar bahwa mendukung orang lain dan tetap menyelesaikan pekerjaan bisa dilakukan dengan tenang, tanpa membuat keadaan semakin berat.",
+    "cn":"今天傍晚，一位同事看起来很难过，因为家庭问题一度哭了。他说自己的哥哥/姐姐要离婚。我们没有追问很多，但仍然支持他。多亏办公室里的朋友，气氛慢慢平静下来，他也重新显得开朗了一些。之后我们回去工作。我准备了几份文件，然后指出需要检查的部分。有一项工作还做到一半，不上不下，所以我们决定一起完成。我帮忙处理数据，另一位同事则解决报告里的问题。那天我意识到，支持别人和继续把工作做好并不冲突，只要保持平静，不让情况变得更沉重。"
+  },
+  "dialogue":{
+    "title":"日常口语｜先关心人，再把工作做完",
+    "lines":[
+      {"speaker":"A","id":"Tadi dia sempat menangis. Kamu tahu ada apa?","cn":"刚才他一度哭了。你知道怎么了吗？"},
+      {"speaker":"B","id":"Katanya ada masalah keluarga. Kita nggak perlu banyak nanya, cukup mendukung dia dulu.","cn":"听说是家庭问题。我们不用问太多，先支持他就好。"},
+      {"speaker":"A","id":"Iya. Berkat teman-teman, sekarang dia sudah kelihatan lebih ceria.","cn":"是啊。多亏大家，现在他看起来已经开朗多了。"},
+      {"speaker":"B","id":"Kalau begitu, aku siapin dokumennya. Kamu bisa ngurus data yang tadi?","cn":"那我来准备文件。你能处理刚才的数据吗？"},
+      {"speaker":"A","id":"Bisa. Kerjaannya sudah nanggung, sekalian kita selesaikan.","cn":"可以。工作都做到一半了，干脆一起做完。"},
+      {"speaker":"B","id":"Sip. Nanti kita tunjukkan hasilnya ke atasan dan lihat apakah masalahnya sudah teratasi.","cn":"好。等下我们把结果给上司看，再看看问题是不是已经解决了。"}
+    ]
+  },
+  "rewrite":[
+    {"task":"中文→印尼语：她听到消息后哭了，但后来又慢慢开朗起来。","reference_answer":"Dia menangis setelah mendengar kabar itu, tetapi kemudian perlahan menjadi ceria lagi.","reference_cn":"她听到消息后哭了，但后来又慢慢开朗起来。"},
+    {"task":"中文→印尼语：多亏大家的支持，我们把这个问题解决了。","reference_answer":"Berkat dukungan semua orang, kami berhasil mengatasi masalah ini.","reference_cn":"多亏大家的支持，我们把这个问题解决了。"},
+    {"task":"改写：把 Saya akan menyiapkan dokumennya dulu. 改成自然口语，使用 siapin。","reference_answer":"Aku siapin dokumennya dulu.","reference_cn":"我先把文件准备好。"},
+    {"task":"主动造句：用 nanggung 和 ngurus 说一句工作场景中的自然口语。","reference_answer":"Kerjaannya sudah nanggung, jadi aku sekalian ngurus sampai selesai.","reference_cn":"工作都做到一半了，所以我干脆处理到结束。"}
+  ],
+  "daily_test":{
+    "questions":[
+      {"type":"choice","prompt":"哪一个词最适合表达“开朗的、看起来很愉快”？","options":["ceria","bercerai","menangis","nanggung"],"answer_index":0,"explain":"ceria 表示开朗、愉快，常用于 wajah ceria、terlihat ceria。"},
+      {"type":"choice","prompt":"在日常口语里，要说“我先把文件准备好”，哪个词最自然？","options":["siapin","mengatasi","menunjukkan","mendukung"],"answer_index":0,"explain":"siapin 是 siapkan 的高频口语形式，表示准备好。"},
+      {"type":"choice","prompt":"哪一个词最适合表达“处理并克服一个问题”？","options":["menangis","mengatasi","berkat","ngurus"],"answer_index":1,"explain":"mengatasi 常用于 mengatasi masalah/kesulitan，强调克服或解决问题。"},
+      {"type":"fill","prompt":"填空：Dia sempat ___ setelah mendengar kabar sedih itu.（哭）","answer":"menangis","explain":"menangis 表示哭、哭泣。"},
+      {"type":"fill","prompt":"填空：___ bantuan teman-teman, pekerjaannya selesai lebih cepat.（多亏）","answer":"Berkat","explain":"berkat 通常引出积极原因，表示“多亏……”。"},
+      {"type":"order","prompt":"按照中文排成自然的印尼语句子：工作都做到一半了，所以我们干脆一起完成。","tokens":["Kerjaannya","sudah nanggung","jadi","sekalian","kita","selesaikan bersama"],"answer":"Kerjaannya sudah nanggung, jadi sekalian kita selesaikan bersama.","answer_cn":"工作都做到一半了，所以我们干脆一起完成。","explain":"sudah nanggung 表示已经做到一半、现在停下很别扭；sekalian 表示干脆顺便一起做完。"}
+    ],
+    "self_check":[
+      "是否能主动说出 menangis 与 ceria，并用它们描述情绪变化？",
+      "是否能区分 bercerai（离婚）与 berpisah（一般的分开）？",
+      "是否能在口语里自然使用 siapin，而正式表达时换成 siapkan/mempersiapkan？",
+      "是否能主动使用 menunjukkan、mendukung、nanggung、mengatasi 中至少两个词造句？",
+      "是否能把今天08:00复现的 berkat 和 ngurus 放进自己的工作场景句子？"
+    ]
+  },
+  "review":{
+    "title":"最后5分钟复盘",
+    "steps":[
+      "新词主动回忆：不看答案说出 menangis、bercerai、ceria、siapin 的中文，并各说一个短搭配。",
+      "重点弱词复习：用 menunjukkan、mendukung、nanggung、mengatasi 各完成一个5—8词的自然短句。",
+      "08:00应用复现：分别用 berkat 和 ngurus 说一句今天工作或生活中可能真正会说的话。",
+      "口语切换：把 siapin 换成 siapkan，把 ngurus 换成 mengurus，再比较口语和标准表达的语气。",
+      "最后闭眼回忆：今天10个核心词里至少主动说出8个；卡住的词明天继续优先复现。"
+    ]
+  }
+}
