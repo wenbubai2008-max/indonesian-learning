@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{id:'er-20260922-food-waste-bekasi',date:'2026-09-22',title:'Warga Bekasi Belajar Mengurangi Makanan Terbuang',title_cn:'勿浪费食物：勿加泗居民学习更聪明地处理剩余食材',path:'data/extensive-reading-history/2026-09-22.js'},
 {id:'er-20260921-lrt-tarif-rute',date:'2026-09-21',title:'LRT Kelapa Gading–Manggarai: Tarif Rp8 Sampai 24 September',title_cn:'Kelapa Gading–Manggarai LRT：8印尼盾票价持续到9月24日',path:'data/extensive-reading-history/2026-09-21.js'},
 {id:'er-20260920-beras-premium-ritel',date:'2026-09-20',title:'Pasokan Beras Premium di Ritel Dipastikan Tetap Aman',title_cn:'印尼确保零售店优质大米供应保持充足',path:'data/extensive-reading-history/2026-09-20.js'},
 {id:'er-20260919-kereta-petani-pedagang',date:'2026-09-19',title:'Kereta Rp3.000 Membantu Petani dan Pedagang di Banten',title_cn:'3000印尼盾的列车帮助万丹农民和商贩出行',path:'data/extensive-reading-history/2026-09-19.js'},
