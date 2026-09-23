@@ -1,5 +1,5 @@
 (function(){
-  const ORDER=['词汇学习','泛读','快速练习','弱项强化','自动训练','难点解释'];
+  const ORDER=['词汇学习','泛读','快速练习','弱项强化','自动训练','难点解释','前后缀'];
   let applying=false;
 
   const HOME_MODULES=[
