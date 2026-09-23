@@ -16,7 +16,7 @@
   function saveState(s){write(STATE_KEY,s);}
   function quickState(){return parse('indo_quick_practice_state',{});}
   function memory(){return parse('indo_mem',{});}
-  function weakMap(){try{return window.WeaknessPool&&typeof window.WeaknessPool.activeMap==='function'?window.WeaknessPool.activeMap():{};}catch(e){return {};}}
+  function weakMap(){try{return window.WeaknessPool?(typeof window.WeaknessPool.focusMap==='function'?window.WeaknessPool.focusMap():(typeof window.WeaknessPool.activeMap==='function'?window.WeaknessPool.activeMap():{})):{};}catch(e){return {};}}
   function allSources(){return [].concat(window.DAILY_VOCAB_DB||[],window.UNFAMILIAR_VOCAB_DB||[],window.MASTER_VOCAB_OBJECTS||[],window.EMBEDDED_DB||[]);}
   function wordMap(){
     const out={};
@@ -88,7 +88,12 @@
       if(st&&Number(st.next_due||0)>now&&!freshFailure)return;
       let score=0,reasons=[];
       if(hardWrong){score+=24;reasons.push('快速练习刚答错');}
-      if(weak){score+=18;reasons.push('当前弱项');}
+      if(weak){
+        score+=18;reasons.push('当前弱项');
+        const wr=Array.isArray(w.reasons)?w.reasons:[];
+        if(wr.includes('listening_wrong')){score+=12;reasons.push('听音连续答错');}
+        else if(wr.includes('listening_slow')){score+=6;reasons.push('听音反应慢');}
+      }
       if(dont){score+=18;reasons.push('标记不会');}
       else if(fuzzy){score+=13;reasons.push('标记模糊');}
       if(st){
@@ -311,6 +316,11 @@
   window.AutomationTraining={open:open,render:render,rebuildPlan:rebuildPlan,refreshTag:refreshTag,candidates:candidateList};
   window.addEventListener('quick-practice-updated',function(){refreshTag();});
   window.addEventListener('weak-pool-changed',function(){refreshTag();});
+  window.addEventListener('listening-weakness-updated',function(){
+    buildPlan(true);refreshTag();
+    const page=document.getElementById('automationTraining');
+    if(page&&page.classList.contains('active'))render();
+  });
   ensurePage();
   style();
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){setTimeout(refreshTag,250);},{once:true});else setTimeout(refreshTag,250);
