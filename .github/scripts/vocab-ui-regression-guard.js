@@ -57,7 +57,7 @@ try{
   ok(!profileUi.includes('DAILY_VOCAB_DB')&&!profileUi.includes('WeaknessPool'),'profile homepage must not recompute full vocab databases');
   ok(profileUi.includes('openVocabProfileDetail'),'profile summary must expose a clickable detail entry');
   ok(profileUi.includes("page.id='vocabProfileDetail'")&&profileUi.includes("['overview','能力总览']")&&profileUi.includes("['trend','学习趋势']")&&profileUi.includes("['weak','弱词分析']")&&profileUi.includes("['advice','学习建议']"),'profile detail page keeps four planned analysis tabs');
-  ok(profileUi.includes("data-vp-action=\\\"automation\\\"")&&profileUi.includes("data-vp-action=\\\"quick\\\""),'weak-word detail keeps direct training actions');
+  ok(profileUi.includes('data-vp-action="automation"')&&profileUi.includes('data-vp-action="quick"'),'weak-word detail keeps direct training actions');
   ok(!externalScripts.some(x=>x.includes('library-switcher.js')),'legacy library-switcher must not be loaded by index.html');
   ok(!index.includes('sessionCount'),'retired 今日完成 vocab stat must not exist in index.html');
   ok(index.includes('grid-template-columns:repeat(3,1fr)'),'vocabulary stats bar must be three columns');
