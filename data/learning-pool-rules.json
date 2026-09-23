@@ -15,7 +15,8 @@
     "mastered_source": "是否掌握只看 weakness-sync 的 status=mastered",
     "runtime": "派生索引，不是源数据",
     "secondary_master": "第二主词库只收人工筛选为不会/模糊的BIPA词；A1/A2/B1按已筛结果，B2暂只收已筛S级；与977完全重复的词永久剔除；跨级重复词先汇总判断，状态按dont > fuzzy > know保守合并",
-    "focus_pool": "当前最需要跨模块反复复现的已学未掌握词；只从已正式教过且仍active的词中产生，mastered永不进入"
+    "focus_pool": "当前最需要跨模块反复复现的已学未掌握词；只从已正式教过且仍active的词中产生，mastered永不进入",
+    "listening_weakness": "听词训练是独立能力维度：连续听错或连续反应慢可形成 listening_wrong / listening_slow 信号；显式 mastered 不因此自动降级。"
   },
   "master_handoff": {
     "primary": "977主学习词库",
@@ -37,7 +38,8 @@
     "lesson_tasks_use_runtime_only_for_eligibility": true,
     "large_source_files_read_in_github_runner_only": true,
     "runtime_is_derived_not_source_of_truth": true,
-    "focus_pool": "focus_pool是小型跨模块重点弱词窗口，供自动训练、快速练习、18:00复习和泛读自然复现使用；模块不得自行重算完整词库"
+    "focus_pool": "focus_pool是小型跨模块重点弱词窗口，供自动训练、快速练习、18:00复习和泛读自然复现使用；模块不得自行重算完整词库",
+    "listening_focus_pool": "听觉弱项覆盖层：只包含已正式教过的词；可包含 status=mastered 的词，但只表示听觉维度需要加强，不改变 mastered。客户端快速练习、弱项强化、自动训练可读取；课程核心复习资格仍以 review_pool/focus_pool 为准。"
   },
   "am_contract": {
     "new_words": "恰好10个真正新词，只能来自runtime.new_pool；transition阶段若977剩余不足10个，必须先用完剩余977，再从第二库补足到10个",
@@ -101,7 +103,8 @@
     "content_guard": "阅读、对话、练习优先使用本晚核心词、当天AM已教词和已教复习词，不为写内容额外塞入尚未正式教过的新master词",
     "daily_test_container": "唯一标准结构为 daily_test.questions；questions 必须是恰好6题的数组，禁止使用 daily_test.items 或其他字段名替代；daily_test.self_check 必须单独存在。",
     "daily_test_schema": "daily_test={questions:[3 choice,2 fill,1 order],self_check:[非空字符串...]}; questions.length必须=6。",
-    "focus_words": "4-5个重点复习中优先从runtime.focus_pool选2-3个；不足再从review_pool补。focus_pool只是review_pool的高优先级子集，不新增复习资格"
+    "focus_words": "4-5个重点复习中优先从runtime.focus_pool选2-3个；不足再从review_pool补。focus_pool只是review_pool的高优先级子集，不新增复习资格",
+    "listening_overlay": "listening_focus_pool 可用于阅读/对话等非核心自然复现；若词仍为 mastered，不得占用 4–5 个 review 核心词或 2–3 个 application 核心词名额。"
   },
   "rules": [
     "K不进入新词、重点复习或PM应用复现核心词",
@@ -133,7 +136,11 @@
     "PM中只有is_new=true、source_group=new或new_words明确列出的词允许作为缺失词追加到daily-vocab；review/application只允许更新已存在词的复现记录，若缺失应视为一致性异常而非当作新词追加",
     "daily-vocab只表示已正式教过，不代表mastered；掌握状态不得由是否进入daily-vocab推断",
     "写入后复核由同步链负责：新课程JSON存在、daily-vocab同步成功、runtime在同一同步链中重建；失败不得自动关闭08:00或18:00任务",
-    "若硬校验失败，不得用模型常识、高频度或A2-B1适配度绕过；应停止错误写入并重新从合法runtime候选选择"
+    "若硬校验失败，不得用模型常识、高频度或A2-B1适配度绕过；应停止错误写入并重新从合法runtime候选选择",
+    "听词训练第一次答错只保留为本地听觉记录；同一词连续2次听错才写入 listening_wrong，连续2次答对但非首次播放3秒内完成可写入 listening_slow。",
+    "同一词连续3次首次播放且3秒内答对时，清除 listening_wrong / listening_slow；该清除只处理听觉原因，不自动修改其他弱项原因或整体 mastered/active 状态。",
+    "listening_wrong / listening_slow 属于统一弱项信号：active词可进入runtime.focus_pool加权；无论active或mastered，已教词都可进入runtime.listening_focus_pool。",
+    "客户端快速练习、弱项强化、自动训练读取 listening 弱项并提高复现优先级；mastered听觉弱项仅表示耳朵不稳，不等于重新判定整个词未掌握。"
   ],
   "validation_gate": {
     "required_before_write": true,
@@ -147,8 +154,9 @@
     "sync_workflow_is_single_writer": true,
     "lesson_sync_refreshes_runtime_atomically": true,
     "daily_test_schema_check": "写入前必须校验 daily_test 为对象、daily_test.questions 为唯一题目数组且 length=6、类型计数=3 choice+2 fill+1 order、self_check 为非空字符串数组；若仅有 items 或其他容器字段则校验失败并禁止写入。",
-    "focus_word_check": "in_runtime_focus_pool_or_review_pool"
+    "focus_word_check": "in_runtime_focus_pool_or_review_pool",
+    "listening_signal_guard": "listening signals must not downgrade status=mastered by themselves; mastered listening weakness may only enter listening_focus_pool, not review/application core eligibility."
   },
-  "updated_at": "2026-09-22",
+  "updated_at": "2026-09-23",
   "focus_pool_formula": "重点弱词 = A ∩ D，按自动训练失败、快速练习答错、不会/模糊等信号综合排序；只做派生索引，不改变词库归属"
 }
