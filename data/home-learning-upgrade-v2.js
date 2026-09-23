@@ -29,7 +29,7 @@
     return 0;
   }
   function weightedPool(){
-    var pool=recentPool(),ps=practiceState(),mm=mem(),wp=weakPool(),active=wp?wp.activeMap():localUnknown(),now=Date.now(),seen={};
+    var pool=recentPool(),ps=practiceState(),mm=mem(),wp=weakPool(),active=wp?(typeof wp.focusMap==='function'?wp.focusMap():wp.activeMap()):localUnknown(),now=Date.now(),seen={};
     pool.forEach(function(x){seen[norm(x.word)]=1;});
     (window.DAILY_VOCAB_DB||[]).forEach(function(raw){
       if(!raw||!raw.word||!raw.cn)return;var k=norm(raw.word);if(!active[k]||seen[k])return;
@@ -43,8 +43,10 @@
       if(mm[x.word]==='fuzzy'||mm[x.word]==='dont')w+=4;
       if(weak)w+=4;
       if(reasons.includes('automation_fail'))w+=7;
+      if(reasons.includes('listening_wrong'))w+=6;
+      if(reasons.includes('listening_slow'))w+=3;
       if((p.wrong||0)>(p.right||0))w+=3;
-      if((p.streak||0)>=3&&!reasons.includes('automation_fail'))w=Math.max(.25,w-2.5);
+      if((p.streak||0)>=3&&!reasons.includes('automation_fail')&&!reasons.includes('listening_wrong')&&!reasons.includes('listening_slow'))w=Math.max(.25,w-2.5);
       return {x:x,w:w,due:due};
     }).filter(function(a){return a.due<=now;});
   }
@@ -86,12 +88,13 @@
     var map=wordMap(),mm=mem(),ps=practiceState(),wp=weakPool(),out=[],taught=taughtSet();
     if(wp){
       wp.syncSignals(map,mm,ps);
-      wp.listActive().filter(function(x){return taught.has(norm(x.word));}).forEach(function(x){var k=norm(x.word),base=map[k]||{},fb=fallbackExample(k);out.push({word:x.word||base.word||k,cn:x.cn||base.cn||fallbackMeaning(k)||'待补释义',example:x.example||((x.contexts||[]).slice(-1)[0])||base.example||fb[0],example_cn:x.example_cn||base.example_cn||fb[1],reason:wp.primaryReason(x)});});
+      var records=typeof wp.focusMap==='function'?Object.values(wp.focusMap()):wp.listActive(),added={};
+      records.filter(function(x){return taught.has(norm(x.word));}).forEach(function(x){var k=norm(x.word);if(added[k])return;added[k]=1;var base=map[k]||{},fb=fallbackExample(k);out.push({word:x.word||base.word||k,cn:x.cn||base.cn||fallbackMeaning(k)||'待补释义',example:x.example||((x.contexts||[]).slice(-1)[0])||base.example||fb[0],example_cn:x.example_cn||base.example_cn||fb[1],reason:wp.primaryReason(x)});});
       return out;
     }
     var unknown=localUnknown(),keys={};Object.keys(map).forEach(function(k){if(!taught.has(k))return;var x=map[k],st=mm[x.word],p=ps[k]||{},reason='';if(st==='dont')reason='不会';else if(st==='fuzzy')reason='模糊';else if(unknown[k]||((window.UNFAMILIAR_VOCAB_DB||[]).some(function(u){return norm(u.word)===k;})))reason='陌生词';else if((p.wrong||0)>0&&(p.streak||0)<3)reason='快速练习错题';if(reason&&!keys[k]){keys[k]=1;var fb=fallbackExample(k);out.push({word:x.word,cn:x.cn||fallbackMeaning(k)||'待补释义',example:x.example||((x.contexts||[]).slice(-1)[0])||fb[0],example_cn:x.example_cn||fb[1],reason:reason});}});Object.keys(unknown).forEach(function(k){if(keys[k]||!taught.has(k))return;var u=unknown[k]||{},fb=fallbackExample(k),base=map[k]||{};out.push({word:u.word||base.word||k,cn:u.cn&&!/暂无|暂未/.test(u.cn)?u.cn:(base.cn||fallbackMeaning(k)||'待补释义'),example:(u.contexts||[]).slice(-1)[0]||base.example||fb[0],example_cn:base.example_cn||fb[1],reason:'陌生词'});});return out;
   }
-  function renderWeak(){var body=document.getElementById('weaknessBody');if(!body)return;var arr=weaknessList(),meta=document.getElementById('weaknessMeta');if(meta)meta.textContent=arr.length+' 个';if(!arr.length){body.innerHTML='<div class="empty"><b>目前没有需要复习的已学弱项 ✓</b><div style="margin-top:8px">这里只显示已经正式学过、但当前仍是模糊 / 不会 / 答错的词。</div></div>';return;}body.innerHTML='<div class="v2-note">这里只做复习，不提前教新词：仅显示已进入每日课程（daily-vocab）且当前仍为 active 的词。未正式学过的 active 词继续留在新词池或暂存区，不会出现在这里。点“会了”后退出强化；以后再次答错会自动回来。</div><div class="v2-weak">'+arr.slice(0,30).map(function(x){return '<div class="v2-card"><div><b>'+esc(x.word)+'</b><span>'+esc(x.reason)+'</span></div><strong>'+esc(x.cn)+'</strong>'+(x.example?'<p class="v2-ex">'+esc(x.example)+'</p>':'')+(x.example_cn?'<p class="v2-excn">'+esc(x.example_cn)+'</p>':'')+'<button class="sound" onclick=\'speak('+JSON.stringify(x.word)+')\'>🔊</button></div>';}).join('')+'</div>';}
+  function renderWeak(){var body=document.getElementById('weaknessBody');if(!body)return;var arr=weaknessList(),meta=document.getElementById('weaknessMeta');if(meta)meta.textContent=arr.length+' 个';if(!arr.length){body.innerHTML='<div class="empty"><b>目前没有需要复习的已学弱项 ✓</b><div style="margin-top:8px">这里只显示已经正式学过、但当前仍是模糊 / 不会 / 答错的词。</div></div>';return;}body.innerHTML='<div class="v2-note">这里只强化已经正式学过的词。普通弱项来自 active 状态；另外，已掌握词如果连续听错或听音反应慢，也会以“听觉弱项”出现在这里，但不会因此自动取消已掌握状态。</div><div class="v2-weak">'+arr.slice(0,30).map(function(x){return '<div class="v2-card"><div><b>'+esc(x.word)+'</b><span>'+esc(x.reason)+'</span></div><strong>'+esc(x.cn)+'</strong>'+(x.example?'<p class="v2-ex">'+esc(x.example)+'</p>':'')+(x.example_cn?'<p class="v2-excn">'+esc(x.example_cn)+'</p>':'')+'<button class="sound" onclick=\'speak('+JSON.stringify(x.word)+')\'>🔊</button></div>';}).join('')+'</div>';}
   var readingIndex=0;
   function renderExtensive(){var body=document.getElementById('extensiveBody');if(!body)return;var db=window.EXTENSIVE_READING_DB||[],meta=document.getElementById('extensiveMeta');if(!db.length){body.innerHTML='<div class="empty">今日泛读正在加载。</div>';return;}readingIndex=Math.min(Math.max(readingIndex,0),db.length-1);var x=db[readingIndex];if(meta)meta.textContent=(x.date||'今日')+' · '+x.level;body.innerHTML='<div class="v2-rhead"><span class="tag">'+esc(x.category)+'</span><span class="tag">约 '+esc(x.minutes)+' 分钟</span><h3 class="rl-text v2-title">'+esc(x.title)+'</h3><div class="v2-title-cn">'+esc(x.title_cn)+'</div></div><div class="v2-note">每天只显示 1 篇今日泛读。优先选真实新闻或生活热点，再按你的 A2+→B1 水平改写；旧文章进入历史，不占当前页。</div><div class="rl-text v2-reading">'+esc(x.text).replace(/\n/g,'<br>')+'</div><div class="v2-actions"><button class="secondary" onclick=\'speak('+JSON.stringify(x.text)+')\'>🔊 朗读全文</button><button class="secondary" onclick="toggleExtensiveCnV2()">显示 / 隐藏中文</button></div><div class="v2-cn" id="extensiveCnV2">'+esc(x.cn).replace(/\n/g,'<br>')+'</div>'+(x.source_name?'<div class="muted" style="margin-top:12px">改写来源：'+esc(x.source_name)+(x.source_date?' · '+esc(x.source_date):'')+'</div>':'');}
   window.refreshQuickPracticeV2=function(){renderQuick();window.scrollTo({top:0,behavior:'smooth'});};
