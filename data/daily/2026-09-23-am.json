@@ -1,0 +1,47 @@
+{
+  "date":"2026-09-23",
+  "session":"am",
+  "time":"08:00",
+  "day":33,
+  "level":"A2+→B1",
+  "title":"08:00｜新词 + 应用：处理工作中的变化与问题",
+  "vocab":[
+    {"word":"menyalin","display":"menyalin","audio_text":"menyalin","cn":"复制","en":"copy","root":"salin","root_cn":"复制；抄写","formation":"meN- + salin → menyalin，表示复制文件、文字或信息。","example":"Saya menyalin data penting sebelum mengubah dokumen.","example_cn":"修改文件前，我先复制重要数据。","synonym_note":"menyalin 是标准通用表达；在技术语境中也常听到 copy。","is_oral_new":false},
+    {"word":"mengarahkan","display":"mengarahkan","audio_text":"mengarahkan","cn":"指导 / 导向","en":"direct; guide","root":"arah","root_cn":"方向","formation":"meN- + arah + -kan → mengarahkan，表示引导方向、指导某人。","example":"Atasan mengarahkan tim untuk fokus pada masalah utama.","example_cn":"上司指导团队把注意力放在主要问题上。","synonym_note":"mengarahkan 强调给出方向；membimbing 更偏持续指导。","is_oral_new":false},
+    {"word":"mengetuk","display":"mengetuk","audio_text":"mengetuk","cn":"敲","en":"knock; tap","root":"ketuk","root_cn":"敲；轻击","formation":"meN- + ketuk → mengetuk，常用于敲门或轻敲物体。","example":"Dia mengetuk pintu sebelum masuk ke ruang rapat.","example_cn":"他进入会议室前先敲了门。","synonym_note":"mengetuk 常用于敲门、轻敲；memukul 通常表示更用力地打。","is_oral_new":false},
+    {"word":"menambahkan","display":"menambahkan","audio_text":"menambahkan","cn":"增加","en":"add","root":"tambah","root_cn":"增加；添加","formation":"meN- + tambah + -kan → menambahkan，表示把某物添加进去。","example":"Saya menambahkan satu catatan agar informasinya lebih jelas.","example_cn":"我加了一条备注，让信息更清楚。","synonym_note":"menambahkan 强调添加某物；bertambah 表示数量自己增加。","is_oral_new":false},
+    {"word":"kehilangan","display":"kehilangan","audio_text":"kehilangan","cn":"失去","en":"lose; loss","root":"hilang","root_cn":"消失；丢失","formation":"ke- + hilang + -an → kehilangan，表示失去或丢失某人某物。","example":"Saya hampir kehilangan file penting karena lupa menyimpannya.","example_cn":"因为忘记保存，我差点丢失重要文件。","synonym_note":"kehilangan 表示失去；hilang 表示某物消失或不见了。","is_oral_new":false},
+    {"word":"terkejut","display":"terkejut","audio_text":"terkejut","cn":"惊讶；震惊","en":"surprised; shocked","root":"kejut","root_cn":"惊；使吃惊","formation":"ter- + kejut → terkejut，表示突然感到惊讶。","example":"Saya terkejut ketika melihat hasil pemeriksaan itu.","example_cn":"看到检查结果时，我很惊讶。","synonym_note":"terkejut 是标准通用表达；口语中 kaget 更常见。","is_oral_new":false},
+    {"word":"mengeluh","display":"mengeluh","audio_text":"mengeluh","cn":"抱怨","en":"complain","root":"keluh","root_cn":"抱怨；叹息","formation":"meN- + keluh → mengeluh，表示对困难或不满进行抱怨。","example":"Dia tidak mengeluh meskipun pekerjaannya cukup banyak.","example_cn":"尽管工作很多，他也没有抱怨。","synonym_note":"mengeluh 是通用表达；komplain 更常用于对服务或具体问题提出投诉。","is_oral_new":false},
+    {"word":"menyimpan","display":"menyimpan","audio_text":"menyimpan","cn":"存(钱) / 保存","en":"save; store; keep","root":"simpan","root_cn":"保存；存放","formation":"meN- + simpan → menyimpan，可表示保存文件、存放物品或存钱。","example":"Jangan lupa menyimpan dokumen sebelum menutup laptop.","example_cn":"关电脑前别忘了保存文件。","synonym_note":"menyimpan 使用范围很广；menabung 更专指存钱、储蓄。","is_oral_new":false},
+    {"word":"antri","display":"antri","audio_text":"antri","cn":"排队","en":"queue; line up","root":"antre","root_cn":"排队","formation":"antri 是日常口语中非常常见的形式。","example":"Aku harus antri sebentar sebelum masuk.","example_cn":"进去之前我得排一会儿队。","synonym_note":"antri 是常见口语形式；标准形式是 antre。","is_oral_new":true},
+    {"word":"nyampe","display":"nyampe","audio_text":"nyampe","cn":"到达","en":"arrive; reach","root":"sampai","root_cn":"到达；直到","formation":"nyampe 是 sampai 的高频口语形式，常用于聊天和日常对话。","example":"Kalau sudah nyampe kantor, kabari aku ya.","example_cn":"到了办公室以后告诉我一声。","synonym_note":"nyampe 很口语；标准、通用形式是 sampai。","is_oral_new":true}
+  ],
+  "review_vocab":["barusan","ngurus","ujung-ujungnya","berkat","menunjukkan"],
+  "sentences":[
+    {"text":"Barusan saya menyalin file itu dan menyimpannya di folder baru.","cn":"刚才我复制了那个文件，并把它保存在新文件夹里。"},
+    {"text":"Atasan mengarahkan kami untuk menambahkan informasi yang masih kurang.","cn":"上司指导我们补充还缺少的信息。"},
+    {"text":"Aku harus antri sebentar, jadi mungkin agak terlambat nyampe kantor.","cn":"我得排一会儿队，所以到办公室可能会稍晚一点。"},
+    {"text":"Dia mengetuk pintu lalu menunjukkan dokumen yang perlu diperiksa.","cn":"他敲了门，然后给我看需要检查的文件。"},
+    {"text":"Jangan langsung mengeluh kalau ada perubahan; kita bisa ngurus masalahnya satu per satu.","cn":"有变化时先别马上抱怨，我们可以一个一个处理问题。"}
+  ],
+  "reading":{
+    "text":"Pagi ini aku terkejut karena ada perubahan pada dokumen kerja. Barusan atasan mengarahkan kami untuk memeriksa data sekali lagi. Aku menyalin file lama lalu menyimpan versi baru agar tidak kehilangan informasi penting. Seorang rekan mengetuk pintu dan menunjukkan bagian yang perlu diperbaiki. Aku menambahkan beberapa catatan tanpa mengeluh. Setelah itu aku harus antri sebentar untuk mengambil dokumen lain. Berkat bantuan rekan kerja, pekerjaannya selesai lebih cepat. Ketika akhirnya nyampe di meja kerja lagi, aku sadar bahwa masalah kecil lebih mudah diurus kalau kita tetap tenang dan bekerja satu per satu.",
+    "cn":"今天早上，因为工作文件有变化，我有些惊讶。刚才上司让我们再次检查数据。我复制了旧文件，然后保存新版本，以免丢失重要信息。一位同事敲门进来，给我看需要修改的部分。我补充了几条备注，没有抱怨。之后我还得排一会儿队去拿另一份文件。多亏同事帮忙，工作完成得更快。最后重新回到工位时，我意识到，只要保持冷静、一件一件处理，小问题其实更容易解决。"
+  },
+  "quiz":[
+    {"question":"哪一个词最适合填空：Sebelum mengubah dokumen, sebaiknya kita ___ file lama dulu.","options":["menyalin","mengeluh","mengetuk","antri"],"answer_index":0,"explain":"menyalin 表示复制，这里指先复制旧文件。"},
+    {"question":"日常聊天中，要表达“到了办公室告诉我”，哪个词最适合表示“到达”？","options":["kehilangan","nyampe","menambahkan","mengarahkan"],"answer_index":1,"explain":"nyampe 是 sampai 的高频口语形式，表示到达。"},
+    {"question":"复习：哪一个词最适合表达“刚刚、刚才”？","options":["berkat","barusan","menunjukkan","ujung-ujungnya"],"answer_index":1,"explain":"barusan 表示刚刚、刚才。"}
+  ],
+  "output":{
+    "task":"请用3—4句自然印尼语描述：你到办公室后发现文件有变化，于是先保存、复制，再处理问题。尽量使用 nyampe、menyimpan、menyalin、menambahkan，并自然加入一个今天的复习词。",
+    "reference_answer":"Barusan aku nyampe kantor dan melihat ada perubahan pada dokumen. Aku langsung menyimpan versi terbaru lalu menyalin file lama sebagai cadangan. Setelah itu aku menambahkan catatan yang masih kurang. Kalau ada masalah lain, aku akan ngurus satu per satu.",
+    "reference_cn":"刚才我到办公室后发现文件有变化。我马上保存最新版本，然后复制旧文件作为备份。之后我补上还缺少的备注。如果还有其他问题，我会一个一个处理。"
+  },
+  "review":[
+    "menyalin = 复制；menyimpan = 保存，处理文件时经常一起出现。",
+    "antri 是口语常见形式，标准形式是 antre；nyampe 是口语，标准形式是 sampai。",
+    "kehilangan = 失去、丢失；hilang 更强调东西本身不见了。"
+  ]
+}
