@@ -160,18 +160,36 @@
     const stats=allStats(), old=stats[item.word]||{};
     const attempts=(Number(old.attempts)||0)+1;
     const correct=(Number(old.correct)||0)+(ok?1:0);
+    const fastFirst=!!(ok&&elapsed<=FAST_MS&&replays===0);
+    const wrongStreak=ok?0:(Number(old.wrong_streak)||0)+1;
+    const slowNow=!!(ok&&!fastFirst);
+    const slowStreak=slowNow?(Number(old.slow_streak)||0)+1:0;
+    const fastFirstStreak=fastFirst?(Number(old.fast_first_hear_streak)||0)+1:0;
     stats[item.word]={
       attempts,correct,
       fast_correct:(Number(old.fast_correct)||0)+(ok&&elapsed<=FAST_MS?1:0),
       first_hear_correct:(Number(old.first_hear_correct)||0)+(ok&&replays===0?1:0),
       total_ms:(Number(old.total_ms)||0)+elapsed,
       replay_total:(Number(old.replay_total)||0)+replays,
+      wrong_streak:wrongStreak,
+      slow_streak:slowStreak,
+      fast_first_hear_streak:fastFirstStreak,
       last_ms:elapsed,
       last_replays:replays,
       last_result:ok?'correct':'wrong',
       last_at:new Date().toISOString()
     };
     writeJSON(STATS_KEY,stats);
+
+    try{
+      const wp=window.WeaknessPool;
+      if(wp&&typeof wp.recordListening==='function'){
+        const info={word:item.word,cn:item.cn,en:item.en||'',root:item.root||''};
+        if(fastFirstStreak>=3)wp.recordListening(item.word,info,'clear_listening');
+        else if(wrongStreak>=2)wp.recordListening(item.word,info,'listening_wrong');
+        else if(slowStreak>=2)wp.recordListening(item.word,info,'listening_slow');
+      }
+    }catch(e){}
 
     const daily=allDaily(), d=dateJakarta(), row=daily[d]||{attempts:0,correct:0,fast:0};
     row.attempts=(Number(row.attempts)||0)+1;
@@ -181,6 +199,9 @@
     Object.keys(daily).sort().slice(0,-45).forEach(k=>delete daily[k]);
     writeJSON(DAILY_KEY,daily);
     window.dispatchEvent(new CustomEvent('listening-profile-updated',{detail:getProfileSummary()}));
+    if((!ok&&wrongStreak>=2)||(slowNow&&slowStreak>=2)||fastFirstStreak>=3){
+      window.dispatchEvent(new CustomEvent('listening-weakness-updated',{detail:{word:item.word,ok:ok,wrong_streak:wrongStreak,slow_streak:slowStreak,fast_streak:fastFirstStreak}}));
+    }
   }
 
   function answer(btn){
