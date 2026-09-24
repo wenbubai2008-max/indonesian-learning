@@ -41,7 +41,7 @@ function validateLatestPm(){
   };
   ok(inRange(vocab.length,10,12), `latest PM ${date}: 10-12 core vocab`);
   ok(inRange(groups.new.length,3,4), `latest PM ${date}: 3-4 new words`);
-  ok(inRange(groups.review.length,4,5), `latest PM ${date}: 4-5 review words`);
+  ok(inRange(groups.review.length,4,6), `latest PM ${date}: 4-6 review words`);
   ok(inRange(groups.application.length,2,3), `latest PM ${date}: 2-3 application words`);
 
   const words = vocab.map(v => norm(v && v.word)).filter(Boolean);
@@ -149,7 +149,7 @@ try {
   ok(pm.scheduled_time === '18:00', 'PM scheduled_time = 18:00');
   ok(/10-12/.test(String(pm.core_total || '')), 'PM keeps 10-12 core words');
   ok(/3-4/.test(String(pm.new_words || '')), 'PM keeps 3-4 new words');
-  ok(/4-5/.test(String(pm.review_words || '')), 'PM keeps 4-5 review words');
+  ok(/4-6/.test(String(pm.review_words || '')), 'PM keeps 4-6 review words');
   ok(/focus_pool/.test(String(pm.focus_words || '')) && /2-3/.test(String(pm.focus_words || '')), 'PM focus pool contract exists');
   ok(/2-3/.test(String(pm.application_words || '')), 'PM keeps 2-3 application words');
   ok(Boolean(pm.cooling), 'PM cooling contract exists');
