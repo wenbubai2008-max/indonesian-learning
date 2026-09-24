@@ -10504,5 +10504,227 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-23"
     ]
+  },
+  {
+    "word": "melepaskan",
+    "cn": "释放",
+    "en": "release; let go",
+    "root": "lepas",
+    "root_cn": "脱离；松开",
+    "example": "Dia melepaskan pegangan setelah merasa aman.",
+    "example_cn": "觉得安全以后，他松开了手。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "memisahkan",
+    "cn": "分离",
+    "en": "separate",
+    "root": "pisah",
+    "root_cn": "分开",
+    "example": "Kami memisahkan dokumen lama dan dokumen baru agar lebih mudah diperiksa.",
+    "example_cn": "我们把旧文件和新文件分开，以便更容易检查。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "tajam",
+    "cn": "锋利、尖",
+    "en": "sharp",
+    "root": "tajam",
+    "root_cn": "锋利；尖锐",
+    "example": "Pisau ini sangat tajam, jadi pakailah dengan hati-hati.",
+    "example_cn": "这把刀很锋利，所以使用时要小心。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "mengangkat",
+    "cn": "担任，提拔，举起",
+    "en": "lift; raise; appoint",
+    "root": "angkat",
+    "root_cn": "举起；抬起",
+    "example": "Tolong bantu mengangkat kotak ini ke atas meja.",
+    "example_cn": "请帮忙把这个箱子抬到桌子上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "berteriak",
+    "cn": "喊叫",
+    "en": "shout; scream",
+    "root": "teriak",
+    "root_cn": "喊叫",
+    "example": "Dia berteriak karena temannya berada terlalu jauh.",
+    "example_cn": "因为朋友离得太远，他大声喊了起来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "merayakan",
+    "cn": "庆祝",
+    "en": "celebrate",
+    "root": "raya",
+    "root_cn": "盛大；节庆",
+    "example": "Kami akan merayakan keberhasilan tim setelah pekerjaan selesai.",
+    "example_cn": "工作完成后，我们会庆祝团队取得的成果。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "batuk",
+    "cn": "咳嗽",
+    "en": "cough",
+    "root": "batuk",
+    "root_cn": "咳嗽",
+    "example": "Dia masih batuk, jadi hari ini dia memilih banyak minum air.",
+    "example_cn": "他还在咳嗽，所以今天选择多喝水。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "berkunjung",
+    "cn": "拜访",
+    "en": "visit",
+    "root": "kunjung",
+    "root_cn": "访问；拜访",
+    "example": "Akhir pekan ini saya ingin berkunjung ke rumah teman.",
+    "example_cn": "这个周末我想去朋友家拜访。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "balik",
+    "cn": "返回，回去",
+    "en": "go back; return",
+    "root": "balik",
+    "root_cn": "返回；翻转",
+    "example": "Aku balik ke kantor setelah makan siang.",
+    "example_cn": "午饭后我回办公室。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "isi bensin",
+    "cn": "加油",
+    "en": "refuel; get gas",
+    "root": "isi bensin",
+    "root_cn": "加汽油",
+    "example": "Sebelum berangkat, aku mau isi bensin dulu.",
+    "example_cn": "出发前我想先去加油。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
   }
 ];
