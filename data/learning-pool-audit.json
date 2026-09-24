@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T02:31:57.436Z",
+  "generated_at": "2026-09-24T02:41:06.874Z",
   "master_unique": 977,
   "primary_new_pool_total": 416,
   "secondary_master_unique": 342,
@@ -19,12 +19,15 @@
   "primary_taught_unique": 247,
   "primary_unlearned_total": 730,
   "new_pool_total": 416,
+  "new_pool_dont_total": 203,
+  "new_pool_fuzzy_total": 213,
+  "new_pool_unclassified_total": 0,
   "review_pool_total": 212,
   "focus_pool_total": 212,
   "listening_focus_pool_total": 0,
   "oral_new_pool_total": 30,
   "rules": {
-    "new_pool": "primary first; when primary has 1-9 legal words, expose them first and top up from secondary to keep the 10-word AM contract; after primary reaches 0, secondary handoff is committed and never falls back automatically",
+    "new_pool": "combined legal pool; primary first; when primary has 1-9 legal words, expose them first and top up from secondary; split views new_pool_dont/new_pool_fuzzy preserve the same handoff eligibility",
     "review_pool": "weak_active ∩ daily_vocab",
     "focus_pool": "high-priority subset of weak_active ∩ daily_vocab; automation_fail > quick_wrong > listening_wrong > unknown > dont > fuzzy > listening_slow",
     "listening_focus_pool": "auditory weakness overlay for taught words; may include mastered without changing mastered status",
