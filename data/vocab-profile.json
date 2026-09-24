@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-09-24T06:26:01.212Z",
-  "source_updated_at": "2026-09-24T06:22:44.897Z",
+  "generated_at": "2026-09-24T06:30:57.559Z",
+  "source_updated_at": "2026-09-24T06:30:06.307Z",
   "taught_total": 499,
   "confirmed_mastered": 153,
   "needs_reinforcement": 212,
@@ -15,6 +15,17 @@
   "focus_total": 212,
   "focus_words": [
     {
+      "word": "mendukung",
+      "score": 136,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont",
+        "fuzzy"
+      ],
+      "cn": "支持"
+    },
+    {
       "word": "menunjukkan",
       "score": 120,
       "signals": [
@@ -23,6 +34,26 @@
         "dont"
       ],
       "cn": "指出"
+    },
+    {
+      "word": "niat",
+      "score": 118,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "cn": "打算；意图；认真想做的心意"
+    },
+    {
+      "word": "mengatasi",
+      "score": 116,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "cn": "解决、克服"
     },
     {
       "word": "berkat",
@@ -63,35 +94,6 @@
         "fuzzy"
       ],
       "cn": "处理；办理；照管（口语）"
-    },
-    {
-      "word": "layak",
-      "score": 108,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "fuzzy"
-      ],
-      "cn": "值得；合适；够资格"
-    },
-    {
-      "word": "mendukung",
-      "score": 86,
-      "signals": [
-        "quick_wrong",
-        "dont",
-        "fuzzy"
-      ],
-      "cn": "支持"
-    },
-    {
-      "word": "pembangunan",
-      "score": 78,
-      "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "cn": "建设；发展；建造过程"
     }
   ],
   "definitions": {
