@@ -2274,9 +2274,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-09-23 18:00",
+    "last_seen": "2026-09-24 18:00",
     "sessions": [
       "19:00",
       "18:00"
@@ -2284,11 +2284,12 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-24",
       "2026-08-29",
-      "2026-09-23"
+      "2026-09-23",
+      "2026-09-24"
     ],
     "root_cn": "上；上方",
-    "example": "Kita perlu mengatasi masalah ini tanpa membuat suasana semakin tegang.",
-    "example_cn": "我们需要解决这个问题，同时不要让气氛更加紧张。"
+    "example": "Tarik napas sebentar untuk mengatasi rasa gugup sebelum masuk.",
+    "example_cn": "进去前先呼吸一下，缓解紧张。"
   },
   {
     "word": "berusaha",
@@ -4559,9 +4560,9 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-02 08:00",
-    "last_seen": "2026-09-23 18:00",
+    "last_seen": "2026-09-24 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -4569,11 +4570,12 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-02",
       "2026-09-17",
-      "2026-09-23"
+      "2026-09-23",
+      "2026-09-24"
     ],
     "root_cn": "处理；照管",
-    "example": "Aku siapin datanya, lalu kamu bantu ngurus bagian yang belum selesai.",
-    "example_cn": "我准备数据，然后你帮忙处理还没完成的部分。"
+    "example": "Aku lagi ngurus dokumen yang perlu dibawa untuk wawancara.",
+    "example_cn": "我正在处理面试需要带的文件。"
   },
   {
     "word": "ngejar",
@@ -6436,17 +6438,17 @@ window.DAILY_VOCAB_DB = [
     "en": "be caught off guard; let something slip through",
     "root": "colong",
     "root_cn": "偷拿；趁人不注意拿走",
-    "example": "Kalau ceknya terlalu cepat, kita bisa kecolongan detail penting.",
-    "example_cn": "如果检查太快，我们可能会漏掉重要细节。",
+    "example": "Periksa dokumennya sekali lagi supaya kita tidak kecolongan detail penting.",
+    "example_cn": "再检查一次文件，免得我们漏掉重要细节。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-24 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -6456,7 +6458,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-08",
       "2026-09-11",
       "2026-09-15",
-      "2026-09-16"
+      "2026-09-16",
+      "2026-09-24"
     ]
   },
   {
@@ -7606,22 +7609,25 @@ window.DAILY_VOCAB_DB = [
     "en": "become awkward or flustered",
     "root": "tingkah",
     "root_cn": "举止；行为",
-    "example": "Pas ditanya kenapa belum selesai, dia langsung salah tingkah.",
-    "example_cn": "被问为什么还没完成时，他一下就不知所措了。",
+    "example": "Dia sempat salah tingkah ketika pewawancara menanyakan pengalaman kerjanya.",
+    "example_cn": "面试官问到工作经历时，他一度紧张得不知所措。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 19:00",
+    "last_seen": "2026-09-24 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-11"
+      "2026-09-11",
+      "2026-09-24"
     ]
   },
   {
@@ -9189,20 +9195,23 @@ window.DAILY_VOCAB_DB = [
     "en": "feeling; emotion",
     "root": "rasa",
     "root_cn": "感觉；味道",
-    "example": "Aku mengerti perasaan kamu dalam situasi seperti ini.",
-    "example_cn": "我理解你在这种情况下的感受。",
+    "example": "Perasaan gugup sebelum wawancara itu wajar, tetapi tetaplah tenang.",
+    "example_cn": "面试前紧张很正常，但还是要保持冷静。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-17 08:00",
+    "last_seen": "2026-09-24 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-24"
     ]
   },
   {
@@ -10082,16 +10091,16 @@ window.DAILY_VOCAB_DB = [
     "en": "thanks to / blessing",
     "root": "berkat",
     "root_cn": "福气；恩惠",
-    "example": "Berkat dukungan teman, dia bisa kembali ceria setelah menghadapi masalah.",
-    "example_cn": "多亏朋友的支持，她在面对问题后又恢复了开朗。",
+    "example": "Berkat persiapan yang rapi, wawancaranya berjalan lebih lancar.",
+    "example_cn": "多亏准备得很有条理，面试进行得更顺利。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-23 18:00",
+    "last_seen": "2026-09-24 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -10099,7 +10108,8 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-20",
       "2026-09-22",
-      "2026-09-23"
+      "2026-09-23",
+      "2026-09-24"
     ]
   },
   {
@@ -10854,17 +10864,19 @@ window.DAILY_VOCAB_DB = [
     "en": "release; let go",
     "root": "lepas",
     "root_cn": "脱离；松开",
-    "example": "Dia melepaskan pegangan setelah merasa aman.",
-    "example_cn": "觉得安全以后，他松开了手。",
+    "example": "Sebelum wawancara, dia mencoba melepaskan ketegangan dengan menarik napas.",
+    "example_cn": "面试前，他试着通过呼吸来释放紧张。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-24"
@@ -10876,17 +10888,19 @@ window.DAILY_VOCAB_DB = [
     "en": "separate",
     "root": "pisah",
     "root_cn": "分开",
-    "example": "Kami memisahkan dokumen lama dan dokumen baru agar lebih mudah diperiksa.",
-    "example_cn": "我们把旧文件和新文件分开，以便更容易检查。",
+    "example": "Aku memisahkan dokumen asli dan salinan sebelum wawancara.",
+    "example_cn": "面试前，我把原件和复印件分开。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-24 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-24"
@@ -11365,6 +11379,95 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-22"
+    ]
+  },
+  {
+    "word": "ban bocor",
+    "cn": "爆胎；轮胎漏气",
+    "en": "flat tire; punctured tire",
+    "root": "ban bocor",
+    "root_cn": "轮胎漏气",
+    "example": "Aku hampir terlambat karena ban motor bocor di jalan.",
+    "example_cn": "我差点迟到，因为摩托车轮胎在路上漏气了。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 18:00",
+    "last_seen": "2026-09-24 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "wawancara",
+    "cn": "面试；采访",
+    "en": "interview",
+    "root": "wawancara",
+    "root_cn": "面试；采访",
+    "example": "Besok pagi saya ada wawancara kerja dengan perusahaan baru.",
+    "example_cn": "明天早上我有一家新公司的工作面试。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 18:00",
+    "last_seen": "2026-09-24 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "peluang",
+    "cn": "机会；可能性",
+    "en": "opportunity; chance",
+    "root": "peluang",
+    "root_cn": "机会；可能性",
+    "example": "Posisi ini memberi saya peluang untuk belajar hal baru.",
+    "example_cn": "这个职位给了我学习新东西的机会。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 18:00",
+    "last_seen": "2026-09-24 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "word": "tepat waktu",
+    "cn": "准时",
+    "en": "on time; punctual",
+    "root": "tepat waktu",
+    "root_cn": "准时",
+    "example": "Untuk wawancara kerja, sebaiknya kita datang tepat waktu.",
+    "example_cn": "参加工作面试最好准时到达。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-24 18:00",
+    "last_seen": "2026-09-24 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-24"
     ]
   }
 ];
