@@ -56,7 +56,7 @@ try{
   ok(profileUi.includes("home.querySelector(':scope > .hero')"),'profile fallback must mount directly after daily hero');
   ok(!profileUi.includes('DAILY_VOCAB_DB')&&!profileUi.includes('WeaknessPool'),'profile homepage must not recompute full vocab databases');
   ok(profileUi.includes('openVocabProfileDetail'),'profile summary must expose a clickable detail entry');
-  ok(profileUi.includes('主词库学习覆盖')&&profileUi.includes('尚未正式学习')&&profileUi.includes('primary_eligible_new_total'),'profile shows primary 977 coverage and remaining-unlearned metrics');
+  ok(profileUi.includes('主词库当前待学习')&&profileUi.includes('primary_eligible_new_total')&&!profileUi.includes('尚未正式学习 '+"'+data.primary_unlearned_total+'"),'profile shows only the actionable primary new-word remainder');
   ok(profileUi.includes("page.id='vocabProfileDetail'")&&profileUi.includes("['overview','能力总览']")&&profileUi.includes("['trend','学习趋势']")&&profileUi.includes("['weak','弱词分析']")&&profileUi.includes("['advice','学习建议']"),'profile detail page keeps four planned analysis tabs');
   ok(profileUi.includes('data-vp-action="automation"')&&profileUi.includes('data-vp-action="quick"'),'weak-word detail keeps direct training actions');
   ok(!externalScripts.some(x=>x.includes('library-switcher.js')),'legacy library-switcher must not be loaded by index.html');
