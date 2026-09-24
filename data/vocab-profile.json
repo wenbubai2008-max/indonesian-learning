@@ -1,12 +1,17 @@
 {
   "version": 1,
-  "generated_at": "2026-09-24T02:20:12.757Z",
+  "generated_at": "2026-09-24T02:31:30.137Z",
   "source_updated_at": "2026-09-24T02:19:53.195Z",
   "taught_total": 499,
   "confirmed_mastered": 153,
   "needs_reinforcement": 212,
   "unverified": 134,
   "mastery_percent": 30.7,
+  "primary_master_total": 977,
+  "primary_taught_unique": 247,
+  "primary_unlearned_total": 730,
+  "primary_coverage_percent": 25.3,
+  "primary_eligible_new_total": 416,
   "focus_total": 212,
   "focus_words": [
     {
@@ -94,6 +99,10 @@
     "confirmed_mastered": "已正式学习且统一状态为mastered",
     "needs_reinforcement": "已正式学习且统一状态仍为active",
     "unverified": "已正式学习但尚无足够统一状态证据",
-    "mastery_percent": "confirmed_mastered / taught_total；仅表示已学词中的确认掌握比例"
+    "mastery_percent": "confirmed_mastered / taught_total；仅表示已学词中的确认掌握比例",
+    "primary_taught_unique": "977主词库中已经正式进入每日学习的去重词数",
+    "primary_unlearned_total": "977主词库中尚未正式进入每日学习的词数",
+    "primary_coverage_percent": "primary_taught_unique / primary_master_total",
+    "primary_eligible_new_total": "977主词库尚未学习词中，当前同时满足新词资格规则的数量"
   }
 }
