@@ -1,0 +1,72 @@
+{
+  "date":"2026-09-24",
+  "session":"pm",
+  "time":"18:00",
+  "level":"A2+ → B1",
+  "day":34,
+  "duration_minutes":55,
+  "title":"18:00｜复习 + 应用：面试前把机会和细节准备好",
+  "write_status":"lesson_complete",
+  "new_words":["ban bocor","wawancara","peluang","tepat waktu"],
+  "vocab":[
+    {"word":"ban bocor","display":"ban bocor","audio_text":"ban bocor","cn":"爆胎；轮胎漏气","en":"flat tire; punctured tire","root":"ban bocor","root_cn":"轮胎漏气","formation":"固定日常短语：ban（轮胎）+ bocor（漏、破）。常见：ban motor bocor（摩托车轮胎漏气）、ban mobil bocor（汽车轮胎漏气）、kena ban bocor（遇到爆胎）、tambal ban（补胎）。","example":"Aku hampir terlambat karena ban motor bocor di jalan.","example_cn":"我差点迟到，因为摩托车轮胎在路上漏气了。","synonym_note":"ban bocor 是最自然的日常说法；ban kempes 更强调轮胎瘪了，原因不一定是破洞。","usage_note":"真正新词；来自 runtime.new_pool_fuzzy 与 runtime.oral_new_pool_fuzzy，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":true},
+    {"word":"wawancara","display":"wawancara","audio_text":"wawancara","cn":"面试；采访","en":"interview","root":"wawancara","root_cn":"面试；采访","formation":"基本词，可作名词使用。高频搭配：wawancara kerja（工作面试）、jadwal wawancara（面试时间）、ikut wawancara（参加面试）、hasil wawancara（面试结果）。","example":"Besok pagi saya ada wawancara kerja dengan perusahaan baru.","example_cn":"明天早上我有一家新公司的工作面试。","synonym_note":"wawancara 是标准通用词；interview 在职场口语中也很常见，但正式书写通常优先 wawancara。","usage_note":"真正新词；来自 runtime.new_pool_fuzzy，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"peluang","display":"peluang","audio_text":"peluang","cn":"机会；可能性","en":"opportunity; chance","root":"peluang","root_cn":"机会；可能性","formation":"基本名词。高频搭配：peluang kerja（工作机会）、punya peluang（有机会）、mencari peluang（寻找机会）、peluang besar（很大的可能性/机会）。","example":"Posisi ini memberi saya peluang untuk belajar hal baru.","example_cn":"这个职位给了我学习新东西的机会。","synonym_note":"peluang 可指机会或可能性；kesempatan 更偏某次具体可利用的机会或时机，两者很多语境可互换。","usage_note":"真正新词；来自 runtime.new_pool_dont，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"tepat waktu","display":"tepat waktu","audio_text":"tepat waktu","cn":"准时","en":"on time; punctual","root":"tepat waktu","root_cn":"准时","formation":"固定短语：tepat（准确、正好）+ waktu（时间）。常见：datang tepat waktu（准时到）、mulai tepat waktu（准时开始）、selesai tepat waktu（按时完成）、harus tepat waktu（必须准时）。","example":"Untuk wawancara kerja, sebaiknya kita datang tepat waktu.","example_cn":"参加工作面试最好准时到达。","synonym_note":"tepat waktu 强调在约定时间点准时；sesuai jadwal 强调按照日程安排，不一定突出是否迟到。","usage_note":"真正新词；来自 runtime.new_pool_dont，本晚首次正式学习。","source_group":"new","is_new":true,"is_oral_new":false},
+    {"word":"ngurus","display":"ngurus","audio_text":"ngurus","cn":"处理；办理；照管（口语）","en":"handle; take care of","root":"urus","root_cn":"处理；照管","formation":"ngurus 是 mengurus 的高频口语形式。常见：ngurus dokumen（办文件）、ngurus kerjaan（处理工作）、ngurus anak（照顾孩子）、aku yang ngurus（我来处理）。","example":"Aku lagi ngurus dokumen yang perlu dibawa untuk wawancara.","example_cn":"我正在处理面试需要带的文件。","synonym_note":"ngurus 很口语；mengurus 是标准形式；menangani 更偏负责处理某个问题或事务。","usage_note":"重点复习；来自 runtime.focus_pool 且同时属于 runtime.review_pool；今天出现新的 automation_fail、quick_wrong 与 fuzzy 信号，可打破冷却。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"perasaan","display":"perasaan","audio_text":"perasaan","cn":"感情；感觉","en":"feeling; emotion","root":"rasa","root_cn":"感觉；味道","formation":"pe- + rasa + -an → perasaan，表示内心感觉或情绪。常见：perasaan saya（我的感觉）、menjaga perasaan（照顾感受）、perasaan gugup（紧张感）、punya perasaan（有感情）。","example":"Perasaan gugup sebelum wawancara itu wajar, tetapi tetaplah tenang.","example_cn":"面试前紧张很正常，但还是要保持冷静。","synonym_note":"perasaan 偏内心感受、情绪；rasa 既可指感觉也可指味道；emosi 更强调情绪状态。","usage_note":"重点复习；来自 runtime.focus_pool 且同时属于 runtime.review_pool；今天有新的 quick_wrong 与 fuzzy 信号。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"kecolongan","display":"kecolongan","audio_text":"kecolongan","cn":"一时疏忽没防住；漏掉问题","en":"get caught off guard; let something slip through","root":"colong","root_cn":"偷拿；趁人不注意拿走","formation":"ke- + colong + -an → kecolongan，口语中常表示因疏忽而漏掉、没防住。常见：jangan sampai kecolongan（别疏忽漏掉）、kecolongan informasi（漏掉信息）、kecolongan satu detail（漏掉一个细节）。","example":"Periksa dokumennya sekali lagi supaya kita tidak kecolongan detail penting.","example_cn":"再检查一次文件，免得我们漏掉重要细节。","synonym_note":"kecolongan 强调因为疏忽而漏掉或没防住；kelewatan 更常表示错过、遗漏某件事。","usage_note":"重点复习；来自 runtime.focus_pool 且同时属于 runtime.review_pool；今天出现新的 quick_wrong 信号。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"salah tingkah","display":"salah tingkah","audio_text":"salah tingkah","cn":"紧张尴尬到不知所措","en":"feel awkward; not know how to act","root":"tingkah","root_cn":"举止；行为","formation":"固定口语表达。常见：jadi salah tingkah（变得不知所措）、bikin salah tingkah（让人尴尬紧张）、sampai salah tingkah（紧张到手足无措）。","example":"Dia sempat salah tingkah ketika pewawancara menanyakan pengalaman kerjanya.","example_cn":"面试官问到工作经历时，他一度紧张得不知所措。","synonym_note":"salah tingkah 强调尴尬紧张导致举止不自然；gugup 是一般的紧张，不一定表现得手足无措。","usage_note":"重点复习；来自 runtime.focus_pool 且同时属于 runtime.review_pool；今天出现新的 quick_wrong 信号。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"mengatasi","display":"mengatasi","audio_text":"mengatasi","cn":"解决；克服；应对","en":"overcome; handle; resolve","root":"atas","root_cn":"上；上方","formation":"meN- + atas + -i → mengatasi。常见：mengatasi masalah（解决问题）、mengatasi kesulitan（克服困难）、mengatasi rasa gugup（克服紧张）、cara mengatasi（应对办法）。","example":"Tarik napas sebentar untuk mengatasi rasa gugup sebelum masuk.","example_cn":"进去前先呼吸一下，缓解紧张。","synonym_note":"mengatasi 强调克服或处理问题；menyelesaikan 更强调把事情完成；menangani 偏着手处理、负责处理。","usage_note":"重点复习；来自 runtime.focus_pool 且同时属于 runtime.review_pool；今天有新的 automation_fail、quick_wrong 与 dont 信号，可打破近期冷却。","source_group":"review","is_new":false,"is_oral_new":false},
+    {"word":"melepaskan","display":"melepaskan","audio_text":"melepaskan","cn":"释放；放开","en":"release; let go","root":"lepas","root_cn":"脱离；松开","formation":"今天 08:00 已教；meN- + lepas + -kan → melepaskan，表示放开、释放或脱下。常见：melepaskan tangan（松手）、melepaskan tekanan（释放压力）、melepaskan jaket（脱下外套）。","example":"Sebelum wawancara, dia mencoba melepaskan ketegangan dengan menarik napas.","example_cn":"面试前，他试着通过呼吸来释放紧张。","synonym_note":"melepaskan 强调主动放开或释放；lepas 常描述已经松开、脱落或摆脱的状态。","usage_note":"今天08:00已教；应用复现。当天AM vocab中真实出现，当前仍在 runtime.review_pool。","source_group":"application","is_new":false,"is_oral_new":false},
+    {"word":"memisahkan","display":"memisahkan","audio_text":"memisahkan","cn":"分离；分开","en":"separate","root":"pisah","root_cn":"分开","formation":"今天 08:00 已教；meN- + pisah + -kan → memisahkan，表示把对象分开。常见：memisahkan dokumen（分开文件）、memisahkan dua hal（区分两件事）、memisahkan data（分开数据）。","example":"Aku memisahkan dokumen asli dan salinan sebelum wawancara.","example_cn":"面试前，我把原件和复印件分开。","synonym_note":"memisahkan 是把对象分开；berpisah 更常表示人彼此分开、分别。","usage_note":"今天08:00已教；应用复现。当天AM vocab中真实出现，当前仍在 runtime.review_pool。","source_group":"application","is_new":false,"is_oral_new":false},
+    {"word":"berkat","display":"berkat","audio_text":"berkat","cn":"多亏；由于……的帮助","en":"thanks to","root":"berkat","root_cn":"福气；恩惠","formation":"今天 08:00 已教；基本词。常见：berkat bantuan（多亏帮助）、berkat dukungan（多亏支持）、berkat persiapan（多亏准备）、berkat dia（多亏他/她）。","example":"Berkat persiapan yang rapi, wawancaranya berjalan lebih lancar.","example_cn":"多亏准备得很有条理，面试进行得更顺利。","synonym_note":"berkat 通常引出积极原因；karena 是中性的“因为”，好坏原因都能使用。","usage_note":"今天08:00已教；应用复现。当天AM review_vocab中真实出现，当前仍在 runtime.review_pool。","source_group":"application","is_new":false,"is_oral_new":false}
+  ],
+  "reading":{
+    "title":"Persiapan Sebelum Wawancara",
+    "text":"Besok pagi aku punya wawancara kerja yang cukup penting. Malam ini aku ngurus semua dokumen dan memisahkan berkas asli dari salinannya supaya tidak kecolongan detail kecil. Aku juga mengecek rute agar bisa datang tepat waktu. Ada peluang bagus di posisi ini, jadi wajar kalau perasaanku sedikit gugup. Temanku menyarankan agar aku tidak salah tingkah saat menjawab pertanyaan. Aku mencoba mengatasi rasa tegang dengan berlatih bicara dan melepaskan pikiran yang terlalu berat. Berkat persiapan yang rapi, aku merasa lebih siap. Kalau besok ban motor bocor, aku juga sudah menyiapkan waktu tambahan dan pilihan kendaraan lain.",
+    "cn":"明天早上我有一场相当重要的工作面试。今晚我把所有文件处理好，并把原件和复印件分开，免得疏忽漏掉小细节。我也检查了路线，确保能准时到。这份职位有不错的机会，所以我有点紧张也很正常。朋友提醒我回答问题时不要紧张得手足无措。我通过练习说话、放下过重的心理负担来缓解紧张。多亏准备得有条理，我感觉更有把握了。如果明天摩托车轮胎漏气，我也已经预留了额外时间，并准备了其他交通方式。"
+  },
+  "dialogue":{
+    "title":"工作口语｜面试前最后确认",
+    "lines":[
+      {"speaker":"A","id":"Besok wawancaranya jam berapa?","cn":"明天面试几点？"},
+      {"speaker":"B","id":"Jam sembilan. Aku mau datang tepat waktu, jadi berangkat lebih awal.","cn":"九点。我想准时到，所以会早点出发。"},
+      {"speaker":"A","id":"Dokumennya sudah kamu urus semua?","cn":"文件你都处理好了吗？"},
+      {"speaker":"B","id":"Sudah. Aku juga memisahkan yang asli dan salinannya supaya nggak kecolongan.","cn":"好了。我还把原件和复印件分开，免得漏掉东西。"},
+      {"speaker":"A","id":"Bagus. Jangan salah tingkah kalau gugup. Ini peluang yang bagus.","cn":"很好。紧张时别手足无措。这是个不错的机会。"},
+      {"speaker":"B","id":"Iya. Aku akan coba mengatasi rasa gugup dan jawab dengan tenang.","cn":"嗯。我会尽量克服紧张，平静回答。"}
+    ]
+  },
+  "rewrite":[
+    {"task":"中文→印尼语：明天我有工作面试，所以我想准时到。","reference_answer":"Besok saya ada wawancara kerja, jadi saya ingin datang tepat waktu.","reference_cn":"明天我有工作面试，所以我想准时到。"},
+    {"task":"中文→印尼语：这是一个很好的机会，但我有点紧张。","reference_answer":"Ini peluang yang bagus, tetapi perasaan saya sedikit gugup.","reference_cn":"这是一个很好的机会，但我有点紧张。"},
+    {"task":"改写：把 Aku cek dokumen lagi. 改成使用 kecolongan，表达“我再检查文件，免得漏掉重要细节”。","reference_answer":"Aku periksa dokumennya lagi supaya tidak kecolongan detail penting.","reference_cn":"我再检查文件，免得漏掉重要细节。"},
+    {"task":"主动造句：用 ban bocor 和 tepat waktu 说一句自然的话。","reference_answer":"Aku berangkat lebih awal supaya tetap bisa tepat waktu kalau ban motor bocor.","reference_cn":"我早点出发，这样即使摩托车轮胎漏气也还能准时到。"}
+  ],
+  "daily_test":{
+    "questions":[
+      {"type":"choice","prompt":"哪一个词最适合表达“工作面试”？","options":["wawancara kerja","peluang kerja","perasaan kerja","ban bocor"],"answer_index":0,"explain":"wawancara kerja 就是工作面试。"},
+      {"type":"choice","prompt":"想表达“这是一个不错的机会”，哪一个词最合适？","options":["peluang","kecolongan","tingkah","bocor"],"answer_index":0,"explain":"peluang 表示机会、可能性。"},
+      {"type":"choice","prompt":"哪一个表达强调“因为疏忽而漏掉重要细节”？","options":["melepaskan","kecolongan","memisahkan","tepat waktu"],"answer_index":1,"explain":"kecolongan 常表示一时疏忽没防住或漏掉了某件事。"},
+      {"type":"fill","prompt":"填空：Besok saya ada ___ kerja dengan perusahaan baru.（面试）","answer":"wawancara","explain":"wawancara kerja 是“工作面试”的固定高频搭配。","hint_cn":"面试"},
+      {"type":"fill","prompt":"填空：Saya berangkat lebih awal supaya bisa datang ___.（准时）","answer":"tepat waktu","explain":"tepat waktu 表示在约定时间准时到达或完成。","hint_cn":"准时"},
+      {"type":"order","prompt":"按照中文排成自然的印尼语句子：多亏准备充分，我可以准时参加面试。","tokens":["Berkat persiapan yang baik","aku bisa","datang tepat waktu","untuk","wawancara"],"answer":"Berkat persiapan yang baik, aku bisa datang tepat waktu untuk wawancara.","answer_cn":"多亏准备充分，我可以准时参加面试。","explain":"Berkat 引出积极原因；datang tepat waktu 表示准时到达；untuk wawancara 表示为了参加面试。"}
+    ],
+    "self_check":[
+      "我是否能在3秒内主动说出 wawancara、peluang 和 tepat waktu？",
+      "我是否能区分 ban bocor 与 ban kempes？",
+      "我是否能用 kecolongan 自然表达‘疏忽漏掉一个细节’？",
+      "我是否能用今天08:00复现的 melepaskan、memisahkan 或 berkat 主动造句？"
+    ]
+  },
+  "review":{
+    "title":"最后5分钟复盘",
+    "steps":[
+      "快速提取：不看答案，依次说出“面试、机会、准时、爆胎”的印尼语。",
+      "弱项复习：分别用 ngurus、perasaan、kecolongan、salah tingkah、mengatasi 各说一个短句。",
+      "当天复现：用 melepaskan、memisahkan、berkat 中至少两个词说一段2句的小情境。",
+      "最后再说一遍：Besok saya ada wawancara kerja. Saya akan datang tepat waktu karena ini peluang yang bagus."
+    ]
+  }
+}
