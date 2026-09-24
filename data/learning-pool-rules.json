@@ -16,7 +16,8 @@
     "runtime": "派生索引，不是源数据",
     "secondary_master": "第二主词库只收人工筛选为不会/模糊的BIPA词；A1/A2/B1按已筛结果，B2暂只收已筛S级；与977完全重复的词永久剔除；跨级重复词先汇总判断，状态按dont > fuzzy > know保守合并",
     "focus_pool": "当前最需要跨模块反复复现的已学未掌握词；只从已正式教过且仍active的词中产生，mastered永不进入",
-    "listening_weakness": "听词训练是独立能力维度：连续听错或连续反应慢可形成 listening_wrong / listening_slow 信号；显式 mastered 不因此自动降级。"
+    "listening_weakness": "听词训练是独立能力维度：连续听错或连续反应慢可形成 listening_wrong / listening_slow 信号；显式 mastered 不因此自动降级。",
+    "new_word_memory_split": "未正式教过且active的新词按weakness原因拆为dont/fuzzy：dont优先级高于fuzzy；manual_unknown、seed_unfamiliar、memory_dont、bipa_secondary_dont归dont，memory_fuzzy、bipa_secondary_fuzzy归fuzzy。课程只读取runtime派生出的分池，不直接读取weakness源文件。"
   },
   "master_handoff": {
     "primary": "977主学习词库",
@@ -39,24 +40,26 @@
     "large_source_files_read_in_github_runner_only": true,
     "runtime_is_derived_not_source_of_truth": true,
     "focus_pool": "focus_pool是小型跨模块重点弱词窗口，供自动训练、快速练习、18:00复习和泛读自然复现使用；模块不得自行重算完整词库",
-    "listening_focus_pool": "听觉弱项覆盖层：只包含已正式教过的词；可包含 status=mastered 的词，但只表示听觉维度需要加强，不改变 mastered。客户端快速练习、弱项强化、自动训练可读取；课程核心复习资格仍以 review_pool/focus_pool 为准。"
+    "listening_focus_pool": "听觉弱项覆盖层：只包含已正式教过的词；可包含 status=mastered 的词，但只表示听觉维度需要加强，不改变 mastered。客户端快速练习、弱项强化、自动训练可读取；课程核心复习资格仍以 review_pool/focus_pool 为准。",
+    "new_word_split": "learning-runtime额外暴露 new_pool_dont、new_pool_fuzzy、new_pool_unclassified，以及 oral_new_pool_dont、oral_new_pool_fuzzy；new_pool仍保留为兼容用合法总池。课程按时段使用分池，资格仍受M∩A−D与handoff约束。"
   },
   "am_contract": {
-    "new_words": "恰好10个真正新词，只能来自runtime.new_pool；transition阶段若977剩余不足10个，必须先用完剩余977，再从第二库补足到10个",
-    "oral_new_words": "合法候选充足时优先2个；不得越过新词资格；同一标准语↔口语组不重复占两个新词名额",
+    "new_words": "恰好10个真正新词。优先且在数量充足时全部从runtime.new_pool_dont选择；只有在排除跨日重复后合法dont不足10个时，才允许从runtime.new_pool_fuzzy补足。不得主动用fuzzy替代仍可用的dont；不得使用new_pool_unclassified。transition阶段仍遵守977余量优先与第二库补足规则。",
+    "oral_new_words": "合法候选充足时优先2个口语新词；先从oral_new_pool_dont中选。仅当dont总量或dont口语候选不足以满足课程合同时，才允许从oral_new_pool_fuzzy补位。不得越过新词资格；同一标准语↔口语组不重复占两个新词名额。",
     "review_recurrence": "约5个，只能来自runtime.review_pool，不占10个新词名额",
     "sentences": 5,
     "reading_words": "80-120",
     "quiz": "3题，至少1题复习",
     "active_output": "1个主动输出任务，含自然印尼语参考答案和中文",
     "final_review": "3个重点",
-    "content_guard": "优先使用当天新词和已教复习词，不额外引入尚未正式教过的新master词"
+    "content_guard": "优先使用当天新词和已教复习词，不额外引入尚未正式教过的新master词",
+    "new_word_memory_policy": "08:00承担真正陌生词的首次深度学习：dont优先独占；dont不足10才用fuzzy补位。写入前校验每个新词属于runtime.new_pool，且除明确补位部分外均属于runtime.new_pool_dont。"
   },
   "pm_contract": {
     "scheduled_time": "18:00",
     "core_total": "10-12",
-    "new_words": "3-4个，只能来自runtime.new_pool；若处于transition阶段，同等条件下优先消耗仍剩余的977词",
-    "review_words": "4-5个，只能来自runtime.review_pool",
+    "new_words": "3-4个真正新词，只能来自runtime.new_pool_dont或runtime.new_pool_fuzzy，并同时属于runtime.new_pool；不得使用new_pool_unclassified。默认目标为2个fuzzy + 1-2个dont，让晚课承担半熟词稳定化；若fuzzy不足则用dont补，若dont不足则可增加fuzzy，但总新词仍为3-4个。若处于transition阶段，同等条件下仍优先消耗977合法余量。",
+    "review_words": "4-6个，只能来自runtime.review_pool；动态10-12核心词扩容时优先增加复习或应用，不增加新词上限。",
     "application_words": "2-3个当天08:00课程中出现或近期已教且仍active的词；当天AM vocab或review_vocab均可作为当天复现来源；mastered不得进入应用核心词",
     "review_priority": [
       "最近答错或已教后重新标为不会/陌生",
@@ -70,7 +73,7 @@
       "override": "出现新的答错/重新激活可打破冷却"
     },
     "automation_value": "只在资格、记忆优先级、复习到期/冷却状态都相同时作为最后平局排序；优先更高频、更值得主动调用的词",
-    "oral_new_words": "结合当天08:00口语新词数，晚课3-4个新词中优先约1个合法口语新词，使全天新词口语比例约20%；不得为凑比例越界",
+    "oral_new_words": "结合当天08:00口语新词数，晚课3-4个新词中优先约1个合法口语新词；优先在当晚目标分池配额内选，默认先满足fuzzy/dont组合，不得为凑口语比例越界。",
     "vocab_fields": [
       "word",
       "display",
@@ -103,7 +106,7 @@
     "content_guard": "阅读、对话、练习优先使用本晚核心词、当天AM已教词和已教复习词，不为写内容额外塞入尚未正式教过的新master词",
     "daily_test_container": "唯一标准结构为 daily_test.questions；questions 必须是恰好6题的数组，禁止使用 daily_test.items 或其他字段名替代；daily_test.self_check 必须单独存在。",
     "daily_test_schema": "daily_test={questions:[3 choice,2 fill,1 order],self_check:[非空字符串...]}; questions.length必须=6。",
-    "focus_words": "4-5个重点复习中优先从runtime.focus_pool选2-3个；不足再从review_pool补。focus_pool只是review_pool的高优先级子集，不新增复习资格",
+    "focus_words": "4-6个重点复习中优先从runtime.focus_pool选2-3个；不足再从review_pool补。focus_pool只是review_pool的高优先级子集，不新增复习资格。",
     "listening_overlay": "listening_focus_pool 可用于阅读/对话等非核心自然复现；若词仍为 mastered，不得占用 4–5 个 review 核心词或 2–3 个 application 核心词名额。",
     "dynamic_core_total": {
       "default": 10,
@@ -116,6 +119,13 @@
         "12": "优先使用4新词 + 5复习 + 3应用；若资格/冷却不合适可用3新词 + 6复习 + 3应用，但新词仍不得超过4"
       },
       "guard": "总核心词10-12动态决定；新词始终3-4，扩容只服务于复习/应用，不得以总量增加为理由提高到5个新词"
+    },
+    "new_word_memory_policy": {
+      "default_mix": "默认2个fuzzy + 1-2个dont",
+      "fuzzy_role": "fuzzy重点做主动回忆、造句、近义辨析和3秒提取，不把‘看着眼熟’当掌握",
+      "dont_role": "dont仍按真正陌生词首次学习，但晚课不承担大量dont输入，主要由08:00处理",
+      "fallback": "任一分池合法候选不足时可由另一分池补足到3-4个；不得使用unclassified、mastered或已教词",
+      "after_taught": "一旦正式教过即退出新词逻辑，后续统一由review_pool/focus_pool按真实答错、不会、模糊等信号排序"
     }
   },
   "rules": [
@@ -152,7 +162,11 @@
     "听词训练第一次答错只保留为本地听觉记录；同一词连续2次听错才写入 listening_wrong，连续2次答对但非首次播放3秒内完成可写入 listening_slow。",
     "同一词连续3次首次播放且3秒内答对时，清除 listening_wrong / listening_slow；该清除只处理听觉原因，不自动修改其他弱项原因或整体 mastered/active 状态。",
     "listening_wrong / listening_slow 属于统一弱项信号：active词可进入runtime.focus_pool加权；无论active或mastered，已教词都可进入runtime.listening_focus_pool。",
-    "客户端快速练习、弱项强化、自动训练读取 listening 弱项并提高复现优先级；mastered听觉弱项仅表示耳朵不稳，不等于重新判定整个词未掌握。"
+    "客户端快速练习、弱项强化、自动训练读取 listening 弱项并提高复现优先级；mastered听觉弱项仅表示耳朵不稳，不等于重新判定整个词未掌握。",
+    "新词记忆分池：runtime.new_pool_dont 与 runtime.new_pool_fuzzy 都必须是runtime.new_pool的子集；dont按manual_unknown/seed_unfamiliar/memory_dont/bipa_secondary_dont识别，fuzzy按memory_fuzzy/bipa_secondary_fuzzy识别，若同时命中则按dont处理。",
+    "08:00新词：合法dont候选达到10个时10个全部来自new_pool_dont；不足10时先用完dont，再从new_pool_fuzzy补足；不得使用new_pool_unclassified。",
+    "18:00新词：3-4个默认2个fuzzy+1-2个dont；任一分池不足可由另一分池合法补位，总数仍为3-4；不得使用new_pool_unclassified。",
+    "dont/fuzzy只决定未正式教过词的首次教学时段与方式；正式教过后统一进入review_pool/focus_pool，后续优先级以最近答错/重新不会 > memory_dont > memory_fuzzy > 其他active为准。"
   ],
   "validation_gate": {
     "required_before_write": true,
@@ -167,7 +181,9 @@
     "lesson_sync_refreshes_runtime_atomically": true,
     "daily_test_schema_check": "写入前必须校验 daily_test 为对象、daily_test.questions 为唯一题目数组且 length=6、类型计数=3 choice+2 fill+1 order、self_check 为非空字符串数组；若仅有 items 或其他容器字段则校验失败并禁止写入。",
     "focus_word_check": "in_runtime_focus_pool_or_review_pool",
-    "listening_signal_guard": "listening signals must not downgrade status=mastered by themselves; mastered listening weakness may only enter listening_focus_pool, not review/application core eligibility."
+    "listening_signal_guard": "listening signals must not downgrade status=mastered by themselves; mastered listening weakness may only enter listening_focus_pool, not review/application core eligibility.",
+    "am_new_word_memory_check": "10个AM新词必须属于runtime.new_pool；若runtime.new_pool_dont在排除跨日重复后>=10，则10个必须全部属于new_pool_dont；只有不足10时允许fuzzy补差额；unclassified命中数必须为0。",
+    "pm_new_word_memory_check": "PM 3-4个新词必须来自new_pool_dont∪new_pool_fuzzy并属于new_pool；默认2 fuzzy + 1-2 dont，候选不足时可互补；unclassified命中数必须为0。"
   },
   "updated_at": "2026-09-24",
   "focus_pool_formula": "重点弱词 = A ∩ D，按自动训练失败、快速练习答错、不会/模糊等信号综合排序；只做派生索引，不改变词库归属"
