@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-24T02:19:53.195Z",
+  "updated_at": "2026-09-24T06:22:44.897Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1668,8 +1668,9 @@
     "mengenai": {
       "word": "mengenai",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-24T06:22:34.389Z",
       "display": "mengenai",
+      "cn": "关于、涉及",
       "reasons": [
         "memory_dont"
       ],
@@ -21761,6 +21762,7 @@
       "display": "ngerepotin",
       "cn": "给人添麻烦",
       "root": "repot",
+      "root_cn": "麻烦；忙乱",
       "last_wrong": "2026-09-22T09:19:22.248Z",
       "last_review": "2026-09-22T13:09:26.853Z",
       "reasons": [
