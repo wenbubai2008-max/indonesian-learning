@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-23T03:52:52.818Z",
+  "updated_at": "2026-09-24T02:19:53.195Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -220,6 +220,8 @@
       "updated_at": "2026-09-23T03:24:19.416Z",
       "display": "mendukung",
       "cn": "支持",
+      "root": "dukung",
+      "root_cn": "支持；支撑",
       "last_wrong": "2026-09-22T13:14:41.472Z",
       "last_review": "2026-09-23T03:24:19.393Z",
       "reasons": [
@@ -254,6 +256,7 @@
       "display": "mengatasi",
       "cn": "解决、克服",
       "root": "atas",
+      "root_cn": "上；上方",
       "last_wrong": "2026-09-22T13:13:13.376Z",
       "last_review": "2026-09-23T03:24:11.836Z",
       "reasons": [
