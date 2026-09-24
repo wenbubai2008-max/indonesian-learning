@@ -104,7 +104,19 @@
     "daily_test_container": "唯一标准结构为 daily_test.questions；questions 必须是恰好6题的数组，禁止使用 daily_test.items 或其他字段名替代；daily_test.self_check 必须单独存在。",
     "daily_test_schema": "daily_test={questions:[3 choice,2 fill,1 order],self_check:[非空字符串...]}; questions.length必须=6。",
     "focus_words": "4-5个重点复习中优先从runtime.focus_pool选2-3个；不足再从review_pool补。focus_pool只是review_pool的高优先级子集，不新增复习资格",
-    "listening_overlay": "listening_focus_pool 可用于阅读/对话等非核心自然复现；若词仍为 mastered，不得占用 4–5 个 review 核心词或 2–3 个 application 核心词名额。"
+    "listening_overlay": "listening_focus_pool 可用于阅读/对话等非核心自然复现；若词仍为 mastered，不得占用 4–5 个 review 核心词或 2–3 个 application 核心词名额。",
+    "dynamic_core_total": {
+      "default": 10,
+      "medium": 11,
+      "high": 12,
+      "rule": "默认10个核心词；当runtime.focus_pool/review_pool中存在较多高优先级弱词、近期答错/重新激活明显增多或需要加强当天应用时提升到11；仅在高优先级复习压力明显较高时提升到12。不得为了凑12而增加新词数量。",
+      "composition": {
+        "10": "3-4新词 + 4-5复习 + 2-3应用，按总数自然组合",
+        "11": "优先增加1个复习或应用名额，不增加新词上限",
+        "12": "优先使用4新词 + 5复习 + 3应用；若资格/冷却不合适可用3新词 + 6复习 + 3应用，但新词仍不得超过4"
+      },
+      "guard": "总核心词10-12动态决定；新词始终3-4，扩容只服务于复习/应用，不得以总量增加为理由提高到5个新词"
+    }
   },
   "rules": [
     "K不进入新词、重点复习或PM应用复现核心词",
@@ -157,6 +169,6 @@
     "focus_word_check": "in_runtime_focus_pool_or_review_pool",
     "listening_signal_guard": "listening signals must not downgrade status=mastered by themselves; mastered listening weakness may only enter listening_focus_pool, not review/application core eligibility."
   },
-  "updated_at": "2026-09-23",
+  "updated_at": "2026-09-24",
   "focus_pool_formula": "重点弱词 = A ∩ D，按自动训练失败、快速练习答错、不会/模糊等信号综合排序；只做派生索引，不改变词库归属"
 }
