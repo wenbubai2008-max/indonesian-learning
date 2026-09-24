@@ -1,0 +1,13 @@
+window.EXTENSIVE_READING_ARCHIVE_ITEM={id:'er-20260923-bbm-lampung',date:'2026-09-23',title:'Stok BBM di Bandar Lampung Dipastikan Tersedia',title_cn:'楠榜省确认加油站燃油供应充足',category:'印尼 · 社会 · 日常生活 · 消费 · 实时新闻改写',level:'A2+ → B1',minutes:4,source_name:'ANTARA News',source_date:'2026-09-22',text:`Pertamina Patra Niaga dan Dinas ESDM Provinsi Lampung memantau penyaluran BBM di beberapa SPBU di Bandar Lampung. Pemeriksaan dilakukan untuk memastikan stok tersedia dan pelayanan kepada masyarakat tetap berjalan dengan baik.
+
+Pemantauan dilakukan di empat SPBU. Hasilnya, biosolar, Pertalite, dan Pertamax masih tersedia. Di beberapa tempat memang masih ada antrean kendaraan, tetapi situasinya dinilai tertib dan terkendali. Petugas juga tidak menemukan pelanggaran dalam penyaluran BBM.
+
+Dalam kegiatan itu, petugas berbicara langsung dengan beberapa konsumen, termasuk pengemudi transportasi online dan kurir. Mereka mengatakan tidak mengalami kesulitan mendapatkan Pertalite. Pertamina menyebut penyaluran Pertalite di Lampung meningkat sejak Mei 2026. Rata-rata penyalurannya naik sekitar 10 persen, dari sekitar 2.000 kiloliter per hari pada Januari–April menjadi sekitar 2.200 kiloliter per hari sejak Mei.
+
+Pemerintah daerah dan Pertamina akan terus melakukan pemantauan secara berkala. Masyarakat juga diminta membeli BBM sesuai kebutuhan dan tidak berlebihan. Tujuannya agar stok dan pelayanan di SPBU tetap lancar serta BBM dapat diterima oleh konsumen sesuai peruntukannya.`,cn:`Pertamina Patra Niaga 与楠榜省能源与矿产资源局检查了楠榜市多家加油站的燃油供应情况。这次检查是为了确认库存充足，并确保面向居民的服务继续正常进行。
+
+检查覆盖了4家加油站。结果显示，生物柴油、Pertalite 和 Pertamax 都仍有供应。一些地方仍有车辆排队，但现场秩序被认为稳定且可控。工作人员也没有发现燃油供应方面的违规行为。
+
+检查期间，工作人员还直接与一些消费者交流，其中包括网约车司机和快递员。他们表示购买 Pertalite 没有遇到困难。Pertamina 表示，自2026年5月以来，楠榜省 Pertalite 的供应量有所增加，日均供应量约增长10%，从1月至4月的每天约2000千升增加到5月以来的每天约2200千升。
+
+地方政府和 Pertamina 将继续定期监测供应情况。同时也提醒居民按照实际需要购买燃油，不要过量购买，以便加油站库存和服务保持顺畅，并让燃油按照规定用途供应给消费者。`,hints:[{term:'penyaluran BBM',cn:'燃油供应／配送',root:'salur',formation:'peN- + salur + -an'},{term:'memantau',cn:'监测；查看情况',root:'pantau',formation:'meN- + pantau'},{term:'memastikan',cn:'确保；确认',root:'pasti',formation:'meN- + pasti + -kan'},{term:'tersedia',cn:'有供应；可获得',root:'sedia',formation:'ter- + sedia'},{term:'antrean kendaraan',cn:'车辆排队',root:'antre',formation:'antre + -an'},{term:'tertib',cn:'有秩序的'},{term:'terkendali',cn:'受控的；情况稳定',root:'kendali',formation:'ter- + kendali'},{term:'pelanggaran',cn:'违规行为',root:'langgar',formation:'pe- + langgar + -an'},{term:'secara berkala',cn:'定期地'},{term:'sesuai kebutuhan',cn:'按照需要'},{term:'berlebihan',cn:'过量的；过度的',root:'lebih',formation:'ber- + lebih + -an'},{term:'peruntukannya',cn:'其规定用途；其指定用途',root:'untuk',formation:'per- + untuk + -an + -nya'}]};
