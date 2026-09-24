@@ -72,6 +72,12 @@ const weakMap=new Map();for(const x of weakWords){const k=key(x&&x.word);if(k)we
 const activeMap=new Map([...weakMap].filter(([,x])=>x&&x.status==='active'));
 const masteredCount=[...weakMap.values()].filter(x=>x&&x.status==='mastered').length;
 const secondaryReason=x=>Array.isArray(x&&x.reasons)&&x.reasons.some(r=>r==='bipa_secondary_dont'||r==='bipa_secondary_fuzzy');
+const newMemoryClass=x=>{
+  const reasons=Array.isArray(x&&x.reasons)?x.reasons:[];
+  if(reasons.some(r=>['manual_unknown','seed_unfamiliar','memory_dont','bipa_secondary_dont'].includes(r)))return 'dont';
+  if(reasons.some(r=>['memory_fuzzy','bipa_secondary_fuzzy'].includes(r)))return 'fuzzy';
+  return 'unclassified';
+};
 
 const secondaryMaster=[];
 for(const meta of secondaryCatalog){
@@ -124,12 +130,37 @@ if(JSON.stringify(handoffCore(oldHandoff))!==JSON.stringify(handoffCore(handoff)
 else handoff.updated_at=oldHandoff.updated_at||'';
 fs.writeFileSync(HANDOFF_FILE,JSON.stringify(handoff,null,2)+'\n');
 
+const newDontFull=[],newFuzzyFull=[],newUnclassifiedFull=[];
+for(const w of newFull){
+  const cls=newMemoryClass(weakMap.get(key(w)));
+  if(cls==='dont')newDontFull.push(w);
+  else if(cls==='fuzzy')newFuzzyFull.push(w);
+  else newUnclassifiedFull.push(w);
+}
+const newDontSet=new Set(newDontFull.map(key));
+const newFuzzySet=new Set(newFuzzyFull.map(key));
+
 const newFullSet=new Set(newFull.map(key));
 const oralFull=oralRaw
   .filter(x=>newFullSet.has(key(x&&x.word)))
   .map(x=>[String(x.word||'').trim(),x.register||'',x.oral||'',x.root||'',Number.isFinite(Number(x.rank))?Number(x.rank):999999])
   .sort((a,b)=>((a[1]==='口语'?0:1)-(b[1]==='口语'?0:1))||(a[4]-b[4])||a[0].localeCompare(b[0]));
 const oralExposed=oralFull.slice(0,40);
+const oralDontFull=oralFull.filter(x=>newDontSet.has(key(x[0])));
+const oralFuzzyFull=oralFull.filter(x=>newFuzzySet.has(key(x[0])));
+const oralDontExposed=oralDontFull.slice(0,40);
+const oralFuzzyExposed=oralFuzzyFull.slice(0,40);
+
+const exposeSplit=(base,oral,max=160)=>{
+  const out=[],seen=new Set();
+  for(const w of [...base.slice(0,max),...oral.map(x=>x[0])]){
+    const k=key(w);if(!k||seen.has(k))continue;seen.add(k);out.push(w);
+  }
+  return out;
+};
+const newDontExposed=exposeSplit(newDontFull,oralDontExposed);
+const newFuzzyExposed=exposeSplit(newFuzzyFull,oralFuzzyExposed);
+const newUnclassifiedExposed=newUnclassifiedFull.slice(0,40);
 
 const newExposed=[];const newSeen=new Set();
 for(const w of [...newFull.slice(0,140),...oralExposed.map(x=>x[0])]){
@@ -248,6 +279,12 @@ const runtime={
     secondary_new_pool_total_full:secondaryNewFull.length,
     new_pool_total_full:newFull.length,
     new_pool_exposed:newExposed.length,
+    new_pool_dont_total_full:newDontFull.length,
+    new_pool_dont_exposed:newDontExposed.length,
+    new_pool_fuzzy_total_full:newFuzzyFull.length,
+    new_pool_fuzzy_exposed:newFuzzyExposed.length,
+    new_pool_unclassified_total_full:newUnclassifiedFull.length,
+    new_pool_unclassified_exposed:newUnclassifiedExposed.length,
     review_pool_total_full:reviewFull.length,
     review_pool_exposed:reviewExposed.length,
     focus_pool_total_full:focusFull.length,
@@ -255,7 +292,11 @@ const runtime={
     listening_focus_pool_total_full:listeningFocusFull.length,
     listening_focus_pool_exposed:listeningFocusExposed.length,
     oral_new_pool_total_full:oralFull.length,
-    oral_new_pool_exposed:oralExposed.length
+    oral_new_pool_exposed:oralExposed.length,
+    oral_new_pool_dont_total_full:oralDontFull.length,
+    oral_new_pool_dont_exposed:oralDontExposed.length,
+    oral_new_pool_fuzzy_total_full:oralFuzzyFull.length,
+    oral_new_pool_fuzzy_exposed:oralFuzzyExposed.length
   },
   schema:{
     new_meta:['word','cn'],
@@ -265,8 +306,13 @@ const runtime={
     listening_focus:['word','score','status','signals','cn','root','root_cn']
   },
   new_pool:newExposed,
+  new_pool_dont:newDontExposed,
+  new_pool_fuzzy:newFuzzyExposed,
+  new_pool_unclassified:newUnclassifiedExposed,
   new_meta:newMeta,
   oral_new_pool:oralExposed,
+  oral_new_pool_dont:oralDontExposed,
+  oral_new_pool_fuzzy:oralFuzzyExposed,
   review_pool:reviewExposed,
   focus_pool:focusExposed,
   listening_focus_pool:listeningFocusExposed
@@ -287,12 +333,15 @@ const audit={
   primary_taught_unique:primaryTaughtUnique,
   primary_unlearned_total:primaryUnlearnedTotal,
   new_pool_total:runtime.stats.new_pool_total_full,
+  new_pool_dont_total:runtime.stats.new_pool_dont_total_full,
+  new_pool_fuzzy_total:runtime.stats.new_pool_fuzzy_total_full,
+  new_pool_unclassified_total:runtime.stats.new_pool_unclassified_total_full,
   review_pool_total:runtime.stats.review_pool_total_full,
   focus_pool_total:runtime.stats.focus_pool_total_full,
   listening_focus_pool_total:runtime.stats.listening_focus_pool_total_full,
   oral_new_pool_total:runtime.stats.oral_new_pool_total_full,
   rules:{
-    new_pool:'primary first; when primary has 1-9 legal words, expose them first and top up from secondary to keep the 10-word AM contract; after primary reaches 0, secondary handoff is committed and never falls back automatically',
+    new_pool:'combined legal pool; primary first; when primary has 1-9 legal words, expose them first and top up from secondary; split views new_pool_dont/new_pool_fuzzy preserve the same handoff eligibility',
     review_pool:'weak_active ∩ daily_vocab',
     focus_pool:'high-priority subset of weak_active ∩ daily_vocab; automation_fail > quick_wrong > listening_wrong > unknown > dont > fuzzy > listening_slow',
     listening_focus_pool:'auditory weakness overlay for taught words; may include mastered without changing mastered status',
