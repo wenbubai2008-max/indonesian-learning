@@ -185,6 +185,9 @@ try {
   ok(focusWords.length <= 30, 'runtime.focus_pool stays small (<=30 exposed)');
   ok(focusWords.every(w => reviewSet.has(w)), 'runtime.focus_pool is a subset of review_pool');
   ok(focusWords.every(w => !newSet.has(w)), 'runtime.focus_pool never overlaps new_pool');
+  ok(Number(runtime.stats.primary_taught_unique)>=0,'runtime primary_taught_unique exists');
+  ok(Number(runtime.stats.primary_unlearned_total)>=0,'runtime primary_unlearned_total exists');
+  ok(Number(runtime.stats.primary_taught_unique)+Number(runtime.stats.primary_unlearned_total)===Number(runtime.stats.primary_master_unique),'primary taught + unlearned partitions the 977 main pool');
 
   const workflowDir = rel('.github/workflows');
   const workflows = fs.readdirSync(workflowDir).filter(x => /\.ya?ml$/i.test(x)).sort();

@@ -65,6 +65,8 @@ for(const lv of ['A1','A2','B1','B2']){
 }
 
 const dailySet=new Set(dailyRaw.map(x=>key(x&&x.word)).filter(Boolean));
+const primaryTaughtUnique=master.reduce((n,w)=>n+(dailySet.has(key(w))?1:0),0);
+const primaryUnlearnedTotal=master.length-primaryTaughtUnique;
 const dailyMeta=new Map(dailyRaw.map(x=>[key(x&&x.word),x]).filter(([k])=>k));
 const weakMap=new Map();for(const x of weakWords){const k=key(x&&x.word);if(k)weakMap.set(k,x)}
 const activeMap=new Map([...weakMap].filter(([,x])=>x&&x.status==='active'));
@@ -240,6 +242,8 @@ const runtime={
     weak_active_total:activeMap.size,
     weak_mastered_total:masteredCount,
     daily_taught_unique:dailySet.size,
+    primary_taught_unique:primaryTaughtUnique,
+    primary_unlearned_total:primaryUnlearnedTotal,
     primary_new_pool_total_full:primaryNewFull.length,
     secondary_new_pool_total_full:secondaryNewFull.length,
     new_pool_total_full:newFull.length,
@@ -280,6 +284,8 @@ const audit={
   weak_active_total:activeMap.size,
   weak_mastered_total:masteredCount,
   daily_taught_unique:dailySet.size,
+  primary_taught_unique:primaryTaughtUnique,
+  primary_unlearned_total:primaryUnlearnedTotal,
   new_pool_total:runtime.stats.new_pool_total_full,
   review_pool_total:runtime.stats.review_pool_total_full,
   focus_pool_total:runtime.stats.focus_pool_total_full,
