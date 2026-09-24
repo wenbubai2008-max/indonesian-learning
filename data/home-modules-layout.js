@@ -8,7 +8,7 @@
     {key:'quick',title:'快速练习',icon:'⚡',desc:'短时练习到期词和容易答错的词。',tag:'间隔复现',open:function(){if(typeof window.openQuickPracticeV2==='function')window.openQuickPracticeV2();}},
     {key:'weak',title:'弱项强化',icon:'🎯',desc:'集中巩固已学但仍不稳定的词。',tag:'针对弱项',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
     {key:'automation',title:'自动训练',icon:'⚙️',desc:'主动提取 · 语境补词 · 延迟验证。',tag:'计算中',tagId:'automationTag',open:function(){if(typeof window.openAutomationTraining==='function')window.openAutomationTraining();}},
-    {key:'difficulty',title:'难点解释',icon:'💡',desc:'辨析易混词，理解构词和真实用法。',tag:'6 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
+    {key:'difficulty',title:'难点解释',icon:'💡',desc:'辨析易混词，理解构词和真实用法。',tag:'7 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
   ];
 
   function renderHomeModules(){
@@ -59,6 +59,7 @@
   window.openDifficulty04=function(){openDifficulty('difficulty04');};
   window.openDifficulty05=function(){openDifficulty('difficulty05');};
   window.openDifficulty06=function(){openDifficulty('difficulty06');};
+  window.openDifficulty07=function(){openDifficulty('difficulty07');};
 
   window.answerAffixQuiz=function(btn,choice,answer){
     const row=btn&&btn.closest('.affixQuizRow');
@@ -163,7 +164,7 @@
           <div id="difficultyListView">
             <div class="sectionHead difficultyHead">
               <div><h2>难点解释</h2><div class="muted">专门整理难直译、容易混淆的印尼语词。</div></div>
-              <span class="pill">已整理 6 个</span>
+              <span class="pill">已整理 7 个</span>
             </div>
 
             <div class="difficultyIndex">
@@ -195,6 +196,11 @@
               <button class="difficultyIndexItem" type="button" onclick="openDifficulty06()">
                 <span class="difficultyNo affixNo">06</span>
                 <span class="difficultyIndexText"><b>前后缀总地图</b><small>别背十张表：先看“角色”，再看“动作落点”</small></span>
+                <span class="difficultyArrow">→</span>
+              </button>
+              <button class="difficultyIndexItem" type="button" onclick="openDifficulty07()">
+                <span class="difficultyNo handleNo">07</span>
+                <span class="difficultyIndexText"><b>“处理 / 解决”到底怎么说？</b><small>ngurus · nanganin · ngatasin · nyelesain · beresin · mecahin</small></span>
                 <span class="difficultyArrow">→</span>
               </button>
             </div>
@@ -989,6 +995,123 @@
               <small>你不需要先把所有规则背完。只要先能判断“主动 / 人或工具 / 被动 / 状态 / 方向 / 名词化”，大部分新词就已经能猜出七八成。</small>
             </div>
           </article>
+          <article id="difficulty07" class="difficultyLesson" style="display:none">
+            <button class="difficultyInnerBack" type="button" onclick="showDifficultyList()">← 返回难点列表</button>
+
+            <div class="difficultyWordHero handleHero">
+              <div class="difficultyWordTop"><span class="difficultyNo big handleNo">07</span><span class="difficultyType handleType">高频口语辨析 · handle / solve / sort out</span></div>
+              <div class="handleHeroTitle">“处理 / 解决”不是一个词：先看你到底在做哪一步</div>
+              <div class="difficultyMemory">中文一句“我来处理”，印尼人可能会说六种完全不同的话。不要先想中文翻译，先判断：<b>是在负责办理、接手一个 case、克服障碍、做到结束、把事情弄妥，还是找出答案？</b></div>
+            </div>
+
+            <div class="handleFlow" aria-label="处理解决词语义流程">
+              <div><span>① 管起来</span><b>ngurus</b><small>take care of</small></div><i>→</i>
+              <div><span>② 接手处理</span><b>nanganin</b><small>handle</small></div><i>→</i>
+              <div><span>③ 克服问题</span><b>ngatasin</b><small>overcome / address</small></div><i>→</i>
+              <div><span>④ 做到结束</span><b>nyelesain</b><small>finish / resolve</small></div><i>→</i>
+              <div><span>⑤ 弄妥</span><b>beresin</b><small>sort out</small></div>
+            </div>
+            <div class="handleSolveBranch"><span>🧩</span><div><b>mecahin</b><small>solve / crack</small></div><p>它不在上面的“处理流程”里，重点是：<strong>通过思考找到答案或解法。</strong></p></div>
+
+            <div class="handleSectionTitle">六个词真正的区别</div>
+            <div class="handleGrid">
+
+              <div class="handleCard">
+                <div class="handleCardHead"><div><strong>ngurus</strong><small>标准语：mengurus</small></div><button type="button" onclick="speakIdText('ngurus',this)">🔊</button></div>
+                <div class="handleCn">处理 · 办理 · 照管</div>
+                <div class="handleLang"><b>EN</b><span>take care of · handle · deal with</span></div>
+                <div class="handleLang id"><b>ID</b><span>Mengurus sesuatu yang perlu diperhatikan, diatur, atau dibawa prosesnya supaya berjalan.</span></div>
+                <div class="handleCore"><b>脑内感觉：</b>“这件事归我管，我去办。”</div>
+                <div class="handleExample"><strong>Aku lagi ngurus visa.</strong><button onclick="speakIdText('Aku lagi ngurus visa.',this)">🔊</button><span>我正在办签证。</span></div>
+                <div class="handleUse">特别自然：<b>dokumen / visa / anak / keluarga / urusan kantor</b>。强调负责和过程，不保证已经解决。</div>
+              </div>
+
+              <div class="handleCard">
+                <div class="handleCardHead"><div><strong>nanganin</strong><small>标准语：menangani</small></div><button type="button" onclick="speakIdText('nanganin',this)">🔊</button></div>
+                <div class="handleCn">处理 · 应对 · 接手</div>
+                <div class="handleLang"><b>EN</b><span>handle · deal with · take on</span></div>
+                <div class="handleLang id"><b>ID</b><span>Mengambil tanggung jawab atas suatu kasus, masalah, pelanggan, atau situasi lalu melakukan tindakan.</span></div>
+                <div class="handleCore"><b>脑内感觉：</b>“这个 case 由我接手处理。”</div>
+                <div class="handleExample"><strong>Siapa yang nanganin komplain ini?</strong><button onclick="speakIdText('Siapa yang nanganin komplain ini?',this)">🔊</button><span>谁负责处理这个投诉？</span></div>
+                <div class="handleUse">工作场景尤其常见：<b>komplain / kasus / customer / masalah</b>。比 ngurus 更像“具体问题由谁负责处理”。</div>
+              </div>
+
+              <div class="handleCard">
+                <div class="handleCardHead"><div><strong>ngatasin</strong><small>标准语：mengatasi</small></div><button type="button" onclick="speakIdText('ngatasin',this)">🔊</button></div>
+                <div class="handleCn">解决 · 克服 · 应对掉</div>
+                <div class="handleLang"><b>EN</b><span>overcome · address · resolve a difficulty</span></div>
+                <div class="handleLang id"><b>ID</b><span>Membuat masalah, hambatan, atau kesulitan menjadi terkendali atau tidak lagi menghambat.</span></div>
+                <div class="handleCore"><b>脑内感觉：</b>“障碍还在挡路，我把它克服掉。”</div>
+                <div class="handleExample"><strong>Gimana cara ngatasin masalah ini?</strong><button onclick="speakIdText('Gimana cara ngatasin masalah ini?',this)">🔊</button><span>这个问题怎么解决？</span></div>
+                <div class="handleUse">重点对象通常是<b>问题、困难、障碍、症状</b>。它比 ngurus 更接近中文真正的“解决问题”。</div>
+              </div>
+
+              <div class="handleCard">
+                <div class="handleCardHead"><div><strong>nyelesain</strong><small>标准语：menyelesaikan</small></div><button type="button" onclick="speakIdText('nyelesain',this)">🔊</button></div>
+                <div class="handleCn">完成 · 解决到结束</div>
+                <div class="handleLang"><b>EN</b><span>finish · complete · resolve</span></div>
+                <div class="handleLang id"><b>ID</b><span>Membawa pekerjaan, tugas, atau masalah sampai selesai; fokusnya ada pada titik akhir.</span></div>
+                <div class="handleCore"><b>脑内感觉：</b>“不管过程怎样，把它做到结束。”</div>
+                <div class="handleExample"><strong>Aku harus nyelesain kerjaan ini hari ini.</strong><button onclick="speakIdText('Aku harus nyelesain kerjaan ini hari ini.',this)">🔊</button><span>我今天必须把这个工作做完。</span></div>
+                <div class="handleUse"><b>pekerjaan / tugas / masalah</b> 都可以。和 ngatasin 相比，它更关注“有没有完成”，不是“障碍怎么被克服”。</div>
+              </div>
+
+              <div class="handleCard">
+                <div class="handleCardHead"><div><strong>beresin</strong><small>标准语：membereskan</small></div><button type="button" onclick="speakIdText('beresin',this)">🔊</button></div>
+                <div class="handleCn">搞定 · 弄好 · 收拾妥</div>
+                <div class="handleLang"><b>EN</b><span>sort out · get it fixed · tidy up</span></div>
+                <div class="handleLang id"><b>ID</b><span>Membuat sesuatu jadi beres: bisa berarti rapi, selesai, tertangani, atau tidak bermasalah lagi.</span></div>
+                <div class="handleCore"><b>脑内感觉：</b>“别管细节，我把它弄妥。”</div>
+                <div class="handleExample"><strong>Tenang, nanti aku beresin.</strong><button onclick="speakIdText('Tenang, nanti aku beresin.',this)">🔊</button><span>放心，等下我来搞定。</span></div>
+                <div class="handleUse">非常口语、结果感强。既能<b>收拾房间</b>，也能<b>把麻烦事情搞定</b>；语气比 menyelesaikan 更生活化。</div>
+              </div>
+
+              <div class="handleCard">
+                <div class="handleCardHead"><div><strong>mecahin</strong><small>标准语：memecahkan</small></div><button type="button" onclick="speakIdText('mecahin',this)">🔊</button></div>
+                <div class="handleCn">解出 · 破解 · 找到解决办法</div>
+                <div class="handleLang"><b>EN</b><span>solve · crack · figure out</span></div>
+                <div class="handleLang id"><b>ID</b><span>Menemukan jawaban atau solusi lewat pemikiran; cocok untuk soal, teka-teki, kasus, atau masalah yang perlu dianalisis.</span></div>
+                <div class="handleCore"><b>脑内感觉：</b>“这里有一道题，我要找出答案。”</div>
+                <div class="handleExample"><strong>Kita harus mecahin masalah ini dulu.</strong><button onclick="speakIdText('Kita harus mecahin masalah ini dulu.',this)">🔊</button><span>我们得先想办法把这个问题解开。</span></div>
+                <div class="handleUse">最典型是<b>soal / teka-teki / kasus / masalah teknis</b>。比 ngatasin 更强调“找到解法”的思考过程。</div>
+              </div>
+            </div>
+
+            <div class="handleSectionTitle">同一个“masalah”，换一个词，重点就变了</div>
+            <div class="handleCompare">
+              <div><b>ngurus masalah ini</b><span>负责把这件问题处理起来</span><small>take care of this matter</small></div>
+              <div><b>nanganin masalah ini</b><span>接手并处理这个问题 / case</span><small>handle this problem</small></div>
+              <div><b>ngatasin masalah ini</b><span>克服造成麻烦的障碍</span><small>overcome / address this problem</small></div>
+              <div><b>nyelesain masalah ini</b><span>把整个问题处理到结束</span><small>resolve it to completion</small></div>
+              <div><b>beresin masalah ini</b><span>把这事弄妥、搞定</span><small>sort this problem out</small></div>
+              <div><b>mecahin masalah ini</b><span>想出问题的解法</span><small>solve / figure it out</small></div>
+            </div>
+
+            <div class="handleNativeBox">
+              <div class="handleSectionTitle">本地人不是先翻译中文，而是先问这几个问题</div>
+              <div class="handleQuestions">
+                <div><span>1</span><b>是在办事情、管事情？</b><small>→ ngurus</small></div>
+                <div><span>2</span><b>是谁接手这个 case？</b><small>→ nanganin</small></div>
+                <div><span>3</span><b>有个障碍需要克服？</b><small>→ ngatasin</small></div>
+                <div><span>4</span><b>重点是把它做完？</b><small>→ nyelesain</small></div>
+                <div><span>5</span><b>想表达“我来搞定”？</b><small>→ beresin</small></div>
+                <div><span>6</span><b>需要想出答案或解法？</b><small>→ mecahin</small></div>
+              </div>
+            </div>
+
+            <div class="handleOverlap">
+              <b>最容易混的三组</b>
+              <p><strong>ngurus vs nanganin：</strong>都能译成“处理”。ngurus 更广，常带办理 / 照管 / 负责日常事务的感觉；nanganin 更像接手一个具体 case、客户、投诉或问题。</p>
+              <p><strong>ngatasin vs nyelesain：</strong>ngatasin 看“障碍有没有被克服”；nyelesain 看“整件事有没有做到结束”。所以一个问题可能已经暂时 ngatasin 了，但事情还没有完全 nyelesain。</p>
+              <p><strong>nyelesain vs beresin：</strong>都可以表示“搞定”。nyelesain 更中性、更像完成；beresin 更口语、更像“把乱的、麻烦的东西弄妥”。</p>
+            </div>
+
+            <div class="difficultyFormula handleFormula">
+              <span>一句话记忆</span>
+              <b>ngurus 管起来，nanganin 接手，ngatasin 克服，nyelesain 做完，beresin 弄妥，mecahin 找解法。</b>
+              <small>真实聊天里它们会有重叠，但只要先抓住这六个“动作焦点”，本地人的选词逻辑就会越来越自然。</small>
+            </div>
+          </article>
         </div>`;
       app.appendChild(page);
     }
@@ -1168,6 +1291,10 @@
       .affixDecision{margin-top:20px;border-radius:17px;background:#203d52;color:#fff;padding:16px}.affixDecisionTitle{font-size:18px;font-weight:950}.affixDecisionSteps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:11px}.affixDecisionSteps>div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:11px;padding:10px;display:grid;grid-template-columns:auto 1fr;gap:2px 8px;align-items:center}.affixDecisionSteps span{grid-row:1/3;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;color:#203d52;font-weight:950}.affixDecisionSteps b{font-size:13px}.affixDecisionSteps small{font-size:10px;opacity:.74;line-height:1.4}
       .affixQuiz{margin-top:22px}.affixQuizRow{display:grid;grid-template-columns:1fr auto minmax(90px,auto);gap:10px;align-items:center;border-top:1px solid #e5eaed;padding:10px 0}.affixQuizRow:first-of-type{border-top:0}.affixQuizRow>span{font-size:14px;font-weight:850;color:#2c4254}.affixQuizRow>div{display:flex;gap:6px;flex-wrap:wrap}.affixQuizRow button{border:1.5px solid #d8e1e7;background:#fff;border-radius:9px;padding:8px 10px;font-weight:800;color:#344b5e;cursor:pointer}.affixQuizRow button.affixQuizOk{background:#edf9f0;border-color:#76bd87;color:#17652d}.affixQuizRow button.affixQuizBad{background:#fff0ef;border-color:#dd8b84;color:#9d2f28}.affixQuizRow button:disabled{cursor:default}.affixQuizResult{font-size:11px;color:#657386}.affixFormula{background:linear-gradient(135deg,#1f5555,#5b4f91)}
 
+      .handleNo{background:#eef2ff;color:#4f5fb2}.difficultyWordHero.handleHero{background:linear-gradient(135deg,#f4f7ff,#fbfcff);border-color:#dce3f6}.handleType{color:#4f5da0!important;background:#e9edff!important}.handleHeroTitle{font-size:30px;font-weight:950;line-height:1.25;color:#28375c;margin:14px 0 8px}
+      .handleFlow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr auto 1fr;gap:8px;align-items:center;margin:18px 0 10px;padding:14px;border:1px dashed #d8deee;border-radius:16px;background:#fbfcff}.handleFlow>div{text-align:center;border:1px solid #dfe5f2;background:#fff;border-radius:12px;padding:10px 7px;min-width:0}.handleFlow span,.handleFlow b,.handleFlow small{display:block}.handleFlow span{font-size:11px;color:#667085}.handleFlow b{font-size:16px;color:#2d416b;margin-top:3px}.handleFlow small{font-size:10px;color:#8791a3;margin-top:3px}.handleFlow i{font-style:normal;color:#9aa5b8;font-weight:950}.handleSolveBranch{display:flex;align-items:center;gap:11px;border:1px solid #e6dfc9;background:#fffaf0;border-radius:13px;padding:11px 13px}.handleSolveBranch>span{font-size:24px}.handleSolveBranch>div b{display:block;font-size:17px;color:#79571f}.handleSolveBranch>div small{display:block;font-size:10px;color:#8a7960}.handleSolveBranch p{margin:0 0 0 auto;font-size:12px;color:#6d604d;line-height:1.5}.handleSolveBranch strong{color:#66460e}
+      .handleSectionTitle{font-size:21px;font-weight:950;color:#2d3e61;margin:24px 0 11px}.handleGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.handleCard{border:1.5px solid #dfe5ee;border-radius:17px;padding:15px;background:#fff;min-width:0}.handleCard:nth-child(1),.handleCard:nth-child(2){border-top:5px solid #6684c9}.handleCard:nth-child(3),.handleCard:nth-child(4){border-top:5px solid #6fa67d}.handleCard:nth-child(5),.handleCard:nth-child(6){border-top:5px solid #c18c4e}.handleCardHead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.handleCardHead strong{display:block;font-size:23px;color:#263952}.handleCardHead small{display:block;font-size:11px;color:#7b8796;margin-top:2px}.handleCardHead button,.handleExample button{border:1px solid #dce3eb;background:#fff;border-radius:8px;padding:5px 7px;cursor:pointer}.handleCn{font-size:14px;font-weight:850;color:#526277;margin:8px 0}.handleLang{display:grid;grid-template-columns:31px 1fr;gap:8px;align-items:start;margin-top:7px}.handleLang b{display:inline-flex;align-items:center;justify-content:center;border-radius:7px;background:#edf4ff;color:#3e69a3;font-size:10px;height:25px}.handleLang.id b{background:#edf9f1;color:#287349}.handleLang span{font-size:12px;line-height:1.55;color:#5a697a}.handleCore{margin-top:10px;padding:9px 10px;border-radius:10px;background:#f7f9fc;font-size:12px;line-height:1.55;color:#526174}.handleCore b{color:#2d405a}.handleExample{margin-top:10px;padding-top:10px;border-top:1px solid #e8ebef;display:grid;grid-template-columns:1fr auto;gap:4px 8px}.handleExample strong{font-size:14px;color:#23364f}.handleExample span{grid-column:1/-1;font-size:12px;color:#667085}.handleUse{font-size:12px;line-height:1.6;color:#667085;margin-top:9px}.handleUse b{color:#43546a}
+      .handleCompare{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.handleCompare>div{border:1px solid #e1e6ee;border-radius:13px;background:#fbfcfe;padding:11px}.handleCompare b{display:block;font-size:14px;color:#273b59}.handleCompare span{display:block;font-size:12px;color:#566579;margin-top:5px;line-height:1.45}.handleCompare small{display:block;font-size:10px;color:#8a94a3;margin-top:4px}.handleNativeBox{margin-top:18px;border:1px solid #dce4f1;border-radius:17px;background:#f8faff;padding:15px}.handleNativeBox .handleSectionTitle{margin:0 0 10px;font-size:18px}.handleQuestions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.handleQuestions>div{background:#fff;border:1px solid #dfe5ef;border-radius:11px;padding:10px;display:grid;grid-template-columns:auto 1fr;gap:2px 8px;align-items:center}.handleQuestions span{grid-row:1/3;width:25px;height:25px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e9edff;color:#5262aa;font-size:11px;font-weight:900}.handleQuestions b{font-size:12px;color:#34465f}.handleQuestions small{font-size:11px;color:#667085}.handleOverlap{margin-top:18px;border:1px solid #e5dfd4;border-radius:16px;background:#fffaf5;padding:15px}.handleOverlap>b{font-size:17px;color:#6d512f}.handleOverlap p{font-size:13px;line-height:1.7;color:#5f5a53;margin:9px 0 0}.handleOverlap strong{color:#3c4f66}.handleFormula{background:linear-gradient(135deg,#314875,#6c7fb5)}
       .affixUnifiedGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.affixUnifiedCard{border:1.5px solid #dce5e8;border-radius:18px;padding:17px;background:#fff;min-width:0;box-shadow:0 2px 8px rgba(35,52,70,.025)}.berUnified{border-top:6px solid #4c9b69;background:#f5fbf7}.terUnified{border-top:6px solid #7558b1;background:#faf7ff}.seUnified{border-top:6px solid #3a929b;background:#f4fbfc}.keanUnified{border-top:6px solid #835db5;background:#fbf7ff}.kanUnified{border-top:6px solid #d37b30;background:#fff8f1}.iUnified{border-top:6px solid #3d7fb8;background:#f4f9ff}.anUnified{border-top:6px solid #68768a;background:#f7f8fa}
       .affixUnifiedHead{display:flex;align-items:center;gap:10px}.affixCircle{display:none}.affixUnifiedHead>div{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.affixUnifiedHead b{font-size:23px;color:#1e354a}.affixUnifiedHead small{font-size:13px;color:#5d6f80;font-weight:800}
       .affixOneLine{margin-top:11px;font-size:15px;line-height:1.65;color:#394f63;font-weight:700}.affixUnifiedExamples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}.affixUnifiedExamples.twoCol{grid-template-columns:repeat(2,minmax(0,1fr))}.affixUnifiedExamples>span{background:#fff;border:1px solid #dfe7e9;border-radius:11px;padding:10px;text-align:center;min-width:0}.affixUnifiedExamples strong{display:block;font-size:15px;color:#233c50;word-break:break-word}.affixUnifiedExamples small{display:block;font-size:12px;color:#607383;margin-top:4px;line-height:1.4}.affixBrain{margin-top:11px;padding:10px 11px;border-radius:10px;background:rgba(255,255,255,.86);font-size:13px;line-height:1.55;color:#4d6070}.affixBrain b{color:#223d52}.unifiedDeep{margin-top:9px}
@@ -1187,6 +1314,7 @@
         .simGroups{grid-template-columns:1fr}.simWordGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.simNgRule{grid-template-columns:repeat(3,1fr)}.simNgRule p{grid-column:1/-1}.simMethod{grid-template-columns:1fr}.simRuleGrid{grid-template-columns:1fr}.simQuizRow{grid-template-columns:1fr}.simHeroTitle{font-size:23px}
         .nasalHeroTitle{font-size:29px}.nasalMapBottom{grid-template-columns:repeat(2,1fr)}.nasalRuleGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.nasalMirrorGrid,.nasalDropGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.nasalPanelHead{flex-direction:column}.nasalSpecialRow,.nasalSummaryGrid{grid-template-columns:1fr}.nasalQuizRow{grid-template-columns:1fr}
         .affixHeroTitle{font-size:27px}.affixHeroFlow{grid-template-columns:1fr}.affixHeroFlow i{transform:rotate(90deg);text-align:center}.affixRoleGrid,.affixSuffixGrid{grid-template-columns:1fr}.affixStateGrid,.affixRelationGrid{grid-template-columns:1fr}.affixFactory{grid-template-columns:1fr}.affixFactoryArrow{transform:rotate(90deg)}.affixFactoryBranches{grid-template-columns:repeat(2,minmax(0,1fr))}.affixCompareGrid{grid-template-columns:1fr}.affixKanIFlow{grid-template-columns:1fr}.affixVs{text-align:center}.affixDecisionSteps{grid-template-columns:1fr 1fr}.affixQuizRow{grid-template-columns:1fr}.affixCorrection>div:not(.affixCorrectionTitle){grid-template-columns:1fr}
+        .handleHeroTitle{font-size:24px}.handleFlow{grid-template-columns:1fr}.handleFlow i{transform:rotate(90deg);text-align:center}.handleSolveBranch{align-items:flex-start}.handleSolveBranch p{margin-left:0}.handleGrid{grid-template-columns:1fr}.handleCompare,.handleQuestions{grid-template-columns:1fr}
         .affixUnifiedGrid{grid-template-columns:1fr}.terBranches{grid-template-columns:1fr}.affixUnifiedExamples,.affixUnifiedExamples.twoCol{grid-template-columns:1fr 1fr}
       }
       @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}.difficultyPageCard{padding:16px!important}}
