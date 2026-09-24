@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-09-24T06:30:57.559Z",
-  "source_updated_at": "2026-09-24T06:30:06.307Z",
+  "generated_at": "2026-09-24T06:35:57.523Z",
+  "source_updated_at": "2026-09-24T06:33:38.825Z",
   "taught_total": 499,
   "confirmed_mastered": 153,
   "needs_reinforcement": 212,
@@ -46,6 +46,16 @@
       "cn": "打算；意图；认真想做的心意"
     },
     {
+      "word": "nyebelin",
+      "score": 118,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "cn": "烦人、让人不爽"
+    },
+    {
       "word": "mengatasi",
       "score": 116,
       "signals": [
@@ -76,18 +86,8 @@
       "cn": "给人添麻烦"
     },
     {
-      "word": "mengizinkan",
-      "score": 108,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "fuzzy"
-      ],
-      "cn": "允许"
-    },
-    {
       "word": "ngurus",
-      "score": 108,
+      "score": 110,
       "signals": [
         "automation_fail",
         "quick_wrong",
