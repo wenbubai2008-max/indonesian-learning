@@ -1,0 +1,36 @@
+{
+  "date":"2026-09-24",
+  "session":"am",
+  "time":"08:00",
+  "day":34,
+  "level":"A2+→B1",
+  "title":"08:00｜新词 + 应用：出门、沟通与日常安排",
+  "vocab":[
+    {"word":"melepaskan","display":"melepaskan","audio_text":"melepaskan","cn":"释放","en":"release; let go","root":"lepas","root_cn":"脱离；松开","formation":"meN- + lepas + -kan → melepaskan，表示放开、释放或脱下某物。","example":"Dia melepaskan pegangan setelah merasa aman.","example_cn":"觉得安全以后，他松开了手。","synonym_note":"melepaskan 强调放开或释放；lepas 可表示已经脱落、松开。","is_oral_new":false},
+    {"word":"memisahkan","display":"memisahkan","audio_text":"memisahkan","cn":"分离","en":"separate","root":"pisah","root_cn":"分开","formation":"meN- + pisah + -kan → memisahkan，表示把两者分开。","example":"Kami memisahkan dokumen lama dan dokumen baru agar lebih mudah diperiksa.","example_cn":"我们把旧文件和新文件分开，以便更容易检查。","synonym_note":"memisahkan 是把对象分开；berpisah 更常表示人彼此分开、分别。","is_oral_new":false},
+    {"word":"tajam","display":"tajam","audio_text":"tajam","cn":"锋利、尖","en":"sharp","root":"tajam","root_cn":"锋利；尖锐","formation":"基本形容词，可形容刀具、声音、目光或分析。","example":"Pisau ini sangat tajam, jadi pakailah dengan hati-hati.","example_cn":"这把刀很锋利，所以使用时要小心。","synonym_note":"tajam 是锋利、尖锐；runcing 更偏物体末端尖。","is_oral_new":false},
+    {"word":"mengangkat","display":"mengangkat","audio_text":"mengangkat","cn":"担任，提拔，举起","en":"lift; raise; appoint","root":"angkat","root_cn":"举起；抬起","formation":"meN- + angkat → mengangkat，可表示举起、抬起，也可表示任命。","example":"Tolong bantu mengangkat kotak ini ke atas meja.","example_cn":"请帮忙把这个箱子抬到桌子上。","synonym_note":"mengangkat 常指向上抬起；membawa 更泛指携带。","is_oral_new":false},
+    {"word":"berteriak","display":"berteriak","audio_text":"berteriak","cn":"喊叫","en":"shout; scream","root":"teriak","root_cn":"喊叫","formation":"ber- + teriak → berteriak，表示大声喊叫。","example":"Dia berteriak karena temannya berada terlalu jauh.","example_cn":"因为朋友离得太远，他大声喊了起来。","synonym_note":"berteriak 是喊叫；memanggil 强调叫某人，不一定声音很大。","is_oral_new":false},
+    {"word":"merayakan","display":"merayakan","audio_text":"merayakan","cn":"庆祝","en":"celebrate","root":"raya","root_cn":"盛大；节庆","formation":"meN- + raya + -kan → merayakan，表示庆祝某个事件或日子。","example":"Kami akan merayakan keberhasilan tim setelah pekerjaan selesai.","example_cn":"工作完成后，我们会庆祝团队取得的成果。","synonym_note":"merayakan 强调庆祝某件事；perayaan 是名词“庆祝活动”。","is_oral_new":false},
+    {"word":"batuk","display":"batuk","audio_text":"batuk","cn":"咳嗽","en":"cough","root":"batuk","root_cn":"咳嗽","formation":"基本词，可作动词或名词使用。","example":"Dia masih batuk, jadi hari ini dia memilih banyak minum air.","example_cn":"他还在咳嗽，所以今天选择多喝水。","synonym_note":"batuk 是日常通用的“咳嗽”；batuk-batuk 表示反复咳嗽。","is_oral_new":false},
+    {"word":"berkunjung","display":"berkunjung","audio_text":"berkunjung","cn":"拜访","en":"visit","root":"kunjung","root_cn":"访问；拜访","formation":"ber- + kunjung → berkunjung，表示去某处或某人那里拜访。","example":"Akhir pekan ini saya ingin berkunjung ke rumah teman.","example_cn":"这个周末我想去朋友家拜访。","synonym_note":"berkunjung 较通用；main ke rumah teman 在口语中也常表示去朋友家玩。","is_oral_new":false},
+    {"word":"balik","display":"balik","audio_text":"balik","cn":"返回，回去","en":"go back; return","root":"balik","root_cn":"返回；翻转","formation":"balik 是高频口语词，常表示回去、回来。","example":"Aku balik ke kantor setelah makan siang.","example_cn":"午饭后我回办公室。","synonym_note":"balik 很常用于口语；较标准的对应表达是 kembali。","is_oral_new":true},
+    {"word":"isi bensin","display":"isi bensin","audio_text":"isi bensin","cn":"加油","en":"refuel; get gas","root":"isi bensin","root_cn":"加汽油","formation":"高频口语短语：isi（装、填）+ bensin（汽油），表示给车辆加油。","example":"Sebelum berangkat, aku mau isi bensin dulu.","example_cn":"出发前我想先去加油。","synonym_note":"isi bensin 是日常非常自然的口语表达。","is_oral_new":true}
+  ],
+  "review_vocab":["menunjukkan","berkat","ngerepotin","mengizinkan","ngurus"],
+  "sentences":[
+    {"text":"Sebelum balik ke kantor, aku mau isi bensin dulu.","cn":"回办公室前，我想先加油。"},
+    {"text":"Kami memisahkan dokumen lama sebelum menunjukkan hasilnya kepada atasan.","cn":"向上司展示结果前，我们先把旧文件分开。"},
+    {"text":"Dia mengizinkan kami berkunjung setelah pekerjaan selesai.","cn":"他允许我们工作结束后去拜访。"},
+    {"text":"Jangan berteriak; aku sedang ngurus masalah ini.","cn":"别喊，我正在处理这个问题。"},
+    {"text":"Berkat bantuan teman, kami bisa mengangkat kotak itu tanpa ngerepotin orang lain.","cn":"多亏朋友帮忙，我们不用麻烦别人就把箱子抬起来了。"}
+  ],
+  "reading":{"text":"Pagi ini aku harus berkunjung ke tempat seorang pelanggan. Sebelum berangkat, aku isi bensin dulu karena perjalanan cukup jauh. Di kantor, kami memisahkan beberapa dokumen agar lebih mudah diperiksa. Seorang rekan membantu mengangkat kotak yang cukup berat. Berkat bantuannya, pekerjaan selesai lebih cepat tanpa ngerepotin orang lain. Atasan juga mengizinkan kami balik lebih awal setelah semua tugas selesai. Dalam perjalanan pulang, aku melihat seorang anak berteriak memanggil temannya. Hari ini cukup sibuk, tetapi aku senang karena semua urusan bisa selesai dengan baik dan kami masih punya waktu untuk merayakan hasil kerja tim.","cn":"今天早上我要去拜访一位客户。出发前我先去加油，因为路程比较远。在办公室，我们把一些文件分开，以便更容易检查。一位同事帮忙抬一个很重的箱子。多亏他的帮助，我们更快完成了工作，也没有麻烦别人。所有任务完成后，上司也允许我们早点回去。回家的路上，我看到一个孩子大声喊他的朋友。今天虽然很忙，但我很高兴所有事情都顺利完成，我们还有时间庆祝团队的工作成果。"},
+  "quiz":[
+    {"question":"哪一个词最适合填空：Sebelum perjalanan jauh, saya mau ___ dulu.","options":["isi bensin","berteriak","memisahkan","batuk"],"answer_index":0,"explain":"isi bensin 表示给车辆加油。"},
+    {"question":"哪一个词最适合表达“把两份文件分开”？","options":["merayakan","memisahkan","mengangkat","berkunjung"],"answer_index":1,"explain":"memisahkan 表示把两个或多个对象分开。"},
+    {"question":"复习：想表达“允许某人做某事”，哪一个词最合适？","options":["ngurus","berkat","mengizinkan","menunjukkan"],"answer_index":2,"explain":"mengizinkan 表示允许、准许。"}
+  ],
+  "output":{"task":"请用3—4句印尼语描述一次出门办事的过程。尽量使用 balik、isi bensin、berkunjung，并自然加入一个今天的复习词。","reference_answer":"Pagi ini aku mau berkunjung ke tempat pelanggan. Sebelum berangkat, aku isi bensin dulu. Setelah urusannya selesai, aku balik ke kantor dan menunjukkan hasilnya kepada atasan.","reference_cn":"今天早上我要去拜访客户。出发前我先去加油。事情办完后，我回到办公室，把结果给上司看。"},
+  "review":["balik 是非常高频的口语“回去、回来”，较标准形式是 kembali。","memisahkan 表示把对象分开；berpisah 更常表示人与人分开或分别。","isi bensin 是日常最自然的“给车加油”表达之一。"]
+}
