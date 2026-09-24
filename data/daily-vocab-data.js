@@ -3,7 +3,7 @@ window.DAILY_VOCAB_DB = [
     "word": "tingkat",
     "cn": "等级、层次",
     "en": "level",
-    "root": "",
+    "root": "tingkat",
     "categories": [
       "每日学习",
       "08:00",
@@ -17,7 +17,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-22"
-    ]
+    ],
+    "example": "Tingkat bahasa Indonesia saya masih A2.",
+    "example_cn": "我的印尼语水平还在 A2。"
   },
   {
     "word": "meningkat",
@@ -37,7 +39,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-22"
-    ]
+    ],
+    "example": "Kemampuan saya mulai meningkat.",
+    "example_cn": "我的能力开始提高了。"
   },
   {
     "word": "meningkatkan",
@@ -59,7 +63,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-22",
       "2026-08-24"
-    ]
+    ],
+    "example": "Saya ingin meningkatkan bahasa Indonesia saya.",
+    "example_cn": "我想提高我的印尼语。"
   },
   {
     "word": "peningkatan",
@@ -79,13 +85,15 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-22"
-    ]
+    ],
+    "example": "Ada peningkatan dalam kemampuan berbicara saya.",
+    "example_cn": "我的口语能力有所提升。"
   },
   {
     "word": "ganggu",
     "cn": "打扰",
     "en": "disturb / bother",
-    "root": "",
+    "root": "ganggu",
     "categories": [
       "每日学习",
       "08:00",
@@ -99,7 +107,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-22"
-    ]
+    ],
+    "example": "Maaf, saya ganggu sebentar.",
+    "example_cn": "不好意思，我打扰一下。"
   },
   {
     "word": "mengganggu",
@@ -119,13 +129,15 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-22"
-    ]
+    ],
+    "example": "Suara itu mengganggu saya.",
+    "example_cn": "那个声音打扰到我了。"
   },
   {
     "word": "pilih",
     "cn": "选择",
     "en": "choose / select",
-    "root": "",
+    "root": "pilih",
     "categories": [
       "每日学习",
       "08:00",
@@ -139,7 +151,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-22"
-    ]
+    ],
+    "example": "Saya pilih yang ini.",
+    "example_cn": "我选这个。"
   },
   {
     "word": "pilihan",
@@ -161,13 +175,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-22",
       "2026-08-24"
-    ]
+    ],
+    "example": "Ini pilihan terbaik.",
+    "example_cn": "这是最好的选择。"
   },
   {
     "word": "untung",
     "cn": "幸运；赚到",
     "en": "lucky / profit",
-    "root": "",
+    "root": "untung",
     "categories": [
       "每日学习",
       "08:00",
@@ -181,7 +197,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-22"
-    ]
+    ],
+    "example": "Untung saya datang lebih awal.",
+    "example_cn": "幸好我来得早。"
   },
   {
     "word": "keuntungan",
@@ -201,7 +219,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-22"
-    ]
+    ],
+    "example": "Bisnis ini punya keuntungan yang cukup bagus.",
+    "example_cn": "这个生意有不错的利润。"
   },
   {
     "word": "menghadapi",
@@ -310,7 +330,9 @@ window.DAILY_VOCAB_DB = [
       "2026-08-23",
       "2026-08-24",
       "2026-08-30"
-    ]
+    ],
+    "example": "Baru sadar ternyata salah.",
+    "example_cn": "刚意识到原来弄错了。"
   },
   {
     "word": "berkembang",
@@ -445,7 +467,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-25",
       "2026-08-30"
-    ]
+    ],
+    "example": "Biar nggak kejadian lagi, kita hindarin ini.",
+    "example_cn": "为了别再发生，我们避开这个。"
   },
   {
     "word": "menyelesaikan",
@@ -470,7 +494,9 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24",
       "2026-08-25",
       "2026-08-30"
-    ]
+    ],
+    "example": "Hari ini harus diselesain.",
+    "example_cn": "今天必须弄完。"
   },
   {
     "word": "mempertimbangkan",
@@ -521,7 +547,9 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24",
       "2026-08-25",
       "2026-08-30"
-    ]
+    ],
+    "example": "Aku mau pastiin dulu.",
+    "example_cn": "我想先确认一下。"
   },
   {
     "word": "menerima",
@@ -573,7 +601,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-23",
       "2026-08-25"
-    ]
+    ],
+    "example": "Ada juga yang menolak.",
+    "example_cn": "也有人拒绝。"
   },
   {
     "word": "menyesuaikan",
@@ -647,7 +677,9 @@ window.DAILY_VOCAB_DB = [
       "2026-08-23",
       "2026-08-25",
       "2026-08-26"
-    ]
+    ],
+    "example": "Saya masih menunggu jawaban.",
+    "example_cn": "我还在等回复。"
   },
   {
     "word": "menghubungi",
@@ -671,7 +703,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-23",
       "2026-08-26"
-    ]
+    ],
+    "example": "Saya mencoba menghubungi beberapa orang.",
+    "example_cn": "我尝试联系了一些人。"
   },
   {
     "word": "mengirimkan",
@@ -716,7 +750,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-25",
       "2026-08-26"
-    ]
+    ],
+    "example": "Saya meminta informasi.",
+    "example_cn": "我询问信息。"
   },
   {
     "word": "memberikan",
@@ -740,7 +776,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-25",
       "2026-08-26"
-    ]
+    ],
+    "example": "Mereka memberikan informasi.",
+    "example_cn": "他们提供信息。"
   },
   {
     "word": "menjelaskan",
@@ -865,7 +903,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Kayaknya dia lagi sibuk.",
+    "example_cn": "好像他正在忙。"
   },
   {
     "word": "soalnya",
@@ -887,7 +927,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Soalnya aku lagi sibuk.",
+    "example_cn": "因为我现在忙。"
   },
   {
     "word": "makanya",
@@ -907,7 +949,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Makanya aku bilang jangan telat.",
+    "example_cn": "所以我才说别迟到。"
   },
   {
     "word": "sempat",
@@ -930,7 +974,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-26",
       "2026-08-27"
-    ]
+    ],
+    "example": "Tadi aku sempat makan.",
+    "example_cn": "刚才我有时间吃了点东西。"
   },
   {
     "word": "keburu",
@@ -957,8 +1003,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-07",
       "2026-09-11"
     ],
-    "example": "Kabarin sekarang aja sebelum aku keburu masuk meeting.",
-    "example_cn": "现在就跟我说吧，免得我先进去开会了。",
+    "example": "Aku mau jelasin dulu, tapi dia keburu pulang.",
+    "example_cn": "我本来想先解释一下，但他已经先回去了。",
     "root_cn": "赶；追赶"
   },
   {
@@ -979,7 +1025,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Mending besok aja.",
+    "example_cn": "还是明天吧。"
   },
   {
     "word": "ribet",
@@ -999,7 +1047,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Nggak usah ribét.",
+    "example_cn": "不用搞那么麻烦。"
   },
   {
     "word": "nyebelin",
@@ -1049,7 +1099,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-26",
       "2026-08-27"
-    ]
+    ],
+    "example": "Mau makan apa? Terserah kamu.",
+    "example_cn": "吃什么？随你。"
   },
   {
     "word": "nggak apa-apa",
@@ -1072,7 +1124,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-27",
       "2026-08-28"
-    ]
+    ],
+    "example": "Nggak apa-apa.",
+    "example_cn": "没关系。"
   },
   {
     "word": "bentar",
@@ -1092,7 +1146,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Bentar ya, aku lagi makan.",
+    "example_cn": "等一下，我正在吃饭。"
   },
   {
     "word": "lumayan",
@@ -1115,7 +1171,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-28",
       "2026-08-29"
-    ]
+    ],
+    "example": "Lumayan enak sih.",
+    "example_cn": "还挺好吃的。"
   },
   {
     "word": "ternyata",
@@ -1192,7 +1250,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-28",
       "2026-08-29"
-    ]
+    ],
+    "example": "Padahal tadi katanya bisa.",
+    "example_cn": "明明刚才他说可以。"
   },
   {
     "word": "cuma",
@@ -1212,7 +1272,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Aku cuma tanya aja.",
+    "example_cn": "我只是问一下。"
   },
   {
     "word": "langsung",
@@ -1232,7 +1294,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Kalau sudah sampai, langsung kabarin aku.",
+    "example_cn": "到了就马上告诉我。"
   },
   {
     "word": "ngobrol",
@@ -1252,28 +1316,36 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Kita ngobrol bentar yuk.",
+    "example_cn": "我们聊一会儿吧。"
   },
   {
     "word": "ngerepotin",
     "cn": "给人添麻烦",
-    "en": "",
+    "en": "trouble; inconvenience someone",
     "root": "repot",
     "categories": [
       "每日学习",
       "08:00",
       "原始课程",
-      "后续纠正版"
+      "后续纠正版",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-28 08:00",
-    "last_seen": "2026-08-28 08:00",
+    "last_seen": "2026-09-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-28"
-    ]
+      "2026-08-28",
+      "2026-09-22"
+    ],
+    "example": "Maaf kalau aku bolak-balik nanya dan ngerepotin kamu.",
+    "example_cn": "如果我反复问、给你添麻烦了，抱歉。",
+    "root_cn": "麻烦；忙乱"
   },
   {
     "word": "ketinggalan",
@@ -1296,13 +1368,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-28",
       "2026-09-02"
-    ]
+    ],
+    "example": "Aku takut ketinggalan info kalau meeting-nya dipindah mendadak.",
+    "example_cn": "如果会议临时改时间，我怕错过消息。"
   },
   {
     "word": "kabarin",
     "cn": "告诉、通知",
     "en": "",
-    "root": "",
+    "root": "kabar",
     "categories": [
       "每日学习",
       "08:00",
@@ -1316,7 +1390,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-29"
-    ]
+    ],
+    "example": "Nanti kabarin aku ya.",
+    "example_cn": "等会儿告诉我一声。"
   },
   {
     "word": "ketemu",
@@ -1336,7 +1412,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-29"
-    ]
+    ],
+    "example": "Besok kita ketemu di kantor.",
+    "example_cn": "明天我们在办公室见。"
   },
   {
     "word": "mampir",
@@ -1356,13 +1434,15 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-29"
-    ]
+    ],
+    "example": "Kalau sempat, mampir ke sini ya.",
+    "example_cn": "有空的话顺路过来一下。"
   },
   {
     "word": "buru-buru",
     "cn": "匆忙、急急忙忙",
     "en": "",
-    "root": "",
+    "root": "buru",
     "categories": [
       "每日学习",
       "08:00",
@@ -1380,7 +1460,9 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26",
       "2026-08-28",
       "2026-08-29"
-    ]
+    ],
+    "example": "Nggak usah buru-buru.",
+    "example_cn": "不用这么急。"
   },
   {
     "word": "sengaja",
@@ -1400,7 +1482,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-29"
-    ]
+    ],
+    "example": "Aku sengaja datang lebih pagi.",
+    "example_cn": "我特意早点来。"
   },
   {
     "word": "sekalian",
@@ -1480,7 +1564,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-29"
-    ]
+    ],
+    "example": "Aku lagi nyari charger.",
+    "example_cn": "我正在找充电器。"
   },
   {
     "word": "cocok",
@@ -1500,7 +1586,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-29"
-    ]
+    ],
+    "example": "Tempat ini cocok buat meeting.",
+    "example_cn": "这个地方很适合开会。"
   },
   {
     "word": "bawain",
@@ -1520,7 +1608,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-29"
-    ]
+    ],
+    "example": "Bisa bawain aku air?",
+    "example_cn": "能帮我带瓶水吗？"
   },
   {
     "word": "kepikiran",
@@ -1741,8 +1831,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-11"
     ],
     "root_cn": "追上；随后跟上",
-    "example": "Kamu mulai dulu aja, aku nyusul sekitar sepuluh menit lagi.",
-    "example_cn": "你先开始吧，我大概十分钟后跟上。"
+    "example": "Kalian jalan dulu aja, nanti aku nyusul habis meeting.",
+    "example_cn": "你们先走吧，我开完会晚点再过去找你们。"
   },
   {
     "word": "pantes",
@@ -1763,7 +1853,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-30"
-    ]
+    ],
+    "example": "Pantes kamu capek, dari pagi belum istirahat.",
+    "example_cn": "难怪你累，从早上就没休息。"
   },
   {
     "word": "kebagian",
@@ -1789,8 +1881,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-11"
     ],
     "root_cn": "分；分配",
-    "example": "Aku kebagian bagian follow up klien, kamu pegang laporan aja.",
-    "example_cn": "我分到客户跟进这一块，你负责报告就行。"
+    "example": "Aku kebagian tugas follow up vendor yang satu ini.",
+    "example_cn": "我分到的任务是跟进这家供应商。"
   },
   {
     "word": "kehabisan",
@@ -1810,7 +1902,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-30"
-    ]
+    ],
+    "example": "Aku kehabisan baterai.",
+    "example_cn": "我手机没电了。"
   },
   {
     "word": "ketiduran",
@@ -1830,7 +1924,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-30"
-    ]
+    ],
+    "example": "Maaf, tadi aku ketiduran.",
+    "example_cn": "不好意思，我刚才不小心睡着了。"
   },
   {
     "word": "ngantuk",
@@ -1850,7 +1946,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-30"
-    ]
+    ],
+    "example": "Aku ngantuk banget habis makan.",
+    "example_cn": "我吃完饭特别困。"
   },
   {
     "word": "penasaran",
@@ -1870,7 +1968,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-30"
-    ]
+    ],
+    "example": "Aku penasaran dia bakal bilang apa.",
+    "example_cn": "我很好奇他会说什么。"
   },
   {
     "word": "ngaret",
@@ -1894,8 +1994,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10"
     ],
     "root_cn": "橡胶；引申为时间被‘拉长’",
-    "example": "Meeting-nya ngaret hampir setengah jam, jadi jadwal setelahnya ikut mundur.",
-    "example_cn": "会议晚了快半小时，所以后面的安排也跟着往后推。"
+    "example": "Dia kalau janjian suka ngarét.",
+    "example_cn": "他约时间经常迟到。"
   },
   {
     "word": "mager",
@@ -1915,7 +2015,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-30"
-    ]
+    ],
+    "example": "Hari ini aku mager keluar.",
+    "example_cn": "今天我懒得出门。"
   },
   {
     "word": "bingung",
@@ -1935,7 +2037,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-30"
-    ]
+    ],
+    "example": "Aku bingung mau pilih yang mana.",
+    "example_cn": "我不知道该选哪个。"
   },
   {
     "word": "kebanyakan",
@@ -1955,7 +2059,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-30"
-    ]
+    ],
+    "example": "Jangan kebanyakan kopi.",
+    "example_cn": "别喝太多咖啡。"
   },
   {
     "word": "terjadi",
@@ -1975,7 +2081,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-23"
-    ]
+    ],
+    "example": "Apa yang terjadi?",
+    "example_cn": "发生了什么？"
   },
   {
     "word": "berubah",
@@ -1996,7 +2104,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-23",
       "2026-08-24"
-    ]
+    ],
+    "example": "Situasinya sudah berubah.",
+    "example_cn": "情况已经变了。"
   },
   {
     "word": "memutuskan",
@@ -2016,7 +2126,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-23"
-    ]
+    ],
+    "example": "Saya memutuskan untuk tetap tinggal di Indonesia.",
+    "example_cn": "我决定继续留在印尼。"
   },
   {
     "word": "mengalami",
@@ -2037,7 +2149,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-23",
       "2026-08-30"
-    ]
+    ],
+    "example": "Kemarin sempat ngalamin masalah yang sama.",
+    "example_cn": "昨天也遇到过同样的问题。"
   },
   {
     "word": "mencoba",
@@ -2057,7 +2171,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-23"
-    ]
+    ],
+    "example": "Saya mau mencoba.",
+    "example_cn": "我想试一下。"
   },
   {
     "word": "menurut",
@@ -2077,7 +2193,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-23"
-    ]
+    ],
+    "example": "Menurut saya, ini cukup penting.",
+    "example_cn": "我认为这个挺重要。"
   },
   {
     "word": "walaupun",
@@ -2097,7 +2215,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-23"
-    ]
+    ],
+    "example": "Walaupun sulit, saya tetap mau mencoba.",
+    "example_cn": "虽然困难，我还是想试试。"
   },
   {
     "word": "mengubah",
@@ -2117,7 +2237,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
-    ]
+    ],
+    "example": "Saya mau mengubah rencana.",
+    "example_cn": "我想改变计划。"
   },
   {
     "word": "perubahan",
@@ -2137,7 +2259,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
-    ]
+    ],
+    "example": "Ada sedikit perubahan.",
+    "example_cn": "有一点变化。"
   },
   {
     "word": "mengatasi",
@@ -2184,7 +2308,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
-    ]
+    ],
+    "example": "Saya akan berusaha.",
+    "example_cn": "我会努力。"
   },
   {
     "word": "berencana",
@@ -2204,7 +2330,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
-    ]
+    ],
+    "example": "Saya berencana untuk pergi besok.",
+    "example_cn": "我计划明天去。"
   },
   {
     "word": "terbiasa",
@@ -2224,7 +2352,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
-    ]
+    ],
+    "example": "Saya sudah terbiasa tinggal di Indonesia.",
+    "example_cn": "我已经习惯住在印尼了。"
   },
   {
     "word": "terutama",
@@ -2244,7 +2374,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
-    ]
+    ],
+    "example": "Terutama kalau sedang sibuk.",
+    "example_cn": "尤其是忙的时候。"
   },
   {
     "word": "sementara",
@@ -2265,7 +2397,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-24",
       "2026-08-30"
-    ]
+    ],
+    "example": "Sementara pakai cara ini dulu.",
+    "example_cn": "暂时先用这个办法。"
   },
   {
     "word": "setidaknya",
@@ -2286,7 +2420,9 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-24",
       "2026-08-29"
-    ]
+    ],
+    "example": "Setidaknya kita udah coba.",
+    "example_cn": "至少我们试过了。"
   },
   {
     "word": "selesai",
@@ -2306,7 +2442,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-25"
-    ]
+    ],
+    "example": "Pekerjaan ini sudah selesai.",
+    "example_cn": "这项工作已经完成了。"
   },
   {
     "word": "memerlukan",
@@ -2326,7 +2464,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-25"
-    ]
+    ],
+    "example": "Proses ini memerlukan sedikit waktu.",
+    "example_cn": "这个流程需要一点时间。"
   },
   {
     "word": "menyiapkan",
@@ -2346,7 +2486,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-25"
-    ]
+    ],
+    "example": "Saya menyiapkan dokumen.",
+    "example_cn": "我准备文件。"
   },
   {
     "word": "mengirim",
@@ -2366,7 +2508,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-25"
-    ]
+    ],
+    "example": "Dokumennya sudah dikirim.",
+    "example_cn": "文件已经发了。"
   },
   {
     "word": "memeriksa",
@@ -2386,7 +2530,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-25"
-    ]
+    ],
+    "example": "Dokumennya sedang diperiksa.",
+    "example_cn": "文件正在审核。"
   },
   {
     "word": "melanjutkan",
@@ -2406,7 +2552,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-25"
-    ]
+    ],
+    "example": "Saya akan melanjutkan pekerjaan.",
+    "example_cn": "我会继续工作。"
   },
   {
     "word": "segera",
@@ -2452,7 +2600,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-25"
-    ]
+    ],
+    "example": "Masih dalam proses.",
+    "example_cn": "还在处理中。"
   },
   {
     "word": "kayaknya",
@@ -2472,7 +2622,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
-    ]
+    ],
+    "example": "Kayaknya nggak jadi.",
+    "example_cn": "好像去不了了 / 好像取消了。"
   },
   {
     "word": "nggak jadi",
@@ -2492,7 +2644,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
-    ]
+    ],
+    "example": "Kayaknya hari ini nggak jadi deh.",
+    "example_cn": "今天好像不去了。"
   },
   {
     "word": "mendadak",
@@ -2512,7 +2666,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
-    ]
+    ],
+    "example": "Aku ada urusan mendadak.",
+    "example_cn": "我临时有点事。"
   },
   {
     "word": "ada urusan",
@@ -2532,7 +2688,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
-    ]
+    ],
+    "example": "Aku ada urusan mendadak.",
+    "example_cn": "我临时有点事。"
   },
   {
     "word": "nggak sempat",
@@ -2552,7 +2710,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
-    ]
+    ],
+    "example": "Aku nggak sempat makan siang.",
+    "example_cn": "我没时间吃午饭。"
   },
   {
     "word": "telat",
@@ -2572,7 +2732,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
-    ]
+    ],
+    "example": "Kayaknya aku bakal telat dikit.",
+    "example_cn": "我可能会晚一点到。"
   },
   {
     "word": "gimana kalau",
@@ -2592,7 +2754,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
-    ]
+    ],
+    "example": "Gimana kalau besok aja?",
+    "example_cn": "要不就明天？"
   },
   {
     "word": "kabari aja",
@@ -2612,7 +2776,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
-    ]
+    ],
+    "example": "Nanti kabari aja.",
+    "example_cn": "到时候告诉我就行。"
   },
   {
     "word": "jadi",
@@ -2632,7 +2798,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Besok jadi pergi nggak?",
+    "example_cn": "明天还去吗？"
   },
   {
     "word": "aja",
@@ -2652,7 +2820,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Di sini aja.",
+    "example_cn": "就这里吧。"
   },
   {
     "word": "kan",
@@ -2672,7 +2842,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Aku udah bilang, kan?",
+    "example_cn": "我不是说过了吗？"
   },
   {
     "word": "sih",
@@ -2692,7 +2864,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Kamu lagi ngapain sih?",
+    "example_cn": "你到底在干嘛呢？"
   },
   {
     "word": "kok",
@@ -2712,7 +2886,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Kok mahal banget?",
+    "example_cn": "怎么这么贵？"
   },
   {
     "word": "dong",
@@ -2732,7 +2908,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Bantuin aku dong.",
+    "example_cn": "帮帮我嘛。"
   },
   {
     "word": "nih",
@@ -2752,7 +2930,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Aku lagi sibuk nih.",
+    "example_cn": "我现在正忙呢。"
   },
   {
     "word": "deh",
@@ -2772,7 +2952,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Besok aja deh.",
+    "example_cn": "还是明天吧。"
   },
   {
     "word": "emang",
@@ -2792,7 +2974,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Emang kamu nggak tahu?",
+    "example_cn": "你真不知道？"
   },
   {
     "word": "terus",
@@ -2812,7 +2996,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Terus gimana?",
+    "example_cn": "然后怎么办？"
   },
   {
     "word": "biar",
@@ -2832,7 +3018,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-27"
-    ]
+    ],
+    "example": "Biar aku aja.",
+    "example_cn": "让我来就行。"
   },
   {
     "word": "tolong",
@@ -2852,7 +3040,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Tolong cek dulu.",
+    "example_cn": "麻烦先查一下。"
   },
   {
     "word": "minta",
@@ -2872,7 +3062,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Minta info dong.",
+    "example_cn": "给点信息吧。"
   },
   {
     "word": "tanyain",
@@ -2892,7 +3084,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Bisa tanyain nggak?",
+    "example_cn": "能帮忙问一下吗？"
   },
   {
     "word": "cek",
@@ -2912,7 +3106,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Aku belum sempat cek.",
+    "example_cn": "我还没来得及看。"
   },
   {
     "word": "ingetin",
@@ -2932,7 +3128,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Nanti ingetin aku ya.",
+    "example_cn": "等下提醒我一下。"
   },
   {
     "word": "nunggu",
@@ -2952,7 +3150,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Aku lagi nunggu.",
+    "example_cn": "我在等。"
   },
   {
     "word": "belum sempat",
@@ -2972,7 +3172,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Aku belum sempat cek.",
+    "example_cn": "我还没来得及看。"
   },
   {
     "word": "sebentar / bentar",
@@ -2992,7 +3194,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Bentar ya.",
+    "example_cn": "等一下啊。"
   },
   {
     "word": "nanti dulu",
@@ -3012,7 +3216,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Nanti dulu ya.",
+    "example_cn": "先等等啊。"
   },
   {
     "word": "nggak usah",
@@ -3032,7 +3238,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-28"
-    ]
+    ],
+    "example": "Nggak usah datang.",
+    "example_cn": "不用来了。"
   },
   {
     "word": "heran",
@@ -3052,7 +3260,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-29"
-    ]
+    ],
+    "example": "Aku heran, kok dia belum datang?",
+    "example_cn": "我纳闷，他怎么还没来？"
   },
   {
     "word": "harusnya",
@@ -3072,7 +3282,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-29"
-    ]
+    ],
+    "example": "Harusnya udah selesai.",
+    "example_cn": "按理说应该已经好了。"
   },
   {
     "word": "nyaris",
@@ -3117,7 +3329,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-29"
-    ]
+    ],
+    "example": "Aku terpaksa pulang dulu.",
+    "example_cn": "我没办法，只能先回去了。"
   },
   {
     "word": "menentukan",
@@ -3216,7 +3430,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-30"
-    ]
+    ],
+    "example": "Seharusnya hari ini udah selesai.",
+    "example_cn": "按理今天应该好了。"
   },
   {
     "word": "terlanjur",
@@ -3260,7 +3476,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Kalau berangkat jam delapan, biasanya macet banget.",
+    "example_cn": "如果八点出发，通常会堵得很厉害。"
   },
   {
     "word": "nyasar",
@@ -3279,7 +3497,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Tadi driver-nya nyasar, jadi muter agak jauh.",
+    "example_cn": "刚才司机走错路了，所以绕得有点远。"
   },
   {
     "word": "nganter",
@@ -3298,7 +3518,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Nanti aku nganter kamu sampai stasiun aja.",
+    "example_cn": "等会儿我就送你到车站吧。"
   },
   {
     "word": "jemput",
@@ -3317,7 +3539,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Jam enam bisa jemput aku di depan kantor nggak?",
+    "example_cn": "六点能到办公室门口接我吗？"
   },
   {
     "word": "parkir",
@@ -3336,7 +3560,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Di sini susah cari tempat parkir.",
+    "example_cn": "这里很难找停车位。"
   },
   {
     "word": "saldo",
@@ -3355,7 +3581,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Saldo e-wallet aku tinggal sedikit.",
+    "example_cn": "我的电子钱包余额只剩一点了。"
   },
   {
     "word": "rekening",
@@ -3374,7 +3602,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Kirim nomor rekening kamu ya.",
+    "example_cn": "把你的银行账号发给我。"
   },
   {
     "word": "tagihan",
@@ -3418,7 +3648,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Bulan ini aku harus lebih hemat.",
+    "example_cn": "这个月我得更省一点。"
   },
   {
     "word": "boros",
@@ -3437,7 +3669,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Kalau tiap hari pesan kopi, lumayan boros juga.",
+    "example_cn": "如果每天都点咖啡，其实也挺费钱的。"
   },
   {
     "word": "pengeluaran",
@@ -3456,7 +3690,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Aku lagi nyatet pengeluaran bulan ini biar nggak kebablasan.",
+    "example_cn": "我正在记这个月的支出，免得花过头。"
   },
   {
     "word": "pemasukan",
@@ -3475,7 +3711,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Pemasukan bulan ini lumayan, tapi pengeluarannya juga naik.",
+    "example_cn": "这个月收入还可以，但支出也涨了。"
   },
   {
     "word": "anggaran",
@@ -3494,7 +3732,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Anggaran buat bulan depan kayaknya harus dikurangin.",
+    "example_cn": "下个月的预算看来得压一压。"
   },
   {
     "word": "biaya",
@@ -3513,7 +3753,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Biaya hidup di Jakarta emang lumayan tinggi.",
+    "example_cn": "雅加达的生活成本确实挺高。"
   },
   {
     "word": "cicilan",
@@ -3532,7 +3774,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Bulan ini masih ada cicilan yang harus dibayar.",
+    "example_cn": "这个月还有分期款要付。"
   },
   {
     "word": "prioritas",
@@ -3551,7 +3795,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Kalau duitnya terbatas, tentuin dulu mana yang jadi prioritas.",
+    "example_cn": "如果钱有限，先确定什么最优先。"
   },
   {
     "word": "mengatur",
@@ -3570,7 +3816,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Aku lagi belajar ngatur uang biar akhir bulan nggak kehabisan.",
+    "example_cn": "我在学着管钱，免得月底没钱。"
   },
   {
     "word": "membatasi",
@@ -3589,7 +3837,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Aku mulai ngebatasin jajan kopi tiap hari.",
+    "example_cn": "我开始限制自己每天买咖啡了。"
   },
   {
     "word": "menunda",
@@ -3608,7 +3858,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Kalau nggak mendesak, pembeliannya bisa ditunda dulu.",
+    "example_cn": "如果不急，这笔购买可以先推迟。"
   },
   {
     "word": "memperkirakan",
@@ -3627,7 +3879,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Coba perkirain dulu total biayanya sebelum beli.",
+    "example_cn": "买之前先估一下总费用。"
   },
   {
     "word": "keperluan",
@@ -3646,7 +3900,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-31"
-    ]
+    ],
+    "example": "Uangnya aku pisahin buat keperluan rumah sama kerja.",
+    "example_cn": "我把钱分开用于家里和工作的开销。"
   },
   {
     "word": "cadangan",
@@ -3688,7 +3944,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Kalau jam segini, kendaraan di jalan mulai banyak.",
+    "example_cn": "这个时间路上的车开始多起来了。"
   },
   {
     "word": "belok",
@@ -3707,7 +3965,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Nanti belok kiri setelah minimarket.",
+    "example_cn": "等会儿过了便利店左转。"
   },
   {
     "word": "lurus",
@@ -3726,7 +3986,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Dari sini lurus aja sampai lampu merah.",
+    "example_cn": "从这里一直直走到红绿灯。"
   },
   {
     "word": "putar balik",
@@ -3745,7 +4007,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Kita kelewatan, mending putar balik di depan.",
+    "example_cn": "我们开过头了，最好在前面掉头。"
   },
   {
     "word": "tunai",
@@ -3764,7 +4028,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Kalau bayar tunai, ada kembalian nggak?",
+    "example_cn": "如果付现金，有零钱找吗？"
   },
   {
     "word": "kembalian",
@@ -3783,7 +4049,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Nggak usah kembalian, pas aja.",
+    "example_cn": "不用找零了，刚好。"
   },
   {
     "word": "transfer",
@@ -3802,7 +4070,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Aku transfer sekarang, nanti kamu cek ya.",
+    "example_cn": "我现在转账，等会儿你查一下。"
   },
   {
     "word": "utang",
@@ -3821,7 +4091,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Aku masih punya utang kecil sama dia.",
+    "example_cn": "我还欠他一点钱。"
   },
   {
     "word": "pinjam",
@@ -3840,7 +4112,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Boleh pinjam charger sebentar?",
+    "example_cn": "充电器能借我一会儿吗？"
   },
   {
     "word": "stok",
@@ -3859,7 +4133,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Stok barang ini tinggal sedikit, harus pesan lagi.",
+    "example_cn": "这个商品库存只剩一点了，得再订一些。"
   },
   {
     "word": "akhirnya",
@@ -3878,7 +4154,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Akhirnya masalah itu selesai juga.",
+    "example_cn": "那个问题终于解决了。"
   },
   {
     "word": "sebenarnya",
@@ -3919,7 +4197,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Justru sekarang aku lebih tenang.",
+    "example_cn": "反而现在我更平静了。"
   },
   {
     "word": "meskipun",
@@ -3961,7 +4241,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Tetap kabarin aku kalau ada perubahan.",
+    "example_cn": "如果有变化还是告诉我一声。"
   },
   {
     "word": "bahkan",
@@ -4003,7 +4285,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Berarti besok kita nggak perlu datang pagi-pagi.",
+    "example_cn": "也就是说，明天我们不用一大早来。"
   },
   {
     "word": "termasuk",
@@ -4022,7 +4306,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Termasuk biaya parkir juga, ya?",
+    "example_cn": "也包括停车费，对吧？"
   },
   {
     "word": "menganggap",
@@ -4041,7 +4327,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Aku menganggap masalah ini cukup penting.",
+    "example_cn": "我认为这个问题挺重要。"
   },
   {
     "word": "memahami",
@@ -4060,7 +4348,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Aku memahami maksud kamu, kok.",
+    "example_cn": "我明白你的意思啊。"
   },
   {
     "word": "menjaga",
@@ -4079,7 +4369,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Menjaga komunikasi tetap jelas itu penting.",
+    "example_cn": "保持沟通清楚很重要。"
   },
   {
     "word": "kemungkinan",
@@ -4098,7 +4390,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-01"
-    ]
+    ],
+    "example": "Kemungkinan besok jadwalnya berubah.",
+    "example_cn": "明天的安排有可能会变。"
   },
   {
     "word": "jadwal",
@@ -4118,7 +4412,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Jadwal siang ini berubah lagi.",
+    "example_cn": "今天下午的日程又变了。"
   },
   {
     "word": "batal",
@@ -4138,7 +4434,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Meeting jam dua akhirnya batal.",
+    "example_cn": "两点的会议最后取消了。"
   },
   {
     "word": "lanjut",
@@ -4158,7 +4456,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Kalau sudah beres, kita lanjut bahas bagian berikutnya.",
+    "example_cn": "如果已经处理完，我们继续讨论下一部分。"
   },
   {
     "word": "izin",
@@ -4178,7 +4478,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Besok aku izin datang agak siang ya.",
+    "example_cn": "明天我请示一下，会晚一点来。"
   },
   {
     "word": "cuti",
@@ -4198,7 +4500,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Aku mau ambil cuti dua hari minggu depan.",
+    "example_cn": "我下周想休两天假。"
   },
   {
     "word": "lembur",
@@ -4218,7 +4522,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Kalau kerjaan belum beres, mungkin malam ini harus lembur.",
+    "example_cn": "如果工作还没做完，今晚可能得加班。"
   },
   {
     "word": "urusan",
@@ -4238,7 +4544,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Siang ini aku ada urusan di luar kantor.",
+    "example_cn": "今天下午我有事情要去办公室外处理。"
   },
   {
     "word": "ngurus",
@@ -4288,8 +4596,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10"
     ],
     "root_cn": "追；赶",
-    "example": "Hari ini aku harus ngejar dua follow-up yang kemarin belum beres.",
-    "example_cn": "今天我得赶两项昨天还没处理完的跟进。"
+    "example": "Hari ini aku harus ngejar deadline sebelum jam lima.",
+    "example_cn": "今天我得在五点前赶上截止时间。"
   },
   {
     "word": "dadakan",
@@ -4364,7 +4672,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Aku mau beresin kerjaan ini dulu sebelum meeting berikutnya.",
+    "example_cn": "我想先把这个工作处理完，再去下一个会议。"
   },
   {
     "word": "ngabarin",
@@ -4383,7 +4693,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Kalau jadwalnya berubah, ngabarin aku dari awal ya.",
+    "example_cn": "如果时间有变化，早点告诉我一声。"
   },
   {
     "word": "sempetin",
@@ -4402,7 +4714,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Nanti sempetin baca dokumennya sebelum pulang, ya.",
+    "example_cn": "等会儿下班前挤点时间看一下文件。"
   },
   {
     "word": "keteteran",
@@ -4428,8 +4742,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10",
       "2026-09-11"
     ],
-    "example": "Kalau semua tugas masuk barengan, aku bisa keteteran.",
-    "example_cn": "如果所有任务一起进来，我可能会忙不过来。",
+    "example": "Kalau semua dikerjain barengan, aku malah keteteran.",
+    "example_cn": "如果所有事情一起做，我反而会忙不过来。",
     "root_cn": "忙不过来；跟不上"
   },
   {
@@ -4449,7 +4763,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Dokumen ini jangan sampai kepending sampai minggu depan.",
+    "example_cn": "这个文件别一直搁到下周。"
   },
   {
     "word": "ngejar deadline",
@@ -4468,7 +4784,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-02"
-    ]
+    ],
+    "example": "Aku lagi ngejar deadline, jadi siang ini fokus dulu ke laporan.",
+    "example_cn": "我正在赶截止时间，所以今天下午先专心做报告。"
   },
   {
     "word": "urusan dadakan",
@@ -4575,8 +4893,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03",
       "2026-09-11"
     ],
-    "example": "Aku nyatet tiga poin penting biar nanti nggak lupa.",
-    "example_cn": "我把三个重点记下来了，免得之后忘记。",
+    "example": "Tolong ulang sekali lagi, aku mau nyatet poin pentingnya.",
+    "example_cn": "请再说一遍，我想把重点记下来。",
     "root_cn": "记录；记下"
   },
   {
@@ -4879,8 +5197,8 @@ window.DAILY_VOCAB_DB = [
     "cn": "错过；坐过站；超过头；过分（口语）",
     "en": "miss; go past; overshoot; go too far",
     "root": "lewat",
-    "example": "Aku tadi hampir kelewatan stasiun karena lagi fokus balas chat.",
-    "example_cn": "我刚才因为专心回消息，差点坐过站。",
+    "example": "Aku tadi hampir kelewatan halte karena lagi baca chat.",
+    "example_cn": "我刚才因为在看聊天消息，差点坐过站。",
     "categories": [
       "每日学习",
       "08:00"
@@ -4902,8 +5220,8 @@ window.DAILY_VOCAB_DB = [
     "cn": "连得上；接得上；说得通；聊得来（口语）",
     "en": "connect; make sense; click with someone",
     "root": "sambung",
-    "example": "Kalau konteks awalnya nggak dijelasin, bagian ini jadi kurang nyambung.",
-    "example_cn": "如果前面的背景没说明，这一部分就有点接不上。",
+    "example": "Penjelasannya jelas, jadi semua poinnya nyambung.",
+    "example_cn": "他的解释很清楚，所以所有要点都能连得起来。",
     "categories": [
       "每日学习",
       "08:00"
@@ -4964,7 +5282,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-04"
-    ]
+    ],
+    "root_cn": "交换；更换"
   },
   {
     "word": "kebaca",
@@ -4985,7 +5304,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-04"
-    ]
+    ],
+    "root_cn": "读；阅读"
   },
   {
     "word": "kebayang",
@@ -5006,7 +5326,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-04"
-    ]
+    ],
+    "root_cn": "影子；脑中的影像"
   },
   {
     "word": "ngikutin",
@@ -5051,7 +5372,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-04"
-    ]
+    ],
+    "root_cn": "乱；散乱"
   },
   {
     "word": "beneran",
@@ -5072,7 +5394,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-04"
-    ]
+    ],
+    "root_cn": "正确；真的"
   },
   {
     "word": "kerjaan numpuk",
@@ -5989,7 +6312,7 @@ window.DAILY_VOCAB_DB = [
       "2026-09-11"
     ],
     "example": "Tadi penjelasanku kepotong karena ada telepon masuk.",
-    "example_cn": "刚才我的说明被一个来电打断了。"
+    "example_cn": "刚才我的说明因为有电话打进来被打断了。"
   },
   {
     "word": "ngingetin",
@@ -6014,8 +6337,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10",
       "2026-09-11"
     ],
-    "example": "Nanti siang ngingetin aku buat follow up vendor itu ya.",
-    "example_cn": "中午提醒我跟进一下那个供应商。"
+    "example": "Besok pagi ngingetin aku soal dokumen itu ya.",
+    "example_cn": "明天早上提醒我一下那份文件。"
   },
   {
     "word": "asal jangan",
@@ -7006,23 +7329,24 @@ window.DAILY_VOCAB_DB = [
     "en": "get; catch; understand",
     "root": "tangkap",
     "root_cn": "抓住；捕捉",
-    "example": "Setelah dia menjelaskan lagi, aku baru nangkep maksudnya.",
-    "example_cn": "他重新解释以后，我才听懂他的意思。",
+    "example": "Aku nanya lagi karena tadi belum nangkep maksudnya.",
+    "example_cn": "我又问了一次，因为刚才还没听懂他的意思。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-19 18:00",
+    "last_seen": "2026-09-21 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-11",
-      "2026-09-19"
+      "2026-09-19",
+      "2026-09-21"
     ]
   },
   {
@@ -7379,23 +7703,24 @@ window.DAILY_VOCAB_DB = [
     "en": "mention; touch on; offend",
     "root": "singgung",
     "root_cn": "触及；提到",
-    "example": "Tadi aku cuma nyinggung soal jadwal, bukan mau bikin dia tidak nyaman.",
-    "example_cn": "刚才我只是提到日程，不是想让他不舒服。",
+    "example": "Aku cuma nanya soal jadwal, bukan mau nyinggung hal pribadi.",
+    "example_cn": "我只是问日程，不是想触及私人话题。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-18 18:00",
+    "last_seen": "2026-09-21 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-12",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-21"
     ]
   },
   {
@@ -7426,23 +7751,24 @@ window.DAILY_VOCAB_DB = [
     "en": "get provoked; take the bait; be drawn into reacting",
     "root": "pancing",
     "root_cn": "钓；引诱；诱出反应",
-    "example": "Kalau ada komplain keras, jangan langsung kepancing emosi.",
-    "example_cn": "如果遇到语气很冲的投诉，不要马上被激起情绪。",
+    "example": "Kalau ada komentar keras, jangan langsung kepancing emosi.",
+    "example_cn": "如果有人说话很冲，不要马上被激起情绪。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-20 18:00",
+    "last_seen": "2026-09-21 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-12",
-      "2026-09-20"
+      "2026-09-20",
+      "2026-09-21"
     ]
   },
   {
@@ -8607,16 +8933,16 @@ window.DAILY_VOCAB_DB = [
     "en": "need; require",
     "root": "butuh",
     "root_cn": "需要",
-    "example": "Masalah pelanggan ini membutuhkan jawaban yang jelas.",
-    "example_cn": "这个顾客问题需要一个清楚的答复。",
+    "example": "Masalah ini membutuhkan jawaban yang jelas.",
+    "example_cn": "这个问题需要一个清楚的答复。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-20 18:00",
+    "last_seen": "2026-09-21 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -8624,7 +8950,8 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-16",
       "2026-09-19",
-      "2026-09-20"
+      "2026-09-20",
+      "2026-09-21"
     ]
   },
   {
@@ -8745,22 +9072,23 @@ window.DAILY_VOCAB_DB = [
     "en": "plug in; insert",
     "root": "colok",
     "root_cn": "插；插入",
-    "example": "Tolong colok charger ini ke stopkontak dekat meja.",
-    "example_cn": "请把这个充电器插到桌子旁边的插座上。",
+    "example": "Tolong colok charger sebelum rapat dimulai.",
+    "example_cn": "开会前请把充电器插上。",
     "categories": [
       "每日学习",
       "18:00",
       "口语"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-16 18:00",
-    "last_seen": "2026-09-20 18:00",
+    "last_seen": "2026-09-21 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
       "2026-09-16",
-      "2026-09-20"
+      "2026-09-20",
+      "2026-09-21"
     ]
   },
   {
@@ -8842,7 +9170,7 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-17 08:00",
     "last_seen": "2026-09-23 18:00",
     "sessions": [
@@ -8851,6 +9179,7 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17",
+      "2026-09-22",
       "2026-09-23"
     ]
   },
@@ -9022,15 +9351,16 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-17 18:00",
-    "last_seen": "2026-09-20 18:00",
+    "last_seen": "2026-09-21 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
       "2026-09-17",
-      "2026-09-20"
+      "2026-09-20",
+      "2026-09-21"
     ]
   },
   {
@@ -9759,7 +10089,7 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-20 08:00",
     "last_seen": "2026-09-23 18:00",
     "sessions": [
@@ -9768,6 +10098,7 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20",
+      "2026-09-22",
       "2026-09-23"
     ]
   },
@@ -9821,20 +10152,23 @@ window.DAILY_VOCAB_DB = [
     "en": "allow / permit",
     "root": "izin",
     "root_cn": "许可；允许",
-    "example": "Atasan mengizinkan saya pulang lebih awal hari ini.",
-    "example_cn": "上司允许我今天早点回家。",
+    "example": "Atasan mengizinkan kami balik lebih awal setelah pekerjaan selesai.",
+    "example_cn": "工作完成后，上司允许我们早点回去。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-09-22"
     ]
   },
   {
@@ -10204,15 +10538,18 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "听到那个消息后他一度哭了，但后来慢慢平静下来。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
-    "first_seen": "2026-09-23 18:00",
+    "times_seen": 2,
+    "first_seen": "2026-09-22 08:00",
     "last_seen": "2026-09-23 18:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
+      "2026-09-22",
       "2026-09-23"
     ]
   },
@@ -10226,15 +10563,18 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "在长期尝试解决家庭问题后，他们选择了离婚。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
-    "first_seen": "2026-09-23 18:00",
+    "times_seen": 2,
+    "first_seen": "2026-09-22 08:00",
     "last_seen": "2026-09-23 18:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
+      "2026-09-22",
       "2026-09-23"
     ]
   },
@@ -10271,15 +10611,18 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
-    "first_seen": "2026-09-23 18:00",
+    "times_seen": 2,
+    "first_seen": "2026-09-22 08:00",
     "last_seen": "2026-09-23 18:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
+      "2026-09-22",
       "2026-09-23"
     ]
   },
@@ -10692,15 +11035,18 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
-    "first_seen": "2026-09-24 08:00",
+    "times_seen": 2,
+    "first_seen": "2026-09-22 18:00",
     "last_seen": "2026-09-24 08:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
+      "2026-09-22",
       "2026-09-24"
     ]
   },
@@ -10725,6 +11071,300 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ]
+  },
+  {
+    "word": "semacam",
+    "cn": "类似于；某种",
+    "en": "a kind of; something like",
+    "root": "macam",
+    "root_cn": "种类；类型",
+    "example": "Ini semacam masalah jadwal, bukan masalah besar.",
+    "example_cn": "这算是某种日程问题，不是什么大问题。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 18:00",
+    "last_seen": "2026-09-21 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "melainkan",
+    "cn": "而是",
+    "en": "but rather",
+    "root": "lain",
+    "root_cn": "其他；不同",
+    "example": "Masalahnya bukan ukuran, melainkan informasi yang belum jelas.",
+    "example_cn": "问题不是尺寸，而是信息还不清楚。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 18:00",
+    "last_seen": "2026-09-21 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "menabrak",
+    "cn": "撞；撞上",
+    "en": "hit; crash into",
+    "root": "tabrak",
+    "root_cn": "撞；碰撞",
+    "example": "Mobil itu hampir menabrak motor di depan kantor.",
+    "example_cn": "那辆汽车差点撞到办公室前面的摩托车。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-21 18:00",
+    "last_seen": "2026-09-21 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "word": "nanya",
+    "cn": "问；询问（口语）",
+    "en": "ask (colloquial)",
+    "root": "tanya",
+    "root_cn": "问；询问",
+    "example": "Kalau belum jelas, langsung nanya saja.",
+    "example_cn": "如果还不清楚，直接问就行。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语",
+      "08:00"
+    ],
+    "times_seen": 2,
+    "first_seen": "2026-09-21 18:00",
+    "last_seen": "2026-09-22 08:00",
+    "sessions": [
+      "18:00",
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-21",
+      "2026-09-22"
+    ]
+  },
+  {
+    "word": "mendengarkan",
+    "cn": "听",
+    "en": "listen to",
+    "root": "dengar",
+    "root_cn": "听；听见",
+    "example": "Aku memilih mendengarkan penjelasannya dulu sebelum menjawab.",
+    "example_cn": "我选择先听完他的解释再回答。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "18:00"
+    ],
+    "times_seen": 2,
+    "first_seen": "2026-09-22 08:00",
+    "last_seen": "2026-09-22 18:00",
+    "sessions": [
+      "08:00",
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-22"
+    ]
+  },
+  {
+    "word": "gagal",
+    "cn": "失败",
+    "en": "fail; failure",
+    "root": "gagal",
+    "root_cn": "失败",
+    "example": "Kalau cara pertama gagal, kita cari cara lain tanpa panik.",
+    "example_cn": "如果第一个办法失败了，我们不慌，换个办法。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "18:00"
+    ],
+    "times_seen": 2,
+    "first_seen": "2026-09-22 08:00",
+    "last_seen": "2026-09-22 18:00",
+    "sessions": [
+      "08:00",
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-22"
+    ]
+  },
+  {
+    "word": "puas",
+    "cn": "满意的",
+    "en": "satisfied",
+    "root": "puas",
+    "root_cn": "满意",
+    "example": "Pelanggan puas dengan hasil pekerjaan kami.",
+    "example_cn": "客户对我们的工作结果很满意。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-22 08:00",
+    "last_seen": "2026-09-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-22"
+    ]
+  },
+  {
+    "word": "menghapus",
+    "cn": "删除 / 擦除",
+    "en": "delete; erase",
+    "root": "hapus",
+    "root_cn": "删除；擦掉",
+    "example": "Jangan menghapus data sebelum membuat salinannya.",
+    "example_cn": "备份之前不要删除数据。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-22 08:00",
+    "last_seen": "2026-09-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-22"
+    ]
+  },
+  {
+    "word": "mengunci",
+    "cn": "锁上",
+    "en": "lock",
+    "root": "kunci",
+    "root_cn": "钥匙；锁",
+    "example": "Jangan lupa mengunci pintu sebelum keluar.",
+    "example_cn": "出门前别忘了锁门。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-22 08:00",
+    "last_seen": "2026-09-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-22"
+    ]
+  },
+  {
+    "word": "meninggalkan",
+    "cn": "离开，留下",
+    "en": "leave; leave behind",
+    "root": "tinggal",
+    "root_cn": "住；留下",
+    "example": "Dia meninggalkan kantor lebih awal karena ada urusan keluarga.",
+    "example_cn": "他因为家里有事提前离开了办公室。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-22 08:00",
+    "last_seen": "2026-09-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-22"
+    ]
+  },
+  {
+    "word": "sok",
+    "cn": "装作；自以为；故意摆出某种样子",
+    "en": "act as if; pretend to be",
+    "root": "sok",
+    "root_cn": "装作；自以为",
+    "example": "Kalau belum paham, jangan sok tahu; lebih baik nanya dulu.",
+    "example_cn": "如果还不懂，别装懂；最好先问一下。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-22 18:00",
+    "last_seen": "2026-09-22 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-22"
+    ]
+  },
+  {
+    "word": "seraya",
+    "cn": "同时；一边……一边……",
+    "en": "while; at the same time",
+    "root": "seraya",
+    "root_cn": "同时；一边……一边……",
+    "example": "Dia menjelaskan masalah itu seraya menunjukkan catatannya.",
+    "example_cn": "他一边解释那个问题，一边给我看记录。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-22 18:00",
+    "last_seen": "2026-09-22 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-22"
+    ]
+  },
+  {
+    "word": "bolak-balik",
+    "cn": "来来回回；反复往返",
+    "en": "back and forth; repeatedly",
+    "root": "bolak-balik",
+    "root_cn": "来回；反复",
+    "example": "Aku bolak-balik cek dokumen karena informasinya belum jelas.",
+    "example_cn": "因为信息还不清楚，我反复检查文件。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-22 18:00",
+    "last_seen": "2026-09-22 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-22"
     ]
   }
 ];
