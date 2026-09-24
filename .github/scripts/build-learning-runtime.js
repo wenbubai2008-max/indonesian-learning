@@ -145,11 +145,18 @@ const oralFull=oralRaw
   .filter(x=>newFullSet.has(key(x&&x.word)))
   .map(x=>[String(x.word||'').trim(),x.register||'',x.oral||'',x.root||'',Number.isFinite(Number(x.rank))?Number(x.rank):999999])
   .sort((a,b)=>((a[1]==='口语'?0:1)-(b[1]==='口语'?0:1))||(a[4]-b[4])||a[0].localeCompare(b[0]));
-const oralExposed=oralFull.slice(0,40);
+let oralExposed=oralFull.slice(0,40);
 const oralDontFull=oralFull.filter(x=>newDontSet.has(key(x[0])));
 const oralFuzzyFull=oralFull.filter(x=>newFuzzySet.has(key(x[0])));
 const oralDontExposed=oralDontFull.slice(0,40);
 const oralFuzzyExposed=oralFuzzyFull.slice(0,40);
+{
+  const merged=[],seen=new Set();
+  for(const x of [...oralExposed,...oralDontExposed,...oralFuzzyExposed]){
+    const k=key(x&&x[0]);if(!k||seen.has(k))continue;seen.add(k);merged.push(x);
+  }
+  oralExposed=merged;
+}
 
 const exposeSplit=(base,oral,max=160)=>{
   const out=[],seen=new Set();
@@ -163,7 +170,7 @@ const newFuzzyExposed=exposeSplit(newFuzzyFull,oralFuzzyExposed);
 const newUnclassifiedExposed=newUnclassifiedFull.slice(0,40);
 
 const newExposed=[];const newSeen=new Set();
-for(const w of [...newFull.slice(0,140),...oralExposed.map(x=>x[0])]){
+for(const w of [...newFull.slice(0,140),...oralExposed.map(x=>x[0]),...newDontExposed,...newFuzzyExposed,...newUnclassifiedExposed]){
   const k=key(w);if(!k||newSeen.has(k))continue;newSeen.add(k);newExposed.push(w);
 }
 const secondaryMeta=new Map(secondaryMaster.map(x=>[key(x.word),x]));
