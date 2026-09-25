@@ -23,7 +23,6 @@ on:
       - '.github/scripts/regression-guard.js'
       - '.github/scripts/vocab-ui-regression-guard.js'
       - '.github/workflows/build-learning-runtime.yml'
-      - '.github/workflows/sync-daily-vocab.yml'
       - 'index.html'
       - 'data/daily-width-fix.css'
       - 'data/home-modules-layout.js'
