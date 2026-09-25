@@ -14,7 +14,8 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: sync-daily-vocab
+  # Share one writer lock with build-learning-runtime.yml.
+  group: learning-data-write
   cancel-in-progress: false
 jobs:
   sync:
