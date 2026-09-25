@@ -145,6 +145,11 @@ jobs:
           // This adds AM review_vocab as a real recurrence and avoids treating
           // separate date/session arrays as if they proved a specific date+session pair.
           const occurrenceMap=new Map();
+          const latestCompletedAm=(dailyIndex.dates||[])
+            .filter(x=>x&&x.date&&x.am===true)
+            .map(x=>String(x.date))
+            .sort()
+            .pop()||'';
           const addOccurrence=(word,date,session)=>{
             const k=key(word);if(!k||!date||!session)return;
             if(!occurrenceMap.has(k))occurrenceMap.set(k,new Set());
@@ -158,7 +163,15 @@ jobs:
             for(const v of (lesson.vocab||[]))addOccurrence(v&&v.word,date,session);
             if(session==='08:00'||lesson.session==='am'){
               for(const r of (Array.isArray(lesson.review_vocab)?lesson.review_vocab:[])){
-                addOccurrence(typeof r==='string'?r:r&&r.word,date,session);
+                const reviewWord=typeof r==='string'?r:r&&r.word;
+                const reviewKey=key(reviewWord);
+                if(!reviewKey)continue;
+                if(!map.has(reviewKey)){
+                  if(date===latestCompletedAm)throw new Error(`Latest AM review_vocab missing from daily-vocab: ${reviewWord} (${f})`);
+                  console.warn(`Skipping legacy AM review_vocab missing from daily-vocab: ${reviewWord} (${f})`);
+                  continue;
+                }
+                addOccurrence(reviewWord,date,session);
               }
             }
           }

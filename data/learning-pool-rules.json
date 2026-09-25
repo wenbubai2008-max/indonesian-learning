@@ -154,7 +154,7 @@
     "新词集合与复习集合交集必须为0；mastered命中数必须为0",
     "课程任务写入顺序固定为：读取runtime快照→从合法窗口选词→生成课程→写入前校验→写AM/PM课程JSON→更新index；课程任务本身不写daily-vocab",
     "课程JSON写入并重读验证后，课程任务必须再次读取最新data/daily/index.json并以最新SHA补齐对应am:true/pm:true；index是课程完成闸门。只有完成闸门确认后，唯一的sync-daily-vocab.yml才在GitHub Runner本地读取已完成课程并安全同步daily-vocab，同时调用共享build-learning-runtime.js用更新后的daily-vocab重建runtime，并将daily-vocab、runtime、第二词库、handoff状态和audit在同一同步提交中写回；不依赖GitHub Actions机器人提交再次触发另一个工作流",
-    "08:00的review_vocab属于正式复现记录：sync-daily-vocab必须把这些词的date+session精确出现纳入times_seen、dates、sessions、first_seen、last_seen；review_vocab若不在daily-vocab中必须视为一致性异常，禁止当作新词追加",
+    "08:00的review_vocab属于正式复现记录：sync-daily-vocab必须把已存在于daily-vocab的词按date+session精确纳入times_seen、dates、sessions、first_seen、last_seen；最新完成AM的review_vocab若不在daily-vocab中视为一致性异常并停止，历史旧课的遗留缺口只记录警告并跳过，绝不当作新词追加",
     "weakness-sync、主词库、口语候选、handoff状态或规则本身变化时，由build-learning-runtime.yml调用同一个共享build-learning-runtime.js单独刷新runtime",
     "PM中只有is_new=true、source_group=new或new_words明确列出的词允许作为缺失词追加到daily-vocab；review/application只允许更新已存在词的复现记录，若缺失应视为一致性异常而非当作新词追加",
     "daily-vocab只表示已正式教过，不代表mastered；掌握状态不得由是否进入daily-vocab推断",
