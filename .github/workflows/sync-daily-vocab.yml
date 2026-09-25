@@ -4,8 +4,9 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/sync-daily-vocab.yml'
-      - 'data/daily/*-am.json'
-      - 'data/daily/*-pm.json'
+      # index.json is the completion barrier: lesson JSON is written and verified first,
+      # then index is updated. Only after that do we rebuild daily vocab/runtime.
+      - 'data/daily/index.json'
   schedule:
     - cron: '10 1,11,12 * * *'
     - cron: '50 10 * * *'
