@@ -19,6 +19,81 @@ function wordCount(s){ return String(s || '').trim().split(/\s+/).filter(Boolean
 function inRange(n,a,b){ return Number.isInteger(n) && n >= a && n <= b; }
 function unique(arr){ return new Set(arr).size === arr.length; }
 
+function validateLatestAm(){
+  const index = readJSON('data/daily/index.json');
+  const rows = (Array.isArray(index.dates) ? index.dates : [])
+    .filter(x => x && /^\d{4}-\d{2}-\d{2}$/.test(String(x.date || '')) && x.am === true)
+    .sort((a,b) => String(a.date).localeCompare(String(b.date)));
+  if(!rows.length){ warnings.push('No completed AM lesson entries found in index'); return; }
+  const date = String(rows[rows.length - 1].date);
+  const amPath = `data/daily/${date}-am.json`;
+  if(!fs.existsSync(rel(amPath))){ failures.push(`latest completed AM ${date}: file missing`); return; }
+  const am = readJSON(amPath);
+
+  ok((index.dates || []).filter(x => x && x.date === date).length === 1, `latest AM ${date}: index date is unique`);
+  ok(am.session === 'am', `latest AM ${date}: session=am`);
+  ok(am.time === '08:00', `latest AM ${date}: time=08:00`);
+  ok(/^08:00/.test(String(am.title || '')), `latest AM ${date}: title starts with 08:00`);
+
+  const vocab = Array.isArray(am.vocab) ? am.vocab : [];
+  ok(vocab.length === 10, `latest AM ${date}: exactly 10 vocab words`);
+  const vocabWords = vocab.map(v => norm(v && v.word)).filter(Boolean);
+  ok(vocabWords.length === 10 && unique(vocabWords), `latest AM ${date}: vocab words are non-empty and unique`);
+
+  const requiredFields = ['word','display','audio_text','cn','en','root','root_cn','formation','example','example_cn','synonym_note','is_oral_new'];
+  vocab.forEach((v,i) => {
+    const label = v && v.word ? v.word : `#${i+1}`;
+    for(const f of requiredFields) ok(Object.prototype.hasOwnProperty.call(v || {}, f), `latest AM ${date}: ${label} has ${f}`);
+    ok(Boolean(String(v && v.formation || '').trim()), `latest AM ${date}: ${label} formation non-empty`);
+    ok(Boolean(String(v && v.synonym_note || '').trim()), `latest AM ${date}: ${label} synonym_note non-empty`);
+    if(String(v && v.root || '').trim()) ok(Boolean(String(v && v.root_cn || '').trim()), `latest AM ${date}: ${label} root_cn present`);
+  });
+
+  const reviewVocab = Array.isArray(am.review_vocab) ? am.review_vocab : [];
+  ok(inRange(reviewVocab.length,4,6), `latest AM ${date}: review_vocab has about 5 words`);
+  ok(reviewVocab.every(x => typeof x === 'string' && x.trim()), `latest AM ${date}: review_vocab is a string array`);
+  const reviewWords = reviewVocab.map(norm).filter(Boolean);
+  ok(unique(reviewWords), `latest AM ${date}: review_vocab is unique`);
+  const vocabSet = new Set(vocabWords);
+  ok(reviewWords.every(w => !vocabSet.has(w)), `latest AM ${date}: new vocab and review_vocab are disjoint`);
+
+  const sentences = Array.isArray(am.sentences) ? am.sentences : [];
+  ok(sentences.length === 5, `latest AM ${date}: exactly 5 sentences`);
+  ok(sentences.every(x => String(x && x.text || '').trim() && String(x && x.cn || '').trim()), `latest AM ${date}: sentences have Indonesian and Chinese`);
+
+  const reading = am.reading || {};
+  const wc = wordCount(reading.text);
+  ok(inRange(wc,80,120), `latest AM ${date}: reading is 80-120 words (${wc})`);
+  ok(Boolean(String(reading.cn || '').trim()), `latest AM ${date}: reading Chinese translation exists`);
+
+  const quiz = Array.isArray(am.quiz) ? am.quiz : [];
+  ok(quiz.length === 3, `latest AM ${date}: exactly 3 quiz questions`);
+  const reviewSet = new Set(reviewWords);
+  let reviewQuizCount = 0;
+  quiz.forEach((q,i) => {
+    const options = Array.isArray(q && q.options) ? q.options : [];
+    const ai = q && q.answer_index;
+    const question = String(q && q.question || '').trim();
+    const explain = String(q && q.explain || '').trim();
+    const valid = Boolean(question && options.length >= 2 && Number.isInteger(ai) && ai >= 0 && ai < options.length && explain);
+    ok(valid, `latest AM ${date}: quiz ${i+1} canonical schema valid`);
+    if(valid){
+      const answer = String(options[ai] || '').trim();
+      if(reviewSet.has(norm(answer)) || /复习/.test(question)) reviewQuizCount++;
+      const recognition = /词义|意思|含义|形式|哪一个词|哪个词|哪种形式|正确形式|识别/.test(question);
+      const leaked = Boolean(answer && question.toLowerCase().includes(answer.toLowerCase()));
+      ok(!leaked || recognition, `latest AM ${date}: quiz ${i+1} does not leak the answer`);
+    }
+  });
+  ok(reviewQuizCount >= 1, `latest AM ${date}: quiz includes at least one review item`);
+
+  const output = am.output || {};
+  ok(Boolean(String(output.task || '').trim() && String(output.reference_answer || '').trim() && String(output.reference_cn || '').trim()), `latest AM ${date}: active output has task + answer + Chinese`);
+
+  const review = Array.isArray(am.review) ? am.review : [];
+  ok(review.length === 3 && review.every(x => typeof x === 'string' && x.trim()), `latest AM ${date}: final review is exactly 3 strings`);
+}
+
 function validateLatestPm(){
   const dir = rel('data/daily');
   const files = fs.readdirSync(dir).filter(f => /^\d{4}-\d{2}-\d{2}-pm\.json$/.test(f)).sort();
@@ -254,6 +329,7 @@ try {
   ok(/x\.review\.steps/.test(light) && /x\.review\.items/.test(light), 'PM final review renders steps and legacy items');
   ok(/am\.review_vocab/.test(light), 'same-day AM review_vocab is recognized for application marker');
 
+  validateLatestAm();
   validateLatestPm();
 
   const index = read('index.html');

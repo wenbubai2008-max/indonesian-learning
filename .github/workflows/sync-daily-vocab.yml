@@ -8,8 +8,9 @@ on:
       # then index is updated. Only after that do we rebuild daily vocab/runtime.
       - 'data/daily/index.json'
   schedule:
-    - cron: '10 1,11,12 * * *'
-    - cron: '50 10 * * *'
+    # Safety fallback only. Normal lesson sync is triggered by the completed index.json push.
+    # 01:10/11:10 UTC = 08:10/18:10 Asia/Jakarta.
+    - cron: '10 1,11 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -138,6 +139,43 @@ jobs:
                 appended++;
               }
             }
+          }
+
+          // Rebuild exact completed-lesson occurrence pairs after the normal content merge.
+          // This adds AM review_vocab as a real recurrence and avoids treating
+          // separate date/session arrays as if they proved a specific date+session pair.
+          const occurrenceMap=new Map();
+          const addOccurrence=(word,date,session)=>{
+            const k=key(word);if(!k||!date||!session)return;
+            if(!occurrenceMap.has(k))occurrenceMap.set(k,new Set());
+            occurrenceMap.get(k).add(`${date} ${session}`);
+          };
+          for(const f of files){
+            const lesson=JSON.parse(fs.readFileSync(f,'utf8'));
+            const session=lesson.time||(lesson.session==='pm'?'18:00':'08:00');
+            const date=lesson.date;
+            if(!date)throw new Error(`Missing lesson.date in ${f}`);
+            for(const v of (lesson.vocab||[]))addOccurrence(v&&v.word,date,session);
+            if(session==='08:00'||lesson.session==='am'){
+              for(const r of (Array.isArray(lesson.review_vocab)?lesson.review_vocab:[])){
+                addOccurrence(typeof r==='string'?r:r&&r.word,date,session);
+              }
+            }
+          }
+          for(const [k,stamps] of occurrenceMap){
+            const x=map.get(k);
+            if(!x)throw new Error(`Completed lesson recurrence missing from daily-vocab: ${k}`);
+            const ordered=[...stamps].sort();
+            const oldTimes=Number(x.times_seen)||0;
+            if(oldTimes!==ordered.length)repairedOccurrences+=Math.abs(ordered.length-oldTimes);
+            x.times_seen=ordered.length;
+            x.lesson_occurrences=ordered;
+            x.dates=[...new Set(ordered.map(s=>s.slice(0,10)))].sort();
+            x.sessions=[...new Set(ordered.map(s=>s.slice(11)))];
+            x.categories=addUnique(x.categories,'每日学习');
+            for(const sess of x.sessions)x.categories=addUnique(x.categories,sess);
+            x.first_seen=ordered[0];
+            x.last_seen=ordered[ordered.length-1];
           }
 
           console.log(`Reconciled ${files.length} lesson files; appended ${appended} missing taught words; repaired ${repairedOccurrences} missing occurrences.`);
