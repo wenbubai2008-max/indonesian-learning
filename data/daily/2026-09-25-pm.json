@@ -1,0 +1,352 @@
+{
+  "date": "2026-09-25",
+  "session": "pm",
+  "time": "18:00",
+  "day": 35,
+  "level": "A2+→B1",
+  "title": "18:00｜晚课：沟通问题、会议与主动表达",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "ketika",
+    "rapat",
+    "keluhan",
+    "pemasok"
+  ],
+  "vocab": [
+    {
+      "word": "ketika",
+      "display": "ketika",
+      "audio_text": "ketika",
+      "cn": "当……时候",
+      "en": "when; while",
+      "root": "ketika",
+      "root_cn": "当……时候",
+      "formation": "基本连词/时间词。常见结构：ketika + 事件；ketika sedang + 动作；ketika itu（当时）。",
+      "example": "Ketika rapat dimulai, saya langsung mencatat masalah utama.",
+      "example_cn": "会议开始时，我马上记下了主要问题。",
+      "synonym_note": "ketika 较中性、标准；waktu 在日常口语里也常表示“当……时候”，saat 略更简洁且常见于书面或正式表达。",
+      "usage_note": "runtime.new_pool_fuzzy中的合法新词；用于晚课主动提取。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "rapat",
+      "display": "rapat",
+      "audio_text": "rapat",
+      "cn": "会议；紧密",
+      "en": "meeting; tight/close",
+      "root": "rapat",
+      "root_cn": "会议；紧密",
+      "formation": "基本词。工作中高频搭配：rapat tim、ikut rapat、adakan rapat、hasil rapat。",
+      "example": "Besok pagi kami ada rapat dengan tim penjualan.",
+      "example_cn": "明早我们和销售团队有会议。",
+      "synonym_note": "rapat 是标准且最常用的“会议”；meeting 在办公室口语中也常直接使用。",
+      "usage_note": "runtime.new_pool_fuzzy中的合法新词；标准语与口语 meeting 可对应辨析。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "keluhan",
+      "display": "keluhan",
+      "audio_text": "keluhan",
+      "cn": "投诉；抱怨",
+      "en": "complaint; grievance",
+      "root": "keluh",
+      "root_cn": "抱怨；叹息",
+      "formation": "keluh + -an → keluhan，表示抱怨的内容或投诉。常见：keluhan pelanggan、menerima keluhan、menangani keluhan。",
+      "example": "Kami menerima keluhan pelanggan tentang pesanan yang terlambat.",
+      "example_cn": "我们收到客户关于订单延迟的投诉。",
+      "synonym_note": "keluhan 是名词“投诉/抱怨”；komplain 很口语、办公室里常用；mengeluh 是动词“抱怨”。",
+      "usage_note": "runtime.new_pool_dont中的合法新词；同时属于合法口语对应候选。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "pemasok",
+      "display": "pemasok",
+      "audio_text": "pemasok",
+      "cn": "供应商",
+      "en": "supplier",
+      "root": "pasok",
+      "root_cn": "供应；供给",
+      "formation": "peN- + pasok → pemasok，表示提供货物或原料的一方。常见：pemasok utama、hubungi pemasok、pemasok barang。",
+      "example": "Saya akan menghubungi pemasok untuk memastikan jadwal pengiriman.",
+      "example_cn": "我会联系供应商确认发货时间。",
+      "synonym_note": "pemasok 是标准印尼语；supplier 在商业口语中非常常见，意思基本相同。",
+      "usage_note": "runtime.new_pool_dont中的合法新词；工作场景高频。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "niat",
+      "display": "niat",
+      "audio_text": "niat",
+      "cn": "打算；意图；认真想做的心意",
+      "en": "intention; intent",
+      "root": "niat",
+      "root_cn": "打算；意图",
+      "formation": "基本词。常见：punya niat、niat baik、berniat untuk、dari awal sudah niat。",
+      "example": "Saya punya niat baik untuk menyelesaikan masalah ini.",
+      "example_cn": "我是真心想把这个问题解决好。",
+      "synonym_note": "niat 强调内心的意图；rencana 是具体计划；maksud 更偏“意思/目的”。",
+      "usage_note": "runtime.focus_pool高优先级已教active词，有近期错误信号；重点复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nyebelin",
+      "display": "nyebelin",
+      "audio_text": "nyebelin",
+      "cn": "烦人；让人不爽",
+      "en": "annoying",
+      "root": "sebel",
+      "root_cn": "烦；恼火",
+      "formation": "口语形式，来自 sebel。常见：orangnya nyebelin、nyebelin banget、jangan nyebelin。",
+      "example": "Cara bicaranya kadang nyebelin, tapi saya tetap tenang.",
+      "example_cn": "他说话的方式有时很烦人，但我还是保持冷静。",
+      "synonym_note": "nyebelin 很口语，强调“让人烦”；menjengkelkan 更标准、书面；sebel 通常描述自己“觉得烦”。",
+      "usage_note": "runtime.focus_pool高优先级已教active词，有近期错误信号；重点复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengizinkan",
+      "display": "mengizinkan",
+      "audio_text": "mengizinkan",
+      "cn": "允许",
+      "en": "allow; permit",
+      "root": "izin",
+      "root_cn": "许可；允许",
+      "formation": "meN- + izin + -kan → mengizinkan，表示允许某人做某事。常见：mengizinkan seseorang untuk...、tidak mengizinkan。",
+      "example": "Atasan mengizinkan kami mengubah jadwal rapat.",
+      "example_cn": "上司允许我们更改会议时间。",
+      "synonym_note": "mengizinkan 是标准“允许”；membolehkan 也表示允许；boleh 常用于日常简短表达“可以”。",
+      "usage_note": "runtime.focus_pool高优先级已教active词；重点复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "layak",
+      "display": "layak",
+      "audio_text": "layak",
+      "cn": "值得；合适；够资格",
+      "en": "worthy; suitable; eligible",
+      "root": "layak",
+      "root_cn": "值得；合适",
+      "formation": "基本词。常见：layak dipertimbangkan、layak digunakan、layak mendapat、tidak layak。",
+      "example": "Usulan ini layak dipertimbangkan dalam rapat besok.",
+      "example_cn": "这个提议值得在明天的会议上考虑。",
+      "synonym_note": "layak 强调达到标准、值得或够资格；cocok 强调匹配、适合；pantas 还可表达“难怪”。",
+      "usage_note": "runtime.focus_pool中的已教active词；重点复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berantem",
+      "display": "berantem",
+      "audio_text": "berantem",
+      "cn": "打架；吵架",
+      "en": "fight; argue",
+      "root": "antem",
+      "root_cn": "打；争吵",
+      "formation": "今天 08:00 已教。高频口语词，常见：jangan berantem、berantem sama...、hampir berantem。",
+      "example": "Kalau ada masalah, kita bicara saja, jangan berantem.",
+      "example_cn": "有问题就好好说，别吵架。",
+      "synonym_note": "berantem 很口语；bertengkar 更标准，通常强调争吵。",
+      "usage_note": "今天08:00已教；应用复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "pantas",
+      "display": "pantas",
+      "audio_text": "pantas",
+      "cn": "合适；难怪；值得",
+      "en": "appropriate; no wonder; deserve",
+      "root": "pantas",
+      "root_cn": "合适；应当",
+      "formation": "今天 08:00 已教。基本词；常见：pantas untuk...、pantas saja...、tidak pantas。",
+      "example": "Pantas saja pelanggan mengeluh, barangnya datang terlambat.",
+      "example_cn": "难怪客户抱怨，货来晚了。",
+      "synonym_note": "pantas 可表示合适、应得，也常用 pantas saja“难怪”；cocok 更偏匹配、适合。",
+      "usage_note": "今天08:00已教；应用复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "manfaat",
+      "display": "manfaat",
+      "audio_text": "manfaat",
+      "cn": "益处；好处",
+      "en": "benefit; usefulness",
+      "root": "manfaat",
+      "root_cn": "益处；用途",
+      "formation": "今天 08:00 已教。基本名词；常见：punya manfaat、memberi manfaat、manfaat produk。",
+      "example": "Metode baru ini memberi manfaat bagi tim dan pelanggan.",
+      "example_cn": "这个新方法对团队和客户都有好处。",
+      "synonym_note": "manfaat 强调益处、用途；keuntungan 也可指好处，但还常表示利润。",
+      "usage_note": "今天08:00已教；应用复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Ketika rapat dimulai, tim kami membahas keluhan dari pelanggan tentang pengiriman. Pemasok sudah memberi penjelasan, tetapi beberapa bagian masih belum jelas. Saya punya niat untuk menyelesaikan masalah tanpa berantem atau saling menyalahkan. Walaupun situasinya agak nyebelin, atasan mengizinkan kami mengubah jadwal dan mencari cara yang lebih layak. Pantas saja pelanggan kecewa karena mereka sudah menunggu cukup lama. Kami lalu menjelaskan manfaat solusi baru dan memastikan semua orang memahami langkah berikutnya. Setelah rapat selesai, saya menghubungi pemasok lagi agar masalah yang sama tidak terjadi.",
+    "cn": "会议开始时，我们团队讨论了客户关于发货的投诉。供应商已经作出解释，但有些部分仍不清楚。我真心想解决问题，而不是争吵或互相责怪。虽然情况有点烦人，上司还是允许我们调整时间并寻找更合适的方法。难怪客户失望，因为他们已经等了很久。随后我们说明了新方案的好处，并确保每个人都明白下一步。会议结束后，我再次联系供应商，避免同样的问题再次发生。"
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "text": "Besok kita ada rapat dengan pemasok, kan?",
+      "cn": "我们明天要和供应商开会，对吧？"
+    },
+    {
+      "speaker": "B",
+      "text": "Iya. Ada beberapa keluhan pelanggan yang harus dibahas.",
+      "cn": "对。有几条客户投诉需要讨论。"
+    },
+    {
+      "speaker": "A",
+      "text": "Kalau suasananya tegang, jangan sampai kita berantem.",
+      "cn": "如果气氛紧张，可别吵起来。"
+    },
+    {
+      "speaker": "B",
+      "text": "Tenang. Niat saya cari solusi yang layak, bukan menyalahkan mereka.",
+      "cn": "放心。我的想法是找一个合适的解决办法，不是责怪他们。"
+    },
+    {
+      "speaker": "A",
+      "text": "Atasan sudah mengizinkan kita mengubah jadwal pengiriman?",
+      "cn": "上司已经允许我们调整发货时间了吗？"
+    },
+    {
+      "speaker": "B",
+      "text": "Sudah. Kita juga akan jelaskan manfaat perubahan itu.",
+      "cn": "允许了。我们也会解释这样调整的好处。"
+    }
+  ],
+  "rewrite_application": [
+    {
+      "type": "translate",
+      "prompt": "中译印：会议开始时，我们讨论了客户的投诉。",
+      "answer": "Ketika rapat dimulai, kami membahas keluhan pelanggan.",
+      "answer_cn": "会议开始时，我们讨论了客户的投诉。"
+    },
+    {
+      "type": "rewrite",
+      "prompt": "把这句话改得更自然：Saya marah karena orang itu membuat saya tidak nyaman. 尽量使用 nyebelin。",
+      "answer": "Saya sebel karena orang itu nyebelin banget.",
+      "answer_cn": "我很烦，因为那个人真的很烦人。"
+    },
+    {
+      "type": "active_recall",
+      "prompt": "主动回忆：不用看词卡，用 niat 和 layak 说一句工作场景的话。",
+      "answer": "Saya punya niat mencari solusi yang layak untuk pelanggan.",
+      "answer_cn": "我打算为客户寻找一个合适的解决方案。"
+    },
+    {
+      "type": "application",
+      "prompt": "造句：用 pemasok、pantas saja、manfaat 说2句自然的工作表达。",
+      "answer": "Pemasok terlambat mengirim barang, jadi pantas saja pelanggan kecewa. Kami harus menjelaskan manfaat solusi baru kepada mereka.",
+      "answer_cn": "供应商发货晚了，所以难怪客户失望。我们必须向他们解释新方案的好处。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "哪个词最适合表示“供应商”？",
+        "options": [
+          "keluhan",
+          "pemasok",
+          "niat",
+          "manfaat"
+        ],
+        "answer_index": 1,
+        "answer": "pemasok",
+        "explain": "pemasok 是标准印尼语“供应商”，商业口语也常说 supplier。"
+      },
+      {
+        "type": "choice",
+        "prompt": "“难怪客户生气”最自然的开头是哪一个？",
+        "options": [
+          "Pantas saja",
+          "Ketika saja",
+          "Layak saja",
+          "Niat saja"
+        ],
+        "answer_index": 0,
+        "answer": "Pantas saja",
+        "explain": "pantas saja 是高频结构，表示“难怪……”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "哪个词最强调“内心的意图、打算”？",
+        "options": [
+          "niat",
+          "rapat",
+          "keluhan",
+          "layak"
+        ],
+        "answer_index": 0,
+        "answer": "niat",
+        "explain": "niat 表示意图、打算；rencana 更偏具体计划。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kami menerima ____ dari pelanggan tentang pengiriman.（投诉）",
+        "answer": "keluhan",
+        "explain": "keluhan 是名词“投诉、抱怨”，常见搭配 keluhan pelanggan。",
+        "hint_cn": "投诉"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Atasan ____ kami mengubah jadwal rapat.（允许）",
+        "answer": "mengizinkan",
+        "explain": "mengizinkan seseorang melakukan sesuatu 表示“允许某人做某事”。",
+        "hint_cn": "允许"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排成自然的印尼语句子：会议开始时，我们和供应商讨论客户投诉。",
+        "tokens": [
+          "Ketika rapat dimulai,",
+          "kami",
+          "membahas",
+          "keluhan pelanggan",
+          "dengan pemasok"
+        ],
+        "answer": "Ketika rapat dimulai, kami membahas keluhan pelanggan dengan pemasok.",
+        "answer_cn": "会议开始时，我们和供应商讨论客户投诉。",
+        "explain": "Ketika rapat dimulai 放在句首表示时间，主句按 kami + membahas + 宾语 + dengan pemasok 排列。"
+      }
+    ],
+    "self_check": [
+      "我能否不看提示主动说出 ketika、rapat、keluhan、pemasok？",
+      "我能否区分 niat（意图）、rencana（计划）和 layak（值得/合适）？",
+      "我能否自然使用 pantas saja，而不是只认得 pantas？",
+      "我能否用今天核心词口头描述一次客户投诉处理过程？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "快速提取：不看答案，在3秒内依次说出“当……时候、会议、投诉、供应商”的印尼语。",
+      "重点弱词：用 niat、nyebelin、mengizinkan、layak 各说一个5—8词的自然短句，并口头比较 niat 和 rencana、layak 和 cocok。",
+      "当天08:00应用复现：分别用 berantem、pantas、manfaat 各说一句，再把其中两个词连成同一情境。",
+      "最后用30—45秒复述今晚阅读：至少自然使用6个核心词；卡住的词只回看词义后立即再说一遍。"
+    ]
+  }
+}
