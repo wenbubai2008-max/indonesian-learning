@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-24T06:35:54.957Z",
+  "updated_at": "2026-09-25T02:32:12.573Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -13488,8 +13488,11 @@
     "pantas": {
       "word": "pantas",
       "status": "active",
-      "updated_at": "2026-09-12T14:25:24.886Z",
+      "updated_at": "2026-09-25T02:32:02.077Z",
       "display": "pantas",
+      "cn": "合适；难怪；值得",
+      "root": "pantas",
+      "root_cn": "合适；应当",
       "reasons": [
         "memory_dont"
       ],
@@ -21822,7 +21825,7 @@
       "status": "active",
       "updated_at": "2026-09-24T06:31:55.158Z",
       "display": "ngurus",
-      "cn": "处理；办理；照管（口语）",
+      "cn": "处理；照料",
       "root": "urus",
       "root_cn": "处理；照管",
       "last_wrong": "2026-09-24T06:31:55.136Z",
