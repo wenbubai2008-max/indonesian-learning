@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{id:'er-20260924-transportasi-serang',date:'2026-09-24',title:'Serang Siapkan Transportasi Umum yang Lebih Nyaman',title_cn:'Serang 准备改善公共交通，让居民出行更方便',path:'data/extensive-reading-history/2026-09-24.js'},
 {id:'er-20260923-bbm-lampung',date:'2026-09-23',title:'Stok BBM di Bandar Lampung Dipastikan Tersedia',title_cn:'楠榜省确认加油站燃油供应充足',path:'data/extensive-reading-history/2026-09-23.js'},
 {id:'er-20260922-food-waste-bekasi',date:'2026-09-22',title:'Warga Bekasi Belajar Mengurangi Makanan Terbuang',title_cn:'勿浪费食物：勿加泗居民学习更聪明地处理剩余食材',path:'data/extensive-reading-history/2026-09-22.js'},
 {id:'er-20260921-lrt-tarif-rute',date:'2026-09-21',title:'LRT Kelapa Gading–Manggarai: Tarif Rp8 Sampai 24 September',title_cn:'Kelapa Gading–Manggarai LRT：8印尼盾票价持续到9月24日',path:'data/extensive-reading-history/2026-09-21.js'},
