@@ -5,7 +5,6 @@ on:
     branches: [main]
     paths:
       - 'data/weakness-sync.json'
-      - 'data/daily-vocab-data.js'
       - 'data/master-vocab-data.js'
       - 'data/master-vocab-data-2.js'
       - 'data/master-vocab-data-3.js'
@@ -48,8 +47,9 @@ permissions:
   contents: write
 
 concurrency:
-  group: build-learning-runtime
-  cancel-in-progress: true
+  # Serialize every workflow that writes runtime/profile/audit to avoid main-branch races.
+  group: learning-data-write
+  cancel-in-progress: false
 
 jobs:
   build:
