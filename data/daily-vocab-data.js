@@ -11469,5 +11469,227 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-24"
     ]
+  },
+  {
+    "word": "berantem",
+    "cn": "打架；吵架",
+    "en": "fight; argue",
+    "root": "antem",
+    "root_cn": "打；争吵",
+    "example": "Jangan berantem cuma karena masalah kecil.",
+    "example_cn": "别因为一点小事就吵架。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ]
+  },
+  {
+    "word": "kabur",
+    "cn": "逃跑；溜走",
+    "en": "run away; flee",
+    "root": "kabur",
+    "root_cn": "逃跑；溜走",
+    "example": "Dia kabur sebelum sempat menjelaskan masalahnya.",
+    "example_cn": "他还没来得及解释问题就溜走了。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ]
+  },
+  {
+    "word": "pantas",
+    "cn": "合适；难怪；值得",
+    "en": "appropriate; no wonder; deserve",
+    "root": "pantas",
+    "root_cn": "合适；应当",
+    "example": "Pantas saja dia kecewa, ternyata pesanannya belum dikirim.",
+    "example_cn": "难怪他失望，原来他的订单还没发出。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ]
+  },
+  {
+    "word": "kesepakatan",
+    "cn": "协议；共识",
+    "en": "agreement; consensus",
+    "root": "sepakat",
+    "root_cn": "同意；达成一致",
+    "example": "Kami akhirnya mencapai kesepakatan dengan pemasok.",
+    "example_cn": "我们最终和供应商达成了协议。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ]
+  },
+  {
+    "word": "wilayah",
+    "cn": "地区；区域",
+    "en": "region; area; territory",
+    "root": "wilayah",
+    "root_cn": "地区；区域",
+    "example": "Perusahaan itu ingin memperluas layanan ke wilayah lain.",
+    "example_cn": "那家公司想把服务扩大到其他地区。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ]
+  },
+  {
+    "word": "manfaat",
+    "cn": "益处；好处",
+    "en": "benefit; usefulness",
+    "root": "manfaat",
+    "root_cn": "益处；用途",
+    "example": "Pelatihan ini memberi banyak manfaat bagi pegawai baru.",
+    "example_cn": "这次培训给新员工带来了很多好处。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ]
+  },
+  {
+    "word": "metode",
+    "cn": "方法",
+    "en": "method",
+    "root": "metode",
+    "root_cn": "方法",
+    "example": "Saya sedang mencari metode belajar yang lebih efektif.",
+    "example_cn": "我正在寻找更有效的学习方法。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ]
+  },
+  {
+    "word": "sejak",
+    "cn": "自从；从……起",
+    "en": "since",
+    "root": "sejak",
+    "root_cn": "自从",
+    "example": "Saya tinggal di Indonesia sejak empat tahun lalu.",
+    "example_cn": "我从四年前开始住在印度尼西亚。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ]
+  },
+  {
+    "word": "menuju",
+    "cn": "朝向；前往",
+    "en": "head toward; toward",
+    "root": "tuju",
+    "root_cn": "方向；目标",
+    "example": "Kami sedang menuju kantor pelanggan sekarang.",
+    "example_cn": "我们现在正在前往客户的办公室。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ]
+  },
+  {
+    "word": "usaha",
+    "cn": "努力；生意；企业",
+    "en": "effort; business; enterprise",
+    "root": "usaha",
+    "root_cn": "努力；事业",
+    "example": "Dengan usaha yang konsisten, kemampuan bahasa bisa meningkat.",
+    "example_cn": "通过持续努力，语言能力可以提高。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ]
   }
 ];
