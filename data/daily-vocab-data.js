@@ -19,7 +19,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-22"
     ],
     "example": "Tingkat bahasa Indonesia saya masih A2.",
-    "example_cn": "我的印尼语水平还在 A2。"
+    "example_cn": "我的印尼语水平还在 A2。",
+    "lesson_occurrences": [
+      "2026-08-22 08:00"
+    ]
   },
   {
     "word": "meningkat",
@@ -41,7 +44,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-22"
     ],
     "example": "Kemampuan saya mulai meningkat.",
-    "example_cn": "我的能力开始提高了。"
+    "example_cn": "我的能力开始提高了。",
+    "lesson_occurrences": [
+      "2026-08-22 08:00"
+    ]
   },
   {
     "word": "meningkatkan",
@@ -65,7 +71,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24"
     ],
     "example": "Saya ingin meningkatkan bahasa Indonesia saya.",
-    "example_cn": "我想提高我的印尼语。"
+    "example_cn": "我想提高我的印尼语。",
+    "lesson_occurrences": [
+      "2026-08-22 08:00",
+      "2026-08-24 08:00"
+    ]
   },
   {
     "word": "peningkatan",
@@ -87,7 +97,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-22"
     ],
     "example": "Ada peningkatan dalam kemampuan berbicara saya.",
-    "example_cn": "我的口语能力有所提升。"
+    "example_cn": "我的口语能力有所提升。",
+    "lesson_occurrences": [
+      "2026-08-22 08:00"
+    ]
   },
   {
     "word": "ganggu",
@@ -109,7 +122,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-22"
     ],
     "example": "Maaf, saya ganggu sebentar.",
-    "example_cn": "不好意思，我打扰一下。"
+    "example_cn": "不好意思，我打扰一下。",
+    "lesson_occurrences": [
+      "2026-08-22 08:00"
+    ]
   },
   {
     "word": "mengganggu",
@@ -131,7 +147,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-22"
     ],
     "example": "Suara itu mengganggu saya.",
-    "example_cn": "那个声音打扰到我了。"
+    "example_cn": "那个声音打扰到我了。",
+    "lesson_occurrences": [
+      "2026-08-22 08:00"
+    ]
   },
   {
     "word": "pilih",
@@ -153,7 +172,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-22"
     ],
     "example": "Saya pilih yang ini.",
-    "example_cn": "我选这个。"
+    "example_cn": "我选这个。",
+    "lesson_occurrences": [
+      "2026-08-22 08:00"
+    ]
   },
   {
     "word": "pilihan",
@@ -177,7 +199,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24"
     ],
     "example": "Ini pilihan terbaik.",
-    "example_cn": "这是最好的选择。"
+    "example_cn": "这是最好的选择。",
+    "lesson_occurrences": [
+      "2026-08-22 08:00",
+      "2026-08-24 08:00"
+    ]
   },
   {
     "word": "untung",
@@ -199,7 +225,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-22"
     ],
     "example": "Untung saya datang lebih awal.",
-    "example_cn": "幸好我来得早。"
+    "example_cn": "幸好我来得早。",
+    "lesson_occurrences": [
+      "2026-08-22 08:00"
+    ]
   },
   {
     "word": "keuntungan",
@@ -221,7 +250,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-22"
     ],
     "example": "Bisnis ini punya keuntungan yang cukup bagus.",
-    "example_cn": "这个生意有不错的利润。"
+    "example_cn": "这个生意有不错的利润。",
+    "lesson_occurrences": [
+      "2026-08-22 08:00"
+    ]
   },
   {
     "word": "menghadapi",
@@ -242,6 +274,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
+    ],
+    "lesson_occurrences": [
+      "2026-08-24 08:00"
     ]
   },
   {
@@ -263,6 +298,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
+    ],
+    "lesson_occurrences": [
+      "2026-08-24 08:00"
     ]
   },
   {
@@ -284,6 +322,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
+    ],
+    "lesson_occurrences": [
+      "2026-08-24 08:00"
     ]
   },
   {
@@ -305,6 +346,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
+    ],
+    "lesson_occurrences": [
+      "2026-08-24 08:00"
     ]
   },
   {
@@ -323,8 +367,8 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-23 19:00",
     "last_seen": "2026-08-30 19:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-23",
@@ -332,7 +376,12 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Baru sadar ternyata salah.",
-    "example_cn": "刚意识到原来弄错了。"
+    "example_cn": "刚意识到原来弄错了。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00",
+      "2026-08-24 08:00",
+      "2026-08-30 19:00"
+    ]
   },
   {
     "word": "berkembang",
@@ -353,6 +402,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
+    ],
+    "lesson_occurrences": [
+      "2026-08-24 08:00"
     ]
   },
   {
@@ -374,6 +426,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
+    ],
+    "lesson_occurrences": [
+      "2026-08-24 08:00"
     ]
   },
   {
@@ -395,6 +450,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-24"
+    ],
+    "lesson_occurrences": [
+      "2026-08-24 08:00"
     ]
   },
   {
@@ -416,6 +474,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-25"
+    ],
+    "lesson_occurrences": [
+      "2026-08-25 08:00"
     ]
   },
   {
@@ -443,7 +504,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "支持；支撑",
     "example": "Tim kami saling mendukung ketika pekerjaan sedang banyak.",
-    "example_cn": "工作很多的时候，我们团队会互相支持。"
+    "example_cn": "工作很多的时候，我们团队会互相支持。",
+    "lesson_occurrences": [
+      "2026-08-25 08:00",
+      "2026-09-23 18:00"
+    ]
   },
   {
     "word": "menghindari",
@@ -469,7 +534,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Biar nggak kejadian lagi, kita hindarin ini.",
-    "example_cn": "为了别再发生，我们避开这个。"
+    "example_cn": "为了别再发生，我们避开这个。",
+    "lesson_occurrences": [
+      "2026-08-25 08:00",
+      "2026-08-30 19:00"
+    ]
   },
   {
     "word": "menyelesaikan",
@@ -483,12 +552,12 @@ window.DAILY_VOCAB_DB = [
       "历史记录不完整",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-24 19:00",
     "last_seen": "2026-08-30 19:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-24",
@@ -496,7 +565,13 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Hari ini harus diselesain.",
-    "example_cn": "今天必须弄完。"
+    "example_cn": "今天必须弄完。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00",
+      "2026-08-25 08:00",
+      "2026-08-25 19:00",
+      "2026-08-30 19:00"
+    ]
   },
   {
     "word": "mempertimbangkan",
@@ -522,7 +597,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Kita perlu mempertimbangkan waktunya sebelum ambil keputusan.",
-    "example_cn": "我们做决定前需要考虑一下时间。"
+    "example_cn": "我们做决定前需要考虑一下时间。",
+    "lesson_occurrences": [
+      "2026-08-25 08:00",
+      "2026-09-03 19:00"
+    ]
   },
   {
     "word": "memastikan",
@@ -540,8 +619,8 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-24 19:00",
     "last_seen": "2026-08-30 19:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-24",
@@ -549,7 +628,12 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Aku mau pastiin dulu.",
-    "example_cn": "我想先确认一下。"
+    "example_cn": "我想先确认一下。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00",
+      "2026-08-25 08:00",
+      "2026-08-30 19:00"
+    ]
   },
   {
     "word": "menerima",
@@ -567,8 +651,8 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-23 19:00",
     "last_seen": "2026-09-15 08:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-23",
@@ -577,7 +661,12 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "接受；收到",
     "example": "Kami sudah menerima dokumennya, tapi belum memeriksa semuanya.",
-    "example_cn": "我们已经收到文件了，但还没有全部检查。"
+    "example_cn": "我们已经收到文件了，但还没有全部检查。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00",
+      "2026-08-25 08:00",
+      "2026-09-15 08:00"
+    ]
   },
   {
     "word": "menolak",
@@ -595,15 +684,19 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-23 19:00",
     "last_seen": "2026-08-25 08:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-23",
       "2026-08-25"
     ],
     "example": "Ada juga yang menolak.",
-    "example_cn": "也有人拒绝。"
+    "example_cn": "也有人拒绝。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00",
+      "2026-08-25 08:00"
+    ]
   },
   {
     "word": "menyesuaikan",
@@ -631,7 +724,12 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Kita perlu menyesuaikan jadwal karena klien minta jamnya diganti.",
     "example_cn": "因为客户要求换时间，我们需要调整日程。",
-    "root_cn": "合适；符合"
+    "root_cn": "合适；符合",
+    "lesson_occurrences": [
+      "2026-08-25 08:00",
+      "2026-08-30 19:00",
+      "2026-09-04 19:00"
+    ]
   },
   {
     "word": "kebiasaan",
@@ -652,6 +750,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-25"
+    ],
+    "lesson_occurrences": [
+      "2026-08-25 08:00"
     ]
   },
   {
@@ -670,8 +771,8 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-23 19:00",
     "last_seen": "2026-08-26 08:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-23",
@@ -679,7 +780,12 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26"
     ],
     "example": "Saya masih menunggu jawaban.",
-    "example_cn": "我还在等回复。"
+    "example_cn": "我还在等回复。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00",
+      "2026-08-25 19:00",
+      "2026-08-26 08:00"
+    ]
   },
   {
     "word": "menghubungi",
@@ -697,15 +803,19 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-23 19:00",
     "last_seen": "2026-08-26 08:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-23",
       "2026-08-26"
     ],
     "example": "Saya mencoba menghubungi beberapa orang.",
-    "example_cn": "我尝试联系了一些人。"
+    "example_cn": "我尝试联系了一些人。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00",
+      "2026-08-26 08:00"
+    ]
   },
   {
     "word": "mengirimkan",
@@ -726,6 +836,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
+    ],
+    "lesson_occurrences": [
+      "2026-08-26 08:00"
     ]
   },
   {
@@ -744,15 +857,19 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-25 19:00",
     "last_seen": "2026-08-26 08:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-25",
       "2026-08-26"
     ],
     "example": "Saya meminta informasi.",
-    "example_cn": "我询问信息。"
+    "example_cn": "我询问信息。",
+    "lesson_occurrences": [
+      "2026-08-25 19:00",
+      "2026-08-26 08:00"
+    ]
   },
   {
     "word": "memberikan",
@@ -770,15 +887,19 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-25 19:00",
     "last_seen": "2026-08-26 08:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-25",
       "2026-08-26"
     ],
     "example": "Mereka memberikan informasi.",
-    "example_cn": "他们提供信息。"
+    "example_cn": "他们提供信息。",
+    "lesson_occurrences": [
+      "2026-08-25 19:00",
+      "2026-08-26 08:00"
+    ]
   },
   {
     "word": "menjelaskan",
@@ -799,6 +920,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
+    ],
+    "lesson_occurrences": [
+      "2026-08-26 08:00"
     ]
   },
   {
@@ -820,6 +944,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
+    ],
+    "lesson_occurrences": [
+      "2026-08-26 08:00"
     ]
   },
   {
@@ -841,6 +968,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
+    ],
+    "lesson_occurrences": [
+      "2026-08-26 08:00"
     ]
   },
   {
@@ -862,6 +992,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
+    ],
+    "lesson_occurrences": [
+      "2026-08-26 08:00"
     ]
   },
   {
@@ -883,6 +1016,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-08-26"
+    ],
+    "lesson_occurrences": [
+      "2026-08-26 08:00"
     ]
   },
   {
@@ -905,7 +1041,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Kayaknya dia lagi sibuk.",
-    "example_cn": "好像他正在忙。"
+    "example_cn": "好像他正在忙。",
+    "lesson_occurrences": [
+      "2026-08-27 08:00"
+    ]
   },
   {
     "word": "soalnya",
@@ -929,7 +1068,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Soalnya aku lagi sibuk.",
-    "example_cn": "因为我现在忙。"
+    "example_cn": "因为我现在忙。",
+    "lesson_occurrences": [
+      "2026-08-27 08:00",
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "makanya",
@@ -951,7 +1094,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Makanya aku bilang jangan telat.",
-    "example_cn": "所以我才说别迟到。"
+    "example_cn": "所以我才说别迟到。",
+    "lesson_occurrences": [
+      "2026-08-27 08:00"
+    ]
   },
   {
     "word": "sempat",
@@ -968,15 +1114,19 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-26 19:00",
     "last_seen": "2026-08-27 08:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-26",
       "2026-08-27"
     ],
     "example": "Tadi aku sempat makan.",
-    "example_cn": "刚才我有时间吃了点东西。"
+    "example_cn": "刚才我有时间吃了点东西。",
+    "lesson_occurrences": [
+      "2026-08-26 19:00",
+      "2026-08-27 08:00"
+    ]
   },
   {
     "word": "keburu",
@@ -989,9 +1139,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 5,
+    "times_seen": 4,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -1000,12 +1150,17 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-07",
-      "2026-09-11"
+      "2026-09-07"
     ],
     "example": "Aku mau jelasin dulu, tapi dia keburu pulang.",
     "example_cn": "我本来想先解释一下，但他已经先回去了。",
-    "root_cn": "赶；追赶"
+    "root_cn": "赶；追赶",
+    "lesson_occurrences": [
+      "2026-08-27 08:00",
+      "2026-09-02 19:00",
+      "2026-09-04 19:00",
+      "2026-09-07 19:00"
+    ]
   },
   {
     "word": "mending",
@@ -1027,7 +1182,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Mending besok aja.",
-    "example_cn": "还是明天吧。"
+    "example_cn": "还是明天吧。",
+    "lesson_occurrences": [
+      "2026-08-27 08:00"
+    ]
   },
   {
     "word": "ribet",
@@ -1049,7 +1207,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Nggak usah ribét.",
-    "example_cn": "不用搞那么麻烦。"
+    "example_cn": "不用搞那么麻烦。",
+    "lesson_occurrences": [
+      "2026-08-27 08:00"
+    ]
   },
   {
     "word": "nyebelin",
@@ -1062,9 +1223,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-25 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -1072,11 +1233,18 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-27",
       "2026-09-15",
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-25"
     ],
     "root_cn": "烦；恼火",
     "example": "Perubahan mendadak memang nyebelin, tapi tetap harus kita urus.",
-    "example_cn": "临时变化确实很烦，但我们还是得处理。"
+    "example_cn": "临时变化确实很烦，但我们还是得处理。",
+    "lesson_occurrences": [
+      "2026-08-27 08:00",
+      "2026-09-15 08:00",
+      "2026-09-17 18:00",
+      "2026-09-25 08:00"
+    ]
   },
   {
     "word": "terserah",
@@ -1093,15 +1261,19 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-26 19:00",
     "last_seen": "2026-08-27 08:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-26",
       "2026-08-27"
     ],
     "example": "Mau makan apa? Terserah kamu.",
-    "example_cn": "吃什么？随你。"
+    "example_cn": "吃什么？随你。",
+    "lesson_occurrences": [
+      "2026-08-26 19:00",
+      "2026-08-27 08:00"
+    ]
   },
   {
     "word": "nggak apa-apa",
@@ -1126,7 +1298,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Nggak apa-apa.",
-    "example_cn": "没关系。"
+    "example_cn": "没关系。",
+    "lesson_occurrences": [
+      "2026-08-27 08:00",
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "bentar",
@@ -1148,7 +1324,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Bentar ya, aku lagi makan.",
-    "example_cn": "等一下，我正在吃饭。"
+    "example_cn": "等一下，我正在吃饭。",
+    "lesson_occurrences": [
+      "2026-08-28 08:00"
+    ]
   },
   {
     "word": "lumayan",
@@ -1173,7 +1352,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Lumayan enak sih.",
-    "example_cn": "还挺好吃的。"
+    "example_cn": "还挺好吃的。",
+    "lesson_occurrences": [
+      "2026-08-28 08:00",
+      "2026-08-29 19:00"
+    ]
   },
   {
     "word": "ternyata",
@@ -1201,7 +1384,13 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "真实；明显",
     "example": "Aku kira bakal ribet, ternyata prosesnya lumayan gampang.",
-    "example_cn": "我以为会很麻烦，结果发现流程还挺简单。"
+    "example_cn": "我以为会很麻烦，结果发现流程还挺简单。",
+    "lesson_occurrences": [
+      "2026-08-28 08:00",
+      "2026-08-29 19:00",
+      "2026-08-30 19:00",
+      "2026-09-05 19:00"
+    ]
   },
   {
     "word": "malah",
@@ -1227,7 +1416,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "反而；却",
     "example": "Aku kira bakal lebih cepat, malah jadi lebih lama.",
-    "example_cn": "我以为会更快，反而变得更久了。"
+    "example_cn": "我以为会更快，反而变得更久了。",
+    "lesson_occurrences": [
+      "2026-08-28 08:00",
+      "2026-09-05 19:00"
+    ]
   },
   {
     "word": "padahal",
@@ -1252,7 +1445,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Padahal tadi katanya bisa.",
-    "example_cn": "明明刚才他说可以。"
+    "example_cn": "明明刚才他说可以。",
+    "lesson_occurrences": [
+      "2026-08-28 08:00",
+      "2026-08-29 19:00"
+    ]
   },
   {
     "word": "cuma",
@@ -1274,7 +1471,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Aku cuma tanya aja.",
-    "example_cn": "我只是问一下。"
+    "example_cn": "我只是问一下。",
+    "lesson_occurrences": [
+      "2026-08-28 08:00"
+    ]
   },
   {
     "word": "langsung",
@@ -1296,7 +1496,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Kalau sudah sampai, langsung kabarin aku.",
-    "example_cn": "到了就马上告诉我。"
+    "example_cn": "到了就马上告诉我。",
+    "lesson_occurrences": [
+      "2026-08-28 08:00"
+    ]
   },
   {
     "word": "ngobrol",
@@ -1318,7 +1521,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Kita ngobrol bentar yuk.",
-    "example_cn": "我们聊一会儿吧。"
+    "example_cn": "我们聊一会儿吧。",
+    "lesson_occurrences": [
+      "2026-08-28 08:00"
+    ]
   },
   {
     "word": "ngerepotin",
@@ -1332,20 +1538,26 @@ window.DAILY_VOCAB_DB = [
       "后续纠正版",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-28 08:00",
-    "last_seen": "2026-09-22 18:00",
+    "last_seen": "2026-09-24 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-08-28",
-      "2026-09-22"
+      "2026-09-22",
+      "2026-09-24"
     ],
     "example": "Maaf kalau aku bolak-balik nanya dan ngerepotin kamu.",
     "example_cn": "如果我反复问、给你添麻烦了，抱歉。",
-    "root_cn": "麻烦；忙乱"
+    "root_cn": "麻烦；忙乱",
+    "lesson_occurrences": [
+      "2026-08-28 08:00",
+      "2026-09-22 18:00",
+      "2026-09-24 08:00"
+    ]
   },
   {
     "word": "ketinggalan",
@@ -1370,7 +1582,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Aku takut ketinggalan info kalau meeting-nya dipindah mendadak.",
-    "example_cn": "如果会议临时改时间，我怕错过消息。"
+    "example_cn": "如果会议临时改时间，我怕错过消息。",
+    "lesson_occurrences": [
+      "2026-08-28 08:00",
+      "2026-09-02 19:00"
+    ]
   },
   {
     "word": "kabarin",
@@ -1392,7 +1608,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Nanti kabarin aku ya.",
-    "example_cn": "等会儿告诉我一声。"
+    "example_cn": "等会儿告诉我一声。",
+    "lesson_occurrences": [
+      "2026-08-29 08:00"
+    ]
   },
   {
     "word": "ketemu",
@@ -1414,7 +1633,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Besok kita ketemu di kantor.",
-    "example_cn": "明天我们在办公室见。"
+    "example_cn": "明天我们在办公室见。",
+    "lesson_occurrences": [
+      "2026-08-29 08:00"
+    ]
   },
   {
     "word": "mampir",
@@ -1436,7 +1658,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Kalau sempat, mampir ke sini ya.",
-    "example_cn": "有空的话顺路过来一下。"
+    "example_cn": "有空的话顺路过来一下。",
+    "lesson_occurrences": [
+      "2026-08-29 08:00"
+    ]
   },
   {
     "word": "buru-buru",
@@ -1453,8 +1678,8 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-08-26 19:00",
     "last_seen": "2026-08-29 08:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-26",
@@ -1462,7 +1687,12 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Nggak usah buru-buru.",
-    "example_cn": "不用这么急。"
+    "example_cn": "不用这么急。",
+    "lesson_occurrences": [
+      "2026-08-26 19:00",
+      "2026-08-28 19:00",
+      "2026-08-29 08:00"
+    ]
   },
   {
     "word": "sengaja",
@@ -1484,7 +1714,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Aku sengaja datang lebih pagi.",
-    "example_cn": "我特意早点来。"
+    "example_cn": "我特意早点来。",
+    "lesson_occurrences": [
+      "2026-08-29 08:00"
+    ]
   },
   {
     "word": "sekalian",
@@ -1497,12 +1730,12 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-26 19:00",
     "last_seen": "2026-09-07 19:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-26",
@@ -1512,7 +1745,14 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Kalau kamu ke lantai bawah, sekalian ambil paketku ya.",
     "example_cn": "如果你去楼下，顺便帮我拿一下包裹吧。",
-    "root_cn": "一起；顺便一次做掉"
+    "root_cn": "一起；顺便一次做掉",
+    "lesson_occurrences": [
+      "2026-08-26 19:00",
+      "2026-08-29 08:00",
+      "2026-08-29 19:00",
+      "2026-09-04 19:00",
+      "2026-09-07 19:00"
+    ]
   },
   {
     "word": "kebetulan",
@@ -1526,7 +1766,7 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-08-29 08:00",
     "last_seen": "2026-09-18 18:00",
     "sessions": [
@@ -1544,7 +1784,17 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "对；正确",
     "example": "Kebetulan aku masih ada waktu, jadi bisa bantu.",
-    "example_cn": "正好我还有时间，所以可以帮忙。"
+    "example_cn": "正好我还有时间，所以可以帮忙。",
+    "lesson_occurrences": [
+      "2026-08-29 08:00",
+      "2026-08-29 19:00",
+      "2026-09-05 19:00",
+      "2026-09-12 19:00",
+      "2026-09-13 19:00",
+      "2026-09-17 18:00",
+      "2026-09-18 08:00",
+      "2026-09-18 18:00"
+    ]
   },
   {
     "word": "nyari",
@@ -1566,7 +1816,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Aku lagi nyari charger.",
-    "example_cn": "我正在找充电器。"
+    "example_cn": "我正在找充电器。",
+    "lesson_occurrences": [
+      "2026-08-29 08:00"
+    ]
   },
   {
     "word": "cocok",
@@ -1588,7 +1841,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Tempat ini cocok buat meeting.",
-    "example_cn": "这个地方很适合开会。"
+    "example_cn": "这个地方很适合开会。",
+    "lesson_occurrences": [
+      "2026-08-29 08:00"
+    ]
   },
   {
     "word": "bawain",
@@ -1610,7 +1866,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Bisa bawain aku air?",
-    "example_cn": "能帮我带瓶水吗？"
+    "example_cn": "能帮我带瓶水吗？",
+    "lesson_occurrences": [
+      "2026-08-29 08:00"
+    ]
   },
   {
     "word": "kepikiran",
@@ -1623,22 +1882,26 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 5,
-    "first_seen": "2026-08-29 08:00",
+    "times_seen": 3,
+    "first_seen": "2026-09-05 19:00",
     "last_seen": "2026-09-15 08:00",
     "sessions": [
-      "08:00",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-29",
       "2026-09-05",
       "2026-09-11",
       "2026-09-15"
     ],
     "root_cn": "想；思考",
     "example": "Aku masih kepikiran hasil meeting kemarin.",
-    "example_cn": "我还一直想着昨天会议的结果。"
+    "example_cn": "我还一直想着昨天会议的结果。",
+    "lesson_occurrences": [
+      "2026-09-05 19:00",
+      "2026-09-11 19:00",
+      "2026-09-15 08:00"
+    ]
   },
   {
     "word": "ngerasa",
@@ -1691,20 +1954,21 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 2,
-    "first_seen": "2026-08-29 08:00",
+    "times_seen": 1,
+    "first_seen": "2026-09-15 19:00",
     "last_seen": "2026-09-15 19:00",
     "sessions": [
-      "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-08-29",
       "2026-09-15"
     ],
     "root_cn": "搞定；整齐",
     "example": "Tenang, masalah ini bisa beres malam ini.",
-    "example_cn": "放心，这个问题今晚能搞定。"
+    "example_cn": "放心，这个问题今晚能搞定。",
+    "lesson_occurrences": [
+      "2026-09-15 19:00"
+    ]
   },
   {
     "word": "telanjur",
@@ -1757,13 +2021,16 @@ window.DAILY_VOCAB_DB = [
       "原始课程"
     ],
     "times_seen": 1,
-    "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-08-29 08:00",
+    "first_seen": "2026-09-15 08:00",
+    "last_seen": "2026-09-15 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-29"
+      "2026-09-15"
+    ],
+    "lesson_occurrences": [
+      "2026-09-15 08:00"
     ]
   },
   {
@@ -1817,22 +2084,21 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 4,
-    "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "times_seen": 1,
+    "first_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
-      "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-08-29",
-      "2026-09-07",
-      "2026-09-10",
-      "2026-09-11"
+      "2026-09-07"
     ],
     "root_cn": "追上；随后跟上",
     "example": "Kalian jalan dulu aja, nanti aku nyusul habis meeting.",
-    "example_cn": "你们先走吧，我开完会晚点再过去找你们。"
+    "example_cn": "你们先走吧，我开完会晚点再过去找你们。",
+    "lesson_occurrences": [
+      "2026-09-07 19:00"
+    ]
   },
   {
     "word": "pantes",
@@ -1855,7 +2121,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Pantes kamu capek, dari pagi belum istirahat.",
-    "example_cn": "难怪你累，从早上就没休息。"
+    "example_cn": "难怪你累，从早上就没休息。",
+    "lesson_occurrences": [
+      "2026-08-30 08:00"
+    ]
   },
   {
     "word": "kebagian",
@@ -1868,21 +2137,24 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 2,
     "first_seen": "2026-08-30 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-08-30",
-      "2026-09-07",
-      "2026-09-11"
+      "2026-09-07"
     ],
     "root_cn": "分；分配",
     "example": "Aku kebagian tugas follow up vendor yang satu ini.",
-    "example_cn": "我分到的任务是跟进这家供应商。"
+    "example_cn": "我分到的任务是跟进这家供应商。",
+    "lesson_occurrences": [
+      "2026-08-30 08:00",
+      "2026-09-07 19:00"
+    ]
   },
   {
     "word": "kehabisan",
@@ -1904,7 +2176,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Aku kehabisan baterai.",
-    "example_cn": "我手机没电了。"
+    "example_cn": "我手机没电了。",
+    "lesson_occurrences": [
+      "2026-08-30 08:00"
+    ]
   },
   {
     "word": "ketiduran",
@@ -1926,7 +2201,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Maaf, tadi aku ketiduran.",
-    "example_cn": "不好意思，我刚才不小心睡着了。"
+    "example_cn": "不好意思，我刚才不小心睡着了。",
+    "lesson_occurrences": [
+      "2026-08-30 08:00"
+    ]
   },
   {
     "word": "ngantuk",
@@ -1948,7 +2226,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Aku ngantuk banget habis makan.",
-    "example_cn": "我吃完饭特别困。"
+    "example_cn": "我吃完饭特别困。",
+    "lesson_occurrences": [
+      "2026-08-30 08:00"
+    ]
   },
   {
     "word": "penasaran",
@@ -1970,7 +2251,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Aku penasaran dia bakal bilang apa.",
-    "example_cn": "我很好奇他会说什么。"
+    "example_cn": "我很好奇他会说什么。",
+    "lesson_occurrences": [
+      "2026-08-30 08:00"
+    ]
   },
   {
     "word": "ngaret",
@@ -1983,19 +2267,21 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "后续纠正版"
     ],
-    "times_seen": 2,
+    "times_seen": 1,
     "first_seen": "2026-08-30 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-08-30 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-30",
-      "2026-09-10"
+      "2026-08-30"
     ],
     "root_cn": "橡胶；引申为时间被‘拉长’",
     "example": "Dia kalau janjian suka ngarét.",
-    "example_cn": "他约时间经常迟到。"
+    "example_cn": "他约时间经常迟到。",
+    "lesson_occurrences": [
+      "2026-08-30 08:00"
+    ]
   },
   {
     "word": "mager",
@@ -2017,7 +2303,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Hari ini aku mager keluar.",
-    "example_cn": "今天我懒得出门。"
+    "example_cn": "今天我懒得出门。",
+    "lesson_occurrences": [
+      "2026-08-30 08:00"
+    ]
   },
   {
     "word": "bingung",
@@ -2039,7 +2328,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Aku bingung mau pilih yang mana.",
-    "example_cn": "我不知道该选哪个。"
+    "example_cn": "我不知道该选哪个。",
+    "lesson_occurrences": [
+      "2026-08-30 08:00"
+    ]
   },
   {
     "word": "kebanyakan",
@@ -2061,7 +2353,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Jangan kebanyakan kopi.",
-    "example_cn": "别喝太多咖啡。"
+    "example_cn": "别喝太多咖啡。",
+    "lesson_occurrences": [
+      "2026-08-30 08:00"
+    ]
   },
   {
     "word": "terjadi",
@@ -2083,7 +2378,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-23"
     ],
     "example": "Apa yang terjadi?",
-    "example_cn": "发生了什么？"
+    "example_cn": "发生了什么？",
+    "lesson_occurrences": [
+      "2026-08-23 19:00"
+    ]
   },
   {
     "word": "berubah",
@@ -2106,7 +2404,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24"
     ],
     "example": "Situasinya sudah berubah.",
-    "example_cn": "情况已经变了。"
+    "example_cn": "情况已经变了。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00",
+      "2026-08-24 19:00"
+    ]
   },
   {
     "word": "memutuskan",
@@ -2128,7 +2430,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-23"
     ],
     "example": "Saya memutuskan untuk tetap tinggal di Indonesia.",
-    "example_cn": "我决定继续留在印尼。"
+    "example_cn": "我决定继续留在印尼。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00"
+    ]
   },
   {
     "word": "mengalami",
@@ -2151,7 +2456,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Kemarin sempat ngalamin masalah yang sama.",
-    "example_cn": "昨天也遇到过同样的问题。"
+    "example_cn": "昨天也遇到过同样的问题。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00",
+      "2026-08-30 19:00"
+    ]
   },
   {
     "word": "mencoba",
@@ -2173,7 +2482,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-23"
     ],
     "example": "Saya mau mencoba.",
-    "example_cn": "我想试一下。"
+    "example_cn": "我想试一下。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00"
+    ]
   },
   {
     "word": "menurut",
@@ -2195,7 +2507,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-23"
     ],
     "example": "Menurut saya, ini cukup penting.",
-    "example_cn": "我认为这个挺重要。"
+    "example_cn": "我认为这个挺重要。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00"
+    ]
   },
   {
     "word": "walaupun",
@@ -2217,7 +2532,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-23"
     ],
     "example": "Walaupun sulit, saya tetap mau mencoba.",
-    "example_cn": "虽然困难，我还是想试试。"
+    "example_cn": "虽然困难，我还是想试试。",
+    "lesson_occurrences": [
+      "2026-08-23 19:00"
+    ]
   },
   {
     "word": "mengubah",
@@ -2239,7 +2557,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24"
     ],
     "example": "Saya mau mengubah rencana.",
-    "example_cn": "我想改变计划。"
+    "example_cn": "我想改变计划。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00"
+    ]
   },
   {
     "word": "perubahan",
@@ -2261,7 +2582,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24"
     ],
     "example": "Ada sedikit perubahan.",
-    "example_cn": "有一点变化。"
+    "example_cn": "有一点变化。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00"
+    ]
   },
   {
     "word": "mengatasi",
@@ -2289,7 +2613,13 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "上；上方",
     "example": "Tarik napas sebentar untuk mengatasi rasa gugup sebelum masuk.",
-    "example_cn": "进去前先呼吸一下，缓解紧张。"
+    "example_cn": "进去前先呼吸一下，缓解紧张。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00",
+      "2026-08-29 19:00",
+      "2026-09-23 18:00",
+      "2026-09-24 18:00"
+    ]
   },
   {
     "word": "berusaha",
@@ -2311,7 +2641,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24"
     ],
     "example": "Saya akan berusaha.",
-    "example_cn": "我会努力。"
+    "example_cn": "我会努力。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00"
+    ]
   },
   {
     "word": "berencana",
@@ -2333,7 +2666,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24"
     ],
     "example": "Saya berencana untuk pergi besok.",
-    "example_cn": "我计划明天去。"
+    "example_cn": "我计划明天去。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00"
+    ]
   },
   {
     "word": "terbiasa",
@@ -2355,7 +2691,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24"
     ],
     "example": "Saya sudah terbiasa tinggal di Indonesia.",
-    "example_cn": "我已经习惯住在印尼了。"
+    "example_cn": "我已经习惯住在印尼了。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00"
+    ]
   },
   {
     "word": "terutama",
@@ -2377,7 +2716,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24"
     ],
     "example": "Terutama kalau sedang sibuk.",
-    "example_cn": "尤其是忙的时候。"
+    "example_cn": "尤其是忙的时候。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00"
+    ]
   },
   {
     "word": "sementara",
@@ -2400,7 +2742,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Sementara pakai cara ini dulu.",
-    "example_cn": "暂时先用这个办法。"
+    "example_cn": "暂时先用这个办法。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00",
+      "2026-08-30 19:00"
+    ]
   },
   {
     "word": "setidaknya",
@@ -2423,7 +2769,11 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Setidaknya kita udah coba.",
-    "example_cn": "至少我们试过了。"
+    "example_cn": "至少我们试过了。",
+    "lesson_occurrences": [
+      "2026-08-24 19:00",
+      "2026-08-29 19:00"
+    ]
   },
   {
     "word": "selesai",
@@ -2445,7 +2795,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-25"
     ],
     "example": "Pekerjaan ini sudah selesai.",
-    "example_cn": "这项工作已经完成了。"
+    "example_cn": "这项工作已经完成了。",
+    "lesson_occurrences": [
+      "2026-08-25 19:00"
+    ]
   },
   {
     "word": "memerlukan",
@@ -2467,7 +2820,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-25"
     ],
     "example": "Proses ini memerlukan sedikit waktu.",
-    "example_cn": "这个流程需要一点时间。"
+    "example_cn": "这个流程需要一点时间。",
+    "lesson_occurrences": [
+      "2026-08-25 19:00"
+    ]
   },
   {
     "word": "menyiapkan",
@@ -2489,7 +2845,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-25"
     ],
     "example": "Saya menyiapkan dokumen.",
-    "example_cn": "我准备文件。"
+    "example_cn": "我准备文件。",
+    "lesson_occurrences": [
+      "2026-08-25 19:00"
+    ]
   },
   {
     "word": "mengirim",
@@ -2511,7 +2870,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-25"
     ],
     "example": "Dokumennya sudah dikirim.",
-    "example_cn": "文件已经发了。"
+    "example_cn": "文件已经发了。",
+    "lesson_occurrences": [
+      "2026-08-25 19:00"
+    ]
   },
   {
     "word": "memeriksa",
@@ -2533,7 +2895,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-25"
     ],
     "example": "Dokumennya sedang diperiksa.",
-    "example_cn": "文件正在审核。"
+    "example_cn": "文件正在审核。",
+    "lesson_occurrences": [
+      "2026-08-25 19:00"
+    ]
   },
   {
     "word": "melanjutkan",
@@ -2555,7 +2920,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-25"
     ],
     "example": "Saya akan melanjutkan pekerjaan.",
-    "example_cn": "我会继续工作。"
+    "example_cn": "我会继续工作。",
+    "lesson_occurrences": [
+      "2026-08-25 19:00"
+    ]
   },
   {
     "word": "segera",
@@ -2581,7 +2949,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "立即；马上",
     "example": "Kalau ada perubahan, tolong segera kasih tahu aku.",
-    "example_cn": "如果有变化，请马上告诉我。"
+    "example_cn": "如果有变化，请马上告诉我。",
+    "lesson_occurrences": [
+      "2026-08-25 19:00",
+      "2026-09-15 08:00"
+    ]
   },
   {
     "word": "proses",
@@ -2603,7 +2975,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-25"
     ],
     "example": "Masih dalam proses.",
-    "example_cn": "还在处理中。"
+    "example_cn": "还在处理中。",
+    "lesson_occurrences": [
+      "2026-08-25 19:00"
+    ]
   },
   {
     "word": "kayaknya",
@@ -2625,7 +3000,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26"
     ],
     "example": "Kayaknya nggak jadi.",
-    "example_cn": "好像去不了了 / 好像取消了。"
+    "example_cn": "好像去不了了 / 好像取消了。",
+    "lesson_occurrences": [
+      "2026-08-26 19:00"
+    ]
   },
   {
     "word": "nggak jadi",
@@ -2647,7 +3025,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26"
     ],
     "example": "Kayaknya hari ini nggak jadi deh.",
-    "example_cn": "今天好像不去了。"
+    "example_cn": "今天好像不去了。",
+    "lesson_occurrences": [
+      "2026-08-26 19:00"
+    ]
   },
   {
     "word": "mendadak",
@@ -2669,7 +3050,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26"
     ],
     "example": "Aku ada urusan mendadak.",
-    "example_cn": "我临时有点事。"
+    "example_cn": "我临时有点事。",
+    "lesson_occurrences": [
+      "2026-08-26 19:00"
+    ]
   },
   {
     "word": "ada urusan",
@@ -2691,7 +3075,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26"
     ],
     "example": "Aku ada urusan mendadak.",
-    "example_cn": "我临时有点事。"
+    "example_cn": "我临时有点事。",
+    "lesson_occurrences": [
+      "2026-08-26 19:00"
+    ]
   },
   {
     "word": "nggak sempat",
@@ -2713,7 +3100,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26"
     ],
     "example": "Aku nggak sempat makan siang.",
-    "example_cn": "我没时间吃午饭。"
+    "example_cn": "我没时间吃午饭。",
+    "lesson_occurrences": [
+      "2026-08-26 19:00"
+    ]
   },
   {
     "word": "telat",
@@ -2735,7 +3125,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26"
     ],
     "example": "Kayaknya aku bakal telat dikit.",
-    "example_cn": "我可能会晚一点到。"
+    "example_cn": "我可能会晚一点到。",
+    "lesson_occurrences": [
+      "2026-08-26 19:00"
+    ]
   },
   {
     "word": "gimana kalau",
@@ -2757,7 +3150,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26"
     ],
     "example": "Gimana kalau besok aja?",
-    "example_cn": "要不就明天？"
+    "example_cn": "要不就明天？",
+    "lesson_occurrences": [
+      "2026-08-26 19:00"
+    ]
   },
   {
     "word": "kabari aja",
@@ -2779,7 +3175,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-26"
     ],
     "example": "Nanti kabari aja.",
-    "example_cn": "到时候告诉我就行。"
+    "example_cn": "到时候告诉我就行。",
+    "lesson_occurrences": [
+      "2026-08-26 19:00"
+    ]
   },
   {
     "word": "jadi",
@@ -2801,7 +3200,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Besok jadi pergi nggak?",
-    "example_cn": "明天还去吗？"
+    "example_cn": "明天还去吗？",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "aja",
@@ -2823,7 +3225,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Di sini aja.",
-    "example_cn": "就这里吧。"
+    "example_cn": "就这里吧。",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "kan",
@@ -2845,7 +3250,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Aku udah bilang, kan?",
-    "example_cn": "我不是说过了吗？"
+    "example_cn": "我不是说过了吗？",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "sih",
@@ -2867,7 +3275,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Kamu lagi ngapain sih?",
-    "example_cn": "你到底在干嘛呢？"
+    "example_cn": "你到底在干嘛呢？",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "kok",
@@ -2889,7 +3300,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Kok mahal banget?",
-    "example_cn": "怎么这么贵？"
+    "example_cn": "怎么这么贵？",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "dong",
@@ -2911,7 +3325,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Bantuin aku dong.",
-    "example_cn": "帮帮我嘛。"
+    "example_cn": "帮帮我嘛。",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "nih",
@@ -2933,7 +3350,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Aku lagi sibuk nih.",
-    "example_cn": "我现在正忙呢。"
+    "example_cn": "我现在正忙呢。",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "deh",
@@ -2955,7 +3375,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Besok aja deh.",
-    "example_cn": "还是明天吧。"
+    "example_cn": "还是明天吧。",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "emang",
@@ -2977,7 +3400,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Emang kamu nggak tahu?",
-    "example_cn": "你真不知道？"
+    "example_cn": "你真不知道？",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "terus",
@@ -2999,7 +3425,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Terus gimana?",
-    "example_cn": "然后怎么办？"
+    "example_cn": "然后怎么办？",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "biar",
@@ -3021,7 +3450,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27"
     ],
     "example": "Biar aku aja.",
-    "example_cn": "让我来就行。"
+    "example_cn": "让我来就行。",
+    "lesson_occurrences": [
+      "2026-08-27 19:00"
+    ]
   },
   {
     "word": "tolong",
@@ -3043,7 +3475,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Tolong cek dulu.",
-    "example_cn": "麻烦先查一下。"
+    "example_cn": "麻烦先查一下。",
+    "lesson_occurrences": [
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "minta",
@@ -3065,7 +3500,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Minta info dong.",
-    "example_cn": "给点信息吧。"
+    "example_cn": "给点信息吧。",
+    "lesson_occurrences": [
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "tanyain",
@@ -3087,7 +3525,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Bisa tanyain nggak?",
-    "example_cn": "能帮忙问一下吗？"
+    "example_cn": "能帮忙问一下吗？",
+    "lesson_occurrences": [
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "cek",
@@ -3109,7 +3550,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Aku belum sempat cek.",
-    "example_cn": "我还没来得及看。"
+    "example_cn": "我还没来得及看。",
+    "lesson_occurrences": [
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "ingetin",
@@ -3131,7 +3575,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Nanti ingetin aku ya.",
-    "example_cn": "等下提醒我一下。"
+    "example_cn": "等下提醒我一下。",
+    "lesson_occurrences": [
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "nunggu",
@@ -3153,7 +3600,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Aku lagi nunggu.",
-    "example_cn": "我在等。"
+    "example_cn": "我在等。",
+    "lesson_occurrences": [
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "belum sempat",
@@ -3175,7 +3625,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Aku belum sempat cek.",
-    "example_cn": "我还没来得及看。"
+    "example_cn": "我还没来得及看。",
+    "lesson_occurrences": [
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "sebentar / bentar",
@@ -3197,7 +3650,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Bentar ya.",
-    "example_cn": "等一下啊。"
+    "example_cn": "等一下啊。",
+    "lesson_occurrences": [
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "nanti dulu",
@@ -3219,7 +3675,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Nanti dulu ya.",
-    "example_cn": "先等等啊。"
+    "example_cn": "先等等啊。",
+    "lesson_occurrences": [
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "nggak usah",
@@ -3241,7 +3700,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28"
     ],
     "example": "Nggak usah datang.",
-    "example_cn": "不用来了。"
+    "example_cn": "不用来了。",
+    "lesson_occurrences": [
+      "2026-08-28 19:00"
+    ]
   },
   {
     "word": "heran",
@@ -3263,7 +3725,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Aku heran, kok dia belum datang?",
-    "example_cn": "我纳闷，他怎么还没来？"
+    "example_cn": "我纳闷，他怎么还没来？",
+    "lesson_occurrences": [
+      "2026-08-29 19:00"
+    ]
   },
   {
     "word": "harusnya",
@@ -3285,7 +3750,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Harusnya udah selesai.",
-    "example_cn": "按理说应该已经好了。"
+    "example_cn": "按理说应该已经好了。",
+    "lesson_occurrences": [
+      "2026-08-29 19:00"
+    ]
   },
   {
     "word": "nyaris",
@@ -3310,7 +3778,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-18"
     ],
     "example": "Aku nyaris terlambat karena jalan tadi ramai.",
-    "example_cn": "因为刚才路上很拥挤，我差点迟到。"
+    "example_cn": "因为刚才路上很拥挤，我差点迟到。",
+    "lesson_occurrences": [
+      "2026-08-29 19:00",
+      "2026-09-18 18:00"
+    ]
   },
   {
     "word": "terpaksa",
@@ -3332,7 +3804,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29"
     ],
     "example": "Aku terpaksa pulang dulu.",
-    "example_cn": "我没办法，只能先回去了。"
+    "example_cn": "我没办法，只能先回去了。",
+    "lesson_occurrences": [
+      "2026-08-29 19:00"
+    ]
   },
   {
     "word": "menentukan",
@@ -3343,25 +3818,38 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00",
       "原始课程",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 5,
+    "times_seen": 8,
     "first_seen": "2026-08-29 19:00",
     "last_seen": "2026-09-20 18:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-29",
       "2026-09-12",
       "2026-09-17",
       "2026-09-18",
+      "2026-09-19",
       "2026-09-20"
     ],
     "root_cn": "确定；一定",
     "example": "Kami perlu menentukan siapa yang akan menjawab komplain itu.",
-    "example_cn": "我们需要确定由谁来回复那条投诉。"
+    "example_cn": "我们需要确定由谁来回复那条投诉。",
+    "lesson_occurrences": [
+      "2026-08-29 19:00",
+      "2026-09-12 19:00",
+      "2026-09-17 18:00",
+      "2026-09-18 08:00",
+      "2026-09-18 18:00",
+      "2026-09-19 08:00",
+      "2026-09-20 08:00",
+      "2026-09-20 18:00"
+    ]
   },
   {
     "word": "menangani",
@@ -3371,22 +3859,31 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-30 19:00",
-    "last_seen": "2026-09-12 19:00",
+    "last_seen": "2026-09-15 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-30",
       "2026-09-04",
-      "2026-09-12"
+      "2026-09-12",
+      "2026-09-15"
     ],
     "example": "Kalau situasinya mulai panas, siapa yang paling cocok menangani pembicaraan ini?",
     "example_cn": "如果气氛开始紧张，谁最适合来处理这次沟通？",
-    "root_cn": "手"
+    "root_cn": "手",
+    "lesson_occurrences": [
+      "2026-08-30 19:00",
+      "2026-09-04 19:00",
+      "2026-09-12 19:00",
+      "2026-09-15 08:00"
+    ]
   },
   {
     "word": "tergantung",
@@ -3396,22 +3893,31 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-30 19:00",
-    "last_seen": "2026-09-14 19:00",
+    "last_seen": "2026-09-15 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-30",
       "2026-09-05",
-      "2026-09-14"
+      "2026-09-14",
+      "2026-09-15"
     ],
     "root_cn": "挂；悬挂",
     "example": "Jadi atau nggaknya tergantung berapa orang yang bisa ikut.",
-    "example_cn": "到底办不办取决于有多少人能参加。"
+    "example_cn": "到底办不办取决于有多少人能参加。",
+    "lesson_occurrences": [
+      "2026-08-30 19:00",
+      "2026-09-05 19:00",
+      "2026-09-14 19:00",
+      "2026-09-15 08:00"
+    ]
   },
   {
     "word": "seharusnya",
@@ -3433,7 +3939,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-30"
     ],
     "example": "Seharusnya hari ini udah selesai.",
-    "example_cn": "按理今天应该好了。"
+    "example_cn": "按理今天应该好了。",
+    "lesson_occurrences": [
+      "2026-08-30 19:00"
+    ]
   },
   {
     "word": "terlanjur",
@@ -3458,7 +3967,12 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Aku udah terlanjur janji, jadi nggak enak kalau batal sekarang.",
     "example_cn": "我都已经答应了，现在再取消就不太好。",
-    "root_cn": "继续向前；进一步"
+    "root_cn": "继续向前；进一步",
+    "lesson_occurrences": [
+      "2026-08-30 19:00",
+      "2026-09-04 19:00",
+      "2026-09-07 19:00"
+    ]
   },
   {
     "word": "macet",
@@ -3479,7 +3993,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Kalau berangkat jam delapan, biasanya macet banget.",
-    "example_cn": "如果八点出发，通常会堵得很厉害。"
+    "example_cn": "如果八点出发，通常会堵得很厉害。",
+    "lesson_occurrences": [
+      "2026-08-31 08:00"
+    ]
   },
   {
     "word": "nyasar",
@@ -3500,7 +4017,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Tadi driver-nya nyasar, jadi muter agak jauh.",
-    "example_cn": "刚才司机走错路了，所以绕得有点远。"
+    "example_cn": "刚才司机走错路了，所以绕得有点远。",
+    "lesson_occurrences": [
+      "2026-08-31 08:00"
+    ]
   },
   {
     "word": "nganter",
@@ -3521,7 +4041,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Nanti aku nganter kamu sampai stasiun aja.",
-    "example_cn": "等会儿我就送你到车站吧。"
+    "example_cn": "等会儿我就送你到车站吧。",
+    "lesson_occurrences": [
+      "2026-08-31 08:00"
+    ]
   },
   {
     "word": "jemput",
@@ -3542,7 +4065,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Jam enam bisa jemput aku di depan kantor nggak?",
-    "example_cn": "六点能到办公室门口接我吗？"
+    "example_cn": "六点能到办公室门口接我吗？",
+    "lesson_occurrences": [
+      "2026-08-31 08:00"
+    ]
   },
   {
     "word": "parkir",
@@ -3563,7 +4089,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Di sini susah cari tempat parkir.",
-    "example_cn": "这里很难找停车位。"
+    "example_cn": "这里很难找停车位。",
+    "lesson_occurrences": [
+      "2026-08-31 08:00"
+    ]
   },
   {
     "word": "saldo",
@@ -3584,7 +4113,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Saldo e-wallet aku tinggal sedikit.",
-    "example_cn": "我的电子钱包余额只剩一点了。"
+    "example_cn": "我的电子钱包余额只剩一点了。",
+    "lesson_occurrences": [
+      "2026-08-31 08:00"
+    ]
   },
   {
     "word": "rekening",
@@ -3605,7 +4137,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Kirim nomor rekening kamu ya.",
-    "example_cn": "把你的银行账号发给我。"
+    "example_cn": "把你的银行账号发给我。",
+    "lesson_occurrences": [
+      "2026-08-31 08:00"
+    ]
   },
   {
     "word": "tagihan",
@@ -3630,7 +4165,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "催款；要求付款",
     "example": "Sebelum bayar, cek dulu tagihannya sesuai sama harga yang disepakati atau nggak.",
-    "example_cn": "付款前先确认账单是否和商定的价格一致。"
+    "example_cn": "付款前先确认账单是否和商定的价格一致。",
+    "lesson_occurrences": [
+      "2026-08-31 08:00",
+      "2026-09-14 19:00"
+    ]
   },
   {
     "word": "hemat",
@@ -3651,7 +4190,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Bulan ini aku harus lebih hemat.",
-    "example_cn": "这个月我得更省一点。"
+    "example_cn": "这个月我得更省一点。",
+    "lesson_occurrences": [
+      "2026-08-31 08:00"
+    ]
   },
   {
     "word": "boros",
@@ -3672,7 +4214,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Kalau tiap hari pesan kopi, lumayan boros juga.",
-    "example_cn": "如果每天都点咖啡，其实也挺费钱的。"
+    "example_cn": "如果每天都点咖啡，其实也挺费钱的。",
+    "lesson_occurrences": [
+      "2026-08-31 08:00"
+    ]
   },
   {
     "word": "pengeluaran",
@@ -3693,7 +4238,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Aku lagi nyatet pengeluaran bulan ini biar nggak kebablasan.",
-    "example_cn": "我正在记这个月的支出，免得花过头。"
+    "example_cn": "我正在记这个月的支出，免得花过头。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "pemasukan",
@@ -3714,7 +4262,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Pemasukan bulan ini lumayan, tapi pengeluarannya juga naik.",
-    "example_cn": "这个月收入还可以，但支出也涨了。"
+    "example_cn": "这个月收入还可以，但支出也涨了。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "anggaran",
@@ -3735,7 +4286,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Anggaran buat bulan depan kayaknya harus dikurangin.",
-    "example_cn": "下个月的预算看来得压一压。"
+    "example_cn": "下个月的预算看来得压一压。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "biaya",
@@ -3756,7 +4310,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Biaya hidup di Jakarta emang lumayan tinggi.",
-    "example_cn": "雅加达的生活成本确实挺高。"
+    "example_cn": "雅加达的生活成本确实挺高。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "cicilan",
@@ -3777,7 +4334,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Bulan ini masih ada cicilan yang harus dibayar.",
-    "example_cn": "这个月还有分期款要付。"
+    "example_cn": "这个月还有分期款要付。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "prioritas",
@@ -3798,7 +4358,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Kalau duitnya terbatas, tentuin dulu mana yang jadi prioritas.",
-    "example_cn": "如果钱有限，先确定什么最优先。"
+    "example_cn": "如果钱有限，先确定什么最优先。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "mengatur",
@@ -3819,7 +4382,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Aku lagi belajar ngatur uang biar akhir bulan nggak kehabisan.",
-    "example_cn": "我在学着管钱，免得月底没钱。"
+    "example_cn": "我在学着管钱，免得月底没钱。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "membatasi",
@@ -3840,7 +4406,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Aku mulai ngebatasin jajan kopi tiap hari.",
-    "example_cn": "我开始限制自己每天买咖啡了。"
+    "example_cn": "我开始限制自己每天买咖啡了。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "menunda",
@@ -3861,7 +4430,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Kalau nggak mendesak, pembeliannya bisa ditunda dulu.",
-    "example_cn": "如果不急，这笔购买可以先推迟。"
+    "example_cn": "如果不急，这笔购买可以先推迟。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "memperkirakan",
@@ -3882,7 +4454,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Coba perkirain dulu total biayanya sebelum beli.",
-    "example_cn": "买之前先估一下总费用。"
+    "example_cn": "买之前先估一下总费用。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "keperluan",
@@ -3903,7 +4478,10 @@ window.DAILY_VOCAB_DB = [
       "2026-08-31"
     ],
     "example": "Uangnya aku pisahin buat keperluan rumah sama kerja.",
-    "example_cn": "我把钱分开用于家里和工作的开销。"
+    "example_cn": "我把钱分开用于家里和工作的开销。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00"
+    ]
   },
   {
     "word": "cadangan",
@@ -3926,7 +4504,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "预留；准备备用",
     "example": "Kalau rencana utama nggak jalan, kita masih punya rencana cadangan.",
-    "example_cn": "如果主要方案行不通，我们还有备用方案。"
+    "example_cn": "如果主要方案行不通，我们还有备用方案。",
+    "lesson_occurrences": [
+      "2026-08-31 19:00",
+      "2026-09-12 19:00"
+    ]
   },
   {
     "word": "kendaraan",
@@ -3947,7 +4529,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Kalau jam segini, kendaraan di jalan mulai banyak.",
-    "example_cn": "这个时间路上的车开始多起来了。"
+    "example_cn": "这个时间路上的车开始多起来了。",
+    "lesson_occurrences": [
+      "2026-09-01 08:00"
+    ]
   },
   {
     "word": "belok",
@@ -3968,7 +4553,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Nanti belok kiri setelah minimarket.",
-    "example_cn": "等会儿过了便利店左转。"
+    "example_cn": "等会儿过了便利店左转。",
+    "lesson_occurrences": [
+      "2026-09-01 08:00"
+    ]
   },
   {
     "word": "lurus",
@@ -3989,7 +4577,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Dari sini lurus aja sampai lampu merah.",
-    "example_cn": "从这里一直直走到红绿灯。"
+    "example_cn": "从这里一直直走到红绿灯。",
+    "lesson_occurrences": [
+      "2026-09-01 08:00"
+    ]
   },
   {
     "word": "putar balik",
@@ -4010,7 +4601,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Kita kelewatan, mending putar balik di depan.",
-    "example_cn": "我们开过头了，最好在前面掉头。"
+    "example_cn": "我们开过头了，最好在前面掉头。",
+    "lesson_occurrences": [
+      "2026-09-01 08:00"
+    ]
   },
   {
     "word": "tunai",
@@ -4031,7 +4625,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Kalau bayar tunai, ada kembalian nggak?",
-    "example_cn": "如果付现金，有零钱找吗？"
+    "example_cn": "如果付现金，有零钱找吗？",
+    "lesson_occurrences": [
+      "2026-09-01 08:00"
+    ]
   },
   {
     "word": "kembalian",
@@ -4052,7 +4649,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Nggak usah kembalian, pas aja.",
-    "example_cn": "不用找零了，刚好。"
+    "example_cn": "不用找零了，刚好。",
+    "lesson_occurrences": [
+      "2026-09-01 08:00"
+    ]
   },
   {
     "word": "transfer",
@@ -4073,7 +4673,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Aku transfer sekarang, nanti kamu cek ya.",
-    "example_cn": "我现在转账，等会儿你查一下。"
+    "example_cn": "我现在转账，等会儿你查一下。",
+    "lesson_occurrences": [
+      "2026-09-01 08:00"
+    ]
   },
   {
     "word": "utang",
@@ -4084,17 +4687,22 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-01 08:00",
-    "last_seen": "2026-09-01 08:00",
+    "last_seen": "2026-09-15 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-01"
+      "2026-09-01",
+      "2026-09-15"
     ],
     "example": "Aku masih punya utang kecil sama dia.",
-    "example_cn": "我还欠他一点钱。"
+    "example_cn": "我还欠他一点钱。",
+    "lesson_occurrences": [
+      "2026-09-01 08:00",
+      "2026-09-15 08:00"
+    ]
   },
   {
     "word": "pinjam",
@@ -4115,7 +4723,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Boleh pinjam charger sebentar?",
-    "example_cn": "充电器能借我一会儿吗？"
+    "example_cn": "充电器能借我一会儿吗？",
+    "lesson_occurrences": [
+      "2026-09-01 08:00"
+    ]
   },
   {
     "word": "stok",
@@ -4136,7 +4747,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Stok barang ini tinggal sedikit, harus pesan lagi.",
-    "example_cn": "这个商品库存只剩一点了，得再订一些。"
+    "example_cn": "这个商品库存只剩一点了，得再订一些。",
+    "lesson_occurrences": [
+      "2026-09-01 08:00"
+    ]
   },
   {
     "word": "akhirnya",
@@ -4157,7 +4771,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Akhirnya masalah itu selesai juga.",
-    "example_cn": "那个问题终于解决了。"
+    "example_cn": "那个问题终于解决了。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00"
+    ]
   },
   {
     "word": "sebenarnya",
@@ -4179,7 +4796,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Sebenarnya aku setuju, cuma ada satu bagian yang perlu diubah.",
-    "example_cn": "其实我是同意的，只是有一个部分需要修改。"
+    "example_cn": "其实我是同意的，只是有一个部分需要修改。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00",
+      "2026-09-03 19:00"
+    ]
   },
   {
     "word": "justru",
@@ -4200,7 +4821,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Justru sekarang aku lebih tenang.",
-    "example_cn": "反而现在我更平静了。"
+    "example_cn": "反而现在我更平静了。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00"
+    ]
   },
   {
     "word": "meskipun",
@@ -4223,7 +4847,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "虽然；即使",
     "example": "Meskipun hasilnya belum pasti, kita tetap bisa menyiapkan rencana cadangan.",
-    "example_cn": "虽然结果还不确定，我们仍然可以准备备用方案。"
+    "example_cn": "虽然结果还不确定，我们仍然可以准备备用方案。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00",
+      "2026-09-13 19:00"
+    ]
   },
   {
     "word": "tetap",
@@ -4244,7 +4872,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Tetap kabarin aku kalau ada perubahan.",
-    "example_cn": "如果有变化还是告诉我一声。"
+    "example_cn": "如果有变化还是告诉我一声。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00"
+    ]
   },
   {
     "word": "bahkan",
@@ -4267,7 +4898,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "甚至",
     "example": "Datanya belum lengkap, bahkan satu laporan belum masuk sama sekali.",
-    "example_cn": "数据还不完整，甚至还有一份报告完全没提交。"
+    "example_cn": "数据还不完整，甚至还有一份报告完全没提交。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00",
+      "2026-09-13 19:00"
+    ]
   },
   {
     "word": "berarti",
@@ -4288,7 +4923,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Berarti besok kita nggak perlu datang pagi-pagi.",
-    "example_cn": "也就是说，明天我们不用一大早来。"
+    "example_cn": "也就是说，明天我们不用一大早来。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00"
+    ]
   },
   {
     "word": "termasuk",
@@ -4309,7 +4947,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Termasuk biaya parkir juga, ya?",
-    "example_cn": "也包括停车费，对吧？"
+    "example_cn": "也包括停车费，对吧？",
+    "lesson_occurrences": [
+      "2026-09-01 19:00"
+    ]
   },
   {
     "word": "menganggap",
@@ -4330,7 +4971,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Aku menganggap masalah ini cukup penting.",
-    "example_cn": "我认为这个问题挺重要。"
+    "example_cn": "我认为这个问题挺重要。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00"
+    ]
   },
   {
     "word": "memahami",
@@ -4351,7 +4995,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Aku memahami maksud kamu, kok.",
-    "example_cn": "我明白你的意思啊。"
+    "example_cn": "我明白你的意思啊。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00"
+    ]
   },
   {
     "word": "menjaga",
@@ -4372,7 +5019,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Menjaga komunikasi tetap jelas itu penting.",
-    "example_cn": "保持沟通清楚很重要。"
+    "example_cn": "保持沟通清楚很重要。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00"
+    ]
   },
   {
     "word": "kemungkinan",
@@ -4393,7 +5043,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-01"
     ],
     "example": "Kemungkinan besok jadwalnya berubah.",
-    "example_cn": "明天的安排有可能会变。"
+    "example_cn": "明天的安排有可能会变。",
+    "lesson_occurrences": [
+      "2026-09-01 19:00"
+    ]
   },
   {
     "word": "jadwal",
@@ -4415,7 +5068,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Jadwal siang ini berubah lagi.",
-    "example_cn": "今天下午的日程又变了。"
+    "example_cn": "今天下午的日程又变了。",
+    "lesson_occurrences": [
+      "2026-09-02 08:00"
+    ]
   },
   {
     "word": "batal",
@@ -4437,7 +5093,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Meeting jam dua akhirnya batal.",
-    "example_cn": "两点的会议最后取消了。"
+    "example_cn": "两点的会议最后取消了。",
+    "lesson_occurrences": [
+      "2026-09-02 08:00"
+    ]
   },
   {
     "word": "lanjut",
@@ -4459,7 +5118,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Kalau sudah beres, kita lanjut bahas bagian berikutnya.",
-    "example_cn": "如果已经处理完，我们继续讨论下一部分。"
+    "example_cn": "如果已经处理完，我们继续讨论下一部分。",
+    "lesson_occurrences": [
+      "2026-09-02 08:00"
+    ]
   },
   {
     "word": "izin",
@@ -4481,7 +5143,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Besok aku izin datang agak siang ya.",
-    "example_cn": "明天我请示一下，会晚一点来。"
+    "example_cn": "明天我请示一下，会晚一点来。",
+    "lesson_occurrences": [
+      "2026-09-02 08:00"
+    ]
   },
   {
     "word": "cuti",
@@ -4503,7 +5168,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Aku mau ambil cuti dua hari minggu depan.",
-    "example_cn": "我下周想休两天假。"
+    "example_cn": "我下周想休两天假。",
+    "lesson_occurrences": [
+      "2026-09-02 08:00"
+    ]
   },
   {
     "word": "lembur",
@@ -4525,7 +5193,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Kalau kerjaan belum beres, mungkin malam ini harus lembur.",
-    "example_cn": "如果工作还没做完，今晚可能得加班。"
+    "example_cn": "如果工作还没做完，今晚可能得加班。",
+    "lesson_occurrences": [
+      "2026-09-02 08:00"
+    ]
   },
   {
     "word": "urusan",
@@ -4547,7 +5218,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Siang ini aku ada urusan di luar kantor.",
-    "example_cn": "今天下午我有事情要去办公室外处理。"
+    "example_cn": "今天下午我有事情要去办公室外处理。",
+    "lesson_occurrences": [
+      "2026-09-02 08:00"
+    ]
   },
   {
     "word": "ngurus",
@@ -4560,7 +5234,7 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 7,
     "first_seen": "2026-09-02 08:00",
     "last_seen": "2026-09-24 18:00",
     "sessions": [
@@ -4570,12 +5244,22 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-02",
       "2026-09-17",
+      "2026-09-18",
       "2026-09-23",
       "2026-09-24"
     ],
     "root_cn": "处理；照管",
     "example": "Aku lagi ngurus dokumen yang perlu dibawa untuk wawancara.",
-    "example_cn": "我正在处理面试需要带的文件。"
+    "example_cn": "我正在处理面试需要带的文件。",
+    "lesson_occurrences": [
+      "2026-09-02 08:00",
+      "2026-09-17 18:00",
+      "2026-09-18 08:00",
+      "2026-09-23 08:00",
+      "2026-09-23 18:00",
+      "2026-09-24 08:00",
+      "2026-09-24 18:00"
+    ]
   },
   {
     "word": "ngejar",
@@ -4587,19 +5271,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "2026-09-02"
     ],
-    "times_seen": 2,
+    "times_seen": 1,
     "first_seen": "2026-09-02 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-02 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-02",
-      "2026-09-10"
+      "2026-09-02"
     ],
     "root_cn": "追；赶",
     "example": "Hari ini aku harus ngejar deadline sebelum jam lima.",
-    "example_cn": "今天我得在五点前赶上截止时间。"
+    "example_cn": "今天我得在五点前赶上截止时间。",
+    "lesson_occurrences": [
+      "2026-09-02 08:00"
+    ]
   },
   {
     "word": "dadakan",
@@ -4624,7 +5310,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Tadi ada meeting dadakan, jadi jadwalku langsung berubah.",
     "example_cn": "刚才突然加了个临时会议，所以我的安排马上变了。",
-    "root_cn": "突然；临时发生"
+    "root_cn": "突然；临时发生",
+    "lesson_occurrences": [
+      "2026-09-02 08:00",
+      "2026-09-04 19:00"
+    ]
   },
   {
     "word": "kebuang",
@@ -4655,7 +5345,19 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Kalau terus mikirin hal kecil, energi kita malah kebuang.",
     "example_cn": "如果一直纠结小事，我们的精力反而会被浪费。",
-    "root_cn": "扔掉；浪费"
+    "root_cn": "扔掉；浪费",
+    "lesson_occurrences": [
+      "2026-09-02 19:00",
+      "2026-09-03 19:00",
+      "2026-09-04 19:00",
+      "2026-09-05 19:00",
+      "2026-09-06 19:00",
+      "2026-09-07 19:00",
+      "2026-09-08 19:00",
+      "2026-09-09 19:00",
+      "2026-09-10 19:00",
+      "2026-09-11 19:00"
+    ]
   },
   {
     "word": "beresin",
@@ -4676,7 +5378,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Aku mau beresin kerjaan ini dulu sebelum meeting berikutnya.",
-    "example_cn": "我想先把这个工作处理完，再去下一个会议。"
+    "example_cn": "我想先把这个工作处理完，再去下一个会议。",
+    "lesson_occurrences": [
+      "2026-09-02 19:00"
+    ]
   },
   {
     "word": "ngabarin",
@@ -4697,7 +5402,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Kalau jadwalnya berubah, ngabarin aku dari awal ya.",
-    "example_cn": "如果时间有变化，早点告诉我一声。"
+    "example_cn": "如果时间有变化，早点告诉我一声。",
+    "lesson_occurrences": [
+      "2026-09-02 19:00"
+    ]
   },
   {
     "word": "sempetin",
@@ -4718,7 +5426,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Nanti sempetin baca dokumennya sebelum pulang, ya.",
-    "example_cn": "等会儿下班前挤点时间看一下文件。"
+    "example_cn": "等会儿下班前挤点时间看一下文件。",
+    "lesson_occurrences": [
+      "2026-09-02 19:00"
+    ]
   },
   {
     "word": "keteteran",
@@ -4730,23 +5441,23 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "08:00"
     ],
-    "times_seen": 5,
+    "times_seen": 2,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-04 19:00",
     "sessions": [
-      "19:00",
-      "08:00"
+      "19:00"
     ],
     "dates": [
       "2026-09-02",
-      "2026-09-04",
-      "2026-09-07",
-      "2026-09-10",
-      "2026-09-11"
+      "2026-09-04"
     ],
     "example": "Kalau semua dikerjain barengan, aku malah keteteran.",
     "example_cn": "如果所有事情一起做，我反而会忙不过来。",
-    "root_cn": "忙不过来；跟不上"
+    "root_cn": "忙不过来；跟不上",
+    "lesson_occurrences": [
+      "2026-09-02 19:00",
+      "2026-09-04 19:00"
+    ]
   },
   {
     "word": "kepending",
@@ -4767,7 +5478,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Dokumen ini jangan sampai kepending sampai minggu depan.",
-    "example_cn": "这个文件别一直搁到下周。"
+    "example_cn": "这个文件别一直搁到下周。",
+    "lesson_occurrences": [
+      "2026-09-02 19:00"
+    ]
   },
   {
     "word": "ngejar deadline",
@@ -4788,7 +5502,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02"
     ],
     "example": "Aku lagi ngejar deadline, jadi siang ini fokus dulu ke laporan.",
-    "example_cn": "我正在赶截止时间，所以今天下午先专心做报告。"
+    "example_cn": "我正在赶截止时间，所以今天下午先专心做报告。",
+    "lesson_occurrences": [
+      "2026-09-02 19:00"
+    ]
   },
   {
     "word": "urusan dadakan",
@@ -4811,7 +5528,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "处理；临时突然发生",
     "example": "Maaf, aku nggak bisa ikut karena ada urusan dadakan.",
-    "example_cn": "抱歉，我不能参加，因为临时突然有点事。"
+    "example_cn": "抱歉，我不能参加，因为临时突然有点事。",
+    "lesson_occurrences": [
+      "2026-09-02 19:00",
+      "2026-09-14 19:00"
+    ]
   },
   {
     "word": "tunda",
@@ -4832,7 +5553,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Meeting jam tiga kita tunda ke besok aja.",
-    "example_cn": "三点的会议我们就推迟到明天吧。"
+    "example_cn": "三点的会议我们就推迟到明天吧。",
+    "lesson_occurrences": [
+      "2026-09-03 08:00"
+    ]
   },
   {
     "word": "kerjaan",
@@ -4853,7 +5577,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Kerjaan hari ini lumayan banyak, tapi masih aman.",
-    "example_cn": "今天手头的工作挺多，不过还应付得来。"
+    "example_cn": "今天手头的工作挺多，不过还应付得来。",
+    "lesson_occurrences": [
+      "2026-09-03 08:00"
+    ]
   },
   {
     "word": "ngerjain",
@@ -4874,7 +5601,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Aku lagi ngerjain laporan, nanti aku balas ya.",
-    "example_cn": "我正在做报告，等会儿再回你。"
+    "example_cn": "我正在做报告，等会儿再回你。",
+    "lesson_occurrences": [
+      "2026-09-03 08:00"
+    ]
   },
   {
     "word": "nyatet",
@@ -4885,19 +5615,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 1,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-03 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-03",
-      "2026-09-11"
+      "2026-09-03"
     ],
     "example": "Tolong ulang sekali lagi, aku mau nyatet poin pentingnya.",
     "example_cn": "请再说一遍，我想把重点记下来。",
-    "root_cn": "记录；记下"
+    "root_cn": "记录；记下",
+    "lesson_occurrences": [
+      "2026-09-03 08:00"
+    ]
   },
   {
     "word": "nyiapin",
@@ -4918,7 +5650,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Aku lagi nyiapin bahan buat meeting besok.",
-    "example_cn": "我正在准备明天会议要用的材料。"
+    "example_cn": "我正在准备明天会议要用的材料。",
+    "lesson_occurrences": [
+      "2026-09-03 08:00"
+    ]
   },
   {
     "word": "fokus",
@@ -4939,7 +5674,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Aku mau fokus satu jam dulu biar cepat beres.",
-    "example_cn": "我想先专心一个小时，好快点做完。"
+    "example_cn": "我想先专心一个小时，好快点做完。",
+    "lesson_occurrences": [
+      "2026-09-03 08:00"
+    ]
   },
   {
     "word": "setuju",
@@ -4962,7 +5700,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Aku setuju sama idenya, tapi kita perlu mempertimbangkan risikonya juga.",
-    "example_cn": "我同意这个想法，但我们也需要考虑风险。"
+    "example_cn": "我同意这个想法，但我们也需要考虑风险。",
+    "lesson_occurrences": [
+      "2026-09-03 08:00",
+      "2026-09-03 19:00"
+    ]
   },
   {
     "word": "ngeluh",
@@ -4983,7 +5725,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Dia dari tadi ngeluh soal kerjaan yang numpuk.",
-    "example_cn": "他从刚才开始就一直抱怨工作堆太多。"
+    "example_cn": "他从刚才开始就一直抱怨工作堆太多。",
+    "lesson_occurrences": [
+      "2026-09-03 08:00"
+    ]
   },
   {
     "word": "masukan",
@@ -4996,9 +5741,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 6,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-17 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -5007,11 +5752,20 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-03",
       "2026-09-14",
-      "2026-09-16"
+      "2026-09-16",
+      "2026-09-17"
     ],
     "example": "Sebelum rapat selesai, aku mau minta masukan dari semua orang.",
     "example_cn": "会议结束前，我想听听大家的意见。",
-    "root_cn": "进入；进"
+    "root_cn": "进入；进",
+    "lesson_occurrences": [
+      "2026-09-03 08:00",
+      "2026-09-03 19:00",
+      "2026-09-14 19:00",
+      "2026-09-16 08:00",
+      "2026-09-16 18:00",
+      "2026-09-17 08:00"
+    ]
   },
   {
     "word": "rapihin",
@@ -5032,7 +5786,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Sebelum meeting, aku mau rapihin file ini dulu.",
-    "example_cn": "开会前，我想先把这个文件整理好。"
+    "example_cn": "开会前，我想先把这个文件整理好。",
+    "lesson_occurrences": [
+      "2026-09-03 08:00"
+    ]
   },
   {
     "word": "masuk akal",
@@ -5055,7 +5812,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Alasannya masuk akal, jadi aku nggak masalah kalau jadwalnya diganti.",
     "example_cn": "他的理由说得通，所以改时间我没意见。",
-    "root_cn": "理智；思考能力"
+    "root_cn": "理智；思考能力",
+    "lesson_occurrences": [
+      "2026-09-03 19:00",
+      "2026-09-05 19:00"
+    ]
   },
   {
     "word": "keberatan",
@@ -5080,7 +5841,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Kalau tidak keberatan, kita bahas bagian ini dulu.",
     "example_cn": "如果你不介意，我们先讨论这一部分。",
-    "root_cn": "重；沉重"
+    "root_cn": "重；沉重",
+    "lesson_occurrences": [
+      "2026-09-03 19:00",
+      "2026-09-19 18:00"
+    ]
   },
   {
     "word": "sepakat",
@@ -5105,7 +5870,11 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Kami sepakat untuk membahas masalah itu besok pagi.",
     "example_cn": "我们一致同意明天早上讨论那个问题。",
-    "root_cn": "一致；同意"
+    "root_cn": "一致；同意",
+    "lesson_occurrences": [
+      "2026-09-03 19:00",
+      "2026-09-19 18:00"
+    ]
   },
   {
     "word": "tergantung situasinya",
@@ -5126,7 +5895,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Mau lanjut sekarang atau besok, tergantung situasinya.",
-    "example_cn": "现在继续还是明天再做，要看具体情况。"
+    "example_cn": "现在继续还是明天再做，要看具体情况。",
+    "lesson_occurrences": [
+      "2026-09-03 19:00"
+    ]
   },
   {
     "word": "kurang cocok",
@@ -5147,7 +5919,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Menurutku cara ini kurang cocok buat kondisi sekarang.",
-    "example_cn": "我觉得这个方法不太适合现在的情况。"
+    "example_cn": "我觉得这个方法不太适合现在的情况。",
+    "lesson_occurrences": [
+      "2026-09-03 19:00"
+    ]
   },
   {
     "word": "nggak masalah",
@@ -5168,7 +5943,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03"
     ],
     "example": "Kalau harus mulai lebih awal, buat aku nggak masalah.",
-    "example_cn": "如果必须早点开始，对我来说没问题。"
+    "example_cn": "如果必须早点开始，对我来说没问题。",
+    "lesson_occurrences": [
+      "2026-09-03 19:00"
+    ]
   },
   {
     "word": "mepet",
@@ -5192,7 +5970,11 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-04"
     ],
-    "root_cn": "紧挨；逼近；时间很紧"
+    "root_cn": "紧挨；逼近；时间很紧",
+    "lesson_occurrences": [
+      "2026-09-04 08:00",
+      "2026-09-04 19:00"
+    ]
   },
   {
     "word": "kelewatan",
@@ -5205,17 +5987,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 1,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-09-04 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-04",
-      "2026-09-10"
+      "2026-09-04"
     ],
-    "root_cn": "经过；超过"
+    "root_cn": "经过；超过",
+    "lesson_occurrences": [
+      "2026-09-04 08:00"
+    ]
   },
   {
     "word": "nyambung",
@@ -5228,17 +6012,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 1,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-04 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-04",
-      "2026-09-11"
+      "2026-09-04"
     ],
-    "root_cn": "连接；接上"
+    "root_cn": "连接；接上",
+    "lesson_occurrences": [
+      "2026-09-04 08:00"
+    ]
   },
   {
     "word": "kepake",
@@ -5263,7 +6049,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04",
       "2026-09-06"
     ],
-    "root_cn": "使用；穿戴"
+    "root_cn": "使用；穿戴",
+    "lesson_occurrences": [
+      "2026-09-04 08:00",
+      "2026-09-06 19:00"
+    ]
   },
   {
     "word": "ketukar",
@@ -5285,7 +6075,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-04"
     ],
-    "root_cn": "交换；更换"
+    "root_cn": "交换；更换",
+    "lesson_occurrences": [
+      "2026-09-04 08:00"
+    ]
   },
   {
     "word": "kebaca",
@@ -5307,7 +6100,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-04"
     ],
-    "root_cn": "读；阅读"
+    "root_cn": "读；阅读",
+    "lesson_occurrences": [
+      "2026-09-04 08:00"
+    ]
   },
   {
     "word": "kebayang",
@@ -5329,7 +6125,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-04"
     ],
-    "root_cn": "影子；脑中的影像"
+    "root_cn": "影子；脑中的影像",
+    "lesson_occurrences": [
+      "2026-09-04 08:00"
+    ]
   },
   {
     "word": "ngikutin",
@@ -5353,7 +6152,11 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-04"
     ],
-    "root_cn": "跟随；参加"
+    "root_cn": "跟随；参加",
+    "lesson_occurrences": [
+      "2026-09-04 08:00",
+      "2026-09-04 19:00"
+    ]
   },
   {
     "word": "berantakan",
@@ -5375,7 +6178,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-04"
     ],
-    "root_cn": "乱；散乱"
+    "root_cn": "乱；散乱",
+    "lesson_occurrences": [
+      "2026-09-04 08:00"
+    ]
   },
   {
     "word": "beneran",
@@ -5397,7 +6203,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-04"
     ],
-    "root_cn": "正确；真的"
+    "root_cn": "正确；真的",
+    "lesson_occurrences": [
+      "2026-09-04 08:00"
+    ]
   },
   {
     "word": "kerjaan numpuk",
@@ -5419,7 +6228,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "example": "Kalau ditunda terus, nanti kerjaan numpuk di akhir minggu.",
     "example_cn": "如果一直往后拖，到周末工作就会堆成一堆。",
-    "root_cn": "工作；堆积"
+    "root_cn": "工作；堆积",
+    "lesson_occurrences": [
+      "2026-09-04 19:00"
+    ]
   },
   {
     "word": "cobain",
@@ -5441,7 +6253,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05"
     ],
-    "root_cn": "尝试；试"
+    "root_cn": "尝试；试",
+    "lesson_occurrences": [
+      "2026-09-05 08:00"
+    ]
   },
   {
     "word": "cukup",
@@ -5465,7 +6280,11 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05"
     ],
-    "root_cn": "足够；充足"
+    "root_cn": "足够；充足",
+    "lesson_occurrences": [
+      "2026-09-05 08:00",
+      "2026-09-05 19:00"
+    ]
   },
   {
     "word": "kurang",
@@ -5487,7 +6306,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05"
     ],
-    "root_cn": "不足；少"
+    "root_cn": "不足；少",
+    "lesson_occurrences": [
+      "2026-09-05 08:00"
+    ]
   },
   {
     "word": "hampir",
@@ -5511,7 +6333,11 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05"
     ],
-    "root_cn": "接近；几乎"
+    "root_cn": "接近；几乎",
+    "lesson_occurrences": [
+      "2026-09-05 08:00",
+      "2026-09-05 19:00"
+    ]
   },
   {
     "word": "sekitar",
@@ -5533,7 +6359,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05"
     ],
-    "root_cn": "环绕；周围"
+    "root_cn": "环绕；周围",
+    "lesson_occurrences": [
+      "2026-09-05 08:00"
+    ]
   },
   {
     "word": "habis",
@@ -5555,7 +6384,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05"
     ],
-    "root_cn": "完；用尽"
+    "root_cn": "完；用尽",
+    "lesson_occurrences": [
+      "2026-09-05 08:00"
+    ]
   },
   {
     "word": "pesan",
@@ -5577,7 +6409,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05"
     ],
-    "root_cn": "订购；留言"
+    "root_cn": "订购；留言",
+    "lesson_occurrences": [
+      "2026-09-05 08:00"
+    ]
   },
   {
     "word": "tambah",
@@ -5599,7 +6434,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05"
     ],
-    "root_cn": "增加；添加"
+    "root_cn": "增加；添加",
+    "lesson_occurrences": [
+      "2026-09-05 08:00"
+    ]
   },
   {
     "word": "diskon",
@@ -5621,7 +6459,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05"
     ],
-    "root_cn": "折扣；优惠"
+    "root_cn": "折扣；优惠",
+    "lesson_occurrences": [
+      "2026-09-05 08:00"
+    ]
   },
   {
     "word": "promo",
@@ -5643,7 +6484,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05"
     ],
-    "root_cn": "促销；推广"
+    "root_cn": "促销；推广",
+    "lesson_occurrences": [
+      "2026-09-05 08:00"
+    ]
   },
   {
     "word": "nggak sengaja",
@@ -5665,7 +6509,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-05"
     ],
     "example": "Aku nggak sengaja salah pencet, jadi pesannya kehapus.",
-    "example_cn": "我不小心按错了，所以消息被删掉了。"
+    "example_cn": "我不小心按错了，所以消息被删掉了。",
+    "lesson_occurrences": [
+      "2026-09-05 19:00"
+    ]
   },
   {
     "word": "nggak heran",
@@ -5687,7 +6534,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-05"
     ],
     "example": "Pantes dia capek terus. Nggak heran sih, tiap hari pulangnya malam.",
-    "example_cn": "难怪他总是累。也不奇怪，他每天都很晚回去。"
+    "example_cn": "难怪他总是累。也不奇怪，他每天都很晚回去。",
+    "lesson_occurrences": [
+      "2026-09-05 19:00"
+    ]
   },
   {
     "word": "bayar",
@@ -5709,7 +6559,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ],
-    "root_cn": "支付；付款"
+    "root_cn": "支付；付款",
+    "lesson_occurrences": [
+      "2026-09-06 08:00"
+    ]
   },
   {
     "word": "murah",
@@ -5731,7 +6584,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ],
-    "root_cn": "便宜；价格低"
+    "root_cn": "便宜；价格低",
+    "lesson_occurrences": [
+      "2026-09-06 08:00"
+    ]
   },
   {
     "word": "mahal",
@@ -5753,7 +6609,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ],
-    "root_cn": "贵；价格高"
+    "root_cn": "贵；价格高",
+    "lesson_occurrences": [
+      "2026-09-06 08:00"
+    ]
   },
   {
     "word": "tawar",
@@ -5777,7 +6636,11 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ],
-    "root_cn": "讲价；还价"
+    "root_cn": "讲价；还价",
+    "lesson_occurrences": [
+      "2026-09-06 08:00",
+      "2026-09-06 19:00"
+    ]
   },
   {
     "word": "bungkus",
@@ -5801,7 +6664,11 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ],
-    "root_cn": "包；包装；打包"
+    "root_cn": "包；包装；打包",
+    "lesson_occurrences": [
+      "2026-09-06 08:00",
+      "2026-09-06 19:00"
+    ]
   },
   {
     "word": "porsi",
@@ -5823,7 +6690,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ],
-    "root_cn": "份量；一份"
+    "root_cn": "份量；一份",
+    "lesson_occurrences": [
+      "2026-09-06 08:00"
+    ]
   },
   {
     "word": "rasa",
@@ -5845,7 +6715,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ],
-    "root_cn": "味道；感觉；感受"
+    "root_cn": "味道；感觉；感受",
+    "lesson_occurrences": [
+      "2026-09-06 08:00"
+    ]
   },
   {
     "word": "naik",
@@ -5867,7 +6740,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ],
-    "root_cn": "上；上升；乘坐"
+    "root_cn": "上；上升；乘坐",
+    "lesson_occurrences": [
+      "2026-09-06 08:00"
+    ]
   },
   {
     "word": "turun",
@@ -5889,7 +6765,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ],
-    "root_cn": "下；下降；下车"
+    "root_cn": "下；下降；下车",
+    "lesson_occurrences": [
+      "2026-09-06 08:00"
+    ]
   },
   {
     "word": "sampai",
@@ -5911,7 +6790,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-06"
     ],
-    "root_cn": "到达；直到"
+    "root_cn": "到达；直到",
+    "lesson_occurrences": [
+      "2026-09-06 08:00"
+    ]
   },
   {
     "word": "daripada",
@@ -5933,7 +6815,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-06"
     ],
     "example": "Daripada muter jauh, mending naik MRT aja.",
-    "example_cn": "与其绕远路，不如直接坐地铁。"
+    "example_cn": "与其绕远路，不如直接坐地铁。",
+    "lesson_occurrences": [
+      "2026-09-06 19:00"
+    ]
   },
   {
     "word": "ujung-ujungnya",
@@ -5944,22 +6829,34 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 6,
     "first_seen": "2026-09-06 19:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-23 08:00",
     "sessions": [
       "19:00",
+      "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-06",
       "2026-09-14",
-      "2026-09-16"
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-23"
     ],
     "example": "Kalau terus ganti rencana, ujung-ujungnya nggak ada yang selesai.",
-    "example_cn": "如果一直改计划，到头来什么都完成不了。"
+    "example_cn": "如果一直改计划，到头来什么都完成不了。",
+    "lesson_occurrences": [
+      "2026-09-06 19:00",
+      "2026-09-14 19:00",
+      "2026-09-16 08:00",
+      "2026-09-16 18:00",
+      "2026-09-17 08:00",
+      "2026-09-23 08:00"
+    ]
   },
   {
     "word": "nggak worth it",
@@ -5981,7 +6878,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-06"
     ],
     "example": "Kalau ongkirnya lebih mahal dari barangnya, menurutku nggak worth it.",
-    "example_cn": "如果运费比东西本身还贵，我觉得就不划算了。"
+    "example_cn": "如果运费比东西本身还贵，我觉得就不划算了。",
+    "lesson_occurrences": [
+      "2026-09-06 19:00"
+    ]
   },
   {
     "word": "seenggaknya",
@@ -6003,7 +6903,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-06"
     ],
     "example": "Kalau belum yakin, seenggaknya bandingin dua tempat dulu.",
-    "example_cn": "如果还不确定，至少先比较两家。"
+    "example_cn": "如果还不确定，至少先比较两家。",
+    "lesson_occurrences": [
+      "2026-09-06 19:00"
+    ]
   },
   {
     "word": "sekadar",
@@ -6025,7 +6928,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-06"
     ],
     "example": "Aku cuma nanya sekadar buat bandingin harga, belum tentu beli.",
-    "example_cn": "我只是问问来比较价格，不一定会买。"
+    "example_cn": "我只是问问来比较价格，不一定会买。",
+    "lesson_occurrences": [
+      "2026-09-06 19:00"
+    ]
   },
   {
     "word": "sayang kalau",
@@ -6047,7 +6953,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-06"
     ],
     "example": "Sayang kalau beli mahal tapi akhirnya jarang kepake.",
-    "example_cn": "如果买得很贵，结果却很少用，那就可惜了。"
+    "example_cn": "如果买得很贵，结果却很少用，那就可惜了。",
+    "lesson_occurrences": [
+      "2026-09-06 19:00"
+    ]
   },
   {
     "word": "patungan",
@@ -6069,6 +6978,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-07"
+    ],
+    "lesson_occurrences": [
+      "2026-09-07 08:00"
     ]
   },
   {
@@ -6091,6 +7003,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-07"
+    ],
+    "lesson_occurrences": [
+      "2026-09-07 08:00"
     ]
   },
   {
@@ -6113,6 +7028,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-07"
+    ],
+    "lesson_occurrences": [
+      "2026-09-07 08:00"
     ]
   },
   {
@@ -6135,6 +7053,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-07"
+    ],
+    "lesson_occurrences": [
+      "2026-09-07 08:00"
     ]
   },
   {
@@ -6160,6 +7081,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-07",
       "2026-09-08"
+    ],
+    "lesson_occurrences": [
+      "2026-09-07 08:00",
+      "2026-09-08 19:00"
     ]
   },
   {
@@ -6187,6 +7112,13 @@ window.DAILY_VOCAB_DB = [
       "2026-09-09",
       "2026-09-10",
       "2026-09-11"
+    ],
+    "lesson_occurrences": [
+      "2026-09-07 08:00",
+      "2026-09-07 19:00",
+      "2026-09-09 19:00",
+      "2026-09-10 19:00",
+      "2026-09-11 19:00"
     ]
   },
   {
@@ -6203,9 +7135,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 6,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-17 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -6214,7 +7146,16 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-07",
       "2026-09-15",
-      "2026-09-16"
+      "2026-09-16",
+      "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-07 08:00",
+      "2026-09-07 19:00",
+      "2026-09-15 19:00",
+      "2026-09-16 08:00",
+      "2026-09-16 18:00",
+      "2026-09-17 08:00"
     ]
   },
   {
@@ -6230,7 +7171,7 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 4,
+    "times_seen": 3,
     "first_seen": "2026-09-07 08:00",
     "last_seen": "2026-09-11 19:00",
     "sessions": [
@@ -6241,6 +7182,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-07",
       "2026-09-08",
       "2026-09-11"
+    ],
+    "lesson_occurrences": [
+      "2026-09-07 08:00",
+      "2026-09-08 19:00",
+      "2026-09-11 19:00"
     ]
   },
   {
@@ -6267,6 +7213,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-07",
       "2026-09-18",
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-07 08:00",
+      "2026-09-18 18:00",
+      "2026-09-23 18:00"
     ]
   },
   {
@@ -6289,6 +7240,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-07"
+    ],
+    "lesson_occurrences": [
+      "2026-09-07 08:00"
     ]
   },
   {
@@ -6302,19 +7256,20 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 1,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
-      "19:00",
-      "08:00"
+      "19:00"
     ],
     "dates": [
-      "2026-09-07",
-      "2026-09-11"
+      "2026-09-07"
     ],
     "example": "Tadi penjelasanku kepotong karena ada telepon masuk.",
-    "example_cn": "刚才我的说明因为有电话打进来被打断了。"
+    "example_cn": "刚才我的说明因为有电话打进来被打断了。",
+    "lesson_occurrences": [
+      "2026-09-07 19:00"
+    ]
   },
   {
     "word": "ngingetin",
@@ -6327,20 +7282,20 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 1,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-09-07 19:00",
     "sessions": [
-      "19:00",
-      "08:00"
+      "19:00"
     ],
     "dates": [
-      "2026-09-07",
-      "2026-09-10",
-      "2026-09-11"
+      "2026-09-07"
     ],
     "example": "Besok pagi ngingetin aku soal dokumen itu ya.",
-    "example_cn": "明天早上提醒我一下那份文件。"
+    "example_cn": "明天早上提醒我一下那份文件。",
+    "lesson_occurrences": [
+      "2026-09-07 19:00"
+    ]
   },
   {
     "word": "asal jangan",
@@ -6362,7 +7317,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-07"
     ],
     "example": "Jam berapa aja boleh, asal jangan terlalu malam.",
-    "example_cn": "几点都可以，只要别太晚就行。"
+    "example_cn": "几点都可以，只要别太晚就行。",
+    "lesson_occurrences": [
+      "2026-09-07 19:00"
+    ]
   },
   {
     "word": "ketahuan",
@@ -6384,6 +7342,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-08"
+    ],
+    "lesson_occurrences": [
+      "2026-09-08 08:00"
     ]
   },
   {
@@ -6408,6 +7369,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-08"
+    ],
+    "lesson_occurrences": [
+      "2026-09-08 08:00",
+      "2026-09-08 19:00"
     ]
   },
   {
@@ -6430,6 +7395,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-08"
+    ],
+    "lesson_occurrences": [
+      "2026-09-08 08:00"
     ]
   },
   {
@@ -6446,7 +7414,7 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-08 08:00",
     "last_seen": "2026-09-24 18:00",
     "sessions": [
@@ -6456,10 +7424,19 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-08",
-      "2026-09-11",
       "2026-09-15",
       "2026-09-16",
+      "2026-09-17",
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-08 08:00",
+      "2026-09-08 19:00",
+      "2026-09-15 19:00",
+      "2026-09-16 08:00",
+      "2026-09-16 18:00",
+      "2026-09-17 08:00",
+      "2026-09-24 18:00"
     ]
   },
   {
@@ -6484,6 +7461,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-08"
+    ],
+    "lesson_occurrences": [
+      "2026-09-08 08:00",
+      "2026-09-08 19:00"
     ]
   },
   {
@@ -6508,6 +7489,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-08"
+    ],
+    "lesson_occurrences": [
+      "2026-09-08 08:00",
+      "2026-09-08 19:00"
     ]
   },
   {
@@ -6530,6 +7515,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-08"
+    ],
+    "lesson_occurrences": [
+      "2026-09-08 08:00"
     ]
   },
   {
@@ -6552,6 +7540,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-08"
+    ],
+    "lesson_occurrences": [
+      "2026-09-08 08:00"
     ]
   },
   {
@@ -6574,6 +7565,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-08"
+    ],
+    "lesson_occurrences": [
+      "2026-09-08 08:00"
     ]
   },
   {
@@ -6599,6 +7593,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-08",
       "2026-09-15"
+    ],
+    "lesson_occurrences": [
+      "2026-09-08 08:00",
+      "2026-09-15 19:00"
     ]
   },
   {
@@ -6621,7 +7619,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-08"
     ],
     "example": "Kalau masalah kecil ini nggak diberesin, nanti bisa ngerembet ke bagian lain.",
-    "example_cn": "如果这个小问题不处理好，之后可能会蔓延到其他部分。"
+    "example_cn": "如果这个小问题不处理好，之后可能会蔓延到其他部分。",
+    "lesson_occurrences": [
+      "2026-09-08 19:00"
+    ]
   },
   {
     "word": "ketutup",
@@ -6643,7 +7644,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-08"
     ],
     "example": "Chat vendor tadi ketutup pesan lain, jadi aku baru sadar sekarang.",
-    "example_cn": "刚才供应商的消息被其他消息淹没了，所以我现在才注意到。"
+    "example_cn": "刚才供应商的消息被其他消息淹没了，所以我现在才注意到。",
+    "lesson_occurrences": [
+      "2026-09-08 19:00"
+    ]
   },
   {
     "word": "nahan dulu",
@@ -6667,7 +7671,12 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10"
     ],
     "example": "Kalau datanya masih berubah-ubah, mending bagian ini kita nahan dulu.",
-    "example_cn": "如果数据还一直变，我们最好先把这一部分按住。"
+    "example_cn": "如果数据还一直变，我们最好先把这一部分按住。",
+    "lesson_occurrences": [
+      "2026-09-08 19:00",
+      "2026-09-09 19:00",
+      "2026-09-10 19:00"
+    ]
   },
   {
     "word": "ngelarin",
@@ -6683,9 +7692,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 8,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-19 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -6694,7 +7703,19 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-09",
       "2026-09-16",
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-09 08:00",
+      "2026-09-09 19:00",
+      "2026-09-16 08:00",
+      "2026-09-16 18:00",
+      "2026-09-17 08:00",
+      "2026-09-17 18:00",
+      "2026-09-18 08:00",
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -6719,6 +7740,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09"
+    ],
+    "lesson_occurrences": [
+      "2026-09-09 08:00",
+      "2026-09-09 19:00"
     ]
   },
   {
@@ -6743,6 +7768,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09"
+    ],
+    "lesson_occurrences": [
+      "2026-09-09 08:00",
+      "2026-09-09 19:00"
     ]
   },
   {
@@ -6765,6 +7794,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09"
+    ],
+    "lesson_occurrences": [
+      "2026-09-09 08:00"
     ]
   },
   {
@@ -6787,6 +7819,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09"
+    ],
+    "lesson_occurrences": [
+      "2026-09-09 08:00"
     ]
   },
   {
@@ -6809,6 +7844,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09"
+    ],
+    "lesson_occurrences": [
+      "2026-09-09 08:00"
     ]
   },
   {
@@ -6831,6 +7869,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09"
+    ],
+    "lesson_occurrences": [
+      "2026-09-09 08:00"
     ]
   },
   {
@@ -6855,6 +7896,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09"
+    ],
+    "lesson_occurrences": [
+      "2026-09-09 08:00",
+      "2026-09-09 19:00"
     ]
   },
   {
@@ -6877,6 +7922,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09"
+    ],
+    "lesson_occurrences": [
+      "2026-09-09 08:00"
     ]
   },
   {
@@ -6899,6 +7947,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09"
+    ],
+    "lesson_occurrences": [
+      "2026-09-09 08:00"
     ]
   },
   {
@@ -6925,7 +7976,12 @@ window.DAILY_VOCAB_DB = [
       "2026-09-19"
     ],
     "example": "Rencana ini kebentur waktu, jadi kita perlu cara yang lebih sederhana.",
-    "example_cn": "这个计划受时间限制，所以我们需要更简单的方法。"
+    "example_cn": "这个计划受时间限制，所以我们需要更简单的方法。",
+    "lesson_occurrences": [
+      "2026-09-09 19:00",
+      "2026-09-15 19:00",
+      "2026-09-19 18:00"
+    ]
   },
   {
     "word": "keganggu",
@@ -6947,7 +8003,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-09"
     ],
     "example": "Fokusku tadi agak keganggu karena chat masuk terus.",
-    "example_cn": "我刚才因为消息一直进来，专注度有点被影响。"
+    "example_cn": "我刚才因为消息一直进来，专注度有点被影响。",
+    "lesson_occurrences": [
+      "2026-09-09 19:00"
+    ]
   },
   {
     "word": "serba salah",
@@ -6960,19 +8019,22 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 2,
     "first_seen": "2026-09-09 19:00",
     "last_seen": "2026-09-11 19:00",
     "sessions": [
-      "19:00",
-      "08:00"
+      "19:00"
     ],
     "dates": [
       "2026-09-09",
       "2026-09-11"
     ],
     "example": "Kalau ngomong takut bikin dia nggak enak, tapi kalau diam juga serba salah.",
-    "example_cn": "说了怕让他不舒服，但不说又觉得左右为难。"
+    "example_cn": "说了怕让他不舒服，但不说又觉得左右为难。",
+    "lesson_occurrences": [
+      "2026-09-09 19:00",
+      "2026-09-11 19:00"
+    ]
   },
   {
     "word": "kejebak",
@@ -6997,7 +8059,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-19"
     ],
     "example": "Jangan sampai kita kejebak masalah yang sama lagi.",
-    "example_cn": "别让我们再次陷入同样的问题。"
+    "example_cn": "别让我们再次陷入同样的问题。",
+    "lesson_occurrences": [
+      "2026-09-09 19:00",
+      "2026-09-19 18:00"
+    ]
   },
   {
     "word": "molor",
@@ -7019,6 +8085,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-10"
+    ],
+    "lesson_occurrences": [
+      "2026-09-10 08:00"
     ]
   },
   {
@@ -7034,7 +8103,7 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 5,
     "first_seen": "2026-09-10 08:00",
     "last_seen": "2026-09-20 18:00",
     "sessions": [
@@ -7045,6 +8114,13 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10",
       "2026-09-19",
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-10 08:00",
+      "2026-09-19 08:00",
+      "2026-09-19 18:00",
+      "2026-09-20 08:00",
+      "2026-09-20 18:00"
     ]
   },
   {
@@ -7067,6 +8143,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-10"
+    ],
+    "lesson_occurrences": [
+      "2026-09-10 08:00"
     ]
   },
   {
@@ -7089,6 +8168,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-10"
+    ],
+    "lesson_occurrences": [
+      "2026-09-10 08:00"
     ]
   },
   {
@@ -7113,6 +8195,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-10"
+    ],
+    "lesson_occurrences": [
+      "2026-09-10 08:00",
+      "2026-09-10 19:00"
     ]
   },
   {
@@ -7137,6 +8223,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-10"
+    ],
+    "lesson_occurrences": [
+      "2026-09-10 08:00",
+      "2026-09-10 19:00"
     ]
   },
   {
@@ -7159,6 +8249,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-10"
+    ],
+    "lesson_occurrences": [
+      "2026-09-10 08:00"
     ]
   },
   {
@@ -7183,6 +8276,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-10"
+    ],
+    "lesson_occurrences": [
+      "2026-09-10 08:00",
+      "2026-09-10 19:00"
     ]
   },
   {
@@ -7205,6 +8302,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-10"
+    ],
+    "lesson_occurrences": [
+      "2026-09-10 08:00"
     ]
   },
   {
@@ -7229,6 +8329,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-10"
+    ],
+    "lesson_occurrences": [
+      "2026-09-10 08:00",
+      "2026-09-10 19:00"
     ]
   },
   {
@@ -7255,7 +8359,12 @@ window.DAILY_VOCAB_DB = [
       "2026-09-16"
     ],
     "example": "Kalau semua tugas dikasih ke satu orang, nanti nggak kepegang.",
-    "example_cn": "如果所有任务都给一个人，最后会顾不过来。"
+    "example_cn": "如果所有任务都给一个人，最后会顾不过来。",
+    "lesson_occurrences": [
+      "2026-09-10 19:00",
+      "2026-09-11 19:00",
+      "2026-09-16 18:00"
+    ]
   },
   {
     "word": "kelabakan",
@@ -7266,21 +8375,29 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-18 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-10",
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-18"
     ],
     "example": "Kalau semua datang bersamaan, tim bisa kelabakan.",
-    "example_cn": "如果所有事情同时来，团队可能会手忙脚乱。"
+    "example_cn": "如果所有事情同时来，团队可能会手忙脚乱。",
+    "lesson_occurrences": [
+      "2026-09-10 19:00",
+      "2026-09-17 18:00",
+      "2026-09-18 08:00"
+    ]
   },
   {
     "word": "ngejar waktu",
@@ -7302,7 +8419,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10"
     ],
     "example": "Aku lagi ngejar waktu nih, jadi kita bahas poin pentingnya aja dulu.",
-    "example_cn": "我现在在赶时间，所以我们先只讲重点吧。"
+    "example_cn": "我现在在赶时间，所以我们先只讲重点吧。",
+    "lesson_occurrences": [
+      "2026-09-10 19:00"
+    ]
   },
   {
     "word": "kecapean",
@@ -7324,7 +8444,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10"
     ],
     "example": "Kalau tiap hari pulang malam terus, lama-lama bisa kecapean.",
-    "example_cn": "如果每天都一直很晚回家，久了会累过头。"
+    "example_cn": "如果每天都一直很晚回家，久了会累过头。",
+    "lesson_occurrences": [
+      "2026-09-10 19:00"
+    ]
   },
   {
     "word": "nangkep",
@@ -7339,7 +8462,7 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 6,
     "first_seen": "2026-09-11 08:00",
     "last_seen": "2026-09-21 18:00",
     "sessions": [
@@ -7349,7 +8472,16 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-11",
       "2026-09-19",
+      "2026-09-20",
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-11 08:00",
+      "2026-09-19 08:00",
+      "2026-09-19 18:00",
+      "2026-09-20 08:00",
+      "2026-09-21 08:00",
+      "2026-09-21 18:00"
     ]
   },
   {
@@ -7372,6 +8504,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11"
+    ],
+    "lesson_occurrences": [
+      "2026-09-11 08:00"
     ]
   },
   {
@@ -7394,6 +8529,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11"
+    ],
+    "lesson_occurrences": [
+      "2026-09-11 08:00"
     ]
   },
   {
@@ -7416,6 +8554,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11"
+    ],
+    "lesson_occurrences": [
+      "2026-09-11 08:00"
     ]
   },
   {
@@ -7438,6 +8579,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11"
+    ],
+    "lesson_occurrences": [
+      "2026-09-11 08:00"
     ]
   },
   {
@@ -7460,6 +8604,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11"
+    ],
+    "lesson_occurrences": [
+      "2026-09-11 08:00"
     ]
   },
   {
@@ -7484,6 +8631,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11"
+    ],
+    "lesson_occurrences": [
+      "2026-09-11 08:00",
+      "2026-09-11 19:00"
     ]
   },
   {
@@ -7499,16 +8650,17 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
-    "first_seen": "2026-09-11 08:00",
+    "times_seen": 1,
+    "first_seen": "2026-09-18 18:00",
     "last_seen": "2026-09-18 18:00",
     "sessions": [
-      "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-11",
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 18:00"
     ]
   },
   {
@@ -7577,6 +8729,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11"
+    ],
+    "lesson_occurrences": [
+      "2026-09-11 08:00",
+      "2026-09-11 19:00"
     ]
   },
   {
@@ -7601,6 +8757,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11"
+    ],
+    "lesson_occurrences": [
+      "2026-09-11 08:00",
+      "2026-09-11 19:00"
     ]
   },
   {
@@ -7628,6 +8788,11 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-11",
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-11 08:00",
+      "2026-09-11 19:00",
+      "2026-09-24 18:00"
     ]
   },
   {
@@ -7655,6 +8820,11 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-12",
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-12 08:00",
+      "2026-09-12 19:00",
+      "2026-09-16 18:00"
     ]
   },
   {
@@ -7677,6 +8847,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-12"
+    ],
+    "lesson_occurrences": [
+      "2026-09-12 08:00"
     ]
   },
   {
@@ -7701,6 +8874,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-12"
+    ],
+    "lesson_occurrences": [
+      "2026-09-12 08:00",
+      "2026-09-12 19:00"
     ]
   },
   {
@@ -7716,7 +8893,7 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 6,
     "first_seen": "2026-09-12 08:00",
     "last_seen": "2026-09-21 18:00",
     "sessions": [
@@ -7726,7 +8903,17 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-12",
       "2026-09-18",
+      "2026-09-19",
+      "2026-09-20",
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-12 08:00",
+      "2026-09-18 18:00",
+      "2026-09-19 08:00",
+      "2026-09-20 08:00",
+      "2026-09-21 08:00",
+      "2026-09-21 18:00"
     ]
   },
   {
@@ -7749,6 +8936,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-12"
+    ],
+    "lesson_occurrences": [
+      "2026-09-12 08:00"
     ]
   },
   {
@@ -7764,7 +8954,7 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-12 08:00",
     "last_seen": "2026-09-21 18:00",
     "sessions": [
@@ -7775,6 +8965,12 @@ window.DAILY_VOCAB_DB = [
       "2026-09-12",
       "2026-09-20",
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-12 08:00",
+      "2026-09-20 18:00",
+      "2026-09-21 08:00",
+      "2026-09-21 18:00"
     ]
   },
   {
@@ -7799,6 +8995,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-12"
+    ],
+    "lesson_occurrences": [
+      "2026-09-12 08:00",
+      "2026-09-12 19:00"
     ]
   },
   {
@@ -7821,6 +9021,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-12"
+    ],
+    "lesson_occurrences": [
+      "2026-09-12 08:00"
     ]
   },
   {
@@ -7845,6 +9048,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-12"
+    ],
+    "lesson_occurrences": [
+      "2026-09-12 08:00",
+      "2026-09-12 19:00"
     ]
   },
   {
@@ -7867,6 +9074,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-12"
+    ],
+    "lesson_occurrences": [
+      "2026-09-12 08:00"
     ]
   },
   {
@@ -7889,7 +9099,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-12"
     ],
     "example": "Sebelum ambil keputusan, kita dengar pendapat semua orang dulu.",
-    "example_cn": "做决定之前，我们先听听所有人的意见。"
+    "example_cn": "做决定之前，我们先听听所有人的意见。",
+    "lesson_occurrences": [
+      "2026-09-12 19:00"
+    ]
   },
   {
     "word": "kesempatan",
@@ -7911,7 +9124,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-12"
     ],
     "example": "Kasih dia kesempatan buat jelasin maksudnya dulu.",
-    "example_cn": "先给他一个机会解释一下自己的意思。"
+    "example_cn": "先给他一个机会解释一下自己的意思。",
+    "lesson_occurrences": [
+      "2026-09-12 19:00"
+    ]
   },
   {
     "word": "sikap",
@@ -7933,7 +9149,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-12"
     ],
     "example": "Walaupun beda pendapat, sikap kita tetap harus tenang.",
-    "example_cn": "即使意见不同，我们的态度还是要冷静。"
+    "example_cn": "即使意见不同，我们的态度还是要冷静。",
+    "lesson_occurrences": [
+      "2026-09-12 19:00"
+    ]
   },
   {
     "word": "layak",
@@ -7960,6 +9179,11 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-13",
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-13 08:00",
+      "2026-09-13 19:00",
+      "2026-09-17 18:00"
     ]
   },
   {
@@ -7974,14 +9198,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 08:00",
+    "last_seen": "2026-09-25 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-13"
+      "2026-09-13",
+      "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-13 08:00",
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -8006,6 +9235,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-13"
+    ],
+    "lesson_occurrences": [
+      "2026-09-13 08:00",
+      "2026-09-13 19:00"
     ]
   },
   {
@@ -8028,6 +9261,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-13"
+    ],
+    "lesson_occurrences": [
+      "2026-09-13 08:00"
     ]
   },
   {
@@ -8050,6 +9286,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-13"
+    ],
+    "lesson_occurrences": [
+      "2026-09-13 08:00"
     ]
   },
   {
@@ -8074,6 +9313,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-13"
+    ],
+    "lesson_occurrences": [
+      "2026-09-13 08:00",
+      "2026-09-13 19:00"
     ]
   },
   {
@@ -8096,6 +9339,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-13"
+    ],
+    "lesson_occurrences": [
+      "2026-09-13 08:00"
     ]
   },
   {
@@ -8120,6 +9366,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-13"
+    ],
+    "lesson_occurrences": [
+      "2026-09-13 08:00",
+      "2026-09-13 19:00"
     ]
   },
   {
@@ -8142,6 +9392,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-13"
+    ],
+    "lesson_occurrences": [
+      "2026-09-13 08:00"
     ]
   },
   {
@@ -8166,6 +9419,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-13"
+    ],
+    "lesson_occurrences": [
+      "2026-09-13 08:00",
+      "2026-09-13 19:00"
     ]
   },
   {
@@ -8191,7 +9448,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-15"
     ],
     "example": "Hasil akhirnya lebih baik daripada yang kami kira.",
-    "example_cn": "最后的结果比我们原先想的更好。"
+    "example_cn": "最后的结果比我们原先想的更好。",
+    "lesson_occurrences": [
+      "2026-09-13 19:00",
+      "2026-09-15 08:00"
+    ]
   },
   {
     "word": "alasan",
@@ -8213,7 +9474,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-13"
     ],
     "example": "Kalau kamu nggak setuju, jelasin alasannya dengan singkat.",
-    "example_cn": "如果你不同意，就简短说明理由。"
+    "example_cn": "如果你不同意，就简短说明理由。",
+    "lesson_occurrences": [
+      "2026-09-13 19:00"
+    ]
   },
   {
     "word": "bukti",
@@ -8235,7 +9499,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-13"
     ],
     "example": "Jangan buru-buru menyimpulkan kalau belum ada bukti yang jelas.",
-    "example_cn": "如果还没有明确证据，就别急着下结论。"
+    "example_cn": "如果还没有明确证据，就别急着下结论。",
+    "lesson_occurrences": [
+      "2026-09-13 19:00"
+    ]
   },
   {
     "word": "sebelumnya",
@@ -8257,7 +9524,10 @@ window.DAILY_VOCAB_DB = [
       "2026-09-13"
     ],
     "example": "Sebelumnya aku kira datanya sudah lengkap, ternyata masih kurang satu bagian.",
-    "example_cn": "之前我以为数据已经齐全了，结果还缺一部分。"
+    "example_cn": "之前我以为数据已经齐全了，结果还缺一部分。",
+    "lesson_occurrences": [
+      "2026-09-13 19:00"
+    ]
   },
   {
     "word": "berbagai",
@@ -8279,6 +9549,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 08:00"
     ]
   },
   {
@@ -8301,6 +9574,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 08:00"
     ]
   },
   {
@@ -8323,6 +9599,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 08:00"
     ]
   },
   {
@@ -8345,6 +9624,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 08:00"
     ]
   },
   {
@@ -8367,6 +9649,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 08:00"
     ]
   },
   {
@@ -8391,6 +9676,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 08:00",
+      "2026-09-14 19:00"
     ]
   },
   {
@@ -8413,6 +9702,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 08:00"
     ]
   },
   {
@@ -8437,6 +9729,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 08:00",
+      "2026-09-14 19:00"
     ]
   },
   {
@@ -8462,6 +9758,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 08:00",
+      "2026-09-14 19:00"
     ]
   },
   {
@@ -8485,6 +9785,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 08:00"
     ]
   },
   {
@@ -8507,6 +9810,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 19:00"
     ]
   },
   {
@@ -8529,6 +9835,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 19:00"
     ]
   },
   {
@@ -8551,6 +9860,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 19:00"
     ]
   },
   {
@@ -8574,6 +9886,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-14"
+    ],
+    "lesson_occurrences": [
+      "2026-09-14 19:00"
     ]
   },
   {
@@ -8596,6 +9911,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-15"
+    ],
+    "lesson_occurrences": [
+      "2026-09-15 08:00"
     ]
   },
   {
@@ -8618,6 +9936,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-15"
+    ],
+    "lesson_occurrences": [
+      "2026-09-15 08:00"
     ]
   },
   {
@@ -8640,6 +9961,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-15"
+    ],
+    "lesson_occurrences": [
+      "2026-09-15 08:00"
     ]
   },
   {
@@ -8664,6 +9988,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-15"
+    ],
+    "lesson_occurrences": [
+      "2026-09-15 08:00",
+      "2026-09-15 19:00"
     ]
   },
   {
@@ -8688,6 +10016,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-15"
+    ],
+    "lesson_occurrences": [
+      "2026-09-15 08:00",
+      "2026-09-15 19:00"
     ]
   },
   {
@@ -8710,7 +10042,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "泥土；土地",
     "example": "Jalan di depan masih banyak tanah basah karena barusan hujan.",
-    "example_cn": "前面的路上还有很多湿泥土，因为刚刚下过雨。"
+    "example_cn": "前面的路上还有很多湿泥土，因为刚刚下过雨。",
+    "lesson_occurrences": [
+      "2026-09-15 19:00"
+    ]
   },
   {
     "word": "arah",
@@ -8732,7 +10067,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "方向",
     "example": "Kalau salah arah, kita bisa muter cukup jauh.",
-    "example_cn": "如果走错方向，我们可能要绕很远。"
+    "example_cn": "如果走错方向，我们可能要绕很远。",
+    "lesson_occurrences": [
+      "2026-09-15 19:00"
+    ]
   },
   {
     "word": "butuh",
@@ -8754,7 +10092,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "root_cn": "需要",
     "example": "Aku butuh waktu sebentar buat cek semuanya.",
-    "example_cn": "我需要一点时间检查所有东西。"
+    "example_cn": "我需要一点时间检查所有东西。",
+    "lesson_occurrences": [
+      "2026-09-15 19:00"
+    ]
   },
   {
     "word": "barusan",
@@ -8764,20 +10105,27 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-15 19:00",
-    "last_seen": "2026-09-15 19:00",
+    "last_seen": "2026-09-23 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-15"
+      "2026-09-15",
+      "2026-09-23"
     ],
     "root_cn": "新；刚刚",
     "example": "Barusan dia telepon dan bilang jadwalnya berubah.",
-    "example_cn": "他刚刚打电话说时间变了。"
+    "example_cn": "他刚刚打电话说时间变了。",
+    "lesson_occurrences": [
+      "2026-09-15 19:00",
+      "2026-09-23 08:00"
+    ]
   },
   {
     "word": "ketua",
@@ -8799,6 +10147,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 08:00"
     ]
   },
   {
@@ -8821,6 +10172,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 08:00"
     ]
   },
   {
@@ -8843,6 +10197,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 08:00"
     ]
   },
   {
@@ -8865,6 +10222,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 08:00"
     ]
   },
   {
@@ -8887,6 +10247,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 08:00"
     ]
   },
   {
@@ -8909,6 +10272,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 08:00"
     ]
   },
   {
@@ -8931,6 +10297,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 08:00"
     ]
   },
   {
@@ -8946,7 +10315,7 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 6,
     "first_seen": "2026-09-16 08:00",
     "last_seen": "2026-09-21 18:00",
     "sessions": [
@@ -8958,6 +10327,14 @@ window.DAILY_VOCAB_DB = [
       "2026-09-19",
       "2026-09-20",
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 08:00",
+      "2026-09-19 18:00",
+      "2026-09-20 08:00",
+      "2026-09-20 18:00",
+      "2026-09-21 08:00",
+      "2026-09-21 18:00"
     ]
   },
   {
@@ -8981,6 +10358,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 08:00"
     ]
   },
   {
@@ -9004,6 +10384,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 08:00"
     ]
   },
   {
@@ -9026,6 +10409,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 18:00"
     ]
   },
   {
@@ -9048,6 +10434,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 18:00"
     ]
   },
   {
@@ -9070,6 +10459,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-16"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 18:00"
     ]
   },
   {
@@ -9083,18 +10475,26 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-16 18:00",
     "last_seen": "2026-09-21 18:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-16",
       "2026-09-20",
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-16 18:00",
+      "2026-09-20 18:00",
+      "2026-09-21 08:00",
+      "2026-09-21 18:00"
     ]
   },
   {
@@ -9117,6 +10517,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 08:00"
     ]
   },
   {
@@ -9139,6 +10542,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 08:00"
     ]
   },
   {
@@ -9161,6 +10567,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 08:00"
     ]
   },
   {
@@ -9176,9 +10585,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 6,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-23 18:00",
+    "last_seen": "2026-09-25 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9186,7 +10595,17 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-17",
       "2026-09-22",
-      "2026-09-23"
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 08:00",
+      "2026-09-22 18:00",
+      "2026-09-23 08:00",
+      "2026-09-23 18:00",
+      "2026-09-24 08:00",
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -9212,6 +10631,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-17",
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 08:00",
+      "2026-09-24 18:00"
     ]
   },
   {
@@ -9234,6 +10657,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 08:00"
     ]
   },
   {
@@ -9256,6 +10682,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 08:00"
     ]
   },
   {
@@ -9278,6 +10707,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 08:00"
     ]
   },
   {
@@ -9301,6 +10733,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 08:00"
     ]
   },
   {
@@ -9324,6 +10759,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 08:00"
     ]
   },
   {
@@ -9346,6 +10784,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 18:00"
     ]
   },
   {
@@ -9370,6 +10811,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-17",
       "2026-09-20",
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 18:00",
+      "2026-09-20 18:00",
+      "2026-09-21 18:00"
     ]
   },
   {
@@ -9393,6 +10839,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-17"
+    ],
+    "lesson_occurrences": [
+      "2026-09-17 18:00"
     ]
   },
   {
@@ -9415,6 +10864,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 08:00"
     ]
   },
   {
@@ -9437,6 +10889,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 08:00"
     ]
   },
   {
@@ -9459,6 +10914,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 08:00"
     ]
   },
   {
@@ -9481,6 +10939,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 08:00"
     ]
   },
   {
@@ -9503,6 +10964,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 08:00"
     ]
   },
   {
@@ -9525,6 +10989,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 08:00"
     ]
   },
   {
@@ -9547,6 +11014,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 08:00"
     ]
   },
   {
@@ -9569,6 +11039,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 08:00"
     ]
   },
   {
@@ -9592,6 +11065,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 08:00"
     ]
   },
   {
@@ -9617,6 +11093,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 08:00",
+      "2026-09-18 18:00"
     ]
   },
   {
@@ -9639,6 +11119,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 18:00"
     ]
   },
   {
@@ -9661,6 +11144,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 18:00"
     ]
   },
   {
@@ -9683,6 +11169,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 18:00"
     ]
   },
   {
@@ -9706,6 +11195,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-18"
+    ],
+    "lesson_occurrences": [
+      "2026-09-18 18:00"
     ]
   },
   {
@@ -9728,6 +11220,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -9750,6 +11245,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -9772,6 +11270,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -9794,6 +11295,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -9816,6 +11320,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -9838,6 +11345,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -9860,6 +11370,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -9882,6 +11395,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -9905,6 +11421,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -9928,6 +11447,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 08:00"
     ]
   },
   {
@@ -9950,6 +11472,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 18:00"
     ]
   },
   {
@@ -9972,6 +11497,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 18:00"
     ]
   },
   {
@@ -9995,6 +11523,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-19"
+    ],
+    "lesson_occurrences": [
+      "2026-09-19 18:00"
     ]
   },
   {
@@ -10017,6 +11548,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 08:00"
     ]
   },
   {
@@ -10039,6 +11573,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 08:00"
     ]
   },
   {
@@ -10061,6 +11598,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 08:00"
     ]
   },
   {
@@ -10083,6 +11623,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 08:00"
     ]
   },
   {
@@ -10098,9 +11641,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 7,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-24 18:00",
+    "last_seen": "2026-09-25 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -10109,7 +11652,17 @@ window.DAILY_VOCAB_DB = [
       "2026-09-20",
       "2026-09-22",
       "2026-09-23",
-      "2026-09-24"
+      "2026-09-24",
+      "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 08:00",
+      "2026-09-22 18:00",
+      "2026-09-23 08:00",
+      "2026-09-23 18:00",
+      "2026-09-24 08:00",
+      "2026-09-24 18:00",
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -10132,6 +11685,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 08:00"
     ]
   },
   {
@@ -10154,6 +11710,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 08:00"
     ]
   },
   {
@@ -10169,16 +11728,24 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 4,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-22 18:00",
+    "last_seen": "2026-09-25 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-20",
-      "2026-09-22"
+      "2026-09-22",
+      "2026-09-24",
+      "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 08:00",
+      "2026-09-22 18:00",
+      "2026-09-24 08:00",
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -10202,6 +11769,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 08:00"
     ]
   },
   {
@@ -10225,6 +11795,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 08:00"
     ]
   },
   {
@@ -10247,6 +11820,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 18:00"
     ]
   },
   {
@@ -10269,6 +11845,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 18:00"
     ]
   },
   {
@@ -10291,6 +11870,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 18:00"
     ]
   },
   {
@@ -10314,6 +11896,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-20"
+    ],
+    "lesson_occurrences": [
+      "2026-09-20 18:00"
     ]
   },
   {
@@ -10336,6 +11921,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 08:00"
     ]
   },
   {
@@ -10358,6 +11946,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 08:00"
     ]
   },
   {
@@ -10380,6 +11971,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 08:00"
     ]
   },
   {
@@ -10402,6 +11996,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 08:00"
     ]
   },
   {
@@ -10424,6 +12021,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 08:00"
     ]
   },
   {
@@ -10446,6 +12046,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 08:00"
     ]
   },
   {
@@ -10468,6 +12071,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 08:00"
     ]
   },
   {
@@ -10490,6 +12096,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 08:00"
     ]
   },
   {
@@ -10513,6 +12122,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 08:00"
     ]
   },
   {
@@ -10536,6 +12148,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 08:00"
     ]
   },
   {
@@ -10555,12 +12170,16 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-09-22 08:00",
     "last_seen": "2026-09-23 18:00",
     "sessions": [
-      "18:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-22",
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 08:00",
+      "2026-09-23 18:00"
     ]
   },
   {
@@ -10580,12 +12199,16 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-09-22 08:00",
     "last_seen": "2026-09-23 18:00",
     "sessions": [
-      "18:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-22",
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 08:00",
+      "2026-09-23 18:00"
     ]
   },
   {
@@ -10608,6 +12231,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 18:00"
     ]
   },
   {
@@ -10628,12 +12254,16 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-09-22 08:00",
     "last_seen": "2026-09-23 18:00",
     "sessions": [
-      "18:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-22",
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 08:00",
+      "2026-09-23 18:00"
     ]
   },
   {
@@ -10656,6 +12286,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 08:00"
     ]
   },
   {
@@ -10678,6 +12311,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 08:00"
     ]
   },
   {
@@ -10700,6 +12336,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 08:00"
     ]
   },
   {
@@ -10722,6 +12361,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 08:00"
     ]
   },
   {
@@ -10744,6 +12386,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 08:00"
     ]
   },
   {
@@ -10766,6 +12411,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 08:00"
     ]
   },
   {
@@ -10788,6 +12436,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 08:00"
     ]
   },
   {
@@ -10810,6 +12461,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 08:00"
     ]
   },
   {
@@ -10833,6 +12487,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 08:00"
     ]
   },
   {
@@ -10856,6 +12513,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-23"
+    ],
+    "lesson_occurrences": [
+      "2026-09-23 08:00"
     ]
   },
   {
@@ -10880,6 +12540,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 08:00",
+      "2026-09-24 18:00"
     ]
   },
   {
@@ -10904,6 +12568,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 08:00",
+      "2026-09-24 18:00"
     ]
   },
   {
@@ -10926,6 +12594,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 08:00"
     ]
   },
   {
@@ -10948,6 +12619,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 08:00"
     ]
   },
   {
@@ -10970,6 +12644,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 08:00"
     ]
   },
   {
@@ -10992,6 +12669,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 08:00"
     ]
   },
   {
@@ -11014,6 +12694,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 08:00"
     ]
   },
   {
@@ -11036,6 +12719,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 08:00"
     ]
   },
   {
@@ -11056,12 +12742,16 @@ window.DAILY_VOCAB_DB = [
     "first_seen": "2026-09-22 18:00",
     "last_seen": "2026-09-24 08:00",
     "sessions": [
-      "08:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-22",
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 18:00",
+      "2026-09-24 08:00"
     ]
   },
   {
@@ -11085,6 +12775,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 08:00"
     ]
   },
   {
@@ -11107,6 +12800,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 18:00"
     ]
   },
   {
@@ -11129,6 +12825,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 18:00"
     ]
   },
   {
@@ -11151,6 +12850,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-21"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 18:00"
     ]
   },
   {
@@ -11177,6 +12879,10 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-21",
       "2026-09-22"
+    ],
+    "lesson_occurrences": [
+      "2026-09-21 18:00",
+      "2026-09-22 08:00"
     ]
   },
   {
@@ -11201,6 +12907,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-22"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 08:00",
+      "2026-09-22 18:00"
     ]
   },
   {
@@ -11225,6 +12935,10 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-22"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 08:00",
+      "2026-09-22 18:00"
     ]
   },
   {
@@ -11247,6 +12961,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-22"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 08:00"
     ]
   },
   {
@@ -11269,6 +12986,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-22"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 08:00"
     ]
   },
   {
@@ -11291,6 +13011,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-22"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 08:00"
     ]
   },
   {
@@ -11313,6 +13036,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-22"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 08:00"
     ]
   },
   {
@@ -11335,6 +13061,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-22"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 18:00"
     ]
   },
   {
@@ -11357,6 +13086,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-22"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 18:00"
     ]
   },
   {
@@ -11379,6 +13111,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-22"
+    ],
+    "lesson_occurrences": [
+      "2026-09-22 18:00"
     ]
   },
   {
@@ -11402,6 +13137,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 18:00"
     ]
   },
   {
@@ -11424,6 +13162,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 18:00"
     ]
   },
   {
@@ -11446,6 +13187,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 18:00"
     ]
   },
   {
@@ -11468,6 +13212,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-24"
+    ],
+    "lesson_occurrences": [
+      "2026-09-24 18:00"
     ]
   },
   {
@@ -11491,6 +13238,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -11514,6 +13264,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -11536,6 +13289,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -11558,6 +13314,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -11580,6 +13339,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -11602,6 +13364,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -11624,6 +13389,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -11646,6 +13414,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -11668,6 +13439,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 08:00"
     ]
   },
   {
@@ -11690,6 +13464,9 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 08:00"
     ]
   }
 ];
