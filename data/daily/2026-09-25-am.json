@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-25",
+  "session": "am",
+  "time": "08:00",
+  "day": 35,
+  "level": "A2+→B1",
+  "title": "08:00｜新词 + 应用：工作沟通与日常处理",
+  "vocab": [
+    {
+      "word": "berantem",
+      "display": "berantem",
+      "audio_text": "berantem",
+      "cn": "打架；吵架",
+      "en": "fight; argue",
+      "root": "antem",
+      "root_cn": "打；争吵",
+      "formation": "高频口语词，常表示人与人吵架或打架。标准表达可用 bertengkar（争吵）。",
+      "example": "Jangan berantem cuma karena masalah kecil.",
+      "example_cn": "别因为一点小事就吵架。",
+      "synonym_note": "berantem 很口语；bertengkar 更标准，通常强调争吵。",
+      "is_oral_new": true
+    },
+    {
+      "word": "kabur",
+      "display": "kabur",
+      "audio_text": "kabur",
+      "cn": "逃跑；溜走",
+      "en": "run away; flee",
+      "root": "kabur",
+      "root_cn": "逃跑；溜走",
+      "formation": "基本口语动词，可表示人逃走、偷偷离开；另有“模糊”的含义，如 foto kabur。",
+      "example": "Dia kabur sebelum sempat menjelaskan masalahnya.",
+      "example_cn": "他还没来得及解释问题就溜走了。",
+      "synonym_note": "kabur 偏口语；melarikan diri 更正式，强调逃离。",
+      "is_oral_new": true
+    },
+    {
+      "word": "pantas",
+      "display": "pantas",
+      "audio_text": "pantas",
+      "cn": "合适；难怪；值得",
+      "en": "appropriate; no wonder; deserve",
+      "root": "pantas",
+      "root_cn": "合适；应当",
+      "formation": "基本词。常见结构：pantas untuk...（适合……）、pantas saja...（难怪……）。",
+      "example": "Pantas saja dia kecewa, ternyata pesanannya belum dikirim.",
+      "example_cn": "难怪他失望，原来他的订单还没发出。",
+      "synonym_note": "pantas 可表示合适、应得，也常见于 pantas saja“难怪”；cocok 更偏匹配、适合。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kesepakatan",
+      "display": "kesepakatan",
+      "audio_text": "kesepakatan",
+      "cn": "协议；共识",
+      "en": "agreement; consensus",
+      "root": "sepakat",
+      "root_cn": "同意；达成一致",
+      "formation": "ke- + sepakat + -an → kesepakatan，表示双方或多方达成的协议、共识。",
+      "example": "Kami akhirnya mencapai kesepakatan dengan pemasok.",
+      "example_cn": "我们最终和供应商达成了协议。",
+      "synonym_note": "kesepakatan 是达成的共识或协议；perjanjian 更常指较正式的约定、协议或合同。",
+      "is_oral_new": false
+    },
+    {
+      "word": "wilayah",
+      "display": "wilayah",
+      "audio_text": "wilayah",
+      "cn": "地区；区域",
+      "en": "region; area; territory",
+      "root": "wilayah",
+      "root_cn": "地区；区域",
+      "formation": "基本名词，常见：wilayah Jakarta、wilayah kerja、wilayah Indonesia。",
+      "example": "Perusahaan itu ingin memperluas layanan ke wilayah lain.",
+      "example_cn": "那家公司想把服务扩大到其他地区。",
+      "synonym_note": "wilayah 偏地区、区域或管辖范围；daerah 也很常见，更泛指地方、地区。",
+      "is_oral_new": false
+    },
+    {
+      "word": "manfaat",
+      "display": "manfaat",
+      "audio_text": "manfaat",
+      "cn": "益处；好处",
+      "en": "benefit; usefulness",
+      "root": "manfaat",
+      "root_cn": "益处；用途",
+      "formation": "基本名词。常见：punya manfaat（有好处）、memberi manfaat（带来益处）、manfaat produk（产品的益处）。",
+      "example": "Pelatihan ini memberi banyak manfaat bagi pegawai baru.",
+      "example_cn": "这次培训给新员工带来了很多好处。",
+      "synonym_note": "manfaat 强调益处、用途；keuntungan 也可表示好处，但还常表示利润。",
+      "is_oral_new": false
+    },
+    {
+      "word": "metode",
+      "display": "metode",
+      "audio_text": "metode",
+      "cn": "方法",
+      "en": "method",
+      "root": "metode",
+      "root_cn": "方法",
+      "formation": "基本名词，常用于学习、研究和工作流程。常见：metode belajar、metode kerja。",
+      "example": "Saya sedang mencari metode belajar yang lebih efektif.",
+      "example_cn": "我正在寻找更有效的学习方法。",
+      "synonym_note": "metode 偏系统化的方法；cara 是最通用、最口语的“方法、方式”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sejak",
+      "display": "sejak",
+      "audio_text": "sejak",
+      "cn": "自从；从……起",
+      "en": "since",
+      "root": "sejak",
+      "root_cn": "自从",
+      "formation": "时间介词/连词，表示从过去某个时间点持续到之后。",
+      "example": "Saya tinggal di Indonesia sejak empat tahun lalu.",
+      "example_cn": "我从四年前开始住在印度尼西亚。",
+      "synonym_note": "sejak 强调起始时间点；selama 强调持续多长时间。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menuju",
+      "display": "menuju",
+      "audio_text": "menuju",
+      "cn": "朝向；前往",
+      "en": "head toward; toward",
+      "root": "tuju",
+      "root_cn": "方向；目标",
+      "formation": "meN- + tuju → menuju，表示朝某方向前进，也可表示向某目标发展。",
+      "example": "Kami sedang menuju kantor pelanggan sekarang.",
+      "example_cn": "我们现在正在前往客户的办公室。",
+      "synonym_note": "menuju 强调朝某方向或目标前进；pergi ke 只是一般的“去某地”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "usaha",
+      "display": "usaha",
+      "audio_text": "usaha",
+      "cn": "努力；生意；企业",
+      "en": "effort; business; enterprise",
+      "root": "usaha",
+      "root_cn": "努力；事业",
+      "formation": "基本名词，既可表示努力，也可表示生意、企业。需根据语境判断。",
+      "example": "Dengan usaha yang konsisten, kemampuan bahasa bisa meningkat.",
+      "example_cn": "通过持续努力，语言能力可以提高。",
+      "synonym_note": "usaha 表示努力时接近 upaya；表示生意时接近 bisnis。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "menunjukkan",
+    "niat",
+    "nyebelin",
+    "berkat",
+    "mengizinkan"
+  ],
+  "sentences": [
+    {
+      "text": "Sejak pagi kami menuju wilayah pelanggan untuk membahas kesepakatan baru.",
+      "cn": "从早上开始，我们就前往客户所在地区讨论新的协议。"
+    },
+    {
+      "text": "Pantas saja dia nyebelin hari ini; ternyata dia sedang punya masalah di rumah.",
+      "cn": "难怪他今天这么烦人，原来家里正有事情。"
+    },
+    {
+      "text": "Jangan berantem; lebih baik tunjukkan niat baik dan cari kesepakatan.",
+      "cn": "别吵架；不如表现出善意并寻找共识。"
+    },
+    {
+      "text": "Berkat metode kerja baru, usaha kami menjadi lebih teratur.",
+      "cn": "多亏新的工作方法，我们的业务变得更有条理。"
+    },
+    {
+      "text": "Atasan mengizinkan kami mencoba metode yang memberi lebih banyak manfaat.",
+      "cn": "上司允许我们尝试一种能带来更多益处的方法。"
+    }
+  ],
+  "reading": {
+    "text": "Sejak pagi saya dan rekan kerja menuju wilayah pelanggan untuk membahas kesepakatan baru. Awalnya suasana agak tegang karena dua orang hampir berantem soal harga. Salah satu pelanggan bahkan ingin kabur dari pembicaraan karena merasa kesal. Saya mencoba menunjukkan niat baik dan menjelaskan manfaat kerja sama ini dengan cara yang sederhana. Pantas saja mereka sebelumnya ragu, karena metode lama sering membuat proses menjadi lambat. Berkat penjelasan yang lebih jelas, mereka akhirnya mau melanjutkan pembicaraan. Atasan juga mengizinkan kami menyesuaikan beberapa bagian. Menurut saya, usaha yang konsisten lebih penting daripada memaksa orang untuk langsung setuju.",
+    "cn": "从早上开始，我和同事前往客户所在地区讨论新的协议。起初气氛有点紧张，因为两个人差点因为价格吵起来。有位客户甚至因为心烦想退出谈话。我试着表现出善意，并用简单的方式解释这次合作的好处。难怪他们之前有所犹豫，因为旧方法经常让流程变慢。多亏解释得更清楚，他们最终愿意继续谈。上司也允许我们调整其中一些部分。我认为，持续努力比强迫别人马上同意更重要。"
+  },
+  "quiz": [
+    {
+      "question": "哪一个词最适合表达“双方达成的共识或协议”？",
+      "options": [
+        "wilayah",
+        "kesepakatan",
+        "manfaat",
+        "usaha"
+      ],
+      "answer_index": 1,
+      "explain": "kesepakatan 表示双方或多方达成的协议、共识。"
+    },
+    {
+      "question": "想表达“从2022年开始一直到现在”，最适合使用哪个词？",
+      "options": [
+        "sejak",
+        "menuju",
+        "pantas",
+        "metode"
+      ],
+      "answer_index": 0,
+      "explain": "sejak 用来标记持续状态的起始时间点。"
+    },
+    {
+      "question": "复习：想表达“允许我们调整方案”，应该选哪个词？",
+      "options": [
+        "menunjukkan",
+        "mengizinkan",
+        "berkat",
+        "niat"
+      ],
+      "answer_index": 1,
+      "explain": "mengizinkan 表示允许、准许某人做某事。"
+    }
+  ],
+  "output": {
+    "task": "请用3—4句印尼语描述一次工作沟通。尽量使用 kesepakatan、manfaat、metode、usaha，并自然加入一个今天的复习词。",
+    "reference_answer": "Hari ini kami membahas kesepakatan baru dengan pelanggan. Saya menunjukkan manfaat metode kerja yang baru. Berkat usaha tim, pelanggan akhirnya setuju untuk melanjutkan kerja sama.",
+    "reference_cn": "今天我们和客户讨论了一项新协议。我说明了新工作方法的好处。多亏团队的努力，客户最终同意继续合作。"
+  },
+  "review": [
+    "kesepakatan 是“协议、共识”，来自 sepakat“达成一致”。",
+    "pantas 不只表示“合适”，pantas saja 在口语中常表示“难怪”。",
+    "usaha 有“努力”和“生意/企业”两类高频含义，要根据语境判断。"
+  ]
+}
