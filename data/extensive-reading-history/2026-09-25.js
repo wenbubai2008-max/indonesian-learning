@@ -1,0 +1,13 @@
+window.EXTENSIVE_READING_ARCHIVE_ITEM={id:'er-20260925-lrt-jabodebek-integrasi',date:'2026-09-25',title:'Ganti Moda Makin Mudah di Stasiun LRT Jabodebek',title_cn:'LRT Jabodebek 换乘更方便，连接多种公共交通',category:'印尼 · 交通 · 日常生活 · 实时新闻改写',level:'A2+ → B1',minutes:4,source_name:'ANTARA News',source_date:'2026-09-24',text:`Sejumlah stasiun LRT Jabodebek kini terhubung dengan berbagai jenis transportasi umum. Koneksi ini membuat penumpang lebih mudah melanjutkan perjalanan tanpa selalu memakai kendaraan pribadi. Menurut KAI, kemudahan tersebut ikut mendukung peningkatan jumlah pengguna LRT dari tahun ke tahun.
+
+Contohnya, Stasiun Dukuh Atas BNI terhubung dengan KRL Commuter Line, KA Bandara, MRT Jakarta, dan TransJakarta. Stasiun Cikoko terhubung dengan KRL dan TransJakarta, sedangkan Stasiun Halim terhubung dengan kereta cepat Whoosh. Di Kampung Rambutan, penumpang juga dapat melanjutkan perjalanan dengan bus antarkota antarprovinsi.
+
+Hubungan antarmoda ini menunjukkan bahwa satu perjalanan tidak harus menggunakan satu jenis kendaraan saja. Penumpang bisa memilih kombinasi transportasi yang paling sesuai dengan kebutuhan mereka. Akses yang lebih mudah juga membantu masyarakat menuju pusat kegiatan, tempat wisata, dan perjalanan antarkota di kawasan Jabodebek.
+
+KAI terus mendorong integrasi antarmoda agar transportasi publik menjadi pilihan yang lebih praktis. Dengan koneksi yang baik, perjalanan harian bisa lebih mudah direncanakan dan masyarakat memiliki lebih banyak pilihan untuk bergerak di dalam kota maupun ke daerah lain.`,cn:`LRT Jabodebek 的一些车站现在已经连接多种公共交通方式。这种连接让乘客不必总是使用私人车辆，也能更方便地继续下一段行程。KAI 表示，这种便利也在支持 LRT 使用人数逐年增加。
+
+例如，Dukuh Atas BNI 站可以换乘 KRL 通勤铁路、机场铁路、雅加达 MRT 和 TransJakarta。Cikoko 站连接 KRL 和 TransJakarta，Halim 站则连接 Whoosh 高铁。在 Kampung Rambutan，乘客还可以继续换乘跨城市、跨省巴士。
+
+这种交通方式之间的连接说明，一次出行并不一定只能使用一种交通工具。乘客可以按照自己的需要，选择最合适的交通组合。更方便的换乘也帮助居民前往活动中心、旅游地点，以及进行 Jabodebek 地区和周边的跨城出行。
+
+KAI 继续推动不同交通方式的整合，让公共交通成为更实用的选择。连接做得更好以后，日常行程更容易规划，居民在市内或前往其他地区时也会有更多选择。`,hints:[{term:'terhubung',cn:'连接；相连',root:'hubung',formation:'ter- + hubung'},{term:'melanjutkan perjalanan',cn:'继续行程',root:'lanjut',formation:'meN- + lanjut + -kan'},{term:'kendaraan pribadi',cn:'私人车辆'},{term:'mendukung',cn:'支持；促进',root:'dukung',formation:'meN- + dukung'},{term:'peningkatan',cn:'增加；提升',root:'tingkat',formation:'peN- + tingkat + -an'},{term:'antarmoda',cn:'不同交通方式之间的'},{term:'menunjukkan',cn:'显示；表明',root:'tunjuk',formation:'meN- + tunjuk + -kan'},{term:'sesuai dengan kebutuhan',cn:'符合需要'},{term:'akses',cn:'通达条件；进入途径'},{term:'integrasi',cn:'整合；一体化'},{term:'praktis',cn:'方便实用的'},{term:'direncanakan',cn:'被规划；被计划',root:'rencana',formation:'di- + rencana + -kan'}]};
