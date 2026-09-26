@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T10:05:59.072Z",
+  "generated_at": "2026-09-26T03:31:36.031Z",
   "master_unique": 977,
   "primary_new_pool_total": 402,
   "secondary_master_unique": 342,
@@ -13,8 +13,8 @@
     "secondary_available": 340,
     "switched_at": ""
   },
-  "weak_active_total": 1445,
-  "weak_mastered_total": 884,
+  "weak_active_total": 1444,
+  "weak_mastered_total": 885,
   "daily_taught_unique": 513,
   "primary_taught_unique": 261,
   "primary_unlearned_total": 716,
@@ -22,8 +22,8 @@
   "new_pool_dont_total": 191,
   "new_pool_fuzzy_total": 211,
   "new_pool_unclassified_total": 0,
-  "review_pool_total": 227,
-  "focus_pool_total": 227,
+  "review_pool_total": 226,
+  "focus_pool_total": 226,
   "listening_focus_pool_total": 0,
   "oral_new_pool_total": 26,
   "rules": {
