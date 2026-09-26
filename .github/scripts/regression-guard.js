@@ -22,7 +22,7 @@ function unique(arr){ return new Set(arr).size === arr.length; }
 function fileHash12(p){ return crypto.createHash('sha256').update(read(p)).digest('hex').slice(0,12); }
 function completedStamp(row,session){
   const d=String(row&&row.date||'');
-  if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(d))return '';
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(d))return '';
   if(session==='am'&&row.am===true)return d+' 08:00';
   if(session==='pm'&&row.pm===true)return d+' '+(d>='2026-09-16'?'18:00':'19:00');
   return '';
@@ -42,7 +42,7 @@ function validateRecentDailyWindow(){
   for(const row of rows){const d=String(row&&row.date||'');counts.set(d,(counts.get(d)||0)+1)}
   const dups=[...counts.entries()].filter(([d,n])=>d&&n>1).map(([d])=>d);
   ok(dups.length===0,'daily index has no duplicate dates'+(dups.length?': '+dups.join(', '):''));
-  const dated=rows.filter(r=>r&&/^\\d{4}-\\d{2}-\\d{2}$/.test(String(r.date||''))).sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+  const dated=rows.filter(r=>r&&/^\d{4}-\d{2}-\d{2}$/.test(String(r.date||''))).sort((a,b)=>String(a.date).localeCompare(String(b.date)));
   const recent=dated.slice(-7);
   const latestDate=dated.length?String(dated[dated.length-1].date):'';
   ok(!latestDate||String(index.updated||'')===latestDate,'daily index.updated matches latest date');
@@ -393,9 +393,9 @@ try {
   ok(/fs\.writeFileSync\(dbPath/.test(sync), 'sync-daily-vocab is the daily-vocab writer');
   ok(/git add data\/daily-vocab-data\.js data\/learning-runtime\.json/.test(sync), 'daily-vocab and runtime are committed together');
   ok(/build-learning-runtime\.js/.test(sync), 'sync workflow rebuilds runtime in the same chain');
-  ok(!/fs\\.writeFileSync\\([^\\n]*daily-vocab-data\\.js/.test(build), 'build-learning-runtime workflow does not directly write daily-vocab');
-  ok(/actions\\/checkout@v7/.test(sync)&&/actions\\/setup-node@v7/.test(sync)&&/node-version:\\s*['\"]24['\"]/.test(sync), 'sync workflow uses Node 24 actions/runtime');
-  ok(/actions\\/checkout@v7/.test(build)&&/actions\\/setup-node@v7/.test(build)&&/node-version:\\s*['\"]24['\"]/.test(build), 'build workflow uses Node 24 actions/runtime');
+  ok(!/fs\.writeFileSync\([^\n]*daily-vocab-data\.js/.test(build), 'build-learning-runtime workflow does not directly write daily-vocab');
+  ok(/actions\/checkout@v7/.test(sync)&&/actions\/setup-node@v7/.test(sync)&&/node-version:\s*['\"]24['\"]/.test(sync), 'sync workflow uses Node 24 actions/runtime');
+  ok(/actions\/checkout@v7/.test(build)&&/actions\/setup-node@v7/.test(build)&&/node-version:\s*['\"]24['\"]/.test(build), 'build workflow uses Node 24 actions/runtime');
 
   const css = read('data/daily-width-fix.css');
   ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))'), 'first-paint desktop homepage layout is 3 compact columns');

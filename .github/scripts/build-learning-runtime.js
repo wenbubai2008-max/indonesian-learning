@@ -17,11 +17,11 @@ for(const item of dailyRaw){
   if(Array.isArray(item&&item.lesson_occurrences)){
     for(const stamp of item.lesson_occurrences){
       const s=String(stamp||'').trim();
-      if(/^\\d{4}-\\d{2}-\\d{2} (?:08:00|18:00|19:00)$/.test(s))lessonStamps.push(s);
+      if(/^\d{4}-\d{2}-\d{2} (?:08:00|18:00|19:00)$/.test(s))lessonStamps.push(s);
     }
   }else{
     const s=String(item&&item.last_seen||'').trim();
-    if(/^\\d{4}-\\d{2}-\\d{2} (?:08:00|18:00|19:00)$/.test(s))lessonStamps.push(s);
+    if(/^\d{4}-\d{2}-\d{2} (?:08:00|18:00|19:00)$/.test(s))lessonStamps.push(s);
   }
 }
 const lessonWatermark=lessonStamps.sort().pop()||'';
