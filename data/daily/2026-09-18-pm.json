@@ -36,7 +36,7 @@
     {"task":"改写：把 Dengarkan dulu. 改成更口语、强调‘先认真听他说完’。","reference_answer":"Nyimak dulu sampai dia selesai bicara.","reference_cn":"先认真听，等他说完。"},
     {"task":"主动回忆：用 pas、kebetulan、menentukan 说一句安排时间的话。","reference_answer":"Kebetulan waktunya pas, jadi kita bisa menentukan jadwal sekarang.","reference_cn":"正好时间合适，所以我们现在可以确定日程。"}
   ],
-  "daily_test":{"title":"当日小测 · 5–8分钟","items":[
+  "daily_test":{"title":"当日小测 · 5–8分钟","questions":[
     {"type":"choice","prompt":"哪一个词最适合：___ orang sudah datang lebih awal.","options":["Sejumlah","Jomblo","Nanggung"],"answer_index":0,"answer":"Sejumlah","explain":"sejumlah 表示‘若干、一定数量的’，后面可以直接接 orang。"},
     {"type":"choice","prompt":"‘都做到一半了，现在停下来很不上不下’最接近哪个词？","options":["nanggung","nyimak","pembangunan"],"answer_index":0,"answer":"nanggung","explain":"nanggung 常表示事情卡在一半、现在停下会很尴尬。"},
     {"type":"choice","prompt":"哪一个表达更像‘不用、不必’，而不是命令别人‘不要’？","options":["tidak usah","jangan","nyaris"],"answer_index":0,"answer":"tidak usah","explain":"tidak usah 表示没有必要；jangan 是不要做某事。"},

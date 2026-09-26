@@ -35,7 +35,7 @@
     {"task":"改写：把 Rencana ini punya masalah waktu. 改成更自然的口语，表达‘这个计划卡在时间限制上。’","reference_answer":"Rencana ini kebentur waktu.","reference_cn":"这个计划卡在时间限制上。"},
     {"task":"主动回忆：用 nentuin、nangkep、sepakat 说一句工作场景的话。","reference_answer":"Setelah aku nangkep maksudnya, kami bisa nentuin pilihan dan akhirnya sepakat.","reference_cn":"我听懂他的意思以后，我们就能确定选择，并最终达成一致。"}
   ],
-  "daily_test":{"title":"当日小测 · 5–8分钟","items":[
+  "daily_test":{"title":"当日小测 · 5–8分钟","questions":[
     {"type":"choice","prompt":"哪一个词最适合：Atasan ___ bahwa keputusan harus dibuat hari ini.","options":["menegaskan","luas","kejebak"],"answer_index":0,"answer":"menegaskan","explain":"menegaskan 表示把立场或信息明确说出来、强调。"},
     {"type":"choice","prompt":"masa sih 在日常口语里最接近哪一种语气？","options":["真的吗？不会吧？","没关系","当然可以"],"answer_index":0,"answer":"真的吗？不会吧？","explain":"masa sih 常用于惊讶、怀疑或轻微反问。"},
     {"type":"choice","prompt":"哪一个词最适合表达‘双方最后达成一致’？","options":["sepakat","kebentur","membutuhkan"],"answer_index":0,"answer":"sepakat","explain":"sepakat 强调两方或多人达成一致。"},

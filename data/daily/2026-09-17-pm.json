@@ -35,7 +35,7 @@
     {"task":"改写：把 Tim sangat sibuk. 改成‘如果所有事情同时来，团队会手忙脚乱。’","reference_answer":"Kalau semua datang bersamaan, tim akan kelabakan.","reference_cn":"如果所有事情同时来，团队会手忙脚乱。"},
     {"task":"主动回忆：用 ngurus、ngelarin、layak 说一句工作场景的话。","reference_answer":"Aku ngurus dokumennya dulu, lalu kita ngelarin laporan dengan cara yang paling layak.","reference_cn":"我先处理文件，然后我们用最合适的方式把报告做完。"}
   ],
-  "daily_test":{"title":"当日小测 · 5–8分钟","items":[
+  "daily_test":{"title":"当日小测 · 5–8分钟","questions":[
     {"type":"choice","prompt":"哪一个词最适合：Aku ___ waktu jadwalnya tiba-tiba berubah.","options":["kaget","layak","begini"],"answer_index":0,"answer":"kaget","explain":"kaget 表示‘吃惊、吓一跳’。"},
     {"type":"choice","prompt":"哪一个词最接近‘手忙脚乱’？","options":["kelabakan","menentukan","lakukan"],"answer_index":0,"answer":"kelabakan","explain":"kelabakan 强调突然事情太多而忙乱。"},
     {"type":"choice","prompt":"ngurus 在日常工作中最自然的意思是什么？","options":["处理；办理","吃惊","值得"],"answer_index":0,"answer":"处理；办理","explain":"ngurus 是 mengurus 的高频口语形式。"},
