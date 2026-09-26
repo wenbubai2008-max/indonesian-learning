@@ -53,6 +53,32 @@ jobs:
           // A lesson is eligible only after its date/session flag is true in the daily index.
           // This keeps scheduled fallback runs from ingesting a half-written AM/PM file.
           const dailyIndex=JSON.parse(fs.readFileSync('data/daily/index.json','utf8'));
+
+          // A scheduled fallback must not silently report success if today's lesson
+          // was never written. This does not generate lessons; it surfaces the exact
+          // missing completion barrier so the lesson task can be repaired safely.
+          if(process.env.GITHUB_EVENT_NAME==='schedule'){
+            const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+            const local=Object.fromEntries(parts.map(p=>[p.type,p.value]));
+            const currentDate=`${local.year}-${local.month}-${local.day}`;
+            const hour=Number(local.hour);
+            const expectedSession=hour>=18?'pm':hour>=8?'am':null;
+            if(expectedSession){
+              const rows=(dailyIndex.dates||[]).filter(r=>r&&r.date===currentDate);
+              const lessonPath=`data/daily/${currentDate}-${expectedSession}.json`;
+              const fileExists=fs.existsSync(lessonPath);
+              const flagged=rows.length===1&&rows[0][expectedSession]===true;
+              if(!flagged||!fileExists){
+                throw new Error(`Scheduled recovery incomplete: ${currentDate} ${expectedSession.toUpperCase()} (index_rows=${rows.length}, index_flag=${flagged}, lesson_file=${fileExists?'present':'missing'}). Do not mark this run successful or synthesize a lesson in GitHub Actions.`);
+              }
+              const lesson=JSON.parse(fs.readFileSync(lessonPath,'utf8'));
+              const expectedTime=expectedSession==='am'?'08:00':'18:00';
+              if(lesson.date!==currentDate||lesson.session!==expectedSession||lesson.time!==expectedTime||(expectedSession==='pm'&&lesson.write_status!=='lesson_complete')){
+                throw new Error(`Scheduled recovery found incomplete lesson schema: ${lessonPath}`);
+              }
+              console.log(`Scheduled recovery: verified ${currentDate} ${expectedTime} lesson and index barrier.`);
+            }else console.log('Scheduled recovery: outside lesson hours; skip current-day completion assertion.');
+          }
           const completed=new Set();
           for(const row of (dailyIndex.dates||[])){
             if(row && row.date && row.am===true)completed.add(`${row.date}-am`);
@@ -210,4 +236,9 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Sync daily lesson vocabulary and runtime'
           git pull --rebase origin main
-          git push origin HEAD:main
+          if ! git push origin HEAD:main; then
+            echo '::warning title=Retry sync push::main advanced during push; rebasing and retrying once.'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi

@@ -44,6 +44,26 @@ function validateRecentDailyWindow(){
   ok(dups.length===0,'daily index has no duplicate dates'+(dups.length?': '+dups.join(', '):''));
   const dated=rows.filter(r=>r&&/^\d{4}-\d{2}-\d{2}$/.test(String(r.date||''))).sort((a,b)=>String(a.date).localeCompare(String(b.date)));
   const recent=dated.slice(-7);
+
+  // Full modern-history identity/contract check. The recent-seven-day window
+  // remains the deeper check, but older modern lessons must not disappear from it.
+  for(const row of dated.filter(x=>String(x.date)>='2026-09-16')){
+    for(const session of ['am','pm']){
+      if(row[session]!==true)continue;
+      const p='data/daily/'+row.date+'-'+session+'.json';
+      ok(fs.existsSync(rel(p)),`canonical history ${row.date} ${session}: file exists`);
+      if(!fs.existsSync(rel(p)))continue;
+      const x=readJSON(p);
+      ok(x.date===row.date&&x.session===session&&x.time===(session==='am'?'08:00':'18:00'),`canonical history ${row.date} ${session}: date/session/time`);
+      ok(Boolean(String(x.title||'').trim())&&String(x.title).startsWith(session==='am'?'08:00':'18:00'),`canonical history ${row.date} ${session}: title`);
+      if(session==='pm'){
+        const t=x.daily_test||{};
+        const questions=Array.isArray(t.questions)?t.questions:[];
+        ok(x.write_status==='lesson_complete',`canonical history ${row.date} pm: lesson_complete`);
+        ok(!Object.prototype.hasOwnProperty.call(t,'items')&&questions.length===6&&questions.filter(q=>q&&q.type==='choice').length===3&&questions.filter(q=>q&&q.type==='fill').length===2&&questions.filter(q=>q&&q.type==='order').length===1,`canonical history ${row.date} pm: only standard 3+2+1 questions container`);
+      }
+    }
+  }
   const latestDate=dated.length?String(dated[dated.length-1].date):'';
   ok(!latestDate||String(index.updated||'')===latestDate,'daily index.updated matches latest date');
   for(const row of recent){
