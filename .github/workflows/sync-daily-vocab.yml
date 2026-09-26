@@ -7,6 +7,10 @@ on:
       # index.json is the completion trigger/barrier. AM/PM lesson JSON and index should be
       # committed atomically by the lesson writer; only then do we rebuild daily vocab/runtime.
       - 'data/daily/index.json'
+      # Lesson files also trigger reconciliation. index.json remains the barrier:
+      # a lesson is ingested only when its date/session flag is already true.
+      - 'data/daily/*-am.json'
+      - 'data/daily/*-pm.json'
   schedule:
     # Safety fallback only. Normal lesson sync is triggered by the atomic lesson+index push.
     # 01:10/11:10 UTC = 08:10/18:10 Asia/Jakarta.
