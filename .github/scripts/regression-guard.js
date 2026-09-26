@@ -250,6 +250,9 @@ try {
   ok(/3题/.test(String(am.quiz || '')), 'AM keeps 3 quiz questions');
   ok(Boolean(am.active_output), 'AM active output contract exists');
   ok(Boolean(am.final_review), 'AM final review contract exists');
+  ok(/review_vocab/.test(String(am.review_vocab_schema || '')) && /review_pool/.test(String(am.review_vocab_schema || '')), 'AM review_vocab schema is protected');
+  ok(/vocab/.test(String(am.root_schema || '')) && /review_vocab/.test(String(am.root_schema || '')) && /quiz/.test(String(am.root_schema || '')), 'AM root schema is protected');
+  ok(/前一天PM/.test(String(am.cross_day_dedup || '')) && /runtime\.new_pool/.test(String(am.cross_day_dedup || '')), 'AM cross-day freshness/de-dup contract is protected');
 
   const pm = rules.pm_contract || {};
   ok(pm.scheduled_time === '18:00', 'PM scheduled_time = 18:00');
@@ -262,7 +265,7 @@ try {
   ok(Boolean(pm.automation_value), 'PM automation-value tie-break rule exists');
   ok(/80-120/.test(String(pm.reading_words || '')), 'PM reading stays 80-120 words');
   ok(Boolean(pm.dialogue), 'PM dialogue contract exists');
-  ok(/3-4/.test(String(pm.rewrite_application || '')), 'PM rewrite/application stays 3-4 tasks');
+  ok(/3-4/.test(String(pm.rewrite || '')) && /根字段.*rewrite|rewrite:\[/.test(String(pm.rewrite || '')), 'PM rewrite root schema stays canonical');
   ok(/3 choice/.test(String(pm.daily_test || '')) && /2 fill/.test(String(pm.daily_test || '')) && /1 order/.test(String(pm.daily_test || '')), 'PM daily_test remains 3 choice + 2 fill + 1 order');
   ok(Boolean(pm.final_review), 'PM final review contract exists');
   ok(/今天08:00已教/.test(String(pm.same_day_am_mark || '')) && /review_vocab/.test(String(pm.same_day_am_mark || '')), 'same-day AM vocab/review marker is protected');

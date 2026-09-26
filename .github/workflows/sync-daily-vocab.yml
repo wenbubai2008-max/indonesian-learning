@@ -4,11 +4,11 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/sync-daily-vocab.yml'
-      # index.json is the completion barrier: lesson JSON is written and verified first,
-      # then index is updated. Only after that do we rebuild daily vocab/runtime.
+      # index.json is the completion trigger/barrier. AM/PM lesson JSON and index should be
+      # committed atomically by the lesson writer; only then do we rebuild daily vocab/runtime.
       - 'data/daily/index.json'
   schedule:
-    # Safety fallback only. Normal lesson sync is triggered by the completed index.json push.
+    # Safety fallback only. Normal lesson sync is triggered by the atomic lesson+index push.
     # 01:10/11:10 UTC = 08:10/18:10 Asia/Jakarta.
     - cron: '10 1,11 * * *'
   workflow_dispatch:
