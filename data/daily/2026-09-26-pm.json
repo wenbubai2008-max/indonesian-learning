@@ -1,0 +1,367 @@
+{
+  "date": "2026-09-26",
+  "session": "pm",
+  "time": "18:00",
+  "day": 36,
+  "level": "A2+ → B1",
+  "duration_minutes": 40,
+  "title": "18:00｜晚课：核对订单、安排工作与表达异议",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "periksa",
+    "suasana",
+    "atur",
+    "pesanan"
+  ],
+  "vocab": [
+    {
+      "word": "periksa",
+      "display": "periksa",
+      "audio_text": "periksa",
+      "cn": "检查；核对",
+      "en": "check; inspect",
+      "root": "periksa",
+      "root_cn": "检查",
+      "formation": "高频：periksa dokumen、periksa lagi、memeriksa data；口语常说 cek。",
+      "example": "Tolong periksa pesanan ini sebelum dikirim.",
+      "example_cn": "请在发货前核对这笔订单。",
+      "synonym_note": "periksa 较标准；cek 在办公室口语中更常用。",
+      "usage_note": "合法fuzzy新词；重点练主动提取。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "suasana",
+      "display": "suasana",
+      "audio_text": "suasana",
+      "cn": "气氛；氛围",
+      "en": "atmosphere; mood",
+      "root": "suasana",
+      "root_cn": "气氛；环境",
+      "formation": "高频：suasana kerja、suasana rapat、suasana tenang。",
+      "example": "Suasana rapat hari ini cukup tenang.",
+      "example_cn": "今天会议的气氛挺平和。",
+      "synonym_note": "suasana 强调氛围；keadaan 更偏实际状况。",
+      "usage_note": "合法fuzzy新词；从眼熟练到自然出口。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "atur",
+      "display": "atur",
+      "audio_text": "atur",
+      "cn": "安排；调整；管理",
+      "en": "arrange; set; manage",
+      "root": "atur",
+      "root_cn": "安排；调整",
+      "formation": "高频：atur jadwal、atur waktu、atur dulu；派生词 mengatur。",
+      "example": "Kita atur jadwal baru setelah bicara dengan atasan.",
+      "example_cn": "和上司谈过后再安排新时间。",
+      "synonym_note": "atur 侧重安排调配；ngurus 侧重处理照管。",
+      "usage_note": "合法dont新词；首次正式学习。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "pesanan",
+      "display": "pesanan",
+      "audio_text": "pesanan",
+      "cn": "订单；订购的东西",
+      "en": "order",
+      "root": "pesan",
+      "root_cn": "订购；传话",
+      "formation": "pesan + -an；常见：cek pesanan、status pesanan、pesanan pelanggan。",
+      "example": "Ada dua pesanan yang harus diperiksa hari ini.",
+      "example_cn": "今天有两笔订单需要核对。",
+      "synonym_note": "pesanan 是订单；permintaan 是一般的请求或需求；口语也说 order。",
+      "usage_note": "合法dont新词；首次正式学习。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "mendukung",
+      "display": "mendukung",
+      "audio_text": "mendukung",
+      "cn": "支持；支撑",
+      "en": "support",
+      "root": "dukung",
+      "root_cn": "支持；支撑",
+      "formation": "meN- + dukung；常见 mendukung rencana、mendukung tim。",
+      "example": "Atasan mendukung rencana kami.",
+      "example_cn": "上司支持我们的计划。",
+      "synonym_note": "mendukung 表示支持；membantu 更强调具体帮助。",
+      "usage_note": "focus高优先级；近期答错，重点复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menunjukkan",
+      "display": "menunjukkan",
+      "audio_text": "menunjukkan",
+      "cn": "指出；展示；表明",
+      "en": "show; indicate",
+      "root": "tunjuk",
+      "root_cn": "指；指出",
+      "formation": "meN- + tunjuk + -kan；高频：menunjukkan data、menunjukkan hasil。",
+      "example": "Data ini menunjukkan bahwa masih ada kendala.",
+      "example_cn": "这些数据显示仍然有困难。",
+      "synonym_note": "menunjukkan 是展示结果；menjelaskan 是解释清楚。",
+      "usage_note": "focus高优先级；最近PM核心冷却已满足。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menegaskan",
+      "display": "menegaskan",
+      "audio_text": "menegaskan",
+      "cn": "强调；明确说明",
+      "en": "emphasize; affirm",
+      "root": "tegas",
+      "root_cn": "明确；坚定",
+      "formation": "meN- + tegas + -kan；常见 menegaskan kembali、menegaskan aturan。",
+      "example": "Saya perlu menegaskan bahwa jadwal ini belum berubah.",
+      "example_cn": "我要强调，时间安排还没变。",
+      "synonym_note": "menegaskan 是郑重强调；mengatakan 只是一般地说。",
+      "usage_note": "focus高优先级；近期答错。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "sepakat",
+      "display": "sepakat",
+      "audio_text": "sepakat",
+      "cn": "同意；达成一致",
+      "en": "agree; reach agreement",
+      "root": "sepakat",
+      "root_cn": "同意；一致",
+      "formation": "常见 kami sepakat、sepakat untuk、belum sepakat。",
+      "example": "Kami sepakat untuk memeriksa pesanan dulu.",
+      "example_cn": "我们一致同意先核对订单。",
+      "synonym_note": "sepakat 强调各方一致；setuju 可指个人表示同意。",
+      "usage_note": "active复习池，非focus补充。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "keberatan",
+      "display": "keberatan",
+      "audio_text": "keberatan",
+      "cn": "介意；有异议",
+      "en": "objection; mind",
+      "root": "berat",
+      "root_cn": "重；沉重",
+      "formation": "ke- + berat + -an；常见 ada keberatan、merasa keberatan、tidak keberatan。",
+      "example": "Apakah kamu keberatan kalau rapatnya dipindah?",
+      "example_cn": "如果会议改期，你介意吗？",
+      "synonym_note": "keberatan 表示介意/异议；tidak setuju 只说明不同意。",
+      "usage_note": "active复习池，非focus补充。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "atasan",
+      "display": "atasan",
+      "audio_text": "atasan",
+      "cn": "上司；领导",
+      "en": "supervisor; boss",
+      "root": "atas",
+      "root_cn": "上；上方",
+      "formation": "atas + -an；常见 lapor ke atasan、bicara dengan atasan。",
+      "example": "Saya sudah melapor kepada atasan tentang pesanan itu.",
+      "example_cn": "我已经向上司汇报了那笔订单。",
+      "synonym_note": "atasan 较正式；bos 更口语。",
+      "usage_note": "今天08:00已教；应用复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": true
+    },
+    {
+      "word": "kendala",
+      "display": "kendala",
+      "audio_text": "kendala",
+      "cn": "障碍；工作卡点",
+      "en": "obstacle; constraint",
+      "root": "kendala",
+      "root_cn": "障碍；限制",
+      "formation": "常见 ada kendala、kendala teknis、mengatasi kendala。",
+      "example": "Kalau ada kendala, beri tahu saya lebih awal.",
+      "example_cn": "如果有障碍，请提前告诉我。",
+      "synonym_note": "kendala 强调阻碍事情推进；masalah 范围更广。",
+      "usage_note": "今天08:00已教；应用复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "lowongan",
+      "display": "lowongan",
+      "audio_text": "lowongan",
+      "cn": "职位空缺；招聘信息",
+      "en": "job vacancy",
+      "root": "lowong",
+      "root_cn": "空着；有空缺",
+      "formation": "lowong + -an；常用 lowongan kerja、mencari lowongan。",
+      "example": "Saya melihat lowongan baru yang cocok dengan pengalaman saya.",
+      "example_cn": "我看到一个与我经验相符的新职位。",
+      "synonym_note": "lowongan 是职位空缺；lamaran 是求职申请。",
+      "usage_note": "今天08:00已教；应用复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Pagi ini saya melihat sebuah lowongan dan ingin bertanya kepada atasan tentang tugasnya. Sebelum rapat, saya periksa beberapa pesanan pelanggan. Ternyata ada satu kendala dalam pengiriman. Saya lalu mengatur waktu untuk membahasnya bersama tim. Suasana rapat cukup tenang. Atasan menunjukkan data dan menegaskan bahwa kami harus memberi kabar yang jelas kepada pelanggan. Semua anggota tim sepakat untuk memeriksa pesanan sekali lagi. Tidak ada yang keberatan dengan rencana itu. Saya senang karena atasan mendukung cara kerja yang lebih rapi. Setelah pekerjaan selesai, saya kembali membaca informasi lowongan tadi dan mulai menyiapkan lamaran.",
+    "cn": "今天早上我看到一条招聘信息，想向上司了解岗位职责。开会前，我核对了几笔客户订单，发现一笔发货存在障碍，于是安排时间与团队讨论。会议气氛平和。上司展示数据并强调，必须向客户清楚说明情况。大家一致同意再次核对订单，没有人反对这个计划。我很高兴上司支持更有条理的工作方式。工作结束后，我重新查看那条招聘信息，开始准备求职申请。"
+  },
+  "dialogue": {
+    "title": "工作口语｜核对订单与调整会议时间",
+    "lines": [
+      {
+        "speaker": "A",
+        "id": "Kamu sudah periksa pesanan pelanggan?",
+        "cn": "你核对客户订单了吗？"
+      },
+      {
+        "speaker": "B",
+        "id": "Sudah, tapi ada satu kendala. Saya mau atur jadwal untuk membahasnya.",
+        "cn": "核对了，但有个卡点。我想安排时间讨论。"
+      },
+      {
+        "speaker": "A",
+        "id": "Bagaimana suasana rapat tadi?",
+        "cn": "刚才会议气氛怎么样？"
+      },
+      {
+        "speaker": "B",
+        "id": "Cukup tenang. Atasan menunjukkan data dan menegaskan langkah berikutnya.",
+        "cn": "挺平和的。上司展示了数据，并强调了下一步。"
+      },
+      {
+        "speaker": "A",
+        "id": "Semua sepakat? Ada yang keberatan?",
+        "cn": "大家都同意了吗？有人有异议吗？"
+      },
+      {
+        "speaker": "B",
+        "id": "Semua sepakat. Atasan juga mendukung rencana kami.",
+        "cn": "大家都一致同意，上司也支持我们的方案。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "中译印：请先核对这笔订单，然后安排会议时间。",
+      "reference_answer": "Tolong periksa pesanan ini dulu, lalu atur jadwal rapat.",
+      "reference_cn": "请先核对这笔订单，然后安排会议时间。"
+    },
+    {
+      "task": "主动回忆：用 suasana 和 atasan 说一句今天会议的情况。",
+      "reference_answer": "Suasana rapat tadi cukup tenang, dan atasan mendukung kami.",
+      "reference_cn": "刚才会议气氛很平和，上司支持我们。"
+    },
+    {
+      "task": "口语改写：把 Saya tidak setuju dengan perubahan ini. 改为使用 keberatan 的自然说法。",
+      "reference_answer": "Saya keberatan dengan perubahan ini.",
+      "reference_cn": "我对这个变更有异议。"
+    },
+    {
+      "task": "中译印：上司强调，我们需要先核对数据，再就下一步达成一致。",
+      "reference_answer": "Atasan menegaskan bahwa kami perlu periksa data dulu, lalu sepakat tentang langkah berikutnya.",
+      "reference_cn": "上司强调，我们需要先核对数据，再就下一步达成一致。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "哪个词表示“客户订单”？",
+        "options": [
+          "pesanan",
+          "suasana",
+          "lowongan",
+          "keberatan"
+        ],
+        "answer_index": 0,
+        "answer": "pesanan",
+        "explain": "pesanan 来自 pesan + -an，表示订单或订购的东西。"
+      },
+      {
+        "type": "choice",
+        "prompt": "“各方达成一致”最适合哪个词？",
+        "options": [
+          "sepakat",
+          "keberatan",
+          "kendala",
+          "menegaskan"
+        ],
+        "answer_index": 0,
+        "answer": "sepakat",
+        "explain": "sepakat 强调各方达成一致；setuju 也可只是个人同意。"
+      },
+      {
+        "type": "choice",
+        "prompt": "哪个词表示“正式地强调、明确说明”？",
+        "options": [
+          "menunjukkan",
+          "mendukung",
+          "menegaskan",
+          "atur"
+        ],
+        "answer_index": 2,
+        "answer": "menegaskan",
+        "explain": "menegaskan 来自 tegas，表示强调或明确说明。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Tolong ____ pesanan ini sekali lagi.（检查；核对）",
+        "answer": "periksa",
+        "explain": "periksa 是检查、核对；口语也常说 cek。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Apakah kamu ____ kalau jadwalnya diubah?（介意；有异议）",
+        "answer": "keberatan",
+        "explain": "keberatan 表示介意或有异议；不介意为 tidak keberatan。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：上司展示了数据，我们一致同意再核对订单。",
+        "tokens": [
+          "Atasan",
+          "menunjukkan data,",
+          "dan kami",
+          "sepakat untuk",
+          "periksa pesanan lagi."
+        ],
+        "answer": "Atasan menunjukkan data, dan kami sepakat untuk periksa pesanan lagi.",
+        "answer_cn": "上司展示了数据，我们一致同意再核对订单。",
+        "explain": "第一个分句是 Atasan menunjukkan data；第二个分句是 kami sepakat untuk + 动词短语。"
+      }
+    ],
+    "self_check": [
+      "能否3秒说出 periksa、suasana、atur、pesanan？",
+      "能否区分 sepakat/setuju 和 keberatan/tidak setuju？",
+      "能否用 menunjukkan、menegaskan、mendukung 各说一句？",
+      "能否自然使用今天08:00学过的 atasan、kendala、lowongan？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "遮住中文，3秒主动提取4个新词，并各口头造句。",
+      "重点复习 mendukung、menunjukkan、menegaskan、sepakat、keberatan；辨析 menunjukkan（展示）与 menegaskan（强调）。",
+      "用今早的 atasan、kendala、lowongan 连成2句工作口语。",
+      "30–45秒复述阅读：订单出了什么问题、会议如何解决，以及注意到的招聘信息。"
+    ]
+  }
+}
