@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-26",
+  "session": "am",
+  "time": "08:00",
+  "day": 36,
+  "level": "A2+ → B1",
+  "title": "08:00｜新词 + 应用：工作协作与日常表达",
+  "vocab": [
+    {
+      "word": "atasan",
+      "display": "atasan",
+      "audio_text": "atasan",
+      "cn": "上司；领导",
+      "en": "supervisor; boss",
+      "root": "atas",
+      "root_cn": "上；上方",
+      "formation": "atas + -an，常指职位上比自己高的人；口语里也常直接说 bos。",
+      "example": "Saya perlu melaporkan masalah ini kepada atasan dulu.",
+      "example_cn": "我需要先把这个问题汇报给上司。",
+      "synonym_note": "atasan 比 bos 更中性正式；bos 在日常口语里更自然。",
+      "is_oral_new": true
+    },
+    {
+      "word": "pelanggan",
+      "display": "pelanggan",
+      "audio_text": "pelanggan",
+      "cn": "顾客；客户",
+      "en": "customer; client",
+      "root": "langgan",
+      "root_cn": "经常购买；订购",
+      "formation": "pe- + langgan，表示经常购买商品或使用服务的人。",
+      "example": "Pelanggan itu meminta penjelasan yang lebih jelas.",
+      "example_cn": "那位客户要求更清楚的说明。",
+      "synonym_note": "pelanggan 是通用的“客户/顾客”；klien 更常用于专业服务关系。",
+      "is_oral_new": true
+    },
+    {
+      "word": "kendala",
+      "display": "kendala",
+      "audio_text": "kendala",
+      "cn": "障碍；困难；卡点",
+      "en": "obstacle; constraint",
+      "root": "kendala",
+      "root_cn": "障碍；限制",
+      "formation": "常用搭配 ada kendala、mengalami kendala、kendala teknis。",
+      "example": "Kami mengalami sedikit kendala saat mengirim barang.",
+      "example_cn": "我们发货时遇到了一点问题。",
+      "synonym_note": "kendala 强调阻碍事情推进的问题；masalah 范围更广。",
+      "is_oral_new": false
+    },
+    {
+      "word": "usahakan",
+      "display": "usahakan",
+      "audio_text": "usahakan",
+      "cn": "尽量；努力做到",
+      "en": "try to; make an effort to",
+      "root": "usaha",
+      "root_cn": "努力；事业",
+      "formation": "usaha + -kan，常用于要求自己或别人尽量把某事做到。",
+      "example": "Usahakan semua dokumen selesai sebelum siang.",
+      "example_cn": "尽量在中午前把所有文件处理完。",
+      "synonym_note": "usahakan 带“想办法做到”的意味；coba 更像“试试看”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "keahlian",
+      "display": "keahlian",
+      "audio_text": "keahlian",
+      "cn": "专业技能；专长",
+      "en": "skill; expertise",
+      "root": "ahli",
+      "root_cn": "专家；擅长",
+      "formation": "ke- + ahli + -an，表示一个人掌握的专业能力或专长。",
+      "example": "Keahlian komunikasi penting dalam pekerjaan saya.",
+      "example_cn": "沟通能力对我的工作很重要。",
+      "synonym_note": "keahlian 偏专业技能；kemampuan 是更广义的能力。",
+      "is_oral_new": false
+    },
+    {
+      "word": "lamaran",
+      "display": "lamaran",
+      "audio_text": "lamaran",
+      "cn": "申请；求婚",
+      "en": "application; proposal",
+      "root": "lamar",
+      "root_cn": "申请；求婚",
+      "formation": "lamar + -an；lamaran kerja 是求职申请，lamaran pernikahan 是求婚。",
+      "example": "Dia sudah mengirim lamaran kerja ke tiga perusahaan.",
+      "example_cn": "他已经向三家公司投了求职申请。",
+      "synonym_note": "lamaran kerja 是求职材料/申请；permohonan 是更正式、更广泛的申请。",
+      "is_oral_new": false
+    },
+    {
+      "word": "lowongan",
+      "display": "lowongan",
+      "audio_text": "lowongan",
+      "cn": "职位空缺；招聘信息",
+      "en": "vacancy; job opening",
+      "root": "lowong",
+      "root_cn": "空着；有空缺",
+      "formation": "lowong + -an；高频搭配 lowongan kerja、ada lowongan。",
+      "example": "Saya melihat lowongan itu di internet tadi pagi.",
+      "example_cn": "我今天早上在网上看到了那个招聘信息。",
+      "synonym_note": "lowongan 指空缺职位；pekerjaan 泛指工作。",
+      "is_oral_new": false
+    },
+    {
+      "word": "jabatan",
+      "display": "jabatan",
+      "audio_text": "jabatan",
+      "cn": "职位；职务",
+      "en": "position; office",
+      "root": "jabat",
+      "root_cn": "担任职务；握",
+      "formation": "jabat + -an，表示组织中的职位或职务层级。",
+      "example": "Jabatan barunya membuat tanggung jawabnya lebih besar.",
+      "example_cn": "他的新职位让他的责任更大了。",
+      "synonym_note": "jabatan 强调正式职务；posisi 既可指职位，也可指一般位置。",
+      "is_oral_new": false
+    },
+    {
+      "word": "omzet",
+      "display": "omzet",
+      "audio_text": "omzet",
+      "cn": "营业额",
+      "en": "turnover; revenue from sales",
+      "root": "omzet",
+      "root_cn": "营业额",
+      "formation": "商业高频词，常说 omzet naik、omzet turun、target omzet。",
+      "example": "Omzet toko meningkat setelah promosi baru dimulai.",
+      "example_cn": "新的促销开始后，店铺营业额提高了。",
+      "synonym_note": "omzet 是销售总额，不等于 laba（利润）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pendapatan",
+      "display": "pendapatan",
+      "audio_text": "pendapatan",
+      "cn": "收入",
+      "en": "income; revenue",
+      "root": "dapat",
+      "root_cn": "得到；获得",
+      "formation": "peN- + dapat + -an，表示获得的收入，可用于个人、公司或地区。",
+      "example": "Pendapatan perusahaan bulan ini cukup stabil.",
+      "example_cn": "公司这个月的收入比较稳定。",
+      "synonym_note": "pendapatan 是收入；omzet 更具体指销售营业额；laba 是扣除成本后的利润。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "mendukung",
+    "mengatasi",
+    "ngerepotin",
+    "ngurus",
+    "layak"
+  ],
+  "sentences": [
+    {
+      "text": "Atasan saya mendukung rencana ini karena manfaatnya cukup jelas.",
+      "cn": "我的上司支持这个计划，因为它的好处很明确。"
+    },
+    {
+      "text": "Kalau ada kendala, kami harus segera mengatasinya bersama.",
+      "cn": "如果遇到困难，我们必须马上一起解决。"
+    },
+    {
+      "text": "Usahakan jangan ngerepotin pelanggan dengan proses yang terlalu panjang.",
+      "cn": "尽量不要用太长的流程给客户添麻烦。"
+    },
+    {
+      "text": "Keahlian mengurus pelanggan sangat berguna untuk jabatan ini.",
+      "cn": "处理客户的能力对这个职位很有用。"
+    },
+    {
+      "text": "Lowongan itu layak dicoba karena pendapatan dan tanggung jawabnya cukup jelas.",
+      "cn": "那个职位值得尝试，因为收入和职责都比较明确。"
+    }
+  ],
+  "reading": {
+    "text": "Pagi ini saya berbicara dengan atasan tentang sebuah lowongan baru di perusahaan. Jabatan itu membutuhkan keahlian komunikasi dan kemampuan mengurus pelanggan. Ada beberapa kendala dalam proses kerja, tetapi tim kami selalu berusaha mengatasinya bersama. Atasan meminta saya mengusahakan pelayanan yang lebih sederhana agar tidak ngerepotin pelanggan. Ia juga menjelaskan target omzet dan pendapatan untuk beberapa bulan ke depan. Menurut saya, posisi itu layak dipertimbangkan. Kalau ada teman yang tertarik, saya akan menyarankan dia menyiapkan lamaran dengan baik dan menjelaskan keahlian yang paling relevan.",
+    "cn": "今天早上我和上司谈到了公司里的一个新职位。这个职位需要沟通技能以及处理客户的能力。工作流程中有一些困难，但我们团队总是努力一起解决。上司要求我尽量把服务流程做得更简单，不要给客户添麻烦。他还说明了未来几个月的营业额和收入目标。我觉得这个职位值得考虑。如果有朋友感兴趣，我会建议他认真准备求职申请，并说明自己最相关的专业技能。"
+  },
+  "quiz": [
+    {
+      "question": "哪一个词表示“营业额”，而不是扣除成本后的利润？",
+      "options": [
+        "omzet",
+        "jabatan",
+        "kendala",
+        "keahlian"
+      ],
+      "answer_index": 0,
+      "explain": "omzet 指销售营业额；利润通常说 laba。"
+    },
+    {
+      "question": "遇到工作中的“障碍、卡点”时，最适合用哪个词？",
+      "options": [
+        "lamaran",
+        "pendapatan",
+        "kendala",
+        "atasan"
+      ],
+      "answer_index": 2,
+      "explain": "kendala 强调阻碍事情推进的困难或限制。"
+    },
+    {
+      "question": "复习题：哪一个词最适合表达“这个机会值得考虑”？",
+      "options": [
+        "layak",
+        "ngurus",
+        "mendukung",
+        "ngerepotin"
+      ],
+      "answer_index": 0,
+      "explain": "layak 可以表示“值得、合适、够资格”。"
+    }
+  ],
+  "output": {
+    "task": "请用3—4句印尼语描述你看到一个工作机会后会考虑哪些因素。尽量使用 lowongan、jabatan、keahlian、pendapatan，并自然加入一个今天的复习词。",
+    "reference_answer": "Kalau melihat lowongan baru, saya biasanya memperhatikan jabatan dan tanggung jawabnya dulu. Saya juga melihat apakah keahlian saya sesuai dengan pekerjaan itu. Pendapatan penting, tetapi lingkungan kerja juga perlu dipertimbangkan. Kalau semuanya layak, saya akan mengirim lamaran.",
+    "reference_cn": "如果看到新的职位空缺，我通常会先看职位和职责。我也会看自己的专业技能是否适合这份工作。收入很重要，但工作环境也需要考虑。如果各方面都合适，我会投递申请。"
+  },
+  "review": [
+    "kendala 是推进事情时遇到的“障碍、卡点”，比一般的 masalah 更具体。",
+    "lamaran、lowongan、jabatan 分别是“申请、职位空缺、职务”，求职场景里很常一起出现。",
+    "omzet 是营业额，pendapatan 是收入，laba 才是利润，三者不要混用。"
+  ]
+}
