@@ -491,23 +491,25 @@ window.DAILY_VOCAB_DB = [
       "历史记录不完整",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-25 08:00",
-    "last_seen": "2026-09-23 18:00",
+    "last_seen": "2026-09-26 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-08-25",
-      "2026-09-23"
+      "2026-09-23",
+      "2026-09-26"
     ],
     "root_cn": "支持；支撑",
     "example": "Tim kami saling mendukung ketika pekerjaan sedang banyak.",
     "example_cn": "工作很多的时候，我们团队会互相支持。",
     "lesson_occurrences": [
       "2026-08-25 08:00",
-      "2026-09-23 18:00"
+      "2026-09-23 18:00",
+      "2026-09-26 08:00"
     ]
   },
   {
@@ -1223,9 +1225,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -1237,13 +1239,14 @@ window.DAILY_VOCAB_DB = [
       "2026-09-25"
     ],
     "root_cn": "烦；恼火",
-    "example": "Perubahan mendadak memang nyebelin, tapi tetap harus kita urus.",
-    "example_cn": "临时变化确实很烦，但我们还是得处理。",
+    "example": "Cara bicaranya kadang nyebelin, tapi saya tetap tenang.",
+    "example_cn": "他说话的方式有时很烦人，但我还是保持冷静。",
     "lesson_occurrences": [
       "2026-08-27 08:00",
       "2026-09-15 08:00",
       "2026-09-17 18:00",
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-09-25 18:00"
     ]
   },
   {
@@ -1538,9 +1541,9 @@ window.DAILY_VOCAB_DB = [
       "后续纠正版",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-28 08:00",
-    "last_seen": "2026-09-24 08:00",
+    "last_seen": "2026-09-26 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -1548,7 +1551,8 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-28",
       "2026-09-22",
-      "2026-09-24"
+      "2026-09-24",
+      "2026-09-26"
     ],
     "example": "Maaf kalau aku bolak-balik nanya dan ngerepotin kamu.",
     "example_cn": "如果我反复问、给你添麻烦了，抱歉。",
@@ -1556,7 +1560,8 @@ window.DAILY_VOCAB_DB = [
     "lesson_occurrences": [
       "2026-08-28 08:00",
       "2026-09-22 18:00",
-      "2026-09-24 08:00"
+      "2026-09-24 08:00",
+      "2026-09-26 08:00"
     ]
   },
   {
@@ -2596,20 +2601,23 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00",
       "原始课程",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-09-24 18:00",
+    "last_seen": "2026-09-26 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-24",
       "2026-08-29",
       "2026-09-23",
-      "2026-09-24"
+      "2026-09-24",
+      "2026-09-26"
     ],
     "root_cn": "上；上方",
     "example": "Tarik napas sebentar untuk mengatasi rasa gugup sebelum masuk.",
@@ -2618,7 +2626,8 @@ window.DAILY_VOCAB_DB = [
       "2026-08-24 19:00",
       "2026-08-29 19:00",
       "2026-09-23 18:00",
-      "2026-09-24 18:00"
+      "2026-09-24 18:00",
+      "2026-09-26 08:00"
     ]
   },
   {
@@ -5234,9 +5243,9 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02",
       "18:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-02 08:00",
-    "last_seen": "2026-09-24 18:00",
+    "last_seen": "2026-09-26 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -5246,7 +5255,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-17",
       "2026-09-18",
       "2026-09-23",
-      "2026-09-24"
+      "2026-09-24",
+      "2026-09-26"
     ],
     "root_cn": "处理；照管",
     "example": "Aku lagi ngurus dokumen yang perlu dibawa untuk wawancara.",
@@ -5258,7 +5268,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-23 08:00",
       "2026-09-23 18:00",
       "2026-09-24 08:00",
-      "2026-09-24 18:00"
+      "2026-09-24 18:00",
+      "2026-09-26 08:00"
     ]
   },
   {
@@ -9160,17 +9171,17 @@ window.DAILY_VOCAB_DB = [
     "en": "worthy; suitable; eligible",
     "root": "layak",
     "root_cn": "值得；合适",
-    "example": "Solusi ini layak dicoba karena lebih sederhana.",
-    "example_cn": "这个方案值得尝试，因为更简单。",
+    "example": "Usulan ini layak dipertimbangkan dalam rapat besok.",
+    "example_cn": "这个提议值得在明天的会议上考虑。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 5,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-17 18:00",
+    "last_seen": "2026-09-26 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -9178,12 +9189,16 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-13",
-      "2026-09-17"
+      "2026-09-17",
+      "2026-09-25",
+      "2026-09-26"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
       "2026-09-13 19:00",
-      "2026-09-17 18:00"
+      "2026-09-17 18:00",
+      "2026-09-25 18:00",
+      "2026-09-26 08:00"
     ]
   },
   {
@@ -9192,17 +9207,19 @@ window.DAILY_VOCAB_DB = [
     "en": "intention; intent",
     "root": "niat",
     "root_cn": "打算；意图",
-    "example": "Aku sebenarnya niat beresin ini pagi-pagi, tapi tadi ada urusan lain.",
-    "example_cn": "我本来打算一早把这个处理完，但刚才有别的事。",
+    "example": "Saya punya niat baik untuk menyelesaikan masalah ini.",
+    "example_cn": "我是真心想把这个问题解决好。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-13",
@@ -9210,7 +9227,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-09-25 18:00"
     ]
   },
   {
@@ -11721,16 +11739,16 @@ window.DAILY_VOCAB_DB = [
     "en": "allow / permit",
     "root": "izin",
     "root_cn": "许可；允许",
-    "example": "Atasan mengizinkan kami balik lebih awal setelah pekerjaan selesai.",
-    "example_cn": "工作完成后，上司允许我们早点回去。",
+    "example": "Atasan mengizinkan kami mengubah jadwal rapat.",
+    "example_cn": "上司允许我们更改会议时间。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -11745,7 +11763,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-20 08:00",
       "2026-09-22 18:00",
       "2026-09-24 08:00",
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-09-25 18:00"
     ]
   },
   {
@@ -13223,24 +13242,27 @@ window.DAILY_VOCAB_DB = [
     "en": "fight; argue",
     "root": "antem",
     "root_cn": "打；争吵",
-    "example": "Jangan berantem cuma karena masalah kecil.",
-    "example_cn": "别因为一点小事就吵架。",
+    "example": "Kalau ada masalah, kita bicara saja, jangan berantem.",
+    "example_cn": "有问题就好好说，别吵架。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-25"
     ],
     "lesson_occurrences": [
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-09-25 18:00"
     ]
   },
   {
@@ -13275,23 +13297,26 @@ window.DAILY_VOCAB_DB = [
     "en": "appropriate; no wonder; deserve",
     "root": "pantas",
     "root_cn": "合适；应当",
-    "example": "Pantas saja dia kecewa, ternyata pesanannya belum dikirim.",
-    "example_cn": "难怪他失望，原来他的订单还没发出。",
+    "example": "Pantas saja pelanggan mengeluh, barangnya datang terlambat.",
+    "example_cn": "难怪客户抱怨，货来晚了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-25"
     ],
     "lesson_occurrences": [
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-09-25 18:00"
     ]
   },
   {
@@ -13350,23 +13375,26 @@ window.DAILY_VOCAB_DB = [
     "en": "benefit; usefulness",
     "root": "manfaat",
     "root_cn": "益处；用途",
-    "example": "Pelatihan ini memberi banyak manfaat bagi pegawai baru.",
-    "example_cn": "这次培训给新员工带来了很多好处。",
+    "example": "Metode baru ini memberi manfaat bagi tim dan pelanggan.",
+    "example_cn": "这个新方法对团队和客户都有好处。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-25 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-25"
     ],
     "lesson_occurrences": [
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-09-25 18:00"
     ]
   },
   {
@@ -13467,6 +13495,362 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00"
+    ]
+  },
+  {
+    "word": "ketika",
+    "cn": "当……时候",
+    "en": "when; while",
+    "root": "ketika",
+    "root_cn": "当……时候",
+    "example": "Ketika rapat dimulai, saya langsung mencatat masalah utama.",
+    "example_cn": "会议开始时，我马上记下了主要问题。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 18:00",
+    "last_seen": "2026-09-25 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 18:00"
+    ]
+  },
+  {
+    "word": "rapat",
+    "cn": "会议；紧密",
+    "en": "meeting; tight/close",
+    "root": "rapat",
+    "root_cn": "会议；紧密",
+    "example": "Besok pagi kami ada rapat dengan tim penjualan.",
+    "example_cn": "明早我们和销售团队有会议。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 18:00",
+    "last_seen": "2026-09-25 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 18:00"
+    ]
+  },
+  {
+    "word": "keluhan",
+    "cn": "投诉；抱怨",
+    "en": "complaint; grievance",
+    "root": "keluh",
+    "root_cn": "抱怨；叹息",
+    "example": "Kami menerima keluhan pelanggan tentang pesanan yang terlambat.",
+    "example_cn": "我们收到客户关于订单延迟的投诉。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 18:00",
+    "last_seen": "2026-09-25 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 18:00"
+    ]
+  },
+  {
+    "word": "pemasok",
+    "cn": "供应商",
+    "en": "supplier",
+    "root": "pasok",
+    "root_cn": "供应；供给",
+    "example": "Saya akan menghubungi pemasok untuk memastikan jadwal pengiriman.",
+    "example_cn": "我会联系供应商确认发货时间。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-25 18:00",
+    "last_seen": "2026-09-25 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-25"
+    ],
+    "lesson_occurrences": [
+      "2026-09-25 18:00"
+    ]
+  },
+  {
+    "word": "atasan",
+    "cn": "上司；领导",
+    "en": "supervisor; boss",
+    "root": "atas",
+    "root_cn": "上；上方",
+    "example": "Saya perlu melaporkan masalah ini kepada atasan dulu.",
+    "example_cn": "我需要先把这个问题汇报给上司。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-26"
+    ],
+    "lesson_occurrences": [
+      "2026-09-26 08:00"
+    ]
+  },
+  {
+    "word": "pelanggan",
+    "cn": "顾客；客户",
+    "en": "customer; client",
+    "root": "langgan",
+    "root_cn": "经常购买；订购",
+    "example": "Pelanggan itu meminta penjelasan yang lebih jelas.",
+    "example_cn": "那位客户要求更清楚的说明。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-26"
+    ],
+    "lesson_occurrences": [
+      "2026-09-26 08:00"
+    ]
+  },
+  {
+    "word": "kendala",
+    "cn": "障碍；困难；卡点",
+    "en": "obstacle; constraint",
+    "root": "kendala",
+    "root_cn": "障碍；限制",
+    "example": "Kami mengalami sedikit kendala saat mengirim barang.",
+    "example_cn": "我们发货时遇到了一点问题。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-26"
+    ],
+    "lesson_occurrences": [
+      "2026-09-26 08:00"
+    ]
+  },
+  {
+    "word": "usahakan",
+    "cn": "尽量；努力做到",
+    "en": "try to; make an effort to",
+    "root": "usaha",
+    "root_cn": "努力；事业",
+    "example": "Usahakan semua dokumen selesai sebelum siang.",
+    "example_cn": "尽量在中午前把所有文件处理完。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-26"
+    ],
+    "lesson_occurrences": [
+      "2026-09-26 08:00"
+    ]
+  },
+  {
+    "word": "keahlian",
+    "cn": "专业技能；专长",
+    "en": "skill; expertise",
+    "root": "ahli",
+    "root_cn": "专家；擅长",
+    "example": "Keahlian komunikasi penting dalam pekerjaan saya.",
+    "example_cn": "沟通能力对我的工作很重要。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-26"
+    ],
+    "lesson_occurrences": [
+      "2026-09-26 08:00"
+    ]
+  },
+  {
+    "word": "lamaran",
+    "cn": "申请；求婚",
+    "en": "application; proposal",
+    "root": "lamar",
+    "root_cn": "申请；求婚",
+    "example": "Dia sudah mengirim lamaran kerja ke tiga perusahaan.",
+    "example_cn": "他已经向三家公司投了求职申请。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-26"
+    ],
+    "lesson_occurrences": [
+      "2026-09-26 08:00"
+    ]
+  },
+  {
+    "word": "lowongan",
+    "cn": "职位空缺；招聘信息",
+    "en": "vacancy; job opening",
+    "root": "lowong",
+    "root_cn": "空着；有空缺",
+    "example": "Saya melihat lowongan itu di internet tadi pagi.",
+    "example_cn": "我今天早上在网上看到了那个招聘信息。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-26"
+    ],
+    "lesson_occurrences": [
+      "2026-09-26 08:00"
+    ]
+  },
+  {
+    "word": "jabatan",
+    "cn": "职位；职务",
+    "en": "position; office",
+    "root": "jabat",
+    "root_cn": "担任职务；握",
+    "example": "Jabatan barunya membuat tanggung jawabnya lebih besar.",
+    "example_cn": "他的新职位让他的责任更大了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-26"
+    ],
+    "lesson_occurrences": [
+      "2026-09-26 08:00"
+    ]
+  },
+  {
+    "word": "omzet",
+    "cn": "营业额",
+    "en": "turnover; revenue from sales",
+    "root": "omzet",
+    "root_cn": "营业额",
+    "example": "Omzet toko meningkat setelah promosi baru dimulai.",
+    "example_cn": "新的促销开始后，店铺营业额提高了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-26"
+    ],
+    "lesson_occurrences": [
+      "2026-09-26 08:00"
+    ]
+  },
+  {
+    "word": "pendapatan",
+    "cn": "收入",
+    "en": "income; revenue",
+    "root": "dapat",
+    "root_cn": "得到；获得",
+    "example": "Pendapatan perusahaan bulan ini cukup stabil.",
+    "example_cn": "公司这个月的收入比较稳定。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-26"
+    ],
+    "lesson_occurrences": [
+      "2026-09-26 08:00"
     ]
   }
 ];
