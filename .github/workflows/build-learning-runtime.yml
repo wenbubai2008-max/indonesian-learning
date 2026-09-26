@@ -54,25 +54,32 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: '24'
       - name: Build runtime data and run regression guards
         shell: bash
         run: |
           set -e
           git fetch origin main
           git reset --hard origin/main
-          VHASH=$(sha256sum data/vocab-memory-feedback.js | cut -c1-12)
-          python - "$VHASH" <<'PY'
-          import pathlib,re,sys
+          python - <<'PY'
+          import hashlib,pathlib,re
           p=pathlib.Path('index.html')
           s=p.read_text(encoding='utf-8')
-          s2=re.sub(r'data/vocab-memory-feedback\.js\?v=[^"\']+',f'data/vocab-memory-feedback.js?v={sys.argv[1]}',s)
-          if s2!=s:p.write_text(s2,encoding='utf-8')
+          scripts=[
+              'data/history-v2.js',
+              'data/daily-light-test.js',
+              'data/daily-ui-polish.js',
+              'data/vocab-memory-feedback.js',
+          ]
+          for script in scripts:
+              h=hashlib.sha256(pathlib.Path(script).read_bytes()).hexdigest()[:12]
+              s=re.sub(re.escape(script)+r'\?v=[^"\']+',script+'?v='+h,s)
+          p.write_text(s,encoding='utf-8')
           PY
           node .github/scripts/inject-vocab-profile.js
           node .github/scripts/build-bipa-level-chunks.js

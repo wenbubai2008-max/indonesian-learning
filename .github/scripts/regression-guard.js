@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 const ROOT = path.resolve(__dirname, '../..');
 const failures = [];
@@ -18,6 +19,86 @@ function norm(s){ return String(s == null ? '' : s).trim().toLowerCase().replace
 function wordCount(s){ return String(s || '').trim().split(/\s+/).filter(Boolean).length; }
 function inRange(n,a,b){ return Number.isInteger(n) && n >= a && n <= b; }
 function unique(arr){ return new Set(arr).size === arr.length; }
+function fileHash12(p){ return crypto.createHash('sha256').update(read(p)).digest('hex').slice(0,12); }
+function completedStamp(row,session){
+  const d=String(row&&row.date||'');
+  if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(d))return '';
+  if(session==='am'&&row.am===true)return d+' 08:00';
+  if(session==='pm'&&row.pm===true)return d+' '+(d>='2026-09-16'?'18:00':'19:00');
+  return '';
+}
+function latestCompletedStamp(index){
+  const stamps=[];
+  for(const row of (Array.isArray(index&&index.dates)?index.dates:[])){
+    const a=completedStamp(row,'am'),p=completedStamp(row,'pm');
+    if(a)stamps.push(a);if(p)stamps.push(p);
+  }
+  return stamps.sort().pop()||'';
+}
+function validateRecentDailyWindow(){
+  const index=readJSON('data/daily/index.json');
+  const rows=Array.isArray(index.dates)?index.dates:[];
+  const counts=new Map();
+  for(const row of rows){const d=String(row&&row.date||'');counts.set(d,(counts.get(d)||0)+1)}
+  const dups=[...counts.entries()].filter(([d,n])=>d&&n>1).map(([d])=>d);
+  ok(dups.length===0,'daily index has no duplicate dates'+(dups.length?': '+dups.join(', '):''));
+  const dated=rows.filter(r=>r&&/^\\d{4}-\\d{2}-\\d{2}$/.test(String(r.date||''))).sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+  const recent=dated.slice(-7);
+  const latestDate=dated.length?String(dated[dated.length-1].date):'';
+  ok(!latestDate||String(index.updated||'')===latestDate,'daily index.updated matches latest date');
+  for(const row of recent){
+    const d=String(row.date);
+    if(row.am===true){
+      const p='data/daily/'+d+'-am.json';
+      ok(fs.existsSync(rel(p)),`recent AM ${d}: file exists`);
+      if(fs.existsSync(rel(p))){
+        const x=readJSON(p),v=Array.isArray(x.vocab)?x.vocab:[],rv=Array.isArray(x.review_vocab)?x.review_vocab:[];
+        ok(x.session==='am'&&x.time==='08:00',`recent AM ${d}: session/time canonical`);
+        ok(/^08:00/.test(String(x.title||'')),`recent AM ${d}: title canonical`);
+        ok(v.length===10&&unique(v.map(y=>norm(y&&y.word)).filter(Boolean)),`recent AM ${d}: 10 unique vocab`);
+        ok(inRange(rv.length,4,6)&&rv.every(y=>typeof y==='string'&&y.trim()),`recent AM ${d}: review_vocab canonical`);
+        ok(Array.isArray(x.sentences)&&x.sentences.length===5,`recent AM ${d}: 5 sentences`);
+        ok(Array.isArray(x.quiz)&&x.quiz.length===3,`recent AM ${d}: 3 quiz questions`);
+        ok(Array.isArray(x.review)&&x.review.length===3,`recent AM ${d}: final review canonical`);
+        ok(Boolean(x.output&&x.output.task&&x.output.reference_answer&&x.output.reference_cn),`recent AM ${d}: output canonical`);
+        if(d>='2026-09-26'){
+          const prev=new Date(d+'T00:00:00Z');prev.setUTCDate(prev.getUTCDate()-1);const pd=prev.toISOString().slice(0,10);
+          const pp='data/daily/'+pd+'-pm.json';
+          if(fs.existsSync(rel(pp))){
+            const pm=readJSON(pp);
+            if(pm.write_status==='lesson_complete'){
+              const prevNew=new Set((Array.isArray(pm.new_words)?pm.new_words:[]).map(norm));
+              const repeated=v.map(y=>norm(y&&y.word)).filter(w=>prevNew.has(w));
+              ok(repeated.length===0,`recent AM ${d}: no previous-PM new-word repeat${repeated.length?': '+repeated.join(', '):''}`);
+            }
+          }
+        }
+      }
+    }
+    if(row.pm===true){
+      const p='data/daily/'+d+'-pm.json';
+      ok(fs.existsSync(rel(p)),`recent PM ${d}: file exists`);
+      if(fs.existsSync(rel(p))){
+        const x=readJSON(p),v=Array.isArray(x.vocab)?x.vocab:[],test=x.daily_test||{};
+        ok(x.session==='pm'&&x.time===(d>='2026-09-16'?'18:00':'19:00'),`recent PM ${d}: session/time canonical`);
+        ok(x.write_status==='lesson_complete',`recent PM ${d}: lesson_complete`);
+        ok(inRange(v.length,10,12)&&unique(v.map(y=>norm(y&&y.word)).filter(Boolean)),`recent PM ${d}: 10-12 unique vocab`);
+        ok(x.dialogue&&Array.isArray(x.dialogue.lines)&&x.dialogue.lines.length>=4,`recent PM ${d}: dialogue canonical`);
+        ok(Array.isArray(x.rewrite)&&inRange(x.rewrite.length,3,4),`recent PM ${d}: rewrite canonical`);
+        ok(Array.isArray(test.questions)&&test.questions.length===6,`recent PM ${d}: daily_test.questions canonical`);
+        ok(x.review&&!Array.isArray(x.review)&&Array.isArray(x.review.steps)&&x.review.steps.length>0,`recent PM ${d}: final review canonical`);
+        if(d>='2026-09-26'){
+          const ap='data/daily/'+d+'-am.json';
+          if(fs.existsSync(rel(ap))){
+            const am=readJSON(ap),amNew=new Set((Array.isArray(am.vocab)?am.vocab:[]).map(y=>norm(y&&y.word)));
+            const pmNew=(Array.isArray(x.new_words)?x.new_words:[]).map(norm).filter(w=>amNew.has(w));
+            ok(pmNew.length===0,`recent PM ${d}: no same-day AM new-word repeat${pmNew.length?': '+pmNew.join(', '):''}`);
+          }
+        }
+      }
+    }
+  }
+}
 
 function validateLatestAm(){
   const index = readJSON('data/daily/index.json');
@@ -79,7 +160,7 @@ function validateLatestAm(){
     ok(valid, `latest AM ${date}: quiz ${i+1} canonical schema valid`);
     if(valid){
       const answer = String(options[ai] || '').trim();
-      if(reviewSet.has(norm(answer)) || /复习/.test(question)) reviewQuizCount++;
+      if(reviewSet.has(norm(answer))) reviewQuizCount++;
       const recognition = /词义|意思|含义|形式|哪一个词|哪个词|哪种形式|正确形式|识别/.test(question);
       const leaked = Boolean(answer && question.toLowerCase().includes(answer.toLowerCase()));
       ok(!leaked || recognition, `latest AM ${date}: quiz ${i+1} does not leak the answer`);
@@ -284,6 +365,10 @@ try {
   ok(runtime.version === 4, 'runtime.version = 4');
   ok(runtime.rules_version === 4, 'runtime.rules_version = 4');
   ok(runtime.stats && runtime.stats.master_unique === 977, 'runtime master_unique = 977');
+  const dailyIndexForWatermark=readJSON('data/daily/index.json');
+  const expectedWatermark=latestCompletedStamp(dailyIndexForWatermark);
+  ok(Boolean(runtime.lesson_watermark), 'runtime lesson_watermark exists');
+  ok(runtime.lesson_watermark===expectedWatermark, 'runtime lesson_watermark matches latest completed lesson ('+expectedWatermark+')');
   ok(Array.isArray(runtime.new_pool), 'runtime.new_pool exists');
   ok(Array.isArray(runtime.review_pool), 'runtime.review_pool exists');
   ok(Array.isArray(runtime.focus_pool), 'runtime.focus_pool exists');
@@ -308,7 +393,9 @@ try {
   ok(/fs\.writeFileSync\(dbPath/.test(sync), 'sync-daily-vocab is the daily-vocab writer');
   ok(/git add data\/daily-vocab-data\.js data\/learning-runtime\.json/.test(sync), 'daily-vocab and runtime are committed together');
   ok(/build-learning-runtime\.js/.test(sync), 'sync workflow rebuilds runtime in the same chain');
-  ok(!/fs\.writeFileSync\([^\n]*daily-vocab-data\.js/.test(build), 'build-learning-runtime workflow does not directly write daily-vocab');
+  ok(!/fs\\.writeFileSync\\([^\\n]*daily-vocab-data\\.js/.test(build), 'build-learning-runtime workflow does not directly write daily-vocab');
+  ok(/actions\\/checkout@v7/.test(sync)&&/actions\\/setup-node@v7/.test(sync)&&/node-version:\\s*['\"]24['\"]/.test(sync), 'sync workflow uses Node 24 actions/runtime');
+  ok(/actions\\/checkout@v7/.test(build)&&/actions\\/setup-node@v7/.test(build)&&/node-version:\\s*['\"]24['\"]/.test(build), 'build workflow uses Node 24 actions/runtime');
 
   const css = read('data/daily-width-fix.css');
   ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))'), 'first-paint desktop homepage layout is 3 compact columns');
@@ -333,6 +420,11 @@ try {
   ok(!/characterData\s*:\s*true/.test(compat), 'compat layer does not observe all character-data changes');
   ok(!/new MutationObserver/.test(compat), 'compat layer has no whole-page MutationObserver');
   ok(!/patchHomeTime|wrapLoadReading|__pm18Compat|PM_SWITCH_DATE/.test(compat), 'compat layer no longer patches PM time after render');
+
+  for(const scriptPath of ['data/history-v2.js','data/daily-light-test.js','data/daily-ui-polish.js','data/vocab-memory-feedback.js']){
+    const h=fileHash12(scriptPath);
+    ok(indexHtml.includes(scriptPath+'?v='+h), 'index cache-bust hash matches '+scriptPath);
+  }
 
   const historyV2 = read('data/history-v2.js');
   ok(historyV2.includes("const PM_SWITCH_DATE='2026-09-16'") && /pmTimeForDate\(d\)/.test(historyV2), 'loaded lesson renderer handles 18:00/19:00 by lesson date');
@@ -363,6 +455,7 @@ try {
   ok(/x\.review\.steps/.test(light) && /x\.review\.items/.test(light), 'PM final review renders steps and legacy items');
   ok(/am\.review_vocab/.test(light), 'same-day AM review_vocab is recognized for application marker');
 
+  validateRecentDailyWindow();
   validateLatestAm();
   validateLatestPm();
 

@@ -12,6 +12,19 @@ for(const p of ['data/master-vocab-data.js','data/master-vocab-data-2.js','data/
 const key=s=>String(s||'').trim().toLowerCase();
 const masterRaw=Array.isArray(ctx.window.MASTER_VOCAB_DB)?ctx.window.MASTER_VOCAB_DB:[];
 const dailyRaw=Array.isArray(ctx.window.DAILY_VOCAB_DB)?ctx.window.DAILY_VOCAB_DB:[];
+const lessonStamps=[];
+for(const item of dailyRaw){
+  if(Array.isArray(item&&item.lesson_occurrences)){
+    for(const stamp of item.lesson_occurrences){
+      const s=String(stamp||'').trim();
+      if(/^\\d{4}-\\d{2}-\\d{2} (?:08:00|18:00|19:00)$/.test(s))lessonStamps.push(s);
+    }
+  }else{
+    const s=String(item&&item.last_seen||'').trim();
+    if(/^\\d{4}-\\d{2}-\\d{2} (?:08:00|18:00|19:00)$/.test(s))lessonStamps.push(s);
+  }
+}
+const lessonWatermark=lessonStamps.sort().pop()||'';
 const oralRaw=Array.isArray(ctx.window.ORAL_VOCAB_CANDIDATES)?ctx.window.ORAL_VOCAB_CANDIDATES:[];
 const weakDoc=JSON.parse(fs.readFileSync('data/weakness-sync.json','utf8'));
 const weakWords=weakDoc&&weakDoc.words&&typeof weakDoc.words==='object'
@@ -261,6 +274,7 @@ const runtime={
   version:4,
   rules_version:Number(rules.version||0),
   generated_at:new Date().toISOString(),
+  lesson_watermark:lessonWatermark,
   weakness_updated_at:weakDoc&&weakDoc.updated_at?weakDoc.updated_at:'',
   active_master_pool:activeMasterPool,
   secondary_master_file:'data/master-vocab-secondary.js',
@@ -328,6 +342,7 @@ const runtime={
 fs.writeFileSync('data/learning-runtime.json',JSON.stringify(runtime)+'\n');
 const audit={
   generated_at:runtime.generated_at,
+  lesson_watermark:runtime.lesson_watermark,
   master_unique:master.length,
   primary_new_pool_total:primaryNewFull.length,
   secondary_master_unique:secondaryMaster.length,

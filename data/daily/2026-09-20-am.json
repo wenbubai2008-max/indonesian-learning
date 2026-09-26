@@ -1,31 +1,228 @@
 {
-  "date":"2026-09-20","session":"am","day":30,"level":"A2+→B1",
-  "vocab":[
-    {"word":"kereta","display":"kereta","audio_text":"kereta","cn":"火车","en":"train","root":"kereta","root_cn":"火车；车辆","formation":"常见搭配：naik kereta（坐火车）、stasiun kereta（火车站）、tiket kereta（火车票）。","example":"Kami naik kereta pagi agar tiba sebelum siang.","example_cn":"我们坐早班火车，以便中午前到达。","synonym_note":"kereta 在印尼通常指火车；kereta api 是更完整的说法。","is_oral_new":false},
-    {"word":"melawan","display":"melawan","audio_text":"melawan","cn":"反对、对抗","en":"oppose / fight against","root":"lawan","root_cn":"对手；反对","formation":"me- + lawan → melawan；常见 melawan aturan（违抗规则）、melawan rasa takut（对抗恐惧）。","example":"Kita tidak perlu melawan setiap pendapat yang berbeda.","example_cn":"我们没必要反对每一个不同的观点。","synonym_note":"menentang 更偏正式的‘反对’；melawan 也可表示实际对抗。","is_oral_new":false},
-    {"word":"tumbuh","display":"tumbuh","audio_text":"tumbuh","cn":"生长","en":"grow","root":"tumbuh","root_cn":"生长；成长","formation":"常见 tumbuh cepat（快速成长）、tumbuh menjadi（成长为）、pertumbuhan（增长；成长）。","example":"Kepercayaan biasanya tumbuh sedikit demi sedikit.","example_cn":"信任通常是一点一点建立起来的。","synonym_note":"berkembang 强调发展、扩展；tumbuh 更强调从小到大的成长。","is_oral_new":false},
-    {"word":"berbahaya","display":"berbahaya","audio_text":"berbahaya","cn":"危险的","en":"dangerous","root":"bahaya","root_cn":"危险","formation":"ber- + bahaya → berbahaya；常见 sangat berbahaya（非常危险）、berbahaya bagi（对……有危险）。","example":"Mengemudi saat sangat mengantuk bisa berbahaya.","example_cn":"非常困的时候开车可能很危险。","synonym_note":"bahaya 是名词‘危险’；berbahaya 是形容性质的‘危险的’。","is_oral_new":false},
-    {"word":"berkat","display":"berkat","audio_text":"berkat","cn":"多亏了","en":"thanks to / blessing","root":"berkat","root_cn":"福气；恩惠","formation":"常见 berkat bantuan（多亏帮助）、berkat kerja keras（多亏努力）；后面通常接带来积极结果的原因。","example":"Berkat bantuan tim, pekerjaan selesai tepat waktu.","example_cn":"多亏团队的帮助，工作按时完成了。","synonym_note":"karena 中性表示‘因为’；berkat 通常强调积极原因和好结果。","is_oral_new":false},
-    {"word":"kenyang","display":"kenyang","audio_text":"kenyang","cn":"饱的","en":"full / satiated","root":"kenyang","root_cn":"饱","formation":"常见 sudah kenyang（已经吃饱）、belum kenyang（还没饱）、bikin kenyang（让人吃饱）。","example":"Aku sudah kenyang, jadi tidak mau pesan makanan lagi.","example_cn":"我已经吃饱了，所以不想再点东西。","synonym_note":"kenyang 是吃饱；puas 是满意、满足，范围更广。","is_oral_new":false},
-    {"word":"memanggil","display":"memanggil","audio_text":"memanggil","cn":"呼唤 / 叫","en":"call / summon","root":"panggil","root_cn":"叫；呼唤","formation":"meN- + panggil → memanggil；常见 memanggil nama（叫名字）、memanggil dokter（叫医生）。","example":"Tolong panggil saya kalau pelanggan itu datang.","example_cn":"那位顾客来了请叫我。","synonym_note":"menelepon 专指打电话；memanggil 更广，可指叫人过来或称呼。","is_oral_new":false},
-    {"word":"mengizinkan","display":"mengizinkan","audio_text":"mengizinkan","cn":"允许","en":"allow / permit","root":"izin","root_cn":"许可；允许","formation":"meng- + izin + -kan → mengizinkan；常见 mengizinkan seseorang untuk...（允许某人……）。","example":"Atasan mengizinkan saya pulang lebih awal hari ini.","example_cn":"上司允许我今天早点回家。","synonym_note":"boleh 常用于口语表达‘可以’；mengizinkan 强调某人给予许可。","is_oral_new":false},
-    {"word":"resign","display":"resign","audio_text":"resign","cn":"辞职","en":"resign","root":"resign","root_cn":"辞职","formation":"印尼职场口语常直接说 resign：mau resign（想辞职）、sudah resign（已经辞职）。","example":"Dia mau resign karena mendapat pekerjaan yang lebih cocok.","example_cn":"他想辞职，因为找到了更合适的工作。","synonym_note":"resign 是高频口语；较正式可说 mengundurkan diri。","is_oral_new":true},
-    {"word":"gampang","display":"gampang","audio_text":"gampang","cn":"容易","en":"easy","root":"gampang","root_cn":"容易","formation":"口语高频：gampang banget（非常容易）、nggak gampang（不容易）、lebih gampang（更容易）。","example":"Kelihatannya gampang, tapi praktiknya butuh waktu.","example_cn":"看起来容易，但实际做起来需要时间。","synonym_note":"gampang 偏口语；mudah 是更通用、较标准的对应形式。","is_oral_new":true}
+  "date": "2026-09-20",
+  "session": "am",
+  "day": 30,
+  "level": "A2+→B1",
+  "vocab": [
+    {
+      "word": "kereta",
+      "display": "kereta",
+      "audio_text": "kereta",
+      "cn": "火车",
+      "en": "train",
+      "root": "kereta",
+      "root_cn": "火车；车辆",
+      "formation": "常见搭配：naik kereta（坐火车）、stasiun kereta（火车站）、tiket kereta（火车票）。",
+      "example": "Kami naik kereta pagi agar tiba sebelum siang.",
+      "example_cn": "我们坐早班火车，以便中午前到达。",
+      "synonym_note": "kereta 在印尼通常指火车；kereta api 是更完整的说法。",
+      "is_oral_new": false
+    },
+    {
+      "word": "melawan",
+      "display": "melawan",
+      "audio_text": "melawan",
+      "cn": "反对、对抗",
+      "en": "oppose / fight against",
+      "root": "lawan",
+      "root_cn": "对手；反对",
+      "formation": "me- + lawan → melawan；常见 melawan aturan（违抗规则）、melawan rasa takut（对抗恐惧）。",
+      "example": "Kita tidak perlu melawan setiap pendapat yang berbeda.",
+      "example_cn": "我们没必要反对每一个不同的观点。",
+      "synonym_note": "menentang 更偏正式的‘反对’；melawan 也可表示实际对抗。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tumbuh",
+      "display": "tumbuh",
+      "audio_text": "tumbuh",
+      "cn": "生长",
+      "en": "grow",
+      "root": "tumbuh",
+      "root_cn": "生长；成长",
+      "formation": "常见 tumbuh cepat（快速成长）、tumbuh menjadi（成长为）、pertumbuhan（增长；成长）。",
+      "example": "Kepercayaan biasanya tumbuh sedikit demi sedikit.",
+      "example_cn": "信任通常是一点一点建立起来的。",
+      "synonym_note": "berkembang 强调发展、扩展；tumbuh 更强调从小到大的成长。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berbahaya",
+      "display": "berbahaya",
+      "audio_text": "berbahaya",
+      "cn": "危险的",
+      "en": "dangerous",
+      "root": "bahaya",
+      "root_cn": "危险",
+      "formation": "ber- + bahaya → berbahaya；常见 sangat berbahaya（非常危险）、berbahaya bagi（对……有危险）。",
+      "example": "Mengemudi saat sangat mengantuk bisa berbahaya.",
+      "example_cn": "非常困的时候开车可能很危险。",
+      "synonym_note": "bahaya 是名词‘危险’；berbahaya 是形容性质的‘危险的’。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berkat",
+      "display": "berkat",
+      "audio_text": "berkat",
+      "cn": "多亏了",
+      "en": "thanks to / blessing",
+      "root": "berkat",
+      "root_cn": "福气；恩惠",
+      "formation": "常见 berkat bantuan（多亏帮助）、berkat kerja keras（多亏努力）；后面通常接带来积极结果的原因。",
+      "example": "Berkat bantuan tim, pekerjaan selesai tepat waktu.",
+      "example_cn": "多亏团队的帮助，工作按时完成了。",
+      "synonym_note": "karena 中性表示‘因为’；berkat 通常强调积极原因和好结果。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kenyang",
+      "display": "kenyang",
+      "audio_text": "kenyang",
+      "cn": "饱的",
+      "en": "full / satiated",
+      "root": "kenyang",
+      "root_cn": "饱",
+      "formation": "常见 sudah kenyang（已经吃饱）、belum kenyang（还没饱）、bikin kenyang（让人吃饱）。",
+      "example": "Aku sudah kenyang, jadi tidak mau pesan makanan lagi.",
+      "example_cn": "我已经吃饱了，所以不想再点东西。",
+      "synonym_note": "kenyang 是吃饱；puas 是满意、满足，范围更广。",
+      "is_oral_new": false
+    },
+    {
+      "word": "memanggil",
+      "display": "memanggil",
+      "audio_text": "memanggil",
+      "cn": "呼唤 / 叫",
+      "en": "call / summon",
+      "root": "panggil",
+      "root_cn": "叫；呼唤",
+      "formation": "meN- + panggil → memanggil；常见 memanggil nama（叫名字）、memanggil dokter（叫医生）。",
+      "example": "Tolong panggil saya kalau pelanggan itu datang.",
+      "example_cn": "那位顾客来了请叫我。",
+      "synonym_note": "menelepon 专指打电话；memanggil 更广，可指叫人过来或称呼。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengizinkan",
+      "display": "mengizinkan",
+      "audio_text": "mengizinkan",
+      "cn": "允许",
+      "en": "allow / permit",
+      "root": "izin",
+      "root_cn": "许可；允许",
+      "formation": "meng- + izin + -kan → mengizinkan；常见 mengizinkan seseorang untuk...（允许某人……）。",
+      "example": "Atasan mengizinkan saya pulang lebih awal hari ini.",
+      "example_cn": "上司允许我今天早点回家。",
+      "synonym_note": "boleh 常用于口语表达‘可以’；mengizinkan 强调某人给予许可。",
+      "is_oral_new": false
+    },
+    {
+      "word": "resign",
+      "display": "resign",
+      "audio_text": "resign",
+      "cn": "辞职",
+      "en": "resign",
+      "root": "resign",
+      "root_cn": "辞职",
+      "formation": "印尼职场口语常直接说 resign：mau resign（想辞职）、sudah resign（已经辞职）。",
+      "example": "Dia mau resign karena mendapat pekerjaan yang lebih cocok.",
+      "example_cn": "他想辞职，因为找到了更合适的工作。",
+      "synonym_note": "resign 是高频口语；较正式可说 mengundurkan diri。",
+      "is_oral_new": true
+    },
+    {
+      "word": "gampang",
+      "display": "gampang",
+      "audio_text": "gampang",
+      "cn": "容易",
+      "en": "easy",
+      "root": "gampang",
+      "root_cn": "容易",
+      "formation": "口语高频：gampang banget（非常容易）、nggak gampang（不容易）、lebih gampang（更容易）。",
+      "example": "Kelihatannya gampang, tapi praktiknya butuh waktu.",
+      "example_cn": "看起来容易，但实际做起来需要时间。",
+      "synonym_note": "gampang 偏口语；mudah 是更通用、较标准的对应形式。",
+      "is_oral_new": true
+    }
   ],
-  "review_vocab":["nentuin","menentukan","membutuhkan","nangkep","nyinggung"],
-  "sentences":[
-    {"text":"Aku harus nentuin apakah besok naik kereta atau pergi dengan mobil.","cn":"我得决定明天坐火车还是开车去。"},
-    {"text":"Pekerjaan ini kelihatannya gampang, tetapi sebenarnya membutuhkan banyak waktu.","cn":"这项工作看起来容易，其实需要很多时间。"},
-    {"text":"Berkat penjelasan yang jelas, aku akhirnya bisa nangkep maksudnya.","cn":"多亏清楚的解释，我终于理解他的意思了。"},
-    {"text":"Atasan mengizinkan dia resign setelah semua pekerjaan diserahkan dengan baik.","cn":"在所有工作妥善交接后，上司允许他离职。"},
-    {"text":"Jangan nyinggung masalah pribadi kalau topiknya bisa membuat suasana berbahaya atau tegang.","cn":"如果话题可能让气氛变得危险或紧张，就不要触及私人问题。"}
+  "review_vocab": [
+    "nentuin",
+    "menentukan",
+    "membutuhkan",
+    "nangkep",
+    "nyinggung"
   ],
-  "reading":{"text":"Pagi ini aku naik kereta untuk bertemu seorang teman lama. Dia sedang menentukan apakah akan tetap bekerja atau resign bulan depan. Menurutnya, keputusan itu tidak gampang karena keluarganya membutuhkan penghasilan tetap. Aku tidak mau melawan pendapatnya, jadi aku hanya mendengarkan. Berkat pengalaman beberapa tahun terakhir, dia sudah tumbuh menjadi orang yang lebih tenang. Dia juga tahu bahwa mengambil keputusan terlalu cepat bisa berbahaya. Setelah makan siang sampai kenyang, dia memanggil atasannya dan bertanya apakah perusahaan mengizinkan jadwal kerja yang lebih fleksibel. Aku bisa nangkep bahwa sebenarnya dia belum benar-benar ingin meninggalkan pekerjaannya.","cn":"今天早上我坐火车去见一位老朋友。他正在决定是继续工作还是下个月辞职。他觉得这个决定并不容易，因为家里需要稳定收入。我不想反驳他的想法，所以只是听着。多亏过去几年的经历，他已经成长得更加沉稳。他也知道太快做决定可能有风险。午饭吃饱后，他叫了上司，并询问公司是否允许更灵活的工作安排。我能理解，其实他还没有真正想离开这份工作。"},
-  "quiz":[
-    {"question":"哪一个词最适合填空：Setelah makan dua porsi nasi, aku sudah ___.","options":["kenyang","berbahaya","gampang","tumbuh"],"answer_index":0,"explain":"kenyang 表示吃饱了。"},
-    {"question":"想表达‘多亏团队帮助，项目按时完成’，句首最适合用哪一个词？","options":["melawan","berkat","memanggil","kereta"],"answer_index":1,"explain":"berkat 用于强调某个积极原因带来了好结果。"},
-    {"question":"哪一个词最适合填空：Aku belum bisa ___ pilihan terbaik, jadi kasih aku waktu sebentar.","options":["nyinggung","nangkep","nentuin","membutuhkan"],"answer_index":2,"explain":"nentuin 是 menentukan 的常见口语形式，表示决定、确定。"}
+  "sentences": [
+    {
+      "text": "Aku harus nentuin apakah besok naik kereta atau pergi dengan mobil.",
+      "cn": "我得决定明天坐火车还是开车去。"
+    },
+    {
+      "text": "Pekerjaan ini kelihatannya gampang, tetapi sebenarnya membutuhkan banyak waktu.",
+      "cn": "这项工作看起来容易，其实需要很多时间。"
+    },
+    {
+      "text": "Berkat penjelasan yang jelas, aku akhirnya bisa nangkep maksudnya.",
+      "cn": "多亏清楚的解释，我终于理解他的意思了。"
+    },
+    {
+      "text": "Atasan mengizinkan dia resign setelah semua pekerjaan diserahkan dengan baik.",
+      "cn": "在所有工作妥善交接后，上司允许他离职。"
+    },
+    {
+      "text": "Jangan nyinggung masalah pribadi kalau topiknya bisa membuat suasana berbahaya atau tegang.",
+      "cn": "如果话题可能让气氛变得危险或紧张，就不要触及私人问题。"
+    }
   ],
-  "output":{"task":"用3—4句印尼语说一个你正在考虑的重要决定：为什么不容易、你需要考虑什么、谁能给你帮助，以及最后准备怎样决定。尽量使用 gampang、membutuhkan、berkat，并复现 nentuin 或 menentukan。","reference_answer":"Aku sedang nentuin apakah tahun depan mau pindah kerja. Keputusan ini nggak gampang karena keluargaku membutuhkan penghasilan yang stabil. Berkat saran dari teman, sekarang aku punya beberapa pilihan. Aku akan menentukan keputusan setelah mempertimbangkan semuanya dengan tenang.","reference_cn":"我正在决定明年是否换工作。这个决定并不容易，因为我的家庭需要稳定收入。多亏朋友的建议，现在我有几个选择。我会冷静考虑所有事情之后再作决定。"},
-  "review":["区分 gampang 和 mudah：gampang 更口语，mudah 更通用、标准。","记住 berkat 通常连接积极原因和好结果，而 karena 本身是中性的‘因为’。","主动串联 resign → membutuhkan → nentuin/menentukan：用这几个词口头讲一次工作选择。"]
+  "reading": {
+    "text": "Pagi ini aku naik kereta untuk bertemu seorang teman lama. Dia sedang menentukan apakah akan tetap bekerja atau resign bulan depan. Menurutnya, keputusan itu tidak gampang karena keluarganya membutuhkan penghasilan tetap. Aku tidak mau melawan pendapatnya, jadi aku hanya mendengarkan. Berkat pengalaman beberapa tahun terakhir, dia sudah tumbuh menjadi orang yang lebih tenang. Dia juga tahu bahwa mengambil keputusan terlalu cepat bisa berbahaya. Setelah makan siang sampai kenyang, dia memanggil atasannya dan bertanya apakah perusahaan mengizinkan jadwal kerja yang lebih fleksibel. Aku bisa nangkep bahwa sebenarnya dia belum benar-benar ingin meninggalkan pekerjaannya.",
+    "cn": "今天早上我坐火车去见一位老朋友。他正在决定是继续工作还是下个月辞职。他觉得这个决定并不容易，因为家里需要稳定收入。我不想反驳他的想法，所以只是听着。多亏过去几年的经历，他已经成长得更加沉稳。他也知道太快做决定可能有风险。午饭吃饱后，他叫了上司，并询问公司是否允许更灵活的工作安排。我能理解，其实他还没有真正想离开这份工作。"
+  },
+  "quiz": [
+    {
+      "question": "哪一个词最适合填空：Setelah makan dua porsi nasi, aku sudah ___.",
+      "options": [
+        "kenyang",
+        "berbahaya",
+        "gampang",
+        "tumbuh"
+      ],
+      "answer_index": 0,
+      "explain": "kenyang 表示吃饱了。"
+    },
+    {
+      "question": "想表达‘多亏团队帮助，项目按时完成’，句首最适合用哪一个词？",
+      "options": [
+        "melawan",
+        "berkat",
+        "memanggil",
+        "kereta"
+      ],
+      "answer_index": 1,
+      "explain": "berkat 用于强调某个积极原因带来了好结果。"
+    },
+    {
+      "question": "哪一个词最适合填空：Aku belum bisa ___ pilihan terbaik, jadi kasih aku waktu sebentar.",
+      "options": [
+        "nyinggung",
+        "nangkep",
+        "nentuin",
+        "membutuhkan"
+      ],
+      "answer_index": 2,
+      "explain": "nentuin 是 menentukan 的常见口语形式，表示决定、确定。"
+    }
+  ],
+  "output": {
+    "task": "用3—4句印尼语说一个你正在考虑的重要决定：为什么不容易、你需要考虑什么、谁能给你帮助，以及最后准备怎样决定。尽量使用 gampang、membutuhkan、berkat，并复现 nentuin 或 menentukan。",
+    "reference_answer": "Aku sedang nentuin apakah tahun depan mau pindah kerja. Keputusan ini nggak gampang karena keluargaku membutuhkan penghasilan yang stabil. Berkat saran dari teman, sekarang aku punya beberapa pilihan. Aku akan menentukan keputusan setelah mempertimbangkan semuanya dengan tenang.",
+    "reference_cn": "我正在决定明年是否换工作。这个决定并不容易，因为我的家庭需要稳定收入。多亏朋友的建议，现在我有几个选择。我会冷静考虑所有事情之后再作决定。"
+  },
+  "review": [
+    "区分 gampang 和 mudah：gampang 更口语，mudah 更通用、标准。",
+    "记住 berkat 通常连接积极原因和好结果，而 karena 本身是中性的‘因为’。",
+    "主动串联 resign → membutuhkan → nentuin/menentukan：用这几个词口头讲一次工作选择。"
+  ],
+  "time": "08:00",
+  "title": "08:00｜早间学习"
 }
