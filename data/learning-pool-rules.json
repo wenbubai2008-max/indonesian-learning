@@ -49,7 +49,7 @@
     "review_recurrence": "约5个，只能来自runtime.review_pool，不占10个新词名额",
     "sentences": 5,
     "reading_words": "80-120",
-    "quiz": "3题，至少1题复习",
+    "quiz": "3题；至少1题的正确答案必须真实属于review_vocab，不能仅靠题干写“复习”来计数",
     "active_output": "1个主动输出任务，含自然印尼语参考答案和中文",
     "final_review": "3个重点",
     "content_guard": "优先使用当天新词和已教复习词，不额外引入尚未正式教过的新master词",

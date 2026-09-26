@@ -55,10 +55,20 @@ function validateRecentDailyWindow(){
         const x=readJSON(p),v=Array.isArray(x.vocab)?x.vocab:[],rv=Array.isArray(x.review_vocab)?x.review_vocab:[];
         ok(x.session==='am'&&x.time==='08:00',`recent AM ${d}: session/time canonical`);
         ok(/^08:00/.test(String(x.title||'')),`recent AM ${d}: title canonical`);
-        ok(v.length===10&&unique(v.map(y=>norm(y&&y.word)).filter(Boolean)),`recent AM ${d}: 10 unique vocab`);
+        const recentAmWords=v.map(y=>norm(y&&y.word)).filter(Boolean);
+        ok(recentAmWords.length===10&&unique(recentAmWords),`recent AM ${d}: 10 unique vocab`);
         ok(inRange(rv.length,4,6)&&rv.every(y=>typeof y==='string'&&y.trim()),`recent AM ${d}: review_vocab canonical`);
         ok(Array.isArray(x.sentences)&&x.sentences.length===5,`recent AM ${d}: 5 sentences`);
         ok(Array.isArray(x.quiz)&&x.quiz.length===3,`recent AM ${d}: 3 quiz questions`);
+        if(Array.isArray(x.quiz)&&x.quiz.length===3){
+          const recentReviewSet=new Set(rv.map(norm));
+          const realReviewQuiz=x.quiz.some(q=>{
+            const opts=Array.isArray(q&&q.options)?q.options:[];
+            const ai=q&&q.answer_index;
+            return Number.isInteger(ai)&&ai>=0&&ai<opts.length&&recentReviewSet.has(norm(opts[ai]));
+          });
+          ok(realReviewQuiz,`recent AM ${d}: at least one quiz answer is truly in review_vocab`);
+        }
         ok(Array.isArray(x.review)&&x.review.length===3,`recent AM ${d}: final review canonical`);
         ok(Boolean(x.output&&x.output.task&&x.output.reference_answer&&x.output.reference_cn),`recent AM ${d}: output canonical`);
         if(d>='2026-09-26'){
@@ -82,10 +92,15 @@ function validateRecentDailyWindow(){
         const x=readJSON(p),v=Array.isArray(x.vocab)?x.vocab:[],test=x.daily_test||{};
         ok(x.session==='pm'&&x.time===(d>='2026-09-16'?'18:00':'19:00'),`recent PM ${d}: session/time canonical`);
         ok(x.write_status==='lesson_complete',`recent PM ${d}: lesson_complete`);
-        ok(inRange(v.length,10,12)&&unique(v.map(y=>norm(y&&y.word)).filter(Boolean)),`recent PM ${d}: 10-12 unique vocab`);
+        const recentPmWords=v.map(y=>norm(y&&y.word)).filter(Boolean);
+        ok(inRange(v.length,10,12)&&recentPmWords.length===v.length&&unique(recentPmWords),`recent PM ${d}: 10-12 unique vocab`);
         ok(x.dialogue&&Array.isArray(x.dialogue.lines)&&x.dialogue.lines.length>=4,`recent PM ${d}: dialogue canonical`);
         ok(Array.isArray(x.rewrite)&&inRange(x.rewrite.length,3,4),`recent PM ${d}: rewrite canonical`);
-        ok(Array.isArray(test.questions)&&test.questions.length===6,`recent PM ${d}: daily_test.questions canonical`);
+        const recentQuestions=Array.isArray(test.questions)?test.questions:[];
+        const recentChoice=recentQuestions.filter(q=>q&&q.type==='choice').length;
+        const recentFill=recentQuestions.filter(q=>q&&q.type==='fill').length;
+        const recentOrder=recentQuestions.filter(q=>q&&q.type==='order').length;
+        ok(recentQuestions.length===6&&recentChoice===3&&recentFill===2&&recentOrder===1,`recent PM ${d}: daily_test is 3 choice + 2 fill + 1 order`);
         ok(x.review&&!Array.isArray(x.review)&&Array.isArray(x.review.steps)&&x.review.steps.length>0,`recent PM ${d}: final review canonical`);
         if(d>='2026-09-26'){
           const ap='data/daily/'+d+'-am.json';
@@ -194,13 +209,17 @@ function validateLatestAm(){
 }
 
 function validateLatestPm(){
-  const dir = rel('data/daily');
-  const files = fs.readdirSync(dir).filter(f => /^\d{4}-\d{2}-\d{2}-pm\.json$/.test(f)).sort();
-  if(!files.length){ warnings.push('No PM lesson files found'); return; }
-  const file = files[files.length - 1];
-  const pm = readJSON('data/daily/' + file);
-  const date = String(pm.date || file.slice(0,10));
+  const index = readJSON('data/daily/index.json');
+  const rows = (Array.isArray(index.dates) ? index.dates : [])
+    .filter(x => x && /^\d{4}-\d{2}-\d{2}$/.test(String(x.date || '')) && x.pm === true)
+    .sort((a,b) => String(a.date).localeCompare(String(b.date)));
+  if(!rows.length){ warnings.push('No completed PM lesson entries found in index'); return; }
+  const date = String(rows[rows.length - 1].date);
+  const pmPath = `data/daily/${date}-pm.json`;
+  if(!fs.existsSync(rel(pmPath))){ failures.push(`latest completed PM ${date}: file missing`); return; }
+  const pm = readJSON(pmPath);
   if(date < '2026-09-16') return;
+  ok((index.dates || []).filter(x => x && x.date === date).length === 1, `latest PM ${date}: index date is unique`);
 
   ok(pm.session === 'pm', `latest PM ${date}: session=pm`);
   ok(pm.time === '18:00', `latest PM ${date}: time=18:00`);
@@ -393,6 +412,7 @@ try {
   ok(/fs\.writeFileSync\(dbPath/.test(sync), 'sync-daily-vocab is the daily-vocab writer');
   ok(/git add data\/daily-vocab-data\.js data\/learning-runtime\.json/.test(sync), 'daily-vocab and runtime are committed together');
   ok(/build-learning-runtime\.js/.test(sync), 'sync workflow rebuilds runtime in the same chain');
+  ok(sync.includes("'data/daily/*-am.json'") && sync.includes("'data/daily/*-pm.json'"), 'sync workflow re-runs after completed lesson-file repairs');
   ok(!/fs\.writeFileSync\([^\n]*daily-vocab-data\.js/.test(build), 'build-learning-runtime workflow does not directly write daily-vocab');
   ok(/actions\/checkout@v7/.test(sync)&&/actions\/setup-node@v7/.test(sync)&&/node-version:\s*['\"]24['\"]/.test(sync), 'sync workflow uses Node 24 actions/runtime');
   ok(/actions\/checkout@v7/.test(build)&&/actions\/setup-node@v7/.test(build)&&/node-version:\s*['\"]24['\"]/.test(build), 'build workflow uses Node 24 actions/runtime');
