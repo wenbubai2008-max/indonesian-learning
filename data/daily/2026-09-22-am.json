@@ -6,41 +6,222 @@
   "level": "A2+→B1",
   "title": "08:00｜新词 + 应用：工作与生活中的决定",
   "vocab": [
-    {"word":"mendengarkan","display":"mendengarkan","audio_text":"mendengarkan","cn":"听","en":"listen to","root":"dengar","root_cn":"听；听见","formation":"meN- + dengar + -kan → mendengarkan，表示主动听某人或某事。","example":"Saya mencoba mendengarkan pendapat semua orang sebelum mengambil keputusan.","example_cn":"做决定前，我尽量听取所有人的意见。","synonym_note":"mendengarkan 强调主动听；mendengar 更偏听见、听到。","is_oral_new":false},
-    {"word":"gagal","display":"gagal","audio_text":"gagal","cn":"失败","en":"fail; failure","root":"gagal","root_cn":"失败","formation":"基本词，可作动词或形容状态。常见：gagal mencoba、gagal mencapai target。","example":"Rencana pertama gagal, jadi kami harus mencari cara lain.","example_cn":"第一个计划失败了，所以我们必须找别的办法。","synonym_note":"gagal 是通用的“失败、没成功”；tidak berhasil 语气更中性。","is_oral_new":false},
-    {"word":"puas","display":"puas","audio_text":"puas","cn":"满意的","en":"satisfied","root":"puas","root_cn":"满意","formation":"基本形容词。常见：merasa puas、puas dengan hasil。","example":"Pelanggan puas dengan hasil pekerjaan kami.","example_cn":"客户对我们的工作结果很满意。","synonym_note":"puas 强调达到期待后的满足；senang 更泛指高兴。","is_oral_new":false},
-    {"word":"menghapus","display":"menghapus","audio_text":"menghapus","cn":"删除 / 擦除","en":"delete; erase","root":"hapus","root_cn":"删除；擦掉","formation":"meN- + hapus → menghapus。既可指删除文件，也可指擦掉文字。","example":"Jangan menghapus data sebelum membuat salinannya.","example_cn":"备份之前不要删除数据。","synonym_note":"menghapus 可用于数据、文字、污迹等；delete 是常见技术语境借词。","is_oral_new":false},
-    {"word":"mengunci","display":"mengunci","audio_text":"mengunci","cn":"锁上","en":"lock","root":"kunci","root_cn":"钥匙；锁","formation":"meN- + kunci → mengunci，表示把门、设备或账户锁住。","example":"Jangan lupa mengunci pintu sebelum keluar.","example_cn":"出门前别忘了锁门。","synonym_note":"mengunci 是标准通用表达；kunci 在口语里也常直接作简短指令。","is_oral_new":false},
-    {"word":"meninggalkan","display":"meninggalkan","audio_text":"meninggalkan","cn":"离开，留下","en":"leave; leave behind","root":"tinggal","root_cn":"住；留下","formation":"meN- + tinggal + -kan → meninggalkan，可表示离开某地或留下某物。","example":"Dia meninggalkan kantor lebih awal karena ada urusan keluarga.","example_cn":"他因为家里有事提前离开了办公室。","synonym_note":"meninggalkan 强调离开或留下对象；pergi 只是“去、离开”。","is_oral_new":false},
-    {"word":"bercerai","display":"bercerai","audio_text":"bercerai","cn":"离婚","en":"divorce; get divorced","root":"cerai","root_cn":"分开；离婚","formation":"ber- + cerai → bercerai，表示夫妻结束婚姻关系。","example":"Mereka memutuskan bercerai setelah lama membicarakan masalah itu.","example_cn":"他们讨论这个问题很久后决定离婚。","synonym_note":"bercerai 是标准表达；cerai 也常在日常口语中简略使用。","is_oral_new":false},
-    {"word":"menangis","display":"menangis","audio_text":"menangis","cn":"哭泣","en":"cry","root":"tangis","root_cn":"哭；哭声","formation":"meN- + tangis → menangis，表示哭、流泪。","example":"Dia hampir menangis ketika mendengar berita itu.","example_cn":"听到那个消息时，她差点哭了。","synonym_note":"menangis 是通用表达；nangis 是非常常见的口语形式。","is_oral_new":false},
-    {"word":"siapin","display":"siapin","audio_text":"siapin","cn":"准备好","en":"prepare; get ready","root":"siap","root_cn":"准备好","formation":"siapkan 的高频口语形式，常用于日常指令和聊天。","example":"Tolong siapin dokumennya sebelum rapat dimulai.","example_cn":"会议开始前请把文件准备好。","synonym_note":"siapin 是口语；标准形式是 siapkan。正式场合优先使用 siapkan。","is_oral_new":true},
-    {"word":"nanya","display":"nanya","audio_text":"nanya","cn":"问","en":"ask","root":"tanya","root_cn":"问；询问","formation":"bertanya/menanyakan 的常见口语形式，日常对话中非常高频。","example":"Kalau belum jelas, langsung nanya saja.","example_cn":"如果还不清楚，直接问就行。","synonym_note":"nanya 是口语；较标准的形式是 bertanya，询问某件具体事情也常用 menanyakan。","is_oral_new":true}
+    {
+      "word": "mendengarkan",
+      "display": "mendengarkan",
+      "audio_text": "mendengarkan",
+      "cn": "听",
+      "en": "listen to",
+      "root": "dengar",
+      "root_cn": "听；听见",
+      "formation": "meN- + dengar + -kan → mendengarkan，表示主动听某人或某事。",
+      "example": "Saya mencoba mendengarkan pendapat semua orang sebelum mengambil keputusan.",
+      "example_cn": "做决定前，我尽量听取所有人的意见。",
+      "synonym_note": "mendengarkan 强调主动听；mendengar 更偏听见、听到。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gagal",
+      "display": "gagal",
+      "audio_text": "gagal",
+      "cn": "失败",
+      "en": "fail; failure",
+      "root": "gagal",
+      "root_cn": "失败",
+      "formation": "基本词，可作动词或形容状态。常见：gagal mencoba、gagal mencapai target。",
+      "example": "Rencana pertama gagal, jadi kami harus mencari cara lain.",
+      "example_cn": "第一个计划失败了，所以我们必须找别的办法。",
+      "synonym_note": "gagal 是通用的“失败、没成功”；tidak berhasil 语气更中性。",
+      "is_oral_new": false
+    },
+    {
+      "word": "puas",
+      "display": "puas",
+      "audio_text": "puas",
+      "cn": "满意的",
+      "en": "satisfied",
+      "root": "puas",
+      "root_cn": "满意",
+      "formation": "基本形容词。常见：merasa puas、puas dengan hasil。",
+      "example": "Pelanggan puas dengan hasil pekerjaan kami.",
+      "example_cn": "客户对我们的工作结果很满意。",
+      "synonym_note": "puas 强调达到期待后的满足；senang 更泛指高兴。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menghapus",
+      "display": "menghapus",
+      "audio_text": "menghapus",
+      "cn": "删除 / 擦除",
+      "en": "delete; erase",
+      "root": "hapus",
+      "root_cn": "删除；擦掉",
+      "formation": "meN- + hapus → menghapus。既可指删除文件，也可指擦掉文字。",
+      "example": "Jangan menghapus data sebelum membuat salinannya.",
+      "example_cn": "备份之前不要删除数据。",
+      "synonym_note": "menghapus 可用于数据、文字、污迹等；delete 是常见技术语境借词。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengunci",
+      "display": "mengunci",
+      "audio_text": "mengunci",
+      "cn": "锁上",
+      "en": "lock",
+      "root": "kunci",
+      "root_cn": "钥匙；锁",
+      "formation": "meN- + kunci → mengunci，表示把门、设备或账户锁住。",
+      "example": "Jangan lupa mengunci pintu sebelum keluar.",
+      "example_cn": "出门前别忘了锁门。",
+      "synonym_note": "mengunci 是标准通用表达；kunci 在口语里也常直接作简短指令。",
+      "is_oral_new": false
+    },
+    {
+      "word": "meninggalkan",
+      "display": "meninggalkan",
+      "audio_text": "meninggalkan",
+      "cn": "离开，留下",
+      "en": "leave; leave behind",
+      "root": "tinggal",
+      "root_cn": "住；留下",
+      "formation": "meN- + tinggal + -kan → meninggalkan，可表示离开某地或留下某物。",
+      "example": "Dia meninggalkan kantor lebih awal karena ada urusan keluarga.",
+      "example_cn": "他因为家里有事提前离开了办公室。",
+      "synonym_note": "meninggalkan 强调离开或留下对象；pergi 只是“去、离开”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bercerai",
+      "display": "bercerai",
+      "audio_text": "bercerai",
+      "cn": "离婚",
+      "en": "divorce; get divorced",
+      "root": "cerai",
+      "root_cn": "分开；离婚",
+      "formation": "ber- + cerai → bercerai，表示夫妻结束婚姻关系。",
+      "example": "Mereka memutuskan bercerai setelah lama membicarakan masalah itu.",
+      "example_cn": "他们讨论这个问题很久后决定离婚。",
+      "synonym_note": "bercerai 是标准表达；cerai 也常在日常口语中简略使用。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menangis",
+      "display": "menangis",
+      "audio_text": "menangis",
+      "cn": "哭泣",
+      "en": "cry",
+      "root": "tangis",
+      "root_cn": "哭；哭声",
+      "formation": "meN- + tangis → menangis，表示哭、流泪。",
+      "example": "Dia hampir menangis ketika mendengar berita itu.",
+      "example_cn": "听到那个消息时，她差点哭了。",
+      "synonym_note": "menangis 是通用表达；nangis 是非常常见的口语形式。",
+      "is_oral_new": false
+    },
+    {
+      "word": "siapin",
+      "display": "siapin",
+      "audio_text": "siapin",
+      "cn": "准备好",
+      "en": "prepare; get ready",
+      "root": "siap",
+      "root_cn": "准备好",
+      "formation": "siapkan 的高频口语形式，常用于日常指令和聊天。",
+      "example": "Tolong siapin dokumennya sebelum rapat dimulai.",
+      "example_cn": "会议开始前请把文件准备好。",
+      "synonym_note": "siapin 是口语；标准形式是 siapkan。正式场合优先使用 siapkan。",
+      "is_oral_new": true
+    },
+    {
+      "word": "nanya",
+      "display": "nanya",
+      "audio_text": "nanya",
+      "cn": "问",
+      "en": "ask",
+      "root": "tanya",
+      "root_cn": "问；询问",
+      "formation": "bertanya/menanyakan 的常见口语形式，日常对话中非常高频。",
+      "example": "Kalau belum jelas, langsung nanya saja.",
+      "example_cn": "如果还不清楚，直接问就行。",
+      "synonym_note": "nanya 是口语；较标准的形式是 bertanya，询问某件具体事情也常用 menanyakan。",
+      "is_oral_new": true
+    }
   ],
   "sentences": [
-    {"text":"Sebelum menentukan langkah berikutnya, kita perlu mendengarkan pendapat tim.","cn":"确定下一步之前，我们需要听取团队意见。"},
-    {"text":"Kalau cara pertama gagal, jangan langsung menghapus semua hasil kerja.","cn":"如果第一个办法失败了，不要马上删除所有工作成果。"},
-    {"text":"Tolong siapin dokumennya dan nanya kalau ada bagian yang belum jelas.","cn":"请把文件准备好，有不清楚的地方就问。"},
-    {"text":"Pelanggan akan lebih puas kalau kita lakukan pemeriksaan dengan teliti.","cn":"如果我们认真检查，客户会更满意。"},
-    {"text":"Aku hampir kepancing emosinya, tetapi akhirnya memilih mendengarkan dulu.","cn":"我差点被情绪带着走，但最后还是选择先听。"}
+    {
+      "text": "Sebelum menentukan langkah berikutnya, kita perlu mendengarkan pendapat tim.",
+      "cn": "确定下一步之前，我们需要听取团队意见。"
+    },
+    {
+      "text": "Kalau cara pertama gagal, jangan langsung menghapus semua hasil kerja.",
+      "cn": "如果第一个办法失败了，不要马上删除所有工作成果。"
+    },
+    {
+      "text": "Tolong siapin dokumennya dan nanya kalau ada bagian yang belum jelas.",
+      "cn": "请把文件准备好，有不清楚的地方就问。"
+    },
+    {
+      "text": "Pelanggan akan lebih puas kalau kita lakukan pemeriksaan dengan teliti.",
+      "cn": "如果我们认真检查，客户会更满意。"
+    },
+    {
+      "text": "Aku hampir kepancing emosinya, tetapi akhirnya memilih mendengarkan dulu.",
+      "cn": "我差点被情绪带着走，但最后还是选择先听。"
+    }
   ],
   "reading": {
-    "text":"Pagi ini tim kami harus menentukan cara baru untuk menangani sebuah proyek. Cara sebelumnya gagal dan pelanggan belum puas. Atasan meminta kami mendengarkan masalah dengan tenang sebelum mengambil keputusan. Aku diminta siapin dokumen dan nanya kepada rekan kerja kalau ada informasi yang belum jelas. Kami juga harus mengunci data penting dan tidak boleh menghapus file lama sembarangan. Salah satu rekan hampir kepancing saat pendapatnya dikritik, tetapi akhirnya kami tetap fokus. Menurutku, kalau ada masalah, lebih baik kita lakukan perbaikan daripada meninggalkan pekerjaan begitu saja. Keputusan yang baik biasanya datang setelah semua orang mau mendengarkan dan memahami situasi.",
-    "cn":"今天早上，我们团队必须确定一种处理项目的新办法。之前的方法失败了，客户也还不满意。上司要求我们在做决定前冷静听清问题。我被要求准备文件，如果有不清楚的信息就问同事。我们还必须锁好重要数据，不能随便删除旧文件。一位同事在自己的意见被批评时差点被激怒，但最后大家还是把注意力放回工作。我觉得遇到问题时，与其直接丢下工作，不如进行改进。好的决定通常来自大家愿意倾听并理解情况之后。"
+    "text": "Pagi ini tim kami harus menentukan cara baru untuk menangani sebuah proyek. Cara sebelumnya gagal dan pelanggan belum puas. Atasan meminta kami mendengarkan masalah dengan tenang sebelum mengambil keputusan. Aku diminta siapin dokumen dan nanya kepada rekan kerja kalau ada informasi yang belum jelas. Kami juga harus mengunci data penting dan tidak boleh menghapus file lama sembarangan. Salah satu rekan hampir kepancing saat pendapatnya dikritik, tetapi akhirnya kami tetap fokus. Menurutku, kalau ada masalah, lebih baik kita lakukan perbaikan daripada meninggalkan pekerjaan begitu saja. Keputusan yang baik biasanya datang setelah semua orang mau mendengarkan dan memahami situasi.",
+    "cn": "今天早上，我们团队必须确定一种处理项目的新办法。之前的方法失败了，客户也还不满意。上司要求我们在做决定前冷静听清问题。我被要求准备文件，如果有不清楚的信息就问同事。我们还必须锁好重要数据，不能随便删除旧文件。一位同事在自己的意见被批评时差点被激怒，但最后大家还是把注意力放回工作。我觉得遇到问题时，与其直接丢下工作，不如进行改进。好的决定通常来自大家愿意倾听并理解情况之后。"
   },
   "quiz": [
-    {"question":"哪一个词最适合填空：Sebelum keluar rumah, jangan lupa ___ pintu.","options":["mengunci","menangis","gagal","puas"],"answer_index":0,"explain":"mengunci 表示“锁上”，这里是锁门。"},
-    {"question":"哪一个词最适合表达“对结果感到满意”？","options":["bercerai","menghapus","puas","meninggalkan"],"answer_index":2,"explain":"puas 表示满意、满足。"},
-    {"question":"复习：要表达“确定/决定一个具体安排”，哪一个词最合适？","options":["colok","menentukan","kepancing","lakukan"],"answer_index":1,"explain":"menentukan 表示确定、决定；这是之前已经学过的复习词。"}
+    {
+      "question": "哪一个词最适合填空：Sebelum keluar rumah, jangan lupa ___ pintu.",
+      "options": [
+        "mengunci",
+        "menangis",
+        "gagal",
+        "puas"
+      ],
+      "answer_index": 0,
+      "explain": "mengunci 表示“锁上”，这里是锁门。"
+    },
+    {
+      "question": "哪一个词最适合表达“对结果感到满意”？",
+      "options": [
+        "bercerai",
+        "menghapus",
+        "puas",
+        "meninggalkan"
+      ],
+      "answer_index": 2,
+      "explain": "puas 表示满意、满足。"
+    },
+    {
+      "question": "复习：要表达“确定/决定一个具体安排”，哪一个词最合适？",
+      "options": [
+        "colok",
+        "menentukan",
+        "kepancing",
+        "lakukan"
+      ],
+      "answer_index": 1,
+      "explain": "menentukan 表示确定、决定；这是之前已经学过的复习词。"
+    }
   ],
   "output": {
-    "task":"请用3—4句印尼语描述一次工作中计划失败后重新处理的情况。尽量使用 gagal、mendengarkan、siapin、nanya，并自然加入一个今天的复习词。",
-    "reference_answer":"Kemarin rencana tim kami gagal, jadi kami harus menentukan cara baru. Aku mendengarkan penjelasan rekan kerja lalu siapin dokumen yang diperlukan. Kalau ada bagian yang belum jelas, aku langsung nanya. Setelah itu kami lakukan perbaikan bersama.",
-    "reference_cn":"昨天我们团队的计划失败了，所以必须确定一个新办法。我听了同事的解释，然后准备好需要的文件。如果有不清楚的地方，我就直接问。之后我们一起进行了改进。"
+    "task": "请用3—4句印尼语描述一次工作中计划失败后重新处理的情况。尽量使用 gagal、mendengarkan、siapin、nanya，并自然加入一个今天的复习词。",
+    "reference_answer": "Kemarin rencana tim kami gagal, jadi kami harus menentukan cara baru. Aku mendengarkan penjelasan rekan kerja lalu siapin dokumen yang diperlukan. Kalau ada bagian yang belum jelas, aku langsung nanya. Setelah itu kami lakukan perbaikan bersama.",
+    "reference_cn": "昨天我们团队的计划失败了，所以必须确定一个新办法。我听了同事的解释，然后准备好需要的文件。如果有不清楚的地方，我就直接问。之后我们一起进行了改进。"
   },
   "review": [
     "menentukan = 确定、决定；口语对应形式 nentuin 也需要继续巩固。",
     "kepancing = 被激到、被带着回应；常用于情绪或争论语境。",
     "lakukan = 做、执行；常见结构 lakukan + 名词，如 lakukan pemeriksaan。"
+  ],
+  "review_vocab": [
+    "menentukan",
+    "kepancing",
+    "lakukan",
+    "colok"
   ]
 }

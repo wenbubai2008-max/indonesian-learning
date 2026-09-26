@@ -90,6 +90,24 @@ function validateLatestAm(){
   const output = am.output || {};
   ok(Boolean(String(output.task || '').trim() && String(output.reference_answer || '').trim() && String(output.reference_cn || '').trim()), `latest AM ${date}: active output has task + answer + Chinese`);
 
+  // Hard freshness/de-dup gates: yesterday's PM new words must never return as today's AM new words.
+  const prevDateObj = new Date(date + 'T00:00:00Z');
+  prevDateObj.setUTCDate(prevDateObj.getUTCDate() - 1);
+  const prevDate = prevDateObj.toISOString().slice(0,10);
+  const prevPmPath = `data/daily/${prevDate}-pm.json`;
+  if(fs.existsSync(rel(prevPmPath))){
+    const prevPm = readJSON(prevPmPath);
+    if(prevPm && prevPm.write_status === 'lesson_complete'){
+      const prevNew = new Set((Array.isArray(prevPm.new_words)?prevPm.new_words:[]).map(norm).filter(Boolean));
+      const repeated = vocabWords.filter(w => prevNew.has(w));
+      ok(repeated.length === 0, `latest AM ${date}: no new word repeats previous PM${repeated.length?': '+repeated.join(', '):''}`);
+    }
+  }
+  const runtimeNow = readJSON('data/learning-runtime.json');
+  const runtimeNew = new Set((runtimeNow.new_pool || []).map(x => norm(Array.isArray(x)?x[0]:x && x.word || x)).filter(Boolean));
+  const stillNew = vocabWords.filter(w => runtimeNew.has(w));
+  ok(stillNew.length === 0, `latest AM ${date}: taught AM words exited runtime.new_pool${stillNew.length?': '+stillNew.join(', '):''}`);
+
   const review = Array.isArray(am.review) ? am.review : [];
   ok(review.length === 3 && review.every(x => typeof x === 'string' && x.trim()), `latest AM ${date}: final review is exactly 3 strings`);
 }
@@ -130,6 +148,19 @@ function validateLatestPm(){
   const declaredNew = Array.isArray(pm.new_words) ? pm.new_words.map(norm).filter(Boolean).sort() : [];
   const actualNew = [...newSet].sort();
   ok(JSON.stringify(declaredNew) === JSON.stringify(actualNew), `latest PM ${date}: new_words matches source_group=new`);
+
+  const runtimeNow = readJSON('data/learning-runtime.json');
+  const runtimeNew = new Set((runtimeNow.new_pool || []).map(x => norm(Array.isArray(x)?x[0]:x && x.word || x)).filter(Boolean));
+  const stillNew = actualNew.filter(w => runtimeNew.has(w));
+  ok(stillNew.length === 0, `latest PM ${date}: taught PM new words exited runtime.new_pool${stillNew.length?': '+stillNew.join(', '):''}`);
+
+  const sameDayAmPath = `data/daily/${date}-am.json`;
+  if(fs.existsSync(rel(sameDayAmPath))){
+    const sameDayAm = readJSON(sameDayAmPath);
+    const amNew = new Set((Array.isArray(sameDayAm.vocab)?sameDayAm.vocab:[]).map(v => norm(v && v.word)).filter(Boolean));
+    const repeated = actualNew.filter(w => amNew.has(w));
+    ok(repeated.length === 0, `latest PM ${date}: PM new words do not repeat same-day AM${repeated.length?': '+repeated.join(', '):''}`);
+  }
 
   const requiredFields = ['word','display','audio_text','cn','en','root','root_cn','formation','example','example_cn','synonym_note','usage_note','source_group','is_new','is_oral_new'];
   vocab.forEach((v,i) => {
