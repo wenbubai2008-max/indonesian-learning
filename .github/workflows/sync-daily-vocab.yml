@@ -38,9 +38,11 @@ jobs:
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git fetch origin main
-          git reset --hard origin/main
-          node <<'NODE'
+          for attempt in 1 2; do
+            echo "Sync attempt ${attempt}/2: recompute from latest origin/main"
+            git fetch origin main
+            git reset --hard origin/main
+            node <<'NODE'
           const fs=require('fs');
           const dbPath='data/daily-vocab-data.js';
           const src=fs.readFileSync(dbPath,'utf8');
@@ -233,12 +235,21 @@ jobs:
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
           git add data/daily-vocab-data.js data/learning-runtime.json index.html data/vocab-profile.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'Sync daily lesson vocabulary and runtime'
-          git pull --rebase origin main
-          if ! git push origin HEAD:main; then
-            echo '::warning title=Retry sync push::main advanced during push; rebasing and retrying once.'
+          if git diff --cached --quiet; then
             git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
+            if [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ]; then
+              echo 'Sync already current; no empty commit.'
+              exit 0
+            fi
+            echo '::warning title=Sync input changed::main moved during no-op check; recomputing once.'
+            continue
           fi
+          git commit -m 'Sync daily lesson vocabulary and runtime'
+          if git push origin HEAD:main; then
+            echo "Sync push succeeded on attempt ${attempt}."
+            exit 0
+          fi
+          echo "::warning title=Sync branch advanced or push failed::Attempt ${attempt} did not publish; discarding derived local commit and recomputing from current main."
+          done
+          echo '::error title=Sync push failed::Two safe attempts failed; no force push, no stale rebase. Inspect original git push errors.'
+          exit 1
