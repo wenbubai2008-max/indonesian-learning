@@ -50,6 +50,13 @@ const runTests=function runTests(validate){
   ["PM bad status","pm",x=>x.lesson.write_status="draft","PM_STATUS_INVALID"]
  ];
  for(const [name,sess,mutate,code] of matrix){const x=sess==="am"?AM():PM();mutate(x);bad(name,x,code)}
+
+ // Rotation tests use a real seven-day-shaped completed history and reject repeats without fresh errors.
+ const rota={enabled:true,effective_date:"2026-09-28",lookback_days:7};
+ {const x=PM();x.rules.review_rotation=rota;bad("PM missing review history",x,"REVIEW_HISTORY_MISSING")}
+ {const x=PM();x.rules.review_rotation=rota;x.reviewHistory=[{...x.sameDayAm,review_vocab:["review0"]},{date:"2026-09-27",session:"am",review_vocab:[]},{date:"2026-09-27",session:"pm",vocab:[]}];bad("PM same-day core review",x,"PM_SAME_DAY_REVIEW_REPEAT")}
+ {const x=PM();x.rules.review_rotation=rota;x.reviewHistory=[{date:"2026-09-27",session:"am",review_vocab:[]},{date:"2026-09-27",session:"pm",vocab:[]},{...x.sameDayAm,review_vocab:["review0"]}];x.runtime.review_pool[0]=["review0",1,0,"2026-09-28T03:00:00.000Z"];x.runtime.generated_at="2026-09-28T04:00:00.000Z";ok("PM new wrong signal overrides same-day cooldown",x)}
+ {const x=AM();x.rules.review_rotation=rota;x.reviewHistory=[{date:"2026-09-27",session:"am",review_vocab:[]},{date:"2026-09-27",session:"pm",vocab:[{word:"rev0",source_group:"review"}]}];bad("AM repeats previous PM without new wrong",x,"AM_PREVIOUS_PM_REVIEW_REPEAT")}
  return {passed:count,failed:0,makeAm:AM,makePm:PM};
 };
 const results=runTests(validate);

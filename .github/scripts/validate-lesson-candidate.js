@@ -1,7 +1,28 @@
 #!/usr/bin/env node
 'use strict';
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
-const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm}) {
+
+/** Only completed core-review exposures count; a PM application is not another core review. */
+function collectReviewHistory(index,targetDate,targetSession,load){
+ const at=Date.parse(targetDate+'T00:00:00Z');
+ if(!Number.isFinite(at))throw Error('Invalid target date for review history');
+ const history=[];
+ for(const row of index.dates||[]){
+  const d=Date.parse(String(row.date||'')+'T00:00:00Z');
+  if(!Number.isFinite(d)||d<at-7*86400000||d>at)continue;
+  for(const session of ['am','pm']){
+   if(row[session]!==true)continue;
+   if(row.date===targetDate&&(targetSession==='am'||session!=='am'))continue;
+   const p='data/daily/'+row.date+'-'+session+'.json';
+   const lesson=load(p);
+   if(!lesson||lesson.date!==row.date||lesson.session!==session)throw Error('Completed review history missing or mismatched: '+p);
+   history.push(lesson);
+  }
+ }
+ return history;
+}
+
+const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm,reviewHistory}) {
   const errors=[], add=(code,detail)=>errors.push({code,detail});
   const check=(c,code,detail)=>{if(!c)add(code,detail);return !!c};
   const has=(o,k)=>Object.prototype.hasOwnProperty.call(o||{},k);
@@ -130,10 +151,64 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     check(Array.isArray(test?.self_check)&&test.self_check.length>0&&test.self_check.every(str),"PM_SELF_CHECK_INVALID","Nonempty self_check");
     check(lesson.review&&!Array.isArray(lesson.review)&&str(lesson.review.title)&&Array.isArray(lesson.review.steps)&&lesson.review.steps.length>0&&lesson.review.steps.every(str),"PM_FINAL_REVIEW_INVALID","Review {title,steps[]}");
   }
+
+  // Enforce new review rotation only for unpublished lessons on/after its effective date.
+  const rotation=rules.review_rotation;
+  if(rotation&&rotation.enabled===true&&date>=(rotation.effective_date||'2026-09-28')){
+   if(!Array.isArray(reviewHistory)){
+    add('REVIEW_HISTORY_MISSING','The completed seven-day AM/PM review history is required');
+   }else{
+    const at=Date.parse(date+'T00:00:00Z'),from=at-7*86400000;
+    const expected=[];
+    for(const row of index.dates||[]){
+     const d=Date.parse(String(row.date||'')+'T00:00:00Z');
+     if(!Number.isFinite(d)||d<from||d>at)continue;
+     for(const slot of ['am','pm'])if(row[slot]===true&&!(row.date===date&&(session==='am'||slot!=='am')))expected.push(row.date+'-'+slot);
+    }
+    const ids=reviewHistory.map(h=>String(h?.date||'')+'-'+String(h?.session||''));
+    check(expected.length===ids.length&&expected.every(id=>ids.includes(id))&&new Set(ids).size===ids.length,'REVIEW_HISTORY_INCOMPLETE','The seven-day completed index coverage is incomplete or duplicated');
+    const stamps=[], exposures=new Map(), completed=reviewHistory.slice().sort((a,b)=>(a.date+' '+a.session).localeCompare(b.date+' '+b.session));
+    for(const h of completed){
+     if(!h||!['am','pm'].includes(h.session))continue;
+     const t=Date.parse(h.date+'T'+(h.session==='am'?'08:00:00':h.date<'2026-09-16'?'19:00:00':'18:00:00')+'+07:00');
+     const words=h.session==='am'?ws(h.review_vocab):ws((h.vocab||[]).filter(v=>v?.source_group==='review'));
+     const rec={date:h.date,session:h.session,time:t,words:new Set(words)};
+     stamps.push(rec);
+     for(const w of words){if(!exposures.has(w))exposures.set(w,[]);exposures.get(w).push(rec)}
+    }
+    const selected=session==='am'?ws(lesson.review_vocab):ws(vocab.filter(v=>v?.source_group==='review'));
+    const lastWrong=new Map((runtime.review_pool||[]).map(v=>[word(v),Array.isArray(v)?Date.parse(v[3]||''):NaN]));
+    const generatedAt=Date.parse(runtime.generated_at||'');
+    const fresh=w=>{
+     const recent=exposures.get(w)||[],last=recent.length?recent[recent.length-1].time:NaN,wrong=lastWrong.get(w);
+     return Number.isFinite(last)&&Number.isFinite(wrong)&&Number.isFinite(generatedAt)&&wrong>last&&wrong<=generatedAt+300000;
+    };
+    const sameDayAm=stamps.find(x=>x.date===date&&x.session==='am');
+    const pms=stamps.filter(x=>x.session==='pm').slice(-2);
+    const latest=stamps.at(-1);
+    const reviewCount=w=>(exposures.get(w)||[]).length;
+    const blocked=w=>{
+     if(fresh(w))return false;
+     if(session==='pm'&&sameDayAm?.words.has(w))return true;
+     if(session==='am'&&latest?.session==='pm'&&latest?.words.has(w))return true;
+     return pms.length===2&&pms.every(x=>x.words.has(w))&&(at-Date.parse(pms[1].date+'T00:00:00Z'))<=3*86400000;
+    };
+    for(const w of selected){
+     if(fresh(w))continue;
+     if(session==='pm'&&sameDayAm?.words.has(w))add('PM_SAME_DAY_REVIEW_REPEAT',w+' was already a core review at 08:00; no new wrong answer');
+     else if(session==='am'&&latest?.session==='pm'&&latest?.words.has(w))add('AM_PREVIOUS_PM_REVIEW_REPEAT',w+' was a core review in the preceding PM session');
+     else if(pms.length===2&&pms.every(x=>x.words.has(w))&&(at-Date.parse(pms[1].date+'T00:00:00Z'))<=3*86400000)add('PM_REVIEW_COOLDOWN',w+' was in both previous PM core-review sets; allow three days unless a new wrong answer');
+    }
+    const frequent=selected.filter(w=>reviewCount(w)>=3&&!fresh(w));
+    const alternatives=[...reviewPool].filter(w=>!selected.includes(w)&&reviewCount(w)<3&&!blocked(w));
+    if(frequent.length>1&&alternatives.length>=frequent.length-1)
+     add('REVIEW_OVEREXPOSURE','At most one word with three or more core-review exposures in the last seven days when eligible alternatives exist: '+frequent.join(', '));
+   }
+  }
   return {ok:errors.length===0,errors,date,session,baselineWatermark:runtime.lesson_watermark,proposedFlag:date+"."+session+"=true"};
 };
 function cli(argv){const a={};for(let i=0;i<argv.length;i++){if(!argv[i].startsWith('--')||!argv[i+1]||argv[i+1].startsWith('--'))throw Error('Expected --key value');a[argv[i++].slice(2)]=argv[i]}return a}
 function read(f){return JSON.parse(fs.readFileSync(path.resolve(process.cwd(),f),'utf8'))}
 function optional(f){return fs.existsSync(path.resolve(process.cwd(),f))?read(f):null}
-if(require.main===module){try{const a=cli(process.argv.slice(2));if(!a.candidate||!a.date||!a.session)throw Error('--candidate, --date, --session required');const date=a.date;const prev=new Date(Date.parse(date+'T00:00:00Z')-86400000).toISOString().slice(0,10);const lesson=read(a.candidate),index=read(a.index||'data/daily/index.json'),runtime=read(a.runtime||'data/learning-runtime.json'),rules=read(a.rules||'data/learning-pool-rules.json');const result=validate({lesson,index,runtime,rules,expectedDate:date,expectedSession:a.session,sameDayAm:optional(a['same-day-am']||'data/daily/'+date+'-am.json'),previousPm:optional(a['previous-pm']||'data/daily/'+prev+'-pm.json')});result.baselineFingerprint=crypto.createHash('sha256').update(JSON.stringify({index,runtime,rules})).digest('hex');console.log(JSON.stringify(result,null,2));process.exitCode=result.ok?0:1}catch(e){console.error(JSON.stringify({ok:false,errors:[{code:'VALIDATOR_INPUT_ERROR',detail:e.message}]}));process.exitCode=2}}
-module.exports={validate};
+if(require.main===module){try{const a=cli(process.argv.slice(2));if(!a.candidate||!a.date||!a.session)throw Error('--candidate, --date, --session required');const date=a.date;const prev=new Date(Date.parse(date+'T00:00:00Z')-86400000).toISOString().slice(0,10);const lesson=read(a.candidate),index=read(a.index||'data/daily/index.json'),runtime=read(a.runtime||'data/learning-runtime.json'),rules=read(a.rules||'data/learning-pool-rules.json');const result=validate({lesson,index,runtime,rules,expectedDate:date,expectedSession:a.session,sameDayAm:optional(a['same-day-am']||'data/daily/'+date+'-am.json'),previousPm:optional(a['previous-pm']||'data/daily/'+prev+'-pm.json'),reviewHistory:collectReviewHistory(index,date,a.session,p=>read(p))});result.baselineFingerprint=crypto.createHash('sha256').update(JSON.stringify({index,runtime,rules})).digest('hex');console.log(JSON.stringify(result,null,2));process.exitCode=result.ok?0:1}catch(e){console.error(JSON.stringify({ok:false,errors:[{code:'VALIDATOR_INPUT_ERROR',detail:e.message}]}));process.exitCode=2}}
+module.exports={validate,collectReviewHistory};

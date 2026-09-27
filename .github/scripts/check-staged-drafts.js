@@ -2,7 +2,7 @@
 'use strict';
 /** Staging-only, read-only verifier. Always uses the *current main ref* as baseline. */
 const fs=require('node:fs'),crypto=require('node:crypto'),cp=require('node:child_process');
-const {validate}=require('./validate-lesson-candidate');
+const {validate,collectReviewHistory}=require('./validate-lesson-candidate');
 const {plan}=require('./plan-lesson-publication');
 const git=(...a)=>cp.execFileSync('git',a,{encoding:'utf8',stdio:['ignore','pipe','pipe']}).trim();
 const read=(ref,file,required=true)=>{
@@ -23,7 +23,8 @@ for(const file of process.argv.slice(2)){
  try{
   const index=read('origin/main','data/daily/index.json'),runtime=read('origin/main','data/learning-runtime.json'),rules=read('origin/main','data/learning-pool-rules.json');
   const sameDayAm=read('origin/main','data/daily/'+date+'-am.json',false),previousPm=read('origin/main','data/daily/'+prev+'-pm.json',false);
-  const result=plan({lesson,index,runtime,rules,sameDayAm,previousPm,expectedDate:date,expectedSession:session,mainHead:main});
+  const reviewHistory=collectReviewHistory(index,date,session,p=>read('origin/main',p));
+  const result=plan({lesson,index,runtime,rules,sameDayAm,previousPm,reviewHistory,expectedDate:date,expectedSession:session,mainHead:main});
   const report={candidate:file,stageSha:git('rev-parse','HEAD'),mainSha:main,candidateHash:hash(JSON.stringify(lesson)),ok:result.ok&&result.status==='ready',status:result.status||'blocked',errors:result.errors||[],baselineFingerprint:result.baselineFingerprint||null};
   console.log('PREFLIGHT '+JSON.stringify(report));
   if(!report.ok)failed++;

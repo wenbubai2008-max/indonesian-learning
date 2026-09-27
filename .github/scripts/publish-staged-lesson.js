@@ -51,7 +51,7 @@ async function publish(api,{date,session,stageSha,dryRun=false,planner=plan}){
   const baseline=await api.mainSnapshot(date,session);
   // Recompute against the CURRENT relevant data. An unrelated main commit does not veto a valid candidate.
   const p=planner({lesson,index:baseline.index,runtime:baseline.runtime,rules:baseline.rules,
-   sameDayAm:baseline.sameDayAm,previousPm:baseline.previousPm,
+   sameDayAm:baseline.sameDayAm,previousPm:baseline.previousPm,reviewHistory:baseline.reviewHistory,
    publishedLesson:baseline.publishedLesson,expectedDate:date,expectedSession:session,mainHead:baseline.sha});
   if(!p.ok)return stop('PREFLIGHT_BLOCKED','Current main data reject the unchanged candidate',{errors:p.errors});
   if(p.candidateHash!==sha256(lesson))return stop('CANDIDATE_HASH_MISMATCH','Draft changed after plan');

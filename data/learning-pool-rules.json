@@ -56,7 +56,8 @@
     "new_word_memory_policy": "08:00承担真正陌生词的首次深度学习：dont优先独占；dont不足10才用fuzzy补位。写入前校验每个新词属于runtime.new_pool，且除明确补位部分外均属于runtime.new_pool_dont。",
     "review_vocab_schema": "课程根字段必须命名为 review_vocab；约5个（允许4-6个）非空字符串，全部来自runtime.review_pool，与当天10个vocab新词不重叠。",
     "root_schema": "课程根级必须同时包含 vocab、review_vocab、sentences、reading、quiz、output、review；vocab=10、sentences=5、quiz=3、review=3；reading含text/cn；output含task/reference_answer/reference_cn。",
-    "cross_day_dedup": "若前一天PM完整，则其new_words不得再次进入当天AM vocab；且前一天PM new_words若仍存在于runtime.new_pool，视为runtime未同步并停止生成。"
+    "cross_day_dedup": "若前一天PM完整，则其new_words不得再次进入当天AM vocab；且前一天PM new_words若仍存在于runtime.new_pool，视为runtime未同步并停止生成。",
+    "review_rotation": "每次读取最近7天index完成的早晚课核心复习历史；前一晚PM重点次晨避免再次核心复习（新真实答错例外）；低曝光、到期词优先。"
   },
   "pm_contract": {
     "scheduled_time": "18:00",
@@ -72,8 +73,10 @@
     ],
     "cooling": {
       "recent_pm_focus": "最近2-3天刚做重点复习的词降权",
-      "consecutive_pm": "连续两次晚课作为核心出现后默认冷却约3天",
-      "override": "出现新的答错/重新激活可打破冷却"
+      "consecutive_pm": "连续两次PM核心出现，最近一次后冷却3天",
+      "override": "新last_wrong必须晚于最近一次正式核心曝光且不晚于runtime.generated_at",
+      "same_day_am": "当天AM.review_vocab不得再占PM核心，AM.vocab可以进入application",
+      "recent_7_days": "7天核心曝光>=3时每课最多保留1个（合法替代充足时）"
     },
     "automation_value": "只在资格、记忆优先级、复习到期/冷却状态都相同时作为最后平局排序；优先更高频、更值得主动调用的词",
     "oral_new_words": "结合当天08:00口语新词数，晚课3-4个新词中优先约1个合法口语新词；优先在当晚目标分池配额内选，默认先满足fuzzy/dont组合，不得为凑口语比例越界。",
@@ -129,7 +132,8 @@
       "fallback": "任一分池合法候选不足时可由另一分池补足到3-4个；不得使用unclassified、mastered或已教词",
       "after_taught": "一旦正式教过即退出新词逻辑，后续统一由review_pool/focus_pool按真实答错、不会、模糊等信号排序"
     },
-    "rewrite": "必须有3-4个主动改写/中译印/主动回忆任务；课程根字段必须命名为 rewrite，结构为 rewrite:[{task,reference_answer,reference_cn},...]，可额外保留type；禁止使用根字段 rewrite_application。"
+    "rewrite": "必须有3-4个主动改写/中译印/主动回忆任务；课程根字段必须命名为 rewrite，结构为 rewrite:[{task,reference_answer,reference_cn},...]，可额外保留type；禁止使用根字段 rewrite_application。",
+    "review_rotation": "4-6复习由合法focus与低曝光到期词混合；遵循根级review_rotation，应用复现不计核心重复。"
   },
   "rules": [
     "K不进入新词、重点复习或PM应用复现核心词",
@@ -170,7 +174,8 @@
     "新词记忆分池：runtime.new_pool_dont 与 runtime.new_pool_fuzzy 都必须是runtime.new_pool的子集；dont按manual_unknown/seed_unfamiliar/memory_dont/bipa_secondary_dont识别，fuzzy按memory_fuzzy/bipa_secondary_fuzzy识别，若同时命中则按dont处理。",
     "08:00新词：合法dont候选达到10个时10个全部来自new_pool_dont；不足10时先用完dont，再从new_pool_fuzzy补足；不得使用new_pool_unclassified。",
     "18:00新词：3-4个默认2个fuzzy+1-2个dont；任一分池不足可由另一分池合法补位，总数仍为3-4；不得使用new_pool_unclassified。",
-    "dont/fuzzy只决定未正式教过词的首次教学时段与方式；正式教过后统一进入review_pool/focus_pool，后续优先级以最近答错/重新不会 > memory_dont > memory_fuzzy > 其他active为准。"
+    "dont/fuzzy只决定未正式教过词的首次教学时段与方式；正式教过后统一进入review_pool/focus_pool，后续优先级以最近答错/重新不会 > memory_dont > memory_fuzzy > 其他active为准。",
+    "每次选复习词须统计最近7天AM.review_vocab和PM核心review曝光；相邻课不能机械重复，新错必须由runtime.last_wrong证明，应用复现独立计算。"
   ],
   "validation_gate": {
     "required_before_write": true,
@@ -187,8 +192,25 @@
     "focus_word_check": "in_runtime_focus_pool_or_review_pool",
     "listening_signal_guard": "listening signals must not downgrade status=mastered by themselves; mastered listening weakness may only enter listening_focus_pool, not review/application core eligibility.",
     "am_new_word_memory_check": "10个AM新词必须属于runtime.new_pool；若runtime.new_pool_dont在排除跨日重复后>=10，则10个必须全部属于new_pool_dont；只有不足10时允许fuzzy补差额；unclassified命中数必须为0。",
-    "pm_new_word_memory_check": "PM 3-4个新词必须来自new_pool_dont∪new_pool_fuzzy并属于new_pool；默认2 fuzzy + 1-2 dont，候选不足时可互补；unclassified命中数必须为0。"
+    "pm_new_word_memory_check": "PM 3-4个新词必须来自new_pool_dont∪new_pool_fuzzy并属于new_pool；默认2 fuzzy + 1-2 dont，候选不足时可互补；unclassified命中数必须为0。",
+    "review_rotation_check": "从2026-09-28起完整核验index最近7天已完成AM/PM核心历史；缺历史阻止发布；同日/前晚重复、连续PM冷却、7天高曝光超额严格依规则，解除需runtime.last_wrong新信号。仅新课生效。"
   },
-  "updated_at": "2026-09-25",
-  "focus_pool_formula": "重点弱词 = A ∩ D，按自动训练失败、快速练习答错、不会/模糊等信号综合排序；只做派生索引，不改变词库归属"
+  "updated_at": "2026-09-27",
+  "focus_pool_formula": "重点弱词 = A ∩ D，按自动训练失败、快速练习答错、不会/模糊等信号综合排序；只做派生索引，不改变词库归属",
+  "review_rotation": {
+    "enabled": true,
+    "effective_date": "2026-09-28",
+    "lookback_days": 7,
+    "core_only": true,
+    "history_source": "仅统计index已完成的最近7天AM.review_vocab及PM.vocab.source_group=review；application和阅读自然复现不算重点复习次数",
+    "eligibility": "只能取runtime.review_pool；focus_pool是高优先子集，不能越过冷却",
+    "am_previous_pm": "前一节PM核心词次日AM不再做核心，新真实答错例外",
+    "pm_same_day_am": "同日早课核心词晚课不再做核心，新真实答错例外；AM新词可进application",
+    "consecutive_pm": "连续两次PM核心出现后，从最近一次PM起冷却3天，新真实答错例外",
+    "overexposure": "最近7天重点出现至少3次、有充足低曝光合法替代时每课最多1个",
+    "feedback_override": "仅认runtime.review_pool.last_wrong晚于该词最近一次核心复习并且不晚于runtime.generated_at；旧的答错累计不能解除冷却",
+    "scoring": "真实新错>memory_dont>memory_fuzzy>其他active；同类优先低曝光、到期更久的词。最近7天出现1/2/3次分别建议扣12/25/45分",
+    "focus_mix": "晚课仍优先2-3合法focus，但不越过冷却；剩余补低曝光到期review",
+    "fallback": "不得越界到mastered或不合法新词，不伪造错误或更改历史；合法候选不足明确报告"
+  }
 }
