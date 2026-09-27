@@ -10,16 +10,18 @@ const read=(sha,file)=>JSON.parse(git('show',sha+':'+file));
 (async()=>{
  git('fetch','origin','main');
  const sha=git('rev-parse','origin/main');
- const date='2026-09-27',session='pm',target='data/daily/'+date+'-pm.json';
  const index=read(sha,'data/daily/index.json'),runtime=read(sha,'data/learning-runtime.json');
+ const latest=index.dates.filter(x=>x.am||x.pm).sort((a,b)=>a.date.localeCompare(b.date)).at(-1);
+ const date=latest.date,session=latest.pm?'pm':'am',target='data/daily/'+date+'-'+session+'.json';
  const rules=read(sha,'data/learning-pool-rules.json'),lesson=read(sha,target);
  const p=plan({lesson,index,runtime,rules,expectedDate:date,expectedSession:session,mainHead:sha,publishedLesson:lesson});
  assert.equal(p.ok,true);assert.equal(p.status,'already_published');assert.deepEqual(p.files,[]);
- assert.equal(runtime.lesson_watermark,date+' 18:00');
+ assert.equal(runtime.lesson_watermark,date+' '+(session==='am'?'08:00':'18:00'));
  assert.equal(runtime.stats.master_unique,977);
  assert.equal(index.dates.filter(x=>x.date===date).length,1);
- assert.equal(index.dates.find(x=>x.date===date).pm,true);
- assert.deepEqual(lesson.new_words.filter(w=>runtime.new_pool.includes(w)),[]);
+ assert.equal(index.dates.find(x=>x.date===date)[session],true);
+ const newWords=Array.isArray(lesson.new_words)?lesson.new_words:lesson.vocab.map(v=>v.word);
+ assert.deepEqual(newWords.filter(w=>runtime.new_pool.includes(w)),[]);
  // Real official JSON + derived state are wired through the publisher's final readback function.
  const api={readJson:async path=>path===target?lesson:index,runtime:async()=>runtime,
   syncStatus:async()=> 'success',pagesStatus:async()=> 'success'};
