@@ -347,6 +347,10 @@ jobs:
           node .github/scripts/test-vocab-profile-snapshot.js
           node --check .github/scripts/inject-vocab-profile.js
           node --check data/vocab-profile-ui.js
+          node --check data/vocab-profile-evidence.js
+          node --check data/listening-word-training.js
+          node --check .github/scripts/test-vocab-profile-evidence.js
+          node .github/scripts/test-vocab-profile-evidence.js
           node .github/scripts/build-vocab-profile.js
           node .github/scripts/write-vocab-profile-snapshot.js
           node .github/scripts/inject-vocab-profile.js
