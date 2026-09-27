@@ -19,6 +19,8 @@ on:
       - '.github/scripts/build-bipa-level-chunks.js'
       - '.github/scripts/build-learning-runtime.js'
       - '.github/scripts/build-vocab-profile.js'
+      - '.github/scripts/write-vocab-profile-snapshot.js'
+      - '.github/scripts/test-vocab-profile-snapshot.js'
       - '.github/scripts/inject-vocab-profile.js'
       - '.github/scripts/regression-guard.js'
       - '.github/scripts/vocab-ui-regression-guard.js'
@@ -120,6 +122,9 @@ jobs:
           node --check data/home-modules-layout.js
           node --check data/vocab-profile-ui.js
           node --check .github/scripts/build-vocab-profile.js
+          node --check .github/scripts/write-vocab-profile-snapshot.js
+          node --check .github/scripts/test-vocab-profile-snapshot.js
+          node .github/scripts/test-vocab-profile-snapshot.js
           node --check .github/scripts/inject-vocab-profile.js
           node --check data/bipa-json-loader-20260917.js
           node --check data/bipa-level-a1-gz.js
@@ -128,6 +133,7 @@ jobs:
           node --check data/bipa-level-b2-gz.js
           node .github/scripts/build-learning-runtime.js
           node .github/scripts/build-vocab-profile.js
+          node .github/scripts/write-vocab-profile-snapshot.js
           incident_phase='regression_guard'; incident_category='validation'
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
@@ -137,7 +143,7 @@ jobs:
               continue
             fi
             incident_phase='prepare_commit'; incident_category='git_write'
-            git add index.html data/learning-runtime.json data/vocab-profile.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json
+            git add index.html data/learning-runtime.json data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json
             if git diff --cached --quiet; then
               echo 'Build already current; no empty commit.'
               exit 0
