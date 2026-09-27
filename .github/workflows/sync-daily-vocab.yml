@@ -342,15 +342,19 @@ jobs:
           incident_phase='build_runtime'; incident_category='derived_data'
           node .github/scripts/build-learning-runtime.js
           node --check .github/scripts/build-vocab-profile.js
+          node --check .github/scripts/write-vocab-profile-snapshot.js
+          node --check .github/scripts/test-vocab-profile-snapshot.js
+          node .github/scripts/test-vocab-profile-snapshot.js
           node --check .github/scripts/inject-vocab-profile.js
           node --check data/vocab-profile-ui.js
           node .github/scripts/build-vocab-profile.js
+          node .github/scripts/write-vocab-profile-snapshot.js
           node .github/scripts/inject-vocab-profile.js
           incident_phase='regression_guard'; incident_category='validation'
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
           incident_phase='prepare_commit'; incident_category='git_write'
-          git add data/daily-vocab-data.js data/learning-runtime.json index.html data/vocab-profile.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
+          git add data/daily-vocab-data.js data/learning-runtime.json index.html data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
           if git diff --cached --quiet; then
             git fetch origin main
             if [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ]; then
