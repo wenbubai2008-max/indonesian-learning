@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-27T05:27:20.634Z",
+  "updated_at": "2026-09-27T05:32:00.649Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -7093,8 +7093,9 @@
     "bergerak": {
       "word": "bergerak",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-27T05:31:49.904Z",
       "display": "bergerak",
+      "cn": "移动，行动",
       "reasons": [
         "memory_dont"
       ],
