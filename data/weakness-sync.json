@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-27T14:15:48.456Z",
+  "updated_at": "2026-09-27T14:16:37.751Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -912,17 +912,17 @@
     "umum": {
       "word": "umum",
       "status": "active",
-      "updated_at": "2026-09-22T13:03:59.463Z",
+      "updated_at": "2026-09-27T14:15:55.929Z",
       "display": "umum",
       "cn": "一般的；普遍的；公共的",
       "root": "umum",
       "root_cn": "一般；公共",
-      "last_review": "2026-09-22T13:03:59.433Z",
+      "last_review": "2026-09-27T14:15:55.838Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "rakyat": {
       "word": "rakyat",
@@ -1040,15 +1040,16 @@
     "balik": {
       "word": "balik",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-27T14:15:54.146Z",
       "display": "balik",
       "cn": "返回；翻转",
       "root": "balik",
+      "last_review": "2026-09-27T14:15:54.056Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "jenis": {
       "word": "jenis",
@@ -2506,14 +2507,14 @@
     "menambahkan": {
       "word": "menambahkan",
       "status": "active",
-      "updated_at": "2026-09-25T15:05:46.323Z",
+      "updated_at": "2026-09-27T14:15:58.810Z",
       "display": "menambahkan",
-      "last_review": "2026-09-25T15:05:46.296Z",
+      "last_review": "2026-09-27T14:15:58.720Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "kekuatan": {
       "word": "kekuatan",
@@ -2662,14 +2663,14 @@
     "berbicara": {
       "word": "berbicara",
       "status": "active",
-      "updated_at": "2026-09-22T08:20:21.219Z",
+      "updated_at": "2026-09-27T14:16:13.307Z",
       "display": "berbicara",
-      "last_review": "2026-09-22T08:20:21.190Z",
+      "last_review": "2026-09-27T14:16:13.223Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "mengingat": {
       "word": "mengingat",
@@ -6282,16 +6283,16 @@
     "berangkat": {
       "word": "berangkat",
       "status": "active",
-      "updated_at": "2026-09-22T13:10:23.882Z",
+      "updated_at": "2026-09-27T14:16:18.078Z",
       "display": "berangkat",
       "cn": "出发",
       "root": "angkat",
-      "last_review": "2026-09-22T13:10:23.858Z",
+      "last_review": "2026-09-27T14:16:17.992Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "kebijakan": {
       "word": "kebijakan",
@@ -6863,14 +6864,14 @@
     "berisi": {
       "word": "berisi",
       "status": "active",
-      "updated_at": "2026-09-22T09:22:16.092Z",
+      "updated_at": "2026-09-27T14:16:15.710Z",
       "display": "berisi",
-      "last_review": "2026-09-22T09:22:16.073Z",
+      "last_review": "2026-09-27T14:16:15.624Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "gaya": {
       "word": "gaya",
@@ -13510,16 +13511,17 @@
     "pantas": {
       "word": "pantas",
       "status": "active",
-      "updated_at": "2026-09-25T02:32:02.077Z",
+      "updated_at": "2026-09-27T14:16:21.795Z",
       "display": "pantas",
       "cn": "合适；难怪；值得",
       "root": "pantas",
       "root_cn": "合适；应当",
+      "last_review": "2026-09-27T14:16:21.706Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "gelar": {
       "word": "gelar",
@@ -18699,16 +18701,16 @@
     "boros": {
       "word": "boros",
       "status": "active",
-      "updated_at": "2026-09-25T15:02:00.421Z",
+      "updated_at": "2026-09-27T14:16:24.840Z",
       "display": "boros",
       "cn": "浪费；花钱大手大脚；耗费多",
       "root": "boros",
-      "last_review": "2026-09-25T15:02:00.394Z",
+      "last_review": "2026-09-27T14:16:24.753Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "tersedia": {
       "word": "tersedia",
@@ -19310,15 +19312,16 @@
     "nyalakan": {
       "word": "nyalakan",
       "status": "active",
-      "updated_at": "2026-09-12T16:54:33.619Z",
+      "updated_at": "2026-09-27T14:16:08.330Z",
       "display": "nyalakan",
       "cn": "打开；启动（电器）",
       "root": "nyala",
+      "last_review": "2026-09-27T14:16:08.244Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "matikan": {
       "word": "matikan",
@@ -22870,16 +22873,16 @@
     "antri": {
       "word": "antri",
       "status": "active",
-      "updated_at": "2026-09-24T06:34:33.154Z",
+      "updated_at": "2026-09-27T14:16:00.500Z",
       "display": "antri",
       "cn": "排队",
       "root": "antre",
-      "last_review": "2026-09-24T06:34:33.135Z",
+      "last_review": "2026-09-27T14:16:00.410Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "antre": {
       "word": "antre",
