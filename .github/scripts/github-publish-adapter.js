@@ -3,6 +3,13 @@
 /** External GitHub-App/PAT transport for the fixed publisher; never use Actions GITHUB_TOKEN. */
 const {publish,verify}=require('./publish-staged-lesson');
 const repo=process.env.LESSON_REPOSITORY||'wenbubai2008-max/indonesian-learning';
+function reportsFromLog(log){
+ const items=[];
+ for(const m of log.matchAll(/PREFLIGHT\s+(\{[^\r\n]*\})/g)){
+  try{items.push(JSON.parse(m[1]))}catch(e){throw Error('Malformed PREFLIGHT JSON in successful staging log')}
+ }
+ return items;
+}
 function apiFor(token){
  if(!token)throw Error('LESSON_PUBLISH_TOKEN is required from an authorized external GitHub App; do not use Actions GITHUB_TOKEN');
  const base='https://api.github.com/repos/'+repo;
@@ -33,13 +40,6 @@ function apiFor(token){
   }
   if(!content.ok){const e=Error('Preflight job log HTTP '+content.status);e.code=content.status;throw e}
   return content.text();
- }
- function reportsFromLog(log){
-  const items=[];
-  for(const m of log.matchAll(/PREFLIGHT\s+(\{[^\r\n]*\})/g)){
-   try{items.push(JSON.parse(m[1]))}catch(e){throw Error('Malformed PREFLIGHT JSON in successful staging log')}
-  }
-  return items;
  }
  return {
   stageHead:()=>ref('lesson-staging-v1'),
@@ -103,4 +103,4 @@ async function main(){
  if(!result.ok)process.exitCode=1;
 }
 if(require.main===module)main().catch(e=>{console.error(JSON.stringify({ok:false,status:'ADAPTER_ERROR',code:e.code||null,message:e.message}));process.exitCode=2});
-module.exports={apiFor};
+module.exports={apiFor,reportsFromLog};
