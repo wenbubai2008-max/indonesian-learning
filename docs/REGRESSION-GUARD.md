@@ -114,6 +114,19 @@
 - final review 固定 `{title, steps:[...]}`
 - 前端保留 legacy fallback 只是容错，不能代替标准 JSON Schema
 
+### J. 2026-09-25–27 GitHub 写入事故复盘
+
+最近的“被拒绝”并非同一种错误，必须保留分层原始证据：
+
+- 2026-09-25 Sync daily vocab Run 36082208974：旧流程在生成派生提交后执行 `git pull --rebase origin main`，在 learning-pool-audit、learning-runtime、vocab-profile 三个派生文件发生合并冲突。禁止 rebase 已计算的派生文件。
+- 2026-09-25 Run 36107087843：`Completed lesson recurrence missing from daily-vocab: sederhana`，属于正式学习复现记录缺失，不是 GitHub 分支拒绝。
+- 2026-09-25 Runs 36127241719 / 36156542366：PM 的 dialogue/rewrite 结构不合合同，被回归守卫阻断；应修复实际课程 JSON，不得只改规则文字。
+- 2026-09-26 Run 36216189130：回归脚本正则表达式未闭合，产生 SyntaxError；修改守卫时必须做语法检查和实际回归。
+- 2026-09-26 提交 5c84f634：仅有 AM 文件，没有与 index 原子提交；不能凭课程文件存在宣布成功。
+- 2026-09-27 ChatGPT 连接器的 fetch_file 曾错把 `repository_full_name` 传为 `repo_full_name`；必须核对每个工具独立 schema。最初 update_ref 的完整原始异常未留存，不能武断归为同一种错误。
+
+防复发：Build 与 Sync 必须共用 `learning-data-write` 写入锁并禁止中途取消；派生写入前基于最新 origin/main 重算，若 main 前进则丢弃未发布计算结果并有界重试，严禁 stale rebase / force push / 空提交。AM/PM 与 index 同变时必须一个 Git commit；后续 Sync 成功、runtime 水位与新词退出三重验证后才能宣称成功。所有自动任务失败保持 enabled=true。GitHub Actions 日志和 ChatGPT 连接器错误是两种来源，缺失原始错误时明确标为无法确认。
+
 ## 3. 每次修改前：Preflight
 
 修改前必须回答：

@@ -436,6 +436,9 @@ try {
   ok(!/fs\.writeFileSync\([^\n]*daily-vocab-data\.js/.test(build), 'build-learning-runtime workflow does not directly write daily-vocab');
   ok(/actions\/checkout@v7/.test(sync)&&/actions\/setup-node@v7/.test(sync)&&/node-version:\s*['\"]24['\"]/.test(sync), 'sync workflow uses Node 24 actions/runtime');
   ok(/actions\/checkout@v7/.test(build)&&/actions\/setup-node@v7/.test(build)&&/node-version:\s*['\"]24['\"]/.test(build), 'build workflow uses Node 24 actions/runtime');
+  ok(!/git pull --rebase/.test(build), 'build workflow never rebases generated output');
+  ok(/for attempt in 1 2; do/.test(build) && /git reset --hard origin\/main/.test(build) && /git push origin HEAD:main/.test(build), 'build workflow retries by recomputing from current main');
+  ok(/group:\s*learning-data-write/.test(build) && /group:\s*learning-data-write/.test(sync) && /cancel-in-progress:\s*false/.test(build) && /cancel-in-progress:\s*false/.test(sync), 'build and sync share a non-cancelling write lock');
 
   const css = read('data/daily-width-fix.css');
   ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))'), 'first-paint desktop homepage layout is 3 compact columns');
