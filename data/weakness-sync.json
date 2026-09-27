@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-27T14:03:30.934Z",
+  "updated_at": "2026-09-27T14:15:48.456Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -3002,7 +3002,7 @@
     "seraya": {
       "word": "seraya",
       "status": "active",
-      "updated_at": "2026-09-27T13:59:29.256Z",
+      "updated_at": "2026-09-27T14:15:38.192Z",
       "display": "seraya",
       "cn": "同时；一边……一边……",
       "root": "seraya",
@@ -3011,7 +3011,8 @@
       "last_review": "2026-09-27T13:59:29.228Z",
       "reasons": [
         "memory_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 0
@@ -4357,7 +4358,7 @@
     "mengeluh": {
       "word": "mengeluh",
       "status": "active",
-      "updated_at": "2026-09-25T15:06:01.523Z",
+      "updated_at": "2026-09-27T14:14:40.615Z",
       "display": "mengeluh",
       "cn": "抱怨",
       "root": "keluh",
@@ -4366,7 +4367,8 @@
       "last_review": "2026-09-25T15:06:01.494Z",
       "reasons": [
         "memory_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 0
@@ -4698,7 +4700,7 @@
     "menyalin": {
       "word": "menyalin",
       "status": "active",
-      "updated_at": "2026-09-27T13:57:54.545Z",
+      "updated_at": "2026-09-27T14:15:19.811Z",
       "display": "menyalin",
       "cn": "复制",
       "root": "salin",
@@ -4707,7 +4709,8 @@
       "last_review": "2026-09-27T13:57:54.512Z",
       "reasons": [
         "memory_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 0
@@ -23480,7 +23483,7 @@
     "kabur": {
       "word": "kabur",
       "status": "active",
-      "updated_at": "2026-09-27T13:59:10.539Z",
+      "updated_at": "2026-09-27T14:14:53.806Z",
       "display": "kabur",
       "cn": "逃跑；溜走",
       "root": "kabur",
@@ -23489,7 +23492,8 @@
       "last_review": "2026-09-27T13:59:10.511Z",
       "reasons": [
         "memory_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 1
@@ -28146,7 +28150,7 @@
     "nyinggung": {
       "word": "nyinggung",
       "status": "active",
-      "updated_at": "2026-09-24T06:33:14.017Z",
+      "updated_at": "2026-09-27T14:15:05.437Z",
       "display": "nyinggung",
       "cn": "提到；触及；说到让人不舒服的话题（口语）",
       "root": "singgung",
@@ -28154,7 +28158,8 @@
       "last_wrong": "2026-09-24T06:33:13.990Z",
       "last_review": "2026-09-24T06:33:13.990Z",
       "reasons": [
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 2,
       "right_streak": 0
