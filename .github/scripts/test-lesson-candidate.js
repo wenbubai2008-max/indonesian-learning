@@ -50,6 +50,8 @@ const runTests=function runTests(validate){
   ["PM bad status","pm",x=>x.lesson.write_status="draft","PM_STATUS_INVALID"]
  ];
  for(const [name,sess,mutate,code] of matrix){const x=sess==="am"?AM():PM();mutate(x);bad(name,x,code)}
- return {passed:count,failed:0};
+ return {passed:count,failed:0,makeAm:AM,makePm:PM};
 };
-console.log('Stage 1 pre-publication guard:',JSON.stringify(runTests(validate)));
+const results=runTests(validate);
+console.log('Stage 1 pre-publication guard:',JSON.stringify(results));
+module.exports={makeAm:results.makeAm,makePm:results.makePm};
