@@ -198,6 +198,7 @@
     daily[d]=row;
     Object.keys(daily).sort().slice(0,-45).forEach(k=>delete daily[k]);
     writeJSON(DAILY_KEY,daily);
+    window.dispatchEvent(new CustomEvent('listening-answer-recorded',{detail:{word:item.word,at:stats[item.word].last_at,attempts:attempts,ok:ok,fast_first:fastFirst,elapsed_ms:elapsed,replays:replays}}));
     window.dispatchEvent(new CustomEvent('listening-profile-updated',{detail:getProfileSummary()}));
     if((!ok&&wrongStreak>=2)||(slowNow&&slowStreak>=2)||fastFirstStreak>=3){
       window.dispatchEvent(new CustomEvent('listening-weakness-updated',{detail:{word:item.word,ok:ok,wrong_streak:wrongStreak,slow_streak:slowStreak,fast_streak:fastFirstStreak}}));
