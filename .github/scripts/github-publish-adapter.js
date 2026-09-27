@@ -20,15 +20,42 @@ function apiFor(token){
  const ref=async branch=>(await request('/git/ref/heads/'+branch)).object.sha;
  async function runs(workflow,branch){return (await request('/actions/workflows/'+workflow+'/runs?branch='+branch+'&per_page=100')).workflow_runs}
  async function jobs(id){return (await request('/actions/runs/'+id+'/jobs?per_page=100')).jobs}
+ async function jobLog(id){
+  const res=await fetch(base+'/actions/jobs/'+id+'/logs',{headers:{
+   Authorization:'Bearer '+token,Accept:'application/vnd.github+json',
+   'X-GitHub-Api-Version':'2022-11-28'},redirect:'manual'});
+  let content=res;
+  if([301,302,303,307,308].includes(res.status)){
+   const location=res.headers.get('location');
+   if(!location||new URL(location).protocol!=='https:')throw Error('Job log redirect unavailable or non-HTTPS');
+   // Never forward the GitHub credential to an external log-storage redirect.
+   content=await fetch(location,{redirect:'follow'});
+  }
+  if(!content.ok){const e=Error('Preflight job log HTTP '+content.status);e.code=content.status;throw e}
+  return content.text();
+ }
+ function reportsFromLog(log){
+  const items=[];
+  for(const m of log.matchAll(/PREFLIGHT\s+(\{[^\r\n]*\})/g)){
+   try{items.push(JSON.parse(m[1]))}catch(e){throw Error('Malformed PREFLIGHT JSON in successful staging log')}
+  }
+  return items;
+ }
  return {
   stageHead:()=>ref('lesson-staging-v1'),
   stageChanges:async sha=>(await request('/commits/'+sha)).files.map(f=>({path:f.filename,status:f.status})),
-  stageApproval:async sha=>{
+  stageApproval:async(sha,candidate)=>{
    const run=(await runs('sync-daily-vocab.yml','lesson-staging-v1')).find(x=>x.head_sha===sha&&x.event==='push');
-   if(!run)return null;const js=await jobs(run.id);
-   return {id:run.id,sha,conclusion:run.conclusion,
-    preflight:js.find(x=>x.name==='preflight')?.conclusion,
-    sync:js.find(x=>x.name==='sync')?.conclusion};
+   if(!run)return null;
+   const js=await jobs(run.id),preflight=js.find(x=>x.name==='preflight');
+   let report=null;
+   if(run.conclusion==='success'&&preflight?.conclusion==='success'){
+    const matching=reportsFromLog(await jobLog(preflight.id)).filter(x=>x.candidate===candidate&&x.stageSha===sha);
+    if(matching.length!==1)throw Error('Expected exactly one matching PREFLIGHT record for staged candidate');
+    report=matching[0];
+   }
+   return {id:run.id,sha,conclusion:run.conclusion,report,
+    preflight:preflight?.conclusion,sync:js.find(x=>x.name==='sync')?.conclusion};
   },
   readJson,
   mainSnapshot:async(date,session)=>{
