@@ -133,6 +133,7 @@
 - 两个现有 writer 均采用最新 main 重算与有限重试；不使用 stale rebase、不强推、不重复生成课程、不制造空提交。定时补偿仅能恢复已经正确提交且 index 标记完成的课程；ChatGPT 在提交前失败时，GitHub 无法凭空生成未保存的课程。
 - 每次 GitHub Actions 失败：捕捉初步类别、失败阶段、退出码、时间、触发 SHA、当前本地/远端 HEAD 与原始 Run URL；写入 Job Summary，使用 upload-artifact 保存 90 天，并通过 issues:write 按 workflow+category+phase 去重建立/更新 GitHub Issue。原始完整异常以 Run 日志为准，不把初步类别当成已证实根因。
 - 如果仓库 Issues 或 artifact 服务自身不可用，原始 GitHub Run 日志依然保留；Issue/附件不可用须明确说明，不得声称记录完整。
+- 定时补偿需要真正幂等：runtime 与词汇画像的数据内容无变化时沿用上一次 `generated_at`，审计时间和 runtime 保持一致；即使定时检查运行，也不能因时钟变化而推送三份派生 JSON、触发无意义 Pages 部署。数据确实变化时才刷新时间戳与提交。
 - 不新建第三条 workflow；不在失败恢复时修改课程内容或学习词池；不使正式 08:00/18:00 自动任务 disabled。历史事故另见上一节 J。
 
 ## 3. 每次修改前：Preflight

@@ -1,4 +1,5 @@
 const fs=require('fs'),vm=require('vm'),zlib=require('zlib');
+const {isDeepStrictEqual}=require('util');
 
 const rules=JSON.parse(fs.readFileSync('data/learning-pool-rules.json','utf8'));
 if(Number(rules.master_total)!==977) throw new Error('learning-pool-rules master_total must be 977');
@@ -339,6 +340,18 @@ const runtime={
   listening_focus_pool:listeningFocusExposed
 };
 
+// Repeated recovery checks must not generate new commits solely by changing the clock.
+// Keep the last successful generation time when the complete derived payload is identical.
+const previousRuntimePath='data/learning-runtime.json';
+if(fs.existsSync(previousRuntimePath)){
+  const previousRuntime=JSON.parse(fs.readFileSync(previousRuntimePath,'utf8'));
+  const withoutGenerationTime=value=>{const copy={...value};delete copy.generated_at;return copy;};
+  if(Number.isFinite(Date.parse(previousRuntime.generated_at)) &&
+     isDeepStrictEqual(withoutGenerationTime(previousRuntime),withoutGenerationTime(runtime))){
+    runtime.generated_at=previousRuntime.generated_at;
+    console.log('Runtime unchanged: keeping previous generated_at; no timestamp-only commit.');
+  }
+}
 fs.writeFileSync('data/learning-runtime.json',JSON.stringify(runtime)+'\n');
 const audit={
   generated_at:runtime.generated_at,

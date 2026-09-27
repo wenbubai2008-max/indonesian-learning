@@ -443,6 +443,10 @@ try {
   ok(/record_incident_on_exit/.test(sync) && /record_incident_on_exit/.test(build), 'both writers capture incident phase on failure');
   ok(/actions\/upload-artifact@v4/.test(sync) && /actions\/upload-artifact@v4/.test(build), 'both writers preserve failure evidence artifacts');
   ok(/issues:\s*write/.test(sync) && /issues:\s*write/.test(build) && /gh issue create/.test(sync) && /gh issue create/.test(build), 'both writers maintain deduplicated durable incident issues');
+  const runtimeBuilderSource=read('.github/scripts/build-learning-runtime.js');
+  const profileBuilderSource=read('.github/scripts/build-vocab-profile.js');
+  ok(runtimeBuilderSource.includes('isDeepStrictEqual(withoutGenerationTime(previousRuntime),withoutGenerationTime(runtime))'), 'runtime builder preserves generated_at on no-op recovery');
+  ok(profileBuilderSource.includes('isDeepStrictEqual(withoutGenerationTime(previousProfile),withoutGenerationTime(out))'), 'profile builder preserves generated_at on no-op recovery');
 
   const css = read('data/daily-width-fix.css');
   ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))'), 'first-paint desktop homepage layout is 3 compact columns');
