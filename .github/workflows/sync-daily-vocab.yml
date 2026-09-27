@@ -70,24 +70,24 @@ jobs:
             if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
               incident_phase='scheduled_health_check'; incident_category='recovery_check'
               if node <<'HEALTH'
-            const fs=require('fs');
-            const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
-            const local=Object.fromEntries(parts.map(p=>[p.type,p.value]));
-            const date=`${local.year}-${local.month}-${local.day}`;
-            const session=Number(local.hour)>=18?'pm':'am';
-            const time=session==='am'?'08:00':'18:00';
-            const index=JSON.parse(fs.readFileSync('data/daily/index.json','utf8'));
-            const rows=(index.dates||[]).filter(r=>r&&r.date===date);
-            const lessonPath=`data/daily/${date}-${session}.json`;
-            if(rows.length!==1||rows[0][session]!==true||!fs.existsSync(lessonPath))process.exit(1);
-            const lesson=JSON.parse(fs.readFileSync(lessonPath,'utf8'));
-            if(lesson.date!==date||lesson.session!==session||lesson.time!==time||(session==='pm'&&lesson.write_status!=='lesson_complete'))process.exit(1);
-            const runtime=JSON.parse(fs.readFileSync('data/learning-runtime.json','utf8'));
-            if(runtime.lesson_watermark!==`${date} ${time}`)process.exit(1);
-            const words=session==='am'?(lesson.vocab||[]).map(v=>v&&v.word):(lesson.new_words||[]);
-            const pool=new Set((runtime.new_pool||[]).map(v=>String(Array.isArray(v)?v[0]:v&&v.word||v).trim().toLowerCase()));
-            if(words.some(v=>pool.has(String(v||'').trim().toLowerCase())))process.exit(1);
-            HEALTH
+          const fs=require('fs');
+          const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+          const local=Object.fromEntries(parts.map(p=>[p.type,p.value]));
+          const date=`${local.year}-${local.month}-${local.day}`;
+          const session=Number(local.hour)>=18?'pm':'am';
+          const time=session==='am'?'08:00':'18:00';
+          const index=JSON.parse(fs.readFileSync('data/daily/index.json','utf8'));
+          const rows=(index.dates||[]).filter(r=>r&&r.date===date);
+          const lessonPath=`data/daily/${date}-${session}.json`;
+          if(rows.length!==1||rows[0][session]!==true||!fs.existsSync(lessonPath))process.exit(1);
+          const lesson=JSON.parse(fs.readFileSync(lessonPath,'utf8'));
+          if(lesson.date!==date||lesson.session!==session||lesson.time!==time||(session==='pm'&&lesson.write_status!=='lesson_complete'))process.exit(1);
+          const runtime=JSON.parse(fs.readFileSync('data/learning-runtime.json','utf8'));
+          if(runtime.lesson_watermark!==`${date} ${time}`)process.exit(1);
+          const words=session==='am'?(lesson.vocab||[]).map(v=>v&&v.word):(lesson.new_words||[]);
+          const pool=new Set((runtime.new_pool||[]).map(v=>String(Array.isArray(v)?v[0]:v&&v.word||v).trim().toLowerCase()));
+          if(words.some(v=>pool.has(String(v||'').trim().toLowerCase())))process.exit(1);
+          HEALTH
               then
                 if node .github/scripts/regression-guard.js > /dev/null; then
                   echo 'Scheduled check: lesson, index, runtime, vocabulary and regression guard healthy; no rebuild or commit.'

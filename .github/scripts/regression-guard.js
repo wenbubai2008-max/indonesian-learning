@@ -442,6 +442,7 @@ try {
   ok(/12 1,11 \* \* \*/.test(sync) && !/12,27 1,11/.test(sync), 'sync workflow has one 08:12/18:12 compensation gate, not four checks');
   ok(/scheduled_health_check/.test(sync) && /Scheduled check: lesson, index, runtime, vocabulary and regression guard healthy; no rebuild or commit/.test(sync) && sync.indexOf("scheduled_health_check") < sync.indexOf("node <<'NODE'"), 'scheduled recovery exits read-only when healthy');
   ok(/remote_readback/.test(sync) && /Sync push and remote read-back validation succeeded/.test(sync), 'sync validates the published commit after push');
+  ok(sync.includes("\n          HEALTH\n") && !sync.includes("\n            HEALTH\n"), 'scheduled health-check heredoc delimiter stays flush after YAML block dedent');
   ok(/record_incident_on_exit/.test(sync) && /record_incident_on_exit/.test(build), 'both writers capture incident phase on failure');
   ok(/actions\/upload-artifact@v4/.test(sync) && /actions\/upload-artifact@v4/.test(build), 'both writers preserve failure evidence artifacts');
   ok(/issues:\s*write/.test(sync) && /issues:\s*write/.test(build) && /gh issue create/.test(sync) && /gh issue create/.test(build), 'both writers maintain deduplicated durable incident issues');
