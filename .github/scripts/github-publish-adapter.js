@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 /** External GitHub-App/PAT transport for the fixed publisher; never use Actions GITHUB_TOKEN. */
-const {publish}=require('./publish-staged-lesson');
+const {publish,verify}=require('./publish-staged-lesson');
 const repo=process.env.LESSON_REPOSITORY||'wenbubai2008-max/indonesian-learning';
 function apiFor(token){
  if(!token)throw Error('LESSON_PUBLISH_TOKEN is required from an authorized external GitHub App; do not use Actions GITHUB_TOKEN');
@@ -61,9 +61,17 @@ function apiFor(token){
 async function main(){
  const args=process.argv.slice(2),arg=k=>{const i=args.indexOf('--'+k);return i>=0?args[i+1]:undefined};
  const date=arg('date'),session=arg('session'),stageSha=arg('stage-sha');
- if(!date||!session||!stageSha)throw Error('Required: --date YYYY-MM-DD --session am|pm --stage-sha 40hex [--publish]');
- const dryRun=!args.includes('--publish');
- const result=await publish(apiFor(process.env.LESSON_PUBLISH_TOKEN),{date,session,stageSha,dryRun});
+ if(!date||!session)throw Error('Required: --date YYYY-MM-DD --session am|pm [--stage-sha 40hex --publish | --verify-existing]');
+ const api=apiFor(process.env.LESSON_PUBLISH_TOKEN);
+ let result;
+ if(args.includes('--verify-existing')){
+  const target='data/daily/'+date+'-'+session+'.json';
+  const lesson=await api.readJson(target,'main');
+  result=await verify(api,{date,session,lesson,target,existing:true});
+ }else{
+  if(!stageSha)throw Error('stageSha required for publishing');
+  result=await publish(api,{date,session,stageSha,dryRun:!args.includes('--publish')});
+ }
  console.log(JSON.stringify(result,null,2));
  if(!result.ok)process.exitCode=1;
 }
