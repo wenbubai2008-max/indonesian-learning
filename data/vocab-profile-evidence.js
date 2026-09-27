@@ -31,8 +31,9 @@
     catch(e){return []}
   }
   function records(){
-    let entries=safeParse(KEY);
-    if(!root.localStorage.getItem(KEY)){
+    let entries=safeParse(KEY),hasCurrent=false;
+    try{hasCurrent=!!root.localStorage.getItem(KEY)}catch(e){return []}
+    if(!hasCurrent){
       // The first profile version only captured genuine auto-training events.
       entries=safeParse(LEGACY).map(x=>Object.assign({},x,{source:'auto'}));
     }
