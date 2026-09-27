@@ -85,7 +85,8 @@
     if(!w)return '<div class="vpEmpty">点击上面的重点弱词，可以查看系统为什么把它排到前面。</div>';
     const sig=(w.signals||[]).map(x=>'<span class="vpSignal">'+esc(signalLabel[x]||x)+'</span>').join('');
     const advice=(w.signals||[]).includes('automation_fail')?'优先做主动提取和延迟验证；不要只重复看答案。':(w.signals||[]).includes('quick_wrong')?'先做短时识别练习，再回到主动提取验证。':'继续用间隔复现确认是否已经稳定。';
-    return '<div class="vpWeakDetail"><b style="font-size:20px">'+esc(w.word)+'</b><div style="margin-top:4px;color:#475467">'+esc(w.cn||'')+'</div><div class="vpSignals">'+sig+'</div><div style="margin-top:11px;font-size:13px;line-height:1.6;color:#5f6c7d"><b>当前判断：</b>'+esc(advice)+'</div><div class="vpActionRow"><button class="vpActionPrimary" type="button" data-vp-action="automation">去自动训练</button><button class="vpActionSoft" type="button" data-vp-action="quick">去快速练习</button></div></div>';
+    const details=[];if(Number.isSafeInteger(w.wrong_count)&&w.wrong_count>0)details.push('累计答错 '+w.wrong_count+' 次');if(w.last_wrong)details.push('最近答错 '+w.last_wrong.slice(0,10));if(w.last_review)details.push('最近复习 '+w.last_review.slice(0,10));
+    return '<div class="vpWeakDetail"><b style="font-size:20px">'+esc(w.word)+'</b><div style="margin-top:4px;color:#475467">'+esc(w.cn||'')+'</div><div class="vpSignals">'+sig+'</div>'+(details.length?'<div style="font-size:12px;color:#667085;margin-top:8px">'+details.map(esc).join(' · ')+'</div>':'')+'<div style="margin-top:11px;font-size:13px;line-height:1.6;color:#5f6c7d"><b>当前判断：</b>'+esc(advice)+'</div><div class="vpActionRow"><button class="vpActionPrimary" type="button" data-vp-action="automation">去自动训练</button><button class="vpActionSoft" type="button" data-vp-action="quick">去快速练习</button></div></div>';
   }
   function suggestions(data){
     const f=data.focus_words||[],counts={auto:0,quick:0,dont:0,fuzzy:0};
