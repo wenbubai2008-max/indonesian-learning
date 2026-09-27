@@ -1,33 +1,19 @@
 {
   "version": 1,
-  "generated_at": "2026-09-27T14:01:11.754Z",
-  "source_updated_at": "2026-09-27T14:00:01.453Z",
+  "generated_at": "2026-09-27T14:06:01.917Z",
+  "source_updated_at": "2026-09-27T14:03:30.934Z",
   "taught_total": 545,
-  "confirmed_mastered": 154,
-  "needs_reinforcement": 258,
+  "confirmed_mastered": 168,
+  "needs_reinforcement": 244,
   "unverified": 133,
-  "mastery_percent": 28.3,
+  "mastery_percent": 30.8,
   "primary_master_total": 977,
   "primary_taught_unique": 293,
   "primary_unlearned_total": 684,
   "primary_coverage_percent": 30,
   "primary_eligible_new_total": 370,
-  "focus_total": 258,
+  "focus_total": 244,
   "focus_words": [
-    {
-      "word": "mendukung",
-      "score": 136,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont",
-        "fuzzy"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-22T13:14:41.472Z",
-      "last_review": "2026-09-23T03:24:19.393Z",
-      "cn": "支持"
-    },
     {
       "word": "menunjukkan",
       "score": 122,
@@ -55,19 +41,6 @@
       "cn": "打算；意图；认真想做的心意"
     },
     {
-      "word": "nyebelin",
-      "score": 118,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-09-22T08:20:53.151Z",
-      "last_review": "2026-09-27T13:58:00.716Z",
-      "cn": "烦人、让人不爽"
-    },
-    {
       "word": "menegaskan",
       "score": 116,
       "signals": [
@@ -81,43 +54,65 @@
       "cn": "强调；明确说明；确认"
     },
     {
-      "word": "mengatasi",
-      "score": 116,
+      "word": "layak",
+      "score": 108,
       "signals": [
         "automation_fail",
         "quick_wrong",
-        "dont"
+        "fuzzy"
       ],
       "wrong_count": 1,
-      "last_wrong": "2026-09-22T13:13:13.376Z",
-      "last_review": "2026-09-27T13:56:52.926Z",
-      "cn": "解决、克服"
+      "last_wrong": "2026-09-16T07:55:56.953Z",
+      "last_review": "2026-09-22T08:17:05.155Z",
+      "cn": "值得；合适；够资格"
     },
     {
-      "word": "berkat",
-      "score": 116,
+      "word": "memanggil",
+      "score": 78,
       "signals": [
         "automation_fail",
-        "quick_wrong",
         "dont"
       ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-22T09:21:50.679Z",
-      "last_review": "2026-09-27T13:59:39.591Z",
-      "cn": "多亏了"
+      "wrong_count": 0,
+      "last_wrong": "",
+      "last_review": "2026-09-27T13:59:37.779Z",
+      "cn": "呼唤 / 叫"
     },
     {
-      "word": "ngerepotin",
-      "score": 116,
+      "word": "melawan",
+      "score": 78,
       "signals": [
         "automation_fail",
-        "quick_wrong",
         "dont"
       ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-22T09:19:22.248Z",
-      "last_review": "2026-09-27T13:56:14.828Z",
-      "cn": "给人添麻烦"
+      "wrong_count": 0,
+      "last_wrong": "",
+      "last_review": "2026-09-27T13:58:55.817Z",
+      "cn": "反对、对抗"
+    },
+    {
+      "word": "bebas",
+      "score": 78,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 0,
+      "last_wrong": "",
+      "last_review": "2026-09-27T13:58:15.767Z",
+      "cn": "自由的 / 免费的"
+    },
+    {
+      "word": "sebel",
+      "score": 78,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 0,
+      "last_wrong": "",
+      "last_review": "2026-09-27T13:56:45.958Z",
+      "cn": "烦；恼火"
     }
   ],
   "definitions": {
