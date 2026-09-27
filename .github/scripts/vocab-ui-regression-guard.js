@@ -58,8 +58,8 @@ try{
   new vm.Script(profileEvidence,{filename:'data/vocab-profile-evidence.js'});
   new vm.Script(listenUi,{filename:'data/listening-word-training.js'});
   const evidencePos=externalScripts.findIndex(x=>x.includes('data/vocab-profile-evidence.js'));
-  const profilePos=externalScripts.findIndex(x=>x.includes('data/vocab-profile-ui.js'));
-  ok(evidencePos>=0&&profilePos>evidencePos,'local profile evidence must load before profile UI');
+  const profileScriptPos=externalScripts.findIndex(x=>x.includes('data/vocab-profile-ui.js'));
+  ok(evidencePos>=0&&profileScriptPos>evidencePos,'local profile evidence must load before profile UI');
   ok(profileEvidence.includes('indo_vocab_profile_evidence_v2')&&profileEvidence.includes('DAILY_VOCAB_DB'),'local evidence must limit observations to formally taught words');
   ok(profileEvidence.includes('quick-practice-updated')&&profileEvidence.includes('listening-answer-recorded')&&profileEvidence.includes('automation-training-updated'),'profile must capture all three actual training result events');
   ok(listenUi.includes("new CustomEvent('listening-answer-recorded'"),'listening module must emit per-answer evidence');
