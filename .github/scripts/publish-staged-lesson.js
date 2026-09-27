@@ -5,6 +5,25 @@ const crypto=require('node:crypto');
 const {plan}=require('./plan-lesson-publication');
 const sha256=x=>crypto.createHash('sha256').update(JSON.stringify(x)).digest('hex');
 const same=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+function classifyMainWrite(e){
+ const code=Number(e?.code||e?.status)||null, message=String(e?.message||e||'').slice(0,350);
+ const limited=/rate.limit|secondary.limit|abuse.detection/i.test(message);
+ if(code===429||(code===403&&limited))return {status:'MAIN_RATE_LIMIT',code,message};
+ if(code===401||code===403)return {status:'MAIN_PERMISSION_DENIED',code,message};
+ if((code===409||code===422)&&/fast.forward|reference.update.failed|conflict/i.test(message))
+  return {status:'MAIN_REF_CONFLICT',code,message};
+ if(code===422)return {status:'MAIN_VALIDATION_FAILED',code,message};
+ if(/safety.check|blocked.by.*safety|安全检查/.test(message.toLowerCase()))
+  return {status:'UPSTREAM_SAFETY_BLOCK',code,message};
+ if(code&&code>=500)return {status:'GITHUB_SERVER_ERROR',code,message};
+ return {status:'MAIN_UPDATE_FAILED',code,message};
+}
+function approvedEvidence(approval,{candidate,stageSha,candidateHash}){
+ const r=approval?.report;
+ return Boolean(r&&r.candidate===candidate&&r.stageSha===stageSha&&r.candidateHash===candidateHash&&
+  /^[a-f0-9]{40}$/i.test(r.mainSha||'')&&r.ok===true&&r.status==='ready'&&
+  Array.isArray(r.errors)&&r.errors.length===0&&/^[a-f0-9]{64}$/i.test(r.baselineFingerprint||''));
+}
 const stop=(status,detail,extra={})=>({ok:false,status,detail,...extra});
 const draftPath=(date,session)=>'staging/drafts/'+date+'-'+session+'.json';
 const targetPath=(date,session)=>'data/daily/'+date+'-'+session+'.json';
@@ -22,9 +41,11 @@ async function publish(api,{date,session,stageSha,dryRun=false,planner=plan}){
   if(!changes.some(x=>x.path===candidate&&['added','modified'].includes(x.status)))
    return stop('UNAPPROVED_DRAFT','Exact stage commit must add or modify requested draft');
   const lesson=await api.readJson(candidate,stageSha);
-  const approval=await api.stageApproval(stageSha);
+  const approval=await api.stageApproval(stageSha,candidate);
   if(!approval||approval.conclusion!=='success'||approval.preflight!=='success'||approval.sync!=='skipped'||approval.sha!==stageSha)
    return stop('PREFLIGHT_NOT_PASSED','Exact stage push must pass read-only preflight',{runId:approval?.id||null});
+  if(!approvedEvidence(approval,{candidate,stageSha,candidateHash:sha256(lesson)}))
+   return stop('PREFLIGHT_EVIDENCE_INVALID','Missing or mismatched PREFLIGHT log: exact path, candidate hash, stage SHA and baseline required',{runId:approval.id});
   if(lesson.date!==date||lesson.session!==session)return stop('CANDIDATE_IDENTITY','Draft date/session mismatch');
   phase='snapshot';
   const baseline=await api.mainSnapshot(date,session);
@@ -48,7 +69,8 @@ async function publish(api,{date,session,stageSha,dryRun=false,planner=plan}){
    const current=await api.mainSnapshot(date,session);
    if(current.index.dates.some(x=>x.date===date&&x[session]===true)&&same(current.publishedLesson,lesson))
     return await verify(api,{date,session,lesson,target,commit,existing:false});
-   return stop('MAIN_REF_CONFLICT','No force push; draft retained, revalidate current state on recovery',{code:e.code||null,message:String(e.message||e).slice(0,250),stageSha});
+   const failure=classifyMainWrite(e);
+   return stop(failure.status,'No force push; draft retained. Inspect original main update failure and remote state',{code:failure.code,message:failure.message,stageSha});
   }
   return await verify(api,{date,session,lesson,target,commit,existing:false});
  }catch(e){
@@ -72,4 +94,4 @@ async function verify(api,{date,session,lesson,target,commit,existing}){
  if(pages!=='success')return stop(pages==='failure'?'PAGES_FAILED':'PAGES_PENDING','Final Pages deployment not yet successful',{commit:commit||null});
  return {ok:true,status:'VERIFIED_COMPLETE',commit:commit||null,existing,stageRetained:true};
 }
-module.exports={publish,verify};
+module.exports={publish,verify,classifyMainWrite,approvedEvidence};
