@@ -52,7 +52,18 @@ try{
   ok(!index.includes('A2+ → B1 · 雅加达真实口语优先 · 你的个人词库'),'retired homepage subtitle must stay removed');
   ok(!index.includes('每天 08:00 / 18:00 自动生成到网站。学完后只点一次'),'retired homepage lesson instructions must stay removed');
   const profileUi=read('data/vocab-profile-ui.js');
+  const profileEvidence=read('data/vocab-profile-evidence.js');
+  const listenUi=read('data/listening-word-training.js');
   new vm.Script(profileUi,{filename:'data/vocab-profile-ui.js'});
+  new vm.Script(profileEvidence,{filename:'data/vocab-profile-evidence.js'});
+  new vm.Script(listenUi,{filename:'data/listening-word-training.js'});
+  const evidencePos=externalScripts.findIndex(x=>x.includes('data/vocab-profile-evidence.js'));
+  const profilePos=externalScripts.findIndex(x=>x.includes('data/vocab-profile-ui.js'));
+  ok(evidencePos>=0&&profilePos>evidencePos,'local profile evidence must load before profile UI');
+  ok(profileEvidence.includes('indo_vocab_profile_evidence_v2')&&profileEvidence.includes('DAILY_VOCAB_DB'),'local evidence must limit observations to formally taught words');
+  ok(profileEvidence.includes('quick-practice-updated')&&profileEvidence.includes('listening-answer-recorded')&&profileEvidence.includes('automation-training-updated'),'profile must capture all three actual training result events');
+  ok(listenUi.includes("new CustomEvent('listening-answer-recorded'"),'listening module must emit per-answer evidence');
+  ok(profileUi.includes('VocabProfileEvidence.summarize()'),'profile detail ability totals must use local verified evidence');
   ok(profileUi.includes("home.querySelector(':scope > .hero')"),'profile fallback must mount directly after daily hero');
   ok(!profileUi.includes('DAILY_VOCAB_DB')&&!profileUi.includes('WeaknessPool'),'profile homepage must not recompute full vocab databases');
   ok(profileUi.includes('openVocabProfileDetail'),'profile summary must expose a clickable detail entry');
