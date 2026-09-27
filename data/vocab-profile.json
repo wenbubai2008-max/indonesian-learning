@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-09-27T13:56:00.422Z",
-  "source_updated_at": "2026-09-27T13:53:02.497Z",
+  "generated_at": "2026-09-27T14:01:11.754Z",
+  "source_updated_at": "2026-09-27T14:00:01.453Z",
   "taught_total": 545,
   "confirmed_mastered": 154,
   "needs_reinforcement": 258,
@@ -29,6 +29,19 @@
       "cn": "支持"
     },
     {
+      "word": "menunjukkan",
+      "score": 122,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "wrong_count": 4,
+      "last_wrong": "2026-09-27T13:58:43.322Z",
+      "last_review": "2026-09-27T13:58:43.322Z",
+      "cn": "指出"
+    },
+    {
       "word": "niat",
       "score": 120,
       "signals": [
@@ -38,21 +51,8 @@
       ],
       "wrong_count": 3,
       "last_wrong": "2026-09-25T13:46:19.310Z",
-      "last_review": "2026-09-25T13:46:19.310Z",
+      "last_review": "2026-09-27T13:56:22.640Z",
       "cn": "打算；意图；认真想做的心意"
-    },
-    {
-      "word": "menunjukkan",
-      "score": 120,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont"
-      ],
-      "wrong_count": 3,
-      "last_wrong": "2026-09-23T03:23:10.292Z",
-      "last_review": "2026-09-23T03:23:10.292Z",
-      "cn": "指出"
     },
     {
       "word": "nyebelin",
@@ -64,7 +64,7 @@
       ],
       "wrong_count": 2,
       "last_wrong": "2026-09-22T08:20:53.151Z",
-      "last_review": "2026-09-22T13:12:35.316Z",
+      "last_review": "2026-09-27T13:58:00.716Z",
       "cn": "烦人、让人不爽"
     },
     {
@@ -90,7 +90,7 @@
       ],
       "wrong_count": 1,
       "last_wrong": "2026-09-22T13:13:13.376Z",
-      "last_review": "2026-09-24T06:32:38.582Z",
+      "last_review": "2026-09-27T13:56:52.926Z",
       "cn": "解决、克服"
     },
     {
@@ -103,7 +103,7 @@
       ],
       "wrong_count": 1,
       "last_wrong": "2026-09-22T09:21:50.679Z",
-      "last_review": "2026-09-22T13:05:53.754Z",
+      "last_review": "2026-09-27T13:59:39.591Z",
       "cn": "多亏了"
     },
     {
@@ -116,7 +116,7 @@
       ],
       "wrong_count": 1,
       "last_wrong": "2026-09-22T09:19:22.248Z",
-      "last_review": "2026-09-24T06:35:26.309Z",
+      "last_review": "2026-09-27T13:56:14.828Z",
       "cn": "给人添麻烦"
     }
   ],
