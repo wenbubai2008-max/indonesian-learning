@@ -68,7 +68,19 @@ function apiFor(token){
    const sameDayAm=await readJson('data/daily/'+date+'-am.json',sha,true);
    const previousPm=await readJson('data/daily/'+prev+'-pm.json',sha,true);
    const publishedLesson=await readJson('data/daily/'+date+'-'+session+'.json',sha,true);
-   return {sha,tree,index,runtime,rules,sameDayAm,previousPm,publishedLesson};
+   const reviewHistory=[];
+   const at=Date.parse(date+'T00:00:00Z');
+   for(const row of index.dates||[]){
+    const d=Date.parse(String(row.date||'')+'T00:00:00Z');
+    if(!Number.isFinite(d)||d<at-7*86400000||d>at)continue;
+    for(const slot of ['am','pm']){
+     if(row[slot]!==true||row.date===date&&(session==='am'||slot!=='am'))continue;
+     const h=await readJson('data/daily/'+row.date+'-'+slot+'.json',sha);
+     if(h.date!==row.date||h.session!==slot)throw Error('Completed review history mismatch: '+row.date+'-'+slot);
+     reviewHistory.push(h);
+    }
+   }
+   return {sha,tree,index,runtime,rules,sameDayAm,previousPm,publishedLesson,reviewHistory};
   },
   createBlob:async content=>(await request('/git/blobs','POST',{content,encoding:'utf-8'})).sha,
   createTree:async(base,entries)=>(await request('/git/trees','POST',{base_tree:base,tree:entries})).sha,

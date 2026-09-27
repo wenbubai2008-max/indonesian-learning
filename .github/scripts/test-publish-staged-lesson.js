@@ -21,7 +21,7 @@ function fixture(change={}){
   stageChanges:async()=>[{path:'staging/drafts/'+date+'-am.json',status:'added'}],
   stageApproval:async()=>state.approval,
   readJson:async(path,ref)=>ref===sha?state.lesson:path.endsWith('index.json')?state.index:state.lesson,
-  mainSnapshot:async()=>({sha:state.currentMain||main,tree:'d'.repeat(40),index:state.index,runtime:state.runtime,rules:{},publishedLesson:state.publishedLesson}),
+  mainSnapshot:async()=>({sha:state.currentMain||main,tree:'d'.repeat(40),index:state.index,runtime:state.runtime,rules:{},publishedLesson:state.publishedLesson,reviewHistory:state.reviewHistory||[]}),
   createBlob:async content=>{state.blobs.push(content);return ('e'.repeat(39)+state.blobs.length)},
   createTree:async(base,entries)=>{state.treeEntries=entries;return 'f'.repeat(40)},
   createCommit:async(message,tree,parent)=>{state.commits.push({message,tree,parent});return state.commit},
@@ -48,6 +48,12 @@ async function test(label,fn){await fn();tests++;console.log('PASS '+label)}
   assert.equal(state.approval.report.mainSha,main,'approval pins previous main SHA');
   const r=await publish(api,{date,session,stageSha:sha,planner});
   assert.equal(r.status,'VERIFIED_COMPLETE');assert.equal(state.commits[0].parent,advanced);
+ });
+ await test('current snapshot review history is passed to the publication planner',async()=>{
+  const {state,api}=fixture({reviewHistory:[{date:'2026-09-27',session:'pm'}]});let received;
+  const planner=x=>{received=x.reviewHistory;return {ok:true,status:'ready',candidateHash:digest(state.lesson),files:[{path:'data/daily/'+date+'-am.json',content:'{}'},{path:'data/daily/index.json',content:'{}'}]}};
+  const r=await publish(api,{date,session,stageSha:sha,dryRun:true,planner});
+  assert.equal(r.status,'READY_DRY_RUN');assert.deepEqual(received,state.reviewHistory);
  });
  await test('dry-run leaves main untouched',async()=>{
   const {state,api,planner}=fixture();let r=await publish(api,{date,session,stageSha:sha,dryRun:true,planner});
