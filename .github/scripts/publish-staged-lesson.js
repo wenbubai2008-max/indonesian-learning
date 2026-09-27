@@ -68,7 +68,7 @@ async function publish(api,{date,session,stageSha,dryRun=false,planner=plan}){
   try{await api.updateMain(commit)}catch(e){
    const current=await api.mainSnapshot(date,session);
    if(current.index.dates.some(x=>x.date===date&&x[session]===true)&&same(current.publishedLesson,lesson))
-    return await verify(api,{date,session,lesson,target,commit,existing:false});
+    return await verify(api,{date,session,lesson,target,existing:true});
    const failure=classifyMainWrite(e);
    return stop(failure.status,'No force push; draft retained. Inspect original main update failure and remote state',{code:failure.code,message:failure.message,stageSha});
   }
@@ -86,7 +86,7 @@ async function verify(api,{date,session,lesson,target,commit,existing}){
  const runtime=await api.runtime();
  const expected=date+' '+(session==='am'?'08:00':'18:00');
  const words=Array.isArray(lesson.new_words)?lesson.new_words:lesson.vocab.map(v=>v.word);
- if(runtime.lesson_watermark!==expected||words.some(w=>runtime.new_pool.includes(w)))
+ if(typeof runtime.lesson_watermark!=='string'||runtime.lesson_watermark<expected||words.some(w=>runtime.new_pool.includes(w)))
   return stop('PUBLISHED_PENDING_SYNC','Official two-file publication succeeded; downstream runtime not yet verified',{commit:commit||null,watermark:runtime.lesson_watermark});
  const sync=await api.syncStatus(commit,date,session);
  if(sync!=='success')return stop(sync==='failure'?'SYNC_FAILED':'PUBLISHED_PENDING_SYNC','Relevant Sync run not yet successful',{commit:commit||null});
