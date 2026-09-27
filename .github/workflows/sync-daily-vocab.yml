@@ -13,10 +13,10 @@ on:
       - 'data/daily/*-pm.json'
   schedule:
     # Safety fallback only. Normal lesson sync is triggered by the atomic lesson+index push.
-    # 01:12/01:27 and 11:12/11:27 UTC = 08:12/08:27 and 18:12/18:27 Jakarta.
+    # 01:12 and 11:12 UTC = 08:12 and 18:12 Jakarta; the scheduled run is a read-only gate when healthy.
     # Recovery is idempotent; it cannot invent a lesson that was never committed.
     # Unchanged derived payloads preserve generated_at using semantic JSON comparison; no empty Pages deployment.
-    - cron: '12,27 1,11 * * *'
+    - cron: '12 1,11 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -67,6 +67,35 @@ jobs:
             echo "Sync attempt ${attempt}/2: recompute from latest origin/main"
             git fetch origin main
             git reset --hard origin/main
+            if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+              incident_phase='scheduled_health_check'; incident_category='recovery_check'
+              if node <<'HEALTH'
+            const fs=require('fs');
+            const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+            const local=Object.fromEntries(parts.map(p=>[p.type,p.value]));
+            const date=`${local.year}-${local.month}-${local.day}`;
+            const session=Number(local.hour)>=18?'pm':'am';
+            const time=session==='am'?'08:00':'18:00';
+            const index=JSON.parse(fs.readFileSync('data/daily/index.json','utf8'));
+            const rows=(index.dates||[]).filter(r=>r&&r.date===date);
+            const lessonPath=`data/daily/${date}-${session}.json`;
+            if(rows.length!==1||rows[0][session]!==true||!fs.existsSync(lessonPath))process.exit(1);
+            const lesson=JSON.parse(fs.readFileSync(lessonPath,'utf8'));
+            if(lesson.date!==date||lesson.session!==session||lesson.time!==time||(session==='pm'&&lesson.write_status!=='lesson_complete'))process.exit(1);
+            const runtime=JSON.parse(fs.readFileSync('data/learning-runtime.json','utf8'));
+            if(runtime.lesson_watermark!==`${date} ${time}`)process.exit(1);
+            const words=session==='am'?(lesson.vocab||[]).map(v=>v&&v.word):(lesson.new_words||[]);
+            const pool=new Set((runtime.new_pool||[]).map(v=>String(Array.isArray(v)?v[0]:v&&v.word||v).trim().toLowerCase()));
+            if(words.some(v=>pool.has(String(v||'').trim().toLowerCase())))process.exit(1);
+            HEALTH
+              then
+                if node .github/scripts/regression-guard.js > /dev/null; then
+                  echo 'Scheduled check: lesson, index, runtime, vocabulary and regression guard healthy; no rebuild or commit.'
+                  exit 0
+                fi
+              fi
+              echo 'Scheduled check found incomplete/stale state; enter idempotent recovery.'
+            fi
             incident_phase='reconcile_completed_lessons'; incident_category='lesson_or_data_integrity'
             node <<'NODE'
           const fs=require('fs');
@@ -276,7 +305,12 @@ jobs:
           git commit -m 'Sync daily lesson vocabulary and runtime'
           incident_phase='publish_commit'; incident_category='git_push_or_concurrency'
           if git push origin HEAD:main; then
-            echo "Sync push succeeded on attempt ${attempt}."
+            incident_phase='remote_readback'; incident_category='post_commit_validation'
+            git fetch origin main
+            git reset --hard origin/main
+            node .github/scripts/regression-guard.js
+            node .github/scripts/vocab-ui-regression-guard.js
+            echo "Sync push and remote read-back validation succeeded on attempt ${attempt}."
             exit 0
           fi
           echo "::warning title=Sync branch advanced or push failed::Attempt ${attempt} did not publish; discarding derived local commit and recomputing from current main."
