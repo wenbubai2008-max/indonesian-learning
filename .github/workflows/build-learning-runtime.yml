@@ -21,6 +21,7 @@ on:
       - '.github/scripts/build-vocab-profile.js'
       - '.github/scripts/write-vocab-profile-snapshot.js'
       - '.github/scripts/test-vocab-profile-snapshot.js'
+      - '.github/scripts/test-vocab-profile-evidence.js'
       - '.github/scripts/inject-vocab-profile.js'
       - '.github/scripts/regression-guard.js'
       - '.github/scripts/vocab-ui-regression-guard.js'
@@ -32,6 +33,8 @@ on:
       - 'data/home-learning-upgrade-v2.js'
       - 'data/automation-training.js'
       - 'data/vocab-profile-ui.js'
+      - 'data/vocab-profile-evidence.js'
+      - 'data/listening-word-training.js'
       - 'data/history-v2.js'
       - 'data/daily-light-test.js'
       - 'data/daily-ui-polish.js'
@@ -121,6 +124,10 @@ jobs:
           node --check data/automation-training.js
           node --check data/home-modules-layout.js
           node --check data/vocab-profile-ui.js
+          node --check data/vocab-profile-evidence.js
+          node --check data/listening-word-training.js
+          node --check .github/scripts/test-vocab-profile-evidence.js
+          node .github/scripts/test-vocab-profile-evidence.js
           node --check .github/scripts/build-vocab-profile.js
           node --check .github/scripts/write-vocab-profile-snapshot.js
           node --check .github/scripts/test-vocab-profile-snapshot.js
