@@ -13,11 +13,13 @@ on:
       - 'data/daily/*-pm.json'
   schedule:
     # Safety fallback only. Normal lesson sync is triggered by the atomic lesson+index push.
-    # 01:10/11:10 UTC = 08:10/18:10 Asia/Jakarta.
-    - cron: '10 1,11 * * *'
+    # 01:12/01:27 and 11:12/11:27 UTC = 08:12/08:27 and 18:12/18:27 Jakarta.
+    # Recovery is idempotent; it cannot invent a lesson that was never committed.
+    - cron: '12,27 1,11 * * *'
   workflow_dispatch:
 permissions:
   contents: write
+  issues: write
 concurrency:
   # Share one writer lock with build-learning-runtime.yml.
   group: learning-data-write
@@ -35,13 +37,36 @@ jobs:
       - name: Sync vocab safely
         shell: bash
         run: |
-          set -e
+          set -Eeuo pipefail
+          incident_phase='startup'
+          incident_category='unknown'
+          record_incident_on_exit() {
+            rc=$?
+            if [ "$rc" -eq 0 ]; then return 0; fi
+            report="$RUNNER_TEMP/learning-incident.txt"
+            {
+              printf 'Workflow: %s\n' "$GITHUB_WORKFLOW"
+              printf 'Category (preliminary): %s\n' "$incident_category"
+              printf 'Phase: %s\n' "$incident_phase"
+              printf 'Exit code: %s\n' "$rc"
+              printf 'UTC time: %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+              printf 'Run: https://github.com/%s/actions/runs/%s/attempts/%s\n' "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
+              printf 'Trigger SHA: %s\n' "$GITHUB_SHA"
+              printf 'Local HEAD: %s\n' "$(git rev-parse HEAD 2>/dev/null || echo unavailable)"
+              printf 'Fetched origin/main: %s\n' "$(git rev-parse origin/main 2>/dev/null || echo unavailable)"
+              printf 'Full error details: see the failing step in the linked GitHub run.\n'
+            } > "$report"
+            { echo '### Learning workflow failure'; cat "$report"; } >> "$GITHUB_STEP_SUMMARY" || true
+          }
+          trap record_incident_on_exit EXIT
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           for attempt in 1 2; do
+            incident_phase="fetch_main"; incident_category="git_transport"
             echo "Sync attempt ${attempt}/2: recompute from latest origin/main"
             git fetch origin main
             git reset --hard origin/main
+            incident_phase='reconcile_completed_lessons'; incident_category='lesson_or_data_integrity'
             node <<'NODE'
           const fs=require('fs');
           const dbPath='data/daily-vocab-data.js';
@@ -226,14 +251,17 @@ jobs:
           console.log(`Reconciled ${files.length} lesson files; appended ${appended} missing taught words; repaired ${repairedOccurrences} missing occurrences.`);
           fs.writeFileSync(dbPath,'window.DAILY_VOCAB_DB = '+JSON.stringify(db,null,2)+';\n');
           NODE
+          incident_phase='build_runtime'; incident_category='derived_data'
           node .github/scripts/build-learning-runtime.js
           node --check .github/scripts/build-vocab-profile.js
           node --check .github/scripts/inject-vocab-profile.js
           node --check data/vocab-profile-ui.js
           node .github/scripts/build-vocab-profile.js
           node .github/scripts/inject-vocab-profile.js
+          incident_phase='regression_guard'; incident_category='validation'
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
+          incident_phase='prepare_commit'; incident_category='git_write'
           git add data/daily-vocab-data.js data/learning-runtime.json index.html data/vocab-profile.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
           if git diff --cached --quiet; then
             git fetch origin main
@@ -245,6 +273,7 @@ jobs:
             continue
           fi
           git commit -m 'Sync daily lesson vocabulary and runtime'
+          incident_phase='publish_commit'; incident_category='git_push_or_concurrency'
           if git push origin HEAD:main; then
             echo "Sync push succeeded on attempt ${attempt}."
             exit 0
@@ -253,3 +282,39 @@ jobs:
           done
           echo '::error title=Sync push failed::Two safe attempts failed; no force push, no stale rebase. Inspect original git push errors.'
           exit 1
+      - name: Record failure as a durable GitHub issue
+        if: failure()
+        continue-on-error: true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          report="$RUNNER_TEMP/learning-incident.txt"
+          if [ ! -s "$report" ]; then
+            {
+              echo "Workflow: $GITHUB_WORKFLOW"
+              echo 'Category (preliminary): setup_or_runner'
+              echo 'Phase: before_capture'
+              echo "Run: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/attempts/$GITHUB_RUN_ATTEMPT"
+              echo 'Full error details: see the failing step in the linked GitHub run.'
+            } > "$report"
+          fi
+          category=$(sed -n 's/^Category (preliminary): //p' "$report" | head -n 1)
+          phase=$(sed -n 's/^Phase: //p' "$report" | head -n 1)
+          title="[Learning incident] $GITHUB_WORKFLOW: $category/$phase"
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state all --limit 500 --json number,title | jq -r --arg title "$title" '.[] | select(.title == $title) | .number' | head -n 1)
+          if [ -n "$existing" ]; then
+            gh issue reopen "$existing" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 || true
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body-file "$report"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file "$report"
+          fi
+      - name: Preserve original failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: learning-incident-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/learning-incident.txt
+          if-no-files-found: warn
+          retention-days: 90

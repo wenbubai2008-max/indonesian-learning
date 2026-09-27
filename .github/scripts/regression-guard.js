@@ -439,6 +439,10 @@ try {
   ok(!/git pull --rebase/.test(build), 'build workflow never rebases generated output');
   ok(/for attempt in 1 2; do/.test(build) && /git reset --hard origin\/main/.test(build) && /git push origin HEAD:main/.test(build), 'build workflow retries by recomputing from current main');
   ok(/group:\s*learning-data-write/.test(build) && /group:\s*learning-data-write/.test(sync) && /cancel-in-progress:\s*false/.test(build) && /cancel-in-progress:\s*false/.test(sync), 'build and sync share a non-cancelling write lock');
+  ok(/12,27 1,11 \* \* \*/.test(sync), 'sync workflow has two daily compensation checks per session');
+  ok(/record_incident_on_exit/.test(sync) && /record_incident_on_exit/.test(build), 'both writers capture incident phase on failure');
+  ok(/actions\/upload-artifact@v4/.test(sync) && /actions\/upload-artifact@v4/.test(build), 'both writers preserve failure evidence artifacts');
+  ok(/issues:\s*write/.test(sync) && /issues:\s*write/.test(build) && /gh issue create/.test(sync) && /gh issue create/.test(build), 'both writers maintain deduplicated durable incident issues');
 
   const css = read('data/daily-width-fix.css');
   ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))'), 'first-paint desktop homepage layout is 3 compact columns');

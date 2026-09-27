@@ -127,6 +127,14 @@
 
 防复发：Build 与 Sync 必须共用 `learning-data-write` 写入锁并禁止中途取消；派生写入前基于最新 origin/main 重算，若 main 前进则丢弃未发布计算结果并有界重试，严禁 stale rebase / force push / 空提交。AM/PM 与 index 同变时必须一个 Git commit；后续 Sync 成功、runtime 水位与新词退出三重验证后才能宣称成功。所有自动任务失败保持 enabled=true。GitHub Actions 日志和 ChatGPT 连接器错误是两种来源，缺失原始错误时明确标为无法确认。
 
+### K. 失败自动补偿与故障台账（2026-09-27）
+
+- Sync daily vocab 保留提交触发；另在雅加达 08:12、08:27、18:12、18:27 做幂等定时校验与重算（UTC 01:12/01:27/11:12/11:27）。GitHub 定时任务可能延迟；不可向用户保证精确几分钟执行。
+- 两个现有 writer 均采用最新 main 重算与有限重试；不使用 stale rebase、不强推、不重复生成课程、不制造空提交。定时补偿仅能恢复已经正确提交且 index 标记完成的课程；ChatGPT 在提交前失败时，GitHub 无法凭空生成未保存的课程。
+- 每次 GitHub Actions 失败：捕捉初步类别、失败阶段、退出码、时间、触发 SHA、当前本地/远端 HEAD 与原始 Run URL；写入 Job Summary，使用 upload-artifact 保存 90 天，并通过 issues:write 按 workflow+category+phase 去重建立/更新 GitHub Issue。原始完整异常以 Run 日志为准，不把初步类别当成已证实根因。
+- 如果仓库 Issues 或 artifact 服务自身不可用，原始 GitHub Run 日志依然保留；Issue/附件不可用须明确说明，不得声称记录完整。
+- 不新建第三条 workflow；不在失败恢复时修改课程内容或学习词池；不使正式 08:00/18:00 自动任务 disabled。历史事故另见上一节 J。
+
 ## 3. 每次修改前：Preflight
 
 修改前必须回答：
