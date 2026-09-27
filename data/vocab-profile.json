@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-09-27T14:06:01.917Z",
-  "source_updated_at": "2026-09-27T14:03:30.934Z",
+  "generated_at": "2026-09-27T14:16:02.509Z",
+  "source_updated_at": "2026-09-27T14:15:48.456Z",
   "taught_total": 545,
   "confirmed_mastered": 168,
   "needs_reinforcement": 244,
@@ -41,6 +41,58 @@
       "cn": "打算；意图；认真想做的心意"
     },
     {
+      "word": "seraya",
+      "score": 116,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "wrong_count": 1,
+      "last_wrong": "2026-09-27T13:59:29.228Z",
+      "last_review": "2026-09-27T13:59:29.228Z",
+      "cn": "同时；一边……一边……"
+    },
+    {
+      "word": "menyalin",
+      "score": 116,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "wrong_count": 1,
+      "last_wrong": "2026-09-27T13:57:54.512Z",
+      "last_review": "2026-09-27T13:57:54.512Z",
+      "cn": "复制"
+    },
+    {
+      "word": "mengeluh",
+      "score": 116,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "wrong_count": 1,
+      "last_wrong": "2026-09-25T15:06:01.494Z",
+      "last_review": "2026-09-25T15:06:01.494Z",
+      "cn": "抱怨"
+    },
+    {
+      "word": "kabur",
+      "score": 116,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "wrong_count": 1,
+      "last_wrong": "2026-09-25T15:02:05.313Z",
+      "last_review": "2026-09-27T13:59:10.511Z",
+      "cn": "逃跑；溜走"
+    },
+    {
       "word": "menegaskan",
       "score": 116,
       "signals": [
@@ -65,54 +117,6 @@
       "last_wrong": "2026-09-16T07:55:56.953Z",
       "last_review": "2026-09-22T08:17:05.155Z",
       "cn": "值得；合适；够资格"
-    },
-    {
-      "word": "memanggil",
-      "score": 78,
-      "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "wrong_count": 0,
-      "last_wrong": "",
-      "last_review": "2026-09-27T13:59:37.779Z",
-      "cn": "呼唤 / 叫"
-    },
-    {
-      "word": "melawan",
-      "score": 78,
-      "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "wrong_count": 0,
-      "last_wrong": "",
-      "last_review": "2026-09-27T13:58:55.817Z",
-      "cn": "反对、对抗"
-    },
-    {
-      "word": "bebas",
-      "score": 78,
-      "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "wrong_count": 0,
-      "last_wrong": "",
-      "last_review": "2026-09-27T13:58:15.767Z",
-      "cn": "自由的 / 免费的"
-    },
-    {
-      "word": "sebel",
-      "score": 78,
-      "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "wrong_count": 0,
-      "last_wrong": "",
-      "last_review": "2026-09-27T13:56:45.958Z",
-      "cn": "烦；恼火"
     }
   ],
   "definitions": {
