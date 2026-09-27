@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-27T05:32:00.649Z",
+  "updated_at": "2026-09-27T12:59:56.172Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -3081,8 +3081,11 @@
     "asalkan": {
       "word": "asalkan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-27T12:59:45.638Z",
       "display": "asalkan",
+      "cn": "只要；前提是",
+      "root": "asal",
+      "root_cn": "只要；来源",
       "reasons": [
         "memory_dont"
       ],
