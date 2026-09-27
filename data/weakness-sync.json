@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-25T15:06:11.777Z",
+  "updated_at": "2026-09-27T05:27:20.634Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1415,8 +1415,9 @@
     "berita": {
       "word": "berita",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-27T05:27:10.139Z",
       "display": "berita",
+      "cn": "新闻",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -20716,7 +20717,7 @@
       "status": "active",
       "updated_at": "2026-09-25T15:05:12.957Z",
       "display": "mending",
-      "cn": "最好还是、不如",
+      "cn": "还不如；最好",
       "root": "mending",
       "last_wrong": "2026-09-25T15:05:12.929Z",
       "last_review": "2026-09-25T15:05:12.929Z",
