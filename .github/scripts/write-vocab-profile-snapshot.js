@@ -7,7 +7,7 @@ const WEAK='data/weakness-sync.json';
 const HISTORY='data/vocab-profile-history.json';
 function read(p){return JSON.parse(fs.readFileSync(p,'utf8'));}
 function validDate(s){return typeof s==='string'&&Number.isFinite(Date.parse(s));}
-function jakartaDate(iso){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(iso));}
+function jakartaDate(iso){const parts=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(iso)).filter(x=>x.type!=='literal').map(x=>[x.type,x.value]));return parts.year+'-'+parts.month+'-'+parts.day;}
 function build(){
  const p=read(PROFILE),r=read(RUNTIME),w=read(WEAK);
  if(!validDate(p.generated_at)||!validDate(r.generated_at)||!validDate(w.updated_at))throw Error('Missing valid source timestamp');
