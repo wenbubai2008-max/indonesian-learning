@@ -18,3 +18,9 @@ If the stage write itself is blocked, DO NOT discard the generated JSON. Return 
 Statuses: NO_CANDIDATE, FAILED_UNSTAGED_DRAFT, STAGED_PENDING, PREFLIGHT_BLOCKED, PUBLISHED_PENDING_SYNC, SYNC_FAILED, PAGES_FAILED, VERIFIED_COMPLETE.
 
 The 2026-09-27 evening lesson was separately reconstructed and published after the original automated write failure. Its successful GitHub/Sync/Pages outcome does not prove why the first tool invocation was blocked.
+
+## Fixed publisher and verification (2026-09-27)
+
+- The fixed transaction lives at `.github/scripts/publish-staged-lesson.js`; its external authorized GitHub adapter is `.github/scripts/github-publish-adapter.js`. It revalidates the same staged candidate against **current relevant main data**, so unrelated main commits alone no longer veto an otherwise valid draft. A real branch race still stops with `MAIN_REF_CONFLICT` rather than forcing a push. Draft content remains intact.
+- An authorized external GitHub App/PAT runner can dry-run with `LESSON_PUBLISH_TOKEN=... node .github/scripts/github-publish-adapter.js --date YYYY-MM-DD --session am|pm --stage-sha SHA`, and release with the extra `--publish` flag. The same command with `--verify-existing` instead of `--stage-sha` can complete a read-only Sync/Pages check later. Do not expose a token, and do not use the ordinary Actions GITHUB_TOKEN for external release. Connected ChatGPT GitHub tooling may follow the same fixed operations without exposing its token; the CLI token is **not provisioned by this repository change**.
+- Existing staging preflight executes 30 Stage-1 +14 Stage-2 +12 publisher mock regressions, syntax-checks the adapter, and checks the current real published lesson read-only for no-op vs conflicting duplicate. Its Sync writer stays skipped on staging. The mock test uses stub Sync/Pages statuses; current real Actions status is verified separately. Do not call this proof of a future scheduled trigger.

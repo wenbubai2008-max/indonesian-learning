@@ -8,6 +8,10 @@ on:
       - '.github/scripts/plan-lesson-publication.js'
       - '.github/scripts/test-lesson-candidate.js'
       - '.github/scripts/test-publication-plan.js'
+      - '.github/scripts/publish-staged-lesson.js'
+      - '.github/scripts/test-publish-staged-lesson.js'
+      - '.github/scripts/github-publish-adapter.js'
+      - '.github/scripts/test-real-published-lesson.js'
       - '.github/scripts/check-staged-drafts.js'
       - 'docs/LESSON-STAGING.md'
       - 'staging/drafts/*.json'
@@ -55,8 +59,14 @@ jobs:
           node --check .github/scripts/check-staged-drafts.js
           node --check .github/scripts/test-lesson-candidate.js
           node --check .github/scripts/test-publication-plan.js
+          node --check .github/scripts/publish-staged-lesson.js
+          node --check .github/scripts/test-publish-staged-lesson.js
+          node --check .github/scripts/github-publish-adapter.js
+          node --check .github/scripts/test-real-published-lesson.js
           node .github/scripts/test-lesson-candidate.js
           node .github/scripts/test-publication-plan.js
+          node .github/scripts/test-publish-staged-lesson.js
+          node .github/scripts/test-real-published-lesson.js
       - name: Validate only changed drafts against latest main
         shell: bash
         run: |
