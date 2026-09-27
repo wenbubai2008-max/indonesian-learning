@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "timezone": "Asia/Jakarta",
+  "snapshots": [
+    {
+      "date": "2026-09-27",
+      "generated_at": "2026-09-27T12:40:07.945Z",
+      "taught_total": 545,
+      "confirmed_mastered": 154,
+      "needs_reinforcement": 258,
+      "unverified": 133
+    }
+  ]
+}
