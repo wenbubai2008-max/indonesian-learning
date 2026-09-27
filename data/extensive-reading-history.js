@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{id:'er-20260926-pertalite-hoaks',date:'2026-09-26',title:'Harga Pertalite Tidak Naik Hari Ini',title_cn:'Pertalite 今天不涨价：官方提醒别轻信社交媒体消息',path:'data/extensive-reading-history/2026-09-26.js'},
 {id:'er-20260925-lrt-jabodebek-integrasi',date:'2026-09-25',title:'Ganti Moda Makin Mudah di Stasiun LRT Jabodebek',title_cn:'LRT Jabodebek 换乘更方便，连接多种公共交通',path:'data/extensive-reading-history/2026-09-25.js'},
 {id:'er-20260924-transportasi-serang',date:'2026-09-24',title:'Serang Siapkan Transportasi Umum yang Lebih Nyaman',title_cn:'Serang 准备改善公共交通，让居民出行更方便',path:'data/extensive-reading-history/2026-09-24.js'},
 {id:'er-20260923-bbm-lampung',date:'2026-09-23',title:'Stok BBM di Bandar Lampung Dipastikan Tersedia',title_cn:'楠榜省确认加油站燃油供应充足',path:'data/extensive-reading-history/2026-09-23.js'},

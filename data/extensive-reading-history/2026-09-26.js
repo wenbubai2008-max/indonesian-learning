@@ -1,0 +1,13 @@
+window.EXTENSIVE_READING_ARCHIVE_ITEM={id:'er-20260926-pertalite-hoaks',date:'2026-09-26',title:'Harga Pertalite Tidak Naik Hari Ini',title_cn:'Pertalite 今天不涨价：官方提醒别轻信社交媒体消息',category:'印尼 · 消费 · 日常生活 · 实时新闻改写',level:'A2+ → B1',minutes:4,source_name:'ANTARA News',source_date:'2026-09-24',text:`Kementerian ESDM menegaskan bahwa kabar tentang kenaikan harga Pertalite pada 26 September 2026 adalah hoaks. Beberapa konten di media sosial sebelumnya menyebut harga Pertalite akan naik dari Rp10.000 menjadi Rp13.500 per liter mulai hari ini. Namun, pemerintah memastikan informasi tersebut tidak benar.
+
+Menurut Kementerian ESDM, pemerintah tidak menaikkan harga Pertalite dan biosolar meskipun harga minyak dunia sedang bergerak naik. Pemerintah juga menyatakan harga BBM bersubsidi akan tetap dijaga sampai akhir 2026.
+
+Kabar ini penting bagi masyarakat karena Pertalite masih banyak digunakan untuk kebutuhan sehari-hari. Informasi harga BBM yang tidak benar bisa membuat orang khawatir atau terburu-buru mengambil keputusan. Karena itu, masyarakat diminta lebih teliti saat membaca informasi yang beredar di media sosial.
+
+Kementerian ESDM menyarankan masyarakat memeriksa sumber resmi dan media yang sudah terverifikasi. Langkah sederhana ini dapat membantu masyarakat membedakan informasi yang benar dan berita bohong. Jadi, jika ada kabar tentang perubahan harga BBM, sebaiknya jangan langsung percaya sebelum ada pengumuman resmi.`,cn:`印尼能源与矿产资源部明确表示，关于 Pertalite 将在2026年9月26日涨价的消息是假消息。此前社交媒体上的一些内容声称，Pertalite 将从今天起由每升1万印尼盾涨到1.35万印尼盾，但政府确认这一信息并不属实。
+
+能源与矿产资源部表示，尽管国际油价正在上涨，政府并没有提高 Pertalite 和生物柴油的价格。政府同时表示，补贴燃油价格将维持到2026年底。
+
+这一消息与普通居民关系密切，因为 Pertalite 仍被广泛用于日常出行。错误的燃油价格信息可能让人产生担忧，甚至匆忙作出决定。因此，政府提醒居民阅读社交媒体信息时要更加仔细。
+
+能源与矿产资源部建议大家查看官方来源以及经过核实的媒体。这个简单的做法可以帮助人们区分真实信息和假消息。因此，以后看到燃油价格变化的消息时，在官方发布之前最好不要马上相信。`,hints:[{term:'menegaskan',cn:'强调；明确说明',root:'tegas',formation:'meN- + tegas + -kan'},{term:'kenaikan harga',cn:'价格上涨',root:'naik',formation:'ke- + naik + -an'},{term:'hoaks',cn:'假消息；谣言'},{term:'memastikan',cn:'确认；确保',root:'pasti',formation:'meN- + pasti + -kan'},{term:'BBM bersubsidi',cn:'补贴燃油'},{term:'tetap dijaga',cn:'继续维持；保持'},{term:'terburu-buru',cn:'匆忙；急着做'},{term:'lebih teliti',cn:'更加仔细'},{term:'beredar',cn:'流传；传播',root:'edar',formation:'ber- + edar'},{term:'terverifikasi',cn:'经过核实的',root:'verifikasi',formation:'ter- + verifikasi'},{term:'membedakan',cn:'区分',root:'beda',formation:'meN- + beda + -kan'},{term:'pengumuman resmi',cn:'官方公告',root:'umum',formation:'peN- + umum + -an'}]};
