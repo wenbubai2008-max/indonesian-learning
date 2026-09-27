@@ -10,6 +10,7 @@ on:
       - '.github/scripts/test-publication-plan.js'
       - '.github/scripts/publish-staged-lesson.js'
       - '.github/scripts/test-publish-staged-lesson.js'
+      - '.github/scripts/github-publish-adapter.js'
       - '.github/scripts/check-staged-drafts.js'
       - 'docs/LESSON-STAGING.md'
       - 'staging/drafts/*.json'
@@ -59,6 +60,7 @@ jobs:
           node --check .github/scripts/test-publication-plan.js
           node --check .github/scripts/publish-staged-lesson.js
           node --check .github/scripts/test-publish-staged-lesson.js
+          node --check .github/scripts/github-publish-adapter.js
           node .github/scripts/test-lesson-candidate.js
           node .github/scripts/test-publication-plan.js
           node .github/scripts/test-publish-staged-lesson.js
