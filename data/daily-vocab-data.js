@@ -1226,9 +1226,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-09-25 18:00",
+    "last_seen": "2026-09-27 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -1237,7 +1237,8 @@ window.DAILY_VOCAB_DB = [
       "2026-08-27",
       "2026-09-15",
       "2026-09-17",
-      "2026-09-25"
+      "2026-09-25",
+      "2026-09-27"
     ],
     "root_cn": "烦；恼火",
     "example": "Cara bicaranya kadang nyebelin, tapi saya tetap tenang.",
@@ -1247,7 +1248,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-15 08:00",
       "2026-09-17 18:00",
       "2026-09-25 08:00",
-      "2026-09-25 18:00"
+      "2026-09-25 18:00",
+      "2026-09-27 08:00"
     ]
   },
   {
@@ -1542,9 +1544,9 @@ window.DAILY_VOCAB_DB = [
       "后续纠正版",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-28 08:00",
-    "last_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-27 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -1553,7 +1555,8 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28",
       "2026-09-22",
       "2026-09-24",
-      "2026-09-26"
+      "2026-09-26",
+      "2026-09-27"
     ],
     "example": "Maaf kalau aku bolak-balik nanya dan ngerepotin kamu.",
     "example_cn": "如果我反复问、给你添麻烦了，抱歉。",
@@ -1562,7 +1565,8 @@ window.DAILY_VOCAB_DB = [
       "2026-08-28 08:00",
       "2026-09-22 18:00",
       "2026-09-24 08:00",
-      "2026-09-26 08:00"
+      "2026-09-26 08:00",
+      "2026-09-27 08:00"
     ]
   },
   {
@@ -2605,9 +2609,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-27 08:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -2618,7 +2622,8 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29",
       "2026-09-23",
       "2026-09-24",
-      "2026-09-26"
+      "2026-09-26",
+      "2026-09-27"
     ],
     "root_cn": "上；上方",
     "example": "Tarik napas sebentar untuk mengatasi rasa gugup sebelum masuk.",
@@ -2628,7 +2633,8 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29 19:00",
       "2026-09-23 18:00",
       "2026-09-24 18:00",
-      "2026-09-26 08:00"
+      "2026-09-26 08:00",
+      "2026-09-27 08:00"
     ]
   },
   {
@@ -9223,21 +9229,23 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-25 18:00",
+    "last_seen": "2026-09-27 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-13",
-      "2026-09-25"
+      "2026-09-25",
+      "2026-09-27"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
       "2026-09-25 08:00",
-      "2026-09-25 18:00"
+      "2026-09-25 18:00",
+      "2026-09-27 08:00"
     ]
   },
   {
@@ -11678,9 +11686,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-27 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -11690,7 +11698,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-22",
       "2026-09-23",
       "2026-09-24",
-      "2026-09-25"
+      "2026-09-25",
+      "2026-09-27"
     ],
     "lesson_occurrences": [
       "2026-09-20 08:00",
@@ -11699,7 +11708,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-23 18:00",
       "2026-09-24 08:00",
       "2026-09-24 18:00",
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-09-27 08:00"
     ]
   },
   {
@@ -13981,6 +13991,258 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-09-26 18:00"
+    ]
+  },
+  {
+    "word": "perbaiki",
+    "cn": "修理；改进",
+    "en": "repair; improve",
+    "root": "baik",
+    "root_cn": "好",
+    "example": "Saya mau perbaiki cara kerja ini supaya lebih sederhana.",
+    "example_cn": "我想改进这个工作方式，让它更简单。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 08:00"
+    ]
+  },
+  {
+    "word": "nyalakan",
+    "cn": "打开（电器、灯、引擎）；点燃",
+    "en": "turn on; light",
+    "root": "nyala",
+    "root_cn": "亮；燃着",
+    "example": "Tolong nyalakan lampu sebelum mulai bekerja.",
+    "example_cn": "开始工作前请把灯打开。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 08:00"
+    ]
+  },
+  {
+    "word": "asalkan",
+    "cn": "只要；前提是",
+    "en": "provided that; as long as",
+    "root": "asal",
+    "root_cn": "只要；来源",
+    "example": "Saya bisa datang asalkan rapatnya selesai sebelum sore.",
+    "example_cn": "只要会议在傍晚前结束，我就能来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 08:00"
+    ]
+  },
+  {
+    "word": "membandingkan",
+    "cn": "比较；进行对比",
+    "en": "compare",
+    "root": "banding",
+    "root_cn": "比较",
+    "example": "Jangan membandingkan diri sendiri dengan orang lain terus.",
+    "example_cn": "不要总拿自己和别人比较。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 08:00"
+    ]
+  },
+  {
+    "word": "pernyataan",
+    "cn": "声明；陈述",
+    "en": "statement",
+    "root": "nyata",
+    "root_cn": "真实；明确",
+    "example": "Saya perlu membaca pernyataan resmi sebelum memberi komentar.",
+    "example_cn": "发表意见前我需要读官方声明。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 08:00"
+    ]
+  },
+  {
+    "word": "rahasia",
+    "cn": "秘密；机密",
+    "en": "secret",
+    "root": "rahasia",
+    "root_cn": "秘密",
+    "example": "Jangan bagikan rahasia perusahaan kepada orang lain.",
+    "example_cn": "不要把公司的机密告诉别人。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 08:00"
+    ]
+  },
+  {
+    "word": "seolah-olah",
+    "cn": "仿佛；好像",
+    "en": "as if; as though",
+    "root": "olah",
+    "root_cn": "处理；操练（词形关联）",
+    "example": "Dia bicara seolah-olah sudah tahu semuanya.",
+    "example_cn": "他说话的样子仿佛什么都知道。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 08:00"
+    ]
+  },
+  {
+    "word": "gelisah",
+    "cn": "焦躁不安；心神不宁",
+    "en": "restless; uneasy",
+    "root": "gelisah",
+    "root_cn": "不安",
+    "example": "Saya merasa gelisah karena belum mendapat kabar darinya.",
+    "example_cn": "因为还没有他的消息，我有点心神不宁。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 08:00"
+    ]
+  },
+  {
+    "word": "melayani",
+    "cn": "服务；接待",
+    "en": "serve; attend to",
+    "root": "layan",
+    "root_cn": "服务；接待",
+    "example": "Kami ingin melayani pelanggan dengan lebih cepat.",
+    "example_cn": "我们希望更快地服务顾客。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 08:00"
+    ]
+  },
+  {
+    "word": "ngambek",
+    "cn": "闹别扭；赌气",
+    "en": "sulk",
+    "root": "ngambek",
+    "root_cn": "赌气；闹别扭",
+    "example": "Dia ngambek karena pesannya belum dibalas.",
+    "example_cn": "因为消息没被回复，她闹别扭了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 08:00"
     ]
   }
 ];
