@@ -63,7 +63,7 @@ jobs:
           git fetch origin main
           before=$(node -e "console.log(require(process.env.GITHUB_EVENT_PATH).before || '')")
           if git cat-file -e "${before}^{commit}" 2>/dev/null; then
-            mapfile -t drafts < <(git diff --name-only "$before" "$GITHUB_SHA" -- staging/drafts/)
+            mapfile -t drafts < <(git diff --diff-filter=ACMR --name-only "$before" "$GITHUB_SHA" -- staging/drafts/)
           else
             mapfile -t drafts < <(git ls-tree -r --name-only "$GITHUB_SHA" staging/drafts/)
           fi
