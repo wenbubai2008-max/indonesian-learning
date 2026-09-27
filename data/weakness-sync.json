@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-27T14:00:01.453Z",
+  "updated_at": "2026-09-27T14:03:30.934Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -216,56 +216,46 @@
     },
     "mendukung": {
       "word": "mendukung",
-      "status": "active",
-      "updated_at": "2026-09-24T06:29:45.811Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:00:50.947Z",
       "display": "mendukung",
       "cn": "支持",
       "root": "dukung",
       "root_cn": "支持；支撑",
       "last_wrong": "2026-09-22T13:14:41.472Z",
-      "last_review": "2026-09-23T03:24:19.393Z",
-      "reasons": [
-        "memory_dont",
-        "memory_fuzzy",
-        "quick_wrong",
-        "automation_fail"
-      ],
+      "last_review": "2026-09-27T14:00:50.816Z",
+      "last_mastered": "2026-09-27T14:00:50.816Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 3
     },
     "nyebelin": {
       "word": "nyebelin",
-      "status": "active",
-      "updated_at": "2026-09-27T13:58:00.741Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:00:53.340Z",
       "display": "nyebelin",
       "cn": "烦人、让人不爽",
       "root": "sebel",
       "root_cn": "烦；恼火",
       "last_wrong": "2026-09-22T08:20:53.151Z",
-      "last_review": "2026-09-27T13:58:00.716Z",
-      "reasons": [
-        "memory_dont",
-        "quick_wrong",
-        "automation_fail"
-      ],
+      "last_review": "2026-09-27T14:00:53.213Z",
+      "last_mastered": "2026-09-27T14:00:53.213Z",
+      "reasons": [],
       "wrong_count": 2,
-      "right_streak": 2
+      "right_streak": 3
     },
     "mengatasi": {
       "word": "mengatasi",
-      "status": "active",
-      "updated_at": "2026-09-27T13:56:52.955Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:00:55.223Z",
       "display": "mengatasi",
       "cn": "解决、克服",
       "root": "atas",
       "root_cn": "上；上方",
       "last_wrong": "2026-09-22T13:13:13.376Z",
-      "last_review": "2026-09-27T13:56:52.926Z",
-      "reasons": [
-        "memory_dont",
-        "quick_wrong",
-        "automation_fail"
-      ],
+      "last_review": "2026-09-27T14:00:55.095Z",
+      "last_mastered": "2026-09-27T14:00:55.095Z",
+      "reasons": [],
       "wrong_count": 1,
       "right_streak": 3
     },
@@ -838,19 +828,17 @@
     },
     "termasuk": {
       "word": "termasuk",
-      "status": "active",
-      "updated_at": "2026-09-25T13:45:54.618Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:01:11.284Z",
       "display": "termasuk",
       "cn": "包括；属于",
       "root": "masuk",
       "last_wrong": "2026-09-25T13:45:54.587Z",
-      "last_review": "2026-09-25T13:45:54.587Z",
-      "reasons": [
-        "memory_fuzzy",
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-27T14:01:11.151Z",
+      "last_mastered": "2026-09-27T14:01:11.151Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 3
     },
     "hukum": {
       "word": "hukum",
@@ -2285,20 +2273,18 @@
     },
     "perasaan": {
       "word": "perasaan",
-      "status": "active",
-      "updated_at": "2026-09-24T06:32:16.283Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:01:23.489Z",
       "display": "perasaan",
       "cn": "感情",
       "root": "rasa",
       "root_cn": "感觉；味道",
       "last_wrong": "2026-09-24T06:32:16.267Z",
-      "last_review": "2026-09-24T06:32:16.267Z",
-      "reasons": [
-        "memory_fuzzy",
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-27T14:01:23.361Z",
+      "last_mastered": "2026-09-27T14:01:23.361Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 3
     },
     "sepanjang": {
       "word": "sepanjang",
@@ -3223,21 +3209,18 @@
     },
     "berkat": {
       "word": "berkat",
-      "status": "active",
-      "updated_at": "2026-09-27T13:59:39.619Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:01:32.824Z",
       "display": "berkat",
       "cn": "多亏了",
       "root": "berkat",
       "root_cn": "福气；恩惠",
       "last_wrong": "2026-09-22T09:21:50.679Z",
-      "last_review": "2026-09-27T13:59:39.591Z",
-      "reasons": [
-        "memory_dont",
-        "quick_wrong",
-        "automation_fail"
-      ],
+      "last_review": "2026-09-27T14:01:32.692Z",
+      "last_mastered": "2026-09-27T14:01:32.692Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "berkelahi": {
       "word": "berkelahi",
@@ -4536,19 +4519,16 @@
     },
     "mengizinkan": {
       "word": "mengizinkan",
-      "status": "active",
-      "updated_at": "2026-09-25T14:59:25.966Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:01:43.213Z",
       "display": "mengizinkan",
       "cn": "允许",
       "root": "izin",
       "root_cn": "许可；允许",
       "last_wrong": "2026-09-22T09:19:01.106Z",
-      "last_review": "2026-09-25T14:59:25.935Z",
-      "reasons": [
-        "memory_fuzzy",
-        "quick_wrong",
-        "automation_fail"
-      ],
+      "last_review": "2026-09-27T14:01:43.082Z",
+      "last_mastered": "2026-09-27T14:01:43.082Z",
+      "reasons": [],
       "wrong_count": 1,
       "right_streak": 3
     },
@@ -6113,20 +6093,18 @@
     },
     "berhenti": {
       "word": "berhenti",
-      "status": "active",
-      "updated_at": "2026-09-27T13:56:59.170Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:01:45.877Z",
       "display": "berhenti",
       "cn": "停止",
       "root": "henti",
       "root_cn": "停；停止",
       "last_wrong": "2026-09-27T13:56:59.142Z",
-      "last_review": "2026-09-27T13:56:59.142Z",
-      "reasons": [
-        "memory_fuzzy",
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-27T14:01:45.746Z",
+      "last_mastered": "2026-09-27T14:01:45.746Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 3
     },
     "halus": {
       "word": "halus",
@@ -7785,20 +7763,19 @@
     },
     "sepakat": {
       "word": "sepakat",
-      "status": "active",
-      "updated_at": "2026-09-22T08:20:47.412Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:01:52.038Z",
       "display": "sepakat",
       "cn": "达成一致；同意",
       "root": "sepakat",
-      "last_review": "2026-09-22T08:20:47.386Z",
+      "last_review": "2026-09-27T14:01:51.911Z",
+      "last_mastered": "2026-09-27T14:01:51.911Z",
       "source": "每日学习阅读",
       "source_date": "2026-09-12",
       "session": "19:00",
-      "reasons": [
-        "manual_unknown"
-      ],
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 3
     },
     "dibandingkan": {
       "word": "dibandingkan",
@@ -20737,19 +20714,17 @@
     },
     "mending": {
       "word": "mending",
-      "status": "active",
-      "updated_at": "2026-09-25T15:05:12.957Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:02:01.536Z",
       "display": "mending",
       "cn": "还不如；最好",
       "root": "mending",
       "last_wrong": "2026-09-25T15:05:12.929Z",
-      "last_review": "2026-09-25T15:05:12.929Z",
-      "reasons": [
-        "memory_fuzzy",
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-27T14:02:01.408Z",
+      "last_mastered": "2026-09-27T14:02:01.408Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 3
     },
     "gapapa": {
       "word": "gapapa",
@@ -21828,19 +21803,16 @@
     },
     "ngerepotin": {
       "word": "ngerepotin",
-      "status": "active",
-      "updated_at": "2026-09-27T13:56:14.861Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:03:10.192Z",
       "display": "ngerepotin",
       "cn": "给人添麻烦",
       "root": "repot",
       "root_cn": "麻烦；忙乱",
       "last_wrong": "2026-09-22T09:19:22.248Z",
-      "last_review": "2026-09-27T13:56:14.828Z",
-      "reasons": [
-        "memory_dont",
-        "quick_wrong",
-        "automation_fail"
-      ],
+      "last_review": "2026-09-27T14:03:10.071Z",
+      "last_mastered": "2026-09-27T14:03:10.071Z",
+      "reasons": [],
       "wrong_count": 1,
       "right_streak": 3
     },
@@ -21870,21 +21842,18 @@
     },
     "ngurus": {
       "word": "ngurus",
-      "status": "active",
-      "updated_at": "2026-09-25T15:01:43.841Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:03:12.235Z",
       "display": "ngurus",
       "cn": "处理；照料",
       "root": "urus",
       "root_cn": "处理；照管",
       "last_wrong": "2026-09-24T06:31:55.136Z",
-      "last_review": "2026-09-25T15:01:43.809Z",
-      "reasons": [
-        "memory_fuzzy",
-        "quick_wrong",
-        "automation_fail"
-      ],
+      "last_review": "2026-09-27T14:03:12.118Z",
+      "last_mastered": "2026-09-27T14:03:12.118Z",
+      "reasons": [],
       "wrong_count": 2,
-      "right_streak": 1
+      "right_streak": 3
     },
     "selesaikan": {
       "word": "selesaikan",
@@ -22957,17 +22926,15 @@
     },
     "mampir": {
       "word": "mampir",
-      "status": "active",
-      "updated_at": "2026-09-27T13:57:28.523Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:03:14.190Z",
       "display": "mampir",
       "cn": "顺路去；拜访一下",
       "root": "mampir",
       "last_wrong": "2026-09-22T13:06:13.927Z",
-      "last_review": "2026-09-27T13:57:28.497Z",
-      "reasons": [
-        "memory_dont",
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-27T14:03:14.077Z",
+      "last_mastered": "2026-09-27T14:03:14.077Z",
+      "reasons": [],
       "wrong_count": 1,
       "right_streak": 3
     },
@@ -23763,20 +23730,18 @@
     },
     "kecolongan": {
       "word": "kecolongan",
-      "status": "active",
-      "updated_at": "2026-09-24T06:34:30.265Z",
+      "status": "mastered",
+      "updated_at": "2026-09-27T14:03:20.186Z",
       "display": "kecolongan",
       "cn": "一时疏忽没防住；漏掉问题",
       "root": "colong",
       "root_cn": "偷拿；趁人不注意拿走",
       "last_wrong": "2026-09-22T13:22:38.445Z",
-      "last_review": "2026-09-24T06:34:30.248Z",
-      "last_mastered": "2026-09-18T07:35:30.948Z",
-      "reasons": [
-        "quick_wrong"
-      ],
+      "last_review": "2026-09-27T14:03:20.073Z",
+      "last_mastered": "2026-09-27T14:03:20.073Z",
+      "reasons": [],
       "wrong_count": 2,
-      "right_streak": 1
+      "right_streak": 3
     },
     "ngandelin": {
       "word": "ngandelin",
