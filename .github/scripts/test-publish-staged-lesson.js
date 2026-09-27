@@ -3,6 +3,7 @@
 const assert=require('node:assert/strict');
 const crypto=require('node:crypto');
 const {publish,classifyMainWrite}=require('./publish-staged-lesson');
+const {reportsFromLog}=require('./github-publish-adapter');
 const date='2026-09-28',session='am',sha='a'.repeat(40),main='b'.repeat(40);
 const lesson={date,session,vocab:[{word:'one'}]},index={dates:[{date,am:false,pm:false}]};
 const digest=x=>crypto.createHash('sha256').update(JSON.stringify(x)).digest('hex');
@@ -59,6 +60,15 @@ async function test(label,fn){await fn();tests++;console.log('PASS '+label)}
  await test('preflight failure blocks publication',async()=>{
   const {state,api,planner}=fixture({approval:{id:12,sha,conclusion:'failure',preflight:'failure',sync:'skipped'}});
   let r=await publish(api,{date,session,stageSha:sha,planner});assert.equal(r.status,'PREFLIGHT_NOT_PASSED');assert.equal(state.updated.length,0);
+ });
+ await test('parse exact GitHub Actions PREFLIGHT log and ignore unrelated output',async()=>{
+  const raw='2026-09-27T12:12:00Z notice\\n2026-09-27T12:12:01Z PREFLIGHT '+JSON.stringify({
+   candidate:'staging/drafts/'+date+'-am.json',stageSha:sha,mainSha:main,candidateHash:digest(lesson),
+   ok:true,status:'ready',errors:[],baselineFingerprint:'f'.repeat(64)})+'\\nother line';
+  const reports=reportsFromLog(raw);assert.equal(reports.length,1);
+  assert.equal(reports[0].candidateHash,digest(lesson));
+  assert.deepEqual(reportsFromLog('No changed draft JSON'),[]);
+  assert.throws(()=>reportsFromLog('PREFLIGHT {not-valid}'),/Malformed PREFLIGHT JSON/);
  });
  await test('successful job with missing PREFLIGHT log is blocked',async()=>{
   const {state,api,planner}=fixture();state.approval.report=null;
