@@ -61,10 +61,13 @@ function apiFor(token){
   mainSnapshot:async(date,session)=>{
    const sha=await ref('main'),tree=(await request('/git/commits/'+sha)).tree.sha;
    const prev=new Date(Date.parse(date+'T00:00:00Z')-86400000).toISOString().slice(0,10);
-   const [index,runtime,rules,sameDayAm,previousPm,publishedLesson]=await Promise.all([
-    readJson('data/daily/index.json',sha),readJson('data/learning-runtime.json',sha),
-    readJson('data/learning-pool-rules.json',sha),readJson('data/daily/'+date+'-am.json',sha,true),
-    readJson('data/daily/'+prev+'-pm.json',sha,true),readJson('data/daily/'+date+'-'+session+'.json',sha,true)]);
+   // Keep repository reads sequential to avoid bursty connector/API requests.
+   const index=await readJson('data/daily/index.json',sha);
+   const runtime=await readJson('data/learning-runtime.json',sha);
+   const rules=await readJson('data/learning-pool-rules.json',sha);
+   const sameDayAm=await readJson('data/daily/'+date+'-am.json',sha,true);
+   const previousPm=await readJson('data/daily/'+prev+'-pm.json',sha,true);
+   const publishedLesson=await readJson('data/daily/'+date+'-'+session+'.json',sha,true);
    return {sha,tree,index,runtime,rules,sameDayAm,previousPm,publishedLesson};
   },
   createBlob:async content=>(await request('/git/blobs','POST',{content,encoding:'utf-8'})).sha,
