@@ -9,6 +9,7 @@ on:
       - '.github/scripts/test-lesson-candidate.js'
       - '.github/scripts/test-publication-plan.js'
       - '.github/scripts/check-staged-drafts.js'
+      - 'docs/LESSON-STAGING.md'
       - 'staging/drafts/*.json'
       # index.json is the completion trigger/barrier. AM/PM lesson JSON and index should be
       # committed atomically by the lesson writer; only then do we rebuild daily vocab/runtime.
