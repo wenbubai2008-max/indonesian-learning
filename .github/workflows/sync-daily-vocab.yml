@@ -1,9 +1,15 @@
 name: Sync daily vocab
 on:
   push:
-    branches: [main]
+    branches: [main, lesson-staging-v1]
     paths:
       - '.github/workflows/sync-daily-vocab.yml'
+      - '.github/scripts/validate-lesson-candidate.js'
+      - '.github/scripts/plan-lesson-publication.js'
+      - '.github/scripts/test-lesson-candidate.js'
+      - '.github/scripts/test-publication-plan.js'
+      - '.github/scripts/check-staged-drafts.js'
+      - 'staging/drafts/*.json'
       # index.json is the completion trigger/barrier. AM/PM lesson JSON and index should be
       # committed atomically by the lesson writer; only then do we rebuild daily vocab/runtime.
       - 'data/daily/index.json'
@@ -26,7 +32,48 @@ concurrency:
   group: learning-data-write
   cancel-in-progress: false
 jobs:
+  # Staging branch only: read-only tests, zero production writes, no extra workflow.
+  preflight:
+    if: github.ref == 'refs/heads/lesson-staging-v1'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Validate scripts and synthetic failure cases
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          node --check .github/scripts/validate-lesson-candidate.js
+          node --check .github/scripts/plan-lesson-publication.js
+          node --check .github/scripts/check-staged-drafts.js
+          node --check .github/scripts/test-lesson-candidate.js
+          node --check .github/scripts/test-publication-plan.js
+          node .github/scripts/test-lesson-candidate.js
+          node .github/scripts/test-publication-plan.js
+      - name: Validate only changed drafts against latest main
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          git fetch origin main
+          before=$(node -e "console.log(require(process.env.GITHUB_EVENT_PATH).before || '')")
+          if git cat-file -e "${before}^{commit}" 2>/dev/null; then
+            mapfile -t drafts < <(git diff --name-only "$before" "$GITHUB_SHA" -- staging/drafts/)
+          else
+            mapfile -t drafts < <(git ls-tree -r --name-only "$GITHUB_SHA" staging/drafts/)
+          fi
+          if [ "${#drafts[@]}" -eq 0 ]; then
+            echo 'No changed draft JSON in this push; synthetic tests verified.'
+            exit 0
+          fi
+          node .github/scripts/check-staged-drafts.js "${drafts[@]}"
   sync:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
