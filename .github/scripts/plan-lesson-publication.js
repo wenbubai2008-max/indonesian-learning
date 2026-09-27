@@ -2,12 +2,12 @@
 'use strict';
 /** Pure, read-only Stage-2 publication planner. Never writes main or daily-vocab. */
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
-const {validate}=require('./validate-lesson-candidate');
+const {validate,collectReviewHistory}=require('./validate-lesson-candidate');
 const hash=value=>crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const json=value=>JSON.stringify(value,null,2)+'\n';
 const fail=(code,detail)=>({ok:false,errors:[{code,detail}]});
 function plan(input){
- const {lesson,index,runtime,rules,expectedDate:date,expectedSession:session,mainHead,sameDayAm,previousPm}=input||{};
+ const {lesson,index,runtime,rules,expectedDate:date,expectedSession:session,mainHead,sameDayAm,previousPm,reviewHistory}=input||{};
  if(typeof mainHead!=='string'||!/^[a-f0-9]{40}$/i.test(mainHead))return fail('MAIN_HEAD_REQUIRED','Pin the current main commit SHA');
  if(!lesson||!index||!runtime||!rules)return fail('INPUT_INVALID','Missing candidate or baseline');
  const target='data/daily/'+date+'-'+session+'.json';
@@ -18,7 +18,7 @@ function plan(input){
    return {ok:true,status:'already_published',mainHead,target,files:[],candidateHash:hash(lesson)};
   return fail('ALREADY_PUBLISHED','Target already marked complete; no overwrites');
  }
- const gate=validate({lesson,index,runtime,rules,expectedDate:date,expectedSession:session,sameDayAm,previousPm});
+ const gate=validate({lesson,index,runtime,rules,expectedDate:date,expectedSession:session,sameDayAm,previousPm,reviewHistory});
  if(!gate.ok)return {...gate,status:'blocked'};
  const next=JSON.parse(JSON.stringify(index));
  let current=next.dates.find(x=>x&&x.date===date);
@@ -47,6 +47,7 @@ if(require.main===module){
    rules:read(a.rules||'data/learning-pool-rules.json'),
    sameDayAm:maybe(a['same-day-am']||'data/daily/'+a.date+'-am.json'),
    previousPm:maybe(a['previous-pm']||'data/daily/'+prev+'-pm.json'),
+   reviewHistory:collectReviewHistory(read(a.index||'data/daily/index.json'),a.date,a.session,p=>read(p)),
    expectedDate:a.date,expectedSession:a.session,mainHead:a['main-head']
   });
   console.log(JSON.stringify(result,null,2));process.exitCode=result.ok?0:1;
