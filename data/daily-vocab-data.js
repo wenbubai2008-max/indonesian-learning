@@ -1226,9 +1226,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -1241,15 +1241,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-27"
     ],
     "root_cn": "烦；恼火",
-    "example": "Cara bicaranya kadang nyebelin, tapi saya tetap tenang.",
-    "example_cn": "他说话的方式有时很烦人，但我还是保持冷静。",
+    "example": "Masalah kecil itu memang nyebelin.",
+    "example_cn": "那个小问题确实挺烦人。",
     "lesson_occurrences": [
       "2026-08-27 08:00",
       "2026-09-15 08:00",
       "2026-09-17 18:00",
       "2026-09-25 08:00",
       "2026-09-25 18:00",
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-09-27 18:00"
     ]
   },
   {
@@ -2609,9 +2610,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 18:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -2626,15 +2627,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-27"
     ],
     "root_cn": "上；上方",
-    "example": "Tarik napas sebentar untuk mengatasi rasa gugup sebelum masuk.",
-    "example_cn": "进去前先呼吸一下，缓解紧张。",
+    "example": "Kami bisa mengatasi kendala itu bersama.",
+    "example_cn": "我们可以一起解决那个障碍。",
     "lesson_occurrences": [
       "2026-08-24 19:00",
       "2026-08-29 19:00",
       "2026-09-23 18:00",
       "2026-09-24 18:00",
       "2026-09-26 08:00",
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-09-27 18:00"
     ]
   },
   {
@@ -5252,9 +5254,9 @@ window.DAILY_VOCAB_DB = [
       "2026-09-02",
       "18:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-02 08:00",
-    "last_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-27 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -5265,11 +5267,12 @@ window.DAILY_VOCAB_DB = [
       "2026-09-18",
       "2026-09-23",
       "2026-09-24",
-      "2026-09-26"
+      "2026-09-26",
+      "2026-09-27"
     ],
     "root_cn": "处理；照管",
-    "example": "Aku lagi ngurus dokumen yang perlu dibawa untuk wawancara.",
-    "example_cn": "我正在处理面试需要带的文件。",
+    "example": "Hari ini saya harus ngurus beberapa dokumen.",
+    "example_cn": "今天我得处理几份文件。",
     "lesson_occurrences": [
       "2026-09-02 08:00",
       "2026-09-17 18:00",
@@ -5278,7 +5281,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-23 18:00",
       "2026-09-24 08:00",
       "2026-09-24 18:00",
-      "2026-09-26 08:00"
+      "2026-09-26 08:00",
+      "2026-09-27 18:00"
     ]
   },
   {
@@ -11679,16 +11683,16 @@ window.DAILY_VOCAB_DB = [
     "en": "thanks to / blessing",
     "root": "berkat",
     "root_cn": "福气；恩惠",
-    "example": "Berkat persiapan yang rapi, wawancaranya berjalan lebih lancar.",
-    "example_cn": "多亏准备得很有条理，面试进行得更顺利。",
+    "example": "Berkat bantuan tim, pekerjaan selesai tepat waktu.",
+    "example_cn": "多亏团队帮忙，工作按时完成。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -11709,7 +11713,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-24 08:00",
       "2026-09-24 18:00",
       "2026-09-25 08:00",
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-09-27 18:00"
     ]
   },
   {
@@ -12470,23 +12475,27 @@ window.DAILY_VOCAB_DB = [
     "en": "complain",
     "root": "keluh",
     "root_cn": "抱怨；叹息",
-    "example": "Dia tidak mengeluh meskipun pekerjaannya cukup banyak.",
-    "example_cn": "尽管工作很多，他也没有抱怨。",
+    "example": "Dia sering mengeluh saat jadwal berubah.",
+    "example_cn": "时间安排一改变，他就经常抱怨。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-23"
+      "2026-09-23",
+      "2026-09-27"
     ],
     "lesson_occurrences": [
-      "2026-09-23 08:00"
+      "2026-09-23 08:00",
+      "2026-09-27 18:00"
     ]
   },
   {
@@ -14051,23 +14060,26 @@ window.DAILY_VOCAB_DB = [
     "en": "provided that; as long as",
     "root": "asal",
     "root_cn": "只要；来源",
-    "example": "Saya bisa datang asalkan rapatnya selesai sebelum sore.",
-    "example_cn": "只要会议在傍晚前结束，我就能来。",
+    "example": "Kita bisa lanjut, asalkan datanya sudah benar.",
+    "example_cn": "只要数据准确，我们就可以继续。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-27"
     ],
     "lesson_occurrences": [
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-09-27 18:00"
     ]
   },
   {
@@ -14076,23 +14088,26 @@ window.DAILY_VOCAB_DB = [
     "en": "compare",
     "root": "banding",
     "root_cn": "比较",
-    "example": "Jangan membandingkan diri sendiri dengan orang lain terus.",
-    "example_cn": "不要总拿自己和别人比较。",
+    "example": "Mari membandingkan dua laporan ini.",
+    "example_cn": "我们来比较这两份报告。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-27"
     ],
     "lesson_occurrences": [
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-09-27 18:00"
     ]
   },
   {
@@ -14176,23 +14191,26 @@ window.DAILY_VOCAB_DB = [
     "en": "restless; uneasy",
     "root": "gelisah",
     "root_cn": "不安",
-    "example": "Saya merasa gelisah karena belum mendapat kabar darinya.",
-    "example_cn": "因为还没有他的消息，我有点心神不宁。",
+    "example": "Dia terlihat gelisah sebelum rapat dimulai.",
+    "example_cn": "开会前他看上去有些不安。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-09-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-27"
     ],
     "lesson_occurrences": [
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-09-27 18:00"
     ]
   },
   {
@@ -14243,6 +14261,107 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-09-27 08:00"
+    ]
+  },
+  {
+    "word": "kesel",
+    "cn": "烦；心里不爽",
+    "en": "annoyed; fed up",
+    "root": "kesel",
+    "root_cn": "心烦；烦躁",
+    "example": "Aku kesel karena berkasnya belum bisa dibuka.",
+    "example_cn": "文件还是打不开，我有点烦。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 18:00",
+    "last_seen": "2026-09-27 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 18:00"
+    ]
+  },
+  {
+    "word": "malu-malu",
+    "cn": "有点害羞；不好意思表达",
+    "en": "shy; bashful",
+    "root": "malu",
+    "root_cn": "害羞；难为情",
+    "example": "Rekan baru itu masih malu-malu saat berbicara.",
+    "example_cn": "新同事说话还有些害羞。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 18:00",
+    "last_seen": "2026-09-27 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 18:00"
+    ]
+  },
+  {
+    "word": "maksa",
+    "cn": "硬逼；强求（口语）",
+    "en": "to force; insist on",
+    "root": "paksa",
+    "root_cn": "强迫",
+    "example": "Kalau dia belum siap, jangan maksa dia bicara.",
+    "example_cn": "如果他还没准备好，就别逼他说。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 18:00",
+    "last_seen": "2026-09-27 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 18:00"
+    ]
+  },
+  {
+    "word": "unduh",
+    "cn": "下载（文件）",
+    "en": "download",
+    "root": "unduh",
+    "root_cn": "下载",
+    "example": "Saya mau unduh laporan itu dulu.",
+    "example_cn": "我想先下载那份报告。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-27 18:00",
+    "last_seen": "2026-09-27 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-27"
+    ],
+    "lesson_occurrences": [
+      "2026-09-27 18:00"
     ]
   }
 ];
