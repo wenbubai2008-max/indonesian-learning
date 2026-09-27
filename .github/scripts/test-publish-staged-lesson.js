@@ -20,7 +20,7 @@ function fixture(change={}){
   stageChanges:async()=>[{path:'staging/drafts/'+date+'-am.json',status:'added'}],
   stageApproval:async()=>state.approval,
   readJson:async(path,ref)=>ref===sha?state.lesson:path.endsWith('index.json')?state.index:state.lesson,
-  mainSnapshot:async()=>({sha:main,tree:'d'.repeat(40),index:state.index,runtime:state.runtime,rules:{},publishedLesson:state.publishedLesson}),
+  mainSnapshot:async()=>({sha:state.currentMain||main,tree:'d'.repeat(40),index:state.index,runtime:state.runtime,rules:{},publishedLesson:state.publishedLesson}),
   createBlob:async content=>{state.blobs.push(content);return ('e'.repeat(39)+state.blobs.length)},
   createTree:async(base,entries)=>{state.treeEntries=entries;return 'f'.repeat(40)},
   createCommit:async(message,tree,parent)=>{state.commits.push({message,tree,parent});return state.commit},
@@ -43,8 +43,10 @@ async function test(label,fn){await fn();tests++;console.log('PASS '+label)}
   assert.deepEqual(state.updated,[state.commit]);
  });
  await test('unrelated main advancement is revalidated, not rejected solely by old SHA',async()=>{
-  const {state,api,planner}=fixture();let r=await publish(api,{date,session,stageSha:sha,planner});
-  assert.equal(r.status,'VERIFIED_COMPLETE');assert.equal(state.commits[0].parent,main);
+  const advanced='7'.repeat(40),{state,api,planner}=fixture({currentMain:advanced});
+  assert.equal(state.approval.report.mainSha,main,'approval pins previous main SHA');
+  const r=await publish(api,{date,session,stageSha:sha,planner});
+  assert.equal(r.status,'VERIFIED_COMPLETE');assert.equal(state.commits[0].parent,advanced);
  });
  await test('dry-run leaves main untouched',async()=>{
   const {state,api,planner}=fixture();let r=await publish(api,{date,session,stageSha:sha,dryRun:true,planner});
