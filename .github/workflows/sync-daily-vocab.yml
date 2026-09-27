@@ -15,7 +15,7 @@ on:
     # Safety fallback only. Normal lesson sync is triggered by the atomic lesson+index push.
     # 01:12/01:27 and 11:12/11:27 UTC = 08:12/08:27 and 18:12/18:27 Jakarta.
     # Recovery is idempotent; it cannot invent a lesson that was never committed.
-    # Unchanged derived payloads preserve their generated_at and produce no no-op Pages deployment.
+    # Unchanged derived payloads preserve generated_at using semantic JSON comparison; no empty Pages deployment.
     - cron: '12,27 1,11 * * *'
   workflow_dispatch:
 permissions:

@@ -445,7 +445,7 @@ try {
   ok(/issues:\s*write/.test(sync) && /issues:\s*write/.test(build) && /gh issue create/.test(sync) && /gh issue create/.test(build), 'both writers maintain deduplicated durable incident issues');
   const runtimeBuilderSource=read('.github/scripts/build-learning-runtime.js');
   const profileBuilderSource=read('.github/scripts/build-vocab-profile.js');
-  ok(runtimeBuilderSource.includes('isDeepStrictEqual(withoutGenerationTime(previousRuntime),withoutGenerationTime(runtime))'), 'runtime builder preserves generated_at on no-op recovery');
+  ok(runtimeBuilderSource.includes('JSON.stringify(withoutGenerationTime(previousRuntime))===JSON.stringify(withoutGenerationTime(runtime))'), 'runtime builder preserves generated_at on no-op recovery');
   ok(profileBuilderSource.includes('isDeepStrictEqual(withoutGenerationTime(previousProfile),withoutGenerationTime(out))'), 'profile builder preserves generated_at on no-op recovery');
 
   const css = read('data/daily-width-fix.css');
