@@ -55,8 +55,11 @@ jobs:
           node --check .github/scripts/check-staged-drafts.js
           node --check .github/scripts/test-lesson-candidate.js
           node --check .github/scripts/test-publication-plan.js
+          node --check .github/scripts/publish-staged-lesson.js
+          node --check .github/scripts/test-publish-staged-lesson.js
           node .github/scripts/test-lesson-candidate.js
           node .github/scripts/test-publication-plan.js
+          node .github/scripts/test-publish-staged-lesson.js
       - name: Validate only changed drafts against latest main
         shell: bash
         run: |
