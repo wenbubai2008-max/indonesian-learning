@@ -131,6 +131,12 @@ async function test(label,fn){await fn();tests++;console.log('PASS '+label)}
   const {state,api,planner}=fixture();state.runtime.lesson_watermark='2026-09-27 18:00';
   let r=await publish(api,{date,session,stageSha:sha,planner});assert.equal(r.status,'PUBLISHED_PENDING_SYNC');
  });
+ await test('existing AM can be verified after later PM runtime watermark',async()=>{
+  const {state,api,planner}=fixture({already:true});
+  state.index.dates[0].am=true;state.runtime.lesson_watermark=date+' 18:00';
+  const r=await publish(api,{date,session,stageSha:sha,planner});
+  assert.equal(r.status,'VERIFIED_COMPLETE');assert.equal(state.updated.length,0);
+ });
  await test('AM new word still in pool blocks verified status',async()=>{
   const {state,api,planner}=fixture();state.runtime.new_pool=['one'];
   let r=await publish(api,{date,session,stageSha:sha,planner});assert.equal(r.status,'PUBLISHED_PENDING_SYNC');
