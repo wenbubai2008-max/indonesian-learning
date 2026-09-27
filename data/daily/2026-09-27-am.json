@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-27",
+  "session": "am",
+  "time": "08:00",
+  "day": 37,
+  "level": "A2+ → B1",
+  "title": "08:00｜表达条件、沟通情绪与日常服务",
+  "vocab": [
+    {
+      "word": "perbaiki",
+      "display": "perbaiki",
+      "audio_text": "perbaiki",
+      "cn": "修理；改进",
+      "en": "repair; improve",
+      "root": "baik",
+      "root_cn": "好",
+      "formation": "per- + baik + -i；口语常说 benerin。",
+      "example": "Saya mau perbaiki cara kerja ini supaya lebih sederhana.",
+      "example_cn": "我想改进这个工作方式，让它更简单。",
+      "synonym_note": "perbaiki 偏标准语；日常说 benerin。",
+      "is_oral_new": true
+    },
+    {
+      "word": "nyalakan",
+      "display": "nyalakan",
+      "audio_text": "nyalakan",
+      "cn": "打开（电器、灯、引擎）；点燃",
+      "en": "turn on; light",
+      "root": "nyala",
+      "root_cn": "亮；燃着",
+      "formation": "nyala + -kan；口语常说 nyalain。",
+      "example": "Tolong nyalakan lampu sebelum mulai bekerja.",
+      "example_cn": "开始工作前请把灯打开。",
+      "synonym_note": "nyalakan 常用于灯和设备；打开门通常说 buka。",
+      "is_oral_new": true
+    },
+    {
+      "word": "asalkan",
+      "display": "asalkan",
+      "audio_text": "asalkan",
+      "cn": "只要；前提是",
+      "en": "provided that; as long as",
+      "root": "asal",
+      "root_cn": "只要；来源",
+      "formation": "asal + -kan，后接需要满足的条件。",
+      "example": "Saya bisa datang asalkan rapatnya selesai sebelum sore.",
+      "example_cn": "只要会议在傍晚前结束，我就能来。",
+      "synonym_note": "asalkan 强调条件；kalau 只是一般的“如果”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "membandingkan",
+      "display": "membandingkan",
+      "audio_text": "membandingkan",
+      "cn": "比较；进行对比",
+      "en": "compare",
+      "root": "banding",
+      "root_cn": "比较",
+      "formation": "meN- + banding + -kan，带比较对象。",
+      "example": "Jangan membandingkan diri sendiri dengan orang lain terus.",
+      "example_cn": "不要总拿自己和别人比较。",
+      "synonym_note": "membandingkan A dengan B；berbeda 强调不同而非主动比较。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pernyataan",
+      "display": "pernyataan",
+      "audio_text": "pernyataan",
+      "cn": "声明；陈述",
+      "en": "statement",
+      "root": "nyata",
+      "root_cn": "真实；明确",
+      "formation": "per- + nyata + -an，指说出或写出的正式表述。",
+      "example": "Saya perlu membaca pernyataan resmi sebelum memberi komentar.",
+      "example_cn": "发表意见前我需要读官方声明。",
+      "synonym_note": "pernyataan 是陈述；pendapat 是个人观点。",
+      "is_oral_new": false
+    },
+    {
+      "word": "rahasia",
+      "display": "rahasia",
+      "audio_text": "rahasia",
+      "cn": "秘密；机密",
+      "en": "secret",
+      "root": "rahasia",
+      "root_cn": "秘密",
+      "formation": "基本词，可作名词或形容词，如 informasi rahasia。",
+      "example": "Jangan bagikan rahasia perusahaan kepada orang lain.",
+      "example_cn": "不要把公司的机密告诉别人。",
+      "synonym_note": "rahasia 是秘密；privasi 是个人隐私。",
+      "is_oral_new": false
+    },
+    {
+      "word": "seolah-olah",
+      "display": "seolah-olah",
+      "audio_text": "seolah-olah",
+      "cn": "仿佛；好像",
+      "en": "as if; as though",
+      "root": "olah",
+      "root_cn": "处理；操练（词形关联）",
+      "formation": "固定重叠表达 seolah-olah，描述表面印象不等于事实。",
+      "example": "Dia bicara seolah-olah sudah tahu semuanya.",
+      "example_cn": "他说话的样子仿佛什么都知道。",
+      "synonym_note": "seolah-olah 比 kayak 更强调“看似如此”，不一定为真。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gelisah",
+      "display": "gelisah",
+      "audio_text": "gelisah",
+      "cn": "焦躁不安；心神不宁",
+      "en": "restless; uneasy",
+      "root": "gelisah",
+      "root_cn": "不安",
+      "formation": "基本形容词，可与 merasa、terlihat 搭配。",
+      "example": "Saya merasa gelisah karena belum mendapat kabar darinya.",
+      "example_cn": "因为还没有他的消息，我有点心神不宁。",
+      "synonym_note": "gelisah 是坐立不安；khawatir 偏担心某件事。",
+      "is_oral_new": false
+    },
+    {
+      "word": "melayani",
+      "display": "melayani",
+      "audio_text": "melayani",
+      "cn": "服务；接待",
+      "en": "serve; attend to",
+      "root": "layan",
+      "root_cn": "服务；接待",
+      "formation": "meN- + layan + -i，强调对顾客或对象提供服务。",
+      "example": "Kami ingin melayani pelanggan dengan lebih cepat.",
+      "example_cn": "我们希望更快地服务顾客。",
+      "synonym_note": "melayani 顾客；membantu 强调帮助，mengurus 强调处理事务。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ngambek",
+      "display": "ngambek",
+      "audio_text": "ngambek",
+      "cn": "闹别扭；赌气",
+      "en": "sulk",
+      "root": "ngambek",
+      "root_cn": "赌气；闹别扭",
+      "formation": "常见日常口语基本词，描述不高兴而不理人。",
+      "example": "Dia ngambek karena pesannya belum dibalas.",
+      "example_cn": "因为消息没被回复，她闹别扭了。",
+      "synonym_note": "ngambek 是闹情绪；marah 是生气，kesal 是烦躁。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "niat",
+    "nyebelin",
+    "mengatasi",
+    "berkat",
+    "ngerepotin"
+  ],
+  "sentences": [
+    {
+      "text": "Saya mau perbaiki proses ini asalkan semua anggota tim sepakat.",
+      "cn": "只要团队所有人同意，我想改进这个流程。"
+    },
+    {
+      "text": "Tolong nyalakan komputer, lalu kita membandingkan dua laporan itu.",
+      "cn": "请打开电脑，然后我们比较那两份报告。"
+    },
+    {
+      "text": "Pernyataannya terdengar seolah-olah dia tahu semua rahasia kami.",
+      "cn": "他的陈述听起来仿佛知道我们所有秘密。"
+    },
+    {
+      "text": "Pelanggan merasa gelisah, jadi kami berusaha melayani mereka dengan baik.",
+      "cn": "顾客有些不安，所以我们尽力提供周到服务。"
+    },
+    {
+      "text": "Jangan langsung ngambek kalau niat baikmu belum dipahami orang lain.",
+      "cn": "如果你的好意暂时没被理解，别立刻闹别扭。"
+    }
+  ],
+  "reading": {
+    "text": "Pagi ini kami membandingkan dua cara melayani pelanggan. Cara pertama lebih cepat, tetapi kadang ngerepotin tim. Saya punya niat untuk perbaiki prosesnya, asalkan semua orang bisa bekerja sama. Setelah nyalakan komputer, kami membaca pernyataan dari atasan. Ia mengingatkan kami agar tidak membagikan rahasia pelanggan. Seorang rekan terlihat gelisah, seolah-olah ada masalah besar. Ternyata dia hanya takut idenya ditolak. Saya bilang kami bisa mengatasi masalah bersama. Berkat diskusi singkat itu, suasana jadi lebih baik. Tidak perlu ngambek saat pendapat berbeda; yang penting kita mendengarkan dan mencari solusi yang masuk akal.",
+    "cn": "今天早上，我们比较了两种服务客户的方式。第一种比较快，但有时会给团队添麻烦。我打算改进流程，前提是大家能够合作。打开电脑后，我们读了上司的声明。他提醒我们不要泄露客户的秘密。一位同事看起来坐立不安，好像出了大问题。其实他只是担心自己的建议被否决。我告诉他我们可以一起解决问题。多亏了这次简短讨论，气氛变得更好了。意见不同不用赌气，重要的是互相倾听并寻找合理的解决办法。"
+  },
+  "quiz": [
+    {
+      "question": "“只要条件满足，我就去”最适合用哪个连接词？",
+      "options": [
+        "asalkan",
+        "rahasia",
+        "gelisah",
+        "pernyataan"
+      ],
+      "answer_index": 0,
+      "explain": "asalkan 说明某件事成立所需的条件。"
+    },
+    {
+      "question": "印尼语中哪个词表示“多亏了（某人/某事）”？",
+      "options": [
+        "niat",
+        "berkat",
+        "mengatasi",
+        "nyebelin"
+      ],
+      "answer_index": 1,
+      "explain": "berkat 表示多亏了，是本课复习词。"
+    },
+    {
+      "question": "讨论客户资料保密时，空格应填哪个词：Informasi pelanggan itu ___.",
+      "options": [
+        "membandingkan",
+        "rahasia",
+        "nyalakan",
+        "ngambek"
+      ],
+      "answer_index": 1,
+      "explain": "rahasia 作形容词表示保密的、机密的。"
+    }
+  ],
+  "output": {
+    "task": "请用3—4句日常印尼语说明你打算怎样改进一项工作，并加入至少一个今天的复习词。尽量使用 perbaiki、asalkan、membandingkan、melayani。",
+    "reference_answer": "Saya punya niat untuk perbaiki cara kami melayani pelanggan. Pertama, saya mau membandingkan proses lama dan proses baru. Kami bisa mencoba cara baru asalkan semua orang setuju. Kalau ada masalah, kami akan mengatasinya bersama.",
+    "reference_cn": "我打算改进我们服务客户的方式。首先，我想比较旧流程和新流程。只要大家同意，我们就可以尝试新方法。如果有问题，我们会一起解决。"
+  },
+  "review": [
+    "asalkan 表示“只要……就……”，强调前提条件。",
+    "perbaiki / nyalakan 是标准表达，日常口语常说 benerin / nyalain。",
+    "berkat 是“多亏了”，不要与表示计划的 niat 混淆。"
+  ]
+}
