@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T03:15:52.224Z",
+  "updated_at": "2026-09-28T07:07:23.585Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -3078,16 +3078,17 @@
     "asalkan": {
       "word": "asalkan",
       "status": "active",
-      "updated_at": "2026-09-27T12:59:45.638Z",
+      "updated_at": "2026-09-28T07:07:12.121Z",
       "display": "asalkan",
       "cn": "只要；前提是",
       "root": "asal",
       "root_cn": "只要；来源",
+      "last_review": "2026-09-28T07:07:12.097Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "baik ... atau ...": {
       "word": "baik ... atau ...",
@@ -21036,15 +21037,16 @@
     "atasan": {
       "word": "atasan",
       "status": "active",
-      "updated_at": "2026-09-12T17:01:19.868Z",
+      "updated_at": "2026-09-28T07:07:02.183Z",
       "display": "atasan",
       "cn": "上司",
       "root": "atas",
+      "last_review": "2026-09-28T07:07:02.150Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "bawahan": {
       "word": "bawahan",
