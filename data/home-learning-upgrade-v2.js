@@ -29,7 +29,13 @@
     return 0;
   }
   function weightedPool(){
-    if(window.VocabStudyCoach){var map=wordMap();return window.VocabStudyCoach.assigned('quick').map(function(t){return {x:map[norm(t.word)]||{word:t.word,cn:t.cn},w:1,due:0};}).filter(function(x){return !!x.x.cn;});}
+    if(window.VocabStudyCoach){
+      var map=wordMap(),coach=window.VocabStudyCoach,priority=coach.assigned('quick'),extra=typeof coach.quickSupplement==='function'?coach.quickSupplement():[];
+      var used=new Set(priority.map(function(t){return norm(t.word);}));
+      return priority.map(function(t){return {x:map[norm(t.word)]||{word:t.word,cn:t.cn},w:1,due:0,kind:'priority'};})
+        .concat(extra.filter(function(t){return !used.has(norm(t.word));}).map(function(t){return {x:map[norm(t.word)]||{word:t.word,cn:t.cn},w:1,due:0,kind:'optional'};}))
+        .filter(function(x){return !!x.x.cn;});
+    }
     var pool=recentPool(),ps=practiceState(),mm=mem(),wp=weakPool(),active=wp?(typeof wp.focusMap==='function'?wp.focusMap():wp.activeMap()):localUnknown(),now=Date.now(),seen={};
     var eligible=window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet(now):null;
     pool.forEach(function(x){seen[norm(x.word)]=1;});
@@ -58,12 +64,15 @@
     var pool=weightedPool(),meta=document.getElementById('quickPracticeMeta');
     var wanted=norm(focusWord),target=wanted&&taughtSet().has(wanted)?wordMap()[wanted]:null;
     if(wanted&&(!target||window.VocabStudyCoach&&!window.VocabStudyCoach.eligible(wanted))){body.innerHTML='<div class="empty">这个词尚未到复习时间，或者不在正式学习词库中。系统不会为了凑题重复测试。</div>';return;}
-    if(meta)meta.textContent='统一计划中到期 '+pool.length+' 词 · 本轮最多'+Math.min(10,Math.max(1,pool.length))+'题';
+    if(meta){
+      if(window.VocabStudyCoach){var priorityCount=pool.filter(function(x){return x.kind==='priority';}).length,optionalCount=pool.length-priorityCount;meta.textContent='重点任务 '+priorityCount+' 词 · 自选轻练 '+optionalCount+' 词 · 本轮最多'+Math.min(10,pool.length)+'题';}
+      else meta.textContent='到期 '+pool.length+' 词 · 本轮最多'+Math.min(10,pool.length)+'题';
+    }
     if(!pool.length&&!target){
-      body.innerHTML='<div class="empty"><b>这会儿没有到期词。</b><div style="margin-top:8px">刚答对的词已经进入冷却期，不会因为刷新马上又出现；到时间后会再验证。</div></div>';
+      body.innerHTML='<div class="empty"><b>今天的重点任务和自选轻练都没有可用词。</b><div style="margin-top:8px">已答题不会在刷新后立刻补题；冷却完成或第二天会再安排，正式已掌握的词不会被拿来凑数。</div></div>';
       return;
     }
-    var picks=target?[target]:sampleWeighted(pool,Math.min(10,pool.length)),all=recentPool(),html='<div class="v2-refresh"><button class="secondary" type="button" onclick="refreshQuickPracticeV2()">↻ 换一组</button></div><div class="v2-note">'+(target?'针对指定词进行一次识别验证；完成后进入跨模块冷却。':'近期作答结果由本机统一调度，刚练过的词暂不重复抽取。')+'</div>';
+    var picks=target?[target]:(window.VocabStudyCoach?pool.slice(0,10).map(function(x){return x.x;}):sampleWeighted(pool,Math.min(10,pool.length))),all=recentPool(),html='<div class="v2-refresh"><button class="secondary" type="button" onclick="refreshQuickPracticeV2()">↻ 重看本轮</button></div><div class="v2-note">'+(target?'针对指定词进行一次识别验证；完成后进入跨模块冷却。':'优先显示今日分配的快速识别词，剩余为自选轻练；补充题不计入每日重点任务，仍遵守冷却、已学资格与去重。')+'</div>';
     picks.forEach(function(x,i){
       var wrong=shuffle(all.filter(function(y){return norm(y.word)!==norm(x.word);})).slice(0,3).map(function(y){return y.word;}),opts=shuffle([x.word].concat(wrong));
       html+='<div class="v2-q" data-answer="'+esc(x.word)+'"><b>'+(i+1)+'. '+esc(x.cn)+'</b><div class="v2-opts">';
