@@ -92,7 +92,7 @@
         p.last=now;s[k]=p;savePracticeState(s);
         if(coach)coach.markAnswer('quick',ans,ok,now);
         p=practiceState()[k]||p;
-        var wp=weakPool(),item=(wordMap()[k]||{word:ans});if(wp)wp.recordPractice(ans,ok,item);
+        var wp=weakPool(),item=(wordMap()[k]||{word:ans});if(wp){wp.recordPractice(ans,ok,item);if(ok&&coach&&p.review_level>=3&&typeof wp.removeReasons==='function')wp.removeReasons(ans,'quick_wrong',false,'visual_recognition_stable');}
         try{window.dispatchEvent(new CustomEvent('quick-practice-updated',{detail:{word:ans,ok:ok,state:p}}));}catch(e){}
         btn.classList.add(ok?'v2-ok':'v2-bad');
         row.querySelectorAll('.v2-opts button').forEach(function(b){b.disabled=true;if(b.dataset.v===ans)b.classList.add('v2-ok');});
