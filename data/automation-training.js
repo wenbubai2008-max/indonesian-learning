@@ -173,7 +173,7 @@
         if(Number(result.hints||0)===0){st.stage=3;st.next_due=now+30*HOUR;st.last_result='right';}
         else{st.stage=2;st.next_due=now+20*HOUR;st.last_result='hinted';}
       }else if(stage===3){
-        st.stage=4;st.next_due=now+48*HOUR;st.last_result='right';
+        st.stage=4;st.next_due=now+48*HOUR;st.last_result=result.kind==='self_checked'?'self_checked':'right';
       }else{
         st.verify_streak=Number(st.verify_streak||0)+1;
         if(st.verify_streak>=3){st.status='stable';st.stage=4;st.next_due=now+14*DAY;st.last_result='stable';}
