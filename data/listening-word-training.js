@@ -72,10 +72,11 @@
     return score;
   }
 
+  function rootCoachEligible(){return window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet():null;}
   function buildQueue(){
-    const pool=taughtPool(), stats=allStats();
+    const pool=taughtPool(), stats=allStats(),eligible=rootCoachEligible();
     state.pool=pool;
-    const ranked=pool.map(x=>({item:x,score:candidateScore(x,stats)})).sort((a,b)=>b.score-a.score);
+    const ranked=pool.filter(x=>!eligible||eligible.has(String(x.word).trim().toLowerCase())).map(x=>({item:x,score:candidateScore(x,stats)})).sort((a,b)=>b.score-a.score);
     const head=ranked.slice(0,Math.min(80,ranked.length)).map(x=>x.item);
     state.queue=shuffle(head).slice(0,Math.min(SESSION_SIZE,head.length));
     state.pos=0;state.correct=0;state.fast=0;
@@ -266,7 +267,7 @@
     await loadFocus();
     buildQueue();
     if(!state.queue.length){
-      if(body)body.innerHTML='<div class="empty">目前还没有可用于听词训练的已学词。</div>';
+      if(body)body.innerHTML='<div class="empty">当前没有到期的听词练习，不重复抽取刚练过的词。</div>';
       return;
     }
     renderQuestion();
@@ -323,13 +324,23 @@
     el.textContent=s.attempts?'听音正确率 '+s.accuracy+'% · 3秒 '+s.fastRate+'%':'尚未开始';
   }
 
+  async function openWord(word){
+    const k=String(word||'').trim().toLowerCase(),found=taughtPool().find(x=>x.word.toLowerCase()===k);
+    if(!found)return false;
+    if(typeof window.go==='function')window.go('listeningWords');
+    const coach=window.VocabStudyCoach;
+    if(coach&&!coach.eligible(k)){const body=$( 'listeningWordBody' );if(body)body.innerHTML='<div class="empty">这个词还在跨模块冷却期，到期后再验证。</div>';return true;}
+    const body=$('listeningWordBody');if(body)body.innerHTML='<div class="loading">正在准备指定词听音…</div>';
+    await loadFocus();state.pool=taughtPool();state.queue=[found];state.pos=0;state.correct=0;state.fast=0;renderQuestion();return true;
+  }
   function openListeningWords(){
     if(typeof window.go==='function')window.go('listeningWords');
     renderStart();
   }
 
   window.openListeningWords=openListeningWords;
-  window.ListeningWordTraining={open:openListeningWords,start:startSession,getProfileSummary,refresh:updateCard};
+  window.ListeningWordTraining={open:openListeningWords,openWord:openWord,start:startSession,getProfileSummary,refresh:updateCard};
+  window.openListeningWordTarget=openWord;
   document.addEventListener('DOMContentLoaded',()=>{updateCard();updateMeta();});
   setTimeout(()=>{updateCard();updateMeta();},0);
 })();
