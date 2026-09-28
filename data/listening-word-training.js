@@ -311,7 +311,7 @@
 
   function updateCard(){
     const row=todayRow(), progress=$('listenQuickProgress'), rate=$('listenQuickRate');
-    if(progress)progress.textContent=row.attempts>=SESSION_SIZE?'今日已完成 · '+row.attempts+'题':'今日 '+Math.min(row.attempts,SESSION_SIZE)+' / '+SESSION_SIZE;
+    if(progress)progress.textContent='今日已答 '+row.attempts+' 题';
     if(rate){
       if(row.attempts)rate.textContent='正确率 '+Math.round(row.correct/row.attempts*100)+'%';
       else rate.textContent='只听声音 · 判断意思';
