@@ -51,5 +51,28 @@ assert.ok(coach.plan(now+86400000).some(x=>x.word==='tunda'),'Next-day reservati
 root.dispatchEvent(new CustomEvent('automation-training-updated',{detail:{word:'tunda',state:{last_at:now+86400000}}}));
 assert.equal(coach.detail('tunda',now+86400000).requested,false,'A real due-time attempt clears its verification request');
 
+// Fairness: with six equally weak and due words, no group should monopolize all three active slots forever.
+const rotationStore=new Map();
+const rotationWords=['alpha','bravo','charlie','delta','echo','foxtrot'];
+const rotationRoot={
+ DAILY_VOCAB_DB:rotationWords.map(word=>({word,cn:word})),
+ localStorage:{getItem(k){return rotationStore.has(k)?rotationStore.get(k):null},setItem(k,v){rotationStore.set(k,String(v))}},
+ addEventListener(){},dispatchEvent(){return true},
+ WeaknessPool:{focusMap(){return Object.fromEntries(rotationWords.map(word=>[word,{word,reasons:['dont']}]))}},
+ VocabProfileEvidence:{records(){return []},summarize(){return {words:[]}}}
+};
+vm.runInNewContext(script,{window:rotationRoot,CustomEvent,Date,Map,Set,Object,String,Number,Array,Intl},{filename:'vocab-study-coach-rotation.js'});
+const rotation=rotationRoot.VocabStudyCoach,start=Date.parse('2026-10-06T10:00:00Z');
+const first=Array.from(rotation.plan(start).map(x=>x.word));
+assert.equal(first.length,3,'Daily active cap stays in place');
+assert.deepEqual(Array.from(rotation.plan(start+3600000).map(x=>x.word)),first,'Same-day refresh does not reshuffle');
+const second=Array.from(rotation.plan(start+86400000).map(x=>x.word));
+assert.equal(second.length,3);
+assert.equal(second.some(word=>first.includes(word)),false,'Next day must give previously unserved eligible weak words a chance');
+assert.ok(rotationStore.has('indo_vocab_coach_rotation_v1'),'Selection history persists independently of one daily plan');
+assert.equal(rotation.requestVerification(first[0],start+86400000),true);
+assert.equal(rotation.detail(first[0],start+86400000).ready,false,'Self-mark only reserves next-day verification');
+assert.ok(rotation.plan(start+2*86400000).some(x=>x.word===first[0]),'Delayed verification overrides normal rotation penalty');
+
 assert.equal(data.has('data/daily-vocab-data.js'),false,'Scheduling must not mutate lesson data');
-console.log('Study coach tests passed: stable bounded daily assignments, shared module queues, answer completion, cooldown, next-day validation and no lesson mutation.');
+console.log('Study coach tests passed: stable bounded daily assignments, multi-day rotation, shared module queues, answer completion, cooldown, next-day validation and no lesson mutation.');
