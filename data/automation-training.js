@@ -70,8 +70,10 @@
   }
   function candidateList(){
     const now=Date.now(),states=stateMap(),qs=quickState(),mm=memory(),wm=weakMap(),out=[];
+    const eligible=window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet(now):null;
     dailyWords().forEach(function(x){
       const k=norm(x.word),p=qs[k]||{},st=states[k]||null,w=wm[k]||null;
+      if(eligible&&!eligible.has(k))return;
       const age=daysSince(x.last_seen||x.first_seen),m=memState(mm,x.word);
       const lastWrong=Number(p.last_wrong||((p.last_result==='wrong')?p.last:0)||0),autoLast=Number(st&&st.last_at||0);
       const hardWrong=!!lastWrong&&(!autoLast||lastWrong>autoLast);
@@ -119,7 +121,9 @@
     const d=today(),old=loadPlan();
     if(!force&&old.date===d&&Array.isArray(old.words))return old;
     const list=candidateList().slice(0,MAX_DAILY);
+    const previous=old.date===d&&old.results&&typeof old.results==='object'?old.results:{};
     const plan={date:d,generated_at:Date.now(),words:list.map(function(x){return {word:x.word,stage:x.stage,score:x.score,reasons:x.reasons};}),results:{}};
+    plan.words.forEach(x=>{if(previous[norm(x.word)])plan.results[norm(x.word)]=previous[norm(x.word)];});
     write(PLAN_KEY,plan);return plan;
   }
   function savePlan(plan){write(PLAN_KEY,plan);}
@@ -190,6 +194,7 @@
   }
   function markPlanDone(word,result){
     const plan=loadPlan();if(plan.date!==today())return;
+    if(!Array.isArray(plan.words)||!plan.words.some(x=>norm(x.word)===norm(word)))return;
     plan.results=plan.results||{};plan.results[norm(word)]={at:Date.now(),result:result};savePlan(plan);
   }
   function releaseDueRetries(plan,states){
@@ -262,8 +267,8 @@
   }
   function renderStage3(card,word,item,state){
     const sample=examplesFor(item)[0]||'';
-    card.innerHTML+='<div class="autoPrompt"><b>用 '+esc(word)+' 说一句和你自己的工作、生活或聊天有关的话。</b><small>这一关不是背标准答案，而是把词真正放进自己的表达里。</small></div><textarea class="autoSentence" rows="3" placeholder="自己写一句印尼语"></textarea><div class="autoInputRow"><button class="primary autoSubmit" type="button">完成表达</button></div><div class="autoResult"></div><div class="autoSample"></div>';
-    card.querySelector('.autoSubmit').onclick=function(){const val=card.querySelector('.autoSentence').value||'';if(!val.trim()){resultBox(card,'先写一句自己的话。',false);return;}if(norm(val).indexOf(norm(word))<0){resultBox(card,'这句话里还没有用到 '+word+'，再写一次。',false);return;}finishCard(card,word,3,{ok:true,kind:'right'},item,'✓ 已完成主动表达；下一次会隔开时间做验证');const sampleBox=card.querySelector('.autoSample');if(sample&&sampleBox)sampleBox.textContent='参考例句：'+sample;};
+    card.innerHTML+='<div class="autoPrompt"><b>用 '+esc(word)+' 说一句和你自己的工作、生活或聊天有关的话。</b><small>这一关需要你自己确认表达是否符合原意；系统只检查目标词是否出现，不会假装能判断整句语法。</small></div><textarea class="autoSentence" rows="3" placeholder="自己写一句印尼语"></textarea>'+(sample?'<div class="autoSample">参考例句（写完后可对照）：'+esc(sample)+'</div>':'')+'<label style="display:flex;gap:8px;align-items:flex-start;margin:10px 0;font-size:13px"><input class="autoSelfCheck" type="checkbox" style="margin-top:4px">我已核对句意和使用语境，确认愿意把这次记录为自我验证（不是自动语法评分）</label><div class="autoInputRow"><button class="primary autoSubmit" type="button">记录自我验证</button></div><div class="autoResult"></div>';
+    card.querySelector('.autoSubmit').onclick=function(){const val=card.querySelector('.autoSentence').value||'';if(!val.trim()){resultBox(card,'先写一句自己的话。',false);return;}if(norm(val).indexOf(norm(word))<0){resultBox(card,'这句话里还没有用到 '+word+'，再写一次。',false);return;}if(!card.querySelector('.autoSelfCheck').checked){resultBox(card,'请先核对句意及用法，再勾选自我确认。',false);return;}finishCard(card,word,3,{ok:true,kind:'self_checked'},item,'✓ 已记录自我验证；还需隔日主动提取确认，不代表系统已自动判定句子正确。');};
   }
   function renderStage4(card,word,item,state){
     const ctx=contextFor(word,item,state),prompt=ctx.text||('中文：'+(item.cn||''));
@@ -288,7 +293,9 @@
   }
   function render(){
     ensurePage();const body=document.getElementById('automationTrainingBody');if(!body)return;
-    const plan=buildPlan(false),map=wordMap(),states=stateMap();releaseDueRetries(plan,states);const done=plan.results||{};
+    const plan=buildPlan(false),map=wordMap(),states=stateMap();releaseDueRetries(plan,states);
+    if(window.VocabStudyCoach){const eligible=window.VocabStudyCoach.eligibleSet();const before=plan.words.length;plan.words=plan.words.filter(x=>plan.results&&plan.results[norm(x.word)]||eligible.has(norm(x.word)));if(before!==plan.words.length)savePlan(plan)}
+    const done=plan.results||{};
     refreshMeta();
     let html='<div class="autoIntro"><b>每天只练真正需要自动化的词。</b><span>新学词默认是“待稳定”，不是“已掌握”。快速练习答错、模糊/不会、弱项、到期验证都会提高优先级；同一天的计划不会因为普通刷新而乱变。</span><button class="secondary" type="button" id="autoRebuildPlan">更新今日训练</button></div>';
     html+='<div class="autoStages"><span>1 快速主动提取</span><span>2 语境补词</span><span>3 主动表达</span><span>4 延迟验证</span></div>';
@@ -304,6 +311,24 @@
       if(stage===1)renderStage1(task,word,item,st);else if(stage===2)renderStage2(task,word,item,st);else if(stage===3)renderStage3(task,word,item,st);else renderStage4(task,word,item,st);
     });
   }
+  function openWord(word){
+    const k=norm(word),taught=new Set(dailyWords().map(x=>norm(x.word))),coach=window.VocabStudyCoach;
+    if(!taught.has(k))return false;
+    ensurePage();if(typeof window.go==='function')window.go('automationTraining');
+    const body=document.getElementById('automationTrainingBody');if(!body)return false;
+    const detail=coach?coach.detail(k):null;
+    if(detail&&!detail.ready){
+      const when=new Date(detail.due_at).toLocaleString('zh-CN',{timeZone:'Asia/Jakarta',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
+      body.innerHTML='<div class="autoIntro"><b>这一个词还在冷却</b><span>下一次验证时间（雅加达）：'+esc(when)+'。不因为反复点击就增加无效复习。</span></div>';return true;
+    }
+    const item=wordMap()[k]||dailyWords().find(x=>norm(x.word)===k)||{word:k,cn:''};
+    const st=stateMap()[k]||{},stage=detail?detail.stage:Math.max(1,Math.min(4,Number(st.stage)||1));
+    body.innerHTML='<div class="autoIntro"><b>指定词训练 · '+esc(item.word)+'</b><span>从画像直接进入这个词，不会重新抽随机题。完成后本机画像立即更新。</span><button class="secondary" type="button" id="autoBackToPlan">返回今日训练</button></div><div class="autoCard" data-word="'+esc(item.word)+'"><div class="autoHead"><b>'+esc(stageName(stage))+'</b><small>'+esc(detail&&detail.note||'针对性训练')+'</small></div><div class="autoTask"></div></div>';
+    body.querySelector('#autoBackToPlan').onclick=render;
+    const task=body.querySelector('.autoTask');
+    if(stage===1)renderStage1(task,item.word,item,st);else if(stage===2)renderStage2(task,item.word,item,st);else if(stage===3)renderStage3(task,item.word,item,st);else renderStage4(task,item.word,item,st);
+    return true;
+  }
   function dueCount(){const p=loadPlan();if(p.date===today()&&Array.isArray(p.words)){const states=stateMap();releaseDueRetries(p,states);return Math.max(0,p.words.length-Object.keys(p.results||{}).length);}return Math.min(MAX_DAILY,candidateList().length);}
   function refreshTag(){const tag=document.getElementById('automationTag');if(tag){const n=dueCount();tag.textContent=n?n+' 个待训练':'暂无到期词';}}
   function open(){ensurePage();if(typeof window.go==='function')window.go('automationTraining');render();}
@@ -313,7 +338,8 @@
     const s=document.createElement('style');s.id='automationTrainingStyle';s.textContent='.autoIntro{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center;background:#f8f6ff;border:1px solid #e4def5;border-radius:14px;padding:14px 15px}.autoIntro>b{font-size:16px}.autoIntro>span{grid-column:1/2;color:#667085;font-size:13px;line-height:1.6}.autoIntro>button{grid-column:2;grid-row:1/3}.autoStages{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:13px 0}.autoStages span{background:#fff;border:1px solid #e2e6ee;border-radius:10px;padding:9px 8px;text-align:center;font-size:12px;font-weight:800;color:#596579}.autoList{display:grid;gap:11px}.autoCard{border:1px solid #e1e6ef;border-radius:15px;background:#fff;padding:14px}.autoHead{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:11px}.autoHead>div{display:flex;align-items:center;gap:8px}.autoNo{display:inline-flex;width:25px;height:25px;border-radius:8px;background:#eee9ff;color:#6549a3;align-items:center;justify-content:center;font-size:12px;font-weight:900}.autoHead small{color:#7a8493;text-align:right}.autoPrompt{background:#f8faff;border-radius:12px;padding:13px 14px;line-height:1.65}.autoPrompt b{display:block;font-size:17px}.autoPrompt small{display:block;color:#667085;margin-top:4px}.autoRecallBox{padding:4px 0 2px}.autoRecallWord{display:inline-block;background:#fff4cf;border:1px solid #f2df96;border-radius:12px;padding:10px 14px;font-size:22px;line-height:1.35;font-weight:900;color:#1f2937;letter-spacing:.01em}.autoRecallTip{margin-top:8px;color:#98a2b3;font-size:12px;line-height:1.45}.autoCard[data-stage="1"] .autoHead b{font-size:15px;font-weight:800;color:#667085}.autoCard[data-stage="1"] .autoHead{margin-bottom:8px}.autoInputRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.autoInputRow input,.autoSentence{border:1px solid #dfe4ec;border-radius:10px;padding:10px 11px;background:#fff}.autoInputRow input{flex:1;min-width:180px}.autoSentence{width:100%;resize:vertical}.autoHintLine{min-height:23px;color:#6b4fa4;font-weight:800;font-size:13px;margin-top:8px}.autoResult{min-height:22px;font-size:13px;margin-top:8px;color:#64748b}.autoResult.ok{color:#17652d}.autoResult.bad{color:#9d2f28}.autoRescue{margin-top:10px}.autoRescue:empty{display:none}.autoRescueTop{display:flex;align-items:center;gap:10px;background:#fff8df;border:1px solid #f1df9b;border-radius:12px;padding:10px 12px}.autoRescueTop span,.autoRescueRow span,.autoRescueExample>span,.autoRescueCompare span{font-size:11px;font-weight:800;color:#8a6d1d;margin-right:8px}.autoRescueTop b{font-size:20px;color:#1f2937}.autoRescueRow{padding:8px 12px 0;font-size:13px;color:#475467}.autoRescueRow strong{color:#1f2937}.autoRescueExample{margin-top:8px;background:#f8faff;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.55;color:#344054}.autoRescueExample small{display:block;margin-top:3px;color:#7a8493}.autoRescueCompare{margin-top:8px;border-left:3px solid #d8cdf8;background:#faf8ff;border-radius:8px;padding:9px 11px;font-size:13px;line-height:1.6;color:#475467}.autoRescueCompare b{color:#2d3748}.autoRescueNote{margin-top:8px;font-size:12px;color:#667085;padding:7px 10px;background:#f7f8fa;border-radius:8px}.autoRescueNote.strong{color:#7a4b00;background:#fff4e5}.autoDone{background:#f3faf5;color:#287341;border-radius:10px;padding:11px 12px;font-size:13px}.autoSample{font-size:13px;color:#667085;margin-top:8px}.autoCard[data-done="1"]{opacity:.72}@media(max-width:700px){.autoIntro{grid-template-columns:1fr}.autoIntro>span,.autoIntro>button{grid-column:1;grid-row:auto}.autoStages{grid-template-columns:repeat(2,1fr)}.autoHead{align-items:flex-start;flex-direction:column}.autoHead small{text-align:left}}';document.head.appendChild(s);
   }
   window.openAutomationTraining=open;
-  window.AutomationTraining={open:open,render:render,rebuildPlan:rebuildPlan,refreshTag:refreshTag,candidates:candidateList};
+  window.AutomationTraining={open:open,openWord:openWord,render:render,rebuildPlan:rebuildPlan,refreshTag:refreshTag,candidates:candidateList};
+  window.openAutomationTrainingWord=openWord;
   window.addEventListener('quick-practice-updated',function(){refreshTag();});
   window.addEventListener('weak-pool-changed',function(){refreshTag();});
   window.addEventListener('listening-weakness-updated',function(){
