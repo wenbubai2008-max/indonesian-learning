@@ -3,6 +3,7 @@
   // A read-only scheduling overlay: never changes lesson eligibility or source status.
   const KNOWN_KEY='indo_vocab_coach_verify_requests_v1';
   const SESSION_KEY='indo_vocab_coach_daily_session_v1';
+  const ROTATION_KEY='indo_vocab_coach_rotation_v1';
   const HOUR=3600000,DAY=24*HOUR;
   const norm=s=>String(s||'').trim().toLowerCase();
   const time=v=>{const n=typeof v==='number'?v:Date.parse(String(v||''));return Number.isFinite(n)&&n>0?n:0;};
@@ -79,14 +80,33 @@
     const m=Object.fromEntries(parts.filter(x=>x.type!=='literal').map(x=>[x.type,x.value]));
     return m.year+'-'+m.month+'-'+m.day;
   }
+  // Prior selection history is independent of the current daily plan and never changes lesson mastery.
+  // Only reduce a recently served word's rank when other eligible words exist; due weak words are never banned.
+  function rotationScore(x,history,now){
+    if(x.requested)return x.score; // A user-requested delayed verification must not be suppressed by rotation.
+    const last=history[norm(x.word)]||{},date=String(last.day||'');
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(date))return x.score;
+    const ago=Math.round((Date.parse(date+'T00:00:00Z')-Date.parse(dateJakarta(now)+'T00:00:00Z'))/-DAY);
+    if(ago===1)return x.score-65;
+    if(ago===2)return x.score-35;
+    if(ago===3)return x.score-15;
+    if(ago>=4)return x.score+Math.min(25,(ago-3)*4);
+    return x.score;
+  }
+  function recordRotation(session){
+    const old=read(ROTATION_KEY,{}),day=session.date;
+    if(!old||typeof old!=='object')return;
+    (session.items||[]).forEach(x=>{const k=norm(x.word),prior=old[k]||{};if(prior.day!==day)old[k]={day,count:Math.min(9999,Math.max(0,Number(prior.count)||0)+1)}});
+    try{root.localStorage.setItem(ROTATION_KEY,JSON.stringify(old))}catch(e){}
+  }
   function pick(now,max=8){
-    const input=inputs(),out=[],limits={verification:3,auto:3,listen:2,quick:2},used={};
+    const input=inputs(),history=read(ROTATION_KEY,{}),out=[],limits={verification:3,auto:3,listen:2,quick:2},used={};
     const ranked=[];
     input.items.forEach((v,k)=>{
       const x=describe(k,input,now);
       if(x&&x.focus&&!x.stable&&(x.ready||x.requested))ranked.push(x);
     });
-    ranked.sort((a,b)=>b.score-a.score||a.word.localeCompare(b.word));
+    ranked.sort((a,b)=>rotationScore(b,history,now)-rotationScore(a,history,now)||a.word.localeCompare(b.word));
     ranked.forEach(x=>{
       const category=x.mode==='auto'&&(x.requested||x.stage===4)?'verification':x.mode;
       if(out.length>=Math.min(8,max)||Number(used[category]||0)>=limits[category])return;
@@ -104,9 +124,10 @@
     if(old&&old.version===1&&old.date===day&&Array.isArray(old.items)){
       if(old.items.length)return old; // A completed daily plan does not refill on every click.
       const candidates=pick(now);
-      return candidates.length?saveSession({version:1,date:day,created_at:now,items:candidates,done:{}}):old;
+      if(!candidates.length)return old;
+      const next=saveSession({version:1,date:day,created_at:now,items:candidates,done:{}});recordRotation(next);return next;
     }
-    return saveSession({version:1,date:day,created_at:now,items:pick(now),done:{}});
+    const next=saveSession({version:1,date:day,created_at:now,items:pick(now),done:{}});recordRotation(next);return next;
   }
   function plan(now=Date.now()){
     const session=dailySession(now),source=inputs();
@@ -133,6 +154,7 @@
   function eligible(word,now=Date.now()){
     const x=detail(word,now);return !!x&&x.ready&&!x.stable;
   }
+  function pendingSet(){return new Set(Object.keys(known()).filter(k=>known()[k]&&typeof known()[k]==='object'));}
   function requestVerification(word,now=Date.now()){
     const k=norm(word);if(!taught().has(k))return false;
     const entries=known();
@@ -146,7 +168,7 @@
     delete entries[k];
     try{root.localStorage.setItem(KNOWN_KEY,JSON.stringify(entries))}catch(e){}
   }
-  root.VocabStudyCoach={plan,assigned,assignedSet,dailyProgress,detail,eligible,eligibleSet,requestVerification,clearRequest,words:()=>[...taught().values()]};
+  root.VocabStudyCoach={plan,assigned,assignedSet,dailyProgress,detail,eligible,eligibleSet,pendingSet,requestVerification,clearRequest,words:()=>[...taught().values()]};
   root.addEventListener('automation-training-updated',e=>{const d=e&&e.detail||{},word=d.word,at=d.state&&d.state.last_at;if(word)clearRequest(word,at)});
   root.addEventListener('vocab-profile-evidence-updated',e=>{const d=e&&e.detail||{};const api=root.VocabProfileEvidence,rows=api?api.records():[],last=rows.filter(x=>x.word===norm(d.word)).slice(-1)[0];if(last)markTask(d.word,last.at);root.dispatchEvent(new CustomEvent('vocab-coach-updated',{detail:d}))});
 })(window);
