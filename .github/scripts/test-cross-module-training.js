@@ -66,4 +66,40 @@ const recorded=vm.runInNewContext(recordSrc+"\nrecord('tunda',3,{ok:true,kind:'s
 });
 assert.equal(recorded.last_result,'self_checked','Stage 3 must retain user-confirmed status, not rewrite to machine-graded right');
 assert.equal(recorded.stage,4,'Self-checked practice advances to delayed verification');
-console.log('Cross-module tests passed: choice-only no auto-mastery; weak-list pending/pause semantics; scored listening contrasts respect assignments; stage-three user self-check remains explicit.');
+
+// Exercise each real entrypoint's selection logic when its priority assignment is empty.
+const quick=read('home-learning-upgrade-v2.js');
+const qw=quick.indexOf('  function weightedPool(){'),qend=quick.indexOf('  function sampleWeighted(',qw);
+assert.ok(qw>0&&qend>qw);
+const optionalQuick=vm.runInNewContext(quick.slice(qw,qend)+'\nweightedPool()',{
+ window:{VocabStudyCoach:{assigned(){return []},quickSupplement(){return [{word:'tunda',cn:'推迟'}]}}},
+ wordMap:()=>({tunda:{word:'tunda',cn:'推迟'}}),norm:x=>String(x).toLowerCase(),Set
+});
+assert.equal(optionalQuick.length,1,'Quick choices still exist with zero quick priority tasks');
+
+const enStart=listening.indexOf('  function rootCoachEligible(){'),enEnd=listening.indexOf('  function buildQueue(){',enStart);
+const assignedListen=vm.runInNewContext(listening.slice(enStart,enEnd)+'\nrootCoachEligible()',{
+ window:{VocabStudyCoach:{assignedSet(){return new Set(['tunda'])},supplement(){return [{word:'supaya'}]}}},
+ Date,Set,String
+});
+assert.deepEqual(Array.from(assignedListen).sort(),['supaya','tunda'],'Listening entrypoint combines assigned and optional due words');
+
+const ca=automation.indexOf('  function candidateList(){'),cb=automation.indexOf('  function loadPlan(){',ca);
+assert.ok(ca>0&&cb>ca);
+const optionalAuto=vm.runInNewContext(automation.slice(ca,cb)+'\ncandidateList()',{
+ window:{VocabStudyCoach:{assigned(){return []},supplement(){return [{word:'tunda',cn:'推迟',score:5,stage:1,note:'optional'}]}}},
+ Set,norm:s=>String(s||'').toLowerCase()
+});
+assert.equal(optionalAuto.length,1,'Automatic training remains available from optional words when no priority task is allocated');
+const ba=automation.indexOf('  function buildPlan(force){'),bb=automation.indexOf('  function savePlan(plan){',ba);
+assert.ok(ba>0&&bb>ba);
+const oldPlan={date:'2026-09-28',generated_at:1,words:[{word:'tunda',stage:1}],results:{tunda:{at:2,result:'right'}}};
+let generated=0;
+const persistentAuto=vm.runInNewContext(automation.slice(ba,bb)+'\nbuildPlan(false)',{
+ today:()=>oldPlan.date,loadPlan:()=>oldPlan,candidateList(){generated++;return []},
+ MAX_DAILY:8,Date,JSON,norm:s=>String(s||'').toLowerCase(),write(){throw Error('same-day plan must not be rewritten')}
+});
+assert.equal(persistentAuto,oldPlan,'Finished automation cards persist on refresh');
+assert.equal(generated,0,'Refreshing an answered session must not call the unstable dynamic candidate list');
+
+console.log('Cross-module tests passed: quick/listen/auto empty-priority fallback, persisted auto results, shared listening boundaries, self-check integrity.');
