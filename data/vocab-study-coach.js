@@ -4,6 +4,7 @@
   const KNOWN_KEY='indo_vocab_coach_verify_requests_v1';
   const SESSION_KEY='indo_vocab_coach_daily_session_v1';
   const ROTATION_KEY='indo_vocab_coach_rotation_v1';
+  const QUICK_KEY='indo_vocab_coach_optional_quick_v1';
   const HOUR=3600000,DAY=24*HOUR;
   const norm=s=>String(s||'').trim().toLowerCase();
   const time=v=>{const n=typeof v==='number'?v:Date.parse(String(v||''));return Number.isFinite(n)&&n>0?n:0;};
@@ -142,6 +143,40 @@
     const s=dailySession(now);
     return {total:s.items.length,done:Object.keys(s.done||{}).length,remaining:plan(now).length,waiting:s.items.filter(x=>!s.done[norm(x.word)]).length-plan(now).length};
   }
+  // Opt-in recognition practice is separate from the eight priority tasks. It never adds to
+  // the daily task count, never borrows assigned words and still obeys global word cooldown.
+  function quickSupplement(now=Date.now(),max=10){
+    const day=dateJakarta(now),session=dailySession(now),source=inputs();
+    const assignedWords=new Set(session.items.map(x=>norm(x.word)));
+    const mastered=new Set(root.WeaknessPool&&typeof root.WeaknessPool.listMastered==='function'
+      ?root.WeaknessPool.listMastered().map(x=>norm(x.word)):[]);
+    const previous=read(QUICK_KEY,null);
+    const suitable=x=>{
+      const k=norm(x.word),q=source.quick[k]||{},lastQuick=time(q.last);
+      return !assignedWords.has(k)&&!mastered.has(k)&&!x.stable&&!x.requested&&x.ready
+        &&!(lastQuick&&dateJakarta(lastQuick)===day);
+    };
+    const resolve=words=>words.map(word=>describe(word,source,now)).filter(x=>x&&suitable(x));
+    if(previous&&previous.version===1&&previous.date===day&&Array.isArray(previous.items)&&previous.items.length){
+      // A completed optional batch never automatically replenishes on refresh.
+      return resolve(previous.items);
+    }
+    const ranked=[];
+    source.items.forEach((item,k)=>{
+      const x=describe(k,source,now);
+      if(x&&suitable(x))ranked.push(x);
+    });
+    ranked.sort((a,b)=>{
+      const pa=source.quick[norm(a.word)]||{},pb=source.quick[norm(b.word)]||{};
+      const score=x=>x.score+(!(source.quick[norm(x.word)]||{}).last?16:0)
+        +(source.weak[norm(x.word)]?20:0);
+      return score(b)-score(a)||a.word.localeCompare(b.word);
+    });
+    const items=ranked.slice(0,Math.min(10,Math.max(0,max))).map(x=>x.word);
+    try{root.localStorage.setItem(QUICK_KEY,JSON.stringify({version:1,date:day,items}))}catch(e){}
+    return resolve(items);
+  }
+
   function markTask(word,at){
     const s=read(SESSION_KEY,null),t=time(at),k=norm(word);
     if(!s||s.version!==1||!Array.isArray(s.items)||!t||t<Number(s.created_at)||s.date!==dateJakarta(t)||!s.items.some(x=>norm(x.word)===k)||s.done&&s.done[k])return;
@@ -168,7 +203,7 @@
     delete entries[k];
     try{root.localStorage.setItem(KNOWN_KEY,JSON.stringify(entries))}catch(e){}
   }
-  root.VocabStudyCoach={plan,assigned,assignedSet,dailyProgress,detail,eligible,eligibleSet,pendingSet,requestVerification,clearRequest,words:()=>[...taught().values()]};
+  root.VocabStudyCoach={plan,assigned,assignedSet,dailyProgress,detail,eligible,eligibleSet,quickSupplement,pendingSet,requestVerification,clearRequest,words:()=>[...taught().values()]};
   root.addEventListener('automation-training-updated',e=>{const d=e&&e.detail||{},word=d.word,at=d.state&&d.state.last_at;if(word)clearRequest(word,at)});
   root.addEventListener('vocab-profile-evidence-updated',e=>{const d=e&&e.detail||{};const api=root.VocabProfileEvidence,rows=api?api.records():[],last=rows.filter(x=>x.word===norm(d.word)).slice(-1)[0];if(last)markTask(d.word,last.at);root.dispatchEvent(new CustomEvent('vocab-coach-updated',{detail:d}))});
 })(window);
