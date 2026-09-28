@@ -7,6 +7,8 @@ on:
       - '.github/scripts/validate-lesson-candidate.js'
       - '.github/scripts/plan-lesson-publication.js'
       - '.github/scripts/test-lesson-candidate.js'
+      - '.github/scripts/build-lesson-context.js'
+      - '.github/scripts/test-build-lesson-context.js'
       - '.github/scripts/test-publication-plan.js'
       - '.github/scripts/publish-staged-lesson.js'
       - '.github/scripts/test-publish-staged-lesson.js'
@@ -58,6 +60,8 @@ jobs:
           node --check .github/scripts/plan-lesson-publication.js
           node --check .github/scripts/check-staged-drafts.js
           node --check .github/scripts/test-lesson-candidate.js
+          node --check .github/scripts/build-lesson-context.js
+          node --check .github/scripts/test-build-lesson-context.js
           node --check .github/scripts/test-publication-plan.js
           node --check .github/scripts/publish-staged-lesson.js
           node --check .github/scripts/test-publish-staged-lesson.js
@@ -147,8 +151,9 @@ jobs:
           if(words.some(v=>pool.has(String(v||'').trim().toLowerCase())))process.exit(1);
           HEALTH
               then
-                if node .github/scripts/regression-guard.js > /dev/null; then
-                  echo 'Scheduled check: lesson, index, runtime, vocabulary and regression guard healthy; no rebuild or commit.'
+                if node .github/scripts/regression-guard.js > /dev/null &&
+                   node .github/scripts/build-lesson-context.js --check > /dev/null; then
+                  echo 'Scheduled check: lesson, index, runtime, context, vocabulary and regression guard healthy; no rebuild or commit.'
                   exit 0
                 fi
               fi
@@ -341,6 +346,9 @@ jobs:
           NODE
           incident_phase='build_runtime'; incident_category='derived_data'
           node .github/scripts/build-learning-runtime.js
+          incident_phase='build_lesson_context'; incident_category='derived_data'
+          node .github/scripts/build-lesson-context.js --output data/lesson-context.json
+          node .github/scripts/build-lesson-context.js --check
           node --check .github/scripts/build-vocab-profile.js
           node --check .github/scripts/write-vocab-profile-snapshot.js
           node --check .github/scripts/test-vocab-profile-snapshot.js
@@ -366,7 +374,7 @@ jobs:
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
           incident_phase='prepare_commit'; incident_category='git_write'
-          git add data/daily-vocab-data.js data/learning-runtime.json index.html data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
+          git add data/daily-vocab-data.js data/learning-runtime.json data/lesson-context.json index.html data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
           if git diff --cached --quiet; then
             git fetch origin main
             if [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ]; then
@@ -384,6 +392,7 @@ jobs:
             git reset --hard origin/main
             node .github/scripts/regression-guard.js
             node .github/scripts/vocab-ui-regression-guard.js
+            node .github/scripts/build-lesson-context.js --check
             echo "Sync push and remote read-back validation succeeded on attempt ${attempt}."
             exit 0
           fi

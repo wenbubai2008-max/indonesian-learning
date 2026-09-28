@@ -18,6 +18,8 @@ on:
       - 'data/bipa-secondary-seed-20260917.js'
       - '.github/scripts/build-bipa-level-chunks.js'
       - '.github/scripts/build-learning-runtime.js'
+      - '.github/scripts/build-lesson-context.js'
+      - '.github/scripts/test-build-lesson-context.js'
       - '.github/scripts/build-vocab-profile.js'
       - '.github/scripts/write-vocab-profile-snapshot.js'
       - '.github/scripts/test-vocab-profile-snapshot.js'
@@ -154,6 +156,9 @@ jobs:
           node --check data/bipa-level-b1-gz.js
           node --check data/bipa-level-b2-gz.js
           node .github/scripts/build-learning-runtime.js
+          incident_phase='build_lesson_context'; incident_category='derived_data'
+          node .github/scripts/build-lesson-context.js --output data/lesson-context.json
+          node .github/scripts/build-lesson-context.js --check
           node .github/scripts/build-vocab-profile.js
           node .github/scripts/write-vocab-profile-snapshot.js
           incident_phase='regression_guard'; incident_category='validation'
@@ -165,7 +170,7 @@ jobs:
               continue
             fi
             incident_phase='prepare_commit'; incident_category='git_write'
-            git add index.html data/learning-runtime.json data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json
+            git add index.html data/learning-runtime.json data/lesson-context.json data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json
             if git diff --cached --quiet; then
               echo 'Build already current; no empty commit.'
               exit 0
@@ -173,7 +178,12 @@ jobs:
             git commit -m 'Build learning runtime pools'
             incident_phase='publish_commit'; incident_category='git_push_or_concurrency'
             if git push origin HEAD:main; then
-              echo "Build push succeeded on attempt ${attempt}."
+              incident_phase='remote_readback'; incident_category='post_commit_validation'
+              git fetch origin main
+              git reset --hard origin/main
+              node .github/scripts/build-lesson-context.js --check
+              node .github/scripts/regression-guard.js
+              echo "Build push and context read-back succeeded on attempt ${attempt}."
               exit 0
             fi
             echo "::warning title=Build branch advanced or push failed::Attempt ${attempt} did not publish; discard derived commit and recompute from current main."
