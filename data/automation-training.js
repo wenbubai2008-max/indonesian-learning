@@ -162,6 +162,7 @@
       st.fail_streak=0;
       st.last_result=result.kind||'right';
       if(stage===1){
+        st.verify_streak=0; // A fresh recall path cannot inherit old delayed-verification streaks.
         if(Number.isFinite(Number(result.recall_ms)))st.last_recall_ms=Math.max(0,Number(result.recall_ms));
         st.stage=2;
         st.next_due=now+(result.kind==='direct'?20*HOUR:12*HOUR);
