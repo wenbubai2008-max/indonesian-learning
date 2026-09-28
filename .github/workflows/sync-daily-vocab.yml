@@ -357,6 +357,8 @@ jobs:
           node --check .github/scripts/test-vocab-study-coach.js
           node --check .github/scripts/vocab-ui-regression-guard.js
           node .github/scripts/test-vocab-study-coach.js
+          node --check .github/scripts/test-cross-module-training.js
+          node .github/scripts/test-cross-module-training.js
           node .github/scripts/build-vocab-profile.js
           node .github/scripts/write-vocab-profile-snapshot.js
           node .github/scripts/inject-vocab-profile.js
