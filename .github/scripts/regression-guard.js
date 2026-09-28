@@ -452,7 +452,7 @@ try {
   ok(profileBuilderSource.includes('isDeepStrictEqual(withoutGenerationTime(previousProfile),withoutGenerationTime(out))'), 'profile builder preserves generated_at on no-op recovery');
 
   const css = read('data/daily-width-fix.css');
-  ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))'), 'first-paint desktop homepage layout is 3 compact columns');
+  ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))'), 'first-paint desktop remaining-tool layout is 4 compact columns');
   ok(css.includes('@media (max-width:1050px)') && css.includes('repeat(3,minmax(0,1fr))'), 'first-paint medium layout keeps 3 columns');
   ok(css.includes('@media (max-width:700px)') && css.includes('repeat(2,minmax(0,1fr))'), 'first-paint mobile layout keeps 2 columns');
   ok(css.includes('@media (max-width:430px)') && css.includes('grid-template-columns:1fr'), 'first-paint narrow layout keeps 1 column');
