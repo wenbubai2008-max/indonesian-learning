@@ -74,7 +74,7 @@
     }
     var picks=target?[target]:(window.VocabStudyCoach?pool.slice(0,10).map(function(x){return x.x;}):sampleWeighted(pool,Math.min(10,pool.length))),all=recentPool(),html='<div class="v2-refresh"><button class="secondary" type="button" onclick="refreshQuickPracticeV2()">↻ 重看本轮</button></div><div class="v2-note">'+(target?'针对指定词进行一次识别验证；完成后进入跨模块冷却。':'优先显示今日分配的快速识别词，剩余为自选轻练；补充题不计入每日重点任务，仍遵守冷却、已学资格与去重。')+'</div>';
     picks.forEach(function(x,i){
-      var wrong=shuffle(all.filter(function(y){return norm(y.word)!==norm(x.word);})).slice(0,3).map(function(y){return y.word;}),opts=shuffle([x.word].concat(wrong));
+      var wrong=shuffle(Array.from(new Set(all.filter(function(y){return norm(y.word)!==norm(x.word);}).map(function(y){return y.word;})))).slice(0,3),opts=shuffle([x.word].concat(wrong));
       html+='<div class="v2-q" data-answer="'+esc(x.word)+'"><b>'+(i+1)+'. '+esc(x.cn)+'</b><div class="v2-opts">';
       opts.forEach(function(o){html+='<button type="button" data-v="'+esc(o)+'">'+esc(o)+'</button>';});
       html+='</div><div class="v2-result"></div></div>';
