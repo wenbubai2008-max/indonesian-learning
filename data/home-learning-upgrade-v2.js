@@ -29,6 +29,7 @@
     return 0;
   }
   function weightedPool(){
+    if(window.VocabStudyCoach){var map=wordMap();return window.VocabStudyCoach.assigned('quick').map(function(t){return {x:map[norm(t.word)]||{word:t.word,cn:t.cn},w:1,due:0};}).filter(function(x){return !!x.x.cn;});}
     var pool=recentPool(),ps=practiceState(),mm=mem(),wp=weakPool(),active=wp?(typeof wp.focusMap==='function'?wp.focusMap():wp.activeMap()):localUnknown(),now=Date.now(),seen={};
     var eligible=window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet(now):null;
     pool.forEach(function(x){seen[norm(x.word)]=1;});
@@ -57,7 +58,7 @@
     var pool=weightedPool(),meta=document.getElementById('quickPracticeMeta');
     var wanted=norm(focusWord),target=wanted&&taughtSet().has(wanted)?wordMap()[wanted]:null;
     if(wanted&&(!target||window.VocabStudyCoach&&!window.VocabStudyCoach.eligible(wanted))){body.innerHTML='<div class="empty">这个词尚未到复习时间，或者不在正式学习词库中。系统不会为了凑题重复测试。</div>';return;}
-    if(meta)meta.textContent='到期 '+pool.length+' 词 · 本轮最多10题';
+    if(meta)meta.textContent='统一计划中到期 '+pool.length+' 词 · 本轮最多'+Math.min(10,Math.max(1,pool.length))+'题';
     if(!pool.length&&!target){
       body.innerHTML='<div class="empty"><b>这会儿没有到期词。</b><div style="margin-top:8px">刚答对的词已经进入冷却期，不会因为刷新马上又出现；到时间后会再验证。</div></div>';
       return;
