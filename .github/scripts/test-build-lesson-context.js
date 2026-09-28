@@ -8,7 +8,8 @@ const {buildLessonContext}=require('./build-lesson-context');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
 const git=(...xs)=>cp.execFileSync('git',xs,{encoding:'utf8'}).trim();
 git('fetch','origin','main');
-const sha=git('rev-parse','origin/main');
+// Immutable REAL 2026-09-28 post-PM main; tests must not change meaning when future lessons arrive.
+const sha='fa2d2c7b35026140da912f94c2b287e845911ac5';
 const raw=p=>git('show',sha+':'+p),read=p=>JSON.parse(raw(p)),clone=x=>JSON.parse(JSON.stringify(x));
 const index=read('data/daily/index.json'),runtime=read('data/learning-runtime.json'),rules=read('data/learning-pool-rules.json');
 const prepare=(changes={})=>({index,runtime,rules,load:read,sourceSha:sha,...changes});
@@ -17,7 +18,7 @@ let passed=0;
 function ok(name,fn){fn();passed++;console.log('PASS context: '+name)}
 function bad(name,args,code){ok(name,()=>assert.throws(()=>buildLessonContext(args),e=>e.code===code,'Expected '+code))}
 const now=buildLessonContext(prepare()),target=now.target;
-ok('actual latest main is the sole source',()=>{
+ok('immutable real 2026-09-28 post-PM main is the sole source',()=>{
  assert.equal(target.date,'2026-09-29');assert.equal(target.session,'am');
  assert.equal(now.source.main_sha,sha);assert.equal(now.source.master_unique,977);
  assert.equal(now.source.lesson_watermark,runtime.lesson_watermark);
@@ -79,8 +80,8 @@ ok('compact compared with runtime + seven days of real lesson payloads',()=>{
  });
  bad('stale runtime/index combination stops instead of publishing',prepare({index:i}),'BASELINE_SYNC_STALE');
  const missing=clone(i);missing.dates.at(-1).am=false;
- const t2=clone(t);t2.lesson_watermark='2026-09-27 18:00';
- bad('missing completed lesson record stops context builder',prepare({index:missing,runtime:t2}),'BASELINE_SYNC_STALE');
+ const t2=clone(t);t2.lesson_watermark='2026-09-28 08:00';
+ bad('missing completed lesson record conflicts with runtime watermark',prepare({index:missing,runtime:t2}),'BASELINE_SYNC_STALE');
 }
 {const t=clone(runtime);t.stats.master_unique=976;bad('977 invariant is mandatory',prepare({runtime:t}),'RULE_RUNTIME_MISMATCH')}
 {const t=clone(runtime);t.lesson_watermark='2026-09-28 08:00';bad('baseline watermark mismatch stops context',prepare({runtime:t}),'BASELINE_SYNC_STALE')}
