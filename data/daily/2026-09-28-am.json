@@ -1,0 +1,255 @@
+{
+  "date": "2026-09-28",
+  "session": "am",
+  "time": "08:00",
+  "day": 38,
+  "level": "A2+–B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜工作沟通与突发情况",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "becek",
+    "unggah",
+    "pelayanan",
+    "sia-sia",
+    "ribut",
+    "sombong",
+    "wangi",
+    "pingsan",
+    "mikir",
+    "curhat"
+  ],
+  "vocab": [
+    {
+      "word": "becek",
+      "cn": "泥泞的；湿漉漉的",
+      "en": "muddy; slushy",
+      "root": "becek",
+      "root_cn": "泥泞",
+      "formation": "日常口语形容路面有水、有泥。",
+      "example": "Jalannya becek setelah hujan.",
+      "example_cn": "下雨后路很泥泞。",
+      "synonym_note": "becek强调湿泥；basah只表示湿。",
+      "usage_note": "常说 jalan becek。",
+      "is_oral_new": true,
+      "display": "becek",
+      "audio_text": "becek"
+    },
+    {
+      "word": "unggah",
+      "cn": "上传",
+      "en": "upload",
+      "root": "unggah",
+      "root_cn": "上传",
+      "formation": "标准印尼语，和unduh（下载）方向相反。",
+      "example": "Tolong unggah file ini ke sistem.",
+      "example_cn": "请把这个文件上传到系统。",
+      "synonym_note": "unggah=上传；unduh=下载。",
+      "usage_note": "聊天也常直接说 upload。",
+      "is_oral_new": true,
+      "display": "unggah",
+      "audio_text": "unggah"
+    },
+    {
+      "word": "pelayanan",
+      "cn": "服务；服务质量",
+      "en": "service",
+      "root": "layan",
+      "root_cn": "服务；招待",
+      "formation": "pe- + layan + -an，表示服务或服务过程。",
+      "example": "Pelayanan di toko itu cukup cepat.",
+      "example_cn": "那家店的服务挺快。",
+      "synonym_note": "pelayanan偏服务行为；layanan也可指服务项目。",
+      "usage_note": "常见 pelayanan pelanggan。",
+      "is_oral_new": false,
+      "display": "pelayanan",
+      "audio_text": "pelayanan"
+    },
+    {
+      "word": "sia-sia",
+      "cn": "白费；徒劳",
+      "en": "in vain; useless",
+      "root": "sia",
+      "root_cn": "徒然（用于固定重叠词）",
+      "formation": "固定重叠形式sia-sia。",
+      "example": "Jangan buang waktu sia-sia.",
+      "example_cn": "别白白浪费时间。",
+      "synonym_note": "sia-sia与口语percuma接近。",
+      "usage_note": "常搭配 usaha/waktu。",
+      "is_oral_new": false,
+      "display": "sia-sia",
+      "audio_text": "sia-sia"
+    },
+    {
+      "word": "ribut",
+      "cn": "吵闹；争吵",
+      "en": "noisy; quarrel",
+      "root": "ribut",
+      "root_cn": "吵闹；争吵",
+      "formation": "可形容环境吵，也可说人争吵。",
+      "example": "Mereka ribut soal jadwal kerja.",
+      "example_cn": "他们因为工作安排吵了起来。",
+      "synonym_note": "ribut可指吵闹或争执；berantem更偏吵架/打架。",
+      "usage_note": "口语常说 jangan ribut。",
+      "is_oral_new": false,
+      "display": "ribut",
+      "audio_text": "ribut"
+    },
+    {
+      "word": "sombong",
+      "cn": "傲慢的；自大的",
+      "en": "arrogant",
+      "root": "sombong",
+      "root_cn": "傲慢",
+      "formation": "常形容人的态度。",
+      "example": "Dia pintar, tapi tidak sombong.",
+      "example_cn": "他很聪明，但并不傲慢。",
+      "synonym_note": "sombong是自大；gengsi更偏面子、自尊。",
+      "usage_note": "可说 kelihatan sombong。",
+      "is_oral_new": false,
+      "display": "sombong",
+      "audio_text": "sombong"
+    },
+    {
+      "word": "wangi",
+      "cn": "香的；香味好闻",
+      "en": "fragrant",
+      "root": "wangi",
+      "root_cn": "香",
+      "formation": "日常形容香水、食物、房间等气味。",
+      "example": "Kopinya wangi sekali.",
+      "example_cn": "这咖啡特别香。",
+      "synonym_note": "wangi是香；bau泛指气味，也可指臭味。",
+      "usage_note": "常见 harum 也表示芳香。",
+      "is_oral_new": false,
+      "display": "wangi",
+      "audio_text": "wangi"
+    },
+    {
+      "word": "pingsan",
+      "cn": "晕倒；昏厥",
+      "en": "faint",
+      "root": "pingsan",
+      "root_cn": "昏厥",
+      "formation": "表示失去意识、晕倒。",
+      "example": "Dia hampir pingsan karena terlalu lelah.",
+      "example_cn": "他因为太累差点晕倒。",
+      "synonym_note": "pingsan是晕厥；pusing只是头晕。",
+      "usage_note": "常说 hampir pingsan。",
+      "is_oral_new": false,
+      "display": "pingsan",
+      "audio_text": "pingsan"
+    },
+    {
+      "word": "mikir",
+      "cn": "想；思考（口语）",
+      "en": "think (colloquial)",
+      "root": "pikir",
+      "root_cn": "想；思考",
+      "formation": "memikirkan/pikir的常见口语形式。",
+      "example": "Aku lagi mikir cara yang paling praktis.",
+      "example_cn": "我正在想最实用的办法。",
+      "synonym_note": "mikir很口语；berpikir较正式。",
+      "usage_note": "常说 lagi mikir。",
+      "is_oral_new": false,
+      "display": "mikir",
+      "audio_text": "mikir"
+    },
+    {
+      "word": "curhat",
+      "cn": "倾诉；诉苦；聊心事",
+      "en": "confide; vent",
+      "root": "curhat",
+      "root_cn": "倾诉（curahan hati的口语缩略）",
+      "formation": "来自curahan hati的口语缩略。",
+      "example": "Kalau capek, kamu boleh curhat sama aku.",
+      "example_cn": "如果累了，你可以跟我倾诉。",
+      "synonym_note": "curhat偏倾诉心事；mengeluh偏抱怨。",
+      "usage_note": "常用 curhat sama teman。",
+      "is_oral_new": false,
+      "display": "curhat",
+      "audio_text": "curhat"
+    }
+  ],
+  "review_vocab": [
+    "menyalin",
+    "menegaskan",
+    "nyinggung",
+    "nangkep",
+    "kelabakan"
+  ],
+  "sentences": [
+    {
+      "text": "Jalannya becek, jadi saya datang sedikit terlambat.",
+      "cn": "路很泥泞，所以我来晚了一点。"
+    },
+    {
+      "text": "Tolong unggah laporan ini setelah kamu menyalin datanya.",
+      "cn": "你复制完数据后，请上传这份报告。"
+    },
+    {
+      "text": "Pelayanan yang baik tidak perlu sombong atau ribut.",
+      "cn": "好的服务不需要傲慢或吵闹。"
+    },
+    {
+      "text": "Jangan sampai usaha kita sia-sia; kita perlu menegaskan rencananya.",
+      "cn": "别让我们的努力白费；我们需要把计划说清楚。"
+    },
+    {
+      "text": "Aku lagi mikir, nanti malam aku mau curhat soal pekerjaan.",
+      "cn": "我正在想，今晚想聊聊工作的事。"
+    }
+  ],
+  "reading": {
+    "text": "Pagi ini jalan menuju kantor becek karena hujan deras. Saya hampir terlambat dan seorang rekan terlihat kelabakan mencari file pelanggan. Saya membantu menyalin datanya, lalu meminta dia unggah laporan ke sistem. Kami sempat ribut sedikit karena instruksinya kurang jelas, jadi saya menegaskan langkah yang harus dilakukan. Saya juga nyinggung masalah pelayanan yang lambat, tetapi saya berusaha tidak terdengar sombong. Setelah semuanya selesai, ruangan terasa lebih tenang dan kopi di meja masih wangi. Saya lega karena usaha kami tidak sia-sia. Teman saya lalu curhat soal pekerjaannya, dan saya mencoba nangkep maksudnya sambil mikir solusi yang praktis.",
+    "cn": "今天早上因为大雨，去公司的路很泥泞。我差点迟到，一位同事正手忙脚乱地找客户文件。我帮他复制数据，然后让他把报告上传到系统。因为指示不够清楚，我们一度有点争执，所以我把需要做的步骤明确说明了。我也提到了服务太慢的问题，但尽量不让自己显得傲慢。事情处理完后，办公室安静下来，桌上的咖啡依然很香。我很庆幸我们的努力没有白费。后来朋友向我倾诉工作上的事，我一边努力听懂他的意思，一边想一个实用的解决办法。"
+  },
+  "quiz": [
+    {
+      "question": "“复制数据”里的“复制”应该用哪个复习词？",
+      "options": [
+        "menyalin",
+        "ribut",
+        "unggah",
+        "curhat"
+      ],
+      "answer_index": 0,
+      "answer": "menyalin",
+      "explain": "menyalin表示复制、抄写，是本课复习词。"
+    },
+    {
+      "question": "“上传文件”最合适的是哪个词？",
+      "options": [
+        "pingsan",
+        "unggah",
+        "wangi",
+        "sombong"
+      ],
+      "answer_index": 1,
+      "answer": "unggah",
+      "explain": "unggah表示上传；unduh表示下载。"
+    },
+    {
+      "question": "填空：Jangan sampai usaha kita ____ .（白费） 应该选哪个词？",
+      "options": [
+        "sombong",
+        "sia-sia",
+        "ribut",
+        "becek"
+      ],
+      "answer_index": 1,
+      "answer": "sia-sia",
+      "explain": "sia-sia表示徒劳、白费。"
+    }
+  ],
+  "output": {
+    "task": "用 becek、unggah、menegaskan 中至少两个词，说2句今天上班可能遇到的情况。",
+    "reference_answer": "Jalannya becek setelah hujan. Setelah sampai kantor, saya menegaskan instruksi lalu unggah laporan ke sistem.",
+    "reference_cn": "下雨后路很泥泞。到公司后，我把指示说清楚，然后把报告上传到系统。"
+  },
+  "review": [
+    "3秒主动回忆：becek、unggah、pelayanan、sia-sia分别是什么意思。",
+    "重点区分：unggah/unduh，curhat/mengeluh，ribut/berantem。",
+    "复习menyalin、menegaskan、nyinggung、nangkep、kelabakan，并用其中两个词完成主动输出。"
+  ]
+}
