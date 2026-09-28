@@ -8647,26 +8647,30 @@ window.DAILY_VOCAB_DB = [
     "en": "realize; notice",
     "root": "ngeh",
     "root_cn": "意识到；注意到",
-    "example": "Aku baru ngeh ternyata dia sebenarnya cuma nggak enakan.",
-    "example_cn": "我才反应过来，原来他其实只是太顾及别人。",
+    "example": "Saya baru ngeh kalau file yang tadi salah.",
+    "example_cn": "我才意识到刚才的文件错了。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 19:00",
+    "last_seen": "2026-09-28 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-11"
+      "2026-09-11",
+      "2026-09-28"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
-      "2026-09-11 19:00"
+      "2026-09-11 19:00",
+      "2026-09-28 18:00"
     ]
   },
   {
@@ -8833,17 +8837,17 @@ window.DAILY_VOCAB_DB = [
     "en": "insist strongly; be stubborn",
     "root": "ngotot",
     "root_cn": "强硬坚持；不肯让步",
-    "example": "Kalau datanya belum jelas, jangan ngotot ambil keputusan sekarang.",
-    "example_cn": "如果数据还不清楚，就别硬要现在做决定。",
+    "example": "Dia tetap ngotot, padahal caranya belum tentu benar.",
+    "example_cn": "他仍然坚持己见，尽管方法未必正确。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-09-28 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -8851,12 +8855,14 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-12",
-      "2026-09-16"
+      "2026-09-16",
+      "2026-09-28"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
       "2026-09-12 19:00",
-      "2026-09-16 18:00"
+      "2026-09-16 18:00",
+      "2026-09-28 18:00"
     ]
   },
   {
@@ -9196,17 +9202,17 @@ window.DAILY_VOCAB_DB = [
     "en": "worthy; suitable; eligible",
     "root": "layak",
     "root_cn": "值得；合适",
-    "example": "Usulan ini layak dipertimbangkan dalam rapat besok.",
-    "example_cn": "这个提议值得在明天的会议上考虑。",
+    "example": "Cara baru ini layak dicoba oleh tim.",
+    "example_cn": "这个新方法值得团队试试。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-26 08:00",
+    "last_seen": "2026-09-28 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -9216,14 +9222,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-13",
       "2026-09-17",
       "2026-09-25",
-      "2026-09-26"
+      "2026-09-26",
+      "2026-09-28"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
       "2026-09-13 19:00",
       "2026-09-17 18:00",
       "2026-09-25 18:00",
-      "2026-09-26 08:00"
+      "2026-09-26 08:00",
+      "2026-09-28 18:00"
     ]
   },
   {
@@ -12487,27 +12495,29 @@ window.DAILY_VOCAB_DB = [
     "en": "complain",
     "root": "keluh",
     "root_cn": "抱怨；叹息",
-    "example": "Dia sering mengeluh saat jadwal berubah.",
-    "example_cn": "时间安排一改变，他就经常抱怨。",
+    "example": "Jangan hanya mengeluh; kita cari solusinya.",
+    "example_cn": "不要只抱怨，我们来找解决办法。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-27 18:00",
+    "last_seen": "2026-09-28 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-23",
-      "2026-09-27"
+      "2026-09-27",
+      "2026-09-28"
     ],
     "lesson_occurrences": [
       "2026-09-23 08:00",
-      "2026-09-27 18:00"
+      "2026-09-27 18:00",
+      "2026-09-28 18:00"
     ]
   },
   {
@@ -13141,23 +13151,25 @@ window.DAILY_VOCAB_DB = [
     "en": "while; at the same time",
     "root": "seraya",
     "root_cn": "同时；一边……一边……",
-    "example": "Dia menjelaskan masalah itu seraya menunjukkan catatannya.",
-    "example_cn": "他一边解释那个问题，一边给我看记录。",
+    "example": "Dia mengecek berkas seraya menjelaskan masalahnya.",
+    "example_cn": "他一边检查文件一边解释问题。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-22 18:00",
-    "last_seen": "2026-09-22 18:00",
+    "last_seen": "2026-09-28 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-22"
+      "2026-09-22",
+      "2026-09-28"
     ],
     "lesson_occurrences": [
-      "2026-09-22 18:00"
+      "2026-09-22 18:00",
+      "2026-09-28 18:00"
     ]
   },
   {
@@ -14382,24 +14394,27 @@ window.DAILY_VOCAB_DB = [
     "en": "muddy; slushy",
     "root": "becek",
     "root_cn": "泥泞",
-    "example": "Jalannya becek setelah hujan.",
-    "example_cn": "下雨后路很泥泞。",
+    "example": "Jalan menuju kantor masih becek setelah hujan.",
+    "example_cn": "下雨后去公司的路仍然泥泞。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-28"
     ],
     "lesson_occurrences": [
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-09-28 18:00"
     ]
   },
   {
@@ -14434,23 +14449,26 @@ window.DAILY_VOCAB_DB = [
     "en": "service",
     "root": "layan",
     "root_cn": "服务；招待",
-    "example": "Pelayanan di toko itu cukup cepat.",
-    "example_cn": "那家店的服务挺快。",
+    "example": "Pelayanan pelanggan tetap harus ramah saat sistem bermasalah.",
+    "example_cn": "系统出问题时，对客户的服务仍应友好。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-28"
     ],
     "lesson_occurrences": [
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-09-28 18:00"
     ]
   },
   {
@@ -14609,23 +14627,127 @@ window.DAILY_VOCAB_DB = [
     "en": "confide; vent",
     "root": "curhat",
     "root_cn": "倾诉（curahan hati的口语缩略）",
-    "example": "Kalau capek, kamu boleh curhat sama aku.",
-    "example_cn": "如果累了，你可以跟我倾诉。",
+    "example": "Setelah kerja, saya curhat sebentar kepada rekan kerja.",
+    "example_cn": "下班后我跟同事聊了一会儿心事。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-28"
     ],
     "lesson_occurrences": [
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-09-28 18:00"
+    ]
+  },
+  {
+    "word": "rekan kerja",
+    "cn": "同事；工作伙伴",
+    "en": "coworker; colleague",
+    "root": "rekan",
+    "root_cn": "伙伴；同伴",
+    "example": "Rekan kerja saya membantu saat sistem bermasalah.",
+    "example_cn": "系统出问题时，同事帮助了我。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 18:00",
+    "last_seen": "2026-09-28 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 18:00"
+    ]
+  },
+  {
+    "word": "terus-menerus",
+    "cn": "不断地；持续不停地",
+    "en": "continuously; repeatedly",
+    "root": "terus",
+    "root_cn": "继续；一直",
+    "example": "Hujan turun terus-menerus sejak siang.",
+    "example_cn": "从中午开始雨一直下个不停。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 18:00",
+    "last_seen": "2026-09-28 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 18:00"
+    ]
+  },
+  {
+    "word": "dengan demikian",
+    "cn": "因此；这样一来",
+    "en": "therefore; thus",
+    "root": "demikian",
+    "root_cn": "如此；这样",
+    "example": "Datanya sudah lengkap. Dengan demikian, laporan bisa dikirim.",
+    "example_cn": "数据已经齐全，因此报告可以发送。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 18:00",
+    "last_seen": "2026-09-28 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 18:00"
+    ]
+  },
+  {
+    "word": "sial",
+    "cn": "倒霉；真不走运",
+    "en": "unlucky; damn",
+    "root": "sial",
+    "root_cn": "倒霉；不走运",
+    "example": "Sial, koneksinya putus saat saya mau mengirim laporan.",
+    "example_cn": "真倒霉，我正要发报告时网络断了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 18:00",
+    "last_seen": "2026-09-28 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 18:00"
     ]
   }
 ];
