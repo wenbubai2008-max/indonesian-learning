@@ -83,22 +83,25 @@ try{
   const quickPos=externalScripts.findIndex(x=>x.includes('data/home-learning-upgrade-v2.js'));
   const listeningPos=externalScripts.findIndex(x=>x.includes('data/listening-word-training.js'));
   ok(evidencePos>=0&&coachPos>evidencePos&&coachPos<autoPos&&coachPos<quickPos&&coachPos<listeningPos&&profileScriptPos>coachPos,'shared coach loads after evidence and before all training/profile modules');
-  ok(studyCoach.includes('eligibleSet')&&studyCoach.includes('requestVerification'),'coach must share a single cooldown and delayed self-verification');
-  ok(studyCoach.includes('assignedSet')&&studyCoach.includes('dailySession')&&studyCoach.includes('markTask'),'generic training must consume bounded daily assignments and persist completion');
-  ok(studyCoach.includes('indo_vocab_coach_optional_quick_v1')&&studyCoach.includes('indo_vocab_coach_optional_listen_v1')&&studyCoach.includes('indo_vocab_coach_optional_auto_v1')&&studyCoach.includes('assignedWords')&&studyCoach.includes('otherWords'),'three optional training queues must be daily-fixed and disjoint from priority and each other');
+  ok(studyCoach.includes('eligibleSet')&&studyCoach.includes('requestVerification'),'coach must keep targeted self-verification and typed eligibility');
+  ok(studyCoach.includes('indo_vocab_skill_rounds_v1')&&studyCoach.includes('round(mode,')&&studyCoach.includes('markAnswer(mode,'),'three modes must share a small stable round mechanism');
+  ok(studyCoach.includes("status(mode,word")&&studyCoach.includes("mode==='quick'")&&studyCoach.includes("mode==='listen'")&&studyCoach.includes("mode==='auto'"),'skill states must have independent eligibility and due dates');
+  ok(studyCoach.includes('review_level')&&studyCoach.includes('review_due')&&studyCoach.includes('review_last_counted_day'),'quick and listening ladders must use real cross-day events and distinct dates');
+  ok(studyCoach.includes('dailySession')&&studyCoach.includes("mode+'|'"),'priority recommendation completion must use mode+word identity');
   ok(profileEvidence.includes('indo_vocab_profile_longterm_v1')&&profileEvidence.includes('compactSummary(longterm())'),'long-term ability must not depend on 1500 most recent events');
-  ok(automation.includes("VocabStudyCoach.assigned('auto')")&&automation.includes("coach.supplement('auto'")&&quick.includes("coach.assigned('quick')")&&quick.includes('coach.quickSupplement()')&&listenUi.includes("assignedSet('listen')")&&listenUi.includes("coach.supplement('listen'"),'all three modules must offer optional due practice without stealing primary assignments');
-  ok(automation.includes('old.words.length)return old')&&automation.includes('今天已记录')&&automation.includes('coach.eligible(word)'),'automation refresh keeps completed cards and honors cross-module cooldown');
-  ok(listenUi.includes('state.queue=head')&&listenUi.includes('查看今日剩余听词'),'listening must not reshuffle a fixed daily queue on refresh');
-  ok(profileUi.includes('今天最该练什么')&&profileUi.includes('逐词能力档案')&&profileUi.includes('data-coach-start'),'profile must expose actionable tasks and per-word history');
+  ok(automation.includes("VocabStudyCoach.candidates('auto')")&&quick.includes("window.VocabStudyCoach.candidates('quick')")&&listenUi.includes("coach.round('listen'"),'all three entrypoints must use their own due queues without taking other module words');
+  ok(quick.includes("coach.round('quick'")&&quick.includes('继续下一组')&&quick.includes("coach.markAnswer('quick'"),'quick can continue ten-word rounds and records independent visual results');
+  ok(automation.includes('old.words.length&&(!force||old.words.some')&&automation.includes('今天已记录')&&automation.includes("coach.eligible(word,Date.now(),'auto')"),'automation persists unanswered cards and honors active-only cooldown');
+  ok(listenUi.includes('state.queue=coach.round')&&listenUi.includes('查看今日剩余听词')&&listenUi.includes("coach.markAnswer('listen'"),'listening uses stable per-mode batches and records first-hear quality');
+  ok(profileUi.includes('今天最该练什么')&&profileUi.includes('逐词能力档案')&&profileUi.includes('data-coach-start')&&profileUi.includes('网站快照＋本机训练'),'profile must distinguish remote mastery from local skill progress');
   ok(profileUi.includes('vpHomeNext')&&profileUi.includes('vpHomeNumbers')&&profileUi.includes('查看全部任务 →'),'homepage must show only next recommended word and compact metrics while keeping the complete detail page');
   ok(automation.includes('openAutomationTrainingWord')&&automation.includes('autoSelfCheck'),'automation must directly train selected words and require expression self-confirmation');
 
-  ok(studyCoach.includes('indo_vocab_coach_rotation_v1')&&studyCoach.includes('rotationScore')&&studyCoach.includes('recordRotation'),'daily queue must rotate across calendar dates without rewriting eligibility');
+  ok(studyCoach.includes('overdue')&&studyCoach.includes('category(a)')&&studyCoach.includes('statistics(mode'),'due backlog, unverified and low-frequency review must be globally visible');
   ok(studyCoach.includes('pendingSet')&&weakPage.includes('coach.requestVerification(word)')&&!weakPage.includes("wp.markMastered(word,'weakness_done')"),'weak-page known button only reserves delayed verification');
   ok(weakPage.includes('PAUSE_KEY')&&weakPage.includes('weakRestoreBtn')&&weakPage.includes('data-pause-word'),'untaught reader words may be paused and restored without fake mastery');
   ok(!weaknessPool.includes("x.mastered_reason='3_correct'"),'three recognition answers must not auto-master the word');
-  ok(listenUi.includes('const allowed=rootCoachEligible(),used=new Set(state.queue.map')&&listenUi.includes('allowed&&!allowed.has(k)'),'new listening contrast must satisfy daily assignment and avoid duplicates');
+  ok(listenUi.includes('const allowed=rootCoachEligible(),used=new Set(state.queue.map')&&listenUi.includes('allowed&&!allowed.has(k)')&&!listenUi.includes('state.queue.splice('),'listening contrasts must not inject unreserved scored questions');
   ok(automation.includes("st.last_result=result.kind==='self_checked'?'self_checked':'right'"),'stage-three self-assessment must retain its own evidence type');
 
   ok(quick.includes('openQuickPracticeWordV2')&&listenUi.includes('openListeningWordTarget'),'quick and listening practice must support exact-word entry');
