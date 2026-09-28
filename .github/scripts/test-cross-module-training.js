@@ -72,25 +72,25 @@ const quick=read('home-learning-upgrade-v2.js');
 const qw=quick.indexOf('  function weightedPool(){'),qend=quick.indexOf('  function sampleWeighted(',qw);
 assert.ok(qw>0&&qend>qw);
 const optionalQuick=vm.runInNewContext(quick.slice(qw,qend)+'\nweightedPool()',{
- window:{VocabStudyCoach:{assigned(){return []},quickSupplement(){return [{word:'tunda',cn:'推迟'}]}}},
- wordMap:()=>({tunda:{word:'tunda',cn:'推迟'}}),norm:x=>String(x).toLowerCase(),Set
+  window:{VocabStudyCoach:{candidates(){return [{word:'tunda',cn:'推迟',score:5,kind:'new'}]}}},
+  wordMap:()=>({tunda:{word:'tunda',cn:'推迟'}}),norm:x=>String(x).toLowerCase()
 });
 assert.equal(optionalQuick.length,1,'Quick choices still exist with zero quick priority tasks');
 
 const enStart=listening.indexOf('  function rootCoachEligible(){'),enEnd=listening.indexOf('  function buildQueue(){',enStart);
 const assignedListen=vm.runInNewContext(listening.slice(enStart,enEnd)+'\nrootCoachEligible()',{
- window:{VocabStudyCoach:{assignedSet(){return new Set(['tunda'])},supplement(){return [{word:'supaya'}]}}},
- Date,Set,String
+  window:{VocabStudyCoach:{candidates(){return [{word:'tunda'},{word:'supaya'}]}}},
+  Date,Set,String
 });
-assert.deepEqual(Array.from(assignedListen).sort(),['supaya','tunda'],'Listening entrypoint combines assigned and optional due words');
+assert.deepEqual(Array.from(assignedListen).sort(),['supaya','tunda'],'Listening entrypoint lists only its own due candidates');
 
 const ca=automation.indexOf('  function candidateList(){'),cb=automation.indexOf('  function loadPlan(){',ca);
 assert.ok(ca>0&&cb>ca);
 const optionalAuto=vm.runInNewContext(automation.slice(ca,cb)+'\ncandidateList()',{
- window:{VocabStudyCoach:{assigned(){return []},supplement(){return [{word:'tunda',cn:'推迟',score:5,stage:1,note:'optional'}]}}},
- Set,norm:s=>String(s||'').toLowerCase()
+  window:{VocabStudyCoach:{candidates(){return [{word:'tunda',cn:'推迟',score:5,stage:1,kind:'new'}]}}},
+  norm:s=>String(s||'').toLowerCase()
 });
-assert.equal(optionalAuto.length,1,'Automatic training remains available from optional words when no priority task is allocated');
+assert.equal(optionalAuto.length,1,'Automatic training receives its independent due candidates');
 const ba=automation.indexOf('  function buildPlan(force){'),bb=automation.indexOf('  function savePlan(plan){',ba);
 assert.ok(ba>0&&bb>ba);
 const oldPlan={date:'2026-09-28',generated_at:1,words:[{word:'tunda',stage:1}],results:{tunda:{at:2,result:'right'}}};
@@ -102,4 +102,4 @@ const persistentAuto=vm.runInNewContext(automation.slice(ba,bb)+'\nbuildPlan(fal
 assert.equal(persistentAuto,oldPlan,'Finished automation cards persist on refresh');
 assert.equal(generated,0,'Refreshing an answered session must not call the unstable dynamic candidate list');
 
-console.log('Cross-module tests passed: quick/listen/auto empty-priority fallback, persisted auto results, shared listening boundaries, self-check integrity.');
+console.log('Cross-module tests passed: independent quick/listen/auto selectors, persisted auto results, listening contrast boundaries and self-check integrity.');
