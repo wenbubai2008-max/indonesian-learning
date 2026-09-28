@@ -53,9 +53,7 @@
     return '<div class="vpSection"><h3>今日针对性任务 · '+rows.length+' 个到期</h3><p class="vpCoverageNote">每个词只分配一种最需要的训练。做完后立即重算；没到期的词不会为了凑足数量反复出现。</p>'+taskListHTML(rows)+'</div>';
   }
   function wordCandidates(){
-    const items=new Map();
-    (window.DAILY_VOCAB_DB||[]).forEach(x=>{const k=normWord(x&&x.word);if(k&&x.cn&&!items.has(k))items.set(k,{word:x.word,cn:x.cn})});
-    return items;
+    const api=localCoach();return new Map((api?api.words():[]).map(x=>[normWord(x.word),x]));
   }
   function wordSearchHTML(q){
     const items=wordCandidates(),needle=normWord(q),api=localCoach(),preferred=new Set();
