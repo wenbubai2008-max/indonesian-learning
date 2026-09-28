@@ -51,6 +51,13 @@ try{
   ok(heroPos>=0&&heroPos<coachHomePos&&coachHomePos<profilePos&&profilePos<listenPos&&listenPos<modsPos,'homepage order must be daily > daily coach > compact profile > listening > other modules');
   ok(coachHomePos>heroPos&&coachHomePos<profilePos&&index.includes('#home #vocabCoachHome{min-height:'),'coach task card must reserve first-paint layout before compact profile');
   ok((index.match(/id="vocabProfile"/g)||[]).length===1,'homepage profile must have exactly one mount container');
+  const gridPos=index.indexOf('class="homeLearningGrid"'),shortcutPos=index.indexOf('class="homeShortcuts"'),otherTitlePos=index.indexOf('其他学习工具');
+  ok(heroPos<gridPos&&gridPos<coachHomePos&&coachHomePos<profilePos&&profilePos<shortcutPos&&shortcutPos<listenPos&&listenPos<otherTitlePos&&otherTitlePos<modsPos,'homepage shows paired coach/profile, then three shortcuts, then remaining tools');
+  ok(index.includes('grid-template-columns:minmax(0,1.7fr) minmax(280px,1fr)')&&index.includes('#home .homeShortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))'),'two-column dashboard and three shortcuts must exist in first-paint CSS');
+  ok(index.includes('onclick="openListeningWords()"')&&index.includes('onclick="openQuickPracticeV2()"')&&index.includes('onclick="openAutomationTraining()"'),'all three shortcut cards must open the existing training modules');
+  ok(index.includes('#home #homeModules>.module[data-home-module="quick"],#home #homeModules>.module[data-home-module="automation"]{display:none!important}'),'old duplicate quick/automation tool cards must stay hidden at first paint');
+  ok((index.match(/id="listenQuickCard"/g)||[]).length===1,'listening shortcut must have one live-card container');
+
   ok(!index.includes('A2+ → B1 · 雅加达真实口语优先 · 你的个人词库'),'retired homepage subtitle must stay removed');
   ok(!index.includes('每天 08:00 / 18:00 自动生成到网站。学完后只点一次'),'retired homepage lesson instructions must stay removed');
   const profileUi=read('data/vocab-profile-ui.js');
@@ -78,6 +85,7 @@ try{
   ok(profileEvidence.includes('indo_vocab_profile_longterm_v1')&&profileEvidence.includes('compactSummary(longterm())'),'long-term ability must not depend on 1500 most recent events');
   ok(automation.includes("VocabStudyCoach.assigned('auto')")&&quick.includes("VocabStudyCoach.assigned('quick')")&&listenUi.includes("assignedSet('listen')"),'all three generic modules must use the same assigned queue');
   ok(profileUi.includes('今天最该练什么')&&profileUi.includes('逐词能力档案')&&profileUi.includes('data-coach-start'),'profile must expose actionable tasks and per-word history');
+  ok(profileUi.includes('vpHomeNext')&&profileUi.includes('vpHomeNumbers')&&profileUi.includes('查看全部任务 →'),'homepage must show only next recommended word and compact metrics while keeping the complete detail page');
   ok(automation.includes('openAutomationTrainingWord')&&automation.includes('autoSelfCheck'),'automation must directly train selected words and require expression self-confirmation');
   ok(quick.includes('openQuickPracticeWordV2')&&listenUi.includes('openListeningWordTarget'),'quick and listening practice must support exact-word entry');
   ok(profileEvidence.includes('indo_vocab_profile_evidence_v2')&&profileEvidence.includes('DAILY_VOCAB_DB'),'local evidence must limit observations to formally taught words');
