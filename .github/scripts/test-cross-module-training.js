@@ -77,7 +77,7 @@ const optionalQuick=vm.runInNewContext(quick.slice(qw,qend)+'\nweightedPool()',{
 });
 assert.equal(optionalQuick.length,1,'Quick choices still exist with zero quick priority tasks');
 
-const enStart=listening.indexOf('  function rootCoachEligible(){'),enEnd=listening.indexOf('  function buildQueue(){',enStart);
+const enStart=listening.indexOf('  function rootCoachEligible(){'),enEnd=listening.indexOf('  function buildQueue(nextBatch){',enStart);
 const assignedListen=vm.runInNewContext(listening.slice(enStart,enEnd)+'\nrootCoachEligible()',{
   window:{VocabStudyCoach:{candidates(){return [{word:'tunda'},{word:'supaya'}]}}},
   Date,Set,String
