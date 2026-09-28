@@ -23,6 +23,9 @@ on:
       - '.github/scripts/test-vocab-profile-snapshot.js'
       - '.github/scripts/test-vocab-profile-evidence.js'
       - '.github/scripts/test-vocab-study-coach.js'
+      - '.github/scripts/test-cross-module-training.js'
+      - 'data/weakness-paging-roots.js'
+      - 'data/weakness-pool.js'
       - '.github/scripts/inject-vocab-profile.js'
       - '.github/scripts/regression-guard.js'
       - '.github/scripts/vocab-ui-regression-guard.js'
@@ -138,6 +141,8 @@ jobs:
           node --check .github/scripts/test-vocab-study-coach.js
           node --check .github/scripts/vocab-ui-regression-guard.js
           node .github/scripts/test-vocab-study-coach.js
+          node --check .github/scripts/test-cross-module-training.js
+          node .github/scripts/test-cross-module-training.js
           node --check .github/scripts/build-vocab-profile.js
           node --check .github/scripts/write-vocab-profile-snapshot.js
           node --check .github/scripts/test-vocab-profile-snapshot.js
