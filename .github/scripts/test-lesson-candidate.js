@@ -19,7 +19,18 @@ const runTests=function runTests(validate){
  }
  let count=0;const ok=(name,input)=>{const r=validate(input);if(!r.ok)throw Error(name+" valid failed "+JSON.stringify(r.errors));count++};const bad=(name,input,code)=>{const r=validate(input);if(r.ok||!r.errors.some(x=>x.code===code))throw Error(name+" expected "+code+" got "+JSON.stringify(r.errors));count++};
  ok("normal AM",AM());ok("normal PM",PM());
+ // Regression for 2026-09-28: generated content incorrectly mixed AM and PM keys.
  const matrix=[
+  ["AM card missing display","am",x=>delete x.lesson.vocab[0].display,"VOCAB_FIELD_MISSING"],
+  ["AM card missing audio_text","am",x=>delete x.lesson.vocab[0].audio_text,"VOCAB_FIELD_MISSING"],
+  ["AM PM-style sentence id instead of text","am",x=>{x.lesson.sentences[0].id=x.lesson.sentences[0].text;delete x.lesson.sentences[0].text},"AM_SENTENCES_INVALID"],
+  ["AM PM-style quiz prompt instead of question","am",x=>{x.lesson.quiz[0].prompt=x.lesson.quiz[0].question;delete x.lesson.quiz[0].question},"QUESTION_INVALID"],
+  ["AM fill question rather than third choice","am",x=>{x.lesson.quiz[2]={type:"fill",prompt:"填空：____",answer:"new2",explain:"解释"}},"QUESTION_INVALID"],
+  ["PM card missing audio_text","pm",x=>delete x.lesson.vocab[0].audio_text,"VOCAB_FIELD_MISSING"],
+  ["PM dialogue written as array instead of object","pm",x=>x.lesson.dialogue=x.lesson.dialogue.lines,"PM_DIALOGUE_INVALID"],
+  ["PM AM-style choice question instead of prompt","pm",x=>{const q=x.lesson.daily_test.questions[0];q.question=q.prompt;delete q.prompt},"QUESTION_INVALID"],
+  ["PM fill without inline Chinese hint","pm",x=>x.lesson.daily_test.questions[3].prompt="填空：Saya bekerja.","PM_FILL_INVALID"],
+  ["PM final review items instead of steps","pm",x=>{x.lesson.review.items=x.lesson.review.steps;delete x.lesson.review.steps},"PM_FINAL_REVIEW_INVALID"],
   ["AM duplicate","am",x=>x.lesson.vocab[9].word=x.lesson.vocab[0].word,"CORE_WORDS_INVALID"],
   ["AM unknown new","am",x=>x.lesson.vocab[0].word="unknown","NEW_WORD_INELIGIBLE"],
   ["AM fuzzy when dont sufficient","am",x=>x.lesson.vocab[9].word="f0","AM_DONT_PRIORITY"],
