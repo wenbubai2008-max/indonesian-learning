@@ -143,38 +143,55 @@
     const s=dailySession(now);
     return {total:s.items.length,done:Object.keys(s.done||{}).length,remaining:plan(now).length,waiting:s.items.filter(x=>!s.done[norm(x.word)]).length-plan(now).length};
   }
-  // Opt-in recognition practice is separate from the eight priority tasks. It never adds to
-  // the daily task count, never borrows assigned words and still obeys global word cooldown.
-  function quickSupplement(now=Date.now(),max=10){
+  // Three optional practice modes share one allocator. They never enlarge the 8 priority
+  // tasks or steal another mode's reserved words, and their selections remain fixed today.
+  function supplement(mode,now=Date.now(),max=5){
+    if(!['quick','listen','auto'].includes(mode))return [];
+    const keys={quick:QUICK_KEY,listen:'indo_vocab_coach_optional_listen_v1',auto:'indo_vocab_coach_optional_auto_v1'};
     const day=dateJakarta(now),session=dailySession(now),source=inputs();
     const assignedWords=new Set(session.items.map(x=>norm(x.word)));
+    const otherWords=new Set();
+    Object.keys(keys).filter(k=>k!==mode).forEach(k=>{
+      const s=read(keys[k],null);
+      if(s&&s.version===1&&s.date===day&&Array.isArray(s.items))s.items.forEach(w=>otherWords.add(norm(w)));
+    });
     const mastered=new Set(root.WeaknessPool&&typeof root.WeaknessPool.listMastered==='function'
       ?root.WeaknessPool.listMastered().map(x=>norm(x.word)):[]);
-    const previous=read(QUICK_KEY,null);
+    const lastToday=k=>{
+      const ev=source.ev.get(k)||[],q=source.quick[k]||{},a=source.auto[k]||{},l=source.listen[k]||{};
+      const last=Math.max(time(ev.length?ev[ev.length-1].at:0),time(q.last),time(a.last_at),time(l.last_at));
+      return last>0&&dateJakarta(last)===day;
+    };
     const suitable=x=>{
-      const k=norm(x.word),q=source.quick[k]||{},lastQuick=time(q.last);
-      return !assignedWords.has(k)&&!mastered.has(k)&&!x.stable&&!x.requested&&x.ready
-        &&!(lastQuick&&dateJakarta(lastQuick)===day);
+      const k=norm(x.word);
+      return !assignedWords.has(k)&&!otherWords.has(k)&&!mastered.has(k)
+        &&!x.stable&&!x.requested&&x.ready&&!lastToday(k);
     };
     const resolve=words=>words.map(word=>describe(word,source,now)).filter(x=>x&&suitable(x));
+    const previous=read(keys[mode],null);
     if(previous&&previous.version===1&&previous.date===day&&Array.isArray(previous.items)&&previous.items.length){
-      // A completed optional batch never automatically replenishes on refresh.
-      return resolve(previous.items);
+      return resolve(previous.items); // Never refill a completed batch on refresh.
     }
     const ranked=[];
     source.items.forEach((item,k)=>{
       const x=describe(k,source,now);
       if(x&&suitable(x))ranked.push(x);
     });
-    ranked.sort((a,b)=>{
-      const score=x=>x.score+(!(source.quick[norm(x.word)]||{}).last?16:0)
-        +(source.weak[norm(x.word)]?20:0);
-      return score(b)-score(a)||a.word.localeCompare(b.word);
-    });
+    const modeScore=x=>{
+      const k=norm(x.word),q=source.quick[k]||{},l=source.listen[k]||{},a=source.auto[k]||{};
+      if(mode==='listen')return (l.wrong_streak>=2?120:0)+(l.slow_streak>=2?65:0)
+        +(!l.attempts?45:0)+((source.weak[k]&&source.weak[k].reasons||[]).some(r=>r==='listening_wrong'||r==='listening_slow')?80:0);
+      if(mode==='quick')return (!q.last?65:0)+(q.last_result==='wrong'?35:0)+(!a.attempts?20:0);
+      return (a.attempts?95:0)+(a.stage===4?40:0)+(source.weak[k]?25:0);
+    };
+    const history=read(ROTATION_KEY,{});
+    ranked.sort((a,b)=>(modeScore(b)+rotationScore(b,history,now))-
+       (modeScore(a)+rotationScore(a,history,now))||a.word.localeCompare(b.word));
     const items=ranked.slice(0,Math.min(10,Math.max(0,max))).map(x=>x.word);
-    try{root.localStorage.setItem(QUICK_KEY,JSON.stringify({version:1,date:day,items}))}catch(e){}
+    try{root.localStorage.setItem(keys[mode],JSON.stringify({version:1,date:day,items}))}catch(e){}
     return resolve(items);
   }
+  function quickSupplement(now=Date.now(),max=10){return supplement('quick',now,max);}
 
   function markTask(word,at){
     const s=read(SESSION_KEY,null),t=time(at),k=norm(word);
@@ -202,7 +219,7 @@
     delete entries[k];
     try{root.localStorage.setItem(KNOWN_KEY,JSON.stringify(entries))}catch(e){}
   }
-  root.VocabStudyCoach={plan,assigned,assignedSet,dailyProgress,detail,eligible,eligibleSet,quickSupplement,pendingSet,requestVerification,clearRequest,words:()=>[...taught().values()]};
+  root.VocabStudyCoach={plan,assigned,assignedSet,dailyProgress,detail,eligible,eligibleSet,supplement,quickSupplement,pendingSet,requestVerification,clearRequest,words:()=>[...taught().values()]};
   root.addEventListener('automation-training-updated',e=>{const d=e&&e.detail||{},word=d.word,at=d.state&&d.state.last_at;if(word)clearRequest(word,at)});
   root.addEventListener('vocab-profile-evidence-updated',e=>{const d=e&&e.detail||{};const api=root.VocabProfileEvidence,rows=api?api.records():[],last=rows.filter(x=>x.word===norm(d.word)).slice(-1)[0];if(last)markTask(d.word,last.at);root.dispatchEvent(new CustomEvent('vocab-coach-updated',{detail:d}))});
 })(window);
