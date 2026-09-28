@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T07:07:23.585Z",
+  "updated_at": "2026-09-28T09:18:02.599Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -627,34 +627,34 @@
     "nyimak": {
       "word": "nyimak",
       "status": "active",
-      "updated_at": "2026-09-22T13:10:11.423Z",
+      "updated_at": "2026-09-28T09:17:46.025Z",
       "display": "nyimak",
       "cn": "认真听；跟着听懂内容（口语）",
       "root": "simak",
       "root_cn": "仔细听；留意",
       "last_wrong": "2026-09-11T15:04:23.880Z",
-      "last_review": "2026-09-22T13:10:11.398Z",
-      "reasons": [
-        "quick_wrong"
-      ],
-      "wrong_count": 1,
-      "right_streak": 1
-    },
-    "nggak kepegang": {
-      "word": "nggak kepegang",
-      "status": "active",
-      "updated_at": "2026-09-22T08:19:02.857Z",
-      "display": "nggak kepegang",
-      "cn": "顾不过来；管不过来",
-      "root": "pegang",
-      "root_cn": "拿；握；掌握",
-      "last_wrong": "2026-09-11T15:09:12.617Z",
-      "last_review": "2026-09-22T08:19:02.826Z",
+      "last_review": "2026-09-28T09:17:46.004Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
       "right_streak": 2
+    },
+    "nggak kepegang": {
+      "word": "nggak kepegang",
+      "status": "active",
+      "updated_at": "2026-09-28T09:17:35.004Z",
+      "display": "nggak kepegang",
+      "cn": "顾不过来；管不过来",
+      "root": "pegang",
+      "root_cn": "拿；握；掌握",
+      "last_wrong": "2026-09-11T15:09:12.617Z",
+      "last_review": "2026-09-28T09:17:34.985Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 3
     },
     "pajak": {
       "word": "pajak",
@@ -3004,20 +3004,20 @@
     "seraya": {
       "word": "seraya",
       "status": "active",
-      "updated_at": "2026-09-27T14:15:38.192Z",
+      "updated_at": "2026-09-28T09:17:52.367Z",
       "display": "seraya",
       "cn": "同时；一边……一边……",
       "root": "seraya",
       "root_cn": "同时；一边……一边……",
       "last_wrong": "2026-09-27T13:59:29.228Z",
-      "last_review": "2026-09-27T13:59:29.228Z",
+      "last_review": "2026-09-28T09:17:52.346Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menyenangkan": {
       "word": "menyenangkan",
@@ -4363,19 +4363,19 @@
     "mengeluh": {
       "word": "mengeluh",
       "status": "active",
-      "updated_at": "2026-09-27T14:14:40.615Z",
+      "updated_at": "2026-09-28T09:17:16.034Z",
       "display": "mengeluh",
       "cn": "抱怨",
       "root": "keluh",
       "root_cn": "抱怨；叹息",
-      "last_wrong": "2026-09-25T15:06:01.494Z",
-      "last_review": "2026-09-25T15:06:01.494Z",
+      "last_wrong": "2026-09-28T09:17:16.003Z",
+      "last_review": "2026-09-28T09:17:16.003Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "mengepel": {
@@ -4705,20 +4705,20 @@
     "menyalin": {
       "word": "menyalin",
       "status": "active",
-      "updated_at": "2026-09-27T14:15:19.811Z",
+      "updated_at": "2026-09-28T09:17:23.923Z",
       "display": "menyalin",
       "cn": "复制",
       "root": "salin",
       "root_cn": "复制；抄写",
       "last_wrong": "2026-09-27T13:57:54.512Z",
-      "last_review": "2026-09-27T13:57:54.512Z",
+      "last_review": "2026-09-28T09:17:23.902Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menyanyi": {
       "word": "menyanyi",
@@ -7213,20 +7213,20 @@
     "layak": {
       "word": "layak",
       "status": "active",
-      "updated_at": "2026-09-22T10:34:37.887Z",
+      "updated_at": "2026-09-28T09:16:56.139Z",
       "display": "layak",
       "cn": "值得；合适；够资格",
       "root": "layak",
       "root_cn": "值得；合适",
       "last_wrong": "2026-09-16T07:55:56.953Z",
-      "last_review": "2026-09-22T08:17:05.155Z",
+      "last_review": "2026-09-28T09:16:56.118Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 1,
-      "right_streak": 3
+      "right_streak": 4
     },
     "dewasa": {
       "word": "dewasa",
@@ -23491,20 +23491,20 @@
     "kabur": {
       "word": "kabur",
       "status": "active",
-      "updated_at": "2026-09-27T14:14:53.806Z",
+      "updated_at": "2026-09-28T09:16:59.749Z",
       "display": "kabur",
       "cn": "逃跑；溜走",
       "root": "kabur",
       "root_cn": "逃跑；溜走",
       "last_wrong": "2026-09-25T15:02:05.313Z",
-      "last_review": "2026-09-27T13:59:10.511Z",
+      "last_review": "2026-09-28T09:16:59.728Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "kejar": {
       "word": "kejar",
@@ -23773,18 +23773,18 @@
     "kelabakan": {
       "word": "kelabakan",
       "status": "active",
-      "updated_at": "2026-09-22T13:13:27.986Z",
+      "updated_at": "2026-09-28T09:17:03.703Z",
       "display": "kelabakan",
       "cn": "忙乱；手忙脚乱",
       "root": "kelabakan",
       "root_cn": "手忙脚乱；慌着应付",
       "last_wrong": "2026-09-15T14:57:14.402Z",
-      "last_review": "2026-09-22T13:13:27.956Z",
+      "last_review": "2026-09-28T09:17:03.679Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "berusaha": {
       "word": "berusaha",
@@ -28175,34 +28175,34 @@
     "nangkep": {
       "word": "nangkep",
       "status": "active",
-      "updated_at": "2026-09-22T13:04:02.529Z",
+      "updated_at": "2026-09-28T09:17:26.557Z",
       "display": "nangkep",
       "cn": "听懂；抓住意思（口语）",
       "root": "tangkap",
       "root_cn": "抓住；捕捉",
       "last_wrong": "2026-09-18T15:08:18.035Z",
-      "last_review": "2026-09-22T13:04:02.501Z",
-      "reasons": [
-        "quick_wrong"
-      ],
-      "wrong_count": 1,
-      "right_streak": 1
-    },
-    "kepancing": {
-      "word": "kepancing",
-      "status": "active",
-      "updated_at": "2026-09-24T06:33:38.706Z",
-      "display": "kepancing",
-      "cn": "被激到；被带着回应；忍不住上钩（口语）",
-      "root": "pancing",
-      "root_cn": "钓；引诱；诱出反应",
-      "last_wrong": "2026-09-20T07:50:22.623Z",
-      "last_review": "2026-09-24T06:33:38.683Z",
+      "last_review": "2026-09-28T09:17:26.534Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
       "right_streak": 2
+    },
+    "kepancing": {
+      "word": "kepancing",
+      "status": "active",
+      "updated_at": "2026-09-28T09:17:10.797Z",
+      "display": "kepancing",
+      "cn": "被激到；被带着回应；忍不住上钩（口语）",
+      "root": "pancing",
+      "root_cn": "钓；引诱；诱出反应",
+      "last_wrong": "2026-09-20T07:50:22.623Z",
+      "last_review": "2026-09-28T09:17:10.777Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 3
     },
     "ngeh": {
       "word": "ngeh",
