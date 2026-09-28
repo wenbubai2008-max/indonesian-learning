@@ -28,6 +28,12 @@ root.VocabProfileEvidence.records=()=>[{word:'mendukung',source:'quick',at:new D
 assert.equal(coach.eligible('mendukung',now),false,'Wrong answer gets a real cross-module cooling period');
 assert.equal(coach.eligible('mendukung',now+3*3600000),true);
 assert.equal(coach.plan(now).some(x=>x.word==='mendukung'),false,'Recently answered word must not be repeated in today queue immediately');
+const recent=root.VocabProfileEvidence.records;
+root.VocabProfileEvidence.records=()=>recent().concat([{id:'niat-done',word:'niat',source:'listen',at:new Date(now+60000).toISOString(),result:'wrong',stage:0}]);
+root.dispatchEvent(new CustomEvent('vocab-profile-evidence-updated',{detail:{word:'niat'}}));
+assert.equal(coach.dailyProgress(now+60000).done,1,'An actual answer closes a task for that day');
+assert.equal(coach.assigned('listen',now+60000).length,0,'Completed listening task cannot reappear in another generic draw');
+root.VocabProfileEvidence.records=recent;
 assert.equal(coach.requestVerification('not-taught',now),false);
 assert.equal(coach.requestVerification('tunda',now),true);
 assert.equal(coach.eligible('tunda',now),false,'User-marked known must not be auto-mastered or immediately tested');
@@ -44,11 +50,6 @@ assert.equal(coach.detail('tunda',now+86400000).requested,true,'An early or unve
 assert.ok(coach.plan(now+86400000).some(x=>x.word==='tunda'),'Next-day reservation enters the unified queue at its due time');
 root.dispatchEvent(new CustomEvent('automation-training-updated',{detail:{word:'tunda',state:{last_at:now+86400000}}}));
 assert.equal(coach.detail('tunda',now+86400000).requested,false,'A real due-time attempt clears its verification request');
-const recent=root.VocabProfileEvidence.records;
-root.VocabProfileEvidence.records=()=>recent().concat([{id:'niat-done',word:'niat',source:'listen',at:new Date(now+60000).toISOString(),result:'wrong',stage:0}]);
-root.dispatchEvent(new CustomEvent('vocab-profile-evidence-updated',{detail:{word:'niat'}}));
-assert.equal(coach.dailyProgress(now+60000).done,1,'An actual answer closes a task for that day');
-assert.equal(coach.assigned('listen',now+60000).length,0,'Completed listening task cannot reappear in another generic draw');
-root.VocabProfileEvidence.records=recent;
+
 assert.equal(data.has('data/daily-vocab-data.js'),false,'Scheduling must not mutate lesson data');
 console.log('Study coach tests passed: stable bounded daily assignments, shared module queues, answer completion, cooldown, next-day validation and no lesson mutation.');
