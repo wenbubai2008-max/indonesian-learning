@@ -84,7 +84,7 @@
     const ranked=[];
     input.items.forEach((v,k)=>{
       const x=describe(k,input,now);
-      if(x&&x.focus&&!x.stable&&x.ready)ranked.push(x);
+      if(x&&x.focus&&!x.stable&&(x.ready||x.requested))ranked.push(x);
     });
     ranked.sort((a,b)=>b.score-a.score||a.word.localeCompare(b.word));
     ranked.forEach(x=>{
@@ -119,7 +119,7 @@
   function assignedSet(mode,now=Date.now()){return new Set(assigned(mode,now).map(x=>norm(x.word)))}
   function dailyProgress(now=Date.now()){
     const s=dailySession(now);
-    return {total:s.items.length,done:Object.keys(s.done||{}).length,remaining:plan(now).length};
+    return {total:s.items.length,done:Object.keys(s.done||{}).length,remaining:plan(now).length,waiting:s.items.filter(x=>!s.done[norm(x.word)]).length-plan(now).length};
   }
   function markTask(word,at){
     const s=read(SESSION_KEY,null),t=time(at),k=norm(word);
