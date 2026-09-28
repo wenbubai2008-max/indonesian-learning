@@ -110,6 +110,35 @@ ok('real CLI writes a matching JSON in an isolated temporary directory only when
   assert.equal(fs.existsSync(full),false,'stdout mode unexpectedly wrote a file');
   cp.execFileSync(process.execPath,[command,'--output',output,'--source-sha',sha],{cwd:tmp,encoding:'utf8'});
   assert.deepEqual(JSON.parse(fs.readFileSync(full,'utf8')),now);
+  // Pinned source passes only when both output and check use exactly the same SHA.
+  assert.match(cp.execFileSync(process.execPath,[command,'--check','--source-sha',sha],{cwd:tmp,encoding:'utf8'}),/LESSON_CONTEXT_CHECK/);
+  // Production context intentionally omits an origin commit SHA: its hashes describe
+  // the NEW runtime and the index bundled in the same generated-data commit.
+  cp.execFileSync(process.execPath,[command,'--output',output],{cwd:tmp});
+  assert.match(cp.execFileSync(process.execPath,[command,'--check'],{cwd:tmp,encoding:'utf8'}),/LESSON_CONTEXT_CHECK/);
+  const live=JSON.parse(fs.readFileSync(full,'utf8'));
+  assert.deepEqual(live,buildLessonContext(prepare({sourceSha:''})));
+  const failure=args=>{
+   try{cp.execFileSync(process.execPath,[command,...args],{cwd:tmp,stdio:['ignore','pipe','pipe']});return null}
+   catch(e){return JSON.parse(e.stderr.toString())}
+  };
+  const originalIndex=fs.readFileSync(path.join(tmp,'data/daily/index.json'));
+  const originalRuntime=fs.readFileSync(path.join(tmp,'data/learning-runtime.json'));
+  const oldContext=fs.readFileSync(full);
+  fs.rmSync(full);
+  assert.equal(failure(['--check']).code,'CONTEXT_MISSING','missing context must fail closed');
+  fs.writeFileSync(full,oldContext);
+  const newRuntime=clone(runtime);
+  newRuntime.generated_at='2026-09-28T20:00:00.000Z';
+  fs.writeFileSync(path.join(tmp,'data/learning-runtime.json'),JSON.stringify(newRuntime));
+  assert.equal(failure(['--check']).code,'CONTEXT_STALE','feedback rebuild must invalidate stale context');
+  fs.writeFileSync(path.join(tmp,'data/learning-runtime.json'),originalRuntime);
+  const newIndex=clone(index);
+  newIndex.dates.at(-1).verified='updated-after-check';
+  fs.writeFileSync(path.join(tmp,'data/daily/index.json'),JSON.stringify(newIndex));
+  assert.equal(failure(['--check']).code,'CONTEXT_STALE','even matching watermark with different index hash must fail');
+  fs.writeFileSync(path.join(tmp,'data/daily/index.json'),originalIndex);
+  assert.match(cp.execFileSync(process.execPath,[command,'--check'],{cwd:tmp,encoding:'utf8'}),/LESSON_CONTEXT_CHECK/);
  }finally{fs.rmSync(tmp,{recursive:true,force:true})}
 });
-console.log('Phase 1 context tests:',JSON.stringify({passed,failed:0,main_sha:sha,target:now.target}));
+console.log('Lesson context integration tests:',JSON.stringify({passed,failed:0,main_sha:sha,target:now.target}));
