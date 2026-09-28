@@ -6,7 +6,7 @@
     {key:'vocab',title:'词汇学习',icon:'🧠',desc:'按词库学习，结合闪卡、例句和发音。',tag:'词库',tagId:'vocabTag',open:function(){if(typeof window.go==='function')window.go('vocab');}},
     {key:'reading',title:'泛读',icon:'📚',desc:'今日短文 · 自然复现 · 划词查义。',tag:'划词查义 · 可加陌生词',open:function(){if(typeof window.openExtensiveV2==='function')window.openExtensiveV2();}},
     {key:'quick',title:'快速练习',icon:'⚡',desc:'短时练习到期词和容易答错的词。',tag:'间隔复现',open:function(){if(typeof window.openQuickPracticeV2==='function')window.openQuickPracticeV2();}},
-    {key:'weak',title:'弱项强化',icon:'🎯',desc:'集中巩固已学但仍不稳定的词。',tag:'针对弱项',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
+    {key:'weak',title:'弱项强化',icon:'🎯',desc:'只看快练错题与阅读陌生词；掌握另需验证。',tag:'专项错词',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
     {key:'automation',title:'自动训练',icon:'⚙️',desc:'主动提取 · 语境补词 · 延迟验证。',tag:'计算中',tagId:'automationTag',open:function(){if(typeof window.openAutomationTraining==='function')window.openAutomationTraining();}},
     {key:'difficulty',title:'难点解释',icon:'💡',desc:'辨析易混词，理解构词和真实用法。',tag:'7 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
   ];
