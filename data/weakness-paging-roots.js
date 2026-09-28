@@ -3,6 +3,7 @@
   window.__weaknessPagingRootsLoaded=true;
 
   const PAGE_SIZE=30;
+  const PAUSE_KEY='indo_weak_manual_pause_v1'; // Non-taught reader words: hide locally without inventing mastery.
   let currentPage=0;
   let renderTimer=null;
   let decorateTimer=null;
@@ -31,6 +32,8 @@
   function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[m];});}
   function pool(){return window.WeaknessPool||null;}
   function practiceState(){try{return JSON.parse(localStorage.getItem('indo_quick_practice_state')||'{}')||{};}catch(e){return {};}}
+  function paused(){try{return JSON.parse(localStorage.getItem(PAUSE_KEY)||'{}')||{};}catch(e){return {};}}
+  function taughtSet(){return new Set((window.DAILY_VOCAB_DB||[]).map(x=>norm(x&&x.word)).filter(Boolean));}
 
   function mapSignature(){
     return [(window.DAILY_VOCAB_DB||[]).length,(window.EMBEDDED_DB||[]).length,(window.UNFAMILIAR_VOCAB_DB||[]).length,(window.MASTER_VOCAB_OBJECTS||[]).length].join('|');
@@ -99,7 +102,7 @@
     return {word:word,cn:x.cn||base.cn||'待补释义',root:root&&norm(root)!==norm(word)?root:'',root_cn:root&&norm(root)!==norm(word)?rootCn:'',example:x.example||contexts.slice(-1)[0]||base.example||'',example_cn:x.example_cn||base.example_cn||'',reason:reasonLabel(x)};
   }
 
-  function eligibleRecords(){const wp=pool();if(!wp)return [];return wp.listActive().filter(allowedSource);}
+  function eligibleRecords(){const wp=pool();if(!wp)return [];const pending=window.VocabStudyCoach&&window.VocabStudyCoach.pendingSet?window.VocabStudyCoach.pendingSet():new Set(),hidden=paused();return wp.listActive().filter(x=>allowedSource(x)&&!pending.has(norm(x.word))&&!hidden[norm(x.word)]);}
 
   function activeMapSnapshot(){
     const out={};eligibleRecords().forEach(function(x){const k=norm(x.word);if(k)out[k]=x;});return out;
@@ -121,13 +124,14 @@
   function rootHtml(x){if(!x.root)return '';return '<div class="weakRootLine"><span>词根：</span><b>'+esc(x.root)+'</b>'+(x.root_cn?'<em> · '+esc(x.root_cn)+'</em>':'')+'</div>';}
 
   function cardHtml(x){
+    const taught=taughtSet().has(norm(x.word));
     return '<div class="v2-card weakCardHasDone" data-weak-word="'+esc(x.word)+'">'
       +'<div class="weakCardHead"><b>'+esc(x.word)+'</b><span>'+esc(x.reason)+'</span></div>'
       +'<strong>'+esc(x.cn)+'</strong>'+rootHtml(x)
       +(x.example?'<p class="v2-ex">'+esc(x.example)+'</p>':'')
       +(x.example_cn?'<p class="v2-excn">'+esc(x.example_cn)+'</p>':'')
       +'<button class="sound" type="button" data-tts-text="'+esc(x.word)+'">🔊</button>'
-      +'<button class="weakDoneBtn" type="button" data-done-word="'+esc(x.word)+'" title="标记已掌握并退出弱项强化">✓ 会了</button>'
+      +(taught?'<button class="weakDoneBtn" type="button" data-done-word="'+esc(x.word)+'" title="只预约明天主动验证，不直接标记掌握">✓ 会了 · 明天验证</button>':'<button class="weakDoneBtn" type="button" data-pause-word="'+esc(x.word)+'" title="暂时移出未正式学过的阅读陌生词，不标记掌握">暂时移出</button>')
       +'</div>';
   }
 
@@ -172,8 +176,8 @@
     if(currentPage>=totalPages)currentPage=totalPages-1;if(currentPage<0)currentPage=0;
     const visible=pageItems(currentPage,active),meta=document.getElementById('weaknessMeta');if(meta)meta.textContent=total+' 个';
     if(!sessionWords.length||!total){body.innerHTML='<div class="v2-note">这里现在只显示两类词：快速练习答错的词，以及阅读中你主动加入的陌生词。</div><div class="empty"><b>目前没有这两类待强化词 ✓</b></div>';return;}
-    body.innerHTML='<div class="v2-note">这里只强化两类词：① 快速练习答错；② 阅读中主动加入的陌生词。977词库里单纯标记为“不会 / 模糊”的词不在这里展示。每页最多 30 个，右上角显示所有页剩余总数。派生词显示词根和词根中文；点“会了”后如果后面还有词，会自动从下一页补到当前页。</div>'
-      +'<div class="weakRestoreWrap"><span>点“会了”后，总数立即减 1；以后再次答错仍可重新进入。</span><button type="button" class="weakRestoreBtn">恢复已移出</button></div>'
+    body.innerHTML='<div class="v2-note">这里只显示快速练习错题和阅读中主动加入的陌生词，并非所有待强化词。已正式学过的词点“会了”只预约次日验证；未正式学过的词只能暂时移出，不会冒充已掌握。</div>'
+      +'<div class="weakRestoreWrap"><span>预约的词暂不在本页重复出现，明天进入统一训练；暂时移出的陌生词可恢复。</span><button type="button" class="weakRestoreBtn">恢复历史移出与暂存词</button></div>'
       +navHtml(totalPages)+'<div class="v2-weak">'+visible.map(cardHtml).join('')+'</div>'+navHtml(totalPages);
     refreshVisibleDetails();
   }
@@ -181,14 +185,16 @@
   function scheduleRender(delay){clearTimeout(renderTimer);renderTimer=setTimeout(render,delay==null?20:delay);}
 
   function dismiss(word){
-    const wp=pool();if(!wp||!word)return;
-    wp.markMastered(word,'weakness_done');
-    try{const m=JSON.parse(localStorage.getItem('indo_mem')||'{}');m[word]='know';m[norm(word)]='know';localStorage.setItem('indo_mem',JSON.stringify(m));}catch(e){}
-    const s=practiceState(),k=norm(word);if(s[k]){s[k].streak=Math.max(3,Number(s[k].streak||0));s[k].last_result='mastered';s[k].last=Date.now();localStorage.setItem('indo_quick_practice_state',JSON.stringify(s));}
-    render();
+    const coach=window.VocabStudyCoach;
+    if(!coach||!coach.requestVerification(word))return;
+    makeSession();render(); // Weak status and quick-practice streak remain unchanged until real verification.
   }
-
-  function restoreAll(){const wp=pool();if(!wp)return;wp.restoreDismissed(['quick_wrong','manual_unknown']);makeSession();render();}
+  function pauseWord(word){
+    const k=norm(word);if(!k||taughtSet().has(k))return;
+    const state=paused();state[k]=true;try{localStorage.setItem(PAUSE_KEY,JSON.stringify(state))}catch(e){return}
+    makeSession();render();
+  }
+  function restoreAll(){const wp=pool();if(!wp)return;wp.restoreDismissed(['quick_wrong','manual_unknown']);try{localStorage.removeItem(PAUSE_KEY)}catch(e){}makeSession();render();}
 
   function installStyle(){
     if(document.getElementById('weakPagingRootsStyle'))return;
@@ -216,7 +222,8 @@
     installStyle();initialQuickSync();takeOver();
     document.addEventListener('click',function(e){
       const openBtn=e.target&&e.target.closest?e.target.closest('button[onclick*="openWeaknessV2"]'):null;if(openBtn){e.preventDefault();e.stopImmediatePropagation();openWeak();return;}
-      const done=e.target&&e.target.closest?e.target.closest('#weaknessBody .weakDoneBtn'):null;if(done){e.preventDefault();dismiss(done.getAttribute('data-done-word')||'');return;}
+      const done=e.target&&e.target.closest?e.target.closest('#weaknessBody [data-done-word]'):null;if(done){e.preventDefault();dismiss(done.getAttribute('data-done-word')||'');return;}
+      const pause=e.target&&e.target.closest?e.target.closest('#weaknessBody [data-pause-word]'):null;if(pause){e.preventDefault();pauseWord(pause.getAttribute('data-pause-word')||'');return;}
       const restore=e.target&&e.target.closest?e.target.closest('#weaknessBody .weakRestoreBtn'):null;if(restore){e.preventDefault();restoreAll();return;}
       const move=e.target&&e.target.closest?e.target.closest('#weaknessBody [data-page-move]'):null;if(move){e.preventDefault();window.weaknessPageMove(Number(move.getAttribute('data-page-move')||0));}
     },true);
