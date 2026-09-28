@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T09:18:02.599Z",
+  "updated_at": "2026-09-28T09:31:13.566Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -23712,7 +23712,7 @@
     "ngotot": {
       "word": "ngotot",
       "status": "active",
-      "updated_at": "2026-09-22T13:10:18.201Z",
+      "updated_at": "2026-09-28T09:31:03.065Z",
       "display": "ngotot",
       "cn": "强硬坚持；硬要",
       "root": "ngotot",
@@ -23720,7 +23720,8 @@
       "last_wrong": "2026-09-13T11:58:14.186Z",
       "last_review": "2026-09-22T13:10:18.181Z",
       "reasons": [
-        "quick_wrong"
+        "quick_wrong",
+        "automation_fail"
       ],
       "wrong_count": 1,
       "right_streak": 2
