@@ -19,6 +19,32 @@ assert.equal(wp.get('tunda').mastered_reason,'');
 wp.markMastered('tunda','explicit_user_mastered');
 assert.equal(wp.get('tunda').status,'mastered','Explicit manual marking still works outside automatic practice');
 
+// Weak-list filtering and its "I know" button must not mutate the authoritative mastery state.
+const weakPage=read('weakness-paging-roots.js'),eligStart=weakPage.indexOf('  function eligibleRecords(){'),eligEnd=weakPage.indexOf('  function activeMapSnapshot(){',eligStart);
+assert.ok(eligStart>0&&eligEnd>eligStart);
+const weakRecords=[
+ {word:'tunda',status:'active',reasons:['quick_wrong']},
+ {word:'baru',status:'active',reasons:['manual_unknown']},
+ {word:'lain',status:'active',reasons:['quick_wrong']}
+];
+let pending=new Set(['tunda']),hidden={baru:true};
+const pageContext={
+ pool:()=>({listActive:()=>weakRecords}),paused:()=>hidden,allowedSource:x=>x.status==='active'&&x.reasons.some(r=>['quick_wrong','manual_unknown'].includes(r)),
+ window:{VocabStudyCoach:{pendingSet:()=>pending}},norm:s=>String(s||'').toLowerCase(),Set
+};
+const visible=vm.runInNewContext(weakPage.slice(eligStart,eligEnd)+"\neligibleRecords()",pageContext);
+assert.deepEqual(Array.from(visible.map(x=>x.word)),['lain'],'Pending verification and paused untaught words are hidden only from this special list');
+const actionStart=weakPage.indexOf('  function dismiss(word){'),actionEnd=weakPage.indexOf('  function pauseWord(word){',actionStart);
+assert.ok(actionStart>0&&actionEnd>actionStart);
+let requested=0,rendered=0;
+vm.runInNewContext(weakPage.slice(actionStart,actionEnd)+"\ndismiss('tunda')",{
+ window:{VocabStudyCoach:{requestVerification(word){requested++;return word==='tunda'}}},
+ makeSession(){},render(){rendered++}
+});
+assert.equal(requested,1);
+assert.equal(rendered,1,'Requesting verification should refresh the weak list');
+assert.equal(wp.get('tunda').status,'mastered','The isolated button test must not independently change authoritative status');
+
 // Extract the actual listening contrast chooser and supply a deterministic candidate pool.
 const listening=read('listening-word-training.js'),start=listening.indexOf('  function nearestUnused(word){'),end=listening.indexOf('  function choicesFor(item){',start);
 assert.ok(start>0&&end>start,'Listening contrast chooser boundaries must remain identifiable');
@@ -40,4 +66,4 @@ const recorded=vm.runInNewContext(recordSrc+"\nrecord('tunda',3,{ok:true,kind:'s
 });
 assert.equal(recorded.last_result,'self_checked','Stage 3 must retain user-confirmed status, not rewrite to machine-graded right');
 assert.equal(recorded.stage,4,'Self-checked practice advances to delayed verification');
-console.log('Cross-module tests passed: choice-only no auto-mastery; scored listening contrasts respect assignments; stage-three user self-check remains explicit.');
+console.log('Cross-module tests passed: choice-only no auto-mastery; weak-list pending/pause semantics; scored listening contrasts respect assignments; stage-three user self-check remains explicit.');
