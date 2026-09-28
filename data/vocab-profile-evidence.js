@@ -4,6 +4,7 @@
   const KEY='indo_vocab_profile_evidence_v2';
   const LEGACY='indo_vocab_profile_evidence_v1';
   const LIMIT=1500;
+  const MEMORY_KEY='indo_vocab_profile_longterm_v1';
   const norm=s=>String(s||'').trim().toLowerCase();
   function jakartaDay(iso){
     const date=new Date(iso);
@@ -43,20 +44,85 @@
       seen.add(x.id);return true;
     }).slice(-LIMIT).sort((a,b)=>Date.parse(a.at)-Date.parse(b.at));
   }
+
+  // Durable per-word state is independent of the rolling 1500-event display log.
+  // A one-time migration replays ONLY real local events; no invented historical proficiency.
+  function blank(word){return {word,attempts:0,last_at:'',last_id:'',direct:false,context:false,expression:false,verification_days:[],recognition_count:0,recognition_days:[],ever_verified:false,active:false,forgotten:false,relearned:false}}
+  function advance(state,e){
+    const s=state.words[e.word]||blank(e.word),day=jakartaDay(e.at);
+    if(s.last_at&&(Date.parse(e.at)<Date.parse(s.last_at)||e.id===s.last_id))return;
+    s.attempts++;s.last_at=e.at;s.last_id=e.id;
+    if(e.source==='auto'){
+      if(e.result==='fail'){
+        if(s.active){s.active=false;s.forgotten=true}
+        s.direct=false;s.context=false;s.expression=false;s.verification_days=[];
+      }else{
+        if(e.stage===1&&e.result==='direct')s.direct=true;
+        if(e.stage===2&&e.result==='right')s.context=true;
+        if(e.stage===3&&['right','self_checked'].includes(e.result))s.expression=true;
+        if(e.stage===4&&['right','stable'].includes(e.result)){
+          if(!s.verification_days.includes(day))s.verification_days.push(day);
+          s.verification_days=s.verification_days.slice(-2);
+          if(!s.active&&s.direct&&s.context&&s.expression&&s.verification_days.length>=2){
+            s.active=true;if(s.ever_verified&&s.forgotten){s.relearned=true;s.forgotten=false}
+            s.ever_verified=true;
+          }
+        }
+      }
+    }else if(e.result==='wrong'){
+      s.recognition_count=0;s.recognition_days=[];
+    }else if(e.source==='quick'&&e.result==='right'||e.source==='listen'&&e.result==='fast_first'){
+      s.recognition_count=Math.min(3,s.recognition_count+1);
+      if(!s.recognition_days.includes(day))s.recognition_days.push(day);
+      s.recognition_days=s.recognition_days.slice(-2);
+    }
+    state.words[e.word]=s;state.total++;
+  }
+  function initialState(){
+    const state={version:1,total:0,words:{}};
+    records().forEach(e=>advance(state,e));
+    return state;
+  }
+  function longterm(){
+    try{
+      const s=JSON.parse(root.localStorage.getItem(MEMORY_KEY)||'null');
+      if(s&&s.version===1&&s.words&&typeof s.words==='object'&&Number.isSafeInteger(s.total))return s;
+    }catch(e){}
+    const s=initialState();
+    try{root.localStorage.setItem(MEMORY_KEY,JSON.stringify(s))}catch(e){}
+    return s;
+  }
+  function compactSummary(state){
+    const rows=Object.values(state.words||{}).filter(x=>x&&x.last_at);
+    const result={attempts:state.total,observed:rows.length,active:0,passive:0,forgotten:0,relearned:0,words:[]};
+    rows.forEach(s=>{
+      const passive=!s.active&&s.recognition_count>=3&&s.recognition_days.length>=2;
+      if(s.active)result.active++;
+      if(passive)result.passive++;
+      if(s.forgotten&&!s.active)result.forgotten++;
+      if(s.relearned&&s.active)result.relearned++;
+      result.words.push({word:s.word,active:!!s.active,passive,forgotten:!!(s.forgotten&&!s.active),relearned:!!(s.relearned&&s.active),attempts:s.attempts,last_at:s.last_at});
+    });
+    result.words.sort((a,b)=>b.last_at.localeCompare(a.last_at));
+    return result;
+  }
   function capture(raw){
     const event=normalize(raw);
     if(!event||!taughtSet().has(event.word))return false;
-    const list=records();
-    if(list.some(x=>x.id===event.id))return false;
+    const list=records(),memory=longterm(),previous=memory.words[event.word];
+    if(list.some(x=>x.id===event.id)||previous&&(event.id===previous.last_id||Date.parse(event.at)<Date.parse(previous.last_at)))return false;
     list.push(event);
     list.sort((a,b)=>Date.parse(a.at)-Date.parse(b.at));
     try{root.localStorage.setItem(KEY,JSON.stringify(list.slice(-LIMIT)))}
     catch(e){return false}
+    advance(memory,event);
+    try{root.localStorage.setItem(MEMORY_KEY,JSON.stringify(memory))}catch(e){console.warn('Profile long-term memory not persisted',e)}
     root.dispatchEvent(new CustomEvent('vocab-profile-evidence-updated',{detail:{word:event.word,source:event.source}}));
     return true;
   }
   function summarize(input){
-    const rows=(Array.isArray(input)?input:records()).map(normalize).filter(Boolean).sort((a,b)=>Date.parse(a.at)-Date.parse(b.at));
+    if(!Array.isArray(input))return compactSummary(longterm());
+    const rows=input.map(normalize).filter(Boolean).sort((a,b)=>Date.parse(a.at)-Date.parse(b.at));
     const byWord=new Map();
     for(const event of rows){
       const group=byWord.get(event.word)||[];
