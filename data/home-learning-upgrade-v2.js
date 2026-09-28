@@ -30,11 +30,8 @@
   }
   function weightedPool(){
     if(window.VocabStudyCoach){
-      var map=wordMap(),coach=window.VocabStudyCoach,priority=coach.assigned('quick'),extra=typeof coach.quickSupplement==='function'?coach.quickSupplement():[];
-      var used=new Set(priority.map(function(t){return norm(t.word);}));
-      return priority.map(function(t){return {x:map[norm(t.word)]||{word:t.word,cn:t.cn},w:1,due:0,kind:'priority'};})
-        .concat(extra.filter(function(t){return !used.has(norm(t.word));}).map(function(t){return {x:map[norm(t.word)]||{word:t.word,cn:t.cn},w:1,due:0,kind:'optional'};}))
-        .filter(function(x){return !!x.x.cn;});
+      const map=wordMap();
+      return window.VocabStudyCoach.candidates('quick').map(x=>({x:map[norm(x.word)]||{word:x.word,cn:x.cn},w:x.score,due:x.due_at,kind:x.kind})).filter(x=>!!x.x.cn);
     }
     var pool=recentPool(),ps=practiceState(),mm=mem(),wp=weakPool(),active=wp?(typeof wp.focusMap==='function'?wp.focusMap():wp.activeMap()):localUnknown(),now=Date.now(),seen={};
     var eligible=window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet(now):null;
@@ -59,22 +56,28 @@
     }).filter(function(a){return a.due<=now&&(!eligible||eligible.has(norm(a.x.word)));});
   }
   function sampleWeighted(items,n){var src=items.slice(),out=[];while(src.length&&out.length<n){var total=src.reduce(function(s,a){return s+a.w;},0),r=Math.random()*total,idx=0;for(;idx<src.length;idx++){r-=src[idx].w;if(r<=0)break;}out.push(src[Math.min(idx,src.length-1)].x);src.splice(Math.min(idx,src.length-1),1);}return out;}
-  function renderQuick(focusWord){
+  function renderQuick(focusWord,nextBatch){
     var body=document.getElementById('quickPracticeBody');if(!body)return;
-    var pool=weightedPool(),meta=document.getElementById('quickPracticeMeta');
+    var pool=weightedPool(),coach=window.VocabStudyCoach,meta=document.getElementById('quickPracticeMeta');
     var wanted=norm(focusWord),target=wanted&&taughtSet().has(wanted)?wordMap()[wanted]:null;
-    if(wanted&&(!target||window.VocabStudyCoach&&!window.VocabStudyCoach.eligible(wanted))){body.innerHTML='<div class="empty">这个词尚未到复习时间，或者不在正式学习词库中。系统不会为了凑题重复测试。</div>';return;}
-    if(meta){
-      if(window.VocabStudyCoach){var priorityCount=pool.filter(function(x){return x.kind==='priority';}).length,optionalCount=pool.length-priorityCount;meta.textContent='重点任务 '+priorityCount+' 词 · 自选轻练 '+optionalCount+' 词 · 本轮最多'+Math.min(10,pool.length)+'题';}
-      else meta.textContent='到期 '+pool.length+' 词 · 本轮最多'+Math.min(10,pool.length)+'题';
-    }
+    if(wanted&&(!target||coach&&!coach.eligible(wanted,Date.now(),'quick'))){body.innerHTML='<div class="empty">这个词尚未到复习时间，或者不在正式学习词库中。系统不会为了凑题重复测试。</div>';return;}
+    const stats=coach?coach.statistics('quick'):null;
+    if(meta)meta.textContent=stats?'今日已练 '+stats.today+' · 剩余到期 '+stats.due+' · 已稳定 '+stats.stable:'到期 '+pool.length+' 词 · 本轮最多10题';
     if(!pool.length&&!target){
-      body.innerHTML='<div class="empty"><b>今天的重点任务和自选轻练都没有可用词。</b><div style="margin-top:8px">已答题不会在刷新后立刻补题；冷却完成或第二天会再安排，正式已掌握的词不会被拿来凑数。</div></div>';
-      return;
+      body.innerHTML='<div class="empty"><b>当前没有到期的快速识别词。</b><div style="margin-top:8px">未到期的词保留原定复习日期，不会因为继续点击而重复计分。</div></div>';return;
     }
-    var picks=target?[target]:(window.VocabStudyCoach?pool.slice(0,10).map(function(x){return x.x;}):sampleWeighted(pool,Math.min(10,pool.length))),all=recentPool(),html='<div class="v2-refresh"><button class="secondary" type="button" onclick="refreshQuickPracticeV2()">↻ 重看本轮</button></div><div class="v2-note">'+(target?'针对指定词进行一次识别验证；完成后进入跨模块冷却。':'优先显示今日分配的快速识别词，剩余为自选轻练；补充题不计入每日重点任务，仍遵守冷却、已学资格与去重。')+'</div>';
+    const round=coach&&!target?coach.round('quick',Date.now(),!!nextBatch,10):[];
+    const picks=target?[target]:(coach?round.map(x=>wordMap()[norm(x.word)]||{word:x.word,cn:x.cn}):sampleWeighted(pool,Math.min(10,pool.length)));
+    if(!picks.length){
+      body.innerHTML='<div class="empty"><b>本轮已经完成。</b><div style="margin-top:8px">剩余到期 '+(stats?stats.due:pool.length)+' 个，可以继续下一组。</div><button class="primary" type="button" id="quickContinueBtn">继续下一组 →</button></div>';
+      body.querySelector('#quickContinueBtn').onclick=function(){renderQuick('',true)};return;
+    }
+    const all=Array.from(new Map((window.DAILY_VOCAB_DB||[]).filter(x=>x&&x.word&&x.cn).map(x=>[norm(x.word),x])).values());
+    let html='<div class="v2-refresh"><button class="secondary" type="button" onclick="refreshQuickPracticeV2()">↻ 重看未完成题</button></div><div class="v2-note">每轮最多10题，可继续下一组。跨日正确按2、7、30、90、180天递进；已毕业词仅作低频抽查。相同专项当天不重复计分，其他能力独立训练。</div><div id="quickBatchResult"></div>';
     picks.forEach(function(x,i){
-      var wrong=shuffle(Array.from(new Set(all.filter(function(y){return norm(y.word)!==norm(x.word);}).map(function(y){return y.word;})))).slice(0,3),opts=shuffle([x.word].concat(wrong));
+      var cnUsed=new Set([String(x.cn).trim()]),wrong=[];
+      shuffle(all.filter(y=>norm(y.word)!==norm(x.word))).forEach(y=>{const v=String(y.cn).trim();if(!cnUsed.has(v)&&wrong.length<3){cnUsed.add(v);wrong.push(y.word)}});
+      var opts=shuffle([x.word].concat(wrong));
       html+='<div class="v2-q" data-answer="'+esc(x.word)+'"><b>'+(i+1)+'. '+esc(x.cn)+'</b><div class="v2-opts">';
       opts.forEach(function(o){html+='<button type="button" data-v="'+esc(o)+'">'+esc(o)+'</button>';});
       html+='</div><div class="v2-result"></div></div>';
@@ -87,11 +90,19 @@
         if(ok){p.right++;p.streak++;p.last_result='right';p.last_right=now;}
         else{p.wrong++;p.streak=0;p.last_result='wrong';p.last_wrong=now;}
         p.last=now;s[k]=p;savePracticeState(s);
+        if(coach)coach.markAnswer('quick',ans,ok,now);
+        p=practiceState()[k]||p;
         var wp=weakPool(),item=(wordMap()[k]||{word:ans});if(wp)wp.recordPractice(ans,ok,item);
         try{window.dispatchEvent(new CustomEvent('quick-practice-updated',{detail:{word:ans,ok:ok,state:p}}));}catch(e){}
         btn.classList.add(ok?'v2-ok':'v2-bad');
         row.querySelectorAll('.v2-opts button').forEach(function(b){b.disabled=true;if(b.dataset.v===ans)b.classList.add('v2-ok');});
-        row.querySelector('.v2-result').textContent=ok?'答对了。这个词已进入冷却，刷新不会马上再抽到。':'正确答案：'+ans+'（已进入统一弱项池；稍后再测，不会立刻连刷）';
+        row.querySelector('.v2-result').textContent=ok?'答对了。已记录本次视觉识别，按自身复习周期再次验证。':'正确答案：'+ans+'。已记录识别错题，次日重新验证，并向弱项池提供信号。';
+        if(coach){
+          const s=coach.statistics('quick'),box=body.querySelector('#quickBatchResult');
+          if(meta)meta.textContent='今日已练 '+s.today+' · 剩余到期 '+s.due+' · 已稳定 '+s.stable;
+          if(box&&Array.from(body.querySelectorAll('.v2-q')).every(x=>x.dataset.done))box.innerHTML='<div class="v2-note">本轮完成 · 还有 '+s.due+' 个到期词。'+(s.due?'<button class="primary" type="button" id="quickContinueBtn">继续下一组 →</button>':'今天可练的到期词已完成。')+'</div>';
+          const next=body.querySelector('#quickContinueBtn');if(next)next.onclick=()=>renderQuick('',true);
+        }
       };
     });
   }
