@@ -72,13 +72,18 @@
     return score;
   }
 
-  function rootCoachEligible(){return window.VocabStudyCoach?window.VocabStudyCoach.assignedSet('listen'):null;}
+  function rootCoachEligible(){
+    const coach=window.VocabStudyCoach;if(!coach)return null;
+    const out=coach.assignedSet('listen');
+    if(typeof coach.supplement==='function')coach.supplement('listen',Date.now(),5).forEach(x=>out.add(String(x.word).trim().toLowerCase()));
+    return out;
+  }
   function buildQueue(){
     const pool=taughtPool(), stats=allStats(),eligible=rootCoachEligible();
     state.pool=pool;
     const ranked=pool.filter(x=>!eligible||eligible.has(String(x.word).trim().toLowerCase())).map(x=>({item:x,score:candidateScore(x,stats)})).sort((a,b)=>b.score-a.score);
-    const head=ranked.slice(0,Math.min(80,ranked.length)).map(x=>x.item);
-    state.queue=shuffle(head).slice(0,Math.min(SESSION_SIZE,head.length));
+    const head=ranked.slice(0,Math.min(SESSION_SIZE,ranked.length)).map(x=>x.item);
+    state.queue=head; // Keep the shared allocator's daily selection; no random reshuffle across refreshes.
     state.pos=0;state.correct=0;state.fast=0;
   }
 
@@ -257,9 +262,9 @@
     body.innerHTML='<div class="listenStart">'+
       '<div class="listenStartIcon">🔊</div>'+
       '<h3>不看单词，只靠耳朵</h3>'+
-      '<p>只练今日统一计划分配的到期听觉弱词。不为凑足10题重复抽取。</p>'+
+      '<p>优先练今日重点听词；有空还可练5个已学到期词，不抢其他专项任务。</p>'+
       '<div class="listenStartStats"><div><b>'+sum.accuracy+'%</b><span>历史正确率</span></div><div><b>'+sum.fastRate+'%</b><span>3秒内听懂</span></div><div><b>'+sum.verifiedWords+'</b><span>已验证词</span></div></div>'+
-      '<button id="listenStartBtn" class="primary listenStartBtn" type="button">开始今日到期听词</button>'+
+      '<button id="listenStartBtn" class="primary listenStartBtn" type="button">开始听词训练</button>'+
       '</div>';
     $('listenStartBtn').addEventListener('click',startSession);
     updateMeta();
@@ -283,7 +288,7 @@
       '<div class="listenSummaryIcon">✓</div><h3>这一局完成</h3>'+
       '<div class="listenSummaryGrid"><div><b>'+state.correct+' / '+total+'</b><span>答对</span></div><div><b>'+Math.round(state.correct/total*100)+'%</b><span>正确率</span></div><div><b>'+state.fast+'</b><span>3秒内听懂</span></div></div>'+
       '<p>听错不会直接改成“未掌握”，而是单独记入听觉能力；之后会提高这些词的听词优先级。</p>'+
-      '<button id="listenAgainBtn" class="primary" type="button">再来 10 个</button>'+
+      '<button id="listenAgainBtn" class="primary" type="button">查看今日剩余听词</button>'+
       '</div>';
     $('listenAgainBtn').addEventListener('click',startSession);
     updateCard();updateMeta();
