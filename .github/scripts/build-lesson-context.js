@@ -130,10 +130,16 @@ function buildLessonContext({index,runtime,rules,load,sourceSha=''}) {
  requireIt(!same(context.source.runtime_hash,'')&&!same(context.source.index_hash,''),'HASH_INVALID','Missing source hash');
  return context;
 }
-function parseArgs(args){const out={};for(let i=0;i<args.length;i+=2){
+function parseArgs(args){const out={};for(let i=0;i<args.length;i++){
+  if(args[i]==='--check'){requireIt(!out.check,'ARGUMENT_INVALID','Duplicate --check');out.check=true;continue}
   requireIt(/^--(?:output|source-sha)$/.test(args[i])&&args[i+1]&&!args[i+1].startsWith('--'),
-  'ARGUMENT_INVALID','Usage: [--output data/lesson-context.json] [--source-sha <pinned-main>]');out[args[i].slice(2)]=args[i+1]}
- return out}
+    'ARGUMENT_INVALID','Usage: [--output data/lesson-context.json | --check] [--source-sha <pinned-main>]');
+  requireIt(!Object.hasOwn(out,args[i].slice(2)),'ARGUMENT_INVALID','Duplicate argument: '+args[i]);
+  out[args[i].slice(2)]=args[++i];
+ }
+ requireIt(!(out.check&&out.output),'ARGUMENT_INVALID','--check cannot write --output');
+ return out
+}
 if(require.main===module){
  try{
   const args=parseArgs(process.argv.slice(2)),read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
@@ -145,6 +151,12 @@ if(require.main===module){
    requireIt(args.output==='data/lesson-context.json','OUTPUT_PATH_INVALID','Only the future canonical derived-data path is supported');
    fs.mkdirSync(path.dirname(args.output),{recursive:true});
    fs.writeFileSync(args.output,serialized);
+  }else if(args.check){
+   const canonical='data/lesson-context.json';
+   requireIt(fs.existsSync(canonical),'CONTEXT_MISSING','Derived lesson context is missing; run the existing runtime writer');
+   const actual=read(canonical);
+   requireIt(same(actual,snapshot),'CONTEXT_STALE','Context no longer matches current runtime, index, rules and completed history');
+   console.log('LESSON_CONTEXT_CHECK '+JSON.stringify({ok:true,target:snapshot.target,watermark:snapshot.source.lesson_watermark,runtimeHash:snapshot.source.runtime_hash}));
   }else process.stdout.write(serialized);
  }catch(e){console.error(JSON.stringify({ok:false,code:e.code||'CONTEXT_BUILD_ERROR',error:e.message}));process.exitCode=1}
 }
