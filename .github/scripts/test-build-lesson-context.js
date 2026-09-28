@@ -1,0 +1,97 @@
+#!/usr/bin/env node
+'use strict';
+// Read-only phase-1 coverage against REAL latest origin/main and bounded synthetic faults.
+// Does NOT write lesson-context.json or trigger any publication/sync.
+const assert=require('node:assert/strict');
+const cp=require('node:child_process');
+const {buildLessonContext}=require('./build-lesson-context');
+const {collectReviewHistory}=require('./validate-lesson-candidate');
+const git=(...xs)=>cp.execFileSync('git',xs,{encoding:'utf8'}).trim();
+git('fetch','origin','main');
+// Immutable REAL 2026-09-28 post-PM main; tests must not change meaning when future lessons arrive.
+const sha='fa2d2c7b35026140da912f94c2b287e845911ac5';
+const raw=p=>git('show',sha+':'+p),read=p=>JSON.parse(raw(p)),clone=x=>JSON.parse(JSON.stringify(x));
+const index=read('data/daily/index.json'),runtime=read('data/learning-runtime.json'),rules=read('data/learning-pool-rules.json');
+const prepare=(changes={})=>({index,runtime,rules,load:read,sourceSha:sha,...changes});
+const key=x=>String(Array.isArray(x)?x[0]:x||'').trim().toLowerCase();
+let passed=0;
+function ok(name,fn){fn();passed++;console.log('PASS context: '+name)}
+function bad(name,args,code){ok(name,()=>assert.throws(()=>buildLessonContext(args),e=>e.code===code,'Expected '+code))}
+const now=buildLessonContext(prepare()),target=now.target;
+ok('immutable real 2026-09-28 post-PM main is the sole source',()=>{
+ assert.equal(target.date,'2026-09-29');assert.equal(target.session,'am');
+ assert.equal(now.source.main_sha,sha);assert.equal(now.source.master_unique,977);
+ assert.equal(now.source.lesson_watermark,runtime.lesson_watermark);
+ assert.equal(now.source.runtime_generated_at,runtime.generated_at);
+ assert.equal(now.source.rules_version,4);
+});
+ok('entire authorized new candidate partition kept with real Chinese meanings',()=>{
+ const all=new Set(runtime.new_pool.map(key));
+ const candidate=[...now.candidates.new_dont,...now.candidates.new_fuzzy].map(x=>x[0]);
+ assert.equal(candidate.length,all.size-runtime.new_pool_unclassified.length);
+ assert.equal(new Set(candidate).size,candidate.length);
+ for(const [w,cn] of [...now.candidates.new_dont,...now.candidates.new_fuzzy]){
+  assert(all.has(w));assert.equal(typeof cn,'string');assert(cn.trim());
+ }
+ assert.deepEqual(now.candidates.new_dont.map(x=>x[0]),runtime.new_pool_dont);
+ assert.deepEqual(now.candidates.new_fuzzy.map(x=>x[0]),runtime.new_pool_fuzzy);
+});
+ok('review/focus/oral are precisely the runtime candidate pools, not new eligibility rules',()=>{
+ assert.deepEqual(now.candidates.review,runtime.review_pool);
+ assert.deepEqual(now.candidates.focus,runtime.focus_pool.map(x=>x.slice(0,3)));
+ assert.deepEqual(now.candidates.oral.map(x=>x[0]),runtime.oral_new_pool.filter(x=>runtime.new_pool.includes(x[0])).map(x=>x[0]));
+ assert(now.candidates.oral.every(x=>['dont','fuzzy'].includes(x[5])));
+});
+ok('seven-day completed core-review history exactly equals existing validator history',()=>{
+ const real=collectReviewHistory(index,target.date,target.session,read);
+ assert.deepEqual(now.history_7d.map(x=>x.date+'-'+x.session),real.map(x=>x.date+'-'+x.session));
+ for(let i=0;i<real.length;i++){
+  const h=real[i],x=now.history_7d[i];
+  assert.deepEqual(x.review_core,h.session==='am'?h.review_vocab:h.vocab.filter(v=>v.source_group==='review').map(v=>v.word));
+  assert.deepEqual(x.new_words,h.session==='am'?h.vocab.map(v=>v.word):h.new_words);
+ }
+ assert.equal(now.history_7d.length,14);
+});
+ok('last PM new words exposed without misclassifying PM application as review',()=>{
+ const prev=read('data/daily/2026-09-28-pm.json');
+ assert.deepEqual(now.previous_pm.new_words,prev.new_words);
+ assert.deepEqual(now.previous_pm.review_core,prev.vocab.filter(v=>v.source_group==='review').map(v=>v.word));
+ for(const w of now.previous_pm.new_words)assert(!runtime.new_pool.includes(w));
+});
+ok('deterministic generated JSON for same authoritative inputs',()=>assert.deepEqual(buildLessonContext(prepare()),now));
+ok('compact compared with runtime + seven days of real lesson payloads',()=>{
+ const origins=Buffer.byteLength(raw('data/learning-runtime.json'))+Buffer.byteLength(raw('data/daily/index.json'))+
+  collectReviewHistory(index,target.date,target.session,read).reduce((n,x)=>n+Buffer.byteLength(raw('data/daily/'+x.date+'-'+x.session+'.json')),0);
+ const bytes=Buffer.byteLength(JSON.stringify(now));
+ assert(bytes<origins*0.50,'compact context became too big relative to inputs');
+ console.log('Context size:',JSON.stringify({bytes,sourceBytes:origins,ratio:Number((bytes/origins).toFixed(3)),new:now.candidates.new_dont.length+now.candidates.new_fuzzy.length,review:now.candidates.review.length,history:now.history_7d.length}));
+});
+{
+ const i=clone(index),t=clone(runtime),row=i.dates.find(x=>x.date==='2026-09-28');
+ row.pm=false;delete row.pm_day;delete row.pm_status;
+ t.lesson_watermark='2026-09-28 08:00';
+ const pm=buildLessonContext(prepare({index:i,runtime:t}));
+ ok('18:00 context only exposes the real morning lesson as application source',()=>{
+  assert.deepEqual(pm.target,{date:'2026-09-28',session:'pm',time:'18:00',day:38});
+  assert.deepEqual(pm.same_day_am.vocab.map(x=>x[0]),read('data/daily/2026-09-28-am.json').vocab.map(v=>v.word));
+  assert.deepEqual(pm.same_day_am.review_vocab,read('data/daily/2026-09-28-am.json').review_vocab);
+  assert(!pm.history_7d.some(x=>x.date==='2026-09-28'&&x.session==='pm'));
+  assert(pm.history_7d.some(x=>x.date==='2026-09-28'&&x.session==='am'));
+ });
+ bad('stale runtime/index combination stops instead of publishing',prepare({index:i}),'BASELINE_SYNC_STALE');
+ const missing=clone(i);missing.dates.at(-1).am=false;
+ const t2=clone(t);t2.lesson_watermark='2026-09-28 08:00';
+ bad('missing completed lesson record conflicts with runtime watermark',prepare({index:missing,runtime:t2}),'BASELINE_SYNC_STALE');
+}
+{const t=clone(runtime);t.stats.master_unique=976;bad('977 invariant is mandatory',prepare({runtime:t}),'RULE_RUNTIME_MISMATCH')}
+{const t=clone(runtime);t.lesson_watermark='2026-09-28 08:00';bad('baseline watermark mismatch stops context',prepare({runtime:t}),'BASELINE_SYNC_STALE')}
+{const t=clone(runtime);t.new_pool_fuzzy.push(t.new_pool_dont[0]);bad('overlapping dont/fuzzy stops context',prepare({runtime:t}),'POOL_PARTITION_INVALID')}
+{const t=clone(runtime);t.new_meta=t.new_meta.filter(x=>x[0]!==t.new_pool_dont[0]);bad('missing meaning stops rather than creating an incomplete word card',prepare({runtime:t}),'NEW_META_MISSING')}
+{const t=clone(runtime);t.focus_pool[0][0]='unqualified';bad('focus cannot exceed review qualification',prepare({runtime:t}),'FOCUS_NOT_REVIEW')}
+{const i=clone(index);i.dates.push(clone(i.dates.at(-1)));bad('duplicate index day fails closed',prepare({index:i}),'INDEX_INVALID')}
+ok('missing one completed historical lesson fails closed',()=>{
+ const missing='data/daily/2026-09-27-pm.json';
+ assert.throws(()=>buildLessonContext(prepare({load:p=>{if(p===missing)throw Error('Missing history '+p);return read(p)}})),/Missing history/);
+});
+ok('unpublished next AM has no fabricated same-day lesson',()=>assert.equal(now.same_day_am,null));
+console.log('Phase 1 context tests:',JSON.stringify({passed,failed:0,main_sha:sha,target:now.target}));
