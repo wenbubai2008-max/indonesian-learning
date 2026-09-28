@@ -329,7 +329,7 @@
     if(stage===1)renderStage1(task,item.word,item,st);else if(stage===2)renderStage2(task,item.word,item,st);else if(stage===3)renderStage3(task,item.word,item,st);else renderStage4(task,item.word,item,st);
     return true;
   }
-  function dueCount(){const p=loadPlan();if(p.date===today()&&Array.isArray(p.words)){const states=stateMap();releaseDueRetries(p,states);return Math.max(0,p.words.length-Object.keys(p.results||{}).length);}return Math.min(MAX_DAILY,candidateList().length);}
+  function dueCount(){const p=loadPlan();if(p.date===today()&&Array.isArray(p.words)){const states=stateMap();releaseDueRetries(p,states);const eligible=window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet():null;return p.words.filter(x=>!(p.results||{})[norm(x.word)]&&(!eligible||eligible.has(norm(x.word)))).length;}return Math.min(MAX_DAILY,candidateList().length);}
   function refreshTag(){const tag=document.getElementById('automationTag');if(tag){const n=dueCount();tag.textContent=n?n+' 个待训练':'暂无到期词';}}
   function open(){ensurePage();if(typeof window.go==='function')window.go('automationTraining');render();}
   function rebuildPlan(){buildPlan(true);render();refreshTag();}
