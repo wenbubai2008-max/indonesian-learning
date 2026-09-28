@@ -7,6 +7,8 @@ on:
       - '.github/scripts/validate-lesson-candidate.js'
       - '.github/scripts/plan-lesson-publication.js'
       - '.github/scripts/test-lesson-candidate.js'
+      - '.github/scripts/build-lesson-context.js'
+      - '.github/scripts/test-build-lesson-context.js'
       - '.github/scripts/test-publication-plan.js'
       - '.github/scripts/publish-staged-lesson.js'
       - '.github/scripts/test-publish-staged-lesson.js'
@@ -58,6 +60,8 @@ jobs:
           node --check .github/scripts/plan-lesson-publication.js
           node --check .github/scripts/check-staged-drafts.js
           node --check .github/scripts/test-lesson-candidate.js
+          node --check .github/scripts/build-lesson-context.js
+          node --check .github/scripts/test-build-lesson-context.js
           node --check .github/scripts/test-publication-plan.js
           node --check .github/scripts/publish-staged-lesson.js
           node --check .github/scripts/test-publish-staged-lesson.js
