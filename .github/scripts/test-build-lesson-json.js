@@ -4,8 +4,10 @@ const assert=require('assert/strict'),fs=require('fs');
 const {buildLesson}=require('./build-lesson-json');
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const clone=x=>JSON.parse(JSON.stringify(x));
-const am=read('data/daily/2026-09-28-am.json');
-const pm=read('data/daily/2026-09-27-pm.json');
+// Stage deliberately does not contain the newly published lesson. Select the corrected
+// 28 AM draft there, but the actual official 28 AM on main. Both use the same key shape.
+const am=read(fs.existsSync('data/daily/2026-09-28-am.json')?'data/daily/2026-09-28-am.json':'staging/drafts/2026-09-28-am.json');
+const pm=read(fs.existsSync('data/daily/2026-09-27-pm.json')?'data/daily/2026-09-27-pm.json':'data/daily/2026-09-26-pm.json');
 let pass=0;
 function ok(name,fn){fn();pass++;console.log('PASS assembly: '+name)}
 function bad(name,obj,code){ok(name,()=>assert.throws(()=>buildLesson(obj),e=>e.code===code,e=>e.message))}
