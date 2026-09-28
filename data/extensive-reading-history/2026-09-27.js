@@ -1,0 +1,13 @@
+window.EXTENSIVE_READING_ARCHIVE_ITEM={id:'er-20260927-lrt-jakarta-penumpang',date:'2026-09-27',title:'Penumpang LRT Jakarta Naik Setelah Rute Manggarai Dibuka',title_cn:'Manggarai 新线路开通后，LRT Jakarta 日均乘客明显增加',category:'印尼 · 交通 · 日常生活 · 实时新闻改写',level:'A2+ → B1',minutes:4,source_name:'ANTARA News',source_date:'2026-09-26',text:`Setelah rute Kelapa Gading–Manggarai mulai beroperasi, jumlah penumpang LRT Jakarta meningkat cukup besar. PT LRT Jakarta mencatat sekitar 91 ribu penumpang menggunakan layanan ini pada 16–23 September 2026. Rata-ratanya mencapai 11.300 orang per hari.
+
+Sebelum rute baru dibuka, rata-rata penumpang hingga akhir Agustus sekitar 4.245 orang per hari. Data ini menunjukkan bahwa jalur menuju Manggarai membuat LRT dapat digunakan oleh lebih banyak warga. Sekarang layanan tersebut menghubungkan wilayah Jakarta Utara, Jakarta Timur, dan Jakarta Selatan.
+
+Mulai 24 September, tarif perjalanan Kelapa Gading–Manggarai menjadi Rp5.000. Kereta beroperasi setiap 15 menit dari pukul 05.30 sampai 20.00. Setelah pukul 20.00, layanan tetap tersedia sampai 23.00, tetapi hanya untuk rute Kelapa Gading–Velodrome.
+
+Menurut PT LRT Jakarta, masa awal operasi menuju Manggarai merupakan tahap penting. Persiapan yang dilakukan sebelumnya turut mendukung kelancaran layanan. Bertambahnya penumpang juga menunjukkan bahwa koneksi transportasi publik yang lebih luas dapat memudahkan kegiatan sehari-hari masyarakat Jakarta.`,cn:`Kelapa Gading–Manggarai 线路投入运营后，LRT Jakarta 的乘客数量明显增加。PT LRT Jakarta 记录显示，2026年9月16日至23日期间约有9.1万人使用这项服务，平均每天达到1.13万人。
+
+在新线路开通前，截至8月底的日均乘客约为4245人。这些数据表明，通往 Manggarai 的线路让更多居民能够使用 LRT。现在这项服务连接了雅加达北部、东部和南部地区。
+
+从9月24日起，Kelapa Gading–Manggarai 的票价为5000印尼盾。列车从05:30至20:00每15分钟一班。20:00以后仍继续运营到23:00，但只运行 Kelapa Gading–Velodrome 路段。
+
+PT LRT Jakarta 表示，通往 Manggarai 的初期运营是一个重要阶段。此前进行的准备工作也帮助保障了服务顺利运行。乘客增加也说明，更广泛的公共交通连接能够让雅加达居民的日常活动更加方便。`,hints:[{term:'jumlah penumpang',cn:'乘客数量'},{term:'meningkat',cn:'增加；上升',root:'tingkat',formation:'meN- + tingkat'},{term:'mencatat',cn:'记录',root:'catat',formation:'meN- + catat'},{term:'rata-rata',cn:'平均；平均数'},{term:'menunjukkan',cn:'表明；显示',root:'tunjuk',formation:'meN- + tunjuk + -kan'},{term:'menghubungkan',cn:'连接',root:'hubung',formation:'meN- + hubung + -kan'},{term:'tarif perjalanan',cn:'出行票价'},{term:'tetap tersedia',cn:'仍然可用；仍有服务'},{term:'tahap',cn:'阶段'},{term:'turut mendukung',cn:'也支持；也有助于',root:'dukung',formation:'turut + meN- + dukung'},{term:'kelancaran layanan',cn:'服务顺畅运行',root:'lancar',formation:'ke- + lancar + -an'},{term:'bertambahnya penumpang',cn:'乘客数量的增加',root:'tambah',formation:'ber- + tambah + -nya'}]};
