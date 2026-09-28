@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T09:31:13.566Z",
+  "updated_at": "2026-09-28T14:27:38.008Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -856,8 +856,11 @@
     "menuju": {
       "word": "menuju",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-28T14:27:27.405Z",
       "display": "menuju",
+      "cn": "朝向；前往",
+      "root": "tuju",
+      "root_cn": "方向；目标",
       "reasons": [
         "memory_dont"
       ],
