@@ -106,10 +106,13 @@
   }
 
   function nearestUnused(word){
-    const used=new Set(state.queue.slice(0,state.pos+1).map(x=>x.word));
+    // Contrast is a scored question, so it MUST belong to today's assigned listening queue.
+    // Unassigned words may only be mentioned in explanations, not inserted as extra tests.
+    const allowed=rootCoachEligible(),used=new Set(state.queue.map(x=>x.word.toLowerCase()));
     let best=null,bestScore=.34;
     state.pool.forEach(x=>{
-      if(x.word===word||used.has(x.word))return;
+      const k=x.word.toLowerCase();
+      if(k===word.toLowerCase()||used.has(k)||allowed&&!allowed.has(k))return;
       const s=soundSimilarity(word,x.word);
       if(s>bestScore){bestScore=s;best=x;}
     });
@@ -235,7 +238,7 @@
         '<div class="listenAnswerHeadline"><span class="listenAnswerTop">'+esc(headline)+'</span><span class="listenSpeedTag">'+esc(speedTag)+'</span></div>'+
         '<div class="listenAnswerWordRow"><b>'+esc(item.word)+'</b><span>'+esc(item.cn)+'</span></div>'+
         '<div class="listenTiming">首次作答 '+(elapsed/1000).toFixed(1)+' 秒 · 重播 '+state.replays+' 次</div>'+
-        (!ok?'<div class="listenContrastNote">下一题优先安排声音接近的已学词做对比。</div>':'')+
+        (!ok?'<div class="listenContrastNote">已记录听觉弱项；只有今天到期且被分配的词才会进入后续计分题。</div>':'')+
       '</div>'+
       '<div class="listenAnswerActions">'+
         '<button class="secondary listenAnswerReplay" type="button" id="listenAnswerSound">🔊 再听一遍</button>'+
