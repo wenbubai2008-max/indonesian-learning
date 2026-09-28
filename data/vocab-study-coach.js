@@ -23,7 +23,9 @@
       last=time(old.last);level=Number(old.review_level||0);lastResult=old.last_result||'';
       if(last){due=time(old.review_due)||last+(lastResult==='wrong'?15*60000:Number(old.streak)>=3?48*HOUR:Number(old.streak)===2?20*HOUR:6*HOUR);kind='review'}
       else if(mastered){due=time(mastered.last_mastered)+30*DAY||0;kind='legacy_stable'}
-      stable=level>=3||!!mastered&&!last;
+      const priorMastered=!!mastered&&time(mastered.last_mastered)>0&&time(old.last_wrong)<=time(mastered.last_mastered);
+      if(priorMastered&&level<3){stable=true;kind='legacy_stable';due=Math.max(due,time(mastered.last_mastered)+30*DAY)}
+      else stable=level>=3;
       if(level>=3)kind='stable';
       score=(lastResult==='wrong'?95:0)+(weak&&weak.reasons&&weak.reasons.includes('quick_wrong')?65:0)+(!last&&!mastered?25:0);
     }else if(mode==='listen'){
@@ -37,14 +39,14 @@
       stable=old.status==='stable'||!!mastered&&!last;
       if(mastered&&!last)due=Infinity;
       kind=stable?'stable':last?'review':'new';
-      const req=s.requests[k];if(req){due=Math.max(due===Infinity?0:due,Number(req.due_at)||time(req.requested_at)+DAY);kind='verification'}
+      const req=s.requests[k];if(req){due=Number(req.due_at)||time(req.requested_at)+DAY;kind='verification'}
       score=(lastResult==='fail'?110:0)+(old.status==='active'?55:0)+(weak&&weak.reasons&&weak.reasons.includes('automation_fail')?90:0)+(req?130:0)+(!last&&!mastered?22:0);
     }
     const lastToday=last>0&&day(last)===day(now);
     const overdue=due&&due!==Infinity?Math.max(0,Math.floor((now-due)/DAY)):0;
     score+=Math.min(110,overdue*3)+(stable?0:18);
     const ready=now>=due&&!lastToday;
-    return {word:item.word,cn:item.cn,mode,stage:mode==='auto'?Math.max(1,Math.min(4,level)):1,score,due_at:due,last_at:last,ready,stable,kind,last_result:lastResult,level,weak:!!weak,last_today:lastToday};
+    return {word:item.word,cn:item.cn,mode,stage:mode==='auto'?(s.requests[k]?1:Math.max(1,Math.min(4,level))):1,score,due_at:due,last_at:last,ready,stable,kind,last_result:lastResult,level,weak:!!weak,last_today:lastToday};
   }
   function candidates(mode,now=Date.now()){
     const s=snapshot(),rows=[];s.items.forEach((_,k)=>{const x=status(mode,k,now,s);if(x&&x.ready)rows.push(x)});
