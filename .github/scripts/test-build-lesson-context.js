@@ -150,11 +150,11 @@ ok('both existing writer workflows update context in their own derived-data tran
   const context=workflow.indexOf('node .github/scripts/build-lesson-context.js --output data/lesson-context.json');
   assert(context>rebuilt,name+' builds context before runtime');
   assert(workflow.includes('node .github/scripts/build-lesson-context.js --check'),name+' lacks fresh context readback');
-  assert(/git add [^\\n]*data\\/learning-runtime\\.json data\\/lesson-context\\.json/.test(workflow),name+' does not commit runtime and context together');
+  assert(workflow.split('\n').some(line=>line.trim().startsWith('git add ')&&line.includes('data/learning-runtime.json data/lesson-context.json')),name+' does not commit runtime and context together');
  }
  assert(sync.includes('node .github/scripts/build-lesson-context.js --check > /dev/null'),'scheduled healthy check accepts stale context');
  assert(build.includes("      - '.github/scripts/build-lesson-context.js'"),'weakness writer cannot seed a context on first merge');
- const workflows=git('ls-files','.github/workflows').split('\\n');
+ const workflows=git('ls-files','.github/workflows').split('\n');
  assert.deepEqual(workflows.sort(),['.github/workflows/build-learning-runtime.yml','.github/workflows/sync-daily-vocab.yml']);
 });
 console.log('Lesson context integration tests:',JSON.stringify({passed,failed:0,main_sha:sha,target:now.target}));
