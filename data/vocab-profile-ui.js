@@ -146,10 +146,19 @@
   }
   function suggestions(data){
     const f=data.focus_words||[],counts={auto:0,quick:0,dont:0,fuzzy:0};
+    const records=window.VocabProfileEvidence?window.VocabProfileEvidence.records():[];
+    const cutoff=Date.now()-7*86400000,recent=records.filter(x=>Date.parse(x.at)>=cutoff);
+    const local={auto:recent.filter(x=>x.source==='auto'&&x.result==='fail').length,quick:recent.filter(x=>x.source==='quick'&&x.result==='wrong').length,listen:recent.filter(x=>x.source==='listen'&&['wrong','slow'].includes(x.result)).length};
     f.forEach(w=>(w.signals||[]).forEach(s=>{if(s==='automation_fail')counts.auto++;if(s==='quick_wrong')counts.quick++;if(s==='dont')counts.dont++;if(s==='fuzzy')counts.fuzzy++;}));
     const out=[];
-    if(counts.auto)out.push(['主动提取优先','当前重点弱词中有 '+counts.auto+' 个带有自动训练失败信号。接下来应优先练“看到意思就能主动调出印尼语”，而不是继续增加被动曝光。']);
-    if(counts.quick)out.push(['识别稳定度仍需巩固','当前重点弱词中有 '+counts.quick+' 个近期快速练习答错。建议短时复现后再进入延迟验证。']);
+    if(recent.length){
+      if(local.auto)out.push(['无提示提取','最近7天自动训练有 '+local.auto+' 次提取失败。到期后优先进行对应词的无提示提取。']);
+      if(local.listen)out.push(['听觉识别','最近7天听词有 '+local.listen+' 次答错或反应较慢，优先练对应声音，不把这类错误直接改写为未掌握。']);
+      if(local.quick)out.push(['识别到表达','最近7天快速练习有 '+local.quick+' 次答错。冷却后用主动提取确认，而不是马上重复相同选择题。']);
+      if(!out.length)out.push(['保持间隔','最近7天已有 '+recent.length+' 次本机答题，没有记录到上述失败；按到期任务训练，不必额外加量。']);
+    }
+    if(!recent.length&&counts.auto)out.push(['主动提取优先','当前重点弱词中有 '+counts.auto+' 个带有自动训练失败信号。接下来应优先练“看到意思就能主动调出印尼语”，而不是继续增加被动曝光。']);
+    if(!recent.length&&counts.quick)out.push(['识别稳定度仍需巩固','当前重点弱词中有 '+counts.quick+' 个近期快速练习答错。建议短时复现后再进入延迟验证。']);
     if(!out.length)out.push(['继续观察','当前证据还不足以判断主要瓶颈，先保持现有学习节奏，等待更多跨日记录。']);
     out.push(['新词数量先不自动调整','目前画像只给学习方向建议，不会擅自改变08:00或18:00的新词配额。']);
     return out;
