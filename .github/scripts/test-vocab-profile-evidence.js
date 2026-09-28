@@ -63,4 +63,18 @@ assert.equal(summary().attempts,before+1,'Real quick-practice event is captured'
 const prior=summary().attempts;
 root.dispatchEvent(new CustomEvent('listening-answer-recorded',{detail:{word:'niat',at:'2026-10-05T03:00:00Z',attempts:5,ok:true,fast_first:true}}));
 assert.equal(summary().attempts,prior+1,'Real listening event is captured');
-console.log('Local profile evidence tests passed: taught-only, dedupe, passive/active thresholds, errors, forgetting/relearning, persistence and module events.');
+
+const originalStore=JSON.parse(stored.get('indo_vocab_profile_longterm_v1'));
+assert.equal(originalStore.version,1);
+assert.equal(originalStore.words.tunda.active,true,'Cross-day active ability must have a durable state');
+assert.equal(api.summarize().active,1,'Summary must read durable state');
+const oldAttempts=api.summarize().attempts;
+for(let i=0;i<1510;i++){
+ const when=new Date(Date.parse('2026-10-07T00:00:00Z')+i*60000).toISOString();
+ assert.equal(api.capture({source:'quick',word:'supaya',at:when,id:'bulk-'+i,result:'right'}),true);
+}
+assert.ok(api.records().length<=1500,'Recent event log stays bounded');
+assert.equal(api.summarize().active,1,'Older verified vocabulary must survive rolling-log truncation');
+assert.equal(api.summarize().attempts,oldAttempts+1510,'Lifetime attempts remain intact after log truncation');
+assert.equal(api.summarize().words.find(x=>x.word==='tunda').active,true);
+console.log('Local profile evidence tests passed: taught-only, dedupe, passive/active thresholds, forgetting/relearning, durable state beyond rolling log and module events.');
