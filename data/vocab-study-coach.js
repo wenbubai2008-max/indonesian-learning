@@ -167,7 +167,6 @@
       if(x&&suitable(x))ranked.push(x);
     });
     ranked.sort((a,b)=>{
-      const pa=source.quick[norm(a.word)]||{},pb=source.quick[norm(b.word)]||{};
       const score=x=>x.score+(!(source.quick[norm(x.word)]||{}).last?16:0)
         +(source.weak[norm(x.word)]?20:0);
       return score(b)-score(a)||a.word.localeCompare(b.word);
