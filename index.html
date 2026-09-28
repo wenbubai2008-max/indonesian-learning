@@ -44,6 +44,8 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
 #home .homeShortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 12px}
 #home .homeShortcuts>.homeShortcut{min-width:0;width:100%;min-height:82px;margin:0;border:1px solid #dce5f4;border-radius:15px;background:#fff;display:flex;align-items:center;text-align:left;gap:10px;padding:12px;cursor:pointer;color:#172033;box-shadow:0 2px 8px rgba(23,32,51,.025)}
 #home .homeShortcuts>.homeShortcut:hover{border-color:#9cb4e8;background:#f8faff}
+/* The previous standalone listening card has margin-bottom:12px; cancel it inside the three-card grid. */
+#home .homeShortcuts>#listenQuickCard{margin:0;height:100%}
 #home .homeShortcutIcon,#home .homeShortcuts .listenQuickIcon{width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;border-radius:12px;background:#eef3ff;color:#3157d5;font-size:20px}
 #home .homeShortcutText,#home .homeShortcuts .listenQuickText{flex:1;min-width:0}
 #home .homeShortcutText b,#home .homeShortcuts .listenQuickTitle{display:block;font-size:16px;font-weight:800;line-height:1.3}
@@ -179,15 +181,15 @@ loadArchive();
 <script src="data/extensive-reading-data.js?v=20260903-3"></script>
 <script src="data/extensive-reading-history.js?v=20260904-1"></script>
 <script src="data/vocab-profile-evidence.js?v=20260928-coach-v3a"></script>
-<script src="data/vocab-study-coach.js?v=20260928-quick-restored-v1"></script>
-<script src="data/home-learning-upgrade-v2.js?v=20260928-quick-restored-v1"></script>
-<script src="data/automation-training.js?v=20260928-training-integrity-v1"></script>
+<script src="data/vocab-study-coach.js?v=20260928-three-training-repair-v1"></script>
+<script src="data/home-learning-upgrade-v2.js?v=20260928-three-training-repair-v1"></script>
+<script src="data/automation-training.js?v=20260928-three-training-repair-v1"></script>
 <script src="data/weakness-paging-roots.js?v=20260928-training-integrity-v1"></script>
 <script src="data/extensive-reading-history-ui.js?v=20260904-1"></script>
 <script src="data/today-mastery-test.js?v=20260902-2"></script>
 <script src="data/vocab-dom-compat.js?v=20260916-source1"></script>
 <script src="data/home-modules-layout.js?v=20260928-training-integrity-v1"></script>
-<script src="data/listening-word-training.js?v=20260928-training-integrity-v1"></script>
+<script src="data/listening-word-training.js?v=20260928-three-training-repair-v1"></script>
 <script src="data/vocab-profile-ui.js?v=b7721c45ddbe"></script>
 <script src="data/vocab-memory-feedback.js?v=cdc5f352ea8a"></script>
 </body></html>
