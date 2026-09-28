@@ -90,7 +90,7 @@
     delete entries[k];
     try{root.localStorage.setItem(KNOWN_KEY,JSON.stringify(entries))}catch(e){}
   }
-  root.VocabStudyCoach={plan,detail,eligible,eligibleSet,requestVerification,clearRequest};
+  root.VocabStudyCoach={plan,detail,eligible,eligibleSet,requestVerification,clearRequest,words:()=>[...taught().values()]};
   root.addEventListener('automation-training-updated',e=>{const word=e&&e.detail&&e.detail.word;if(word)clearRequest(word);root.dispatchEvent(new CustomEvent('vocab-coach-updated',{detail:{word}}))});
   root.addEventListener('vocab-profile-evidence-updated',e=>root.dispatchEvent(new CustomEvent('vocab-coach-updated',{detail:e.detail})));
 })(window);
