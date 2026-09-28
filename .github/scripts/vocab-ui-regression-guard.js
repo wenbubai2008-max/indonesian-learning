@@ -47,9 +47,9 @@ try{
   ok(memoryPos===externalScripts.length-1,'vocab-memory-feedback.js must remain the last external script in index.html');
   // Homepage is one entry point: index owns the structural slots, each module only fills its own container.
   const heroPos=index.indexOf('<div class="hero">'),profilePos=index.indexOf('id="vocabProfile"'),listenPos=index.indexOf('id="listenQuickCard"'),modsPos=index.indexOf('id="homeModules"');
-  ok(heroPos>=0&&heroPos<profilePos&&profilePos<listenPos&&listenPos<modsPos,'homepage order must be daily > profile > listening > other modules');
   const coachHomePos=index.indexOf('id="vocabCoachHome"');
-  ok(coachHomePos>profilePos&&coachHomePos<listenPos&&index.includes('#home #vocabCoachHome{min-height:'),'coach task card must reserve first-paint layout between profile and listening');
+  ok(heroPos>=0&&heroPos<coachHomePos&&coachHomePos<profilePos&&profilePos<listenPos&&listenPos<modsPos,'homepage order must be daily > daily coach > compact profile > listening > other modules');
+  ok(coachHomePos>heroPos&&coachHomePos<profilePos&&index.includes('#home #vocabCoachHome{min-height:'),'coach task card must reserve first-paint layout before compact profile');
   ok((index.match(/id="vocabProfile"/g)||[]).length===1,'homepage profile must have exactly one mount container');
   ok(!index.includes('A2+ → B1 · 雅加达真实口语优先 · 你的个人词库'),'retired homepage subtitle must stay removed');
   ok(!index.includes('每天 08:00 / 18:00 自动生成到网站。学完后只点一次'),'retired homepage lesson instructions must stay removed');
@@ -74,6 +74,9 @@ try{
   const listeningPos=externalScripts.findIndex(x=>x.includes('data/listening-word-training.js'));
   ok(evidencePos>=0&&coachPos>evidencePos&&coachPos<autoPos&&coachPos<quickPos&&coachPos<listeningPos&&profileScriptPos>coachPos,'shared coach loads after evidence and before all training/profile modules');
   ok(studyCoach.includes('eligibleSet')&&studyCoach.includes('requestVerification'),'coach must share a single cooldown and delayed self-verification');
+  ok(studyCoach.includes('assignedSet')&&studyCoach.includes('dailySession')&&studyCoach.includes('markTask'),'generic training must consume bounded daily assignments and persist completion');
+  ok(profileEvidence.includes('indo_vocab_profile_longterm_v1')&&profileEvidence.includes('compactSummary(longterm())'),'long-term ability must not depend on 1500 most recent events');
+  ok(automation.includes("VocabStudyCoach.assigned('auto')")&&quick.includes("VocabStudyCoach.assigned('quick')")&&listenUi.includes("assignedSet('listen')"),'all three generic modules must use the same assigned queue');
   ok(profileUi.includes('今天最该练什么')&&profileUi.includes('逐词能力档案')&&profileUi.includes('data-coach-start'),'profile must expose actionable tasks and per-word history');
   ok(automation.includes('openAutomationTrainingWord')&&automation.includes('autoSelfCheck'),'automation must directly train selected words and require expression self-confirmation');
   ok(quick.includes('openQuickPracticeWordV2')&&listenUi.includes('openListeningWordTarget'),'quick and listening practice must support exact-word entry');
