@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  let PROFILE=null,activeTab='overview',activeWeak='',historyState='idle';
+  let PROFILE=null,activeTab='today',activeWeak='',historyState='idle',selectedWord='',wordQuery='';
   const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]));
   const signalLabel={automation_fail:'自动训练失败',quick_wrong:'快速练习答错',dont:'明确不会',fuzzy:'标记模糊',unknown:'陌生词',manual_unknown:'陌生词'};
   function evidenceData(){
@@ -9,10 +9,79 @@
   function evidenceHTML(){
     const api=window.VocabProfileEvidence,rows=api?api.records().slice(-8).reverse():[];
     const names={auto:'自动训练',quick:'快速练习',listen:'听词训练'};
-    const labels={direct:'无提示快速提取',slow:'正确但不符合快速标准',right:'无提示完成',hinted:'使用提示',fail:'未能提取',stable:'多轮延迟验证通过',wrong:'答错',fast_first:'首次听音快速答对'};
+    const labels={direct:'无提示快速提取',slow:'正确但不符合快速标准',right:'无提示完成',hinted:'使用提示',fail:'未能提取',stable:'多轮延迟验证通过',self_checked:'用户自我核对表达',wrong:'答错',fast_first:'首次听音快速答对'};
     const summary=evidenceData();
     const stats=summary.attempts?'<div class="vpMiniStats"><div><b>'+summary.observed+'</b><span>有记录的词</span></div><div><b>'+summary.attempts+'</b><span>已捕获答题事件</span></div><div><b>'+summary.forgotten+'</b><span>验证后又出现提取失败</span></div><div><b>'+summary.relearned+'</b><span>再次通过验证</span></div></div>':'';
     return '<div class="vpSection"><h3>本设备近期训练证据</h3>'+stats+(rows.length?rows.map(x=>'<div style="padding:8px 0;border-bottom:1px solid #eef0f4;font-size:13px"><b>'+esc(x.word)+'</b> · '+esc(names[x.source]||x.source)+' · '+esc(labels[x.result]||x.result)+'<small style="display:block;color:#667085">'+esc(x.at.slice(0,16).replace('T',' '))+' UTC</small></div>').join(''):'<div class="vpEmpty">从现在开始记录新答题结果。原有自动训练的已保存事件可以沿用；没有证据的旧成绩不会补造。</div>')+'<p class="vpCoverageNote">本机仅保留最近1500条有效事件，并按正式学过的词去重；不与手机、云端混算。单次答对不算稳定掌握，听音正确不等于会主动表达。</p></div>';
+  }
+  const localCoach=()=>window.VocabStudyCoach||null;
+  const modeNames={auto:'主动提取',quick:'快速识别',listen:'听词验证'};
+  const normWord=s=>String(s||'').trim().toLowerCase();
+  function jakartaTime(ms){
+    if(!ms||!Number.isFinite(Number(ms)))return '尚未安排';
+    return new Date(ms).toLocaleString('zh-CN',{timeZone:'Asia/Jakarta',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
+  }
+  function taskListHTML(rows){
+    if(!rows.length)return '<div class="vpCoachEmpty">当前没有到期的重点任务。先正常上课；到时间后才会再安排，不为凑题重复出现。</div>';
+    return '<div class="vpCoachList">'+rows.map(x=>'<div class="vpCoachRow"><div><b>'+esc(x.word)+' · '+esc(x.cn)+'</b><small>'+esc(x.note)+' · '+esc(modeNames[x.mode]||'针对训练')+'</small></div><button type="button" data-coach-start="'+esc(x.word)+'">练这个</button></div>').join('')+'</div>';
+  }
+  function openCoachTask(word){
+    const api=localCoach(),item=api&&api.detail(word);
+    if(!item||!item.ready)return;
+    if(item.mode==='listen'&&typeof window.openListeningWordTarget==='function')window.openListeningWordTarget(item.word);
+    else if(item.mode==='quick'&&typeof window.openQuickPracticeWordV2==='function')window.openQuickPracticeWordV2(item.word);
+    else if(typeof window.openAutomationTrainingWord==='function')window.openAutomationTrainingWord(item.word);
+  }
+  function bindCoachActions(root){
+    root.querySelectorAll('[data-coach-start]').forEach(b=>b.onclick=()=>openCoachTask(b.dataset.coachStart));
+    root.querySelectorAll('[data-coach-known]').forEach(b=>b.onclick=()=>{
+      const api=localCoach();if(api&&api.requestVerification(b.dataset.coachKnown)){renderHomeCoach();renderDetail();}
+    });
+  }
+  function renderHomeCoach(){
+    const home=document.getElementById('home'),profile=document.getElementById('vocabProfile'),api=localCoach();
+    if(!home||!profile||!api)return;
+    let el=document.getElementById('vocabCoachHome');
+    if(!el){el=document.createElement('section');el.id='vocabCoachHome';el.className='vpCoachHome';profile.insertAdjacentElement('afterend',el)}
+    const rows=api.plan(),modes={auto:0,listen:0,quick:0};rows.forEach(x=>modes[x.mode]=(modes[x.mode]||0)+1);
+    el.innerHTML='<div class="vpCoachTop"><div><h3>今天最该练什么</h3><p>本机统一调度 · 到期才出现 · 每词只占一个位置 · 约3—5分钟</p></div><button type="button" id="vpCoachAll">查看全部任务 →</button></div><div class="vpCoachIntro">当前到期：'+rows.length+' 个，其中主动提取 '+modes.auto+'、听词 '+modes.listen+'、快速识别 '+modes.quick+'。不改变早晚课的新词配额。</div>'+taskListHTML(rows.slice(0,3));
+    el.querySelector('#vpCoachAll').onclick=()=>openDetail('today');
+    bindCoachActions(el);
+  }
+  function todayHTML(){
+    const api=localCoach(),rows=api?api.plan():[];
+    return '<div class="vpSection"><h3>今日针对性任务 · '+rows.length+' 个到期</h3><p class="vpCoverageNote">每个词只分配一种最需要的训练。做完后立即重算；没到期的词不会为了凑足数量反复出现。</p>'+taskListHTML(rows)+'</div>';
+  }
+  function wordCandidates(){
+    const items=new Map();
+    (window.DAILY_VOCAB_DB||[]).forEach(x=>{const k=normWord(x&&x.word);if(k&&x.cn&&!items.has(k))items.set(k,{word:x.word,cn:x.cn})});
+    return items;
+  }
+  function wordSearchHTML(q){
+    const items=wordCandidates(),needle=normWord(q),api=localCoach(),preferred=new Set();
+    if(!needle){
+      if(api)api.plan().forEach(x=>preferred.add(normWord(x.word)));
+      if(window.VocabProfileEvidence)window.VocabProfileEvidence.records().slice(-16).forEach(x=>preferred.add(normWord(x.word)));
+    }
+    const rows=[...items.values()].filter(x=>needle?normWord(x.word).includes(needle)||String(x.cn).includes(q):preferred.has(normWord(x.word))).slice(0,30);
+    return rows.length?rows.map(x=>'<button type="button" data-coach-select="'+esc(x.word)+'"><b>'+esc(x.word)+'</b><small>'+esc(x.cn)+'</small></button>').join(''):'<div class="vpEmpty">没有匹配的正式已学词。可输入印尼语或中文搜索。</div>';
+  }
+  function wordProfileHTML(word){
+    const api=localCoach(),detail=api&&api.detail(word);
+    if(!detail)return '<div class="vpEmpty">选择一个正式学过的词，查看下一步训练和实际记录。</div>';
+    const ev=detail.events.slice(-12).reverse(),ability=detail.ability||{};
+    const status=ability.forgotten?'曾通过验证，后来又遗忘':ability.active?'本机主动验证通过':ability.passive?'本机稳定识别':detail.requested?'已预约跨日确认':'继续积累证据';
+    const names={auto:'自动训练',quick:'快速练习',listen:'听词训练'};
+    const resultNames={direct:'快速提取',slow:'提取较慢',right:'正确',self_checked:'本人核对表达',stable:'延迟通过',hinted:'使用提示',fail:'未能提取',wrong:'答错',fast_first:'首次听懂'};
+    return '<div class="vpSection"><h3>'+esc(detail.word)+' · '+esc(detail.cn)+'</h3><span class="vpSignal">'+esc(status)+'</span><div class="vpCoverageNote">下一次建议：'+esc(detail.due_at?jakartaTime(detail.due_at):'尚无近期作答记录')+'（雅加达） · '+esc(detail.note)+'</div><div class="vpCoachButtons"><button type="button" data-coach-start="'+esc(detail.word)+'" '+(!detail.ready?'disabled':'')+'>到期后练这个 · '+esc(modeNames[detail.mode])+'</button><button type="button" class="secondary" data-coach-known="'+esc(detail.word)+'">我会了 · 明天验证</button></div><h3 style="margin-top:15px">真实学习轨迹</h3>'+(ev.length?'<div class="vpWordTrail">'+ev.map(e=>'<div><b>'+esc(e.at.slice(0,16).replace('T',' '))+' UTC</b> · '+esc(names[e.source]||e.source)+' · '+esc(resultNames[e.result]||e.result)+'</div>').join('')+'</div>':'<div class="vpEmpty">还没有本机答题事件。正式学过不等于已经掌握，也不补造旧记录。</div>')+'</div>';
+  }
+  function wordsHTML(){
+    return '<div class="vpSection"><h3>逐词能力档案</h3><p class="vpCoverageNote">输入单词或中文，查看真实记录、冷却时间与针对性训练。默认只列出当前任务及最近有训练记录的词。</p><input class="vpWordSearch" id="vpWordSearch" type="search" placeholder="搜索已学印尼语 / 中文" value="'+esc(wordQuery)+'"><div class="vpWordRows" id="vpSearchResults">'+wordSearchHTML(wordQuery)+'</div></div><div id="vpSelectedWord">'+wordProfileHTML(selectedWord)+'</div>';
+  }
+  function wireWordSearch(body){
+    body.querySelectorAll('[data-coach-select]').forEach(b=>b.onclick=()=>{selectedWord=b.dataset.coachSelect;activeTab='words';renderDetail()});
+    const search=body.querySelector('#vpWordSearch');
+    if(search)search.oninput=()=>{wordQuery=search.value;const list=body.querySelector('#vpSearchResults');if(list){list.innerHTML=wordSearchHTML(wordQuery);list.querySelectorAll('[data-coach-select]').forEach(b=>b.onclick=()=>{selectedWord=b.dataset.coachSelect;activeTab='words';renderDetail()})}};
   }
   function ensureStyle(){
     if(document.getElementById('vocabProfileStyle'))return;
@@ -36,8 +105,9 @@
       .vpTrendRow{display:flex;align-items:center;gap:10px;margin:9px 0}.vpTrendDate{width:76px;font-size:12px;color:#667085}.vpTrendBar{height:9px;background:#e9edf4;border-radius:999px;flex:1;overflow:hidden}.vpTrendBar i{display:block;height:100%;background:#3157d5}.vpTrendValue{width:70px;text-align:right;font-size:12px;color:#475467}
       .vpWeakList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.vpWeakItem{border:1px solid #e3e8f0;background:#fff;border-radius:13px;padding:12px;text-align:left;cursor:pointer;color:#172033}.vpWeakItem:hover,.vpWeakItem.active{border-color:#9fb4ef;background:#f8faff}.vpWeakItem b{font-size:17px}.vpWeakItem span{display:block;color:#667085;font-size:12px;margin-top:4px}.vpWeakDetail{margin-top:11px;background:#fafbfe;border-radius:14px;padding:14px}.vpSignals{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.vpSignal{font-size:11px;background:#eef3ff;color:#3157d5;border-radius:999px;padding:5px 8px}
       .vpAdviceGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.vpAdvice{border-radius:15px;padding:15px;border:1px solid #e5e9f1;background:#fbfcff}.vpAdvice b{display:block;margin-bottom:6px}.vpAdvice p{margin:0;color:#5f6c7d;line-height:1.55;font-size:13px}
+      .vpCoachHome{margin:0 0 14px;padding:18px;border-radius:18px;border:1px solid #dce6fa;background:#f9fbff}.vpCoachTop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.vpCoachTop h3{margin:0 0 3px;font-size:19px}.vpCoachTop p{margin:0;color:#65748b;font-size:12px;line-height:1.5}.vpCoachList{display:grid;gap:8px;margin-top:12px}.vpCoachRow{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid #e1e9f6;background:#fff;padding:10px 12px;border-radius:12px}.vpCoachRow b{display:block}.vpCoachRow small{display:block;color:#667085;line-height:1.5}.vpCoachRow button,.vpCoachTop button{flex-shrink:0;border:0;border-radius:9px;background:#3157d5;color:white;padding:8px 11px;cursor:pointer;font-weight:750}.vpCoachRow button:disabled{background:#d8dce4;color:#687184;cursor:default}.vpCoachIntro{font-size:12px;color:#667085;margin-top:8px;line-height:1.55}.vpCoachEmpty{background:#eef7f0;padding:12px;border-radius:12px;margin-top:10px;color:#276646;font-size:13px}.vpWordSearch{width:100%;padding:12px;border:1px solid #dce3ef;border-radius:10px;margin:8px 0 12px;font:inherit}.vpWordRows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.vpWordRows button{border:1px solid #e4e9f3;background:#fff;border-radius:10px;padding:9px;text-align:left;cursor:pointer}.vpWordRows button small{display:block;color:#667085}.vpWordTrail{display:grid;gap:8px;margin-top:10px}.vpWordTrail div{padding:9px 11px;background:#f7f9fc;border-radius:10px;font-size:12px;color:#526071}.vpWordTrail b{color:#1d2e4f}.vpCoachButtons{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.vpCoachButtons button{padding:9px 13px;border:0;border-radius:9px;background:#3157d5;color:#fff;font-weight:700;cursor:pointer}.vpCoachButtons button.secondary{background:#edf3ff;color:#3157d5}.vpCoachButtons button:disabled{background:#dce1e9;color:#687184;cursor:default}
       .vpActionRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.vpActionRow button{border:0;border-radius:10px;padding:9px 12px;font-weight:800;cursor:pointer}.vpActionPrimary{background:#3157d5;color:#fff}.vpActionSoft{background:#eef1f6;color:#344054}
-      @media(max-width:650px){.vpGrid,.vpMiniStats{grid-template-columns:repeat(2,1fr)}.vpFoot{flex-direction:column;gap:3px}.vpCoverageSummary{align-items:flex-start;flex-direction:column;gap:4px}.vpCoverageSummary span:last-child{white-space:normal}.vpAbility,.vpWeakList,.vpAdviceGrid{grid-template-columns:1fr}.vpDetailHero{flex-direction:column;gap:8px}}
+      @media(max-width:650px){.vpGrid,.vpMiniStats{grid-template-columns:repeat(2,1fr)}.vpFoot{flex-direction:column;gap:3px}.vpCoverageSummary{align-items:flex-start;flex-direction:column;gap:4px}.vpCoverageSummary span:last-child{white-space:normal}.vpAbility,.vpWeakList,.vpAdviceGrid,.vpWordRows{grid-template-columns:1fr}.vpCoachTop{flex-direction:column}.vpCoachRow{align-items:flex-start}.vpDetailHero{flex-direction:column;gap:8px}}
     `;
     document.head.appendChild(s);
   }
@@ -57,7 +127,7 @@
     const focus=(data.focus_words||[]).slice(0,6);
     box.innerHTML='<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">只统计正式学过的词，不把词库筛选或泛读路过当成掌握。</div></div><span class="pill">画像</span></div><div class="vpGrid"><div class="vpMetric"><b>'+data.taught_total+'</b><span>已正式学习</span></div><div class="vpMetric"><b>'+data.confirmed_mastered+'</b><span>已确认掌握</span></div><div class="vpMetric"><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div class="vpMetric"><b>'+data.unverified+'</b><span>尚待验证</span></div></div><div class="vpCoverageSummary"><span><b>主词库当前待学习 '+data.primary_eligible_new_total+' 个</b></span></div><div class="vpProgress"><i style="width:'+Math.max(0,Math.min(100,Number(data.mastery_percent)||0))+'%"></i></div><div class="vpFoot"><span>已学词确认掌握进度 '+data.mastery_percent+'%</span><span>待强化词 '+data.needs_reinforcement+' 个</span></div>'+(focus.length?'<div class="vpFocus"><b>当前优先：</b> '+focus.map(x=>'<span class="vpChip" title="'+esc(x.cn||'')+'">'+esc(x.word)+'</span>').join('')+'</div>':'')+'<button class="vpOpen" type="button" id="openVocabProfile">查看完整词汇画像 →</button>';
     box.querySelector('#openVocabProfile').onclick=openDetail;
-    ensureDetailPage();renderDetail();
+    ensureDetailPage();renderDetail();renderHomeCoach();
   }
   function trendHTML(data){
     if(historyState==='idle'||historyState==='loading')return '<div class="vpEmpty">正在读取历史快照…</div>';
