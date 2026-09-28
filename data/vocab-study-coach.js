@@ -74,7 +74,7 @@
   function markAnswer(mode,word,ok,now=Date.now(),quality){
     const k=norm(word);if(!taught().has(k))return null;
     if(mode==='quick'||mode==='listen'){
-      const key=mode==='quick'?'indo_quick_practice_state':'indo_listen_stats_v1',all=read(key,{}),p=all[k]||{},d=day(now);
+      const key=mode==='quick'?'indo_quick_practice_state':'indo_listen_stats_v1',all=read(key,{}),storedKey=Object.keys(all).find(x=>norm(x)===k)||k,p=all[storedKey]||{},d=day(now);
       // Keep original totals intact; old undated streaks are not invented as cross-day successes.
       if(p.review_last_counted_day!==d){
         if(mode==='quick'&&ok||mode==='listen'&&ok&&quality==='fast_first'){
@@ -87,7 +87,7 @@
           p.review_due=now+(ok?2:1)*DAY;
         }
         p.review_last_counted_day=d;
-        all[k]=p;write(key,all);
+        all[storedKey]=p;write(key,all);
       }
     }
     const all=read(ROUND_KEY,{}),r=all[mode];if(r&&r.day===day(now)&&r.items&&r.items.includes(k)){r.done=r.done||{};r.done[k]=true;write(ROUND_KEY,all)}
@@ -129,4 +129,6 @@
   const eligibleSet=(now=Date.now(),mode='auto')=>new Set(candidates(mode,now).map(x=>norm(x.word)));
   root.VocabStudyCoach={day,status,candidates,statistics,round,markAnswer,plan,assigned,assignedSet:(mode,now=Date.now())=>new Set(assigned(mode,now).map(x=>norm(x.word))),dailyProgress:progress,detail,eligible,eligibleSet,supplement:(mode,now=Date.now(),max=10)=>candidates(mode,now).slice(0,max),quickSupplement:(now=Date.now(),max=10)=>candidates('quick',now).slice(0,max),pendingSet:()=>new Set(Object.keys(read(KNOWN_KEY,{}))),requestVerification,clearRequest,words:()=>[...taught().values()]};
   root.addEventListener('automation-training-updated',e=>{const d=e&&e.detail||{};if(d.word&&d.state)clearRequest(d.word,d.state.last_at)});
+  // Freeze only the small recommendation list, never freeze any mode's full eligible vocabulary.
+  if(root.document){if(root.document.readyState==='loading')root.document.addEventListener('DOMContentLoaded',()=>dailySession());else dailySession()}
 })(window);
