@@ -38,7 +38,7 @@ assert.ok(c.candidates('listen',start).some(r=>r.word==='tunda'));
 assert.ok(c.candidates('auto',start).some(r=>r.word==='tunda'),'One word can appear in all three capability queues');
 assert.equal(c.statistics('quick',start).unverified,3);
 c.dailyProgress(start);
-const first=c.round('quick',start,false,2).map(r=>r.word);
+const first=[...c.round('quick',start,false,2)].map(r=>r.word);
 assert.deepEqual([...c.round('quick',start,false,2)].map(r=>r.word),first,'Refresh preserves unanswered round');
 x.quick(first[0],true,start);
 assert.equal(c.statistics('quick',start).today,1);
