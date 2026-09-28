@@ -4,6 +4,7 @@
 // Does NOT write lesson-context.json or trigger any publication/sync.
 const assert=require('node:assert/strict');
 const cp=require('node:child_process');
+const fs=require('node:fs'),os=require('node:os'),path=require('node:path');
 const {buildLessonContext}=require('./build-lesson-context');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
 const git=(...xs)=>cp.execFileSync('git',xs,{encoding:'utf8'}).trim();
@@ -94,4 +95,21 @@ ok('missing one completed historical lesson fails closed',()=>{
  assert.throws(()=>buildLessonContext(prepare({load:p=>{if(p===missing)throw Error('Missing history '+p);return read(p)}})),/Missing history/);
 });
 ok('unpublished next AM has no fabricated same-day lesson',()=>assert.equal(now.same_day_am,null));
+ok('real CLI writes a matching JSON in an isolated temporary directory only when explicitly requested',()=>{
+ const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'learning-context-v1-'));
+ try{
+  const real=collectReviewHistory(index,target.date,target.session,read);
+  for(const f of ['data/daily/index.json','data/learning-runtime.json','data/learning-pool-rules.json',...real.map(x=>'data/daily/'+x.date+'-'+x.session+'.json')]){
+   fs.mkdirSync(path.dirname(path.join(tmp,f)),{recursive:true});
+   fs.writeFileSync(path.join(tmp,f),raw(f));
+  }
+  const output='data/lesson-context.json',full=path.join(tmp,output);
+  const command=path.join(__dirname,'build-lesson-context.js');
+  const stdout=cp.execFileSync(process.execPath,[command,'--source-sha',sha],{cwd:tmp,encoding:'utf8'});
+  assert.deepEqual(JSON.parse(stdout),now);
+  assert.equal(fs.existsSync(full),false,'stdout mode unexpectedly wrote a file');
+  cp.execFileSync(process.execPath,[command,'--output',output,'--source-sha',sha],{cwd:tmp,encoding:'utf8'});
+  assert.deepEqual(JSON.parse(fs.readFileSync(full,'utf8')),now);
+ }finally{fs.rmSync(tmp,{recursive:true,force:true})}
+});
 console.log('Phase 1 context tests:',JSON.stringify({passed,failed:0,main_sha:sha,target:now.target}));
