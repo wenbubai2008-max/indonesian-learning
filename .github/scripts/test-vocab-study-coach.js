@@ -74,6 +74,9 @@ y.write('indo_automation_training_state_v1',{tunda:{last_at:start,next_due:start
 y.quick('tunda',false,start+H);
 assert.equal(yc.eligible('tunda',start+25*H,'auto'),false,'Quick mistake cannot override active-stage delay');
 assert.equal(yc.eligible('tunda',start+48*H,'auto'),true);
+y.write('indo_automation_training_state_v1',{tunda:{last_at:start+48*H,next_due:start+49*H,status:'active',stage:1,last_result:'fail'}});
+assert.equal(yc.eligible('tunda',start+48*H+30*60000,'auto'),false,'Active failure retry must still honor its own one-hour delay');
+assert.equal(yc.eligible('tunda',start+49*H,'auto'),true,'Active failure can be retried when its delay expires on the same Jakarta day');
 assert.equal(yc.requestVerification('unknown',start),false);
 assert.equal(yc.requestVerification('niat',start),true);
 assert.equal(yc.status('auto','niat',start).ready,false);
