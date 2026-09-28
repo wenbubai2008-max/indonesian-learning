@@ -157,4 +157,88 @@ ok('both existing writer workflows update context in their own derived-data tran
  const workflows=git('ls-files','.github/workflows').split('\n');
  assert.deepEqual(workflows.sort(),['.github/workflows/build-learning-runtime.yml','.github/workflows/sync-daily-vocab.yml']);
 });
+
+// Phase 3: replay actual immutable Git histories across AM/PM publication and Sync barriers.
+// No tomorrow lesson is generated; no production branch, index, runtime or website is written.
+const {plan}=require('./plan-lesson-publication');
+const actualCommit={
+ amPublished:'e8d4ba66cf971c2109bca7c25fb8f596511e43ae',
+ amSynced:'47fc83cab4ab212d2f07141515b87ca8f0b7d207',
+ pmPublished:'884dad9bae06c3c47fabe3943247a333e0f4005b',
+ pmSynced:'fa2d2c7b35026140da912f94c2b287e845911ac5'
+};
+const readAt=(ref,p)=>JSON.parse(git('show',ref+':'+p));
+const at=(ref)=>{
+ const load=p=>readAt(ref,p);
+ return {index:load('data/daily/index.json'),runtime:load('data/learning-runtime.json'),
+         rules:load('data/learning-pool-rules.json'),load,sourceSha:ref};
+};
+const earlyAm=at(actualCommit.amPublished),readyPm=at(actualCommit.amSynced);
+const earlyPm=at(actualCommit.pmPublished),readyNextAm=at(actualCommit.pmSynced);
+bad('actual AM commit before Sync cannot authorize PM word selection',earlyAm,'BASELINE_SYNC_STALE');
+const pmInput=buildLessonContext(readyPm);
+ok('actual completed AM Sync creates precisely PM 2026-09-28, with real AM applications',()=>{
+ assert.deepEqual(pmInput.target,{date:'2026-09-28',session:'pm',time:'18:00',day:38});
+ assert.deepEqual(pmInput.same_day_am.vocab.map(v=>v[0]),readyPm.load('data/daily/2026-09-28-am.json').vocab.map(v=>v.word));
+ assert.equal(pmInput.source.lesson_watermark,'2026-09-28 08:00');
+ assert.equal(pmInput.candidates.new_dont.length+pmInput.candidates.new_fuzzy.length,readyPm.runtime.new_pool.length);
+ assert.equal(pmInput.history_7d.some(v=>v.date==='2026-09-28'&&v.session==='pm'),false);
+});
+const actualPm=readyNextAm.load('data/daily/2026-09-28-pm.json');
+const pmPlanInput={
+ lesson:actualPm,index:readyPm.index,runtime:readyPm.runtime,rules:readyPm.rules,
+ mainHead:actualCommit.amSynced,expectedDate:'2026-09-28',expectedSession:'pm',
+ sameDayAm:readyPm.load('data/daily/2026-09-28-am.json'),
+ previousPm:readyPm.load('data/daily/2026-09-27-pm.json'),
+ reviewHistory:collectReviewHistory(readyPm.index,'2026-09-28','pm',readyPm.load)
+};
+ok('actual recovered PM can be planned unchanged into exactly lesson+index on a synced baseline',()=>{
+ const before=JSON.stringify(pmPlanInput),p=plan(pmPlanInput);
+ assert.equal(p.ok,true,JSON.stringify(p.errors||[]));
+ assert.equal(p.status,'ready');
+ assert.deepEqual(p.files.map(f=>f.path),['data/daily/2026-09-28-pm.json','data/daily/index.json']);
+ assert.deepEqual(JSON.parse(p.files[0].content),actualPm);
+ const i=JSON.parse(p.files[1].content),row=i.dates.find(v=>v.date==='2026-09-28');
+ assert.equal(row.am,true);assert.equal(row.pm,true);
+ assert.equal(JSON.stringify(pmPlanInput),before,'planner mutated the approved candidate');
+});
+bad('actual PM commit before Sync cannot authorize next morning selection',earlyPm,'BASELINE_SYNC_STALE');
+const nextAmInput=buildLessonContext(readyNextAm);
+ok('actual PM Sync enables only next AM and removes actually taught PM new words',()=>{
+ assert.deepEqual(nextAmInput.target,{date:'2026-09-29',session:'am',time:'08:00',day:39});
+ assert.equal(nextAmInput.same_day_am,null);
+ assert.deepEqual(nextAmInput.previous_pm.new_words,actualPm.new_words);
+ for(const w of actualPm.new_words){
+  assert(readyPm.runtime.new_pool.includes(w),'Historical PM new word unexpectedly ineligible: '+w);
+  assert(!readyNextAm.runtime.new_pool.includes(w),'Published PM new word still eligible: '+w);
+  assert(!nextAmInput.candidates.new_dont.some(x=>x[0]===w));
+  assert(!nextAmInput.candidates.new_fuzzy.some(x=>x[0]===w));
+ }
+ assert.equal(nextAmInput.history_7d.length,14);
+ assert.equal(nextAmInput.history_7d.some(v=>v.date==='2026-09-28'&&v.session==='pm'),true);
+});
+ok('identical real official PM is a no-op, never a second release',()=>{
+ const p=plan({lesson:actualPm,index:readyNextAm.index,runtime:readyNextAm.runtime,
+ rules:readyNextAm.rules,mainHead:actualCommit.pmSynced,expectedDate:'2026-09-28',
+ expectedSession:'pm',publishedLesson:actualPm});
+ assert.equal(p.ok,true);assert.equal(p.status,'already_published');assert.deepEqual(p.files,[]);
+});
+ok('different real official PM is refused instead of overwritten',()=>{
+ const changed=clone(actualPm);changed.title+=' changed';
+ const p=plan({lesson:changed,index:readyNextAm.index,runtime:readyNextAm.runtime,
+ rules:readyNextAm.rules,mainHead:actualCommit.pmSynced,expectedDate:'2026-09-28',
+ expectedSession:'pm',publishedLesson:actualPm});
+ assert.equal(p.ok,false);assert.equal(p.errors[0].code,'ALREADY_PUBLISHED');assert.equal(p.files,undefined);
+});
+ok('post-PM stable replay has no source drift or invented input',()=>{
+ assert.deepEqual(buildLessonContext(readyNextAm),nextAmInput);
+ assert.equal(nextAmInput.source.master_unique,977);
+ assert.deepEqual(nextAmInput.history_7d.map(h=>h.date+'-'+h.session),
+   collectReviewHistory(readyNextAm.index,'2026-09-29','am',readyNextAm.load).map(h=>h.date+'-'+h.session));
+ console.log('LIFECYCLE_REPLAY '+JSON.stringify({amPublished:actualCommit.amPublished,amSynced:actualCommit.amSynced,
+ pmPublished:actualCommit.pmPublished,pmSynced:actualCommit.pmSynced,
+ beforeSyncBlocked:2,afterSync:{pm:pmInput.target,nextAm:nextAmInput.target},pmApprovedCandidatePaths:2,
+ duplicate:'no-op',changedDuplicate:'blocked',productionWrites:0}));
+});
+
 console.log('Lesson context integration tests:',JSON.stringify({passed,failed:0,main_sha:sha,target:now.target}));
