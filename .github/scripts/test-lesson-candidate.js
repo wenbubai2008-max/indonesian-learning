@@ -74,4 +74,5 @@ const results=runTests(validate);
 console.log('Stage 1 pre-publication guard:',JSON.stringify(results));
 // Opt-in prototype tests run inside the existing staging test suite; no new workflow or writer.
 require('./test-build-lesson-json');
+require('./test-build-lesson-context');
 module.exports={makeAm:results.makeAm,makePm:results.makePm};
