@@ -45,7 +45,7 @@
     const lastToday=last>0&&day(last)===day(now);
     const overdue=due&&due!==Infinity?Math.max(0,Math.floor((now-due)/DAY)):0;
     score+=Math.min(110,overdue*3)+(stable?0:18);
-    const ready=now>=due&&!lastToday;
+    const ready=now>=due&&(mode==='auto'||!lastToday); // Stage failures may be retried after their own 1/3/6h delay.
     return {word:item.word,cn:item.cn,mode,stage:mode==='auto'?(s.requests[k]?1:Math.max(1,Math.min(4,level))):1,score,due_at:due,last_at:last,ready,stable,kind,last_result:lastResult,level,weak:!!weak,last_today:lastToday};
   }
   function candidates(mode,now=Date.now()){
@@ -60,7 +60,7 @@
   }
   function statistics(mode,now=Date.now()){
     const s=snapshot(),result={taught:s.items.size,due:0,future:0,stable:0,unverified:0,today:0};
-    s.items.forEach((_,k)=>{const x=status(mode,k,now,s);if(!x)return;if(x.stable)result.stable++;if(x.kind==='new')result.unverified++;if(x.last_today)result.today++;else if(x.ready)result.due++;else result.future++});return result;
+    s.items.forEach((_,k)=>{const x=status(mode,k,now,s);if(!x)return;if(x.stable)result.stable++;if(x.kind==='new')result.unverified++;if(x.last_today)result.today++;if(x.ready)result.due++;else result.future++});return result;
   }
   function round(mode,now=Date.now(),advance=false,max=10){
     if(!['quick','listen','auto'].includes(mode))return [];
