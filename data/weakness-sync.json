@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T14:27:38.008Z",
+  "updated_at": "2026-09-28T14:44:51.220Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -480,19 +480,19 @@
     "sekadar": {
       "word": "sekadar",
       "status": "active",
-      "updated_at": "2026-09-27T13:56:03.504Z",
+      "updated_at": "2026-09-28T14:44:25.327Z",
       "display": "sekadar",
       "cn": "只是；仅仅；不过是",
       "root": "kadar",
       "root_cn": "程度；分量",
       "last_wrong": "2026-09-27T13:56:03.482Z",
-      "last_review": "2026-09-27T13:56:03.482Z",
+      "last_review": "2026-09-28T14:44:25.303Z",
       "reasons": [
         "quick_wrong",
         "memory_dont"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "ngepasin": {
       "word": "ngepasin",
@@ -566,18 +566,18 @@
     "nanggung": {
       "word": "nanggung",
       "status": "active",
-      "updated_at": "2026-09-24T06:32:10.127Z",
+      "updated_at": "2026-09-28T14:44:40.724Z",
       "display": "nanggung",
       "cn": "做到一半很尴尬；不上不下；既然都做到这了（口语）",
       "root": "tanggung",
       "root_cn": "承担；未完全结束（相关语境）",
       "last_wrong": "2026-09-23T03:24:34.816Z",
-      "last_review": "2026-09-24T06:32:10.102Z",
+      "last_review": "2026-09-28T14:44:40.699Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 1
+      "right_streak": 2
     },
     "molor": {
       "word": "molor",
@@ -1193,18 +1193,18 @@
     "berarti": {
       "word": "berarti",
       "status": "active",
-      "updated_at": "2026-09-22T13:08:29.261Z",
+      "updated_at": "2026-09-28T14:43:27.085Z",
       "display": "berarti",
       "cn": "意味着；也就是说",
       "root": "arti",
       "last_wrong": "2026-09-22T13:08:29.239Z",
-      "last_review": "2026-09-22T13:08:29.239Z",
+      "last_review": "2026-09-28T14:43:27.052Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "wajib": {
       "word": "wajib",
@@ -2129,20 +2129,20 @@
     "menunjukkan": {
       "word": "menunjukkan",
       "status": "active",
-      "updated_at": "2026-09-27T13:58:43.353Z",
+      "updated_at": "2026-09-28T14:44:28.888Z",
       "display": "menunjukkan",
       "cn": "指出",
       "root": "tunjuk",
       "root_cn": "指；指出",
       "last_wrong": "2026-09-27T13:58:43.322Z",
-      "last_review": "2026-09-27T13:58:43.322Z",
+      "last_review": "2026-09-28T14:44:28.862Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 4,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kehidupan": {
       "word": "kehidupan",
@@ -2425,20 +2425,20 @@
     "menegaskan": {
       "word": "menegaskan",
       "status": "active",
-      "updated_at": "2026-09-25T14:59:12.804Z",
+      "updated_at": "2026-09-28T14:44:17.530Z",
       "display": "menegaskan",
       "cn": "强调；明确说明；确认",
       "root": "tegas",
       "root_cn": "明确；坚定",
       "last_wrong": "2026-09-25T14:59:12.780Z",
-      "last_review": "2026-09-25T14:59:12.780Z",
+      "last_review": "2026-09-28T14:44:17.505Z",
       "reasons": [
         "memory_dont",
         "automation_fail",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "buruk": {
       "word": "buruk",
@@ -3118,18 +3118,18 @@
     "baper": {
       "word": "baper",
       "status": "active",
-      "updated_at": "2026-09-22T13:08:59.029Z",
+      "updated_at": "2026-09-28T14:43:33.642Z",
       "display": "baper",
       "cn": "太往心里去；因为一句话情绪受影响（口语）",
       "root": "bawa perasaan",
       "root_cn": "把情绪带进去；往心里去",
-      "last_wrong": "2026-09-22T13:08:59.006Z",
-      "last_review": "2026-09-22T13:08:59.006Z",
+      "last_wrong": "2026-09-28T14:43:33.614Z",
+      "last_review": "2026-09-28T14:43:33.614Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "barusan": {
@@ -23715,19 +23715,19 @@
     "ngotot": {
       "word": "ngotot",
       "status": "active",
-      "updated_at": "2026-09-28T09:31:03.065Z",
+      "updated_at": "2026-09-28T14:44:36.873Z",
       "display": "ngotot",
       "cn": "强硬坚持；硬要",
       "root": "ngotot",
       "root_cn": "强硬坚持；不肯让步",
       "last_wrong": "2026-09-13T11:58:14.186Z",
-      "last_review": "2026-09-22T13:10:18.181Z",
+      "last_review": "2026-09-28T14:44:36.848Z",
       "reasons": [
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "masukan": {
       "word": "masukan",
@@ -28162,18 +28162,18 @@
     "nyinggung": {
       "word": "nyinggung",
       "status": "active",
-      "updated_at": "2026-09-27T14:15:05.437Z",
+      "updated_at": "2026-09-28T14:43:57.071Z",
       "display": "nyinggung",
       "cn": "提到；触及；说到让人不舒服的话题（口语）",
       "root": "singgung",
       "root_cn": "触及；提到",
-      "last_wrong": "2026-09-24T06:33:13.990Z",
-      "last_review": "2026-09-24T06:33:13.990Z",
+      "last_wrong": "2026-09-28T14:43:57.046Z",
+      "last_review": "2026-09-28T14:43:57.046Z",
       "reasons": [
         "quick_wrong",
         "automation_fail"
       ],
-      "wrong_count": 2,
+      "wrong_count": 3,
       "right_streak": 0
     },
     "nangkep": {
@@ -28227,34 +28227,34 @@
     "ngurusin": {
       "word": "ngurusin",
       "status": "active",
-      "updated_at": "2026-09-22T13:22:26.455Z",
+      "updated_at": "2026-09-28T14:43:51.079Z",
       "display": "ngurusin",
       "cn": "处理；操心；负责某件事（口语）",
       "root": "urus",
       "root_cn": "处理；料理；负责",
       "last_wrong": "2026-09-22T13:22:26.432Z",
-      "last_review": "2026-09-22T13:22:26.432Z",
+      "last_review": "2026-09-28T14:43:51.048Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "salah tingkah": {
       "word": "salah tingkah",
       "status": "active",
-      "updated_at": "2026-09-24T06:34:58.118Z",
+      "updated_at": "2026-09-28T14:44:10.267Z",
       "display": "salah tingkah",
       "cn": "紧张尴尬到不知所措",
       "root": "tingkah",
       "root_cn": "举止；行为",
       "last_wrong": "2026-09-24T06:34:58.098Z",
-      "last_review": "2026-09-24T06:34:58.098Z",
+      "last_review": "2026-09-28T14:44:10.242Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     }
   }
 }
