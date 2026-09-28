@@ -69,7 +69,13 @@
     });
   }
   function candidateList(){
-    if(window.VocabStudyCoach)return window.VocabStudyCoach.assigned('auto').map(x=>({word:x.word,cn:x.cn,score:x.score,stage:x.stage,reasons:[x.note],item:x,last_seen:x.last_at||''}));
+    if(window.VocabStudyCoach){
+      const coach=window.VocabStudyCoach,priority=window.VocabStudyCoach.assigned('auto');
+      const used=new Set(priority.map(x=>norm(x.word)));
+      const optional=typeof coach.supplement==='function'?coach.supplement('auto',Date.now(),3).filter(x=>!used.has(norm(x.word))):[];
+      return priority.map(x=>({word:x.word,cn:x.cn,score:x.score,stage:x.stage,reasons:[x.note],item:x,last_seen:x.last_at||''}))
+        .concat(optional.map(x=>({word:x.word,cn:x.cn,score:x.score,stage:x.stage,reasons:['自选主动训练 · 不计入今日重点任务'],item:x,last_seen:x.last_at||''})));
+    }
     const now=Date.now(),states=stateMap(),qs=quickState(),mm=memory(),wm=weakMap(),out=[];
     const eligible=window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet(now):null;
     dailyWords().forEach(function(x){
@@ -120,7 +126,7 @@
   function loadPlan(){return parse(PLAN_KEY,{});}
   function buildPlan(force){
     const d=today(),old=loadPlan();
-    if(!window.VocabStudyCoach&&!force&&old.date===d&&Array.isArray(old.words))return old;
+    if(old.date===d&&Array.isArray(old.words)&&old.words.length)return old; // Keep answered cards in the same-day plan; never erase results on refresh.
     const list=candidateList().slice(0,MAX_DAILY);
     const previous=old.date===d&&old.results&&typeof old.results==='object'?old.results:{};
     const plan={date:d,generated_at:Date.now(),words:list.map(function(x){return {word:x.word,stage:x.stage,score:x.score,reasons:x.reasons};}),results:{}};
@@ -299,17 +305,19 @@
     const plan=buildPlan(false),map=wordMap(),states=stateMap();releaseDueRetries(plan,states);
     const done=plan.results||{};
     refreshMeta();
-    let html='<div class="autoIntro"><b>每天只练真正需要自动化的词。</b><span>新学词默认是“待稳定”，不是“已掌握”。快速练习答错、模糊/不会、弱项、到期验证都会提高优先级；同一天的计划不会因为普通刷新而乱变。</span><button class="secondary" type="button" id="autoRebuildPlan">更新今日训练</button></div>';
+    let html='<div class="autoIntro"><b>优先完成今日重点主动训练。</b><span>另提供最多3个已学词自选主动训练；不计入每日重点任务，不与其他专项抢词。完成的卡片会保留到当天结束。</span><button class="secondary" type="button" id="autoRebuildPlan">刷新到期状态</button></div>';
     html+='<div class="autoStages"><span>1 快速主动提取</span><span>2 语境补词</span><span>3 主动表达</span><span>4 延迟验证</span></div>';
-    if(!plan.words.length){html+='<div class="empty"><b>今天没有到期的自动化词。</b><div style="margin-top:8px">如果今天没学习，也会继续检查以前的到期词；没有真正需要练的就不硬凑数量。</div></div>';body.innerHTML=html;body.querySelector('#autoRebuildPlan').onclick=function(){buildPlan(true);render();};return;}
+    if(!plan.words.length){html+='<div class="empty"><b>当前没有可练的主动词。</b><div style="margin-top:8px">今日重点和自选训练均受已学资格、共享冷却与跨模块去重限制；不会拿已掌握词凑题。</div></div>';body.innerHTML=html;body.querySelector('#autoRebuildPlan').onclick=render;return;}
     html+='<div class="autoList">';
     plan.words.forEach(function(p,i){const item=map[norm(p.word)]||{word:p.word,cn:''};html+='<div class="autoCard" data-word="'+esc(p.word)+'" data-stage="'+p.stage+'"><div class="autoHead"><div><span class="autoNo">'+(i+1)+'</span><b>'+esc(stageName(p.stage))+'</b></div><small>'+esc(reasonText(p.reasons))+'</small></div><div class="autoTask"></div></div>';});
     html+='</div>';body.innerHTML=html;
-    body.querySelector('#autoRebuildPlan').onclick=function(){buildPlan(true);render();};
+    body.querySelector('#autoRebuildPlan').onclick=render;
     body.querySelectorAll('.autoCard').forEach(function(card){
       const word=card.dataset.word,stage=Number(card.dataset.stage||1),item=map[norm(word)]||{word:word,cn:''},st=states[norm(word)]||{};
       const task=card.querySelector('.autoTask');
-      if(done[norm(word)]){task.innerHTML='<div class="autoDone">✓ 今天这一词已经完成，明天或到期后再出现。</div>';card.dataset.done='1';return;}
+      if(done[norm(word)]){task.innerHTML='<div class="autoDone">✓ 今天已记录，等下一次到期再验证。</div>';card.dataset.done='1';return;}
+      const coach=window.VocabStudyCoach;
+      if(coach&&!coach.eligible(word)){task.innerHTML='<div class="autoDone">这个词已在其他训练中作答或进入冷却，暂不重复计分。</div>';card.dataset.done='1';return;}
       if(stage===1)renderStage1(task,word,item,st);else if(stage===2)renderStage2(task,word,item,st);else if(stage===3)renderStage3(task,word,item,st);else renderStage4(task,word,item,st);
     });
   }
@@ -331,7 +339,7 @@
     if(stage===1)renderStage1(task,item.word,item,st);else if(stage===2)renderStage2(task,item.word,item,st);else if(stage===3)renderStage3(task,item.word,item,st);else renderStage4(task,item.word,item,st);
     return true;
   }
-  function dueCount(){if(window.VocabStudyCoach)return window.VocabStudyCoach.assigned('auto').length;const p=loadPlan();if(p.date===today()&&Array.isArray(p.words)){const states=stateMap();releaseDueRetries(p,states);return p.words.filter(x=>!(p.results||{})[norm(x.word)]).length;}return Math.min(MAX_DAILY,candidateList().length);}
+  function dueCount(){const p=loadPlan();if(p.date===today()&&Array.isArray(p.words)&&p.words.length){const coach=window.VocabStudyCoach;return p.words.filter(x=>!(p.results||{})[norm(x.word)]&&(!coach||coach.eligible(x.word))).length;}return Math.min(MAX_DAILY,candidateList().length);}
   function refreshTag(){const tag=document.getElementById('automationTag');if(tag){const n=dueCount();tag.textContent=n?n+' 个待训练':'暂无到期词';}}
   function open(){ensurePage();if(typeof window.go==='function')window.go('automationTraining');render();}
   function rebuildPlan(){buildPlan(true);render();refreshTag();}
