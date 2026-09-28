@@ -41,6 +41,15 @@
       }else if(last.source==='quick')due=lastAt+(last.result==='wrong'?3*HOUR:6*HOUR);
       else due=lastAt+(last.result==='wrong'?3*HOUR:last.result==='slow'?5*HOUR:8*HOUR);
     }
+    if(!last){
+      // Existing module states have reliable last timestamps; retain cooldown without inventing past event history.
+      const fallback=[
+        {at:time(st.last_at),until:time(st.next_due)||time(st.last_at)+(st.last_result==='fail'?3*HOUR:st.last_result==='stable'?14*DAY:20*HOUR)},
+        {at:time(q.last),until:time(q.last)+(q.last_result==='wrong'?3*HOUR:6*HOUR)},
+        {at:time(l.last_at),until:time(l.last_at)+(l.last_result==='wrong'?3*HOUR:l.last_result==='correct'&&Number(l.last_ms)>3000?5*HOUR:8*HOUR)}
+      ].filter(x=>x.at>0).sort((a,b)=>b.at-a.at);
+      if(fallback.length)due=fallback[0].until;
+    }
     if(req)due=Number(req.due_at)||requestedAt+DAY;
     const requested=!!req;
     const errors=Number(q.wrong||0)+Number(st.failures||0);
