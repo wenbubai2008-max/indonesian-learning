@@ -165,7 +165,9 @@
     if(!x)return null;
     x.last_review=nowISO();x.right_streak=(x.right_streak||0)+1;
     const hardReasons=(x.reasons||[]).filter(function(r){return r!=='quick_wrong';});
-    if(x.status==='active'&&x.right_streak>=3&&!hardReasons.length){x.status='mastered';x.last_mastered=x.last_review;x.mastered_reason='3_correct';archiveReasons(x);removeLegacyUnknown(k);}
+    // Recognition practice alone cannot certify mastery. Keep the streak as evidence,
+    // but require explicit/manual mastery or independent delayed active verification.
+    if(x.status==='active'&&x.right_streak>=3&&!hardReasons.length)x.mastered_reason='';
     save(pool);return x;
   }
 
