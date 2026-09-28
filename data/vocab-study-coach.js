@@ -154,7 +154,7 @@
   function eligible(word,now=Date.now()){
     const x=detail(word,now);return !!x&&x.ready&&!x.stable;
   }
-  function pendingSet(){return new Set(Object.keys(known()).filter(k=>known()[k]&&typeof known()[k]==='object'));}
+  function pendingSet(){const entries=known();return new Set(Object.keys(entries).filter(k=>entries[k]&&typeof entries[k]==='object'));}
   function requestVerification(word,now=Date.now()){
     const k=norm(word);if(!taught().has(k))return false;
     const entries=known();
