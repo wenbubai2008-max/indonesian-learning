@@ -69,6 +69,7 @@
     });
   }
   function candidateList(){
+    if(window.VocabStudyCoach)return window.VocabStudyCoach.assigned('auto').map(x=>({word:x.word,cn:x.cn,score:x.score,stage:x.stage,reasons:[x.note],item:x,last_seen:x.last_at||''}));
     const now=Date.now(),states=stateMap(),qs=quickState(),mm=memory(),wm=weakMap(),out=[];
     const eligible=window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet(now):null;
     dailyWords().forEach(function(x){
@@ -119,11 +120,12 @@
   function loadPlan(){return parse(PLAN_KEY,{});}
   function buildPlan(force){
     const d=today(),old=loadPlan();
-    if(!force&&old.date===d&&Array.isArray(old.words))return old;
+    if(!window.VocabStudyCoach&&!force&&old.date===d&&Array.isArray(old.words))return old;
     const list=candidateList().slice(0,MAX_DAILY);
     const previous=old.date===d&&old.results&&typeof old.results==='object'?old.results:{};
     const plan={date:d,generated_at:Date.now(),words:list.map(function(x){return {word:x.word,stage:x.stage,score:x.score,reasons:x.reasons};}),results:{}};
     plan.words.forEach(x=>{if(previous[norm(x.word)])plan.results[norm(x.word)]=previous[norm(x.word)];});
+    if(old.date===d&&JSON.stringify(old.words||[])===JSON.stringify(plan.words)&&JSON.stringify(old.results||{})===JSON.stringify(plan.results))return old;
     write(PLAN_KEY,plan);return plan;
   }
   function savePlan(plan){write(PLAN_KEY,plan);}
@@ -295,7 +297,6 @@
   function render(){
     ensurePage();const body=document.getElementById('automationTrainingBody');if(!body)return;
     const plan=buildPlan(false),map=wordMap(),states=stateMap();releaseDueRetries(plan,states);
-    if(window.VocabStudyCoach){const eligible=window.VocabStudyCoach.eligibleSet();const before=plan.words.length;plan.words=plan.words.filter(x=>plan.results&&plan.results[norm(x.word)]||eligible.has(norm(x.word)));if(before!==plan.words.length)savePlan(plan)}
     const done=plan.results||{};
     refreshMeta();
     let html='<div class="autoIntro"><b>每天只练真正需要自动化的词。</b><span>新学词默认是“待稳定”，不是“已掌握”。快速练习答错、模糊/不会、弱项、到期验证都会提高优先级；同一天的计划不会因为普通刷新而乱变。</span><button class="secondary" type="button" id="autoRebuildPlan">更新今日训练</button></div>';
@@ -330,7 +331,7 @@
     if(stage===1)renderStage1(task,item.word,item,st);else if(stage===2)renderStage2(task,item.word,item,st);else if(stage===3)renderStage3(task,item.word,item,st);else renderStage4(task,item.word,item,st);
     return true;
   }
-  function dueCount(){const p=loadPlan();if(p.date===today()&&Array.isArray(p.words)){const states=stateMap();releaseDueRetries(p,states);const eligible=window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet():null;return p.words.filter(x=>!(p.results||{})[norm(x.word)]&&(!eligible||eligible.has(norm(x.word)))).length;}return Math.min(MAX_DAILY,candidateList().length);}
+  function dueCount(){if(window.VocabStudyCoach)return window.VocabStudyCoach.assigned('auto').length;const p=loadPlan();if(p.date===today()&&Array.isArray(p.words)){const states=stateMap();releaseDueRetries(p,states);return p.words.filter(x=>!(p.results||{})[norm(x.word)]).length;}return Math.min(MAX_DAILY,candidateList().length);}
   function refreshTag(){const tag=document.getElementById('automationTag');if(tag){const n=dueCount();tag.textContent=n?n+' 个待训练':'暂无到期词';}}
   function open(){ensurePage();if(typeof window.go==='function')window.go('automationTraining');render();}
   function rebuildPlan(){buildPlan(true);render();refreshTag();}
