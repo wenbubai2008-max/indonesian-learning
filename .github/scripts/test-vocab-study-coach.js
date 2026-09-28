@@ -1,117 +1,98 @@
 'use strict';
-const fs=require('fs'),vm=require('vm'),assert=require('assert/strict'),path=require('path');
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict'),path=require('path');
 const script=fs.readFileSync(path.resolve(__dirname,'../../data/vocab-study-coach.js'),'utf8');
-const data=new Map(),events=new Map();
-const root={
- DAILY_VOCAB_DB:[{word:'mendukung',cn:'支持'},{word:'niat',cn:'意图'},{word:'tunda',cn:'推迟'}],
- localStorage:{getItem(k){return data.has(k)?data.get(k):null},setItem(k,v){data.set(k,String(v))}},
- addEventListener(k,fn){const list=events.get(k)||[];list.push(fn);events.set(k,list)},
- dispatchEvent(e){(events.get(e.type)||[]).forEach(fn=>fn(e));return true},
- WeaknessPool:{focusMap(){return {mendukung:{word:'mendukung',reasons:['quick_wrong']},niat:{word:'niat',reasons:['listening_wrong']}}}},
- VocabProfileEvidence:{records(){return []},summarize(){return {words:[]}}}
-};
-const CustomEvent=function(type,opts){this.type=type;this.detail=opts&&opts.detail};
-vm.runInNewContext(script,{window:root,CustomEvent,Date,Map,Set,Object,String,Number,Array,Intl}, {filename:'vocab-study-coach.js'});
-const coach=root.VocabStudyCoach;
-const now=Date.parse('2026-09-28T10:00:00Z');
-assert.deepEqual(Array.from(coach.plan(now).map(x=>x.word)),['niat','mendukung'],'Rank weak listening and active failures before unrelated taught words');
-assert.equal(coach.plan(now).length,2,'Never pad the queue with unqualified words');
-assert.deepEqual(Array.from(coach.assigned('listen',now).map(x=>x.word)),['niat']);
-assert.deepEqual(Array.from(coach.assigned('auto',now).map(x=>x.word)),['mendukung']);
-assert.equal(coach.assigned('quick',now).length,0,'The generic quick module must not invent a separate random queue');
-assert.deepEqual(Array.from(coach.quickSupplement(now).map(x=>x.word)),['tunda'],'Quick practice remains available from unassigned, formally taught due words even if priority assigns zero quick tasks');
-assert.deepEqual(Array.from(coach.quickSupplement(now).map(x=>x.word)),['tunda'],'Optional quick batch stays fixed on refresh');
-assert.equal(coach.dailyProgress(now).total,2,'Optional quick choices do not create a ninth priority task');
-const beforeOptionalRecords=root.VocabProfileEvidence.records;
-root.VocabProfileEvidence.records=()=>[{id:'optional-tunda',word:'tunda',source:'quick',at:new Date(now+60000).toISOString(),result:'right',stage:0}];
-root.dispatchEvent(new CustomEvent('vocab-profile-evidence-updated',{detail:{word:'tunda'}}));
-assert.equal(coach.dailyProgress(now+60000).done,0,'An optional answer cannot falsely complete one of the assigned priority tasks');
-assert.equal(coach.quickSupplement(now+60000).length,0,'Optional answer enters shared cooldown instead of instant refill');
-root.VocabProfileEvidence.records=beforeOptionalRecords;
-assert.equal(coach.dailyProgress(now).total,2);
-assert.equal(coach.detail('niat',now).mode,'listen');
-assert.equal(coach.detail('mendukung',now).mode,'auto');
-assert.equal(coach.detail('not-taught',now),null);
-data.set('indo_quick_practice_state',JSON.stringify({mendukung:{last:now-30*60*1000,last_result:'wrong',wrong:2,streak:0}}));
-root.VocabProfileEvidence.records=()=>[{word:'mendukung',source:'quick',at:new Date(now-30*60*1000).toISOString(),result:'wrong',id:'q1',stage:0}];
-assert.equal(coach.eligible('mendukung',now),false,'Wrong answer gets a real cross-module cooling period');
-assert.equal(coach.eligible('mendukung',now+3*3600000),true);
-assert.equal(coach.plan(now).some(x=>x.word==='mendukung'),false,'Recently answered word must not be repeated in today queue immediately');
-const recent=root.VocabProfileEvidence.records;
-root.VocabProfileEvidence.records=()=>recent().concat([{id:'niat-done',word:'niat',source:'listen',at:new Date(now+60000).toISOString(),result:'wrong',stage:0}]);
-root.dispatchEvent(new CustomEvent('vocab-profile-evidence-updated',{detail:{word:'niat'}}));
-assert.equal(coach.dailyProgress(now+60000).done,1,'An actual answer closes a task for that day');
-assert.equal(coach.assigned('listen',now+60000).length,0,'Completed listening task cannot reappear in another generic draw');
-root.VocabProfileEvidence.records=recent;
-assert.equal(coach.requestVerification('not-taught',now),false);
-assert.equal(coach.requestVerification('tunda',now),true);
-assert.equal(coach.quickSupplement(now).length,0,'Reserved delayed-verification words must not leak into self-directed quick choices');
-assert.equal(coach.eligible('tunda',now),false,'User-marked known must not be auto-mastered or immediately tested');
-const due=coach.detail('tunda',now+86400000);
-assert.equal(due.ready,true);assert.equal(due.requested,true);assert.equal(due.stage,1);
-const prev=root.VocabProfileEvidence.records;
-root.VocabProfileEvidence.records=()=>prev().concat([{id:'q-tunda',word:'tunda',source:'quick',at:new Date(now+3600000).toISOString(),result:'right',stage:0}]);
-assert.equal(coach.detail('tunda',now+86400000).requested,true,'Quick recognition cannot silently cancel a pending active verification');
-root.VocabProfileEvidence.records=prev;
-data.set('indo_listen_stats_v1',JSON.stringify({niat:{last_at:new Date(now-5*60000).toISOString(),last_result:'wrong',wrong_streak:2}}));
-assert.equal(coach.eligible('niat',now),false,'Existing listening timestamps protect cooldown without forging older events');
-root.dispatchEvent(new CustomEvent('automation-training-updated',{detail:{word:'tunda',state:{last_at:now+3600000}}}));
-assert.equal(coach.detail('tunda',now+86400000).requested,true,'An early or unverified attempt must not cancel the next-day verification');
-assert.ok(coach.plan(now+86400000).some(x=>x.word==='tunda'),'Next-day reservation enters the unified queue at its due time');
-root.dispatchEvent(new CustomEvent('automation-training-updated',{detail:{word:'tunda',state:{last_at:now+86400000}}}));
-assert.equal(coach.detail('tunda',now+86400000).requested,false,'A real due-time attempt clears its verification request');
-
-// Fairness: with six equally weak and due words, no group should monopolize all three active slots forever.
-const rotationStore=new Map();
-const rotationWords=['alpha','bravo','charlie','delta','echo','foxtrot'];
-const rotationRoot={
- DAILY_VOCAB_DB:rotationWords.map(word=>({word,cn:word})),
- localStorage:{getItem(k){return rotationStore.has(k)?rotationStore.get(k):null},setItem(k,v){rotationStore.set(k,String(v))}},
- addEventListener(){},dispatchEvent(){return true},
- WeaknessPool:{focusMap(){return Object.fromEntries(rotationWords.map(word=>[word,{word,reasons:['dont']}]))}},
- VocabProfileEvidence:{records(){return []},summarize(){return {words:[]}}}
-};
-vm.runInNewContext(script,{window:rotationRoot,CustomEvent,Date,Map,Set,Object,String,Number,Array,Intl},{filename:'vocab-study-coach-rotation.js'});
-const rotation=rotationRoot.VocabStudyCoach,start=Date.parse('2026-10-06T10:00:00Z');
-const first=Array.from(rotation.plan(start).map(x=>x.word));
-assert.equal(first.length,3,'Daily active cap stays in place');
-assert.deepEqual(Array.from(rotation.plan(start+3600000).map(x=>x.word)),first,'Same-day refresh does not reshuffle');
-const second=Array.from(rotation.plan(start+86400000).map(x=>x.word));
-assert.equal(second.length,3);
-assert.equal(second.some(word=>first.includes(word)),false,'Next day must give previously unserved eligible weak words a chance');
-assert.ok(rotationStore.has('indo_vocab_coach_rotation_v1'),'Selection history persists independently of one daily plan');
-assert.equal(rotation.requestVerification(first[0],start+86400000),true);
-assert.equal(rotation.detail(first[0],start+86400000).ready,false,'Self-mark only reserves next-day verification');
-assert.ok(rotation.plan(start+2*86400000).some(x=>x.word===first[0]),'Delayed verification overrides normal rotation penalty');
-
-// All three entrypoints remain usable when priority tasks are mostly automatic.
-// Optional pools are fixed for the day, mutually exclusive, and never change priority counts.
-const tripleStore=new Map(),tripleWords=Array.from({length:25},(_,i)=>'word'+String(i).padStart(2,'0'));
-const tripleRoot={
- DAILY_VOCAB_DB:tripleWords.map(word=>({word,cn:word})),
- localStorage:{getItem(k){return tripleStore.get(k)||null},setItem(k,v){tripleStore.set(k,String(v))}},
- addEventListener(){},dispatchEvent(){return true},
- WeaknessPool:{focusMap(){return Object.fromEntries(tripleWords.slice(0,3).map(word=>[word,{word,reasons:['automation_fail']}]))},
-  listMastered(){return [{word:tripleWords[24]}]}},
- VocabProfileEvidence:{records(){return []},summarize(){return {words:[]}}}
-};
-vm.runInNewContext(script,{window:tripleRoot,CustomEvent,Date,Map,Set,Object,String,Number,Array,Intl},{filename:'vocab-study-coach-three-modes.js'});
-const triple=tripleRoot.VocabStudyCoach,threeDay=Date.parse('2026-09-28T10:00:00Z');
-const priorityWords=Array.from(triple.plan(threeDay).map(x=>x.word));
-const quickWords=Array.from(triple.supplement('quick',threeDay,10).map(x=>x.word));
-const listenWords=Array.from(triple.supplement('listen',threeDay,5).map(x=>x.word));
-const autoWords=Array.from(triple.supplement('auto',threeDay,3).map(x=>x.word));
-assert.equal(priorityWords.length,3);
-assert.equal(quickWords.length,10);
-assert.equal(listenWords.length,5);
-assert.equal(autoWords.length,3);
-const allThree=[...priorityWords,...quickWords,...listenWords,...autoWords];
-assert.equal(new Set(allThree).size,allThree.length,'No word belongs to more than one daily queue');
-assert.ok(!allThree.includes(tripleWords[24]),'Mastered source status excludes optional words');
-assert.deepEqual(Array.from(triple.supplement('listen',threeDay+60000).map(x=>x.word)),listenWords,'Daily optional plan stays stable when reopened');
-assert.equal(triple.dailyProgress(threeDay).total,3,'Optional entrypoints never enlarge priority task count');
-tripleStore.set('indo_listen_stats_v1',JSON.stringify({[listenWords[0]]:{last_at:new Date(threeDay+60000).toISOString(),last_result:'correct'}}));
-assert.ok(!triple.supplement('listen',threeDay+60000).some(x=>x.word===listenWords[0]),'Answered optional listening word cannot reappear after refresh');
-
-assert.equal(data.has('data/daily-vocab-data.js'),false,'Scheduling must not mutate lesson data');
-console.log('Study coach tests passed: all three optional queues stay usable and disjoint, no mastery leakage, no extra priority tasks, cooldown and multi-day rotation.');
+const CustomEvent=function(type,o){this.type=type;this.detail=o&&o.detail};
+function app(words,mastered=[]){
+  const store=new Map(),handlers=new Map(),root={
+    DAILY_VOCAB_DB:words.map(word=>({word,cn:word})),
+    localStorage:{getItem:k=>store.has(k)?store.get(k):null,setItem:(k,v)=>store.set(k,String(v))},
+    addEventListener(k,fn){const a=handlers.get(k)||[];a.push(fn);handlers.set(k,a)},
+    dispatchEvent(e){(handlers.get(e.type)||[]).forEach(fn=>fn(e));return true},
+    WeaknessPool:{listMastered:()=>mastered,focusMap:()=>({})},
+    VocabProfileEvidence:{records:()=>[],summarize:()=>({words:[]})}
+  };
+  vm.runInNewContext(script,{window:root,CustomEvent,Date,Map,Set,Object,String,Number,Array,Intl},{filename:'vocab-study-coach.js'});
+  const coach=root.VocabStudyCoach;
+  const read=k=>JSON.parse(store.get(k)||'{}'),write=(k,x)=>store.set(k,JSON.stringify(x));
+  const quick=(word,ok,now)=>{
+    const m=read('indo_quick_practice_state'),p=m[word]||{};
+    p.last=now;p.last_result=ok?'right':'wrong';p.streak=ok?(p.streak||0)+1:0;
+    if(!ok)p.last_wrong=now;
+    m[word]=p;write('indo_quick_practice_state',m);
+    coach.markAnswer('quick',word,ok,now);
+  };
+  const listen=(word,quality,now)=>{
+    const m=read('indo_listen_stats_v1'),p=m[word]||{};
+    p.last_at=new Date(now).toISOString();p.last_result=quality==='wrong'?'wrong':'correct';
+    m[word]=p;write('indo_listen_stats_v1',m);
+    coach.markAnswer('listen',word,quality!=='wrong',now,quality);
+  };
+  return {root,coach,store,read,write,quick,listen};
+}
+const H=3600000,D=24*H,start=Date.parse('2026-09-28T10:00:00Z');
+const x=app(['tunda','niat','mendukung']),c=x.coach;
+assert.equal(c.words().length,3,'Only formally taught words are eligible');
+assert.equal(c.detail('not-taught'),null);
+assert.ok(c.candidates('quick',start).some(r=>r.word==='tunda'));
+assert.ok(c.candidates('listen',start).some(r=>r.word==='tunda'));
+assert.ok(c.candidates('auto',start).some(r=>r.word==='tunda'),'One word can appear in all three capability queues');
+assert.equal(c.statistics('quick',start).unverified,3);
+c.dailyProgress(start);
+const first=c.round('quick',start,false,2).map(r=>r.word);
+assert.deepEqual(Array.from(c.round('quick',start,false,2).map(r=>r.word)),first,'Refresh preserves unanswered round');
+x.quick(first[0],true,start);
+assert.equal(c.statistics('quick',start).today,1);
+assert.equal(c.statistics('listen',start).today,0,'Visual answer cannot complete listening');
+assert.ok(c.eligible(first[0],start,'listen'));
+assert.ok(c.eligible(first[0],start,'auto'));
+assert.deepEqual(Array.from(c.round('quick',start,false,2).map(r=>r.word)),[first[1]],'Refresh resumes pending card');
+x.quick(first[1],true,start);
+assert.equal(c.round('quick',start,false,2).length,0,'Completed round waits for explicit next batch');
+assert.equal(c.round('quick',start,true,2).length,1,'Next batch pulls another eligible due word');
+assert.equal(c.dailyProgress(start).done,2,'Each actual priority answer counts per mode and word, not mastery');
+const word=first[0];
+assert.equal(c.status('quick',word,start).level,1);
+assert.equal(c.status('quick',word,start+2*D-1000).ready,false);
+x.quick(word,true,start+2*D);
+assert.equal(c.status('quick',word,start+2*D).level,2);
+assert.equal(c.status('quick',word,start+9*D-1000).ready,false);
+x.quick(word,true,start+9*D);
+assert.equal(c.status('quick',word,start+9*D).level,3);
+assert.equal(c.status('quick',word,start+9*D).stable,true);
+assert.equal(c.status('quick',word,start+10*D).ready,false,'Graduated recognition leaves daily quick work for 30 days');
+assert.ok(c.eligible(word,start+10*D,'listen'),'Visual graduation never suppresses auditory verification');
+x.quick(word,false,start+39*D);
+assert.equal(c.status('quick',word,start+39*D).level,0,'A genuine mistake reopens visual review without rewriting other skills');
+assert.equal(c.status('quick',word,start+40*D).ready,true,'Wrong recognition reappears next day');
+x.listen('tunda','fast_first',start);
+x.listen('tunda','fast_first',start+2*D);
+x.listen('tunda','fast_first',start+9*D);
+assert.equal(c.status('listen','tunda',start+9*D).stable,true);
+assert.equal(c.status('quick','tunda',start+9*D).level,0,'Auditory success cannot graduate visual recognition');
+const y=app(['tunda','niat']);const yc=y.coach;
+y.write('indo_automation_training_state_v1',{tunda:{last_at:start,next_due:start+48*H,status:'active',stage:4}});
+y.quick('tunda',false,start+H);
+assert.equal(yc.eligible('tunda',start+25*H,'auto'),false,'Quick mistake cannot override active-stage delay');
+assert.equal(yc.eligible('tunda',start+48*H,'auto'),true);
+assert.equal(yc.requestVerification('unknown',start),false);
+assert.equal(yc.requestVerification('niat',start),true);
+assert.equal(yc.status('auto','niat',start).ready,false);
+assert.equal(yc.status('auto','niat',start+D).stage,1);
+y.root.dispatchEvent(new CustomEvent('automation-training-updated',{detail:{word:'niat',state:{last_at:start+H}}}));
+assert.equal(yc.pendingSet().has('niat'),true,'Early practice does not clear requested cross-day verification');
+y.root.dispatchEvent(new CustomEvent('automation-training-updated',{detail:{word:'niat',state:{last_at:start+D}}}));
+assert.equal(yc.pendingSet().has('niat'),false);
+const backlog=app(Array.from({length:25},(_,i)=>'word'+String(i).padStart(2,'0'))),bc=backlog.coach;
+const batch=bc.round('quick',start,false,10);
+assert.equal(batch.length,10);
+batch.forEach(r=>backlog.quick(r.word,true,start));
+assert.equal(bc.statistics('quick',start).due,15);
+assert.equal(bc.round('quick',start,false,10).length,0);
+const next=bc.round('quick',start,true,10);
+assert.equal(next.length,10);
+assert.ok(next.every(r=>!batch.some(prev=>prev.word===r.word)),'No repeated same-day answer; backlog continues in bounded rounds');
+const historic=app(['prior'],[{word:'prior',last_mastered:new Date(start-5*D).toISOString()}]);
+assert.equal(historic.coach.status('quick','prior',start).stable,true,'Historical explicit mastery is respected without forging three dated choices');
+assert.equal(historic.coach.status('quick','prior',start).ready,false);
+assert.equal(historic.store.has('data/daily-vocab-data.js'),false,'Scheduler never alters lesson eligibility source');
+console.log('Study coach tests passed: independent abilities and due dates, 2/7/30-day ladder, backlog, persistent rounds, legacy mastery, requested verification.');

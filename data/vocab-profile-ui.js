@@ -23,17 +23,17 @@
   }
   function taskListHTML(rows){
     if(!rows.length)return '<div class="vpCoachEmpty">当前没有到期的重点任务。先正常上课；到时间后才会再安排，不为凑题重复出现。</div>';
-    return '<div class="vpCoachList">'+rows.map(x=>'<div class="vpCoachRow"><div><b>'+esc(x.word)+' · '+esc(x.cn)+'</b><small>'+esc(x.note)+' · '+esc(modeNames[x.mode]||'针对训练')+'</small></div><button type="button" data-coach-start="'+esc(x.word)+'">练这个</button></div>').join('')+'</div>';
+    return '<div class="vpCoachList">'+rows.map(x=>'<div class="vpCoachRow"><div><b>'+esc(x.word)+' · '+esc(x.cn)+'</b><small>'+esc(x.note)+' · '+esc(modeNames[x.mode]||'针对训练')+'</small></div><button type="button" data-coach-start="'+esc(x.word)+'" data-coach-mode="'+esc(x.mode)+'">练这个</button></div>').join('')+'</div>';
   }
-  function openCoachTask(word){
-    const api=localCoach(),item=api&&api.detail(word);
+  function openCoachTask(word,mode){
+    const api=localCoach(),item=api&&(mode?api.status(mode,word):api.detail(word));
     if(!item||!item.ready)return;
     if(item.mode==='listen'&&typeof window.openListeningWordTarget==='function')window.openListeningWordTarget(item.word);
     else if(item.mode==='quick'&&typeof window.openQuickPracticeWordV2==='function')window.openQuickPracticeWordV2(item.word);
     else if(typeof window.openAutomationTrainingWord==='function')window.openAutomationTrainingWord(item.word);
   }
   function bindCoachActions(root){
-    root.querySelectorAll('[data-coach-start]').forEach(b=>b.onclick=()=>openCoachTask(b.dataset.coachStart));
+    root.querySelectorAll('[data-coach-start]').forEach(b=>b.onclick=()=>openCoachTask(b.dataset.coachStart,b.dataset.coachMode));
     root.querySelectorAll('[data-coach-known]').forEach(b=>b.onclick=()=>{
       const api=localCoach();if(api&&api.requestVerification(b.dataset.coachKnown)){renderHomeCoach();renderDetail();}
     });
@@ -45,13 +45,13 @@
     if(!el){el=document.createElement('section');el.id='vocabCoachHome';el.className='vpCoachHome';profile.insertAdjacentElement('beforebegin',el)}
     const rows=api.plan(),progress=api.dailyProgress();
     const next=rows[0]||null,ratio=progress.total?Math.round(progress.done/progress.total*100):0;
-    el.innerHTML='<div class="vpCoachTop"><div><h3>今天最该练什么</h3><p>已完成 '+progress.done+'/'+progress.total+' · 当前到期 '+rows.length+' 个'+(progress.waiting?' · 等待验证 '+progress.waiting+' 个':'')+'</p></div><button type="button" id="vpCoachStart" '+(!next?'disabled':'')+'>开始今日训练 →</button></div><div class="vpHomeProgress" aria-label="今日任务进度"><span style="width:'+Math.max(0,Math.min(100,ratio))+'%"></span></div>'+(next?'<div class="vpHomeNext"><small>下一个建议训练 · '+esc(modeNames[next.mode]||'专项训练')+'</small><b>'+esc(next.word)+'</b><span>'+esc(next.cn)+'</span></div>':'<div class="vpHomeDone">'+(progress.waiting?'当前任务均在等待验证时间，到期后再练。':'目前没有到期任务，正常完成早晚课即可。')+'</div>')+'<button class="vpHomeMore" type="button" id="vpCoachAll">查看全部任务 →</button>';
-    el.querySelector('#vpCoachStart').onclick=()=>{if(next)openCoachTask(next.word)};
+    el.innerHTML='<div class="vpCoachTop"><div><h3>今天最该练什么</h3><p>已作答 '+progress.done+'/'+progress.total+' · 建议任务待练 '+rows.length+' 个'+(progress.waiting?' · 等待验证 '+progress.waiting+' 个':'')+'</p></div><button type="button" id="vpCoachStart" '+(!next?'disabled':'')+'>开始今日训练 →</button></div><div class="vpHomeProgress" aria-label="今日任务进度"><span style="width:'+Math.max(0,Math.min(100,ratio))+'%"></span></div>'+(next?'<div class="vpHomeNext"><small>下一个建议训练 · '+esc(modeNames[next.mode]||'专项训练')+'</small><b>'+esc(next.word)+'</b><span>'+esc(next.cn)+'</span></div>':'<div class="vpHomeDone">'+(progress.waiting?'当前任务均在等待验证时间，到期后再练。':'今日建议任务已作答；各专项仍可继续练习其他到期词。')+'</div>')+'<button class="vpHomeMore" type="button" id="vpCoachAll">查看全部任务 →</button>';
+    el.querySelector('#vpCoachStart').onclick=()=>{if(next)openCoachTask(next.word,next.mode)};
     el.querySelector('#vpCoachAll').onclick=()=>openDetail('today');
   }
   function todayHTML(){
     const api=localCoach(),rows=api?api.plan():[],progress=api?api.dailyProgress():{total:0,done:0,waiting:0};
-    return '<div class="vpSection"><h3>今日针对性任务 · 已完成 '+progress.done+'/'+progress.total+'</h3><p class="vpCoverageNote">每词只分配一种训练；今天完成的任务不会再被其他模块抽中。'+(progress.waiting?'另有 '+progress.waiting+' 个词正在等待约定的验证时间。':'')+'</p>'+taskListHTML(rows)+'</div>';
+    return '<div class="vpSection"><h3>今日针对性建议 · 已作答 '+progress.done+'/'+progress.total+'</h3><p class="vpCoverageNote">这里只推荐优先任务；三个专项独立判定到期，同一个词可接受不同能力的交叉验证。作答完成不等于已经掌握。'+(progress.waiting?'另有 '+progress.waiting+' 个词正在等待约定的验证时间。':'')+'</p>'+taskListHTML(rows)+'</div>';
   }
   function wordCandidates(){
     const api=localCoach();return new Map((api?api.words():[]).map(x=>[normWord(x.word),x]));
@@ -70,9 +70,15 @@
     if(!detail)return '<div class="vpEmpty">选择一个正式学过的词，查看下一步训练和实际记录。</div>';
     const ev=detail.events.slice(-12).reverse(),ability=detail.ability||{};
     const status=ability.forgotten?'曾通过验证，后来又遗忘':ability.active?'本机主动验证通过':ability.passive?'本机稳定识别':detail.requested?'已预约跨日确认':'继续积累证据';
+    const skillModes=[['quick','视觉识别'],['listen','听觉识别'],['auto','主动提取']];
+    const skillInfo='<div class="vpMiniStats vpSkillStats">'+skillModes.map(([m,label])=>{
+      const x=api&&api.status(m,word);if(!x)return '';
+      const state=x.last_today?'今日已作答':x.stable?'专项稳定／低频抽查':x.ready?'现在到期':x.kind==='new'?'等待首次验证':'尚未到期';
+      return '<div><b style="font-size:15px">'+esc(label)+'</b><span>'+esc(state)+'</span><small style="display:block;color:#667085;margin-top:4px">'+esc(x.due_at&&Number.isFinite(x.due_at)?jakartaTime(x.due_at):'按当前状态安排')+'</small></div>';
+    }).join('')+'</div>';
     const names={auto:'自动训练',quick:'快速练习',listen:'听词训练'};
     const resultNames={direct:'快速提取',slow:'提取较慢',right:'正确',self_checked:'本人核对表达',stable:'延迟通过',hinted:'使用提示',fail:'未能提取',wrong:'答错',fast_first:'首次听懂'};
-    return '<div class="vpSection"><h3>'+esc(detail.word)+' · '+esc(detail.cn)+'</h3><span class="vpSignal">'+esc(status)+'</span><div class="vpCoverageNote">下一次建议：'+esc(detail.due_at?jakartaTime(detail.due_at):'尚无近期作答记录')+'（雅加达） · '+esc(detail.note)+'</div><div class="vpCoachButtons"><button type="button" data-coach-start="'+esc(detail.word)+'" '+(!detail.ready?'disabled':'')+'>到期后练这个 · '+esc(modeNames[detail.mode])+'</button><button type="button" class="secondary" data-coach-known="'+esc(detail.word)+'">我会了 · 明天验证</button></div><h3 style="margin-top:15px">真实学习轨迹</h3>'+(ev.length?'<div class="vpWordTrail">'+ev.map(e=>'<div><b>'+esc(e.at.slice(0,16).replace('T',' '))+' UTC</b> · '+esc(names[e.source]||e.source)+' · '+esc(resultNames[e.result]||e.result)+'</div>').join('')+'</div>':'<div class="vpEmpty">还没有本机答题事件。正式学过不等于已经掌握，也不补造旧记录。</div>')+'</div>';
+    return '<div class="vpSection"><h3>'+esc(detail.word)+' · '+esc(detail.cn)+'</h3><span class="vpSignal">'+esc(status)+'</span><div class="vpCoverageNote">下一次建议：'+esc(Number.isFinite(detail.due_at)?jakartaTime(detail.due_at):'常规训练暂停或尚未安排')+'（雅加达） · '+esc(detail.note)+'</div><div class="vpCoachButtons"><button type="button" data-coach-start="'+esc(detail.word)+'" data-coach-mode="'+esc(detail.mode)+'" '+(!detail.ready?'disabled':'')+'>到期后练这个 · '+esc(modeNames[detail.mode])+'</button><button type="button" class="secondary" data-coach-known="'+esc(detail.word)+'">我会了 · 明天验证</button></div>'+skillInfo+'<h3 style="margin-top:15px">真实学习轨迹</h3>'+(ev.length?'<div class="vpWordTrail">'+ev.map(e=>'<div><b>'+esc(e.at.slice(0,16).replace('T',' '))+' UTC</b> · '+esc(names[e.source]||e.source)+' · '+esc(resultNames[e.result]||e.result)+'</div>').join('')+'</div>':'<div class="vpEmpty">还没有本机答题事件。正式学过不等于已经掌握，也不补造旧记录。</div>')+'</div>';
   }
   function wordsHTML(){
     return '<div class="vpSection"><h3>逐词能力档案</h3><p class="vpCoverageNote">输入单词或中文，查看真实记录、冷却时间与针对性训练。默认只列出当前任务及最近有训练记录的词。</p><input class="vpWordSearch" id="vpWordSearch" type="search" placeholder="搜索已学印尼语 / 中文" value="'+esc(wordQuery)+'"><div class="vpWordRows" id="vpSearchResults">'+wordSearchHTML(wordQuery)+'</div></div><div id="vpSelectedWord">'+wordProfileHTML(selectedWord)+'</div>';
@@ -131,7 +137,7 @@
     let box=document.getElementById('vocabProfile');
     if(!box){box=document.createElement('section');box.id='vocabProfile';box.className='vocabProfile';const hero=home.querySelector(':scope > .hero'),mods=document.getElementById('homeModules');if(hero)hero.insertAdjacentElement('afterend',box);else if(mods&&mods.parentNode)mods.parentNode.insertBefore(box,mods);else home.appendChild(box)}
     const focus=(data.focus_words||[]).slice(0,6);
-    box.innerHTML='<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">真实学习与验证状态</div></div><span class="pill">本机</span></div><div class="vpHomeNumbers"><div><span>正式学习</span><b>'+data.taught_total+'</b></div><div><span>确认掌握</span><b>'+data.confirmed_mastered+'</b></div><div><span>待强化</span><b>'+data.needs_reinforcement+'</b></div><div><span>待验证</span><b>'+data.unverified+'</b></div><div class="vpHomeNumbersLast"><span>主词库待学习</span><b>'+data.primary_eligible_new_total+'</b></div></div><button class="vpOpen" type="button" id="openVocabProfile">查看能力与逐词档案 →</button>';
+    box.innerHTML='<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">真实学习与验证状态</div></div><span class="pill">网站快照</span></div><div class="vpHomeNumbers"><div><span>正式学习</span><b>'+data.taught_total+'</b></div><div><span>确认掌握</span><b>'+data.confirmed_mastered+'</b></div><div><span>待强化</span><b>'+data.needs_reinforcement+'</b></div><div><span>待验证</span><b>'+data.unverified+'</b></div><div class="vpHomeNumbersLast"><span>主词库待学习</span><b>'+data.primary_eligible_new_total+'</b></div></div><button class="vpOpen" type="button" id="openVocabProfile">查看能力与逐词档案 →</button>';
     box.querySelector('#openVocabProfile').onclick=openDetail;
     ensureDetailPage();renderDetail();renderHomeCoach();
   }
@@ -175,10 +181,10 @@
     const focus=data.focus_words||[];if(activeWeak&&!focus.some(x=>x.word===activeWeak))activeWeak='';
     const chosen=focus.find(x=>x.word===activeWeak)||focus[0]||null;if(!activeWeak&&chosen)activeWeak=chosen.word;
     const adv=suggestions(data);
-    body.innerHTML='<div class="vpDetailHero"><div><h2>个人词汇画像</h2><p>把学习结果、训练错误和后续验证汇总成一个持续更新的词汇能力档案。</p></div><span class="pill">本机画像</span></div>'+
+    body.innerHTML='<div class="vpDetailHero"><div><h2>个人词汇画像</h2><p>把学习结果、训练错误和后续验证汇总成一个持续更新的词汇能力档案。</p></div><span class="pill">网站快照＋本机训练</span></div>'+
       '<div class="vpTabs">'+[['today','今日任务'],['overview','能力总览'],['words','逐词档案'],['trend','学习趋势'],['weak','弱词分析'],['advice','学习建议']].map(x=>'<button class="vpTab '+(activeTab===x[0]?'active':'')+'" data-vp-tab="'+x[0]+'" type="button">'+x[1]+'</button>').join('')+'</div>'+
       '<section class="vpPanel '+(activeTab==='today'?'active':'')+'" data-vp-panel="today">'+todayHTML()+'</section>'+ 
-      '<section class="vpPanel '+(activeTab==='overview'?'active':'')+'" data-vp-panel="overview"><div class="vpAbility"><div class="vpAbilityCard"><span>本机验证的主动词汇</span><b>'+active+'</b><small>必须记录无提示提取、语境补词、自我表达，并在至少两个不同日期通过延迟验证；表达环节由本人核对，系统不自动评判整句语法；不把原有 mastered 自动算入。</small></div><div class="vpAbilityCard"><span>本机稳定识别词汇</span><b>'+passive+'</b><small>选择识别或首次听音快速识别，最近一次错误后至少三次正确，覆盖两个不同日期；不与主动词汇重复统计。</small></div></div><div class="vpCoverageBox"><div class="vpCoverageHead"><b>主词库当前待学习</b><span>'+data.primary_eligible_new_total+' 个</span></div><div class="vpCoverageNote">这里显示当前仍会进入后续新词学习流程的主词库词数。</div></div><div class="vpSection"><h3>已学习词状态</h3><div class="vpMiniStats"><div><b>'+data.taught_total+'</b><span>正式学习</span></div><div><b>'+data.confirmed_mastered+'</b><span>确认掌握</span></div><div><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div><b>'+data.unverified+'</b><span>尚待验证</span></div></div></div>'+evidenceHTML()+'</section>'+
+      '<section class="vpPanel '+(activeTab==='overview'?'active':'')+'" data-vp-panel="overview"><div class="vpSection"><h3>三个专项的本机到期状态</h3><div class="vpMiniStats">'+[['quick','视觉识别'],['listen','听觉识别'],['auto','主动提取']].map(([mode,label])=>{const api=localCoach(),s=api?api.statistics(mode):null;return '<div><b>'+esc(s?s.due:'—')+'</b><span>'+esc(label)+' · 当前到期</span><small style="display:block;color:#667085">'+esc(s?'今日已练 '+s.today+' · 稳定或历史掌握 '+s.stable:'尚无记录')+'</small></div>'}).join('')+'</div><p class="vpCoverageNote">仅基于本机的逐词专项记录；不与GitHub的正式掌握总数混算。</p></div><div class="vpAbility"><div class="vpAbilityCard"><span>本机验证的主动词汇</span><b>'+active+'</b><small>必须记录无提示提取、语境补词、自我表达，并在至少两个不同日期通过延迟验证；表达环节由本人核对，系统不自动评判整句语法；不把原有 mastered 自动算入。</small></div><div class="vpAbilityCard"><span>本机稳定识别词汇</span><b>'+passive+'</b><small>选择识别或首次听音快速识别，最近一次错误后至少三次正确，覆盖两个不同日期；不与主动词汇重复统计。</small></div></div><div class="vpCoverageBox"><div class="vpCoverageHead"><b>主词库当前待学习</b><span>'+data.primary_eligible_new_total+' 个</span></div><div class="vpCoverageNote">这里显示当前仍会进入后续新词学习流程的主词库词数。</div></div><div class="vpSection"><h3>已学习词状态</h3><div class="vpMiniStats"><div><b>'+data.taught_total+'</b><span>正式学习</span></div><div><b>'+data.confirmed_mastered+'</b><span>确认掌握</span></div><div><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div><b>'+data.unverified+'</b><span>尚待验证</span></div></div></div>'+evidenceHTML()+'</section>'+
       '<section class="vpPanel '+(activeTab==='words'?'active':'')+'" data-vp-panel="words">'+wordsHTML()+'</section>'+ 
       '<section class="vpPanel '+(activeTab==='trend'?'active':'')+'" data-vp-panel="trend"><div class="vpSection"><h3>学习趋势</h3>'+trendHTML(data)+'</div><div class="vpSection"><h3>趋势原则</h3><div class="vpEmpty">只使用真实跨日快照和后续训练结果。只有后续获取到可靠的事件和日期快照，才会显示新增稳定词与遗忘变化；不会用当前总数伪造历史曲线。</div></div></section>'+
       '<section class="vpPanel '+(activeTab==='weak'?'active':'')+'" data-vp-panel="weak"><div class="vpSection"><h3>重点弱词</h3><div class="vpWeakList">'+(focus.length?focus.map(w=>'<button type="button" class="vpWeakItem '+(w.word===activeWeak?'active':'')+'" data-vp-word="'+esc(w.word)+'"><b>'+esc(w.word)+'</b><span>'+esc(w.cn||'')+'</span></button>').join(''):'<div class="vpEmpty">暂无重点弱词。</div>')+'</div><div id="vpWeakDetail">'+weakDetailHTML(chosen)+'</div></div></section>'+

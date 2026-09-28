@@ -70,11 +70,7 @@
   }
   function candidateList(){
     if(window.VocabStudyCoach){
-      const coach=window.VocabStudyCoach,priority=window.VocabStudyCoach.assigned('auto');
-      const used=new Set(priority.map(x=>norm(x.word)));
-      const optional=typeof coach.supplement==='function'?coach.supplement('auto',Date.now(),3).filter(x=>!used.has(norm(x.word))):[];
-      return priority.map(x=>({word:x.word,cn:x.cn,score:x.score,stage:x.stage,reasons:[x.note],item:x,last_seen:x.last_at||''}))
-        .concat(optional.map(x=>({word:x.word,cn:x.cn,score:x.score,stage:x.stage,reasons:['自选主动训练 · 不计入今日重点任务'],item:x,last_seen:x.last_at||''})));
+      return window.VocabStudyCoach.candidates('auto').map(x=>({word:x.word,cn:x.cn,score:x.score,stage:x.stage,reasons:[x.kind==='verification'?'预约跨日主动验证':x.kind==='stable'?'长期主动抽查':'主动提取或应用到期'],item:x,last_seen:x.last_at||''}));
     }
     const now=Date.now(),states=stateMap(),qs=quickState(),mm=memory(),wm=weakMap(),out=[];
     const eligible=window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet(now):null;
@@ -126,7 +122,7 @@
   function loadPlan(){return parse(PLAN_KEY,{});}
   function buildPlan(force){
     const d=today(),old=loadPlan();
-    if(old.date===d&&Array.isArray(old.words)&&old.words.length)return old; // Keep answered cards in the same-day plan; never erase results on refresh.
+    if(old.date===d&&Array.isArray(old.words)&&old.words.length&&(!force||old.words.some(x=>!(old.results||{})[norm(x.word)])))return old; // Only advance a fully answered round on explicit request.
     const list=candidateList().slice(0,MAX_DAILY);
     const previous=old.date===d&&old.results&&typeof old.results==='object'?old.results:{};
     const plan={date:d,generated_at:Date.now(),words:list.map(function(x){return {word:x.word,stage:x.stage,score:x.score,reasons:x.reasons};}),results:{}};
@@ -191,6 +187,7 @@
       if(stage>=3)st.stage=2;else if(stage===2)st.stage=1;else st.stage=1;
     }
     states[k]=st;saveState(states);
+    if(window.VocabStudyCoach)window.VocabStudyCoach.markAnswer('auto',word,result.ok,now);
     try{
       const wp=window.WeaknessPool;
       if(wp){
@@ -298,26 +295,26 @@
   function refreshMeta(){
     const meta=document.getElementById('automationTrainingMeta');if(!meta)return;
     const plan=loadPlan(),total=Array.isArray(plan.words)?plan.words.length:0,done=plan.results?Object.keys(plan.results).length:0;
-    meta.textContent='今日 '+done+'/'+total;
+    const stats=window.VocabStudyCoach&&window.VocabStudyCoach.statistics('auto');meta.textContent='本轮 '+done+'/'+total+(stats?' · 剩余到期 '+stats.due:'');
   }
   function render(){
     ensurePage();const body=document.getElementById('automationTrainingBody');if(!body)return;
     const plan=buildPlan(false),map=wordMap(),states=stateMap();if(!window.VocabStudyCoach)releaseDueRetries(plan,states);
     const done=plan.results||{};
     refreshMeta();
-    let html='<div class="autoIntro"><b>优先完成今日重点主动训练。</b><span>另提供最多3个已学词自选主动训练；不计入每日重点任务，不与其他专项抢词。完成的卡片会保留到当天结束。</span><button class="secondary" type="button" id="autoRebuildPlan">刷新到期状态</button></div>';
+    let html='<div class="autoIntro"><b>按主动提取能力逐词训练。</b><span>保留四阶段、跨日验证与独立到期时间；每轮最多8词，完成后可继续下一组，不与视觉和听觉训练争抢词。</span><button class="secondary" type="button" id="autoRebuildPlan">继续到期训练 →</button></div>';
     html+='<div class="autoStages"><span>1 快速主动提取</span><span>2 语境补词</span><span>3 主动表达</span><span>4 延迟验证</span></div>';
-    if(!plan.words.length){html+='<div class="empty"><b>当前没有可练的主动词。</b><div style="margin-top:8px">今日重点和自选训练均受已学资格、共享冷却与跨模块去重限制；不会拿已掌握词凑题。</div></div>';body.innerHTML=html;body.querySelector('#autoRebuildPlan').onclick=render;return;}
+    if(!plan.words.length){html+='<div class="empty"><b>当前没有可练的主动词。</b><div style="margin-top:8px">所有当前到期的主动训练已完成；未到期词仍保留原定验证日期。</div></div>';body.innerHTML=html;body.querySelector('#autoRebuildPlan').onclick=rebuildPlan;return;}
     html+='<div class="autoList">';
     plan.words.forEach(function(p,i){const item=map[norm(p.word)]||{word:p.word,cn:''};html+='<div class="autoCard" data-word="'+esc(p.word)+'" data-stage="'+p.stage+'"><div class="autoHead"><div><span class="autoNo">'+(i+1)+'</span><b>'+esc(stageName(p.stage))+'</b></div><small>'+esc(reasonText(p.reasons))+'</small></div><div class="autoTask"></div></div>';});
     html+='</div>';body.innerHTML=html;
-    body.querySelector('#autoRebuildPlan').onclick=render;
+    body.querySelector('#autoRebuildPlan').onclick=rebuildPlan;
     body.querySelectorAll('.autoCard').forEach(function(card){
       const word=card.dataset.word,stage=Number(card.dataset.stage||1),item=map[norm(word)]||{word:word,cn:''},st=states[norm(word)]||{};
       const task=card.querySelector('.autoTask');
       if(done[norm(word)]){task.innerHTML='<div class="autoDone">✓ 今天已记录，等下一次到期再验证。</div>';card.dataset.done='1';return;}
       const coach=window.VocabStudyCoach;
-      if(coach&&!coach.eligible(word)){task.innerHTML='<div class="autoDone">这个词已在其他训练中作答或进入冷却，暂不重复计分。</div>';card.dataset.done='1';return;}
+      if(coach&&!coach.eligible(word,Date.now(),'auto')){task.innerHTML='<div class="autoDone">本词主动训练尚未到期或今天已作答；不会被其他专项的成绩覆盖。</div>';card.dataset.done='1';return;}
       if(stage===1)renderStage1(task,word,item,st);else if(stage===2)renderStage2(task,word,item,st);else if(stage===3)renderStage3(task,word,item,st);else renderStage4(task,word,item,st);
     });
   }
@@ -326,9 +323,9 @@
     if(!taught.has(k))return false;
     ensurePage();if(typeof window.go==='function')window.go('automationTraining');
     const body=document.getElementById('automationTrainingBody');if(!body)return false;
-    const detail=coach?coach.detail(k):null;
+    const detail=coach?coach.status('auto',k):null;
     if(detail&&!detail.ready){
-      const when=new Date(detail.due_at).toLocaleString('zh-CN',{timeZone:'Asia/Jakarta',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
+      const when=Number.isFinite(detail.due_at)?new Date(detail.due_at).toLocaleString('zh-CN',{timeZone:'Asia/Jakarta',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'暂无普通训练安排';
       body.innerHTML='<div class="autoIntro"><b>这一个词还在冷却</b><span>下一次验证时间（雅加达）：'+esc(when)+'。不因为反复点击就增加无效复习。</span></div>';return true;
     }
     const item=wordMap()[k]||dailyWords().find(x=>norm(x.word)===k)||{word:k,cn:''};
@@ -339,7 +336,7 @@
     if(stage===1)renderStage1(task,item.word,item,st);else if(stage===2)renderStage2(task,item.word,item,st);else if(stage===3)renderStage3(task,item.word,item,st);else renderStage4(task,item.word,item,st);
     return true;
   }
-  function dueCount(){const p=loadPlan();if(p.date===today()&&Array.isArray(p.words)&&p.words.length){const coach=window.VocabStudyCoach;return p.words.filter(x=>!(p.results||{})[norm(x.word)]&&(!coach||coach.eligible(x.word))).length;}return Math.min(MAX_DAILY,candidateList().length);}
+  function dueCount(){const coach=window.VocabStudyCoach;if(coach)return coach.statistics('auto').due;const p=loadPlan();return p.date===today()&&Array.isArray(p.words)?p.words.filter(x=>!(p.results||{})[norm(x.word)]).length:Math.min(MAX_DAILY,candidateList().length);}
   function refreshTag(){const tag=document.getElementById('automationTag');if(tag){const n=dueCount();tag.textContent=n?n+' 个待训练':'暂无到期词';}}
   function open(){ensurePage();if(typeof window.go==='function')window.go('automationTraining');render();}
   function rebuildPlan(){buildPlan(true);render();refreshTag();}
@@ -353,7 +350,7 @@
   window.addEventListener('quick-practice-updated',function(){refreshTag();});
   window.addEventListener('weak-pool-changed',function(){refreshTag();});
   window.addEventListener('listening-weakness-updated',function(){
-    buildPlan(true);refreshTag();
+    refreshTag();
     const page=document.getElementById('automationTraining');
     if(page&&page.classList.contains('active'))render();
   });
