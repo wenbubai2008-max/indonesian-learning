@@ -42,15 +42,16 @@
     const home=document.getElementById('home'),profile=document.getElementById('vocabProfile'),api=localCoach();
     if(!home||!profile||!api)return;
     let el=document.getElementById('vocabCoachHome');
-    if(!el){el=document.createElement('section');el.id='vocabCoachHome';el.className='vpCoachHome';profile.insertAdjacentElement('afterend',el)}
-    const rows=api.plan(),modes={auto:0,listen:0,quick:0};rows.forEach(x=>modes[x.mode]=(modes[x.mode]||0)+1);
-    el.innerHTML='<div class="vpCoachTop"><div><h3>今天最该练什么</h3><p>本机统一调度 · 到期才出现 · 每词只占一个位置 · 约3—5分钟</p></div><button type="button" id="vpCoachAll">查看全部任务 →</button></div><div class="vpCoachIntro">当前到期：'+rows.length+' 个，其中主动提取 '+modes.auto+'、听词 '+modes.listen+'、快速识别 '+modes.quick+'。不改变早晚课的新词配额。</div>'+taskListHTML(rows.slice(0,3));
+    if(!el){el=document.createElement('section');el.id='vocabCoachHome';el.className='vpCoachHome';profile.insertAdjacentElement('beforebegin',el)}
+    const rows=api.plan(),progress=api.dailyProgress();
+    el.innerHTML='<div class="vpCoachTop"><div><h3>今天最该练什么</h3><p>每天最多8个任务，由同一份计划分配给各项训练 · 约3—5分钟</p></div><button type="button" id="vpCoachStart" '+(!rows.length?'disabled':'')+'>开始今日训练 →</button></div><div class="vpCoachIntro">今天已完成 '+progress.done+'/'+progress.total+' · 当前到期 '+rows.length+' 个'+(progress.waiting?' · 等待验证时间 '+progress.waiting+' 个':'')+'。无任务就结束，不自动补题。</div>'+taskListHTML(rows.slice(0,3))+'<button class="vpOpen" id="vpCoachAll" type="button">查看全部任务与训练记录 →</button>';
+    el.querySelector('#vpCoachStart').onclick=()=>{if(rows.length)openCoachTask(rows[0].word)};
     el.querySelector('#vpCoachAll').onclick=()=>openDetail('today');
     bindCoachActions(el);
   }
   function todayHTML(){
-    const api=localCoach(),rows=api?api.plan():[];
-    return '<div class="vpSection"><h3>今日针对性任务 · '+rows.length+' 个到期</h3><p class="vpCoverageNote">每个词只分配一种最需要的训练。做完后立即重算；没到期的词不会为了凑足数量反复出现。</p>'+taskListHTML(rows)+'</div>';
+    const api=localCoach(),rows=api?api.plan():[],progress=api?api.dailyProgress():{total:0,done:0,waiting:0};
+    return '<div class="vpSection"><h3>今日针对性任务 · 已完成 '+progress.done+'/'+progress.total+'</h3><p class="vpCoverageNote">每词只分配一种训练；今天完成的任务不会再被其他模块抽中。'+(progress.waiting?'另有 '+progress.waiting+' 个词正在等待约定的验证时间。':'')+'</p>'+taskListHTML(rows)+'</div>';
   }
   function wordCandidates(){
     const api=localCoach();return new Map((api?api.words():[]).map(x=>[normWord(x.word),x]));
@@ -123,7 +124,7 @@
     let box=document.getElementById('vocabProfile');
     if(!box){box=document.createElement('section');box.id='vocabProfile';box.className='vocabProfile';const hero=home.querySelector(':scope > .hero'),mods=document.getElementById('homeModules');if(hero)hero.insertAdjacentElement('afterend',box);else if(mods&&mods.parentNode)mods.parentNode.insertBefore(box,mods);else home.appendChild(box)}
     const focus=(data.focus_words||[]).slice(0,6);
-    box.innerHTML='<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">只统计正式学过的词，不把词库筛选或泛读路过当成掌握。</div></div><span class="pill">画像</span></div><div class="vpGrid"><div class="vpMetric"><b>'+data.taught_total+'</b><span>已正式学习</span></div><div class="vpMetric"><b>'+data.confirmed_mastered+'</b><span>已确认掌握</span></div><div class="vpMetric"><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div class="vpMetric"><b>'+data.unverified+'</b><span>尚待验证</span></div></div><div class="vpCoverageSummary"><span><b>主词库当前待学习 '+data.primary_eligible_new_total+' 个</b></span></div><div class="vpProgress"><i style="width:'+Math.max(0,Math.min(100,Number(data.mastery_percent)||0))+'%"></i></div><div class="vpFoot"><span>已学词确认掌握进度 '+data.mastery_percent+'%</span><span>待强化词 '+data.needs_reinforcement+' 个</span></div>'+(focus.length?'<div class="vpFocus"><b>当前优先：</b> '+focus.map(x=>'<span class="vpChip" title="'+esc(x.cn||'')+'">'+esc(x.word)+'</span>').join('')+'</div>':'')+'<button class="vpOpen" type="button" id="openVocabProfile">查看完整词汇画像 →</button>';
+    box.innerHTML='<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">学习进展与能力详情，真实验证后更新</div></div><span class="pill">本机</span></div><div class="vpCoverageSummary"><span>正式学习 <b>'+data.taught_total+'</b> · 已确认掌握 <b>'+data.confirmed_mastered+'</b> · 待强化 <b>'+data.needs_reinforcement+'</b> · 尚待验证 <b>'+data.unverified+'</b></span></div><div class="vpCoverageNote">主词库当前待学习 '+data.primary_eligible_new_total+' 个。不会把已学、看过、一次答对当作已掌握。</div><button class="vpOpen" type="button" id="openVocabProfile">查看能力与逐词档案 →</button>';
     box.querySelector('#openVocabProfile').onclick=openDetail;
     ensureDetailPage();renderDetail();renderHomeCoach();
   }
