@@ -84,8 +84,9 @@ try{
   ok(evidencePos>=0&&coachPos>evidencePos&&coachPos<autoPos&&coachPos<quickPos&&coachPos<listeningPos&&profileScriptPos>coachPos,'shared coach loads after evidence and before all training/profile modules');
   ok(studyCoach.includes('eligibleSet')&&studyCoach.includes('requestVerification'),'coach must share a single cooldown and delayed self-verification');
   ok(studyCoach.includes('assignedSet')&&studyCoach.includes('dailySession')&&studyCoach.includes('markTask'),'generic training must consume bounded daily assignments and persist completion');
+  ok(studyCoach.includes('indo_vocab_coach_optional_quick_v1')&&studyCoach.includes('quickSupplement')&&studyCoach.includes('assignedWords'),'optional quick practice must use a fixed daily due-word batch disjoint from priority tasks');
   ok(profileEvidence.includes('indo_vocab_profile_longterm_v1')&&profileEvidence.includes('compactSummary(longterm())'),'long-term ability must not depend on 1500 most recent events');
-  ok(automation.includes("VocabStudyCoach.assigned('auto')")&&quick.includes("VocabStudyCoach.assigned('quick')")&&listenUi.includes("assignedSet('listen')"),'all three generic modules must use the same assigned queue');
+  ok(automation.includes("VocabStudyCoach.assigned('auto')")&&quick.includes("coach.assigned('quick')")&&quick.includes('coach.quickSupplement()')&&listenUi.includes("assignedSet('listen')"),'priority training shares one queue while quick practice offers an explicitly separate optional recognition batch');
   ok(profileUi.includes('今天最该练什么')&&profileUi.includes('逐词能力档案')&&profileUi.includes('data-coach-start'),'profile must expose actionable tasks and per-word history');
   ok(profileUi.includes('vpHomeNext')&&profileUi.includes('vpHomeNumbers')&&profileUi.includes('查看全部任务 →'),'homepage must show only next recommended word and compact metrics while keeping the complete detail page');
   ok(automation.includes('openAutomationTrainingWord')&&automation.includes('autoSelfCheck'),'automation must directly train selected words and require expression self-confirmation');
