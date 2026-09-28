@@ -30,6 +30,7 @@
   }
   function weightedPool(){
     var pool=recentPool(),ps=practiceState(),mm=mem(),wp=weakPool(),active=wp?(typeof wp.focusMap==='function'?wp.focusMap():wp.activeMap()):localUnknown(),now=Date.now(),seen={};
+    var eligible=window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet(now):null;
     pool.forEach(function(x){seen[norm(x.word)]=1;});
     (window.DAILY_VOCAB_DB||[]).forEach(function(raw){
       if(!raw||!raw.word||!raw.cn)return;var k=norm(raw.word);if(!active[k]||seen[k])return;
@@ -48,18 +49,20 @@
       if((p.wrong||0)>(p.right||0))w+=3;
       if((p.streak||0)>=3&&!reasons.includes('automation_fail')&&!reasons.includes('listening_wrong')&&!reasons.includes('listening_slow'))w=Math.max(.25,w-2.5);
       return {x:x,w:w,due:due};
-    }).filter(function(a){return a.due<=now;});
+    }).filter(function(a){return a.due<=now&&(!eligible||eligible.has(norm(a.x.word)));});
   }
   function sampleWeighted(items,n){var src=items.slice(),out=[];while(src.length&&out.length<n){var total=src.reduce(function(s,a){return s+a.w;},0),r=Math.random()*total,idx=0;for(;idx<src.length;idx++){r-=src[idx].w;if(r<=0)break;}out.push(src[Math.min(idx,src.length-1)].x);src.splice(Math.min(idx,src.length-1),1);}return out;}
-  function renderQuick(){
+  function renderQuick(focusWord){
     var body=document.getElementById('quickPracticeBody');if(!body)return;
     var pool=weightedPool(),meta=document.getElementById('quickPracticeMeta');
+    var wanted=norm(focusWord),target=wanted&&taughtSet().has(wanted)?wordMap()[wanted]:null;
+    if(wanted&&(!target||window.VocabStudyCoach&&!window.VocabStudyCoach.eligible(wanted))){body.innerHTML='<div class="empty">这个词尚未到复习时间，或者不在正式学习词库中。系统不会为了凑题重复测试。</div>';return;}
     if(meta)meta.textContent='到期 '+pool.length+' 词 · 本轮最多10题';
-    if(!pool.length){
+    if(!pool.length&&!target){
       body.innerHTML='<div class="empty"><b>这会儿没有到期词。</b><div style="margin-top:8px">刚答对的词已经进入冷却期，不会因为刷新马上又出现；到时间后会再验证。</div></div>';
       return;
     }
-    var picks=sampleWeighted(pool,Math.min(10,pool.length)),all=recentPool(),html='<div class="v2-refresh"><button class="secondary" type="button" onclick="refreshQuickPracticeV2()">↻ 换一组</button></div><div class="v2-note">答对后会进入冷却：1次约6小时、连续2次约到第二天、连续3次以上约2天；答错提高优先级，但也会先隔开约15分钟再出现。</div>';
+    var picks=target?[target]:sampleWeighted(pool,Math.min(10,pool.length)),all=recentPool(),html='<div class="v2-refresh"><button class="secondary" type="button" onclick="refreshQuickPracticeV2()">↻ 换一组</button></div><div class="v2-note">'+(target?'针对指定词进行一次识别验证；完成后进入跨模块冷却。':'近期作答结果由本机统一调度，刚练过的词暂不重复抽取。')+'</div>';
     picks.forEach(function(x,i){
       var wrong=shuffle(all.filter(function(y){return norm(y.word)!==norm(x.word);})).slice(0,3).map(function(y){return y.word;}),opts=shuffle([x.word].concat(wrong));
       html+='<div class="v2-q" data-answer="'+esc(x.word)+'"><b>'+(i+1)+'. '+esc(x.cn)+'</b><div class="v2-opts">';
@@ -99,6 +102,7 @@
   function renderExtensive(){var body=document.getElementById('extensiveBody');if(!body)return;var db=window.EXTENSIVE_READING_DB||[],meta=document.getElementById('extensiveMeta');if(!db.length){body.innerHTML='<div class="empty">今日泛读正在加载。</div>';return;}readingIndex=Math.min(Math.max(readingIndex,0),db.length-1);var x=db[readingIndex];if(meta)meta.textContent=(x.date||'今日')+' · '+x.level;body.innerHTML='<div class="v2-rhead"><span class="tag">'+esc(x.category)+'</span><span class="tag">约 '+esc(x.minutes)+' 分钟</span><h3 class="rl-text v2-title">'+esc(x.title)+'</h3><div class="v2-title-cn">'+esc(x.title_cn)+'</div></div><div class="v2-note">每天只显示 1 篇今日泛读。优先选真实新闻或生活热点，再按你的 A2+→B1 水平改写；旧文章进入历史，不占当前页。</div><div class="rl-text v2-reading">'+esc(x.text).replace(/\n/g,'<br>')+'</div><div class="v2-actions"><button class="secondary" onclick=\'speak('+JSON.stringify(x.text)+')\'>🔊 朗读全文</button><button class="secondary" onclick="toggleExtensiveCnV2()">显示 / 隐藏中文</button></div><div class="v2-cn" id="extensiveCnV2">'+esc(x.cn).replace(/\n/g,'<br>')+'</div>'+(x.source_name?'<div class="muted" style="margin-top:12px">改写来源：'+esc(x.source_name)+(x.source_date?' · '+esc(x.source_date):'')+'</div>':'');}
   window.refreshQuickPracticeV2=function(){renderQuick();window.scrollTo({top:0,behavior:'smooth'});};
   window.openQuickPracticeV2=function(){setupPages();go('quickPractice');renderQuick();};
+  window.openQuickPracticeWordV2=function(word){setupPages();go('quickPractice');renderQuick(word);};
   window.openWeaknessV2=function(){setupPages();go('weakness');var body=document.getElementById('weaknessBody');if(body)body.innerHTML='<div class="loading">弱项模块加载中…</div>';};
   window.openExtensiveV2=function(){setupPages();go('extensive');renderExtensive();};
   window.toggleExtensiveCnV2=function(){var x=document.getElementById('extensiveCnV2');if(x)x.classList.toggle('show');};
