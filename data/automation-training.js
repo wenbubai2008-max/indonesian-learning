@@ -302,7 +302,7 @@
   }
   function render(){
     ensurePage();const body=document.getElementById('automationTrainingBody');if(!body)return;
-    const plan=buildPlan(false),map=wordMap(),states=stateMap();releaseDueRetries(plan,states);
+    const plan=buildPlan(false),map=wordMap(),states=stateMap();if(!window.VocabStudyCoach)releaseDueRetries(plan,states);
     const done=plan.results||{};
     refreshMeta();
     let html='<div class="autoIntro"><b>优先完成今日重点主动训练。</b><span>另提供最多3个已学词自选主动训练；不计入每日重点任务，不与其他专项抢词。完成的卡片会保留到当天结束。</span><button class="secondary" type="button" id="autoRebuildPlan">刷新到期状态</button></div>';
