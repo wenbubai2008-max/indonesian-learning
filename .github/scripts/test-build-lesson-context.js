@@ -141,4 +141,20 @@ ok('real CLI writes a matching JSON in an isolated temporary directory only when
   assert.match(cp.execFileSync(process.execPath,[command,'--check'],{cwd:tmp,encoding:'utf8'}),/LESSON_CONTEXT_CHECK/);
  }finally{fs.rmSync(tmp,{recursive:true,force:true})}
 });
+ok('both existing writer workflows update context in their own derived-data transaction',()=>{
+ const sync=fs.readFileSync(path.join(__dirname,'../workflows/sync-daily-vocab.yml'),'utf8');
+ const build=fs.readFileSync(path.join(__dirname,'../workflows/build-learning-runtime.yml'),'utf8');
+ for(const [name,workflow] of [['Sync daily vocab',sync],['Build learning runtime',build]]){
+  assert(workflow.includes('node .github/scripts/build-learning-runtime.js'),name+' does not build canonical runtime');
+  const rebuilt=workflow.indexOf('node .github/scripts/build-learning-runtime.js');
+  const context=workflow.indexOf('node .github/scripts/build-lesson-context.js --output data/lesson-context.json');
+  assert(context>rebuilt,name+' builds context before runtime');
+  assert(workflow.includes('node .github/scripts/build-lesson-context.js --check'),name+' lacks fresh context readback');
+  assert(/git add [^\\n]*data\\/learning-runtime\\.json data\\/lesson-context\\.json/.test(workflow),name+' does not commit runtime and context together');
+ }
+ assert(sync.includes('node .github/scripts/build-lesson-context.js --check > /dev/null'),'scheduled healthy check accepts stale context');
+ assert(build.includes("      - '.github/scripts/build-lesson-context.js'"),'weakness writer cannot seed a context on first merge');
+ const workflows=git('ls-files','.github/workflows').split('\\n');
+ assert.deepEqual(workflows.sort(),['.github/workflows/build-learning-runtime.yml','.github/workflows/sync-daily-vocab.yml']);
+});
 console.log('Lesson context integration tests:',JSON.stringify({passed,failed:0,main_sha:sha,target:now.target}));
