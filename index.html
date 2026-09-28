@@ -35,6 +35,7 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
 #home .homeTrainingTitle{display:flex;align-items:center;gap:12px;margin:17px 0 10px}
 #home .homeTrainingTitle h2{margin:0;font-size:19px;letter-spacing:.01em}
 #home .homeTrainingTitle:after{content:'';flex:1;height:1px;background:#e2e8f3}
+#home #vocabCoachHome{min-height:132px;margin:0 0 14px;border:1px solid #dce6fa;background:#f9fbff;border-radius:18px;padding:18px}#home #vocabCoachHome .vpCoachTop h3{margin:0 0 4px;font-size:19px}#home #vocabCoachHome .vpCoachTop p,#home #vocabCoachHome .vpCoachIntro{font-size:12px;color:#65748b;line-height:1.5}
 #home #listenQuickCard{margin-bottom:12px;border-color:#d8e4ff;background:#f8faff}
 #home #listenQuickCard:hover{border-color:#b4c8fa;background:#f3f7ff}
 @media(max-width:650px){
@@ -77,6 +78,7 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
   <section id="vocabProfile" class="vocabProfile" aria-label="个人词汇画像">
     <div class="vpPending" role="status">个人词汇画像加载中…</div>
   </section>
+  <section id="vocabCoachHome" class="vpCoachHome" aria-label="今天最该练什么"><div class="vpCoachTop"><div><h3>今天最该练什么</h3><p>本机统一调度 · 到期才出现</p></div></div><div class="vpCoachIntro">正在核对当前到期的学习任务…</div></section>
   <div class="homeTrainingTitle"><h2>专项训练</h2></div>
   <button id="listenQuickCard" type="button" onclick="openListeningWords()"><span class="listenQuickIcon">🔊</span><span class="listenQuickText"><span class="listenQuickTitle">听词</span><span class="listenQuickSub">不看拼写，只听声音判断中文意思</span></span><span class="listenQuickRight"><span id="listenQuickRate" class="listenQuickRate">只听声音 · 判断意思</span><span id="listenQuickProgress" class="listenQuickProgress">今日 0 / 10</span><span class="listenQuickArrow">→</span></span></button>
   <div class="modules" id="homeModules"></div>
