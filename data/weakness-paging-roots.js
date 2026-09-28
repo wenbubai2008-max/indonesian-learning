@@ -175,7 +175,7 @@
     const active=activeMapSnapshot(),total=remainingTotal(active),totalPages=activePageCount(active);
     if(currentPage>=totalPages)currentPage=totalPages-1;if(currentPage<0)currentPage=0;
     const visible=pageItems(currentPage,active),meta=document.getElementById('weaknessMeta');if(meta)meta.textContent=total+' 个';
-    if(!sessionWords.length||!total){body.innerHTML='<div class="v2-note">这里现在只显示两类词：快速练习答错的词，以及阅读中你主动加入的陌生词。</div><div class="empty"><b>目前没有这两类待强化词 ✓</b></div>';return;}
+    if(!sessionWords.length||!total){body.innerHTML='<div class="v2-note">本页只显示快速练习错题及阅读陌生词；预约跨日验证的词暂不重复出现。</div><div class="empty"><b>当前没有需要显示的词 ✓</b></div><div class="weakRestoreWrap"><span>如果之前手动移出了陌生词，可以恢复；已预约的词仍按原定日期验证。</span><button type="button" class="weakRestoreBtn">恢复历史移出与暂存词</button></div>';return;}
     body.innerHTML='<div class="v2-note">这里只显示快速练习错题和阅读中主动加入的陌生词，并非所有待强化词。已正式学过的词点“会了”只预约次日验证；未正式学过的词只能暂时移出，不会冒充已掌握。</div>'
       +'<div class="weakRestoreWrap"><span>预约的词暂不在本页重复出现，明天进入统一训练；暂时移出的陌生词可恢复。</span><button type="button" class="weakRestoreBtn">恢复历史移出与暂存词</button></div>'
       +navHtml(totalPages)+'<div class="v2-weak">'+visible.map(cardHtml).join('')+'</div>'+navHtml(totalPages);
