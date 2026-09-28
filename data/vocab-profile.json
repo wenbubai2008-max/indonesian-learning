@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-09-28T07:11:10.659Z",
-  "source_updated_at": "2026-09-28T07:07:23.585Z",
+  "generated_at": "2026-09-28T09:21:13.529Z",
+  "source_updated_at": "2026-09-28T09:18:02.599Z",
   "taught_total": 555,
   "confirmed_mastered": 168,
   "needs_reinforcement": 254,
@@ -41,6 +41,19 @@
       "cn": "打算；意图；认真想做的心意"
     },
     {
+      "word": "mengeluh",
+      "score": 118,
+      "signals": [
+        "automation_fail",
+        "quick_wrong",
+        "dont"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-09-28T09:17:16.003Z",
+      "last_review": "2026-09-28T09:17:16.003Z",
+      "cn": "抱怨"
+    },
+    {
       "word": "seraya",
       "score": 116,
       "signals": [
@@ -50,7 +63,7 @@
       ],
       "wrong_count": 1,
       "last_wrong": "2026-09-27T13:59:29.228Z",
-      "last_review": "2026-09-27T13:59:29.228Z",
+      "last_review": "2026-09-28T09:17:52.346Z",
       "cn": "同时；一边……一边……"
     },
     {
@@ -63,21 +76,8 @@
       ],
       "wrong_count": 1,
       "last_wrong": "2026-09-27T13:57:54.512Z",
-      "last_review": "2026-09-27T13:57:54.512Z",
+      "last_review": "2026-09-28T09:17:23.902Z",
       "cn": "复制"
-    },
-    {
-      "word": "mengeluh",
-      "score": 116,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-25T15:06:01.494Z",
-      "last_review": "2026-09-25T15:06:01.494Z",
-      "cn": "抱怨"
     },
     {
       "word": "kabur",
@@ -89,7 +89,7 @@
       ],
       "wrong_count": 1,
       "last_wrong": "2026-09-25T15:02:05.313Z",
-      "last_review": "2026-09-27T13:59:10.511Z",
+      "last_review": "2026-09-28T09:16:59.728Z",
       "cn": "逃跑；溜走"
     },
     {
@@ -115,7 +115,7 @@
       ],
       "wrong_count": 1,
       "last_wrong": "2026-09-16T07:55:56.953Z",
-      "last_review": "2026-09-22T08:17:05.155Z",
+      "last_review": "2026-09-28T09:16:56.118Z",
       "cn": "值得；合适；够资格"
     }
   ],
