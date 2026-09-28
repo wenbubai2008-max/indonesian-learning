@@ -8406,9 +8406,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-28 08:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -8417,14 +8417,16 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-10",
       "2026-09-17",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-28"
     ],
     "example": "Kalau semua datang bersamaan, tim bisa kelabakan.",
     "example_cn": "如果所有事情同时来，团队可能会手忙脚乱。",
     "lesson_occurrences": [
       "2026-09-10 19:00",
       "2026-09-17 18:00",
-      "2026-09-18 08:00"
+      "2026-09-18 08:00",
+      "2026-09-28 08:00"
     ]
   },
   {
@@ -8490,9 +8492,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-21 18:00",
+    "last_seen": "2026-09-28 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -8501,7 +8503,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-11",
       "2026-09-19",
       "2026-09-20",
-      "2026-09-21"
+      "2026-09-21",
+      "2026-09-28"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
@@ -8509,7 +8512,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-19 18:00",
       "2026-09-20 08:00",
       "2026-09-21 08:00",
-      "2026-09-21 18:00"
+      "2026-09-21 18:00",
+      "2026-09-28 08:00"
     ]
   },
   {
@@ -8921,9 +8925,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-21 18:00",
+    "last_seen": "2026-09-28 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -8933,7 +8937,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-18",
       "2026-09-19",
       "2026-09-20",
-      "2026-09-21"
+      "2026-09-21",
+      "2026-09-28"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
@@ -8941,7 +8946,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-19 08:00",
       "2026-09-20 08:00",
       "2026-09-21 08:00",
-      "2026-09-21 18:00"
+      "2026-09-21 18:00",
+      "2026-09-28 08:00"
     ]
   },
   {
@@ -11509,21 +11515,25 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "我要强调，时间安排还没变。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-19 18:00",
-    "last_seen": "2026-09-26 18:00",
+    "last_seen": "2026-09-28 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-19",
-      "2026-09-26"
+      "2026-09-26",
+      "2026-09-28"
     ],
     "lesson_occurrences": [
       "2026-09-19 18:00",
-      "2026-09-26 18:00"
+      "2026-09-26 18:00",
+      "2026-09-28 08:00"
     ]
   },
   {
@@ -12331,17 +12341,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-23 08:00",
+    "last_seen": "2026-09-28 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-23"
+      "2026-09-23",
+      "2026-09-28"
     ],
     "lesson_occurrences": [
-      "2026-09-23 08:00"
+      "2026-09-23 08:00",
+      "2026-09-28 08:00"
     ]
   },
   {
@@ -14362,6 +14374,258 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-09-27 18:00"
+    ]
+  },
+  {
+    "word": "becek",
+    "cn": "泥泞的；湿漉漉的",
+    "en": "muddy; slushy",
+    "root": "becek",
+    "root_cn": "泥泞",
+    "example": "Jalannya becek setelah hujan.",
+    "example_cn": "下雨后路很泥泞。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 08:00"
+    ]
+  },
+  {
+    "word": "unggah",
+    "cn": "上传",
+    "en": "upload",
+    "root": "unggah",
+    "root_cn": "上传",
+    "example": "Tolong unggah file ini ke sistem.",
+    "example_cn": "请把这个文件上传到系统。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 08:00"
+    ]
+  },
+  {
+    "word": "pelayanan",
+    "cn": "服务；服务质量",
+    "en": "service",
+    "root": "layan",
+    "root_cn": "服务；招待",
+    "example": "Pelayanan di toko itu cukup cepat.",
+    "example_cn": "那家店的服务挺快。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 08:00"
+    ]
+  },
+  {
+    "word": "sia-sia",
+    "cn": "白费；徒劳",
+    "en": "in vain; useless",
+    "root": "sia",
+    "root_cn": "徒然（用于固定重叠词）",
+    "example": "Jangan buang waktu sia-sia.",
+    "example_cn": "别白白浪费时间。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 08:00"
+    ]
+  },
+  {
+    "word": "ribut",
+    "cn": "吵闹；争吵",
+    "en": "noisy; quarrel",
+    "root": "ribut",
+    "root_cn": "吵闹；争吵",
+    "example": "Mereka ribut soal jadwal kerja.",
+    "example_cn": "他们因为工作安排吵了起来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 08:00"
+    ]
+  },
+  {
+    "word": "sombong",
+    "cn": "傲慢的；自大的",
+    "en": "arrogant",
+    "root": "sombong",
+    "root_cn": "傲慢",
+    "example": "Dia pintar, tapi tidak sombong.",
+    "example_cn": "他很聪明，但并不傲慢。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 08:00"
+    ]
+  },
+  {
+    "word": "wangi",
+    "cn": "香的；香味好闻",
+    "en": "fragrant",
+    "root": "wangi",
+    "root_cn": "香",
+    "example": "Kopinya wangi sekali.",
+    "example_cn": "这咖啡特别香。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 08:00"
+    ]
+  },
+  {
+    "word": "pingsan",
+    "cn": "晕倒；昏厥",
+    "en": "faint",
+    "root": "pingsan",
+    "root_cn": "昏厥",
+    "example": "Dia hampir pingsan karena terlalu lelah.",
+    "example_cn": "他因为太累差点晕倒。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 08:00"
+    ]
+  },
+  {
+    "word": "mikir",
+    "cn": "想；思考（口语）",
+    "en": "think (colloquial)",
+    "root": "pikir",
+    "root_cn": "想；思考",
+    "example": "Aku lagi mikir cara yang paling praktis.",
+    "example_cn": "我正在想最实用的办法。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 08:00"
+    ]
+  },
+  {
+    "word": "curhat",
+    "cn": "倾诉；诉苦；聊心事",
+    "en": "confide; vent",
+    "root": "curhat",
+    "root_cn": "倾诉（curahan hati的口语缩略）",
+    "example": "Kalau capek, kamu boleh curhat sama aku.",
+    "example_cn": "如果累了，你可以跟我倾诉。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-28"
+    ],
+    "lesson_occurrences": [
+      "2026-09-28 08:00"
     ]
   }
 ];
