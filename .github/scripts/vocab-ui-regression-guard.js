@@ -57,6 +57,7 @@ try{
   ok(index.includes('onclick="openListeningWords()"')&&index.includes('onclick="openQuickPracticeV2()"')&&index.includes('onclick="openAutomationTraining()"'),'all three shortcut cards must open the existing training modules');
   ok(index.includes('#home #homeModules>.module[data-home-module="quick"],#home #homeModules>.module[data-home-module="automation"]{display:none!important}'),'old duplicate quick/automation tool cards must stay hidden at first paint');
   ok((index.match(/id="listenQuickCard"/g)||[]).length===1,'listening shortcut must have one live-card container');
+  ok(index.includes('#home .homeShortcuts>#listenQuickCard{margin:0;height:100%}'),'listening card must cancel legacy bottom margin and align with adjacent shortcuts at first paint');
 
   ok(!index.includes('A2+ → B1 · 雅加达真实口语优先 · 你的个人词库'),'retired homepage subtitle must stay removed');
   ok(!index.includes('每天 08:00 / 18:00 自动生成到网站。学完后只点一次'),'retired homepage lesson instructions must stay removed');
