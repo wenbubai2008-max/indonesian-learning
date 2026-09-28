@@ -23,14 +23,14 @@
     }catch(e){return {}}
   }
   function inputs(){
-    return {items:taught(),ev:evidence(),weak:weak(),quick:read('indo_quick_practice_state',{}),auto:read('indo_automation_training_state_v1',{}),listen:read('indo_listen_stats_v1',{}),requests:known(),memory:read('indo_mem',{}),abilities:root.VocabProfileEvidence?root.VocabProfileEvidence.summarize().words:[]};
+    return {items:taught(),ev:evidence(),weak:weak(),quick:read('indo_quick_practice_state',{}),auto:read('indo_automation_training_state_v1',{}),listen:read('indo_listen_stats_v1',{}),requests:known(),memory:read('indo_mem',{}),abilities:new Map((root.VocabProfileEvidence?root.VocabProfileEvidence.summarize().words:[]).map(x=>[norm(x.word),x]))};
   }
   function describe(word,source,now){
     const k=norm(word),item=source.items.get(k);
     if(!item)return null;
     const ev=source.ev.get(k)||[],last=ev[ev.length-1]||null,req=source.requests[k]||null,st=source.auto[k]||{},q=source.quick[k]||{},l=source.listen[k]||{};
     const w=source.weak[k]||null,reason=w&&Array.isArray(w.reasons)?w.reasons:[];
-    const ability=source.abilities.find(x=>norm(x.word)===k)||null;
+    const ability=source.abilities.get(k)||null;
     const lastAt=last?time(last.at):0,requestedAt=req?time(req.requested_at):0;
     let due=0;
     if(last){
@@ -41,7 +41,7 @@
       }else if(last.source==='quick')due=lastAt+(last.result==='wrong'?3*HOUR:6*HOUR);
       else due=lastAt+(last.result==='wrong'?3*HOUR:last.result==='slow'?5*HOUR:8*HOUR);
     }
-    if(req&&requestedAt>=lastAt)due=Math.max(due,Number(req.due_at)||requestedAt+DAY);
+    if(req&&requestedAt>=lastAt)due=Number(req.due_at)||requestedAt+DAY;
     const requested=!!req&&requestedAt>=lastAt;
     const errors=Number(q.wrong||0)+Number(st.failures||0);
     const listeningProblem=reason.includes('listening_wrong')||reason.includes('listening_slow')||l.last_result==='wrong'&&Number(l.wrong_streak||0)>=2;
@@ -71,6 +71,9 @@
     return out.slice(0,max);
   }
   function detail(word,now=Date.now()){return describe(word,inputs(),now)}
+  function eligibleSet(now=Date.now()){
+    const src=inputs(),out=new Set();src.items.forEach((_,k)=>{const x=describe(k,src,now);if(x&&x.ready&&!x.stable)out.add(k)});return out;
+  }
   function eligible(word,now=Date.now()){
     const x=detail(word,now);return !!x&&x.ready&&!x.stable;
   }
@@ -87,7 +90,7 @@
     delete entries[k];
     try{root.localStorage.setItem(KNOWN_KEY,JSON.stringify(entries))}catch(e){}
   }
-  root.VocabStudyCoach={plan,detail,eligible,requestVerification,clearRequest};
+  root.VocabStudyCoach={plan,detail,eligible,eligibleSet,requestVerification,clearRequest};
   root.addEventListener('automation-training-updated',e=>{const word=e&&e.detail&&e.detail.word;if(word)clearRequest(word);root.dispatchEvent(new CustomEvent('vocab-coach-updated',{detail:{word}}))});
   root.addEventListener('vocab-profile-evidence-updated',e=>root.dispatchEvent(new CustomEvent('vocab-coach-updated',{detail:e.detail})));
 })(window);
