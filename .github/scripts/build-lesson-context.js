@@ -78,7 +78,7 @@ function buildLessonContext({index,runtime,rules,load,sourceSha=''}) {
  const fullHistory=collectReviewHistory(index,targetDate,targetSession,p=>load(p));
  const history=fullHistory.map(h=>{
    requireIt(h&&dateOK(h.date)&&['am','pm'].includes(h.session),'HISTORY_INVALID','Completed history identity invalid');
-   const core=h.session==='am'?words(h.review_vocab):words((h.vocab||[]).filter(v=>v?.source_group==='review'));
+   const core=h.session==='am'?words(h.review_vocab):words((h.vocab||[]).filter(v=>v?.source_group==='review').map(v=>v.word));
    const taught=h.session==='am'?words((h.vocab||[]).map(v=>v?.word)):words(h.new_words);
    requireIt(core.length>=0&&taught.length>0,'HISTORY_INVALID','Missing completed lesson vocabulary');
    return {date:h.date,session:h.session,review_core:core,new_words:taught};
