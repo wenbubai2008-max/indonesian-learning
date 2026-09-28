@@ -39,7 +39,7 @@ assert.ok(c.candidates('auto',start).some(r=>r.word==='tunda'),'One word can app
 assert.equal(c.statistics('quick',start).unverified,3);
 c.dailyProgress(start);
 const first=c.round('quick',start,false,2).map(r=>r.word);
-assert.deepEqual(Array.from(c.round('quick',start,false,2).map(r=>r.word)),first,'Refresh preserves unanswered round');
+assert.deepEqual([...c.round('quick',start,false,2)].map(r=>r.word),first,'Refresh preserves unanswered round');
 x.quick(first[0],true,start);
 assert.equal(c.statistics('quick',start).today,1);
 assert.equal(c.statistics('listen',start).today,0,'Visual answer cannot complete listening');
