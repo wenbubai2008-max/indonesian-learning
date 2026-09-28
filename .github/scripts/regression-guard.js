@@ -440,7 +440,18 @@ try {
   ok(/for attempt in 1 2; do/.test(build) && /git reset --hard origin\/main/.test(build) && /git push origin HEAD:main/.test(build), 'build workflow retries by recomputing from current main');
   ok(/group:\s*learning-data-write/.test(build) && /group:\s*learning-data-write/.test(sync) && /cancel-in-progress:\s*false/.test(build) && /cancel-in-progress:\s*false/.test(sync), 'build and sync share a non-cancelling write lock');
   ok(/12 1,11 \* \* \*/.test(sync) && !/12,27 1,11/.test(sync), 'sync workflow has one 08:12/18:12 compensation gate, not four checks');
-  ok(/scheduled_health_check/.test(sync) && /Scheduled check: lesson, index, runtime, vocabulary and regression guard healthy; no rebuild or commit/.test(sync) && sync.indexOf("scheduled_health_check") < sync.indexOf("node <<'NODE'"), 'scheduled recovery exits read-only when healthy');
+  ok(/scheduled_health_check/.test(sync) &&
+    /Scheduled check: lesson, index, runtime, context, vocabulary and regression guard healthy; no rebuild or commit/.test(sync) &&
+    sync.includes('node .github/scripts/build-lesson-context.js --check > /dev/null; then') &&
+    sync.indexOf("scheduled_health_check") < sync.indexOf("node <<'NODE'"),
+    'scheduled recovery exits read-only only when canonical runtime and context are both fresh');
+  ok(sync.includes('node .github/scripts/build-lesson-context.js --output data/lesson-context.json') &&
+    build.includes('node .github/scripts/build-lesson-context.js --output data/lesson-context.json') &&
+    sync.includes('data/learning-runtime.json data/lesson-context.json') &&
+    build.includes('data/learning-runtime.json data/lesson-context.json') &&
+    sync.includes('node .github/scripts/build-lesson-context.js --check') &&
+    build.includes('node .github/scripts/build-lesson-context.js --check'),
+    'existing Sync and Build atomically generate and verify the lightweight lesson context');
   ok(/remote_readback/.test(sync) && /Sync push and remote read-back validation succeeded/.test(sync), 'sync validates the published commit after push');
   ok(sync.includes("\n          HEALTH\n") && !sync.includes("\n            HEALTH\n"), 'scheduled health-check heredoc delimiter stays flush after YAML block dedent');
   ok(/record_incident_on_exit/.test(sync) && /record_incident_on_exit/.test(build), 'both writers capture incident phase on failure');
