@@ -72,7 +72,7 @@
     return score;
   }
 
-  function rootCoachEligible(){return window.VocabStudyCoach?window.VocabStudyCoach.eligibleSet():null;}
+  function rootCoachEligible(){return window.VocabStudyCoach?window.VocabStudyCoach.assignedSet('listen'):null;}
   function buildQueue(){
     const pool=taughtPool(), stats=allStats(),eligible=rootCoachEligible();
     state.pool=pool;
@@ -254,9 +254,9 @@
     body.innerHTML='<div class="listenStart">'+
       '<div class="listenStartIcon">🔊</div>'+
       '<h3>不看单词，只靠耳朵</h3>'+
-      '<p>每局 10 个已经学过的词。优先抽近期弱词和还没验证过听力的词。</p>'+
+      '<p>只练今日统一计划分配的到期听觉弱词。不为凑足10题重复抽取。</p>'+
       '<div class="listenStartStats"><div><b>'+sum.accuracy+'%</b><span>历史正确率</span></div><div><b>'+sum.fastRate+'%</b><span>3秒内听懂</span></div><div><b>'+sum.verifiedWords+'</b><span>已验证词</span></div></div>'+
-      '<button id="listenStartBtn" class="primary listenStartBtn" type="button">开始 10 题</button>'+
+      '<button id="listenStartBtn" class="primary listenStartBtn" type="button">开始今日到期听词</button>'+
       '</div>';
     $('listenStartBtn').addEventListener('click',startSession);
     updateMeta();
