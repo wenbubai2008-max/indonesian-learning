@@ -19,6 +19,15 @@ assert.equal(coach.plan(now).length,2,'Never pad the queue with unqualified word
 assert.deepEqual(Array.from(coach.assigned('listen',now).map(x=>x.word)),['niat']);
 assert.deepEqual(Array.from(coach.assigned('auto',now).map(x=>x.word)),['mendukung']);
 assert.equal(coach.assigned('quick',now).length,0,'The generic quick module must not invent a separate random queue');
+assert.deepEqual(Array.from(coach.quickSupplement(now).map(x=>x.word)),['tunda'],'Quick practice remains available from unassigned, formally taught due words even if priority assigns zero quick tasks');
+assert.deepEqual(Array.from(coach.quickSupplement(now).map(x=>x.word)),['tunda'],'Optional quick batch stays fixed on refresh');
+assert.equal(coach.dailyProgress(now).total,2,'Optional quick choices do not create a ninth priority task');
+const beforeOptionalRecords=root.VocabProfileEvidence.records;
+root.VocabProfileEvidence.records=()=>[{id:'optional-tunda',word:'tunda',source:'quick',at:new Date(now+60000).toISOString(),result:'right',stage:0}];
+root.dispatchEvent(new CustomEvent('vocab-profile-evidence-updated',{detail:{word:'tunda'}}));
+assert.equal(coach.dailyProgress(now+60000).done,0,'An optional answer cannot falsely complete one of the assigned priority tasks');
+assert.equal(coach.quickSupplement(now+60000).length,0,'Optional answer enters shared cooldown instead of instant refill');
+root.VocabProfileEvidence.records=beforeOptionalRecords;
 assert.equal(coach.dailyProgress(now).total,2);
 assert.equal(coach.detail('niat',now).mode,'listen');
 assert.equal(coach.detail('mendukung',now).mode,'auto');
@@ -36,6 +45,7 @@ assert.equal(coach.assigned('listen',now+60000).length,0,'Completed listening ta
 root.VocabProfileEvidence.records=recent;
 assert.equal(coach.requestVerification('not-taught',now),false);
 assert.equal(coach.requestVerification('tunda',now),true);
+assert.equal(coach.quickSupplement(now).length,0,'Reserved delayed-verification words must not leak into self-directed quick choices');
 assert.equal(coach.eligible('tunda',now),false,'User-marked known must not be auto-mastered or immediately tested');
 const due=coach.detail('tunda',now+86400000);
 assert.equal(due.ready,true);assert.equal(due.requested,true);assert.equal(due.stage,1);
@@ -75,4 +85,4 @@ assert.equal(rotation.detail(first[0],start+86400000).ready,false,'Self-mark onl
 assert.ok(rotation.plan(start+2*86400000).some(x=>x.word===first[0]),'Delayed verification overrides normal rotation penalty');
 
 assert.equal(data.has('data/daily-vocab-data.js'),false,'Scheduling must not mutate lesson data');
-console.log('Study coach tests passed: stable bounded daily assignments, multi-day rotation, shared module queues, answer completion, cooldown, next-day validation and no lesson mutation.');
+console.log('Study coach tests passed: priority quick zero still gives safe optional recognition, no extra task completion, cooldown, multi-day rotation and delayed verification.');
