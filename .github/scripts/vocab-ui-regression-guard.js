@@ -66,6 +66,8 @@ try{
   const automation=read('data/automation-training.js');
   const quick=read('data/home-learning-upgrade-v2.js');
   const listenUi=read('data/listening-word-training.js');
+  const weakPage=read('data/weakness-paging-roots.js');
+  new vm.Script(weakPage,{filename:'data/weakness-paging-roots.js'});
   new vm.Script(profileUi,{filename:'data/vocab-profile-ui.js'});
   new vm.Script(profileEvidence,{filename:'data/vocab-profile-evidence.js'});
   new vm.Script(studyCoach,{filename:'data/vocab-study-coach.js'});
@@ -87,6 +89,14 @@ try{
   ok(profileUi.includes('今天最该练什么')&&profileUi.includes('逐词能力档案')&&profileUi.includes('data-coach-start'),'profile must expose actionable tasks and per-word history');
   ok(profileUi.includes('vpHomeNext')&&profileUi.includes('vpHomeNumbers')&&profileUi.includes('查看全部任务 →'),'homepage must show only next recommended word and compact metrics while keeping the complete detail page');
   ok(automation.includes('openAutomationTrainingWord')&&automation.includes('autoSelfCheck'),'automation must directly train selected words and require expression self-confirmation');
+
+  ok(studyCoach.includes('indo_vocab_coach_rotation_v1')&&studyCoach.includes('rotationScore')&&studyCoach.includes('recordRotation'),'daily queue must rotate across calendar dates without rewriting eligibility');
+  ok(studyCoach.includes('pendingSet')&&weakPage.includes('coach.requestVerification(word)')&&!weakPage.includes("wp.markMastered(word,'weakness_done')"),'weak-page known button only reserves delayed verification');
+  ok(weakPage.includes('PAUSE_KEY')&&weakPage.includes('weakRestoreBtn')&&weakPage.includes('data-pause-word'),'untaught reader words may be paused and restored without fake mastery');
+  ok(!weaknessPool.includes("x.mastered_reason='3_correct'"),'three recognition answers must not auto-master the word');
+  ok(listenUi.includes('const allowed=rootCoachEligible(),used=new Set(state.queue.map')&&listenUi.includes('allowed&&!allowed.has(k)'),'new listening contrast must satisfy daily assignment and avoid duplicates');
+  ok(automation.includes("st.last_result=result.kind==='self_checked'?'self_checked':'right'"),'stage-three self-assessment must retain its own evidence type');
+
   ok(quick.includes('openQuickPracticeWordV2')&&listenUi.includes('openListeningWordTarget'),'quick and listening practice must support exact-word entry');
   ok(profileEvidence.includes('indo_vocab_profile_evidence_v2')&&profileEvidence.includes('DAILY_VOCAB_DB'),'local evidence must limit observations to formally taught words');
   ok(profileEvidence.includes('quick-practice-updated')&&profileEvidence.includes('listening-answer-recorded')&&profileEvidence.includes('automation-training-updated'),'profile must capture all three actual training result events');
