@@ -161,14 +161,17 @@
     const chosen=focus.find(x=>x.word===activeWeak)||focus[0]||null;if(!activeWeak&&chosen)activeWeak=chosen.word;
     const adv=suggestions(data);
     body.innerHTML='<div class="vpDetailHero"><div><h2>个人词汇画像</h2><p>把学习结果、训练错误和后续验证汇总成一个持续更新的词汇能力档案。</p></div><span class="pill">本机画像</span></div>'+
-      '<div class="vpTabs">'+[['overview','能力总览'],['trend','学习趋势'],['weak','弱词分析'],['advice','学习建议']].map(x=>'<button class="vpTab '+(activeTab===x[0]?'active':'')+'" data-vp-tab="'+x[0]+'" type="button">'+x[1]+'</button>').join('')+'</div>'+
+      '<div class="vpTabs">'+[['today','今日任务'],['overview','能力总览'],['words','逐词档案'],['trend','学习趋势'],['weak','弱词分析'],['advice','学习建议']].map(x=>'<button class="vpTab '+(activeTab===x[0]?'active':'')+'" data-vp-tab="'+x[0]+'" type="button">'+x[1]+'</button>').join('')+'</div>'+
+      '<section class="vpPanel '+(activeTab==='today'?'active':'')+'" data-vp-panel="today">'+todayHTML()+'</section>'+ 
       '<section class="vpPanel '+(activeTab==='overview'?'active':'')+'" data-vp-panel="overview"><div class="vpAbility"><div class="vpAbilityCard"><span>本机验证的主动词汇</span><b>'+active+'</b><small>必须记录无提示提取、语境补词、自我表达，并在至少两个不同日期通过延迟验证；不把原有 mastered 自动算入。</small></div><div class="vpAbilityCard"><span>本机稳定识别词汇</span><b>'+passive+'</b><small>选择识别或首次听音快速识别，最近一次错误后至少三次正确，覆盖两个不同日期；不与主动词汇重复统计。</small></div></div><div class="vpCoverageBox"><div class="vpCoverageHead"><b>主词库当前待学习</b><span>'+data.primary_eligible_new_total+' 个</span></div><div class="vpCoverageNote">这里显示当前仍会进入后续新词学习流程的主词库词数。</div></div><div class="vpSection"><h3>已学习词状态</h3><div class="vpMiniStats"><div><b>'+data.taught_total+'</b><span>正式学习</span></div><div><b>'+data.confirmed_mastered+'</b><span>确认掌握</span></div><div><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div><b>'+data.unverified+'</b><span>尚待验证</span></div></div></div>'+evidenceHTML()+'</section>'+
+      '<section class="vpPanel '+(activeTab==='words'?'active':'')+'" data-vp-panel="words">'+wordsHTML()+'</section>'+ 
       '<section class="vpPanel '+(activeTab==='trend'?'active':'')+'" data-vp-panel="trend"><div class="vpSection"><h3>学习趋势</h3>'+trendHTML(data)+'</div><div class="vpSection"><h3>趋势原则</h3><div class="vpEmpty">只使用真实跨日快照和后续训练结果。只有后续获取到可靠的事件和日期快照，才会显示新增稳定词与遗忘变化；不会用当前总数伪造历史曲线。</div></div></section>'+
       '<section class="vpPanel '+(activeTab==='weak'?'active':'')+'" data-vp-panel="weak"><div class="vpSection"><h3>重点弱词</h3><div class="vpWeakList">'+(focus.length?focus.map(w=>'<button type="button" class="vpWeakItem '+(w.word===activeWeak?'active':'')+'" data-vp-word="'+esc(w.word)+'"><b>'+esc(w.word)+'</b><span>'+esc(w.cn||'')+'</span></button>').join(''):'<div class="vpEmpty">暂无重点弱词。</div>')+'</div><div id="vpWeakDetail">'+weakDetailHTML(chosen)+'</div></div></section>'+
       '<section class="vpPanel '+(activeTab==='advice'?'active':'')+'" data-vp-panel="advice"><div class="vpAdviceGrid">'+adv.map(x=>'<div class="vpAdvice"><b>'+esc(x[0])+'</b><p>'+esc(x[1])+'</p></div>').join('')+'</div><div class="vpSection"><h3>判断边界</h3><div class="vpEmpty">划词查询只算弱线索；明确加入陌生词、自动训练失败、快速练习答错等是更强证据。一次答对或一次阅读曝光不会直接判为“掌握”。</div></div></section>';
     body.querySelectorAll('[data-vp-tab]').forEach(btn=>btn.onclick=()=>{activeTab=btn.dataset.vpTab;renderDetail()});
     body.querySelectorAll('[data-vp-word]').forEach(btn=>btn.onclick=()=>{activeWeak=btn.dataset.vpWord;activeTab='weak';renderDetail()});
-    body.querySelectorAll('[data-vp-action]').forEach(btn=>btn.onclick=()=>{if(btn.dataset.vpAction==='automation'&&typeof window.openAutomationTraining==='function')window.openAutomationTraining();else if(btn.dataset.vpAction==='quick'&&typeof window.openQuickPracticeV2==='function')window.openQuickPracticeV2()});
+    bindCoachActions(body);wireWordSearch(body);
+    body.querySelectorAll('[data-vp-action]').forEach(btn=>btn.onclick=()=>{const word=activeWeak;if(btn.dataset.vpAction==='automation'&&typeof window.openAutomationTrainingWord==='function')window.openAutomationTrainingWord(word);else if(btn.dataset.vpAction==='quick'&&typeof window.openQuickPracticeWordV2==='function')window.openQuickPracticeWordV2(word)});
   }
   async function loadHistory(){
     if(historyState==='loading'||historyState==='ready')return;
@@ -190,9 +193,11 @@
     }catch(e){historyState='error';console.warn('vocab profile history unavailable',e)}
     renderDetail();
   }
-  function openDetail(){ensureDetailPage();renderDetail();if(typeof window.go==='function')window.go('vocabProfileDetail');loadHistory()}
+  function openDetail(tab){if(typeof tab==='string'&&['today','overview','words','trend','weak','advice'].includes(tab))activeTab=tab;ensureDetailPage();renderDetail();if(typeof window.go==='function')window.go('vocabProfileDetail');loadHistory()}
   window.openVocabProfileDetail=openDetail;
-  window.addEventListener('vocab-profile-evidence-updated',function(){const page=document.getElementById('vocabProfileDetail');if(page&&page.classList.contains('active'))renderDetail()});
+  function refreshCoachView(){renderHomeCoach();const page=document.getElementById('vocabProfileDetail');if(page&&page.classList.contains('active'))renderDetail()}
+  window.addEventListener('vocab-coach-updated',refreshCoachView);
+  window.addEventListener('vocab-profile-evidence-updated',refreshCoachView);
   async function load(){ensureStyle();try{const r=await fetch('data/vocab-profile.json?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);mount(await r.json())}catch(e){console.warn('vocab profile unavailable',e);const box=document.getElementById('vocabProfile');if(box)box.innerHTML='<h3 style="margin:0 0 5px;font-size:18px">个人词汇画像</h3><p style="margin:0;color:#667085;font-size:13px">暂时无法读取统计，其他学习模块可以正常使用。</p>'}}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load);else load();
 })();
