@@ -72,4 +72,6 @@ const runTests=function runTests(validate){
 };
 const results=runTests(validate);
 console.log('Stage 1 pre-publication guard:',JSON.stringify(results));
+// Read-only phase-1 lesson context regression, no context output committed by this runner.
+require('./test-build-lesson-context');
 module.exports={makeAm:results.makeAm,makePm:results.makePm};
