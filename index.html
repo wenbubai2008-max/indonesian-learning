@@ -38,6 +38,42 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
 #home #vocabCoachHome{min-height:132px;margin:0 0 14px;border:1px solid #dce6fa;background:#f9fbff;border-radius:18px;padding:18px}#home #vocabCoachHome .vpCoachTop h3{margin:0 0 4px;font-size:19px}#home #vocabCoachHome .vpCoachTop p,#home #vocabCoachHome .vpCoachIntro{font-size:12px;color:#65748b;line-height:1.5}
 #home #listenQuickCard{margin-bottom:12px;border-color:#d8e4ff;background:#f8faff}
 #home #listenQuickCard:hover{border-color:#b4c8fa;background:#f3f7ff}
+/* First-paint dashboard: two aligned primary cards, then three compact training shortcuts. */
+#home .homeLearningGrid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,1fr);gap:12px;margin:0 0 12px;align-items:stretch}
+#home .homeLearningGrid > #vocabCoachHome,#home .homeLearningGrid > #vocabProfile{min-width:0;min-height:196px;height:100%;margin:0;padding:16px 18px;border-radius:18px}
+#home .homeShortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 12px}
+#home .homeShortcuts>.homeShortcut{min-width:0;width:100%;min-height:82px;margin:0;border:1px solid #dce5f4;border-radius:15px;background:#fff;display:flex;align-items:center;text-align:left;gap:10px;padding:12px;cursor:pointer;color:#172033;box-shadow:0 2px 8px rgba(23,32,51,.025)}
+#home .homeShortcuts>.homeShortcut:hover{border-color:#9cb4e8;background:#f8faff}
+#home .homeShortcutIcon,#home .homeShortcuts .listenQuickIcon{width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;border-radius:12px;background:#eef3ff;color:#3157d5;font-size:20px}
+#home .homeShortcutText,#home .homeShortcuts .listenQuickText{flex:1;min-width:0}
+#home .homeShortcutText b,#home .homeShortcuts .listenQuickTitle{display:block;font-size:16px;font-weight:800;line-height:1.3}
+#home .homeShortcutText small,#home .homeShortcuts .listenQuickSub{display:block;color:#667085;font-size:12px;line-height:1.35;margin-top:3px}
+#home .homeShortcutArrow,#home .homeShortcuts .listenQuickArrow{font-size:17px;color:#3157d5;margin-left:auto}
+#home .homeShortcuts .listenQuickRight{flex:0 0 auto;gap:5px}
+#home .homeShortcuts .listenQuickRate{display:none}
+#home .homeShortcuts .listenQuickProgress{font-size:10px;padding:4px 6px}
+#home .homeShortcutQuick{background:#fffcf7!important}
+#home .homeShortcutAuto{background:#faf8ff!important}
+/* Quick and automation live in the three-shortcut row. Hide only their old duplicate entry cards. */
+#home #homeModules>.module[data-home-module="quick"],#home #homeModules>.module[data-home-module="automation"]{display:none!important}
+#home .homeTrainingTitle{margin:12px 0 9px}
+@media(max-width:760px){
+ #home .homeLearningGrid{grid-template-columns:1fr}
+ #home .homeLearningGrid > #vocabCoachHome,#home .homeLearningGrid > #vocabProfile{min-height:0}
+ #home .homeShortcuts{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+ #home .homeShortcuts>.homeShortcut{padding:10px 7px;gap:5px;min-height:78px}
+ #home .homeShortcutIcon,#home .homeShortcuts .listenQuickIcon{width:29px;height:29px;flex-basis:29px;font-size:16px}
+ #home .homeShortcutText b,#home .homeShortcuts .listenQuickTitle{font-size:14px}
+ #home .homeShortcutText small,#home .homeShortcuts .listenQuickSub{font-size:11px}
+ #home .homeShortcuts .listenQuickProgress,#home .homeShortcutArrow,#home .homeShortcuts .listenQuickArrow{display:none}
+}
+@media(max-width:410px){
+ #home .homeShortcuts{grid-template-columns:1fr}
+ #home .homeShortcuts>.homeShortcut{min-height:58px;padding:9px 11px}
+ #home .homeShortcuts .listenQuickProgress{display:inline-block}
+ #home .homeShortcutArrow,#home .homeShortcuts .listenQuickArrow{display:inline}
+}
+
 @media(max-width:650px){
   body>.app>.top{flex-direction:row;align-items:center;margin-bottom:12px}
   body>.app>.top h1{font-size:23px}
@@ -75,12 +111,18 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
       </div>
     </div>
   </div>
-  <section id="vocabCoachHome" class="vpCoachHome" aria-label="今天最该练什么"><div class="vpCoachTop"><div><h3>今天最该练什么</h3><p>本机统一调度 · 到期才出现</p></div></div><div class="vpCoachIntro">正在核对当前到期的学习任务…</div></section>
-  <section id="vocabProfile" class="vocabProfile" aria-label="个人词汇画像">
-    <div class="vpPending" role="status">个人词汇画像加载中…</div>
-  </section>
-  <div class="homeTrainingTitle"><h2>专项训练</h2></div>
-  <button id="listenQuickCard" type="button" onclick="openListeningWords()"><span class="listenQuickIcon">🔊</span><span class="listenQuickText"><span class="listenQuickTitle">听词</span><span class="listenQuickSub">不看拼写，只听声音判断中文意思</span></span><span class="listenQuickRight"><span id="listenQuickRate" class="listenQuickRate">只听声音 · 判断意思</span><span id="listenQuickProgress" class="listenQuickProgress">今日 0 / 10</span><span class="listenQuickArrow">→</span></span></button>
+  <div class="homeLearningGrid" aria-label="今日训练和个人词汇画像">
+    <section id="vocabCoachHome" class="vpCoachHome" aria-label="今天最该练什么"><div class="vpCoachTop"><div><h3>今天最该练什么</h3><p>本机统一调度 · 到期才出现</p></div></div><div class="vpCoachIntro">正在核对当前到期的学习任务…</div></section>
+    <section id="vocabProfile" class="vocabProfile" aria-label="个人词汇画像">
+      <div class="vpPending" role="status">个人词汇画像加载中…</div>
+    </section>
+  </div>
+  <div class="homeShortcuts" aria-label="专项训练快捷入口">
+    <button id="listenQuickCard" class="homeShortcut homeShortcutListen" type="button" onclick="openListeningWords()"><span class="listenQuickIcon">🔊</span><span class="listenQuickText"><span class="listenQuickTitle">听词训练</span><span class="listenQuickSub">只听声音判断词义</span></span><span class="listenQuickRight"><span id="listenQuickRate" class="listenQuickRate">听音识别</span><span id="listenQuickProgress" class="listenQuickProgress">今日 0 / 10</span><span class="listenQuickArrow">→</span></span></button>
+    <button class="homeShortcut homeShortcutQuick" type="button" onclick="openQuickPracticeV2()"><span class="homeShortcutIcon" aria-hidden="true">⚡</span><span class="homeShortcutText"><b>快速练习</b><small>选择识别到期词</small></span><span class="homeShortcutArrow" aria-hidden="true">→</span></button>
+    <button class="homeShortcut homeShortcutAuto" type="button" onclick="openAutomationTraining()"><span class="homeShortcutIcon" aria-hidden="true">⚙️</span><span class="homeShortcutText"><b>自动训练</b><small>主动提取与延迟验证</small></span><span class="homeShortcutArrow" aria-hidden="true">→</span></button>
+  </div>
+  <div class="homeTrainingTitle"><h2>其他学习工具</h2></div>
   <div class="modules" id="homeModules"></div>
 </section>
 <section id="listeningWords" class="page"><button class="back" onclick="go('home')">← 返回首页</button><div class="card"><div class="sectionHead"><h2>🔊 听词</h2><span id="listeningWordMeta" class="pill">尚未开始</span></div><div id="listeningWordBody"><div class="loading">准备中…</div></div></div></section>
