@@ -20,7 +20,7 @@
     const t=Date.parse(at);
     if(!word||word.length>80||!Number.isFinite(t)||!['auto','quick','listen'].includes(source))return null;
     let result=String(x.result||''),stage=Number(x.stage||0);
-    if(source==='auto'&&(![1,2,3,4].includes(stage)||!['direct','slow','right','hinted','fail','stable'].includes(result)))return null;
+    if(source==='auto'&&(![1,2,3,4].includes(stage)||!['direct','slow','right','hinted','fail','stable','self_checked'].includes(result)))return null;
     if(source==='quick'&&!['right','wrong'].includes(result))return null;
     if(source==='listen'&&!['fast_first','slow','wrong'].includes(result))return null;
     const id=String(x.id||[source,word,new Date(t).toISOString(),stage,result].join('|'));
@@ -75,7 +75,7 @@
           }else{
             if(e.stage===1&&e.result==='direct')direct=true;
             if(e.stage===2&&e.result==='right')context=true;
-            if(e.stage===3&&e.result==='right')expression=true;
+            if(e.stage===3&&['right','self_checked'].includes(e.result))expression=true; // User-confirmed expression is not independently grammar-graded.
             if(e.stage===4&&['right','stable'].includes(e.result)){
               verifyDates.add(jakartaDay(e.at));
               if(!currentlyVerified&&direct&&context&&expression&&verifyDates.size>=2){
