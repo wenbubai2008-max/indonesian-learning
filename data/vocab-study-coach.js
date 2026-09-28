@@ -41,8 +41,8 @@
       }else if(last.source==='quick')due=lastAt+(last.result==='wrong'?3*HOUR:6*HOUR);
       else due=lastAt+(last.result==='wrong'?3*HOUR:last.result==='slow'?5*HOUR:8*HOUR);
     }
-    if(req&&requestedAt>=lastAt)due=Number(req.due_at)||requestedAt+DAY;
-    const requested=!!req&&requestedAt>=lastAt;
+    if(req)due=Number(req.due_at)||requestedAt+DAY;
+    const requested=!!req;
     const errors=Number(q.wrong||0)+Number(st.failures||0);
     const listeningProblem=reason.includes('listening_wrong')||reason.includes('listening_slow')||l.last_result==='wrong'&&Number(l.wrong_streak||0)>=2;
     const quickProblem=reason.includes('quick_wrong')||q.last_result==='wrong';
@@ -52,13 +52,15 @@
     else if(ability&&ability.passive){mode='auto';note='已能识别，但还需要主动提取';}
     else if(st.attempts){mode='auto';note='自动训练第'+Math.max(1,Math.min(4,Number(st.stage)||1))+'关等待验证';}
     else if(quickProblem){mode='auto';note='选择题曾答错，改用无提示提取确认';}
+    else if(w&&!st.attempts&&!q.last&&['dont','fuzzy'].includes(source.memory[k])){mode='quick';note='先确认基础识别，再进入主动提取';}
     else if(w){mode='auto';note='已学弱词，优先确认能否主动提取';}
     else if(q.last_result==='right'){mode='auto';note='识别答对后，下一次检查主动回忆';}
     else if(l.last_result==='wrong'){mode='listen';note='听词答错，需要隔开时间再听';}
     else note='正式学过，等待首次主动验证';
     const focus=!!w||errors>0||!!st.attempts||!!q.last||!!l.attempts||!!ability||requested;
     const stable=!!(ability&&ability.active)&&!listeningProblem&&!requested;
-    const priority=(requested?220:0)+(listeningProblem?85:0)+(quickProblem?50:0)+(ability&&ability.passive?70:0)+(w?45:0)+Math.min(40,errors*5)+(st.attempts?25:0)+(due&&now>=due?12:0);
+    const weakWrong=w?Math.max(0,Number(w.wrong_count)||0):0;
+    const priority=(requested?220:0)+(listeningProblem?85:0)+(quickProblem?50:0)+(ability&&ability.passive?70:0)+(w?45:0)+Math.min(40,(errors+weakWrong)*5)+(st.attempts?25:0)+(due&&now>=due?12:0);
     return {word:item.word,cn:item.cn,mode,note,focus,stable,due_at:due,ready:now>=due,requested,score:priority,events:ev,ability,stage:requested?1:Math.max(1,Math.min(4,Number(st.stage)||1)),last_at:last?last.at:'',errors};
   }
   function plan(now=Date.now(),max=8){
