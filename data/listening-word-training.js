@@ -73,17 +73,19 @@
   }
 
   function rootCoachEligible(){
-    const coach=window.VocabStudyCoach;if(!coach)return null;
-    const out=coach.assignedSet('listen');
-    if(typeof coach.supplement==='function')coach.supplement('listen',Date.now(),5).forEach(x=>out.add(String(x.word).trim().toLowerCase()));
-    return out;
+    const coach=window.VocabStudyCoach;
+    return coach?new Set(coach.candidates('listen').map(x=>String(x.word).trim().toLowerCase())):null;
   }
-  function buildQueue(){
-    const pool=taughtPool(), stats=allStats(),eligible=rootCoachEligible();
+  function buildQueue(nextBatch){
+    const pool=taughtPool(),stats=allStats(),coach=window.VocabStudyCoach;
     state.pool=pool;
-    const ranked=pool.filter(x=>!eligible||eligible.has(String(x.word).trim().toLowerCase())).map(x=>({item:x,score:candidateScore(x,stats)})).sort((a,b)=>b.score-a.score);
-    const head=ranked.slice(0,Math.min(SESSION_SIZE,ranked.length)).map(x=>x.item);
-    state.queue=head; // Keep the shared allocator's daily selection; no random reshuffle across refreshes.
+    if(coach){
+      const map=new Map(pool.map(x=>[x.word.toLowerCase(),x]));
+      state.queue=coach.round('listen',Date.now(),!!nextBatch,SESSION_SIZE).map(x=>map.get(x.word.toLowerCase())).filter(Boolean);
+    }else{
+      const ranked=pool.map(x=>({item:x,score:candidateScore(x,stats)})).sort((a,b)=>b.score-a.score);
+      state.queue=shuffle(ranked.slice(0,Math.min(80,ranked.length)).map(x=>x.item)).slice(0,SESSION_SIZE);
+    }
     state.pos=0;state.correct=0;state.fast=0;
   }
 
@@ -189,6 +191,7 @@
       last_at:new Date().toISOString()
     };
     writeJSON(STATS_KEY,stats);
+    if(window.VocabStudyCoach)window.VocabStudyCoach.markAnswer('listen',item.word,ok,Date.parse(stats[item.word].last_at),fastFirst?'fast_first':ok?'slow':'wrong');
 
     try{
       const wp=window.WeaknessPool;
@@ -228,11 +231,7 @@
       if(b.dataset.word===item.word)b.classList.add('listenGood');
       else if(b===btn)b.classList.add('listenBad');
     });
-    if(!ok){
-      const contrast=nearestUnused(item.word);
-      if(contrast)state.queue.splice(Math.min(state.pos+1,state.queue.length),0,contrast);
-      if(state.queue.length>SESSION_SIZE)state.queue=state.queue.slice(0,SESSION_SIZE);
-    }
+    // Similar words are useful as explanations, not as unreserved additional scored questions.
     const headline=ok?'✓ 听懂了':'✕ 没听出来';
     const speedTag=ok?(elapsed<=FAST_MS?'3秒内':'反应偏慢'):'需要加强';
     const body=$('listeningWordBody');
@@ -243,7 +242,7 @@
         '<div class="listenAnswerHeadline"><span class="listenAnswerTop">'+esc(headline)+'</span><span class="listenSpeedTag">'+esc(speedTag)+'</span></div>'+
         '<div class="listenAnswerWordRow"><b>'+esc(item.word)+'</b><span>'+esc(item.cn)+'</span></div>'+
         '<div class="listenTiming">首次作答 '+(elapsed/1000).toFixed(1)+' 秒 · 重播 '+state.replays+' 次</div>'+
-        (!ok?'<div class="listenContrastNote">已记录听觉弱项；只有今天到期且被分配的词才会进入后续计分题。</div>':'')+
+        (!ok?'<div class="listenContrastNote">已记录听觉结果。下次按听觉独立到期时间验证，不会把视觉和主动能力清零。</div>':'')+
       '</div>'+
       '<div class="listenAnswerActions">'+
         '<button class="secondary listenAnswerReplay" type="button" id="listenAnswerSound">🔊 再听一遍</button>'+
@@ -262,7 +261,7 @@
     body.innerHTML='<div class="listenStart">'+
       '<div class="listenStartIcon">🔊</div>'+
       '<h3>不看单词，只靠耳朵</h3>'+
-      '<p>优先练今日重点听词；有空还可练5个已学到期词，不抢其他专项任务。</p>'+
+      '<p>从已学词中选择到期听觉弱项与首次验证词。每轮最多10题，可以继续下一组。</p>'+
       '<div class="listenStartStats"><div><b>'+sum.accuracy+'%</b><span>历史正确率</span></div><div><b>'+sum.fastRate+'%</b><span>3秒内听懂</span></div><div><b>'+sum.verifiedWords+'</b><span>已验证词</span></div></div>'+
       '<button id="listenStartBtn" class="primary listenStartBtn" type="button">开始听词训练</button>'+
       '</div>';
@@ -270,12 +269,12 @@
     updateMeta();
   }
 
-  async function startSession(){
+  async function startSession(nextBatch){
     const body=$('listeningWordBody');if(body)body.innerHTML='<div class="loading">正在准备已学词…</div>';
     await loadFocus();
-    buildQueue();
+    buildQueue(nextBatch);
     if(!state.queue.length){
-      if(body)body.innerHTML='<div class="empty">当前没有到期的听词练习，不重复抽取刚练过的词。</div>';
+      if(body){const n=window.VocabStudyCoach?window.VocabStudyCoach.statistics('listen').due:0;body.innerHTML='<div class="empty">'+(n?'本轮已完成，还有 '+n+' 个到期听觉词。<button id="listenMore" class="primary" type="button">继续下一组 →</button>':'当前没有到期的听词练习，等待下一次到期再验证。')+'</div>';const next=$('listenMore');if(next)next.onclick=()=>startSession(true);}
       return;
     }
     renderQuestion();
@@ -287,10 +286,10 @@
     body.innerHTML='<div class="listenSummary">'+
       '<div class="listenSummaryIcon">✓</div><h3>这一局完成</h3>'+
       '<div class="listenSummaryGrid"><div><b>'+state.correct+' / '+total+'</b><span>答对</span></div><div><b>'+Math.round(state.correct/total*100)+'%</b><span>正确率</span></div><div><b>'+state.fast+'</b><span>3秒内听懂</span></div></div>'+
-      '<p>听错不会直接改成“未掌握”，而是单独记入听觉能力；之后会提高这些词的听词优先级。</p>'+
+      '<p>听觉能力独立管理；本轮结束后可继续练习其他到期词，不重复刚刚作答的词。'+(window.VocabStudyCoach?' 当前剩余到期 '+window.VocabStudyCoach.statistics('listen').due+' 个。':'')+'</p>'+
       '<button id="listenAgainBtn" class="primary" type="button">查看今日剩余听词</button>'+
       '</div>';
-    $('listenAgainBtn').addEventListener('click',startSession);
+    $('listenAgainBtn').addEventListener('click',()=>startSession(true));
     updateCard();updateMeta();
   }
 
@@ -337,7 +336,7 @@
     if(!found)return false;
     if(typeof window.go==='function')window.go('listeningWords');
     const coach=window.VocabStudyCoach;
-    if(coach&&!coach.eligible(k)){const body=$( 'listeningWordBody' );if(body)body.innerHTML='<div class="empty">这个词还在跨模块冷却期，到期后再验证。</div>';return true;}
+    if(coach&&!coach.eligible(k,Date.now(),'listen')){const body=$( 'listeningWordBody' );if(body)body.innerHTML='<div class="empty">这个词的听觉复习尚未到期，请按听词专项的日期验证。</div>';return true;}
     const body=$('listeningWordBody');if(body)body.innerHTML='<div class="loading">正在准备指定词听音…</div>';
     await loadFocus();state.pool=taughtPool();state.queue=[found];state.pos=0;state.correct=0;state.fast=0;renderQuestion();return true;
   }
