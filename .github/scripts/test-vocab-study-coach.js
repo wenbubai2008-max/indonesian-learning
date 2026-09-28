@@ -84,5 +84,34 @@ assert.equal(rotation.requestVerification(first[0],start+86400000),true);
 assert.equal(rotation.detail(first[0],start+86400000).ready,false,'Self-mark only reserves next-day verification');
 assert.ok(rotation.plan(start+2*86400000).some(x=>x.word===first[0]),'Delayed verification overrides normal rotation penalty');
 
+// All three entrypoints remain usable when priority tasks are mostly automatic.
+// Optional pools are fixed for the day, mutually exclusive, and never change priority counts.
+const tripleStore=new Map(),tripleWords=Array.from({length:25},(_,i)=>'word'+String(i).padStart(2,'0'));
+const tripleRoot={
+ DAILY_VOCAB_DB:tripleWords.map(word=>({word,cn:word})),
+ localStorage:{getItem(k){return tripleStore.get(k)||null},setItem(k,v){tripleStore.set(k,String(v))}},
+ addEventListener(){},dispatchEvent(){return true},
+ WeaknessPool:{focusMap(){return Object.fromEntries(tripleWords.slice(0,3).map(word=>[word,{word,reasons:['automation_fail']}]))},
+  listMastered(){return [{word:tripleWords[24]}]}},
+ VocabProfileEvidence:{records(){return []},summarize(){return {words:[]}}}
+};
+vm.runInNewContext(script,{window:tripleRoot,CustomEvent,Date,Map,Set,Object,String,Number,Array,Intl},{filename:'vocab-study-coach-three-modes.js'});
+const triple=tripleRoot.VocabStudyCoach,threeDay=Date.parse('2026-09-28T10:00:00Z');
+const priorityWords=Array.from(triple.plan(threeDay).map(x=>x.word));
+const quickWords=Array.from(triple.supplement('quick',threeDay,10).map(x=>x.word));
+const listenWords=Array.from(triple.supplement('listen',threeDay,5).map(x=>x.word));
+const autoWords=Array.from(triple.supplement('auto',threeDay,3).map(x=>x.word));
+assert.equal(priorityWords.length,3);
+assert.equal(quickWords.length,10);
+assert.equal(listenWords.length,5);
+assert.equal(autoWords.length,3);
+const allThree=[...priorityWords,...quickWords,...listenWords,...autoWords];
+assert.equal(new Set(allThree).size,allThree.length,'No word belongs to more than one daily queue');
+assert.ok(!allThree.includes(tripleWords[24]),'Mastered source status excludes optional words');
+assert.deepEqual(Array.from(triple.supplement('listen',threeDay+60000).map(x=>x.word)),listenWords,'Daily optional plan stays stable when reopened');
+assert.equal(triple.dailyProgress(threeDay).total,3,'Optional entrypoints never enlarge priority task count');
+tripleStore.set('indo_listen_stats_v1',JSON.stringify({[listenWords[0]]:{last_at:new Date(threeDay+60000).toISOString(),last_result:'correct'}}));
+assert.ok(!triple.supplement('listen',threeDay+60000).some(x=>x.word===listenWords[0]),'Answered optional listening word cannot reappear after refresh');
+
 assert.equal(data.has('data/daily-vocab-data.js'),false,'Scheduling must not mutate lesson data');
-console.log('Study coach tests passed: priority quick zero still gives safe optional recognition, no extra task completion, cooldown, multi-day rotation and delayed verification.');
+console.log('Study coach tests passed: all three optional queues stay usable and disjoint, no mastery leakage, no extra priority tasks, cooldown and multi-day rotation.');
