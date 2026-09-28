@@ -9,7 +9,7 @@
 
 /* Critical homepage module layout: render the final compact shape on the first paint,
    before home-modules-layout.js runs. This prevents the old 2-column/long-card FOUC. */
-#home .modules{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;align-items:stretch!important}
+#home .modules{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important;align-items:stretch!important}
 #home .modules>.module{min-width:0!important;grid-column:auto!important;border-radius:16px!important;padding:14px 13px!important;min-height:139px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;box-shadow:0 2px 8px rgba(23,32,51,.035)!important}
 #home .modules>.module>div:first-child{font-size:20px!important;line-height:1!important;margin-bottom:3px!important}
 #home .modules>.module h3{font-size:18px!important;margin:6px 0 5px!important;line-height:1.25!important}
