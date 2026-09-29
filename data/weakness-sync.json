@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-29T12:25:13.281Z",
+  "updated_at": "2026-09-29T12:26:46.805Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -28272,13 +28272,14 @@
     "bakal": {
       "word": "bakal",
       "status": "active",
-      "updated_at": "2026-09-29T07:59:14.936Z",
+      "updated_at": "2026-09-29T12:25:55.567Z",
       "display": "bakal",
       "cn": "将会、要",
       "last_wrong": "2026-09-29T07:59:14.910Z",
       "last_review": "2026-09-29T07:59:14.910Z",
       "reasons": [
-        "quick_wrong"
+        "quick_wrong",
+        "memory_fuzzy"
       ],
       "wrong_count": 1,
       "right_streak": 0
@@ -28493,6 +28494,171 @@
       "display": "menghubungi",
       "last_review": "2026-09-29T12:25:02.733Z",
       "last_mastered": "2026-09-29T12:25:02.733Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "mengirimkan": {
+      "word": "mengirimkan",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:25:16.895Z",
+      "display": "mengirimkan",
+      "last_review": "2026-09-29T12:25:16.864Z",
+      "last_mastered": "2026-09-29T12:25:16.864Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "memberikan": {
+      "word": "memberikan",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:25:20.133Z",
+      "display": "memberikan",
+      "last_review": "2026-09-29T12:25:20.095Z",
+      "last_mastered": "2026-09-29T12:25:20.095Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "menyampaikan": {
+      "word": "menyampaikan",
+      "status": "active",
+      "updated_at": "2026-09-29T12:25:29.690Z",
+      "display": "menyampaikan",
+      "cn": "传达；表达",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mengingatkan": {
+      "word": "mengingatkan",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:25:35.128Z",
+      "display": "mengingatkan",
+      "last_review": "2026-09-29T12:25:35.097Z",
+      "last_mastered": "2026-09-29T12:25:35.097Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "bawain": {
+      "word": "bawain",
+      "status": "active",
+      "updated_at": "2026-09-29T12:25:40.254Z",
+      "display": "bawain",
+      "cn": "帮带来、给某人带",
+      "root": "bawa",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "ngerasa": {
+      "word": "ngerasa",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:25:44.558Z",
+      "display": "ngerasa",
+      "last_review": "2026-09-29T12:25:44.524Z",
+      "last_mastered": "2026-09-29T12:25:44.524Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "nyangka": {
+      "word": "nyangka",
+      "status": "active",
+      "updated_at": "2026-09-29T12:25:48.673Z",
+      "display": "nyangka",
+      "cn": "想到；料到",
+      "root": "sangka",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "telanjur": {
+      "word": "telanjur",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:25:52.249Z",
+      "display": "telanjur",
+      "last_review": "2026-09-29T12:25:52.226Z",
+      "last_mastered": "2026-09-29T12:25:52.226Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "janjian": {
+      "word": "janjian",
+      "status": "active",
+      "updated_at": "2026-09-29T12:25:59.865Z",
+      "display": "janjian",
+      "cn": "约好见面；约时间",
+      "root": "janji",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "nongkrong": {
+      "word": "nongkrong",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:26:03.428Z",
+      "display": "nongkrong",
+      "last_review": "2026-09-29T12:26:03.400Z",
+      "last_mastered": "2026-09-29T12:26:03.400Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "nyusul": {
+      "word": "nyusul",
+      "status": "active",
+      "updated_at": "2026-09-29T12:26:11.861Z",
+      "display": "nyusul",
+      "cn": "随后跟上；晚点再过去会合",
+      "root": "susul",
+      "root_cn": "追上；随后跟上",
+      "reasons": [
+        "memory_dont"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pantes": {
+      "word": "pantes",
+      "status": "active",
+      "updated_at": "2026-09-29T12:26:15.478Z",
+      "display": "pantes",
+      "cn": "难怪、怪不得",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kebagian": {
+      "word": "kebagian",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:26:19.665Z",
+      "display": "kebagian",
+      "last_review": "2026-09-29T12:26:19.629Z",
+      "last_mastered": "2026-09-29T12:26:19.629Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "kehabisan": {
+      "word": "kehabisan",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:26:23.200Z",
+      "display": "kehabisan",
+      "last_review": "2026-09-29T12:26:23.163Z",
+      "last_mastered": "2026-09-29T12:26:23.163Z",
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
