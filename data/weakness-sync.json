@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-29T07:59:25.414Z",
+  "updated_at": "2026-09-29T10:28:34.049Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -596,10 +596,10 @@
     "nyaris": {
       "word": "nyaris",
       "status": "active",
-      "updated_at": "2026-09-25T13:46:10.525Z",
+      "updated_at": "2026-09-29T10:26:57.791Z",
       "display": "nyaris",
       "cn": "差点、几乎",
-      "last_review": "2026-09-25T13:46:10.501Z",
+      "last_review": "2026-09-29T10:26:57.764Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -607,7 +607,7 @@
         "bipa_secondary_dont"
       ],
       "wrong_count": 1,
-      "right_streak": 3
+      "right_streak": 4
     },
     "bentrok": {
       "word": "bentrok",
@@ -627,18 +627,18 @@
     "nyimak": {
       "word": "nyimak",
       "status": "active",
-      "updated_at": "2026-09-28T09:17:46.025Z",
+      "updated_at": "2026-09-29T10:27:56.038Z",
       "display": "nyimak",
       "cn": "认真听；跟着听懂内容（口语）",
       "root": "simak",
       "root_cn": "仔细听；留意",
       "last_wrong": "2026-09-11T15:04:23.880Z",
-      "last_review": "2026-09-28T09:17:46.004Z",
+      "last_review": "2026-09-29T10:27:56.013Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "nggak kepegang": {
       "word": "nggak kepegang",
@@ -3011,20 +3011,20 @@
     "seraya": {
       "word": "seraya",
       "status": "active",
-      "updated_at": "2026-09-28T09:17:52.367Z",
+      "updated_at": "2026-09-29T10:27:49.695Z",
       "display": "seraya",
       "cn": "同时；一边……一边……",
       "root": "seraya",
       "root_cn": "同时；一边……一边……",
       "last_wrong": "2026-09-27T13:59:29.228Z",
-      "last_review": "2026-09-28T09:17:52.346Z",
+      "last_review": "2026-09-29T10:27:49.654Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "menyenangkan": {
       "word": "menyenangkan",
@@ -4712,20 +4712,20 @@
     "menyalin": {
       "word": "menyalin",
       "status": "active",
-      "updated_at": "2026-09-28T09:17:23.923Z",
+      "updated_at": "2026-09-29T10:27:42.563Z",
       "display": "menyalin",
       "cn": "复制",
       "root": "salin",
       "root_cn": "复制；抄写",
       "last_wrong": "2026-09-27T13:57:54.512Z",
-      "last_review": "2026-09-28T09:17:23.902Z",
+      "last_review": "2026-09-29T10:27:42.537Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "menyanyi": {
       "word": "menyanyi",
@@ -7090,20 +7090,20 @@
     "niat": {
       "word": "niat",
       "status": "active",
-      "updated_at": "2026-09-27T13:56:22.668Z",
+      "updated_at": "2026-09-29T10:26:59.463Z",
       "display": "niat",
       "cn": "打算；意图；认真想做的心意",
       "root": "niat",
       "root_cn": "打算；意图",
       "last_wrong": "2026-09-25T13:46:19.310Z",
-      "last_review": "2026-09-27T13:56:22.640Z",
+      "last_review": "2026-09-29T10:26:59.436Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 3,
-      "right_streak": 1
+      "right_streak": 2
     },
     "bergerak": {
       "word": "bergerak",
@@ -23502,20 +23502,20 @@
     "kabur": {
       "word": "kabur",
       "status": "active",
-      "updated_at": "2026-09-28T09:16:59.749Z",
+      "updated_at": "2026-09-29T10:27:51.598Z",
       "display": "kabur",
       "cn": "逃跑；溜走",
       "root": "kabur",
       "root_cn": "逃跑；溜走",
       "last_wrong": "2026-09-25T15:02:05.313Z",
-      "last_review": "2026-09-28T09:16:59.728Z",
+      "last_review": "2026-09-29T10:27:51.571Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "kejar": {
       "word": "kejar",
@@ -28187,18 +28187,18 @@
     "nangkep": {
       "word": "nangkep",
       "status": "active",
-      "updated_at": "2026-09-28T09:17:26.557Z",
+      "updated_at": "2026-09-29T10:27:54.085Z",
       "display": "nangkep",
       "cn": "听懂；抓住意思（口语）",
       "root": "tangkap",
       "root_cn": "抓住；捕捉",
       "last_wrong": "2026-09-18T15:08:18.035Z",
-      "last_review": "2026-09-28T09:17:26.534Z",
+      "last_review": "2026-09-29T10:27:54.060Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "kepancing": {
       "word": "kepancing",
@@ -28272,6 +28272,53 @@
       "cn": "将会、要",
       "last_wrong": "2026-09-29T07:59:14.910Z",
       "last_review": "2026-09-29T07:59:14.910Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "ngerjain": {
+      "word": "ngerjain",
+      "status": "active",
+      "updated_at": "2026-09-29T10:27:13.148Z",
+      "display": "ngerjain",
+      "cn": "做；处理某项工作（口语）",
+      "root": "kerja",
+      "last_wrong": "2026-09-29T10:27:13.120Z",
+      "last_review": "2026-09-29T10:27:13.120Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "kepake": {
+      "word": "kepake",
+      "status": "active",
+      "updated_at": "2026-09-29T10:28:01.997Z",
+      "display": "kepake",
+      "cn": "用得上；派得上用场",
+      "root": "pakai",
+      "root_cn": "使用；穿戴",
+      "last_wrong": "2026-09-29T10:28:01.969Z",
+      "last_review": "2026-09-29T10:28:01.969Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "ngirit": {
+      "word": "ngirit",
+      "status": "active",
+      "updated_at": "2026-09-29T10:28:23.739Z",
+      "display": "ngirit",
+      "cn": "省着花；节省开支（口语）",
+      "root": "irit",
+      "root_cn": "节省；省着用",
+      "last_wrong": "2026-09-29T10:28:23.712Z",
+      "last_review": "2026-09-29T10:28:23.712Z",
       "reasons": [
         "quick_wrong"
       ],
