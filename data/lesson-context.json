@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-09-29T12:25:39.862Z",
+    "runtime_generated_at": "2026-09-29T12:30:44.098Z",
     "lesson_watermark": "2026-09-29 18:00",
     "index_updated": "2026-09-29",
-    "runtime_hash": "45838c3c2e3557a9b18c99d63f9b858f32ff61e7a14f51f5e75c09a1418c106d",
+    "runtime_hash": "5290f92145dadcc362ceaf64ede05adfd9b1900e18a9056bdba91e88ba8e5802",
     "index_hash": "bcb504ebb02aabd36aa40d465e6c8e5a5e79f00dc31df9bac75c2da357e7f088",
     "rules_hash": "8e7b300bbe10f68da978e5de23aa08795fcd036833ba349fd4fa2548990c47ce"
   },
@@ -1492,6 +1492,16 @@
         ""
       ],
       [
+        "bakal",
+        1,
+        1,
+        "2026-09-29T07:59:14.910Z",
+        "2026-09-29T07:59:14.910Z",
+        "将会、要",
+        "",
+        ""
+      ],
+      [
         "berarti",
         1,
         1,
@@ -1579,16 +1589,6 @@
         "2026-09-29T10:27:13.120Z",
         "做；处理某项工作（口语）",
         "kerja",
-        ""
-      ],
-      [
-        "bakal",
-        1,
-        1,
-        "2026-09-29T07:59:14.910Z",
-        "2026-09-29T07:59:14.910Z",
-        "将会、要",
-        "",
         ""
       ],
       [
@@ -1700,6 +1700,16 @@
         "安排；调整；管理",
         "atur",
         "安排；调整"
+      ],
+      [
+        "bawain",
+        2,
+        0,
+        "",
+        "",
+        "帮带来、给某人带",
+        "bawa",
+        ""
       ],
       [
         "becek",
@@ -1870,16 +1880,6 @@
         "益处；好处",
         "manfaat",
         "益处；用途"
-      ],
-      [
-        "membandingkan",
-        2,
-        0,
-        "",
-        "",
-        "比较；进行对比",
-        "banding",
-        "比较"
       ]
     ],
     "focus": [
@@ -2060,6 +2060,14 @@
         ]
       ],
       [
+        "bakal",
+        58,
+        [
+          "quick_wrong",
+          "fuzzy"
+        ]
+      ],
+      [
         "berarti",
         58,
         [
@@ -2111,13 +2119,6 @@
       ],
       [
         "kepake",
-        38,
-        [
-          "quick_wrong"
-        ]
-      ],
-      [
-        "ngerjain",
         38,
         [
           "quick_wrong"
