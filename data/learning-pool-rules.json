@@ -45,7 +45,7 @@
   },
   "am_contract": {
     "new_words": "恰好10个真正新词。优先且在数量充足时全部从runtime.new_pool_dont选择；只有在排除跨日重复后合法dont不足10个时，才允许从runtime.new_pool_fuzzy补足。不得主动用fuzzy替代仍可用的dont；不得使用new_pool_unclassified。transition阶段仍遵守977余量优先与第二库补足规则。",
-    "oral_new_words": "合法候选充足时优先2个口语新词；先从oral_new_pool_dont中选。仅当dont总量或dont口语候选不足以满足课程合同时，才允许从oral_new_pool_fuzzy补位。不得越过新词资格；同一标准语↔口语组不重复占两个新词名额。",
+    "oral_new_words": "在早课10个新词的dont优先配额内，合法口语候选可行时优先2个；先使用oral_new_pool_dont，哪怕只有1个也应优先。仅在合法dont总量不足10、需要fuzzy补足新词配额时，才可使用oral_new_pool_fuzzy；若按该配额可选的口语新词不足2个，不得强行凑数。不得越过新词资格；同一标准语↔口语组不重复占两个新词名额。",
     "review_recurrence": "约5个，只能来自runtime.review_pool，不占10个新词名额",
     "sentences": 5,
     "reading_words": "80-120",

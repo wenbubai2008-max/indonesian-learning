@@ -97,7 +97,7 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     const marked=vocab.filter(v=>v?.is_oral_new).map(word);
     marked.forEach(w=>pool(w,oral,"ORAL_INELIGIBLE"));
     if(feasibleOral>=2)check(marked.length>=2,"ORAL_COUNT","Two oral new words feasible within AM dont/fuzzy slots");
-    if(oralDontEligible.length>=2)check(marked.filter(w=>oralDont.has(w)).length>=Math.min(2,oralDontEligible.length,dontSlots),"ORAL_DONT_PRIORITY","Oral dont first");
+    if(oralDontEligible.length>0)check(marked.filter(w=>oralDont.has(w)).length>=Math.min(2,oralDontEligible.length,dontSlots),"ORAL_DONT_PRIORITY","Oral dont first");
     const rv=lesson.review_vocab,rw=Array.isArray(rv)?rv.map(norm):[];
     check(Array.isArray(rv)&&range(rv.length,4,6)&&rv.every(str)&&new Set(rw).size===rw.length,"AM_REVIEW_INVALID","4-6 unique review_vocab strings required");
     rw.forEach(w=>{pool(w,reviewPool,"REVIEW_INELIGIBLE");check(!vw.includes(w),"REVIEW_NEW_OVERLAP",w)});
@@ -141,7 +141,8 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
       check(actualNew.filter(w=>fuzzy.has(w)).length>=2,"PM_FUZZY_PRIORITY","2 fuzzy expected");
       check(actualNew.some(w=>dont.has(w)),"PM_DONT_REQUIRED","1 dont expected");
     }
-    if(oral.size>0)check(groups.new.some(v=>v.is_oral_new),"PM_ORAL_COUNT","Use eligible oral new word");
+    const pmEligibleOral=[...oral].some(w=>newPool.has(w)&&!amWords.has(w)&&(dont.has(w)||fuzzy.has(w)));
+    if(pmEligibleOral)check(groups.new.some(v=>v.is_oral_new),"PM_ORAL_COUNT","Use eligible oral new word");
     check(lesson.dialogue&&!Array.isArray(lesson.dialogue)&&str(lesson.dialogue.title)&&Array.isArray(lesson.dialogue.lines)&&lesson.dialogue.lines.length>=4&&lesson.dialogue.lines.every(x=>str(x?.speaker)&&str(x?.id)&&str(x?.cn)),"PM_DIALOGUE_INVALID","Dialogue object with 4+ bilingual lines");
     check(!has(lesson,"rewrite_application"),"PM_LEGACY_REWRITE","Use root rewrite");
     check(Array.isArray(lesson.rewrite)&&range(lesson.rewrite.length,3,4)&&lesson.rewrite.every(x=>["task","reference_answer","reference_cn"].every(k=>str(x?.[k]))),"PM_REWRITE_INVALID","3-4 bilingual rewrite tasks required");

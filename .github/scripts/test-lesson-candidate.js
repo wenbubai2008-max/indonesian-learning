@@ -22,6 +22,11 @@ const runTests=function runTests(validate){
  {const x=AM();x.runtime.new_pool.push("f1");x.runtime.new_pool_fuzzy.push("f1");x.runtime.oral_new_pool=[["f0"],["f1"]];x.runtime.oral_new_pool_dont=[];x.lesson.vocab.forEach(v=>v.is_oral_new=false);ok("AM all fuzzy oral cannot override ten dont",x)}
  {const x=AM();x.runtime.new_pool=x.runtime.new_pool.filter(w=>w!=="new9").concat(["f1"]);x.runtime.new_pool_dont.pop();x.runtime.new_pool_fuzzy.push("f1");x.runtime.oral_new_pool=[["f0"],["f1"]];x.runtime.oral_new_pool_dont=[];x.lesson.vocab.forEach(v=>v.is_oral_new=false);x.lesson.vocab[9]={...card("f0"),is_oral_new:true};ok("AM one fuzzy slot cannot force two oral",x)}
  {const x=AM();x.lesson.vocab.forEach(v=>v.is_oral_new=false);bad("AM still requires two eligible oral dont",x,"ORAL_COUNT")}
+ {const make=()=>{const x=AM();x.runtime.new_pool=x.runtime.new_pool.filter(w=>w!=="new9").concat(["f1"]);x.runtime.new_pool_dont.pop();x.runtime.new_pool_fuzzy.push("f1");x.runtime.oral_new_pool=[["new0"],["f0"]];x.runtime.oral_new_pool_dont=[["new0"]];x.lesson.vocab.forEach(v=>v.is_oral_new=false);x.lesson.vocab[9]={...card("f0"),is_oral_new:true};return x};
+  const x=make();x.lesson.vocab[0].is_oral_new=true;ok("AM can combine one oral dont and one oral fuzzy when both slots exist",x);
+  bad("AM cannot ignore its only legal oral dont",make(),"ORAL_DONT_PRIORITY")}
+ {const x=PM();x.runtime.new_pool.push("u0");x.runtime.new_pool_unclassified=["u0"];x.runtime.oral_new_pool=[["u0"]];x.lesson.vocab[0].is_oral_new=false;ok("PM unclassified-only oral cannot force ineligible new word",x)}
+ {const x=PM();x.lesson.vocab[0].is_oral_new=false;bad("PM still requires a genuinely eligible oral word",x,"PM_ORAL_COUNT")}
  // Regression for 2026-09-28: generated content incorrectly mixed AM and PM keys.
  const matrix=[
   ["AM card missing display","am",x=>delete x.lesson.vocab[0].display,"VOCAB_FIELD_MISSING"],
