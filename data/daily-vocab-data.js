@@ -5414,22 +5414,27 @@ window.DAILY_VOCAB_DB = [
     "root": "kabar",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-02 19:00",
+    "last_seen": "2026-09-29 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-29"
     ],
-    "example": "Kalau jadwalnya berubah, ngabarin aku dari awal ya.",
-    "example_cn": "如果时间有变化，早点告诉我一声。",
+    "example": "Tolong ngabarin saya kalau jadwalnya berubah.",
+    "example_cn": "如果时间安排变了，请通知我一声。",
     "lesson_occurrences": [
-      "2026-09-02 19:00"
-    ]
+      "2026-09-02 19:00",
+      "2026-09-29 18:00"
+    ],
+    "root_cn": "消息；音讯"
   },
   {
     "word": "sempetin",
@@ -5852,9 +5857,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-03 19:00",
-    "last_seen": "2026-09-26 18:00",
+    "last_seen": "2026-09-29 18:00",
     "sessions": [
       "19:00",
       "18:00"
@@ -5862,15 +5867,17 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-03",
       "2026-09-19",
-      "2026-09-26"
+      "2026-09-26",
+      "2026-09-29"
     ],
-    "example": "Apakah kamu keberatan kalau rapatnya dipindah?",
-    "example_cn": "如果会议改期，你介意吗？",
+    "example": "Ada yang keberatan kalau rapat dipindah ke sore hari?",
+    "example_cn": "会议改到下午，有人介意吗？",
     "root_cn": "重；沉重",
     "lesson_occurrences": [
       "2026-09-03 19:00",
       "2026-09-19 18:00",
-      "2026-09-26 18:00"
+      "2026-09-26 18:00",
+      "2026-09-29 18:00"
     ]
   },
   {
@@ -7042,23 +7049,27 @@ window.DAILY_VOCAB_DB = [
     "en": "save money; cut spending; be frugal",
     "root": "irit",
     "root_cn": "节省；省着用",
-    "example": "Bulan ini aku lagi ngirit, jadi jarang pesan kopi.",
-    "example_cn": "这个月我正在省钱，所以很少点咖啡。",
+    "example": "Kami lagi ngirit, jadi jangan cetak dokumen yang tidak perlu.",
+    "example_cn": "我们正在省钱，所以别打印没必要的文件。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-07 08:00",
+    "last_seen": "2026-09-29 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-29"
     ],
     "lesson_occurrences": [
-      "2026-09-07 08:00"
+      "2026-09-07 08:00",
+      "2026-09-29 18:00"
     ]
   },
   {
@@ -7282,21 +7293,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-09-29 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-09-29"
     ],
-    "example": "Tadi penjelasanku kepotong karena ada telepon masuk.",
-    "example_cn": "刚才我的说明因为有电话打进来被打断了。",
+    "example": "Telepon saya tadi kepotong sebelum kamu selesai bicara.",
+    "example_cn": "你话还没说完，我刚才的电话就断了。",
     "lesson_occurrences": [
-      "2026-09-07 19:00"
+      "2026-09-07 19:00",
+      "2026-09-29 18:00"
     ]
   },
   {
@@ -12086,23 +12101,27 @@ window.DAILY_VOCAB_DB = [
     "en": "effort; attempt",
     "root": "upaya",
     "root_cn": "努力；办法",
-    "example": "Kami melakukan beberapa upaya untuk memperbaiki pelayanan.",
-    "example_cn": "我们采取了一些措施来改善服务。",
+    "example": "Kami sudah melakukan beberapa upaya agar pesanan tidak terlambat.",
+    "example_cn": "我们已经做了几项努力，避免订单延误。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-21 08:00",
-    "last_seen": "2026-09-21 08:00",
+    "last_seen": "2026-09-29 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-21"
+      "2026-09-21",
+      "2026-09-29"
     ],
     "lesson_occurrences": [
-      "2026-09-21 08:00"
+      "2026-09-21 08:00",
+      "2026-09-29 18:00"
     ]
   },
   {
@@ -14816,23 +14835,26 @@ window.DAILY_VOCAB_DB = [
     "en": "instant; quick",
     "root": "instan",
     "root_cn": "即时；速成",
-    "example": "Saya memilih mi instan karena tidak sempat memasak.",
-    "example_cn": "我没时间做饭，所以选了方便面。",
+    "example": "Tidak semua masalah punya solusi instan.",
+    "example_cn": "不是所有问题都有立刻见效的解决办法。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-29 08:00",
-    "last_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-29"
     ],
     "lesson_occurrences": [
-      "2026-09-29 08:00"
+      "2026-09-29 08:00",
+      "2026-09-29 18:00"
     ]
   },
   {
@@ -14941,23 +14963,26 @@ window.DAILY_VOCAB_DB = [
     "en": "character; trait",
     "root": "karakter",
     "root_cn": "性格；角色",
-    "example": "Dia punya karakter yang tenang dan sabar.",
-    "example_cn": "他的性格沉稳而有耐心。",
+    "example": "Karakter rekan kerja yang baik terlihat saat ada masalah.",
+    "example_cn": "好同事的品格会在出问题时体现出来。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-29 08:00",
-    "last_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-29"
     ],
     "lesson_occurrences": [
-      "2026-09-29 08:00"
+      "2026-09-29 08:00",
+      "2026-09-29 18:00"
     ]
   },
   {
@@ -14992,24 +15017,128 @@ window.DAILY_VOCAB_DB = [
     "en": "use; function",
     "root": "guna",
     "root_cn": "用途；作用",
-    "example": "Alat ini punya banyak guna untuk pekerjaan sehari-hari.",
-    "example_cn": "这个工具在日常工作中有很多用途。",
+    "example": "Apa gunanya laporan cepat kalau datanya salah?",
+    "example_cn": "如果数据错了，报告再快有什么用？",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-29 08:00",
-    "last_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-29"
     ],
     "lesson_occurrences": [
-      "2026-09-29 08:00"
+      "2026-09-29 08:00",
+      "2026-09-29 18:00"
+    ]
+  },
+  {
+    "word": "menanggung",
+    "cn": "承担；承受（责任、费用、风险）",
+    "en": "bear; shoulder; cover costs",
+    "root": "tanggung",
+    "root_cn": "承担；负责",
+    "example": "Perusahaan akan menanggung biaya pengiriman tambahan.",
+    "example_cn": "公司会承担额外运费。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 18:00",
+    "last_seen": "2026-09-29 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 18:00"
+    ]
+  },
+  {
+    "word": "wajib",
+    "cn": "必须；有义务的",
+    "en": "obligatory; mandatory",
+    "root": "wajib",
+    "root_cn": "必须；义务",
+    "example": "Kalau ada perubahan jadwal, kita wajib ngabarin tim.",
+    "example_cn": "日程有变时，我们必须通知团队。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 18:00",
+    "last_seen": "2026-09-29 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 18:00"
+    ]
+  },
+  {
+    "word": "sebab",
+    "cn": "原因；缘故；因为",
+    "en": "cause; reason; because",
+    "root": "sebab",
+    "root_cn": "缘由；原因",
+    "example": "Apa sebab barang ini belum dikirim?",
+    "example_cn": "这批货还没寄出，原因是什么？",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 18:00",
+    "last_seen": "2026-09-29 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 18:00"
+    ]
+  },
+  {
+    "word": "cuek",
+    "cn": "不在意；冷淡；不理会（口语）",
+    "en": "indifferent; nonchalant; unresponsive",
+    "root": "cuek",
+    "root_cn": "不在意；冷淡",
+    "example": "Jangan cuek kalau pelanggan sudah mengirim keluhan.",
+    "example_cn": "顾客已经发来投诉，就别不理不睬。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 18:00",
+    "last_seen": "2026-09-29 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 18:00"
     ]
   }
 ];

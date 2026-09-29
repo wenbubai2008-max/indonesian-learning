@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-09-29",
-    "session": "pm",
-    "time": "18:00",
-    "day": 39
+    "date": "2026-09-30",
+    "session": "am",
+    "time": "08:00",
+    "day": 40
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-09-29T10:50:40.491Z",
-    "lesson_watermark": "2026-09-29 08:00",
+    "runtime_generated_at": "2026-09-29T11:32:55.598Z",
+    "lesson_watermark": "2026-09-29 18:00",
     "index_updated": "2026-09-29",
-    "runtime_hash": "74d3045b7f99a0b13fcf3c2e532dd40f0e2e79bd3d32b8974354a241e481c222",
-    "index_hash": "2d507e5f643d06a3196a149e3bbc96b0dee58cd7def0c7ab53de304d34648e36",
+    "runtime_hash": "b4b9d68cbe90c58380c8835da2fb5270ecd670630446cd6b18b3ae174b5db0a1",
+    "index_hash": "bcb504ebb02aabd36aa40d465e6c8e5a5e79f00dc31df9bac75c2da357e7f088",
     "rules_hash": "b40769cf26e8550b7aa240d1c5538a98c03685c89189308f77dd65db4eed290b"
   },
   "schema": {
@@ -62,10 +62,6 @@
         "也，再"
       ],
       [
-        "sebab",
-        "因为"
-      ],
-      [
         "selera",
         "胃口"
       ],
@@ -104,10 +100,6 @@
       [
         "biarpun",
         "即使"
-      ],
-      [
-        "cuek",
-        "“冷淡、不鸟人”"
       ],
       [
         "haus",
@@ -632,10 +624,6 @@
         "粘贴 / 贴上"
       ],
       [
-        "menanggung",
-        "忍受 / 承担"
-      ],
-      [
         "mencetak",
         "打印"
       ],
@@ -706,10 +694,6 @@
       [
         "barang",
         "东西，货品"
-      ],
-      [
-        "wajib",
-        "必须"
       ],
       [
         "tubuh",
@@ -1264,6 +1248,14 @@
         "回复"
       ],
       [
+        "angkat",
+        "接（电话）；抬起"
+      ],
+      [
+        "pendiam",
+        "沉默寡言"
+      ],
+      [
         "mencret",
         "拉肚子"
       ],
@@ -1557,7 +1549,7 @@
         "2026-09-29T10:46:14.946Z",
         "通知；告诉一声（口语）",
         "kabar",
-        ""
+        "消息；音讯"
       ],
       [
         "ngirit",
@@ -1740,6 +1732,16 @@
         "分开；离婚"
       ],
       [
+        "cuek",
+        2,
+        0,
+        "",
+        "",
+        "不在意；冷淡；不理会（口语）",
+        "cuek",
+        "不在意；冷淡"
+      ],
+      [
         "curhat",
         2,
         0,
@@ -1878,16 +1880,6 @@
         "比较；进行对比",
         "banding",
         "比较"
-      ],
-      [
-        "mengarahkan",
-        2,
-        0,
-        "",
-        "",
-        "指导 / 导向",
-        "arah",
-        "方向"
       ]
     ],
     "focus": [
@@ -2188,56 +2180,10 @@
         "antre",
         605,
         "fuzzy"
-      ],
-      [
-        "wajib",
-        "通用",
-        "harus",
-        "wajib",
-        715,
-        "fuzzy"
       ]
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-09-22",
-      "session": "am",
-      "review_core": [
-        "menentukan",
-        "kepancing",
-        "lakukan",
-        "colok"
-      ],
-      "new_words": [
-        "mendengarkan",
-        "gagal",
-        "puas",
-        "menghapus",
-        "mengunci",
-        "meninggalkan",
-        "bercerai",
-        "menangis",
-        "siapin",
-        "nanya"
-      ]
-    },
-    {
-      "date": "2026-09-22",
-      "session": "pm",
-      "review_core": [
-        "berkat",
-        "menunjukkan",
-        "ngerepotin",
-        "mengizinkan"
-      ],
-      "new_words": [
-        "sok",
-        "seraya",
-        "bolak-balik",
-        "balik"
-      ]
-    },
     {
       "date": "2026-09-23",
       "session": "am",
@@ -2498,106 +2444,42 @@
         "namun",
         "guna"
       ]
+    },
+    {
+      "date": "2026-09-29",
+      "session": "pm",
+      "review_core": [
+        "upaya",
+        "kepotong",
+        "ngabarin",
+        "keberatan",
+        "ngirit"
+      ],
+      "new_words": [
+        "menanggung",
+        "wajib",
+        "sebab",
+        "cuek"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-09-28",
+    "date": "2026-09-29",
     "new_words": [
-      "rekan kerja",
-      "terus-menerus",
-      "dengan demikian",
-      "sial"
+      "menanggung",
+      "wajib",
+      "sebab",
+      "cuek"
     ],
     "review_core": [
-      "mengeluh",
-      "seraya",
-      "ngotot",
-      "ngeh",
-      "layak"
+      "upaya",
+      "kepotong",
+      "ngabarin",
+      "keberatan",
+      "ngirit"
     ]
   },
-  "same_day_am": {
-    "date": "2026-09-29",
-    "vocab": [
-      [
-        "nempel",
-        "黏住；贴着（口语）",
-        "stick; be attached",
-        "tempel",
-        "贴；粘"
-      ],
-      [
-        "tenggelam",
-        "沉没；淹没；溺水",
-        "sink; be submerged",
-        "tenggelam",
-        "沉没；淹没"
-      ],
-      [
-        "instan",
-        "即时的；速成的；方便即食的",
-        "instant; quick",
-        "instan",
-        "即时；速成"
-      ],
-      [
-        "nikmat",
-        "美味的；享受的感觉",
-        "delicious; pleasure",
-        "nikmat",
-        "享受；美味"
-      ],
-      [
-        "penduduk",
-        "居民；人口",
-        "resident; inhabitant",
-        "duduk",
-        "坐；居住（词根相关）"
-      ],
-      [
-        "aliran",
-        "流动；流派；流向",
-        "flow; stream; school",
-        "alir",
-        "流；流动"
-      ],
-      [
-        "sempurna",
-        "完美的；完整圆满的",
-        "perfect; complete",
-        "sempurna",
-        "完美；圆满"
-      ],
-      [
-        "karakter",
-        "性格；特征；角色",
-        "character; trait",
-        "karakter",
-        "性格；角色"
-      ],
-      [
-        "namun",
-        "然而；不过",
-        "however; nevertheless",
-        "namun",
-        "然而；不过"
-      ],
-      [
-        "guna",
-        "用途；作用；使用",
-        "use; function",
-        "guna",
-        "用途；作用"
-      ]
-    ],
-    "review_vocab": [
-      "kabur",
-      "memanggil",
-      "melawan",
-      "bebas",
-      "sebel"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
