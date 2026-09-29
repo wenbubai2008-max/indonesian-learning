@@ -17,7 +17,7 @@ function fixture(make,session){
  const main={
   'data/daily/index.json':clone(x.index),'data/learning-runtime.json':clone(x.runtime),
   'data/learning-pool-rules.json':clone(x.rules),
-  'data/daily/'+date+'-am.json':x.sameDayAm||undefined,...history
+  ['data/daily/'+date+'-am.json']:x.sameDayAm||undefined,...history
  };
  if(session==='am')main['data/daily/'+date+'-am.json']=undefined;
  const result=plan({...x,mainHead:sha,reviewHistory:[]});
