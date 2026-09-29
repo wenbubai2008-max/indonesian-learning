@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-29T07:49:51.740Z",
+  "updated_at": "2026-09-29T07:59:25.414Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -4370,20 +4370,20 @@
     "mengeluh": {
       "word": "mengeluh",
       "status": "active",
-      "updated_at": "2026-09-28T09:17:16.034Z",
+      "updated_at": "2026-09-29T07:59:01.000Z",
       "display": "mengeluh",
       "cn": "抱怨",
       "root": "keluh",
       "root_cn": "抱怨；叹息",
       "last_wrong": "2026-09-28T09:17:16.003Z",
-      "last_review": "2026-09-28T09:17:16.003Z",
+      "last_review": "2026-09-29T07:59:00.973Z",
       "reasons": [
         "memory_dont",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "mengepel": {
       "word": "mengepel",
@@ -28219,18 +28219,18 @@
     "ngeh": {
       "word": "ngeh",
       "status": "active",
-      "updated_at": "2026-09-24T06:32:29.769Z",
+      "updated_at": "2026-09-29T07:59:07.812Z",
       "display": "ngeh",
       "cn": "意识到；反应过来",
       "root": "ngeh",
       "root_cn": "意识到；注意到",
       "last_wrong": "2026-09-22T08:18:40.758Z",
-      "last_review": "2026-09-24T06:32:29.751Z",
+      "last_review": "2026-09-29T07:59:07.786Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "ngurusin": {
       "word": "ngurusin",
@@ -28263,6 +28263,20 @@
       ],
       "wrong_count": 1,
       "right_streak": 1
+    },
+    "bakal": {
+      "word": "bakal",
+      "status": "active",
+      "updated_at": "2026-09-29T07:59:14.936Z",
+      "display": "bakal",
+      "cn": "将会、要",
+      "last_wrong": "2026-09-29T07:59:14.910Z",
+      "last_review": "2026-09-29T07:59:14.910Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
     }
   }
 }
