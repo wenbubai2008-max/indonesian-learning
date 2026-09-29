@@ -1,0 +1,245 @@
+{
+  "date": "2026-09-29",
+  "session": "am",
+  "time": "08:00",
+  "day": 39,
+  "level": "A2+–B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜生活表达与实用沟通",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "nempel",
+    "tenggelam",
+    "instan",
+    "nikmat",
+    "penduduk",
+    "aliran",
+    "sempurna",
+    "karakter",
+    "namun",
+    "guna"
+  ],
+  "vocab": [
+    {
+      "word": "nempel",
+      "display": "nempel",
+      "audio_text": "nempel",
+      "cn": "黏住；贴着（口语）",
+      "en": "stick; be attached",
+      "root": "tempel",
+      "root_cn": "贴；粘",
+      "formation": "口语形式，常说 nempel di...，表示东西黏在或贴在某处。",
+      "example": "Stiker ini nempel kuat di botol.",
+      "example_cn": "这个贴纸牢牢粘在瓶子上。",
+      "synonym_note": "nempel 更口语；menempel 较标准，都可表示贴着、黏着。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tenggelam",
+      "display": "tenggelam",
+      "audio_text": "tenggelam",
+      "cn": "沉没；淹没；溺水",
+      "en": "sink; be submerged",
+      "root": "tenggelam",
+      "root_cn": "沉没；淹没",
+      "formation": "可形容船、物体沉入水中，也可形容人溺水。",
+      "example": "Perahu kecil itu hampir tenggelam karena hujan deras.",
+      "example_cn": "那艘小船因为大雨差点沉没。",
+      "synonym_note": "tenggelam 是沉入水中；terendam 更偏被水浸泡。",
+      "is_oral_new": false
+    },
+    {
+      "word": "instan",
+      "display": "instan",
+      "audio_text": "instan",
+      "cn": "即时的；速成的；方便即食的",
+      "en": "instant; quick",
+      "root": "instan",
+      "root_cn": "即时；速成",
+      "formation": "常见搭配 mi instan、hasil instan、cara instan。",
+      "example": "Saya memilih mi instan karena tidak sempat memasak.",
+      "example_cn": "我没时间做饭，所以选了方便面。",
+      "synonym_note": "instan 强调马上得到或快速完成；cepat 只是速度快。",
+      "is_oral_new": false
+    },
+    {
+      "word": "nikmat",
+      "display": "nikmat",
+      "audio_text": "nikmat",
+      "cn": "美味的；享受的感觉",
+      "en": "delicious; pleasure",
+      "root": "nikmat",
+      "root_cn": "享受；美味",
+      "formation": "形容食物时表示好吃，也可表示令人享受、舒服。",
+      "example": "Kopi hangat terasa nikmat setelah hujan.",
+      "example_cn": "下雨后喝热咖啡感觉很享受。",
+      "synonym_note": "nikmat 可指味道和享受感；lezat 更集中在食物美味。",
+      "is_oral_new": false
+    },
+    {
+      "word": "penduduk",
+      "display": "penduduk",
+      "audio_text": "penduduk",
+      "cn": "居民；人口",
+      "en": "resident; inhabitant",
+      "root": "duduk",
+      "root_cn": "坐；居住（词根相关）",
+      "formation": "peN- + duduk，常用于 penduduk lokal、jumlah penduduk。",
+      "example": "Banyak penduduk lokal bekerja di kawasan ini.",
+      "example_cn": "很多当地居民在这个地区工作。",
+      "synonym_note": "penduduk 强调某地居民；warga 也常指居民或社会成员。",
+      "is_oral_new": false
+    },
+    {
+      "word": "aliran",
+      "display": "aliran",
+      "audio_text": "aliran",
+      "cn": "流动；流派；流向",
+      "en": "flow; stream; school",
+      "root": "alir",
+      "root_cn": "流；流动",
+      "formation": "alir + -an，可指水流、电流，也可指思想或艺术流派。",
+      "example": "Aliran air di kamar mandi tiba-tiba berhenti.",
+      "example_cn": "浴室里的水流突然停了。",
+      "synonym_note": "aliran 是流动或流派；arus 更常指水流、电流、交通流等具体流势。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sempurna",
+      "display": "sempurna",
+      "audio_text": "sempurna",
+      "cn": "完美的；完整圆满的",
+      "en": "perfect; complete",
+      "root": "sempurna",
+      "root_cn": "完美；圆满",
+      "formation": "常说 tidak harus sempurna、hasil yang sempurna。",
+      "example": "Hasilnya belum sempurna, tetapi sudah cukup baik.",
+      "example_cn": "结果还不完美，但已经足够好了。",
+      "synonym_note": "sempurna 是完美无缺；lengkap 主要表示完整、齐全。",
+      "is_oral_new": false
+    },
+    {
+      "word": "karakter",
+      "display": "karakter",
+      "audio_text": "karakter",
+      "cn": "性格；特征；角色",
+      "en": "character; trait",
+      "root": "karakter",
+      "root_cn": "性格；角色",
+      "formation": "既可描述人的性格，也可指故事中的角色或事物特征。",
+      "example": "Dia punya karakter yang tenang dan sabar.",
+      "example_cn": "他的性格沉稳而有耐心。",
+      "synonym_note": "karakter 可指性格和角色；sifat 更偏人的性质、脾性。",
+      "is_oral_new": false
+    },
+    {
+      "word": "namun",
+      "display": "namun",
+      "audio_text": "namun",
+      "cn": "然而；不过",
+      "en": "however; nevertheless",
+      "root": "namun",
+      "root_cn": "然而；不过",
+      "formation": "较书面的转折连接词；日常口语常用 tapi 替代。",
+      "example": "Rencananya bagus, namun biayanya terlalu tinggi.",
+      "example_cn": "计划很好，不过成本太高。",
+      "synonym_note": "namun 较正式；tapi 更自然口语。",
+      "is_oral_new": true
+    },
+    {
+      "word": "guna",
+      "display": "guna",
+      "audio_text": "guna",
+      "cn": "用途；作用；使用",
+      "en": "use; function",
+      "root": "guna",
+      "root_cn": "用途；作用",
+      "formation": "较正式，常见 berguna、kegunaan；口语表达“使用”更常说 pakai。",
+      "example": "Alat ini punya banyak guna untuk pekerjaan sehari-hari.",
+      "example_cn": "这个工具在日常工作中有很多用途。",
+      "synonym_note": "guna 较正式，表示用途或作用；pakai 是日常口语里的“使用”。",
+      "is_oral_new": true
+    }
+  ],
+  "review_vocab": [
+    "kabur",
+    "memanggil",
+    "melawan",
+    "bebas",
+    "sebel"
+  ],
+  "sentences": [
+    {
+      "text": "Stiker ini nempel kuat, namun masih bisa dilepas.",
+      "cn": "这个贴纸粘得很牢，不过还是可以取下来。"
+    },
+    {
+      "text": "Penduduk di dekat sungai harus waspada agar barang mereka tidak tenggelam.",
+      "cn": "河边的居民要小心，避免自己的东西被水淹没。"
+    },
+    {
+      "text": "Makanan instan memang praktis, tetapi makanan hangat terasa lebih nikmat.",
+      "cn": "即食食品确实方便，但热乎的食物吃起来更享受。"
+    },
+    {
+      "text": "Karakter setiap orang berbeda, jadi kita tidak perlu melawan hanya karena pendapat berbeda.",
+      "cn": "每个人的性格不同，所以不必仅仅因为意见不同就对抗。"
+    },
+    {
+      "text": "Aliran air kembali normal dan saya bebas melanjutkan pekerjaan.",
+      "cn": "水流恢复正常，我可以放心继续工作了。"
+    }
+  ],
+  "reading": {
+    "text": "Pagi ini saya mampir ke sebuah warung kecil dekat sungai. Banyak penduduk sekitar sudah datang untuk sarapan. Saya memilih makanan hangat karena rasanya lebih nikmat daripada makanan instan. Di dinding ada poster yang nempel sangat kuat. Pemilik warung memanggil pegawainya karena aliran air tiba-tiba berhenti. Mereka sempat panik karena beberapa barang hampir tenggelam akibat air yang meluap. Namun masalah itu cepat selesai. Saya melihat karakter pemiliknya cukup tenang; dia tidak marah atau melawan siapa pun. Tempat itu memang tidak sempurna, tetapi suasananya nyaman. Setelah air kembali normal, semua orang bebas melanjutkan aktivitas dan saya pun berangkat kerja.",
+    "cn": "今天早上我顺路去了河边的一家小餐馆。附近很多居民已经来吃早餐。我选择了热乎的食物，因为比即食食品吃起来更享受。墙上有一张粘得很牢的海报。水流突然停了，店主叫来员工处理。他们一度有些慌，因为水漫出来，几件东西差点被淹。不过问题很快解决了。我发现店主的性格很沉稳，没有生气，也没有和任何人对抗。这里虽然并不完美，但气氛很舒服。水恢复正常后，大家都继续各自的活动，我也出发去上班。"
+  },
+  "quiz": [
+    {
+      "question": "“逃跑、溜走”对应哪个复习词？",
+      "options": [
+        "kabur",
+        "instan",
+        "nikmat",
+        "karakter"
+      ],
+      "answer_index": 0,
+      "answer": "kabur",
+      "explain": "kabur 是已学复习词，表示逃跑、溜走。"
+    },
+    {
+      "question": "哪个词更适合表达“食物好吃，而且让人很享受”？",
+      "options": [
+        "penduduk",
+        "nikmat",
+        "aliran",
+        "guna"
+      ],
+      "answer_index": 1,
+      "answer": "nikmat",
+      "explain": "nikmat 可形容食物美味，也强调享受感。"
+    },
+    {
+      "question": "哪个词表示“然而”，而且语气比 tapi 更正式？",
+      "options": [
+        "nempel",
+        "namun",
+        "sempurna",
+        "tenggelam"
+      ],
+      "answer_index": 1,
+      "answer": "namun",
+      "explain": "namun 是较正式的转折词，日常口语更常用 tapi。"
+    }
+  ],
+  "output": {
+    "task": "用 namun、karakter、sebel 中至少两个词，说2句描述工作中遇到一个让你烦的人或情况。",
+    "reference_answer": "Saya agak sebel karena rekan kerja itu sulit diajak bicara. Namun, saya tahu karakternya memang sangat hati-hati.",
+    "reference_cn": "我有点烦，因为那个同事很难沟通。不过，我知道他的性格本来就非常谨慎。"
+  },
+  "review": [
+    "3秒主动回忆：nempel、tenggelam、instan、nikmat、penduduk分别是什么意思。",
+    "重点区分：namun/tapi、guna/pakai、sempurna/lengkap，并各说一个短句。",
+    "复习 kabur、memanggil、melawan、bebas、sebel，并用其中两个词完成主动输出。"
+  ]
+}
