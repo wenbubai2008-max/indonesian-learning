@@ -22,5 +22,5 @@ pass('Already complete but different content refuses overwrite',()=>{const v=inp
 pass('Already complete with identical content is no-op',()=>{const v=input(makeAm);v.index.dates.at(-1).am=true;v.publishedLesson=clone(v.lesson);const p=plan(v);assert.equal(p.status,'already_published');assert.deepEqual(p.files,[])});
 pass('Index day conflict stops draft',()=>{const v=input(makePm);v.index.dates.at(-1).day=99;const p=plan(v);assert.equal(p.errors[0].code,'DAY_MISMATCH')});
 pass('No third file or daily-vocab writer',()=>{const {p}=ready(makePm);assert.deepEqual(p.files.map(f=>f.path),['data/daily/2026-09-28-pm.json','data/daily/index.json'])});
-pass('Output carries current SHA, candidate and baseline hashes',()=>{const {p}=ready(makeAm);assert.equal(p.mainHead,head);assert.match(p.candidateHash,/^[0-9a-f]{64}$/);assert.match(p.baselineFingerprint,/^[0-9a-f]{64}$/);assert.equal(p.requiresFreshMain,true);assert.equal(p.requiresSuccessfulStageCheck,true)});
-console.log('Stage 2 publication plan:',count,'passed, 0 failed');
+pass('Output carries current SHA, candidate and baseline hashes',()=>{const {p}=ready(makeAm);assert.equal(p.mainHead,head);assert.match(p.candidateHash,/^[0-9a-f]{64}$/);assert.match(p.baselineFingerprint,/^[0-9a-f]{64}$/);assert.equal(p.requiresFreshMain,true);assert.equal(p.requiresSuccessfulReleaseCheck,true)});
+console.log('Two-file publication plan:',count,'passed, 0 failed');
