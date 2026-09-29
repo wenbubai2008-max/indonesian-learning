@@ -438,7 +438,8 @@ try {
   ok(/actions\/checkout@v7/.test(build)&&/actions\/setup-node@v7/.test(build)&&/node-version:\s*['\"]24['\"]/.test(build), 'build workflow uses Node 24 actions/runtime');
   ok(!/git pull --rebase/.test(build), 'build workflow never rebases generated output');
   ok(/for attempt in 1 2; do/.test(build) && /git reset --hard origin\/main/.test(build) && /git push origin HEAD:main/.test(build), 'build workflow retries by recomputing from current main');
-  ok(/group:\s*learning-data-write/.test(build) && /group:\s*learning-data-write/.test(sync) && /cancel-in-progress:\s*false/.test(build) && /cancel-in-progress:\s*false/.test(sync), 'build and sync share a non-cancelling write lock');
+  const syncGroup=sync.split('\n').find(line=>/^\s*group:/.test(line))||'';
+  ok(/group:\s*learning-data-write/.test(build) && syncGroup.includes('learning-data-write') && syncGroup.includes('lesson-pr-') && /cancel-in-progress:\s*false/.test(build) && /cancel-in-progress:\s*false/.test(sync), 'build and main sync share a non-cancelling write lock; read-only PR checks have a separate group');
   ok(/12 1,11 \* \* \*/.test(sync) && !/12,27 1,11/.test(sync), 'sync workflow has one 08:12/18:12 compensation gate, not four checks');
   ok(/scheduled_health_check/.test(sync) &&
     /Scheduled check: lesson, index, runtime, context, vocabulary and regression guard healthy; no rebuild or commit/.test(sync) &&
