@@ -30,7 +30,7 @@ function plan(input){
  return {
   ok:true,status:'ready',mainHead,date,session,target,
   baselineFingerprint:hash({index,runtime,rules}),candidateHash:hash(lesson),
-  requiresFreshMain:true,requiresSuccessfulStageCheck:true,
+  requiresFreshMain:true,requiresSuccessfulReleasePreflight:true,
   files:[{path:target,content:json(lesson)},{path:'data/daily/index.json',content:json(next)}],errors:[]
  };
 }
