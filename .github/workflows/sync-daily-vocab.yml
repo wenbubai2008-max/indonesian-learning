@@ -1,7 +1,7 @@
 name: Sync daily vocab
 on:
   push:
-    branches: [main, lesson-staging-v1]
+    branches: [main]
     paths:
       - '.github/workflows/sync-daily-vocab.yml'
       - '.github/scripts/validate-lesson-candidate.js'
@@ -14,34 +14,35 @@ on:
       - '.github/scripts/test-publish-staged-lesson.js'
       - '.github/scripts/github-publish-adapter.js'
       - '.github/scripts/test-real-published-lesson.js'
-      - '.github/scripts/check-staged-drafts.js'
-      - 'docs/LESSON-STAGING.md'
-      - 'staging/drafts/*.json'
-      # index.json is the completion trigger/barrier. AM/PM lesson JSON and index should be
-      # committed atomically by the lesson writer; only then do we rebuild daily vocab/runtime.
+      - '.github/scripts/check-release-pr.js'
+      - '.github/scripts/test-check-release-pr.js'
       - 'data/daily/index.json'
-      # Lesson files also trigger reconciliation. index.json remains the barrier:
-      # a lesson is ingested only when its date/session flag is already true.
+      - 'data/daily/*-am.json'
+      - 'data/daily/*-pm.json'
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [main]
+    paths:
+      - '.github/workflows/sync-daily-vocab.yml'
+      - '.github/scripts/check-release-pr.js'
+      - '.github/scripts/test-check-release-pr.js'
+      - 'data/daily/index.json'
       - 'data/daily/*-am.json'
       - 'data/daily/*-pm.json'
   schedule:
-    # Safety fallback only. Normal lesson sync is triggered by the atomic lesson+index push.
-    # 01:12 and 11:12 UTC = 08:12 and 18:12 Jakarta; the scheduled run is a read-only gate when healthy.
-    # Recovery is idempotent; it cannot invent a lesson that was never committed.
-    # Unchanged derived payloads preserve generated_at using semantic JSON comparison; no empty Pages deployment.
+    # Safety fallback, never invents missing lessons. Times: 08:12/18:12 Jakarta.
     - cron: '12 1,11 * * *'
   workflow_dispatch:
 permissions:
   contents: write
   issues: write
 concurrency:
-  # Share one writer lock with build-learning-runtime.yml.
   group: learning-data-write
   cancel-in-progress: false
 jobs:
-  # Staging branch only: read-only tests, zero production writes, no extra workflow.
+  # PR-only read-only tests. Release candidates additionally require exact two-file validation.
   preflight:
-    if: github.ref == 'refs/heads/lesson-staging-v1'
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -49,44 +50,31 @@ jobs:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
-      - name: Validate scripts and synthetic failure cases
+      - name: Check release validator and existing contract tests
         shell: bash
         run: |
           set -Eeuo pipefail
-          node --check .github/scripts/validate-lesson-candidate.js
-          node --check .github/scripts/plan-lesson-publication.js
-          node --check .github/scripts/check-staged-drafts.js
-          node --check .github/scripts/test-lesson-candidate.js
-          node --check .github/scripts/build-lesson-context.js
-          node --check .github/scripts/test-build-lesson-context.js
-          node --check .github/scripts/test-publication-plan.js
-          node --check .github/scripts/publish-staged-lesson.js
-          node --check .github/scripts/test-publish-staged-lesson.js
-          node --check .github/scripts/github-publish-adapter.js
-          node --check .github/scripts/test-real-published-lesson.js
+          node --check .github/scripts/check-release-pr.js
+          node --check .github/scripts/test-check-release-pr.js
+          node .github/scripts/test-check-release-pr.js
           node .github/scripts/test-lesson-candidate.js
           node .github/scripts/test-publication-plan.js
           node .github/scripts/test-publish-staged-lesson.js
           node .github/scripts/test-real-published-lesson.js
-      - name: Validate only changed drafts against latest main
+      - name: Validate exact release HEAD and both files against current main
+        if: startsWith(github.head_ref, 'lesson-release-')
         shell: bash
+        env:
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_HEAD_REF: ${{ github.head_ref }}
+          PR_BASE_REF: ${{ github.base_ref }}
         run: |
           set -Eeuo pipefail
-          git fetch origin main
-          before=$(node -e "console.log(require(process.env.GITHUB_EVENT_PATH).before || '')")
-          if git cat-file -e "${before}^{commit}" 2>/dev/null; then
-            mapfile -t drafts < <(git diff --diff-filter=ACMR --name-only "$before" "$GITHUB_SHA" -- staging/drafts/)
-          else
-            mapfile -t drafts < <(git ls-tree -r --name-only "$GITHUB_SHA" staging/drafts/)
-          fi
-          if [ "${#drafts[@]}" -eq 0 ]; then
-            echo 'No changed draft JSON in this push; synthetic tests verified.'
-            exit 0
-          fi
-          node .github/scripts/check-staged-drafts.js "${drafts[@]}"
+          node .github/scripts/check-release-pr.js
   sync:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
