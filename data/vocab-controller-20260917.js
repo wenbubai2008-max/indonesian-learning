@@ -151,7 +151,18 @@
       ['top1000','Top1000',libraryCount('top1000')],['master','主学习词库',libraryCount('master')],['daily','每日学习词汇',libraryCount('daily')],['unknown','陌生词汇',libraryCount('unknown')],
       ...['A1','A2','B1','B2'].map(lv=>['bipa-'+lv.toLowerCase(),'BIPA（'+lv+'）',libraryCount('bipa-'+lv.toLowerCase())])
     ];
-    select.innerHTML=opts.map(([k,l,n])=>'<option value="'+k+'">'+l+'（'+n+'）</option>').join('');select.value=opts.some(x=>x[0]===cur)?cur:'top1000';
+    // Keep the native select and existing option nodes stable while its menu is open.
+    const wanted=new Set(opts.map(x=>x[0]));
+    const existing=new Map([...select.options].map(o=>[o.value,o]));
+    opts.forEach(([k,l,n])=>{
+      let option=existing.get(k);
+      if(!option){option=document.createElement('option');option.value=k;select.add(option)}
+      const label=l+'（'+n+'）';
+      if(option.textContent!==label)option.textContent=label;
+    });
+    [...select.options].forEach(option=>{if(!wanted.has(option.value))option.remove()});
+    const next=opts.some(x=>x[0]===cur)?cur:'top1000';
+    if(select.value!==next)select.value=next;
   }
   function ensureLibrarySelect(){const tb=document.querySelector('#vocab .toolbar');if(!tb)return null;let s=$('librarySelect');if(!s){s=document.createElement('select');s.id='librarySelect';tb.insertBefore(s,tb.firstChild)}return s}
   function syncUiMode(){const sec=$('vocab');if(sec){sec.classList.toggle('bipaFinalV7',isBipaKey());sec.classList.remove('bipaStable','bipaSwitching')}ensureGradeSelect()}
@@ -190,7 +201,14 @@
     key=canonicalKey(key);const mySeq=++switchSeq,lv=bipaLevelForKey(key);
     if(lv&&!bipaReady(lv)){
       if($('dbStatus'))$('dbStatus').textContent=labelFor(key)+' · 正在加载…';
-      await ensureBipaData(lv);if(mySeq!==switchSeq)return [];
+      try{await ensureBipaData(lv)}
+      catch(e){
+        if(mySeq!==switchSeq)return [];
+        const select=$('librarySelect');if(select)select.value=activeKey;
+        if($('dbStatus'))$('dbStatus').textContent=labelFor(key)+' · 加载失败：'+(e&&e.message?e.message:'请重试');
+        return [];
+      }
+      if(mySeq!==switchSeq)return [];
     }
     saveProgress();activeKey=key;activeView='';localStorage.removeItem('vocab_view_mode');
     const select=$('librarySelect');if(select&&select.value!==key)select.value=key;localStorage.setItem('selected_vocab_library',key);
@@ -253,8 +271,8 @@
     initPromise=(async function(){
       if(installed)return true;ensureLibrarySelect();await ensureMasterData();populateLibraryOptions();bindControls();installOwnership();
       const stored=canonicalKey(localStorage.getItem('selected_vocab_library')||$('librarySelect')?.value||'top1000');prepareHiddenLibrary(stored);
-      window.addEventListener('unknown-vocab-changed',()=>{sourceCache.delete('unknown');populateLibraryOptions();if(activeKey==='unknown'&&$('vocab')?.classList.contains('active'))void setLibrary('unknown')});
-      window.addEventListener('master-core-locked',()=>{sourceCache.delete('master');populateLibraryOptions();if(activeKey==='master'&&$('vocab')?.classList.contains('active'))void setLibrary('master')});
+      window.addEventListener('unknown-vocab-changed',()=>{sourceCache.delete('unknown');populateLibraryOptions();if(activeKey==='unknown'&&$('librarySelect')?.value==='unknown'&&$('vocab')?.classList.contains('active'))void setLibrary('unknown')});
+      window.addEventListener('master-core-locked',()=>{sourceCache.delete('master');populateLibraryOptions();if(activeKey==='master'&&$('librarySelect')?.value==='master'&&$('vocab')?.classList.contains('active'))void setLibrary('master')});
       window.addEventListener('beforeunload',saveProgress);dataReady=true;installed=true;window.dispatchEvent(new CustomEvent('vocab-controller-ready',{detail:{key:activeKey}}));return true;
     })().catch(e=>{initPromise=null;installed=false;dataReady=false;throw e});return initPromise;
   }

@@ -206,6 +206,39 @@ try{
   ok(guard.includes('new MutationObserver(restore)'),'UI guard must detect DOM rewrites');
   ok(flip.includes('BIPA：中文 → 英文 → 词根'),'BIPA detail order must stay Chinese, English, then root');
 
+
+  // Regression: selecting a library must not recreate all native <option> nodes.
+  const masterCore=read('data/master-top1000-weak-merge.js');
+  ok(!controller.includes('select.innerHTML=opts.map'),'library selector must preserve existing option nodes');
+  ok(controller.includes("if(option.textContent!==label)option.textContent=label"),'library selector labels must update only when changed');
+  ok(controller.includes("if(activeKey==='master'&&$('librarySelect')?.value==='master'"),'master-core refresh must not cancel a pending BIPA switch');
+  ok(controller.includes("if(activeKey==='unknown'&&$('librarySelect')?.value==='unknown'"),'unknown refresh must not cancel a pending BIPA switch');
+  ok(controller.includes("if(mySeq!==switchSeq)return []"),'outdated asynchronous library loads must be ignored');
+  ok(!masterCore.includes("'vocab-library-ready'"),'master-core lock must not listen to ordinary library changes');
+  ok(masterCore.includes('if(changed){'),'master-core event must require a real data change');
+  new vm.Script(masterCore,{filename:'data/master-top1000-weak-merge.js'});
+  {
+    const handlers={},tasks=[],values=new Map(),option={value:'master',textContent:'主学习词库（977）'};
+    const fakeCore=Array.from({length:977},(_,i)=>({word:'core_'+i,categories:[]}));
+    const emit=ev=>(handlers[ev.type]||[]).slice().forEach(fn=>fn(ev));
+    const fakeWindow={MASTER_VOCAB_OBJECTS:fakeCore,addEventListener:(t,fn)=>{(handlers[t]||(handlers[t]=[])).push(fn)},dispatchEvent:emit};
+    const fakeDocument={readyState:'complete',getElementById:id=>id==='librarySelect'?{querySelector:q=>q==='option[value="master"]'?option:null}:null};
+    const store={getItem:k=>values.has(k)?values.get(k):null,setItem:(k,v)=>values.set(k,String(v)),removeItem:k=>values.delete(k)};
+    const CE=function(type,init){this.type=type;this.detail=init?.detail};
+    vm.runInNewContext(masterCore,{window:fakeWindow,document:fakeDocument,localStorage:store,CustomEvent:CE,setTimeout:fn=>{tasks.push(fn);return tasks.length}});
+    const drain=()=>{let steps=0;while(tasks.length&&steps++<25)tasks.shift()();ok(steps<25,'master-core scheduling must terminate')};
+    let changedEvents=0;fakeWindow.addEventListener('master-core-locked',()=>changedEvents++);
+    drain();
+    for(let i=0;i<20;i++)emit(new CE('vocab-library-ready',{detail:{key:i%2?'master':'bipa-a1'}}));
+    drain();
+    ok(changedEvents===0&&option.textContent==='主学习词库（977）','ordinary library switches must not refire master-core events');
+    fakeWindow.MASTER_VOCAB_OBJECTS=[...fakeCore,{word:'legacy_added',categories:['Top1000不会补充']}];
+    emit(new CE('master-vocab-ready'));drain();
+    ok(changedEvents===1&&fakeWindow.MASTER_VOCAB_OBJECTS.length===977,'a real legacy master change must refresh exactly once');
+    emit(new CE('master-vocab-ready'));drain();
+    ok(changedEvents===1,'a stable master must not dispatch duplicate master-core-locked events');
+  }
+
   ok(libraryStub.includes('__VOCAB_LIBRARY_SWITCHER_RETIRED_20260917__'),'legacy library-switcher must remain inert');
   ok(!libraryStub.includes('FILTER='),'retired library-switcher must not write FILTER');
   ok(reviewStub.includes('__VOCAB_REVIEW_UI_RETIRED_20260917__'),'old review UI must remain retired');

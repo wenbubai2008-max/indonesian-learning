@@ -27,13 +27,15 @@
     try{
       localStorage.removeItem(LEGACY_MEMBER_KEY);
       localStorage.removeItem('master_top1000_weak_added_count');
-      localStorage.setItem('master_top1000_weak_merge_result',JSON.stringify({disabled:true,reason:'top1000_weak_words_use_weakness_pool_only'}));
+      const result=JSON.stringify({disabled:true,reason:'top1000_weak_words_use_weakness_pool_only'});
+      if(localStorage.getItem('master_top1000_weak_merge_result')!==result)localStorage.setItem('master_top1000_weak_merge_result',result);
     }catch(e){}
   }
   function updateOption(total){
     const sel=document.getElementById('librarySelect');
     const opt=sel&&sel.querySelector('option[value="master"]');
-    if(opt)opt.textContent='主学习词库（'+total+'）';
+    const label='主学习词库（'+total+'）';
+    if(opt&&opt.textContent!==label)opt.textContent=label;
   }
   function apply(){
     if(applying)return 0;applying=true;
@@ -41,12 +43,14 @@
       clearLegacyMembership();
       const src=Array.isArray(window.MASTER_VOCAB_OBJECTS)?window.MASTER_VOCAB_OBJECTS:[];
       const core=uniqueCore(src);
+      const changed=core.length!==src.length||core.some((item,i)=>item!==src[i]);
       if(core.length){
-        window.MASTER_VOCAB_OBJECTS=core;
-        window.getEffectiveMasterVocabulary=function(){return uniqueCore(window.MASTER_VOCAB_OBJECTS||[])};
+        if(changed){
+          window.MASTER_VOCAB_OBJECTS=core;
+          window.dispatchEvent(new CustomEvent('master-core-locked',{detail:{total:core.length}}));
+        }
         updateOption(core.length);
-        try{localStorage.setItem('master_core_count_v1',String(core.length));}catch(e){}
-        window.dispatchEvent(new CustomEvent('master-core-locked',{detail:{total:core.length}}));
+        try{if(localStorage.getItem('master_core_count_v1')!==String(core.length))localStorage.setItem('master_core_count_v1',String(core.length));}catch(e){}
       }
       return core.length;
     }finally{applying=false;}
@@ -61,7 +65,8 @@
   window.lockMasterToCore=apply;
   window.getEffectiveMasterVocabulary=function(){return uniqueCore(window.MASTER_VOCAB_OBJECTS||[])};
 
-  ['vocab-library-ready','master-vocab-ready','master-library-selected','master-top1000-weak-merged'].forEach(ev=>window.addEventListener(ev,schedule));
+  // Library switches are UI-only: never let one trigger another master-core refresh.
+  ['vocab-controller-ready','master-vocab-ready','master-library-selected','master-top1000-weak-merged'].forEach(ev=>window.addEventListener(ev,schedule));
   if(document.readyState==='complete')schedule();else window.addEventListener('load',schedule,{once:true});
   setTimeout(schedule,250);
   setTimeout(schedule,1200);
