@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{id:'er-20260928-kai-birthday-bash',date:'2026-09-28',title:'Promo Ulang Tahun KAI, Tiket Kereta Bayar 81 Persen',title_cn:'KAI 81周年促销：部分火车票只需支付正常票价的81%',path:'data/extensive-reading-history/2026-09-28.js'},
 {id:'er-20260927-lrt-jakarta-penumpang',date:'2026-09-27',title:'Penumpang LRT Jakarta Naik Setelah Rute Manggarai Dibuka',title_cn:'Manggarai 新线路开通后，LRT Jakarta 日均乘客明显增加',path:'data/extensive-reading-history/2026-09-27.js'},
 {id:'er-20260926-pertalite-hoaks',date:'2026-09-26',title:'Harga Pertalite Tidak Naik Hari Ini',title_cn:'Pertalite 今天不涨价：官方提醒别轻信社交媒体消息',path:'data/extensive-reading-history/2026-09-26.js'},
 {id:'er-20260925-lrt-jabodebek-integrasi',date:'2026-09-25',title:'Ganti Moda Makin Mudah di Stasiun LRT Jabodebek',title_cn:'LRT Jabodebek 换乘更方便，连接多种公共交通',path:'data/extensive-reading-history/2026-09-25.js'},
