@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-29T06:56:35.882Z",
+  "updated_at": "2026-09-29T07:01:10.261Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1142,8 +1142,9 @@
     "maupun": {
       "word": "maupun",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-29T07:00:59.372Z",
       "display": "maupun",
+      "cn": "以及/或者",
       "reasons": [
         "memory_fuzzy"
       ],
