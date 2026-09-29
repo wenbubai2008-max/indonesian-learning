@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-/** Pure, read-only Stage-2 publication planner. Never writes main or daily-vocab. */
+/** Pure, read-only two-file release planner. Never writes main or daily-vocab. */
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const {validate,collectReviewHistory}=require('./validate-lesson-candidate');
 const hash=value=>crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
@@ -30,7 +30,7 @@ function plan(input){
  return {
   ok:true,status:'ready',mainHead,date,session,target,
   baselineFingerprint:hash({index,runtime,rules}),candidateHash:hash(lesson),
-  requiresFreshMain:true,requiresSuccessfulStageCheck:true,
+  requiresFreshMain:true,requiresSuccessfulReleaseCheck:true,
   files:[{path:target,content:json(lesson)},{path:'data/daily/index.json',content:json(next)}],errors:[]
  };
 }
