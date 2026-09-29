@@ -433,6 +433,11 @@ try {
   ok(/git add data\/daily-vocab-data\.js data\/learning-runtime\.json/.test(sync), 'daily-vocab and runtime are committed together');
   ok(/build-learning-runtime\.js/.test(sync), 'sync workflow rebuilds runtime in the same chain');
   ok(sync.includes("'data/daily/*-am.json'") && sync.includes("'data/daily/*-pm.json'"), 'sync workflow re-runs after completed lesson-file repairs');
+  ok(sync.includes('  pull_request:') && sync.includes('node .github/scripts/check-release-pr.js') &&
+    sync.includes('PR_HEAD_SHA:') && sync.includes('PR_HEAD_REF:') &&
+    !sync.includes('branches: [main, lesson-staging-v1]') &&
+    !sync.includes('node .github/scripts/check-staged-drafts.js'),
+    'release PR uses single-branch SHA-pinned read-only preflight, no staging writer');
   ok(!/fs\.writeFileSync\([^\n]*daily-vocab-data\.js/.test(build), 'build-learning-runtime workflow does not directly write daily-vocab');
   ok(/actions\/checkout@v7/.test(sync)&&/actions\/setup-node@v7/.test(sync)&&/node-version:\s*['\"]24['\"]/.test(sync), 'sync workflow uses Node 24 actions/runtime');
   ok(/actions\/checkout@v7/.test(build)&&/actions\/setup-node@v7/.test(build)&&/node-version:\s*['\"]24['\"]/.test(build), 'build workflow uses Node 24 actions/runtime');
