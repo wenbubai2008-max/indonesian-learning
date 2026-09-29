@@ -1,6 +1,6 @@
 # Lesson-generation JSON shape / 课程生成结构检查表
 
-**Source of truth:** `.github/scripts/validate-lesson-candidate.js` plus `data/learning-pool-rules.json`. This is a generation-time key map, not a second validator or permission to simplify the lesson. Before writing ANY new draft, read that validator and the latest successfully published lesson of the **same session**. Copy its structural keys, not its words, review history, examples, dates or answers. Never mix AM question/sentence keys with PM dialogue/test keys.
+**Source of truth:** `.github/scripts/validate-lesson-candidate.js` plus `data/learning-pool-rules.json`. This is a generation-time key map, not a second validator or permission to simplify the lesson. Before writing ANY new release candidate, read that validator and the latest successfully published lesson of the **same session**. Copy its structural keys, not its words, review history, examples, dates or answers. Never mix AM question/sentence keys with PM dialogue/test keys.
 
 ## AM — 08:00
 
@@ -31,8 +31,8 @@ Required root: `date, session:"pm", time:"18:00", day, title, write_status:"less
 ## Generation-to-publication checks
 
 1. Generate using the **same-session** published lesson as an exact key/layout model, replacing content only after validating current runtime eligibility, full lesson contract and completed seven-day review history. Use `validate-lesson-candidate.js` for truth rather than inferring shape from prose.
-2. Before the first staging write, audit every card/array/question against this key map. Check answer-index consistency and that actual answer words qualify.
-3. Staging preflight is mandatory and read-only. If its log reports a **pure JSON structure error** (such as a missing display/audio_text, AM `id` vs `text`, AM `prompt` vs `question`), preserve the original draft and perform at most **one bounded correction on the SAME draft path**, preserving the 10/3–4 new-word identities, review selection, reading and learning content. Re-run the exact preflight. Conversion of AM fill to choice needs a real answer/options, not blind renaming.
+2. Before the first release write, audit every card/array/question against this key map. Check answer-index consistency and that actual answer words qualify.
+3. Release PR preflight is mandatory and read-only. If its log reports a **pure JSON structure error** (such as missing display/audio_text, AM `id` vs `text`, AM `prompt` vs `question`), retain the original candidate and perform at most **one bounded correction on the SAME release branch**, preserving word identities, review selection and teaching content. Re-run the exact head-SHA PR preflight. Conversion of AM fill to choice needs a real answer/options, not blind renaming.
 4. Stop rather than auto-repair if errors concern word eligibility, seven-day cooldown, wrong answer semantics, incomplete source history, stale runtime, changed published lesson or a second failed preflight. Never relax the validator to make invalid content pass.
 5. Only approved unchanged candidate proceeds to two-file PR/squash publication. CI regression cases permanently exercise the historical AM/PM key mixups.
 
