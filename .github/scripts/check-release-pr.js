@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 /** Read-only PR gate. Release head contains only the two final files; main is the authority. */
-const fs=require('node:fs'),cp=require('node:child_process'),assert=require('node:assert/strict');
+const cp=require('node:child_process');
 const {isDeepStrictEqual}=require('node:util');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
 const {plan}=require('./plan-lesson-publication');
