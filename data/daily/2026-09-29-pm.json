@@ -1,0 +1,369 @@
+{
+  "date": "2026-09-29",
+  "session": "pm",
+  "time": "18:00",
+  "day": 39,
+  "level": "A2+ → B1",
+  "duration_minutes": 35,
+  "title": "18:00 晚课｜出了问题，别装没看见",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "menanggung",
+    "wajib",
+    "sebab",
+    "cuek"
+  ],
+  "vocab": [
+    {
+      "word": "menanggung",
+      "display": "menanggung",
+      "audio_text": "menanggung",
+      "cn": "承担；承受（责任、费用、风险）",
+      "en": "bear; shoulder; cover costs",
+      "root": "tanggung",
+      "root_cn": "承担；负责",
+      "formation": "meN- + tanggung；常搭配 menanggung biaya / risiko / akibat。",
+      "example": "Perusahaan akan menanggung biaya pengiriman tambahan.",
+      "example_cn": "公司会承担额外运费。",
+      "synonym_note": "menanggung 强调具体负担；bertanggung jawab 强调对某事负有责任。",
+      "usage_note": "合法 fuzzy 新词；主动说出 menanggung biaya，不要只会辨认。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "wajib",
+      "display": "wajib",
+      "audio_text": "wajib",
+      "cn": "必须；有义务的",
+      "en": "obligatory; mandatory",
+      "root": "wajib",
+      "root_cn": "必须；义务",
+      "formation": "wajib + 动词；wajib lapor / wajib hadir，表达规定或明确义务。",
+      "example": "Kalau ada perubahan jadwal, kita wajib ngabarin tim.",
+      "example_cn": "日程有变时，我们必须通知团队。",
+      "synonym_note": "wajib 强调规定或义务；harus 更通用，日常说“得、必须”。",
+      "usage_note": "合法 fuzzy、口语候选；和 harus 互换练习，注意语气。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "sebab",
+      "display": "sebab",
+      "audio_text": "sebab",
+      "cn": "原因；缘故；因为",
+      "en": "cause; reason; because",
+      "root": "sebab",
+      "root_cn": "缘由；原因",
+      "formation": "sebab utama / apa sebabnya；作连接词“因为”时相对书面，口语常说 karena。",
+      "example": "Apa sebab barang ini belum dikirim?",
+      "example_cn": "这批货还没寄出，原因是什么？",
+      "synonym_note": "sebab 是原因，也可较正式表达因为；karena 在日常口语中更自然。",
+      "usage_note": "合法 dont 新词；先练习问原因：Apa sebabnya?",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "cuek",
+      "display": "cuek",
+      "audio_text": "cuek",
+      "cn": "不在意；冷淡；不理会（口语）",
+      "en": "indifferent; nonchalant; unresponsive",
+      "root": "cuek",
+      "root_cn": "不在意；冷淡",
+      "formation": "cuek sama + 人/事情；jangan cuek，强调态度上的不理会。",
+      "example": "Jangan cuek kalau pelanggan sudah mengirim keluhan.",
+      "example_cn": "顾客已经发来投诉，就别不理不睬。",
+      "synonym_note": "cuek 是不理会；tenang 是冷静，并不等于不关心。",
+      "usage_note": "合法 dont 新词；日常口语，注意对人说可能带责备。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "upaya",
+      "display": "upaya",
+      "audio_text": "upaya",
+      "cn": "努力；尝试；解决问题的措施",
+      "en": "effort; attempt",
+      "root": "upaya",
+      "root_cn": "努力；办法",
+      "formation": "upaya mengatasi + 问题；berbagai upaya / melakukan upaya。",
+      "example": "Kami sudah melakukan beberapa upaya agar pesanan tidak terlambat.",
+      "example_cn": "我们已经做了几项努力，避免订单延误。",
+      "synonym_note": "upaya 偏解决问题的努力或措施；usaha 还可指生意、事业。",
+      "usage_note": "真实新错信号晚于近期核心复习；重点主动输出。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kepotong",
+      "display": "kepotong",
+      "audio_text": "kepotong",
+      "cn": "被切断；被打断；被扣掉（口语）",
+      "en": "cut off; interrupted; deducted",
+      "root": "potong",
+      "root_cn": "切；剪；扣除",
+      "formation": "口语 ke- + potong；gaji kepotong / telepon kepotong。",
+      "example": "Telepon saya tadi kepotong sebelum kamu selesai bicara.",
+      "example_cn": "你话还没说完，我刚才的电话就断了。",
+      "synonym_note": "kepotong 口语强调被断/扣；dipotong 是较标准的被动形式。",
+      "usage_note": "今日有真实弱项信号；注意不同语境的意思。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngabarin",
+      "display": "ngabarin",
+      "audio_text": "ngabarin",
+      "cn": "通知；告诉一声（口语）",
+      "en": "let someone know; inform",
+      "root": "kabar",
+      "root_cn": "消息；音讯",
+      "formation": "口语 ng- + kabar + -in；ngabarin seseorang soal sesuatu。",
+      "example": "Tolong ngabarin saya kalau jadwalnya berubah.",
+      "example_cn": "如果时间安排变了，请通知我一声。",
+      "synonym_note": "ngabarin 自然口语；memberi tahu / mengabari 更中性或正式。",
+      "usage_note": "今日真实弱项信号；练习一句主动通知。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "keberatan",
+      "display": "keberatan",
+      "audio_text": "keberatan",
+      "cn": "介意；有异议；觉得难以接受",
+      "en": "object; mind; have an objection",
+      "root": "berat",
+      "root_cn": "重；沉重",
+      "formation": "ke- + berat + -an；keberatan kalau... / ada keberatan。",
+      "example": "Ada yang keberatan kalau rapat dipindah ke sore hari?",
+      "example_cn": "会议改到下午，有人介意吗？",
+      "synonym_note": "keberatan 表达异议或介意；menolak 是明确拒绝。",
+      "usage_note": "已正式学习的 active 词；近期核心曝光较少，轮换复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngirit",
+      "display": "ngirit",
+      "audio_text": "ngirit",
+      "cn": "省着用；节省开支（口语）",
+      "en": "save money; be frugal",
+      "root": "irit",
+      "root_cn": "节省；省着用",
+      "formation": "ng- + irit；lagi ngirit / ngirit biaya makan。",
+      "example": "Kami lagi ngirit, jadi jangan cetak dokumen yang tidak perlu.",
+      "example_cn": "我们正在省钱，所以别打印没必要的文件。",
+      "synonym_note": "ngirit 日常口语；hemat 更中性、规范，也可说 hemat biaya。",
+      "usage_note": "今日真实弱项信号；用生活开支场景主动练习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "instan",
+      "display": "instan",
+      "audio_text": "instan",
+      "cn": "即时的；速成的；方便即食的",
+      "en": "instant; quick",
+      "root": "instan",
+      "root_cn": "即时；速成",
+      "formation": "kopi instan / mi instan / hasil instan；语境不同可能是便利或速成。",
+      "example": "Tidak semua masalah punya solusi instan.",
+      "example_cn": "不是所有问题都有立刻见效的解决办法。",
+      "synonym_note": "instan 强调立刻/方便；cepat 只表示速度快。",
+      "usage_note": "今天08:00已教；作为 application，用来描述解决问题。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "karakter",
+      "display": "karakter",
+      "audio_text": "karakter",
+      "cn": "性格；特征；角色",
+      "en": "character; trait",
+      "root": "karakter",
+      "root_cn": "性格；特征",
+      "formation": "karakter seseorang / karakter kerja；指人的特征，也指故事角色。",
+      "example": "Karakter rekan kerja yang baik terlihat saat ada masalah.",
+      "example_cn": "好同事的品格会在出问题时体现出来。",
+      "synonym_note": "karakter 指稳定特征；sikap 侧重某次具体态度。",
+      "usage_note": "今天08:00已教；作为 application，和 cuek 对照。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "guna",
+      "display": "guna",
+      "audio_text": "guna",
+      "cn": "用途；作用；使用",
+      "en": "use; function; purpose",
+      "root": "guna",
+      "root_cn": "用途；作用",
+      "formation": "apa gunanya? / tidak ada gunanya / berguna；口语常用 gunanya。",
+      "example": "Apa gunanya laporan cepat kalau datanya salah?",
+      "example_cn": "如果数据错了，报告再快有什么用？",
+      "synonym_note": "guna 是用途/作用；manfaat 更偏好处和收益。",
+      "usage_note": "今天08:00已教；作为 application，输出 Apa gunanya...?",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sore tadi, jadwal pengiriman berubah mendadak. Saya wajib ngabarin rekan kerja, sebab pelanggan sudah menunggu. Awalnya satu panggilan telepon kepotong, lalu teman saya malah cuek. Saya bilang, \"Jangan diam saja. Kita perlu upaya yang jelas.\" Dia keberatan karena takut harus menanggung biaya tambahan. Saya menjelaskan bahwa perusahaan akan memeriksa masalahnya dulu. Kami juga sedang ngirit, tetapi bukan berarti semua harus selesai secara instan. Setelah tim mengecek data, kami menemukan penyebab keterlambatan. Karakter kerja yang baik terlihat dari cara orang menghadapi masalah, bukan dari janji saja. Apa gunanya laporan cepat kalau informasinya belum benar? Akhirnya, kami ngabarin pelanggan dan menawarkan jadwal baru.",
+    "cn": "今天傍晚，发货计划突然变了。我必须通知同事，因为顾客已经在等。起初有通电话中途断了，同事后来却有点不理不睬。我说：“别光沉默，我们需要明确的处理措施。”他表示异议，因为担心要承担额外费用。我解释说公司会先查清问题。我们也在节省开支，但不代表所有事情都能立刻解决。团队核对数据后，终于找到延误原因。良好的工作品格体现在面对问题的方式，而不只是口头承诺。如果信息还不正确，报告交得快又有什么用？最后，我们通知顾客并提出了新时间安排。"
+  },
+  "dialogue": {
+    "title": "真实口语｜发货延期，如何和同事沟通",
+    "lines": [
+      {
+        "speaker": "A",
+        "id": "Jadwal pengirimannya berubah. Kamu sudah ngabarin pelanggan?",
+        "cn": "发货时间改了。你已经通知顾客了吗？"
+      },
+      {
+        "speaker": "B",
+        "id": "Belum. Telepon tadi kepotong, dan saya belum tahu sebabnya.",
+        "cn": "还没。刚才电话断了，我也还不知道原因。"
+      },
+      {
+        "speaker": "A",
+        "id": "Kita wajib cek dulu. Jangan cuek sama pesan mereka.",
+        "cn": "我们必须先查清楚。别对他们的消息不理不睬。"
+      },
+      {
+        "speaker": "B",
+        "id": "Saya keberatan kalau harus menanggung biaya itu sendiri.",
+        "cn": "如果要我一个人承担那笔费用，我有异议。"
+      },
+      {
+        "speaker": "A",
+        "id": "Tenang. Kita cari upaya yang masuk akal. Solusinya tidak harus instan.",
+        "cn": "别急。我们找个合理的办法，不一定非得立刻解决。"
+      },
+      {
+        "speaker": "B",
+        "id": "Baik, saya ngabarin tim sekarang. Kita lagi ngirit, tapi data harus benar.",
+        "cn": "好，我现在通知团队。我们虽在节省开支，但数据必须正确。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "中译印：我们必须通知顾客，因为发货时间变了。（使用 wajib、ngabarin、sebab）",
+      "reference_answer": "Kita wajib ngabarin pelanggan, sebab jadwal pengiriman berubah.",
+      "reference_cn": "我们必须通知顾客，因为发货时间变了。"
+    },
+    {
+      "task": "口语改写：Jangan bersikap tidak peduli terhadap pesan pelanggan.（用 cuek）",
+      "reference_answer": "Jangan cuek sama pesan pelanggan.",
+      "reference_cn": "别对顾客的消息不理不睬。"
+    },
+    {
+      "task": "中译印：如果电话又断了，请告诉我一声。（用 kepotong、ngabarin）",
+      "reference_answer": "Kalau teleponnya kepotong lagi, tolong ngabarin saya.",
+      "reference_cn": "如果电话又断了，请告诉我一声。"
+    },
+    {
+      "task": "主动表达：用 menanggung、keberatan 和 guna 表达“我介意一个人承担；那有什么用？”",
+      "reference_answer": "Saya keberatan kalau harus menanggung semuanya sendiri. Apa gunanya?",
+      "reference_cn": "如果必须我一个人承担所有事情，我有异议。那有什么用？"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "“承担额外费用”中的“承担”选哪个？",
+        "options": [
+          "menanggung",
+          "ngirit",
+          "cuek",
+          "kepotong"
+        ],
+        "answer_index": 0,
+        "answer": "menanggung",
+        "explain": "menanggung biaya 指承担费用；bertanggung jawab 更强调负有责任。"
+      },
+      {
+        "type": "choice",
+        "prompt": "哪一个词强调“规定或义务上的必须”？",
+        "options": [
+          "sebab",
+          "wajib",
+          "instan",
+          "guna"
+        ],
+        "answer_index": 1,
+        "answer": "wajib",
+        "explain": "wajib 有义务、必须；口语较一般的 harus 语义更宽。"
+      },
+      {
+        "type": "choice",
+        "prompt": "“告诉我一声”最自然的已学口语词是哪一个？",
+        "options": [
+          "keberatan",
+          "ngirit",
+          "ngabarin",
+          "karakter"
+        ],
+        "answer_index": 2,
+        "answer": "ngabarin",
+        "explain": "ngabarin 是口语“通知/告诉一声”，今天的复习核心词。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Jangan ____ sama pesan pelanggan.（不理会；冷淡）",
+        "answer": "cuek",
+        "explain": "cuek sama + 人/事，表示态度上的不在意。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kami lagi ____, jadi harus mengurangi biaya.（节省开支）",
+        "answer": "ngirit",
+        "explain": "lagi ngirit 是自然口语，表示正在节省开销。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：如果有变化，我必须通知团队。",
+        "tokens": [
+          "Kalau",
+          "ada",
+          "perubahan,",
+          "saya",
+          "wajib",
+          "ngabarin",
+          "tim."
+        ],
+        "answer": "Kalau ada perubahan, saya wajib ngabarin tim.",
+        "answer_cn": "如果有变化，我必须通知团队。",
+        "explain": "Kalau 引导条件；wajib + ngabarin 表示有义务告诉一声。"
+      }
+    ],
+    "self_check": [
+      "遮住中文，3秒内主动说出 menanggung、wajib、sebab、cuek 的意思及一个搭配。",
+      "说出 ngabarin 与 memberi tahu 的语体区别，并造一个通知同事的句子。",
+      "比较 cuek 与 tenang，说明为什么冷静不等于不关心。",
+      "用今天08:00的 instan、karakter、guna 各说一个工作场景短句。"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘｜从认识到主动说",
+    "steps": [
+      "用一分钟回忆4个新词：menanggung biaya、wajib ngabarin、apa sebabnya、jangan cuek。",
+      "重点主动复习 upaya、kepotong、ngabarin、keberatan、ngirit，注意不要只看着眼熟就判为掌握。",
+      "复现今天08:00已教的 instan、karakter、guna：用一句话解释为什么工作问题没有万能的快速办法。",
+      "不看原文，用30秒复述：发货为何延期、谁有异议、团队怎样通知顾客。"
+    ]
+  }
+}
