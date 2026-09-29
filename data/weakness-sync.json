@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-29T12:19:52.181Z",
+  "updated_at": "2026-09-29T12:25:13.281Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -28412,6 +28412,87 @@
       "display": "berkembang",
       "last_review": "2026-09-29T12:19:40.658Z",
       "last_mastered": "2026-09-29T12:19:40.658Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "meningkatkan": {
+      "word": "meningkatkan",
+      "status": "active",
+      "updated_at": "2026-09-29T12:24:47.678Z",
+      "display": "meningkatkan",
+      "cn": "提高某事物",
+      "root": "tingkat",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "peningkatan": {
+      "word": "peningkatan",
+      "status": "active",
+      "updated_at": "2026-09-29T12:24:49.685Z",
+      "display": "peningkatan",
+      "cn": "提升、增长",
+      "root": "tingkat",
+      "reasons": [
+        "memory_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "menghadapi": {
+      "word": "menghadapi",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:24:51.785Z",
+      "display": "menghadapi",
+      "last_review": "2026-09-29T12:24:51.757Z",
+      "last_mastered": "2026-09-29T12:24:51.757Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "mempertimbangkan": {
+      "word": "mempertimbangkan",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:24:53.952Z",
+      "display": "mempertimbangkan",
+      "last_review": "2026-09-29T12:24:53.917Z",
+      "last_mastered": "2026-09-29T12:24:53.917Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "menolak": {
+      "word": "menolak",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:24:55.313Z",
+      "display": "menolak",
+      "last_review": "2026-09-29T12:24:55.284Z",
+      "last_mastered": "2026-09-29T12:24:55.284Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "menyesuaikan": {
+      "word": "menyesuaikan",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:24:59.787Z",
+      "display": "menyesuaikan",
+      "last_review": "2026-09-29T12:24:59.752Z",
+      "last_mastered": "2026-09-29T12:24:59.752Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "menghubungi": {
+      "word": "menghubungi",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:25:02.765Z",
+      "display": "menghubungi",
+      "last_review": "2026-09-29T12:25:02.733Z",
+      "last_mastered": "2026-09-29T12:25:02.733Z",
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
