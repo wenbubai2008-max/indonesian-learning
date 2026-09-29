@@ -65,6 +65,7 @@ jobs:
           node .github/scripts/test-publication-plan.js
           node .github/scripts/test-publish-staged-lesson.js
           node .github/scripts/test-real-published-lesson.js
+          node .github/scripts/regression-guard.js
       - name: Validate release diff or explicitly verify code-only PR
         shell: bash
         env:
