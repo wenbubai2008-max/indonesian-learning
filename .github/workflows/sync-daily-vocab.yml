@@ -74,7 +74,13 @@ jobs:
           node .github/scripts/test-publication-plan.js
           node .github/scripts/test-release-pr.js
           node .github/scripts/test-real-published-lesson.js
-          node .github/scripts/regression-guard.js
+          # The PR candidate sets index.pm=true before the post-merge Sync updates runtime.
+          # Run baseline/runtime regression against the pinned main tree; candidate
+          # eligibility and two-file transaction are checked by check-release-pr.js below.
+          baseline_guard_dir="${RUNNER_TEMP}/lesson-baseline-guard-${GITHUB_RUN_ID}"
+          git worktree add --detach "$baseline_guard_dir" "${{ github.event.pull_request.base.sha }}"
+          (cd "$baseline_guard_dir" && node .github/scripts/regression-guard.js)
+          git worktree remove --force "$baseline_guard_dir"
       - name: Check exact PR candidate and index against pinned main
         shell: bash
         env:
