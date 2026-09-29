@@ -89,10 +89,15 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     if(availDont.length>=10)check(vw.every(w=>dont.has(w)),"AM_DONT_PRIORITY","10 available dont -> choose 10 dont");
     else check(vw.filter(w=>dont.has(w)).length===availDont.length,"AM_DONT_PRIORITY","Exhaust dont before fuzzy fallback");
     const oralEligible=[...oral].filter(w=>newPool.has(w)&&!prevNew.has(w));
+    const oralDontEligible=oralEligible.filter(w=>dont.has(w));
+    const oralFuzzyEligible=oralEligible.filter(w=>fuzzy.has(w));
+    const dontSlots=Math.min(10,availDont.length),fuzzySlots=10-dontSlots;
+    // Oral priority must never require a fuzzy word when AM's dont-first contract forbids it.
+    const feasibleOral=Math.min(dontSlots,oralDontEligible.length)+Math.min(fuzzySlots,oralFuzzyEligible.length);
     const marked=vocab.filter(v=>v?.is_oral_new).map(word);
     marked.forEach(w=>pool(w,oral,"ORAL_INELIGIBLE"));
-    if(oralEligible.length>=2)check(marked.length>=2,"ORAL_COUNT","Two oral new words available");
-    if(oralDont.size>=2&&oralEligible.length>=2)check(marked.filter(w=>oralDont.has(w)).length>=Math.min(2,oralDont.size,availDont.length),"ORAL_DONT_PRIORITY","Oral dont first");
+    if(feasibleOral>=2)check(marked.length>=2,"ORAL_COUNT","Two oral new words feasible within AM dont/fuzzy slots");
+    if(oralDontEligible.length>=2)check(marked.filter(w=>oralDont.has(w)).length>=Math.min(2,oralDontEligible.length,dontSlots),"ORAL_DONT_PRIORITY","Oral dont first");
     const rv=lesson.review_vocab,rw=Array.isArray(rv)?rv.map(norm):[];
     check(Array.isArray(rv)&&range(rv.length,4,6)&&rv.every(str)&&new Set(rw).size===rw.length,"AM_REVIEW_INVALID","4-6 unique review_vocab strings required");
     rw.forEach(w=>{pool(w,reviewPool,"REVIEW_INELIGIBLE");check(!vw.includes(w),"REVIEW_NEW_OVERLAP",w)});

@@ -19,6 +19,9 @@ const runTests=function runTests(validate){
  }
  let count=0;const ok=(name,input)=>{const r=validate(input);if(!r.ok)throw Error(name+" valid failed "+JSON.stringify(r.errors));count++};const bad=(name,input,code)=>{const r=validate(input);if(r.ok||!r.errors.some(x=>x.code===code))throw Error(name+" expected "+code+" got "+JSON.stringify(r.errors));count++};
  ok("normal AM",AM());ok("normal PM",PM());
+ {const x=AM();x.runtime.new_pool.push("f1");x.runtime.new_pool_fuzzy.push("f1");x.runtime.oral_new_pool=[["f0"],["f1"]];x.runtime.oral_new_pool_dont=[];x.lesson.vocab.forEach(v=>v.is_oral_new=false);ok("AM all fuzzy oral cannot override ten dont",x)}
+ {const x=AM();x.runtime.new_pool=x.runtime.new_pool.filter(w=>w!=="new9").concat(["f1"]);x.runtime.new_pool_dont.pop();x.runtime.new_pool_fuzzy.push("f1");x.runtime.oral_new_pool=[["f0"],["f1"]];x.runtime.oral_new_pool_dont=[];x.lesson.vocab.forEach(v=>v.is_oral_new=false);x.lesson.vocab[9]={...card("f0"),is_oral_new:true};ok("AM one fuzzy slot cannot force two oral",x)}
+ {const x=AM();x.lesson.vocab.forEach(v=>v.is_oral_new=false);bad("AM still requires two eligible oral dont",x,"ORAL_COUNT")}
  // Regression for 2026-09-28: generated content incorrectly mixed AM and PM keys.
  const matrix=[
   ["AM card missing display","am",x=>delete x.lesson.vocab[0].display,"VOCAB_FIELD_MISSING"],
