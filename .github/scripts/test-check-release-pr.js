@@ -22,7 +22,7 @@ function fixture(make,session){
  if(session==='am')main['data/daily/'+date+'-am.json']=undefined;
  const result=plan({...x,mainHead:sha,reviewHistory:[]});
  assert.equal(result.ok,true,JSON.stringify(result.errors));
- const head={'data/daily/'+date+'-'+session+'.json':clone(x.lesson),
+ const head={['data/daily/'+date+'-'+session+'.json']:clone(x.lesson),
    'data/daily/index.json':JSON.parse(result.files[1].content)};
  const args={headSha:sha,headRef:'lesson-release-'+date+'-'+session,baseRef:'main',mainSha:sha,
   changed:changes(session),loadHead:p=>clone(head[p]),loadMain:(p,required=true)=>{
