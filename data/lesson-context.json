@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-09-29",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 39
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-09-28T14:45:43.031Z",
-    "lesson_watermark": "2026-09-28 18:00",
-    "index_updated": "2026-09-28",
-    "runtime_hash": "d1d1b35ee8852d27994c7791a9f9594b62c6ef0c762e60f07d0522ef542fe750",
-    "index_hash": "ef4663c1e18342ddb3ca5cf14473b9c81ead6988021f00e729ed17d3920b6da6",
+    "runtime_generated_at": "2026-09-29T01:33:14.531Z",
+    "lesson_watermark": "2026-09-29 08:00",
+    "index_updated": "2026-09-29",
+    "runtime_hash": "13d7fa106cbe14b4c1974f6ec863f36c0a88f3e9df861343ec990437cf82e344",
+    "index_hash": "2d507e5f643d06a3196a149e3bbc96b0dee58cd7def0c7ab53de304d34648e36",
     "rules_hash": "b40769cf26e8550b7aa240d1c5538a98c03685c89189308f77dd65db4eed290b"
   },
   "schema": {
@@ -49,38 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "nempel",
-        "“黏住了”"
-      ],
-      [
-        "tenggelam",
-        "沉没 / 溺水"
-      ],
-      [
-        "instan",
-        "即时"
-      ],
-      [
-        "nikmat",
-        "美味，享受"
-      ],
-      [
-        "penduduk",
-        "居民"
-      ],
-      [
-        "aliran",
-        "流派/流动"
-      ],
-      [
-        "sempurna",
-        "完美、圆满"
-      ],
-      [
-        "karakter",
-        "性格、角色"
-      ],
       [
         "sudut",
         "角度、角落"
@@ -506,10 +474,6 @@
         "非凡；很棒"
       ],
       [
-        "namun",
-        "然而"
-      ],
-      [
         "sambil",
         "一边……一边……"
       ],
@@ -592,10 +556,6 @@
       [
         "lepas",
         "取下；释放"
-      ],
-      [
-        "guna",
-        "用途；使用"
       ],
       [
         "hafal",
@@ -1640,6 +1600,16 @@
         "重；沉重"
       ],
       [
+        "aliran",
+        2,
+        0,
+        "",
+        "",
+        "流动；流派；流向",
+        "alir",
+        "流；流动"
+      ],
+      [
         "atur",
         2,
         0,
@@ -1710,6 +1680,26 @@
         "不安"
       ],
       [
+        "guna",
+        2,
+        0,
+        "",
+        "",
+        "用途；作用；使用",
+        "guna",
+        "用途；作用"
+      ],
+      [
+        "instan",
+        2,
+        0,
+        "",
+        "",
+        "即时的；速成的；方便即食的",
+        "instan",
+        "即时；速成"
+      ],
+      [
         "jabatan",
         2,
         0,
@@ -1718,6 +1708,16 @@
         "职位；职务",
         "jabat",
         "担任职务；握"
+      ],
+      [
+        "karakter",
+        2,
+        0,
+        "",
+        "",
+        "性格；特征；角色",
+        "karakter",
+        "性格；角色"
       ],
       [
         "keahlian",
@@ -1840,6 +1840,26 @@
         "想；思考"
       ],
       [
+        "namun",
+        2,
+        0,
+        "",
+        "",
+        "然而；不过",
+        "namun",
+        "然而；不过"
+      ],
+      [
+        "nempel",
+        2,
+        0,
+        "",
+        "",
+        "黏住；贴着（口语）",
+        "tempel",
+        "贴；粘"
+      ],
+      [
         "ngambek",
         2,
         0,
@@ -1850,6 +1870,16 @@
         "赌气；闹别扭"
       ],
       [
+        "nikmat",
+        2,
+        0,
+        "",
+        "",
+        "美味的；享受的感觉",
+        "nikmat",
+        "享受；美味"
+      ],
+      [
         "omzet",
         2,
         0,
@@ -1858,76 +1888,6 @@
         "营业额",
         "omzet",
         "营业额"
-      ],
-      [
-        "pelanggan",
-        2,
-        0,
-        "",
-        "",
-        "顾客；客户",
-        "langgan",
-        "经常购买；订购"
-      ],
-      [
-        "pelayanan",
-        2,
-        0,
-        "",
-        "",
-        "服务；服务质量",
-        "layan",
-        "服务；招待"
-      ],
-      [
-        "peluang",
-        2,
-        0,
-        "",
-        "",
-        "机会；可能性",
-        "peluang",
-        "机会；可能性"
-      ],
-      [
-        "pemasok",
-        2,
-        0,
-        "",
-        "",
-        "供应商",
-        "pasok",
-        "供应；供给"
-      ],
-      [
-        "pendapatan",
-        2,
-        0,
-        "",
-        "",
-        "收入",
-        "dapat",
-        "得到；获得"
-      ],
-      [
-        "perbaiki",
-        2,
-        0,
-        "",
-        "",
-        "修理；改进",
-        "baik",
-        "好"
-      ],
-      [
-        "pernyataan",
-        2,
-        0,
-        "",
-        "",
-        "声明；陈述",
-        "nyata",
-        "真实；明确"
       ]
     ],
     "focus": [
@@ -2189,14 +2149,6 @@
         "fuzzy"
       ],
       [
-        "namun",
-        "书面",
-        "tapi",
-        "namun",
-        227,
-        "dont"
-      ],
-      [
         "agar",
         "书面",
         "biar",
@@ -2219,14 +2171,6 @@
         "siap",
         473,
         "fuzzy"
-      ],
-      [
-        "guna",
-        "书面",
-        "pakai",
-        "guna",
-        529,
-        "dont"
       ],
       [
         "buat",
@@ -2530,6 +2474,29 @@
         "dengan demikian",
         "sial"
       ]
+    },
+    {
+      "date": "2026-09-29",
+      "session": "am",
+      "review_core": [
+        "kabur",
+        "memanggil",
+        "melawan",
+        "bebas",
+        "sebel"
+      ],
+      "new_words": [
+        "nempel",
+        "tenggelam",
+        "instan",
+        "nikmat",
+        "penduduk",
+        "aliran",
+        "sempurna",
+        "karakter",
+        "namun",
+        "guna"
+      ]
     }
   ],
   "previous_pm": {
@@ -2548,7 +2515,88 @@
       "layak"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-09-29",
+    "vocab": [
+      [
+        "nempel",
+        "黏住；贴着（口语）",
+        "stick; be attached",
+        "tempel",
+        "贴；粘"
+      ],
+      [
+        "tenggelam",
+        "沉没；淹没；溺水",
+        "sink; be submerged",
+        "tenggelam",
+        "沉没；淹没"
+      ],
+      [
+        "instan",
+        "即时的；速成的；方便即食的",
+        "instant; quick",
+        "instan",
+        "即时；速成"
+      ],
+      [
+        "nikmat",
+        "美味的；享受的感觉",
+        "delicious; pleasure",
+        "nikmat",
+        "享受；美味"
+      ],
+      [
+        "penduduk",
+        "居民；人口",
+        "resident; inhabitant",
+        "duduk",
+        "坐；居住（词根相关）"
+      ],
+      [
+        "aliran",
+        "流动；流派；流向",
+        "flow; stream; school",
+        "alir",
+        "流；流动"
+      ],
+      [
+        "sempurna",
+        "完美的；完整圆满的",
+        "perfect; complete",
+        "sempurna",
+        "完美；圆满"
+      ],
+      [
+        "karakter",
+        "性格；特征；角色",
+        "character; trait",
+        "karakter",
+        "性格；角色"
+      ],
+      [
+        "namun",
+        "然而；不过",
+        "however; nevertheless",
+        "namun",
+        "然而；不过"
+      ],
+      [
+        "guna",
+        "用途；作用；使用",
+        "use; function",
+        "guna",
+        "用途；作用"
+      ]
+    ],
+    "review_vocab": [
+      "kabur",
+      "memanggil",
+      "melawan",
+      "bebas",
+      "sebel"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

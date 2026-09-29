@@ -11042,17 +11042,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-09-18 08:00",
+    "last_seen": "2026-09-29 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-29"
     ],
     "lesson_occurrences": [
-      "2026-09-18 08:00"
+      "2026-09-18 08:00",
+      "2026-09-29 08:00"
     ]
   },
   {
@@ -11474,17 +11476,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-29 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-19"
+      "2026-09-19",
+      "2026-09-29"
     ],
     "lesson_occurrences": [
-      "2026-09-19 08:00"
+      "2026-09-19 08:00",
+      "2026-09-29 08:00"
     ]
   },
   {
@@ -11632,17 +11636,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-29 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-09-29"
     ],
     "lesson_occurrences": [
-      "2026-09-20 08:00"
+      "2026-09-20 08:00",
+      "2026-09-29 08:00"
     ]
   },
   {
@@ -11772,17 +11778,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-20 08:00",
+    "last_seen": "2026-09-29 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-09-29"
     ],
     "lesson_occurrences": [
-      "2026-09-20 08:00"
+      "2026-09-20 08:00",
+      "2026-09-29 08:00"
     ]
   },
   {
@@ -13340,17 +13348,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-09-29 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-25"
+      "2026-09-25",
+      "2026-09-29"
     ],
     "lesson_occurrences": [
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-09-29 08:00"
     ]
   },
   {
@@ -14748,6 +14758,258 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-09-28 18:00"
+    ]
+  },
+  {
+    "word": "nempel",
+    "cn": "黏住；贴着（口语）",
+    "en": "stick; be attached",
+    "root": "tempel",
+    "root_cn": "贴；粘",
+    "example": "Stiker ini nempel kuat di botol.",
+    "example_cn": "这个贴纸牢牢粘在瓶子上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 08:00"
+    ]
+  },
+  {
+    "word": "tenggelam",
+    "cn": "沉没；淹没；溺水",
+    "en": "sink; be submerged",
+    "root": "tenggelam",
+    "root_cn": "沉没；淹没",
+    "example": "Perahu kecil itu hampir tenggelam karena hujan deras.",
+    "example_cn": "那艘小船因为大雨差点沉没。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 08:00"
+    ]
+  },
+  {
+    "word": "instan",
+    "cn": "即时的；速成的；方便即食的",
+    "en": "instant; quick",
+    "root": "instan",
+    "root_cn": "即时；速成",
+    "example": "Saya memilih mi instan karena tidak sempat memasak.",
+    "example_cn": "我没时间做饭，所以选了方便面。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 08:00"
+    ]
+  },
+  {
+    "word": "nikmat",
+    "cn": "美味的；享受的感觉",
+    "en": "delicious; pleasure",
+    "root": "nikmat",
+    "root_cn": "享受；美味",
+    "example": "Kopi hangat terasa nikmat setelah hujan.",
+    "example_cn": "下雨后喝热咖啡感觉很享受。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 08:00"
+    ]
+  },
+  {
+    "word": "penduduk",
+    "cn": "居民；人口",
+    "en": "resident; inhabitant",
+    "root": "duduk",
+    "root_cn": "坐；居住（词根相关）",
+    "example": "Banyak penduduk lokal bekerja di kawasan ini.",
+    "example_cn": "很多当地居民在这个地区工作。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 08:00"
+    ]
+  },
+  {
+    "word": "aliran",
+    "cn": "流动；流派；流向",
+    "en": "flow; stream; school",
+    "root": "alir",
+    "root_cn": "流；流动",
+    "example": "Aliran air di kamar mandi tiba-tiba berhenti.",
+    "example_cn": "浴室里的水流突然停了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 08:00"
+    ]
+  },
+  {
+    "word": "sempurna",
+    "cn": "完美的；完整圆满的",
+    "en": "perfect; complete",
+    "root": "sempurna",
+    "root_cn": "完美；圆满",
+    "example": "Hasilnya belum sempurna, tetapi sudah cukup baik.",
+    "example_cn": "结果还不完美，但已经足够好了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 08:00"
+    ]
+  },
+  {
+    "word": "karakter",
+    "cn": "性格；特征；角色",
+    "en": "character; trait",
+    "root": "karakter",
+    "root_cn": "性格；角色",
+    "example": "Dia punya karakter yang tenang dan sabar.",
+    "example_cn": "他的性格沉稳而有耐心。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 08:00"
+    ]
+  },
+  {
+    "word": "namun",
+    "cn": "然而；不过",
+    "en": "however; nevertheless",
+    "root": "namun",
+    "root_cn": "然而；不过",
+    "example": "Rencananya bagus, namun biayanya terlalu tinggi.",
+    "example_cn": "计划很好，不过成本太高。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 08:00"
+    ]
+  },
+  {
+    "word": "guna",
+    "cn": "用途；作用；使用",
+    "en": "use; function",
+    "root": "guna",
+    "root_cn": "用途；作用",
+    "example": "Alat ini punya banyak guna untuk pekerjaan sehari-hari.",
+    "example_cn": "这个工具在日常工作中有很多用途。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-29"
+    ],
+    "lesson_occurrences": [
+      "2026-09-29 08:00"
     ]
   }
 ];
