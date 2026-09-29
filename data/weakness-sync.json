@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-29T10:49:55.347Z",
+  "updated_at": "2026-09-29T12:19:52.181Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -28337,6 +28337,7 @@
       "display": "ngabarin",
       "cn": "通知；告诉一声（口语）",
       "root": "kabar",
+      "root_cn": "消息；音讯",
       "last_wrong": "2026-09-29T10:46:14.946Z",
       "last_review": "2026-09-29T10:46:14.946Z",
       "reasons": [
@@ -28392,6 +28393,28 @@
       ],
       "wrong_count": 1,
       "right_streak": 0
+    },
+    "menyadari": {
+      "word": "menyadari",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:19:36.864Z",
+      "display": "menyadari",
+      "last_review": "2026-09-29T12:19:36.828Z",
+      "last_mastered": "2026-09-29T12:19:36.828Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
+    },
+    "berkembang": {
+      "word": "berkembang",
+      "status": "mastered",
+      "updated_at": "2026-09-29T12:19:40.691Z",
+      "display": "berkembang",
+      "last_review": "2026-09-29T12:19:40.658Z",
+      "last_mastered": "2026-09-29T12:19:40.658Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
     }
   }
 }
