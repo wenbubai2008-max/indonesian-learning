@@ -52,6 +52,13 @@ function main(){
  git('fetch','origin','main');
  const mainSha=git('rev-parse','origin/main');
  const changed=git('diff','--name-status','origin/main...HEAD').split('\n').filter(Boolean);
+ // Code-only PRs are allowed. Any PR modifying daily course/index data MUST be an approved release,
+ // even when someone gives it a different branch name.
+ const touchesDaily=changed.some(row=>/\tdata\/daily\//.test(row));
+ if(!touchesDaily&&!/^lesson-release-/.test(process.env.PR_HEAD_REF||'')){
+  console.log('CODE_ONLY_PR '+JSON.stringify({ok:true,headSha,mainSha,dailyFilesChanged:0}));
+  return;
+ }
  const report=verify({headSha,headRef:process.env.PR_HEAD_REF,baseRef:process.env.PR_BASE_REF,mainSha,changed,
   loadHead:(path,required=true)=>read('HEAD',path,required),
   loadMain:(path,required=true)=>read('origin/main',path,required)});
