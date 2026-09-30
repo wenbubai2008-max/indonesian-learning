@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-30T01:58:52.292Z",
+  "updated_at": "2026-09-30T02:13:17.724Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -22356,10 +22356,11 @@
     "guna": {
       "word": "guna",
       "status": "active",
-      "updated_at": "2026-09-12T17:07:48.516Z",
+      "updated_at": "2026-09-30T02:13:07.195Z",
       "display": "guna",
-      "cn": "用途；使用",
+      "cn": "用途；作用；使用",
       "root": "guna",
+      "root_cn": "用途；作用",
       "reasons": [
         "memory_dont"
       ],
