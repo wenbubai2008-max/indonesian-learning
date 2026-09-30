@@ -31,6 +31,11 @@ on:
       - '.github/scripts/test-release-pr.js'
       - '.github/scripts/plan-lesson-publication.js'
       - '.github/scripts/validate-lesson-candidate.js'
+      - '.github/scripts/publish-extensive-reading-candidate.js'
+      - 'data/extensive-reading-candidate.json'
+      - 'data/extensive-reading-data.js'
+      - 'data/extensive-reading-history.js'
+      - 'data/extensive-reading-history/*.js'
       - 'data/daily/index.json'
       - 'data/daily/*-am.json'
       - 'data/daily/*-pm.json'
@@ -51,7 +56,7 @@ concurrency:
 jobs:
   # Read-only PR gate: complete lesson+index, exact head SHA, same authoritative validator.
   preflight:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' && !startsWith(github.head_ref, 'extensive-reading-')
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -99,6 +104,101 @@ jobs:
             fi
             echo 'Non-lesson code PR: synthetic tests and regression guard passed; no release requested.'
           fi
+  extensive_reading_release:
+    if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'extensive-reading-')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Gate same-repository extensive reading release
+        shell: bash
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_BASE_REF: ${{ github.event.pull_request.base.ref }}
+          PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
+          PR_HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          PR_USER: ${{ github.event.pull_request.user.login }}
+        run: |
+          set -Eeuo pipefail
+          owner="${GITHUB_REPOSITORY%%/*}"
+          test "$PR_BASE_REF" = "main"
+          test "$PR_HEAD_REPO" = "$GITHUB_REPOSITORY"
+          test "$PR_USER" = "$owner"
+          [[ "$PR_HEAD_REF" =~ ^extensive-reading-[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]
+          grep -Fq 'AUTO_PUBLISH_EXTENSIVE_READING=1' <<<"$PR_BODY"
+
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      - name: Build, validate and squash-merge the reading release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          set -Eeuo pipefail
+          release_date="${PR_HEAD_REF#extensive-reading-}"
+          git fetch --no-tags origin main
+          latest_main="$(git rev-parse origin/main)"
+          if [ "$latest_main" != "$PR_BASE_SHA" ]; then
+            echo "::error title=Extensive reading base moved::Expected $PR_BASE_SHA but origin/main is $latest_main. Refresh the same release branch from the new main before retrying."
+            exit 1
+          fi
+
+          changed_before="$(git diff --name-only "$PR_BASE_SHA" HEAD)"
+          unexpected_before="$(printf '%s\n' "$changed_before" | grep -Ev '^(data/extensive-reading-candidate[.]json|data/extensive-reading-data[.]js|data/extensive-reading-history[.]js|data/extensive-reading-history/[0-9]{4}-[0-9]{2}-[0-9]{2}(-[a-z0-9-]+)?[.]js)$' || true)"
+          if [ -n "$unexpected_before" ]; then
+            echo "::error title=Unexpected reading PR paths::$unexpected_before"
+            exit 1
+          fi
+          test -f data/extensive-reading-candidate.json
+
+          trusted_script="$RUNNER_TEMP/publish-extensive-reading-candidate.js"
+          git show "$PR_BASE_SHA:.github/scripts/publish-extensive-reading-candidate.js" > "$trusted_script"
+          node --check "$trusted_script"
+          node "$trusted_script" prepare --repo "$GITHUB_WORKSPACE" --base "$PR_BASE_SHA" --date "$release_date"
+
+          node .github/scripts/regression-guard.js
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- data/extensive-reading-candidate.json data/extensive-reading-data.js data/extensive-reading-history.js data/extensive-reading-history
+          if git diff --cached --quiet; then
+            echo '::error title=No publishable reading diff::Candidate produced no final repository change.'
+            exit 1
+          fi
+          git commit -m "Prepare extensive reading ${release_date}"
+          final_sha="$(git rev-parse HEAD)"
+
+          node "$trusted_script" validate --repo "$GITHUB_WORKSPACE" --base "$PR_BASE_SHA" --date "$release_date"
+          git push origin "HEAD:$PR_HEAD_REF"
+
+          git fetch --no-tags origin main
+          latest_main="$(git rev-parse origin/main)"
+          if [ "$latest_main" != "$PR_BASE_SHA" ]; then
+            echo "::error title=Main advanced before reading merge::Final branch is preserved at $final_sha; refresh against $latest_main instead of forcing a merge."
+            exit 1
+          fi
+
+          response="$(gh api --method PUT "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/merge" -f merge_method=squash -f sha="$final_sha")"
+          printf '%s\n' "$response"
+          merged="$(jq -r '.merged // false' <<<"$response")"
+          if [ "$merged" != "true" ]; then
+            echo '::error title=Extensive reading merge failed::GitHub did not report merged=true.'
+            exit 1
+          fi
+          merge_sha="$(jq -r '.sha // empty' <<<"$response")"
+          echo "EXTENSIVE_READING_PUBLISHED date=$release_date pr=$PR_NUMBER head=$final_sha merge=$merge_sha"
+
   sync:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
