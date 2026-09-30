@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-09-30T14:11:42.167Z",
+    "runtime_generated_at": "2026-09-30T14:16:44.737Z",
     "lesson_watermark": "2026-09-30 18:00",
     "index_updated": "2026-09-30",
-    "runtime_hash": "fc07662e96dc9a7ba48b3e805c4d74c9407c35d24ad50d47a4feba01f7c6392f",
+    "runtime_hash": "3d1feaf16648f588c95f900706db62fbff79e59b9d524d7a32291935b73ce874",
     "index_hash": "299acec271a6209092a13e62d697aa49c4de6cbf5dad56121b09e12fe88b4419",
     "rules_hash": "8e7b300bbe10f68da978e5de23aa08795fcd036833ba349fd4fa2548990c47ce"
   },
@@ -1426,6 +1426,26 @@
         "重；沉重"
       ],
       [
+        "memisahkan",
+        1,
+        1,
+        "2026-09-30T14:12:57.994Z",
+        "2026-09-30T14:12:57.994Z",
+        "分离",
+        "pisah",
+        "分开"
+      ],
+      [
+        "kesepakatan",
+        1,
+        1,
+        "2026-09-30T14:12:20.417Z",
+        "2026-09-30T14:12:20.417Z",
+        "协议；共识",
+        "sepakat",
+        "同意；达成一致"
+      ],
+      [
         "berantakan",
         1,
         1,
@@ -1804,26 +1824,6 @@
         "倾诉；诉苦；聊心事",
         "curhat",
         "倾诉（curahan hati的口语缩略）"
-      ],
-      [
-        "demikian",
-        2,
-        0,
-        "",
-        "",
-        "如此；这样",
-        "demikian",
-        "如此；这样"
-      ],
-      [
-        "dengan demikian",
-        2,
-        0,
-        "",
-        "",
-        "因此；这样一来",
-        "demikian",
-        "如此；这样"
       ]
     ],
     "focus": [
@@ -1996,6 +1996,22 @@
         ]
       ],
       [
+        "memisahkan",
+        66,
+        [
+          "quick_wrong",
+          "dont"
+        ]
+      ],
+      [
+        "kesepakatan",
+        66,
+        [
+          "quick_wrong",
+          "dont"
+        ]
+      ],
+      [
         "berantakan",
         66,
         [
@@ -2053,20 +2069,6 @@
       ],
       [
         "kelabakan",
-        40,
-        [
-          "quick_wrong"
-        ]
-      ],
-      [
-        "ngirit",
-        40,
-        [
-          "quick_wrong"
-        ]
-      ],
-      [
-        "nanggung",
         40,
         [
           "quick_wrong"
