@@ -57,7 +57,10 @@ function read(ref,p,required=true){
 if(require.main===module){
  const [baseSha,headSha,branch]=process.argv.slice(2);
  try{
-  const files=git('diff','--name-only',baseSha,headSha).split('\n').filter(Boolean);
+  // A PR introduces changes since the merge base. Comparing both complete trees
+  // falsely counts main-only changes when the release branch is behind main.
+  // inspect still validates eligibility and the exact index against baseSha.
+  const files=git('diff','--name-only',baseSha+'...'+headSha).split('\n').filter(Boolean);
   const report=inspect({baseSha,headSha,branch,files,read});
   console.log('RELEASE_PREFLIGHT '+JSON.stringify(report));
   if(!report.ok)process.exitCode=1;
