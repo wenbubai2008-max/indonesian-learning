@@ -1,0 +1,334 @@
+{
+  "date": "2026-09-30",
+  "session": "pm",
+  "time": "18:00",
+  "day": 40,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜日常沟通：安排、提醒与生活表达",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "mencret",
+    "kata sandi",
+    "agar",
+    "lezat"
+  ],
+  "vocab": [
+    {
+      "word": "mencret",
+      "display": "mencret",
+      "audio_text": "mencret",
+      "cn": "拉肚子；腹泻（口语）",
+      "en": "have diarrhea (colloquial)",
+      "root": "mencret",
+      "root_cn": "拉肚子",
+      "formation": "日常口语，常说 lagi mencret、mencret sejak tadi malam；正式或医疗场景更常用 diare。",
+      "example": "Saya mencret sejak tadi malam, jadi hari ini saya makan yang ringan saja.",
+      "example_cn": "我从昨晚开始拉肚子，所以今天只吃清淡的。",
+      "synonym_note": "mencret 很口语；diare 更正式、更适合医疗场景。",
+      "usage_note": "真实日常口语；练习 lagi mencret / agak mencret。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "kata sandi",
+      "display": "kata sandi",
+      "audio_text": "kata sandi",
+      "cn": "密码",
+      "en": "password",
+      "root": "kata sandi",
+      "root_cn": "密码",
+      "formation": "标准印尼语的“密码”；常见 ganti kata sandi、lupa kata sandi。日常聊天也常直接说 password。",
+      "example": "Saya lupa kata sandi akun itu, jadi belum bisa masuk.",
+      "example_cn": "我忘了那个账号的密码，所以还登录不了。",
+      "synonym_note": "kata sandi 是标准表达；password 是非常常见的借词口语。",
+      "usage_note": "主动练习 lupa kata sandi / ganti kata sandi。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "agar",
+      "display": "agar",
+      "audio_text": "agar",
+      "cn": "为了；以便",
+      "en": "so that; in order to",
+      "root": "agar",
+      "root_cn": "为了；以便",
+      "formation": "连接目的，常见 agar + 主语/动作；口语中 biar 往往更自然，agar 稍正式。",
+      "example": "Simpan nomor ini agar kamu mudah menghubungi saya.",
+      "example_cn": "把这个号码存下来，以便你方便联系我。",
+      "synonym_note": "agar 与 supaya 都可表示目的；biar 更口语。",
+      "usage_note": "练习 agar + 结果/目的，注意与 biar 的语体区别。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "lezat",
+      "display": "lezat",
+      "audio_text": "lezat",
+      "cn": "美味的；可口的",
+      "en": "delicious",
+      "root": "lezat",
+      "root_cn": "美味",
+      "formation": "常用于 makanan yang lezat、rasanya lezat；日常口语里 enak 更常见、更自然。",
+      "example": "Sup ikan ini lezat, tapi rasanya tidak terlalu berat.",
+      "example_cn": "这鱼汤很好吃，而且味道不算太重。",
+      "synonym_note": "lezat 偏标准书面；enak 是日常最常见的“好吃”。",
+      "usage_note": "重点辨析 lezat 与 enak 的语体差异。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menyalin",
+      "display": "menyalin",
+      "audio_text": "menyalin",
+      "cn": "复制；抄写",
+      "en": "copy; transcribe",
+      "root": "salin",
+      "root_cn": "复制；抄写",
+      "formation": "meN- + salin；可用于 menyalin teks / data / nomor。",
+      "example": "Tolong menyalin nomor pesanan ini ke dokumen baru.",
+      "example_cn": "请把这个订单号复制到新文档里。",
+      "synonym_note": "menyalin 是复制内容；memindahkan 是移动位置。",
+      "usage_note": "当前重点弱词；主动输出 menyalin teks / nomor。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "seraya",
+      "display": "seraya",
+      "audio_text": "seraya",
+      "cn": "同时；一边……一边……",
+      "en": "while; at the same time",
+      "root": "seraya",
+      "root_cn": "同时",
+      "formation": "较书面，表示两个动作同时发生；口语更常用 sambil。",
+      "example": "Dia tersenyum seraya menjelaskan masalah itu.",
+      "example_cn": "他一边微笑，一边解释那个问题。",
+      "synonym_note": "seraya 较书面；sambil 更常用于日常口语。",
+      "usage_note": "当前重点弱词；注意不要把 seraya 当作日常最自然的口语表达。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kabur",
+      "display": "kabur",
+      "audio_text": "kabur",
+      "cn": "逃跑；溜走；模糊",
+      "en": "run away; blurry",
+      "root": "kabur",
+      "root_cn": "逃跑；模糊",
+      "formation": "可指人逃走，也可说 gambarnya kabur 表示画面模糊。",
+      "example": "Orang itu kabur sebelum petugas datang.",
+      "example_cn": "工作人员到之前，那个人就跑了。",
+      "synonym_note": "kabur 强调逃走；pergi 只是离开。画面语境中 kabur 也可表示模糊。",
+      "usage_note": "当前重点弱词；分别练习“逃跑”和“模糊”两个义项。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menegaskan",
+      "display": "menegaskan",
+      "audio_text": "menegaskan",
+      "cn": "强调；明确说明",
+      "en": "emphasize; affirm",
+      "root": "tegas",
+      "root_cn": "明确；坚定",
+      "formation": "meN- + tegas + -kan；常用 menegaskan bahwa...。",
+      "example": "Atasan menegaskan bahwa data pelanggan harus aman.",
+      "example_cn": "上司强调客户数据必须安全。",
+      "synonym_note": "menegaskan 是强调、明确确认；menjelaskan 是解释。",
+      "usage_note": "当前重点弱词；主动输出 menegaskan bahwa...。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "beliau",
+      "display": "beliau",
+      "audio_text": "beliau",
+      "cn": "他／她（尊称）",
+      "en": "he/she (respectful)",
+      "root": "beliau",
+      "root_cn": "尊称他／她",
+      "formation": "用于尊敬地指长辈、上级或值得尊敬的人；比 dia 更尊敬。",
+      "example": "Beliau meminta kami menyiapkan laporan sebelum rapat.",
+      "example_cn": "他／她（尊称）要求我们在会议前准备好报告。",
+      "synonym_note": "beliau 比 dia 更尊敬；Anda 是直接称呼对方的“您”。",
+      "usage_note": "今天08:00已教；晚课作为 application 复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bangunan",
+      "display": "bangunan",
+      "audio_text": "bangunan",
+      "cn": "建筑；建筑物",
+      "en": "building; structure",
+      "root": "bangun",
+      "root_cn": "建；起；醒",
+      "formation": "bangun + -an 表示建成的东西，即建筑物。",
+      "example": "Bangunan itu terlihat jelas dari sudut jalan ini.",
+      "example_cn": "从这个街角能清楚看到那栋建筑。",
+      "synonym_note": "bangunan 是名词“建筑物”；membangun 是动词“建造”。",
+      "usage_note": "今天08:00已教；晚课作为 application 复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sore ini saya membantu rekan kerja menyiapkan akun baru. Dia lupa kata sandi, jadi saya menyalin petunjuknya lagi agar lebih mudah dibaca. Atasan menegaskan bahwa data pelanggan tidak boleh dibagikan sembarangan. Beliau juga meminta kami menyelesaikan pekerjaan sebelum pulang. Saat istirahat, teman saya bilang perutnya mencret setelah makan di luar. Saya menyarankan dia makan makanan ringan dulu. Sup di kantin ternyata cukup lezat. Sambil makan, kami melihat sebuah bangunan baru dari jendela. Tiba-tiba seekor kucing kabur melewati halaman, dan semua orang tertawa. Hari yang sibuk akhirnya terasa lebih santai.",
+    "cn": "今天傍晚，我帮同事准备一个新账号。他忘了密码，所以我把说明重新复制了一遍，以便更容易阅读。上司强调，客户数据不能随便分享。他／她（尊称）还要求我们下班前完成工作。休息时，同事说他在外面吃饭后拉肚子。我建议他先吃清淡一点。食堂的汤其实挺好吃。吃饭时，我们从窗户看到一栋新建筑。突然一只猫从院子里跑过去，大家都笑了。忙碌的一天最后轻松了不少。"
+  },
+  "dialogue": {
+    "title": "真实口语｜忘记密码与工作提醒",
+    "lines": [
+      {
+        "speaker": "A",
+        "id": "Aku lupa kata sandi akun ini. Bisa bantu?",
+        "cn": "我忘了这个账号的密码，能帮忙吗？"
+      },
+      {
+        "speaker": "B",
+        "id": "Bisa. Aku salin petunjuknya lagi agar lebih jelas.",
+        "cn": "可以。我再复制一下说明，让它更清楚。"
+      },
+      {
+        "speaker": "A",
+        "id": "Atasan tadi bilang apa?",
+        "cn": "上司刚才说什么了？"
+      },
+      {
+        "speaker": "B",
+        "id": "Beliau menegaskan bahwa data pelanggan harus tetap aman.",
+        "cn": "他／她（尊称）强调客户数据必须保持安全。"
+      },
+      {
+        "speaker": "A",
+        "id": "Oke. Setelah ini aku mau makan dulu. Perutku agak mencret.",
+        "cn": "好。之后我想先吃点东西，我肚子有点拉。"
+      },
+      {
+        "speaker": "B",
+        "id": "Makan yang ringan saja. Sup di kantin lumayan lezat.",
+        "cn": "吃清淡一点吧，食堂的汤还挺好吃。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "中译印：我忘了密码，所以还不能登录。（使用 kata sandi）",
+      "reference_answer": "Saya lupa kata sandi, jadi belum bisa masuk.",
+      "reference_cn": "我忘了密码，所以还不能登录。"
+    },
+    {
+      "task": "中译印：请把说明复制给我，以便我能再检查一次。（使用 menyalin、agar）",
+      "reference_answer": "Tolong menyalin petunjuknya untuk saya agar saya bisa memeriksanya sekali lagi.",
+      "reference_cn": "请把说明复制给我，以便我能再检查一次。"
+    },
+    {
+      "task": "口语表达：我有点拉肚子，所以今天吃清淡一点。（使用 mencret）",
+      "reference_answer": "Saya agak mencret, jadi hari ini saya makan yang ringan saja.",
+      "reference_cn": "我有点拉肚子，所以今天吃清淡一点。"
+    },
+    {
+      "task": "主动复现：使用 beliau、menegaskan、bangunan 表达“他／她（尊称）强调那栋建筑今天不能进入”。",
+      "reference_answer": "Beliau menegaskan bahwa bangunan itu tidak boleh dimasuki hari ini.",
+      "reference_cn": "他／她（尊称）强调那栋建筑今天不能进入。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "“忘记账号密码”里的“密码”选哪个？",
+        "options": [
+          "kata sandi",
+          "seraya",
+          "kabur",
+          "bangunan"
+        ],
+        "answer_index": 0,
+        "answer": "kata sandi",
+        "explain": "kata sandi 是标准印尼语的“密码”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "哪一个词最适合表示“强调、明确说明”？",
+        "options": [
+          "menyalin",
+          "lezat",
+          "menegaskan",
+          "mencret"
+        ],
+        "answer_index": 2,
+        "answer": "menegaskan",
+        "explain": "menegaskan 表示强调、明确说明。"
+      },
+      {
+        "type": "choice",
+        "prompt": "“一边微笑一边解释”中较书面的“一边……一边……”是哪一个复习词？",
+        "options": [
+          "agar",
+          "seraya",
+          "beliau",
+          "kabur"
+        ],
+        "answer_index": 1,
+        "answer": "seraya",
+        "explain": "seraya 较书面地表示两个动作同时进行；口语更常用 sambil。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Saya lupa _____, jadi belum bisa masuk ke akun.（密码）",
+        "answer": "kata sandi",
+        "explain": "kata sandi = 密码。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Simpan nomor ini _____ kamu mudah menghubungi saya.（为了；以便）",
+        "answer": "agar",
+        "explain": "agar 用来连接目的，相当于“为了；以便”。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：他／她（尊称）强调客户数据必须保持安全。",
+        "tokens": [
+          "Beliau",
+          "menegaskan",
+          "bahwa",
+          "data pelanggan",
+          "harus",
+          "tetap",
+          "aman."
+        ],
+        "answer": "Beliau menegaskan bahwa data pelanggan harus tetap aman.",
+        "answer_cn": "他／她（尊称）强调客户数据必须保持安全。",
+        "explain": "menegaskan bahwa... = 强调／明确说明……。"
+      }
+    ],
+    "self_check": [
+      "遮住中文，3秒内说出 mencret / kata sandi / agar / lezat 的意思和一个常见搭配。",
+      "说出 mencret ↔ diare、lezat ↔ enak、agar ↔ biar 的语体区别。",
+      "主动用 menyalin / seraya / kabur / menegaskan 各造一个短句。",
+      "复现今天08:00已教的 beliau / bangunan，并说明 bangunan 与 membangun 的词性区别。"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "连续说出4个新词：mencret、kata sandi、agar、lezat，并各说一个生活场景。",
+      "不看中文主动回忆 menyalin、seraya、kabur、menegaskan。",
+      "用 beliau + bangunan 造一个职场句子，并用30秒复述：同事为什么不能登录、上司强调了什么、休息时发生了什么。"
+    ]
+  }
+}
