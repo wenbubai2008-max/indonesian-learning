@@ -4931,21 +4931,25 @@ window.DAILY_VOCAB_DB = [
     "root": "arti",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-01 19:00",
-    "last_seen": "2026-09-01 19:00",
+    "last_seen": "2026-09-30 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-01"
+      "2026-09-01",
+      "2026-09-30"
     ],
     "example": "Berarti besok kita nggak perlu datang pagi-pagi.",
     "example_cn": "也就是说，明天我们不用一大早来。",
     "lesson_occurrences": [
-      "2026-09-01 19:00"
+      "2026-09-01 19:00",
+      "2026-09-30 08:00"
     ]
   },
   {
@@ -10655,9 +10659,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-26 18:00",
+    "last_seen": "2026-09-30 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -10668,7 +10672,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-23",
       "2026-09-24",
       "2026-09-25",
-      "2026-09-26"
+      "2026-09-26",
+      "2026-09-30"
     ],
     "lesson_occurrences": [
       "2026-09-17 08:00",
@@ -10677,7 +10682,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-23 18:00",
       "2026-09-24 08:00",
       "2026-09-25 08:00",
-      "2026-09-26 18:00"
+      "2026-09-26 18:00",
+      "2026-09-30 08:00"
     ]
   },
   {
@@ -11237,19 +11243,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "那条道路的建设快完成了。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-09-18 18:00",
+    "last_seen": "2026-09-30 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-30"
     ],
     "lesson_occurrences": [
-      "2026-09-18 18:00"
+      "2026-09-18 18:00",
+      "2026-09-30 08:00"
     ]
   },
   {
@@ -11263,19 +11273,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-09-18 18:00",
+    "last_seen": "2026-09-30 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-30"
     ],
     "lesson_occurrences": [
-      "2026-09-18 18:00"
+      "2026-09-18 18:00",
+      "2026-09-30 08:00"
     ]
   },
   {
@@ -11519,17 +11533,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-19 08:00",
+    "last_seen": "2026-09-30 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-19"
+      "2026-09-19",
+      "2026-09-30"
     ],
     "lesson_occurrences": [
-      "2026-09-19 08:00"
+      "2026-09-19 08:00",
+      "2026-09-30 08:00"
     ]
   },
   {
@@ -15139,6 +15155,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-09-29 18:00"
+    ]
+  },
+  {
+    "word": "sudut",
+    "cn": "角落；角度",
+    "en": "corner; angle",
+    "root": "sudut",
+    "root_cn": "角落；角度",
+    "example": "Saya duduk di sudut ruangan yang lebih tenang.",
+    "example_cn": "我坐在房间里更安静的角落。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 08:00"
+    ]
+  },
+  {
+    "word": "kalah",
+    "cn": "输；失败",
+    "en": "lose; be defeated",
+    "root": "kalah",
+    "root_cn": "输；失败",
+    "example": "Tim kami kalah, tetapi kami tetap belajar dari kesalahan.",
+    "example_cn": "我们队输了，但还是从错误中学习。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 08:00"
+    ]
+  },
+  {
+    "word": "pula",
+    "cn": "也；又；再",
+    "en": "also; too",
+    "root": "pula",
+    "root_cn": "也；又",
+    "example": "Harganya murah dan kualitasnya bagus pula.",
+    "example_cn": "价格便宜，而且质量也不错。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 08:00"
+    ]
+  },
+  {
+    "word": "selera",
+    "cn": "胃口；口味；喜好",
+    "en": "appetite; taste; preference",
+    "root": "selera",
+    "root_cn": "胃口；喜好",
+    "example": "Pagi ini saya tidak punya selera makan.",
+    "example_cn": "今天早上我没什么胃口。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 08:00"
+    ]
+  },
+  {
+    "word": "demikian",
+    "cn": "如此；这样",
+    "en": "thus; so; such",
+    "root": "demikian",
+    "root_cn": "如此；这样",
+    "example": "Kalau kondisinya demikian, kita perlu mengubah rencana.",
+    "example_cn": "如果情况是这样，我们需要改变计划。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 08:00"
+    ]
+  },
+  {
+    "word": "bangsa",
+    "cn": "民族；国家",
+    "en": "nation; people",
+    "root": "bangsa",
+    "root_cn": "民族；国家",
+    "example": "Setiap bangsa punya kebiasaan dan budaya yang berbeda.",
+    "example_cn": "每个民族都有不同的习惯和文化。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 08:00"
+    ]
+  },
+  {
+    "word": "beliau",
+    "cn": "他／她（尊称）",
+    "en": "he/she (respectful)",
+    "root": "beliau",
+    "root_cn": "尊称他／她",
+    "example": "Beliau sudah bekerja di perusahaan ini selama dua puluh tahun.",
+    "example_cn": "他已经在这家公司工作二十年了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 08:00"
+    ]
+  },
+  {
+    "word": "pendidikan",
+    "cn": "教育；教育程度",
+    "en": "education",
+    "root": "didik",
+    "root_cn": "教育；培养",
+    "example": "Pendidikan dan pengalaman sama-sama penting dalam pekerjaan.",
+    "example_cn": "教育和经验在工作中都很重要。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 08:00"
+    ]
+  },
+  {
+    "word": "bangunan",
+    "cn": "建筑；建筑物",
+    "en": "building; structure",
+    "root": "bangun",
+    "root_cn": "建；起；醒",
+    "example": "Bangunan baru itu berada di sebelah kantor kami.",
+    "example_cn": "那栋新建筑就在我们办公室旁边。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 08:00"
+    ]
+  },
+  {
+    "word": "membangun",
+    "cn": "建造；建设；建立",
+    "en": "build; develop",
+    "root": "bangun",
+    "root_cn": "建；起；醒",
+    "example": "Perusahaan ingin membangun gudang baru tahun depan.",
+    "example_cn": "公司想明年建一个新仓库。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 08:00"
     ]
   }
 ];

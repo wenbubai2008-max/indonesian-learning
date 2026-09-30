@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-09-30",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 40
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-09-29T12:30:44.098Z",
-    "lesson_watermark": "2026-09-29 18:00",
-    "index_updated": "2026-09-29",
-    "runtime_hash": "5290f92145dadcc362ceaf64ede05adfd9b1900e18a9056bdba91e88ba8e5802",
-    "index_hash": "bcb504ebb02aabd36aa40d465e6c8e5a5e79f00dc31df9bac75c2da357e7f088",
+    "runtime_generated_at": "2026-09-30T01:06:16.719Z",
+    "lesson_watermark": "2026-09-30 08:00",
+    "index_updated": "2026-09-30",
+    "runtime_hash": "64632787a7fbd1078392056114e6c41ebd9efad5d3a32d648116d311a47f3b5b",
+    "index_hash": "3f01b6536bfa8427c7a06018dfeb5d012e8354e9a8030c7f1d31e593b11f645f",
     "rules_hash": "8e7b300bbe10f68da978e5de23aa08795fcd036833ba349fd4fa2548990c47ce"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "sudut",
-        "角度、角落"
-      ],
-      [
-        "kalah",
-        "输、失败"
-      ],
-      [
-        "pula",
-        "也，再"
-      ],
-      [
-        "selera",
-        "胃口"
-      ],
-      [
-        "demikian",
-        "如此、这样"
-      ],
-      [
-        "bangsa",
-        "民族，国家"
-      ],
-      [
-        "beliau",
-        "他/她（尊称）"
-      ],
-      [
-        "pendidikan",
-        "教育学"
-      ],
-      [
-        "bangunan",
-        "建筑"
-      ],
-      [
-        "membangun",
-        "建造 / 建设"
-      ],
       [
         "lezat",
         "美味的"
@@ -1512,6 +1472,16 @@
         ""
       ],
       [
+        "beliau",
+        2,
+        0,
+        "",
+        "",
+        "他／她（尊称）",
+        "beliau",
+        "尊称他／她"
+      ],
+      [
         "nanggung",
         1,
         2,
@@ -1702,6 +1672,26 @@
         "安排；调整"
       ],
       [
+        "bangsa",
+        2,
+        0,
+        "",
+        "",
+        "民族；国家",
+        "bangsa",
+        "民族；国家"
+      ],
+      [
+        "bangunan",
+        2,
+        0,
+        "",
+        "",
+        "建筑；建筑物",
+        "bangun",
+        "建；起；醒"
+      ],
+      [
         "bawain",
         2,
         0,
@@ -1762,6 +1752,16 @@
         "倾诉（curahan hati的口语缩略）"
       ],
       [
+        "demikian",
+        2,
+        0,
+        "",
+        "",
+        "如此；这样",
+        "demikian",
+        "如此；这样"
+      ],
+      [
         "dengan demikian",
         2,
         0,
@@ -1812,6 +1812,16 @@
         "担任职务；握"
       ],
       [
+        "kalah",
+        2,
+        0,
+        "",
+        "",
+        "输；失败",
+        "kalah",
+        "输；失败"
+      ],
+      [
         "karakter",
         2,
         0,
@@ -1830,56 +1840,6 @@
         "专业技能；专长",
         "ahli",
         "专家；擅长"
-      ],
-      [
-        "keluhan",
-        2,
-        0,
-        "",
-        "",
-        "投诉；抱怨",
-        "keluh",
-        "抱怨；叹息"
-      ],
-      [
-        "kendala",
-        2,
-        0,
-        "",
-        "",
-        "障碍；困难；卡点",
-        "kendala",
-        "障碍；限制"
-      ],
-      [
-        "lowongan",
-        2,
-        0,
-        "",
-        "",
-        "职位空缺；招聘信息",
-        "lowong",
-        "空着；有空缺"
-      ],
-      [
-        "maksa",
-        2,
-        0,
-        "",
-        "",
-        "硬逼；强求（口语）",
-        "paksa",
-        "强迫"
-      ],
-      [
-        "manfaat",
-        2,
-        0,
-        "",
-        "",
-        "益处；好处",
-        "manfaat",
-        "益处；用途"
       ]
     ],
     "focus": [
@@ -2076,6 +2036,14 @@
         ]
       ],
       [
+        "beliau",
+        48,
+        [
+          "dont",
+          "fuzzy"
+        ]
+      ],
+      [
         "nanggung",
         40,
         [
@@ -2112,13 +2080,6 @@
       ],
       [
         "ngirit",
-        38,
-        [
-          "quick_wrong"
-        ]
-      ],
-      [
-        "kepake",
         38,
         [
           "quick_wrong"
@@ -2462,6 +2423,29 @@
         "sebab",
         "cuek"
       ]
+    },
+    {
+      "date": "2026-09-30",
+      "session": "am",
+      "review_core": [
+        "menunjukkan",
+        "cerewet",
+        "pembangunan",
+        "jomblo",
+        "berarti"
+      ],
+      "new_words": [
+        "sudut",
+        "kalah",
+        "pula",
+        "selera",
+        "demikian",
+        "bangsa",
+        "beliau",
+        "pendidikan",
+        "bangunan",
+        "membangun"
+      ]
     }
   ],
   "previous_pm": {
@@ -2480,7 +2464,88 @@
       "ngirit"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-09-30",
+    "vocab": [
+      [
+        "sudut",
+        "角落；角度",
+        "corner; angle",
+        "sudut",
+        "角落；角度"
+      ],
+      [
+        "kalah",
+        "输；失败",
+        "lose; be defeated",
+        "kalah",
+        "输；失败"
+      ],
+      [
+        "pula",
+        "也；又；再",
+        "also; too",
+        "pula",
+        "也；又"
+      ],
+      [
+        "selera",
+        "胃口；口味；喜好",
+        "appetite; taste; preference",
+        "selera",
+        "胃口；喜好"
+      ],
+      [
+        "demikian",
+        "如此；这样",
+        "thus; so; such",
+        "demikian",
+        "如此；这样"
+      ],
+      [
+        "bangsa",
+        "民族；国家",
+        "nation; people",
+        "bangsa",
+        "民族；国家"
+      ],
+      [
+        "beliau",
+        "他／她（尊称）",
+        "he/she (respectful)",
+        "beliau",
+        "尊称他／她"
+      ],
+      [
+        "pendidikan",
+        "教育；教育程度",
+        "education",
+        "didik",
+        "教育；培养"
+      ],
+      [
+        "bangunan",
+        "建筑；建筑物",
+        "building; structure",
+        "bangun",
+        "建；起；醒"
+      ],
+      [
+        "membangun",
+        "建造；建设；建立",
+        "build; develop",
+        "bangun",
+        "建；起；醒"
+      ]
+    ],
+    "review_vocab": [
+      "menunjukkan",
+      "cerewet",
+      "pembangunan",
+      "jomblo",
+      "berarti"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
