@@ -93,7 +93,7 @@ jobs:
           if [[ "$PR_HEAD_REF" == lesson-release-* ]]; then
             node .github/scripts/check-release-pr.js "$PR_BASE_SHA" "$PR_HEAD_SHA" "$PR_HEAD_REF"
           else
-            if git diff --name-only "$PR_BASE_SHA" "$PR_HEAD_SHA" | grep -Eq '^data/daily/(index[.]json|[0-9]{4}-[0-9]{2}-[0-9]{2}-(am|pm)[.]json)$'; then
+            if git diff --name-only "$PR_BASE_SHA...$PR_HEAD_SHA" | grep -Eq '^data/daily/(index[.]json|[0-9]{4}-[0-9]{2}-[0-9]{2}-(am|pm)[.]json)$'; then
               echo 'RELEASE_PREFLIGHT rejects lesson/index changes outside a named release branch.'
               exit 1
             fi

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 const assert=require('node:assert/strict'),crypto=require('node:crypto');
+const fs=require('node:fs'),os=require('node:os'),path=require('node:path'),cp=require('node:child_process');
 const {inspect}=require('./check-release-pr');
 const {plan}=require('./plan-lesson-publication');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
@@ -61,4 +62,30 @@ test('branch identity mismatch blocked',()=>{const f=fixture(makeAm);f.state.bra
 test('non-release branch blocked',()=>{const f=fixture(makeAm);f.state.branch='lesson-staging-v1';has(f.check(),'RELEASE_BRANCH_INVALID')});
 test('identical SHA blocked',()=>{const f=fixture(makeAm);f.state.headSha=base;has(f.check(),'REF_INVALID')});
 test('source or draft absent blocked, no accidental publish',()=>{const f=fixture(makeAm);delete f.state.head[f.lessonPath];has(f.check(),'RELEASE_INPUT_INVALID')});
+test('CLI checks PR changes after main advances, still validates current baseline',()=>{
+ const f=fixture(makeAm),dir=fs.mkdtempSync(path.join(os.tmpdir(),'release-diff-test-'));
+ const git=(...args)=>cp.execFileSync('git',args,{cwd:dir,encoding:'utf8',stdio:['ignore','pipe','pipe']}).trim();
+ const write=(p,value)=>{const file=path.join(dir,p);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,JSON.stringify(value,null,2)+'\n')};
+ const commit=message=>{git('add','.');git('commit','-m',message);return git('rev-parse','HEAD')};
+ const check=(base,head)=>{
+  const run=cp.spawnSync(process.execPath,[path.join(__dirname,'check-release-pr.js'),base,head,f.state.branch],{cwd:dir,encoding:'utf8'});
+  assert.ifError(run.error);const report=JSON.parse(run.stdout.trim().replace(/^RELEASE_PREFLIGHT /,''));
+  assert.equal(run.status,report.ok?0:1,run.stderr);return report;
+ };
+ try{
+  git('init','-b','main');git('config','user.name','Release regression');git('config','user.email','test@example.invalid');
+  for(const [p,v]of Object.entries(f.state.base))write(p,v);
+  const original=commit('baseline');git('checkout','-b',f.state.branch);
+  write(f.lessonPath,f.state.head[f.lessonPath]);write('data/daily/index.json',f.state.head['data/daily/index.json']);
+  const release=commit('lesson and index');assert.equal(check(original,release).ok,true);
+  git('checkout','main');write('unrelated.json',{mainOnly:true});const advanced=commit('main-only change');
+  assert.equal(check(advanced,release).ok,true,'Main-only changes are not part of the release PR');
+  // An index change on main still invalidates the release transaction.
+  const index=clone(f.state.base['data/daily/index.json']);index.note='new baseline metadata';write('data/daily/index.json',index);
+  const context=clone(f.state.base['data/lesson-context.json']);context.source.index_hash=hash(index);write('data/lesson-context.json',context);
+  has(check(commit('new current index'),release),'INDEX_TRANSACTION_MISMATCH');
+  git('checkout',f.state.branch);write('extra.json',{releaseOnly:true});
+  has(check(advanced,commit('unrelated release change')),'RELEASE_FILES_INVALID');
+ }finally{fs.rmSync(dir,{recursive:true,force:true})}
+});
 console.log('Release PR gate:',passed,'passed, 0 failed');
