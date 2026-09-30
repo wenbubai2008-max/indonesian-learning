@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-30T02:13:17.724Z",
+  "updated_at": "2026-09-30T06:59:48.571Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -767,8 +767,9 @@
     "yaitu": {
       "word": "yaitu",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-09-30T06:55:32.700Z",
       "display": "yaitu",
+      "cn": "即是",
       "reasons": [
         "memory_dont"
       ],
@@ -8565,8 +8566,9 @@
     "sementara": {
       "word": "sementara",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:50.653Z",
+      "updated_at": "2026-09-30T06:59:38.090Z",
       "display": "sementara",
+      "cn": "暂时；与此同时",
       "last_review": "2026-09-12T14:13:50.646Z",
       "last_mastered": "2026-09-12T14:13:50.646Z",
       "reasons": [],
