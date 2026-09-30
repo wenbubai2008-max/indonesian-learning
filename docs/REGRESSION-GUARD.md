@@ -101,6 +101,8 @@
 
 任何新增 workflow 必须有长期必要性，不能只是一次性修复手段。
 
+泛读发布不新增第三条 workflow。2026-09-30 起，长期发布逻辑放在现有 `sync-daily-vocab.yml` 的独立 `extensive_reading_release` PR job 中，但该 job **不得读写 daily-vocab/runtime**。ChatGPT 每天只在同日 `extensive-reading-YYYY-MM-DD` 隔离分支写一个临时候选 `data/extensive-reading-candidate.json` 并打开带 `AUTO_PUBLISH_EXTENSIVE_READING=1` 标记的同仓库 PR；GitHub Runner 从受信任的 main 脚本生成/验证旧文归档、轻量历史索引与今日单篇文件，删除候选文件后用 PR head 精确 SHA squash merge。这样正式 main 仍只有一个发布 commit，历史三文件事务由 GitHub 完成，ChatGPT 不再直接移动 main ref 或连续写三个正式文件。若 main 在生成/合并期间前进，保留 release 分支并停止，不 force push、不用旧 base 强并。
+
 ### I. 课程规则写对了，但实际 JSON Schema 仍写错
 发生过：`2026-09-16` 18:00 晚课内容本身正确，但 3 道 choice 漏写 `answer_index`，导致网页把正确答案判成红色；同一份课还一度把 `review.steps` 写成 `review.items`，self_check 前端也曾不显示。
 
@@ -242,6 +244,8 @@
 - [ ] 任务失败不得自动把正式任务 disabled
 - [ ] `.github/workflows` 没有临时/重复 workflow
 - [ ] `sync-daily-vocab.yml` 是唯一 daily-vocab writer
+- [ ] 12:00 泛读只把单个 candidate 写入 `extensive-reading-YYYY-MM-DD` 分支；归档/index/today 三文件由 GitHub Runner 生成并 squash merge，candidate 不进入 main
+- [ ] 泛读 PR 仅允许同仓库、当天命名分支、指定 marker 和泛读数据路径；main 前进时停止而不是 force/rebase
 - [ ] 同步后 runtime 在同一链路重建
 
 ### F. 部署
