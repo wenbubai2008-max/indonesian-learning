@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-09-30",
-    "session": "pm",
-    "time": "18:00",
-    "day": 40
+    "date": "2026-10-01",
+    "session": "am",
+    "time": "08:00",
+    "day": 41
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-09-30T07:01:01.335Z",
-    "lesson_watermark": "2026-09-30 08:00",
+    "runtime_generated_at": "2026-09-30T12:01:45.198Z",
+    "lesson_watermark": "2026-09-30 18:00",
     "index_updated": "2026-09-30",
-    "runtime_hash": "7b31eeb28e3f88b0a82f2d76555c135bed2e8addc088307a2518a43ac778655e",
-    "index_hash": "3f01b6536bfa8427c7a06018dfeb5d012e8354e9a8030c7f1d31e593b11f645f",
+    "runtime_hash": "956a25a5ff4b7cc3b29f0ef6e106112726cfee9b4bf83266dc11a5b9aa9f8084",
+    "index_hash": "299acec271a6209092a13e62d697aa49c4de6cbf5dad56121b09e12fe88b4419",
     "rules_hash": "8e7b300bbe10f68da978e5de23aa08795fcd036833ba349fd4fa2548990c47ce"
   },
   "schema": {
@@ -49,10 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "lezat",
-        "美味的"
-      ],
       [
         "mundur",
         "后退的 / 落后的"
@@ -1196,10 +1192,6 @@
         "网络；网络连接"
       ],
       [
-        "kata sandi",
-        "密码"
-      ],
-      [
         "hapus",
         "删除"
       ],
@@ -1214,14 +1206,6 @@
       [
         "pendiam",
         "沉默寡言"
-      ],
-      [
-        "mencret",
-        "拉肚子"
-      ],
-      [
-        "agar",
-        "为了；以便"
       ],
       [
         "sesudah",
@@ -2088,30 +2072,6 @@
     ],
     "oral": [
       [
-        "mencret",
-        "口语",
-        "diare",
-        "mencret",
-        670,
-        "fuzzy"
-      ],
-      [
-        "kata sandi",
-        "通用",
-        "password",
-        "kata sandi",
-        144,
-        "fuzzy"
-      ],
-      [
-        "agar",
-        "书面",
-        "biar",
-        "agar",
-        238,
-        "fuzzy"
-      ],
-      [
         "sesudah",
         "通用",
         "setelah",
@@ -2146,45 +2106,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-09-23",
-      "session": "am",
-      "review_core": [
-        "barusan",
-        "ngurus",
-        "ujung-ujungnya",
-        "berkat",
-        "menunjukkan"
-      ],
-      "new_words": [
-        "menyalin",
-        "mengarahkan",
-        "mengetuk",
-        "menambahkan",
-        "kehilangan",
-        "terkejut",
-        "mengeluh",
-        "menyimpan",
-        "antri",
-        "nyampe"
-      ]
-    },
-    {
-      "date": "2026-09-23",
-      "session": "pm",
-      "review_core": [
-        "menunjukkan",
-        "mendukung",
-        "nanggung",
-        "mengatasi"
-      ],
-      "new_words": [
-        "menangis",
-        "bercerai",
-        "ceria",
-        "siapin"
-      ]
-    },
     {
       "date": "2026-09-24",
       "session": "am",
@@ -2446,106 +2367,40 @@
         "bangunan",
         "membangun"
       ]
+    },
+    {
+      "date": "2026-09-30",
+      "session": "pm",
+      "review_core": [
+        "menyalin",
+        "seraya",
+        "kabur",
+        "menegaskan"
+      ],
+      "new_words": [
+        "mencret",
+        "kata sandi",
+        "agar",
+        "lezat"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-09-29",
+    "date": "2026-09-30",
     "new_words": [
-      "menanggung",
-      "wajib",
-      "sebab",
-      "cuek"
+      "mencret",
+      "kata sandi",
+      "agar",
+      "lezat"
     ],
     "review_core": [
-      "upaya",
-      "kepotong",
-      "ngabarin",
-      "keberatan",
-      "ngirit"
+      "menyalin",
+      "seraya",
+      "kabur",
+      "menegaskan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-09-30",
-    "vocab": [
-      [
-        "sudut",
-        "角落；角度",
-        "corner; angle",
-        "sudut",
-        "角落；角度"
-      ],
-      [
-        "kalah",
-        "输；失败",
-        "lose; be defeated",
-        "kalah",
-        "输；失败"
-      ],
-      [
-        "pula",
-        "也；又；再",
-        "also; too",
-        "pula",
-        "也；又"
-      ],
-      [
-        "selera",
-        "胃口；口味；喜好",
-        "appetite; taste; preference",
-        "selera",
-        "胃口；喜好"
-      ],
-      [
-        "demikian",
-        "如此；这样",
-        "thus; so; such",
-        "demikian",
-        "如此；这样"
-      ],
-      [
-        "bangsa",
-        "民族；国家",
-        "nation; people",
-        "bangsa",
-        "民族；国家"
-      ],
-      [
-        "beliau",
-        "他／她（尊称）",
-        "he/she (respectful)",
-        "beliau",
-        "尊称他／她"
-      ],
-      [
-        "pendidikan",
-        "教育；教育程度",
-        "education",
-        "didik",
-        "教育；培养"
-      ],
-      [
-        "bangunan",
-        "建筑；建筑物",
-        "building; structure",
-        "bangun",
-        "建；起；醒"
-      ],
-      [
-        "membangun",
-        "建造；建设；建立",
-        "build; develop",
-        "bangun",
-        "建；起；醒"
-      ]
-    ],
-    "review_vocab": [
-      "menunjukkan",
-      "cerewet",
-      "pembangunan",
-      "jomblo",
-      "berarti"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

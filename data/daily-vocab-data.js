@@ -11554,16 +11554,16 @@ window.DAILY_VOCAB_DB = [
     "en": "emphasize; affirm; clarify",
     "root": "tegas",
     "root_cn": "明确；坚定",
-    "example": "Saya perlu menegaskan bahwa jadwal ini belum berubah.",
-    "example_cn": "我要强调，时间安排还没变。",
+    "example": "Atasan menegaskan bahwa data pelanggan harus aman.",
+    "example_cn": "上司强调客户数据必须安全。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-19 18:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-30 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -11571,12 +11571,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-19",
       "2026-09-26",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-09-30"
     ],
     "lesson_occurrences": [
       "2026-09-19 18:00",
       "2026-09-26 18:00",
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-09-30 18:00"
     ]
   },
   {
@@ -12386,25 +12388,29 @@ window.DAILY_VOCAB_DB = [
     "en": "copy",
     "root": "salin",
     "root_cn": "复制；抄写",
-    "example": "Saya menyalin data penting sebelum mengubah dokumen.",
-    "example_cn": "修改文件前，我先复制重要数据。",
+    "example": "Tolong menyalin nomor pesanan ini ke dokumen baru.",
+    "example_cn": "请把这个订单号复制到新文档里。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-09-30 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-23",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-09-30"
     ],
     "lesson_occurrences": [
       "2026-09-23 08:00",
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-09-30 18:00"
     ]
   },
   {
@@ -13194,25 +13200,27 @@ window.DAILY_VOCAB_DB = [
     "en": "while; at the same time",
     "root": "seraya",
     "root_cn": "同时；一边……一边……",
-    "example": "Dia mengecek berkas seraya menjelaskan masalahnya.",
-    "example_cn": "他一边检查文件一边解释问题。",
+    "example": "Dia tersenyum seraya menjelaskan masalah itu.",
+    "example_cn": "他一边微笑，一边解释那个问题。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-22 18:00",
-    "last_seen": "2026-09-28 18:00",
+    "last_seen": "2026-09-30 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
       "2026-09-22",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-09-30"
     ],
     "lesson_occurrences": [
       "2026-09-22 18:00",
-      "2026-09-28 18:00"
+      "2026-09-28 18:00",
+      "2026-09-30 18:00"
     ]
   },
   {
@@ -13376,26 +13384,30 @@ window.DAILY_VOCAB_DB = [
     "en": "run away; flee",
     "root": "kabur",
     "root_cn": "逃跑；溜走",
-    "example": "Dia kabur sebelum sempat menjelaskan masalahnya.",
-    "example_cn": "他还没来得及解释问题就溜走了。",
+    "example": "Orang itu kabur sebelum petugas datang.",
+    "example_cn": "工作人员到之前，那个人就跑了。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-29 08:00",
+    "last_seen": "2026-09-30 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-25",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-09-30"
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00",
-      "2026-09-29 08:00"
+      "2026-09-29 08:00",
+      "2026-09-30 18:00"
     ]
   },
   {
@@ -15313,23 +15325,26 @@ window.DAILY_VOCAB_DB = [
     "en": "he/she (respectful)",
     "root": "beliau",
     "root_cn": "尊称他／她",
-    "example": "Beliau sudah bekerja di perusahaan ini selama dua puluh tahun.",
-    "example_cn": "他已经在这家公司工作二十年了。",
+    "example": "Beliau meminta kami menyiapkan laporan sebelum rapat.",
+    "example_cn": "他／她（尊称）要求我们在会议前准备好报告。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-30"
     ],
     "lesson_occurrences": [
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-09-30 18:00"
     ]
   },
   {
@@ -15363,23 +15378,26 @@ window.DAILY_VOCAB_DB = [
     "en": "building; structure",
     "root": "bangun",
     "root_cn": "建；起；醒",
-    "example": "Bangunan baru itu berada di sebelah kantor kami.",
-    "example_cn": "那栋新建筑就在我们办公室旁边。",
+    "example": "Bangunan itu terlihat jelas dari sudut jalan ini.",
+    "example_cn": "从这个街角能清楚看到那栋建筑。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-09-30 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-30"
     ],
     "lesson_occurrences": [
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-09-30 18:00"
     ]
   },
   {
@@ -15405,6 +15423,108 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-09-30 08:00"
+    ]
+  },
+  {
+    "word": "mencret",
+    "cn": "拉肚子；腹泻（口语）",
+    "en": "have diarrhea (colloquial)",
+    "root": "mencret",
+    "root_cn": "拉肚子",
+    "example": "Saya mencret sejak tadi malam, jadi hari ini saya makan yang ringan saja.",
+    "example_cn": "我从昨晚开始拉肚子，所以今天只吃清淡的。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 18:00",
+    "last_seen": "2026-09-30 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 18:00"
+    ]
+  },
+  {
+    "word": "kata sandi",
+    "cn": "密码",
+    "en": "password",
+    "root": "kata sandi",
+    "root_cn": "密码",
+    "example": "Saya lupa kata sandi akun itu, jadi belum bisa masuk.",
+    "example_cn": "我忘了那个账号的密码，所以还登录不了。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 18:00",
+    "last_seen": "2026-09-30 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 18:00"
+    ]
+  },
+  {
+    "word": "agar",
+    "cn": "为了；以便",
+    "en": "so that; in order to",
+    "root": "agar",
+    "root_cn": "为了；以便",
+    "example": "Simpan nomor ini agar kamu mudah menghubungi saya.",
+    "example_cn": "把这个号码存下来，以便你方便联系我。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 18:00",
+    "last_seen": "2026-09-30 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 18:00"
+    ]
+  },
+  {
+    "word": "lezat",
+    "cn": "美味的；可口的",
+    "en": "delicious",
+    "root": "lezat",
+    "root_cn": "美味",
+    "example": "Sup ikan ini lezat, tapi rasanya tidak terlalu berat.",
+    "example_cn": "这鱼汤很好吃，而且味道不算太重。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-09-30 18:00",
+    "last_seen": "2026-09-30 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-09-30"
+    ],
+    "lesson_occurrences": [
+      "2026-09-30 18:00"
     ]
   }
 ];
