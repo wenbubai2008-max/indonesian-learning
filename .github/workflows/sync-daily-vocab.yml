@@ -163,7 +163,17 @@ jobs:
             echo "::error title=Unexpected reading PR paths::$unexpected_before"
             exit 1
           fi
-          test -f data/extensive-reading-candidate.json
+          if [ ! -f data/extensive-reading-candidate.json ]; then
+            pr_now="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+            pr_state="$(jq -r '.state // "unknown"' <<<"$pr_now")"
+            pr_merged="$(jq -r '.merged // false' <<<"$pr_now")"
+            if [ "$pr_merged" = "true" ] || [ "$pr_state" = "closed" ]; then
+              echo "Extensive reading PR already merged/closed after final-head synchronize; no duplicate publish work is needed."
+              exit 0
+            fi
+            echo "::error title=Missing extensive reading candidate::Open release PR has no data/extensive-reading-candidate.json."
+            exit 1
+          fi
 
           trusted_script="$RUNNER_TEMP/publish-extensive-reading-candidate.js"
           git show "$release_base:.github/scripts/publish-extensive-reading-candidate.js" > "$trusted_script"
