@@ -154,6 +154,13 @@ jobs:
             exit 1
           fi
 
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if ! git merge-base --is-ancestor "$PR_BASE_SHA" HEAD; then
+            echo "Release branch predates the pinned PR base; merge the pinned base into the isolated branch without force."
+            git merge --no-edit "$PR_BASE_SHA"
+          fi
+
           changed_before="$(git diff --name-only "$PR_BASE_SHA" HEAD)"
           unexpected_before="$(printf '%s\n' "$changed_before" | grep -Ev '^(data/extensive-reading-candidate[.]json|data/extensive-reading-data[.]js|data/extensive-reading-history[.]js|data/extensive-reading-history/[0-9]{4}-[0-9]{2}-[0-9]{2}(-[a-z0-9-]+)?[.]js)$' || true)"
           if [ -n "$unexpected_before" ]; then
