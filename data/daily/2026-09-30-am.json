@@ -1,0 +1,245 @@
+{
+  "date": "2026-09-30",
+  "session": "am",
+  "time": "08:00",
+  "day": 40,
+  "level": "A2+–B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜日常表达与工作沟通",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "sudut",
+    "kalah",
+    "pula",
+    "selera",
+    "demikian",
+    "bangsa",
+    "beliau",
+    "pendidikan",
+    "bangunan",
+    "membangun"
+  ],
+  "vocab": [
+    {
+      "word": "sudut",
+      "display": "sudut",
+      "audio_text": "sudut",
+      "cn": "角落；角度",
+      "en": "corner; angle",
+      "root": "sudut",
+      "root_cn": "角落；角度",
+      "formation": "常见搭配 di sudut、dari sudut pandang。",
+      "example": "Saya duduk di sudut ruangan yang lebih tenang.",
+      "example_cn": "我坐在房间里更安静的角落。",
+      "synonym_note": "sudut 可指空间角落，也可指观察问题的角度。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kalah",
+      "display": "kalah",
+      "audio_text": "kalah",
+      "cn": "输；失败",
+      "en": "lose; be defeated",
+      "root": "kalah",
+      "root_cn": "输；失败",
+      "formation": "常说 kalah dalam pertandingan、kalah cepat。",
+      "example": "Tim kami kalah, tetapi kami tetap belajar dari kesalahan.",
+      "example_cn": "我们队输了，但还是从错误中学习。",
+      "synonym_note": "kalah 是输给对方；gagal 更偏事情没有成功。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pula",
+      "display": "pula",
+      "audio_text": "pula",
+      "cn": "也；又；再",
+      "en": "also; too",
+      "root": "pula",
+      "root_cn": "也；又",
+      "formation": "常放在句中或句尾补充另一点，如 dia pula、begitu pula。",
+      "example": "Harganya murah dan kualitasnya bagus pula.",
+      "example_cn": "价格便宜，而且质量也不错。",
+      "synonym_note": "pula 有“也、又”的补充感；juga 更通用。",
+      "is_oral_new": false
+    },
+    {
+      "word": "selera",
+      "display": "selera",
+      "audio_text": "selera",
+      "cn": "胃口；口味；喜好",
+      "en": "appetite; taste; preference",
+      "root": "selera",
+      "root_cn": "胃口；喜好",
+      "formation": "常见 selera makan、sesuai selera。",
+      "example": "Pagi ini saya tidak punya selera makan.",
+      "example_cn": "今天早上我没什么胃口。",
+      "synonym_note": "selera 可指吃东西的胃口，也可指个人品味。",
+      "is_oral_new": false
+    },
+    {
+      "word": "demikian",
+      "display": "demikian",
+      "audio_text": "demikian",
+      "cn": "如此；这样",
+      "en": "thus; so; such",
+      "root": "demikian",
+      "root_cn": "如此；这样",
+      "formation": "较常见于说明和正式表达，如 demikian juga、dengan demikian。",
+      "example": "Kalau kondisinya demikian, kita perlu mengubah rencana.",
+      "example_cn": "如果情况是这样，我们需要改变计划。",
+      "synonym_note": "demikian 较正式；begitu 在日常口语里更自然。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bangsa",
+      "display": "bangsa",
+      "audio_text": "bangsa",
+      "cn": "民族；国家",
+      "en": "nation; people",
+      "root": "bangsa",
+      "root_cn": "民族；国家",
+      "formation": "常见 bangsa Indonesia、antarbangsa。",
+      "example": "Setiap bangsa punya kebiasaan dan budaya yang berbeda.",
+      "example_cn": "每个民族都有不同的习惯和文化。",
+      "synonym_note": "bangsa 强调民族或国民共同体；negara 强调国家实体。",
+      "is_oral_new": false
+    },
+    {
+      "word": "beliau",
+      "display": "beliau",
+      "audio_text": "beliau",
+      "cn": "他／她（尊称）",
+      "en": "he/she (respectful)",
+      "root": "beliau",
+      "root_cn": "尊称他／她",
+      "formation": "用于尊敬地指长辈、领导或值得尊敬的人。",
+      "example": "Beliau sudah bekerja di perusahaan ini selama dua puluh tahun.",
+      "example_cn": "他已经在这家公司工作二十年了。",
+      "synonym_note": "beliau 比 dia 更尊敬，不能用来称自己。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pendidikan",
+      "display": "pendidikan",
+      "audio_text": "pendidikan",
+      "cn": "教育；教育程度",
+      "en": "education",
+      "root": "didik",
+      "root_cn": "教育；培养",
+      "formation": "peN- + didik + -an，常见 pendidikan tinggi、tingkat pendidikan。",
+      "example": "Pendidikan dan pengalaman sama-sama penting dalam pekerjaan.",
+      "example_cn": "教育和经验在工作中都很重要。",
+      "synonym_note": "pendidikan 是教育过程或教育背景；pelajaran 是课程、功课。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bangunan",
+      "display": "bangunan",
+      "audio_text": "bangunan",
+      "cn": "建筑；建筑物",
+      "en": "building; structure",
+      "root": "bangun",
+      "root_cn": "建；起；醒",
+      "formation": "bangun + -an，表示建成的建筑物或结构。",
+      "example": "Bangunan baru itu berada di sebelah kantor kami.",
+      "example_cn": "那栋新建筑就在我们办公室旁边。",
+      "synonym_note": "bangunan 泛指建筑物；gedung 常指较大的楼房。",
+      "is_oral_new": false
+    },
+    {
+      "word": "membangun",
+      "display": "membangun",
+      "audio_text": "membangun",
+      "cn": "建造；建设；建立",
+      "en": "build; develop",
+      "root": "bangun",
+      "root_cn": "建；起；醒",
+      "formation": "meN- + bangun，可指建房，也可指建立关系、事业等。",
+      "example": "Perusahaan ingin membangun gudang baru tahun depan.",
+      "example_cn": "公司想明年建一个新仓库。",
+      "synonym_note": "membangun 强调从无到有地建设；memperbaiki 是修理已有的东西。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "menunjukkan",
+    "cerewet",
+    "pembangunan",
+    "jomblo",
+    "berarti"
+  ],
+  "sentences": [
+    {
+      "text": "Dari sudut pandang pelanggan, pelayanan yang cepat sangat penting.",
+      "cn": "从客户的角度看，快速的服务非常重要。"
+    },
+    {
+      "text": "Saya kalah dalam permainan itu, tetapi teman saya menunjukkan kesalahan saya.",
+      "cn": "我在那场游戏中输了，但朋友指出了我的错误。"
+    },
+    {
+      "text": "Beliau cerewet soal detail, tetapi hasil pekerjaannya bagus pula.",
+      "cn": "他对细节很唠叨，不过工作成果也很好。"
+    },
+    {
+      "text": "Pembangunan bangunan baru itu bertujuan membangun fasilitas yang lebih baik.",
+      "cn": "那栋新建筑的建设是为了打造更好的设施。"
+    },
+    {
+      "text": "Selera setiap orang berbeda; demikian pula cara mereka memilih pasangan.",
+      "cn": "每个人的喜好不同，他们选择伴侣的方式也是如此。"
+    }
+  ],
+  "reading": {
+    "text": "Pagi ini saya bertemu seorang manajer senior di sudut kafe dekat kantor. Beliau bercerita tentang pembangunan sebuah bangunan baru untuk tim kami. Menurut beliau, pendidikan dan pengalaman sama-sama penting ketika membangun tim yang kuat. Dia juga menunjukkan gambar rencana gedung dari beberapa sudut. Saya bilang desainnya bagus, tetapi selera setiap orang tentu berbeda. Teman saya yang agak cerewet ikut memberi komentar pula. Walaupun usul kami sempat kalah dalam rapat sebelumnya, kali ini manajer mau mendengarkan. Demikian, kami bisa memperbaiki rencana bersama. Obrolan itu membuat saya sadar bahwa kerja sama berarti menerima perbedaan dan tetap mencari solusi yang masuk akal.",
+    "cn": "今天早上，我在办公室附近咖啡馆的一个角落遇到一位资深经理。他谈到了为我们团队建设一栋新建筑的计划。他认为，在建立强大的团队时，教育和经验同样重要。他还从几个角度给我们看了大楼的设计图。我说设计不错，不过每个人的喜好当然不同。我那位有点唠叨的朋友也提出了意见。虽然我们的建议在上一次会议中没有被采纳，这次经理愿意听取意见。这样，我们就能一起改进计划。这次谈话让我意识到，合作意味着接受差异，同时继续寻找合理的解决办法。"
+  },
+  "quiz": [
+    {
+      "question": "“指出、展示”对应哪个复习词？",
+      "options": [
+        "menunjukkan",
+        "bangunan",
+        "selera",
+        "kalah"
+      ],
+      "answer_index": 0,
+      "answer": "menunjukkan",
+      "explain": "menunjukkan 是本课合法复习词，表示指出、展示。"
+    },
+    {
+      "question": "哪个词既可以表示“胃口”，也可以表示个人“喜好、品味”？",
+      "options": [
+        "bangsa",
+        "selera",
+        "sudut",
+        "pendidikan"
+      ],
+      "answer_index": 1,
+      "answer": "selera",
+      "explain": "selera 可以指食欲，也可以指口味和个人喜好。"
+    },
+    {
+      "question": "尊敬地提到长辈或领导时，哪个代词更合适？",
+      "options": [
+        "pula",
+        "beliau",
+        "demikian",
+        "membangun"
+      ],
+      "answer_index": 1,
+      "answer": "beliau",
+      "explain": "beliau 是对第三人称的尊称，比 dia 更尊敬。"
+    }
+  ],
+  "output": {
+    "task": "用 sudut、selera、menunjukkan 中至少两个词，说2句你在工作中讨论一个方案的情景。",
+    "reference_answer": "Saya melihat masalah ini dari sudut yang berbeda. Saya menunjukkan pilihan yang lebih sesuai dengan selera pelanggan.",
+    "reference_cn": "我从不同的角度看这个问题。我展示了一个更符合客户喜好的选择。"
+  },
+  "review": [
+    "3秒主动回忆：sudut、kalah、pula、selera、demikian分别是什么意思。",
+    "重点区分：bangsa/negara、bangunan/gedung、membangun/memperbaiki，并各说一个短句。",
+    "复习 menunjukkan、cerewet、pembangunan、jomblo、berarti，并用其中两个词完成主动输出。"
+  ]
+}
