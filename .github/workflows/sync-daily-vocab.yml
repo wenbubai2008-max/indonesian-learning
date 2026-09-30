@@ -196,7 +196,46 @@ jobs:
             exit 1
           fi
 
-          response="$(gh api --method PUT "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/merge" -f merge_method=squash -f sha="$final_sha")"
+          mergeable=""
+          merge_state=""
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            pr_json="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+            remote_head="$(jq -r '.head.sha // empty' <<<"$pr_json")"
+            mergeable="$(jq -r 'if .mergeable == null then "unknown" else (.mergeable|tostring) end' <<<"$pr_json")"
+            merge_state="$(jq -r '.mergeable_state // "unknown"' <<<"$pr_json")"
+            if [ "$remote_head" != "$final_sha" ]; then
+              echo "::error title=Reading PR head moved::Expected $final_sha but GitHub reports $remote_head."
+              exit 1
+            fi
+            if [ "$mergeable" = "true" ]; then
+              break
+            fi
+            if [ "$mergeable" = "false" ]; then
+              echo "::error title=Reading PR not mergeable::GitHub reports mergeable=false state=$merge_state."
+              exit 1
+            fi
+            echo "Waiting for GitHub to recompute PR mergeability (attempt $attempt/10, state=$merge_state)."
+            sleep 2
+          done
+          if [ "$mergeable" != "true" ]; then
+            echo "::error title=Reading PR mergeability timeout::GitHub did not compute mergeable=true within the bounded wait; state=$merge_state."
+            exit 1
+          fi
+
+          response=""
+          merge_error="$RUNNER_TEMP/extensive-reading-merge-error.txt"
+          for attempt in 1 2 3; do
+            if response="$(gh api --method PUT "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/merge" -f merge_method=squash -f sha="$final_sha" 2>"$merge_error")"; then
+              break
+            fi
+            echo "Merge API attempt $attempt/3 did not complete:"
+            cat "$merge_error" || true
+            if [ "$attempt" -lt 3 ]; then sleep 2; fi
+          done
+          if [ -z "$response" ]; then
+            echo '::error title=Extensive reading merge failed::GitHub merge API failed after three bounded attempts.'
+            exit 1
+          fi
           printf '%s\n' "$response"
           merged="$(jq -r '.merged // false' <<<"$response")"
           if [ "$merged" != "true" ]; then
