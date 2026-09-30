@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generated_at": "2026-09-30T12:41:35.508Z",
-  "source_updated_at": "2026-09-30T12:37:01.658Z",
+  "generated_at": "2026-09-30T14:02:02.359Z",
+  "source_updated_at": "2026-09-30T14:01:06.315Z",
   "taught_total": 587,
   "confirmed_mastered": 183,
-  "needs_reinforcement": 302,
-  "unverified": 102,
+  "needs_reinforcement": 303,
+  "unverified": 101,
   "mastery_percent": 31.2,
   "primary_master_total": 977,
   "primary_taught_unique": 335,
   "primary_unlearned_total": 642,
   "primary_coverage_percent": 34.3,
   "primary_eligible_new_total": 328,
-  "focus_total": 302,
+  "focus_total": 303,
   "focus_words": [
     {
       "word": "menunjukkan",
@@ -115,7 +115,7 @@
       ],
       "wrong_count": 1,
       "last_wrong": "2026-09-16T07:55:56.953Z",
-      "last_review": "2026-09-28T09:16:56.118Z",
+      "last_review": "2026-09-30T13:59:57.588Z",
       "cn": "值得；合适；够资格"
     }
   ],
