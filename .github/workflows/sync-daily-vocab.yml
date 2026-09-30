@@ -243,8 +243,9 @@ jobs:
               exit 0
             fi
             if [ "$remote_head" != "$final_sha" ]; then
-              echo "::error title=Lesson PR head moved::Expected $final_sha but GitHub reports $remote_head."
-              exit 1
+              echo "Waiting for GitHub to observe final lesson PR head $final_sha (attempt $attempt/10, currently $remote_head)."
+              sleep 2
+              continue
             fi
             if [ "$remote_base" != "$release_base" ]; then
               echo "::error title=Lesson PR base moved::Prepared from $release_base but GitHub reports $remote_base."
