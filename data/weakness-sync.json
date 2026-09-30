@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-30T12:37:01.658Z",
+  "updated_at": "2026-09-30T14:01:06.315Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -643,18 +643,18 @@
     "nggak kepegang": {
       "word": "nggak kepegang",
       "status": "active",
-      "updated_at": "2026-09-28T09:17:35.004Z",
+      "updated_at": "2026-09-30T14:00:31.939Z",
       "display": "nggak kepegang",
       "cn": "顾不过来；管不过来",
       "root": "pegang",
       "root_cn": "拿；握；掌握",
       "last_wrong": "2026-09-11T15:09:12.617Z",
-      "last_review": "2026-09-28T09:17:34.985Z",
+      "last_review": "2026-09-30T14:00:31.911Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 3
+      "right_streak": 4
     },
     "pajak": {
       "word": "pajak",
@@ -6751,19 +6751,19 @@
     "upaya": {
       "word": "upaya",
       "status": "active",
-      "updated_at": "2026-09-29T10:47:50.965Z",
+      "updated_at": "2026-09-30T13:59:29.693Z",
       "display": "upaya",
       "cn": "努力、尝试",
       "root": "upaya",
       "root_cn": "努力；办法",
       "last_wrong": "2026-09-29T10:47:50.939Z",
-      "last_review": "2026-09-29T10:47:50.939Z",
+      "last_review": "2026-09-30T13:59:29.666Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "lapangan": {
       "word": "lapangan",
@@ -7226,20 +7226,20 @@
     "layak": {
       "word": "layak",
       "status": "active",
-      "updated_at": "2026-09-28T09:16:56.139Z",
+      "updated_at": "2026-09-30T13:59:57.627Z",
       "display": "layak",
       "cn": "值得；合适；够资格",
       "root": "layak",
       "root_cn": "值得；合适",
       "last_wrong": "2026-09-16T07:55:56.953Z",
-      "last_review": "2026-09-28T09:16:56.118Z",
+      "last_review": "2026-09-30T13:59:57.588Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 1,
-      "right_streak": 4
+      "right_streak": 5
     },
     "dewasa": {
       "word": "dewasa",
@@ -23795,18 +23795,18 @@
     "kelabakan": {
       "word": "kelabakan",
       "status": "active",
-      "updated_at": "2026-09-28T09:17:03.703Z",
+      "updated_at": "2026-09-30T14:00:12.978Z",
       "display": "kelabakan",
       "cn": "忙乱；手忙脚乱",
       "root": "kelabakan",
       "root_cn": "手忙脚乱；慌着应付",
-      "last_wrong": "2026-09-15T14:57:14.402Z",
-      "last_review": "2026-09-28T09:17:03.679Z",
+      "last_wrong": "2026-09-30T14:00:12.941Z",
+      "last_review": "2026-09-30T14:00:12.941Z",
       "reasons": [
         "quick_wrong"
       ],
-      "wrong_count": 1,
-      "right_streak": 3
+      "wrong_count": 2,
+      "right_streak": 0
     },
     "berusaha": {
       "word": "berusaha",
@@ -28213,18 +28213,18 @@
     "kepancing": {
       "word": "kepancing",
       "status": "active",
-      "updated_at": "2026-09-28T09:17:10.797Z",
+      "updated_at": "2026-09-30T14:00:26.119Z",
       "display": "kepancing",
       "cn": "被激到；被带着回应；忍不住上钩（口语）",
       "root": "pancing",
       "root_cn": "钓；引诱；诱出反应",
       "last_wrong": "2026-09-20T07:50:22.623Z",
-      "last_review": "2026-09-28T09:17:10.777Z",
+      "last_review": "2026-09-30T14:00:26.087Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 3
+      "right_streak": 4
     },
     "ngeh": {
       "word": "ngeh",
@@ -28277,128 +28277,128 @@
     "bakal": {
       "word": "bakal",
       "status": "active",
-      "updated_at": "2026-09-29T12:25:55.567Z",
+      "updated_at": "2026-09-30T13:58:51.361Z",
       "display": "bakal",
       "cn": "将会、要",
       "last_wrong": "2026-09-29T07:59:14.910Z",
-      "last_review": "2026-09-29T07:59:14.910Z",
+      "last_review": "2026-09-30T13:58:51.327Z",
       "reasons": [
         "quick_wrong",
         "memory_fuzzy"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "ngerjain": {
       "word": "ngerjain",
       "status": "active",
-      "updated_at": "2026-09-29T10:27:13.148Z",
+      "updated_at": "2026-09-30T13:59:01.872Z",
       "display": "ngerjain",
       "cn": "做；处理某项工作（口语）",
       "root": "kerja",
       "last_wrong": "2026-09-29T10:27:13.120Z",
-      "last_review": "2026-09-29T10:27:13.120Z",
+      "last_review": "2026-09-30T13:59:01.837Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kepake": {
       "word": "kepake",
       "status": "active",
-      "updated_at": "2026-09-29T10:28:01.997Z",
+      "updated_at": "2026-09-30T13:59:06.528Z",
       "display": "kepake",
       "cn": "用得上；派得上用场",
       "root": "pakai",
       "root_cn": "使用；穿戴",
       "last_wrong": "2026-09-29T10:28:01.969Z",
-      "last_review": "2026-09-29T10:28:01.969Z",
+      "last_review": "2026-09-30T13:59:06.499Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "ngirit": {
       "word": "ngirit",
       "status": "active",
-      "updated_at": "2026-09-29T10:28:23.739Z",
+      "updated_at": "2026-09-30T13:59:09.512Z",
       "display": "ngirit",
       "cn": "省着花；节省开支（口语）",
       "root": "irit",
       "root_cn": "节省；省着用",
-      "last_wrong": "2026-09-29T10:28:23.712Z",
-      "last_review": "2026-09-29T10:28:23.712Z",
+      "last_wrong": "2026-09-30T13:59:09.485Z",
+      "last_review": "2026-09-30T13:59:09.485Z",
       "reasons": [
         "quick_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "ngabarin": {
       "word": "ngabarin",
       "status": "active",
-      "updated_at": "2026-09-29T10:46:14.973Z",
+      "updated_at": "2026-09-30T13:59:18.382Z",
       "display": "ngabarin",
       "cn": "通知；告诉一声（口语）",
       "root": "kabar",
       "root_cn": "消息；音讯",
       "last_wrong": "2026-09-29T10:46:14.946Z",
-      "last_review": "2026-09-29T10:46:14.946Z",
+      "last_review": "2026-09-30T13:59:18.354Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nggak heran": {
       "word": "nggak heran",
       "status": "active",
-      "updated_at": "2026-09-29T10:47:12.996Z",
+      "updated_at": "2026-09-30T13:59:26.850Z",
       "display": "nggak heran",
       "cn": "难怪；不奇怪",
       "root": "heran",
       "root_cn": "惊讶；觉得奇怪",
       "last_wrong": "2026-09-29T10:47:12.970Z",
-      "last_review": "2026-09-29T10:47:12.970Z",
+      "last_review": "2026-09-30T13:59:26.820Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kelepasan": {
       "word": "kelepasan",
       "status": "active",
-      "updated_at": "2026-09-29T10:49:12.602Z",
+      "updated_at": "2026-09-30T13:59:40.615Z",
       "display": "kelepasan",
       "cn": "一不小心说出/做出；没控制住（口语）",
       "root": "lepas",
       "root_cn": "松开；脱离",
       "last_wrong": "2026-09-29T10:49:12.576Z",
-      "last_review": "2026-09-29T10:49:12.576Z",
+      "last_review": "2026-09-30T13:59:40.585Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kepotong": {
       "word": "kepotong",
       "status": "active",
-      "updated_at": "2026-09-29T10:49:30.421Z",
+      "updated_at": "2026-09-30T13:59:49.985Z",
       "display": "kepotong",
       "cn": "被打断；被截断；被扣掉",
       "root": "potong",
       "root_cn": "切；剪；扣除",
       "last_wrong": "2026-09-29T10:49:30.392Z",
-      "last_review": "2026-09-29T10:49:30.392Z",
+      "last_review": "2026-09-30T13:59:49.956Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menyadari": {
       "word": "menyadari",
@@ -28670,6 +28670,22 @@
       "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
+    },
+    "sungkan": {
+      "word": "sungkan",
+      "status": "active",
+      "updated_at": "2026-09-30T14:00:55.854Z",
+      "display": "sungkan",
+      "cn": "因为礼貌或尊重而不好意思开口",
+      "root": "sungkan",
+      "root_cn": "客气拘谨；不好意思开口",
+      "last_wrong": "2026-09-30T14:00:55.827Z",
+      "last_review": "2026-09-30T14:00:55.827Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
     }
   }
 }
