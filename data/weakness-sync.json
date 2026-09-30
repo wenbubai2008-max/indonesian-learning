@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-30T06:59:48.571Z",
+  "updated_at": "2026-09-30T12:37:01.658Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -3123,19 +3123,19 @@
     "baper": {
       "word": "baper",
       "status": "active",
-      "updated_at": "2026-09-28T14:43:33.642Z",
+      "updated_at": "2026-09-30T12:36:37.411Z",
       "display": "baper",
       "cn": "太往心里去；因为一句话情绪受影响（口语）",
       "root": "bawa perasaan",
       "root_cn": "把情绪带进去；往心里去",
       "last_wrong": "2026-09-28T14:43:33.614Z",
-      "last_review": "2026-09-28T14:43:33.614Z",
+      "last_review": "2026-09-30T12:36:37.384Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "barusan": {
       "word": "barusan",
@@ -28180,19 +28180,19 @@
     "nyinggung": {
       "word": "nyinggung",
       "status": "active",
-      "updated_at": "2026-09-28T14:43:57.071Z",
+      "updated_at": "2026-09-30T12:36:20.924Z",
       "display": "nyinggung",
       "cn": "提到；触及；说到让人不舒服的话题（口语）",
       "root": "singgung",
       "root_cn": "触及；提到",
       "last_wrong": "2026-09-28T14:43:57.046Z",
-      "last_review": "2026-09-28T14:43:57.046Z",
+      "last_review": "2026-09-30T12:36:20.894Z",
       "reasons": [
         "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 3,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nangkep": {
       "word": "nangkep",
@@ -28588,11 +28588,14 @@
     "telanjur": {
       "word": "telanjur",
       "status": "mastered",
-      "updated_at": "2026-09-29T12:25:52.249Z",
+      "updated_at": "2026-09-30T12:36:51.204Z",
       "display": "telanjur",
-      "last_review": "2026-09-29T12:25:52.226Z",
+      "cn": "已经做了、来不及改变",
+      "last_review": "2026-09-30T12:36:51.180Z",
       "last_mastered": "2026-09-29T12:25:52.226Z",
-      "reasons": [],
+      "reasons": [
+        "listening_slow"
+      ],
       "wrong_count": 0,
       "right_streak": 3
     },
