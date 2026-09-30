@@ -422,11 +422,13 @@
     {
       "date": "2026-09-30",
       "am": true,
-      "pm": false,
+      "pm": true,
       "verified": "generated_daily_lesson",
       "day": 40,
       "am_day": 40,
-      "am_status": "generated"
+      "am_status": "generated",
+      "pm_day": 40,
+      "pm_status": "lesson_complete"
     }
   ],
   "updated": "2026-09-30",
