@@ -65,7 +65,7 @@ test('source or draft absent blocked, no accidental publish',()=>{const f=fixtur
 test('CLI checks PR changes after main advances, still validates current baseline',()=>{
  const f=fixture(makeAm),dir=fs.mkdtempSync(path.join(os.tmpdir(),'release-diff-test-'));
  const git=(...args)=>cp.execFileSync('git',args,{cwd:dir,encoding:'utf8',stdio:['ignore','pipe','pipe']}).trim();
- const write=(p,value)=>{const file=path.join(dir,p);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,JSON.stringify(value,null,2)+'\\n')};
+ const write=(p,value)=>{const file=path.join(dir,p);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,JSON.stringify(value,null,2)+'\n')};
  const commit=message=>{git('add','.');git('commit','-m',message);return git('rev-parse','HEAD')};
  const check=(base,head)=>{
   const run=cp.spawnSync(process.execPath,[path.join(__dirname,'check-release-pr.js'),base,head,f.state.branch],{cwd:dir,encoding:'utf8'});
