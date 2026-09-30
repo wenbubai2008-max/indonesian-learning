@@ -103,6 +103,7 @@ jobs:
     if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'lesson-release-')
     runs-on: ubuntu-latest
     permissions:
+      actions: write
       contents: write
       pull-requests: write
     steps:
@@ -293,6 +294,12 @@ jobs:
           fi
           merge_sha="$(jq -r '.sha // empty' <<<"$response")"
           echo "LESSON_RELEASE_PUBLISHED date=$release_date session=$release_session pr=$PR_NUMBER head=$final_sha merge=$merge_sha"
+
+          # A merge performed with GITHUB_TOKEN does not recursively trigger normal push workflows.
+          # workflow_dispatch is explicitly allowed to create a follow-up run, so hand the merged
+          # lesson to this same trusted workflow for Sync/runtime/context reconciliation.
+          gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" -f ref=main
+          echo "LESSON_SYNC_DISPATCHED merge=$merge_sha"
 
   extensive_reading_release:
     if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'extensive-reading-')

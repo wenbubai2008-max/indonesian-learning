@@ -131,7 +131,7 @@
 
 ### K. 失败自动补偿与故障台账（2026-09-27）
 
-- 正常 AM/PM：ChatGPT 写唯一 lesson 并打开授权 release PR；GitHub Runner 从最新 main 自动生成 index、运行权威校验并按最终 head SHA squash merge，使 lesson + index 以一个正式 main commit 原子进入。随后 Sync 触发完整回归、同步、推送后重新读取远端 main，再运行一次回归确认；只有通过才报告同步成功。雅加达 08:12、18:12 各保留一次兜底定时触发（UTC 01:12、11:12），先只读确认课程、index、runtime、水位、新词退出与回归结果；全部健康即直接结束，不运行 builder、不提交、不部署；仅异常才进入已有安全重算。GitHub cron 无法基于前次成功动态取消事件，故健康时仍会启动一次轻量任务，但不进行修复工作；可能有平台延迟。
+- 正常 AM/PM：ChatGPT 写唯一 lesson 并打开授权 release PR；GitHub Runner 从最新 main 自动生成 index、运行权威校验并按最终 head SHA squash merge，使 lesson + index 以一个正式 main commit 原子进入。由于该 merge 使用 `GITHUB_TOKEN`，lesson release job 随后必须显式 `workflow_dispatch` 同一个 `sync-daily-vocab.yml` 的 main 运行，不能假设普通 push 会递归触发。该 Sync 完成完整回归、同步、推送后重新读取远端 main，再运行一次回归确认；只有通过才报告同步成功。雅加达 08:12、18:12 各保留一次兜底定时触发（UTC 01:12、11:12），先只读确认课程、index、runtime、水位、新词退出与回归结果；全部健康即直接结束，不运行 builder、不提交、不部署；仅异常才进入已有安全重算。GitHub cron 无法基于前次成功动态取消事件，故健康时仍会启动一次轻量任务，但不进行修复工作；可能有平台延迟。
 - 两个现有 writer 均采用最新 main 重算与有限重试；不使用 stale rebase、不强推、不重复生成课程、不制造空提交。定时补偿仅能恢复已经正确提交且 index 标记完成的课程；ChatGPT 在提交前失败时，GitHub 无法凭空生成未保存的课程。
 - 每次 GitHub Actions 失败：捕捉初步类别、失败阶段、退出码、时间、触发 SHA、当前本地/远端 HEAD 与原始 Run URL；写入 Job Summary，使用 upload-artifact 保存 90 天，并通过 issues:write 按 workflow+category+phase 去重建立/更新 GitHub Issue。原始完整异常以 Run 日志为准，不把初步类别当成已证实根因。
 - 如果仓库 Issues 或 artifact 服务自身不可用，原始 GitHub Run 日志依然保留；Issue/附件不可用须明确说明，不得声称记录完整。
