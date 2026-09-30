@@ -142,26 +142,22 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
           PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
           set -Eeuo pipefail
           release_date="${PR_HEAD_REF#extensive-reading-}"
           git fetch --no-tags origin main
-          latest_main="$(git rev-parse origin/main)"
-          if [ "$latest_main" != "$PR_BASE_SHA" ]; then
-            echo "::error title=Extensive reading base moved::Expected $PR_BASE_SHA but origin/main is $latest_main. Refresh the same release branch from the new main before retrying."
-            exit 1
-          fi
+          release_base="$(git rev-parse origin/main)"
+          echo "Pin extensive-reading release base to current origin/main: $release_base"
 
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          if ! git merge-base --is-ancestor "$PR_BASE_SHA" HEAD; then
-            echo "Release branch predates the pinned PR base; merge the pinned base into the isolated branch without force."
-            git merge --no-edit "$PR_BASE_SHA"
+          if ! git merge-base --is-ancestor "$release_base" HEAD; then
+            echo "Release branch predates current main; merge the pinned main into the isolated branch without force."
+            git merge --no-edit "$release_base"
           fi
 
-          changed_before="$(git diff --name-only "$PR_BASE_SHA" HEAD)"
+          changed_before="$(git diff --name-only "$release_base" HEAD)"
           unexpected_before="$(printf '%s\n' "$changed_before" | grep -Ev '^(data/extensive-reading-candidate[.]json|data/extensive-reading-data[.]js|data/extensive-reading-history[.]js|data/extensive-reading-history/[0-9]{4}-[0-9]{2}-[0-9]{2}(-[a-z0-9-]+)?[.]js)$' || true)"
           if [ -n "$unexpected_before" ]; then
             echo "::error title=Unexpected reading PR paths::$unexpected_before"
@@ -170,9 +166,9 @@ jobs:
           test -f data/extensive-reading-candidate.json
 
           trusted_script="$RUNNER_TEMP/publish-extensive-reading-candidate.js"
-          git show "$PR_BASE_SHA:.github/scripts/publish-extensive-reading-candidate.js" > "$trusted_script"
+          git show "$release_base:.github/scripts/publish-extensive-reading-candidate.js" > "$trusted_script"
           node --check "$trusted_script"
-          node "$trusted_script" prepare --repo "$GITHUB_WORKSPACE" --base "$PR_BASE_SHA" --date "$release_date"
+          node "$trusted_script" prepare --repo "$GITHUB_WORKSPACE" --base "$release_base" --date "$release_date"
 
           node .github/scripts/regression-guard.js
 
@@ -186,17 +182,56 @@ jobs:
           git commit -m "Prepare extensive reading ${release_date}"
           final_sha="$(git rev-parse HEAD)"
 
-          node "$trusted_script" validate --repo "$GITHUB_WORKSPACE" --base "$PR_BASE_SHA" --date "$release_date"
+          node "$trusted_script" validate --repo "$GITHUB_WORKSPACE" --base "$release_base" --date "$release_date"
           git push origin "HEAD:$PR_HEAD_REF"
 
           git fetch --no-tags origin main
           latest_main="$(git rev-parse origin/main)"
-          if [ "$latest_main" != "$PR_BASE_SHA" ]; then
-            echo "::error title=Main advanced before reading merge::Final branch is preserved at $final_sha; refresh against $latest_main instead of forcing a merge."
+          if [ "$latest_main" != "$release_base" ]; then
+            echo "::error title=Main advanced before reading merge::Release was prepared from $release_base but origin/main is now $latest_main. Final branch is preserved at $final_sha; rerun from the newer main instead of forcing a merge."
             exit 1
           fi
 
-          response="$(gh api --method PUT "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/merge" -f merge_method=squash -f sha="$final_sha")"
+          mergeable=""
+          merge_state=""
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            pr_json="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+            remote_head="$(jq -r '.head.sha // empty' <<<"$pr_json")"
+            mergeable="$(jq -r 'if .mergeable == null then "unknown" else (.mergeable|tostring) end' <<<"$pr_json")"
+            merge_state="$(jq -r '.mergeable_state // "unknown"' <<<"$pr_json")"
+            if [ "$remote_head" != "$final_sha" ]; then
+              echo "::error title=Reading PR head moved::Expected $final_sha but GitHub reports $remote_head."
+              exit 1
+            fi
+            if [ "$mergeable" = "true" ]; then
+              break
+            fi
+            if [ "$mergeable" = "false" ]; then
+              echo "::error title=Reading PR not mergeable::GitHub reports mergeable=false state=$merge_state."
+              exit 1
+            fi
+            echo "Waiting for GitHub to recompute PR mergeability (attempt $attempt/10, state=$merge_state)."
+            sleep 2
+          done
+          if [ "$mergeable" != "true" ]; then
+            echo "::error title=Reading PR mergeability timeout::GitHub did not compute mergeable=true within the bounded wait; state=$merge_state."
+            exit 1
+          fi
+
+          response=""
+          merge_error="$RUNNER_TEMP/extensive-reading-merge-error.txt"
+          for attempt in 1 2 3; do
+            if response="$(gh api --method PUT "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/merge" -f merge_method=squash -f sha="$final_sha" 2>"$merge_error")"; then
+              break
+            fi
+            echo "Merge API attempt $attempt/3 did not complete:"
+            cat "$merge_error" || true
+            if [ "$attempt" -lt 3 ]; then sleep 2; fi
+          done
+          if [ -z "$response" ]; then
+            echo '::error title=Extensive reading merge failed::GitHub merge API failed after three bounded attempts.'
+            exit 1
+          fi
           printf '%s\n' "$response"
           merged="$(jq -r '.merged // false' <<<"$response")"
           if [ "$merged" != "true" ]; then
