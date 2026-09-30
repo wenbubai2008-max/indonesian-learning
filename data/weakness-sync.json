@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-29T12:26:46.805Z",
+  "updated_at": "2026-09-30T01:58:52.292Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -9406,8 +9406,9 @@
     "kuat": {
       "word": "kuat",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:51.735Z",
+      "updated_at": "2026-09-30T01:58:41.577Z",
       "display": "kuat",
+      "cn": "强有力的",
       "last_review": "2026-09-12T14:13:51.729Z",
       "last_mastered": "2026-09-12T14:13:51.729Z",
       "reasons": [],
@@ -13588,8 +13589,9 @@
     "sudut": {
       "word": "sudut",
       "status": "active",
-      "updated_at": "2026-09-12T14:25:24.886Z",
+      "updated_at": "2026-09-30T01:57:32.407Z",
       "display": "sudut",
+      "cn": "角度、角落",
       "reasons": [
         "memory_dont"
       ],
