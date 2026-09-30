@@ -89,6 +89,7 @@ jobs:
       - name: Check exact PR candidate and index against pinned main
         shell: bash
         env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
           PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
           PR_HEAD_REF: ${{ github.head_ref }}
         run: |
@@ -141,7 +142,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
           PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
           set -Eeuo pipefail
