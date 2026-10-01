@@ -13,6 +13,10 @@ const {validate}=require(path.join(REPO,'.github/scripts/validate-lesson-candida
 const read=p=>JSON.parse(fs.readFileSync(path.join(REPO,p),'utf8'));
 const norm=x=>String(x||'').trim().toLowerCase();
 const wc=x=>String(x||'').trim().split(/\s+/).filter(Boolean).length;
+const hasWord=(text,word)=>{
+  const escaped=String(word||'').replace(/[\/\\^$*+?.()|[\]{}]/g,'\\$&').replace(/\s+/g,'\\s+');
+  return !!escaped&&new RegExp('(^|[^\\p{L}])'+escaped+'(?=$|[^\\p{L}])','iu').test(String(text||''));
+};
 const dailySource=fs.readFileSync(path.join(REPO,'data/daily-vocab-data.js'),'utf8');
 const da=dailySource.indexOf('['),db=dailySource.lastIndexOf(']');
 const dailyRows=JSON.parse(dailySource.slice(da,db+1));
@@ -74,7 +78,8 @@ for(const slot of ['am','pm']){
       assert.equal(lesson._prototype.engine_version,2);
       assert.equal(lesson._prototype.production_write,false);
       assert(wc(lesson.reading.text)>=80&&wc(lesson.reading.text)<=120);
-      assert((lesson.vocab||[]).every(v=>String(v.formation||'').trim()&&String(v.synonym_note||'').trim()));
+      assert((lesson.vocab||[]).every(v=>String(v.formation||'').trim()&&String(v.synonym_note||'').trim()&&hasWord(v.example,v.word)));
+      assert(!(lesson.vocab||[]).some(v=>/注意结合语境与常见搭配使用/.test(v.synonym_note)));
       const nws=newWords(lesson),rc=coverage(lesson,'reading_coverage');
       if(slot==='am'){
         assert.equal(nws.length,10);
@@ -82,15 +87,15 @@ for(const slot of ['am','pm']){
         assert.equal(lesson.sentences.length,5);
         assert.equal(lesson.quiz.length,3);
         assert.equal(lesson.review.length,3);
-        assert(rc.filter(x=>nws.includes(x)).length>=6,'AM reading new coverage < 6');
+        assert(nws.filter(x=>hasWord(lesson.reading.text,x)).length>=6,'AM reading exact new coverage < 6');
       }else{
         const rw=groupWords(lesson,'review'),aw=groupWords(lesson,'application'),dc=coverage(lesson,'dialogue_coverage');
         assert(nws.length>=3&&nws.length<=4);
         assert(rw.length>=4&&rw.length<=6);
         assert(aw.length>=2&&aw.length<=3);
         assert(lesson.vocab.length>=10&&lesson.vocab.length<=12);
-        assert(rc.filter(x=>nws.includes(x)).length>=Math.min(3,nws.length),'PM reading new coverage too low');
-        assert(dc.filter(x=>nws.includes(x)).length>=Math.min(2,nws.length),'PM dialogue new coverage too low');
+        assert(nws.every(x=>hasWord(lesson.reading.text,x)),'PM reading must cover every exact new word');
+        assert(nws.filter(x=>hasWord(lesson.dialogue.lines.map(l=>l.id).join(' '),x)).length>=Math.min(2,nws.length),'PM dialogue new coverage too low');
         assert(lesson.dialogue.lines.length>=4);
         assert(lesson.rewrite.length>=3&&lesson.rewrite.length<=4);
         const q=lesson.daily_test.questions;
@@ -117,6 +122,19 @@ test('preview is read-only and loads shared core',()=>{
   assert(!js.includes("method:'delete'")&&!js.includes('method:"delete"'));
   assert(!js.includes('api.github.com'));
   assert(!js.includes('localstorage')&&!js.includes('indexeddb'));
+});
+
+test('missing historical new-word bands fail clearly, never as a TypeError',()=>{
+  const ctx=JSON.parse(JSON.stringify(cfg('am').ctx));
+  ctx.candidates.new_dont=[];ctx.candidates.new_fuzzy=[];
+  assert.throws(()=>core.generate(ctx,bundle,dailyRows,{variant:0}),/LESSON_NEW_POOL_INSUFFICIENT/);
+});
+
+test('Unicode exact matching supports hyphens and rejects derived-form false positives',()=>{
+  assert(hasWord('Dia bicara seolah-olah sudah tahu.', 'seolah-olah'));
+  assert(hasWord('Hujan turun terus-menerus sejak siang.', 'terus-menerus'));
+  assert(hasWord('Saya lupa kata sandi akun.', 'kata sandi'));
+  assert(!hasWord('Apa gunanya laporan ini?', 'guna'));
 });
 
 console.log('PROTOTYPE_V2_TEST '+JSON.stringify({ok:true,passed,variants:12,engine_version:2}));
