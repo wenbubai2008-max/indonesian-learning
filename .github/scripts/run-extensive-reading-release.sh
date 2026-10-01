@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
-: "${OPENAI_API_KEY:?Missing OPENAI_API_KEY}"
+: "${GEMINI_API_KEY:?Missing GEMINI_API_KEY (unbilled Free Tier project)}"
 git fetch --no-tags origin main
 git checkout -B main origin/main
 base="$(git rev-parse HEAD)"

@@ -103,15 +103,15 @@
 
 泛读发布不新增第三条 workflow。2026-09-30 起，长期发布逻辑放在现有 `sync-daily-vocab.yml` 的独立 `extensive_reading_release` PR job 中，但该 job **不得读写 daily-vocab/runtime**。ChatGPT 每天只在同日 `extensive-reading-YYYY-MM-DD` 隔离分支写一个临时候选 `data/extensive-reading-candidate.json` 并打开带 `AUTO_PUBLISH_EXTENSIVE_READING=1` 标记的同仓库 PR；GitHub Runner 从受信任的 main 脚本生成/验证旧文归档、轻量历史索引与今日单篇文件，删除候选文件后用 PR head 精确 SHA squash merge。这样正式 main 仍只有一个发布 commit，历史三文件事务由 GitHub 完成，ChatGPT 不再直接移动 main ref 或连续写三个正式文件。若 main 在生成/合并期间前进，保留 release 分支并停止，不 force push、不用旧 base 强并。 Runner 推回最终 head 会再次触发一次 `pull_request synchronize`；如果该后续 run 开始时候选已被删除且 PR 已 merged/closed，必须幂等成功退出，不得把已成功发布误报为失败。
 
-### H2. API 泛读生成可选迁移（2026-10-01）
+### H2. Gemini 免费层级泛读生成可选迁移（2026-10-01）
 
 - 新增 GitHub Runner 主导的“生成—验证—发布”路径，仍位于现有 `sync-daily-vocab.yml` 中，不增加第三个 workflow。
-- 每天 05:00 UTC（雅加达 12:00）只有在仓库变量 `EXTENSIVE_READING_AUTO_ENABLED=true` 时才进入新的 `extensive_reading_generate` job；缺少 Actions secret `OPENAI_API_KEY` 时跳过写入并记录配置提示；默认关闭。通过 `workflow_dispatch.generate_extensive_reading=true` 可手动测试同一受信任 job。
-- Runner 的 `generate-extensive-reading.js` 仅从 ANTARA 最近72小时公开资讯中选取一则有足够正文的日常生活素材；向正式授权的 OpenAI API 发送来源正文和轻量 focus_pool，生成单个 candidate。禁止捏造来源数据；没有可靠素材时安全失败。
+- 每天 05:00 UTC（雅加达 12:00）只有在仓库变量 `EXTENSIVE_READING_AUTO_ENABLED=true` 时才进入新的 `extensive_reading_generate` job；缺少 Actions secret `GEMINI_API_KEY` 时跳过写入并记录配置提示；默认关闭。通过 `workflow_dispatch.generate_extensive_reading=true` 可手动测试同一受信任 job。
+- Runner 的 `generate-extensive-reading.js` 仅从 ANTARA 最近72小时公开资讯中选取一则有足够正文的日常生活素材；向 Google Gemini API Free Tier（默认 `gemini-2.5-flash-lite`，仅允许 `gemini-2.5-flash` 或 `gemini-2.5-flash-lite`）发送公开新闻来源正文和轻量 focus_pool；该免费层级提交数据可能用于改进 Google 产品，不可传个人敏感资料，生成单个 candidate。禁止捏造来源数据；没有可靠素材时安全失败。
 - Runner 使用原有 `publish-extensive-reading-candidate.js` prepare/validate 及 regression guard；同一次受信任 job 完成 branch、PR、final SHA squash merge（`GITHUB_TOKEN` 发起的 PR 不应依赖后续 PR 工作流自动递归触发）。
 - 永远先检查 main 今日文章，不重复生成或空提交；已存在同日候选只恢复，不重写；main 变化、结构校验、历史验证或 PR merge 失败则保留隔离分支停止。
-- **迁移闸门**：在 API key、GitHub Actions 创建 PR 权限、第一次完整实际生成/Pages 验收之前，保持既有 ChatGPT 12:00 任务 enabled 且新仓库变量关闭。第一次真实验证成功后再切换：设置变量 true，并禁用旧的重复写入任务，不允许两套生成器同日同时写。
-- 新生成器不得修改 AM/PM lesson、runtime、mastered、词池，也不能新增 daily-vocab writer。
+- **迁移闸门**：在用户确认项目没有关联收费结算、免费层级 `GEMINI_API_KEY`、GitHub Actions 创建 PR 权限、第一次完整实际生成/Pages 验收之前，保持既有 ChatGPT 12:00 任务 enabled 且新仓库变量关闭。第一次真实验证成功后再切换：设置变量 true，并禁用旧的重复写入任务，不允许两套生成器同日同时写。
+- 免费额度耗尽/服务返回错误时停止，不允许静默切换付费模型或其他付费 API；新生成器不得修改 AM/PM lesson、runtime、mastered、词池，也不能新增 daily-vocab writer。
 
 ### I. 课程规则写对了，但实际 JSON Schema 仍写错
 发生过：`2026-09-16` 18:00 晚课内容本身正确，但 3 道 choice 漏写 `answer_index`，导致网页把正确答案判成红色；同一份课还一度把 `review.steps` 写成 `review.items`，self_check 前端也曾不显示。
