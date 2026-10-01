@@ -141,18 +141,22 @@ test('fallback workflow has one existing twice-daily clock and valid Bash steps'
  assert(workflow.includes("github.ref == 'refs/heads/main' && github.event_name != 'create'"));
  assert(workflow.includes('LESSON_CREATE_FALLBACK_DISPATCHED'));
  assert(workflow.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
+ assert(workflow.includes('due_epoch=$((created_epoch + 60))'), 'Watcher must count 60 seconds from run creation');
+ assert(!workflow.includes('target_time=08:05') && !workflow.includes('target_time=18:05'),
+   'Branch watcher must never wait for fixed 05 minute');
+ assert(workflow.includes('LESSON_CREATE_DRAFT_STAGED'), 'Staged original gets a bounded normal publication window');
 });
 
-test('real watcher Bash ignores non-release branches and dispatches only a missing main lesson',()=>{
+test('real watcher Bash uses a 60-second event grace, not fixed :05',()=>{
  const cp=require('node:child_process'),os=require('node:os');
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'lesson-watch-test-'));
  try{
    const source=fs.readFileSync(path.join(base,'.github/workflows/sync-daily-vocab.yml'),'utf8').split('\n');
-   const n='      - name: Check a newly created release scaffold without holding the main write lock';
-   const step=source.indexOf(n);
-   assert(step>0);
-   const runner=source.findIndex((x,i)=>i>step&&x==='        run: |');
-   assert(runner>step);
+   const name='      - name: Check a newly created release scaffold without holding the main write lock';
+   const start=source.indexOf(name);
+   assert(start>0);
+   const runner=source.findIndex((x,i)=>i>start&&x==='        run: |');
+   assert(runner>start);
    const body=[];
    for(let i=runner+1;i<source.length;i++){
      if(source[i].startsWith('          '))body.push(source[i].slice(10));
@@ -160,49 +164,101 @@ test('real watcher Bash ignores non-release branches and dispatches only a missi
      else break;
    }
    const dateStub=path.join(tmp,'date'),ghStub=path.join(tmp,'gh'),sleepStub=path.join(tmp,'sleep');
+   // The fake Actions run was created at epoch=1000, the runner starts at epoch=1000.
+   // Its branch is already within the allowed PM slot (slotEpoch=900).
    fs.writeFileSync(dateStub,[
      '#!/bin/bash',
      'case "$*" in',
      '  *"+%Y-%m-%d"*) echo 2026-10-01 ;;',
      '  *"+%H"*) echo 18 ;;',
-     '  *"-d"*"+%s"*) echo 1000 ;;',
-     '  *"+%s"*) echo 1001 ;;',
+     '  *"18:00:00"*"+%s"*) echo "$FAKE_SLOT_EPOCH" ;;',
+     '  *"T11:00:00Z"*"+%s"*) echo "$FAKE_CREATED_EPOCH" ;;',
+     '  *"+%s"*) echo "$FAKE_NOW_EPOCH" ;;',
      '  *) /usr/bin/date "$@" ;;',
      'esac'
    ].join('\n')+'\n');
    fs.writeFileSync(ghStub,[
      '#!/bin/bash',
      'case "$*" in',
-     '  *"/contents/data/daily/index.json?ref=main"*) echo "$FAKE_INDEX_B64" ;;',
-     '  *"/contents/data/daily/2026-10-01-pm.json?ref=main"*) test "$FAKE_LESSON_EXISTS" = yes ;;',
+     '  *"/actions/runs/"*) echo "2026-10-01T11:00:00Z" ;;',
+     '  *"/contents/data/daily/index.json?ref=main"*)',
+     '    if [ "$FAKE_PUBLISH_AFTER_STAGED" = yes ] && grep -qx 120 "$FAKE_SLEEP_LOG" 2>/dev/null; then',
+     '      echo "$FAKE_COMPLETE_INDEX_B64"',
+     '    else echo "$FAKE_INDEX_B64"; fi ;;',
+     '  *"/contents/data/daily/2026-10-01-pm.json?ref=main"*)',
+     '    if [ "$FAKE_LESSON_EXISTS" = yes ]; then exit 0; fi',
+     '    if [ "$FAKE_PUBLISH_AFTER_STAGED" = yes ] && grep -qx 120 "$FAKE_SLEEP_LOG" 2>/dev/null; then exit 0; fi',
+     '    exit 1 ;;',
+     '  *"/contents/data/daily/2026-10-01-pm.json?ref=lesson-release-2026-10-01-pm"*)',
+     '    test "$FAKE_DRAFT_EXISTS" = yes ;;',
      '  *"--method POST"*) printf "DISPATCH %s\\n" "$*" >> "$FAKE_DISPATCH_LOG" ;;',
      '  *) echo "Unexpected gh api call: $*" >&2; exit 9 ;;',
      'esac'
    ].join('\n')+'\n');
-   fs.writeFileSync(sleepStub,'#!/bin/bash\\necho "Unexpected sleep: $*" >&2\\nexit 8\\n');
+   fs.writeFileSync(sleepStub,[
+     '#!/bin/bash',
+     'printf "%s\\n" "$1" >> "$FAKE_SLEEP_LOG"'
+   ].join('\n')+'\n');
    for(const f of [dateStub,ghStub,sleepStub])fs.chmodSync(f,0o755);
-   const log=path.join(tmp,'dispatch.log');
-   const run=(ref,flag,fileExists)=>{
-     fs.rmSync(log,{force:true});
-     const index={dates:[{date:'2026-10-01',am:true,pm:flag}]};
+   const log=path.join(tmp,'dispatch.log'),sleepLog=path.join(tmp,'sleep.log');
+   const run=(ref,options={})=>{
+     fs.rmSync(log,{force:true});fs.rmSync(sleepLog,{force:true});
+     const index={dates:[{date:'2026-10-01',am:true,pm:options.published||false}]};
+     const publishedIndex={dates:[{date:'2026-10-01',am:true,pm:true}]};
      const env={...process.env,PATH:tmp+':'+process.env.PATH,
-       CREATED_REF:ref,GITHUB_REPOSITORY:'test/indonesian-learning',GH_TOKEN:'unit-test',
-       FAKE_INDEX_B64:Buffer.from(JSON.stringify(index)).toString('base64'),
-       FAKE_LESSON_EXISTS:fileExists?'yes':'no',FAKE_DISPATCH_LOG:log};
+       CREATED_REF:ref,GITHUB_REPOSITORY:'test/indonesian-learning',GITHUB_RUN_ID:'123',
+       GH_TOKEN:'unit-test',FAKE_INDEX_B64:Buffer.from(JSON.stringify(index)).toString('base64'),
+       FAKE_COMPLETE_INDEX_B64:Buffer.from(JSON.stringify(publishedIndex)).toString('base64'),
+       FAKE_LESSON_EXISTS:options.published?'yes':'no',
+       FAKE_DRAFT_EXISTS:options.staged?'yes':'no',
+       FAKE_PUBLISH_AFTER_STAGED:options.afterStaged?'yes':'no',
+       FAKE_DISPATCH_LOG:log,FAKE_SLEEP_LOG:sleepLog,
+       FAKE_CREATED_EPOCH:String(options.createdEpoch??1000),
+       FAKE_NOW_EPOCH:String(options.nowEpoch??1000),
+       FAKE_SLOT_EPOCH:String(options.slotEpoch??900)};
      const result=cp.spawnSync('bash',['-c',body.join('\n')+'\n'],{env,encoding:'utf8'});
      assert.equal(result.status,0,ref+' stdout='+result.stdout+' stderr='+result.stderr);
-     return {stdout:result.stdout,dispatched:fs.existsSync(log)?fs.readFileSync(log,'utf8'):''};
+     return {stdout:result.stdout,
+       dispatched:fs.existsSync(log)?fs.readFileSync(log,'utf8'):'',
+       slept:fs.existsSync(sleepLog)?fs.readFileSync(sleepLog,'utf8').trim().split('\n').map(Number):[]};
    };
-   const probe=run('lesson-watch-test-probe',false,false);
+   const probe=run('lesson-watch-test-probe');
    assert(probe.stdout.includes('LESSON_CREATE_IGNORED'));
-   assert.equal(probe.dispatched,'');
-   const done=run('lesson-release-2026-10-01-pm',true,true);
+   assert.deepEqual(probe.slept,[]);assert.equal(probe.dispatched,'');
+
+   const done=run('lesson-release-2026-10-01-pm',{published:true});
    assert(done.stdout.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
-   assert.equal(done.dispatched,'');
-   const missing=run('lesson-release-2026-10-01-pm',false,false);
+   assert.deepEqual(done.slept,[60]);assert.equal(done.dispatched,'');
+
+   const missing=run('lesson-release-2026-10-01-pm');
    assert(missing.stdout.includes('LESSON_CREATE_FALLBACK_DISPATCHED'));
+   assert.deepEqual(missing.slept,[60]);
    assert(missing.dispatched.includes('inputs[recover_date]=2026-10-01'));
    assert(missing.dispatched.includes('inputs[recover_session]=pm'));
+   assert.equal(missing.dispatched.trim().split('\n').length,1);
+
+   const runnerLate=run('lesson-release-2026-10-01-pm',{nowEpoch:1070});
+   assert.deepEqual(runnerLate.slept,[],'A queued runner must not restart 60-second window');
+   assert(runnerLate.dispatched.includes('inputs[recover_session]=pm'));
+
+   const beforeSlot=run('lesson-release-2026-10-01-pm',{slotEpoch:1100});
+   assert.deepEqual(beforeSlot.slept,[100],'Before session start, wait for 18:00, never :05');
+   assert(beforeSlot.dispatched.includes('inputs[recover_session]=pm'));
+
+   const tooEarly=run('lesson-release-2026-10-01-pm',{slotEpoch:3000});
+   assert(tooEarly.stdout.includes('LESSON_CREATE_IGNORED'));
+   assert.deepEqual(tooEarly.slept,[]);assert.equal(tooEarly.dispatched,'');
+
+   const staged=run('lesson-release-2026-10-01-pm',{staged:true});
+   assert(staged.stdout.includes('LESSON_CREATE_DRAFT_STAGED'));
+   assert.deepEqual(staged.slept,[60,120]);
+   assert(staged.dispatched.includes('inputs[recover_session]=pm'));
+
+   const normallyPublished=run('lesson-release-2026-10-01-pm',{staged:true,afterStaged:true});
+   assert(normallyPublished.stdout.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
+   assert.deepEqual(normallyPublished.slept,[60,120]);
+   assert.equal(normallyPublished.dispatched,'');
  }finally{fs.rmSync(tmp,{recursive:true,force:true})}
 });
+
 console.log('FALLBACK_RECOVERY_TEST '+JSON.stringify({ok:true,passed}));
