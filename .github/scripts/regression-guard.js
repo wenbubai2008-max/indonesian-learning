@@ -440,7 +440,10 @@ try {
   ok(/for attempt in 1 2; do/.test(build) && /git reset --hard origin\/main/.test(build) && /git push origin HEAD:main/.test(build), 'build workflow retries by recomputing from current main');
   const syncGroup=sync.split('\n').find(line=>/^\s*group:/.test(line))||'';
   ok(/group:\s*learning-data-write/.test(build) && syncGroup.includes('learning-data-write') && syncGroup.includes('lesson-pr-') && /cancel-in-progress:\s*false/.test(build) && /cancel-in-progress:\s*false/.test(sync), 'build and main sync share a non-cancelling write lock; read-only PR checks have a separate group');
-  ok(/12 1,11 \* \* \*/.test(sync) && !/12,27 1,11/.test(sync), 'sync workflow has one 08:12/18:12 compensation gate, not four checks');
+  const scheduleCrons=sync.split('\n').map(x=>x.trim()).filter(x=>x.startsWith('- cron: '));
+  ok(scheduleCrons.length===2 && scheduleCrons[0]==="- cron: '5 1 * * *'" &&
+    scheduleCrons[1]==="- cron: '5 11 * * *'",
+    'sync workflow has only the existing two daily checks, now at 08:05/18:05 Jakarta');
   ok(/scheduled_health_check/.test(sync) &&
     /Scheduled check: lesson, index, runtime, context, vocabulary and regression guard healthy; no rebuild or commit/.test(sync) &&
     sync.includes('node .github/scripts/build-lesson-context.js --check > /dev/null; then') &&
