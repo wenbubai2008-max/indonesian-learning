@@ -180,17 +180,21 @@
     return out.slice(0,count);
   }
 
-  function chooseScene(cards,env,variant=0){
+  function chooseScene(cards,env,variant=0,ctx=null){
+    const date=ctx?.target?.date,day=date?new Date(date+'T00:00:00Z').getUTCDay():null;
+    const weekday=day!==0&&day!==6;
     const ranked=env.M.scenes.scenes.map(scene=>{
       let score=0,covered=0;
       for(const c of cards){
         const fit=sceneFit(c,scene,env),weight=c.group==='new'?6:c.group==='application'?3:2;
         score+=fit*weight;if(fit>=3)covered++;
       }
+      if(weekday&&scene.id==='weekend-errands')score-=120;
+      if(ctx?.target?.session==='am'&&scene.id==='work-morning')score+=12;
       return {scene,score,covered};
     }).sort((a,b)=>b.covered-a.covered||b.score-a.score||a.scene.id.localeCompare(b.scene.id));
     const best=ranked[0]?.covered||0;
-    const top=ranked.filter(x=>x.covered>=Math.max(1,best-1)).slice(0,6);
+    const top=ranked.filter(x=>x.covered>=Math.max(1,best-1)&&x.score>ranked[0].score-45).slice(0,6);
     return (top.length?top:ranked)[variant%(top.length||ranked.length)]?.scene||env.M.scenes.scenes[0];
   }
 
@@ -198,29 +202,40 @@
     const curated=env.M['lexical-rules']?.curated?.[norm(word)]?.collocations||[];
     if(curated.length)return curated.slice(0,4);
     if(entry?.collocations?.length)return entry.collocations.slice(0,4);
+    const note=String(entry?.note||'');
+    const m=note.match(/常见([^。]+)/);
+    if(m){
+      const parts=m[1].split(/[、，,；;]/).map(x=>x.trim()).filter(x=>/[A-Za-z]/.test(x));
+      if(parts.length)return uniq(parts).slice(0,4);
+    }
     const ex=String(entry?.example||'').replace(/[.,!?;:]/g,'').split(/\s+/);
-    const i=ex.findIndex(x=>norm(x)===norm(word));
-    const out=[];
+    const i=ex.findIndex(x=>norm(x)===norm(word)),out=[];
     if(i>=0){
-      if(ex[i+1])out.push(ex.slice(i,Math.min(ex.length,i+3)).join(' '));
-      if(i>0)out.push(ex.slice(Math.max(0,i-1),Math.min(ex.length,i+2)).join(' '));
+      if(ex[i+1])out.push(ex.slice(i,Math.min(ex.length,i+2)).join(' '));
+      if(i>0&&ex[i-1].length>2)out.push(ex.slice(i-1,i+1).join(' '));
     }
     return uniq(out).slice(0,2);
   }
+
   function formationFor(word,root,entry,collocations){
     if(entry?.formation)return entry.formation;
-    const w=norm(word),r=norm(root);
+    const w=norm(word),r=norm(root),register=String(entry?.register||'');
     let morph='';
-    if(r&&r!==w){
-      const suffix=w.endsWith('kan')?'+ -kan':w.endsWith('i')?'+ -i':w.endsWith('an')?'+ -an':'';
-      const prefix=w.startsWith('meng')?'meng-':w.startsWith('meny')?'meny-':w.startsWith('men')?'men-':w.startsWith('mem')?'mem-':w.startsWith('me')?'me-':
-        w.startsWith('ber')?'ber-':w.startsWith('ter')?'ter-':w.startsWith('ke')&&w.endsWith('an')?'ke-...-an':w.startsWith('pe')?'pe-':'';
-      if(prefix)morph=prefix+' + '+root+(suffix?' '+suffix:'')+'。';
-      else morph='来自词根 '+root+'。';
+    if(/colloquial|spoken/i.test(register)&&r&&r!==w){
+      morph='口语形式，来自词根 '+root+'；按真实口语整体记忆。';
+    }else if(r&&r!==w){
+      if(w.startsWith('ke')&&w.endsWith('an'))morph='ke- + '+root+' + -an。';
+      else{
+        const suffix=w.endsWith('kan')?'+ -kan':w.endsWith('i')?'+ -i':w.endsWith('an')?'+ -an':'';
+        const prefix=w.startsWith('meng')?'meng-':w.startsWith('meny')?'meny-':w.startsWith('men')?'men-':w.startsWith('mem')?'mem-':w.startsWith('me')?'me-':
+          w.startsWith('ber')?'ber-':w.startsWith('ter')?'ter-':w.startsWith('pe')?'pe-':'';
+        morph=prefix?(prefix+' + '+root+(suffix?' '+suffix:'')+'。'):('来自词根 '+root+'。');
+      }
     }
     if(collocations.length)return (morph?morph+' ':'')+'常见搭配：'+collocations.join('、')+'。';
     return morph||'基础词形；结合本课例句与真实语境掌握。';
   }
+
   function buildCard(row,group,ctx,env){
     const {lex,daily,M}=env,k=norm(row.word),e=lex.get(k)||{},d=daily.get(k)||{};
     const rr=(ctx.candidates?.review||[]).find(x=>norm(x[0])===k);
@@ -249,17 +264,72 @@
 
   function targetReadingCards(cards,scene,env,session){
     const newCards=cards.filter(x=>x.group==='new'),review=cards.filter(x=>x.group==='review'),apps=cards.filter(x=>x.group==='application');
-    const usable=c=>c.example&&c.example_cn&&!/^(jangan|tolong|coba|biar)\b/i.test(c.example);
+    const usable=c=>c.example&&c.example_cn&&!/^(jangan|tolong|coba)\b/i.test(c.example);
     const rank=xs=>[...xs].filter(usable).sort((a,b)=>sceneFit(b,scene,env)-sceneFit(a,scene,env));
     if(session==='am'){
-      const ns=rank(newCards),rs=rank(review);
-      const strong=ns.filter(x=>sceneFit(x,scene,env)>=2).slice(0,8);
-      for(const x of ns)if(strong.length<6&&!strong.includes(x))strong.push(x);
-      return [...strong.slice(0,8),...rs.filter(x=>sceneFit(x,scene,env)>=2).slice(0,3)];
+      const ns=rank(newCards),rs=rank(review),chosen=[];
+      for(const x of ns.filter(x=>sceneFit(x,scene,env)>=2))if(chosen.length<8)chosen.push(x);
+      for(const x of ns)if(chosen.length<7&&!chosen.includes(x))chosen.push(x);
+      return [...chosen.slice(0,8),...rs.filter(x=>sceneFit(x,scene,env)>=1).slice(0,3)];
     }
     const ns=rank(newCards),others=rank([...review,...apps]);
-    return [...ns,...others.filter(x=>sceneFit(x,scene,env)>=2).slice(0,4)];
+    return [...ns,...others.filter(x=>sceneFit(x,scene,env)>=1).slice(0,4)];
   }
+
+  function semanticBucket(card,env,scene){
+    const ex=norm(card.example),tags=tagWord(card.word,card.cn,env);
+    const has=(...xs)=>xs.some(x=>tags.includes(x));
+    if(/\b(hujan|awan|air|cuaca|pohon|daun)\b/.test(ex)||has('weather','nature'))return 'nature';
+    if(/\b(akun|ponsel|komputer|file|dokumen|internet|password)\b/.test(ex)||has('digital','document'))return 'digital';
+    if(has('transport','travel')||/\b(jalan|mobil|kendaraan|stasiun|penerbangan)\b/.test(ex))return 'transport';
+    if(has('health')||/\b(badan|sakit|demam|klinik|dokter)\b/.test(ex))return 'health';
+    if(has('food')||/\b(makan|makanan|sup|rasa|kantin)\b/.test(ex))return 'food';
+    if(has('shopping','logistics','service'))return 'shopping';
+    if(has('finance'))return 'finance';
+    if(has('relationship','social','feeling'))return 'social';
+    if(has('home'))return 'home';
+    if(has('law','incident','conflict'))return 'incident';
+    if(has('work')||/\b(kantor|rapat|tim|atasan|pekerjaan)\b/.test(ex))return 'work';
+    if(has('connector','time','purpose'))return scene?.domain==='weather'?'nature':(scene?.domain||'daily');
+    return scene?.domain||'daily';
+  }
+
+  function readingFor(scene,cards,env,key,session){
+    const cn=env.M['scene-cn'].scenes[scene.id],pairs=[];
+    const oi=hash(key+'open')%scene.openings.length;
+    pairs.push([scene.openings[oi],cn.openings[oi],'','scene']);
+    const targets=targetReadingCards(cards,scene,env,session);
+    const buckets=new Map();
+    for(const c of targets){
+      const b=semanticBucket(c,env,scene);
+      if(!buckets.has(b))buckets.set(b,[]);
+      buckets.get(b).push(c);
+    }
+    const primary=(scene.domain==='weather'?'nature':scene.domain),order=[primary,'transport','work','digital','shopping','finance','food','health','social','nature','incident','home','daily'];
+    const used=new Set(),ordered=[];
+    for(const b of order)if(buckets.has(b)&&!used.has(b)){ordered.push([b,buckets.get(b)]);used.add(b)}
+    for(const [b,xs] of buckets)if(!used.has(b))ordered.push([b,xs]);
+
+    for(let gi=0;gi<ordered.length;gi++){
+      const [bucket,xs]=ordered[gi],bridge=env.M.language.reading_transitions?.[bucket]||env.M.language.reading_transitions?.daily;
+      if(gi>0&&bridge)pairs.push([bridge.id,bridge.cn,'','bridge']);
+      for(const c of xs){
+        if(wc(pairs.map(x=>x[0]).join(' '))+wc(c.example)>111)break;
+        pairs.push([c.example,c.example_cn,c.word,c.group]);
+      }
+    }
+    let mi=0;
+    while(wc(pairs.map(x=>x[0]).join(' '))<82&&mi<scene.moves.length){
+      pairs.push([scene.moves[mi],cn.moves[mi],'','scene']);mi++;
+    }
+    const ci=hash(key+'close')%scene.closing.length;
+    pairs.push([scene.closing[ci],cn.closing[ci],'','scene']);
+    while(wc(pairs.map(x=>x[0]).join(' '))>120&&pairs.length>5)pairs.splice(-2,1);
+    const text=pairs.map(x=>x[0]).join(' '),translation=pairs.map(x=>x[1]).join(' ');
+    const included=cards.filter(c=>norm(text).includes(norm(c.word))).map(c=>({word:c.word,group:c.group}));
+    return {text,cn:translation,_coverage:included};
+  }
+
   function readingFor(scene,cards,env,key,session){
     const cn=env.M['scene-cn'].scenes[scene.id],pairs=[];
     const oi=hash(key+'open')%scene.openings.length;
@@ -281,24 +351,32 @@
   }
 
   function dialogueFor(scene,cards,env,key){
-    const moves=scene.dialogue||[],lines=[],newCards=cards.filter(x=>x.group==='new'&&x.example),review=cards.filter(x=>x.group==='review'&&x.example),apps=cards.filter(x=>x.group==='application'&&x.example);
-    const targets=[...newCards.slice(0,2),...(apps[0]?[apps[0]]:review[0]?[review[0]]:[])];
-    let speaker='A',mi=0,ti=0;
-    while(lines.length<6){
-      if(lines.length%2===0){
-        const move=moves[mi++%Math.max(1,moves.length)],vs=env.M.language.dialogue_moves[move]||env.M.language.dialogue_moves.confirm||[];
-        const v=pick(vs,key+'m'+lines.length)||['Terus setelah itu bagaimana?','那之后怎么样？'];
-        lines.push({speaker,id:v[0],cn:v[1]});
-      }else{
-        const c=targets[ti++];
-        if(c)lines.push({speaker,id:c.example,cn:c.example_cn});
-        else{
-          const vs=env.M.language.dialogue_moves.confirm||[],v=pick(vs,key+'c'+lines.length)||['Oke, sekarang sudah jelas.','好，现在清楚了。'];
-          lines.push({speaker,id:v[0],cn:v[1]});
-        }
-      }
-      speaker=speaker==='A'?'B':'A';
-      if(lines.length>=4&&ti>=targets.length&&lines.length%2===0)break;
+    const newCards=cards.filter(x=>x.group==='new'&&x.example),others=cards.filter(x=>x.group!=='new'&&x.example);
+    const bucketCounts=new Map();
+    for(const c of newCards){
+      const b=semanticBucket(c,env,scene);bucketCounts.set(b,(bucketCounts.get(b)||0)+1);
+    }
+    const bucket=[...bucketCounts.entries()].sort((a,b)=>b[1]-a[1])[0]?.[0]||(scene.domain==='weather'?'nature':scene.domain)||'daily';
+    const score=c=>{
+      const b=semanticBucket(c,env,scene);let x=b===bucket?10:0;
+      const ex=norm(c.example);
+      if(bucket==='nature'&&/\b(hujan|awan|air|cuaca)\b/.test(ex))x+=6;
+      if(bucket==='work'&&/\b(kantor|rapat|pekerjaan|tim)\b/.test(ex))x+=6;
+      if(bucket==='digital'&&/\b(akun|ponsel|file|dokumen|internet)\b/.test(ex))x+=6;
+      return x;
+    };
+    const targets=[...newCards].sort((a,b)=>score(b)-score(a)).slice(0,2);
+    const rest=[...others,...newCards.filter(x=>!targets.includes(x))].sort((a,b)=>score(b)-score(a));
+    if(rest[0])targets.push(rest[0]);
+    const prompts=env.M.language.dialogue_scene_prompts?.[bucket]||env.M.language.dialogue_scene_prompts?.daily||[];
+    const lines=[];let speaker='A';
+    for(let i=0;i<3;i++){
+      const p=prompts[i]||['Terus setelah itu bagaimana?','然后怎么样？'];
+      lines.push({speaker,id:p[0],cn:p[1]});speaker='B';
+      const c=targets[i];
+      if(c)lines.push({speaker,id:c.example,cn:c.example_cn});
+      else lines.push({speaker,id:'Oke, sekarang sudah lebih jelas.',cn:'好，现在清楚多了。'});
+      speaker='A';
     }
     const joined=norm(lines.map(x=>x.id).join(' '));
     const coverage=cards.filter(c=>joined.includes(norm(c.word))).map(c=>({word:c.word,group:c.group}));
@@ -333,7 +411,7 @@
       ...reviews.map(x=>({...x,group:'review'})),
       ...apps.map(x=>({...x,group:'application'}))
     ];
-    const scene=chooseScene(preCards,env,variant);
+    const scene=chooseScene(preCards,env,variant,ctx);
     const newCards=newRows.map(x=>({...buildCard(x,'new',ctx,env),group:'new'}));
     const reviewCards=reviews.map(x=>({...buildCard(x,'review',ctx,env),group:'review'}));
     const appCards=apps.map(x=>({...buildCard(x,'application',ctx,env),group:'application'}));
