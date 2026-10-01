@@ -16,8 +16,8 @@ on:
       - '.github/scripts/test-real-published-lesson.js'
       - '.github/scripts/check-release-pr.js'
       - '.github/scripts/test-release-pr.js'
-      # index.json is the completion trigger/barrier. AM/PM lesson JSON and index should be
-      # committed atomically by the lesson writer; only then do we rebuild daily vocab/runtime.
+      # index.json is the completion trigger/barrier. ChatGPT writes only the lesson candidate
+      # on a named release branch; lesson_release generates index and squash-merges both atomically.
       - 'data/daily/index.json'
       # Lesson files also trigger reconciliation. index.json remains the barrier:
       # a lesson is ingested only when its date/session flag is already true.
@@ -102,6 +102,9 @@ jobs:
   lesson_release:
     if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'lesson-release-')
     runs-on: ubuntu-latest
+    concurrency:
+      group: learning-data-write
+      cancel-in-progress: false
     permissions:
       actions: write
       contents: write
@@ -142,13 +145,27 @@ jobs:
         run: |
           set -Eeuo pipefail
 
-          pr_now="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
-          pr_state="$(jq -r '.state // "unknown"' <<<"$pr_now")"
-          pr_merged="$(jq -r '.merged // false' <<<"$pr_now")"
-          if [ "$pr_merged" = "true" ] || [ "$pr_state" = "closed" ]; then
-            echo 'Lesson release PR already merged/closed; no duplicate publish work is needed.'
-            exit 0
-          fi
+          dispatch_sync() {
+            local merge_sha="${1:-unknown}" attempt started dispatch_error runs
+            for attempt in 1 2 3; do
+              started="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+              dispatch_error="${RUNNER_TEMP}/lesson-dispatch-error-${attempt}.txt"
+              if gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" -f ref=main 2>"$dispatch_error"; then
+                echo "LESSON_SYNC_DISPATCHED merge=$merge_sha"
+                return 0
+              fi
+              echo "Sync dispatch attempt $attempt/3 did not complete:"
+              cat "$dispatch_error" || true
+              runs="$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/runs?event=workflow_dispatch&per_page=10" 2>/dev/null || true)"
+              if [ -n "$runs" ] && jq -e --arg started "$started" '[.workflow_runs[]? | select(.event=="workflow_dispatch" and .created_at >= $started)] | length > 0' <<<"$runs" >/dev/null; then
+                echo "LESSON_SYNC_DISPATCHED merge=$merge_sha readback=confirmed_after_error"
+                return 0
+              fi
+              if [ "$attempt" -lt 3 ]; then sleep 2; fi
+            done
+            echo '::error title=Lesson Sync dispatch failed::Dispatch was not confirmed after bounded retries and read-back.'
+            return 1
+          }
 
           if [[ ! "$PR_HEAD_REF" =~ ^lesson-release-([0-9]{4}-[0-9]{2}-[0-9]{2})-(am|pm)$ ]]; then
             echo "::error title=Invalid lesson release branch::$PR_HEAD_REF"
@@ -157,6 +174,34 @@ jobs:
           release_date="${BASH_REMATCH[1]}"
           release_session="${BASH_REMATCH[2]}"
           candidate="data/daily/${release_date}-${release_session}.json"
+          target_time="$([ "$release_session" = "am" ] && echo '08:00' || echo '18:00')"
+          target_stamp="${release_date} ${target_time}"
+
+          pr_now="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+          pr_state="$(jq -r '.state // "unknown"' <<<"$pr_now")"
+          pr_merged="$(jq -r '.merged // false' <<<"$pr_now")"
+          if [ "$pr_merged" = "true" ]; then
+            merge_sha="$(jq -r '.merge_commit_sha // empty' <<<"$pr_now")"
+            git fetch --no-tags origin main
+            if ! git cat-file -e "origin/main:$candidate" 2>/dev/null; then
+              echo "::error title=Merged lesson missing on main::$candidate is absent after PR reports merged=true."
+              exit 1
+            fi
+            index_flag="$(git show origin/main:data/daily/index.json | jq -r --arg d "$release_date" --arg s "$release_session" '([.dates[]? | select(.date==$d)][0][$s]) // false')"
+            runtime_stamp="$(git show origin/main:data/learning-runtime.json | jq -r '.lesson_watermark // empty')"
+            context_stamp="$(git show origin/main:data/lesson-context.json | jq -r '.source.lesson_watermark // empty')"
+            if [ "$index_flag" = "true" ] && [ "$runtime_stamp" = "$target_stamp" ] && [ "$context_stamp" = "$target_stamp" ]; then
+              echo "Lesson release PR already merged and synchronized at $target_stamp; no duplicate publish work is needed."
+              exit 0
+            fi
+            echo "Lesson release PR already merged but derived data is not fully synchronized; dispatch existing Sync."
+            dispatch_sync "$merge_sha"
+            exit 0
+          fi
+          if [ "$pr_state" = "closed" ]; then
+            echo '::error title=Lesson release PR closed without merge::Reopen the same PR; do not create a second candidate.'
+            exit 1
+          fi
 
           git fetch --no-tags origin main
           release_base="$(git rev-parse origin/main)"
@@ -280,10 +325,17 @@ jobs:
             fi
             echo "Merge API attempt $attempt/3 did not complete:"
             cat "$merge_error" || true
+            pr_after="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" 2>/dev/null || true)"
+            if [ -n "$pr_after" ] && [ "$(jq -r '.merged // false' <<<"$pr_after")" = "true" ]; then
+              merge_sha="$(jq -r '.merge_commit_sha // empty' <<<"$pr_after")"
+              response="$(jq -n --arg sha "$merge_sha" '{sha:$sha,merged:true,message:"Merge confirmed by read-back after API error"}')"
+              echo "Merge read-back confirmed merged=true after API error; sha=$merge_sha"
+              break
+            fi
             if [ "$attempt" -lt 3 ]; then sleep 2; fi
           done
           if [ -z "$response" ]; then
-            echo '::error title=Lesson merge failed::GitHub merge API failed after three bounded attempts.'
+            echo '::error title=Lesson merge failed::GitHub merge API failed after bounded retries and read-back.'
             exit 1
           fi
           printf '%s\n' "$response"
@@ -292,18 +344,20 @@ jobs:
             echo '::error title=Lesson merge failed::GitHub did not report merged=true.'
             exit 1
           fi
-          merge_sha="$(jq -r '.sha // empty' <<<"$response")"
+          merge_sha="${merge_sha:-$(jq -r '.sha // empty' <<<"$response")}"
           echo "LESSON_RELEASE_PUBLISHED date=$release_date session=$release_session pr=$PR_NUMBER head=$final_sha merge=$merge_sha"
 
           # A merge performed with GITHUB_TOKEN does not recursively trigger normal push workflows.
-          # workflow_dispatch is explicitly allowed to create a follow-up run, so hand the merged
-          # lesson to this same trusted workflow for Sync/runtime/context reconciliation.
-          gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" -f ref=main
-          echo "LESSON_SYNC_DISPATCHED merge=$merge_sha"
+          # Dispatch the existing Sync, with read-back before any retry so an accepted-but-lost
+          # response cannot create a false failure or unnecessary duplicate recovery path.
+          dispatch_sync "$merge_sha"
 
   extensive_reading_release:
     if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'extensive-reading-')
     runs-on: ubuntu-latest
+    concurrency:
+      group: learning-data-write
+      cancel-in-progress: false
     permissions:
       contents: write
       pull-requests: write
@@ -490,6 +544,7 @@ jobs:
             echo "Sync attempt ${attempt}/2: recompute from latest origin/main"
             git fetch origin main
             git reset --hard origin/main
+            rm -f "$RUNNER_TEMP/scheduled-missing-lesson.txt"
             if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
               incident_phase='scheduled_health_check'; incident_category='recovery_check'
               if node <<'HEALTH'
@@ -550,14 +605,17 @@ jobs:
               const fileExists=fs.existsSync(lessonPath);
               const flagged=rows.length===1&&rows[0][expectedSession]===true;
               if(!flagged||!fileExists){
-                throw new Error(`Scheduled recovery incomplete: ${currentDate} ${expectedSession.toUpperCase()} (index_rows=${rows.length}, index_flag=${flagged}, lesson_file=${fileExists?'present':'missing'}). Do not mark this run successful or synthesize a lesson in GitHub Actions.`);
+                const detail=`Scheduled recovery incomplete: ${currentDate} ${expectedSession.toUpperCase()} (index_rows=${rows.length}, index_flag=${flagged}, lesson_file=${fileExists?'present':'missing'}). Existing completed lessons will still be reconciled before this run reports the missing current lesson.`;
+                fs.writeFileSync(process.env.RUNNER_TEMP+'/scheduled-missing-lesson.txt',detail+'\n');
+                console.warn(detail);
+              }else{
+                const lesson=JSON.parse(fs.readFileSync(lessonPath,'utf8'));
+                const expectedTime=expectedSession==='am'?'08:00':'18:00';
+                if(lesson.date!==currentDate||lesson.session!==expectedSession||lesson.time!==expectedTime||(expectedSession==='pm'&&lesson.write_status!=='lesson_complete')){
+                  throw new Error(`Scheduled recovery found incomplete lesson schema: ${lessonPath}`);
+                }
+                console.log(`Scheduled recovery: verified ${currentDate} ${expectedTime} lesson and index barrier.`);
               }
-              const lesson=JSON.parse(fs.readFileSync(lessonPath,'utf8'));
-              const expectedTime=expectedSession==='am'?'08:00':'18:00';
-              if(lesson.date!==currentDate||lesson.session!==expectedSession||lesson.time!==expectedTime||(expectedSession==='pm'&&lesson.write_status!=='lesson_complete')){
-                throw new Error(`Scheduled recovery found incomplete lesson schema: ${lessonPath}`);
-              }
-              console.log(`Scheduled recovery: verified ${currentDate} ${expectedTime} lesson and index barrier.`);
             }else console.log('Scheduled recovery: outside lesson hours; skip current-day completion assertion.');
           }
           const completed=new Set();
@@ -740,6 +798,12 @@ jobs:
             git fetch origin main
             if [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ]; then
               echo 'Sync already current; no empty commit.'
+              if [ -s "$RUNNER_TEMP/scheduled-missing-lesson.txt" ]; then
+                incident_phase='scheduled_current_lesson_missing'; incident_category='lesson_missing'
+                cat "$RUNNER_TEMP/scheduled-missing-lesson.txt"
+                echo '::error title=Scheduled lesson missing::Completed published lessons are reconciled, but the current scheduled lesson is still missing.'
+                exit 1
+              fi
               exit 0
             fi
             echo '::warning title=Sync input changed::main moved during no-op check; recomputing once.'
@@ -755,6 +819,12 @@ jobs:
             node .github/scripts/vocab-ui-regression-guard.js
             node .github/scripts/build-lesson-context.js --check
             echo "Sync push and remote read-back validation succeeded on attempt ${attempt}."
+            if [ -s "$RUNNER_TEMP/scheduled-missing-lesson.txt" ]; then
+              incident_phase='scheduled_current_lesson_missing'; incident_category='lesson_missing'
+              cat "$RUNNER_TEMP/scheduled-missing-lesson.txt"
+              echo '::error title=Scheduled lesson missing::Published data was repaired, but the current scheduled lesson is still missing.'
+              exit 1
+            fi
             exit 0
           fi
           echo "::warning title=Sync branch advanced or push failed::Attempt ${attempt} did not publish; discarding derived local commit and recomputing from current main."
