@@ -115,6 +115,54 @@ jobs:
           git worktree add --detach "$baseline_guard_dir" "${{ github.event.pull_request.base.sha }}"
           (cd "$baseline_guard_dir" && node .github/scripts/regression-guard.js)
           git worktree remove --force "$baseline_guard_dir"
+      - name: Rehearse actual V2 lesson and index write outside the repository
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          tmp="$RUNNER_TEMP/fallback-write-rehearsal"
+          mkdir -p "$tmp"
+          cp -a data "$tmp/data"
+          day="$(node -p "require('./data/lesson-context.json').target.date")"
+          slot="$(node -p "require('./data/lesson-context.json').target.session")"
+          if [ -e "data/daily/$day-$slot.json" ]; then
+            echo 'Target was already published in this PR snapshot; fixture tests cover write path.'
+            exit 0
+          fi
+          (
+            cd "$tmp"
+            node "$GITHUB_WORKSPACE/.github/scripts/recover-missing-lesson.js" \
+              --date "$day" --session "$slot" --main-head "$(git -C "$GITHUB_WORKSPACE" rev-parse HEAD)" --write
+          ) > "$RUNNER_TEMP/fallback-write-result.txt"
+          cat "$RUNNER_TEMP/fallback-write-result.txt"
+          grep -Fq '"status":"ready"' "$RUNNER_TEMP/fallback-write-result.txt"
+          test -s "$tmp/data/daily/$day-$slot.json"
+          (
+            cd "$tmp"
+            node "$GITHUB_WORKSPACE/.github/scripts/recover-missing-lesson.js" \
+              --date "$day" --session "$slot" --main-head "$(git -C "$GITHUB_WORKSPACE" rev-parse HEAD)"
+          ) > "$RUNNER_TEMP/fallback-repeat-result.txt"
+          cat "$RUNNER_TEMP/fallback-repeat-result.txt"
+          grep -Fq '"status":"already_published"' "$RUNNER_TEMP/fallback-repeat-result.txt"
+          FALLBACK_DATE="$day" FALLBACK_SESSION="$slot" FALLBACK_CLONE="$tmp/data" node <<'VERIFY'
+          const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+          const a=path.join(process.env.GITHUB_WORKSPACE,'data'),b=process.env.FALLBACK_CLONE;
+          const walk=(root)=>{
+            const out=new Map(),visit=(p)=>{
+              for(const e of fs.readdirSync(p,{withFileTypes:true})){
+                const x=path.join(p,e.name);
+                if(e.isDirectory())visit(x);
+                else if(e.isFile())out.set(path.relative(root,x).replace(/\\/g,'/'),fs.readFileSync(x));
+              }
+            };visit(root);return out;
+          };
+          const before=walk(a),after=walk(b),delta=[];
+          for(const key of new Set([...before.keys(),...after.keys()]))
+            if(!before.has(key)||!after.has(key)||!before.get(key).equals(after.get(key)))delta.push(key);
+          assert.deepEqual(delta.sort(),
+            ['daily/index.json','daily/'+process.env.FALLBACK_DATE+'-'+process.env.FALLBACK_SESSION+'.json'].sort());
+          console.log('FALLBACK_ISOLATED_TWO_FILE_WRITE_OK '+JSON.stringify(delta));
+          VERIFY
+          git diff --exit-code -- data/daily/index.json
       - name: Reject lesson data outside a named release branch
         shell: bash
         env:
