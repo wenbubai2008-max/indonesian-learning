@@ -748,8 +748,8 @@
       "cn": "随后天气发生变化，我开始注意外面的情况。"
     },
     "incident": {
-      "id": "Di tengah kegiatan itu, terjadi sebuah kejadian yang tidak terduga.",
-      "cn": "就在这些事情进行时，发生了一件意外的小事。"
+      "id": "Di dekat situ, ada satu hal lain yang juga perlu diperhatikan.",
+      "cn": "附近还有另一件需要注意的事情。"
     },
     "law": {
       "id": "Masalah itu juga membuat orang-orang lebih berhati-hati terhadap aturan.",
@@ -933,5 +933,19 @@
         "最后都处理完了吗？"
       ]
     ]
+  },
+  "reading_macro_transitions": {
+    "activity": {
+      "id": "Setelah itu, saya melanjutkan beberapa urusan yang masih belum selesai.",
+      "cn": "之后，我继续处理还没有完成的几件事。"
+    },
+    "outside": {
+      "id": "Di luar, keadaan hari itu juga tidak sepenuhnya tenang.",
+      "cn": "外面的情况那天也并不完全平静。"
+    },
+    "personal": {
+      "id": "Saat suasana mulai lebih tenang, saya kembali memperhatikan orang dan kondisi di sekitar.",
+      "cn": "气氛开始平静后，我又把注意力放回身边的人和自己的状态。"
+    }
   }
 }
