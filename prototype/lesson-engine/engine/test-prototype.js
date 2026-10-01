@@ -130,4 +130,11 @@ test('missing historical new-word bands fail clearly, never as a TypeError',()=>
   assert.throws(()=>core.generate(ctx,bundle,dailyRows,{variant:0}),/LESSON_NEW_POOL_INSUFFICIENT/);
 });
 
+test('Unicode exact matching supports hyphens and rejects derived-form false positives',()=>{
+  assert(hasWord('Dia bicara seolah-olah sudah tahu.', 'seolah-olah'));
+  assert(hasWord('Hujan turun terus-menerus sejak siang.', 'terus-menerus'));
+  assert(hasWord('Saya lupa kata sandi akun.', 'kata sandi'));
+  assert(!hasWord('Apa gunanya laporan ini?', 'guna'));
+});
+
 console.log('PROTOTYPE_V2_TEST '+JSON.stringify({ok:true,passed,variants:12,engine_version:2}));
