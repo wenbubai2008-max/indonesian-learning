@@ -241,13 +241,14 @@
     const rr=(ctx.candidates?.review||[]).find(x=>norm(x[0])===k);
     const cn=e.cn||row.cn||rr?.[5]||d.cn||'',root=e.root||row.root||rr?.[6]||d.root||k;
     const rootCn=e.root_cn||row.root_cn||rr?.[7]||d.root_cn||(root===k?cn:'');
-    const collocations=deriveCollocations(e,k,env);
+    const lexicalSource=Object.keys(e).length?e:d;
+    const collocations=deriveCollocations(lexicalSource,k,env);
     const card={
-      word:k,display:k,audio_text:k,cn,en:e.en||row.en||d.en||cn,
-      root,root_cn:rootCn,formation:formationFor(k,root,e,collocations),
+      word:k,display:d.display||k,audio_text:d.audio_text||k,cn,en:e.en||row.en||d.en||cn,
+      root,root_cn:rootCn,formation:e.formation||d.formation||formationFor(k,root,lexicalSource,collocations),
       example:e.example||d.example||('Saya memakai kata '+k+' dalam kalimat sehari-hari.'),
       example_cn:e.example_cn||d.example_cn||('我在日常句子中使用 '+k+' 这个词。'),
-      synonym_note:e.synonym_note||M['lexical-rules']?.curated?.[k]?.spoken_note||e.note||'注意结合语境与常见搭配使用。',
+      synonym_note:e.synonym_note||d.synonym_note||M['lexical-rules']?.curated?.[k]?.spoken_note||e.note||d.usage_note||'注意结合语境与常见搭配使用。',
       is_oral_new:group==='new'&&oralMap(ctx).has(k),
       _collocations:collocations
     };
@@ -256,7 +257,7 @@
       card.usage_note=group==='application'
         ?(sameDay.has(k)?'今天08:00已教；晚课作为 application 主动复现。':'已正式学习；晚课作为 application 主动复现。')
         :group==='review'?'已正式学习；本晚课进行主动复习。'
-        :(e.note||'本晚课新词；重点掌握常见搭配、语体和3秒主动提取。');
+        :(e.note||d.usage_note||'本晚课新词；重点掌握常见搭配、语体和3秒主动提取。');
       card.source_group=group;card.is_new=group==='new';
     }
     return card;
