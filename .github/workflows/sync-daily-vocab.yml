@@ -108,6 +108,9 @@ jobs:
           node .github/scripts/test-publication-plan.js
           node .github/scripts/test-release-pr.js
           node .github/scripts/test-real-published-lesson.js
+          # A workflow/guard change must also pass regression on the proposed PR tree;
+          # testing only pinned main can miss a stale hard-coded schedule assertion.
+          node .github/scripts/regression-guard.js
           # The PR candidate sets index.pm=true before the post-merge Sync updates runtime.
           # Run baseline/runtime regression against the pinned main tree; candidate
           # eligibility and two-file transaction are checked by check-release-pr.js below.
