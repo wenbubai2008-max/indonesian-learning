@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-30T14:13:32.879Z",
+  "updated_at": "2026-10-01T03:09:09.635Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1458,8 +1458,9 @@
     "keras": {
       "word": "keras",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-01T03:07:45.968Z",
       "display": "keras",
+      "cn": "硬的、猛烈",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -2759,8 +2760,9 @@
     "mundur": {
       "word": "mundur",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-01T03:08:18.961Z",
       "display": "mundur",
+      "cn": "后退的 / 落后的",
       "reasons": [
         "memory_dont"
       ],
@@ -4699,8 +4701,9 @@
     "menuduh": {
       "word": "menuduh",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-01T03:08:59.110Z",
       "display": "menuduh",
+      "cn": "控告",
       "reasons": [
         "memory_dont"
       ],
@@ -19194,7 +19197,7 @@
       "status": "active",
       "updated_at": "2026-09-30T14:06:45.403Z",
       "display": "berantakan",
-      "cn": "乱七八糟；一团乱；很凌乱",
+      "cn": "乱七八糟",
       "root": "berantak",
       "root_cn": "乱；散乱",
       "last_wrong": "2026-09-30T14:06:45.377Z",
