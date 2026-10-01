@@ -103,14 +103,20 @@ jobs:
             echo "LESSON_CREATE_IGNORED stale or future release date $target_date (today $local_date)."
             exit 0
           fi
-          if [ "$target_session" = am ]; then target_time=08:05; else target_time=18:05; fi
-          due_epoch="$(TZ=Asia/Jakarta date -d "$target_date $target_time:00" +%s)"
+          if [ "$target_session" = am ]; then target_time=08:00; else target_time=18:00; fi
+          slot_epoch="$(TZ=Asia/Jakarta date -d "$target_date $target_time:00" +%s)"
+          # GitHub's event/run creation time is closer to branch creation than runner start;
+          # a queued runner must not restart the 60-second grace window.
+          created_at="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" --jq '.created_at')"
+          created_epoch="$(date -u -d "$created_at" +%s)"
+          due_epoch=$((created_epoch + 60))
+          # A pre-created scaffold cannot publish a lesson before its 08:00/18:00 slot.
+          if [ "$slot_epoch" -gt "$due_epoch" ]; then due_epoch="$slot_epoch"; fi
           now_epoch="$(date +%s)"
           wait_seconds=$((due_epoch - now_epoch))
-          # A release created over 30 minutes early is not a normal scheduled lesson.
-          # Never occupy a runner for hours; the existing GitHub cron remains an emergency backstop.
+          # Only observe near-slot scaffolds, not branches made hours in advance.
           if [ "$wait_seconds" -gt 1800 ]; then
-            echo "LESSON_CREATE_IGNORED branch created too early ($wait_seconds s until target)."
+            echo "LESSON_CREATE_IGNORED branch created too early ($wait_seconds s until slot/grace)."
             exit 0
           fi
           if [ "$target_session" = am ] && [ "$(TZ=Asia/Jakarta date +%H)" -ge 18 ]; then
@@ -118,20 +124,34 @@ jobs:
             exit 0
           fi
           if [ "$wait_seconds" -gt 0 ]; then
-            echo "LESSON_CREATE_WAIT seconds=$wait_seconds, no normal publication lock held."
+            echo "LESSON_CREATE_WAIT seconds=$wait_seconds (60 seconds since event or slot start, not :05)."
             sleep "$wait_seconds"
           fi
-          # Re-read live main AFTER the grace period: a draft branch, staged lesson or PR
-          # is not a completed publication. The index and official file are the barrier.
-          index_json="$(gh api "repos/$GITHUB_REPOSITORY/contents/data/daily/index.json?ref=main" \
-            --jq '.content' | base64 --decode)"
+          # Check the official lesson/index barrier on CURRENT main, not the empty scaffold.
           official="data/daily/$target_date-$target_session.json"
-          flag="$(jq -r --arg d "$target_date" --arg s "$target_session" \
-            '([.dates[]? | select(.date==$d)][0][$s]) // false' <<<"$index_json")"
-          if [ "$flag" = true ] &&
-             gh api "repos/$GITHUB_REPOSITORY/contents/$official?ref=main" >/dev/null 2>&1; then
+          already_published() {
+            local index_json flag
+            index_json="$(gh api "repos/$GITHUB_REPOSITORY/contents/data/daily/index.json?ref=main" \
+              --jq '.content' | base64 --decode)"
+            flag="$(jq -r --arg d "$target_date" --arg s "$target_session" \
+              '([.dates[]? | select(.date==$d)][0][$s]) // false' <<<"$index_json")"
+            [ "$flag" = true ] &&
+              gh api "repos/$GITHUB_REPOSITORY/contents/$official?ref=main" >/dev/null 2>&1
+          }
+          if already_published; then
             echo "LESSON_CREATE_ALREADY_PUBLISHED $target_date $target_session; do not run V2."
             exit 0
+          fi
+          # Empty scaffold after 60 seconds: request V2 immediately, without waiting for :05.
+          # If the original lesson is already staged, allow the existing PR release a short,
+          # bounded completion window. An explicit release failure dispatches V2 immediately.
+          if gh api "repos/$GITHUB_REPOSITORY/contents/$official?ref=$CREATED_REF" >/dev/null 2>&1; then
+            echo 'LESSON_CREATE_DRAFT_STAGED waiting up to 120 more seconds for normal release.'
+            sleep 120
+            if already_published; then
+              echo "LESSON_CREATE_ALREADY_PUBLISHED $target_date $target_session after normal release."
+              exit 0
+            fi
           fi
           # Only the existing shared-lock Sync can generate/publish; no alternate writer.
           gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" \
