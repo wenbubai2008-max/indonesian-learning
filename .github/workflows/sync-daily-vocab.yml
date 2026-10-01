@@ -17,6 +17,7 @@ on:
       - '.github/scripts/test-publish-staged-lesson.js'
       - '.github/scripts/github-publish-adapter.js'
       - '.github/scripts/recover-missing-lesson.js'
+      - '.github/scripts/normal-release-priority.jq'
       - '.github/scripts/test-recover-missing-lesson.js'
       - 'prototype/lesson-engine/engine/core.js'
       - 'prototype/lesson-engine/materials/materials-bundle.json'
@@ -39,6 +40,7 @@ on:
       - '.github/scripts/plan-lesson-publication.js'
       - '.github/scripts/validate-lesson-candidate.js'
       - '.github/scripts/recover-missing-lesson.js'
+      - '.github/scripts/normal-release-priority.jq'
       - '.github/scripts/test-recover-missing-lesson.js'
       - 'prototype/lesson-engine/engine/core.js'
       - 'prototype/lesson-engine/materials/materials-bundle.json'
@@ -69,6 +71,8 @@ permissions:
   contents: write
   issues: write
   pages: write
+  actions: read
+  pull-requests: read
 concurrency:
   # A new-branch watcher must never hold the main write lock while waiting for 08:05/18:05.
   group: ${{ github.event_name == 'pull_request' && format('lesson-pr-{0}', github.event.pull_request.number) || github.event_name == 'create' && format('lesson-watch-{0}', github.event.ref) || 'learning-data-write' }}
@@ -537,6 +541,17 @@ jobs:
           fi
           date="$(echo "$RELEASE_BRANCH" | cut -c 16-25)"
           session="$(echo "$RELEASE_BRANCH" | sed -E "s/.*-(am|pm)$/\1/")"
+          # A normally/manual-published slot may need Sync, but must never request V2.
+          if index_b64="$(gh api "repos/$GITHUB_REPOSITORY/contents/data/daily/index.json?ref=main" --jq '.content' 2>/dev/null)"; then
+            flag="$(printf '%s' "$index_b64" | base64 --decode |
+              jq -r --arg d "$date" --arg s "$session" '([.dates[]? | select(.date==$d)][0][$s]) // false')"
+            if [ "$flag" = true ] &&
+               gh api "repos/$GITHUB_REPOSITORY/contents/data/daily/$date-$session.json?ref=main" >/dev/null 2>&1; then
+              echo "NORMAL_LESSON_ALREADY_PUBLISHED $date $session; dispatch Sync only, never V2."
+              gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" -f ref=main
+              exit 0
+            fi
+          fi
           gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" \
             -f ref=main -f "inputs[recover_date]=$date" -f "inputs[recover_session]=$session"
           echo "Dispatched independent V2 fallback for $date $session."
@@ -715,6 +730,7 @@ jobs:
           FALLBACK_CRON: ${{ github.event.schedule }}
           RECOVER_DATE: ${{ inputs.recover_date }}
           RECOVER_SESSION: ${{ inputs.recover_session }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -Eeuo pipefail
           local_date="$(TZ=Asia/Jakarta date +%Y-%m-%d)"
@@ -745,6 +761,27 @@ jobs:
             git fetch --no-tags origin main
             git reset --hard origin/main
             base="$(git rev-parse HEAD)"
+            # An active original ChatGPT/manual release PR takes priority. Check immediately
+            # before V2 generation, inside the existing serialized GitHub write flow.
+            # A previously published official file is handled by the canonical planner.
+            if ! git cat-file -e "$base:$candidate" 2>/dev/null; then
+              original_branch="lesson-release-$date-$session"
+              owner="$(printf '%s' "$GITHUB_REPOSITORY" | cut -d/ -f1)"
+              gh api "repos/$GITHUB_REPOSITORY/pulls?state=open&head=$owner:$original_branch&per_page=10" \
+                > "$RUNNER_TEMP/fallback-normal-prs.json"
+              normal_pr="$(jq -r --arg b "$original_branch" --arg repo "$GITHUB_REPOSITORY" \
+                '[.[] | select(.state=="open" and .head.ref==$b and .head.repo.full_name==$repo and .base.ref=="main" and ((.body // "") | contains("AUTO_PUBLISH_LESSON=1")))] | .[0].number // empty' \
+                "$RUNNER_TEMP/fallback-normal-prs.json")"
+              if [ -n "$normal_pr" ]; then
+                gh api "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/runs?event=pull_request&per_page=100" \
+                  > "$RUNNER_TEMP/fallback-normal-runs.json"
+                if jq -e --arg branch "$original_branch" --argjson number "$normal_pr" \
+                  -f .github/scripts/normal-release-priority.jq "$RUNNER_TEMP/fallback-normal-runs.json" >/dev/null; then
+                  echo "NORMAL_RELEASE_ACTIVE PR=$normal_pr $date $session; defer V2 to the original release. Its failure hook recovers if needed."
+                  exit 0
+                fi
+              fi
+            fi
             node .github/scripts/recover-missing-lesson.js \
               --date "$date" --session "$session" --main-head "$base" --write \
               > "$RUNNER_TEMP/fallback-result.txt"
