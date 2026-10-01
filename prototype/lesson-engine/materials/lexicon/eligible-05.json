@@ -1,0 +1,754 @@
+{
+  "version": 1,
+  "scope": "2026-10-01 legal new-pool seed",
+  "chunk": 5,
+  "count": 50,
+  "entries": [
+    {
+      "word": "belanja",
+      "cn": "购物；买东西",
+      "en": "shop; shopping",
+      "root": "belanja",
+      "root_cn": "购物",
+      "register": "neutral-spoken",
+      "tags": [
+        "shopping",
+        "daily"
+      ],
+      "example": "Saya belanja kebutuhan rumah setelah pulang kerja.",
+      "example_cn": "我下班后去买家里需要的东西。",
+      "note": "日常可直接作动词；berbelanja 稍正式。"
+    },
+    {
+      "word": "nasib",
+      "cn": "命运；运气",
+      "en": "fate; fortune",
+      "root": "nasib",
+      "root_cn": "命运",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "feeling"
+      ],
+      "example": "Nasib orang bisa berubah karena banyak faktor.",
+      "example_cn": "人的命运可能因为很多因素而改变。",
+      "note": "常见 nasib baik/buruk。"
+    },
+    {
+      "word": "layanan",
+      "cn": "服务",
+      "en": "service",
+      "root": "layan",
+      "root_cn": "服务；接待",
+      "register": "standard-neutral",
+      "tags": [
+        "service",
+        "work"
+      ],
+      "example": "Layanan pelanggan menjawab pertanyaan saya dengan cepat.",
+      "example_cn": "客服很快回答了我的问题。",
+      "note": "pelayanan 也常表示服务；layanan 更简洁。"
+    },
+    {
+      "word": "judul",
+      "cn": "标题",
+      "en": "title",
+      "root": "judul",
+      "root_cn": "标题",
+      "register": "neutral",
+      "tags": [
+        "information",
+        "digital"
+      ],
+      "example": "Judul artikel itu langsung menarik perhatian saya.",
+      "example_cn": "那篇文章的标题一下吸引了我。",
+      "note": "文章、视频、书都可用。"
+    },
+    {
+      "word": "perintah",
+      "cn": "命令；指令",
+      "en": "command; instruction",
+      "root": "perintah",
+      "root_cn": "命令",
+      "register": "standard",
+      "tags": [
+        "work",
+        "digital"
+      ],
+      "example": "Komputer tidak menjalankan perintah itu dengan benar.",
+      "example_cn": "电脑没有正确执行那条指令。",
+      "note": "技术语境=指令；人际语境=命令。"
+    },
+    {
+      "word": "biarkan",
+      "cn": "让；任由",
+      "en": "let; allow",
+      "root": "biar",
+      "root_cn": "让",
+      "register": "neutral-spoken",
+      "tags": [
+        "action",
+        "communication"
+      ],
+      "example": "Biarkan dia menjelaskan dulu sampai selesai.",
+      "example_cn": "先让他把话说完。",
+      "note": "命令/建议形式；不要和 biar“为了/让”混淆语法功能。"
+    },
+    {
+      "word": "daun",
+      "cn": "叶子",
+      "en": "leaf",
+      "root": "daun",
+      "root_cn": "叶子",
+      "register": "neutral",
+      "tags": [
+        "nature",
+        "food"
+      ],
+      "example": "Daun yang basah jatuh di depan rumah.",
+      "example_cn": "湿叶子落在房子前。",
+      "note": "也常出现在食材名称中。"
+    },
+    {
+      "word": "terakhir",
+      "cn": "最后的；最近一次的",
+      "en": "last; final",
+      "root": "akhir",
+      "root_cn": "结束；末尾",
+      "register": "neutral",
+      "tags": [
+        "time",
+        "description"
+      ],
+      "example": "Kapan terakhir kali kamu pergi ke Bandung?",
+      "example_cn": "你上次去万隆是什么时候？",
+      "note": "常见 terakhir kali。"
+    },
+    {
+      "word": "maupun",
+      "cn": "以及；无论……还是……",
+      "en": "as well as; whether...or",
+      "root": "maupun",
+      "root_cn": "以及",
+      "register": "standard",
+      "tags": [
+        "connector"
+      ],
+      "example": "Baik pelanggan lama maupun baru bisa memakai fitur ini.",
+      "example_cn": "无论老客户还是新客户都可以使用这个功能。",
+      "note": "典型结构 baik A maupun B。"
+    },
+    {
+      "word": "badan",
+      "cn": "身体；机构",
+      "en": "body; agency",
+      "root": "badan",
+      "root_cn": "身体；机构",
+      "register": "neutral-spoken",
+      "tags": [
+        "health",
+        "work"
+      ],
+      "example": "Badan saya agak capek hari ini.",
+      "example_cn": "我今天身体有点累。",
+      "note": "身体口语很常见；正式也可指机构。"
+    },
+    {
+      "word": "milik",
+      "cn": "属于；所有物",
+      "en": "belonging; property",
+      "root": "milik",
+      "root_cn": "所属",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "finance"
+      ],
+      "example": "Tas ini milik teman saya.",
+      "example_cn": "这个包是我朋友的。",
+      "note": "常见 milik + 人；也有 kepemilikan“所有权”。"
+    },
+    {
+      "word": "terkenal",
+      "cn": "著名的",
+      "en": "famous; well-known",
+      "root": "kenal",
+      "root_cn": "认识",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "travel"
+      ],
+      "example": "Kota itu terkenal dengan makanan tradisionalnya.",
+      "example_cn": "那座城市以传统美食闻名。",
+      "note": "terkenal dengan...。"
+    },
+    {
+      "word": "rabu",
+      "cn": "星期三",
+      "en": "Wednesday",
+      "root": "rabu",
+      "root_cn": "星期三",
+      "register": "neutral",
+      "tags": [
+        "time"
+      ],
+      "example": "Pertemuan berikutnya dijadwalkan hari Rabu.",
+      "example_cn": "下一次会面安排在星期三。",
+      "note": "星期名。"
+    },
+    {
+      "word": "keadaan",
+      "cn": "状况；情况",
+      "en": "condition; situation",
+      "root": "ada",
+      "root_cn": "有；存在",
+      "register": "standard-neutral",
+      "tags": [
+        "description",
+        "problem"
+      ],
+      "example": "Keadaan jalan sudah lebih baik setelah hujan berhenti.",
+      "example_cn": "雨停后道路状况好多了。",
+      "note": "日常也常用 kondisi/situasi。"
+    },
+    {
+      "word": "listrik",
+      "cn": "电；电力",
+      "en": "electricity",
+      "root": "listrik",
+      "root_cn": "电",
+      "register": "neutral",
+      "tags": [
+        "home",
+        "digital"
+      ],
+      "example": "Listrik sempat mati selama beberapa menit.",
+      "example_cn": "停电了几分钟。",
+      "note": "常见 listrik mati、tagihan listrik。"
+    },
+    {
+      "word": "tersenyum",
+      "cn": "微笑",
+      "en": "smile",
+      "root": "senyum",
+      "root_cn": "微笑",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "feeling"
+      ],
+      "example": "Dia tersenyum ketika mendengar kabar baik itu.",
+      "example_cn": "听到那个好消息时他笑了。",
+      "note": "ter- + senyum，状态/动作自然。"
+    },
+    {
+      "word": "sendok",
+      "cn": "勺子",
+      "en": "spoon",
+      "root": "sendok",
+      "root_cn": "勺子",
+      "register": "neutral",
+      "tags": [
+        "food",
+        "home"
+      ],
+      "example": "Saya butuh sendok untuk makan sup ini.",
+      "example_cn": "我需要一把勺子喝这碗汤。",
+      "note": "餐饮高频。"
+    },
+    {
+      "word": "terbuka",
+      "cn": "敞开的；开放的",
+      "en": "open",
+      "root": "buka",
+      "root_cn": "打开",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "home"
+      ],
+      "example": "Pintunya masih terbuka sejak tadi.",
+      "example_cn": "门从刚才起一直开着。",
+      "note": "状态；membuka=打开某物。"
+    },
+    {
+      "word": "sepanjang",
+      "cn": "沿着；整个……期间",
+      "en": "along; throughout",
+      "root": "panjang",
+      "root_cn": "长",
+      "register": "neutral",
+      "tags": [
+        "location",
+        "time"
+      ],
+      "example": "Ada banyak toko sepanjang jalan ini.",
+      "example_cn": "这条路沿线有很多商店。",
+      "note": "也可说 sepanjang hari“整天”。"
+    },
+    {
+      "word": "memasak",
+      "cn": "做饭；烹饪",
+      "en": "cook",
+      "root": "masak",
+      "root_cn": "熟；烹饪",
+      "register": "neutral",
+      "tags": [
+        "food",
+        "home"
+      ],
+      "example": "Saya memasak makan malam sederhana di rumah.",
+      "example_cn": "我在家做了简单的晚饭。",
+      "note": "高频生活动词。"
+    },
+    {
+      "word": "tradisional",
+      "cn": "传统的",
+      "en": "traditional",
+      "root": "tradisi",
+      "root_cn": "传统",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "culture"
+      ],
+      "example": "Kami mencoba makanan tradisional dari Jawa Tengah.",
+      "example_cn": "我们尝了中爪哇的传统食物。",
+      "note": "常修饰 makanan、pasar、budaya。"
+    },
+    {
+      "word": "mengetahui",
+      "cn": "知道；得知",
+      "en": "know; find out",
+      "root": "tahu",
+      "root_cn": "知道",
+      "register": "standard",
+      "tags": [
+        "information",
+        "communication"
+      ],
+      "example": "Saya baru mengetahui perubahan itu pagi ini.",
+      "example_cn": "我今天早上才知道这个变化。",
+      "note": "日常通常直接 tahu；mengetahui 较正式。"
+    },
+    {
+      "word": "buruk",
+      "cn": "糟糕的；坏的",
+      "en": "bad; poor",
+      "root": "buruk",
+      "root_cn": "糟糕",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "problem"
+      ],
+      "example": "Cuaca buruk membuat penerbangan terlambat.",
+      "example_cn": "恶劣天气导致航班延误。",
+      "note": "与 jelek 都可“差”，buruk 更广。"
+    },
+    {
+      "word": "titik",
+      "cn": "点；地点；小滴",
+      "en": "point; spot",
+      "root": "titik",
+      "root_cn": "点",
+      "register": "neutral",
+      "tags": [
+        "location",
+        "number"
+      ],
+      "example": "Kita bertemu di titik jemput yang sama.",
+      "example_cn": "我们在同一个上车点见。",
+      "note": "高频搭配 titik jemput、titik awal。"
+    },
+    {
+      "word": "umumnya",
+      "cn": "一般来说；通常",
+      "en": "generally",
+      "root": "umum",
+      "root_cn": "一般；公共",
+      "register": "standard",
+      "tags": [
+        "connector",
+        "information"
+      ],
+      "example": "Umumnya, toko di area ini tutup sekitar jam sepuluh malam.",
+      "example_cn": "一般来说，这一带的店晚上十点左右关门。",
+      "note": "稍书面；口语可用 biasanya。"
+    },
+    {
+      "word": "fakta",
+      "cn": "事实",
+      "en": "fact",
+      "root": "fakta",
+      "root_cn": "事实",
+      "register": "neutral",
+      "tags": [
+        "information"
+      ],
+      "example": "Kita perlu cek fakta sebelum menyimpulkan.",
+      "example_cn": "下结论前需要核实事实。",
+      "note": "常见 fakta bahwa...。"
+    },
+    {
+      "word": "saudara",
+      "cn": "兄弟姐妹；亲属；您（正式）",
+      "en": "sibling; relative; formal you",
+      "root": "saudara",
+      "root_cn": "亲属",
+      "register": "formal-neutral",
+      "tags": [
+        "social",
+        "communication"
+      ],
+      "example": "Dia datang bersama saudara kandungnya.",
+      "example_cn": "他和自己的亲兄弟姐妹一起来。",
+      "note": "作为称呼时较正式。"
+    },
+    {
+      "word": "positif",
+      "cn": "积极的；阳性的",
+      "en": "positive",
+      "root": "positif",
+      "root_cn": "积极；阳性",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "health"
+      ],
+      "example": "Coba lihat sisi positif dari perubahan ini.",
+      "example_cn": "试着看看这个变化积极的一面。",
+      "note": "医疗检测也可表示阳性，需看语境。"
+    },
+    {
+      "word": "terbang",
+      "cn": "飞",
+      "en": "fly",
+      "root": "terbang",
+      "root_cn": "飞",
+      "register": "neutral",
+      "tags": [
+        "travel",
+        "movement"
+      ],
+      "example": "Pesawat mulai terbang setelah cuaca membaik.",
+      "example_cn": "天气好转后飞机起飞了。",
+      "note": "也可抽象“飞走”。"
+    },
+    {
+      "word": "asam",
+      "cn": "酸的；酸",
+      "en": "sour; acid",
+      "root": "asam",
+      "root_cn": "酸",
+      "register": "neutral",
+      "tags": [
+        "food",
+        "description"
+      ],
+      "example": "Rasa kuahnya sedikit asam tapi segar.",
+      "example_cn": "汤的味道有点酸但很清爽。",
+      "note": "食物语境高频。"
+    },
+    {
+      "word": "tipis",
+      "cn": "薄的；稀薄的",
+      "en": "thin",
+      "root": "tipis",
+      "root_cn": "薄",
+      "register": "neutral",
+      "tags": [
+        "description"
+      ],
+      "example": "Kertas ini terlalu tipis untuk dicetak dua sisi.",
+      "example_cn": "这张纸太薄，不适合双面打印。",
+      "note": "与 tebal“厚”相对。"
+    },
+    {
+      "word": "basah",
+      "cn": "湿的",
+      "en": "wet",
+      "root": "basah",
+      "root_cn": "湿",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "weather"
+      ],
+      "example": "Lantainya masih basah setelah dibersihkan.",
+      "example_cn": "地板清洁后还湿着。",
+      "note": "与 kering“干”相对。"
+    },
+    {
+      "word": "kertas",
+      "cn": "纸",
+      "en": "paper",
+      "root": "kertas",
+      "root_cn": "纸",
+      "register": "neutral",
+      "tags": [
+        "document",
+        "work"
+      ],
+      "example": "Saya menulis nomor itu di selembar kertas.",
+      "example_cn": "我把号码写在一张纸上。",
+      "note": "常见 selembar kertas。"
+    },
+    {
+      "word": "menjelang",
+      "cn": "临近；快到……时",
+      "en": "approaching; toward",
+      "root": "jelang",
+      "root_cn": "临近",
+      "register": "standard",
+      "tags": [
+        "time"
+      ],
+      "example": "Jalan biasanya lebih macet menjelang malam.",
+      "example_cn": "临近晚上时道路通常更堵。",
+      "note": "常见 menjelang sore/malam/libur。"
+    },
+    {
+      "word": "bijak",
+      "cn": "明智的；有智慧的",
+      "en": "wise",
+      "root": "bijak",
+      "root_cn": "明智",
+      "register": "neutral",
+      "tags": [
+        "opinion",
+        "description"
+      ],
+      "example": "Menurut saya, menunggu dulu adalah pilihan yang lebih bijak.",
+      "example_cn": "我觉得先等等是更明智的选择。",
+      "note": "bijak 比 pintar 更偏判断成熟。"
+    },
+    {
+      "word": "diam-diam",
+      "cn": "偷偷地；悄悄地",
+      "en": "secretly; quietly",
+      "root": "diam",
+      "root_cn": "安静",
+      "register": "neutral-spoken",
+      "tags": [
+        "social",
+        "action"
+      ],
+      "example": "Dia diam-diam menyiapkan hadiah untuk temannya.",
+      "example_cn": "他悄悄给朋友准备了礼物。",
+      "note": "强调不让别人知道。"
+    },
+    {
+      "word": "kemungkinan besar",
+      "cn": "很可能；大概率",
+      "en": "most likely; probably",
+      "root": "kemungkinan",
+      "root_cn": "可能性",
+      "register": "neutral",
+      "tags": [
+        "connector",
+        "plan"
+      ],
+      "example": "Kemungkinan besar paketnya baru sampai besok.",
+      "example_cn": "包裹很可能明天才到。",
+      "note": "非常实用的概率表达。"
+    },
+    {
+      "word": "lemah",
+      "cn": "虚弱的；弱的",
+      "en": "weak",
+      "root": "lemah",
+      "root_cn": "弱",
+      "register": "neutral",
+      "tags": [
+        "health",
+        "description"
+      ],
+      "example": "Setelah sakit, badan saya masih terasa lemah.",
+      "example_cn": "生病后我的身体还是觉得虚弱。",
+      "note": "也可形容信号、能力、论点。"
+    },
+    {
+      "word": "memperhatikan",
+      "cn": "注意；留意",
+      "en": "pay attention to; notice",
+      "root": "hati",
+      "root_cn": "注意；心（词源不宜硬拆）",
+      "register": "neutral",
+      "tags": [
+        "communication",
+        "learning"
+      ],
+      "example": "Coba perhatikan bagian ini baik-baik.",
+      "example_cn": "请仔细注意这一部分。",
+      "note": "高频指令；不要机械按词缀解释词根。"
+    },
+    {
+      "word": "tidak adil",
+      "cn": "不公平的",
+      "en": "unfair",
+      "root": "adil",
+      "root_cn": "公平",
+      "register": "neutral",
+      "tags": [
+        "opinion",
+        "law"
+      ],
+      "example": "Menurut saya, aturan itu tidak adil untuk semua orang.",
+      "example_cn": "我觉得那条规定对所有人并不公平。",
+      "note": "固定否定短语。"
+    },
+    {
+      "word": "menghabiskan",
+      "cn": "花费；耗尽；用完",
+      "en": "spend; use up",
+      "root": "habis",
+      "root_cn": "用完；结束",
+      "register": "neutral",
+      "tags": [
+        "time",
+        "finance",
+        "action"
+      ],
+      "example": "Saya menghabiskan dua jam untuk menyelesaikan laporan.",
+      "example_cn": "我花了两小时完成报告。",
+      "note": "常见 menghabiskan waktu/uang。"
+    },
+    {
+      "word": "adil",
+      "cn": "公平的；公正的",
+      "en": "fair; just",
+      "root": "adil",
+      "root_cn": "公平",
+      "register": "neutral",
+      "tags": [
+        "opinion",
+        "law"
+      ],
+      "example": "Pembagian tugas harus adil untuk semua anggota.",
+      "example_cn": "任务分配对所有成员都应该公平。",
+      "note": "与 tidak adil 相反。"
+    },
+    {
+      "word": "menyukai",
+      "cn": "喜欢",
+      "en": "like",
+      "root": "suka",
+      "root_cn": "喜欢",
+      "register": "standard-neutral",
+      "tags": [
+        "social",
+        "feeling"
+      ],
+      "example": "Saya menyukai tempat ini karena suasananya tenang.",
+      "example_cn": "我喜欢这个地方，因为氛围安静。",
+      "note": "日常更常直接 suka。"
+    },
+    {
+      "word": "menutupi",
+      "cn": "覆盖；遮住；掩盖",
+      "en": "cover; conceal",
+      "root": "tutup",
+      "root_cn": "关；盖",
+      "register": "neutral",
+      "tags": [
+        "action",
+        "social"
+      ],
+      "example": "Awan tebal menutupi matahari.",
+      "example_cn": "厚云遮住了太阳。",
+      "note": "也可抽象“掩盖事实”。"
+    },
+    {
+      "word": "mengumpulkan",
+      "cn": "收集；聚集",
+      "en": "collect; gather",
+      "root": "kumpul",
+      "root_cn": "聚集",
+      "register": "neutral",
+      "tags": [
+        "action",
+        "work"
+      ],
+      "example": "Kami mengumpulkan data sebelum membuat laporan.",
+      "example_cn": "我们做报告前收集数据。",
+      "note": "mengumpulkan=收集；berkumpul=聚在一起。"
+    },
+    {
+      "word": "menderita",
+      "cn": "遭受；患……",
+      "en": "suffer",
+      "root": "derita",
+      "root_cn": "痛苦",
+      "register": "standard",
+      "tags": [
+        "health",
+        "social"
+      ],
+      "example": "Dia menderita sakit punggung sejak beberapa hari lalu.",
+      "example_cn": "他几天来一直受背痛困扰。",
+      "note": "正式，常搭配 penyakit/kerugian。"
+    },
+    {
+      "word": "datar",
+      "cn": "平坦的；平淡的",
+      "en": "flat",
+      "root": "datar",
+      "root_cn": "平",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "location"
+      ],
+      "example": "Jalan di daerah ini cukup datar dan mudah dilalui.",
+      "example_cn": "这一带道路比较平坦，好走。",
+      "note": "也可形容语调/情绪平淡。"
+    },
+    {
+      "word": "bergetar",
+      "cn": "震动；颤抖",
+      "en": "vibrate; tremble",
+      "root": "getar",
+      "root_cn": "震动",
+      "register": "neutral",
+      "tags": [
+        "movement",
+        "digital"
+      ],
+      "example": "Ponsel saya bergetar ketika ada pesan masuk.",
+      "example_cn": "有消息进来时我的手机震动了。",
+      "note": "手机场景非常自然。"
+    },
+    {
+      "word": "mengukur",
+      "cn": "测量",
+      "en": "measure",
+      "root": "ukur",
+      "root_cn": "测量",
+      "register": "neutral",
+      "tags": [
+        "number",
+        "action"
+      ],
+      "example": "Petugas mengukur ukuran ruangan sebelum memasang alat.",
+      "example_cn": "工作人员安装设备前测量了房间尺寸。",
+      "note": "常见 mengukur panjang/tinggi/suhu。"
+    },
+    {
+      "word": "meminjam",
+      "cn": "借入；借用",
+      "en": "borrow",
+      "root": "pinjam",
+      "root_cn": "借",
+      "register": "neutral",
+      "tags": [
+        "finance",
+        "social"
+      ],
+      "example": "Saya meminjam payung dari teman karena hujan.",
+      "example_cn": "因为下雨，我向朋友借了把伞。",
+      "note": "meminjam=借入；meminjamkan=借给别人。"
+    }
+  ]
+}
