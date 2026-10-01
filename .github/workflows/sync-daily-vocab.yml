@@ -93,6 +93,15 @@ jobs:
           node --check .github/scripts/recover-missing-lesson.js
           node --check .github/scripts/test-recover-missing-lesson.js
           node .github/scripts/test-recover-missing-lesson.js
+          # Live baseline rehearsal without --write; no official lesson or index is changed.
+          smoke_date="$(node -p "require('./data/lesson-context.json').target.date")"
+          smoke_session="$(node -p "require('./data/lesson-context.json').target.session")"
+          node .github/scripts/recover-missing-lesson.js \
+            --date "$smoke_date" --session "$smoke_session" --main-head "$(git rev-parse HEAD)" \
+            > "$RUNNER_TEMP/fallback-smoke.txt"
+          cat "$RUNNER_TEMP/fallback-smoke.txt"
+          grep -Eq '"status":"(ready|already_published)"' "$RUNNER_TEMP/fallback-smoke.txt"
+          git diff --exit-code -- data/daily/index.json
           node --check .github/scripts/check-release-pr.js
           node --check .github/scripts/test-release-pr.js
           node .github/scripts/test-lesson-candidate.js
