@@ -74,6 +74,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
+      - name: Syntax check scheduled reading generator
+        run: node --check .github/scripts/generate-extensive-reading.js
       - name: Validate current contracts and interruption simulations
         shell: bash
         run: |
