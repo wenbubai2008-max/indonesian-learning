@@ -455,14 +455,16 @@ jobs:
 
           mergeable=""
           merge_state=""
+          remote_head=""
           for attempt in 1 2 3 4 5 6 7 8 9 10; do
             pr_json="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
             remote_head="$(jq -r '.head.sha // empty' <<<"$pr_json")"
             mergeable="$(jq -r 'if .mergeable == null then "unknown" else (.mergeable|tostring) end' <<<"$pr_json")"
             merge_state="$(jq -r '.mergeable_state // "unknown"' <<<"$pr_json")"
             if [ "$remote_head" != "$final_sha" ]; then
-              echo "::error title=Reading PR head moved::Expected $final_sha but GitHub reports $remote_head."
-              exit 1
+              echo "Waiting for GitHub to publish final PR head (attempt $attempt/10, expected=$final_sha, remote=$remote_head)."
+              sleep 2
+              continue
             fi
             if [ "$mergeable" = "true" ]; then
               break
@@ -474,6 +476,10 @@ jobs:
             echo "Waiting for GitHub to recompute PR mergeability (attempt $attempt/10, state=$merge_state)."
             sleep 2
           done
+          if [ "$remote_head" != "$final_sha" ]; then
+            echo "::error title=Reading PR head propagation timeout::Expected $final_sha but GitHub still reports $remote_head."
+            exit 1
+          fi
           if [ "$mergeable" != "true" ]; then
             echo "::error title=Reading PR mergeability timeout::GitHub did not compute mergeable=true within the bounded wait; state=$merge_state."
             exit 1
