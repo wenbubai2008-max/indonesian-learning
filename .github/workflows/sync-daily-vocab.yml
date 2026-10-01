@@ -32,9 +32,6 @@ on:
       - '.github/scripts/plan-lesson-publication.js'
       - '.github/scripts/validate-lesson-candidate.js'
       - '.github/scripts/publish-extensive-reading-candidate.js'
-      - '.github/scripts/generate-extensive-reading.js'
-      - '.github/scripts/test-free-reading-generator.js'
-      - '.github/scripts/run-extensive-reading-release.sh'
       - 'data/extensive-reading-candidate.json'
       - 'data/extensive-reading-data.js'
       - 'data/extensive-reading-history.js'
@@ -48,14 +45,7 @@ on:
     # Recovery is idempotent; it cannot invent a lesson that was never committed.
     # Unchanged derived payloads preserve generated_at using semantic JSON comparison; no empty Pages deployment.
     - cron: '12 1,11 * * *'
-    # 12:00 Asia/Jakarta; gated API-backed reading release.
-    - cron: '0 5 * * *'
   workflow_dispatch:
-    inputs:
-      generate_extensive_reading:
-        description: 'Run opt-in Gemini Free Tier daily extensive reading'
-        type: boolean
-        default: false
 permissions:
   contents: write
   issues: write
@@ -77,15 +67,6 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
-      - name: Syntax-check scheduled reading generator
-        run: |
-          node --check .github/scripts/generate-extensive-reading.js
-          bash -n .github/scripts/run-extensive-reading-release.sh
-          node --check .github/scripts/test-free-reading-generator.js
-          node .github/scripts/test-free-reading-generator.js
-          if grep -Eq 'api[.]openai[.]com|OPENAI_API_KEY|gpt-4' .github/scripts/generate-extensive-reading.js .github/scripts/run-extensive-reading-release.sh; then
-            echo 'Paid OpenAI fallback unexpectedly present'; exit 1
-          fi
       - name: Validate current contracts and interruption simulations
         shell: bash
         run: |
@@ -527,43 +508,8 @@ jobs:
           merge_sha="$(jq -r '.sha // empty' <<<"$response")"
           echo "EXTENSIVE_READING_PUBLISHED date=$release_date pr=$PR_NUMBER head=$final_sha merge=$merge_sha"
 
-  extensive_reading_generate:
-    # Disabled by default; do not disable the existing ChatGPT daily task before live verification.
-    if: github.ref == 'refs/heads/main' && vars.EXTENSIVE_READING_AUTO_ENABLED == 'true' && ((github.event_name == 'schedule' && github.event.schedule == '0 5 * * *') || (github.event_name == 'workflow_dispatch' && inputs.generate_extensive_reading == true))
-    runs-on: ubuntu-latest
-    concurrency:
-      group: learning-data-write
-      cancel-in-progress: false
-    permissions:
-      contents: write
-      pull-requests: write
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v7
-        with:
-          node-version: '24'
-      - name: Check Gemini Free Tier key configured
-        id: key_check
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          if [ -n "$GEMINI_API_KEY" ]; then echo 'ready=true' >> "$GITHUB_OUTPUT"; else echo 'ready=false' >> "$GITHUB_OUTPUT"; fi
-      - name: Generate and publish today's verified reading
-        if: steps.key_check.outputs.ready == 'true'
-        shell: bash
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_READING_MODEL: ${{ vars.GEMINI_READING_MODEL || 'gemini-2.5-flash-lite' }}
-        run: bash .github/scripts/run-extensive-reading-release.sh
-      - name: API key setup needed
-        if: steps.key_check.outputs.ready != 'true'
-        run: echo 'Configure GEMINI_API_KEY (unbilled Gemini API Free Tier) repository secret before enabling EXTENSIVE_READING_AUTO_ENABLED.'
-
   sync:
-    if: github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || github.event.schedule != '0 5 * * *') && (github.event_name != 'workflow_dispatch' || inputs.generate_extensive_reading != true)
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
