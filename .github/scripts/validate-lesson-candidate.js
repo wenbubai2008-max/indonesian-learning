@@ -75,7 +75,8 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     if(valid&&has(q,"answer"))check(norm(q.answer)===norm(opts[a]),"ANSWER_MISMATCH","Question "+(i+1)+" answer vs index");
     return valid?norm(opts[a]):"";
   };
-  const amWords=new Set([...(sameDayAm?.vocab||[]).map(word),...(sameDayAm?.review_vocab||[]).map(word)].filter(Boolean));
+  const amNewWords=new Set(ws(sameDayAm?.vocab)),amReviewWords=new Set(ws(sameDayAm?.review_vocab));
+  const amWords=new Set([...amNewWords,...amReviewWords]);
   if(session==="am"){
     check(vocab.length===10,"AM_CORE_COUNT","Exactly 10 new words required");
     const prevDate=new Date(Date.parse(date+"T00:00:00Z")-86400000).toISOString().slice(0,10);
@@ -130,9 +131,17 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
       }
       if(g==="review"||g==="application")pool(w,reviewPool,"TAUGHT_ACTIVE_INELIGIBLE");
       if(g==="application"){
-        const marked=/今天\s*08:00\s*已教/.test(String(v.formation||"")+" "+String(v.usage_note||""));
-        if(amWords.has(w))check(marked,"AM_MARKER_MISSING",w);
-        if(marked)check(amWords.has(w),"AM_MARKER_FALSE",w);
+        const label=String(v.formation||"")+" "+String(v.usage_note||"");
+        const newly=/今天\s*08:00\s*新学/.test(label);
+        const oldReview=/今天\s*08:00\s*复习过的老词/.test(label);
+        // Accept the generic marker in older published lessons and normal ChatGPT
+        // drafts; precise new/review markers must match their actual AM provenance.
+        const legacy=/今天\s*08:00\s*已教/.test(label);
+        if(amNewWords.has(w))check(newly||legacy,"AM_MARKER_MISSING",w);
+        else if(amReviewWords.has(w))check(oldReview||legacy,"AM_MARKER_MISSING",w);
+        if(newly)check(amNewWords.has(w),"AM_MARKER_FALSE",w);
+        if(oldReview)check(amReviewWords.has(w)&&!amNewWords.has(w),"AM_MARKER_FALSE",w);
+        if(legacy)check(amWords.has(w),"AM_MARKER_FALSE",w);
       }
     });
     const usableFuzzy=[...fuzzy].filter(w=>newPool.has(w)&&!amWords.has(w));
