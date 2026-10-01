@@ -74,9 +74,10 @@
   function renderTaskList(title,items,answerKey){
     if(!items?.length)return '';
     return '<section class="card section"><h2>'+esc(title)+'</h2><div class="tasks">'+items.map((x,i)=>{
-      const task=x.task||x.prompt||x.question||String(x);
-      const ans=x[answerKey]||x.reference_answer||x.answer||'';
-      return '<div class="task"><b>'+(i+1)+'.</b> '+esc(task)+(ans?'<div class="answer">参考：'+esc(ans)+'</div>':'')+'</div>';
+      const bilingual=typeof x?.text==='string'&&typeof x?.cn==='string';
+      const task=bilingual?x.text:(x.task||x.prompt||x.question||String(x));
+      const ans=bilingual?x.cn:(x[answerKey]||x.reference_answer||x.answer||'');
+      return '<div class="task"><b>'+(i+1)+'.</b> '+esc(task)+(ans?'<div class="answer">'+(bilingual?'中文：':'参考：')+esc(ans)+'</div>':'')+'</div>';
     }).join('')+'</div></section>';
   }
   function render(lesson,ctx,variant){
@@ -126,7 +127,7 @@
         '</div><p class="hint">组合 '+(variant+1)+'。黄色是质量目标，不是正式发布硬闸门；红色才表示结构合同不合格。</p></section>'+
       '<section class="card section"><h2>核心词卡</h2><p class="hint">🔊 使用浏览器印尼语 TTS；AM词卡全部是新词，PM按 new / review / application 分组。</p><div class="word-grid">'+cards+'</div></section>'+
       '<section class="card section"><h2>阅读</h2><div class="reading">'+esc(lesson.reading?.text||'')+'</div><div class="translation">'+esc(lesson.reading?.cn||'')+'</div>'+
-      '<div class="coverage">阅读核心词复现：'+(readingCoverage.length?esc(readingCoverage.join(' / ')):'—')+'</div></section>'+extra;
+      '<div class="coverage">阅读核心词复现：'+(readingCoverage.length?esc(readingCoverage.join(' / ')):'—')+'</div>'+ (lesson._prototype?.reading_review_required?'<p class="hint">多事件阅读：可作词汇复现，但主题连贯性仍需人工审核。</p>':'')+'</section>'+extra;
 
     app.querySelectorAll('[data-audio]').forEach(b=>b.addEventListener('click',()=>speak(b.dataset.audio)));
   }
