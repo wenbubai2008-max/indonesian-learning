@@ -14,6 +14,7 @@ const bundle=get('prototype/lesson-engine/materials/materials-bundle.json');
 const rules=get('data/learning-pool-rules.json'),sha='a'.repeat(40);
 const previousPm=get('data/daily/2026-09-30-pm.json');
 const sameDayAm=get('data/daily/2026-10-01-am.json');
+console.log('DAILY_LIGHT_CACHE_HASH '+require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(base,'data/daily-light-test.js'),'utf8')).digest('hex').slice(0,12));
 function history(ctx){
  return (ctx.history_7d||[]).map(h=>h.session==='am'
    ?{date:h.date,session:'am',review_vocab:h.review_core||[],vocab:[]}
