@@ -303,41 +303,57 @@
     const allTargets=targetReadingCards(cards,scene,env,session);
     const newTargets=allTargets.filter(c=>c.group==='new');
     const supportTargets=allTargets.filter(c=>c.group!=='new');
-    const selectedNew=session==='am'?newTargets.slice(0,6):newTargets;
+    const rankedNew=[...newTargets].sort((a,b)=>{
+      const fit=sceneFit(b,scene,env)-sceneFit(a,scene,env);
+      return fit||wc(a.example)-wc(b.example);
+    });
+    const selectedNew=session==='am'?rankedNew.slice(0,6):rankedNew;
+
     const macro=b=>{
       if(['work','digital','shopping','finance','home','daily'].includes(b))return 'activity';
       if(['transport','nature','incident'].includes(b))return 'outside';
       return 'personal';
     };
-    const newMacros=new Set(selectedNew.map(c=>macro(semanticBucket(c,env,scene))));
-    const support=[...supportTargets].sort((a,b)=>{
-      const am=newMacros.has(macro(semanticBucket(a,env,scene)))?1:0;
-      const bm=newMacros.has(macro(semanticBucket(b,env,scene)))?1:0;
-      return bm-am||sceneFit(b,scene,env)-sceneFit(a,scene,env);
-    }).slice(0,session==='am'?2:3);
+    const groupCards=list=>{
+      const groups=new Map();
+      for(const c of list){
+        const b=macro(semanticBucket(c,env,scene));
+        if(!groups.has(b))groups.set(b,[]);
+        groups.get(b).push(c);
+      }
+      return groups;
+    };
 
-    const selected=[...selectedNew,...support];
-    const groups=new Map();
-    for(const c of selected){
-      const b=macro(semanticBucket(c,env,scene));
-      if(!groups.has(b))groups.set(b,[]);
-      groups.get(b).push(c);
+    const newGroups=groupCards(selectedNew);
+    const primaryRaw=semanticBucket(selectedNew[0]||{word:'',cn:'',example:''},env,scene);
+    const primary=macro(primaryRaw),order=[primary,'activity','outside','personal'];
+    const used=new Set(),orderedNew=[];
+    for(const b of order)if(newGroups.has(b)&&!used.has(b)){orderedNew.push([b,newGroups.get(b)]);used.add(b)}
+    for(const [b,xs] of newGroups)if(!used.has(b))orderedNew.push([b,xs]);
+
+    const seenMacros=new Set();
+    for(let gi=0;gi<orderedNew.length;gi++){
+      const [bucket,xs]=orderedNew[gi],bridge=env.M.language.reading_macro_transitions?.[bucket];
+      if(gi>0&&bridge)pairs.push([bridge.id,bridge.cn,'','bridge']);
+      seenMacros.add(bucket);
+      for(const c of xs){
+        const projected=wc(pairs.map(x=>x[0]).join(' '))+wc(c.example);
+        if(projected<=116)pairs.push([c.example,c.example_cn,c.word,c.group]);
+      }
     }
 
-    const primaryRaw=semanticBucket(selectedNew[0]||selected[0]||{word:'',cn:'',example:''},env,scene);
-    const primary=macro(primaryRaw),order=[primary,'activity','outside','personal'];
-    const used=new Set(),ordered=[];
-    for(const b of order)if(groups.has(b)&&!used.has(b)){ordered.push([b,groups.get(b)]);used.add(b)}
-    for(const [b,xs] of groups)if(!used.has(b))ordered.push([b,xs]);
-
-    for(let gi=0;gi<ordered.length;gi++){
-      const [bucket,xs]=ordered[gi],bridge=env.M.language.reading_macro_transitions?.[bucket];
-      if(gi>0&&bridge)pairs.push([bridge.id,bridge.cn,'','bridge']);
-      const orderedCards=[...xs].sort((a,b)=>Number(b.group==='new')-Number(a.group==='new'));
-      for(const c of orderedCards){
-        const projected=wc(pairs.map(x=>x[0]).join(' '))+wc(c.example);
-        if(projected>111&&c.group!=='new')continue;
-        if(projected>116)continue;
+    const support=[...supportTargets].sort((a,b)=>{
+      const am=seenMacros.has(macro(semanticBucket(a,env,scene)))?1:0;
+      const bm=seenMacros.has(macro(semanticBucket(b,env,scene)))?1:0;
+      return bm-am||sceneFit(b,scene,env)-sceneFit(a,scene,env)||wc(a.example)-wc(b.example);
+    }).slice(0,session==='am'?2:3);
+    for(const c of support){
+      const bucket=macro(semanticBucket(c,env,scene));
+      const bridge=env.M.language.reading_macro_transitions?.[bucket];
+      const needBridge=!seenMacros.has(bucket)&&bridge;
+      const extra=(needBridge?wc(bridge.id):0)+wc(c.example);
+      if(wc(pairs.map(x=>x[0]).join(' '))+extra<=110){
+        if(needBridge){pairs.push([bridge.id,bridge.cn,'','bridge']);seenMacros.add(bucket)}
         pairs.push([c.example,c.example_cn,c.word,c.group]);
       }
     }
@@ -349,8 +365,9 @@
     const ci=hash(key+'close')%scene.closing.length;
     pairs.push([scene.closing[ci],cn.closing[ci],'','scene']);
     while(wc(pairs.map(x=>x[0]).join(' '))>120&&pairs.length>5){
-      const idx=[...pairs].map((x,i)=>[x,i]).reverse().find(([x])=>x[3]!=='new'&&x[3]!=='scene')?.[1]??-2;
-      pairs.splice(idx,1);
+      const candidate=[...pairs].map((x,i)=>[x,i]).reverse().find(([x])=>x[3]!=='new'&&x[3]!=='scene');
+      if(!candidate)break;
+      pairs.splice(candidate[1],1);
     }
     const text=pairs.map(x=>x[0]).join(' '),translation=pairs.map(x=>x[1]).join(' ');
     const included=cards.filter(c=>norm(text).includes(norm(c.word))).map(c=>({word:c.word,group:c.group}));
