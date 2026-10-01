@@ -331,7 +331,8 @@ async function checkDailyAmTagRendering(){
  await window.openDaily('pm','2026-10-01');
  assert(count.every(x=>x<=1),'Repeated opening must not duplicate a label');
  const home=fs.readFileSync(path.join(base,'index.html'),'utf8');
- assert(home.includes('data/daily-light-test.js?v=20261001-review-label-fix'),'New UI must bust old browser cache');
+ const actualHash=require('node:crypto').createHash('sha256').update(script).digest('hex').slice(0,12);
+ assert(home.includes('data/daily-light-test.js?v='+actualHash),'New UI must use actual content hash, not a stale script URL');
  passed++;
  console.log('PASS October 1 published PM cards render accurate new/review/old tags and remain idempotent');
 }
