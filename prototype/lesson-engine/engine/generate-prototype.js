@@ -77,13 +77,30 @@ function sceneScore(scene,rows,M,weights={}){
   }
   return score;
 }
+function recentSceneIds(){
+  try{
+    const index=JSON.parse(fs.readFileSync(path.join(REPO,'data/daily/index.json'),'utf8'));
+    const rows=(index.dates||[]).slice(-4),ids=[];
+    for(const row of rows){
+      for(const session of ['am','pm']){
+        if(row?.[session]!==true)continue;
+        const p=path.join(REPO,'data/daily/'+row.date+'-'+session+'.json');
+        if(!fs.existsSync(p))continue;
+        const lesson=JSON.parse(fs.readFileSync(p,'utf8')),id=lesson?._prototype?.scene_id;
+        if(id)ids.push(id);
+      }
+    }
+    return ids.slice(-3);
+  }catch{return []}
+}
 function chooseSeedScene(ctx,M){
   const oral=oralMap(ctx);
   const base=[...candidateRows(ctx,'dont').slice(0,35),...candidateRows(ctx,'fuzzy').slice(0,35)];
   const weights={};
   base.forEach((r,i)=>weights[r.word]=Math.max(1,4-Math.floor(i/12)));
   for(const [w] of oral)weights[w]=(weights[w]||1)+6;
-  const ranked=M.scenes.scenes.map(s=>({scene:s,score:sceneScore(s,base,M,weights)}))
+  const recent=new Set(recentSceneIds());
+  const ranked=M.scenes.scenes.map(s=>({scene:s,score:sceneScore(s,base,M,weights)-(recent.has(s.id)?20:0)}))
     .sort((a,b)=>b.score-a.score||a.scene.id.localeCompare(b.scene.id));
   const max=ranked[0]?.score||0,top=ranked.filter(x=>x.score>=Math.max(1,max-2)).slice(0,5);
   return pick((top.length?top:ranked).map(x=>x.scene),ctx.target.date+'-'+ctx.target.session+'-scene')||M.scenes.scenes[0];
@@ -294,6 +311,9 @@ function outputFrame(scene,M){
 
 function generate(ctx){
   const M=loadMaterials(),daily=loadDailyVocab(),oral=oralMap(ctx);
+  const legal=[...candidateRows(ctx,'dont'),...candidateRows(ctx,'fuzzy')];
+  const missing=legal.filter(x=>!M.lex.has(x.word)).map(x=>x.word);
+  if(missing.length)throw Error('MISSING_CURATED_NEW_CONTENT '+missing.slice(0,20).join(',')+(missing.length>20?' +'+(missing.length-20):''));
   const scene=chooseSeedScene(ctx,M);
   const newRows=selectNew(ctx,scene,M);
   const reviews=selectReviews(ctx,scene,M,ctx.target.session==='am'?5:4);
