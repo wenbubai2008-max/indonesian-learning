@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-01",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 41
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-09-30T14:16:44.737Z",
-    "lesson_watermark": "2026-09-30 18:00",
-    "index_updated": "2026-09-30",
-    "runtime_hash": "3d1feaf16648f588c95f900706db62fbff79e59b9d524d7a32291935b73ce874",
-    "index_hash": "299acec271a6209092a13e62d697aa49c4de6cbf5dad56121b09e12fe88b4419",
+    "runtime_generated_at": "2026-10-01T02:10:31.887Z",
+    "lesson_watermark": "2026-10-01 08:00",
+    "index_updated": "2026-10-01",
+    "runtime_hash": "4fc5826d3e9cf78e6e7f08b9884b318dfa16eebf023d7646ee76f796adc84f77",
+    "index_hash": "541c47226f865911bd096c81a689e7499c230168815443258fe6faefe3d0aa01",
     "rules_hash": "a4b65072036f29bb3b55fdd5c56c551f407d8aed1d9353382e5cb28bc32d575f"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "mundur",
-        "后退的 / 落后的"
-      ],
-      [
-        "biarpun",
-        "即使"
-      ],
-      [
-        "haus",
-        "口渴的"
-      ],
-      [
-        "meledak",
-        "爆炸"
-      ],
-      [
-        "meletakkan",
-        "放置 / 放"
-      ],
-      [
-        "memeluk",
-        "拥抱"
-      ],
-      [
-        "mengunduh",
-        "下载"
-      ],
-      [
-        "menuduh",
-        "控告"
-      ],
-      [
-        "menyembuhkan",
-        "治愈"
-      ],
-      [
-        "seandainya",
-        "假如"
-      ],
       [
         "membunuh",
         "杀死"
@@ -1806,6 +1766,16 @@
         "分开；离婚"
       ],
       [
+        "biarpun",
+        2,
+        0,
+        "",
+        "",
+        "即使；尽管",
+        "biar",
+        "让；即便"
+      ],
+      [
         "cuek",
         2,
         0,
@@ -1814,16 +1784,6 @@
         "不在意；冷淡；不理会（口语）",
         "cuek",
         "不在意；冷淡"
-      ],
-      [
-        "curhat",
-        2,
-        0,
-        "",
-        "",
-        "倾诉；诉苦；聊心事",
-        "curhat",
-        "倾诉（curahan hati的口语缩略）"
       ]
     ],
     "focus": [
@@ -2388,6 +2348,29 @@
         "agar",
         "lezat"
       ]
+    },
+    {
+      "date": "2026-10-01",
+      "session": "am",
+      "review_core": [
+        "niat",
+        "mengeluh",
+        "memanggil",
+        "melawan",
+        "bebas"
+      ],
+      "new_words": [
+        "mundur",
+        "biarpun",
+        "haus",
+        "meledak",
+        "meletakkan",
+        "memeluk",
+        "mengunduh",
+        "menuduh",
+        "menyembuhkan",
+        "seandainya"
+      ]
     }
   ],
   "previous_pm": {
@@ -2405,7 +2388,88 @@
       "menegaskan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-01",
+    "vocab": [
+      [
+        "mundur",
+        "后退；倒退；落后",
+        "move backward; retreat; fall behind",
+        "mundur",
+        "后退；倒退"
+      ],
+      [
+        "biarpun",
+        "即使；尽管",
+        "even though; although",
+        "biar",
+        "让；即便"
+      ],
+      [
+        "haus",
+        "口渴",
+        "thirsty",
+        "haus",
+        "口渴"
+      ],
+      [
+        "meledak",
+        "爆炸；突然爆发",
+        "explode; burst",
+        "ledak",
+        "爆炸"
+      ],
+      [
+        "meletakkan",
+        "放置；把……放下",
+        "put; place",
+        "letak",
+        "位置；放置"
+      ],
+      [
+        "memeluk",
+        "拥抱",
+        "hug; embrace",
+        "peluk",
+        "抱；拥抱"
+      ],
+      [
+        "mengunduh",
+        "下载",
+        "download",
+        "unduh",
+        "下载"
+      ],
+      [
+        "menuduh",
+        "指控；指责",
+        "accuse",
+        "tuduh",
+        "指控；指责"
+      ],
+      [
+        "menyembuhkan",
+        "治愈；使恢复",
+        "cure; heal",
+        "sembuh",
+        "痊愈；恢复"
+      ],
+      [
+        "seandainya",
+        "假如；要是",
+        "if; supposing that",
+        "andai",
+        "假如；假设"
+      ]
+    ],
+    "review_vocab": [
+      "niat",
+      "mengeluh",
+      "memanggil",
+      "melawan",
+      "bebas"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

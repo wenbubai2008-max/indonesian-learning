@@ -9266,9 +9266,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-10-01 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9276,13 +9276,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-13",
       "2026-09-25",
-      "2026-09-27"
+      "2026-09-27",
+      "2026-10-01"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
       "2026-09-25 08:00",
       "2026-09-25 18:00",
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-10-01 08:00"
     ]
   },
   {
@@ -11063,19 +11065,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-09-29 08:00",
+    "last_seen": "2026-10-01 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-18",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-01"
     ],
     "lesson_occurrences": [
       "2026-09-18 08:00",
-      "2026-09-29 08:00"
+      "2026-09-29 08:00",
+      "2026-10-01 08:00"
     ]
   },
   {
@@ -11669,19 +11673,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-29 08:00",
+    "last_seen": "2026-10-01 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-20",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-01"
     ],
     "lesson_occurrences": [
       "2026-09-20 08:00",
-      "2026-09-29 08:00"
+      "2026-09-29 08:00",
+      "2026-10-01 08:00"
     ]
   },
   {
@@ -11811,19 +11817,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-29 08:00",
+    "last_seen": "2026-10-01 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-20",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-01"
     ],
     "lesson_occurrences": [
       "2026-09-20 08:00",
-      "2026-09-29 08:00"
+      "2026-09-29 08:00",
+      "2026-10-01 08:00"
     ]
   },
   {
@@ -12551,9 +12559,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-28 18:00",
+    "last_seen": "2026-10-01 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -12561,12 +12569,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-23",
       "2026-09-27",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-01"
     ],
     "lesson_occurrences": [
       "2026-09-23 08:00",
       "2026-09-27 18:00",
-      "2026-09-28 18:00"
+      "2026-09-28 18:00",
+      "2026-10-01 08:00"
     ]
   },
   {
@@ -15525,6 +15535,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-09-30 18:00"
+    ]
+  },
+  {
+    "word": "mundur",
+    "cn": "后退；倒退；落后",
+    "en": "move backward; retreat; fall behind",
+    "root": "mundur",
+    "root_cn": "后退；倒退",
+    "example": "Tolong mundur sedikit supaya pintunya bisa dibuka.",
+    "example_cn": "请往后退一点，好让门能打开。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 08:00"
+    ]
+  },
+  {
+    "word": "biarpun",
+    "cn": "即使；尽管",
+    "en": "even though; although",
+    "root": "biar",
+    "root_cn": "让；即便",
+    "example": "Biarpun hujan, saya tetap pergi ke kantor.",
+    "example_cn": "即使下雨，我还是去办公室。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 08:00"
+    ]
+  },
+  {
+    "word": "haus",
+    "cn": "口渴",
+    "en": "thirsty",
+    "root": "haus",
+    "root_cn": "口渴",
+    "example": "Setelah berjalan jauh, saya merasa sangat haus.",
+    "example_cn": "走了很远以后，我觉得非常口渴。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 08:00"
+    ]
+  },
+  {
+    "word": "meledak",
+    "cn": "爆炸；突然爆发",
+    "en": "explode; burst",
+    "root": "ledak",
+    "root_cn": "爆炸",
+    "example": "Ban itu tiba-tiba meledak saat mobil sedang berjalan.",
+    "example_cn": "汽车行驶时，那个轮胎突然爆了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 08:00"
+    ]
+  },
+  {
+    "word": "meletakkan",
+    "cn": "放置；把……放下",
+    "en": "put; place",
+    "root": "letak",
+    "root_cn": "位置；放置",
+    "example": "Saya meletakkan kunci di atas meja.",
+    "example_cn": "我把钥匙放在桌子上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 08:00"
+    ]
+  },
+  {
+    "word": "memeluk",
+    "cn": "拥抱",
+    "en": "hug; embrace",
+    "root": "peluk",
+    "root_cn": "抱；拥抱",
+    "example": "Anak itu memeluk ibunya sebelum berangkat sekolah.",
+    "example_cn": "那个孩子上学前抱了抱妈妈。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 08:00"
+    ]
+  },
+  {
+    "word": "mengunduh",
+    "cn": "下载",
+    "en": "download",
+    "root": "unduh",
+    "root_cn": "下载",
+    "example": "Saya mengunduh dokumen itu sebelum rapat dimulai.",
+    "example_cn": "会议开始前我下载了那份文件。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 08:00"
+    ]
+  },
+  {
+    "word": "menuduh",
+    "cn": "指控；指责",
+    "en": "accuse",
+    "root": "tuduh",
+    "root_cn": "指控；指责",
+    "example": "Jangan menuduh orang lain tanpa bukti yang jelas.",
+    "example_cn": "没有明确证据，不要指控别人。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 08:00"
+    ]
+  },
+  {
+    "word": "menyembuhkan",
+    "cn": "治愈；使恢复",
+    "en": "cure; heal",
+    "root": "sembuh",
+    "root_cn": "痊愈；恢复",
+    "example": "Obat ini membantu menyembuhkan luka kecil.",
+    "example_cn": "这种药有助于治愈小伤口。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 08:00"
+    ]
+  },
+  {
+    "word": "seandainya",
+    "cn": "假如；要是",
+    "en": "if; supposing that",
+    "root": "andai",
+    "root_cn": "假如；假设",
+    "example": "Seandainya besok libur, saya ingin tidur lebih lama.",
+    "example_cn": "假如明天放假，我想多睡一会儿。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 08:00"
     ]
   }
 ];
