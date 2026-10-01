@@ -5861,9 +5861,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-03 19:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-10-01 18:00",
     "sessions": [
       "19:00",
       "18:00"
@@ -5872,7 +5872,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03",
       "2026-09-19",
       "2026-09-26",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-01"
     ],
     "example": "Ada yang keberatan kalau rapat dipindah ke sore hari?",
     "example_cn": "会议改到下午，有人介意吗？",
@@ -5881,7 +5882,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-03 19:00",
       "2026-09-19 18:00",
       "2026-09-26 18:00",
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-10-01 18:00"
     ]
   },
   {
@@ -7060,20 +7062,22 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-10-01 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-01"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-10-01 18:00"
     ]
   },
   {
@@ -8425,9 +8429,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-10-01 18:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -8437,7 +8441,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10",
       "2026-09-17",
       "2026-09-18",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-01"
     ],
     "example": "Kalau semua datang bersamaan, tim bisa kelabakan.",
     "example_cn": "如果所有事情同时来，团队可能会手忙脚乱。",
@@ -8445,7 +8450,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10 19:00",
       "2026-09-17 18:00",
       "2026-09-18 08:00",
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-10-01 18:00"
     ]
   },
   {
@@ -8950,9 +8956,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-10-01 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -8963,7 +8969,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-19",
       "2026-09-20",
       "2026-09-21",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-01"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
@@ -8972,7 +8979,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-20 08:00",
       "2026-09-21 08:00",
       "2026-09-21 18:00",
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-10-01 18:00"
     ]
   },
   {
@@ -9259,16 +9267,16 @@ window.DAILY_VOCAB_DB = [
     "en": "intention; intent",
     "root": "niat",
     "root_cn": "打算；意图",
-    "example": "Saya punya niat baik untuk menyelesaikan masalah ini.",
-    "example_cn": "我是真心想把这个问题解决好。",
+    "example": "Saya punya niat menyelesaikan pekerjaan ini hari ini.",
+    "example_cn": "我打算今天完成这项工作。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9284,7 +9292,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-25 08:00",
       "2026-09-25 18:00",
       "2026-09-27 08:00",
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-10-01 18:00"
     ]
   },
   {
@@ -10654,16 +10663,16 @@ window.DAILY_VOCAB_DB = [
     "en": "show; indicate",
     "root": "tunjuk",
     "root_cn": "指；指出",
-    "example": "Data ini menunjukkan bahwa masih ada kendala.",
-    "example_cn": "这些数据显示仍然有困难。",
+    "example": "Data ini menunjukkan bahwa penjualan mulai naik.",
+    "example_cn": "这些数据显示销售开始上升。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-10-01 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -10675,7 +10684,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-24",
       "2026-09-25",
       "2026-09-26",
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-01"
     ],
     "lesson_occurrences": [
       "2026-09-17 08:00",
@@ -10685,7 +10695,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-24 08:00",
       "2026-09-25 08:00",
       "2026-09-26 18:00",
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-10-01 18:00"
     ]
   },
   {
@@ -12552,16 +12563,16 @@ window.DAILY_VOCAB_DB = [
     "en": "complain",
     "root": "keluh",
     "root_cn": "抱怨；叹息",
-    "example": "Jangan hanya mengeluh; kita cari solusinya.",
-    "example_cn": "不要只抱怨，我们来找解决办法。",
+    "example": "Dia sering mengeluh soal macet, tetapi tetap berangkat pagi.",
+    "example_cn": "他经常抱怨堵车，但还是早早出发。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -12576,7 +12587,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-23 08:00",
       "2026-09-27 18:00",
       "2026-09-28 18:00",
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-10-01 18:00"
     ]
   },
   {
@@ -15572,19 +15584,22 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "即使下雨，我还是去办公室。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-01 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-01 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-01"
     ],
     "lesson_occurrences": [
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-10-01 18:00"
     ]
   },
   {
@@ -15785,6 +15800,107 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-01 08:00"
+    ]
+  },
+  {
+    "word": "sesudah",
+    "cn": "在……之后",
+    "en": "after",
+    "root": "sudah",
+    "root_cn": "已经",
+    "example": "Sesudah makan siang, saya kembali ke kantor.",
+    "example_cn": "午饭后我回到办公室。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-01 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 18:00"
+    ]
+  },
+  {
+    "word": "awan",
+    "cn": "云",
+    "en": "cloud",
+    "root": "awan",
+    "root_cn": "云",
+    "example": "Awan gelap mulai terlihat sebelum hujan turun.",
+    "example_cn": "下雨前开始出现乌云。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-01 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 18:00"
+    ]
+  },
+  {
+    "word": "membunuh",
+    "cn": "杀死",
+    "en": "kill",
+    "root": "bunuh",
+    "root_cn": "杀死",
+    "example": "Pestisida itu bisa membunuh serangga jika digunakan sembarangan.",
+    "example_cn": "如果随意使用，那种杀虫剂可能会杀死昆虫。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-01 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 18:00"
+    ]
+  },
+  {
+    "word": "mengalir",
+    "cn": "流动",
+    "en": "flow",
+    "root": "alir",
+    "root_cn": "流；流动",
+    "example": "Air hujan mengalir ke selokan di depan rumah.",
+    "example_cn": "雨水流进房子前面的排水沟。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-01 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-01"
+    ],
+    "lesson_occurrences": [
+      "2026-10-01 18:00"
     ]
   }
 ];

@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-01",
-    "session": "pm",
-    "time": "18:00",
-    "day": 41
+    "date": "2026-10-02",
+    "session": "am",
+    "time": "08:00",
+    "day": 42
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-01T03:11:07.382Z",
-    "lesson_watermark": "2026-10-01 08:00",
+    "runtime_generated_at": "2026-10-01T11:20:29.926Z",
+    "lesson_watermark": "2026-10-01 18:00",
     "index_updated": "2026-10-01",
-    "runtime_hash": "1f31a67471ae223e52a6032aafa341337bc571afd6c5edbe7ae7a58f2d201e09",
-    "index_hash": "541c47226f865911bd096c81a689e7499c230168815443258fe6faefe3d0aa01",
+    "runtime_hash": "8d40c930ffced2903e2e164af6e6d72dde2f192a934e47434d2efe854cb74902",
+    "index_hash": "1cf9f05fa86b4f409da05f8e256cfcf44964297ce5048e049478e36af2fde7ec",
     "rules_hash": "a4b65072036f29bb3b55fdd5c56c551f407d8aed1d9353382e5cb28bc32d575f"
   },
   "schema": {
@@ -49,14 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "membunuh",
-        "杀死"
-      ],
-      [
-        "mengalir",
-        "流动"
-      ],
       [
         "sepenuhnya",
         "完全地"
@@ -531,10 +523,6 @@
       ]
     ],
     "new_fuzzy": [
-      [
-        "awan",
-        "云朵"
-      ],
       [
         "menempel",
         "粘贴 / 贴上"
@@ -1168,8 +1156,12 @@
         "沉默寡言"
       ],
       [
-        "sesudah",
-        "在……之后"
+        "saat",
+        "时刻；当……时候"
+      ],
+      [
+        "benci",
+        "讨厌；恨"
       ],
       [
         "siapkan",
@@ -2037,14 +2029,6 @@
     ],
     "oral": [
       [
-        "sesudah",
-        "通用",
-        "setelah",
-        "sudah",
-        241,
-        "fuzzy"
-      ],
-      [
         "siapkan",
         "通用",
         "siapin",
@@ -2071,46 +2055,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-09-24",
-      "session": "am",
-      "review_core": [
-        "menunjukkan",
-        "berkat",
-        "ngerepotin",
-        "mengizinkan",
-        "ngurus"
-      ],
-      "new_words": [
-        "melepaskan",
-        "memisahkan",
-        "tajam",
-        "mengangkat",
-        "berteriak",
-        "merayakan",
-        "batuk",
-        "berkunjung",
-        "balik",
-        "isi bensin"
-      ]
-    },
-    {
-      "date": "2026-09-24",
-      "session": "pm",
-      "review_core": [
-        "ngurus",
-        "perasaan",
-        "kecolongan",
-        "salah tingkah",
-        "mengatasi"
-      ],
-      "new_words": [
-        "ban bocor",
-        "wawancara",
-        "peluang",
-        "tepat waktu"
-      ]
-    },
     {
       "date": "2026-09-25",
       "session": "am",
@@ -2371,105 +2315,42 @@
         "menyembuhkan",
         "seandainya"
       ]
+    },
+    {
+      "date": "2026-10-01",
+      "session": "pm",
+      "review_core": [
+        "nyinggung",
+        "keberatan",
+        "kelabakan",
+        "ngirit",
+        "menunjukkan"
+      ],
+      "new_words": [
+        "sesudah",
+        "awan",
+        "membunuh",
+        "mengalir"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-09-30",
+    "date": "2026-10-01",
     "new_words": [
-      "mencret",
-      "kata sandi",
-      "agar",
-      "lezat"
+      "sesudah",
+      "awan",
+      "membunuh",
+      "mengalir"
     ],
     "review_core": [
-      "menyalin",
-      "seraya",
-      "kabur",
-      "menegaskan"
+      "nyinggung",
+      "keberatan",
+      "kelabakan",
+      "ngirit",
+      "menunjukkan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-01",
-    "vocab": [
-      [
-        "mundur",
-        "后退；倒退；落后",
-        "move backward; retreat; fall behind",
-        "mundur",
-        "后退；倒退"
-      ],
-      [
-        "biarpun",
-        "即使；尽管",
-        "even though; although",
-        "biar",
-        "让；即便"
-      ],
-      [
-        "haus",
-        "口渴",
-        "thirsty",
-        "haus",
-        "口渴"
-      ],
-      [
-        "meledak",
-        "爆炸；突然爆发",
-        "explode; burst",
-        "ledak",
-        "爆炸"
-      ],
-      [
-        "meletakkan",
-        "放置；把……放下",
-        "put; place",
-        "letak",
-        "位置；放置"
-      ],
-      [
-        "memeluk",
-        "拥抱",
-        "hug; embrace",
-        "peluk",
-        "抱；拥抱"
-      ],
-      [
-        "mengunduh",
-        "下载",
-        "download",
-        "unduh",
-        "下载"
-      ],
-      [
-        "menuduh",
-        "指控；指责",
-        "accuse",
-        "tuduh",
-        "指控；指责"
-      ],
-      [
-        "menyembuhkan",
-        "治愈；使恢复",
-        "cure; heal",
-        "sembuh",
-        "痊愈；恢复"
-      ],
-      [
-        "seandainya",
-        "假如；要是",
-        "if; supposing that",
-        "andai",
-        "假如；假设"
-      ]
-    ],
-    "review_vocab": [
-      "niat",
-      "mengeluh",
-      "memanggil",
-      "melawan",
-      "bebas"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
