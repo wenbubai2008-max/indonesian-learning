@@ -50,7 +50,7 @@ on:
   workflow_dispatch:
     inputs:
       generate_extensive_reading:
-        description: 'Run opt-in API-backed daily extensive reading'
+        description: 'Run opt-in Gemini Free Tier daily extensive reading'
         type: boolean
         default: false
 permissions:
@@ -536,23 +536,23 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
-      - name: Check API key configured
+      - name: Check Gemini Free Tier key configured
         id: key_check
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          if [ -n "$OPENAI_API_KEY" ]; then echo 'ready=true' >> "$GITHUB_OUTPUT"; else echo 'ready=false' >> "$GITHUB_OUTPUT"; fi
+          if [ -n "$GEMINI_API_KEY" ]; then echo 'ready=true' >> "$GITHUB_OUTPUT"; else echo 'ready=false' >> "$GITHUB_OUTPUT"; fi
       - name: Generate and publish today's verified reading
         if: steps.key_check.outputs.ready == 'true'
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_READING_MODEL: ${{ vars.OPENAI_READING_MODEL || 'gpt-4.1-mini' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_READING_MODEL: ${{ vars.GEMINI_READING_MODEL || 'gemini-2.5-flash-lite' }}
         run: bash .github/scripts/run-extensive-reading-release.sh
       - name: API key setup needed
         if: steps.key_check.outputs.ready != 'true'
-        run: echo 'Configure OPENAI_API_KEY repository secret before enabling EXTENSIVE_READING_AUTO_ENABLED.'
+        run: echo 'Configure GEMINI_API_KEY (unbilled Gemini API Free Tier) repository secret before enabling EXTENSIVE_READING_AUTO_ENABLED.'
 
   sync:
     if: github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || github.event.schedule != '0 5 * * *') && (github.event_name != 'workflow_dispatch' || inputs.generate_extensive_reading != true)
