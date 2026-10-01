@@ -116,6 +116,9 @@ jobs:
           # eligibility and two-file transaction are checked by check-release-pr.js below.
           baseline_guard_dir="${RUNNER_TEMP}/lesson-baseline-guard-${GITHUB_RUN_ID}"
           git worktree add --detach "$baseline_guard_dir" "${{ github.event.pull_request.base.sha }}"
+          # Apply the proposed guard logic to pinned baseline data. The old main guard
+          # still checks the obsolete cron and must not veto its own repair PR.
+          cp .github/scripts/regression-guard.js "$baseline_guard_dir/.github/scripts/regression-guard.js"
           (cd "$baseline_guard_dir" && node .github/scripts/regression-guard.js)
           git worktree remove --force "$baseline_guard_dir"
       - name: Rehearse actual V2 lesson and index write outside the repository
