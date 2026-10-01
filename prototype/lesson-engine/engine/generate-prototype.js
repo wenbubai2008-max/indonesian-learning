@@ -59,12 +59,21 @@ function candidateRows(ctx,band){
 function oralMap(ctx){
   return new Map((ctx.candidates?.oral||[]).map(x=>[norm(x[0]),{word:norm(x[0]),register:x[1],counterpart:x[2],root:x[3],rank:x[4],band:x[5]}]));
 }
+const GENERIC_SCENE_TAGS=new Set(['action','communication','description','daily','information','time','connector','movement','problem','feeling','plan','location']);
+function sceneFit(row,scene,M){
+  const tags=tagWord(row.word,row.cn,M);
+  let score=0;
+  for(const t of tags){
+    if(t===scene.domain)score+=6;
+    else if(scene.tags.includes(t))score+=GENERIC_SCENE_TAGS.has(t)?1:3;
+  }
+  return score;
+}
 function sceneScore(scene,rows,M,weights={}){
   let score=0;
   for(const r of rows){
-    const tags=tagWord(r.word,r.cn,M);
-    const overlap=tags.filter(t=>scene.tags.includes(t)).length;
-    if(overlap)score+=overlap*(weights[r.word]||1);
+    const fit=sceneFit(r,scene,M);
+    if(fit)score+=fit*(weights[r.word]||1);
   }
   return score;
 }
@@ -80,12 +89,12 @@ function chooseSeedScene(ctx,M){
   return pick((top.length?top:ranked).map(x=>x.scene),ctx.target.date+'-'+ctx.target.session+'-scene')||M.scenes.scenes[0];
 }
 function matchesScene(row,scene,M){
-  return tagWord(row.word,row.cn,M).some(t=>scene.tags.includes(t));
+  return sceneFit(row,scene,M)>0;
 }
 function orderForScene(rows,scene,M){
   return [...rows].sort((a,b)=>{
-    const am=matchesScene(a,scene,M)?1:0,bm=matchesScene(b,scene,M)?1:0;
-    return bm-am||a.index-b.index||a.word.localeCompare(b.word);
+    const af=sceneFit(a,scene,M),bf=sceneFit(b,scene,M);
+    return bf-af||a.index-b.index||a.word.localeCompare(b.word);
   });
 }
 
@@ -161,7 +170,7 @@ function selectReviews(ctx,scene,M,count){
   }
   const scored=rows.filter(r=>!blocked(r)).map(r=>{
     const ex=(exposures.get(r.word)||[]).length;
-    const sceneBonus=matchesScene(r,scene,M)?18:0;
+    const sceneBonus=sceneFit(r,scene,M)*5;
     const score=(focus.get(r.word)||0)*2+(r.priority===1?45:r.priority===2?20:5)+r.wrong*18+sceneBonus-ex*12;
     return {...r,ex,score,fresh:fresh(r)};
   }).sort((a,b)=>b.score-a.score||a.index-b.index);
@@ -227,7 +236,7 @@ function readingFor(scene,cards,M,key){
   pairs.push([scene.openings[oi],cn.openings[oi]]);
   const candidates=cards.filter(c=>{
     const tags=tagWord(c.word,c.cn,M);
-    return tags.some(t=>scene.tags.includes(t))&&c.example&&c.example_cn&&!/^(jangan|tolong|coba|biar)\b/i.test(c.example);
+    return sceneFit(c,scene,M)>=3&&c.example&&c.example_cn&&!/^(jangan|tolong|coba|biar)\b/i.test(c.example);
   }).slice(0,4).map(c=>[c.example,c.example_cn]);
   const moves=scene.moves.map((x,i)=>[x,cn.moves[i]]);
   const closei=hash(key+'close')%scene.closing.length,closing=[scene.closing[closei],cn.closing[closei]];
@@ -274,8 +283,13 @@ function orderQuestion(cards){
   return {type:'order',prompt:'按照中文排列印尼语：'+(c?.example_cn||'午饭后我们又开始工作。'),tokens:answer.trim().split(/\s+/),answer,answer_cn:c?.example_cn||'午饭后我们又开始工作。',explain:'按自然印尼语语序还原完整句子。'};
 }
 function outputFrame(scene,M){
-  const list=M.tasks.output_frames.filter(f=>f.tags.some(t=>scene.tags.includes(t)));
-  return pick(list.length?list:M.tasks.output_frames,scene.id)||M.tasks.output_frames[0];
+  const scored=M.tasks.output_frames.map(f=>({
+    frame:f,
+    score:f.tags.reduce((n,t)=>n+(t===scene.domain?6:scene.tags.includes(t)?(GENERIC_SCENE_TAGS.has(t)?1:3):0),0)
+  })).sort((a,b)=>b.score-a.score||a.frame.id.localeCompare(b.frame.id));
+  const best=scored[0]?.score||0;
+  const top=scored.filter(x=>x.score===best&&best>0).map(x=>x.frame);
+  return pick(top.length?top:M.tasks.output_frames,scene.id)||M.tasks.output_frames[0];
 }
 
 function generate(ctx){
@@ -344,4 +358,4 @@ if(require.main===module){
   const ctx=JSON.parse(fs.readFileSync(path.resolve(process.cwd(),input),'utf8'));
   process.stdout.write(JSON.stringify(generate(ctx),null,2)+'\n');
 }
-module.exports={generate,loadMaterials,loadDailyVocab,tagWord,selectNew,selectReviews,selectApplications,chooseSeedScene};
+module.exports={generate,loadMaterials,loadDailyVocab,tagWord,sceneFit,selectNew,selectReviews,selectApplications,chooseSeedScene};
