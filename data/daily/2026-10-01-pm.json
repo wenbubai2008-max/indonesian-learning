@@ -1,0 +1,322 @@
+{
+  "date": "2026-10-01",
+  "session": "pm",
+  "time": "18:00",
+  "day": 41,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜日常沟通：工作安排与临时状况",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "menempel",
+    "mencetak",
+    "taruh"
+  ],
+  "vocab": [
+    {
+      "word": "menempel",
+      "display": "menempel",
+      "audio_text": "menempel",
+      "cn": "粘着；贴上",
+      "en": "stick; attach",
+      "root": "tempel",
+      "root_cn": "贴；粘",
+      "formation": "meN- + tempel → menempel，表示贴上或粘在某处。",
+      "example": "Saya menempel catatan kecil di dekat meja kerja.",
+      "example_cn": "我在办公桌旁贴了一张小便条。",
+      "synonym_note": "menempel 强调贴住；memasang 更强调安装或放置到位。",
+      "usage_note": "常用：menempel stiker、menempel di dinding。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "mencetak",
+      "display": "mencetak",
+      "audio_text": "mencetak",
+      "cn": "打印；印刷",
+      "en": "print",
+      "root": "cetak",
+      "root_cn": "印；打印",
+      "formation": "meN- + cetak → mencetak，表示打印或印刷。",
+      "example": "Tolong mencetak dokumen ini sebelum rapat dimulai.",
+      "example_cn": "请在会议开始前把这份文件打印出来。",
+      "synonym_note": "mencetak 是标准印尼语；办公室口语也常直接说 print。",
+      "usage_note": "常用：mencetak dokumen。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "taruh",
+      "display": "taruh",
+      "audio_text": "taruh",
+      "cn": "放；放置",
+      "en": "put; place",
+      "root": "taruh",
+      "root_cn": "放；放置",
+      "formation": "非常常用的日常口语。",
+      "example": "Taruh paketnya di meja depan saja.",
+      "example_cn": "把包裹放在前面的桌子上就行。",
+      "synonym_note": "taruh 更口语；meletakkan 更标准、正式。",
+      "usage_note": "常用：taruh di sini、taruh dulu。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "menunjukkan",
+      "display": "menunjukkan",
+      "audio_text": "menunjukkan",
+      "cn": "指出；展示",
+      "en": "show; indicate",
+      "root": "tunjuk",
+      "root_cn": "指；指出",
+      "formation": "meN- + tunjuk + -kan，展示或指出。",
+      "example": "Dia menunjukkan bagian yang harus diperbaiki.",
+      "example_cn": "他指出了需要修改的部分。",
+      "synonym_note": "menunjukkan 是展示或指出；menjelaskan 更偏解释。",
+      "usage_note": "重点复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "cerewet",
+      "display": "cerewet",
+      "audio_text": "cerewet",
+      "cn": "话多；唠叨；挑剔",
+      "en": "talkative; fussy",
+      "root": "cerewet",
+      "root_cn": "话多；挑剔",
+      "formation": "形容人话多、挑剔或唠叨。",
+      "example": "Atasan saya agak cerewet soal format laporan.",
+      "example_cn": "我的上司对报告格式有点挑剔。",
+      "synonym_note": "cerewet 可指话多或挑剔；bawel 口语里也常表示唠叨。",
+      "usage_note": "重点复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "pembangunan",
+      "display": "pembangunan",
+      "audio_text": "pembangunan",
+      "cn": "建设；发展；建造过程",
+      "en": "development; construction",
+      "root": "bangun",
+      "root_cn": "建；起；醒",
+      "formation": "peN- + bangun + -an → pembangunan。",
+      "example": "Pembangunan gedung baru itu belum selesai.",
+      "example_cn": "那栋新楼的建设还没有完成。",
+      "synonym_note": "pembangunan 强调建设过程；bangunan 指建筑物。",
+      "usage_note": "重点复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "jomblo",
+      "display": "jomblo",
+      "audio_text": "jomblo",
+      "cn": "单身；没有对象",
+      "en": "single; unattached",
+      "root": "jomblo",
+      "root_cn": "单身",
+      "formation": "日常口语中表示没有恋爱对象。",
+      "example": "Dia masih jomblo dan belum ingin mencari pasangan.",
+      "example_cn": "他还是单身，目前还不想找对象。",
+      "synonym_note": "jomblo 很口语；lajang 更正式。",
+      "usage_note": "重点复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berarti",
+      "display": "berarti",
+      "audio_text": "berarti",
+      "cn": "意味着；也就是说",
+      "en": "mean; signify",
+      "root": "arti",
+      "root_cn": "意思；含义",
+      "formation": "ber- + arti → berarti。",
+      "example": "Kalau dia belum datang, berarti rapatnya belum mulai.",
+      "example_cn": "如果他还没来，也就是说会议还没开始。",
+      "synonym_note": "口语中经常直接说 Berarti kita tunggu dulu。",
+      "usage_note": "重点复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "biarpun",
+      "display": "biarpun",
+      "audio_text": "biarpun",
+      "cn": "即使；尽管",
+      "en": "even though; although",
+      "root": "biar",
+      "root_cn": "让；即便",
+      "formation": "常用结构 biarpun..., tetap...。",
+      "example": "Biarpun sibuk, saya tetap menyelesaikan pekerjaan ini.",
+      "example_cn": "即使很忙，我还是会完成这项工作。",
+      "synonym_note": "与 meskipun、walaupun 意思接近。",
+      "usage_note": "今天08:00已教；晚课 application 复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "meletakkan",
+      "display": "meletakkan",
+      "audio_text": "meletakkan",
+      "cn": "放置；把……放下",
+      "en": "put; place",
+      "root": "letak",
+      "root_cn": "位置；放置",
+      "formation": "me- + letak + -kan → meletakkan。",
+      "example": "Saya meletakkan dokumen yang sudah dicetak di atas meja.",
+      "example_cn": "我把已经打印好的文件放在桌子上。",
+      "synonym_note": "meletakkan 较标准；今晚新词 taruh 更口语。",
+      "usage_note": "今天08:00已教；晚课 application 复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sore ini kantor cukup sibuk karena besok ada rapat penting. Saya harus mencetak beberapa dokumen lalu menempel catatan pada map yang berbeda. Atasan menunjukkan bagian yang masih salah dan agak cerewet soal format. Biarpun pekerjaan bertambah, saya tetap menyelesaikannya satu per satu. Dokumen yang sudah selesai saya letakkan di meja depan. Teman saya berkata, “Taruh saja di sini.” Dari jendela terlihat pembangunan gedung baru di sebelah kantor. Seorang rekan bercanda soal temannya yang masih jomblo. Kami tertawa sebentar, lalu kembali bekerja. Kalau semua dokumen sudah siap, berarti kami bisa pulang tepat waktu.",
+    "cn": "今天傍晚办公室很忙，因为明天有一个重要会议。我需要打印几份文件，然后在不同的文件夹上贴便条。上司指出还有错误的地方，而且对格式有点挑剔。即使工作增加了，我还是一项一项完成。做好的文件我放在前面的桌子上。同事说：“就放这里吧。”从窗户能看到办公室旁边新楼的建设。一个同事拿仍然单身的朋友开玩笑。我们笑了一会儿，然后继续工作。如果所有文件都准备好了，就意味着我们可以准时下班。"
+  },
+  "dialogue": {
+    "title": "真实口语｜办公室临时准备",
+    "lines": [
+      {
+        "speaker": "A",
+        "id": "Dokumen ini sudah dicetak belum?",
+        "cn": "这份文件已经打印了吗？"
+      },
+      {
+        "speaker": "B",
+        "id": "Sudah. Aku juga sudah menempel catatan di bagian depan.",
+        "cn": "打印好了。我也已经在前面贴了便条。"
+      },
+      {
+        "speaker": "A",
+        "id": "Kalau begitu, taruh di meja saya saja.",
+        "cn": "那就放在我的桌子上吧。"
+      },
+      {
+        "speaker": "B",
+        "id": "Oke. Biarpun tadi banyak revisi, akhirnya selesai juga.",
+        "cn": "好。虽然刚才修改很多，最后还是完成了。"
+      },
+      {
+        "speaker": "A",
+        "id": "Berarti kita tinggal menunggu rapat besok.",
+        "cn": "也就是说我们只要等明天开会了。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "用 mencetak + menempel：我打印文件以后，把便条贴在文件夹上。",
+      "reference_answer": "Setelah mencetak dokumen, saya menempel catatan di map.",
+      "reference_cn": "我打印文件以后，把便条贴在文件夹上。"
+    },
+    {
+      "task": "用 biarpun + berarti：即使还有修改，也就是说我们仍要今天完成。",
+      "reference_answer": "Biarpun masih ada revisi, berarti kita tetap harus menyelesaikannya hari ini.",
+      "reference_cn": "即使还有修改，也就是说我们仍要今天完成。"
+    },
+    {
+      "task": "用 meletakkan 和 taruh 分别表达：把文件放在桌上。",
+      "reference_answer": "Saya meletakkan dokumen di atas meja. Taruh dokumennya di meja saja.",
+      "reference_cn": "我把文件放在桌上。把文件放桌上就行。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "哪个词最适合口语表达“把包裹放这里”？",
+        "options": [
+          "taruh",
+          "mencetak",
+          "berarti",
+          "jomblo"
+        ],
+        "answer_index": 0,
+        "answer": "taruh",
+        "explain": "taruh 是口语“放”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "“打印文件”应该使用哪个词？",
+        "options": [
+          "menempel",
+          "mencetak",
+          "menunjukkan",
+          "pembangunan"
+        ],
+        "answer_index": 1,
+        "answer": "mencetak",
+        "explain": "mencetak 表示打印。"
+      },
+      {
+        "type": "choice",
+        "prompt": "哪个词表示“建设、建造过程”？",
+        "options": [
+          "cerewet",
+          "berarti",
+          "pembangunan",
+          "meletakkan"
+        ],
+        "answer_index": 2,
+        "answer": "pembangunan",
+        "explain": "pembangunan 强调建设过程。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Saya _____ catatan di pintu.（贴上）",
+        "answer": "menempel",
+        "explain": "menempel 表示贴上。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kalau sudah selesai, _____ kita bisa pulang.（也就是说）",
+        "answer": "berarti",
+        "explain": "berarti 表示也就是说。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：即使很忙，我还是打印了那份文件。",
+        "tokens": [
+          "Biarpun",
+          "sibuk,",
+          "saya",
+          "tetap",
+          "mencetak",
+          "dokumen",
+          "itu."
+        ],
+        "answer": "Biarpun sibuk, saya tetap mencetak dokumen itu.",
+        "answer_cn": "即使很忙，我还是打印了那份文件。",
+        "explain": "biarpun..., tetap... 表示即使……仍然……。"
+      }
+    ],
+    "self_check": [
+      "3秒内说出 menempel、mencetak、taruh 的中文意思，并各造一个短句。",
+      "区分 taruh 与 meletakkan：前者更口语，后者更标准。",
+      "不看中文主动说出 menunjukkan、cerewet、pembangunan、jomblo、berarti 的意思。"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "连续说出3个新词：menempel、mencetak、taruh，并各说一个工作或生活场景。",
+      "复习 menunjukkan、cerewet、pembangunan、jomblo、berarti，任选两个造句。",
+      "最后用 biarpun + meletakkan 复述今天办公室准备文件的场景，并说明 taruh 与 meletakkan 的语体区别。"
+    ]
+  }
+}
