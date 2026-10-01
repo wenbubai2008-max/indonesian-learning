@@ -14,7 +14,7 @@ const read=p=>JSON.parse(fs.readFileSync(path.join(REPO,p),'utf8'));
 const norm=x=>String(x||'').trim().toLowerCase();
 const wc=x=>String(x||'').trim().split(/\s+/).filter(Boolean).length;
 const hasWord=(text,word)=>{
-  const escaped=String(word||'').replace(/[-\/\\^$*+?.()|[\]{}]/g,'\\$&').replace(/\s+/g,'\\s+');
+  const escaped=String(word||'').replace(/[\/\\^$*+?.()|[\]{}]/g,'\\$&').replace(/\s+/g,'\\s+');
   return !!escaped&&new RegExp('(^|[^\\p{L}])'+escaped+'(?=$|[^\\p{L}])','iu').test(String(text||''));
 };
 const dailySource=fs.readFileSync(path.join(REPO,'data/daily-vocab-data.js'),'utf8');
