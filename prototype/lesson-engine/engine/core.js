@@ -193,9 +193,10 @@
       if(ctx?.target?.session==='am'&&scene.id==='work-morning')score+=12;
       return {scene,score,covered};
     }).sort((a,b)=>b.covered-a.covered||b.score-a.score||a.scene.id.localeCompare(b.scene.id));
-    const best=ranked[0]?.covered||0;
-    const top=ranked.filter(x=>x.covered>=Math.max(1,best-1)&&x.score>ranked[0].score-45).slice(0,6);
-    return (top.length?top:ranked)[variant%(top.length||ranked.length)]?.scene||scenes[0];
+    const best=ranked[0];
+    const viable=ranked.filter(x=>x.covered>=Math.max(1,best.covered-2)&&x.score>=best.score-70&&x.score>0).slice(0,6);
+    const top=viable.length?viable:ranked.slice(0,1);
+    return top[((variant%top.length)+top.length)%top.length]?.scene||scenes[0];
   }
 
   function deriveCollocations(entry,word,env){
@@ -248,7 +249,7 @@
       root,root_cn:rootCn,formation:e.formation||d.formation||formationFor(k,root,lexicalSource,collocations),
       example:e.example||d.example||('Saya memakai kata '+k+' dalam kalimat sehari-hari.'),
       example_cn:e.example_cn||d.example_cn||('我在日常句子中使用 '+k+' 这个词。'),
-      synonym_note:e.synonym_note||d.synonym_note||M['lexical-rules']?.curated?.[k]?.spoken_note||e.note||d.usage_note||'注意结合语境与常见搭配使用。',
+      synonym_note:e.synonym_note||d.synonym_note||M['lexical-rules']?.curated?.[k]?.spoken_note||e.note||d.usage_note||('例句搭配：'+(collocations.length?collocations.join(' / '):k)+'；这里的意思是“'+cn+'”。'),
       is_oral_new:group==='new'&&oralMap(ctx).has(k),
       _collocations:collocations
     };
@@ -263,18 +264,16 @@
     return card;
   }
 
+  function hasExactWord(text,word){
+    const escaped=String(word||'').replace(/[-\/\\^$*+?.()|[\]{}]/g,'\\$&').replace(/\s+/g,'\\s+');
+    return !!escaped&&new RegExp('(^|[^\\p{L}])'+escaped+'(?=$|[^\\p{L}])','iu').test(String(text||''));
+  }
+
   function targetReadingCards(cards,scene,env,session){
-    const newCards=cards.filter(x=>x.group==='new'),review=cards.filter(x=>x.group==='review'),apps=cards.filter(x=>x.group==='application');
-    const usable=c=>c.example&&c.example_cn&&!/^(jangan|tolong|coba)\b/i.test(c.example);
-    const rank=xs=>[...xs].filter(usable).sort((a,b)=>sceneFit(b,scene,env)-sceneFit(a,scene,env));
-    if(session==='am'){
-      const ns=rank(newCards),rs=rank(review),chosen=[];
-      for(const x of ns.filter(x=>sceneFit(x,scene,env)>=2))if(chosen.length<8)chosen.push(x);
-      for(const x of ns)if(chosen.length<7&&!chosen.includes(x))chosen.push(x);
-      return [...chosen.slice(0,8),...rs.filter(x=>sceneFit(x,scene,env)>=1).slice(0,3)];
-    }
-    const ns=rank(newCards),others=rank([...review,...apps]);
-    return [...ns,...others.filter(x=>sceneFit(x,scene,env)>=1).slice(0,4)];
+    const news=cards.filter(x=>x.group==='new'),others=cards.filter(x=>x.group!=='new');
+    const usable=c=>c.example&&c.example_cn&&hasExactWord(c.example,c.word);
+    const rank=xs=>[...xs].filter(usable).sort((a,b)=>sceneFit(b,scene,env)-sceneFit(a,scene,env)||wc(a.example)-wc(b.example));
+    return [...rank(news),...rank(others)];
   }
 
   function semanticBucket(card,env,scene){
@@ -295,115 +294,98 @@
     return scene?.domain||'daily';
   }
 
-  function readingFor(scene,cards,env,key,session){
-    const cn=env.M['scene-cn'].scenes[scene.id],pairs=[];
-    const oi=hash(key+'open')%scene.openings.length;
-    pairs.push([scene.openings[oi],cn.openings[oi],'','scene']);
-
-    const allTargets=targetReadingCards(cards,scene,env,session);
-    const newTargets=allTargets.filter(c=>c.group==='new');
-    const supportTargets=allTargets.filter(c=>c.group!=='new');
-    const rankedNew=[...newTargets].sort((a,b)=>{
-      const fit=sceneFit(b,scene,env)-sceneFit(a,scene,env);
-      return fit||wc(a.example)-wc(b.example);
-    });
-    const selectedNew=session==='am'?rankedNew.slice(0,6):rankedNew;
-
-    const macro=b=>{
+  function readingFor(scene,cards,env,key,session,variant=0){
+    const cn=env.M['scene-cn'].scenes[scene.id],all=targetReadingCards(cards,scene,env,session);
+    const news=all.filter(c=>c.group==='new'),support=all.filter(c=>c.group!=='new');
+    const required=session==='am'?6:cards.filter(c=>c.group==='new').length;
+    if(news.length<required)throw Error('MATERIAL_EXAMPLE_TARGET_MISSING: need '+required+' exact new-word examples; found '+news.length);
+    const rotated=[...news.slice(variant%news.length),...news.slice(0,variant%news.length)];
+    const chosen=session==='am'?rotated.slice(0,6):rotated;
+    const macro=c=>{
+      const b=semanticBucket(c,env,scene);
       if(['work','digital','shopping','finance','home','daily'].includes(b))return 'activity';
       if(['transport','nature','incident'].includes(b))return 'outside';
       return 'personal';
     };
-    const groupCards=list=>{
-      const groups=new Map();
-      for(const c of list){
-        const b=macro(semanticBucket(c,env,scene));
-        if(!groups.has(b))groups.set(b,[]);
-        groups.get(b).push(c);
-      }
-      return groups;
+    const groups=new Map();
+    for(const c of chosen){const tag=macro(c);if(!groups.has(tag))groups.set(tag,[]);groups.get(tag).push(c)}
+    const multi=groups.size>1,oi=hash(key+'open')%scene.openings.length;
+    // Mixed-topic examples are explicitly presented as daily notes, not one invented story.
+    const opener=multi
+      ?['Hari ini saya mencatat beberapa kejadian berbeda dari orang-orang di sekitar saya.','今天我记下了身边发生的几件不同的小事。']
+      :[scene.openings[oi],cn.openings[oi]];
+    const ci=hash(key+'close')%scene.closing.length,closing=[scene.closing[ci],cn.closing[ci]];
+    const pairs=[[...opener,'','scene']];
+    const entry=c=>{
+      const request=/^(tolong|jangan|coba)\b/i.test(c.example);
+      return request
+        ?['Saya juga mendengar seseorang berkata, "'+c.example+'"','我还听见有人说：“'+c.example_cn+'”',c.word,c.group]
+        :[c.example,c.example_cn,c.word,c.group];
     };
-
-    const newGroups=groupCards(selectedNew);
-    const primaryRaw=semanticBucket(selectedNew[0]||{word:'',cn:'',example:''},env,scene);
-    const primary=macro(primaryRaw),order=[primary,'activity','outside','personal'];
-    const used=new Set(),orderedNew=[];
-    for(const b of order)if(newGroups.has(b)&&!used.has(b)){orderedNew.push([b,newGroups.get(b)]);used.add(b)}
-    for(const [b,xs] of newGroups)if(!used.has(b))orderedNew.push([b,xs]);
-
-    const seenMacros=new Set();
-    for(let gi=0;gi<orderedNew.length;gi++){
-      const [bucket,xs]=orderedNew[gi],bridge=env.M.language.reading_macro_transitions?.[bucket];
-      if(gi>0&&bridge)pairs.push([bridge.id,bridge.cn,'','bridge']);
-      seenMacros.add(bucket);
-      for(const c of xs){
-        const projected=wc(pairs.map(x=>x[0]).join(' '))+wc(c.example);
-        if(projected<=116)pairs.push([c.example,c.example_cn,c.word,c.group]);
-      }
+    const groupsContent=[...groups.entries()].map(([tag,items])=>({
+      tag,lines:items.map(entry),
+      bridge:tag==='outside'
+        ?['Di luar kegiatan utama, ada kabar lain.','除了手头的事情，外面还有别的消息。']
+        :tag==='personal'
+          ?['Saya juga sempat mendengar cerita orang lain.','我还听到了其他人的一些事情。']
+          :['Ada pula beberapa urusan sehari-hari yang saya catat.','我也记下了几件日常事务。']
+    }));
+    const mandatory=wc(opener[0])+wc(closing[0])+groupsContent.reduce((n,g)=>n+g.lines.reduce((m,l)=>m+wc(l[0]),0),0);
+    if(mandatory>120)throw Error('READING_TARGET_BUDGET: '+mandatory+' words before transitions');
+    const bridgeBudget=Math.min(2,Math.max(0,Math.floor((116-mandatory)/9)));
+    for(let i=0;i<groupsContent.length;i++){
+      const g=groupsContent[i];if(i>0&&i<=bridgeBudget)pairs.push([...g.bridge,'','bridge']);pairs.push(...g.lines);
     }
-
-    const support=[...supportTargets].sort((a,b)=>{
-      const am=seenMacros.has(macro(semanticBucket(a,env,scene)))?1:0;
-      const bm=seenMacros.has(macro(semanticBucket(b,env,scene)))?1:0;
-      return bm-am||sceneFit(b,scene,env)-sceneFit(a,scene,env)||wc(a.example)-wc(b.example);
-    }).slice(0,session==='am'?2:3);
-    for(const c of support){
-      const bucket=macro(semanticBucket(c,env,scene));
-      const bridge=env.M.language.reading_macro_transitions?.[bucket];
-      const needBridge=!seenMacros.has(bucket)&&bridge;
-      const extra=(needBridge?wc(bridge.id):0)+wc(c.example);
-      if(wc(pairs.map(x=>x[0]).join(' '))+extra<=110){
-        if(needBridge){pairs.push([bridge.id,bridge.cn,'','bridge']);seenMacros.add(bucket)}
-        pairs.push([c.example,c.example_cn,c.word,c.group]);
-      }
+    const length=()=>wc(pairs.map(x=>x[0]).join(' '));
+    for(const c of support.filter(x=>macro(x)===macro(chosen[0])).slice(0,2)){
+      const p=entry(c);if(length()+wc(p[0])+wc(closing[0])<=110)pairs.push(p);
     }
-
-    let mi=0;
-    while(wc(pairs.map(x=>x[0]).join(' '))<82&&mi<scene.moves.length){
-      pairs.push([scene.moves[mi],cn.moves[mi],'','scene']);mi++;
+    let move=hash(key+'move')%Math.max(scene.moves.length,1),tried=0;
+    while(length()+wc(closing[0])<80&&tried<scene.moves.length){
+      const j=move++%scene.moves.length,p=[scene.moves[j],cn.moves[j],'','scene'];
+      if(length()+wc(p[0])+wc(closing[0])<=119)pairs.push(p);tried++;
     }
-    const ci=hash(key+'close')%scene.closing.length;
-    pairs.push([scene.closing[ci],cn.closing[ci],'','scene']);
-    while(wc(pairs.map(x=>x[0]).join(' '))>120&&pairs.length>5){
-      const candidate=[...pairs].map((x,i)=>[x,i]).reverse().find(([x])=>x[3]!=='new'&&x[3]!=='scene');
-      if(!candidate)break;
-      pairs.splice(candidate[1],1);
-    }
+    if(length()+wc(closing[0])<=120)pairs.push([...closing,'','scene']);
     const text=pairs.map(x=>x[0]).join(' '),translation=pairs.map(x=>x[1]).join(' ');
-    const included=cards.filter(c=>norm(text).includes(norm(c.word))).map(c=>({word:c.word,group:c.group}));
-    return {text,cn:translation,_coverage:included};
+    const coverage=cards.filter(c=>hasExactWord(text,c.word)).map(c=>({word:c.word,group:c.group}));
+    const actual=coverage.filter(c=>c.group==='new').length;
+    if(actual<required)throw Error('READING_EXACT_COVERAGE: '+actual+'/'+required);
+    if(wc(text)<80||wc(text)>120)throw Error('READING_WORD_COUNT: '+wc(text));
+    return {text,cn:translation,_coverage:coverage,_review_required:multi};
   }
 
   function dialogueFor(scene,cards,env,key){
-    const newCards=cards.filter(x=>x.group==='new'&&x.example),others=cards.filter(x=>x.group!=='new'&&x.example);
-    const bucketCounts=new Map();
-    for(const c of newCards){
-      const b=semanticBucket(c,env,scene);bucketCounts.set(b,(bucketCounts.get(b)||0)+1);
-    }
-    const bucket=[...bucketCounts.entries()].sort((a,b)=>b[1]-a[1])[0]?.[0]||(scene.domain==='weather'?'nature':scene.domain)||'daily';
-    const score=c=>{
-      const b=semanticBucket(c,env,scene);let x=b===bucket?10:0;
-      const ex=norm(c.example);
-      if(bucket==='nature'&&/\b(hujan|awan|air|cuaca)\b/.test(ex))x+=6;
-      if(bucket==='work'&&/\b(kantor|rapat|pekerjaan|tim)\b/.test(ex))x+=6;
-      if(bucket==='digital'&&/\b(akun|ponsel|file|dokumen|internet)\b/.test(ex))x+=6;
-      return x;
+    const news=cards.filter(x=>x.group==='new'&&hasExactWord(x.example,x.word));
+    const others=cards.filter(x=>x.group!=='new'&&hasExactWord(x.example,x.word));
+    if(news.length<2)throw Error('DIALOGUE_NEW_EXAMPLE_INSUFFICIENT');
+    const bucket=semanticBucket(news[0],env,scene);
+    const score=c=>(semanticBucket(c,env,scene)===bucket?12:0)+sceneFit(c,scene,env);
+    const targets=[...news].sort((a,b)=>score(b)-score(a)).slice(0,2);
+    const third=[...others].sort((a,b)=>score(b)-score(a))[0];if(third)targets.push(third);
+    const ask=(c,i)=>{
+      const s=c.example,b=semanticBucket(c,env,scene),imperative=/^(tolong|jangan|coba)\b/i.test(s);
+      let q;
+      if(imperative)q=['Aku perlu bantu apa?','我需要帮什么忙？'];
+      else if(/\b(kata sandi|akun|ponsel|password)\b/i.test(s))q=['Ada masalah apa dengan akun atau ponselnya?','账号或手机出了什么问题？'];
+      else if(/\b(awan|hujan|cuaca|becek)\b/i.test(s))q=['Bagaimana kondisi di luar?','外面的情况怎么样？'];
+      else if(/\b(stiker|tempel|nempel)\b/i.test(s))q=['Ada apa dengan stikernya?','那个贴纸怎么了？'];
+      else if(/\b(tim|pertandingan|kalah)\b/i.test(s))q=['Bagaimana kabar timmu?','你们队怎么样？'];
+      else if(/\b(dokumen|laporan|rapat|kerjaan|pekerjaan|data|kantor)\b/i.test(s))q=['Ada kabar apa soal pekerjaan?','工作上有什么新情况？'];
+      else if(/\b(ibu|anak|teman|keluarga|dia|beliau|mereka)\b/i.test(s))q=['Bagaimana keadaan orang-orang itu?','他们怎么样了？'];
+      else if(/^Saya\b/i.test(s))q=['Tadi kamu mengalami apa?','你刚才遇到什么事了？'];
+      else if(b==='nature')q=['Bagaimana kondisi di sekitar sana?','那附近的情况如何？'];
+      else q=['Kamu juga mendengar kabar apa lagi?','你还听到了什么其他消息？'];
+      if(i>0&&semanticBucket(targets[i-1],env,scene)!==b)
+        q=['Ngomong-ngomong, '+q[0].charAt(0).toLowerCase()+q[0].slice(1),'换个话题，'+q[1]];
+      return q;
     };
-    const targets=[...newCards].sort((a,b)=>score(b)-score(a)).slice(0,2);
-    const rest=[...others,...newCards.filter(x=>!targets.includes(x))].sort((a,b)=>score(b)-score(a));
-    if(rest[0])targets.push(rest[0]);
-    const prompts=env.M.language.dialogue_scene_prompts?.[bucket]||env.M.language.dialogue_scene_prompts?.daily||[];
-    const lines=[];let speaker='A';
-    for(let i=0;i<3;i++){
-      const p=prompts[i]||['Terus setelah itu bagaimana?','然后怎么样？'];
-      lines.push({speaker,id:p[0],cn:p[1]});speaker='B';
-      const c=targets[i];
-      if(c)lines.push({speaker,id:c.example,cn:c.example_cn});
-      else lines.push({speaker,id:'Oke, sekarang sudah lebih jelas.',cn:'好，现在清楚多了。'});
-      speaker='A';
+    const lines=[];
+    for(let i=0;i<targets.length;i++){
+      const q=ask(targets[i],i),c=targets[i];
+      lines.push({speaker:'A',id:q[0],cn:q[1]},{speaker:'B',id:c.example,cn:c.example_cn});
     }
-    const joined=norm(lines.map(x=>x.id).join(' '));
-    const coverage=cards.filter(c=>joined.includes(norm(c.word))).map(c=>({word:c.word,group:c.group}));
+    const joined=lines.map(x=>x.id).join(' ');
+    const coverage=cards.filter(c=>hasExactWord(joined,c.word)).map(c=>({word:c.word,group:c.group}));
     return {title:'真实口语｜'+scene.title,lines,_coverage:coverage};
   }
 
@@ -426,10 +408,18 @@
 
   function generate(ctx,bundle,dailyRows=[],opts={}){
     const variant=Number(opts.variant)||0,env=prepare(bundle,dailyRows);
+    if(!ctx?.target||!['am','pm'].includes(ctx.target.session))throw Error('LESSON_CONTEXT_INVALID');
+    const minNew=ctx.target.session==='am'?10:3;
+    const D=ctx.candidates?.new_dont||[],F=ctx.candidates?.new_fuzzy||[];
+    if(D.length+F.length<minNew)throw Error('LESSON_NEW_POOL_INSUFFICIENT: need '+minNew+'; found '+(D.length+F.length));
     const newRows=selectNew(ctx,variant);
+    if(newRows.length<minNew)throw Error('LESSON_NEW_SELECTION_INSUFFICIENT: '+newRows.length+'/'+minNew);
     const plan=ctx.target.session==='pm'?pmCorePlan(ctx,newRows.length):{total:15,reviews:5,apps:0,pressure:0};
     const reviews=selectReviews(ctx,ctx.target.session==='am'?5:plan.reviews);
+    if(reviews.length<4)throw Error('LESSON_REVIEW_POOL_INSUFFICIENT: '+reviews.length);
     const apps=selectApplications(ctx,reviews,plan.apps);
+    if(ctx.target.session==='pm'&&!ctx.same_day_am)throw Error('LESSON_PM_REQUIRES_AM_CONTEXT');
+    if(ctx.target.session==='pm'&&apps.length<2)throw Error('LESSON_APPLICATION_POOL_INSUFFICIENT: '+apps.length);
     const preCards=[
       ...newRows.map(x=>({...x,group:'new'})),
       ...reviews.map(x=>({...x,group:'review'})),
@@ -440,11 +430,11 @@
     const reviewCards=reviews.map(x=>({...buildCard(x,'review',ctx,env),group:'review'}));
     const appCards=apps.map(x=>({...buildCard(x,'application',ctx,env),group:'application'}));
     const cards=[...newCards,...reviewCards,...appCards],key=ctx.target.date+'-'+ctx.target.session+'-'+variant+'-'+newRows.map(x=>x.word).join('|');
-    const reading=readingFor(scene,cards,env,key,ctx.target.session),time=ctx.target.session==='am'?'08:00':'18:00';
+    const reading=readingFor(scene,cards,env,key,ctx.target.session,variant),time=ctx.target.session==='am'?'08:00':'18:00';
     const base={date:ctx.target.date,session:ctx.target.session,time,day:ctx.target.day,level:'A2+ → B1',duration_minutes:30,
       title:time+' '+(ctx.target.session==='am'?'早课':'晚课')+'｜'+scene.title,
-      _prototype:{engine_version:2,scene_id:scene.id,deterministic:true,production_write:false,variant,core_plan:plan,reading_coverage:reading._coverage}};
-    delete reading._coverage;
+      _prototype:{engine_version:2,scene_id:scene.id,deterministic:true,production_write:false,variant,core_plan:plan,reading_coverage:reading._coverage,reading_review_required:reading._review_required}};
+    delete reading._coverage;delete reading._review_required;
 
     if(ctx.target.session==='am'){
       const pool=cards.map(x=>x.word),r=reviewCards[0],n1=newCards[0],n2=newCards[1]||n1;
