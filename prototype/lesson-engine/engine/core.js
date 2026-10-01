@@ -298,38 +298,63 @@
     const cn=env.M['scene-cn'].scenes[scene.id],pairs=[];
     const oi=hash(key+'open')%scene.openings.length;
     pairs.push([scene.openings[oi],cn.openings[oi],'','scene']);
-    const targets=targetReadingCards(cards,scene,env,session);
-    const buckets=new Map();
-    for(const c of targets){
-      const b=semanticBucket(c,env,scene);
-      if(!buckets.has(b))buckets.set(b,[]);
-      buckets.get(b).push(c);
+
+    const allTargets=targetReadingCards(cards,scene,env,session);
+    const newTargets=allTargets.filter(c=>c.group==='new');
+    const supportTargets=allTargets.filter(c=>c.group!=='new');
+    const selectedNew=session==='am'?newTargets.slice(0,6):newTargets;
+    const macro=b=>{
+      if(['work','digital','shopping','finance','home','daily'].includes(b))return 'activity';
+      if(['transport','nature','incident'].includes(b))return 'outside';
+      return 'personal';
+    };
+    const newMacros=new Set(selectedNew.map(c=>macro(semanticBucket(c,env,scene))));
+    const support=[...supportTargets].sort((a,b)=>{
+      const am=newMacros.has(macro(semanticBucket(a,env,scene)))?1:0;
+      const bm=newMacros.has(macro(semanticBucket(b,env,scene)))?1:0;
+      return bm-am||sceneFit(b,scene,env)-sceneFit(a,scene,env);
+    }).slice(0,session==='am'?2:3);
+
+    const selected=[...selectedNew,...support];
+    const groups=new Map();
+    for(const c of selected){
+      const b=macro(semanticBucket(c,env,scene));
+      if(!groups.has(b))groups.set(b,[]);
+      groups.get(b).push(c);
     }
-    const primary=(scene.domain==='weather'?'nature':scene.domain),order=[primary,'transport','work','digital','shopping','finance','food','health','social','nature','incident','home','daily'];
+
+    const primaryRaw=semanticBucket(selectedNew[0]||selected[0]||{word:'',cn:'',example:''},env,scene);
+    const primary=macro(primaryRaw),order=[primary,'activity','outside','personal'];
     const used=new Set(),ordered=[];
-    for(const b of order)if(buckets.has(b)&&!used.has(b)){ordered.push([b,buckets.get(b)]);used.add(b)}
-    for(const [b,xs] of buckets)if(!used.has(b))ordered.push([b,xs]);
+    for(const b of order)if(groups.has(b)&&!used.has(b)){ordered.push([b,groups.get(b)]);used.add(b)}
+    for(const [b,xs] of groups)if(!used.has(b))ordered.push([b,xs]);
 
     for(let gi=0;gi<ordered.length;gi++){
-      const [bucket,xs]=ordered[gi],bridge=env.M.language.reading_transitions?.[bucket]||env.M.language.reading_transitions?.daily;
+      const [bucket,xs]=ordered[gi],bridge=env.M.language.reading_macro_transitions?.[bucket];
       if(gi>0&&bridge)pairs.push([bridge.id,bridge.cn,'','bridge']);
-      for(const c of xs){
-        if(wc(pairs.map(x=>x[0]).join(' '))+wc(c.example)>111)break;
+      const orderedCards=[...xs].sort((a,b)=>Number(b.group==='new')-Number(a.group==='new'));
+      for(const c of orderedCards){
+        const projected=wc(pairs.map(x=>x[0]).join(' '))+wc(c.example);
+        if(projected>111&&c.group!=='new')continue;
+        if(projected>116)continue;
         pairs.push([c.example,c.example_cn,c.word,c.group]);
       }
     }
+
     let mi=0;
     while(wc(pairs.map(x=>x[0]).join(' '))<82&&mi<scene.moves.length){
       pairs.push([scene.moves[mi],cn.moves[mi],'','scene']);mi++;
     }
     const ci=hash(key+'close')%scene.closing.length;
     pairs.push([scene.closing[ci],cn.closing[ci],'','scene']);
-    while(wc(pairs.map(x=>x[0]).join(' '))>120&&pairs.length>5)pairs.splice(-2,1);
+    while(wc(pairs.map(x=>x[0]).join(' '))>120&&pairs.length>5){
+      const idx=[...pairs].map((x,i)=>[x,i]).reverse().find(([x])=>x[3]!=='new'&&x[3]!=='scene')?.[1]??-2;
+      pairs.splice(idx,1);
+    }
     const text=pairs.map(x=>x[0]).join(' '),translation=pairs.map(x=>x[1]).join(' ');
     const included=cards.filter(c=>norm(text).includes(norm(c.word))).map(c=>({word:c.word,group:c.group}));
     return {text,cn:translation,_coverage:included};
   }
-
 
   function dialogueFor(scene,cards,env,key){
     const newCards=cards.filter(x=>x.group==='new'&&x.example),others=cards.filter(x=>x.group!=='new'&&x.example);
