@@ -178,9 +178,10 @@ function selectApplications(ctx,scene,M,reviews,count=2){
   if(ctx.target.session!=='pm')return [];
   const used=new Set(reviews.map(x=>x.word));
   const amMeta=new Map((ctx.same_day_am?.vocab||[]).map(x=>[norm(x[0]),x]));
+  const amSeen=new Set([...amMeta.keys(),...(ctx.same_day_am?.review_vocab||[]).map(norm)]);
   const rows=(ctx.candidates?.review||[]).map((x,i)=>{
     const a=amMeta.get(norm(x[0]));
-    return {word:norm(x[0]),cn:a?.[1]||x[5]||'',en:a?.[2]||'',root:a?.[3]||x[6]||'',root_cn:a?.[4]||x[7]||'',index:i,same_day_am:!!a};
+    return {word:norm(x[0]),cn:a?.[1]||x[5]||'',en:a?.[2]||'',root:a?.[3]||x[6]||'',root_cn:a?.[4]||x[7]||'',index:i,same_day_am:amSeen.has(norm(x[0]))};
   }).filter(x=>!used.has(x.word));
   const same=orderForScene(rows.filter(x=>x.same_day_am),scene,M);
   const other=orderForScene(rows.filter(x=>!x.same_day_am),scene,M);
@@ -209,7 +210,7 @@ function buildCard(row,group,ctx,M,daily,oral){
     is_oral_new:isNew&&oral.has(k)
   };
   if(ctx.target.session==='pm'){
-    const sameDayAm=new Set((ctx.same_day_am?.vocab||[]).map(x=>norm(x[0])));
+    const sameDayAm=new Set([...(ctx.same_day_am?.vocab||[]).map(x=>norm(x[0])),...(ctx.same_day_am?.review_vocab||[]).map(norm)]);
     card.usage_note=group==='application'
       ?(sameDayAm.has(k)?'今天08:00已教；晚课作为 application 主动复现。':'已正式学习；晚课作为 application 主动复现。')
       :group==='review'?'已正式学习；本晚课进行主动复习。'
@@ -320,7 +321,7 @@ function generate(ctx){
   const rewrite=[];
   for(const c of newCards.slice(0,2))rewrite.push({task:'中译印：'+c.example_cn+'（使用 '+c.word+'）',reference_answer:c.example,reference_cn:c.example_cn});
   if(appCards[0]){
-    const amSet=new Set((ctx.same_day_am?.vocab||[]).map(x=>norm(x[0])));
+    const amSet=new Set([...(ctx.same_day_am?.vocab||[]).map(x=>norm(x[0])),...(ctx.same_day_am?.review_vocab||[]).map(norm)]);
     rewrite.push({task:(amSet.has(appCards[0].word)?'主动复现今天08:00词 ':'主动复现已学词 ')+appCards[0].word+'：'+appCards[0].example_cn,reference_answer:appCards[0].example,reference_cn:appCards[0].example_cn});
   }
   if(reviewCards[0])rewrite.push({task:'复习输出：'+reviewCards[0].example_cn+'（使用 '+reviewCards[0].word+'）',reference_answer:reviewCards[0].example,reference_cn:reviewCards[0].example_cn});
