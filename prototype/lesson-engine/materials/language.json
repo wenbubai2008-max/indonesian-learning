@@ -701,5 +701,237 @@
     "Do not translate Chinese word order literally.",
     "Do not make every dialogue line a textbook-complete sentence; short natural replies are allowed.",
     "Do not use slang that the learner has never seen merely to sound local."
-  ]
+  ],
+  "reading_transitions": {
+    "work": {
+      "id": "Setelah itu, saya melanjutkan beberapa urusan di kantor.",
+      "cn": "之后，我继续处理办公室里的几件事。"
+    },
+    "digital": {
+      "id": "Di kantor, ada juga beberapa hal kecil yang harus diselesaikan lewat ponsel atau komputer.",
+      "cn": "在办公室里，还有几件需要通过手机或电脑处理的小事。"
+    },
+    "transport": {
+      "id": "Di perjalanan, ada kejadian kecil yang membuat saya harus lebih berhati-hati.",
+      "cn": "路上发生了一件小事，让我不得不更加小心。"
+    },
+    "health": {
+      "id": "Saat istirahat, saya mulai memperhatikan kondisi badan.",
+      "cn": "休息时，我开始注意自己的身体状况。"
+    },
+    "food": {
+      "id": "Menjelang waktu makan, saya juga memikirkan makanan yang paling cocok.",
+      "cn": "快到吃饭时间时，我也开始考虑吃什么更合适。"
+    },
+    "social": {
+      "id": "Di sekitar saya, ada beberapa orang yang sedang menjalani urusan mereka sendiri.",
+      "cn": "我周围也有几个人正在处理各自的事情。"
+    },
+    "home": {
+      "id": "Sesampainya di rumah, saya masih punya beberapa hal kecil untuk dibereskan.",
+      "cn": "到家以后，我还有几件小事要收拾。"
+    },
+    "shopping": {
+      "id": "Saya juga sempat mampir untuk membeli beberapa kebutuhan.",
+      "cn": "我还顺路去买了几样需要的东西。"
+    },
+    "finance": {
+      "id": "Ada satu urusan pembayaran yang juga perlu saya periksa.",
+      "cn": "还有一笔付款需要我检查。"
+    },
+    "nature": {
+      "id": "Sementara itu, keadaan di luar mulai berubah.",
+      "cn": "与此同时，外面的情况开始发生变化。"
+    },
+    "weather": {
+      "id": "Cuaca kemudian berubah dan saya memperhatikan keadaan di luar.",
+      "cn": "随后天气发生变化，我开始注意外面的情况。"
+    },
+    "incident": {
+      "id": "Di tengah kegiatan itu, terjadi sebuah kejadian yang tidak terduga.",
+      "cn": "就在这些事情进行时，发生了一件意外的小事。"
+    },
+    "law": {
+      "id": "Masalah itu juga membuat orang-orang lebih berhati-hati terhadap aturan.",
+      "cn": "这件事也让大家更加注意相关规定。"
+    },
+    "relationship": {
+      "id": "Setelah suasana lebih tenang, saya sempat berbicara dengan orang terdekat.",
+      "cn": "气氛平静下来后，我和身边的人聊了一会儿。"
+    },
+    "daily": {
+      "id": "Hari itu ada beberapa hal kecil yang terjadi satu demi satu.",
+      "cn": "那天有几件小事一件接一件发生。"
+    }
+  },
+  "dialogue_scene_prompts": {
+    "work": [
+      [
+        "Tadi di kantor ada apa?",
+        "刚才办公室发生什么了？"
+      ],
+      [
+        "Terus kamu lakukan apa?",
+        "然后你做了什么？"
+      ],
+      [
+        "Sekarang urusannya sudah lebih jelas?",
+        "现在事情清楚一些了吗？"
+      ]
+    ],
+    "digital": [
+      [
+        "Masalahnya ada di ponsel atau akun?",
+        "问题是在手机还是账号？"
+      ],
+      [
+        "Kamu sudah coba cek lagi?",
+        "你已经重新检查过了吗？"
+      ],
+      [
+        "Sekarang sudah bisa dipakai?",
+        "现在已经能用了吗？"
+      ]
+    ],
+    "transport": [
+      [
+        "Tadi di jalan ada apa?",
+        "刚才路上发生什么了？"
+      ],
+      [
+        "Terus kondisinya bagaimana?",
+        "然后情况怎么样？"
+      ],
+      [
+        "Akhirnya kamu tetap lanjut?",
+        "最后你还是继续走了吗？"
+      ]
+    ],
+    "health": [
+      [
+        "Sejak kapan kamu merasa kurang enak badan?",
+        "你从什么时候开始觉得不舒服？"
+      ],
+      [
+        "Terus kamu lakukan apa?",
+        "然后你怎么处理的？"
+      ],
+      [
+        "Sekarang sudah agak membaik?",
+        "现在好一点了吗？"
+      ]
+    ],
+    "food": [
+      [
+        "Kamu tadi makan apa?",
+        "你刚才吃了什么？"
+      ],
+      [
+        "Rasanya bagaimana?",
+        "味道怎么样？"
+      ],
+      [
+        "Kalau besok, kamu mau pesan lagi?",
+        "如果明天，你还会再点吗？"
+      ]
+    ],
+    "social": [
+      [
+        "Tadi kalian ngobrol soal apa?",
+        "刚才你们聊什么了？"
+      ],
+      [
+        "Terus dia bilang apa?",
+        "然后他说什么？"
+      ],
+      [
+        "Sekarang suasananya sudah lebih enak?",
+        "现在气氛好一点了吗？"
+      ]
+    ],
+    "nature": [
+      [
+        "Kondisi di luar sekarang bagaimana?",
+        "现在外面的情况怎么样？"
+      ],
+      [
+        "Kalau hujan turun, biasanya terjadi apa?",
+        "如果下雨，通常会发生什么？"
+      ],
+      [
+        "Kalau begitu, rencanamu tetap jalan?",
+        "那样的话，你的计划还继续吗？"
+      ]
+    ],
+    "weather": [
+      [
+        "Cuacanya kelihatan berubah. Kamu lihat apa?",
+        "天气看起来变了，你看到什么？"
+      ],
+      [
+        "Kalau hujan turun, kondisi di luar biasanya bagaimana?",
+        "如果下雨，外面通常会怎么样？"
+      ],
+      [
+        "Kalau begitu, kamu tetap mau pergi?",
+        "那样的话，你还打算去吗？"
+      ]
+    ],
+    "shopping": [
+      [
+        "Tadi kamu beli apa?",
+        "你刚才买了什么？"
+      ],
+      [
+        "Ada masalah dengan barangnya?",
+        "商品有什么问题吗？"
+      ],
+      [
+        "Akhirnya kamu pilih yang mana?",
+        "最后你选了哪个？"
+      ]
+    ],
+    "home": [
+      [
+        "Di rumah tadi ada apa?",
+        "刚才家里发生什么了？"
+      ],
+      [
+        "Terus kamu bereskan bagaimana?",
+        "然后你怎么处理的？"
+      ],
+      [
+        "Sekarang sudah lebih nyaman?",
+        "现在舒服一些了吗？"
+      ]
+    ],
+    "incident": [
+      [
+        "Tadi sebenarnya terjadi apa?",
+        "刚才到底发生什么了？"
+      ],
+      [
+        "Terus orang-orang di sana bagaimana?",
+        "然后那里的人怎么样？"
+      ],
+      [
+        "Akhirnya situasinya aman?",
+        "最后情况安全了吗？"
+      ]
+    ],
+    "daily": [
+      [
+        "Tadi harimu bagaimana?",
+        "你今天过得怎么样？"
+      ],
+      [
+        "Terus setelah itu apa yang terjadi?",
+        "然后又发生了什么？"
+      ],
+      [
+        "Akhirnya semua selesai?",
+        "最后都处理完了吗？"
+      ]
+    ]
+  }
 }
