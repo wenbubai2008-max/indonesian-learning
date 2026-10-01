@@ -1,5 +1,8 @@
 name: Sync daily vocab
 on:
+  # GitHub App / user-created release scaffolds can wake the same V2 fallback without
+  # waiting for an unreliable schedule. GITHUB_TOKEN-created events do not recurse.
+  create:
   push:
     branches: [main]
     paths:
@@ -67,10 +70,75 @@ permissions:
   issues: write
   pages: write
 concurrency:
-  # Main writes share the existing lock; read-only PR tests use their own group.
-  group: ${{ github.event_name == 'pull_request' && format('lesson-pr-{0}', github.event.pull_request.number) || 'learning-data-write' }}
+  # A new-branch watcher must never hold the main write lock while waiting for 08:05/18:05.
+  group: ${{ github.event_name == 'pull_request' && format('lesson-pr-{0}', github.event.pull_request.number) || github.event_name == 'create' && format('lesson-watch-{0}', github.event.ref) || 'learning-data-write' }}
   cancel-in-progress: false
 jobs:
+  watch_release_scaffold:
+    # The create event is delivered for an external GitHub App/user branch creation.
+    # This job must not checkout or write the newly created (possibly empty) release branch.
+    if: github.event_name == 'create' && github.event.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Check a newly created release scaffold without holding the main write lock
+        shell: bash
+        env:
+          CREATED_REF: ${{ github.event.ref }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -Eeuo pipefail
+          echo "LESSON_CREATE_EVENT_RECEIVED ref=$CREATED_REF"
+          # Non-release branches are test probes or normal development: never dispatch.
+          if [[ ! "$CREATED_REF" =~ ^lesson-release-([0-9]{4}-[0-9]{2}-[0-9]{2})-(am|pm)$ ]]; then
+            echo 'LESSON_CREATE_IGNORED branch does not match an official lesson release.'
+            exit 0
+          fi
+          target_date="${BASH_REMATCH[1]}"
+          target_session="${BASH_REMATCH[2]}"
+          local_date="$(TZ=Asia/Jakarta date +%Y-%m-%d)"
+          if [ "$target_date" != "$local_date" ]; then
+            echo "LESSON_CREATE_IGNORED stale or future release date $target_date (today $local_date)."
+            exit 0
+          fi
+          if [ "$target_session" = am ]; then target_time=08:05; else target_time=18:05; fi
+          due_epoch="$(TZ=Asia/Jakarta date -d "$target_date $target_time:00" +%s)"
+          now_epoch="$(date +%s)"
+          wait_seconds=$((due_epoch - now_epoch))
+          # A release created over 30 minutes early is not a normal scheduled lesson.
+          # Never occupy a runner for hours; the existing GitHub cron remains an emergency backstop.
+          if [ "$wait_seconds" -gt 1800 ]; then
+            echo "LESSON_CREATE_IGNORED branch created too early ($wait_seconds s until target)."
+            exit 0
+          fi
+          if [ "$target_session" = am ] && [ "$(TZ=Asia/Jakarta date +%H)" -ge 18 ]; then
+            echo 'LESSON_CREATE_IGNORED morning release event arrived after evening.'
+            exit 0
+          fi
+          if [ "$wait_seconds" -gt 0 ]; then
+            echo "LESSON_CREATE_WAIT seconds=$wait_seconds, no normal publication lock held."
+            sleep "$wait_seconds"
+          fi
+          # Re-read live main AFTER the grace period: a draft branch, staged lesson or PR
+          # is not a completed publication. The index and official file are the barrier.
+          index_json="$(gh api "repos/$GITHUB_REPOSITORY/contents/data/daily/index.json?ref=main" \
+            --jq '.content' | base64 --decode)"
+          official="data/daily/$target_date-$target_session.json"
+          flag="$(jq -r --arg d "$target_date" --arg s "$target_session" \
+            '([.dates[]? | select(.date==$d)][0][$s]) // false' <<<"$index_json")"
+          if [ "$flag" = true ] &&
+             gh api "repos/$GITHUB_REPOSITORY/contents/$official?ref=main" >/dev/null 2>&1; then
+            echo "LESSON_CREATE_ALREADY_PUBLISHED $target_date $target_session; do not run V2."
+            exit 0
+          fi
+          # Only the existing shared-lock Sync can generate/publish; no alternate writer.
+          gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" \
+            -f ref=main -f "inputs[recover_date]=$target_date" \
+            -f "inputs[recover_session]=$target_session"
+          echo "LESSON_CREATE_FALLBACK_DISPATCHED date=$target_date session=$target_session"
+
   # Read-only PR gate: complete lesson+index, exact head SHA, same authoritative validator.
   preflight:
     if: github.event_name == 'pull_request' && !startsWith(github.head_ref, 'extensive-reading-') && !startsWith(github.head_ref, 'lesson-release-')
@@ -610,7 +678,8 @@ jobs:
           echo "EXTENSIVE_READING_PUBLISHED date=$release_date pr=$PR_NUMBER head=$final_sha merge=$merge_sha"
 
   sync:
-    if: github.ref == 'refs/heads/main'
+    # create event's default-branch ref may also be main; never reconcile on a watcher event.
+    if: github.ref == 'refs/heads/main' && github.event_name != 'create'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
