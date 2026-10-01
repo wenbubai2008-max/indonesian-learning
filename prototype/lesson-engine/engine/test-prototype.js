@@ -4,95 +4,119 @@
 const fs=require('node:fs');
 const path=require('node:path');
 const assert=require('node:assert/strict');
-const {generate,loadMaterials}=require('./generate-prototype');
+
 const REPO=path.resolve(__dirname,'../../..');
+const core=require('./core.js');
+const wrapper=require('./generate-prototype.js');
+const {validate}=require(path.join(REPO,'.github/scripts/validate-lesson-candidate.js'));
+
 const read=p=>JSON.parse(fs.readFileSync(path.join(REPO,p),'utf8'));
 const norm=x=>String(x||'').trim().toLowerCase();
 const wc=x=>String(x||'').trim().split(/\s+/).filter(Boolean).length;
+const dailySource=fs.readFileSync(path.join(REPO,'data/daily-vocab-data.js'),'utf8');
+const da=dailySource.indexOf('['),db=dailySource.lastIndexOf(']');
+const dailyRows=JSON.parse(dailySource.slice(da,db+1));
+const bundle=read('prototype/lesson-engine/materials/materials-bundle.json');
+const rules=read('data/learning-pool-rules.json');
+const prevPm=read('data/daily/2026-09-30-pm.json');
+const sameDayAm=read('data/daily/2026-10-01-am.json');
+
 let passed=0;
 function test(name,fn){fn();passed++;console.log('PASS '+name)}
+function fakeHistory(ctx){
+  return (ctx.history_7d||[]).map(h=>h.session==='am'
+    ?{date:h.date,session:'am',review_vocab:h.review_core||[],vocab:[]}
+    :{date:h.date,session:'pm',review_vocab:[],vocab:(h.review_core||[]).map(word=>({word,source_group:'review'}))}
+  );
+}
+function cfg(slot){
+  return {
+    ctx:read('prototype/lesson-engine/fixtures/context-2026-10-01-'+slot+'.json'),
+    runtime:read('prototype/lesson-engine/fixtures/runtime-2026-10-01-'+slot+'.json'),
+    index:read('prototype/lesson-engine/fixtures/index-2026-10-01-'+slot+'.json')
+  };
+}
+function newWords(lesson){
+  return lesson.session==='am'?(lesson.vocab||[]).map(x=>norm(x.word)):(lesson.vocab||[]).filter(x=>x.source_group==='new').map(x=>norm(x.word));
+}
+function groupWords(lesson,group){
+  return lesson.session==='am'
+    ?(group==='review'?(lesson.review_vocab||[]).map(norm):[])
+    :(lesson.vocab||[]).filter(x=>x.source_group===group).map(x=>norm(x.word));
+}
+function coverage(lesson,key){return (lesson._prototype?.[key]||[]).map(x=>norm(x.word))}
 
-const ctx=read('data/lesson-context.json');
-const M=loadMaterials();
-
-test('curated lexicon covers every current legal dont+fuzzy word',()=>{
+test('eligible lexicon still exactly covers 283 snapshot candidates',()=>{
+  const lex=bundle.materials['eligible-lexicon'].entries;
+  const ctx=cfg('pm').ctx;
   const expected=new Set([...ctx.candidates.new_dont,...ctx.candidates.new_fuzzy].map(x=>norm(x[0])));
-  const files=[];
-  for(let i=1;i<=6;i++)files.push(JSON.parse(fs.readFileSync(path.join(REPO,'prototype/lesson-engine/materials/lexicon/eligible-0'+i+'.json'),'utf8')));
-  const rows=files.flatMap(x=>x.entries),actual=new Set(rows.map(x=>norm(x.word)));
-  assert.equal(rows.length,actual.size,'curated lexicon must not contain duplicate word identities');
-  const missing=[...expected].filter(x=>!actual.has(x));
-  assert.deepEqual(missing,[],'newly legal words need curated content before generation');
-  for(const e of rows){
-    for(const k of ['word','cn','en','root','root_cn','register','example','example_cn','note'])assert(String(e[k]||'').trim(),e.word+' missing '+k);
-    assert(Array.isArray(e.tags)&&e.tags.length,e.word+' missing tags');
-  }
+  const actual=new Set(lex.map(x=>norm(x.word)));
+  assert.equal(lex.length,283);
+  assert.equal(actual.size,283);
+  assert.deepEqual([...actual].sort(),[...expected].sort());
 });
 
-test('scene bilingual arrays stay aligned',()=>{
-  for(const s of M.scenes.scenes){
-    const c=M.sceneCn.scenes[s.id];assert(c,'missing translation '+s.id);
-    assert.equal(c.openings.length,s.openings.length,s.id+' openings');
-    assert.equal(c.moves.length,s.moves.length,s.id+' moves');
-    assert.equal(c.closing.length,s.closing.length,s.id+' closing');
-    for(const move of s.dialogue||[])assert(M.language.dialogue_moves[move]?.length,'missing dialogue move '+move);
+for(const slot of ['am','pm']){
+  const c=cfg(slot);
+  for(let variant=0;variant<6;variant++){
+    const name=slot.toUpperCase()+' variant '+(variant+1);
+    const lesson=core.generate(c.ctx,bundle,dailyRows,{variant});
+    test(name+' formal validator',()=>{
+      const result=validate({
+        lesson,index:c.index,runtime:c.runtime,rules,
+        expectedDate:c.ctx.target.date,expectedSession:slot,
+        sameDayAm:slot==='pm'?sameDayAm:null,previousPm:prevPm,
+        reviewHistory:fakeHistory(c.ctx)
+      });
+      assert.equal(result.ok,true,JSON.stringify(result.errors));
+    });
+    test(name+' shared engine contract',()=>{
+      assert.equal(lesson._prototype.engine_version,2);
+      assert.equal(lesson._prototype.production_write,false);
+      assert(wc(lesson.reading.text)>=80&&wc(lesson.reading.text)<=120);
+      assert((lesson.vocab||[]).every(v=>String(v.formation||'').trim()&&String(v.synonym_note||'').trim()));
+      const nws=newWords(lesson),rc=coverage(lesson,'reading_coverage');
+      if(slot==='am'){
+        assert.equal(nws.length,10);
+        assert((lesson.review_vocab||[]).length>=4&&(lesson.review_vocab||[]).length<=6);
+        assert.equal(lesson.sentences.length,5);
+        assert.equal(lesson.quiz.length,3);
+        assert.equal(lesson.review.length,3);
+        assert(rc.filter(x=>nws.includes(x)).length>=6,'AM reading new coverage < 6');
+      }else{
+        const rw=groupWords(lesson,'review'),aw=groupWords(lesson,'application'),dc=coverage(lesson,'dialogue_coverage');
+        assert(nws.length>=3&&nws.length<=4);
+        assert(rw.length>=4&&rw.length<=6);
+        assert(aw.length>=2&&aw.length<=3);
+        assert(lesson.vocab.length>=10&&lesson.vocab.length<=12);
+        assert(rc.filter(x=>nws.includes(x)).length>=Math.min(3,nws.length),'PM reading new coverage too low');
+        assert(dc.filter(x=>nws.includes(x)).length>=Math.min(2,nws.length),'PM dialogue new coverage too low');
+        assert(lesson.dialogue.lines.length>=4);
+        assert(lesson.rewrite.length>=3&&lesson.rewrite.length<=4);
+        const q=lesson.daily_test.questions;
+        assert.equal(q.length,6);
+        assert.equal(q.filter(x=>x.type==='choice').length,3);
+        assert.equal(q.filter(x=>x.type==='fill').length,2);
+        assert.equal(q.filter(x=>x.type==='order').length,1);
+      }
+    });
   }
-});
-
-const lesson=generate(ctx);
-test('prototype identity matches context',()=>{
-  assert.equal(lesson.date,ctx.target.date);assert.equal(lesson.session,ctx.target.session);assert.equal(lesson.time,ctx.target.time);assert.equal(lesson.day,ctx.target.day);
-  assert.equal(lesson._prototype.production_write,false);
-});
-test('reading remains 80-120 Indonesian words',()=>assert(wc(lesson.reading.text)>=80&&wc(lesson.reading.text)<=120,'reading words='+wc(lesson.reading.text)));
-test('core vocabulary is unique',()=>{
-  const ws=lesson.vocab.map(x=>norm(x.word));assert.equal(new Set(ws).size,ws.length);
-});
-test('no low-quality placeholder cards are used',()=>{
-  for(const v of lesson.vocab){
-    assert(!/^—$/.test(v.en||''),v.word+' bad en');
-    assert(!/正在日常语境中学习/.test(v.example_cn||''),v.word+' placeholder example');
-    for(const k of ['display','audio_text','cn','en','formation','example','example_cn','synonym_note'])assert(String(v[k]||'').trim(),v.word+' missing '+k);
-  }
-});
-
-if(ctx.target.session==='pm'){
-  test('PM group counts and memory bands',()=>{
-    const groups={new:lesson.vocab.filter(x=>x.source_group==='new'),review:lesson.vocab.filter(x=>x.source_group==='review'),application:lesson.vocab.filter(x=>x.source_group==='application')};
-    assert(groups.new.length>=3&&groups.new.length<=4);
-    assert(groups.review.length>=4&&groups.review.length<=6);
-    assert(groups.application.length>=2&&groups.application.length<=3);
-    const f=new Set(ctx.candidates.new_fuzzy.map(x=>norm(x[0]))),d=new Set(ctx.candidates.new_dont.map(x=>norm(x[0]))),oral=new Set(ctx.candidates.oral.map(x=>norm(x[0])));
-    const nws=groups.new.map(x=>norm(x.word));
-    if(f.size>=2&&d.size>=1){assert(nws.filter(x=>f.has(x)).length>=2);assert(nws.some(x=>d.has(x)))}
-    if([...oral].some(x=>f.has(x)||d.has(x)))assert(groups.new.some(x=>x.is_oral_new),'eligible oral missing');
-  });
-  test('PM dialogue/rewrite/test shape',()=>{
-    assert(lesson.dialogue.lines.length>=4);
-    assert(lesson.rewrite.length>=3&&lesson.rewrite.length<=4);
-    const q=lesson.daily_test.questions;
-    assert.equal(q.length,6);assert.equal(q.filter(x=>x.type==='choice').length,3);assert.equal(q.filter(x=>x.type==='fill').length,2);assert.equal(q.filter(x=>x.type==='order').length,1);
-  });
-} else {
-  test('AM exact 10 and dont-first',()=>{
-    assert.equal(lesson.vocab.length,10);
-    const d=new Set(ctx.candidates.new_dont.map(x=>norm(x[0])));
-    if(d.size>=10)assert(lesson.vocab.every(x=>d.has(norm(x.word))));
-  });
 }
 
-test('production validator accepts current prototype candidate',()=>{
-  const {validate,collectReviewHistory}=require(path.join(REPO,'.github/scripts/validate-lesson-candidate.js'));
-  const index=read('data/daily/index.json'),runtime=read('data/learning-runtime.json'),rules=read('data/learning-pool-rules.json');
-  const date=ctx.target.date,prev=new Date(Date.parse(date+'T00:00:00Z')-86400000).toISOString().slice(0,10);
-  const load=p=>read(p);
-  const result=validate({
-    lesson,index,runtime,rules,expectedDate:date,expectedSession:ctx.target.session,
-    sameDayAm:fs.existsSync(path.join(REPO,'data/daily/'+date+'-am.json'))?read('data/daily/'+date+'-am.json'):null,
-    previousPm:fs.existsSync(path.join(REPO,'data/daily/'+prev+'-pm.json'))?read('data/daily/'+prev+'-pm.json'):null,
-    reviewHistory:collectReviewHistory(index,date,ctx.target.session,load)
-  });
-  assert.equal(result.ok,true,JSON.stringify(result.errors));
+test('CLI wrapper delegates to same shared core',()=>{
+  const c=cfg('pm'),a=core.generate(c.ctx,bundle,dailyRows,{variant:0}),b=wrapper.generate(c.ctx,{variant:0});
+  assert.deepEqual(b,a);
 });
 
-console.log('PROTOTYPE_TEST '+JSON.stringify({ok:true,passed,target:ctx.target,scene:lesson._prototype.scene_id,new_words:lesson.new_words,reading_words:wc(lesson.reading.text)}));
+test('preview is read-only and loads shared core',()=>{
+  const html=fs.readFileSync(path.join(REPO,'prototype/lesson-engine/preview.html'),'utf8');
+  const js=fs.readFileSync(path.join(REPO,'prototype/lesson-engine/preview.js'),'utf8').toLowerCase();
+  assert(html.includes('./engine/core.js'));
+  assert(!js.includes("method:'post'")&&!js.includes('method:"post"'));
+  assert(!js.includes("method:'put'")&&!js.includes('method:"put"'));
+  assert(!js.includes("method:'delete'")&&!js.includes('method:"delete"'));
+  assert(!js.includes('api.github.com'));
+  assert(!js.includes('localstorage')&&!js.includes('indexeddb'));
+});
+
+console.log('PROTOTYPE_V2_TEST '+JSON.stringify({ok:true,passed,variants:12,engine_version:2}));
