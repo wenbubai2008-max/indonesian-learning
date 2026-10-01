@@ -183,19 +183,19 @@
   function chooseScene(cards,env,variant=0,ctx=null){
     const date=ctx?.target?.date,day=date?new Date(date+'T00:00:00Z').getUTCDay():null;
     const weekday=day!==0&&day!==6;
-    const ranked=env.M.scenes.scenes.map(scene=>{
+    const scenes=env.M.scenes.scenes.filter(scene=>!(weekday&&scene.id==='weekend-errands'));
+    const ranked=scenes.map(scene=>{
       let score=0,covered=0;
       for(const c of cards){
         const fit=sceneFit(c,scene,env),weight=c.group==='new'?6:c.group==='application'?3:2;
         score+=fit*weight;if(fit>=3)covered++;
       }
-      if(weekday&&scene.id==='weekend-errands')score-=120;
       if(ctx?.target?.session==='am'&&scene.id==='work-morning')score+=12;
       return {scene,score,covered};
     }).sort((a,b)=>b.covered-a.covered||b.score-a.score||a.scene.id.localeCompare(b.scene.id));
     const best=ranked[0]?.covered||0;
     const top=ranked.filter(x=>x.covered>=Math.max(1,best-1)&&x.score>ranked[0].score-45).slice(0,6);
-    return (top.length?top:ranked)[variant%(top.length||ranked.length)]?.scene||env.M.scenes.scenes[0];
+    return (top.length?top:ranked)[variant%(top.length||ranked.length)]?.scene||scenes[0];
   }
 
   function deriveCollocations(entry,word,env){
@@ -330,25 +330,6 @@
     return {text,cn:translation,_coverage:included};
   }
 
-  function readingFor(scene,cards,env,key,session){
-    const cn=env.M['scene-cn'].scenes[scene.id],pairs=[];
-    const oi=hash(key+'open')%scene.openings.length;
-    pairs.push([scene.openings[oi],cn.openings[oi]]);
-    const targets=targetReadingCards(cards,scene,env,session).map(c=>[c.example,c.example_cn,c.word,c.group]);
-    const moves=scene.moves.map((x,i)=>[x,cn.moves[i],'','scene']);
-    let ti=0,mi=0;
-    while((ti<targets.length||mi<moves.length)&&wc(pairs.map(x=>x[0]).join(' '))<100){
-      if(mi<moves.length)pairs.push(moves[mi++]);
-      if(ti<targets.length)pairs.push(targets[ti++]);
-    }
-    while(mi<moves.length&&wc(pairs.map(x=>x[0]).join(' '))<84)pairs.push(moves[mi++]);
-    const ci=hash(key+'close')%scene.closing.length;
-    pairs.push([scene.closing[ci],cn.closing[ci],'','scene']);
-    while(wc(pairs.map(x=>x[0]).join(' '))>120&&pairs.length>5)pairs.splice(-2,1);
-    const text=pairs.map(x=>x[0]).join(' '),translation=pairs.map(x=>x[1]).join(' ');
-    const included=cards.filter(c=>norm(text).includes(norm(c.word))).map(c=>({word:c.word,group:c.group}));
-    return {text,cn:translation,_coverage:included};
-  }
 
   function dialogueFor(scene,cards,env,key){
     const newCards=cards.filter(x=>x.group==='new'&&x.example),others=cards.filter(x=>x.group!=='new'&&x.example);
