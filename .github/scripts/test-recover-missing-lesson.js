@@ -298,6 +298,105 @@ test('October 1 PM application notes distinguish morning new from morning old re
  }
 });
 
+
+test('active authorized normal PR has priority over V2, completed failure does not suppress recovery',()=>{
+ const cp=require('node:child_process');
+ const filter=path.join(base,'.github/scripts/normal-release-priority.jq');
+ assert(fs.existsSync(filter),'Workflow priority filter must exist');
+ const branch='lesson-release-2026-10-02-am',pr=54;
+ const run=(status,ref=branch,n=pr,pulls=true)=>{
+   const data={workflow_runs:status==null?[]:[{
+     event:'pull_request',head_branch:ref,status,
+     pull_requests:pulls?[{number:n}]:[]
+   }]};
+   const result=cp.spawnSync('jq',['-e','--arg','branch',branch,'--argjson','number',String(pr),
+     '-f',filter],{encoding:'utf8',input:JSON.stringify(data)});
+   assert([0,1].includes(result.status),'jq filter should be evaluable: '+result.stderr);
+   return result.status===0;
+ };
+ assert(run('queued'), 'A queued original PR must defer V2');
+ assert(run('in_progress'), 'An original PR in progress must defer V2');
+ assert(run('waiting'), 'A waiting original PR must defer V2');
+ assert(run('pending'), 'A pending original PR must defer V2');
+ assert(run('requested'), 'An original PR awaiting runner must defer V2');
+ assert(run('in_progress',branch,pr,false),'Fallback on exact head branch if Actions omits the PR list');
+ for(const status of ['completed',null]){
+   assert(!run(status),'A failed/completed or absent normal PR must allow V2');
+ }
+ assert(!run('in_progress','lesson-release-2026-10-02-pm'),'Wrong lesson cannot suppress V2');
+ assert(!run('in_progress',branch,999),'Different PR number cannot suppress V2');
+});
+
+test('fallback checks normal/manual priority at publication time, not just in the branch watcher',()=>{
+ const w=fs.readFileSync(path.join(base,'.github/workflows/sync-daily-vocab.yml'),'utf8');
+ const start=w.indexOf('      - name: Generate missing lesson with V2 and commit the two-file transaction');
+ const finish=w.indexOf('      - name: Sync vocab safely',start);
+ assert(start>=0&&finish>start);
+ const block=w.slice(start,finish);
+ assert(block.includes('NORMAL_RELEASE_ACTIVE PR='));
+ assert(block.includes('normal-release-priority.jq'));
+ assert(block.includes('priority_rc'));
+ assert(block.includes('Do not race the normal lesson'));
+ assert(block.indexOf('NORMAL_RELEASE_ACTIVE')<block.indexOf('node .github/scripts/recover-missing-lesson.js'));
+ assert(w.includes('pull-requests: read')&&w.includes('actions: read'));
+ const failure=w.slice(w.indexOf('      - name: Recover immediately after an eligible lesson release fails'),
+   w.indexOf('  extensive_reading_release:'));
+ assert(failure.includes('NORMAL_LESSON_ALREADY_PUBLISHED'));
+ assert(failure.includes('dispatch Sync only, never V2'));
+ assert(failure.includes('-f "inputs[recover_date]=$date"'));
+ assert(failure.includes('gh api --method POST'));
+});
+
+test('the actual failed-release Bash sends Sync only if ChatGPT/manual already published',()=>{
+ const cp=require('node:child_process'),os=require('node:os');
+ const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'normal-priority-failure-test-'));
+ try{
+   const lines=fs.readFileSync(path.join(base,'.github/workflows/sync-daily-vocab.yml'),'utf8').split('\n');
+   const start=lines.findIndex(x=>x.includes('      - name: Recover immediately after an eligible lesson release fails'));
+   const at=lines.findIndex((x,i)=>i>start&&x==='        run: |');
+   assert(start>0&&at>start);
+   const body=[];
+   for(let i=at+1;i<lines.length;i++){
+     if(lines[i].startsWith('          '))body.push(lines[i].slice(10));
+     else if(!lines[i].trim())body.push('');
+     else break;
+   }
+   const gh=path.join(tmp,'gh'),log=path.join(tmp,'calls.txt');
+   fs.writeFileSync(gh,[
+     '#!/bin/bash',
+     'case "$*" in',
+     '  *"/contents/data/daily/index.json?ref=main"*) echo "$TEST_INDEX_B64" ;;',
+     '  *"/contents/data/daily/2026-10-01-pm.json?ref=main"*) test "$TEST_FILE_PRESENT" = yes ;;',
+     '  *"--method POST"*) printf "%s\\n" "$*" >> "$TEST_GH_LOG" ;;',
+     '  *) echo "Unexpected GitHub call: $*" >&2; exit 9 ;;',
+     'esac'
+   ].join('\n')+'\n');
+   fs.chmodSync(gh,0o755);
+   const run=(flag,exists)=>{
+     fs.rmSync(log,{force:true});
+     const ix=Buffer.from(JSON.stringify({dates:[{date:'2026-10-01',am:true,pm:flag}]})).toString('base64');
+     const env={...process.env,PATH:tmp+':'+process.env.PATH,
+       RELEASE_BRANCH:'lesson-release-2026-10-01-pm',
+       GITHUB_REPOSITORY:'test/indonesian-learning',GH_TOKEN:'test-only',
+       TEST_INDEX_B64:ix,TEST_FILE_PRESENT:exists?'yes':'no',TEST_GH_LOG:log};
+     const r=cp.spawnSync('bash',['-c',body.join('\n')+'\n'],{env,encoding:'utf8'});
+     assert.equal(r.status,0,'failure handler: '+r.stderr+' '+r.stdout);
+     return {text:r.stdout,calls:fs.readFileSync(log,'utf8').trim().split('\n')};
+   };
+   const published=run(true,true);
+   assert(published.text.includes('NORMAL_LESSON_ALREADY_PUBLISHED'));
+   assert.equal(published.calls.length,1);
+   assert(!published.calls[0].includes('inputs[recover_date]'));
+   assert(!published.calls[0].includes('inputs[recover_session]'));
+   const missing=run(false,false);
+   assert.equal(missing.calls.length,1);
+   assert(missing.calls[0].includes('inputs[recover_date]=2026-10-01'));
+   assert(missing.calls[0].includes('inputs[recover_session]=pm'));
+   const inconsistent=run(true,false);
+   assert(inconsistent.calls[0].includes('inputs[recover_date]=2026-10-01'));
+ }finally{fs.rmSync(tmp,{recursive:true,force:true})}
+});
+
 async function checkDailyAmTagRendering(){
  const vm=require('node:vm');
  const publishedPm=get('data/daily/2026-10-01-pm.json');
