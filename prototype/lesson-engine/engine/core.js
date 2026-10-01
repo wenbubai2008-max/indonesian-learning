@@ -90,7 +90,7 @@
     const chosenF=[],chosenD=[];
     const addBand=(bucket,row)=>{if(row&&!out.some(x=>sameOralFamily(x.word,row.word,oral))&&!bucket.some(x=>sameOralFamily(x.word,row.word,oral))){bucket.push(row);return true}return false};
     const legalOralF=oralIn(F,'fuzzy'),legalOralD=oralIn(D,'dont');
-    const preferredOral=(variant%2===0?legalOralF:legalOralD)[0]||legalOralF[0]||legalOralD[0];
+    const preferredOral=legalOralF[0]||legalOralD[0];
     if(preferredOral)(preferredOral.band==='fuzzy'?addBand(chosenF,preferredOral):addBand(chosenD,preferredOral));
     for(const r of F)if(chosenF.length<wantF)addBand(chosenF,r);
     for(const r of D)if(chosenD.length<wantD)addBand(chosenD,r);
