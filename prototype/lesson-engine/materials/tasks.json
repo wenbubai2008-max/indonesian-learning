@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "bilingual_sentence_frames": [
+    {
+      "tags": [
+        "work"
+      ],
+      "id": "work-1",
+      "id_text": "Hari ini saya perlu {w} sebelum rapat dimulai.",
+      "cn": "今天会议开始前我需要{cn_action}。"
+    },
+    {
+      "tags": [
+        "digital"
+      ],
+      "id": "digital-1",
+      "id_text": "Saya mencoba {w} dokumen itu dari ponsel.",
+      "cn": "我尝试用手机下载那份文件。"
+    },
+    {
+      "tags": [
+        "communication"
+      ],
+      "id": "comm-1",
+      "id_text": "Dia {w} masalah itu dengan cukup jelas.",
+      "cn": "他把那个问题说得很清楚。"
+    },
+    {
+      "tags": [
+        "plan"
+      ],
+      "id": "plan-1",
+      "id_text": "Kami membahas rencana itu dulu sebelum mengambil keputusan.",
+      "cn": "我们先讨论那个计划，再做决定。"
+    },
+    {
+      "tags": [
+        "health"
+      ],
+      "id": "health-1",
+      "id_text": "Kalau badan belum enak, sebaiknya istirahat dulu.",
+      "cn": "如果身体还不舒服，最好先休息。"
+    },
+    {
+      "tags": [
+        "food"
+      ],
+      "id": "food-1",
+      "id_text": "Makanan ini enak dan porsinya juga pas.",
+      "cn": "这个食物很好吃，分量也合适。"
+    },
+    {
+      "tags": [
+        "transport"
+      ],
+      "id": "transport-1",
+      "id_text": "Perjalanan tadi lebih lama karena jalan cukup padat.",
+      "cn": "刚才路程更久，因为路比较堵。"
+    },
+    {
+      "tags": [
+        "shopping"
+      ],
+      "id": "shopping-1",
+      "id_text": "Saya membandingkan dua pilihan sebelum membeli.",
+      "cn": "我买之前比较了两个选择。"
+    },
+    {
+      "tags": [
+        "home"
+      ],
+      "id": "home-1",
+      "id_text": "Setelah semuanya rapi, kamar terasa lebih nyaman.",
+      "cn": "全部整理好以后，房间感觉更舒服。"
+    },
+    {
+      "tags": [
+        "relationship",
+        "social"
+      ],
+      "id": "social-1",
+      "id_text": "Kami ngobrol pelan-pelan supaya tidak salah paham.",
+      "cn": "我们慢慢聊，避免误会。"
+    },
+    {
+      "tags": [
+        "connector"
+      ],
+      "id": "connector-1",
+      "id_text": "{w_cap} situasinya berubah, kami tetap melanjutkan rencana dengan tenang.",
+      "cn": "即使情况变化了，我们还是冷静地继续计划。"
+    },
+    {
+      "tags": [
+        "movement"
+      ],
+      "id": "movement-1",
+      "id_text": "Dia bergerak pelan agar tidak mengganggu orang lain.",
+      "cn": "他慢慢移动，以免影响别人。"
+    },
+    {
+      "tags": [
+        "problem"
+      ],
+      "id": "problem-1",
+      "id_text": "Masalah kecil itu akhirnya bisa diselesaikan.",
+      "cn": "那个小问题最后解决了。"
+    },
+    {
+      "tags": [
+        "daily"
+      ],
+      "id": "daily-1",
+      "id_text": "Hari ini saya menyelesaikan beberapa urusan kecil.",
+      "cn": "今天我处理了几件小事。"
+    }
+  ],
+  "output_frames": [
+    {
+      "id": "work-problem",
+      "tags": [
+        "work",
+        "problem"
+      ],
+      "task": "用今天至少2个目标词，说2句：工作中出现一个小问题，你准备怎么处理。",
+      "answer": "Ada sedikit masalah hari ini, tapi saya akan cek dulu sebelum memutuskan. Setelah itu saya lanjutkan pekerjaannya.",
+      "cn": "今天有个小问题，不过我会先检查再决定。之后我继续工作。"
+    },
+    {
+      "id": "daily-plan",
+      "tags": [
+        "plan",
+        "daily"
+      ],
+      "task": "用今天至少2个目标词，说2句：原计划发生变化，但你仍然准备继续。",
+      "answer": "Rencananya berubah sedikit, tapi saya tetap mau lanjut. Saya akan pilih cara yang paling praktis.",
+      "cn": "计划有一点变化，不过我还是要继续。我会选最实用的方法。"
+    },
+    {
+      "id": "social-response",
+      "tags": [
+        "social",
+        "communication"
+      ],
+      "task": "用今天至少2个目标词，说2句：朋友向你诉说一个问题，你先回应，再给一个建议。",
+      "answer": "Saya paham kenapa kamu merasa begitu. Menurut saya, lebih baik dibicarakan pelan-pelan.",
+      "cn": "我明白你为什么这么想。我觉得最好慢慢谈。"
+    },
+    {
+      "id": "health-care",
+      "tags": [
+        "health"
+      ],
+      "task": "用今天至少2个目标词，说2句：身体不舒服时你会怎么安排今天。",
+      "answer": "Hari ini saya akan istirahat lebih banyak. Kalau kondisinya makin parah, saya akan periksa.",
+      "cn": "今天我会多休息。如果更严重，我会去检查。"
+    },
+    {
+      "id": "shopping-choice",
+      "tags": [
+        "shopping"
+      ],
+      "task": "用今天至少2个目标词，说2句：买东西前比较两个选择并做决定。",
+      "answer": "Saya bandingkan dulu harga dan kualitasnya. Setelah itu saya pilih yang paling sesuai kebutuhan.",
+      "cn": "我先比较价格和质量，然后选最符合需要的。"
+    }
+  ],
+  "pm_rewrite_frames": [
+    {
+      "id": "translate",
+      "task_prefix": "中译印：",
+      "instruction": "Prefer one short, natural sentence using the named target word."
+    },
+    {
+      "id": "register",
+      "task_prefix": "口语改写：",
+      "instruction": "If the target is formal, ask for its natural spoken counterpart or vice versa."
+    },
+    {
+      "id": "application",
+      "task_prefix": "主动复现：",
+      "instruction": "Use one same-day AM application word plus one PM target in a realistic sentence."
+    },
+    {
+      "id": "contrast",
+      "task_prefix": "辨析输出：",
+      "instruction": "Contrast a target with its common synonym/counterpart in two short examples."
+    }
+  ],
+  "pm_test_policy": {
+    "choices": 3,
+    "fills": 2,
+    "order": "5-8 tokens, exactly reconstruct the answer.",
+    "choice_distractors": "Prefer other lesson words of the same broad type; never duplicate options.",
+    "fill": "Always include an inline Chinese clue in parentheses."
+  },
+  "review_prompts": {
+    "am": [
+      "3秒主动回忆：{new_words_1_5}。",
+      "重点辨析今天最容易混淆的2–3组词，并各说一个短句。",
+      "复习 {review_words}，任选两个做主动输出。"
+    ],
+    "pm": [
+      "不看中文连续说出今天晚课新词，并各说一个常见搭配。",
+      "复习核心弱词 {review_words}，不要只认意思，至少说出两个完整短句。",
+      "复现今天08:00的 application 词，并用30秒复述晚课场景。"
+    ]
+  },
+  "quality_checks": [
+    "Reading has one coherent time/place frame.",
+    "No sentence contains more than three target words unless the combination is genuinely natural.",
+    "At least one item explicitly teaches register when a target has a formal/spoken counterpart.",
+    "Dialogue lines alternate naturally and include at least one short response.",
+    "Choices are semantically plausible but not deceptive through accidental ambiguity.",
+    "Output task requires production, not recognition."
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "version": 1,
+  "scope": "2026-10-01 legal new-pool seed",
+  "chunk": 6,
+  "count": 33,
+  "entries": [
+    {
+      "word": "lusa",
+      "cn": "后天",
+      "en": "the day after tomorrow",
+      "root": "lusa",
+      "root_cn": "后天",
+      "register": "neutral",
+      "tags": [
+        "time",
+        "plan"
+      ],
+      "example": "Kalau tidak sempat besok, kita bertemu lusa saja.",
+      "example_cn": "如果明天没时间，我们后天见就行。",
+      "note": "非常实用的时间词。"
+    },
+    {
+      "word": "nilai",
+      "cn": "分数；价值；成绩",
+      "en": "score; value; grade",
+      "root": "nilai",
+      "root_cn": "价值；分数",
+      "register": "neutral",
+      "tags": [
+        "number",
+        "education",
+        "finance"
+      ],
+      "example": "Nilai ujian saya lebih baik daripada sebelumnya.",
+      "example_cn": "我的考试成绩比以前好。",
+      "note": "多义：成绩、价值、数值。"
+    },
+    {
+      "word": "tampak",
+      "cn": "看起来；显得",
+      "en": "appear; look",
+      "root": "tampak",
+      "root_cn": "显现",
+      "register": "standard-neutral",
+      "tags": [
+        "description"
+      ],
+      "example": "Dari luar, tempat itu tampak kecil tapi nyaman.",
+      "example_cn": "从外面看，那个地方显得小但舒服。",
+      "note": "口语更常 kelihatan/terlihat。"
+    },
+    {
+      "word": "halus",
+      "cn": "光滑的；细腻的；委婉的",
+      "en": "smooth; fine; subtle",
+      "root": "halus",
+      "root_cn": "细；光滑",
+      "register": "neutral",
+      "tags": [
+        "description"
+      ],
+      "example": "Permukaan meja ini terasa halus.",
+      "example_cn": "这张桌子的表面摸起来很光滑。",
+      "note": "也可形容说话方式委婉。"
+    },
+    {
+      "word": "petugas",
+      "cn": "工作人员；值勤人员",
+      "en": "officer; staff member",
+      "root": "tugas",
+      "root_cn": "任务；职责",
+      "register": "neutral",
+      "tags": [
+        "work",
+        "service"
+      ],
+      "example": "Petugas membantu saya mencari ruang yang benar.",
+      "example_cn": "工作人员帮我找到正确的房间。",
+      "note": "比 pegawai 更强调执行某项职责的人。"
+    },
+    {
+      "word": "pegawai",
+      "cn": "职员；公务员",
+      "en": "employee; staff; civil servant",
+      "root": "pegawai",
+      "root_cn": "职员",
+      "register": "standard-neutral",
+      "tags": [
+        "work"
+      ],
+      "example": "Pegawai baru itu mulai bekerja minggu ini.",
+      "example_cn": "那位新员工这周开始工作。",
+      "note": "根据机构可指普通职员或公务员。"
+    },
+    {
+      "word": "pengunjung",
+      "cn": "访客；游客",
+      "en": "visitor",
+      "root": "kunjung",
+      "root_cn": "访问",
+      "register": "standard-neutral",
+      "tags": [
+        "service",
+        "travel"
+      ],
+      "example": "Pengunjung diminta menjaga kebersihan area ini.",
+      "example_cn": "访客被要求保持这个区域清洁。",
+      "note": "peN- + kunjung；人名词。"
+    },
+    {
+      "word": "modal",
+      "cn": "资金；资本；本钱",
+      "en": "capital; funds",
+      "root": "modal",
+      "root_cn": "资本",
+      "register": "neutral",
+      "tags": [
+        "finance",
+        "work"
+      ],
+      "example": "Usaha kecil itu membutuhkan modal tambahan.",
+      "example_cn": "那家小生意需要额外资金。",
+      "note": "商业高频；也可抽象“本钱”。"
+    },
+    {
+      "word": "artikel",
+      "cn": "文章；报道",
+      "en": "article",
+      "root": "artikel",
+      "root_cn": "文章",
+      "register": "neutral",
+      "tags": [
+        "information",
+        "digital"
+      ],
+      "example": "Saya membaca artikel pendek tentang kebiasaan tidur.",
+      "example_cn": "我读了一篇关于睡眠习惯的短文章。",
+      "note": "网络和媒体高频。"
+    },
+    {
+      "word": "ilmu",
+      "cn": "知识；学问",
+      "en": "knowledge; science",
+      "root": "ilmu",
+      "root_cn": "知识",
+      "register": "standard-neutral",
+      "tags": [
+        "education",
+        "information"
+      ],
+      "example": "Belajar bahasa juga menambah ilmu tentang budaya.",
+      "example_cn": "学语言也会增加对文化的知识。",
+      "note": "可组成 ilmu pengetahuan 等。"
+    },
+    {
+      "word": "tanda",
+      "cn": "标志；信号；迹象",
+      "en": "sign; signal; mark",
+      "root": "tanda",
+      "root_cn": "标志",
+      "register": "neutral",
+      "tags": [
+        "information",
+        "health"
+      ],
+      "example": "Lampu merah itu tanda bahwa mesin belum siap.",
+      "example_cn": "红灯表示机器还没准备好。",
+      "note": "常见 tanda bahwa...。"
+    },
+    {
+      "word": "ramah",
+      "cn": "友善的；亲切的",
+      "en": "friendly",
+      "root": "ramah",
+      "root_cn": "友善",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "service"
+      ],
+      "example": "Petugas di tempat itu ramah dan suka membantu.",
+      "example_cn": "那里的工作人员很友善，也愿意帮忙。",
+      "note": "服务场景高频。"
+    },
+    {
+      "word": "penumpang",
+      "cn": "乘客",
+      "en": "passenger",
+      "root": "tumpang",
+      "root_cn": "搭乘",
+      "register": "neutral",
+      "tags": [
+        "transport",
+        "travel"
+      ],
+      "example": "Penumpang diminta menunggu sampai pintu dibuka.",
+      "example_cn": "乘客被要求等到门打开。",
+      "note": "交通高频名词。"
+    },
+    {
+      "word": "angkatan",
+      "cn": "届；批次；队伍",
+      "en": "cohort; batch; class",
+      "root": "angkat",
+      "root_cn": "抬；举；任命",
+      "register": "standard",
+      "tags": [
+        "education",
+        "work"
+      ],
+      "example": "Dia satu angkatan dengan teman saya di kampus.",
+      "example_cn": "他和我朋友是大学同一届的。",
+      "note": "也有军事/运输等其他义项。"
+    },
+    {
+      "word": "akal",
+      "cn": "智慧；办法；理智",
+      "en": "reason; ingenuity; mind",
+      "root": "akal",
+      "root_cn": "智慧；办法",
+      "register": "neutral",
+      "tags": [
+        "thinking",
+        "problem"
+      ],
+      "example": "Kita perlu pakai akal sehat sebelum mengambil keputusan.",
+      "example_cn": "做决定前我们需要用常识理性思考。",
+      "note": "高频搭配 akal sehat。"
+    },
+    {
+      "word": "batas",
+      "cn": "边界；限制",
+      "en": "limit; boundary",
+      "root": "batas",
+      "root_cn": "边界",
+      "register": "neutral",
+      "tags": [
+        "location",
+        "law",
+        "plan"
+      ],
+      "example": "Setiap pekerjaan tetap perlu batas waktu yang jelas.",
+      "example_cn": "每项工作仍然需要明确的时间限制。",
+      "note": "常见 batas waktu、batas wilayah。"
+    },
+    {
+      "word": "kehadiran",
+      "cn": "出席；在场",
+      "en": "attendance; presence",
+      "root": "hadir",
+      "root_cn": "出席；在场",
+      "register": "standard",
+      "tags": [
+        "work",
+        "social"
+      ],
+      "example": "Kehadiran semua anggota diperlukan dalam rapat ini.",
+      "example_cn": "这次会议需要所有成员出席。",
+      "note": "名词；hadir=出席。"
+    },
+    {
+      "word": "diperlukan",
+      "cn": "需要的；有必要的",
+      "en": "required; needed",
+      "root": "perlu",
+      "root_cn": "需要",
+      "register": "standard",
+      "tags": [
+        "work",
+        "action"
+      ],
+      "example": "Dokumen tambahan diperlukan untuk proses ini.",
+      "example_cn": "这个流程需要额外文件。",
+      "note": "被动/状态形式；口语常说 perlu。"
+    },
+    {
+      "word": "kontrak",
+      "cn": "合同；租约",
+      "en": "contract; lease",
+      "root": "kontrak",
+      "root_cn": "合同",
+      "register": "neutral",
+      "tags": [
+        "work",
+        "home",
+        "law"
+      ],
+      "example": "Saya membaca kontrak sebelum menandatanganinya.",
+      "example_cn": "我签字前先阅读合同。",
+      "note": "租房和工作都高频。"
+    },
+    {
+      "word": "putuskan",
+      "cn": "决定；做决定",
+      "en": "decide",
+      "root": "putus",
+      "root_cn": "断；决定",
+      "register": "neutral-spoken",
+      "tags": [
+        "plan",
+        "action"
+      ],
+      "example": "Jangan putuskan sekarang kalau informasinya belum lengkap.",
+      "example_cn": "信息还不完整的话，不要现在就决定。",
+      "note": "命令/口语形式；完整主动形式 memutuskan。"
+    },
+    {
+      "word": "berhasil",
+      "cn": "成功；顺利做到",
+      "en": "succeed; successful",
+      "root": "hasil",
+      "root_cn": "结果；成果",
+      "register": "neutral",
+      "tags": [
+        "work",
+        "action"
+      ],
+      "example": "Kami berhasil menyelesaikan masalah itu sebelum sore.",
+      "example_cn": "我们下午前成功解决了那个问题。",
+      "note": "berhasil + 动词。"
+    },
+    {
+      "word": "santai",
+      "cn": "放松的；悠闲的",
+      "en": "relaxed; casual",
+      "root": "santai",
+      "root_cn": "放松",
+      "register": "neutral-spoken",
+      "tags": [
+        "daily",
+        "feeling"
+      ],
+      "example": "Hari Minggu saya cuma mau santai di rumah.",
+      "example_cn": "星期天我只想在家放松。",
+      "note": "极自然口语。"
+    },
+    {
+      "word": "buang",
+      "cn": "扔；丢弃",
+      "en": "throw away; discard",
+      "root": "buang",
+      "root_cn": "丢；扔",
+      "register": "neutral-spoken",
+      "tags": [
+        "home",
+        "action"
+      ],
+      "example": "Jangan buang bukti pembayaran sebelum urusannya selesai.",
+      "example_cn": "事情办完前不要扔掉付款证明。",
+      "note": "完整主动形式 membuang。"
+    },
+    {
+      "word": "baterai",
+      "cn": "电池",
+      "en": "battery",
+      "root": "baterai",
+      "root_cn": "电池",
+      "register": "neutral",
+      "tags": [
+        "digital",
+        "daily"
+      ],
+      "example": "Baterai ponsel saya tinggal dua puluh persen.",
+      "example_cn": "我的手机电量只剩20%。",
+      "note": "手机场景高频。"
+    },
+    {
+      "word": "jaringan",
+      "cn": "网络；网络连接",
+      "en": "network",
+      "root": "jaring",
+      "root_cn": "网",
+      "register": "neutral",
+      "tags": [
+        "digital",
+        "work"
+      ],
+      "example": "Jaringan internet di kantor sedang tidak stabil.",
+      "example_cn": "办公室的网络连接现在不稳定。",
+      "note": "网络语境非常常见。"
+    },
+    {
+      "word": "hapus",
+      "cn": "删除；擦掉",
+      "en": "delete; erase",
+      "root": "hapus",
+      "root_cn": "删除；擦除",
+      "register": "neutral-spoken",
+      "tags": [
+        "digital",
+        "action"
+      ],
+      "example": "Kalau file itu tidak diperlukan, hapus saja.",
+      "example_cn": "如果那个文件不需要，就删掉吧。",
+      "note": "完整主动形式 menghapus。"
+    },
+    {
+      "word": "balas",
+      "cn": "回复；回应",
+      "en": "reply; respond",
+      "root": "balas",
+      "root_cn": "回应",
+      "register": "neutral-spoken",
+      "tags": [
+        "communication",
+        "digital"
+      ],
+      "example": "Nanti saya balas pesannya setelah rapat.",
+      "example_cn": "我开完会再回复消息。",
+      "note": "极高频聊天用法。"
+    },
+    {
+      "word": "angkat",
+      "cn": "接（电话）；抬起；举起",
+      "en": "pick up; lift",
+      "root": "angkat",
+      "root_cn": "抬；举",
+      "register": "neutral-spoken",
+      "tags": [
+        "communication",
+        "action"
+      ],
+      "example": "Teleponnya bunyi terus, kenapa tidak diangkat?",
+      "example_cn": "电话一直响，为什么不接？",
+      "note": "口语“接电话”常用 angkat/diangkat。"
+    },
+    {
+      "word": "pendiam",
+      "cn": "沉默寡言的",
+      "en": "quiet; reserved",
+      "root": "diam",
+      "root_cn": "安静",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "description"
+      ],
+      "example": "Dia orangnya pendiam, tapi sebenarnya ramah.",
+      "example_cn": "他比较沉默寡言，但其实很友善。",
+      "note": "描述性格，不等于不友好。"
+    },
+    {
+      "word": "sesudah",
+      "cn": "在……之后",
+      "en": "after",
+      "root": "sudah",
+      "root_cn": "已经",
+      "register": "neutral",
+      "tags": [
+        "time",
+        "connector"
+      ],
+      "example": "Sesudah makan siang, saya kembali bekerja.",
+      "example_cn": "午饭后我回去工作。",
+      "note": "与 setelah 接近；setelah 更常见。"
+    },
+    {
+      "word": "siapkan",
+      "cn": "准备好",
+      "en": "prepare; get ready",
+      "root": "siap",
+      "root_cn": "准备好",
+      "register": "neutral-spoken",
+      "tags": [
+        "work",
+        "action"
+      ],
+      "example": "Tolong siapkan dokumennya sebelum jam tiga.",
+      "example_cn": "请在三点前准备好文件。",
+      "note": "命令式；口语也常说 siapin。"
+    },
+    {
+      "word": "buat",
+      "cn": "做；制作；为了；给",
+      "en": "make; do; for",
+      "root": "buat",
+      "root_cn": "做；制作",
+      "register": "spoken-neutral",
+      "tags": [
+        "action",
+        "purpose"
+      ],
+      "example": "Ini buat kamu, simpan saja dulu.",
+      "example_cn": "这个给你，先收着吧。",
+      "note": "多义高频；口语里也可等于 untuk。"
+    },
+    {
+      "word": "antre",
+      "cn": "排队",
+      "en": "queue; line up",
+      "root": "antre",
+      "root_cn": "排队",
+      "register": "neutral-spoken",
+      "tags": [
+        "service",
+        "daily"
+      ],
+      "example": "Kita harus antre sebentar di kasir.",
+      "example_cn": "我们得在收银台排一会儿队。",
+      "note": "标准拼写 antre；antri 很常见但非标准。"
+    }
+  ]
+}

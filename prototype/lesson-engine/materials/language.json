@@ -1,0 +1,705 @@
+{
+  "version": 1,
+  "level": "A2+→B1",
+  "register_policy": {
+    "default": "neutral-spoken",
+    "notes": [
+      "Prefer common Indonesian used in daily conversation, but keep grammar teachable.",
+      "Use colloquial forms only when they are genuinely common and context-appropriate.",
+      "Do not turn every sentence into slang.",
+      "When a target is formal/bookish, teach the natural spoken counterpart explicitly instead of pretending both registers are identical."
+    ]
+  },
+  "connectors": {
+    "sequence": [
+      "lalu",
+      "setelah itu",
+      "kemudian",
+      "akhirnya",
+      "sebelum itu",
+      "sementara itu"
+    ],
+    "cause": [
+      "karena",
+      "jadi",
+      "makanya"
+    ],
+    "contrast": [
+      "tapi",
+      "tetapi",
+      "meskipun begitu",
+      "walaupun begitu"
+    ],
+    "purpose": [
+      "supaya",
+      "biar",
+      "agar"
+    ],
+    "result": [
+      "jadi",
+      "akhirnya",
+      "karena itu"
+    ],
+    "condition": [
+      "kalau",
+      "jika",
+      "seandainya"
+    ],
+    "softening": [
+      "sepertinya",
+      "mungkin",
+      "kayaknya",
+      "menurut saya"
+    ],
+    "emphasis": [
+      "ternyata",
+      "justru",
+      "malah",
+      "memang"
+    ]
+  },
+  "spoken_pairs": [
+    {
+      "formal": "tidak",
+      "spoken": [
+        "nggak",
+        "enggak"
+      ],
+      "note": "Use nggak/enggak in dialogue, tidak in neutral reading unless target register suggests otherwise."
+    },
+    {
+      "formal": "sudah",
+      "spoken": [
+        "udah"
+      ],
+      "note": "udah is very common in dialogue."
+    },
+    {
+      "formal": "belum",
+      "spoken": [
+        "belum"
+      ],
+      "note": "No forced slang needed."
+    },
+    {
+      "formal": "saja",
+      "spoken": [
+        "aja"
+      ],
+      "note": "aja is natural in dialogue."
+    },
+    {
+      "formal": "seperti",
+      "spoken": [
+        "kayak"
+      ],
+      "note": "kayak is common spoken Indonesian."
+    },
+    {
+      "formal": "supaya",
+      "spoken": [
+        "biar"
+      ],
+      "note": "biar is usually more conversational."
+    },
+    {
+      "formal": "meletakkan",
+      "spoken": [
+        "taruh"
+      ],
+      "note": "taruh is more common in daily speech."
+    },
+    {
+      "formal": "mengunduh",
+      "spoken": [
+        "download"
+      ],
+      "note": "download is extremely common in tech contexts."
+    },
+    {
+      "formal": "mengunggah",
+      "spoken": [
+        "upload"
+      ],
+      "note": "upload is extremely common in tech contexts."
+    },
+    {
+      "formal": "lezat",
+      "spoken": [
+        "enak"
+      ],
+      "note": "enak is the normal daily word for tasty."
+    },
+    {
+      "formal": "seraya",
+      "spoken": [
+        "sambil"
+      ],
+      "note": "sambil is much more natural in ordinary conversation."
+    },
+    {
+      "formal": "agar",
+      "spoken": [
+        "biar",
+        "supaya"
+      ],
+      "note": "agar is more formal/written."
+    },
+    {
+      "formal": "diare",
+      "spoken": [
+        "mencret"
+      ],
+      "note": "mencret is colloquial; diare suits medical/neutral contexts."
+    },
+    {
+      "formal": "kata sandi",
+      "spoken": [
+        "password"
+      ],
+      "note": "password is very common in casual tech talk."
+    }
+  ],
+  "dialogue_moves": {
+    "ask-help": [
+      [
+        "Bisa bantu sebentar?",
+        "能帮一下吗？"
+      ],
+      [
+        "Boleh minta tolong sebentar?",
+        "可以请你帮个忙吗？"
+      ]
+    ],
+    "clarify": [
+      [
+        "Maksudnya yang ini atau yang sebelah?",
+        "你是指这个还是旁边那个？"
+      ],
+      [
+        "Jadi, yang perlu dilakukan dulu yang mana?",
+        "所以，应该先做哪一个？"
+      ]
+    ],
+    "suggest": [
+      [
+        "Kalau begitu, coba yang ini dulu.",
+        "那样的话，先试试这个。"
+      ],
+      [
+        "Menurut saya, lebih baik kita mulai dari yang paling gampang.",
+        "我觉得最好从最简单的开始。"
+      ]
+    ],
+    "confirm": [
+      [
+        "Oke, berarti seperti itu ya.",
+        "好，也就是说这样，对吧。"
+      ],
+      [
+        "Sip, sekarang sudah jelas.",
+        "好，现在清楚了。"
+      ]
+    ],
+    "state-opinion": [
+      [
+        "Menurut saya, pilihan ini lebih masuk akal.",
+        "我觉得这个选择更合理。"
+      ],
+      [
+        "Kalau menurut saya, kita tidak perlu buru-buru.",
+        "我觉得我们不用着急。"
+      ]
+    ],
+    "disagree-softly": [
+      [
+        "Saya paham maksudnya, tapi mungkin ada pilihan lain.",
+        "我明白你的意思，不过也许还有别的选择。"
+      ],
+      [
+        "Bisa juga, cuma saya masih agak ragu.",
+        "也可以，只是我还有点犹豫。"
+      ]
+    ],
+    "propose": [
+      [
+        "Bagaimana kalau kita coba cara ini dulu?",
+        "我们先试试这个方法怎么样？"
+      ],
+      [
+        "Kalau setuju, kita mulai dari bagian ini dulu.",
+        "如果同意，我们先从这部分开始。"
+      ]
+    ],
+    "ask-location": [
+      [
+        "Posisinya sekarang di mana?",
+        "现在位置在哪里？"
+      ],
+      [
+        "Titiknya dekat pintu utama atau di sebelah sana?",
+        "地点是在大门附近还是那边？"
+      ]
+    ],
+    "clarify-location": [
+      [
+        "Saya di depan gedung, dekat pintu masuk.",
+        "我在楼前面，靠近入口。"
+      ],
+      [
+        "Coba maju sedikit, nanti kelihatan dari jalan.",
+        "往前一点，从路上就能看到了。"
+      ]
+    ],
+    "explain-delay": [
+      [
+        "Jalannya macet, jadi mungkin saya sedikit terlambat.",
+        "路上堵车，所以我可能会晚一点。"
+      ],
+      [
+        "Tadi sempat berhenti cukup lama di jalan.",
+        "刚才路上停了挺久。"
+      ]
+    ],
+    "suggest-route": [
+      [
+        "Kalau lewat jalan sebelah mungkin lebih cepat.",
+        "如果走旁边那条路可能更快。"
+      ],
+      [
+        "Coba cek rute satunya, siapa tahu lebih lancar.",
+        "看看另一条路线，说不定更顺。"
+      ]
+    ],
+    "ask-recommendation": [
+      [
+        "Yang enak di sini apa?",
+        "这里什么好吃？"
+      ],
+      [
+        "Kalau mau yang ringan, pilih apa ya?",
+        "如果想吃清淡一点，选什么好？"
+      ]
+    ],
+    "order-food": [
+      [
+        "Saya pesan yang ini satu, ya.",
+        "我要这个一份。"
+      ],
+      [
+        "Yang ini jangan terlalu pedas, ya.",
+        "这个不要太辣。"
+      ]
+    ],
+    "comment-taste": [
+      [
+        "Rasanya enak dan tidak terlalu berat.",
+        "味道不错，也不会太腻。"
+      ],
+      [
+        "Menurut saya agak asin, tapi masih enak.",
+        "我觉得有点咸，不过还是挺好吃。"
+      ]
+    ],
+    "ask-price": [
+      [
+        "Yang ini berapa harganya?",
+        "这个多少钱？"
+      ],
+      [
+        "Kalau ambil dua, harganya tetap sama?",
+        "如果拿两个，价格还是一样吗？"
+      ]
+    ],
+    "compare": [
+      [
+        "Yang ini lebih murah, tapi ukurannya juga lebih kecil.",
+        "这个更便宜，不过尺寸也更小。"
+      ],
+      [
+        "Kualitasnya mirip, bedanya cuma ukuran.",
+        "质量差不多，区别只是尺寸。"
+      ]
+    ],
+    "request-item": [
+      [
+        "Ada ukuran yang lebih kecil?",
+        "有更小一点的吗？"
+      ],
+      [
+        "Kalau yang ini habis, ada pilihan lain?",
+        "如果这个没货，还有别的选择吗？"
+      ]
+    ],
+    "report-problem": [
+      [
+        "Ada sedikit masalah dengan barang ini.",
+        "这个东西有点问题。"
+      ],
+      [
+        "Sepertinya datanya tidak sesuai dengan pesanan saya.",
+        "信息好像和我的订单不一致。"
+      ]
+    ],
+    "offer-solution": [
+      [
+        "Bisa ditukar atau dikembalikan.",
+        "可以换货或者退货。"
+      ],
+      [
+        "Kami cek dulu, nanti kami kabari lagi.",
+        "我们先查一下，之后再通知你。"
+      ]
+    ],
+    "give-instruction": [
+      [
+        "Coba ikuti langkah ini dulu.",
+        "先按照这个步骤试一下。"
+      ],
+      [
+        "Setelah itu, cek lagi apakah sudah bisa.",
+        "之后再检查一下能不能用了。"
+      ]
+    ],
+    "give-advice": [
+      [
+        "Istirahat dulu dan minum cukup air.",
+        "先休息，多喝点水。"
+      ],
+      [
+        "Kalau makin parah, sebaiknya periksa.",
+        "如果更严重，最好去检查。"
+      ]
+    ],
+    "describe-symptom": [
+      [
+        "Sejak tadi pagi badan saya agak tidak enak.",
+        "从今天早上开始我身体有点不舒服。"
+      ],
+      [
+        "Keluhannya belum hilang sejak kemarin.",
+        "从昨天开始症状还没消失。"
+      ]
+    ],
+    "ask-condition": [
+      [
+        "Sekarang masih terasa?",
+        "现在还有感觉吗？"
+      ],
+      [
+        "Sudah lebih baik atau masih sama?",
+        "好一点了还是一样？"
+      ]
+    ],
+    "ask-duration": [
+      [
+        "Sudah berapa lama seperti ini?",
+        "这样多久了？"
+      ],
+      [
+        "Mulainya sejak kapan?",
+        "从什么时候开始的？"
+      ]
+    ],
+    "state-plan": [
+      [
+        "Awalnya kami mau pergi sore ini.",
+        "本来我们打算今天下午出去。"
+      ],
+      [
+        "Rencananya besok kami berangkat lebih pagi.",
+        "计划明天早点出发。"
+      ]
+    ],
+    "suggest-alternative": [
+      [
+        "Kalau begitu, kita cari pilihan yang lebih sederhana saja.",
+        "那样的话，我们就找个更简单的选择吧。"
+      ],
+      [
+        "Kalau cuacanya begini, lebih baik rencananya diganti.",
+        "天气这样的话，最好换个计划。"
+      ]
+    ],
+    "agree": [
+      [
+        "Boleh, saya juga lebih nyaman begitu.",
+        "可以，我也觉得那样更舒服。"
+      ],
+      [
+        "Setuju, yang penting tidak perlu buru-buru.",
+        "同意，重要的是不用着急。"
+      ]
+    ],
+    "ask-feeling": [
+      [
+        "Kamu sebenarnya kepikiran soal apa?",
+        "你其实在想什么？"
+      ],
+      [
+        "Kamu kelihatan agak kepikiran. Ada masalah?",
+        "你看起来有点心事，怎么了？"
+      ]
+    ],
+    "listen": [
+      [
+        "Oh, pantes kamu kepikiran terus.",
+        "哦，难怪你一直在想。"
+      ],
+      [
+        "Saya paham kenapa kamu merasa begitu.",
+        "我明白你为什么会有这种感觉。"
+      ]
+    ],
+    "give-advice-softly": [
+      [
+        "Kalau saya jadi kamu, saya mungkin tunggu sebentar dulu.",
+        "如果是我，我可能会先等等。"
+      ],
+      [
+        "Mungkin lebih baik dibicarakan pelan-pelan.",
+        "也许慢慢谈比较好。"
+      ]
+    ],
+    "ask-opinion": [
+      [
+        "Kalau menurut kamu gimana?",
+        "你怎么看？"
+      ],
+      [
+        "Kamu sendiri maunya bagaimana?",
+        "你自己想怎么样？"
+      ]
+    ],
+    "reach-agreement": [
+      [
+        "Oke, kita pikirkan lagi dulu sebelum memutuskan.",
+        "好，我们决定前再想想。"
+      ],
+      [
+        "Berarti untuk sekarang kita sepakat sampai di sini dulu.",
+        "也就是说现在我们先这样达成一致。"
+      ]
+    ],
+    "ask-schedule": [
+      [
+        "Kita berangkat jam berapa?",
+        "我们几点出发？"
+      ],
+      [
+        "Kalau berangkat pagi, kira-kira sampai jam berapa?",
+        "如果早上出发，大概几点到？"
+      ]
+    ],
+    "compare-route": [
+      [
+        "Rute ini lebih dekat, tapi biasanya lebih padat.",
+        "这条路线更近，不过通常更堵。"
+      ],
+      [
+        "Yang satunya lebih jauh, tapi jalannya lebih lancar.",
+        "另一条更远，不过路更顺。"
+      ]
+    ],
+    "confirm-plan": [
+      [
+        "Oke, jadi kita pakai rencana ini saja.",
+        "好，那我们就按这个计划。"
+      ],
+      [
+        "Sip, saya catat waktunya.",
+        "好，我记下时间。"
+      ]
+    ],
+    "confirm-booking": [
+      [
+        "Saya sudah pesan kamar atas nama ini.",
+        "我已经用这个名字订房了。"
+      ],
+      [
+        "Boleh dicek reservasinya?",
+        "可以查一下预订吗？"
+      ]
+    ],
+    "ask-facility": [
+      [
+        "Wi-Fi-nya bisa dipakai di kamar?",
+        "房间里能用Wi-Fi吗？"
+      ],
+      [
+        "Sarapan mulai jam berapa?",
+        "早餐几点开始？"
+      ]
+    ],
+    "request-help": [
+      [
+        "Boleh minta bantu cek ini?",
+        "可以帮忙看一下这个吗？"
+      ],
+      [
+        "Kalau bisa, saya mau minta satu hal lagi.",
+        "如果可以，我还想再请求一件事。"
+      ]
+    ],
+    "thanks": [
+      [
+        "Oke, terima kasih ya.",
+        "好，谢谢。"
+      ],
+      [
+        "Sip, makasih banyak.",
+        "好，非常感谢。"
+      ]
+    ],
+    "confirm-number": [
+      [
+        "Nomornya sudah benar, kan?",
+        "号码已经对了吧？"
+      ],
+      [
+        "Coba kita cek jumlahnya sekali lagi.",
+        "我们再检查一次金额。"
+      ]
+    ],
+    "report-payment": [
+      [
+        "Pembayarannya sudah saya kirim.",
+        "款已经付了。"
+      ],
+      [
+        "Transaksinya sudah berhasil dari sini.",
+        "我这边交易已经成功了。"
+      ]
+    ],
+    "ask-proof": [
+      [
+        "Perlu saya kirim bukti transfer?",
+        "需要我发转账证明吗？"
+      ],
+      [
+        "Bukti pembayarannya dikirim ke mana?",
+        "付款证明发到哪里？"
+      ]
+    ],
+    "confirm-quantity": [
+      [
+        "Jumlahnya sama dengan yang di dokumen?",
+        "数量和文件上一样吗？"
+      ],
+      [
+        "Coba hitung sekali lagi sebelum dipindahkan.",
+        "移动之前再数一次。"
+      ]
+    ],
+    "report-difference": [
+      [
+        "Ada satu jumlah yang berbeda.",
+        "有一项数量不一样。"
+      ],
+      [
+        "Di dokumen tertulis lain, jadi perlu dicek.",
+        "文件上写的不一样，所以需要检查。"
+      ]
+    ],
+    "report-status": [
+      [
+        "Yang ini sudah selesai, tinggal satu lagi.",
+        "这个已经完成了，只剩一个。"
+      ],
+      [
+        "Hampir semua sudah beres.",
+        "几乎都办好了。"
+      ]
+    ]
+  },
+  "discourse_frames": [
+    {
+      "id": "problem-solution",
+      "steps": [
+        "normal situation",
+        "small problem",
+        "check/ask",
+        "simple solution",
+        "calm ending"
+      ]
+    },
+    {
+      "id": "plan-change",
+      "steps": [
+        "original plan",
+        "new condition",
+        "compare options",
+        "choose",
+        "result"
+      ]
+    },
+    {
+      "id": "request-response",
+      "steps": [
+        "need",
+        "request",
+        "clarification",
+        "response",
+        "confirmation"
+      ]
+    },
+    {
+      "id": "observation-reaction",
+      "steps": [
+        "observe",
+        "notice detail",
+        "reaction",
+        "small action",
+        "reflection"
+      ]
+    },
+    {
+      "id": "before-after",
+      "steps": [
+        "before state",
+        "action",
+        "intermediate result",
+        "final state",
+        "short reflection"
+      ]
+    },
+    {
+      "id": "choice-reason",
+      "steps": [
+        "two options",
+        "difference",
+        "reason",
+        "choice",
+        "result"
+      ]
+    },
+    {
+      "id": "minor-incident",
+      "steps": [
+        "routine",
+        "unexpected event",
+        "safe response",
+        "resolution",
+        "resume routine"
+      ]
+    },
+    {
+      "id": "social-support",
+      "steps": [
+        "friend shares",
+        "listen",
+        "clarify",
+        "gentle advice",
+        "relief"
+      ]
+    }
+  ],
+  "anti_patterns": [
+    "Do not put semantically unrelated target words into one sentence only to increase coverage.",
+    "Do not overuse lalu/kemudian in every sentence.",
+    "Do not use formal connectors such as dengan demikian repeatedly in casual dialogue.",
+    "Do not translate Chinese word order literally.",
+    "Do not make every dialogue line a textbook-complete sentence; short natural replies are allowed.",
+    "Do not use slang that the learner has never seen merely to sound local."
+  ]
+}

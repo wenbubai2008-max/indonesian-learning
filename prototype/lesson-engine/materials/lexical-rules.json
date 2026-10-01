@@ -1,0 +1,687 @@
+{
+  "version": 1,
+  "policy": {
+    "fallback_tags": [
+      "daily"
+    ],
+    "max_tags_per_word": 5,
+    "note": "Tags are only for scene matching. Eligibility always comes from production runtime/context."
+  },
+  "chinese_keyword_tags": [
+    {
+      "re": "工作|老板|上司|下属|同事|职位|岗位|面试|公司|会议|报告|任务|客户|员工|工资|收入|销售|营业额|仓库",
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "re": "账号|密码|下载|上传|网络|手机|电池|删除|回复|文件|打印|打字|数据",
+      "tags": [
+        "digital",
+        "document"
+      ]
+    },
+    {
+      "re": "吃|饭|食物|好吃|美味|味道|酸|甜|辣|饿|口渴|汤|勺子|烹饪",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "re": "病|发烧|腹泻|拉肚子|痒|肿|伤|治愈|恢复|身体|健康|医生|诊所|药",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "re": "车|道路|距离|航班|旅行|出发|到达|乘客|撞|事故|抛锚|堵车|路线|移动|后退",
+      "tags": [
+        "transport",
+        "movement"
+      ]
+    },
+    {
+      "re": "买|购物|价格|商品|退货|交换|订单|收据|发票|支付|亏损|钱|资金",
+      "tags": [
+        "shopping",
+        "finance"
+      ]
+    },
+    {
+      "re": "家|房|建筑|房间|公寓|电|桌|门|清理|整齐|脏|放置",
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "re": "喜欢|恋爱|约会|结婚|离婚|伴侣|嫉妒|感情|朋友|拥抱|家人",
+      "tags": [
+        "social",
+        "relationship"
+      ]
+    },
+    {
+      "re": "担心|焦虑|失望|生气|烦|害羞|放松|后悔|情绪|感觉|抱怨",
+      "tags": [
+        "feeling",
+        "social"
+      ]
+    },
+    {
+      "re": "说|问|回答|通知|告诉|解释|强调|评论|提到|讨论|声明|表达|叫|喊",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "re": "计划|决定|选择|安排|准备|下一步|方法|办法|目标|意图|打算",
+      "tags": [
+        "plan",
+        "action"
+      ]
+    },
+    {
+      "re": "问题|错误|困难|麻烦|障碍|损失|不足|严重|混乱|失败",
+      "tags": [
+        "problem"
+      ]
+    },
+    {
+      "re": "位置|旁边|角度|方向|地点|位于|边界|场地|街|远|近",
+      "tags": [
+        "location"
+      ]
+    },
+    {
+      "re": "法律|权利|政策|禁止|监狱|惩罚|规定|遵守|公平",
+      "tags": [
+        "law"
+      ]
+    },
+    {
+      "re": "雨|云|空气|天气|树|叶|自然",
+      "tags": [
+        "weather",
+        "nature"
+      ]
+    },
+    {
+      "re": "数字|数量|计算|测量|金额|比例|分数|价值",
+      "tags": [
+        "number"
+      ]
+    },
+    {
+      "re": "给|帮助|提供|邀请|递送|带来|处理|照料|服务",
+      "tags": [
+        "service",
+        "action"
+      ]
+    },
+    {
+      "re": "走|跑|跳|扔|拿|推|放|开|关|切|擦|移动|触摸",
+      "tags": [
+        "action",
+        "movement"
+      ]
+    },
+    {
+      "re": "如果|假如|即使|虽然|为了|以便|因为|所以|但是|然而|同时|接着",
+      "tags": [
+        "connector"
+      ]
+    },
+    {
+      "re": "特别|普通|漂亮|奢华|传统|古老|现代|实用|方便|著名",
+      "tags": [
+        "description"
+      ]
+    },
+    {
+      "re": "时间|星期|昨天|今天|明天|后天|早|晚|期间|瞬间",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "re": "故事|事件|新闻|文章|标题|研究|知识|学校|教育|校园",
+      "tags": [
+        "information"
+      ]
+    }
+  ],
+  "curated": {
+    "mundur": {
+      "tags": [
+        "movement",
+        "transport",
+        "work"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "mundur sedikit",
+        "mundur dari jabatan",
+        "tidak mau mundur"
+      ],
+      "spoken_note": "Natural in both literal and figurative use."
+    },
+    "biarpun": {
+      "tags": [
+        "connector"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "biarpun begitu",
+        "biarpun hujan"
+      ],
+      "spoken_note": "Walaupun is more neutral; biarpun is still common."
+    },
+    "haus": {
+      "tags": [
+        "health",
+        "food"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "merasa haus",
+        "haus sekali"
+      ],
+      "spoken_note": "Very common daily word."
+    },
+    "meledak": {
+      "tags": [
+        "incident",
+        "transport",
+        "problem"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "ban meledak",
+        "tiba-tiba meledak"
+      ],
+      "spoken_note": "Good in incident scenes."
+    },
+    "meletakkan": {
+      "tags": [
+        "home",
+        "object",
+        "action"
+      ],
+      "register": "standard",
+      "collocations": [
+        "meletakkan di meja"
+      ],
+      "spoken_note": "Daily speech often prefers taruh."
+    },
+    "memeluk": {
+      "tags": [
+        "social",
+        "relationship",
+        "action"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "memeluk erat",
+        "memeluk anak"
+      ],
+      "spoken_note": "Natural common verb."
+    },
+    "mengunduh": {
+      "tags": [
+        "digital",
+        "document"
+      ],
+      "register": "standard",
+      "collocations": [
+        "mengunduh file",
+        "mengunduh dokumen"
+      ],
+      "spoken_note": "Daily speech often says download."
+    },
+    "menuduh": {
+      "tags": [
+        "communication",
+        "conflict",
+        "law"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "menuduh tanpa bukti",
+        "menuduh seseorang"
+      ],
+      "spoken_note": "Stronger than menyalahkan."
+    },
+    "menyembuhkan": {
+      "tags": [
+        "health"
+      ],
+      "register": "standard",
+      "collocations": [
+        "menyembuhkan luka",
+        "membantu menyembuhkan"
+      ],
+      "spoken_note": "Do not overclaim cure in health advice."
+    },
+    "seandainya": {
+      "tags": [
+        "connector",
+        "plan"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "seandainya bisa",
+        "seandainya besok"
+      ],
+      "spoken_note": "Hypothetical; kalau is broader."
+    },
+    "mencret": {
+      "tags": [
+        "health"
+      ],
+      "register": "colloquial",
+      "collocations": [
+        "lagi mencret",
+        "agak mencret"
+      ],
+      "spoken_note": "Colloquial; diare is neutral/medical."
+    },
+    "kata sandi": {
+      "tags": [
+        "digital"
+      ],
+      "register": "standard",
+      "collocations": [
+        "lupa kata sandi",
+        "ganti kata sandi"
+      ],
+      "spoken_note": "password is common in casual speech."
+    },
+    "agar": {
+      "tags": [
+        "connector",
+        "purpose"
+      ],
+      "register": "formal-neutral",
+      "collocations": [
+        "agar lebih mudah",
+        "agar tetap aman"
+      ],
+      "spoken_note": "biar/supaya are usually more conversational."
+    },
+    "lezat": {
+      "tags": [
+        "food"
+      ],
+      "register": "standard",
+      "collocations": [
+        "makanan lezat",
+        "rasanya lezat"
+      ],
+      "spoken_note": "enak is much more common in daily speech."
+    },
+    "menyalin": {
+      "tags": [
+        "digital",
+        "document",
+        "work"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "menyalin teks",
+        "menyalin nomor"
+      ],
+      "spoken_note": "Copying content, not moving it."
+    },
+    "seraya": {
+      "tags": [
+        "connector"
+      ],
+      "register": "formal",
+      "collocations": [
+        "tersenyum seraya berkata"
+      ],
+      "spoken_note": "Use sambil in ordinary dialogue."
+    },
+    "kabur": {
+      "tags": [
+        "movement",
+        "incident",
+        "description"
+      ],
+      "register": "neutral-colloquial",
+      "collocations": [
+        "kabur dari tempat",
+        "gambarnya kabur"
+      ],
+      "spoken_note": "Two common meanings: run away; blurry."
+    },
+    "menegaskan": {
+      "tags": [
+        "communication",
+        "work"
+      ],
+      "register": "neutral-formal",
+      "collocations": [
+        "menegaskan bahwa"
+      ],
+      "spoken_note": "Stronger and more explicit than menjelaskan."
+    },
+    "niat": {
+      "tags": [
+        "plan",
+        "feeling"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "punya niat",
+        "niat untuk"
+      ],
+      "spoken_note": "Very useful active word."
+    },
+    "mengeluh": {
+      "tags": [
+        "communication",
+        "feeling"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "mengeluh soal",
+        "terus mengeluh"
+      ],
+      "spoken_note": "Common daily word."
+    },
+    "memanggil": {
+      "tags": [
+        "communication",
+        "social"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "memanggil teman",
+        "dipanggil atasan"
+      ],
+      "spoken_note": "Can mean call/summon/name depending context."
+    },
+    "melawan": {
+      "tags": [
+        "conflict",
+        "action"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "melawan aturan",
+        "melawan lawan"
+      ],
+      "spoken_note": "Context matters; not always physical fighting."
+    },
+    "bebas": {
+      "tags": [
+        "description",
+        "choice"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "bebas memilih",
+        "bebas biaya"
+      ],
+      "spoken_note": "Can mean free/liberated or free of charge."
+    },
+    "menunjukkan": {
+      "tags": [
+        "communication",
+        "work"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "menunjukkan hasil",
+        "menunjukkan bahwa"
+      ],
+      "spoken_note": "High-value productive verb."
+    },
+    "layak": {
+      "tags": [
+        "opinion",
+        "work",
+        "description"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "layak dipakai",
+        "layak dipertimbangkan"
+      ],
+      "spoken_note": "Worth/fit/eligible depending construction."
+    },
+    "ngotot": {
+      "tags": [
+        "communication",
+        "conflict"
+      ],
+      "register": "colloquial",
+      "collocations": [
+        "ngotot mau",
+        "terus ngotot"
+      ],
+      "spoken_note": "Strong informal insistence."
+    },
+    "sebel": {
+      "tags": [
+        "feeling"
+      ],
+      "register": "colloquial",
+      "collocations": [
+        "lagi sebel",
+        "sebel banget"
+      ],
+      "spoken_note": "Very natural spoken word."
+    },
+    "jomblo": {
+      "tags": [
+        "relationship",
+        "social"
+      ],
+      "register": "colloquial",
+      "collocations": [
+        "masih jomblo"
+      ],
+      "spoken_note": "Informal single/not dating."
+    },
+    "cerewet": {
+      "tags": [
+        "social",
+        "description"
+      ],
+      "register": "neutral-colloquial",
+      "collocations": [
+        "orangnya cerewet",
+        "cerewet soal"
+      ],
+      "spoken_note": "Can mean talkative or fussy/nagging."
+    },
+    "pembangunan": {
+      "tags": [
+        "work",
+        "home",
+        "location"
+      ],
+      "register": "standard",
+      "collocations": [
+        "proyek pembangunan",
+        "pembangunan gedung"
+      ],
+      "spoken_note": "Process/development, not the building itself."
+    },
+    "berarti": {
+      "tags": [
+        "communication",
+        "connector"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "berarti kamu",
+        "itu berarti"
+      ],
+      "spoken_note": "Useful inference marker in speech."
+    },
+    "beliau": {
+      "tags": [
+        "social",
+        "communication"
+      ],
+      "register": "respectful",
+      "collocations": [
+        "menurut beliau",
+        "beliau mengatakan"
+      ],
+      "spoken_note": "Respectful third-person pronoun."
+    },
+    "bangunan": {
+      "tags": [
+        "home",
+        "location"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "bangunan baru",
+        "sebuah bangunan"
+      ],
+      "spoken_note": "Noun; contrast with membangun."
+    },
+    "membangun": {
+      "tags": [
+        "home",
+        "work",
+        "action"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "membangun rumah",
+        "membangun tim"
+      ],
+      "spoken_note": "Literal or figurative build."
+    },
+    "sesudah": {
+      "tags": [
+        "time",
+        "connector"
+      ],
+      "register": "neutral",
+      "collocations": [
+        "sesudah makan",
+        "sesudah itu"
+      ],
+      "spoken_note": "setelah is often more common."
+    },
+    "siapkan": {
+      "tags": [
+        "action",
+        "work",
+        "home"
+      ],
+      "register": "neutral-spoken",
+      "collocations": [
+        "siapkan dulu",
+        "siapkan dokumen"
+      ],
+      "spoken_note": "Imperative/colloquial surface form of menyiapkan."
+    },
+    "buat": {
+      "tags": [
+        "action",
+        "purpose"
+      ],
+      "register": "spoken",
+      "collocations": [
+        "buat apa",
+        "buat kerja",
+        "buat kamu"
+      ],
+      "spoken_note": "Very frequent; can mean make or for."
+    },
+    "antre": {
+      "tags": [
+        "daily",
+        "service",
+        "waiting"
+      ],
+      "register": "neutral-spoken",
+      "collocations": [
+        "antre di kasir",
+        "harus antre"
+      ],
+      "spoken_note": "antri is common nonstandard spelling; antre is standard."
+    }
+  },
+  "scene_preferences": {
+    "digital": [
+      "account-phone",
+      "work-morning",
+      "online-order"
+    ],
+    "work": [
+      "work-morning",
+      "work-meeting",
+      "warehouse-delivery"
+    ],
+    "food": [
+      "restaurant-lunch",
+      "mild-illness",
+      "weekend-errands"
+    ],
+    "health": [
+      "mild-illness",
+      "clinic-visit"
+    ],
+    "transport": [
+      "commute-traffic",
+      "ride-hailing",
+      "travel-short-trip"
+    ],
+    "shopping": [
+      "market-shopping",
+      "online-order",
+      "weekend-errands"
+    ],
+    "finance": [
+      "bank-payment",
+      "online-order"
+    ],
+    "home": [
+      "home-cleaning",
+      "apartment-problem"
+    ],
+    "relationship": [
+      "friend-chat",
+      "relationship-plan"
+    ],
+    "social": [
+      "friend-chat",
+      "relationship-plan",
+      "restaurant-lunch"
+    ],
+    "communication": [
+      "work-meeting",
+      "friend-chat",
+      "work-morning"
+    ],
+    "plan": [
+      "work-meeting",
+      "weather-plan",
+      "travel-short-trip"
+    ],
+    "law": [
+      "work-meeting"
+    ],
+    "weather": [
+      "weather-plan",
+      "commute-traffic"
+    ],
+    "logistics": [
+      "warehouse-delivery",
+      "online-order"
+    ],
+    "daily": [
+      "weekend-errands",
+      "work-morning"
+    ]
+  }
+}
