@@ -113,6 +113,7 @@ test('fallback workflow has one existing twice-daily clock and valid Bash steps'
  assert(workflow.includes('group: learning-data-write')||workflow.includes("'learning-data-write'"));
  assert(workflow.includes('inputs[recover_date]')&&workflow.includes('inputs[recover_session]'));
  const names=[
+   'Check a newly created release scaffold without holding the main write lock',
    'Recover immediately after an eligible lesson release fails',
    'Generate missing lesson with V2 and commit the two-file transaction',
    'Request Pages build after GitHub Actions fallback publication'
@@ -134,5 +135,74 @@ test('fallback workflow has one existing twice-daily clock and valid Bash steps'
  }
  assert(workflow.includes('node .github/scripts/recover-missing-lesson.js'));
  assert(workflow.includes('FALLBACK_PAGES_BUILD_REQUESTED'));
+ assert(workflow.includes('  create:'));
+ assert(workflow.includes("github.event_name == 'create' && github.event.ref_type == 'branch'"));
+ assert(workflow.includes('lesson-watch-{0}'));
+ assert(workflow.includes("github.ref == 'refs/heads/main' && github.event_name != 'create'"));
+ assert(workflow.includes('LESSON_CREATE_FALLBACK_DISPATCHED'));
+ assert(workflow.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
+});
+
+test('real watcher Bash ignores non-release branches and dispatches only a missing main lesson',()=>{
+ const cp=require('node:child_process'),os=require('node:os');
+ const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'lesson-watch-test-'));
+ try{
+   const source=fs.readFileSync(path.join(base,'.github/workflows/sync-daily-vocab.yml'),'utf8').split('\n');
+   const n='      - name: Check a newly created release scaffold without holding the main write lock';
+   const step=source.indexOf(n);
+   assert(step>0);
+   const runner=source.findIndex((x,i)=>i>step&&x==='        run: |');
+   assert(runner>step);
+   const body=[];
+   for(let i=runner+1;i<source.length;i++){
+     if(source[i].startsWith('          '))body.push(source[i].slice(10));
+     else if(!source[i].trim())body.push('');
+     else break;
+   }
+   const dateStub=path.join(tmp,'date'),ghStub=path.join(tmp,'gh'),sleepStub=path.join(tmp,'sleep');
+   fs.writeFileSync(dateStub,[
+     '#!/bin/bash',
+     'case "$*" in',
+     '  *"+%Y-%m-%d"*) echo 2026-10-01 ;;',
+     '  *"+%H"*) echo 18 ;;',
+     '  *"-d"*"+%s"*) echo 1000 ;;',
+     '  *"+%s"*) echo 1001 ;;',
+     '  *) /usr/bin/date "$@" ;;',
+     'esac'
+   ].join('\n')+'\n');
+   fs.writeFileSync(ghStub,[
+     '#!/bin/bash',
+     'case "$*" in',
+     '  *"/contents/data/daily/index.json?ref=main"*) echo "$FAKE_INDEX_B64" ;;',
+     '  *"/contents/data/daily/2026-10-01-pm.json?ref=main"*) test "$FAKE_LESSON_EXISTS" = yes ;;',
+     '  *"--method POST"*) printf "DISPATCH %s\\n" "$*" >> "$FAKE_DISPATCH_LOG" ;;',
+     '  *) echo "Unexpected gh api call: $*" >&2; exit 9 ;;',
+     'esac'
+   ].join('\n')+'\n');
+   fs.writeFileSync(sleepStub,'#!/bin/bash\\necho "Unexpected sleep: $*" >&2\\nexit 8\\n');
+   for(const f of [dateStub,ghStub,sleepStub])fs.chmodSync(f,0o755);
+   const log=path.join(tmp,'dispatch.log');
+   const run=(ref,flag,fileExists)=>{
+     fs.rmSync(log,{force:true});
+     const index={dates:[{date:'2026-10-01',am:true,pm:flag}]};
+     const env={...process.env,PATH:tmp+':'+process.env.PATH,
+       CREATED_REF:ref,GITHUB_REPOSITORY:'test/indonesian-learning',GH_TOKEN:'unit-test',
+       FAKE_INDEX_B64:Buffer.from(JSON.stringify(index)).toString('base64'),
+       FAKE_LESSON_EXISTS:fileExists?'yes':'no',FAKE_DISPATCH_LOG:log};
+     const result=cp.spawnSync('bash',['-c',body.join('\n')+'\n'],{env,encoding:'utf8'});
+     assert.equal(result.status,0,ref+' stdout='+result.stdout+' stderr='+result.stderr);
+     return {stdout:result.stdout,dispatched:fs.existsSync(log)?fs.readFileSync(log,'utf8'):''};
+   };
+   const probe=run('lesson-watch-test-probe',false,false);
+   assert(probe.stdout.includes('LESSON_CREATE_IGNORED'));
+   assert.equal(probe.dispatched,'');
+   const done=run('lesson-release-2026-10-01-pm',true,true);
+   assert(done.stdout.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
+   assert.equal(done.dispatched,'');
+   const missing=run('lesson-release-2026-10-01-pm',false,false);
+   assert(missing.stdout.includes('LESSON_CREATE_FALLBACK_DISPATCHED'));
+   assert(missing.dispatched.includes('inputs[recover_date]=2026-10-01'));
+   assert(missing.dispatched.includes('inputs[recover_session]=pm'));
+ }finally{fs.rmSync(tmp,{recursive:true,force:true})}
 });
 console.log('FALLBACK_RECOVERY_TEST '+JSON.stringify({ok:true,passed}));
