@@ -13,6 +13,10 @@ on:
       - '.github/scripts/publish-staged-lesson.js'
       - '.github/scripts/test-publish-staged-lesson.js'
       - '.github/scripts/github-publish-adapter.js'
+      - '.github/scripts/recover-missing-lesson.js'
+      - '.github/scripts/test-recover-missing-lesson.js'
+      - 'prototype/lesson-engine/engine/core.js'
+      - 'prototype/lesson-engine/materials/materials-bundle.json'
       - '.github/scripts/test-real-published-lesson.js'
       - '.github/scripts/check-release-pr.js'
       - '.github/scripts/test-release-pr.js'
@@ -31,6 +35,10 @@ on:
       - '.github/scripts/test-release-pr.js'
       - '.github/scripts/plan-lesson-publication.js'
       - '.github/scripts/validate-lesson-candidate.js'
+      - '.github/scripts/recover-missing-lesson.js'
+      - '.github/scripts/test-recover-missing-lesson.js'
+      - 'prototype/lesson-engine/engine/core.js'
+      - 'prototype/lesson-engine/materials/materials-bundle.json'
       - '.github/scripts/publish-extensive-reading-candidate.js'
       - 'data/extensive-reading-candidate.json'
       - 'data/extensive-reading-data.js'
@@ -40,15 +48,24 @@ on:
       - 'data/daily/*-am.json'
       - 'data/daily/*-pm.json'
   schedule:
-    # Safety fallback only. Normal lesson sync is triggered by the atomic lesson+index push.
-    # 01:12 and 11:12 UTC = 08:12 and 18:12 Jakarta; the scheduled run is a read-only gate when healthy.
-    # Recovery is idempotent; it cannot invent a lesson that was never committed.
-    # Unchanged derived payloads preserve generated_at using semantic JSON comparison; no empty Pages deployment.
-    - cron: '12 1,11 * * *'
+    # Move the existing two daily checks to 08:05 and 18:05 in Jakarta.
+    # Run V2 only when the official lesson/index is absent. Actions may start late.
+    - cron: '5 1 * * *'
+    - cron: '5 11 * * *'
   workflow_dispatch:
+    inputs:
+      recover_date:
+        description: 'Automatic failed-release recovery: YYYY-MM-DD'
+        required: false
+        type: string
+      recover_session:
+        description: 'Automatic failed-release recovery: am or pm'
+        required: false
+        type: string
 permissions:
   contents: write
   issues: write
+  pages: write
 concurrency:
   # Main writes share the existing lock; read-only PR tests use their own group.
   group: ${{ github.event_name == 'pull_request' && format('lesson-pr-{0}', github.event.pull_request.number) || 'learning-data-write' }}
@@ -73,6 +90,18 @@ jobs:
           set -Eeuo pipefail
           node --check .github/scripts/validate-lesson-candidate.js
           node --check .github/scripts/plan-lesson-publication.js
+          node --check .github/scripts/recover-missing-lesson.js
+          node --check .github/scripts/test-recover-missing-lesson.js
+          node .github/scripts/test-recover-missing-lesson.js
+          # Live baseline rehearsal without --write; no official lesson or index is changed.
+          smoke_date="$(node -p "require('./data/lesson-context.json').target.date")"
+          smoke_session="$(node -p "require('./data/lesson-context.json').target.session")"
+          node .github/scripts/recover-missing-lesson.js \
+            --date "$smoke_date" --session "$smoke_session" --main-head "$(git rev-parse HEAD)" \
+            > "$RUNNER_TEMP/fallback-smoke.txt"
+          cat "$RUNNER_TEMP/fallback-smoke.txt"
+          grep -Eq '"status":"(ready|already_published)"' "$RUNNER_TEMP/fallback-smoke.txt"
+          git diff --exit-code -- data/daily/index.json
           node --check .github/scripts/check-release-pr.js
           node --check .github/scripts/test-release-pr.js
           node .github/scripts/test-lesson-candidate.js
@@ -86,6 +115,54 @@ jobs:
           git worktree add --detach "$baseline_guard_dir" "${{ github.event.pull_request.base.sha }}"
           (cd "$baseline_guard_dir" && node .github/scripts/regression-guard.js)
           git worktree remove --force "$baseline_guard_dir"
+      - name: Rehearse actual V2 lesson and index write outside the repository
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          tmp="$RUNNER_TEMP/fallback-write-rehearsal"
+          mkdir -p "$tmp"
+          cp -a data "$tmp/data"
+          day="$(node -p "require('./data/lesson-context.json').target.date")"
+          slot="$(node -p "require('./data/lesson-context.json').target.session")"
+          if [ -e "data/daily/$day-$slot.json" ]; then
+            echo 'Target was already published in this PR snapshot; fixture tests cover write path.'
+            exit 0
+          fi
+          (
+            cd "$tmp"
+            node "$GITHUB_WORKSPACE/.github/scripts/recover-missing-lesson.js" \
+              --date "$day" --session "$slot" --main-head "$(git -C "$GITHUB_WORKSPACE" rev-parse HEAD)" --write
+          ) > "$RUNNER_TEMP/fallback-write-result.txt"
+          cat "$RUNNER_TEMP/fallback-write-result.txt"
+          grep -Fq '"status":"ready"' "$RUNNER_TEMP/fallback-write-result.txt"
+          test -s "$tmp/data/daily/$day-$slot.json"
+          (
+            cd "$tmp"
+            node "$GITHUB_WORKSPACE/.github/scripts/recover-missing-lesson.js" \
+              --date "$day" --session "$slot" --main-head "$(git -C "$GITHUB_WORKSPACE" rev-parse HEAD)"
+          ) > "$RUNNER_TEMP/fallback-repeat-result.txt"
+          cat "$RUNNER_TEMP/fallback-repeat-result.txt"
+          grep -Fq '"status":"already_published"' "$RUNNER_TEMP/fallback-repeat-result.txt"
+          FALLBACK_DATE="$day" FALLBACK_SESSION="$slot" FALLBACK_CLONE="$tmp/data" node <<'VERIFY'
+          const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+          const a=path.join(process.env.GITHUB_WORKSPACE,'data'),b=process.env.FALLBACK_CLONE;
+          const walk=(root)=>{
+            const out=new Map(),visit=(p)=>{
+              for(const e of fs.readdirSync(p,{withFileTypes:true})){
+                const x=path.join(p,e.name);
+                if(e.isDirectory())visit(x);
+                else if(e.isFile())out.set(path.relative(root,x).replace(/\\/g,'/'),fs.readFileSync(x));
+              }
+            };visit(root);return out;
+          };
+          const before=walk(a),after=walk(b),delta=[];
+          for(const key of new Set([...before.keys(),...after.keys()]))
+            if(!before.has(key)||!after.has(key)||!before.get(key).equals(after.get(key)))delta.push(key);
+          assert.deepEqual(delta.sort(),
+            ['daily/index.json','daily/'+process.env.FALLBACK_DATE+'-'+process.env.FALLBACK_SESSION+'.json'].sort());
+          console.log('FALLBACK_ISOLATED_TWO_FILE_WRITE_OK '+JSON.stringify(delta));
+          VERIFY
+          git diff --exit-code -- data/daily/index.json
       - name: Reject lesson data outside a named release branch
         shell: bash
         env:
@@ -352,6 +429,24 @@ jobs:
           # response cannot create a false failure or unnecessary duplicate recovery path.
           dispatch_sync "$merge_sha"
 
+      - name: Recover immediately after an eligible lesson release fails
+        if: ${{ failure() && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.user.login == github.repository_owner && contains(github.event.pull_request.body, 'AUTO_PUBLISH_LESSON=1') }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_BRANCH: ${{ github.event.pull_request.head.ref }}
+        run: |
+          set -Eeuo pipefail
+          if [[ ! "$RELEASE_BRANCH" =~ ^lesson-release-([0-9]{4}-[0-9]{2}-[0-9]{2})-(am|pm)$ ]]; then
+            echo 'Not an authorized daily lesson branch; no recovery dispatched.'
+            exit 0
+          fi
+          date="$(echo "$RELEASE_BRANCH" | cut -c 16-25)"
+          session="$(echo "$RELEASE_BRANCH" | sed -E "s/.*-(am|pm)$/\1/")"
+          gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" \
+            -f ref=main -f "inputs[recover_date]=$date" -f "inputs[recover_session]=$session"
+          echo "Dispatched independent V2 fallback for $date $session."
+
   extensive_reading_release:
     if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'extensive-reading-')
     runs-on: ubuntu-latest
@@ -518,6 +613,96 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
+      - name: Generate missing lesson with V2 and commit the two-file transaction
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.recover_date != '' && inputs.recover_session != '')
+        shell: bash
+        env:
+          FALLBACK_CRON: ${{ github.event.schedule }}
+          RECOVER_DATE: ${{ inputs.recover_date }}
+          RECOVER_SESSION: ${{ inputs.recover_session }}
+        run: |
+          set -Eeuo pipefail
+          local_date="$(TZ=Asia/Jakarta date +%Y-%m-%d)"
+          local_hour="$(TZ=Asia/Jakarta date +%H)"
+          if [ "$GITHUB_EVENT_NAME" = schedule ]; then
+            case "$FALLBACK_CRON" in
+              '5 1 * * *') date="$local_date"; session=am ;;
+              '5 11 * * *') date="$local_date"; session=pm ;;
+              *) echo "::error title=Unexpected fallback schedule::$FALLBACK_CRON"; exit 1 ;;
+            esac
+          else
+            date="$RECOVER_DATE"
+            session="$RECOVER_SESSION"
+          fi
+          [[ "$date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] && [[ "$session" =~ ^(am|pm)$ ]] ||
+            { echo '::error title=Invalid recovery request::Expected date and am|pm.'; exit 1; }
+          # Never let a delayed scheduled event or old failed PR publish on another day.
+          if [ "$date" != "$local_date" ] ||
+             { [ "$session" = am ] && { [ "$local_hour" -lt 8 ] || [ "$local_hour" -ge 18 ]; }; } ||
+             { [ "$session" = pm ] && [ "$local_hour" -lt 18 ]; }; then
+            echo "::warning title=Stale or premature fallback::No publication for $date $session at $local_date $local_hour Jakarta."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          candidate="data/daily/$date-$session.json"
+          for attempt in 1 2; do
+            git fetch --no-tags origin main
+            git reset --hard origin/main
+            base="$(git rev-parse HEAD)"
+            node .github/scripts/recover-missing-lesson.js \
+              --date "$date" --session "$session" --main-head "$base" --write \
+              > "$RUNNER_TEMP/fallback-result.txt"
+            cat "$RUNNER_TEMP/fallback-result.txt"
+            if grep -Fq '"status":"already_published"' "$RUNNER_TEMP/fallback-result.txt"; then
+              echo 'Official lesson already exists: fallback is idempotent and stops here.'
+              exit 0
+            fi
+            grep -Fq '"status":"ready"' "$RUNNER_TEMP/fallback-result.txt" ||
+              { echo '::error title=Fallback candidate not approved::No publication.'; exit 1; }
+            cp "$candidate" "$RUNNER_TEMP/fallback-candidate.json"
+            git add -- "$candidate" data/daily/index.json
+            paths="$(git diff --cached --name-only)"
+            expected="$(printf '%s\n' "$candidate" data/daily/index.json | sort)"
+            test "$paths" = "$expected" ||
+              { echo "::error title=Fallback transaction invalid::Expected exactly lesson and index."; exit 1; }
+            git diff --cached --check
+            git commit -m "Publish validated V2 fallback $date $session"
+            git fetch --no-tags origin main
+            if [ "$(git rev-parse origin/main)" != "$base" ]; then
+              echo 'Main advanced during generation: discard candidate and regenerate against latest baseline.'
+              continue
+            fi
+            if git push origin HEAD:main; then
+              git fetch --no-tags origin main
+              git show "origin/main:$candidate" > "$RUNNER_TEMP/fallback-remote.json"
+              cmp "$RUNNER_TEMP/fallback-candidate.json" "$RUNNER_TEMP/fallback-remote.json"
+              flag="$(git show origin/main:data/daily/index.json |
+                jq -r --arg d "$date" --arg s "$session" '[.dates[]? | select(.date==$d)][0][$s] // false')"
+              test "$flag" = true
+              printf '%s %s\n' "$date" "$session" > "$RUNNER_TEMP/fallback-published.txt"
+              echo "FALLBACK_ATOMIC_PUBLISH_OK $date $session"
+              exit 0
+            fi
+            # A Git transport error may occur after GitHub accepted the push.
+            git fetch --no-tags origin main
+            flag="$(git show origin/main:data/daily/index.json |
+              jq -r --arg d "$date" --arg s "$session" '[.dates[]? | select(.date==$d)][0][$s] // false')"
+            if [ "$flag" = true ] && git cat-file -e "origin/main:$candidate" 2>/dev/null; then
+              git show "origin/main:$candidate" > "$RUNNER_TEMP/fallback-remote.json"
+              if cmp -s "$RUNNER_TEMP/fallback-candidate.json" "$RUNNER_TEMP/fallback-remote.json"; then
+                printf '%s %s\n' "$date" "$session" > "$RUNNER_TEMP/fallback-published.txt"
+                echo 'Fallback push landed remotely; confirmed by read-back.'
+              else
+                echo 'Another publisher completed this slot first; retain its official lesson.'
+              fi
+              exit 0
+            fi
+            echo "Fallback push attempt $attempt/2 unsuccessful; retry from latest main only."
+          done
+          echo '::error title=Fallback delivery failed::No force push; old lesson/index retained.'
+          exit 1
+
       - name: Sync vocab safely
         shell: bash
         run: |
@@ -837,6 +1022,22 @@ jobs:
           done
           echo '::error title=Sync push failed::Two safe attempts failed; no force push, no stale rebase. Inspect original git push errors.'
           exit 1
+      - name: Request Pages build after GitHub Actions fallback publication
+        if: success()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -Eeuo pipefail
+          if [ ! -s "$RUNNER_TEMP/fallback-published.txt" ]; then
+            echo 'No V2 publication by this run; leave existing Pages path unchanged.'
+            exit 0
+          fi
+          # GITHUB_TOKEN commits do not recursively trigger the ordinary Pages build.
+          # Request it only after the existing Sync step has finished successfully.
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" > "$RUNNER_TEMP/fallback-pages-response.json"
+          echo 'FALLBACK_PAGES_BUILD_REQUESTED'
+          cat "$RUNNER_TEMP/fallback-pages-response.json"
       - name: Record failure as a durable GitHub issue
         if: failure()
         continue-on-error: true
