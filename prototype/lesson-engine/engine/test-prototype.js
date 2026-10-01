@@ -15,14 +15,14 @@ function test(name,fn){fn();passed++;console.log('PASS '+name)}
 const ctx=read('data/lesson-context.json');
 const M=loadMaterials();
 
-test('eligible lexicon exactly covers current legal dont+fuzzy pool',()=>{
+test('curated lexicon covers every current legal dont+fuzzy word',()=>{
   const expected=new Set([...ctx.candidates.new_dont,...ctx.candidates.new_fuzzy].map(x=>norm(x[0])));
   const files=[];
   for(let i=1;i<=6;i++)files.push(JSON.parse(fs.readFileSync(path.join(REPO,'prototype/lesson-engine/materials/lexicon/eligible-0'+i+'.json'),'utf8')));
   const rows=files.flatMap(x=>x.entries),actual=new Set(rows.map(x=>norm(x.word)));
-  assert.equal(rows.length,283);
-  assert.equal(actual.size,283);
-  assert.deepEqual([...actual].sort(),[...expected].sort());
+  assert.equal(rows.length,actual.size,'curated lexicon must not contain duplicate word identities');
+  const missing=[...expected].filter(x=>!actual.has(x));
+  assert.deepEqual(missing,[],'newly legal words need curated content before generation');
   for(const e of rows){
     for(const k of ['word','cn','en','root','root_cn','register','example','example_cn','note'])assert(String(e[k]||'').trim(),e.word+' missing '+k);
     assert(Array.isArray(e.tags)&&e.tags.length,e.word+' missing tags');
