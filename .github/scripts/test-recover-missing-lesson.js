@@ -104,4 +104,35 @@ test('CLI parser defaults to no file writes',()=>{
    write:false,date:'2026-10-01',session:'am','main-head':sha
  });
 });
+test('fallback workflow has one existing twice-daily clock and valid Bash steps',()=>{
+ const cp=require('node:child_process');
+ const workflow=fs.readFileSync(path.join(base,'.github/workflows/sync-daily-vocab.yml'),'utf8');
+ const lines=workflow.split('\n');
+ const crons=lines.map(x=>x.trim()).filter(x=>x.startsWith('- cron: '));
+ assert.deepEqual(crons,["- cron: '5 1 * * *'","- cron: '5 11 * * *'"]);
+ assert(workflow.includes('group: learning-data-write')||workflow.includes("'learning-data-write'"));
+ assert(workflow.includes('inputs[recover_date]')&&workflow.includes('inputs[recover_session]'));
+ const names=[
+   'Recover immediately after an eligible lesson release fails',
+   'Generate missing lesson with V2 and commit the two-file transaction',
+   'Request Pages build after GitHub Actions fallback publication'
+ ];
+ for(const name of names){
+   const start=lines.findIndex(x=>x==='      - name: '+name);
+   assert(start>0,'Step missing: '+name);
+   const runner=lines.findIndex((x,i)=>i>start&&x==='        run: |');
+   assert(runner>start,'Step has no script: '+name);
+   const body=[];
+   for(let i=runner+1;i<lines.length;i++){
+     if(lines[i].startsWith('          '))body.push(lines[i].slice(10));
+     else if(!lines[i].trim())body.push('');
+     else break;
+   }
+   assert(body.length>4,'Script too short: '+name);
+   const check=cp.spawnSync('bash',['-n'],{encoding:'utf8',input:body.join('\n')+'\n'});
+   assert.equal(check.status,0,name+' bash syntax: '+check.stderr);
+ }
+ assert(workflow.includes('node .github/scripts/recover-missing-lesson.js'));
+ assert(workflow.includes('FALLBACK_PAGES_BUILD_REQUESTED'));
+});
 console.log('FALLBACK_RECOVERY_TEST '+JSON.stringify({ok:true,passed}));
