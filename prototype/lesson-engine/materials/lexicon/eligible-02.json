@@ -1,0 +1,751 @@
+{
+  "version": 1,
+  "scope": "2026-10-01 legal new-pool seed",
+  "chunk": 2,
+  "count": 50,
+  "entries": [
+    {
+      "word": "nyesel",
+      "cn": "后悔了",
+      "en": "regret",
+      "root": "sesal",
+      "root_cn": "后悔",
+      "register": "colloquial",
+      "tags": [
+        "feeling",
+        "social"
+      ],
+      "example": "Aku nyesel beli barang itu tanpa cek dulu.",
+      "example_cn": "我后悔没先检查就买了那个东西。",
+      "note": "口语；标准形式 menyesal。"
+    },
+    {
+      "word": "selamanya",
+      "cn": "永远；一直",
+      "en": "forever",
+      "root": "lama",
+      "root_cn": "久；长时间",
+      "register": "neutral",
+      "tags": [
+        "time",
+        "relationship"
+      ],
+      "example": "Saya tidak mau tinggal di kota ini selamanya.",
+      "example_cn": "我不想永远住在这个城市。",
+      "note": "常和 tidak/untuk selamanya 搭配。"
+    },
+    {
+      "word": "setia",
+      "cn": "忠诚的；专一的",
+      "en": "loyal; faithful",
+      "root": "setia",
+      "root_cn": "忠诚",
+      "register": "neutral",
+      "tags": [
+        "relationship",
+        "social"
+      ],
+      "example": "Dia tetap setia pada keputusan yang sudah dibuat bersama.",
+      "example_cn": "他仍然忠于双方已经做出的决定。",
+      "note": "可用于伴侣、朋友、原则、品牌等。"
+    },
+    {
+      "word": "terpeleset",
+      "cn": "滑倒；脚下一滑",
+      "en": "slip",
+      "root": "peleset",
+      "root_cn": "滑；失足",
+      "register": "neutral",
+      "tags": [
+        "movement",
+        "incident"
+      ],
+      "example": "Saya hampir terpeleset karena lantainya basah.",
+      "example_cn": "因为地面湿，我差点滑倒。",
+      "note": "常见 hampir terpeleset。"
+    },
+    {
+      "word": "kuno",
+      "cn": "古老的；老式的",
+      "en": "ancient; old-fashioned",
+      "root": "kuno",
+      "root_cn": "古老",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "information"
+      ],
+      "example": "Bangunan kuno itu masih dirawat dengan baik.",
+      "example_cn": "那栋古老建筑仍被维护得很好。",
+      "note": "古老/老式；旧但不一定坏。"
+    },
+    {
+      "word": "mengembangkan",
+      "cn": "发展；开发",
+      "en": "develop",
+      "root": "kembang",
+      "root_cn": "发展；展开",
+      "register": "standard",
+      "tags": [
+        "work",
+        "action"
+      ],
+      "example": "Tim kami sedang mengembangkan fitur baru untuk aplikasi.",
+      "example_cn": "我们团队正在为应用开发新功能。",
+      "note": "常见 mengembangkan bisnis/produk/kemampuan。"
+    },
+    {
+      "word": "menguasai",
+      "cn": "掌握；控制",
+      "en": "master; control",
+      "root": "kuasa",
+      "root_cn": "权力；掌控",
+      "register": "standard",
+      "tags": [
+        "work",
+        "learning"
+      ],
+      "example": "Saya belum menguasai semua kosakata ini.",
+      "example_cn": "我还没有掌握所有这些词汇。",
+      "note": "学习语境常表示掌握；也可表示控制。"
+    },
+    {
+      "word": "kejam",
+      "cn": "残酷的；狠心的",
+      "en": "cruel",
+      "root": "kejam",
+      "root_cn": "残酷",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "social"
+      ],
+      "example": "Komentar itu terdengar terlalu kejam untuk masalah sekecil ini.",
+      "example_cn": "对这么小的问题来说，那句话听起来太刻薄了。",
+      "note": "形容人/行为残酷。"
+    },
+    {
+      "word": "hukuman",
+      "cn": "惩罚；刑罚",
+      "en": "punishment; sentence",
+      "root": "hukum",
+      "root_cn": "法律；惩罚",
+      "register": "standard",
+      "tags": [
+        "law"
+      ],
+      "example": "Pelanggaran berat bisa mendapat hukuman yang lebih serius.",
+      "example_cn": "严重违规可能受到更重的处罚。",
+      "note": "hukum=法律；hukuman=惩罚。"
+    },
+    {
+      "word": "kenal",
+      "cn": "认识；熟悉",
+      "en": "know; be acquainted with",
+      "root": "kenal",
+      "root_cn": "认识",
+      "register": "neutral-spoken",
+      "tags": [
+        "social",
+        "communication"
+      ],
+      "example": "Saya kenal dia dari tempat kerja lama.",
+      "example_cn": "我是在以前的工作地方认识他的。",
+      "note": "kenal 人；tahu/mengetahui 事实。"
+    },
+    {
+      "word": "kebutuhan",
+      "cn": "需求；需要",
+      "en": "need; requirement",
+      "root": "butuh",
+      "root_cn": "需要",
+      "register": "standard",
+      "tags": [
+        "shopping",
+        "work"
+      ],
+      "example": "Kami memilih produk berdasarkan kebutuhan, bukan hanya harga.",
+      "example_cn": "我们根据需求选择产品，而不只看价格。",
+      "note": "ke- + butuh + -an；名词。"
+    },
+    {
+      "word": "apabila",
+      "cn": "如果；当……时",
+      "en": "if; when",
+      "root": "apabila",
+      "root_cn": "如果",
+      "register": "formal",
+      "tags": [
+        "connector"
+      ],
+      "example": "Apabila ada perubahan, kami akan memberi tahu lebih dulu.",
+      "example_cn": "如果有变化，我们会提前通知。",
+      "note": "较正式；日常通常用 kalau/jika。"
+    },
+    {
+      "word": "terletak",
+      "cn": "位于",
+      "en": "be located",
+      "root": "letak",
+      "root_cn": "位置",
+      "register": "standard",
+      "tags": [
+        "location"
+      ],
+      "example": "Kantor itu terletak di dekat stasiun.",
+      "example_cn": "那间办公室位于车站附近。",
+      "note": "常见 terletak di...。"
+    },
+    {
+      "word": "lapangan",
+      "cn": "场地；球场；领域",
+      "en": "field; ground",
+      "root": "lapang",
+      "root_cn": "宽阔",
+      "register": "neutral",
+      "tags": [
+        "location",
+        "work"
+      ],
+      "example": "Anak-anak bermain di lapangan dekat rumah.",
+      "example_cn": "孩子们在家附近的场地玩。",
+      "note": "也可指 lapangan kerja“就业领域”。"
+    },
+    {
+      "word": "kekerasan",
+      "cn": "暴力；硬度",
+      "en": "violence; hardness",
+      "root": "keras",
+      "root_cn": "硬；强烈",
+      "register": "standard",
+      "tags": [
+        "law",
+        "social"
+      ],
+      "example": "Sekolah itu punya aturan tegas terhadap kekerasan.",
+      "example_cn": "那所学校对暴力有严格规定。",
+      "note": "人际语境通常指暴力。"
+    },
+    {
+      "word": "berlaku",
+      "cn": "生效；适用；实行",
+      "en": "apply; be valid",
+      "root": "laku",
+      "root_cn": "有效；通行",
+      "register": "standard",
+      "tags": [
+        "law",
+        "work"
+      ],
+      "example": "Aturan baru mulai berlaku bulan depan.",
+      "example_cn": "新规定下个月开始生效。",
+      "note": "也可说 kartu berlaku sampai...。"
+    },
+    {
+      "word": "peduli",
+      "cn": "在意；关心",
+      "en": "care; be concerned",
+      "root": "peduli",
+      "root_cn": "关心",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "feeling"
+      ],
+      "example": "Dia peduli pada keluarganya meskipun jarang mengatakannya.",
+      "example_cn": "他很关心家人，尽管很少说出来。",
+      "note": "常见 peduli pada/terhadap。"
+    },
+    {
+      "word": "bergerak",
+      "cn": "移动；行动",
+      "en": "move",
+      "root": "gerak",
+      "root_cn": "移动",
+      "register": "neutral",
+      "tags": [
+        "movement",
+        "action"
+      ],
+      "example": "Kendaraan mulai bergerak lagi setelah lampu hijau.",
+      "example_cn": "绿灯后车辆又开始移动。",
+      "note": "实体移动或组织采取行动。"
+    },
+    {
+      "word": "mengajak",
+      "cn": "邀请；叫上",
+      "en": "invite; ask along",
+      "root": "ajak",
+      "root_cn": "邀请",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "communication"
+      ],
+      "example": "Teman saya mengajak makan siang bersama.",
+      "example_cn": "朋友叫我一起吃午饭。",
+      "note": "mengajak + 人 + 动作。"
+    },
+    {
+      "word": "berikutnya",
+      "cn": "下一个；接下来",
+      "en": "next; following",
+      "root": "berikut",
+      "root_cn": "接下来",
+      "register": "neutral",
+      "tags": [
+        "time",
+        "plan"
+      ],
+      "example": "Langkah berikutnya adalah mengecek hasilnya.",
+      "example_cn": "下一步是检查结果。",
+      "note": "常用于步骤、日期、项目。"
+    },
+    {
+      "word": "menyediakan",
+      "cn": "提供；准备好",
+      "en": "provide; supply",
+      "root": "sedia",
+      "root_cn": "准备；可用",
+      "register": "standard",
+      "tags": [
+        "service",
+        "work"
+      ],
+      "example": "Hotel itu menyediakan air minum gratis di kamar.",
+      "example_cn": "那家酒店在房间里提供免费饮用水。",
+      "note": "提供某物；tersedia=有供应/可用。"
+    },
+    {
+      "word": "cenderung",
+      "cn": "倾向于",
+      "en": "tend to",
+      "root": "cenderung",
+      "root_cn": "倾向",
+      "register": "standard",
+      "tags": [
+        "description",
+        "opinion"
+      ],
+      "example": "Saya cenderung memilih yang lebih praktis.",
+      "example_cn": "我倾向于选择更实用的那个。",
+      "note": "常见 cenderung + 动词。"
+    },
+    {
+      "word": "kecewa",
+      "cn": "失望",
+      "en": "disappointed",
+      "root": "kecewa",
+      "root_cn": "失望",
+      "register": "neutral",
+      "tags": [
+        "feeling",
+        "social"
+      ],
+      "example": "Saya agak kecewa karena pesanan datang terlambat.",
+      "example_cn": "因为订单到得晚，我有点失望。",
+      "note": "kecewa dengan/karena...。"
+    },
+    {
+      "word": "keberadaan",
+      "cn": "存在；在场",
+      "en": "existence; presence",
+      "root": "ada",
+      "root_cn": "有；存在",
+      "register": "formal",
+      "tags": [
+        "information",
+        "description"
+      ],
+      "example": "Keberadaan halte baru membuat perjalanan lebih mudah.",
+      "example_cn": "新公交站的存在让出行更方便。",
+      "note": "较书面；口语通常直接用 ada。"
+    },
+    {
+      "word": "penelitian",
+      "cn": "研究",
+      "en": "research; study",
+      "root": "teliti",
+      "root_cn": "仔细；研究",
+      "register": "standard",
+      "tags": [
+        "information",
+        "education"
+      ],
+      "example": "Penelitian itu membahas kebiasaan belanja masyarakat.",
+      "example_cn": "那项研究讨论了人们的购物习惯。",
+      "note": "penelitian=研究名词；meneliti=研究。"
+    },
+    {
+      "word": "rapi",
+      "cn": "整齐的；利落的",
+      "en": "neat; tidy",
+      "root": "rapi",
+      "root_cn": "整齐",
+      "register": "neutral",
+      "tags": [
+        "home",
+        "description"
+      ],
+      "example": "Setelah meja dirapikan, ruangan terlihat lebih rapi.",
+      "example_cn": "桌子整理后，房间看起来更整齐。",
+      "note": "常见 rapi dan bersih。"
+    },
+    {
+      "word": "taruh",
+      "cn": "放；放置",
+      "en": "put; place",
+      "root": "taruh",
+      "root_cn": "放",
+      "register": "spoken-neutral",
+      "tags": [
+        "home",
+        "action"
+      ],
+      "example": "Taruh tasnya di kursi saja.",
+      "example_cn": "把包放椅子上就行。",
+      "note": "日常口语比 meletakkan 更自然。"
+    },
+    {
+      "word": "cerai",
+      "cn": "离婚；分开",
+      "en": "divorce; separate",
+      "root": "cerai",
+      "root_cn": "分开；离婚",
+      "register": "neutral",
+      "tags": [
+        "relationship"
+      ],
+      "example": "Mereka memutuskan cerai setelah lama mengalami masalah.",
+      "example_cn": "他们长期有问题后决定离婚。",
+      "note": "动词口语常说 cerai；bercerai 更完整。"
+    },
+    {
+      "word": "cemburu",
+      "cn": "嫉妒；吃醋",
+      "en": "jealous",
+      "root": "cemburu",
+      "root_cn": "嫉妒",
+      "register": "neutral",
+      "tags": [
+        "relationship",
+        "feeling"
+      ],
+      "example": "Dia cemburu karena pasangannya terlalu dekat dengan orang lain.",
+      "example_cn": "他因为伴侣和别人太亲近而吃醋。",
+      "note": "关系语境常指吃醋。"
+    },
+    {
+      "word": "cemas",
+      "cn": "焦虑；担忧",
+      "en": "anxious; worried",
+      "root": "cemas",
+      "root_cn": "焦虑",
+      "register": "neutral",
+      "tags": [
+        "feeling",
+        "health"
+      ],
+      "example": "Saya sempat cemas ketika tidak bisa menghubunginya.",
+      "example_cn": "联系不上他时，我一度很担心。",
+      "note": "比 khawatir 更强调焦虑状态。"
+    },
+    {
+      "word": "lega",
+      "cn": "松一口气；宽慰",
+      "en": "relieved",
+      "root": "lega",
+      "root_cn": "宽慰",
+      "register": "neutral",
+      "tags": [
+        "feeling"
+      ],
+      "example": "Saya merasa lega setelah mendengar hasilnya baik.",
+      "example_cn": "听到结果不错后，我松了一口气。",
+      "note": "高频搭配 merasa lega。"
+    },
+    {
+      "word": "keras kepala",
+      "cn": "固执的",
+      "en": "stubborn",
+      "root": "keras kepala",
+      "root_cn": "固执",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "description"
+      ],
+      "example": "Dia agak keras kepala dan sulit menerima saran.",
+      "example_cn": "他有点固执，很难接受建议。",
+      "note": "固定表达；语气偏负面。"
+    },
+    {
+      "word": "luar biasa",
+      "cn": "非凡的；很棒",
+      "en": "extraordinary; amazing",
+      "root": "luar biasa",
+      "root_cn": "非凡",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "social"
+      ],
+      "example": "Pelayanannya luar biasa cepat hari ini.",
+      "example_cn": "今天的服务快得出乎意料。",
+      "note": "可赞美也可强调程度。"
+    },
+    {
+      "word": "sambil",
+      "cn": "一边……一边……",
+      "en": "while; at the same time",
+      "root": "sambil",
+      "root_cn": "同时",
+      "register": "neutral-spoken",
+      "tags": [
+        "connector",
+        "daily"
+      ],
+      "example": "Saya minum kopi sambil membaca pesan.",
+      "example_cn": "我一边喝咖啡一边看消息。",
+      "note": "日常比 seraya 自然得多。"
+    },
+    {
+      "word": "seberapa",
+      "cn": "多么；多大程度",
+      "en": "how much; how far",
+      "root": "seberapa",
+      "root_cn": "多大程度",
+      "register": "neutral",
+      "tags": [
+        "question",
+        "description"
+      ],
+      "example": "Seberapa jauh tempat itu dari sini?",
+      "example_cn": "那个地方离这里有多远？",
+      "note": "常见 seberapa jauh/besar/sering。"
+    },
+    {
+      "word": "semoga",
+      "cn": "希望；愿……",
+      "en": "hopefully; I hope",
+      "root": "semoga",
+      "root_cn": "希望",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "communication"
+      ],
+      "example": "Semoga semuanya berjalan lancar besok.",
+      "example_cn": "希望明天一切顺利。",
+      "note": "祝愿非常常用。"
+    },
+    {
+      "word": "bawahan",
+      "cn": "下属",
+      "en": "subordinate",
+      "root": "bawah",
+      "root_cn": "下方",
+      "register": "standard",
+      "tags": [
+        "work"
+      ],
+      "example": "Seorang atasan perlu mendengarkan masukan dari bawahan.",
+      "example_cn": "上司需要听取下属的意见。",
+      "note": "工作层级词；语气正式。"
+    },
+    {
+      "word": "pecat",
+      "cn": "解雇",
+      "en": "fire; dismiss",
+      "root": "pecat",
+      "root_cn": "解雇",
+      "register": "spoken-neutral",
+      "tags": [
+        "work"
+      ],
+      "example": "Perusahaan tidak bisa asal pecat karyawan tanpa alasan jelas.",
+      "example_cn": "公司不能没有明确理由就随便解雇员工。",
+      "note": "正式形式 memecat；口语常直接 pecat。"
+    },
+    {
+      "word": "diterima",
+      "cn": "被接受；被录用；收到",
+      "en": "be accepted; be received",
+      "root": "terima",
+      "root_cn": "接受；收到",
+      "register": "standard",
+      "tags": [
+        "work",
+        "communication"
+      ],
+      "example": "Lamaran saya akhirnya diterima oleh perusahaan itu.",
+      "example_cn": "我的申请终于被那家公司接受了。",
+      "note": "被动 di- + terima。"
+    },
+    {
+      "word": "rugi",
+      "cn": "亏；损失",
+      "en": "lose money; suffer a loss",
+      "root": "rugi",
+      "root_cn": "亏损",
+      "register": "neutral",
+      "tags": [
+        "finance",
+        "work"
+      ],
+      "example": "Toko bisa rugi kalau biaya terus naik.",
+      "example_cn": "如果成本一直上涨，商店可能亏损。",
+      "note": "口语常说 rugi banyak。"
+    },
+    {
+      "word": "kerugian",
+      "cn": "损失；亏损",
+      "en": "loss; damage",
+      "root": "rugi",
+      "root_cn": "亏损",
+      "register": "standard",
+      "tags": [
+        "finance",
+        "work"
+      ],
+      "example": "Perusahaan berusaha mengurangi kerugian bulan ini.",
+      "example_cn": "公司努力减少这个月的亏损。",
+      "note": "ke- + rugi + -an；名词。"
+    },
+    {
+      "word": "invoice",
+      "cn": "发票；账单",
+      "en": "invoice",
+      "root": "invoice",
+      "root_cn": "发票",
+      "register": "business",
+      "tags": [
+        "finance",
+        "work"
+      ],
+      "example": "Tolong kirim invoice setelah barang dikirim.",
+      "example_cn": "货物发出后请发送发票。",
+      "note": "商务中常直接使用英语借词 invoice。"
+    },
+    {
+      "word": "kwitansi",
+      "cn": "收据",
+      "en": "receipt",
+      "root": "kwitansi",
+      "root_cn": "收据",
+      "register": "neutral",
+      "tags": [
+        "finance",
+        "shopping"
+      ],
+      "example": "Saya simpan kwitansi ini untuk bukti pembayaran.",
+      "example_cn": "我留着这张收据作为付款证明。",
+      "note": "也常拼 kuitansi；正式标准为 kuitansi。"
+    },
+    {
+      "word": "muat",
+      "cn": "装得下；容纳；装载",
+      "en": "fit; contain; load",
+      "root": "muat",
+      "root_cn": "容纳",
+      "register": "neutral",
+      "tags": [
+        "logistics",
+        "description"
+      ],
+      "example": "Kotak ini tidak muat di bagasi kecil.",
+      "example_cn": "这个箱子放不进小行李厢。",
+      "note": "口语高频“装得下/放得进”。"
+    },
+    {
+      "word": "bongkar",
+      "cn": "卸货；拆开",
+      "en": "unload; dismantle",
+      "root": "bongkar",
+      "root_cn": "拆；卸",
+      "register": "spoken-neutral",
+      "tags": [
+        "logistics",
+        "action"
+      ],
+      "example": "Barang harus dibongkar sebelum gudang tutup.",
+      "example_cn": "货物必须在仓库关门前卸下来。",
+      "note": "正式可用 membongkar。"
+    },
+    {
+      "word": "retur",
+      "cn": "退货；退回",
+      "en": "return goods",
+      "root": "retur",
+      "root_cn": "退货",
+      "register": "business",
+      "tags": [
+        "shopping",
+        "logistics"
+      ],
+      "example": "Barang rusak ini akan kami retur ke pemasok.",
+      "example_cn": "这个损坏的商品我们会退回供应商。",
+      "note": "电商/物流常用借词。"
+    },
+    {
+      "word": "tukar",
+      "cn": "交换；更换",
+      "en": "exchange; swap",
+      "root": "tukar",
+      "root_cn": "交换",
+      "register": "neutral-spoken",
+      "tags": [
+        "shopping",
+        "action"
+      ],
+      "example": "Kalau ukurannya salah, bisa tukar dengan yang lebih besar.",
+      "example_cn": "如果尺寸不对，可以换成大一点的。",
+      "note": "正式动词 menukar/menukarkan；口语常 tukar。"
+    },
+    {
+      "word": "bandingkan",
+      "cn": "比较",
+      "en": "compare",
+      "root": "banding",
+      "root_cn": "比较",
+      "register": "neutral",
+      "tags": [
+        "shopping",
+        "action"
+      ],
+      "example": "Bandingkan harga dulu sebelum membeli.",
+      "example_cn": "买之前先比较一下价格。",
+      "note": "命令式；完整主动形式 membandingkan。"
+    },
+    {
+      "word": "berguna",
+      "cn": "有用的",
+      "en": "useful",
+      "root": "guna",
+      "root_cn": "用途；用处",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "work"
+      ],
+      "example": "Fitur ini cukup berguna untuk pekerjaan sehari-hari.",
+      "example_cn": "这个功能对日常工作挺有用。",
+      "note": "berguna untuk...。"
+    },
+    {
+      "word": "praktis",
+      "cn": "实用；方便",
+      "en": "practical; convenient",
+      "root": "praktis",
+      "root_cn": "实用",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "daily"
+      ],
+      "example": "Saya pilih tas ini karena lebih praktis dibawa.",
+      "example_cn": "我选这个包，因为带着更方便。",
+      "note": "强调省事、方便使用。"
+    }
+  ]
+}
