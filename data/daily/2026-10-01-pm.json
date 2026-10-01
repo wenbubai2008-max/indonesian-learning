@@ -1,0 +1,469 @@
+{
+  "date": "2026-10-01",
+  "session": "pm",
+  "time": "18:00",
+  "day": 41,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Rencana berubah",
+  "_prototype": {
+    "engine_version": 2,
+    "scene_id": "weather-plan",
+    "deterministic": true,
+    "production_write": false,
+    "variant": 0,
+    "core_plan": {
+      "total": 12,
+      "reviews": 5,
+      "apps": 3,
+      "pressure": 44
+    },
+    "reading_coverage": [
+      {
+        "word": "sesudah",
+        "group": "new"
+      },
+      {
+        "word": "awan",
+        "group": "new"
+      },
+      {
+        "word": "membunuh",
+        "group": "new"
+      },
+      {
+        "word": "mengalir",
+        "group": "new"
+      },
+      {
+        "word": "keberatan",
+        "group": "review"
+      },
+      {
+        "word": "biarpun",
+        "group": "application"
+      }
+    ],
+    "reading_review_required": true,
+    "dialogue_coverage": [
+      {
+        "word": "sesudah",
+        "group": "new"
+      },
+      {
+        "word": "awan",
+        "group": "new"
+      },
+      {
+        "word": "keberatan",
+        "group": "review"
+      }
+    ]
+  },
+  "write_status": "lesson_complete",
+  "new_words": [
+    "sesudah",
+    "awan",
+    "membunuh",
+    "mengalir"
+  ],
+  "vocab": [
+    {
+      "word": "sesudah",
+      "display": "sesudah",
+      "audio_text": "sesudah",
+      "cn": "在……之后",
+      "en": "after",
+      "root": "sudah",
+      "root_cn": "已经",
+      "formation": "sesudah + 名词/分句；也可说 sesudah itu。",
+      "example": "Sesudah makan siang, saya kembali ke kantor.",
+      "example_cn": "午饭后我回到办公室。",
+      "synonym_note": "sesudah 与 setelah 接近；setelah 更常见。",
+      "is_oral_new": true,
+      "_collocations": [
+        "sesudah makan",
+        "sesudah itu"
+      ],
+      "usage_note": "本晚课新词；重点掌握常见搭配、语体和3秒主动提取。",
+      "source_group": "new",
+      "is_new": true
+    },
+    {
+      "word": "awan",
+      "display": "awan",
+      "audio_text": "awan",
+      "cn": "云",
+      "en": "cloud",
+      "root": "awan",
+      "root_cn": "云",
+      "formation": "常见搭配：awan gelap、awan tebal。",
+      "example": "Awan gelap mulai terlihat sebelum hujan turun.",
+      "example_cn": "下雨前开始出现乌云。",
+      "synonym_note": "常见 awan gelap、awan tebal。",
+      "is_oral_new": false,
+      "_collocations": [
+        "awan gelap",
+        "awan tebal"
+      ],
+      "usage_note": "常见 awan gelap、awan tebal。",
+      "source_group": "new",
+      "is_new": true
+    },
+    {
+      "word": "membunuh",
+      "display": "membunuh",
+      "audio_text": "membunuh",
+      "cn": "杀死",
+      "en": "kill",
+      "root": "bunuh",
+      "root_cn": "杀死",
+      "formation": "mem- + bunuh。 常见搭配：membunuh serangga、bisa membunuh。",
+      "example": "Pestisida itu bisa membunuh serangga jika digunakan sembarangan.",
+      "example_cn": "如果随意使用，那种杀虫剂可能会杀死昆虫。",
+      "synonym_note": "语气很强；日常无必要不要拿来形容轻微事情。",
+      "is_oral_new": false,
+      "_collocations": [
+        "membunuh serangga",
+        "bisa membunuh"
+      ],
+      "usage_note": "语气很强；日常无必要不要拿来形容轻微事情。",
+      "source_group": "new",
+      "is_new": true
+    },
+    {
+      "word": "mengalir",
+      "display": "mengalir",
+      "audio_text": "mengalir",
+      "cn": "流动",
+      "en": "flow",
+      "root": "alir",
+      "root_cn": "流；流动",
+      "formation": "meng- + alir。 常见搭配：air mengalir、darah mengalir、lalu lintas mengalir。",
+      "example": "Air hujan mengalir ke selokan di depan rumah.",
+      "example_cn": "雨水流进房子前面的排水沟。",
+      "synonym_note": "常见 air mengalir、darah mengalir、lalu lintas mengalir。",
+      "is_oral_new": false,
+      "_collocations": [
+        "air mengalir",
+        "darah mengalir",
+        "lalu lintas mengalir"
+      ],
+      "usage_note": "常见 air mengalir、darah mengalir、lalu lintas mengalir。",
+      "source_group": "new",
+      "is_new": true
+    },
+    {
+      "word": "nyinggung",
+      "display": "nyinggung",
+      "audio_text": "nyinggung",
+      "cn": "提到；触及；说到让人不舒服的话题（口语）",
+      "en": "mention; touch on; offend",
+      "root": "singgung",
+      "root_cn": "触及；提到",
+      "formation": "来自词根 singgung。 常见搭配：nyinggung hal、mau nyinggung。",
+      "example": "Aku cuma nanya soal jadwal, bukan mau nyinggung hal pribadi.",
+      "example_cn": "我只是问日程，不是想触及私人话题。",
+      "synonym_note": "例句搭配：nyinggung hal / mau nyinggung；这里的意思是“提到；触及；说到让人不舒服的话题（口语）”。",
+      "is_oral_new": false,
+      "_collocations": [
+        "nyinggung hal",
+        "mau nyinggung"
+      ],
+      "usage_note": "已正式学习；本晚课进行主动复习。",
+      "source_group": "review",
+      "is_new": false
+    },
+    {
+      "word": "keberatan",
+      "display": "keberatan",
+      "audio_text": "keberatan",
+      "cn": "有异议；介意",
+      "en": "object; mind",
+      "root": "berat",
+      "root_cn": "重；沉重",
+      "formation": "ke- + berat + -an。 常见搭配：keberatan kalau、yang keberatan。",
+      "example": "Ada yang keberatan kalau rapat dipindah ke sore hari?",
+      "example_cn": "会议改到下午，有人介意吗？",
+      "synonym_note": "例句搭配：keberatan kalau / yang keberatan；这里的意思是“有异议；介意”。",
+      "is_oral_new": false,
+      "_collocations": [
+        "keberatan kalau",
+        "yang keberatan"
+      ],
+      "usage_note": "已正式学习；本晚课进行主动复习。",
+      "source_group": "review",
+      "is_new": false
+    },
+    {
+      "word": "kelabakan",
+      "display": "kelabakan",
+      "audio_text": "kelabakan",
+      "cn": "忙乱；手忙脚乱",
+      "en": "flustered; scrambling; in a panic",
+      "root": "kelabakan",
+      "root_cn": "手忙脚乱；慌着应付",
+      "formation": "常见搭配：bisa kelabakan。",
+      "example": "Kalau semua datang bersamaan, tim bisa kelabakan.",
+      "example_cn": "如果所有事情同时来，团队可能会手忙脚乱。",
+      "synonym_note": "例句搭配：bisa kelabakan；这里的意思是“忙乱；手忙脚乱”。",
+      "is_oral_new": false,
+      "_collocations": [
+        "bisa kelabakan"
+      ],
+      "usage_note": "已正式学习；本晚课进行主动复习。",
+      "source_group": "review",
+      "is_new": false
+    },
+    {
+      "word": "ngirit",
+      "display": "ngirit",
+      "audio_text": "ngirit",
+      "cn": "省着花；节省开支（口语）",
+      "en": "save money; cut spending; be frugal",
+      "root": "irit",
+      "root_cn": "节省；省着用",
+      "formation": "来自词根 irit。 常见搭配：ngirit jadi、lagi ngirit。",
+      "example": "Kami lagi ngirit, jadi jangan cetak dokumen yang tidak perlu.",
+      "example_cn": "我们正在省钱，所以别打印没必要的文件。",
+      "synonym_note": "例句搭配：ngirit jadi / lagi ngirit；这里的意思是“省着花；节省开支（口语）”。",
+      "is_oral_new": false,
+      "_collocations": [
+        "ngirit jadi",
+        "lagi ngirit"
+      ],
+      "usage_note": "已正式学习；本晚课进行主动复习。",
+      "source_group": "review",
+      "is_new": false
+    },
+    {
+      "word": "menunjukkan",
+      "display": "menunjukkan",
+      "audio_text": "menunjukkan",
+      "cn": "指出；展示；表明",
+      "en": "show; indicate",
+      "root": "tunjuk",
+      "root_cn": "指；指出",
+      "formation": "meN- + tunjuk + -kan；常见 menunjukkan hasil/bahwa...。",
+      "example": "Data ini menunjukkan bahwa penjualan mulai naik.",
+      "example_cn": "这些数据显示销售开始上升。",
+      "synonym_note": "menunjukkan=展示/表明；menjelaskan=解释。",
+      "is_oral_new": false,
+      "_collocations": [
+        "menunjukkan hasil",
+        "menunjukkan bahwa"
+      ],
+      "usage_note": "已正式学习；本晚课进行主动复习。",
+      "source_group": "review",
+      "is_new": false
+    },
+    {
+      "word": "biarpun",
+      "display": "biarpun",
+      "audio_text": "biarpun",
+      "cn": "即使；尽管",
+      "en": "even though; although",
+      "root": "biar",
+      "root_cn": "让；即便",
+      "formation": "biar + pun，表示让步；后面常接完整分句。",
+      "example": "Biarpun hujan, saya tetap pergi ke kantor.",
+      "example_cn": "即使下雨，我还是去办公室。",
+      "synonym_note": "biarpun 与 walaupun 接近；walaupun 更中性通用。",
+      "is_oral_new": false,
+      "_collocations": [
+        "biarpun begitu",
+        "biarpun hujan"
+      ],
+      "usage_note": "今天08:00已教；晚课作为 application 主动复现。",
+      "source_group": "application",
+      "is_new": false
+    },
+    {
+      "word": "niat",
+      "display": "niat",
+      "audio_text": "niat",
+      "cn": "打算；意图；认真想做的心意",
+      "en": "intention; intent",
+      "root": "niat",
+      "root_cn": "意图；打算",
+      "formation": "常见 punya niat、niat untuk...。",
+      "example": "Saya punya niat menyelesaikan pekerjaan ini hari ini.",
+      "example_cn": "我打算今天完成这项工作。",
+      "synonym_note": "niat 强调内在打算；rencana 更偏具体计划。",
+      "is_oral_new": false,
+      "_collocations": [
+        "punya niat",
+        "niat untuk"
+      ],
+      "usage_note": "今天08:00已教；晚课作为 application 主动复现。",
+      "source_group": "application",
+      "is_new": false
+    },
+    {
+      "word": "mengeluh",
+      "display": "mengeluh",
+      "audio_text": "mengeluh",
+      "cn": "抱怨",
+      "en": "complain",
+      "root": "keluh",
+      "root_cn": "抱怨；叹息",
+      "formation": "meN- + keluh；常见 mengeluh soal/tentang...。",
+      "example": "Dia sering mengeluh soal macet, tetapi tetap berangkat pagi.",
+      "example_cn": "他经常抱怨堵车，但还是早早出发。",
+      "synonym_note": "mengeluh 是抱怨；curhat 是倾诉，不一定抱怨。",
+      "is_oral_new": false,
+      "_collocations": [
+        "mengeluh soal",
+        "terus mengeluh"
+      ],
+      "usage_note": "今天08:00已教；晚课作为 application 主动复现。",
+      "source_group": "application",
+      "is_new": false
+    }
+  ],
+  "reading": {
+    "text": "Hari ini saya mencatat beberapa kejadian berbeda dari orang-orang di sekitar saya. Awan gelap mulai terlihat sebelum hujan turun. Pestisida itu bisa membunuh serangga jika digunakan sembarangan. Air hujan mengalir ke selokan di depan rumah. Saya juga sempat mendengar cerita orang lain. Sesudah makan siang, saya kembali ke kantor. Biarpun hujan, saya tetap pergi ke kantor. Tidak ada yang keberatan jika rencana dibuat lebih sederhana. Akhirnya kami memilih kegiatan yang tetap nyaman dilakukan. Tidak semua rencana harus berjalan persis seperti awalnya.",
+    "cn": "今天我记下了身边发生的几件不同的小事。 下雨前开始出现乌云。 如果随意使用，那种杀虫剂可能会杀死昆虫。 雨水流进房子前面的排水沟。 我还听到了其他人的一些事情。 午饭后我回到办公室。 即使下雨，我还是去办公室。 如果把计划弄简单一点，没有人反对。 最后我们选择了仍然比较舒服的活动。 不是所有计划都一定要和最初完全一样。"
+  },
+  "dialogue": {
+    "title": "真实口语｜Rencana berubah",
+    "lines": [
+      {
+        "speaker": "A",
+        "id": "Ada kabar apa soal pekerjaan?",
+        "cn": "工作上有什么新情况？"
+      },
+      {
+        "speaker": "B",
+        "id": "Sesudah makan siang, saya kembali ke kantor.",
+        "cn": "午饭后我回到办公室。"
+      },
+      {
+        "speaker": "A",
+        "id": "Ngomong-ngomong, bagaimana kondisi di luar?",
+        "cn": "换个话题，外面的情况怎么样？"
+      },
+      {
+        "speaker": "B",
+        "id": "Awan gelap mulai terlihat sebelum hujan turun.",
+        "cn": "下雨前开始出现乌云。"
+      },
+      {
+        "speaker": "A",
+        "id": "Ngomong-ngomong, ada kabar apa soal pekerjaan?",
+        "cn": "换个话题，工作上有什么新情况？"
+      },
+      {
+        "speaker": "B",
+        "id": "Ada yang keberatan kalau rapat dipindah ke sore hari?",
+        "cn": "会议改到下午，有人介意吗？"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "中译印：午饭后我回到办公室。（使用 sesudah）",
+      "reference_answer": "Sesudah makan siang, saya kembali ke kantor.",
+      "reference_cn": "午饭后我回到办公室。"
+    },
+    {
+      "task": "中译印：下雨前开始出现乌云。（使用 awan）",
+      "reference_answer": "Awan gelap mulai terlihat sebelum hujan turun.",
+      "reference_cn": "下雨前开始出现乌云。"
+    },
+    {
+      "task": "主动复现：即使下雨，我还是去办公室。（使用 biarpun）",
+      "reference_answer": "Biarpun hujan, saya tetap pergi ke kantor.",
+      "reference_cn": "即使下雨，我还是去办公室。"
+    },
+    {
+      "task": "复习输出：我只是问日程，不是想触及私人话题。（使用 nyinggung）",
+      "reference_answer": "Aku cuma nanya soal jadwal, bukan mau nyinggung hal pribadi.",
+      "reference_cn": "我只是问日程，不是想触及私人话题。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "哪个词表示“在……之后”？",
+        "options": [
+          "keberatan",
+          "kelabakan",
+          "menunjukkan",
+          "sesudah"
+        ],
+        "answer_index": 3,
+        "answer": "sesudah",
+        "explain": "sesudah = 在……之后。"
+      },
+      {
+        "type": "choice",
+        "prompt": "哪个词表示“提到；触及；说到让人不舒服的话题（口语）”？",
+        "options": [
+          "nyinggung",
+          "ngirit",
+          "niat",
+          "mengalir"
+        ],
+        "answer_index": 0,
+        "answer": "nyinggung",
+        "explain": "nyinggung = 提到；触及；说到让人不舒服的话题（口语）。"
+      },
+      {
+        "type": "choice",
+        "prompt": "哪个词表示“云”？",
+        "options": [
+          "niat",
+          "awan",
+          "sesudah",
+          "keberatan"
+        ],
+        "answer_index": 1,
+        "answer": "awan",
+        "explain": "awan = 云。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：_____ makan siang, saya kembali ke kantor.（在……之后）",
+        "answer": "sesudah",
+        "explain": "sesudah = 在……之后。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：_____ gelap mulai terlihat sebelum hujan turun.（云）",
+        "answer": "awan",
+        "explain": "awan = 云。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：下雨前开始出现乌云。",
+        "tokens": [
+          "Awan",
+          "gelap",
+          "mulai",
+          "terlihat",
+          "sebelum",
+          "hujan",
+          "turun."
+        ],
+        "answer": "Awan gelap mulai terlihat sebelum hujan turun.",
+        "answer_cn": "下雨前开始出现乌云。",
+        "explain": "按自然印尼语语序还原完整句子。"
+      }
+    ],
+    "self_check": [
+      "遮住中文，3秒内说出 sesudah / awan / membunuh / mengalir 的意思和一个常见搭配。",
+      "主动复习 nyinggung / keberatan / kelabakan / ngirit / menunjukkan，不要只做识别。",
+      "复现今天08:00或近期已教的 biarpun / niat / mengeluh。"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "连续说出晚课新词并各造一个短句。",
+      "用两个复习词重新讲一遍今天的场景。",
+      "用30秒复述 Rencana berubah，优先自然表达，不强塞所有目标词。"
+    ]
+  }
+}
