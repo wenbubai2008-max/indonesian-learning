@@ -775,10 +775,15 @@ jobs:
               if [ -n "$normal_pr" ]; then
                 gh api "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/runs?event=pull_request&per_page=100" \
                   > "$RUNNER_TEMP/fallback-normal-runs.json"
-                if jq -e --arg branch "$original_branch" --argjson number "$normal_pr" \
-                  -f .github/scripts/normal-release-priority.jq "$RUNNER_TEMP/fallback-normal-runs.json" >/dev/null; then
+                priority_rc=0
+                jq -e --arg branch "$original_branch" --argjson number "$normal_pr" \
+                  -f .github/scripts/normal-release-priority.jq "$RUNNER_TEMP/fallback-normal-runs.json" >/dev/null || priority_rc=$?
+                if [ "$priority_rc" -eq 0 ]; then
                   echo "NORMAL_RELEASE_ACTIVE PR=$normal_pr $date $session; defer V2 to the original release. Its failure hook recovers if needed."
                   exit 0
+                elif [ "$priority_rc" -ne 1 ]; then
+                  echo "::error title=Original release priority check failed::Do not race the normal lesson when PR status cannot be verified."
+                  exit 1
                 fi
               fi
             fi
