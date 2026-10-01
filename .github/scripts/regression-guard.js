@@ -341,14 +341,22 @@ function validateLatestPm(){
   const amPath = `data/daily/${date}-am.json`;
   if(fs.existsSync(rel(amPath))){
     const am = readJSON(amPath);
-    const amWords = new Set([
-      ...(Array.isArray(am.vocab) ? am.vocab.map(v => norm(v && v.word)) : []),
-      ...(Array.isArray(am.review_vocab) ? am.review_vocab.map(v => norm(typeof v === 'string' ? v : v && v.word)) : [])
-    ].filter(Boolean));
+    const amNewWords = new Set((Array.isArray(am.vocab) ? am.vocab : [])
+      .map(v => norm(typeof v === 'string' ? v : v && v.word)).filter(Boolean));
+    const amReviewWords = new Set((Array.isArray(am.review_vocab) ? am.review_vocab : [])
+      .map(v => norm(typeof v === 'string' ? v : v && v.word)).filter(Boolean));
+    const amWords = new Set([...amNewWords,...amReviewWords]);
     groups.application.forEach(v => {
-      const marked = /今天\s*08:00\s*已教/.test(String(v.formation || '') + ' ' + String(v.usage_note || ''));
-      if(amWords.has(norm(v.word))) ok(marked, `latest PM ${date}: same-day application ${v.word} is marked 08:00 taught`);
-      if(marked) ok(amWords.has(norm(v.word)), `latest PM ${date}: 08:00 marker for ${v.word} is not false`);
+      const w=norm(v.word),label=String(v.formation || '') + ' ' + String(v.usage_note || '');
+      const newly=/今天\s*08:00\s*新学/.test(label);
+      const oldReview=/今天\s*08:00\s*复习过的老词/.test(label);
+      // Historical PM JSON used this generic marker; preserve its immutability.
+      const legacy=/今天\s*08:00\s*已教/.test(label);
+      if(amNewWords.has(w)) ok(newly||legacy, `latest PM ${date}: AM new application ${v.word} has correct source marker`);
+      if(amReviewWords.has(w)&&!amNewWords.has(w)) ok(oldReview||legacy, `latest PM ${date}: AM old review application ${v.word} has correct source marker`);
+      if(newly) ok(amNewWords.has(w),`latest PM ${date}: AM new marker ${v.word} is true`);
+      if(oldReview) ok(amReviewWords.has(w)&&!amNewWords.has(w),`latest PM ${date}: AM old review marker ${v.word} is true`);
+      if(legacy) ok(amWords.has(w),`latest PM ${date}: historical generic AM marker ${v.word} is true`);
     });
   }
 }
