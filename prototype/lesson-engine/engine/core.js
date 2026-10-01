@@ -265,7 +265,7 @@
   }
 
   function hasExactWord(text,word){
-    const escaped=String(word||'').replace(/[-\/\\^$*+?.()|[\]{}]/g,'\\$&').replace(/\s+/g,'\\s+');
+    const escaped=String(word||'').replace(/[\/\\^$*+?.()|[\]{}]/g,'\\$&').replace(/\s+/g,'\\s+');
     return !!escaped&&new RegExp('(^|[^\\p{L}])'+escaped+'(?=$|[^\\p{L}])','iu').test(String(text||''));
   }
 
