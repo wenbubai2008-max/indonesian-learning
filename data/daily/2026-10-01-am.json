@@ -1,0 +1,245 @@
+{
+  "date": "2026-10-01",
+  "session": "am",
+  "time": "08:00",
+  "day": 41,
+  "level": "A2+–B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜日常生活与实用表达",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "mundur",
+    "biarpun",
+    "haus",
+    "meledak",
+    "meletakkan",
+    "memeluk",
+    "mengunduh",
+    "menuduh",
+    "menyembuhkan",
+    "seandainya"
+  ],
+  "vocab": [
+    {
+      "word": "mundur",
+      "display": "mundur",
+      "audio_text": "mundur",
+      "cn": "后退；倒退；落后",
+      "en": "move backward; retreat; fall behind",
+      "root": "mundur",
+      "root_cn": "后退；倒退",
+      "formation": "常见搭配 mundur sedikit、mundur dari jabatan；tidak mau mundur 表示“不愿退缩”。",
+      "example": "Tolong mundur sedikit supaya pintunya bisa dibuka.",
+      "example_cn": "请往后退一点，好让门能打开。",
+      "synonym_note": "mundur 是向后退；maju 是向前进。",
+      "is_oral_new": false
+    },
+    {
+      "word": "biarpun",
+      "display": "biarpun",
+      "audio_text": "biarpun",
+      "cn": "即使；尽管",
+      "en": "even though; although",
+      "root": "biar",
+      "root_cn": "让；即便",
+      "formation": "biar + pun，表示让步，相当于“即使……也……”。",
+      "example": "Biarpun hujan, saya tetap pergi ke kantor.",
+      "example_cn": "即使下雨，我还是去办公室。",
+      "synonym_note": "biarpun 与 walaupun 接近，后者更中性通用。",
+      "is_oral_new": false
+    },
+    {
+      "word": "haus",
+      "display": "haus",
+      "audio_text": "haus",
+      "cn": "口渴",
+      "en": "thirsty",
+      "root": "haus",
+      "root_cn": "口渴",
+      "formation": "常见搭配 merasa haus、sangat haus。",
+      "example": "Setelah berjalan jauh, saya merasa sangat haus.",
+      "example_cn": "走了很远以后，我觉得非常口渴。",
+      "synonym_note": "haus = 口渴；lapar = 饥饿。",
+      "is_oral_new": false
+    },
+    {
+      "word": "meledak",
+      "display": "meledak",
+      "audio_text": "meledak",
+      "cn": "爆炸；突然爆发",
+      "en": "explode; burst",
+      "root": "ledak",
+      "root_cn": "爆炸",
+      "formation": "me- + ledak → meledak，表示爆炸，也可表示突然爆发。",
+      "example": "Ban itu tiba-tiba meledak saat mobil sedang berjalan.",
+      "example_cn": "汽车行驶时，那个轮胎突然爆了。",
+      "synonym_note": "meledak 强调突然爆炸或爆发；terbakar 是着火。",
+      "is_oral_new": false
+    },
+    {
+      "word": "meletakkan",
+      "display": "meletakkan",
+      "audio_text": "meletakkan",
+      "cn": "放置；把……放下",
+      "en": "put; place",
+      "root": "letak",
+      "root_cn": "位置；放置",
+      "formation": "me- + letak + -kan → meletakkan，表示把某物放到某处。",
+      "example": "Saya meletakkan kunci di atas meja.",
+      "example_cn": "我把钥匙放在桌子上。",
+      "synonym_note": "meletakkan 较标准；日常口语常说 taruh。",
+      "is_oral_new": false
+    },
+    {
+      "word": "memeluk",
+      "display": "memeluk",
+      "audio_text": "memeluk",
+      "cn": "拥抱",
+      "en": "hug; embrace",
+      "root": "peluk",
+      "root_cn": "抱；拥抱",
+      "formation": "me- + peluk → memeluk，常见 memeluk erat“紧紧拥抱”。",
+      "example": "Anak itu memeluk ibunya sebelum berangkat sekolah.",
+      "example_cn": "那个孩子上学前抱了抱妈妈。",
+      "synonym_note": "memeluk 是拥抱；merangkul 还可以表示搂住、团结或接纳。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengunduh",
+      "display": "mengunduh",
+      "audio_text": "mengunduh",
+      "cn": "下载",
+      "en": "download",
+      "root": "unduh",
+      "root_cn": "下载",
+      "formation": "meng- + unduh → mengunduh，是标准印尼语的“下载”。",
+      "example": "Saya mengunduh dokumen itu sebelum rapat dimulai.",
+      "example_cn": "会议开始前我下载了那份文件。",
+      "synonym_note": "mengunduh 是标准印尼语；口语也经常直接说 download。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menuduh",
+      "display": "menuduh",
+      "audio_text": "menuduh",
+      "cn": "指控；指责",
+      "en": "accuse",
+      "root": "tuduh",
+      "root_cn": "指控；指责",
+      "formation": "me- + tuduh → menuduh，表示指控某人做了某件事。",
+      "example": "Jangan menuduh orang lain tanpa bukti yang jelas.",
+      "example_cn": "没有明确证据，不要指控别人。",
+      "synonym_note": "menuduh 偏“指控”；menyalahkan 更偏“责怪”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyembuhkan",
+      "display": "menyembuhkan",
+      "audio_text": "menyembuhkan",
+      "cn": "治愈；使恢复",
+      "en": "cure; heal",
+      "root": "sembuh",
+      "root_cn": "痊愈；恢复",
+      "formation": "me- + sembuh + -kan → menyembuhkan，表示使人或伤口恢复。",
+      "example": "Obat ini membantu menyembuhkan luka kecil.",
+      "example_cn": "这种药有助于治愈小伤口。",
+      "synonym_note": "menyembuhkan 强调使其痊愈；merawat 是照料、治疗的过程。",
+      "is_oral_new": false
+    },
+    {
+      "word": "seandainya",
+      "display": "seandainya",
+      "audio_text": "seandainya",
+      "cn": "假如；要是",
+      "en": "if; supposing that",
+      "root": "andai",
+      "root_cn": "假如；假设",
+      "formation": "se- + andai + -nya → seandainya，表示假设。",
+      "example": "Seandainya besok libur, saya ingin tidur lebih lama.",
+      "example_cn": "假如明天放假，我想多睡一会儿。",
+      "synonym_note": "seandainya 偏假设；kalau 更常用于一般条件句。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "niat",
+    "mengeluh",
+    "memanggil",
+    "melawan",
+    "bebas"
+  ],
+  "sentences": [
+    {
+      "text": "Biarpun saya haus, saya tidak mau mundur sebelum pekerjaan selesai.",
+      "cn": "即使我口渴，我也不想在工作完成前退缩。"
+    },
+    {
+      "text": "Saya meletakkan ponsel di meja lalu mengunduh dokumen yang diperlukan.",
+      "cn": "我把手机放在桌上，然后下载了需要的文件。"
+    },
+    {
+      "text": "Jangan menuduh orang lain hanya karena kamu sedang mengeluh tentang masalah itu.",
+      "cn": "不要仅仅因为你正在抱怨那个问题就指责别人。"
+    },
+    {
+      "text": "Ibu memanggil anaknya lalu memeluknya ketika dia pulang.",
+      "cn": "妈妈叫住孩子，在他回家时抱了抱他。"
+    },
+    {
+      "text": "Seandainya ban tidak meledak, kami bisa bebas melanjutkan perjalanan sesuai niat awal.",
+      "cn": "假如轮胎没有爆，我们就可以按原来的打算自由地继续行程。"
+    }
+  ],
+  "reading": {
+    "text": "Pagi ini saya ingin mengunduh beberapa dokumen sebelum berangkat kerja. Saya meletakkan laptop di meja dan mulai bekerja. Biarpun masih mengantuk, saya punya niat menyelesaikannya lebih awal. Tiba-tiba terdengar suara keras dari jalan karena sebuah ban meledak. Seorang pengemudi mundur perlahan lalu memanggil temannya. Dia tidak menuduh siapa pun dan tidak banyak mengeluh. Setelah semuanya aman, saya merasa haus dan mengambil air. Seandainya kejadian itu lebih serius, mungkin perjalanan banyak orang akan terganggu. Untungnya tidak ada yang terluka. Seorang ibu bahkan memeluk anaknya yang sempat takut. Setelah itu, suasana kembali tenang dan semua orang bebas melanjutkan kegiatan.",
+    "cn": "今天早上，我想在上班前下载几份文件。我把笔记本电脑放在桌上开始工作。尽管还有点困，我还是打算早点把事情做完。突然，街上传来一声巨响，因为一个轮胎爆了。一名司机慢慢后退，然后叫了朋友过来。他没有指责任何人，也没有不停抱怨。确认一切安全后，我觉得口渴，就去拿了水。假如事情更严重，很多人的行程可能都会受到影响。幸运的是没人受伤。一位妈妈甚至抱住了刚才受到惊吓的孩子。之后周围重新安静下来，大家也都可以继续自己的活动。"
+  },
+  "quiz": [
+    {
+      "question": "“打算；意图”对应哪个复习词？",
+      "options": [
+        "niat",
+        "haus",
+        "mundur",
+        "memeluk"
+      ],
+      "answer_index": 0,
+      "answer": "niat",
+      "explain": "niat 是本课合法复习词，表示打算、意图。"
+    },
+    {
+      "question": "哪个词表示“下载”？",
+      "options": [
+        "menuduh",
+        "mengunduh",
+        "meletakkan",
+        "menyembuhkan"
+      ],
+      "answer_index": 1,
+      "answer": "mengunduh",
+      "explain": "mengunduh 表示下载；日常口语也经常直接说 download。"
+    },
+    {
+      "question": "想表达“假如明天不用上班”，开头最合适的是哪个词？",
+      "options": [
+        "meledak",
+        "bebas",
+        "seandainya",
+        "memanggil"
+      ],
+      "answer_index": 2,
+      "answer": "seandainya",
+      "explain": "seandainya 用来表达假设，相当于“假如、要是”。"
+    }
+  ],
+  "output": {
+    "task": "请用 biarpun、niat、mengeluh 中至少两个词，说两句“工作遇到困难，但仍准备继续完成任务”的情景。",
+    "reference_answer": "Biarpun pekerjaannya sulit, saya tetap punya niat menyelesaikannya hari ini. Saya tidak mau terus mengeluh.",
+    "reference_cn": "即使工作很难，我还是打算今天把它完成。我不想一直抱怨。"
+  },
+  "review": [
+    "3秒主动回忆：mundur、biarpun、haus、meledak、meletakkan。",
+    "区分：mengunduh ↔ download、menuduh ↔ menyalahkan、menyembuhkan ↔ merawat，并各说一个短句。",
+    "复习 niat、mengeluh、memanggil、melawan、bebas，任选两个做主动输出。"
+  ]
+}
