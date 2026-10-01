@@ -13,6 +13,10 @@ on:
       - '.github/scripts/publish-staged-lesson.js'
       - '.github/scripts/test-publish-staged-lesson.js'
       - '.github/scripts/github-publish-adapter.js'
+      - '.github/scripts/recover-missing-lesson.js'
+      - '.github/scripts/test-recover-missing-lesson.js'
+      - 'prototype/lesson-engine/engine/core.js'
+      - 'prototype/lesson-engine/materials/materials-bundle.json'
       - '.github/scripts/test-real-published-lesson.js'
       - '.github/scripts/check-release-pr.js'
       - '.github/scripts/test-release-pr.js'
@@ -31,6 +35,10 @@ on:
       - '.github/scripts/test-release-pr.js'
       - '.github/scripts/plan-lesson-publication.js'
       - '.github/scripts/validate-lesson-candidate.js'
+      - '.github/scripts/recover-missing-lesson.js'
+      - '.github/scripts/test-recover-missing-lesson.js'
+      - 'prototype/lesson-engine/engine/core.js'
+      - 'prototype/lesson-engine/materials/materials-bundle.json'
       - '.github/scripts/publish-extensive-reading-candidate.js'
       - 'data/extensive-reading-candidate.json'
       - 'data/extensive-reading-data.js'
@@ -40,15 +48,24 @@ on:
       - 'data/daily/*-am.json'
       - 'data/daily/*-pm.json'
   schedule:
-    # Safety fallback only. Normal lesson sync is triggered by the atomic lesson+index push.
-    # 01:12 and 11:12 UTC = 08:12 and 18:12 Jakarta; the scheduled run is a read-only gate when healthy.
-    # Recovery is idempotent; it cannot invent a lesson that was never committed.
-    # Unchanged derived payloads preserve generated_at using semantic JSON comparison; no empty Pages deployment.
-    - cron: '12 1,11 * * *'
+    # Move the existing two daily checks to 08:05 and 18:05 in Jakarta.
+    # Run V2 only when the official lesson/index is absent. Actions may start late.
+    - cron: '5 1 * * *'
+    - cron: '5 11 * * *'
   workflow_dispatch:
+    inputs:
+      recover_date:
+        description: 'Automatic failed-release recovery: YYYY-MM-DD'
+        required: false
+        type: string
+      recover_session:
+        description: 'Automatic failed-release recovery: am or pm'
+        required: false
+        type: string
 permissions:
   contents: write
   issues: write
+  pages: write
 concurrency:
   # Main writes share the existing lock; read-only PR tests use their own group.
   group: ${{ github.event_name == 'pull_request' && format('lesson-pr-{0}', github.event.pull_request.number) || 'learning-data-write' }}
@@ -73,6 +90,9 @@ jobs:
           set -Eeuo pipefail
           node --check .github/scripts/validate-lesson-candidate.js
           node --check .github/scripts/plan-lesson-publication.js
+          node --check .github/scripts/recover-missing-lesson.js
+          node --check .github/scripts/test-recover-missing-lesson.js
+          node .github/scripts/test-recover-missing-lesson.js
           node --check .github/scripts/check-release-pr.js
           node --check .github/scripts/test-release-pr.js
           node .github/scripts/test-lesson-candidate.js
@@ -351,6 +371,24 @@ jobs:
           # Dispatch the existing Sync, with read-back before any retry so an accepted-but-lost
           # response cannot create a false failure or unnecessary duplicate recovery path.
           dispatch_sync "$merge_sha"
+
+      - name: Recover immediately after an eligible lesson release fails
+        if: ${{ failure() && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.user.login == github.repository_owner && contains(github.event.pull_request.body, 'AUTO_PUBLISH_LESSON=1') }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_BRANCH: ${{ github.event.pull_request.head.ref }}
+        run: |
+          set -Eeuo pipefail
+          if [[ ! "$RELEASE_BRANCH" =~ ^lesson-release-([0-9]{4}-[0-9]{2}-[0-9]{2})-(am|pm)$ ]]; then
+            echo 'Not an authorized daily lesson branch; no recovery dispatched.'
+            exit 0
+          fi
+          date="$(echo "$RELEASE_BRANCH" | cut -c 16-25)"
+          session="$(echo "$RELEASE_BRANCH" | sed -E "s/.*-(am|pm)$/\1/")"
+          gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" \
+            -f ref=main -f "inputs[recover_date]=$date" -f "inputs[recover_session]=$session"
+          echo "Dispatched independent V2 fallback for $date $session."
 
   extensive_reading_release:
     if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'extensive-reading-')
