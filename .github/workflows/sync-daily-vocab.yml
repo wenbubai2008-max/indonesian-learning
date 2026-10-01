@@ -45,7 +45,14 @@ on:
     # Recovery is idempotent; it cannot invent a lesson that was never committed.
     # Unchanged derived payloads preserve generated_at using semantic JSON comparison; no empty Pages deployment.
     - cron: '12 1,11 * * *'
+    # 12:00 Jakarta: API-powered extensive reading, only when explicitly enabled.
+    - cron: '0 5 * * *'
   workflow_dispatch:
+    inputs:
+      generate_extensive_reading:
+        description: 'Run the guarded, API-powered extensive reading publisher'
+        type: boolean
+        default: false
 permissions:
   contents: write
   issues: write
@@ -508,8 +515,502 @@ jobs:
           merge_sha="$(jq -r '.sha // empty' <<<"$response")"
           echo "EXTENSIVE_READING_PUBLISHED date=$release_date pr=$PR_NUMBER head=$final_sha merge=$merge_sha"
 
+  extensive_reading_generate:
+    # Rollout switch: keep the existing ChatGPT 12:00 task until this job is verified with a real API key.
+    if: github.ref == 'refs/heads/main' && vars.EXTENSIVE_READING_AUTO_ENABLED == 'true' && ((github.event_name == 'schedule' && github.event.schedule == '0 5 * * *') || (github.event_name == 'workflow_dispatch' && inputs.generate_extensive_reading == true))
+    runs-on: ubuntu-latest
+    concurrency:
+      group: learning-data-write
+      cancel-in-progress: false
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Generate candidate and publish using the existing trusted publisher
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_READING_MODEL: ${{ vars.OPENAI_READING_MODEL || 'gpt-4.1-mini' }}
+        run: |
+          set -Eeuo pipefail
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo '::warning title=Reading API key missing::Configure OPENAI_API_KEY as an Actions repository secret first. No article has been changed.'
+            exit 0
+          fi
+          git fetch --no-tags origin main
+          git checkout -B main origin/main
+          release_base="$(git rev-parse HEAD)"
+          release_date="$(TZ=Asia/Jakarta date +%F)"
+          branch="extensive-reading-$release_date"
+          echo "Reading release date=$release_date pinned main=$release_base"
+          # Nothing to do if main already contains a published article for today.
+          if node - "$release_date" <<'NODE'
+          const fs=require('fs'),vm=require('vm');
+          const w={window:Object.create(null)};
+          vm.runInNewContext(fs.readFileSync('data/extensive-reading-data.js','utf8'),w,{timeout:1000});
+          const a=w.window.EXTENSIVE_READING_DB;
+          if(!Array.isArray(a)||a.length!==1)process.exit(2);
+          process.exit(a[0].date===process.argv[2]?0:1);
+          NODE
+          then
+            echo "Reading already published for $release_date; no duplicate or empty commit."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            git fetch --no-tags origin "$branch"
+            git checkout -B "$branch" FETCH_HEAD
+            if [ ! -f data/extensive-reading-candidate.json ]; then
+              echo '::error title=Reading branch incomplete::Existing release branch has no candidate; preserve it for inspection. Do not regenerate or overwrite official files.'
+              exit 1
+            fi
+            echo 'Reusing the one existing candidate without generating a second article.'
+          else
+            git checkout -b "$branch" "$release_base"
+            node --check .github/scripts/generate-extensive-reading.js
+            node .github/scripts/generate-extensive-reading.js
+            test -f data/extensive-reading-candidate.json
+            git add -- data/extensive-reading-candidate.json
+            git commit -m "Add $release_date extensive reading candidate"
+            git push -u origin "HEAD:$branch"
+          fi
+          # The candidate is never published directly; only the trusted runner script
+          # prepares the official archive/index/today transaction.
+          if ! git merge-base --is-ancestor "$release_base" HEAD; then
+            git merge --no-edit "$release_base"
+          fi
+          changed_before="$(git diff --name-only "$release_base" HEAD)"
+          unexpected="$(printf '%s\n' "$changed_before" | grep -Ev '^(data/extensive-reading-candidate[.]json|data/extensive-reading-data[.]js|data/extensive-reading-history[.]js|data/extensive-reading-history/[0-9]{4}-[0-9]{2}-[0-9]{2}(-[a-z0-9-]+)?[.]js)    if: github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || github.event.schedule != '0 5 * * *') && (github.event_name != 'workflow_dispatch' || inputs.generate_extensive_reading != true)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Sync vocab safely
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          incident_phase='startup'
+          incident_category='unknown'
+          record_incident_on_exit() {
+            rc=$?
+            if [ "$rc" -eq 0 ]; then return 0; fi
+            report="$RUNNER_TEMP/learning-incident.txt"
+            {
+              printf 'Workflow: %s\n' "$GITHUB_WORKFLOW"
+              printf 'Category (preliminary): %s\n' "$incident_category"
+              printf 'Phase: %s\n' "$incident_phase"
+              printf 'Exit code: %s\n' "$rc"
+              printf 'UTC time: %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+              printf 'Run: https://github.com/%s/actions/runs/%s/attempts/%s\n' "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
+              printf 'Trigger SHA: %s\n' "$GITHUB_SHA"
+              printf 'Local HEAD: %s\n' "$(git rev-parse HEAD 2>/dev/null || echo unavailable)"
+              printf 'Fetched origin/main: %s\n' "$(git rev-parse origin/main 2>/dev/null || echo unavailable)"
+              printf 'Full error details: see the failing step in the linked GitHub run.\n'
+            } > "$report"
+            { echo '### Learning workflow failure'; cat "$report"; } >> "$GITHUB_STEP_SUMMARY" || true
+          }
+          trap record_incident_on_exit EXIT
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2; do
+            incident_phase="fetch_main"; incident_category="git_transport"
+            echo "Sync attempt ${attempt}/2: recompute from latest origin/main"
+            git fetch origin main
+            git reset --hard origin/main
+            rm -f "$RUNNER_TEMP/scheduled-missing-lesson.txt"
+            if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+              incident_phase='scheduled_health_check'; incident_category='recovery_check'
+              if node <<'HEALTH'
+          const fs=require('fs');
+          const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+          const local=Object.fromEntries(parts.map(p=>[p.type,p.value]));
+          const date=`${local.year}-${local.month}-${local.day}`;
+          const session=Number(local.hour)>=18?'pm':'am';
+          const time=session==='am'?'08:00':'18:00';
+          const index=JSON.parse(fs.readFileSync('data/daily/index.json','utf8'));
+          const rows=(index.dates||[]).filter(r=>r&&r.date===date);
+          const lessonPath=`data/daily/${date}-${session}.json`;
+          if(rows.length!==1||rows[0][session]!==true||!fs.existsSync(lessonPath))process.exit(1);
+          const lesson=JSON.parse(fs.readFileSync(lessonPath,'utf8'));
+          if(lesson.date!==date||lesson.session!==session||lesson.time!==time||(session==='pm'&&lesson.write_status!=='lesson_complete'))process.exit(1);
+          const runtime=JSON.parse(fs.readFileSync('data/learning-runtime.json','utf8'));
+          if(runtime.lesson_watermark!==`${date} ${time}`)process.exit(1);
+          const words=session==='am'?(lesson.vocab||[]).map(v=>v&&v.word):(lesson.new_words||[]);
+          const pool=new Set((runtime.new_pool||[]).map(v=>String(Array.isArray(v)?v[0]:v&&v.word||v).trim().toLowerCase()));
+          if(words.some(v=>pool.has(String(v||'').trim().toLowerCase())))process.exit(1);
+          HEALTH
+              then
+                if node .github/scripts/regression-guard.js > /dev/null &&
+                   node .github/scripts/build-lesson-context.js --check > /dev/null; then
+                  echo 'Scheduled check: lesson, index, runtime, context, vocabulary and regression guard healthy; no rebuild or commit.'
+                  exit 0
+                fi
+              fi
+              echo 'Scheduled check found incomplete/stale state; enter idempotent recovery.'
+            fi
+            incident_phase='reconcile_completed_lessons'; incident_category='lesson_or_data_integrity'
+            node <<'NODE'
+          const fs=require('fs');
+          const dbPath='data/daily-vocab-data.js';
+          const src=fs.readFileSync(dbPath,'utf8');
+          const db=JSON.parse(src.replace(/^window\.DAILY_VOCAB_DB\s*=\s*/,'').replace(/;\s*$/,''));
+          const key=s=>String(s||'').trim().toLowerCase();
+          const map=new Map(db.map(x=>[key(x.word),x]));
+          const addUnique=(arr,v)=>{arr=Array.isArray(arr)?arr:[];if(!arr.includes(v))arr.push(v);return arr};
+
+          // Self-healing reconciliation with index.json as the completion barrier.
+          // A lesson is eligible only after its date/session flag is true in the daily index.
+          // This keeps scheduled fallback runs from ingesting a half-written AM/PM file.
+          const dailyIndex=JSON.parse(fs.readFileSync('data/daily/index.json','utf8'));
+
+          // A scheduled fallback must not silently report success if today's lesson
+          // was never written. This does not generate lessons; it surfaces the exact
+          // missing completion barrier so the lesson task can be repaired safely.
+          if(process.env.GITHUB_EVENT_NAME==='schedule'){
+            const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+            const local=Object.fromEntries(parts.map(p=>[p.type,p.value]));
+            const currentDate=`${local.year}-${local.month}-${local.day}`;
+            const hour=Number(local.hour);
+            const expectedSession=hour>=18?'pm':hour>=8?'am':null;
+            if(expectedSession){
+              const rows=(dailyIndex.dates||[]).filter(r=>r&&r.date===currentDate);
+              const lessonPath=`data/daily/${currentDate}-${expectedSession}.json`;
+              const fileExists=fs.existsSync(lessonPath);
+              const flagged=rows.length===1&&rows[0][expectedSession]===true;
+              if(!flagged||!fileExists){
+                const detail=`Scheduled recovery incomplete: ${currentDate} ${expectedSession.toUpperCase()} (index_rows=${rows.length}, index_flag=${flagged}, lesson_file=${fileExists?'present':'missing'}). Existing completed lessons will still be reconciled before this run reports the missing current lesson.`;
+                fs.writeFileSync(process.env.RUNNER_TEMP+'/scheduled-missing-lesson.txt',detail+'\n');
+                console.warn(detail);
+              }else{
+                const lesson=JSON.parse(fs.readFileSync(lessonPath,'utf8'));
+                const expectedTime=expectedSession==='am'?'08:00':'18:00';
+                if(lesson.date!==currentDate||lesson.session!==expectedSession||lesson.time!==expectedTime||(expectedSession==='pm'&&lesson.write_status!=='lesson_complete')){
+                  throw new Error(`Scheduled recovery found incomplete lesson schema: ${lessonPath}`);
+                }
+                console.log(`Scheduled recovery: verified ${currentDate} ${expectedTime} lesson and index barrier.`);
+              }
+            }else console.log('Scheduled recovery: outside lesson hours; skip current-day completion assertion.');
+          }
+          const completed=new Set();
+          for(const row of (dailyIndex.dates||[])){
+            if(row && row.date && row.am===true)completed.add(`${row.date}-am`);
+            if(row && row.date && row.pm===true)completed.add(`${row.date}-pm`);
+          }
+          const files=fs.readdirSync('data/daily')
+            .filter(f=>{
+              const m=f.match(/^([0-9]{4}-[0-9]{2}-[0-9]{2})-(am|pm)\.json$/);
+              return !!m && completed.has(`${m[1]}-${m[2]}`);
+            })
+            .sort()
+            .map(f=>'data/daily/'+f);
+
+          let appended=0;
+          let repairedOccurrences=0;
+
+          for(const f of files){
+            const lesson=JSON.parse(fs.readFileSync(f,'utf8'));
+            const session=lesson.time||(lesson.session==='pm'?'18:00':'08:00');
+            const date=lesson.date;
+            if(!date)throw new Error(`Missing lesson.date in ${f}`);
+
+            const lessonNewSet=new Set((lesson.new_words||[]).map(key).filter(Boolean));
+            const vocabByKey=new Map((lesson.vocab||[]).map(v=>[key(v.word),v]).filter(([k])=>k));
+
+            // PM new_words is the strongest record that a word was formally taught new.
+            // Refuse silent loss if a listed PM new word has no vocab payload.
+            if(lesson.session==='pm'||session==='18:00'){
+              for(const w of lessonNewSet){
+                if(!vocabByKey.has(w)){
+                  throw new Error(`PM new_words entry missing matching vocab object in ${f}: ${w}`);
+                }
+              }
+            }
+
+            for(const v of (lesson.vocab||[])){
+              const k=key(v.word);if(!k)continue;
+              const stamp=`${date} ${session}`;
+              const oralFlag=v.is_oral_new===true||(Array.isArray(v.categories)&&v.categories.includes('口语'));
+              const mayAppend=session==='08:00'||v.is_new===true||v.source_group==='new'||lessonNewSet.has(k);
+
+              if(map.has(k)){
+                const x=map.get(k);
+                const dates=Array.isArray(x.dates)?x.dates:[];
+                const sessions=Array.isArray(x.sessions)?x.sessions:[];
+                const already=dates.includes(date)&&sessions.includes(session);
+                if(!already){
+                  x.times_seen=(Number(x.times_seen)||0)+1;
+                  repairedOccurrences++;
+                }
+                x.sessions=addUnique(x.sessions,session);
+                x.dates=addUnique(x.dates,date).sort();
+                x.categories=addUnique(addUnique(x.categories,'每日学习'),session);
+                if(oralFlag)x.categories=addUnique(x.categories,'口语');
+                if(!x.root&&v.root)x.root=v.root;
+                if(!x.root_cn&&v.root_cn)x.root_cn=v.root_cn;
+                if(!x.cn&&v.cn)x.cn=v.cn;
+                if(!x.en&&v.en)x.en=v.en;
+                if(v.example)x.example=v.example;
+                if(v.example_cn)x.example_cn=v.example_cn;
+                if(!x.first_seen||stamp<x.first_seen)x.first_seen=stamp;
+                if(!x.last_seen||stamp>x.last_seen)x.last_seen=stamp;
+              }else{
+                // AM vocab is formally taught by contract. For PM, only append
+                // words explicitly marked as new; a missing review/app word is
+                // treated as a data-integrity error instead of silently inventing history.
+                if(!mayAppend){
+                  throw new Error(`Refusing to append non-new ${session} vocab missing from daily-vocab: ${v.word} (${f})`);
+                }
+                const categories=['每日学习',session];if(oralFlag)categories.push('口语');
+                const x={
+                  word:String(v.word).trim(),
+                  cn:v.cn||'',
+                  en:v.en||'',
+                  root:v.root||'',
+                  root_cn:v.root_cn||'',
+                  example:v.example||'',
+                  example_cn:v.example_cn||'',
+                  categories,
+                  times_seen:1,
+                  first_seen:stamp,
+                  last_seen:stamp,
+                  sessions:[session],
+                  dates:[date]
+                };
+                db.push(x);
+                map.set(k,x);
+                appended++;
+              }
+            }
+          }
+
+          // Rebuild exact completed-lesson occurrence pairs after the normal content merge.
+          // This adds AM review_vocab as a real recurrence and avoids treating
+          // separate date/session arrays as if they proved a specific date+session pair.
+          const occurrenceMap=new Map();
+          const latestCompletedAm=(dailyIndex.dates||[])
+            .filter(x=>x&&x.date&&x.am===true)
+            .map(x=>String(x.date))
+            .sort()
+            .pop()||'';
+          const addOccurrence=(word,date,session)=>{
+            const k=key(word);if(!k||!date||!session)return;
+            if(!occurrenceMap.has(k))occurrenceMap.set(k,new Set());
+            occurrenceMap.get(k).add(`${date} ${session}`);
+          };
+          for(const f of files){
+            const lesson=JSON.parse(fs.readFileSync(f,'utf8'));
+            const session=lesson.time||(lesson.session==='pm'?'18:00':'08:00');
+            const date=lesson.date;
+            if(!date)throw new Error(`Missing lesson.date in ${f}`);
+            for(const v of (lesson.vocab||[]))addOccurrence(v&&v.word,date,session);
+            if(session==='08:00'||lesson.session==='am'){
+              for(const r of (Array.isArray(lesson.review_vocab)?lesson.review_vocab:[])){
+                const reviewWord=typeof r==='string'?r:r&&r.word;
+                const reviewKey=key(reviewWord);
+                if(!reviewKey)continue;
+                if(!map.has(reviewKey)){
+                  if(date===latestCompletedAm)throw new Error(`Latest AM review_vocab missing from daily-vocab: ${reviewWord} (${f})`);
+                  console.warn(`Skipping legacy AM review_vocab missing from daily-vocab: ${reviewWord} (${f})`);
+                  continue;
+                }
+                addOccurrence(reviewWord,date,session);
+              }
+            }
+          }
+          for(const [k,stamps] of occurrenceMap){
+            const x=map.get(k);
+            if(!x)throw new Error(`Completed lesson recurrence missing from daily-vocab: ${k}`);
+            const ordered=[...stamps].sort();
+            const oldTimes=Number(x.times_seen)||0;
+            if(oldTimes!==ordered.length)repairedOccurrences+=Math.abs(ordered.length-oldTimes);
+            x.times_seen=ordered.length;
+            x.lesson_occurrences=ordered;
+            x.dates=[...new Set(ordered.map(s=>s.slice(0,10)))].sort();
+            x.sessions=[...new Set(ordered.map(s=>s.slice(11)))];
+            x.categories=addUnique(x.categories,'每日学习');
+            for(const sess of x.sessions)x.categories=addUnique(x.categories,sess);
+            x.first_seen=ordered[0];
+            x.last_seen=ordered[ordered.length-1];
+          }
+
+          console.log(`Reconciled ${files.length} lesson files; appended ${appended} missing taught words; repaired ${repairedOccurrences} missing occurrences.`);
+          fs.writeFileSync(dbPath,'window.DAILY_VOCAB_DB = '+JSON.stringify(db,null,2)+';\n');
+          NODE
+          incident_phase='build_runtime'; incident_category='derived_data'
+          node .github/scripts/build-learning-runtime.js
+          incident_phase='build_lesson_context'; incident_category='derived_data'
+          node .github/scripts/build-lesson-context.js --output data/lesson-context.json
+          node .github/scripts/build-lesson-context.js --check
+          node --check .github/scripts/build-vocab-profile.js
+          node --check .github/scripts/write-vocab-profile-snapshot.js
+          node --check .github/scripts/test-vocab-profile-snapshot.js
+          node .github/scripts/test-vocab-profile-snapshot.js
+          node --check .github/scripts/inject-vocab-profile.js
+          node --check data/vocab-profile-ui.js
+          node --check data/vocab-profile-evidence.js
+          node --check data/listening-word-training.js
+          node --check .github/scripts/test-vocab-profile-evidence.js
+          node .github/scripts/test-vocab-profile-evidence.js
+          node --check data/vocab-study-coach.js
+          node --check data/home-learning-upgrade-v2.js
+          node --check data/automation-training.js
+          node --check .github/scripts/test-vocab-study-coach.js
+          node --check .github/scripts/vocab-ui-regression-guard.js
+          node .github/scripts/test-vocab-study-coach.js
+          node --check .github/scripts/test-cross-module-training.js
+          node .github/scripts/test-cross-module-training.js
+          node .github/scripts/build-vocab-profile.js
+          node .github/scripts/write-vocab-profile-snapshot.js
+          node .github/scripts/inject-vocab-profile.js
+          incident_phase='regression_guard'; incident_category='validation'
+          node .github/scripts/regression-guard.js
+          node .github/scripts/vocab-ui-regression-guard.js
+          incident_phase='prepare_commit'; incident_category='git_write'
+          git add data/daily-vocab-data.js data/learning-runtime.json data/lesson-context.json index.html data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json
+          if git diff --cached --quiet; then
+            git fetch origin main
+            if [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ]; then
+              echo 'Sync already current; no empty commit.'
+              if [ -s "$RUNNER_TEMP/scheduled-missing-lesson.txt" ]; then
+                incident_phase='scheduled_current_lesson_missing'; incident_category='lesson_missing'
+                cat "$RUNNER_TEMP/scheduled-missing-lesson.txt"
+                echo '::error title=Scheduled lesson missing::Completed published lessons are reconciled, but the current scheduled lesson is still missing.'
+                exit 1
+              fi
+              exit 0
+            fi
+            echo '::warning title=Sync input changed::main moved during no-op check; recomputing once.'
+            continue
+          fi
+          git commit -m 'Sync daily lesson vocabulary and runtime'
+          incident_phase='publish_commit'; incident_category='git_push_or_concurrency'
+          if git push origin HEAD:main; then
+            incident_phase='remote_readback'; incident_category='post_commit_validation'
+            git fetch origin main
+            git reset --hard origin/main
+            node .github/scripts/regression-guard.js
+            node .github/scripts/vocab-ui-regression-guard.js
+            node .github/scripts/build-lesson-context.js --check
+            echo "Sync push and remote read-back validation succeeded on attempt ${attempt}."
+            if [ -s "$RUNNER_TEMP/scheduled-missing-lesson.txt" ]; then
+              incident_phase='scheduled_current_lesson_missing'; incident_category='lesson_missing'
+              cat "$RUNNER_TEMP/scheduled-missing-lesson.txt"
+              echo '::error title=Scheduled lesson missing::Published data was repaired, but the current scheduled lesson is still missing.'
+              exit 1
+            fi
+            exit 0
+          fi
+          echo "::warning title=Sync branch advanced or push failed::Attempt ${attempt} did not publish; discarding derived local commit and recomputing from current main."
+          done
+          echo '::error title=Sync push failed::Two safe attempts failed; no force push, no stale rebase. Inspect original git push errors.'
+          exit 1
+      - name: Record failure as a durable GitHub issue
+        if: failure()
+        continue-on-error: true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          report="$RUNNER_TEMP/learning-incident.txt"
+          if [ ! -s "$report" ]; then
+            {
+              echo "Workflow: $GITHUB_WORKFLOW"
+              echo 'Category (preliminary): setup_or_runner'
+              echo 'Phase: before_capture'
+              echo "Run: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/attempts/$GITHUB_RUN_ATTEMPT"
+              echo 'Full error details: see the failing step in the linked GitHub run.'
+            } > "$report"
+          fi
+          category=$(sed -n 's/^Category (preliminary): //p' "$report" | head -n 1)
+          phase=$(sed -n 's/^Phase: //p' "$report" | head -n 1)
+          title="[Learning incident] $GITHUB_WORKFLOW: $category/$phase"
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state all --limit 500 --json number,title | jq -r --arg title "$title" '.[] | select(.title == $title) | .number' | head -n 1)
+          if [ -n "$existing" ]; then
+            gh issue reopen "$existing" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 || true
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body-file "$report"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file "$report"
+          fi
+      - name: Preserve original failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: learning-incident-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/learning-incident.txt
+          if-no-files-found: warn
+          retention-days: 90
+ || true)"
+          if [ -n "$unexpected" ]; then
+            echo "::error title=Unexpected reading paths::$unexpected"
+            exit 1
+          fi
+          trusted="$RUNNER_TEMP/publish-extensive-reading-candidate.js"
+          git show "$release_base:.github/scripts/publish-extensive-reading-candidate.js" > "$trusted"
+          node --check "$trusted"
+          node "$trusted" prepare --repo "$GITHUB_WORKSPACE" --base "$release_base" --date "$release_date"
+          node .github/scripts/regression-guard.js
+          git add -A -- data/extensive-reading-candidate.json data/extensive-reading-data.js data/extensive-reading-history.js data/extensive-reading-history
+          if git diff --cached --quiet; then
+            echo 'Reading already prepared; no empty commit.'
+            exit 0
+          fi
+          git commit -m "Prepare extensive reading $release_date"
+          final_sha="$(git rev-parse HEAD)"
+          node "$trusted" validate --repo "$GITHUB_WORKSPACE" --base "$release_base" --date "$release_date"
+          git push origin "HEAD:$branch"
+          git fetch --no-tags origin main
+          if [ "$(git rev-parse origin/main)" != "$release_base" ]; then
+            echo "::error title=Main advanced::Keep isolated release; do not merge stale content."
+            exit 1
+          fi
+          # GitHub's own GITHUB_TOKEN may not automatically trigger another PR Actions
+          # workflow. Complete this trusted scheduled release in the same job.
+          existing="$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --head "$branch" --base main --json number --jq '.[0].number // empty')"
+          if [ -z "$existing" ]; then
+            gh pr create --repo "$GITHUB_REPOSITORY" --head "$branch" --base main --title "Publish $release_date extensive reading" --body 'AUTO_PUBLISH_EXTENSIVE_READING=1
+
+          Generated and validated by the existing trusted scheduled GitHub Actions workflow.'
+            existing="$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --head "$branch" --base main --json number --jq '.[0].number // empty')"
+          fi
+          test -n "$existing"
+          mergeable=""
+          remote_sha=""
+          for n in 1 2 3 4 5 6 7 8 9 10; do
+            info="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$existing")"
+            remote_sha="$(jq -r '.head.sha // empty' <<< "$info")"
+            mergeable="$(jq -r 'if .mergeable == null then "unknown" else (.mergeable|tostring) end' <<< "$info")"
+            if [ "$remote_sha" = "$final_sha" ] && [ "$mergeable" = true ]; then break; fi
+            if [ "$remote_sha" = "$final_sha" ] && [ "$mergeable" = false ]; then
+              echo '::error title=PR not mergeable::Preserving release branch.'; exit 1
+            fi
+            sleep 3
+          done
+          if [ "$remote_sha" != "$final_sha" ] || [ "$mergeable" != true ]; then
+            echo '::error title=PR head or mergeability timeout::Preserving release branch.'; exit 1
+          fi
+          git fetch --no-tags origin main
+          if [ "$(git rev-parse origin/main)" != "$release_base" ]; then
+            echo '::error title=Main advanced before squash::Preserving release branch.'; exit 1
+          fi
+          gh api --method PUT "repos/$GITHUB_REPOSITORY/pulls/$existing/merge" -f merge_method=squash -f sha="$final_sha" | tee "$RUNNER_TEMP/reading-result.json"
+          test "$(jq -r '.merged' "$RUNNER_TEMP/reading-result.json")" = true
+          echo "EXTENSIVE_READING_PUBLISHED date=$release_date pr=$existing merge=$(jq -r .sha "$RUNNER_TEMP/reading-result.json")"
+
   sync:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || github.event.schedule != '0 5 * * *') && (github.event_name != 'workflow_dispatch' || inputs.generate_extensive_reading != true)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
