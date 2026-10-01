@@ -1,0 +1,703 @@
+{
+  "version": 1,
+  "principles": {
+    "max_core_words_in_reading": 5,
+    "max_new_words_in_dialogue": 4,
+    "reading_word_target": [
+      80,
+      120
+    ],
+    "preference": [
+      "daily-life",
+      "workplace",
+      "transport",
+      "shopping",
+      "home",
+      "health",
+      "social"
+    ],
+    "note": "Do not force all lesson words into one scene; coherence wins over coverage."
+  },
+  "scenes": [
+    {
+      "id": "work-morning",
+      "domain": "work",
+      "level": "A2-B1",
+      "tags": [
+        "work",
+        "document",
+        "schedule",
+        "communication",
+        "problem",
+        "action"
+      ],
+      "title": "Pagi di kantor",
+      "openings": [
+        "Pagi ini saya datang lebih awal karena ada beberapa hal yang harus diselesaikan.",
+        "Hari ini suasana kantor cukup sibuk sejak pagi."
+      ],
+      "moves": [
+        "Ada satu tugas kecil yang ternyata membutuhkan waktu lebih lama dari perkiraan.",
+        "Seorang rekan kerja datang untuk bertanya dan kami membahasnya sebentar.",
+        "Setelah menemukan cara yang lebih praktis, pekerjaan bisa dilanjutkan.",
+        "Sebelum makan siang, situasinya sudah jauh lebih tenang."
+      ],
+      "dialogue": [
+        "ask-help",
+        "clarify",
+        "suggest",
+        "confirm"
+      ],
+      "closing": [
+        "Akhirnya kami bisa bekerja lagi tanpa terburu-buru.",
+        "Masalah kecil itu selesai dan pekerjaan kembali berjalan normal."
+      ]
+    },
+    {
+      "id": "work-meeting",
+      "domain": "work",
+      "level": "A2-B1",
+      "tags": [
+        "work",
+        "opinion",
+        "agreement",
+        "decision",
+        "plan",
+        "communication"
+      ],
+      "title": "Rapat singkat",
+      "openings": [
+        "Siang ini tim kami mengadakan rapat singkat tentang pekerjaan minggu ini.",
+        "Sore tadi ada rapat kecil untuk membahas rencana berikutnya."
+      ],
+      "moves": [
+        "Setiap orang menyampaikan pendapat dengan singkat.",
+        "Ada beberapa usul yang berbeda, tetapi kami tidak langsung menolaknya.",
+        "Setelah membandingkan pilihan, kami memilih langkah yang paling masuk akal.",
+        "Atasan menutup rapat dengan beberapa pengingat sederhana."
+      ],
+      "dialogue": [
+        "state-opinion",
+        "disagree-softly",
+        "propose",
+        "confirm"
+      ],
+      "closing": [
+        "Rapatnya tidak lama, tetapi hasilnya cukup jelas.",
+        "Setelah rapat, semua orang tahu apa yang harus dilakukan."
+      ]
+    },
+    {
+      "id": "account-phone",
+      "domain": "digital",
+      "level": "A2-B1",
+      "tags": [
+        "digital",
+        "account",
+        "document",
+        "communication",
+        "problem",
+        "action"
+      ],
+      "title": "Masalah akun dan ponsel",
+      "openings": [
+        "Pagi ini saya mengalami masalah kecil dengan akun di ponsel.",
+        "Saat hendak membuka aplikasi, saya baru sadar ada sesuatu yang tidak beres."
+      ],
+      "moves": [
+        "Saya mencoba memeriksa pengaturan dan membaca petunjuknya sekali lagi.",
+        "Karena belum berhasil, saya meminta bantuan seorang teman.",
+        "Kami mencoba satu langkah sederhana dan akhirnya akun itu bisa dipakai lagi.",
+        "Setelah itu saya menyimpan informasi penting agar lebih mudah ditemukan."
+      ],
+      "dialogue": [
+        "ask-help",
+        "give-instruction",
+        "confirm",
+        "thanks"
+      ],
+      "closing": [
+        "Masalahnya ternyata tidak besar, hanya perlu sedikit sabar.",
+        "Setelah selesai, saya bisa kembali menggunakan ponsel seperti biasa."
+      ]
+    },
+    {
+      "id": "commute-traffic",
+      "domain": "transport",
+      "level": "A2-B1",
+      "tags": [
+        "transport",
+        "movement",
+        "delay",
+        "problem",
+        "distance",
+        "direction"
+      ],
+      "title": "Perjalanan ke kantor",
+      "openings": [
+        "Pagi ini perjalanan ke kantor lebih lama dari biasanya.",
+        "Saya berangkat seperti biasa, tetapi jalanan mulai padat."
+      ],
+      "moves": [
+        "Beberapa kendaraan bergerak pelan dan pengemudi harus lebih berhati-hati.",
+        "Di satu titik, lalu lintas sempat berhenti beberapa menit.",
+        "Saya mengecek rute lain, tetapi jaraknya ternyata lebih jauh.",
+        "Akhirnya kendaraan mulai bergerak lagi dan saya tiba tanpa masalah besar."
+      ],
+      "dialogue": [
+        "ask-location",
+        "explain-delay",
+        "suggest-route",
+        "confirm"
+      ],
+      "closing": [
+        "Saya terlambat sedikit, tetapi masih sempat menyelesaikan pekerjaan pagi.",
+        "Perjalanan cukup melelahkan, tetapi setidaknya semuanya aman."
+      ]
+    },
+    {
+      "id": "ride-hailing",
+      "domain": "transport",
+      "level": "A2-B1",
+      "tags": [
+        "transport",
+        "location",
+        "communication",
+        "waiting",
+        "direction",
+        "problem"
+      ],
+      "title": "Menunggu kendaraan online",
+      "openings": [
+        "Saya memesan kendaraan online untuk pergi ke suatu tempat.",
+        "Sore ini saya harus pergi, jadi saya memesan kendaraan dari aplikasi."
+      ],
+      "moves": [
+        "Pengemudi sudah dekat, tetapi kami sempat salah memahami titik jemput.",
+        "Saya menjelaskan lokasi dengan lebih sederhana.",
+        "Beberapa menit kemudian kami akhirnya bertemu.",
+        "Setelah memastikan tujuan, perjalanan pun dimulai."
+      ],
+      "dialogue": [
+        "ask-location",
+        "clarify-location",
+        "confirm",
+        "thanks"
+      ],
+      "closing": [
+        "Kesalahpahaman kecil itu selesai tanpa masalah.",
+        "Setelah itu perjalanan berjalan lancar."
+      ]
+    },
+    {
+      "id": "restaurant-lunch",
+      "domain": "food",
+      "level": "A2-B1",
+      "tags": [
+        "food",
+        "taste",
+        "choice",
+        "order",
+        "health",
+        "social"
+      ],
+      "title": "Makan siang",
+      "openings": [
+        "Saat makan siang, saya pergi ke tempat makan dekat kantor.",
+        "Hari ini saya ingin makan sesuatu yang sederhana dan tidak terlalu berat."
+      ],
+      "moves": [
+        "Saya melihat menu sebentar sebelum memilih makanan.",
+        "Teman saya menyarankan satu menu yang katanya cukup enak.",
+        "Kami juga membahas rasa dan porsi sambil menunggu pesanan.",
+        "Setelah makan, kami kembali ke kantor dengan santai."
+      ],
+      "dialogue": [
+        "ask-recommendation",
+        "order-food",
+        "comment-taste",
+        "confirm"
+      ],
+      "closing": [
+        "Makanannya cocok dan harganya juga masih masuk akal.",
+        "Tidak istimewa sekali, tetapi cukup enak untuk makan siang."
+      ]
+    },
+    {
+      "id": "market-shopping",
+      "domain": "shopping",
+      "level": "A2-B1",
+      "tags": [
+        "shopping",
+        "price",
+        "quantity",
+        "choice",
+        "quality",
+        "communication"
+      ],
+      "title": "Belanja kebutuhan",
+      "openings": [
+        "Sore ini saya mampir ke toko untuk membeli beberapa kebutuhan.",
+        "Saya membuat daftar pendek sebelum pergi belanja."
+      ],
+      "moves": [
+        "Ada beberapa pilihan dengan harga dan ukuran yang berbeda.",
+        "Saya membandingkan kualitasnya sebelum memutuskan.",
+        "Satu barang ternyata tidak tersedia, jadi saya memilih pengganti yang paling sesuai.",
+        "Setelah membayar, saya memeriksa lagi barang yang dibeli."
+      ],
+      "dialogue": [
+        "ask-price",
+        "compare",
+        "request-item",
+        "confirm"
+      ],
+      "closing": [
+        "Saya tidak membeli banyak, hanya yang memang diperlukan.",
+        "Belanja selesai lebih cepat karena saya sudah tahu apa yang dibutuhkan."
+      ]
+    },
+    {
+      "id": "online-order",
+      "domain": "shopping",
+      "level": "A2-B1",
+      "tags": [
+        "shopping",
+        "delivery",
+        "document",
+        "problem",
+        "communication",
+        "return"
+      ],
+      "title": "Pesanan online",
+      "openings": [
+        "Hari ini saya mengecek pesanan yang dibuat beberapa hari lalu.",
+        "Sebuah paket datang siang ini, jadi saya langsung memeriksa isinya."
+      ],
+      "moves": [
+        "Saya membandingkan barang dengan informasi di aplikasi.",
+        "Ada satu bagian yang perlu diperiksa lebih teliti.",
+        "Saya menghubungi layanan pelanggan dan menjelaskan masalahnya dengan singkat.",
+        "Setelah mendapat jawaban, saya tahu langkah berikutnya."
+      ],
+      "dialogue": [
+        "report-problem",
+        "clarify",
+        "offer-solution",
+        "confirm"
+      ],
+      "closing": [
+        "Masalahnya belum tentu selesai hari ini, tetapi prosesnya sudah jelas.",
+        "Setidaknya saya sudah tahu harus menunggu, menukar, atau mengembalikan barang."
+      ]
+    },
+    {
+      "id": "home-cleaning",
+      "domain": "home",
+      "level": "A2-B1",
+      "tags": [
+        "home",
+        "object",
+        "cleaning",
+        "position",
+        "action",
+        "condition"
+      ],
+      "title": "Merapikan rumah",
+      "openings": [
+        "Pagi ini saya memutuskan untuk merapikan kamar.",
+        "Hari libur ini saya ingin membereskan beberapa bagian rumah."
+      ],
+      "moves": [
+        "Saya memindahkan beberapa barang dan membersihkan meja.",
+        "Barang yang jarang dipakai saya pisahkan agar ruangan terasa lebih rapi.",
+        "Setelah itu saya mengecek bagian yang masih kotor atau berantakan.",
+        "Tidak lama kemudian kamar terasa lebih nyaman."
+      ],
+      "dialogue": [
+        "ask-location",
+        "give-instruction",
+        "offer-help",
+        "confirm"
+      ],
+      "closing": [
+        "Pekerjaan sederhana itu membuat ruangan terasa berbeda.",
+        "Setelah semuanya rapi, saya bisa beristirahat dengan lebih tenang."
+      ]
+    },
+    {
+      "id": "apartment-problem",
+      "domain": "home",
+      "level": "A2-B1",
+      "tags": [
+        "home",
+        "electricity",
+        "repair",
+        "problem",
+        "communication",
+        "safety"
+      ],
+      "title": "Masalah di apartemen",
+      "openings": [
+        "Tadi malam ada masalah kecil di apartemen.",
+        "Pagi ini saya menyadari ada bagian rumah yang tidak bekerja seperti biasanya."
+      ],
+      "moves": [
+        "Saya mengecek kondisi dengan hati-hati tanpa membongkar apa pun.",
+        "Karena masalahnya belum jelas, saya menghubungi petugas.",
+        "Saya menjelaskan gejalanya dan menunggu pemeriksaan.",
+        "Sementara itu saya menghindari bagian yang bermasalah agar tetap aman."
+      ],
+      "dialogue": [
+        "report-problem",
+        "ask-check",
+        "clarify",
+        "confirm"
+      ],
+      "closing": [
+        "Saya memilih menunggu petugas daripada mencoba memperbaiki sendiri.",
+        "Yang penting, situasinya tetap aman sampai masalah diperiksa."
+      ]
+    },
+    {
+      "id": "mild-illness",
+      "domain": "health",
+      "level": "A2-B1",
+      "tags": [
+        "health",
+        "symptom",
+        "food",
+        "rest",
+        "condition",
+        "advice"
+      ],
+      "title": "Kurang enak badan",
+      "openings": [
+        "Sejak pagi badan saya terasa kurang enak.",
+        "Hari ini saya tidak terlalu fit, jadi saya mencoba menjalani hari dengan lebih pelan."
+      ],
+      "moves": [
+        "Saya memperhatikan gejala dan memilih makanan yang ringan.",
+        "Saya minum cukup air dan beristirahat sebentar.",
+        "Kalau kondisi memburuk, saya akan mencari bantuan medis.",
+        "Untuk sementara saya mengurangi aktivitas yang tidak penting."
+      ],
+      "dialogue": [
+        "describe-symptom",
+        "give-advice",
+        "ask-condition",
+        "confirm"
+      ],
+      "closing": [
+        "Saya berharap setelah istirahat kondisi segera membaik.",
+        "Hari ini saya memilih tidak memaksakan diri."
+      ]
+    },
+    {
+      "id": "clinic-visit",
+      "domain": "health",
+      "level": "A2-B1",
+      "tags": [
+        "health",
+        "appointment",
+        "symptom",
+        "instruction",
+        "document",
+        "waiting"
+      ],
+      "title": "Pergi ke klinik",
+      "openings": [
+        "Saya datang ke klinik untuk memeriksa keluhan yang belum hilang.",
+        "Pagi ini saya punya janji singkat di sebuah klinik."
+      ],
+      "moves": [
+        "Petugas menanyakan keluhan utama dan beberapa informasi dasar.",
+        "Saya menjelaskan gejala dengan sederhana dan jujur.",
+        "Setelah diperiksa, saya mendapat beberapa petunjuk yang harus diikuti.",
+        "Sebelum pulang, saya memastikan kapan perlu kembali."
+      ],
+      "dialogue": [
+        "describe-symptom",
+        "ask-duration",
+        "give-instruction",
+        "confirm"
+      ],
+      "closing": [
+        "Kunjungannya singkat dan saya mendapat arahan yang cukup jelas.",
+        "Setelah itu saya pulang dan mengikuti petunjuk yang diberikan."
+      ]
+    },
+    {
+      "id": "weather-plan",
+      "domain": "daily",
+      "level": "A2-B1",
+      "tags": [
+        "weather",
+        "plan",
+        "condition",
+        "change",
+        "travel",
+        "choice"
+      ],
+      "title": "Rencana berubah",
+      "openings": [
+        "Kami sudah punya rencana untuk keluar, tetapi cuaca berubah.",
+        "Sore ini rencana kecil kami harus disesuaikan dengan keadaan."
+      ],
+      "moves": [
+        "Kami melihat kondisi di luar sebelum memutuskan.",
+        "Karena situasinya kurang mendukung, kami mempertimbangkan pilihan lain.",
+        "Tidak ada yang keberatan jika rencana dibuat lebih sederhana.",
+        "Akhirnya kami memilih kegiatan yang tetap nyaman dilakukan."
+      ],
+      "dialogue": [
+        "state-plan",
+        "suggest-alternative",
+        "agree",
+        "confirm"
+      ],
+      "closing": [
+        "Rencananya berubah, tetapi hari itu tetap menyenangkan.",
+        "Tidak semua rencana harus berjalan persis seperti awalnya."
+      ]
+    },
+    {
+      "id": "friend-chat",
+      "domain": "social",
+      "level": "A2-B1",
+      "tags": [
+        "social",
+        "feeling",
+        "opinion",
+        "communication",
+        "relationship",
+        "advice"
+      ],
+      "title": "Ngobrol dengan teman",
+      "openings": [
+        "Sore ini saya ngobrol santai dengan seorang teman.",
+        "Seorang teman menghubungi saya karena ingin bercerita sedikit."
+      ],
+      "moves": [
+        "Dia menjelaskan apa yang membuatnya kepikiran.",
+        "Saya mendengarkan dulu tanpa langsung memberi banyak nasihat.",
+        "Setelah itu kami membahas beberapa kemungkinan dengan tenang.",
+        "Obrolan sederhana itu membuat suasana terasa lebih ringan."
+      ],
+      "dialogue": [
+        "ask-feeling",
+        "listen",
+        "give-advice-softly",
+        "confirm"
+      ],
+      "closing": [
+        "Kadang orang hanya perlu didengarkan sebelum mencari solusi.",
+        "Setelah ngobrol, teman saya terlihat lebih lega."
+      ]
+    },
+    {
+      "id": "relationship-plan",
+      "domain": "social",
+      "level": "A2-B1",
+      "tags": [
+        "relationship",
+        "plan",
+        "opinion",
+        "family",
+        "agreement",
+        "future"
+      ],
+      "title": "Membahas rencana bersama",
+      "openings": [
+        "Dua orang sedang membicarakan rencana beberapa bulan ke depan.",
+        "Malam ini kami membahas satu keputusan yang perlu dipikirkan bersama."
+      ],
+      "moves": [
+        "Masing-masing menjelaskan kebutuhan dan kekhawatirannya.",
+        "Kami mencoba tidak memaksakan pendapat sendiri.",
+        "Beberapa hal masih belum pasti, jadi kami sepakat untuk memikirkannya lagi.",
+        "Yang penting, keputusan besar tidak dibuat terburu-buru."
+      ],
+      "dialogue": [
+        "state-opinion",
+        "ask-opinion",
+        "disagree-softly",
+        "reach-agreement"
+      ],
+      "closing": [
+        "Pembicaraan belum menghasilkan keputusan akhir, tetapi arahnya lebih jelas.",
+        "Kami memilih melanjutkan pembicaraan saat informasi sudah lebih lengkap."
+      ]
+    },
+    {
+      "id": "travel-short-trip",
+      "domain": "travel",
+      "level": "A2-B1",
+      "tags": [
+        "travel",
+        "distance",
+        "schedule",
+        "transport",
+        "place",
+        "plan"
+      ],
+      "title": "Perjalanan singkat",
+      "openings": [
+        "Akhir pekan ini saya berencana melakukan perjalanan singkat.",
+        "Kami ingin pergi ke kota lain tanpa jadwal yang terlalu padat."
+      ],
+      "moves": [
+        "Sebelum berangkat, kami mengecek waktu, jarak, dan pilihan transportasi.",
+        "Kami hanya membawa barang yang benar-benar diperlukan.",
+        "Di perjalanan ada sedikit perubahan, tetapi tidak mengganggu rencana utama.",
+        "Setelah tiba, kami langsung mencari tempat untuk beristirahat."
+      ],
+      "dialogue": [
+        "ask-schedule",
+        "compare-route",
+        "confirm-plan",
+        "suggest"
+      ],
+      "closing": [
+        "Perjalanan sederhana terasa lebih santai karena persiapannya cukup jelas.",
+        "Kami tidak mengejar banyak tempat, hanya menikmati perjalanan."
+      ]
+    },
+    {
+      "id": "hotel-checkin",
+      "domain": "travel",
+      "level": "A2-B1",
+      "tags": [
+        "travel",
+        "booking",
+        "document",
+        "room",
+        "request",
+        "problem"
+      ],
+      "title": "Check-in penginapan",
+      "openings": [
+        "Setelah perjalanan cukup panjang, saya tiba di penginapan.",
+        "Sore ini saya datang untuk check-in di tempat yang sudah dipesan."
+      ],
+      "moves": [
+        "Petugas meminta informasi pemesanan dan menjelaskan beberapa aturan.",
+        "Saya mengecek kamar dan menanyakan satu hal yang belum jelas.",
+        "Ada permintaan kecil yang bisa dibantu oleh petugas.",
+        "Setelah semuanya selesai, saya membawa barang ke kamar."
+      ],
+      "dialogue": [
+        "confirm-booking",
+        "ask-facility",
+        "request-help",
+        "thanks"
+      ],
+      "closing": [
+        "Proses check-in berjalan lancar dan tidak memakan waktu lama.",
+        "Setelah itu saya bisa beristirahat dengan tenang."
+      ]
+    },
+    {
+      "id": "bank-payment",
+      "domain": "finance",
+      "level": "A2-B1",
+      "tags": [
+        "finance",
+        "payment",
+        "document",
+        "number",
+        "problem",
+        "communication"
+      ],
+      "title": "Pembayaran dan bukti transaksi",
+      "openings": [
+        "Hari ini saya harus menyelesaikan satu pembayaran.",
+        "Sebelum membayar, saya memeriksa jumlah dan informasi penerima."
+      ],
+      "moves": [
+        "Saya membandingkan data agar tidak salah mengirim.",
+        "Setelah transaksi selesai, saya menyimpan bukti pembayaran.",
+        "Ada satu informasi yang perlu dikonfirmasi lagi.",
+        "Saya menghubungi pihak terkait dan mendapat jawaban singkat."
+      ],
+      "dialogue": [
+        "confirm-number",
+        "report-payment",
+        "ask-proof",
+        "confirm"
+      ],
+      "closing": [
+        "Setelah semuanya cocok, urusan pembayaran selesai.",
+        "Saya tetap menyimpan bukti transaksi untuk berjaga-jaga."
+      ]
+    },
+    {
+      "id": "warehouse-delivery",
+      "domain": "logistics",
+      "level": "A2-B1",
+      "tags": [
+        "logistics",
+        "delivery",
+        "quantity",
+        "document",
+        "problem",
+        "action"
+      ],
+      "title": "Barang datang",
+      "openings": [
+        "Pagi ini ada pengiriman barang yang harus diperiksa.",
+        "Sebuah kendaraan datang membawa beberapa barang untuk tim kami."
+      ],
+      "moves": [
+        "Kami mencocokkan jumlah barang dengan dokumen.",
+        "Ada satu bagian yang perlu diperiksa karena informasinya berbeda.",
+        "Setelah dikonfirmasi, barang dipindahkan ke tempat yang sesuai.",
+        "Kami mencatat hasil pemeriksaan sebelum pekerjaan dilanjutkan."
+      ],
+      "dialogue": [
+        "confirm-quantity",
+        "report-difference",
+        "give-instruction",
+        "confirm"
+      ],
+      "closing": [
+        "Pemeriksaan sederhana itu membantu mencegah kesalahan berikutnya.",
+        "Setelah data sesuai, proses penerimaan barang bisa ditutup."
+      ]
+    },
+    {
+      "id": "weekend-errands",
+      "domain": "daily",
+      "level": "A2-B1",
+      "tags": [
+        "daily",
+        "shopping",
+        "home",
+        "schedule",
+        "transport",
+        "choice"
+      ],
+      "title": "Mengurus beberapa hal",
+      "openings": [
+        "Hari ini saya punya beberapa urusan kecil di luar rumah.",
+        "Akhir pekan ini saya ingin menyelesaikan beberapa hal sekaligus."
+      ],
+      "moves": [
+        "Saya menyusun urutan tempat yang akan didatangi agar tidak bolak-balik.",
+        "Satu urusan selesai lebih cepat, sementara yang lain harus menunggu.",
+        "Di tengah jalan saya membeli kebutuhan yang memang sudah habis.",
+        "Menjelang sore, hampir semua urusan sudah selesai."
+      ],
+      "dialogue": [
+        "ask-schedule",
+        "suggest-order",
+        "confirm",
+        "report-status"
+      ],
+      "closing": [
+        "Tidak semua berjalan persis sesuai rencana, tetapi hasilnya cukup baik.",
+        "Setelah selesai, saya pulang dan akhirnya bisa santai."
+      ]
+    }
+  ]
+}
