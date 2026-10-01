@@ -16,17 +16,9 @@ const pick=(arr,key)=>arr.length?arr[hash(key)%arr.length]:null;
 const parseTime=(date,session)=>Date.parse(date+'T'+(session==='am'?'08:00:00':'18:00:00')+'+07:00');
 
 function loadMaterials(){
-  const scenes=readJson('materials/scenes.json');
-  const sceneCn=readJson('materials/scene-cn.json');
-  const language=readJson('materials/language.json');
-  const rules=readJson('materials/lexical-rules.json');
-  const tasks=readJson('materials/tasks.json');
-  const micro=readJson('materials/microcontent.json');
-  const lex=new Map();
-  for(let i=1;i<=6;i++){
-    const f=readJson('materials/lexicon/eligible-0'+i+'.json');
-    for(const e of f.entries)lex.set(norm(e.word),e);
-  }
+  const bundle=readJson('materials/materials-bundle.json').materials;
+  const scenes=bundle.scenes,sceneCn=bundle['scene-cn'],language=bundle.language,rules=bundle['lexical-rules'],tasks=bundle.tasks,micro=bundle.microcontent;
+  const lex=new Map((bundle['eligible-lexicon']?.entries||[]).map(e=>[norm(e.word),e]));
   for(const [word,e] of Object.entries(micro.entries||{}))lex.set(norm(word),{word,...e,_micro:true});
   return {scenes,sceneCn,language,rules,tasks,lex,micro};
 }
