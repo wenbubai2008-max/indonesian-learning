@@ -100,13 +100,17 @@
   async function markSameDayAm(x,date,s){
     if(s!=='pm'||!Array.isArray(x.vocab))return;
     let am;try{am=await fetchJSON(`data/daily/${date}-am.json`)}catch(e){return}
-    const amSet=new Set([...(am.vocab||[]).map(v=>norm(v.word)),...(am.review_vocab||[]).map(v=>norm(typeof v==='string'?v:v.word))]);
+    const amNew=new Set((am.vocab||[]).map(v=>norm(typeof v==='string'?v:v.word)));
+    const amReview=new Set((am.review_vocab||[]).map(v=>norm(typeof v==='string'?v:v.word)));
     const cards=[...document.querySelectorAll('#dailyBody .dailyFixVocab')];
     x.vocab.forEach((v,i)=>{
-      if(v.source_group!=='application'||!amSet.has(norm(v.word)))return;
+      if(v.source_group!=='application')return;
       const card=cards[i];if(!card||card.querySelector('.dailyAmTaught'))return;
-      if(/今天\s*08:00\s*已教/.test(card.textContent||''))return;
-      const tag=document.createElement('span');tag.className='dailyAmTaught';tag.textContent='今天 08:00 已教';
+      const w=norm(v.word);
+      const label=amNew.has(w)?'今天 08:00 新学 · 晚课复现'
+        :amReview.has(w)?'今天 08:00 复习过 · 老词'
+        :'此前已学 · 晚课复现';
+      const tag=document.createElement('span');tag.className='dailyAmTaught';tag.textContent=label;
       const meta=card.querySelector('.dailyFixMeta');
       if(meta)meta.insertBefore(tag,meta.firstChild);else{const cn=card.querySelector('.dailyFixCn');if(cn)cn.insertAdjacentElement('afterend',tag);else card.prepend(tag)}
     });

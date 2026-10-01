@@ -254,9 +254,14 @@
       _collocations:collocations
     };
     if(ctx.target.session==='pm'){
-      const sameDay=new Set([...(ctx.same_day_am?.vocab||[]).map(x=>norm(x[0])),...(ctx.same_day_am?.review_vocab||[]).map(norm)]);
+      // AM vocab is formally new; AM review_vocab consists of previously learned words.
+      // Never relabel an old review word as newly taught merely because it appeared at 08:00.
+      const amNew=new Set((ctx.same_day_am?.vocab||[]).map(x=>norm(Array.isArray(x)?x[0]:x?.word)));
+      const amReview=new Set((ctx.same_day_am?.review_vocab||[]).map(x=>norm(typeof x==='string'?x:x?.word)));
       card.usage_note=group==='application'
-        ?(sameDay.has(k)?'今天08:00已教；晚课作为 application 主动复现。':'已正式学习；晚课作为 application 主动复现。')
+        ?(amNew.has(k)?'今天08:00新学；晚课作为 application 主动复现。'
+          :amReview.has(k)?'今天08:00复习过的老词；晚课作为 application 再次复现。'
+          :'此前已正式学习的老词；晚课作为 application 主动复现。')
         :group==='review'?'已正式学习；本晚课进行主动复习。'
         :(e.note||d.usage_note||'本晚课新词；重点掌握常见搭配、语体和3秒主动提取。');
       card.source_group=group;card.is_new=group==='new';

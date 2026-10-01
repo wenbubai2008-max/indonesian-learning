@@ -14,6 +14,7 @@ const bundle=get('prototype/lesson-engine/materials/materials-bundle.json');
 const rules=get('data/learning-pool-rules.json'),sha='a'.repeat(40);
 const previousPm=get('data/daily/2026-09-30-pm.json');
 const sameDayAm=get('data/daily/2026-10-01-am.json');
+console.log('DAILY_LIGHT_CACHE_HASH '+require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(base,'data/daily-light-test.js'),'utf8')).digest('hex').slice(0,12));
 function history(ctx){
  return (ctx.history_7d||[]).map(h=>h.session==='am'
    ?{date:h.date,session:'am',review_vocab:h.review_core||[],vocab:[]}
@@ -261,4 +262,81 @@ test('real watcher Bash uses a 60-second event grace, not fixed :05',()=>{
  }finally{fs.rmSync(tmp,{recursive:true,force:true})}
 });
 
-console.log('FALLBACK_RECOVERY_TEST '+JSON.stringify({ok:true,passed}));
+
+test('formal PM validator enforces precise AM source without invalidating immutable old lessons',()=>{
+ const {ctx,input}=setup('pm');
+ const {validate}=require('./validate-lesson-candidate');
+ const candidate=core.generate(ctx,bundle,rows,{variant:0});
+ const params={index:input.index,runtime:input.runtime,rules,
+   expectedDate:'2026-10-01',expectedSession:'pm',sameDayAm,previousPm,
+   reviewHistory:history(ctx)};
+ let result=validate({lesson:candidate,...params});
+ assert(result.ok,'Correct V2 labels must be accepted: '+JSON.stringify(result.errors));
+ const mistaken=JSON.parse(JSON.stringify(candidate));
+ mistaken.vocab.find(v=>v.word==='niat').usage_note='今天08:00新学；晚课作为 application 主动复现。';
+ result=validate({lesson:mistaken,...params});
+ assert(!result.ok,'Old niat must never be falsely marked as AM new');
+ assert(result.errors.some(e=>e.code==='AM_MARKER_FALSE'&&e.detail==='niat'),
+   'Invalid source marker must be explicitly rejected: '+JSON.stringify(result.errors));
+ const legacyPublished=get('data/daily/2026-10-01-pm.json');
+ result=validate({lesson:legacyPublished,...params});
+ assert(result.ok,'Existing already-published PM should remain historically valid: '+JSON.stringify(result.errors));
+});
+
+test('October 1 PM application notes distinguish morning new from morning old reviews',()=>{
+ const {ctx}=setup('pm'),lesson=core.generate(ctx,bundle,rows,{variant:0});
+ const apps=new Map(lesson.vocab.filter(v=>v.source_group==='application').map(v=>[v.word,v]));
+ assert(sameDayAm.new_words.includes('biarpun'));
+ assert(sameDayAm.review_vocab.includes('niat'));
+ assert(sameDayAm.review_vocab.includes('mengeluh'));
+ assert(!sameDayAm.new_words.includes('niat'));
+ assert(!sameDayAm.new_words.includes('mengeluh'));
+ assert.match(apps.get('biarpun').usage_note,/今天08:00新学/);
+ for(const w of ['niat','mengeluh']){
+   assert.match(apps.get(w).usage_note,/今天08:00复习过的老词/);
+   assert.doesNotMatch(apps.get(w).usage_note,/新学|已教/);
+ }
+});
+
+async function checkDailyAmTagRendering(){
+ const vm=require('node:vm');
+ const publishedPm=get('data/daily/2026-10-01-pm.json');
+ // Include one application card that is neither in today's AM new set nor its AM review set.
+ const pm=JSON.parse(JSON.stringify(publishedPm));
+ pm.vocab.push({word:'rencana',source_group:'application'});
+ const count=new Array(pm.vocab.length).fill(0);
+ const cards=pm.vocab.map((v,i)=>{
+   const card={tag:null};
+   const meta={firstChild:null,insertBefore:(span)=>{card.tag=span;count[i]++}};
+   card.querySelector=selector=>selector==='.dailyAmTaught'?card.tag:selector==='.dailyFixMeta'?meta:null;
+   return card;
+ });
+ const body={lastElementChild:null,querySelector:()=>({})};
+ const document={
+   getElementById:id=>id==='dailyLightPatchStyle'?{}:id==='dailyMeta'?{textContent:'2026-10-01'}:id==='dailyBody'?body:null,
+   querySelectorAll:selector=>selector==='#dailyBody .dailyFixVocab'?cards:[],
+   createElement:tag=>({className:'',textContent:'',tag})
+ };
+ const window={openDaily:async()=>{}};
+ const fetchJSON=async p=>p.endsWith('-am.json')?sameDayAm:pm;
+ const script=fs.readFileSync(path.join(base,'data/daily-light-test.js'),'utf8');
+ vm.runInNewContext(script,{window,document,fetchJSON,console},{filename:'daily-light-test.js'});
+ await window.openDaily('pm','2026-10-01');
+ const tag=w=>cards[pm.vocab.findIndex(x=>x.word===w)].tag?.textContent;
+ assert.equal(tag('biarpun'),'今天 08:00 新学 · 晚课复现');
+ assert.equal(tag('niat'),'今天 08:00 复习过 · 老词');
+ assert.equal(tag('mengeluh'),'今天 08:00 复习过 · 老词');
+ assert.equal(tag('rencana'),'此前已学 · 晚课复现');
+ assert.equal(tag('sesudah'),undefined,'Only application cards receive previous-learning tags');
+ await window.openDaily('pm','2026-10-01');
+ assert(count.every(x=>x<=1),'Repeated opening must not duplicate a label');
+ const home=fs.readFileSync(path.join(base,'index.html'),'utf8');
+ const actualHash=require('node:crypto').createHash('sha256').update(script).digest('hex').slice(0,12);
+ assert(home.includes('data/daily-light-test.js?v='+actualHash),'New UI must use actual content hash, not a stale script URL');
+ passed++;
+ console.log('PASS October 1 published PM cards render accurate new/review/old tags and remain idempotent');
+}
+checkDailyAmTagRendering()
+ .then(()=>console.log('FALLBACK_RECOVERY_TEST '+JSON.stringify({ok:true,passed})))
+ .catch(e=>{console.error('FAIL DAILY_AM_LABEL '+e.stack);process.exitCode=1});
+
