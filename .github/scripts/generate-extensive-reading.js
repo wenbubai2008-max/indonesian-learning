@@ -97,8 +97,8 @@ async function main(){
  const required=['id','date','title','title_cn','category','level','minutes','source_name','source_date','text','cn'];
  if(!answer||Array.isArray(answer)||typeof answer!=='object')fail('generated candidate must be one object');
  for(const k of required)if(answer[k]===undefined||!String(answer[k]).trim())fail('generated candidate missing '+k);
- if(!/^er-\\d{8}-[a-z0-9-]+$/.test(answer.id)||answer.date!==date)fail('generated candidate id/date mismatch');
- const count=String(answer.text).trim().split(/\\s+/).filter(Boolean).length;
+ if(!/^er-\d{8}-[a-z0-9-]+$/.test(answer.id)||answer.date!==date)fail('generated candidate id/date mismatch');
+ const count=String(answer.text).trim().split(/\s+/).filter(Boolean).length;
  if(count<160||count>220)fail('generated text has '+count+' words; expected 160-220');
  if(!Array.isArray(answer.hints)||answer.hints.length<8||answer.hints.length>15||answer.hints.some(h=>!String(h?.term||'').trim()||!String(h?.cn||'').trim()))fail('generated hints must be 8-15 valid term/cn entries');
  answer.date=date;answer.source_name=selected.source_name;answer.source_date=sourceDate;answer.source_url=selected.link;
