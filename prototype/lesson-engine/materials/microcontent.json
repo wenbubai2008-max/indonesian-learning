@@ -11,7 +11,9 @@
       "example": "Tolong mundur sedikit supaya pintunya bisa dibuka.",
       "example_cn": "请往后退一点，好让门能打开。",
       "synonym_note": "mundur 与 maju 相反；退职常说 mundur dari jabatan。",
-      "usage_note": "高频实用；先掌握 mundur sedikit。"
+      "usage_note": "高频实用；先掌握 mundur sedikit。",
+      "transfer_example": "Mobil di depan terlalu dekat, bisa mundur sedikit?",
+      "transfer_cn": "前面的车离得太近，能稍微往后倒一点吗？"
     },
     "biarpun": {
       "cn": "即使；尽管",
@@ -22,7 +24,9 @@
       "example": "Biarpun hujan, saya tetap pergi ke kantor.",
       "example_cn": "即使下雨，我还是去办公室。",
       "synonym_note": "biarpun 与 walaupun 接近；walaupun 更中性通用。",
-      "usage_note": "口语能用，但日常也很常听到 walaupun。"
+      "usage_note": "口语能用，但日常也很常听到 walaupun。",
+      "transfer_example": "Biarpun capek, aku tetap mau selesaikan tugas ini.",
+      "transfer_cn": "即使很累，我还是想把这项工作做完。"
     },
     "haus": {
       "cn": "口渴",
@@ -33,7 +37,9 @@
       "example": "Setelah berjalan jauh, saya merasa sangat haus.",
       "example_cn": "走了很远以后，我非常口渴。",
       "synonym_note": "haus 是口渴；lapar 是饥饿。",
-      "usage_note": "高频生活词。"
+      "usage_note": "高频生活词。",
+      "transfer_example": "Aku haus banget setelah jalan kaki dari halte.",
+      "transfer_cn": "从公交站走过来后，我特别口渴。"
     },
     "meledak": {
       "cn": "爆炸；突然爆发",
@@ -44,7 +50,9 @@
       "example": "Ban mobil itu tiba-tiba meledak di jalan.",
       "example_cn": "汽车轮胎在路上突然爆了。",
       "synonym_note": "meledak 是爆炸/爆发；terbakar 是着火。",
-      "usage_note": "交通事故场景常见 ban meledak。"
+      "usage_note": "交通事故场景常见 ban meledak。",
+      "transfer_example": "Ban motor itu meledak waktu lewat jalan yang rusak.",
+      "transfer_cn": "那辆摩托车经过坑洼路段时，轮胎突然爆了。"
     },
     "meletakkan": {
       "cn": "放置；把……放下",
@@ -55,7 +63,9 @@
       "example": "Saya meletakkan kunci di atas meja.",
       "example_cn": "我把钥匙放在桌子上。",
       "synonym_note": "meletakkan 较标准；日常口语更常说 taruh。",
-      "usage_note": "学习正式形式，同时主动掌握 taruh。"
+      "usage_note": "学习正式形式，同时主动掌握 taruh。",
+      "transfer_example": "Tolong meletakkan dokumen itu di meja resepsionis.",
+      "transfer_cn": "请把那份文件放在前台桌子上。"
     },
     "memeluk": {
       "cn": "拥抱",
@@ -66,7 +76,9 @@
       "example": "Anak itu memeluk ibunya sebelum berangkat.",
       "example_cn": "那个孩子出发前抱了抱妈妈。",
       "synonym_note": "memeluk 是拥抱；merangkul 也可表示搂住或接纳。",
-      "usage_note": "日常自然词。"
+      "usage_note": "日常自然词。",
+      "transfer_example": "Saat bertemu lagi, dia langsung memeluk ibunya.",
+      "transfer_cn": "再次见面时，他立刻拥抱了母亲。"
     },
     "mengunduh": {
       "cn": "下载",
@@ -77,7 +89,9 @@
       "example": "Saya mengunduh dokumen itu sebelum rapat.",
       "example_cn": "会议前我下载了那份文件。",
       "synonym_note": "正式写作常用 mengunduh；日常聊天大量直接说 download。",
-      "usage_note": "口语优先同时认识 download。"
+      "usage_note": "口语优先同时认识 download。",
+      "transfer_example": "Aku belum sempat mengunduh file yang kamu kirim tadi.",
+      "transfer_cn": "你刚才发的文件我还没来得及下载。"
     },
     "menuduh": {
       "cn": "指控；指责",
@@ -88,7 +102,9 @@
       "example": "Jangan menuduh orang lain tanpa bukti yang jelas.",
       "example_cn": "没有明确证据，不要指控别人。",
       "synonym_note": "menuduh 是指控；menyalahkan 更偏责怪。",
-      "usage_note": "注意语气较重。"
+      "usage_note": "注意语气较重。",
+      "transfer_example": "Jangan langsung menuduh temanmu tanpa mendengar penjelasannya.",
+      "transfer_cn": "还没听朋友解释，就不要直接指责他。"
     },
     "menyembuhkan": {
       "cn": "治愈；使恢复",
@@ -99,7 +115,9 @@
       "example": "Obat yang tepat bisa membantu menyembuhkan penyakit tertentu.",
       "example_cn": "合适的药物可以帮助治愈某些疾病。",
       "synonym_note": "menyembuhkan 强调使痊愈；merawat 是照料/治疗过程。",
-      "usage_note": "健康内容避免把普通建议说成保证治愈。"
+      "usage_note": "健康内容避免把普通建议说成保证治愈。",
+      "transfer_example": "Obat itu membantu menyembuhkan luka kecil di tangannya.",
+      "transfer_cn": "那种药有助于治好他手上的小伤口。"
     },
     "seandainya": {
       "cn": "假如；要是",
@@ -110,7 +128,9 @@
       "example": "Seandainya besok libur, saya ingin tidur lebih lama.",
       "example_cn": "假如明天放假，我想多睡一会儿。",
       "synonym_note": "seandainya 偏假设；kalau 适用范围更广、更口语。",
-      "usage_note": "用于不确定或与现实有距离的假设很自然。"
+      "usage_note": "用于不确定或与现实有距离的假设很自然。",
+      "transfer_example": "Seandainya aku berangkat lebih awal, mungkin nggak akan terlambat.",
+      "transfer_cn": "假如我早一点出发，可能就不会迟到了。"
     },
     "mencret": {
       "cn": "拉肚子；腹泻（口语）",
@@ -165,7 +185,9 @@
       "example": "Tolong menyalin nomor ini ke dokumen baru.",
       "example_cn": "请把这个号码复制到新文档里。",
       "synonym_note": "menyalin 是复制内容；memindahkan 是移动。",
-      "usage_note": "工作场景高价值。"
+      "usage_note": "工作场景高价值。",
+      "transfer_example": "Tolong menyalin alamat ini ke formulir yang baru.",
+      "transfer_cn": "请把这个地址复制到新表格里。"
     },
     "seraya": {
       "cn": "同时；一边……一边……",
@@ -176,7 +198,9 @@
       "example": "Dia tersenyum seraya menjelaskan hasilnya.",
       "example_cn": "他一边微笑一边解释结果。",
       "synonym_note": "seraya 较书面；日常口语更常用 sambil。",
-      "usage_note": "识别 seraya，主动口语优先 sambil。"
+      "usage_note": "识别 seraya，主动口语优先 sambil。",
+      "transfer_example": "Dia tersenyum seraya menyerahkan dokumen itu.",
+      "transfer_cn": "他微笑着递交了那份文件。"
     },
     "kabur": {
       "cn": "逃跑；溜走；模糊",
@@ -187,7 +211,9 @@
       "example": "Orang itu kabur sebelum petugas datang.",
       "example_cn": "工作人员到之前，那个人就跑了。",
       "synonym_note": "kabur=逃走或模糊；pergi 只是离开。",
-      "usage_note": "两个常见义项都要会识别。"
+      "usage_note": "两个常见义项都要会识别。",
+      "transfer_example": "Tulisan di foto ini kabur, bisa kirim yang lebih jelas?",
+      "transfer_cn": "这张照片上的字很模糊，能发一张清楚些的吗？"
     },
     "menegaskan": {
       "cn": "强调；明确说明",
@@ -198,7 +224,9 @@
       "example": "Atasan menegaskan bahwa data pelanggan harus aman.",
       "example_cn": "上司强调客户数据必须安全。",
       "synonym_note": "menegaskan=强调/明确；menjelaskan=解释。",
-      "usage_note": "工作沟通高价值。"
+      "usage_note": "工作沟通高价值。",
+      "transfer_example": "Manajer menegaskan bahwa jadwal pengiriman belum berubah.",
+      "transfer_cn": "经理明确表示，发货时间还没有变。"
     },
     "niat": {
       "cn": "打算；意图；认真想做的心意",
@@ -209,7 +237,9 @@
       "example": "Saya punya niat menyelesaikan pekerjaan ini hari ini.",
       "example_cn": "我打算今天完成这项工作。",
       "synonym_note": "niat 强调内在打算；rencana 更偏具体计划。",
-      "usage_note": "主动输出高价值。"
+      "usage_note": "主动输出高价值。",
+      "transfer_example": "Aku niat belajar bahasa Indonesia setiap hari, walau cuma sebentar.",
+      "transfer_cn": "我打算每天学点印尼语，哪怕时间不长。"
     },
     "mengeluh": {
       "cn": "抱怨",
@@ -220,7 +250,9 @@
       "example": "Dia sering mengeluh soal macet, tetapi tetap berangkat pagi.",
       "example_cn": "他经常抱怨堵车，但还是早早出发。",
       "synonym_note": "mengeluh 是抱怨；curhat 是倾诉，不一定抱怨。",
-      "usage_note": "日常高频。"
+      "usage_note": "日常高频。",
+      "transfer_example": "Dia nggak mengeluh, meskipun perjalanan tadi cukup melelahkan.",
+      "transfer_cn": "虽然刚才路上很累，但他没抱怨。"
     },
     "memanggil": {
       "cn": "呼唤；叫；叫来",
@@ -264,7 +296,9 @@
       "example": "Data ini menunjukkan bahwa penjualan mulai naik.",
       "example_cn": "这些数据显示销售开始上升。",
       "synonym_note": "menunjukkan=展示/表明；menjelaskan=解释。",
-      "usage_note": "工作和说明场景高价值。"
+      "usage_note": "工作和说明场景高价值。",
+      "transfer_example": "Data bulan ini menunjukkan penjualan mulai membaik.",
+      "transfer_cn": "本月数据显示销售已经开始好转。"
     },
     "layak": {
       "cn": "值得；合适；够资格",
@@ -275,7 +309,9 @@
       "example": "Pilihan ini layak dipertimbangkan karena lebih praktis.",
       "example_cn": "这个选择值得考虑，因为更实用。",
       "synonym_note": "layak 是达到合适/值得的标准；cocok 更偏匹配、合适。",
-      "usage_note": "B1高价值。"
+      "usage_note": "B1高价值。",
+      "transfer_example": "Tempat ini cukup layak untuk dijadikan ruang kerja kecil.",
+      "transfer_cn": "这个地方拿来作小办公室已经挺合适了。"
     },
     "ngotot": {
       "cn": "强硬坚持；硬要",
@@ -286,7 +322,9 @@
       "example": "Dia tetap ngotot mau pergi meskipun sudah terlambat.",
       "example_cn": "尽管已经晚了，他还是硬要去。",
       "synonym_note": "ngotot 带强硬/固执色彩；bersikeras 较正式。",
-      "usage_note": "真实口语。"
+      "usage_note": "真实口语。",
+      "transfer_example": "Dia masih ngotot, padahal datanya sudah jelas.",
+      "transfer_cn": "数据已经很清楚了，他还在固执地坚持。"
     },
     "sebel": {
       "cn": "烦；恼火",
@@ -297,7 +335,9 @@
       "example": "Aku lagi sebel karena pesanan belum datang.",
       "example_cn": "我正烦着呢，因为订单还没到。",
       "synonym_note": "sebel 比 marah 轻，常是烦躁、不爽。",
-      "usage_note": "高频口语。"
+      "usage_note": "高频口语。",
+      "transfer_example": "Aku sebel karena kurirnya nggak kasih kabar sama sekali.",
+      "transfer_cn": "快递员完全不通知一声，让我很烦。"
     },
     "jomblo": {
       "cn": "单身；没有对象",
@@ -308,7 +348,9 @@
       "example": "Dia masih jomblo dan belum kepikiran menikah.",
       "example_cn": "他还是单身，还没考虑结婚。",
       "synonym_note": "jomblo 很口语；lajang 较正式。",
-      "usage_note": "社交口语。"
+      "usage_note": "社交口语。",
+      "transfer_example": "Dia masih jomblo, tapi kelihatannya menikmati hidupnya.",
+      "transfer_cn": "他还单身，但看起来挺享受生活。"
     },
     "cerewet": {
       "cn": "话多；唠叨；挑剔",
@@ -319,7 +361,9 @@
       "example": "Atasan saya agak cerewet soal detail, tapi hasilnya memang rapi.",
       "example_cn": "我上司对细节有点挑剔，不过结果确实很整齐。",
       "synonym_note": "cerewet 可中性“话多”，也可负面“唠叨/挑剔”。",
-      "usage_note": "语气取决于场景。"
+      "usage_note": "语气取决于场景。",
+      "transfer_example": "Ibuku suka cerewet kalau aku pulang terlalu malam.",
+      "transfer_cn": "我回家太晚的话，我妈妈就爱念叨。"
     },
     "berarti": {
       "cn": "意味着；也就是说",
@@ -330,7 +374,9 @@
       "example": "Kalau besok libur, berarti kita tidak perlu buru-buru.",
       "example_cn": "如果明天放假，也就是说我们不用着急。",
       "synonym_note": "berarti 可作动词“意味着”，也可作口语推断连接。",
-      "usage_note": "高频口语连接词。"
+      "usage_note": "高频口语连接词。",
+      "transfer_example": "Kalau semua setuju, berarti kita bisa mulai besok.",
+      "transfer_cn": "如果大家都同意，那就说明我们明天可以开始。"
     },
     "beliau": {
       "cn": "他／她（尊称）",
@@ -341,7 +387,9 @@
       "example": "Beliau meminta kami menyiapkan laporan sebelum rapat.",
       "example_cn": "他／她（尊称）要求我们会议前准备报告。",
       "synonym_note": "beliau 比 dia 更尊敬；Anda 是直接称呼对方。",
-      "usage_note": "正式/尊敬场景。"
+      "usage_note": "正式/尊敬场景。",
+      "transfer_example": "Beliau sedang ada rapat, bisa hubungi lagi nanti?",
+      "transfer_cn": "他/她（尊称）正在开会，可以稍后再联系吗？"
     },
     "bangunan": {
       "cn": "建筑；建筑物",
@@ -407,7 +455,9 @@
       "example": "Kita harus antre sebentar di kasir.",
       "example_cn": "我们得在收银台排一会儿队。",
       "synonym_note": "antre 是标准拼写；antri 很常见但非标准。",
-      "usage_note": "生活高频。"
+      "usage_note": "生活高频。",
+      "transfer_example": "Kita perlu antre sebentar sebelum masuk ke klinik.",
+      "transfer_cn": "进诊所之前我们需要稍微排一下队。"
     },
     "guna": {
       "cn": "用途；为了；用来",
@@ -418,7 +468,9 @@
       "example": "Kami memeriksa data itu guna menghindari kesalahan.",
       "example_cn": "我们检查这些数据，是为了避免错误。",
       "synonym_note": "guna 偏正式，表示“为了”；untuk 在日常口语中更常用。gunanya 表示“它的用途”。",
-      "usage_note": "注意 guna 和 gunanya 的表面形式不同。"
+      "usage_note": "注意 guna 和 gunanya 的表面形式不同。",
+      "transfer_example": "Kami cek ulang angka itu guna menghindari kesalahan.",
+      "transfer_cn": "我们重新核对数字，以免出现错误。"
     },
     "membunuh": {
       "cn": "杀死；使丧命",
@@ -433,7 +485,9 @@
       "example": "Pestisida bisa membunuh serangga, jadi harus digunakan dengan hati-hati.",
       "example_cn": "杀虫剂能杀死昆虫，因此使用时必须小心。",
       "synonym_note": "membunuh 指造成死亡；mengusir 只是驱赶。不要把轻微的损坏都说成 membunuh。",
-      "usage_note": "语气较强；日常要根据真实含义选择。"
+      "usage_note": "语气较强；日常要根据真实含义选择。",
+      "transfer_example": "Jangan pakai pestisida terlalu banyak hanya untuk membunuh serangga.",
+      "transfer_cn": "不要为了杀虫而过量使用杀虫剂。"
     },
     "daya": {
       "cn": "力量；能力；电量或功率",
@@ -448,7 +502,9 @@
       "example": "Daya baterai ponsel saya tinggal 20 persen.",
       "example_cn": "我手机的电池电量只剩20%。",
       "synonym_note": "daya 常用于电力、能力及购买力等搭配；tenaga 更偏体力、能量。",
-      "usage_note": "实际日常口语还常说 baterainya tinggal 20 persen。"
+      "usage_note": "实际日常口语还常说 baterainya tinggal 20 persen。",
+      "transfer_example": "Kalau daya baterainya rendah, matikan dulu aplikasi yang nggak perlu.",
+      "transfer_cn": "如果电池电量低，先关掉不必要的应用。"
     },
     "sepenuhnya": {
       "word": "sepenuhnya",
