@@ -449,9 +449,9 @@ try {
   const syncGroup=sync.split('\n').find(line=>/^\s*group:/.test(line))||'';
   ok(/group:\s*learning-data-write/.test(build) && syncGroup.includes('learning-data-write') && syncGroup.includes('lesson-pr-') && /cancel-in-progress:\s*false/.test(build) && /cancel-in-progress:\s*false/.test(sync), 'build and main sync share a non-cancelling write lock; read-only PR checks have a separate group');
   const scheduleCrons=sync.split('\n').map(x=>x.trim()).filter(x=>x.startsWith('- cron: '));
-  ok(scheduleCrons.length===2 && scheduleCrons[0]==="- cron: '5 1 * * *'" &&
+  ok(scheduleCrons.length===2 && scheduleCrons[0]==="- cron: '30 1 * * *'" &&
     scheduleCrons[1]==="- cron: '5 11 * * *'",
-    'sync workflow has only the existing two daily checks, now at 08:05/18:05 Jakarta');
+    'sync workflow has only the existing two daily checks, now at 08:30/18:05 Jakarta');
   ok(/scheduled_health_check/.test(sync) &&
     /Scheduled check: lesson, index, runtime, context, vocabulary and regression guard healthy; no rebuild or commit/.test(sync) &&
     sync.includes('node .github/scripts/build-lesson-context.js --check > /dev/null; then') &&
