@@ -274,6 +274,7 @@
     return !!escaped&&new RegExp('(^|[^\\p{L}])'+escaped+'(?=$|[^\\p{L}])','iu').test(String(text||''));
   }
 
+
   function targetReadingCards(cards,scene,env,session){
     const news=cards.filter(x=>x.group==='new'),others=cards.filter(x=>x.group!=='new');
     const usable=c=>c.example&&c.example_cn&&hasExactWord(c.example,c.word);
@@ -284,114 +285,180 @@
   function semanticBucket(card,env,scene){
     const ex=norm(card.example),tags=tagWord(card.word,card.cn,env);
     const has=(...xs)=>xs.some(x=>tags.includes(x));
-    if(/\b(hujan|awan|air|cuaca|pohon|daun)\b/.test(ex)||has('weather','nature'))return 'nature';
-    if(/\b(akun|ponsel|komputer|file|dokumen|internet|password)\b/.test(ex)||has('digital','document'))return 'digital';
+    if(/\b(hujan|awan|air|cuaca|pohon|daun|matahari)\b/.test(ex)||has('weather','nature'))return 'nature';
+    if(/\b(akun|ponsel|komputer|file|dokumen|internet|password|kabel|listrik|baterai)\b/.test(ex)||has('digital','document','electricity'))return 'digital';
     if(has('transport','travel')||/\b(jalan|mobil|kendaraan|stasiun|penerbangan)\b/.test(ex))return 'transport';
-    if(has('health')||/\b(badan|sakit|demam|klinik|dokter)\b/.test(ex))return 'health';
+    if(has('health')||/\b(badan|sakit|demam|klinik|dokter|batuk|sembuh)\b/.test(ex))return 'health';
     if(has('food')||/\b(makan|makanan|sup|rasa|kantin)\b/.test(ex))return 'food';
     if(has('shopping','logistics','service'))return 'shopping';
     if(has('finance'))return 'finance';
     if(has('relationship','social','feeling'))return 'social';
     if(has('home'))return 'home';
-    if(has('law','incident','conflict'))return 'incident';
-    if(has('work')||/\b(kantor|rapat|tim|atasan|pekerjaan)\b/.test(ex))return 'work';
-    if(has('connector','time','purpose'))return scene?.domain==='weather'?'nature':(scene?.domain||'daily');
+    if(has('law','incident','conflict')||/\b(peristiwa|kejadian|kecelakaan)\b/.test(ex))return 'incident';
+    if(has('work')||/\b(kantor|rapat|tim|atasan|pekerjaan|penjualan)\b/.test(ex))return 'work';
+    if(has('connector','time','purpose'))return scene?.domain||'daily';
     return scene?.domain||'daily';
   }
 
   function readingFor(scene,cards,env,key,session,variant=0){
-    const cn=env.M['scene-cn'].scenes[scene.id],all=targetReadingCards(cards,scene,env,session);
+    const all=targetReadingCards(cards,scene,env,session);
     const news=all.filter(c=>c.group==='new'),support=all.filter(c=>c.group!=='new');
     const required=session==='am'?6:cards.filter(c=>c.group==='new').length;
     if(news.length<required)throw Error('MATERIAL_EXAMPLE_TARGET_MISSING: need '+required+' exact new-word examples; found '+news.length);
-    const rotated=[...news.slice(variant%news.length),...news.slice(0,variant%news.length)];
-    const chosen=session==='am'?rotated.slice(0,6):rotated;
     const macro=c=>{
       const b=semanticBucket(c,env,scene);
-      if(['work','digital','shopping','finance','home','daily'].includes(b))return 'activity';
       if(['transport','nature','incident'].includes(b))return 'outside';
-      return 'personal';
+      if(['health','social'].includes(b))return 'personal';
+      return 'activity';
     };
+    // Prefer cohesive clusters and shorter authentic examples; do NOT arbitrarily
+    // replace legally selected vocabulary or invent new Indonesian sentences.
+    const chosen=[],available=[...news];
+    const clusterScore=c=>{
+      const b=macro(c),fine=semanticBucket(c,env,scene);
+      const neighbors=news.filter(n=>n!==c&&macro(n)===b).length;
+      const close=news.filter(n=>n!==c&&semanticBucket(n,env,scene)===fine).length;
+      return neighbors*7+close*9+sceneFit(c,scene,env)*2-wc(c.example)/3;
+    };
+    available.sort((a,b)=>clusterScore(b)-clusterScore(a)||a.word.localeCompare(b.word));
+    const anchor=available[(variant%Math.min(3,available.length))]||available[0];
+    chosen.push(anchor);available.splice(available.indexOf(anchor),1);
+    while(chosen.length<required){
+      available.sort((a,b)=>{
+        const score=c=>{
+          const fine=semanticBucket(c,env,scene),group=macro(c);
+          const exact=chosen.filter(x=>semanticBucket(x,env,scene)===fine).length;
+          const shared=chosen.filter(x=>macro(x)===group).length;
+          return exact*13+shared*7+sceneFit(c,scene,env)-wc(c.example)/3;
+        };
+        return score(b)-score(a)||a.word.localeCompare(b.word);
+      });
+      chosen.push(available.shift());
+    }
+    // Explicitly group short topical notes. Mixed unrelated examples are NOT a
+    // single fabricated narrative and must never inherit an unrelated scene title.
     const groups=new Map();
-    for(const c of chosen){const tag=macro(c);if(!groups.has(tag))groups.set(tag,[]);groups.get(tag).push(c)}
-    const multi=groups.size>1,oi=hash(key+'open')%scene.openings.length;
-    // Mixed-topic examples are explicitly presented as daily notes, not one invented story.
-    const opener=multi
-      ?['Hari ini saya mencatat beberapa kejadian berbeda dari orang-orang di sekitar saya.','今天我记下了身边发生的几件不同的小事。']
-      :[scene.openings[oi],cn.openings[oi]];
-    const ci=hash(key+'close')%scene.closing.length,closing=[scene.closing[ci],cn.closing[ci]];
-    const pairs=[[...opener,'','scene']];
+    for(const c of chosen){
+      const b=macro(c);
+      if(!groups.has(b))groups.set(b,[]);
+      groups.get(b).push(c);
+    }
+    const fineTopics=new Set(chosen.map(c=>semanticBucket(c,env,scene)));
+    const mixed=fineTopics.size>1;
+    // Never stitch five unrelated stock sentences into a fabricated single event.
+    // Two or three expressly separate, broad life contexts need fewer hard transitions.
+    const topicIntros={
+      activity:['Untuk pekerjaan dan urusan sehari-hari, ada beberapa hal yang saya catat.','工作和日常事务方面，我记下了几件事。'],
+      outside:['Di luar, ada beberapa kejadian yang menarik perhatian saya.','外面也有几件引起我注意的事情。'],
+      personal:['Ada juga cerita tentang orang-orang di sekitar saya.','还有几件和身边人有关的事。']
+    };
+    const cn=env.M['scene-cn'].scenes[scene.id];
+    const op=mixed
+      ?['Hari ini ada beberapa kejadian kecil yang ingin saya ceritakan.','今天有几件生活中的小事想讲一讲。']
+      :[scene.openings[hash(key+'open')%scene.openings.length],cn.openings[hash(key+'open')%cn.openings.length]];
+    const closer=mixed
+      ?['Itu beberapa hal yang saya dengar dan alami hari ini.','这些就是我今天听到和遇到的几件事。']
+      :[scene.closing[hash(key+'close')%scene.closing.length],cn.closing[hash(key+'close')%cn.closing.length]];
     const entry=c=>{
-      const request=/^(tolong|jangan|coba)\b/i.test(c.example);
-      return request
-        ?['Saya juga mendengar seseorang berkata, "'+c.example+'"','我还听见有人说：“'+c.example_cn+'”',c.word,c.group]
+      const imperative=/^(tolong|jangan|coba)\b/i.test(c.example);
+      return imperative
+        ?['Saya mendengar seseorang berkata, "'+c.example+'"','我听见有人说：“'+c.example_cn+'”',c.word,c.group]
         :[c.example,c.example_cn,c.word,c.group];
     };
-    const groupsContent=[...groups.entries()].map(([tag,items])=>({
-      tag,lines:items.map(entry),
-      bridge:tag==='outside'
-        ?['Di luar kegiatan utama, ada kabar lain.','除了手头的事情，外面还有别的消息。']
-        :tag==='personal'
-          ?['Saya juga sempat mendengar cerita orang lain.','我还听到了其他人的一些事情。']
-          :['Ada pula beberapa urusan sehari-hari yang saya catat.','我也记下了几件日常事务。']
-    }));
-    const mandatory=wc(opener[0])+wc(closing[0])+groupsContent.reduce((n,g)=>n+g.lines.reduce((m,l)=>m+wc(l[0]),0),0);
-    if(mandatory>120)throw Error('READING_TARGET_BUDGET: '+mandatory+' words before transitions');
-    const bridgeBudget=Math.min(2,Math.max(0,Math.floor((116-mandatory)/9)));
-    for(let i=0;i<groupsContent.length;i++){
-      const g=groupsContent[i];if(i>0&&i<=bridgeBudget)pairs.push([...g.bridge,'','bridge']);pairs.push(...g.lines);
+    const pairs=[[...op,'','opening']];
+    const chunks=[...groups.entries()].sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0]));
+    for(let i=0;i<chunks.length;i++){
+      const [group,items]=chunks[i];
+      if(mixed&&i>0){
+        const bridge=topicIntros[group]||['Ada juga catatan singkat dari situasi lainnya.','还有另一个不同情境中的简短记录。'];
+        pairs.push([...bridge,'','bridge']);
+      }
+      for(const c of items)pairs.push(entry(c));
     }
-    const length=()=>wc(pairs.map(x=>x[0]).join(' '));
-    for(const c of support.filter(x=>macro(x)===macro(chosen[0])).slice(0,2)){
-      const p=entry(c);if(length()+wc(p[0])+wc(closing[0])<=110)pairs.push(p);
+    const count=()=>wc(pairs.map(x=>x[0]).join(' '));
+    const remaining=()=>120-count()-wc(closer[0]);
+    if(remaining()<0)throw Error('READING_TARGET_BUDGET: mandatory topical examples exceed 120');
+    // Review enters only when it shares the main topic, not as a random filler.
+    const mainTopic=chunks[0]?.[0];
+    for(const c of support.filter(c=>macro(c)===mainTopic).slice(0,2)){
+      const p=entry(c);
+      if(wc(p[0])+2<=remaining())pairs.push(p);
     }
-    let move=hash(key+'move')%Math.max(scene.moves.length,1),tried=0;
-    while(length()+wc(closing[0])<80&&tried<scene.moves.length){
-      const j=move++%scene.moves.length,p=[scene.moves[j],cn.moves[j],'','scene'];
-      if(length()+wc(p[0])+wc(closing[0])<=119)pairs.push(p);tried++;
+    const neutral=[
+      ['Saya jadi punya beberapa bahan cerita saat bertemu teman nanti.','以后见朋友时，我又有了几件可以聊的小事。'],
+      ['Ada hal sederhana yang ternyata cukup menarik untuk diperhatikan.','有些简单的小事其实也值得留意。'],
+      ['Saya ingin mengingat bagian yang penting dari semua cerita itu.','这些事情中重要的部分，我想记下来。']
+    ];
+    const filler=mixed?neutral:scene.moves.map((x,i)=>[x,cn.moves[i]]);
+    for(const p of filler){
+      if(count()+wc(closer[0])>=80)break;
+      if(wc(p[0])<=remaining())pairs.push([...p,'','transition']);
     }
-    if(length()+wc(closing[0])<=120)pairs.push([...closing,'','scene']);
+    if(wc(closer[0])<=remaining())pairs.push([...closer,'','closing']);
     const text=pairs.map(x=>x[0]).join(' '),translation=pairs.map(x=>x[1]).join(' ');
     const coverage=cards.filter(c=>hasExactWord(text,c.word)).map(c=>({word:c.word,group:c.group}));
     const actual=coverage.filter(c=>c.group==='new').length;
     if(actual<required)throw Error('READING_EXACT_COVERAGE: '+actual+'/'+required);
     if(wc(text)<80||wc(text)>120)throw Error('READING_WORD_COUNT: '+wc(text));
-    return {text,cn:translation,_coverage:coverage,_review_required:multi};
+    return {text,cn:translation,_coverage:coverage,_review_required:mixed,_mixed:mixed,_topic_count:fineTopics.size};
   }
 
   function dialogueFor(scene,cards,env,key){
     const news=cards.filter(x=>x.group==='new'&&hasExactWord(x.example,x.word));
     const others=cards.filter(x=>x.group!=='new'&&hasExactWord(x.example,x.word));
     if(news.length<2)throw Error('DIALOGUE_NEW_EXAMPLE_INSUFFICIENT');
-    const bucket=semanticBucket(news[0],env,scene);
-    const score=c=>(semanticBucket(c,env,scene)===bucket?12:0)+sceneFit(c,scene,env);
-    const targets=[...news].sort((a,b)=>score(b)-score(a)).slice(0,2);
-    const third=[...others].sort((a,b)=>score(b)-score(a))[0];if(third)targets.push(third);
-    const ask=(c,i)=>{
-      const s=c.example,b=semanticBucket(c,env,scene),imperative=/^(tolong|jangan|coba)\b/i.test(s);
-      let q;
-      if(imperative)q=['Aku perlu bantu apa?','我需要帮什么忙？'];
-      else if(/\b(kata sandi|akun|ponsel|password)\b/i.test(s))q=['Ada masalah apa dengan akun atau ponselnya?','账号或手机出了什么问题？'];
-      else if(/\b(awan|hujan|cuaca|becek)\b/i.test(s))q=['Bagaimana kondisi di luar?','外面的情况怎么样？'];
-      else if(/\b(stiker|tempel|nempel)\b/i.test(s))q=['Ada apa dengan stikernya?','那个贴纸怎么了？'];
-      else if(/\b(tim|pertandingan|kalah)\b/i.test(s))q=['Bagaimana kabar timmu?','你们队怎么样？'];
-      else if(/\b(dokumen|laporan|rapat|kerjaan|pekerjaan|data|kantor)\b/i.test(s))q=['Ada kabar apa soal pekerjaan?','工作上有什么新情况？'];
-      else if(/\b(ibu|anak|teman|keluarga|dia|beliau|mereka)\b/i.test(s))q=['Bagaimana keadaan orang-orang itu?','他们怎么样了？'];
-      else if(/^Saya\b/i.test(s))q=['Tadi kamu mengalami apa?','你刚才遇到什么事了？'];
-      else if(b==='nature')q=['Bagaimana kondisi di sekitar sana?','那附近的情况如何？'];
-      else q=['Kamu juga mendengar kabar apa lagi?','你还听到了什么其他消息？'];
-      if(i>0&&semanticBucket(targets[i-1],env,scene)!==b)
-        q=['Ngomong-ngomong, '+q[0].charAt(0).toLowerCase()+q[0].slice(1),'换个话题，'+q[1]];
-      return q;
+    const cohesion=(a,b)=>{
+      const shared=semanticBucket(a,env,scene)===semanticBucket(b,env,scene);
+      const tagsA=tagWord(a.word,a.cn,env),tagsB=tagWord(b.word,b.cn,env);
+      return (shared?20:0)+tagsA.filter(t=>tagsB.includes(t)).length*5+
+        sceneFit(a,scene,env)+sceneFit(b,scene,env);
     };
-    const lines=[];
-    for(let i=0;i<targets.length;i++){
-      const q=ask(targets[i],i),c=targets[i];
-      lines.push({speaker:'A',id:q[0],cn:q[1]},{speaker:'B',id:c.example,cn:c.example_cn});
+    const pairs=[];
+    for(let i=0;i<news.length;i++)for(let j=i+1;j<news.length;j++)
+      pairs.push({a:news[i],b:news[j],score:cohesion(news[i],news[j])});
+    pairs.sort((a,b)=>b.score-a.score||a.a.word.localeCompare(b.a.word));
+    const {a:first,b:second}=pairs[0];
+    const related=others.filter(c=>semanticBucket(c,env,scene)===semanticBucket(second,env,scene));
+    const support=[...related].sort((a,b)=>sceneFit(b,scene,env)-sceneFit(a,scene,env))[0];
+    const askFirst=c=>{
+      const s=norm(c.example);
+      if(/\b(hujan|awan|cuaca|matahari)\b/.test(s))return ['Tadi bagaimana cuacanya?','刚才天气怎么样？'];
+      if(/\b(kantor|rapat|pekerjaan|tim|laporan)\b/.test(s))return ['Ada kabar apa soal pekerjaan tadi?','刚才工作上有什么新情况？'];
+      if(/\b(sakit|sembuh|batuk|klinik)\b/.test(s))return ['Sekarang kondisinya bagaimana?','现在情况怎么样了？'];
+      if(/\b(makan|restoran|kantin)\b/.test(s))return ['Bagaimana makan siangmu tadi?','你刚才午饭吃得怎么样？'];
+      if(/\b(jalan|mobil|macet)\b/.test(s))return ['Tadi di jalan bagaimana?','刚才路上怎么样？'];
+      return ['Tadi ada kejadian apa?','刚才发生了什么？'];
+    };
+    const same=semanticBucket(first,env,scene)===semanticBucket(second,env,scene);
+    const askNext=()=>{
+      if(!same)return ['Oh, begitu. Ada cerita lain?','哦，这样。还有别的事吗？'];
+      const s=norm(second.example);
+      if(/\b(air hujan|selokan)\b/.test(s))return ['Terus air hujannya mengalir ke mana?','那雨水后来流到哪里了？'];
+      if(/\b(hujan|awan|cuaca|matahari)\b/.test(s))return ['Oh, begitu. Lalu setelah itu apa yang terjadi?','这样啊。那后来怎么样了？'];
+      if(/\b(kantor|rapat|pekerjaan|tim|laporan)\b/.test(s))return ['Oh, begitu. Lalu apa yang kamu lakukan?','哦，这样。然后你怎么做？'];
+      if(/\b(sakit|sembuh|batuk|klinik)\b/.test(s))return ['Oh, begitu. Lalu sekarang bagaimana perkembangannya?','这样啊。那现在恢复得怎么样？'];
+      return ['Oh, begitu. Terus apa yang terjadi?','这样啊。后来发生了什么？'];
+    };
+    const q1=askFirst(first),q2=askNext(),lines=[
+      {speaker:'A',id:q1[0],cn:q1[1]},
+      {speaker:'B',id:first.example,cn:first.example_cn},
+      {speaker:'A',id:q2[0],cn:q2[1]},
+      {speaker:'B',id:second.example,cn:second.example_cn}
+    ];
+    if(support){
+      const s=norm(support.example);
+      const finalQ=/\b(biarpun|walaupun|meskipun)\b/.test(s)
+        ?['Jadi, kamu tetap melanjutkan rencananya?','所以，你还是按计划继续了？']
+        :['Lalu bagaimana akhirnya?','那最后怎么样了？'];
+      lines.push({speaker:'A',id:finalQ[0],cn:finalQ[1]},
+        {speaker:'B',id:support.example,cn:support.example_cn});
+    }else{
+      lines.push({speaker:'A',id:'Oh, begitu. Semoga semuanya lancar, ya.',cn:'这样啊。希望一切顺利。'},
+        {speaker:'B',id:'Iya, terima kasih.',cn:'嗯，谢谢。'});
     }
     const joined=lines.map(x=>x.id).join(' ');
     const coverage=cards.filter(c=>hasExactWord(joined,c.word)).map(c=>({word:c.word,group:c.group}));
-    return {title:'真实口语｜'+scene.title,lines,_coverage:coverage};
+    return {title:'真实口语｜'+(same?scene.title:'Cerita sehari-hari'),lines,_coverage:coverage};
   }
 
   function optionSet(correct,pool,key){
@@ -436,14 +503,32 @@
     const appCards=apps.map(x=>({...buildCard(x,'application',ctx,env),group:'application'}));
     const cards=[...newCards,...reviewCards,...appCards],key=ctx.target.date+'-'+ctx.target.session+'-'+variant+'-'+newRows.map(x=>x.word).join('|');
     const reading=readingFor(scene,cards,env,key,ctx.target.session,variant),time=ctx.target.session==='am'?'08:00':'18:00';
+    const actualTitle=reading._mixed?'Beberapa catatan sehari-hari':scene.title;
     const base={date:ctx.target.date,session:ctx.target.session,time,day:ctx.target.day,level:'A2+ → B1',duration_minutes:30,
-      title:time+' '+(ctx.target.session==='am'?'早课':'晚课')+'｜'+scene.title,
-      _prototype:{engine_version:2,scene_id:scene.id,deterministic:true,production_write:false,variant,core_plan:plan,reading_coverage:reading._coverage,reading_review_required:reading._review_required}};
-    delete reading._coverage;delete reading._review_required;
+      title:time+' '+(ctx.target.session==='am'?'早课':'晚课')+'｜'+actualTitle,
+      _prototype:{engine_version:2,scene_id:scene.id,deterministic:true,production_write:false,variant,core_plan:plan,reading_coverage:reading._coverage,reading_review_required:reading._review_required,
+         reading_mode:reading._mixed?'thematic-notes':'single-scene',reading_topics:reading._topic_count}};
+    delete reading._coverage;delete reading._review_required;delete reading._mixed;delete reading._topic_count;
 
     if(ctx.target.session==='am'){
       const pool=cards.map(x=>x.word),r=reviewCards[0],n1=newCards[0],n2=newCards[1]||n1;
-      const out=pick(env.M.tasks.output_frames.filter(f=>f.tags.some(t=>scene.tags.includes(t))),scene.id)||env.M.tasks.output_frames[0];
+      // Use TWO actual target-word examples for the model answer. The former generic
+      // frame could demand two new words while using none in its reference answer.
+      const pairs=[];
+      for(let i=0;i<newCards.length;i++)for(let j=i+1;j<newCards.length;j++){
+        const a=newCards[i],b=newCards[j];
+        const shared=semanticBucket(a,env,scene)===semanticBucket(b,env,scene);
+        pairs.push({a,b,score:(shared?20:0)+sceneFit(a,scene,env)+sceneFit(b,scene,env)
+          -Math.max(0,wc(a.example)-15)-Math.max(0,wc(b.example)-15)});
+      }
+      pairs.sort((a,b)=>b.score-a.score||a.a.word.localeCompare(b.a.word));
+      const focusPair=pairs[0],cleanCn=x=>String(x||'').trim().replace(/[。！？!?；;]+$/g,''),out={
+        task:'遮住印尼语，用 '+focusPair.a.word+' 和 '+focusPair.b.word+
+          ' 各说一句：①'+cleanCn(focusPair.a.example_cn)+'；②'+cleanCn(focusPair.b.example_cn)+
+          '。至少准确使用这2个目标词；可改变人物或时间。',
+        answer:focusPair.a.example+' '+focusPair.b.example,
+        cn:focusPair.a.example_cn+' '+focusPair.b.example_cn
+      };
       return {...base,new_words:newCards.map(x=>x.word),vocab:newCards.map(({group,...x})=>x),review_vocab:reviewCards.map(x=>x.word),
         sentences:newCards.slice(0,5).map(x=>({text:x.example,cn:x.example_cn})),reading,
         quiz:[
@@ -451,7 +536,7 @@
           {question:'哪个新词表示“'+n1.cn+'”？',...optionSet(n1.word,pool,key+'q2'),explain:n1.word+' = '+n1.cn+'。'},
           {question:'哪个新词表示“'+n2.cn+'”？',...optionSet(n2.word,pool,key+'q3'),explain:n2.word+' = '+n2.cn+'。'}
         ],
-        output:{task:out.task+' 本课可用词：'+newCards.slice(0,5).map(x=>x.word).join('、')+'。',reference_answer:out.answer,reference_cn:out.cn},
+        output:{task:out.task,reference_answer:out.answer,reference_cn:out.cn},
         review:[
           '3秒主动回忆：'+newCards.slice(0,5).map(x=>x.word).join('、')+'。',
           '再看后5个新词，说出常见搭配或使用场景，不先背中文。',

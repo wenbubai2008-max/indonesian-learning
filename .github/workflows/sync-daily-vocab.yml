@@ -20,6 +20,9 @@ on:
       - '.github/scripts/normal-release-priority.jq'
       - '.github/scripts/test-recover-missing-lesson.js'
       - 'prototype/lesson-engine/engine/core.js'
+      - 'prototype/lesson-engine/engine/quality.js'
+      - 'prototype/lesson-engine/engine/test-prototype.js'
+      - 'prototype/lesson-engine/engine/compare-quality.js'
       - 'prototype/lesson-engine/materials/materials-bundle.json'
       - '.github/scripts/test-real-published-lesson.js'
       - '.github/scripts/check-release-pr.js'
@@ -185,6 +188,13 @@ jobs:
           node --check .github/scripts/validate-lesson-candidate.js
           node --check .github/scripts/plan-lesson-publication.js
           node --check .github/scripts/recover-missing-lesson.js
+          node --check prototype/lesson-engine/engine/core.js
+          node --check prototype/lesson-engine/engine/quality.js
+          node --check prototype/lesson-engine/engine/test-prototype.js
+          node prototype/lesson-engine/engine/test-prototype.js
+          node --check prototype/lesson-engine/engine/compare-quality.js
+          git fetch --no-tags origin main
+          node prototype/lesson-engine/engine/compare-quality.js origin/main
           node --check .github/scripts/test-recover-missing-lesson.js
           node .github/scripts/test-recover-missing-lesson.js
           # Live baseline rehearsal without --write; no official lesson or index is changed.

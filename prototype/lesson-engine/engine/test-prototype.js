@@ -9,6 +9,7 @@ const REPO=path.resolve(__dirname,'../../..');
 const core=require('./core.js');
 const wrapper=require('./generate-prototype.js');
 const {validate}=require(path.join(REPO,'.github/scripts/validate-lesson-candidate.js'));
+const {auditLesson}=require('./quality.js');
 
 const read=p=>JSON.parse(fs.readFileSync(path.join(REPO,p),'utf8'));
 const norm=x=>String(x||'').trim().toLowerCase();
@@ -74,6 +75,14 @@ for(const slot of ['am','pm']){
       });
       assert.equal(result.ok,true,JSON.stringify(result.errors));
     });
+    test(name+' instructional quality gate',()=>{
+      const quality=auditLesson(lesson);
+      assert.equal(quality.ok,true,JSON.stringify(quality.errors));
+      assert(quality.metrics.reading_words>=80&&quality.metrics.reading_words<=120);
+      assert.equal(quality.metrics.required_new_reading,slot==='am'?6:newWords(lesson).length);
+      if(slot==='am')assert(quality.metrics.output_target_count>=2);
+      else assert(quality.metrics.dialogue_new_count>=2);
+    });
     test(name+' shared engine contract',()=>{
       assert.equal(lesson._prototype.engine_version,2);
       assert.equal(lesson._prototype.production_write,false);
@@ -107,6 +116,70 @@ for(const slot of ['am','pm']){
     });
   }
 }
+
+test('quality gate explicitly rejects the historical answer/target mismatch',()=>{
+ const old=getPublished('data/daily/2026-10-02-am.json');
+ const q=auditLesson(old);
+ assert.equal(q.ok,false);
+ assert(q.errors.some(e=>e.code==='QUALITY_OUTPUT_TARGET_MISMATCH'),
+   'Published lesson previously requested 2 new words but used none in answer');
+});
+test('quality gate blocks semantic regressions instead of just counting JSON fields',()=>{
+ const c=cfg('pm'),valid=core.generate(c.ctx,bundle,dailyRows,{variant:0});
+ const repeated=JSON.parse(JSON.stringify(valid));
+ repeated.dialogue.lines[2].id=repeated.dialogue.lines[0].id;
+ assert(auditLesson(repeated).errors.some(e=>e.code==='QUALITY_DIALOGUE_REPETITION'));
+ const mislabeled=JSON.parse(JSON.stringify(valid));
+ mislabeled.title='18:00 晚课｜Makan siang';
+ if(mislabeled._prototype.reading_mode==='thematic-notes')
+   assert(auditLesson(mislabeled).errors.some(e=>e.code==='QUALITY_MISLEADING_SCENE_TITLE'));
+ const ca=cfg('am'),am=core.generate(ca.ctx,bundle,dailyRows,{variant:0});
+ const wrong=JSON.parse(JSON.stringify(am));
+ wrong.output.reference_answer='Hari ini saya akan istirahat lebih banyak. Kalau situasinya berubah, saya akan pulang.';
+ assert(auditLesson(wrong).errors.some(e=>e.code==='QUALITY_OUTPUT_TARGET_MISMATCH'));
+});
+test('alternate real-candidate order remains publishable and educationally matched',()=>{
+ const c=cfg('am'),ctx=JSON.parse(JSON.stringify(c.ctx));
+ const preferred=['sepenuhnya','sembuh','menyentuh','bersinar','tindakan','kisah','ditemukan','sebelah','peristiwa','daya'];
+ const priority=new Map(preferred.map((x,i)=>[x,i]));
+ ctx.candidates.new_dont.sort((a,b)=>(priority.get(a[0])??999)-(priority.get(b[0])??999));
+ for(const variant of [0,1,2,3,4,5]){
+   const lesson=core.generate(ctx,bundle,dailyRows,{variant});
+   const q=auditLesson(lesson);
+   assert(q.ok,variant+' '+JSON.stringify(q.errors));
+   assert(lesson.title.includes('Beberapa catatan sehari-hari')||
+     lesson._prototype.reading_mode==='single-scene');
+ }
+});
+function getPublished(p){return read(p)}
+
+test('diverse eligible candidate orders keep at least one valid fallback variant',()=>{
+ const shifts=[0,3,9,18,30,48,72,105];
+ const rotate=(items,n)=>items.length?items.slice(n%items.length).concat(items.slice(0,n%items.length)):[];
+ for(const slot of ['am','pm']){
+   const c=cfg(slot);
+   for(const shift of shifts){
+     const ctx=JSON.parse(JSON.stringify(c.ctx));
+     ctx.candidates.new_dont=rotate(ctx.candidates.new_dont,shift);
+     ctx.candidates.new_fuzzy=rotate(ctx.candidates.new_fuzzy,shift);
+     let good=0;
+     const failures=[];
+     for(let variant=0;variant<6;variant++){
+       try{
+         const lesson=core.generate(ctx,bundle,dailyRows,{variant});
+         const q=auditLesson(lesson);
+         const v=validate({lesson,index:c.index,runtime:c.runtime,rules,
+           expectedDate:ctx.target.date,expectedSession:slot,
+           sameDayAm:slot==='pm'?sameDayAm:null,previousPm:prevPm,
+           reviewHistory:fakeHistory(ctx)});
+         if(q.ok&&v.ok)good++;
+         else failures.push({variant,quality:q.errors,formal:v.errors});
+       }catch(e){failures.push({variant,error:String(e.message||e)})}
+     }
+     assert(good>0,slot+' offset '+shift+' has no viable V2 candidate: '+JSON.stringify(failures));
+   }
+ }
+});
 
 test('CLI wrapper delegates to same shared core',()=>{
   const c=cfg('pm'),a=core.generate(c.ctx,bundle,dailyRows,{variant:0}),b=wrapper.generate(c.ctx,{variant:0});
