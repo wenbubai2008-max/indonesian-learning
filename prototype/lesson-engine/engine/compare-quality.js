@@ -16,6 +16,11 @@ const baselineSource=cp.execFileSync('git',['show',baselineRef+':prototype/lesso
 const sandbox={module:{exports:{}},globalThis:{},console};
 vm.runInNewContext(baselineSource,sandbox,{filename:'baseline-v2-core.js'});
 const oldCore=sandbox.module.exports;
+// The old generator MUST use the old materials, not the improved V4 examples.
+ // This compares two runnable release states on identical learner/context data.
+const oldBundle=JSON.parse(cp.execFileSync('git',
+  ['show',baselineRef+':prototype/lesson-engine/materials/materials-bundle.json'],
+  {cwd:repo,encoding:'utf8'}));
 const bundle=read('prototype/lesson-engine/materials/materials-bundle.json');
 const source=fs.readFileSync(path.join(repo,'data/daily-vocab-data.js'),'utf8');
 const rows=JSON.parse(source.slice(source.indexOf('['),source.lastIndexOf(']')+1));
@@ -33,7 +38,11 @@ function metric(x){
   answer_target_words:x.session==='am'?news.filter(w=>containsWord(x.output?.task,w)&&containsWord(x.output?.reference_answer,w)).length:null,
   dialogue_new_coverage:x.session==='pm'?news.filter(w=>containsWord((x.dialogue?.lines||[]).map(v=>v.id).join(' '),w)).length:null,
   dialogue_abrupt_topic_changes:x.session==='pm'?topicJump:null,
-  dialogue_repeated_A_prompts:x.session==='pm'?questions.length-new Set(questions).size:null
+  dialogue_repeated_A_prompts:x.session==='pm'?questions.length-new Set(questions).size:null,
+  paired_micro_scenes:(x._prototype?.micro_scene_pairs||[]).length,
+  dialogue_paired_scene:Number(Boolean(x._prototype?.dialogue_micro_scene)),
+  alternate_context_drills:x.session==='am'?Number(x._prototype?.transfer_output_count||0):
+    Number(x._prototype?.transfer_rewrite_count||0)
  };
 }
 const cases=['am','pm'];
@@ -41,7 +50,7 @@ let worse=[],results=[];
 for(const slot of cases){
  const ctx=read('prototype/lesson-engine/fixtures/context-2026-10-01-'+slot+'.json');
  for(let variant=0;variant<6;variant++){
-  const oldLesson=oldCore.generate(ctx,bundle,rows,{variant});
+  const oldLesson=oldCore.generate(ctx,oldBundle,rows,{variant});
   const newLesson=newCore.generate(ctx,bundle,rows,{variant});
   const before=metric(oldLesson),after=metric(newLesson),q=auditLesson(newLesson);
   if(!q.ok)worse.push(slot+'/'+variant+':quality='+JSON.stringify(q.errors));
@@ -51,6 +60,8 @@ for(const slot of cases){
     worse.push(slot+'/'+variant+': reading coverage fell');
   if(slot==='am'&&after.answer_target_words<2)
     worse.push(slot+'/'+variant+': answer still ignores target words');
+  if(after.alternate_context_drills<before.alternate_context_drills)
+    worse.push(slot+'/'+variant+': fewer independent alternate-context drills');
   if(slot==='pm'&&after.dialogue_abrupt_topic_changes>before.dialogue_abrupt_topic_changes)
     worse.push(slot+'/'+variant+': more abrupt transitions');
   results.push({session:slot,variant,before,after});
@@ -73,13 +84,18 @@ console.log('V2_QUALITY_COMPARE '+JSON.stringify({
   am:{
    output_matched_target_words:{old:avg('am','before','answer_target_words'),upgraded:avg('am','after','answer_target_words')},
    reading_new_coverage:{old:avg('am','before','reading_new_coverage'),upgraded:avg('am','after','reading_new_coverage')},
-   reading_words:{old:avg('am','before','reading_words'),upgraded:avg('am','after','reading_words')}
+   reading_words:{old:avg('am','before','reading_words'),upgraded:avg('am','after','reading_words')},
+   independent_transfer_drills:{old:avg('am','before','alternate_context_drills'),upgraded:avg('am','after','alternate_context_drills')},
+   paired_micro_scenes:{old:avg('am','before','paired_micro_scenes'),upgraded:avg('am','after','paired_micro_scenes')}
   },
   pm:{
    abrupt_topic_changes:{old:avg('pm','before','dialogue_abrupt_topic_changes'),upgraded:avg('pm','after','dialogue_abrupt_topic_changes')},
    repeated_questions:{old:avg('pm','before','dialogue_repeated_A_prompts'),upgraded:avg('pm','after','dialogue_repeated_A_prompts')},
    reading_new_coverage:{old:avg('pm','before','reading_new_coverage'),upgraded:avg('pm','after','reading_new_coverage')},
-   reading_words:{old:avg('pm','before','reading_words'),upgraded:avg('pm','after','reading_words')}
+   reading_words:{old:avg('pm','before','reading_words'),upgraded:avg('pm','after','reading_words')},
+   independent_transfer_drills:{old:avg('pm','before','alternate_context_drills'),upgraded:avg('pm','after','alternate_context_drills')},
+   paired_micro_scenes:{old:avg('pm','before','paired_micro_scenes'),upgraded:avg('pm','after','paired_micro_scenes')},
+   paired_dialogues:{old:avg('pm','before','dialogue_paired_scene'),upgraded:avg('pm','after','dialogue_paired_scene')}
   }
  }
 }));
