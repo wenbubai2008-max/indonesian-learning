@@ -148,7 +148,7 @@ test('fallback workflow has one existing twice-daily clock and valid Bash steps'
  const workflow=fs.readFileSync(path.join(base,'.github/workflows/sync-daily-vocab.yml'),'utf8');
  const lines=workflow.split('\n');
  const crons=lines.map(x=>x.trim()).filter(x=>x.startsWith('- cron: '));
- assert.deepEqual(crons,["- cron: '5 1 * * *'","- cron: '5 11 * * *'"]);
+ assert.deepEqual(crons,["- cron: '30 1 * * *'","- cron: '5 11 * * *'"]);
  assert(workflow.includes('group: learning-data-write')||workflow.includes("'learning-data-write'"));
  assert(workflow.includes('inputs[recover_date]')&&workflow.includes('inputs[recover_session]'));
  const names=[
@@ -180,7 +180,8 @@ test('fallback workflow has one existing twice-daily clock and valid Bash steps'
  assert(workflow.includes("github.ref == 'refs/heads/main' && github.event_name != 'create'"));
  assert(workflow.includes('LESSON_CREATE_FALLBACK_DISPATCHED'));
  assert(workflow.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
- assert(workflow.includes('due_epoch=$((slot_epoch + 300))'), 'Watcher must not dispatch V2 before five minutes after official lesson start');
+ assert(workflow.includes('due_epoch=$((slot_epoch + grace_seconds))'), 'Watcher must not dispatch V2 before the session grace after official lesson start');
+ assert.equal((workflow.match(/target_time=08:00; grace_seconds=1800; else target_time=18:00; grace_seconds=300;/g)||[]).length,3,'All three V2 gates use AM 30-minute / PM 5-minute grace');
  assert(workflow.includes('event_grace=$((created_epoch + 60))'), 'Late-created release branches still get normal upload grace');
  assert(workflow.includes('FALLBACK_GRACE_ACTIVE'), 'The V2 generator must enforce the five-minute time barrier independently');
  assert(workflow.includes('LESSON_RECOVERY_DEFERRED'), 'Failed-PR recovery must also respect the five-minute minimum');
@@ -210,8 +211,9 @@ test('real watcher Bash enforces five minutes after lesson start (with late-bran
      '#!/bin/bash',
      'case "$*" in',
      '  *"+%Y-%m-%d"*) echo 2026-10-01 ;;',
-     '  *"+%H"*) echo 18 ;;',
+     '  *"+%H"*) echo "${FAKE_HOUR:-18}" ;;',
      '  *"18:00:00"*"+%s"*) echo "$FAKE_SLOT_EPOCH" ;;',
+     '  *"08:00:00"*"+%s"*) echo "$FAKE_SLOT_EPOCH" ;;',
      '  *"T11:00:00Z"*"+%s"*) echo "$FAKE_CREATED_EPOCH" ;;',
      '  *"+%s"*) echo "$FAKE_NOW_EPOCH" ;;',
      '  *) /usr/bin/date "$@" ;;',
@@ -225,11 +227,11 @@ test('real watcher Bash enforces five minutes after lesson start (with late-bran
      '    if [ "$FAKE_PUBLISH_AFTER_STAGED" = yes ] && grep -qx 120 "$FAKE_SLEEP_LOG" 2>/dev/null; then',
      '      echo "$FAKE_COMPLETE_INDEX_B64"',
      '    else echo "$FAKE_INDEX_B64"; fi ;;',
-     '  *"/contents/data/daily/2026-10-01-pm.json?ref=main"*)',
+     '  *"/contents/data/daily/2026-10-01-"*".json?ref=main"*)',
      '    if [ "$FAKE_LESSON_EXISTS" = yes ]; then exit 0; fi',
      '    if [ "$FAKE_PUBLISH_AFTER_STAGED" = yes ] && grep -qx 120 "$FAKE_SLEEP_LOG" 2>/dev/null; then exit 0; fi',
      '    exit 1 ;;',
-     '  *"/contents/data/daily/2026-10-01-pm.json?ref=lesson-release-2026-10-01-pm"*)',
+     '  *"?ref=lesson-release-2026-10-01-"*)',
      '    test "$FAKE_DRAFT_EXISTS" = yes ;;',
      '  *"--method POST"*) printf "DISPATCH %s\\n" "$*" >> "$FAKE_DISPATCH_LOG" ;;',
      '  *) echo "Unexpected gh api call: $*" >&2; exit 9 ;;',
@@ -243,8 +245,9 @@ test('real watcher Bash enforces five minutes after lesson start (with late-bran
    const log=path.join(tmp,'dispatch.log'),sleepLog=path.join(tmp,'sleep.log');
    const run=(ref,options={})=>{
      fs.rmSync(log,{force:true});fs.rmSync(sleepLog,{force:true});
-     const index={dates:[{date:'2026-10-01',am:true,pm:options.published||false}]};
-     const publishedIndex={dates:[{date:'2026-10-01',am:true,pm:true}]};
+     const am=options.am===true;
+     const index={dates:[{date:'2026-10-01',am:am?(options.published||false):true,pm:am?false:(options.published||false)}]};
+     const publishedIndex={dates:[{date:'2026-10-01',am:true,pm:!am}]};
      const env={...process.env,PATH:tmp+':'+process.env.PATH,
        CREATED_REF:ref,GITHUB_REPOSITORY:'test/indonesian-learning',GITHUB_RUN_ID:'123',
        GH_TOKEN:'unit-test',FAKE_INDEX_B64:Buffer.from(JSON.stringify(index)).toString('base64'),
@@ -255,7 +258,8 @@ test('real watcher Bash enforces five minutes after lesson start (with late-bran
        FAKE_DISPATCH_LOG:log,FAKE_SLEEP_LOG:sleepLog,
        FAKE_CREATED_EPOCH:String(options.createdEpoch??1000),
        FAKE_NOW_EPOCH:String(options.nowEpoch??1000),
-       FAKE_SLOT_EPOCH:String(options.slotEpoch??900)};
+       FAKE_SLOT_EPOCH:String(options.slotEpoch??900),
+       FAKE_HOUR:String(options.hour??18)};
      const result=cp.spawnSync('bash',['-c',body.join('\n')+'\n'],{env,encoding:'utf8'});
      assert.equal(result.status,0,ref+' stdout='+result.stdout+' stderr='+result.stderr);
      return {stdout:result.stdout,
@@ -302,6 +306,18 @@ test('real watcher Bash enforces five minutes after lesson start (with late-bran
    assert(normallyPublished.stdout.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
    assert.deepEqual(normallyPublished.slept,[200,120]);
    assert.equal(normallyPublished.dispatched,'');
+
+   // AM: slot 900 (08:00), V2 never before slot+1800 (08:30).
+   const amMissing=run('lesson-release-2026-10-01-am',{am:true,hour:8});
+   assert.deepEqual(amMissing.slept,[1700],'AM waits until 08:30 before requesting V2');
+   assert(amMissing.dispatched.includes('inputs[recover_session]=am'));
+   const amStaged=run('lesson-release-2026-10-01-am',{am:true,hour:8,staged:true,afterStaged:true});
+   assert(amStaged.stdout.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
+   assert.deepEqual(amStaged.slept,[1700,120]);assert.equal(amStaged.dispatched,'');
+   const amEarlyBranch=run('lesson-release-2026-10-01-am',{am:true,hour:7,slotEpoch:2600});
+   assert(amEarlyBranch.stdout.includes('LESSON_CREATE_IGNORED'),'AM branch created more than 25 minutes before 08:00 is left to the 08:30 schedule');
+   const amWatched=run('lesson-release-2026-10-01-am',{am:true,hour:7,slotEpoch:2500});
+   assert.deepEqual(amWatched.slept,[3300],'AM branch created 25 minutes before 08:00 is watched until 08:30');
  }finally{fs.rmSync(tmp,{recursive:true,force:true})}
 });
 
@@ -472,7 +488,7 @@ test('the actual failed-release Bash sends Sync only if ChatGPT/manual already p
  }finally{fs.rmSync(tmp,{recursive:true,force:true})}
 });
 
-test('actual V2 generator shell enforces slot+300 for explicit dispatch and Cron',()=>{
+test('actual V2 generator shell enforces AM slot+1800 and PM slot+300 for explicit dispatch and Cron',()=>{
  const cp=require('node:child_process'),os=require('node:os');
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'fallback-time-gate-'));
  try{
@@ -504,7 +520,7 @@ test('actual V2 generator shell enforces slot+300 for explicit dispatch and Cron
    const run=(mode,now,session='pm',localDate='2026-10-01')=>{
      const env={...process.env,PATH:tmp+':'+process.env.PATH,
        GITHUB_EVENT_NAME:mode,RECOVER_DATE:'2026-10-01',RECOVER_SESSION:session,
-       FALLBACK_CRON:session==='am'?'5 1 * * *':'5 11 * * *',
+       FALLBACK_CRON:session==='am'?'30 1 * * *':'5 11 * * *',
        FAKE_LOCAL_DATE:localDate,FAKE_LOCAL_HOUR:session==='am'?'08':'18',FAKE_NOW_EPOCH:String(now)};
      const result=cp.spawnSync('bash',['-c',script],{env,encoding:'utf8'});
      assert.equal(result.status,0,'V2 gate: '+result.stderr+' '+result.stdout);
@@ -517,10 +533,13 @@ test('actual V2 generator shell enforces slot+300 for explicit dispatch and Cron
      const onTime=run(mode,1300);
      assert(onTime.includes('FALLBACK_TIME_GATE_OPEN')&&onTime.includes('FALLBACK_GATE_CONTINUES'),
        mode+' must allow 18:05:00');
-     const morningBefore=run(mode,1299,'am');
-     assert(morningBefore.includes('FALLBACK_GRACE_ACTIVE'));
-     const morningOpen=run(mode,1300,'am');
-     assert(morningOpen.includes('FALLBACK_GATE_CONTINUES'));
+     const morningAt0805=run(mode,1300,'am');
+     assert(morningAt0805.includes('FALLBACK_GRACE_ACTIVE')&&!morningAt0805.includes('FALLBACK_GATE_CONTINUES'),
+       mode+' must refuse AM V2 at 08:05');
+     const morningBefore=run(mode,2799,'am');
+     assert(morningBefore.includes('FALLBACK_GRACE_ACTIVE'),mode+' must refuse 08:29:59');
+     const morningOpen=run(mode,2800,'am');
+     assert(morningOpen.includes('FALLBACK_GATE_CONTINUES'),mode+' must allow 08:30:00');
    }
    const stale=run('workflow_dispatch',1300,'pm','2026-10-02');
    assert(stale.includes('Stale or premature fallback')&&!stale.includes('FALLBACK_GATE_CONTINUES'),
