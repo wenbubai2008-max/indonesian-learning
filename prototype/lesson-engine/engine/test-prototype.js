@@ -153,6 +153,34 @@ test('alternate real-candidate order remains publishable and educationally match
 });
 function getPublished(p){return read(p)}
 
+test('diverse eligible candidate orders keep at least one valid fallback variant',()=>{
+ const shifts=[0,3,9,18,30,48,72,105];
+ const rotate=(items,n)=>items.length?items.slice(n%items.length).concat(items.slice(0,n%items.length)):[];
+ for(const slot of ['am','pm']){
+   const c=cfg(slot);
+   for(const shift of shifts){
+     const ctx=JSON.parse(JSON.stringify(c.ctx));
+     ctx.candidates.new_dont=rotate(ctx.candidates.new_dont,shift);
+     ctx.candidates.new_fuzzy=rotate(ctx.candidates.new_fuzzy,shift);
+     let good=0;
+     const failures=[];
+     for(let variant=0;variant<6;variant++){
+       try{
+         const lesson=core.generate(ctx,bundle,dailyRows,{variant});
+         const q=auditLesson(lesson);
+         const v=validate({lesson,index:c.index,runtime:c.runtime,rules,
+           expectedDate:ctx.target.date,expectedSession:slot,
+           sameDayAm:slot==='pm'?sameDayAm:null,previousPm:prevPm,
+           reviewHistory:fakeHistory(ctx)});
+         if(q.ok&&v.ok)good++;
+         else failures.push({variant,quality:q.errors,formal:v.errors});
+       }catch(e){failures.push({variant,error:String(e.message||e)})}
+     }
+     assert(good>0,slot+' offset '+shift+' has no viable V2 candidate: '+JSON.stringify(failures));
+   }
+ }
+});
+
 test('CLI wrapper delegates to same shared core',()=>{
   const c=cfg('pm'),a=core.generate(c.ctx,bundle,dailyRows,{variant:0}),b=wrapper.generate(c.ctx,{variant:0});
   assert.deepEqual(b,a);
