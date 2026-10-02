@@ -251,7 +251,12 @@
       example_cn:e.example_cn||d.example_cn||('我在日常句子中使用 '+k+' 这个词。'),
       synonym_note:e.synonym_note||d.synonym_note||M['lexical-rules']?.curated?.[k]?.spoken_note||e.note||d.usage_note||('例句搭配：'+(collocations.length?collocations.join(' / '):k)+'；这里的意思是“'+cn+'”。'),
       is_oral_new:group==='new'&&oralMap(ctx).has(k),
-      _collocations:collocations
+      _collocations:collocations,
+      // Private drill material. Never let an alternate example replace the teaching
+      // example or change the official new/review/application word eligibility.
+      _transfer:e.transfer_example&&e.transfer_cn&&hasExactWord(e.transfer_example,k)&&
+        norm(e.transfer_example)!==norm(e.example||d.example||'')
+        ?{id:e.transfer_example,cn:e.transfer_cn}:null
     };
     if(ctx.target.session==='pm'){
       // AM vocab is formally new; AM review_vocab consists of previously learned words.
@@ -337,13 +342,35 @@
     }
     // Explicitly group short topical notes. Mixed unrelated examples are NOT a
     // single fabricated narrative and must never inherit an unrelated scene title.
-    const groups=new Map();
+    const groups=new Map(),visitedPairs=new Set();
     for(const c of chosen){
       const b=macro(c);
       if(!groups.has(b))groups.set(b,[]);
-      groups.get(b).push(c);
+      const pair=pairByWord.get(c.word);
+      if(pair){
+        if(visitedPairs.has(pair.id))continue;
+        visitedPairs.add(pair.id);
+        groups.get(b).push({kind:'paired-scene',pair});
+      }else groups.get(b).push({kind:'card',card:c});
     }
     const fineTopics=new Set(chosen.map(c=>semanticBucket(c,env,scene)));
+    // A pre-reviewed two-word scene is used only if BOTH exact words are selected
+    // for this reading. Never pull an ineligible word into a lesson for cohesion.
+    const eligiblePairs=(env.M['micro-scenes']?.scenes||[]).filter(p=>{
+      if(!Array.isArray(p.words)||p.words.length!==2||!Array.isArray(p.reading)||p.reading.length!==2)return false;
+      const aa=chosen.find(c=>c.word===p.words[0]),bb=chosen.find(c=>c.word===p.words[1]);
+      return aa&&bb&&p.reading.every((line,i)=>line.id&&line.cn&&hasExactWord(line.id,p.words[i]));
+    }).sort((a,b)=>a.id.localeCompare(b.id));
+    const pairByWord=new Map(),selectedPairs=[];
+    for(const p of eligiblePairs){
+      if(p.words.some(w=>pairByWord.has(w)))continue;
+      const aa=chosen.find(c=>c.word===p.words[0]),bb=chosen.find(c=>c.word===p.words[1]);
+      // Keep the pair in one broad topic; cross-topic pairs are not promoted into
+      // an artificial story. Up to two curated scenes keeps length predictable.
+      if(macro(aa)!==macro(bb)||selectedPairs.length>=2)continue;
+      selectedPairs.push(p);
+      for(const w of p.words)pairByWord.set(w,p);
+    }
     const mixed=fineTopics.size>1;
     // Never stitch five unrelated stock sentences into a fabricated single event.
     // Two or three expressly separate, broad life contexts need fewer hard transitions.
@@ -373,7 +400,11 @@
         const bridge=topicIntros[group]||['Ada juga catatan singkat dari situasi lainnya.','还有另一个不同情境中的简短记录。'];
         pairs.push([...bridge,'','bridge']);
       }
-      for(const c of items)pairs.push(entry(c));
+      for(const item of items){
+        if(item.kind==='paired-scene'){
+          for(const line of item.pair.reading)pairs.push([line.id,line.cn,'','paired-scene']);
+        }else pairs.push(entry(item.card));
+      }
     }
     const count=()=>wc(pairs.map(x=>x[0]).join(' '));
     const remaining=()=>120-count()-wc(closer[0]);
@@ -400,7 +431,8 @@
     const actual=coverage.filter(c=>c.group==='new').length;
     if(actual<required)throw Error('READING_EXACT_COVERAGE: '+actual+'/'+required);
     if(wc(text)<80||wc(text)>120)throw Error('READING_WORD_COUNT: '+wc(text));
-    return {text,cn:translation,_coverage:coverage,_review_required:mixed,_mixed:mixed,_topic_count:fineTopics.size};
+    return {text,cn:translation,_coverage:coverage,_review_required:mixed,_mixed:mixed,
+      _topic_count:fineTopics.size,_paired_scenes:selectedPairs.map(p=>p.id)};
   }
 
   function dialogueFor(scene,cards,env,key){
@@ -507,8 +539,9 @@
     const base={date:ctx.target.date,session:ctx.target.session,time,day:ctx.target.day,level:'A2+ → B1',duration_minutes:30,
       title:time+' '+(ctx.target.session==='am'?'早课':'晚课')+'｜'+actualTitle,
       _prototype:{engine_version:2,scene_id:scene.id,deterministic:true,production_write:false,variant,core_plan:plan,reading_coverage:reading._coverage,reading_review_required:reading._review_required,
-         reading_mode:reading._mixed?'thematic-notes':'single-scene',reading_topics:reading._topic_count}};
-    delete reading._coverage;delete reading._review_required;delete reading._mixed;delete reading._topic_count;
+         reading_mode:reading._mixed?'thematic-notes':'single-scene',reading_topics:reading._topic_count,
+         micro_scene_pairs:reading._paired_scenes}};
+    delete reading._coverage;delete reading._review_required;delete reading._mixed;delete reading._topic_count;delete reading._paired_scenes;
 
     if(ctx.target.session==='am'){
       const pool=cards.map(x=>x.word),r=reviewCards[0],n1=newCards[0],n2=newCards[1]||n1;
