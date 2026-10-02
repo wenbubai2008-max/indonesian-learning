@@ -109,13 +109,15 @@ jobs:
           fi
           if [ "$target_session" = am ]; then target_time=08:00; else target_time=18:00; fi
           slot_epoch="$(TZ=Asia/Jakarta date -d "$target_date $target_time:00" +%s)"
-          # GitHub's event/run creation time is closer to branch creation than runner start;
-          # a queued runner must not restart the 60-second grace window.
+          # A release branch can wake this watcher early, but V2 must not be requested
+          # until five minutes AFTER the official 08:00/18:00 lesson start.
+          # For a late-created branch, preserve a 60-second normal upload window.
+          # Anchor the latter to GitHub's event creation time, never runner start.
           created_at="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" --jq '.created_at')"
           created_epoch="$(date -u -d "$created_at" +%s)"
-          due_epoch=$((created_epoch + 60))
-          # A pre-created scaffold cannot publish a lesson before its 08:00/18:00 slot.
-          if [ "$slot_epoch" -gt "$due_epoch" ]; then due_epoch="$slot_epoch"; fi
+          due_epoch=$((slot_epoch + 300))
+          event_grace=$((created_epoch + 60))
+          if [ "$event_grace" -gt "$due_epoch" ]; then due_epoch="$event_grace"; fi
           now_epoch="$(date +%s)"
           wait_seconds=$((due_epoch - now_epoch))
           # Only observe near-slot scaffolds, not branches made hours in advance.
@@ -128,7 +130,7 @@ jobs:
             exit 0
           fi
           if [ "$wait_seconds" -gt 0 ]; then
-            echo "LESSON_CREATE_WAIT seconds=$wait_seconds (60 seconds since event or slot start, not :05)."
+            echo "LESSON_CREATE_WAIT seconds=$wait_seconds (never before 08:05/18:05; late branches retain 60-second upload grace)."
             sleep "$wait_seconds"
           fi
           # Check the official lesson/index barrier on CURRENT main, not the empty scaffold.
@@ -146,9 +148,9 @@ jobs:
             echo "LESSON_CREATE_ALREADY_PUBLISHED $target_date $target_session; do not run V2."
             exit 0
           fi
-          # Empty scaffold after 60 seconds: request V2 immediately, without waiting for :05.
-          # If the original lesson is already staged, allow the existing PR release a short,
-          # bounded completion window. An explicit release failure dispatches V2 immediately.
+          # Empty scaffold after the five-minute gate: request V2 only if unpublished.
+          # If the original lesson is staged, give its PR a bounded extra release window.
+          # An explicit PR failure is also subject to the same five-minute gate.
           if gh api "repos/$GITHUB_REPOSITORY/contents/$official?ref=$CREATED_REF" >/dev/null 2>&1; then
             echo 'LESSON_CREATE_DRAFT_STAGED waiting up to 120 more seconds for normal release.'
             sleep 120
@@ -552,6 +554,18 @@ jobs:
               exit 0
             fi
           fi
+          # The failed PR may occur before the normal lesson's five-minute window ends.
+          # Do NOT dispatch the V2 generator early or hold the normal publication write
+          # lock while waiting. Its independently woken release-branch watcher and the
+          # existing 08:05/18:05 scheduled check retain recovery responsibility.
+          if [ "$session" = am ]; then target_time=08:00; else target_time=18:00; fi
+          slot_epoch="$(TZ=Asia/Jakarta date -d "$date $target_time:00" +%s)"
+          earliest_epoch=$((slot_epoch + 300))
+          now_epoch="$(date +%s)"
+          if [ "$now_epoch" -lt "$earliest_epoch" ]; then
+            echo "LESSON_RECOVERY_DEFERRED date=$date session=$session: no V2 before 08:05/18:05 Jakarta; watcher/Cron remains armed."
+            exit 0
+          fi
           gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" \
             -f ref=main -f "inputs[recover_date]=$date" -f "inputs[recover_session]=$session"
           echo "Dispatched independent V2 fallback for $date $session."
@@ -754,6 +768,19 @@ jobs:
             echo "::warning title=Stale or premature fallback::No publication for $date $session at $local_date $local_hour Jakarta."
             exit 0
           fi
+          # AUTHORITATIVE V2 TIME GATE: it applies to schedule, workflow_dispatch,
+          # branch-watcher dispatch and failed-PR dispatch alike. A request received
+          # before the five-minute cutoff exits without writing or holding the lock
+          # through the grace window. The branch watcher/Cron can request it later.
+          if [ "$session" = am ]; then target_time=08:00; else target_time=18:00; fi
+          slot_epoch="$(TZ=Asia/Jakarta date -d "$date $target_time:00" +%s)"
+          earliest_epoch=$((slot_epoch + 300))
+          now_epoch="$(date +%s)"
+          if [ "$now_epoch" -lt "$earliest_epoch" ]; then
+            echo "FALLBACK_GRACE_ACTIVE date=$date session=$session remaining=$((earliest_epoch - now_epoch))s; V2 is disabled until 08:05/18:05 Jakarta."
+            exit 0
+          fi
+          echo "FALLBACK_TIME_GATE_OPEN date=$date session=$session (at least five minutes after lesson start)."
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           candidate="data/daily/$date-$session.json"
