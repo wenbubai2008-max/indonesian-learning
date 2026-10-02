@@ -11,7 +11,9 @@
       "example": "Tolong mundur sedikit supaya pintunya bisa dibuka.",
       "example_cn": "请往后退一点，好让门能打开。",
       "synonym_note": "mundur 与 maju 相反；退职常说 mundur dari jabatan。",
-      "usage_note": "高频实用；先掌握 mundur sedikit。"
+      "usage_note": "高频实用；先掌握 mundur sedikit。",
+      "transfer_example": "Mobil di depan terlalu dekat, bisa mundur sedikit?",
+      "transfer_cn": "前面的车离得太近，能稍微往后倒一点吗？"
     },
     "biarpun": {
       "cn": "即使；尽管",
@@ -22,7 +24,9 @@
       "example": "Biarpun hujan, saya tetap pergi ke kantor.",
       "example_cn": "即使下雨，我还是去办公室。",
       "synonym_note": "biarpun 与 walaupun 接近；walaupun 更中性通用。",
-      "usage_note": "口语能用，但日常也很常听到 walaupun。"
+      "usage_note": "口语能用，但日常也很常听到 walaupun。",
+      "transfer_example": "Biarpun capek, aku tetap mau selesaikan tugas ini.",
+      "transfer_cn": "即使很累，我还是想把这项工作做完。"
     },
     "haus": {
       "cn": "口渴",
@@ -33,7 +37,9 @@
       "example": "Setelah berjalan jauh, saya merasa sangat haus.",
       "example_cn": "走了很远以后，我非常口渴。",
       "synonym_note": "haus 是口渴；lapar 是饥饿。",
-      "usage_note": "高频生活词。"
+      "usage_note": "高频生活词。",
+      "transfer_example": "Aku haus banget setelah jalan kaki dari halte.",
+      "transfer_cn": "从公交站走过来后，我特别口渴。"
     },
     "meledak": {
       "cn": "爆炸；突然爆发",
@@ -44,7 +50,9 @@
       "example": "Ban mobil itu tiba-tiba meledak di jalan.",
       "example_cn": "汽车轮胎在路上突然爆了。",
       "synonym_note": "meledak 是爆炸/爆发；terbakar 是着火。",
-      "usage_note": "交通事故场景常见 ban meledak。"
+      "usage_note": "交通事故场景常见 ban meledak。",
+      "transfer_example": "Ban motor itu meledak waktu lewat jalan yang rusak.",
+      "transfer_cn": "那辆摩托车经过坑洼路段时，轮胎突然爆了。"
     },
     "meletakkan": {
       "cn": "放置；把……放下",
@@ -55,7 +63,9 @@
       "example": "Saya meletakkan kunci di atas meja.",
       "example_cn": "我把钥匙放在桌子上。",
       "synonym_note": "meletakkan 较标准；日常口语更常说 taruh。",
-      "usage_note": "学习正式形式，同时主动掌握 taruh。"
+      "usage_note": "学习正式形式，同时主动掌握 taruh。",
+      "transfer_example": "Tolong meletakkan dokumen itu di meja resepsionis.",
+      "transfer_cn": "请把那份文件放在前台桌子上。"
     },
     "memeluk": {
       "cn": "拥抱",
@@ -66,7 +76,9 @@
       "example": "Anak itu memeluk ibunya sebelum berangkat.",
       "example_cn": "那个孩子出发前抱了抱妈妈。",
       "synonym_note": "memeluk 是拥抱；merangkul 也可表示搂住或接纳。",
-      "usage_note": "日常自然词。"
+      "usage_note": "日常自然词。",
+      "transfer_example": "Saat bertemu lagi, dia langsung memeluk ibunya.",
+      "transfer_cn": "再次见面时，他立刻拥抱了母亲。"
     },
     "mengunduh": {
       "cn": "下载",
@@ -77,7 +89,9 @@
       "example": "Saya mengunduh dokumen itu sebelum rapat.",
       "example_cn": "会议前我下载了那份文件。",
       "synonym_note": "正式写作常用 mengunduh；日常聊天大量直接说 download。",
-      "usage_note": "口语优先同时认识 download。"
+      "usage_note": "口语优先同时认识 download。",
+      "transfer_example": "Aku belum sempat mengunduh file yang kamu kirim tadi.",
+      "transfer_cn": "你刚才发的文件我还没来得及下载。"
     },
     "menuduh": {
       "cn": "指控；指责",
@@ -88,7 +102,9 @@
       "example": "Jangan menuduh orang lain tanpa bukti yang jelas.",
       "example_cn": "没有明确证据，不要指控别人。",
       "synonym_note": "menuduh 是指控；menyalahkan 更偏责怪。",
-      "usage_note": "注意语气较重。"
+      "usage_note": "注意语气较重。",
+      "transfer_example": "Jangan langsung menuduh temanmu tanpa mendengar penjelasannya.",
+      "transfer_cn": "还没听朋友解释，就不要直接指责他。"
     },
     "menyembuhkan": {
       "cn": "治愈；使恢复",
@@ -99,7 +115,9 @@
       "example": "Obat yang tepat bisa membantu menyembuhkan penyakit tertentu.",
       "example_cn": "合适的药物可以帮助治愈某些疾病。",
       "synonym_note": "menyembuhkan 强调使痊愈；merawat 是照料/治疗过程。",
-      "usage_note": "健康内容避免把普通建议说成保证治愈。"
+      "usage_note": "健康内容避免把普通建议说成保证治愈。",
+      "transfer_example": "Obat itu membantu menyembuhkan luka kecil di tangannya.",
+      "transfer_cn": "那种药有助于治好他手上的小伤口。"
     },
     "seandainya": {
       "cn": "假如；要是",
@@ -110,7 +128,9 @@
       "example": "Seandainya besok libur, saya ingin tidur lebih lama.",
       "example_cn": "假如明天放假，我想多睡一会儿。",
       "synonym_note": "seandainya 偏假设；kalau 适用范围更广、更口语。",
-      "usage_note": "用于不确定或与现实有距离的假设很自然。"
+      "usage_note": "用于不确定或与现实有距离的假设很自然。",
+      "transfer_example": "Seandainya aku berangkat lebih awal, mungkin nggak akan terlambat.",
+      "transfer_cn": "假如我早一点出发，可能就不会迟到了。"
     },
     "mencret": {
       "cn": "拉肚子；腹泻（口语）",
@@ -165,7 +185,9 @@
       "example": "Tolong menyalin nomor ini ke dokumen baru.",
       "example_cn": "请把这个号码复制到新文档里。",
       "synonym_note": "menyalin 是复制内容；memindahkan 是移动。",
-      "usage_note": "工作场景高价值。"
+      "usage_note": "工作场景高价值。",
+      "transfer_example": "Tolong menyalin alamat ini ke formulir yang baru.",
+      "transfer_cn": "请把这个地址复制到新表格里。"
     },
     "seraya": {
       "cn": "同时；一边……一边……",
@@ -176,7 +198,9 @@
       "example": "Dia tersenyum seraya menjelaskan hasilnya.",
       "example_cn": "他一边微笑一边解释结果。",
       "synonym_note": "seraya 较书面；日常口语更常用 sambil。",
-      "usage_note": "识别 seraya，主动口语优先 sambil。"
+      "usage_note": "识别 seraya，主动口语优先 sambil。",
+      "transfer_example": "Dia tersenyum seraya menyerahkan dokumen itu.",
+      "transfer_cn": "他微笑着递交了那份文件。"
     },
     "kabur": {
       "cn": "逃跑；溜走；模糊",
@@ -187,7 +211,9 @@
       "example": "Orang itu kabur sebelum petugas datang.",
       "example_cn": "工作人员到之前，那个人就跑了。",
       "synonym_note": "kabur=逃走或模糊；pergi 只是离开。",
-      "usage_note": "两个常见义项都要会识别。"
+      "usage_note": "两个常见义项都要会识别。",
+      "transfer_example": "Tulisan di foto ini kabur, bisa kirim yang lebih jelas?",
+      "transfer_cn": "这张照片上的字很模糊，能发一张清楚些的吗？"
     },
     "menegaskan": {
       "cn": "强调；明确说明",
@@ -198,7 +224,9 @@
       "example": "Atasan menegaskan bahwa data pelanggan harus aman.",
       "example_cn": "上司强调客户数据必须安全。",
       "synonym_note": "menegaskan=强调/明确；menjelaskan=解释。",
-      "usage_note": "工作沟通高价值。"
+      "usage_note": "工作沟通高价值。",
+      "transfer_example": "Manajer menegaskan bahwa jadwal pengiriman belum berubah.",
+      "transfer_cn": "经理明确表示，发货时间还没有变。"
     },
     "niat": {
       "cn": "打算；意图；认真想做的心意",
@@ -209,7 +237,9 @@
       "example": "Saya punya niat menyelesaikan pekerjaan ini hari ini.",
       "example_cn": "我打算今天完成这项工作。",
       "synonym_note": "niat 强调内在打算；rencana 更偏具体计划。",
-      "usage_note": "主动输出高价值。"
+      "usage_note": "主动输出高价值。",
+      "transfer_example": "Aku niat belajar bahasa Indonesia setiap hari, walau cuma sebentar.",
+      "transfer_cn": "我打算每天学点印尼语，哪怕时间不长。"
     },
     "mengeluh": {
       "cn": "抱怨",
@@ -220,7 +250,9 @@
       "example": "Dia sering mengeluh soal macet, tetapi tetap berangkat pagi.",
       "example_cn": "他经常抱怨堵车，但还是早早出发。",
       "synonym_note": "mengeluh 是抱怨；curhat 是倾诉，不一定抱怨。",
-      "usage_note": "日常高频。"
+      "usage_note": "日常高频。",
+      "transfer_example": "Dia nggak mengeluh, meskipun perjalanan tadi cukup melelahkan.",
+      "transfer_cn": "虽然刚才路上很累，但他没抱怨。"
     },
     "memanggil": {
       "cn": "呼唤；叫；叫来",
@@ -264,7 +296,9 @@
       "example": "Data ini menunjukkan bahwa penjualan mulai naik.",
       "example_cn": "这些数据显示销售开始上升。",
       "synonym_note": "menunjukkan=展示/表明；menjelaskan=解释。",
-      "usage_note": "工作和说明场景高价值。"
+      "usage_note": "工作和说明场景高价值。",
+      "transfer_example": "Data bulan ini menunjukkan penjualan mulai membaik.",
+      "transfer_cn": "本月数据显示销售已经开始好转。"
     },
     "layak": {
       "cn": "值得；合适；够资格",
@@ -275,7 +309,9 @@
       "example": "Pilihan ini layak dipertimbangkan karena lebih praktis.",
       "example_cn": "这个选择值得考虑，因为更实用。",
       "synonym_note": "layak 是达到合适/值得的标准；cocok 更偏匹配、合适。",
-      "usage_note": "B1高价值。"
+      "usage_note": "B1高价值。",
+      "transfer_example": "Tempat ini cukup layak untuk dijadikan ruang kerja kecil.",
+      "transfer_cn": "这个地方拿来作小办公室已经挺合适了。"
     },
     "ngotot": {
       "cn": "强硬坚持；硬要",
@@ -286,7 +322,9 @@
       "example": "Dia tetap ngotot mau pergi meskipun sudah terlambat.",
       "example_cn": "尽管已经晚了，他还是硬要去。",
       "synonym_note": "ngotot 带强硬/固执色彩；bersikeras 较正式。",
-      "usage_note": "真实口语。"
+      "usage_note": "真实口语。",
+      "transfer_example": "Dia masih ngotot, padahal datanya sudah jelas.",
+      "transfer_cn": "数据已经很清楚了，他还在固执地坚持。"
     },
     "sebel": {
       "cn": "烦；恼火",
@@ -297,7 +335,9 @@
       "example": "Aku lagi sebel karena pesanan belum datang.",
       "example_cn": "我正烦着呢，因为订单还没到。",
       "synonym_note": "sebel 比 marah 轻，常是烦躁、不爽。",
-      "usage_note": "高频口语。"
+      "usage_note": "高频口语。",
+      "transfer_example": "Aku sebel karena kurirnya nggak kasih kabar sama sekali.",
+      "transfer_cn": "快递员完全不通知一声，让我很烦。"
     },
     "jomblo": {
       "cn": "单身；没有对象",
@@ -308,7 +348,9 @@
       "example": "Dia masih jomblo dan belum kepikiran menikah.",
       "example_cn": "他还是单身，还没考虑结婚。",
       "synonym_note": "jomblo 很口语；lajang 较正式。",
-      "usage_note": "社交口语。"
+      "usage_note": "社交口语。",
+      "transfer_example": "Dia masih jomblo, tapi kelihatannya menikmati hidupnya.",
+      "transfer_cn": "他还单身，但看起来挺享受生活。"
     },
     "cerewet": {
       "cn": "话多；唠叨；挑剔",
@@ -319,7 +361,9 @@
       "example": "Atasan saya agak cerewet soal detail, tapi hasilnya memang rapi.",
       "example_cn": "我上司对细节有点挑剔，不过结果确实很整齐。",
       "synonym_note": "cerewet 可中性“话多”，也可负面“唠叨/挑剔”。",
-      "usage_note": "语气取决于场景。"
+      "usage_note": "语气取决于场景。",
+      "transfer_example": "Ibuku suka cerewet kalau aku pulang terlalu malam.",
+      "transfer_cn": "我回家太晚的话，我妈妈就爱念叨。"
     },
     "berarti": {
       "cn": "意味着；也就是说",
@@ -330,7 +374,9 @@
       "example": "Kalau besok libur, berarti kita tidak perlu buru-buru.",
       "example_cn": "如果明天放假，也就是说我们不用着急。",
       "synonym_note": "berarti 可作动词“意味着”，也可作口语推断连接。",
-      "usage_note": "高频口语连接词。"
+      "usage_note": "高频口语连接词。",
+      "transfer_example": "Kalau semua setuju, berarti kita bisa mulai besok.",
+      "transfer_cn": "如果大家都同意，那就说明我们明天可以开始。"
     },
     "beliau": {
       "cn": "他／她（尊称）",
@@ -341,7 +387,9 @@
       "example": "Beliau meminta kami menyiapkan laporan sebelum rapat.",
       "example_cn": "他／她（尊称）要求我们会议前准备报告。",
       "synonym_note": "beliau 比 dia 更尊敬；Anda 是直接称呼对方。",
-      "usage_note": "正式/尊敬场景。"
+      "usage_note": "正式/尊敬场景。",
+      "transfer_example": "Beliau sedang ada rapat, bisa hubungi lagi nanti?",
+      "transfer_cn": "他/她（尊称）正在开会，可以稍后再联系吗？"
     },
     "bangunan": {
       "cn": "建筑；建筑物",
@@ -407,7 +455,9 @@
       "example": "Kita harus antre sebentar di kasir.",
       "example_cn": "我们得在收银台排一会儿队。",
       "synonym_note": "antre 是标准拼写；antri 很常见但非标准。",
-      "usage_note": "生活高频。"
+      "usage_note": "生活高频。",
+      "transfer_example": "Kita perlu antre sebentar sebelum masuk ke klinik.",
+      "transfer_cn": "进诊所之前我们需要稍微排一下队。"
     },
     "guna": {
       "cn": "用途；为了；用来",
@@ -418,7 +468,9 @@
       "example": "Kami memeriksa data itu guna menghindari kesalahan.",
       "example_cn": "我们检查这些数据，是为了避免错误。",
       "synonym_note": "guna 偏正式，表示“为了”；untuk 在日常口语中更常用。gunanya 表示“它的用途”。",
-      "usage_note": "注意 guna 和 gunanya 的表面形式不同。"
+      "usage_note": "注意 guna 和 gunanya 的表面形式不同。",
+      "transfer_example": "Kami cek ulang angka itu guna menghindari kesalahan.",
+      "transfer_cn": "我们重新核对数字，以免出现错误。"
     },
     "membunuh": {
       "cn": "杀死；使丧命",
@@ -430,10 +482,12 @@
         "incident"
       ],
       "formation": "meN- + bunuh → membunuh；常见 membunuh serangga。",
-      "example": "Pestisida bisa membunuh serangga, jadi harus digunakan dengan hati-hati.",
-      "example_cn": "杀虫剂能杀死昆虫，因此使用时必须小心。",
+      "example": "Petugas kebun menunggu hujan reda sebelum memakai pestisida untuk membunuh serangga.",
+      "example_cn": "园艺工人等雨停后才使用杀虫剂杀虫。",
       "synonym_note": "membunuh 指造成死亡；mengusir 只是驱赶。不要把轻微的损坏都说成 membunuh。",
-      "usage_note": "语气较强；日常要根据真实含义选择。"
+      "usage_note": "语气较强；日常要根据真实含义选择。",
+      "transfer_example": "Jangan pakai pestisida terlalu banyak hanya untuk membunuh serangga.",
+      "transfer_cn": "不要为了杀虫而过量使用杀虫剂。"
     },
     "daya": {
       "cn": "力量；能力；电量或功率",
@@ -448,7 +502,1827 @@
       "example": "Daya baterai ponsel saya tinggal 20 persen.",
       "example_cn": "我手机的电池电量只剩20%。",
       "synonym_note": "daya 常用于电力、能力及购买力等搭配；tenaga 更偏体力、能量。",
-      "usage_note": "实际日常口语还常说 baterainya tinggal 20 persen。"
+      "usage_note": "实际日常口语还常说 baterainya tinggal 20 persen。",
+      "transfer_example": "Kalau daya baterainya rendah, matikan dulu aplikasi yang nggak perlu.",
+      "transfer_cn": "如果电池电量低，先关掉不必要的应用。"
+    },
+    "sepenuhnya": {
+      "word": "sepenuhnya",
+      "cn": "完全地",
+      "en": "fully; completely",
+      "root": "penuh",
+      "root_cn": "满；完整",
+      "register": "neutral-formal",
+      "tags": [
+        "description"
+      ],
+      "example": "Saya belum sepenuhnya paham cara kerja sistem ini.",
+      "example_cn": "我还没有完全理解这个系统的运作方式。",
+      "note": "比 banget 更正式；常和 belum/tidak 搭配。",
+      "formation": "常见搭配：belum sepenuhnya paham、tidak sepenuhnya benar。",
+      "synonym_note": "强调程度完全；banget 只强调强度，不等于完全",
+      "usage_note": "比 banget 更正式；常和 belum/tidak 搭配。",
+      "transfer_example": "Saya belum sepenuhnya yakin dengan keputusan itu.",
+      "transfer_cn": "我还没有完全确定这个决定。",
+      "transfer_register": "natural-spoken"
+    },
+    "sembuh": {
+      "word": "sembuh",
+      "cn": "恢复；痊愈",
+      "en": "recover; heal",
+      "root": "sembuh",
+      "root_cn": "痊愈",
+      "register": "neutral",
+      "tags": [
+        "health"
+      ],
+      "example": "Batuknya sudah membaik, tapi dia belum sembuh sepenuhnya.",
+      "example_cn": "他的咳嗽好转了，但还没有完全痊愈。",
+      "note": "sembuh 是自己痊愈；menyembuhkan 是使……痊愈。",
+      "formation": "常见搭配：sudah sembuh、cepat sembuh。",
+      "synonym_note": "sembuh 指病好了；membaik 指有所好转",
+      "usage_note": "sembuh 是自己痊愈；menyembuhkan 是使……痊愈。",
+      "transfer_example": "Kamu sudah sembuh atau masih perlu istirahat?",
+      "transfer_cn": "你已经康复了，还是还需要休息？",
+      "transfer_register": "natural-spoken"
+    },
+    "menyentuh": {
+      "word": "menyentuh",
+      "cn": "触摸；触及",
+      "en": "touch",
+      "root": "sentuh",
+      "root_cn": "触摸",
+      "register": "neutral",
+      "tags": [
+        "action",
+        "social"
+      ],
+      "example": "Jangan menyentuh kabel itu sebelum listrik dimatikan.",
+      "example_cn": "断电之前不要碰那根电线。",
+      "note": "也可抽象表示“触动、涉及”。",
+      "formation": "常见搭配：jangan menyentuh、menyentuh layar。",
+      "synonym_note": "menyentuh 是触碰；memegang 是握住、拿着",
+      "usage_note": "也可抽象表示“触动、涉及”。",
+      "transfer_example": "Jangan menyentuh layar saat tanganmu masih basah.",
+      "transfer_cn": "手还湿着的时候别碰屏幕。",
+      "transfer_register": "natural-spoken"
+    },
+    "bersinar": {
+      "word": "bersinar",
+      "cn": "闪耀；发光",
+      "en": "shine; glow",
+      "root": "sinar",
+      "root_cn": "光线",
+      "register": "neutral",
+      "tags": [
+        "nature",
+        "description"
+      ],
+      "example": "Matahari mulai bersinar setelah hujan berhenti.",
+      "example_cn": "雨停后太阳开始照耀。",
+      "note": "常用于 matahari、lampu、wajah 等。",
+      "formation": "常见搭配：matahari bersinar、wajah bersinar。",
+      "synonym_note": "bersinar 是发光、闪耀；terang 是明亮",
+      "usage_note": "常用于 matahari、lampu、wajah 等。",
+      "transfer_example": "Setelah mendung seharian, matahari akhirnya bersinar lagi.",
+      "transfer_cn": "阴了一整天后，太阳终于又出来了。",
+      "transfer_register": "natural-spoken"
+    },
+    "tindakan": {
+      "word": "tindakan",
+      "cn": "行动；措施",
+      "en": "action; measure",
+      "root": "tindak",
+      "root_cn": "行动；处理",
+      "register": "standard",
+      "tags": [
+        "action",
+        "work"
+      ],
+      "example": "Perusahaan perlu mengambil tindakan sebelum masalahnya makin besar.",
+      "example_cn": "公司需要在问题变大前采取行动。",
+      "note": "高频搭配 mengambil tindakan。",
+      "formation": "常见搭配：mengambil tindakan、tindakan cepat。",
+      "synonym_note": "tindakan 指措施、行动；langkah 可指具体步骤",
+      "usage_note": "高频搭配 mengambil tindakan。",
+      "transfer_example": "Kalau pelanggan terus mengeluh, kita perlu mengambil tindakan.",
+      "transfer_cn": "如果顾客一直投诉，我们就需要采取措施。",
+      "transfer_register": "natural-spoken"
+    },
+    "kisah": {
+      "word": "kisah",
+      "cn": "故事；叙事",
+      "en": "story; tale",
+      "root": "kisah",
+      "root_cn": "故事",
+      "register": "neutral-literary",
+      "tags": [
+        "information",
+        "social"
+      ],
+      "example": "Dia menceritakan kisah tentang masa kecilnya di kampung.",
+      "example_cn": "他讲了自己在村里童年的故事。",
+      "note": "cerita 更日常；kisah 稍有叙事/文学感。",
+      "formation": "常见搭配：kisah hidup、kisah tentang。",
+      "synonym_note": "kisah 偏故事叙述；cerita 在日常聊天中更常用",
+      "usage_note": "cerita 更日常；kisah 稍有叙事/文学感。",
+      "transfer_example": "Dia pernah berbagi kisah hidupnya waktu kami ngobrol.",
+      "transfer_cn": "我们聊天时，他曾分享自己的经历。",
+      "transfer_register": "natural-spoken"
+    },
+    "ditemukan": {
+      "word": "ditemukan",
+      "cn": "被发现；被找到",
+      "en": "be found; be discovered",
+      "root": "temu",
+      "root_cn": "见；找到",
+      "register": "standard",
+      "tags": [
+        "information",
+        "incident"
+      ],
+      "example": "Dompet yang hilang akhirnya ditemukan di dekat pintu masuk.",
+      "example_cn": "丢失的钱包最后在入口附近被找到了。",
+      "note": "被动形式 di- + temukan；主动是 menemukan。",
+      "formation": "常见搭配：akhirnya ditemukan、ditemukan di。",
+      "synonym_note": "ditemukan 是被找到；menemukan 是主动找到",
+      "usage_note": "被动形式 di- + temukan；主动是 menemukan。",
+      "transfer_example": "Kunci motor saya akhirnya ditemukan di bawah meja.",
+      "transfer_cn": "我的摩托车钥匙终于在桌子底下找到了。",
+      "transfer_register": "natural-spoken"
+    },
+    "sebelah": {
+      "word": "sebelah",
+      "cn": "旁边；一侧",
+      "en": "side; next to",
+      "root": "sebelah",
+      "root_cn": "一侧",
+      "register": "neutral",
+      "tags": [
+        "location"
+      ],
+      "example": "Toko itu ada di sebelah bank.",
+      "example_cn": "那家店在银行旁边。",
+      "note": "常用 di sebelah；不要和 seberang“对面”混淆。",
+      "formation": "常见搭配：di sebelah、sebelah kanan。",
+      "synonym_note": "sebelah 是旁边/一侧；seberang 是对面",
+      "usage_note": "常用 di sebelah；不要和 seberang“对面”混淆。",
+      "transfer_example": "Warung yang enak itu ada di sebelah minimarket.",
+      "transfer_cn": "那家好吃的小店就在便利店旁边。",
+      "transfer_register": "natural-spoken"
+    },
+    "peristiwa": {
+      "word": "peristiwa",
+      "cn": "事件",
+      "en": "event; incident",
+      "root": "peristiwa",
+      "root_cn": "事件",
+      "register": "standard",
+      "tags": [
+        "information",
+        "incident"
+      ],
+      "example": "Peristiwa itu terjadi tadi malam dan membuat jalan sempat ditutup.",
+      "example_cn": "那件事昨晚发生，一度导致道路封闭。",
+      "note": "kejadian 更口语；peristiwa 更新闻/正式。",
+      "formation": "常见搭配：peristiwa penting、peristiwa itu。",
+      "synonym_note": "peristiwa 比 kejadian 更正式，新闻中常见",
+      "usage_note": "kejadian 更口语；peristiwa 更新闻/正式。",
+      "transfer_example": "Saya baru tahu tentang peristiwa itu dari berita pagi.",
+      "transfer_cn": "我是从早间新闻中才知道那件事的。",
+      "transfer_register": "natural-spoken"
+    },
+    "jarak": {
+      "word": "jarak",
+      "cn": "距离",
+      "en": "distance",
+      "root": "jarak",
+      "root_cn": "距离",
+      "register": "neutral",
+      "tags": [
+        "transport",
+        "location"
+      ],
+      "example": "Jarak dari rumah ke kantor sekitar sepuluh kilometer.",
+      "example_cn": "从家到办公室的距离大约十公里。",
+      "note": "常见 jarak dekat/jauh。",
+      "formation": "常见搭配：jarak dekat、jaraknya jauh。",
+      "synonym_note": "jarak 是距离；jauh 是远",
+      "usage_note": "常见 jarak dekat/jauh。",
+      "transfer_example": "Jarak dari apartemen ke kantor cuma lima kilometer.",
+      "transfer_cn": "从公寓到办公室只有五公里。",
+      "transfer_register": "natural-spoken"
+    },
+    "terbuat": {
+      "word": "terbuat",
+      "cn": "由……制成",
+      "en": "be made of/from",
+      "root": "buat",
+      "root_cn": "做；制作",
+      "register": "standard",
+      "tags": [
+        "description",
+        "object"
+      ],
+      "example": "Meja ini terbuat dari kayu.",
+      "example_cn": "这张桌子是木头做的。",
+      "note": "固定搭配 terbuat dari。",
+      "formation": "常见搭配：terbuat dari、bahan yang digunakan。",
+      "synonym_note": "terbuat dari 是由某材料制成；dibuat 是被制作",
+      "usage_note": "固定搭配 terbuat dari。",
+      "transfer_example": "Meja kecil ini terbuat dari kayu, bukan plastik.",
+      "transfer_cn": "这张小桌子是木头做的，不是塑料做的。",
+      "transfer_register": "natural-spoken"
+    },
+    "mewah": {
+      "word": "mewah",
+      "cn": "奢华的；豪华的",
+      "en": "luxurious",
+      "root": "mewah",
+      "root_cn": "奢华",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "home"
+      ],
+      "example": "Hotel itu terlihat mewah, tetapi harganya juga cukup tinggi.",
+      "example_cn": "那家酒店看起来很豪华，不过价格也相当高。",
+      "note": "可形容 rumah、hotel、mobil、gaya hidup。",
+      "formation": "常见搭配：hotel mewah、terlihat mewah。",
+      "synonym_note": "mewah 是豪华；mahal 只说价格贵",
+      "usage_note": "可形容 rumah、hotel、mobil、gaya hidup。",
+      "transfer_example": "Kamarnya sederhana, tetapi terlihat bersih dan nyaman, bukan mewah.",
+      "transfer_cn": "房间很简单，但干净舒服，并不豪华。",
+      "transfer_register": "natural-spoken"
+    },
+    "istimewa": {
+      "word": "istimewa",
+      "cn": "特别的；特殊的",
+      "en": "special",
+      "root": "istimewa",
+      "root_cn": "特别",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "social"
+      ],
+      "example": "Tidak perlu restoran mahal; makan bersama saja sudah terasa istimewa.",
+      "example_cn": "不需要昂贵餐厅，一起吃饭本身就很特别。",
+      "note": "khusus 更偏“专门的”；istimewa 带特别/珍贵感。",
+      "formation": "常见搭配：hari istimewa、sesuatu yang istimewa。",
+      "synonym_note": "istimewa 是特别、有意义；mahal 不一定 istimewa",
+      "usage_note": "khusus 更偏“专门的”；istimewa 带特别/珍贵感。",
+      "transfer_example": "Tidak perlu hadiah mahal, makan bersama saja sudah istimewa.",
+      "transfer_cn": "不需要昂贵礼物，一起吃顿饭就很特别。",
+      "transfer_register": "natural-spoken"
+    },
+    "menghasilkan": {
+      "word": "menghasilkan",
+      "cn": "产生；生产",
+      "en": "produce; generate",
+      "root": "hasil",
+      "root_cn": "结果；成果",
+      "register": "standard",
+      "tags": [
+        "work",
+        "action"
+      ],
+      "example": "Perubahan kecil itu menghasilkan dampak yang cukup baik.",
+      "example_cn": "那个小改动带来了不错的效果。",
+      "note": "常见 menghasilkan uang/produk/dampak；避免机械重复“menghasilkan hasil”。",
+      "formation": "常见搭配：menghasilkan barang、menghasilkan uang。",
+      "synonym_note": "menghasilkan 指产出结果；membuat 更泛指制作",
+      "usage_note": "常见 menghasilkan uang/produk/dampak；避免机械重复“menghasilkan hasil”。",
+      "transfer_example": "Mesin baru itu bisa menghasilkan lebih banyak produk setiap hari.",
+      "transfer_cn": "那台新机器每天能生产更多产品。",
+      "transfer_register": "natural-spoken"
+    },
+    "gelar": {
+      "word": "gelar",
+      "cn": "头衔；学位",
+      "en": "title; degree",
+      "root": "gelar",
+      "root_cn": "头衔；学位",
+      "register": "standard",
+      "tags": [
+        "work",
+        "education"
+      ],
+      "example": "Dia mendapat gelar sarjana setelah menyelesaikan kuliah.",
+      "example_cn": "他完成大学学业后获得了学士学位。",
+      "note": "也可表示称号；看上下文。",
+      "formation": "常见搭配：gelar sarjana、mendapatkan gelar。",
+      "synonym_note": "gelar 可指学位或头衔；不要与举办的 menggelar 混淆",
+      "usage_note": "也可表示称号；看上下文。",
+      "transfer_example": "Dia baru mendapatkan gelar sarjana tahun lalu.",
+      "transfer_cn": "他去年刚拿到本科学位。",
+      "transfer_register": "natural-spoken"
+    },
+    "yaitu": {
+      "word": "yaitu",
+      "cn": "即；也就是",
+      "en": "namely; that is",
+      "root": "yaitu",
+      "root_cn": "即",
+      "register": "standard",
+      "tags": [
+        "connector",
+        "information"
+      ],
+      "example": "Ada satu masalah utama, yaitu waktu pengiriman yang terlalu lama.",
+      "example_cn": "有一个主要问题，也就是配送时间太长。",
+      "note": "书面解释常用；口语更常 pakai maksudnya / yaitu 也可。",
+      "formation": "常见搭配：yaitu、contohnya。",
+      "synonym_note": "yaitu 用于解释或明确指代；yakni 意思接近",
+      "usage_note": "书面解释常用；口语更常 pakai maksudnya / yaitu 也可。",
+      "transfer_example": "Saya butuh satu dokumen lagi, yaitu surat dari pabrik.",
+      "transfer_cn": "我还需要一份文件，就是工厂出具的证明。",
+      "transfer_register": "natural-spoken"
+    },
+    "seluruh": {
+      "word": "seluruh",
+      "cn": "全部的；整个",
+      "en": "all; entire",
+      "root": "seluruh",
+      "root_cn": "全部",
+      "register": "standard",
+      "tags": [
+        "description"
+      ],
+      "example": "Seluruh tim sudah menerima informasi terbaru.",
+      "example_cn": "整个团队都收到了最新信息。",
+      "note": "后接名词：seluruh tim/Indonesia。",
+      "formation": "常见搭配：seluruh tim、seluruh Indonesia。",
+      "synonym_note": "seluruh 强调整体全部；semua 更通用",
+      "usage_note": "后接名词：seluruh tim/Indonesia。",
+      "transfer_example": "Seluruh tim sudah menerima jadwal rapat yang baru.",
+      "transfer_cn": "整个团队都收到了新的会议安排。",
+      "transfer_register": "natural-spoken"
+    },
+    "bentuk": {
+      "word": "bentuk",
+      "cn": "形状；形式",
+      "en": "shape; form",
+      "root": "bentuk",
+      "root_cn": "形状；形式",
+      "register": "neutral",
+      "tags": [
+        "description"
+      ],
+      "example": "Kotak ini punya bentuk yang sederhana dan praktis.",
+      "example_cn": "这个盒子的形状简单实用。",
+      "note": "可指实体形状，也可指抽象形式。",
+      "formation": "常见搭配：bentuk kotak、berbagai bentuk。",
+      "synonym_note": "bentuk 是形状、形式；ukuran 指尺寸",
+      "usage_note": "可指实体形状，也可指抽象形式。",
+      "transfer_example": "Saya lebih suka botol dengan bentuk yang sederhana.",
+      "transfer_cn": "我更喜欢外形简单的瓶子。",
+      "transfer_register": "natural-spoken"
+    },
+    "demi": {
+      "word": "demi",
+      "cn": "为了；为了……的利益",
+      "en": "for the sake of",
+      "root": "demi",
+      "root_cn": "为了",
+      "register": "standard",
+      "tags": [
+        "connector",
+        "purpose"
+      ],
+      "example": "Demi keamanan, pintu ini harus tetap tertutup.",
+      "example_cn": "为了安全，这扇门必须保持关闭。",
+      "note": "常接名词：demi keamanan/keluarga；比 buat/untuk 更正式。",
+      "formation": "常见搭配：demi keluarga、demi keamanan。",
+      "synonym_note": "demi 强调为了某种重要目的；untuk 使用范围更广",
+      "usage_note": "常接名词：demi keamanan/keluarga；比 buat/untuk 更正式。",
+      "transfer_example": "Demi keamanan, matikan listrik sebelum memeriksa kabel.",
+      "transfer_cn": "为了安全，检查电线前要先断电。",
+      "transfer_register": "natural-spoken"
+    },
+    "berat": {
+      "word": "berat",
+      "cn": "重的；严重的",
+      "en": "heavy; severe",
+      "root": "berat",
+      "root_cn": "重",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "health"
+      ],
+      "example": "Tas ini terlalu berat untuk dibawa sendirian.",
+      "example_cn": "这个包太重了，一个人拿不动。",
+      "note": "也可说 penyakit berat、tugas berat。",
+      "formation": "常见搭配：barang berat、terasa berat。",
+      "synonym_note": "berat 是重，也可表示困难；besar 是大",
+      "usage_note": "也可说 penyakit berat、tugas berat。",
+      "transfer_example": "Kotak ini terlalu berat kalau diangkat sendirian.",
+      "transfer_cn": "这个箱子一个人搬太重了。",
+      "transfer_register": "natural-spoken"
+    },
+    "kelompok": {
+      "word": "kelompok",
+      "cn": "群体；小组",
+      "en": "group",
+      "root": "kelompok",
+      "root_cn": "群体；小组",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "work"
+      ],
+      "example": "Kami dibagi menjadi tiga kelompok untuk tugas ini.",
+      "example_cn": "我们为了这项任务被分成三个小组。",
+      "note": "常见 kelompok kerja、kelompok kecil。",
+      "formation": "常见搭配：kelompok kecil、anggota kelompok。",
+      "synonym_note": "kelompok 是群体、小组；tim 常用于有共同任务的团队",
+      "usage_note": "常见 kelompok kerja、kelompok kecil。",
+      "transfer_example": "Kami dibagi menjadi dua kelompok untuk latihan bicara.",
+      "transfer_cn": "我们被分成两组练习口语。",
+      "transfer_register": "natural-spoken"
+    },
+    "mengenai": {
+      "word": "mengenai",
+      "cn": "关于；涉及",
+      "en": "regarding; concerning",
+      "root": "kena",
+      "root_cn": "碰到；涉及",
+      "register": "standard",
+      "tags": [
+        "communication",
+        "information"
+      ],
+      "example": "Saya mau bertanya mengenai jadwal besok.",
+      "example_cn": "我想问一下关于明天的安排。",
+      "note": "口语中 tentang 往往更自然。",
+      "formation": "常见搭配：mengenai masalah、informasi mengenai。",
+      "synonym_note": "mengenai 表示关于，较偏书面；soal 和 tentang 更口语",
+      "usage_note": "口语中 tentang 往往更自然。",
+      "transfer_example": "Saya mau tanya sedikit mengenai aturan impor yang baru.",
+      "transfer_cn": "我想简单问一下关于新进口规定的事。",
+      "transfer_register": "natural-spoken"
+    },
+    "langkah": {
+      "word": "langkah",
+      "cn": "步伐；步骤",
+      "en": "step",
+      "root": "langkah",
+      "root_cn": "步；步骤",
+      "register": "neutral",
+      "tags": [
+        "action",
+        "plan"
+      ],
+      "example": "Langkah pertama adalah memeriksa datanya sekali lagi.",
+      "example_cn": "第一步是再检查一次数据。",
+      "note": "抽象“步骤”非常常用。",
+      "formation": "常见搭配：langkah berikutnya、mengambil langkah。",
+      "synonym_note": "langkah 是一步、步骤；tindakan 是行动或措施",
+      "usage_note": "抽象“步骤”非常常用。",
+      "transfer_example": "Langkah berikutnya adalah mengecek dokumen dari pabrik.",
+      "transfer_cn": "下一步是核对工厂的文件。",
+      "transfer_register": "natural-spoken"
+    },
+    "meninggal": {
+      "word": "meninggal",
+      "cn": "去世；死亡",
+      "en": "die; pass away",
+      "root": "tinggal",
+      "root_cn": "留下；居住",
+      "register": "respectful-neutral",
+      "tags": [
+        "health",
+        "social"
+      ],
+      "example": "Kakeknya meninggal beberapa tahun lalu.",
+      "example_cn": "他的祖父几年前去世了。",
+      "note": "比 mati 更礼貌地用于人。",
+      "formation": "常见搭配：sudah meninggal、meninggal dunia。",
+      "synonym_note": "meninggal 是较委婉的去世；mati 通常不宜直接用于人的礼貌表达",
+      "usage_note": "比 mati 更礼貌地用于人。",
+      "transfer_example": "Kakeknya meninggal beberapa tahun yang lalu.",
+      "transfer_cn": "他的爷爷几年前去世了。",
+      "transfer_register": "natural-spoken"
+    },
+    "hak": {
+      "word": "hak",
+      "cn": "权利；权益",
+      "en": "right; entitlement",
+      "root": "hak",
+      "root_cn": "权利",
+      "register": "standard",
+      "tags": [
+        "law"
+      ],
+      "example": "Setiap pelanggan punya hak untuk mendapat informasi yang jelas.",
+      "example_cn": "每位顾客都有获得清楚信息的权利。",
+      "note": "不要把 hak 直接等同 hukum；hukum 是法律。",
+      "formation": "常见搭配：punya hak、hak pelanggan。",
+      "synonym_note": "hak 指权利；izin 指许可",
+      "usage_note": "不要把 hak 直接等同 hukum；hukum 是法律。",
+      "transfer_example": "Setiap pelanggan punya hak untuk menerima informasi yang jelas.",
+      "transfer_cn": "每位顾客都有权获得清晰的信息。",
+      "transfer_register": "natural-spoken"
+    },
+    "menatap": {
+      "word": "menatap",
+      "cn": "凝视；注视",
+      "en": "stare; gaze",
+      "root": "tatap",
+      "root_cn": "注视",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "action"
+      ],
+      "example": "Dia menatap layar beberapa detik sebelum menjawab.",
+      "example_cn": "他盯着屏幕看了几秒才回答。",
+      "note": "比 melihat 更强调持续注视。",
+      "formation": "常见搭配：menatap wajah、saling menatap。",
+      "synonym_note": "menatap 是凝视；melihat 是看见或观看",
+      "usage_note": "比 melihat 更强调持续注视。",
+      "transfer_example": "Dia hanya menatap layar tanpa mengatakan apa-apa.",
+      "transfer_cn": "他只是盯着屏幕，一句话也没说。",
+      "transfer_register": "natural-spoken"
+    },
+    "parah": {
+      "word": "parah",
+      "cn": "严重的；很糟",
+      "en": "severe; awful",
+      "root": "parah",
+      "root_cn": "严重",
+      "register": "neutral-spoken",
+      "tags": [
+        "health",
+        "problem"
+      ],
+      "example": "Macetnya parah sekali sore ini.",
+      "example_cn": "今天下午堵车特别严重。",
+      "note": "口语很常见，可用于病情、堵车、状况。",
+      "formation": "常见搭配：makin parah、cukup parah。",
+      "synonym_note": "parah 指状况严重；buruk 泛指不好",
+      "usage_note": "口语很常见，可用于病情、堵车、状况。",
+      "transfer_example": "Kalau sakitnya makin parah, sebaiknya periksa ke dokter.",
+      "transfer_cn": "如果病情越来越重，最好去看医生。",
+      "transfer_register": "natural-spoken"
+    },
+    "bau": {
+      "word": "bau",
+      "cn": "气味；臭的",
+      "en": "smell; odor",
+      "root": "bau",
+      "root_cn": "气味",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "home"
+      ],
+      "example": "Ada bau aneh dari dapur, jadi saya membuka jendela.",
+      "example_cn": "厨房有股怪味，所以我打开了窗户。",
+      "note": "bau 可中性“气味”，语境中也常指臭味。",
+      "formation": "常见搭配：bau aneh、bau tidak sedap。",
+      "synonym_note": "bau 可以指气味，但具体说臭常用 bau tidak sedap",
+      "usage_note": "bau 可中性“气味”，语境中也常指臭味。",
+      "transfer_example": "Ada bau aneh dari AC, jadi saya langsung mematikannya.",
+      "transfer_cn": "空调传出奇怪的气味，所以我立刻关掉了。",
+      "transfer_register": "natural-spoken"
+    },
+    "memenuhi": {
+      "word": "memenuhi",
+      "cn": "满足；履行；填满",
+      "en": "fulfill; meet; fill",
+      "root": "penuh",
+      "root_cn": "满",
+      "register": "standard",
+      "tags": [
+        "work",
+        "action"
+      ],
+      "example": "Produk ini sudah memenuhi semua persyaratan dasar.",
+      "example_cn": "这个产品已经满足所有基本要求。",
+      "note": "常见 memenuhi syarat/kebutuhan/janji。",
+      "formation": "常见搭配：memenuhi syarat、memenuhi kebutuhan。",
+      "synonym_note": "memenuhi 是满足、符合；mengisi 是填满或填写",
+      "usage_note": "常见 memenuhi syarat/kebutuhan/janji。",
+      "transfer_example": "Produk ini harus memenuhi semua syarat sebelum dijual.",
+      "transfer_cn": "这款产品销售前必须符合所有要求。",
+      "transfer_register": "natural-spoken"
+    },
+    "rupanya": {
+      "word": "rupanya",
+      "cn": "看来；原来",
+      "en": "apparently; it turns out",
+      "root": "rupa",
+      "root_cn": "样子；外观",
+      "register": "neutral",
+      "tags": [
+        "connector",
+        "information"
+      ],
+      "example": "Rupanya toko itu tutup lebih awal hari ini.",
+      "example_cn": "原来那家店今天提前关门了。",
+      "note": "与 ternyata 接近；rupanya 带“看来/原来”。",
+      "formation": "常见搭配：rupanya、ternyata。",
+      "synonym_note": "rupanya 表示后来才发现；ternyata 日常也很常用",
+      "usage_note": "与 ternyata 接近；rupanya 带“看来/原来”。",
+      "transfer_example": "Rupanya dia sudah pulang sebelum saya datang.",
+      "transfer_cn": "原来我来之前他就已经回去了。",
+      "transfer_register": "natural-spoken"
+    },
+    "berkencan": {
+      "word": "berkencan",
+      "cn": "约会",
+      "en": "date; go on a date",
+      "root": "kencan",
+      "root_cn": "约会",
+      "register": "neutral",
+      "tags": [
+        "relationship",
+        "social"
+      ],
+      "example": "Mereka sudah berkencan beberapa bulan.",
+      "example_cn": "他们已经约会几个月了。",
+      "note": "比 jalan bareng 更明确是恋爱约会。",
+      "formation": "常见搭配：berkencan dengan、pergi berkencan。",
+      "synonym_note": "berkencan 指约会；ketemu 可以只是见面",
+      "usage_note": "比 jalan bareng 更明确是恋爱约会。",
+      "transfer_example": "Mereka baru mulai berkencan bulan lalu.",
+      "transfer_cn": "他们上个月才开始约会。",
+      "transfer_register": "natural-spoken"
+    },
+    "berpartisipasi": {
+      "word": "berpartisipasi",
+      "cn": "参与",
+      "en": "participate",
+      "root": "partisipasi",
+      "root_cn": "参与",
+      "register": "standard",
+      "tags": [
+        "work",
+        "social"
+      ],
+      "example": "Semua anggota diminta berpartisipasi dalam kegiatan itu.",
+      "example_cn": "所有成员都被要求参加那项活动。",
+      "note": "较正式；口语 sering pakai ikut。",
+      "formation": "常见搭配：berpartisipasi dalam、ikut serta。",
+      "synonym_note": "berpartisipasi 偏正式；ikut 是更常见的口语参与",
+      "usage_note": "较正式；口语 sering pakai ikut。",
+      "transfer_example": "Saya ingin berpartisipasi dalam acara kantor minggu depan.",
+      "transfer_cn": "我想参加下周的公司活动。",
+      "transfer_register": "natural-spoken"
+    },
+    "gengsi": {
+      "word": "gengsi",
+      "cn": "爱面子；面子心理",
+      "en": "prestige; concern about image",
+      "root": "gengsi",
+      "root_cn": "面子；声望",
+      "register": "colloquial-neutral",
+      "tags": [
+        "social",
+        "feeling"
+      ],
+      "example": "Dia sebenarnya mau bertanya, tapi gengsi.",
+      "example_cn": "他其实想问，但碍于面子。",
+      "note": "高频口语；常说 karena gengsi。",
+      "formation": "常见搭配：gengsi、terlalu gengsi。",
+      "synonym_note": "gengsi 指爱面子、不愿丢脸；malu 更偏害羞或羞愧",
+      "usage_note": "高频口语；常说 karena gengsi。",
+      "transfer_example": "Dia sebenarnya mau minta bantuan, tapi masih gengsi.",
+      "transfer_cn": "他其实想求助，但还是拉不下面子。",
+      "transfer_register": "natural-spoken"
+    },
+    "kepo": {
+      "word": "kepo",
+      "cn": "爱打听；好奇过头",
+      "en": "nosy; overly curious",
+      "root": "kepo",
+      "root_cn": "爱打听",
+      "register": "colloquial",
+      "tags": [
+        "social",
+        "communication"
+      ],
+      "example": "Jangan kepo soal urusan pribadi orang lain.",
+      "example_cn": "别老打听别人的私事。",
+      "note": "非常口语，带一点调侃或负面。",
+      "formation": "常见搭配：jangan kepo、kepo banget。",
+      "synonym_note": "kepo 是口语中爱打听别人私事；penasaran 只是好奇",
+      "usage_note": "非常口语，带一点调侃或负面。",
+      "transfer_example": "Jangan terlalu kepo soal hubungan orang lain, ya.",
+      "transfer_cn": "别太爱打听别人的感情私事哦。",
+      "transfer_register": "natural-spoken"
+    },
+    "melempar": {
+      "word": "melempar",
+      "cn": "扔；投掷",
+      "en": "throw",
+      "root": "lempar",
+      "root_cn": "扔；投",
+      "register": "neutral",
+      "tags": [
+        "action"
+      ],
+      "example": "Jangan melempar sampah dari kendaraan.",
+      "example_cn": "不要从车里往外扔垃圾。",
+      "note": "meN- + lempar。",
+      "formation": "常见搭配：melempar bola、melempar sesuatu。",
+      "synonym_note": "melempar 是扔出去；menaruh 是放下",
+      "usage_note": "meN- + lempar。",
+      "transfer_example": "Tolong jangan melempar barang dari atas tangga.",
+      "transfer_cn": "请不要从楼梯上方扔东西。",
+      "transfer_register": "natural-spoken"
+    },
+    "mematuhi": {
+      "word": "mematuhi",
+      "cn": "遵守；服从",
+      "en": "comply with; obey",
+      "root": "patuh",
+      "root_cn": "遵守；服从",
+      "register": "standard",
+      "tags": [
+        "law",
+        "work"
+      ],
+      "example": "Semua karyawan harus mematuhi aturan keselamatan.",
+      "example_cn": "所有员工都必须遵守安全规定。",
+      "note": "常搭配 mematuhi aturan/peraturan。",
+      "formation": "常见搭配：mematuhi aturan、mematuhi prosedur。",
+      "synonym_note": "mematuhi 指遵守规定；mengikuti 泛指跟随、按照",
+      "usage_note": "常搭配 mematuhi aturan/peraturan。",
+      "transfer_example": "Semua staf harus mematuhi aturan keselamatan gudang.",
+      "transfer_cn": "所有员工都必须遵守仓库安全规定。",
+      "transfer_register": "natural-spoken"
+    },
+    "memindahkan": {
+      "word": "memindahkan",
+      "cn": "移动；转移",
+      "en": "move; transfer",
+      "root": "pindah",
+      "root_cn": "移动；搬迁",
+      "register": "neutral",
+      "tags": [
+        "action",
+        "home",
+        "logistics"
+      ],
+      "example": "Kami memindahkan kotak itu ke ruang sebelah.",
+      "example_cn": "我们把那个箱子搬到隔壁房间。",
+      "note": "使动：让东西移动；pindah 可指自己搬家/移动。",
+      "formation": "常见搭配：memindahkan barang、memindahkan jadwal。",
+      "synonym_note": "memindahkan 是把东西/日程移动；pindah 是搬迁、转移",
+      "usage_note": "使动：让东西移动；pindah 可指自己搬家/移动。",
+      "transfer_example": "Bisa tolong memindahkan rapat ke hari Jumat?",
+      "transfer_cn": "能麻烦把会议改到星期五吗？",
+      "transfer_register": "natural-spoken"
+    },
+    "mengantar": {
+      "word": "mengantar",
+      "cn": "送；递送；送人",
+      "en": "deliver; take someone",
+      "root": "antar",
+      "root_cn": "送；递",
+      "register": "neutral",
+      "tags": [
+        "transport",
+        "logistics",
+        "service"
+      ],
+      "example": "Saya mengantar teman ke stasiun pagi ini.",
+      "example_cn": "今天早上我送朋友去车站。",
+      "note": "与 menjemput“接”相对。",
+      "formation": "常见搭配：mengantar paket、mengantar teman。",
+      "synonym_note": "mengantar 指送人/物到目的地；mengirim 偏寄送",
+      "usage_note": "与 menjemput“接”相对。",
+      "transfer_example": "Besok saya mau mengantar teman ke bandara.",
+      "transfer_cn": "明天我打算送朋友去机场。",
+      "transfer_register": "natural-spoken"
+    },
+    "mengetik": {
+      "word": "mengetik",
+      "cn": "打字；输入",
+      "en": "type",
+      "root": "ketik",
+      "root_cn": "打字",
+      "register": "neutral",
+      "tags": [
+        "digital",
+        "work"
+      ],
+      "example": "Saya sedang mengetik laporan di laptop.",
+      "example_cn": "我正在笔记本电脑上打报告。",
+      "note": "常见 mengetik pesan/laporan。",
+      "formation": "常见搭配：mengetik pesan、mengetik laporan。",
+      "synonym_note": "mengetik 是打字；menulis 是写",
+      "usage_note": "常见 mengetik pesan/laporan。",
+      "transfer_example": "Saya lagi mengetik balasan, tunggu sebentar ya.",
+      "transfer_cn": "我正在打回复，稍等一下。",
+      "transfer_register": "natural-spoken"
+    },
+    "menggosok": {
+      "word": "menggosok",
+      "cn": "擦；刷；摩擦",
+      "en": "rub; scrub; brush",
+      "root": "gosok",
+      "root_cn": "擦；刷",
+      "register": "neutral",
+      "tags": [
+        "home",
+        "action"
+      ],
+      "example": "Dia menggosok meja itu sampai bersih.",
+      "example_cn": "他把桌子擦到干净。",
+      "note": "也见 gosok gigi“刷牙”。",
+      "formation": "常见搭配：menggosok gigi、menggosok noda。",
+      "synonym_note": "menggosok 是摩擦、刷洗；membersihkan 泛指清洁",
+      "usage_note": "也见 gosok gigi“刷牙”。",
+      "transfer_example": "Jangan menggosok noda itu terlalu keras.",
+      "transfer_cn": "别把那块污渍擦得太用力。",
+      "transfer_register": "natural-spoken"
+    },
+    "mengunggah": {
+      "word": "mengunggah",
+      "cn": "上传",
+      "en": "upload",
+      "root": "unggah",
+      "root_cn": "上传",
+      "register": "standard",
+      "tags": [
+        "digital"
+      ],
+      "example": "Saya mengunggah file itu ke sistem tadi pagi.",
+      "example_cn": "我今天早上把文件上传到系统里。",
+      "note": "标准词；日常常直接说 upload。",
+      "formation": "常见搭配：mengunggah foto、mengunggah berkas。",
+      "synonym_note": "mengunggah 是上传，口语也常说 upload",
+      "usage_note": "标准词；日常常直接说 upload。",
+      "transfer_example": "Sebelum mengunggah foto, cek dulu apakah sudah jelas.",
+      "transfer_cn": "上传图片前先检查清不清楚。",
+      "transfer_register": "natural-spoken"
+    },
+    "menyalakan": {
+      "word": "menyalakan",
+      "cn": "打开；点燃",
+      "en": "turn on; light",
+      "root": "nyala",
+      "root_cn": "亮；燃烧",
+      "register": "neutral",
+      "tags": [
+        "digital",
+        "home",
+        "action"
+      ],
+      "example": "Tolong menyalakan lampu sebelum masuk.",
+      "example_cn": "进去之前请把灯打开。",
+      "note": "用于灯、电器、发动机；相反 mematikan。",
+      "formation": "常见搭配：menyalakan lampu、menyalakan AC。",
+      "synonym_note": "menyalakan 是开启电器/点燃；membuka 通常是打开门、文件",
+      "usage_note": "用于灯、电器、发动机；相反 mematikan。",
+      "transfer_example": "Boleh tolong menyalakan lampu ruang tamu?",
+      "transfer_cn": "能麻烦打开客厅的灯吗？",
+      "transfer_register": "natural-spoken"
+    },
+    "menyembunyikan": {
+      "word": "menyembunyikan",
+      "cn": "隐藏；藏起来",
+      "en": "hide",
+      "root": "sembunyi",
+      "root_cn": "隐藏",
+      "register": "neutral",
+      "tags": [
+        "action",
+        "social"
+      ],
+      "example": "Dia menyembunyikan hadiah itu di dalam lemari.",
+      "example_cn": "他把礼物藏在柜子里。",
+      "note": "meN- + sembunyi + -kan。",
+      "formation": "常见搭配：menyembunyikan sesuatu、menyembunyikan informasi。",
+      "synonym_note": "menyembunyikan 是隐藏；menyimpan 指存放",
+      "usage_note": "meN- + sembunyi + -kan。",
+      "transfer_example": "Jangan menyembunyikan masalah itu dari tim.",
+      "transfer_cn": "别向团队隐瞒这个问题。",
+      "transfer_register": "natural-spoken"
+    },
+    "nyesel": {
+      "word": "nyesel",
+      "cn": "后悔了",
+      "en": "regret",
+      "root": "sesal",
+      "root_cn": "后悔",
+      "register": "colloquial",
+      "tags": [
+        "feeling",
+        "social"
+      ],
+      "example": "Aku nyesel beli barang itu tanpa cek dulu.",
+      "example_cn": "我后悔没先检查就买了那个东西。",
+      "note": "口语；标准形式 menyesal。",
+      "formation": "常见搭配：nyesel banget、bikin nyesel。",
+      "synonym_note": "nyesel 是 menyesal 的口语形式，表示后悔",
+      "usage_note": "口语；标准形式 menyesal。",
+      "transfer_example": "Aku nyesel nggak berangkat lebih pagi tadi.",
+      "transfer_cn": "我后悔刚才没有早点出发。",
+      "transfer_register": "natural-spoken"
+    },
+    "selamanya": {
+      "word": "selamanya",
+      "cn": "永远；一直",
+      "en": "forever",
+      "root": "lama",
+      "root_cn": "久；长时间",
+      "register": "neutral",
+      "tags": [
+        "time",
+        "relationship"
+      ],
+      "example": "Saya tidak mau tinggal di kota ini selamanya.",
+      "example_cn": "我不想永远住在这个城市。",
+      "note": "常和 tidak/untuk selamanya 搭配。",
+      "formation": "常见搭配：untuk selamanya、nggak selamanya。",
+      "synonym_note": "selamanya 指永远；selama 后常接持续时长",
+      "usage_note": "常和 tidak/untuk selamanya 搭配。",
+      "transfer_example": "Kita nggak harus tinggal di kota yang sama selamanya.",
+      "transfer_cn": "我们不必永远住在同一座城市。",
+      "transfer_register": "natural-spoken"
+    },
+    "setia": {
+      "word": "setia",
+      "cn": "忠诚的；专一的",
+      "en": "loyal; faithful",
+      "root": "setia",
+      "root_cn": "忠诚",
+      "register": "neutral",
+      "tags": [
+        "relationship",
+        "social"
+      ],
+      "example": "Dia tetap setia pada keputusan yang sudah dibuat bersama.",
+      "example_cn": "他仍然忠于双方已经做出的决定。",
+      "note": "可用于伴侣、朋友、原则、品牌等。",
+      "formation": "常见搭配：tetap setia、pasangan setia。",
+      "synonym_note": "setia 强调忠诚；jujur 强调诚实",
+      "usage_note": "可用于伴侣、朋友、原则、品牌等。",
+      "transfer_example": "Menurutku, komunikasi yang baik penting agar pasangan tetap setia.",
+      "transfer_cn": "我觉得良好沟通对于伴侣保持忠诚很重要。",
+      "transfer_register": "natural-spoken"
+    },
+    "terpeleset": {
+      "word": "terpeleset",
+      "cn": "滑倒；脚下一滑",
+      "en": "slip",
+      "root": "peleset",
+      "root_cn": "滑；失足",
+      "register": "neutral",
+      "tags": [
+        "movement",
+        "incident"
+      ],
+      "example": "Saya hampir terpeleset karena lantainya basah.",
+      "example_cn": "因为地面湿，我差点滑倒。",
+      "note": "常见 hampir terpeleset。",
+      "formation": "常见搭配：terpeleset di lantai、hampir terpeleset。",
+      "synonym_note": "terpeleset 是滑倒/打滑；jatuh 泛指摔倒",
+      "usage_note": "常见 hampir terpeleset。",
+      "transfer_example": "Hati-hati, lantainya basah, nanti kamu terpeleset.",
+      "transfer_cn": "小心，地板湿了，等下你会滑倒。",
+      "transfer_register": "natural-spoken"
+    },
+    "mengembangkan": {
+      "word": "mengembangkan",
+      "cn": "发展；开发",
+      "en": "develop",
+      "root": "kembang",
+      "root_cn": "发展；展开",
+      "register": "standard",
+      "tags": [
+        "work",
+        "action"
+      ],
+      "example": "Tim kami sedang mengembangkan fitur baru untuk aplikasi.",
+      "example_cn": "我们团队正在为应用开发新功能。",
+      "note": "常见 mengembangkan bisnis/produk/kemampuan。",
+      "formation": "常见搭配：mengembangkan usaha、mengembangkan sistem。",
+      "synonym_note": "mengembangkan 是发展、拓展；membangun 强调建设",
+      "usage_note": "常见 mengembangkan bisnis/produk/kemampuan。",
+      "transfer_example": "Perusahaan ingin mengembangkan bisnisnya di Indonesia.",
+      "transfer_cn": "公司想拓展在印尼的业务。",
+      "transfer_register": "natural-spoken"
+    },
+    "menguasai": {
+      "word": "menguasai",
+      "cn": "掌握；控制",
+      "en": "master; control",
+      "root": "kuasa",
+      "root_cn": "权力；掌控",
+      "register": "standard",
+      "tags": [
+        "work",
+        "learning"
+      ],
+      "example": "Saya belum menguasai semua kosakata ini.",
+      "example_cn": "我还没有掌握所有这些词汇。",
+      "note": "学习语境常表示掌握；也可表示控制。",
+      "formation": "常见搭配：menguasai bahasa、menguasai bidang。",
+      "synonym_note": "menguasai 是熟练掌握，也可指控制；tahu 只是知道",
+      "usage_note": "学习语境常表示掌握；也可表示控制。",
+      "transfer_example": "Butuh waktu untuk benar-benar menguasai bahasa Indonesia.",
+      "transfer_cn": "真正掌握印尼语需要时间。",
+      "transfer_register": "natural-spoken"
+    },
+    "kenal": {
+      "word": "kenal",
+      "cn": "认识；熟悉",
+      "en": "know; be acquainted with",
+      "root": "kenal",
+      "root_cn": "认识",
+      "register": "neutral-spoken",
+      "tags": [
+        "social",
+        "communication"
+      ],
+      "example": "Saya kenal dia dari tempat kerja lama.",
+      "example_cn": "我是在以前的工作地方认识他的。",
+      "note": "kenal 人；tahu/mengetahui 事实。",
+      "formation": "常见搭配：sudah kenal、belum kenal。",
+      "synonym_note": "kenal 是认识某人；tahu 是知道信息",
+      "usage_note": "kenal 人；tahu/mengetahui 事实。",
+      "transfer_example": "Aku belum kenal orang itu, kamu pernah ketemu dia?",
+      "transfer_cn": "我还不认识那个人，你见过他吗？",
+      "transfer_register": "natural-spoken"
+    },
+    "kebutuhan": {
+      "word": "kebutuhan",
+      "cn": "需求；需要",
+      "en": "need; requirement",
+      "root": "butuh",
+      "root_cn": "需要",
+      "register": "standard",
+      "tags": [
+        "shopping",
+        "work"
+      ],
+      "example": "Kami memilih produk berdasarkan kebutuhan, bukan hanya harga.",
+      "example_cn": "我们根据需求选择产品，而不只看价格。",
+      "note": "ke- + butuh + -an；名词。",
+      "formation": "常见搭配：kebutuhan sehari-hari、sesuai kebutuhan。",
+      "synonym_note": "kebutuhan 是需求；keinginan 是愿望",
+      "usage_note": "ke- + butuh + -an；名词。",
+      "transfer_example": "Saya beli barang sesuai kebutuhan, bukan cuma karena diskon.",
+      "transfer_cn": "我按需要买东西，而不是仅仅因为打折。",
+      "transfer_register": "natural-spoken"
+    },
+    "apabila": {
+      "word": "apabila",
+      "cn": "如果；当……时",
+      "en": "if; when",
+      "root": "apabila",
+      "root_cn": "如果",
+      "register": "formal",
+      "tags": [
+        "connector"
+      ],
+      "example": "Apabila ada perubahan, kami akan memberi tahu lebih dulu.",
+      "example_cn": "如果有变化，我们会提前通知。",
+      "note": "较正式；日常通常用 kalau/jika。",
+      "formation": "常见搭配：apabila diperlukan、apabila ada masalah。",
+      "synonym_note": "apabila 是较正式的如果；kalau 更常见于日常口语",
+      "usage_note": "较正式；日常通常用 kalau/jika。",
+      "transfer_example": "Apabila ada perubahan jadwal, kami akan memberi kabar.",
+      "transfer_cn": "如果日程有变化，我们会通知。",
+      "transfer_register": "natural-spoken"
+    },
+    "peduli": {
+      "word": "peduli",
+      "cn": "在意；关心",
+      "en": "care; be concerned",
+      "root": "peduli",
+      "root_cn": "关心",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "feeling"
+      ],
+      "example": "Dia peduli pada keluarganya meskipun jarang mengatakannya.",
+      "example_cn": "他很关心家人，尽管很少说出来。",
+      "note": "常见 peduli pada/terhadap。",
+      "formation": "常见搭配：peduli sama、nggak peduli。",
+      "synonym_note": "peduli 是在意、关心；perhatian 可指关注、体贴",
+      "usage_note": "常见 peduli pada/terhadap。",
+      "transfer_example": "Aku peduli sama kondisimu, makanya aku tanya.",
+      "transfer_cn": "我关心你的情况，所以才问你。",
+      "transfer_register": "natural-spoken"
+    },
+    "mengajak": {
+      "word": "mengajak",
+      "cn": "邀请；叫上",
+      "en": "invite; ask along",
+      "root": "ajak",
+      "root_cn": "邀请",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "communication"
+      ],
+      "example": "Teman saya mengajak makan siang bersama.",
+      "example_cn": "朋友叫我一起吃午饭。",
+      "note": "mengajak + 人 + 动作。",
+      "formation": "常见搭配：mengajak teman、mengajak makan。",
+      "synonym_note": "mengajak 是邀请一起做某事；mengundang 偏正式邀请",
+      "usage_note": "mengajak + 人 + 动作。",
+      "transfer_example": "Aku mau mengajak dia makan malam akhir pekan ini.",
+      "transfer_cn": "我想约她这周末一起吃晚饭。",
+      "transfer_register": "natural-spoken"
+    },
+    "menyediakan": {
+      "word": "menyediakan",
+      "cn": "提供；准备好",
+      "en": "provide; supply",
+      "root": "sedia",
+      "root_cn": "准备；可用",
+      "register": "standard",
+      "tags": [
+        "service",
+        "work"
+      ],
+      "example": "Hotel itu menyediakan air minum gratis di kamar.",
+      "example_cn": "那家酒店在房间里提供免费饮用水。",
+      "note": "提供某物；tersedia=有供应/可用。",
+      "formation": "常见搭配：menyediakan tempat、menyediakan informasi。",
+      "synonym_note": "menyediakan 是提供或准备好；memberi 是给予",
+      "usage_note": "提供某物；tersedia=有供应/可用。",
+      "transfer_example": "Hotel ini menyediakan air minum gratis di kamar.",
+      "transfer_cn": "这家酒店在房间里提供免费饮用水。",
+      "transfer_register": "natural-spoken"
+    },
+    "kecewa": {
+      "word": "kecewa",
+      "cn": "失望",
+      "en": "disappointed",
+      "root": "kecewa",
+      "root_cn": "失望",
+      "register": "neutral",
+      "tags": [
+        "feeling",
+        "social"
+      ],
+      "example": "Saya agak kecewa karena pesanan datang terlambat.",
+      "example_cn": "因为订单到得晚，我有点失望。",
+      "note": "kecewa dengan/karena...。",
+      "formation": "常见搭配：merasa kecewa、kecewa dengan。",
+      "synonym_note": "kecewa 是失望；sedih 是难过",
+      "usage_note": "kecewa dengan/karena...。",
+      "transfer_example": "Saya agak kecewa karena barangnya datang terlambat.",
+      "transfer_cn": "东西送晚了，我有点失望。",
+      "transfer_register": "natural-spoken"
+    },
+    "rapi": {
+      "word": "rapi",
+      "cn": "整齐的；利落的",
+      "en": "neat; tidy",
+      "root": "rapi",
+      "root_cn": "整齐",
+      "register": "neutral",
+      "tags": [
+        "home",
+        "description"
+      ],
+      "example": "Setelah meja dirapikan, ruangan terlihat lebih rapi.",
+      "example_cn": "桌子整理后，房间看起来更整齐。",
+      "note": "常见 rapi dan bersih。",
+      "formation": "常见搭配：terlihat rapi、merapikan kamar。",
+      "synonym_note": "rapi 是整齐；bersih 是干净",
+      "usage_note": "常见 rapi dan bersih。",
+      "transfer_example": "Sebelum tamu datang, saya ingin kamar terlihat rapi.",
+      "transfer_cn": "客人来之前，我想让房间看起来整齐。",
+      "transfer_register": "natural-spoken"
+    },
+    "taruh": {
+      "word": "taruh",
+      "cn": "放；放置",
+      "en": "put; place",
+      "root": "taruh",
+      "root_cn": "放",
+      "register": "spoken-neutral",
+      "tags": [
+        "home",
+        "action"
+      ],
+      "example": "Taruh tasnya di kursi saja.",
+      "example_cn": "把包放椅子上就行。",
+      "note": "日常口语比 meletakkan 更自然。",
+      "formation": "常见搭配：taruh di、taruh dulu。",
+      "synonym_note": "taruh 是口语常用的放；meletakkan 更中性/书面",
+      "usage_note": "日常口语比 meletakkan 更自然。",
+      "transfer_example": "Taruh tasnya di sini dulu, nanti kita berangkat.",
+      "transfer_cn": "先把包放这儿，等会儿我们出发。",
+      "transfer_register": "natural-spoken"
+    },
+    "cemburu": {
+      "word": "cemburu",
+      "cn": "嫉妒；吃醋",
+      "en": "jealous",
+      "root": "cemburu",
+      "root_cn": "嫉妒",
+      "register": "neutral",
+      "tags": [
+        "relationship",
+        "feeling"
+      ],
+      "example": "Dia cemburu karena pasangannya terlalu dekat dengan orang lain.",
+      "example_cn": "他因为伴侣和别人太亲近而吃醋。",
+      "note": "关系语境常指吃醋。",
+      "formation": "常见搭配：merasa cemburu、bikin cemburu。",
+      "synonym_note": "cemburu 是吃醋、嫉妒；iri 更泛指羡慕或妒忌",
+      "usage_note": "关系语境常指吃醋。",
+      "transfer_example": "Dia cemburu waktu melihat pasangannya terlalu dekat dengan orang lain.",
+      "transfer_cn": "看到伴侣和别人走得太近，她吃醋了。",
+      "transfer_register": "natural-spoken"
+    },
+    "cemas": {
+      "word": "cemas",
+      "cn": "焦虑；担忧",
+      "en": "anxious; worried",
+      "root": "cemas",
+      "root_cn": "焦虑",
+      "register": "neutral",
+      "tags": [
+        "feeling",
+        "health"
+      ],
+      "example": "Saya sempat cemas ketika tidak bisa menghubunginya.",
+      "example_cn": "联系不上他时，我一度很担心。",
+      "note": "比 khawatir 更强调焦虑状态。",
+      "formation": "常见搭配：merasa cemas、terlalu cemas。",
+      "synonym_note": "cemas 是焦虑不安；khawatir 偏担心某件事",
+      "usage_note": "比 khawatir 更强调焦虑状态。",
+      "transfer_example": "Jangan terlalu cemas, kita tunggu hasilnya dulu.",
+      "transfer_cn": "别太焦虑，我们先等结果。",
+      "transfer_register": "natural-spoken"
+    },
+    "lega": {
+      "word": "lega",
+      "cn": "松一口气；宽慰",
+      "en": "relieved",
+      "root": "lega",
+      "root_cn": "宽慰",
+      "register": "neutral",
+      "tags": [
+        "feeling"
+      ],
+      "example": "Saya merasa lega setelah mendengar hasilnya baik.",
+      "example_cn": "听到结果不错后，我松了一口气。",
+      "note": "高频搭配 merasa lega。",
+      "formation": "常见搭配：merasa lega、akhirnya lega。",
+      "synonym_note": "lega 是松了口气；senang 泛指高兴",
+      "usage_note": "高频搭配 merasa lega。",
+      "transfer_example": "Saya merasa lega setelah tahu ayahnya sudah boleh pulang.",
+      "transfer_cn": "得知她爸爸已经可以回家后，我松了口气。",
+      "transfer_register": "natural-spoken"
+    },
+    "keras kepala": {
+      "word": "keras kepala",
+      "cn": "固执的",
+      "en": "stubborn",
+      "root": "keras kepala",
+      "root_cn": "固执",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "description"
+      ],
+      "example": "Dia agak keras kepala dan sulit menerima saran.",
+      "example_cn": "他有点固执，很难接受建议。",
+      "note": "固定表达；语气偏负面。",
+      "formation": "常见搭配：orang keras kepala、jangan keras kepala。",
+      "synonym_note": "keras kepala 是固执；tegas 是坚定、果断",
+      "usage_note": "固定表达；语气偏负面。",
+      "transfer_example": "Dia memang agak keras kepala, tapi mau mendengarkan kalau dijelaskan baik-baik.",
+      "transfer_cn": "他确实有点固执，但好好解释还是愿意听。",
+      "transfer_register": "natural-spoken"
+    },
+    "luar biasa": {
+      "word": "luar biasa",
+      "cn": "非凡的；很棒",
+      "en": "extraordinary; amazing",
+      "root": "luar biasa",
+      "root_cn": "非凡",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "social"
+      ],
+      "example": "Pelayanannya luar biasa cepat hari ini.",
+      "example_cn": "今天的服务快得出乎意料。",
+      "note": "可赞美也可强调程度。",
+      "formation": "常见搭配：hasil luar biasa、luar biasa bagus。",
+      "synonym_note": "luar biasa 强调不一般；bagus 只是好",
+      "usage_note": "可赞美也可强调程度。",
+      "transfer_example": "Pemandangan di sana luar biasa, terutama saat matahari terbit.",
+      "transfer_cn": "那里的风景真棒，尤其是日出时。",
+      "transfer_register": "natural-spoken"
+    },
+    "sambil": {
+      "word": "sambil",
+      "cn": "一边……一边……",
+      "en": "while; at the same time",
+      "root": "sambil",
+      "root_cn": "同时",
+      "register": "neutral-spoken",
+      "tags": [
+        "connector",
+        "daily"
+      ],
+      "example": "Saya minum kopi sambil membaca pesan.",
+      "example_cn": "我一边喝咖啡一边看消息。",
+      "note": "日常比 seraya 自然得多。",
+      "formation": "常见搭配：sambil makan、sambil menunggu。",
+      "synonym_note": "sambil 表示同时做两件事；seraya 稍偏书面",
+      "usage_note": "日常比 seraya 自然得多。",
+      "transfer_example": "Aku mau dengar podcast sambil jalan santai.",
+      "transfer_cn": "我想一边散步一边听播客。",
+      "transfer_register": "natural-spoken"
+    },
+    "seberapa": {
+      "word": "seberapa",
+      "cn": "多么；多大程度",
+      "en": "how much; how far",
+      "root": "seberapa",
+      "root_cn": "多大程度",
+      "register": "neutral",
+      "tags": [
+        "question",
+        "description"
+      ],
+      "example": "Seberapa jauh tempat itu dari sini?",
+      "example_cn": "那个地方离这里有多远？",
+      "note": "常见 seberapa jauh/besar/sering。",
+      "formation": "常见搭配：seberapa jauh、seberapa lama。",
+      "synonym_note": "seberapa 问程度；berapa 通常直接问数量",
+      "usage_note": "常见 seberapa jauh/besar/sering。",
+      "transfer_example": "Seberapa jauh jarak dari sini ke stasiun?",
+      "transfer_cn": "从这里到车站有多远？",
+      "transfer_register": "natural-spoken"
+    },
+    "semoga": {
+      "word": "semoga",
+      "cn": "希望；愿……",
+      "en": "hopefully; I hope",
+      "root": "semoga",
+      "root_cn": "希望",
+      "register": "neutral",
+      "tags": [
+        "social",
+        "communication"
+      ],
+      "example": "Semoga semuanya berjalan lancar besok.",
+      "example_cn": "希望明天一切顺利。",
+      "note": "祝愿非常常用。",
+      "formation": "常见搭配：semoga lancar、semoga lekas sembuh。",
+      "synonym_note": "semoga 表示祝愿；mudah-mudahan 意思相近，更口语",
+      "usage_note": "祝愿非常常用。",
+      "transfer_example": "Semoga perjalananmu besok lancar, ya.",
+      "transfer_cn": "祝你明天一路顺利哦。",
+      "transfer_register": "natural-spoken"
+    },
+    "diterima": {
+      "word": "diterima",
+      "cn": "被接受；被录用；收到",
+      "en": "be accepted; be received",
+      "root": "terima",
+      "root_cn": "接受；收到",
+      "register": "standard",
+      "tags": [
+        "work",
+        "communication"
+      ],
+      "example": "Lamaran saya akhirnya diterima oleh perusahaan itu.",
+      "example_cn": "我的申请终于被那家公司接受了。",
+      "note": "被动 di- + terima。",
+      "formation": "常见搭配：diterima kerja、sudah diterima。",
+      "synonym_note": "diterima 是被接受/录用；menerima 是主动接收",
+      "usage_note": "被动 di- + terima。",
+      "transfer_example": "Lamaran kerjanya sudah diterima minggu ini.",
+      "transfer_cn": "他的工作申请这周通过了。",
+      "transfer_register": "natural-spoken"
+    },
+    "rugi": {
+      "word": "rugi",
+      "cn": "亏；损失",
+      "en": "lose money; suffer a loss",
+      "root": "rugi",
+      "root_cn": "亏损",
+      "register": "neutral",
+      "tags": [
+        "finance",
+        "work"
+      ],
+      "example": "Toko bisa rugi kalau biaya terus naik.",
+      "example_cn": "如果成本一直上涨，商店可能亏损。",
+      "note": "口语常说 rugi banyak。",
+      "formation": "常见搭配：rugi banyak、nggak mau rugi。",
+      "synonym_note": "rugi 是亏损、吃亏；kerugian 是名词损失",
+      "usage_note": "口语常说 rugi banyak。",
+      "transfer_example": "Kalau ongkos kirim terlalu tinggi, kita bisa rugi.",
+      "transfer_cn": "如果运费太高，我们可能会亏钱。",
+      "transfer_register": "natural-spoken"
+    },
+    "invoice": {
+      "word": "invoice",
+      "cn": "发票；账单",
+      "en": "invoice",
+      "root": "invoice",
+      "root_cn": "发票",
+      "register": "business",
+      "tags": [
+        "finance",
+        "work"
+      ],
+      "example": "Tolong kirim invoice setelah barang dikirim.",
+      "example_cn": "货物发出后请发送发票。",
+      "note": "商务中常直接使用英语借词 invoice。",
+      "formation": "常见搭配：kirim invoice、cek invoice。",
+      "synonym_note": "invoice 商务中常用，表示发票或付款单据；kwitansi 是收据",
+      "usage_note": "商务中常直接使用英语借词 invoice。",
+      "transfer_example": "Bisa kirim invoice-nya lewat email hari ini?",
+      "transfer_cn": "今天能通过邮件把发票发过来吗？",
+      "transfer_register": "natural-spoken"
+    },
+    "kwitansi": {
+      "word": "kwitansi",
+      "cn": "收据",
+      "en": "receipt",
+      "root": "kwitansi",
+      "root_cn": "收据",
+      "register": "neutral",
+      "tags": [
+        "finance",
+        "shopping"
+      ],
+      "example": "Saya simpan kwitansi ini untuk bukti pembayaran.",
+      "example_cn": "我留着这张收据作为付款证明。",
+      "note": "也常拼 kuitansi；正式标准为 kuitansi。",
+      "formation": "常见搭配：minta kwitansi、simpan kwitansi。",
+      "synonym_note": "kwitansi 是付款收据；invoice 是索款/发票文件",
+      "usage_note": "也常拼 kuitansi；正式标准为 kuitansi。",
+      "transfer_example": "Jangan buang kwitansi itu sebelum barangnya dicek.",
+      "transfer_cn": "货还没检查前别把那张收据扔了。",
+      "transfer_register": "natural-spoken"
+    },
+    "retur": {
+      "word": "retur",
+      "cn": "退货；退回",
+      "en": "return goods",
+      "root": "retur",
+      "root_cn": "退货",
+      "register": "business",
+      "tags": [
+        "shopping",
+        "logistics"
+      ],
+      "example": "Barang rusak ini akan kami retur ke pemasok.",
+      "example_cn": "这个损坏的商品我们会退回供应商。",
+      "note": "电商/物流常用借词。",
+      "formation": "常见搭配：proses retur、ajukan retur。",
+      "synonym_note": "retur 是退货；tukar 是换货",
+      "usage_note": "电商/物流常用借词。",
+      "transfer_example": "Kalau produknya rusak, kita bisa ajukan retur.",
+      "transfer_cn": "如果产品坏了，我们可以申请退货。",
+      "transfer_register": "natural-spoken"
+    },
+    "tukar": {
+      "word": "tukar",
+      "cn": "交换；更换",
+      "en": "exchange; swap",
+      "root": "tukar",
+      "root_cn": "交换",
+      "register": "neutral-spoken",
+      "tags": [
+        "shopping",
+        "action"
+      ],
+      "example": "Kalau ukurannya salah, bisa tukar dengan yang lebih besar.",
+      "example_cn": "如果尺寸不对，可以换成大一点的。",
+      "note": "正式动词 menukar/menukarkan；口语常 tukar。",
+      "formation": "常见搭配：tukar ukuran、tukar barang。",
+      "synonym_note": "tukar 是交换、换货；retur 是退回商品",
+      "usage_note": "正式动词 menukar/menukarkan；口语常 tukar。",
+      "transfer_example": "Boleh tukar ukuran kalau bajunya terlalu kecil?",
+      "transfer_cn": "如果衣服太小，能换个尺码吗？",
+      "transfer_register": "natural-spoken"
+    },
+    "praktis": {
+      "word": "praktis",
+      "cn": "实用；方便",
+      "en": "practical; convenient",
+      "root": "praktis",
+      "root_cn": "实用",
+      "register": "neutral",
+      "tags": [
+        "description",
+        "daily"
+      ],
+      "example": "Saya pilih tas ini karena lebih praktis dibawa.",
+      "example_cn": "我选这个包，因为带着更方便。",
+      "note": "强调省事、方便使用。",
+      "formation": "常见搭配：cara praktis、lebih praktis。",
+      "synonym_note": "praktis 是方便、实用；mudah 是容易",
+      "usage_note": "强调省事、方便使用。",
+      "transfer_example": "Pakai aplikasi ini lebih praktis daripada isi formulir manual.",
+      "transfer_cn": "用这个应用比手动填表方便。",
+      "transfer_register": "natural-spoken"
+    },
+    "repot": {
+      "word": "repot",
+      "cn": "麻烦；费事",
+      "en": "troublesome; inconvenient",
+      "root": "repot",
+      "root_cn": "麻烦",
+      "register": "neutral-spoken",
+      "tags": [
+        "daily",
+        "problem"
+      ],
+      "example": "Kalau terlalu repot, kita cari cara yang lebih sederhana.",
+      "example_cn": "如果太麻烦，我们就找个更简单的方法。",
+      "note": "高频日常词；也可说 merepotkan“给人添麻烦”。",
+      "formation": "常见搭配：nggak usah repot、bikin repot。",
+      "synonym_note": "repot 是麻烦、费事；sulit 侧重困难",
+      "usage_note": "高频日常词；也可说 merepotkan“给人添麻烦”。",
+      "transfer_example": "Nggak usah repot datang sendiri, aku bisa kirim fotonya.",
+      "transfer_cn": "不用麻烦亲自跑一趟，我可以把照片发给你。",
+      "transfer_register": "natural-spoken"
+    },
+    "urus": {
+      "word": "urus",
+      "cn": "处理；照料",
+      "en": "handle; take care of",
+      "root": "urus",
+      "root_cn": "处理；照料",
+      "register": "spoken-neutral",
+      "tags": [
+        "action",
+        "work"
+      ],
+      "example": "Biar saya urus bagian ini dulu.",
+      "example_cn": "这部分先让我来处理。",
+      "note": "口语常直接 urus；正式主动形式 mengurus。",
+      "formation": "常见搭配：urus dokumen、urus sendiri。",
+      "synonym_note": "urus 是 ngurus 的词根/口语基础形式；mengurus 更中性",
+      "usage_note": "口语常直接 urus；正式主动形式 mengurus。",
+      "transfer_example": "Tenang, nanti aku urus dokumennya sebelum sore.",
+      "transfer_cn": "放心，下午之前我来处理文件。",
+      "transfer_register": "natural-spoken"
+    },
+    "pasang": {
+      "word": "pasang",
+      "cn": "安装；放置；配对",
+      "en": "install; put up; pair",
+      "root": "pasang",
+      "root_cn": "安装；放置",
+      "register": "neutral-spoken",
+      "tags": [
+        "home",
+        "digital",
+        "action"
+      ],
+      "example": "Tolong pasang aplikasi ini di ponsel baru.",
+      "example_cn": "请在新手机上安装这个应用。",
+      "note": "多义：安装、装上、成双等；看搭配。",
+      "formation": "常见搭配：pasang aplikasi、pasang AC。",
+      "synonym_note": "pasang 是安装、装上，也可以指配对",
+      "usage_note": "多义：安装、装上、成双等；看搭配。",
+      "transfer_example": "Besok teknisi datang buat pasang AC baru.",
+      "transfer_cn": "明天技术人员来装新空调。",
+      "transfer_register": "natural-spoken"
+    },
+    "lepas": {
+      "word": "lepas",
+      "cn": "取下；释放；脱离",
+      "en": "take off; release; come off",
+      "root": "lepas",
+      "root_cn": "松开；脱离",
+      "register": "neutral-spoken",
+      "tags": [
+        "action",
+        "home"
+      ],
+      "example": "Sepatu ini mudah dilepas dan dipakai lagi.",
+      "example_cn": "这双鞋很容易脱下来再穿上。",
+      "note": "melepaskan 是使动“释放/取下”。",
+      "formation": "常见搭配：lepas dulu、belum lepas。",
+      "synonym_note": "lepas 是脱离、卸下；melepas 是主动取下",
+      "usage_note": "melepaskan 是使动“释放/取下”。",
+      "transfer_example": "Coba lepas casing-nya dulu sebelum dibersihkan.",
+      "transfer_cn": "清洁前先试着把保护壳取下来。",
+      "transfer_register": "natural-spoken"
+    },
+    "hafal": {
+      "word": "hafal",
+      "cn": "背熟；记住",
+      "en": "memorize; know by heart",
+      "root": "hafal",
+      "root_cn": "背熟",
+      "register": "neutral",
+      "tags": [
+        "learning"
+      ],
+      "example": "Saya belum hafal semua kata baru hari ini.",
+      "example_cn": "我还没记住今天所有新词。",
+      "note": "hafal 强调背熟；ingat 是记得。",
+      "formation": "常见搭配：sudah hafal、belum hafal。",
+      "synonym_note": "hafal 是背熟记住；ingat 是想得起来",
+      "usage_note": "hafal 强调背熟；ingat 是记得。",
+      "transfer_example": "Aku belum hafal nomornya, kirim lewat chat saja.",
+      "transfer_cn": "我还没记住号码，直接聊天发给我吧。",
+      "transfer_register": "natural-spoken"
+    },
+    "mogok": {
+      "word": "mogok",
+      "cn": "抛锚；罢工",
+      "en": "break down; strike",
+      "root": "mogok",
+      "root_cn": "停止运作",
+      "register": "neutral-spoken",
+      "tags": [
+        "transport",
+        "incident"
+      ],
+      "example": "Mobil kami mogok di tengah jalan.",
+      "example_cn": "我们的车在半路抛锚了。",
+      "note": "车辆抛锚和人员罢工都可用。",
+      "formation": "常见搭配：motor mogok、mobil mogok。",
+      "synonym_note": "mogok 可指车抛锚，也可指罢工；rusak 泛指坏了",
+      "usage_note": "车辆抛锚和人员罢工都可用。",
+      "transfer_example": "Motor saya mogok dekat lampu merah tadi pagi.",
+      "transfer_cn": "今天早上我的摩托车在红绿灯附近抛锚了。",
+      "transfer_register": "natural-spoken"
+    },
+    "kecelakaan": {
+      "word": "kecelakaan",
+      "cn": "事故；交通事故",
+      "en": "accident",
+      "root": "celaka",
+      "root_cn": "不幸；遭殃",
+      "register": "standard",
+      "tags": [
+        "transport",
+        "incident"
+      ],
+      "example": "Jalan itu macet karena ada kecelakaan.",
+      "example_cn": "那条路因为发生事故而堵车。",
+      "note": "交通语境很常见。",
+      "formation": "常见搭配：terjadi kecelakaan、kecelakaan lalu lintas。",
+      "synonym_note": "kecelakaan 是意外事故；tabrakan 更具体是碰撞",
+      "usage_note": "交通语境很常见。",
+      "transfer_example": "Tadi ada kecelakaan kecil, jadi jalannya agak macet.",
+      "transfer_cn": "刚才发生了一起小事故，所以路上有点堵。",
+      "transfer_register": "natural-spoken"
+    },
+    "demam": {
+      "word": "demam",
+      "cn": "发烧",
+      "en": "fever",
+      "root": "demam",
+      "root_cn": "发烧",
+      "register": "neutral",
+      "tags": [
+        "health"
+      ],
+      "example": "Anaknya demam sejak tadi malam.",
+      "example_cn": "他的孩子从昨晚开始发烧。",
+      "note": "常说 demam tinggi。",
+      "formation": "常见搭配：sedang demam、demam tinggi。",
+      "synonym_note": "demam 是发烧；panas 可以说热，也可口语指发烧",
+      "usage_note": "常说 demam tinggi。",
+      "transfer_example": "Kalau masih demam besok, aku mau istirahat di rumah.",
+      "transfer_cn": "如果明天还发烧，我想在家休息。",
+      "transfer_register": "natural-spoken"
+    },
+    "gatal": {
+      "word": "gatal",
+      "cn": "痒",
+      "en": "itchy",
+      "root": "gatal",
+      "root_cn": "痒",
+      "register": "neutral",
+      "tags": [
+        "health"
+      ],
+      "example": "Kulit saya terasa gatal setelah memakai sabun itu.",
+      "example_cn": "我用了那种肥皂后皮肤发痒。",
+      "note": "常说 terasa gatal、gatal sekali。",
+      "formation": "常见搭配：terasa gatal、gatal sekali。",
+      "synonym_note": "gatal 是痒；perih 是刺痛灼痛",
+      "usage_note": "常说 terasa gatal、gatal sekali。",
+      "transfer_example": "Kulit saya jadi gatal setelah kena debu di gudang.",
+      "transfer_cn": "在仓库接触灰尘后，我的皮肤开始发痒。",
+      "transfer_register": "natural-spoken"
+    },
+    "awan": {
+      "word": "awan",
+      "cn": "云",
+      "en": "cloud",
+      "root": "awan",
+      "root_cn": "云",
+      "register": "neutral",
+      "tags": [
+        "weather",
+        "nature"
+      ],
+      "example": "Awan gelap mulai terlihat sebelum hujan turun.",
+      "example_cn": "下雨前开始出现乌云。",
+      "note": "常见 awan gelap、awan tebal。",
+      "formation": "常见搭配：awan gelap、awan tebal。",
+      "synonym_note": "awan 是云；mendung 是天阴",
+      "usage_note": "常见 awan gelap、awan tebal。",
+      "transfer_example": "Awan sudah mulai gelap, kayaknya sebentar lagi hujan.",
+      "transfer_cn": "云已经开始变黑了，感觉马上要下雨。",
+      "transfer_register": "natural-spoken"
+    },
+    "mengalir": {
+      "word": "mengalir",
+      "cn": "流动",
+      "en": "flow",
+      "root": "alir",
+      "root_cn": "流；流动",
+      "register": "neutral",
+      "tags": [
+        "nature",
+        "movement"
+      ],
+      "example": "Air hujan mengalir ke selokan di depan rumah.",
+      "example_cn": "雨水流进房子前面的排水沟。",
+      "note": "常见 air mengalir、darah mengalir、lalu lintas mengalir。",
+      "formation": "常见搭配：air mengalir、lalu lintas mengalir。",
+      "synonym_note": "mengalir 指流动；turun 指下降或雨落下",
+      "usage_note": "常见 air mengalir、darah mengalir、lalu lintas mengalir。",
+      "transfer_example": "Air dari kamar mandi mengalir ke saluran di belakang rumah.",
+      "transfer_cn": "浴室的水流进房子后面的排水管。",
+      "transfer_register": "natural-spoken"
+    },
+    "bahas": {
+      "word": "bahas",
+      "cn": "讨论；讲解",
+      "en": "discuss",
+      "root": "bahas",
+      "root_cn": "讨论",
+      "register": "spoken-neutral",
+      "tags": [
+        "communication",
+        "work"
+      ],
+      "example": "Kita bahas masalah ini setelah makan siang.",
+      "example_cn": "我们午饭后讨论这个问题。",
+      "note": "完整主动形式 membahas；口语常直接 bahas。",
+      "formation": "常见搭配：bahas masalah、bahas nanti。",
+      "synonym_note": "bahas 是讨论某个话题；ngobrol 可泛指聊天",
+      "usage_note": "完整主动形式 membahas；口语常直接 bahas。",
+      "transfer_example": "Masalah ini kita bahas besok setelah semua data lengkap.",
+      "transfer_cn": "等资料齐全了，我们明天再讨论这个问题。",
+      "transfer_register": "natural-spoken"
+    },
+    "membingungkan": {
+      "word": "membingungkan",
+      "cn": "令人困惑",
+      "en": "confusing",
+      "root": "bingung",
+      "root_cn": "困惑",
+      "register": "neutral",
+      "tags": [
+        "communication",
+        "description"
+      ],
+      "example": "Petunjuknya terlalu panjang dan agak membingungkan.",
+      "example_cn": "说明太长，有点让人困惑。",
+      "note": "membingungkan=让人困惑；bingung=自己困惑。",
+      "formation": "常见搭配：agak membingungkan、bikin bingung。",
+      "synonym_note": "membingungkan 是令人困惑；bingung 是人感觉困惑",
+      "usage_note": "membingungkan=让人困惑；bingung=自己困惑。",
+      "transfer_example": "Instruksi ini agak membingungkan, bisa kasih contoh?",
+      "transfer_cn": "这个说明有点让人困惑，能举个例子吗？",
+      "transfer_register": "natural-spoken"
+    },
+    "berfungsi": {
+      "word": "berfungsi",
+      "cn": "运作；起作用",
+      "en": "function; work",
+      "root": "fungsi",
+      "root_cn": "功能",
+      "register": "standard",
+      "tags": [
+        "digital",
+        "work"
+      ],
+      "example": "Setelah diperbaiki, alat itu berfungsi normal lagi.",
+      "example_cn": "修好后那个设备又正常工作了。",
+      "note": "常见 berfungsi dengan baik/normal。",
+      "formation": "常见搭配：masih berfungsi、tidak berfungsi。",
+      "synonym_note": "berfungsi 是仍有功能、正常工作；menyala 只说通电亮起",
+      "usage_note": "常见 berfungsi dengan baik/normal。",
+      "transfer_example": "Tombol ini sudah menyala, tapi fiturnya belum berfungsi.",
+      "transfer_cn": "这个按钮虽然亮了，但功能还不能用。",
+      "transfer_register": "natural-spoken"
     }
   }
 }

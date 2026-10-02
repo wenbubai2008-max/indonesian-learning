@@ -40,6 +40,12 @@ function auditLesson(lesson){
      reject('QUALITY_OUTPUT_TARGET_MISMATCH','Reference answer must really use at least two distinct new words named in its task');
    if(!answer.trim()||!String(output.reference_cn||'').trim())
      reject('QUALITY_OUTPUT_INCOMPLETE','The model output must have both languages');
+   const changed=(lesson.vocab||[]).filter(c=>used.includes(norm(c.word))&&
+     !answer.includes(String(c.example||''))).length;
+   const declared=Number(lesson._prototype?.transfer_output_count||0);
+   if(declared>changed)reject('QUALITY_OUTPUT_TRANSFER_FALSE','Declared alternate-context answers must differ from the taught examples');
+   if(declared>0&&!/情境迁移/.test(task))
+     reject('QUALITY_OUTPUT_TRANSFER_TASK','Alternate examples must be explicitly presented as transfer practice');
  }else{
    const lines=lesson.dialogue?.lines||[],joined=lines.map(x=>x.id||'').join(' ');
    if(news.filter(w=>containsWord(joined,w)).length<Math.min(2,news.length))
@@ -51,12 +57,26 @@ function auditLesson(lesson){
      reject('QUALITY_DIALOGUE_TOPIC_JUMP','Too many abrupt topic changes');
    if(lines.some((x,i)=>x.speaker!==(i%2?'B':'A')))
      reject('QUALITY_DIALOGUE_TURN','Dialogue must alternate A/B');
+   const rw=lesson.rewrite||[],vocab=lesson.vocab||[];
+   for(const item of rw){
+     const matches=vocab.filter(c=>containsWord(item.task||'',c.word)&&containsWord(item.reference_answer||'',c.word));
+     if(!matches.length)reject('QUALITY_REWRITE_TARGET_MISMATCH','A rewrite answer must actually use the word requested in its task');
+   }
+   const alt=rw.filter(item=>vocab.some(c=>containsWord(item.task||'',c.word)&&
+     containsWord(item.reference_answer||'',c.word)&&
+     !String(item.reference_answer||'').includes(String(c.example||'')))).length;
+   if(Number(lesson._prototype?.transfer_rewrite_count||0)>alt)
+     reject('QUALITY_REWRITE_TRANSFER_FALSE','Declared rewrite transfer must differ from the teaching example');
  }
  return {ok:errors.length===0,errors,metrics:{
    exact_new_reading:exact.length,required_new_reading:minimum,
    reading_words:count(reading),reading_mode:mode,
    output_target_count:lesson.session==='am'?news.filter(w=>containsWord(lesson.output?.task,w)&&containsWord(lesson.output?.reference_answer,w)).length:null,
-   dialogue_new_count:lesson.session==='pm'?news.filter(w=>containsWord((lesson.dialogue?.lines||[]).map(x=>x.id).join(' '),w)).length:null
+   dialogue_new_count:lesson.session==='pm'?news.filter(w=>containsWord((lesson.dialogue?.lines||[]).map(x=>x.id).join(' '),w)).length:null,
+   micro_scene_count:(lesson._prototype?.micro_scene_pairs||[]).length,
+   active_transfer_count:lesson.session==='am'?Number(lesson._prototype?.transfer_output_count||0):
+     Number(lesson._prototype?.transfer_rewrite_count||0),
+   paired_dialogue:lesson.session==='pm'?Boolean(lesson._prototype?.dialogue_micro_scene):null
  }};
 }
 module.exports={auditLesson,containsWord};

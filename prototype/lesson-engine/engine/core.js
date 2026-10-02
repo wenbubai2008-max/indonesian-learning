@@ -251,7 +251,12 @@
       example_cn:e.example_cn||d.example_cn||('我在日常句子中使用 '+k+' 这个词。'),
       synonym_note:e.synonym_note||d.synonym_note||M['lexical-rules']?.curated?.[k]?.spoken_note||e.note||d.usage_note||('例句搭配：'+(collocations.length?collocations.join(' / '):k)+'；这里的意思是“'+cn+'”。'),
       is_oral_new:group==='new'&&oralMap(ctx).has(k),
-      _collocations:collocations
+      _collocations:collocations,
+      // Private drill material. Never let an alternate example replace the teaching
+      // example or change the official new/review/application word eligibility.
+      _transfer:e.transfer_example&&e.transfer_cn&&hasExactWord(e.transfer_example,k)&&
+        norm(e.transfer_example)!==norm(e.example||d.example||'')
+        ?{id:e.transfer_example,cn:e.transfer_cn}:null
     };
     if(ctx.target.session==='pm'){
       // AM vocab is formally new; AM review_vocab consists of previously learned words.
@@ -337,13 +342,35 @@
     }
     // Explicitly group short topical notes. Mixed unrelated examples are NOT a
     // single fabricated narrative and must never inherit an unrelated scene title.
-    const groups=new Map();
+    const fineTopics=new Set(chosen.map(c=>semanticBucket(c,env,scene)));
+    // A pre-reviewed two-word scene is used only if BOTH exact words are selected
+    // for this reading. Never pull an ineligible word into a lesson for cohesion.
+    const eligiblePairs=(env.M['micro-scenes']?.scenes||[]).filter(p=>{
+      if(!Array.isArray(p.words)||p.words.length!==2||!Array.isArray(p.reading)||p.reading.length!==2)return false;
+      const aa=chosen.find(c=>c.word===p.words[0]),bb=chosen.find(c=>c.word===p.words[1]);
+      return aa&&bb&&p.reading.every((line,i)=>line.id&&line.cn&&hasExactWord(line.id,p.words[i]));
+    }).sort((a,b)=>a.id.localeCompare(b.id));
+    const pairByWord=new Map(),selectedPairs=[];
+    for(const p of eligiblePairs){
+      if(p.words.some(w=>pairByWord.has(w)))continue;
+      const aa=chosen.find(c=>c.word===p.words[0]),bb=chosen.find(c=>c.word===p.words[1]);
+      // Keep the pair in one broad topic; cross-topic pairs are not promoted into
+      // an artificial story. Up to two curated scenes keeps length predictable.
+      if(macro(aa)!==macro(bb)||selectedPairs.length>=2)continue;
+      selectedPairs.push(p);
+      for(const w of p.words)pairByWord.set(w,p);
+    }
+    const groups=new Map(),visitedPairs=new Set();
     for(const c of chosen){
       const b=macro(c);
       if(!groups.has(b))groups.set(b,[]);
-      groups.get(b).push(c);
+      const pair=pairByWord.get(c.word);
+      if(pair){
+        if(visitedPairs.has(pair.id))continue;
+        visitedPairs.add(pair.id);
+        groups.get(b).push({kind:'paired-scene',pair});
+      }else groups.get(b).push({kind:'card',card:c});
     }
-    const fineTopics=new Set(chosen.map(c=>semanticBucket(c,env,scene)));
     const mixed=fineTopics.size>1;
     // Never stitch five unrelated stock sentences into a fabricated single event.
     // Two or three expressly separate, broad life contexts need fewer hard transitions.
@@ -373,7 +400,11 @@
         const bridge=topicIntros[group]||['Ada juga catatan singkat dari situasi lainnya.','还有另一个不同情境中的简短记录。'];
         pairs.push([...bridge,'','bridge']);
       }
-      for(const c of items)pairs.push(entry(c));
+      for(const item of items){
+        if(item.kind==='paired-scene'){
+          for(const line of item.pair.reading)pairs.push([line.id,line.cn,'','paired-scene']);
+        }else pairs.push(entry(item.card));
+      }
     }
     const count=()=>wc(pairs.map(x=>x[0]).join(' '));
     const remaining=()=>120-count()-wc(closer[0]);
@@ -400,13 +431,65 @@
     const actual=coverage.filter(c=>c.group==='new').length;
     if(actual<required)throw Error('READING_EXACT_COVERAGE: '+actual+'/'+required);
     if(wc(text)<80||wc(text)>120)throw Error('READING_WORD_COUNT: '+wc(text));
-    return {text,cn:translation,_coverage:coverage,_review_required:mixed,_mixed:mixed,_topic_count:fineTopics.size};
+    return {text,cn:translation,_coverage:coverage,_review_required:mixed,_mixed:mixed,
+      _topic_count:fineTopics.size,_paired_scenes:selectedPairs.map(p=>p.id)};
   }
 
   function dialogueFor(scene,cards,env,key){
     const news=cards.filter(x=>x.group==='new'&&hasExactWord(x.example,x.word));
     const others=cards.filter(x=>x.group!=='new'&&hasExactWord(x.example,x.word));
     if(news.length<2)throw Error('DIALOGUE_NEW_EXAMPLE_INSUFFICIENT');
+    // The strongest dialogue case: a pre-authored, bilingual micro-situation in
+    // which BOTH required new words belong to the same conversational incident.
+    const curated=(env.M['micro-scenes']?.scenes||[]).find(p=>
+      p.words.length===2&&p.reading.length===2&&
+      p.words.every(w=>news.some(c=>c.word===w))&&
+      p.reading.every((line,i)=>hasExactWord(line.id,p.words[i])));
+    if(curated){
+      const prompts={
+        weather:[['Tadi cuacanya bagaimana?','刚才天气怎么样？'],['Terus setelah itu apa yang terjadi?','那后来怎么样了？']],
+        health:[['Tadi kondisi badannya bagaimana?','刚才身体情况如何？'],['Lalu sekarang bagaimana?','那现在怎么样了？']],
+        transport:[['Tadi di jalan ada masalah apa?','刚才路上出了什么情况？'],['Terus apa yang terjadi setelah itu?','后来又发生了什么？']],
+        finance:[['Ada urusan pembayaran apa hari ini?','今天有什么付款的事？'],['Lalu setelah itu bagaimana?','后来又怎么样？']],
+        digital:[['Tadi ada masalah apa dengan perangkatnya?','刚才设备出了什么问题？'],['Terus kamu melakukan apa?','那你接着做了什么？']],
+        work:[['Bagaimana urusan pekerjaan tadi?','刚才工作上的事怎么样？'],['Lalu langkah berikutnya apa?','那下一步是什么？']],
+        home:[['Tadi ada urusan apa di rumah?','刚才家里有什么事？'],['Terus bagaimana kelanjutannya?','后来又怎么样了？']],
+        social:[['Tadi temanmu cerita apa?','刚才你朋友说了什么？'],['Lalu apa yang terjadi?','那后来怎么样了？']],
+        daily:[['Tadi ada cerita apa?','刚才有什么事？'],['Lalu bagaimana kelanjutannya?','后来怎么样了？']]
+      };
+      const q=prompts[curated.domain]||prompts.daily,[a,b]=curated.reading;
+      const lines=[
+        {speaker:'A',id:q[0][0],cn:q[0][1]},
+        {speaker:'B',id:a.id,cn:a.cn},
+        {speaker:'A',id:q[1][0],cn:q[1][1]},
+        {speaker:'B',id:b.id,cn:b.cn}
+      ];
+      // Reuse a PREVIOUSLY learned application/review word only when its
+      // teaching example shares a substantial concrete word with the story.
+      // Otherwise a genuine short conversational close is better than a
+      // disconnected third answer added only to increase word coverage.
+      const stop=new Set(['dengan','sebelum','setelah','sudah','untuk','cukup','karena','mereka','kami','saya','kamu','dari','lagi','yang','bisa','tidak','jadi','saat','hari','lebih','masih','sambil','waktu']);
+      const terms=new Set(((a.id+' '+b.id).toLowerCase().match(/[a-z]{4,}/g)||[]).filter(w=>!stop.has(w)));
+      const related=others.map(c=>({c,
+        hits:(c.example.toLowerCase().match(/[a-z]{4,}/g)||[]).filter(w=>terms.has(w)&&!stop.has(w)).length
+      })).filter(x=>x.hits>0).sort((x,y)=>y.hits-x.hits||x.c.word.localeCompare(y.c.word));
+      const support=related[0]?.c;
+      if(support){
+        const willContinue=/\b(biarpun|walaupun|meskipun|tetap)\b/i.test(support.example);
+        const q3=willContinue
+          ?['Jadi, rencanamu tetap jalan?','所以，你还是按计划继续？']
+          :['Lalu kamu sendiri bagaimana?','那你自己后来怎么样了？'];
+        lines.push({speaker:'A',id:q3[0],cn:q3[1]},
+          {speaker:'B',id:support.example,cn:support.example_cn});
+      }else{
+        lines.push({speaker:'A',id:'Oke, makasih sudah cerita, ya.',cn:'好的，谢谢你告诉我。'},
+          {speaker:'B',id:'Iya, sama-sama.',cn:'嗯，不客气。'});
+      }
+      const joined=lines.map(x=>x.id).join(' ');
+      return {title:'真实口语｜Cerita sehari-hari',lines,_paired_scene:curated.id,
+        _support_reused:Boolean(support),
+        _coverage:cards.filter(c=>hasExactWord(joined,c.word)).map(c=>({word:c.word,group:c.group}))};
+    }
     const cohesion=(a,b)=>{
       const shared=semanticBucket(a,env,scene)===semanticBucket(b,env,scene);
       const tagsA=tagWord(a.word,a.cn,env),tagsB=tagWord(b.word,b.cn,env);
@@ -458,7 +541,8 @@
     }
     const joined=lines.map(x=>x.id).join(' ');
     const coverage=cards.filter(c=>hasExactWord(joined,c.word)).map(c=>({word:c.word,group:c.group}));
-    return {title:'真实口语｜'+(same?scene.title:'Cerita sehari-hari'),lines,_coverage:coverage};
+    return {title:'真实口语｜'+(same?scene.title:'Cerita sehari-hari'),lines,_coverage:coverage,
+      _paired_scene:null,_support_reused:Boolean(support)};
   }
 
   function optionSet(correct,pool,key){
@@ -507,8 +591,9 @@
     const base={date:ctx.target.date,session:ctx.target.session,time,day:ctx.target.day,level:'A2+ → B1',duration_minutes:30,
       title:time+' '+(ctx.target.session==='am'?'早课':'晚课')+'｜'+actualTitle,
       _prototype:{engine_version:2,scene_id:scene.id,deterministic:true,production_write:false,variant,core_plan:plan,reading_coverage:reading._coverage,reading_review_required:reading._review_required,
-         reading_mode:reading._mixed?'thematic-notes':'single-scene',reading_topics:reading._topic_count}};
-    delete reading._coverage;delete reading._review_required;delete reading._mixed;delete reading._topic_count;
+         reading_mode:reading._mixed?'thematic-notes':'single-scene',reading_topics:reading._topic_count,
+         micro_scene_pairs:reading._paired_scenes}};
+    delete reading._coverage;delete reading._review_required;delete reading._mixed;delete reading._topic_count;delete reading._paired_scenes;
 
     if(ctx.target.session==='am'){
       const pool=cards.map(x=>x.word),r=reviewCards[0],n1=newCards[0],n2=newCards[1]||n1;
@@ -521,15 +606,25 @@
         pairs.push({a,b,score:(shared?20:0)+sceneFit(a,scene,env)+sceneFit(b,scene,env)
           -Math.max(0,wc(a.example)-15)-Math.max(0,wc(b.example)-15)});
       }
-      pairs.sort((a,b)=>b.score-a.score||a.a.word.localeCompare(b.a.word));
-      const focusPair=pairs[0],cleanCn=x=>String(x||'').trim().replace(/[。！？!?；;]+$/g,''),out={
-        task:'遮住印尼语，用 '+focusPair.a.word+' 和 '+focusPair.b.word+
-          ' 各说一句：①'+cleanCn(focusPair.a.example_cn)+'；②'+cleanCn(focusPair.b.example_cn)+
-          '。至少准确使用这2个目标词；可改变人物或时间。',
-        answer:focusPair.a.example+' '+focusPair.b.example,
-        cn:focusPair.a.example_cn+' '+focusPair.b.example_cn
+      pairs.sort((a,b)=>{
+        const transferA=Number(!!a.a._transfer)+Number(!!a.b._transfer);
+        const transferB=Number(!!b.a._transfer)+Number(!!b.b._transfer);
+        return transferB-transferA||b.score-a.score||a.a.word.localeCompare(b.a.word);
+      });
+      const focusPair=pairs[0],cleanCn=x=>String(x||'').trim().replace(/[。！？!?；;]+$/g,'');
+      const outputCards=[focusPair.a,focusPair.b].map(c=>({
+        word:c.word,id:c._transfer?.id||c.example,cn:c._transfer?.cn||c.example_cn,
+        changed:Boolean(c._transfer)
+      }));
+      base._prototype.transfer_output_count=outputCards.filter(c=>c.changed).length;
+      const out={
+        task:'情境迁移（不要照抄词卡例句）：用 '+focusPair.a.word+' 和 '+focusPair.b.word+
+          ' 各说一句。场景① '+cleanCn(outputCards[0].cn)+'；场景② '+cleanCn(outputCards[1].cn)+
+          '。至少准确使用这2个目标词；可调整人物或语序。',
+        answer:outputCards.map(c=>c.id).join(' '),
+        cn:outputCards.map(c=>c.cn).join(' ')
       };
-      return {...base,new_words:newCards.map(x=>x.word),vocab:newCards.map(({group,...x})=>x),review_vocab:reviewCards.map(x=>x.word),
+      return {...base,new_words:newCards.map(x=>x.word),vocab:newCards.map(({group,_transfer,...x})=>x),review_vocab:reviewCards.map(x=>x.word),
         sentences:newCards.slice(0,5).map(x=>({text:x.example,cn:x.example_cn})),reading,
         quiz:[
           {question:'哪个复习词表示“'+r.cn+'”？',...optionSet(r.word,pool,key+'q1'),explain:r.word+' = '+r.cn+'。'},
@@ -547,12 +642,24 @@
     const allWords=cards.map(x=>x.word),choices=[newCards[0],reviewCards[0],newCards[1]].map((c,i)=>({type:'choice',prompt:'哪个词表示“'+c.cn+'”？',
       ...optionSet(c.word,allWords,key+'pm'+i),explain:c.word+' = '+c.cn+'。'}));
     const fills=[fillFromCard(newCards[0]),fillFromCard(newCards[1]||newCards[0])],rewrite=[];
-    for(const c of newCards.slice(0,2))rewrite.push({task:'中译印：'+c.example_cn+'（使用 '+c.word+'）',reference_answer:c.example,reference_cn:c.example_cn});
-    if(appCards[0])rewrite.push({task:'主动复现：'+appCards[0].example_cn+'（使用 '+appCards[0].word+'）',reference_answer:appCards[0].example,reference_cn:appCards[0].example_cn});
-    if(reviewCards[0])rewrite.push({task:'复习输出：'+reviewCards[0].example_cn+'（使用 '+reviewCards[0].word+'）',reference_answer:reviewCards[0].example,reference_cn:reviewCards[0].example_cn});
+    // Prefer a second real-life context rather than re-translating the teaching
+    // example. Keep exactly two new-word rewrites; never relax the official quota.
+    const rewriteNew=[...newCards].sort((a,b)=>Number(!!b._transfer)-Number(!!a._transfer)).slice(0,2);
+    const makeRewrite=(c,kind)=>{
+      const chosen=c._transfer||{id:c.example,cn:c.example_cn};
+      return {task:(c._transfer?'换个场景表达：':kind+'：')+chosen.cn+'（使用 '+c.word+'）',
+        reference_answer:chosen.id,reference_cn:chosen.cn};
+    };
+    for(const c of rewriteNew)rewrite.push(makeRewrite(c,'中译印'));
+    if(appCards[0])rewrite.push(makeRewrite(appCards[0],'当日应用'));
+    if(reviewCards[0])rewrite.push(makeRewrite(reviewCards[0],'复习输出'));
+    base._prototype.transfer_rewrite_count=[...rewriteNew,appCards[0],reviewCards[0]].filter(c=>c?._transfer).length;
     const dialogue=dialogueFor(scene,cards,env,key);
-    base._prototype.dialogue_coverage=dialogue._coverage;delete dialogue._coverage;
-    return {...base,write_status:'lesson_complete',new_words:newCards.map(x=>x.word),vocab:cards.map(({group,...x})=>x),reading,dialogue,rewrite:rewrite.slice(0,4),
+    base._prototype.dialogue_coverage=dialogue._coverage;
+    base._prototype.dialogue_micro_scene=dialogue._paired_scene;
+    base._prototype.dialogue_contextual_review=dialogue._support_reused;
+    delete dialogue._coverage;delete dialogue._paired_scene;delete dialogue._support_reused;
+    return {...base,write_status:'lesson_complete',new_words:newCards.map(x=>x.word),vocab:cards.map(({group,_transfer,...x})=>x),reading,dialogue,rewrite:rewrite.slice(0,4),
       daily_test:{questions:[...choices,...fills,orderQuestion(cards)],self_check:[
         '遮住中文，3秒内说出 '+newCards.map(x=>x.word).join(' / ')+' 的意思和一个常见搭配。',
         '主动复习 '+reviewCards.map(x=>x.word).join(' / ')+'，不要只做识别。',
@@ -561,7 +668,7 @@
       review:{title:'最后5分钟复盘',steps:[
         '连续说出晚课新词并各造一个短句。',
         '用两个复习词重新讲一遍今天的场景。',
-        '用30秒复述 '+scene.title+'，优先自然表达，不强塞所有目标词。'
+        '用30秒复述 '+actualTitle+'，优先自然表达，不强塞所有目标词。'
       ]}};
   }
 

@@ -1,0 +1,942 @@
+{
+  "version": 1,
+  "note": "Original two-target micro-situations; use only when BOTH exact target words are actually selected, never replace vocabulary eligibility.",
+  "scenes": [
+    {
+      "id": "awan-mengalir",
+      "words": [
+        "awan",
+        "mengalir"
+      ],
+      "domain": "weather",
+      "reading": [
+        {
+          "id": "Awan gelap mulai berkumpul sejak siang.",
+          "cn": "从中午开始乌云逐渐聚集。"
+        },
+        {
+          "id": "Tak lama kemudian, air hujan mengalir ke selokan depan rumah.",
+          "cn": "不久后，雨水流进屋前的排水沟。"
+        }
+      ]
+    },
+    {
+      "id": "demam-sembuh",
+      "words": [
+        "demam",
+        "sembuh"
+      ],
+      "domain": "health",
+      "reading": [
+        {
+          "id": "Kemarin saya demam, jadi saya memilih istirahat di rumah.",
+          "cn": "我昨天发烧了，所以选择在家休息。"
+        },
+        {
+          "id": "Hari ini saya belum sembuh sepenuhnya, tetapi badan sudah lebih enak.",
+          "cn": "今天我还没有完全康复，但身体已经舒服些了。"
+        }
+      ]
+    },
+    {
+      "id": "cemas-lega",
+      "words": [
+        "cemas",
+        "lega"
+      ],
+      "domain": "health",
+      "reading": [
+        {
+          "id": "Saya sempat cemas karena belum mendapat kabar dari dokter.",
+          "cn": "因为还没收到医生的消息，我一度很焦虑。"
+        },
+        {
+          "id": "Setelah hasil pemeriksaan keluar, akhirnya saya merasa lega.",
+          "cn": "检查结果出来后，我终于松了口气。"
+        }
+      ]
+    },
+    {
+      "id": "jarak-mengantar",
+      "words": [
+        "jarak",
+        "mengantar"
+      ],
+      "domain": "transport",
+      "reading": [
+        {
+          "id": "Jarak dari sini ke bandara ternyata cukup jauh.",
+          "cn": "原来从这里到机场还挺远的。"
+        },
+        {
+          "id": "Besok saya akan mengantar teman lebih pagi supaya tidak terlambat.",
+          "cn": "明天我会早点送朋友过去，免得迟到。"
+        }
+      ]
+    },
+    {
+      "id": "invoice-kwitansi",
+      "words": [
+        "invoice",
+        "kwitansi"
+      ],
+      "domain": "finance",
+      "reading": [
+        {
+          "id": "Saya mengecek invoice sebelum melakukan pembayaran.",
+          "cn": "我在付款前先核对发票。"
+        },
+        {
+          "id": "Setelah transfer selesai, saya meminta kwitansi sebagai bukti.",
+          "cn": "转账完成后，我索要了收据作为凭证。"
+        }
+      ]
+    },
+    {
+      "id": "retur-tukar",
+      "words": [
+        "retur",
+        "tukar"
+      ],
+      "domain": "shopping",
+      "reading": [
+        {
+          "id": "Produk yang rusak itu perlu diproses sebagai retur.",
+          "cn": "损坏的产品需要办理退货。"
+        },
+        {
+          "id": "Kalau ukurannya saja yang salah, pelanggan bisa tukar barang.",
+          "cn": "如果只是尺码不对，顾客可以换货。"
+        }
+      ]
+    },
+    {
+      "id": "gatal-parah",
+      "words": [
+        "gatal",
+        "parah"
+      ],
+      "domain": "health",
+      "reading": [
+        {
+          "id": "Kulit saya terasa gatal sejak kemarin malam.",
+          "cn": "从昨晚开始，我的皮肤就发痒。"
+        },
+        {
+          "id": "Kalau makin parah, saya akan meminta saran dari dokter.",
+          "cn": "如果越来越严重，我会征求医生的建议。"
+        }
+      ]
+    },
+    {
+      "id": "mengunggah-ditemukan",
+      "words": [
+        "mengunggah",
+        "ditemukan"
+      ],
+      "domain": "digital",
+      "reading": [
+        {
+          "id": "Saya mencoba mengunggah berkas itu ke sistem pagi ini.",
+          "cn": "今天早上我试着把文件上传到系统。"
+        },
+        {
+          "id": "Setelah diperiksa, ada kesalahan kecil yang akhirnya ditemukan.",
+          "cn": "检查后，终于发现了一个小错误。"
+        }
+      ]
+    },
+    {
+      "id": "mengetik-bahas",
+      "words": [
+        "mengetik",
+        "bahas"
+      ],
+      "domain": "work",
+      "reading": [
+        {
+          "id": "Saya sedang mengetik ringkasan hasil rapat tadi.",
+          "cn": "我正在打字整理刚才的会议纪要。"
+        },
+        {
+          "id": "Bagian yang belum jelas akan kami bahas lagi besok.",
+          "cn": "还不清楚的部分，我们明天再讨论。"
+        }
+      ]
+    },
+    {
+      "id": "pasang-menyalakan",
+      "words": [
+        "pasang",
+        "menyalakan"
+      ],
+      "domain": "home",
+      "reading": [
+        {
+          "id": "Teknisi datang untuk pasang AC baru di kamar.",
+          "cn": "技术人员来房间安装新空调。"
+        },
+        {
+          "id": "Setelah selesai, dia membantu menyalakan AC untuk mengetesnya.",
+          "cn": "安装完成后，他帮忙打开空调测试。"
+        }
+      ]
+    },
+    {
+      "id": "meletakkan-sebelah",
+      "words": [
+        "meletakkan",
+        "sebelah"
+      ],
+      "domain": "home",
+      "reading": [
+        {
+          "id": "Saya meletakkan tas di atas meja dekat pintu.",
+          "cn": "我把包放在门边的桌子上。"
+        },
+        {
+          "id": "Kuncinya saya taruh di sebelah tas supaya mudah dicari.",
+          "cn": "我把钥匙放在包旁边，方便找。"
+        }
+      ]
+    },
+    {
+      "id": "tindakan-langkah",
+      "words": [
+        "tindakan",
+        "langkah"
+      ],
+      "domain": "work",
+      "reading": [
+        {
+          "id": "Kami perlu mengambil tindakan sebelum keluhannya bertambah banyak.",
+          "cn": "在投诉增加之前，我们需要采取措施。"
+        },
+        {
+          "id": "Langkah pertama adalah mencari sumber masalahnya dulu.",
+          "cn": "第一步是先找出问题根源。"
+        }
+      ]
+    },
+    {
+      "id": "gengsi-kepo",
+      "words": [
+        "gengsi",
+        "kepo"
+      ],
+      "domain": "social",
+      "reading": [
+        {
+          "id": "Dia sebenarnya ingin bertanya, tetapi masih gengsi.",
+          "cn": "他其实想问，但还是拉不下面子。"
+        },
+        {
+          "id": "Temannya malah kepo dan terus bertanya soal masalah itu.",
+          "cn": "他朋友反而很好奇，一直打听这件事。"
+        }
+      ]
+    },
+    {
+      "id": "kisah-peristiwa",
+      "words": [
+        "kisah",
+        "peristiwa"
+      ],
+      "domain": "social",
+      "reading": [
+        {
+          "id": "Teman saya punya kisah menarik tentang masa kecilnya.",
+          "cn": "我朋友有段有趣的童年故事。"
+        },
+        {
+          "id": "Salah satu peristiwa itu masih dia ingat sampai sekarang.",
+          "cn": "其中一件事，他至今仍记得。"
+        }
+      ]
+    },
+    {
+      "id": "daya-berfungsi",
+      "words": [
+        "daya",
+        "berfungsi"
+      ],
+      "domain": "digital",
+      "reading": [
+        {
+          "id": "Daya baterai ponsel saya tinggal sedikit.",
+          "cn": "我手机的电池电量已经不多了。"
+        },
+        {
+          "id": "Meski masih menyala, beberapa fiturnya tidak berfungsi dengan baik.",
+          "cn": "虽然还能开机，但有些功能运作不正常。"
+        }
+      ]
+    },
+    {
+      "id": "mogok-kecelakaan",
+      "words": [
+        "mogok",
+        "kecelakaan"
+      ],
+      "domain": "transport",
+      "reading": [
+        {
+          "id": "Motor saya mogok saat berangkat kerja tadi pagi.",
+          "cn": "今天早上上班路上，我的摩托车抛锚了。"
+        },
+        {
+          "id": "Untungnya tidak terjadi kecelakaan dan saya bisa menepi dengan aman.",
+          "cn": "幸好没有发生事故，我安全地靠边停下了。"
+        }
+      ]
+    },
+    {
+      "id": "mematuhi-hak",
+      "words": [
+        "mematuhi",
+        "hak"
+      ],
+      "domain": "work",
+      "reading": [
+        {
+          "id": "Setiap staf wajib mematuhi aturan yang berlaku.",
+          "cn": "每位员工都必须遵守现行规定。"
+        },
+        {
+          "id": "Di sisi lain, mereka juga punya hak untuk bertanya jika ada yang kurang jelas.",
+          "cn": "另一方面，如果有不清楚的地方，他们也有权提问。"
+        }
+      ]
+    },
+    {
+      "id": "kebutuhan-praktis",
+      "words": [
+        "kebutuhan",
+        "praktis"
+      ],
+      "domain": "shopping",
+      "reading": [
+        {
+          "id": "Saya membuat daftar kebutuhan sebelum pergi belanja.",
+          "cn": "购物前我先列出需要买的东西。"
+        },
+        {
+          "id": "Memesan lewat aplikasi kadang lebih praktis kalau sedang sibuk.",
+          "cn": "忙的时候，用应用下单有时更方便。"
+        }
+      ]
+    },
+    {
+      "id": "nyesel-cemburu",
+      "words": [
+        "nyesel",
+        "cemburu"
+      ],
+      "domain": "social",
+      "reading": [
+        {
+          "id": "Dia nyesel karena kemarin berbicara terlalu keras.",
+          "cn": "他后悔昨天说话太冲。"
+        },
+        {
+          "id": "Pasangannya sempat cemburu, jadi mereka perlu bicara baik-baik.",
+          "cn": "伴侣一度吃醋，所以他们需要好好沟通。"
+        }
+      ]
+    },
+    {
+      "id": "taruh-rapi",
+      "words": [
+        "taruh",
+        "rapi"
+      ],
+      "domain": "home",
+      "reading": [
+        {
+          "id": "Taruh dokumen penting di satu tempat saja.",
+          "cn": "把重要文件统一放在一个地方。"
+        },
+        {
+          "id": "Kalau mejanya rapi, kita lebih mudah menemukan barang.",
+          "cn": "桌子整齐的话，找东西就更方便。"
+        }
+      ]
+    },
+    {
+      "id": "mengajak-berkencan",
+      "words": [
+        "mengajak",
+        "berkencan"
+      ],
+      "domain": "social",
+      "reading": [
+        {
+          "id": "Saya ingin mengajak dia jalan-jalan akhir pekan ini.",
+          "cn": "我想约她这周末出去走走。"
+        },
+        {
+          "id": "Kalau dia setuju, kami bisa berkencan sambil mencoba tempat makan baru.",
+          "cn": "如果她愿意，我们可以边约会边尝试一家新餐馆。"
+        }
+      ]
+    },
+    {
+      "id": "seluruh-kelompok",
+      "words": [
+        "seluruh",
+        "kelompok"
+      ],
+      "domain": "work",
+      "reading": [
+        {
+          "id": "Seluruh peserta sudah datang sebelum acara dimulai.",
+          "cn": "活动开始前，所有参与者都已经到了。"
+        },
+        {
+          "id": "Kami lalu dibagi menjadi dua kelompok kecil.",
+          "cn": "随后我们被分成两个小组。"
+        }
+      ]
+    },
+    {
+      "id": "mengembangkan-menghasilkan",
+      "words": [
+        "mengembangkan",
+        "menghasilkan"
+      ],
+      "domain": "work",
+      "reading": [
+        {
+          "id": "Perusahaan sedang mengembangkan produk untuk pasar lokal.",
+          "cn": "公司正在为本地市场开发产品。"
+        },
+        {
+          "id": "Mereka berharap produk baru itu bisa menghasilkan penjualan yang stabil.",
+          "cn": "他们希望新产品能带来稳定销售。"
+        }
+      ]
+    },
+    {
+      "id": "memenuhi-berlaku",
+      "words": [
+        "memenuhi",
+        "berlaku"
+      ],
+      "domain": "work",
+      "reading": [
+        {
+          "id": "Produk harus memenuhi syarat sebelum bisa dipasarkan.",
+          "cn": "产品上市销售前必须符合要求。"
+        },
+        {
+          "id": "Aturan yang berlaku saat ini juga perlu kami periksa lagi.",
+          "cn": "我们还需要再核对目前生效的规定。"
+        }
+      ]
+    },
+    {
+      "id": "sembuh-sepenuhnya",
+      "words": [
+        "sembuh",
+        "sepenuhnya"
+      ],
+      "domain": "health",
+      "reading": [
+        {
+          "id": "Batuknya sudah berkurang, tetapi dia belum sembuh.",
+          "cn": "他的咳嗽减轻了，但还没有康复。"
+        },
+        {
+          "id": "Dokter bilang tubuhnya perlu waktu untuk pulih sepenuhnya.",
+          "cn": "医生说，他的身体还需要时间才能完全恢复。"
+        }
+      ]
+    },
+    {
+      "id": "sepenuhnya-tindakan",
+      "words": [
+        "sepenuhnya",
+        "tindakan"
+      ],
+      "domain": "work",
+      "reading": [
+        {
+          "id": "Saya belum sepenuhnya memahami penyebab masalah itu.",
+          "cn": "我还没有完全弄明白那个问题的原因。"
+        },
+        {
+          "id": "Karena itu, jangan mengambil tindakan sebelum datanya diperiksa.",
+          "cn": "所以，在数据检查之前先不要采取行动。"
+        }
+      ]
+    },
+    {
+      "id": "peristiwa-ditemukan",
+      "words": [
+        "peristiwa",
+        "ditemukan"
+      ],
+      "domain": "incident",
+      "reading": [
+        {
+          "id": "Kami mendengar kabar tentang peristiwa itu tadi pagi.",
+          "cn": "我们今天早上听说了那件事。"
+        },
+        {
+          "id": "Beberapa barang yang hilang akhirnya ditemukan tidak jauh dari lokasi.",
+          "cn": "一些丢失的物品最终在附近被找到了。"
+        }
+      ]
+    },
+    {
+      "id": "awan-bersinar",
+      "words": [
+        "awan",
+        "bersinar"
+      ],
+      "domain": "weather",
+      "reading": [
+        {
+          "id": "Awan tebal sempat menutupi langit pagi ini.",
+          "cn": "今天早上厚厚的云层一度遮住天空。"
+        },
+        {
+          "id": "Menjelang siang, matahari mulai bersinar lagi.",
+          "cn": "临近中午，太阳又开始出来了。"
+        }
+      ]
+    },
+    {
+      "id": "menyentuh-gatal",
+      "words": [
+        "menyentuh",
+        "gatal"
+      ],
+      "domain": "health",
+      "reading": [
+        {
+          "id": "Jangan terus menyentuh bagian kulit yang iritasi.",
+          "cn": "别一直触碰受刺激的那片皮肤。"
+        },
+        {
+          "id": "Kalau terasa gatal, sebaiknya cari tahu penyebabnya.",
+          "cn": "如果觉得痒，最好弄清原因。"
+        }
+      ]
+    },
+    {
+      "id": "menatap-kecewa",
+      "words": [
+        "menatap",
+        "kecewa"
+      ],
+      "domain": "social",
+      "reading": [
+        {
+          "id": "Dia hanya menatap ponselnya selama beberapa menit.",
+          "cn": "他只是盯着手机看了几分钟。"
+        },
+        {
+          "id": "Wajahnya terlihat kecewa karena pesan itu belum dibalas.",
+          "cn": "因为消息还没得到回复，他看上去有点失望。"
+        }
+      ]
+    },
+    {
+      "id": "semoga-lega",
+      "words": [
+        "semoga",
+        "lega"
+      ],
+      "domain": "social",
+      "reading": [
+        {
+          "id": "Semoga urusan keluargamu segera membaik, ya.",
+          "cn": "希望你家里的事情能尽快好起来。"
+        },
+        {
+          "id": "Mendengar kabar baik darimu pasti membuatku lega.",
+          "cn": "听到你的好消息，我一定会松一口气。"
+        }
+      ]
+    },
+    {
+      "id": "menyembunyikan-peristiwa",
+      "words": [
+        "menyembunyikan",
+        "peristiwa"
+      ],
+      "domain": "social",
+      "reading": [
+        {
+          "id": "Dia tidak ingin menyembunyikan masalah itu dari keluarganya.",
+          "cn": "他不想对家里隐瞒那件事。"
+        },
+        {
+          "id": "Akhirnya dia menceritakan peristiwa yang sebenarnya.",
+          "cn": "最后他讲出了事情的真相。"
+        }
+      ]
+    },
+    {
+      "id": "menyalakan-daya",
+      "words": [
+        "menyalakan",
+        "daya"
+      ],
+      "domain": "digital",
+      "reading": [
+        {
+          "id": "Saya mencoba menyalakan ponsel setelah dicas beberapa menit.",
+          "cn": "充了几分钟电后，我试着打开手机。"
+        },
+        {
+          "id": "Ternyata daya baterainya masih terlalu rendah.",
+          "cn": "原来电池电量还是太低。"
+        }
+      ]
+    },
+    {
+      "id": "jarak-seberapa",
+      "words": [
+        "jarak",
+        "seberapa"
+      ],
+      "domain": "transport",
+      "reading": [
+        {
+          "id": "Saya ingin tahu jarak dari sini ke stasiun.",
+          "cn": "我想知道从这里到车站的距离。"
+        },
+        {
+          "id": "Seberapa lama perjalanan kalau jalanan sedang macet?",
+          "cn": "如果堵车，路上要花多长时间？"
+        }
+      ]
+    },
+    {
+      "id": "mengalir-terpeleset",
+      "words": [
+        "mengalir",
+        "terpeleset"
+      ],
+      "domain": "home",
+      "reading": [
+        {
+          "id": "Ada air yang mengalir dari kamar mandi ke lantai.",
+          "cn": "有水从浴室流到了地板上。"
+        },
+        {
+          "id": "Hati-hati melangkah supaya tidak terpeleset.",
+          "cn": "走路小心，免得滑倒。"
+        }
+      ]
+    },
+    {
+      "id": "kenal-peduli",
+      "words": [
+        "kenal",
+        "peduli"
+      ],
+      "domain": "social",
+      "reading": [
+        {
+          "id": "Aku belum terlalu kenal dia karena baru beberapa kali bertemu.",
+          "cn": "我和他还不太熟，因为只见过几次。"
+        },
+        {
+          "id": "Tapi aku tahu dia peduli sama teman-temannya.",
+          "cn": "但我知道他很关心朋友。"
+        }
+      ]
+    },
+    {
+      "id": "berkencan-setia",
+      "words": [
+        "berkencan",
+        "setia"
+      ],
+      "domain": "social",
+      "reading": [
+        {
+          "id": "Mereka sudah berkencan selama beberapa bulan.",
+          "cn": "他们已经约会几个月了。"
+        },
+        {
+          "id": "Menurut mereka, saling percaya dan tetap setia itu penting.",
+          "cn": "在他们看来，互相信任和保持忠诚很重要。"
+        }
+      ]
+    },
+    {
+      "id": "muat-barang",
+      "words": [
+        "muat",
+        "barang"
+      ],
+      "domain": "logistics",
+      "reading": [
+        {
+          "id": "Mobil kecil ini tidak muat untuk membawa semua kardus.",
+          "cn": "这辆小车装不下所有纸箱。"
+        },
+        {
+          "id": "Sebagian barang harus dikirim dengan kendaraan lain.",
+          "cn": "有些货物必须用另一辆车运送。"
+        }
+      ]
+    },
+    {
+      "id": "bongkar-retur",
+      "words": [
+        "bongkar",
+        "retur"
+      ],
+      "domain": "logistics",
+      "reading": [
+        {
+          "id": "Staf gudang mulai bongkar kiriman pagi ini.",
+          "cn": "仓库人员今天早上开始卸货。"
+        },
+        {
+          "id": "Produk yang rusak akan dipisahkan untuk proses retur.",
+          "cn": "损坏的产品将被分开放置，等待退货处理。"
+        }
+      ]
+    },
+    {
+      "id": "gatal-demam",
+      "words": [
+        "gatal",
+        "demam"
+      ],
+      "domain": "health",
+      "reading": [
+        {
+          "id": "Kulitnya terasa gatal setelah pulang dari perjalanan.",
+          "cn": "旅行回来后，他的皮肤发痒。"
+        },
+        {
+          "id": "Karena juga demam, dia memutuskan untuk memeriksakan diri.",
+          "cn": "因为还有发烧，他决定去检查一下。"
+        }
+      ]
+    },
+    {
+      "id": "invoice-kebutuhan",
+      "words": [
+        "invoice",
+        "kebutuhan"
+      ],
+      "domain": "finance",
+      "reading": [
+        {
+          "id": "Saya mengecek invoice untuk pembelian bulan ini.",
+          "cn": "我正在核对这个月采购的发票。"
+        },
+        {
+          "id": "Jumlah yang dipesan harus sesuai dengan kebutuhan toko.",
+          "cn": "订购数量必须符合店里的需求。"
+        }
+      ]
+    },
+    {
+      "id": "mewah-istimewa",
+      "words": [
+        "mewah",
+        "istimewa"
+      ],
+      "domain": "shopping",
+      "reading": [
+        {
+          "id": "Restoran itu tidak terlalu mewah, tetapi tempatnya nyaman.",
+          "cn": "那家餐馆不算豪华，但环境很舒服。"
+        },
+        {
+          "id": "Buat saya, makan bersama teman sudah terasa istimewa.",
+          "cn": "对我来说，和朋友一起吃饭就很特别。"
+        }
+      ]
+    },
+    {
+      "id": "terbuat-istimewa",
+      "words": [
+        "terbuat",
+        "istimewa"
+      ],
+      "domain": "shopping",
+      "reading": [
+        {
+          "id": "Tas kecil itu terbuat dari kain lokal.",
+          "cn": "那个小包是本地布料制作的。"
+        },
+        {
+          "id": "Motifnya sederhana, tetapi menurut saya cukup istimewa.",
+          "cn": "花纹很简单，但我觉得挺特别。"
+        }
+      ]
+    },
+    {
+      "id": "mencetak-invoice",
+      "words": [
+        "mencetak",
+        "invoice"
+      ],
+      "domain": "work",
+      "reading": [
+        {
+          "id": "Saya harus mencetak dua lembar dokumen sebelum rapat.",
+          "cn": "开会之前我得打印两份文件。"
+        },
+        {
+          "id": "Salah satunya adalah invoice yang diminta bagian keuangan.",
+          "cn": "其中一份是财务部门要求的发票。"
+        }
+      ]
+    },
+    {
+      "id": "urus-langkah",
+      "words": [
+        "urus",
+        "langkah"
+      ],
+      "domain": "work",
+      "reading": [
+        {
+          "id": "Tenang, dokumen ini bisa saya urus hari ini.",
+          "cn": "放心，这些文件我今天可以处理。"
+        },
+        {
+          "id": "Langkah pertama adalah memastikan semua tanda tangan lengkap.",
+          "cn": "第一步是确认签字都齐全。"
+        }
+      ]
+    },
+    {
+      "id": "melempar-kecelakaan",
+      "words": [
+        "melempar",
+        "kecelakaan"
+      ],
+      "domain": "incident",
+      "reading": [
+        {
+          "id": "Jangan melempar barang dari atas kendaraan.",
+          "cn": "不要从车上往外扔东西。"
+        },
+        {
+          "id": "Tindakan seperti itu bisa menyebabkan kecelakaan di jalan.",
+          "cn": "这样的行为可能引发交通事故。"
+        }
+      ]
+    },
+    {
+      "id": "kecewa-repot",
+      "words": [
+        "kecewa",
+        "repot"
+      ],
+      "domain": "social",
+      "reading": [
+        {
+          "id": "Dia agak kecewa karena pesanannya terlambat.",
+          "cn": "订单迟到了，他有点失望。"
+        },
+        {
+          "id": "Untungnya staf toko membantu, jadi urusannya tidak terlalu repot.",
+          "cn": "好在店员帮了忙，处理起来不算太麻烦。"
+        }
+      ]
+    },
+    {
+      "id": "berikutnya-tindakan",
+      "words": [
+        "berikutnya",
+        "tindakan"
+      ],
+      "domain": "work",
+      "reading": [
+        {
+          "id": "Langkah berikutnya adalah mengecek semua keluhan yang masuk.",
+          "cn": "下一步是检查收到的所有投诉。"
+        },
+        {
+          "id": "Kalau masalahnya jelas, barulah kita menentukan tindakan.",
+          "cn": "问题明确后，我们再决定采取什么措施。"
+        }
+      ]
+    },
+    {
+      "id": "mengantar-barang",
+      "words": [
+        "mengantar",
+        "barang"
+      ],
+      "domain": "logistics",
+      "reading": [
+        {
+          "id": "Kurir akan mengantar paket ke kantor siang ini.",
+          "cn": "快递员今天中午会把包裹送到办公室。"
+        },
+        {
+          "id": "Tolong cek barang yang datang sebelum tanda tangan.",
+          "cn": "签字之前请先检查送来的货物。"
+        }
+      ]
+    },
+    {
+      "id": "mundur-meledak",
+      "words": [
+        "mundur",
+        "meledak"
+      ],
+      "domain": "transport",
+      "reading": [
+        {
+          "id": "Pengemudi diminta mundur sedikit dari lokasi kejadian.",
+          "cn": "司机被要求从事发地点稍微后退。"
+        },
+        {
+          "id": "Ternyata salah satu ban mobil baru saja meledak di jalan.",
+          "cn": "原来车上的一个轮胎刚刚在路上爆了。"
+        }
+      ]
+    },
+    {
+      "id": "biarpun-haus",
+      "words": [
+        "biarpun",
+        "haus"
+      ],
+      "domain": "daily",
+      "reading": [
+        {
+          "id": "Biarpun cuacanya panas, saya tetap ingin jalan sebentar.",
+          "cn": "虽然天气很热，我还是想出去走一会儿。"
+        },
+        {
+          "id": "Setelah itu saya merasa haus dan membeli air minum.",
+          "cn": "之后我口渴了，就买了饮用水。"
+        }
+      ]
+    },
+    {
+      "id": "meletakkan-mengunduh",
+      "words": [
+        "meletakkan",
+        "mengunduh"
+      ],
+      "domain": "digital",
+      "reading": [
+        {
+          "id": "Saya meletakkan ponsel di meja dekat jendela.",
+          "cn": "我把手机放在窗边桌子上。"
+        },
+        {
+          "id": "Sambil menunggu, saya mengunduh berkas yang diperlukan.",
+          "cn": "等候时，我下载了需要的文件。"
+        }
+      ]
+    }
+  ]
+}
