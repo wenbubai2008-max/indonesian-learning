@@ -9135,17 +9135,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 08:00",
+    "last_seen": "2026-10-02 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-12"
+      "2026-09-12",
+      "2026-10-02"
     ],
     "lesson_occurrences": [
-      "2026-09-12 08:00"
+      "2026-09-12 08:00",
+      "2026-10-02 08:00"
     ]
   },
   {
@@ -9274,9 +9276,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-02 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9285,7 +9287,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-13",
       "2026-09-25",
       "2026-09-27",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-02"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
@@ -9293,7 +9296,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-25 18:00",
       "2026-09-27 08:00",
       "2026-10-01 08:00",
-      "2026-10-01 18:00"
+      "2026-10-01 18:00",
+      "2026-10-02 08:00"
     ]
   },
   {
@@ -12414,9 +12418,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-30 18:00",
+    "last_seen": "2026-10-02 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -12424,12 +12428,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-23",
       "2026-09-28",
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-02"
     ],
     "lesson_occurrences": [
       "2026-09-23 08:00",
       "2026-09-28 08:00",
-      "2026-09-30 18:00"
+      "2026-09-30 18:00",
+      "2026-10-02 08:00"
     ]
   },
   {
@@ -13226,23 +13232,27 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "他一边微笑，一边解释那个问题。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-22 18:00",
-    "last_seen": "2026-09-30 18:00",
+    "last_seen": "2026-10-02 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-22",
       "2026-09-28",
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-02"
     ],
     "lesson_occurrences": [
       "2026-09-22 18:00",
       "2026-09-28 18:00",
-      "2026-09-30 18:00"
+      "2026-09-30 18:00",
+      "2026-10-02 08:00"
     ]
   },
   {
@@ -13414,9 +13424,9 @@ window.DAILY_VOCAB_DB = [
       "口语",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-30 18:00",
+    "last_seen": "2026-10-02 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13424,12 +13434,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-25",
       "2026-09-29",
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-02"
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00",
       "2026-09-29 08:00",
-      "2026-09-30 18:00"
+      "2026-09-30 18:00",
+      "2026-10-02 08:00"
     ]
   },
   {
@@ -15901,6 +15913,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-01 18:00"
+    ]
+  },
+  {
+    "word": "sepenuhnya",
+    "cn": "完全地",
+    "en": "fully; completely",
+    "root": "penuh",
+    "root_cn": "满；完整",
+    "example": "Saya belum sepenuhnya paham cara kerja sistem ini.",
+    "example_cn": "我还没有完全理解这个系统的运作方式。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "sembuh",
+    "cn": "恢复；痊愈",
+    "en": "recover; heal",
+    "root": "sembuh",
+    "root_cn": "痊愈",
+    "example": "Batuknya sudah membaik, tapi dia belum sembuh sepenuhnya.",
+    "example_cn": "他的咳嗽好转了，但还没有完全痊愈。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "menyentuh",
+    "cn": "触摸；触及",
+    "en": "touch",
+    "root": "sentuh",
+    "root_cn": "触摸",
+    "example": "Jangan menyentuh kabel itu sebelum listrik dimatikan.",
+    "example_cn": "断电之前不要碰那根电线。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "bersinar",
+    "cn": "闪耀；发光",
+    "en": "shine; glow",
+    "root": "sinar",
+    "root_cn": "光线",
+    "example": "Matahari mulai bersinar setelah hujan berhenti.",
+    "example_cn": "雨停后太阳开始照耀。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "tindakan",
+    "cn": "行动；措施",
+    "en": "action; measure",
+    "root": "tindak",
+    "root_cn": "行动；处理",
+    "example": "Perusahaan perlu mengambil tindakan sebelum masalahnya makin besar.",
+    "example_cn": "公司需要在问题变大前采取行动。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "kisah",
+    "cn": "故事；叙事",
+    "en": "story; tale",
+    "root": "kisah",
+    "root_cn": "故事",
+    "example": "Dia menceritakan kisah tentang masa kecilnya di kampung.",
+    "example_cn": "他讲了自己在村里童年的故事。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "ditemukan",
+    "cn": "被发现；被找到",
+    "en": "be found; be discovered",
+    "root": "temu",
+    "root_cn": "见；找到",
+    "example": "Dompet yang hilang akhirnya ditemukan di dekat pintu masuk.",
+    "example_cn": "丢失的钱包最后在入口附近被找到了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "sebelah",
+    "cn": "旁边；一侧",
+    "en": "side; next to",
+    "root": "sebelah",
+    "root_cn": "一侧",
+    "example": "Toko itu ada di sebelah bank.",
+    "example_cn": "那家店在银行旁边。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "peristiwa",
+    "cn": "事件",
+    "en": "event; incident",
+    "root": "peristiwa",
+    "root_cn": "事件",
+    "example": "Peristiwa itu terjadi tadi malam dan membuat jalan sempat ditutup.",
+    "example_cn": "那件事昨晚发生，一度导致道路封闭。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "daya",
+    "cn": "力量；能力；功率",
+    "en": "power; capacity",
+    "root": "daya",
+    "root_cn": "力量；能力",
+    "example": "Baterai ini punya daya yang cukup untuk dipakai seharian.",
+    "example_cn": "这块电池的电量/能力足够用一整天。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
     ]
   }
 ];

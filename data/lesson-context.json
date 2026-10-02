@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-02",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 42
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-01T12:36:12.182Z",
-    "lesson_watermark": "2026-10-01 18:00",
-    "index_updated": "2026-10-01",
-    "runtime_hash": "9d2d5677ef76305cd2cfc9bdb51e3e72a98d4cb2ffe12d2b96733baef13fadf5",
-    "index_hash": "1cf9f05fa86b4f409da05f8e256cfcf44964297ce5048e049478e36af2fde7ec",
+    "runtime_generated_at": "2026-10-02T01:00:13.982Z",
+    "lesson_watermark": "2026-10-02 08:00",
+    "index_updated": "2026-10-02",
+    "runtime_hash": "b9b59153c9d52559fc5214307d2d4febe14b98f47b827907ad5e85027362c111",
+    "index_hash": "5e075d1e8008fd983700640961bc7d9a49d0477764801aa8122d86d7b3f50199",
     "rules_hash": "a4b65072036f29bb3b55fdd5c56c551f407d8aed1d9353382e5cb28bc32d575f"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "sepenuhnya",
-        "完全地"
-      ],
-      [
-        "sembuh",
-        "恢复"
-      ],
-      [
-        "menyentuh",
-        "触摸 / 弹奏"
-      ],
-      [
-        "bersinar",
-        "闪耀 / 发光"
-      ],
-      [
-        "tindakan",
-        "行动"
-      ],
-      [
-        "kisah",
-        "故事"
-      ],
-      [
-        "ditemukan",
-        "被发现"
-      ],
-      [
-        "sebelah",
-        "旁边"
-      ],
-      [
-        "peristiwa",
-        "事件、事故"
-      ],
-      [
-        "daya",
-        "力量"
-      ],
       [
         "jarak",
         "距离"
@@ -1768,14 +1728,14 @@
         "分开；离婚"
       ],
       [
-        "biarpun",
+        "bersinar",
         2,
         0,
         "",
         "",
-        "即使；尽管",
-        "biar",
-        "让；即便"
+        "闪耀；发光",
+        "sinar",
+        "光线"
       ]
     ],
     "focus": [
@@ -2333,6 +2293,29 @@
         "membunuh",
         "mengalir"
       ]
+    },
+    {
+      "date": "2026-10-02",
+      "session": "am",
+      "review_core": [
+        "niat",
+        "seraya",
+        "menyalin",
+        "kabur",
+        "baper"
+      ],
+      "new_words": [
+        "sepenuhnya",
+        "sembuh",
+        "menyentuh",
+        "bersinar",
+        "tindakan",
+        "kisah",
+        "ditemukan",
+        "sebelah",
+        "peristiwa",
+        "daya"
+      ]
     }
   ],
   "previous_pm": {
@@ -2351,7 +2334,88 @@
       "menunjukkan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-02",
+    "vocab": [
+      [
+        "sepenuhnya",
+        "完全地",
+        "fully; completely",
+        "penuh",
+        "满；完整"
+      ],
+      [
+        "sembuh",
+        "恢复；痊愈",
+        "recover; heal",
+        "sembuh",
+        "痊愈"
+      ],
+      [
+        "menyentuh",
+        "触摸；触及",
+        "touch",
+        "sentuh",
+        "触摸"
+      ],
+      [
+        "bersinar",
+        "闪耀；发光",
+        "shine; glow",
+        "sinar",
+        "光线"
+      ],
+      [
+        "tindakan",
+        "行动；措施",
+        "action; measure",
+        "tindak",
+        "行动；处理"
+      ],
+      [
+        "kisah",
+        "故事；叙事",
+        "story; tale",
+        "kisah",
+        "故事"
+      ],
+      [
+        "ditemukan",
+        "被发现；被找到",
+        "be found; be discovered",
+        "temu",
+        "见；找到"
+      ],
+      [
+        "sebelah",
+        "旁边；一侧",
+        "side; next to",
+        "sebelah",
+        "一侧"
+      ],
+      [
+        "peristiwa",
+        "事件",
+        "event; incident",
+        "peristiwa",
+        "事件"
+      ],
+      [
+        "daya",
+        "力量；能力；功率",
+        "power; capacity",
+        "daya",
+        "力量；能力"
+      ]
+    ],
+    "review_vocab": [
+      "niat",
+      "seraya",
+      "menyalin",
+      "kabur",
+      "baper"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
