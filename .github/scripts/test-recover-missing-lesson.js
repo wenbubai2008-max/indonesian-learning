@@ -49,6 +49,41 @@ for(const slot of ['am','pm']){
    assert.equal(lesson.date,input.date);assert.equal(lesson.session,slot);
    assert(index.dates.find(x=>x.date===input.date)[slot]===true);
    assert(r.variant>=0&&r.variant<6);
+   assert.equal(r.source,'v4_generated');
+ });
+ test(slot.toUpperCase()+' a valid staged original takes priority over V4 with no PR',()=>{
+   const {input,target}=setup(slot);
+   const draft=input.generate(input.contextBuilder(),{variant:0});
+   let generated=0,contextBuilt=0;
+   const result=recover({...input,originalCandidate:draft,
+     contextBuilder:()=>{contextBuilt++;throw Error('V4 context not needed for original')},
+     generate:()=>{generated++;throw Error('Must not replace valid ChatGPT draft')}});
+   assert.equal(result.status,'ready');
+   assert.equal(result.source,'original_staged');
+   assert.equal(result.variant,null);
+   assert.deepEqual(result.files.map(x=>x.path),[target,'data/daily/index.json']);
+   assert.deepEqual(JSON.parse(result.files[0].content),draft);
+   assert.equal(JSON.parse(result.files[1].content).dates.find(x=>x.date===input.date)[slot],true);
+   assert.equal(generated,0);assert.equal(contextBuilt,0);
+ });
+ test(slot.toUpperCase()+' an invalid staged original fails formal validation before V4 fallback',()=>{
+   const {input}=setup(slot),draft=input.generate(input.contextBuilder(),{variant:0});
+   draft.reading.text='Terlalu pendek.';
+   let n=0;
+   const result=recover({...input,originalCandidate:draft,
+     generate:(ctx,opt)=>{n++;return input.generate(ctx,opt)}});
+   assert.equal(result.status,'ready');
+   assert.equal(result.source,'v4_generated');
+   assert(n>=1);
+   assert(result.originalRejection?.some(x=>x.code==='READING_INVALID'),
+     'A staged draft cannot bypass the authoritative reading length requirement');
+   assert.notDeepEqual(JSON.parse(result.files[0].content),draft);
+ });
+ test(slot.toUpperCase()+' invalid staged JSON object does not weaken the V4 fallback',()=>{
+   const {input}=setup(slot);
+   const result=recover({...input,originalCandidate:null});
+   assert.equal(result.source,'v4_generated');
+   assert(result.originalRejection?.some(x=>x.code==='INPUT_INVALID'||x.code==='LESSON_INVALID'));
  });
  test(slot.toUpperCase()+' published lesson is never overwritten or regenerated',()=>{
    const {input,target}=setup(slot);let invoked=0;
@@ -57,7 +92,7 @@ for(const slot of ['am','pm']){
    let row=record.dates.find(x=>x.date===input.date);
    if(!row){row={date:input.date,am:false,pm:false};record.dates.push(row)}
    row[slot]=true;
-   const result=recover({...input,index:record,
+   const result=recover({...input,index:record,originalCandidate:original,
      read:(p,optional)=>p===target?original:input.read(p,optional),
      contextBuilder:()=>{invoked++;throw Error('must not generate')}});
    assert.equal(result.status,'already_published');assert.equal(invoked,0);assert.deepEqual(result.files,[]);
@@ -104,6 +139,9 @@ test('CLI parser defaults to no file writes',()=>{
  assert.deepEqual(parseArgs(['--date','2026-10-01','--session','am','--main-head',sha]),{
    write:false,date:'2026-10-01',session:'am','main-head':sha
  });
+ assert.equal(parseArgs(['--date','2026-10-01','--session','am','--main-head',sha,
+   '--original-candidate','/tmp/readonly-original.json'])['original-candidate'],
+   '/tmp/readonly-original.json');
 });
 test('fallback workflow has one existing twice-daily clock and valid Bash steps',()=>{
  const cp=require('node:child_process');
@@ -352,6 +390,13 @@ test('fallback checks normal/manual priority at publication time, not just in th
  const block=w.slice(start,finish);
  assert(block.includes('NORMAL_RELEASE_ACTIVE PR='));
  assert(block.includes('normal-release-priority.jq'));
+ assert(block.includes('ORIGINAL_STAGED_FOUND'));
+ assert(block.includes('stage_paths')&&block.includes('"$stage_paths" = "$candidate"'));
+ assert(block.includes('original_arg=(--original-candidate "$staged_candidate")'));
+ assert(block.includes('ORIGINAL_STAGED_CHANGED'));
+ assert(block.includes('LESSON_RECOVERY_SOURCE'));
+ assert(block.includes('git ls-remote --heads origin "refs/heads/$original_branch"'));
+ assert(block.indexOf('ORIGINAL_STAGED_FOUND')<block.indexOf('node .github/scripts/recover-missing-lesson.js'));
  assert(block.includes('priority_rc'));
  assert(block.includes('Do not race the normal lesson'));
  assert(block.indexOf('NORMAL_RELEASE_ACTIVE')<block.indexOf('node .github/scripts/recover-missing-lesson.js'));

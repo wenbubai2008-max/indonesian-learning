@@ -805,9 +805,13 @@ jobs:
             git fetch --no-tags origin main
             git reset --hard origin/main
             base="$(git rev-parse HEAD)"
-            # An active original ChatGPT/manual release PR takes priority. Check immediately
-            # before V2 generation, inside the existing serialized GitHub write flow.
-            # A previously published official file is handled by the canonical planner.
+            # An active original PR takes precedence. If its PR never got created but
+            # the original JSON reached its exact release branch, reuse that draft
+            # through the same canonical planner before generating anything with V4.
+            staged_candidate="$RUNNER_TEMP/original-staged-${attempt}.json"
+            staged_head=''
+            rm -f "$staged_candidate"
+            original_branch="lesson-release-$date-$session"
             if ! git cat-file -e "$base:$candidate" 2>/dev/null; then
               original_branch="lesson-release-$date-$session"
               owner="$(printf '%s' "$GITHUB_REPOSITORY" | cut -d/ -f1)"
@@ -830,9 +834,34 @@ jobs:
                   exit 1
                 fi
               fi
+              # Read only the existing, same-repository named branch. A transport error
+              # is NOT evidence of an absent original; fail closed rather than switch
+              # endpoints or silently generate a competing candidate.
+              staged_remote="$(git ls-remote --heads origin "refs/heads/$original_branch")" ||
+                { echo '::error title=Original draft read failed::Unable to inspect release branch safely.'; exit 1; }
+              if [ -n "$staged_remote" ]; then
+                git fetch --no-tags origin "refs/heads/$original_branch"
+                staged_head="$(git rev-parse FETCH_HEAD)"
+                stage_base="$(git merge-base "$base" "$staged_head")" ||
+                  { echo '::error title=Original draft ancestry unknown::Stop, do not publish an untrusted draft.'; exit 1; }
+                # A ChatGPT release branch may contain ONLY its own single lesson JSON.
+                # Do not trust a similarly named development branch or an altered index.
+                stage_paths="$(git diff --name-only "$stage_base" "$staged_head")"
+                if [ "$stage_paths" = "$candidate" ] &&
+                   git cat-file -e "$staged_head:$candidate" 2>/dev/null; then
+                  git show "$staged_head:$candidate" > "$staged_candidate"
+                  echo "ORIGINAL_STAGED_FOUND date=$date session=$session head=$staged_head"
+                else
+                  # Keep the observed head even when the candidate is invalid: the
+                  # before-push race check must compare against this exact snapshot.
+                  echo "::warning title=Original draft not reusable::Release branch is empty or has unexpected changed paths; only the authorized V4 fallback remains eligible."
+                fi
+              fi
             fi
+            original_arg=()
+            if [ -f "$staged_candidate" ]; then original_arg=(--original-candidate "$staged_candidate"); fi
             node .github/scripts/recover-missing-lesson.js \
-              --date "$date" --session "$session" --main-head "$base" --write \
+              --date "$date" --session "$session" --main-head "$base" "${original_arg[@]}" --write \
               > "$RUNNER_TEMP/fallback-result.txt"
             cat "$RUNNER_TEMP/fallback-result.txt"
             if grep -Fq '"status":"already_published"' "$RUNNER_TEMP/fallback-result.txt"; then
@@ -841,6 +870,8 @@ jobs:
             fi
             grep -Fq '"status":"ready"' "$RUNNER_TEMP/fallback-result.txt" ||
               { echo '::error title=Fallback candidate not approved::No publication.'; exit 1; }
+            publication_source="$(sed -n 's/^FALLBACK_LESSON //p' "$RUNNER_TEMP/fallback-result.txt" | jq -er '.source')"
+            echo "LESSON_RECOVERY_SOURCE $publication_source"
             cp "$candidate" "$RUNNER_TEMP/fallback-candidate.json"
             git add -- "$candidate" data/daily/index.json
             paths="$(git diff --cached --name-only)"
@@ -848,10 +879,19 @@ jobs:
             test "$paths" = "$expected" ||
               { echo "::error title=Fallback transaction invalid::Expected exactly lesson and index."; exit 1; }
             git diff --cached --check
-            git commit -m "Publish validated V2 fallback $date $session"
+            git commit -m "Publish validated $publication_source lesson $date $session"
             git fetch --no-tags origin main
             if [ "$(git rev-parse origin/main)" != "$base" ]; then
               echo 'Main advanced during generation: discard candidate and regenerate against latest baseline.'
+              continue
+            fi
+            # Re-read original branch head before any push. If ChatGPT has corrected
+            # or newly uploaded its draft meanwhile, retry from main and revalidate.
+            latest_stage="$(git ls-remote --heads origin "refs/heads/$original_branch")" ||
+              { echo '::error title=Original draft recheck failed::No publication under uncertain race state.'; exit 1; }
+            latest_stage_sha="$(printf '%s' "$latest_stage" | cut -f1)"
+            if [ "$latest_stage_sha" != "$staged_head" ]; then
+              echo 'ORIGINAL_STAGED_CHANGED discard locally prepared lesson and reevaluate source.'
               continue
             fi
             if git push origin HEAD:main; then
@@ -862,7 +902,7 @@ jobs:
                 jq -r --arg d "$date" --arg s "$session" '[.dates[]? | select(.date==$d)][0][$s] // false')"
               test "$flag" = true
               printf '%s %s\n' "$date" "$session" > "$RUNNER_TEMP/fallback-published.txt"
-              echo "FALLBACK_ATOMIC_PUBLISH_OK $date $session"
+              echo "FALLBACK_ATOMIC_PUBLISH_OK $date $session source=$publication_source"
               exit 0
             fi
             # A Git transport error may occur after GitHub accepted the push.
