@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-02",
-    "session": "pm",
-    "time": "18:00",
-    "day": 42
+    "date": "2026-10-03",
+    "session": "am",
+    "time": "08:00",
+    "day": 43
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-02T06:40:34.463Z",
-    "lesson_watermark": "2026-10-02 08:00",
+    "runtime_generated_at": "2026-10-02T11:03:42.655Z",
+    "lesson_watermark": "2026-10-02 18:00",
     "index_updated": "2026-10-02",
-    "runtime_hash": "2ed856d464a88a266ed100822d725fb091d9b5732882657a19b65dc7fcaff326",
-    "index_hash": "5e075d1e8008fd983700640961bc7d9a49d0477764801aa8122d86d7b3f50199",
+    "runtime_hash": "4e7446fbffaa9cea60ffc5e24fd87f762ae12577ab9a35b433148583d7f796c7",
+    "index_hash": "b95b4b84a0d44458859195edb53ae55038b00c8fb573df02ec5f9e4881eeed67",
     "rules_hash": "a4b65072036f29bb3b55fdd5c56c551f407d8aed1d9353382e5cb28bc32d575f"
   },
   "schema": {
@@ -49,10 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "jarak",
-        "距离"
-      ],
       [
         "terbuat",
         "用……制成的"
@@ -446,10 +442,6 @@
       [
         "menempel",
         "粘贴 / 贴上"
-      ],
-      [
-        "mencetak",
-        "打印"
       ],
       [
         "mencampur",
@@ -1084,8 +1076,8 @@
         "讨厌；恨"
       ],
       [
-        "siapkan",
-        "准备好"
+        "tanggung jawab",
+        "责任"
       ],
       [
         "buat",
@@ -1950,14 +1942,6 @@
     ],
     "oral": [
       [
-        "siapkan",
-        "通用",
-        "siapin",
-        "siap",
-        473,
-        "fuzzy"
-      ],
-      [
         "buat",
         "通用",
         "bikin",
@@ -1976,45 +1960,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-09-25",
-      "session": "am",
-      "review_core": [
-        "menunjukkan",
-        "niat",
-        "nyebelin",
-        "berkat",
-        "mengizinkan"
-      ],
-      "new_words": [
-        "berantem",
-        "kabur",
-        "pantas",
-        "kesepakatan",
-        "wilayah",
-        "manfaat",
-        "metode",
-        "sejak",
-        "menuju",
-        "usaha"
-      ]
-    },
-    {
-      "date": "2026-09-25",
-      "session": "pm",
-      "review_core": [
-        "niat",
-        "nyebelin",
-        "mengizinkan",
-        "layak"
-      ],
-      "new_words": [
-        "ketika",
-        "rapat",
-        "keluhan",
-        "pemasok"
-      ]
-    },
     {
       "date": "2026-09-26",
       "session": "am",
@@ -2276,106 +2221,40 @@
         "peristiwa",
         "daya"
       ]
+    },
+    {
+      "date": "2026-10-02",
+      "session": "pm",
+      "review_core": [
+        "ngotot",
+        "sekadar",
+        "nyantai",
+        "pokoknya",
+        "memisahkan"
+      ],
+      "new_words": [
+        "siapkan",
+        "mencetak",
+        "jarak"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "new_words": [
-      "sesudah",
-      "awan",
-      "membunuh",
-      "mengalir"
+      "siapkan",
+      "mencetak",
+      "jarak"
     ],
     "review_core": [
-      "nyinggung",
-      "keberatan",
-      "kelabakan",
-      "ngirit",
-      "menunjukkan"
+      "ngotot",
+      "sekadar",
+      "nyantai",
+      "pokoknya",
+      "memisahkan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-02",
-    "vocab": [
-      [
-        "sepenuhnya",
-        "完全地",
-        "fully; completely",
-        "penuh",
-        "满；完整"
-      ],
-      [
-        "sembuh",
-        "恢复；痊愈",
-        "recover; heal",
-        "sembuh",
-        "痊愈"
-      ],
-      [
-        "menyentuh",
-        "触摸；触及",
-        "touch",
-        "sentuh",
-        "触摸"
-      ],
-      [
-        "bersinar",
-        "闪耀；发光",
-        "shine; glow",
-        "sinar",
-        "光线"
-      ],
-      [
-        "tindakan",
-        "行动；措施",
-        "action; measure",
-        "tindak",
-        "行动；处理"
-      ],
-      [
-        "kisah",
-        "故事；叙事",
-        "story; tale",
-        "kisah",
-        "故事"
-      ],
-      [
-        "ditemukan",
-        "被发现；被找到",
-        "be found; be discovered",
-        "temu",
-        "见；找到"
-      ],
-      [
-        "sebelah",
-        "旁边；一侧",
-        "side; next to",
-        "sebelah",
-        "一侧"
-      ],
-      [
-        "peristiwa",
-        "事件",
-        "event; incident",
-        "peristiwa",
-        "事件"
-      ],
-      [
-        "daya",
-        "力量；能力；功率",
-        "power; capacity",
-        "daya",
-        "力量；能力"
-      ]
-    ],
-    "review_vocab": [
-      "niat",
-      "seraya",
-      "menyalin",
-      "kabur",
-      "baper"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
