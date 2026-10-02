@@ -1,0 +1,245 @@
+{
+  "date": "2026-10-02",
+  "session": "am",
+  "time": "08:00",
+  "day": 42,
+  "level": "A2+–B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜日常生活与实用表达",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "taruh",
+    "cemas",
+    "lega",
+    "semoga",
+    "repot",
+    "urus",
+    "pasang",
+    "lepas",
+    "demam",
+    "gatal"
+  ],
+  "vocab": [
+    {
+      "word": "taruh",
+      "display": "taruh",
+      "audio_text": "taruh",
+      "cn": "放；放置",
+      "en": "put; place",
+      "root": "taruh",
+      "root_cn": "放；放置",
+      "formation": "口语中常直接用 taruh，常见 taruh di sini（放这里）、taruh di meja（放桌上）。",
+      "example": "Taruh tasnya di kursi saja.",
+      "example_cn": "把包放在椅子上就行。",
+      "synonym_note": "taruh 很常用于日常口语；meletakkan 更正式。",
+      "is_oral_new": false
+    },
+    {
+      "word": "cemas",
+      "display": "cemas",
+      "audio_text": "cemas",
+      "cn": "焦虑；担忧",
+      "en": "anxious; worried",
+      "root": "cemas",
+      "root_cn": "焦虑；担忧",
+      "formation": "常见 merasa cemas（感到焦虑）、cemas tentang/soal sesuatu（担心某事）。",
+      "example": "Saya cemas karena belum mendapat kabar.",
+      "example_cn": "因为还没有收到消息，我有点担心。",
+      "synonym_note": "cemas 偏焦虑和担忧；takut 更偏害怕。",
+      "is_oral_new": false
+    },
+    {
+      "word": "lega",
+      "display": "lega",
+      "audio_text": "lega",
+      "cn": "松一口气；宽慰",
+      "en": "relieved",
+      "root": "lega",
+      "root_cn": "宽慰；轻松",
+      "formation": "常见 merasa lega（感到宽慰）、akhirnya lega（终于松了口气）。",
+      "example": "Saya merasa lega setelah masalahnya selesai.",
+      "example_cn": "问题解决以后，我松了一口气。",
+      "synonym_note": "lega 是压力解除后的轻松感；santai 是放松、悠闲。",
+      "is_oral_new": false
+    },
+    {
+      "word": "semoga",
+      "display": "semoga",
+      "audio_text": "semoga",
+      "cn": "希望；祝愿",
+      "en": "hopefully; may",
+      "root": "semoga",
+      "root_cn": "希望；祝愿",
+      "formation": "semoga + 句子，用来表达希望或祝愿，如 Semoga cepat sembuh（希望早日康复）。",
+      "example": "Semoga pekerjaan hari ini berjalan lancar.",
+      "example_cn": "希望今天的工作顺利。",
+      "synonym_note": "semoga 表达祝愿；mudah-mudahan 也表示希望，语气相近。",
+      "is_oral_new": false
+    },
+    {
+      "word": "repot",
+      "display": "repot",
+      "audio_text": "repot",
+      "cn": "麻烦；费事；忙乱",
+      "en": "troublesome; inconvenient; busy",
+      "root": "repot",
+      "root_cn": "麻烦；费事",
+      "formation": "常见 terlalu repot（太麻烦）、merepotkan（给人添麻烦）。",
+      "example": "Kalau terlalu repot, kita bisa cari cara yang lebih sederhana.",
+      "example_cn": "如果太麻烦，我们可以找更简单的办法。",
+      "synonym_note": "repot 强调麻烦、费事；sulit 更强调困难。",
+      "is_oral_new": false
+    },
+    {
+      "word": "urus",
+      "display": "urus",
+      "audio_text": "urus",
+      "cn": "处理；照料；管理",
+      "en": "handle; take care of",
+      "root": "urus",
+      "root_cn": "处理；照料",
+      "formation": "常见 urus dokumen（处理文件）、urus sendiri（自己处理）；派生词 mengurus 也很常见。",
+      "example": "Dokumen ini saya urus sendiri pagi ini.",
+      "example_cn": "这份文件我今天早上自己处理。",
+      "synonym_note": "urus 偏处理、照料具体事务；atur 偏安排和调整。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pasang",
+      "display": "pasang",
+      "audio_text": "pasang",
+      "cn": "安装；装上；配对",
+      "en": "install; put on; pair",
+      "root": "pasang",
+      "root_cn": "安装；装上",
+      "formation": "常见 pasang aplikasi（安装应用）、pasang lampu（装灯）、pasang foto（放上照片）。",
+      "example": "Tolong pasang lampu baru di kamar.",
+      "example_cn": "请在房间里装上新灯。",
+      "synonym_note": "pasang 强调装上或安装；taruh 只是把东西放到某处。",
+      "is_oral_new": false
+    },
+    {
+      "word": "lepas",
+      "display": "lepas",
+      "audio_text": "lepas",
+      "cn": "取下；脱下；松开；释放",
+      "en": "remove; release; let go",
+      "root": "lepas",
+      "root_cn": "松开；脱离",
+      "formation": "常见 lepas sepatu（脱鞋）、lepas dari masalah（摆脱问题）。",
+      "example": "Silakan lepas sepatu sebelum masuk.",
+      "example_cn": "进去之前请脱鞋。",
+      "synonym_note": "lepas 表示从原来的连接或状态中脱离；buka 更常表示打开。",
+      "is_oral_new": false
+    },
+    {
+      "word": "demam",
+      "display": "demam",
+      "audio_text": "demam",
+      "cn": "发烧",
+      "en": "fever; have a fever",
+      "root": "demam",
+      "root_cn": "发烧",
+      "formation": "常见 demam tinggi（高烧）、sedang demam（正在发烧）。",
+      "example": "Dia tidak masuk kerja karena sedang demam.",
+      "example_cn": "他因为正在发烧，所以没有去上班。",
+      "synonym_note": "demam 是发烧；panas 可表示热，但不等同于医学上的发烧。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gatal",
+      "display": "gatal",
+      "audio_text": "gatal",
+      "cn": "痒；发痒",
+      "en": "itchy",
+      "root": "gatal",
+      "root_cn": "痒",
+      "formation": "常见 terasa gatal（觉得痒）、kulit gatal（皮肤痒）。",
+      "example": "Kulit tangan saya terasa gatal sejak tadi malam.",
+      "example_cn": "从昨晚开始，我手上的皮肤觉得痒。",
+      "synonym_note": "gatal 是痒；sakit 是疼或生病。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "atur",
+    "becek",
+    "berantem",
+    "bercerai",
+    "bawain"
+  ],
+  "sentences": [
+    {
+      "text": "Taruh dokumennya di meja, nanti saya urus setelah sarapan.",
+      "cn": "把文件放在桌上，我吃完早饭再处理。"
+    },
+    {
+      "text": "Saya sempat cemas, tetapi akhirnya merasa lega setelah mendapat kabar.",
+      "cn": "我刚才有些担心，但收到消息后终于松了一口气。"
+    },
+    {
+      "text": "Kalau memasang alat ini terlalu repot, kita atur waktunya lagi.",
+      "cn": "如果安装这个设备太麻烦，我们再安排时间。"
+    },
+    {
+      "text": "Dia sedang demam dan kulitnya juga terasa gatal.",
+      "cn": "他正在发烧，皮肤也觉得痒。"
+    },
+    {
+      "text": "Semoga mereka tidak berantem lagi dan masalahnya cepat selesai.",
+      "cn": "希望他们不要再吵架，问题能快点解决。"
+    }
+  ],
+  "reading": {
+    "text": "Pagi ini saya harus urus beberapa hal di rumah sebelum bekerja. Saya taruh dokumen di meja lalu mencoba pasang rak kecil di kamar. Awalnya saya cemas karena pekerjaannya terlihat repot, tetapi setelah selesai saya merasa lega. Adik saya sedang demam dan kulit tangannya terasa gatal, jadi saya bawain air dan obat yang sudah dia punya. Di luar rumah jalan masih becek setelah hujan. Saya juga harus atur jadwal hari ini supaya tidak terlalu padat. Sebelum berangkat, saya lepas sandal di depan pintu dan berkata, semoga semua urusan hari ini berjalan lancar.",
+    "cn": "今天早上上班前，我要先处理几件家里的事情。我把文件放在桌上，然后试着在房间里装一个小架子。开始时我有些担心，因为看起来很麻烦，但做完以后我松了一口气。弟弟正在发烧，手上的皮肤也有些痒，所以我给他带了水和他已经有的药。下过雨后，屋外的路还是湿泥泞的。我还要安排今天的时间，免得太满。出门前，我在门口脱下拖鞋，并希望今天所有事情都顺利。"
+  },
+  "quiz": [
+    {
+      "question": "“安排；调整”对应哪个复习词？",
+      "options": [
+        "atur",
+        "gatal",
+        "lega",
+        "pasang"
+      ],
+      "answer_index": 0,
+      "answer": "atur",
+      "explain": "atur 是本课复习词，表示安排、调整或管理。"
+    },
+    {
+      "question": "哪个词表示“松一口气、感到宽慰”？",
+      "options": [
+        "repot",
+        "cemas",
+        "lega",
+        "lepas"
+      ],
+      "answer_index": 2,
+      "answer": "lega",
+      "explain": "lega 表示压力解除以后感到宽慰、轻松。"
+    },
+    {
+      "question": "哪个词最适合表达“希望今天一切顺利”？",
+      "options": [
+        "semoga",
+        "taruh",
+        "demam",
+        "urus"
+      ],
+      "answer_index": 0,
+      "answer": "semoga",
+      "explain": "semoga 用来表达希望或祝愿。"
+    }
+  ],
+  "output": {
+    "task": "用 cemas、lega、semoga 中至少两个词，说两句关于今天工作或生活安排的话。",
+    "reference_answer": "Tadi saya sempat cemas karena jadwal berubah, tetapi sekarang saya sudah lega. Semoga pekerjaan hari ini tetap berjalan lancar.",
+    "reference_cn": "刚才因为日程有变化，我有点担心，但现在已经松了一口气。希望今天的工作还是顺利。"
+  },
+  "review": [
+    "3秒主动回忆：taruh、cemas、lega、semoga、repot。",
+    "重点区分：urus/atur、pasang/taruh、lepas/buka，并各说一个短句。",
+    "复习 atur、becek、berantem、bercerai、bawain，任选两个完成主动输出。"
+  ]
+}

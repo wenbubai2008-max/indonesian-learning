@@ -36,6 +36,36 @@
   function quizHtml(q,i,list){if(q.answer_unavailable)return `<div class="dailyFixItem"><b>${i+1}. ${esc2(displayText(q.question||'',list))}</b><div class="dailyFixMeta">原始记录未提供答案</div></div>`;const opts=q.options||[];return `<div class="dailyFixItem"><b>${i+1}. ${esc2(displayText(q.question||'',list))}</b><div class="dailyFixChoiceWrap">${opts.map((o,j)=>`<button class="dailyFixChoice" data-correct="${j===q.answer_index?1:0}" onclick='dailyFixGrade(this,${j===q.answer_index},${JSON.stringify(q.explain||'')})'>${String.fromCharCode(65+j)}. ${esc2(displayText(o,list))}</button>`).join('')}</div><div class="dailyFixFeedback"></div></div>`}
   function outputHtml(o,list){if(!o)return '';if(o.reference_unavailable)return `<div class="dailyFixItem">${esc2(o.task||'')}<div class="dailyFixMeta">原记录未提供参考答案</div></div>`;return `<div class="dailyFixItem">${esc2(o.task||'')}<br><button class="dailyFixToggle" onclick="this.parentElement.classList.toggle('dailyFixOpen')">参考答案</button><div class="dailyFixAnswer"><div class="dailyFixId">${esc2(displayText(o.reference_answer||'',list))}</div>${o.reference_cn?`<div class="dailyFixCnLine">${esc2(o.reference_cn)}</div>`:''}${o.standard_answer?`<br><b>标准版</b><br>${esc2(o.standard_answer)}`:''}</div></div>`}
   function content(x){let no=1,h='';if(x.vocab?.length)h+=sec(no++,'今日词汇',vocabHtml(x.vocab));if(x.sentences?.length)h+=sec(no++,'高频句子',x.sentences.map(v=>`<div class="dailyFixItem"><div class="dailyFixId">${esc2(displayText(v.id||v.text||'',x.vocab))}</div><div class="dailyFixCnLine">${esc2(v.cn||'')}</div></div>`).join(''));if(x.reading)h+=sec(no++,'阅读'+(x.reading.title?' · '+x.reading.title:''),`<div class="dailyFixReading">${esc2(displayText(x.reading.text||'',x.vocab)).replace(/\n/g,'<br>')}</div><div class="dailyFixActions"><button class="secondary" onclick='speak(${JSON.stringify(x.reading.text||'')})'>🔊 朗读全文</button></div><div class="dailyFixTranslation">${esc2(x.reading.cn||'').replace(/\n/g,'<br>')}</div>`);if(x.quiz?.length)h+=sec(no++,'小测',x.quiz.map((q,i)=>quizHtml(q,i,x.vocab)).join(''));if(x.output)h+=sec(no++,'主动输出',outputHtml(x.output,x.vocab));if(x.review?.length)h+=sec(no++,'复习',x.review.map(r=>`<div class="dailyFixItem">${esc2(displayText(typeof r==='string'?r:(r.text||''),x.vocab))}</div>`).join(''));if(x.dialogue?.lines)h+=sec(no++,x.dialogue.title||'情景对话',x.dialogue.lines.map(l=>`<div class="dailyFixItem"><div class="dailyFixId"><b>${esc2(l.speaker||'')}</b>${l.speaker?': ':''}${esc2(displayText(l.id||'',x.vocab))}</div><div class="dailyFixCnLine">${esc2(l.cn||'')}</div></div>`).join(''));return h}
+  // One-day side-by-side classroom. The official AM stays the single index/runtime source.
+  const COMPARE_DATE='2026-10-02';
+  const COMPARE_FILE='data/comparison/2026-10-02-am-chatgpt.json';
+  const COMPARE_DONE='done_2026-10-02_am_chatgpt';
+  function comparisonTabs(extra){
+    return `<div class="dailyFixPicker" role="group" aria-label="10月2日两份早课对照">
+      <button type="button" class="${extra?'secondary':'primary'}" onclick="openDaily('am','2026-10-02')">备用 V2 · 正式早课</button>
+      <button type="button" class="${extra?'primary':'secondary'}" onclick="openDailyCompare()">ChatGPT · 临时加课</button>
+    </div>`;
+  }
+  window.openDailyCompare=async function(){
+    go('daily');
+    $('dailyTitle').textContent='08:00 早课｜ChatGPT 对照版';
+    $('dailyMeta').textContent=COMPARE_DATE;
+    $('dailyBody').innerHTML='<div class="loading">加载对照课…</div>';
+    try{
+      const x=await fetchJSON(COMPARE_FILE);
+      if(x.date!==COMPARE_DATE||x.session!=='am'||x.vocab?.length!==10)throw Error('对照课身份或词卡不完整');
+      const done=localStorage.getItem(COMPARE_DONE)==='1';
+      let h=nav(COMPARE_DATE,'am')+comparisonTabs(true)+
+        '<div class="historyNotice">这是10月2日临时 ChatGPT 对照课：与正式课共用网站的词卡、朗读、阅读和小测展示，完成记录单独保存。正式 AM 仍为备用 V2；本加课不改动 daily-vocab、runtime 或18:00选词。</div>'+
+        chips(x)+content(x);
+      h+=`<div style="text-align:center;margin-top:18px"><button type="button" class="primary" onclick="completeComparisonAm()" ${done?'disabled':''}>${done?'✓ 对照课已学完':'我学完了 · ChatGPT 对照课'}</button></div>`;
+      $('dailyBody').innerHTML=h;
+    }catch(e){$('dailyBody').innerHTML=`<div class="error">对照课程读取失败<div class="diag">${esc2(e.message)}</div></div>`;}
+  };
+  window.completeComparisonAm=function(){
+    localStorage.setItem(COMPARE_DONE,'1');
+    window.openDailyCompare();
+  };
   async function refreshDailyArchiveOnOpen(){try{archive=await fetchJSON('data/daily/index.json');if(typeof updateHome==='function')updateHome();return true}catch(e){return false}}
-  window.openDaily=async function(s,d){const app=document.querySelector('.app');if(app)app.classList.add('learningMode');if(!d||d===TODAY){await refreshDailyArchiveOnOpen();d=exists(TODAY,s)?TODAY:latest(s)}else if(!exists(d,s))d=latest(s);if(!d){go('daily');$('dailyBody').innerHTML='<div class="empty">暂无课程</div>';return}go('daily');$('dailyBody').innerHTML='<div class="loading">加载中…</div>';try{const x=await fetchJSON(`data/daily/${d}-${s}.json`);$('dailyTitle').textContent=x.title||(s==='am'?'08:00 早间学习':pmTimeForDate(d)+' 晚间学习');$('dailyMeta').textContent=d;let h=nav(d,s)+chips(x);if(x.source_note)h+=`<div class="historyNotice">${esc2(x.source_note)}</div>`;if(x.history_complete===false||x.historical_reconstruction)h+=`<div class="historyNotice">历史记录不完整：仅展示可确认的原始内容。</div>`;h+=content(x);h+=`<div style="text-align:center;margin-top:18px"><button class="primary" onclick="completeSession('${d}','${s}')">${isDone(d,s)?'✓ 已学完':'我学完了'}</button></div>`;$('dailyBody').innerHTML=h}catch(e){$('dailyBody').innerHTML=`<div class="error">课程读取失败<div class="diag">${esc2(e.message)}</div></div>`}}
+  window.openDaily=async function(s,d){const app=document.querySelector('.app');if(app)app.classList.add('learningMode');if(!d||d===TODAY){await refreshDailyArchiveOnOpen();d=exists(TODAY,s)?TODAY:latest(s)}else if(!exists(d,s))d=latest(s);if(!d){go('daily');$('dailyBody').innerHTML='<div class="empty">暂无课程</div>';return}go('daily');$('dailyBody').innerHTML='<div class="loading">加载中…</div>';try{const x=await fetchJSON(`data/daily/${d}-${s}.json`);$('dailyTitle').textContent=x.title||(s==='am'?'08:00 早间学习':pmTimeForDate(d)+' 晚间学习');$('dailyMeta').textContent=d;let h=nav(d,s)+(s==='am'&&d===COMPARE_DATE?comparisonTabs(false):'')+chips(x);if(x.source_note)h+=`<div class="historyNotice">${esc2(x.source_note)}</div>`;if(x.history_complete===false||x.historical_reconstruction)h+=`<div class="historyNotice">历史记录不完整：仅展示可确认的原始内容。</div>`;h+=content(x);h+=`<div style="text-align:center;margin-top:18px"><button class="primary" onclick="completeSession('${d}','${s}')">${isDone(d,s)?'✓ 已学完':'我学完了'}</button></div>`;$('dailyBody').innerHTML=h}catch(e){$('dailyBody').innerHTML=`<div class="error">课程读取失败<div class="diag">${esc2(e.message)}</div></div>`}}
 })();
