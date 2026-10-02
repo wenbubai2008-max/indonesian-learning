@@ -61,6 +61,48 @@ test('eligible lexicon still exactly covers 283 snapshot candidates',()=>{
   assert.deepEqual([...actual].sort(),[...expected].sort());
 });
 
+test('V4 material bundle and separate sources stay synchronized and exact',()=>{
+ const micro=read('prototype/lesson-engine/materials/microcontent.json');
+ const situations=read('prototype/lesson-engine/materials/micro-scenes.json');
+ const lex=new Set(bundle.materials['eligible-lexicon'].entries.map(e=>e.word));
+ assert.deepEqual(bundle.materials.microcontent,micro,'Source microcontent must equal compiled bundle');
+ assert.deepEqual(bundle.materials['micro-scenes'],situations,'Scene source must equal compiled bundle');
+ assert(Object.keys(micro.entries).length>=120,'V4 requires at least 120 vetted microcontent entries');
+ const transferred=Object.entries(micro.entries).filter(([,e])=>e.transfer_example);
+ assert(transferred.length>=100,'V4 requires at least 100 independent real-situation sentences');
+ for(const [word,e] of transferred){
+   assert(hasWord(e.transfer_example,word),'Transfer sentence must contain target '+word);
+   assert(String(e.transfer_cn||'').length>=4,'Transfer must have Chinese meaning '+word);
+   assert.notEqual(norm(e.transfer_example),norm(e.example),'Transfer cannot repeat teaching example '+word);
+ }
+ assert(situations.scenes.length>=40,'V4 needs at least 40 paired micro-situations');
+ const pairs=new Set();
+ for(const p of situations.scenes){
+   assert.equal(p.words.length,2);
+   assert.equal(p.reading.length,2);
+   const key=p.words.slice().sort().join('|');assert(!pairs.has(key),'Duplicate pair: '+key);
+   pairs.add(key);
+   for(let i=0;i<2;i++){
+     assert(lex.has(p.words[i])||Object.hasOwn(micro.entries,p.words[i]),'Scene word unsupported: '+p.words[i]);
+     assert(hasWord(p.reading[i].id,p.words[i]),'Paired scene must teach its actual target '+p.id);
+     assert(String(p.reading[i].cn||'').length>=4,'Paired scene must have aligned Chinese');
+   }
+ }
+ console.log('V4_MATERIAL_AUDIT '+JSON.stringify({
+   microcontent:Object.keys(micro.entries).length,transfer:transferred.length,paired_scenes:situations.scenes.length
+ }));
+});
+
+test('V4 real afternoon fixture uses rainy-day paired scene and alternate output',()=>{
+ const c=cfg('pm'),lesson=core.generate(c.ctx,bundle,dailyRows,{variant:0});
+ assert(lesson._prototype.micro_scene_pairs.includes('awan-mengalir'),
+   'The PM reading must select genuinely relevant weather pair');
+ assert.equal(lesson._prototype.dialogue_micro_scene,'awan-mengalir');
+ assert(lesson._prototype.transfer_rewrite_count>=2,'PM must apply independent alternate-context drills');
+ assert(lesson.rewrite.some(t=>/换个场景表达/.test(t.task)));
+ assert(auditLesson(lesson).ok);
+});
+
 for(const slot of ['am','pm']){
   const c=cfg(slot);
   for(let variant=0;variant<6;variant++){
@@ -153,8 +195,8 @@ test('alternate real-candidate order remains publishable and educationally match
 });
 function getPublished(p){return read(p)}
 
-test('diverse eligible candidate orders keep at least one valid fallback variant',()=>{
- const shifts=[0,3,9,18,30,48,72,105];
+test('V4 diverse legal candidate orders include forty-eight contexts with six bounded variants',()=>{
+ const shifts=[0,1,2,3,4,5,6,7,9,11,13,15,18,21,24,27,30,36,42,48,54,60,72,105];
  const rotate=(items,n)=>items.length?items.slice(n%items.length).concat(items.slice(0,n%items.length)):[];
  for(const slot of ['am','pm']){
    const c=cfg(slot);
@@ -179,6 +221,7 @@ test('diverse eligible candidate orders keep at least one valid fallback variant
      assert(good>0,slot+' offset '+shift+' has no viable V2 candidate: '+JSON.stringify(failures));
    }
  }
+ console.log('V4_STRESS '+JSON.stringify({contexts:shifts.length*2,slots:2,max_variants:6,all_have_valid_output:true}));
 });
 
 test('CLI wrapper delegates to same shared core',()=>{
