@@ -462,12 +462,32 @@
         {speaker:'A',id:q[0][0],cn:q[0][1]},
         {speaker:'B',id:a.id,cn:a.cn},
         {speaker:'A',id:q[1][0],cn:q[1][1]},
-        {speaker:'B',id:b.id,cn:b.cn},
-        {speaker:'A',id:'Oke, makasih sudah cerita, ya.',cn:'好的，谢谢你告诉我。'},
-        {speaker:'B',id:'Iya, sama-sama.',cn:'嗯，不客气。'}
+        {speaker:'B',id:b.id,cn:b.cn}
       ];
+      // Reuse a PREVIOUSLY learned application/review word only when its
+      // teaching example shares a substantial concrete word with the story.
+      // Otherwise a genuine short conversational close is better than a
+      // disconnected third answer added only to increase word coverage.
+      const stop=new Set(['dengan','sebelum','setelah','sudah','untuk','cukup','karena','mereka','kami','saya','kamu','dari','lagi','yang','bisa','tidak','jadi','saat','hari','lebih','masih','sambil','waktu']);
+      const terms=new Set(((a.id+' '+b.id).toLowerCase().match(/[a-z]{4,}/g)||[]).filter(w=>!stop.has(w)));
+      const related=others.map(c=>({c,
+        hits:(c.example.toLowerCase().match(/[a-z]{4,}/g)||[]).filter(w=>terms.has(w)&&!stop.has(w)).length
+      })).filter(x=>x.hits>0).sort((x,y)=>y.hits-x.hits||x.c.word.localeCompare(y.c.word));
+      const support=related[0]?.c;
+      if(support){
+        const willContinue=/\b(biarpun|walaupun|meskipun|tetap)\b/i.test(support.example);
+        const q3=willContinue
+          ?['Jadi, rencanamu tetap jalan?','所以，你还是按计划继续？']
+          :['Lalu kamu sendiri bagaimana?','那你自己后来怎么样了？'];
+        lines.push({speaker:'A',id:q3[0],cn:q3[1]},
+          {speaker:'B',id:support.example,cn:support.example_cn});
+      }else{
+        lines.push({speaker:'A',id:'Oke, makasih sudah cerita, ya.',cn:'好的，谢谢你告诉我。'},
+          {speaker:'B',id:'Iya, sama-sama.',cn:'嗯，不客气。'});
+      }
       const joined=lines.map(x=>x.id).join(' ');
       return {title:'真实口语｜Cerita sehari-hari',lines,_paired_scene:curated.id,
+        _support_reused:Boolean(support),
         _coverage:cards.filter(c=>hasExactWord(joined,c.word)).map(c=>({word:c.word,group:c.group}))};
     }
     const cohesion=(a,b)=>{
@@ -521,7 +541,8 @@
     }
     const joined=lines.map(x=>x.id).join(' ');
     const coverage=cards.filter(c=>hasExactWord(joined,c.word)).map(c=>({word:c.word,group:c.group}));
-    return {title:'真实口语｜'+(same?scene.title:'Cerita sehari-hari'),lines,_coverage:coverage,_paired_scene:null};
+    return {title:'真实口语｜'+(same?scene.title:'Cerita sehari-hari'),lines,_coverage:coverage,
+      _paired_scene:null,_support_reused:Boolean(support)};
   }
 
   function optionSet(correct,pool,key){
@@ -636,7 +657,8 @@
     const dialogue=dialogueFor(scene,cards,env,key);
     base._prototype.dialogue_coverage=dialogue._coverage;
     base._prototype.dialogue_micro_scene=dialogue._paired_scene;
-    delete dialogue._coverage;delete dialogue._paired_scene;
+    base._prototype.dialogue_contextual_review=dialogue._support_reused;
+    delete dialogue._coverage;delete dialogue._paired_scene;delete dialogue._support_reused;
     return {...base,write_status:'lesson_complete',new_words:newCards.map(x=>x.word),vocab:cards.map(({group,_transfer,...x})=>x),reading,dialogue,rewrite:rewrite.slice(0,4),
       daily_test:{questions:[...choices,...fills,orderQuestion(cards)],self_check:[
         '遮住中文，3秒内说出 '+newCards.map(x=>x.word).join(' / ')+' 的意思和一个常见搭配。',
