@@ -1,0 +1,332 @@
+{
+  "date": "2026-10-02",
+  "session": "pm",
+  "time": "18:00",
+  "day": 42,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Persiapan rapat",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "siapkan",
+    "mencetak",
+    "jarak"
+  ],
+  "vocab": [
+    {
+      "word": "siapkan",
+      "display": "siapkan",
+      "audio_text": "siapkan",
+      "cn": "准备好；把……准备好",
+      "en": "prepare; get ready",
+      "root": "siap",
+      "root_cn": "准备好的",
+      "formation": "siap + -kan；常见 siapkan dokumen / siapkan dulu。口语里也常听到 siapin。",
+      "example": "Tolong siapkan dokumen sebelum rapat dimulai.",
+      "example_cn": "请在会议开始前把文件准备好。",
+      "synonym_note": "siapkan 强调把某物准备好；persiapkan 较正式，siapin 更口语。",
+      "usage_note": "本晚课新词；重点练习工作场景中的主动指令。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "mencetak",
+      "display": "mencetak",
+      "audio_text": "mencetak",
+      "cn": "打印；印刷",
+      "en": "print",
+      "root": "cetak",
+      "root_cn": "印；打印",
+      "formation": "men- + cetak；常见 mencetak dokumen / mencetak laporan。",
+      "example": "Saya perlu mencetak dua salinan laporan ini.",
+      "example_cn": "我需要打印两份这份报告。",
+      "synonym_note": "mencetak 是打印/印刷；menyalin 是复制内容，不一定打印。",
+      "usage_note": "本晚课新词；重点掌握办公室常用搭配。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "jarak",
+      "display": "jarak",
+      "audio_text": "jarak",
+      "cn": "距离；间隔",
+      "en": "distance; interval",
+      "root": "jarak",
+      "root_cn": "距离；间隔",
+      "formation": "常见 jarak jauh / jarak dekat / menjaga jarak。",
+      "example": "Jarak dari kantor ke gudang tidak terlalu jauh.",
+      "example_cn": "办公室到仓库的距离不算太远。",
+      "synonym_note": "jarak 指空间或时间上的距离；jauh 是“远”的形容词。",
+      "usage_note": "本晚课新词；练习地点和安排场景。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngotot",
+      "display": "ngotot",
+      "audio_text": "ngotot",
+      "cn": "强硬坚持；硬要",
+      "en": "insist stubbornly",
+      "root": "ngotot",
+      "root_cn": "强硬坚持；不肯让步",
+      "formation": "口语词；常见 ngotot mau... / jangan ngotot。",
+      "example": "Dia tetap ngotot mau mengubah jadwal rapat.",
+      "example_cn": "他还是硬要改会议时间。",
+      "synonym_note": "ngotot 带有“很坚持、甚至有点硬”的语气；bersikeras 更正式。",
+      "usage_note": "已正式学习；本晚课进行主动复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "sekadar",
+      "display": "sekadar",
+      "audio_text": "sekadar",
+      "cn": "只是；仅仅",
+      "en": "merely; just",
+      "root": "kadar",
+      "root_cn": "程度；分量",
+      "formation": "常见 sekadar bertanya / sekadar mengingatkan。",
+      "example": "Saya sekadar mengingatkan bahwa rapat mulai jam enam.",
+      "example_cn": "我只是提醒一下，会议六点开始。",
+      "synonym_note": "sekadar≈hanya，但 sekadar 常带“不过是/只是”的语气。",
+      "usage_note": "已正式学习；本晚课进行主动复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nyantai",
+      "display": "nyantai",
+      "audio_text": "nyantai",
+      "cn": "放松一点；悠着来",
+      "en": "relax; take it easy",
+      "root": "santai",
+      "root_cn": "轻松；悠闲",
+      "formation": "santai 的口语形式；常见 nyantai dulu / lagi nyantai。",
+      "example": "Kalau semua sudah siap, kita bisa nyantai sebentar.",
+      "example_cn": "如果都准备好了，我们可以稍微放松一下。",
+      "synonym_note": "nyantai 很口语；santai 更中性，也能用于书面一点的场景。",
+      "usage_note": "已正式学习；本晚课进行主动复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "pokoknya",
+      "display": "pokoknya",
+      "audio_text": "pokoknya",
+      "cn": "总之；反正",
+      "en": "anyway; the point is",
+      "root": "pokok",
+      "root_cn": "要点；主要部分",
+      "formation": "pokok + -nya；常放句首总结或强调。",
+      "example": "Pokoknya, semua dokumen harus selesai hari ini.",
+      "example_cn": "总之，所有文件今天必须完成。",
+      "synonym_note": "pokoknya 偏口语总结和强调；intinya 更像“核心是”。",
+      "usage_note": "已正式学习；本晚课进行主动复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "memisahkan",
+      "display": "memisahkan",
+      "audio_text": "memisahkan",
+      "cn": "分开；分离",
+      "en": "separate",
+      "root": "pisah",
+      "root_cn": "分开",
+      "formation": "meN- + pisah + -kan；常见 memisahkan dokumen / memisahkan dua hal。",
+      "example": "Tolong memisahkan dokumen asli dan salinannya.",
+      "example_cn": "请把原件和复印件分开。",
+      "synonym_note": "memisahkan 是“把A和B分开”；berpisah 是主体自己分开。",
+      "usage_note": "已正式学习；本晚课进行主动复习。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bersinar",
+      "display": "bersinar",
+      "audio_text": "bersinar",
+      "cn": "发光；闪耀",
+      "en": "shine; glow",
+      "root": "sinar",
+      "root_cn": "光线",
+      "formation": "ber- + sinar；常见 matahari bersinar / wajah bersinar。",
+      "example": "Pagi tadi matahari bersinar terang setelah hujan.",
+      "example_cn": "今天早上下雨后太阳明亮地照着。",
+      "synonym_note": "bersinar 强调发光；terang 强调明亮的状态。",
+      "usage_note": "今天08:00已教；晚课作为 application 主动复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berantakan",
+      "display": "berantakan",
+      "audio_text": "berantakan",
+      "cn": "乱七八糟；一团乱",
+      "en": "messy; in disarray",
+      "root": "berantak",
+      "root_cn": "乱；散乱",
+      "formation": "常见 meja berantakan / jadwal berantakan。",
+      "example": "Meja saya berantakan karena banyak dokumen belum dipisahkan.",
+      "example_cn": "我的桌子很乱，因为很多文件还没分开。",
+      "synonym_note": "berantakan 强调凌乱失序；acak-acakan 也可表示乱，语气更口语。",
+      "usage_note": "已正式学习且仍为 active；本晚课用于应用复现。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sore ini kami menyiapkan rapat kecil di kantor. Saya diminta siapkan dokumen dan mencetak dua salinan laporan. Karena meja masih berantakan, saya memisahkan dokumen asli dan salinannya lebih dulu. Seorang rekan ngotot ingin memindahkan tempat rapat, padahal jarak ke ruangan baru lebih jauh. Saya sekadar mengingatkan bahwa waktunya terbatas. Pokoknya, semua harus siap sebelum jam enam. Saya juga mencetak satu salinan lagi supaya semua rekan bisa membaca laporan sebelum rapat. Setelah pekerjaan selesai, suasana menjadi lebih santai. Dari jendela, matahari masih bersinar terang, jadi kami sempat nyantai sebentar sebelum rapat dimulai.",
+    "cn": "今天傍晚我们在办公室准备一个小会议。我被要求准备文件并打印两份报告。因为桌子还很乱，我先把原件和复印件分开。一位同事硬要换会议地点，但新会议室距离更远。我只是提醒大家时间有限。总之，所有东西都必须在六点前准备好。我还又打印了一份，方便所有同事在会议开始前阅读报告。工作完成后，气氛轻松了些。从窗户看出去，太阳还很明亮，所以会议开始前我们稍微放松了一会儿。"
+  },
+  "dialogue": {
+    "title": "真实口语｜Sebelum rapat",
+    "lines": [
+      {
+        "speaker": "A",
+        "id": "Dokumennya sudah siap?",
+        "cn": "文件准备好了吗？"
+      },
+      {
+        "speaker": "B",
+        "id": "Belum. Aku masih mencetak dua salinan.",
+        "cn": "还没有。我还在打印两份。"
+      },
+      {
+        "speaker": "A",
+        "id": "Kenapa meja ini berantakan banget?",
+        "cn": "这桌子怎么这么乱？"
+      },
+      {
+        "speaker": "B",
+        "id": "Aku lagi memisahkan dokumen asli dan salinannya.",
+        "cn": "我正在把原件和复印件分开。"
+      },
+      {
+        "speaker": "A",
+        "id": "Pokoknya, siapkan semuanya sebelum jam enam, ya.",
+        "cn": "总之，六点前把所有东西准备好。"
+      },
+      {
+        "speaker": "B",
+        "id": "Tenang, habis ini kita bisa nyantai sebentar.",
+        "cn": "放心，弄完以后我们可以稍微放松一下。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "中译印：请在会议开始前把文件准备好。（使用 siapkan）",
+      "reference_answer": "Tolong siapkan dokumen sebelum rapat dimulai.",
+      "reference_cn": "请在会议开始前把文件准备好。"
+    },
+    {
+      "task": "中译印：我需要打印两份这份报告。（使用 mencetak）",
+      "reference_answer": "Saya perlu mencetak dua salinan laporan ini.",
+      "reference_cn": "我需要打印两份这份报告。"
+    },
+    {
+      "task": "主动复现：我只是提醒一下，会议六点开始。（使用 sekadar）",
+      "reference_answer": "Saya sekadar mengingatkan bahwa rapat mulai jam enam.",
+      "reference_cn": "我只是提醒一下，会议六点开始。"
+    },
+    {
+      "task": "复习输出：总之，所有文件今天必须完成。（使用 pokoknya）",
+      "reference_answer": "Pokoknya, semua dokumen harus selesai hari ini.",
+      "reference_cn": "总之，所有文件今天必须完成。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "哪个词表示“打印；印刷”？",
+        "options": [
+          "jarak",
+          "mencetak",
+          "sekadar",
+          "bersinar"
+        ],
+        "answer_index": 1,
+        "answer": "mencetak",
+        "explain": "mencetak = 打印；印刷。"
+      },
+      {
+        "type": "choice",
+        "prompt": "哪个词表示“距离；间隔”？",
+        "options": [
+          "jarak",
+          "pokoknya",
+          "nyantai",
+          "memisahkan"
+        ],
+        "answer_index": 0,
+        "answer": "jarak",
+        "explain": "jarak = 距离；间隔。"
+      },
+      {
+        "type": "choice",
+        "prompt": "哪个词表示“总之；反正”？",
+        "options": [
+          "ngotot",
+          "sekadar",
+          "pokoknya",
+          "siapkan"
+        ],
+        "answer_index": 2,
+        "answer": "pokoknya",
+        "explain": "pokoknya = 总之；反正。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Tolong _____ dokumen sebelum rapat dimulai.（准备好）",
+        "answer": "siapkan",
+        "explain": "siapkan 表示“把……准备好”。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Saya perlu _____ dua salinan laporan ini.（打印）",
+        "answer": "mencetak",
+        "explain": "mencetak 表示“打印”。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我只是提醒一下会议六点开始。",
+        "tokens": [
+          "Saya",
+          "sekadar",
+          "mengingatkan",
+          "rapat",
+          "mulai",
+          "jam",
+          "enam."
+        ],
+        "answer": "Saya sekadar mengingatkan rapat mulai jam enam.",
+        "answer_cn": "我只是提醒一下会议六点开始。",
+        "explain": "按自然语序排列：主语 + sekadar + 动词 + 内容。"
+      }
+    ],
+    "self_check": [
+      "遮住中文，3秒内说出 siapkan / mencetak / jarak 的意思并各造一个短句。",
+      "主动复习 ngotot / sekadar / nyantai / pokoknya / memisahkan。",
+      "复现 bersinar，并用 berantakan 描述一个真实场景。"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "连续说出3个新词，并各说一个常见搭配。",
+      "用至少两个复习词复述办公室准备会议的场景。",
+      "用30秒讲一遍 Persiapan rapat，优先自然表达，不强塞所有目标词。"
+    ]
+  }
+}
