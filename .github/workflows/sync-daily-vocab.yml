@@ -890,7 +890,7 @@ jobs:
             latest_stage="$(git ls-remote --heads origin "refs/heads/$original_branch")" ||
               { echo '::error title=Original draft recheck failed::No publication under uncertain race state.'; exit 1; }
             latest_stage_sha="$(printf '%s' "$latest_stage" | cut -f1)"
-            if [ "$latest_stage_sha" != "$staged_head" ] && [ -n "$latest_stage_sha" -o -n "$staged_head" ]; then
+            if [ "$latest_stage_sha" != "$staged_head" ]; then
               echo 'ORIGINAL_STAGED_CHANGED discard locally prepared lesson and reevaluate source.'
               continue
             fi
