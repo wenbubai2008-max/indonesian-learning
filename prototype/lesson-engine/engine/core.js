@@ -342,17 +342,6 @@
     }
     // Explicitly group short topical notes. Mixed unrelated examples are NOT a
     // single fabricated narrative and must never inherit an unrelated scene title.
-    const groups=new Map(),visitedPairs=new Set();
-    for(const c of chosen){
-      const b=macro(c);
-      if(!groups.has(b))groups.set(b,[]);
-      const pair=pairByWord.get(c.word);
-      if(pair){
-        if(visitedPairs.has(pair.id))continue;
-        visitedPairs.add(pair.id);
-        groups.get(b).push({kind:'paired-scene',pair});
-      }else groups.get(b).push({kind:'card',card:c});
-    }
     const fineTopics=new Set(chosen.map(c=>semanticBucket(c,env,scene)));
     // A pre-reviewed two-word scene is used only if BOTH exact words are selected
     // for this reading. Never pull an ineligible word into a lesson for cohesion.
@@ -370,6 +359,17 @@
       if(macro(aa)!==macro(bb)||selectedPairs.length>=2)continue;
       selectedPairs.push(p);
       for(const w of p.words)pairByWord.set(w,p);
+    }
+    const groups=new Map(),visitedPairs=new Set();
+    for(const c of chosen){
+      const b=macro(c);
+      if(!groups.has(b))groups.set(b,[]);
+      const pair=pairByWord.get(c.word);
+      if(pair){
+        if(visitedPairs.has(pair.id))continue;
+        visitedPairs.add(pair.id);
+        groups.get(b).push({kind:'paired-scene',pair});
+      }else groups.get(b).push({kind:'card',card:c});
     }
     const mixed=fineTopics.size>1;
     // Never stitch five unrelated stock sentences into a fabricated single event.
