@@ -366,7 +366,7 @@ test('the actual failed-release Bash sends Sync only if ChatGPT/manual already p
      else if(!lines[i].trim())body.push('');
      else break;
    }
-   const gh=path.join(tmp,'gh'),log=path.join(tmp,'calls.txt');
+   const gh=path.join(tmp,'gh'),date=path.join(tmp,'date'),log=path.join(tmp,'calls.txt');
    fs.writeFileSync(gh,[
      '#!/bin/bash',
      'case "$*" in',
@@ -376,29 +376,98 @@ test('the actual failed-release Bash sends Sync only if ChatGPT/manual already p
      '  *) echo "Unexpected GitHub call: $*" >&2; exit 9 ;;',
      'esac'
    ].join('\n')+'\n');
-   fs.chmodSync(gh,0o755);
-   const run=(flag,exists)=>{
+   fs.writeFileSync(date,[
+     '#!/bin/bash',
+     'case "$*" in',
+     '  *"18:00:00"*"+%s"*) echo 1000 ;;',
+     '  *"+%s"*) echo "$FAKE_NOW_EPOCH" ;;',
+     '  *) /usr/bin/date "$@" ;;',
+     'esac'
+   ].join('\n')+'\n');
+   fs.chmodSync(gh,0o755);fs.chmodSync(date,0o755);
+   const run=(flag,exists,now=1600)=>{
      fs.rmSync(log,{force:true});
      const ix=Buffer.from(JSON.stringify({dates:[{date:'2026-10-01',am:true,pm:flag}]})).toString('base64');
      const env={...process.env,PATH:tmp+':'+process.env.PATH,
        RELEASE_BRANCH:'lesson-release-2026-10-01-pm',
        GITHUB_REPOSITORY:'test/indonesian-learning',GH_TOKEN:'test-only',
-       TEST_INDEX_B64:ix,TEST_FILE_PRESENT:exists?'yes':'no',TEST_GH_LOG:log};
+       TEST_INDEX_B64:ix,TEST_FILE_PRESENT:exists?'yes':'no',TEST_GH_LOG:log,
+       FAKE_NOW_EPOCH:String(now)};
      const r=cp.spawnSync('bash',['-c',body.join('\n')+'\n'],{env,encoding:'utf8'});
      assert.equal(r.status,0,'failure handler: '+r.stderr+' '+r.stdout);
-     return {text:r.stdout,calls:fs.readFileSync(log,'utf8').trim().split('\n')};
+     return {text:r.stdout,calls:fs.existsSync(log)?fs.readFileSync(log,'utf8').trim().split('\n'):[]};
    };
    const published=run(true,true);
    assert(published.text.includes('NORMAL_LESSON_ALREADY_PUBLISHED'));
    assert.equal(published.calls.length,1);
    assert(!published.calls[0].includes('inputs[recover_date]'));
    assert(!published.calls[0].includes('inputs[recover_session]'));
-   const missing=run(false,false);
+   const premature=run(false,false,1299);
+   assert(premature.text.includes('LESSON_RECOVERY_DEFERRED'),
+     'An explicit PR failure at 18:04:59 must not request V2');
+   assert.deepEqual(premature.calls,[],'No recovery dispatch is allowed before 18:05');
+   const missing=run(false,false,1300);
    assert.equal(missing.calls.length,1);
    assert(missing.calls[0].includes('inputs[recover_date]=2026-10-01'));
    assert(missing.calls[0].includes('inputs[recover_session]=pm'));
-   const inconsistent=run(true,false);
+   const inconsistent=run(true,false,1300);
    assert(inconsistent.calls[0].includes('inputs[recover_date]=2026-10-01'));
+ }finally{fs.rmSync(tmp,{recursive:true,force:true})}
+});
+
+test('actual V2 generator shell enforces slot+300 for explicit dispatch and Cron',()=>{
+ const cp=require('node:child_process'),os=require('node:os');
+ const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'fallback-time-gate-'));
+ try{
+   const lines=fs.readFileSync(path.join(base,'.github/workflows/sync-daily-vocab.yml'),'utf8').split('\n');
+   const start=lines.findIndex(x=>x.includes('      - name: Generate missing lesson with V2 and commit the two-file transaction'));
+   const at=lines.findIndex((x,i)=>i>start&&x==='        run: |');
+   assert(start>0&&at>start);
+   const body=[];
+   for(let i=at+1;i<lines.length;i++){
+     if(lines[i].startsWith('          '))body.push(lines[i].slice(10));
+     else if(!lines[i].trim())body.push('');
+     else break;
+   }
+   const cutoff=body.findIndex(x=>x.startsWith("git config user.name"));
+   assert(cutoff>0,'Extract the production gate before any git/lesson writes');
+   const date=path.join(tmp,'date');
+   fs.writeFileSync(date,[
+     '#!/bin/bash',
+     'case "$*" in',
+     '  *"+%Y-%m-%d"*) echo "$FAKE_LOCAL_DATE" ;;',
+     '  *"+%H"*) echo "$FAKE_LOCAL_HOUR" ;;',
+     '  *"08:00:00"*"+%s"*) echo 1000 ;;',
+     '  *"18:00:00"*"+%s"*) echo 1000 ;;',
+     '  *"+%s"*) echo "$FAKE_NOW_EPOCH" ;;',
+     '  *) /usr/bin/date "$@" ;;',
+     'esac'
+   ].join('\n')+'\n');fs.chmodSync(date,0o755);
+   const script=body.slice(0,cutoff).join('\n')+'\necho FALLBACK_GATE_CONTINUES\n';
+   const run=(mode,now,session='pm',localDate='2026-10-01')=>{
+     const env={...process.env,PATH:tmp+':'+process.env.PATH,
+       GITHUB_EVENT_NAME:mode,RECOVER_DATE:'2026-10-01',RECOVER_SESSION:session,
+       FALLBACK_CRON:session==='am'?'5 1 * * *':'5 11 * * *',
+       FAKE_LOCAL_DATE:localDate,FAKE_LOCAL_HOUR:session==='am'?'08':'18',FAKE_NOW_EPOCH:String(now)};
+     const result=cp.spawnSync('bash',['-c',script],{env,encoding:'utf8'});
+     assert.equal(result.status,0,'V2 gate: '+result.stderr+' '+result.stdout);
+     return result.stdout;
+   };
+   for(const mode of ['workflow_dispatch','schedule']){
+     const before=run(mode,1299);
+     assert(before.includes('FALLBACK_GRACE_ACTIVE')&&!before.includes('FALLBACK_GATE_CONTINUES'),
+       mode+' must refuse 18:04:59');
+     const onTime=run(mode,1300);
+     assert(onTime.includes('FALLBACK_TIME_GATE_OPEN')&&onTime.includes('FALLBACK_GATE_CONTINUES'),
+       mode+' must allow 18:05:00');
+     const morningBefore=run(mode,1299,'am');
+     assert(morningBefore.includes('FALLBACK_GRACE_ACTIVE'));
+     const morningOpen=run(mode,1300,'am');
+     assert(morningOpen.includes('FALLBACK_GATE_CONTINUES'));
+   }
+   const stale=run('workflow_dispatch',1300,'pm','2026-10-02');
+   assert(stale.includes('Stale or premature fallback')&&!stale.includes('FALLBACK_GATE_CONTINUES'),
+     'Stale next-day recoveries stay blocked');
  }finally{fs.rmSync(tmp,{recursive:true,force:true})}
 });
 
