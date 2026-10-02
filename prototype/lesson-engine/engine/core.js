@@ -498,7 +498,7 @@
     const reading=readingFor(scene,cards,env,key,ctx.target.session,variant),time=ctx.target.session==='am'?'08:00':'18:00';
     const actualTitle=reading._mixed?'Beberapa catatan sehari-hari':scene.title;
     const base={date:ctx.target.date,session:ctx.target.session,time,day:ctx.target.day,level:'A2+ → B1',duration_minutes:30,
-      title:time+' '+(ctx.target.session==='am'?'早课':'晚课')+'｜'+scene.title,
+      title:time+' '+(ctx.target.session==='am'?'早课':'晚课')+'｜'+actualTitle,
       _prototype:{engine_version:2,scene_id:scene.id,deterministic:true,production_write:false,variant,core_plan:plan,reading_coverage:reading._coverage,reading_review_required:reading._review_required,
          reading_mode:reading._mixed?'thematic-notes':'single-scene',reading_topics:reading._topic_count}};
     delete reading._coverage;delete reading._review_required;delete reading._mixed;delete reading._topic_count;
