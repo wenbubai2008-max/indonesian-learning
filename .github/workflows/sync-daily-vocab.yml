@@ -852,7 +852,8 @@ jobs:
                   git show "$staged_head:$candidate" > "$staged_candidate"
                   echo "ORIGINAL_STAGED_FOUND date=$date session=$session head=$staged_head"
                 else
-                  staged_head=''
+                  # Keep the observed head even when the candidate is invalid: the
+                  # before-push race check must compare against this exact snapshot.
                   echo "::warning title=Original draft not reusable::Release branch is empty or has unexpected changed paths; only the authorized V4 fallback remains eligible."
                 fi
               fi
