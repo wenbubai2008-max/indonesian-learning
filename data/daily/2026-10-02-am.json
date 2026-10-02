@@ -1,0 +1,331 @@
+{
+  "date": "2026-10-02",
+  "session": "am",
+  "time": "08:00",
+  "day": 42,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Makan siang",
+  "_prototype": {
+    "engine_version": 2,
+    "scene_id": "restaurant-lunch",
+    "deterministic": true,
+    "production_write": false,
+    "variant": 0,
+    "core_plan": {
+      "total": 15,
+      "reviews": 5,
+      "apps": 0,
+      "pressure": 0
+    },
+    "reading_coverage": [
+      {
+        "word": "sepenuhnya",
+        "group": "new"
+      },
+      {
+        "word": "sembuh",
+        "group": "new"
+      },
+      {
+        "word": "menyentuh",
+        "group": "new"
+      },
+      {
+        "word": "bersinar",
+        "group": "new"
+      },
+      {
+        "word": "kisah",
+        "group": "new"
+      },
+      {
+        "word": "sebelah",
+        "group": "new"
+      },
+      {
+        "word": "seraya",
+        "group": "review"
+      },
+      {
+        "word": "baper",
+        "group": "review"
+      }
+    ],
+    "reading_review_required": true
+  },
+  "new_words": [
+    "sepenuhnya",
+    "sembuh",
+    "menyentuh",
+    "bersinar",
+    "tindakan",
+    "kisah",
+    "ditemukan",
+    "sebelah",
+    "peristiwa",
+    "daya"
+  ],
+  "vocab": [
+    {
+      "word": "sepenuhnya",
+      "display": "sepenuhnya",
+      "audio_text": "sepenuhnya",
+      "cn": "完全地",
+      "en": "fully; completely",
+      "root": "penuh",
+      "root_cn": "满；完整",
+      "formation": "来自词根 penuh。 常见搭配：sepenuhnya paham、belum sepenuhnya。",
+      "example": "Saya belum sepenuhnya paham cara kerja sistem ini.",
+      "example_cn": "我还没有完全理解这个系统的运作方式。",
+      "synonym_note": "比 banget 更正式；常和 belum/tidak 搭配。",
+      "is_oral_new": false,
+      "_collocations": [
+        "sepenuhnya paham",
+        "belum sepenuhnya"
+      ]
+    },
+    {
+      "word": "sembuh",
+      "display": "sembuh",
+      "audio_text": "sembuh",
+      "cn": "恢复；痊愈",
+      "en": "recover; heal",
+      "root": "sembuh",
+      "root_cn": "痊愈",
+      "formation": "常见搭配：sembuh sepenuhnya、belum sembuh。",
+      "example": "Batuknya sudah membaik, tapi dia belum sembuh sepenuhnya.",
+      "example_cn": "他的咳嗽好转了，但还没有完全痊愈。",
+      "synonym_note": "sembuh 是自己痊愈；menyembuhkan 是使……痊愈。",
+      "is_oral_new": false,
+      "_collocations": [
+        "sembuh sepenuhnya",
+        "belum sembuh"
+      ]
+    },
+    {
+      "word": "menyentuh",
+      "display": "menyentuh",
+      "audio_text": "menyentuh",
+      "cn": "触摸；触及",
+      "en": "touch",
+      "root": "sentuh",
+      "root_cn": "触摸",
+      "formation": "meny- + sentuh。 常见搭配：menyentuh kabel、Jangan menyentuh。",
+      "example": "Jangan menyentuh kabel itu sebelum listrik dimatikan.",
+      "example_cn": "断电之前不要碰那根电线。",
+      "synonym_note": "也可抽象表示“触动、涉及”。",
+      "is_oral_new": false,
+      "_collocations": [
+        "menyentuh kabel",
+        "Jangan menyentuh"
+      ]
+    },
+    {
+      "word": "bersinar",
+      "display": "bersinar",
+      "audio_text": "bersinar",
+      "cn": "闪耀；发光",
+      "en": "shine; glow",
+      "root": "sinar",
+      "root_cn": "光线",
+      "formation": "ber- + sinar。 常见搭配：bersinar setelah、mulai bersinar。",
+      "example": "Matahari mulai bersinar setelah hujan berhenti.",
+      "example_cn": "雨停后太阳开始照耀。",
+      "synonym_note": "常用于 matahari、lampu、wajah 等。",
+      "is_oral_new": false,
+      "_collocations": [
+        "bersinar setelah",
+        "mulai bersinar"
+      ]
+    },
+    {
+      "word": "tindakan",
+      "display": "tindakan",
+      "audio_text": "tindakan",
+      "cn": "行动；措施",
+      "en": "action; measure",
+      "root": "tindak",
+      "root_cn": "行动；处理",
+      "formation": "来自词根 tindak。 常见搭配：tindakan sebelum、mengambil tindakan。",
+      "example": "Perusahaan perlu mengambil tindakan sebelum masalahnya makin besar.",
+      "example_cn": "公司需要在问题变大前采取行动。",
+      "synonym_note": "高频搭配 mengambil tindakan。",
+      "is_oral_new": false,
+      "_collocations": [
+        "tindakan sebelum",
+        "mengambil tindakan"
+      ]
+    },
+    {
+      "word": "kisah",
+      "display": "kisah",
+      "audio_text": "kisah",
+      "cn": "故事；叙事",
+      "en": "story; tale",
+      "root": "kisah",
+      "root_cn": "故事",
+      "formation": "常见搭配：kisah tentang、menceritakan kisah。",
+      "example": "Dia menceritakan kisah tentang masa kecilnya di kampung.",
+      "example_cn": "他讲了自己在村里童年的故事。",
+      "synonym_note": "cerita 更日常；kisah 稍有叙事/文学感。",
+      "is_oral_new": false,
+      "_collocations": [
+        "kisah tentang",
+        "menceritakan kisah"
+      ]
+    },
+    {
+      "word": "ditemukan",
+      "display": "ditemukan",
+      "audio_text": "ditemukan",
+      "cn": "被发现；被找到",
+      "en": "be found; be discovered",
+      "root": "temu",
+      "root_cn": "见；找到",
+      "formation": "来自词根 temu。 常见搭配：ditemukan di、akhirnya ditemukan。",
+      "example": "Dompet yang hilang akhirnya ditemukan di dekat pintu masuk.",
+      "example_cn": "丢失的钱包最后在入口附近被找到了。",
+      "synonym_note": "被动形式 di- + temukan；主动是 menemukan。",
+      "is_oral_new": false,
+      "_collocations": [
+        "ditemukan di",
+        "akhirnya ditemukan"
+      ]
+    },
+    {
+      "word": "sebelah",
+      "display": "sebelah",
+      "audio_text": "sebelah",
+      "cn": "旁边；一侧",
+      "en": "side; next to",
+      "root": "sebelah",
+      "root_cn": "一侧",
+      "formation": "常见搭配：sebelah bank。",
+      "example": "Toko itu ada di sebelah bank.",
+      "example_cn": "那家店在银行旁边。",
+      "synonym_note": "常用 di sebelah；不要和 seberang“对面”混淆。",
+      "is_oral_new": false,
+      "_collocations": [
+        "sebelah bank"
+      ]
+    },
+    {
+      "word": "peristiwa",
+      "display": "peristiwa",
+      "audio_text": "peristiwa",
+      "cn": "事件",
+      "en": "event; incident",
+      "root": "peristiwa",
+      "root_cn": "事件",
+      "formation": "常见搭配：Peristiwa itu。",
+      "example": "Peristiwa itu terjadi tadi malam dan membuat jalan sempat ditutup.",
+      "example_cn": "那件事昨晚发生，一度导致道路封闭。",
+      "synonym_note": "kejadian 更口语；peristiwa 更新闻/正式。",
+      "is_oral_new": false,
+      "_collocations": [
+        "Peristiwa itu"
+      ]
+    },
+    {
+      "word": "daya",
+      "display": "daya",
+      "audio_text": "daya",
+      "cn": "力量；能力；功率",
+      "en": "power; capacity",
+      "root": "daya",
+      "root_cn": "力量；能力",
+      "formation": "常见搭配：daya tahan、daya listrik、daya beli。",
+      "example": "Baterai ini punya daya yang cukup untuk dipakai seharian.",
+      "example_cn": "这块电池的电量/能力足够用一整天。",
+      "synonym_note": "常见 daya tahan、daya listrik、daya beli。",
+      "is_oral_new": false,
+      "_collocations": [
+        "daya tahan",
+        "daya listrik",
+        "daya beli"
+      ]
+    }
+  ],
+  "review_vocab": [
+    "niat",
+    "seraya",
+    "menyalin",
+    "kabur",
+    "baper"
+  ],
+  "sentences": [
+    {
+      "text": "Saya belum sepenuhnya paham cara kerja sistem ini.",
+      "cn": "我还没有完全理解这个系统的运作方式。"
+    },
+    {
+      "text": "Batuknya sudah membaik, tapi dia belum sembuh sepenuhnya.",
+      "cn": "他的咳嗽好转了，但还没有完全痊愈。"
+    },
+    {
+      "text": "Jangan menyentuh kabel itu sebelum listrik dimatikan.",
+      "cn": "断电之前不要碰那根电线。"
+    },
+    {
+      "text": "Matahari mulai bersinar setelah hujan berhenti.",
+      "cn": "雨停后太阳开始照耀。"
+    },
+    {
+      "text": "Perusahaan perlu mengambil tindakan sebelum masalahnya makin besar.",
+      "cn": "公司需要在问题变大前采取行动。"
+    }
+  ],
+  "reading": {
+    "text": "Hari ini saya mencatat beberapa kejadian berbeda dari orang-orang di sekitar saya. Saya juga mendengar seseorang berkata, \"Jangan menyentuh kabel itu sebelum listrik dimatikan.\" Batuknya sudah membaik, tapi dia belum sembuh sepenuhnya. Dia menceritakan kisah tentang masa kecilnya di kampung. Toko itu ada di sebelah bank. Saya belum sepenuhnya paham cara kerja sistem ini. Di luar kegiatan utama, ada kabar lain. Matahari mulai bersinar setelah hujan berhenti. Dia cuma kasih masukan soal kerjaan, jadi jangan langsung baper. Dia tersenyum seraya menjelaskan hasilnya. Tidak istimewa sekali, tetapi cukup enak untuk makan siang.",
+    "cn": "今天我记下了身边发生的几件不同的小事。 我还听见有人说：“断电之前不要碰那根电线。” 他的咳嗽好转了，但还没有完全痊愈。 他讲了自己在村里童年的故事。 那家店在银行旁边。 我还没有完全理解这个系统的运作方式。 除了手头的事情，外面还有别的消息。 雨停后太阳开始照耀。 他只是对工作提意见，所以别马上往心里去。 他一边微笑一边解释结果。 谈不上特别惊艳，但作为午饭已经挺好吃。"
+  },
+  "quiz": [
+    {
+      "question": "哪个复习词表示“打算；意图；认真想做的心意”？",
+      "options": [
+        "sebelah",
+        "kabur",
+        "niat",
+        "ditemukan"
+      ],
+      "answer_index": 2,
+      "answer": "niat",
+      "explain": "niat = 打算；意图；认真想做的心意。"
+    },
+    {
+      "question": "哪个新词表示“完全地”？",
+      "options": [
+        "menyentuh",
+        "peristiwa",
+        "kabur",
+        "sepenuhnya"
+      ],
+      "answer_index": 3,
+      "answer": "sepenuhnya",
+      "explain": "sepenuhnya = 完全地。"
+    },
+    {
+      "question": "哪个新词表示“恢复；痊愈”？",
+      "options": [
+        "sembuh",
+        "sepenuhnya",
+        "sebelah",
+        "kisah"
+      ],
+      "answer_index": 0,
+      "answer": "sembuh",
+      "explain": "sembuh = 恢复；痊愈。"
+    }
+  ],
+  "output": {
+    "task": "用今天至少2个目标词，说2句：身体不舒服时你会怎么安排今天。 本课可用词：sepenuhnya、sembuh、menyentuh、bersinar、tindakan。",
+    "reference_answer": "Hari ini saya akan istirahat lebih banyak. Kalau kondisinya makin parah, saya akan periksa.",
+    "reference_cn": "今天我会多休息。如果更严重，我会去检查。"
+  },
+  "review": [
+    "3秒主动回忆：sepenuhnya、sembuh、menyentuh、bersinar、tindakan。",
+    "再看后5个新词，说出常见搭配或使用场景，不先背中文。",
+    "复习 niat、seraya、menyalin、kabur、baper，任选两个做主动输出。"
+  ]
+}
