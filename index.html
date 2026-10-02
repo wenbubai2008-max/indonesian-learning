@@ -105,7 +105,7 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
         <div class="slotHead"><span class="slotTime">08:00</span><span id="amStatus" class="status">待生成</span></div>
         <p>新词 · 句子 · 阅读 · 小测 · 输出</p>
         <button type="button" onclick="openDaily('am')">打开早间学习 →</button>
-         <button id="amCompare20261002" type="button" hidden onclick="openDailyCompare()">ChatGPT 临时加课 · 对照 →</button>
+
       </div>
       <div class="slot">
         <div class="slotHead"><span class="slotTime">18:00</span><span id="pmStatus" class="status">待生成</span></div>
@@ -141,7 +141,7 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
 <script src="data/vocab-data.js?v=715"></script>
 <script>
 const BASE='/indonesian-learning/';const $=id=>document.getElementById(id);let DB=[],FILTER=[],idx=0,archive={dates:[]},calDate=new Date();
-function today(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}const TODAY=today();const PM_SWITCH_DATE='2026-09-16';function pmTimeForDate(d){return String(d||'')>=PM_SWITCH_DATE?'18:00':'19:00'}$('todayLabel').textContent=TODAY;if(TODAY==='2026-10-02')$('amCompare20261002').hidden=false;
+function today(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}const TODAY=today();const PM_SWITCH_DATE='2026-09-16';function pmTimeForDate(d){return String(d||'')>=PM_SWITCH_DATE?'18:00':'19:00'}$('todayLabel').textContent=TODAY;
 function go(id){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));$(id).classList.add('active');window.scrollTo(0,0);if(id==='calendar')renderCalendar();if(id==='review')renderReview()}window.go=go;
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[m]))}
 function xhrText(path){return new Promise((resolve,reject)=>{const u=BASE+path+'?v='+Date.now();const x=new XMLHttpRequest();x.open('GET',u,true);x.timeout=15000;x.onload=()=>{if(x.status>=200&&x.status<300)resolve(x.responseText);else reject(new Error('HTTP '+x.status+' '+u))};x.onerror=()=>reject(new Error('XHR network error '+u));x.ontimeout=()=>reject(new Error('XHR timeout '+u));x.send()})}

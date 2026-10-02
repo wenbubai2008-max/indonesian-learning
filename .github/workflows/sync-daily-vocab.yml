@@ -959,6 +959,31 @@ jobs:
             .sort()
             .map(f=>'data/daily/'+f);
 
+          // One-day supplemental 08:00 comparison, not a second official AM slot.
+          // Include its taught vocabulary in the EXISTING single Sync writer and exact
+          // date/session occurrence reconciliation; never modify index/new-word quotas.
+          const extraPath='data/comparison/2026-10-02-am-chatgpt.json';
+          if(completed.has('2026-10-02-am')&&fs.existsSync(extraPath)){
+            const extra=JSON.parse(fs.readFileSync(extraPath,'utf8'));
+            const official=JSON.parse(fs.readFileSync('data/daily/2026-10-02-am.json','utf8'));
+            const extraWords=(extra.vocab||[]).map(v=>key(v&&v.word));
+            const declared=(extra.new_words||[]).map(key);
+            const existing=new Set((official.vocab||[]).map(v=>key(v&&v.word)));
+            const extraReviews=(extra.review_vocab||[]).map(key);
+            if(extra.date!=='2026-10-02'||extra.session!=='am'||extra.time!=='08:00'||
+               extra.write_status!=='lesson_complete'||
+               extraWords.length!==10||declared.length!==10||
+               new Set(extraWords).size!==10||
+               extraWords.some((w,i)=>!w||w!==declared[i]||existing.has(w))||
+               extraReviews.length<4||extraReviews.length>6||
+               extraReviews.some(w=>!w||extraWords.includes(w)||!map.has(w))||
+               (extra.vocab||[]).some(v=>!v.cn||!v.en||!v.example||!v.example_cn)){
+              throw new Error('OCT02_COMPARISON_INVALID: supplementary taught words are inconsistent; refuse Sync');
+            }
+            files.push(extraPath);
+            console.log('OCT02_COMPARISON_TAUGHT_INCLUDED words=10 date=2026-10-02 session=am');
+          }
+
           let appended=0;
           let repairedOccurrences=0;
 
