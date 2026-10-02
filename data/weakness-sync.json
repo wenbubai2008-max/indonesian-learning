@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-02T02:44:48.499Z",
+  "updated_at": "2026-10-02T06:32:44.213Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -6783,8 +6783,9 @@
     "lapangan": {
       "word": "lapangan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-02T06:32:33.221Z",
       "display": "lapangan",
+      "cn": "场地",
       "reasons": [
         "memory_dont"
       ],
