@@ -142,13 +142,14 @@ test('fallback workflow has one existing twice-daily clock and valid Bash steps'
  assert(workflow.includes("github.ref == 'refs/heads/main' && github.event_name != 'create'"));
  assert(workflow.includes('LESSON_CREATE_FALLBACK_DISPATCHED'));
  assert(workflow.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
- assert(workflow.includes('due_epoch=$((created_epoch + 60))'), 'Watcher must count 60 seconds from run creation');
- assert(!workflow.includes('target_time=08:05') && !workflow.includes('target_time=18:05'),
-   'Branch watcher must never wait for fixed 05 minute');
+ assert(workflow.includes('due_epoch=$((slot_epoch + 300))'), 'Watcher must not dispatch V2 before five minutes after official lesson start');
+ assert(workflow.includes('event_grace=$((created_epoch + 60))'), 'Late-created release branches still get normal upload grace');
+ assert(workflow.includes('FALLBACK_GRACE_ACTIVE'), 'The V2 generator must enforce the five-minute time barrier independently');
+ assert(workflow.includes('LESSON_RECOVERY_DEFERRED'), 'Failed-PR recovery must also respect the five-minute minimum');
  assert(workflow.includes('LESSON_CREATE_DRAFT_STAGED'), 'Staged original gets a bounded normal publication window');
 });
 
-test('real watcher Bash uses a 60-second event grace, not fixed :05',()=>{
+test('real watcher Bash enforces five minutes after lesson start (with late-branch upload grace)',()=>{
  const cp=require('node:child_process'),os=require('node:os');
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'lesson-watch-test-'));
  try{
@@ -165,8 +166,8 @@ test('real watcher Bash uses a 60-second event grace, not fixed :05',()=>{
      else break;
    }
    const dateStub=path.join(tmp,'date'),ghStub=path.join(tmp,'gh'),sleepStub=path.join(tmp,'sleep');
-   // The fake Actions run was created at epoch=1000, the runner starts at epoch=1000.
-   // Its branch is already within the allowed PM slot (slotEpoch=900).
+   // The fake Actions run was created at epoch=1000. Official PM starts at 900;
+   // V2 cannot dispatch until slot+300=1200, even though event+60=1060.
    fs.writeFileSync(dateStub,[
      '#!/bin/bash',
      'case "$*" in',
@@ -229,22 +230,26 @@ test('real watcher Bash uses a 60-second event grace, not fixed :05',()=>{
 
    const done=run('lesson-release-2026-10-01-pm',{published:true});
    assert(done.stdout.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
-   assert.deepEqual(done.slept,[60]);assert.equal(done.dispatched,'');
+   assert.deepEqual(done.slept,[200]);assert.equal(done.dispatched,'');
 
    const missing=run('lesson-release-2026-10-01-pm');
    assert(missing.stdout.includes('LESSON_CREATE_FALLBACK_DISPATCHED'));
-   assert.deepEqual(missing.slept,[60]);
+   assert.deepEqual(missing.slept,[200]);
    assert(missing.dispatched.includes('inputs[recover_date]=2026-10-01'));
    assert(missing.dispatched.includes('inputs[recover_session]=pm'));
    assert.equal(missing.dispatched.trim().split('\n').length,1);
 
-   const runnerLate=run('lesson-release-2026-10-01-pm',{nowEpoch:1070});
-   assert.deepEqual(runnerLate.slept,[],'A queued runner must not restart 60-second window');
+   const runnerLate=run('lesson-release-2026-10-01-pm',{nowEpoch:1270});
+   assert.deepEqual(runnerLate.slept,[],'A queued runner past slot+300 must not restart its wait');
    assert(runnerLate.dispatched.includes('inputs[recover_session]=pm'));
 
    const beforeSlot=run('lesson-release-2026-10-01-pm',{slotEpoch:1100});
-   assert.deepEqual(beforeSlot.slept,[100],'Before session start, wait for 18:00, never :05');
+   assert.deepEqual(beforeSlot.slept,[400],'Before session start, wait until slot+300, never the start time');
    assert(beforeSlot.dispatched.includes('inputs[recover_session]=pm'));
+
+   const lateBranch=run('lesson-release-2026-10-01-pm',{createdEpoch:1300,nowEpoch:1300});
+   assert.deepEqual(lateBranch.slept,[60],'A late ChatGPT release must receive its own 60-second upload grace after :05');
+   assert(lateBranch.dispatched.includes('inputs[recover_session]=pm'));
 
    const tooEarly=run('lesson-release-2026-10-01-pm',{slotEpoch:3000});
    assert(tooEarly.stdout.includes('LESSON_CREATE_IGNORED'));
@@ -252,12 +257,12 @@ test('real watcher Bash uses a 60-second event grace, not fixed :05',()=>{
 
    const staged=run('lesson-release-2026-10-01-pm',{staged:true});
    assert(staged.stdout.includes('LESSON_CREATE_DRAFT_STAGED'));
-   assert.deepEqual(staged.slept,[60,120]);
+   assert.deepEqual(staged.slept,[200,120]);
    assert(staged.dispatched.includes('inputs[recover_session]=pm'));
 
    const normallyPublished=run('lesson-release-2026-10-01-pm',{staged:true,afterStaged:true});
    assert(normallyPublished.stdout.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
-   assert.deepEqual(normallyPublished.slept,[60,120]);
+   assert.deepEqual(normallyPublished.slept,[200,120]);
    assert.equal(normallyPublished.dispatched,'');
  }finally{fs.rmSync(tmp,{recursive:true,force:true})}
 });
