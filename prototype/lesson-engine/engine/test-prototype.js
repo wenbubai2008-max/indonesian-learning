@@ -180,6 +180,22 @@ test('quality gate blocks semantic regressions instead of just counting JSON fie
  wrong.output.reference_answer='Hari ini saya akan istirahat lebih banyak. Kalau situasinya berubah, saya akan pulang.';
  assert(auditLesson(wrong).errors.some(e=>e.code==='QUALITY_OUTPUT_TARGET_MISMATCH'));
 });
+test('V4 actively refuses fake transfer metadata and target-free evening rewrites',()=>{
+ const am=core.generate(cfg('am').ctx,bundle,dailyRows,{variant:0});
+ assert(am._prototype.transfer_output_count>=1,'AM fixture must exercise alternate-context output');
+ const invalidAm=JSON.parse(JSON.stringify(am));
+ invalidAm._prototype.transfer_output_count=10;
+ assert(auditLesson(invalidAm).errors.some(e=>e.code==='QUALITY_OUTPUT_TRANSFER_FALSE'));
+ const pm=core.generate(cfg('pm').ctx,bundle,dailyRows,{variant:0});
+ assert(pm._prototype.dialogue_contextual_review===true,'PM dialogue should reuse related learned language');
+ assert(pm.dialogue.lines.some(x=>hasWord(x.id,'biarpun')),'PM third turn should retain the relevant learned concessive');
+ const wrong=JSON.parse(JSON.stringify(pm));
+ wrong.rewrite[0].reference_answer='Hari ini saya ingin pulang saja.';
+ assert(auditLesson(wrong).errors.some(e=>e.code==='QUALITY_REWRITE_TARGET_MISMATCH'));
+ const fakeTransfer=JSON.parse(JSON.stringify(pm));
+ fakeTransfer._prototype.transfer_rewrite_count=10;
+ assert(auditLesson(fakeTransfer).errors.some(e=>e.code==='QUALITY_REWRITE_TRANSFER_FALSE'));
+});
 test('alternate real-candidate order remains publishable and educationally matched',()=>{
  const c=cfg('am'),ctx=JSON.parse(JSON.stringify(c.ctx));
  const preferred=['sepenuhnya','sembuh','menyentuh','bersinar','tindakan','kisah','ditemukan','sebelah','peristiwa','daya'];
