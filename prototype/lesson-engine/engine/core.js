@@ -305,13 +305,20 @@
     const news=all.filter(c=>c.group==='new'),support=all.filter(c=>c.group!=='new');
     const required=session==='am'?6:cards.filter(c=>c.group==='new').length;
     if(news.length<required)throw Error('MATERIAL_EXAMPLE_TARGET_MISSING: need '+required+' exact new-word examples; found '+news.length);
+    const macro=c=>{
+      const b=semanticBucket(c,env,scene);
+      if(['transport','nature','incident'].includes(b))return 'outside';
+      if(['health','social'].includes(b))return 'personal';
+      return 'activity';
+    };
     // Prefer cohesive clusters and shorter authentic examples; do NOT arbitrarily
     // replace legally selected vocabulary or invent new Indonesian sentences.
     const chosen=[],available=[...news];
     const clusterScore=c=>{
-      const b=semanticBucket(c,env,scene);
-      const neighbors=news.filter(n=>n!==c&&semanticBucket(n,env,scene)===b).length;
-      return neighbors*12+sceneFit(c,scene,env)*2-wc(c.example)/3;
+      const b=macro(c),fine=semanticBucket(c,env,scene);
+      const neighbors=news.filter(n=>n!==c&&macro(n)===b).length;
+      const close=news.filter(n=>n!==c&&semanticBucket(n,env,scene)===fine).length;
+      return neighbors*7+close*9+sceneFit(c,scene,env)*2-wc(c.example)/3;
     };
     available.sort((a,b)=>clusterScore(b)-clusterScore(a)||a.word.localeCompare(b.word));
     const anchor=available[(variant%Math.min(3,available.length))]||available[0];
@@ -319,10 +326,10 @@
     while(chosen.length<required){
       available.sort((a,b)=>{
         const score=c=>{
-          const group=semanticBucket(c,env,scene);
-          const shared=chosen.filter(x=>semanticBucket(x,env,scene)===group).length;
-          const exists=chosen.some(x=>semanticBucket(x,env,scene)===group);
-          return shared*13+(!exists?0:5)+sceneFit(c,scene,env)-wc(c.example)/3;
+          const fine=semanticBucket(c,env,scene),group=macro(c);
+          const exact=chosen.filter(x=>semanticBucket(x,env,scene)===fine).length;
+          const shared=chosen.filter(x=>macro(x)===group).length;
+          return exact*13+shared*7+sceneFit(c,scene,env)-wc(c.example)/3;
         };
         return score(b)-score(a)||a.word.localeCompare(b.word);
       });
@@ -332,30 +339,25 @@
     // single fabricated narrative and must never inherit an unrelated scene title.
     const groups=new Map();
     for(const c of chosen){
-      const b=semanticBucket(c,env,scene);
+      const b=macro(c);
       if(!groups.has(b))groups.set(b,[]);
       groups.get(b).push(c);
     }
-    const mixed=groups.size>1;
+    const fineTopics=new Set(chosen.map(c=>semanticBucket(c,env,scene)));
+    const mixed=fineTopics.size>1;
+    // Never stitch five unrelated stock sentences into a fabricated single event.
+    // Two or three expressly separate, broad life contexts need fewer hard transitions.
     const topicIntros={
-      work:['Pertama, ada beberapa urusan pekerjaan yang perlu diperhatikan.','首先，有几件工作上的事情需要留意。'],
-      digital:['Dalam urusan perangkat dan dokumen, ada hal lain yang perlu dicatat.','设备和文件方面，还有另一件值得记下的事。'],
-      transport:['Di perjalanan, saya juga memperhatikan keadaan sekitar.','路上，我还留意到了周围的情况。'],
-      nature:['Di luar ruangan, keadaan hari itu sedikit berbeda.','室外，那天的情况又有些不同。'],
-      health:['Soal kesehatan, saya mendapat kabar dari orang sekitar.','健康方面，我还听到了身边人的消息。'],
-      food:['Ada juga cerita tentang makanan dan kegiatan sehari-hari.','另外还有饮食和日常生活方面的事情。'],
-      shopping:['Saat mengurus kebutuhan, ada beberapa hal kecil yang saya catat.','处理日常采购时，我还记下了几件小事。'],
-      social:['Dalam obrolan dengan orang lain, ada cerita yang menarik.','与别人聊天时，也听到了值得一提的事。'],
-      incident:['Ada pula kejadian lain yang membuat saya lebih berhati-hati.','还发生了另一件让我更加小心的事。'],
-      home:['Di rumah, saya juga harus memperhatikan beberapa hal.','在家里，我还需要留意另外一些事情。'],
-      finance:['Untuk urusan pembayaran, ada hal yang perlu saya periksa.','付款方面，我还要核对一件事情。']
+      activity:['Untuk pekerjaan dan urusan sehari-hari, ada beberapa hal yang saya catat.','工作和日常事务方面，我记下了几件事。'],
+      outside:['Di luar, ada beberapa kejadian yang menarik perhatian saya.','外面也有几件引起我注意的事情。'],
+      personal:['Ada juga cerita tentang orang-orang di sekitar saya.','还有几件和身边人有关的事。']
     };
     const cn=env.M['scene-cn'].scenes[scene.id];
     const op=mixed
-      ?['Hari ini saya mengumpulkan beberapa catatan pendek dari situasi yang berbeda.','今天我整理了来自不同生活情境的几则简短记录。']
+      ?['Hari ini ada beberapa kejadian kecil yang ingin saya ceritakan.','今天有几件生活中的小事想讲一讲。']
       :[scene.openings[hash(key+'open')%scene.openings.length],cn.openings[hash(key+'open')%cn.openings.length]];
     const closer=mixed
-      ?['Masing-masing cerita punya konteks sendiri, tetapi semuanya berguna untuk dipahami.','每件事情都有自己的背景，但都值得理解。']
+      ?['Itu beberapa hal yang saya dengar dan alami hari ini.','这些就是我今天听到和遇到的几件事。']
       :[scene.closing[hash(key+'close')%scene.closing.length],cn.closing[hash(key+'close')%cn.closing.length]];
     const entry=c=>{
       const imperative=/^(tolong|jangan|coba)\b/i.test(c.example);
@@ -378,14 +380,14 @@
     if(remaining()<0)throw Error('READING_TARGET_BUDGET: mandatory topical examples exceed 120');
     // Review enters only when it shares the main topic, not as a random filler.
     const mainTopic=chunks[0]?.[0];
-    for(const c of support.filter(c=>semanticBucket(c,env,scene)===mainTopic).slice(0,2)){
+    for(const c of support.filter(c=>macro(c)===mainTopic).slice(0,2)){
       const p=entry(c);
       if(wc(p[0])+2<=remaining())pairs.push(p);
     }
     const neutral=[
-      ['Saya mencoba memahami setiap situasi sebelum memberikan pendapat.','我试着先理解每种情况，再发表看法。'],
-      ['Tidak semua hal terjadi dalam tempat dan waktu yang sama.','这些事情并不都发生在同一个地点和时间。'],
-      ['Saya mencatat bagian yang penting supaya lebih mudah mengingatnya.','我记下重要部分，方便以后回想。']
+      ['Saya jadi punya beberapa bahan cerita saat bertemu teman nanti.','以后见朋友时，我又有了几件可以聊的小事。'],
+      ['Ada hal sederhana yang ternyata cukup menarik untuk diperhatikan.','有些简单的小事其实也值得留意。'],
+      ['Saya ingin mengingat bagian yang penting dari semua cerita itu.','这些事情中重要的部分，我想记下来。']
     ];
     const filler=mixed?neutral:scene.moves.map((x,i)=>[x,cn.moves[i]]);
     for(const p of filler){
@@ -398,7 +400,7 @@
     const actual=coverage.filter(c=>c.group==='new').length;
     if(actual<required)throw Error('READING_EXACT_COVERAGE: '+actual+'/'+required);
     if(wc(text)<80||wc(text)>120)throw Error('READING_WORD_COUNT: '+wc(text));
-    return {text,cn:translation,_coverage:coverage,_review_required:mixed,_mixed:mixed,_topic_count:groups.size};
+    return {text,cn:translation,_coverage:coverage,_review_required:mixed,_mixed:mixed,_topic_count:fineTopics.size};
   }
 
   function dialogueFor(scene,cards,env,key){
@@ -429,12 +431,13 @@
     };
     const same=semanticBucket(first,env,scene)===semanticBucket(second,env,scene);
     const askNext=()=>{
+      if(!same)return ['Oh, begitu. Ada cerita lain?','哦，这样。还有别的事吗？'];
       const s=norm(second.example);
-      if(/\b(hujan|awan|cuaca|matahari)\b/.test(s))return ['Oh, begitu. Terus bagaimana cuacanya?','哦，这样。那天气怎么样？'];
-      if(/\b(kantor|rapat|pekerjaan|tim|laporan)\b/.test(s))return ['Oh, begitu. Terus pekerjaanmu bagaimana?','这样啊。那工作怎么样？'];
-      if(/\b(sakit|sembuh|batuk|klinik)\b/.test(s))return ['Oh, begitu. Sekarang kondisinya bagaimana?','原来如此。现在情况怎么样？'];
-      return same?['Oh, begitu. Terus apa yang terjadi?','这样啊。后来发生了什么？']
-        :['Oh, begitu. Ada cerita lain?','哦，这样。还有别的事吗？'];
+      if(/\b(air hujan|selokan)\b/.test(s))return ['Terus air hujannya mengalir ke mana?','那雨水后来流到哪里了？'];
+      if(/\b(hujan|awan|cuaca|matahari)\b/.test(s))return ['Oh, begitu. Lalu setelah itu apa yang terjadi?','这样啊。那后来怎么样了？'];
+      if(/\b(kantor|rapat|pekerjaan|tim|laporan)\b/.test(s))return ['Oh, begitu. Lalu apa yang kamu lakukan?','哦，这样。然后你怎么做？'];
+      if(/\b(sakit|sembuh|batuk|klinik)\b/.test(s))return ['Oh, begitu. Lalu sekarang bagaimana perkembangannya?','这样啊。那现在恢复得怎么样？'];
+      return ['Oh, begitu. Terus apa yang terjadi?','这样啊。后来发生了什么？'];
     };
     const q1=askFirst(first),q2=askNext(),lines=[
       {speaker:'A',id:q1[0],cn:q1[1]},
@@ -443,7 +446,11 @@
       {speaker:'B',id:second.example,cn:second.example_cn}
     ];
     if(support){
-      lines.push({speaker:'A',id:'Lalu bagaimana akhirnya?',cn:'那最后怎么样了？'},
+      const s=norm(support.example);
+      const finalQ=/\b(biarpun|walaupun|meskipun)\b/.test(s)
+        ?['Jadi, kamu tetap melanjutkan rencananya?','所以，你还是按计划继续了？']
+        :['Lalu bagaimana akhirnya?','那最后怎么样了？'];
+      lines.push({speaker:'A',id:finalQ[0],cn:finalQ[1]},
         {speaker:'B',id:support.example,cn:support.example_cn});
     }else{
       lines.push({speaker:'A',id:'Oh, begitu. Semoga semuanya lancar, ya.',cn:'这样啊。希望一切顺利。'},
@@ -515,9 +522,9 @@
           -Math.max(0,wc(a.example)-15)-Math.max(0,wc(b.example)-15)});
       }
       pairs.sort((a,b)=>b.score-a.score||a.a.word.localeCompare(b.a.word));
-      const focusPair=pairs[0],out={
+      const focusPair=pairs[0],cleanCn=x=>String(x||'').trim().replace(/[。！？!?；;]+$/g,''),out={
         task:'遮住印尼语，用 '+focusPair.a.word+' 和 '+focusPair.b.word+
-          ' 各说一句：①'+focusPair.a.example_cn+'；②'+focusPair.b.example_cn+
+          ' 各说一句：①'+cleanCn(focusPair.a.example_cn)+'；②'+cleanCn(focusPair.b.example_cn)+
           '。至少准确使用这2个目标词；可改变人物或时间。',
         answer:focusPair.a.example+' '+focusPair.b.example,
         cn:focusPair.a.example_cn+' '+focusPair.b.example_cn
