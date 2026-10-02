@@ -192,6 +192,9 @@ jobs:
           node --check prototype/lesson-engine/engine/quality.js
           node --check prototype/lesson-engine/engine/test-prototype.js
           node prototype/lesson-engine/engine/test-prototype.js
+          node --check prototype/lesson-engine/engine/compare-quality.js
+          git fetch --no-tags origin main
+          node prototype/lesson-engine/engine/compare-quality.js origin/main
           node --check .github/scripts/test-recover-missing-lesson.js
           node .github/scripts/test-recover-missing-lesson.js
           # Live baseline rehearsal without --write; no official lesson or index is changed.
