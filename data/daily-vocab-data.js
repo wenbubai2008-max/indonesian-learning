@@ -1867,19 +1867,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-08-29 08:00",
+    "last_seen": "2026-10-02 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-29"
+      "2026-08-29",
+      "2026-10-02"
     ],
     "example": "Bisa bawain aku air?",
     "example_cn": "能帮我带瓶水吗？",
     "lesson_occurrences": [
-      "2026-08-29 08:00"
+      "2026-08-29 08:00",
+      "2026-10-02 08:00"
     ]
   },
   {
@@ -12334,20 +12336,22 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-22 08:00",
-    "last_seen": "2026-09-23 18:00",
+    "last_seen": "2026-10-02 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-22",
-      "2026-09-23"
+      "2026-09-23",
+      "2026-10-02"
     ],
     "lesson_occurrences": [
       "2026-09-22 08:00",
-      "2026-09-23 18:00"
+      "2026-09-23 18:00",
+      "2026-10-02 08:00"
     ]
   },
   {
@@ -13395,19 +13399,21 @@ window.DAILY_VOCAB_DB = [
       "口语",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-25 18:00",
+    "last_seen": "2026-10-02 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-25"
+      "2026-09-25",
+      "2026-10-02"
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00",
-      "2026-09-25 18:00"
+      "2026-09-25 18:00",
+      "2026-10-02 08:00"
     ]
   },
   {
@@ -14076,19 +14082,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "和上司谈过后再安排新时间。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-26 18:00",
-    "last_seen": "2026-09-26 18:00",
+    "last_seen": "2026-10-02 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-26"
+      "2026-09-26",
+      "2026-10-02"
     ],
     "lesson_occurrences": [
-      "2026-09-26 18:00"
+      "2026-09-26 18:00",
+      "2026-10-02 08:00"
     ]
   },
   {
@@ -14493,19 +14503,21 @@ window.DAILY_VOCAB_DB = [
       "口语",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-09-28 18:00",
+    "last_seen": "2026-10-02 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-02"
     ],
     "lesson_occurrences": [
       "2026-09-28 08:00",
-      "2026-09-28 18:00"
+      "2026-09-28 18:00",
+      "2026-10-02 08:00"
     ]
   },
   {
@@ -16148,6 +16160,256 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "力量；能力",
     "example": "Baterai ini punya daya yang cukup untuk dipakai seharian.",
     "example_cn": "这块电池的电量/能力足够用一整天。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "taruh",
+    "cn": "放；放置",
+    "en": "put; place",
+    "root": "taruh",
+    "root_cn": "放；放置",
+    "example": "Taruh tasnya di kursi saja.",
+    "example_cn": "把包放在椅子上就行。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "cemas",
+    "cn": "焦虑；担忧",
+    "en": "anxious; worried",
+    "root": "cemas",
+    "root_cn": "焦虑；担忧",
+    "example": "Saya cemas karena belum mendapat kabar.",
+    "example_cn": "因为还没有收到消息，我有点担心。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "lega",
+    "cn": "松一口气；宽慰",
+    "en": "relieved",
+    "root": "lega",
+    "root_cn": "宽慰；轻松",
+    "example": "Saya merasa lega setelah masalahnya selesai.",
+    "example_cn": "问题解决以后，我松了一口气。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "semoga",
+    "cn": "希望；祝愿",
+    "en": "hopefully; may",
+    "root": "semoga",
+    "root_cn": "希望；祝愿",
+    "example": "Semoga pekerjaan hari ini berjalan lancar.",
+    "example_cn": "希望今天的工作顺利。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "repot",
+    "cn": "麻烦；费事；忙乱",
+    "en": "troublesome; inconvenient; busy",
+    "root": "repot",
+    "root_cn": "麻烦；费事",
+    "example": "Kalau terlalu repot, kita bisa cari cara yang lebih sederhana.",
+    "example_cn": "如果太麻烦，我们可以找更简单的办法。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "urus",
+    "cn": "处理；照料；管理",
+    "en": "handle; take care of",
+    "root": "urus",
+    "root_cn": "处理；照料",
+    "example": "Dokumen ini saya urus sendiri pagi ini.",
+    "example_cn": "这份文件我今天早上自己处理。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "pasang",
+    "cn": "安装；装上；配对",
+    "en": "install; put on; pair",
+    "root": "pasang",
+    "root_cn": "安装；装上",
+    "example": "Tolong pasang lampu baru di kamar.",
+    "example_cn": "请在房间里装上新灯。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "lepas",
+    "cn": "取下；脱下；松开；释放",
+    "en": "remove; release; let go",
+    "root": "lepas",
+    "root_cn": "松开；脱离",
+    "example": "Silakan lepas sepatu sebelum masuk.",
+    "example_cn": "进去之前请脱鞋。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "demam",
+    "cn": "发烧",
+    "en": "fever; have a fever",
+    "root": "demam",
+    "root_cn": "发烧",
+    "example": "Dia tidak masuk kerja karena sedang demam.",
+    "example_cn": "他因为正在发烧，所以没有去上班。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-02"
+    ],
+    "lesson_occurrences": [
+      "2026-10-02 08:00"
+    ]
+  },
+  {
+    "word": "gatal",
+    "cn": "痒；发痒",
+    "en": "itchy",
+    "root": "gatal",
+    "root_cn": "痒",
+    "example": "Kulit tangan saya terasa gatal sejak tadi malam.",
+    "example_cn": "从昨晚开始，我手上的皮肤觉得痒。",
     "categories": [
       "每日学习",
       "08:00"
