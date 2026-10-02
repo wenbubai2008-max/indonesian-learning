@@ -268,6 +268,18 @@ test('real watcher Bash enforces five minutes after lesson start (with late-bran
 });
 
 
+test('V2 recovery rejects grammatically valid JSON with a target-free active output',()=>{
+ const {input}=setup('am'),valid=input.generate;
+ let count=0;
+ assert.throws(()=>recover({...input,generate:(ctx,opt)=>{
+   count++;
+   const lesson=valid(ctx,opt);
+   lesson.output.reference_answer='Saya pergi ke kantor hari ini. Setelah itu saya pulang ke rumah.';
+   return lesson;
+ }}),e=>e.code==='NO_VALID_VARIANT'&&e.message.includes('QUALITY_OUTPUT_TARGET_MISMATCH'));
+ assert.equal(count,6,'Do not silently publish an otherwise structurally valid low-quality variant');
+});
+
 test('formal PM validator enforces precise AM source without invalidating immutable old lessons',()=>{
  const {ctx,input}=setup('pm');
  const {validate}=require('./validate-lesson-candidate');
