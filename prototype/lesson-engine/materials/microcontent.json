@@ -419,6 +419,36 @@
       "example_cn": "我们检查这些数据，是为了避免错误。",
       "synonym_note": "guna 偏正式，表示“为了”；untuk 在日常口语中更常用。gunanya 表示“它的用途”。",
       "usage_note": "注意 guna 和 gunanya 的表面形式不同。"
+    },
+    "membunuh": {
+      "cn": "杀死；使丧命",
+      "en": "kill",
+      "root": "bunuh",
+      "root_cn": "杀死",
+      "tags": [
+        "law",
+        "incident"
+      ],
+      "formation": "meN- + bunuh → membunuh；常见 membunuh serangga。",
+      "example": "Pestisida bisa membunuh serangga, jadi harus digunakan dengan hati-hati.",
+      "example_cn": "杀虫剂能杀死昆虫，因此使用时必须小心。",
+      "synonym_note": "membunuh 指造成死亡；mengusir 只是驱赶。不要把轻微的损坏都说成 membunuh。",
+      "usage_note": "语气较强；日常要根据真实含义选择。"
+    },
+    "daya": {
+      "cn": "力量；能力；电量或功率",
+      "en": "power; capacity",
+      "root": "daya",
+      "root_cn": "能力；力量",
+      "tags": [
+        "digital",
+        "electricity"
+      ],
+      "formation": "常见 daya baterai（电量）、daya tahan（耐力/续航）、daya beli（购买力）。",
+      "example": "Daya baterai ponsel saya tinggal 20 persen.",
+      "example_cn": "我手机的电池电量只剩20%。",
+      "synonym_note": "daya 常用于电力、能力及购买力等搭配；tenaga 更偏体力、能量。",
+      "usage_note": "实际日常口语还常说 baterainya tinggal 20 persen。"
     }
   }
 }
