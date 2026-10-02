@@ -24,7 +24,7 @@ const previousDate=date=>new Date(Date.parse(date+'T00:00:00Z')-86400000).toISOS
 const json=(x)=>JSON.stringify(x,null,2)+'\n';
 
 function recover({
-  date,session,mainHead,index,runtime,rules,read,
+  date,session,mainHead,index,runtime,rules,read,originalCandidate,
   contextBuilder=buildLessonContext,generate=engine.generate,planner=plan,
   historyBuilder=collectReviewHistory
 }){
@@ -45,15 +45,39 @@ function recover({
   // Never overwrite an orphan lesson or silently paper over a true flag with a missing file.
   requireIt(!flag&&!official,'PARTIAL_PUBLICATION','Lesson/index disagree; manual integrity repair required');
 
+  const previousPm=read(fileFor(previousDate(date),'pm'),true);
+  const sameDayAm=session==='pm'?read(fileFor(date,'am'),true):undefined;
+  const reviewHistory=historyBuilder(index,date,session,p=>read(p));
+
+  // A same-slot original ChatGPT draft takes priority if it passes the SAME formal
+  // planner as an ordinary lesson PR. Do not apply V4-specific stylistic gates to it.
+  // The caller must supply an exact, trusted release-branch snapshot (never arbitrary
+  // remote content); an invalid draft cannot weaken the canonical eligibility rules.
+  let originalRejection=null;
+  if(originalCandidate!==undefined){
+    try{
+      const planned=planner({
+        lesson:originalCandidate,index,runtime,rules,expectedDate:date,
+        expectedSession:session,mainHead,sameDayAm,previousPm,reviewHistory
+      });
+      if(planned.ok&&planned.status==='ready'&&planned.files?.length===2&&
+        planned.files[0].path===target&&planned.files[1].path==='data/daily/index.json'){
+        return {status:'ready',target,source:'original_staged',variant:null,
+          files:planned.files,candidateHash:planned.candidateHash,
+          baselineFingerprint:planned.baselineFingerprint};
+      }
+      originalRejection=(planned.errors||[{code:'ORIGINAL_PLAN_NOT_READY',detail:planned.status}]).slice(0,12);
+    }catch(e){
+      originalRejection=[{code:e.code||'ORIGINAL_PLAN_ERROR',detail:String(e.message||e).slice(0,220)}];
+    }
+  }
+
+  // Only a missing or formally rejected original may invoke the existing V4 engine.
   const ctx=contextBuilder({index,runtime,rules,load:p=>read(p),sourceSha:mainHead});
   requireIt(ctx?.target?.date===date&&ctx?.target?.session===session,
     'TARGET_NOT_READY','Latest legal next lesson is '+JSON.stringify(ctx?.target));
   requireIt(ctx.source?.runtime_generated_at===runtime.generated_at&&
     ctx.source?.lesson_watermark===runtime.lesson_watermark,'CONTEXT_STALE','Context and runtime are inconsistent');
-
-  const previousPm=read(fileFor(previousDate(date),'pm'),true);
-  const sameDayAm=session==='pm'?read(fileFor(date,'am'),true):undefined;
-  const reviewHistory=historyBuilder(index,date,session,p=>read(p));
   const rejected=[];
   for(let variant=0;variant<6;variant++){
     let lesson;
@@ -71,8 +95,9 @@ function recover({
       if(result.ok&&result.status==='ready'&&result.files?.length===2&&
         result.files[0].path===target&&result.files[1].path==='data/daily/index.json'){
         return {
-          status:'ready',target,variant,files:result.files,
-          candidateHash:result.candidateHash,baselineFingerprint:result.baselineFingerprint
+          status:'ready',target,source:'v4_generated',variant,files:result.files,
+          candidateHash:result.candidateHash,baselineFingerprint:result.baselineFingerprint,
+          originalRejection
         };
       }
       rejected.push({variant,errors:result.errors||[{code:'UNEXPECTED_PLAN',detail:result.status}]});
@@ -80,7 +105,7 @@ function recover({
       rejected.push({variant,errors:[{code:e.code||'GENERATION_FAILED',detail:String(e.message||e).slice(0,220)}]});
     }
   }
-  error('NO_VALID_VARIANT','All 6 V2 candidates failed the original planner: '+JSON.stringify(rejected));
+  error('NO_VALID_VARIANT','All 6 V2 candidates failed the original planner: '+JSON.stringify({originalRejection,rejected}));
 }
 
 function parseArgs(args){
@@ -88,8 +113,8 @@ function parseArgs(args){
   for(let i=0;i<args.length;i++){
     if(args[i]==='--write'){requireIt(!out.write,'ARGUMENT_INVALID','Duplicate --write');out.write=true;continue}
     const key=args[i].replace(/^--/,'');
-    requireIt(['date','session','main-head'].includes(key)&&args[i]==='--'+key&&args[i+1]&&!args[i+1].startsWith('--')&&!out[key],
-      'ARGUMENT_INVALID','Usage: --date YYYY-MM-DD --session am|pm --main-head SHA [--write]');
+    requireIt(['date','session','main-head','original-candidate'].includes(key)&&args[i]==='--'+key&&args[i+1]&&!args[i+1].startsWith('--')&&!out[key],
+      'ARGUMENT_INVALID','Usage: --date YYYY-MM-DD --session am|pm --main-head SHA [--original-candidate PATH] [--write]');
     out[key]=args[++i];
   }
   return out;
@@ -100,8 +125,18 @@ function run(args,root=process.cwd()){
     if(optional&&!fs.existsSync(resolve(p)))return undefined;
     return JSON.parse(fs.readFileSync(resolve(p),'utf8'));
   };
+  let originalCandidate,originalParseError=null;
+  if(a['original-candidate']){
+    // Read errors fail closed; only invalid draft JSON falls back to V4.
+    const raw=fs.readFileSync(path.resolve(root,a['original-candidate']),'utf8');
+    try{originalCandidate=JSON.parse(raw)}
+    catch(e){
+      if(!(e instanceof SyntaxError))throw e;
+      originalCandidate=null;originalParseError='ORIGINAL_JSON_INVALID';
+    }
+  }
   const outcome=recover({
-    date:a.date,session:a.session,mainHead:a['main-head'],
+    date:a.date,session:a.session,mainHead:a['main-head'],originalCandidate,
     index:read('data/daily/index.json'),runtime:read('data/learning-runtime.json'),
     rules:read('data/learning-pool-rules.json'),read
   });
@@ -113,7 +148,9 @@ function run(args,root=process.cwd()){
     fs.writeFileSync(resolve('data/daily/index.json'),outcome.files[1].content);
   }
   return {ok:true,status:outcome.status,date:a.date,session:a.session,
-    variant:outcome.variant,paths:outcome.files.map(x=>x.path),
+    source:outcome.source||'already_published',variant:outcome.variant,
+    originalRejection:originalParseError?[{code:originalParseError}]:outcome.originalRejection||null,
+    paths:outcome.files.map(x=>x.path),
     candidateHash:outcome.candidateHash||null,write:a.write};
 }
 if(require.main===module){
