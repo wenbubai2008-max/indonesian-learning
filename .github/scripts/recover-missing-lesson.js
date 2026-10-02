@@ -12,6 +12,7 @@ const {plan}=require('./plan-lesson-publication');
 const {buildLessonContext}=require('./build-lesson-context');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
 const engine=require('../../prototype/lesson-engine/engine/generate-prototype');
+const {auditLesson}=require('../../prototype/lesson-engine/engine/quality');
 
 const validDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s||'')&&
   !Number.isNaN(Date.parse(s+'T00:00:00Z'))&&
@@ -58,6 +59,11 @@ function recover({
     let lesson;
     try{
       lesson=generate(ctx,{variant});
+      const quality=auditLesson(lesson);
+      if(!quality.ok){
+        rejected.push({variant,errors:quality.errors});
+        continue;
+      }
       const result=planner({
         lesson,index,runtime,rules,expectedDate:date,expectedSession:session,mainHead,
         sameDayAm,previousPm,reviewHistory
