@@ -28,5 +28,6 @@ Then follow this mandatory sequence:
 - Do not change historical PM display semantics when changing the current schedule. PM switched from 19:00 to 18:00 starting `2026-09-16`; older history remains 19:00.
 - Do not trust a generated lesson merely because it says `write_status="lesson_complete"`; validate the actual question/review schema before treating it as complete.
 - Do not re-enable the disabled 20:00 fallback unless the user explicitly asks.
+- Do not re-enable V4 backup-lesson generation (create watcher, failed-PR dispatch, `LESSON_V4_FALLBACK`) unless the user explicitly asks. It was paused on 2026-10-03; Claude is the only automatic lesson generator, and a failed original release must be reported, never replaced by a second lesson.
 
 If a proposed change conflicts with `docs/REGRESSION-GUARD.md`, stop and resolve the conflict before writing.

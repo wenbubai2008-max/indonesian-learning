@@ -452,6 +452,32 @@ try {
   ok(scheduleCrons.length===2 && scheduleCrons[0]==="- cron: '30 1 * * *'" &&
     scheduleCrons[1]==="- cron: '5 11 * * *'",
     'sync workflow has only the existing two daily checks, now at 08:30/18:05 Jakarta');
+  // V4 backup-lesson generation is TEMPORARILY DISABLED (user instruction 2026-10-03). Claude is the
+  // only automatic lesson generator. Re-enable ONLY on the user's explicit instruction, and update
+  // this guard in the same change.
+  // The PR preflight also runs THIS guard against the pinned pre-change main tree (GUARD_BASELINE_TREE=1)
+  // to check data regressions only. That old tree predates the pause, so workflow-shape assertions
+  // are skipped there; the full strict run on the proposed tree always executes them.
+  const pausedOk=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+  const syncLines=sync.split('\n');
+  const stepBody=(name)=>{const a=sync.indexOf('      - name: '+name);if(a<0)return '';
+    const b=sync.indexOf('\n      - name: ',a+10),c=sync.indexOf('\n  extensive_reading_release:',a+10);
+    return sync.slice(a,[b,c].filter(x=>x>0).sort((x,y)=>x-y)[0]||sync.length)};
+  pausedOk(!/^  create:\s*$/m.test(sync), 'V4 paused: branch-create watcher is not an active workflow trigger');
+  pausedOk(/^    if: \$\{\{ false \}\}\s*$/m.test(sync), 'V4 paused: dormant release-scaffold watcher job is hard-disabled');
+  const failedPrStep=stepBody('Recover immediately after an eligible lesson release fails');
+  pausedOk(failedPrStep.includes('LESSON_RECOVERY_V4_DISABLED') && !failedPrStep.includes('inputs[recover_date]=$date') &&
+    !failedPrStep.includes('inputs[recover_session]=$session'),
+    'V4 paused: a failed lesson release PR never dispatches a backup generator');
+  const generatorStep=stepBody('Generate missing lesson with V2 and commit the two-file transaction');
+  pausedOk(generatorStep.includes('"status":"v4_disabled"') && generatorStep.includes('LESSON_V4_FALLBACK_DISABLED') &&
+    !/LESSON_V4_FALLBACK\s*[:=]/.test(generatorStep),
+    'V4 paused: scheduled/dispatch recovery only resumes the same saved original draft');
+  const recoverSource=read('.github/scripts/recover-missing-lesson.js');
+  pausedOk(/process\.env\.LESSON_V4_FALLBACK==='1'/.test(recoverSource) && recoverSource.includes("status:'v4_disabled'"),
+    'V4 paused: recover-missing-lesson.js generates nothing unless LESSON_V4_FALLBACK=1');
+  pausedOk(syncLines.filter(x=>/LESSON_V4_FALLBACK=1 node /.test(x)).length===2 && !/LESSON_V4_FALLBACK/.test(build),
+    'V4 paused: only the two isolated PR-preflight rehearsals may enable the V4 switch');
   ok(/scheduled_health_check/.test(sync) &&
     /Scheduled check: lesson, index, runtime, context, vocabulary and regression guard healthy; no rebuild or commit/.test(sync) &&
     sync.includes('node .github/scripts/build-lesson-context.js --check > /dev/null; then') &&

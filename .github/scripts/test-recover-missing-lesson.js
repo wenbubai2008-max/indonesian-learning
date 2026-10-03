@@ -34,7 +34,8 @@ function setup(slot){
  };
  const input={date:'2026-10-01',session:slot,mainHead:sha,
    index,runtime,rules,read,contextBuilder:()=>ctx,historyBuilder:()=>history(ctx),
-   generate:(c,{variant})=>core.generate(c,bundle,rows,{variant}),planner:plan};
+   generate:(c,{variant})=>core.generate(c,bundle,rows,{variant}),planner:plan,
+   v4Enabled:true}; // dormant V4 source stays tested; production default is OFF (see tests below)
  return {ctx,target,input};
 }
 let passed=0;
@@ -130,6 +131,59 @@ for(const slot of ['am','pm']){
       e=>e.code==='TARGET_NOT_READY');
  });
 }
+test('V4 backup generation is disabled by default: nothing is generated or planned',()=>{
+ delete process.env.LESSON_V4_FALLBACK;
+ for(const slot of ['am','pm']){
+   const {input,target}=setup(slot);
+   let built=0,generated=0;
+   const guarded={...input,v4Enabled:undefined,
+     contextBuilder:()=>{built++;throw Error('V4 context must not be built while disabled')},
+     generate:()=>{generated++;throw Error('V4 must not generate while disabled')}};
+   const missing=recover(guarded);
+   assert.equal(missing.status,'v4_disabled');
+   assert.deepEqual(missing.files,[]);
+   assert.equal(missing.target,target);
+   assert.equal(built+generated,0);
+   // An original draft that fails the formal planner is NOT replaced by a backup lesson.
+   const bad=input.generate(input.contextBuilder(),{variant:0});
+   bad.date='2000-01-01';
+   const rejected=recover({...guarded,originalCandidate:bad});
+   assert.equal(rejected.status,'v4_disabled');
+   assert(Array.isArray(rejected.originalRejection)&&rejected.originalRejection.length>0,'rejection evidence is kept');
+   assert.equal(built+generated,0);
+   // Unparseable saved draft (null) also never falls through to V4.
+   assert.equal(recover({...guarded,originalCandidate:null}).status,'v4_disabled');
+ }
+});
+test('V4 switch is only on for LESSON_V4_FALLBACK=1 and stays off in every production step',()=>{
+ const {v4FallbackEnabled}=require('./recover-missing-lesson');
+ const saved=process.env.LESSON_V4_FALLBACK;
+ try{
+   delete process.env.LESSON_V4_FALLBACK;assert.equal(v4FallbackEnabled(),false);
+   for(const v of ['','0','true','yes','on'])process.env.LESSON_V4_FALLBACK=v,assert.equal(v4FallbackEnabled(),false,'only "1" enables: '+v);
+   process.env.LESSON_V4_FALLBACK='1';assert.equal(v4FallbackEnabled(),true);
+ }finally{if(saved===undefined)delete process.env.LESSON_V4_FALLBACK;else process.env.LESSON_V4_FALLBACK=saved}
+ const wf=fs.readFileSync(path.join(base,'.github/workflows/sync-daily-vocab.yml'),'utf8');
+ const gen=wf.slice(wf.indexOf('      - name: Generate missing lesson with V2 and commit the two-file transaction'),
+   wf.indexOf('      - name: Sync vocab safely'));
+ assert(!/LESSON_V4_FALLBACK\s*[:=]/.test(gen),'the production generator step must never set the V4 switch');
+ // The only places allowed to set it are the two CI-only isolated rehearsals in the PR preflight job.
+ const uses=wf.split('\n').filter(x=>/LESSON_V4_FALLBACK=1 node /.test(x));
+ assert.equal(uses.length,2,'only the two isolated CI rehearsals may enable V4');
+ assert(!/LESSON_V4_FALLBACK/.test(fs.readFileSync(path.join(base,'.github/workflows/build-learning-runtime.yml'),'utf8')));
+ // The strict guard run on the proposed tree must NOT carry the baseline-only skip flag.
+ assert.equal((wf.match(/GUARD_BASELINE_TREE=1/g)||[]).length,1,'only the pinned-baseline guard run may skip workflow-shape checks');
+ assert(wf.includes('          node .github/scripts/regression-guard.js\n'),'proposed-tree guard run is strict');
+});
+test('a valid saved original is still resumable while V4 is disabled',()=>{
+ delete process.env.LESSON_V4_FALLBACK;
+ const {input,target}=setup('pm');
+ const draft=input.generate(input.contextBuilder(),{variant:0});
+ const r=recover({...input,v4Enabled:undefined,originalCandidate:draft,
+   contextBuilder:()=>{throw Error('no context needed')},generate:()=>{throw Error('no generation')}});
+ assert.equal(r.status,'ready');assert.equal(r.source,'original_staged');
+ assert.deepEqual(r.files.map(x=>x.path),[target,'data/daily/index.json']);
+});
 test('invalid date and main SHA cannot publish',()=>{
  const {input}=setup('am');
  assert.throws(()=>recover({...input,date:'2026-02-30'}),e=>e.code==='TARGET_INVALID');
@@ -174,17 +228,20 @@ test('fallback workflow has one existing twice-daily clock and valid Bash steps'
  }
  assert(workflow.includes('node .github/scripts/recover-missing-lesson.js'));
  assert(workflow.includes('FALLBACK_PAGES_BUILD_REQUESTED'));
- assert(workflow.includes('  create:'));
- assert(workflow.includes("github.event_name == 'create' && github.event.ref_type == 'branch'"));
+// V4 paused: the branch-create trigger is off and the dormant watcher job can never run.
+ assert(!/^  create:\s*$/m.test(workflow),'create: must not be an active trigger while V4 is disabled');
+ assert(/^  # create:\s*$/m.test(workflow),'the disabled trigger stays documented for explicit re-enable');
+ assert(workflow.includes('    if: ${{ false }}'),'watcher job is hard-disabled');
+ assert(workflow.includes("#   if: github.event_name == 'create' && github.event.ref_type == 'branch'"),'original watcher condition kept as a comment');
  assert(workflow.includes('lesson-watch-{0}'));
  assert(workflow.includes("github.ref == 'refs/heads/main' && github.event_name != 'create'"));
  assert(workflow.includes('LESSON_CREATE_FALLBACK_DISPATCHED'));
  assert(workflow.includes('LESSON_CREATE_ALREADY_PUBLISHED'));
  assert(workflow.includes('due_epoch=$((slot_epoch + grace_seconds))'), 'Watcher must not dispatch V2 before the session grace after official lesson start');
- assert.equal((workflow.match(/target_time=08:00; grace_seconds=1800; else target_time=18:00; grace_seconds=300;/g)||[]).length,3,'All three V2 gates use AM 30-minute / PM 5-minute grace');
+ assert.equal((workflow.match(/target_time=08:00; grace_seconds=1800; else target_time=18:00; grace_seconds=300;/g)||[]).length,2,'Remaining gates (dormant watcher + original-draft resume step) keep AM 30-minute / PM 5-minute grace; the failed-PR V4 dispatch and its gate are removed');
  assert(workflow.includes('event_grace=$((created_epoch + 60))'), 'Late-created release branches still get normal upload grace');
  assert(workflow.includes('FALLBACK_GRACE_ACTIVE'), 'The V2 generator must enforce the five-minute time barrier independently');
- assert(workflow.includes('LESSON_RECOVERY_DEFERRED'), 'Failed-PR recovery must also respect the five-minute minimum');
+ assert(!workflow.includes('LESSON_RECOVERY_DEFERRED')&&workflow.includes('LESSON_RECOVERY_V4_DISABLED'), 'Failed-PR path no longer defers/dispatches V4; it reports the disabled state');
  assert(workflow.includes('LESSON_CREATE_DRAFT_STAGED'), 'Staged original gets a bounded normal publication window');
 });
 
@@ -419,10 +476,12 @@ test('fallback checks normal/manual priority at publication time, not just in th
  assert(w.includes('pull-requests: read')&&w.includes('actions: read'));
  const failure=w.slice(w.indexOf('      - name: Recover immediately after an eligible lesson release fails'),
    w.indexOf('  extensive_reading_release:'));
- assert(failure.includes('NORMAL_LESSON_ALREADY_PUBLISHED'));
+assert(failure.includes('NORMAL_LESSON_ALREADY_PUBLISHED'));
  assert(failure.includes('dispatch Sync only, never V2'));
- assert(failure.includes('-f "inputs[recover_date]=$date"'));
- assert(failure.includes('gh api --method POST'));
+ assert(failure.includes('LESSON_RECOVERY_V4_DISABLED'));
+ assert(!failure.includes('inputs[recover_date]=$date'),'failed-PR path must not dispatch a backup generator');
+ assert(!failure.includes('inputs[recover_session]=$session'));
+ assert(failure.includes('gh api --method POST'),'Sync-only dispatch for an already published lesson remains');
 });
 
 test('the actual failed-release Bash sends Sync only if ChatGPT/manual already published',()=>{
@@ -475,16 +534,12 @@ test('the actual failed-release Bash sends Sync only if ChatGPT/manual already p
    assert.equal(published.calls.length,1);
    assert(!published.calls[0].includes('inputs[recover_date]'));
    assert(!published.calls[0].includes('inputs[recover_session]'));
-   const premature=run(false,false,1299);
-   assert(premature.text.includes('LESSON_RECOVERY_DEFERRED'),
-     'An explicit PR failure at 18:04:59 must not request V2');
-   assert.deepEqual(premature.calls,[],'No recovery dispatch is allowed before 18:05');
-   const missing=run(false,false,1300);
-   assert.equal(missing.calls.length,1);
-   assert(missing.calls[0].includes('inputs[recover_date]=2026-10-01'));
-   assert(missing.calls[0].includes('inputs[recover_session]=pm'));
-   const inconsistent=run(true,false,1300);
-   assert(inconsistent.calls[0].includes('inputs[recover_date]=2026-10-01'));
+   // V4 paused: a failed release never dispatches a backup generator, at any time of day.
+   for(const [flag,exists,now] of [[false,false,1299],[false,false,1300],[false,false,5000],[true,false,1300]]){
+     const r=run(flag,exists,now);
+     assert(r.text.includes('LESSON_RECOVERY_V4_DISABLED'),'failure is reported, not recovered with V4');
+     assert.deepEqual(r.calls,[],'No recovery dispatch of any kind while V4 is disabled');
+   }
  }finally{fs.rmSync(tmp,{recursive:true,force:true})}
 });
 

@@ -1,8 +1,10 @@
 name: Sync daily vocab
 on:
-  # GitHub App / user-created release scaffolds can wake the same V2 fallback without
-  # waiting for an unreliable schedule. GITHUB_TOKEN-created events do not recurse.
-  create:
+  # V4 backup-lesson generation is TEMPORARILY DISABLED (user instruction 2026-10-03):
+  # Claude is the only automatic lesson generator. The branch-create watcher trigger below is
+  # switched off so no release scaffold can wake a backup generator. Re-enable (uncomment
+  # `create:` and the watcher job `if`) ONLY on the user's explicit instruction.
+  # create:
   push:
     branches: [main]
     paths:
@@ -65,7 +67,8 @@ on:
   schedule:
     # The existing two daily checks run at 08:30 and 18:05 in Jakarta.
     # AM waits 30 minutes so the Claude 08:00 lesson (started 07:30) has time to publish.
-    # Run V2 only when the official lesson/index is absent. Actions may start late.
+    # While V4 is disabled these only run the health check/Sync and may resume the SAME saved
+    # original draft; they never generate a backup lesson. Actions may start late.
     - cron: '30 1 * * *'
     - cron: '5 11 * * *'
   workflow_dispatch:
@@ -90,9 +93,12 @@ concurrency:
   cancel-in-progress: false
 jobs:
   watch_release_scaffold:
+    # DISABLED (V4 fallback paused by user instruction 2026-10-03): `create:` is not a trigger and
+    # this job can never run. Restore the original condition below to re-enable:
+    #   if: github.event_name == 'create' && github.event.ref_type == 'branch'
     # The create event is delivered for an external GitHub App/user branch creation.
     # This job must not checkout or write the newly created (possibly empty) release branch.
-    if: github.event_name == 'create' && github.event.ref_type == 'branch'
+    if: ${{ false }}
     runs-on: ubuntu-latest
     permissions:
       actions: write
@@ -209,7 +215,15 @@ jobs:
           # Live baseline rehearsal without --write; no official lesson or index is changed.
           smoke_date="$(node -p "require('./data/lesson-context.json').target.date")"
           smoke_session="$(node -p "require('./data/lesson-context.json').target.session")"
+          # Production default: V4 is disabled, so an unpublished target must NOT generate anything.
           node .github/scripts/recover-missing-lesson.js \
+            --date "$smoke_date" --session "$smoke_session" --main-head "$(git rev-parse HEAD)" \
+            > "$RUNNER_TEMP/fallback-disabled-smoke.txt"
+          cat "$RUNNER_TEMP/fallback-disabled-smoke.txt"
+          grep -Eq '"status":"(v4_disabled|already_published)"' "$RUNNER_TEMP/fallback-disabled-smoke.txt"
+          # CI-ONLY rehearsal that the dormant V4 source still works. LESSON_V4_FALLBACK=1 is set
+          # here for this read-only command only; no production step ever sets it.
+          LESSON_V4_FALLBACK=1 node .github/scripts/recover-missing-lesson.js \
             --date "$smoke_date" --session "$smoke_session" --main-head "$(git rev-parse HEAD)" \
             > "$RUNNER_TEMP/fallback-smoke.txt"
           cat "$RUNNER_TEMP/fallback-smoke.txt"
@@ -232,7 +246,8 @@ jobs:
           # Apply the proposed guard logic to pinned baseline data. The old main guard
           # still checks the obsolete cron and must not veto its own repair PR.
           cp .github/scripts/regression-guard.js "$baseline_guard_dir/.github/scripts/regression-guard.js"
-          (cd "$baseline_guard_dir" && node .github/scripts/regression-guard.js)
+          # Baseline tree predates the V4 pause: skip only the workflow-shape assertions there.
+          (cd "$baseline_guard_dir" && GUARD_BASELINE_TREE=1 node .github/scripts/regression-guard.js)
           git worktree remove --force "$baseline_guard_dir"
       - name: Rehearse actual V2 lesson and index write outside the repository
         shell: bash
@@ -249,7 +264,8 @@ jobs:
           fi
           (
             cd "$tmp"
-            node "$GITHUB_WORKSPACE/.github/scripts/recover-missing-lesson.js" \
+            # CI-ONLY rehearsal in a temp copy of data/; never touches the repository or production.
+            LESSON_V4_FALLBACK=1 node "$GITHUB_WORKSPACE/.github/scripts/recover-missing-lesson.js" \
               --date "$day" --session "$slot" --main-head "$(git -C "$GITHUB_WORKSPACE" rev-parse HEAD)" --write
           ) > "$RUNNER_TEMP/fallback-write-result.txt"
           cat "$RUNNER_TEMP/fallback-write-result.txt"
@@ -573,21 +589,13 @@ jobs:
               exit 0
             fi
           fi
-          # The failed PR may occur before the normal lesson's grace window ends.
-          # Do NOT dispatch the V2 generator early or hold the normal publication write
-          # lock while waiting. Its independently woken release-branch watcher and the
-          # existing 08:30/18:05 scheduled check retain recovery responsibility.
-          if [ "$session" = am ]; then target_time=08:00; grace_seconds=1800; else target_time=18:00; grace_seconds=300; fi
-          slot_epoch="$(TZ=Asia/Jakarta date -d "$date $target_time:00" +%s)"
-          earliest_epoch=$((slot_epoch + grace_seconds))
-          now_epoch="$(date +%s)"
-          if [ "$now_epoch" -lt "$earliest_epoch" ]; then
-            echo "LESSON_RECOVERY_DEFERRED date=$date session=$session: no V2 before 08:30/18:05 Jakarta; watcher/Cron remains armed."
-            exit 0
-          fi
-          gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" \
-            -f ref=main -f "inputs[recover_date]=$date" -f "inputs[recover_session]=$session"
-          echo "Dispatched independent V2 fallback for $date $session."
+          # V4 backup-lesson generation is TEMPORARILY DISABLED (user instruction 2026-10-03).
+          # A failed release PR must never dispatch a backup generator or create a second lesson.
+          # The original lesson file, release branch, PR and this run's error evidence are preserved;
+          # the failure is reported as a failed run. The next Claude run resumes the same draft.
+          # To re-enable, restore the grace-time check and the recover_date/recover_session
+          # workflow_dispatch here ONLY on the user's explicit instruction.
+          echo "LESSON_RECOVERY_V4_DISABLED date=$date session=$session: no backup lesson dispatched; original draft, branch and PR preserved. Release failure is reported, not papered over."
 
   extensive_reading_release:
     if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'extensive-reading-')
@@ -756,6 +764,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
+      # V4 generation is disabled inside recover-missing-lesson.js (no LESSON_V4_FALLBACK here, by
+      # design). This step now only resumes the SAME saved original draft; it never generates one.
       - name: Generate missing lesson with V2 and commit the two-file transaction
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.recover_date != '' && inputs.recover_session != '')
         shell: bash
@@ -868,6 +878,13 @@ jobs:
             cat "$RUNNER_TEMP/fallback-result.txt"
             if grep -Fq '"status":"already_published"' "$RUNNER_TEMP/fallback-result.txt"; then
               echo 'Official lesson already exists: fallback is idempotent and stops here.'
+              exit 0
+            fi
+            # V4 is TEMPORARILY DISABLED (user instruction 2026-10-03): only a valid saved ORIGINAL
+            # draft may be resumed above. No original -> nothing is generated or written here; the
+            # scheduled health check in the next step reports the missing lesson as a failure.
+            if grep -Fq '"status":"v4_disabled"' "$RUNNER_TEMP/fallback-result.txt"; then
+              echo "LESSON_V4_FALLBACK_DISABLED date=$date session=$session: no backup lesson generated and nothing written; original draft/PR/error evidence preserved."
               exit 0
             fi
             grep -Fq '"status":"ready"' "$RUNNER_TEMP/fallback-result.txt" ||

@@ -23,10 +23,17 @@ const fileFor=(date,session)=>'data/daily/'+date+'-'+session+'.json';
 const previousDate=date=>new Date(Date.parse(date+'T00:00:00Z')-86400000).toISOString().slice(0,10);
 const json=(x)=>JSON.stringify(x,null,2)+'\n';
 
+// V4 backup-lesson generation is TEMPORARILY DISABLED by explicit user instruction (2026-10-03).
+// Claude is the only automatic lesson generator. This master switch is off unless the process
+// environment sets LESSON_V4_FALLBACK=1, and no production workflow step sets it. The V4 engine
+// source stays in the repository; re-enable ONLY on the user's explicit instruction.
+// Resuming the SAME saved original draft (originalCandidate) is unaffected by this switch.
+const v4FallbackEnabled=()=>process.env.LESSON_V4_FALLBACK==='1';
+
 function recover({
   date,session,mainHead,index,runtime,rules,read,originalCandidate,
   contextBuilder=buildLessonContext,generate=engine.generate,planner=plan,
-  historyBuilder=collectReviewHistory
+  historyBuilder=collectReviewHistory,v4Enabled=v4FallbackEnabled()
 }){
   requireIt(validDate(date)&&['am','pm'].includes(session),'TARGET_INVALID','Expected real YYYY-MM-DD and am|pm');
   requireIt(/^[a-f0-9]{40}$/i.test(mainHead||''),'HEAD_INVALID','A pinned 40-character main SHA is required');
@@ -70,6 +77,12 @@ function recover({
     }catch(e){
       originalRejection=[{code:e.code||'ORIGINAL_PLAN_ERROR',detail:String(e.message||e).slice(0,220)}];
     }
+  }
+
+  // V4 is disabled: never build a context or generate a second/backup lesson. Report the state
+  // (with any original rejection as evidence) and let the caller fail visibly instead.
+  if(!v4Enabled){
+    return {status:'v4_disabled',target,files:[],variant:null,originalRejection};
   }
 
   // Only a missing or formally rejected original may invoke the existing V4 engine.
@@ -148,7 +161,7 @@ function run(args,root=process.cwd()){
     fs.writeFileSync(resolve('data/daily/index.json'),outcome.files[1].content);
   }
   return {ok:true,status:outcome.status,date:a.date,session:a.session,
-    source:outcome.source||'already_published',variant:outcome.variant,
+    source:outcome.source||(outcome.status==='v4_disabled'?'v4_disabled':'already_published'),variant:outcome.variant,
     originalRejection:originalParseError?[{code:originalParseError}]:outcome.originalRejection||null,
     paths:outcome.files.map(x=>x.path),
     candidateHash:outcome.candidateHash||null,write:a.write};
@@ -157,4 +170,4 @@ if(require.main===module){
   try{console.log('FALLBACK_LESSON '+JSON.stringify(run(process.argv.slice(2))))}
   catch(e){console.error('FALLBACK_LESSON '+JSON.stringify({ok:false,code:e.code||'RECOVERY_ERROR',detail:String(e.message||e).slice(0,1500)}));process.exitCode=1}
 }
-module.exports={recover,run,parseArgs,validDate};
+module.exports={recover,run,parseArgs,validDate,v4FallbackEnabled};
