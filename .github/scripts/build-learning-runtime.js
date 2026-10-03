@@ -352,6 +352,26 @@ if(fs.existsSync(previousRuntimePath)){
   }
 }
 fs.writeFileSync('data/learning-runtime.json',JSON.stringify(runtime)+'\n');
+// Full, lightweight per-library pending lists for the vocabulary selector.
+// Both lists use the same M ∩ A − D rule as the authoritative runtime builder;
+// they are independent of the current handoff phase, so the primary count can stay 0.
+const pendingFile={
+  version:1,
+  lesson_watermark:runtime.lesson_watermark,
+  weakness_updated_at:runtime.weakness_updated_at,
+  primary:primaryNewFull.map(w=>({
+    word:w,cn:(masterMeta.get(key(w))||{}).cn||'',
+    memory_class:newMemoryClass(weakMap.get(key(w)))
+  })),
+  secondary:secondaryMaster.filter(x=>activeMap.has(key(x.word))&&!dailySet.has(key(x.word))).map(x=>({
+    word:x.word,cn:x.cn||'',en:x.en||'',root:x.root||'',
+    memory_class:newMemoryClass(weakMap.get(key(x.word))),bipa_level:x.bipa_level||''
+  }))
+};
+if(pendingFile.primary.length!==runtime.stats.primary_new_pool_total_full||
+   pendingFile.secondary.length!==runtime.stats.secondary_new_pool_total_full)
+  throw new Error('Pending library and runtime counts diverged');
+fs.writeFileSync('data/pending-vocab.json',JSON.stringify(pendingFile)+'\n');
 const audit={
   generated_at:runtime.generated_at,
   lesson_watermark:runtime.lesson_watermark,
