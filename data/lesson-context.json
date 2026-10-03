@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-03T02:15:31.358Z",
+    "runtime_generated_at": "2026-10-03T02:25:26.926Z",
     "lesson_watermark": "2026-10-03 08:00",
     "index_updated": "2026-10-03",
-    "runtime_hash": "66726e1faa136bce2d73615cafaf9730dee8f18b48410d9182d99ef07f79600b",
+    "runtime_hash": "840d903df048259d6f137ed805b19b8e20c4cc96849e7914b7a2f4e1eb4bd1e1",
     "index_hash": "502aa84d355745d3ad41c902188c6ff241495d1ec5a718c0e28b6fd31e463d37",
     "rules_hash": "a4b65072036f29bb3b55fdd5c56c551f407d8aed1d9353382e5cb28bc32d575f"
   },
@@ -436,10 +436,6 @@
         "有时"
       ],
       [
-        "kampus",
-        "校园"
-      ],
-      [
         "penerbangan",
         "航班，飞行"
       ],
@@ -460,16 +456,8 @@
         "通过、经由"
       ],
       [
-        "asal",
-        "来源，只要"
-      ],
-      [
         "gua",
         "洞穴"
-      ],
-      [
-        "barang",
-        "东西，货品"
       ],
       [
         "tubuh",
@@ -1038,6 +1026,18 @@
       [
         "tanggung jawab",
         "责任"
+      ],
+      [
+        "karyawan",
+        "员工"
+      ],
+      [
+        "promosi",
+        "晋升；推广"
+      ],
+      [
+        "divisi",
+        "部门；事业部"
       ],
       [
         "buat",
