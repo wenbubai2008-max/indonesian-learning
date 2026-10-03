@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-03",
+  "session": "am",
+  "time": "08:00",
+  "day": 43,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Hadiah istimewa untuk Dimas",
+  "new_words": [
+    "terbuat",
+    "mewah",
+    "istimewa",
+    "menghasilkan",
+    "gelar",
+    "yaitu",
+    "seluruh",
+    "bentuk",
+    "demi",
+    "berat"
+  ],
+  "vocab": [
+    {
+      "word": "terbuat",
+      "display": "terbuat",
+      "audio_text": "terbuat",
+      "cn": "由……制成的",
+      "en": "made (of)",
+      "root": "buat",
+      "root_cn": "做；制作",
+      "formation": "ter- + buat，表示“已被做成”的状态。几乎固定搭配 terbuat dari + 材料：terbuat dari kayu / kulit / plastik。",
+      "example": "Tas ini terbuat dari kulit sapi asli, jadi cukup awet.",
+      "example_cn": "这个包是真牛皮做的，所以挺耐用。",
+      "synonym_note": "terbuat dari 说“用什么材料做成”（状态）；dibuat oleh 说“由谁做的”（动作+制作者）：Tas ini dibuat oleh pengrajin lokal。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mewah",
+      "display": "mewah",
+      "audio_text": "mewah",
+      "cn": "奢华的；豪华的",
+      "en": "luxurious",
+      "root": "mewah",
+      "root_cn": "奢华",
+      "formation": "名词 kemewahan（奢华）。常见搭配：tas mewah、hotel mewah、mobil mewah、hidup mewah。",
+      "example": "Hotelnya mewah sekali, tiap kamar punya kolam renang sendiri.",
+      "example_cn": "那家酒店非常豪华，每个房间都有自己的泳池。",
+      "synonym_note": "mewah = 豪华、昂贵；istimewa = 特别、不寻常（不一定贵）。口语里也会夸张地用：Makan pakai daging sapi? Mewah banget!",
+      "is_oral_new": false
+    },
+    {
+      "word": "istimewa",
+      "display": "istimewa",
+      "audio_text": "istimewa",
+      "cn": "特别的；特殊的；出众的",
+      "en": "special; exceptional",
+      "root": "istimewa",
+      "root_cn": "特别",
+      "formation": "名词 keistimewaan（特色；优点）。常见搭配：hari istimewa、tamu istimewa、tidak ada yang istimewa（没什么特别的）。",
+      "example": "Ulang tahun ke-60 ibu adalah hari yang sangat istimewa untuk keluarga kami.",
+      "example_cn": "妈妈的六十岁生日对我们家来说是非常特别的一天。",
+      "synonym_note": "istimewa 强调“出众、值得纪念”；khusus 强调“专门的”：kursi khusus untuk lansia（老人专座）不说 kursi istimewa。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menghasilkan",
+      "display": "menghasilkan",
+      "audio_text": "menghasilkan",
+      "cn": "产出；生产；带来（结果）",
+      "en": "to produce; to generate",
+      "root": "hasil",
+      "root_cn": "结果；成果；产量",
+      "formation": "meN- + hasil + -kan。常见搭配：menghasilkan uang、menghasilkan produk、menghasilkan keuntungan；名词 penghasilan（收入）。",
+      "example": "Pengrajin di desa itu menghasilkan sekitar dua ratus tas per bulan.",
+      "example_cn": "那个村子的手艺人每个月大约能做出两百个包。",
+      "synonym_note": "menghasilkan 用于“产出东西/钱/效果”。注意“作出决定”不说 menghasilkan keputusan，而说 mengambil keputusan 或 membuat keputusan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gelar",
+      "display": "gelar",
+      "audio_text": "gelar",
+      "cn": "学位；头衔",
+      "en": "(academic) degree; title",
+      "root": "gelar",
+      "root_cn": "头衔；展开",
+      "formation": "常见搭配：gelar sarjana（学士学位）、gelar magister（硕士学位）、mendapat / meraih gelar。同形动词 menggelar = 举办：menggelar acara。",
+      "example": "Kakak saya baru mendapat gelar sarjana teknik dari sebuah universitas di Bandung.",
+      "example_cn": "我哥哥刚从万隆的一所大学拿到工科学士学位。",
+      "synonym_note": "gelar = 学位/头衔本身；ijazah = 毕业证书那张纸；wisuda = 毕业典礼。",
+      "is_oral_new": false
+    },
+    {
+      "word": "yaitu",
+      "display": "yaitu",
+      "audio_text": "yaitu",
+      "cn": "即；就是；也就是",
+      "en": "namely; that is",
+      "root": "yaitu",
+      "root_cn": "即",
+      "formation": "用在名词或说明前，具体列出前面提到的内容：dua hal, yaitu …；一个原因，yaitu …。",
+      "example": "Saya cuma butuh dua hal, yaitu kopi dan tidur yang cukup.",
+      "example_cn": "我只需要两样东西，就是咖啡和充足的睡眠。",
+      "synonym_note": "yaitu 与 yakni 基本同义，yakni 更书面；日常说话常换成 maksudnya 或直接停顿列举。",
+      "is_oral_new": false
+    },
+    {
+      "word": "seluruh",
+      "display": "seluruh",
+      "audio_text": "seluruh",
+      "cn": "全部的；整个的",
+      "en": "whole; entire; all",
+      "root": "seluruh",
+      "root_cn": "全部；整个",
+      "formation": "放在名词前：seluruh keluarga、seluruh dunia、di seluruh Indonesia；seluruhnya（全部地）；keseluruhan（整体）。",
+      "example": "Seluruh keluarga datang ke wisuda adik saya.",
+      "example_cn": "全家人都来参加了我弟弟的毕业典礼。",
+      "synonym_note": "seluruh 强调“整个、一个不漏”，必须接名词；semua 更口语、更通用，可以单用：Semuanya sudah datang。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bentuk",
+      "display": "bentuk",
+      "audio_text": "bentuk",
+      "cn": "形状；形式",
+      "en": "shape; form",
+      "root": "bentuk",
+      "root_cn": "形状；形式",
+      "formation": "berbentuk（呈……形状）、membentuk（组成；形成）、sebagai bentuk + 名词（作为……的表示）：sebagai bentuk terima kasih。",
+      "example": "Bentuk tasnya sederhana, tapi warnanya bagus sekali.",
+      "example_cn": "这个包的款型很简单，但颜色非常好看。",
+      "synonym_note": "bentuk = 外形/形式；买东西时口语常说 model（款式）：Modelnya ada yang lain? wujud 更书面，指实体形态。",
+      "is_oral_new": false
+    },
+    {
+      "word": "demi",
+      "display": "demi",
+      "audio_text": "demi",
+      "cn": "为了（甘愿付出）",
+      "en": "for the sake of",
+      "root": "demi",
+      "root_cn": "为了",
+      "formation": "demi + 人/目标：demi keluarga、demi kesehatan、demi masa depan；satu demi satu（一个接一个）。",
+      "example": "Dia kerja lembur demi membayar kuliah adiknya.",
+      "example_cn": "他为了给弟弟付学费而加班。",
+      "synonym_note": "untuk = 一般目的（中性）；demi 带“为了某人某事愿意付出/牺牲”的郑重感。日常买东西的普通目的用 untuk 更自然。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berat",
+      "display": "berat",
+      "audio_text": "berat",
+      "cn": "重的；沉重的；吃力的",
+      "en": "heavy; hard",
+      "root": "berat",
+      "root_cn": "重",
+      "formation": "beban berat（重担）、tugas berat（繁重任务）、berat hati（不情愿）、口语 berat di kantong（钱包吃紧、价格让人肉疼）；keberatan（介意）、memberatkan（加重负担）。",
+      "example": "Kopernya berat sekali, tolong bantu masukkan ke mobil.",
+      "example_cn": "行李箱很重，请帮忙放进车里。",
+      "synonym_note": "berat 既指物理重量，也指心理/经济负担；susah / sulit 指“难做、难懂”：Soalnya sulit（题目难），而不是 soalnya berat。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "layak",
+    "nyaris",
+    "kesepakatan",
+    "salah tingkah",
+    "berantakan"
+  ],
+  "sentences": [
+    {
+      "text": "Untuk tas yang terbuat dari kulit asli, harga segitu masih layak.",
+      "cn": "对一个真皮做的包来说，这个价钱还算合理。"
+    },
+    {
+      "text": "Saya nyaris membeli jam tangan mewah itu, untung saya ingat masih ada cicilan bulan ini.",
+      "cn": "我差点买了那块豪华手表，幸好想起这个月还有分期要还。"
+    },
+    {
+      "text": "Usaha kecil itu menghasilkan cukup uang untuk menghidupi seluruh keluarganya.",
+      "cn": "那家小生意赚的钱足够养活他全家。"
+    },
+    {
+      "text": "Demi kesehatan, ayah saya berhenti merokok. Awalnya berat, tapi sekarang dia merasa jauh lebih segar.",
+      "cn": "为了健康，我爸爸戒了烟。一开始很难熬，但现在他觉得精神多了。"
+    },
+    {
+      "text": "Kamar saya berantakan banget karena bungkus kado untuk hadiah istimewa itu ada di mana-mana.",
+      "cn": "我的房间乱成一团，因为包那份特别礼物的包装纸到处都是。"
+    }
+  ],
+  "reading": {
+    "text": "Minggu depan Dimas, adik Rina, akan mendapat gelar sarjana teknik. Seluruh keluarga ingin datang ke wisudanya. Rina ingin memberi hadiah yang istimewa, yaitu tas kerja dari kulit. Di sebuah toko, dia melihat tas yang terbuat dari kulit sapi asli. Bentuknya sederhana, tapi kelihatan mewah. Kata penjualnya, pengrajin mereka hanya menghasilkan dua puluh tas per bulan. Harganya nyaris setengah gaji Rina, jadi lumayan berat di kantong. Apakah tas ini layak dibeli? Malamnya Rina dan orang tuanya mencapai kesepakatan: mereka patungan. \"Demi Dimas, tidak apa-apa,\" kata ibunya. Waktu Dimas membuka hadiah itu di depan semua orang, dia langsung salah tingkah dan tidak tahu harus bilang apa.",
+    "cn": "下周，Rina 的弟弟 Dimas 将拿到工科学士学位。全家人都想去参加他的毕业典礼。Rina 想送一份特别的礼物，就是一个皮质公文包。在一家店里，她看到一个真牛皮做的包。款型很简单，但看起来很高档。店员说，他们的手艺人每个月只做得出二十个包。价格差不多是 Rina 工资的一半，所以挺肉疼的。这个包值得买吗？当晚，Rina 和父母达成了一致：大家凑钱一起买。“为了 Dimas，没关系，”妈妈说。Dimas 当着大家的面打开礼物时，一下子不知所措，不知道该说什么才好。"
+  },
+  "quiz": [
+    {
+      "question": "【词义辨析】朋友问你那件贵外套值不值，你想说“质量这么好，这个价钱还算合理”。Kualitasnya bagus, jadi harganya masih ___.",
+      "options": [
+        "mewah",
+        "layak",
+        "berat",
+        "istimewa"
+      ],
+      "answer_index": 1,
+      "answer": "layak",
+      "explain": "harga yang layak = 合理、说得过去的价格（复习词 layak）。mewah 是“豪华”，说的是东西本身；harganya berat 意思是“价格让人吃力”，与“合理”相反；istimewa 是“特别”，不表达“值”。"
+    },
+    {
+      "question": "【搭配辨析】Jaket ini ___ kulit domba.（这件夹克是用羊皮做的。）",
+      "options": [
+        "terbuat dari",
+        "dibuat oleh",
+        "berbentuk",
+        "menghasilkan"
+      ],
+      "answer_index": 0,
+      "answer": "terbuat dari",
+      "explain": "说材料用 terbuat dari + 材料。dibuat oleh 后面接“制作者”（人或公司）；berbentuk 是“呈……形状”；menghasilkan 是“产出”，主语应是生产者。"
+    },
+    {
+      "question": "【场景应用】Dimas 当着全家人的面收到礼物，又紧张又不好意思，手都不知道往哪放。最贴切的说法是：Dimas jadi ___.",
+      "options": [
+        "sebel",
+        "kelabakan",
+        "salah tingkah",
+        "baper"
+      ],
+      "answer_index": 2,
+      "answer": "salah tingkah",
+      "explain": "salah tingkah = 因害羞/紧张而举止失措（复习词）。sebel 是“烦、恼火”；kelabakan 是事情太多“手忙脚乱”；baper 是“把话往心里去、情绪受影响”。"
+    }
+  ],
+  "output": {
+    "task": "介绍一件你最近买过（或很想买）的东西：说说它是用什么做的、外观或款型怎么样，再说明你觉得它值不值这个价、为什么。用 2–3 句自然的印尼语，至少用本课 2 个目标词（例如 terbuat dari、bentuk、mewah、berat di kantong、layak）。不要照抄课文。",
+    "reference_answer": "Bulan lalu saya membeli sepatu lari yang terbuat dari kain yang ringan. Bentuknya sederhana dan tidak kelihatan mewah, tapi enak sekali dipakai setiap pagi. Harganya agak berat di kantong, tapi menurut saya masih layak karena kaki saya tidak sakit lagi.",
+    "reference_cn": "上个月我买了一双轻薄布面的跑鞋。款型很简单，看起来也不豪华，但每天早上穿着都很舒服。价格有点肉疼，但我觉得还是值的，因为我的脚不再疼了。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 terbuat dari、mewah、istimewa、menghasilkan、gelar、yaitu、seluruh、bentuk、demi、berat，再各配一个搭配（如 gelar sarjana、berat di kantong）。",
+    "易混辨析：terbuat dari（材料）↔ dibuat oleh（制作者）；mewah（豪华）↔ istimewa（特别）；seluruh + 名词 ↔ semua（可单用）；demi（甘愿付出）↔ untuk（一般目的）。",
+    "复习词实战：用 layak、nyaris、kesepakatan 说一句购物决定，再用 salah tingkah 或 berantakan 描述一个真实场景。"
+  ]
+}
