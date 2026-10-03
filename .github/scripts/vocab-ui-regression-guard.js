@@ -168,6 +168,10 @@ try{
     ok(meta&&meta.sha256===hash,'manifest hash mismatch for '+lv);
   }
 
+  ok(!controller.includes("['top1000','Top1000'"),'retired Top1000 option must not reappear');
+  ok(controller.includes("['pending-primary','主词库·待学习'")&&controller.includes("['pending-secondary','第二词库·待学习'"),'both pending library options must be present');
+  ok(controller.includes('data/pending-vocab.json')&&controller.includes('async function ensurePendingData')&&controller.includes('function pendingRows'),'pending libraries must read the complete generated snapshot');
+  ok(controller.includes("manual_preknown")&&controller.includes("pendingUndo=")&&controller.includes('weak-pool-changed'),'pending manually known state must sync and support undo/live counts');
   ok(controller.includes('const EXPECTED_MASTER_COUNT=977'),'controller must pin master count to 977');
   ok(controller.includes('const EXPECTED_BIPA_COUNTS={A1:515,A2:290,B1:204,B2:274}'),'controller must pin all BIPA counts');
   ok(controller.includes('const memCache=new Map()'),'controller must cache parsed memory maps');
