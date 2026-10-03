@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-03",
-    "session": "pm",
-    "time": "18:00",
-    "day": 43
+    "date": "2026-10-04",
+    "session": "am",
+    "time": "08:00",
+    "day": 44
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-03T02:33:29.346Z",
-    "lesson_watermark": "2026-10-03 08:00",
+    "runtime_generated_at": "2026-10-03T10:40:01.895Z",
+    "lesson_watermark": "2026-10-03 18:00",
     "index_updated": "2026-10-03",
-    "runtime_hash": "da75e5e2aec95af2c804291f75b252c02bb04e2822ae944e43e0d9d312eddf32",
-    "index_hash": "502aa84d355745d3ad41c902188c6ff241495d1ec5a718c0e28b6fd31e463d37",
+    "runtime_hash": "8f715026b99beb54aa569711dc6a0fafb09b28cf6f3dc8a938223bae90458e7d",
+    "index_hash": "ed50717f4a800b46c0c2db6e7e45d3ecb2dc83f5862a9ecc95a01d53a3b8d1c1",
     "rules_hash": "a4b65072036f29bb3b55fdd5c56c551f407d8aed1d9353382e5cb28bc32d575f"
   },
   "schema": {
@@ -306,10 +306,6 @@
         "发票；账单"
       ],
       [
-        "kwitansi",
-        "收据"
-      ],
-      [
         "muat",
         "装载；容纳"
       ],
@@ -320,10 +316,6 @@
       [
         "retur",
         "退货"
-      ],
-      [
-        "tukar",
-        "更换；交换"
       ],
       [
         "bandingkan",
@@ -542,10 +534,6 @@
       [
         "bepergian",
         "旅行"
-      ],
-      [
-        "berfungsi",
-        "运作 / 起作用"
       ],
       [
         "berkelahi",
@@ -1036,8 +1024,8 @@
         "句子"
       ],
       [
-        "antre",
-        "排队"
+        "ucap",
+        "说；表达"
       ]
     ],
     "review": [
@@ -1318,8 +1306,8 @@
         "2026-09-29T07:59:14.910Z",
         "2026-09-30T13:58:51.327Z",
         "将会、要",
-        "",
-        ""
+        "bakal",
+        "将会；预感会发生"
       ],
       [
         "berarti",
@@ -1329,7 +1317,7 @@
         "2026-10-01T12:31:44.955Z",
         "意味着；也就是说",
         "arti",
-        ""
+        "意思；含义"
       ],
       [
         "beliau",
@@ -1900,58 +1888,10 @@
         "buat",
         531,
         "fuzzy"
-      ],
-      [
-        "antre",
-        "通用",
-        "antri",
-        "antre",
-        605,
-        "fuzzy"
       ]
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-09-26",
-      "session": "am",
-      "review_core": [
-        "mendukung",
-        "mengatasi",
-        "ngerepotin",
-        "ngurus",
-        "layak"
-      ],
-      "new_words": [
-        "atasan",
-        "pelanggan",
-        "kendala",
-        "usahakan",
-        "keahlian",
-        "lamaran",
-        "lowongan",
-        "jabatan",
-        "omzet",
-        "pendapatan"
-      ]
-    },
-    {
-      "date": "2026-09-26",
-      "session": "pm",
-      "review_core": [
-        "mendukung",
-        "menunjukkan",
-        "menegaskan",
-        "sepakat",
-        "keberatan"
-      ],
-      "new_words": [
-        "periksa",
-        "suasana",
-        "atur",
-        "pesanan"
-      ]
-    },
     {
       "date": "2026-09-27",
       "session": "am",
@@ -2212,105 +2152,42 @@
         "demi",
         "berat"
       ]
+    },
+    {
+      "date": "2026-10-03",
+      "session": "pm",
+      "review_core": [
+        "upaya",
+        "bakal",
+        "berarti",
+        "sebel",
+        "ngabarin"
+      ],
+      "new_words": [
+        "antre",
+        "berfungsi",
+        "tukar",
+        "kwitansi"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-02",
+    "date": "2026-10-03",
     "new_words": [
-      "siapkan",
-      "mencetak",
-      "jarak"
+      "antre",
+      "berfungsi",
+      "tukar",
+      "kwitansi"
     ],
     "review_core": [
-      "ngotot",
-      "sekadar",
-      "nyantai",
-      "pokoknya",
-      "memisahkan"
+      "upaya",
+      "bakal",
+      "berarti",
+      "sebel",
+      "ngabarin"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-03",
-    "vocab": [
-      [
-        "terbuat",
-        "由……制成的",
-        "made (of)",
-        "buat",
-        "做；制作"
-      ],
-      [
-        "mewah",
-        "奢华的；豪华的",
-        "luxurious",
-        "mewah",
-        "奢华"
-      ],
-      [
-        "istimewa",
-        "特别的；特殊的；出众的",
-        "special; exceptional",
-        "istimewa",
-        "特别"
-      ],
-      [
-        "menghasilkan",
-        "产出；生产；带来（结果）",
-        "to produce; to generate",
-        "hasil",
-        "结果；成果；产量"
-      ],
-      [
-        "gelar",
-        "学位；头衔",
-        "(academic) degree; title",
-        "gelar",
-        "头衔；展开"
-      ],
-      [
-        "yaitu",
-        "即；就是；也就是",
-        "namely; that is",
-        "yaitu",
-        "即"
-      ],
-      [
-        "seluruh",
-        "全部的；整个的",
-        "whole; entire; all",
-        "seluruh",
-        "全部；整个"
-      ],
-      [
-        "bentuk",
-        "形状；形式",
-        "shape; form",
-        "bentuk",
-        "形状；形式"
-      ],
-      [
-        "demi",
-        "为了（甘愿付出）",
-        "for the sake of",
-        "demi",
-        "为了"
-      ],
-      [
-        "berat",
-        "重的；沉重的；吃力的",
-        "heavy; hard",
-        "berat",
-        "重"
-      ]
-    ],
-    "review_vocab": [
-      "layak",
-      "nyaris",
-      "kesepakatan",
-      "salah tingkah",
-      "berantakan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

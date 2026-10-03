@@ -2006,21 +2006,28 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "bakal",
     "cn": "将会、要",
-    "en": "",
-    "root": "",
+    "en": "will; going to (often a prediction)",
+    "root": "bakal",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
     "times_seen": 1,
-    "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-08-29 08:00",
+    "first_seen": "2026-10-03 18:00",
+    "last_seen": "2026-10-03 18:00",
     "sessions": [
-      "08:00"
+      "18:00"
     ],
     "dates": [
-      "2026-08-29"
+      "2026-10-03"
+    ],
+    "root_cn": "将会；预感会发生",
+    "example": "Kalau tidak segera diperbaiki, ponsel ini bakal mati total.",
+    "example_cn": "如果不赶快修，这部手机就会彻底坏掉。",
+    "lesson_occurrences": [
+      "2026-10-03 18:00"
     ]
   },
   {
@@ -4938,25 +4945,30 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-01 19:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-10-03 18:00",
     "sessions": [
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-01",
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-03"
     ],
-    "example": "Berarti besok kita nggak perlu datang pagi-pagi.",
-    "example_cn": "也就是说，明天我们不用一大早来。",
+    "example": "Stok barunya baru datang minggu depan, berarti kita harus menunggu beberapa hari lagi.",
+    "example_cn": "新库存下周才到，也就是说我们还得再等几天。",
     "lesson_occurrences": [
       "2026-09-01 19:00",
-      "2026-09-30 08:00"
-    ]
+      "2026-09-30 08:00",
+      "2026-10-03 18:00"
+    ],
+    "root_cn": "意思；含义"
   },
   {
     "word": "termasuk",
@@ -5427,22 +5439,24 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-10-03 18:00",
     "sessions": [
       "19:00",
       "18:00"
     ],
     "dates": [
       "2026-09-02",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-03"
     ],
-    "example": "Tolong ngabarin saya kalau jadwalnya berubah.",
-    "example_cn": "如果时间安排变了，请通知我一声。",
+    "example": "Kalau stoknya sudah ada, tolong ngabarin saya, ya.",
+    "example_cn": "如果有库存了，请通知我一声。",
     "lesson_occurrences": [
       "2026-09-02 19:00",
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-10-03 18:00"
     ],
     "root_cn": "消息；音讯"
   },
@@ -9255,17 +9269,17 @@ window.DAILY_VOCAB_DB = [
     "en": "worthy; suitable; eligible",
     "root": "layak",
     "root_cn": "值得；合适",
-    "example": "Cara baru ini layak dicoba oleh tim.",
-    "example_cn": "这个新方法值得团队试试。",
+    "example": "Blender yang sudah rusak seperti ini tidak layak dipakai lagi.",
+    "example_cn": "像这样已经坏掉的搅拌机不适合再用了。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -9286,7 +9300,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-25 18:00",
       "2026-09-26 08:00",
       "2026-09-28 18:00",
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-10-03 18:00"
     ]
   },
   {
@@ -11547,26 +11562,30 @@ window.DAILY_VOCAB_DB = [
     "en": "annoyed / irritated",
     "root": "sebel",
     "root_cn": "烦；恼火",
-    "example": "Aku sebel karena dia mengubah rencana tanpa bilang dulu.",
-    "example_cn": "我很烦，因为他没提前说就改了计划。",
+    "example": "Aku sebel banget karena barangnya rusak padahal baru seminggu.",
+    "example_cn": "我超烦的，因为东西才买一周就坏了。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-29 08:00",
+    "last_seen": "2026-10-03 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-19",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-03"
     ],
     "lesson_occurrences": [
       "2026-09-19 08:00",
-      "2026-09-29 08:00"
+      "2026-09-29 08:00",
+      "2026-10-03 18:00"
     ]
   },
   {
@@ -12172,27 +12191,29 @@ window.DAILY_VOCAB_DB = [
     "en": "effort; attempt",
     "root": "upaya",
     "root_cn": "努力；办法",
-    "example": "Kami sudah melakukan beberapa upaya agar pesanan tidak terlambat.",
-    "example_cn": "我们已经做了几项努力，避免订单延误。",
+    "example": "Staf toko sudah melakukan berbagai upaya untuk memperbaikinya.",
+    "example_cn": "店员已经想了各种办法去修好它。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-21 08:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-10-03 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-21",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-03"
     ],
     "lesson_occurrences": [
       "2026-09-21 08:00",
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-10-03 18:00"
     ]
   },
   {
@@ -16719,23 +16740,26 @@ window.DAILY_VOCAB_DB = [
     "en": "shape; form",
     "root": "bentuk",
     "root_cn": "形状；形式",
-    "example": "Bentuk tasnya sederhana, tapi warnanya bagus sekali.",
-    "example_cn": "这个包的款型很简单，但颜色非常好看。",
+    "example": "Kemasan dan bentuk blendernya masih bagus, tidak ada yang penyok.",
+    "example_cn": "包装和搅拌机的外形都还完好，没有凹陷。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-03 08:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-03"
     ],
     "lesson_occurrences": [
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-10-03 18:00"
     ]
   },
   {
@@ -16786,6 +16810,107 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-03 08:00"
+    ]
+  },
+  {
+    "word": "antre",
+    "cn": "排队",
+    "en": "to queue; to wait in line",
+    "root": "antre",
+    "root_cn": "排队",
+    "example": "Kami harus antre hampir setengah jam di depan kasir.",
+    "example_cn": "我们在收银台前不得不排了差不多半个小时的队。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 18:00",
+    "last_seen": "2026-10-03 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 18:00"
+    ]
+  },
+  {
+    "word": "berfungsi",
+    "cn": "运作；起作用",
+    "en": "to function; to work (of a device)",
+    "root": "fungsi",
+    "root_cn": "功能；作用",
+    "example": "Blender ini baru seminggu, tapi sudah tidak berfungsi.",
+    "example_cn": "这台搅拌机才买一个星期，就已经不能用了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 18:00",
+    "last_seen": "2026-10-03 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 18:00"
+    ]
+  },
+  {
+    "word": "tukar",
+    "cn": "更换；交换",
+    "en": "to exchange; to swap",
+    "root": "tukar",
+    "root_cn": "交换；兑换",
+    "example": "Saya mau tukar blender ini dengan yang baru.",
+    "example_cn": "我想把这台搅拌机换成新的。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 18:00",
+    "last_seen": "2026-10-03 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 18:00"
+    ]
+  },
+  {
+    "word": "kwitansi",
+    "cn": "收据",
+    "en": "receipt (proof of payment)",
+    "root": "kwitansi",
+    "root_cn": "收据（外来词）",
+    "example": "Tanpa kwitansi, toko tidak bisa menukar barang.",
+    "example_cn": "没有收据，商店无法换货。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 18:00",
+    "last_seen": "2026-10-03 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 18:00"
     ]
   }
 ];
