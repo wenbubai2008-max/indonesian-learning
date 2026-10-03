@@ -8,7 +8,7 @@
        * 第二主词库已经固化到 GitHub，不在页面刷新时重新扫描或生成。
        */
       await load('data/bipa-json-loader-20260917.js?v=20260917-level1');
-      await load('data/vocab-controller-20260917.js?v=20260917-level1');
+      await load('data/vocab-controller-20260917.js?v=20261003-pending-libraries');
       await load('data/vocab-unified-renderer-20260917.js?v=20260917-level1');
       await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20260917-level1');
       await load('data/vocab-unified-ui-guard-20260917.js?v=20260917-level1');
