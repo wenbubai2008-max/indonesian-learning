@@ -685,7 +685,9 @@ jobs:
             echo '::error title=No publishable reading diff::Candidate produced no final repository change.'
             exit 1
           fi
-          git commit -m "Prepare extensive reading ${release_date}"
+          # This final branch commit is validated in this run; do not recursively wake CI.
+          # Keep the squash commit message below free of skip markers so Pages still runs.
+          git commit -m "Prepare extensive reading ${release_date} [skip ci]"
           final_sha="$(git rev-parse HEAD)"
 
           node "$trusted_script" validate --repo "$GITHUB_WORKSPACE" --base "$release_base" --date "$release_date"
@@ -733,7 +735,7 @@ jobs:
           response=""
           merge_error="$RUNNER_TEMP/extensive-reading-merge-error.txt"
           for attempt in 1 2 3; do
-            if response="$(gh api --method PUT "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/merge" -f merge_method=squash -f sha="$final_sha" 2>"$merge_error")"; then
+            if response="$(gh api --method PUT "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/merge" -f merge_method=squash -f sha="$final_sha" -f commit_title="Publish extensive reading ${release_date}" -f commit_message="Validated daily reading release via PR #${PR_NUMBER}." 2>"$merge_error")"; then
               break
             fi
             echo "Merge API attempt $attempt/3 did not complete:"
