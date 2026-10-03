@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-03T02:14:37.144Z",
+  "updated_at": "2026-10-03T02:24:38.851Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1097,16 +1097,16 @@
     },
     "asal": {
       "word": "asal",
-      "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "status": "mastered",
+      "updated_at": "2026-10-03T02:24:21.615Z",
       "display": "asal",
       "cn": "来自；来源；只要随便",
       "root": "asal",
-      "reasons": [
-        "memory_fuzzy"
-      ],
+      "last_review": "2026-10-03T02:24:21.581Z",
+      "last_mastered": "2026-10-03T02:24:21.581Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "gua": {
       "word": "gua",
@@ -1121,16 +1121,16 @@
     },
     "barang": {
       "word": "barang",
-      "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "status": "mastered",
+      "updated_at": "2026-10-03T02:24:28.574Z",
       "display": "barang",
       "cn": "货物；东西",
       "root": "barang",
-      "reasons": [
-        "memory_fuzzy"
-      ],
+      "last_review": "2026-10-03T02:24:28.543Z",
+      "last_mastered": "2026-10-03T02:24:28.543Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "terakhir": {
       "word": "terakhir",
@@ -7565,14 +7565,14 @@
     },
     "kampus": {
       "word": "kampus",
-      "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "status": "mastered",
+      "updated_at": "2026-10-03T02:23:38.461Z",
       "display": "kampus",
-      "reasons": [
-        "memory_fuzzy"
-      ],
+      "last_review": "2026-10-03T02:23:38.430Z",
+      "last_mastered": "2026-10-03T02:23:38.430Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "nasib": {
       "word": "nasib",
