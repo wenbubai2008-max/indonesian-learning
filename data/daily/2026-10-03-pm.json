@@ -1,0 +1,357 @@
+{
+  "date": "2026-10-03",
+  "session": "pm",
+  "time": "18:00",
+  "day": 43,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Menukar blender yang rusak",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "antre",
+    "berfungsi",
+    "tukar",
+    "kwitansi"
+  ],
+  "vocab": [
+    {
+      "word": "antre",
+      "display": "antre",
+      "audio_text": "antre",
+      "cn": "排队",
+      "en": "to queue; to wait in line",
+      "root": "antre",
+      "root_cn": "排队",
+      "formation": "antre（口语里常写成 antri，标准拼写是 antre）；派生名词 antrean＝队伍。常见搭配：antre panjang（排长队）、antre di kasir（在收银台排队）、ikut antre（跟着排队）。",
+      "example": "Kami harus antre hampir setengah jam di depan kasir.",
+      "example_cn": "我们在收银台前不得不排了差不多半个小时的队。",
+      "synonym_note": "antre 是动词“排队”；antrean 是名词“队伍/排队的人”。antri 是口语常见写法，写作时用 antre；serobot 才是“插队”。",
+      "usage_note": "本晚课新词（fuzzy，口语新词）；重点练习 3 秒内说出 antre di … 的搭配。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "berfungsi",
+      "display": "berfungsi",
+      "audio_text": "berfungsi",
+      "cn": "运作；起作用",
+      "en": "to function; to work (of a device)",
+      "root": "fungsi",
+      "root_cn": "功能；作用",
+      "formation": "ber- + fungsi；常见搭配：tidak berfungsi（坏了/不能用）、berfungsi dengan baik（运作良好）、berfungsi normal（正常运作）。",
+      "example": "Blender ini baru seminggu, tapi sudah tidak berfungsi.",
+      "example_cn": "这台搅拌机才买一个星期，就已经不能用了。",
+      "synonym_note": "berfungsi 常指机器、功能、按钮“正常运作”；人“工作”用 bekerja；口语里也常说 nggak jalan / mati，意思接近但更随意。",
+      "usage_note": "本晚课新词（fuzzy）；重点练习用 tidak berfungsi 描述物品故障。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "tukar",
+      "display": "tukar",
+      "audio_text": "tukar",
+      "cn": "更换；交换",
+      "en": "to exchange; to swap",
+      "root": "tukar",
+      "root_cn": "交换；兑换",
+      "formation": "tukar → menukar（主动）、ditukar（被换）、penukaran（兑换/更换）。常见搭配：tukar barang（换货）、tukar uang（换钱）、tukar dengan yang baru（换成新的）。",
+      "example": "Saya mau tukar blender ini dengan yang baru.",
+      "example_cn": "我想把这台搅拌机换成新的。",
+      "synonym_note": "tukar 强调“用一个换另一个”（换货、换钱、换座位）；ganti 强调“替换掉旧的”（ganti baju、ganti baju）。到店里换货两者都能听到，但 tukar barang 更接近“退换”。",
+      "usage_note": "本晚课新词（dont）；重点区分 tukar 与 ganti。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kwitansi",
+      "display": "kwitansi",
+      "audio_text": "kwitansi",
+      "cn": "收据",
+      "en": "receipt (proof of payment)",
+      "root": "kwitansi",
+      "root_cn": "收据（外来词）",
+      "formation": "名词，无常见派生。常见搭配：minta kwitansi（要收据）、simpan kwitansi（保存收据）、kwitansi pembayaran（付款收据）。",
+      "example": "Tanpa kwitansi, toko tidak bisa menukar barang.",
+      "example_cn": "没有收据，商店无法换货。",
+      "synonym_note": "kwitansi 是写明金额、证明已付款的收据；struk 是收银机打出的小票；nota 是店家开的账单或单据。日常买东西时三者常混用，但售后凭证多说 kwitansi 或 struk。",
+      "usage_note": "本晚课新词（dont）；重点练习售后场景中的 bawa/simpan kwitansi。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "upaya",
+      "display": "upaya",
+      "audio_text": "upaya",
+      "cn": "努力；办法",
+      "en": "effort; attempt; measure",
+      "root": "upaya",
+      "root_cn": "努力；办法",
+      "formation": "名词，派生 berupaya（努力去做）。常见搭配：melakukan upaya、upaya terbaik、berupaya + 动词。",
+      "example": "Staf toko sudah melakukan berbagai upaya untuk memperbaikinya.",
+      "example_cn": "店员已经想了各种办法去修好它。",
+      "synonym_note": "upaya 偏书面和正式；日常口语更常说 usaha 或 berusaha。工作汇报、公告里 upaya 更自然。",
+      "usage_note": "已正式学习且仍为 active（focus 弱词）；本晚课重点复习，练习与 melakukan 搭配。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bakal",
+      "display": "bakal",
+      "audio_text": "bakal",
+      "cn": "将会；快要",
+      "en": "will; going to (often a prediction)",
+      "root": "bakal",
+      "root_cn": "将会；预感会发生",
+      "formation": "助动词，放在动词或形容词前。常见搭配：bakal rusak、bakal telat、nggak bakal（不会）、bakal datang。",
+      "example": "Kalau tidak segera diperbaiki, ponsel ini bakal mati total.",
+      "example_cn": "如果不赶快修，这部手机就会彻底坏掉。",
+      "synonym_note": "bakal 与 akan 都表示将来；akan 通用且较正式，bakal 更口语，常带“预感/推测”的色彩，尤其用于不太好的事情。",
+      "usage_note": "已正式学习且仍为 active（focus 弱词）；本晚课重点复习，练习预测后果。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berarti",
+      "display": "berarti",
+      "audio_text": "berarti",
+      "cn": "意味着；也就是说",
+      "en": "to mean; which means; so",
+      "root": "arti",
+      "root_cn": "意思；含义",
+      "formation": "ber- + arti；常见搭配：Itu berarti …（那意味着……）、Berarti …（那就是说……，对话中接话用）、artinya（口语里的同义说法）。",
+      "example": "Stok barunya baru datang minggu depan, berarti kita harus menunggu beberapa hari lagi.",
+      "example_cn": "新库存下周才到，也就是说我们还得再等几天。",
+      "synonym_note": "berarti 用来由前面的信息推出结论；artinya 更口语，常放在句首解释；mengartikan 是“把……解释为”。",
+      "usage_note": "已正式学习且仍为 active（focus 弱词）；本晚课重点复习，练习在对话里用 Berarti … 接话。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "sebel",
+      "display": "sebel",
+      "audio_text": "sebel",
+      "cn": "烦；恼火",
+      "en": "annoyed; irritated",
+      "root": "sebel",
+      "root_cn": "烦；恼火",
+      "formation": "sebel 是口语形式，标准写法 sebal；常见搭配：sebel banget、bikin sebel（让人烦）、sebel sama + 人/事。",
+      "example": "Aku sebel banget karena barangnya rusak padahal baru seminggu.",
+      "example_cn": "我超烦的，因为东西才买一周就坏了。",
+      "synonym_note": "sebel/kesal 是轻中度的烦躁；jengkel 更强一点；marah 才是真的“生气发火”。",
+      "usage_note": "已正式学习且仍为 active（focus 弱词）；本晚课重点复习，练习表达轻度情绪。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngabarin",
+      "display": "ngabarin",
+      "audio_text": "ngabarin",
+      "cn": "通知；告诉一声",
+      "en": "to let someone know",
+      "root": "kabar",
+      "root_cn": "消息；音讯",
+      "formation": "ngabarin 是 mengabari/memberi kabar 的口语形式；常见搭配：tolong ngabarin ya、nanti aku kabarin、ngabarin dulu。",
+      "example": "Kalau stoknya sudah ada, tolong ngabarin saya, ya.",
+      "example_cn": "如果有库存了，请通知我一声。",
+      "synonym_note": "ngabarin（口语）≈ mengabari；memberi tahu 较中性，能用于任何场合；ngasih tahu 也很口语。",
+      "usage_note": "已正式学习且仍为 active；本晚课重点复习，练习请求对方“通知一下”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bentuk",
+      "display": "bentuk",
+      "audio_text": "bentuk",
+      "cn": "形状；形式",
+      "en": "shape; form",
+      "root": "bentuk",
+      "root_cn": "形状；形式",
+      "formation": "名词；派生 berbentuk（呈……形状）。常见搭配：bentuk bulat、dalam bentuk、bentuknya masih bagus。",
+      "example": "Kemasan dan bentuk blendernya masih bagus, tidak ada yang penyok.",
+      "example_cn": "包装和搅拌机的外形都还完好，没有凹陷。",
+      "synonym_note": "bentuk 指外形或形式；model/jenis 更偏“款式/种类”。",
+      "usage_note": "今天08:00新学；本晚课应用复现，练习描述物品外观状态。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "layak",
+      "display": "layak",
+      "audio_text": "layak",
+      "cn": "值得；合适；够资格",
+      "en": "worthy; fit; deserving",
+      "root": "layak",
+      "root_cn": "值得；合适",
+      "formation": "形容词，常放在被动动词前。常见搭配：layak dipakai、layak dibeli、layak dicoba、tidak layak。",
+      "example": "Blender yang sudah rusak seperti ini tidak layak dipakai lagi.",
+      "example_cn": "像这样已经坏掉的搅拌机不适合再用了。",
+      "synonym_note": "layak 强调“达到可用/值得的标准”；pantas 偏“配得上/应当”；cocok 是“适合某人或某用途”；轻松口语可说 worth it。",
+      "usage_note": "今天08:00复习过的老词；本晚课应用复现，练习 layak + 被动动词。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Minggu lalu Rina membeli blender baru di sebuah toko elektronik. Kemarin pagi, blender itu tiba-tiba tidak berfungsi. Rina sebel banget karena barangnya baru dipakai tiga kali. Sore ini ia membawa blender dan kwitansinya ke toko. Ia harus antre cukup lama di depan meja layanan. Ketika giliran Rina tiba, staf berkata bahwa toko tidak bisa menukar barang tanpa kwitansi. Untung Rina masih menyimpannya. Staf lalu memeriksa kemasan dan bentuk blender itu. Karena belum lama dipakai, blender itu masih layak ditukar. Staf sudah melakukan berbagai upaya untuk mencari stok yang sama, tetapi barangnya habis. Berarti Rina harus menunggu beberapa hari. Staf akan ngabarin Rina besok, dan stok baru bakal datang dua hari lagi. Rina pulang dengan lega.",
+    "cn": "上周，Rina 在一家电器店买了一台新搅拌机。昨天早上，这台搅拌机突然不能用了。Rina 超烦的，因为它才用了三次。今天傍晚，她带着搅拌机和收据去了店里。她得在服务台前排了相当久的队。轮到 Rina 时，店员说没有收据商店无法换货。幸好 Rina 还留着收据。店员接着检查了包装和搅拌机的外形。因为用的时间不长，这台搅拌机仍然可以换。店员已经想了各种办法去找同款库存，但是卖完了。也就是说 Rina 得等几天。店员明天会通知 Rina，新库存两天后会到。Rina 放心地回家了。"
+  },
+  "dialogue": {
+    "title": "在服务台：换一台搅拌机",
+    "lines": [
+      {
+        "speaker": "A",
+        "id": "Permisi, Mbak. Blender ini sudah tidak berfungsi, padahal baru seminggu.",
+        "cn": "不好意思，小姐。这台搅拌机已经不能用了，才买一个星期。"
+      },
+      {
+        "speaker": "B",
+        "id": "Mohon maaf, Kak. Ada kwitansinya? Kami butuh itu untuk proses tukar barang.",
+        "cn": "很抱歉。您有收据吗？换货流程需要用到收据。"
+      },
+      {
+        "speaker": "A",
+        "id": "Ada, ini. Tadi saya antre lama, jadi sebel banget, tapi ya sudahlah.",
+        "cn": "有，在这里。刚才我排了很久的队，真的很烦，不过算了。"
+      },
+      {
+        "speaker": "B",
+        "id": "Kami cek dulu ya. Bentuk dan kemasannya masih bagus, jadi barang ini layak ditukar.",
+        "cn": "我们先检查一下。外形和包装都还完好，所以这件商品可以换。"
+      },
+      {
+        "speaker": "A",
+        "id": "Syukurlah. Berarti hari ini saya bisa bawa pulang yang baru?",
+        "cn": "太好了。也就是说今天我就能把新的带回家吗？"
+      },
+      {
+        "speaker": "B",
+        "id": "Sayangnya stok yang sama habis, Kak. Kami sudah berupaya cari ke cabang lain, dan stok baru bakal datang dua hari lagi.",
+        "cn": "可惜同款库存卖完了。我们已经想办法去其他分店找了，新库存两天后会到。"
+      },
+      {
+        "speaker": "A",
+        "id": "Oke, tolong ngabarin saya kalau barangnya sudah datang, ya.",
+        "cn": "好的，东西到了请通知我一声。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "介绍你最近买过的一件东西，说说它现在还能不能正常使用、值不值得买。要求：用上 berfungsi 和 layak，写 2–3 句自然的印尼语，不要照抄课文。",
+      "reference_answer": "Bulan lalu saya membeli headphone baru. Sampai sekarang headphone itu masih berfungsi dengan baik. Menurut saya, barang ini layak dibeli.",
+      "reference_cn": "上个月我买了一副新耳机。到现在它还运作得很好。我觉得这东西值得买。"
+    },
+    {
+      "task": "想象你在邮局或银行排了很久的队，向朋友简单抱怨并说说最后结果。要求：用上 antre 和 sebel，写 2–3 句，说出你自己的真实感受。",
+      "reference_answer": "Tadi saya antre hampir satu jam di kantor pos. Jujur aku sebel banget, tapi akhirnya paketnya sampai juga.",
+      "reference_cn": "刚才我在邮局排了差不多一个小时的队。说实话我烦死了，不过最后包裹还是到了。"
+    },
+    {
+      "task": "你买错了衣服尺码，想去店里换。向店员说明情况并说明你带了什么。要求：用上 tukar 和 kwitansi，写 2–3 句礼貌的印尼语。",
+      "reference_answer": "Permisi, Mbak. Saya salah beli ukuran, jadi saya mau tukar baju ini dengan ukuran M. Ini kwitansinya, ya.",
+      "reference_cn": "不好意思，小姐。我买错了尺码，所以想把这件衣服换成 M 码。这是收据。"
+    },
+    {
+      "task": "你因为堵车会晚到，给朋友发一条消息说明原因并安排后续。要求：用上 bakal、ngabarin（可加 berarti 或 bentuk 之外的目标词），写 2–3 句，自己组织原因和安排。",
+      "reference_answer": "Maaf ya, aku bakal telat sekitar dua puluh menit karena jalannya macet. Berarti kalian mulai makan duluan saja. Nanti aku ngabarin kalau sudah dekat.",
+      "reference_cn": "不好意思，我大概会晚二十分钟，因为路上堵车。也就是说你们先开始吃吧。等我快到了再通知你们。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "你已经付了钱，店员需要一张写有金额、能证明你付过款的凭证才能给你换货。印尼语最适合用哪个词？",
+        "options": [
+          "kupon",
+          "brosur",
+          "kwitansi",
+          "katalog"
+        ],
+        "answer_index": 2,
+        "answer": "kwitansi",
+        "explain": "kwitansi 是付款收据；kupon 是优惠券，brosur 是宣传单，katalog 是商品目录，都不能证明已付款。"
+      },
+      {
+        "type": "choice",
+        "prompt": "在换钱的柜台，想把美元换成印尼盾，哪句最自然？",
+        "options": [
+          "Saya mau menukar dolar ini ke rupiah.",
+          "Saya mau mengganti dolar ini ke rupiah.",
+          "Saya mau mengantre dolar ini ke rupiah.",
+          "Saya mau menyimpan dolar ini ke rupiah."
+        ],
+        "answer_index": 0,
+        "answer": "Saya mau menukar dolar ini ke rupiah.",
+        "explain": "“兑换”货币用 menukar uang；mengganti 是“替换掉旧的”（如 ganti baju），不用于兑换货币。"
+      },
+      {
+        "type": "choice",
+        "prompt": "朋友的手机屏幕裂了，你预感再不修的话将来一定会彻底坏掉。哪句预测最自然？",
+        "options": [
+          "Kalau tidak segera diperbaiki, ponsel ini tadi mati total.",
+          "Kalau tidak segera diperbaiki, ponsel ini sudah mati total kemarin.",
+          "Kalau tidak segera diperbaiki, ponsel ini pernah mati total.",
+          "Kalau tidak segera diperbaiki, ponsel ini bakal mati total."
+        ],
+        "answer_index": 3,
+        "answer": "Kalau tidak segera diperbaiki, ponsel ini bakal mati total.",
+        "explain": "预测将来的后果用 bakal（口语，带预感色彩）；tadi、kemarin、pernah 都指过去，不能和“如果不修”这个假设后果搭配。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Blender ini baru seminggu, tapi sudah tidak _____.（运作；起作用）",
+        "answer": "berfungsi",
+        "explain": "tidak berfungsi 表示机器“不能正常运作”。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kalau stoknya sudah datang, tolong _____ saya, ya.（通知一声，口语）",
+        "answer": "ngabarin",
+        "explain": "ngabarin 是 mengabari 的口语形式，用于请对方“通知一声”。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我想把这个搅拌机换成新的。",
+        "tokens": [
+          "Saya",
+          "mau",
+          "tukar",
+          "blender",
+          "ini",
+          "dengan",
+          "yang",
+          "baru."
+        ],
+        "answer": "Saya mau tukar blender ini dengan yang baru.",
+        "answer_cn": "我想把这个搅拌机换成新的。",
+        "explain": "结构：主语 + mau + tukar + 物品 + dengan yang baru（换成新的）。"
+      }
+    ],
+    "self_check": [
+      "不看词卡，3 秒内说出 antre、berfungsi、tukar、kwitansi 的意思并各说一个搭配。",
+      "能区分 tukar 与 ganti、kwitansi 与 struk、bakal 与 akan。",
+      "能不看课文，用 berarti 和 ngabarin 各说一句真实的话。"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "先做 3 秒主动提取：看中文说出 antre / berfungsi / tukar / kwitansi，答不出的立刻看词卡再说一遍。",
+      "对比易混词：tukar 与 ganti、upaya 与 usaha、bakal 与 akan、sebel 与 marah，各说一句例句。",
+      "用 30 秒向朋友讲一遍“换搅拌机”的经过，至少用上 4 个目标词，不要背课文。",
+      "最后用 ngabarin 和 berarti 各编一句你自己生活中的真实表达。"
+    ]
+  }
+}
