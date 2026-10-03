@@ -8,10 +8,10 @@
   const MASTER_SCRIPTS=['data/master-vocab-data.js?v=20260917-controller1','data/master-vocab-data-2.js?v=20260917-controller1','data/master-vocab-data-3.js?v=20260917-controller1'];
   const EXPECTED_MASTER_COUNT=977;
   const EXPECTED_BIPA_COUNTS={A1:515,A2:290,B1:204,B2:274};
-  const NORMAL_KEYS=['top1000','master','daily','unknown'];
+  const NORMAL_KEYS=['master','pending-primary','pending-secondary','daily','unknown'];
   const BIPA_KEYS=['bipa-a1','bipa-a2','bipa-b1','bipa-b2'];
   const ALL_KEYS=[...NORMAL_KEYS,...BIPA_KEYS];
-  let activeKey='top1000';
+  let activeKey='master';
   let activeView='';
   let installed=false;
   let initPromise=null;
@@ -22,6 +22,7 @@
   const meaningAttempts=new Set();
   const memCache=new Map();
   const sourceCache=new Map();
+  let pendingCatalog=null,pendingPromise=null,pendingError='',pendingUndo=null,pendingRefreshQueued=false;
 
   function uniqueByWord(arr){
     const seen=new Set(),out=[];
@@ -73,6 +74,45 @@
     sourceCache.delete('bipa-'+lv.toLowerCase());
   }
 
+
+  function isPendingKey(key=activeKey){return key==='pending-primary'||key==='pending-secondary'}
+  async function ensurePendingData(force=false){
+    if(pendingCatalog&&!force)return pendingCatalog;
+    if(pendingPromise)return pendingPromise;
+    pendingPromise=(async()=>{
+      const r=await fetch('data/pending-vocab.json?v='+Date.now(),{cache:'no-store'});
+      if(!r.ok)throw new Error('HTTP '+r.status);
+      const doc=await r.json();
+      if(!doc||doc.version!==1||!Array.isArray(doc.primary)||!Array.isArray(doc.secondary))throw new Error('待学习清单格式错误');
+      for(const rows of [doc.primary,doc.secondary]){
+        const keys=new Set();
+        for(const x of rows){
+          if(!x||!String(x.word||'').trim()||keys.has(norm(x.word)))throw new Error('待学习清单包含空词或重复词');
+          keys.add(norm(x.word));
+        }
+      }
+      pendingCatalog=doc;pendingError='';return doc;
+    })();
+    try{return await pendingPromise}
+    catch(e){pendingError=e&&e.message||'读取失败';throw e}
+    finally{pendingPromise=null}
+  }
+  // The server snapshot gives the complete M ∩ A − D list, not the truncated
+  // lesson runtime window. Local/cloud mastered edits hide immediately here.
+  function pendingRows(key){
+    if(!pendingCatalog)return [];
+    const wp=window.WeaknessPool,states=new Map(),mem=normalMem();
+    if(wp&&typeof wp.all==='function')wp.all().forEach(x=>{if(x&&x.word)states.set(norm(x.word),x.status)});
+    const source=key==='pending-primary'?pendingCatalog.primary:pendingCatalog.secondary;
+    return source.filter(x=>{
+      const st=states.get(norm(x.word));
+      return st?st!=='mastered':statusFromMemory(x.word,key,mem)!=='know';
+    }).map(x=>Object.assign({},x,{
+      categories:[key==='pending-primary'?'主词库待学习':'第二词库待学习'],
+      note:x.memory_class==='dont'?'当前状态：明确不会':x.memory_class==='fuzzy'?'当前状态：模糊':'当前待学习'
+    }));
+  }
+
   function localUnknownMap(){try{return JSON.parse(localStorage.getItem('indo_unknown_words')||'{}')}catch(e){return {}}}
   function missingMeaning(v){const s=String(v||'').trim();return !s||['暂无释义','暂未查到释义','查询中文释义…','查询中文释义...'].includes(s)}
   function localUnknownWords(){
@@ -107,6 +147,7 @@
     sourceCache.set(ck,out);return out;
   }
   function sourceFor(key=activeKey){
+    if(isPendingKey(key))return pendingRows(key);
     if(key==='master'){if(sourceCache.has('master'))return sourceCache.get('master');const out=uniqueByWord(window.MASTER_VOCAB_OBJECTS||masterObjects());sourceCache.set('master',out);return out}
     if(key==='daily'){if(sourceCache.has('daily'))return sourceCache.get('daily');const out=uniqueByWord(window.DAILY_VOCAB_DB||[]);sourceCache.set('daily',out);return out}
     if(key==='unknown')return uniqueByWord(unknownWords());
@@ -115,14 +156,14 @@
     return [];
   }
   function labelFor(key=activeKey){
-    if(key==='master')return '主学习词库';if(key==='daily')return '每日学习词汇';if(key==='unknown')return '陌生词汇';if(key==='top1000')return 'Top1000';
+    if(key==='master')return '主学习词库';if(key==='pending-primary')return '主词库·待学习';if(key==='pending-secondary')return '第二词库·待学习';if(key==='daily')return '每日学习词汇';if(key==='unknown')return '陌生词汇';
     const lv=bipaLevelForKey(key);return lv?'BIPA（'+lv+'）':'当前词库';
   }
   function canonicalKey(v){
     const s=String(v||'').trim().toLowerCase();
     if(ALL_KEYS.includes(s))return s;
     if(s.includes('bipa')){for(const lv of ['a1','a2','b1','b2'])if(s.includes(lv))return 'bipa-'+lv;}
-    return NORMAL_KEYS.includes(s)?s:'top1000';
+    return NORMAL_KEYS.includes(s)?s:'master';
   }
   function currentItem(){try{const a=Array.isArray(FILTER)?FILTER:[];if(!a.length)return null;const i=((Number(idx||0)%a.length)+a.length)%a.length;return a[i]||null}catch(e){return null}}
   function progressKey(key=activeKey){return 'vocab_progress_'+key}
@@ -143,25 +184,30 @@
     cat.innerHTML='<option value="">'+(isBipaKey()?'全部主题':'全部分类')+'</option>'+values.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('');
     if(values.includes(cur))cat.value=cur;
   }
-  function libraryCount(key){const lv=bipaLevelForKey(key);if(lv&&!bipaReady(lv))return EXPECTED_BIPA_COUNTS[lv]||0;return sourceFor(key).length}
+  function libraryCount(key){if(isPendingKey(key)&&!pendingCatalog)return pendingError?'暂不可用':'读取中';const lv=bipaLevelForKey(key);if(lv&&!bipaReady(lv))return EXPECTED_BIPA_COUNTS[lv]||0;return sourceFor(key).length}
   function populateLibraryOptions(){
     const select=$('librarySelect');if(!select)return;
     const cur=canonicalKey(select.value||localStorage.getItem('selected_vocab_library')||activeKey);
     const opts=[
-      ['top1000','Top1000',libraryCount('top1000')],['master','主学习词库',libraryCount('master')],['daily','每日学习词汇',libraryCount('daily')],['unknown','陌生词汇',libraryCount('unknown')],
+      ['master','主学习词库',libraryCount('master')],
+      ['pending-primary','主词库·待学习',libraryCount('pending-primary')],
+      ['pending-secondary','第二词库·待学习',libraryCount('pending-secondary')],
+      ['daily','每日学习词汇',libraryCount('daily')],['unknown','陌生词汇',libraryCount('unknown')],
       ...['A1','A2','B1','B2'].map(lv=>['bipa-'+lv.toLowerCase(),'BIPA（'+lv+'）',libraryCount('bipa-'+lv.toLowerCase())])
     ];
     // Keep the native select and existing option nodes stable while its menu is open.
     const wanted=new Set(opts.map(x=>x[0]));
     const existing=new Map([...select.options].map(o=>[o.value,o]));
-    opts.forEach(([k,l,n])=>{
+    opts.forEach(([k,l,n],i)=>{
       let option=existing.get(k);
       if(!option){option=document.createElement('option');option.value=k;select.add(option)}
+      // Move only out-of-place native nodes; do not recreate the open selector.
+      if(select.options[i]!==option)select.add(option,select.options[i]||null);
       const label=l+'（'+n+'）';
       if(option.textContent!==label)option.textContent=label;
     });
     [...select.options].forEach(option=>{if(!wanted.has(option.value))option.remove()});
-    const next=opts.some(x=>x[0]===cur)?cur:'top1000';
+    const next=opts.some(x=>x[0]===cur)?cur:'master';
     if(select.value!==next)select.value=next;
   }
   function ensureLibrarySelect(){const tb=document.querySelector('#vocab .toolbar');if(!tb)return null;let s=$('librarySelect');if(!s){s=document.createElement('select');s.id='librarySelect';tb.insertBefore(s,tb.firstChild)}return s}
@@ -174,19 +220,45 @@
     const s=computeStats(src,mem);
     if($('vocabCount'))$('vocabCount').textContent=s.total;if($('knownCount'))$('knownCount').textContent=s.known;if($('reviewCount'))$('reviewCount').textContent=s.review;
     let suffix='';if(activeView==='known')suffix=' · 查看已掌握';else if(activeView==='review')suffix=' · 查看待掌握';
-    if($('dbStatus'))$('dbStatus').textContent=labelFor()+' · '+s.unchecked+' 未判断 · '+s.review+' 待掌握 · '+s.known+' 已掌握 · '+s.total+' 总词'+suffix;
+    if($('dbStatus'))$('dbStatus').textContent=isPendingKey()?labelFor()+' · '+s.total+' 个合法待学词 · 会了即可移出（同步后下次课程排除）':labelFor()+' · '+s.unchecked+' 未判断 · '+s.review+' 待掌握 · '+s.known+' 已掌握 · '+s.total+' 总词'+suffix;
     if($('vocabTag'))$('vocabTag').textContent=labelFor()+' '+s.total+' 词';return s;
   }
   function currentFilterPredicate(x,mem=memoryFor()){
     if(!x||!x.word)return false;if((x.categories||[]).includes('粗口/俚语'))return false;
     const st=statusFromMemory(x.word,activeKey,mem);
-    if(activeView==='known'){if(st!=='know')return false}else if(activeView==='review'){if(st!=='fuzzy'&&st!=='dont')return false}else if(st)return false;
+    if(activeView==='known'){if(st!=='know')return false}else if(activeView==='review'){if(st!=='fuzzy'&&st!=='dont')return false}else if(st&&!isPendingKey())return false;
     const q=String($('search')?.value||'').trim().toLowerCase(),cat=String($('cat')?.value||''),sab=isBipaKey()?String($('sabFilterStable')?.value||''):'';
     if(cat){if(isBipaKey()){if(String(x.theme||'')!==cat)return false}else if(!(x.categories||[]).includes(cat))return false}
     if(sab&&String(x.sab||'').toUpperCase()!==sab)return false;
     if(q&&!([x.word,x.cn,x.en,x.root,x.theme,x.example,x.example_cn,x.scene,x.scene_cn,x.note].join(' ').toLowerCase().includes(q)))return false;return true;
   }
-  function renderCurrent(){if(window.__VOCAB_UNIFIED_RENDERER_20260917__&&typeof window.renderVocab==='function')window.renderVocab()}
+  function renderPendingUndo(){
+    let bar=$('pendingUndoBar');
+    if(!isPendingKey()||!pendingUndo){if(bar)bar.remove();return}
+    if(!bar){bar=document.createElement('div');bar.id='pendingUndoBar';const box=$('vocabBox');if(box)box.insertAdjacentElement('afterend',bar)}
+    if(!bar)return;
+    bar.style.cssText='margin:12px 0;padding:11px 14px;border:1px solid #dce3ef;border-radius:12px;background:#f8faff;font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:12px';
+    bar.textContent='已将 '+pendingUndo.word+' 标为会了（尚需云端同步）';
+    const undo=document.createElement('button');undo.type='button';undo.textContent='撤销';undo.style.cssText='padding:7px 12px;border:1px solid #dce3ef;border-radius:8px;background:white;cursor:pointer';
+    undo.onclick=()=>{
+      const u=pendingUndo;if(!u)return;pendingUndo=null;
+      const m=memoryFor(u.library),k=norm(u.word);
+      if(u.oldWord===undefined)delete m[u.word];else m[u.word]=u.oldWord;
+      if(u.oldNorm===undefined)delete m[k];else m[k]=u.oldNorm;
+      persistMemory(u.library,m);
+      const p=window.WeaknessPool;
+      if(p){
+        if(u.oldRecord&&typeof p.importRecord==='function')p.importRecord(Object.assign({},u.oldRecord,{word:u.word,status:'active'}));
+        else if(typeof p.markWeak==='function')p.markWeak(u.word,u.item,u.item.memory_class==='dont'?'memory_dont':'memory_fuzzy');
+      }
+      populateLibraryOptions();rebuild(false);
+    };
+    bar.appendChild(undo);
+  }
+  function renderCurrent(){
+    if(window.__VOCAB_UNIFIED_RENDERER_20260917__&&typeof window.renderVocab==='function')window.renderVocab();
+    renderPendingUndo();
+  }
   function rebuild(reset=false){
     const src=sourceFor(),mem=memoryFor();try{DB=src.slice()}catch(e){}
     const out=src.filter(x=>currentFilterPredicate(x,mem));
@@ -199,6 +271,17 @@
   }
   async function setLibrary(key,opts={}){
     key=canonicalKey(key);const mySeq=++switchSeq,lv=bipaLevelForKey(key);
+    if(isPendingKey(key)){
+      if($('dbStatus'))$('dbStatus').textContent=labelFor(key)+' · 正在更新完整待学习清单…';
+      try{await ensurePendingData(true)}catch(e){
+        if(mySeq!==switchSeq)return [];
+        const s=$('librarySelect');if(s)s.value=activeKey;
+        if($('dbStatus'))$('dbStatus').textContent=labelFor(key)+' · 读取失败：'+pendingError+'（请重试）';
+        return [];
+      }
+      if(mySeq!==switchSeq)return [];
+      populateLibraryOptions();
+    }
     if(lv&&!bipaReady(lv)){
       if($('dbStatus'))$('dbStatus').textContent=labelFor(key)+' · 正在加载…';
       try{await ensureBipaData(lv)}
@@ -210,28 +293,36 @@
       }
       if(mySeq!==switchSeq)return [];
     }
-    saveProgress();activeKey=key;activeView='';localStorage.removeItem('vocab_view_mode');
+    saveProgress();activeKey=key;if(!isPendingKey(key))pendingUndo=null;activeView='';localStorage.removeItem('vocab_view_mode');
     const select=$('librarySelect');if(select&&select.value!==key)select.value=key;localStorage.setItem('selected_vocab_library',key);
     if($('search'))$('search').value='';syncUiMode();rebuildCategories();if($('cat'))$('cat').value='';if($('sabFilterStable'))$('sabFilterStable').value='';
     const src=sourceFor(),mem=memoryFor();try{DB=src.slice()}catch(e){}
-    const out=src.filter(x=>!statusFromMemory(x.word,activeKey,mem)&&!(x.categories||[]).includes('粗口/俚语'));
+    const out=src.filter(x=>(isPendingKey(key)||!statusFromMemory(x.word,activeKey,mem))&&!(x.categories||[]).includes('粗口/俚语'));
     try{FILTER=out;idx=opts.restore===false?0:restoreIndex(out)}catch(e){}
     updateStats(src,mem);renderCurrent();window.dispatchEvent(new CustomEvent('vocab-library-ready',{detail:{key,total:src.length}}));return out;
   }
   function move(delta){const a=Array.isArray(FILTER)?FILTER:[];if(!a.length)return;try{idx=(Number(idx||0)+delta+a.length)%a.length}catch(e){}saveProgress();renderCurrent()}
   function syncWeakness(item,v){
     if(isBipaKey()||!item||!item.word)return;const p=window.WeaknessPool;if(!p)return;
-    if(v==='know'){if(typeof p.markMastered==='function')p.markMastered(item.word,'vocab_known');else if(typeof p.markKnown==='function')p.markKnown(item.word,'vocab_known')}
+    if(v==='know'){const reason=isPendingKey()?'manual_preknown':'vocab_known';if(typeof p.markMastered==='function')p.markMastered(item.word,reason);else if(typeof p.markKnown==='function')p.markKnown(item.word,reason)}
     else if(v==='fuzzy'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_fuzzy');else if(v==='dont'&&typeof p.markWeak==='function')p.markWeak(item.word,item,'memory_dont');
   }
   function mark(v){
     if(!['know','fuzzy','dont'].includes(v))return;const x=currentItem();if(!x||!x.word)return;
-    const m=memoryFor(),k=norm(x.word),lv=bipaLevelForKey();if(lv)m[k]=v;else{m[x.word]=v;m[k]=v}
-    persistMemory(activeKey,m);syncWeakness(x,v);if(lv)window.dispatchEvent(new CustomEvent('bipa-memory-changed',{detail:{level:lv,word:x.word,status:v}}));rebuild(false);
+    const m=memoryFor(),k=norm(x.word),lv=bipaLevelForKey(),pending=isPendingKey();
+    if(pending&&v==='know'){
+      const old=window.WeaknessPool?.get?.(x.word)||null;
+      pendingUndo={word:x.word,item:x,library:activeKey,oldWord:m[x.word],oldNorm:m[k],oldRecord:old?JSON.parse(JSON.stringify(old)):null};
+    }
+    if(lv)m[k]=v;else{m[x.word]=v;m[k]=v}
+    persistMemory(activeKey,m);syncWeakness(x,v);
+    if(lv)window.dispatchEvent(new CustomEvent('bipa-memory-changed',{detail:{level:lv,word:x.word,status:v}}));
+    if(pending)populateLibraryOptions();
+    rebuild(false);
   }
   function emptyMessage(){
     const q=String($('search')?.value||'').trim(),cat=String($('cat')?.value||''),sab=String($('sabFilterStable')?.value||'');
-    if(q||cat||sab)return '没有匹配词汇';if(activeView==='known')return '当前词库还没有标记“会了”的词。';if(activeView==='review')return '当前词库没有“模糊 / 不会”的词。';return '当前词库没有未判断词 ✓';
+    if(q||cat||sab)return '没有匹配词汇';if(activeView==='known')return '当前词库还没有标记“会了”的词。';if(activeView==='review')return '当前词库没有“模糊 / 不会”的词。';if(isPendingKey())return '此词库待学词已经清零 ✓';return '当前词库没有未判断词 ✓';
   }
   function speak(text){
     text=String(text||'').trim();if(!text)return;try{if(activeAudio){activeAudio.pause();activeAudio=null}}catch(e){}try{if(window.speechSynthesis)window.speechSynthesis.cancel()}catch(e){}
@@ -269,10 +360,27 @@
   function init(){
     if(initPromise)return initPromise;
     initPromise=(async function(){
-      if(installed)return true;ensureLibrarySelect();await ensureMasterData();populateLibraryOptions();bindControls();installOwnership();
-      const stored=canonicalKey(localStorage.getItem('selected_vocab_library')||$('librarySelect')?.value||'top1000');prepareHiddenLibrary(stored);
+      if(installed)return true;ensureLibrarySelect();await ensureMasterData();
+      try{await ensurePendingData()}catch(e){console.warn('[pending vocab]',e)}
+      populateLibraryOptions();bindControls();installOwnership();
+      const stored=canonicalKey(localStorage.getItem('selected_vocab_library')||$('librarySelect')?.value||'master');prepareHiddenLibrary(stored);
       window.addEventListener('unknown-vocab-changed',()=>{sourceCache.delete('unknown');populateLibraryOptions();if(activeKey==='unknown'&&$('librarySelect')?.value==='unknown'&&$('vocab')?.classList.contains('active'))void setLibrary('unknown')});
       window.addEventListener('master-core-locked',()=>{sourceCache.delete('master');populateLibraryOptions();if(activeKey==='master'&&$('librarySelect')?.value==='master'&&$('vocab')?.classList.contains('active'))void setLibrary('master')});
+      // Batched, local-only refresh: no polling or whole-page MutationObserver.
+      window.addEventListener('weak-pool-changed',()=>{
+        if(!pendingCatalog||pendingRefreshQueued)return;
+        pendingRefreshQueued=true;
+        queueMicrotask(()=>{
+          pendingRefreshQueued=false;populateLibraryOptions();
+          if(isPendingKey(activeKey)&&$('vocab')?.classList.contains('active'))rebuild(false);
+        });
+      });
+      document.addEventListener('visibilitychange',()=>{
+        if(document.hidden||!isPendingKey(activeKey)||!$('vocab')?.classList.contains('active'))return;
+        ensurePendingData(true).then(()=>{
+          populateLibraryOptions();rebuild(false);
+        }).catch(e=>{if($('dbStatus'))$('dbStatus').textContent='待学习清单刷新失败：'+(e&&e.message||'网络错误')});
+      });
       window.addEventListener('beforeunload',saveProgress);dataReady=true;installed=true;window.dispatchEvent(new CustomEvent('vocab-controller-ready',{detail:{key:activeKey}}));return true;
     })().catch(e=>{initPromise=null;installed=false;dataReady=false;throw e});return initPromise;
   }
