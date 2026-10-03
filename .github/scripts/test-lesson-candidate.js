@@ -79,6 +79,8 @@ const runTests=function runTests(validate){
  return {passed:count,failed:0,makeAm:AM,makePm:PM};
 };
 const results=runTests(validate);
+const rotationIntegration=require('./test-review-rotation')(results.makePm,validate);
+console.log('Review rotation tests (recent-4-day cap, focus quota, AM-review application):',rotationIntegration,'passed');
 console.log('Stage 1 pre-publication guard:',JSON.stringify(results));
 // Read-only phase-1 lesson context regression, no context output committed by this runner.
 require('./test-build-lesson-context');
