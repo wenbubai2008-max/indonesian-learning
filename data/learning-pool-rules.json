@@ -211,6 +211,26 @@
     "feedback_override": "仅认runtime.review_pool.last_wrong晚于该词最近一次核心复习并且不晚于runtime.generated_at；旧的答错累计不能解除冷却",
     "scoring": "真实新错>memory_dont>memory_fuzzy>其他active；同类优先低曝光、到期更久的词。最近7天出现1/2/3次分别建议扣12/25/45分",
     "focus_mix": "晚课仍优先2-3合法focus，但不越过冷却；剩余补低曝光到期review",
-    "fallback": "不得越界到mastered或不合法新词，不伪造错误或更改历史；合法候选不足明确报告"
+    "fallback": "不得越界到mastered或不合法新词，不伪造错误或更改历史；合法候选不足明确报告",
+    "recent_core": {
+      "enabled": true,
+      "effective_date": "2026-10-04",
+      "window_days": 4,
+      "max_per_pm": 2,
+      "rule": "晚课重点复习中，最近4天内（含）已做过正式核心复习的词最多2个；存在真实新错（last_wrong晚于最近一次核心复习且不晚于runtime.generated_at）的词不计入限制；合法低曝光替代不足时按fallback补位，不卡发布"
+    },
+    "focus_quota": {
+      "enabled": true,
+      "effective_date": "2026-10-04",
+      "min": 2,
+      "max": 3,
+      "rule": "晚课重点复习中focus_pool词2-3个；超过3个且存在合法非focus替代时拒绝；少于2个且存在合法focus替代时拒绝；替代必须在review_pool、不在冷却、7天核心曝光<3、不在最近4天窗口（除非有真实新错）、未被其他组占用"
+    },
+    "application_am_review": {
+      "enabled": true,
+      "effective_date": "2026-10-04",
+      "rule": "当天AM.review_vocab中的老词不得再占PM完整application词卡（真实新错除外），应在阅读/对话中自然复现；仅当没有其他合法application候选（review_pool内未被占用且非AM核心复习词）时才允许例外"
+    },
+    "executable_ranking": "node .github/scripts/rank-review-candidates.js --date D 输出确定性的推荐重点复习与application候选；Validator与排序脚本共用 .github/scripts/review-rotation.js，生成端必须先运行排序脚本再锁定词表"
   }
 }

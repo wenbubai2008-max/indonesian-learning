@@ -1,0 +1,605 @@
+{
+ "_note": "Frozen real 2026-10-03 PM situation (runtime/history as of main 29c3a15, before the PM was published) used as regression case A. Read-only test data.",
+ "date": "2026-10-03",
+ "generated_at": "2026-10-03T02:33:29.346Z",
+ "review_pool": [
+  [
+   "menunjukkan",
+   1,
+   4,
+   "2026-09-27T13:58:43.322Z"
+  ],
+  [
+   "niat",
+   1,
+   3,
+   "2026-09-25T13:46:19.310Z"
+  ],
+  [
+   "mengeluh",
+   1,
+   2,
+   "2026-09-28T09:17:16.003Z"
+  ],
+  [
+   "seraya",
+   1,
+   1,
+   "2026-09-27T13:59:29.228Z"
+  ],
+  [
+   "menyalin",
+   1,
+   1,
+   "2026-09-27T13:57:54.512Z"
+  ],
+  [
+   "kabur",
+   1,
+   1,
+   "2026-09-25T15:02:05.313Z"
+  ],
+  [
+   "menegaskan",
+   1,
+   1,
+   "2026-09-25T14:59:12.780Z"
+  ],
+  [
+   "layak",
+   1,
+   1,
+   "2026-09-16T07:55:56.953Z"
+  ],
+  [
+   "nyinggung",
+   1,
+   3,
+   "2026-09-28T14:43:57.046Z"
+  ],
+  [
+   "ngotot",
+   1,
+   1,
+   "2026-09-13T11:58:14.186Z"
+  ],
+  [
+   "memanggil",
+   2,
+   0,
+   ""
+  ],
+  [
+   "melawan",
+   2,
+   0,
+   ""
+  ],
+  [
+   "bebas",
+   2,
+   0,
+   ""
+  ],
+  [
+   "sebel",
+   2,
+   0,
+   ""
+  ],
+  [
+   "jomblo",
+   2,
+   0,
+   ""
+  ],
+  [
+   "cerewet",
+   2,
+   0,
+   ""
+  ],
+  [
+   "pembangunan",
+   2,
+   0,
+   ""
+  ],
+  [
+   "baper",
+   1,
+   2,
+   "2026-09-28T14:43:33.614Z"
+  ],
+  [
+   "sekadar",
+   1,
+   2,
+   "2026-09-27T13:56:03.482Z"
+  ],
+  [
+   "keberatan",
+   1,
+   1,
+   "2026-09-30T14:08:37.388Z"
+  ],
+  [
+   "nyantai",
+   1,
+   1,
+   "2026-10-01T12:34:16.756Z"
+  ],
+  [
+   "nyaris",
+   1,
+   1,
+   ""
+  ],
+  [
+   "memisahkan",
+   1,
+   1,
+   "2026-09-30T14:12:57.994Z"
+  ],
+  [
+   "kesepakatan",
+   1,
+   1,
+   "2026-09-30T14:12:20.417Z"
+  ],
+  [
+   "berantakan",
+   1,
+   1,
+   "2026-09-30T14:06:45.377Z"
+  ],
+  [
+   "pokoknya",
+   1,
+   1,
+   "2026-09-30T14:05:45.976Z"
+  ],
+  [
+   "upaya",
+   1,
+   1,
+   "2026-09-29T10:47:50.939Z"
+  ],
+  [
+   "bakal",
+   1,
+   1,
+   "2026-09-29T07:59:14.910Z"
+  ],
+  [
+   "berarti",
+   1,
+   1,
+   "2026-09-22T13:08:29.239Z"
+  ],
+  [
+   "beliau",
+   2,
+   0,
+   ""
+  ],
+  [
+   "salah tingkah",
+   1,
+   2,
+   "2026-10-01T12:32:10.275Z"
+  ],
+  [
+   "kelabakan",
+   1,
+   2,
+   "2026-09-30T14:00:12.941Z"
+  ],
+  [
+   "ngirit",
+   1,
+   2,
+   "2026-09-30T13:59:09.485Z"
+  ],
+  [
+   "nanggung",
+   1,
+   2,
+   "2026-09-23T03:24:34.816Z"
+  ],
+  [
+   "kelewat",
+   1,
+   1,
+   "2026-09-30T14:09:48.896Z"
+  ],
+  [
+   "nggak enakan",
+   1,
+   1,
+   "2026-09-30T14:03:55.737Z"
+  ],
+  [
+   "kesiangan",
+   1,
+   1,
+   "2026-09-30T14:03:25.972Z"
+  ],
+  [
+   "nyempetin",
+   1,
+   1,
+   "2026-09-30T14:03:19.964Z"
+  ],
+  [
+   "sungkan",
+   1,
+   1,
+   "2026-09-30T14:00:55.827Z"
+  ],
+  [
+   "kepotong",
+   1,
+   1,
+   "2026-09-29T10:49:30.392Z"
+  ],
+  [
+   "kelepasan",
+   1,
+   1,
+   "2026-09-29T10:49:12.576Z"
+  ],
+  [
+   "nggak heran",
+   1,
+   1,
+   "2026-09-29T10:47:12.970Z"
+  ],
+  [
+   "ngabarin",
+   1,
+   1,
+   "2026-09-29T10:46:14.946Z"
+  ],
+  [
+   "kepake",
+   1,
+   1,
+   "2026-09-29T10:28:01.969Z"
+  ],
+  [
+   "ngerjain",
+   1,
+   1,
+   "2026-09-29T10:27:13.120Z"
+  ],
+  [
+   "ngurusin",
+   1,
+   1,
+   "2026-09-22T13:22:26.432Z"
+  ],
+  [
+   "ngeh",
+   1,
+   1,
+   "2026-09-22T08:18:40.758Z"
+  ],
+  [
+   "kepancing",
+   1,
+   1,
+   "2026-09-20T07:50:22.623Z"
+  ],
+  [
+   "nangkep",
+   1,
+   1,
+   "2026-09-18T15:08:18.035Z"
+  ],
+  [
+   "nggak kepegang",
+   1,
+   1,
+   "2026-09-11T15:09:12.617Z"
+  ],
+  [
+   "nyimak",
+   1,
+   1,
+   "2026-09-11T15:04:23.880Z"
+  ],
+  [
+   "aliran",
+   2,
+   0,
+   ""
+  ],
+  [
+   "atur",
+   2,
+   0,
+   ""
+  ],
+  [
+   "bangsa",
+   2,
+   0,
+   ""
+  ],
+  [
+   "bangunan",
+   2,
+   0,
+   ""
+  ],
+  [
+   "bawain",
+   2,
+   0,
+   ""
+  ],
+  [
+   "becek",
+   2,
+   0,
+   ""
+  ],
+  [
+   "bentuk",
+   2,
+   0,
+   ""
+  ],
+  [
+   "berantem",
+   2,
+   0,
+   ""
+  ],
+  [
+   "berat",
+   2,
+   0,
+   ""
+  ]
+ ],
+ "focus_pool": [
+  "menunjukkan",
+  "niat",
+  "mengeluh",
+  "seraya",
+  "menyalin",
+  "kabur",
+  "menegaskan",
+  "layak",
+  "nyinggung",
+  "ngotot",
+  "memanggil",
+  "melawan",
+  "bebas",
+  "sebel",
+  "jomblo",
+  "cerewet",
+  "pembangunan",
+  "baper",
+  "sekadar",
+  "keberatan",
+  "nyantai",
+  "nyaris",
+  "memisahkan",
+  "kesepakatan",
+  "berantakan",
+  "pokoknya",
+  "upaya",
+  "bakal",
+  "berarti",
+  "beliau"
+ ],
+ "history": [
+  {
+   "date": "2026-09-26",
+   "session": "am",
+   "review_vocab": [
+    "mendukung",
+    "mengatasi",
+    "ngerepotin",
+    "ngurus",
+    "layak"
+   ]
+  },
+  {
+   "date": "2026-09-26",
+   "session": "pm",
+   "review_core": [
+    "mendukung",
+    "menunjukkan",
+    "menegaskan",
+    "sepakat",
+    "keberatan"
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "session": "am",
+   "review_vocab": [
+    "niat",
+    "nyebelin",
+    "mengatasi",
+    "berkat",
+    "ngerepotin"
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "session": "pm",
+   "review_core": [
+    "mengatasi",
+    "ngurus",
+    "mengeluh",
+    "berkat",
+    "nyebelin"
+   ]
+  },
+  {
+   "date": "2026-09-28",
+   "session": "am",
+   "review_vocab": [
+    "menyalin",
+    "menegaskan",
+    "nyinggung",
+    "nangkep",
+    "kelabakan"
+   ]
+  },
+  {
+   "date": "2026-09-28",
+   "session": "pm",
+   "review_core": [
+    "mengeluh",
+    "seraya",
+    "ngotot",
+    "ngeh",
+    "layak"
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "session": "am",
+   "review_vocab": [
+    "kabur",
+    "memanggil",
+    "melawan",
+    "bebas",
+    "sebel"
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "session": "pm",
+   "review_core": [
+    "upaya",
+    "kepotong",
+    "ngabarin",
+    "keberatan",
+    "ngirit"
+   ]
+  },
+  {
+   "date": "2026-09-30",
+   "session": "am",
+   "review_vocab": [
+    "menunjukkan",
+    "cerewet",
+    "pembangunan",
+    "jomblo",
+    "berarti"
+   ]
+  },
+  {
+   "date": "2026-09-30",
+   "session": "pm",
+   "review_core": [
+    "menyalin",
+    "seraya",
+    "kabur",
+    "menegaskan"
+   ]
+  },
+  {
+   "date": "2026-10-01",
+   "session": "am",
+   "review_vocab": [
+    "niat",
+    "mengeluh",
+    "memanggil",
+    "melawan",
+    "bebas"
+   ]
+  },
+  {
+   "date": "2026-10-01",
+   "session": "pm",
+   "review_core": [
+    "nyinggung",
+    "keberatan",
+    "kelabakan",
+    "ngirit",
+    "menunjukkan"
+   ]
+  },
+  {
+   "date": "2026-10-02",
+   "session": "am",
+   "review_vocab": [
+    "niat",
+    "seraya",
+    "menyalin",
+    "kabur",
+    "baper"
+   ]
+  },
+  {
+   "date": "2026-10-02",
+   "session": "pm",
+   "review_core": [
+    "ngotot",
+    "sekadar",
+    "nyantai",
+    "pokoknya",
+    "memisahkan"
+   ]
+  },
+  {
+   "date": "2026-10-03",
+   "session": "am",
+   "review_vocab": [
+    "layak",
+    "nyaris",
+    "kesepakatan",
+    "salah tingkah",
+    "berantakan"
+   ]
+  }
+ ],
+ "same_day_am": {
+  "vocab": [
+   "terbuat",
+   "mewah",
+   "istimewa",
+   "menghasilkan",
+   "gelar",
+   "yaitu",
+   "seluruh",
+   "bentuk",
+   "demi",
+   "berat"
+  ],
+  "review_vocab": [
+   "layak",
+   "nyaris",
+   "kesepakatan",
+   "salah tingkah",
+   "berantakan"
+  ]
+ },
+ "published_selection": {
+  "review": [
+   "upaya",
+   "bakal",
+   "berarti",
+   "sebel",
+   "ngabarin"
+  ],
+  "application": [
+   "bentuk",
+   "layak"
+  ],
+  "new": [
+   "antre",
+   "berfungsi",
+   "tukar",
+   "kwitansi"
+  ]
+ }
+}

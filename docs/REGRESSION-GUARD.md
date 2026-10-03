@@ -285,3 +285,10 @@
 - regression guard 将以上内容作为硬检查；以后如果把当前静态19:00重新带回，会直接失败，而不是仅给warning
 
 原则：**当前显示直接来自正确源值；历史兼容只负责历史，不再用运行后DOM补丁修当前页面。**
+
+## 7. 复习轮换的可执行规则（2026-10-04 起对晚课生效）
+
+- 共享实现：`.github/scripts/review-rotation.js`；Validator 与 `rank-review-candidates.js` 使用同一份逻辑，规则配置在 `data/learning-pool-rules.json` 的 `review_rotation.recent_core / focus_quota / application_am_review`。
+- PM 重点复习：最近4天内已做过正式核心复习的词最多2个；focus_pool 词2–3个；当天AM.review_vocab 的老词不得占完整 application 词卡。真实新错（`last_wrong` 晚于该词最近一次核心复习且不晚于 `runtime.generated_at`）可解除限制；旧标签（quick_wrong、automation_fail）不算新错。
+- 合法替代不足时规则自动放行（不卡发布、不使用 mastered 或非 review_pool 的词）；原有相邻课冷却、连续PM冷却、7天≥3次限制保持不变。
+- 生成端：17:30 晚课必须先运行 `node .github/scripts/rank-review-candidates.js --date D` 再锁定词表。回归测试：`test-review-rotation.js`（由 `test-lesson-candidate.js` 调用），含 2026-10-03 真实案例 fixture。

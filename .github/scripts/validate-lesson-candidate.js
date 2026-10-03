@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const {checkPm}=require('./review-rotation');
 
 /** Only completed core-review exposures count; a PM application is not another core review. */
 function collectReviewHistory(index,targetDate,targetSession,load){
@@ -218,6 +219,10 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     const alternatives=[...reviewPool].filter(w=>!selected.includes(w)&&reviewCount(w)<3&&!blocked(w));
     if(frequent.length>1&&alternatives.length>=frequent.length-1)
      add('REVIEW_OVEREXPOSURE','At most one word with three or more core-review exposures in the last seven days when eligible alternatives exist: '+frequent.join(', '));
+    if(session==='pm'){ // executable recent-4-day / focus-mix / application rules (see review-rotation.js)
+     const groupWords=g=>ws(vocab.filter(v=>v?.source_group===g));
+     for(const e of checkPm({date,runtime,rotation,reviewHistory,review:groupWords('review'),application:groupWords('application'),newWords:groupWords('new'),amReview:[...amReviewWords]}))add(e.code,e.detail);
+    }
    }
   }
   return {ok:errors.length===0,errors,date,session,baselineWatermark:runtime.lesson_watermark,proposedFlag:date+"."+session+"=true"};
