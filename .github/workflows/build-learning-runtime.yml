@@ -170,7 +170,7 @@ jobs:
               continue
             fi
             incident_phase='prepare_commit'; incident_category='git_write'
-            git add index.html data/learning-runtime.json data/pending-vocab.json data/lesson-context.json data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json
+            git add index.html data/learning-runtime.json data/lesson-context.json data/pending-vocab.json data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json
             if git diff --cached --quiet; then
               echo 'Build already current; no empty commit.'
               exit 0
