@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-03",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 43
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-02T11:03:42.655Z",
-    "lesson_watermark": "2026-10-02 18:00",
-    "index_updated": "2026-10-02",
-    "runtime_hash": "4e7446fbffaa9cea60ffc5e24fd87f762ae12577ab9a35b433148583d7f796c7",
-    "index_hash": "b95b4b84a0d44458859195edb53ae55038b00c8fb573df02ec5f9e4881eeed67",
+    "runtime_generated_at": "2026-10-03T00:29:35.055Z",
+    "lesson_watermark": "2026-10-03 08:00",
+    "index_updated": "2026-10-03",
+    "runtime_hash": "f41c9b1124ff8136df07cb0a2d1d47e961b39111b7aea1d42b6027992634ee85",
+    "index_hash": "502aa84d355745d3ad41c902188c6ff241495d1ec5a718c0e28b6fd31e463d37",
     "rules_hash": "a4b65072036f29bb3b55fdd5c56c551f407d8aed1d9353382e5cb28bc32d575f"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "terbuat",
-        "用……制成的"
-      ],
-      [
-        "mewah",
-        "奢华"
-      ],
-      [
-        "istimewa",
-        "特别的，特殊的"
-      ],
-      [
-        "menghasilkan",
-        "生产"
-      ],
-      [
-        "gelar",
-        "头衔"
-      ],
-      [
-        "yaitu",
-        "即是"
-      ],
-      [
-        "seluruh",
-        "全部，整个"
-      ],
-      [
-        "bentuk",
-        "形式 / 形状"
-      ],
-      [
-        "demi",
-        "为了"
-      ],
-      [
-        "berat",
-        "沉重的"
-      ],
       [
         "kelompok",
         "群体 / 小组"
@@ -1660,6 +1620,16 @@
         "泥泞"
       ],
       [
+        "bentuk",
+        2,
+        0,
+        "",
+        "",
+        "形状；形式",
+        "bentuk",
+        "形状；形式"
+      ],
+      [
         "berantem",
         2,
         0,
@@ -1670,24 +1640,14 @@
         "打；争吵"
       ],
       [
-        "bercerai",
+        "berat",
         2,
         0,
         "",
         "",
-        "离婚；分开",
-        "cerai",
-        "分开；离婚"
-      ],
-      [
-        "bersinar",
-        2,
-        0,
-        "",
-        "",
-        "闪耀；发光",
-        "sinar",
-        "光线"
+        "重的；沉重的；吃力的",
+        "berat",
+        "重"
       ]
     ],
     "focus": [
@@ -2237,6 +2197,29 @@
         "mencetak",
         "jarak"
       ]
+    },
+    {
+      "date": "2026-10-03",
+      "session": "am",
+      "review_core": [
+        "layak",
+        "nyaris",
+        "kesepakatan",
+        "salah tingkah",
+        "berantakan"
+      ],
+      "new_words": [
+        "terbuat",
+        "mewah",
+        "istimewa",
+        "menghasilkan",
+        "gelar",
+        "yaitu",
+        "seluruh",
+        "bentuk",
+        "demi",
+        "berat"
+      ]
     }
   ],
   "previous_pm": {
@@ -2254,7 +2237,88 @@
       "memisahkan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-03",
+    "vocab": [
+      [
+        "terbuat",
+        "由……制成的",
+        "made (of)",
+        "buat",
+        "做；制作"
+      ],
+      [
+        "mewah",
+        "奢华的；豪华的",
+        "luxurious",
+        "mewah",
+        "奢华"
+      ],
+      [
+        "istimewa",
+        "特别的；特殊的；出众的",
+        "special; exceptional",
+        "istimewa",
+        "特别"
+      ],
+      [
+        "menghasilkan",
+        "产出；生产；带来（结果）",
+        "to produce; to generate",
+        "hasil",
+        "结果；成果；产量"
+      ],
+      [
+        "gelar",
+        "学位；头衔",
+        "(academic) degree; title",
+        "gelar",
+        "头衔；展开"
+      ],
+      [
+        "yaitu",
+        "即；就是；也就是",
+        "namely; that is",
+        "yaitu",
+        "即"
+      ],
+      [
+        "seluruh",
+        "全部的；整个的",
+        "whole; entire; all",
+        "seluruh",
+        "全部；整个"
+      ],
+      [
+        "bentuk",
+        "形状；形式",
+        "shape; form",
+        "bentuk",
+        "形状；形式"
+      ],
+      [
+        "demi",
+        "为了（甘愿付出）",
+        "for the sake of",
+        "demi",
+        "为了"
+      ],
+      [
+        "berat",
+        "重的；沉重的；吃力的",
+        "heavy; hard",
+        "berat",
+        "重"
+      ]
+    ],
+    "review_vocab": [
+      "layak",
+      "nyaris",
+      "kesepakatan",
+      "salah tingkah",
+      "berantakan"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

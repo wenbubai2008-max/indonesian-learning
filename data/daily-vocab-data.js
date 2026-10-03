@@ -3784,24 +3784,28 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00",
       "原始课程",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-09-18 18:00",
+    "last_seen": "2026-10-03 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-29",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-10-03"
     ],
     "example": "Aku nyaris terlambat karena jalan tadi ramai.",
     "example_cn": "因为刚才路上很拥挤，我差点迟到。",
     "lesson_occurrences": [
       "2026-08-29 19:00",
-      "2026-09-18 18:00"
+      "2026-09-18 18:00",
+      "2026-10-03 08:00"
     ]
   },
   {
@@ -6213,21 +6217,23 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-10-02 18:00",
+    "last_seen": "2026-10-03 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-04",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-03"
     ],
     "root_cn": "乱；散乱",
     "lesson_occurrences": [
       "2026-09-04 08:00",
-      "2026-10-02 18:00"
+      "2026-10-02 18:00",
+      "2026-10-03 08:00"
     ]
   },
   {
@@ -8852,9 +8858,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-24 18:00",
+    "last_seen": "2026-10-03 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -8862,12 +8868,14 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11",
-      "2026-09-24"
+      "2026-09-24",
+      "2026-10-03"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
       "2026-09-11 19:00",
-      "2026-09-24 18:00"
+      "2026-09-24 18:00",
+      "2026-10-03 08:00"
     ]
   },
   {
@@ -9255,9 +9263,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-28 18:00",
+    "last_seen": "2026-10-03 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -9268,7 +9276,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-17",
       "2026-09-25",
       "2026-09-26",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-03"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
@@ -9276,7 +9285,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-17 18:00",
       "2026-09-25 18:00",
       "2026-09-26 08:00",
-      "2026-09-28 18:00"
+      "2026-09-28 18:00",
+      "2026-10-03 08:00"
     ]
   },
   {
@@ -13510,17 +13520,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-10-03 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-25"
+      "2026-09-25",
+      "2026-10-03"
     ],
     "lesson_occurrences": [
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-10-03 08:00"
     ]
   },
   {
@@ -16524,6 +16536,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-02 18:00"
+    ]
+  },
+  {
+    "word": "terbuat",
+    "cn": "由……制成的",
+    "en": "made (of)",
+    "root": "buat",
+    "root_cn": "做；制作",
+    "example": "Tas ini terbuat dari kulit sapi asli, jadi cukup awet.",
+    "example_cn": "这个包是真牛皮做的，所以挺耐用。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 08:00"
+    ]
+  },
+  {
+    "word": "mewah",
+    "cn": "奢华的；豪华的",
+    "en": "luxurious",
+    "root": "mewah",
+    "root_cn": "奢华",
+    "example": "Hotelnya mewah sekali, tiap kamar punya kolam renang sendiri.",
+    "example_cn": "那家酒店非常豪华，每个房间都有自己的泳池。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 08:00"
+    ]
+  },
+  {
+    "word": "istimewa",
+    "cn": "特别的；特殊的；出众的",
+    "en": "special; exceptional",
+    "root": "istimewa",
+    "root_cn": "特别",
+    "example": "Ulang tahun ke-60 ibu adalah hari yang sangat istimewa untuk keluarga kami.",
+    "example_cn": "妈妈的六十岁生日对我们家来说是非常特别的一天。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 08:00"
+    ]
+  },
+  {
+    "word": "menghasilkan",
+    "cn": "产出；生产；带来（结果）",
+    "en": "to produce; to generate",
+    "root": "hasil",
+    "root_cn": "结果；成果；产量",
+    "example": "Pengrajin di desa itu menghasilkan sekitar dua ratus tas per bulan.",
+    "example_cn": "那个村子的手艺人每个月大约能做出两百个包。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 08:00"
+    ]
+  },
+  {
+    "word": "gelar",
+    "cn": "学位；头衔",
+    "en": "(academic) degree; title",
+    "root": "gelar",
+    "root_cn": "头衔；展开",
+    "example": "Kakak saya baru mendapat gelar sarjana teknik dari sebuah universitas di Bandung.",
+    "example_cn": "我哥哥刚从万隆的一所大学拿到工科学士学位。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 08:00"
+    ]
+  },
+  {
+    "word": "yaitu",
+    "cn": "即；就是；也就是",
+    "en": "namely; that is",
+    "root": "yaitu",
+    "root_cn": "即",
+    "example": "Saya cuma butuh dua hal, yaitu kopi dan tidur yang cukup.",
+    "example_cn": "我只需要两样东西，就是咖啡和充足的睡眠。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 08:00"
+    ]
+  },
+  {
+    "word": "seluruh",
+    "cn": "全部的；整个的",
+    "en": "whole; entire; all",
+    "root": "seluruh",
+    "root_cn": "全部；整个",
+    "example": "Seluruh keluarga datang ke wisuda adik saya.",
+    "example_cn": "全家人都来参加了我弟弟的毕业典礼。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 08:00"
+    ]
+  },
+  {
+    "word": "bentuk",
+    "cn": "形状；形式",
+    "en": "shape; form",
+    "root": "bentuk",
+    "root_cn": "形状；形式",
+    "example": "Bentuk tasnya sederhana, tapi warnanya bagus sekali.",
+    "example_cn": "这个包的款型很简单，但颜色非常好看。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 08:00"
+    ]
+  },
+  {
+    "word": "demi",
+    "cn": "为了（甘愿付出）",
+    "en": "for the sake of",
+    "root": "demi",
+    "root_cn": "为了",
+    "example": "Dia kerja lembur demi membayar kuliah adiknya.",
+    "example_cn": "他为了给弟弟付学费而加班。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 08:00"
+    ]
+  },
+  {
+    "word": "berat",
+    "cn": "重的；沉重的；吃力的",
+    "en": "heavy; hard",
+    "root": "berat",
+    "root_cn": "重",
+    "example": "Kopernya berat sekali, tolong bantu masukkan ke mobil.",
+    "example_cn": "行李箱很重，请帮忙放进车里。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-03"
+    ],
+    "lesson_occurrences": [
+      "2026-10-03 08:00"
     ]
   }
 ];
