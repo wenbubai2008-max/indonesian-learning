@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-03T13:10:43.767Z",
+  "updated_at": "2026-10-03T14:10:09.346Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -36,13 +36,13 @@
     "keberatan": {
       "word": "keberatan",
       "status": "active",
-      "updated_at": "2026-09-30T14:08:37.415Z",
+      "updated_at": "2026-10-03T14:09:45.537Z",
       "display": "keberatan",
       "cn": "有异议；介意",
       "root": "berat",
       "root_cn": "重；沉重",
       "last_wrong": "2026-09-30T14:08:37.388Z",
-      "last_review": "2026-09-30T14:08:37.388Z",
+      "last_review": "2026-10-03T14:09:45.506Z",
       "source": "每日学习阅读",
       "source_date": "2026-09-03",
       "session": "19:00",
@@ -51,7 +51,7 @@
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "panik": {
       "word": "panik",
@@ -6672,19 +6672,19 @@
     "pokoknya": {
       "word": "pokoknya",
       "status": "active",
-      "updated_at": "2026-09-30T14:05:46.003Z",
+      "updated_at": "2026-10-03T14:09:22.768Z",
       "display": "pokoknya",
       "cn": "总之；反正；不管怎样",
       "root": "pokok",
       "root_cn": "要点；主要部分",
       "last_wrong": "2026-09-30T14:05:45.976Z",
-      "last_review": "2026-09-30T14:05:45.976Z",
+      "last_review": "2026-10-03T14:09:22.739Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "penulis": {
       "word": "penulis",
@@ -14638,19 +14638,19 @@
     "kesepakatan": {
       "word": "kesepakatan",
       "status": "active",
-      "updated_at": "2026-09-30T14:12:20.448Z",
+      "updated_at": "2026-10-03T14:09:59.014Z",
       "display": "kesepakatan",
       "cn": "协议；共识",
       "root": "sepakat",
       "root_cn": "同意；达成一致",
       "last_wrong": "2026-09-30T14:12:20.417Z",
-      "last_review": "2026-09-30T14:12:20.417Z",
+      "last_review": "2026-10-03T14:09:58.985Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "risiko": {
       "word": "risiko",
@@ -19209,19 +19209,19 @@
     "berantakan": {
       "word": "berantakan",
       "status": "active",
-      "updated_at": "2026-09-30T14:06:45.403Z",
+      "updated_at": "2026-10-03T14:09:30.759Z",
       "display": "berantakan",
       "cn": "乱七八糟",
       "root": "berantak",
       "root_cn": "乱；散乱",
       "last_wrong": "2026-09-30T14:06:45.377Z",
-      "last_review": "2026-09-30T14:06:45.377Z",
+      "last_review": "2026-10-03T14:09:30.728Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "perbaiki": {
       "word": "perbaiki",
@@ -23829,18 +23829,18 @@
     "kelabakan": {
       "word": "kelabakan",
       "status": "active",
-      "updated_at": "2026-09-30T14:00:12.978Z",
+      "updated_at": "2026-10-03T14:08:00.091Z",
       "display": "kelabakan",
       "cn": "忙乱；手忙脚乱",
       "root": "kelabakan",
       "root_cn": "手忙脚乱；慌着应付",
       "last_wrong": "2026-09-30T14:00:12.941Z",
-      "last_review": "2026-09-30T14:00:12.941Z",
+      "last_review": "2026-10-03T14:08:00.062Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "berusaha": {
       "word": "berusaha",
@@ -28359,18 +28359,18 @@
     "ngirit": {
       "word": "ngirit",
       "status": "active",
-      "updated_at": "2026-09-30T13:59:09.512Z",
+      "updated_at": "2026-10-03T14:07:49.260Z",
       "display": "ngirit",
       "cn": "省着花；节省开支（口语）",
       "root": "irit",
       "root_cn": "节省；省着用",
       "last_wrong": "2026-09-30T13:59:09.485Z",
-      "last_review": "2026-09-30T13:59:09.485Z",
+      "last_review": "2026-10-03T14:07:49.215Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "ngabarin": {
       "word": "ngabarin",
@@ -28711,82 +28711,82 @@
     "sungkan": {
       "word": "sungkan",
       "status": "active",
-      "updated_at": "2026-09-30T14:00:55.854Z",
+      "updated_at": "2026-10-03T14:08:43.133Z",
       "display": "sungkan",
       "cn": "因为礼貌或尊重而不好意思开口",
       "root": "sungkan",
       "root_cn": "客气拘谨；不好意思开口",
       "last_wrong": "2026-09-30T14:00:55.827Z",
-      "last_review": "2026-09-30T14:00:55.827Z",
+      "last_review": "2026-10-03T14:08:43.096Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nyempetin": {
       "word": "nyempetin",
       "status": "active",
-      "updated_at": "2026-09-30T14:03:19.991Z",
+      "updated_at": "2026-10-03T14:08:54.116Z",
       "display": "nyempetin",
       "cn": "特意挤出时间做某事（口语）",
       "root": "sempat",
       "root_cn": "有空；来得及",
       "last_wrong": "2026-09-30T14:03:19.964Z",
-      "last_review": "2026-09-30T14:03:19.964Z",
+      "last_review": "2026-10-03T14:08:54.087Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kesiangan": {
       "word": "kesiangan",
       "status": "active",
-      "updated_at": "2026-09-30T14:03:25.998Z",
+      "updated_at": "2026-10-03T14:09:04.342Z",
       "display": "kesiangan",
       "cn": "起晚了；早上的事情拖到太晚（口语）",
       "root": "siang",
       "root_cn": "白天；中午",
       "last_wrong": "2026-09-30T14:03:25.972Z",
-      "last_review": "2026-09-30T14:03:25.972Z",
+      "last_review": "2026-10-03T14:09:04.306Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nggak enakan": {
       "word": "nggak enakan",
       "status": "active",
-      "updated_at": "2026-09-30T14:03:55.764Z",
+      "updated_at": "2026-10-03T14:09:18.975Z",
       "display": "nggak enakan",
       "cn": "太顾及别人；不好意思拒绝",
       "root": "enak",
       "root_cn": "舒服；好",
       "last_wrong": "2026-09-30T14:03:55.737Z",
-      "last_review": "2026-09-30T14:03:55.737Z",
+      "last_review": "2026-10-03T14:09:18.946Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kelewat": {
       "word": "kelewat",
       "status": "active",
-      "updated_at": "2026-09-30T14:09:48.923Z",
+      "updated_at": "2026-10-03T14:09:49.682Z",
       "display": "kelewat",
       "cn": "错过；漏掉；超过（口语）",
       "root": "lewat",
       "root_cn": "经过；超过",
       "last_wrong": "2026-09-30T14:09:48.896Z",
-      "last_review": "2026-09-30T14:09:48.896Z",
+      "last_review": "2026-10-03T14:09:49.650Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kemasan": {
       "word": "kemasan",
