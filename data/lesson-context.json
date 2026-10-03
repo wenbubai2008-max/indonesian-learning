@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-03T02:30:32.455Z",
+    "runtime_generated_at": "2026-10-03T02:33:29.346Z",
     "lesson_watermark": "2026-10-03 08:00",
     "index_updated": "2026-10-03",
-    "runtime_hash": "f3104c834133714c817692b9ea8979cc478dea20d3a50ccd8f00437ec1e5cd03",
+    "runtime_hash": "da75e5e2aec95af2c804291f75b252c02bb04e2822ae944e43e0d9d312eddf32",
     "index_hash": "502aa84d355745d3ad41c902188c6ff241495d1ec5a718c0e28b6fd31e463d37",
     "rules_hash": "a4b65072036f29bb3b55fdd5c56c551f407d8aed1d9353382e5cb28bc32d575f"
   },
@@ -76,10 +76,6 @@
       [
         "parah",
         "“严重、离谱”"
-      ],
-      [
-        "bau",
-        "臭的"
       ],
       [
         "kekuatan",
@@ -712,14 +708,6 @@
         "身体，机构"
       ],
       [
-        "milik",
-        "属于"
-      ],
-      [
-        "terkenal",
-        "著名的"
-      ],
-      [
         "rabu",
         "星期三"
       ],
@@ -748,10 +736,6 @@
         "沿着"
       ],
       [
-        "memasak",
-        "烹饪"
-      ],
-      [
         "tradisional",
         "传统的"
       ],
@@ -766,10 +750,6 @@
       [
         "titik",
         "点、滴"
-      ],
-      [
-        "umumnya",
-        "一般来说"
       ],
       [
         "fakta",
@@ -1040,8 +1020,20 @@
         "减少"
       ],
       [
+        "ubah",
+        "改变；修改"
+      ],
+      [
         "buat",
         "做；制作；为了"
+      ],
+      [
+        "arti",
+        "意思；含义"
+      ],
+      [
+        "kalimat",
+        "句子"
       ],
       [
         "antre",
