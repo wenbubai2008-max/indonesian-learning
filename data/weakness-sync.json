@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-02T06:38:42.369Z",
+  "updated_at": "2026-10-03T02:14:37.144Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1447,8 +1447,11 @@
     "berat": {
       "word": "berat",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-03T02:14:26.347Z",
       "display": "berat",
+      "cn": "重的；沉重的；吃力的",
+      "root": "berat",
+      "root_cn": "重",
       "reasons": [
         "memory_dont"
       ],
@@ -8198,8 +8201,9 @@
     "lumayan": {
       "word": "lumayan",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:50.151Z",
+      "updated_at": "2026-10-03T02:14:16.294Z",
       "display": "lumayan",
+      "cn": "还不错；挺……",
       "last_review": "2026-09-12T14:13:50.145Z",
       "last_mastered": "2026-09-12T14:13:50.145Z",
       "reasons": [],
@@ -14682,8 +14686,9 @@
     "hadiah": {
       "word": "hadiah",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:47:51.373Z",
+      "updated_at": "2026-10-03T02:12:35.245Z",
       "display": "hadiah",
+      "cn": "展示",
       "last_review": "2026-09-12T14:47:51.362Z",
       "last_mastered": "2026-09-12T14:47:51.362Z",
       "reasons": [],
