@@ -171,6 +171,9 @@ test('V4 switch is only on for LESSON_V4_FALLBACK=1 and stays off in every produ
  const uses=wf.split('\n').filter(x=>/LESSON_V4_FALLBACK=1 node /.test(x));
  assert.equal(uses.length,2,'only the two isolated CI rehearsals may enable V4');
  assert(!/LESSON_V4_FALLBACK/.test(fs.readFileSync(path.join(base,'.github/workflows/build-learning-runtime.yml'),'utf8')));
+ // The strict guard run on the proposed tree must NOT carry the baseline-only skip flag.
+ assert.equal((wf.match(/GUARD_BASELINE_TREE=1/g)||[]).length,1,'only the pinned-baseline guard run may skip workflow-shape checks');
+ assert(wf.includes('          node .github/scripts/regression-guard.js\n'),'proposed-tree guard run is strict');
 });
 test('a valid saved original is still resumable while V4 is disabled',()=>{
  delete process.env.LESSON_V4_FALLBACK;

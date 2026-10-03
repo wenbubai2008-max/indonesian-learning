@@ -246,7 +246,8 @@ jobs:
           # Apply the proposed guard logic to pinned baseline data. The old main guard
           # still checks the obsolete cron and must not veto its own repair PR.
           cp .github/scripts/regression-guard.js "$baseline_guard_dir/.github/scripts/regression-guard.js"
-          (cd "$baseline_guard_dir" && node .github/scripts/regression-guard.js)
+          # Baseline tree predates the V4 pause: skip only the workflow-shape assertions there.
+          (cd "$baseline_guard_dir" && GUARD_BASELINE_TREE=1 node .github/scripts/regression-guard.js)
           git worktree remove --force "$baseline_guard_dir"
       - name: Rehearse actual V2 lesson and index write outside the repository
         shell: bash
