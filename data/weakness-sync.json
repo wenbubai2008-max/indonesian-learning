@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-03T02:30:06.042Z",
+  "updated_at": "2026-10-03T02:33:08.509Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1525,14 +1525,14 @@
     },
     "milik": {
       "word": "milik",
-      "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "status": "mastered",
+      "updated_at": "2026-10-03T02:30:20.014Z",
       "display": "milik",
-      "reasons": [
-        "memory_fuzzy"
-      ],
+      "last_review": "2026-10-03T02:30:19.972Z",
+      "last_mastered": "2026-10-03T02:30:19.972Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "calon": {
       "word": "calon",
@@ -1591,14 +1591,14 @@
     },
     "terkenal": {
       "word": "terkenal",
-      "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "status": "mastered",
+      "updated_at": "2026-10-03T02:30:22.816Z",
       "display": "terkenal",
-      "reasons": [
-        "memory_fuzzy"
-      ],
+      "last_review": "2026-10-03T02:30:22.783Z",
+      "last_mastered": "2026-10-03T02:30:22.783Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "meskipun": {
       "word": "meskipun",
@@ -2328,14 +2328,14 @@
     },
     "memasak": {
       "word": "memasak",
-      "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "status": "mastered",
+      "updated_at": "2026-10-03T02:31:31.210Z",
       "display": "memasak",
-      "reasons": [
-        "memory_fuzzy"
-      ],
+      "last_review": "2026-10-03T02:31:31.170Z",
+      "last_mastered": "2026-10-03T02:31:31.170Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "kecuali": {
       "word": "kecuali",
@@ -2488,25 +2488,25 @@
     },
     "umumnya": {
       "word": "umumnya",
-      "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "status": "mastered",
+      "updated_at": "2026-10-03T02:31:51.398Z",
       "display": "umumnya",
-      "reasons": [
-        "memory_fuzzy"
-      ],
+      "last_review": "2026-10-03T02:31:51.360Z",
+      "last_mastered": "2026-10-03T02:31:51.360Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "bau": {
       "word": "bau",
-      "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "status": "mastered",
+      "updated_at": "2026-10-03T02:32:05.181Z",
       "display": "bau",
-      "reasons": [
-        "memory_dont"
-      ],
+      "last_review": "2026-10-03T02:32:05.147Z",
+      "last_mastered": "2026-10-03T02:32:05.147Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "langit": {
       "word": "langit",
