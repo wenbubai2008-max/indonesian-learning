@@ -44,5 +44,16 @@ Always preserve phase, ref/path, pinned main SHA, candidate/hash if available, r
 
 Status examples: CONTEXT_STALE, FAILED_UNSTAGED_DRAFT, RELEASE_PARTIAL, PREFLIGHT_BLOCKED, RELEASE_PENDING_MERGE, PUBLISHED_PENDING_SYNC, SYNC_FAILED, PAGES_FAILED, VERIFIED_COMPLETE. Leave both daily automation tasks enabled on any failure.
 
+## V4 backup generation is paused (2026-10-03, user instruction)
+
+Claude is the only automatic lesson generator (AM generation starts 07:30, PM 17:30). All automatic V4 entry points are off, while the V4 source stays in the repository and every official-lesson path is unchanged:
+
+- `create:` branch-watcher trigger disabled and its job hard-disabled (`if: ${{ false }}`).
+- A failed lesson-release PR dispatches Sync only if the lesson is already published; otherwise it logs `LESSON_RECOVERY_V4_DISABLED` and dispatches nothing. The original lesson, branch, PR and error evidence stay untouched and the run is reported as failed.
+- `recover-missing-lesson.js` returns `v4_disabled` and builds no context unless `LESSON_V4_FALLBACK=1`. No production step sets that variable; only the two isolated PR-preflight rehearsals do, to keep the dormant source tested.
+- The two crons (08:30/18:05) still run the health check and Sync, and may resume the SAME saved original draft. They never generate a second lesson; a missing lesson is reported as a failed health check.
+
+Re-enable only on the user's explicit instruction (restore `create:`, the watcher condition and failed-PR dispatch, and update `regression-guard.js` in the same change).
+
 ## Migration boundary
 The historical `lesson-staging-v1`, `check-staged-drafts.js`, `publish-staged-lesson.js` and `github-publish-adapter.js` document the 2026-09-27/29 incidents but are no longer on the active automated ChatGPT lesson path. Their existence is not an instruction to stage twice. Do not remove historical lesson files, disable tasks, or weaken the old validator. Test the new path on an isolated code PR and with synthetic interruption/duplicate/conflict cases before switching the two task prompts. Real subsequent AM and PM releases are the final operational acceptance.
