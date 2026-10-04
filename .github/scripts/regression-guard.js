@@ -527,7 +527,7 @@ try {
     }
   }
   ok(rootPage.includes("fetch('roots.json'") && rootPage.includes('id="cards"') && rootPage.includes('id="detail"'), 'root family library loads independent expandable JSON');
-  ok(indexHtml.includes('data/daily-width-fix.css?v=20261004-roots-five') && indexHtml.includes('data/home-modules-layout.js?v=20261004-roots-five'),'homepage css and module JS cache keys are updated');
+  ok(indexHtml.includes('data/daily-width-fix.css?v=20261004-roots-five') && indexHtml.includes('data/home-modules-layout.js?v=20261004-indo-voice1'),'homepage css and module JS cache keys are updated');
   ok(!/<div class="modules"[^>]*>\s*<button/s.test(indexHtml), 'index does not hard-code homepage cards');
   if(fs.existsSync(rel('data/home-modules-stability.js'))){
     const stability = read('data/home-modules-stability.js');
