@@ -31,26 +31,34 @@
           "word": "pelajar",
           "cn": "学生",
           "formation": "pe-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pelajar baru",
+          "mini_example_cn": "新学生"
         },
         {
           "word": "pelajaran",
           "cn": "课程；功课",
           "formation": "pe-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pelajaran bahasa",
+          "mini_example_cn": "语言课"
         },
         {
           "word": "pengajar",
           "cn": "教师；讲师",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pengajar bahasa",
+          "mini_example_cn": "语言教师"
         },
         {
           "word": "mempelajari",
           "cn": "深入学习；研究（某事）",
           "formation": "ajar → pelajar → mempelajari（辅助记忆）",
           "register": "通用",
-          "usage_note": "比 belajar 更强调认真、深入地学习或研究特定内容。"
+          "usage_note": "比 belajar 更强调认真、深入地学习或研究特定内容。",
+          "mini_example": "mempelajari aturan",
+          "mini_example_cn": "深入学习规则"
         }
       ],
       "recommended": [
@@ -132,19 +140,25 @@
           "word": "buatan",
           "cn": "制品；…制造的",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "buatan Indonesia",
+          "mini_example_cn": "印尼制造的"
         },
         {
           "word": "pembuat",
           "cn": "制造者",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pembuat kue",
+          "mini_example_cn": "做糕点的人"
         },
         {
           "word": "pembuatan",
           "cn": "制作（过程）",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pembuatan video",
+          "mini_example_cn": "视频制作"
         },
         {
           "word": "terbuat",
@@ -188,19 +202,25 @@
           "word": "berada",
           "cn": "位于；处在",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "berada di rumah",
+          "mini_example_cn": "在家里"
         },
         {
           "word": "adanya",
           "cn": "存在；有",
           "formation": "-nya",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "adanya masalah",
+          "mini_example_cn": "存在问题"
         },
         {
           "word": "diadakan",
           "cn": "被举办",
           "formation": "di-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "diadakan besok",
+          "mini_example_cn": "明天举行"
         }
       ],
       "recommended": [
@@ -236,19 +256,25 @@
           "word": "pendapatan",
           "cn": "收入",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pendapatan bulanan",
+          "mini_example_cn": "月收入"
         },
         {
           "word": "terdapat",
           "cn": "存在；有（书面）",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "terdapat tiga pilihan",
+          "mini_example_cn": "有三个选项（书面）"
         },
         {
           "word": "sedapat mungkin",
           "cn": "尽可能",
           "formation": "se-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sedapat mungkin tepat waktu",
+          "mini_example_cn": "尽可能准时"
         }
       ],
       "recommended": [
@@ -284,19 +310,25 @@
           "word": "katanya",
           "cn": "据说；听说",
           "formation": "-nya",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "katanya dia sibuk",
+          "mini_example_cn": "听说他很忙"
         },
         {
           "word": "perkataan",
           "cn": "言语；说的话",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "perkataan kasar",
+          "mini_example_cn": "粗鲁的话"
         },
         {
           "word": "kata-kata",
           "cn": "话语",
           "formation": "重叠",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kata-kata bijak",
+          "mini_example_cn": "有智慧的话"
         }
       ],
       "recommended": [
@@ -332,25 +364,33 @@
           "word": "ketahuan",
           "cn": "被发现；露馅",
           "formation": "ke-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "ketahuan bohong",
+          "mini_example_cn": "撒谎露馅"
         },
         {
           "word": "diketahui",
           "cn": "众所周知；被知道",
           "formation": "di-i",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sudah diketahui umum",
+          "mini_example_cn": "已广为人知"
         },
         {
           "word": "setahu",
           "cn": "据…所知",
           "formation": "se-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "setahu saya",
+          "mini_example_cn": "据我所知"
         },
         {
           "word": "tahu-tahu",
           "cn": "突然间；没想到",
           "formation": "重叠",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "tahu-tahu hujan",
+          "mini_example_cn": "突然下雨了"
         }
       ],
       "recommended": [
@@ -618,19 +658,25 @@
           "word": "kebaikan",
           "cn": "善意；好处",
           "formation": "ke-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kebaikan hatinya",
+          "mini_example_cn": "他的善良"
         },
         {
           "word": "sebaiknya",
           "cn": "最好（建议）",
           "formation": "se-nya",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sebaiknya berangkat sekarang",
+          "mini_example_cn": "最好现在出发"
         },
         {
           "word": "terbaik",
           "cn": "最好的",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pilihan terbaik",
+          "mini_example_cn": "最好的选择"
         }
       ],
       "recommended": [
@@ -666,13 +712,17 @@
           "word": "kebenaran",
           "cn": "真相；正确性",
           "formation": "ke-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mencari kebenaran",
+          "mini_example_cn": "寻找真相"
         },
         {
           "word": "benar-benar",
           "cn": "真的；确实",
           "formation": "重叠",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "benar-benar capek",
+          "mini_example_cn": "真的很累"
         }
       ],
       "recommended": [
@@ -708,13 +758,17 @@
           "word": "bersalah",
           "cn": "有错；有罪",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "merasa bersalah",
+          "mini_example_cn": "感到内疚"
         },
         {
           "word": "salah paham",
           "cn": "误会",
           "formation": "词组",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "salah paham soal jadwal",
+          "mini_example_cn": "误会了日程安排"
         }
       ],
       "recommended": [
@@ -750,13 +804,17 @@
           "word": "menyamakan",
           "cn": "使一致；等同看待",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menyamakan dua hal",
+          "mini_example_cn": "把两件事等同看待"
         },
         {
           "word": "sama-sama",
           "cn": "不客气；一起",
           "formation": "重叠",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sama-sama belajar",
+          "mini_example_cn": "一起学习"
         }
       ],
       "recommended": [
@@ -792,13 +850,17 @@
           "word": "membedakan",
           "cn": "区分",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "membedakan warna",
+          "mini_example_cn": "区分颜色"
         },
         {
           "word": "bedanya",
           "cn": "区别在于",
           "formation": "-nya",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "apa bedanya?",
+          "mini_example_cn": "有什么区别？"
         }
       ],
       "recommended": [
@@ -834,19 +896,25 @@
           "word": "pengguna",
           "cn": "用户",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pengguna baru",
+          "mini_example_cn": "新用户"
         },
         {
           "word": "penggunaan",
           "cn": "使用；用法",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "penggunaan listrik",
+          "mini_example_cn": "用电量"
         },
         {
           "word": "kegunaan",
           "cn": "用途",
           "formation": "ke-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kegunaan alat ini",
+          "mini_example_cn": "这件工具的用途"
         }
       ],
       "recommended": [
@@ -936,13 +1004,17 @@
           "word": "penghasilan",
           "cn": "收入",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "penghasilan tambahan",
+          "mini_example_cn": "额外收入"
         },
         {
           "word": "hasilnya",
           "cn": "结果是",
           "formation": "-nya",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "hasilnya bagus",
+          "mini_example_cn": "结果很好"
         }
       ],
       "recommended": [
@@ -978,13 +1050,17 @@
           "word": "perubahan",
           "cn": "变化",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "perubahan besar",
+          "mini_example_cn": "重大变化"
         },
         {
           "word": "diubah",
           "cn": "被修改",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "jadwal diubah",
+          "mini_example_cn": "日程被修改"
         }
       ],
       "recommended": [
@@ -1020,13 +1096,17 @@
           "word": "pertanyaan",
           "cn": "问题",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "ada pertanyaan?",
+          "mini_example_cn": "有问题吗？"
         },
         {
           "word": "ditanya",
           "cn": "被问",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sering ditanya",
+          "mini_example_cn": "经常被问到"
         }
       ],
       "recommended": [
@@ -1062,13 +1142,17 @@
           "word": "tanggung jawab",
           "cn": "责任",
           "formation": "词组",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "tanggung jawab saya",
+          "mini_example_cn": "我的责任"
         },
         {
           "word": "bertanggung jawab",
           "cn": "负责",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "bertanggung jawab penuh",
+          "mini_example_cn": "负全部责任"
         }
       ],
       "recommended": [
@@ -1204,13 +1288,17 @@
           "word": "pembicaraan",
           "cn": "谈话；会谈",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pembicaraan serius",
+          "mini_example_cn": "严肃的谈话"
         },
         {
           "word": "pembicara",
           "cn": "发言人；讲者",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pembicara utama",
+          "mini_example_cn": "主讲人"
         }
       ],
       "recommended": [
@@ -1246,7 +1334,9 @@
           "word": "diceritakan",
           "cn": "被讲述",
           "formation": "di-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "cerita itu diceritakan lagi",
+          "mini_example_cn": "那个故事又被讲了一遍"
         }
       ],
       "recommended": [
@@ -1336,13 +1426,17 @@
           "word": "terlupakan",
           "cn": "被遗忘",
           "formation": "ter- + lupa + -kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "hampir terlupakan",
+          "mini_example_cn": "差点被遗忘"
         },
         {
           "word": "pelupa",
           "cn": "健忘的人",
           "formation": "pe-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "orang pelupa",
+          "mini_example_cn": "健忘的人"
         }
       ],
       "recommended": [
@@ -1378,13 +1472,17 @@
           "word": "cobaan",
           "cn": "考验；磨难",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "cobaan hidup",
+          "mini_example_cn": "生活的考验"
         },
         {
           "word": "dicoba",
           "cn": "被试",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "dicoba dulu",
+          "mini_example_cn": "先试试看"
         }
       ],
       "recommended": [
@@ -1420,7 +1518,9 @@
           "word": "permulaan",
           "cn": "开端",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "dari permulaan",
+          "mini_example_cn": "从开头开始"
         }
       ],
       "recommended": [
@@ -1456,7 +1556,9 @@
           "word": "diselesaikan",
           "cn": "被完成；被解决",
           "formation": "di-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sudah diselesaikan",
+          "mini_example_cn": "已经解决了"
         }
       ],
       "recommended": [
@@ -1546,19 +1648,25 @@
           "word": "mendatangi",
           "cn": "前往；登门",
           "formation": "meN-i",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mendatangi kantor",
+          "mini_example_cn": "前往办公室"
         },
         {
           "word": "mendatangkan",
           "cn": "带来；引进",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mendatangkan keuntungan",
+          "mini_example_cn": "带来利润"
         },
         {
           "word": "pendatang",
           "cn": "外来者",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pendatang baru",
+          "mini_example_cn": "新来的人"
         }
       ],
       "recommended": [
@@ -1594,19 +1702,25 @@
           "word": "pemasukan",
           "cn": "收入；进账",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pemasukan tambahan",
+          "mini_example_cn": "额外进账"
         },
         {
           "word": "masukan",
           "cn": "意见；建议",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "terima kasih atas masukannya",
+          "mini_example_cn": "感谢你的建议"
         },
         {
           "word": "termasuk",
           "cn": "包括",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "termasuk ongkir",
+          "mini_example_cn": "包括运费"
         }
       ],
       "recommended": [
@@ -1642,7 +1756,9 @@
           "word": "dikeluarkan",
           "cn": "被拿出；被开除",
           "formation": "di-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "dikeluarkan dari sekolah",
+          "mini_example_cn": "被学校开除"
         }
       ],
       "recommended": [
@@ -1678,25 +1794,33 @@
           "word": "perjalanan",
           "cn": "旅程；路程",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "perjalanan jauh",
+          "mini_example_cn": "长途旅程"
         },
         {
           "word": "menjalankan",
           "cn": "运行；执行",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menjalankan bisnis",
+          "mini_example_cn": "经营生意"
         },
         {
           "word": "pejalan kaki",
           "cn": "行人",
           "formation": "pe- + jalan（固定词组）",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "jalur pejalan kaki",
+          "mini_example_cn": "行人通道"
         },
         {
           "word": "sejalan",
           "cn": "一致",
           "formation": "se-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sejalan dengan rencana",
+          "mini_example_cn": "与计划一致"
         }
       ],
       "recommended": [
@@ -1724,7 +1848,9 @@
           "word": "meninggalkan",
           "cn": "离开；留下",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "meninggalkan rumah",
+          "mini_example_cn": "离开家"
         },
         {
           "word": "ketinggalan",
@@ -1738,13 +1864,17 @@
           "word": "tertinggal",
           "cn": "落下；落后",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "tertinggal di mobil",
+          "mini_example_cn": "落在车里"
         },
         {
           "word": "tempat tinggal",
           "cn": "住处",
           "formation": "词组",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "tempat tinggal baru",
+          "mini_example_cn": "新住所"
         }
       ],
       "recommended": [
@@ -1780,13 +1910,17 @@
           "word": "perpindahan",
           "cn": "迁移；转移",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "perpindahan karyawan",
+          "mini_example_cn": "员工调动"
         },
         {
           "word": "dipindahkan",
           "cn": "被调走；被移动",
           "formation": "di-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "dipindahkan ke cabang lain",
+          "mini_example_cn": "被调往另一家分公司"
         }
       ],
       "recommended": [
@@ -1822,13 +1956,17 @@
           "word": "pulang-pergi",
           "cn": "往返",
           "formation": "复合词",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pulang-pergi Jakarta–Bandung",
+          "mini_example_cn": "雅加达和万隆往返"
         },
         {
           "word": "memulangkan",
           "cn": "送回；遣返",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "memulangkan karyawan",
+          "mini_example_cn": "送员工回去"
         }
       ],
       "recommended": [
@@ -1864,13 +2002,17 @@
           "word": "pengembalian",
           "cn": "退还；退款",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pengembalian dana",
+          "mini_example_cn": "退款"
         },
         {
           "word": "sekembali",
           "cn": "回来后",
           "formation": "se-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sekembali dari liburan",
+          "mini_example_cn": "假期回来后"
         }
       ],
       "recommended": [
@@ -1906,25 +2048,33 @@
           "word": "memperkenalkan",
           "cn": "介绍",
           "formation": "memper-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "memperkenalkan teman",
+          "mini_example_cn": "介绍朋友"
         },
         {
           "word": "perkenalan",
           "cn": "结识；介绍",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "acara perkenalan",
+          "mini_example_cn": "见面介绍活动"
         },
         {
           "word": "terkenal",
           "cn": "有名的",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "orang terkenal",
+          "mini_example_cn": "名人"
         },
         {
           "word": "kenalan",
           "cn": "熟人",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kenalan lama",
+          "mini_example_cn": "老熟人"
         }
       ],
       "recommended": [
@@ -1960,19 +2110,25 @@
           "word": "petunjuk",
           "cn": "指示；说明",
           "formation": "pe-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "petunjuk arah",
+          "mini_example_cn": "方向指示"
         },
         {
           "word": "pertunjukan",
           "cn": "演出",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pertunjukan musik",
+          "mini_example_cn": "音乐演出"
         },
         {
           "word": "ditunjuk",
           "cn": "被任命",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "ditunjuk sebagai ketua",
+          "mini_example_cn": "被任命为负责人"
         }
       ],
       "recommended": [
@@ -2008,19 +2164,25 @@
           "word": "pemilihan",
           "cn": "选举；挑选",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pemilihan umum",
+          "mini_example_cn": "大选"
         },
         {
           "word": "pemilih",
           "cn": "选民",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pemilih muda",
+          "mini_example_cn": "年轻选民"
         },
         {
           "word": "terpilih",
           "cn": "当选；被选中",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "calon terpilih",
+          "mini_example_cn": "当选者"
         }
       ],
       "recommended": [
@@ -2056,13 +2218,17 @@
           "word": "terputus",
           "cn": "中断",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sambungan terputus",
+          "mini_example_cn": "连接中断"
         },
         {
           "word": "diputuskan",
           "cn": "被决定",
           "formation": "di-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sudah diputuskan",
+          "mini_example_cn": "已经决定了"
         }
       ],
       "recommended": [
@@ -2090,13 +2256,17 @@
           "word": "menyiapkan",
           "cn": "准备（某物）",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menyiapkan sarapan",
+          "mini_example_cn": "准备早餐"
         },
         {
           "word": "persiapan",
           "cn": "准备工作",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "persiapan ujian",
+          "mini_example_cn": "备考"
         },
         {
           "word": "siap-siap",
@@ -2110,7 +2280,9 @@
           "word": "kesiapan",
           "cn": "准备程度",
           "formation": "ke-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kesiapan tim",
+          "mini_example_cn": "团队的准备程度"
         }
       ],
       "recommended": [
@@ -2262,13 +2434,17 @@
           "word": "berjaga",
           "cn": "值守",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "berjaga malam",
+          "mini_example_cn": "夜间值守"
         },
         {
           "word": "terjaga",
           "cn": "被保持；醒着",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "masih terjaga",
+          "mini_example_cn": "还醒着"
         }
       ],
       "recommended": [
@@ -2296,19 +2472,25 @@
           "word": "berikut",
           "cn": "以下；如下",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "berikut ini",
+          "mini_example_cn": "如下"
         },
         {
           "word": "berikutnya",
           "cn": "下一个",
           "formation": "ber- + -nya（berikut → berikutnya）",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "hari berikutnya",
+          "mini_example_cn": "第二天"
         },
         {
           "word": "pengikut",
           "cn": "追随者；粉丝",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pengikut baru",
+          "mini_example_cn": "新粉丝"
         },
         {
           "word": "ikut-ikutan",
@@ -2352,13 +2534,17 @@
           "word": "penolong",
           "cn": "救助者",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "seorang penolong",
+          "mini_example_cn": "一位救助者"
         },
         {
           "word": "tertolong",
           "cn": "得救",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "masih tertolong",
+          "mini_example_cn": "还有救"
         }
       ],
       "recommended": [
@@ -2394,13 +2580,17 @@
           "word": "pembantu",
           "cn": "帮佣；助手",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pembantu rumah tangga",
+          "mini_example_cn": "家政工"
         },
         {
           "word": "terbantu",
           "cn": "得到帮助",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sangat terbantu",
+          "mini_example_cn": "帮了大忙"
         }
       ],
       "recommended": [
@@ -2436,13 +2626,17 @@
           "word": "diminta",
           "cn": "被要求",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "diminta datang",
+          "mini_example_cn": "被要求到场"
         },
         {
           "word": "minta maaf",
           "cn": "道歉",
           "formation": "词组",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "minta maaf dulu",
+          "mini_example_cn": "先道歉"
         }
       ],
       "recommended": [
@@ -2478,13 +2672,17 @@
           "word": "pemberian",
           "cn": "赠予；礼物",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pemberian kecil",
+          "mini_example_cn": "小礼物"
         },
         {
           "word": "diberi",
           "cn": "被给予",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "diberi kesempatan",
+          "mini_example_cn": "得到机会"
         }
       ],
       "recommended": [
@@ -2520,19 +2718,25 @@
           "word": "penerima",
           "cn": "接收人",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "penerima paket",
+          "mini_example_cn": "包裹收件人"
         },
         {
           "word": "penerimaan",
           "cn": "接收；录取",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "penerimaan mahasiswa baru",
+          "mini_example_cn": "录取新生"
         },
         {
           "word": "terima kasih",
           "cn": "谢谢",
           "formation": "词组",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "terima kasih banyak",
+          "mini_example_cn": "非常感谢"
         }
       ],
       "recommended": [
@@ -2568,19 +2772,25 @@
           "word": "kiriman",
           "cn": "寄来的东西；包裹",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kiriman dari rumah",
+          "mini_example_cn": "家里寄来的东西"
         },
         {
           "word": "pengirim",
           "cn": "寄件人",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "alamat pengirim",
+          "mini_example_cn": "寄件人地址"
         },
         {
           "word": "pengiriman",
           "cn": "发货；寄送",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "biaya pengiriman",
+          "mini_example_cn": "运费"
         }
       ],
       "recommended": [
@@ -2616,13 +2826,17 @@
           "word": "diambil",
           "cn": "被拿走",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "diambil kurir",
+          "mini_example_cn": "被快递员取走"
         },
         {
           "word": "ambilkan",
           "cn": "帮我拿（祈使）",
           "formation": "-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "ambilkan air",
+          "mini_example_cn": "帮忙拿点水"
         }
       ],
       "recommended": [
@@ -2650,13 +2864,17 @@
           "word": "penjual",
           "cn": "卖家",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "penjual sayur",
+          "mini_example_cn": "菜贩"
         },
         {
           "word": "penjualan",
           "cn": "销售（额）",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "penjualan online",
+          "mini_example_cn": "线上销售"
         },
         {
           "word": "jualan",
@@ -2670,7 +2888,9 @@
           "word": "terjual",
           "cn": "已售出",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sudah terjual",
+          "mini_example_cn": "已经卖出"
         }
       ],
       "recommended": [
@@ -2706,13 +2926,17 @@
           "word": "pembeli",
           "cn": "买家；顾客",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pembeli baru",
+          "mini_example_cn": "新买家"
         },
         {
           "word": "pembelian",
           "cn": "购买",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "bukti pembelian",
+          "mini_example_cn": "购买凭证"
         }
       ],
       "recommended": [
@@ -2748,13 +2972,17 @@
           "word": "bayaran",
           "cn": "报酬；工钱",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "bayaran harian",
+          "mini_example_cn": "日薪"
         },
         {
           "word": "terbayar",
           "cn": "已付清",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "belum terbayar",
+          "mini_example_cn": "尚未付清"
         }
       ],
       "recommended": [
@@ -2790,13 +3018,17 @@
           "word": "pinjaman",
           "cn": "贷款；借来的东西",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pinjaman bank",
+          "mini_example_cn": "银行贷款"
         },
         {
           "word": "peminjam",
           "cn": "借款人",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "peminjam uang",
+          "mini_example_cn": "借款人"
         }
       ],
       "recommended": [
@@ -2824,13 +3056,17 @@
           "word": "menjanjikan",
           "cn": "承诺；有前途的",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "hasilnya menjanjikan",
+          "mini_example_cn": "前景不错"
         },
         {
           "word": "perjanjian",
           "cn": "协议；合同",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menandatangani perjanjian",
+          "mini_example_cn": "签署协议"
         },
         {
           "word": "janjian",
@@ -2874,7 +3110,9 @@
           "word": "diajak",
           "cn": "被邀请",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "diajak makan",
+          "mini_example_cn": "被约去吃饭"
         }
       ],
       "recommended": [
@@ -2910,13 +3148,17 @@
           "word": "laporan",
           "cn": "报告",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "laporan bulanan",
+          "mini_example_cn": "月度报告"
         },
         {
           "word": "pelapor",
           "cn": "举报人",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "identitas pelapor",
+          "mini_example_cn": "举报人的身份"
         }
       ],
       "recommended": [
@@ -2952,7 +3194,9 @@
           "word": "kepemilikan",
           "cn": "所有权",
           "formation": "ke-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "bukti kepemilikan",
+          "mini_example_cn": "所有权证明"
         }
       ],
       "recommended": [
@@ -2988,19 +3232,25 @@
           "word": "penulis",
           "cn": "作者",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "penulis buku",
+          "mini_example_cn": "书籍作者"
         },
         {
           "word": "tertulis",
           "cn": "书面的；写着的",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "perjanjian tertulis",
+          "mini_example_cn": "书面协议"
         },
         {
           "word": "menuliskan",
           "cn": "写下（某内容）",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menuliskan nama",
+          "mini_example_cn": "写下姓名"
         }
       ],
       "recommended": [
@@ -3036,19 +3286,25 @@
           "word": "pembaca",
           "cn": "读者",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pembaca setia",
+          "mini_example_cn": "忠实读者"
         },
         {
           "word": "terbaca",
           "cn": "读得出；看得清",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "tulisan terbaca jelas",
+          "mini_example_cn": "字迹清楚可读"
         },
         {
           "word": "membacakan",
           "cn": "读给…听",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "membacakan cerita",
+          "mini_example_cn": "读故事给别人听"
         }
       ],
       "recommended": [
@@ -3084,7 +3340,9 @@
           "word": "penghidupan",
           "cn": "生计",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sumber penghidupan",
+          "mini_example_cn": "生计来源"
         }
       ],
       "recommended": [
@@ -3120,19 +3378,25 @@
           "word": "menyakiti",
           "cn": "伤害（某人）",
           "formation": "meN-i",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menyakiti hati",
+          "mini_example_cn": "伤人感情"
         },
         {
           "word": "menyakitkan",
           "cn": "令人痛苦的",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kata-kata menyakitkan",
+          "mini_example_cn": "伤人的话"
         },
         {
           "word": "rumah sakit",
           "cn": "医院",
           "formation": "词组",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "ke rumah sakit",
+          "mini_example_cn": "去医院"
         }
       ],
       "recommended": [
@@ -3198,13 +3462,17 @@
           "word": "pengobatan",
           "cn": "治疗",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "biaya pengobatan",
+          "mini_example_cn": "治疗费用"
         },
         {
           "word": "obat-obatan",
           "cn": "药品",
           "formation": "重叠 + -an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "membawa obat-obatan",
+          "mini_example_cn": "携带药品"
         }
       ],
       "recommended": [
@@ -3240,13 +3508,17 @@
           "word": "termakan",
           "cn": "误吃；被（话）骗到",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "termakan hoaks",
+          "mini_example_cn": "被虚假消息骗到"
         },
         {
           "word": "makan waktu",
           "cn": "花时间",
           "formation": "词组",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "makan waktu lama",
+          "mini_example_cn": "很费时间"
         }
       ],
       "recommended": [
@@ -3282,7 +3554,9 @@
           "word": "diminum",
           "cn": "被喝；服用",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "diminum setelah makan",
+          "mini_example_cn": "饭后服用"
         }
       ],
       "recommended": [
@@ -3318,7 +3592,9 @@
           "word": "dimasak",
           "cn": "被煮",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "dimasak sampai matang",
+          "mini_example_cn": "煮到熟透"
         }
       ],
       "recommended": [
@@ -3354,13 +3630,17 @@
           "word": "pencuci",
           "cn": "清洁剂；洗的",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "cairan pencuci piring",
+          "mini_example_cn": "洗洁精"
         },
         {
           "word": "dicuci",
           "cn": "被洗",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "dicuci dulu",
+          "mini_example_cn": "先洗一下"
         }
       ],
       "recommended": [
@@ -3396,7 +3676,9 @@
           "word": "pembersih",
           "cn": "清洁剂",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "cairan pembersih",
+          "mini_example_cn": "清洁液"
         }
       ],
       "recommended": [
@@ -3432,13 +3714,17 @@
           "word": "menidurkan",
           "cn": "哄…睡",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menidurkan bayi",
+          "mini_example_cn": "哄宝宝睡觉"
         },
         {
           "word": "tempat tidur",
           "cn": "床",
           "formation": "词组",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "tempat tidur nyaman",
+          "mini_example_cn": "舒服的床"
         }
       ],
       "recommended": [
@@ -3474,19 +3760,25 @@
           "word": "pembangunan",
           "cn": "建设",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pembangunan jalan",
+          "mini_example_cn": "道路建设"
         },
         {
           "word": "membangunkan",
           "cn": "叫醒",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "membangunkan adik",
+          "mini_example_cn": "叫醒弟弟妹妹"
         },
         {
           "word": "terbangun",
           "cn": "（突然）醒来",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "terbangun tengah malam",
+          "mini_example_cn": "半夜醒来"
         }
       ],
       "recommended": [
@@ -3522,19 +3814,25 @@
           "word": "pemain",
           "cn": "球员；演员；玩家",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pemain bola",
+          "mini_example_cn": "球员"
         },
         {
           "word": "permainan",
           "cn": "游戏",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "permainan baru",
+          "mini_example_cn": "新游戏"
         },
         {
           "word": "memainkan",
           "cn": "演奏；扮演",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "memainkan gitar",
+          "mini_example_cn": "弹吉他"
         }
       ],
       "recommended": [
@@ -3570,7 +3868,9 @@
           "word": "bersenang-senang",
           "cn": "尽情玩乐",
           "formation": "ber- + 重叠",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "bersenang-senang bersama teman",
+          "mini_example_cn": "和朋友尽情玩乐"
         }
       ],
       "recommended": [
@@ -3606,7 +3906,9 @@
           "word": "kemarahan",
           "cn": "怒气",
           "formation": "ke-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menahan kemarahan",
+          "mini_example_cn": "克制怒气"
         }
       ],
       "recommended": [
@@ -3642,7 +3944,9 @@
           "word": "menakut-nakuti",
           "cn": "吓唬",
           "formation": "meN- + 重叠 + -i",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menakut-nakuti anak",
+          "mini_example_cn": "吓唬孩子"
         }
       ],
       "recommended": [
@@ -3678,7 +3982,9 @@
           "word": "malu-malu",
           "cn": "害羞地",
           "formation": "重叠",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "senyum malu-malu",
+          "mini_example_cn": "害羞地笑"
         }
       ],
       "recommended": [
@@ -3714,7 +4020,9 @@
           "word": "bersedih",
           "cn": "伤心",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "masih bersedih",
+          "mini_example_cn": "仍然伤心"
         }
       ],
       "recommended": [
@@ -3750,13 +4058,17 @@
           "word": "percintaan",
           "cn": "爱情（关系）",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kisah percintaan",
+          "mini_example_cn": "爱情故事"
         },
         {
           "word": "jatuh cinta",
           "cn": "爱上",
           "formation": "词组",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "jatuh cinta lagi",
+          "mini_example_cn": "再次爱上"
         }
       ],
       "recommended": [
@@ -3792,7 +4104,9 @@
           "word": "disukai",
           "cn": "受喜欢",
           "formation": "di-i",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "disukai banyak orang",
+          "mini_example_cn": "受到很多人喜欢"
         }
       ],
       "recommended": [
@@ -3828,13 +4142,17 @@
           "word": "harapan",
           "cn": "希望；期望",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "harapan besar",
+          "mini_example_cn": "很高的期望"
         },
         {
           "word": "diharapkan",
           "cn": "请（正式）；预计",
           "formation": "di-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "diharapkan hadir",
+          "mini_example_cn": "请出席（正式）"
         }
       ],
       "recommended": [
@@ -3872,13 +4190,17 @@
           "cn": "可信的",
           "formation": "ter-",
           "register": "通用",
-          "usage_note": "日常常见写法；KBBI 所列词形为 tepercaya。"
+          "usage_note": "日常常见写法；KBBI 所列词形为 tepercaya。",
+          "mini_example": "sumber terpercaya",
+          "mini_example_cn": "可信的来源"
         },
         {
           "word": "dipercaya",
           "cn": "被信任",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "dipercaya semua orang",
+          "mini_example_cn": "受到所有人信任"
         }
       ],
       "recommended": [
@@ -3914,7 +4236,9 @@
           "word": "dibutuhkan",
           "cn": "被需要；急需",
           "formation": "di-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sangat dibutuhkan",
+          "mini_example_cn": "非常需要"
         }
       ],
       "recommended": [
@@ -3950,7 +4274,9 @@
           "word": "diperlukan",
           "cn": "必需的",
           "formation": "di-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "dokumen yang diperlukan",
+          "mini_example_cn": "所需文件"
         }
       ],
       "recommended": [
@@ -3986,7 +4312,9 @@
           "word": "mementingkan",
           "cn": "重视；看重",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mementingkan diri sendiri",
+          "mini_example_cn": "只顾自己"
         }
       ],
       "recommended": [
@@ -4022,7 +4350,9 @@
           "word": "mudah-mudahan",
           "cn": "但愿",
           "formation": "重叠",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mudah-mudahan lancar",
+          "mini_example_cn": "但愿一切顺利"
         }
       ],
       "recommended": [
@@ -4058,7 +4388,9 @@
           "word": "mempersulit",
           "cn": "刁难；使更难",
           "formation": "memper-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mempersulit urusan",
+          "mini_example_cn": "把事情搞复杂"
         }
       ],
       "recommended": [
@@ -4094,13 +4426,17 @@
           "word": "kebesaran",
           "cn": "太大（衣服等）",
           "formation": "ke-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "bajunya kebesaran",
+          "mini_example_cn": "衣服太大了"
         },
         {
           "word": "terbesar",
           "cn": "最大的",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kota terbesar",
+          "mini_example_cn": "最大的城市"
         }
       ],
       "recommended": [
@@ -4128,19 +4464,25 @@
           "word": "berganti",
           "cn": "变换；换",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "berganti pakaian",
+          "mini_example_cn": "更换衣服"
         },
         {
           "word": "pengganti",
           "cn": "替代者",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pengganti sementara",
+          "mini_example_cn": "临时替代者"
         },
         {
           "word": "penggantian",
           "cn": "更换；赔偿",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "penggantian barang",
+          "mini_example_cn": "换货"
         },
         {
           "word": "gantian",
@@ -4184,13 +4526,17 @@
           "word": "tambahan",
           "cn": "额外的；补充",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "biaya tambahan",
+          "mini_example_cn": "额外费用"
         },
         {
           "word": "bertambah",
           "cn": "（自然）增加",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "jumlahnya bertambah",
+          "mini_example_cn": "数量增加了"
         }
       ],
       "recommended": [
@@ -4226,13 +4572,17 @@
           "word": "berkurang",
           "cn": "（自然）减少",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "stok berkurang",
+          "mini_example_cn": "库存减少"
         },
         {
           "word": "pengurangan",
           "cn": "减少；扣除",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pengurangan biaya",
+          "mini_example_cn": "减少成本"
         }
       ],
       "recommended": [
@@ -4268,13 +4618,17 @@
           "word": "sehabis",
           "cn": "…之后",
           "formation": "se-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sehabis makan",
+          "mini_example_cn": "饭后"
         },
         {
           "word": "habis-habisan",
           "cn": "竭尽全力",
           "formation": "重叠 + -an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "berjuang habis-habisan",
+          "mini_example_cn": "拼尽全力"
         }
       ],
       "recommended": [
@@ -4310,13 +4664,17 @@
           "word": "penutup",
           "cn": "盖子；结尾",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "penutup botol",
+          "mini_example_cn": "瓶盖"
         },
         {
           "word": "ditutup",
           "cn": "被关闭",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "jalan ditutup",
+          "mini_example_cn": "道路封闭"
         }
       ],
       "recommended": [
@@ -4352,13 +4710,17 @@
           "word": "pembukaan",
           "cn": "开幕；开头",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "acara pembukaan",
+          "mini_example_cn": "开幕活动"
         },
         {
           "word": "dibuka",
           "cn": "被打开；开门营业",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "toko dibuka jam delapan",
+          "mini_example_cn": "商店八点营业"
         }
       ],
       "recommended": [
@@ -4394,7 +4756,9 @@
           "word": "kejatuhan",
           "cn": "被…砸到",
           "formation": "ke-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kejatuhan buah",
+          "mini_example_cn": "被掉下来的水果砸到"
         }
       ],
       "recommended": [
@@ -4405,5 +4769,5 @@
       "example_cn": "手机从桌上掉了下去。"
     }
   ],
-  "mini_examples_note": "第一轮为12组推荐词根的全量派生词以及其余家族的重点理解词人工编写了简短例词/例句；扩展性提示，不作为真实语料或正式掌握记录。"
+  "mini_examples_note": "第二批已为全部420个派生词或相关表达补齐手工编写的简短搭配/例词及中文，原始词条数量、词根ID、推荐状态与主词库学习数据均不变；搭配是教学示例，并非母语语料原文。"
 }
