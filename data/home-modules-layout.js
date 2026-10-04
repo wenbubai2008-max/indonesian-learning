@@ -5,7 +5,7 @@
   const HOME_MODULES=[
     {key:'reading',title:'泛读',icon:'📚',desc:'今日短文 · 自然复现 · 划词查义。',tag:'划词查义 · 可加陌生词',open:function(){if(typeof window.openExtensiveV2==='function')window.openExtensiveV2();}},
     {key:'vocab',title:'词汇学习',icon:'🧠',desc:'按词库学习，结合闪卡、例句和发音。',tag:'词库',tagId:'vocabTag',open:function(){if(typeof window.go==='function')window.go('vocab');}},
-    {key:'roots',title:'词根家族',icon:'🌱',desc:'从一个词根，理解同根表达与口语变体。',tag:'词根资料库 · 100 组',tagId:'rootFamilyTag',open:function(){window.location.href='root-families/index.html';}},
+    {key:'roots',title:'词根家族',icon:'🌱',desc:'从一个词根，理解同根表达与口语变体。',tag:'词根资料库',tagId:'rootFamilyTag',open:function(){window.location.href='root-families/index.html';}},
     {key:'weak',title:'弱项强化',icon:'🎯',desc:'只看快练错题与阅读陌生词；掌握另需验证。',tag:'专项错词',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
     {key:'difficulty',title:'难点解释',icon:'💡',desc:'辨析易混词，理解构词和真实用法。',tag:'7 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
     {key:'quick',title:'快速练习',icon:'⚡',desc:'短时练习到期词和容易答错的词。',tag:'间隔复现',open:function(){if(typeof window.openQuickPracticeV2==='function')window.openQuickPracticeV2();}},
