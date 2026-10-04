@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-04T11:05:24.833Z",
+    "runtime_generated_at": "2026-10-04T14:50:35.503Z",
     "lesson_watermark": "2026-10-04 18:00",
     "index_updated": "2026-10-04",
-    "runtime_hash": "7533cbb9127c2641e2972464e32285060153c792985ec4bdf164c98a44943d75",
+    "runtime_hash": "0e868673203adc14e888b8d65105b0175baeaaa7f1fc3fb866ef4b10031b85ce",
     "index_hash": "373d18d568a9539c73264ecc26f5129e4fc5be9670ce7a871a0659d904e63093",
     "rules_hash": "112a2dbb2e62e9937feae9c4e60b52454c4d350e0844cf68f59ad724649db454"
   },
@@ -1086,6 +1086,16 @@
         "强硬坚持；不肯让步"
       ],
       [
+        "cerewet",
+        2,
+        0,
+        "",
+        "2026-10-04T14:49:26.269Z",
+        "话多；唠叨",
+        "cerewet",
+        "话多；挑剔唠叨"
+      ],
+      [
         "pembangunan",
         2,
         0,
@@ -1146,21 +1156,11 @@
         "单身"
       ],
       [
-        "cerewet",
-        2,
-        0,
-        "",
-        "2026-09-25T13:47:19.759Z",
-        "话多；唠叨",
-        "cerewet",
-        "话多；挑剔唠叨"
-      ],
-      [
         "baper",
         1,
         3,
         "2026-10-03T14:10:41.203Z",
-        "2026-10-03T14:10:41.203Z",
+        "2026-10-04T14:49:23.735Z",
         "太往心里去；因为一句话情绪受影响（口语）",
         "bawa perasaan",
         "把情绪带进去；往心里去"
@@ -1676,6 +1676,14 @@
         ]
       ],
       [
+        "cerewet",
+        78,
+        [
+          "automation_fail",
+          "dont"
+        ]
+      ],
+      [
         "pembangunan",
         78,
         [
@@ -1717,14 +1725,6 @@
       ],
       [
         "jomblo",
-        78,
-        [
-          "automation_fail",
-          "dont"
-        ]
-      ],
-      [
-        "cerewet",
         78,
         [
           "automation_fail",
