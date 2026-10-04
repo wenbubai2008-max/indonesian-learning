@@ -1,0 +1,3929 @@
+{
+  "version": 1,
+  "updated": "2026-10-04",
+  "title": "词根家族库",
+  "origin": "根据用户提供的 Claude《印尼语词根家族 100》整理；有少量构词标注与口语修正；不是已掌握状态的权威来源。",
+  "status_policy": "仅供浏览；绝不将原附件静态 mastered/learning/new 当作当前学习状态，也不写主词库。",
+  "families": [
+    {
+      "id": "ajar",
+      "root": "ajar",
+      "root_cn": "教；学",
+      "rank": 1,
+      "forms": [
+        {
+          "word": "belajar",
+          "cn": "学习",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "mengajar",
+          "cn": "教（课）",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "pelajar",
+          "cn": "学生",
+          "formation": "pe-",
+          "register": "通用"
+        },
+        {
+          "word": "pelajaran",
+          "cn": "课程；功课",
+          "formation": "pe-an",
+          "register": "通用"
+        },
+        {
+          "word": "pengajar",
+          "cn": "教师；讲师",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "mempelajari",
+          "cn": "研究；钻研",
+          "formation": "派生链：pelajar → mempelajari",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "belajar",
+        "mengajar"
+      ],
+      "example": "Dia mengajar matematika, tapi sekarang sedang belajar bahasa Inggris.",
+      "example_cn": "她教数学，但现在正在学英语。"
+    },
+    {
+      "id": "kerja",
+      "root": "kerja",
+      "root_cn": "工作",
+      "rank": 2,
+      "forms": [
+        {
+          "word": "bekerja",
+          "cn": "工作；上班",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "pekerja",
+          "cn": "工人；劳动者",
+          "formation": "pe-",
+          "register": "通用"
+        },
+        {
+          "word": "pekerjaan",
+          "cn": "工作；职业",
+          "formation": "pe-an",
+          "register": "通用"
+        },
+        {
+          "word": "mengerjakan",
+          "cn": "做（某项工作）",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "kerja sama",
+          "cn": "合作",
+          "formation": "词组",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "bekerja",
+        "pekerja"
+      ],
+      "example": "Pekerjaan ini harus dikerjakan sebelum Jumat.",
+      "example_cn": "这项工作必须在周五前做完。"
+    },
+    {
+      "id": "buat",
+      "root": "buat",
+      "root_cn": "做；制作",
+      "rank": 3,
+      "forms": [
+        {
+          "word": "membuat",
+          "cn": "制作；使得",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "buatan",
+          "cn": "制品；…制造的",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pembuat",
+          "cn": "制造者",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "pembuatan",
+          "cn": "制作（过程）",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "terbuat",
+          "cn": "由…制成",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "membuat",
+        "terbuat"
+      ],
+      "example": "Kue ini buatan ibu saya, dibuat pakai resep lama.",
+      "example_cn": "这蛋糕是我妈妈做的，用的是老配方。"
+    },
+    {
+      "id": "ada",
+      "root": "ada",
+      "root_cn": "有；在",
+      "rank": 4,
+      "forms": [
+        {
+          "word": "keadaan",
+          "cn": "情况；状况",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "mengadakan",
+          "cn": "举办",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "berada",
+          "cn": "位于；处在",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "adanya",
+          "cn": "存在；有",
+          "formation": "-nya",
+          "register": "通用"
+        },
+        {
+          "word": "diadakan",
+          "cn": "被举办",
+          "formation": "di-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "keadaan",
+        "mengadakan"
+      ],
+      "example": "Acaranya diadakan di hotel dekat bandara.",
+      "example_cn": "活动在机场附近的酒店举办。"
+    },
+    {
+      "id": "dapat",
+      "root": "dapat",
+      "root_cn": "得到；能",
+      "rank": 5,
+      "forms": [
+        {
+          "word": "mendapatkan",
+          "cn": "获得",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pendapat",
+          "cn": "意见；看法",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "pendapatan",
+          "cn": "收入",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "terdapat",
+          "cn": "存在；有（书面）",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "sedapat mungkin",
+          "cn": "尽可能",
+          "formation": "se-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mendapatkan",
+        "pendapat"
+      ],
+      "example": "Bagaimana pendapat Anda tentang rencana ini?",
+      "example_cn": "您对这个计划有什么看法？"
+    },
+    {
+      "id": "kata",
+      "root": "kata",
+      "root_cn": "话；词",
+      "rank": 6,
+      "forms": [
+        {
+          "word": "berkata",
+          "cn": "说",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "mengatakan",
+          "cn": "说；表示",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "katanya",
+          "cn": "据说；听说",
+          "formation": "-nya",
+          "register": "通用"
+        },
+        {
+          "word": "perkataan",
+          "cn": "言语；说的话",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "kata-kata",
+          "cn": "话语",
+          "formation": "重叠",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "berkata",
+        "mengatakan"
+      ],
+      "example": "Katanya besok hujan seharian.",
+      "example_cn": "听说明天下一整天雨。"
+    },
+    {
+      "id": "tahu",
+      "root": "tahu",
+      "root_cn": "知道",
+      "rank": 7,
+      "forms": [
+        {
+          "word": "mengetahui",
+          "cn": "知道；了解（正式）",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "pengetahuan",
+          "cn": "知识",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "ketahuan",
+          "cn": "被发现；露馅",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "diketahui",
+          "cn": "众所周知；被知道",
+          "formation": "di-i",
+          "register": "通用"
+        },
+        {
+          "word": "setahu",
+          "cn": "据…所知",
+          "formation": "se-",
+          "register": "通用"
+        },
+        {
+          "word": "tahu-tahu",
+          "cn": "突然间；没想到",
+          "formation": "重叠",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengetahui",
+        "pengetahuan"
+      ],
+      "example": "Setahu saya, kantornya tutup hari Minggu.",
+      "example_cn": "据我所知，办公室周日关门。"
+    },
+    {
+      "id": "lihat",
+      "root": "lihat",
+      "root_cn": "看",
+      "rank": 8,
+      "forms": [
+        {
+          "word": "melihat",
+          "cn": "看见",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "terlihat",
+          "cn": "看起来；看得见",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "kelihatan",
+          "cn": "看起来；看得见（口语）",
+          "formation": "ke-an",
+          "register": "口语"
+        },
+        {
+          "word": "memperlihatkan",
+          "cn": "展示；给…看",
+          "formation": "memper-kan",
+          "register": "通用"
+        },
+        {
+          "word": "penglihatan",
+          "cn": "视力",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "lihat-lihat",
+          "cn": "随便看看",
+          "formation": "重叠",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "kelihatan",
+        "terlihat"
+      ],
+      "example": "Kamu kelihatan capek, istirahat dulu.",
+      "example_cn": "你看起来很累，先休息一下。"
+    },
+    {
+      "id": "dengar",
+      "root": "dengar",
+      "root_cn": "听",
+      "rank": 9,
+      "forms": [
+        {
+          "word": "mendengar",
+          "cn": "听到",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "mendengarkan",
+          "cn": "（专心）听",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "terdengar",
+          "cn": "听起来；听得到",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "kedengaran",
+          "cn": "听起来（口语）",
+          "formation": "ke-an",
+          "register": "口语"
+        },
+        {
+          "word": "pendengar",
+          "cn": "听众",
+          "formation": "peN-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "kedengaran",
+        "mendengarkan"
+      ],
+      "example": "Suaranya terdengar sedih di telepon.",
+      "example_cn": "电话里他的声音听起来很难过。"
+    },
+    {
+      "id": "pikir",
+      "root": "pikir",
+      "root_cn": "想",
+      "rank": 10,
+      "forms": [
+        {
+          "word": "berpikir",
+          "cn": "思考",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "memikirkan",
+          "cn": "考虑；惦记（某事）",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pikiran",
+          "cn": "想法；思绪",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pemikiran",
+          "cn": "思想；见解",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "kepikiran",
+          "cn": "一直想着（口语）",
+          "formation": "ke-an",
+          "register": "口语"
+        },
+        {
+          "word": "terpikir",
+          "cn": "（突然）想到",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "kepikiran",
+        "memikirkan"
+      ],
+      "example": "Aku masih kepikiran soal kemarin.",
+      "example_cn": "我还在想昨天那件事。"
+    },
+    {
+      "id": "rasa",
+      "root": "rasa",
+      "root_cn": "感觉；味道",
+      "rank": 11,
+      "forms": [
+        {
+          "word": "merasa",
+          "cn": "觉得",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "merasakan",
+          "cn": "感受到；尝到",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "perasaan",
+          "cn": "感情；感觉",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "terasa",
+          "cn": "感觉到；尝起来",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "berasa",
+          "cn": "有…的感觉（口语）",
+          "formation": "ber-",
+          "register": "口语"
+        }
+      ],
+      "recommended": [
+        "berasa",
+        "merasa"
+      ],
+      "example": "Supnya terasa agak asin.",
+      "example_cn": "汤尝起来有点咸。"
+    },
+    {
+      "id": "baik",
+      "root": "baik",
+      "root_cn": "好",
+      "rank": 12,
+      "forms": [
+        {
+          "word": "memperbaiki",
+          "cn": "修理；改善",
+          "formation": "memper-i",
+          "register": "通用"
+        },
+        {
+          "word": "perbaikan",
+          "cn": "修理；改进",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "kebaikan",
+          "cn": "善意；好处",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "sebaiknya",
+          "cn": "最好（建议）",
+          "formation": "se-nya",
+          "register": "通用"
+        },
+        {
+          "word": "terbaik",
+          "cn": "最好的",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memperbaiki",
+        "perbaikan"
+      ],
+      "example": "Sebaiknya kita berangkat sekarang, nanti macet.",
+      "example_cn": "我们最好现在出发，不然会堵车。"
+    },
+    {
+      "id": "benar",
+      "root": "benar",
+      "root_cn": "对；真",
+      "rank": 13,
+      "forms": [
+        {
+          "word": "sebenarnya",
+          "cn": "其实",
+          "formation": "se-nya",
+          "register": "通用"
+        },
+        {
+          "word": "membenarkan",
+          "cn": "纠正；认同",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "kebenaran",
+          "cn": "真相；正确性",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "benar-benar",
+          "cn": "真的；确实",
+          "formation": "重叠",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "sebenarnya",
+        "membenarkan"
+      ],
+      "example": "Sebenarnya saya kurang setuju.",
+      "example_cn": "其实我不太同意。"
+    },
+    {
+      "id": "salah",
+      "root": "salah",
+      "root_cn": "错",
+      "rank": 14,
+      "forms": [
+        {
+          "word": "kesalahan",
+          "cn": "错误",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "menyalahkan",
+          "cn": "怪罪",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "bersalah",
+          "cn": "有错；有罪",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "salah paham",
+          "cn": "误会",
+          "formation": "词组",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "kesalahan",
+        "menyalahkan"
+      ],
+      "example": "Jangan menyalahkan orang lain terus.",
+      "example_cn": "别总是怪别人。"
+    },
+    {
+      "id": "sama",
+      "root": "sama",
+      "root_cn": "相同",
+      "rank": 15,
+      "forms": [
+        {
+          "word": "bersama",
+          "cn": "一起",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "persamaan",
+          "cn": "相同点",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "menyamakan",
+          "cn": "使一致；等同看待",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "sama-sama",
+          "cn": "不客气；一起",
+          "formation": "重叠",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "bersama",
+        "persamaan"
+      ],
+      "example": "Kita makan bersama, yuk.",
+      "example_cn": "我们一起吃饭吧。"
+    },
+    {
+      "id": "beda",
+      "root": "beda",
+      "root_cn": "不同",
+      "rank": 16,
+      "forms": [
+        {
+          "word": "berbeda",
+          "cn": "不同的",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "perbedaan",
+          "cn": "差别；区别",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "membedakan",
+          "cn": "区分",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "bedanya",
+          "cn": "区别在于",
+          "formation": "-nya",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "berbeda",
+        "perbedaan"
+      ],
+      "example": "Apa bedanya “perlu” dan “butuh”?",
+      "example_cn": "perlu 和 butuh 有什么区别？"
+    },
+    {
+      "id": "guna",
+      "root": "guna",
+      "root_cn": "用处",
+      "rank": 17,
+      "forms": [
+        {
+          "word": "berguna",
+          "cn": "有用的",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "menggunakan",
+          "cn": "使用",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pengguna",
+          "cn": "用户",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "penggunaan",
+          "cn": "使用；用法",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "kegunaan",
+          "cn": "用途",
+          "formation": "ke-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "berguna",
+        "menggunakan"
+      ],
+      "example": "Aplikasi ini sangat berguna untuk pengguna baru.",
+      "example_cn": "这个应用对新用户很有用。"
+    },
+    {
+      "id": "pakai",
+      "root": "pakai",
+      "root_cn": "用；穿",
+      "rank": 18,
+      "forms": [
+        {
+          "word": "memakai",
+          "cn": "使用；穿戴",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "pakaian",
+          "cn": "衣服",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pemakaian",
+          "cn": "使用（量）",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "dipakai",
+          "cn": "被使用；被穿",
+          "formation": "di-",
+          "register": "通用"
+        },
+        {
+          "word": "terpakai",
+          "cn": "已用掉；用得上",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memakai",
+        "pakaian"
+      ],
+      "example": "Pakaian ini jarang dipakai, jadi masih bagus.",
+      "example_cn": "这件衣服很少穿，所以还很新。"
+    },
+    {
+      "id": "hasil",
+      "root": "hasil",
+      "root_cn": "结果",
+      "rank": 19,
+      "forms": [
+        {
+          "word": "berhasil",
+          "cn": "成功",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "menghasilkan",
+          "cn": "产生；赚取",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "penghasilan",
+          "cn": "收入",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "hasilnya",
+          "cn": "结果是",
+          "formation": "-nya",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "berhasil",
+        "menghasilkan"
+      ],
+      "example": "Akhirnya dia berhasil lulus ujian.",
+      "example_cn": "他终于成功通过了考试。"
+    },
+    {
+      "id": "ubah",
+      "root": "ubah",
+      "root_cn": "改变",
+      "rank": 20,
+      "forms": [
+        {
+          "word": "mengubah",
+          "cn": "改变（某物）",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "berubah",
+          "cn": "变化",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "perubahan",
+          "cn": "变化",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "diubah",
+          "cn": "被修改",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengubah",
+        "berubah"
+      ],
+      "example": "Banyak yang berubah sejak tahun lalu.",
+      "example_cn": "从去年起很多东西都变了。"
+    },
+    {
+      "id": "tanya",
+      "root": "tanya",
+      "root_cn": "问",
+      "rank": 21,
+      "forms": [
+        {
+          "word": "bertanya",
+          "cn": "提问",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "menanyakan",
+          "cn": "询问（某事）",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pertanyaan",
+          "cn": "问题",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "ditanya",
+          "cn": "被问",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "bertanya",
+        "menanyakan"
+      ],
+      "example": "Kalau ada pertanyaan, langsung bertanya saja.",
+      "example_cn": "有问题的话直接问就行。"
+    },
+    {
+      "id": "jawab",
+      "root": "jawab",
+      "root_cn": "答",
+      "rank": 22,
+      "forms": [
+        {
+          "word": "menjawab",
+          "cn": "回答",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "jawaban",
+          "cn": "答案；回复",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "tanggung jawab",
+          "cn": "责任",
+          "formation": "词组",
+          "register": "通用"
+        },
+        {
+          "word": "bertanggung jawab",
+          "cn": "负责",
+          "formation": "ber-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menjawab",
+        "jawaban"
+      ],
+      "example": "Siapa yang bertanggung jawab atas masalah ini?",
+      "example_cn": "谁对这个问题负责？"
+    },
+    {
+      "id": "cari",
+      "root": "cari",
+      "root_cn": "找",
+      "rank": 23,
+      "forms": [
+        {
+          "word": "mencari",
+          "cn": "寻找",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "mencarikan",
+          "cn": "帮…找",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pencarian",
+          "cn": "搜索",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "dicari",
+          "cn": "被找；（招聘）招",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mencari",
+        "mencarikan"
+      ],
+      "example": "Bisa carikan saya kos yang dekat kantor?",
+      "example_cn": "能帮我找个离公司近的宿舍吗？"
+    },
+    {
+      "id": "temu",
+      "root": "temu",
+      "root_cn": "见面",
+      "rank": 24,
+      "forms": [
+        {
+          "word": "bertemu",
+          "cn": "见面",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "menemukan",
+          "cn": "发现；找到",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "menemui",
+          "cn": "去见；拜访",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "pertemuan",
+          "cn": "会议；见面",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "ketemu",
+          "cn": "见到；找到（口语）",
+          "formation": "ke-",
+          "register": "口语"
+        }
+      ],
+      "recommended": [
+        "ketemu",
+        "menemukan"
+      ],
+      "example": "Kuncinya sudah ketemu? — Sudah, ditemukan di bawah meja.",
+      "example_cn": "钥匙找到了吗？——找到了，在桌子底下。"
+    },
+    {
+      "id": "bicara",
+      "root": "bicara",
+      "root_cn": "说话",
+      "rank": 25,
+      "forms": [
+        {
+          "word": "berbicara",
+          "cn": "说话；谈",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "membicarakan",
+          "cn": "谈论（某事）",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pembicaraan",
+          "cn": "谈话；会谈",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "pembicara",
+          "cn": "发言人；讲者",
+          "formation": "peN-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "berbicara",
+        "membicarakan"
+      ],
+      "example": "Kita perlu membicarakan masalah ini.",
+      "example_cn": "我们需要谈谈这个问题。"
+    },
+    {
+      "id": "cerita",
+      "root": "cerita",
+      "root_cn": "故事",
+      "rank": 26,
+      "forms": [
+        {
+          "word": "bercerita",
+          "cn": "讲（故事）；聊",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "menceritakan",
+          "cn": "讲述（某事）",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "diceritakan",
+          "cn": "被讲述",
+          "formation": "di-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "bercerita",
+        "menceritakan"
+      ],
+      "example": "Dia menceritakan pengalamannya di Bali.",
+      "example_cn": "她讲了自己在巴厘岛的经历。"
+    },
+    {
+      "id": "ingat",
+      "root": "ingat",
+      "root_cn": "记得",
+      "rank": 27,
+      "forms": [
+        {
+          "word": "mengingat",
+          "cn": "记住；考虑到",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "mengingatkan",
+          "cn": "提醒",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "ingatan",
+          "cn": "记忆",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "peringatan",
+          "cn": "警告；纪念",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "teringat",
+          "cn": "突然想起",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengingat",
+        "mengingatkan"
+      ],
+      "example": "Tolong ingatkan saya besok pagi.",
+      "example_cn": "明天早上请提醒我。"
+    },
+    {
+      "id": "lupa",
+      "root": "lupa",
+      "root_cn": "忘记",
+      "rank": 28,
+      "forms": [
+        {
+          "word": "melupakan",
+          "cn": "忘掉（某人/事）",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "kelupaan",
+          "cn": "不小心忘了（口语）",
+          "formation": "ke-an",
+          "register": "口语"
+        },
+        {
+          "word": "terlupakan",
+          "cn": "被遗忘",
+          "formation": "ter-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pelupa",
+          "cn": "健忘的人",
+          "formation": "pe-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "kelupaan",
+        "melupakan"
+      ],
+      "example": "Maaf, aku kelupaan bawa dompet.",
+      "example_cn": "抱歉，我忘带钱包了。"
+    },
+    {
+      "id": "coba",
+      "root": "coba",
+      "root_cn": "试",
+      "rank": 29,
+      "forms": [
+        {
+          "word": "mencoba",
+          "cn": "尝试",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "percobaan",
+          "cn": "实验；试验",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "cobaan",
+          "cn": "考验；磨难",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "dicoba",
+          "cn": "被试",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mencoba",
+        "percobaan"
+      ],
+      "example": "Coba dulu, siapa tahu cocok.",
+      "example_cn": "先试试，说不定合适。"
+    },
+    {
+      "id": "mulai",
+      "root": "mulai",
+      "root_cn": "开始",
+      "rank": 30,
+      "forms": [
+        {
+          "word": "memulai",
+          "cn": "开始（某事）",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "dimulai",
+          "cn": "（被）开始",
+          "formation": "di-i",
+          "register": "通用"
+        },
+        {
+          "word": "permulaan",
+          "cn": "开端",
+          "formation": "per-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memulai",
+        "dimulai"
+      ],
+      "example": "Rapat dimulai jam sembilan tepat.",
+      "example_cn": "会议九点整开始。"
+    },
+    {
+      "id": "selesai",
+      "root": "selesai",
+      "root_cn": "完成",
+      "rank": 31,
+      "forms": [
+        {
+          "word": "menyelesaikan",
+          "cn": "完成；解决",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "penyelesaian",
+          "cn": "解决办法；完成",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "diselesaikan",
+          "cn": "被完成；被解决",
+          "formation": "di-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menyelesaikan",
+        "penyelesaian"
+      ],
+      "example": "Masalahnya sudah diselesaikan kemarin.",
+      "example_cn": "问题昨天已经解决了。"
+    },
+    {
+      "id": "hubung",
+      "root": "hubung",
+      "root_cn": "联系",
+      "rank": 32,
+      "forms": [
+        {
+          "word": "berhubungan",
+          "cn": "有关；有联系",
+          "formation": "ber-an",
+          "register": "通用"
+        },
+        {
+          "word": "menghubungi",
+          "cn": "联系（某人）",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "hubungan",
+          "cn": "关系",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "perhubungan",
+          "cn": "交通运输",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "sehubungan dengan",
+          "cn": "关于；鉴于",
+          "formation": "se-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "berhubungan",
+        "menghubungi"
+      ],
+      "example": "Silakan hubungi kami lewat WhatsApp.",
+      "example_cn": "请通过 WhatsApp 联系我们。"
+    },
+    {
+      "id": "datang",
+      "root": "datang",
+      "root_cn": "来",
+      "rank": 33,
+      "forms": [
+        {
+          "word": "kedatangan",
+          "cn": "到达；到来",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "mendatang",
+          "cn": "未来的；下一个",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "mendatangi",
+          "cn": "前往；登门",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "mendatangkan",
+          "cn": "带来；引进",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pendatang",
+          "cn": "外来者",
+          "formation": "peN-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "kedatangan",
+        "mendatang"
+      ],
+      "example": "Kedatangan pesawat terlambat satu jam.",
+      "example_cn": "飞机晚到了一个小时。"
+    },
+    {
+      "id": "masuk",
+      "root": "masuk",
+      "root_cn": "进",
+      "rank": 34,
+      "forms": [
+        {
+          "word": "memasuki",
+          "cn": "进入（某处）",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "memasukkan",
+          "cn": "放进；输入",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pemasukan",
+          "cn": "收入；进账",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "masukan",
+          "cn": "意见；建议",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "termasuk",
+          "cn": "包括",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memasuki",
+        "memasukkan"
+      ],
+      "example": "Terima kasih atas masukannya.",
+      "example_cn": "谢谢你的建议。"
+    },
+    {
+      "id": "keluar",
+      "root": "keluar",
+      "root_cn": "出",
+      "rank": 35,
+      "forms": [
+        {
+          "word": "mengeluarkan",
+          "cn": "拿出；花费；开除",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pengeluaran",
+          "cn": "支出；开销",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "dikeluarkan",
+          "cn": "被拿出；被开除",
+          "formation": "di-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengeluarkan",
+        "pengeluaran"
+      ],
+      "example": "Pengeluaran bulan ini terlalu besar.",
+      "example_cn": "这个月开销太大了。"
+    },
+    {
+      "id": "jalan",
+      "root": "jalan",
+      "root_cn": "路；走",
+      "rank": 36,
+      "forms": [
+        {
+          "word": "berjalan",
+          "cn": "行走；运行",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "jalan-jalan",
+          "cn": "逛逛；出去玩",
+          "formation": "重叠",
+          "register": "通用"
+        },
+        {
+          "word": "perjalanan",
+          "cn": "旅程；路程",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "menjalankan",
+          "cn": "运行；执行",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pejalan kaki",
+          "cn": "行人",
+          "formation": "pe-",
+          "register": "通用"
+        },
+        {
+          "word": "sejalan",
+          "cn": "一致",
+          "formation": "se-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "berjalan",
+        "jalan-jalan"
+      ],
+      "example": "Perjalanan ke Bandung makan waktu tiga jam.",
+      "example_cn": "去万隆的路程要三个小时。"
+    },
+    {
+      "id": "tinggal",
+      "root": "tinggal",
+      "root_cn": "住；剩",
+      "rank": 37,
+      "forms": [
+        {
+          "word": "meninggal",
+          "cn": "去世",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "meninggalkan",
+          "cn": "离开；留下",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "ketinggalan",
+          "cn": "落下；错过（口语）",
+          "formation": "ke-an",
+          "register": "口语"
+        },
+        {
+          "word": "tertinggal",
+          "cn": "落下；落后",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "tempat tinggal",
+          "cn": "住处",
+          "formation": "词组",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "ketinggalan",
+        "meninggal"
+      ],
+      "example": "HP-ku ketinggalan di taksi.",
+      "example_cn": "我的手机落在出租车上了。"
+    },
+    {
+      "id": "pindah",
+      "root": "pindah",
+      "root_cn": "搬",
+      "rank": 38,
+      "forms": [
+        {
+          "word": "pindahan",
+          "cn": "搬家（口语）",
+          "formation": "-an",
+          "register": "口语"
+        },
+        {
+          "word": "memindahkan",
+          "cn": "搬动；转移",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "perpindahan",
+          "cn": "迁移；转移",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "dipindahkan",
+          "cn": "被调走；被移动",
+          "formation": "di-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "pindahan",
+        "memindahkan"
+      ],
+      "example": "Dia dipindahkan ke kantor cabang Surabaya.",
+      "example_cn": "他被调到泗水分公司了。"
+    },
+    {
+      "id": "pulang",
+      "root": "pulang",
+      "root_cn": "回家",
+      "rank": 39,
+      "forms": [
+        {
+          "word": "sepulang",
+          "cn": "回来后",
+          "formation": "se-",
+          "register": "通用"
+        },
+        {
+          "word": "kepulangan",
+          "cn": "归来",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "pulang-pergi",
+          "cn": "往返",
+          "formation": "复合词",
+          "register": "通用"
+        },
+        {
+          "word": "memulangkan",
+          "cn": "送回；遣返",
+          "formation": "meN-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "sepulang",
+        "kepulangan"
+      ],
+      "example": "Sepulang kerja, saya biasanya langsung mandi.",
+      "example_cn": "下班回来后我一般直接洗澡。"
+    },
+    {
+      "id": "kembali",
+      "root": "kembali",
+      "root_cn": "回；返回",
+      "rank": 40,
+      "forms": [
+        {
+          "word": "mengembalikan",
+          "cn": "归还",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "kembalian",
+          "cn": "找零",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pengembalian",
+          "cn": "退还；退款",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "sekembali",
+          "cn": "回来后",
+          "formation": "se-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengembalikan",
+        "kembalian"
+      ],
+      "example": "Ini kembaliannya, Bu.",
+      "example_cn": "这是找您的零钱。"
+    },
+    {
+      "id": "kenal",
+      "root": "kenal",
+      "root_cn": "认识",
+      "rank": 41,
+      "forms": [
+        {
+          "word": "mengenal",
+          "cn": "认识；了解",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "berkenalan",
+          "cn": "互相认识",
+          "formation": "ber-an",
+          "register": "通用"
+        },
+        {
+          "word": "memperkenalkan",
+          "cn": "介绍",
+          "formation": "memper-kan",
+          "register": "通用"
+        },
+        {
+          "word": "perkenalan",
+          "cn": "结识；介绍",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "terkenal",
+          "cn": "有名的",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "kenalan",
+          "cn": "熟人",
+          "formation": "-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengenal",
+        "berkenalan"
+      ],
+      "example": "Boleh saya memperkenalkan diri?",
+      "example_cn": "我可以自我介绍一下吗？"
+    },
+    {
+      "id": "tunjuk",
+      "root": "tunjuk",
+      "root_cn": "指",
+      "rank": 42,
+      "forms": [
+        {
+          "word": "menunjuk",
+          "cn": "指；任命",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "menunjukkan",
+          "cn": "显示；指出",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "petunjuk",
+          "cn": "指示；说明",
+          "formation": "pe-",
+          "register": "通用"
+        },
+        {
+          "word": "pertunjukan",
+          "cn": "演出",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "ditunjuk",
+          "cn": "被任命",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menunjuk",
+        "menunjukkan"
+      ],
+      "example": "Hasil tes menunjukkan dia sehat.",
+      "example_cn": "检查结果显示他很健康。"
+    },
+    {
+      "id": "pilih",
+      "root": "pilih",
+      "root_cn": "选",
+      "rank": 43,
+      "forms": [
+        {
+          "word": "memilih",
+          "cn": "选择",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "pilihan",
+          "cn": "选项；选择",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pemilihan",
+          "cn": "选举；挑选",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "pemilih",
+          "cn": "选民",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "terpilih",
+          "cn": "当选；被选中",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memilih",
+        "pilihan"
+      ],
+      "example": "Tidak ada pilihan lain.",
+      "example_cn": "没有别的选择。"
+    },
+    {
+      "id": "putus",
+      "root": "putus",
+      "root_cn": "断",
+      "rank": 44,
+      "forms": [
+        {
+          "word": "memutuskan",
+          "cn": "决定；切断",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "keputusan",
+          "cn": "决定",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "terputus",
+          "cn": "中断",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "diputuskan",
+          "cn": "被决定",
+          "formation": "di-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memutuskan",
+        "keputusan"
+      ],
+      "example": "Kami memutuskan untuk pindah tahun depan.",
+      "example_cn": "我们决定明年搬家。"
+    },
+    {
+      "id": "siap",
+      "root": "siap",
+      "root_cn": "准备好",
+      "rank": 45,
+      "forms": [
+        {
+          "word": "bersiap",
+          "cn": "做准备",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "menyiapkan",
+          "cn": "准备（某物）",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "persiapan",
+          "cn": "准备工作",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "siap-siap",
+          "cn": "做准备（口语）",
+          "formation": "重叠",
+          "register": "口语"
+        },
+        {
+          "word": "kesiapan",
+          "cn": "准备程度",
+          "formation": "ke-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "siap-siap",
+        "bersiap"
+      ],
+      "example": "Persiapan acaranya sudah delapan puluh persen.",
+      "example_cn": "活动的准备工作已完成八成。"
+    },
+    {
+      "id": "atur",
+      "root": "atur",
+      "root_cn": "安排",
+      "rank": 46,
+      "forms": [
+        {
+          "word": "mengatur",
+          "cn": "安排；管理",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "aturan",
+          "cn": "规则",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "peraturan",
+          "cn": "规定；法规",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "teratur",
+          "cn": "有规律的",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "pengaturan",
+          "cn": "设置；安排",
+          "formation": "peN-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengatur",
+        "aturan"
+      ],
+      "example": "Coba cek pengaturan di HP-mu.",
+      "example_cn": "看看你手机里的设置。"
+    },
+    {
+      "id": "urus",
+      "root": "urus",
+      "root_cn": "处理",
+      "rank": 47,
+      "forms": [
+        {
+          "word": "ngurus",
+          "cn": "处理；操办（雅加达日常口语）",
+          "formation": "mengurus 的非正式说法",
+          "register": "口语"
+        },
+        {
+          "word": "ngurusin",
+          "cn": "处理、操办某事（口语）",
+          "formation": "mengurusi 的非正式说法",
+          "register": "口语"
+        },
+        {
+          "word": "mengurus",
+          "cn": "办理；照顾",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "urusan",
+          "cn": "事务；事情",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pengurus",
+          "cn": "负责人；管理者",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "mengurusi",
+          "cn": "管（某事）",
+          "formation": "meN-i",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "ngurus",
+        "mengurus"
+      ],
+      "example": "Aku lagi ngurus dokumen.",
+      "example_cn": "我正在处理文件。"
+    },
+    {
+      "id": "jaga",
+      "root": "jaga",
+      "root_cn": "守",
+      "rank": 48,
+      "forms": [
+        {
+          "word": "menjaga",
+          "cn": "照顾；保持；看守",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "penjaga",
+          "cn": "看守员；保安",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "berjaga",
+          "cn": "值守",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "terjaga",
+          "cn": "被保持；醒着",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menjaga",
+        "penjaga"
+      ],
+      "example": "Jaga kesehatan, ya!",
+      "example_cn": "注意身体哦！"
+    },
+    {
+      "id": "ikut",
+      "root": "ikut",
+      "root_cn": "跟随",
+      "rank": 49,
+      "forms": [
+        {
+          "word": "mengikuti",
+          "cn": "参加；跟随；关注",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "berikut",
+          "cn": "以下；如下",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "berikutnya",
+          "cn": "下一个",
+          "formation": "ber-nya",
+          "register": "通用"
+        },
+        {
+          "word": "pengikut",
+          "cn": "追随者；粉丝",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "ikut-ikutan",
+          "cn": "跟风（口语）",
+          "formation": "重叠",
+          "register": "口语"
+        }
+      ],
+      "recommended": [
+        "ikut-ikutan",
+        "mengikuti"
+      ],
+      "example": "Saya mengikuti akunnya di Instagram.",
+      "example_cn": "我在 Instagram 上关注了他的账号。"
+    },
+    {
+      "id": "tolong",
+      "root": "tolong",
+      "root_cn": "帮助",
+      "rank": 50,
+      "forms": [
+        {
+          "word": "menolong",
+          "cn": "救助；帮助",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "pertolongan",
+          "cn": "救助",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "penolong",
+          "cn": "救助者",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "tertolong",
+          "cn": "得救",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menolong",
+        "pertolongan"
+      ],
+      "example": "Untung pasiennya masih bisa tertolong.",
+      "example_cn": "幸好病人还救得回来。"
+    },
+    {
+      "id": "bantu",
+      "root": "bantu",
+      "root_cn": "帮",
+      "rank": 51,
+      "forms": [
+        {
+          "word": "membantu",
+          "cn": "帮助",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "bantuan",
+          "cn": "帮助；援助",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pembantu",
+          "cn": "帮佣；助手",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "terbantu",
+          "cn": "得到帮助",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "membantu",
+        "bantuan"
+      ],
+      "example": "Terima kasih atas bantuannya, saya sangat terbantu.",
+      "example_cn": "谢谢你的帮忙，帮了我大忙。"
+    },
+    {
+      "id": "minta",
+      "root": "minta",
+      "root_cn": "请求",
+      "rank": 52,
+      "forms": [
+        {
+          "word": "meminta",
+          "cn": "请求；要求",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "permintaan",
+          "cn": "请求；需求",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "diminta",
+          "cn": "被要求",
+          "formation": "di-",
+          "register": "通用"
+        },
+        {
+          "word": "minta maaf",
+          "cn": "道歉",
+          "formation": "词组",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "meminta",
+        "permintaan"
+      ],
+      "example": "Permintaan pasar sedang naik.",
+      "example_cn": "市场需求在上升。"
+    },
+    {
+      "id": "beri",
+      "root": "beri",
+      "root_cn": "给",
+      "rank": 53,
+      "forms": [
+        {
+          "word": "memberi",
+          "cn": "给",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "memberikan",
+          "cn": "给予；提供",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pemberian",
+          "cn": "赠予；礼物",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "diberi",
+          "cn": "被给予",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memberi",
+        "memberikan"
+      ],
+      "example": "Dia memberi saya hadiah ulang tahun.",
+      "example_cn": "他送了我生日礼物。"
+    },
+    {
+      "id": "terima",
+      "root": "terima",
+      "root_cn": "接受",
+      "rank": 54,
+      "forms": [
+        {
+          "word": "menerima",
+          "cn": "接收；接受",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "diterima",
+          "cn": "被接受；被录取",
+          "formation": "di-",
+          "register": "通用"
+        },
+        {
+          "word": "penerima",
+          "cn": "接收人",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "penerimaan",
+          "cn": "接收；录取",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "terima kasih",
+          "cn": "谢谢",
+          "formation": "词组",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menerima",
+        "diterima"
+      ],
+      "example": "Dia diterima di universitas negeri.",
+      "example_cn": "他被公立大学录取了。"
+    },
+    {
+      "id": "kirim",
+      "root": "kirim",
+      "root_cn": "寄；发",
+      "rank": 55,
+      "forms": [
+        {
+          "word": "mengirim",
+          "cn": "寄；发送",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "mengirimkan",
+          "cn": "寄出（某物）",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "kiriman",
+          "cn": "寄来的东西；包裹",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pengirim",
+          "cn": "寄件人",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "pengiriman",
+          "cn": "发货；寄送",
+          "formation": "peN-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengirim",
+        "mengirimkan"
+      ],
+      "example": "Paketnya sudah dikirim kemarin, ongkos pengirimannya gratis.",
+      "example_cn": "包裹昨天寄出了，运费免费。"
+    },
+    {
+      "id": "ambil",
+      "root": "ambil",
+      "root_cn": "拿",
+      "rank": 56,
+      "forms": [
+        {
+          "word": "mengambil",
+          "cn": "拿；取",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "pengambilan",
+          "cn": "领取；提取",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "diambil",
+          "cn": "被拿走",
+          "formation": "di-",
+          "register": "通用"
+        },
+        {
+          "word": "ambilkan",
+          "cn": "帮我拿（祈使）",
+          "formation": "-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengambil",
+        "pengambilan"
+      ],
+      "example": "Tolong ambilkan air minum di dapur.",
+      "example_cn": "请帮我去厨房拿点水。"
+    },
+    {
+      "id": "jual",
+      "root": "jual",
+      "root_cn": "卖",
+      "rank": 57,
+      "forms": [
+        {
+          "word": "menjual",
+          "cn": "卖",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "penjual",
+          "cn": "卖家",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "penjualan",
+          "cn": "销售（额）",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "jualan",
+          "cn": "卖的东西；做买卖（口语）",
+          "formation": "-an",
+          "register": "口语"
+        },
+        {
+          "word": "terjual",
+          "cn": "已售出",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "jualan",
+        "menjual"
+      ],
+      "example": "Rumah itu dijual, tapi belum terjual sampai sekarang.",
+      "example_cn": "那房子在卖，但到现在还没卖出去。"
+    },
+    {
+      "id": "beli",
+      "root": "beli",
+      "root_cn": "买",
+      "rank": 58,
+      "forms": [
+        {
+          "word": "membeli",
+          "cn": "买",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "membelikan",
+          "cn": "给…买",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pembeli",
+          "cn": "买家；顾客",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "pembelian",
+          "cn": "购买",
+          "formation": "peN-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "membeli",
+        "membelikan"
+      ],
+      "example": "Saya membelikan adik saya sepatu baru.",
+      "example_cn": "我给弟弟买了新鞋。"
+    },
+    {
+      "id": "bayar",
+      "root": "bayar",
+      "root_cn": "付",
+      "rank": 59,
+      "forms": [
+        {
+          "word": "membayar",
+          "cn": "付钱",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "pembayaran",
+          "cn": "付款",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "bayaran",
+          "cn": "报酬；工钱",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "terbayar",
+          "cn": "已付清",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "membayar",
+        "pembayaran"
+      ],
+      "example": "Pembayaran bisa lewat transfer atau tunai.",
+      "example_cn": "可以转账，也可以付现金。"
+    },
+    {
+      "id": "pinjam",
+      "root": "pinjam",
+      "root_cn": "借",
+      "rank": 60,
+      "forms": [
+        {
+          "word": "meminjam",
+          "cn": "借入",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "meminjamkan",
+          "cn": "借出",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pinjaman",
+          "cn": "贷款；借来的东西",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "peminjam",
+          "cn": "借款人",
+          "formation": "peN-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "meminjam",
+        "meminjamkan"
+      ],
+      "example": "Dia meminjamkan mobilnya kepada saya.",
+      "example_cn": "他把车借给了我。"
+    },
+    {
+      "id": "janji",
+      "root": "janji",
+      "root_cn": "承诺",
+      "rank": 61,
+      "forms": [
+        {
+          "word": "berjanji",
+          "cn": "答应；许诺",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "menjanjikan",
+          "cn": "承诺；有前途的",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "perjanjian",
+          "cn": "协议；合同",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "janjian",
+          "cn": "约好（见面）（口语）",
+          "formation": "-an",
+          "register": "口语"
+        }
+      ],
+      "recommended": [
+        "janjian",
+        "berjanji"
+      ],
+      "example": "Kita janjian ketemu jam tujuh, ya.",
+      "example_cn": "我们约好七点见哦。"
+    },
+    {
+      "id": "ajak",
+      "root": "ajak",
+      "root_cn": "邀",
+      "rank": 62,
+      "forms": [
+        {
+          "word": "mengajak",
+          "cn": "邀请；约",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "ajakan",
+          "cn": "邀请",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "diajak",
+          "cn": "被邀请",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengajak",
+        "ajakan"
+      ],
+      "example": "Dia mengajak saya nonton film.",
+      "example_cn": "他约我去看电影。"
+    },
+    {
+      "id": "lapor",
+      "root": "lapor",
+      "root_cn": "报告",
+      "rank": 63,
+      "forms": [
+        {
+          "word": "melapor",
+          "cn": "报告；报到",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "melaporkan",
+          "cn": "报告（某事）",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "laporan",
+          "cn": "报告",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pelapor",
+          "cn": "举报人",
+          "formation": "peN-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "melapor",
+        "melaporkan"
+      ],
+      "example": "Laporannya harus selesai hari ini.",
+      "example_cn": "报告今天必须完成。"
+    },
+    {
+      "id": "milik",
+      "root": "milik",
+      "root_cn": "所有",
+      "rank": 64,
+      "forms": [
+        {
+          "word": "memiliki",
+          "cn": "拥有",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "pemilik",
+          "cn": "主人；所有者",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "kepemilikan",
+          "cn": "所有权",
+          "formation": "ke-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memiliki",
+        "pemilik"
+      ],
+      "example": "Siapa pemilik mobil ini?",
+      "example_cn": "这辆车的主人是谁？"
+    },
+    {
+      "id": "tulis",
+      "root": "tulis",
+      "root_cn": "写",
+      "rank": 65,
+      "forms": [
+        {
+          "word": "menulis",
+          "cn": "写",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "tulisan",
+          "cn": "文字；字迹；文章",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "penulis",
+          "cn": "作者",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "tertulis",
+          "cn": "书面的；写着的",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "menuliskan",
+          "cn": "写下（某内容）",
+          "formation": "meN-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menulis",
+        "tulisan"
+      ],
+      "example": "Tulisannya bagus, pantas dia jadi penulis.",
+      "example_cn": "他写得很好，难怪成了作家。"
+    },
+    {
+      "id": "baca",
+      "root": "baca",
+      "root_cn": "读",
+      "rank": 66,
+      "forms": [
+        {
+          "word": "membaca",
+          "cn": "读；阅读",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "bacaan",
+          "cn": "读物",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pembaca",
+          "cn": "读者",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "terbaca",
+          "cn": "读得出；看得清",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "membacakan",
+          "cn": "读给…听",
+          "formation": "meN-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "membaca",
+        "bacaan"
+      ],
+      "example": "Ibu membacakan cerita untuk anaknya sebelum tidur.",
+      "example_cn": "妈妈睡前给孩子读故事。"
+    },
+    {
+      "id": "hidup",
+      "root": "hidup",
+      "root_cn": "活；生活",
+      "rank": 67,
+      "forms": [
+        {
+          "word": "kehidupan",
+          "cn": "生活",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "menghidupkan",
+          "cn": "打开（机器）；使复活",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "penghidupan",
+          "cn": "生计",
+          "formation": "peN-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "kehidupan",
+        "menghidupkan"
+      ],
+      "example": "Kehidupan di Jakarta cukup sibuk.",
+      "example_cn": "雅加达的生活挺忙的。"
+    },
+    {
+      "id": "sakit",
+      "root": "sakit",
+      "root_cn": "病；痛",
+      "rank": 68,
+      "forms": [
+        {
+          "word": "penyakit",
+          "cn": "疾病",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "kesakitan",
+          "cn": "疼得厉害",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "menyakiti",
+          "cn": "伤害（某人）",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "menyakitkan",
+          "cn": "令人痛苦的",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "rumah sakit",
+          "cn": "医院",
+          "formation": "词组",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "penyakit",
+        "kesakitan"
+      ],
+      "example": "Kata-katanya sangat menyakitkan.",
+      "example_cn": "他的话很伤人。"
+    },
+    {
+      "id": "sehat",
+      "root": "sehat",
+      "root_cn": "健康",
+      "rank": 69,
+      "forms": [
+        {
+          "word": "kesehatan",
+          "cn": "健康",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "menyehatkan",
+          "cn": "有益健康的",
+          "formation": "meN-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "kesehatan",
+        "menyehatkan"
+      ],
+      "example": "Sayur ini menyehatkan, coba deh.",
+      "example_cn": "这菜对身体好，试试吧。"
+    },
+    {
+      "id": "obat",
+      "root": "obat",
+      "root_cn": "药",
+      "rank": 70,
+      "forms": [
+        {
+          "word": "berobat",
+          "cn": "看病；就医",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "mengobati",
+          "cn": "治疗",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "pengobatan",
+          "cn": "治疗",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "obat-obatan",
+          "cn": "药品",
+          "formation": "重叠",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "berobat",
+        "mengobati"
+      ],
+      "example": "Saya mau berobat ke klinik dekat rumah.",
+      "example_cn": "我想去家附近的诊所看病。"
+    },
+    {
+      "id": "makan",
+      "root": "makan",
+      "root_cn": "吃",
+      "rank": 71,
+      "forms": [
+        {
+          "word": "makanan",
+          "cn": "食物",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "memakan",
+          "cn": "吃；耗费",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "termakan",
+          "cn": "误吃；被（话）骗到",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "makan waktu",
+          "cn": "花时间",
+          "formation": "词组",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "makanan",
+        "memakan"
+      ],
+      "example": "Proyek ini memakan banyak waktu.",
+      "example_cn": "这个项目花了很多时间。"
+    },
+    {
+      "id": "minum",
+      "root": "minum",
+      "root_cn": "喝",
+      "rank": 72,
+      "forms": [
+        {
+          "word": "minuman",
+          "cn": "饮料",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "meminum",
+          "cn": "喝（及物）",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "diminum",
+          "cn": "被喝；服用",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "minuman",
+        "meminum"
+      ],
+      "example": "Obat ini diminum tiga kali sehari.",
+      "example_cn": "这药一天吃三次。"
+    },
+    {
+      "id": "masak",
+      "root": "masak",
+      "root_cn": "煮；熟的",
+      "rank": 73,
+      "forms": [
+        {
+          "word": "memasak",
+          "cn": "做饭",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "masakan",
+          "cn": "菜肴",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "dimasak",
+          "cn": "被煮",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memasak",
+        "masakan"
+      ],
+      "example": "Masakan Padang terkenal pedas.",
+      "example_cn": "巴东菜以辣出名。"
+    },
+    {
+      "id": "cuci",
+      "root": "cuci",
+      "root_cn": "洗",
+      "rank": 74,
+      "forms": [
+        {
+          "word": "mencuci",
+          "cn": "洗",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "cucian",
+          "cn": "要洗/洗好的衣物",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pencuci",
+          "cn": "清洁剂；洗的",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "dicuci",
+          "cn": "被洗",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mencuci",
+        "cucian"
+      ],
+      "example": "Cuciannya sudah kering belum?",
+      "example_cn": "洗的衣服干了吗？"
+    },
+    {
+      "id": "bersih",
+      "root": "bersih",
+      "root_cn": "干净",
+      "rank": 75,
+      "forms": [
+        {
+          "word": "membersihkan",
+          "cn": "打扫；清洁",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "kebersihan",
+          "cn": "清洁；卫生",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "pembersih",
+          "cn": "清洁剂",
+          "formation": "peN-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "membersihkan",
+        "kebersihan"
+      ],
+      "example": "Kamar ini dibersihkan setiap hari.",
+      "example_cn": "这个房间每天打扫。"
+    },
+    {
+      "id": "tidur",
+      "root": "tidur",
+      "root_cn": "睡",
+      "rank": 76,
+      "forms": [
+        {
+          "word": "tertidur",
+          "cn": "睡着（不经意）",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "ketiduran",
+          "cn": "不小心睡着（口语）",
+          "formation": "ke-an",
+          "register": "口语"
+        },
+        {
+          "word": "menidurkan",
+          "cn": "哄…睡",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "tempat tidur",
+          "cn": "床",
+          "formation": "词组",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "ketiduran",
+        "tertidur"
+      ],
+      "example": "Aku ketiduran di sofa tadi malam.",
+      "example_cn": "我昨晚在沙发上不小心睡着了。"
+    },
+    {
+      "id": "bangun",
+      "root": "bangun",
+      "root_cn": "起床；建造",
+      "rank": 77,
+      "forms": [
+        {
+          "word": "membangun",
+          "cn": "建造",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "bangunan",
+          "cn": "建筑物",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pembangunan",
+          "cn": "建设",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "membangunkan",
+          "cn": "叫醒",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "terbangun",
+          "cn": "（突然）醒来",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "membangun",
+        "bangunan"
+      ],
+      "example": "Tolong bangunkan saya jam enam.",
+      "example_cn": "请六点叫醒我。"
+    },
+    {
+      "id": "main",
+      "root": "main",
+      "root_cn": "玩",
+      "rank": 78,
+      "forms": [
+        {
+          "word": "bermain",
+          "cn": "玩；演奏；比赛",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "mainan",
+          "cn": "玩具",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "pemain",
+          "cn": "球员；演员；玩家",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "permainan",
+          "cn": "游戏",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "memainkan",
+          "cn": "演奏；扮演",
+          "formation": "meN-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "bermain",
+        "mainan"
+      ],
+      "example": "Anak-anak bermain dengan mainan baru.",
+      "example_cn": "孩子们在玩新玩具。"
+    },
+    {
+      "id": "senang",
+      "root": "senang",
+      "root_cn": "高兴",
+      "rank": 79,
+      "forms": [
+        {
+          "word": "menyenangkan",
+          "cn": "令人愉快的",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "kesenangan",
+          "cn": "乐趣",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "bersenang-senang",
+          "cn": "尽情玩乐",
+          "formation": "ber-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menyenangkan",
+        "kesenangan"
+      ],
+      "example": "Liburannya sangat menyenangkan.",
+      "example_cn": "假期过得很愉快。"
+    },
+    {
+      "id": "marah",
+      "root": "marah",
+      "root_cn": "生气",
+      "rank": 80,
+      "forms": [
+        {
+          "word": "memarahi",
+          "cn": "骂；训斥",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "dimarahi",
+          "cn": "挨骂",
+          "formation": "di-i",
+          "register": "通用"
+        },
+        {
+          "word": "kemarahan",
+          "cn": "怒气",
+          "formation": "ke-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memarahi",
+        "dimarahi"
+      ],
+      "example": "Aku dimarahi bos karena terlambat.",
+      "example_cn": "我因为迟到被老板骂了。"
+    },
+    {
+      "id": "takut",
+      "root": "takut",
+      "root_cn": "怕",
+      "rank": 81,
+      "forms": [
+        {
+          "word": "ketakutan",
+          "cn": "恐惧；吓坏了",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "menakutkan",
+          "cn": "可怕的",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "menakut-nakuti",
+          "cn": "吓唬",
+          "formation": "meN-i",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "ketakutan",
+        "menakutkan"
+      ],
+      "example": "Film itu menakutkan sekali.",
+      "example_cn": "那部电影太吓人了。"
+    },
+    {
+      "id": "malu",
+      "root": "malu",
+      "root_cn": "害羞；丢脸",
+      "rank": 82,
+      "forms": [
+        {
+          "word": "memalukan",
+          "cn": "丢脸的",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "pemalu",
+          "cn": "害羞的人",
+          "formation": "pe-",
+          "register": "通用"
+        },
+        {
+          "word": "malu-malu",
+          "cn": "害羞地",
+          "formation": "重叠",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memalukan",
+        "pemalu"
+      ],
+      "example": "Kelakuannya sangat memalukan.",
+      "example_cn": "他的行为真丢人。"
+    },
+    {
+      "id": "sedih",
+      "root": "sedih",
+      "root_cn": "难过",
+      "rank": 83,
+      "forms": [
+        {
+          "word": "kesedihan",
+          "cn": "悲伤",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "menyedihkan",
+          "cn": "令人难过的",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "bersedih",
+          "cn": "伤心",
+          "formation": "ber-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "kesedihan",
+        "menyedihkan"
+      ],
+      "example": "Berita itu sangat menyedihkan.",
+      "example_cn": "那个消息很令人难过。"
+    },
+    {
+      "id": "cinta",
+      "root": "cinta",
+      "root_cn": "爱",
+      "rank": 84,
+      "forms": [
+        {
+          "word": "mencintai",
+          "cn": "爱（某人）",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "tercinta",
+          "cn": "亲爱的",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "percintaan",
+          "cn": "爱情（关系）",
+          "formation": "per-an",
+          "register": "通用"
+        },
+        {
+          "word": "jatuh cinta",
+          "cn": "爱上",
+          "formation": "词组",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mencintai",
+        "tercinta"
+      ],
+      "example": "Untuk ibuku tercinta.",
+      "example_cn": "献给我亲爱的妈妈。"
+    },
+    {
+      "id": "suka",
+      "root": "suka",
+      "root_cn": "喜欢",
+      "rank": 85,
+      "forms": [
+        {
+          "word": "menyukai",
+          "cn": "喜欢（及物，较正式）",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "kesukaan",
+          "cn": "最爱；爱好",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "disukai",
+          "cn": "受喜欢",
+          "formation": "di-i",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menyukai",
+        "kesukaan"
+      ],
+      "example": "Ini makanan kesukaanku.",
+      "example_cn": "这是我最爱吃的。"
+    },
+    {
+      "id": "harap",
+      "root": "harap",
+      "root_cn": "希望",
+      "rank": 86,
+      "forms": [
+        {
+          "word": "berharap",
+          "cn": "希望",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "mengharapkan",
+          "cn": "期待",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "harapan",
+          "cn": "希望；期望",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "diharapkan",
+          "cn": "请（正式）；预计",
+          "formation": "di-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "berharap",
+        "mengharapkan"
+      ],
+      "example": "Penumpang diharapkan tetap duduk.",
+      "example_cn": "请乘客保持就座。"
+    },
+    {
+      "id": "percaya",
+      "root": "percaya",
+      "root_cn": "相信",
+      "rank": 87,
+      "forms": [
+        {
+          "word": "mempercayai",
+          "cn": "信任",
+          "formation": "memper-i",
+          "register": "通用"
+        },
+        {
+          "word": "kepercayaan",
+          "cn": "信任；信仰",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "terpercaya",
+          "cn": "可信的",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "dipercaya",
+          "cn": "被信任",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mempercayai",
+        "kepercayaan"
+      ],
+      "example": "Dia orang yang bisa dipercaya.",
+      "example_cn": "他是个可信赖的人。"
+    },
+    {
+      "id": "butuh",
+      "root": "butuh",
+      "root_cn": "需要",
+      "rank": 88,
+      "forms": [
+        {
+          "word": "membutuhkan",
+          "cn": "需要",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "kebutuhan",
+          "cn": "需求",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "dibutuhkan",
+          "cn": "被需要；急需",
+          "formation": "di-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "membutuhkan",
+        "kebutuhan"
+      ],
+      "example": "Kebutuhan sehari-hari makin mahal.",
+      "example_cn": "日常开销越来越贵。"
+    },
+    {
+      "id": "perlu",
+      "root": "perlu",
+      "root_cn": "需要",
+      "rank": 89,
+      "forms": [
+        {
+          "word": "memerlukan",
+          "cn": "需要",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "keperluan",
+          "cn": "需要；用途",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "diperlukan",
+          "cn": "必需的",
+          "formation": "di-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "memerlukan",
+        "keperluan"
+      ],
+      "example": "Untuk keperluan apa?",
+      "example_cn": "是做什么用的？"
+    },
+    {
+      "id": "penting",
+      "root": "penting",
+      "root_cn": "重要",
+      "rank": 90,
+      "forms": [
+        {
+          "word": "pentingnya",
+          "cn": "重要性",
+          "formation": "-nya",
+          "register": "通用"
+        },
+        {
+          "word": "kepentingan",
+          "cn": "利益",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "mementingkan",
+          "cn": "重视；看重",
+          "formation": "meN-kan",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "pentingnya",
+        "kepentingan"
+      ],
+      "example": "Dia terlalu mementingkan diri sendiri.",
+      "example_cn": "他太只顾自己了。"
+    },
+    {
+      "id": "mudah",
+      "root": "mudah",
+      "root_cn": "容易",
+      "rank": 91,
+      "forms": [
+        {
+          "word": "mempermudah",
+          "cn": "使更容易",
+          "formation": "memper-",
+          "register": "通用"
+        },
+        {
+          "word": "kemudahan",
+          "cn": "便利",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "mudah-mudahan",
+          "cn": "但愿",
+          "formation": "重叠",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mempermudah",
+        "kemudahan"
+      ],
+      "example": "Mudah-mudahan besok tidak hujan.",
+      "example_cn": "但愿明天别下雨。"
+    },
+    {
+      "id": "sulit",
+      "root": "sulit",
+      "root_cn": "难",
+      "rank": 92,
+      "forms": [
+        {
+          "word": "kesulitan",
+          "cn": "困难",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "menyulitkan",
+          "cn": "使为难",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "mempersulit",
+          "cn": "刁难；使更难",
+          "formation": "memper-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "kesulitan",
+        "menyulitkan"
+      ],
+      "example": "Kalau ada kesulitan, kabari saya.",
+      "example_cn": "有困难就告诉我。"
+    },
+    {
+      "id": "besar",
+      "root": "besar",
+      "root_cn": "大",
+      "rank": 93,
+      "forms": [
+        {
+          "word": "membesarkan",
+          "cn": "养大；扩大",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "memperbesar",
+          "cn": "放大",
+          "formation": "memper-",
+          "register": "通用"
+        },
+        {
+          "word": "kebesaran",
+          "cn": "太大（衣服等）",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "terbesar",
+          "cn": "最大的",
+          "formation": "ter-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "membesarkan",
+        "memperbesar"
+      ],
+      "example": "Bajunya kebesaran, ada ukuran yang lebih kecil?",
+      "example_cn": "衣服太大了，有小一号的吗？"
+    },
+    {
+      "id": "ganti",
+      "root": "ganti",
+      "root_cn": "换",
+      "rank": 94,
+      "forms": [
+        {
+          "word": "mengganti",
+          "cn": "更换",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "berganti",
+          "cn": "变换；换",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "pengganti",
+          "cn": "替代者",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "penggantian",
+          "cn": "更换；赔偿",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "gantian",
+          "cn": "轮流（口语）",
+          "formation": "-an",
+          "register": "口语"
+        }
+      ],
+      "recommended": [
+        "gantian",
+        "mengganti"
+      ],
+      "example": "Kita gantian nyetir, ya.",
+      "example_cn": "我们轮流开车吧。"
+    },
+    {
+      "id": "tambah",
+      "root": "tambah",
+      "root_cn": "增加",
+      "rank": 95,
+      "forms": [
+        {
+          "word": "menambah",
+          "cn": "增加",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "menambahkan",
+          "cn": "添加",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "tambahan",
+          "cn": "额外的；补充",
+          "formation": "-an",
+          "register": "通用"
+        },
+        {
+          "word": "bertambah",
+          "cn": "（自然）增加",
+          "formation": "ber-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menambah",
+        "menambahkan"
+      ],
+      "example": "Ada biaya tambahan untuk pengiriman cepat.",
+      "example_cn": "快递要额外收费。"
+    },
+    {
+      "id": "kurang",
+      "root": "kurang",
+      "root_cn": "少；不够",
+      "rank": 96,
+      "forms": [
+        {
+          "word": "mengurangi",
+          "cn": "减少",
+          "formation": "meN-i",
+          "register": "通用"
+        },
+        {
+          "word": "kekurangan",
+          "cn": "缺点；不足",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "berkurang",
+          "cn": "（自然）减少",
+          "formation": "ber-",
+          "register": "通用"
+        },
+        {
+          "word": "pengurangan",
+          "cn": "减少；扣除",
+          "formation": "peN-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "mengurangi",
+        "kekurangan"
+      ],
+      "example": "Saya mau mengurangi gula.",
+      "example_cn": "我想少吃糖。"
+    },
+    {
+      "id": "habis",
+      "root": "habis",
+      "root_cn": "完",
+      "rank": 97,
+      "forms": [
+        {
+          "word": "menghabiskan",
+          "cn": "用完；花光",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "kehabisan",
+          "cn": "用光了；卖完了",
+          "formation": "ke-an",
+          "register": "通用"
+        },
+        {
+          "word": "sehabis",
+          "cn": "…之后",
+          "formation": "se-",
+          "register": "通用"
+        },
+        {
+          "word": "habis-habisan",
+          "cn": "竭尽全力",
+          "formation": "重叠",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menghabiskan",
+        "kehabisan"
+      ],
+      "example": "Maaf, kami kehabisan stok.",
+      "example_cn": "抱歉，我们没货了。"
+    },
+    {
+      "id": "tutup",
+      "root": "tutup",
+      "root_cn": "关",
+      "rank": 98,
+      "forms": [
+        {
+          "word": "menutup",
+          "cn": "关上",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "tertutup",
+          "cn": "关着的；封闭的",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "penutup",
+          "cn": "盖子；结尾",
+          "formation": "peN-",
+          "register": "通用"
+        },
+        {
+          "word": "ditutup",
+          "cn": "被关闭",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "menutup",
+        "tertutup"
+      ],
+      "example": "Jalannya ditutup karena banjir.",
+      "example_cn": "因为淹水，道路封闭了。"
+    },
+    {
+      "id": "buka",
+      "root": "buka",
+      "root_cn": "开",
+      "rank": 99,
+      "forms": [
+        {
+          "word": "membuka",
+          "cn": "打开",
+          "formation": "meN-",
+          "register": "通用"
+        },
+        {
+          "word": "terbuka",
+          "cn": "开着的；开放的",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "pembukaan",
+          "cn": "开幕；开头",
+          "formation": "peN-an",
+          "register": "通用"
+        },
+        {
+          "word": "dibuka",
+          "cn": "被打开；开门营业",
+          "formation": "di-",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "membuka",
+        "terbuka"
+      ],
+      "example": "Tokonya dibuka jam sepuluh.",
+      "example_cn": "店十点开门。"
+    },
+    {
+      "id": "jatuh",
+      "root": "jatuh",
+      "root_cn": "掉；摔",
+      "rank": 100,
+      "forms": [
+        {
+          "word": "terjatuh",
+          "cn": "不慎摔倒/掉落",
+          "formation": "ter-",
+          "register": "通用"
+        },
+        {
+          "word": "menjatuhkan",
+          "cn": "使掉落",
+          "formation": "meN-kan",
+          "register": "通用"
+        },
+        {
+          "word": "kejatuhan",
+          "cn": "被…砸到",
+          "formation": "ke-an",
+          "register": "通用"
+        }
+      ],
+      "recommended": [
+        "terjatuh",
+        "menjatuhkan"
+      ],
+      "example": "HP-nya terjatuh dari meja.",
+      "example_cn": "手机从桌上掉了下去。"
+    }
+  ]
+}
