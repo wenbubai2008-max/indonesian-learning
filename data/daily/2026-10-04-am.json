@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-04",
+  "session": "am",
+  "time": "08:00",
+  "day": 44,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Tugas kelompok yang hampir gagal",
+  "new_words": [
+    "kelompok",
+    "mengenai",
+    "langkah",
+    "meninggal",
+    "hak",
+    "menatap",
+    "parah",
+    "kekuatan",
+    "memenuhi",
+    "rupanya"
+  ],
+  "vocab": [
+    {
+      "word": "kelompok",
+      "display": "kelompok",
+      "audio_text": "kelompok",
+      "cn": "组；小组；群体",
+      "en": "group",
+      "root": "kelompok",
+      "root_cn": "组；群",
+      "formation": "常见搭配：kelompok kerja（工作小组）、kelompok belajar（学习小组）、satu kelompok（同一组）；派生：berkelompok（分组）、mengelompokkan（把……分组）。",
+      "example": "Dalam tugas ini, satu kelompok terdiri dari lima orang.",
+      "example_cn": "这次作业每一组由五个人组成。",
+      "synonym_note": "kelompok = 按任务或特征分出的组；grup 口语里多指聊天群或团体（grup WhatsApp）；tim 强调一起做事的团队（tim sepak bola）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengenai",
+      "display": "mengenai",
+      "audio_text": "mengenai",
+      "cn": "关于；有关",
+      "en": "regarding; concerning",
+      "root": "kena",
+      "root_cn": "碰到；涉及",
+      "formation": "meN- + kena + -i，作介词表示“关于”。常见搭配：mengenai harga、pertanyaan mengenai jadwal、informasi mengenai biaya。",
+      "example": "Saya mau bertanya mengenai biaya pendaftaran.",
+      "example_cn": "我想问一下关于报名费的事。",
+      "synonym_note": "mengenai 与 tentang 都是“关于”，mengenai 稍正式；日常聊天多用 tentang 或 soal（soal harga）。注意 mengenal = 认识、熟悉，不是“关于”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "langkah",
+      "display": "langkah",
+      "audio_text": "langkah",
+      "cn": "步骤；脚步；措施",
+      "en": "step; measure",
+      "root": "langkah",
+      "root_cn": "步；步子",
+      "formation": "常见搭配：langkah pertama（第一步）、mengambil langkah（采取措施）、langkah kaki（脚步）；派生：melangkah（迈步）、selangkah（一步）。",
+      "example": "Langkah pertama adalah membaca petunjuk dengan teliti.",
+      "example_cn": "第一步是仔细阅读说明。",
+      "synonym_note": "langkah = 做事的步骤或采取的措施；tahap = 整个过程中的“阶段”（tahap awal）；cara = “方法”，不强调先后顺序。",
+      "is_oral_new": false
+    },
+    {
+      "word": "meninggal",
+      "display": "meninggal",
+      "audio_text": "meninggal",
+      "cn": "去世；过世",
+      "en": "to pass away",
+      "root": "tinggal",
+      "root_cn": "留下；居住",
+      "formation": "meN- + tinggal，字面“留下（人世）”，引申为去世。常见搭配：meninggal dunia、meninggal karena sakit；相关：almarhum（已故者）、meninggalkan（离开；留下）。",
+      "example": "Nenek saya meninggal dunia dua tahun lalu.",
+      "example_cn": "我奶奶两年前去世了。",
+      "synonym_note": "meninggal 是礼貌、通用的“去世”；mati 说人显得不礼貌，多用于动物或机器（HP saya mati）；wafat 更正式，多用于宗教或重要人物。",
+      "is_oral_new": false
+    },
+    {
+      "word": "hak",
+      "display": "hak",
+      "audio_text": "hak",
+      "cn": "权利；应得的权益",
+      "en": "right; entitlement",
+      "root": "hak",
+      "root_cn": "权利",
+      "formation": "常见搭配：hak cuti（休假权）、hak asasi manusia（人权）、hak milik（所有权）；派生：berhak（有权）。与 kewajiban（义务）常成对：hak dan kewajiban。",
+      "example": "Setiap pekerja punya hak atas cuti tahunan.",
+      "example_cn": "每位员工都享有年假的权利。",
+      "synonym_note": "hak = 权利，不是“对”（“对”是 benar）；kewajiban = 义务；wewenang = 职权。另有 hak sepatu = 鞋跟，是同形词。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menatap",
+      "display": "menatap",
+      "audio_text": "menatap",
+      "cn": "凝视；注视",
+      "en": "to gaze at; to stare at",
+      "root": "tatap",
+      "root_cn": "凝视",
+      "formation": "meN- + tatap。常见搭配：menatap mata（看着眼睛）、menatap layar（盯着屏幕）；名词 tatapan（目光）、bertatap muka（面对面）。",
+      "example": "Dia menatap saya lama, lalu senyum.",
+      "example_cn": "他盯着我看了很久，然后笑了。",
+      "synonym_note": "melihat = 一般的“看”；memandang = 静静地看远处或风景；menatap = 专注地盯着，常带情绪；melirik = 瞟一眼。",
+      "is_oral_new": false
+    },
+    {
+      "word": "parah",
+      "display": "parah",
+      "audio_text": "parah",
+      "cn": "严重的；糟糕的（多指坏事）",
+      "en": "severe; terrible",
+      "root": "parah",
+      "root_cn": "严重",
+      "formation": "常见搭配：sakitnya parah、kerusakan parah、lukanya cukup parah。口语 Parah banget! = 太离谱了／太夸张了。",
+      "example": "Banjir di kota itu cukup parah tahun ini.",
+      "example_cn": "那座城市今年的洪水相当严重。",
+      "synonym_note": "parah 只用于坏事（病情、损坏、状况）；serius 也可中性：masalah serius；jelek = 差、不好；berat 可说病情重（sakit berat）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kekuatan",
+      "display": "kekuatan",
+      "audio_text": "kekuatan",
+      "cn": "力量；实力；效力",
+      "en": "strength; power",
+      "root": "kuat",
+      "root_cn": "强；有力",
+      "formation": "ke- + kuat + -an。常见搭配：kekuatan fisik、kekuatan doa（祈祷的力量）、menambah kekuatan；相关：menguatkan（使坚强）。",
+      "example": "Setelah sembuh, dia latihan tiap hari untuk menambah kekuatan kakinya.",
+      "example_cn": "病好以后，他每天训练来增加腿部力量。",
+      "synonym_note": "kekuatan = 力量（名词）；kuat = 强（形容词）；tenaga = 体力、精力：tenaga habis（没力气了）；daya = 能力：daya tahan（耐力）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "memenuhi",
+      "display": "memenuhi",
+      "audio_text": "memenuhi",
+      "cn": "满足；符合；装满",
+      "en": "to fulfil; to meet; to fill",
+      "root": "penuh",
+      "root_cn": "满",
+      "formation": "meN- + penuh + -i（p 脱落）。常见搭配：memenuhi syarat（符合条件）、memenuhi harapan（达到期望）、memenuhi janji（兑现承诺）；被动：dipenuhi（挤满）。",
+      "example": "Pelamar harus memenuhi semua syarat yang tertulis di pengumuman.",
+      "example_cn": "应聘者必须符合公告上写的所有条件。",
+      "synonym_note": "memenuhi = 达到要求或装满；mengisi = 填写、填充（mengisi formulir）；memuaskan = 使人满意（hasilnya memuaskan）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "rupanya",
+      "display": "rupanya",
+      "audio_text": "rupanya",
+      "cn": "原来（才发现）；看来",
+      "en": "it turns out; apparently",
+      "root": "rupa",
+      "root_cn": "样子；外貌",
+      "formation": "rupa + -nya，表示事后发现与预想不同：Rupanya dia sudah pulang（原来他已经回家了）。口语里也常单说 Oh, rupanya…",
+      "example": "Saya kira dia marah, rupanya dia cuma capek.",
+      "example_cn": "我还以为他生气了，原来只是累了。",
+      "synonym_note": "rupanya 与 ternyata 都是“原来”，rupanya 更口语、带“原来如此”的语气；ternyata 更中性；sepertinya / kayaknya = 好像（只是猜测）。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "baper",
+    "beliau",
+    "nanggung",
+    "kelepasan",
+    "kelewat"
+  ],
+  "sentences": [
+    {
+      "text": "Kakek saya meninggal bulan lalu, tapi beliau masih sering kami ceritakan di meja makan.",
+      "cn": "我爷爷上个月去世了，但我们吃饭时还常常讲起他。"
+    },
+    {
+      "text": "Setiap pekerja punya hak cuti, asal memenuhi syarat yang tertulis di aturan perusahaan.",
+      "cn": "每位员工都有休假的权利，只要符合公司规定上写的条件。"
+    },
+    {
+      "text": "Ketua kelompok bertanya mengenai jadwal presentasi, tapi saya kelewat sibuk sampai lupa membalas.",
+      "cn": "组长问了关于演讲安排的事，但我忙过头，忘了回复。"
+    },
+    {
+      "text": "Sakit kakek rupanya cukup parah, dan kekuatan tubuhnya belum pulih sampai sekarang.",
+      "cn": "爷爷的病原来相当严重，到现在体力还没恢复。"
+    },
+    {
+      "text": "Waktu saya kelepasan bicara kasar, dia hanya menatap saya. Langkah terbaik saya: minta maaf sebelum dia baper.",
+      "cn": "我一时失言说了重话，他只是盯着我。我最好的做法是：在他往心里去之前赶紧道歉。"
+    }
+  ],
+  "reading": {
+    "text": "Dina dan kelompoknya sedang mengerjakan tugas akhir. Kemarin Pak Hadi, dosen mereka, mengirim pesan mengenai tugas itu. Beliau menulis bahwa kelompok yang tidak memenuhi syarat tidak punya hak ikut ujian. Dina menatap layar ponselnya dengan panik. Rupanya satu bagian laporan belum dikerjakan siapa pun, padahal tenggatnya besok. Situasi mereka cukup parah. Rudi, teman sekelompoknya, kelepasan bilang, \"Dari awal kamu kelewat lambat!\" Dina sempat baper, tapi tugas ini sudah nanggung kalau berhenti sekarang. Mereka saling minta maaf, lalu mengambil langkah pertama: membagi pekerjaan dan lembur bersama sampai laporannya selesai.",
+    "cn": "Dina 和她的小组正在做期末作业。昨天，他们的老师 Hadi 老师发来一条关于这份作业的消息。他写道，不符合条件的小组没有资格参加考试。Dina 惊慌地盯着手机屏幕。原来报告里有一部分没人做，而截止时间就是明天。他们的处境相当糟糕。同组的 Rudi 脱口而出：“你从一开始就太慢了！”Dina 一度往心里去了，但这份作业已经做到一半，现在放弃就太可惜了。他们互相道了歉，然后迈出第一步：分配工作，一起加班直到报告完成。"
+  },
+  "quiz": [
+    {
+      "question": "【场景应用】你一时没控制住，对朋友说了句不该说的重话，事后向他道歉。最贴切的说法：Maaf, tadi saya ___ bicara kasar.",
+      "options": [
+        "kelewat",
+        "nyaris",
+        "kelepasan",
+        "sungkan"
+      ],
+      "answer_index": 2,
+      "answer": "kelepasan",
+      "explain": "kelepasan = 一不小心说出/做出（复习词），正好表示“没控制住说了重话”。nyaris 是“差点”，说明话没说出口；kelewat 是“过头、超过”，不表示失言；sungkan 是“不好意思开口”。"
+    },
+    {
+      "question": "【搭配辨析】应聘者必须 ___ 公告上写的所有条件。Pelamar harus ___ semua syarat di pengumuman.",
+      "options": [
+        "memenuhi",
+        "mengisi",
+        "mengikuti",
+        "membayar"
+      ],
+      "answer_index": 0,
+      "answer": "memenuhi",
+      "explain": "memenuhi syarat = 符合条件，是固定搭配。mengisi 用于填写（formulir）或装填；mengikuti 是“参加；跟随”；membayar 是“付款”，都不能和 syarat 搭配。"
+    },
+    {
+      "question": "【场景应用】你到办公室，发现同事早就把报告做完了，你惊讶地说：___ laporannya sudah selesai!",
+      "options": [
+        "Bakal",
+        "Seraya",
+        "Pokoknya",
+        "Rupanya"
+      ],
+      "answer_index": 3,
+      "answer": "Rupanya",
+      "explain": "rupanya = 原来（才发现和预想不同），适合表示“原来已经做完了”。bakal 是“将会”，说未来；seraya 是“一边……一边”，连接同时发生的动作；pokoknya 是“总之；反正”，用来下结论。"
+    }
+  ],
+  "output": {
+    "task": "介绍一次你和朋友、同事或同学一起（kelompok）完成某件事时遇到的问题：说明发生了什么、你们采取的第一步（langkah）是什么，以及结果如何。用 2–3 句自然的印尼语，至少用本课 2 个目标词（例如 kelompok、langkah、rupanya、parah、memenuhi、mengenai）。不要照抄课文。",
+    "reference_answer": "Minggu lalu kelompok saya harus menyelesaikan laporan dalam dua hari, dan rupanya satu bagian belum dikerjakan. Langkah pertama kami adalah membagi tugas lewat grup chat. Akhirnya laporannya selesai tepat waktu, walaupun kami semua kurang tidur.",
+    "reference_cn": "上周我们小组要在两天内完成报告，结果发现有一部分还没做。我们的第一步是在群里分配任务。最后报告按时完成了，虽然大家都睡眠不足。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 kelompok、mengenai、langkah、meninggal、hak、menatap、parah、kekuatan、memenuhi、rupanya，再各配一个搭配（如 memenuhi syarat、langkah pertama、hak cuti）。",
+    "易混辨析：mengenai（关于，较正式）↔ tentang（日常）；meninggal（礼貌）↔ mati（不礼貌）；menatap（专注盯着）↔ melihat（一般地看）；rupanya（原来，口语）↔ ternyata（中性）。",
+    "复习词实战：用 kelepasan 或 baper 说一句道歉的话，再用 beliau 称呼一位长辈，用 kelewat、nanggung 各造一句描述真实情况。"
+  ]
+}
