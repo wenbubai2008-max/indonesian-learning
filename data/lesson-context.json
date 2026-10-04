@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-04",
-    "session": "pm",
-    "time": "18:00",
-    "day": 44
+    "date": "2026-10-05",
+    "session": "am",
+    "time": "08:00",
+    "day": 45
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-04T11:01:04.843Z",
-    "lesson_watermark": "2026-10-04 08:00",
+    "runtime_generated_at": "2026-10-04T11:05:24.833Z",
+    "lesson_watermark": "2026-10-04 18:00",
     "index_updated": "2026-10-04",
-    "runtime_hash": "922b28bcc4cb10727249ef4a544d552bdc09d098f2e29969a2136e85c5f5fa4a",
-    "index_hash": "0a979dcac50a9d5c98564a2ae8b41d307462e033c1df89bc8d317e4e09ef0297",
+    "runtime_hash": "7533cbb9127c2641e2972464e32285060153c792985ec4bdf164c98a44943d75",
+    "index_hash": "373d18d568a9539c73264ecc26f5129e4fc5be9670ce7a871a0659d904e63093",
     "rules_hash": "112a2dbb2e62e9937feae9c4e60b52454c4d350e0844cf68f59ad724649db454"
   },
   "schema": {
@@ -184,10 +184,6 @@
       [
         "bergerak",
         "移动，行动"
-      ],
-      [
-        "mengajak",
-        "邀请"
       ],
       [
         "berikutnya",
@@ -624,10 +620,6 @@
         "媒体，新闻界"
       ],
       [
-        "belanja",
-        "购物、买东西"
-      ],
-      [
         "nasib",
         "命运"
       ],
@@ -972,10 +964,6 @@
         "改变；修改"
       ],
       [
-        "buat",
-        "做；制作；为了"
-      ],
-      [
         "arti",
         "意思；含义"
       ],
@@ -986,6 +974,14 @@
       [
         "ucap",
         "说；表达"
+      ],
+      [
+        "sebut",
+        "提到；称呼"
+      ],
+      [
+        "sebutan",
+        "称呼；叫法"
       ]
     ],
     "review": [
@@ -1437,7 +1433,7 @@
         "2026-10-03T14:10:52.361Z",
         "做；处理某项工作（口语）",
         "kerja",
-        ""
+        "工作；做"
       ],
       [
         "ngurusin",
@@ -1840,58 +1836,9 @@
         ]
       ]
     ],
-    "oral": [
-      [
-        "buat",
-        "通用",
-        "bikin",
-        "buat",
-        531,
-        "fuzzy"
-      ]
-    ]
+    "oral": []
   },
   "history_7d": [
-    {
-      "date": "2026-09-27",
-      "session": "am",
-      "review_core": [
-        "niat",
-        "nyebelin",
-        "mengatasi",
-        "berkat",
-        "ngerepotin"
-      ],
-      "new_words": [
-        "perbaiki",
-        "nyalakan",
-        "asalkan",
-        "membandingkan",
-        "pernyataan",
-        "rahasia",
-        "seolah-olah",
-        "gelisah",
-        "melayani",
-        "ngambek"
-      ]
-    },
-    {
-      "date": "2026-09-27",
-      "session": "pm",
-      "review_core": [
-        "mengatasi",
-        "ngurus",
-        "mengeluh",
-        "berkat",
-        "nyebelin"
-      ],
-      "new_words": [
-        "kesel",
-        "malu-malu",
-        "maksa",
-        "unduh"
-      ]
-    },
     {
       "date": "2026-09-28",
       "session": "am",
@@ -2152,106 +2099,40 @@
         "memenuhi",
         "rupanya"
       ]
+    },
+    {
+      "date": "2026-10-04",
+      "session": "pm",
+      "review_core": [
+        "sekadar",
+        "memisahkan",
+        "kepake",
+        "kepancing",
+        "kesiangan"
+      ],
+      "new_words": [
+        "buat",
+        "belanja",
+        "mengajak"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-03",
+    "date": "2026-10-04",
     "new_words": [
-      "antre",
-      "berfungsi",
-      "tukar",
-      "kwitansi"
+      "buat",
+      "belanja",
+      "mengajak"
     ],
     "review_core": [
-      "upaya",
-      "bakal",
-      "berarti",
-      "sebel",
-      "ngabarin"
+      "sekadar",
+      "memisahkan",
+      "kepake",
+      "kepancing",
+      "kesiangan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-04",
-    "vocab": [
-      [
-        "kelompok",
-        "组；小组；群体",
-        "group",
-        "kelompok",
-        "组；群"
-      ],
-      [
-        "mengenai",
-        "关于；有关",
-        "regarding; concerning",
-        "kena",
-        "碰到；涉及"
-      ],
-      [
-        "langkah",
-        "步骤；脚步；措施",
-        "step; measure",
-        "langkah",
-        "步；步子"
-      ],
-      [
-        "meninggal",
-        "去世；过世",
-        "to pass away",
-        "tinggal",
-        "留下；居住"
-      ],
-      [
-        "hak",
-        "权利；应得的权益",
-        "right; entitlement",
-        "hak",
-        "权利"
-      ],
-      [
-        "menatap",
-        "凝视；注视",
-        "to gaze at; to stare at",
-        "tatap",
-        "凝视"
-      ],
-      [
-        "parah",
-        "严重的；糟糕的（多指坏事）",
-        "severe; terrible",
-        "parah",
-        "严重"
-      ],
-      [
-        "kekuatan",
-        "力量；实力；效力",
-        "strength; power",
-        "kuat",
-        "强；有力"
-      ],
-      [
-        "memenuhi",
-        "满足；符合；装满",
-        "to fulfil; to meet; to fill",
-        "penuh",
-        "满"
-      ],
-      [
-        "rupanya",
-        "原来（才发现）；看来",
-        "it turns out; apparently",
-        "rupa",
-        "样子；外貌"
-      ]
-    ],
-    "review_vocab": [
-      "baper",
-      "beliau",
-      "nanggung",
-      "kelepasan",
-      "kelewat"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

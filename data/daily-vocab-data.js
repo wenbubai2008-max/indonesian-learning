@@ -5642,22 +5642,27 @@ window.DAILY_VOCAB_DB = [
     "root": "kerja",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-09-03 08:00",
+    "last_seen": "2026-10-04 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-03"
+      "2026-09-03",
+      "2026-10-04"
     ],
-    "example": "Aku lagi ngerjain laporan, nanti aku balas ya.",
-    "example_cn": "我正在做报告，等会儿再回你。",
+    "example": "Semalam aku ngerjain laporan sampai jam dua pagi.",
+    "example_cn": "昨晚我做报告一直做到凌晨两点。",
     "lesson_occurrences": [
-      "2026-09-03 08:00"
-    ]
+      "2026-09-03 08:00",
+      "2026-10-04 18:00"
+    ],
+    "root_cn": "工作；做"
   },
   {
     "word": "nyatet",
@@ -6092,28 +6097,32 @@ window.DAILY_VOCAB_DB = [
     "cn": "用得上；派得上用场",
     "en": "get used; come in handy",
     "root": "pakai",
-    "example": "Kalau barangnya sering kepake, mahal sedikit masih oke.",
-    "example_cn": "如果这个东西经常用得上，贵一点也还可以。",
+    "example": "Payung kecil ini ternyata kepake waktu hujan tiba-tiba turun.",
+    "example_cn": "这把小伞，下雨时突然派上了用场。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-06 19:00",
+    "last_seen": "2026-10-04 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-04",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-10-04"
     ],
     "root_cn": "使用；穿戴",
     "lesson_occurrences": [
       "2026-09-04 08:00",
-      "2026-09-06 19:00"
+      "2026-09-06 19:00",
+      "2026-10-04 18:00"
     ]
   },
   {
@@ -6589,21 +6598,25 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "惊讶；觉得奇怪",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-05 19:00",
-    "last_seen": "2026-09-05 19:00",
+    "last_seen": "2026-10-04 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-05"
+      "2026-09-05",
+      "2026-10-04"
     ],
-    "example": "Pantes dia capek terus. Nggak heran sih, tiap hari pulangnya malam.",
-    "example_cn": "难怪他总是累。也不奇怪，他每天都很晚回去。",
+    "example": "Dia kerja dari pagi sampai malam, nggak heran dia capek.",
+    "example_cn": "他从早做到晚，难怪他累。",
     "lesson_occurrences": [
-      "2026-09-05 19:00"
+      "2026-09-05 19:00",
+      "2026-10-04 18:00"
     ]
   },
   {
@@ -6986,22 +6999,24 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-06 19:00",
-    "last_seen": "2026-10-02 18:00",
+    "last_seen": "2026-10-04 18:00",
     "sessions": [
       "19:00",
       "18:00"
     ],
     "dates": [
       "2026-09-06",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-04"
     ],
-    "example": "Saya sekadar mengingatkan bahwa rapat mulai jam enam.",
-    "example_cn": "我只是提醒一下，会议六点开始。",
+    "example": "Aku sekadar bertanya, bukan mau membeli.",
+    "example_cn": "我只是问问，不是要买。",
     "lesson_occurrences": [
       "2026-09-06 19:00",
-      "2026-10-02 18:00"
+      "2026-10-02 18:00",
+      "2026-10-04 18:00"
     ]
   },
   {
@@ -8347,26 +8362,30 @@ window.DAILY_VOCAB_DB = [
     "en": "make time; squeeze something in",
     "root": "sempat",
     "root_cn": "有空；来得及",
-    "example": "Walaupun sore padat, aku mau nyempetin follow up satu klien dulu.",
-    "example_cn": "虽然下午很忙，我还是想挤时间先跟进一个客户。",
+    "example": "Sesibuk apa pun, dia selalu nyempetin telepon ibunya.",
+    "example_cn": "不管多忙，他总会抽空给妈妈打电话。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 19:00",
+    "last_seen": "2026-10-04 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-10-04"
     ],
     "lesson_occurrences": [
       "2026-09-10 08:00",
-      "2026-09-10 19:00"
+      "2026-09-10 19:00",
+      "2026-10-04 18:00"
     ]
   },
   {
@@ -8375,23 +8394,27 @@ window.DAILY_VOCAB_DB = [
     "en": "wake up late; get started too late in the morning",
     "root": "siang",
     "root_cn": "白天；中午",
-    "example": "Aku tadi kesiangan, jadi harus atur ulang jadwal pagi.",
-    "example_cn": "我今天起晚了，所以得重新安排上午的日程。",
+    "example": "Maaf, aku kesiangan, jadi telat ke kantor.",
+    "example_cn": "抱歉，我起晚了，所以上班迟到了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-10-04 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-10-04"
     ],
     "lesson_occurrences": [
-      "2026-09-10 08:00"
+      "2026-09-10 08:00",
+      "2026-10-04 18:00"
     ]
   },
   {
@@ -9058,16 +9081,16 @@ window.DAILY_VOCAB_DB = [
     "en": "get provoked; take the bait; be drawn into reacting",
     "root": "pancing",
     "root_cn": "钓；引诱；诱出反应",
-    "example": "Kalau ada komentar keras, jangan langsung kepancing emosi.",
-    "example_cn": "如果有人说话很冲，不要马上被激起情绪。",
+    "example": "Aku nggak mau kepancing omongan dia lagi.",
+    "example_cn": "我不想再被他的话激到了。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-22 08:00",
+    "last_seen": "2026-10-04 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9076,14 +9099,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-12",
       "2026-09-20",
       "2026-09-21",
-      "2026-09-22"
+      "2026-09-22",
+      "2026-10-04"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
       "2026-09-20 18:00",
       "2026-09-21 08:00",
       "2026-09-21 18:00",
-      "2026-09-22 08:00"
+      "2026-09-22 08:00",
+      "2026-10-04 18:00"
     ]
   },
   {
@@ -12769,28 +12794,30 @@ window.DAILY_VOCAB_DB = [
     "en": "separate",
     "root": "pisah",
     "root_cn": "分开",
-    "example": "Tolong memisahkan dokumen asli dan salinannya.",
-    "example_cn": "请把原件和复印件分开。",
+    "example": "Ibu memisahkan baju putih dari baju berwarna sebelum mencuci.",
+    "example_cn": "洗衣服之前，妈妈把白衣服和彩色衣服分开。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-10-02 18:00",
+    "last_seen": "2026-10-04 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-24",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-04"
     ],
     "lesson_occurrences": [
       "2026-09-24 08:00",
       "2026-09-24 18:00",
-      "2026-10-02 18:00"
+      "2026-10-02 18:00",
+      "2026-10-04 18:00"
     ]
   },
   {
@@ -17171,6 +17198,82 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-04 08:00"
+    ]
+  },
+  {
+    "word": "buat",
+    "cn": "为了；给；（口语）做",
+    "en": "for; to make (colloquial)",
+    "root": "buat",
+    "root_cn": "做；制作；为了",
+    "example": "Syal ini buat Ibu, bukan buat aku.",
+    "example_cn": "这条围巾是给妈妈的，不是给我的。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 18:00",
+    "last_seen": "2026-10-04 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 18:00"
+    ]
+  },
+  {
+    "word": "belanja",
+    "cn": "购物；买东西；采购",
+    "en": "to shop; to do the shopping",
+    "root": "belanja",
+    "root_cn": "购物；采购",
+    "example": "Setiap Minggu pagi, ibu belanja sayur di pasar.",
+    "example_cn": "每个星期天早上，妈妈都去市场买菜。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 18:00",
+    "last_seen": "2026-10-04 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 18:00"
+    ]
+  },
+  {
+    "word": "mengajak",
+    "cn": "邀请；约；招呼（一起做某事）",
+    "en": "to invite; to ask someone along",
+    "root": "ajak",
+    "root_cn": "邀请；招呼",
+    "example": "Dia mengajak saya makan malam di rumahnya.",
+    "example_cn": "他邀请我去他家吃晚饭。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 18:00",
+    "last_seen": "2026-10-04 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 18:00"
     ]
   }
 ];
