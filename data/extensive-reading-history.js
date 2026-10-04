@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261003-belanja-pasar","date":"2026-10-03","title":"Setelah Gajian, Pegawai Diajak Belanja di Pasar","title_cn":"发薪后去传统市场：Gunungkidul 的新安排","path":"data/extensive-reading-history/2026-10-03.js"},
 {"id":"er-20261002-masnya-atrbpn","date":"2026-10-02","title":"Bingung Mengurus Sertifikat Tanah? Coba Tanya Lewat TikTok","title_cn":"办理土地证书有疑问？现在可以通过 TikTok 直接咨询","path":"data/extensive-reading-history/2026-10-02.js"},
 {"id":"er-20261001-rob-jakarta-utara","date":"2026-10-01","title":"Pesisir Jakarta Waspada Rob pada Oktober","title_cn":"雅加达北部沿海10月需警惕海水倒灌","path":"data/extensive-reading-history/2026-10-01.js"},
 {"id":"er-20260930-kemon-kemayoran","date":"2026-09-30","title":"Shuttle Gratis KEMON Mulai Diuji Coba di Kemayoran","title_cn":"Kemayoran 免费接驳巴士 KEMON 开始试运行","path":"data/extensive-reading-history/2026-09-30.js"},
