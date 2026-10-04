@@ -1,0 +1,345 @@
+{
+  "date": "2026-10-04",
+  "session": "pm",
+  "time": "18:00",
+  "day": 44,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Belanja hadiah buat Ibu",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "buat",
+    "belanja",
+    "mengajak"
+  ],
+  "vocab": [
+    {
+      "word": "buat",
+      "display": "buat",
+      "audio_text": "buat",
+      "cn": "为了；给；（口语）做",
+      "en": "for; to make (colloquial)",
+      "root": "buat",
+      "root_cn": "做；制作；为了",
+      "formation": "口语里 buat 常替代 untuk 表示“给/为了”，也可单独当“做、制作”用（等于 membuat）。常见搭配：buat Ibu（给妈妈）、buat apa（干嘛/为了什么）、buat kue（做蛋糕）、buat besok（留给明天用）。",
+      "example": "Syal ini buat Ibu, bukan buat aku.",
+      "example_cn": "这条围巾是给妈妈的，不是给我的。",
+      "synonym_note": "buat（口语）≈ untuk（标准、书面）：写作文和正式邮件用 untuk，聊天用 buat 更自然；buat 作“做”时≈ membuat，更口语的是 bikin。",
+      "usage_note": "本晚课新词（fuzzy，口语新词）；重点练习 3 秒内说出 buat + 人（buat Ibu / buat kamu）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "belanja",
+      "display": "belanja",
+      "audio_text": "belanja",
+      "cn": "购物；买东西；采购",
+      "en": "to shop; to do the shopping",
+      "root": "belanja",
+      "root_cn": "购物；采购",
+      "formation": "动词，也可作名词。常见搭配：belanja bulanan（月度采购）、belanja online（网购）、daftar belanja（购物清单）、uang belanja（买菜钱/生活开销）、ajak belanja（约去买东西）。",
+      "example": "Setiap Minggu pagi, ibu belanja sayur di pasar.",
+      "example_cn": "每个星期天早上，妈妈都去市场买菜。",
+      "synonym_note": "belanja 指“去买东西”这个活动，不需要说具体买什么；membeli 后面要接具体物品（membeli tas）；berbelanja 更书面。",
+      "usage_note": "本晚课新词（fuzzy）；练习 belanja 后直接接地点或用途，不要说成 membeli belanja。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengajak",
+      "display": "mengajak",
+      "audio_text": "mengajak",
+      "cn": "邀请；约；招呼（一起做某事）",
+      "en": "to invite; to ask someone along",
+      "root": "ajak",
+      "root_cn": "邀请；招呼",
+      "formation": "me- + ajak：动词。常见结构：mengajak + 人 + 动词（mengajak teman makan）；ajakan＝邀请/提议（名词）；diajak＝被邀请；口语常说 ngajak。",
+      "example": "Dia mengajak saya makan malam di rumahnya.",
+      "example_cn": "他邀请我去他家吃晚饭。",
+      "synonym_note": "mengajak 强调“约你一起做某事”，轻松自然；mengundang 偏正式，用于邀请出席婚礼、会议、宴会；memanggil 只是“叫、喊”。",
+      "usage_note": "本晚课新词（dont）；晚课重点：mengajak + 人 + 动词，3 秒内说出“约朋友去…”。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "sekadar",
+      "display": "sekadar",
+      "audio_text": "sekadar",
+      "cn": "只是；仅仅；随便",
+      "en": "merely; just; only",
+      "root": "kadar",
+      "root_cn": "程度；分量",
+      "formation": "副词/连接词。常见搭配：sekadar lihat-lihat（只是随便看看）、sekadar basa-basi（只是客套一下）、bukan sekadar（不只是）、sekadar untuk（只是为了）。",
+      "example": "Aku sekadar bertanya, bukan mau membeli.",
+      "example_cn": "我只是问问，不是要买。",
+      "synonym_note": "sekadar 带“随便、不深入、没认真”的意味；hanya / cuma 只是“仅仅”，更中性。bukan sekadar … tetapi … 表示“不只是……而且……”。",
+      "usage_note": "重点复习词（focus_pool）；练习 sekadar + 动词，不要和 hanya 混用成“sekadar saja”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "memisahkan",
+      "display": "memisahkan",
+      "audio_text": "memisahkan",
+      "cn": "把……分开；分离；分类",
+      "en": "to separate; to set apart",
+      "root": "pisah",
+      "root_cn": "分开；分离",
+      "formation": "me- + pisah + -kan，及物动词，常用 memisahkan A dari B。相关词：terpisah＝处于分开状态；perpisahan＝告别；berpisah＝（人）分开/分手。",
+      "example": "Ibu memisahkan baju putih dari baju berwarna sebelum mencuci.",
+      "example_cn": "洗衣服之前，妈妈把白衣服和彩色衣服分开。",
+      "synonym_note": "memisahkan 是“你把东西分开”（主动、有宾语）；berpisah 是人与人分开（不及物）；terpisah 是“已经处于分开的状态”。",
+      "usage_note": "重点复习词（focus_pool）；练习 memisahkan A dari B 的结构，宾语在前、dari 后接被分开的对象。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kepake",
+      "display": "kepake",
+      "audio_text": "kepake",
+      "cn": "派得上用场；被用到（口语）",
+      "en": "to come in handy; to get used (colloquial)",
+      "root": "pakai",
+      "root_cn": "使用；穿戴",
+      "formation": "口语 ke- 结构，表示“不是特意、结果被用上了”。常见搭配：kepake terus（一直用得上）、nggak kepake（根本用不上）、ternyata kepake（原来用得上）。",
+      "example": "Payung kecil ini ternyata kepake waktu hujan tiba-tiba turun.",
+      "example_cn": "这把小伞，下雨时突然派上了用场。",
+      "synonym_note": "kepake（口语）≈ terpakai（标准，“被用到/被用掉”）；dipakai 只是“被使用”，没有“意外派上用场”的意味。",
+      "usage_note": "重点复习词（低曝光）；练习 kepake 的否定与肯定：kepake terus / nggak kepake。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kepancing",
+      "display": "kepancing",
+      "audio_text": "kepancing",
+      "cn": "被激到；被引得做出反应；忍不住上钩（口语）",
+      "en": "to take the bait; to get provoked",
+      "root": "pancing",
+      "root_cn": "钓；引诱；诱出反应",
+      "formation": "ke- + pancing（钓鱼）：口语“上钩、被激”。常见搭配：kepancing omongan orang（被别人的话激到）、hampir kepancing（差点上钩）、jangan kepancing（别被带着走）。",
+      "example": "Aku nggak mau kepancing omongan dia lagi.",
+      "example_cn": "我不想再被他的话激到了。",
+      "synonym_note": "kepancing 是“被激得做出反应”；memancing 是“主动引诱/钓鱼”；dipancing 是“被人引诱”（别人有意）。",
+      "usage_note": "重点复习词（低曝光）；练习 kepancing + 谁的话/什么促销，说出被什么带偏了。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kesiangan",
+      "display": "kesiangan",
+      "audio_text": "kesiangan",
+      "cn": "起晚了；睡过头；到时天已大亮",
+      "en": "to oversleep; to be too late in the day",
+      "root": "siang",
+      "root_cn": "白天；中午",
+      "formation": "ke- + siang + -an：表示“超过了合适的时间”。常见搭配：kesiangan bangun（起晚了）、kesiangan berangkat（出门晚了）。类似结构：kemalaman（太晚）、kepagian（太早）。",
+      "example": "Maaf, aku kesiangan, jadi telat ke kantor.",
+      "example_cn": "抱歉，我起晚了，所以上班迟到了。",
+      "synonym_note": "kesiangan 强调“起床/出发时天已经大亮了”；terlambat（口语 telat）泛指任何迟到；kepagian 正相反，指来得太早。",
+      "usage_note": "重点复习词（低曝光，口语）；练习用 kesiangan 解释迟到的原因。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngerjain",
+      "display": "ngerjain",
+      "audio_text": "ngerjain",
+      "cn": "做；处理（工作、作业）；也可指捉弄人（口语）",
+      "en": "to do (work/homework); to prank someone (colloquial)",
+      "root": "kerja",
+      "root_cn": "工作；做",
+      "formation": "ngerjain＝mengerjakan 的口语说法。常见搭配：ngerjain tugas / PR / laporan（做作业/报告）、lagi ngerjain apa（在做什么）。注意：ngerjain orang 是“捉弄人”，要看上下文。",
+      "example": "Semalam aku ngerjain laporan sampai jam dua pagi.",
+      "example_cn": "昨晚我做报告一直做到凌晨两点。",
+      "synonym_note": "ngerjain（口语）≈ mengerjakan（标准）；ngurusin 偏“处理、操心某件事”，不强调“做完一项任务”。",
+      "usage_note": "应用复现（近期课程已教，非今天08:00内容）；练习 ngerjain + 具体任务。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nggak heran",
+      "display": "nggak heran",
+      "audio_text": "nggak heran",
+      "cn": "难怪；不奇怪",
+      "en": "no wonder; not surprising",
+      "root": "heran",
+      "root_cn": "惊讶；觉得奇怪",
+      "formation": "口语固定表达：nggak heran + 结果/情况，也可说 nggak heran kalau …（如果……也不奇怪）。标准写法是 tidak heran / tidak mengherankan。",
+      "example": "Dia kerja dari pagi sampai malam, nggak heran dia capek.",
+      "example_cn": "他从早做到晚，难怪他累。",
+      "synonym_note": "nggak heran（口语）≈ pantas saja（难怪，更口语）≈ tidak mengherankan（书面）；nggak heran 后接你已经看到的结果。",
+      "usage_note": "应用复现（近期课程已教，非今天08:00内容）；练习 “原因，nggak heran 结果”的句式。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nyempetin",
+      "display": "nyempetin",
+      "audio_text": "nyempetin",
+      "cn": "特意抽空做；挤出时间（口语）",
+      "en": "to make time to; to squeeze in (colloquial)",
+      "root": "sempat",
+      "root_cn": "有空；来得及",
+      "formation": "nyempetin＝menyempatkan（diri）的口语说法。常见搭配：nyempetin datang（特意抽空来）、nyempetin telepon（抽空打个电话）、nyempetin mampir（抽空顺路过来）。",
+      "example": "Sesibuk apa pun, dia selalu nyempetin telepon ibunya.",
+      "example_cn": "不管多忙，他总会抽空给妈妈打电话。",
+      "synonym_note": "nyempetin 强调“特意挤出时间”；sempat 只是“有空/来得及”，不带特意的意思；meluangkan waktu＝专门腾出时间，更书面。",
+      "usage_note": "应用复现（近期课程已教，非今天08:00内容）；练习 nyempetin + 动词，体现“很忙但仍抽空”。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Hari Sabtu pagi, Rina mengajak Dewi belanja untuk mencari hadiah ulang tahun ibunya. Mereka janji bertemu jam sembilan, tetapi Dewi kesiangan karena semalam masih mengerjakan laporan kantor. Rina menunggu hampir satu jam dan menulis daftar belanja. Setelah Dewi datang, mereka mulai berkeliling. Awalnya Rina sekadar ingin melihat-lihat, tetapi seorang penjual berkata bahwa diskon tas itu tinggal hari ini. Rina hampir kepancing, padahal ibunya sudah punya banyak tas. Dewi cepat mengingatkan, \"Pikirkan dulu apa yang benar-benar ibumu perlukan.\" Rina mengangguk, lalu memisahkan barang yang perlu dari barang yang hanya terlihat menarik. Akhirnya mereka membeli sebuah syal dan kue kesukaan ibunya. Rina lega karena uangnya tidak habis untuk barang yang tidak perlu.",
+    "cn": "星期六早上，Rina 约 Dewi 一起去买东西，想给妈妈挑生日礼物。她们约好九点见面，可是 Dewi 起晚了，因为昨晚还在做公司的报告。Rina 等了将近一个小时，还顺便写了购物清单。Dewi 到了以后，她们开始四处逛。起初 Rina 只是想随便看看，但一个店员说那个包的折扣只到今天为止。Rina 差点就上钩了，可是她妈妈已经有很多包了。Dewi 赶紧提醒她：“先想清楚你妈妈真正需要什么。”Rina 点点头，然后把真正需要的东西和只是看起来有吸引力的东西分开。最后她们买了一条围巾和妈妈最爱吃的蛋糕。Rina 很欣慰，因为钱没有花在不需要的东西上。"
+  },
+  "dialogue": {
+    "title": "买完礼物后，在商场咖啡店聊天",
+    "lines": [
+      {
+        "speaker": "Rina",
+        "id": "Makasih ya, Dew, udah nyempetin datang walaupun kesiangan.",
+        "cn": "谢谢你啊，Dew，虽然起晚了还是特意抽空赶来了。"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Nggak apa-apa kok. Semalam aku ngerjain laporan sampai jam dua, makanya bangunnya kesiangan.",
+        "cn": "没关系啦。昨晚我做报告做到两点，所以才起晚了。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Nggak heran kamu ngantuk banget tadi. Untung kamu ngingetin aku soal tas itu, aku hampir kepancing.",
+        "cn": "难怪你刚才那么困。幸好你提醒了我那个包的事，我差点上钩了。"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Tenang, syal ini pilihan yang bagus. Warnanya netral, pasti kepake terus.",
+        "cn": "放心，这条围巾选得很好。颜色很百搭，妈妈肯定会一直用得上。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Iya, syal sama kuenya buat Ibu semua. Lain kali aku ajak kamu belanja lagi, tapi bukan pagi-pagi!",
+        "cn": "对啊，围巾和蛋糕全都是给妈妈的。下次我再约你去买东西，不过不约大清早！"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "介绍你最近一次和朋友或家人一起去买东西的经历：是谁约了谁，买了什么，是给谁买的。要求：至少用上 mengajak、belanja、buat 中的两个，写 2–3 句自然的印尼语，不要照抄课文。",
+      "reference_answer": "Minggu lalu saya mengajak adik belanja di dekat rumah. Saya beli sepatu buat dia karena sepatunya sudah rusak. Dia senang sekali.",
+      "reference_cn": "上周我约弟弟在家附近买东西。我给他买了一双鞋，因为他的鞋已经坏了。他非常开心。"
+    },
+    {
+      "task": "说一次你因为起晚了而打乱计划的经历，并解释原因。要求：用上 kesiangan，再加上 nggak heran 或 ngerjain 中的一个，写 2–3 句，原因要符合你自己的生活。",
+      "reference_answer": "Kemarin saya kesiangan karena semalam ngerjain tugas sampai larut. Akibatnya saya ketinggalan bus pertama. Nggak heran kalau saya capek seharian.",
+      "reference_cn": "昨天我起晚了，因为昨晚做作业做到很晚。结果我错过了第一班公交车。难怪我一整天都觉得累。"
+    },
+    {
+      "task": "说说你有没有差点被促销或朋友的话带偏、买了不需要的东西，后来你是怎么处理的。要求：用上 kepancing 和 memisahkan，写 2–3 句，要有“为什么没买/怎么区分需要与不需要”的想法，不要照抄课文。",
+      "reference_answer": "Waktu ada diskon besar, saya hampir kepancing beli jaket baru. Lalu saya memisahkan barang yang benar-benar perlu dari barang yang hanya ingin. Akhirnya saya cuma membeli satu tas kecil.",
+      "reference_cn": "有大折扣的时候，我差点上钩买了一件新外套。后来我把真正需要的东西和只是想要的东西分开。最后我只买了一个小包。"
+    },
+    {
+      "task": "介绍一件你买了以后真的用得上的东西，并说明你为什么不是随便买的。要求：用上 kepake，再加上 sekadar 或 nyempetin 中的一个，写 2–3 句，贴近你的真实生活。",
+      "reference_answer": "Saya punya tas kecil yang kepake terus tiap hari. Saya beli bukan sekadar karena modelnya lucu, tapi karena cukup besar buat dompet dan ponsel. Saya bahkan nyempetin membandingkan harga di tiga toko.",
+      "reference_cn": "我有一个小包，每天都用得上。我买它不只是因为样子可爱，而是因为大小刚好够放钱包和手机。我甚至还特意抽空比了三家店的价格。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "朋友说：“Dia kerja lembur tiga hari berturut-turut.”（他连续加班三天了。）你想表达“难怪他看起来这么累”，哪一句最自然？",
+        "options": [
+          "Nggak percaya dia kelihatan capek.",
+          "Nggak heran dia kelihatan capek.",
+          "Nggak mungkin dia kelihatan capek.",
+          "Nggak apa-apa dia kelihatan capek."
+        ],
+        "answer_index": 1,
+        "answer": "Nggak heran dia kelihatan capek.",
+        "explain": "nggak heran + 你已经看到的结果＝“难怪……”。nggak percaya 是“不敢相信”，nggak mungkin 是“不可能”，nggak apa-apa 是“没关系”，都不能表示“难怪”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Aku mau ___ kamu belanja besok pagi, mau ikut?（我想约你明天早上去买东西，去吗？）",
+        "options": [
+          "mengundang",
+          "menyuruh",
+          "memanggil",
+          "mengajak"
+        ],
+        "answer_index": 3,
+        "answer": "mengajak",
+        "explain": "mengajak + 人 + 动词＝约某人一起做某事。mengundang 用于正式邀请出席活动；menyuruh 是“吩咐/命令”；memanggil 是“叫、喊”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "场景：你出门时随手带了一把小伞，结果半路突然下大雨，伞派上了用场。哪个词填进去最合适？Payung kecil ini ternyata ___ waktu hujan deras.",
+        "options": [
+          "kepake",
+          "kepancing",
+          "kesiangan",
+          "kelewat"
+        ],
+        "answer_index": 0,
+        "answer": "kepake",
+        "explain": "kepake＝派得上用场。kepancing 是“被激到”，kesiangan 是“起晚了”，kelewat 是“错过/过头”，都是 ke- 开头，但意思和这个场景不符。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Maaf, aku ___ jadi telat ke kantor.（起晚了）",
+        "answer": "kesiangan",
+        "explain": "kesiangan＝起晚了、睡过头。telat 只是“迟到”，不能说明是因为起床晚了。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Aku ___ lihat-lihat dulu, belum mau beli apa-apa.（只是；随便）",
+        "answer": "sekadar",
+        "explain": "sekadar lihat-lihat＝只是随便看看，带有“不认真、不打算买”的意味；也可以说 cuma lihat-lihat。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我把买东西的钱和存款分开了。",
+        "tokens": [
+          "Aku",
+          "memisahkan",
+          "uang",
+          "belanja",
+          "dari",
+          "uang",
+          "tabungan"
+        ],
+        "answer": "Aku memisahkan uang belanja dari uang tabungan",
+        "answer_cn": "我把买东西的钱和存款分开了。",
+        "explain": "结构是 memisahkan + 被分开的对象 + dari + 另一个对象。uang belanja 是买东西/生活开销的钱，uang tabungan 是存款。"
+      }
+    ],
+    "self_check": [
+      "不看词卡，3 秒内说出 buat、belanja、mengajak 的意思，并各说一个搭配（buat Ibu、daftar belanja、mengajak teman makan）。",
+      "能区分 buat 与 untuk、mengajak 与 mengundang、kesiangan 与 telat、kepake 与 terpakai。",
+      "能不看课文，用 nggak heran、ngerjain、nyempetin 各说一句真实的话。"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "先做 3 秒主动提取：看中文说出 buat / belanja / mengajak，再依次说出 sekadar、memisahkan、kepake、kepancing、kesiangan，答不出的立刻看词卡再说一遍。",
+      "对比易混词：buat 与 untuk、mengajak 与 mengundang、sekadar 与 hanya、memisahkan 与 berpisah、kesiangan 与 telat，各说一句例句。",
+      "用 30 秒向朋友讲一遍“Rina 和 Dewi 买生日礼物”的经过，至少用上 4 个目标词，不要背课文。",
+      "最后用 nggak heran、ngerjain、nyempetin 各编一句你自己生活中的真实表达，其中至少一句用到 buat。"
+    ]
+  }
+}
