@@ -7279,9 +7279,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-23 18:00",
+    "last_seen": "2026-10-04 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -7289,12 +7289,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-07",
       "2026-09-18",
-      "2026-09-23"
+      "2026-09-23",
+      "2026-10-04"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
       "2026-09-18 18:00",
-      "2026-09-23 18:00"
+      "2026-09-23 18:00",
+      "2026-10-04 08:00"
     ]
   },
   {
@@ -8587,17 +8589,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-10-04 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-11"
+      "2026-09-11",
+      "2026-10-04"
     ],
     "lesson_occurrences": [
-      "2026-09-11 08:00"
+      "2026-09-11 08:00",
+      "2026-10-04 08:00"
     ]
   },
   {
@@ -8637,17 +8641,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-10-04 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-11"
+      "2026-09-11",
+      "2026-10-04"
     ],
     "lesson_occurrences": [
-      "2026-09-11 08:00"
+      "2026-09-11 08:00",
+      "2026-10-04 08:00"
     ]
   },
   {
@@ -9173,19 +9179,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-04 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-12",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-04"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-10-04 08:00"
     ]
   },
   {
@@ -15431,19 +15439,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-09-30 18:00",
+    "last_seen": "2026-10-04 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-04"
     ],
     "lesson_occurrences": [
       "2026-09-30 08:00",
-      "2026-09-30 18:00"
+      "2026-09-30 18:00",
+      "2026-10-04 08:00"
     ]
   },
   {
@@ -16911,6 +16921,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-03 18:00"
+    ]
+  },
+  {
+    "word": "kelompok",
+    "cn": "组；小组；群体",
+    "en": "group",
+    "root": "kelompok",
+    "root_cn": "组；群",
+    "example": "Dalam tugas ini, satu kelompok terdiri dari lima orang.",
+    "example_cn": "这次作业每一组由五个人组成。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 08:00"
+    ]
+  },
+  {
+    "word": "mengenai",
+    "cn": "关于；有关",
+    "en": "regarding; concerning",
+    "root": "kena",
+    "root_cn": "碰到；涉及",
+    "example": "Saya mau bertanya mengenai biaya pendaftaran.",
+    "example_cn": "我想问一下关于报名费的事。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 08:00"
+    ]
+  },
+  {
+    "word": "langkah",
+    "cn": "步骤；脚步；措施",
+    "en": "step; measure",
+    "root": "langkah",
+    "root_cn": "步；步子",
+    "example": "Langkah pertama adalah membaca petunjuk dengan teliti.",
+    "example_cn": "第一步是仔细阅读说明。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 08:00"
+    ]
+  },
+  {
+    "word": "meninggal",
+    "cn": "去世；过世",
+    "en": "to pass away",
+    "root": "tinggal",
+    "root_cn": "留下；居住",
+    "example": "Nenek saya meninggal dunia dua tahun lalu.",
+    "example_cn": "我奶奶两年前去世了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 08:00"
+    ]
+  },
+  {
+    "word": "hak",
+    "cn": "权利；应得的权益",
+    "en": "right; entitlement",
+    "root": "hak",
+    "root_cn": "权利",
+    "example": "Setiap pekerja punya hak atas cuti tahunan.",
+    "example_cn": "每位员工都享有年假的权利。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 08:00"
+    ]
+  },
+  {
+    "word": "menatap",
+    "cn": "凝视；注视",
+    "en": "to gaze at; to stare at",
+    "root": "tatap",
+    "root_cn": "凝视",
+    "example": "Dia menatap saya lama, lalu senyum.",
+    "example_cn": "他盯着我看了很久，然后笑了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 08:00"
+    ]
+  },
+  {
+    "word": "parah",
+    "cn": "严重的；糟糕的（多指坏事）",
+    "en": "severe; terrible",
+    "root": "parah",
+    "root_cn": "严重",
+    "example": "Banjir di kota itu cukup parah tahun ini.",
+    "example_cn": "那座城市今年的洪水相当严重。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 08:00"
+    ]
+  },
+  {
+    "word": "kekuatan",
+    "cn": "力量；实力；效力",
+    "en": "strength; power",
+    "root": "kuat",
+    "root_cn": "强；有力",
+    "example": "Setelah sembuh, dia latihan tiap hari untuk menambah kekuatan kakinya.",
+    "example_cn": "病好以后，他每天训练来增加腿部力量。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 08:00"
+    ]
+  },
+  {
+    "word": "memenuhi",
+    "cn": "满足；符合；装满",
+    "en": "to fulfil; to meet; to fill",
+    "root": "penuh",
+    "root_cn": "满",
+    "example": "Pelamar harus memenuhi semua syarat yang tertulis di pengumuman.",
+    "example_cn": "应聘者必须符合公告上写的所有条件。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 08:00"
+    ]
+  },
+  {
+    "word": "rupanya",
+    "cn": "原来（才发现）；看来",
+    "en": "it turns out; apparently",
+    "root": "rupa",
+    "root_cn": "样子；外貌",
+    "example": "Saya kira dia marah, rupanya dia cuma capek.",
+    "example_cn": "我还以为他生气了，原来只是累了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-04"
+    ],
+    "lesson_occurrences": [
+      "2026-10-04 08:00"
     ]
   }
 ];

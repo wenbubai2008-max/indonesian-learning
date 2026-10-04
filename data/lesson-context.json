@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-04",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 44
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-03T14:15:41.805Z",
-    "lesson_watermark": "2026-10-03 18:00",
-    "index_updated": "2026-10-03",
-    "runtime_hash": "28e3bee2e4b26235e9d5cca5cbf766a08952c84c6ed6d15dcfaeac18490997d0",
-    "index_hash": "ed50717f4a800b46c0c2db6e7e45d3ecb2dc83f5862a9ecc95a01d53a3b8d1c1",
+    "runtime_generated_at": "2026-10-04T00:27:43.509Z",
+    "lesson_watermark": "2026-10-04 08:00",
+    "index_updated": "2026-10-04",
+    "runtime_hash": "490541065a2da9520146c5a36dacc296e5bf33fd74c1cb92357fbd93c3393406",
+    "index_hash": "0a979dcac50a9d5c98564a2ae8b41d307462e033c1df89bc8d317e4e09ef0297",
     "rules_hash": "112a2dbb2e62e9937feae9c4e60b52454c4d350e0844cf68f59ad724649db454"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "kelompok",
-        "群体 / 小组"
-      ],
-      [
-        "mengenai",
-        "关于、涉及"
-      ],
-      [
-        "langkah",
-        "步伐"
-      ],
-      [
-        "meninggal",
-        "死亡"
-      ],
-      [
-        "hak",
-        "权利 / 法律"
-      ],
-      [
-        "menatap",
-        "凝视"
-      ],
-      [
-        "parah",
-        "“严重、离谱”"
-      ],
-      [
-        "kekuatan",
-        "力量 / 强度"
-      ],
-      [
-        "memenuhi",
-        "履行 / 满足"
-      ],
-      [
-        "rupanya",
-        "看来"
-      ],
       [
         "berkencan",
         "约会"
@@ -2169,6 +2129,29 @@
         "tukar",
         "kwitansi"
       ]
+    },
+    {
+      "date": "2026-10-04",
+      "session": "am",
+      "review_core": [
+        "baper",
+        "beliau",
+        "nanggung",
+        "kelepasan",
+        "kelewat"
+      ],
+      "new_words": [
+        "kelompok",
+        "mengenai",
+        "langkah",
+        "meninggal",
+        "hak",
+        "menatap",
+        "parah",
+        "kekuatan",
+        "memenuhi",
+        "rupanya"
+      ]
     }
   ],
   "previous_pm": {
@@ -2187,7 +2170,88 @@
       "ngabarin"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-04",
+    "vocab": [
+      [
+        "kelompok",
+        "组；小组；群体",
+        "group",
+        "kelompok",
+        "组；群"
+      ],
+      [
+        "mengenai",
+        "关于；有关",
+        "regarding; concerning",
+        "kena",
+        "碰到；涉及"
+      ],
+      [
+        "langkah",
+        "步骤；脚步；措施",
+        "step; measure",
+        "langkah",
+        "步；步子"
+      ],
+      [
+        "meninggal",
+        "去世；过世",
+        "to pass away",
+        "tinggal",
+        "留下；居住"
+      ],
+      [
+        "hak",
+        "权利；应得的权益",
+        "right; entitlement",
+        "hak",
+        "权利"
+      ],
+      [
+        "menatap",
+        "凝视；注视",
+        "to gaze at; to stare at",
+        "tatap",
+        "凝视"
+      ],
+      [
+        "parah",
+        "严重的；糟糕的（多指坏事）",
+        "severe; terrible",
+        "parah",
+        "严重"
+      ],
+      [
+        "kekuatan",
+        "力量；实力；效力",
+        "strength; power",
+        "kuat",
+        "强；有力"
+      ],
+      [
+        "memenuhi",
+        "满足；符合；装满",
+        "to fulfil; to meet; to fill",
+        "penuh",
+        "满"
+      ],
+      [
+        "rupanya",
+        "原来（才发现）；看来",
+        "it turns out; apparently",
+        "rupa",
+        "样子；外貌"
+      ]
+    ],
+    "review_vocab": [
+      "baper",
+      "beliau",
+      "nanggung",
+      "kelepasan",
+      "kelewat"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
