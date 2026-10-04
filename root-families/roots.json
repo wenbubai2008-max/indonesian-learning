@@ -66,31 +66,41 @@
           "word": "bekerja",
           "cn": "工作；上班",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "bekerja di kantor",
+          "mini_example_cn": "在办公室上班"
         },
         {
           "word": "pekerja",
           "cn": "工人；劳动者",
           "formation": "pe-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pekerja pabrik",
+          "mini_example_cn": "工厂工人"
         },
         {
           "word": "pekerjaan",
           "cn": "工作；职业",
           "formation": "pe-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pekerjaan baru",
+          "mini_example_cn": "新工作"
         },
         {
           "word": "mengerjakan",
           "cn": "做（某项工作）",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mengerjakan tugas",
+          "mini_example_cn": "做任务"
         },
         {
           "word": "kerja sama",
           "cn": "合作",
           "formation": "词组",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "kerja sama dengan tim",
+          "mini_example_cn": "与团队合作"
         }
       ],
       "recommended": [
@@ -336,37 +346,49 @@
           "word": "melihat",
           "cn": "看见",
           "formation": "meN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "melihat mobil itu",
+          "mini_example_cn": "看到那辆车"
         },
         {
           "word": "terlihat",
           "cn": "看起来；看得见",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "terlihat jelas",
+          "mini_example_cn": "看得很清楚"
         },
         {
           "word": "kelihatan",
           "cn": "看起来；看得见（口语）",
           "formation": "ke-an",
-          "register": "口语"
+          "register": "口语",
+          "mini_example": "kelihatan capek",
+          "mini_example_cn": "看起来很累"
         },
         {
           "word": "memperlihatkan",
           "cn": "展示；给…看",
           "formation": "memper-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "memperlihatkan foto",
+          "mini_example_cn": "展示照片"
         },
         {
           "word": "penglihatan",
           "cn": "视力",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "penglihatan kabur",
+          "mini_example_cn": "视线模糊"
         },
         {
           "word": "lihat-lihat",
           "cn": "随便看看",
           "formation": "重叠",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "lihat-lihat dulu",
+          "mini_example_cn": "先随便看看"
         }
       ],
       "recommended": [
@@ -386,31 +408,41 @@
           "word": "mendengar",
           "cn": "听到",
           "formation": "meN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mendengar suara",
+          "mini_example_cn": "听到声音"
         },
         {
           "word": "mendengarkan",
           "cn": "（专心）听",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mendengarkan musik",
+          "mini_example_cn": "听音乐"
         },
         {
           "word": "terdengar",
           "cn": "听起来；听得到",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "terdengar jelas",
+          "mini_example_cn": "听得清楚"
         },
         {
           "word": "kedengaran",
           "cn": "听起来（口语）",
           "formation": "ke-an",
-          "register": "口语"
+          "register": "口语",
+          "mini_example": "kedengaran aneh",
+          "mini_example_cn": "听起来奇怪"
         },
         {
           "word": "pendengar",
           "cn": "听众",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pendengar setia",
+          "mini_example_cn": "忠实听众"
         }
       ],
       "recommended": [
@@ -430,37 +462,49 @@
           "word": "berpikir",
           "cn": "思考",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "berpikir dulu",
+          "mini_example_cn": "先想一想"
         },
         {
           "word": "memikirkan",
           "cn": "考虑；惦记（某事）",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "memikirkan masa depan",
+          "mini_example_cn": "考虑未来"
         },
         {
           "word": "pikiran",
           "cn": "想法；思绪",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pikiran negatif",
+          "mini_example_cn": "消极想法"
         },
         {
           "word": "pemikiran",
           "cn": "思想；见解",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pemikiran baru",
+          "mini_example_cn": "新观点"
         },
         {
           "word": "kepikiran",
           "cn": "一直想着（口语）",
           "formation": "ke-an",
-          "register": "口语"
+          "register": "口语",
+          "mini_example": "kepikiran terus",
+          "mini_example_cn": "一直惦记着"
         },
         {
           "word": "terpikir",
           "cn": "（突然）想到",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "tiba-tiba terpikir",
+          "mini_example_cn": "突然想到"
         }
       ],
       "recommended": [
@@ -480,31 +524,41 @@
           "word": "merasa",
           "cn": "觉得",
           "formation": "meN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "merasa capek",
+          "mini_example_cn": "觉得累"
         },
         {
           "word": "merasakan",
           "cn": "感受到；尝到",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "merasakan sakit",
+          "mini_example_cn": "感到疼"
         },
         {
           "word": "perasaan",
           "cn": "感情；感觉",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "perasaan campur aduk",
+          "mini_example_cn": "心情复杂"
         },
         {
           "word": "terasa",
           "cn": "感觉到；尝起来",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "terasa asin",
+          "mini_example_cn": "尝起来咸"
         },
         {
           "word": "berasa",
           "cn": "有…的感觉（口语）",
           "formation": "ber-",
-          "register": "口语"
+          "register": "口语",
+          "mini_example": "berasa dingin",
+          "mini_example_cn": "感觉冷"
         }
       ],
       "recommended": [
@@ -764,31 +818,41 @@
           "word": "memakai",
           "cn": "使用；穿戴",
           "formation": "meN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "memakai jaket",
+          "mini_example_cn": "穿外套"
         },
         {
           "word": "pakaian",
           "cn": "衣服",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pakaian bersih",
+          "mini_example_cn": "干净的衣服"
         },
         {
           "word": "pemakaian",
           "cn": "使用（量）",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pemakaian listrik",
+          "mini_example_cn": "用电量"
         },
         {
           "word": "dipakai",
           "cn": "被使用；被穿",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "dipakai sehari-hari",
+          "mini_example_cn": "日常使用"
         },
         {
           "word": "terpakai",
           "cn": "已用掉；用得上",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "terpakai semua",
+          "mini_example_cn": "全部用掉"
         }
       ],
       "recommended": [
@@ -960,25 +1024,33 @@
           "word": "mencari",
           "cn": "寻找",
           "formation": "meN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mencari kerja",
+          "mini_example_cn": "找工作"
         },
         {
           "word": "mencarikan",
           "cn": "帮…找",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mencarikan kos",
+          "mini_example_cn": "帮忙找租房"
         },
         {
           "word": "pencarian",
           "cn": "搜索",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pencarian di Google",
+          "mini_example_cn": "在谷歌上搜索"
         },
         {
           "word": "dicari",
           "cn": "被找；（招聘）招",
           "formation": "di-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "dicari karyawan",
+          "mini_example_cn": "招聘员工"
         }
       ],
       "recommended": [
@@ -998,31 +1070,41 @@
           "word": "bertemu",
           "cn": "见面",
           "formation": "ber-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "bertemu teman",
+          "mini_example_cn": "与朋友见面"
         },
         {
           "word": "menemukan",
           "cn": "发现；找到",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menemukan dompet",
+          "mini_example_cn": "找到钱包"
         },
         {
           "word": "menemui",
           "cn": "去见；拜访",
           "formation": "meN-i",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menemui klien",
+          "mini_example_cn": "去见客户"
         },
         {
           "word": "pertemuan",
           "cn": "会议；见面",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pertemuan besok",
+          "mini_example_cn": "明天的会议"
         },
         {
           "word": "ketemu",
           "cn": "见到；找到（口语）",
           "formation": "ke-",
-          "register": "口语"
+          "register": "口语",
+          "mini_example": "ketemu lagi",
+          "mini_example_cn": "再见面"
         }
       ],
       "recommended": [
@@ -1112,31 +1194,41 @@
           "word": "mengingat",
           "cn": "记住；考虑到",
           "formation": "meN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mengingat kejadian itu",
+          "mini_example_cn": "回想那件事"
         },
         {
           "word": "mengingatkan",
           "cn": "提醒",
           "formation": "meN-kan",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mengingatkan aku",
+          "mini_example_cn": "提醒我"
         },
         {
           "word": "ingatan",
           "cn": "记忆",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "ingatan masa kecil",
+          "mini_example_cn": "童年记忆"
         },
         {
           "word": "peringatan",
           "cn": "警告；纪念",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "peringatan dini",
+          "mini_example_cn": "提前警告"
         },
         {
           "word": "teringat",
           "cn": "突然想起",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "teringat masa lalu",
+          "mini_example_cn": "想起往事"
         }
       ],
       "recommended": [
@@ -1296,31 +1388,41 @@
           "word": "berhubungan",
           "cn": "有关；有联系",
           "formation": "ber-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "berhubungan dengan kerja",
+          "mini_example_cn": "与工作有关"
         },
         {
           "word": "menghubungi",
           "cn": "联系（某人）",
           "formation": "meN-i",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "menghubungi lewat WA",
+          "mini_example_cn": "通过 WhatsApp 联系"
         },
         {
           "word": "hubungan",
           "cn": "关系",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "hubungan baik",
+          "mini_example_cn": "良好的关系"
         },
         {
           "word": "perhubungan",
           "cn": "交通运输",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "perhubungan darat",
+          "mini_example_cn": "陆路交通"
         },
         {
           "word": "sehubungan dengan",
           "cn": "关于；鉴于",
           "formation": "se- + hubungan + dengan（书面词组）",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "sehubungan dengan surat ini",
+          "mini_example_cn": "关于这封信（正式）"
         }
       ],
       "recommended": [
@@ -1888,31 +1990,41 @@
           "word": "mengatur",
           "cn": "安排；管理",
           "formation": "meN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mengatur jadwal",
+          "mini_example_cn": "安排日程"
         },
         {
           "word": "aturan",
           "cn": "规则",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "aturan main",
+          "mini_example_cn": "游戏规则"
         },
         {
           "word": "peraturan",
           "cn": "规定；法规",
           "formation": "per-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "peraturan baru",
+          "mini_example_cn": "新规定"
         },
         {
           "word": "teratur",
           "cn": "有规律的",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "hidup teratur",
+          "mini_example_cn": "生活有规律"
         },
         {
           "word": "pengaturan",
           "cn": "设置；安排",
           "formation": "peN-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pengaturan HP",
+          "mini_example_cn": "手机设置"
         }
       ],
       "recommended": [
@@ -1932,37 +2044,49 @@
           "word": "ngurus",
           "cn": "处理；操办（雅加达日常口语）",
           "formation": "mengurus 的非正式说法",
-          "register": "口语"
+          "register": "口语",
+          "mini_example": "ngurus dokumen",
+          "mini_example_cn": "办理文件（口语）"
         },
         {
           "word": "ngurusin",
           "cn": "处理、操办某事（口语）",
           "formation": "mengurusi 的非正式说法",
-          "register": "口语"
+          "register": "口语",
+          "mini_example": "ngurusin masalah",
+          "mini_example_cn": "处理问题（口语）"
         },
         {
           "word": "mengurus",
           "cn": "处理；办理；照顾",
           "formation": "meN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mengurus izin",
+          "mini_example_cn": "办理许可"
         },
         {
           "word": "urusan",
           "cn": "事务；事情",
           "formation": "-an",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "urusan pribadi",
+          "mini_example_cn": "私事"
         },
         {
           "word": "pengurus",
           "cn": "负责人；管理者",
           "formation": "peN-",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "pengurus organisasi",
+          "mini_example_cn": "组织管理人员"
         },
         {
           "word": "mengurusi",
           "cn": "管（某事）",
           "formation": "meN-i",
-          "register": "通用"
+          "register": "通用",
+          "mini_example": "mengurusi anak",
+          "mini_example_cn": "照料孩子"
         }
       ],
       "recommended": [
