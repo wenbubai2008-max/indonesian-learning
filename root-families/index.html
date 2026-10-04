@@ -49,6 +49,7 @@ h1{font-size:29px;margin:13px 0 3px;letter-spacing:-.02em}.sub{margin:0;color:va
 </section>
 <p class="footnote">资料依据上传的 Claude 100 组词根整理，已有少量口语和构词标注修订；例句来自原始编写资料或少量调整，不代表已核验的母语者原始语料。收藏仅保存在当前浏览器，不跨设备同步，亦不会修改 977 主词库或早晚课。</p>
 </main>
+<script src="../data/pronunciation-fix.js?v=20261004-indo-voice1"></script>
 <script>
 (function(){
 'use strict';
@@ -58,7 +59,7 @@ var REC=new Set(['urus','pikir','rasa','atur','lihat','dengar','hubung','ingat',
 var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]})};
 try{var a=JSON.parse(localStorage.getItem('indo_root_favorites_v1')||'[]');if(Array.isArray(a))favorites=new Set(a.filter(function(x){return typeof x==='string'}))}catch(e){}
 function saveFavorites(){try{localStorage.setItem('indo_root_favorites_v1',JSON.stringify(Array.from(favorites)))}catch(e){}}
-function speak(t){if(!('speechSynthesis' in window)){alert('这个浏览器没有内置朗读功能。');return}try{var u=new SpeechSynthesisUtterance(String(t));u.lang='id-ID';u.rate=.88;var voices=speechSynthesis.getVoices()||[],v=voices.find(function(x){return /^id[-_]/i.test(x.lang||'')});if(v)u.voice=v;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){alert('朗读未能启动，请检查浏览器语音设置。')}}
+function speak(t){var text=String(t||'').trim();if(!text)return;if(typeof window.speak==='function')return window.speak(text);alert('印尼语朗读模块未能载入；为避免错误语言的语音，已停止播放。')}
 function selected(){
  var q=query.trim().toLocaleLowerCase();var list=families.filter(function(f){return mode!=='saved'||favorites.has(f.id)});
  if(mode==='recommended'&&!q)list=list.filter(function(f){return REC.has(f.id)});
