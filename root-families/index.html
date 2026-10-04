@@ -67,7 +67,7 @@ function selected(){
 }
 function render(){
  var list=selected(),visible=list.slice(0,shown);
- $('resultHint').textContent='当前显示 '+visible.length+' / '+list.length+' 组'+(visible.length<list.length?'；另有 '+(list.length-visible.length)+' 组可点击下方继续显示。':'；当前筛选结果已全部显示。')+' 点击卡片查看详情。';
+ $('resultHint').textContent='当前显示 '+visible.length+' / '+list.length+' 组'+(visible.length<list.length?'；另有 '+(list.length-visible.length)+' 组可点击下方继续显示。':'；当前筛选结果已全部显示。')+'点击卡片查看详情。';
  $('cards').innerHTML=visible.map(function(f){
   return '<button class="tile" type="button" data-id="'+esc(f.id)+'"><span class="head"><strong>'+esc(f.root)+'</strong><small title="资料序号，非词频排名">#'+String(f.rank).padStart(2,'0')+' · →</small></span><span class="short">'+esc(f.root_cn)+'</span><div class="pills">'+f.forms.slice(0,3).map(function(x){return '<span>'+esc(x.word)+'</span>'}).join('')+'</div><small>'+f.forms.length+' 个关联表达'+(favorites.has(f.id)?' · ★ 已收藏':'')+'</small></button>';
  }).join('')||(list.length?'<p class="empty">准备加载…</p>':'<p class="empty">没有匹配的词根。试试其他关键词或切换筛选。</p>');
