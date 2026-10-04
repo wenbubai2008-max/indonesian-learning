@@ -501,18 +501,33 @@ try {
   ok(profileBuilderSource.includes('isDeepStrictEqual(withoutGenerationTime(previousProfile),withoutGenerationTime(out))'), 'profile builder preserves generated_at on no-op recovery');
 
   const css = read('data/daily-width-fix.css');
-  ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))'), 'first-paint desktop remaining-tool layout is 4 compact columns');
+  ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))'), 'first-paint desktop remaining-tool layout is 5 equal columns');
   ok(css.includes('@media (max-width:1050px)') && css.includes('repeat(3,minmax(0,1fr))'), 'first-paint medium layout keeps 3 columns');
   ok(css.includes('@media (max-width:700px)') && css.includes('repeat(2,minmax(0,1fr))'), 'first-paint mobile layout keeps 2 columns');
   ok(css.includes('@media (max-width:430px)') && css.includes('grid-template-columns:1fr'), 'first-paint narrow layout keeps 1 column');
-  ok(css.includes('[data-home-module="automation"]{order:1') && css.includes('[data-home-module="quick"]{order:2') && css.includes('[data-home-module="reading"]{order:3') && css.includes('[data-home-module="vocab"]{order:4') && css.includes('[data-home-module="weak"]{order:5') && css.includes('[data-home-module="difficulty"]{order:6') && css.includes('[data-home-module="affix"]{order:7'), 'homepage CSS order matches the single module renderer');
+  ok(css.includes('[data-home-module="reading"]{order:1') && css.includes('[data-home-module="vocab"]{order:2') && css.includes('[data-home-module="roots"]{order:3') && css.includes('[data-home-module="weak"]{order:4') && css.includes('[data-home-module="difficulty"]{order:5'), 'visible 5-card CSS order matches the single module renderer');
 
-  const protectedOrder = "const ORDER=['自动训练','快速练习','泛读','词汇学习','弱项强化','难点解释','前后缀'];";
+  const protectedOrder = "const ORDER=['泛读','词汇学习','词根家族','弱项强化','难点解释'];";
   const layout = read('data/home-modules-layout.js');
   const indexHtml = read('index.html');
   ok(layout.includes(protectedOrder), 'JS card order matches the protected order');
+  ok(layout.includes("key:'roots'") && layout.includes("root-families/index.html"), 'root family homepage shortcut exists');
   ok(layout.includes('const HOME_MODULES=[') && layout.includes('window.renderHomeModules=renderHomeModules'), 'homepage has one HOME_MODULES renderer');
   ok(indexHtml.includes('<div class="modules" id="homeModules"></div>'), 'index keeps only the homepage module mount point');
+  const rootData=readJSON('root-families/roots.json');
+  const rootPage=read('root-families/index.html');
+  ok(rootData.version===1 && Array.isArray(rootData.families) && rootData.families.length>=100, 'root family library has 100+ expandable records');
+  const rootIds=new Set(),rootTerms=new Set();
+  for(const f of rootData.families||[]){
+    ok(typeof f.id==='string' && !!f.id && !rootIds.has(f.id), 'root id is present and unique: '+String(f.id));rootIds.add(f.id);
+    ok(Array.isArray(f.forms) && f.forms.length>0 && Array.isArray(f.recommended), 'root family form/recommendation schema: '+String(f.id));
+    for(const w of f.forms||[]){
+      ok(typeof w.word==='string' && !!w.word && !rootTerms.has(w.word.toLowerCase()), 'root form globally unique: '+String(w.word));
+      rootTerms.add(String(w.word).toLowerCase());
+    }
+  }
+  ok(rootPage.includes("fetch('roots.json'") && rootPage.includes('id="cards"') && rootPage.includes('id="detail"'), 'root family library loads independent expandable JSON');
+  ok(indexHtml.includes('data/daily-width-fix.css?v=20261004-roots-five') && indexHtml.includes('data/home-modules-layout.js?v=20261004-roots-five'),'homepage css and module JS cache keys are updated');
   ok(!/<div class="modules"[^>]*>\s*<button/s.test(indexHtml), 'index does not hard-code homepage cards');
   if(fs.existsSync(rel('data/home-modules-stability.js'))){
     const stability = read('data/home-modules-stability.js');
