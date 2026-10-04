@@ -21,14 +21,14 @@
 
   function isIndonesianVoice(v){
     if(!v)return false;
+    // Only a declared Indonesian language tag is trustworthy. A voice NAME alone
+    // must not make an English, Chinese or Malay voice eligible.
     const lang=String(v.lang||'');
-    const label=((v.name||'')+' '+lang).toLowerCase();
-    return /^id(?:[-_]|$)/i.test(lang)||/indones/.test(label);
+    return /^id(?:[-_]|$)/i.test(lang);
   }
 
   function pickVoice(voices){
-    return (voices||[]).find(x=>/^id(?:[-_]|$)/i.test(x.lang||''))||
-      (voices||[]).find(isIndonesianVoice)||null;
+    return (voices||[]).find(isIndonesianVoice)||null;
   }
 
   function refreshVoices(){
