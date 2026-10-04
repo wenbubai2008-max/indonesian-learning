@@ -114,13 +114,17 @@
   function pickIndoVoice(){
     if(!window.speechSynthesis)return null;
     const voices=window.speechSynthesis.getVoices()||[];
-    return voices.find(function(v){return /^id(?:-|$)/i.test(v.lang||'');})||
-      voices.find(function(v){return /indonesia|bahasa indonesia/i.test(v.name||'');})||
-      voices.find(function(v){return /^ms(?:-|$)/i.test(v.lang||'');})||null;
+    // Bahasa Melayu (ms) is not Bahasa Indonesia (id).
+    return voices.find(function(v){return /^id(?:[-_]|$)/i.test(v.lang||'');})||null;
   }
 
   window.speakIdText=function(text,btn){
-    if(!text||!window.speechSynthesis)return;
+    if(!text)return;
+    // Use the site's guarded Indonesian-only online fallback if local TTS is absent.
+    if(!window.speechSynthesis){
+      if(typeof window.speak==='function')window.speak(text);
+      return;
+    }
     const synth=window.speechSynthesis;
     let finished=false;
     function restore(){
@@ -136,7 +140,12 @@
         u.rate=.88;
         u.pitch=1;
         const voice=pickIndoVoice();
-        if(voice)u.voice=voice;
+        if(!voice){
+          restore();
+          if(typeof window.speak==='function')window.speak(text);
+          return;
+        }
+        u.voice=voice;
         if(btn){btn.disabled=true;btn.classList.add('isSpeaking');}
         u.onend=restore;
         u.onerror=restore;
