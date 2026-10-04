@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-04T10:53:19.905Z",
+  "updated_at": "2026-10-04T14:49:57.561Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -874,17 +874,17 @@
     "segera": {
       "word": "segera",
       "status": "active",
-      "updated_at": "2026-09-25T13:46:00.994Z",
+      "updated_at": "2026-10-04T14:49:46.999Z",
       "display": "segera",
       "cn": "尽快、马上",
       "root": "segera",
       "root_cn": "立即；马上",
-      "last_review": "2026-09-25T13:46:00.972Z",
+      "last_review": "2026-10-04T14:49:46.975Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "hasil": {
       "word": "hasil",
@@ -1270,16 +1270,16 @@
     "penuh": {
       "word": "penuh",
       "status": "active",
-      "updated_at": "2026-09-25T14:59:01.616Z",
+      "updated_at": "2026-10-04T14:49:32.421Z",
       "display": "penuh",
       "cn": "满；满员",
       "root": "penuh",
-      "last_review": "2026-09-25T14:59:01.583Z",
+      "last_review": "2026-10-04T14:49:32.387Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "susah": {
       "word": "susah",
@@ -2136,14 +2136,14 @@
     "amat": {
       "word": "amat",
       "status": "active",
-      "updated_at": "2026-09-25T14:58:53.143Z",
+      "updated_at": "2026-10-04T14:49:17.199Z",
       "display": "amat",
-      "last_review": "2026-09-25T14:58:53.121Z",
+      "last_review": "2026-10-04T14:49:17.152Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "menunjukkan": {
       "word": "menunjukkan",
@@ -3141,19 +3141,19 @@
     "baper": {
       "word": "baper",
       "status": "active",
-      "updated_at": "2026-10-03T14:10:41.233Z",
+      "updated_at": "2026-10-04T14:49:23.764Z",
       "display": "baper",
       "cn": "太往心里去；因为一句话情绪受影响（口语）",
       "root": "bawa perasaan",
       "root_cn": "把情绪带进去；往心里去",
       "last_wrong": "2026-10-03T14:10:41.203Z",
-      "last_review": "2026-10-03T14:10:41.203Z",
+      "last_review": "2026-10-04T14:49:23.735Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 3,
-      "right_streak": 0
+      "right_streak": 1
     },
     "barusan": {
       "word": "barusan",
@@ -4533,16 +4533,16 @@
     "mengirim": {
       "word": "mengirim",
       "status": "active",
-      "updated_at": "2026-09-25T14:58:59.189Z",
+      "updated_at": "2026-10-04T14:49:29.100Z",
       "display": "mengirim",
       "cn": "发送",
       "root": "kirim",
-      "last_review": "2026-09-25T14:58:59.163Z",
+      "last_review": "2026-10-04T14:49:29.075Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "mengiris": {
       "word": "mengiris",
@@ -6442,14 +6442,14 @@
     "bidang": {
       "word": "bidang",
       "status": "active",
-      "updated_at": "2026-09-25T15:05:49.826Z",
+      "updated_at": "2026-10-04T14:49:36.078Z",
       "display": "bidang",
-      "last_review": "2026-09-25T15:05:49.793Z",
+      "last_review": "2026-10-04T14:49:36.050Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "peristiwa": {
       "word": "peristiwa",
@@ -19089,16 +19089,16 @@
     "kadang": {
       "word": "kadang",
       "status": "active",
-      "updated_at": "2026-09-25T13:45:50.865Z",
+      "updated_at": "2026-10-04T14:49:41.796Z",
       "display": "kadang",
       "cn": "有时",
       "root": "kadang",
-      "last_review": "2026-09-25T13:45:50.820Z",
+      "last_review": "2026-10-04T14:49:41.769Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 4
+      "right_streak": 5
     },
     "selalu": {
       "word": "selalu",
@@ -19862,17 +19862,17 @@
     "cerewet": {
       "word": "cerewet",
       "status": "active",
-      "updated_at": "2026-09-25T13:47:19.782Z",
+      "updated_at": "2026-10-04T14:49:26.298Z",
       "display": "cerewet",
       "cn": "话多；唠叨",
       "root": "cerewet",
-      "last_review": "2026-09-25T13:47:19.759Z",
+      "last_review": "2026-10-04T14:49:26.269Z",
       "reasons": [
         "memory_dont",
         "automation_fail"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "pendiam": {
       "word": "pendiam",
@@ -21823,16 +21823,16 @@
     "gampang": {
       "word": "gampang",
       "status": "active",
-      "updated_at": "2026-09-25T13:45:48.565Z",
+      "updated_at": "2026-10-04T14:49:38.625Z",
       "display": "gampang",
       "cn": "容易",
       "root": "gampang",
-      "last_review": "2026-09-25T13:45:48.535Z",
+      "last_review": "2026-10-04T14:49:38.599Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "ribet": {
       "word": "ribet",
