@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-03T14:12:06.606Z",
+  "updated_at": "2026-10-04T02:29:39.807Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2706,8 +2706,11 @@
     "memenuhi": {
       "word": "memenuhi",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-04T02:29:29.295Z",
       "display": "memenuhi",
+      "cn": "满足；符合；装满",
+      "root": "penuh",
+      "root_cn": "满",
       "reasons": [
         "memory_dont"
       ],
