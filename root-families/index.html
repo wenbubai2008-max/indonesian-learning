@@ -18,14 +18,14 @@ h1{font-size:29px;margin:13px 0 3px;letter-spacing:-.02em}.sub{margin:0;color:va
 .tile:hover{border-color:#a890d7;box-shadow:0 5px 18px #44316113}.tile .head{display:flex;align-items:center;justify-content:space-between;gap:8px}.tile strong{font-size:22px}.tile small,.meta{font-size:12px;color:var(--sub)}.tile .short{color:var(--sub);font-size:14px}.pills{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto}.pills span{font-size:11px;border-radius:999px;background:var(--soft);color:#654d9b;padding:3px 7px}.more{width:100%;padding:12px;background:#fff;border:1px solid var(--line);border-radius:12px;margin-top:16px;color:#55408c;font-weight:700}
 .empty{padding:32px 14px;text-align:center;color:var(--sub)}[hidden]{display:none!important}
 .detail{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:18px}.detail h2{font-size:30px;margin:4px 0}.detail h3{font-size:17px;margin:22px 0 9px}
-.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.push{margin-left:auto}.btn{border:1px solid var(--line);border-radius:10px;background:#fff;padding:8px 12px;color:var(--fg)}.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.push{margin-left:auto}.btn{border:1px solid var(--line);border-radius:10px;background:#fff;padding:8px 12px;color:var(--fg);min-width:0}.detailActions{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;align-items:center}.detailActions #toCatalog{justify-self:start}.detailActions .btn{white-space:nowrap}.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 .form{display:grid;grid-template-columns:minmax(108px,1fr) minmax(110px,.8fr) minmax(0,1.45fr);align-items:start;gap:8px 13px;padding:11px 0;border-bottom:1px solid #edf0f6}
 .form .word{color:#3157d5;font-size:16px;font-weight:750;text-align:left;border:0;background:none;padding:0;overflow-wrap:anywhere}.formation{font-size:12px;color:var(--sub);padding-top:2px;overflow-wrap:anywhere}.meaning{font-size:14px}.focus{background:#f5f0ff;border-radius:999px;padding:2px 6px;color:#65449c;font-size:11px;margin-left:4px;white-space:nowrap}.oral{color:#855b00;background:#fff1d3}
 .example{background:#fafbfe;border:1px solid var(--line);border-radius:13px;padding:14px;margin-top:10px}.sentence{font-size:17px;font-weight:600;line-height:1.8}.zh{color:var(--sub);margin-top:5px}
 .hiddenMeaning .meaning,.hiddenMeaning .zh,.hiddenMeaning .rootCN{filter:blur(6px);user-select:none}
 .answerBox{margin-top:12px;padding:12px 14px;background:#f0f6ff;border-radius:12px}.footnote{margin-top:24px;font-size:12px;color:var(--sub)}
 @media(max-width:780px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:520px){.wrap{padding:16px 12px 44px}.grid{grid-template-columns:1fr}.tile{min-height:115px}.detail{padding:14px}.form{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}.form .formation{grid-column:1;grid-row:auto}.form .meaning{grid-column:2;grid-row:span 2}.stats{gap:7px}.stat{flex:1 1 28%;min-width:0;padding:9px 10px}.stat b{font-size:20px}}
+@media(max-width:520px){.wrap{padding:16px 12px 44px}.grid{grid-template-columns:1fr}.tile{min-height:115px}.detail{padding:14px}.form{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}.form .formation{grid-column:1;grid-row:auto}.form .meaning{grid-column:2;grid-row:span 2}.stats{gap:7px}.stat{flex:1 1 28%;min-width:0;padding:9px 10px}.stat b{font-size:20px}.detailActions{grid-template-columns:repeat(2,minmax(0,1fr))}.detailActions #toCatalog{grid-column:1/-1;justify-self:stretch;text-align:left}.detailActions #save,.detailActions #hideCn{width:100%;margin:0;text-align:center}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
 </head>
@@ -35,18 +35,19 @@ h1{font-size:29px;margin:13px 0 3px;letter-spacing:-.02em}.sub{margin:0;color:va
 <div class="stats" aria-live="polite"><div class="stat"><b id="rootCount">—</b><small>词根家族</small></div><div class="stat"><b id="formCount">—</b><small>关联表达</small></div><div class="stat"><b id="oralCount">—</b><small>标注口语</small></div></div>
 <section id="catalog" aria-label="词根索引">
  <div class="toolbar"><input id="q" class="search" type="search" placeholder="搜索词根、单词或中文" aria-label="搜索词根、单词或中文">
- <div class="filters" role="group" aria-label="筛选"><button class="filter" type="button" data-mode="recommended" aria-pressed="true">推荐</button><button class="filter" type="button" data-mode="all" aria-pressed="false">全部</button><button class="filter" type="button" data-mode="saved" aria-pressed="false">收藏</button></div></div>
+ <div class="filters" role="group" aria-label="筛选"><button class="filter" type="button" data-mode="recommended" aria-pressed="true">推荐词根</button><button class="filter" type="button" data-mode="all" aria-pressed="false">全部词根</button><button class="filter" type="button" data-mode="saved" aria-pressed="false">收藏</button></div></div>
+ <p class="hint">「推荐」为人工挑选的 12 组日常交流和学习价值较高的词根，并非基于词频的排名。资料尚未与主词库做完整实时比对，因此不把未记录的表达标成「新词」。</p>
  <p id="resultHint" class="hint" aria-live="polite">读取词根资料中…</p>
  <div class="grid" id="cards"></div><button id="more" class="more" type="button" hidden>显示更多词根 ↓</button>
 </section>
-<section id="detail" class="detail" hidden aria-live="polite"><div class="row"><button id="toCatalog" class="btn" type="button">← 词根列表</button><button id="save" class="btn push" type="button">☆ 收藏</button><button id="hideCn" class="btn" type="button" aria-pressed="false">遮住中文</button></div>
+<section id="detail" class="detail" hidden aria-live="polite"><div class="detailActions"><button id="toCatalog" class="btn" type="button">← 词根列表</button><button id="save" class="btn" type="button">☆ 收藏</button><button id="hideCn" class="btn" type="button" aria-pressed="false">遮住中文</button></div>
  <h2 id="rootTitle"></h2><div id="rootCN" class="rootCN"></div>
  <p class="meta">以下仅为词汇扩展资料；“重点理解”不等于正式掌握。已掌握、待复习及新词资格仍由现有学习系统判定。</p>
  <h3>同根表达 <span id="familySize" class="meta"></span></h3><div id="forms"></div>
- <h3>真实例句</h3><div class="example"><div class="row"><div id="exampleId" class="sentence"></div><button id="playExample" type="button" class="btn push" aria-label="朗读例句">🔊</button></div><div id="exampleCn" class="zh"></div></div>
+ <h3>例句</h3><div class="example"><div class="row"><div id="exampleId" class="sentence"></div><button id="playExample" type="button" class="btn push" aria-label="朗读例句">🔊</button></div><div id="exampleCn" class="zh"></div></div>
  <h3>主动回忆 · 自测</h3><div class="example"><div class="meta">先看中文，在心里说出印尼语，再揭晓答案。自测不更改主词库状态。</div><div id="promptCN" class="zh"></div><button id="reveal" type="button" class="btn primary" style="margin-top:10px">查看参考答案</button><div id="answer" class="answerBox" hidden></div></div>
 </section>
-<p class="footnote">资料依据上传的 Claude 100 组词根整理，已有少量口语和构词标注修订；内容可以继续扩展。收藏仅保存在当前浏览器，不跨设备同步，亦不会修改 977 主词库或早晚课。</p>
+<p class="footnote">资料依据上传的 Claude 100 组词根整理，已有少量口语和构词标注修订；例句来自原始编写资料或少量调整，不代表已核验的母语者原始语料。收藏仅保存在当前浏览器，不跨设备同步，亦不会修改 977 主词库或早晚课。</p>
 </main>
 <script>
 (function(){
@@ -66,11 +67,12 @@ function selected(){
 }
 function render(){
  var list=selected(),visible=list.slice(0,shown);
- $('resultHint').textContent='显示 '+visible.length+' / '+list.length+' 组。点击卡片查看完整派生词和例句。';
+ $('resultHint').textContent='当前已加载 '+visible.length+' / '+list.length+' 组'+(visible.length<list.length?'；其余 '+(list.length-visible.length)+' 组尚未加载，可点击下方按钮继续。':'；当前筛选结果已经全部显示。')+' 点击卡片查看详情。';
  $('cards').innerHTML=visible.map(function(f){
-  return '<button class="tile" type="button" data-id="'+esc(f.id)+'"><span class="head"><strong>'+esc(f.root)+'</strong><small>第 '+f.rank+' 组 · →</small></span><span class="short">'+esc(f.root_cn)+'</span><div class="pills">'+f.forms.slice(0,3).map(function(x){return '<span>'+esc(x.word)+'</span>'}).join('')+'</div><small>'+f.forms.length+' 个关联表达'+(favorites.has(f.id)?' · ★ 已收藏':'')+'</small></button>';
+  return '<button class="tile" type="button" data-id="'+esc(f.id)+'"><span class="head"><strong>'+esc(f.root)+'</strong><small>#'+String(f.rank).padStart(2,'0')+' · →</small></span><span class="short">'+esc(f.root_cn)+'</span><div class="pills">'+f.forms.slice(0,3).map(function(x){return '<span>'+esc(x.word)+'</span>'}).join('')+'</div><small>'+f.forms.length+' 个关联表达'+(favorites.has(f.id)?' · ★ 已收藏':'')+'</small></button>';
  }).join('')||(list.length?'<p class="empty">准备加载…</p>':'<p class="empty">没有匹配的词根。试试其他关键词或切换筛选。</p>');
  $('more').hidden=visible.length>=list.length;
+ $('more').textContent='再显示 '+Math.min(20,Math.max(0,list.length-visible.length))+' 组（剩余 '+(list.length-visible.length)+' 组） ↓';
 }
 function switchMode(next){mode=next;shown=20;document.querySelectorAll('[data-mode]').forEach(function(btn){btn.setAttribute('aria-pressed',String(btn.dataset.mode===mode))});render()}
 function openRoot(id){
