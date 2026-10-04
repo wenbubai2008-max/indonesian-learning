@@ -7,7 +7,7 @@
 - `id`：稳定、唯一的词根标识，小写；
 - `root`、`root_cn`：词根和中文核心义；
 - `rank`：展示顺序序号；
-- `forms`：`[{word,cn,formation,register}]`，register 只使用“口语”或“通用”；
+- `forms`：`[{word,cn,formation,register,mini_example,mini_example_cn}]`，register 只使用“口语”或“通用”；每个派生词补一个自然、短小且确实包含目标词的例词/搭配（`mini_example`）及中文（`mini_example_cn`），显示在中文释义的下方。
 - `recommended`：本组建议先理解的 1–2 个 forms.word；并非已掌握状态；
 - `example`、`example_cn`：自然、口语优先的例句和译文。
 
@@ -16,4 +16,4 @@
 ## 与正式学习系统隔离
 原附件每个派生词的静态 mastered/learning/new 已故意不导入，不能把“没在记录里”当作真正新词。此页面不读写 `daily-vocab-data.js`、`weakness-sync.json`、`learning-runtime.json`、`indo_mem`，不会替 977 主词库判断资格或掌握程度。收藏保存在本机 `indo_root_favorites_v1`，不跨设备。
 
-添加/调整词根时，检查真实构词链，谨慎区别派生词、复合表达和非正式口语变体。资料源于用户提供的 Claude《印尼语词根家族 100》并作局部修订；不是经过独立频率排名验证的语料库。
+2026-10-04 已给现有 100 组 / 420 个表达补齐手工编写的 mini example。添加/调整词根时，检查真实构词链，谨慎区别派生词、复合表达和非正式口语变体；对所有新增词检查 mini example 与中文一一匹配，不能把编写示例当成已核验的母语者原文。例句朗读按钮必须紧随印尼语句尾，详情自测默认隐藏参考例句，遮住中文时只遮翻译、不遮印尼语 mini example。资料源于用户提供的 Claude《印尼语词根家族 100》并作局部修订；不是经过独立频率排名验证的语料库。
