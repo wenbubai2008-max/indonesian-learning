@@ -2,7 +2,7 @@
   "version": 1,
   "updated": "2026-10-04",
   "title": "词根家族库",
-  "origin": "根据用户提供的 Claude《印尼语词根家族 100》整理；有少量构词标注与口语修正；不是已掌握状态的权威来源。",
+  "origin": "根据用户提供的 Claude《印尼语词根家族 100》整理；2026-10-04 已对若干构词标签、释义与常用写法做定点核查，未对全部 100 组做逐条词频认证。",
   "status_policy": "仅供浏览；绝不将原附件静态 mastered/learning/new 当作当前学习状态，也不写主词库。",
   "families": [
     {
@@ -43,9 +43,10 @@
         },
         {
           "word": "mempelajari",
-          "cn": "研究；钻研",
-          "formation": "派生链：pelajar → mempelajari",
-          "register": "通用"
+          "cn": "深入学习；研究（某事）",
+          "formation": "ajar → pelajar → mempelajari（辅助记忆）",
+          "register": "通用",
+          "usage_note": "比 belajar 更强调认真、深入地学习或研究特定内容。"
         }
       ],
       "recommended": [
@@ -1166,7 +1167,7 @@
         {
           "word": "terlupakan",
           "cn": "被遗忘",
-          "formation": "ter-kan",
+          "formation": "ter- + lupa + -kan",
           "register": "通用"
         },
         {
@@ -1318,7 +1319,7 @@
         {
           "word": "sehubungan dengan",
           "cn": "关于；鉴于",
-          "formation": "se-",
+          "formation": "se- + hubungan + dengan（书面词组）",
           "register": "通用"
         }
       ],
@@ -1482,7 +1483,7 @@
         {
           "word": "pejalan kaki",
           "cn": "行人",
-          "formation": "pe-",
+          "formation": "pe- + jalan（固定词组）",
           "register": "通用"
         },
         {
@@ -1941,7 +1942,7 @@
         },
         {
           "word": "mengurus",
-          "cn": "办理；照顾",
+          "cn": "处理；办理；照顾",
           "formation": "meN-",
           "register": "通用"
         },
@@ -2030,7 +2031,7 @@
         {
           "word": "berikutnya",
           "cn": "下一个",
-          "formation": "ber-nya",
+          "formation": "ber- + -nya（berikut → berikutnya）",
           "register": "通用"
         },
         {
@@ -2042,7 +2043,7 @@
         {
           "word": "ikut-ikutan",
           "cn": "跟风（口语）",
-          "formation": "重叠",
+          "formation": "重叠 + -an",
           "register": "口语"
         }
       ],
@@ -2846,7 +2847,7 @@
         {
           "word": "obat-obatan",
           "cn": "药品",
-          "formation": "重叠",
+          "formation": "重叠 + -an",
           "register": "通用"
         }
       ],
@@ -3176,7 +3177,7 @@
         {
           "word": "bersenang-senang",
           "cn": "尽情玩乐",
-          "formation": "ber-",
+          "formation": "ber- + 重叠",
           "register": "通用"
         }
       ],
@@ -3240,7 +3241,7 @@
         {
           "word": "menakut-nakuti",
           "cn": "吓唬",
-          "formation": "meN-i",
+          "formation": "meN- + 重叠 + -i",
           "register": "通用"
         }
       ],
@@ -3432,8 +3433,9 @@
         {
           "word": "mempercayai",
           "cn": "信任",
-          "formation": "memper-i",
-          "register": "通用"
+          "formation": "meN- + -i（常见写法）",
+          "register": "通用",
+          "usage_note": "日常常见写法；KBBI 所列规范词形为 memercayai。"
         },
         {
           "word": "kepercayaan",
@@ -3445,7 +3447,8 @@
           "word": "terpercaya",
           "cn": "可信的",
           "formation": "ter-",
-          "register": "通用"
+          "register": "通用",
+          "usage_note": "日常常见写法；KBBI 所列词形为 tepercaya。"
         },
         {
           "word": "dipercaya",
@@ -3806,7 +3809,7 @@
         {
           "word": "habis-habisan",
           "cn": "竭尽全力",
-          "formation": "重叠",
+          "formation": "重叠 + -an",
           "register": "通用"
         }
       ],
