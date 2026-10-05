@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-05",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 45
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-04T14:55:51.479Z",
-    "lesson_watermark": "2026-10-04 18:00",
-    "index_updated": "2026-10-04",
-    "runtime_hash": "e374f2df908f90a20169bf102fcf78b7c41d6f5f4e59a9f3e1cbd5f9604cb175",
-    "index_hash": "373d18d568a9539c73264ecc26f5129e4fc5be9670ce7a871a0659d904e63093",
+    "runtime_generated_at": "2026-10-05T00:29:51.414Z",
+    "lesson_watermark": "2026-10-05 08:00",
+    "index_updated": "2026-10-05",
+    "runtime_hash": "eb80f77764a804be194425d48b7eb61b48f19362ca523c0eb6a4e3f9deecdfe9",
+    "index_hash": "0bf4c6765850533411106f27ca05563dc501afb1ebd640d000b1c5e9e04cc84c",
     "rules_hash": "112a2dbb2e62e9937feae9c4e60b52454c4d350e0844cf68f59ad724649db454"
   },
   "schema": {
@@ -86,10 +86,6 @@
         "偷"
       ],
       [
-        "mengantar",
-        "递送"
-      ],
-      [
         "mengetik",
         "打字"
       ],
@@ -126,10 +122,6 @@
         "忠诚的"
       ],
       [
-        "terpeleset",
-        "滑倒"
-      ],
-      [
         "kuno",
         "古老的"
       ],
@@ -144,10 +136,6 @@
       [
         "kejam",
         "残酷的"
-      ],
-      [
-        "hukuman",
-        "惩罚"
       ],
       [
         "kenal",
@@ -176,10 +164,6 @@
       [
         "berlaku",
         "生效、实行"
-      ],
-      [
-        "peduli",
-        "在意"
       ],
       [
         "bergerak",
@@ -250,10 +234,6 @@
         "被接受；被录用"
       ],
       [
-        "rugi",
-        "亏损；损失"
-      ],
-      [
         "kerugian",
         "损失；亏损"
       ],
@@ -310,28 +290,8 @@
         "撞；碰撞"
       ],
       [
-        "bengkak",
-        "肿"
-      ],
-      [
-        "darurat",
-        "紧急；急诊"
-      ],
-      [
-        "pencuri",
-        "小偷"
-      ],
-      [
         "curi",
         "偷"
-      ],
-      [
-        "teriak",
-        "大喊"
-      ],
-      [
-        "kejar",
-        "追赶"
       ],
       [
         "penjara",
@@ -1556,6 +1516,16 @@
         "泥泞"
       ],
       [
+        "bengkak",
+        2,
+        0,
+        "",
+        "",
+        "肿；肿胀",
+        "bengkak",
+        "肿"
+      ],
+      [
         "bentuk",
         2,
         0,
@@ -1574,16 +1544,6 @@
         "打架；吵架",
         "antem",
         "打；争吵"
-      ],
-      [
-        "berat",
-        2,
-        0,
-        "",
-        "",
-        "重的；沉重的；吃力的",
-        "berat",
-        "重"
       ]
     ],
     "focus": [
@@ -2115,6 +2075,29 @@
         "belanja",
         "mengajak"
       ]
+    },
+    {
+      "date": "2026-10-05",
+      "session": "am",
+      "review_core": [
+        "menunjukkan",
+        "niat",
+        "mengeluh",
+        "nyinggung",
+        "cerewet"
+      ],
+      "new_words": [
+        "pencuri",
+        "teriak",
+        "kejar",
+        "terpeleset",
+        "bengkak",
+        "darurat",
+        "rugi",
+        "mengantar",
+        "peduli",
+        "hukuman"
+      ]
     }
   ],
   "previous_pm": {
@@ -2132,7 +2115,88 @@
       "kesiangan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-05",
+    "vocab": [
+      [
+        "pencuri",
+        "小偷；偷东西的人",
+        "thief",
+        "curi",
+        "偷"
+      ],
+      [
+        "teriak",
+        "大喊；喊叫",
+        "to shout; to yell",
+        "teriak",
+        "喊叫"
+      ],
+      [
+        "kejar",
+        "追；追赶",
+        "to chase; to run after",
+        "kejar",
+        "追"
+      ],
+      [
+        "terpeleset",
+        "滑倒；脚下一滑",
+        "to slip",
+        "peleset",
+        "滑；偏离"
+      ],
+      [
+        "bengkak",
+        "肿；肿胀",
+        "swollen",
+        "bengkak",
+        "肿"
+      ],
+      [
+        "darurat",
+        "紧急；紧急状况",
+        "emergency; urgent",
+        "darurat",
+        "紧急"
+      ],
+      [
+        "rugi",
+        "亏；吃亏；划不来",
+        "to lose out; at a loss",
+        "rugi",
+        "亏损"
+      ],
+      [
+        "mengantar",
+        "送；陪送；送到",
+        "to take (someone) somewhere; to drop off",
+        "antar",
+        "送"
+      ],
+      [
+        "peduli",
+        "在意；关心；在乎",
+        "to care; to mind",
+        "peduli",
+        "在乎"
+      ],
+      [
+        "hukuman",
+        "惩罚；刑罚",
+        "punishment; penalty",
+        "hukum",
+        "法律；规则"
+      ]
+    ],
+    "review_vocab": [
+      "menunjukkan",
+      "niat",
+      "mengeluh",
+      "nyinggung",
+      "cerewet"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

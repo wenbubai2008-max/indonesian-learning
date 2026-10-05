@@ -9023,9 +9023,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-05 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9037,7 +9037,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-20",
       "2026-09-21",
       "2026-09-28",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-05"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
@@ -9047,7 +9048,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-21 08:00",
       "2026-09-21 18:00",
       "2026-09-28 08:00",
-      "2026-10-01 18:00"
+      "2026-10-01 18:00",
+      "2026-10-05 08:00"
     ]
   },
   {
@@ -9350,9 +9352,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-05 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9362,7 +9364,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-25",
       "2026-09-27",
       "2026-10-01",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-05"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
@@ -9371,7 +9374,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-27 08:00",
       "2026-10-01 08:00",
       "2026-10-01 18:00",
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-10-05 08:00"
     ]
   },
   {
@@ -10752,9 +10756,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 9,
+    "times_seen": 10,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-05 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -10767,7 +10771,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-25",
       "2026-09-26",
       "2026-09-30",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-05"
     ],
     "lesson_occurrences": [
       "2026-09-17 08:00",
@@ -10778,7 +10783,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-25 08:00",
       "2026-09-26 18:00",
       "2026-09-30 08:00",
-      "2026-10-01 18:00"
+      "2026-10-01 18:00",
+      "2026-10-05 08:00"
     ]
   },
   {
@@ -11634,19 +11640,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-10-05 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-19",
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-05"
     ],
     "lesson_occurrences": [
       "2026-09-19 08:00",
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-10-05 08:00"
     ]
   },
   {
@@ -12662,9 +12670,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-05 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -12673,14 +12681,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-23",
       "2026-09-27",
       "2026-09-28",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-05"
     ],
     "lesson_occurrences": [
       "2026-09-23 08:00",
       "2026-09-27 18:00",
       "2026-09-28 18:00",
       "2026-10-01 08:00",
-      "2026-10-01 18:00"
+      "2026-10-01 18:00",
+      "2026-10-05 08:00"
     ]
   },
   {
@@ -17274,6 +17284,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-04 18:00"
+    ]
+  },
+  {
+    "word": "pencuri",
+    "cn": "小偷；偷东西的人",
+    "en": "thief",
+    "root": "curi",
+    "root_cn": "偷",
+    "example": "Pencuri itu masuk lewat jendela belakang waktu rumahnya kosong.",
+    "example_cn": "趁房子没人，小偷从后窗进去了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 08:00"
+    ]
+  },
+  {
+    "word": "teriak",
+    "cn": "大喊；喊叫",
+    "en": "to shout; to yell",
+    "root": "teriak",
+    "root_cn": "喊叫",
+    "example": "Anak itu teriak senang waktu melihat kado ulang tahunnya.",
+    "example_cn": "孩子看到生日礼物，高兴得大叫起来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 08:00"
+    ]
+  },
+  {
+    "word": "kejar",
+    "cn": "追；追赶",
+    "en": "to chase; to run after",
+    "root": "kejar",
+    "root_cn": "追",
+    "example": "Ayo kejar, bisnya belum jauh!",
+    "example_cn": "快追，公交车还没走远！",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 08:00"
+    ]
+  },
+  {
+    "word": "terpeleset",
+    "cn": "滑倒；脚下一滑",
+    "en": "to slip",
+    "root": "peleset",
+    "root_cn": "滑；偏离",
+    "example": "Hati-hati, lantainya licin, nanti kamu terpeleset.",
+    "example_cn": "小心，地板很滑，你会滑倒的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 08:00"
+    ]
+  },
+  {
+    "word": "bengkak",
+    "cn": "肿；肿胀",
+    "en": "swollen",
+    "root": "bengkak",
+    "root_cn": "肿",
+    "example": "Setelah main bola, pergelangan kakinya bengkak dan susah dipakai jalan.",
+    "example_cn": "踢完球后，他的脚踝肿了，走路很困难。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 08:00"
+    ]
+  },
+  {
+    "word": "darurat",
+    "cn": "紧急；紧急状况",
+    "en": "emergency; urgent",
+    "root": "darurat",
+    "root_cn": "紧急",
+    "example": "Kalau ada kebakaran, segera keluar lewat pintu darurat.",
+    "example_cn": "如果发生火灾，请马上从紧急出口出去。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 08:00"
+    ]
+  },
+  {
+    "word": "rugi",
+    "cn": "亏；吃亏；划不来",
+    "en": "to lose out; at a loss",
+    "root": "rugi",
+    "root_cn": "亏损",
+    "example": "Usaha kecil itu rugi tiga bulan berturut-turut.",
+    "example_cn": "那家小生意连续三个月亏本。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 08:00"
+    ]
+  },
+  {
+    "word": "mengantar",
+    "cn": "送；陪送；送到",
+    "en": "to take (someone) somewhere; to drop off",
+    "root": "antar",
+    "root_cn": "送",
+    "example": "Setiap pagi Ayah mengantar adik ke sekolah.",
+    "example_cn": "每天早上爸爸送弟弟去学校。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 08:00"
+    ]
+  },
+  {
+    "word": "peduli",
+    "cn": "在意；关心；在乎",
+    "en": "to care; to mind",
+    "root": "peduli",
+    "root_cn": "在乎",
+    "example": "Dia kelihatan cuek, tapi sebenarnya peduli banget sama keluarganya.",
+    "example_cn": "他看起来满不在乎，其实非常在意家人。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 08:00"
+    ]
+  },
+  {
+    "word": "hukuman",
+    "cn": "惩罚；刑罚",
+    "en": "punishment; penalty",
+    "root": "hukum",
+    "root_cn": "法律；规则",
+    "example": "Anak itu dapat hukuman karena menyontek waktu ujian.",
+    "example_cn": "那个孩子因为考试作弊受到了惩罚。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 08:00"
     ]
   }
 ];
