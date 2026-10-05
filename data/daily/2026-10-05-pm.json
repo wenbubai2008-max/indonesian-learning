@@ -1,0 +1,356 @@
+{
+  "date": "2026-10-05",
+  "session": "pm",
+  "time": "18:00",
+  "day": 45,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Sepatu kekecilan dan retur online",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "paket",
+    "pastikan",
+    "retur",
+    "bongkar"
+  ],
+  "vocab": [
+    {
+      "word": "paket",
+      "display": "paket",
+      "audio_text": "paket",
+      "cn": "包裹；（成套的）套餐",
+      "en": "package; parcel; bundle",
+      "root": "paket",
+      "root_cn": "包裹；套餐（外来词，本身就是词根）",
+      "formation": "名词，不需要加词缀。常见搭配：paket sampai（包裹到了）、cek paket（查看包裹）、paket data（流量套餐）、paket hemat（实惠套餐）。",
+      "example": "Paketnya baru sampai tadi pagi.",
+      "example_cn": "包裹今天早上才到。",
+      "synonym_note": "paket 指已经打包寄送的整件包裹；barang 是里面的东西本身；kiriman 强调“被寄来的东西”。例：Paketnya sudah sampai, tapi barangnya belum aku cek.（包裹到了，东西还没检查。）",
+      "usage_note": "本晚新词（fuzzy）。同一个词还有“套餐”义（paket data），看前后文区分：寄送语境是包裹，手机/餐饮语境是套餐。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "pastikan",
+      "display": "pastikan",
+      "audio_text": "pastikan",
+      "cn": "确保；弄清楚",
+      "en": "make sure; ensure (imperative form)",
+      "root": "pasti",
+      "root_cn": "确定；一定",
+      "formation": "pasti（确定）+ -kan → memastikan（使确定、确认）；pastikan 是去掉 me- 的祈使形式，常用来叮嘱对方。常见搭配：pastikan dulu、pastikan alamatnya benar、pastikan sudah dibayar。",
+      "example": "Pastikan alamatnya benar sebelum kamu bayar, ya.",
+      "example_cn": "付款之前先确认地址没写错哦。",
+      "synonym_note": "pastikan（要对方确认并确保没问题）≈ cek dulu（只是先看一下）；yakin 是自己心里确信（Yakin alamatnya benar?＝你确定地址对吗？）；pasti 是“一定、肯定”。",
+      "usage_note": "本晚新词（fuzzy）。叮嘱朋友、客服提醒顾客时很常用；对客户写正式消息可说 Mohon pastikan…。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "retur",
+      "display": "retur",
+      "audio_text": "retur",
+      "cn": "退货；退回",
+      "en": "return (goods); to send back",
+      "root": "retur",
+      "root_cn": "退回；退货（外来词，本身就是词根）",
+      "formation": "名词/动词都可用：ajukan retur（申请退货）、proses retur（退货流程）、mau retur（想退货）、diretur（被退回）。电商里常见的完整说法是 retur barang。",
+      "example": "Aku mau ajukan retur karena ukurannya nggak cocok.",
+      "example_cn": "我想申请退货，因为尺寸不合适。",
+      "synonym_note": "retur（把买来的东西退回卖家）≠ refund（退钱）≠ tukar（换一个）：流程上通常先 retur 货，才谈退款；只想换尺码可以说 tukar ukuran。口语里 balikin barang 意思接近，但 retur 更像平台流程用语。",
+      "usage_note": "本晚新词（dont），网购高频词；练习时先想“退货”这个动作，再想“退钱”。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "bongkar",
+      "display": "bongkar",
+      "audio_text": "bongkar",
+      "cn": "拆开；卸下；翻出来",
+      "en": "to unpack; to take apart; to unload",
+      "root": "bongkar",
+      "root_cn": "拆开；卸下；翻出",
+      "formation": "membongkar = meN- + bongkar（b 前 meN- 变 mem-），口语常直接说 bongkar；被动 dibongkar。常见搭配：bongkar paket（把包裹整个拆开）、bongkar tas（把包里的东西翻出来）、bongkar muat（装卸货）；membongkar rahasia（揭露秘密）较正式。",
+      "example": "Begitu paketnya sampai, aku langsung bongkar dan coba sepatunya.",
+      "example_cn": "包裹一到，我就马上拆开并试了鞋子。",
+      "synonym_note": "bongkar vs buka：buka 只是“打开”，很中性；bongkar 强调把封好或整理好的东西整个拆开/翻出来，动作感更强，但不一定粗鲁。bongkar paket 和 buka paket 都很自然。",
+      "usage_note": "本晚新词（dont）。“拆卸/卸货”和“揭露”是不同义项，先掌握 bongkar paket / bongkar tas 这类具体动作。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menegaskan",
+      "display": "menegaskan",
+      "audio_text": "menegaskan",
+      "cn": "强调；明确重申；确认",
+      "en": "to emphasize; to reaffirm; to state firmly",
+      "root": "tegas",
+      "root_cn": "明确；坚定",
+      "formation": "meN- + tegas + -kan（词首 t 脱落、前缀变成 men-，得到 menegaskan），意思是“使之明确”。常见搭配：menegaskan bahwa…（明确表示……）、menegaskan kembali（再次重申）、ditegaskan（被强调）。",
+      "example": "Ibu menegaskan bahwa kita harus berangkat jam enam.",
+      "example_cn": "妈妈明确说了我们必须六点出发。",
+      "synonym_note": "menegaskan（把已有的说法/规定说得更明确、更肯定）vs menjelaskan（把事情讲清楚）vs menekankan（强调某个重点）：menegaskan 常带“表态、不留商量余地”的语气；menekankan 更偏“这点特别重要”。",
+      "usage_note": "重点复习词（弱项池）。偏正式，客服、会议、新闻里常见；朋友之间更口语的说法是 bilang dengan tegas。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngotot",
+      "display": "ngotot",
+      "audio_text": "ngotot",
+      "cn": "硬坚持；不肯让步",
+      "en": "to insist stubbornly; to refuse to back down",
+      "root": "ngotot",
+      "root_cn": "硬坚持；不肯让步（口语词）",
+      "formation": "口语动词，没有常用的规范派生；相近的规范说法是 bersikeras。常见搭配：ngotot mau…（硬要……）、ngotot minta…（硬要求……）、ngotot bilang bahwa…（硬说……）、jangan ngotot（别硬撑）。",
+      "example": "Adikku ngotot mau ikut, padahal sudah malam.",
+      "example_cn": "弟弟/妹妹硬要跟着去，虽然已经很晚了。",
+      "synonym_note": "ngotot（口语，指当下不肯让步地坚持）vs keras kepala（形容人的性格固执）vs bersikeras（规范、中性）：ngotot 可以带贬义，也可以只是描述“坚持到底”，要看语境。",
+      "usage_note": "重点复习词（弱项池）。写正式邮件时改用 bersikeras 或 menuntut；聊天里 ngotot 很自然。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bebas",
+      "display": "bebas",
+      "audio_text": "bebas",
+      "cn": "免除的；自由的；随意的",
+      "en": "free (of); exempt; free to choose",
+      "root": "bebas",
+      "root_cn": "自由的；免于……的",
+      "formation": "形容词。bebas + 费用/限制＝免除：bebas ongkir（免运费）、bebas biaya（免费用）、bebas pajak（免税）；bebas + 动词＝可以随意做：Kamu bebas pilih.（你随便选。）派生：kebebasan（自由）、membebaskan（释放；免除）。",
+      "example": "Kalau barangnya rusak, retur bebas ongkir.",
+      "example_cn": "如果商品坏了，退货免运费。",
+      "synonym_note": "bebas ongkir 与 gratis ongkir 在网购里都常见：bebas 强调“免除”某项费用或限制，gratis 强调“免费得到”。另一个常用义是“自由、随意”：Kamu bebas pilih warna.",
+      "usage_note": "重点复习词（弱项池）。看后面接什么：bebas + 费用＝免除，bebas + 动词＝随意做。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "sungkan",
+      "display": "sungkan",
+      "audio_text": "sungkan",
+      "cn": "客气拘谨；不好意思开口",
+      "en": "hesitant out of politeness; reluctant to ask",
+      "root": "sungkan",
+      "root_cn": "客气拘谨；不好意思开口",
+      "formation": "形容词/状态词，不需要加词缀。常见搭配：sungkan minta（不好意思开口要）、sungkan menolak（不好意思拒绝）、sungkan sama atasan/orang tua（对上司/长辈拘谨客气）。",
+      "example": "Aku sungkan minta tolong lagi, dia sudah sering membantuku.",
+      "example_cn": "我不好意思再拜托他了，他已经帮过我很多次。",
+      "synonym_note": "sungkan vs malu vs nggak enak：malu 是害羞或丢脸；sungkan 是出于尊重或欠了人情而不好意思开口；nggak enak（hati）更口语、范围更广，意思接近。",
+      "usage_note": "复习词（近期核心曝光少）。多用于面对长辈、上司、帮过自己的人，不是“害怕”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngurusin",
+      "display": "ngurusin",
+      "audio_text": "ngurusin",
+      "cn": "处理；操心；帮忙打理",
+      "en": "to take care of; to handle for someone (colloquial)",
+      "root": "urus",
+      "root_cn": "处理；料理；负责",
+      "formation": "口语写法：ng- + urus + -in，对应规范说法 mengurus（办理某件事）或 mengurusi（操心、照料）。常见搭配：ngurusin retur、ngurusin dokumen、ngurusin anak（照顾孩子）。",
+      "example": "Besok biar aku yang ngurusin pengirimannya.",
+      "example_cn": "明天寄件的事让我来处理吧。",
+      "synonym_note": "ngurusin（出面打理、跑流程）vs ngerjain（动手去做某项工作）：办手续、跑腿用 ngurusin。接人做宾语时可能带“管/操心”的语气：Ngapain ngurusin urusan orang?（干嘛管别人的事？）",
+      "usage_note": "复习词（近期核心曝光少）。口语；正式场合改用 mengurus。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bengkak",
+      "display": "bengkak",
+      "audio_text": "bengkak",
+      "cn": "肿；肿胀",
+      "en": "swollen; to swell",
+      "root": "bengkak",
+      "root_cn": "肿",
+      "formation": "形容词，本身就是词根。常见搭配：kaki bengkak（脚肿）、mata bengkak（眼睛肿）、pipi bengkak（脸颊肿）；membengkak＝肿起来，也可比喻费用/数字膨胀（biaya membengkak）。",
+      "example": "Pipinya bengkak karena sakit gigi.",
+      "example_cn": "他的脸颊因为牙疼肿起来了。",
+      "synonym_note": "bengkak（肿，身体部位鼓起）vs lebam（淤青）：bengkak 看的是“鼓起来”，lebam 看的是“青紫”，两者可以同时出现。",
+      "usage_note": "今天08:00新学（上午新词），晚课用于应用复现；练习时把 bengkak 放进“某部位 + bengkak + 原因”的句子。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nggak heran",
+      "display": "nggak heran",
+      "audio_text": "nggak heran",
+      "cn": "难怪；不奇怪",
+      "en": "no wonder; not surprising",
+      "root": "heran",
+      "root_cn": "惊讶；觉得奇怪",
+      "formation": "nggak（口语否定，规范 tidak）+ heran（惊讶）→ 不觉得奇怪 → 难怪。句型：Nggak heran + 你已看到的结果（Nggak heran dia capek.）。规范说法 Tidak heran；派生 keheranan（惊讶）、mengherankan（令人惊讶）。",
+      "example": "Dia lembur tiga hari, nggak heran badannya lemas.",
+      "example_cn": "他连续加班三天，难怪身体没力气。",
+      "synonym_note": "nggak heran vs pantesan：pantesan（＝pantas saja）更口语，常单独一声“难怪！”；nggak heran 后面常接完整的原因/结果。wajar 是“正常、合理”的评价，不带“恍然大悟”的感觉。",
+      "usage_note": "应用词：近期已教的词（非今天08:00内容）；先说结果，再用 nggak heran 点出你觉得合理的原因。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Hari Sabtu sore, paket sepatu lari Dinda akhirnya sampai. Ia langsung membongkar paketnya dan memakai sepatu itu untuk jalan pagi keesokan harinya. Setelah satu jam, kaki kanannya bengkak. Ternyata sepatunya kekecilan, padahal Dinda sudah memilih ukuran yang tertulis di tabel ukuran toko. Senin pagi, ia menghubungi admin toko untuk mengajukan retur. Awalnya Dinda sungkan memprotes karena adminnya sopan. Namun, admin menegaskan bahwa barang yang sudah dipakai tidak bisa diretur. Dinda tetap ngotot dan mengirim foto tabel ukuran dari halaman toko. \"Tabel ukurannya yang salah, Kak!\" tulisnya. Akhirnya admin meminta maaf. \"Pastikan sepatunya dikemas lagi, ya. Retur kali ini bebas ongkir,\" tulis admin itu.",
+    "cn": "周六傍晚，Dinda 的跑鞋包裹终于到了。她马上拆开包裹，第二天一早就穿着这双鞋去晨走。走了一个小时后，她的右脚肿了。原来鞋子太小，可她明明已经按店铺尺码表上写的尺码选了。周一早上，她联系店铺客服申请退货。起初 Dinda 不好意思抗议，因为客服很有礼貌。不过客服明确表示：已经穿过的商品不能退货。Dinda 仍然不肯让步，把店铺页面上的尺码表照片发了过去。“是尺码表错了，姐！”她写道。最后客服道歉了。“请把鞋子重新包装好哦。这次退货免运费。”客服写道。"
+  },
+  "dialogue": {
+    "title": "Kaki bengkak karena sepatu kekecilan（脚肿都是因为鞋小）",
+    "lines": [
+      {
+        "speaker": "Kak Rani",
+        "id": "Kakimu masih bengkak? Kemarin kamu pulang jalan pelan-pelan banget.",
+        "cn": "你的脚还肿吗？昨天你回来的时候走得特别慢。"
+      },
+      {
+        "speaker": "Dinda",
+        "id": "Sudah mendingan, Kak. Tadi pagi aku chat tokonya soal retur.",
+        "cn": "好多了，姐。今天早上我已经就退货的事去私信店铺了。"
+      },
+      {
+        "speaker": "Kak Rani",
+        "id": "Nggak heran kakimu bengkak, sepatunya kekecilan banget. Terus, tokonya mau terima retur?",
+        "cn": "难怪你的脚会肿，鞋子实在太小了。那店家愿意接受退货吗？"
+      },
+      {
+        "speaker": "Dinda",
+        "id": "Awalnya admin bilang barang bekas pakai nggak bisa diretur. Tapi tabel ukurannya memang salah, jadi aku ngotot.",
+        "cn": "一开始客服说用过的东西不能退。可是尺码表确实有错，所以我坚持了。"
+      },
+      {
+        "speaker": "Kak Rani",
+        "id": "Bagus. Paketnya sudah kamu bungkus lagi? Besok biar aku yang ngurusin pengirimannya.",
+        "cn": "好样的。包裹你重新包好了吗？明天寄件的事让我来处理。"
+      },
+      {
+        "speaker": "Dinda",
+        "id": "Sudah, Kak. Tinggal pastikan kardusnya tertutup rapat. Kata admin, retur kali ini bebas ongkir.",
+        "cn": "包好了，姐。只剩确认纸箱封紧了。客服说这次退货免运费。"
+      },
+      {
+        "speaker": "Kak Rani",
+        "id": "Oke. Lain kali, cek juga ukuran sepatu lamamu, jangan cuma percaya tabel toko, ya.",
+        "cn": "好。下次也要对照一下你旧鞋的尺码，别只相信店里的尺码表哦。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "介绍你最近网购（或想象中网购）的一件东西：用 paket、bongkar、pastikan 中至少 2 个词，写 2–3 句自然的印尼语，说明包裹到了之后你做了什么、先确认了什么。不要照抄课文。",
+      "reference_answer": "Minggu lalu aku beli headset lewat toko online. Paketnya sampai dua hari kemudian, jadi aku langsung bongkar dan coba. Aku pastikan suaranya jernih dulu sebelum menyimpan bungkusnya.",
+      "reference_cn": "上周我在网店买了一副耳机。包裹两天后到了，我马上拆开试用。我先确认声音清晰，才把包装收起来。"
+    },
+    {
+      "task": "想象你买的外套颜色和照片差很多，要向店家说明想退货：用 retur，再加上 sungkan 或 ngotot 之一，写 2–3 句，说清楚原因和你的态度（不好意思，或坚持）。",
+      "reference_answer": "Halo Kak, aku mau ajukan retur karena warna jaketnya beda jauh dari foto. Aku sempat sungkan bilang, tapi barangnya memang nggak sesuai, jadi aku ngotot minta retur.",
+      "reference_cn": "你好，我想申请退货，因为夹克的颜色和照片差很多。我一开始不好意思开口，但商品确实不符，所以我坚持要退货。"
+    },
+    {
+      "task": "迁移早课词：用 bengkak 和 nggak heran 写 2 句。先说明某个人（朋友、家人或你自己）身上出了什么状况，再用 nggak heran 指出你觉得合理的原因。",
+      "reference_answer": "Mata adikku bengkak sekali pagi ini. Nggak heran, semalam dia nonton drama sampai jam tiga.",
+      "reference_cn": "我弟弟今天早上眼睛肿得厉害。难怪，他昨晚追剧追到三点。"
+    },
+    {
+      "task": "朋友抱怨网购退款手续好麻烦。用 ngurusin 和 bebas 写 2–3 句回应：表示愿意帮忙，并给一个具体建议。",
+      "reference_answer": "Kalau kamu lagi sibuk, biar aku yang ngurusin returnya. Coba cek dulu apakah ongkir kirim baliknya bebas, soalnya kalau kesalahannya dari toko, biasanya mereka yang menanggung ongkirnya.",
+      "reference_cn": "如果你正忙，退货的事让我来处理。先查一下寄回的运费是不是免的，因为如果是店家的错，通常是他们承担运费。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "同一语境选最自然的一项：“_____ alamatnya benar sebelum kamu bayar, ya.”（朋友叮嘱你付款前先确认地址）",
+        "options": [
+          "Yakin",
+          "Memastikan",
+          "Pastikan",
+          "Pasti"
+        ],
+        "answer_index": 2,
+        "answer": "Pastikan",
+        "explain": "这是朋友之间的叮嘱，要用祈使形式 Pastikan。Yakin alamatnya benar? 是“你确定地址对吗？”的疑问；Memastikan 是陈述或书面说明，不用来直接叮嘱；Pasti 是“肯定”，Pasti alamatnya benar 只是一句判断，不是叮嘱。"
+      },
+      {
+        "type": "choice",
+        "prompt": "网购搭配：“Kalau toko salah kirim barang, retur _____ ongkir.”（运费免除）",
+        "options": [
+          "lepas",
+          "bebas",
+          "kosong",
+          "merdeka"
+        ],
+        "answer_index": 1,
+        "answer": "bebas",
+        "explain": "bebas ongkir＝免运费，是网购固定搭配（也常说 gratis ongkir）。lepas 是“松开、脱落”，kosong 是“空的”，merdeka 是“（国家）独立、自由”，都不能和 ongkir 搭配表示免除。"
+      },
+      {
+        "type": "choice",
+        "prompt": "客服明确表态，毫无商量余地：“Admin _____ bahwa barang yang sudah dipakai tidak bisa diretur.”",
+        "options": [
+          "menegakkan",
+          "mengeluh",
+          "menunjukkan",
+          "menegaskan"
+        ],
+        "answer_index": 3,
+        "answer": "menegaskan",
+        "explain": "menegaskan bahwa… ＝明确表示/重申……。menegakkan 是“维护、树立”（menegakkan hukum），读音相近但搭配不同；mengeluh 是“抱怨”；menunjukkan bahwa… 是“显示出……”，主语通常是事实或数据，不是客服的表态。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Sepatunya kekecilan, jadi aku mau ajukan _____ ke toko.（退货）",
+        "answer": "retur",
+        "explain": "ajukan retur＝申请退货。tukar 是换货，不是退货；retur 是把买来的商品退回卖家的流程。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Aku _____ minta tolong lagi karena dia sudah sering membantuku.（出于客气，不好意思开口）",
+        "answer": "sungkan",
+        "explain": "sungkan minta tolong＝因为欠了人情而不好意思再开口拜托。malu 偏“害羞、丢脸”，这里强调的是对帮过自己的人客气拘谨。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：先确认一下包裹里的东西没有坏。",
+        "tokens": [
+          "Pastikan",
+          "dulu",
+          "isi",
+          "paketnya",
+          "nggak",
+          "rusak."
+        ],
+        "answer": "Pastikan dulu isi paketnya nggak rusak.",
+        "answer_cn": "先确认一下包裹里的东西没有坏。",
+        "explain": "祈使句 Pastikan + dulu（先）+ 要确认的内容；isi paketnya＝包裹的内容物；nggak rusak＝没有坏。"
+      }
+    ],
+    "self_check": [
+      "不看词卡，3 秒内说出 paket、pastikan、retur、bongkar 的中文意思，并各用一句话说出来。",
+      "能分清 pastikan / cek dulu / yakin，以及 retur / tukar / refund 各自的用途。",
+      "能用 ngotot、sungkan、menegaskan 描述同一件事里三种不同的人物态度。",
+      "能不看课文，用 bengkak 和 nggak heran 说一组“状况 + 原因”的句子。"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "先做 3 秒主动提取：看中文说出 paket / pastikan / retur / bongkar，再依次说出 menegaskan、ngotot、bebas、sungkan、ngurusin、bengkak、nggak heran，答不出的立刻看词卡再说一遍。",
+      "对比易混词：pastikan 与 cek dulu、retur 与 tukar、bongkar 与 buka、menegaskan 与 menjelaskan、ngotot 与 keras kepala，各说一句自己的例句。",
+      "用 30 秒向朋友讲一遍“Dinda 的跑鞋 retur”经过，至少用上 4 个目标词，不要背课文。",
+      "最后用 ngurusin 和 bebas 各编一句你真实生活里的表达，并把 sungkan 放进一个你确实遇到过的场景里。"
+    ]
+  }
+}
