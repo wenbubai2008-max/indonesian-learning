@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-05",
-    "session": "pm",
-    "time": "18:00",
-    "day": 45
+    "date": "2026-10-06",
+    "session": "am",
+    "time": "08:00",
+    "day": 46
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-05T04:30:30.474Z",
-    "lesson_watermark": "2026-10-05 08:00",
+    "runtime_generated_at": "2026-10-05T10:45:55.955Z",
+    "lesson_watermark": "2026-10-05 18:00",
     "index_updated": "2026-10-05",
-    "runtime_hash": "43c2232228b23c8e4c415bb0723eb2e75cc6162bbf40bd0ddc614099d117243d",
-    "index_hash": "0bf4c6765850533411106f27ca05563dc501afb1ebd640d000b1c5e9e04cc84c",
+    "runtime_hash": "deb2ed8ee49e0797d849562725b29fb83b4d0b4c6ccad1f2e35735471cace181",
+    "index_hash": "fe3ec6354dba09fcbb2fcf8073fd1b1db0c760586ec6dd6039eb3f6d5758f3a8",
     "rules_hash": "112a2dbb2e62e9937feae9c4e60b52454c4d350e0844cf68f59ad724649db454"
   },
   "schema": {
@@ -244,14 +244,6 @@
       [
         "muat",
         "装载；容纳"
-      ],
-      [
-        "bongkar",
-        "卸货；拆卸"
-      ],
-      [
-        "retur",
-        "退货"
       ],
       [
         "bandingkan",
@@ -896,16 +888,8 @@
         "快递员"
       ],
       [
-        "paket",
-        "包裹"
-      ],
-      [
         "mirip",
         "相似"
-      ],
-      [
-        "pastikan",
-        "确保"
       ],
       [
         "catat",
@@ -942,6 +926,14 @@
       [
         "sebutan",
         "称呼；叫法"
+      ],
+      [
+        "negara",
+        "国家"
+      ],
+      [
+        "gang",
+        "小巷"
       ]
     ],
     "review": [
@@ -1800,46 +1792,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-09-28",
-      "session": "am",
-      "review_core": [
-        "menyalin",
-        "menegaskan",
-        "nyinggung",
-        "nangkep",
-        "kelabakan"
-      ],
-      "new_words": [
-        "becek",
-        "unggah",
-        "pelayanan",
-        "sia-sia",
-        "ribut",
-        "sombong",
-        "wangi",
-        "pingsan",
-        "mikir",
-        "curhat"
-      ]
-    },
-    {
-      "date": "2026-09-28",
-      "session": "pm",
-      "review_core": [
-        "mengeluh",
-        "seraya",
-        "ngotot",
-        "ngeh",
-        "layak"
-      ],
-      "new_words": [
-        "rekan kerja",
-        "terus-menerus",
-        "dengan demikian",
-        "sial"
-      ]
-    },
-    {
       "date": "2026-09-29",
       "session": "am",
       "review_core": [
@@ -2098,105 +2050,42 @@
         "peduli",
         "hukuman"
       ]
+    },
+    {
+      "date": "2026-10-05",
+      "session": "pm",
+      "review_core": [
+        "menegaskan",
+        "ngotot",
+        "bebas",
+        "sungkan",
+        "ngurusin"
+      ],
+      "new_words": [
+        "paket",
+        "pastikan",
+        "retur",
+        "bongkar"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "new_words": [
-      "buat",
-      "belanja",
-      "mengajak"
+      "paket",
+      "pastikan",
+      "retur",
+      "bongkar"
     ],
     "review_core": [
-      "sekadar",
-      "memisahkan",
-      "kepake",
-      "kepancing",
-      "kesiangan"
+      "menegaskan",
+      "ngotot",
+      "bebas",
+      "sungkan",
+      "ngurusin"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-05",
-    "vocab": [
-      [
-        "pencuri",
-        "小偷；偷东西的人",
-        "thief",
-        "curi",
-        "偷"
-      ],
-      [
-        "teriak",
-        "大喊；喊叫",
-        "to shout; to yell",
-        "teriak",
-        "喊叫"
-      ],
-      [
-        "kejar",
-        "追；追赶",
-        "to chase; to run after",
-        "kejar",
-        "追"
-      ],
-      [
-        "terpeleset",
-        "滑倒；脚下一滑",
-        "to slip",
-        "peleset",
-        "滑；偏离"
-      ],
-      [
-        "bengkak",
-        "肿；肿胀",
-        "swollen",
-        "bengkak",
-        "肿"
-      ],
-      [
-        "darurat",
-        "紧急；紧急状况",
-        "emergency; urgent",
-        "darurat",
-        "紧急"
-      ],
-      [
-        "rugi",
-        "亏；吃亏；划不来",
-        "to lose out; at a loss",
-        "rugi",
-        "亏损"
-      ],
-      [
-        "mengantar",
-        "送；陪送；送到",
-        "to take (someone) somewhere; to drop off",
-        "antar",
-        "送"
-      ],
-      [
-        "peduli",
-        "在意；关心；在乎",
-        "to care; to mind",
-        "peduli",
-        "在乎"
-      ],
-      [
-        "hukuman",
-        "惩罚；刑罚",
-        "punishment; penalty",
-        "hukum",
-        "法律；规则"
-      ]
-    ],
-    "review_vocab": [
-      "menunjukkan",
-      "niat",
-      "mengeluh",
-      "nyinggung",
-      "cerewet"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

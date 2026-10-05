@@ -6601,22 +6601,24 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-05 19:00",
-    "last_seen": "2026-10-04 18:00",
+    "last_seen": "2026-10-05 18:00",
     "sessions": [
       "19:00",
       "18:00"
     ],
     "dates": [
       "2026-09-05",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-10-05"
     ],
-    "example": "Dia kerja dari pagi sampai malam, nggak heran dia capek.",
-    "example_cn": "他从早做到晚，难怪他累。",
+    "example": "Dia lembur tiga hari, nggak heran badannya lemas.",
+    "example_cn": "他连续加班三天，难怪身体没力气。",
     "lesson_occurrences": [
       "2026-09-05 19:00",
-      "2026-10-04 18:00"
+      "2026-10-04 18:00",
+      "2026-10-05 18:00"
     ]
   },
   {
@@ -7649,23 +7651,27 @@ window.DAILY_VOCAB_DB = [
     "en": "take care of; deal with; handle",
     "root": "urus",
     "root_cn": "处理；料理；负责",
-    "example": "Pagi ini aku harus ngurusin dokumen dulu sebelum meeting.",
-    "example_cn": "今天早上开会前我得先处理文件。",
+    "example": "Besok biar aku yang ngurusin pengirimannya.",
+    "example_cn": "明天寄件的事让我来处理吧。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-08 08:00",
+    "last_seen": "2026-10-05 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-10-05"
     ],
     "lesson_occurrences": [
-      "2026-09-08 08:00"
+      "2026-09-08 08:00",
+      "2026-10-05 18:00"
     ]
   },
   {
@@ -8837,26 +8843,30 @@ window.DAILY_VOCAB_DB = [
     "en": "hesitant out of politeness or respect",
     "root": "sungkan",
     "root_cn": "客气拘谨；不好意思开口",
-    "example": "Dia sungkan ngomong langsung karena yang ngajak lebih senior.",
-    "example_cn": "他不好意思直接说，因为邀请他的人资历更深。",
+    "example": "Aku sungkan minta tolong lagi, dia sudah sering membantuku.",
+    "example_cn": "我不好意思再拜托他了，他已经帮过我很多次。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 19:00",
+    "last_seen": "2026-10-05 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-11"
+      "2026-09-11",
+      "2026-10-05"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
-      "2026-09-11 19:00"
+      "2026-09-11 19:00",
+      "2026-10-05 18:00"
     ]
   },
   {
@@ -8927,17 +8937,17 @@ window.DAILY_VOCAB_DB = [
     "en": "insist strongly; be stubborn",
     "root": "ngotot",
     "root_cn": "强硬坚持；不肯让步",
-    "example": "Dia tetap ngotot mau mengubah jadwal rapat.",
-    "example_cn": "他还是硬要改会议时间。",
+    "example": "Adikku ngotot mau ikut, padahal sudah malam.",
+    "example_cn": "弟弟/妹妹硬要跟着去，虽然已经很晚了。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-02 18:00",
+    "last_seen": "2026-10-05 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -8947,14 +8957,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-12",
       "2026-09-16",
       "2026-09-28",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-05"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
       "2026-09-12 19:00",
       "2026-09-16 18:00",
       "2026-09-28 18:00",
-      "2026-10-02 18:00"
+      "2026-10-02 18:00",
+      "2026-10-05 18:00"
     ]
   },
   {
@@ -11158,27 +11170,31 @@ window.DAILY_VOCAB_DB = [
     "en": "free / unrestricted",
     "root": "bebas",
     "root_cn": "自由；免于",
-    "example": "Kamu bebas memilih cara yang paling cocok.",
-    "example_cn": "你可以自由选择最适合的方法。",
+    "example": "Kalau barangnya rusak, retur bebas ongkir.",
+    "example_cn": "如果商品坏了，退货免运费。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-05 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-18",
       "2026-09-29",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-05"
     ],
     "lesson_occurrences": [
       "2026-09-18 08:00",
       "2026-09-29 08:00",
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-10-05 18:00"
     ]
   },
   {
@@ -11663,16 +11679,16 @@ window.DAILY_VOCAB_DB = [
     "en": "emphasize; affirm; clarify",
     "root": "tegas",
     "root_cn": "明确；坚定",
-    "example": "Atasan menegaskan bahwa data pelanggan harus aman.",
-    "example_cn": "上司强调客户数据必须安全。",
+    "example": "Ibu menegaskan bahwa kita harus berangkat jam enam.",
+    "example_cn": "妈妈明确说了我们必须六点出发。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-19 18:00",
-    "last_seen": "2026-09-30 18:00",
+    "last_seen": "2026-10-05 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -11681,13 +11697,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-19",
       "2026-09-26",
       "2026-09-28",
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-05"
     ],
     "lesson_occurrences": [
       "2026-09-19 18:00",
       "2026-09-26 18:00",
       "2026-09-28 08:00",
-      "2026-09-30 18:00"
+      "2026-09-30 18:00",
+      "2026-10-05 18:00"
     ]
   },
   {
@@ -17392,23 +17410,26 @@ window.DAILY_VOCAB_DB = [
     "en": "swollen",
     "root": "bengkak",
     "root_cn": "肿",
-    "example": "Setelah main bola, pergelangan kakinya bengkak dan susah dipakai jalan.",
-    "example_cn": "踢完球后，他的脚踝肿了，走路很困难。",
+    "example": "Pipinya bengkak karena sakit gigi.",
+    "example_cn": "他的脸颊因为牙疼肿起来了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-05 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-05 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-05"
     ],
     "lesson_occurrences": [
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-10-05 18:00"
     ]
   },
   {
@@ -17534,6 +17555,106 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-05 08:00"
+    ]
+  },
+  {
+    "word": "paket",
+    "cn": "包裹；（成套的）套餐",
+    "en": "package; parcel; bundle",
+    "root": "paket",
+    "root_cn": "包裹；套餐（外来词，本身就是词根）",
+    "example": "Paketnya baru sampai tadi pagi.",
+    "example_cn": "包裹今天早上才到。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 18:00",
+    "last_seen": "2026-10-05 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 18:00"
+    ]
+  },
+  {
+    "word": "pastikan",
+    "cn": "确保；弄清楚",
+    "en": "make sure; ensure (imperative form)",
+    "root": "pasti",
+    "root_cn": "确定；一定",
+    "example": "Pastikan alamatnya benar sebelum kamu bayar, ya.",
+    "example_cn": "付款之前先确认地址没写错哦。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 18:00",
+    "last_seen": "2026-10-05 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 18:00"
+    ]
+  },
+  {
+    "word": "retur",
+    "cn": "退货；退回",
+    "en": "return (goods); to send back",
+    "root": "retur",
+    "root_cn": "退回；退货（外来词，本身就是词根）",
+    "example": "Aku mau ajukan retur karena ukurannya nggak cocok.",
+    "example_cn": "我想申请退货，因为尺寸不合适。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 18:00",
+    "last_seen": "2026-10-05 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 18:00"
+    ]
+  },
+  {
+    "word": "bongkar",
+    "cn": "拆开；卸下；翻出来",
+    "en": "to unpack; to take apart; to unload",
+    "root": "bongkar",
+    "root_cn": "拆开；卸下；翻出",
+    "example": "Begitu paketnya sampai, aku langsung bongkar dan coba sepatunya.",
+    "example_cn": "包裹一到，我就马上拆开并试了鞋子。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-05 18:00",
+    "last_seen": "2026-10-05 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-05"
+    ],
+    "lesson_occurrences": [
+      "2026-10-05 18:00"
     ]
   }
 ];
