@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-04T14:50:22.155Z",
+  "updated_at": "2026-10-05T04:27:35.586Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -9474,8 +9474,9 @@
     "agak": {
       "word": "agak",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:51.778Z",
+      "updated_at": "2026-10-05T04:27:25.086Z",
       "display": "agak",
+      "cn": "有点、稍微",
       "last_review": "2026-09-12T14:13:51.771Z",
       "last_mastered": "2026-09-12T14:13:51.771Z",
       "reasons": [],
@@ -28340,6 +28341,7 @@
       "display": "ngerjain",
       "cn": "做；处理某项工作（口语）",
       "root": "kerja",
+      "root_cn": "工作；做",
       "last_wrong": "2026-09-29T10:27:13.120Z",
       "last_review": "2026-10-03T14:10:52.361Z",
       "reasons": [
