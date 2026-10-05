@@ -1,0 +1,244 @@
+{
+ "date": "2026-10-05",
+ "session": "am",
+ "time": "08:00",
+ "day": 45,
+ "level": "A2+ → B1",
+ "duration_minutes": 30,
+ "title": "08:00 早课｜Pencuri di depan warung",
+ "new_words": [
+  "pencuri",
+  "teriak",
+  "kejar",
+  "terpeleset",
+  "bengkak",
+  "darurat",
+  "rugi",
+  "mengantar",
+  "peduli",
+  "hukuman"
+ ],
+ "vocab": [
+  {
+   "word": "pencuri",
+   "display": "pencuri",
+   "audio_text": "pencuri",
+   "cn": "小偷；偷东西的人",
+   "en": "thief",
+   "root": "curi",
+   "root_cn": "偷",
+   "formation": "pe- + curi（偷），指做这个动作的人。常见搭配：Ada pencuri!（有小偷！）、pencuri motor（偷摩托车的人）、pencuri kecil（小偷小摸）。",
+   "example": "Pencuri itu masuk lewat jendela belakang waktu rumahnya kosong.",
+   "example_cn": "趁房子没人，小偷从后窗进去了。",
+   "synonym_note": "pencuri 是通用词；maling 更口语，在爪哇一带很常听到（Maling! Maling!）；copet 专指在人群或公交上扒包的小偷；perampok 是抢劫的人，通常带有暴力或威胁。",
+   "is_oral_new": false
+  },
+  {
+   "word": "teriak",
+   "display": "teriak",
+   "audio_text": "teriak",
+   "cn": "大喊；喊叫",
+   "en": "to shout; to yell",
+   "root": "teriak",
+   "root_cn": "喊叫",
+   "formation": "口语里常直接说 teriak，较完整的形式是 berteriak。常见搭配：teriak minta tolong（大喊救命）、teriak kesakitan（疼得大叫）、teriak-teriak（不停地喊）。",
+   "example": "Anak itu teriak senang waktu melihat kado ulang tahunnya.",
+   "example_cn": "孩子看到生日礼物，高兴得大叫起来。",
+   "synonym_note": "teriak = 提高音量大喊，常因着急、生气或兴奋；berseru 更书面，有“呼喊、号召”的味道；menjerit = 尖叫（害怕、疼痛时）；memanggil = 叫人过来，音量不一定大。",
+   "is_oral_new": false
+  },
+  {
+   "word": "kejar",
+   "display": "kejar",
+   "audio_text": "kejar",
+   "cn": "追；追赶",
+   "en": "to chase; to run after",
+   "root": "kejar",
+   "root_cn": "追",
+   "formation": "常用主动形式 mengejar；被动 dikejar；kejar-kejaran = 互相追逐。常见搭配：mengejar bus（赶公交）、mengejar pencuri、kejar target（赶目标，抽象用法）；口语命令可直接说 Kejar!（快追！）",
+   "example": "Ayo kejar, bisnya belum jauh!",
+   "example_cn": "快追，公交车还没走远！",
+   "synonym_note": "kejar = 追赶一个在前面跑或移动的目标；mengikuti = 跟着，不一定要追上；menyusul = 随后赶到（Nanti saya susul）；mencari = 寻找，目标不一定在移动。",
+   "is_oral_new": false
+  },
+  {
+   "word": "terpeleset",
+   "display": "terpeleset",
+   "audio_text": "terpeleset",
+   "cn": "滑倒；脚下一滑",
+   "en": "to slip",
+   "root": "peleset",
+   "root_cn": "滑；偏离",
+   "formation": "ter- + peleset，表示不小心发生的动作。常见搭配：terpeleset di kamar mandi（在浴室滑倒）、terpeleset kulit pisang（踩到香蕉皮滑倒）。",
+   "example": "Hati-hati, lantainya licin, nanti kamu terpeleset.",
+   "example_cn": "小心，地板很滑，你会滑倒的。",
+   "synonym_note": "terpeleset = 脚下一滑，多因地面湿滑；tergelincir 也是“滑”，常用于车辆或从斜坡滑落；terjatuh = 不小心摔倒（不一定因为滑）；tersandung = 被东西绊倒。",
+   "is_oral_new": false
+  },
+  {
+   "word": "bengkak",
+   "display": "bengkak",
+   "audio_text": "bengkak",
+   "cn": "肿；肿胀",
+   "en": "swollen",
+   "root": "bengkak",
+   "root_cn": "肿",
+   "formation": "常用来描述身体部位：kaki bengkak（脚肿了）、mata bengkak（眼睛肿）、pipi bengkak；动词 membengkak = 肿起来，也可比喻费用暴涨：biaya membengkak。",
+   "example": "Setelah main bola, pergelangan kakinya bengkak dan susah dipakai jalan.",
+   "example_cn": "踢完球后，他的脚踝肿了，走路很困难。",
+   "synonym_note": "bengkak = 身体部位胀大；lebam 和 memar 都指淤青（皮下发青紫），不一定肿；radang = 发炎，常伴随红肿热痛。",
+   "is_oral_new": false
+  },
+  {
+   "word": "darurat",
+   "display": "darurat",
+   "audio_text": "darurat",
+   "cn": "紧急；紧急状况",
+   "en": "emergency; urgent",
+   "root": "darurat",
+   "root_cn": "紧急",
+   "formation": "常见搭配：keadaan darurat（紧急状况）、pintu darurat（安全出口）、UGD = unit gawat darurat（急诊室）、dalam keadaan darurat（在紧急情况下）。",
+   "example": "Kalau ada kebakaran, segera keluar lewat pintu darurat.",
+   "example_cn": "如果发生火灾，请马上从紧急出口出去。",
+   "synonym_note": "darurat = 必须马上处理的紧急状态（医疗、灾害）；mendesak = 紧迫、不能再拖（urusan mendesak）；gawat = 危急；口语 Gawat! 也表示“糟了！”；penting = 重要，但不一定紧急。",
+   "is_oral_new": false
+  },
+  {
+   "word": "rugi",
+   "display": "rugi",
+   "audio_text": "rugi",
+   "cn": "亏；吃亏；划不来",
+   "en": "to lose out; at a loss",
+   "root": "rugi",
+   "root_cn": "亏损",
+   "formation": "既可指金钱：rugi besar（亏了很多）、rugi jutaan；也可指吃亏、错过：Rugi kalau tidak dicoba（不试就亏了）。反义词是 untung（赚；划算；幸好）。",
+   "example": "Usaha kecil itu rugi tiga bulan berturut-turut.",
+   "example_cn": "那家小生意连续三个月亏本。",
+   "synonym_note": "rugi = 亏（钱、时间或机会）；untung = 赚到、幸好（反义）；boros = 浪费、乱花钱；sia-sia = 白费，努力没有结果。",
+   "is_oral_new": false
+  },
+  {
+   "word": "mengantar",
+   "display": "mengantar",
+   "audio_text": "mengantar",
+   "cn": "送；陪送；送到",
+   "en": "to take (someone) somewhere; to drop off",
+   "root": "antar",
+   "root_cn": "送",
+   "formation": "meN- + antar。常见搭配：mengantar anak ke sekolah（送孩子上学）、mengantar tamu（送客人）、mengantar pulang（送回家）；antar-jemput = 接送。",
+   "example": "Setiap pagi Ayah mengantar adik ke sekolah.",
+   "example_cn": "每天早上爸爸送弟弟去学校。",
+   "synonym_note": "mengantar = 亲自陪人或把人送到某处；menjemput = 接（人）；mengirim = 寄、发送（paket、pesan），不必亲自到场；memberi = 给。",
+   "is_oral_new": false
+  },
+  {
+   "word": "peduli",
+   "display": "peduli",
+   "audio_text": "peduli",
+   "cn": "在意；关心；在乎",
+   "en": "to care; to mind",
+   "root": "peduli",
+   "root_cn": "在乎",
+   "formation": "常见搭配：peduli sama/pada/dengan（在意……）、tidak peduli / nggak peduli（不在乎）、peduli lingkungan（关心环境）；名词 kepedulian = 关怀。",
+   "example": "Dia kelihatan cuek, tapi sebenarnya peduli banget sama keluarganya.",
+   "example_cn": "他看起来满不在乎，其实非常在意家人。",
+   "synonym_note": "peduli = 把人或事放在心上，可以是关心，也可以是在乎；perhatian = 关注、留意，侧重“把注意力给对方”；cuek = 不理会（口语），近似 tidak peduli，但常带随性的味道。",
+   "is_oral_new": false
+  },
+  {
+   "word": "hukuman",
+   "display": "hukuman",
+   "audio_text": "hukuman",
+   "cn": "惩罚；刑罚",
+   "en": "punishment; penalty",
+   "root": "hukum",
+   "root_cn": "法律；规则",
+   "formation": "hukum + -an：hukuman = 对做错事的人作出的处罚。常见搭配：mendapat hukuman（受到惩罚）、menjatuhkan hukuman（判处/给予惩罚）、hukuman berat / ringan（重罚／轻罚）、hukuman mati（死刑）。",
+   "example": "Anak itu dapat hukuman karena menyontek waktu ujian.",
+   "example_cn": "那个孩子因为考试作弊受到了惩罚。",
+   "synonym_note": "hukuman = 处罚，法律上或学校、家里都可用；sanksi = 规定或法律上的处分，较正式；denda = 罚款；pidana = 刑事（正式法律用语）。",
+   "is_oral_new": false
+  }
+ ],
+ "review_vocab": [
+  "menunjukkan",
+  "niat",
+  "mengeluh",
+  "nyinggung",
+  "cerewet"
+ ],
+ "sentences": [
+  {
+   "text": "Pencuri itu lari ke gang kecil, lalu Bu Sari teriak minta tolong dan kejar dia.",
+   "cn": "小偷跑进了一条窄巷，Sari 阿姨一边大喊救命，一边追了上去。"
+  },
+  {
+   "text": "Jalannya licin, jadi dia terpeleset dan kakinya langsung bengkak.",
+   "cn": "路很滑，所以她滑倒了，脚马上就肿了。"
+  },
+  {
+   "text": "Tetangganya mengantar Bu Sari ke UGD karena kondisinya darurat.",
+   "cn": "邻居因为情况紧急，把 Sari 阿姨送去了急诊室。"
+  },
+  {
+   "text": "Warungnya tutup seharian, jadi dia rugi lumayan banyak, tapi untung tetangganya peduli.",
+   "cn": "小店关了一整天，她亏了不少，不过幸好邻居很关心她。"
+  },
+  {
+   "text": "Beberapa hari kemudian pencuri itu tertangkap dan mendapat hukuman.",
+   "cn": "几天以后，那个小偷被抓住了，受到了惩罚。"
+  }
+ ],
+ "reading": {
+  "text": "Sore itu Bu Sari menjaga warungnya di Bekasi. Tiba-tiba seorang pencuri menyambar tas pelanggan lalu lari ke arah gang. Bu Sari teriak, \"Tolong! Ada pencuri! Ayo kejar!\" dan berlari mengejarnya. Sayang, jalannya masih licin, jadi Bu Sari terpeleset. Kakinya bengkak, dan tetangganya mengantar dia ke UGD karena kondisinya darurat. Dokter menunjukkan hasil rontgen dan bilang tidak ada tulang yang patah. Bu Sari sempat mengeluh, \"Aduh, rugi banget hari ini!\" Tetangganya menjawab, \"Saya nggak niat nyinggung, Bu, tapi lain kali jangan dikejar sendiri.\" Dokternya agak cerewet, tetapi dia benar-benar peduli: berkali-kali dia mengingatkan Bu Sari untuk istirahat.",
+  "cn": "那天傍晚，Sari 阿姨在勿加泗看着她的小店。突然，一个小偷抢了顾客的包，跑向小巷。Sari 阿姨大喊：“救命！有小偷！快追！”然后跑着追了上去。可惜路面还很滑，Sari 阿姨滑倒了。她的脚肿了，邻居因为情况紧急，把她送去了急诊室。医生给她看了X光片，说没有骨折。Sari 阿姨忍不住抱怨：“哎呀，今天亏大了！”邻居回答：“Bu，我不是有意冒犯您，不过下次别一个人去追了。”医生有点唠叨，但确实很关心她：他一再叮嘱 Sari 阿姨要休息。"
+ },
+ "quiz": [
+  {
+   "question": "【语感辨析】你不小心说了让朋友不舒服的话，马上道歉：Eh, maaf ya, aku nggak niat ___ kamu tadi.",
+   "options": [
+    "tersinggung",
+    "disinggung",
+    "nyinggung",
+    "singgung"
+   ],
+   "answer_index": 2,
+   "answer": "nyinggung",
+   "explain": "“我没有意（要）冒犯你”需要主动动词：nyinggung（menyinggung 的口语形式，复习词）= 冒犯；tersinggung = 自己觉得被冒犯，是被冒犯的一方；disinggung = 被提到（话题被带到）；单独的 singgung 不能直接这样用作谓语。"
+  },
+  {
+   "question": "【场景应用】你的钱包被人抢着跑了，你对身边的朋友喊：Dompetku dibawa lari! Ayo ___ dia sebelum jauh!",
+   "options": [
+    "kejar",
+    "ikuti",
+    "panggil",
+    "tunggu"
+   ],
+   "answer_index": 0,
+   "answer": "kejar",
+   "explain": "kejar = 追赶正在跑的人，目的是追上。ikuti 只是“跟着走”，不一定要追上；panggil 是叫他过来，对跑远的人效果不大；tunggu 是等，与“趁他还没跑远”的情境相反。"
+  },
+  {
+   "question": "【词义识别】哪个词表示“做这件事划不来、会亏”？Kalau barangnya rusak dan tidak bisa dikembalikan, saya yang ___.",
+   "options": [
+    "untung",
+    "hemat",
+    "laris",
+    "rugi"
+   ],
+   "answer_index": 3,
+   "answer": "rugi",
+   "explain": "rugi = 亏、吃亏，东西坏了又不能退，吃亏的是我。untung 是赚到、划算，意思相反；hemat 是节省；laris 是（商品）畅销，说的是卖家的生意。"
+  }
+ ],
+ "output": {
+  "task": "介绍一次你（或身边的人）遇到的小意外或突发状况，例如滑倒、受伤、东西坏了：说明发生了什么、谁帮了你、你当时的感受。用 2–3 句自然的印尼语，至少使用本课 2 个目标词（如 terpeleset、bengkak、mengantar、darurat、peduli、rugi）。不要照抄课文。",
+  "reference_answer": "Minggu lalu saya terpeleset di tangga kantor, dan pergelangan kaki saya langsung bengkak. Saya sempat panik, tapi untung ada rekan kerja yang peduli dan mengantar saya ke klinik. Sekarang sudah lebih baik, tinggal istirahat beberapa hari.",
+  "reference_cn": "上周我在公司楼梯上滑倒了，脚踝马上就肿了。我一度很慌，不过幸好有个很关心我的同事，送我去了诊所。现在好多了，只要再休息几天。"
+ },
+ "review": [
+  "3秒主动提取：看中文说出 pencuri、teriak、kejar、terpeleset、bengkak、darurat、rugi、mengantar、peduli、hukuman，再各配一个搭配（如 teriak minta tolong、kaki bengkak、keadaan darurat、mengantar anak、hukuman berat）。",
+  "易混辨析：pencuri（通用）↔ maling（口语）↔ copet（扒手）；terpeleset（脚下一滑）↔ tersandung（被绊倒）；mengantar（送人）↔ menjemput（接人）↔ mengirim（寄）；hukuman（处罚）↔ denda（罚款）。",
+  "复习词实战：用 nyinggung 说一句道歉的话（Aku nggak niat nyinggung kamu），用 mengeluh 说一件你最近抱怨的事，用 menunjukkan 说“医生给我看了结果”，再用 cerewet 形容一个爱唠叨但关心你的人。"
+ ]
+}
