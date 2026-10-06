@@ -1,0 +1,244 @@
+{
+ "date": "2026-10-06",
+ "session": "am",
+ "time": "08:00",
+ "day": 46,
+ "level": "A2+ → B1",
+ "duration_minutes": 30,
+ "title": "08:00 早课｜Foto Makan Malam dan Hati yang Cemburu",
+ "new_words": [
+  "berkencan",
+  "cemburu",
+  "gengsi",
+  "kepo",
+  "mengunggah",
+  "menyembunyikan",
+  "setia",
+  "kecewa",
+  "nyesel",
+  "selamanya"
+ ],
+ "vocab": [
+  {
+   "word": "berkencan",
+   "display": "berkencan",
+   "audio_text": "berkencan",
+   "cn": "约会；谈恋爱（交往）",
+   "en": "to date; to go out with someone",
+   "root": "kencan",
+   "root_cn": "约会",
+   "formation": "ber- + kencan（约会），表示“和某人约会/交往”。常见搭配：berkencan dengan + 人、mengajak berkencan（约某人出去）、kencan pertama（第一次约会）。",
+   "example": "Mereka mulai berkencan setelah setahun berteman.",
+   "example_cn": "他们做了一年朋友之后才开始约会。",
+   "synonym_note": "berkencan = 约会、交往，带恋爱意味；pacaran 更口语，强调“在谈恋爱的状态”；janjian = 约好见面，不一定是恋爱；bertemu = 见面，最中性。",
+   "is_oral_new": false
+  },
+  {
+   "word": "cemburu",
+   "display": "cemburu",
+   "audio_text": "cemburu",
+   "cn": "吃醋；嫉妒（多指感情）",
+   "en": "jealous (in a relationship)",
+   "root": "cemburu",
+   "root_cn": "吃醋",
+   "formation": "形容词/动词，常见搭配：cemburu sama/pada + 人（对……吃醋）、cemburu buta（无端乱吃醋）、rasa cemburu（醋意）、Kamu cemburu, ya?（你吃醋了吧？）",
+   "example": "Dia cemburu karena pacarnya sering ngobrol dengan rekan kerja perempuan.",
+   "example_cn": "她吃醋了，因为男朋友常和女同事聊天。",
+   "synonym_note": "cemburu = 感情里担心对方被抢走的吃醋，最常用；iri = 羡慕别人拥有的东西或成就而心里不平衡（iri hati）；dengki = 更重的嫉恨，带恶意。",
+   "is_oral_new": false
+  },
+  {
+   "word": "gengsi",
+   "display": "gengsi",
+   "audio_text": "gengsi",
+   "cn": "爱面子；拉不下脸",
+   "en": "pride; reluctance to lose face",
+   "root": "gengsi",
+   "root_cn": "面子；体面",
+   "formation": "名词，口语里常当形容词用：gengsi banget（很爱面子）、gengsi minta maaf（拉不下脸道歉）、demi gengsi（为了面子）、jaga gengsi（维护面子）。",
+   "example": "Dia gengsi minta maaf duluan, padahal dia tahu dia yang salah.",
+   "example_cn": "他明明知道是自己错了，却拉不下脸先道歉。",
+   "synonym_note": "gengsi = 为了面子不愿示弱，多半带一点“死要面子”的味道；harga diri = 自尊，中性甚至褒义；malu = 害羞、难为情；sombong = 傲慢，看不起别人。",
+   "is_oral_new": false
+  },
+  {
+   "word": "kepo",
+   "display": "kepo",
+   "audio_text": "kepo",
+   "cn": "爱打听；好奇想探究别人的事（口语）",
+   "en": "nosy; curious about other people's business",
+   "root": "kepo",
+   "root_cn": "爱打听（口语）",
+   "formation": "口语形容词，常见搭配：kepo banget（特别爱打听）、jangan kepo（别瞎打听）、kepo sama urusan orang（打听别人的事）、ikut kepo（跟着凑热闹打听）。朋友间常半开玩笑地用。",
+   "example": "Maaf ya kalau aku kepo, tapi kamu sama dia ada hubungan apa?",
+   "example_cn": "不好意思我有点爱打听，不过你和她是什么关系？",
+   "synonym_note": "kepo = 想打听别人的私事，口语、常带玩笑；penasaran = 好奇、想知道答案，中性；usil = 爱多管闲事或捣乱；ingin tahu = 想知道，最规范、最中性。",
+   "is_oral_new": false
+  },
+  {
+   "word": "mengunggah",
+   "display": "mengunggah",
+   "audio_text": "mengunggah",
+   "cn": "上传；发布（到网上）",
+   "en": "to upload; to post online",
+   "root": "unggah",
+   "root_cn": "上传",
+   "formation": "meN- + unggah（词根以元音开头，所以是 meng-）。被动形式 diunggah；名词 unggahan = 发布的内容。常见搭配：mengunggah foto / video / dokumen。反义：mengunduh（下载）。",
+   "example": "Aku baru mengunggah foto liburan ke Instagram.",
+   "example_cn": "我刚把度假照片上传到 Instagram 了。",
+   "synonym_note": "mengunggah = 上传、发布到网上；口语也常说 posting（posting foto）或 upload；mengunduh = 下载（反义）；mengirim = 发送给某个人，不是发到公开平台。",
+   "is_oral_new": false
+  },
+  {
+   "word": "menyembunyikan",
+   "display": "menyembunyikan",
+   "audio_text": "menyembunyikan",
+   "cn": "把……藏起来；隐瞒",
+   "en": "to hide (something); to conceal",
+   "root": "sembunyi",
+   "root_cn": "躲藏",
+   "formation": "meN- + sembunyi + -kan（s 变 ny）：把东西或信息藏起来。常见搭配：menyembunyikan hadiah（藏礼物）、menyembunyikan perasaan（掩饰感情）、menyembunyikan sesuatu dari + 人（瞒着某人某事）。自己躲起来用 bersembunyi。",
+   "example": "Dia menyembunyikan hadiah ulang tahun itu di dalam lemari.",
+   "example_cn": "他把生日礼物藏在了衣柜里。",
+   "synonym_note": "menyembunyikan = 把某物或某事藏起来、不让人知道；bersembunyi = 自己躲起来（不及物）；menutupi = 遮住、掩盖（menutupi kesalahan）；merahasiakan = 保密，不对别人说。",
+   "is_oral_new": false
+  },
+  {
+   "word": "setia",
+   "display": "setia",
+   "audio_text": "setia",
+   "cn": "忠诚的；专一的",
+   "en": "loyal; faithful",
+   "root": "setia",
+   "root_cn": "忠诚",
+   "formation": "形容词。常见搭配：setia sama/pada + 人或事（忠于……）、pelanggan setia（老顾客）、tidak setia（不忠）、setia kawan（讲义气）；名词 kesetiaan = 忠诚。",
+   "example": "Anjing itu setia menunggu pemiliknya di depan stasiun setiap sore.",
+   "example_cn": "那条狗每天傍晚都忠实地在车站前等它的主人。",
+   "synonym_note": "setia = 对人、关系或承诺长久不变心；loyal 是借词，多用于工作或品牌；jujur = 诚实，不说谎；tulus = 真心、不求回报。",
+   "is_oral_new": false
+  },
+  {
+   "word": "kecewa",
+   "display": "kecewa",
+   "audio_text": "kecewa",
+   "cn": "失望",
+   "en": "disappointed",
+   "root": "kecewa",
+   "root_cn": "失望",
+   "formation": "形容词/动词。常见搭配：kecewa sama/dengan/pada + 人或事（对……失望）、kecewa banget、mengecewakan（让人失望）、kekecewaan（失望之情）。",
+   "example": "Aku kecewa sama hasil ujianku, padahal sudah belajar tiap malam.",
+   "example_cn": "我对考试成绩很失望，明明每天晚上都在复习。",
+   "synonym_note": "kecewa = 期望落空后的失望；sedih = 难过，不一定有“期待落空”；sakit hati = 被人伤了心；putus asa = 彻底绝望，程度更重。",
+   "is_oral_new": false
+  },
+  {
+   "word": "nyesel",
+   "display": "nyesel",
+   "audio_text": "nyesel",
+   "cn": "后悔（口语）",
+   "en": "to regret (colloquial)",
+   "root": "sesal",
+   "root_cn": "懊悔",
+   "formation": "nyesel 是 menyesal 的口语形式（meN- + sesal，口语里鼻音化成 nyesel）。常见搭配：nyesel banget、Nyesel deh aku…（我真后悔……）；规范形式 menyesal、menyesali；名词 penyesalan = 悔恨。",
+   "example": "Nyesel banget aku nggak ikut waktu itu, ternyata seru banget.",
+   "example_cn": "我真后悔当时没去，原来那么好玩。",
+   "synonym_note": "nyesel（口语）与 menyesal（规范）是同一个词的两种语体；kapok = 吃过苦头，再也不敢了；sayang = 可惜，说事情令人遗憾，不一定是自己的错。",
+   "is_oral_new": false
+  },
+  {
+   "word": "selamanya",
+   "display": "selamanya",
+   "audio_text": "selamanya",
+   "cn": "永远；一辈子",
+   "en": "forever",
+   "root": "lama",
+   "root_cn": "久；长",
+   "formation": "se- + lama + -nya（字面意思“那么长的时间”），表示没有尽头。常见搭配：untuk selamanya（永远地）、tidak selamanya（不会永远）、selama-lamanya（更强调、更书面）。",
+   "example": "Hujan nggak akan turun selamanya, sabar ya.",
+   "example_cn": "雨不会一直下个没完，耐心点。",
+   "synonym_note": "selamanya = 永远，时间没有终点；selalu = 总是，每一次都这样；seumur hidup = 一辈子，限定在一个人的寿命内；abadi = 永恒的，书面（cinta abadi）。",
+   "is_oral_new": false
+  }
+ ],
+ "review_vocab": [
+  "layak",
+  "seraya",
+  "menyalin",
+  "pembangunan",
+  "jomblo"
+ ],
+ "sentences": [
+  {
+   "text": "Rani mulai berkencan dengan Bimo bulan lalu, tapi dia masih menyembunyikan hubungan itu dari teman-teman kantor.",
+   "cn": "Rani 上个月开始和 Bimo 约会，不过她还瞒着公司的同事们。"
+  },
+  {
+   "text": "Temannya kepo banget, jadi Rani akhirnya mengaku juga.",
+   "cn": "朋友特别爱打听，所以 Rani 最后还是承认了。"
+  },
+  {
+   "text": "Bimo orangnya setia, dan dia bilang ingin bersama Rani selamanya.",
+   "cn": "Bimo 这个人很专一，他说想和 Rani 永远在一起。"
+  },
+  {
+   "text": "Rani sempat kecewa waktu Bimo lupa ulang tahunnya, tapi dia gengsi bilang apa-apa.",
+   "cn": "Bimo 忘了她的生日时，Rani 有点失望，但又拉不下脸说什么。"
+  },
+  {
+   "text": "Rani nyesel nggak cerita lebih awal, karena ternyata Bimo juga sudah lama pengin bilang ke semua orang.",
+   "cn": "Rani 后悔没有早点说，因为 Bimo 其实也早就想告诉所有人了。"
+  }
+ ],
+ "reading": {
+  "text": "Dina dan Reza sudah enam bulan berkencan. Dulu Dina mengira dia akan jomblo selamanya, jadi dia takut kehilangan Reza. Sabtu malam, Reza mengunggah foto makan malam bersama teman kantornya, dan ada seorang perempuan di sebelahnya. Dina langsung cemburu. Karena kepo, dia membuka akun perempuan itu. Dia gengsi bertanya langsung, jadi seharian dia diam seraya berpura-pura tenang. Akhirnya Reza bertanya, \"Kamu kenapa?\" Dina menceritakan semuanya. Reza menjawab, \"Dia cuma rekan kerja. Aku nggak menyembunyikan apa-apa, dan aku setia sama kamu.\" Dina kecewa dengan dirinya sendiri karena sudah curiga. \"Nyesel deh aku diam seharian,\" katanya. \"Kamu layak dipercaya.\"",
+  "cn": "Dina 和 Reza 已经交往半年了。以前 Dina 一直以为自己会永远单身，所以很怕失去 Reza。周六晚上，Reza 上传了一张和公司同事吃晚饭的照片，他旁边坐着一位女生。Dina 立刻吃醋了。因为爱打听，她点开了那个女生的账号。她拉不下脸直接问，于是一整天都不说话，一边假装若无其事。最后 Reza 问她：“你怎么了？”Dina 把一切都说了出来。Reza 回答：“她只是同事。我没有瞒你任何事，而且我对你是专一的。”Dina 对自己很失望，因为她居然怀疑他。“我真后悔一整天都不理你，”她说，“你值得被信任。”"
+ },
+ "quiz": [
+  {
+   "question": "【语感辨析】沙发已经烂得不行了，你对朋友说：Sofa itu sudah rusak parah, jadi bisa dibilang nggak ___ pakai lagi.",
+   "options": [
+    "pantas",
+    "cocok",
+    "layak",
+    "patut"
+   ],
+   "answer_index": 2,
+   "answer": "layak",
+   "explain": "“tidak layak pakai” 是固定说法，意思是“已经不适合再用”，layak（复习词）= 够格、值得、适合。pantas 是“相称、应该”（pantas dapat pujian）；cocok 是“合适、对味”，说的是搭配合不合；patut 偏书面，“值得/应当”，不和 pakai 搭成这个固定说法。"
+  },
+  {
+   "question": "【场景应用】Rani 精心准备了生日惊喜，Bimo 却忘了来。Rani 心里很不是滋味：Rani jadi ___ banget.",
+   "options": [
+    "cemburu",
+    "kecewa",
+    "gengsi",
+    "nyesel"
+   ],
+   "answer_index": 1,
+   "answer": "kecewa",
+   "explain": "kecewa = 期待落空后的失望，正好是“准备了惊喜却没等到人”。cemburu 是吃醋，要有“担心被别人抢走”的情境；gengsi 是爱面子、不愿示弱，不是一种被辜负的感受；nyesel 是后悔自己做过的事，而这里错不在 Rani。"
+  },
+  {
+   "question": "【搭配辨析】昨晚她把旅行照片发到了社交媒体上，朋友们一直在点赞：Tadi malam dia ___ foto perjalanannya ke media sosial, dan teman-temannya terus memberi like.",
+   "options": [
+    "mengunggah",
+    "menyalin",
+    "menyembunyikan",
+    "mengunduh"
+   ],
+   "answer_index": 0,
+   "answer": "mengunggah",
+   "explain": "mengunggah = 上传、发布到网上，和 ke media sosial 搭配。menyalin（复习词）是复制、抄写；menyembunyikan 是藏起来，和“朋友点赞”矛盾；mengunduh 是下载，方向正好相反。"
+  }
+ ],
+ "output": {
+  "task": "讲一件你（或朋友）因为“爱面子”或“好奇”，没有直接问或直接说，结果感到失望或后悔的小事：说明当时发生了什么、你为什么没开口、后来结果怎样。用 2–3 句自然的印尼语，至少使用本课 2 个目标词（如 gengsi、kepo、kecewa、nyesel、cemburu、menyembunyikan）。不要照抄课文。",
+  "reference_answer": "Waktu itu aku gengsi tanya langsung kenapa temanku nggak datang ke acara ulang tahunku, jadi aku cuma diam. Aku sempat kecewa, tapi ternyata dia lagi sakit dan nggak mau bikin aku khawatir. Sekarang aku nyesel nggak tanya dari awal.",
+  "reference_cn": "那时我拉不下脸直接问朋友为什么没来我的生日聚会，所以只是不吭声。我一度很失望，但原来他当时生病了，不想让我担心。现在我后悔当初没有一开始就问。"
+ },
+ "review": [
+  "3秒主动提取：看中文说出 berkencan、cemburu、gengsi、kepo、mengunggah、menyembunyikan、setia、kecewa、nyesel、selamanya，再各配一个搭配（如 berkencan dengan…、cemburu sama pacar、gengsi minta maaf、kepo banget、mengunggah foto、menyembunyikan perasaan、pelanggan setia、kecewa sama hasil、nyesel banget、untuk selamanya）。",
+  "易混辨析：cemburu（感情吃醋）↔ iri（羡慕嫉妒别人拥有的）；kepo（爱打听，口语）↔ penasaran（好奇）；menyembunyikan（把东西藏起来）↔ bersembunyi（自己躲起来）↔ merahasiakan（保密）；selamanya（永远）↔ selalu（总是）；nyesel（后悔）↔ kapok（吃过苦头不再做）。",
+  "复习词实战：用 layak 说“你值得这个机会”（Kamu layak dapat kesempatan itu），用 seraya 说“笑着一边挥手”（Dia pergi seraya melambaikan tangan），用 menyalin 说“我把笔记抄一份”，用 pembangunan 说“桥的建设”（pembangunan jembatan），再用 jomblo 说“我还单身”（Aku masih jomblo）。"
+ ]
+}
