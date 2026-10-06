@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-06T10:00:48.490Z",
+    "runtime_generated_at": "2026-10-06T10:05:47.085Z",
     "lesson_watermark": "2026-10-06 08:00",
     "index_updated": "2026-10-06",
-    "runtime_hash": "a5225931a00e6119bce1b3fa30d5fa70a5d6d5a4f9d1d4cb88a520427485205c",
+    "runtime_hash": "738e7c3e05c8e6918b22506cacbd19860a072e8733fefb3e8f41b5707ff7b616",
     "index_hash": "5b71bebc12427abe6ee535838c620a1755721bb5bad3de6277029870e954c91a",
     "rules_hash": "112a2dbb2e62e9937feae9c4e60b52454c4d350e0844cf68f59ad724649db454"
   },
@@ -1238,6 +1238,16 @@
         "承担；未完全结束（相关语境）"
       ],
       [
+        "keteteran",
+        1,
+        1,
+        "2026-10-06T10:00:19.399Z",
+        "2026-10-06T10:00:19.399Z",
+        "忙不过来；跟不上；应付不过来",
+        "keteteran",
+        "忙不过来；跟不上"
+      ],
+      [
         "ngingetin",
         1,
         1,
@@ -1486,16 +1496,6 @@
         "民族；国家",
         "bangsa",
         "民族；国家"
-      ],
-      [
-        "bangunan",
-        2,
-        0,
-        "",
-        "",
-        "建筑；建筑物",
-        "bangun",
-        "建；起；醒"
       ]
     ],
     "focus": [
