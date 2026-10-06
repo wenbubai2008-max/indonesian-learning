@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T09:55:14.847Z",
+  "updated_at": "2026-10-06T09:59:56.908Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -277,16 +277,18 @@
     "mengatur": {
       "word": "mengatur",
       "status": "active",
-      "updated_at": "2026-09-29T10:49:03.387Z",
+      "updated_at": "2026-10-06T09:57:27.844Z",
       "display": "mengatur",
       "cn": "安排；管理；调节",
       "root": "atur",
-      "last_review": "2026-09-29T10:49:03.363Z",
+      "last_wrong": "2026-10-06T09:57:27.817Z",
+      "last_review": "2026-10-06T09:57:27.817Z",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "quick_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 2
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "membatasi": {
       "word": "membatasi",
@@ -1299,14 +1301,14 @@
     "sedangkan": {
       "word": "sedangkan",
       "status": "active",
-      "updated_at": "2026-09-29T10:48:56.316Z",
+      "updated_at": "2026-10-06T09:57:18.093Z",
       "display": "sedangkan",
-      "last_review": "2026-09-29T10:48:56.291Z",
+      "last_review": "2026-10-06T09:57:18.061Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "tubuh": {
       "word": "tubuh",
@@ -1791,14 +1793,14 @@
     "raya": {
       "word": "raya",
       "status": "active",
-      "updated_at": "2026-09-29T10:49:08.397Z",
+      "updated_at": "2026-10-06T09:57:38.306Z",
       "display": "raya",
-      "last_review": "2026-09-29T10:49:08.373Z",
+      "last_review": "2026-10-06T09:57:38.281Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "puncak": {
       "word": "puncak",
@@ -1956,17 +1958,19 @@
     "menemukan": {
       "word": "menemukan",
       "status": "active",
-      "updated_at": "2026-09-29T10:48:39.705Z",
+      "updated_at": "2026-10-06T09:56:43.226Z",
       "display": "menemukan",
       "cn": "发现 / 找到",
       "root": "temu",
       "root_cn": "遇见；找到",
-      "last_review": "2026-09-29T10:48:39.679Z",
+      "last_wrong": "2026-10-06T09:56:43.200Z",
+      "last_review": "2026-10-06T09:56:43.200Z",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "quick_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 2
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "bangunan": {
       "word": "bangunan",
@@ -6178,16 +6182,16 @@
     "perubahan": {
       "word": "perubahan",
       "status": "active",
-      "updated_at": "2026-09-29T10:49:35.400Z",
+      "updated_at": "2026-10-06T09:57:41.270Z",
       "display": "perubahan",
       "cn": "变化、改变",
       "root": "ubah",
-      "last_review": "2026-09-29T10:49:35.375Z",
+      "last_review": "2026-10-06T09:57:41.243Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "tindakan": {
       "word": "tindakan",
@@ -6275,16 +6279,16 @@
     "memutuskan": {
       "word": "memutuskan",
       "status": "active",
-      "updated_at": "2026-09-29T10:49:05.771Z",
+      "updated_at": "2026-10-06T09:57:35.888Z",
       "display": "memutuskan",
       "cn": "决定",
       "root": "putus",
-      "last_review": "2026-09-29T10:49:05.746Z",
+      "last_review": "2026-10-06T09:57:35.862Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "komentar": {
       "word": "komentar",
@@ -6657,17 +6661,17 @@
     "tegas": {
       "word": "tegas",
       "status": "active",
-      "updated_at": "2026-09-29T10:48:44.762Z",
+      "updated_at": "2026-10-06T09:56:57.266Z",
       "display": "tegas",
       "cn": "坚定",
       "root": "tegas",
       "root_cn": "明确；坚定",
-      "last_review": "2026-09-29T10:48:44.736Z",
+      "last_review": "2026-10-06T09:56:57.240Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "mewah": {
       "word": "mewah",
@@ -7335,14 +7339,14 @@
     "saran": {
       "word": "saran",
       "status": "active",
-      "updated_at": "2026-09-29T10:48:28.011Z",
+      "updated_at": "2026-10-06T09:56:39.693Z",
       "display": "saran",
-      "last_review": "2026-09-29T10:48:27.987Z",
+      "last_review": "2026-10-06T09:56:39.667Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "jembatan": {
       "word": "jembatan",
@@ -7449,14 +7453,14 @@
     "ancaman": {
       "word": "ancaman",
       "status": "active",
-      "updated_at": "2026-09-29T10:48:23.705Z",
+      "updated_at": "2026-10-06T09:56:34.208Z",
       "display": "ancaman",
-      "last_review": "2026-09-29T10:48:23.678Z",
+      "last_review": "2026-10-06T09:56:34.183Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "istana": {
       "word": "istana",
@@ -18662,16 +18666,16 @@
     "nyasar": {
       "word": "nyasar",
       "status": "active",
-      "updated_at": "2026-09-29T10:49:45.072Z",
+      "updated_at": "2026-10-06T09:58:03.014Z",
       "display": "nyasar",
       "cn": "迷路；走错路",
       "root": "sasar",
-      "last_review": "2026-09-29T10:49:45.046Z",
+      "last_review": "2026-10-06T09:58:02.988Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "putar balik": {
       "word": "putar balik",
@@ -19467,16 +19471,16 @@
     "lemot": {
       "word": "lemot",
       "status": "active",
-      "updated_at": "2026-09-29T10:48:12.499Z",
+      "updated_at": "2026-10-06T09:56:28.450Z",
       "display": "lemot",
       "cn": "卡；慢（设备/网络）",
       "root": "lemot",
-      "last_review": "2026-09-29T10:48:12.471Z",
+      "last_review": "2026-10-06T09:56:28.425Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "error": {
       "word": "error",
@@ -21807,16 +21811,16 @@
     "percuma": {
       "word": "percuma",
       "status": "active",
-      "updated_at": "2026-09-29T10:47:41.598Z",
+      "updated_at": "2026-10-06T09:56:09.996Z",
       "display": "percuma",
       "cn": "白费；没用",
       "root": "percuma",
-      "last_review": "2026-09-29T10:47:41.573Z",
+      "last_review": "2026-10-06T09:56:09.969Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "sia-sia": {
       "word": "sia-sia",
@@ -23864,11 +23868,11 @@
     "berusaha": {
       "word": "berusaha",
       "status": "active",
-      "updated_at": "2026-09-29T10:48:42.864Z",
+      "updated_at": "2026-10-06T09:56:49.983Z",
       "display": "berusaha",
       "cn": "努力；设法",
       "root": "usaha",
-      "last_review": "2026-09-29T10:48:42.839Z",
+      "last_review": "2026-10-06T09:56:49.957Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -23876,7 +23880,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "wisuda": {
       "word": "wisuda",
@@ -28823,6 +28827,53 @@
         "manual_unknown"
       ],
       "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kepending": {
+      "word": "kepending",
+      "status": "active",
+      "updated_at": "2026-10-06T09:55:52.918Z",
+      "display": "kepending",
+      "cn": "被搁着；卡着没推进（口语混用）",
+      "root": "pending",
+      "last_wrong": "2026-10-06T09:55:52.891Z",
+      "last_review": "2026-10-06T09:55:52.891Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "ganjel": {
+      "word": "ganjel",
+      "status": "active",
+      "updated_at": "2026-10-06T09:58:24.969Z",
+      "display": "ganjel",
+      "cn": "心里有点卡；觉得哪里不对劲；有件事没说开（口语）",
+      "root": "ganjal",
+      "root_cn": "垫住；卡住；妨碍",
+      "last_wrong": "2026-10-06T09:58:24.941Z",
+      "last_review": "2026-10-06T09:58:24.941Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "ngingetin": {
+      "word": "ngingetin",
+      "status": "active",
+      "updated_at": "2026-10-06T09:59:46.446Z",
+      "display": "ngingetin",
+      "cn": "提醒一下（口语）",
+      "root": "ingat",
+      "root_cn": "记得；想起",
+      "last_wrong": "2026-10-06T09:59:46.420Z",
+      "last_review": "2026-10-06T09:59:46.420Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
       "right_streak": 0
     }
   }
