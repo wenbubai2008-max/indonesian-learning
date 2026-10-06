@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T10:02:35.811Z",
+  "updated_at": "2026-10-06T11:10:08.794Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1675,8 +1675,11 @@
     "sebab": {
       "word": "sebab",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-06T11:09:58.062Z",
       "display": "sebab",
+      "cn": "原因；缘故；因为",
+      "root": "sebab",
+      "root_cn": "缘由；原因",
       "reasons": [
         "memory_dont"
       ],
