@@ -9324,9 +9324,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-10-03 18:00",
+    "last_seen": "2026-10-06 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -9338,7 +9338,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-25",
       "2026-09-26",
       "2026-09-28",
-      "2026-10-03"
+      "2026-10-03",
+      "2026-10-06"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
@@ -9348,7 +9349,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-26 08:00",
       "2026-09-28 18:00",
       "2026-10-03 08:00",
-      "2026-10-03 18:00"
+      "2026-10-03 18:00",
+      "2026-10-06 08:00"
     ]
   },
   {
@@ -11365,20 +11367,22 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-10-06 08:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-09-18",
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-06"
     ],
     "lesson_occurrences": [
       "2026-09-18 18:00",
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-10-06 08:00"
     ]
   },
   {
@@ -11395,20 +11399,22 @@ window.DAILY_VOCAB_DB = [
       "口语",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-10-06 08:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-09-18",
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-06"
     ],
     "lesson_occurrences": [
       "2026-09-18 18:00",
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-10-06 08:00"
     ]
   },
   {
@@ -12530,9 +12536,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-06 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -12541,13 +12547,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-23",
       "2026-09-28",
       "2026-09-30",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-06"
     ],
     "lesson_occurrences": [
       "2026-09-23 08:00",
       "2026-09-28 08:00",
       "2026-09-30 18:00",
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-10-06 08:00"
     ]
   },
   {
@@ -13353,9 +13361,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-22 18:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-06 08:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -13364,13 +13372,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-22",
       "2026-09-28",
       "2026-09-30",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-06"
     ],
     "lesson_occurrences": [
       "2026-09-22 18:00",
       "2026-09-28 18:00",
       "2026-09-30 18:00",
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-10-06 08:00"
     ]
   },
   {
@@ -17655,6 +17665,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-05 18:00"
+    ]
+  },
+  {
+    "word": "berkencan",
+    "cn": "约会；谈恋爱（交往）",
+    "en": "to date; to go out with someone",
+    "root": "kencan",
+    "root_cn": "约会",
+    "example": "Mereka mulai berkencan setelah setahun berteman.",
+    "example_cn": "他们做了一年朋友之后才开始约会。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 08:00"
+    ]
+  },
+  {
+    "word": "cemburu",
+    "cn": "吃醋；嫉妒（多指感情）",
+    "en": "jealous (in a relationship)",
+    "root": "cemburu",
+    "root_cn": "吃醋",
+    "example": "Dia cemburu karena pacarnya sering ngobrol dengan rekan kerja perempuan.",
+    "example_cn": "她吃醋了，因为男朋友常和女同事聊天。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 08:00"
+    ]
+  },
+  {
+    "word": "gengsi",
+    "cn": "爱面子；拉不下脸",
+    "en": "pride; reluctance to lose face",
+    "root": "gengsi",
+    "root_cn": "面子；体面",
+    "example": "Dia gengsi minta maaf duluan, padahal dia tahu dia yang salah.",
+    "example_cn": "他明明知道是自己错了，却拉不下脸先道歉。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 08:00"
+    ]
+  },
+  {
+    "word": "kepo",
+    "cn": "爱打听；好奇想探究别人的事（口语）",
+    "en": "nosy; curious about other people's business",
+    "root": "kepo",
+    "root_cn": "爱打听（口语）",
+    "example": "Maaf ya kalau aku kepo, tapi kamu sama dia ada hubungan apa?",
+    "example_cn": "不好意思我有点爱打听，不过你和她是什么关系？",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 08:00"
+    ]
+  },
+  {
+    "word": "mengunggah",
+    "cn": "上传；发布（到网上）",
+    "en": "to upload; to post online",
+    "root": "unggah",
+    "root_cn": "上传",
+    "example": "Aku baru mengunggah foto liburan ke Instagram.",
+    "example_cn": "我刚把度假照片上传到 Instagram 了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 08:00"
+    ]
+  },
+  {
+    "word": "menyembunyikan",
+    "cn": "把……藏起来；隐瞒",
+    "en": "to hide (something); to conceal",
+    "root": "sembunyi",
+    "root_cn": "躲藏",
+    "example": "Dia menyembunyikan hadiah ulang tahun itu di dalam lemari.",
+    "example_cn": "他把生日礼物藏在了衣柜里。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 08:00"
+    ]
+  },
+  {
+    "word": "setia",
+    "cn": "忠诚的；专一的",
+    "en": "loyal; faithful",
+    "root": "setia",
+    "root_cn": "忠诚",
+    "example": "Anjing itu setia menunggu pemiliknya di depan stasiun setiap sore.",
+    "example_cn": "那条狗每天傍晚都忠实地在车站前等它的主人。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 08:00"
+    ]
+  },
+  {
+    "word": "kecewa",
+    "cn": "失望",
+    "en": "disappointed",
+    "root": "kecewa",
+    "root_cn": "失望",
+    "example": "Aku kecewa sama hasil ujianku, padahal sudah belajar tiap malam.",
+    "example_cn": "我对考试成绩很失望，明明每天晚上都在复习。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 08:00"
+    ]
+  },
+  {
+    "word": "nyesel",
+    "cn": "后悔（口语）",
+    "en": "to regret (colloquial)",
+    "root": "sesal",
+    "root_cn": "懊悔",
+    "example": "Nyesel banget aku nggak ikut waktu itu, ternyata seru banget.",
+    "example_cn": "我真后悔当时没去，原来那么好玩。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 08:00"
+    ]
+  },
+  {
+    "word": "selamanya",
+    "cn": "永远；一辈子",
+    "en": "forever",
+    "root": "lama",
+    "root_cn": "久；长",
+    "example": "Hujan nggak akan turun selamanya, sabar ya.",
+    "example_cn": "雨不会一直下个没完，耐心点。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 08:00"
     ]
   }
 ];

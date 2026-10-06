@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-06",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 46
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-05T10:45:55.955Z",
-    "lesson_watermark": "2026-10-05 18:00",
-    "index_updated": "2026-10-05",
-    "runtime_hash": "deb2ed8ee49e0797d849562725b29fb83b4d0b4c6ccad1f2e35735471cace181",
-    "index_hash": "fe3ec6354dba09fcbb2fcf8073fd1b1db0c760586ec6dd6039eb3f6d5758f3a8",
+    "runtime_generated_at": "2026-10-06T00:29:08.250Z",
+    "lesson_watermark": "2026-10-06 08:00",
+    "index_updated": "2026-10-06",
+    "runtime_hash": "927806179150f83e11d6f64979f14d788a9662a69c4dd0964907d28cce9fbeb5",
+    "index_hash": "5b71bebc12427abe6ee535838c620a1755721bb5bad3de6277029870e954c91a",
     "rules_hash": "112a2dbb2e62e9937feae9c4e60b52454c4d350e0844cf68f59ad724649db454"
   },
   "schema": {
@@ -50,20 +50,8 @@
   "candidates": {
     "new_dont": [
       [
-        "berkencan",
-        "约会"
-      ],
-      [
         "berpartisipasi",
         "参与"
-      ],
-      [
-        "gengsi",
-        "“爱面子”"
-      ],
-      [
-        "kepo",
-        "“瞎打听”"
       ],
       [
         "melempar",
@@ -94,32 +82,12 @@
         "擦洗 / 摩擦"
       ],
       [
-        "mengunggah",
-        "上传"
-      ],
-      [
         "menyalakan",
         "打开"
       ],
       [
-        "menyembunyikan",
-        "隐藏"
-      ],
-      [
         "negatif",
         "消极地"
-      ],
-      [
-        "nyesel",
-        "“后悔了”"
-      ],
-      [
-        "selamanya",
-        "永远"
-      ],
-      [
-        "setia",
-        "忠诚的"
       ],
       [
         "kuno",
@@ -182,10 +150,6 @@
         "倾向于"
       ],
       [
-        "kecewa",
-        "失望"
-      ],
-      [
         "keberadaan",
         "存在"
       ],
@@ -200,10 +164,6 @@
       [
         "cerai",
         "离婚"
-      ],
-      [
-        "cemburu",
-        "嫉妒；吃醋"
       ],
       [
         "keras kepala",
@@ -2067,6 +2027,29 @@
         "retur",
         "bongkar"
       ]
+    },
+    {
+      "date": "2026-10-06",
+      "session": "am",
+      "review_core": [
+        "layak",
+        "seraya",
+        "menyalin",
+        "pembangunan",
+        "jomblo"
+      ],
+      "new_words": [
+        "berkencan",
+        "cemburu",
+        "gengsi",
+        "kepo",
+        "mengunggah",
+        "menyembunyikan",
+        "setia",
+        "kecewa",
+        "nyesel",
+        "selamanya"
+      ]
     }
   ],
   "previous_pm": {
@@ -2085,7 +2068,88 @@
       "ngurusin"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-06",
+    "vocab": [
+      [
+        "berkencan",
+        "约会；谈恋爱（交往）",
+        "to date; to go out with someone",
+        "kencan",
+        "约会"
+      ],
+      [
+        "cemburu",
+        "吃醋；嫉妒（多指感情）",
+        "jealous (in a relationship)",
+        "cemburu",
+        "吃醋"
+      ],
+      [
+        "gengsi",
+        "爱面子；拉不下脸",
+        "pride; reluctance to lose face",
+        "gengsi",
+        "面子；体面"
+      ],
+      [
+        "kepo",
+        "爱打听；好奇想探究别人的事（口语）",
+        "nosy; curious about other people's business",
+        "kepo",
+        "爱打听（口语）"
+      ],
+      [
+        "mengunggah",
+        "上传；发布（到网上）",
+        "to upload; to post online",
+        "unggah",
+        "上传"
+      ],
+      [
+        "menyembunyikan",
+        "把……藏起来；隐瞒",
+        "to hide (something); to conceal",
+        "sembunyi",
+        "躲藏"
+      ],
+      [
+        "setia",
+        "忠诚的；专一的",
+        "loyal; faithful",
+        "setia",
+        "忠诚"
+      ],
+      [
+        "kecewa",
+        "失望",
+        "disappointed",
+        "kecewa",
+        "失望"
+      ],
+      [
+        "nyesel",
+        "后悔（口语）",
+        "to regret (colloquial)",
+        "sesal",
+        "懊悔"
+      ],
+      [
+        "selamanya",
+        "永远；一辈子",
+        "forever",
+        "lama",
+        "久；长"
+      ]
+    ],
+    "review_vocab": [
+      "layak",
+      "seraya",
+      "menyalin",
+      "pembangunan",
+      "jomblo"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
