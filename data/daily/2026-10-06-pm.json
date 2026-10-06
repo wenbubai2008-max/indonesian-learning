@@ -1,0 +1,340 @@
+{
+  "date": "2026-10-06",
+  "session": "pm",
+  "time": "18:00",
+  "day": 46,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Pesanan kepending dan hari yang keteteran",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "bahas",
+    "catat",
+    "kerugian"
+  ],
+  "vocab": [
+    {
+      "word": "bahas",
+      "display": "bahas",
+      "audio_text": "bahas",
+      "cn": "讨论；剖析（口语常直接用词根，正式用 membahas）",
+      "en": "to discuss; to go over (a topic)",
+      "root": "bahas",
+      "root_cn": "讨论；剖析",
+      "formation": "meN- + bahas → membahas（b 前 meN- 变 mem-，b 保留）；dibahas＝被讨论；pembahasan＝讨论内容。常见搭配：membahas masalah（讨论问题）、membahas rencana（商量计划）、dibahas dalam rapat（在会上被讨论）、Bahas nanti ya（口语：回头再说）。",
+      "example": "Kita bahas rencana akhir pekan setelah makan siang, ya.",
+      "example_cn": "我们午饭后再商量周末的计划吧。",
+      "synonym_note": "membahas（把一个主题拿出来逐点讨论、分析）vs membicarakan（泛泛地谈到某事，也可指背后议论人）：想表达“认真讨论方案”用 membahas；Jangan membicarakan orang lain 里的“议论”不要换成 membahas。书里的“本书论述……”也用 membahas（Buku ini membahas…）。",
+      "usage_note": "新词（fuzzy 半熟词）：重点是主动调用。口语直接说 “Bahas dulu” 当祈使句；写报告或正式场合用 membahas / dibahas。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "catat",
+      "display": "catat",
+      "audio_text": "catat",
+      "cn": "记下；记录（口语常直接用词根，正式用 mencatat）",
+      "en": "to note down; to record",
+      "root": "catat",
+      "root_cn": "记下；记录",
+      "formation": "meN- + catat → mencatat（c 前 meN- 变 men-，c 保留）；dicatat＝被记下；catatan＝笔记、记录（-an 名词）；pencatat＝记录员（peN- + catat）。常见搭配：mencatat nomor pesanan（记订单号）、mencatat di ponsel（记在手机里）、Catat dulu ya（先记下来）、catatan kecil（小笔记）。",
+      "example": "Tolong catat nomor pesanannya dulu supaya gampang dicek.",
+      "example_cn": "请先把订单号记下来，这样好查。",
+      "synonym_note": "mencatat（把需要留存的信息记下来，方便日后查）vs menulis（一般的书写、写作，如 menulis surat、menulis cerita）：记订单号、会议要点用 mencatat；写信、写文章用 menulis。mencatat 也能指“记录在案”，如 mencatat rekor（创纪录）。",
+      "usage_note": "新词（fuzzy 半熟词）：口语里 “Catat dulu” 很常用；注意不要把 catat 当成 “写文章”。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kerugian",
+      "display": "kerugian",
+      "audio_text": "kerugian",
+      "cn": "损失；亏损（名词）",
+      "en": "loss; damage (noun)",
+      "root": "rugi",
+      "root_cn": "亏；吃亏；不划算",
+      "formation": "ke- + rugi + -an → kerugian（名词：损失）；rugi＝亏、不划算（口语 rugi banget）；merugikan＝使……受损（meN- + rugi + -kan）。常见搭配：mengalami kerugian（蒙受损失）、kerugian besar（大损失）、menanggung kerugian（承担损失）、mengganti kerugian（赔偿损失）。",
+      "example": "Kalau barangnya salah kirim, toko harus menanggung kerugian ongkos kirim.",
+      "example_cn": "如果货发错了，店里得承担运费上的损失。",
+      "synonym_note": "kerugian（名词：损失，报告/新闻里常用）vs rugi（口语形容词/动词：亏了）：“Toko itu rugi besar.” 比 “Toko itu mengalami kerugian besar.” 口语；mengalami 后面更自然接名词 kerugian。kerugian 也不同于 kehilangan（丢失东西）：kehilangan dompet＝丢了钱包，不是 kerugian dompet。",
+      "usage_note": "新词（dont 陌生词）：本课只学“损失”这个核心义，并用 mengalami / menanggung 两个固定搭配记忆。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "heran",
+      "display": "heran",
+      "audio_text": "heran",
+      "cn": "纳闷；觉得奇怪（想不通）",
+      "en": "puzzled; surprised that something is odd",
+      "root": "heran",
+      "root_cn": "纳闷；觉得奇怪（词根即本词）",
+      "formation": "heran 本身是形容词/状态词；merasa heran＝感到奇怪；keheranan（ke-an）＝惊讶、纳闷（名词）；mengherankan（meN- + heran + -kan）＝令人奇怪。常见搭配：heran kenapa…（纳闷为什么……）、bikin heran（让人想不通）、merasa heran、Aku heran, kok…（我想不通，怎么……）。",
+      "example": "Dia heran karena pelanggan itu tiba-tiba membatalkan pesanan.",
+      "example_cn": "他很纳闷，那位顾客怎么突然取消了订单。",
+      "synonym_note": "heran（想不通、觉得奇怪，后面常跟 kenapa / kok）vs kaget（被吓到、突然吃一惊）：看到蛇会 kaget，看到平时很准时的人迟到会 heran。反例：Aku heran melihat dia datang 也可以只是“有点意外”，不一定带负面情绪。",
+      "usage_note": "重点复习词（弱项池，focus）。注意 “heran” 是想不通，“nggak heran” 才是“难怪”，两者别混。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menemukan",
+      "display": "menemukan",
+      "audio_text": "menemukan",
+      "cn": "发现；找到（找到的结果，也可指偶然发现）",
+      "en": "to find; to discover",
+      "root": "temu",
+      "root_cn": "遇见；找到",
+      "formation": "meN- + temu + -kan → menemukan（t 脱落，前缀变 men-）；bertemu＝见面（ber- + temu）；pertemuan＝会面；penemuan＝发现；ditemukan＝被发现；口语 ketemu＝遇到、找到。常见搭配：menemukan kesalahan（发现错误）、menemukan jalan keluar（找到出路）、menemukan dompet（找到钱包）、ditemukan di…（在……被发现）。",
+      "example": "Akhirnya aku menemukan kunci motorku di bawah sofa.",
+      "example_cn": "我终于在沙发底下找到了摩托车钥匙。",
+      "synonym_note": "menemukan（找到的结果；也可以是没在找却偶然发现）vs mencari（找的过程）vs menemui（去见某人，如 menemui dokter）vs bertemu（人与人见面）：找东西成功用 menemukan，不要写 bertemu kunci。",
+      "usage_note": "重点复习词（弱项池，focus）。口语里常说 ketemu；写作和比较正式的场合用 menemukan。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ganjel",
+      "display": "ganjel",
+      "audio_text": "ganjel",
+      "cn": "心里有疙瘩；觉得哪里不对劲（口语）",
+      "en": "to feel something is off; something nags at you (colloquial)",
+      "root": "ganjal",
+      "root_cn": "垫住；卡住；妨碍",
+      "formation": "标准形式：ganjal → mengganjal（meN-，g 前变 meng-）：Ada yang mengganjal di hati（心里有个疙瘩）；口语常说成 ada yang ganjel，把 -al 说成 -el；ganjalan＝垫块、障碍。常见搭配：ada yang ganjel（有点卡心）、masih ganjel（还是觉得不对劲）、bikin ganjel、mengganjal pintu（拿东西把门垫住，字面义）。",
+      "example": "Aku masih ganjel soal tagihan kemarin, belum jelas siapa yang bayar.",
+      "example_cn": "关于昨天那笔账单我心里还是不踏实，还没说清楚谁来付。",
+      "synonym_note": "ganjel（心里有件没说开、没解决的事，觉得不对劲）vs kepikiran（脑子里老想着、放不下，不一定有不满）：忘不了朋友说过的话是 kepikiran；觉得账没算清楚、话没讲明白才是 ganjel。书面写 mengganjal。",
+      "usage_note": "重点复习词（弱项池）。口语词，朋友同事之间用；写邮件或正式报告时换成 mengganjal / tidak nyaman。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kepending",
+      "display": "kepending",
+      "audio_text": "kepending",
+      "cn": "被搁着；卡住没推进（口语）",
+      "en": "left pending; stuck and not moving forward (colloquial)",
+      "root": "pending",
+      "root_cn": "搁置；待处理（英语借词 pending）",
+      "formation": "ke- + pending → kepending：口语里 ke- 表示“非故意地陷入某种状态”，类似 ketinggalan（落下了）、kelupaan（忘了）。标准说法：tertunda / tertahan。常见搭配：kerjaan kepending（工作被卡住）、pesanan kepending、pembayaran pending（付款处于待处理，pending 本身也直接当形容词用）。",
+      "example": "Laporan bulanan kepending gara-gara server kantor error.",
+      "example_cn": "月报因为公司服务器出问题被卡住了。",
+      "synonym_note": "kepending（口语：本该推进却被卡住，多带“没办法”的无奈）vs tertunda（标准、中性：被推迟）vs ditunda（有人故意推迟）：Rapat ditunda 是有人决定延期；Rapat tertunda 是被迫延后；Kerjaan kepending 是活儿卡住了。",
+      "usage_note": "重点复习词（弱项池）。口语混用英语词根的说法，同事聊天、群里说一句就懂；写正式通知用 tertunda。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "keteteran",
+      "display": "keteteran",
+      "audio_text": "keteteran",
+      "cn": "忙不过来；跟不上节奏（口语）",
+      "en": "overwhelmed; can't keep up (colloquial)",
+      "root": "keteteran",
+      "root_cn": "忙不过来；跟不上（整词记忆）",
+      "formation": "keteteran 是口语整词，不必硬拆词根：ke-...-an 的结构表示“被……压得喘不过气”，和 kelabakan（手忙脚乱）、kewalahan（招架不住）同类。常见搭配：keteteran ngurusin pesanan（忙不过来处理订单）、keteteran bagi waktu（时间分配不过来）、mulai keteteran（开始应付不来）。",
+      "example": "Sejak tim berkurang, aku mulai keteteran ngurusin pesanan.",
+      "example_cn": "团队人手少了之后，我开始忙不过来处理订单了。",
+      "synonym_note": "keteteran（事情一件件堆积、节奏跟不上）vs kelabakan（突发状况下手忙脚乱）vs kewalahan（量太大，扛不住；偏标准）：keteteran 和 kewalahan 在很多语境里可以互换，区别在于 keteteran 更强调“进度落后”。",
+      "usage_note": "重点复习词（弱项池）。口语词，和 aku / nggak 一起用最自然；正式文字可改 kewalahan。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengatur",
+      "display": "mengatur",
+      "audio_text": "mengatur",
+      "cn": "安排；整理；管理",
+      "en": "to arrange; to organize; to manage",
+      "root": "atur",
+      "root_cn": "安排；整理",
+      "formation": "meN- + atur → mengatur（a 前 meN- 变 meng-）；aturan＝规定；pengaturan＝设置、安排；teratur＝有规律的；diatur＝被安排。常见搭配：mengatur jadwal（安排日程）、mengatur waktu（管理时间）、mengatur uang（管钱）、mengatur lalu lintas（疏导交通）。",
+      "example": "Dia jago mengatur uang bulanannya, jadi nggak pernah kehabisan di tengah bulan.",
+      "example_cn": "他很会管每个月的钱，所以从来不会月中就花光。",
+      "synonym_note": "mengatur（把已有的东西安排、调配、管理好）vs menyusun（从无到有编排出来，如 menyusun laporan、menyusun jadwal 的初稿）：重新调整已有时间表用 mengatur ulang；第一次排出一份日程多用 menyusun。mengatur 也指“规定”（peraturan mengatur…）。",
+      "usage_note": "应用复现词（来自复习池，非今天08:00内容）。关键是把 mengatur 和 jadwal / waktu / uang 三个高频宾语一起记。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nggak heran",
+      "display": "nggak heran",
+      "audio_text": "nggak heran",
+      "cn": "难怪；不奇怪（口语）",
+      "en": "no wonder; not surprised (colloquial)",
+      "root": "heran",
+      "root_cn": "纳闷；觉得奇怪",
+      "formation": "nggak（口语否定，标准 tidak）+ heran → nggak heran＝不觉得奇怪，常译“难怪”。标准说法：tidak heran / wajar kalau…。常见搭配：Nggak heran kalau…（难怪……）、Nggak heran sih（难怪呢）、nggak heran lagi（早就不稀奇了）。",
+      "example": "Nggak heran dia capek, tiap malam baru tidur jam dua.",
+      "example_cn": "难怪他累，每天晚上两点才睡。",
+      "synonym_note": "nggak heran（得知原因后觉得“合情合理、不意外”）vs pantas saja / pantesan（恍然大悟“怪不得”，更像脱口而出）vs wajar（合理正常，语气更客观）：Nggak heran 后面常跟原因；Pantesan! 可以单独成句。",
+      "usage_note": "应用复现词（来自复习池，非今天08:00内容）。和 heran 是一对：heran＝想不通，nggak heran＝想通了、不意外。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Minggu ini Rina keteteran di toko online tempatnya bekerja karena dua rekannya sedang cuti. Sejak pagi banyak pesanan yang kepending sebab stok barang belum dicek. Waktu memeriksa daftar kiriman, Rina menemukan kesalahan: dua paket tertukar alamat. Kalau terlambat sadar, toko bisa mengalami kerugian besar karena harus mengirim ulang. Rina langsung memanggil Dimas, lalu mereka membahas masalah itu sebentar. Dimas mengatur ulang daftar kiriman sebelum jemputan ekspedisi datang jam tiga, sementara Rina mencatat nomor pesanan yang bermasalah supaya kejadian ini tidak terulang. Sore harinya semua paket berangkat tepat waktu, tetapi masih ada yang ganjel di hati Rina. Dia heran kenapa kesalahan itu bisa lolos. \"Nggak heran, Rin. Minggu ini kita cuma berdua,\" kata Dimas.",
+    "cn": "这周 Rina 在她工作的网店忙得不可开交，因为有两位同事在休假。从早上起就有不少订单被卡住，因为库存还没核对。检查发货清单时，Rina 发现了一个错误：两个包裹的地址弄反了。如果发现得太晚，店里可能要重新寄一遍，损失会很大。Rina 马上叫来 Dimas，两人简短讨论了一下这个问题。Dimas 在快递三点来取件之前重新安排了发货清单，Rina 则把出问题的订单号记下来，免得再发生。傍晚所有包裹都按时发出了，但 Rina 心里还是有点不踏实。她想不通这个错误怎么会漏过去。Dimas 说：“难怪啊，Rin。这周就我们两个人。”"
+  },
+  "dialogue": {
+    "title": "Setelah paket berangkat",
+    "lines": [
+      {
+        "speaker": "Rina",
+        "id": "Dim, aku masih heran. Kok dua paket itu bisa tertukar alamat ya?",
+        "cn": "Dim，我还是想不通。那两个包裹怎么会弄反地址呢？"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Nggak heran sih. Minggu ini kamu keteteran, dan kita cuma berdua.",
+        "cn": "难怪啊。这周你忙不过来，而且我们就两个人。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Iya, makanya masih ada yang ganjel di hatiku. Untung kesalahannya ketemu sebelum paketnya berangkat, jadi nggak ada kerugian.",
+        "cn": "是啊，所以我心里还是有点不踏实。幸好在包裹发出前就发现了错误，所以没有损失。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Betul. Besok kita bahas sama Bu Wati, ya. Biar pesanan nggak kepending sejak pagi lagi.",
+        "cn": "没错。明天我们跟 Bu Wati 讨论一下吧，免得订单又从早上起就被卡住。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Boleh. Aku catat dulu nomor pesanan yang tertukar tadi.",
+        "cn": "好。我先把刚才弄反的订单号记下来。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Oke. Besok aku yang mengatur jadwal cek stok, kamu fokus ke packing.",
+        "cn": "好。明天我来安排查库存的时间，你专心打包。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Siap. Kalau aku menemukan stok yang nggak cocok, langsung aku kabarin ya.",
+        "cn": "好的。如果我发现库存对不上，马上告诉你。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Sip. Biar minggu depan kita nggak sampai keteteran lagi.",
+        "cn": "好。这样下周我们就不至于再忙不过来了。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "想象你发现同事排的工作表有错：用 menemukan、mengatur、kerugian 中至少 2 个词，写 2–3 句自然的印尼语，说明你会怎么处理、为什么。不要照抄课文。",
+      "reference_answer": "Kalau aku menemukan kesalahan di jadwal kerja, aku akan segera mengatur ulang shift-nya. Dengan begitu, tim nggak mengalami kerugian besar.",
+      "reference_cn": "如果我发现工作排班表有错，我会马上重新安排班次。这样团队就不会蒙受大的损失。"
+    },
+    {
+      "task": "介绍你最近一次觉得自己 keteteran 的一周：用 keteteran 加上 kepending 或 ganjel（至少 2 个目标词），写 2–3 句，说明原因和结果，内容要贴近你的真实生活。",
+      "reference_answer": "Minggu lalu aku keteteran karena harus ngerjain dua proyek sekaligus. Beberapa kerjaan jadi kepending, dan aku masih ganjel soal tenggat waktunya. Akhirnya aku bahas jadwalnya sama atasan, dan sekarang jadi lebih tenang.",
+      "reference_cn": "上周我忙不过来，因为得同时做两个项目。有几件工作被卡住了，而且我对截止时间还是心里不踏实。最后我跟上司讨论了时间安排，现在安心多了。"
+    },
+    {
+      "task": "朋友说他这周每天只睡四小时，所以上班常迟到。用 nggak heran 回应他，再用 bahas 或 catat 提一个具体建议（至少用 2 个目标词，2–3 句，不要照抄课文）。",
+      "reference_answer": "Nggak heran kamu sering telat, tidurmu cuma empat jam. Besok kita bahas jadwal kerjamu sama atasan, dan catat dulu jam-jam yang paling berat buatmu.",
+      "reference_cn": "难怪你常迟到，你才睡四个小时。明天我们跟上司讨论一下你的工作时间，先把对你最吃力的时段记下来。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "同一语境选最自然的一项：“Kerjaan kita _____ banget gara-gara server error dari pagi.”（同事之间闲聊，活儿被卡住了）",
+        "options": [
+          "ditunda",
+          "menunda",
+          "kepending",
+          "penundaan"
+        ],
+        "answer_index": 2,
+        "answer": "kepending",
+        "explain": "kepending banget＝活儿被卡住了，口语、没人故意推迟。ditunda 是被(某人)决定推迟，不能接 banget；menunda 是及物动词，后面要接被推迟的东西（menunda rapat）；penundaan 是名词（推迟这件事），不能当谓语。"
+      },
+      {
+        "type": "choice",
+        "prompt": "同一场景选最自然的回应：“_____ dia telat lagi, tiap malam kan begadang main game.”（想表达：难怪他又迟到了）",
+        "options": [
+          "Aku heran",
+          "Nggak heran",
+          "Kaget banget",
+          "Heran kenapa"
+        ],
+        "answer_index": 1,
+        "answer": "Nggak heran",
+        "explain": "后半句已经给了原因（每晚熬夜），所以说“难怪”＝Nggak heran。Aku heran 和 Heran kenapa 表示想不通原因，与后半句矛盾；Kaget banget 表示很吃惊，也不符合“早就知道原因”的语气。"
+      },
+      {
+        "type": "choice",
+        "prompt": "同一语境选最自然的一项：“Kalau dua paket itu sampai salah alamat, toko bisa mengalami _____ besar.”（发错货会造成什么）",
+        "options": [
+          "keuntungan",
+          "rugi",
+          "merugikan",
+          "kerugian"
+        ],
+        "answer_index": 3,
+        "answer": "kerugian",
+        "explain": "mengalami 后面接名词：mengalami kerugian besar＝蒙受大损失。keuntungan 是“利润”，意思反了；rugi 是形容词/动词，多单独作谓语（Toko itu rugi besar）；merugikan 是动词（使受损），不能放在 mengalami 后面。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Tolong _____ nomor pesanan yang bermasalah supaya gampang dicek lagi.（记下来）",
+        "answer": "catat",
+        "explain": "Tolong catat ...＝请把……记下来。catat 是 mencatat 的口语祈使形式；menulis 是一般的书写，不强调“记录备查”，所以这里不用 tulis。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Jangan cuma lapor masalah ke Bu Wati. _____ dulu solusinya bareng-bareng.（先讨论）",
+        "answer": "Bahas",
+        "explain": "Bahas dulu solusinya＝先把解决办法讨论一下。membahas / bahas 强调拿出主题逐点讨论方案；membicarakan 偏“聊到、谈论”，不如 bahas 有“商量出办法”的意思。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我一个人忙不过来，所以请帮我安排一下我的日程。",
+        "tokens": [
+          "Aku",
+          "keteteran",
+          "sendirian,",
+          "jadi",
+          "tolong",
+          "bantu",
+          "atur",
+          "jadwalku."
+        ],
+        "answer": "Aku keteteran sendirian, jadi tolong bantu atur jadwalku.",
+        "answer_cn": "我一个人忙不过来，所以请帮我安排一下我的日程。",
+        "explain": "Aku keteteran sendirian＝我一个人忙不过来；jadi＝所以；tolong bantu atur jadwalku＝请帮我安排日程（atur 是 mengatur 的词根，口语祈使可直接用）。"
+      }
+    ],
+    "self_check": [
+      "不看词卡，3 秒内说出 bahas、catat、kerugian 的中文，并各说一个搭配（membahas masalah / mencatat nomor / mengalami kerugian）。",
+      "能分清 heran 和 nggak heran：一个是“想不通”，一个是“难怪”。",
+      "能说出 kepending / tertunda / ditunda 的区别，以及 keteteran 和 kelabakan 的区别。",
+      "能用 ganjel 说一句“心里还有个疙瘩”的话，并解释它和 kepikiran 有什么不同。"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "先做 3 秒主动提取：看中文说出 bahas / catat / kerugian，再依次说出 heran、menemukan、ganjel、kepending、keteteran、mengatur、nggak heran，答不出的立刻回看词卡再说一遍。",
+      "对比易混词：membahas 与 membicarakan、mencatat 与 menulis、heran 与 kaget、kepending 与 tertunda、ganjel 与 kepikiran，各说一句自己的例句。",
+      "用 30 秒向朋友讲一遍“Rina 的包裹地址弄反”的经过，至少用上 4 个目标词，不要背课文。",
+      "最后用 keteteran 和 mengatur 各编一句真实生活里的表达，再用 nggak heran 回应一个朋友的近况。"
+    ]
+  }
+}
