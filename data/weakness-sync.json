@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T09:59:56.908Z",
+  "updated_at": "2026-10-06T10:02:35.811Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1063,15 +1063,15 @@
     "jenis": {
       "word": "jenis",
       "status": "active",
-      "updated_at": "2026-09-30T14:01:21.271Z",
+      "updated_at": "2026-10-06T10:00:26.526Z",
       "display": "jenis",
       "cn": "类型",
-      "last_review": "2026-09-30T14:01:21.244Z",
+      "last_review": "2026-10-06T10:00:26.500Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "menteri": {
       "word": "menteri",
@@ -2606,8 +2606,8 @@
     },
     "membutuhkan": {
       "word": "membutuhkan",
-      "status": "mastered",
-      "updated_at": "2026-09-21T15:33:40.777Z",
+      "status": "active",
+      "updated_at": "2026-10-06T10:01:47.155Z",
       "display": "membutuhkan",
       "cn": "需要",
       "root": "butuh",
@@ -2615,7 +2615,9 @@
       "last_wrong": "2026-09-19T03:56:12.208Z",
       "last_review": "2026-09-21T15:33:40.641Z",
       "last_mastered": "2026-09-21T15:33:40.641Z",
-      "reasons": [],
+      "reasons": [
+        "automation_fail"
+      ],
       "wrong_count": 1,
       "right_streak": 3
     },
@@ -28650,10 +28652,10 @@
     "telanjur": {
       "word": "telanjur",
       "status": "mastered",
-      "updated_at": "2026-09-30T12:36:51.204Z",
+      "updated_at": "2026-10-06T10:02:25.371Z",
       "display": "telanjur",
       "cn": "已经做了、来不及改变",
-      "last_review": "2026-09-30T12:36:51.180Z",
+      "last_review": "2026-10-06T10:02:25.343Z",
       "last_mastered": "2026-09-29T12:25:52.226Z",
       "reasons": [
         "listening_slow"
@@ -28870,6 +28872,22 @@
       "root_cn": "记得；想起",
       "last_wrong": "2026-10-06T09:59:46.420Z",
       "last_review": "2026-10-06T09:59:46.420Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
+    },
+    "keteteran": {
+      "word": "keteteran",
+      "status": "active",
+      "updated_at": "2026-10-06T10:00:19.427Z",
+      "display": "keteteran",
+      "cn": "忙不过来；跟不上；应付不过来",
+      "root": "keteteran",
+      "root_cn": "忙不过来；跟不上",
+      "last_wrong": "2026-10-06T10:00:19.399Z",
+      "last_review": "2026-10-06T10:00:19.399Z",
       "reasons": [
         "quick_wrong"
       ],
