@@ -3735,27 +3735,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "heran",
     "cn": "纳闷、觉得奇怪",
-    "en": "",
-    "root": "",
+    "en": "puzzled; surprised that something is odd",
+    "root": "heran",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-08-29 19:00",
+    "last_seen": "2026-10-06 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-29"
+      "2026-08-29",
+      "2026-10-06"
     ],
-    "example": "Aku heran, kok dia belum datang?",
-    "example_cn": "我纳闷，他怎么还没来？",
+    "example": "Dia heran karena pelanggan itu tiba-tiba membatalkan pesanan.",
+    "example_cn": "他很纳闷，那位顾客怎么突然取消了订单。",
     "lesson_occurrences": [
-      "2026-08-29 19:00"
-    ]
+      "2026-08-29 19:00",
+      "2026-10-06 18:00"
+    ],
+    "root_cn": "纳闷；觉得奇怪（词根即本词）"
   },
   {
     "word": "harusnya",
@@ -4403,22 +4408,27 @@ window.DAILY_VOCAB_DB = [
     "root": "atur",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 19:00",
-    "last_seen": "2026-08-31 19:00",
+    "last_seen": "2026-10-06 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-10-06"
     ],
-    "example": "Aku lagi belajar ngatur uang biar akhir bulan nggak kehabisan.",
-    "example_cn": "我在学着管钱，免得月底没钱。",
+    "example": "Dia jago mengatur uang bulanannya, jadi nggak pernah kehabisan di tengah bulan.",
+    "example_cn": "他很会管每个月的钱，所以从来不会月中就花光。",
     "lesson_occurrences": [
-      "2026-08-31 19:00"
-    ]
+      "2026-08-31 19:00",
+      "2026-10-06 18:00"
+    ],
+    "root_cn": "安排；整理"
   },
   {
     "word": "membatasi",
@@ -5492,24 +5502,28 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-04 19:00",
+    "last_seen": "2026-10-06 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-02",
-      "2026-09-04"
+      "2026-09-04",
+      "2026-10-06"
     ],
-    "example": "Kalau semua dikerjain barengan, aku malah keteteran.",
-    "example_cn": "如果所有事情一起做，我反而会忙不过来。",
+    "example": "Sejak tim berkurang, aku mulai keteteran ngurusin pesanan.",
+    "example_cn": "团队人手少了之后，我开始忙不过来处理订单了。",
     "root_cn": "忙不过来；跟不上",
     "lesson_occurrences": [
       "2026-09-02 19:00",
-      "2026-09-04 19:00"
+      "2026-09-04 19:00",
+      "2026-10-06 18:00"
     ]
   },
   {
@@ -5519,22 +5533,27 @@ window.DAILY_VOCAB_DB = [
     "root": "pending",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-02 19:00",
+    "last_seen": "2026-10-06 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-02"
+      "2026-09-02",
+      "2026-10-06"
     ],
-    "example": "Dokumen ini jangan sampai kepending sampai minggu depan.",
-    "example_cn": "这个文件别一直搁到下周。",
+    "example": "Laporan bulanan kepending gara-gara server kantor error.",
+    "example_cn": "月报因为公司服务器出问题被卡住了。",
     "lesson_occurrences": [
-      "2026-09-02 19:00"
-    ]
+      "2026-09-02 19:00",
+      "2026-10-06 18:00"
+    ],
+    "root_cn": "搁置；待处理（英语借词 pending）"
   },
   {
     "word": "ngejar deadline",
@@ -6601,9 +6620,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-05 19:00",
-    "last_seen": "2026-10-05 18:00",
+    "last_seen": "2026-10-06 18:00",
     "sessions": [
       "19:00",
       "18:00"
@@ -6611,14 +6630,16 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05",
       "2026-10-04",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-10-06"
     ],
-    "example": "Dia lembur tiga hari, nggak heran badannya lemas.",
-    "example_cn": "他连续加班三天，难怪身体没力气。",
+    "example": "Nggak heran dia capek, tiap malam baru tidur jam dua.",
+    "example_cn": "难怪他累，每天晚上两点才睡。",
     "lesson_occurrences": [
       "2026-09-05 19:00",
       "2026-10-04 18:00",
-      "2026-10-05 18:00"
+      "2026-10-05 18:00",
+      "2026-10-06 18:00"
     ]
   },
   {
@@ -9159,23 +9180,27 @@ window.DAILY_VOCAB_DB = [
     "en": "feel something is off; have something unresolved",
     "root": "ganjal",
     "root_cn": "垫住；卡住；妨碍",
-    "example": "Sebenarnya semuanya sudah selesai, cuma aku masih ngerasa ada yang ganjel.",
-    "example_cn": "其实事情都处理完了，只是我心里还是觉得有点不对劲。",
+    "example": "Aku masih ganjel soal tagihan kemarin, belum jelas siapa yang bayar.",
+    "example_cn": "关于昨天那笔账单我心里还是不踏实，还没说清楚谁来付。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 08:00",
+    "last_seen": "2026-10-06 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-12"
+      "2026-09-12",
+      "2026-10-06"
     ],
     "lesson_occurrences": [
-      "2026-09-12 08:00"
+      "2026-09-12 08:00",
+      "2026-10-06 18:00"
     ]
   },
   {
@@ -10466,23 +10491,27 @@ window.DAILY_VOCAB_DB = [
     "en": "find; discover",
     "root": "temu",
     "root_cn": "遇见；找到",
-    "example": "Kami menemukan tempat yang lebih dekat.",
-    "example_cn": "我们找到了一个更近的地方。",
+    "example": "Akhirnya aku menemukan kunci motorku di bawah sofa.",
+    "example_cn": "我终于在沙发底下找到了摩托车钥匙。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-16 08:00",
+    "last_seen": "2026-10-06 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-10-06"
     ],
     "lesson_occurrences": [
-      "2026-09-16 08:00"
+      "2026-09-16 08:00",
+      "2026-10-06 18:00"
     ]
   },
   {
@@ -17915,6 +17944,81 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-06 08:00"
+    ]
+  },
+  {
+    "word": "bahas",
+    "cn": "讨论；剖析（口语常直接用词根，正式用 membahas）",
+    "en": "to discuss; to go over (a topic)",
+    "root": "bahas",
+    "root_cn": "讨论；剖析",
+    "example": "Kita bahas rencana akhir pekan setelah makan siang, ya.",
+    "example_cn": "我们午饭后再商量周末的计划吧。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 18:00",
+    "last_seen": "2026-10-06 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 18:00"
+    ]
+  },
+  {
+    "word": "catat",
+    "cn": "记下；记录（口语常直接用词根，正式用 mencatat）",
+    "en": "to note down; to record",
+    "root": "catat",
+    "root_cn": "记下；记录",
+    "example": "Tolong catat nomor pesanannya dulu supaya gampang dicek.",
+    "example_cn": "请先把订单号记下来，这样好查。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 18:00",
+    "last_seen": "2026-10-06 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 18:00"
+    ]
+  },
+  {
+    "word": "kerugian",
+    "cn": "损失；亏损（名词）",
+    "en": "loss; damage (noun)",
+    "root": "rugi",
+    "root_cn": "亏；吃亏；不划算",
+    "example": "Kalau barangnya salah kirim, toko harus menanggung kerugian ongkos kirim.",
+    "example_cn": "如果货发错了，店里得承担运费上的损失。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-06 18:00",
+    "last_seen": "2026-10-06 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-06"
+    ],
+    "lesson_occurrences": [
+      "2026-10-06 18:00"
     ]
   }
 ];
