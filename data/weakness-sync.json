@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T11:10:59.359Z",
+  "updated_at": "2026-10-07T03:55:11.986Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -281,6 +281,7 @@
       "display": "mengatur",
       "cn": "安排；管理；调节",
       "root": "atur",
+      "root_cn": "安排；整理",
       "last_wrong": "2026-10-06T09:57:27.817Z",
       "last_review": "2026-10-06T09:57:27.817Z",
       "reasons": [
@@ -1949,6 +1950,8 @@
       "updated_at": "2026-10-06T09:51:52.965Z",
       "display": "heran",
       "cn": "纳闷、觉得奇怪",
+      "root": "heran",
+      "root_cn": "纳闷；觉得奇怪（词根即本词）",
       "last_wrong": "2026-10-06T09:51:52.938Z",
       "last_review": "2026-10-06T09:51:52.938Z",
       "reasons": [
@@ -5988,8 +5991,9 @@
     "memuat": {
       "word": "memuat",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-07T03:55:01.519Z",
       "display": "memuat",
+      "cn": "加载",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -28842,6 +28846,7 @@
       "display": "kepending",
       "cn": "被搁着；卡着没推进（口语混用）",
       "root": "pending",
+      "root_cn": "搁置；待处理（英语借词 pending）",
       "last_wrong": "2026-10-06T09:55:52.891Z",
       "last_review": "2026-10-06T09:55:52.891Z",
       "reasons": [
