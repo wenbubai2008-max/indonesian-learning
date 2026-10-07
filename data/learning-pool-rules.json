@@ -232,6 +232,15 @@
       "effective_date": "2026-10-04",
       "rule": "当天AM.review_vocab中的老词不得再占PM完整application词卡（真实新错除外），应在阅读/对话中自然复现；仅当没有其他合法application候选（review_pool内未被占用且非AM核心复习词）时才允许例外"
     },
+    "extensive_reading_recurrence": {
+      "enabled": true,
+      "effective_date": "2026-10-08",
+      "generator": "12:00 泛读由 Claude 定时任务生成（约 11:24 开始），取代原 ChatGPT 任务；发布仍走 sync-daily-vocab.yml 的 extensive_reading_release，一天只发一篇。",
+      "rule": "先选一条 0–3 天内的真实新闻，再用 node .github/scripts/reading-review.js --date D 取复习词名单（focus_pool > review_pool > 旧词 > recurrence_pool，按距上次在课程或泛读出现的天数排序；最近 2 天泛读刚用过的词降权；3–10 天前只在一篇泛读里出现过的词加分，让同一个弱词隔几天换场景再出现），从中挑 8–12 个能自然放进这条新闻的词，至少 3 个 focus_pool 词；写进正文或文末 4–8 行口语小对话（两个普通人聊这条新闻，口语弱词放这里），并在 review_words 中列出。",
+      "not_counted": "泛读复现只算被动接触：不计入核心复习次数，不改变复习资格、冷却、轮换、配额和 mastered；不得为了塞词歪曲新闻事实或牺牲自然度。",
+      "schema": "可选字段 review_words=[{word, cn}]（1–20 个，每个必须真的出现在正文或对话中，可带 -nya/-lah/-kah/-pun/-ku/-mu）；dialogue={title?, lines:[{speaker, text, cn}]}（4–8 行，每行不超过 30 词）。旧文章没有这两个字段，照常显示。",
+      "validator": "publish-extensive-reading-candidate.js：结构错误、提示词 term 不在原文（2026-10-07 曾漏显示 2 个提示）、同一天已发布过泛读，均阻止发布；check 模式另外报告复习词覆盖率（不足 8 个、focus 不足 3 个、没有对话只警告），复习词不在已学未掌握词池里则报错。"
+    },
     "natural_recurrence": {
       "enabled": true,
       "effective_date": "2026-10-07",

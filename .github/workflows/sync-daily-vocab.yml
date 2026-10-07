@@ -57,6 +57,9 @@ on:
       - 'prototype/lesson-engine/materials/microcontent.json'
       - 'prototype/lesson-engine/materials/micro-scenes.json'
       - '.github/scripts/publish-extensive-reading-candidate.js'
+      - '.github/scripts/reading-review.js'
+      - '.github/scripts/test-extensive-reading.js'
+      - '.github/scripts/fixtures/extensive-reading-sample.json'
       - 'data/extensive-reading-candidate.json'
       - 'data/extensive-reading-data.js'
       - 'data/extensive-reading-history.js'
@@ -235,6 +238,9 @@ jobs:
           node .github/scripts/test-publication-plan.js
           node .github/scripts/test-release-pr.js
           node .github/scripts/test-real-published-lesson.js
+          node --check .github/scripts/reading-review.js
+          node --check data/extensive-reading-history-ui.js
+          node .github/scripts/test-extensive-reading.js
           # A workflow/guard change must also pass regression on the proposed PR tree;
           # testing only pinned main can miss a stale hard-coded schedule assertion.
           node .github/scripts/regression-guard.js

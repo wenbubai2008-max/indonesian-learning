@@ -554,6 +554,12 @@ try {
   ok(/loadFreshSource\('data\/extensive-reading-data\.js'\)/.test(extensiveUi) && /loadFreshSource\('data\/extensive-reading-history\.js'\)/.test(extensiveUi), 'extensive reading refreshes current article and history index on entry');
   ok(/window\.openExtensiveV2=async function\(\).*await refreshLatestSources\(\)/s.test(extensiveUi), 'extensive reading loads latest available content when opened');
   ok(!/setInterval\s*\(|new MutationObserver|location\.reload\s*\(/.test(historyV2+extensiveUi), 'on-demand refresh adds no polling, whole-page observer, or forced reload');
+  // New with the 2026-10-08 reading change; the PR preflight also runs this guard on the pre-change main tree.
+  const readingOk=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+  readingOk(/function markText\(text,hints,reviewWords\)/.test(extensiveUi) && /class=\\?"erRev\\?"/.test(extensiveUi) && /function dialogueHtml\(x\)/.test(extensiveUi), 'extensive reading marks learned review words and renders the colloquial dialogue');
+  const readingPublisher = read('.github/scripts/publish-extensive-reading-candidate.js');
+  readingOk(/function failIfAlreadyPublished\(/.test(readingPublisher) && (readingPublisher.match(/failIfAlreadyPublished\(oldArticle, expectedDate\)/g) || []).length >= 2, 'extensive reading release refuses a second reading for an already-published date');
+  readingOk(/does not appear verbatim in the text or dialogue/.test(readingPublisher) && !/require\('\.\//.test(readingPublisher), 'extensive reading validator checks hint terms and stays self-contained for the release job');
 
   const pronunciation = read('data/pronunciation-fix.js');
   ok(/u\.lang='id-ID'/.test(pronunciation), 'main speaker TTS locale is Indonesian id-ID');
