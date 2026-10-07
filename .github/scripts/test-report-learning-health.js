@@ -1,7 +1,7 @@
 'use strict';
 /** Unit tests for the pure functions of report-learning-health.js (read-only report; fixtures are tiny and synthetic). */
 const assert=require('node:assert/strict');
-const {runway,oralDiagnosis,oralRunway,reviewGap,commitStats,alerts,buildReport,format,ALERT}=require('./report-learning-health');
+const {runway,oralDiagnosis,oralRunway,oralUsage,reviewGap,commitStats,alerts,buildReport,format,ALERT}=require('./report-learning-health');
 let n=0;const t=(name,fn)=>{try{fn();n++}catch(e){e.message=name+': '+e.message;throw e}};
 const W=(word,status='active')=>[word.toLowerCase(),{word,status}];
 const runtime=(o={})=>({handoff:{phase:'primary',primary_remaining:212,secondary_available:340,...(o.handoff||{})},
@@ -47,6 +47,23 @@ t('alerts: thresholds trigger and stay quiet when healthy',()=>{
  const bad={runway:{phase:'primary',est_days_until_dont_exhausted:3,est_days_until_transition:15},oral_runway:{est_days:2},review_gap:{buckets:{'31d+':ALERT.stale_31d+1}}};
  assert.equal(alerts(bad).length,4);
  assert.deepEqual(alerts({...healthy,runway:{phase:'secondary',est_days_until_dont_exhausted:16,est_days_until_transition:0}}),[]);
+});
+t('oralUsage: counts oral new words per lesson, ignores review/application and old lessons, alerts only above the guideline',()=>{
+ const o=(w,oral)=>({word:w,source_group:'new',is_new:true,is_oral_new:oral});
+ const lessons=[
+  lesson('2026-10-07','am',{vocab:[{word:'a',is_oral_new:true},{word:'b',is_oral_new:true},{word:'c'}]}), // AM: every vocab entry is new
+  lesson('2026-10-07','pm',{vocab:[o('x',true),o('y',true),o('z',true),{word:'r',source_group:'review',is_oral_new:true}]}), // review row must not count
+  lesson('2026-09-01','pm',{vocab:[o('old',true)]}), // outside the window
+ ];
+ const u=oralUsage({lessons,today:'2026-10-07'});
+ assert.deepEqual(u.rows,[{date:'2026-10-07',session:'am',new_words:3,oral_new:2},{date:'2026-10-07',session:'pm',new_words:3,oral_new:3}]);
+ assert.equal(u.oral_total,5);assert.equal(u.new_total,6);assert.equal(u.oral_share,0.83);
+ const r={runway:{phase:'secondary',est_days_until_dont_exhausted:99,est_days_until_transition:0},oral_runway:{est_days:99},review_gap:{buckets:{'31d+':0}},oral_usage:u};
+ const a=alerts(r);
+ assert.equal(a.length,1);assert.match(a[0],/2026-10-07 PM: 3 oral new words of 3/);
+ r.oral_usage=oralUsage({lessons:[lesson('2026-10-07','pm',{vocab:[o('x',true),o('y',true),o('z',false)]})],today:'2026-10-07'});
+ assert.deepEqual(alerts(r),[],'2 oral in PM is within the alert threshold');
+ assert.deepEqual(oralUsage({lessons:[],today:'2026-10-07'}).rows,[]);
 });
 t('buildReport/format never throw on empty inputs',()=>{
  const r=buildReport({today:'2026-10-07',runtime:{},lessons:[],oral:[],primary:[],secondary:[],taught:new Set(),weak:new Map(),commitSubjects:[]});

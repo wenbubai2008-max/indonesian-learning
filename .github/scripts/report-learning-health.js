@@ -14,6 +14,8 @@ const DAY=86400000;
 const PER_DAY={am_new:10,pm_new:3.5,am_dont:10,pm_dont:1.5,oral:3}; // oral: AM 2 + PM 1 preferred oral new words
 // Alert thresholds (report only; they never block anything).
 const ALERT={dont_days:5,oral_days:7,transition_days:20,stale_31d:50};
+// Soft contract: ~2 oral new words at 08:00, ~1 at 18:00 (rules am_contract/pm_contract). Alert only when clearly above.
+const ORAL_GUIDE={am_max:3,pm_max:2,days:7};
 
 function lessonWords(L){
  const s=L.session,out={taught:[],review:[]};
@@ -67,11 +69,29 @@ function commitStats(subjects){
  return {total,...c,machine_share:total?+(c.machine_runtime_sync/total).toFixed(2):0};
 }
 
+/** Oral new words (is_oral_new) per lesson over the last N days, with the share of new words. Soft-contract monitor only. */
+function oralUsage({lessons,today}){
+ const rows=[];
+ for(const l of lessons){
+  if(l.date>today||Date.parse(today)-Date.parse(l.date)>ORAL_GUIDE.days*DAY)continue;
+  const vocab=(l.vocab||[]).filter(v=>v&&typeof v==='object');
+  const isNew=l.session==='am'?vocab:vocab.filter(v=>v.source_group==='new'||v.is_new===true);
+  rows.push({date:l.date,session:l.session,new_words:isNew.length,oral_new:isNew.filter(v=>v.is_oral_new===true).length});
+ }
+ rows.sort((a,b)=>(a.date+a.session).localeCompare(b.date+b.session));
+ const tot=rows.reduce((n,x)=>n+x.oral_new,0),newTot=rows.reduce((n,x)=>n+x.new_words,0);
+ return {rows,oral_total:tot,new_total:newTot,oral_share:newTot?+(tot/newTot).toFixed(2):0,guideline:'AM ~2, PM ~1 (about 20% of new words)'};
+}
+
 function alerts(r){
  const a=[],rw=r.runway,o=r.oral_runway,g=r.review_gap;
  if(rw.est_days_until_dont_exhausted<ALERT.dont_days)a.push(`dont pool runs out in ~${rw.est_days_until_dont_exhausted} days (< ${ALERT.dont_days})`);
  if(o.est_days<ALERT.oral_days)a.push(`oral candidates last ~${o.est_days} days (< ${ALERT.oral_days}): add more candidates or relax the oral quota`);
  if(rw.phase==='primary'&&rw.est_days_until_transition>0&&rw.est_days_until_transition<ALERT.transition_days)a.push(`primary->transition in ~${rw.est_days_until_transition} days`);
+ for(const x of (r.oral_usage&&r.oral_usage.rows)||[]){
+  const max=x.session==='am'?ORAL_GUIDE.am_max:ORAL_GUIDE.pm_max;
+  if(x.oral_new>max)a.push(`${x.date} ${x.session.toUpperCase()}: ${x.oral_new} oral new words of ${x.new_words} (guideline ~${x.session==='am'?2:1}, alert > ${max}): oral candidates will run out sooner`);
+ }
  if(g.buckets['31d+']>ALERT.stale_31d)a.push(`${g.buckets['31d+']} active words unseen for 31+ days (> ${ALERT.stale_31d})`);
  return a;
 }
@@ -120,6 +140,7 @@ function buildReport(input){
   runway:runway(input),
   oral:oralDiagnosis(input),
   oral_runway:oralRunway(input.runtime),
+  oral_usage:oralUsage(input),
   review_gap:reviewGap(input),
   commits:commitStats(input.commitSubjects),
   alerts:[]
@@ -147,6 +168,8 @@ function format(r){
  L.push('## 3. Review gap (active + taught words, days since last lesson exposure)',`- active_taught=${g.active_taught}`,
   ...Object.entries(g.buckets).map(([k,v])=>`- ${k}=${v}`),
   `- stalest: ${g.stalest.map(x=>x[0]+'('+x[1]+'d)').join(', ')||'-'}`,`- (${g.note})`,'');
+ const ou=r.oral_usage;
+ L.push('## 3b. Oral new words per lesson (last '+ORAL_GUIDE.days+' days)',ou.rows.length?'- '+ou.rows.map(x=>x.date.slice(5)+' '+x.session+': '+x.oral_new+'/'+x.new_words).join(' | '):'- no lessons',`- total ${ou.oral_total}/${ou.new_total} new words (${Math.round(ou.oral_share*100)}%), guideline ${ou.guideline}`,'');
  const c=r.commits;
  L.push('## 4. Recent commit mix (git history, last 7 days)',c.total?`- total=${c.total} machine_runtime_sync=${c.machine_runtime_sync} (${Math.round(c.machine_share*100)}%) lesson=${c.lesson} reading=${c.reading} other=${c.other}`:'- unavailable (no git history)','');
  L.push('## Alerts',...(r.alerts.length?r.alerts.map(x=>'- WARNING: '+x):['- none']));
@@ -184,7 +207,7 @@ function load(root,today){
  };
 }
 
-module.exports={buildReport,format,runway,oralDiagnosis,oralRunway,reviewGap,commitStats,alerts,lessonWords,ALERT};
+module.exports={buildReport,format,runway,oralDiagnosis,oralRunway,oralUsage,ORAL_GUIDE,reviewGap,commitStats,alerts,lessonWords,ALERT};
 
 if(require.main===module){
  try{
