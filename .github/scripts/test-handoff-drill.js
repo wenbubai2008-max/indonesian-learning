@@ -95,6 +95,25 @@ t('A2 legacy unverified words are exposed separately and leave the A∩D totals 
  assert.ok(base.review_pool.findIndex(r=>r[1]===5)>=base.review_pool.filter(r=>r[1]!==5).length||!rows.length,'legacy rows come after every normal row');
 });
 
+// A3. recurrence_pool: only pending-review words (A∩D plus remaining legacy), never mastered / new words, minimal rows, disjoint from review_pool.
+t('A3 recurrence_pool holds only pending-review words and never overlaps review_pool',()=>{
+ const taught=new Set(taughtKeys()),weak=rd('data/weakness-sync.json').words,wk=Object.fromEntries(Object.keys(weak).map(x=>[key(x),weak[x]]));
+ const rows=base.recurrence_pool;
+ assert.ok(rows.length>0&&rows.length<=500);
+ assert.equal(base.stats.recurrence_pool_exposed,rows.length);
+ const inReview=new Set(base.review_pool.map(r=>key(r[0])));
+ for(const r of rows){
+  assert.equal(r.length,3);const w=key(r[0]);
+  assert.ok(taught.has(w),'taught: '+w);
+  assert.ok(!inReview.has(w),'disjoint from review_pool: '+w);
+  const rec=wk[w];
+  if(r[1]===5)assert.ok(!rec,'priority 5 = legacy (no weakness record): '+w);else assert.ok(rec&&rec.status==='active','active weak word: '+w);
+ }
+ const newPool=new Set(base.new_pool.map(key));
+ assert.ok(rows.every(r=>!newPool.has(key(r[0]))),'no new word');
+ assert.equal(rows.length,Math.min(500,base.stats.recurrence_pool_total_full));
+});
+
 // A. dont exhaustion: every dont word taught -> dont pool empty, fuzzy still supplies new words, nothing unclassified.
 t('A new_pool_dont exhausted: fuzzy remains the only legal supply',()=>{
  let rt=base;

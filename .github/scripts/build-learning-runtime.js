@@ -284,6 +284,15 @@ const legacyFull=dailyRaw.filter(x=>{const k=key(x&&x.word);return k&&!weakMap.h
   .sort((a,b)=>String(a.last_seen||'').localeCompare(String(b.last_seen||''))||(Number(a.times_seen||0)-Number(b.times_seen||0))||String(a.word).localeCompare(String(b.word)));
 const legacyExposed=legacyFull.slice(0,LEGACY_REVIEW_MAX).map(x=>[String(x.word).trim(),5,0,'','',x.cn||'',x.root||'',x.root_cn||'']);
 reviewExposed=[...reviewExposed,...legacyExposed];
+// Natural-recurrence pool (2026-10-07): every other A ∩ D word (plus the remaining legacy unverified words) in a minimal
+// [word, priority, cn] form, so lessons can weave pending-review words into reading / dialogue / example sentences.
+// It is NOT a review eligibility pool: these words never count as core review or application.
+const recSeen=new Set(reviewExposed.map(x=>key(x[0])));
+const recurrenceFull=[
+  ...reviewFull.filter(x=>!recSeen.has(key(x[0]))).map(x=>[x[0],x[1],String(x[5]||'').slice(0,24)]),
+  ...legacyFull.slice(LEGACY_REVIEW_MAX).map(x=>[String(x.word).trim(),5,String(x.cn||'').slice(0,24)])
+];
+const recurrencePool=recurrenceFull.slice(0,500);
 
 const runtime={
   version:4,
@@ -325,6 +334,8 @@ const runtime={
     review_pool_total_full:reviewFull.length,
     legacy_unverified_total_full:legacyFull.length,
     legacy_unverified_exposed:legacyExposed.length,
+    recurrence_pool_total_full:recurrenceFull.length,
+    recurrence_pool_exposed:recurrencePool.length,
     review_pool_exposed:reviewExposed.length,
     focus_pool_total_full:focusFull.length,
     focus_pool_exposed:focusExposed.length,
@@ -342,7 +353,8 @@ const runtime={
     oral:['word','register','counterpart','root','rank'],
     review:['word','priority','wrong_count','last_wrong','last_review','cn','root','root_cn'],
     focus:['word','score','signals','wrong_count','last_wrong','last_review','cn','root','root_cn'],
-    listening_focus:['word','score','status','signals','cn','root','root_cn']
+    listening_focus:['word','score','status','signals','cn','root','root_cn'],
+    recurrence:['word','priority','cn']
   },
   new_pool:newExposed,
   new_pool_dont:newDontExposed,
@@ -354,7 +366,8 @@ const runtime={
   oral_new_pool_fuzzy:oralFuzzyExposed,
   review_pool:reviewExposed,
   focus_pool:focusExposed,
-  listening_focus_pool:listeningFocusExposed
+  listening_focus_pool:listeningFocusExposed,
+  recurrence_pool:recurrencePool
 };
 
 // Repeated recovery checks must not generate new commits solely by changing the clock.

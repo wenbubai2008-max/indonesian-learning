@@ -232,6 +232,14 @@
       "effective_date": "2026-10-04",
       "rule": "当天AM.review_vocab中的老词不得再占PM完整application词卡（真实新错除外），应在阅读/对话中自然复现；仅当没有其他合法application候选（review_pool内未被占用且非AM核心复习词）时才允许例外"
     },
+    "natural_recurrence": {
+      "enabled": true,
+      "effective_date": "2026-10-07",
+      "rule": "待复习的词（A ∩ D 与旧词）不只靠核心复习名额复现：每节课在阅读、对话、新词例句、造句等文本里自然带入约 6–8 个“待复习词”，优先取排序靠前（最久没在任何课文里出现）的词。候选来自 runtime.review_pool ∪ runtime.recurrence_pool，用 node .github/scripts/rank-natural-recurrence.js --date D [--session am|pm]（PM 的 rank-review-candidates.js 输出也含 natural_recurrence）。",
+      "not_counted": "自然复现不计入核心复习次数，不占 review_vocab / PM 复习 / application 名额，不改变冷却、轮换和配额；mastered 不在这两个池里，不得带入；不得为了带入这些词而牺牲课文自然度或引入未正式教过的新词。",
+      "soft_guideline": "这是软规则：不进入校验器，不会因为没做到而使发布失败；覆盖度由 report-learning-health.js 的 3c 小节度量。",
+      "pool": "runtime.recurrence_pool = [[word, priority, cn], ...]，最多 500 个，是 review_pool 之外的其余 A ∩ D 词（含剩余旧词）；不是复习资格池，stats.recurrence_pool_total_full / recurrence_pool_exposed 记录数量。"
+    },
     "legacy_unverified_review": {
       "enabled": true,
       "effective_date": "2026-10-07",

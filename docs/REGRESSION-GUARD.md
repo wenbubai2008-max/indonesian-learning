@@ -315,3 +315,13 @@
 - **必须提前处理的后果**：主库剩余 + 第二库可用新词合计约 550 个，按每天约 13.5 个，**约 41 天（2026-11 中旬）用完**。用完后“早课恰好 10 个新词 / 晚课 3–4 个新词”的合同无法满足，课程生成会失败。
 - `report-learning-health.js` 新增预警：所有新词预计 21 天内用完时告警，提示需要先设计“复习循环”课程形态（合同、校验器、守卫和外部 07:30 / 17:30 生成任务的提示词必须同时调整）。
 - 在循环复习形态上线前，不要让新词池在无预案的情况下耗尽；是否补充第二库（按人工筛选结果）由用户决定。
+
+## 11. 2026-10-07 待复习词的“自然复现”
+
+- **想法（用户）**：待复习的词可以直接用在每天的课程里——新词例句、阅读、对话等——而不是只靠固定的复习名额。
+- **现状度量**：待复习词中 48%–61% 在最近一周/两周的课文里出现过，但集中在少数常用词（biar、tenang、buat、untung…），另有 60 多个词 30 天以上没在任何文本中出现。问题是**选哪些词**，不是容量。
+- **做法**：`runtime.recurrence_pool`（[word, priority, cn]，最多 500，review_pool 之外的其余 A ∩ D 词 + 剩余旧词）；`review-rotation.js` 的 `naturalRecurrence()` 按“距上次在任何课文里出现的天数”排序（未知历史按 45 天处理，同分按日期哈希轮换）；工具 `rank-natural-recurrence.js`，PM 的 `rank-review-candidates.js` 输出也含 `natural_recurrence`。
+- **不变**：不计入核心复习次数，不占 review / application 名额，不改冷却/轮换/配额，不改 A ∩ D 计数（画像依赖）；mastered 不在池里；软规则，不进校验器，发布不会因此失败。
+- **度量**：`report-learning-health.js` §3c（覆盖度）；匹配是整词精确匹配，屈折形式不会被识别，所以是下限。
+- **需要外部配合**：07:30 / 17:30 生成任务的提示词里要加入“先运行 rank-natural-recurrence.js，在阅读/对话/例句里自然带入约 6–8 个”，否则只有数据、没人使用。
+- 测试：`test-review-rotation.js`（H1–H3）、`test-handoff-drill.js`（A3）、`test-report-learning-health.js`（recurrenceCoverage）。

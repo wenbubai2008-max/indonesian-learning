@@ -1,7 +1,7 @@
 'use strict';
 /** Unit tests for the pure functions of report-learning-health.js (read-only report; fixtures are tiny and synthetic). */
 const assert=require('node:assert/strict');
-const {runway,oralDiagnosis,oralRunway,oralUsage,reviewGap,commitStats,alerts,buildReport,format,ALERT}=require('./report-learning-health');
+const {runway,oralDiagnosis,oralRunway,oralUsage,recurrenceCoverage,reviewGap,commitStats,alerts,buildReport,format,ALERT}=require('./report-learning-health');
 let n=0;const t=(name,fn)=>{try{fn();n++}catch(e){e.message=name+': '+e.message;throw e}};
 const W=(word,status='active')=>[word.toLowerCase(),{word,status}];
 const runtime=(o={})=>({handoff:{phase:'primary',primary_remaining:212,secondary_available:340,...(o.handoff||{})},
@@ -72,6 +72,13 @@ t('oralUsage: counts oral new words per lesson, ignores review/application and o
  r.oral_usage=oralUsage({lessons:[lesson('2026-10-07','pm',{vocab:[o('x',true),o('y',true),o('z',false)]})],today:'2026-10-07'});
  assert.deepEqual(alerts(r),[],'2 oral in PM is within the alert threshold');
  assert.deepEqual(oralUsage({lessons:[],today:'2026-10-07'}).rows,[]);
+});
+t('recurrenceCoverage: share of the backlog seen in lesson text in the last 14 days',()=>{
+ const rt={review_pool:[['aa',1,0,'','','x','','']],recurrence_pool:[['bb',2,'y'],['cc',2,'z'],['dd',2,'w']]};
+ const lessons=[lesson('2026-08-20','am',{vocab:[{word:'aa'},{word:'bb'},{word:'cc'},{word:'dd'}]}),lesson('2026-10-05','pm',{reading:{text:'Ada aa dan bb.'}})];
+ const c=recurrenceCoverage({runtime:rt,lessons,today:'2026-10-07'});
+ assert.equal(c.pool_size,4);assert.equal(c.seen_last_14d,2);assert.equal(c.seen_share,0.5);assert.equal(c.not_seen_30d_or_unknown,2);
+ assert.equal(recurrenceCoverage({runtime:{},lessons:[],today:'2026-10-07'}).pool_size,0);
 });
 t('buildReport/format never throw on empty inputs',()=>{
  const r=buildReport({today:'2026-10-07',runtime:{},lessons:[],oral:[],primary:[],secondary:[],taught:new Set(),weak:new Map(),commitSubjects:[]});

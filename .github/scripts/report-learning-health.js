@@ -8,6 +8,7 @@
  * Usage: node .github/scripts/report-learning-health.js [--json] [--date YYYY-MM-DD]
  */
 const fs=require('fs'),vm=require('vm'),path=require('path');
+const {naturalRecurrence}=require('./review-rotation');
 const key=s=>String(s==null?'':s).trim().toLowerCase();
 const DAY=86400000;
 // contract per-day consumption (AM 10 new; PM 3-4 new, default 2 fuzzy + 1-2 dont)
@@ -86,6 +87,14 @@ function oralUsage({lessons,today}){
  return {rows,oral_total:tot,new_total:newTot,oral_share:newTot?+(tot/newTot).toFixed(2):0,guideline:'AM ~2, PM ~1 (about 20% of new words)'};
 }
 
+/** How much of the pending-review backlog actually shows up in lesson text (reading / dialogue / examples / core lists). */
+function recurrenceCoverage({runtime,lessons,today}){
+ const n=naturalRecurrence({date:today,runtime,longHistory:lessons,count:1e9});
+ const c=n.candidates,seen14=c.filter(x=>x.appearances_14d>0).length,stale30=c.filter(x=>x.days_since_any_appearance==null||x.days_since_any_appearance>30).length;
+ return {pool_size:n.pool_size,seen_last_14d:seen14,seen_share:n.pool_size?+(seen14/n.pool_size).toFixed(2):0,not_seen_30d_or_unknown:stale30,
+  note:'text match is exact-word (inflected forms are not matched); informational only, the backlog is meant to be reviewed in a later cycle'};
+}
+
 function alerts(r){
  const a=[],rw=r.runway,o=r.oral_runway,g=r.review_gap;
  if(rw.est_days_until_dont_exhausted<ALERT.dont_days)a.push(`dont pool runs out in ~${rw.est_days_until_dont_exhausted} days (< ${ALERT.dont_days})`);
@@ -145,6 +154,7 @@ function buildReport(input){
   oral_runway:oralRunway(input.runtime),
   oral_usage:oralUsage(input),
   review_gap:reviewGap(input),
+  recurrence:recurrenceCoverage(input),
   commits:commitStats(input.commitSubjects),
   alerts:[]
  };
@@ -172,6 +182,8 @@ function format(r){
  L.push('## 3. Review gap (active + taught words, days since last lesson exposure)',`- active_taught=${g.active_taught}`,
   ...Object.entries(g.buckets).map(([k,v])=>`- ${k}=${v}`),
   `- stalest: ${g.stalest.map(x=>x[0]+'('+x[1]+'d)').join(', ')||'-'}`,`- (${g.note})`,'');
+ const rc=r.recurrence;
+ L.push('## 3c. Natural recurrence of pending-review words (last 14 days)',`- pool=${rc.pool_size} words; seen in lesson text/core in the last 14 days: ${rc.seen_last_14d} (${Math.round(rc.seen_share*100)}%); not seen for 30+ days or unknown: ${rc.not_seen_30d_or_unknown}`,`- (${rc.note})`,'');
  const ou=r.oral_usage;
  L.push('## 3b. Oral new words per lesson (last '+ORAL_GUIDE.days+' days)',ou.rows.length?'- '+ou.rows.map(x=>x.date.slice(5)+' '+x.session+': '+x.oral_new+'/'+x.new_words).join(' | '):'- no lessons',`- total ${ou.oral_total}/${ou.new_total} new words (${Math.round(ou.oral_share*100)}%), guideline ${ou.guideline}`,'');
  const c=r.commits;
@@ -211,7 +223,7 @@ function load(root,today){
  };
 }
 
-module.exports={buildReport,format,runway,oralDiagnosis,oralRunway,oralUsage,ORAL_GUIDE,reviewGap,commitStats,alerts,lessonWords,ALERT};
+module.exports={buildReport,format,runway,recurrenceCoverage,oralDiagnosis,oralRunway,oralUsage,ORAL_GUIDE,reviewGap,commitStats,alerts,lessonWords,ALERT};
 
 if(require.main===module){
  try{

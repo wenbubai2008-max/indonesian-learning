@@ -145,6 +145,40 @@ t('G2 legacy cap also holds in the scarce-alternatives fallback (fewer words bea
  assert.ok(out.recommended_review.length<=5);
 });
 
+// H. natural recurrence (2026-10-07): pending-review words ranked by how long since they last appeared ANYWHERE in a lesson.
+const {naturalRecurrence,lessonText}=require('./review-rotation');
+const NR_RT={review_pool:[['alpha',1,0,'','','甲','',''],['beta',2,0,'','','乙','',''],['gamma',3,0,'','','丙','','']],
+ recurrence_pool:[['delta',4,'丁'],['eps',5,'戊'],['zeta',4,'己']]};
+const nrLesson=(date,session,extra)=>({date,session,vocab:[],review_vocab:[],sentences:[],...extra});
+t('H1 text appearances count: a word used in a recent reading drops down, an old one rises',()=>{
+ const lh=[
+  nrLesson('2026-09-01','am',{vocab:[{word:'alpha'},{word:'beta'},{word:'gamma'},{word:'delta'},{word:'eps'},{word:'zeta'}]}),
+  nrLesson('2026-10-05','pm',{reading:{text:'Saya makan Alpha dan zeta setiap hari.'}}), // alpha + zeta reappear in free text
+  nrLesson('2026-10-06','am',{dialogue:{lines:[{id:'Beta, kamu di mana?'}]}}),
+ ];
+ const out=naturalRecurrence({date:'2026-10-07',runtime:NR_RT,longHistory:lh,count:6});
+ const d=Object.fromEntries(out.candidates.map(x=>[x.word,x.days_since_any_appearance]));
+ assert.deepEqual(d,{alpha:2,beta:1,gamma:36,delta:36,eps:36,zeta:2});
+ assert.deepEqual(out.candidates.slice(0,3).map(x=>x.word).sort(),['delta','eps','gamma'],'the three untouched words are the stalest');
+ assert.equal(out.pool_size,6);
+});
+t('H2 exclusions, count, determinism, unknown history, no mastered/outside-pool words',()=>{
+ const base={date:'2026-10-07',runtime:NR_RT,longHistory:[]};
+ const all=naturalRecurrence({...base,count:50});
+ assert.deepEqual(all.candidates.map(x=>x.word).sort(),['alpha','beta','delta','eps','gamma','zeta']);
+ assert.ok(all.candidates.every(x=>x.days_since_any_appearance===null),'unknown history is reported as null');
+ assert.deepEqual(naturalRecurrence({...base,count:50}).candidates,all.candidates,'deterministic for the same date');
+ const ex=naturalRecurrence({...base,count:50,exclude:['ALPHA','Beta']});
+ assert.ok(!ex.candidates.some(x=>['alpha','beta'].includes(x.word)));
+ assert.equal(naturalRecurrence({...base,count:2}).candidates.length,2);
+ assert.ok(!all.candidates.some(x=>x.word==='mastered-word'));
+});
+t('H3 legacy flag follows priority 5; lessonText covers reading, sentences, dialogue, examples and core lists',()=>{
+ assert.equal(naturalRecurrence({date:'2026-10-07',runtime:NR_RT,longHistory:[],count:9}).candidates.find(x=>x.word==='eps').legacy,true);
+ const txt=lessonText({reading:{text:'R1'},sentences:['S1',{id:'S2'}],dialogue:{lines:[{id:'D1'}]},vocab:[{word:'W1',example:'E1'}],review_vocab:['V1']});
+ for(const x of ['r1','s1','s2','d1','e1','w1','v1'])assert.ok(txt.includes(x),x);
+});
+
 // Integration through the real validator() using the shared PM fixture of test-lesson-candidate.js.
 module.exports=function integration(makePm,validate){
  const day='2026-09-28';
