@@ -11,7 +11,9 @@ const fs=require('fs'),vm=require('vm'),path=require('path');
 const key=s=>String(s==null?'':s).trim().toLowerCase();
 const DAY=86400000;
 // contract per-day consumption (AM 10 new; PM 3-4 new, default 2 fuzzy + 1-2 dont)
-const PER_DAY={am_new:10,pm_new:3.5,am_dont:10,pm_dont:1.5};
+const PER_DAY={am_new:10,pm_new:3.5,am_dont:10,pm_dont:1.5,oral:3}; // oral: AM 2 + PM 1 preferred oral new words
+// Alert thresholds (report only; they never block anything).
+const ALERT={dont_days:5,oral_days:7,transition_days:20,stale_31d:50};
 
 function lessonWords(L){
  const s=L.session,out={taught:[],review:[]};
@@ -21,6 +23,7 @@ function lessonWords(L){
  }else{
   for(const v of L.vocab||[]){
    const w=typeof v==='string'?v:v&&v.word,g=v&&v.source_group;
+   if(g==='application')continue; // same definition as review-rotation.js lastExposureDays: application is not core exposure
    (g==='new'||(v&&v.is_new===true)?out.taught:out.review).push(w);
   }
  }
@@ -43,6 +46,34 @@ function runway({runtime,lessons,today}){
   est_days_until_primary_exhausted:+(primary/perDay).toFixed(1),
   assumptions:'AM 10 new (all dont if available) + PM 3.5 new (1.5 dont); estimate only, ignores cross-day dedup'
  };
+}
+
+function oralRunway(runtime){
+ const st=runtime.stats||{};
+ return {eligible_total:Number(st.oral_new_pool_total_full||0),eligible_dont:Number(st.oral_new_pool_dont_total_full||0),
+  est_days:+(Number(st.oral_new_pool_total_full||0)/PER_DAY.oral).toFixed(1),assumption:'AM 2 + PM 1 oral new words per day'};
+}
+
+/** Machine vs human commit mix from commit subjects (e.g. `git log --format=%s`). */
+function commitStats(subjects){
+ const c={machine_runtime_sync:0,lesson:0,reading:0,other:0};
+ for(const s of subjects||[]){
+  if(/^(Build learning runtime|chore: sync learning weakness|Sync daily lesson vocabulary)/i.test(s))c.machine_runtime_sync++;
+  else if(/^(lesson|Lesson release)/i.test(s))c.lesson++;
+  else if(/^Publish extensive reading/i.test(s))c.reading++;
+  else c.other++;
+ }
+ const total=(subjects||[]).length;
+ return {total,...c,machine_share:total?+(c.machine_runtime_sync/total).toFixed(2):0};
+}
+
+function alerts(r){
+ const a=[],rw=r.runway,o=r.oral_runway,g=r.review_gap;
+ if(rw.est_days_until_dont_exhausted<ALERT.dont_days)a.push(`dont pool runs out in ~${rw.est_days_until_dont_exhausted} days (< ${ALERT.dont_days})`);
+ if(o.est_days<ALERT.oral_days)a.push(`oral candidates last ~${o.est_days} days (< ${ALERT.oral_days}): add more candidates or relax the oral quota`);
+ if(rw.phase==='primary'&&rw.est_days_until_transition>0&&rw.est_days_until_transition<ALERT.transition_days)a.push(`primary->transition in ~${rw.est_days_until_transition} days`);
+ if(g.buckets['31d+']>ALERT.stale_31d)a.push(`${g.buckets['31d+']} active words unseen for 31+ days (> ${ALERT.stale_31d})`);
+ return a;
 }
 
 function oralDiagnosis({oral,primary,secondary,taught,weak}){
@@ -80,16 +111,21 @@ function reviewGap({taught,weak,lessons,today}){
  }
  stale.sort((a,b)=>b[1]-a[1]);
  return {active_taught:active,buckets:b,stalest:stale.slice(0,10),
-  note:'exposure = any lesson appearance (taught, AM review_vocab, PM review/application); quick-practice and reading recurrence are not counted'};
+  note:'exposure = core lesson appearance (taught, AM review_vocab, PM new/review; PM application excluded, same as the ranking); quick-practice and reading recurrence are not counted'};
 }
 
 function buildReport(input){
- return {
+ const r={
   date:input.today,
   runway:runway(input),
   oral:oralDiagnosis(input),
-  review_gap:reviewGap(input)
+  oral_runway:oralRunway(input.runtime),
+  review_gap:reviewGap(input),
+  commits:commitStats(input.commitSubjects),
+  alerts:[]
  };
+ r.alerts=alerts(r);
+ return r;
 }
 
 function format(r){
@@ -104,11 +140,16 @@ function format(r){
  const o=r.oral;
  L.push('## 2. Oral candidate pool',...Object.entries(o.buckets).map(([k,v])=>`- ${k}=${v}`));
  for(const [k,v] of Object.entries(o.examples))if(v.length)L.push(`  - ${k} e.g. ${v.join(', ')}`);
- L.push('');
+ L.push('- (eligible_new counts both libraries; runtime.new_pool exposes secondary fuzzy words only in transition/secondary phase, see runtime pool size below)');
+ const ow=r.oral_runway;
+ L.push(`- eligible new oral words=${ow.eligible_total} (dont ${ow.eligible_dont}), est. ${ow.est_days} days (${ow.assumption})`,'');
  const g=r.review_gap;
  L.push('## 3. Review gap (active + taught words, days since last lesson exposure)',`- active_taught=${g.active_taught}`,
   ...Object.entries(g.buckets).map(([k,v])=>`- ${k}=${v}`),
-  `- stalest: ${g.stalest.map(x=>x[0]+'('+x[1]+'d)').join(', ')||'-'}`,`- (${g.note})`);
+  `- stalest: ${g.stalest.map(x=>x[0]+'('+x[1]+'d)').join(', ')||'-'}`,`- (${g.note})`,'');
+ const c=r.commits;
+ L.push('## 4. Recent commit mix (git history, last 7 days)',c.total?`- total=${c.total} machine_runtime_sync=${c.machine_runtime_sync} (${Math.round(c.machine_share*100)}%) lesson=${c.lesson} reading=${c.reading} other=${c.other}`:'- unavailable (no git history)','');
+ L.push('## Alerts',...(r.alerts.length?r.alerts.map(x=>'- WARNING: '+x):['- none']));
  return L.join('\n');
 }
 
@@ -116,6 +157,11 @@ function loadWindow(files,root){
  const ctx={window:{}};vm.createContext(ctx);
  for(const p of files)vm.runInContext(fs.readFileSync(path.join(root,p),'utf8'),ctx,{filename:p});
  return ctx.window;
+}
+
+function gitSubjects(root,days){
+ try{return require('child_process').execFileSync('git',['log','--since='+days+' days ago','--format=%s'],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','ignore']}).split('\n').filter(Boolean)}
+ catch(e){return []}
 }
 
 function load(root,today){
@@ -133,11 +179,12 @@ function load(root,today){
   oral:win.ORAL_VOCAB_CANDIDATES||[],
   primary:(win.MASTER_VOCAB_DB||[]).map(x=>Array.isArray(x)?x[0]:x&&x.word),
   secondary:(win.SECONDARY_MASTER_VOCAB_DB||[]).map(x=>x&&x.word),
-  taught:new Set((win.DAILY_VOCAB_DB||[]).map(x=>key(x&&x.word)).filter(Boolean))
+  taught:new Set((win.DAILY_VOCAB_DB||[]).map(x=>key(x&&x.word)).filter(Boolean)),
+  commitSubjects:gitSubjects(root,7)
  };
 }
 
-module.exports={buildReport,format,runway,oralDiagnosis,reviewGap,lessonWords};
+module.exports={buildReport,format,runway,oralDiagnosis,oralRunway,reviewGap,commitStats,alerts,lessonWords,ALERT};
 
 if(require.main===module){
  try{
