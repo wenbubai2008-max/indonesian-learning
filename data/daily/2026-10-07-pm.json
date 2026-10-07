@@ -1,0 +1,352 @@
+{
+  "date": "2026-10-07",
+  "session": "pm",
+  "time": "18:00",
+  "day": 47,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Laptop pinjaman dan tugas kelompok",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "meminjam",
+    "mengumpulkan",
+    "mengetik"
+  ],
+  "vocab": [
+    {
+      "word": "meminjam",
+      "display": "meminjam",
+      "audio_text": "meminjam",
+      "cn": "借入；向别人借（东西）",
+      "en": "to borrow",
+      "root": "pinjam",
+      "root_cn": "借",
+      "formation": "meN- + pinjam → meminjam（p 脱落，meN- 变 mem-）。常见派生：meminjamkan／口语 minjemin＝借出给别人；peminjam＝借的人；pinjaman＝借款、借来的东西。常见搭配：meminjam laptop／buku／uang、meminjam dari teman、minta izin meminjam。",
+      "example": "Boleh aku meminjam charger kamu sebentar? HP-ku hampir mati.",
+      "example_cn": "我可以借一下你的充电器吗？我手机快没电了。",
+      "synonym_note": "meminjam（借进来，主语是借的人）vs meminjamkan／minjemin（借出去，主语是出借的人）：Aku meminjam laptop Dito＝我向 Dito 借；Dito meminjamkan laptopnya padaku＝Dito 把电脑借给我。口语里说“Pinjam dulu ya”就是“先借我用一下”。",
+      "usage_note": "新词（半熟词，口语词）。日常口语常说 minjem；写信息或正式场合用 meminjam。借钱、借东西都可以用；借出方向要用 meminjamkan／minjemin，别说成 meminjam。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "mengumpulkan",
+      "display": "mengumpulkan",
+      "audio_text": "mengumpulkan",
+      "cn": "交（作业、报告）；收集；把……聚到一起",
+      "en": "to submit (homework); to collect; to gather",
+      "root": "kumpul",
+      "root_cn": "聚集；聚在一起",
+      "formation": "meN- + kumpul + -kan → mengumpulkan（k 脱落，meN- 变 meng-）。相关形式：kumpul＝聚会（Besok kita kumpul di rumah Dito）；kumpulan＝一组、一批；pengumpulan＝收集、提交这件事。常见搭配：mengumpulkan tugas／laporan（交作业／报告）、mengumpulkan data／uang／foto（收集）。",
+      "example": "Semua peserta harus mengumpulkan formulir sebelum jam lima sore.",
+      "example_cn": "所有参加者必须在下午五点前交表格。",
+      "synonym_note": "mengumpulkan tugas（把作业交上去）vs mengirim file（把文件发出去）：交给老师、主管这件事常说 mengumpulkan，只是把文件发给某人用 mengirim。kumpul（不及物）是“聚到一起”，mengumpulkan 是“把东西／人聚到一起”，也可以是“收集”。",
+      "usage_note": "新词（半熟词，口语词）。口语常说 ngumpulin，被动口语 dikumpulin：Tugasnya udah dikumpulin belum？",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "mengetik",
+      "display": "mengetik",
+      "audio_text": "mengetik",
+      "cn": "打字；用键盘输入",
+      "en": "to type; to key in",
+      "root": "ketik",
+      "root_cn": "打字；键入",
+      "formation": "meN- + ketik → mengetik（k 脱落，meN- 变 meng-）。相关形式：diketik＝被打出来；ketikan＝打出来的文字；pengetikan＝打字这项工作。常见搭配：mengetik laporan／pesan／surat、mengetik cepat、sedang mengetik…（聊天软件的“正在输入”）。",
+      "example": "Dia mengetik surat lamaran itu sampai jam sepuluh malam.",
+      "example_cn": "他一直打那封求职信打到晚上十点。",
+      "synonym_note": "mengetik（用键盘打字）vs menulis（写，手写或泛指写作）：mengetik laporan 强调“用电脑打出来”，menulis laporan 强调“撰写内容”；发信息两种都常见，“Lagi ngetik”＝正在打字。",
+      "usage_note": "新词（dont 池，口语词）。口语说 ngetik；名词“打出来的文字”用 ketikan，不要和 mengetik 混用。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "mengatur",
+      "display": "mengatur",
+      "audio_text": "mengatur",
+      "cn": "安排；整理；调节",
+      "en": "to arrange; to manage; to adjust",
+      "root": "atur",
+      "root_cn": "安排；整理",
+      "formation": "meN- + atur → mengatur（以元音开头，meN- 变 meng-）。相关形式：aturan＝规则；pengaturan＝安排、设置。常见搭配：mengatur jadwal／waktu／uang、mengatur pembagian tugas、mengatur napas。",
+      "example": "Ibu pintar mengatur uang belanja bulanan.",
+      "example_cn": "妈妈很会安排每个月的买菜钱。",
+      "synonym_note": "mengatur（把事情安排得有条理、有秩序）vs mengurus（办理、处理手续或事务，如 mengurus visa）：安排日程用 mengatur，跑手续用 mengurus。口语祈使常直接说 atur：Tolong atur jadwalnya ya。",
+      "usage_note": "重点复习词（弱项池，focus）。mengatur 后面接“被安排的对象”：jadwal、waktu、uang、tugas；不用来表示“管别人的私事”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "keberatan",
+      "display": "keberatan",
+      "audio_text": "keberatan",
+      "cn": "有异议；介意；觉得为难",
+      "en": "to object; to mind; to find it a burden",
+      "root": "berat",
+      "root_cn": "重；沉重",
+      "formation": "ke- + berat + -an → keberatan。常见搭配：tidak／nggak keberatan（不介意）、merasa keberatan（觉得为难）、keberatan dengan…（对……有意见）、Ada yang keberatan?（有人有异议吗？）。",
+      "example": "Kalau kamu tidak keberatan, aku mau duduk di sini.",
+      "example_cn": "如果你不介意，我想坐这里。",
+      "synonym_note": "keberatan（对某个请求或安排觉得为难、有意见）vs mengganggu（实际上打扰到别人）：Kamu keberatan nggak kalau…？是礼貌地问对方介不介意。keberatan 也可以字面表示“太重了”：Kopernya keberatan＝箱子太重了，要看语境。",
+      "usage_note": "重点复习词（弱项池，focus）。回答别人的请求时：Nggak keberatan 或 Nggak apa-apa 都是“可以，没关系”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menurut",
+      "display": "menurut",
+      "audio_text": "menurut",
+      "cn": "根据；依……看；按照",
+      "en": "according to; in the opinion of",
+      "root": "turut",
+      "root_cn": "跟随；顺着",
+      "formation": "meN- + turut → menurut（t 脱落，meN- 变 men-）。常见搭配：menurut saya／menurutku（依我看）、menurut jadwal／aturan（按日程／规定）、menurut dokter／guru（据医生／老师说）。",
+      "example": "Menurut jadwal, kereta berangkat jam tujuh.",
+      "example_cn": "按时刻表，火车七点出发。",
+      "synonym_note": "menurut（引出信息来源或看法：据……、依……看）vs kata（口语：……说）：Menurut dokter… 比 Kata dokter… 更正式一点；自己的看法用 menurutku／menurut saya。menurut 作形容词时也指“听话、顺从”：Anak itu menurut sekali，所以别把两个用法混在一起。",
+      "usage_note": "重点复习词（legacy 复习词）。menurut 后面直接接人或来源，不要再加 “kata”：Menurut Dito，不说 Menurut kata Dito。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngerjain",
+      "display": "ngerjain",
+      "audio_text": "ngerjain",
+      "cn": "做；处理（一项任务，口语）",
+      "en": "to do; to work on (colloquial)",
+      "root": "kerja",
+      "root_cn": "工作；做",
+      "formation": "标准形式：meN- + kerja + -kan → mengerjakan，口语变成 ngerjain（-kan 变 -in，meN- 变 nge-）。被动：dikerjain／dikerjakan。常见搭配：ngerjain tugas／laporan／PR、lagi ngerjain apa？",
+      "example": "Aku lagi ngerjain laporan, nanti aku telepon balik ya.",
+      "example_cn": "我正在做报告，等一下回你电话。",
+      "synonym_note": "ngerjain（把一项需要花时间的任务做出来）vs ngelakuin（做、执行，更泛）：做作业、报告用 ngerjain。注意 ngerjain 加“人”时是“捉弄某人”：Aku dikerjain temen＝我被朋友整了，所以要分清“ngerjain tugas”和“ngerjain orang”。",
+      "usage_note": "重点复习词（弱项池）。口语词，写邮件或正式场合换成 mengerjakan。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nggak heran",
+      "display": "nggak heran",
+      "audio_text": "nggak heran",
+      "cn": "难怪；不奇怪",
+      "en": "no wonder; not surprising",
+      "root": "heran",
+      "root_cn": "觉得奇怪；惊讶",
+      "formation": "nggak（口语，对应 tidak）＋ heran：nggak heran（kalau/jika）… 表示“……一点也不奇怪”。常见搭配：Nggak heran dia…、nggak heran kalau…、pantas saja…。",
+      "example": "Dia lembur tiap hari, nggak heran dia kelihatan capek.",
+      "example_cn": "他每天加班，难怪看起来很累。",
+      "synonym_note": "nggak heran（不奇怪，已经知道原因）vs pantas saja（难怪呀，常带“原来如此”的感叹）：二者经常可以互换，只是 Pantas saja… 多半是刚发现原因时说，Nggak heran… 更像平静地说“这不意外”。正式写作用 tidak heran。",
+      "usage_note": "重点复习词（弱项池）。后面常接原因或结果：Nggak heran kalau…；别和 nggak sabar（等不及）搞混。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngingetin",
+      "display": "ngingetin",
+      "audio_text": "ngingetin",
+      "cn": "提醒（别人）；告诉对方别忘了（口语）",
+      "en": "to remind someone (colloquial)",
+      "root": "ingat",
+      "root_cn": "记得；想起",
+      "formation": "标准形式：meN- + ingat + -kan → mengingatkan，口语 ngingetin／ingetin（-kan 变 -in）。常见搭配：ngingetin teman（提醒朋友）、ngingetin jadwal、Tolong ingetin aku ya。",
+      "example": "Tolong ingetin aku besok bawa charger ya.",
+      "example_cn": "明天请提醒我带充电器。",
+      "synonym_note": "ngingetin（让对方想起他已经知道的事）vs ngabarin（把新消息告诉对方）：提醒会议时间是 ngingetin，宣布会议改时间才是 ngabarin。",
+      "usage_note": "应用词（近期已教、仍在复习池）。口语词，请同事朋友提醒时最常用 Tolong ingetin ya；正式场合用 mengingatkan。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nyempetin",
+      "display": "nyempetin",
+      "audio_text": "nyempetin",
+      "cn": "特意挤出时间做某事（口语）",
+      "en": "to make time to do something (colloquial)",
+      "root": "sempat",
+      "root_cn": "有空；来得及",
+      "formation": "标准形式：meN- + sempat + -kan → menyempatkan，口语 nyempetin（sempat 说成 sempet，-kan 变 -in）。常见搭配：nyempetin mampir（抽空顺路来）、nyempetin olahraga、nyempetin ngabarin。",
+      "example": "Walaupun capek, aku tetap nyempetin olahraga tiap pagi.",
+      "example_cn": "虽然累，我每天早上还是会挤时间运动。",
+      "synonym_note": "nyempetin（主动挤出时间做）vs sempat（刚好有机会做成）：Aku sempat telepon dia＝我有过机会打了电话；Aku nyempetin telepon dia＝我特意腾出时间打电话。",
+      "usage_note": "应用词（近期已教、仍在复习池）。后面直接接动词：nyempetin ngirim、nyempetin belajar，不需要再加 untuk。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nggak enakan",
+      "display": "nggak enakan",
+      "audio_text": "nggak enakan",
+      "cn": "碍于情面；不好意思开口或拒绝（口语）",
+      "en": "too shy or polite to say no / to ask",
+      "root": "enak",
+      "root_cn": "舒服；好吃",
+      "formation": "nggak＋enak＋-an：nggak enak＝不舒服、不好吃、不好意思；加 -an 后 nggak enakan 描述一种性格或状态，总是怕让别人为难。常见搭配：orangnya nggak enakan、jangan nggak enakan、nggak enakan minta tolong。",
+      "example": "Jangan nggak enakan, kalau kamu nggak bisa, bilang aja.",
+      "example_cn": "别碍于情面，你做不到就直说。",
+      "synonym_note": "nggak enakan（怕让别人为难或得罪人，所以不好意思开口）vs sungkan（礼貌或尊敬上的拘谨）：二者常常重叠，sungkan 多半面对长辈、上司；nggak enakan 常用来形容怕麻烦朋友。",
+      "usage_note": "应用词（近期已教、仍在复习池）。用来描述自己或别人：Aku nggak enakan sama dia；对方说“别客气”时可回 Nggak apa-apa。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Kemarin pagi laptop Tika tiba-tiba rusak, padahal kelompoknya harus mengumpulkan tugas sebelum jam sembilan malam. Tika nggak enakan merepotkan teman, tapi akhirnya dia meminjam laptop lama Dito. \"Pakai aja, aku nggak keberatan kok,\" kata Dito. Siang itu Dito mengatur pembagian tugas: Tika mengetik laporan, Bayu menyiapkan datanya. Sampai sore, data Bayu belum masuk. \"Aku udah ngingetin dia dua kali,\" kata Tika. \"Nggak heran dia belum jawab, kerjanya sampai jam enam,\" jawab Dito. Jam tujuh Bayu akhirnya mengirim datanya. \"Maaf ya, baru bisa nyempetin sekarang. Tadi aku ngerjain data ini di sela-sela kerja,\" tulisnya. Menurut Dito, waktunya masih cukup. Malam itu Tika mengumpulkan laporan itu jam setengah sembilan.",
+    "cn": "昨天上午，Tika 的笔记本电脑突然坏了，可是小组必须在晚上九点前交作业。Tika 不好意思麻烦朋友，但最后还是借了 Dito 的旧笔记本。“用吧，我不介意的。”Dito 说。那天中午 Dito 安排了分工：Tika 负责打报告，Bayu 负责准备数据。到傍晚，Bayu 的数据还没交过来。“我已经提醒他两次了。”Tika 说。“难怪他还没回，他要工作到六点。”Dito 回答。七点，Bayu 终于把数据发了过来。“不好意思啊，现在才抽出空。我刚才是在工作的间隙把这些数据做出来的。”他写道。按 Dito 的看法，时间还来得及。当晚 Tika 在八点半把报告交了上去。"
+  },
+  "dialogue": {
+    "title": "Besok paginya: mengembalikan laptop",
+    "lines": [
+      {
+        "speaker": "Tika",
+        "id": "Dit, makasih ya udah minjemin laptop lamamu. Kemarin aku nggak enakan banget.",
+        "cn": "Dit，谢谢你把旧电脑借给我。昨天我真的挺不好意思的。"
+      },
+      {
+        "speaker": "Dito",
+        "id": "Udah, nggak usah dipikirin. Laporannya jadi dikumpulin jam berapa?",
+        "cn": "好啦，别放在心上。报告最后几点交的？"
+      },
+      {
+        "speaker": "Tika",
+        "id": "Jam setengah sembilan. Untung kemarin aku terus ngingetin Bayu, jadi datanya masuk sebelum malam.",
+        "cn": "八点半。幸好昨天我一直在提醒 Bayu，数据才在晚上之前交过来。"
+      },
+      {
+        "speaker": "Dito",
+        "id": "Iya. Lain kali kita atur dari awal aja, jangan nunggu sampai sore.",
+        "cn": "是啊。下次我们一开始就安排好，别等到傍晚。"
+      },
+      {
+        "speaker": "Tika",
+        "id": "Setuju. Menurutku kita bikin jadwal di grup biar semua jelas.",
+        "cn": "同意。我觉得我们在群里排个日程，大家就清楚了。"
+      },
+      {
+        "speaker": "Dito",
+        "id": "Oke. Nanti aku yang ngetik, kamu ngerjain bagian presentasi aja.",
+        "cn": "好。下次我来打字，你就做演示文稿的部分。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "请用自己的话介绍你最近向别人借过（或借给别人）的一样东西，并说明对方介不介意。至少用上 meminjam 和 keberatan，写 2–3 句自然的印尼语，不要照抄课文。",
+      "reference_answer": "Minggu lalu aku meminjam payung temanku karena hujannya besar sekali. Dia nggak keberatan, malah bilang boleh dipakai sampai besok. Tapi aku tetap nggak enakan, jadi sorenya langsung aku kembalikan.",
+      "reference_cn": "上周下大雨，我向朋友借了伞。他一点也不介意，还说可以用到明天。可我还是不好意思，所以傍晚就马上还了。"
+    },
+    {
+      "task": "说说你最近要交的一份作业、报告或表格，你是怎么安排时间的。至少用上 mengetik（或 mengumpulkan）和 mengatur，写 2–3 句，要有自己的细节。",
+      "reference_answer": "Kemarin aku mengetik laporan kerja selama dua jam, lalu mengumpulkannya ke atasan sebelum makan siang. Aku mengatur waktunya dengan baik, jadi nggak perlu lembur.",
+      "reference_cn": "昨天我花了两个小时打工作报告，然后在午饭前交给了上司。我把时间安排得很好，所以不用加班。"
+    },
+    {
+      "task": "朋友一直没回你的消息。请写 2–3 句话：先说你已经提醒过他，再说你为什么不意外，最后给出你的看法。至少用上 ngingetin、nggak heran 或 menurut 中的两个。",
+      "reference_answer": "Aku udah ngingetin Rani tiga kali soal tiketnya. Nggak heran sih, dia kan lagi sibuk ujian. Menurutku kita tunggu sampai besok aja.",
+      "reference_cn": "关于车票的事，我已经提醒 Rani 三次了。也不奇怪，他不是正忙着考试嘛。我觉得我们等到明天就好。"
+    },
+    {
+      "task": "朋友请你帮个忙，你今天很忙，但还是想帮他。请写 2–3 句话，说明你会怎么抽时间、什么时候做哪一部分。至少用上 nyempetin 和 ngerjain。",
+      "reference_answer": "Hari ini jadwalku padat banget, tapi aku bakal nyempetin bantuin kamu. Nanti malam aku ngerjain bagian gambarnya, ya.",
+      "reference_cn": "今天我日程很满，但我会抽时间帮你。今晚我来做图片的那部分，好吗？"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Dito, boleh aku ____ laptop lamamu sebentar?",
+        "options": [
+          "dipinjem",
+          "kepinjem",
+          "minjem",
+          "minjemin"
+        ],
+        "answer_index": 2,
+        "answer": "minjem",
+        "explain": "主语是“aku”（借的人），要用主动的 minjem＝借入。minjemin 是“借出给别人”（Dito minjemin laptopnya ke aku），主语不对；dipinjem 是被动，主语应是东西（Laptopnya dipinjem Tika）；kepinjem 带“不小心、碰巧被借走”的意思，不适合礼貌地请求。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Aku susah ____ waktu kalau jadwal kuliahku berubah-berubah.",
+        "options": [
+          "mengatur",
+          "mengurus",
+          "mengubah",
+          "mengganti"
+        ],
+        "answer_index": 0,
+        "answer": "mengatur",
+        "explain": "“安排时间”的固定说法是 mengatur waktu。mengurus 是办理手续或事务（mengurus visa），不说 mengurus waktu；mengubah／mengganti 是“改变／替换”，句子要表达的是把时间安排好，不是改掉时间。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最合适的一项：Bayu kerja sampai jam enam, jadi ____ dia belum jawab pesan Tika.",
+        "options": [
+          "Nggak sabar",
+          "Nggak jelas",
+          "Nggak enak",
+          "Nggak heran"
+        ],
+        "answer_index": 3,
+        "answer": "Nggak heran",
+        "explain": "前半句已经交代了原因（工作到六点），所以用 Nggak heran＝难怪、不奇怪。Nggak sabar 是等不及，Nggak jelas 是不清楚，Nggak enak 是不舒服或不好意思，都不能表达“这个结果不意外”。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Aku udah ____ dia dua kali, tapi belum dibalas.（提醒）",
+        "answer": "ngingetin",
+        "explain": "ngingetin＝提醒（口语，标准形式 mengingatkan）。提醒是让对方想起已知的事；如果是把新消息告诉对方，要用 ngabarin。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Maaf ya, aku baru bisa ____ ngirim filenya sekarang.（特意抽出时间）",
+        "answer": "nyempetin",
+        "explain": "nyempetin＝特意挤出时间去做（口语，标准形式 menyempatkan）。后面直接接动词 ngirim；sempat 只是“碰巧有机会”，没有“特意”的意思。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我们必须在九点前交作业。",
+        "tokens": [
+          "Kami",
+          "harus",
+          "mengumpulkan",
+          "tugas",
+          "sebelum",
+          "jam",
+          "sembilan"
+        ],
+        "answer": "Kami harus mengumpulkan tugas sebelum jam sembilan",
+        "answer_cn": "我们必须在九点前交作业。",
+        "explain": "Kami harus mengumpulkan tugas＝我们必须交作业（mengumpulkan tugas 是“交作业”的固定说法）；sebelum jam sembilan＝在九点以前。时间状语放在句尾最自然。"
+      }
+    ],
+    "self_check": [
+      "不看中文，我能说出 meminjam、mengumpulkan、mengetik 的意思，并各造一个短句吗？",
+      "我能区分 minjem（借入）和 minjemin（借出）吗？",
+      "keberatan、mengatur、menurut、ngerjain、nggak heran 里，我能在 3 秒内想起意思的有几个？不熟的那个，我用它说了一句话吗？",
+      "ngingetin、nyempetin、nggak enakan 我能用在真实生活里的一句话吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "先做 3 秒主动提取：看中文说出 meminjam、mengumpulkan、mengetik，再依次说出 mengatur、keberatan、menurut、ngerjain、nggak heran，答不出的立刻回看词卡再说一遍。",
+      "对比易混用法：minjem（借入）和 minjemin（借出）、mengumpulkan tugas（交作业）和 mengirim file（发文件）、ngerjain tugas 和 ngerjain orang（整人）、keberatan（介意）和字面“太重”，各说一句自己的例句。",
+      "用 30 秒向朋友讲一遍“Tika 的电脑坏了，小组怎么赶上交作业”的经过，至少用上 5 个目标词，不要背课文。",
+      "想一件你本周真的要提醒别人、抽空做或不好意思开口的事，用 ngingetin、nyempetin 或 nggak enakan 说一句真实的话。",
+      "最后用 menurut 给出一句你对今天课文的看法，再用 nggak heran 回应一个朋友的近况。"
+    ]
+  }
+}
