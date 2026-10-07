@@ -26,6 +26,7 @@ on:
       - '.github/scripts/test-vocab-profile-evidence.js'
       - '.github/scripts/test-vocab-study-coach.js'
       - '.github/scripts/test-cross-module-training.js'
+      - '.github/scripts/test-handoff-drill.js'
       - 'data/weakness-paging-roots.js'
       - 'data/weakness-pool.js'
       - '.github/scripts/inject-vocab-profile.js'
@@ -145,6 +146,8 @@ jobs:
           node .github/scripts/test-vocab-study-coach.js
           node --check .github/scripts/test-cross-module-training.js
           node .github/scripts/test-cross-module-training.js
+          node --check .github/scripts/test-handoff-drill.js
+          node .github/scripts/test-handoff-drill.js
           node --check .github/scripts/build-vocab-profile.js
           node --check .github/scripts/write-vocab-profile-snapshot.js
           node --check .github/scripts/test-vocab-profile-snapshot.js

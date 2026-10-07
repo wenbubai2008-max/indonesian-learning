@@ -102,7 +102,13 @@ for(const meta of secondaryCatalog){
 fs.writeFileSync('data/master-vocab-secondary.js','window.SECONDARY_MASTER_VOCAB_DB = '+JSON.stringify(secondaryMaster,null,2)+';\n');
 
 const primaryNewFull=master.filter(w=>activeMap.has(key(w))&&!dailySet.has(key(w)));
-const secondaryNewFull=secondaryMaster.map(x=>x.word).filter(w=>activeMap.has(key(w))&&!dailySet.has(key(w)));
+// Secondary candidates are ordered by BIPA usefulness grade (S > A > B); the sort is stable, so catalogue order breaks ties.
+const SAB_RANK={S:0,A:1,B:2};
+const secondaryNewFull=secondaryMaster.filter(x=>activeMap.has(key(x.word))&&!dailySet.has(key(x.word)))
+  .map((x,i)=>[x,i]).sort((a,b)=>((SAB_RANK[a[0].sab]??3)-(SAB_RANK[b[0].sab]??3))||a[1]-b[1]).map(([x])=>x.word);
+// Primary phase top-up (2026-10-07): secondary 'dont' words may follow the primary words, so 08:00 keeps a dont supply after primary dont runs out.
+// Primary words always come first; secondary fuzzy words are NOT added before the transition phase.
+const secondaryDontTopup=secondaryNewFull.filter(w=>newMemoryClass(weakMap.get(key(w)))==='dont');
 
 const HANDOFF_FILE='data/master-handoff-state.json';
 const HANDOFF_FILL_TARGET=10;
@@ -123,7 +129,7 @@ if(oldHandoff.committed_secondary||oldHandoff.phase==='secondary'){
 }else if(primaryNewFull.length>=HANDOFF_FILL_TARGET){
   handoff.phase='primary';handoff.committed_secondary=false;handoff.switched_at='';
   activeMasterPool='primary_977';
-  newFull=primaryNewFull.slice();
+  newFull=[...primaryNewFull,...secondaryDontTopup];
 }else if(primaryNewFull.length>0){
   handoff.phase='transition';handoff.committed_secondary=false;
   activeMasterPool='primary_to_secondary';
@@ -299,6 +305,7 @@ const runtime={
     primary_new_pool_total_full:primaryNewFull.length,
     secondary_new_pool_total_full:secondaryNewFull.length,
     new_pool_total_full:newFull.length,
+    new_pool_secondary_dont_topup:handoff.phase==='primary'?secondaryDontTopup.length:0,
     new_pool_exposed:newExposed.length,
     new_pool_dont_total_full:newDontFull.length,
     new_pool_dont_exposed:newDontExposed.length,

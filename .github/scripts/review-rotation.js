@@ -109,8 +109,22 @@ function checkPm({date,runtime,rotation,reviewHistory,review,application,newWord
  * Deterministic candidate ranking + recommended PM selection (what the 17:30 generator must start from).
  * Score favours: fresh real error > never/long-ago core exposure > lower exposure count > memory priority.
  */
-function rank({date,runtime,rotation,reviewHistory,reviewCount=5,amVocab=[],amReview=[]}){
+/** Days since each word's last lesson exposure (taught / AM review / PM new+review; application excluded), from a long lesson history. */
+function lastExposureDays(date,longHistory){
+ const last=new Map(),at=Date.parse(date+'T00:00:00Z');
+ for(const h of longHistory||[]){
+  if(!h||!['am','pm'].includes(h.session)||!(h.date<date))continue;
+  const list=h.session==='am'?[...(h.vocab||[]),...(h.review_vocab||[])]:(h.vocab||[]).filter(v=>!(v&&v.source_group==='application'));
+  for(const v of list){const w=word(v);if(w&&(!last.has(w)||last.get(w)<h.date))last.set(w,h.date)}
+ }
+ return new Map([...last].map(([w,d])=>[w,Math.round((at-Date.parse(d+'T00:00:00Z'))/DAY)]));
+}
+// Stale bonus: only beyond the 7-day window, capped (30) so it never outranks a fresh real error (+100).
+const staleBonus=d=>d==null||d<=7?0:Math.min(30,Math.round((d-7)*0.75));
+
+function rank({date,runtime,rotation,reviewHistory,longHistory=null,reviewCount=5,amVocab=[],amReview=[]}){
  const cfg=config(rotation,date),ctx=analyze({date,session:'pm',runtime,reviewHistory});
+ const stale=longHistory?lastExposureDays(date,longHistory):new Map();
  const am=new Set(amReview.map(norm)),penalty={0:0,1:12,2:25};
  const items=[...ctx.reviewPool].map(w=>{
   const i=ctx.info(w),reasons=[];
@@ -121,8 +135,10 @@ function rank({date,runtime,rotation,reviewHistory,reviewCount=5,amVocab=[],amRe
   if(i.priority===1){score+=6;reasons.push('priority1')}
   if(i.wrongCount>0&&!i.fresh)reasons.push('older_wrong_not_counted_as_new');
   score+=Math.min(i.wrongCount,3);
+  const staleDays=stale.has(w)?stale.get(w):null,sb=staleBonus(staleDays);
+  if(sb){score+=sb;reasons.push('stale_'+staleDays+'d(+'+sb+')')}
   const blocked=ctx.blocked(w),recent=cfg.recent?isRecent(i,cfg.recent.days)&&!i.fresh:false;
-  return {word:w,score,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,focus:i.focus,recent4:recent,blocked,am_core:am.has(w),reasons};
+  return {word:w,score,stale_days:staleDays,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,focus:i.focus,recent4:recent,blocked,am_core:am.has(w),reasons};
  }).sort((a,b)=>b.score-a.score||a.word.localeCompare(b.word));
  const usable=items.filter(x=>!x.blocked&&(x.count<3||x.fresh));
  const pick=[];let recentUsed=0,heavyUsed=0,focusUsed=0;
@@ -150,4 +166,4 @@ function rank({date,runtime,rotation,reviewHistory,reviewCount=5,amVocab=[],amRe
   application_candidates:apps,notes,ranking_top:items.filter(x=>!x.blocked).slice(0,25)};
 }
 
-module.exports={config,analyze,checkPm,rank,eligibleAlternatives,word,ws,norm};
+module.exports={config,analyze,checkPm,rank,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};
