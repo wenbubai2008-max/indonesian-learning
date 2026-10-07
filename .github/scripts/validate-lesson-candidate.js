@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
-const {checkPm,checkExposure}=require('./review-rotation');
+const {checkCore,checkPm,checkExposure}=require('./review-rotation');
 
 /** Only completed core-review exposures count; a PM application is not another core review. */
 function collectReviewHistory(index,targetDate,targetSession,load){
@@ -183,42 +183,9 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     }
     const ids=reviewHistory.map(h=>String(h?.date||'')+'-'+String(h?.session||''));
     check(expected.length===ids.length&&expected.every(id=>ids.includes(id))&&new Set(ids).size===ids.length,'REVIEW_HISTORY_INCOMPLETE','The seven-day completed index coverage is incomplete or duplicated');
-    const stamps=[], exposures=new Map(), completed=reviewHistory.slice().sort((a,b)=>(a.date+' '+a.session).localeCompare(b.date+' '+b.session));
-    for(const h of completed){
-     if(!h||!['am','pm'].includes(h.session))continue;
-     const t=Date.parse(h.date+'T'+(h.session==='am'?'08:00:00':h.date<'2026-09-16'?'19:00:00':'18:00:00')+'+07:00');
-     const words=h.session==='am'?ws(h.review_vocab):ws((h.vocab||[]).filter(v=>v?.source_group==='review'));
-     const rec={date:h.date,session:h.session,time:t,words:new Set(words)};
-     stamps.push(rec);
-     for(const w of words){if(!exposures.has(w))exposures.set(w,[]);exposures.get(w).push(rec)}
-    }
+    // Original hard core-review rules: single shared implementation in review-rotation.js (core-only, unchanged).
     const selected=session==='am'?ws(lesson.review_vocab):ws(vocab.filter(v=>v?.source_group==='review'));
-    const lastWrong=new Map((runtime.review_pool||[]).map(v=>[word(v),Array.isArray(v)?Date.parse(v[3]||''):NaN]));
-    const generatedAt=Date.parse(runtime.generated_at||'');
-    const fresh=w=>{
-     const recent=exposures.get(w)||[],last=recent.length?recent[recent.length-1].time:NaN,wrong=lastWrong.get(w);
-     return Number.isFinite(last)&&Number.isFinite(wrong)&&Number.isFinite(generatedAt)&&wrong>last&&wrong<=generatedAt+300000;
-    };
-    const sameDayAm=stamps.find(x=>x.date===date&&x.session==='am');
-    const pms=stamps.filter(x=>x.session==='pm').slice(-2);
-    const latest=stamps.at(-1);
-    const reviewCount=w=>(exposures.get(w)||[]).length;
-    const blocked=w=>{
-     if(fresh(w))return false;
-     if(session==='pm'&&sameDayAm?.words.has(w))return true;
-     if(session==='am'&&latest?.session==='pm'&&latest?.words.has(w))return true;
-     return pms.length===2&&pms.every(x=>x.words.has(w))&&(at-Date.parse(pms[1].date+'T00:00:00Z'))<=3*86400000;
-    };
-    for(const w of selected){
-     if(fresh(w))continue;
-     if(session==='pm'&&sameDayAm?.words.has(w))add('PM_SAME_DAY_REVIEW_REPEAT',w+' was already a core review at 08:00; no new wrong answer');
-     else if(session==='am'&&latest?.session==='pm'&&latest?.words.has(w))add('AM_PREVIOUS_PM_REVIEW_REPEAT',w+' was a core review in the preceding PM session');
-     else if(pms.length===2&&pms.every(x=>x.words.has(w))&&(at-Date.parse(pms[1].date+'T00:00:00Z'))<=3*86400000)add('PM_REVIEW_COOLDOWN',w+' was in both previous PM core-review sets; allow three days unless a new wrong answer');
-    }
-    const frequent=selected.filter(w=>reviewCount(w)>=3&&!fresh(w));
-    const alternatives=[...reviewPool].filter(w=>!selected.includes(w)&&reviewCount(w)<3&&!blocked(w));
-    if(frequent.length>1&&alternatives.length>=frequent.length-1)
-     add('REVIEW_OVEREXPOSURE','At most one word with three or more core-review exposures in the last seven days when eligible alternatives exist: '+frequent.join(', '));
+    for(const e of checkCore({date,session,runtime,reviewHistory,selected}))add(e.code,e.detail);
     if(session==='pm'){ // executable recent-4-day / focus-mix / application rules (see review-rotation.js)
      const groupWords=g=>ws(vocab.filter(v=>v?.source_group===g));
      for(const e of checkPm({date,runtime,rotation,reviewHistory,review:groupWords('review'),application:groupWords('application'),newWords:groupWords('new'),amReview:[...amReviewWords]}))add(e.code,e.detail);

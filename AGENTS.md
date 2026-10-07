@@ -21,7 +21,7 @@ Then follow this mandatory sequence:
 
 - Do not create temporary GitHub Actions/workflows for one-off debugging, recovery, or lesson generation.
 - Do not add duplicate writers for `data/daily-vocab-data.js`; `sync-daily-vocab.yml` is the single writer.
-- ChatGPT lesson automations must not directly read/replace the large `weakness-sync.json` or `daily-vocab-data.js`; use `data/learning-runtime.json` for eligibility.
+- Lesson and reading generators (Claude scheduled tasks since 2026-10; formerly ChatGPT) must not directly read/replace the large `weakness-sync.json` or `daily-vocab-data.js`; use `data/learning-runtime.json` for eligibility.
 - Do not compress or simplify the AM/PM lesson contract while fixing an unrelated problem.
 - Do not use whole-page/character-data MutationObservers to change static UI text, time labels, or layout.
 - Do not render one layout first and then transform it into another with JS; critical first-paint layout must exist in early CSS.

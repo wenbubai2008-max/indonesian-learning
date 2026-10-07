@@ -40,7 +40,7 @@ function activeWords(h,ledger){
 }
 
 /** reviewHistory: completed AM/PM lesson JSON objects of the last 7 days (same shape as collectReviewHistory). */
-function analyze({date,session,runtime,reviewHistory,ledger=null}){
+function analyze({date,session,runtime,reviewHistory,ledger=null,passiveTexts=[]}){
  const at=Date.parse(date+'T00:00:00Z');
  const exposures=new Map(),stamps=[];
  const completed=(reviewHistory||[]).slice().sort((a,b)=>(a.date+' '+a.session).localeCompare(b.date+' '+b.session));
@@ -81,6 +81,9 @@ function analyze({date,session,runtime,reviewHistory,ledger=null}){
  // streak-1 days, with at least one active exposure among them, would make this lesson the streak-th day in a row.
  const dayOf=x=>Math.round((at-Date.parse(x.date+'T00:00:00Z'))/DAY);
  const texts=ledger?stamps.map(x=>({day:dayOf(x),words:x.words,text:lessonText(x.lesson)})):[];
+ // Optional passive texts (e.g. the 12:00 extensive reading, ranking only): they fill a "seen" day, never an active one.
+ // A same-day text counts only for PM (the noon reading comes before 18:00, after 08:00).
+ if(ledger)for(const p of passiveTexts||[]){if(!p||!p.date||!p.text)continue;const d=dayOf(p);if(d<0||d>7||(d===0&&session!=='pm'))continue;texts.push({day:d,words:new Set(),text:String(p.text).toLowerCase()})}
  const streakCache=new Map();
  const streak=w=>{
   if(!ledger)return false;
@@ -115,6 +118,32 @@ function eligibleAlternatives(ctx,used,cfg){
   out.push(w);
  }
  return out;
+}
+
+/**
+ * The original hard core-review rules (since 2026-09-28), kept on their ORIGINAL core-only semantics on purpose:
+ * same-day AM core repeated at PM, previous PM core repeated at AM, two consecutive PM cores -> 3-day cooldown, and
+ * at most one 3+-exposure word when alternatives exist. These are hard errors (no alternatives guard), so they stay
+ * core-only; the stricter exposure-ledger rules live in checkExposure(), which is alternatives-guarded.
+ * Single source of truth for validate-lesson-candidate.js (moved here 2026-10-07, behaviour unchanged).
+ */
+function checkCore({date,session,runtime,reviewHistory,selected}){
+ const errors=[],add=(code,detail)=>errors.push({code,detail});
+ const ctx=analyze({date,session,runtime,reviewHistory,ledger:null});
+ const at=Date.parse(date+'T00:00:00Z');
+ const pms=ctx.stamps.filter(x=>x.session==='pm').slice(-2),latest=ctx.stamps.at(-1);
+ const fresh=w=>ctx.info(w).fresh,count=w=>(ctx.exposures.get(w)||[]).length;
+ for(const w of selected){
+  if(fresh(w))continue;
+  if(session==='pm'&&ctx.sameDayAm&&ctx.sameDayAm.words.has(w))add('PM_SAME_DAY_REVIEW_REPEAT',w+' was already a core review at 08:00; no new wrong answer');
+  else if(session==='am'&&latest&&latest.session==='pm'&&latest.words.has(w))add('AM_PREVIOUS_PM_REVIEW_REPEAT',w+' was a core review in the preceding PM session');
+  else if(pms.length===2&&pms.every(x=>x.words.has(w))&&(at-Date.parse(pms[1].date+'T00:00:00Z'))<=3*DAY)add('PM_REVIEW_COOLDOWN',w+' was in both previous PM core-review sets; allow three days unless a new wrong answer');
+ }
+ const frequent=selected.filter(w=>count(w)>=3&&!fresh(w));
+ const alternatives=[...ctx.reviewPool].filter(w=>!selected.includes(w)&&count(w)<3&&!ctx.blocked(w));
+ if(frequent.length>1&&alternatives.length>=frequent.length-1)
+  add('REVIEW_OVEREXPOSURE','At most one word with three or more core-review exposures in the last seven days when eligible alternatives exist: '+frequent.join(', '));
+ return errors;
 }
 
 /** Returns validator errors [{code,detail}] for a PM candidate; empty when compliant or when alternatives are insufficient. */
@@ -187,8 +216,8 @@ function lastExposureDays(date,longHistory,includeApplication=false){
 // Stale bonus: only beyond the 7-day window, capped (30) so it never outranks a fresh real error (+100).
 const staleBonus=d=>d==null||d<=7?0:Math.min(30,Math.round((d-7)*0.75));
 
-function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null,reviewCount=5,amVocab=[],amReview=[]}){
- const cfg=config(rotation,date),L=cfg.ledger,ctx=analyze({date,session,runtime,reviewHistory,ledger:L});
+function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null,reviewCount=5,amVocab=[],amReview=[],passiveTexts=[]}){
+ const cfg=config(rotation,date),L=cfg.ledger,ctx=analyze({date,session,runtime,reviewHistory,ledger:L,passiveTexts});
  const pmRules=session==='pm'; // recent-4-day cap and focus quota are PM rules
  const recentCfg=pmRules?cfg.recent:null,focusCfg=pmRules?cfg.focus:null;
  const stale=longHistory?lastExposureDays(date,longHistory,!!L):new Map();
@@ -285,4 +314,4 @@ function naturalRecurrence({date,runtime,longHistory,exclude=[],count=12}){
   guidance:'Weave these into reading / dialogue / example sentences (about 6-8 per lesson, earlier entries first). They do not count as core review or application and never replace them.'};
 }
 
-module.exports={config,analyze,checkPm,checkExposure,activeWords,rank,naturalRecurrence,lessonText,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};
+module.exports={config,analyze,checkCore,checkPm,checkExposure,activeWords,rank,naturalRecurrence,lessonText,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};

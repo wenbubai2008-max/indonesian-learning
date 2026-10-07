@@ -261,6 +261,17 @@ t('L9 a recent training error on a word with no lesson exposure in 7 days joins 
  const off=rankL({date:'2026-10-09',runtime:rtL(over),rotation,reviewHistory:hist,reviewCount:5});
  assert.ok(!off.ranking_top.find(x=>x.word==='a5').fresh,'legacy semantics unchanged without the ledger');
 });
+t('L10 a noon extensive reading fills a streak day for ranking (PM only on the same day); validator unaffected',()=>{
+ // mengatur was active on 10-07 only; 10-08 had no lesson appearance
+ const hist2=[amL('2026-10-07'),pmL('2026-10-07',{application:['mengatur']}),amL('2026-10-08'),pmL('2026-10-08'),amL('2026-10-09')];
+ const base=rankL({date:'2026-10-09',runtime:rtL(),rotation:rotL,reviewHistory:hist2,reviewCount:5});
+ assert.ok(!base.avoid_in_text.includes('mengatur'),'no streak without a 10-08 appearance');
+ const withReading=rankL({date:'2026-10-09',runtime:rtL(),rotation:rotL,reviewHistory:hist2,reviewCount:5,passiveTexts:[{date:'2026-10-08',text:'Pemerintah mengatur harga beras.'}]});
+ assert.ok(withReading.avoid_in_text.includes('mengatur'),'active 10-07 + reading 10-08 => 3rd day in a row on 10-09');
+ const amSame=rankL({date:'2026-10-09',session:'am',runtime:rtL(),rotation:rotL,reviewHistory:hist2.slice(0,4),reviewCount:5,passiveTexts:[{date:'2026-10-09',text:'mengatur'}]});
+ assert.ok(!amSame.avoid_in_text.includes('mengatur'),'a same-day reading is after 08:00, so it never counts for AM');
+ assert.deepEqual(exp({review:['mengatur','a1','a2','a3'],application:['am1','am2']},hist2),[],'validator ignores readings');
+});
 }
 
 // Integration through the real validator() using the shared PM fixture of test-lesson-candidate.js.

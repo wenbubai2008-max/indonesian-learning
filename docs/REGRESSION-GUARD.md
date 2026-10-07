@@ -28,8 +28,8 @@
 - PM 切换日期：`2026-09-16`
 - `2026-09-15` 及以前历史 PM 仍属于 19:00，不得批量改成 18:00
 - 20:00 补漏任务已于 `2026-09-16` 关闭；正式学习任务只保留 08:00、12:00、18:00
-- V2 兜底时间门：AM 不早于 08:30（Claude 08:00 早课任务 07:30 开始生成，需要留出发布时间），PM 不早于 18:05；cron 为 `30 1 * * *` 与 `5 11 * * *`
-- **V4 备用课程生成：自 2026-10-03 起暂时完全停用（用户明确指示）。** Claude 是唯一的自动课程生成者：07:30 开始生成 08:00 早课，17:30 开始生成 18:00 晚课。上面的 08:30/18:05 时间门与两条 cron 保留，但只做健康检查、Sync 和“恢复同一份已保存原稿”，不再生成任何备用课程。原先计划把 PM 兜底从 18:05 延后到 18:30 的修改已撤销（从未落地）。只有用户明确指示后才能重新启用，并须同步更新回归守卫。
+- V2 兜底时间门：AM 不早于 08:30（Claude 08:00 早课任务约 07:24 开始生成，需要留出发布时间），PM 不早于 18:05；cron 为 `30 1 * * *` 与 `5 11 * * *`
+- **V4 备用课程生成：自 2026-10-03 起暂时完全停用（用户明确指示）。** Claude 是唯一的自动课程生成者：约 07:24 开始生成 08:00 早课，17:30 开始生成 18:00 晚课。上面的 08:30/18:05 时间门与两条 cron 保留，但只做健康检查、Sync 和“恢复同一份已保存原稿”，不再生成任何备用课程。原先计划把 PM 兜底从 18:05 延后到 18:30 的修改已撤销（从未落地）。只有用户明确指示后才能重新启用，并须同步更新回归守卫。
 
 ## 2. 已发生过的错误，禁止再次出现
 
@@ -45,9 +45,9 @@
 发生过：任务读取 `daily-vocab-data.js` 被截断，又因为 update_file 是整文件替换，主动停止甚至暂停任务。
 
 以后：
-- ChatGPT 自动课程不直接写 daily-vocab
+- 课程生成任务（现为 Claude 定时任务，此前为 ChatGPT）不直接写 daily-vocab
 - GitHub Runner 在仓库内完整读取并同步
-- ChatGPT 课程任务只写当天唯一 AM/PM lesson JSON 到 `lesson-release-YYYY-MM-DD-am|pm` 分支，并打开带 `AUTO_PUBLISH_LESSON=1` 的同仓库 PR；`index.json` 由现有 `sync-daily-vocab.yml` 的 lesson release job 基于最新 main 与权威 planner 自动生成。ChatGPT 不再直接 update `data/daily/index.json`。
+- 课程生成任务只写当天唯一 AM/PM lesson JSON 到 `lesson-release-YYYY-MM-DD-am|pm` 分支，并打开带 `AUTO_PUBLISH_LESSON=1` 的同仓库 PR；`index.json` 由现有 `sync-daily-vocab.yml` 的 lesson release job 基于最新 main 与权威 planner 自动生成。课程生成任务不直接 update `data/daily/index.json`。
 
 ### C. weakness 结构解析错误
 发生过：对 `{version, updated_at, words}` 顶层直接 `Object.values(parsed)`。
@@ -102,7 +102,7 @@
 
 任何新增 workflow 必须有长期必要性，不能只是一次性修复手段。
 
-泛读发布不新增第三条 workflow。2026-09-30 起，长期发布逻辑放在现有 `sync-daily-vocab.yml` 的独立 `extensive_reading_release` PR job 中，但该 job **不得读写 daily-vocab/runtime**。泛读生成任务（2026-10-08 起为 Claude 定时任务，此前为 ChatGPT）每天只在同日 `extensive-reading-YYYY-MM-DD` 隔离分支写一个临时候选 `data/extensive-reading-candidate.json` 并打开带 `AUTO_PUBLISH_EXTENSIVE_READING=1` 标记的同仓库 PR；GitHub Runner 从受信任的 main 脚本生成/验证旧文归档、轻量历史索引与今日单篇文件，删除候选文件后用 PR head 精确 SHA squash merge。这样正式 main 仍只有一个发布 commit，历史三文件事务由 GitHub 完成，ChatGPT 不再直接移动 main ref 或连续写三个正式文件。若 main 在生成/合并期间前进，保留 release 分支并停止，不 force push、不用旧 base 强并。 Runner 校验完成后，最终分支提交使用 `[skip ci]`，避免自身推送再触发一次 `pull_request synchronize`。squash merge 必须显式设置不含跳过标记的 commit_title 与 commit_message，确保正式 main 的 Pages 部署照常触发。普通候选提交不加跳过标记，仍正常校验；保留已 merged/closed 的幂等退出作为兼容保护。若以后启用强制 PR 状态检查，须重新评估此策略，不得绕过分支保护。
+泛读发布不新增第三条 workflow。2026-09-30 起，长期发布逻辑放在现有 `sync-daily-vocab.yml` 的独立 `extensive_reading_release` PR job 中，但该 job **不得读写 daily-vocab/runtime**。泛读生成任务（2026-10-08 起为 Claude 定时任务，此前为 ChatGPT）每天只在同日 `extensive-reading-YYYY-MM-DD` 隔离分支写一个临时候选 `data/extensive-reading-candidate.json` 并打开带 `AUTO_PUBLISH_EXTENSIVE_READING=1` 标记的同仓库 PR；GitHub Runner 从受信任的 main 脚本生成/验证旧文归档、轻量历史索引与今日单篇文件，删除候选文件后用 PR head 精确 SHA squash merge。这样正式 main 仍只有一个发布 commit，历史三文件事务由 GitHub 完成，泛读生成任务不直接移动 main ref 或连续写三个正式文件。若 main 在生成/合并期间前进，保留 release 分支并停止，不 force push、不用旧 base 强并。 Runner 校验完成后，最终分支提交使用 `[skip ci]`，避免自身推送再触发一次 `pull_request synchronize`。squash merge 必须显式设置不含跳过标记的 commit_title 与 commit_message，确保正式 main 的 Pages 部署照常触发。普通候选提交不加跳过标记，仍正常校验；保留已 merged/closed 的幂等退出作为兼容保护。若以后启用强制 PR 状态检查，须重新评估此策略，不得绕过分支保护。
 
 ### I. 课程规则写对了，但实际 JSON Schema 仍写错
 发生过：`2026-09-16` 18:00 晚课内容本身正确，但 3 道 choice 漏写 `answer_index`，导致网页把正确答案判成红色；同一份课还一度把 `review.steps` 写成 `review.items`，self_check 前端也曾不显示。
@@ -132,8 +132,8 @@
 
 ### K. 失败自动补偿与故障台账（2026-09-27）
 
-- 正常 AM/PM：ChatGPT 写唯一 lesson 并打开授权 release PR；GitHub Runner 从最新 main 自动生成 index、运行权威校验并按最终 head SHA squash merge，使 lesson + index 以一个正式 main commit 原子进入。由于该 merge 使用 `GITHUB_TOKEN`，lesson release job 随后必须显式 `workflow_dispatch` 同一个 `sync-daily-vocab.yml` 的 main 运行，不能假设普通 push 会递归触发。该 Sync 完成完整回归、同步、推送后重新读取远端 main，再运行一次回归确认；只有通过才报告同步成功。雅加达 08:12、18:12 各保留一次兜底定时触发（UTC 01:12、11:12），先只读确认课程、index、runtime、水位、新词退出与回归结果；全部健康即直接结束，不运行 builder、不提交、不部署；仅异常才进入已有安全重算。GitHub cron 无法基于前次成功动态取消事件，故健康时仍会启动一次轻量任务，但不进行修复工作；可能有平台延迟。
-- 两个现有 writer 均采用最新 main 重算与有限重试；不使用 stale rebase、不强推、不重复生成课程、不制造空提交。定时补偿仅能恢复已经正确提交且 index 标记完成的课程；ChatGPT 在提交前失败时，GitHub 无法凭空生成未保存的课程。
+- 正常 AM/PM：课程生成任务写唯一 lesson 并打开授权 release PR；GitHub Runner 从最新 main 自动生成 index、运行权威校验并按最终 head SHA squash merge，使 lesson + index 以一个正式 main commit 原子进入。由于该 merge 使用 `GITHUB_TOKEN`，lesson release job 随后必须显式 `workflow_dispatch` 同一个 `sync-daily-vocab.yml` 的 main 运行，不能假设普通 push 会递归触发。该 Sync 完成完整回归、同步、推送后重新读取远端 main，再运行一次回归确认；只有通过才报告同步成功。雅加达 08:12、18:12 各保留一次兜底定时触发（UTC 01:12、11:12），先只读确认课程、index、runtime、水位、新词退出与回归结果；全部健康即直接结束，不运行 builder、不提交、不部署；仅异常才进入已有安全重算。GitHub cron 无法基于前次成功动态取消事件，故健康时仍会启动一次轻量任务，但不进行修复工作；可能有平台延迟。
+- 两个现有 writer 均采用最新 main 重算与有限重试；不使用 stale rebase、不强推、不重复生成课程、不制造空提交。定时补偿仅能恢复已经正确提交且 index 标记完成的课程；课程生成任务在提交前失败时，GitHub 无法凭空生成未保存的课程。
 - 每次 GitHub Actions 失败：捕捉初步类别、失败阶段、退出码、时间、触发 SHA、当前本地/远端 HEAD 与原始 Run URL；写入 Job Summary，使用 upload-artifact 保存 90 天，并通过 issues:write 按 workflow+category+phase 去重建立/更新 GitHub Issue。原始完整异常以 Run 日志为准，不把初步类别当成已证实根因。
 - 如果仓库 Issues 或 artifact 服务自身不可用，原始 GitHub Run 日志依然保留；Issue/附件不可用须明确说明，不得声称记录完整。
 - 定时补偿需要真正幂等：runtime 比较跨 VM 来源的派生数组时按 JSON 内容比较，而不是要求原型完全相同；runtime 与词汇画像的数据内容无变化时沿用上一次 `generated_at`，审计时间和 runtime 保持一致；即使定时检查运行，也不能因时钟变化而推送三份派生 JSON、触发无意义 Pages 部署。数据确实变化时才刷新时间戳与提交。
@@ -201,7 +201,7 @@
 ### C. 18:00
 - [ ] 10–12核心词
 - [ ] 3–4 new
-- [ ] 4–5 review
+- [ ] 4–6 review（默认 5）
 - [ ] 2–3 application
 - [ ] 三组无交集
 - [ ] mastered_hits=0
@@ -323,7 +323,7 @@
 - **做法**：`runtime.recurrence_pool`（[word, priority, cn]，最多 500，review_pool 之外的其余 A ∩ D 词 + 剩余旧词）；`review-rotation.js` 的 `naturalRecurrence()` 按“距上次在任何课文里出现的天数”排序（未知历史按 45 天处理，同分按日期哈希轮换）；工具 `rank-natural-recurrence.js`，PM 的 `rank-review-candidates.js` 输出也含 `natural_recurrence`。
 - **不变**：不计入核心复习次数，不占 review / application 名额，不改冷却/轮换/配额，不改 A ∩ D 计数（画像依赖）；mastered 不在池里；软规则，不进校验器，发布不会因此失败。
 - **度量**：`report-learning-health.js` §3c（覆盖度）；匹配是整词精确匹配，屈折形式不会被识别，所以是下限。
-- **需要外部配合**：07:30 / 17:30 生成任务的提示词里要加入“先运行 rank-natural-recurrence.js，在阅读/对话/例句里自然带入约 6–8 个”，否则只有数据、没人使用。
+- **外部配合（2026-10-07 已完成）**：07:24 早课与 17:30 晚课的提示词已要求先运行 `rank-review-candidates.js --session am|pm`，其输出的 `natural_recurrence` 已排除冷却中的词，生成时在阅读/对话/例句里自然带入（晚课约 6–8 个）。
 - 测试：`test-review-rotation.js`（H1–H3）、`test-handoff-drill.js`（A3）、`test-report-learning-health.js`（recurrenceCoverage）。
 
 ## 12. 2026-10-08 泛读复现学过的词，改由 Claude 生成
@@ -352,3 +352,10 @@
 - **不变**：新词/复习公式、mastered 判定、课程合同、AM/PM 题型与数量；`exposure_ledger` 缺失或日期早于生效日时行为与旧版完全一致。
 - **曾考虑但未做**：单独的“快速回顾”栏。§11 的自然复现已经承担“让积压词先露个面”的作用，再加一栏会改动课程合同与前端，收益不大。
 - 测试：`test-review-rotation.js` L1–L9（含 nggak heran 案例、无死锁、旧行为不变、AM 排序）。
+
+## 14. 2026-10-07 规则清理（不改变学习规则）
+
+- **教学审稿要求集中到 `docs/LESSON-QUALITY.md`**：Day 43–45 点评原先分别粘贴在早课、晚课两份提示词里，现在合并为一份清单，两份提示词只引用它。以后新增点评只改这一个文件，不要再往提示词里追加“补充”段落。
+- **校验器单一实现**：`validate-lesson-candidate.js` 原有的核心复习硬规则（`PM_SAME_DAY_REVIEW_REPEAT`、`AM_PREVIOUS_PM_REVIEW_REPEAT`、`PM_REVIEW_COOLDOWN`、`REVIEW_OVEREXPOSURE`）移到 `review-rotation.js` 的 `checkCore()`，语义保持只算核心复习、不受曝光账本影响（它们是不看替代数量的硬错误）。迁移前后用 09-29 至 10-07 的 18 节真实课程（有无曝光账本各一次）逐一比对，错误输出完全一致。
+- **泛读计入连续出现（只用于排序）**：`rank-review-candidates.js` 把最近 7 天 12:00 泛读正文与对话当作被动出现，用于“连续 3 天”判断；同日泛读只对晚课生效。校验器不读泛读，不会因此卡发布。测试 L10。
+- 规则文件 `review_rotation.core_only` 改为 false 并附说明；检查清单晚课复习数改为 4–6；早课开始时间按实际定时任务写为约 07:24；各文档中把“ChatGPT 课程任务”改为“课程生成任务”（历史事故记录保留原文）。
