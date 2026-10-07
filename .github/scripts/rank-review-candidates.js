@@ -3,7 +3,7 @@
 /** Read-only: deterministic review/application candidate ranking for the PM generator. Writes nothing. */
 const fs=require('fs'),path=require('path');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
-const {rank}=require('./review-rotation');
+const {rank,naturalRecurrence}=require('./review-rotation');
 /** All completed lessons before `date`, used only for the stale-word bonus (never for eligibility). */
 function readLongHistory(index,date,read){
  const out=[];
@@ -24,8 +24,11 @@ function main(argv){
  const base={date:a.date,runtime,rotation:rules.review_rotation,reviewHistory:history,reviewCount:Number(a.count)||5,amVocab:names(am.vocab),amReview:names(am.review_vocab)};
  const longHistory=readLongHistory(index,a.date,read);
  const out=rank({...base,longHistory});
+ // Pending-review words to weave into reading / dialogue / examples (not core review, not application). Excludes today's core picks.
+ out.natural_recurrence=naturalRecurrence({date:a.date,runtime,longHistory,count:12,
+  exclude:[...out.recommended_review,...out.application_candidates.slice(0,3).map(x=>x.word),...base.amVocab,...base.amReview]});
  if(a.compare==='1'){const old=rank(base);out.compare_without_stale_bonus={recommended_review:old.recommended_review,only_new:out.recommended_review.filter(w=>!old.recommended_review.includes(w)),only_old:old.recommended_review.filter(w=>!out.recommended_review.includes(w))}}
  return out;
 }
 if(require.main===module){try{console.log(JSON.stringify(main(process.argv.slice(2)),null,2))}catch(e){console.error(JSON.stringify({ok:false,error:e.message}));process.exitCode=2}}
-module.exports={main};
+module.exports={main,readLongHistory};

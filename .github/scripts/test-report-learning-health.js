@@ -1,7 +1,7 @@
 'use strict';
 /** Unit tests for the pure functions of report-learning-health.js (read-only report; fixtures are tiny and synthetic). */
 const assert=require('node:assert/strict');
-const {runway,oralDiagnosis,oralRunway,oralUsage,reviewGap,commitStats,alerts,buildReport,format,ALERT}=require('./report-learning-health');
+const {runway,oralDiagnosis,oralRunway,oralUsage,recurrenceCoverage,reviewGap,commitStats,alerts,buildReport,format,ALERT}=require('./report-learning-health');
 let n=0;const t=(name,fn)=>{try{fn();n++}catch(e){e.message=name+': '+e.message;throw e}};
 const W=(word,status='active')=>[word.toLowerCase(),{word,status}];
 const runtime=(o={})=>({handoff:{phase:'primary',primary_remaining:212,secondary_available:340,...(o.handoff||{})},
@@ -41,12 +41,20 @@ t('commitStats: classifies machine vs human commits',()=>{
  assert.deepEqual(c,{total:7,machine_runtime_sync:3,lesson:2,reading:1,other:1,machine_share:0.43});
  assert.deepEqual(commitStats(undefined),{total:0,machine_runtime_sync:0,lesson:0,reading:0,other:0,machine_share:0});
 });
-t('alerts: thresholds trigger and stay quiet when healthy',()=>{
- const healthy={runway:{phase:'primary',est_days_until_dont_exhausted:16,est_days_until_transition:40},oral_runway:{est_days:11},review_gap:{buckets:{'31d+':10}}};
+t('alerts: thresholds trigger and stay quiet when healthy; stale-word count is NOT an alert (review is a later cycle)',()=>{
+ const healthy={runway:{phase:'primary',est_days_until_dont_exhausted:16,est_days_until_transition:40,est_days_until_all_new_exhausted:41},oral_runway:{est_days:11},review_gap:{buckets:{'31d+':999}}};
  assert.deepEqual(alerts(healthy),[]);
- const bad={runway:{phase:'primary',est_days_until_dont_exhausted:3,est_days_until_transition:15},oral_runway:{est_days:2},review_gap:{buckets:{'31d+':ALERT.stale_31d+1}}};
+ const bad={runway:{phase:'primary',est_days_until_dont_exhausted:3,est_days_until_transition:15,est_days_until_all_new_exhausted:10},oral_runway:{est_days:2},review_gap:{buckets:{'31d+':0}}};
  assert.equal(alerts(bad).length,4);
- assert.deepEqual(alerts({...healthy,runway:{phase:'secondary',est_days_until_dont_exhausted:16,est_days_until_transition:0}}),[]);
+ assert.ok(alerts(bad).some(x=>/all new words run out in ~10 days/.test(x)));
+ assert.deepEqual(alerts({...healthy,runway:{phase:'secondary',est_days_until_dont_exhausted:16,est_days_until_transition:0,est_days_until_all_new_exhausted:30}}),[]);
+});
+t('runway: remaining new words across both libraries, secondary phase counts only the second library',()=>{
+ const p=runway({runtime:runtime(),lessons:[],today:'2026-10-07'});
+ assert.equal(p.new_words_left_total,212+340);
+ assert.equal(p.est_days_until_all_new_exhausted,+(552/13.5).toFixed(1));
+ const s=runway({runtime:runtime({handoff:{phase:'secondary',primary_remaining:0,secondary_available:270}}),lessons:[],today:'2026-10-07'});
+ assert.equal(s.new_words_left_total,270);
 });
 t('oralUsage: counts oral new words per lesson, ignores review/application and old lessons, alerts only above the guideline',()=>{
  const o=(w,oral)=>({word:w,source_group:'new',is_new:true,is_oral_new:oral});
@@ -64,6 +72,13 @@ t('oralUsage: counts oral new words per lesson, ignores review/application and o
  r.oral_usage=oralUsage({lessons:[lesson('2026-10-07','pm',{vocab:[o('x',true),o('y',true),o('z',false)]})],today:'2026-10-07'});
  assert.deepEqual(alerts(r),[],'2 oral in PM is within the alert threshold');
  assert.deepEqual(oralUsage({lessons:[],today:'2026-10-07'}).rows,[]);
+});
+t('recurrenceCoverage: share of the backlog seen in lesson text in the last 14 days',()=>{
+ const rt={review_pool:[['aa',1,0,'','','x','','']],recurrence_pool:[['bb',2,'y'],['cc',2,'z'],['dd',2,'w']]};
+ const lessons=[lesson('2026-08-20','am',{vocab:[{word:'aa'},{word:'bb'},{word:'cc'},{word:'dd'}]}),lesson('2026-10-05','pm',{reading:{text:'Ada aa dan bb.'}})];
+ const c=recurrenceCoverage({runtime:rt,lessons,today:'2026-10-07'});
+ assert.equal(c.pool_size,4);assert.equal(c.seen_last_14d,2);assert.equal(c.seen_share,0.5);assert.equal(c.not_seen_30d_or_unknown,2);
+ assert.equal(recurrenceCoverage({runtime:{},lessons:[],today:'2026-10-07'}).pool_size,0);
 });
 t('buildReport/format never throw on empty inputs',()=>{
  const r=buildReport({today:'2026-10-07',runtime:{},lessons:[],oral:[],primary:[],secondary:[],taught:new Set(),weak:new Map(),commitSubjects:[]});

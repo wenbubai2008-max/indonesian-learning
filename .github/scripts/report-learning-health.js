@@ -8,12 +8,13 @@
  * Usage: node .github/scripts/report-learning-health.js [--json] [--date YYYY-MM-DD]
  */
 const fs=require('fs'),vm=require('vm'),path=require('path');
+const {naturalRecurrence}=require('./review-rotation');
 const key=s=>String(s==null?'':s).trim().toLowerCase();
 const DAY=86400000;
 // contract per-day consumption (AM 10 new; PM 3-4 new, default 2 fuzzy + 1-2 dont)
 const PER_DAY={am_new:10,pm_new:3.5,am_dont:10,pm_dont:1.5,oral:3}; // oral: AM 2 + PM 1 preferred oral new words
 // Alert thresholds (report only; they never block anything).
-const ALERT={dont_days:5,oral_days:7,transition_days:20,stale_31d:50};
+const ALERT={dont_days:5,oral_days:7,transition_days:20,all_new_days:21};
 // Soft contract: ~2 oral new words at 08:00, ~1 at 18:00 (rules am_contract/pm_contract). Alert only when clearly above.
 const ORAL_GUIDE={am_max:3,pm_max:2,days:7};
 
@@ -46,6 +47,9 @@ function runway({runtime,lessons,today}){
   est_days_until_dont_exhausted:+(dont/perDayDont).toFixed(1),
   est_days_until_transition:primary>=10?+((primary-9)/perDay).toFixed(1):0,
   est_days_until_primary_exhausted:+(primary/perDay).toFixed(1),
+  // every new word left in the libraries the lessons can still draw from (primary + secondary while not yet committed)
+  new_words_left_total:(h.phase==='secondary'?0:primary)+Number(h.secondary_available||0),
+  est_days_until_all_new_exhausted:+((((h.phase==='secondary'?0:primary)+Number(h.secondary_available||0)))/perDay).toFixed(1),
   assumptions:'AM 10 new (all dont if available) + PM 3.5 new (1.5 dont); estimate only, ignores cross-day dedup'
  };
 }
@@ -83,6 +87,14 @@ function oralUsage({lessons,today}){
  return {rows,oral_total:tot,new_total:newTot,oral_share:newTot?+(tot/newTot).toFixed(2):0,guideline:'AM ~2, PM ~1 (about 20% of new words)'};
 }
 
+/** How much of the pending-review backlog actually shows up in lesson text (reading / dialogue / examples / core lists). */
+function recurrenceCoverage({runtime,lessons,today}){
+ const n=naturalRecurrence({date:today,runtime,longHistory:lessons,count:1e9});
+ const c=n.candidates,seen14=c.filter(x=>x.appearances_14d>0).length,stale30=c.filter(x=>x.days_since_any_appearance==null||x.days_since_any_appearance>30).length;
+ return {pool_size:n.pool_size,seen_last_14d:seen14,seen_share:n.pool_size?+(seen14/n.pool_size).toFixed(2):0,not_seen_30d_or_unknown:stale30,
+  note:'text match is exact-word (inflected forms are not matched); informational only, the backlog is meant to be reviewed in a later cycle'};
+}
+
 function alerts(r){
  const a=[],rw=r.runway,o=r.oral_runway,g=r.review_gap;
  if(rw.est_days_until_dont_exhausted<ALERT.dont_days)a.push(`dont pool runs out in ~${rw.est_days_until_dont_exhausted} days (< ${ALERT.dont_days})`);
@@ -92,7 +104,7 @@ function alerts(r){
   const max=x.session==='am'?ORAL_GUIDE.am_max:ORAL_GUIDE.pm_max;
   if(x.oral_new>max)a.push(`${x.date} ${x.session.toUpperCase()}: ${x.oral_new} oral new words of ${x.new_words} (guideline ~${x.session==='am'?2:1}, alert > ${max}): oral candidates will run out sooner`);
  }
- if(g.buckets['31d+']>ALERT.stale_31d)a.push(`${g.buckets['31d+']} active words unseen for 31+ days (> ${ALERT.stale_31d})`);
+ if(rw.est_days_until_all_new_exhausted<ALERT.all_new_days)a.push(`all new words run out in ~${rw.est_days_until_all_new_exhausted} days: the AM (exactly 10) / PM (3-4) new-word contracts cannot be met after that; the review-cycle lesson mode must be designed before then`);
  return a;
 }
 
@@ -142,6 +154,7 @@ function buildReport(input){
   oral_runway:oralRunway(input.runtime),
   oral_usage:oralUsage(input),
   review_gap:reviewGap(input),
+  recurrence:recurrenceCoverage(input),
   commits:commitStats(input.commitSubjects),
   alerts:[]
  };
@@ -157,6 +170,7 @@ function format(r){
   `- new_pool_dont=${a.new_pool_dont} new_pool_fuzzy=${a.new_pool_fuzzy}`,
   `- observed new words/day (14d)=${a.observed_new_per_day_14d}`,
   `- est. days until dont exhausted=${a.est_days_until_dont_exhausted}, until transition (<10 primary left)=${a.est_days_until_transition}, until primary exhausted=${a.est_days_until_primary_exhausted}`,
+  `- all remaining new words (both libraries)=${a.new_words_left_total}, est. days until ALL new words are used up=${a.est_days_until_all_new_exhausted}`,
   `- (${a.assumptions})`,'');
  const o=r.oral;
  L.push('## 2. Oral candidate pool',...Object.entries(o.buckets).map(([k,v])=>`- ${k}=${v}`));
@@ -168,6 +182,8 @@ function format(r){
  L.push('## 3. Review gap (active + taught words, days since last lesson exposure)',`- active_taught=${g.active_taught}`,
   ...Object.entries(g.buckets).map(([k,v])=>`- ${k}=${v}`),
   `- stalest: ${g.stalest.map(x=>x[0]+'('+x[1]+'d)').join(', ')||'-'}`,`- (${g.note})`,'');
+ const rc=r.recurrence;
+ L.push('## 3c. Natural recurrence of pending-review words (last 14 days)',`- pool=${rc.pool_size} words; seen in lesson text/core in the last 14 days: ${rc.seen_last_14d} (${Math.round(rc.seen_share*100)}%); not seen for 30+ days or unknown: ${rc.not_seen_30d_or_unknown}`,`- (${rc.note})`,'');
  const ou=r.oral_usage;
  L.push('## 3b. Oral new words per lesson (last '+ORAL_GUIDE.days+' days)',ou.rows.length?'- '+ou.rows.map(x=>x.date.slice(5)+' '+x.session+': '+x.oral_new+'/'+x.new_words).join(' | '):'- no lessons',`- total ${ou.oral_total}/${ou.new_total} new words (${Math.round(ou.oral_share*100)}%), guideline ${ou.guideline}`,'');
  const c=r.commits;
@@ -207,7 +223,7 @@ function load(root,today){
  };
 }
 
-module.exports={buildReport,format,runway,oralDiagnosis,oralRunway,oralUsage,ORAL_GUIDE,reviewGap,commitStats,alerts,lessonWords,ALERT};
+module.exports={buildReport,format,runway,recurrenceCoverage,oralDiagnosis,oralRunway,oralUsage,ORAL_GUIDE,reviewGap,commitStats,alerts,lessonWords,ALERT};
 
 if(require.main===module){
  try{

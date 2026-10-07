@@ -168,4 +168,44 @@ function rank({date,runtime,rotation,reviewHistory,longHistory=null,reviewCount=
   application_candidates:apps,notes,ranking_top:items.filter(x=>!x.blocked).slice(0,25)};
 }
 
-module.exports={config,analyze,checkPm,rank,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};
+/** All Indonesian text of a lesson (reading, sentences, dialogue, example sentences) plus the core word lists. Lower-cased. */
+function lessonText(L){
+ const t=[];
+ if(L&&L.reading&&L.reading.text)t.push(L.reading.text);
+ for(const x of (L&&L.sentences)||[])t.push(typeof x==='string'?x:(x&&(x.id||x.text||x.indo))||'');
+ if(L&&L.dialogue&&Array.isArray(L.dialogue.lines))for(const l of L.dialogue.lines)t.push((l&&l.id)||'');
+ for(const v of (L&&L.vocab)||[])t.push((v&&(v.example||''))+' '+word(v));
+ for(const v of (L&&L.review_vocab)||[])t.push(word(v));
+ return t.join(' \n ').toLowerCase();
+}
+const reEsc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+const hashStr=x=>{let h=0;for(const c of x)h=(h*31+c.charCodeAt(0))>>>0;return h};
+
+/**
+ * Natural recurrence: pending-review words (A ∩ D, from runtime.review_pool + runtime.recurrence_pool) ranked by how long
+ * ago they last appeared ANYWHERE in a lesson (text or core). Used to weave them into reading / dialogue / examples.
+ * Never counts as core review, never overrides eligibility; mastered words are not in these pools.
+ * Unknown history is treated as 45 days so a matching miss (inflection) cannot lock a word at the top forever.
+ */
+function naturalRecurrence({date,runtime,longHistory,exclude=[],count=12}){
+ const at=Date.parse(date+'T00:00:00Z'),ex=new Set(exclude.map(norm));
+ const rows=new Map();
+ for(const v of (runtime.review_pool||[]))rows.set(word(v),{word:word(v),priority:Number(v[1]),cn:String(v[5]||'')});
+ for(const v of (runtime.recurrence_pool||[]))if(!rows.has(word(v)))rows.set(word(v),{word:word(v),priority:Number(v[1]),cn:String(v[2]||'')});
+ const res=[...rows.values()].filter(r=>r.word&&!ex.has(r.word)).map(r=>[r,new RegExp('(^|[^a-z])'+reEsc(r.word)+'([^a-z]|$)')]);
+ const last=new Map(),n14=new Map();
+ const lessons=(longHistory||[]).filter(h=>h&&h.date<date&&['am','pm'].includes(h.session)).sort((a,b)=>(a.date+a.session).localeCompare(b.date+b.session));
+ for(const h of lessons){
+  const text=lessonText(h),age=Math.round((at-Date.parse(h.date+'T00:00:00Z'))/DAY);
+  for(const [r,re] of res)if(re.test(text)){last.set(r.word,age);if(age<=14)n14.set(r.word,(n14.get(r.word)||0)+1)}
+  // later lessons overwrite earlier ones, so `last` ends up as the most recent appearance
+ }
+ const out=res.map(([r])=>({word:r.word,cn:r.cn,priority:r.priority,legacy:r.priority===5,days_since_any_appearance:last.has(r.word)?last.get(r.word):null,appearances_14d:n14.get(r.word)||0}))
+  .map(x=>({...x,_d:x.days_since_any_appearance==null?45:x.days_since_any_appearance}))
+  .sort((a,b)=>b._d-a._d||a.priority-b.priority||(hashStr(a.word+date)-hashStr(b.word+date))||a.word.localeCompare(b.word))
+  .slice(0,count).map(({_d,...x})=>x);
+ return {date,pool_size:rows.size,count:out.length,candidates:out,
+  guidance:'Weave these into reading / dialogue / example sentences (about 6-8 per lesson, earlier entries first). They do not count as core review or application and never replace them.'};
+}
+
+module.exports={config,analyze,checkPm,rank,naturalRecurrence,lessonText,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};
