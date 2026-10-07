@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261006-mobile-jkn-seijang","date":"2026-10-06","title":"Daftar dari Rumah, Waktu Tunggu di Puskesmas Jadi Lebih Singkat","title_cn":"在家预约，去社区卫生中心看病不用久等","path":"data/extensive-reading-history/2026-10-06.js"},
 {"id":"er-20261005-pasar-murah-pontianak","date":"2026-10-05","title":"Pasar Murah Hadir di Tengah Car Free Day Pontianak","title_cn":"Pontianak 无车日里的平价市场：运动后顺便买菜","path":"data/extensive-reading-history/2026-10-05.js"},
 {"id":"er-20261004-air-bersih-pagak","date":"2026-10-04","title":"Air Bersih untuk Warga Pagak, Sumur Bor Masih Dikaji","title_cn":"Pagak 居民获得清洁用水援助，钻井方案仍在研究","path":"data/extensive-reading-history/2026-10-04.js"},
 {"id":"er-20261003-belanja-pasar","date":"2026-10-03","title":"Setelah Gajian, Pegawai Diajak Belanja di Pasar","title_cn":"发薪后去传统市场：Gunungkidul 的新安排","path":"data/extensive-reading-history/2026-10-03.js"},
