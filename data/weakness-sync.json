@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T03:55:11.986Z",
+  "updated_at": "2026-10-07T11:49:48.672Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1664,9 +1664,11 @@
     "kelompok": {
       "word": "kelompok",
       "status": "active",
-      "updated_at": "2026-09-15T04:14:12.204Z",
+      "updated_at": "2026-10-07T11:49:38.181Z",
       "display": "kelompok",
-      "cn": "团体",
+      "cn": "组；小组；群体",
+      "root": "kelompok",
+      "root_cn": "组；群",
       "reasons": [
         "memory_dont"
       ],
