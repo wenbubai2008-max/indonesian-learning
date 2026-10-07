@@ -1,0 +1,244 @@
+{
+ "date": "2026-10-07",
+ "session": "am",
+ "time": "08:00",
+ "day": 47,
+ "level": "A2+ → B1",
+ "duration_minutes": 30,
+ "title": "08:00 早课｜Truk Mogok di Putaran Balik",
+ "new_words": [
+  "mogok",
+  "putaran",
+  "kecelakaan",
+  "tabrak",
+  "muat",
+  "memindahkan",
+  "invoice",
+  "praktis",
+  "berikutnya",
+  "hafal"
+ ],
+ "vocab": [
+  {
+   "word": "mogok",
+   "display": "mogok",
+   "audio_text": "mogok",
+   "cn": "抛锚；（机器、车辆）发动不了；罢工",
+   "en": "to break down; to go on strike",
+   "root": "mogok",
+   "root_cn": "抛锚；罢工",
+   "formation": "动词/形容词。车辆或机器突然不能运转：mobil mogok、mesin mogok；也指工人集体不工作：mogok kerja（罢工）。常见搭配：mogok di jalan（半路抛锚）、motor mogok。",
+   "example": "Motornya mogok pas hujan deras, jadi aku terpaksa mendorongnya sampai bengkel.",
+   "example_cn": "摩托车在下大雨的时候抛锚了，我只好一路推到修车厂。",
+   "synonym_note": "mogok = 车或机器在使用中突然不动了（也指罢工）；rusak = 坏了，范围更广，不一定当场停下；macet = 堵车，或东西卡住不动（lalu lintas macet）；mati = 熄火、断电，比如 mesinnya mati。",
+   "is_oral_new": false
+  },
+  {
+   "word": "putaran",
+   "display": "putaran",
+   "audio_text": "putaran",
+   "cn": "掉头处；转弯处；转一圈",
+   "en": "U-turn spot; a turn; a rotation",
+   "root": "putar",
+   "root_cn": "转；旋转",
+   "formation": "putar + -an → putaran，名词：转动、转一圈（satu putaran），也指路上可以掉头的地方，常说 putaran balik（掉头处）。相关词：memutar（转动）、berputar（打转）、putar balik（掉头）。",
+   "example": "Mobil kami harus lewat putaran balik di depan pasar dulu, baru bisa ke arah rumah.",
+   "example_cn": "我们的车得先在市场前面的掉头处转过去，才能往家的方向走。",
+   "synonym_note": "putaran balik = 路上专供掉头的开口；bundaran = 环岛（路中间的圆形转盘），说“环岛”时更常用；tikungan = 弯道；putaran 也可指“一圈、一轮”，如 putaran pertama（第一轮）。",
+   "is_oral_new": false
+  },
+  {
+   "word": "kecelakaan",
+   "display": "kecelakaan",
+   "audio_text": "kecelakaan",
+   "cn": "事故；意外",
+   "en": "accident",
+   "root": "celaka",
+   "root_cn": "遭殃；出事",
+   "formation": "ke- + celaka + -an → kecelakaan，指发生了伤害或损失的意外。常见搭配：kecelakaan lalu lintas（交通事故）、kecelakaan kerja（工伤）、mengalami kecelakaan（遇到事故）、terjadi kecelakaan（发生事故）。",
+   "example": "Kemarin ada kecelakaan di tol, makanya jalannya macet total.",
+   "example_cn": "昨天高速上出了事故，所以路堵得一塌糊涂。",
+   "synonym_note": "kecelakaan = 带来伤害或损失的意外，常指交通和工作场合；musibah = 灾祸，较书面；insiden = 事件，中性；celaka 单独用是“糟了、倒霉”，如 Celaka, dompetku hilang!。",
+   "is_oral_new": false
+  },
+  {
+   "word": "tabrak",
+   "display": "tabrak",
+   "audio_text": "tabrak",
+   "cn": "撞；撞上",
+   "en": "to crash into; to hit",
+   "root": "tabrak",
+   "root_cn": "撞",
+   "formation": "meN- + tabrak → menabrak（t 脱落），一方撞上另一方；被动 ditabrak（被撞）；名词 tabrakan = 相撞。常见搭配：menabrak tembok、ditabrak motor、tabrak lari（肇事逃逸）。",
+   "example": "Hati-hati waktu mundur, jangan sampai menabrak pagar rumah orang.",
+   "example_cn": "倒车的时候小心，别撞到别人家的围墙。",
+   "synonym_note": "menabrak = 撞上（主语撞向对象）；bertabrakan / tabrakan = 双方互撞；menyenggol = 擦碰、轻轻碰到；membentur = 撞在物体上（kepalanya membentur tembok）。",
+   "is_oral_new": false
+  },
+  {
+   "word": "muat",
+   "display": "muat",
+   "audio_text": "muat",
+   "cn": "装得下；容纳；装载",
+   "en": "to fit; to hold; to load",
+   "root": "muat",
+   "root_cn": "容纳；装载",
+   "formation": "可直接作动词：Koper ini muat banyak baju（装得下）；meN- + muat → memuat（装载；刊登）；被动 dimuat（被装载；被刊登）；名词 muatan（载重、货物）。常见搭配：nggak muat（装不下）、memuat barang。",
+   "example": "Bagasi mobil ini cukup besar, koper dan kardus itu pasti muat.",
+   "example_cn": "这辆车的后备箱够大，那个行李箱和纸箱肯定装得下。",
+   "synonym_note": "muat = 空间够不够放得下；cukup = 数量足够；penuh = 已经满了；menampung = 容纳（人、水、意见等），更正式；terisi = 被装了东西，不强调放不放得下。",
+   "is_oral_new": false
+  },
+  {
+   "word": "memindahkan",
+   "display": "memindahkan",
+   "audio_text": "memindahkan",
+   "cn": "移动；搬到别处；转移",
+   "en": "to move something; to transfer",
+   "root": "pindah",
+   "root_cn": "搬；移动",
+   "formation": "meN- + pindah + -kan → memindahkan（p 脱落，mem- + indah）：把某物从一处移到另一处。相关词：pindah（搬家；移动）、berpindah（自己移动）、perpindahan（转移；迁移）。常见搭配：memindahkan barang / meja / file。",
+   "example": "Kami memindahkan meja kerja ke dekat jendela supaya ruangannya lebih sejuk.",
+   "example_cn": "我们把办公桌移到窗边，这样房间会凉快一点。",
+   "synonym_note": "memindahkan = 把东西移到别处（需要宾语）；berpindah = 自己移动或换地方（不及物）；menggeser = 只挪一点点；mengangkut = 运送、搬运，距离较远或东西较重；pindah rumah = 搬家。",
+   "is_oral_new": false
+  },
+  {
+   "word": "invoice",
+   "display": "invoice",
+   "audio_text": "invoice",
+   "cn": "发票；账单（商业往来）",
+   "en": "invoice; bill for payment",
+   "root": "invoice",
+   "root_cn": "发票；账单（英语借词）",
+   "formation": "来自英语的借词，办公室和生意里很常用。常见搭配：mengirim invoice（发送账单）、minta invoice、invoice belum dibayar、nomor invoice。发音近似“因沃伊斯”，印尼语里常写作 invoice 或 invois。",
+   "example": "Bisa tolong kirim invoice-nya ke email saya? Biar bagian keuangan bisa langsung memprosesnya.",
+   "example_cn": "能不能请把账单发到我的邮箱？这样财务部门可以马上处理。",
+   "synonym_note": "invoice = 卖方发给买方、要求付款的单据；faktur = 销售发票，更正式、常和税务有关；kwitansi = 付款之后给的收据；struk = 超市、餐馆的小票；tagihan = 泛指要付的账。",
+   "is_oral_new": false
+  },
+  {
+   "word": "praktis",
+   "display": "praktis",
+   "audio_text": "praktis",
+   "cn": "方便；省事；实用",
+   "en": "practical; convenient",
+   "root": "praktis",
+   "root_cn": "方便；实用",
+   "formation": "形容词，说一种做法或东西用起来省事。常见搭配：lebih praktis（更方便）、cara yang praktis、praktis banget（口语）。注意：名词 praktik = 实践、实习，不要和 praktis 混淆；praktis 作副词时还有“基本上、几乎”的意思（praktis tidak ada）。",
+   "example": "Bawa tas kecil lebih praktis daripada koper kalau cuma menginap semalam.",
+   "example_cn": "只住一晚的话，带小包比带行李箱方便。",
+   "synonym_note": "praktis = 省事、用起来方便；mudah = 容易，指难度低；nyaman = 舒服；efisien = 有效率，较书面；ringkas = 简洁、小巧，不强调方便。",
+   "is_oral_new": false
+  },
+  {
+   "word": "berikutnya",
+   "display": "berikutnya",
+   "audio_text": "berikutnya",
+   "cn": "下一个；接下来的",
+   "en": "next; following",
+   "root": "ikut",
+   "root_cn": "跟随；参加",
+   "formation": "ber- + ikut → berikut（接下来的）+ -nya → berikutnya，指按顺序紧接着的下一个。常见搭配：pertanyaan berikutnya、giliran berikutnya、minggu berikutnya（接下来那一周）、yang berikutnya。",
+   "example": "Terima kasih atas pertanyaannya, pertanyaan berikutnya silakan dari Bapak yang di belakang.",
+   "example_cn": "谢谢这个提问，下一个问题请后面那位先生提。",
+   "synonym_note": "berikutnya = 顺序上紧接着的下一个；selanjutnya = 接下来、之后，意思很近，常用来连接话题；minggu depan = 相对现在的“下周”，而 minggu berikutnya 是相对某个已提到的时间点的“再下一周”；kemudian = 然后。",
+   "is_oral_new": false
+  },
+  {
+   "word": "hafal",
+   "display": "hafal",
+   "audio_text": "hafal",
+   "cn": "记住；背得出；很熟悉",
+   "en": "to know by heart; to be familiar with",
+   "root": "hafal",
+   "root_cn": "背诵；熟记",
+   "formation": "动词/形容词：能把内容记在脑子里说出来或认得清楚。常见搭配：hafal nomor telepon、hafal lagu、hafal jalan（熟悉路）。meN- + hafal → menghafal（去背）；名词 hafalan（背诵的内容）。",
+   "example": "Aku nggak hafal nomor teleponnya, semuanya tersimpan di HP.",
+   "example_cn": "我记不住他的电话号码，全都存在手机里。",
+   "synonym_note": "hafal = 能背出来、能不看资料说出来；ingat = 记得，不一定能背；tahu = 知道；paham = 理解；mengenal 是“认识、了解（人或事物）”，不是背内容。",
+   "is_oral_new": false
+  }
+ ],
+ "review_vocab": [
+  "nyaris",
+  "ngabarin",
+  "kesepakatan",
+  "upaya",
+  "ngurusin"
+ ],
+ "sentences": [
+  {
+   "text": "Mobil bak sewaan Dimas mogok di putaran balik dekat kosnya, jadi dia minta temannya datang membantu.",
+   "cn": "Dimas 租的小货车在他住处附近的掉头处抛锚了，所以他请朋友过来帮忙。"
+  },
+  {
+   "text": "Mobil kecil temannya cuma muat kardus dan koper, jadi mereka memindahkan barang-barang itu dulu.",
+   "cn": "朋友的小车只装得下纸箱和行李箱，所以他们先把这些东西搬过去。"
+  },
+  {
+   "text": "Lemari besarnya diangkut di perjalanan berikutnya, setelah mobil bak itu selesai diperbaiki.",
+   "cn": "他的大衣柜在下一趟才运，等那辆小货车修好之后。"
+  },
+  {
+   "text": "Dimas meminta invoice dari tempat rental karena kantornya akan mengganti biaya sewa mobil.",
+   "cn": "Dimas 向租车行要了账单，因为公司会报销租车的费用。"
+  },
+  {
+   "text": "Untung dia hafal jalan tikus di sekitar kos, jadi lewat situ lebih praktis daripada terjebak macet di jalan besar.",
+   "cn": "幸好他对住处附近的小路很熟，走那边比困在大马路的堵车里方便多了。"
+  }
+ ],
+ "reading": {
+  "text": "Pagi ini truk Pak Anto mogok tepat di putaran balik dekat pasar. Truk itu baru memuat empat puluh dus pesanan toko. Sebuah motor nyaris menabrak bagian belakangnya. Untung tidak terjadi kecelakaan. Warga membantu Pak Anto memindahkan truk ke pinggir jalan. Lalu ia menelepon bosnya. \"Bu Wati, truknya mogok. Nanti saya ngabarin lagi ya.\" Bu Wati menjawab, \"Nggak apa-apa, yang penting Bapak selamat. Kirim saja foto invoice-nya ke pelanggan, biar mereka tahu pesanannya terlambat.\" Karena hafal bengkel-bengkel di daerah itu, Pak Anto naik ojek ke bengkel langganannya. Itu lebih praktis daripada menunggu derek. Pengiriman berikutnya, ia akan memeriksa mesin dulu.",
+  "cn": "今天早上，Anto 先生的货车正好在市场附近的掉头处抛锚了。车上刚装了四十箱店里的订单货物。一辆摩托车差点撞上货车的车尾。幸好没有发生事故。路人帮 Anto 先生把货车推到了路边。然后他给老板打了电话。“Wati 女士，货车抛锚了。我晚点再告诉您进展哦。”Wati 女士回答：“没关系，最重要的是您平安。把账单的照片先发给客户，让他们知道订单会晚到。”因为熟悉那一带的修车厂，Anto 先生坐摩托车出租到他常去的修车厂。这比等拖车方便。下一次送货，他会先检查发动机。"
+ },
+ "quiz": [
+  {
+   "question": "【语感辨析】摩托车骑得很快，差一点就撞上了抛锚的卡车，幸好骑手反应快刹住了：Motor itu ___ menabrak truk yang mogok, untung pengendaranya cepat mengerem.",
+   "options": [
+    "langsung",
+    "pernah",
+    "nyaris",
+    "sudah"
+   ],
+   "answer_index": 2,
+   "answer": "nyaris",
+   "explain": "nyaris（复习词）= 差一点就……，后面接“没发生的事”，和“untung 刹住了”呼应。langsung menabrak 是“直接撞上了”，与“刹住了”矛盾；pernah menabrak 是“曾经撞过”，说的是过去经历，不是这次差点；sudah menabrak 是“已经撞上了”，同样与“刹住了”矛盾。"
+  },
+  {
+   "question": "【搭配辨析】后备箱太小，那个大行李箱根本放不进去：Koper sebesar itu tidak akan ___ di bagasi mobil kecil ini.",
+   "options": [
+    "muat",
+    "memuat",
+    "dimuat",
+    "termuat"
+   ],
+   "answer_index": 0,
+   "answer": "muat",
+   "explain": "muat = 空间够不够“装得下”，可以直接做动词，tidak akan muat = 装不下。memuat 是“装载”，后面要接东西（memuat koper）；dimuat 是被动，主语得是被装的东西且有人去装；termuat 是“被收录、刊登在里面”，多用于书面，如 tercantum / termuat dalam laporan。"
+  },
+  {
+   "question": "【场景应用】两辆摩托车在路口互相撞到，两位骑手都摔倒了：Dua motor itu ___ di perempatan, dan kedua pengendaranya jatuh.",
+   "options": [
+    "menabrak",
+    "bertabrakan",
+    "ditabrak",
+    "menabrakkan"
+   ],
+   "answer_index": 1,
+   "answer": "bertabrakan",
+   "explain": "ber-...-an 表示“双方互相”，bertabrakan = 相撞，正好是两辆车互撞。menabrak 是一方撞另一方，后面要有对象；ditabrak 是被撞，只强调其中一方是受害者；menabrakkan 是“把某物撞向某处”，要有宾语和地点，如 menabrakkan mobil ke tembok。"
+  }
+ ],
+ "output": {
+  "task": "讲一件最近出行或搬东西时遇到的突发小状况（你自己或朋友的事都可以）：说明发生了什么、你们当时怎么处理、后来结果怎样。用 2–3 句自然的印尼语，至少使用本课 2 个目标词（如 mogok、memindahkan、muat、praktis、hafal、berikutnya、invoice）。不要照抄课文。",
+  "reference_answer": "Minggu lalu motor temanku mogok di tengah jalan, jadi kami memindahkannya ke pinggir dulu. Untung dia hafal bengkel di dekat situ, jadi kami bisa langsung ke sana. Lain kali, dia mau memeriksa motornya sebelum berangkat.",
+  "reference_cn": "上周我朋友的摩托车在路中间抛锚了，所以我们先把它挪到路边。幸好他熟悉附近的修车厂，我们可以直接过去。下次他打算出发之前先检查一下摩托车。"
+ },
+ "review": [
+  "3秒主动提取：看中文说出 mogok、putaran、kecelakaan、tabrak、muat、memindahkan、invoice、praktis、berikutnya、hafal，再各配一个搭配（如 mobil mogok、putaran balik、kecelakaan lalu lintas、menabrak pagar、muat banyak、memindahkan barang、kirim invoice、lebih praktis、pertanyaan berikutnya、hafal nomor telepon）。",
+  "易混辨析：mogok（车子突然不动）↔ macet（堵车）↔ rusak（坏了）；menabrak（一方撞上）↔ bertabrakan（互撞）↔ menyenggol（擦碰）；invoice（要求付款）↔ kwitansi（付款后的收据）；berikutnya（顺序上的下一个）↔ minggu depan（相对现在的下周）；hafal（背得出）↔ ingat（记得）。",
+  "复习词实战：用 nyaris 说“我差点迟到”（Aku nyaris terlambat），用 ngabarin 说“我到了就告诉你”（Nanti aku ngabarin kalau sudah sampai），用 ngurusin 说“他在处理客户的 invoice”（Dia lagi ngurusin invoice pelanggan），用 kesepakatan 说“我们达成了协议”（Kami sudah membuat kesepakatan），用 upaya 说“这是我们为解决问题做的努力”（Ini upaya kami untuk menyelesaikan masalahnya）。"
+ ]
+}
