@@ -232,6 +232,12 @@
       "effective_date": "2026-10-04",
       "rule": "当天AM.review_vocab中的老词不得再占PM完整application词卡（真实新错除外），应在阅读/对话中自然复现；仅当没有其他合法application候选（review_pool内未被占用且非AM核心复习词）时才允许例外"
     },
+    "legacy_unverified_review": {
+      "enabled": true,
+      "effective_date": "2026-10-07",
+      "rule": "已正式教过但在弱项库中完全没有记录的词（画像里的“未验证”，多为 2026-08-23 至 09-12 早期课程词）不属于 A，因而此前永远进不了复习。runtime 现在把其中最久没出现的至多10个以最低优先级(5)附加在 review_pool 列表末尾；review_pool_total_full、A ∩ D 计数、画像“需要加强”数量保持不变，另有 stats.legacy_unverified_total_full / legacy_unverified_exposed。排序脚本每晚至多选其中1个作重点复习，且不得作为 application 词；它们不是 mastered，也不改变 mastered 判定。",
+      "not_changed": "新词公式 M ∩ A − D、复习公式 A ∩ D 的定义不变；弱项强化页仍只显示 A ∩ D"
+    },
     "stale_bonus": "2026-10-07起排序脚本为超过7天未在课程中出现的复习词加分（(天数-7)*0.75，封顶30，只影响排序，不改变资格、冷却或配额；真实新错+100仍然更高）；--compare 1 可对比无加分的旧排序",
     "executable_ranking": "node .github/scripts/rank-review-candidates.js --date D 输出确定性的推荐重点复习与application候选；Validator与排序脚本共用 .github/scripts/review-rotation.js，生成端必须先运行排序脚本再锁定词表"
   }

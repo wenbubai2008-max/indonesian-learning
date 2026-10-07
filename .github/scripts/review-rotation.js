@@ -138,27 +138,29 @@ function rank({date,runtime,rotation,reviewHistory,longHistory=null,reviewCount=
   const staleDays=stale.has(w)?stale.get(w):null,sb=staleBonus(staleDays);
   if(sb){score+=sb;reasons.push('stale_'+staleDays+'d(+'+sb+')')}
   const blocked=ctx.blocked(w),recent=cfg.recent?isRecent(i,cfg.recent.days)&&!i.fresh:false;
-  return {word:w,score,stale_days:staleDays,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,focus:i.focus,recent4:recent,blocked,am_core:am.has(w),reasons};
+  return {word:w,score,stale_days:staleDays,legacy:i.priority===5,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,focus:i.focus,recent4:recent,blocked,am_core:am.has(w),reasons};
  }).sort((a,b)=>b.score-a.score||a.word.localeCompare(b.word));
  const usable=items.filter(x=>!x.blocked&&(x.count<3||x.fresh));
- const pick=[];let recentUsed=0,heavyUsed=0,focusUsed=0;
+ const pick=[];let recentUsed=0,heavyUsed=0,focusUsed=0,legacyUsed=0; // legacy = taught words without a weakness record (priority 5): at most 1 per PM
  const fits=(x,ignoreFocusCap)=>{
   if(x.recent4&&cfg.recent&&recentUsed>=cfg.recent.max)return false;
   if(x.count>=3&&heavyUsed>=1)return false;
+  if(x.legacy&&legacyUsed>=1)return false;
   if(!ignoreFocusCap&&cfg.focus&&x.focus&&focusUsed>=cfg.focus.max)return false;
   return true;
  };
- const take=x=>{pick.push(x);if(x.recent4)recentUsed++;if(x.count>=3)heavyUsed++;if(x.focus)focusUsed++};
+ const take=x=>{pick.push(x);if(x.recent4)recentUsed++;if(x.count>=3)heavyUsed++;if(x.focus)focusUsed++;if(x.legacy)legacyUsed++};
  const focusMin=cfg.focus?cfg.focus.min:0;
  for(const x of usable){if(pick.length>=focusMin)break;if(x.focus&&fits(x))take(x)}
  for(const x of usable){if(pick.length>=reviewCount)break;if(!pick.includes(x)&&fits(x))take(x)}
  const notes=[];
  if(pick.length<reviewCount){ // legal fallback only: never mastered, never outside review_pool, never cooling-down words
-  for(const x of usable){if(pick.length>=reviewCount)break;if(!pick.includes(x)){take(x);notes.push('fallback_used:'+x.word)}}
+  for(const x of usable){if(pick.length>=reviewCount)break;if(x.legacy&&legacyUsed>=1)continue; // the legacy cap is strict even in fallback: fewer words beats padding with unverified ones
+   if(!pick.includes(x)){take(x);notes.push('fallback_used:'+x.word)}}
  }
  const used=new Set(pick.map(x=>x.word));
  const amSet=new Set(amVocab.map(norm));
- const apps=items.filter(x=>!used.has(x.word)&&!x.am_core).sort((a,b)=>(amSet.has(b.word)-amSet.has(a.word))||b.score-a.score||a.word.localeCompare(b.word))
+ const apps=items.filter(x=>!used.has(x.word)&&!x.am_core&&!x.legacy).sort((a,b)=>(amSet.has(b.word)-amSet.has(a.word))||b.score-a.score||a.word.localeCompare(b.word))
   .slice(0,6).map(x=>({word:x.word,from_today_am_vocab:amSet.has(x.word)}));
  return {date,review_pool_size:items.length,recent_window_days:cfg.recent?cfg.recent.days:null,
   recommended_review:pick.map(x=>x.word),recommended_detail:pick,
