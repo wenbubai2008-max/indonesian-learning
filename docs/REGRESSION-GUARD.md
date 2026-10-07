@@ -299,3 +299,11 @@
 - **复习排序**：`review-rotation.js` 的 `rank()` 对超过 7 天未出现在课程中的复习词加分（封顶 30，低于真实新错的 100）；只影响排序，不改变资格、冷却、配额。`rank-review-candidates.js --compare 1` 输出与旧排序的差异。
 - **只读工具**：`report-learning-health.js`（池子余量/口语池/复习缺口）与 `test-handoff-drill.js`（用真实 builder 在临时目录演练 primary→transition→secondary 与 dont 耗尽）。
 - 部署后需确认：Build learning runtime 成功，`runtime.new_pool_dont` 中 977 词排在第二库词之前，`oral_new_pool_dont` ≥ 2。
+
+## 9. 2026-10-07 旧词（未验证）复习通道
+
+- **问题**：已教但在弱项库里没有任何记录的词（画像“未验证”，当时 93 个，全部是 2026-08-23 至 09-12 的早期词）不属于 A，所以按 `A ∩ D` 永远进不了复习池，从教完起从未被课程复习。
+- **做法**：`build-learning-runtime.js` 把其中最久没出现的至多 10 个以优先级 5 附加到 `runtime.review_pool` 末尾；`review_pool_total_full` 与所有 A ∩ D 计数不变（`build-vocab-profile.js` / `write-vocab-profile-snapshot.js` 依赖它们）；新增 `stats.legacy_unverified_total_full` / `legacy_unverified_exposed`。`review-rotation.js` 的排序每晚至多选 1 个，且不作 application 词。
+- **不变**：新词公式、复习公式定义、mastered 判定、冷却与轮换规则、课程合同。
+- **测试**：`test-review-rotation.js`（G 项）与 `test-handoff-drill.js`（A2 项）。
+- 合并后需确认：Build 成功，画像快照不报 mismatch，runtime 里 `review_pool` 末尾有优先级 5 的行。

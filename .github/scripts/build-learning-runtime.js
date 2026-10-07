@@ -276,6 +276,15 @@ for(const x of [...focusExposed.map(f=>reviewByKey.get(key(f[0]))).filter(Boolea
 }
 reviewExposed=mergedReview;
 
+// Legacy unverified (2026-10-07): taught words with NO weakness record can never be in A ∩ D, so lessons never review them.
+// Expose the stalest few at the lowest priority (5), appended after the normal pool. review_pool_total_full and every
+// A ∩ D count stay untouched (the vocab profile checks them); the ranker allows at most one such word per PM.
+const LEGACY_REVIEW_MAX=10;
+const legacyFull=dailyRaw.filter(x=>{const k=key(x&&x.word);return k&&!weakMap.has(k)})
+  .sort((a,b)=>String(a.last_seen||'').localeCompare(String(b.last_seen||''))||(Number(a.times_seen||0)-Number(b.times_seen||0))||String(a.word).localeCompare(String(b.word)));
+const legacyExposed=legacyFull.slice(0,LEGACY_REVIEW_MAX).map(x=>[String(x.word).trim(),5,0,'','',x.cn||'',x.root||'',x.root_cn||'']);
+reviewExposed=[...reviewExposed,...legacyExposed];
+
 const runtime={
   version:4,
   rules_version:Number(rules.version||0),
@@ -314,6 +323,8 @@ const runtime={
     new_pool_unclassified_total_full:newUnclassifiedFull.length,
     new_pool_unclassified_exposed:newUnclassifiedExposed.length,
     review_pool_total_full:reviewFull.length,
+    legacy_unverified_total_full:legacyFull.length,
+    legacy_unverified_exposed:legacyExposed.length,
     review_pool_exposed:reviewExposed.length,
     focus_pool_total_full:focusFull.length,
     focus_pool_exposed:focusExposed.length,

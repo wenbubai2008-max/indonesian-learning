@@ -31,6 +31,7 @@ const win=(()=>{const c={window:{}};vm.createContext(c);
 const win2=(()=>{const c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync(path.join(tmp,'data','master-vocab-secondary.js'),'utf8'),c);return c.window})();
 const primary=new Set(win.MASTER_VOCAB_DB.map(x=>key(Array.isArray(x)?x[0]:x.word)));
 const secondaryWords=rt=>rt.new_pool.filter(w=>!primary.has(key(w)));
+const taughtKeys=()=>{const c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync(path.join(tmp,'data','daily-vocab-data.js'),'utf8'),c);return (c.window.DAILY_VOCAB_DB||[]).map(x=>key(x.word)).filter(Boolean)};
 let n=0;const t=(name,fn)=>{try{fn();n++}catch(e){e.message=name+': '+e.message;throw e}};
 
 // Teach primary words (taking them from the exposed pool) until at most `left` remain.
@@ -75,6 +76,23 @@ t('A0 primary phase: secondary dont top-up follows primary words',()=>{
 t('A1 oral pool is a legal subset (its size is reported by report-learning-health.js, not asserted here)',()=>{
  const pool=new Set(base.new_pool.map(key));
  assert.ok(base.oral_new_pool.every(x=>pool.has(key(x[0]))),'oral pool is a subset of new_pool');
+});
+
+// A2. legacy unverified review words: taught words with no weakness record are exposed at priority 5 only,
+// and the A ∩ D totals that the vocab profile checks stay untouched.
+t('A2 legacy unverified words are exposed separately and leave the A∩D totals untouched',()=>{
+ const taught=new Set(JSON.parse(JSON.stringify(taughtKeys())));
+ const weak=rd('data/weakness-sync.json').words,wk=new Set(Object.keys(weak).map(key));
+ const active=[...taught].filter(w=>wk.has(w)&&weak[w]&&weak[w].status==='active').length;
+ const noRecord=[...taught].filter(w=>!wk.has(w)).length;
+ assert.equal(base.stats.review_pool_total_full,active,'review_pool_total_full is still A ∩ D');
+ assert.equal(base.stats.legacy_unverified_total_full,noRecord);
+ const rows=base.review_pool.filter(r=>r[1]===5);
+ assert.equal(rows.length,base.stats.legacy_unverified_exposed);
+ assert.ok(rows.length<=10);
+ assert.ok(rows.every(r=>taught.has(key(r[0]))&&!wk.has(key(r[0]))),'only taught words without any weakness record');
+ assert.ok(base.review_pool.filter(r=>r[1]!==5).every(r=>weak[key(r[0])]&&weak[key(r[0])].status==='active'),'normal rows stay active weak words');
+ assert.ok(base.review_pool.findIndex(r=>r[1]===5)>=base.review_pool.filter(r=>r[1]!==5).length||!rows.length,'legacy rows come after every normal row');
 });
 
 // A. dont exhaustion: every dont word taught -> dont pool empty, fuzzy still supplies new words, nothing unclassified.

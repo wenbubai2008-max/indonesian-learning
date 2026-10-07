@@ -116,6 +116,35 @@ t('F4 a long-unseen legal word gains exactly its bonus and still obeys every rul
  assert.deepEqual(run(rt,{review:out.recommended_review,application:out.application_candidates.slice(0,2).map(x=>x.word),new:fx.published_selection.new}),[]);
 });
 
+// G. legacy unverified words (taught, no weakness record, priority 5): ranked by staleness but at most ONE per PM and never an application word.
+t('G legacy words: at most one per PM, never application candidates',()=>{
+ const rt=runtime();
+ rt.review_pool=rt.review_pool.slice(0,30); // smaller pool of normal words so the four legacy words compete for the top
+ const legacy=['lga','lgb','lgc','lgd'];
+ for(const w of legacy)rt.review_pool.push([w,5,0,'','','cn','','']);
+ const lh=legacy.map(w=>({date:'2026-08-24',session:'am',vocab:[],review_vocab:[w]}));
+ const out=rank({...rankArgs(lh),runtime:rt});
+ const top=out.ranking_top.filter(x=>legacy.includes(x.word));
+ assert.equal(top.length,4,'all four legacy words are eligible and ranked');
+ assert.ok(top.every(x=>x.stale_days===40&&x.legacy));
+ const picked=out.recommended_detail.filter(x=>x.legacy);
+ assert.equal(picked.length,1,'exactly one legacy word is taken, got '+picked.length);
+ assert.ok(out.recommended_review.length<=5);
+ assert.ok(out.application_candidates.every(x=>!legacy.includes(x.word)),'legacy words are not application words');
+ const pool=new Set(rt.review_pool.map(r=>r[0]));
+ assert.ok(out.recommended_review.every(w=>pool.has(w)));
+});
+
+t('G2 legacy cap also holds in the scarce-alternatives fallback (fewer words beat padding with unverified ones)',()=>{
+ const rt=runtime();
+ rt.review_pool=[...rt.review_pool.slice(0,2)];
+ const legacy=['lge','lgf','lgg','lgh','lgi'];
+ for(const w of legacy)rt.review_pool.push([w,5,0,'','','cn','','']);
+ const out=rank({...rankArgs([]),runtime:rt});
+ assert.ok(out.recommended_detail.filter(x=>x.legacy).length<=1,'legacy words in fallback: '+out.recommended_review.join(','));
+ assert.ok(out.recommended_review.length<=5);
+});
+
 // Integration through the real validator() using the shared PM fixture of test-lesson-candidate.js.
 module.exports=function integration(makePm,validate){
  const day='2026-09-28';
