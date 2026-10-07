@@ -12,9 +12,9 @@ const INDEX_PATH = 'data/extensive-reading-history.js';
 const CANDIDATE_PATH = 'data/extensive-reading-candidate.json';
 const HISTORY_DIR = 'data/extensive-reading-history';
 
+class ReleaseError extends Error {}
 function fail(message) {
-  console.error(`EXTENSIVE_READING_RELEASE_ERROR: ${message}`);
-  process.exit(1);
+  throw new ReleaseError(message);
 }
 
 function runGit(repo, args, options = {}) {
@@ -95,13 +95,52 @@ function validateArticle(article, expectedDate) {
   if (!Number.isFinite(Number(article.minutes)) || Number(article.minutes) < 1 || Number(article.minutes) > 15) fail('minutes must be a reasonable positive number');
   const words = String(article.text).trim().split(/\s+/).filter(Boolean).length;
   if (words < 160 || words > 220) fail(`Indonesian text must be 160-220 words; got ${words}`);
+  // Optional (2026-10-08+): a short colloquial dialogue about the story, shown after the article.
+  const lines = [];
+  if (article.dialogue !== undefined) {
+    const d = article.dialogue;
+    if (!d || typeof d !== 'object' || Array.isArray(d) || !Array.isArray(d.lines)) fail('dialogue must be {title?, lines:[{speaker,text,cn}]}');
+    if (d.lines.length < 4 || d.lines.length > 8) fail('dialogue must have 4-8 lines');
+    for (const [i, l] of d.lines.entries()) {
+      if (!l || typeof l !== 'object' || !String(l.speaker || '').trim() || !String(l.text || '').trim() || !String(l.cn || '').trim()) {
+        fail(`dialogue line ${i + 1} must contain non-empty speaker, text and cn`);
+      }
+      if (String(l.text).trim().split(/\s+/).length > 30) fail(`dialogue line ${i + 1} is longer than 30 words`);
+      lines.push(String(l.text));
+    }
+  }
+  const searchable = [String(article.text), ...lines].join('\n').toLowerCase();
   if (!Array.isArray(article.hints) || article.hints.length < 8 || article.hints.length > 15) fail('hints must contain 8-15 items');
   for (const [i, hint] of article.hints.entries()) {
     if (!hint || typeof hint !== 'object' || !String(hint.term || '').trim() || !String(hint.cn || '').trim()) {
       fail(`hint ${i + 1} must contain non-empty term and cn`);
     }
+    // The page highlights a hint by finding its exact term in the text; a term that is not there is silently lost.
+    if (!searchable.includes(String(hint.term).trim().toLowerCase())) fail(`hint ${i + 1} term "${hint.term}" does not appear verbatim in the text or dialogue`);
   }
-  return { words };
+  // Optional (2026-10-08+): learned-but-not-mastered words deliberately re-used in this reading (passive recurrence).
+  if (article.review_words !== undefined) {
+    if (!Array.isArray(article.review_words) || article.review_words.length < 1 || article.review_words.length > 20) fail('review_words must contain 1-20 items');
+    const seen = new Set();
+    for (const [i, r] of article.review_words.entries()) {
+      const w = String(r && r.word || '').trim().toLowerCase();
+      if (!w || !String(r.cn || '').trim()) fail(`review word ${i + 1} must contain non-empty word and cn`);
+      if (seen.has(w)) fail(`review word "${w}" is listed twice`);
+      seen.add(w);
+      if (!reviewWordRegex(w).test(searchable)) fail(`review word "${w}" does not appear in the text or dialogue`);
+    }
+  }
+  return { words, dialogue_lines: lines.length, review_words: (article.review_words || []).length };
+}
+
+function reviewWordRegex(w) {
+  const e = w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(^|[^a-z])${e}(-?(nya|lah|kah|pun|ku|mu))?([^a-z]|$)`, 'i');
+}
+
+function failIfAlreadyPublished(oldArticle, expectedDate) {
+  // One reading per day. A second release for a date that already has its article would archive and replace it.
+  if (oldArticle && oldArticle.date === expectedDate) fail(`a reading for ${expectedDate} is already published (${oldArticle.id}); do not publish a second one`);
 }
 
 function parseBase(repo, baseSha) {
@@ -168,6 +207,7 @@ function prepare(repo, baseSha, expectedDate, candidatePath = CANDIDATE_PATH) {
   const { oldArticle, baseIndex, baseIndexSrc } = parseBase(repo, baseSha);
   ensureIndexUnique(baseIndex, 'base history index');
   if (!oldArticle || !oldArticle.id || !oldArticle.date) fail('base current article is malformed');
+  failIfAlreadyPublished(oldArticle, expectedDate);
   if (oldArticle.id === article.id) fail('new article id must differ from base current article id');
   if (baseIndex.some(x => x.id === article.id)) fail('new article id already exists in history index');
 
@@ -198,6 +238,7 @@ function prepare(repo, baseSha, expectedDate, candidatePath = CANDIDATE_PATH) {
 function validateFinal(repo, baseSha, expectedDate) {
   const { oldArticle, baseIndex } = parseBase(repo, baseSha);
   ensureIndexUnique(baseIndex, 'base history index');
+  failIfAlreadyPublished(oldArticle, expectedDate);
   const currentDataSrc = readFile(repo, DATA_PATH);
   const currentIndexSrc = readFile(repo, INDEX_PATH);
   const currentDb = parseWindowAssignment(currentDataSrc, 'EXTENSIVE_READING_DB', `head:${DATA_PATH}`);
@@ -239,14 +280,53 @@ function validateFinal(repo, baseSha, expectedDate) {
   console.log(JSON.stringify({ status: 'validated', date: expectedDate, article_id: currentArticle.id, archive_path: archivePath, changed_paths: changed }));
 }
 
+/**
+ * Local pre-PR check for the generator (never used by the release job): the same structural validation, plus
+ * "already published today" against the working tree and a review-word coverage report against learning-runtime.json.
+ * Coverage targets are reported as warnings; review words outside the learned-not-mastered pools are errors.
+ */
+function check(repo, expectedDate, candidatePath) {
+  let article;
+  try { article = JSON.parse(fs.readFileSync(path.resolve(repo, candidatePath), 'utf8')); }
+  catch (error) { fail(`candidate JSON cannot be parsed: ${error.message}`); }
+  const stats = validateArticle(article, expectedDate);
+  const current = parseWindowAssignment(readFile(repo, DATA_PATH), 'EXTENSIVE_READING_DB', DATA_PATH);
+  if (Array.isArray(current) && current[0]) failIfAlreadyPublished(current[0], expectedDate);
+  const runtime = JSON.parse(readFile(repo, 'data/learning-runtime.json'));
+  const name = v => String(Array.isArray(v) ? v[0] : (v && v.word) || v || '').trim().toLowerCase();
+  const focus = new Set((runtime.focus_pool || []).map(name));
+  const review = new Set((runtime.review_pool || []).map(name));
+  const recurrence = new Set((runtime.recurrence_pool || []).map(name));
+  const tiers = { focus: [], review: [], recurrence: [] };
+  const errors = [], warnings = [];
+  for (const r of article.review_words || []) {
+    const w = String(r.word).trim().toLowerCase();
+    if (focus.has(w)) tiers.focus.push(w);
+    else if (review.has(w)) tiers.review.push(w);
+    else if (recurrence.has(w)) tiers.recurrence.push(w);
+    else errors.push(`review word "${w}" is not a learned-but-not-mastered word (not in focus_pool, review_pool or recurrence_pool)`);
+  }
+  const n = (article.review_words || []).length;
+  if (n < 8) warnings.push(`only ${n} review words (target 8-12)`);
+  if (n > 12) warnings.push(`${n} review words (target 8-12; make sure the text still reads naturally)`);
+  if (tiers.focus.length < 3) warnings.push(`only ${tiers.focus.length} focus_pool words (target at least 3)`);
+  if (!article.dialogue) warnings.push('no dialogue (target: 4-6 colloquial lines about the story)');
+  const report = { status: errors.length ? 'error' : 'ok', date: expectedDate, words: stats.words, dialogue_lines: stats.dialogue_lines,
+    review_words: n, by_tier: tiers, errors, warnings };
+  console.log(JSON.stringify(report, null, 2));
+  if (errors.length) process.exitCode = 1;
+  return report;
+}
+
 function usage() {
-  console.error('Usage: publish-extensive-reading-candidate.js prepare|validate --repo <path> --base <sha> --date <YYYY-MM-DD> [--candidate <path>]');
+  console.error('Usage: publish-extensive-reading-candidate.js prepare|validate --repo <path> --base <sha> --date <YYYY-MM-DD> [--candidate <path>]\n' +
+    '       publish-extensive-reading-candidate.js check --candidate <path> --date <YYYY-MM-DD> [--repo <path>]');
   process.exit(2);
 }
 
 function parseArgs(argv) {
   const [mode, ...rest] = argv;
-  if (!['prepare', 'validate'].includes(mode)) usage();
+  if (!['prepare', 'validate', 'check'].includes(mode)) usage();
   const opts = {};
   for (let i = 0; i < rest.length; i += 2) {
     const key = rest[i];
@@ -254,11 +334,23 @@ function parseArgs(argv) {
     if (!key || !key.startsWith('--') || value == null) usage();
     opts[key.slice(2)] = value;
   }
-  if (!opts.repo || !opts.base || !opts.date) usage();
+  if (mode === 'check') { if (!opts.candidate || !opts.date) usage(); opts.repo = opts.repo || '.'; }
+  else if (!opts.repo || !opts.base || !opts.date) usage();
   validateDate(opts.date, 'date');
   return { mode, opts };
 }
 
-const { mode, opts } = parseArgs(process.argv.slice(2));
-if (mode === 'prepare') prepare(opts.repo, opts.base, opts.date, opts.candidate || CANDIDATE_PATH);
-else validateFinal(opts.repo, opts.base, opts.date);
+if (require.main === module) {
+  try {
+    const { mode, opts } = parseArgs(process.argv.slice(2));
+    if (mode === 'prepare') prepare(opts.repo, opts.base, opts.date, opts.candidate || CANDIDATE_PATH);
+    else if (mode === 'check') check(opts.repo, opts.date, opts.candidate);
+    else validateFinal(opts.repo, opts.base, opts.date);
+  } catch (error) {
+    if (!(error instanceof ReleaseError)) throw error;
+    console.error(`EXTENSIVE_READING_RELEASE_ERROR: ${error.message}`);
+    process.exit(1);
+  }
+}
+
+module.exports = { validateArticle, check, ReleaseError };

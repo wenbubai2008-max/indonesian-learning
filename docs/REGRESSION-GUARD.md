@@ -102,7 +102,7 @@
 
 任何新增 workflow 必须有长期必要性，不能只是一次性修复手段。
 
-泛读发布不新增第三条 workflow。2026-09-30 起，长期发布逻辑放在现有 `sync-daily-vocab.yml` 的独立 `extensive_reading_release` PR job 中，但该 job **不得读写 daily-vocab/runtime**。ChatGPT 每天只在同日 `extensive-reading-YYYY-MM-DD` 隔离分支写一个临时候选 `data/extensive-reading-candidate.json` 并打开带 `AUTO_PUBLISH_EXTENSIVE_READING=1` 标记的同仓库 PR；GitHub Runner 从受信任的 main 脚本生成/验证旧文归档、轻量历史索引与今日单篇文件，删除候选文件后用 PR head 精确 SHA squash merge。这样正式 main 仍只有一个发布 commit，历史三文件事务由 GitHub 完成，ChatGPT 不再直接移动 main ref 或连续写三个正式文件。若 main 在生成/合并期间前进，保留 release 分支并停止，不 force push、不用旧 base 强并。 Runner 校验完成后，最终分支提交使用 `[skip ci]`，避免自身推送再触发一次 `pull_request synchronize`。squash merge 必须显式设置不含跳过标记的 commit_title 与 commit_message，确保正式 main 的 Pages 部署照常触发。普通候选提交不加跳过标记，仍正常校验；保留已 merged/closed 的幂等退出作为兼容保护。若以后启用强制 PR 状态检查，须重新评估此策略，不得绕过分支保护。
+泛读发布不新增第三条 workflow。2026-09-30 起，长期发布逻辑放在现有 `sync-daily-vocab.yml` 的独立 `extensive_reading_release` PR job 中，但该 job **不得读写 daily-vocab/runtime**。泛读生成任务（2026-10-08 起为 Claude 定时任务，此前为 ChatGPT）每天只在同日 `extensive-reading-YYYY-MM-DD` 隔离分支写一个临时候选 `data/extensive-reading-candidate.json` 并打开带 `AUTO_PUBLISH_EXTENSIVE_READING=1` 标记的同仓库 PR；GitHub Runner 从受信任的 main 脚本生成/验证旧文归档、轻量历史索引与今日单篇文件，删除候选文件后用 PR head 精确 SHA squash merge。这样正式 main 仍只有一个发布 commit，历史三文件事务由 GitHub 完成，ChatGPT 不再直接移动 main ref 或连续写三个正式文件。若 main 在生成/合并期间前进，保留 release 分支并停止，不 force push、不用旧 base 强并。 Runner 校验完成后，最终分支提交使用 `[skip ci]`，避免自身推送再触发一次 `pull_request synchronize`。squash merge 必须显式设置不含跳过标记的 commit_title 与 commit_message，确保正式 main 的 Pages 部署照常触发。普通候选提交不加跳过标记，仍正常校验；保留已 merged/closed 的幂等退出作为兼容保护。若以后启用强制 PR 状态检查，须重新评估此策略，不得绕过分支保护。
 
 ### I. 课程规则写对了，但实际 JSON Schema 仍写错
 发生过：`2026-09-16` 18:00 晚课内容本身正确，但 3 道 choice 漏写 `answer_index`，导致网页把正确答案判成红色；同一份课还一度把 `review.steps` 写成 `review.items`，self_check 前端也曾不显示。
@@ -326,7 +326,18 @@
 - **需要外部配合**：07:30 / 17:30 生成任务的提示词里要加入“先运行 rank-natural-recurrence.js，在阅读/对话/例句里自然带入约 6–8 个”，否则只有数据、没人使用。
 - 测试：`test-review-rotation.js`（H1–H3）、`test-handoff-drill.js`（A3）、`test-report-learning-health.js`（recurrenceCoverage）。
 
-## 12. 2026-10-08 曝光账本：application 计为主动曝光，连续出现有上限
+## 12. 2026-10-08 泛读复现学过的词，改由 Claude 生成
+
+- **用户决定**：12:00 泛读尽量复用“学过但还没掌握”的词，让同一个弱词在不同场景里隔几天反复出现；生成端从 ChatGPT 改为 Claude 定时任务（约 11:24 开始）。**ChatGPT 的泛读任务必须由用户停用**，否则两边会抢同一天。
+- **选词工具（只读）**：`.github/scripts/reading-review.js --date D` 输出约 40 个候选：focus_pool > review_pool > 旧词 > recurrence_pool，再按“距上次在课程**或泛读**里出现的天数”排序；最近 2 天泛读刚用过的词降权；3–10 天前只在一篇泛读出现过的词加分（第二个场景）。不改任何池子、资格、冷却或掌握状态。
+- **文章新字段（可选）**：`review_words=[{word,cn}]`，`dialogue={title?,lines:[{speaker,text,cn}]}`（4–8 行口语小对话）。旧文章没有这两个字段，页面照旧显示。
+- **校验（publish-extensive-reading-candidate.js，release job 照常调用）**：新增阻断——提示词 term 必须逐字出现在正文/对话里（2026-10-07 曾有 2 个提示因此不显示）；`review_words` 每个都必须真的出现；对话结构；**同一天已经发布过泛读则拒绝第二篇**（防止新旧两个生成任务重复发布、把当天文章归档替换掉）。脚本仍保持单文件自包含（release job 会把它单独拷到临时目录运行）。
+- **生成端自查**：`publish-extensive-reading-candidate.js check --candidate <file> --date D` 做同样的结构校验，并按 runtime 报告复习词覆盖（不足 8 个 / focus 不足 3 个 / 没有对话 → 警告；复习词不在已学未掌握词池 → 报错）。
+- **页面**：`data/extensive-reading-history-ui.js` 用绿色实线标出复习词，点一下显示中文（先回忆再看）；对话放在正文后，可朗读、可整体显示中文；文末列出“本篇复现了 N 个学过的词”。无 MutationObserver、无轮询、无首屏布局变化。
+- **不变**：泛读复现不计入核心复习次数，不影响 AM/PM 合同、复习轮换和 `report-learning-health.js` §3c 的课程复现度量；正文 160–220 词、8–15 个提示、来源 0–3 天内的规则不变。
+- **测试**：`test-extensive-reading.js`（校验器、同日拒绝、覆盖报告、排序规则、真实数据冒烟），在 PR preflight 中运行。
+
+## 13. 2026-10-08 曝光账本：application 计为主动曝光，连续出现有上限
 
 - **问题**：旧规则只把 AM.review_vocab 与 PM review 算作复习，application 和课文出现都不计。真实案例：`nggak heran` 在 2026-10-04、05、06 连续三晚做 application，10-07 又进 review；排序脚本还因为 application 不算曝光而给它加了“久未出现”分。
 - **规则**（`review_rotation.exposure_ledger`，2026-10-08 起生效，共享实现 `review-rotation.js`）：
