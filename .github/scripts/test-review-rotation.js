@@ -80,6 +80,42 @@ t('E rules disabled or not yet effective',()=>{
  assert.deepEqual(checkPm({date:fx.date,runtime:runtime(),rotation:future,reviewHistory:history(),review:sel.review,application:sel.application,newWords:sel.new,amReview:fx.same_day_am.review_vocab}),[]);
 });
 
+// F. stale-word bonus (2026-10-07): ranking only; applies beyond the 7-day window, capped, never beats a fresh error, off without long history.
+const {lastExposureDays,staleBonus}=require('./review-rotation');
+const rankArgs=lh=>({date:fx.date,runtime:runtime(),rotation,reviewHistory:history(),longHistory:lh,reviewCount:5,amVocab:fx.same_day_am.vocab,amReview:fx.same_day_am.review_vocab});
+t('F1 no long history => no stale effect (identical to legacy ranking)',()=>{
+ const a=rank(rankArgs(null)),b=rank({...rankArgs(undefined),longHistory:undefined});
+ assert.deepEqual(a.recommended_review,b.recommended_review);
+ assert.ok(a.ranking_top.every(x=>x.stale_days==null&&!x.reasons.some(r=>r.startsWith('stale_'))));
+});
+t('F2 bonus curve: 0 inside 7d, grows after, capped at 30 (< fresh error 100)',()=>{
+ assert.equal(staleBonus(null),0);assert.equal(staleBonus(7),0);assert.equal(staleBonus(8),1);
+ assert.equal(staleBonus(47),30);assert.equal(staleBonus(10000),30);assert.ok(staleBonus(10000)<100);
+});
+t('F3 lastExposureDays: counts taught/AM review/PM new+review, ignores application and same/future dates',()=>{
+ const lh=[
+  {date:'2026-08-30',session:'am',vocab:[{word:'Aaa'}],review_vocab:['bbb']},
+  {date:'2026-09-20',session:'pm',vocab:[{word:'ccc',source_group:'review'},{word:'ddd',source_group:'application'},{word:'eee',source_group:'new',is_new:true}]},
+  {date:fx.date,session:'am',vocab:[{word:'zzz'}]},
+ ];
+ const m=lastExposureDays(fx.date,lh);
+ assert.equal(m.get('aaa'),34);assert.equal(m.get('bbb'),34);assert.equal(m.get('ccc'),13);assert.equal(m.get('eee'),13);
+ assert.ok(!m.has('ddd')&&!m.has('zzz'));
+});
+t('F4 a long-unseen legal word gains exactly its bonus and still obeys every rule',()=>{
+ const base=rank(rankArgs(null));
+ const target=base.ranking_top.find(x=>!x.blocked&&!x.focus&&x.count===0&&!x.recent4);
+ assert.ok(target,'fixture has an unblocked non-focus word');
+ const lh=[{date:'2026-08-24',session:'am',vocab:[],review_vocab:[target.word]}];
+ const out=rank(rankArgs(lh));
+ const after=out.ranking_top.find(x=>x.word===target.word)||out.recommended_detail.find(x=>x.word===target.word);
+ assert.equal(after.score-target.score,staleBonus(40));
+ assert.equal(after.stale_days,40);
+ const rt=runtime(),pool=new Set(rt.review_pool.map(r=>r[0]));
+ assert.ok(out.recommended_review.every(w=>pool.has(w)));
+ assert.deepEqual(run(rt,{review:out.recommended_review,application:out.application_candidates.slice(0,2).map(x=>x.word),new:fx.published_selection.new}),[]);
+});
+
 // Integration through the real validator() using the shared PM fixture of test-lesson-candidate.js.
 module.exports=function integration(makePm,validate){
  const day='2026-09-28';

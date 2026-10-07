@@ -28,6 +28,7 @@ const markTaught=words=>{
 const win=(()=>{const c={window:{}};vm.createContext(c);
  for(const p of ['master-vocab-data.js','master-vocab-data-2.js','master-vocab-data-3.js'])vm.runInContext(fs.readFileSync(path.join(tmp,'data',p),'utf8'),c);
  return c.window})();
+const win2=(()=>{const c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync(path.join(tmp,'data','master-vocab-secondary.js'),'utf8'),c);return c.window})();
 const primary=new Set(win.MASTER_VOCAB_DB.map(x=>key(Array.isArray(x)?x[0]:x.word)));
 const secondaryWords=rt=>rt.new_pool.filter(w=>!primary.has(key(w)));
 let n=0;const t=(name,fn)=>{try{fn();n++}catch(e){e.message=name+': '+e.message;throw e}};
@@ -52,6 +53,27 @@ t('0 baseline copy builds and matches the repo state',()=>{
  const real=JSON.parse(fs.readFileSync(path.join(repo,'data','learning-runtime.json'),'utf8'));
  assert.equal(baseline.phase,real.handoff.phase);
  assert.equal(baseline.remaining,real.handoff.primary_remaining);
+});
+
+// A0. 2026-10-07: primary phase appends secondary dont words after the primary words (never fuzzy, never ahead of primary).
+t('A0 primary phase: secondary dont top-up follows primary words',()=>{
+ assert.equal(base.handoff.phase,'primary');
+ assert.ok(base.stats.new_pool_secondary_dont_topup>0,'top-up present');
+ const dont=base.new_pool_dont;
+ const firstSec=dont.findIndex(w=>!primary.has(key(w)));
+ assert.ok(firstSec>0,'secondary dont exists and is not first');
+ assert.ok(dont.slice(0,firstSec).every(w=>primary.has(key(w))),'all primary dont words precede secondary ones');
+ assert.ok(base.new_pool_fuzzy.every(w=>primary.has(key(w))),'no secondary fuzzy before transition');
+ const sab=Object.fromEntries(win2.SECONDARY_MASTER_VOCAB_DB.map(x=>[key(x.word),x.sab]));
+ const rank={S:0,A:1,B:2},order=dont.filter(w=>!primary.has(key(w))).map(w=>rank[sab[key(w)]]??3);
+ assert.deepEqual(order,[...order].sort((a,b)=>a-b),'secondary dont ordered S>A>B');
+ assert.equal(base.stats.primary_new_pool_total_full,base.handoff.primary_remaining);
+});
+t('A1 oral pool: new colloquial candidates are eligible and dont-oral covers the 08:00 quota of 2',()=>{
+ assert.ok(base.oral_new_pool.length>=10);
+ assert.ok(base.oral_new_pool_dont.length>=2);
+ const pool=new Set(base.new_pool.map(key));
+ assert.ok(base.oral_new_pool.every(x=>pool.has(key(x[0]))),'oral pool is a subset of new_pool');
 });
 
 // A. dont exhaustion: every dont word taught -> dont pool empty, fuzzy still supplies new words, nothing unclassified.

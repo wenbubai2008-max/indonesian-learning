@@ -4,6 +4,13 @@
 const fs=require('fs'),path=require('path');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
 const {rank}=require('./review-rotation');
+/** All completed lessons before `date`, used only for the stale-word bonus (never for eligibility). */
+function readLongHistory(index,date,read){
+ const out=[];
+ for(const d of (index.dates||[])){if(!(d.date<date))continue;
+  for(const s of ['am','pm'])if(d[s]){try{out.push(read('data/daily/'+d.date+'-'+s+'.json'))}catch(e){}}}
+ return out;
+}
 function cli(argv){const a={};for(let i=0;i<argv.length;i++){if(!argv[i].startsWith('--')||!argv[i+1]||argv[i+1].startsWith('--'))throw Error('Expected --key value');a[argv[i++].slice(2)]=argv[i]}return a}
 function main(argv){
  const a=cli(argv);if(!a.date)throw Error('--date required');
@@ -14,7 +21,11 @@ function main(argv){
  const amFile=path.join(root,'data/daily/'+a.date+'-am.json');
  const am=fs.existsSync(amFile)?read('data/daily/'+a.date+'-am.json'):{};
  const names=x=>(Array.isArray(x)?x:[]).map(v=>Array.isArray(v)?v[0]:typeof v==='string'?v:v&&v.word);
- return rank({date:a.date,runtime,rotation:rules.review_rotation,reviewHistory:history,reviewCount:Number(a.count)||5,amVocab:names(am.vocab),amReview:names(am.review_vocab)});
+ const base={date:a.date,runtime,rotation:rules.review_rotation,reviewHistory:history,reviewCount:Number(a.count)||5,amVocab:names(am.vocab),amReview:names(am.review_vocab)};
+ const longHistory=readLongHistory(index,a.date,read);
+ const out=rank({...base,longHistory});
+ if(a.compare==='1'){const old=rank(base);out.compare_without_stale_bonus={recommended_review:old.recommended_review,only_new:out.recommended_review.filter(w=>!old.recommended_review.includes(w)),only_old:old.recommended_review.filter(w=>!out.recommended_review.includes(w))}}
+ return out;
 }
 if(require.main===module){try{console.log(JSON.stringify(main(process.argv.slice(2)),null,2))}catch(e){console.error(JSON.stringify({ok:false,error:e.message}));process.exitCode=2}}
 module.exports={main};

@@ -291,3 +291,11 @@
 - PM 重点复习：最近4天内已做过正式核心复习的词最多2个；focus_pool 词2–3个；当天AM.review_vocab 的老词不得占完整 application 词卡。真实新错（`last_wrong` 晚于该词最近一次核心复习且不晚于 `runtime.generated_at`）可解除限制；旧标签（quick_wrong、automation_fail）不算新错。
 - 合法替代不足时规则自动放行（不卡发布、不使用 mastered 或非 review_pool 的词）；原有相邻课冷却、连续PM冷却、7天≥3次限制保持不变。
 - 生成端：17:30 晚课必须先运行 `node .github/scripts/rank-review-candidates.js --date D` 再锁定词表。回归测试：`test-review-rotation.js`（由 `test-lesson-candidate.js` 调用），含 2026-10-03 真实案例 fixture。
+
+## 8. 2026-10-07 新词供给与复习排序调整
+
+- **第二库 dont 补给（primary 阶段）**：`build-learning-runtime.js` 在 primary 阶段把第二库 `dont` 词追加在 977 合法词之后（按 BIPA 等级 S>A>B 排序）。977 词永远排在前面；第二库 fuzzy 仍只在 transition/secondary 阶段进入；阶段切换阈值仍只看 977 合法新词数。新增 `runtime.stats.new_pool_secondary_dont_topup`。
+- **口语候选**：`data/oral-vocab-candidates.js` 新增 18 条常用标准语↔口语对应（rank 716–733）；`oral_candidate_total` 同步为 224。候选只有在 `M ∩ A − D` 内才会进入 `oral_new_pool`。
+- **复习排序**：`review-rotation.js` 的 `rank()` 对超过 7 天未出现在课程中的复习词加分（封顶 30，低于真实新错的 100）；只影响排序，不改变资格、冷却、配额。`rank-review-candidates.js --compare 1` 输出与旧排序的差异。
+- **只读工具**：`report-learning-health.js`（池子余量/口语池/复习缺口）与 `test-handoff-drill.js`（用真实 builder 在临时目录演练 primary→transition→secondary 与 dont 耗尽）。
+- 部署后需确认：Build learning runtime 成功，`runtime.new_pool_dont` 中 977 词排在第二库词之前，`oral_new_pool_dont` ≥ 2。

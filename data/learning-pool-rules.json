@@ -1,11 +1,11 @@
 {
   "version": 4,
   "master_total": 977,
-  "oral_candidate_total": 206,
+  "oral_candidate_total": 224,
   "new_pool_formula": "M ∩ A − D",
   "review_pool_formula": "A ∩ D",
   "symbols": {
-    "M": "按持久化handoff状态决定的新词来源：primary阶段只用977；transition阶段977余量优先并由第二库补足；secondary阶段只用第二库",
+    "M": "按持久化handoff状态决定的新词来源：primary阶段以977为主，并在977词之后追加第二库dont词作为dont补给（不追加第二库fuzzy词）；transition阶段977余量优先并由第二库补足；secondary阶段只用第二库",
     "A": "weak active（当前待掌握）",
     "D": "daily-vocab（已正式教过）",
     "K": "weak mastered（已掌握）"
@@ -28,6 +28,7 @@
     "commit_condition": "primary_legal_new_pool=0时永久提交到secondary_bipa",
     "permanent_after_commit": true,
     "secondary_selection": "只收不会/模糊；B2仅S级；去除与977重复词；跨级冲突按dont > fuzzy > know合并",
+    "primary_secondary_dont_topup": "2026-10-07起：primary阶段runtime.new_pool/new_pool_dont在977合法词之后追加第二库dont词（按BIPA等级S>A>B排序，同级保持目录顺序），使08:00在977的dont词用完后仍有dont供给；977词永远排在前面，第二库fuzzy词仍只在transition/secondary阶段进入；阶段切换阈值仍只看977合法新词数量",
     "lesson_interface": "08:00与18:00仍只读取runtime.new_pool，不需要自行重算词库来源",
     "review_interface": "两个主词库共用同一个runtime.review_pool与daily-vocab去重逻辑"
   },
@@ -143,7 +144,7 @@
     "runtime.focus_pool只从A∩D生成，是review_pool的高优先级子集；不得包含未教词或mastered",
     "自动训练失败通过统一weak状态写入automation_fail信号；各模块只读取focus_pool或统一weak状态，不直接互相改数据",
     "快速练习、18:00和泛读可优先复现focus_pool，但不得挤占新词硬名额，也不得把被动阅读复现直接视为mastered",
-    "977合法新词>=10时只用977；剩余1-9时进入transition，runtime.new_pool必须把剩余977排在前面并用第二库补足候选，08:00必须优先用完剩余977后再补第二库",
+    "977合法新词>=10时以977为主（第二库只补充dont词且排在977之后）；剩余1-9时进入transition，runtime.new_pool必须把剩余977排在前面并用第二库补足候选，08:00必须优先用完剩余977后再补第二库",
     "当977合法新词=0时，master-handoff-state永久提交到第二主词库；提交后即使977旧词重新active，也不得自动把新词源切回第一库",
     "第二主词库仅由人工筛选为不会/模糊的BIPA词生成；A1/A2/B1按已筛结果，B2暂只收已筛S级；与977完全重复词永久剔除；跨级重复判断按dont > fuzzy > know合并",
     "当前两套主词库之外且active但未教过的词暂存，不进入新词或弱项强化",
@@ -195,7 +196,7 @@
     "pm_new_word_memory_check": "PM 3-4个新词必须来自new_pool_dont∪new_pool_fuzzy并属于new_pool；默认2 fuzzy + 1-2 dont，候选不足时可互补；unclassified命中数必须为0。",
     "review_rotation_check": "从2026-09-28起完整核验index最近7天已完成AM/PM核心历史；缺历史阻止发布；同日/前晚重复、连续PM冷却、7天高曝光超额严格依规则，解除需runtime.last_wrong新信号。仅新课生效。"
   },
-  "updated_at": "2026-09-27",
+  "updated_at": "2026-10-07",
   "focus_pool_formula": "重点弱词 = A ∩ D，按自动训练失败、快速练习答错、不会/模糊等信号综合排序；只做派生索引，不改变词库归属",
   "review_rotation": {
     "enabled": true,
@@ -231,6 +232,7 @@
       "effective_date": "2026-10-04",
       "rule": "当天AM.review_vocab中的老词不得再占PM完整application词卡（真实新错除外），应在阅读/对话中自然复现；仅当没有其他合法application候选（review_pool内未被占用且非AM核心复习词）时才允许例外"
     },
+    "stale_bonus": "2026-10-07起排序脚本为超过7天未在课程中出现的复习词加分（(天数-7)*0.75，封顶30，只影响排序，不改变资格、冷却或配额；真实新错+100仍然更高）；--compare 1 可对比无加分的旧排序",
     "executable_ranking": "node .github/scripts/rank-review-candidates.js --date D 输出确定性的推荐重点复习与application候选；Validator与排序脚本共用 .github/scripts/review-rotation.js，生成端必须先运行排序脚本再锁定词表"
   }
 }
