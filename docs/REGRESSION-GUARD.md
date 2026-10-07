@@ -295,7 +295,7 @@
 ## 8. 2026-10-07 新词供给与复习排序调整
 
 - **第二库 dont 补给（primary 阶段）**：`build-learning-runtime.js` 在 primary 阶段把第二库 `dont` 词追加在 977 合法词之后（按 BIPA 等级 S>A>B 排序）。977 词永远排在前面；第二库 fuzzy 仍只在 transition/secondary 阶段进入；阶段切换阈值仍只看 977 合法新词数。新增 `runtime.stats.new_pool_secondary_dont_topup`。
-- **口语候选**：`data/oral-vocab-candidates.js` 新增 18 条常用标准语↔口语对应（rank 716–733）；`oral_candidate_total` 同步为 224。候选只有在 `M ∩ A − D` 内才会进入 `oral_new_pool`。
+- **口语候选**：`data/oral-vocab-candidates.js` 新增 18 条常用标准语↔口语对应（rank 716–733），2026-10-07 再补 18 条（rank 734–751）；`oral_candidate_total` 同步为 242。候选只有在 `M ∩ A − D` 内才会进入 `oral_new_pool`。
 - **复习排序**：`review-rotation.js` 的 `rank()` 对超过 7 天未出现在课程中的复习词加分（封顶 30，低于真实新错的 100）；只影响排序，不改变资格、冷却、配额。`rank-review-candidates.js --compare 1` 输出与旧排序的差异。
 - **只读工具**：`report-learning-health.js`（池子余量/口语池/复习缺口）与 `test-handoff-drill.js`（用真实 builder 在临时目录演练 primary→transition→secondary 与 dont 耗尽）。
 - 部署后需确认：Build learning runtime 成功，`runtime.new_pool_dont` 中 977 词排在第二库词之前，`oral_new_pool_dont` ≥ 2。
