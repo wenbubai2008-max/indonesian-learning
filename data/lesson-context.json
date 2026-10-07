@@ -11,12 +11,12 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-07T09:46:44.976Z",
+    "runtime_generated_at": "2026-10-07T10:25:09.791Z",
     "lesson_watermark": "2026-10-07 08:00",
     "index_updated": "2026-10-07",
-    "runtime_hash": "491169774eaf37a1c6ca28184f8cca0738385e196643e17d6f51158f711f1774",
+    "runtime_hash": "f3ae07d5d698c53479667bfed99f649ea35bf17da5bfea6d6e8d261c6fd12bb3",
     "index_hash": "e4de3dd9c6a55ad13b25d31d766c1f05f2579717abbafb1cb1781b49a7e626a8",
-    "rules_hash": "35f866a65e667a4db677b770e5e2a606790d5a9920fd0fb97eb7f7df7e59b92a"
+    "rules_hash": "446f55c3b6480bf2ed90566b4ff6bd6e1cf38127374fbbb9fd551262378aee63"
   },
   "schema": {
     "new": [
@@ -1936,6 +1936,106 @@
         "民族；国家",
         "bangsa",
         "民族；国家"
+      ],
+      [
+        "menurut",
+        5,
+        0,
+        "",
+        "",
+        "根据；依……看",
+        "",
+        ""
+      ],
+      [
+        "terjadi",
+        5,
+        0,
+        "",
+        "",
+        "发生",
+        "jadi",
+        ""
+      ],
+      [
+        "berencana",
+        5,
+        0,
+        "",
+        "",
+        "计划",
+        "rencana",
+        ""
+      ],
+      [
+        "terbiasa",
+        5,
+        0,
+        "",
+        "",
+        "习惯于",
+        "biasa",
+        ""
+      ],
+      [
+        "berubah",
+        5,
+        0,
+        "",
+        "",
+        "改变、发生变化",
+        "ubah",
+        ""
+      ],
+      [
+        "melanjutkan",
+        5,
+        0,
+        "",
+        "",
+        "继续某事",
+        "lanjut",
+        ""
+      ],
+      [
+        "memerlukan",
+        5,
+        0,
+        "",
+        "",
+        "需要",
+        "perlu",
+        ""
+      ],
+      [
+        "ada urusan",
+        5,
+        0,
+        "",
+        "",
+        "有事要处理",
+        "",
+        ""
+      ],
+      [
+        "mendadak",
+        5,
+        0,
+        "",
+        "",
+        "突然、临时",
+        "dadak",
+        ""
+      ],
+      [
+        "nggak jadi",
+        5,
+        0,
+        "",
+        "",
+        "不去了/取消了",
+        "",
+        ""
       ]
     ],
     "focus": [
