@@ -2510,27 +2510,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "menurut",
     "cn": "根据；依……看",
-    "en": "",
-    "root": "",
+    "en": "according to; in the opinion of",
+    "root": "turut",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-23 19:00",
-    "last_seen": "2026-08-23 19:00",
+    "last_seen": "2026-10-07 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-23"
+      "2026-08-23",
+      "2026-10-07"
     ],
-    "example": "Menurut saya, ini cukup penting.",
-    "example_cn": "我认为这个挺重要。",
+    "example": "Menurut jadwal, kereta berangkat jam tujuh.",
+    "example_cn": "按时刻表，火车七点出发。",
     "lesson_occurrences": [
-      "2026-08-23 19:00"
-    ]
+      "2026-08-23 19:00",
+      "2026-10-07 18:00"
+    ],
+    "root_cn": "跟随；顺着"
   },
   {
     "word": "walaupun",
@@ -4413,22 +4418,24 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-31 19:00",
-    "last_seen": "2026-10-06 18:00",
+    "last_seen": "2026-10-07 18:00",
     "sessions": [
       "19:00",
       "18:00"
     ],
     "dates": [
       "2026-08-31",
-      "2026-10-06"
+      "2026-10-06",
+      "2026-10-07"
     ],
-    "example": "Dia jago mengatur uang bulanannya, jadi nggak pernah kehabisan di tengah bulan.",
-    "example_cn": "他很会管每个月的钱，所以从来不会月中就花光。",
+    "example": "Ibu pintar mengatur uang belanja bulanan.",
+    "example_cn": "妈妈很会安排每个月的买菜钱。",
     "lesson_occurrences": [
       "2026-08-31 19:00",
-      "2026-10-06 18:00"
+      "2026-10-06 18:00",
+      "2026-10-07 18:00"
     ],
     "root_cn": "安排；整理"
   },
@@ -5670,22 +5677,24 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-10-04 18:00",
+    "last_seen": "2026-10-07 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-03",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-10-07"
     ],
-    "example": "Semalam aku ngerjain laporan sampai jam dua pagi.",
-    "example_cn": "昨晚我做报告一直做到凌晨两点。",
+    "example": "Aku lagi ngerjain laporan, nanti aku telepon balik ya.",
+    "example_cn": "我正在做报告，等一下回你电话。",
     "lesson_occurrences": [
       "2026-09-03 08:00",
-      "2026-10-04 18:00"
+      "2026-10-04 18:00",
+      "2026-10-07 18:00"
     ],
     "root_cn": "工作；做"
   },
@@ -5911,9 +5920,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-03 19:00",
-    "last_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-07 18:00",
     "sessions": [
       "19:00",
       "18:00"
@@ -5923,17 +5932,19 @@ window.DAILY_VOCAB_DB = [
       "2026-09-19",
       "2026-09-26",
       "2026-09-29",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-07"
     ],
-    "example": "Ada yang keberatan kalau rapat dipindah ke sore hari?",
-    "example_cn": "会议改到下午，有人介意吗？",
+    "example": "Kalau kamu tidak keberatan, aku mau duduk di sini.",
+    "example_cn": "如果你不介意，我想坐这里。",
     "root_cn": "重；沉重",
     "lesson_occurrences": [
       "2026-09-03 19:00",
       "2026-09-19 18:00",
       "2026-09-26 18:00",
       "2026-09-29 18:00",
-      "2026-10-01 18:00"
+      "2026-10-01 18:00",
+      "2026-10-07 18:00"
     ]
   },
   {
@@ -6626,9 +6637,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-05 19:00",
-    "last_seen": "2026-10-06 18:00",
+    "last_seen": "2026-10-07 18:00",
     "sessions": [
       "19:00",
       "18:00"
@@ -6637,15 +6648,17 @@ window.DAILY_VOCAB_DB = [
       "2026-09-05",
       "2026-10-04",
       "2026-10-05",
-      "2026-10-06"
+      "2026-10-06",
+      "2026-10-07"
     ],
-    "example": "Nggak heran dia capek, tiap malam baru tidur jam dua.",
-    "example_cn": "难怪他累，每天晚上两点才睡。",
+    "example": "Dia lembur tiap hari, nggak heran dia kelihatan capek.",
+    "example_cn": "他每天加班，难怪看起来很累。",
     "lesson_occurrences": [
       "2026-09-05 19:00",
       "2026-10-04 18:00",
       "2026-10-05 18:00",
-      "2026-10-06 18:00"
+      "2026-10-06 18:00",
+      "2026-10-07 18:00"
     ]
   },
   {
@@ -7285,29 +7298,33 @@ window.DAILY_VOCAB_DB = [
     "en": "feel bad saying no; be overly considerate",
     "root": "enak",
     "root_cn": "舒服；好",
-    "example": "Aku tuh kadang nggak enakan, jadi susah nolak kalau teman minta bantuan.",
-    "example_cn": "我有时太顾及别人，所以朋友求帮忙时很难拒绝。",
+    "example": "Jangan nggak enakan, kalau kamu nggak bisa, bilang aja.",
+    "example_cn": "别碍于情面，你做不到就直说。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-11 19:00",
+    "last_seen": "2026-10-07 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-07",
       "2026-09-08",
-      "2026-09-11"
+      "2026-09-11",
+      "2026-10-07"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
       "2026-09-08 19:00",
-      "2026-09-11 19:00"
+      "2026-09-11 19:00",
+      "2026-10-07 18:00"
     ]
   },
   {
@@ -7407,21 +7424,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-10-07 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-10-07"
     ],
-    "example": "Besok pagi ngingetin aku soal dokumen itu ya.",
-    "example_cn": "明天早上提醒我一下那份文件。",
+    "example": "Tolong ingetin aku besok bawa charger ya.",
+    "example_cn": "明天请提醒我带充电器。",
     "lesson_occurrences": [
-      "2026-09-07 19:00"
+      "2026-09-07 19:00",
+      "2026-10-07 18:00"
     ]
   },
   {
@@ -8397,17 +8418,17 @@ window.DAILY_VOCAB_DB = [
     "en": "make time; squeeze something in",
     "root": "sempat",
     "root_cn": "有空；来得及",
-    "example": "Sesibuk apa pun, dia selalu nyempetin telepon ibunya.",
-    "example_cn": "不管多忙，他总会抽空给妈妈打电话。",
+    "example": "Walaupun capek, aku tetap nyempetin olahraga tiap pagi.",
+    "example_cn": "虽然累，我每天早上还是会挤时间运动。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-10-04 18:00",
+    "last_seen": "2026-10-07 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -8415,12 +8436,14 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-10",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-10-07"
     ],
     "lesson_occurrences": [
       "2026-09-10 08:00",
       "2026-09-10 19:00",
-      "2026-10-04 18:00"
+      "2026-10-04 18:00",
+      "2026-10-07 18:00"
     ]
   },
   {
@@ -18281,6 +18304,84 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-07 08:00"
+    ]
+  },
+  {
+    "word": "meminjam",
+    "cn": "借入；向别人借（东西）",
+    "en": "to borrow",
+    "root": "pinjam",
+    "root_cn": "借",
+    "example": "Boleh aku meminjam charger kamu sebentar? HP-ku hampir mati.",
+    "example_cn": "我可以借一下你的充电器吗？我手机快没电了。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 18:00",
+    "last_seen": "2026-10-07 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 18:00"
+    ]
+  },
+  {
+    "word": "mengumpulkan",
+    "cn": "交（作业、报告）；收集；把……聚到一起",
+    "en": "to submit (homework); to collect; to gather",
+    "root": "kumpul",
+    "root_cn": "聚集；聚在一起",
+    "example": "Semua peserta harus mengumpulkan formulir sebelum jam lima sore.",
+    "example_cn": "所有参加者必须在下午五点前交表格。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 18:00",
+    "last_seen": "2026-10-07 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 18:00"
+    ]
+  },
+  {
+    "word": "mengetik",
+    "cn": "打字；用键盘输入",
+    "en": "to type; to key in",
+    "root": "ketik",
+    "root_cn": "打字；键入",
+    "example": "Dia mengetik surat lamaran itu sampai jam sepuluh malam.",
+    "example_cn": "他一直打那封求职信打到晚上十点。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 18:00",
+    "last_seen": "2026-10-07 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 18:00"
     ]
   }
 ];

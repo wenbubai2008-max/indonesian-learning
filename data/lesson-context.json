@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-07",
-    "session": "pm",
-    "time": "18:00",
-    "day": 47
+    "date": "2026-10-08",
+    "session": "am",
+    "time": "08:00",
+    "day": 48
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-07T10:25:09.791Z",
-    "lesson_watermark": "2026-10-07 08:00",
+    "runtime_generated_at": "2026-10-07T10:45:29.681Z",
+    "lesson_watermark": "2026-10-07 18:00",
     "index_updated": "2026-10-07",
-    "runtime_hash": "f3ae07d5d698c53479667bfed99f649ea35bf17da5bfea6d6e8d261c6fd12bb3",
-    "index_hash": "e4de3dd9c6a55ad13b25d31d766c1f05f2579717abbafb1cb1781b49a7e626a8",
+    "runtime_hash": "d15026b88772804c3885a4972aece7841ba0d534a1888e9d2a95f2f589380123",
+    "index_hash": "bceba50f1283d6ba1f04a77c09d923d0d058e39508ce73a2142b20e45f3ab314",
     "rules_hash": "446f55c3b6480bf2ed90566b4ff6bd6e1cf38127374fbbb9fd551262378aee63"
   },
   "schema": {
@@ -68,10 +68,6 @@
       [
         "mencuri",
         "偷"
-      ],
-      [
-        "mengetik",
-        "打字"
       ],
       [
         "menggosok",
@@ -688,6 +684,10 @@
       [
         "penampilan",
         "表演；外观"
+      ],
+      [
+        "panggung",
+        "舞台"
       ]
     ],
     "new_fuzzy": [
@@ -1112,10 +1112,6 @@
         "覆盖"
       ],
       [
-        "mengumpulkan",
-        "收集 / 聚集"
-      ],
-      [
         "menderita",
         "遭受(痛苦)"
       ],
@@ -1130,10 +1126,6 @@
       [
         "mengukur",
         "测量"
-      ],
-      [
-        "meminjam",
-        "借入"
       ],
       [
         "lusa",
@@ -1330,6 +1322,14 @@
       [
         "subuh",
         "黎明；晨礼时间"
+      ],
+      [
+        "mendung",
+        "阴天；多云"
+      ],
+      [
+        "cerah",
+        "晴朗；明亮"
       ],
       [
         "mual",
@@ -1938,16 +1938,6 @@
         "民族；国家"
       ],
       [
-        "menurut",
-        5,
-        0,
-        "",
-        "",
-        "根据；依……看",
-        "",
-        ""
-      ],
-      [
         "terjadi",
         5,
         0,
@@ -2034,6 +2024,16 @@
         "",
         "",
         "不去了/取消了",
+        "",
+        ""
+      ],
+      [
+        "nggak sempat",
+        5,
+        0,
+        "",
+        "",
+        "没时间/来不及",
         "",
         ""
       ]
@@ -2314,14 +2314,6 @@
         "fuzzy"
       ],
       [
-        "meminjam",
-        "通用",
-        "minjem",
-        "pinjam",
-        718,
-        "fuzzy"
-      ],
-      [
         "menghabiskan",
         "通用",
         "ngabisin",
@@ -2362,14 +2354,6 @@
         "fuzzy"
       ],
       [
-        "mengumpulkan",
-        "通用",
-        "ngumpulin",
-        "kumpul",
-        724,
-        "fuzzy"
-      ],
-      [
         "menghitung",
         "通用",
         "ngitung",
@@ -2384,14 +2368,6 @@
         "bayang",
         726,
         "fuzzy"
-      ],
-      [
-        "mengetik",
-        "通用",
-        "ngetik",
-        "ketik",
-        727,
-        "dont"
       ],
       [
         "malahan",
@@ -2556,45 +2532,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-09-30",
-      "session": "am",
-      "review_core": [
-        "menunjukkan",
-        "cerewet",
-        "pembangunan",
-        "jomblo",
-        "berarti"
-      ],
-      "new_words": [
-        "sudut",
-        "kalah",
-        "pula",
-        "selera",
-        "demikian",
-        "bangsa",
-        "beliau",
-        "pendidikan",
-        "bangunan",
-        "membangun"
-      ]
-    },
-    {
-      "date": "2026-09-30",
-      "session": "pm",
-      "review_core": [
-        "menyalin",
-        "seraya",
-        "kabur",
-        "menegaskan"
-      ],
-      "new_words": [
-        "mencret",
-        "kata sandi",
-        "agar",
-        "lezat"
-      ]
-    },
     {
       "date": "2026-10-01",
       "session": "am",
@@ -2854,105 +2791,40 @@
         "berikutnya",
         "hafal"
       ]
+    },
+    {
+      "date": "2026-10-07",
+      "session": "pm",
+      "review_core": [
+        "mengatur",
+        "keberatan",
+        "menurut",
+        "ngerjain",
+        "nggak heran"
+      ],
+      "new_words": [
+        "meminjam",
+        "mengumpulkan",
+        "mengetik"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-06",
+    "date": "2026-10-07",
     "new_words": [
-      "bahas",
-      "catat",
-      "kerugian"
+      "meminjam",
+      "mengumpulkan",
+      "mengetik"
     ],
     "review_core": [
-      "heran",
-      "menemukan",
-      "ganjel",
-      "kepending",
-      "keteteran"
+      "mengatur",
+      "keberatan",
+      "menurut",
+      "ngerjain",
+      "nggak heran"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-07",
-    "vocab": [
-      [
-        "mogok",
-        "抛锚；（机器、车辆）发动不了；罢工",
-        "to break down; to go on strike",
-        "mogok",
-        "抛锚；罢工"
-      ],
-      [
-        "putaran",
-        "掉头处；转弯处；转一圈",
-        "U-turn spot; a turn; a rotation",
-        "putar",
-        "转；旋转"
-      ],
-      [
-        "kecelakaan",
-        "事故；意外",
-        "accident",
-        "celaka",
-        "遭殃；出事"
-      ],
-      [
-        "tabrak",
-        "撞；撞上",
-        "to crash into; to hit",
-        "tabrak",
-        "撞"
-      ],
-      [
-        "muat",
-        "装得下；容纳；装载",
-        "to fit; to hold; to load",
-        "muat",
-        "容纳；装载"
-      ],
-      [
-        "memindahkan",
-        "移动；搬到别处；转移",
-        "to move something; to transfer",
-        "pindah",
-        "搬；移动"
-      ],
-      [
-        "invoice",
-        "发票；账单（商业往来）",
-        "invoice; bill for payment",
-        "invoice",
-        "发票；账单（英语借词）"
-      ],
-      [
-        "praktis",
-        "方便；省事；实用",
-        "practical; convenient",
-        "praktis",
-        "方便；实用"
-      ],
-      [
-        "berikutnya",
-        "下一个；接下来的",
-        "next; following",
-        "ikut",
-        "跟随；参加"
-      ],
-      [
-        "hafal",
-        "记住；背得出；很熟悉",
-        "to know by heart; to be familiar with",
-        "hafal",
-        "背诵；熟记"
-      ]
-    ],
-    "review_vocab": [
-      "nyaris",
-      "ngabarin",
-      "kesepakatan",
-      "upaya",
-      "ngurusin"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
