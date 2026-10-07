@@ -107,6 +107,7 @@
       .vpAbility{display:grid;grid-template-columns:1fr 1fr;gap:10px}.vpAbilityCard{border-radius:15px;padding:15px;background:#f7f9fc}.vpAbilityCard b{display:block;font-size:25px;margin:5px 0 3px}.vpAbilityCard small{color:#667085;line-height:1.45}
       .vpMiniStats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:10px}.vpMiniStats>div{background:#f8fafc;border-radius:12px;padding:11px}.vpMiniStats b{display:block;font-size:20px}.vpMiniStats span{font-size:12px;color:#667085}
       .vpEmpty{background:#f8faff;border:1px dashed #cfd9ef;border-radius:14px;padding:18px;color:#667085;line-height:1.65}
+      .vpChart{display:block;width:100%;max-width:560px;height:auto}.vpTrendNote{font-size:12px;color:#667085;line-height:1.6;margin:8px 0}.vpTrendNote b{color:#344054}
       .vpTrendRow{display:flex;align-items:center;gap:10px;margin:9px 0}.vpTrendDate{width:76px;font-size:12px;color:#667085}.vpTrendBar{height:9px;background:#e9edf4;border-radius:999px;flex:1;overflow:hidden}.vpTrendBar i{display:block;height:100%;background:#3157d5}.vpTrendValue{width:70px;text-align:right;font-size:12px;color:#475467}
       .vpWeakList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.vpWeakItem{border:1px solid #e3e8f0;background:#fff;border-radius:13px;padding:12px;text-align:left;cursor:pointer;color:#172033}.vpWeakItem:hover,.vpWeakItem.active{border-color:#9fb4ef;background:#f8faff}.vpWeakItem b{font-size:17px}.vpWeakItem span{display:block;color:#667085;font-size:12px;margin-top:4px}.vpWeakDetail{margin-top:11px;background:#fafbfe;border-radius:14px;padding:14px}.vpSignals{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.vpSignal{font-size:11px;background:#eef3ff;color:#3157d5;border-radius:999px;padding:5px 8px}
       .vpAdviceGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.vpAdvice{border-radius:15px;padding:15px;border:1px solid #e5e9f1;background:#fbfcff}.vpAdvice b{display:block;margin-bottom:6px}.vpAdvice p{margin:0;color:#5f6c7d;line-height:1.55;font-size:13px}
@@ -146,8 +147,36 @@
     if(historyState==='error')return '<div class="vpEmpty">历史快照读取失败；不会用当前数据冒充历史。重新打开详情页可重试。</div>';
     const rows=Array.isArray(data.history)?data.history:[];
     if(rows.length<2)return '<div class="vpEmpty"><b>趋势数据正在积累</b><br>目前有 '+rows.length+' 个可靠的日期快照。至少需要两个不同日期的真实快照，才会绘制学习趋势。</div>';
-    const recent=rows.slice(-10),max=Math.max(...recent.map(x=>Number(x.taught_total||0)),1);
-    return recent.map(x=>{const pct=Math.max(0,Math.min(100,Number(x.confirmed_mastered||0)/max*100));return '<div class="vpTrendRow"><span class="vpTrendDate">'+esc(x.date||'')+'</span><div class="vpTrendBar"><i style="width:'+pct+'%"></i></div><span class="vpTrendValue">'+Number(x.confirmed_mastered||0)+' 掌握</span></div>'}).join('');
+    return trendChartsHTML(rows.slice(-30));
+  }
+  // Inline-SVG trend: three lines (taught / confirmed mastered / needs reinforcement) + daily net change of needs_reinforcement.
+  function trendChartsHTML(rows){
+    const W=460,H=200,L=32,R=90,T=12,B=22,pw=W-L-R,ph=H-T-B,n=rows.length;
+    const top=Math.max(50,Math.ceil(Math.max(...rows.map(x=>x.taught_total))/50)*50);
+    const X=i=>L+i/(n-1)*pw,Y=v=>T+ph-v/top*ph;
+    const series=[['taught_total','已教','#667085'],['confirmed_mastered','确认掌握','#15803d'],['needs_reinforcement','需要加强','#c2410c']];
+    let g='';
+    for(let k=0;k<=4;k++){const v=top/4*k,y=Y(v);g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y.toFixed(1)+'" y2="'+y.toFixed(1)+'" stroke="#e5e9f1"/><text x="'+(L-6)+'" y="'+(y+4).toFixed(1)+'" text-anchor="end" font-size="11" fill="#667085">'+Math.round(v)+'</text>'}
+    const labels=[];
+    series.forEach(s=>{
+      const pts=rows.map((x,i)=>X(i).toFixed(1)+','+Y(x[s[0]]).toFixed(1)).join(' ');
+      g+='<polyline fill="none" stroke="'+s[2]+'" stroke-width="2" stroke-linejoin="round" points="'+pts+'"/>';
+      labels.push({y:Y(rows[n-1][s[0]]),text:s[1]+' '+rows[n-1][s[0]],color:s[2]});
+    });
+    labels.sort((a,b)=>a.y-b.y);for(let i=1;i<labels.length;i++)if(labels[i].y-labels[i-1].y<13)labels[i].y=labels[i-1].y+13;
+    labels.forEach(l=>{g+='<text x="'+(W-R+6)+'" y="'+(l.y+4).toFixed(1)+'" font-size="12" fill="'+l.color+'">'+esc(l.text)+'</text>'});
+    g+='<text x="'+L+'" y="'+(H-6)+'" font-size="11" fill="#667085">'+esc(rows[0].date.slice(5))+'</text><text x="'+(W-R)+'" y="'+(H-6)+'" text-anchor="end" font-size="11" fill="#667085">'+esc(rows[n-1].date.slice(5))+'</text>';
+    const d=k=>rows[n-1][k]-rows[0][k],sign=v=>(v>0?'+':'')+v;
+    const summary='自 '+rows[0].date+' 起：已教 '+sign(d('taught_total'))+'，确认掌握 '+sign(d('confirmed_mastered'))+'，需要加强 '+sign(d('needs_reinforcement'));
+    const line='<svg class="vpChart" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(summary)+'">'+g+'</svg>';
+    // daily net change of needs_reinforcement (positive = backlog grows)
+    const ch=rows.slice(1).map((x,i)=>x.needs_reinforcement-rows[i].needs_reinforcement),BH=104,mid=BH/2,amp=Math.max(10,...ch.map(Math.abs));
+    const bw=pw/ch.length;let b='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+mid+'" y2="'+mid+'" stroke="#cfd6e4"/>';
+    ch.forEach((v,i)=>{const h=Math.abs(v)/amp*(mid-14),y=v>=0?mid-h:mid;b+='<rect x="'+(L+i*bw+bw*0.15).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+(bw*0.7).toFixed(1)+'" height="'+Math.max(h,v?1:0).toFixed(1)+'" fill="'+(v>0?'#c2410c':v<0?'#15803d':'#cfd6e4')+'"/>'+(v?'<text x="'+(L+i*bw+bw/2).toFixed(1)+'" y="'+(v>0?y-3:y+h+10).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#667085">'+sign(v)+'</text>':'')});
+    const bars='<svg class="vpChart" viewBox="0 0 '+W+' '+BH+'" role="img" aria-label="每天“需要加强”的净增减">'+b+'</svg>';
+    return '<div class="vpTrendNote"><b>'+esc(summary)+'</b></div>'+line+
+      '<div class="vpTrendNote" style="margin-top:14px"><b>每天“需要加强”净增减</b>（橙色向上=积压增加，绿色向下=清账）</div>'+bars+
+      '<div class="vpTrendNote">口径：“确认掌握”只统计你在练习中标记为已掌握的词，不是客观测验；“需要加强”是已教但仍需复习的词。</div>';
   }
   function weakDetailHTML(w){
     if(!w)return '<div class="vpEmpty">点击上面的重点弱词，可以查看系统为什么把它排到前面。</div>';
