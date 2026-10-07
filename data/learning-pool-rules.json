@@ -134,7 +134,7 @@
       "after_taught": "一旦正式教过即退出新词逻辑，后续统一由review_pool/focus_pool按真实答错、不会、模糊等信号排序"
     },
     "rewrite": "必须有3-4个主动改写/中译印/主动回忆任务；课程根字段必须命名为 rewrite，结构为 rewrite:[{task,reference_answer,reference_cn},...]，可额外保留type；禁止使用根字段 rewrite_application。",
-    "review_rotation": "4-6复习由合法focus与低曝光到期词混合；遵循根级review_rotation，应用复现不计核心重复。"
+    "review_rotation": "4-6复习由合法focus与低曝光到期词混合；遵循根级review_rotation。2026-10-08起application计为主动曝光（exposure_ledger）。"
   },
   "rules": [
     "K不进入新词、重点复习或PM应用复现核心词",
@@ -196,14 +196,14 @@
     "pm_new_word_memory_check": "PM 3-4个新词必须来自new_pool_dont∪new_pool_fuzzy并属于new_pool；默认2 fuzzy + 1-2 dont，候选不足时可互补；unclassified命中数必须为0。",
     "review_rotation_check": "从2026-09-28起完整核验index最近7天已完成AM/PM核心历史；缺历史阻止发布；同日/前晚重复、连续PM冷却、7天高曝光超额严格依规则，解除需runtime.last_wrong新信号。仅新课生效。"
   },
-  "updated_at": "2026-10-07",
+  "updated_at": "2026-10-08",
   "focus_pool_formula": "重点弱词 = A ∩ D，按自动训练失败、快速练习答错、不会/模糊等信号综合排序；只做派生索引，不改变词库归属",
   "review_rotation": {
     "enabled": true,
     "effective_date": "2026-09-28",
     "lookback_days": 7,
     "core_only": true,
-    "history_source": "仅统计index已完成的最近7天AM.review_vocab及PM.vocab.source_group=review；application和阅读自然复现不算重点复习次数",
+    "history_source": "仅统计index已完成的最近7天AM.review_vocab及PM.vocab.source_group=review；阅读等课文中的自然复现不算重点复习次数。2026-10-08起exposure_ledger生效：PM application与核心复习同样计为一次主动曝光（见exposure_ledger）",
     "eligibility": "只能取runtime.review_pool；focus_pool是高优先子集，不能越过冷却",
     "am_previous_pm": "前一节PM核心词次日AM不再做核心，新真实答错例外",
     "pm_same_day_am": "同日早课核心词晚课不再做核心，新真实答错例外；AM新词可进application",
@@ -247,6 +247,27 @@
       "not_changed": "新词公式 M ∩ A − D、复习公式 A ∩ D 的定义不变；弱项强化页仍只显示 A ∩ D"
     },
     "stale_bonus": "2026-10-07起排序脚本为超过7天未在课程中出现的复习词加分（(天数-7)*0.75，封顶30，只影响排序，不改变资格、冷却或配额；真实新错+100仍然更高）；--compare 1 可对比无加分的旧排序",
-    "executable_ranking": "node .github/scripts/rank-review-candidates.js --date D 输出确定性的推荐重点复习与application候选；Validator与排序脚本共用 .github/scripts/review-rotation.js，生成端必须先运行排序脚本再锁定词表"
+    "executable_ranking": "node .github/scripts/rank-review-candidates.js --date D [--session am|pm] 输出确定性的推荐重点复习与application候选（AM与PM均可）；Validator与排序脚本共用 .github/scripts/review-rotation.js，生成端必须先运行排序脚本再锁定词表",
+    "exposure_ledger": {
+      "enabled": true,
+      "effective_date": "2026-10-08",
+      "why": "2026-10-04至10-07 nggak heran连续3晚做application、第4晚又进review：旧规则只计核心复习，application和课文出现都不计，程序认为它“没复习过”，用户却连续4晚都看到它",
+      "active_exposure": "主动曝光=AM.review_vocab、PM.source_group=review、PM.source_group=application；AM新词vocab不计（早课新词进晚课application是合同要求）。冷却、7天曝光次数、最近4天窗口、真实新错判定都按主动曝光计算：新错必须晚于该词最近一次主动曝光（含application）",
+      "recent_active_lessons": 2,
+      "recent_active_rule": "最近2节已完成课程（PM看当天AM和前一晚PM；AM看前一天PM和AM）里有主动曝光的词，本节不再占review或application核心名额；真实新错例外",
+      "streak_days": 3,
+      "streak_rule": "一个词在前2天每天都以任何形式出现过（核心词表、阅读、对话、句子、例句），且其中至少一次是主动曝光，本节就是连续第3天，不进review/application；纯课文出现的高频词不受此限",
+      "text_rule": "被动出现（阅读、对话、例句）不推进复习间隔，只用于冷却判断；仍在冷却中的词由排序脚本列在avoid_in_text，生成时不写进阅读/对话/例句，自然复现名单也自动排除它们",
+      "fresh_error_cap": {
+        "min": 2,
+        "max": 3,
+        "min_due": 3
+      },
+      "fresh_error_rule": "真实新错优先回到下一节课，但每节最多min(3,max(2,复习数-3))个，其余名额留给到期词；没排上的新错保持“新错”身份，下一节继续优先（fresh_errors_deferred）。7天内没有任何主动曝光、但7天内答错过的词也算新错。只在排序中执行，不进入校验器",
+      "hard_word_wrong_count": 3,
+      "hard_word_rule": "累计答错≥3次的词标为hard_word：复习时换题型（造句/中译印/辨析），并加一句近义辨析或典型搭配讲解，不只重复词卡。软规则",
+      "validator": "AM_EXPOSURE_COOLDOWN / PM_EXPOSURE_COOLDOWN / PM_APPLICATION_EXPOSURE_COOLDOWN：只在合法替代充足时报错，不卡发布；当天AM新词进application不受限",
+      "ranking": "node .github/scripts/rank-review-candidates.js --date D --session am|pm；输出recommended_review、application_candidates、avoid_in_text、fresh_errors_deferred、natural_recurrence"
+    }
   }
 }

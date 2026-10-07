@@ -325,3 +325,19 @@
 - **度量**：`report-learning-health.js` §3c（覆盖度）；匹配是整词精确匹配，屈折形式不会被识别，所以是下限。
 - **需要外部配合**：07:30 / 17:30 生成任务的提示词里要加入“先运行 rank-natural-recurrence.js，在阅读/对话/例句里自然带入约 6–8 个”，否则只有数据、没人使用。
 - 测试：`test-review-rotation.js`（H1–H3）、`test-handoff-drill.js`（A3）、`test-report-learning-health.js`（recurrenceCoverage）。
+
+## 12. 2026-10-08 曝光账本：application 计为主动曝光，连续出现有上限
+
+- **问题**：旧规则只把 AM.review_vocab 与 PM review 算作复习，application 和课文出现都不计。真实案例：`nggak heran` 在 2026-10-04、05、06 连续三晚做 application，10-07 又进 review；排序脚本还因为 application 不算曝光而给它加了“久未出现”分。
+- **规则**（`review_rotation.exposure_ledger`，2026-10-08 起生效，共享实现 `review-rotation.js`）：
+  1. **主动曝光** = AM.review_vocab、PM review、PM application；AM 新词 vocab 不计（早课新词进晚课 application 是合同要求）。原有冷却、7 天次数、最近 4 天窗口、真实新错判定都按主动曝光计算。
+  2. **最近 2 节课**有主动曝光的词，本节不占 review / application 核心名额。
+  3. **连续 3 天**：前 2 天每天都以任何形式出现（核心词表、阅读、对话、句子、例句），且其中至少一次是主动曝光 → 本节不占核心名额。纯课文出现的高频词（biar、buat…）不受影响。
+  4. **被动出现不推进复习间隔**，只用于冷却判断；仍在冷却中的词列在排序输出 `avoid_in_text`，生成时不写进阅读/对话/例句，`natural_recurrence` 自动排除它们。
+  5. **错词配额**：真实新错每节最多 `min(3, max(2, 复习数-3))` 个，其余名额给到期词；没排上的新错保持新错身份，下一节继续优先（`fresh_errors_deferred`）。7 天内没有任何主动曝光、但 7 天内答错过的词也算新错。只在排序中执行。
+  6. **难词**：累计答错 ≥3 次标 `hard`，复习时换题型并加辨析/搭配讲解（软规则）。
+- 以上 1–3 由校验器执行：`AM_EXPOSURE_COOLDOWN` / `PM_EXPOSURE_COOLDOWN` / `PM_APPLICATION_EXPOSURE_COOLDOWN`，只在合法替代充足时报错，真实新错例外，不卡发布。
+- **生成端**：07:30 早课与 17:30 晚课都先运行 `node .github/scripts/rank-review-candidates.js --date D --session am|pm`，再锁定复习词。
+- **不变**：新词/复习公式、mastered 判定、课程合同、AM/PM 题型与数量；`exposure_ledger` 缺失或日期早于生效日时行为与旧版完全一致。
+- **曾考虑但未做**：单独的“快速回顾”栏。§11 的自然复现已经承担“让积压词先露个面”的作用，再加一栏会改动课程合同与前端，收益不大。
+- 测试：`test-review-rotation.js` L1–L9（含 nggak heran 案例、无死锁、旧行为不变、AM 排序）。

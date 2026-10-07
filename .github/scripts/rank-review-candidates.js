@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-/** Read-only: deterministic review/application candidate ranking for the PM generator. Writes nothing. */
+/** Read-only: deterministic review/application candidate ranking for the AM (--session am) and PM generators. Writes nothing. */
 const fs=require('fs'),path=require('path');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
 const {rank,naturalRecurrence}=require('./review-rotation');
@@ -16,17 +16,18 @@ function main(argv){
  const a=cli(argv);if(!a.date)throw Error('--date required');
  const root=path.resolve(a.root||'.'),read=f=>JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
  const index=read('data/daily/index.json'),runtime=read('data/learning-runtime.json'),rules=read('data/learning-pool-rules.json');
- const session=a.session||'pm';if(session!=='pm')throw Error('Only the PM ranking is defined');
- const history=collectReviewHistory(index,a.date,'pm',read);
- const amFile=path.join(root,'data/daily/'+a.date+'-am.json');
- const am=fs.existsSync(amFile)?read('data/daily/'+a.date+'-am.json'):{};
+ const session=a.session||'pm';if(!['am','pm'].includes(session))throw Error('--session must be am or pm');
+ const history=collectReviewHistory(index,a.date,session,read);
  const names=x=>(Array.isArray(x)?x:[]).map(v=>Array.isArray(v)?v[0]:typeof v==='string'?v:v&&v.word);
- const base={date:a.date,runtime,rotation:rules.review_rotation,reviewHistory:history,reviewCount:Number(a.count)||5,amVocab:names(am.vocab),amReview:names(am.review_vocab)};
+ const amFile=path.join(root,'data/daily/'+a.date+'-am.json');
+ const am=session==='pm'&&fs.existsSync(amFile)?read('data/daily/'+a.date+'-am.json'):{};
+ const base={date:a.date,session,runtime,rotation:rules.review_rotation,reviewHistory:history,reviewCount:Number(a.count)||5,amVocab:names(am.vocab),amReview:names(am.review_vocab)};
  const longHistory=readLongHistory(index,a.date,read);
  const out=rank({...base,longHistory});
- // Pending-review words to weave into reading / dialogue / examples (not core review, not application). Excludes today's core picks.
+ // Pending-review words to weave into reading / dialogue / examples (not core review, not application).
+ // Excludes today's core picks and words still cooling down under the exposure ledger (avoid_in_text).
  out.natural_recurrence=naturalRecurrence({date:a.date,runtime,longHistory,count:12,
-  exclude:[...out.recommended_review,...out.application_candidates.slice(0,3).map(x=>x.word),...base.amVocab,...base.amReview]});
+  exclude:[...out.recommended_review,...out.application_candidates.slice(0,3).map(x=>x.word),...base.amVocab,...base.amReview,...(out.avoid_in_text||[])]});
  if(a.compare==='1'){const old=rank(base);out.compare_without_stale_bonus={recommended_review:old.recommended_review,only_new:out.recommended_review.filter(w=>!old.recommended_review.includes(w)),only_old:old.recommended_review.filter(w=>!out.recommended_review.includes(w))}}
  return out;
 }
