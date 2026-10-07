@@ -170,9 +170,9 @@
     const summary='自 '+rows[0].date+' 起：已教 '+sign(d('taught_total'))+'，确认掌握 '+sign(d('confirmed_mastered'))+'，需要加强 '+sign(d('needs_reinforcement'));
     const line='<svg class="vpChart" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(summary)+'">'+g+'</svg>';
     // daily net change of needs_reinforcement (positive = backlog grows)
-    const ch=rows.slice(1).map((x,i)=>x.needs_reinforcement-rows[i].needs_reinforcement),BH=104,mid=BH/2,amp=Math.max(10,...ch.map(Math.abs));
+    const ch=rows.slice(1).map((x,i)=>x.needs_reinforcement-rows[i].needs_reinforcement),hasNeg=ch.some(v=>v<0),BH=hasNeg?104:80,mid=hasNeg?BH/2:BH-6,upRoom=mid-16,downRoom=hasNeg?BH-mid-14:0,amp=Math.max(10,...ch.map(Math.abs)); // baseline sits at the bottom while nothing is negative
     const bw=pw/ch.length;let b='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+mid+'" y2="'+mid+'" stroke="#cfd6e4"/>';
-    ch.forEach((v,i)=>{const h=Math.abs(v)/amp*(mid-14),y=v>=0?mid-h:mid;b+='<rect x="'+(L+i*bw+bw*0.15).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+(bw*0.7).toFixed(1)+'" height="'+Math.max(h,v?1:0).toFixed(1)+'" fill="'+(v>0?'#c2410c':v<0?'#15803d':'#cfd6e4')+'"/>'+(v?'<text x="'+(L+i*bw+bw/2).toFixed(1)+'" y="'+(v>0?y-3:y+h+10).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#667085">'+sign(v)+'</text>':'')});
+    ch.forEach((v,i)=>{const h=Math.abs(v)/amp*(v>=0?upRoom:downRoom),y=v>=0?mid-h:mid;b+='<rect x="'+(L+i*bw+bw*0.15).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+(bw*0.7).toFixed(1)+'" height="'+Math.max(h,v?1:0).toFixed(1)+'" fill="'+(v>0?'#c2410c':v<0?'#15803d':'#cfd6e4')+'"/>'+(v?'<text x="'+(L+i*bw+bw/2).toFixed(1)+'" y="'+(v>0?y-3:y+h+10).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#667085">'+sign(v)+'</text>':'')});
     const bars='<svg class="vpChart" viewBox="0 0 '+W+' '+BH+'" role="img" aria-label="每天“需要加强”的净增减">'+b+'</svg>';
     return '<div class="vpTrendNote"><b>'+esc(summary)+'</b></div>'+line+
       '<div class="vpTrendNote" style="margin-top:14px"><b>每天“需要加强”净增减</b>（橙色向上=积压增加，绿色向下=清账）</div>'+bars+
