@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T09:28:43.406Z",
+  "generated_at": "2026-10-07T09:46:44.976Z",
   "lesson_watermark": "2026-10-07 08:00",
   "master_unique": 977,
   "primary_new_pool_total": 212,
@@ -26,7 +26,7 @@
   "review_pool_total": 413,
   "focus_pool_total": 413,
   "listening_focus_pool_total": 1,
-  "oral_new_pool_total": 15,
+  "oral_new_pool_total": 33,
   "rules": {
     "new_pool": "combined legal pool; primary first; when primary has 1-9 legal words, expose them first and top up from secondary; split views new_pool_dont/new_pool_fuzzy preserve the same handoff eligibility",
     "review_pool": "weak_active ∩ daily_vocab",

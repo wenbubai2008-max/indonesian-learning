@@ -11,12 +11,12 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-07T09:28:43.406Z",
+    "runtime_generated_at": "2026-10-07T09:46:44.976Z",
     "lesson_watermark": "2026-10-07 08:00",
     "index_updated": "2026-10-07",
-    "runtime_hash": "df0eed459d601a07e3bdc41886dc1f7b7d0680bc43514d4471e8f1cd84157aa5",
+    "runtime_hash": "491169774eaf37a1c6ca28184f8cca0738385e196643e17d6f51158f711f1774",
     "index_hash": "e4de3dd9c6a55ad13b25d31d766c1f05f2579717abbafb1cb1781b49a7e626a8",
-    "rules_hash": "3f9f2098aeb30e29101d06db5b8c25452885c37390750283410a6f690d7df0ce"
+    "rules_hash": "35f866a65e667a4db677b770e5e2a606790d5a9920fd0fb97eb7f7df7e59b92a"
   },
   "schema": {
     "new": [
@@ -1330,6 +1330,10 @@
       [
         "subuh",
         "黎明；晨礼时间"
+      ],
+      [
+        "mual",
+        "恶心；想吐"
       ]
     ],
     "review": [
@@ -2304,6 +2308,150 @@
         "lompat",
         729,
         "fuzzy"
+      ],
+      [
+        "menangkap",
+        "通用",
+        "nangkep",
+        "tangkap",
+        734,
+        "fuzzy"
+      ],
+      [
+        "mengakhiri",
+        "通用",
+        "ngakhirin",
+        "akhir",
+        735,
+        "fuzzy"
+      ],
+      [
+        "menyediakan",
+        "通用",
+        "nyediain",
+        "sedia",
+        736,
+        "dont"
+      ],
+      [
+        "melindungi",
+        "通用",
+        "ngelindungin",
+        "lindung",
+        737,
+        "fuzzy"
+      ],
+      [
+        "menutupi",
+        "通用",
+        "nutupin",
+        "tutup",
+        738,
+        "fuzzy"
+      ],
+      [
+        "memperhatikan",
+        "通用",
+        "merhatiin",
+        "perhati",
+        739,
+        "fuzzy"
+      ],
+      [
+        "berjanji",
+        "通用",
+        "janji",
+        "janji",
+        740,
+        "fuzzy"
+      ],
+      [
+        "mencuri",
+        "通用",
+        "nyolong",
+        "curi",
+        741,
+        "dont"
+      ],
+      [
+        "mengukur",
+        "通用",
+        "ngukur",
+        "ukur",
+        742,
+        "fuzzy"
+      ],
+      [
+        "mengembangkan",
+        "通用",
+        "ngembangin",
+        "kembang",
+        743,
+        "dont"
+      ],
+      [
+        "tidak sabar",
+        "通用",
+        "nggak sabar",
+        "sabar",
+        744,
+        "fuzzy"
+      ],
+      [
+        "tidak adil",
+        "通用",
+        "nggak adil",
+        "adil",
+        745,
+        "fuzzy"
+      ],
+      [
+        "diam-diam",
+        "通用",
+        "diem-diem",
+        "diam",
+        746,
+        "fuzzy"
+      ],
+      [
+        "keras kepala",
+        "通用",
+        "ngeyel",
+        "keras",
+        747,
+        "dont"
+      ],
+      [
+        "mual",
+        "通用",
+        "eneg",
+        "mual",
+        748,
+        "fuzzy"
+      ],
+      [
+        "saudara",
+        "通用",
+        "sodara",
+        "saudara",
+        749,
+        "fuzzy"
+      ],
+      [
+        "balas",
+        "通用",
+        "bales",
+        "balas",
+        750,
+        "fuzzy"
+      ],
+      [
+        "membela",
+        "通用",
+        "ngebelain",
+        "bela",
+        751,
+        "dont"
       ]
     ]
   },
