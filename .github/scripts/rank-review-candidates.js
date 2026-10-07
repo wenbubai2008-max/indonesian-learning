@@ -23,7 +23,11 @@ function main(argv){
  const am=session==='pm'&&fs.existsSync(amFile)?read('data/daily/'+a.date+'-am.json'):{};
  const base={date:a.date,session,runtime,rotation:rules.review_rotation,reviewHistory:history,reviewCount:Number(a.count)||5,amVocab:names(am.vocab),amReview:names(am.review_vocab)};
  const longHistory=readLongHistory(index,a.date,read);
- const out=rank({...base,longHistory});
+ // 12:00 extensive readings of the last 7 days count as passive appearances for the 3-day streak (ranking only).
+ let passiveTexts=[];
+ try{const {loadReadings,readingText}=require('./reading-review');
+  passiveTexts=loadReadings(root).filter(r=>r&&r.date&&r.date<=a.date).map(r=>({date:r.date,text:readingText(r)}));}catch(e){passiveTexts=[]}
+ const out=rank({...base,longHistory,passiveTexts});
  // Pending-review words to weave into reading / dialogue / examples (not core review, not application).
  // Excludes today's core picks and words still cooling down under the exposure ledger (avoid_in_text).
  out.natural_recurrence=naturalRecurrence({date:a.date,runtime,longHistory,count:12,
