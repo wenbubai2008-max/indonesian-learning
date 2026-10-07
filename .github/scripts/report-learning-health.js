@@ -95,6 +95,19 @@ function recurrenceCoverage({runtime,lessons,today}){
   note:'text match is exact-word (inflected forms are not matched); informational only, the backlog is meant to be reviewed in a later cycle'};
 }
 
+/** Extensive readings in the last 7 days: declared review words and how many distinct focus_pool words were re-used. */
+function readingCoverage({runtime,readings,today}){
+ const {readingText,wordRegex}=require('./reading-review');
+ const at=Date.parse(today+'T00:00:00Z');
+ const recent=(readings||[]).filter(a=>a&&a.date&&a.date<=today&&(at-Date.parse(a.date+'T00:00:00Z'))/86400000<7).sort((a,b)=>a.date.localeCompare(b.date));
+ const focus=(runtime.focus_pool||[]).map(v=>String(Array.isArray(v)?v[0]:v).toLowerCase());
+ const covered=new Set();
+ const rows=recent.map(a=>{const t=readingText(a);const f=focus.filter(w=>wordRegex(w).test(t));f.forEach(w=>covered.add(w));
+  return {date:a.date,review_words:(a.review_words||[]).length,focus_in_text:f.length,dialogue:!!(a.dialogue&&a.dialogue.lines&&a.dialogue.lines.length)}});
+ return {rows,focus_pool_size:focus.length,focus_covered_7d:covered.size,
+  note:'review_words is the declared list (new format from 2026-10-08); focus_in_text counts whole-word matches incl. -nya/-lah clitics; passive exposure, not core review'};
+}
+
 function alerts(r){
  const a=[],rw=r.runway,o=r.oral_runway,g=r.review_gap;
  if(rw.est_days_until_dont_exhausted<ALERT.dont_days)a.push(`dont pool runs out in ~${rw.est_days_until_dont_exhausted} days (< ${ALERT.dont_days})`);
@@ -155,6 +168,7 @@ function buildReport(input){
   oral_usage:oralUsage(input),
   review_gap:reviewGap(input),
   recurrence:recurrenceCoverage(input),
+  reading:readingCoverage(input),
   commits:commitStats(input.commitSubjects),
   alerts:[]
  };
@@ -184,6 +198,8 @@ function format(r){
   `- stalest: ${g.stalest.map(x=>x[0]+'('+x[1]+'d)').join(', ')||'-'}`,`- (${g.note})`,'');
  const rc=r.recurrence;
  L.push('## 3c. Natural recurrence of pending-review words (last 14 days)',`- pool=${rc.pool_size} words; seen in lesson text/core in the last 14 days: ${rc.seen_last_14d} (${Math.round(rc.seen_share*100)}%); not seen for 30+ days or unknown: ${rc.not_seen_30d_or_unknown}`,`- (${rc.note})`,'');
+ const rd=r.reading;
+ L.push('## 3d. Extensive reading re-use of learned words (last 7 days)',rd.rows.length?'- '+rd.rows.map(x=>x.date.slice(5)+': review_words '+x.review_words+', focus '+x.focus_in_text+(x.dialogue?', dialogue':'')).join(' | '):'- no readings',`- distinct focus_pool words re-used in readings: ${rd.focus_covered_7d}/${rd.focus_pool_size}`,`- (${rd.note})`,'');
  const ou=r.oral_usage;
  L.push('## 3b. Oral new words per lesson (last '+ORAL_GUIDE.days+' days)',ou.rows.length?'- '+ou.rows.map(x=>x.date.slice(5)+' '+x.session+': '+x.oral_new+'/'+x.new_words).join(' | '):'- no lessons',`- total ${ou.oral_total}/${ou.new_total} new words (${Math.round(ou.oral_share*100)}%), guideline ${ou.guideline}`,'');
  const c=r.commits;
@@ -218,12 +234,13 @@ function load(root,today){
   oral:win.ORAL_VOCAB_CANDIDATES||[],
   primary:(win.MASTER_VOCAB_DB||[]).map(x=>Array.isArray(x)?x[0]:x&&x.word),
   secondary:(win.SECONDARY_MASTER_VOCAB_DB||[]).map(x=>x&&x.word),
+  readings:require('./reading-review').loadReadings(root),
   taught:new Set((win.DAILY_VOCAB_DB||[]).map(x=>key(x&&x.word)).filter(Boolean)),
   commitSubjects:gitSubjects(root,7)
  };
 }
 
-module.exports={buildReport,format,runway,recurrenceCoverage,oralDiagnosis,oralRunway,oralUsage,ORAL_GUIDE,reviewGap,commitStats,alerts,lessonWords,ALERT};
+module.exports={buildReport,format,runway,recurrenceCoverage,readingCoverage,oralDiagnosis,oralRunway,oralUsage,ORAL_GUIDE,reviewGap,commitStats,alerts,lessonWords,ALERT};
 
 if(require.main===module){
  try{

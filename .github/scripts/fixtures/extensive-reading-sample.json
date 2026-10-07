@@ -1,0 +1,45 @@
+{
+  "id": "er-20261008-uji-bank-sampah",
+  "date": "2026-10-08",
+  "title": "Bank Sampah RW 05 Mulai Terima Minyak Jelantah",
+  "title_cn": "RW 05 垃圾银行开始回收废食用油（演练样稿）",
+  "category": "日常生活与环境",
+  "level": "A2+ → B1",
+  "minutes": 4,
+  "source_name": "Rehearsal fixture (not published)",
+  "source_date": "2026-10-07",
+  "text": "Sejak minggu lalu, bank sampah di RW 05 mulai menerima minyak jelantah dari warga. Pengurusnya menegaskan bahwa minyak bekas tidak boleh lagi dibuang ke saluran air karena bisa membuat got tersumbat dan berbau.\n\nAwalnya banyak warga heran. Mereka tidak tahu bahwa minyak bekas masih bisa dijual. Sekarang satu liter minyak jelantah dihargai sekitar Rp5.000 dan uangnya langsung masuk ke tabungan warga. Bagi ibu-ibu yang setiap hari memasak, hasilnya cukup layak untuk tambahan belanja.\n\nPengurus juga mengatur jadwal penimbangan setiap Sabtu pagi supaya antrean tidak berantakan. Minyak harus disaring dulu dan dimasukkan ke botol plastik yang tertutup rapat. Botol yang bocor akan ditolak.\n\nKetua RW mengakui bahwa upaya ini belum sempurna. Masih ada warga yang keberatan karena harus menyimpan minyak di rumah selama seminggu. Namun, ia berharap kebiasaan kecil ini bisa membuat lingkungan lebih bersih dan memberi penghasilan tambahan bagi keluarga. Jika jumlah minyak terus naik, bank sampah berencana bekerja sama dengan pengepul dari luar kota agar harga bisa sedikit lebih tinggi.",
+  "cn": "从上周开始，RW 05 的垃圾银行开始接收居民的废食用油。负责人强调，废油不能再倒进排水沟，因为会让水沟堵塞、发臭。\n\n起初很多居民觉得奇怪。他们不知道用过的油还能卖钱。现在一升废油大约能卖 5,000 印尼盾，钱直接存进居民的储蓄账户。对每天做饭的主妇来说，这笔收入作为买菜补贴还算值得。\n\n负责人还把称重时间安排在每周六上午，避免排队乱成一团。油要先过滤，再装进盖紧的塑料瓶。漏油的瓶子会被拒收。\n\n社区负责人承认，这项努力还不完美。仍有居民表示介意，因为要在家里存放一周的油。不过他希望这个小习惯能让社区更干净，也给家庭带来额外收入。如果油量继续增加，垃圾银行计划与外地收购商合作，让价格再高一点。",
+  "hints": [
+    {"term": "minyak jelantah", "cn": "废食用油；炸过的旧油"},
+    {"term": "saluran air", "cn": "排水沟；水渠"},
+    {"term": "tersumbat", "cn": "堵塞", "root": "sumbat", "formation": "ter- + sumbat"},
+    {"term": "dihargai", "cn": "被定价为；值……钱", "root": "harga", "formation": "di- + harga + -i"},
+    {"term": "tabungan", "cn": "储蓄；存款", "root": "tabung", "formation": "tabung + -an"},
+    {"term": "penimbangan", "cn": "称重", "root": "timbang", "formation": "peN- + timbang + -an"},
+    {"term": "disaring", "cn": "被过滤", "root": "saring"},
+    {"term": "tertutup rapat", "cn": "盖紧的；密封的"},
+    {"term": "pengepul", "cn": "收购商；收集转卖的人", "root": "kepul", "formation": "peN- + kepul（k 脱落）"}
+  ],
+  "review_words": [
+    {"word": "menegaskan", "cn": "强调；明确说明"},
+    {"word": "heran", "cn": "纳闷；觉得奇怪"},
+    {"word": "layak", "cn": "值得；合适"},
+    {"word": "mengatur", "cn": "安排；管理"},
+    {"word": "berantakan", "cn": "乱七八糟；一团乱"},
+    {"word": "upaya", "cn": "努力；尝试"},
+    {"word": "keberatan", "cn": "介意；有异议"},
+    {"word": "niat", "cn": "打算；心意"},
+    {"word": "pokoknya", "cn": "总之；反正"},
+    {"word": "sebel", "cn": "烦；恼火"}
+  ],
+  "dialogue": {
+    "title": "两个邻居在称重点排队",
+    "lines": [
+      {"speaker": "A", "text": "Eh, Bu Rina juga bawa jelantah? Aku kira cuma aku yang niat banget nyimpen seminggu.", "cn": "哎，Rina 太太你也带废油来了？我还以为只有我这么认真存了一周呢。"},
+      {"speaker": "B", "text": "Iya dong. Dulu aku sebel, got depan rumah sering bau.", "cn": "当然啦。以前我很烦，家门口的水沟经常发臭。"},
+      {"speaker": "A", "text": "Botolku agak bocor, ditolak nggak ya?", "cn": "我的瓶子有点漏，会不会被拒收啊？"},
+      {"speaker": "B", "text": "Pokoknya ditutup rapat aja dulu. Minggu depan pakai botol baru.", "cn": "反正先盖紧吧。下周换个新瓶子。"}
+    ]
+  }
+}
