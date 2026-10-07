@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-07",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 47
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-06T11:15:45.842Z",
-    "lesson_watermark": "2026-10-06 18:00",
-    "index_updated": "2026-10-06",
-    "runtime_hash": "f61552084dae221204a52053c57c4f6b466a9a103880e279716064f403013800",
-    "index_hash": "e4096c66016c5abac0f88c3fd1c4e4cdc6070d228f219e7150d42b0b57c93888",
+    "runtime_generated_at": "2026-10-07T00:29:32.060Z",
+    "lesson_watermark": "2026-10-07 08:00",
+    "index_updated": "2026-10-07",
+    "runtime_hash": "aea4132a82b05a522a5b976e674c039943206f8002ad81cfdb646e61bb8849bc",
+    "index_hash": "e4de3dd9c6a55ad13b25d31d766c1f05f2579717abbafb1cb1781b49a7e626a8",
     "rules_hash": "112a2dbb2e62e9937feae9c4e60b52454c4d350e0844cf68f59ad724649db454"
   },
   "schema": {
@@ -64,10 +64,6 @@
       [
         "membela",
         "辩护 / 保卫"
-      ],
-      [
-        "memindahkan",
-        "移动"
       ],
       [
         "mencuri",
@@ -138,10 +134,6 @@
         "移动，行动"
       ],
       [
-        "berikutnya",
-        "下一个、接着"
-      ],
-      [
         "menyediakan",
         "提供"
       ],
@@ -194,14 +186,6 @@
         "被接受；被录用"
       ],
       [
-        "invoice",
-        "发票；账单"
-      ],
-      [
-        "muat",
-        "装载；容纳"
-      ],
-      [
         "bandingkan",
         "比较"
       ],
@@ -210,32 +194,8 @@
         "有用"
       ],
       [
-        "praktis",
-        "方便；实用"
-      ],
-      [
-        "hafal",
-        "背；记住"
-      ],
-      [
         "ucapan",
         "说法；祝福语；发言"
-      ],
-      [
-        "putaran",
-        "环岛；转弯处；旋转"
-      ],
-      [
-        "mogok",
-        "抛锚；罢工"
-      ],
-      [
-        "kecelakaan",
-        "事故"
-      ],
-      [
-        "tabrak",
-        "撞；碰撞"
       ],
       [
         "curi",
@@ -2022,6 +1982,29 @@
         "catat",
         "kerugian"
       ]
+    },
+    {
+      "date": "2026-10-07",
+      "session": "am",
+      "review_core": [
+        "nyaris",
+        "ngabarin",
+        "kesepakatan",
+        "upaya",
+        "ngurusin"
+      ],
+      "new_words": [
+        "mogok",
+        "putaran",
+        "kecelakaan",
+        "tabrak",
+        "muat",
+        "memindahkan",
+        "invoice",
+        "praktis",
+        "berikutnya",
+        "hafal"
+      ]
     }
   ],
   "previous_pm": {
@@ -2039,7 +2022,88 @@
       "keteteran"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-07",
+    "vocab": [
+      [
+        "mogok",
+        "抛锚；（机器、车辆）发动不了；罢工",
+        "to break down; to go on strike",
+        "mogok",
+        "抛锚；罢工"
+      ],
+      [
+        "putaran",
+        "掉头处；转弯处；转一圈",
+        "U-turn spot; a turn; a rotation",
+        "putar",
+        "转；旋转"
+      ],
+      [
+        "kecelakaan",
+        "事故；意外",
+        "accident",
+        "celaka",
+        "遭殃；出事"
+      ],
+      [
+        "tabrak",
+        "撞；撞上",
+        "to crash into; to hit",
+        "tabrak",
+        "撞"
+      ],
+      [
+        "muat",
+        "装得下；容纳；装载",
+        "to fit; to hold; to load",
+        "muat",
+        "容纳；装载"
+      ],
+      [
+        "memindahkan",
+        "移动；搬到别处；转移",
+        "to move something; to transfer",
+        "pindah",
+        "搬；移动"
+      ],
+      [
+        "invoice",
+        "发票；账单（商业往来）",
+        "invoice; bill for payment",
+        "invoice",
+        "发票；账单（英语借词）"
+      ],
+      [
+        "praktis",
+        "方便；省事；实用",
+        "practical; convenient",
+        "praktis",
+        "方便；实用"
+      ],
+      [
+        "berikutnya",
+        "下一个；接下来的",
+        "next; following",
+        "ikut",
+        "跟随；参加"
+      ],
+      [
+        "hafal",
+        "记住；背得出；很熟悉",
+        "to know by heart; to be familiar with",
+        "hafal",
+        "背诵；熟记"
+      ]
+    ],
+    "review_vocab": [
+      "nyaris",
+      "ngabarin",
+      "kesepakatan",
+      "upaya",
+      "ngurusin"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

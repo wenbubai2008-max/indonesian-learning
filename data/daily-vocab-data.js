@@ -3799,9 +3799,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-07 08:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -3810,14 +3810,16 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-29",
       "2026-09-18",
-      "2026-10-03"
+      "2026-10-03",
+      "2026-10-07"
     ],
     "example": "Aku nyaris terlambat karena jalan tadi ramai.",
     "example_cn": "因为刚才路上很拥挤，我差点迟到。",
     "lesson_occurrences": [
       "2026-08-29 19:00",
       "2026-09-18 18:00",
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-10-07 08:00"
     ]
   },
   {
@@ -5447,26 +5449,30 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-10-03 18:00",
+    "last_seen": "2026-10-07 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-02",
       "2026-09-29",
-      "2026-10-03"
+      "2026-10-03",
+      "2026-10-07"
     ],
     "example": "Kalau stoknya sudah ada, tolong ngabarin saya, ya.",
     "example_cn": "如果有库存了，请通知我一声。",
     "lesson_occurrences": [
       "2026-09-02 19:00",
       "2026-09-29 18:00",
-      "2026-10-03 18:00"
+      "2026-10-03 18:00",
+      "2026-10-07 08:00"
     ],
     "root_cn": "消息；音讯"
   },
@@ -7679,20 +7685,22 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-10-05 18:00",
+    "last_seen": "2026-10-07 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-08",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-10-07"
     ],
     "lesson_occurrences": [
       "2026-09-08 08:00",
-      "2026-10-05 18:00"
+      "2026-10-05 18:00",
+      "2026-10-07 08:00"
     ]
   },
   {
@@ -12292,9 +12300,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-21 08:00",
-    "last_seen": "2026-10-03 18:00",
+    "last_seen": "2026-10-07 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -12302,12 +12310,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-21",
       "2026-09-29",
-      "2026-10-03"
+      "2026-10-03",
+      "2026-10-07"
     ],
     "lesson_occurrences": [
       "2026-09-21 08:00",
       "2026-09-29 18:00",
-      "2026-10-03 18:00"
+      "2026-10-03 18:00",
+      "2026-10-07 08:00"
     ]
   },
   {
@@ -13643,19 +13653,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-10-07 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-25",
-      "2026-10-03"
+      "2026-10-03",
+      "2026-10-07"
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00",
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-10-07 08:00"
     ]
   },
   {
@@ -18019,6 +18031,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-06 18:00"
+    ]
+  },
+  {
+    "word": "mogok",
+    "cn": "抛锚；（机器、车辆）发动不了；罢工",
+    "en": "to break down; to go on strike",
+    "root": "mogok",
+    "root_cn": "抛锚；罢工",
+    "example": "Motornya mogok pas hujan deras, jadi aku terpaksa mendorongnya sampai bengkel.",
+    "example_cn": "摩托车在下大雨的时候抛锚了，我只好一路推到修车厂。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 08:00"
+    ]
+  },
+  {
+    "word": "putaran",
+    "cn": "掉头处；转弯处；转一圈",
+    "en": "U-turn spot; a turn; a rotation",
+    "root": "putar",
+    "root_cn": "转；旋转",
+    "example": "Mobil kami harus lewat putaran balik di depan pasar dulu, baru bisa ke arah rumah.",
+    "example_cn": "我们的车得先在市场前面的掉头处转过去，才能往家的方向走。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 08:00"
+    ]
+  },
+  {
+    "word": "kecelakaan",
+    "cn": "事故；意外",
+    "en": "accident",
+    "root": "celaka",
+    "root_cn": "遭殃；出事",
+    "example": "Kemarin ada kecelakaan di tol, makanya jalannya macet total.",
+    "example_cn": "昨天高速上出了事故，所以路堵得一塌糊涂。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 08:00"
+    ]
+  },
+  {
+    "word": "tabrak",
+    "cn": "撞；撞上",
+    "en": "to crash into; to hit",
+    "root": "tabrak",
+    "root_cn": "撞",
+    "example": "Hati-hati waktu mundur, jangan sampai menabrak pagar rumah orang.",
+    "example_cn": "倒车的时候小心，别撞到别人家的围墙。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 08:00"
+    ]
+  },
+  {
+    "word": "muat",
+    "cn": "装得下；容纳；装载",
+    "en": "to fit; to hold; to load",
+    "root": "muat",
+    "root_cn": "容纳；装载",
+    "example": "Bagasi mobil ini cukup besar, koper dan kardus itu pasti muat.",
+    "example_cn": "这辆车的后备箱够大，那个行李箱和纸箱肯定装得下。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 08:00"
+    ]
+  },
+  {
+    "word": "memindahkan",
+    "cn": "移动；搬到别处；转移",
+    "en": "to move something; to transfer",
+    "root": "pindah",
+    "root_cn": "搬；移动",
+    "example": "Kami memindahkan meja kerja ke dekat jendela supaya ruangannya lebih sejuk.",
+    "example_cn": "我们把办公桌移到窗边，这样房间会凉快一点。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 08:00"
+    ]
+  },
+  {
+    "word": "invoice",
+    "cn": "发票；账单（商业往来）",
+    "en": "invoice; bill for payment",
+    "root": "invoice",
+    "root_cn": "发票；账单（英语借词）",
+    "example": "Bisa tolong kirim invoice-nya ke email saya? Biar bagian keuangan bisa langsung memprosesnya.",
+    "example_cn": "能不能请把账单发到我的邮箱？这样财务部门可以马上处理。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 08:00"
+    ]
+  },
+  {
+    "word": "praktis",
+    "cn": "方便；省事；实用",
+    "en": "practical; convenient",
+    "root": "praktis",
+    "root_cn": "方便；实用",
+    "example": "Bawa tas kecil lebih praktis daripada koper kalau cuma menginap semalam.",
+    "example_cn": "只住一晚的话，带小包比带行李箱方便。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 08:00"
+    ]
+  },
+  {
+    "word": "berikutnya",
+    "cn": "下一个；接下来的",
+    "en": "next; following",
+    "root": "ikut",
+    "root_cn": "跟随；参加",
+    "example": "Terima kasih atas pertanyaannya, pertanyaan berikutnya silakan dari Bapak yang di belakang.",
+    "example_cn": "谢谢这个提问，下一个问题请后面那位先生提。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 08:00"
+    ]
+  },
+  {
+    "word": "hafal",
+    "cn": "记住；背得出；很熟悉",
+    "en": "to know by heart; to be familiar with",
+    "root": "hafal",
+    "root_cn": "背诵；熟记",
+    "example": "Aku nggak hafal nomor teleponnya, semuanya tersimpan di HP.",
+    "example_cn": "我记不住他的电话号码，全都存在手机里。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-07"
+    ],
+    "lesson_occurrences": [
+      "2026-10-07 08:00"
     ]
   }
 ];
