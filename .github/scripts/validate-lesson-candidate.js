@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
-const {checkPm}=require('./review-rotation');
+const {checkPm,checkExposure}=require('./review-rotation');
 
 /** Only completed core-review exposures count; a PM application is not another core review. */
 function collectReviewHistory(index,targetDate,targetSession,load){
@@ -223,6 +223,11 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
      const groupWords=g=>ws(vocab.filter(v=>v?.source_group===g));
      for(const e of checkPm({date,runtime,rotation,reviewHistory,review:groupWords('review'),application:groupWords('application'),newWords:groupWords('new'),amReview:[...amReviewWords]}))add(e.code,e.detail);
     }
+    // Exposure ledger (2026-10-08+): application counts as an active exposure; no core slot right after an active
+    // exposure or on the third day in a row. Only raised when enough legal alternatives exist (see review-rotation.js).
+    {const g=gr=>ws(vocab.filter(v=>v?.source_group===gr));
+     const sel=session==='am'?{review:ws(lesson.review_vocab),application:[],newWords:vw}:{review:g('review'),application:g('application'),newWords:g('new')};
+     for(const e of checkExposure({date,session,runtime,rotation,reviewHistory,...sel,amVocab:[...amNewWords]}))add(e.code,e.detail);}
    }
   }
   return {ok:errors.length===0,errors,date,session,baselineWatermark:runtime.lesson_watermark,proposedFlag:date+"."+session+"=true"};

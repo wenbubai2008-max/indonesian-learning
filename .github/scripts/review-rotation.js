@@ -16,20 +16,39 @@ function config(rotation,date){
  return {
   recent:on(r.recent_core,'2026-10-04')?{days:Number(r.recent_core.window_days)||4,max:Number.isInteger(r.recent_core.max_per_pm)?r.recent_core.max_per_pm:2}:null,
   focus:on(r.focus_quota,'2026-10-04')?{min:Number.isInteger(r.focus_quota.min)?r.focus_quota.min:2,max:Number.isInteger(r.focus_quota.max)?r.focus_quota.max:3}:null,
-  appAm:on(r.application_am_review,'2026-10-04')
+  appAm:on(r.application_am_review,'2026-10-04'),
+  ledger:ledgerConfig(r,date)
  };
 }
 
+/**
+ * Exposure ledger (2026-10-08): an application card is an ACTIVE exposure just like a core review, and a word that
+ * keeps appearing (any slot, text included) on consecutive days is cooled down. Off when the rules block is absent.
+ */
+function ledgerConfig(r,date){
+ const x=r&&r.exposure_ledger;
+ if(!(x&&typeof x==='object'&&x.enabled===true&&date>=(x.effective_date||'2026-10-08')))return null;
+ const int=(v,d)=>Number.isInteger(v)&&v>0?v:d,cap=x.fresh_error_cap||{};
+ return {lessons:int(x.recent_active_lessons,2),streak:int(x.streak_days,3),
+  capMin:int(cap.min,2),capMax:int(cap.max,3),minDue:int(cap.min_due,3),hard:int(x.hard_word_wrong_count,3)};
+}
+const lessonTime=h=>Date.parse(h.date+'T'+(h.session==='am'?'08:00:00':h.date<'2026-09-16'?'19:00:00':'18:00:00')+'+07:00');
+/** Active exposures of one lesson: AM.review_vocab; PM review, plus PM application when the ledger is on. */
+function activeWords(h,ledger){
+ if(h.session==='am')return ws(h.review_vocab);
+ return ws((h.vocab||[]).filter(v=>v&&(v.source_group==='review'||(ledger&&v.source_group==='application'))));
+}
+
 /** reviewHistory: completed AM/PM lesson JSON objects of the last 7 days (same shape as collectReviewHistory). */
-function analyze({date,session,runtime,reviewHistory}){
+function analyze({date,session,runtime,reviewHistory,ledger=null}){
  const at=Date.parse(date+'T00:00:00Z');
  const exposures=new Map(),stamps=[];
  const completed=(reviewHistory||[]).slice().sort((a,b)=>(a.date+' '+a.session).localeCompare(b.date+' '+b.session));
  for(const h of completed){
   if(!h||!['am','pm'].includes(h.session))continue;
-  const time=Date.parse(h.date+'T'+(h.session==='am'?'08:00:00':h.date<'2026-09-16'?'19:00:00':'18:00:00')+'+07:00');
-  const words=h.session==='am'?ws(h.review_vocab):ws((h.vocab||[]).filter(v=>v&&v.source_group==='review'));
-  const rec={date:h.date,session:h.session,time,words:new Set(words)};
+  const time=lessonTime(h);
+  const words=activeWords(h,ledger);
+  const rec={date:h.date,session:h.session,time,words:new Set(words),lesson:h};
   stamps.push(rec);
   for(const w of words){if(!exposures.has(w))exposures.set(w,[]);exposures.get(w).push(rec)}
  }
@@ -43,17 +62,40 @@ function analyze({date,session,runtime,reviewHistory}){
   const list=exposures.get(w)||[],last=list.length?list[list.length-1]:null;
   const row=rows.get(w),wrong=Array.isArray(row)?Date.parse(row[3]||''):NaN;
   // A wrong answer is "new" only if it is later than the latest formal core review of that word.
-  const fresh=!!last&&Number.isFinite(wrong)&&Number.isFinite(generatedAt)&&wrong>last.time&&wrong<=generatedAt+300000;
+  // Ledger: a word with no active exposure in the 7-day window but a wrong answer inside that window is also a
+  // fresh error (wrong in training, never re-practised in a lesson since) -> it belongs to the error pool.
+  const valid=Number.isFinite(wrong)&&Number.isFinite(generatedAt)&&wrong<=generatedAt+300000;
+  const fresh=valid&&(last?wrong>last.time:!!ledger&&wrong>=at-7*DAY);
   const daysAgo=last?Math.round((at-Date.parse(last.date+'T00:00:00Z'))/DAY):null;
   return {word:w,count:list.length,last,daysAgo,fresh,wrong,priority:Array.isArray(row)?Number(row[1]):9,wrongCount:Array.isArray(row)?Number(row[2])||0:0,focus:focus.has(w)};
  };
- const blocked=w=>{ // original cooldowns, unchanged
-  const i=info(w);if(i.fresh)return false;
+ const original=w=>{ // original cooldowns, unchanged (with the ledger on, PM application counts as an exposure)
   if(session==='pm'&&sameDayAm&&sameDayAm.words.has(w))return true;
   if(session==='am'&&latest&&latest.session==='pm'&&latest.words.has(w))return true;
   return pms.length===2&&pms.every(x=>x.words.has(w))&&(at-Date.parse(pms[1].date+'T00:00:00Z'))<=3*DAY;
  };
- return {info,blocked,sameDayAm,exposures,stamps,reviewPool:new Set(rows.keys()),focus};
+ // Ledger 1: active in any of the last N completed lessons (AM review / PM review / PM application) -> no core slot now.
+ const lastLessons=ledger?stamps.slice(-ledger.lessons):[];
+ const activeRecent=w=>!!ledger&&lastLessons.some(x=>x.words.has(w));
+ // Ledger 2: appearing in ANY form (core list, reading, dialogue, sentences, examples) on each of the previous
+ // streak-1 days, with at least one active exposure among them, would make this lesson the streak-th day in a row.
+ const dayOf=x=>Math.round((at-Date.parse(x.date+'T00:00:00Z'))/DAY);
+ const texts=ledger?stamps.map(x=>({day:dayOf(x),words:x.words,text:lessonText(x.lesson)})):[];
+ const streakCache=new Map();
+ const streak=w=>{
+  if(!ledger)return false;
+  if(streakCache.has(w))return streakCache.get(w);
+  const re=new RegExp('(^|[^a-z])'+reEsc(w)+'([^a-z]|$)');
+  const seen=new Set(),act=new Set();
+  for(const x of texts){if(x.words.has(w)){seen.add(x.day);act.add(x.day)}else if(re.test(x.text))seen.add(x.day)}
+  const need=ledger.streak-1,ends=session==='pm'?[0,1]:[1];
+  let hit=false;
+  for(const e of ends){const days=Array.from({length:need},(_,k)=>e+k);if(days.every(d=>seen.has(d))&&days.some(d=>act.has(d))){hit=true;break}}
+  streakCache.set(w,hit);return hit;
+ };
+ const why=w=>{const i=info(w);if(i.fresh)return [];const r=[];if(original(w))r.push('cooldown');if(activeRecent(w))r.push('active_last_'+ledger.lessons+'_lessons');if(streak(w))r.push('streak_'+ledger.streak+'_days');return r};
+ const blocked=w=>why(w).length>0;
+ return {info,blocked,why,activeRecent,streak,sameDayAm,exposures,stamps,reviewPool:new Set(rows.keys()),focus,ledger};
 }
 
 const isRecent=(i,days)=>i.count>0&&i.daysAgo!=null&&i.daysAgo<=days;
@@ -79,7 +121,7 @@ function eligibleAlternatives(ctx,used,cfg){
 function checkPm({date,runtime,rotation,reviewHistory,review,application,newWords,amReview}){
  const cfg=config(rotation,date),errors=[];
  if(!cfg.recent&&!cfg.focus&&!cfg.appAm)return errors;
- const ctx=analyze({date,session:'pm',runtime,reviewHistory});
+ const ctx=analyze({date,session:'pm',runtime,reviewHistory,ledger:cfg.ledger});
  const used=new Set([...review,...application,...newWords]);
  const alts=eligibleAlternatives(ctx,used,cfg);
  if(cfg.recent){
@@ -106,15 +148,38 @@ function checkPm({date,runtime,rotation,reviewHistory,review,application,newWord
 }
 
 /**
+ * Exposure-ledger validator errors for AM review_vocab or PM review/application. Only raised when enough legal,
+ * non-cooling alternatives exist, so it never deadlocks publication; a fresh real error always exempts the word.
+ */
+function checkExposure({date,session,runtime,rotation,reviewHistory,review=[],application=[],newWords=[],amVocab=[]}){
+ const cfg=config(rotation,date),errors=[];
+ if(!cfg.ledger)return errors;
+ const ctx=analyze({date,session,runtime,reviewHistory,ledger:cfg.ledger});
+ const used=new Set([...review,...application,...newWords]);
+ const alts=eligibleAlternatives(ctx,used,cfg);
+ const hits=review.filter(w=>ctx.blocked(w));
+ if(hits.length&&alts.length>=hits.length)errors.push({code:session==='am'?'AM_EXPOSURE_COOLDOWN':'PM_EXPOSURE_COOLDOWN',
+  detail:'Core-review words still cooling down under the exposure ledger (application counts as an exposure; a word may not be active in the last '+cfg.ledger.lessons+' lessons or appear '+cfg.ledger.streak+' days in a row) while '+alts.length+' eligible alternatives exist: '+hits.map(w=>w+'('+ctx.why(w).join('+')+')').join(', ')});
+ if(session==='pm'){
+  const am=new Set(amVocab.map(norm));
+  const appHits=application.filter(w=>ctx.blocked(w)&&!am.has(w));
+  const appAlts=[...new Set([...alts,...[...am].filter(w=>ctx.reviewPool.has(w)&&!used.has(w))])];
+  if(appHits.length&&appAlts.length>=appHits.length)errors.push({code:'PM_APPLICATION_EXPOSURE_COOLDOWN',
+   detail:'Full application cards must not reuse words that were active in the last '+cfg.ledger.lessons+' lessons or appeared '+cfg.ledger.streak+' days in a row when other legal application words exist: '+appHits.map(w=>w+'('+ctx.why(w).join('+')+')').join(', ')});
+ }
+ return errors;
+}
+
+/**
  * Deterministic candidate ranking + recommended PM selection (what the 17:30 generator must start from).
  * Score favours: fresh real error > never/long-ago core exposure > lower exposure count > memory priority.
  */
 /** Days since each word's last lesson exposure (taught / AM review / PM new+review; application excluded), from a long lesson history. */
-function lastExposureDays(date,longHistory){
+function lastExposureDays(date,longHistory,includeApplication=false){
  const last=new Map(),at=Date.parse(date+'T00:00:00Z');
  for(const h of longHistory||[]){
   if(!h||!['am','pm'].includes(h.session)||!(h.date<date))continue;
-  const list=h.session==='am'?[...(h.vocab||[]),...(h.review_vocab||[])]:(h.vocab||[]).filter(v=>!(v&&v.source_group==='application'));
+  const list=h.session==='am'?[...(h.vocab||[]),...(h.review_vocab||[])]:(h.vocab||[]).filter(v=>includeApplication||!(v&&v.source_group==='application'));
   for(const v of list){const w=word(v);if(w&&(!last.has(w)||last.get(w)<h.date))last.set(w,h.date)}
  }
  return new Map([...last].map(([w,d])=>[w,Math.round((at-Date.parse(d+'T00:00:00Z'))/DAY)]));
@@ -122,35 +187,43 @@ function lastExposureDays(date,longHistory){
 // Stale bonus: only beyond the 7-day window, capped (30) so it never outranks a fresh real error (+100).
 const staleBonus=d=>d==null||d<=7?0:Math.min(30,Math.round((d-7)*0.75));
 
-function rank({date,runtime,rotation,reviewHistory,longHistory=null,reviewCount=5,amVocab=[],amReview=[]}){
- const cfg=config(rotation,date),ctx=analyze({date,session:'pm',runtime,reviewHistory});
- const stale=longHistory?lastExposureDays(date,longHistory):new Map();
+function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null,reviewCount=5,amVocab=[],amReview=[]}){
+ const cfg=config(rotation,date),L=cfg.ledger,ctx=analyze({date,session,runtime,reviewHistory,ledger:L});
+ const pmRules=session==='pm'; // recent-4-day cap and focus quota are PM rules
+ const recentCfg=pmRules?cfg.recent:null,focusCfg=pmRules?cfg.focus:null;
+ const stale=longHistory?lastExposureDays(date,longHistory,!!L):new Map();
  const am=new Set(amReview.map(norm)),penalty={0:0,1:12,2:25};
  const items=[...ctx.reviewPool].map(w=>{
   const i=ctx.info(w),reasons=[];
   let score=0;
-  if(i.fresh){score+=100;reasons.push('fresh_error_after_last_core_review')}
+  if(i.fresh){score+=100;reasons.push(L?'fresh_error_after_last_active_exposure':'fresh_error_after_last_core_review')}
   const p=i.count>=3?45:(penalty[i.count]||0);score-=p;if(p)reasons.push('exposure_'+i.count+'_in_7d(-'+p+')');
   if(i.daysAgo==null){score+=10;reasons.push('no_core_review_in_7d')}else score+=Math.min(i.daysAgo,7);
   if(i.priority===1){score+=6;reasons.push('priority1')}
   if(i.wrongCount>0&&!i.fresh)reasons.push('older_wrong_not_counted_as_new');
   score+=Math.min(i.wrongCount,3);
+  const hard=!!L&&i.wrongCount>=L.hard;
+  if(hard)reasons.push('hard_word_'+i.wrongCount+'_wrongs(换题型/辨析讲解)');
   const staleDays=stale.has(w)?stale.get(w):null,sb=staleBonus(staleDays);
   if(sb){score+=sb;reasons.push('stale_'+staleDays+'d(+'+sb+')')}
-  const blocked=ctx.blocked(w),recent=cfg.recent?isRecent(i,cfg.recent.days)&&!i.fresh:false;
-  return {word:w,score,stale_days:staleDays,legacy:i.priority===5,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,focus:i.focus,recent4:recent,blocked,am_core:am.has(w),reasons};
+  const why=ctx.why(w),blocked=why.length>0,recent=recentCfg?isRecent(i,recentCfg.days)&&!i.fresh:false;
+  if(blocked)reasons.push('blocked:'+why.join('+'));
+  return {word:w,score,stale_days:staleDays,legacy:i.priority===5,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,hard,focus:i.focus,recent4:recent,blocked,blocked_by:why,am_core:am.has(w),reasons};
  }).sort((a,b)=>b.score-a.score||a.word.localeCompare(b.word));
  const usable=items.filter(x=>!x.blocked&&(x.count<3||x.fresh));
- const pick=[];let recentUsed=0,heavyUsed=0,focusUsed=0,legacyUsed=0; // legacy = taught words without a weakness record (priority 5): at most 1 per PM
+ // Fresh-error quota: errors come back next lesson, but never crowd out the due words (ledger only).
+ const errCap=L?Math.min(L.capMax,Math.max(L.capMin,reviewCount-L.minDue)):Infinity;
+ const pick=[];let recentUsed=0,heavyUsed=0,focusUsed=0,legacyUsed=0,freshUsed=0; // legacy = taught words without a weakness record (priority 5): at most 1 per lesson
  const fits=(x,ignoreFocusCap)=>{
-  if(x.recent4&&cfg.recent&&recentUsed>=cfg.recent.max)return false;
+  if(x.recent4&&recentCfg&&recentUsed>=recentCfg.max)return false;
   if(x.count>=3&&heavyUsed>=1)return false;
   if(x.legacy&&legacyUsed>=1)return false;
-  if(!ignoreFocusCap&&cfg.focus&&x.focus&&focusUsed>=cfg.focus.max)return false;
+  if(x.fresh&&freshUsed>=errCap)return false;
+  if(!ignoreFocusCap&&focusCfg&&x.focus&&focusUsed>=focusCfg.max)return false;
   return true;
  };
- const take=x=>{pick.push(x);if(x.recent4)recentUsed++;if(x.count>=3)heavyUsed++;if(x.focus)focusUsed++;if(x.legacy)legacyUsed++};
- const focusMin=cfg.focus?cfg.focus.min:0;
+ const take=x=>{pick.push(x);if(x.recent4)recentUsed++;if(x.count>=3)heavyUsed++;if(x.focus)focusUsed++;if(x.legacy)legacyUsed++;if(x.fresh)freshUsed++};
+ const focusMin=focusCfg?focusCfg.min:0;
  for(const x of usable){if(pick.length>=focusMin)break;if(x.focus&&fits(x))take(x)}
  for(const x of usable){if(pick.length>=reviewCount)break;if(!pick.includes(x)&&fits(x))take(x)}
  const notes=[];
@@ -159,13 +232,17 @@ function rank({date,runtime,rotation,reviewHistory,longHistory=null,reviewCount=
    if(!pick.includes(x)){take(x);notes.push('fallback_used:'+x.word)}}
  }
  const used=new Set(pick.map(x=>x.word));
+ const deferred=usable.filter(x=>x.fresh&&!used.has(x.word)).map(x=>x.word);
+ if(deferred.length)notes.push('fresh_errors_deferred_to_next_lesson:'+deferred.join(','));
  const amSet=new Set(amVocab.map(norm));
- const apps=items.filter(x=>!used.has(x.word)&&!x.am_core&&!x.legacy).sort((a,b)=>(amSet.has(b.word)-amSet.has(a.word))||b.score-a.score||a.word.localeCompare(b.word))
-  .slice(0,6).map(x=>({word:x.word,from_today_am_vocab:amSet.has(x.word)}));
- return {date,review_pool_size:items.length,recent_window_days:cfg.recent?cfg.recent.days:null,
+ const apps=pmRules?items.filter(x=>!used.has(x.word)&&!x.am_core&&!x.legacy&&!(L&&x.blocked&&!amSet.has(x.word))).sort((a,b)=>(amSet.has(b.word)-amSet.has(a.word))||b.score-a.score||a.word.localeCompare(b.word))
+  .slice(0,6).map(x=>({word:x.word,from_today_am_vocab:amSet.has(x.word),fresh:x.fresh,hard:x.hard})):[];
+ // Words actively used very recently (or on a streak): keep them out of tonight's reading/dialogue/examples too.
+ const avoid=L?items.filter(x=>!used.has(x.word)&&!amSet.has(x.word)&&x.blocked_by.some(r=>r.startsWith('active_')||r.startsWith('streak_'))).map(x=>x.word).sort():[];
+ return {date,session,review_pool_size:items.length,recent_window_days:recentCfg?recentCfg.days:null,
   recommended_review:pick.map(x=>x.word),recommended_detail:pick,
-  counts:{recent4:recentUsed,focus:focusUsed,heavy_3plus:heavyUsed},
-  application_candidates:apps,notes,ranking_top:items.filter(x=>!x.blocked).slice(0,25)};
+  counts:{recent4:recentUsed,focus:focusUsed,heavy_3plus:heavyUsed,fresh_errors:freshUsed,fresh_error_cap:Number.isFinite(errCap)?errCap:null},
+  fresh_errors_deferred:deferred,application_candidates:apps,avoid_in_text:avoid,notes,ranking_top:items.filter(x=>!x.blocked).slice(0,25)};
 }
 
 /** All Indonesian text of a lesson (reading, sentences, dialogue, example sentences) plus the core word lists. Lower-cased. */
@@ -208,4 +285,4 @@ function naturalRecurrence({date,runtime,longHistory,exclude=[],count=12}){
   guidance:'Weave these into reading / dialogue / example sentences (about 6-8 per lesson, earlier entries first). They do not count as core review or application and never replace them.'};
 }
 
-module.exports={config,analyze,checkPm,rank,naturalRecurrence,lessonText,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};
+module.exports={config,analyze,checkPm,checkExposure,activeWords,rank,naturalRecurrence,lessonText,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};

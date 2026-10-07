@@ -179,6 +179,90 @@ t('H3 legacy flag follows priority 5; lessonText covers reading, sentences, dial
  for(const x of ['r1','s1','s2','d1','e1','w1','v1'])assert.ok(txt.includes(x),x);
 });
 
+// L. Exposure ledger (2026-10-08): application counts as an active exposure; 3-day streaks cool down; fresh-error quota.
+// Real case behind it: nggak heran was a PM application on 10-04, 10-05, 10-06 and became a core review on 10-07.
+{
+const {checkExposure,rank:rankL}=require('./review-rotation');
+const LEDGER={enabled:true,effective_date:'2026-10-08',recent_active_lessons:2,streak_days:3,fresh_error_cap:{min:2,max:3,min_due:3},hard_word_wrong_count:3};
+const rotL={...rotation,exposure_ledger:LEDGER};
+const POOL=['nggak heran','ngerjain','mengatur','keberatan','menurut','biar','a1','a2','a3','a4','a5','a6','a7','a8','am1','am2'];
+const rtL=(over={})=>({generated_at:'2026-10-10T10:00:00.000Z',review_pool:POOL.map(w=>[w,1,over[w]&&over[w].wrongs||1,over[w]&&over[w].wrong||'2026-09-29T10:00:00.000Z','','中','','']),focus_pool:[]});
+const amL=(date,review=[],extra={})=>({date,session:'am',vocab:[],review_vocab:review,...extra});
+const pmL=(date,groups={},extra={})=>({date,session:'pm',vocab:Object.entries(groups).flatMap(([g,ws])=>ws.map(word=>({word,source_group:g}))),...extra});
+// 10-07..10-09 history: nggak heran is application on 10-07 and 10-08 PM (two nights in a row).
+const histApp=()=>[amL('2026-10-07'),pmL('2026-10-07',{application:['nggak heran']}),amL('2026-10-08'),pmL('2026-10-08',{application:['nggak heran']}),amL('2026-10-09',[],{vocab:[{word:'am1'},{word:'am2'}]})];
+const exp=(sel,hist,rt=rtL(),date='2026-10-09',session='pm')=>checkExposure({date,session,runtime:rt,rotation:rotL,reviewHistory:hist,review:sel.review||[],application:sel.application||[],newWords:sel.new||[],amVocab:sel.amVocab||[]});
+t('L1 an application last night blocks tonight\'s core review (the nggak heran case)',()=>{
+ const r=exp({review:['nggak heran','a1','a2','a3'],application:['am1','am2']},histApp());
+ assert.deepEqual(codes(r),['PM_EXPOSURE_COOLDOWN']);
+ assert.match(r[0].detail,/nggak heran\(.*active_last_2_lessons/);
+});
+t('L2 the same word cannot take a third application card either; today\'s AM new words stay allowed',()=>{
+ assert.deepEqual(codes(exp({review:['a1','a2','a3','a4'],application:['nggak heran','am1']},histApp())),['PM_APPLICATION_EXPOSURE_COOLDOWN']);
+ assert.deepEqual(exp({review:['a1','a2','a3','a4'],application:['am1','am2'],amVocab:['am1','am2']},histApp()),[]);
+});
+t('L3 a fresh real error after the last ACTIVE exposure (application included) releases the word',()=>{
+ const after=rtL({'nggak heran':{wrong:'2026-10-08T12:00:00.000Z'}}); // 19:00 WIB, after the 18:00 application
+ assert.deepEqual(exp({review:['nggak heran','a1','a2','a3'],application:['am1','am2']},histApp(),after),[]);
+ const before=rtL({'nggak heran':{wrong:'2026-10-08T10:30:00.000Z'}}); // 17:30 WIB, before that application: not new
+ assert.deepEqual(codes(exp({review:['nggak heran','a1','a2','a3'],application:['am1','am2']},histApp(),before)),['PM_EXPOSURE_COOLDOWN']);
+});
+t('L4 three days in a row in any form (with one active exposure) is blocked; a pure-text streak is not',()=>{
+ const hist=[amL('2026-10-07'),pmL('2026-10-07',{application:['ngerjain']}),amL('2026-10-08'),pmL('2026-10-08',{},{reading:{text:'Aku lagi ngerjain PR, biar cepat.'}}),amL('2026-10-09',[],{reading:{text:'Biar aman, kita pulang.'}})];
+ const r=exp({review:['ngerjain','a1','a2','a3'],application:['am1','am2']},hist);
+ assert.deepEqual(codes(r),['PM_EXPOSURE_COOLDOWN']);assert.match(r[0].detail,/ngerjain\(streak_3_days\)/);
+ const hist2=[amL('2026-10-07',[],{reading:{text:'biar'}}),pmL('2026-10-07',{},{reading:{text:'biar'}}),amL('2026-10-08',[],{reading:{text:'biar'}}),pmL('2026-10-08',{},{reading:{text:'biar'}}),amL('2026-10-09',[],{reading:{text:'biar'}})];
+ assert.deepEqual(exp({review:['biar','a1','a2','a3'],application:['am1','am2']},hist2),[],'everyday text words are never locked out of review');
+});
+t('L5 no deadlock: blocked words are allowed when legal alternatives are insufficient',()=>{
+ const rt=rtL();rt.review_pool=rt.review_pool.filter(r=>['nggak heran','a1','a2','a3','am1','am2'].includes(r[0]));
+ assert.deepEqual(exp({review:['nggak heran','a1','a2','a3'],application:['am1','am2']},histApp(),rt),[]);
+});
+t('L6 ledger off (absent or before 2026-10-08) changes nothing',()=>{
+ const sel={review:['nggak heran','a1','a2','a3'],application:['nggak heran']};
+ assert.deepEqual(checkExposure({date:'2026-10-09',session:'pm',runtime:rtL(),rotation,reviewHistory:histApp(),...sel,newWords:[]}),[]);
+ assert.deepEqual(checkExposure({date:'2026-10-07',session:'pm',runtime:rtL(),rotation:rotL,reviewHistory:histApp(),...sel,newWords:[]}),[]);
+ const off=rankL({date:'2026-10-09',runtime:rtL(),rotation,reviewHistory:histApp(),reviewCount:5});
+ assert.deepEqual(off.avoid_in_text,[]);assert.equal(off.counts.fresh_error_cap,null);
+});
+t('L7 ranking: never recommends a cooling word, lists it in avoid_in_text, and passes its own checks (AM and PM)',()=>{
+ const out=rankL({date:'2026-10-09',runtime:rtL(),rotation:rotL,reviewHistory:histApp(),reviewCount:5,amVocab:['am1','am2']});
+ assert.ok(!out.recommended_review.includes('nggak heran'));
+ assert.ok(!out.application_candidates.some(x=>x.word==='nggak heran'));
+ assert.deepEqual(out.avoid_in_text,['nggak heran']);
+ const apps=out.application_candidates.slice(0,2).map(x=>x.word);
+ assert.deepEqual(apps,['am1','am2'],'today\'s AM new words lead the application list');
+ assert.deepEqual(exp({review:out.recommended_review,application:apps,amVocab:['am1','am2']},histApp()),[]);
+ const amHist=histApp().slice(0,4); // tomorrow-morning view: last two lessons are 10-08 AM and 10-08 PM
+ const amOut=rankL({date:'2026-10-09',session:'am',runtime:rtL(),rotation:rotL,reviewHistory:amHist,reviewCount:5});
+ assert.equal(amOut.session,'am');assert.ok(!amOut.recommended_review.includes('nggak heran'));assert.deepEqual(amOut.application_candidates,[]);
+ assert.deepEqual(exp({review:amOut.recommended_review},amHist,rtL(),'2026-10-09','am'),[]);
+ assert.deepEqual(codes(exp({review:['nggak heran','a1','a2','a3']},amHist,rtL(),'2026-10-09','am')),['AM_EXPOSURE_COOLDOWN']);
+});
+t('L8 fresh-error quota: at most 2 of 5 (3 of 6) go to errors, the rest to due words; extras are deferred, hard words flagged',()=>{
+ const over={};for(const w of ['a1','a2','a3','a4'])over[w]={wrong:'2026-10-09T12:00:00.000Z'}; // all after any exposure
+ over.a1.wrongs=4;
+ const hist=[amL('2026-10-08'),pmL('2026-10-08',{review:['a1','a2','a3','a4']}),amL('2026-10-09')];
+ const five=rankL({date:'2026-10-09',runtime:rtL(over),rotation:rotL,reviewHistory:hist,reviewCount:5});
+ assert.equal(five.recommended_detail.filter(x=>x.fresh).length,2);assert.equal(five.counts.fresh_error_cap,2);
+ assert.equal(five.recommended_review.length,5);assert.equal(five.fresh_errors_deferred.length,2);
+ const six=rankL({date:'2026-10-09',runtime:rtL(over),rotation:rotL,reviewHistory:hist,reviewCount:6});
+ assert.equal(six.recommended_detail.filter(x=>x.fresh).length,3);
+ assert.ok(five.recommended_detail.find(x=>x.word==='a1').hard,'4 wrongs => hard word');
+ const legacy=rankL({date:'2026-10-09',runtime:rtL(over),rotation,reviewHistory:hist,reviewCount:5});
+ assert.equal(legacy.recommended_detail.filter(x=>x.fresh).length,4,'without the ledger the old behaviour (errors first, no cap) is kept');
+});
+t('L9 a recent training error on a word with no lesson exposure in 7 days joins the error pool (ledger only)',()=>{
+ const over={a5:{wrong:'2026-10-07T03:00:00.000Z'},a6:{wrong:'2026-09-20T03:00:00.000Z'}};
+ const hist=[amL('2026-10-08'),pmL('2026-10-08',{review:['a1']}),amL('2026-10-09')];
+ const on=rankL({date:'2026-10-09',runtime:rtL(over),rotation:rotL,reviewHistory:hist,reviewCount:5});
+ assert.ok(on.recommended_detail.find(x=>x.word==='a5').fresh,'wrong 2 days ago, never re-practised => fresh');
+ assert.ok(!on.ranking_top.find(x=>x.word==='a6').fresh,'wrong outside the 7-day window => not fresh');
+ const off=rankL({date:'2026-10-09',runtime:rtL(over),rotation,reviewHistory:hist,reviewCount:5});
+ assert.ok(!off.ranking_top.find(x=>x.word==='a5').fresh,'legacy semantics unchanged without the ledger');
+});
+}
+
 // Integration through the real validator() using the shared PM fixture of test-lesson-candidate.js.
 module.exports=function integration(makePm,validate){
  const day='2026-09-28';
