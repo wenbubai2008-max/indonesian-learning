@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T08:58:34.604Z",
+  "updated_at": "2026-10-08T09:03:01.078Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1715,17 +1715,17 @@
     "yakin": {
       "word": "yakin",
       "status": "active",
-      "updated_at": "2026-09-30T14:04:29.914Z",
+      "updated_at": "2026-10-08T09:02:37.491Z",
       "display": "yakin",
       "cn": "确信；确定；有把握",
       "root": "yakin",
       "root_cn": "确信；相信",
-      "last_review": "2026-09-30T14:04:29.886Z",
+      "last_review": "2026-10-08T09:02:37.464Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 5
+      "right_streak": 6
     },
     "selanjutnya": {
       "word": "selanjutnya",
@@ -2203,16 +2203,16 @@
     "kebanyakan": {
       "word": "kebanyakan",
       "status": "active",
-      "updated_at": "2026-09-30T14:04:35.603Z",
+      "updated_at": "2026-10-08T09:02:46.334Z",
       "display": "kebanyakan",
       "cn": "太多；大多数",
       "root": "banyak",
-      "last_review": "2026-09-30T14:04:35.577Z",
+      "last_review": "2026-10-08T09:02:46.308Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "pohon": {
       "word": "pohon",
@@ -2289,14 +2289,14 @@
     "luas": {
       "word": "luas",
       "status": "active",
-      "updated_at": "2026-09-30T14:04:31.312Z",
+      "updated_at": "2026-10-08T09:02:39.928Z",
       "display": "luas",
-      "last_review": "2026-09-30T14:04:31.285Z",
+      "last_review": "2026-10-08T09:02:39.901Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 3
+      "right_streak": 4
     },
     "terbuka": {
       "word": "terbuka",
@@ -2874,14 +2874,19 @@
     "tumbuh": {
       "word": "tumbuh",
       "status": "active",
-      "updated_at": "2026-09-30T14:04:39.559Z",
+      "updated_at": "2026-10-08T09:02:50.640Z",
       "display": "tumbuh",
-      "last_review": "2026-09-30T14:04:39.533Z",
+      "cn": "生长",
+      "root": "tumbuh",
+      "root_cn": "生长；成长",
+      "last_wrong": "2026-10-08T09:02:50.613Z",
+      "last_review": "2026-10-08T09:02:50.613Z",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "quick_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 3
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "menutup": {
       "word": "menutup",
