@@ -275,6 +275,17 @@ for(const x of [...focusExposed.map(f=>reviewByKey.get(key(f[0]))).filter(Boolea
   const k=key(x&&x[0]);if(!k||mergedSeen.has(k))continue;mergedSeen.add(k);mergedReview.push(x);if(mergedReview.length>=60)break;
 }
 reviewExposed=mergedReview;
+// Rotation slots (2026-10-08): the 60 slots above are ~90% priority-1 (quick_wrong) words, so the other ~370 A ∩ D
+// words could never become a core review. Add up to 40 more, the ones that have gone longest without appearing in a
+// lesson (daily-vocab last_seen, oldest first; ties: higher priority, then word). The ranker's stale bonus, cooldowns
+// and quotas then decide; every A ∩ D word eventually rotates in. Counts used by the profile stay unchanged.
+const REVIEW_ROTATION_MAX=40;
+const rotationSeen=new Set(reviewExposed.map(x=>key(x[0])));
+const lastSeenOf=x=>String((dailyMeta.get(key(x[0]))||{}).last_seen||'');
+const rotationExposed=reviewFull.filter(x=>!rotationSeen.has(key(x[0])))
+  .sort((a,b)=>lastSeenOf(a).localeCompare(lastSeenOf(b))||(a[1]-b[1])||String(a[0]).localeCompare(String(b[0])))
+  .slice(0,REVIEW_ROTATION_MAX);
+reviewExposed=[...reviewExposed,...rotationExposed];
 
 // Legacy unverified (2026-10-07): taught words with NO weakness record can never be in A ∩ D, so lessons never review them.
 // Expose the stalest few at the lowest priority (5), appended after the normal pool. review_pool_total_full and every
@@ -350,6 +361,7 @@ const runtime={
     legacy_unverified_total_full:legacyFull.length,
     legacy_unverified_exposed:legacyExposed.length,
     same_day_am_review_exposed:sameDayAmExposed.length,
+    review_rotation_exposed:rotationExposed.length,
     recurrence_pool_total_full:recurrenceFull.length,
     recurrence_pool_exposed:recurrencePool.length,
     review_pool_exposed:reviewExposed.length,

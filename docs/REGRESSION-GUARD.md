@@ -366,3 +366,11 @@
 - **做法**：`build-learning-runtime.js` 在 `lesson_watermark` 是 08:00 课时，把该课首次教的、属于 A ∩ D 的词追加到 `review_pool` 末尾（新增 `stats.same_day_am_review_exposed`）。`review-rotation.js` 的排序不把它们推荐为晚课重点复习，只放在 application 候选最前面。watermark 是 18:00 时不追加，次日早课不受影响。
 - **不变**：`review_pool_total_full` 与所有 A ∩ D 计数（画像依赖）、复习公式、冷却与轮换规则、课程合同。
 - **验证**：用 10-08 晚课前的真实数据重建 runtime，追加了当天 10 个早课词，重点复习推荐不变，application 候选变为当天早课词；watermark 为 18:00 时追加 0 个。测试 L11。
+
+## 16. 2026-10-08 复习词轮换范围放宽（用户决定）
+
+- **问题**：`review_pool` 只暴露前 60 个复习词，其中 53 个是 priority-1（quick_wrong）词；其余约 370 个“学过但未掌握”的词永远进不了早晚课核心复习，只能偶尔在课文中出现。这也是“同几个词反复出现”的根源之一。
+- **做法**：`build-learning-runtime.js` 在原 60 个之后再追加最多 40 个最久没在课程中出现的其他 A ∩ D 词（daily-vocab `last_seen` 最早优先），新增 `stats.review_rotation_exposed`；规则见 `review_rotation.review_pool_rotation`。
+- **效果（用 10-08 晚课后数据模拟 10-09 早课）**：推荐从 nyusahin、tumbuh、terjadi、melawan、memanggil 变为 nyusahin、tumbuh、keuntungan、memutuskan、mengganggu。新错仍优先，另外 3 个换成 47–48 天没出现的词。
+- **不变**：A ∩ D 定义与计数（画像依赖）、冷却、轮换、错词配额、focus 配额（晚课仍保证 2–3 个 focus 词）、课程合同。
+- **晚课模拟（10-08 晚课前数据）**：ceria、melepaskan（focus＋新错）＋ keuntungan、mengganggu、peningkatan（47 天未出现）；application 为当天早课词；checkPm / checkExposure / checkCore 全部通过。
