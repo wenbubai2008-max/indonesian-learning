@@ -2686,21 +2686,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-08-24 19:00",
+    "last_seen": "2026-10-08 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-24"
+      "2026-08-24",
+      "2026-10-08"
     ],
     "example": "Saya berencana untuk pergi besok.",
     "example_cn": "我计划明天去。",
     "lesson_occurrences": [
-      "2026-08-24 19:00"
+      "2026-08-24 19:00",
+      "2026-10-08 08:00"
     ]
   },
   {
@@ -7397,22 +7401,25 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-10-08 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-08"
     ],
     "example": "Telepon saya tadi kepotong sebelum kamu selesai bicara.",
     "example_cn": "你话还没说完，我刚才的电话就断了。",
     "lesson_occurrences": [
       "2026-09-07 19:00",
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-10-08 08:00"
     ]
   },
   {
@@ -8512,26 +8519,30 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-10-08 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-10",
       "2026-09-11",
-      "2026-09-16"
+      "2026-09-16",
+      "2026-10-08"
     ],
     "example": "Kalau semua tugas dikasih ke satu orang, nanti nggak kepegang.",
     "example_cn": "如果所有任务都给一个人，最后会顾不过来。",
     "lesson_occurrences": [
       "2026-09-10 19:00",
       "2026-09-11 19:00",
-      "2026-09-16 18:00"
+      "2026-09-16 18:00",
+      "2026-10-08 08:00"
     ]
   },
   {
@@ -8634,9 +8645,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-10-08 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -8646,7 +8657,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-19",
       "2026-09-20",
       "2026-09-21",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-08"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
@@ -8655,7 +8667,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-20 08:00",
       "2026-09-21 08:00",
       "2026-09-21 18:00",
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-10-08 08:00"
     ]
   },
   {
@@ -8832,17 +8845,20 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-09-18 18:00",
+    "last_seen": "2026-10-08 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-10-08"
     ],
     "lesson_occurrences": [
-      "2026-09-18 18:00"
+      "2026-09-18 18:00",
+      "2026-10-08 08:00"
     ]
   },
   {
@@ -18382,6 +18398,258 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-07 18:00"
+    ]
+  },
+  {
+    "word": "melempar",
+    "cn": "扔；投；丢",
+    "en": "to throw",
+    "root": "lempar",
+    "root_cn": "扔；投",
+    "example": "Ada anak yang melempar bola ke arah jendela rumah saya, untung kacanya tidak pecah.",
+    "example_cn": "有个孩子把球扔向我家的窗户，幸好玻璃没碎。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 08:00"
+    ]
+  },
+  {
+    "word": "mematuhi",
+    "cn": "遵守；服从",
+    "en": "to obey; to comply with",
+    "root": "patuh",
+    "root_cn": "顺从；遵守",
+    "example": "Semua penghuni wajib mematuhi aturan parkir di kompleks ini.",
+    "example_cn": "所有住户都必须遵守这个小区的停车规定。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 08:00"
+    ]
+  },
+  {
+    "word": "membela",
+    "cn": "维护；为……辩护；替……说话",
+    "en": "to defend; to stand up for",
+    "root": "bela",
+    "root_cn": "保卫；袒护",
+    "example": "Waktu semua orang menyalahkan Dimas, hanya Bu Rina yang membela dia.",
+    "example_cn": "大家都在怪迪马斯的时候，只有丽娜女士替他说话。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 08:00"
+    ]
+  },
+  {
+    "word": "mencuri",
+    "cn": "偷；盗窃",
+    "en": "to steal",
+    "root": "curi",
+    "root_cn": "偷",
+    "example": "Katanya ada orang yang mencuri dompet di pasar tadi pagi.",
+    "example_cn": "听说今天早上有人在市场偷了钱包。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 08:00"
+    ]
+  },
+  {
+    "word": "kejam",
+    "cn": "残忍；狠心；过分",
+    "en": "cruel; harsh",
+    "root": "kejam",
+    "root_cn": "残忍",
+    "example": "Menuduh anak kecil tanpa bukti itu kejam banget.",
+    "example_cn": "没有证据就指控小孩子，太过分了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 08:00"
+    ]
+  },
+  {
+    "word": "dilarang",
+    "cn": "被禁止；禁止",
+    "en": "prohibited; not allowed",
+    "root": "larang",
+    "root_cn": "禁止",
+    "example": "Di taman ini anak-anak dilarang melempar batu ke arah kolam.",
+    "example_cn": "在这个公园里，孩子们被禁止往池塘里扔石头。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 08:00"
+    ]
+  },
+  {
+    "word": "penjara",
+    "cn": "监狱；牢房",
+    "en": "prison; jail",
+    "root": "penjara",
+    "root_cn": "监狱",
+    "example": "Kalau terbukti bersalah, pencuri itu bisa masuk penjara.",
+    "example_cn": "如果证实有罪，那个小偷可能会被关进监狱。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 08:00"
+    ]
+  },
+  {
+    "word": "berpartisipasi",
+    "cn": "参与；参加（活动、讨论）",
+    "en": "to participate",
+    "root": "partisipasi",
+    "root_cn": "参与",
+    "example": "Warga diajak berpartisipasi dalam kerja bakti membersihkan selokan.",
+    "example_cn": "居民被邀请参与清理水沟的义务劳动。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 08:00"
+    ]
+  },
+  {
+    "word": "cenderung",
+    "cn": "倾向于；容易（做某事）",
+    "en": "to tend to; inclined",
+    "root": "cenderung",
+    "root_cn": "倾向",
+    "example": "Kalau lagi panik, orang cenderung langsung menyalahkan siapa saja.",
+    "example_cn": "人一慌，往往就会立刻怪罪身边的任何人。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 08:00"
+    ]
+  },
+  {
+    "word": "tepat",
+    "cn": "准确的；恰好；正好",
+    "en": "exact; precise; right on",
+    "root": "tepat",
+    "root_cn": "准确；恰好",
+    "example": "Pak RT datang tepat waktu, jadi suasananya tidak sempat makin panas.",
+    "example_cn": "里长准时赶到，所以气氛没来得及变得更紧张。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 08:00"
     ]
   }
 ];

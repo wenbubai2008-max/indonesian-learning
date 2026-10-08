@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-08",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 48
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-07T15:02:25.727Z",
-    "lesson_watermark": "2026-10-07 18:00",
-    "index_updated": "2026-10-07",
-    "runtime_hash": "13f0271841602f094669aae43f0b2f617cab7e096dda9aa35d51cf551582c101",
-    "index_hash": "bceba50f1283d6ba1f04a77c09d923d0d058e39508ce73a2142b20e45f3ab314",
+    "runtime_generated_at": "2026-10-08T00:27:59.950Z",
+    "lesson_watermark": "2026-10-08 08:00",
+    "index_updated": "2026-10-08",
+    "runtime_hash": "cb0cd27a813b0d6ecd91a1038db253e5a41433bf3986f3d372da938cc2954c2a",
+    "index_hash": "e297c65830793e75888c00827799f9e01241d55488e9d714e70044e7d210f956",
     "rules_hash": "f991ee4da64be1724e9cffbd3cb3558c7e8d51a7233bbfa73dd4e6077683b551"
   },
   "schema": {
@@ -50,26 +50,6 @@
   "candidates": {
     "new_dont": [
       [
-        "berpartisipasi",
-        "参与"
-      ],
-      [
-        "melempar",
-        "扔 / 投掷"
-      ],
-      [
-        "mematuhi",
-        "遵守 / 服从"
-      ],
-      [
-        "membela",
-        "辩护 / 保卫"
-      ],
-      [
-        "mencuri",
-        "偷"
-      ],
-      [
         "menggosok",
         "擦洗 / 摩擦"
       ],
@@ -92,10 +72,6 @@
       [
         "menguasai",
         "控制 / 支配"
-      ],
-      [
-        "kejam",
-        "残酷的"
       ],
       [
         "kenal",
@@ -132,10 +108,6 @@
       [
         "menyediakan",
         "提供"
-      ],
-      [
-        "cenderung",
-        "倾向于"
       ],
       [
         "keberadaan",
@@ -196,18 +168,6 @@
       [
         "curi",
         "偷"
-      ],
-      [
-        "penjara",
-        "监狱"
-      ],
-      [
-        "dilarang",
-        "被禁止；禁止"
-      ],
-      [
-        "tepat",
-        "正好/整点"
       ],
       [
         "berjalan-jalan",
@@ -688,6 +648,46 @@
       [
         "panggung",
         "舞台"
+      ],
+      [
+        "konser",
+        "音乐会"
+      ],
+      [
+        "golongan darah",
+        "血型"
+      ],
+      [
+        "berlaku sampai",
+        "有效期至"
+      ],
+      [
+        "silsilah keluarga",
+        "家谱/家庭关系图"
+      ],
+      [
+        "jerapah",
+        "长颈鹿"
+      ],
+      [
+        "kijang",
+        "麂/小鹿"
+      ],
+      [
+        "macan kumbang",
+        "黑豹"
+      ],
+      [
+        "kangguru",
+        "袋鼠"
+      ],
+      [
+        "unta",
+        "骆驼"
+      ],
+      [
+        "tapir",
+        "貘"
       ]
     ],
     "new_fuzzy": [
@@ -1948,16 +1948,6 @@
         ""
       ],
       [
-        "berencana",
-        5,
-        0,
-        "",
-        "",
-        "计划",
-        "rencana",
-        ""
-      ],
-      [
         "terbiasa",
         5,
         0,
@@ -2034,6 +2024,16 @@
         "",
         "",
         "没时间/来不及",
+        "",
+        ""
+      ],
+      [
+        "belum sempat",
+        5,
+        0,
+        "",
+        "",
+        "还没来得及",
         "",
         ""
       ]
@@ -2442,14 +2442,6 @@
         "fuzzy"
       ],
       [
-        "mencuri",
-        "通用",
-        "nyolong",
-        "curi",
-        741,
-        "dont"
-      ],
-      [
         "mengukur",
         "通用",
         "ngukur",
@@ -2520,14 +2512,6 @@
         "balas",
         750,
         "fuzzy"
-      ],
-      [
-        "membela",
-        "通用",
-        "ngebelain",
-        "bela",
-        751,
-        "dont"
       ]
     ]
   },
@@ -2807,6 +2791,29 @@
         "mengumpulkan",
         "mengetik"
       ]
+    },
+    {
+      "date": "2026-10-08",
+      "session": "am",
+      "review_core": [
+        "berencana",
+        "nggak kepegang",
+        "nyimak",
+        "kepotong",
+        "nangkep"
+      ],
+      "new_words": [
+        "melempar",
+        "mematuhi",
+        "membela",
+        "mencuri",
+        "kejam",
+        "dilarang",
+        "penjara",
+        "berpartisipasi",
+        "cenderung",
+        "tepat"
+      ]
     }
   ],
   "previous_pm": {
@@ -2824,7 +2831,88 @@
       "nggak heran"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-08",
+    "vocab": [
+      [
+        "melempar",
+        "扔；投；丢",
+        "to throw",
+        "lempar",
+        "扔；投"
+      ],
+      [
+        "mematuhi",
+        "遵守；服从",
+        "to obey; to comply with",
+        "patuh",
+        "顺从；遵守"
+      ],
+      [
+        "membela",
+        "维护；为……辩护；替……说话",
+        "to defend; to stand up for",
+        "bela",
+        "保卫；袒护"
+      ],
+      [
+        "mencuri",
+        "偷；盗窃",
+        "to steal",
+        "curi",
+        "偷"
+      ],
+      [
+        "kejam",
+        "残忍；狠心；过分",
+        "cruel; harsh",
+        "kejam",
+        "残忍"
+      ],
+      [
+        "dilarang",
+        "被禁止；禁止",
+        "prohibited; not allowed",
+        "larang",
+        "禁止"
+      ],
+      [
+        "penjara",
+        "监狱；牢房",
+        "prison; jail",
+        "penjara",
+        "监狱"
+      ],
+      [
+        "berpartisipasi",
+        "参与；参加（活动、讨论）",
+        "to participate",
+        "partisipasi",
+        "参与"
+      ],
+      [
+        "cenderung",
+        "倾向于；容易（做某事）",
+        "to tend to; inclined",
+        "cenderung",
+        "倾向"
+      ],
+      [
+        "tepat",
+        "准确的；恰好；正好",
+        "exact; precise; right on",
+        "tepat",
+        "准确；恰好"
+      ]
+    ],
+    "review_vocab": [
+      "berencana",
+      "nggak kepegang",
+      "nyimak",
+      "kepotong",
+      "nangkep"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
