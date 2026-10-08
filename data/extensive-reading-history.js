@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261007-posyandu-enam-layanan-surabaya","date":"2026-10-07","title":"Posyandu di Surabaya Kini Menghubungkan Enam Layanan Dasar","title_cn":"泗水社区服务站如今连接六类基础服务","path":"data/extensive-reading-history/2026-10-07.js"},
 {"id":"er-20261006-mobile-jkn-seijang","date":"2026-10-06","title":"Daftar dari Rumah, Waktu Tunggu di Puskesmas Jadi Lebih Singkat","title_cn":"在家预约，去社区卫生中心看病不用久等","path":"data/extensive-reading-history/2026-10-06.js"},
 {"id":"er-20261005-pasar-murah-pontianak","date":"2026-10-05","title":"Pasar Murah Hadir di Tengah Car Free Day Pontianak","title_cn":"Pontianak 无车日里的平价市场：运动后顺便买菜","path":"data/extensive-reading-history/2026-10-05.js"},
 {"id":"er-20261004-air-bersih-pagak","date":"2026-10-04","title":"Air Bersih untuk Warga Pagak, Sumur Bor Masih Dikaji","title_cn":"Pagak 居民获得清洁用水援助，钻井方案仍在研究","path":"data/extensive-reading-history/2026-10-04.js"},
