@@ -278,6 +278,13 @@
       "hard_word_rule": "累计答错≥3次的词标为hard_word：复习时换题型（造句/中译印/辨析），并加一句近义辨析或典型搭配讲解，不只重复词卡。软规则",
       "validator": "AM_EXPOSURE_COOLDOWN / PM_EXPOSURE_COOLDOWN / PM_APPLICATION_EXPOSURE_COOLDOWN：只在合法替代充足时报错，不卡发布；当天AM新词进application不受限",
       "ranking": "node .github/scripts/rank-review-candidates.js --date D --session am|pm；输出recommended_review、application_candidates、avoid_in_text、fresh_errors_deferred、natural_recurrence"
+    },
+    "review_pool_rotation": {
+      "enabled": true,
+      "effective_date": "2026-10-09",
+      "rule": "runtime.review_pool 在原有 60 个（focus 优先、按优先级排序）之后，再追加最多 40 个“最久没在课程中出现”的其他 A ∩ D 词（daily-vocab last_seen 最早的优先），让所有学过未掌握的词都能轮到核心复习。原 60 个里约 9 成是 priority-1 词，其余约 370 个词此前永远进不了核心复习。",
+      "not_changed": "A ∩ D 定义与计数、冷却、轮换、错词配额、focus 配额、课程合同都不变；选哪几个仍由 rank-review-candidates.js 的排序决定（久未出现加分封顶 30，真实新错 +100）。",
+      "why": "2026-10-08 用户决定放宽复习范围"
     }
   }
 }
