@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T01:45:51.655Z",
+  "updated_at": "2026-10-08T01:47:49.466Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -6543,8 +6543,9 @@
     "hakim": {
       "word": "hakim",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-08T01:47:38.900Z",
       "display": "hakim",
+      "cn": "法官",
       "reasons": [
         "memory_dont"
       ],
