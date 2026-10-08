@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-08",
-    "session": "pm",
-    "time": "18:00",
-    "day": 48
+    "date": "2026-10-09",
+    "session": "am",
+    "time": "08:00",
+    "day": 49
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-08T09:36:31.712Z",
-    "lesson_watermark": "2026-10-08 08:00",
+    "runtime_generated_at": "2026-10-08T10:44:25.190Z",
+    "lesson_watermark": "2026-10-08 18:00",
     "index_updated": "2026-10-08",
-    "runtime_hash": "180277ea7a0ba141c3b02eed7af76ebf6bf65991178011df01fd7d1290748f17",
-    "index_hash": "e297c65830793e75888c00827799f9e01241d55488e9d714e70044e7d210f956",
+    "runtime_hash": "b3e3179527a90377785452603f8609343fcdd29dc18199d22bd9a8fabd407620",
+    "index_hash": "f67ce0a95f5d22cf0fd271ff43ff5f9ab1a26ca80858a0dc7c68c3b8779a2422",
     "rules_hash": "f991ee4da64be1724e9cffbd3cb3558c7e8d51a7233bbfa73dd4e6077683b551"
   },
   "schema": {
@@ -148,14 +148,6 @@
       [
         "pecat",
         "解雇"
-      ],
-      [
-        "diterima",
-        "被接受；被录用"
-      ],
-      [
-        "bandingkan",
-        "比较"
       ],
       [
         "berguna",
@@ -688,6 +680,14 @@
       [
         "tapir",
         "貘"
+      ],
+      [
+        "lemari pajangan",
+        "展示柜"
+      ],
+      [
+        "pot bunga",
+        "花盆"
       ]
     ],
     "new_fuzzy": [
@@ -858,10 +858,6 @@
       [
         "mengakhiri",
         "结束"
-      ],
-      [
-        "tidak sabar",
-        "不耐烦的"
       ],
       [
         "kotak",
@@ -1200,10 +1196,6 @@
         "需要的"
       ],
       [
-        "kontrak",
-        "合同；租约"
-      ],
-      [
         "putuskan",
         "决定"
       ],
@@ -1330,6 +1322,14 @@
       [
         "cerah",
         "晴朗；明亮"
+      ],
+      [
+        "berawan",
+        "多云"
+      ],
+      [
+        "pilek",
+        "感冒流鼻涕"
       ],
       [
         "mual",
@@ -1958,16 +1958,6 @@
         ""
       ],
       [
-        "berubah",
-        5,
-        0,
-        "",
-        "",
-        "改变、发生变化",
-        "ubah",
-        ""
-      ],
-      [
         "melanjutkan",
         5,
         0,
@@ -2034,6 +2024,16 @@
         "",
         "",
         "还没来得及",
+        "",
+        ""
+      ],
+      [
+        "nanti dulu",
+        5,
+        0,
+        "",
+        "",
+        "先等等",
         "",
         ""
       ]
@@ -2458,14 +2458,6 @@
         "dont"
       ],
       [
-        "tidak sabar",
-        "通用",
-        "nggak sabar",
-        "sabar",
-        744,
-        "fuzzy"
-      ],
-      [
         "tidak adil",
         "通用",
         "nggak adil",
@@ -2516,46 +2508,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-01",
-      "session": "am",
-      "review_core": [
-        "niat",
-        "mengeluh",
-        "memanggil",
-        "melawan",
-        "bebas"
-      ],
-      "new_words": [
-        "mundur",
-        "biarpun",
-        "haus",
-        "meledak",
-        "meletakkan",
-        "memeluk",
-        "mengunduh",
-        "menuduh",
-        "menyembuhkan",
-        "seandainya"
-      ]
-    },
-    {
-      "date": "2026-10-01",
-      "session": "pm",
-      "review_core": [
-        "nyinggung",
-        "keberatan",
-        "kelabakan",
-        "ngirit",
-        "menunjukkan"
-      ],
-      "new_words": [
-        "sesudah",
-        "awan",
-        "membunuh",
-        "mengalir"
-      ]
-    },
     {
       "date": "2026-10-02",
       "session": "am",
@@ -2814,105 +2766,42 @@
         "cenderung",
         "tepat"
       ]
+    },
+    {
+      "date": "2026-10-08",
+      "session": "pm",
+      "review_core": [
+        "ceria",
+        "melepaskan",
+        "berubah",
+        "ngeh",
+        "kelabakan"
+      ],
+      "new_words": [
+        "tidak sabar",
+        "kontrak",
+        "diterima",
+        "bandingkan"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-07",
+    "date": "2026-10-08",
     "new_words": [
-      "meminjam",
-      "mengumpulkan",
-      "mengetik"
+      "tidak sabar",
+      "kontrak",
+      "diterima",
+      "bandingkan"
     ],
     "review_core": [
-      "mengatur",
-      "keberatan",
-      "menurut",
-      "ngerjain",
-      "nggak heran"
+      "ceria",
+      "melepaskan",
+      "berubah",
+      "ngeh",
+      "kelabakan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-08",
-    "vocab": [
-      [
-        "melempar",
-        "扔；投；丢",
-        "to throw",
-        "lempar",
-        "扔；投"
-      ],
-      [
-        "mematuhi",
-        "遵守；服从",
-        "to obey; to comply with",
-        "patuh",
-        "顺从；遵守"
-      ],
-      [
-        "membela",
-        "维护；为……辩护；替……说话",
-        "to defend; to stand up for",
-        "bela",
-        "保卫；袒护"
-      ],
-      [
-        "mencuri",
-        "偷；盗窃",
-        "to steal",
-        "curi",
-        "偷"
-      ],
-      [
-        "kejam",
-        "残忍；狠心；过分",
-        "cruel; harsh",
-        "kejam",
-        "残忍"
-      ],
-      [
-        "dilarang",
-        "被禁止；禁止",
-        "prohibited; not allowed",
-        "larang",
-        "禁止"
-      ],
-      [
-        "penjara",
-        "监狱；牢房",
-        "prison; jail",
-        "penjara",
-        "监狱"
-      ],
-      [
-        "berpartisipasi",
-        "参与；参加（活动、讨论）",
-        "to participate",
-        "partisipasi",
-        "参与"
-      ],
-      [
-        "cenderung",
-        "倾向于；容易（做某事）",
-        "to tend to; inclined",
-        "cenderung",
-        "倾向"
-      ],
-      [
-        "tepat",
-        "准确的；恰好；正好",
-        "exact; precise; right on",
-        "tepat",
-        "准确；恰好"
-      ]
-    ],
-    "review_vocab": [
-      "berencana",
-      "nggak kepegang",
-      "nyimak",
-      "kepotong",
-      "nangkep"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

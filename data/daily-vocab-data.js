@@ -2406,29 +2406,34 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "berubah",
     "cn": "改变、发生变化",
-    "en": "",
+    "en": "to change; to become different",
     "root": "ubah",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-23 19:00",
-    "last_seen": "2026-08-24 19:00",
+    "last_seen": "2026-10-08 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-23",
-      "2026-08-24"
+      "2026-08-24",
+      "2026-10-08"
     ],
-    "example": "Situasinya sudah berubah.",
-    "example_cn": "情况已经变了。",
+    "example": "Sejak pindah ke Surabaya, sifat Dika banyak berubah.",
+    "example_cn": "自从搬到泗水以后，Dika 的性格变了很多。",
     "lesson_occurrences": [
       "2026-08-23 19:00",
-      "2026-08-24 19:00"
-    ]
+      "2026-08-24 19:00",
+      "2026-10-08 18:00"
+    ],
+    "root_cn": "改变"
   },
   {
     "word": "memutuskan",
@@ -7146,16 +7151,16 @@ window.DAILY_VOCAB_DB = [
     "en": "save money; cut spending; be frugal",
     "root": "irit",
     "root_cn": "节省；省着用",
-    "example": "Kami lagi ngirit, jadi jangan cetak dokumen yang tidak perlu.",
-    "example_cn": "我们正在省钱，所以别打印没必要的文件。",
+    "example": "Gajian masih lama, jadi minggu ini aku harus ngirit.",
+    "example_cn": "离发工资还早，所以这周我得省着花。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-08 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -7163,12 +7168,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-07",
       "2026-09-29",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-08"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
       "2026-09-29 18:00",
-      "2026-10-01 18:00"
+      "2026-10-01 18:00",
+      "2026-10-08 18:00"
     ]
   },
   {
@@ -8094,27 +8101,29 @@ window.DAILY_VOCAB_DB = [
     "en": "relax; take it easy",
     "root": "santai",
     "root_cn": "轻松；悠闲",
-    "example": "Kalau semua sudah siap, kita bisa nyantai sebentar.",
-    "example_cn": "如果都准备好了，我们可以稍微放松一下。",
+    "example": "Akhir pekan ini aku cuma mau nyantai di rumah.",
+    "example_cn": "这个周末我只想在家放松。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-10-02 18:00",
+    "last_seen": "2026-10-08 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-09",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-08"
     ],
     "lesson_occurrences": [
       "2026-09-09 08:00",
-      "2026-10-02 18:00"
+      "2026-10-02 18:00",
+      "2026-10-08 18:00"
     ]
   },
   {
@@ -8557,9 +8566,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-08 18:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -8570,16 +8579,18 @@ window.DAILY_VOCAB_DB = [
       "2026-09-17",
       "2026-09-18",
       "2026-09-28",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-08"
     ],
-    "example": "Kalau semua datang bersamaan, tim bisa kelabakan.",
-    "example_cn": "如果所有事情同时来，团队可能会手忙脚乱。",
+    "example": "Pelanggan datang bersamaan, jadi kasirnya kelabakan.",
+    "example_cn": "顾客同时涌来，收银员手忙脚乱。",
     "lesson_occurrences": [
       "2026-09-10 19:00",
       "2026-09-17 18:00",
       "2026-09-18 08:00",
       "2026-09-28 08:00",
-      "2026-10-01 18:00"
+      "2026-10-01 18:00",
+      "2026-10-08 18:00"
     ]
   },
   {
@@ -8806,17 +8817,17 @@ window.DAILY_VOCAB_DB = [
     "en": "realize; notice",
     "root": "ngeh",
     "root_cn": "意识到；注意到",
-    "example": "Saya baru ngeh kalau file yang tadi salah.",
-    "example_cn": "我才意识到刚才的文件错了。",
+    "example": "Aku baru ngeh kalau kunci motorku ketinggalan di kantor.",
+    "example_cn": "我这才反应过来，摩托车钥匙落在公司了。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-28 18:00",
+    "last_seen": "2026-10-08 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -8824,12 +8835,14 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-08"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
       "2026-09-11 19:00",
-      "2026-09-28 18:00"
+      "2026-09-28 18:00",
+      "2026-10-08 18:00"
     ]
   },
   {
@@ -12552,23 +12565,25 @@ window.DAILY_VOCAB_DB = [
     "en": "cheerful; bright",
     "root": "ceria",
     "root_cn": "开朗；愉快",
-    "example": "Walaupun tadi ada masalah, dia tetap terlihat ceria saat bertemu teman-temannya.",
-    "example_cn": "虽然刚才有问题，但见到朋友时她看起来仍然很开朗。",
+    "example": "Setelah liburan, Dika kelihatan jauh lebih ceria.",
+    "example_cn": "度假回来以后，Dika 看起来开朗多了。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-23 18:00",
-    "last_seen": "2026-09-23 18:00",
+    "last_seen": "2026-10-08 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-23"
+      "2026-09-23",
+      "2026-10-08"
     ],
     "lesson_occurrences": [
-      "2026-09-23 18:00"
+      "2026-09-23 18:00",
+      "2026-10-08 18:00"
     ]
   },
   {
@@ -12880,26 +12895,28 @@ window.DAILY_VOCAB_DB = [
     "en": "release; let go",
     "root": "lepas",
     "root_cn": "脱离；松开",
-    "example": "Sebelum wawancara, dia mencoba melepaskan ketegangan dengan menarik napas.",
-    "example_cn": "面试前，他试着通过呼吸来释放紧张。",
+    "example": "Dia tidak mau melepaskan kesempatan belajar di luar negeri.",
+    "example_cn": "她不想放弃去国外学习的机会。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-09-24 18:00",
+    "last_seen": "2026-10-08 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-24"
+      "2026-09-24",
+      "2026-10-08"
     ],
     "lesson_occurrences": [
       "2026-09-24 08:00",
-      "2026-09-24 18:00"
+      "2026-09-24 18:00",
+      "2026-10-08 18:00"
     ]
   },
   {
@@ -13624,17 +13641,17 @@ window.DAILY_VOCAB_DB = [
     "en": "run away; flee",
     "root": "kabur",
     "root_cn": "逃跑；溜走",
-    "example": "Orang itu kabur sebelum petugas datang.",
-    "example_cn": "工作人员到之前，那个人就跑了。",
+    "example": "Begitu pintu dibuka, kucing itu langsung kabur ke luar.",
+    "example_cn": "门一打开，那只猫就跑出去了。",
     "categories": [
       "每日学习",
       "08:00",
       "口语",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-08 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13643,13 +13660,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-25",
       "2026-09-29",
       "2026-09-30",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-08"
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00",
       "2026-09-29 08:00",
       "2026-09-30 18:00",
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-10-08 18:00"
     ]
   },
   {
@@ -18650,6 +18669,107 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-08 08:00"
+    ]
+  },
+  {
+    "word": "tidak sabar",
+    "cn": "迫不及待；不耐烦",
+    "en": "can't wait; impatient",
+    "root": "sabar",
+    "root_cn": "耐心",
+    "example": "Aku tidak sabar ingin tahu hasil wawancaranya.",
+    "example_cn": "我迫不及待想知道面试的结果。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 18:00",
+    "last_seen": "2026-10-08 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 18:00"
+    ]
+  },
+  {
+    "word": "kontrak",
+    "cn": "合同；租约（有期限的约定）",
+    "en": "contract",
+    "root": "kontrak",
+    "root_cn": "合同",
+    "example": "Kontrak kerjanya cuma setahun, tapi gajinya cukup besar.",
+    "example_cn": "他的工作合同只有一年，不过工资相当不错。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 18:00",
+    "last_seen": "2026-10-08 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 18:00"
+    ]
+  },
+  {
+    "word": "diterima",
+    "cn": "被接受；被录用",
+    "en": "accepted; hired",
+    "root": "terima",
+    "root_cn": "接受；收到",
+    "example": "Kabar baiknya, aku diterima kerja di toko online itu.",
+    "example_cn": "好消息是，我被那家网店录用了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 18:00",
+    "last_seen": "2026-10-08 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 18:00"
+    ]
+  },
+  {
+    "word": "bandingkan",
+    "cn": "比较（请你比较）",
+    "en": "compare",
+    "root": "banding",
+    "root_cn": "比较；对比",
+    "example": "Coba bandingkan harga dua laptop itu sebelum memilih.",
+    "example_cn": "选之前先比较一下那两台笔记本的价格。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-08 18:00",
+    "last_seen": "2026-10-08 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-08"
+    ],
+    "lesson_occurrences": [
+      "2026-10-08 18:00"
     ]
   }
 ];
