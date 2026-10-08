@@ -29,7 +29,9 @@
 - “tugas ini sudah nanggung kalau berhenti sekarang”不自然，放进口语引语更好：“Udah nanggung, jangan berhenti sekarang!”
 - “tidak punya hak ikut ujian”生硬，更自然是 “tidak boleh mengikuti ujian” 或 “akan kehilangan hak untuk mengikuti ujian”。
 
-凡是把名词直接接在不及物/被动动词后面、或自己造出来的“固定搭配”，都要问一遍本地人是否真这样说；不确定就改成更完整、更常见的说法。不要为展示词根或派生形式造不自然的搭配；也不要一味追求俚语，A2+→B1 仍需规范实用的印尼语。
+凡是把名词直接接在不及物/被动动词后面、或自己造出来的“固定搭配”，都要问一遍本地人是否真这样说；不确定就改成更完整、更常见的说法。
+
+**目标词入句检查（Day 48 点评，必须）：** 每个核心词放进阅读、对话、例句、rewrite 参考答案后，先单独问：这个搭配是不是本地人真会这么说？不能只因为“要复现这个词”就保留。真实反例：`Melepaskan gaji yang lebih besar` 不自然（放弃的是工作机会，不是工资），应写 `Melepaskan tawaran dengan gaji yang lebih besar`；`Nyantai aja dulu` 能懂，但劝人别急更自然是 `Santai aja dulu`，nyantai 更适合作动作：`Kita nyantai dulu aja`。为复现词而写、带明显刻意感的句子（如为 kabur 硬写的玩笑）宁可删掉。不要为展示词根或派生形式造不自然的搭配；也不要一味追求俚语，A2+→B1 仍需规范实用的印尼语。
 
 ## 2. 词卡准确性审稿 + 反例测试
 
@@ -47,6 +49,7 @@
 - 真实反例：第 1 句“我爷爷上个月去世了”，第 4 句却“爷爷的病相当严重，到现在体力还没恢复”。发现矛盾就改句子（例如改成 “Sebelum meninggal, kondisi kakek rupanya sudah cukup parah. Kekuatan tubuhnya makin berkurang.”），保留已锁定的核心词，不得更换合法核心词。
 - 人物的情绪、评价或决定（如 rugi banget、kesel、terpaksa）出现前，必须已交代原因。真实反例：Bu Sari 突然说 “Aduh, rugi banget hari ini!”，前面应补 “Karena harus ke UGD, warungnya terpaksa tutup lebih awal.”。在事实表里给每个情绪/评价句标出“原因句”，没有就补，篇幅仍控制在要求范围内。
 - 晚课 application 词若标注“今天08:00新学 / 今天08:00复习过的老词”，来源必须真实。
+- **早课来源回查（Day 48 点评，必须）：** 凡是课程里任何地方（词卡 usage_note/formation、rewrite、题目、复盘）写“今天早课学过 / 今天08:00新学 / 今天08:00复习过”的词，发布前必须回查当天 `data/daily/YYYY-MM-DD-am.json` 的 `vocab` 与 `review_vocab`，逐词确认真的在里面。真实反例：rewrite 写“用今天早课学过的 dilarang 和 ngeh”，但 ngeh 并不在当天 AM 里（它是历史弱项池的重点复习词）。不在 AM 里的词只能写“此前已学的弱项词”或直接不提来源。
 
 ## 4. 阅读
 
