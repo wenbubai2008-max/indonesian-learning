@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T08:41:42.894Z",
+  "updated_at": "2026-10-08T08:58:34.604Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -28912,6 +28912,22 @@
       ],
       "wrong_count": 1,
       "right_streak": 1
+    },
+    "nyusahin": {
+      "word": "nyusahin",
+      "status": "active",
+      "updated_at": "2026-10-08T08:58:24.136Z",
+      "display": "nyusahin",
+      "cn": "给别人添麻烦；让事情变困难（口语）",
+      "root": "susah",
+      "root_cn": "困难；麻烦",
+      "last_wrong": "2026-10-08T08:58:24.107Z",
+      "last_review": "2026-10-08T08:58:24.107Z",
+      "reasons": [
+        "quick_wrong"
+      ],
+      "wrong_count": 1,
+      "right_streak": 0
     }
   }
 }
