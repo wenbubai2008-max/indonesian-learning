@@ -1,0 +1,371 @@
+{
+  "date": "2026-10-08",
+  "session": "pm",
+  "time": "18:00",
+  "day": 48,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜两份工作，一个决定",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "tidak sabar",
+    "kontrak",
+    "diterima",
+    "bandingkan"
+  ],
+  "vocab": [
+    {
+      "display": "tidak sabar",
+      "audio_text": "tidak sabar",
+      "is_new": true,
+      "is_oral_new": true,
+      "word": "tidak sabar",
+      "cn": "迫不及待；不耐烦",
+      "en": "can't wait; impatient",
+      "root": "sabar",
+      "root_cn": "耐心",
+      "formation": "tidak + sabar（不耐心）。sabar＝有耐心，kesabaran＝耐心（名词），sabaran＝没耐心的人常说 nggak sabaran。常见搭配：tidak sabar menunggu（迫不及待地等）、tidak sabar ingin tahu（迫不及待想知道）、tidak sabar lagi（等不及了）。",
+      "example": "Aku tidak sabar ingin tahu hasil wawancaranya.",
+      "example_cn": "我迫不及待想知道面试的结果。",
+      "synonym_note": "tidak sabar（此刻等不及，可以是期待，也可以是不耐烦，看语境）vs nggak sabaran（形容一个人的性格，总是没耐心）：Aku tidak sabar menunggu Senin＝我迫不及待等周一；Dia nggak sabaran＝他是个没耐心的人。反过来安抚别人用 Sabar ya!＝耐心点／别急。",
+      "usage_note": "新词（半熟词，口语词）。后面常接 menunggu／ingin／untuk＋动词。语气正面时＝期待，语气急躁时＝不耐烦，要靠上下文和语调判断。",
+      "source_group": "new"
+    },
+    {
+      "display": "kontrak",
+      "audio_text": "kontrak",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "kontrak",
+      "cn": "合同；租约（有期限的约定）",
+      "en": "contract",
+      "root": "kontrak",
+      "root_cn": "合同",
+      "formation": "借词，本身就是词根。派生：mengontrak＝租（房）、签约；perjanjian 是更泛的“协议”。常见搭配：kontrak kerja（劳动合同）、menandatangani kontrak（签合同）、habis kontrak（合同到期）、kontrak enam bulan（六个月合同）。",
+      "example": "Kontrak kerjanya cuma setahun, tapi gajinya cukup besar.",
+      "example_cn": "他的工作合同只有一年，不过工资相当不错。",
+      "synonym_note": "kontrak（强调有期限的合同或约定）vs perjanjian（泛指各种协议，不一定是工作）：kerja kontrak＝合同制工作，对比无固定期限的 kerja tetap；habis kontrak 用于工作和租房都可以。",
+      "usage_note": "新词（半熟词）。说“签合同”用 menandatangani kontrak；说“合同到期”用 habis kontrak，别说成 mati kontrak。",
+      "source_group": "new"
+    },
+    {
+      "display": "diterima",
+      "audio_text": "diterima",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "diterima",
+      "cn": "被接受；被录用",
+      "en": "accepted; hired",
+      "root": "terima",
+      "root_cn": "接受；收到",
+      "formation": "di- + terima → diterima（被动）。主动形式 menerima＝接受、收到（meN- + terima，t 脱落变 menerima）。常见搭配：diterima kerja（被录用）、diterima di universitas（被大学录取）、lamarannya diterima（申请被接受）、pesannya sudah diterima（信息已收到）。",
+      "example": "Kabar baiknya, aku diterima kerja di toko online itu.",
+      "example_cn": "好消息是，我被那家网店录用了。",
+      "synonym_note": "diterima（被动，主语是被录用的人）vs menerima（主动，主语是接受的一方）：Rina diterima kerja＝Rina 被录用；Toko itu menerima Rina＝那家店录用了 Rina。口语“找到工作”也可以说 dapat kerja。",
+      "usage_note": "新词（不会词）。主语是人时表示“被录用／被录取／被接受”；主语是物（surat、pesan、lamaran）时表示“被收到／被受理”。",
+      "source_group": "new"
+    },
+    {
+      "display": "bandingkan",
+      "audio_text": "bandingkan",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "bandingkan",
+      "cn": "比较（请你比较）",
+      "en": "compare",
+      "root": "banding",
+      "root_cn": "比较；对比",
+      "formation": "banding + -kan → bandingkan（命令式）；陈述句用 membandingkan（meN- + banding + -kan，b 前 meN- 变 mem-）。常见搭配：bandingkan A dengan B（把 A 和 B 比较）、dibanding（相比）、perbandingan harga（价格比较）、tidak sebanding（不相称）。",
+      "example": "Coba bandingkan harga dua laptop itu sebelum memilih.",
+      "example_cn": "选之前先比较一下那两台笔记本的价格。",
+      "synonym_note": "bandingkan／membandingkan（主动去比较，用于做选择）vs dibanding（相比之下，多放在句首说明差距）vs sebanding（相称、价值相当）：Gajinya kecil dibanding perusahaan lain＝和别的公司相比，他的工资不高。",
+      "usage_note": "新词（不会词）。常用结构 bandingkan A dengan B；口语里叫别人比较时直接说 Coba bandingkan dulu。",
+      "source_group": "new"
+    },
+    {
+      "display": "ceria",
+      "audio_text": "ceria",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "ceria",
+      "cn": "开朗的；愉快的；欢快的",
+      "en": "cheerful; bright",
+      "root": "ceria",
+      "root_cn": "开朗；愉快",
+      "formation": "无词缀的形容词。派生：keceriaan＝开朗愉快的气氛。常见搭配：wajah ceria（开朗的神情）、suasana ceria（欢快的气氛）、kelihatan ceria（看起来很开朗）、ceria banget（特别开朗）。",
+      "example": "Setelah liburan, Dika kelihatan jauh lebih ceria.",
+      "example_cn": "度假回来以后，Dika 看起来开朗多了。",
+      "synonym_note": "ceria（表现在脸上、声音和气氛里的开朗有精神，常用来描述别人的样子）vs senang（心里的高兴，说自己也可以）：Aku senang 可以，但“Dia kelihatan ceria”更像是在描述他外在的状态。",
+      "usage_note": "重点复习词（新错，focus）。最常见的用法是 kelihatan ceria；形容气氛、笑容、声音、颜色都可以，用来修饰人的性格时更偏向“开朗”。",
+      "source_group": "review"
+    },
+    {
+      "display": "melepaskan",
+      "audio_text": "melepaskan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "melepaskan",
+      "cn": "放开；放走；放弃",
+      "en": "to let go of; to release; to give up",
+      "root": "lepas",
+      "root_cn": "松开；脱开",
+      "formation": "meN- + lepas + -kan → melepaskan（l 前 meN- 变 me-）。相关：lepas＝松开、脱落；terlepas＝脱开；kelepasan＝不小心松手或说漏嘴。常见搭配：melepaskan pegangan（松手）、melepaskan kesempatan（放弃机会）、melepaskan diri（挣脱）、melepaskan burung（放走鸟）。",
+      "example": "Dia tidak mau melepaskan kesempatan belajar di luar negeri.",
+      "example_cn": "她不想放弃去国外学习的机会。",
+      "synonym_note": "melepaskan（让某物脱离自己：松手、放走、放弃）vs melepas（常指取下或使脱开，如 melepas sepatu／jaket）：两个词有重叠，口语里常直接说 lepas／lepasin。抽象的“放弃机会、放下一件事”优先用 melepaskan。",
+      "usage_note": "重点复习词（新错，focus）。后面接被放开的对象：pegangan、kesempatan、tawaran、burung。想说“放弃”一个选项时，melepaskan 带有“舍不得但还是放手”的味道。",
+      "source_group": "review"
+    },
+    {
+      "display": "berubah",
+      "audio_text": "berubah",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "berubah",
+      "cn": "改变；发生变化",
+      "en": "to change; to become different",
+      "root": "ubah",
+      "root_cn": "改变",
+      "formation": "ber- + ubah → berubah（自己发生变化）。主动及物形式 mengubah＝改变某物（meN- + ubah）；perubahan＝变化。常见搭配：berubah total（完全变了）、cuaca berubah、sifatnya berubah、rencana berubah。",
+      "example": "Sejak pindah ke Surabaya, sifat Dika banyak berubah.",
+      "example_cn": "自从搬到泗水以后，Dika 的性格变了很多。",
+      "synonym_note": "berubah（不及物，主语自己变了）vs mengubah（及物，主语去改变别的东西）：Cuaca berubah＝天气变了；Dia mengubah jadwalnya＝他改了自己的日程。",
+      "usage_note": "重点复习词（弱项池）。berubah 后面不直接接宾语；想说“改变某个东西”要换成 mengubah。常搭 jadi／menjadi 表示变成什么：berubah jadi pemalu。",
+      "source_group": "review"
+    },
+    {
+      "display": "ngeh",
+      "audio_text": "ngeh",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "ngeh",
+      "cn": "意识到；反应过来；留意到",
+      "en": "to notice; to realize (colloquial)",
+      "root": "ngeh",
+      "root_cn": "意识到；注意到",
+      "formation": "口语词（源自爪哇语），没有常规词缀变化。多用在否定、疑问和 baru 之后。常见搭配：baru ngeh（这才反应过来）、nggak ngeh（没留意到）、belum ngeh（还没意识到）、kamu ngeh nggak?（你注意到没有？）。",
+      "example": "Aku baru ngeh kalau kunci motorku ketinggalan di kantor.",
+      "example_cn": "我这才反应过来，摩托车钥匙落在公司了。",
+      "synonym_note": "ngeh（口语，指“后知后觉才留意到”，常配 baru／nggak）vs sadar（意识到、认识到，较正式）vs melihat（看见）：Aku nggak ngeh ada tas di situ＝我没留意到那儿有个包，眼睛可能看到了，只是没往心里去。",
+      "usage_note": "重点复习词（弱项池）。口语词，写正式文章时换成 menyadari。肯定句里最常见的是 baru ngeh。",
+      "source_group": "review"
+    },
+    {
+      "display": "kelabakan",
+      "audio_text": "kelabakan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "kelabakan",
+      "cn": "手忙脚乱；慌着应付",
+      "en": "flustered; scrambling",
+      "root": "kelabakan",
+      "root_cn": "手忙脚乱",
+      "formation": "ke-...-an 形式的常用词，没有常规词根拆分，整词记忆。常见搭配：kelabakan menjawab（慌着回答）、kelabakan cari dompet（手忙脚乱找钱包）、langsung kelabakan（一下子手忙脚乱）。",
+      "example": "Pelanggan datang bersamaan, jadi kasirnya kelabakan.",
+      "example_cn": "顾客同时涌来，收银员手忙脚乱。",
+      "synonym_note": "kelabakan（突然来了很多事，慌得手忙脚乱）vs keteteran（长期应付不过来，进度跟不上）vs panik（情绪上的惊慌）：前者强调“忙乱的动作和状态”，panik 强调“害怕、慌”。",
+      "usage_note": "重点复习词（弱项池）。常用来描述突发情况下的狼狈，不用于形容长期忙碌；长期忙不过来更适合 keteteran。",
+      "source_group": "review"
+    },
+    {
+      "display": "ngirit",
+      "audio_text": "ngirit",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "ngirit",
+      "cn": "省着花；节省开支（口语）",
+      "en": "to economize; to spend sparingly",
+      "root": "irit",
+      "root_cn": "节省；省",
+      "formation": "N- + irit → ngirit（口语鼻音化）。irit＝省的（形容词，如 motor ini irit bensin）；hemat 是更中性的“节约”。常见搭配：ngirit uang jajan、ngirit bensin、harus ngirit bulan ini（这个月得省着花）。",
+      "example": "Gajian masih lama, jadi minggu ini aku harus ngirit.",
+      "example_cn": "离发工资还早，所以这周我得省着花。",
+      "synonym_note": "ngirit（口语，主动省着花钱）vs hemat（中性，正式场合也能用：hemat energi）vs irit（形容词：mobil irit）vs pelit（小气，贬义）：ngirit 是为了现实原因省，pelit 是舍不得花，两者感情色彩完全不同。",
+      "usage_note": "应用词（弱项复现；不是今天08:00的内容，是此前已学的弱项词）。最常见的说法是 harus ngirit，后面可接具体对象。",
+      "source_group": "application"
+    },
+    {
+      "display": "kabur",
+      "audio_text": "kabur",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "kabur",
+      "cn": "逃跑；溜走",
+      "en": "to run away; to slip away",
+      "root": "kabur",
+      "root_cn": "逃跑；溜走",
+      "formation": "本身是词根。常见搭配：kabur dari rumah（离家出走）、kabur begitu saja（一溜烟跑掉）、hampir kabur（差点溜掉）。注意同形词 kabur＝模糊（penglihatan kabur＝视线模糊），语境不同意思完全不同。",
+      "example": "Begitu pintu dibuka, kucing itu langsung kabur ke luar.",
+      "example_cn": "门一打开，那只猫就跑出去了。",
+      "synonym_note": "kabur（口语，带“躲开、不想面对”的味道）vs lari（单纯的跑）vs melarikan diri（书面：逃走）：Dia kabur dari rapat＝他从会议上溜了；Dia lari pagi＝他晨跑。",
+      "usage_note": "应用词（弱项复现；不是今天08:00的内容，是此前已学的弱项词）。开玩笑说“想溜”时很常用：Aku mau kabur dulu ya。",
+      "source_group": "application"
+    },
+    {
+      "display": "nyantai",
+      "audio_text": "nyantai",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "nyantai",
+      "cn": "放松一点；悠着来；轻松待着（口语）",
+      "en": "to take it easy; to chill",
+      "root": "santai",
+      "root_cn": "轻松；悠闲",
+      "formation": "N- + santai → nyantai（s 脱落，口语）；规范形式 bersantai；santai＝轻松的（形容词）。常见搭配：nyantai di rumah（在家放松）、nyantai aja（别急，轻松点）、Nyantai dulu!（先别急）。",
+      "example": "Akhir pekan ini aku cuma mau nyantai di rumah.",
+      "example_cn": "这个周末我只想在家放松。",
+      "synonym_note": "nyantai（口语，主动放松或叫人别紧张）vs bersantai（书面）vs santai（形容词）vs malas（懒，贬义）：Nyantai aja 是劝人“别急”；malas 是不想动，两者不要混。",
+      "usage_note": "应用词（弱项复现；不是今天08:00的内容，是此前已学的弱项词）。写正式文章时换成 bersantai；叫别人别紧张用 Nyantai aja。",
+      "source_group": "application"
+    }
+  ],
+  "reading": {
+    "text": "Rina baru saja diterima kerja di sebuah toko online. Kontraknya hanya enam bulan, dan gajinya lebih kecil daripada tawaran perusahaan lain. Malam itu ibunya bilang, \"Coba bandingkan dulu kedua tawaran itu. Gaji memang penting, tapi lihat juga suasana kerjanya.\" Rina teringat waktu wawancara: orang-orang di toko online itu ceria dan baik hati, tetapi di perusahaan lain semuanya kelihatan tegang. Melepaskan gaji yang lebih besar memang tidak mudah. Namun Rina tahu hidupnya tidak akan berubah kalau dia terus takut mencoba hal baru. Akhirnya dia memilih toko online itu, dan sekarang dia tidak sabar menunggu hari Senin.",
+    "cn": "Rina 刚刚被一家网店录用了。合同只有六个月，工资也比另一家公司开的价低。那天晚上妈妈说：“先把两份工作比较一下。工资确实重要，但也要看工作氛围。”Rina 想起面试时，那家网店的人都开朗又友善，而另一家公司的人看起来都很紧绷。放弃更高的工资确实不容易。不过 Rina 知道，如果一直害怕尝试新事物，她的生活就不会改变。最后她选了那家网店，现在迫不及待地等着周一到来。"
+  },
+  "dialogue": {
+    "title": "Hari pertama Rina bekerja",
+    "lines": [
+      {
+        "speaker": "Dewi",
+        "id": "Rin, gimana hari pertamamu? Kamu kelihatan ceria banget.",
+        "cn": "Rin，第一天上班怎么样？你看起来特别开朗。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Seru! Tapi tadi pagi aku sempat kelabakan, soalnya pesanan masuk banyak banget.",
+        "cn": "很有意思！不过今天早上我一度手忙脚乱，因为订单进来特别多。"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Terus kamu hampir kabur ke pantry, ya?",
+        "cn": "所以你差点溜到茶水间去，对吧？"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Hampir! Untung kakak timku bilang, \"Nyantai aja dulu, selesaikan satu per satu.\" Aku baru ngeh kalau semua orang di sini juga pernah bingung di hari pertama.",
+        "cn": "差点！幸好我的组长说：“先别急，一件一件做完。”我这才反应过来，这里的每个人第一天也都慌过。"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Syukur deh. Nggak nyesel milih kontrak enam bulan itu?",
+        "cn": "那就好。你不后悔选了那份六个月的合同吗？"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Belum. Gajinya memang kecil, jadi bulan ini aku harus ngirit. Tapi suasananya enak.",
+        "cn": "还没。工资确实不高，所以这个月我得省着花。但工作氛围很好。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "用 tidak sabar 和 diterima 写 2 句话：说说你最近被接受或被录取的一件事，以及你在期待什么。不要照抄课文。",
+      "reference_answer": "Minggu lalu aku diterima di kelas memasak. Kelasnya mulai besok, jadi aku tidak sabar bertemu guru dan teman-teman baru.",
+      "reference_cn": "上周我被烹饪班录取了。课从明天开始，所以我迫不及待想见到新老师和新同学。"
+    },
+    {
+      "task": "用 bandingkan、kontrak 和 melepaskan 写 2–3 句话：说说你租房或买东西时怎么比较两个选择，最后放弃了哪一个。",
+      "reference_answer": "Sebelum menandatangani kontrak kamar kos, aku bandingkan harga dan jaraknya ke kantor. Kamar yang murah itu terlalu jauh, jadi aku terpaksa melepaskannya.",
+      "reference_cn": "签租房合同之前，我比较了房租和到公司的距离。那间便宜的房子太远了，所以我只好放弃它。"
+    },
+    {
+      "task": "用 ngirit 和 nyantai 写 2 句话：说说这个月你怎么省钱，以及周末怎么放松。",
+      "reference_answer": "Bulan ini aku ngirit dengan membawa bekal ke kantor. Akhir pekan nanti aku cuma mau nyantai di rumah dan nonton film.",
+      "reference_cn": "这个月我靠自己带饭去公司来省钱。这个周末我只想在家放松、看看电影。"
+    },
+    {
+      "task": "用今天早课学过的 dilarang 和 ngeh 写 2 句话：说说你在新地方后来才注意到的一条规定。",
+      "reference_answer": "Di kantor baru, aku baru ngeh kalau makan di ruang rapat dilarang. Untung belum ada yang marah.",
+      "reference_cn": "在新公司，我这才发现会议室里是禁止吃东西的。幸好还没有人生气。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Aku sudah ____ kerja di toko itu, jadi Senin depan mulai masuk.",
+        "options": [
+          "menerima",
+          "terima",
+          "diterima",
+          "penerimaan"
+        ],
+        "answer_index": 2,
+        "answer": "diterima",
+        "explain": "主语是“aku”（被录用的人），要用被动 diterima＝被录用。menerima 是主动，主语应是公司（Toko itu menerima aku）；terima 是不完整的口语祈使，不能直接放在 sudah 后面表示被动；penerimaan 是名词，不能做谓语。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最合适的一项：Sebelum beli laptop, coba ____ dulu harga dan spesifikasi dua merek itu.",
+        "options": [
+          "bagikan",
+          "bayangkan",
+          "bacakan",
+          "bandingkan"
+        ],
+        "answer_index": 3,
+        "answer": "bandingkan",
+        "explain": "要“比较两个牌子的价格和配置”，用 bandingkan（比较）。bagikan＝分给别人，bayangkan＝想象一下，bacakan＝读给别人听，都和“选购前比较”的场景不符。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Sejak pindah ke Surabaya, sifat Dika ____ banyak. Dulu dia cerewet, sekarang jadi pemalu.",
+        "options": [
+          "berubah",
+          "mengubah",
+          "diubah",
+          "perubahan"
+        ],
+        "answer_index": 0,
+        "answer": "berubah",
+        "explain": "主语是 sifat Dika（性格自己变了），用不及物的 berubah，后面不接宾语。mengubah 需要宾语（mengubah jadwal）；diubah 是被动，意思变成“被人改变”；perubahan 是名词，不能做谓语。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Aku ____ ingin tahu hasil wawancaranya.（迫不及待）",
+        "answer": "tidak sabar",
+        "explain": "tidak sabar ingin tahu＝迫不及待想知道。此处是期待的正面语气，不是“没耐心的人”（那种说法是 nggak sabaran）。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kalau pesanan datang bersamaan, kasir bisa ____ dan salah hitung.（手忙脚乱）",
+        "answer": "kelabakan",
+        "explain": "突然来了很多事、慌得手忙脚乱，用 kelabakan。keteteran 更偏“长期应付不过来”，panik 偏情绪上的惊慌。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我的合同只有六个月，所以我得省着花。",
+        "tokens": [
+          "Kontrakku",
+          "cuma",
+          "enam",
+          "bulan,",
+          "jadi",
+          "aku",
+          "harus",
+          "ngirit"
+        ],
+        "answer": "Kontrakku cuma enam bulan, jadi aku harus ngirit",
+        "answer_cn": "我的合同只有六个月，所以我得省着花。",
+        "explain": "Kontrakku cuma enam bulan＝我的合同只有六个月（-ku 表示“我的”）；jadi aku harus ngirit＝所以我得省着花。原因在前，结果在后，用 jadi 连接。"
+      }
+    ],
+    "self_check": [
+      "不看中文，我能在 3 秒内说出 tidak sabar、kontrak、diterima、bandingkan 的意思，并各造一个短句吗？",
+      "我能区分 diterima（被录用）和 menerima（接受、录用别人）吗？",
+      "ceria、melepaskan、berubah、ngeh、kelabakan 里，哪个我 3 秒内想不起来？不熟的那个，我用它说了一句话吗？",
+      "ngirit、kabur、nyantai 我能用在真实生活里的一句话吗？我能分清 ngirit 和 pelit 的差别吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "先做 3 秒主动提取：看中文说出 tidak sabar、kontrak、diterima、bandingkan，再依次说出 ceria、melepaskan、berubah、ngeh、kelabakan，答不出的立刻回看词卡再说一遍。",
+      "对比易混用法：diterima（被录用）和 menerima（接受）、berubah（自己变）和 mengubah（改变某物）、ngirit（省着花）和 pelit（小气），各说一句自己的例句。",
+      "用 30 秒向朋友讲一遍“Rina 在两份工作之间怎么做决定”的经过，至少用上 5 个目标词，不要背课文。",
+      "想一件你本周真的要比较两个选择的事，用 bandingkan 说一句；再想一次你后知后觉才发现的小事，用 baru ngeh 说一句。",
+      "最后选 kabur 或 nyantai 之一，用它对朋友开一句真实的玩笑，例如“Aku mau kabur dulu ya”，并说出另一个同形词 kabur（模糊）的意思。"
+    ]
+  }
+}
