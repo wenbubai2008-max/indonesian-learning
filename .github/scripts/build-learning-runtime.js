@@ -284,6 +284,21 @@ const legacyFull=dailyRaw.filter(x=>{const k=key(x&&x.word);return k&&!weakMap.h
   .sort((a,b)=>String(a.last_seen||'').localeCompare(String(b.last_seen||''))||(Number(a.times_seen||0)-Number(b.times_seen||0))||String(a.word).localeCompare(String(b.word)));
 const legacyExposed=legacyFull.slice(0,LEGACY_REVIEW_MAX).map(x=>[String(x.word).trim(),5,0,'','',x.cn||'',x.root||'',x.root_cn||'']);
 reviewExposed=[...reviewExposed,...legacyExposed];
+// Same-day AM words (2026-10-08): the PM contract puts today's 08:00 new words into PM application, but they rank below
+// the 60-word cut (most exposed words are priority-1 quick_wrong words), so since 2026-10-04 no PM could use them.
+// When the watermark is an 08:00 lesson, append that lesson's newly taught A ∩ D words. They are application-only:
+// the ranker never recommends them as PM core review. review_pool_total_full and all A ∩ D counts stay unchanged.
+const sameDayAmExposed=[];
+if(/ 08:00$/.test(lessonWatermark)){
+  const seenNow=new Set(reviewExposed.map(x=>key(x[0])));
+  const reviewByKeyAll=new Map(reviewFull.map(x=>[key(x[0]),x]));
+  for(const d of dailyRaw){
+    const k=key(d&&d.word);if(!k||seenNow.has(k)||String(d.first_seen||'')!==lessonWatermark)continue;
+    const row=reviewByKeyAll.get(k);if(!row)continue;
+    seenNow.add(k);sameDayAmExposed.push(row);
+  }
+  reviewExposed=[...reviewExposed,...sameDayAmExposed];
+}
 // Natural-recurrence pool (2026-10-07): every other A ∩ D word (plus the remaining legacy unverified words) in a minimal
 // [word, priority, cn] form, so lessons can weave pending-review words into reading / dialogue / example sentences.
 // It is NOT a review eligibility pool: these words never count as core review or application.
@@ -334,6 +349,7 @@ const runtime={
     review_pool_total_full:reviewFull.length,
     legacy_unverified_total_full:legacyFull.length,
     legacy_unverified_exposed:legacyExposed.length,
+    same_day_am_review_exposed:sameDayAmExposed.length,
     recurrence_pool_total_full:recurrenceFull.length,
     recurrence_pool_exposed:recurrencePool.length,
     review_pool_exposed:reviewExposed.length,

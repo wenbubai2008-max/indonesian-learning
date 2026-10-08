@@ -239,7 +239,8 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
   if(blocked)reasons.push('blocked:'+why.join('+'));
   return {word:w,score,stale_days:staleDays,legacy:i.priority===5,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,hard,focus:i.focus,recent4:recent,blocked,blocked_by:why,am_core:am.has(w),reasons};
  }).sort((a,b)=>b.score-a.score||a.word.localeCompare(b.word));
- const usable=items.filter(x=>!x.blocked&&(x.count<3||x.fresh));
+ const amNew=new Set(amVocab.map(norm)); // today's 08:00 new words are PM application material, never PM core review
+ const usable=items.filter(x=>!x.blocked&&(x.count<3||x.fresh)&&!(pmRules&&amNew.has(x.word)));
  // Fresh-error quota: errors come back next lesson, but never crowd out the due words (ledger only).
  const errCap=L?Math.min(L.capMax,Math.max(L.capMin,reviewCount-L.minDue)):Infinity;
  const pick=[];let recentUsed=0,heavyUsed=0,focusUsed=0,legacyUsed=0,freshUsed=0; // legacy = taught words without a weakness record (priority 5): at most 1 per lesson

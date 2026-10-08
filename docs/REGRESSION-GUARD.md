@@ -359,3 +359,10 @@
 - **校验器单一实现**：`validate-lesson-candidate.js` 原有的核心复习硬规则（`PM_SAME_DAY_REVIEW_REPEAT`、`AM_PREVIOUS_PM_REVIEW_REPEAT`、`PM_REVIEW_COOLDOWN`、`REVIEW_OVEREXPOSURE`）移到 `review-rotation.js` 的 `checkCore()`，语义保持只算核心复习、不受曝光账本影响（它们是不看替代数量的硬错误）。迁移前后用 09-29 至 10-07 的 18 节真实课程（有无曝光账本各一次）逐一比对，错误输出完全一致。
 - **泛读计入连续出现（只用于排序）**：`rank-review-candidates.js` 把最近 7 天 12:00 泛读正文与对话当作被动出现，用于“连续 3 天”判断；同日泛读只对晚课生效。校验器不读泛读，不会因此卡发布。测试 L10。
 - 规则文件 `review_rotation.core_only` 改为 false 并附说明；检查清单晚课复习数改为 4–6；早课开始时间按实际定时任务写为约 07:24；各文档中把“ChatGPT 课程任务”改为“课程生成任务”（历史事故记录保留原文）。
+
+## 15. 2026-10-08 当天早课新词可以进晚课 application
+
+- **问题**：晚课合同要求 application 优先用“当天 08:00 新学的词”，但 runtime 的 `review_pool` 只暴露前 60 个复习词（按优先级排序，目前 53 个是 priority-1 的 quick_wrong 词），当天早课新词（priority 2）永远排不进去。校验器要求 application 必须在 `review_pool` 里，所以 2026-10-04 起没有一节晚课用上当天早课新词（09-28 至 10-03 每晚 1–3 个）。
+- **做法**：`build-learning-runtime.js` 在 `lesson_watermark` 是 08:00 课时，把该课首次教的、属于 A ∩ D 的词追加到 `review_pool` 末尾（新增 `stats.same_day_am_review_exposed`）。`review-rotation.js` 的排序不把它们推荐为晚课重点复习，只放在 application 候选最前面。watermark 是 18:00 时不追加，次日早课不受影响。
+- **不变**：`review_pool_total_full` 与所有 A ∩ D 计数（画像依赖）、复习公式、冷却与轮换规则、课程合同。
+- **验证**：用 10-08 晚课前的真实数据重建 runtime，追加了当天 10 个早课词，重点复习推荐不变，application 候选变为当天早课词；watermark 为 18:00 时追加 0 个。测试 L11。
