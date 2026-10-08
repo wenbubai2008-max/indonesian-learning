@@ -1,0 +1,244 @@
+{
+ "date": "2026-10-08",
+ "session": "am",
+ "time": "08:00",
+ "day": 48,
+ "level": "A2+ → B1",
+ "duration_minutes": 30,
+ "title": "08:00 早课｜Dimas dan Mangga di Pos Ronda",
+ "new_words": [
+  "melempar",
+  "mematuhi",
+  "membela",
+  "mencuri",
+  "kejam",
+  "dilarang",
+  "penjara",
+  "berpartisipasi",
+  "cenderung",
+  "tepat"
+ ],
+ "vocab": [
+  {
+   "word": "melempar",
+   "display": "melempar",
+   "audio_text": "melempar",
+   "cn": "扔；投；丢",
+   "en": "to throw",
+   "root": "lempar",
+   "root_cn": "扔；投",
+   "formation": "meN- + lempar → melempar（l 前直接加 me-）。常见搭配：melempar bola（扔球）、melempar batu（扔石头）、melempar kesalahan（把责任推给别人，比喻）。",
+   "example": "Ada anak yang melempar bola ke arah jendela rumah saya, untung kacanya tidak pecah.",
+   "example_cn": "有个孩子把球扔向我家的窗户，幸好玻璃没碎。",
+   "synonym_note": "melempar = 用力朝某个方向扔出去；membuang = 扔掉、丢弃（垃圾）；menjatuhkan = 使掉下来（不一定是扔）。扔垃圾说 membuang sampah，不说 melempar sampah，除非真的是甩出去。",
+   "is_oral_new": false
+  },
+  {
+   "word": "mematuhi",
+   "display": "mematuhi",
+   "audio_text": "mematuhi",
+   "cn": "遵守；服从",
+   "en": "to obey; to comply with",
+   "root": "patuh",
+   "root_cn": "顺从；遵守",
+   "formation": "meN- + patuh + -i → mematuhi（p 脱落，鼻音变化同 memukul）。后面直接接规则或人：mematuhi aturan（遵守规则）、mematuhi orang tua（听父母的话）、mematuhi rambu lalu lintas（遵守交通标志）。",
+   "example": "Semua penghuni wajib mematuhi aturan parkir di kompleks ini.",
+   "example_cn": "所有住户都必须遵守这个小区的停车规定。",
+   "synonym_note": "mematuhi = 遵守（规定、指示）；menaati 意思基本相同，也很常见；mengikuti = 跟着做、参加，不一定带“必须服从”的意味，比如 mengikuti kelas（上课）。",
+   "is_oral_new": false
+  },
+  {
+   "word": "membela",
+   "display": "membela",
+   "audio_text": "membela",
+   "cn": "维护；为……辩护；替……说话",
+   "en": "to defend; to stand up for",
+   "root": "bela",
+   "root_cn": "保卫；袒护",
+   "formation": "meN- + bela → membela（b 前用 mem-）。常见搭配：membela teman（替朋友说话）、membela diri（自卫）、membela negara（保卫国家）。口语常说 ngebelain，如 Jangan ngebelain dia terus!（别老是袒护他！）",
+   "example": "Waktu semua orang menyalahkan Dimas, hanya Bu Rina yang membela dia.",
+   "example_cn": "大家都在怪迪马斯的时候，只有丽娜女士替他说话。",
+   "synonym_note": "membela = 站在某人一边，为他辩护或保护他；melindungi = 保护其不受伤害，不一定涉及对错；mendukung = 支持（想法、人）。membela 常带有“对方被指责时出面”的场景。",
+   "is_oral_new": true
+  },
+  {
+   "word": "mencuri",
+   "display": "mencuri",
+   "audio_text": "mencuri",
+   "cn": "偷；盗窃",
+   "en": "to steal",
+   "root": "curi",
+   "root_cn": "偷",
+   "formation": "meN- + curi → mencuri（c 前用 men-）。常见搭配：mencuri dompet（偷钱包）、mencuri perhatian（吸引众人目光，比喻）；被偷用 dicuri：Motor saya dicuri.（我的摩托车被偷了）；偷东西的人是 pencuri。口语常说 nyolong。",
+   "example": "Katanya ada orang yang mencuri dompet di pasar tadi pagi.",
+   "example_cn": "听说今天早上有人在市场偷了钱包。",
+   "synonym_note": "mencuri = 偷（泛指）；merampok = 抢劫，带有暴力或威胁；mencopet = 扒窃，多指在人群中偷包里的东西；nyolong 更口语，有时也说小偷小摸、顺手拿走。",
+   "is_oral_new": true
+  },
+  {
+   "word": "kejam",
+   "display": "kejam",
+   "audio_text": "kejam",
+   "cn": "残忍；狠心；过分",
+   "en": "cruel; harsh",
+   "root": "kejam",
+   "root_cn": "残忍",
+   "formation": "形容词，不带词缀。可形容人、行为或话语：orang yang kejam、perlakuan yang kejam、kata-kata yang kejam。搭配：kejam terhadap binatang（对动物残忍）、Kejam banget!（太狠了/太过分了！口语）。",
+   "example": "Menuduh anak kecil tanpa bukti itu kejam banget.",
+   "example_cn": "没有证据就指控小孩子，太过分了。",
+   "synonym_note": "kejam = 残忍、下手狠，也能用来说“太无情了”；jahat = 坏、心地不好，范围更广；kasar = 粗鲁、不文明，不一定残忍。",
+   "is_oral_new": false
+  },
+  {
+   "word": "dilarang",
+   "display": "dilarang",
+   "audio_text": "dilarang",
+   "cn": "被禁止；禁止",
+   "en": "prohibited; not allowed",
+   "root": "larang",
+   "root_cn": "禁止",
+   "formation": "di- + larang → dilarang，被动形式，直接说“被禁止的事”。常见搭配：Dilarang merokok.（禁止吸烟）、Dilarang parkir di sini.（此处禁止停车）、dilarang masuk（禁止入内）。主动说“禁止某人”用 melarang：Ibu melarang saya keluar malam.",
+   "example": "Di taman ini anak-anak dilarang melempar batu ke arah kolam.",
+   "example_cn": "在这个公园里，孩子们被禁止往池塘里扔石头。",
+   "synonym_note": "dilarang = 告示、规定里常见的“禁止”；tidak boleh = 更口语的“不可以”，对人说话时也常用；terlarang = 被禁止的（形容词），如 barang terlarang（违禁品）。",
+   "is_oral_new": false
+  },
+  {
+   "word": "penjara",
+   "display": "penjara",
+   "audio_text": "penjara",
+   "cn": "监狱；牢房",
+   "en": "prison; jail",
+   "root": "penjara",
+   "root_cn": "监狱",
+   "formation": "名词，本身是词根，不要拆成 pe- + jara。常见搭配：masuk penjara（入狱）、dipenjara（被关进监狱）、hukuman penjara（徒刑）、penjara seumur hidup（无期徒刑）。",
+   "example": "Kalau terbukti bersalah, pencuri itu bisa masuk penjara.",
+   "example_cn": "如果证实有罪，那个小偷可能会被关进监狱。",
+   "synonym_note": "penjara = 监狱（关押服刑的人）；tahanan = 被拘留的人，也指羁押状态；sel = 牢房/囚室，指里面的小间。",
+   "is_oral_new": false
+  },
+  {
+   "word": "berpartisipasi",
+   "display": "berpartisipasi",
+   "audio_text": "berpartisipasi",
+   "cn": "参与；参加（活动、讨论）",
+   "en": "to participate",
+   "root": "partisipasi",
+   "root_cn": "参与",
+   "formation": "ber- + partisipasi → berpartisipasi，partisipasi 是外来词。常见搭配：berpartisipasi dalam lomba（参加比赛）、berpartisipasi aktif（积极参与）、ikut berpartisipasi（也一起参与）。后面常接 dalam + 活动。",
+   "example": "Warga diajak berpartisipasi dalam kerja bakti membersihkan selokan.",
+   "example_cn": "居民被邀请参与清理水沟的义务劳动。",
+   "synonym_note": "berpartisipasi = 参与，偏正式；ikut = 参加、跟着做，更口语；mengikuti = 参加（课程、考试、比赛）；bergabung = 加入（团体）。会议、活动、公益用 berpartisipasi，聊天时多说 ikut。",
+   "is_oral_new": false
+  },
+  {
+   "word": "cenderung",
+   "display": "cenderung",
+   "audio_text": "cenderung",
+   "cn": "倾向于；容易（做某事）",
+   "en": "to tend to; inclined",
+   "root": "cenderung",
+   "root_cn": "倾向",
+   "formation": "动词/形容词，不带词缀，后面直接接动词或形容词：cenderung marah（容易发火）、cenderung diam（倾向沉默）。表示“常见的倾向”，不是绝对：Orang cenderung ... 不等于所有人都如此。",
+   "example": "Kalau lagi panik, orang cenderung langsung menyalahkan siapa saja.",
+   "example_cn": "人一慌，往往就会立刻怪罪身边的任何人。",
+   "synonym_note": "cenderung = 倾向、容易；biasanya = 通常；suka + 动词（口语）也能表示“老是……”，如 Dia suka lupa.。cenderung 更像在描述一种趋势或习惯性反应。",
+   "is_oral_new": false
+  },
+  {
+   "word": "tepat",
+   "display": "tepat",
+   "audio_text": "tepat",
+   "cn": "准确的；恰好；正好",
+   "en": "exact; precise; right on",
+   "root": "tepat",
+   "root_cn": "准确；恰好",
+   "formation": "形容词/副词，不带词缀。常见搭配：tepat waktu（准时）、jawaban yang tepat（准确的回答）、tepat di depan rumah（就在房子前面）、tepat pukul delapan（整八点）。",
+   "example": "Pak RT datang tepat waktu, jadi suasananya tidak sempat makin panas.",
+   "example_cn": "里长准时赶到，所以气氛没来得及变得更紧张。",
+   "synonym_note": "tepat = 准确、正好；benar = 对、正确（与错相对）；pas = 刚好合适（口语），如 Ukurannya pas.；persis = 一模一样、正好。说“准时”用 tepat waktu，不说 benar waktu。",
+   "is_oral_new": false
+  }
+ ],
+ "review_vocab": [
+  "berencana",
+  "nggak kepegang",
+  "nyimak",
+  "kepotong",
+  "nangkep"
+ ],
+ "sentences": [
+  {
+   "text": "Anak-anak dilarang melempar batu ke arah rumah warga.",
+   "cn": "孩子们被禁止朝居民的房子扔石头。"
+  },
+  {
+   "text": "Kalau lagi emosi, orang cenderung langsung menyalahkan siapa saja.",
+   "cn": "情绪上来的时候，人往往会立刻怪罪任何人。"
+  },
+  {
+   "text": "Warga wajib mematuhi aturan yang sudah disepakati bersama.",
+   "cn": "居民必须遵守大家共同商定的规定。"
+  },
+  {
+   "text": "Orang yang terbukti mencuri bisa masuk penjara.",
+   "cn": "被证实偷窃的人可能会坐牢。"
+  },
+  {
+   "text": "Menuduh tanpa bukti itu kejam, apalagi kalau korbannya anak kecil.",
+   "cn": "没有证据就指控别人很过分，尤其受害者还是小孩子的时候。"
+  }
+ ],
+ "reading": {
+  "text": "Sore itu warga kompleks berkumpul di depan pos ronda. Seorang bapak berteriak bahwa Dimas, anak dari rumah sebelah, mencuri mangga di halaman rumahnya. Ada yang begitu marah sampai melempar sandal ke arah Dimas. Dimas hanya menunduk dan hampir menangis. Bu Rina langsung membela Dimas. \"Jangan kejam begitu, dia masih kecil! Tanya dulu yang sebenarnya.\" Ternyata Dimas cuma memungut mangga yang jatuh ke jalan. Pak RT datang tepat waktu dan berkata, \"Kita harus mematuhi aturan. Main hakim sendiri dilarang. Kalau benar ada pencurian, polisi yang urus, dan pelakunya bisa masuk penjara.\" Si bapak pun minta maaf. Malam itu, Pak RT mengajak semua warga berpartisipasi dalam ronda supaya kompleks lebih aman.",
+  "cn": "傍晚，小区居民聚集在岗亭（夜巡站）前面。一位大叔大喊，说隔壁家的孩子迪马斯偷了他院子里的芒果。有人气得甚至朝迪马斯扔了一只拖鞋。迪马斯只是低着头，差点哭出来。丽娜女士立刻替迪马斯说话：“别这么狠心，他还是个小孩子！先问清楚真相。”原来迪马斯只是捡了掉到路上的芒果。里长准时赶到，说：“我们要遵守规矩。私自动手审判是被禁止的。如果真的有偷窃，由警察处理，犯人可能会进监狱。”那位大叔于是道了歉。当晚，里长邀请所有居民参与夜巡，让小区更安全。"
+ },
+ "quiz": [
+  {
+   "question": "Pak RT bilang dia ___ mengadakan ronda setiap malam mulai minggu depan.",
+   "options": [
+    "berubah",
+    "melanjutkan",
+    "berencana",
+    "terbiasa"
+   ],
+   "answer_index": 2,
+   "answer": "berencana",
+   "explain": "berencana = 打算、计划，后面直接接动词（berencana mengadakan）。berubah = 改变；melanjutkan = 继续做已经开始的事；terbiasa = 已经习惯，都不表示“打算”。"
+  },
+  {
+   "question": "Semua orang menyalahkan Dimas, tapi Bu Rina berdiri di depan dan ___ dia.",
+   "options": [
+    "membela",
+    "menuduh",
+    "melempar",
+    "mencuri"
+   ],
+   "answer_index": 0,
+   "answer": "membela",
+   "explain": "membela = 在别人被指责时出面替他说话。menuduh = 指控别人，意思相反；melempar = 扔；mencuri = 偷，与句意都不符。"
+  },
+  {
+   "question": "Di pagar taman ada tulisan: “Merokok ___ di area ini.”",
+   "options": [
+    "melarang",
+    "larangan",
+    "terlarang",
+    "dilarang"
+   ],
+   "answer_index": 3,
+   "answer": "dilarang",
+   "explain": "告示里的“禁止”用被动 dilarang（Dilarang merokok）。melarang 是主动，需要有人做主语（Ibu melarang saya）；larangan 是名词“禁令”；terlarang 是形容词“违禁的”，不能这样直接接动词。"
+  }
+ ],
+ "output": {
+  "task": "假设小区里有位居民被人怀疑偷东西，但还没有证据。用 2–3 句印尼语说说你会怎么做，要用到 membela 和 berpartisipasi（例如帮他说话，并参与小区的夜巡或讨论）。",
+  "reference_answer": "Kalau ada warga yang dituduh mencuri tanpa bukti, saya akan membela dia dan minta warga bertanya dulu. Setelah itu saya mau berpartisipasi dalam ronda supaya kompleks kita lebih aman.",
+  "reference_cn": "如果有居民没有证据就被指控偷东西，我会替他说话，请大家先问清楚。之后我愿意参与夜巡，让我们的小区更安全。"
+ },
+ "review": [
+  "3秒主动提取：不看词卡，说出这 10 个词的意思——melempar、mematuhi、membela、mencuri、kejam、dilarang、penjara、berpartisipasi、cenderung、tepat；再用口语说一遍：mencuri = nyolong，membela = ngebelain。",
+  "易混词与搭配：membela（替人说话）vs menuduh（指控）；mencuri（偷）vs merampok（抢）；dilarang 用于告示，tidak boleh 更口语；tepat waktu（准时）不说 benar waktu。",
+  "重点复习词应用：从 berencana、nggak kepegang、nyimak、kepotong、nangkep 里选两个各说一句，例如 “Aku nyimak penjelasan Pak RT, tapi suaranya kepotong, jadi belum nangkep semuanya.”"
+ ]
+}
