@@ -272,6 +272,14 @@ t('L10 a noon extensive reading fills a streak day for ranking (PM only on the s
  assert.ok(!amSame.avoid_in_text.includes('mengatur'),'a same-day reading is after 08:00, so it never counts for AM');
  assert.deepEqual(exp({review:['mengatur','a1','a2','a3'],application:['am1','am2']},hist2),[],'validator ignores readings');
 });
+t('L11 today\'s 08:00 new words in review_pool are PM application candidates first, never PM core review',()=>{
+ const hist=[amL('2026-10-07'),pmL('2026-10-07'),amL('2026-10-08',[],{vocab:[{word:'am1'},{word:'am2'}]})];
+ const out=rankL({date:'2026-10-08',runtime:rtL(),rotation:rotL,reviewHistory:hist,reviewCount:5,amVocab:['am1','am2']});
+ assert.ok(!out.recommended_review.some(w=>['am1','am2'].includes(w)),'AM new words are not PM review');
+ assert.deepEqual(out.application_candidates.slice(0,2).map(x=>x.word),['am1','am2']);
+ const am=rankL({date:'2026-10-09',session:'am',runtime:rtL(),rotation:rotL,reviewHistory:hist,reviewCount:5,amVocab:['am1','am2']});
+ assert.equal(am.recommended_review.length,5,'AM ranking unaffected');
+});
 }
 
 // Integration through the real validator() using the shared PM fixture of test-lesson-candidate.js.
