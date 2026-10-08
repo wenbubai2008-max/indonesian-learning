@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-08T09:16:20.552Z",
+    "runtime_generated_at": "2026-10-08T09:21:26.919Z",
     "lesson_watermark": "2026-10-08 08:00",
     "index_updated": "2026-10-08",
-    "runtime_hash": "b774e67f0767df418319d5f98f2993825b5a0311f00c22c4550abe29f2d77f50",
+    "runtime_hash": "cd4d0f1dac53bbb2eb27557857203071f5db238bb55ebb6b336dbe67faf418b1",
     "index_hash": "e297c65830793e75888c00827799f9e01241d55488e9d714e70044e7d210f956",
     "rules_hash": "f991ee4da64be1724e9cffbd3cb3558c7e8d51a7233bbfa73dd4e6077683b551"
   },
@@ -1438,6 +1438,36 @@
         "强硬坚持；不肯让步"
       ],
       [
+        "jomblo",
+        2,
+        0,
+        "",
+        "2026-10-08T09:19:27.011Z",
+        "单身；没有对象",
+        "jomblo",
+        "单身"
+      ],
+      [
+        "cerewet",
+        2,
+        0,
+        "",
+        "2026-10-08T09:18:03.447Z",
+        "话多；唠叨",
+        "cerewet",
+        "话多；挑剔唠叨"
+      ],
+      [
+        "pembangunan",
+        2,
+        0,
+        "",
+        "2026-10-08T09:17:47.767Z",
+        "建设；发展；建造过程",
+        "bangun",
+        "建；起；醒"
+      ],
+      [
         "memanggil",
         2,
         0,
@@ -1476,36 +1506,6 @@
         "反对、对抗",
         "lawan",
         "对手；反对"
-      ],
-      [
-        "jomblo",
-        2,
-        0,
-        "",
-        "2026-10-06T07:31:10.768Z",
-        "单身；没有对象",
-        "jomblo",
-        "单身"
-      ],
-      [
-        "cerewet",
-        2,
-        0,
-        "",
-        "2026-10-04T14:49:26.269Z",
-        "话多；唠叨",
-        "cerewet",
-        "话多；挑剔唠叨"
-      ],
-      [
-        "pembangunan",
-        2,
-        0,
-        "",
-        "2026-10-03T14:11:47.692Z",
-        "建设；发展；建造过程",
-        "bangun",
-        "建；起；醒"
       ],
       [
         "baper",
@@ -2128,6 +2128,30 @@
         ]
       ],
       [
+        "jomblo",
+        78,
+        [
+          "automation_fail",
+          "dont"
+        ]
+      ],
+      [
+        "cerewet",
+        78,
+        [
+          "automation_fail",
+          "dont"
+        ]
+      ],
+      [
+        "pembangunan",
+        78,
+        [
+          "automation_fail",
+          "dont"
+        ]
+      ],
+      [
         "memanggil",
         78,
         [
@@ -2153,30 +2177,6 @@
       ],
       [
         "melawan",
-        78,
-        [
-          "automation_fail",
-          "dont"
-        ]
-      ],
-      [
-        "jomblo",
-        78,
-        [
-          "automation_fail",
-          "dont"
-        ]
-      ],
-      [
-        "cerewet",
-        78,
-        [
-          "automation_fail",
-          "dont"
-        ]
-      ],
-      [
-        "pembangunan",
         78,
         [
           "automation_fail",
