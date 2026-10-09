@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T06:15:07.473Z",
+  "updated_at": "2026-10-09T06:24:59.962Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2550,8 +2550,11 @@
     "menambahkan": {
       "word": "menambahkan",
       "status": "active",
-      "updated_at": "2026-10-06T09:52:34.832Z",
+      "updated_at": "2026-10-09T06:24:48.627Z",
       "display": "menambahkan",
+      "cn": "增加",
+      "root": "tambah",
+      "root_cn": "增加；添加",
       "last_review": "2026-10-06T09:52:34.807Z",
       "reasons": [
         "memory_fuzzy"
