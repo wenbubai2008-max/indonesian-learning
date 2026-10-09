@@ -1,0 +1,340 @@
+{
+  "date": "2026-10-09",
+  "session": "pm",
+  "time": "18:00",
+  "day": 49,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Sari 整理杂货店的傍晚",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "menghabiskan",
+    "sampah",
+    "rapi"
+  ],
+  "vocab": [
+    {
+      "display": "menghabiskan",
+      "audio_text": "menghabiskan",
+      "is_new": true,
+      "is_oral_new": true,
+      "word": "menghabiskan",
+      "cn": "用完；吃光；花掉（时间、钱）",
+      "en": "to use up; to finish off; to spend (time, money)",
+      "root": "habis",
+      "root_cn": "完；没有了",
+      "formation": "meN- + habis + -kan → menghabiskan（h 前 meN- 变 meng-）。相关：habis＝完了、没了，kehabisan＝（不由自主地）用光了，dihabiskan＝被吃光／被花光。口语常说 ngabisin。常见搭配：menghabiskan makanan（把饭菜吃完）、menghabiskan waktu（花时间）、menghabiskan uang（把钱花光）。",
+      "example": "Anak-anak menghabiskan semua kue di piring dalam lima menit.",
+      "example_cn": "孩子们五分钟就把盘子里的蛋糕全吃光了。",
+      "synonym_note": "menghabiskan（主动把东西用完、吃完、花掉）vs kehabisan（不是故意的，东西用光了，没得用）：Dia menghabiskan bensin＝他把油用光了（花掉）；Motornya kehabisan bensin＝摩托车没油了（出状况）。口语里 ngabisin＝menghabiskan。",
+      "usage_note": "新词（半熟词，口语词）。后面接被用完的东西或时间：makanan、uang、waktu。想说“这个周末花了两小时做某事”可以用 menghabiskan dua jam。",
+      "source_group": "new"
+    },
+    {
+      "display": "sampah",
+      "audio_text": "sampah",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "sampah",
+      "cn": "垃圾",
+      "en": "trash; garbage; rubbish",
+      "root": "sampah",
+      "root_cn": "垃圾",
+      "formation": "sampah 本身是词根，没有词缀。常见组合：tempat sampah（垃圾桶）、membuang sampah（扔垃圾）、sampah plastik（塑料垃圾）、sampah dapur（厨余垃圾）。",
+      "example": "Tolong bawa sampah ini ke tempat sampah di depan.",
+      "example_cn": "请把这些垃圾扔到前面的垃圾桶里。",
+      "synonym_note": "sampah（日常垃圾，用过丢掉的东西）vs limbah（工业、医院等产生的废料／废水，较专业）vs kotoran（脏东西、污垢；也指粪便）：Membuang sampah＝扔垃圾；Limbah pabrik＝工厂废料；Kotoran di lantai＝地上的脏东西。",
+      "usage_note": "新词（半熟词）。最常见的是 membuang sampah 和 tempat sampah。sampah 也可以骂人或形容没价值的东西，初学阶段先掌握“垃圾”的本义即可。",
+      "source_group": "new"
+    },
+    {
+      "display": "rapi",
+      "audio_text": "rapi",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "rapi",
+      "cn": "整齐；整洁；有条理",
+      "en": "neat; tidy; orderly",
+      "root": "rapi",
+      "root_cn": "整齐",
+      "formation": "rapi 本身是词根。派生：merapikan＝把……整理整齐，kerapian＝整齐度，rapi-rapi／ngerapiin（口语）＝整理一下。常见搭配：berpakaian rapi（穿得整齐）、kamar yang rapi（整洁的房间）、menyusun dengan rapi（摆放整齐）、tulisan rapi（字迹工整）。",
+      "example": "Meja kerjanya selalu rapi, jadi dokumen mudah dicari.",
+      "example_cn": "他的办公桌总是很整齐，所以文件很好找。",
+      "synonym_note": "rapi（东西摆得有秩序、看起来整齐）vs bersih（没有脏东西）：Kamarnya rapi tapi belum tentu bersih＝房间摆得整齐，但不一定干净。",
+      "usage_note": "新词（陌生词）。形容摆放、穿着、字迹都可以。要说“整理”这个动作时用 merapikan，例如 merapikan rak。",
+      "source_group": "new"
+    },
+    {
+      "display": "cuek",
+      "audio_text": "cuek",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "cuek",
+      "cn": "冷淡；不理会；不在意（口语）",
+      "en": "indifferent; nonchalant; couldn't care less",
+      "root": "cuek",
+      "root_cn": "冷淡；不在意",
+      "formation": "cuek 是口语形容词，没有词缀。相关：dicuekin＝被无视，nyuekin／mencuekkan＝故意不理，cuek bebek＝一副毫不在意的样子。常见搭配：sikap cuek（冷淡的态度）、cuek banget（特别冷淡）、cuek aja（不用管，别在意）。",
+      "example": "Pengantarnya cuek, kardus besar itu ditinggal begitu saja di depan pintu.",
+      "example_cn": "送货员很不在意，把大纸箱就那样丢在门口。",
+      "synonym_note": "cuek（对人或事不闻不问，贬义；也可表示“不放在心上”）vs acuh tak acuh（书面，意思接近）vs masa bodoh（更冲，“关我什么事”）。Cuek aja sama omongan orang＝别把别人的闲话放在心上（这里是中性、甚至正面）。",
+      "usage_note": "重点复习词（新错，focus）。对人冷淡是贬义：Dia cuek banget sama temannya；对闲话“看开、不计较”则偏中性：Cuek aja. 要靠语气和上下文判断。",
+      "source_group": "review"
+    },
+    {
+      "display": "melawan",
+      "audio_text": "melawan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "melawan",
+      "cn": "对抗；抵抗；顶嘴；反抗",
+      "en": "to fight against; to resist; to talk back",
+      "root": "lawan",
+      "root_cn": "对手；对方",
+      "formation": "meN- + lawan → melawan（l 前 meN- 变 me-）。相关：lawan＝对手，perlawanan＝抵抗，lawan kata＝反义词。常见搭配：melawan rasa kantuk（克服睡意）、melawan penyakit（对抗疾病）、melawan orang tua（跟父母顶嘴）、melawan arus（逆流而上）。",
+      "example": "Dia berusaha melawan rasa kantuk supaya pekerjaannya cepat selesai.",
+      "example_cn": "他努力克服睡意，好让工作早点做完。",
+      "synonym_note": "melawan（直接对抗：对人、势力、疾病、某种感觉）vs menentang（公开反对某个主张、政策，较正式）vs membantah（用话语反驳、不服气）：melawan guru＝顶撞老师，menentang aturan＝反对规定。",
+      "usage_note": "重点复习词（focus）。对象可以是人，也可以是抽象的感觉，如 rasa kantuk、rasa malas。对长辈用 melawan 带“不听话、顶撞”的贬义。",
+      "source_group": "review"
+    },
+    {
+      "display": "peningkatan",
+      "audio_text": "peningkatan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "peningkatan",
+      "cn": "增加；提高；上升（名词）",
+      "en": "increase; improvement",
+      "root": "tingkat",
+      "root_cn": "层级；程度",
+      "formation": "peN- + tingkat + -an → peningkatan（t 脱落：peN- + tingkat → peningkat-）。相关：meningkat＝上升（自己升高），meningkatkan＝使提高，tingkat＝层级、水平。常见搭配：peningkatan kualitas（质量提升）、peningkatan penjualan（销量增长）、ada peningkatan（有所增加）。",
+      "example": "Ada peningkatan pesanan sejak toko itu berjualan lewat internet.",
+      "example_cn": "自从那家店开始在网上卖货，订单增加了。",
+      "synonym_note": "peningkatan（名词，“提高、增长”的过程或结果，常带“变好”的意味）vs kenaikan（上涨，多用于价格、气温、工资：kenaikan harga）vs penambahan（数量加进去：penambahan stok＝增加库存）。",
+      "usage_note": "到期复习词（久未出现）。它是名词，常放在 ada／terjadi 后面；动词用 meningkat（自己上升）或 meningkatkan（把某物提高）。",
+      "source_group": "review"
+    },
+    {
+      "display": "terjadi",
+      "audio_text": "terjadi",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "terjadi",
+      "cn": "发生",
+      "en": "to happen; to occur",
+      "root": "jadi",
+      "root_cn": "成为；变成",
+      "formation": "ter- + jadi → terjadi（ter- 表示自然发生、非人为刻意）。相关：kejadian＝事件，menjadi＝成为，jadi＝于是；变成。常见搭配：apa yang terjadi?（发生了什么？）、bisa terjadi（可能发生）、sudah terjadi（已经发生）、terjadi kecelakaan（发生事故）。",
+      "example": "Aku nggak tahu apa yang terjadi di toko tadi pagi.",
+      "example_cn": "我不知道今天早上店里发生了什么事。",
+      "synonym_note": "terjadi（事情自己出现、发生）vs berlangsung（活动、会议持续进行：acara berlangsung dua jam）vs muncul（出现，指东西或问题冒出来）：Kecelakaan terjadi semalam＝事故昨晚发生；Rapatnya berlangsung lama＝会开了很久。",
+      "usage_note": "到期复习词（久未出现）。主语常是事情本身，不是人：Apa yang terjadi? 不要用 terjadi 说“人做了某事”。",
+      "source_group": "review"
+    },
+    {
+      "display": "untung",
+      "audio_text": "untung",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "untung",
+      "cn": "幸好；幸运；赚钱；利润",
+      "en": "luckily; lucky; profit",
+      "root": "untung",
+      "root_cn": "运气；利润",
+      "formation": "untung 本身是词根。派生：keuntungan＝利润；好处，beruntung＝幸运的，menguntungkan＝有利的。常见搭配：Untung saja…（幸好……）、Untung ada…（幸好有……）、untung dan rugi（赚与亏）。",
+      "example": "Untung Pak Hendra lewat dan mau membantu kami.",
+      "example_cn": "幸好 Hendra 先生路过，还愿意帮我们。",
+      "synonym_note": "untung（句首表示“幸好”；或名词“赚到、利润”）vs beruntung（形容人本身运气好：Kamu beruntung banget）vs syukurlah（说话人庆幸、感恩）：Untung kamu datang＝幸好你来了；Syukurlah kamu datang＝你来了真是太好了。",
+      "usage_note": "到期复习词（久未出现）。放在句首时语气是“侥幸避免了坏事”，和 rugi（亏）正好相反，注意区分语境。",
+      "source_group": "review"
+    },
+    {
+      "display": "menggosok",
+      "audio_text": "menggosok",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "menggosok",
+      "cn": "擦；擦洗；摩擦",
+      "en": "to rub; to scrub",
+      "root": "gosok",
+      "root_cn": "擦；刷",
+      "formation": "meN- + gosok → menggosok（g 前 meN- 变 meng-）。相关：gosok＝擦，gosok gigi／sikat gigi＝刷牙，gosokan＝擦拭的动作。常见搭配：menggosok lantai（擦地）、menggosok kaca（擦玻璃）、menggosok debu（擦掉灰尘）、menggosok gigi（刷牙）。",
+      "example": "Sari menggosok debu di rak tua itu dengan kain bersih.",
+      "example_cn": "Sari 用干净的布擦掉那个旧架子上的灰尘。",
+      "synonym_note": "menggosok（来回用力擦、搓）vs mengelap（用布擦拭表面，更轻、偏擦干净或擦干）vs menyikat（用刷子刷）：mengelap meja＝擦桌子，menyikat sepatu＝刷鞋子，menggosok noda＝用力搓污渍。",
+      "usage_note": "应用词。上午新词：今天08:00新学。今晚把它放进“整理杂货店”的新场景里，再说一遍它和 mengelap 的差别。",
+      "source_group": "application"
+    },
+    {
+      "display": "kebutuhan",
+      "audio_text": "kebutuhan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "kebutuhan",
+      "cn": "需求；必需品",
+      "en": "need; necessities",
+      "root": "butuh",
+      "root_cn": "需要",
+      "formation": "ke- + butuh + -an → kebutuhan（名词）。相关：butuh／membutuhkan＝需要，terbutuhkan 不常用。常见搭配：kebutuhan sehari-hari（日常所需）、memenuhi kebutuhan（满足需求）、kebutuhan pokok（基本生活必需品）。",
+      "example": "Toko Kakek menjual kebutuhan sehari-hari untuk warga sekitar.",
+      "example_cn": "爷爷的店为附近居民出售日常必需品。",
+      "synonym_note": "kebutuhan（必须要有的需求、必需品）vs keperluan（为某个用途所需要的东西：keperluan sekolah＝上学要用的东西）vs permintaan（别人提出的要求或市场需求量）。",
+      "usage_note": "应用词。上午新词：今天08:00新学。与 butuh（口语“需要”）一起记：Aku butuh waktu＝我需要时间；Itu kebutuhan pokok＝那是基本必需品。",
+      "source_group": "application"
+    }
+  ],
+  "reading": {
+    "text": "Seminggu setelah Sari berjualan online, ada peningkatan pesanan di toko Kakek. Sore ini beras hampir habis, jadi Sari menghabiskan waktu untuk menata rak. Ia menggosok debu di rak kuno itu, lalu menyusun barang dengan rapi supaya pelanggan mudah menemukan kebutuhan mereka. Tiba-tiba terjadi hal yang tidak disangka: pengantar paket yang cuek meninggalkan kardus besar di depan pintu dan langsung pergi. Sari cemas ada orang yang tersandung. Untung Pak Hendra lewat dan membantu memindahkannya. Setelah itu Sari membuang sampah kardus ke tempat sampah, lalu menutup toko. Semoga besok pesanan terus meningkat, pikirnya.",
+    "cn": "Sari 在网上卖货一周后，爷爷的店里订单增加了。今天傍晚米快没了，所以 Sari 花了一些时间整理货架。她擦掉那个老式货架上的灰尘，然后把商品摆得整整齐齐，好让顾客容易找到自己需要的东西。突然发生了一件没想到的事：一个很不在意的送货员把一个大纸箱丢在门口就走了。Sari 担心有人会被绊倒。幸好 Hendra 先生路过，帮忙把纸箱挪开。之后 Sari 把纸箱垃圾扔进垃圾桶，然后关了店门。她心想：希望明天订单继续增加。"
+  },
+  "dialogue": {
+    "title": "Setelah pengantar paket itu pergi",
+    "lines": [
+      {
+        "speaker": "Pak Hendra",
+        "id": "Sari, tadi pengantar paketnya cuek banget ya? Kardusnya ditinggal begitu aja di depan pintu.",
+        "cn": "Sari，刚才那个送货员太不在意了吧？纸箱就那样丢在门口。"
+      },
+      {
+        "speaker": "Sari",
+        "id": "Iya, Pak. Aku capek banget, sampai harus melawan rasa kantuk dulu supaya nggak emosi.",
+        "cn": "是啊，Hendra 先生。我累极了，得先克服睡意，免得发脾气。"
+      },
+      {
+        "speaker": "Pak Hendra",
+        "id": "Wajar. Minggu ini pelanggan sudah menghabiskan dua karung beras, kan?",
+        "cn": "正常。这周顾客已经买光两袋米了吧？"
+      },
+      {
+        "speaker": "Sari",
+        "id": "Betul. Aku belum terbiasa dengan pesanan sebanyak ini. Semoga besok nggak ada kejadian aneh lagi.",
+        "cn": "没错。我还没习惯这么多订单。希望明天别再出怪事了。"
+      },
+      {
+        "speaker": "Pak Hendra",
+        "id": "Kalau mau meningkatkan pelayanan, pasang tulisan di pintu: \"Paket tolong diantar ke dalam.\" Biar pengantarnya nggak asal taruh di luar.",
+        "cn": "如果想提高服务，就在门上贴一张字条：“包裹请送到店里。”这样送货员就不会随手放在外面。"
+      },
+      {
+        "speaker": "Sari",
+        "id": "Ide bagus, Pak! Kardus kosongnya juga langsung kubuang, jadi nggak jadi sampah di depan toko.",
+        "cn": "好主意，先生！空纸箱我也马上扔掉，这样店门口就不会堆成垃圾。"
+      },
+      {
+        "speaker": "Pak Hendra",
+        "id": "Sip. Kalau sudah beres, lepas aja celemekmu terus pulang istirahat.",
+        "cn": "好。收拾完了，就把围裙脱了回去休息吧。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "用 menghabiskan、sampah 和 rapi 写 2–3 句话：说说你上次整理房间或打扫家里的经历，不要照抄课文。",
+      "reference_answer": "Hari Minggu lalu aku menghabiskan dua jam membersihkan kamar. Aku membuang sampah yang menumpuk, lalu menyusun buku di rak dengan rapi.",
+      "reference_cn": "上个星期天我花了两个小时打扫房间。我扔掉堆积的垃圾，然后把书整整齐齐地摆在书架上。"
+    },
+    {
+      "task": "用 cuek 和 terjadi 写 2 句话：说说一次别人对你很冷淡的经历，以及你当时不知道发生了什么。",
+      "reference_answer": "Kemarin teman sekantorku cuek waktu aku minta tolong. Aku nggak tahu apa yang terjadi, mungkin dia lagi sibuk.",
+      "reference_cn": "昨天同事在我请他帮忙时很冷淡。我不知道发生了什么，也许他正忙。"
+    },
+    {
+      "task": "用 kebutuhan 和 menggosok 写 2 句话：说说有客人来之前，你买了什么生活用品、打扫了哪里。",
+      "reference_answer": "Sebelum tamu datang, aku membeli kebutuhan rumah seperti sabun dan kain lap. Lalu aku menggosok lantai dapur yang kotor.",
+      "reference_cn": "客人来之前，我买了肥皂和抹布之类的家用必需品。然后我用力擦洗了脏的厨房地板。"
+    },
+    {
+      "task": "用 peningkatan、untung 和 melawan 写 2–3 句话：说说最近你的工作或学习量增加了，你靠什么克服疲劳或懒惰。",
+      "reference_answer": "Bulan ini ada peningkatan tugas di kantor. Untung aku masih bisa melawan rasa malas dengan olahraga pagi, jadi badanku tetap segar.",
+      "reference_cn": "这个月公司的工作量增加了。幸好我还能靠晨练克服懒惰，所以身体依然精神。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "选出最合适的一项：Meja kerja Dani selalu ____, jadi dokumen apa pun gampang dicari.",
+        "options": [
+          "rapat",
+          "rapi",
+          "rata",
+          "rajin"
+        ],
+        "answer_index": 1,
+        "answer": "rapi",
+        "explain": "“桌子总是整齐，所以文件好找”用 rapi＝整齐有序。rapat＝紧密／开会，rata＝平坦，rajin＝勤快，都不能形容桌面摆放整齐。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Anak-anak ____ semua kue di piring dalam lima menit.",
+        "options": [
+          "kehabisan",
+          "dihabiskan",
+          "habisnya",
+          "menghabiskan"
+        ],
+        "answer_index": 3,
+        "answer": "menghabiskan",
+        "explain": "主语是“孩子们”，主动把蛋糕吃光，用 menghabiskan。kehabisan＝（东西）用光了、没得用，主语是缺东西的人；dihabiskan 是被动，主语应是蛋糕；habisnya 是名词性说法，不能直接做谓语。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Pelan-pelan dia mencoba ____ rasa malas supaya mau belajar lagi.",
+        "options": [
+          "melawan",
+          "membanting",
+          "melepas",
+          "menyalahkan"
+        ],
+        "answer_index": 0,
+        "answer": "melawan",
+        "explain": "“克服懒惰的感觉”用 melawan rasa malas。membanting＝摔，melepas＝放开，menyalahkan＝责怪，都不能搭配“rasa malas”。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Setelah makan, jangan lupa membuang ____ ke tempat sampah.（垃圾）",
+        "answer": "sampah",
+        "explain": "membuang sampah＝扔垃圾。tempat sampah 才是“垃圾桶”，前面的空格要填“垃圾”这个名词。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kardusnya hilang? Aku nggak tahu apa yang ____ tadi pagi.（发生）",
+        "answer": "terjadi",
+        "explain": "apa yang terjadi＝发生了什么。terjadi 的主语是事情本身，表示事情自然发生。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：幸好 Hendra 先生路过，还愿意帮忙。",
+        "tokens": [
+          "Untung",
+          "Pak",
+          "Hendra",
+          "lewat",
+          "dan",
+          "mau",
+          "membantu"
+        ],
+        "answer": "Untung Pak Hendra lewat dan mau membantu",
+        "answer_cn": "幸好 Hendra 先生路过，还愿意帮忙。",
+        "explain": "Untung 放句首表示“幸好”，后面接事情本身；lewat dan mau membantu 是两个并列动作：路过，并且愿意帮忙。"
+      }
+    ],
+    "self_check": [
+      "不看中文，我能在 3 秒内说出 menghabiskan、sampah、rapi 的意思，并各造一个短句吗？",
+      "cuek、melawan、peningkatan、terjadi、untung 里，哪个我 3 秒内想不起来？不熟的那个，我用它说了一句话吗？",
+      "我能分清 menghabiskan（主动用完）和 kehabisan（不小心用光了）、rapi（整齐）和 bersih（干净）吗？",
+      "menggosok 和 kebutuhan 是今天 08:00 新学的词，现在我能不看词卡各说一句话吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "先做 3 秒主动提取：看中文说出 menghabiskan、sampah、rapi，再依次说出 cuek、melawan、peningkatan、terjadi、untung，答不出的立刻回看词卡再说一遍。",
+      "对比易混用法：menghabiskan（主动用完）和 kehabisan（用光了没得用）、rapi（整齐）和 bersih（干净）、peningkatan（增长）和 kenaikan（价格上涨），各说一句自己的例句。",
+      "用 30 秒向朋友讲一遍“Sari 傍晚遇到不在意的送货员，后来怎么解决”的经过，至少用上 5 个目标词，不要背课文。",
+      "想一件最近你因为太累而要 melawan rasa kantuk 的事，说一句；再想一次别人 cuek 的经历，说一句，并告诉对方你希望怎么做。",
+      "最后用 menggosok 和 kebutuhan 各说一句今天早课之后的新句子，检查自己有没有真的记住，而不是只看过。"
+    ]
+  }
+}
