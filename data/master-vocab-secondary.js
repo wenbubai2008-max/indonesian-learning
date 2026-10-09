@@ -176,17 +176,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "ia",
-    "cn": "他/她（较书面）",
-    "en": "he/she",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "berulang tahun",
     "cn": "过生日",
     "en": "have a birthday",

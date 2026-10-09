@@ -85,22 +85,27 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-22 08:00",
-    "last_seen": "2026-08-22 08:00",
+    "last_seen": "2026-10-09 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-22"
+      "2026-08-22",
+      "2026-10-09"
     ],
-    "example": "Ada peningkatan dalam kemampuan berbicara saya.",
-    "example_cn": "我的口语能力有所提升。",
+    "example": "Ada peningkatan pesanan sejak toko itu berjualan lewat internet.",
+    "example_cn": "自从那家店开始在网上卖货，订单增加了。",
     "lesson_occurrences": [
-      "2026-08-22 08:00"
-    ]
+      "2026-08-22 08:00",
+      "2026-10-09 18:00"
+    ],
+    "root_cn": "层级；程度"
   },
   {
     "word": "ganggu",
@@ -215,22 +220,27 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-22 08:00",
-    "last_seen": "2026-08-22 08:00",
+    "last_seen": "2026-10-09 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-22"
+      "2026-08-22",
+      "2026-10-09"
     ],
-    "example": "Untung saya datang lebih awal.",
-    "example_cn": "幸好我来得早。",
+    "example": "Untung Pak Hendra lewat dan mau membantu kami.",
+    "example_cn": "幸好 Hendra 先生路过，还愿意帮我们。",
     "lesson_occurrences": [
-      "2026-08-22 08:00"
-    ]
+      "2026-08-22 08:00",
+      "2026-10-09 18:00"
+    ],
+    "root_cn": "运气；利润"
   },
   {
     "word": "keuntungan",
@@ -2385,27 +2395,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "terjadi",
     "cn": "发生",
-    "en": "",
+    "en": "to happen; to occur",
     "root": "jadi",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-23 19:00",
-    "last_seen": "2026-08-23 19:00",
+    "last_seen": "2026-10-09 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-23"
+      "2026-08-23",
+      "2026-10-09"
     ],
-    "example": "Apa yang terjadi?",
-    "example_cn": "发生了什么？",
+    "example": "Aku nggak tahu apa yang terjadi di toko tadi pagi.",
+    "example_cn": "我不知道今天早上店里发生了什么事。",
     "lesson_occurrences": [
-      "2026-08-23 19:00"
-    ]
+      "2026-08-23 19:00",
+      "2026-10-09 18:00"
+    ],
+    "root_cn": "成为；变成"
   },
   {
     "word": "berubah",
@@ -11895,27 +11910,31 @@ window.DAILY_VOCAB_DB = [
     "en": "oppose / fight against",
     "root": "lawan",
     "root_cn": "对手；反对",
-    "example": "Kita tidak perlu melawan setiap pendapat yang berbeda.",
-    "example_cn": "我们没必要反对每一个不同的观点。",
+    "example": "Dia berusaha melawan rasa kantuk supaya pekerjaannya cepat selesai.",
+    "example_cn": "他努力克服睡意，好让工作早点做完。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-09 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-20",
       "2026-09-29",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-09"
     ],
     "lesson_occurrences": [
       "2026-09-20 08:00",
       "2026-09-29 08:00",
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-10-09 18:00"
     ]
   },
   {
@@ -15433,23 +15452,25 @@ window.DAILY_VOCAB_DB = [
     "en": "indifferent; nonchalant; unresponsive",
     "root": "cuek",
     "root_cn": "不在意；冷淡",
-    "example": "Jangan cuek kalau pelanggan sudah mengirim keluhan.",
-    "example_cn": "顾客已经发来投诉，就别不理不睬。",
+    "example": "Pengantarnya cuek, kardus besar itu ditinggal begitu saja di depan pintu.",
+    "example_cn": "送货员很不在意，把大纸箱就那样丢在门口。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-29 18:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-10-09 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-09"
     ],
     "lesson_occurrences": [
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-10-09 18:00"
     ]
   },
   {
@@ -18790,23 +18811,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to rub; to scrub",
     "root": "gosok",
     "root_cn": "擦；搓",
-    "example": "Ibu menggosok panci itu sampai bersih.",
-    "example_cn": "妈妈把那口锅刷到干干净净。",
+    "example": "Sari menggosok debu di rak tua itu dengan kain bersih.",
+    "example_cn": "Sari 用干净的布擦掉那个旧架子上的灰尘。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-09 08:00",
-    "last_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-09"
     ],
     "lesson_occurrences": [
-      "2026-10-09 08:00"
+      "2026-10-09 08:00",
+      "2026-10-09 18:00"
     ]
   },
   {
@@ -18967,23 +18991,26 @@ window.DAILY_VOCAB_DB = [
     "en": "need; necessity",
     "root": "butuh",
     "root_cn": "需要",
-    "example": "Gaji bulan ini cukup untuk memenuhi kebutuhan sehari-hari.",
-    "example_cn": "这个月的工资足够满足日常开销。",
+    "example": "Toko Kakek menjual kebutuhan sehari-hari untuk warga sekitar.",
+    "example_cn": "爷爷的店为附近居民出售日常必需品。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-09 08:00",
-    "last_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-09"
     ],
     "lesson_occurrences": [
-      "2026-10-09 08:00"
+      "2026-10-09 08:00",
+      "2026-10-09 18:00"
     ]
   },
   {
@@ -19034,6 +19061,82 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-09 08:00"
+    ]
+  },
+  {
+    "word": "menghabiskan",
+    "cn": "用完；吃光；花掉（时间、钱）",
+    "en": "to use up; to finish off; to spend (time, money)",
+    "root": "habis",
+    "root_cn": "完；没有了",
+    "example": "Anak-anak menghabiskan semua kue di piring dalam lima menit.",
+    "example_cn": "孩子们五分钟就把盘子里的蛋糕全吃光了。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 18:00",
+    "last_seen": "2026-10-09 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 18:00"
+    ]
+  },
+  {
+    "word": "sampah",
+    "cn": "垃圾",
+    "en": "trash; garbage; rubbish",
+    "root": "sampah",
+    "root_cn": "垃圾",
+    "example": "Tolong bawa sampah ini ke tempat sampah di depan.",
+    "example_cn": "请把这些垃圾扔到前面的垃圾桶里。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 18:00",
+    "last_seen": "2026-10-09 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 18:00"
+    ]
+  },
+  {
+    "word": "rapi",
+    "cn": "整齐；整洁；有条理",
+    "en": "neat; tidy; orderly",
+    "root": "rapi",
+    "root_cn": "整齐",
+    "example": "Meja kerjanya selalu rapi, jadi dokumen mudah dicari.",
+    "example_cn": "他的办公桌总是很整齐，所以文件很好找。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 18:00",
+    "last_seen": "2026-10-09 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 18:00"
     ]
   }
 ];

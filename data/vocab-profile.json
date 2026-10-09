@@ -1,110 +1,19 @@
 {
   "version": 1,
-  "generated_at": "2026-10-09T00:28:28.471Z",
-  "source_updated_at": "2026-10-08T09:29:07.355Z",
-  "taught_total": 715,
+  "generated_at": "2026-10-09T10:43:14.423Z",
+  "source_updated_at": "2026-10-09T07:59:52.449Z",
+  "taught_total": 718,
   "confirmed_mastered": 182,
-  "needs_reinforcement": 441,
-  "unverified": 92,
-  "mastery_percent": 25.5,
+  "needs_reinforcement": 447,
+  "unverified": 89,
+  "mastery_percent": 25.3,
   "primary_master_total": 977,
-  "primary_taught_unique": 462,
-  "primary_unlearned_total": 515,
-  "primary_coverage_percent": 47.3,
-  "primary_eligible_new_total": 186,
-  "focus_total": 441,
+  "primary_taught_unique": 465,
+  "primary_unlearned_total": 512,
+  "primary_coverage_percent": 47.6,
+  "primary_eligible_new_total": 182,
+  "focus_total": 442,
   "focus_words": [
-    {
-      "word": "menunjukkan",
-      "score": 122,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont"
-      ],
-      "wrong_count": 4,
-      "last_wrong": "2026-09-27T13:58:43.322Z",
-      "last_review": "2026-10-01T12:32:37.758Z",
-      "cn": "指出"
-    },
-    {
-      "word": "niat",
-      "score": 120,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont"
-      ],
-      "wrong_count": 3,
-      "last_wrong": "2026-09-25T13:46:19.310Z",
-      "last_review": "2026-10-01T12:33:39.559Z",
-      "cn": "打算；意图；认真想做的心意"
-    },
-    {
-      "word": "mengeluh",
-      "score": 118,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-09-28T09:17:16.003Z",
-      "last_review": "2026-10-01T12:32:53.861Z",
-      "cn": "抱怨"
-    },
-    {
-      "word": "seraya",
-      "score": 116,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-27T13:59:29.228Z",
-      "last_review": "2026-10-01T12:33:46.144Z",
-      "cn": "同时；一边……一边……"
-    },
-    {
-      "word": "menyalin",
-      "score": 116,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-27T13:57:54.512Z",
-      "last_review": "2026-10-01T12:33:43.922Z",
-      "cn": "复制"
-    },
-    {
-      "word": "kabur",
-      "score": 116,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-25T15:02:05.313Z",
-      "last_review": "2026-10-01T12:33:48.153Z",
-      "cn": "逃跑；溜走"
-    },
-    {
-      "word": "menegaskan",
-      "score": 116,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "dont"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-25T14:59:12.780Z",
-      "last_review": "2026-10-01T12:32:28.029Z",
-      "cn": "强调；明确说明；确认"
-    },
     {
       "word": "layak",
       "score": 108,
@@ -117,6 +26,90 @@
       "last_wrong": "2026-09-16T07:55:56.953Z",
       "last_review": "2026-10-03T14:11:33.463Z",
       "cn": "值得；合适；够资格"
+    },
+    {
+      "word": "nyinggung",
+      "score": 92,
+      "signals": [
+        "automation_fail",
+        "quick_wrong"
+      ],
+      "wrong_count": 3,
+      "last_wrong": "2026-09-28T14:43:57.046Z",
+      "last_review": "2026-10-03T14:10:29.045Z",
+      "cn": "提到；触及；说到让人不舒服的话题（口语）"
+    },
+    {
+      "word": "menunjukkan",
+      "score": 86,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 4,
+      "last_wrong": "2026-09-27T13:58:43.322Z",
+      "last_review": "2026-10-09T07:07:34.461Z",
+      "cn": "指出"
+    },
+    {
+      "word": "niat",
+      "score": 84,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 3,
+      "last_wrong": "2026-09-25T13:46:19.310Z",
+      "last_review": "2026-10-09T07:08:04.548Z",
+      "cn": "打算；意图；认真想做的心意"
+    },
+    {
+      "word": "mengeluh",
+      "score": 82,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-09-28T09:17:16.003Z",
+      "last_review": "2026-10-09T07:07:49.585Z",
+      "cn": "抱怨"
+    },
+    {
+      "word": "seraya",
+      "score": 80,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 1,
+      "last_wrong": "2026-09-27T13:59:29.228Z",
+      "last_review": "2026-10-09T07:08:08.347Z",
+      "cn": "同时；一边……一边……"
+    },
+    {
+      "word": "menyalin",
+      "score": 80,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 1,
+      "last_wrong": "2026-09-27T13:57:54.512Z",
+      "last_review": "2026-10-09T07:08:06.093Z",
+      "cn": "复制"
+    },
+    {
+      "word": "kabur",
+      "score": 80,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 1,
+      "last_wrong": "2026-09-25T15:02:05.313Z",
+      "last_review": "2026-10-09T07:08:10.237Z",
+      "cn": "逃跑；溜走"
     }
   ],
   "definitions": {
