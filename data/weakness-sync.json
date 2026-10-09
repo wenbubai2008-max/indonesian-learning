@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T06:03:20.012Z",
+  "updated_at": "2026-10-09T06:15:07.473Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -6306,14 +6306,14 @@
     },
     "tuan": {
       "word": "tuan",
-      "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "status": "mastered",
+      "updated_at": "2026-10-09T06:14:16.813Z",
       "display": "tuan",
-      "reasons": [
-        "memory_fuzzy"
-      ],
+      "last_review": "2026-10-09T06:14:16.768Z",
+      "last_mastered": "2026-10-09T06:14:16.768Z",
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 3
     },
     "penjara": {
       "word": "penjara",
@@ -11442,17 +11442,15 @@
     },
     "ia": {
       "word": "ia",
-      "status": "active",
-      "updated_at": "2026-09-17T07:26:15.979Z",
+      "status": "mastered",
+      "updated_at": "2026-10-09T06:14:56.999Z",
       "display": "ia",
       "cn": "他/她（较书面）",
-      "last_review": "2026-09-12T14:13:54.533Z",
-      "last_mastered": "2026-09-12T14:13:54.533Z",
+      "last_review": "2026-10-09T06:14:56.962Z",
+      "last_mastered": "2026-10-09T06:14:56.962Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
-      "reasons": [
-        "bipa_secondary_fuzzy"
-      ],
+      "reasons": [],
       "wrong_count": 0,
       "right_streak": 3
     },
