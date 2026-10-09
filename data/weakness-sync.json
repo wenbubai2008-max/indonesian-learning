@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:29:07.355Z",
+  "updated_at": "2026-10-09T06:03:20.012Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -17232,11 +17232,15 @@
     "menaruh": {
       "word": "menaruh",
       "status": "active",
-      "updated_at": "2026-09-12T15:08:36.089Z",
+      "updated_at": "2026-10-09T06:03:08.726Z",
       "display": "menaruh",
       "cn": "放、置",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-09",
+      "session": "08:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "manual_unknown"
       ],
       "wrong_count": 0,
       "right_streak": 0
@@ -28983,6 +28987,21 @@
         "quick_wrong"
       ],
       "wrong_count": 1,
+      "right_streak": 0
+    },
+    "menghela": {
+      "word": "menghela",
+      "status": "active",
+      "updated_at": "2026-10-09T06:02:04.987Z",
+      "display": "menghela",
+      "cn": "叹",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-09",
+      "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
       "right_streak": 0
     }
   }
