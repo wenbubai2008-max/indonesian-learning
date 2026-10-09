@@ -137,19 +137,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-22 08:00",
-    "last_seen": "2026-08-22 08:00",
+    "last_seen": "2026-10-09 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-22"
+      "2026-08-22",
+      "2026-10-09"
     ],
     "example": "Suara itu mengganggu saya.",
     "example_cn": "那个声音打扰到我了。",
     "lesson_occurrences": [
-      "2026-08-22 08:00"
+      "2026-08-22 08:00",
+      "2026-10-09 08:00"
     ]
   },
   {
@@ -240,19 +242,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-22 08:00",
-    "last_seen": "2026-08-22 08:00",
+    "last_seen": "2026-10-09 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-22"
+      "2026-08-22",
+      "2026-10-09"
     ],
     "example": "Bisnis ini punya keuntungan yang cukup bagus.",
     "example_cn": "这个生意有不错的利润。",
     "lesson_occurrences": [
-      "2026-08-22 08:00"
+      "2026-08-22 08:00",
+      "2026-10-09 08:00"
     ]
   },
   {
@@ -2443,21 +2447,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-23 19:00",
-    "last_seen": "2026-08-23 19:00",
+    "last_seen": "2026-10-09 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-23"
+      "2026-08-23",
+      "2026-10-09"
     ],
     "example": "Saya memutuskan untuk tetap tinggal di Indonesia.",
     "example_cn": "我决定继续留在印尼。",
     "lesson_occurrences": [
-      "2026-08-23 19:00"
+      "2026-08-23 19:00",
+      "2026-10-09 08:00"
     ]
   },
   {
@@ -8029,17 +8037,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-09 08:00",
+    "last_seen": "2026-10-09 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-09"
+      "2026-09-09",
+      "2026-10-09"
     ],
     "lesson_occurrences": [
-      "2026-09-09 08:00"
+      "2026-09-09 08:00",
+      "2026-10-09 08:00"
     ]
   },
   {
@@ -11920,17 +11930,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-20 08:00",
+    "last_seen": "2026-10-09 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-10-09"
     ],
     "lesson_occurrences": [
-      "2026-09-20 08:00"
+      "2026-09-20 08:00",
+      "2026-10-09 08:00"
     ]
   },
   {
@@ -18770,6 +18782,258 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-08 18:00"
+    ]
+  },
+  {
+    "word": "menggosok",
+    "cn": "擦；擦洗；摩擦",
+    "en": "to rub; to scrub",
+    "root": "gosok",
+    "root_cn": "擦；搓",
+    "example": "Ibu menggosok panci itu sampai bersih.",
+    "example_cn": "妈妈把那口锅刷到干干净净。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 08:00"
+    ]
+  },
+  {
+    "word": "menyalakan",
+    "cn": "打开（灯、电器）；点燃",
+    "en": "to turn on; to light",
+    "root": "nyala",
+    "root_cn": "亮；着火",
+    "example": "Tolong menyalakan lampu toko dulu, di dalam masih gelap.",
+    "example_cn": "请先把店里的灯打开，里面还很暗。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 08:00"
+    ]
+  },
+  {
+    "word": "negatif",
+    "cn": "消极的；负面的；阴性的",
+    "en": "negative",
+    "root": "negatif",
+    "root_cn": "消极的；负面的",
+    "example": "Jangan terlalu sering membaca kata-kata negatif di media sosial.",
+    "example_cn": "别太常看社交媒体上的负面言论。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 08:00"
+    ]
+  },
+  {
+    "word": "kuno",
+    "cn": "古老的；老式的；过时的",
+    "en": "ancient; old-fashioned",
+    "root": "kuno",
+    "root_cn": "古老的；陈旧的",
+    "example": "Modelnya memang kuno, tapi barang di toko itu lengkap dan murah.",
+    "example_cn": "样式确实老旧，不过那家店东西齐全又便宜。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 08:00"
+    ]
+  },
+  {
+    "word": "mengembangkan",
+    "cn": "发展；开发；扩大",
+    "en": "to develop; to expand",
+    "root": "kembang",
+    "root_cn": "花；绽放；发展",
+    "example": "Mereka ingin mengembangkan usaha kecil ini menjadi toko online.",
+    "example_cn": "他们想把这家小生意发展成网店。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 08:00"
+    ]
+  },
+  {
+    "word": "menguasai",
+    "cn": "掌握；精通；控制",
+    "en": "to master; to control",
+    "root": "kuasa",
+    "root_cn": "权力；能力",
+    "example": "Setelah kursus tiga bulan, dia sudah menguasai bahasa Inggris dasar.",
+    "example_cn": "上了三个月课程后，他已经掌握了基础英语。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 08:00"
+    ]
+  },
+  {
+    "word": "kenal",
+    "cn": "认识；熟悉（人、地方）",
+    "en": "to know (a person); to be acquainted with",
+    "root": "kenal",
+    "root_cn": "认识",
+    "example": "Saya sudah kenal baik dengan Pak Hendra sejak kecil.",
+    "example_cn": "我从小就和亨德拉先生很熟。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 08:00"
+    ]
+  },
+  {
+    "word": "kebutuhan",
+    "cn": "需求；需要的东西",
+    "en": "need; necessity",
+    "root": "butuh",
+    "root_cn": "需要",
+    "example": "Gaji bulan ini cukup untuk memenuhi kebutuhan sehari-hari.",
+    "example_cn": "这个月的工资足够满足日常开销。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 08:00"
+    ]
+  },
+  {
+    "word": "apabila",
+    "cn": "如果；当……时（书面）",
+    "en": "if; when (formal)",
+    "root": "apabila",
+    "root_cn": "如果（书面）",
+    "example": "Apabila ada pesanan khusus, silakan hubungi kami lewat WhatsApp.",
+    "example_cn": "如有特殊订单，请通过 WhatsApp 联系我们。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 08:00"
+    ]
+  },
+  {
+    "word": "terletak",
+    "cn": "位于；坐落在",
+    "en": "to be located",
+    "root": "letak",
+    "root_cn": "位置",
+    "example": "Hotel itu terletak di dekat stasiun, jadi mudah dicari.",
+    "example_cn": "那家酒店位于车站附近，所以很好找。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-09 08:00",
+    "last_seen": "2026-10-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-09"
+    ],
+    "lesson_occurrences": [
+      "2026-10-09 08:00"
     ]
   }
 ];

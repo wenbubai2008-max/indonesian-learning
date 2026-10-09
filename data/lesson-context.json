@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-09",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 49
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-08T13:55:38.780Z",
-    "lesson_watermark": "2026-10-08 18:00",
-    "index_updated": "2026-10-08",
-    "runtime_hash": "8d1049477c04ef1ced96a6aa469dd751f3ffa7d491bf27800e2c3299f5922bfc",
-    "index_hash": "f67ce0a95f5d22cf0fd271ff43ff5f9ab1a26ca80858a0dc7c68c3b8779a2422",
+    "runtime_generated_at": "2026-10-09T00:28:22.179Z",
+    "lesson_watermark": "2026-10-09 08:00",
+    "index_updated": "2026-10-09",
+    "runtime_hash": "dd488ee6847d6d6c6f63802eec70a57045dae9b08b883447472e3dcdda064640",
+    "index_hash": "9f2c66e9d1778a036c85b4193c5cc3cdc05cca626b0cef3d9f563bd5fcb16d35",
     "rules_hash": "d406904ea30ad06dfae711a64f1e979c1262ddd8401d79e7b17d4b3250ea5a06"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "menggosok",
-        "擦洗 / 摩擦"
-      ],
-      [
-        "menyalakan",
-        "打开"
-      ],
-      [
-        "negatif",
-        "消极地"
-      ],
-      [
-        "kuno",
-        "古老的"
-      ],
-      [
-        "mengembangkan",
-        "发展 / 开发"
-      ],
-      [
-        "menguasai",
-        "控制 / 支配"
-      ],
-      [
-        "kenal",
-        "认识"
-      ],
-      [
-        "kebutuhan",
-        "需求"
-      ],
-      [
-        "apabila",
-        "如果，当……时"
-      ],
-      [
-        "terletak",
-        "位于"
-      ],
       [
         "lapangan",
         "场地"
@@ -688,6 +648,46 @@
       [
         "pot bunga",
         "花盆"
+      ],
+      [
+        "lincah",
+        "灵活活泼"
+      ],
+      [
+        "perfeksionis",
+        "完美主义的"
+      ],
+      [
+        "berserat",
+        "有纤维感"
+      ],
+      [
+        "anak panah",
+        "箭头"
+      ],
+      [
+        "berjemur",
+        "晒太阳"
+      ],
+      [
+        "jantan",
+        "雄性"
+      ],
+      [
+        "betina",
+        "雌性"
+      ],
+      [
+        "sawo matang",
+        "棕褐肤色"
+      ],
+      [
+        "lesung pipit",
+        "酒窝"
+      ],
+      [
+        "separuh baya",
+        "中年"
       ]
     ],
     "new_fuzzy": [
@@ -1938,26 +1938,6 @@
         "抓住；捕捉"
       ],
       [
-        "keuntungan",
-        2,
-        0,
-        "",
-        "2026-10-08T09:18:50.909Z",
-        "利润、好处",
-        "untung",
-        ""
-      ],
-      [
-        "mengganggu",
-        2,
-        0,
-        "",
-        "2026-10-08T09:07:58.306Z",
-        "打扰、干扰",
-        "ganggu",
-        ""
-      ],
-      [
         "untung",
         2,
         0,
@@ -1975,16 +1955,6 @@
         "",
         "提升、增长",
         "tingkat",
-        ""
-      ],
-      [
-        "memutuskan",
-        3,
-        0,
-        "",
-        "2026-10-06T09:57:35.862Z",
-        "决定",
-        "putus",
         ""
       ],
       [
@@ -2338,6 +2308,36 @@
         "经过；超过"
       ],
       [
+        "nyusul",
+        2,
+        0,
+        "",
+        "2026-10-08T09:14:56.394Z",
+        "随后跟上；晚点再过去会合",
+        "susul",
+        "追上；随后跟上"
+      ],
+      [
+        "keburu",
+        3,
+        0,
+        "",
+        "2026-10-08T09:13:08.809Z",
+        "来不及就……；抢先已经……",
+        "buru",
+        "赶；追赶"
+      ],
+      [
+        "sikap",
+        2,
+        0,
+        "",
+        "2026-10-08T09:08:04.912Z",
+        "态度；立场；举止",
+        "sikap",
+        "态度；立场"
+      ],
+      [
         "terjadi",
         5,
         0,
@@ -2436,6 +2436,106 @@
         "先等等",
         "",
         ""
+      ],
+      [
+        "menggosok",
+        2,
+        0,
+        "",
+        "",
+        "擦；擦洗；摩擦",
+        "gosok",
+        "擦；搓"
+      ],
+      [
+        "menyalakan",
+        2,
+        0,
+        "",
+        "",
+        "打开（灯、电器）；点燃",
+        "nyala",
+        "亮；着火"
+      ],
+      [
+        "negatif",
+        2,
+        0,
+        "",
+        "",
+        "消极的；负面的；阴性的",
+        "negatif",
+        "消极的；负面的"
+      ],
+      [
+        "kuno",
+        2,
+        0,
+        "",
+        "",
+        "古老的；老式的；过时的",
+        "kuno",
+        "古老的；陈旧的"
+      ],
+      [
+        "mengembangkan",
+        2,
+        0,
+        "",
+        "",
+        "发展；开发；扩大",
+        "kembang",
+        "花；绽放；发展"
+      ],
+      [
+        "menguasai",
+        2,
+        0,
+        "",
+        "",
+        "掌握；精通；控制",
+        "kuasa",
+        "权力；能力"
+      ],
+      [
+        "kenal",
+        2,
+        0,
+        "",
+        "",
+        "认识；熟悉（人、地方）",
+        "kenal",
+        "认识"
+      ],
+      [
+        "kebutuhan",
+        2,
+        0,
+        "",
+        "",
+        "需求；需要的东西",
+        "butuh",
+        "需要"
+      ],
+      [
+        "apabila",
+        2,
+        0,
+        "",
+        "",
+        "如果；当……时（书面）",
+        "apabila",
+        "如果（书面）"
+      ],
+      [
+        "terletak",
+        2,
+        0,
+        "",
+        "",
+        "位于；坐落在",
+        "letak",
+        "位置"
       ]
     ],
     "focus": [
@@ -2738,14 +2838,6 @@
         "fuzzy"
       ],
       [
-        "menyalakan",
-        "通用",
-        "nyalain",
-        "nyala",
-        722,
-        "dont"
-      ],
-      [
         "mengeluarkan",
         "通用",
         "ngeluarin",
@@ -2848,14 +2940,6 @@
         "ukur",
         742,
         "fuzzy"
-      ],
-      [
-        "mengembangkan",
-        "通用",
-        "ngembangin",
-        "kembang",
-        743,
-        "dont"
       ],
       [
         "tidak adil",
@@ -3183,6 +3267,29 @@
         "diterima",
         "bandingkan"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "session": "am",
+      "review_core": [
+        "nyusahin",
+        "tumbuh",
+        "keuntungan",
+        "memutuskan",
+        "mengganggu"
+      ],
+      "new_words": [
+        "menggosok",
+        "menyalakan",
+        "negatif",
+        "kuno",
+        "mengembangkan",
+        "menguasai",
+        "kenal",
+        "kebutuhan",
+        "apabila",
+        "terletak"
+      ]
     }
   ],
   "previous_pm": {
@@ -3201,7 +3308,88 @@
       "kelabakan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-09",
+    "vocab": [
+      [
+        "menggosok",
+        "擦；擦洗；摩擦",
+        "to rub; to scrub",
+        "gosok",
+        "擦；搓"
+      ],
+      [
+        "menyalakan",
+        "打开（灯、电器）；点燃",
+        "to turn on; to light",
+        "nyala",
+        "亮；着火"
+      ],
+      [
+        "negatif",
+        "消极的；负面的；阴性的",
+        "negative",
+        "negatif",
+        "消极的；负面的"
+      ],
+      [
+        "kuno",
+        "古老的；老式的；过时的",
+        "ancient; old-fashioned",
+        "kuno",
+        "古老的；陈旧的"
+      ],
+      [
+        "mengembangkan",
+        "发展；开发；扩大",
+        "to develop; to expand",
+        "kembang",
+        "花；绽放；发展"
+      ],
+      [
+        "menguasai",
+        "掌握；精通；控制",
+        "to master; to control",
+        "kuasa",
+        "权力；能力"
+      ],
+      [
+        "kenal",
+        "认识；熟悉（人、地方）",
+        "to know (a person); to be acquainted with",
+        "kenal",
+        "认识"
+      ],
+      [
+        "kebutuhan",
+        "需求；需要的东西",
+        "need; necessity",
+        "butuh",
+        "需要"
+      ],
+      [
+        "apabila",
+        "如果；当……时（书面）",
+        "if; when (formal)",
+        "apabila",
+        "如果（书面）"
+      ],
+      [
+        "terletak",
+        "位于；坐落在",
+        "to be located",
+        "letak",
+        "位置"
+      ]
+    ],
+    "review_vocab": [
+      "nyusahin",
+      "tumbuh",
+      "keuntungan",
+      "memutuskan",
+      "mengganggu"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
