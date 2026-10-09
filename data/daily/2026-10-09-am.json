@@ -1,0 +1,244 @@
+{
+ "date": "2026-10-09",
+ "session": "am",
+ "time": "08:00",
+ "day": 49,
+ "level": "A2+ → B1",
+ "duration_minutes": 30,
+ "title": "08:00 早课｜Sari dan Toko Kelontong Kakek",
+ "new_words": [
+  "menggosok",
+  "menyalakan",
+  "negatif",
+  "kuno",
+  "mengembangkan",
+  "menguasai",
+  "kenal",
+  "kebutuhan",
+  "apabila",
+  "terletak"
+ ],
+ "vocab": [
+  {
+   "word": "menggosok",
+   "display": "menggosok",
+   "audio_text": "menggosok",
+   "cn": "擦；擦洗；摩擦",
+   "en": "to rub; to scrub",
+   "root": "gosok",
+   "root_cn": "擦；搓",
+   "formation": "meN- + gosok → menggosok（词根以 g 开头，前缀用 meng-）。常见搭配：menggosok kaca（擦玻璃）、menggosok panci（刷锅）、menggosok punggung（搓背）。",
+   "example": "Ibu menggosok panci itu sampai bersih.",
+   "example_cn": "妈妈把那口锅刷到干干净净。",
+   "synonym_note": "menggosok = 用手或工具用力来回擦；mengelap = 用布抹掉灰尘或水；menyikat = 用刷子刷。擦桌子上的灰常说 mengelap meja，要擦掉顽固污渍才说 menggosok。",
+   "is_oral_new": false
+  },
+  {
+   "word": "menyalakan",
+   "display": "menyalakan",
+   "audio_text": "menyalakan",
+   "cn": "打开（灯、电器）；点燃",
+   "en": "to turn on; to light",
+   "root": "nyala",
+   "root_cn": "亮；着火",
+   "formation": "me- + nyala + -kan → menyalakan（词根以 ny- 开头，前缀用 me-）。常见搭配：menyalakan lampu（开灯）、menyalakan komputer（开电脑）、menyalakan api（生火）。口语常说 nyalain：Nyalain AC-nya dong.（把空调打开嘛。）",
+   "example": "Tolong menyalakan lampu toko dulu, di dalam masih gelap.",
+   "example_cn": "请先把店里的灯打开，里面还很暗。",
+   "synonym_note": "menyalakan = 让灯、电器、火亮起来或运转；menghidupkan 在开机器、电视时也常用，意思很接近；membuka 用于打开门、应用程序，不用于开灯。反义：mematikan（关掉）。",
+   "is_oral_new": true
+  },
+  {
+   "word": "negatif",
+   "display": "negatif",
+   "audio_text": "negatif",
+   "cn": "消极的；负面的；阴性的",
+   "en": "negative",
+   "root": "negatif",
+   "root_cn": "消极的；负面的",
+   "formation": "形容词，不带词缀，反义词是 positif。常见搭配：berpikir negatif（往坏处想）、kata-kata negatif（负面的话）、pengaruh negatif（不良影响）、hasil tes negatif（检测结果为阴性）。",
+   "example": "Jangan terlalu sering membaca kata-kata negatif di media sosial.",
+   "example_cn": "别太常看社交媒体上的负面言论。",
+   "synonym_note": "negatif = 消极、负面的，也用于医学检测的“阴性”；buruk = 差、不好（质量、结果）；jelek 更口语，多指外观或质量差。说人想法悲观用 berpikir negatif，不说 berpikir buruk。",
+   "is_oral_new": false
+  },
+  {
+   "word": "kuno",
+   "display": "kuno",
+   "audio_text": "kuno",
+   "cn": "古老的；老式的；过时的",
+   "en": "ancient; old-fashioned",
+   "root": "kuno",
+   "root_cn": "古老的；陈旧的",
+   "formation": "形容词，不带词缀。常见搭配：bahasa kuno（古语）、candi kuno（古庙）、model kuno（老式款式）、pikirannya kuno（想法守旧）。",
+   "example": "Modelnya memang kuno, tapi barang di toko itu lengkap dan murah.",
+   "example_cn": "样式确实老旧，不过那家店东西齐全又便宜。",
+   "synonym_note": "kuno = 古老、过时（说历史建筑时是中性的，说人的观念或款式时带“落伍”的意味）；lama = 用了很久、存在很久；tua = 年纪大（人、树、房子）。说“旧手机”用 ponsel lama，不说 ponsel kuno。",
+   "is_oral_new": false
+  },
+  {
+   "word": "mengembangkan",
+   "display": "mengembangkan",
+   "audio_text": "mengembangkan",
+   "cn": "发展；开发；扩大",
+   "en": "to develop; to expand",
+   "root": "kembang",
+   "root_cn": "花；绽放；发展",
+   "formation": "meN- + kembang + -kan → mengembangkan（k 脱落，前缀用 meng-）。常见搭配：mengembangkan usaha（扩大生意）、mengembangkan aplikasi（开发应用）、mengembangkan bakat（培养才能）。口语常说 ngembangin：Dia lagi ngembangin usaha kecilnya.",
+   "example": "Mereka ingin mengembangkan usaha kecil ini menjadi toko online.",
+   "example_cn": "他们想把这家小生意发展成网店。",
+   "synonym_note": "mengembangkan = 使某事物发展、做大（及物，后面接宾语）；berkembang = 自己发展、成长（不及物）：Usahanya berkembang pesat；memajukan = 推动进步。",
+   "is_oral_new": true
+  },
+  {
+   "word": "menguasai",
+   "display": "menguasai",
+   "audio_text": "menguasai",
+   "cn": "掌握；精通；控制",
+   "en": "to master; to control",
+   "root": "kuasa",
+   "root_cn": "权力；能力",
+   "formation": "meN- + kuasa + -i → menguasai（k 脱落，前缀用 meng-）。常见搭配：menguasai bahasa Inggris（精通英语）、menguasai materi（掌握内容）、menguasai pasar（控制市场）。",
+   "example": "Setelah kursus tiga bulan, dia sudah menguasai bahasa Inggris dasar.",
+   "example_cn": "上了三个月课程后，他已经掌握了基础英语。",
+   "synonym_note": "menguasai = 掌握到熟练的程度，或控制住某个范围；memahami = 理解、明白，不一定会做；mahir 是形容词，表示“熟练”：Dia mahir berbahasa Inggris。",
+   "is_oral_new": false
+  },
+  {
+   "word": "kenal",
+   "display": "kenal",
+   "audio_text": "kenal",
+   "cn": "认识；熟悉（人、地方）",
+   "en": "to know (a person); to be acquainted with",
+   "root": "kenal",
+   "root_cn": "认识",
+   "formation": "基础词，不带词缀。常见搭配：kenal dengan（认识……）、kenal baik（很熟）、saling kenal（互相认识）、belum kenal（还不认识）。派生：mengenal（了解、认识）、perkenalan（介绍、认识的过程）。",
+   "example": "Saya sudah kenal baik dengan Pak Hendra sejak kecil.",
+   "example_cn": "我从小就和亨德拉先生很熟。",
+   "synonym_note": "kenal = 认识某个人或地方，彼此打过交道；tahu = 知道某件事或听说过某人，不一定见过：Saya tahu siapa dia, tapi belum kenal。口语否定常说 nggak kenal。",
+   "is_oral_new": false
+  },
+  {
+   "word": "kebutuhan",
+   "display": "kebutuhan",
+   "audio_text": "kebutuhan",
+   "cn": "需求；需要的东西",
+   "en": "need; necessity",
+   "root": "butuh",
+   "root_cn": "需要",
+   "formation": "ke- + butuh + -an → kebutuhan。常见搭配：kebutuhan sehari-hari（日常所需）、memenuhi kebutuhan（满足需求）、sesuai kebutuhan（按需）、kebutuhan pelanggan（顾客需求）。",
+   "example": "Gaji bulan ini cukup untuk memenuhi kebutuhan sehari-hari.",
+   "example_cn": "这个月的工资足够满足日常开销。",
+   "synonym_note": "kebutuhan = 需求（名词）；butuh = 需要（动词，口语常用）；keperluan = 具体用途或事务，如 untuk keperluan pribadi（用于个人事务）；kebutuhan 更强调生活或工作上的必需。",
+   "is_oral_new": false
+  },
+  {
+   "word": "apabila",
+   "display": "apabila",
+   "audio_text": "apabila",
+   "cn": "如果；当……时（书面）",
+   "en": "if; when (formal)",
+   "root": "apabila",
+   "root_cn": "如果（书面）",
+   "formation": "由 apa + bila 构成的连词，多用于告示、公文、说明书等书面场合。常见句式：Apabila ada pertanyaan, silakan hubungi kami.（如有疑问，请联系我们。）日常说话更常用 kalau。",
+   "example": "Apabila ada pesanan khusus, silakan hubungi kami lewat WhatsApp.",
+   "example_cn": "如有特殊订单，请通过 WhatsApp 联系我们。",
+   "synonym_note": "apabila ≈ jika ≈ kalau：意思相同，apabila 最书面，jika 次之，kalau 最口语。跟朋友聊天说 Kalau kamu sempat, ...，不会说 Apabila kamu sempat。",
+   "is_oral_new": false
+  },
+  {
+   "word": "terletak",
+   "display": "terletak",
+   "audio_text": "terletak",
+   "cn": "位于；坐落在",
+   "en": "to be located",
+   "root": "letak",
+   "root_cn": "位置",
+   "formation": "ter- + letak → terletak。后面常接介词 di：terletak di tepi pantai（位于海边）、terletak di pusat kota（位于市中心）、terletak strategis（位置优越）。多用于介绍地点、店铺、景点。",
+   "example": "Hotel itu terletak di dekat stasiun, jadi mudah dicari.",
+   "example_cn": "那家酒店位于车站附近，所以很好找。",
+   "synonym_note": "terletak = 位于（介绍位置时偏正式）；ada / berada = 在，更日常：Tokonya ada di sebelah bank。问路时更常说 Di mana letaknya? 或 Di mana ya tokonya?",
+   "is_oral_new": false
+  }
+ ],
+ "review_vocab": [
+  "nyusahin",
+  "tumbuh",
+  "keuntungan",
+  "memutuskan",
+  "mengganggu"
+ ],
+ "sentences": [
+  {
+   "text": "Tolong menyalakan lampu toko dulu, di dalam masih gelap.",
+   "cn": "请先把店里的灯打开，里面还很暗。"
+  },
+  {
+   "text": "Setiap pagi Sari menggosok kaca etalase supaya toko terlihat bersih.",
+   "cn": "萨莉每天早上擦橱窗玻璃，让店看起来干净。"
+  },
+  {
+   "text": "Toko Kakek terletak di dekat pasar, jadi pembeli mudah menemukannya.",
+   "cn": "祖父的店位于市场附近，所以顾客很容易找到。"
+  },
+  {
+   "text": "Pak Hendra kenal banyak pemilik toko dan tahu kebutuhan mereka.",
+   "cn": "亨德拉先生认识很多店主，也了解他们的需求。"
+  },
+  {
+   "text": "Rak dan mejanya memang kuno, tapi harga barangnya masih murah.",
+   "cn": "货架和桌子确实老旧，不过东西价格还是很便宜。"
+  }
+ ],
+ "reading": {
+  "text": "Toko kelontong Kakek terletak di dekat pasar, dan modelnya masih kuno. Sejak Kakek sakit, Sari yang menjaga toko itu. Pagi ini ia menggosok kaca etalase yang buram, lalu menyalakan komputer tua di meja kasir. Dulu Sari terbiasa mencatat semua pesanan di buku. Sekarang ia ingin mengembangkan usaha ini lewat internet. Pak Hendra, pemilik toko di sebelah, berkata, \"Kalau mau meningkatkan penjualan, kamu harus menguasai cara berjualan online.\" Sari menghela napas. \"Saya nggak kenal siapa pun di dunia online, Pak.\" Pak Hendra tertawa kecil. \"Jangan berpikir negatif dulu. Coba pelajari kebutuhan pelanggan.\" Akhirnya Sari memutuskan untuk mencoba. Di pintu toko, ia menaruh papan kecil bertuliskan: \"Apabila ada pesanan khusus, silakan hubungi kami lewat WhatsApp.\"",
+  "cn": "祖父的杂货店位于市场附近，样式还很老旧。祖父生病后，是萨莉在看店。今天早上，她擦了模糊的橱窗玻璃，然后打开收银台上的旧电脑。以前萨莉习惯把所有订单记在本子上，现在她想通过网络把生意做大。隔壁店主亨德拉先生说：“如果想提高销量，你得掌握网上卖货的方法。”萨莉叹了口气：“亨德拉先生，我在网上谁也不认识。”亨德拉先生轻轻笑了笑：“先别往坏处想，试着先了解顾客的需求。”最后萨莉决定试试。她在店门口放了一块小牌子，上面写着：“如有特殊订单，请通过 WhatsApp 联系我们。”"
+ },
+ "quiz": [
+  {
+   "question": "Musik dari rumah sebelah terus ___ saya waktu belajar tadi malam.",
+   "options": [
+    "mengusir",
+    "menolong",
+    "mengganggu",
+    "menegur"
+   ],
+   "answer_index": 2,
+   "answer": "mengganggu",
+   "explain": "mengganggu = 打扰、干扰，音乐吵到别人学习。mengusir = 赶走；menolong = 帮助；menegur = 提醒、训斥，放进这句语义都不通。"
+  },
+  {
+   "question": "Sari ingin ___ usaha kakeknya lewat internet supaya lebih banyak orang tahu.",
+   "options": [
+    "berkembang",
+    "mengembangkan",
+    "dikembangkan",
+    "pengembangan"
+   ],
+   "answer_index": 1,
+   "answer": "mengembangkan",
+   "explain": "后面直接接宾语 usaha，需要及物动词 mengembangkan（把……做大）。berkembang 是不及物，后面不能直接接宾语；dikembangkan 是被动，主语应是 usaha；pengembangan 是名词。"
+  },
+  {
+   "question": "Saya sudah ___ baik dengan Pak Hendra sejak kecil, jadi dia sering membantu keluarga kami.",
+   "options": [
+    "tahu",
+    "mengerti",
+    "paham",
+    "kenal"
+   ],
+   "answer_index": 3,
+   "answer": "kenal",
+   "explain": "kenal baik = 和某人很熟，是打过交道的关系。tahu 只是知道有这个人或这件事；mengerti 和 paham 指理解内容，都不能这样搭配人。"
+  }
+ ],
+ "output": {
+  "task": "用 2–3 句印尼语说说：你最想 mengembangkan 哪方面的能力或生意？你现在已经 menguasai 了什么？（要用到 mengembangkan 和 menguasai）",
+  "reference_answer": "Saya ingin mengembangkan kemampuan bahasa Indonesia saya supaya bisa bekerja di Jakarta. Sekarang saya sudah menguasai percakapan dasar, tapi saya masih perlu banyak latihan.",
+  "reference_cn": "我想提升自己的印尼语能力，这样才能到雅加达工作。现在我已经掌握了基础会话，但还需要多加练习。"
+ },
+ "review": [
+  "3秒主动提取：不看词卡，说出这 10 个词的意思——menggosok、menyalakan、negatif、kuno、mengembangkan、menguasai、kenal、kebutuhan、apabila、terletak；再用口语说一遍：menyalakan = nyalain，mengembangkan = ngembangin。",
+  "易混词与搭配：kenal（认识的人）vs tahu（知道的事）；menyalakan 开灯 vs membuka 开门；kuno（古老、过时）vs lama（用了很久）vs tua（年纪大）；mengembangkan（做大）vs berkembang（自己成长）；apabila 用于告示，聊天用 kalau。",
+  "重点复习词应用：从 nyusahin、tumbuh、keuntungan、memutuskan、mengganggu 里选两个各说一句，例如 “Toko itu tumbuh pelan-pelan, dan keuntungannya mulai naik.”"
+ ]
+}
