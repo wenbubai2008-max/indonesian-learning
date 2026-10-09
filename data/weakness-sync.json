@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T07:12:34.735Z",
+  "updated_at": "2026-10-09T07:31:58.052Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1661,16 +1661,17 @@
     "kelompok": {
       "word": "kelompok",
       "status": "active",
-      "updated_at": "2026-10-07T11:49:38.181Z",
+      "updated_at": "2026-10-09T07:30:34.926Z",
       "display": "kelompok",
       "cn": "组；小组；群体",
       "root": "kelompok",
       "root_cn": "组；群",
+      "last_review": "2026-10-09T07:30:34.897Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "sebab": {
       "word": "sebab",
@@ -1995,14 +1996,15 @@
     "langkah": {
       "word": "langkah",
       "status": "active",
-      "updated_at": "2026-09-21T14:39:48.470Z",
+      "updated_at": "2026-10-09T07:31:43.729Z",
       "display": "langkah",
       "cn": "步伐",
+      "last_review": "2026-10-09T07:31:43.700Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pidana": {
       "word": "pidana",
@@ -2558,13 +2560,14 @@
     "kekuatan": {
       "word": "kekuatan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-09T07:30:32.553Z",
       "display": "kekuatan",
+      "last_review": "2026-10-09T07:30:32.525Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "melawan": {
       "word": "melawan",
@@ -3764,13 +3767,14 @@
     "kepo": {
       "word": "kepo",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-09T07:31:05.924Z",
       "display": "kepo",
+      "last_review": "2026-10-09T07:31:05.897Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "keras-keras": {
       "word": "keras-keras",
@@ -5667,13 +5671,14 @@
     "kuno": {
       "word": "kuno",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-09T07:31:33.491Z",
       "display": "kuno",
+      "last_review": "2026-10-09T07:31:33.462Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "awan": {
       "word": "awan",
@@ -5903,13 +5908,14 @@
     "kejam": {
       "word": "kejam",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-09T07:30:16.379Z",
       "display": "kejam",
+      "last_review": "2026-10-09T07:30:16.350Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menghitung": {
       "word": "menghitung",
@@ -6275,13 +6281,14 @@
     "kisah": {
       "word": "kisah",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-09T07:31:26.493Z",
       "display": "kisah",
+      "last_review": "2026-10-09T07:31:26.462Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pegawai": {
       "word": "pegawai",
@@ -6555,13 +6562,14 @@
     "kenal": {
       "word": "kenal",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-09T07:30:51.724Z",
       "display": "kenal",
+      "last_review": "2026-10-09T07:30:51.696Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nikmat": {
       "word": "nikmat",
@@ -6628,14 +6636,15 @@
     "kebutuhan": {
       "word": "kebutuhan",
       "status": "active",
-      "updated_at": "2026-09-14T09:36:19.612Z",
+      "updated_at": "2026-10-09T07:30:03.105Z",
       "display": "kebutuhan",
       "cn": "需要",
+      "last_review": "2026-10-09T07:30:03.068Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "penduduk": {
       "word": "penduduk",
@@ -7701,15 +7710,16 @@
     "kecewa": {
       "word": "kecewa",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-09T07:30:14.490Z",
       "display": "kecewa",
       "cn": "失望",
       "root": "kecewa",
+      "last_review": "2026-10-09T07:30:14.463Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "aliran": {
       "word": "aliran",
@@ -14006,15 +14016,16 @@
     "kerugian": {
       "word": "kerugian",
       "status": "active",
-      "updated_at": "2026-09-12T14:25:24.886Z",
+      "updated_at": "2026-10-09T07:31:13.061Z",
       "display": "kerugian",
       "cn": "损失；亏损",
       "root": "rugi",
+      "last_review": "2026-10-09T07:31:13.033Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pariwisata": {
       "word": "pariwisata",
@@ -14041,15 +14052,16 @@
     "kontrak": {
       "word": "kontrak",
       "status": "active",
-      "updated_at": "2026-09-12T14:25:24.886Z",
+      "updated_at": "2026-10-09T07:31:31.751Z",
       "display": "kontrak",
       "cn": "合同；租约",
       "root": "kontrak",
+      "last_review": "2026-10-09T07:31:31.723Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "bergabung": {
       "word": "bergabung",
@@ -16612,15 +16624,16 @@
     "lega": {
       "word": "lega",
       "status": "active",
-      "updated_at": "2026-09-12T15:03:09.099Z",
+      "updated_at": "2026-10-09T07:31:47.657Z",
       "display": "lega",
       "cn": "松一口气；宽慰",
       "root": "lega",
+      "last_review": "2026-10-09T07:31:47.630Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "balap": {
       "word": "balap",
@@ -20213,15 +20226,16 @@
     "ketika": {
       "word": "ketika",
       "status": "active",
-      "updated_at": "2026-09-12T16:57:59.595Z",
+      "updated_at": "2026-10-09T07:31:16.608Z",
       "display": "ketika",
       "cn": "当……时候",
       "root": "ketika",
+      "last_review": "2026-10-09T07:31:16.580Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "waktu": {
       "word": "waktu",
@@ -21135,15 +21149,16 @@
     "kendala": {
       "word": "kendala",
       "status": "active",
-      "updated_at": "2026-09-12T17:00:47.452Z",
+      "updated_at": "2026-10-09T07:31:02.595Z",
       "display": "kendala",
       "cn": "障碍；困难；卡点",
       "root": "kendala",
+      "last_review": "2026-10-09T07:31:02.567Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "peluang": {
       "word": "peluang",
@@ -21599,15 +21614,16 @@
     "kwitansi": {
       "word": "kwitansi",
       "status": "active",
-      "updated_at": "2026-09-12T17:03:45.462Z",
+      "updated_at": "2026-10-09T07:31:38.833Z",
       "display": "kwitansi",
       "cn": "收据",
       "root": "kwitansi",
+      "last_review": "2026-10-09T07:31:38.806Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nota": {
       "word": "nota",
@@ -21761,15 +21777,16 @@
     "keluhan": {
       "word": "keluhan",
       "status": "active",
-      "updated_at": "2026-09-12T17:04:40.938Z",
+      "updated_at": "2026-10-09T07:30:44.356Z",
       "display": "keluhan",
       "cn": "投诉；抱怨",
       "root": "keluh",
+      "last_review": "2026-10-09T07:30:44.329Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pelayanan": {
       "word": "pelayanan",
@@ -23003,15 +23020,16 @@
     "kecelakaan": {
       "word": "kecelakaan",
       "status": "active",
-      "updated_at": "2026-09-12T17:09:55.811Z",
+      "updated_at": "2026-10-09T07:30:06.980Z",
       "display": "kecelakaan",
       "cn": "事故",
       "root": "celaka",
+      "last_review": "2026-10-09T07:30:06.950Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "tabrak": {
       "word": "tabrak",
@@ -23689,15 +23707,16 @@
     "kejar": {
       "word": "kejar",
       "status": "active",
-      "updated_at": "2026-09-12T17:12:42.603Z",
+      "updated_at": "2026-10-09T07:30:23.268Z",
       "display": "kejar",
       "cn": "追赶",
       "root": "kejar",
+      "last_review": "2026-10-09T07:30:23.235Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "tangkap": {
       "word": "tangkap",
