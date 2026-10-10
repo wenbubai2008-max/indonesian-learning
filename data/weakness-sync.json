@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-10T02:36:19.700Z",
+  "updated_at": "2026-10-10T02:45:14.441Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -5627,14 +5627,15 @@
     "menghabiskan": {
       "word": "menghabiskan",
       "status": "active",
-      "updated_at": "2026-10-09T13:54:02.748Z",
+      "updated_at": "2026-10-10T02:44:48.125Z",
       "display": "menghabiskan",
       "cn": "花费 / 消耗",
+      "last_review": "2026-10-10T02:44:48.094Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "tajam": {
       "word": "tajam",
@@ -6536,13 +6537,14 @@
     "sampah": {
       "word": "sampah",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-10T02:45:03.606Z",
       "display": "sampah",
+      "last_review": "2026-10-10T02:45:03.582Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "ditemukan": {
       "word": "ditemukan",
@@ -6999,14 +7001,15 @@
     "lapangan": {
       "word": "lapangan",
       "status": "active",
-      "updated_at": "2026-10-02T06:32:33.221Z",
+      "updated_at": "2026-10-10T02:44:39.817Z",
       "display": "lapangan",
       "cn": "场地",
+      "last_review": "2026-10-10T02:44:39.792Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "penyakit": {
       "word": "penyakit",
@@ -7158,13 +7161,14 @@
     "kekerasan": {
       "word": "kekerasan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-10T02:44:34.607Z",
       "display": "kekerasan",
+      "last_review": "2026-10-10T02:44:34.582Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "usia": {
       "word": "usia",
@@ -7192,13 +7196,14 @@
     "berlaku": {
       "word": "berlaku",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-10T02:44:25.069Z",
       "display": "berlaku",
+      "last_review": "2026-10-10T02:44:25.042Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "saksi": {
       "word": "saksi",
@@ -7353,14 +7358,15 @@
     "bergerak": {
       "word": "bergerak",
       "status": "active",
-      "updated_at": "2026-09-27T05:31:49.904Z",
+      "updated_at": "2026-10-10T02:44:23.260Z",
       "display": "bergerak",
       "cn": "移动，行动",
+      "last_review": "2026-10-10T02:44:23.232Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "konflik": {
       "word": "konflik",
@@ -7719,13 +7725,14 @@
     "menyediakan": {
       "word": "menyediakan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-10T02:44:53.126Z",
       "display": "menyediakan",
+      "last_review": "2026-10-10T02:44:53.101Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "intinya": {
       "word": "intinya",
@@ -7940,13 +7947,14 @@
     "keberadaan": {
       "word": "keberadaan",
       "status": "active",
-      "updated_at": "2026-09-12T13:30:06.482Z",
+      "updated_at": "2026-10-10T02:44:31.254Z",
       "display": "keberadaan",
+      "last_review": "2026-10-10T02:44:31.227Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "karakter": {
       "word": "karakter",
@@ -14686,14 +14694,15 @@
     "penelitian": {
       "word": "penelitian",
       "status": "active",
-      "updated_at": "2026-09-12T14:45:34.210Z",
+      "updated_at": "2026-10-10T02:44:59.408Z",
       "display": "penelitian",
       "cn": "研究",
+      "last_review": "2026-10-10T02:44:59.382Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "konsumen": {
       "word": "konsumen",
@@ -19460,15 +19469,16 @@
     "rapi": {
       "word": "rapi",
       "status": "active",
-      "updated_at": "2026-09-12T16:53:44.093Z",
+      "updated_at": "2026-10-10T02:45:01.083Z",
       "display": "rapi",
       "cn": "整齐",
       "root": "rapi",
+      "last_review": "2026-10-10T02:45:01.058Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "berantakan": {
       "word": "berantakan",
@@ -19966,15 +19976,16 @@
     "cerai": {
       "word": "cerai",
       "status": "active",
-      "updated_at": "2026-09-12T16:56:11.286Z",
+      "updated_at": "2026-10-10T02:44:26.692Z",
       "display": "cerai",
       "cn": "离婚",
       "root": "cerai",
+      "last_review": "2026-10-10T02:44:26.667Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "jomblo": {
       "word": "jomblo",
@@ -20111,15 +20122,16 @@
     "keras kepala": {
       "word": "keras kepala",
       "status": "active",
-      "updated_at": "2026-09-12T16:56:50.640Z",
+      "updated_at": "2026-10-10T02:44:36.556Z",
       "display": "keras kepala",
       "cn": "固执",
       "root": "keras kepala",
+      "last_review": "2026-10-10T02:44:36.531Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "cerewet": {
       "word": "cerewet",
@@ -20163,15 +20175,16 @@
     "luar biasa": {
       "word": "luar biasa",
       "status": "active",
-      "updated_at": "2026-09-12T16:57:08.485Z",
+      "updated_at": "2026-10-10T02:44:43.668Z",
       "display": "luar biasa",
       "cn": "非凡；很棒",
       "root": "luar biasa",
+      "last_review": "2026-10-10T02:44:43.642Z",
       "reasons": [
         "memory_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "gila": {
       "word": "gila",
