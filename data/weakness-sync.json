@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T15:23:58.494Z",
+  "updated_at": "2026-10-10T02:36:19.700Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -14120,8 +14120,9 @@
     "keliling": {
       "word": "keliling",
       "status": "active",
-      "updated_at": "2026-09-12T14:25:24.886Z",
+      "updated_at": "2026-10-10T02:36:09.167Z",
       "display": "keliling",
+      "cn": "大约",
       "reasons": [
         "memory_dont"
       ],
@@ -22195,7 +22196,7 @@
       "status": "active",
       "updated_at": "2026-10-09T15:23:15.263Z",
       "display": "urus",
-      "cn": "处理；照料；管理",
+      "cn": "处理；照料",
       "root": "urus",
       "root_cn": "处理；照料",
       "last_wrong": "2026-10-09T15:23:15.233Z",
