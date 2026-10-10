@@ -1,0 +1,357 @@
+{
+  "date": "2026-10-10",
+  "session": "pm",
+  "time": "18:00",
+  "day": 50,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Rina 劝固执的爸爸每天早上活动身体",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "tubuh",
+    "santai",
+    "anjuran",
+    "peregangan"
+  ],
+  "vocab": [
+    {
+      "display": "tubuh",
+      "audio_text": "tubuh",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "tubuh",
+      "cn": "身体；躯体",
+      "en": "body",
+      "root": "tubuh",
+      "root_cn": "身体",
+      "formation": "tubuh 本身是词根。相关：tubuh bagian atas（上半身）、tubuh sehat（健康的身体）。常见搭配：tubuh terasa pegal（身体酸痛）、menjaga tubuh（保养身体）、suhu tubuh（体温）。",
+      "example": "Kalau kurang bergerak, tubuh gampang terasa kaku.",
+      "example_cn": "如果很少活动，身体容易觉得僵硬。",
+      "synonym_note": "tubuh（整个身体，较中性、偏书面）vs badan（口语最常用，也指“身子、躯干”）vs fisik（身体素质、体能）：Badanku pegal＝我浑身酸；Tubuh manusia＝人体；Fisiknya kuat＝体力强。",
+      "usage_note": "新词（半熟词）。聊天说“我身体不舒服”更常用 badanku，写作或讲健康知识时 tubuh 更自然。tubuh 只指人或动物的身体，不用来指物体的主体部分。",
+      "source_group": "new"
+    },
+    {
+      "display": "santai",
+      "audio_text": "santai",
+      "is_new": true,
+      "is_oral_new": true,
+      "word": "santai",
+      "cn": "放松；悠闲；不紧张",
+      "en": "relaxed; easygoing; to take it easy",
+      "root": "santai",
+      "root_cn": "悠闲；放松",
+      "formation": "santai 本身是词根。口语动词形式 nyantai＝悠闲地待着、慢慢来。常见搭配：santai aja（别紧张，慢慢来）、jalan santai（悠闲散步）、duduk santai（轻松地坐着）、Kita nyantai dulu aja（我们先歇一会儿）。",
+      "example": "Hari Minggu pagi, kami jalan santai di sekitar kompleks.",
+      "example_cn": "星期天早上，我们在小区附近悠闲地散步。",
+      "synonym_note": "santai（心态或节奏放松）vs tenang（心情平静、不慌乱）vs rileks（来自英语 relax，较偏身体放松）：Santai aja＝别急，放轻松；Tenang aja＝别担心，没事的。",
+      "usage_note": "新词（半熟词，口语词）。santai 既可形容人（Orangnya santai），也可形容活动节奏（acara santai）。劝人别急用 Santai aja dulu；表示自己慢慢待着用 nyantai。",
+      "source_group": "new"
+    },
+    {
+      "display": "anjuran",
+      "audio_text": "anjuran",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "anjuran",
+      "cn": "建议；劝告；医嘱",
+      "en": "advice; recommendation (esp. from a doctor)",
+      "root": "anjur",
+      "root_cn": "劝；建议",
+      "formation": "anjur + -an → anjuran（名词）。相关：menganjurkan＝建议、提倡（meN- + anjur + -kan，g 前 meN- 变 meng-），dianjurkan＝被建议、宜于。常见搭配：anjuran dokter（医嘱）、mengikuti anjuran（听从建议）、sesuai anjuran（按照建议）。",
+      "example": "Ibu mengikuti anjuran dokter dan minum obat tepat waktu.",
+      "example_cn": "妈妈听从医嘱，按时吃药。",
+      "synonym_note": "anjuran（正式一些的“建议、提倡”，常来自医生、专家或官方）vs saran（一般的建议，朋友之间也能用）vs nasihat（劝诫，带人生道理的忠告）：Anjuran dokter＝医嘱；Minta saran teman＝向朋友求建议；Nasihat orang tua＝父母的忠告。",
+      "usage_note": "新词（陌生词）。Anjuran dokter 是最实用的固定说法；dianjurkan 常出现在说明书和告示里，表示“建议这样做”。语气比 perintah（命令）轻。",
+      "source_group": "new"
+    },
+    {
+      "display": "peregangan",
+      "audio_text": "peregangan",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "peregangan",
+      "cn": "拉伸；伸展运动",
+      "en": "stretching",
+      "root": "regang",
+      "root_cn": "绷紧；伸展",
+      "formation": "pe- + regang + -an → peregangan（r 前 peN- 变 pe-）。相关：meregangkan＝把……拉开、伸展，regang＝绷紧、拉直。常见搭配：melakukan peregangan（做拉伸）、peregangan otot（肌肉拉伸）、peregangan ringan（轻度拉伸）。",
+      "example": "Sebelum lari, kami melakukan peregangan selama lima menit.",
+      "example_cn": "跑步之前，我们做了五分钟拉伸。",
+      "synonym_note": "peregangan（拉伸、伸展这个动作）vs pemanasan（热身，范围更大，包含轻跑、活动关节）：Peregangan sering menjadi bagian dari pemanasan＝拉伸常是热身的一部分。",
+      "usage_note": "新词（陌生词）。通常说 melakukan peregangan 或 peregangan otot；口语也会说 stretching。注意它指“拉伸”，不是泛指所有运动。",
+      "source_group": "new"
+    },
+    {
+      "display": "semacam",
+      "audio_text": "semacam",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "semacam",
+      "cn": "一种；类似……的；某种",
+      "en": "a kind of; something like",
+      "root": "macam",
+      "root_cn": "种类；样子",
+      "formation": "se- + macam → semacam（se-＝一，macam＝种类）。相关：macam-macam＝各种各样，bermacam-macam＝多种多样。常见搭配：semacam obat（一种药）、semacam senam（类似体操的运动）、semacam itu（那一类的）。",
+      "example": "Itu semacam senam ringan untuk orang tua.",
+      "example_cn": "那是一种适合老年人的轻体操。",
+      "synonym_note": "semacam（“一类、类似于”，说不准确切名称时用）vs sejenis（同一类，更书面）vs seperti（像……一样，用于比喻或举例）：Semacam kue＝一类糕点；Seperti kue＝像糕点一样。",
+      "usage_note": "重点复习词（focus，新错）。semacam 后面直接接名词，表示“差不多属于那一类”：semacam hadiah＝类似礼物的东西。注意不要和 seperti（比喻）混用。",
+      "source_group": "review"
+    },
+    {
+      "display": "pernyataan",
+      "audio_text": "pernyataan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "pernyataan",
+      "cn": "声明；陈述；说法",
+      "en": "statement; declaration",
+      "root": "nyata",
+      "root_cn": "真实的；明显的",
+      "formation": "per- + nyata + -an → pernyataan（与 menyatakan 同源：meN- + nyata + -kan＝声明、表明）。相关：menyatakan＝声明，nyata＝真实的。常见搭配：membuat pernyataan（发表声明）、pernyataan resmi（正式声明）、pernyataan dokter（医生的说法）。",
+      "example": "Pernyataan dokter sangat jelas: Pak Wahyu harus lebih sering bergerak.",
+      "example_cn": "医生的说法很明确：Wahyu 先生必须多活动。",
+      "synonym_note": "pernyataan（正式、明确说出来的话或声明）vs ucapan（随口说的话；也指祝福语）vs pendapat（个人看法、意见）：Pernyataan resmi＝正式声明；Ucapan selamat＝祝贺的话；Menurut pendapat saya＝依我看。",
+      "usage_note": "重点复习词（focus，新错）。常见于新闻和正式场合：membuat pernyataan。日常聊天想说“他说的话”多用 omongannya；pernyataan 带“正式表态”的味道。",
+      "source_group": "review"
+    },
+    {
+      "display": "perubahan",
+      "audio_text": "perubahan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "perubahan",
+      "cn": "变化；改变（名词）",
+      "en": "change; alteration",
+      "root": "ubah",
+      "root_cn": "改变",
+      "formation": "per- + ubah + -an → perubahan（名词）。相关：berubah＝自己变了，mengubah＝把……改变（AM 复习词），ubah＝改。常见搭配：perubahan kecil（小变化）、ada perubahan（有变化）、perubahan jadwal（日程变动）。",
+      "example": "Ada perubahan jadwal, rapatnya pindah ke hari Jumat.",
+      "example_cn": "日程有变动，会议改到星期五了。",
+      "synonym_note": "perubahan（变化本身，名词）vs berubah（动词，自己变了）vs pergantian（替换、更替：pergantian tahun＝跨年）：Cuacanya berubah＝天气变了；Pergantian guru＝换老师。",
+      "usage_note": "重点复习词（久未出现）。名词，常放在 ada、terjadi 后面。想说“变好、变坏”用 berubah menjadi lebih baik；“把计划改了”用 mengubah rencana。",
+      "source_group": "review"
+    },
+    {
+      "display": "terbiasa",
+      "audio_text": "terbiasa",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "terbiasa",
+      "cn": "习惯了；已经适应",
+      "en": "to be used to; accustomed",
+      "root": "biasa",
+      "root_cn": "平常的；惯常的",
+      "formation": "ter- + biasa → terbiasa（已经形成习惯、自然而然）。相关：biasa＝平常，membiasakan＝使习惯，kebiasaan＝习惯（名词）。常见搭配：belum terbiasa（还不习惯）、terbiasa bangun pagi（习惯早起）、terbiasa dengan…（习惯于……）。",
+      "example": "Aku belum terbiasa naik motor di jalan besar.",
+      "example_cn": "我还不习惯在大马路上骑摩托车。",
+      "synonym_note": "terbiasa（已经养成、适应了）vs biasa（平常；一般般）vs membiasakan diri（主动让自己习惯）：Aku terbiasa bangun pagi＝我早起惯了；Biasa aja＝没什么特别；Kamu harus membiasakan diri＝你得让自己习惯。",
+      "usage_note": "重点复习词（久未出现）。后面常接动作或 dengan + 名词：terbiasa dengan hujan。“belum terbiasa”是适应新环境时最实用的说法。",
+      "source_group": "review"
+    },
+    {
+      "display": "walaupun",
+      "audio_text": "walaupun",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "walaupun",
+      "cn": "虽然；即使",
+      "en": "although; even though",
+      "root": "walau",
+      "root_cn": "虽然；即使",
+      "formation": "walau + -pun → walaupun（-pun 加强让步语气）。相关：walau（口语简写，意思相同）、meskipun、biarpun（近义）。常见搭配：walaupun capek, … tetap…（虽然累，还是……）、walaupun begitu（尽管如此）。",
+      "example": "Walaupun hujan, mereka tetap berangkat ke pasar.",
+      "example_cn": "虽然下雨，他们还是去市场了。",
+      "synonym_note": "walaupun（虽然、即使，最常用）vs meskipun（更书面）vs biarpun（口语，常带“就算”）：三者大多可互换，但 walaupun 后面通常接一个事实，主句常用 tetap 呼应。",
+      "usage_note": "重点复习词（久未出现）。walaupun 引出让步，主句常配 tetap：Walaupun ngantuk, dia tetap datang。注意中文“虽然……但是……”印尼语只用一个连词，不要再加 tapi 叠用。",
+      "source_group": "review"
+    },
+    {
+      "display": "bergerak",
+      "audio_text": "bergerak",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "bergerak",
+      "cn": "活动；移动；动起来",
+      "en": "to move; to be active",
+      "root": "gerak",
+      "root_cn": "动；动作",
+      "formation": "ber- + gerak → bergerak（自己动起来）。相关：gerak＝动作，gerakan＝动作／运动，menggerakkan＝使……动起来。常见搭配：kurang bergerak（很少活动）、mulai bergerak（动起来）、bergerak pelan-pelan（慢慢地移动）。",
+      "example": "Setelah duduk dua jam, ia mulai bergerak dan meregangkan tangan.",
+      "example_cn": "坐了两个小时后，他开始活动并伸展双手。",
+      "synonym_note": "bergerak（自己移动或活动身体）vs berpindah（从一个地方换到另一个地方）vs menggerakkan（让某物或某部位动起来）：Dia bergerak＝他动了；Dia berpindah ke kursi lain＝他换到别的椅子；Menggerakkan jari＝活动手指。",
+      "usage_note": "应用词。上午新词：今天08:00新学。这里用来说“身体要多活动”：kurang bergerak＝缺乏活动；与 olahraga 相比语气更日常。",
+      "source_group": "application"
+    },
+    {
+      "display": "keras kepala",
+      "audio_text": "keras kepala",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "keras kepala",
+      "cn": "固执；倔",
+      "en": "stubborn",
+      "root": "keras",
+      "root_cn": "硬的；强烈的",
+      "formation": "keras + kepala → keras kepala（固定词组，字面“头硬”）。相关：keras＝硬的，kekerasan＝暴力（今天 08:00 另一新词）。常见搭配：anak keras kepala（倔强的孩子）、keras kepala banget（特别倔）、dasar keras kepala（真是个倔脾气）。",
+      "example": "Kakek keras kepala, padahal sudah dilarang makan terlalu manis.",
+      "example_cn": "爷爷很固执，明明已经被禁止吃太甜的东西。",
+      "synonym_note": "keras kepala（固执，不听劝）vs ngotot（硬要坚持、不肯退让，口语）vs tegas（态度坚定但不一定贬义）：Dia keras kepala＝他不听劝；Dia ngotot ikut＝他非要跟着去；Pemimpin yang tegas＝果断的领导。",
+      "usage_note": "应用词。上午新词：今天08:00新学。多用于批评别人不听劝，用在自己身上可以半开玩笑：Aku memang keras kepala。",
+      "source_group": "application"
+    }
+  ],
+  "reading": {
+    "text": "Pak Wahyu baru pulang dari dokter. Pernyataan dokter jelas: tubuhnya akan makin kaku kalau ia kurang bergerak. Dokter juga memberi anjuran sederhana, yaitu peregangan sepuluh menit setiap pagi. Namun Pak Wahyu keras kepala. Ia merasa dirinya masih kuat, jadi anjuran itu dianggap tidak perlu. Putrinya, Rina, tidak mau berdebat. Keesokan paginya ia mengajak ayahnya jalan santai di depan rumah. Mula-mula Pak Wahyu mengeluh karena belum terbiasa bangun pagi, tetapi akhirnya ia mau mencoba semacam senam ringan. Walaupun hanya lima belas menit, tubuhnya terasa lebih enak. Rina senang melihat perubahan kecil itu.",
+    "cn": "Wahyu 先生刚从医生那里回来。医生的说法很明确：如果他很少活动，身体会越来越僵硬。医生还给了一个简单的建议，就是每天早上做十分钟拉伸。可是 Wahyu 先生很固执。他觉得自己还很硬朗，所以认为这个建议没必要。女儿 Rina 不想跟他争。第二天早上，她约爸爸在家门口悠闲地散步。起初 Wahyu 先生抱怨还不习惯早起，但最后他愿意试试一种轻体操。虽然只有十五分钟，他觉得身体舒服多了。Rina 很高兴看到这个小小的变化。"
+  },
+  "dialogue": {
+    "title": "Pagi hari di depan rumah",
+    "lines": [
+      {
+        "speaker": "Rina",
+        "id": "Pak, pagi ini kita santai aja. Aku bawain teh hangat, habis itu peregangan lima menit ya.",
+        "cn": "爸，今天早上我们轻松点就好。我给你带杯热茶，然后做五分钟拉伸，好吗？"
+      },
+      {
+        "speaker": "Pak Wahyu",
+        "id": "Nanti dulu, Rin. Bapak masih ngantuk, kemarin juga nggak sempat tidur siang.",
+        "cn": "等一下，Rin。爸还困着呢，昨天也没来得及午睡。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Pernyataan dokter kemarin kan jelas, Pak. Kalau kurang bergerak, tubuh makin kaku.",
+        "cn": "医生昨天说得很清楚，爸。如果很少活动，身体会越来越僵。"
+      },
+      {
+        "speaker": "Pak Wahyu",
+        "id": "Iya, iya. Tapi Bapak belum terbiasa bangun sepagi ini.",
+        "cn": "好好好。可是爸还没习惯起这么早。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Nggak apa-apa. Perubahan kecil dulu, nanti juga terbiasa. Peregangan nggak memerlukan alat apa pun, kok.",
+        "cn": "没关系。先从小改变开始，慢慢就习惯了。拉伸又不需要任何器材。"
+      },
+      {
+        "speaker": "Pak Wahyu",
+        "id": "Walaupun ngantuk, ternyata enak juga ya. Bapak nggak nyangka semacam senam ringan ini bisa bikin segar.",
+        "cn": "虽然还困，居然挺舒服的。爸没想到这种轻体操能让人精神起来。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Kan? Aku penasaran besok Bapak masih mau ikut nggak.",
+        "cn": "对吧？我好奇明天爸还愿不愿意来。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "用 tubuh、anjuran 和 peregangan 写 2–3 句话：说说你或家人的身体哪里不舒服，医生或朋友给了什么建议。",
+      "reference_answer": "Tubuhku sering pegal karena duduk di depan komputer seharian. Dokter memberi anjuran sederhana: melakukan peregangan sepuluh menit setiap pagi.",
+      "reference_cn": "我的身体常因为整天坐在电脑前而酸痛。医生给了一个简单的建议：每天早上做十分钟拉伸。"
+    },
+    {
+      "task": "用 santai、perubahan 和 terbiasa 写 2–3 句话：说说你最近生活里的一个小变化，以及你是否已经习惯。",
+      "reference_answer": "Bulan ini jadwal kerjaku berubah, jadi aku belum terbiasa. Perubahannya memang kecil, jadi aku mencoba santai aja dan pelan-pelan menyesuaikan diri.",
+      "reference_cn": "这个月我的工作时间变了，所以还不习惯。变化其实不大，所以我试着放轻松，慢慢适应。"
+    },
+    {
+      "task": "用 pernyataan、semacam 和 walaupun 写 2 句话：说说你最近听到或读到的一个说法，你觉得它对不对。",
+      "reference_answer": "Temanku membuat pernyataan bahwa minum kopi bisa bikin kita lebih fokus. Menurutku itu semacam kebiasaan saja, karena walaupun sudah minum kopi, aku tetap ngantuk.",
+      "reference_cn": "我朋友说喝咖啡能让人更专注。我觉得那只是一种习惯而已，因为就算喝了咖啡，我还是困。"
+    },
+    {
+      "task": "用 bergerak 和 keras kepala 写 2 句话：说说身边一个不爱活动又很固执的人，你怎么劝他。",
+      "reference_answer": "Adikku keras kepala dan kurang bergerak, padahal kerjanya duduk terus. Aku mengajaknya jalan santai sore hari supaya tubuhnya nggak kaku.",
+      "reference_cn": "我弟弟很固执又不爱活动，明明工作就是一直坐着。我约他傍晚悠闲地散步，免得身体僵硬。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "选出最合适的一项：Dokter memberi ____ supaya Pak Wahyu melakukan peregangan setiap pagi.",
+        "options": [
+          "perubahan",
+          "pernyataan",
+          "anjuran",
+          "perasaan"
+        ],
+        "answer_index": 2,
+        "answer": "anjuran",
+        "explain": "“医生给了建议，让他每天做拉伸”用 anjuran＝建议、医嘱。perubahan＝变化，pernyataan＝正式声明，perasaan＝感觉，都不能和 memberi 搭出“给建议”的意思。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Aku belum ____ bangun jam lima pagi.",
+        "options": [
+          "terbiasa",
+          "biasanya",
+          "membiasakan",
+          "kebiasaan"
+        ],
+        "answer_index": 0,
+        "answer": "terbiasa",
+        "explain": "“还没习惯早起”用 belum terbiasa＋动作。biasanya＝通常（副词），membiasakan 需要接宾语（membiasakan diri），kebiasaan＝习惯（名词），都不能直接接 bangun。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Pak Wahyu keras kepala, ____ sudah diingatkan dokter, ia tetap menunda olahraga.",
+        "options": [
+          "karena",
+          "sehingga",
+          "supaya",
+          "walaupun"
+        ],
+        "answer_index": 3,
+        "answer": "walaupun",
+        "explain": "“虽然已被医生提醒，他还是拖着不运动”表示让步，用 walaupun，主句配 tetap。karena＝因为，sehingga＝以致，supaya＝为了，意思都不对。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Jalan paginya nggak usah buru-buru, kita ____ aja.（放松；悠闲）",
+        "answer": "santai",
+        "explain": "santai aja＝慢慢来，放轻松。tenang 是“别慌”，语气不同；这里强调节奏悠闲。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Itu ____ senam ringan untuk orang tua, bukan olahraga berat.（一种；类似……的）",
+        "answer": "semacam",
+        "explain": "semacam＋名词＝一类、类似于……的东西。seperti 用于比喻，这里是在归类，所以用 semacam。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：拉伸让身体觉得轻松多了。",
+        "tokens": [
+          "Peregangan",
+          "membuat",
+          "tubuh",
+          "terasa",
+          "lebih",
+          "ringan"
+        ],
+        "answer": "Peregangan membuat tubuh terasa lebih ringan",
+        "answer_cn": "拉伸让身体觉得轻松多了。",
+        "explain": "Peregangan 是主语，membuat tubuh terasa lebih ringan＝使身体感觉更轻松；terasa 后面接形容词。"
+      }
+    ],
+    "self_check": [
+      "不看中文，我能在 3 秒内说出 tubuh、santai、anjuran、peregangan 的意思，并各造一个短句吗？",
+      "semacam、pernyataan、perubahan、terbiasa、walaupun 里，哪个我 3 秒内想不起来？不熟的那个，我用它说了一句话吗？",
+      "我能分清 anjuran（建议、医嘱）、saran（一般建议）和 perintah（命令），以及 tubuh（书面）和 badan（口语）吗？",
+      "bergerak 和 keras kepala 是今天 08:00 新学的词，现在我能不看词卡各说一句话吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "先做 3 秒主动提取：看中文说出 tubuh、santai、anjuran、peregangan，再依次说出 semacam、pernyataan、perubahan、terbiasa、walaupun，答不出的立刻回看词卡再说一遍。",
+      "对比易混用法：anjuran（医嘱、建议）和 pernyataan（正式声明）、terbiasa（已习惯）和 biasa（平常）、walaupun（虽然）和 karena（因为），各说一句自己的例句。",
+      "用 30 秒向朋友讲一遍“Rina 怎么劝固执的爸爸每天早上活动身体”的经过，至少用上 5 个目标词，不要背课文。",
+      "想一件你最近 belum terbiasa 的新变化，用 perubahan 和 walaupun 各说一句；再想一个 keras kepala 的人，说你会怎么劝他 bergerak。",
+      "最后用 bergerak 和 keras kepala 各说一句今天早课之后的新句子，检查自己有没有真的记住，而不是只看过。"
+    ]
+  }
+}
