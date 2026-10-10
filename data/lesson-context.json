@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-10",
-    "session": "pm",
-    "time": "18:00",
-    "day": 50
+    "date": "2026-10-11",
+    "session": "am",
+    "time": "08:00",
+    "day": 51
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-10T00:28:19.728Z",
-    "lesson_watermark": "2026-10-10 08:00",
+    "runtime_generated_at": "2026-10-10T10:42:45.823Z",
+    "lesson_watermark": "2026-10-10 18:00",
     "index_updated": "2026-10-10",
-    "runtime_hash": "78471cff562a94d915a98ee5a1efe727013c5df9559fc11c75d8eabbe6bb71fe",
-    "index_hash": "4a3765b66a836c89ac1b3ecf07e9441c9afb4e762a9977b9fefd53e803c0d12e",
+    "runtime_hash": "1179368c3a77ffaabfa9503982b109aeb55a7a028da6516968162ebddf379c18",
+    "index_hash": "bc73f1d65f31f56dcaee430b9058706505638a6d4c06aa1bccba75dc1729dc2c",
     "rules_hash": "d406904ea30ad06dfae711a64f1e979c1262ddd8401d79e7b17d4b3250ea5a06"
   },
   "schema": {
@@ -92,10 +92,6 @@
       [
         "gerakan",
         "动作"
-      ],
-      [
-        "peregangan",
-        "拉伸"
       ],
       [
         "tahan",
@@ -434,10 +430,6 @@
         "原因；致因"
       ],
       [
-        "anjuran",
-        "建议；医嘱"
-      ],
-      [
         "pola",
         "模式；规律"
       ],
@@ -722,10 +714,6 @@
       [
         "gua",
         "洞穴"
-      ],
-      [
-        "tubuh",
-        "身体"
       ],
       [
         "terdapat",
@@ -1172,10 +1160,6 @@
         "成功"
       ],
       [
-        "santai",
-        "放松；悠闲"
-      ],
-      [
         "buang",
         "扔；丢弃"
       ],
@@ -1310,6 +1294,14 @@
       [
         "alergi",
         "过敏"
+      ],
+      [
+        "membaik",
+        "好转"
+      ],
+      [
+        "dompet",
+        "钱包"
       ]
     ],
     "review": [
@@ -1914,26 +1906,6 @@
         "切；剪；扣除"
       ],
       [
-        "walaupun",
-        3,
-        0,
-        "",
-        "2026-10-08T09:21:06.541Z",
-        "虽然、即使",
-        "",
-        ""
-      ],
-      [
-        "perubahan",
-        3,
-        0,
-        "",
-        "2026-10-06T09:57:41.243Z",
-        "变化、改变",
-        "ubah",
-        ""
-      ],
-      [
         "mencapai",
         2,
         0,
@@ -2314,14 +2286,24 @@
         "虽然；即使"
       ],
       [
-        "terbiasa",
-        5,
+        "kegiatan",
+        2,
         0,
         "",
+        "2026-10-08T09:11:50.907Z",
+        "活动；要做的事情",
+        "giat",
+        "积极；活跃；勤奋"
+      ],
+      [
+        "berbagai",
+        3,
+        0,
         "",
-        "习惯于",
-        "biasa",
-        ""
+        "2026-10-08T09:13:27.414Z",
+        "各种；多种多样的",
+        "bagai",
+        "种类；方式"
       ],
       [
         "melanjutkan",
@@ -2414,104 +2396,14 @@
         ""
       ],
       [
-        "lapangan",
-        2,
+        "terpaksa",
+        5,
         0,
         "",
         "",
-        "场地；空地；广场",
-        "lapang",
-        "宽敞的；空旷的"
-      ],
-      [
-        "kekerasan",
-        2,
-        0,
-        "",
-        "",
-        "暴力；强硬手段",
-        "keras",
-        "硬的；强烈的"
-      ],
-      [
-        "berlaku",
-        2,
-        0,
-        "",
-        "",
-        "生效；适用；通行",
-        "laku",
-        "行得通；卖得出去"
-      ],
-      [
-        "bergerak",
-        2,
-        0,
-        "",
-        "",
-        "移动；行动；活动身体",
-        "gerak",
-        "动；动作"
-      ],
-      [
-        "menyediakan",
-        2,
-        0,
-        "",
-        "",
-        "提供；准备好（供人使用）",
-        "sedia",
-        "准备好的；有的"
-      ],
-      [
-        "keberadaan",
-        2,
-        0,
-        "",
-        "",
-        "存在；所在（的状态）",
-        "ada",
-        "有；在"
-      ],
-      [
-        "penelitian",
-        2,
-        0,
-        "",
-        "",
-        "研究；调查",
-        "teliti",
-        "仔细的；严谨的"
-      ],
-      [
-        "cerai",
-        2,
-        0,
-        "",
-        "",
-        "离婚；离异",
-        "cerai",
-        "离婚；分开"
-      ],
-      [
-        "keras kepala",
-        2,
-        0,
-        "",
-        "",
-        "固执；倔",
-        "keras",
-        "硬的；强烈的"
-      ],
-      [
-        "luar biasa",
-        2,
-        0,
-        "",
-        "",
-        "非凡的；了不起；（程度）极大",
-        "biasa",
-        "平常的；普通的"
+        "不得不、被迫",
+        "paksa",
+        ""
       ]
     ],
     "focus": [
@@ -2759,14 +2651,6 @@
     ],
     "oral": [
       [
-        "santai",
-        "口语",
-        "",
-        "santai",
-        716,
-        "fuzzy"
-      ],
-      [
         "asyik",
         "口语",
         "",
@@ -2937,46 +2821,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-03",
-      "session": "am",
-      "review_core": [
-        "layak",
-        "nyaris",
-        "kesepakatan",
-        "salah tingkah",
-        "berantakan"
-      ],
-      "new_words": [
-        "terbuat",
-        "mewah",
-        "istimewa",
-        "menghasilkan",
-        "gelar",
-        "yaitu",
-        "seluruh",
-        "bentuk",
-        "demi",
-        "berat"
-      ]
-    },
-    {
-      "date": "2026-10-03",
-      "session": "pm",
-      "review_core": [
-        "upaya",
-        "bakal",
-        "berarti",
-        "sebel",
-        "ngabarin"
-      ],
-      "new_words": [
-        "antre",
-        "berfungsi",
-        "tukar",
-        "kwitansi"
-      ]
-    },
     {
       "date": "2026-10-04",
       "session": "am",
@@ -3235,105 +3079,42 @@
         "keras kepala",
         "luar biasa"
       ]
+    },
+    {
+      "date": "2026-10-10",
+      "session": "pm",
+      "review_core": [
+        "semacam",
+        "pernyataan",
+        "perubahan",
+        "terbiasa",
+        "walaupun"
+      ],
+      "new_words": [
+        "tubuh",
+        "santai",
+        "anjuran",
+        "peregangan"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-09",
+    "date": "2026-10-10",
     "new_words": [
-      "menghabiskan",
-      "sampah",
-      "rapi"
+      "tubuh",
+      "santai",
+      "anjuran",
+      "peregangan"
     ],
     "review_core": [
-      "cuek",
-      "melawan",
-      "peningkatan",
-      "terjadi",
-      "untung"
+      "semacam",
+      "pernyataan",
+      "perubahan",
+      "terbiasa",
+      "walaupun"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-10",
-    "vocab": [
-      [
-        "lapangan",
-        "场地；空地；广场",
-        "field; open ground",
-        "lapang",
-        "宽敞的；空旷的"
-      ],
-      [
-        "kekerasan",
-        "暴力；强硬手段",
-        "violence",
-        "keras",
-        "硬的；强烈的"
-      ],
-      [
-        "berlaku",
-        "生效；适用；通行",
-        "to be valid; to apply",
-        "laku",
-        "行得通；卖得出去"
-      ],
-      [
-        "bergerak",
-        "移动；行动；活动身体",
-        "to move; to be in motion",
-        "gerak",
-        "动；动作"
-      ],
-      [
-        "menyediakan",
-        "提供；准备好（供人使用）",
-        "to provide; to make available",
-        "sedia",
-        "准备好的；有的"
-      ],
-      [
-        "keberadaan",
-        "存在；所在（的状态）",
-        "existence; whereabouts",
-        "ada",
-        "有；在"
-      ],
-      [
-        "penelitian",
-        "研究；调查",
-        "research; study",
-        "teliti",
-        "仔细的；严谨的"
-      ],
-      [
-        "cerai",
-        "离婚；离异",
-        "to be divorced",
-        "cerai",
-        "离婚；分开"
-      ],
-      [
-        "keras kepala",
-        "固执；倔",
-        "stubborn",
-        "keras",
-        "硬的；强烈的"
-      ],
-      [
-        "luar biasa",
-        "非凡的；了不起；（程度）极大",
-        "extraordinary; amazing",
-        "biasa",
-        "平常的；普通的"
-      ]
-    ],
-    "review_vocab": [
-      "menyampaikan",
-      "nggak jadi",
-      "berusaha",
-      "mengubah",
-      "meningkatkan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

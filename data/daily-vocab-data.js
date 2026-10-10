@@ -2572,27 +2572,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "walaupun",
     "cn": "虽然、即使",
-    "en": "",
-    "root": "",
+    "en": "although; even though",
+    "root": "walau",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-23 19:00",
-    "last_seen": "2026-08-23 19:00",
+    "last_seen": "2026-10-10 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-23"
+      "2026-08-23",
+      "2026-10-10"
     ],
-    "example": "Walaupun sulit, saya tetap mau mencoba.",
-    "example_cn": "虽然困难，我还是想试试。",
+    "example": "Walaupun hujan, mereka tetap berangkat ke pasar.",
+    "example_cn": "虽然下雨，他们还是去市场了。",
     "lesson_occurrences": [
-      "2026-08-23 19:00"
-    ]
+      "2026-08-23 19:00",
+      "2026-10-10 18:00"
+    ],
+    "root_cn": "虽然；即使"
   },
   {
     "word": "mengubah",
@@ -2626,27 +2631,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "perubahan",
     "cn": "变化、改变",
-    "en": "",
+    "en": "change; alteration",
     "root": "ubah",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-08-24 19:00",
+    "last_seen": "2026-10-10 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-24"
+      "2026-08-24",
+      "2026-10-10"
     ],
-    "example": "Ada sedikit perubahan.",
-    "example_cn": "有一点变化。",
+    "example": "Ada perubahan jadwal, rapatnya pindah ke hari Jumat.",
+    "example_cn": "日程有变动，会议改到星期五了。",
     "lesson_occurrences": [
-      "2026-08-24 19:00"
-    ]
+      "2026-08-24 19:00",
+      "2026-10-10 18:00"
+    ],
+    "root_cn": "改变"
   },
   {
     "word": "mengatasi",
@@ -2750,27 +2760,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "terbiasa",
     "cn": "习惯于",
-    "en": "",
+    "en": "to be used to; accustomed",
     "root": "biasa",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-08-24 19:00",
+    "last_seen": "2026-10-10 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-24"
+      "2026-08-24",
+      "2026-10-10"
     ],
-    "example": "Saya sudah terbiasa tinggal di Indonesia.",
-    "example_cn": "我已经习惯住在印尼了。",
+    "example": "Aku belum terbiasa naik motor di jalan besar.",
+    "example_cn": "我还不习惯在大马路上骑摩托车。",
     "lesson_occurrences": [
-      "2026-08-24 19:00"
-    ]
+      "2026-08-24 19:00",
+      "2026-10-10 18:00"
+    ],
+    "root_cn": "平常的；惯常的"
   },
   {
     "word": "terutama",
@@ -13210,23 +13225,25 @@ window.DAILY_VOCAB_DB = [
     "en": "a kind of; something like",
     "root": "macam",
     "root_cn": "种类；类型",
-    "example": "Ini semacam masalah jadwal, bukan masalah besar.",
-    "example_cn": "这算是某种日程问题，不是什么大问题。",
+    "example": "Itu semacam senam ringan untuk orang tua.",
+    "example_cn": "那是一种适合老年人的轻体操。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-21 18:00",
-    "last_seen": "2026-09-21 18:00",
+    "last_seen": "2026-10-10 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-21"
+      "2026-09-21",
+      "2026-10-10"
     ],
     "lesson_occurrences": [
-      "2026-09-21 18:00"
+      "2026-09-21 18:00",
+      "2026-10-10 18:00"
     ]
   },
   {
@@ -14513,23 +14530,27 @@ window.DAILY_VOCAB_DB = [
     "en": "statement",
     "root": "nyata",
     "root_cn": "真实；明确",
-    "example": "Saya perlu membaca pernyataan resmi sebelum memberi komentar.",
-    "example_cn": "发表意见前我需要读官方声明。",
+    "example": "Pernyataan dokter sangat jelas: Pak Wahyu harus lebih sering bergerak.",
+    "example_cn": "医生的说法很明确：Wahyu 先生必须多活动。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-10-10 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-10-10"
     ],
     "lesson_occurrences": [
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-10-10 18:00"
     ]
   },
   {
@@ -19236,23 +19257,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to move; to be in motion",
     "root": "gerak",
     "root_cn": "动；动作",
-    "example": "Jangan duduk terus, bergeraklah sedikit supaya lebih segar.",
-    "example_cn": "别一直坐着，动一动才精神。",
+    "example": "Setelah duduk dua jam, ia mulai bergerak dan meregangkan tangan.",
+    "example_cn": "坐了两个小时后，他开始活动并伸展双手。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-10 08:00",
-    "last_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-10"
     ],
     "lesson_occurrences": [
-      "2026-10-10 08:00"
+      "2026-10-10 08:00",
+      "2026-10-10 18:00"
     ]
   },
   {
@@ -19362,24 +19386,27 @@ window.DAILY_VOCAB_DB = [
     "en": "stubborn",
     "root": "keras",
     "root_cn": "硬的；强烈的",
-    "example": "Adik saya keras kepala: sudah dilarang, tetap saja pergi.",
-    "example_cn": "我弟弟很倔：已经被禁止了，还是照样去。",
+    "example": "Kakek keras kepala, padahal sudah dilarang makan terlalu manis.",
+    "example_cn": "爷爷很固执，明明已经被禁止吃太甜的东西。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-10 08:00",
-    "last_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-10"
     ],
     "lesson_occurrences": [
-      "2026-10-10 08:00"
+      "2026-10-10 08:00",
+      "2026-10-10 18:00"
     ]
   },
   {
@@ -19405,6 +19432,107 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-10 08:00"
+    ]
+  },
+  {
+    "word": "tubuh",
+    "cn": "身体；躯体",
+    "en": "body",
+    "root": "tubuh",
+    "root_cn": "身体",
+    "example": "Kalau kurang bergerak, tubuh gampang terasa kaku.",
+    "example_cn": "如果很少活动，身体容易觉得僵硬。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 18:00",
+    "last_seen": "2026-10-10 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 18:00"
+    ]
+  },
+  {
+    "word": "santai",
+    "cn": "放松；悠闲；不紧张",
+    "en": "relaxed; easygoing; to take it easy",
+    "root": "santai",
+    "root_cn": "悠闲；放松",
+    "example": "Hari Minggu pagi, kami jalan santai di sekitar kompleks.",
+    "example_cn": "星期天早上，我们在小区附近悠闲地散步。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 18:00",
+    "last_seen": "2026-10-10 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 18:00"
+    ]
+  },
+  {
+    "word": "anjuran",
+    "cn": "建议；劝告；医嘱",
+    "en": "advice; recommendation (esp. from a doctor)",
+    "root": "anjur",
+    "root_cn": "劝；建议",
+    "example": "Ibu mengikuti anjuran dokter dan minum obat tepat waktu.",
+    "example_cn": "妈妈听从医嘱，按时吃药。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 18:00",
+    "last_seen": "2026-10-10 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 18:00"
+    ]
+  },
+  {
+    "word": "peregangan",
+    "cn": "拉伸；伸展运动",
+    "en": "stretching",
+    "root": "regang",
+    "root_cn": "绷紧；伸展",
+    "example": "Sebelum lari, kami melakukan peregangan selama lima menit.",
+    "example_cn": "跑步之前，我们做了五分钟拉伸。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 18:00",
+    "last_seen": "2026-10-10 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 18:00"
     ]
   }
 ];
