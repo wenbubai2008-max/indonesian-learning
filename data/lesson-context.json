@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-10",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 50
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-09T15:26:26.058Z",
-    "lesson_watermark": "2026-10-09 18:00",
-    "index_updated": "2026-10-09",
-    "runtime_hash": "3a5f47d2548ec0701fde56cc8c714b132c8161d6f02be6c90b46c69d846140e8",
-    "index_hash": "c3ac6304283d6283d05aca6c90b6e879cd5726ac0767bb200b5d732c0e855c19",
+    "runtime_generated_at": "2026-10-10T00:28:19.728Z",
+    "lesson_watermark": "2026-10-10 08:00",
+    "index_updated": "2026-10-10",
+    "runtime_hash": "78471cff562a94d915a98ee5a1efe727013c5df9559fc11c75d8eabbe6bb71fe",
+    "index_hash": "4a3765b66a836c89ac1b3ecf07e9441c9afb4e762a9977b9fefd53e803c0d12e",
     "rules_hash": "d406904ea30ad06dfae711a64f1e979c1262ddd8401d79e7b17d4b3250ea5a06"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "lapangan",
-        "场地"
-      ],
-      [
-        "kekerasan",
-        "暴力"
-      ],
-      [
-        "berlaku",
-        "生效、实行"
-      ],
-      [
-        "bergerak",
-        "移动，行动"
-      ],
-      [
-        "menyediakan",
-        "提供"
-      ],
-      [
-        "keberadaan",
-        "存在"
-      ],
-      [
-        "penelitian",
-        "研究"
-      ],
-      [
-        "cerai",
-        "离婚"
-      ],
-      [
-        "keras kepala",
-        "固执"
-      ],
-      [
-        "luar biasa",
-        "非凡；很棒"
-      ],
       [
         "sambil",
         "一边……一边……"
@@ -688,6 +648,26 @@
       [
         "pantalon",
         "长裤"
+      ],
+      [
+        "trailer",
+        "预告片"
+      ],
+      [
+        "perang",
+        "战争片/战争"
+      ],
+      [
+        "fiksi ilmiah",
+        "科幻"
+      ],
+      [
+        "tentara",
+        "军人"
+      ],
+      [
+        "terurai",
+        "分解；散开"
       ]
     ],
     "new_fuzzy": [
@@ -1944,36 +1924,6 @@
         ""
       ],
       [
-        "meningkatkan",
-        3,
-        0,
-        "",
-        "2026-10-09T07:55:26.412Z",
-        "提高某事物",
-        "tingkat",
-        ""
-      ],
-      [
-        "berusaha",
-        3,
-        0,
-        "",
-        "2026-10-06T09:56:49.957Z",
-        "努力、设法",
-        "usaha",
-        ""
-      ],
-      [
-        "mengubah",
-        3,
-        0,
-        "",
-        "2026-10-08T09:17:28.285Z",
-        "改变某物",
-        "ubah",
-        ""
-      ],
-      [
         "perubahan",
         3,
         0,
@@ -2334,6 +2284,36 @@
         "核心；要点"
       ],
       [
+        "bahkan",
+        3,
+        0,
+        "",
+        "2026-10-08T09:12:02.528Z",
+        "甚至；甚至还",
+        "bahkan",
+        "甚至"
+      ],
+      [
+        "berani",
+        3,
+        0,
+        "",
+        "2026-10-08T09:08:17.557Z",
+        "敢；有勇气",
+        "berani",
+        "敢；有勇气"
+      ],
+      [
+        "meskipun",
+        3,
+        0,
+        "",
+        "2026-10-08T09:13:11.437Z",
+        "虽然；即使",
+        "meskipun",
+        "虽然；即使"
+      ],
+      [
         "terbiasa",
         5,
         0,
@@ -2432,6 +2412,106 @@
         "按理说、本来应该",
         "harus",
         ""
+      ],
+      [
+        "lapangan",
+        2,
+        0,
+        "",
+        "",
+        "场地；空地；广场",
+        "lapang",
+        "宽敞的；空旷的"
+      ],
+      [
+        "kekerasan",
+        2,
+        0,
+        "",
+        "",
+        "暴力；强硬手段",
+        "keras",
+        "硬的；强烈的"
+      ],
+      [
+        "berlaku",
+        2,
+        0,
+        "",
+        "",
+        "生效；适用；通行",
+        "laku",
+        "行得通；卖得出去"
+      ],
+      [
+        "bergerak",
+        2,
+        0,
+        "",
+        "",
+        "移动；行动；活动身体",
+        "gerak",
+        "动；动作"
+      ],
+      [
+        "menyediakan",
+        2,
+        0,
+        "",
+        "",
+        "提供；准备好（供人使用）",
+        "sedia",
+        "准备好的；有的"
+      ],
+      [
+        "keberadaan",
+        2,
+        0,
+        "",
+        "",
+        "存在；所在（的状态）",
+        "ada",
+        "有；在"
+      ],
+      [
+        "penelitian",
+        2,
+        0,
+        "",
+        "",
+        "研究；调查",
+        "teliti",
+        "仔细的；严谨的"
+      ],
+      [
+        "cerai",
+        2,
+        0,
+        "",
+        "",
+        "离婚；离异",
+        "cerai",
+        "离婚；分开"
+      ],
+      [
+        "keras kepala",
+        2,
+        0,
+        "",
+        "",
+        "固执；倔",
+        "keras",
+        "硬的；强烈的"
+      ],
+      [
+        "luar biasa",
+        2,
+        0,
+        "",
+        "",
+        "非凡的；了不起；（程度）极大",
+        "biasa",
+        "平常的；普通的"
       ]
     ],
     "focus": [
@@ -2775,14 +2855,6 @@
         "fuzzy"
       ],
       [
-        "menyediakan",
-        "通用",
-        "nyediain",
-        "sedia",
-        736,
-        "dont"
-      ],
-      [
         "melindungi",
         "通用",
         "ngelindungin",
@@ -2837,14 +2909,6 @@
         "diam",
         746,
         "fuzzy"
-      ],
-      [
-        "keras kepala",
-        "通用",
-        "ngeyel",
-        "keras",
-        747,
-        "dont"
       ],
       [
         "mual",
@@ -3148,6 +3212,29 @@
         "sampah",
         "rapi"
       ]
+    },
+    {
+      "date": "2026-10-10",
+      "session": "am",
+      "review_core": [
+        "menyampaikan",
+        "nggak jadi",
+        "berusaha",
+        "mengubah",
+        "meningkatkan"
+      ],
+      "new_words": [
+        "lapangan",
+        "kekerasan",
+        "berlaku",
+        "bergerak",
+        "menyediakan",
+        "keberadaan",
+        "penelitian",
+        "cerai",
+        "keras kepala",
+        "luar biasa"
+      ]
     }
   ],
   "previous_pm": {
@@ -3165,7 +3252,88 @@
       "untung"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-10",
+    "vocab": [
+      [
+        "lapangan",
+        "场地；空地；广场",
+        "field; open ground",
+        "lapang",
+        "宽敞的；空旷的"
+      ],
+      [
+        "kekerasan",
+        "暴力；强硬手段",
+        "violence",
+        "keras",
+        "硬的；强烈的"
+      ],
+      [
+        "berlaku",
+        "生效；适用；通行",
+        "to be valid; to apply",
+        "laku",
+        "行得通；卖得出去"
+      ],
+      [
+        "bergerak",
+        "移动；行动；活动身体",
+        "to move; to be in motion",
+        "gerak",
+        "动；动作"
+      ],
+      [
+        "menyediakan",
+        "提供；准备好（供人使用）",
+        "to provide; to make available",
+        "sedia",
+        "准备好的；有的"
+      ],
+      [
+        "keberadaan",
+        "存在；所在（的状态）",
+        "existence; whereabouts",
+        "ada",
+        "有；在"
+      ],
+      [
+        "penelitian",
+        "研究；调查",
+        "research; study",
+        "teliti",
+        "仔细的；严谨的"
+      ],
+      [
+        "cerai",
+        "离婚；离异",
+        "to be divorced",
+        "cerai",
+        "离婚；分开"
+      ],
+      [
+        "keras kepala",
+        "固执；倔",
+        "stubborn",
+        "keras",
+        "硬的；强烈的"
+      ],
+      [
+        "luar biasa",
+        "非凡的；了不起；（程度）极大",
+        "extraordinary; amazing",
+        "biasa",
+        "平常的；普通的"
+      ]
+    ],
+    "review_vocab": [
+      "menyampaikan",
+      "nggak jadi",
+      "berusaha",
+      "mengubah",
+      "meningkatkan"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

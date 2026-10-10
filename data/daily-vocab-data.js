@@ -60,21 +60,23 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "历史记录不完整"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-22 08:00",
-    "last_seen": "2026-08-24 08:00",
+    "last_seen": "2026-10-10 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-08-22",
-      "2026-08-24"
+      "2026-08-24",
+      "2026-10-10"
     ],
     "example": "Saya ingin meningkatkan bahasa Indonesia saya.",
     "example_cn": "我想提高我的印尼语。",
     "lesson_occurrences": [
       "2026-08-22 08:00",
-      "2026-08-24 08:00"
+      "2026-08-24 08:00",
+      "2026-10-10 08:00"
     ]
   },
   {
@@ -953,17 +955,19 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "历史记录不完整"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-26 08:00",
-    "last_seen": "2026-08-26 08:00",
+    "last_seen": "2026-10-10 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-26"
+      "2026-08-26",
+      "2026-10-10"
     ],
     "lesson_occurrences": [
-      "2026-08-26 08:00"
+      "2026-08-26 08:00",
+      "2026-10-10 08:00"
     ]
   },
   {
@@ -2598,21 +2602,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-08-24 19:00",
+    "last_seen": "2026-10-10 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-24"
+      "2026-08-24",
+      "2026-10-10"
     ],
     "example": "Saya mau mengubah rencana.",
     "example_cn": "我想改变计划。",
     "lesson_occurrences": [
-      "2026-08-24 19:00"
+      "2026-08-24 19:00",
+      "2026-10-10 08:00"
     ]
   },
   {
@@ -2689,21 +2697,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-08-24 19:00",
+    "last_seen": "2026-10-10 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-24"
+      "2026-08-24",
+      "2026-10-10"
     ],
     "example": "Saya akan berusaha.",
     "example_cn": "我会努力。",
     "lesson_occurrences": [
-      "2026-08-24 19:00"
+      "2026-08-24 19:00",
+      "2026-10-10 08:00"
     ]
   },
   {
@@ -3077,21 +3089,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-26 19:00",
-    "last_seen": "2026-08-26 19:00",
+    "last_seen": "2026-10-10 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-26"
+      "2026-08-26",
+      "2026-10-10"
     ],
     "example": "Kayaknya hari ini nggak jadi deh.",
     "example_cn": "今天好像不去了。",
     "lesson_occurrences": [
-      "2026-08-26 19:00"
+      "2026-08-26 19:00",
+      "2026-10-10 08:00"
     ]
   },
   {
@@ -19137,6 +19153,258 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-09 18:00"
+    ]
+  },
+  {
+    "word": "lapangan",
+    "cn": "场地；空地；广场",
+    "en": "field; open ground",
+    "root": "lapang",
+    "root_cn": "宽敞的；空旷的",
+    "example": "Sore-sore anak-anak main bola di lapangan dekat rumah.",
+    "example_cn": "傍晚孩子们在家附近的空地上踢球。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 08:00"
+    ]
+  },
+  {
+    "word": "kekerasan",
+    "cn": "暴力；强硬手段",
+    "en": "violence",
+    "root": "keras",
+    "root_cn": "硬的；强烈的",
+    "example": "Sekolah ini melarang semua bentuk kekerasan.",
+    "example_cn": "这所学校禁止一切形式的暴力。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 08:00"
+    ]
+  },
+  {
+    "word": "berlaku",
+    "cn": "生效；适用；通行",
+    "en": "to be valid; to apply",
+    "root": "laku",
+    "root_cn": "行得通；卖得出去",
+    "example": "Kartu diskon ini hanya berlaku pada hari Minggu.",
+    "example_cn": "这张折扣卡只在周日有效。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 08:00"
+    ]
+  },
+  {
+    "word": "bergerak",
+    "cn": "移动；行动；活动身体",
+    "en": "to move; to be in motion",
+    "root": "gerak",
+    "root_cn": "动；动作",
+    "example": "Jangan duduk terus, bergeraklah sedikit supaya lebih segar.",
+    "example_cn": "别一直坐着，动一动才精神。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 08:00"
+    ]
+  },
+  {
+    "word": "menyediakan",
+    "cn": "提供；准备好（供人使用）",
+    "en": "to provide; to make available",
+    "root": "sedia",
+    "root_cn": "准备好的；有的",
+    "example": "Hotel ini menyediakan sarapan gratis untuk semua tamu.",
+    "example_cn": "这家酒店为所有客人提供免费早餐。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 08:00"
+    ]
+  },
+  {
+    "word": "keberadaan",
+    "cn": "存在；所在（的状态）",
+    "en": "existence; whereabouts",
+    "root": "ada",
+    "root_cn": "有；在",
+    "example": "Keberadaan lapangan itu membuat lingkungan kami lebih hidup.",
+    "example_cn": "那块空地的存在让我们的社区更有活力。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 08:00"
+    ]
+  },
+  {
+    "word": "penelitian",
+    "cn": "研究；调查",
+    "en": "research; study",
+    "root": "teliti",
+    "root_cn": "仔细的；严谨的",
+    "example": "Hasil penelitian itu akan diumumkan bulan depan.",
+    "example_cn": "那项研究的结果将在下个月公布。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 08:00"
+    ]
+  },
+  {
+    "word": "cerai",
+    "cn": "离婚；离异",
+    "en": "to be divorced",
+    "root": "cerai",
+    "root_cn": "离婚；分开",
+    "example": "Orang tuanya sudah cerai, jadi dia tinggal bersama neneknya.",
+    "example_cn": "他父母已经离婚，所以他和奶奶一起生活。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 08:00"
+    ]
+  },
+  {
+    "word": "keras kepala",
+    "cn": "固执；倔",
+    "en": "stubborn",
+    "root": "keras",
+    "root_cn": "硬的；强烈的",
+    "example": "Adik saya keras kepala: sudah dilarang, tetap saja pergi.",
+    "example_cn": "我弟弟很倔：已经被禁止了，还是照样去。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 08:00"
+    ]
+  },
+  {
+    "word": "luar biasa",
+    "cn": "非凡的；了不起；（程度）极大",
+    "en": "extraordinary; amazing",
+    "root": "biasa",
+    "root_cn": "平常的；普通的",
+    "example": "Pemandangan dari atas bukit itu luar biasa.",
+    "example_cn": "从山丘上看到的景色太美了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-10"
+    ],
+    "lesson_occurrences": [
+      "2026-10-10 08:00"
     ]
   }
 ];
