@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-10",
+  "session": "am",
+  "time": "08:00",
+  "day": 50,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Lapangan Kecil di Kampung Dina",
+  "new_words": [
+    "lapangan",
+    "kekerasan",
+    "berlaku",
+    "bergerak",
+    "menyediakan",
+    "keberadaan",
+    "penelitian",
+    "cerai",
+    "keras kepala",
+    "luar biasa"
+  ],
+  "vocab": [
+    {
+      "word": "lapangan",
+      "display": "lapangan",
+      "audio_text": "lapangan",
+      "cn": "场地；空地；广场",
+      "en": "field; open ground",
+      "root": "lapang",
+      "root_cn": "宽敞的；空旷的",
+      "formation": "lapang（宽敞）+ -an → lapangan（一片开阔的场地）。常见搭配：lapangan bola（足球场）、lapangan parkir（停车场）、lapangan kerja（就业机会）。",
+      "example": "Sore-sore anak-anak main bola di lapangan dekat rumah.",
+      "example_cn": "傍晚孩子们在家附近的空地上踢球。",
+      "synonym_note": "lapangan = 开阔的活动场地；stadion = 有看台的大型体育场；halaman = 房子前后的院子。说“lapangan kerja”时指的是工作机会，不是真的场地。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kekerasan",
+      "display": "kekerasan",
+      "audio_text": "kekerasan",
+      "cn": "暴力；强硬手段",
+      "en": "violence",
+      "root": "keras",
+      "root_cn": "硬的；强烈的",
+      "formation": "ke- + keras + -an → kekerasan（用强力对待他人的行为）。常见搭配：tindak kekerasan（暴力行为）、tanpa kekerasan（不使用暴力）、kekerasan dalam rumah tangga（家庭暴力）。",
+      "example": "Sekolah ini melarang semua bentuk kekerasan.",
+      "example_cn": "这所学校禁止一切形式的暴力。",
+      "synonym_note": "kekerasan = 暴力行为本身；kekejaman = 残忍、狠毒的程度；keras 作形容词可以只是“硬”或“严格”，不一定指暴力，如 aturan yang keras（严格的规定）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berlaku",
+      "display": "berlaku",
+      "audio_text": "berlaku",
+      "cn": "生效；适用；通行",
+      "en": "to be valid; to apply",
+      "root": "laku",
+      "root_cn": "行得通；卖得出去",
+      "formation": "ber- + laku → berlaku。常见搭配：berlaku mulai besok（从明天起生效）、berlaku untuk semua orang（适用于所有人）、masih berlaku（仍然有效）。注意 laku 单独用多指“卖得好”，如 Bajunya laku keras。",
+      "example": "Kartu diskon ini hanya berlaku pada hari Minggu.",
+      "example_cn": "这张折扣卡只在周日有效。",
+      "synonym_note": "berlaku = 规定、票券、优惠等“在有效期内/适用”；laku = 商品卖得出去；diterapkan = 被实施（强调人去执行）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bergerak",
+      "display": "bergerak",
+      "audio_text": "bergerak",
+      "cn": "移动；行动；活动身体",
+      "en": "to move; to be in motion",
+      "root": "gerak",
+      "root_cn": "动；动作",
+      "formation": "ber- + gerak → bergerak（自己动起来）。常见搭配：Kereta mulai bergerak.（火车开动了）、kurang bergerak（运动太少）、bergerak cepat（迅速行动）。",
+      "example": "Jangan duduk terus, bergeraklah sedikit supaya lebih segar.",
+      "example_cn": "别一直坐着，动一动才精神。",
+      "synonym_note": "bergerak = 自己动/采取行动；menggerakkan = 让某物动起来（及物）；pindah = 换地方、搬家。“Ayo bergerak!”可以是催人行动。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyediakan",
+      "display": "menyediakan",
+      "audio_text": "menyediakan",
+      "cn": "提供；准备好（供人使用）",
+      "en": "to provide; to make available",
+      "root": "sedia",
+      "root_cn": "准备好的；有的",
+      "formation": "meN- + sedia + -kan → menyediakan（把东西备好供人使用）。常见搭配：menyediakan sarapan（提供早餐）、menyediakan waktu（腾出时间）。口语常说 nyediain。",
+      "example": "Hotel ini menyediakan sarapan gratis untuk semua tamu.",
+      "example_cn": "这家酒店为所有客人提供免费早餐。",
+      "synonym_note": "menyediakan = 提前备好、供人取用；memberi = 一般的“给”；tersedia = “有货/可用”这种状态。口语：Warung itu nyediain wifi gratis.",
+      "is_oral_new": true
+    },
+    {
+      "word": "keberadaan",
+      "display": "keberadaan",
+      "audio_text": "keberadaan",
+      "cn": "存在；所在（的状态）",
+      "en": "existence; whereabouts",
+      "root": "ada",
+      "root_cn": "有；在",
+      "formation": "ber- + ada → berada（在）；ke- + berada + -an → keberadaan（存在这件事，或某人/物所在的位置）。常见搭配：keberadaan taman（公园的存在）、tidak diketahui keberadaannya（下落不明）。",
+      "example": "Keberadaan lapangan itu membuat lingkungan kami lebih hidup.",
+      "example_cn": "那块空地的存在让我们的社区更有活力。",
+      "synonym_note": "keberadaan = 比较正式的“存在/所在”；adanya 更口语，如 adanya lapangan ini；kehadiran = 人“到场/出席”，不能和 keberadaan 随便互换。",
+      "is_oral_new": false
+    },
+    {
+      "word": "penelitian",
+      "display": "penelitian",
+      "audio_text": "penelitian",
+      "cn": "研究；调查",
+      "en": "research; study",
+      "root": "teliti",
+      "root_cn": "仔细的；严谨的",
+      "formation": "peN- + teliti + -an → penelitian（t 脱落，peneliti＝研究者）。动词是 meneliti（研究）。常见搭配：hasil penelitian（研究结果）、melakukan penelitian（做研究）。",
+      "example": "Hasil penelitian itu akan diumumkan bulan depan.",
+      "example_cn": "那项研究的结果将在下个月公布。",
+      "synonym_note": "penelitian = 有方法、有数据的研究；riset 是更口语的外来词，意思相近；belajar = 学习，不等于研究。",
+      "is_oral_new": false
+    },
+    {
+      "word": "cerai",
+      "display": "cerai",
+      "audio_text": "cerai",
+      "cn": "离婚；离异",
+      "en": "to be divorced",
+      "root": "cerai",
+      "root_cn": "离婚；分开",
+      "formation": "cerai 本身就是词根，常以 bercerai（离婚）、menceraikan（与……离婚）、perceraian（离婚这件事）出现。口语常直接说 sudah cerai。",
+      "example": "Orang tuanya sudah cerai, jadi dia tinggal bersama neneknya.",
+      "example_cn": "他父母已经离婚，所以他和奶奶一起生活。",
+      "synonym_note": "cerai = 法律上或事实上的离婚；pisah = 分开、分居，不一定离婚；putus = 情侣“分手”，不用 cerai。",
+      "is_oral_new": false
+    },
+    {
+      "word": "keras kepala",
+      "display": "keras kepala",
+      "audio_text": "keras kepala",
+      "cn": "固执；倔",
+      "en": "stubborn",
+      "root": "keras",
+      "root_cn": "硬的；强烈的",
+      "formation": "keras（硬）+ kepala（头）→ 固执、不听劝。常见搭配：anak yang keras kepala、keras kepala banget。口语常说 ngeyel。",
+      "example": "Adik saya keras kepala: sudah dilarang, tetap saja pergi.",
+      "example_cn": "我弟弟很倔：已经被禁止了，还是照样去。",
+      "synonym_note": "keras kepala = 固执、认定了就不改；口语 ngeyel = 明知别人有理还要争、不肯听；tegas = 态度坚定，是褒义，不要和 keras kepala 混用。",
+      "is_oral_new": true
+    },
+    {
+      "word": "luar biasa",
+      "display": "luar biasa",
+      "audio_text": "luar biasa",
+      "cn": "非凡的；了不起；（程度）极大",
+      "en": "extraordinary; amazing",
+      "root": "biasa",
+      "root_cn": "平常的；普通的",
+      "formation": "luar（外）+ biasa（寻常）→ 超出寻常。既可夸人：Penampilannya luar biasa.（表现太棒了），也可形容程度极大：macet yang luar biasa（堵得离谱）。",
+      "example": "Pemandangan dari atas bukit itu luar biasa.",
+      "example_cn": "从山丘上看到的景色太美了。",
+      "synonym_note": "luar biasa = 超乎寻常（好坏都可能）；hebat = 厉害、强；bagus banget = 口语“很好”。形容坏事时要靠上下文，如 capek luar biasa（累得不行）。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "menyampaikan",
+    "nggak jadi",
+    "berusaha",
+    "mengubah",
+    "meningkatkan"
+  ],
+  "sentences": [
+    {
+      "text": "Pak Rudi menyediakan air minum gratis untuk anak-anak yang main di lapangan.",
+      "cn": "鲁迪先生为在空地上玩的孩子们提供免费饮用水。"
+    },
+    {
+      "text": "Aturan di lapangan itu berlaku untuk semua orang, termasuk anak Pak RT sendiri.",
+      "cn": "那块空地上的规矩对所有人都适用，包括村长自己的孩子。"
+    },
+    {
+      "text": "Keberadaan lapangan ini membuat anak-anak lebih banyak bergerak daripada main HP.",
+      "cn": "这块空地的存在让孩子们多动起来，而不是玩手机。"
+    },
+    {
+      "text": "Orang tua anak itu sudah cerai, jadi dia tinggal bersama neneknya.",
+      "cn": "那孩子的父母已经离婚，所以他和奶奶住在一起。"
+    },
+    {
+      "text": "Pak Rudi tidak mau ada kekerasan di lapangan, walaupun cuma bercanda.",
+      "cn": "鲁迪先生不允许空地上出现暴力，哪怕只是开玩笑。"
+    }
+  ],
+  "reading": {
+    "text": "Di kampung Dina, keberadaan lapangan kecil dekat balai warga sangat berarti. Sore hari anak-anak jadi lebih banyak bergerak: ada yang main bola, ada yang lari keliling. Pak Rudi, ketua RT, menyediakan bola dan air minum. Ada satu aturan yang berlaku untuk semua, yaitu tidak boleh ada kekerasan. Dulu ada anak keras kepala yang sering bertengkar. Orang tuanya sudah cerai, jadi dia sering kesal sendiri. Pak Rudi menyampaikan hal itu kepada neneknya. Mereka sepakat anak itu memerlukan teman, bukan hukuman, dan mereka berusaha mengubah kebiasaannya pelan-pelan. Sekarang dia lebih tenang. Karena penasaran, Dina membaca penelitian bahwa olahraga bisa meningkatkan rasa percaya diri anak. Luar biasa, pikirnya. Minggu lalu lapangan tergenang air, jadi pertandingan nggak jadi.",
+    "cn": "在迪娜住的村子里，居民活动中心旁那块小空地意义重大。傍晚孩子们动得多了：有的踢球，有的绕着跑。村长鲁迪先生提供球和饮用水。有一条规矩对所有人适用，那就是不许有任何暴力。以前有个倔强的孩子经常和人吵架。他父母已经离婚，所以他常常自己生闷气。鲁迪先生把这件事告诉了他奶奶。他们一致认为这孩子需要的是朋友而不是惩罚，于是努力慢慢改变他的习惯。现在他安静多了。迪娜出于好奇，读到一项研究说，集体运动可以提升孩子的自信心。“太棒了。”她心想。上周空地积了水，所以比赛没办成。"
+  },
+  "quiz": [
+    {
+      "question": "Tolong ___ salam saya kepada orang tua Anda ya.",
+      "options": [
+        "menyerahkan",
+        "menyambut",
+        "menyampaikan",
+        "mengantarkan"
+      ],
+      "answer_index": 2,
+      "explain": "menyampaikan salam = 转达问候，是固定说法。menyerahkan = 交出（物品、责任）；menyambut = 迎接、回应；mengantarkan 多指把人或东西送到某处，不用于转达问候。",
+      "answer": "menyampaikan"
+    },
+    {
+      "question": "Kartu diskon ini hanya ___ pada hari Minggu.",
+      "options": [
+        "berlaku",
+        "laku",
+        "terlaku",
+        "melaku"
+      ],
+      "answer_index": 0,
+      "explain": "berlaku = （优惠、规定）在期限内有效。laku 指商品卖得出去，如 Bajunya laku keras；terlaku、melaku 不是这个意思的常用形式。",
+      "answer": "berlaku"
+    },
+    {
+      "question": "Anak itu ___: sudah dilarang berkali-kali, tapi tetap saja pergi.",
+      "options": [
+        "besar kepala",
+        "panas hati",
+        "tinggi hati",
+        "keras kepala"
+      ],
+      "answer_index": 3,
+      "explain": "keras kepala = 固执、不听劝。besar kepala = 自大、骄傲；panas hati = 心里窝火；tinggi hati = 清高、傲慢，都与“不听劝”不同。",
+      "answer": "keras kepala"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语介绍你家附近的一个公共场所，并说说它带来什么好处（要用到 lapangan 或 keberadaan，以及 menyediakan）。",
+    "reference_answer": "Dekat rumah saya ada lapangan bola. Keberadaan lapangan itu membuat anak-anak lebih banyak bergerak. Pak RT juga menyediakan air minum gratis untuk mereka.",
+    "reference_cn": "我家附近有一块足球场。那块场地的存在让孩子们多了不少活动。村长还为他们提供免费饮用水。"
+  },
+  "review": [
+    "3秒主动提取：不看词卡，说出这 10 个词的意思——lapangan、kekerasan、berlaku、bergerak、menyediakan、keberadaan、penelitian、cerai、keras kepala、luar biasa；再用口语说两个：menyediakan = nyediain，keras kepala = ngeyel。",
+    "易混词与搭配：berlaku（规定、优惠有效）vs laku（商品卖得好）；bergerak（自己动）vs menggerakkan（让某物动）；keberadaan（存在、所在）vs kehadiran（人到场）；cerai（离婚）vs putus（情侣分手）；lapangan kerja 指就业机会。",
+    "重点复习词应用：从 menyampaikan、nggak jadi、berusaha、mengubah、meningkatkan 里选两个各说一句，例如 “Saya berusaha mengubah kebiasaan begadang.”（我努力改掉熬夜的习惯。）"
+  ]
+}
