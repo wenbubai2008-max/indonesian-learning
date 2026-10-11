@@ -1,0 +1,344 @@
+{
+  "date": "2026-10-11",
+  "session": "pm",
+  "time": "18:00",
+  "day": 51,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Dewi 的屋顶漏水，邻居帮了大忙",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "tetangga",
+    "berjanji",
+    "bocor"
+  ],
+  "vocab": [
+    {
+      "display": "tetangga",
+      "audio_text": "tetangga",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "tetangga",
+      "cn": "邻居",
+      "en": "neighbor",
+      "root": "tetangga",
+      "root_cn": "邻居",
+      "formation": "tetangga 本身是词根（虽然长得像 tangga＝楼梯，但意思无关，不要拆分）。常见搭配：tetangga sebelah（隔壁邻居）、tetangga baru（新邻居）、tetangga depan rumah（对门邻居）、bertetangga（成为邻居、住得相邻）。",
+      "example": "Tetangga sebelah rumahku baru pindah minggu lalu.",
+      "example_cn": "我家隔壁的邻居上周刚搬来。",
+      "synonym_note": "tetangga（住得近的邻居，指具体的人）vs warga（居民，指住在某个区域的人，如 warga kampung）vs penghuni（住户、房客，如 penghuni kos）：Tetangga membantu＝邻居来帮忙；Warga diminta tenang＝居民请保持冷静；Penghuni kos＝合租房的住户。",
+      "usage_note": "新词（半熟词）。当面称呼邻居通常直接叫 Pak／Bu／Mas／Mbak＋名字，tetangga 多用来向别人介绍或谈论“我的邻居”：tetanggaku、tetangga kos。",
+      "source_group": "new"
+    },
+    {
+      "display": "berjanji",
+      "audio_text": "berjanji",
+      "is_new": true,
+      "is_oral_new": true,
+      "word": "berjanji",
+      "cn": "答应；承诺",
+      "en": "to promise",
+      "root": "janji",
+      "root_cn": "约定；承诺",
+      "formation": "ber- + janji → berjanji（做出承诺）。相关：janji＝承诺，menjanjikan＝向人承诺某物，janjian＝（口语）互相约好，perjanjian＝协议、合同。常见搭配：berjanji akan＋动词（答应要……）、menepati janji（守约）、ingkar janji（违约，食言）。",
+      "example": "Ayah berjanji akan menjemputku sebelum jam enam.",
+      "example_cn": "爸爸答应在六点前来接我。",
+      "synonym_note": "berjanji（单方面做出承诺）vs janjian（口语，两个人约好时间地点见面）vs bersumpah（发誓，语气重得多）：Dia berjanji akan datang＝他答应会来；Kita janjian jam tiga＝我们约好三点；Dia bersumpah tidak akan bohong＝他发誓不再说谎。",
+      "usage_note": "新词（半熟词，口语高频词）。后面常接 akan＋动词；“答应了别人就要做到”说 menepati janji，没做到说 ingkar janji。别把 berjanji 和 janjian 混用：Kami janjian ketemu，不说 Kami berjanji ketemu。",
+      "source_group": "new"
+    },
+    {
+      "display": "bocor",
+      "audio_text": "bocor",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "bocor",
+      "cn": "漏；漏水；破洞漏气",
+      "en": "leaky; to leak",
+      "root": "bocor",
+      "root_cn": "漏",
+      "formation": "bocor 本身是词根。相关：kebocoran＝泄漏（名词，如 kebocoran gas），membocorkan＝使漏出、泄露（也可指泄露秘密）。常见搭配：atap bocor（屋顶漏水）、pipa bocor（水管漏水）、ban bocor（轮胎漏气）。",
+      "example": "Ban motorku bocor, jadi aku harus ke bengkel.",
+      "example_cn": "我的摩托车轮胎漏气了，所以我得去修车行。",
+      "synonym_note": "bocor（东西有破口，水、气、油漏出来）vs menetes（水一滴一滴落下，是现象）vs kebocoran（漏的情况或事故，名词）：Atap bocor, air menetes ke lantai＝屋顶漏了，水滴到地板上；Ada kebocoran gas＝发生了煤气泄漏。",
+      "usage_note": "新词（陌生词）。bocor 直接放在名词后面当谓语：Atapnya bocor。说“有人把秘密泄露出去”用 membocorkan rahasia，不要说 rahasia bocor-kan。",
+      "source_group": "new"
+    },
+    {
+      "display": "dengan demikian",
+      "audio_text": "dengan demikian",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "dengan demikian",
+      "cn": "因此；这样一来",
+      "en": "thus; in this way; therefore",
+      "root": "demikian",
+      "root_cn": "如此；那样",
+      "formation": "dengan + demikian（demikian＝如此、那样）→ dengan demikian＝以这种方式、因此。相关：demikian pula／begitu pula＝同样地，Demikian！＝（书信结尾）特此说明。常见搭配：Dengan demikian, ...（句首，后接逗号）。",
+      "example": "Pemilik kos sudah mengirim tukang. Dengan demikian, atapnya bisa diperbaiki besok.",
+      "example_cn": "房东已经派了工人。这样一来，屋顶明天就能修好了。",
+      "synonym_note": "dengan demikian（书面、汇报、邮件里的“因此、这样一来”）vs jadi（口语，“所以”）vs oleh karena itu（更正式，“因此”，强调原因）vs sehingga（接在句中，“以致、使得”）：聊天说 Jadi, kita berangkat besok；邮件里写 Dengan demikian, jadwal dapat dipercepat。",
+      "usage_note": "重点复习词（focus，新错）。dengan demikian 常放句首，前一句是原因或做法，后一句是结果。日常聊天换成 jadi 更自然，写通知、邮件、汇报时才用 dengan demikian。",
+      "source_group": "review"
+    },
+    {
+      "display": "sial",
+      "audio_text": "sial",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "sial",
+      "cn": "倒霉；糟糕（感叹）",
+      "en": "unlucky; damn (exclamation)",
+      "root": "sial",
+      "root_cn": "倒霉；不走运",
+      "formation": "sial 本身是词根。相关：kesialan＝倒霉的事。常见搭配：Sial!（真倒霉！）、sial banget（太倒霉了）、hari yang sial（倒霉的一天）。",
+      "example": "Sial, payungku ketinggalan di kantor.",
+      "example_cn": "真倒霉，我的伞落在办公室了。",
+      "synonym_note": "sial（运气不好，也可作感叹）vs apes（更口语的“倒霉”）vs malang（不幸，带同情，偏书面）：Sial banget hari ini＝今天太倒霉了；Apes banget, ketinggalan kereta＝倒霉死了，错过了火车；Kasihan, dia malang sekali＝他好可怜，太不幸了。",
+      "usage_note": "重点复习词（focus，新错）。单独喊 Sial! 带一点骂的口气，不适合对长辈说；说 Sial banget hari ini 抱怨自己的运气则很日常。",
+      "source_group": "review"
+    },
+    {
+      "display": "memerlukan",
+      "audio_text": "memerlukan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "memerlukan",
+      "cn": "需要",
+      "en": "to need; to require",
+      "root": "perlu",
+      "root_cn": "需要；必要",
+      "formation": "meN- + perlu + -kan → memerlukan（需要某物）。相关：perlu＝需要、有必要，keperluan＝需要的事、用途，diperlukan＝被需要。常见搭配：memerlukan waktu（需要时间）、memerlukan bantuan（需要帮助）、memerlukan biaya（需要费用）。",
+      "example": "Memperbaiki atap itu memerlukan waktu sekitar satu hari.",
+      "example_cn": "修理那个屋顶大约需要一天时间。",
+      "synonym_note": "memerlukan（需要某样东西，后接名词）vs perlu（后接动词，“需要、有必要做”）vs butuh／membutuhkan（需要，更强调缺不得，口语最常用 butuh）：Saya memerlukan bantuan／Saya butuh bantuan＝我需要帮助；Kamu perlu istirahat＝你需要休息。",
+      "usage_note": "重点复习词。memerlukan 后面接名词（waktu、bantuan、alat）；后面要接动词时用 perlu：Kamu perlu membawa KTP，不说 memerlukan membawa KTP。",
+      "source_group": "review"
+    },
+    {
+      "display": "mengirim",
+      "audio_text": "mengirim",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "mengirim",
+      "cn": "发送；寄",
+      "en": "to send",
+      "root": "kirim",
+      "root_cn": "寄；发送",
+      "formation": "meN- + kirim → mengirim（k 脱落，meN- 变 meng-）。相关：kirim＝寄，pengirim＝寄件人／发送者，kiriman＝寄来的东西，mengirimkan＝把……寄给（后面接物品和对象）。常见搭配：mengirim foto／pesan／paket／uang。",
+      "example": "Dewi mengirim foto atap itu kepada Bu Ratna.",
+      "example_cn": "Dewi 把屋顶的照片发给了 Ratna 女士。",
+      "synonym_note": "mengirim（寄出、发出，自己动手发）vs mengirimkan（把某物寄给某人，物品放在动词后）vs mengantar（亲自送人或东西到某地）：Dia mengirim pesan＝他发了信息；Dia mengirimkan paket kepada adiknya＝他把包裹寄给弟弟；Dia mengantar paket ke rumah＝他把包裹送到家里。",
+      "usage_note": "重点复习词。口语常说 kirim 或 ngirim：Kirim fotonya ya！发的对象前面用 ke 或 kepada：mengirim foto ke Bu Ratna。",
+      "source_group": "review"
+    },
+    {
+      "display": "menyiapkan",
+      "audio_text": "menyiapkan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "menyiapkan",
+      "cn": "准备；备好",
+      "en": "to prepare; to get ready",
+      "root": "siap",
+      "root_cn": "准备好；就绪",
+      "formation": "meN- + siap + -kan → menyiapkan（s 脱落，meN- 变 meny-）。相关：siap＝准备好了，persiapan＝准备工作，mempersiapkan＝周全地准备。常见搭配：menyiapkan makan malam、menyiapkan dokumen、menyiapkan ember。",
+      "example": "Sebelum berangkat, ia menyiapkan payung dan jas hujan.",
+      "example_cn": "出发之前，他准备好了伞和雨衣。",
+      "synonym_note": "menyiapkan（把东西备好，后接具体东西）vs mempersiapkan（更正式、更全面的准备，如 mempersiapkan ujian）vs bersiap-siap（自己做好出发或开始的准备，后面不接宾语）：Aku menyiapkan tas＝我把包备好；Aku bersiap-siap berangkat＝我正在准备出发。",
+      "usage_note": "重点复习词。口语里常去掉前缀说 siapkan：Siapkan dulu embernya！menyiapkan 后面要接东西，只说“我在做准备”用 bersiap-siap。",
+      "source_group": "review"
+    },
+    {
+      "display": "berguna",
+      "audio_text": "berguna",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "berguna",
+      "cn": "有用；有用处",
+      "en": "useful",
+      "root": "guna",
+      "root_cn": "用处；用途",
+      "formation": "ber- + guna → berguna（有用处）。常见搭配：sangat berguna、berguna bagi／untuk＋对象、tidak berguna（没用）；反问常说 Apa gunanya?（有什么用？）。",
+      "example": "Plastik besar itu ternyata berguna waktu atap bocor.",
+      "example_cn": "那块大塑料布在屋顶漏水的时候原来这么有用。",
+      "synonym_note": "berguna（有用处、派得上用场）vs bermanfaat（有益处，偏书面）vs bisa dipakai（还能用，说的是东西的状态）：Ember ini berguna sekali＝这个桶很有用；Barang bekas yang masih bisa dipakai＝还能用的旧东西。",
+      "usage_note": "应用词。上午新词：今天08:00新学。这里放进“漏水时临时找到的工具”这个真实场景：berguna banget、ternyata berguna。",
+      "source_group": "application"
+    },
+    {
+      "display": "berjalan-jalan",
+      "audio_text": "berjalan-jalan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "berjalan-jalan",
+      "cn": "散步；逛逛；出去玩",
+      "en": "to take a stroll; to go out for fun",
+      "root": "jalan",
+      "root_cn": "路；走",
+      "formation": "ber- + jalan-jalan（jalan 重叠）→ berjalan-jalan（没有明确目的地的走走、逛逛、出游）。口语常省略 ber-，直接说 jalan-jalan。搭配：berjalan-jalan di taman、janjian berjalan-jalan。",
+      "example": "Kalau besok tidak hujan, kita berjalan-jalan di taman kota.",
+      "example_cn": "如果明天不下雨，我们去市里的公园逛逛。",
+      "synonym_note": "berjalan-jalan／jalan-jalan（随意走走、逛街、出游）vs jalan kaki（步行去某处，是交通方式）vs berlibur（度假，时间更长）：Kami jalan-jalan di mal＝我们在商场逛；Dia pergi jalan kaki＝他走路去。",
+      "usage_note": "应用词。上午新词：今天08:00新学。聊天说 jalan-jalan 最自然，这里保留 berjalan-jalan 的完整形式并和 janjian 搭配使用。",
+      "source_group": "application"
+    }
+  ],
+  "reading": {
+    "text": "Minggu sore Dewi sudah menyiapkan tas karena ia dan temannya janjian berjalan-jalan. Sial, tiba-tiba hujan lebat turun, dan air mulai menetes dari atap kamarnya. Atap kosnya bocor! Dewi segera mengirim foto atap itu kepada Bu Ratna, pemilik kos. Sambil menunggu jawaban, ia mengetuk pintu tetangganya, Pak Ujang. Pak Ujang datang membawa ember dan plastik besar. Ternyata keduanya sangat berguna, sebab air tidak jatuh ke kasur lagi. Tidak lama setelah itu, Bu Ratna menelepon dan berjanji akan mengirim tukang besok pagi. Perbaikan atap memerlukan waktu satu hari. Dengan demikian, Dewi bisa tidur nyenyak malam itu, dan rencana jalan-jalannya pindah ke minggu depan.",
+    "cn": "周日下午，Dewi 已经把包准备好了，因为她和朋友约好了出去逛逛。真倒霉，突然下起了大雨，水开始从她房间的屋顶滴下来。出租屋的屋顶漏水了！Dewi 马上把屋顶的照片发给房东 Ratna 女士。等回复的时候，她去敲了邻居 Ujang 先生的门。Ujang 先生拿着水桶和一大块塑料布过来。这两样东西原来非常有用，因为水不会再滴到床垫上了。不久之后，Ratna 女士打来电话，答应明天早上派工人来。修屋顶需要一天时间。这样一来，Dewi 那天晚上就能睡个安稳觉，而出去逛逛的计划则推到了下周。"
+  },
+  "dialogue": {
+    "title": "Di depan pintu Pak Ujang",
+    "lines": [
+      {
+        "speaker": "Dewi",
+        "id": "Pak Ujang, maaf ganggu. Atap kamar saya bocor, airnya menetes ke lantai terus.",
+        "cn": "Ujang 先生，打扰了。我房间的屋顶漏水，水一直滴到地板上。"
+      },
+      {
+        "speaker": "Pak Ujang",
+        "id": "Wah, sial banget, Mbak. Sebentar, saya siapkan ember sama plastik besar dulu.",
+        "cn": "哎呀，真倒霉，姑娘。稍等，我先把水桶和大塑料布准备好。"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Makasih, Pak. Tadi foto atapnya sudah saya kirim ke Bu Ratna, tapi belum ada jawaban.",
+        "cn": "谢谢您，先生。刚才我已经把屋顶的照片发给 Ratna 女士了，但还没有回复。"
+      },
+      {
+        "speaker": "Pak Ujang",
+        "id": "Nanti saya tanyain juga ke beliau, kapan tukangnya bisa datang.",
+        "cn": "待会儿我也去问问她，工人什么时候能来。"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Semoga besok tukangnya tersedia. Memperbaiki atap pasti memerlukan waktu.",
+        "cn": "希望明天工人有空。修屋顶肯定要花时间。"
+      },
+      {
+        "speaker": "Pak Ujang",
+        "id": "Tenang, kalau Bu Ratna sudah berjanji, biasanya pasti ditepati. Ember ini juga berguna buat sementara.",
+        "cn": "放心，Ratna 女士只要答应了，一般都会做到。这个水桶暂时也能派上用场。"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Iya, Pak. Padahal seharusnya sore ini saya berjalan-jalan sama Rani. Sekarang malah mager.",
+        "cn": "是啊，先生。本来今天下午我应该和 Rani 出去逛的。现在反而懒得动了。"
+      },
+      {
+        "speaker": "Pak Ujang",
+        "id": "Hujan lebat begini memang bikin mager. Besok tinggal janjian lagi sama Rani, Mbak.",
+        "cn": "下这么大的雨确实让人不想动。明天再和 Rani 约一次就好了，姑娘。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "用 tetangga、bocor 和 memerlukan 写 2–3 句话：说说你或邻居家里什么东西漏了、坏了，修好需要什么。",
+      "reference_answer": "Pipa di dapur tetanggaku bocor sejak kemarin. Dia memerlukan tukang untuk memperbaikinya, jadi hari ini dapurnya belum bisa dipakai.",
+      "reference_cn": "我邻居家厨房的水管从昨天起就漏水了。他需要工人来修，所以今天厨房还不能用。"
+    },
+    {
+      "task": "用 berjanji、mengirim 和 menyiapkan 写 2–3 句话：说说你答应了别人什么事，要提前准备什么、发什么给对方。",
+      "reference_answer": "Aku berjanji akan mengirim laporan kepada atasanku sebelum jam lima. Jadi sejak siang aku sudah menyiapkan datanya.",
+      "reference_cn": "我答应在五点之前把报告发给我的上司。所以从中午起我就一直在准备数据。"
+    },
+    {
+      "task": "用 sial 和 dengan demikian 写 2 句话：说一件倒霉的事，以及你怎么补救、结果如何。",
+      "reference_answer": "Sial, ban motorku bocor di tengah jalan. Aku langsung ke bengkel; dengan demikian, aku masih sempat tiba sebelum rapat mulai.",
+      "reference_cn": "真倒霉，我的摩托车轮胎在半路漏气了。我马上去了修车行；这样一来，我还来得及在会议开始前赶到。"
+    },
+    {
+      "task": "用今天08:00新学的 berguna 和 berjalan-jalan 写 2 句话：说说你去陌生城市逛逛时，会带什么有用的东西。",
+      "reference_answer": "Kalau mau berjalan-jalan di kota baru, peta offline di HP sangat berguna. Aku juga selalu membawa payung kecil.",
+      "reference_cn": "如果要去陌生的城市逛逛，手机里的离线地图非常有用。我还总会带一把小伞。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Atap kamar Dewi ____, jadi air hujan menetes ke lantai.",
+        "options": [
+          "kebocoran",
+          "bocor",
+          "membocorkan",
+          "bocoran"
+        ],
+        "answer_index": 1,
+        "answer": "bocor",
+        "explain": "“屋顶漏水”用 Atap bocor，bocor 直接作谓语。kebocoran 是名词（泄漏事故），membocorkan 是及物动词（泄露、使漏出，需要宾语），bocoran 指“透露出来的内部消息”，都不能这样接在 atap 后面。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Bu Ratna ____ akan mengirim tukang besok pagi.",
+        "options": [
+          "menjanjikan",
+          "janjian",
+          "berjanji",
+          "perjanjian"
+        ],
+        "answer_index": 2,
+        "answer": "berjanji",
+        "explain": "“答应要……”用 berjanji akan＋动词。menjanjikan 后面要直接接所承诺的东西（menjanjikan hadiah），janjian 是两个人互相约好（janjian ketemu），perjanjian 是名词，指协议、合同。"
+      },
+      {
+        "type": "choice",
+        "prompt": "下午本来要和朋友出去逛，结果下起大雨。Dewi 最自然会说哪一句？",
+        "options": [
+          "Berguna, hujannya lebat banget!",
+          "Dengan demikian, hujannya lebat banget!",
+          "Berjanji, hujannya lebat banget!",
+          "Sial, hujannya lebat banget!"
+        ],
+        "answer_index": 3,
+        "answer": "Sial, hujannya lebat banget!",
+        "explain": "遇到倒霉事时脱口而出 Sial!。Berguna＝有用，Berjanji＝答应，Dengan demikian＝因此（书面连接语，不能当感叹词用），放在这里都不通。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Tukang datang besok pagi. ____, kamar Dewi bisa dipakai lagi besok malam.（因此；这样一来）",
+        "answer": "Dengan demikian",
+        "explain": "前一句是做法，后一句是结果，用 Dengan demikian 连接。聊天时可换成 Jadi，写通知或邮件时 Dengan demikian 更合适。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Dewi ____ foto atap itu kepada Bu Ratna.（发送）",
+        "answer": "mengirim",
+        "explain": "kirim 加 meN- 时 k 脱落，变成 mengirim。后面接物品（foto），对象前用 kepada 或 ke。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：Ujang 先生给他的邻居准备了一个水桶。",
+        "tokens": [
+          "Pak",
+          "Ujang",
+          "menyiapkan",
+          "ember",
+          "untuk",
+          "tetangganya"
+        ],
+        "answer": "Pak Ujang menyiapkan ember untuk tetangganya",
+        "answer_cn": "Ujang 先生给他的邻居准备了一个水桶。",
+        "explain": "Pak Ujang 是主语，menyiapkan 后面直接接东西（ember），untuk tetangganya 说明为谁准备；tetangganya＝他的邻居。"
+      }
+    ],
+    "self_check": [
+      "不看中文，我能在 3 秒内说出 tetangga、berjanji、bocor 的意思，并各造一个短句吗？",
+      "dengan demikian、sial、memerlukan、mengirim、menyiapkan 里，哪个我 3 秒内想不起来？不熟的那个，我用它说了一句话吗？",
+      "我能分清 berjanji（答应）、janjian（约好见面）和 perjanjian（协议），以及 memerlukan（后接名词）和 perlu（后接动词）吗？",
+      "berguna 和 berjalan-jalan 是今天 08:00 新学的词，现在我能不看词卡各说一句话吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "先做 3 秒主动提取：看中文说出 tetangga、berjanji、bocor，再依次说出 dengan demikian、sial、memerlukan、mengirim、menyiapkan，答不出的立刻回看词卡再说一遍。",
+      "对比易混用法：berjanji（答应）、janjian（约好见面）和 perjanjian（协议）；memerlukan＋名词和 perlu＋动词；mengirim（寄出）和 mengantar（亲自送到），各说一句自己的例句。",
+      "用 30 秒向朋友讲一遍“Dewi 的屋顶漏水，邻居帮了大忙”的经过，至少用上 5 个目标词，不要背课文。",
+      "想一件你最近遇到的倒霉事，用 sial 说出来，再用 dengan demikian 说一句你怎么补救、结果如何。",
+      "最后用 berguna 和 berjalan-jalan 各说一句今天早课之后的新句子，检查自己有没有真的记住，而不是只看过。"
+    ]
+  }
+}
