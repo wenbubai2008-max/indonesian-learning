@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-10T02:45:14.441Z",
+  "updated_at": "2026-10-11T15:31:00.549Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -29284,6 +29284,21 @@
         "quick_wrong"
       ],
       "wrong_count": 1,
+      "right_streak": 0
+    },
+    "curiga": {
+      "word": "curiga",
+      "status": "active",
+      "updated_at": "2026-10-11T15:30:49.975Z",
+      "display": "curiga",
+      "cn": "怀疑",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-11",
+      "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
       "right_streak": 0
     }
   }
