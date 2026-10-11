@@ -482,17 +482,19 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "历史记录不完整"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-25 08:00",
-    "last_seen": "2026-08-25 08:00",
+    "last_seen": "2026-10-11 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-25"
+      "2026-08-25",
+      "2026-10-11"
     ],
     "lesson_occurrences": [
-      "2026-08-25 08:00"
+      "2026-08-25 08:00",
+      "2026-10-11 08:00"
     ]
   },
   {
@@ -761,17 +763,19 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "历史记录不完整"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-25 08:00",
-    "last_seen": "2026-08-25 08:00",
+    "last_seen": "2026-10-11 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-25"
+      "2026-08-25",
+      "2026-10-11"
     ],
     "lesson_occurrences": [
-      "2026-08-25 08:00"
+      "2026-08-25 08:00",
+      "2026-10-11 08:00"
     ]
   },
   {
@@ -2999,21 +3003,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-25 19:00",
-    "last_seen": "2026-08-25 19:00",
+    "last_seen": "2026-10-11 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-25"
+      "2026-08-25",
+      "2026-10-11"
     ],
     "example": "Saya akan melanjutkan pekerjaan.",
     "example_cn": "我会继续工作。",
     "lesson_occurrences": [
-      "2026-08-25 19:00"
+      "2026-08-25 19:00",
+      "2026-10-11 08:00"
     ]
   },
   {
@@ -3758,21 +3766,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-28 19:00",
-    "last_seen": "2026-08-28 19:00",
+    "last_seen": "2026-10-11 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-28"
+      "2026-08-28",
+      "2026-10-11"
     ],
     "example": "Nanti dulu ya.",
     "example_cn": "先等等啊。",
     "lesson_occurrences": [
-      "2026-08-28 19:00"
+      "2026-08-28 19:00",
+      "2026-10-11 08:00"
     ]
   },
   {
@@ -7186,17 +7198,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-07 08:00",
+    "last_seen": "2026-10-11 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-10-11"
     ],
     "lesson_occurrences": [
-      "2026-09-07 08:00"
+      "2026-09-07 08:00",
+      "2026-10-11 08:00"
     ]
   },
   {
@@ -19533,6 +19547,257 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-10 18:00"
+    ]
+  },
+  {
+    "word": "sambil",
+    "cn": "一边……一边……；同时",
+    "en": "while (doing something)",
+    "root": "sambil",
+    "root_cn": "一边……一边……（连词）",
+    "example": "Ibu memasak sambil mendengarkan radio.",
+    "example_cn": "妈妈一边做饭一边听收音机。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 08:00"
+    ]
+  },
+  {
+    "word": "seberapa",
+    "cn": "多么；到什么程度",
+    "en": "how (much / often / far)",
+    "root": "berapa",
+    "root_cn": "多少",
+    "example": "Seberapa sering kamu olahraga dalam seminggu?",
+    "example_cn": "你一周大概运动几次？",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 08:00"
+    ]
+  },
+  {
+    "word": "bawahan",
+    "cn": "下属；部下",
+    "en": "subordinate",
+    "root": "bawah",
+    "root_cn": "下面；下方",
+    "example": "Pak Anton sering makan siang bareng bawahannya.",
+    "example_cn": "安东先生常和下属们一起吃午饭。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 08:00"
+    ]
+  },
+  {
+    "word": "pecat",
+    "cn": "开除；解雇",
+    "en": "to fire; to dismiss",
+    "root": "pecat",
+    "root_cn": "开除；解雇",
+    "example": "Dia dipecat karena sering datang terlambat.",
+    "example_cn": "他因为经常迟到被开除了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 08:00"
+    ]
+  },
+  {
+    "word": "berguna",
+    "cn": "有用；有用处",
+    "en": "useful",
+    "root": "guna",
+    "root_cn": "用处；用途",
+    "example": "Kamus kecil ini ternyata berguna sekali waktu saya belajar.",
+    "example_cn": "这本小词典在我学习的时候原来这么有用。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 08:00"
+    ]
+  },
+  {
+    "word": "ucapan",
+    "cn": "所说的话；致辞；祝词",
+    "en": "words spoken; greeting / message",
+    "root": "ucap",
+    "root_cn": "说出；讲",
+    "example": "Terima kasih atas ucapan selamatnya, Pak.",
+    "example_cn": "谢谢您的祝贺，先生。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 08:00"
+    ]
+  },
+  {
+    "word": "curi",
+    "cn": "偷",
+    "en": "to steal",
+    "root": "curi",
+    "root_cn": "偷",
+    "example": "Sepeda saya dicuri tadi malam.",
+    "example_cn": "我的自行车昨晚被偷了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 08:00"
+    ]
+  },
+  {
+    "word": "asyik",
+    "cn": "有趣；好玩；享受；入迷",
+    "en": "fun; enjoyable; absorbed",
+    "root": "asyik",
+    "root_cn": "有趣的；入迷的",
+    "example": "Dia asyik ngobrol sampai lupa waktu.",
+    "example_cn": "他聊得太投入，连时间都忘了。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 08:00"
+    ]
+  },
+  {
+    "word": "berjalan-jalan",
+    "cn": "散步；逛逛；出去玩",
+    "en": "to take a stroll; to go out for fun",
+    "root": "jalan",
+    "root_cn": "路；走",
+    "example": "Minggu pagi kami berjalan-jalan di taman dekat rumah.",
+    "example_cn": "周日早上我们在家附近的公园里散步。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 08:00"
+    ]
+  },
+  {
+    "word": "gosok gigi",
+    "cn": "刷牙",
+    "en": "to brush one's teeth",
+    "root": "gosok",
+    "root_cn": "擦；刷",
+    "example": "Anak-anak harus gosok gigi sebelum tidur.",
+    "example_cn": "孩子们睡前必须刷牙。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 08:00"
     ]
   }
 ];
