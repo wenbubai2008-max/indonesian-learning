@@ -2898,77 +2898,92 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "memerlukan",
     "cn": "需要",
-    "en": "",
+    "en": "to need; to require",
     "root": "perlu",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-25 19:00",
-    "last_seen": "2026-08-25 19:00",
+    "last_seen": "2026-10-11 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-25"
+      "2026-08-25",
+      "2026-10-11"
     ],
-    "example": "Proses ini memerlukan sedikit waktu.",
-    "example_cn": "这个流程需要一点时间。",
+    "example": "Memperbaiki atap itu memerlukan waktu sekitar satu hari.",
+    "example_cn": "修理那个屋顶大约需要一天时间。",
     "lesson_occurrences": [
-      "2026-08-25 19:00"
-    ]
+      "2026-08-25 19:00",
+      "2026-10-11 18:00"
+    ],
+    "root_cn": "需要；必要"
   },
   {
     "word": "menyiapkan",
     "cn": "准备好某物",
-    "en": "",
+    "en": "to prepare; to get ready",
     "root": "siap",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-25 19:00",
-    "last_seen": "2026-08-25 19:00",
+    "last_seen": "2026-10-11 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-25"
+      "2026-08-25",
+      "2026-10-11"
     ],
-    "example": "Saya menyiapkan dokumen.",
-    "example_cn": "我准备文件。",
+    "example": "Sebelum berangkat, ia menyiapkan payung dan jas hujan.",
+    "example_cn": "出发之前，他准备好了伞和雨衣。",
     "lesson_occurrences": [
-      "2026-08-25 19:00"
-    ]
+      "2026-08-25 19:00",
+      "2026-10-11 18:00"
+    ],
+    "root_cn": "准备好；就绪"
   },
   {
     "word": "mengirim",
     "cn": "发送",
-    "en": "",
+    "en": "to send",
     "root": "kirim",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-25 19:00",
-    "last_seen": "2026-08-25 19:00",
+    "last_seen": "2026-10-11 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-25"
+      "2026-08-25",
+      "2026-10-11"
     ],
-    "example": "Dokumennya sudah dikirim.",
-    "example_cn": "文件已经发了。",
+    "example": "Dewi mengirim foto atap itu kepada Bu Ratna.",
+    "example_cn": "Dewi 把屋顶的照片发给了 Ratna 女士。",
     "lesson_occurrences": [
-      "2026-08-25 19:00"
-    ]
+      "2026-08-25 19:00",
+      "2026-10-11 18:00"
+    ],
+    "root_cn": "寄；发送"
   },
   {
     "word": "memeriksa",
@@ -15116,23 +15131,25 @@ window.DAILY_VOCAB_DB = [
     "en": "therefore; thus",
     "root": "demikian",
     "root_cn": "如此；这样",
-    "example": "Datanya sudah lengkap. Dengan demikian, laporan bisa dikirim.",
-    "example_cn": "数据已经齐全，因此报告可以发送。",
+    "example": "Pemilik kos sudah mengirim tukang. Dengan demikian, atapnya bisa diperbaiki besok.",
+    "example_cn": "房东已经派了工人。这样一来，屋顶明天就能修好了。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-28 18:00",
-    "last_seen": "2026-09-28 18:00",
+    "last_seen": "2026-10-11 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-11"
     ],
     "lesson_occurrences": [
-      "2026-09-28 18:00"
+      "2026-09-28 18:00",
+      "2026-10-11 18:00"
     ]
   },
   {
@@ -15141,23 +15158,25 @@ window.DAILY_VOCAB_DB = [
     "en": "unlucky; damn",
     "root": "sial",
     "root_cn": "倒霉；不走运",
-    "example": "Sial, koneksinya putus saat saya mau mengirim laporan.",
-    "example_cn": "真倒霉，我正要发报告时网络断了。",
+    "example": "Sial, payungku ketinggalan di kantor.",
+    "example_cn": "真倒霉，我的伞落在办公室了。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-28 18:00",
-    "last_seen": "2026-09-28 18:00",
+    "last_seen": "2026-10-11 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-11"
     ],
     "lesson_occurrences": [
-      "2026-09-28 18:00"
+      "2026-09-28 18:00",
+      "2026-10-11 18:00"
     ]
   },
   {
@@ -19655,23 +19674,26 @@ window.DAILY_VOCAB_DB = [
     "en": "useful",
     "root": "guna",
     "root_cn": "用处；用途",
-    "example": "Kamus kecil ini ternyata berguna sekali waktu saya belajar.",
-    "example_cn": "这本小词典在我学习的时候原来这么有用。",
+    "example": "Plastik besar itu ternyata berguna waktu atap bocor.",
+    "example_cn": "那块大塑料布在屋顶漏水的时候原来这么有用。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-11 08:00",
-    "last_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-11"
     ],
     "lesson_occurrences": [
-      "2026-10-11 08:00"
+      "2026-10-11 08:00",
+      "2026-10-11 18:00"
     ]
   },
   {
@@ -19756,23 +19778,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to take a stroll; to go out for fun",
     "root": "jalan",
     "root_cn": "路；走",
-    "example": "Minggu pagi kami berjalan-jalan di taman dekat rumah.",
-    "example_cn": "周日早上我们在家附近的公园里散步。",
+    "example": "Kalau besok tidak hujan, kita berjalan-jalan di taman kota.",
+    "example_cn": "如果明天不下雨，我们去市里的公园逛逛。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-11 08:00",
-    "last_seen": "2026-10-11 08:00",
+    "last_seen": "2026-10-11 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-11"
     ],
     "lesson_occurrences": [
-      "2026-10-11 08:00"
+      "2026-10-11 08:00",
+      "2026-10-11 18:00"
     ]
   },
   {
@@ -19798,6 +19823,82 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-11 08:00"
+    ]
+  },
+  {
+    "word": "tetangga",
+    "cn": "邻居",
+    "en": "neighbor",
+    "root": "tetangga",
+    "root_cn": "邻居",
+    "example": "Tetangga sebelah rumahku baru pindah minggu lalu.",
+    "example_cn": "我家隔壁的邻居上周刚搬来。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 18:00",
+    "last_seen": "2026-10-11 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 18:00"
+    ]
+  },
+  {
+    "word": "berjanji",
+    "cn": "答应；承诺",
+    "en": "to promise",
+    "root": "janji",
+    "root_cn": "约定；承诺",
+    "example": "Ayah berjanji akan menjemputku sebelum jam enam.",
+    "example_cn": "爸爸答应在六点前来接我。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 18:00",
+    "last_seen": "2026-10-11 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 18:00"
+    ]
+  },
+  {
+    "word": "bocor",
+    "cn": "漏；漏水；破洞漏气",
+    "en": "leaky; to leak",
+    "root": "bocor",
+    "root_cn": "漏",
+    "example": "Ban motorku bocor, jadi aku harus ke bengkel.",
+    "example_cn": "我的摩托车轮胎漏气了，所以我得去修车行。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-11 18:00",
+    "last_seen": "2026-10-11 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-11"
+    ],
+    "lesson_occurrences": [
+      "2026-10-11 18:00"
     ]
   }
 ];

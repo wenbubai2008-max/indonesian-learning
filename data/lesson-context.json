@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-11",
-    "session": "pm",
-    "time": "18:00",
-    "day": 51
+    "date": "2026-10-12",
+    "session": "am",
+    "time": "08:00",
+    "day": 52
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-11T00:29:13.211Z",
-    "lesson_watermark": "2026-10-11 08:00",
+    "runtime_generated_at": "2026-10-11T10:43:46.190Z",
+    "lesson_watermark": "2026-10-11 18:00",
     "index_updated": "2026-10-11",
-    "runtime_hash": "1fa59e04767e56eb4805e3aa2e6e0ba83573bccfca6c0cda3b823c73952f2a61",
-    "index_hash": "3eabbbc2183d13fe1238fedeaea81fe3354b2c927aec2b2194a390d8d9696739",
+    "runtime_hash": "f012a862e0b58cf79d881a9f99fe50880e203ccc489c80ecf19c7c096fd64dcd",
+    "index_hash": "e5a7fe54f32cff6264130b52db23d0e5b9e82117904955f421007b2e90aaaf53",
     "rules_hash": "d406904ea30ad06dfae711a64f1e979c1262ddd8401d79e7b17d4b3250ea5a06"
   },
   "schema": {
@@ -92,10 +92,6 @@
       [
         "kemudian",
         "然后；之后"
-      ],
-      [
-        "bocor",
-        "漏；破洞；泄漏"
       ],
       [
         "diberikan",
@@ -792,10 +788,6 @@
         "保护"
       ],
       [
-        "berjanji",
-        "承诺、答应"
-      ],
-      [
         "sempit",
         "狭窄的"
       ],
@@ -838,10 +830,6 @@
       [
         "hadir",
         "出席"
-      ],
-      [
-        "tetangga",
-        "邻居"
       ],
       [
         "rendah",
@@ -1262,6 +1250,14 @@
       [
         "dompet",
         "钱包"
+      ],
+      [
+        "lapor",
+        "报告；报案"
+      ],
+      [
+        "kejadian",
+        "事件；发生的事"
       ]
     ],
     "review": [
@@ -1866,26 +1862,6 @@
         "切；剪；扣除"
       ],
       [
-        "mengirim",
-        2,
-        0,
-        "",
-        "2026-10-08T09:18:05.265Z",
-        "发送",
-        "kirim",
-        ""
-      ],
-      [
-        "menyiapkan",
-        2,
-        0,
-        "",
-        "2026-10-08T09:15:53.764Z",
-        "准备好某物",
-        "siap",
-        ""
-      ],
-      [
         "menunggu",
         3,
         0,
@@ -2266,14 +2242,24 @@
         "个人；私人"
       ],
       [
-        "memerlukan",
-        5,
+        "selanjutnya",
+        3,
         0,
         "",
+        "2026-10-08T09:08:26.838Z",
+        "接下来；下一步；之后的",
+        "lanjut",
+        "继续；后续"
+      ],
+      [
+        "susah",
+        3,
+        0,
         "",
-        "需要",
-        "perlu",
-        ""
+        "2026-10-08T09:12:31.650Z",
+        "难；费劲；麻烦（口语高频）",
+        "susah",
+        "困难；费劲"
       ],
       [
         "ada urusan",
@@ -2366,104 +2352,14 @@
         ""
       ],
       [
-        "sambil",
-        2,
+        "mengalami",
+        5,
         0,
         "",
         "",
-        "一边……一边……；同时",
-        "sambil",
-        "一边……一边……（连词）"
-      ],
-      [
-        "seberapa",
-        2,
-        0,
-        "",
-        "",
-        "多么；到什么程度",
-        "berapa",
-        "多少"
-      ],
-      [
-        "bawahan",
-        2,
-        0,
-        "",
-        "",
-        "下属；部下",
-        "bawah",
-        "下面；下方"
-      ],
-      [
-        "pecat",
-        2,
-        0,
-        "",
-        "",
-        "开除；解雇",
-        "pecat",
-        "开除；解雇"
-      ],
-      [
-        "berguna",
-        1,
-        0,
-        "",
-        "",
-        "有用；有用处",
-        "guna",
-        "用处；用途"
-      ],
-      [
-        "ucapan",
-        2,
-        0,
-        "",
-        "",
-        "所说的话；致辞；祝词",
-        "ucap",
-        "说出；讲"
-      ],
-      [
-        "curi",
-        2,
-        0,
-        "",
-        "",
-        "偷",
-        "curi",
-        "偷"
-      ],
-      [
-        "asyik",
-        2,
-        0,
-        "",
-        "",
-        "有趣；好玩；享受；入迷",
-        "asyik",
-        "有趣的；入迷的"
-      ],
-      [
-        "berjalan-jalan",
-        2,
-        0,
-        "",
-        "",
-        "散步；逛逛；出去玩",
-        "jalan",
-        "路；走"
-      ],
-      [
-        "gosok gigi",
-        2,
-        0,
-        "",
-        "",
-        "刷牙",
-        "gosok",
-        "擦；刷"
+        "经历、遭遇",
+        "alami",
+        ""
       ]
     ],
     "focus": [
@@ -2815,14 +2711,6 @@
         "fuzzy"
       ],
       [
-        "berjanji",
-        "通用",
-        "janji",
-        "janji",
-        740,
-        "fuzzy"
-      ],
-      [
         "mengukur",
         "通用",
         "ngukur",
@@ -2873,45 +2761,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-04",
-      "session": "am",
-      "review_core": [
-        "baper",
-        "beliau",
-        "nanggung",
-        "kelepasan",
-        "kelewat"
-      ],
-      "new_words": [
-        "kelompok",
-        "mengenai",
-        "langkah",
-        "meninggal",
-        "hak",
-        "menatap",
-        "parah",
-        "kekuatan",
-        "memenuhi",
-        "rupanya"
-      ]
-    },
-    {
-      "date": "2026-10-04",
-      "session": "pm",
-      "review_core": [
-        "sekadar",
-        "memisahkan",
-        "kepake",
-        "kepancing",
-        "kesiangan"
-      ],
-      "new_words": [
-        "buat",
-        "belanja",
-        "mengajak"
-      ]
-    },
     {
       "date": "2026-10-05",
       "session": "am",
@@ -3171,106 +3020,40 @@
         "berjalan-jalan",
         "gosok gigi"
       ]
+    },
+    {
+      "date": "2026-10-11",
+      "session": "pm",
+      "review_core": [
+        "dengan demikian",
+        "sial",
+        "memerlukan",
+        "mengirim",
+        "menyiapkan"
+      ],
+      "new_words": [
+        "tetangga",
+        "berjanji",
+        "bocor"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-10",
+    "date": "2026-10-11",
     "new_words": [
-      "tubuh",
-      "santai",
-      "anjuran",
-      "peregangan"
+      "tetangga",
+      "berjanji",
+      "bocor"
     ],
     "review_core": [
-      "semacam",
-      "pernyataan",
-      "perubahan",
-      "terbiasa",
-      "walaupun"
+      "dengan demikian",
+      "sial",
+      "memerlukan",
+      "mengirim",
+      "menyiapkan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-11",
-    "vocab": [
-      [
-        "sambil",
-        "一边……一边……；同时",
-        "while (doing something)",
-        "sambil",
-        "一边……一边……（连词）"
-      ],
-      [
-        "seberapa",
-        "多么；到什么程度",
-        "how (much / often / far)",
-        "berapa",
-        "多少"
-      ],
-      [
-        "bawahan",
-        "下属；部下",
-        "subordinate",
-        "bawah",
-        "下面；下方"
-      ],
-      [
-        "pecat",
-        "开除；解雇",
-        "to fire; to dismiss",
-        "pecat",
-        "开除；解雇"
-      ],
-      [
-        "berguna",
-        "有用；有用处",
-        "useful",
-        "guna",
-        "用处；用途"
-      ],
-      [
-        "ucapan",
-        "所说的话；致辞；祝词",
-        "words spoken; greeting / message",
-        "ucap",
-        "说出；讲"
-      ],
-      [
-        "curi",
-        "偷",
-        "to steal",
-        "curi",
-        "偷"
-      ],
-      [
-        "asyik",
-        "有趣；好玩；享受；入迷",
-        "fun; enjoyable; absorbed",
-        "asyik",
-        "有趣的；入迷的"
-      ],
-      [
-        "berjalan-jalan",
-        "散步；逛逛；出去玩",
-        "to take a stroll; to go out for fun",
-        "jalan",
-        "路；走"
-      ],
-      [
-        "gosok gigi",
-        "刷牙",
-        "to brush one's teeth",
-        "gosok",
-        "擦；刷"
-      ]
-    ],
-    "review_vocab": [
-      "nanti dulu",
-      "nombok",
-      "kebiasaan",
-      "melanjutkan",
-      "mencapai"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
