@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-11",
+  "session": "am",
+  "time": "08:00",
+  "day": 51,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Uang Kas yang Hilang di Kantor Pak Anton",
+  "new_words": [
+    "sambil",
+    "seberapa",
+    "bawahan",
+    "pecat",
+    "berguna",
+    "ucapan",
+    "curi",
+    "asyik",
+    "berjalan-jalan",
+    "gosok gigi"
+  ],
+  "vocab": [
+    {
+      "word": "sambil",
+      "display": "sambil",
+      "audio_text": "sambil",
+      "cn": "一边……一边……；同时",
+      "en": "while (doing something)",
+      "root": "sambil",
+      "root_cn": "一边……一边……（连词）",
+      "formation": "sambil 本身是词根，后面接动词，表示同一个人同时做两件事：sambil makan（边吃边……）、sambil jalan（边走边……）、sambil tersenyum（笑着）。",
+      "example": "Ibu memasak sambil mendengarkan radio.",
+      "example_cn": "妈妈一边做饭一边听收音机。",
+      "synonym_note": "sambil = 同一个人同时做两个动作；sementara = 与此同时，常连接两个不同的人或事（Ibu masak, sementara ayah mencuci mobil）；一般不能让两个动作的主语不同还硬用 sambil。",
+      "is_oral_new": false
+    },
+    {
+      "word": "seberapa",
+      "display": "seberapa",
+      "audio_text": "seberapa",
+      "cn": "多么；到什么程度",
+      "en": "how (much / often / far)",
+      "root": "berapa",
+      "root_cn": "多少",
+      "formation": "se- + berapa → seberapa（问程度、频率、范围）。常见搭配：seberapa sering（多久一次）、seberapa penting（有多重要）、seberapa jauh（有多远）；seberapa pun（无论多么）。",
+      "example": "Seberapa sering kamu olahraga dalam seminggu?",
+      "example_cn": "你一周大概运动几次？",
+      "synonym_note": "berapa = 问具体数量或价格（Berapa harganya?）；seberapa = 问程度、频率、范围（Seberapa jauh?）。问价钱时不用 seberapa。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bawahan",
+      "display": "bawahan",
+      "audio_text": "bawahan",
+      "cn": "下属；部下",
+      "en": "subordinate",
+      "root": "bawah",
+      "root_cn": "下面；下方",
+      "formation": "bawah（下面）+ -an → bawahan（处在下位的人，即下属），反义是 atasan（上司）。另外，在服装里 atasan／bawahan 也指上衣／下装。",
+      "example": "Pak Anton sering makan siang bareng bawahannya.",
+      "example_cn": "安东先生常和下属们一起吃午饭。",
+      "synonym_note": "bawahan = 在职位上归你管的人；anak buah = 口语的“手下、部下”，更随意；staf／karyawan = 一般员工，不强调谁管谁。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pecat",
+      "display": "pecat",
+      "audio_text": "pecat",
+      "cn": "开除；解雇",
+      "en": "to fire; to dismiss",
+      "root": "pecat",
+      "root_cn": "开除；解雇",
+      "formation": "pecat 是词根。meN- + pecat → memecat（开除，p 脱落）；di- + pecat → dipecat（被开除）；pemecatan = 开除这件事。常见搭配：dipecat dari kantor、langsung memecat、asal pecat（随便就开除）。",
+      "example": "Dia dipecat karena sering datang terlambat.",
+      "example_cn": "他因为经常迟到被开除了。",
+      "synonym_note": "dipecat = 被公司开除，通常是因为本人有过失；mengundurkan diri = 自己提出辞职；di-PHK = 因公司裁员而被解雇，不是本人的错。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berguna",
+      "display": "berguna",
+      "audio_text": "berguna",
+      "cn": "有用；有用处",
+      "en": "useful",
+      "root": "guna",
+      "root_cn": "用处；用途",
+      "formation": "ber- + guna → berguna（有用处）。常见搭配：sangat berguna、berguna bagi tim／untuk belajar、tidak berguna（没用）；反问常说 Apa gunanya?（有什么用？）。",
+      "example": "Kamus kecil ini ternyata berguna sekali waktu saya belajar.",
+      "example_cn": "这本小词典在我学习的时候原来这么有用。",
+      "synonym_note": "berguna = 有用处、派得上用场；bermanfaat = 有益处，更偏书面，强调带来好处；bisa dipakai = 还能用（讲东西本身的状态），不一定表示有价值。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ucapan",
+      "display": "ucapan",
+      "audio_text": "ucapan",
+      "cn": "所说的话；致辞；祝词",
+      "en": "words spoken; greeting / message",
+      "root": "ucap",
+      "root_cn": "说出；讲",
+      "formation": "ucap（说出）+ -an → ucapan（说出口的话，常指某场合的致辞、祝词）。常见搭配：ucapan selamat（祝贺语）、ucapan terima kasih（致谢词）、ucapan tadi（刚才那番话）。",
+      "example": "Terima kasih atas ucapan selamatnya, Pak.",
+      "example_cn": "谢谢您的祝贺，先生。",
+      "synonym_note": "ucapan = 说出口的话或某场合的祝词；kata-kata = 泛指话语、字词；omongan = 口语的“说的话”，omongan orang 常指别人的闲话。",
+      "is_oral_new": false
+    },
+    {
+      "word": "curi",
+      "display": "curi",
+      "audio_text": "curi",
+      "cn": "偷",
+      "en": "to steal",
+      "root": "curi",
+      "root_cn": "偷",
+      "formation": "curi 是词根。meN- + curi → mencuri（偷）；di- + curi → dicuri（被偷）；peN- + curi → pencuri（小偷）；pencurian = 偷窃案。口语里也直接说 curi。",
+      "example": "Sepeda saya dicuri tadi malam.",
+      "example_cn": "我的自行车昨晚被偷了。",
+      "synonym_note": "mencuri = 偷（通称）；maling = 口语的“小偷”；nyolong = 口语的“偷拿、顺走”，语气更随便；curi 是偷东西，不用于“抄袭”之类的说法。",
+      "is_oral_new": false
+    },
+    {
+      "word": "asyik",
+      "display": "asyik",
+      "audio_text": "asyik",
+      "cn": "有趣；好玩；享受；入迷",
+      "en": "fun; enjoyable; absorbed",
+      "root": "asyik",
+      "root_cn": "有趣的；入迷的",
+      "formation": "asyik 本身就是词根，不再拆分。常见搭配：asyik banget（太好玩／太舒服了）、asyik ngobrol／asyik main HP（沉浸在……里）、Asyik!（太好了！）。",
+      "example": "Dia asyik ngobrol sampai lupa waktu.",
+      "example_cn": "他聊得太投入，连时间都忘了。",
+      "synonym_note": "asyik = 口语里常用，强调“享受、投入”；seru = 热闹刺激、很有意思（活动、比赛）；menyenangkan = 令人愉快，更正式。asyik + 动词有时带“光顾着做这件事”的味道，好坏要看上下文。",
+      "is_oral_new": true
+    },
+    {
+      "word": "berjalan-jalan",
+      "display": "berjalan-jalan",
+      "audio_text": "berjalan-jalan",
+      "cn": "散步；逛逛；出去玩",
+      "en": "to take a stroll; to go out for fun",
+      "root": "jalan",
+      "root_cn": "路；走",
+      "formation": "ber- + jalan-jalan（jalan 重叠）→ berjalan-jalan（没有明确目的地的走走、逛逛、出游）。口语常省略 ber-，直接说 jalan-jalan。搭配：berjalan-jalan di taman、berjalan-jalan keliling kota。",
+      "example": "Minggu pagi kami berjalan-jalan di taman dekat rumah.",
+      "example_cn": "周日早上我们在家附近的公园里散步。",
+      "synonym_note": "berjalan-jalan／jalan-jalan = 随意走走、逛街、出游，不一定是走路；jalan kaki = 步行到某处（是交通方式）；berlibur = 度假，时间更长。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gosok gigi",
+      "display": "gosok gigi",
+      "audio_text": "gosok gigi",
+      "cn": "刷牙",
+      "en": "to brush one's teeth",
+      "root": "gosok",
+      "root_cn": "擦；刷",
+      "formation": "gosok（擦、刷）+ gigi（牙）→ gosok gigi（刷牙），完整动词形式是 menggosok gigi。常见搭配：gosok gigi sebelum tidur、lupa gosok gigi。",
+      "example": "Anak-anak harus gosok gigi sebelum tidur.",
+      "example_cn": "孩子们睡前必须刷牙。",
+      "synonym_note": "gosok gigi = 刷牙，日常也常说 sikat gigi，意思一样（sikat 是“刷子”）；gigi 是“牙齿”，不要和 gigih（顽强、坚持）混淆。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "nanti dulu",
+    "nombok",
+    "kebiasaan",
+    "melanjutkan",
+    "mencapai"
+  ],
+  "sentences": [
+    {
+      "text": "Pak Anton tidak mau asal pecat bawahannya hanya karena gosip.",
+      "cn": "安东先生不想仅仅因为传言就随便开除下属。"
+    },
+    {
+      "text": "Seberapa yakin kamu bahwa uang kas itu dicuri?",
+      "cn": "你有多确定那笔公款是被偷的？"
+    },
+    {
+      "text": "Ucapan Bu Tini tadi tidak berguna sama sekali, malah bikin suasana kantor tegang.",
+      "cn": "布蒂妮女士刚才那番话一点用都没有，反而让办公室气氛紧张。"
+    },
+    {
+      "text": "Setelah masalah selesai, tim bisa melanjutkan pekerjaan dan mencapai target bulan ini.",
+      "cn": "问题解决之后，团队可以继续工作，并完成本月的目标。"
+    },
+    {
+      "text": "Habis rapat, Dimas berjalan-jalan sebentar sambil asyik dengar musik.",
+      "cn": "开完会，迪马斯边听音乐边津津有味地散了会儿步。"
+    }
+  ],
+  "reading": {
+    "text": "Pak Anton baru dua bulan menjadi atasan Dimas. Dimas biasanya asyik bekerja sampai pulang paling akhir. Minggu lalu uang kas kantor hilang, dan Bu Tini langsung ngegas, \"Pasti ada bawahan yang curi!\" Semua orang melihat ke arah Dimas. Bu Tini memang punya kebiasaan cepat curiga. \"Nanti dulu, Bu,\" kata Pak Anton. \"Seberapa yakin Ibu? Saya tidak mau asal pecat orang.\" Ternyata uang itu sudah disetor ke bank, tapi catatannya tertinggal di laci. Bu Tini minta maaf. Dimas lega, walaupun ucapan tadi masih terasa menyakitkan. Pak Anton menepuk bahunya. \"Kerja kamu berguna sekali buat tim. Seharusnya kita semua tenang dulu.\" Malamnya Dimas gosok gigi dan tidur nyenyak. Besok pagi dia janjian berjalan-jalan dengan temannya sambil minum kopi.",
+    "cn": "安东先生才当迪马斯的上司两个月。迪马斯平时工作很投入，总是最后一个下班。上周办公室的公款不见了，布蒂妮女士当场语气很冲：“肯定是哪个下属偷的！”所有人都看向迪马斯。布蒂妮女士本来就爱很快起疑。“先等一下，女士，”安东先生说，“您有多确定？我不想随便开除人。”结果钱早已存进银行，只是记录落在了抽屉里。布蒂妮女士道了歉。迪马斯松了口气，不过刚才那番话仍让他心里难受。安东先生拍了拍他的肩膀：“你的工作对团队很有用。我们大家本来就该先冷静一下。”当晚迪马斯刷了牙，睡得很香。明天早上他约了朋友一起散步，边走边喝咖啡。"
+  },
+  "quiz": [
+    {
+      "question": "Uang kantor kurang sedikit, jadi Rina terpaksa ___ pakai uang sendiri.",
+      "options": [
+        "menabung",
+        "nombok",
+        "menukar",
+        "meminjam"
+      ],
+      "answer_index": 1,
+      "answer": "nombok",
+      "explain": "nombok = 钱不够时自己掏腰包补上差额，正是这句的意思。menabung = 存钱；menukar = 兑换、交换；meminjam = 向别人借，都没有“自己出钱补差额”的含义。"
+    },
+    {
+      "question": "___ penting rapat besok menurut kamu?",
+      "options": [
+        "Berapa",
+        "Sebanyak",
+        "Seberapa",
+        "Setiap"
+      ],
+      "answer_index": 2,
+      "answer": "Seberapa",
+      "explain": "问“有多重要”，问的是程度，用 seberapa penting。Berapa 问具体数量或价格，不能直接接形容词 penting；Sebanyak 后面接数量；Setiap = 每一个，语义不通。"
+    },
+    {
+      "question": "Karena terbukti mencuri uang kantor, orang itu langsung ___.",
+      "options": [
+        "diundang",
+        "dipromosikan",
+        "dikembalikan",
+        "dipecat"
+      ],
+      "answer_index": 3,
+      "answer": "dipecat",
+      "explain": "因偷公款被公司开除，用 dipecat。diundang = 被邀请；dipromosikan = 被升职；dikembalikan = 被归还，都与偷窃的后果不符。主动辞职则是 mengundurkan diri，不是 dipecat。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语劝一位同事：不要只听传言就怪别人（要用到 seberapa 和 ucapan，也可以加上 curi 或 pecat）。",
+    "reference_answer": "Seberapa yakin kamu? Ucapan seperti itu bisa merugikan orang lain. Kita cek dulu faktanya, jangan asal bilang dia curi uang.",
+    "reference_cn": "你有多确定？这样的话可能会伤害别人。我们先查清事实，别随便说他偷了钱。"
+  },
+  "review": [
+    "3秒主动提取：不看词卡，说出这 10 个词的意思——sambil、seberapa、bawahan、pecat、berguna、ucapan、curi、asyik、berjalan-jalan、gosok gigi；再用口语说一句：Asyik banget!（太好玩／太舒服了！）。",
+    "易混词与搭配：seberapa（程度、频率）vs berapa（数量、价格）；dipecat（被开除）vs mengundurkan diri（自己辞职）；berguna（有用）vs bermanfaat（有益，更书面）；gosok gigi 也常说 sikat gigi，意思相同。",
+    "重点复习词应用：从 nanti dulu、nombok、kebiasaan、melanjutkan、mencapai 里选两个各说一句，例如 “Nanti dulu, aku belum selesai.”（先等一下，我还没弄完。）、“Saya mau melanjutkan kebiasaan lari pagi.”（我想继续保持晨跑的习惯。）"
+  ]
+}
