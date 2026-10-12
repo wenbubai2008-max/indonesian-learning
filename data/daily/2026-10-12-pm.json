@@ -1,0 +1,362 @@
+{
+  "date": "2026-10-12",
+  "session": "pm",
+  "time": "18:00",
+  "day": 52,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Dewi 的三十天运动挑战，第一天就抽筋",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "menghitung",
+    "lembut",
+    "teratur",
+    "tantangan"
+  ],
+  "vocab": [
+    {
+      "display": "menghitung",
+      "audio_text": "menghitung",
+      "is_new": true,
+      "is_oral_new": true,
+      "word": "menghitung",
+      "cn": "数；计算",
+      "en": "to count; to calculate",
+      "root": "hitung",
+      "root_cn": "数、算",
+      "formation": "meN- + hitung → menghitung（词根以 h 开头，前缀写成 meng-，h 保留）。相关：hitungan（计数、算法）、perhitungan（核算、估算）。常见搭配：menghitung uang（数钱）、menghitung langkah（数步数）、menghitung mundur（倒数）、menghitung gerakan（数动作）。",
+      "example": "Rina menghitung setiap gerakan dengan suara lantang.",
+      "example_cn": "Rina 大声数着每一个动作。",
+      "synonym_note": "menghitung（数数、算出结果）vs menjumlahkan（把几个数加起来求和）vs berhitung（做算术、会算数，如 anak belajar berhitung）：Aku menghitung uang kembalian＝我数找回的零钱；Tolong jumlahkan semua angkanya＝请把所有数字加起来。",
+      "usage_note": "新词（半熟词）。口语常说 ngitung：Aku yang ngitung ya.（我来数。）带着别人做动作、数步数、数钱都常用。",
+      "source_group": "new"
+    },
+    {
+      "display": "lembut",
+      "audio_text": "lembut",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "lembut",
+      "cn": "轻柔的；柔软的；温和的",
+      "en": "soft; gentle",
+      "root": "lembut",
+      "root_cn": "轻柔、温和",
+      "formation": "lembut 本身是词根。相关：melembutkan（使变柔和）、kelembutan（柔和、温柔）、selembut（像……一样柔和）。常见搭配：suara yang lembut（轻柔的声音）、gerakan yang lembut（轻柔的动作）、kain yang lembut（柔软的布）。",
+      "example": "Gerakan yang lembut cocok untuk pemula.",
+      "example_cn": "轻柔的动作适合新手。",
+      "synonym_note": "lembut（触感柔软，或声音、动作、态度温和）vs pelan（速度慢）：Suaranya lembut＝声音轻柔；Jalannya pelan＝走得慢。lembut 说的是“轻、柔”，不等于“慢”。",
+      "usage_note": "新词（半熟词）。既可形容东西的手感，也可形容声音、动作和人的态度：Dia bicara dengan lembut.（她说话很温和。）",
+      "source_group": "new"
+    },
+    {
+      "display": "teratur",
+      "audio_text": "teratur",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "teratur",
+      "cn": "有规律的；有条理的",
+      "en": "regular; orderly",
+      "root": "atur",
+      "root_cn": "安排、整理",
+      "formation": "ter- + atur → teratur（处于被安排好的状态：有规律、有条理）。相关：mengatur（安排、整理）、aturan（规则）、pengaturan（安排、设置）、tidak teratur（不规律）。常见搭配：berolahraga secara teratur（有规律地运动）、jadwal yang teratur（规律的作息）、hidup teratur（生活有条理）。",
+      "example": "Kalau mau tubuh sehat, kamu harus berolahraga secara teratur.",
+      "example_cn": "想要身体健康，你就得有规律地运动。",
+      "synonym_note": "teratur（有规律、有条理）vs rutin（例行、固定重复，如 olahraga rutin）vs sering（经常，只说次数多）：Dia olahraga rutin tiap pagi＝她每天早上固定运动；Dia sering olahraga＝她经常运动，但不一定有固定节奏。teratur 还能形容东西摆得整齐：kamarnya teratur。",
+      "usage_note": "新词（生词，原属“不会”词）。最常见的用法是 secara teratur（有规律地）；形容物品整齐、生活有条理时也能直接放在名词后面。",
+      "source_group": "new"
+    },
+    {
+      "display": "tantangan",
+      "audio_text": "tantangan",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "tantangan",
+      "cn": "挑战",
+      "en": "challenge",
+      "root": "tantang",
+      "root_cn": "挑战、向……挑战",
+      "formation": "tantang（挑战）+ -an → tantangan（挑战，名词）。相关：menantang（向……挑战；有挑战性的）、tertantang（被激起兴趣、想试试）。常见搭配：menerima tantangan（接受挑战）、tantangan baru（新挑战）、menghadapi tantangan（面对挑战）、ikut tantangan 30 hari（参加 30 天挑战）。",
+      "example": "Dewi menerima tantangan Rina untuk berolahraga selama tiga puluh hari.",
+      "example_cn": "Dewi 接受了 Rina 的挑战，连续三十天运动。",
+      "synonym_note": "tantangan（值得一试、有难度的挑战）vs kesulitan（遇到的难处、困难）vs masalah（问题）：tantangan 带着“想去应对”的意思，Pekerjaan ini penuh tantangan＝这份工作很有挑战；Dia mengalami kesulitan＝他遇到了困难。",
+      "usage_note": "新词（生词，原属“不会”词）。社交平台上常见 ikut tantangan／tantangan 30 hari（参加某个坚持一个月的挑战活动）。",
+      "source_group": "new"
+    },
+    {
+      "display": "sudut",
+      "audio_text": "sudut",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "sudut",
+      "cn": "角落；角度",
+      "en": "corner; angle",
+      "root": "sudut",
+      "root_cn": "角落、角度",
+      "formation": "sudut 本身是词根，不用拆分。常见搭配：sudut ruangan（房间的角落）、sudut jalan（街角）、sudut mata（眼角）、dari sudut pandang saya（从我的角度来看）。",
+      "example": "Dewi menggeser meja ke sudut ruang tamu supaya tempatnya lebih luas.",
+      "example_cn": "Dewi 把桌子挪到客厅的角落，这样地方就更宽敞了。",
+      "synonym_note": "sudut（两条边相交的角，也指“角度、观点”）vs pojok（口语里的“墙角、角落”，如 duduk di pojok）vs ujung（尽头、末端）：sudut ruangan 和 pojok ruangan 都可以说；“从……角度”只说 dari sudut pandang。",
+      "usage_note": "重点复习词（近期新错）。有两个常用义：位置上的“角落”，以及抽象的“角度、观点”，不要只记住一个。",
+      "source_group": "review"
+    },
+    {
+      "display": "menyembuhkan",
+      "audio_text": "menyembuhkan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "menyembuhkan",
+      "cn": "治愈；使痊愈",
+      "en": "to heal; to cure",
+      "root": "sembuh",
+      "root_cn": "痊愈、康复",
+      "formation": "meN- + sembuh + -kan → menyembuhkan（使……痊愈）。相关：sembuh（痊愈）、kesembuhan（痊愈、康复）、penyembuhan（治疗、康复过程）。常见搭配：menyembuhkan penyakit（治好病）、menyembuhkan luka（让伤口愈合）、cepat sembuh（早日康复）。",
+      "example": "Istirahat dan obat dari dokter bisa menyembuhkan flu dalam beberapa hari.",
+      "example_cn": "休息加上医生开的药，几天内就能治好感冒。",
+      "synonym_note": "menyembuhkan（及物，后接病、伤口、病人：治好、使痊愈）vs sembuh（不及物，自己好了）vs mengobati（给药、处理病痛，不保证痊愈）：Obat ini mengobati batuk, tapi belum tentu menyembuhkannya；Lukanya sudah sembuh＝伤口已经好了。",
+      "usage_note": "重点复习词（近期新错）。有宾语时用 menyembuhkan（menyembuhkan luka），没有宾语、主语自己好了用 sembuh（Aku sudah sembuh）。",
+      "source_group": "review"
+    },
+    {
+      "display": "mendadak",
+      "audio_text": "mendadak",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "mendadak",
+      "cn": "突然的；临时的",
+      "en": "sudden; at short notice",
+      "root": "dadak",
+      "root_cn": "突然、仓促",
+      "formation": "dadak（突然、仓促，很少单独使用）+ meN- → mendadak（突然、临时）。相关：dadakan（口语：临时的，如 rapat dadakan）。常见搭配：mendadak sakit（突然生病）、rapat mendadak（临时会议）、berhenti mendadak（突然停下）、kabar mendadak（突如其来的消息）。",
+      "example": "Kaki Dewi mendadak kram setelah jongkok terlalu lama.",
+      "example_cn": "Dewi 的腿在蹲得太久之后突然抽筋了。",
+      "synonym_note": "mendadak（突然；也有“临时、没预告”的意思）vs tiba-tiba（突然，口语最常用，可放句首：Tiba-tiba hujan）vs spontan（自发、不假思索）：Ada rapat mendadak＝有个临时会议；Dia tertawa spontan＝她不由自主地笑了。",
+      "usage_note": "重点复习词（久未复习）。可放在动词或形容词前（mendadak kram），也可放在名词后（tamu mendadak＝临时来的客人）。",
+      "source_group": "review"
+    },
+    {
+      "display": "biar",
+      "audio_text": "biar",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "biar",
+      "cn": "好让；让（……去）",
+      "en": "so that; let",
+      "root": "biar",
+      "root_cn": "让、好让",
+      "formation": "biar 本身是词根。相关：membiarkan（放任、任由）、dibiarkan（被放着不管）、biarlah（那就让……吧）、biarin（口语：随它去）。常见搭配：biar nggak telat（免得迟到）、Biar aku aja.（让我来吧。）",
+      "example": "Pelan-pelan aja, biar kakinya nggak cedera.",
+      "example_cn": "慢慢来，免得腿受伤。",
+      "synonym_note": "biar（口语：好让、免得；也表示“让某人去做”）vs supaya（通用：为了）vs agar（正式书面）：Pelan-pelan, biar nggak cedera＝Pelan-pelan supaya tidak cedera；写正式文件时用 agar。",
+      "usage_note": "重点复习词（久未复习）。biar 后面接“主语＋动词”，否定口语常用 nggak：biar nggak lupa；Biar aku yang bayar＝让我来付。",
+      "source_group": "review"
+    },
+    {
+      "display": "ribet",
+      "audio_text": "ribet",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "ribet",
+      "cn": "麻烦的；复杂的",
+      "en": "complicated; a hassle",
+      "root": "ribet",
+      "root_cn": "麻烦、复杂",
+      "formation": "ribet 本身是词根（口语）。口语派生：ngeribetin（把事情搞复杂）、keribetan（麻烦事）。常见搭配：prosedurnya ribet（手续很麻烦）、nggak ribet（不麻烦）、bikin ribet（添麻烦）、ribet banget（太麻烦了）。",
+      "example": "Latihannya nggak ribet, nggak perlu alat apa pun.",
+      "example_cn": "这个训练一点都不麻烦，什么器材都不需要。",
+      "synonym_note": "ribet（口语：步骤多、琐碎麻烦）vs repot（忙乱、劳烦别人，礼貌说 Maaf merepotkan）vs rumit（复杂难懂，偏书面）vs susah（难）：Prosedurnya ribet＝手续很繁琐；Maaf merepotkan, Bu＝不好意思麻烦您了。",
+      "usage_note": "重点复习词（久未复习）。口语词，朋友间聊天很常用；礼貌道歉时说 merepotkan，不说 meribetkan。",
+      "source_group": "review"
+    },
+    {
+      "display": "gerakan",
+      "audio_text": "gerakan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "gerakan",
+      "cn": "动作；运动（行动）",
+      "en": "movement; motion",
+      "root": "gerak",
+      "root_cn": "动、动作",
+      "formation": "gerak（动）+ -an → gerakan（动作；运动）。相关：bergerak（移动）、menggerakkan（使动、活动）、pergerakan（移动、动向）。常见搭配：gerakan senam（健身操动作）、gerakan tangan（手部动作）、gerakan dasar（基本动作）、gerakan lambat（慢动作）。今天08:00新学。",
+      "example": "Gerakan senam hari ini mudah diikuti, tapi harus dilakukan dengan benar.",
+      "example_cn": "今天的健身操动作很容易跟着做，但必须做得正确。",
+      "synonym_note": "gerakan（具体的一个动作，或社会性的“运动”）vs gerak（较抽象的“动”，如 gerak-gerik）vs tindakan（采取的行动、举措）：gerakan tubuh＝身体动作；tindakan tegas＝坚决的举措。",
+      "usage_note": "应用词（今天08:00新学）。上午已在早课学过，晚上放进新场景再用一次：描述运动时说 gerakan＋动作名称。",
+      "source_group": "application"
+    },
+    {
+      "display": "jongkok",
+      "audio_text": "jongkok",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "jongkok",
+      "cn": "蹲；蹲下",
+      "en": "to squat; to crouch",
+      "root": "jongkok",
+      "root_cn": "蹲",
+      "formation": "jongkok 本身是词根。带前缀的写法 berjongkok（蹲着）也常见，口语多直接说 jongkok。常见搭配：jongkok di lantai（蹲在地上）、jongkok sebentar（蹲一会儿）、jongkok terlalu lama（蹲太久）。今天08:00新学。",
+      "example": "Dewi jongkok dulu untuk mengikat tali sepatunya.",
+      "example_cn": "Dewi 先蹲下来系鞋带。",
+      "synonym_note": "jongkok（蹲，膝盖弯曲、臀部接近脚跟）vs duduk（坐）vs membungkuk（弯腰）vs berlutut（跪）：Dia jongkok di depan pintu＝她蹲在门前；Dia membungkuk mengambil kunci＝她弯腰捡钱包。",
+      "usage_note": "应用词（今天08:00新学）。上午已在早课学过，这里放进另一个运动场景：蹲久了腿会麻、会抽筋，常和 kelamaan／terlalu lama 一起用。",
+      "source_group": "application"
+    }
+  ],
+  "reading": {
+    "text": "Dewi tidak jadi ikut kelas senam karena ada urusan keluarga. Sore ini Rina mengajaknya memulai tantangan olahraga tiga puluh hari lewat video call. Punggung Dewi sering pegal karena duduk seharian, dan ia biasanya suka menunda olahraga. Kali ini ia ingin berlatih secara teratur. Ia menggeser meja ke sudut ruang tamu supaya tempatnya cukup luas. Rina menghitung gerakan dengan suara lantang, dan Dewi mengikutinya dengan gerakan yang lembut. Baru lima menit, kakinya mendadak kram setelah jongkok terlalu lama. Rina menyuruhnya berhenti dan meluruskan kaki dulu. Latihannya memang tidak ribet, tetapi harus pelan-pelan, biar otot tidak kaget. Rina membatasi latihan hanya lima belas menit supaya tidak terlalu melelahkan.",
+    "cn": "Dewi 因为家里有事，没能参加健身操课。今天傍晚，Rina 约她通过视频通话开始一个为期三十天的运动挑战。Dewi 因为整天坐着，背常常发酸，而且她平时总爱拖着不运动。这一次她想有规律地锻炼。她把桌子挪到客厅的角落，好让地方够宽敞。Rina 大声数着动作，Dewi 则用轻柔的动作跟着做。才过了五分钟，她的腿在蹲得太久之后突然抽筋了。Rina 让她先停下来，把腿伸直。这个训练确实不麻烦，但必须慢慢来，免得肌肉受惊。Rina 把训练限制在只有十五分钟，这样就不会太累。"
+  },
+  "dialogue": {
+    "title": "Video call latihan sore hari",
+    "lines": [
+      {
+        "speaker": "Rina",
+        "id": "Udah siap, Wi? Jangan ngaret ya, kita mulai sekarang.",
+        "cn": "准备好了吗，Wi？别拖拉哦，我们现在开始。"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Siap! Tadi aku nyari matras dulu, makanya agak lama.",
+        "cn": "好了！刚才我先去找瑜伽垫，所以花了点时间。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Oke. Aku yang ngitung, kamu ikutin gerakannya ya. Satu, dua, tiga...",
+        "cn": "好。我来数，你跟着做动作哦。一、二、三……"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Aduh! Kakiku mendadak kram nih. Kayaknya gara-gara jongkok kelamaan.",
+        "cn": "哎哟！我的腿突然抽筋了。好像是因为蹲太久了。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Berhenti dulu, luruskan kakinya. Pelan-pelan aja, biar nggak cedera.",
+        "cn": "先停下，把腿伸直。慢慢来，免得受伤。"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Iya. Punggungku sering pegal kalau duduk seharian. Kata ibuku, olahraga ringan bisa membantu menyembuhkannya.",
+        "cn": "嗯。我坐一整天背就常常发酸。我妈妈说，轻度运动能帮助治好它。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Betul. Makanya harus teratur, jangan ditunda-tunda lagi. Ini kan tantangan tiga puluh hari.",
+        "cn": "对。所以要有规律，别再一拖再拖了。这可是三十天的挑战嘛。"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Tenang, besok aku pasang alarm biar nggak ketiduran. Untung gerakannya nggak ribet.",
+        "cn": "放心，明天我会设闹钟，免得睡过头。还好动作不复杂。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "用 tantangan 和 teratur 写 2–3 句话：说说你想参加的一个坚持一个月的挑战，以及你打算怎样坚持下去。",
+      "reference_answer": "Aku ingin ikut tantangan membaca dua puluh halaman setiap malam selama sebulan. Supaya bisa teratur, aku akan membaca di tempat tidur sebelum tidur.",
+      "reference_cn": "我想参加一个为期一个月的挑战：每天晚上读二十页书。为了能坚持规律，我会在睡前躺在床上读。"
+    },
+    {
+      "task": "用 menghitung 和 lembut 写 2 句话：说说你教朋友或家人做一个动作（比如舞步、做手工）时是怎么带着他们的。",
+      "reference_answer": "Waktu mengajari adikku menari, aku menghitung langkahnya pelan-pelan. Dia masih gugup, jadi aku menjelaskannya dengan suara yang lembut.",
+      "reference_cn": "教我弟弟跳舞的时候，我慢慢地数着舞步。他还有点紧张，所以我用轻柔的声音向他解释。"
+    },
+    {
+      "task": "用 mendadak、sudut 和 ribet 写 2–3 句话：说说你遇到过的一件突发的小麻烦，当时你怎么应对。",
+      "reference_answer": "Kemarin lampu kamarku mendadak mati. Aku duduk di sudut tempat tidur sambil menunggu, karena mencari lilin dalam gelap itu ribet.",
+      "reference_cn": "昨天我房间的灯突然灭了。我坐在床的角落等着，因为在黑暗中找蜡烛太麻烦了。"
+    },
+    {
+      "task": "用今天08:00新学的 gerakan 和 jongkok 写 2 句话：说说你什么时候需要蹲下去做某件事，以及你怎么避免身体不舒服。",
+      "reference_answer": "Waktu mengambil buku di rak paling bawah, aku jongkok dulu supaya punggungku tidak sakit. Gerakan itu kelihatan sepele, tapi cukup membantu.",
+      "reference_cn": "拿最下面一层书架上的书时，我会先蹲下来，免得背疼。这个动作看起来不起眼，但很有帮助。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Kalau mau punggungmu tidak pegal lagi, kamu harus berolahraga secara ____.",
+        "options": [
+          "aturan",
+          "mengatur",
+          "teratur",
+          "pengaturan"
+        ],
+        "answer_index": 2,
+        "answer": "teratur",
+        "explain": "“有规律地运动”用 secara teratur，teratur 是形容词。aturan＝规则（名词），mengatur＝安排（动词），pengaturan＝安排、设置（名词），都不能接在 secara 后面表示“有规律地”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Istirahat dan obat dari dokter bisa ____ flu Dewi dalam beberapa hari.",
+        "options": [
+          "sembuh",
+          "menyembuhkan",
+          "kesembuhan",
+          "mengobatkan"
+        ],
+        "answer_index": 1,
+        "answer": "menyembuhkan",
+        "explain": "句子有宾语 flu Dewi，要用及物动词 menyembuhkan（治好）。sembuh 是不及物，主语自己好了才用（Dewi sudah sembuh）；kesembuhan 是名词（痊愈）；mengobatkan 不是常见说法，“治疗”应是 mengobati。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Rina 问：“Berani nggak olahraga setiap hari selama sebulan?” Dewi 想接受这个提议，哪句回答最自然？",
+        "options": [
+          "Oke, aku terima kesulitannya!",
+          "Oke, aku terima gerakannya!",
+          "Oke, aku terima sudutnya!",
+          "Oke, aku terima tantangannya!"
+        ],
+        "answer_index": 3,
+        "answer": "Oke, aku terima tantangannya!",
+        "explain": "别人发出“敢不敢试试”的邀请，接受时说 menerima tantangan。kesulitan＝困难、难处，不是被邀请去做的事；gerakan＝动作、sudut＝角落，意思都不对。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Rina ____ gerakan dengan suara lantang, supaya Dewi bisa mengikutinya.（数）",
+        "answer": "menghitung",
+        "explain": "hitung 加 meN- 变成 menghitung（h 开头的词根用 meng-）。口语里常说 ngitung：Aku yang ngitung ya."
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kaki Dewi ____ kram waktu dia jongkok terlalu lama.（突然）",
+        "answer": "mendadak",
+        "explain": "“突然”可以用 mendadak，放在动词或形容词前面（mendadak kram）。口语里也常说 tiba-tiba，意思相近。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：Dewi 慢慢地蹲下，免得腿抽筋。",
+        "tokens": [
+          "Dewi",
+          "jongkok",
+          "pelan-pelan",
+          "biar",
+          "kakinya",
+          "nggak",
+          "kram"
+        ],
+        "answer": "Dewi jongkok pelan-pelan biar kakinya nggak kram",
+        "answer_cn": "Dewi 慢慢地蹲下，免得腿抽筋。",
+        "explain": "主句 Dewi jongkok pelan-pelan 在前，biar 引出目的（免得、好让），后面是主语 kakinya＋否定 nggak＋动词 kram。"
+      }
+    ],
+    "self_check": [
+      "不看中文，menghitung、lembut、teratur、tantangan 这 4 个新词里，有没有哪个我 3 秒内说不出意思？",
+      "sudut、menyembuhkan、mendadak、biar、ribet 里，有没有哪个我看着眼熟，却不确定它在句子里怎么用？",
+      "teratur 和 rutin、biar 和 supaya、menyembuhkan 和 sembuh 这几组，我现在分得清区别吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语，答不出的回看词卡再说一遍。",
+      "把 menyembuhkan 和 sembuh 各放进一句话（一句有宾语，一句没有宾语），再用 biar 说一句提醒别人别受伤的话。",
+      "用 30 秒向朋友讲一遍 Dewi 和 Rina 的三十天挑战，至少用上 tantangan、teratur、mendadak，不要背课文。",
+      "想一件你一直在 menunda 的事，用 tantangan 和 teratur 说出你的计划。",
+      "最后用今天 08:00 早课新学的 gerakan 和 jongkok 各说一句新句子，检查自己是不是真的记住了。"
+    ]
+  }
+}
