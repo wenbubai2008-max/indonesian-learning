@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generated_at": "2026-10-12T00:28:08.586Z",
-  "source_updated_at": "2026-10-11T15:35:50.205Z",
-  "taught_total": 755,
+  "generated_at": "2026-10-12T10:44:16.208Z",
+  "source_updated_at": "2026-10-12T03:59:45.592Z",
+  "taught_total": 759,
   "confirmed_mastered": 182,
-  "needs_reinforcement": 484,
+  "needs_reinforcement": 488,
   "unverified": 89,
-  "mastery_percent": 24.1,
+  "mastery_percent": 24,
   "primary_master_total": 977,
-  "primary_taught_unique": 486,
-  "primary_unlearned_total": 491,
-  "primary_coverage_percent": 49.7,
-  "primary_eligible_new_total": 161,
-  "focus_total": 479,
+  "primary_taught_unique": 488,
+  "primary_unlearned_total": 489,
+  "primary_coverage_percent": 49.9,
+  "primary_eligible_new_total": 159,
+  "focus_total": 482,
   "focus_words": [
     {
       "word": "layak",
@@ -26,18 +26,6 @@
       "last_wrong": "2026-09-16T07:55:56.953Z",
       "last_review": "2026-10-03T14:11:33.463Z",
       "cn": "值得；合适；够资格"
-    },
-    {
-      "word": "nyinggung",
-      "score": 92,
-      "signals": [
-        "automation_fail",
-        "quick_wrong"
-      ],
-      "wrong_count": 3,
-      "last_wrong": "2026-09-28T14:43:57.046Z",
-      "last_review": "2026-10-03T14:10:29.045Z",
-      "cn": "提到；触及；说到让人不舒服的话题（口语）"
     },
     {
       "word": "menunjukkan",
@@ -110,6 +98,18 @@
       "last_wrong": "2026-09-25T15:02:05.313Z",
       "last_review": "2026-10-09T07:08:10.237Z",
       "cn": "逃跑；溜走"
+    },
+    {
+      "word": "menegaskan",
+      "score": 80,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 1,
+      "last_wrong": "2026-09-25T14:59:12.780Z",
+      "last_review": "2026-10-09T07:07:17.028Z",
+      "cn": "强调；明确说明；确认"
     }
   ],
   "definitions": {

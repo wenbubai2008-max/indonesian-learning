@@ -1219,27 +1219,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "ribet",
     "cn": "麻烦、复杂",
-    "en": "",
-    "root": "",
+    "en": "complicated; a hassle",
+    "root": "ribet",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-08-27 08:00",
+    "last_seen": "2026-10-12 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-27"
+      "2026-08-27",
+      "2026-10-12"
     ],
-    "example": "Nggak usah ribét.",
-    "example_cn": "不用搞那么麻烦。",
+    "example": "Latihannya nggak ribet, nggak perlu alat apa pun.",
+    "example_cn": "这个训练一点都不麻烦，什么器材都不需要。",
     "lesson_occurrences": [
-      "2026-08-27 08:00"
-    ]
+      "2026-08-27 08:00",
+      "2026-10-12 18:00"
+    ],
+    "root_cn": "麻烦、复杂"
   },
   {
     "word": "nyebelin",
@@ -3160,22 +3165,27 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-26 19:00",
-    "last_seen": "2026-08-26 19:00",
+    "last_seen": "2026-10-12 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-26"
+      "2026-08-26",
+      "2026-10-12"
     ],
-    "example": "Aku ada urusan mendadak.",
-    "example_cn": "我临时有点事。",
+    "example": "Kaki Dewi mendadak kram setelah jongkok terlalu lama.",
+    "example_cn": "Dewi 的腿在蹲得太久之后突然抽筋了。",
     "lesson_occurrences": [
-      "2026-08-26 19:00"
-    ]
+      "2026-08-26 19:00",
+      "2026-10-12 18:00"
+    ],
+    "root_cn": "突然、仓促"
   },
   {
     "word": "ada urusan",
@@ -3559,27 +3569,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "biar",
     "cn": "好让/为了",
-    "en": "",
-    "root": "",
+    "en": "so that; let",
+    "root": "biar",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-27 19:00",
-    "last_seen": "2026-08-27 19:00",
+    "last_seen": "2026-10-12 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-27"
+      "2026-08-27",
+      "2026-10-12"
     ],
-    "example": "Biar aku aja.",
-    "example_cn": "让我来就行。",
+    "example": "Pelan-pelan aja, biar kakinya nggak cedera.",
+    "example_cn": "慢慢来，免得腿受伤。",
     "lesson_occurrences": [
-      "2026-08-27 19:00"
-    ]
+      "2026-08-27 19:00",
+      "2026-10-12 18:00"
+    ],
+    "root_cn": "让、好让"
   },
   {
     "word": "tolong",
@@ -15563,23 +15578,27 @@ window.DAILY_VOCAB_DB = [
     "en": "corner; angle",
     "root": "sudut",
     "root_cn": "角落；角度",
-    "example": "Saya duduk di sudut ruangan yang lebih tenang.",
-    "example_cn": "我坐在房间里更安静的角落。",
+    "example": "Dewi menggeser meja ke sudut ruang tamu supaya tempatnya lebih luas.",
+    "example_cn": "Dewi 把桌子挪到客厅的角落，这样地方就更宽敞了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-10-12 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-12"
     ],
     "lesson_occurrences": [
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-10-12 18:00"
     ]
   },
   {
@@ -16126,23 +16145,27 @@ window.DAILY_VOCAB_DB = [
     "en": "cure; heal",
     "root": "sembuh",
     "root_cn": "痊愈；恢复",
-    "example": "Obat ini membantu menyembuhkan luka kecil.",
-    "example_cn": "这种药有助于治愈小伤口。",
+    "example": "Istirahat dan obat dari dokter bisa menyembuhkan flu dalam beberapa hari.",
+    "example_cn": "休息加上医生开的药，几天内就能治好感冒。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-01 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-12 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-12"
     ],
     "lesson_occurrences": [
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-10-12 18:00"
     ]
   },
   {
@@ -19946,23 +19969,26 @@ window.DAILY_VOCAB_DB = [
     "en": "movement; motion",
     "root": "gerak",
     "root_cn": "动、动作",
-    "example": "Ikuti gerakan instrukturnya pelan-pelan.",
-    "example_cn": "慢慢跟着教练的动作做。",
+    "example": "Gerakan senam hari ini mudah diikuti, tapi harus dilakukan dengan benar.",
+    "example_cn": "今天的健身操动作很容易跟着做，但必须做得正确。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-12 08:00",
-    "last_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-12"
     ],
     "lesson_occurrences": [
-      "2026-10-12 08:00"
+      "2026-10-12 08:00",
+      "2026-10-12 18:00"
     ]
   },
   {
@@ -19996,23 +20022,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to squat; crouch",
     "root": "jongkok",
     "root_cn": "蹲",
-    "example": "Dia jongkok untuk mengikat tali sepatunya.",
-    "example_cn": "他蹲下来系鞋带。",
+    "example": "Dewi jongkok dulu untuk mengikat tali sepatunya.",
+    "example_cn": "Dewi 先蹲下来系鞋带。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-12 08:00",
-    "last_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-12"
     ],
     "lesson_occurrences": [
-      "2026-10-12 08:00"
+      "2026-10-12 08:00",
+      "2026-10-12 18:00"
     ]
   },
   {
@@ -20163,6 +20192,107 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-12 08:00"
+    ]
+  },
+  {
+    "word": "menghitung",
+    "cn": "数；计算",
+    "en": "to count; to calculate",
+    "root": "hitung",
+    "root_cn": "数、算",
+    "example": "Rina menghitung setiap gerakan dengan suara lantang.",
+    "example_cn": "Rina 大声数着每一个动作。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 18:00",
+    "last_seen": "2026-10-12 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 18:00"
+    ]
+  },
+  {
+    "word": "lembut",
+    "cn": "轻柔的；柔软的；温和的",
+    "en": "soft; gentle",
+    "root": "lembut",
+    "root_cn": "轻柔、温和",
+    "example": "Gerakan yang lembut cocok untuk pemula.",
+    "example_cn": "轻柔的动作适合新手。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 18:00",
+    "last_seen": "2026-10-12 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 18:00"
+    ]
+  },
+  {
+    "word": "teratur",
+    "cn": "有规律的；有条理的",
+    "en": "regular; orderly",
+    "root": "atur",
+    "root_cn": "安排、整理",
+    "example": "Kalau mau tubuh sehat, kamu harus berolahraga secara teratur.",
+    "example_cn": "想要身体健康，你就得有规律地运动。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 18:00",
+    "last_seen": "2026-10-12 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 18:00"
+    ]
+  },
+  {
+    "word": "tantangan",
+    "cn": "挑战",
+    "en": "challenge",
+    "root": "tantang",
+    "root_cn": "挑战、向……挑战",
+    "example": "Dewi menerima tantangan Rina untuk berolahraga selama tiga puluh hari.",
+    "example_cn": "Dewi 接受了 Rina 的挑战，连续三十天运动。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 18:00",
+    "last_seen": "2026-10-12 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 18:00"
     ]
   }
 ];
