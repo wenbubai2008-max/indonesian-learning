@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-11T15:35:50.205Z",
+  "updated_at": "2026-10-12T01:49:50.228Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -4546,8 +4546,11 @@
     "mengetuk": {
       "word": "mengetuk",
       "status": "active",
-      "updated_at": "2026-10-09T07:53:55.067Z",
+      "updated_at": "2026-10-12T01:49:39.796Z",
       "display": "mengetuk",
+      "cn": "敲",
+      "root": "ketuk",
+      "root_cn": "敲；轻击",
       "last_review": "2026-10-09T07:53:55.040Z",
       "reasons": [
         "memory_dont"
@@ -25692,13 +25695,15 @@
     "lebat": {
       "word": "lebat",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:18.250Z",
+      "updated_at": "2026-10-12T01:48:38.535Z",
       "display": "lebat",
       "cn": "浓密",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-11",
+      "session": "19:00",
       "reasons": [
-        "bipa_secondary_fuzzy"
+        "bipa_secondary_fuzzy",
+        "manual_unknown"
       ],
       "wrong_count": 0,
       "right_streak": 0
