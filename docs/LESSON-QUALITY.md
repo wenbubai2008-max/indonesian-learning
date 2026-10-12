@@ -78,6 +78,11 @@
 - **复习词不必硬塞进阅读和对话**：只要在词卡、题目、主动输出或复盘里真实出现过即可。真实反例：“Saya nggak niat nyinggung, Bu, tapi lain kali jangan dikejar sendiri.” 能懂但很刻意（nyinggung 已在复习题里），更自然的是 “Maaf ya, Bu, bukan mau nyalahin, tapi lain kali jangan kejar pencurinya sendiri. Bahaya.”。写不自然就删掉。
 - 排序脚本 `avoid_in_text` 里的词不写进阅读、对话和例句（除非是本课核心词）；`natural_recurrence` 的词在自然的前提下带入，写不自然就不带。
 - 复盘重点放在 3 秒主动提取、易混词、薄弱词和真实表达，不是让学习者重读词卡。
+- **晚课自检与复盘分工（2026-10-12 用户点评，必须）**：`daily_test.self_check` 和 `review.steps` 不得出现同一个练习。真实反例：某节晚课的 4 条自检（印→中说意思、找想不起来的词、辨析 berjanji/janjian/perjanjian 和 memerlukan/perlu、用早课词各说一句）在复盘里几乎原样又出现了一遍，5 条复盘只有“复述阅读”是新的。
+  - **self_check = 诊断**：3–4 条简短的是/否问题，只用来找出哪些词还不熟（例如“不看中文，下面几个词里哪个我 3 秒内说不出意思？”“这几组易混词我分得清吗？”）。不要求造句、复述或写输出。
+  - **review.steps = 输出**：第一步固定为“只把自检里卡住的词，看中文说出印尼语，答不出的回看词卡再说一遍”（不要把全部核心词再列一遍）；其余步骤从易混词各造一句、用阅读场景做 30 秒复述、联系自己真实经历的表达中选，hard 词的辨析或典型搭配放在这里。
+  - 当天 08:00 早课词的回顾只放在 review.steps，不在 self_check 里重复。
+  - 写完后逐条对照：若某条复盘只是把某条自检换个说法（同一批词、同一种动作），删掉或改成输出任务。
 
 ## 8. 汇报里的两行（必须）
 
