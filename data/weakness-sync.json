@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-12T02:20:25.318Z",
+  "updated_at": "2026-10-12T02:21:18.538Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2778,19 +2778,19 @@
     "semacam": {
       "word": "semacam",
       "status": "active",
-      "updated_at": "2026-10-09T15:18:46.466Z",
+      "updated_at": "2026-10-12T02:20:38.086Z",
       "display": "semacam",
       "cn": "类似于；某种",
       "root": "macam",
       "root_cn": "种类；类型",
       "last_wrong": "2026-10-09T15:18:46.438Z",
-      "last_review": "2026-10-09T15:18:46.438Z",
+      "last_review": "2026-10-12T02:20:38.059Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "momen": {
       "word": "momen",
@@ -5958,19 +5958,19 @@
     "sial": {
       "word": "sial",
       "status": "active",
-      "updated_at": "2026-10-09T15:19:59.157Z",
+      "updated_at": "2026-10-12T02:20:40.090Z",
       "display": "sial",
       "cn": "倒霉；真不走运",
       "root": "sial",
       "root_cn": "倒霉；不走运",
       "last_wrong": "2026-10-09T15:19:59.129Z",
-      "last_review": "2026-10-09T15:19:59.129Z",
+      "last_review": "2026-10-12T02:20:40.067Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "membayangkan": {
       "word": "membayangkan",
@@ -6565,19 +6565,19 @@
     "pernyataan": {
       "word": "pernyataan",
       "status": "active",
-      "updated_at": "2026-10-09T15:16:24.461Z",
+      "updated_at": "2026-10-12T02:20:35.555Z",
       "display": "pernyataan",
       "cn": "声明；陈述",
       "root": "nyata",
       "root_cn": "真实；明确",
       "last_wrong": "2026-10-09T15:16:24.430Z",
-      "last_review": "2026-10-09T15:16:24.430Z",
+      "last_review": "2026-10-12T02:20:35.527Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "instan": {
       "word": "instan",
@@ -7279,19 +7279,19 @@
     "peduli": {
       "word": "peduli",
       "status": "active",
-      "updated_at": "2026-10-09T15:15:26.939Z",
+      "updated_at": "2026-10-12T02:20:31.145Z",
       "display": "peduli",
       "cn": "在意；关心；在乎",
       "root": "peduli",
       "root_cn": "在乎",
       "last_wrong": "2026-10-09T15:15:26.912Z",
-      "last_review": "2026-10-09T15:15:26.912Z",
+      "last_review": "2026-10-12T02:20:31.120Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "solusi": {
       "word": "solusi",
@@ -13867,19 +13867,19 @@
     "sudut": {
       "word": "sudut",
       "status": "active",
-      "updated_at": "2026-10-09T15:20:37.982Z",
+      "updated_at": "2026-10-12T02:20:46.915Z",
       "display": "sudut",
       "cn": "角落；角度",
       "root": "sudut",
       "root_cn": "角落；角度",
       "last_wrong": "2026-10-09T15:20:37.956Z",
-      "last_review": "2026-10-09T15:20:37.956Z",
+      "last_review": "2026-10-12T02:20:46.893Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "serupa": {
       "word": "serupa",
@@ -22210,19 +22210,19 @@
     "urus": {
       "word": "urus",
       "status": "active",
-      "updated_at": "2026-10-09T15:23:15.263Z",
+      "updated_at": "2026-10-12T02:20:51.609Z",
       "display": "urus",
       "cn": "处理；照料",
       "root": "urus",
       "root_cn": "处理；照料",
       "last_wrong": "2026-10-09T15:23:15.233Z",
-      "last_review": "2026-10-09T15:23:15.233Z",
+      "last_review": "2026-10-12T02:20:51.585Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "ngurus": {
       "word": "ngurus",
@@ -28559,19 +28559,18 @@
     "nyinggung": {
       "word": "nyinggung",
       "status": "active",
-      "updated_at": "2026-10-03T14:10:29.072Z",
+      "updated_at": "2026-10-12T02:21:01.362Z",
       "display": "nyinggung",
       "cn": "提到；触及；说到让人不舒服的话题（口语）",
       "root": "singgung",
       "root_cn": "触及；提到",
       "last_wrong": "2026-09-28T14:43:57.046Z",
-      "last_review": "2026-10-03T14:10:29.045Z",
+      "last_review": "2026-10-12T02:21:01.304Z",
       "reasons": [
-        "quick_wrong",
         "automation_fail"
       ],
       "wrong_count": 3,
-      "right_streak": 2
+      "right_streak": 3
     },
     "nangkep": {
       "word": "nangkep",
@@ -28650,35 +28649,32 @@
     "bakal": {
       "word": "bakal",
       "status": "active",
-      "updated_at": "2026-10-03T14:10:46.969Z",
+      "updated_at": "2026-10-12T02:21:04.720Z",
       "display": "bakal",
       "cn": "将会、要",
       "root": "bakal",
       "root_cn": "将会；预感会发生",
       "last_wrong": "2026-09-29T07:59:14.910Z",
-      "last_review": "2026-10-03T14:10:46.942Z",
+      "last_review": "2026-10-12T02:21:04.664Z",
       "reasons": [
-        "quick_wrong",
         "memory_fuzzy"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "ngerjain": {
       "word": "ngerjain",
       "status": "active",
-      "updated_at": "2026-10-03T14:10:52.390Z",
+      "updated_at": "2026-10-12T02:21:08.282Z",
       "display": "ngerjain",
       "cn": "做；处理某项工作（口语）",
       "root": "kerja",
       "root_cn": "工作；做",
       "last_wrong": "2026-09-29T10:27:13.120Z",
-      "last_review": "2026-10-03T14:10:52.361Z",
-      "reasons": [
-        "quick_wrong"
-      ],
+      "last_review": "2026-10-12T02:21:08.228Z",
+      "reasons": [],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "kepake": {
       "word": "kepake",
@@ -29171,18 +29167,18 @@
     "ganjel": {
       "word": "ganjel",
       "status": "active",
-      "updated_at": "2026-10-09T15:14:55.405Z",
+      "updated_at": "2026-10-12T02:20:25.675Z",
       "display": "ganjel",
       "cn": "心里有点卡；觉得哪里不对劲；有件事没说开（口语）",
       "root": "ganjal",
       "root_cn": "垫住；卡住；妨碍",
       "last_wrong": "2026-10-09T15:14:55.374Z",
-      "last_review": "2026-10-09T15:14:55.374Z",
+      "last_review": "2026-10-12T02:20:25.648Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "ngingetin": {
       "word": "ngingetin",
