@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-12T02:21:18.538Z",
+  "updated_at": "2026-10-12T03:59:45.592Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -29310,6 +29310,51 @@
       "cn": "宁静的",
       "source": "每日学习阅读",
       "source_date": "2026-10-11",
+      "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "senam": {
+      "word": "senam",
+      "status": "active",
+      "updated_at": "2026-10-12T03:57:00.101Z",
+      "display": "senam",
+      "cn": "锻炼",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-12",
+      "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pinggir": {
+      "word": "pinggir",
+      "status": "active",
+      "updated_at": "2026-10-12T03:57:40.474Z",
+      "display": "pinggir",
+      "cn": "边缘",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-12",
+      "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "peserta": {
+      "word": "peserta",
+      "status": "active",
+      "updated_at": "2026-10-12T03:59:35.149Z",
+      "display": "peserta",
+      "cn": "参与者",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-12",
       "session": "08:00",
       "reasons": [
         "manual_unknown"
