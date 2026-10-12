@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-12",
+  "session": "am",
+  "time": "08:00",
+  "day": 52,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Kelas Senam Gratis di Taman Kota",
+  "new_words": [
+    "komedi",
+    "gerakan",
+    "tahan",
+    "jongkok",
+    "sejuk",
+    "melelahkan",
+    "mengesankan",
+    "mencegah",
+    "menyarankan",
+    "menyala"
+  ],
+  "vocab": [
+    {
+      "word": "komedi",
+      "display": "komedi",
+      "audio_text": "komedi",
+      "cn": "喜剧；喜剧作品",
+      "en": "comedy",
+      "root": "komedi",
+      "root_cn": "喜剧（外来词，本身即词根）",
+      "formation": "komedi 本身是词根，名词，指喜剧这一体裁或作品。常见搭配：film komedi（喜剧片）、acara komedi（喜剧节目）、komedi situasi（情景喜剧）。",
+      "example": "Malam ini kami mau nonton film komedi di bioskop.",
+      "example_cn": "今晚我们想去电影院看喜剧片。",
+      "synonym_note": "komedi 是名词（体裁/作品），形容“好笑”要用 lucu，不说 sangat komedi；口语里“搞笑、逗人笑”常说 lawak，pelawak 是搞笑艺人。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gerakan",
+      "display": "gerakan",
+      "audio_text": "gerakan",
+      "cn": "动作；运动（行动）",
+      "en": "movement; motion",
+      "root": "gerak",
+      "root_cn": "动、动作",
+      "formation": "gerakan = gerak + -an，名词，指具体的动作或集体行动。常见搭配：gerakan senam（健身操动作）、gerakan tangan（手部动作）、gerakan sosial（社会运动）。",
+      "example": "Ikuti gerakan instrukturnya pelan-pelan.",
+      "example_cn": "慢慢跟着教练的动作做。",
+      "synonym_note": "gerakan 是具体的动作或一场运动；gerak 更基础、较抽象（gerak cepat＝迅速行动）；bergerak 是动词“动起来、移动”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tahan",
+      "display": "tahan",
+      "audio_text": "tahan",
+      "cn": "保持住；忍住；耐（用/受）",
+      "en": "hold; endure; resistant",
+      "root": "tahan",
+      "root_cn": "保持、忍耐、耐受",
+      "formation": "tahan 本身是词根。做口令/祈使句时常单用：Tahan satu menit!（保持一分钟！）；常见搭配：tahan napas（屏住呼吸）、tahan lapar（忍饿）、tahan lama（耐用、持久）、tahan air（防水）。",
+      "example": "Coba tahan napas sebentar.",
+      "example_cn": "试着屏住呼吸一会儿。",
+      "synonym_note": "tahan 可直接用于口令和固定搭配；menahan 是及物动词“挡住、忍住”（menahan tangis）；bertahan 是不及物“撑住、坚持下来”（bertahan di kota ini）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "jongkok",
+      "display": "jongkok",
+      "audio_text": "jongkok",
+      "cn": "蹲；蹲下",
+      "en": "to squat; crouch",
+      "root": "jongkok",
+      "root_cn": "蹲",
+      "formation": "jongkok 本身是词根，不及物动词，也可写成 berjongkok。常见搭配：jongkok di lantai（蹲在地上）、gerakan jongkok（深蹲动作）、WC jongkok（蹲式厕所）。",
+      "example": "Dia jongkok untuk mengikat tali sepatunya.",
+      "example_cn": "他蹲下来系鞋带。",
+      "synonym_note": "jongkok＝蹲（膝盖弯曲、屁股靠近脚跟，不着地）；duduk＝坐；berlutut＝跪（膝盖着地）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sejuk",
+      "display": "sejuk",
+      "audio_text": "sejuk",
+      "cn": "凉爽的（让人舒服的凉）",
+      "en": "cool; refreshingly cool",
+      "root": "sejuk",
+      "root_cn": "凉爽",
+      "formation": "sejuk 本身是词根，形容词。常见搭配：udara sejuk（凉爽的空气）、angin sejuk（凉风）、daerah pegunungan yang sejuk（凉爽的山区）。",
+      "example": "Di daerah pegunungan, udaranya sejuk hampir setiap hari.",
+      "example_cn": "在山区，几乎每天空气都很凉爽。",
+      "synonym_note": "sejuk 是舒服的凉，带正面感觉；dingin 是冷，可能不舒服（air dingin、hujan dingin）；segar 强调清新提神（udara pagi yang segar）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "melelahkan",
+      "display": "melelahkan",
+      "audio_text": "melelahkan",
+      "cn": "令人疲惫的；使人累",
+      "en": "tiring; exhausting",
+      "root": "lelah",
+      "root_cn": "累、疲劳",
+      "formation": "melelahkan = meN- + lelah + -kan，“使人累”，常作形容词描述事情本身。常见搭配：perjalanan yang melelahkan、hari yang melelahkan。",
+      "example": "Perjalanan ke kantor lewat macet itu melelahkan.",
+      "example_cn": "堵车去公司的路程让人精疲力尽。",
+      "synonym_note": "melelahkan 描述让人累的事情；lelah / capek（口语）是人自己的感受（Saya lelah）；kelelahan 是“累过头、累垮了”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengesankan",
+      "display": "mengesankan",
+      "audio_text": "mengesankan",
+      "cn": "令人印象深刻的",
+      "en": "impressive; leaving a strong impression",
+      "root": "kesan",
+      "root_cn": "印象",
+      "formation": "mengesankan = meN- + kesan + -kan（k 脱落），意为“给人留下深刻印象”。常见搭配：penampilan yang mengesankan、pengalaman yang mengesankan；相关词：kesan pertama（第一印象）。",
+      "example": "Presentasi Dina sangat mengesankan, semua orang bertepuk tangan.",
+      "example_cn": "蒂娜的演示给人印象很深，大家都鼓掌了。",
+      "synonym_note": "mengesankan 说的是事物令人印象深刻；terkesan 说的是人感到印象深刻（Saya terkesan）；mengagumkan 更强，有“令人钦佩”的意味；口语常说 keren。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mencegah",
+      "display": "mencegah",
+      "audio_text": "mencegah",
+      "cn": "预防；阻止（使不发生）",
+      "en": "to prevent",
+      "root": "cegah",
+      "root_cn": "预防、阻止",
+      "formation": "mencegah = meN- + cegah（c 前加 n，写作 mencegah）。常见搭配：mencegah penyakit（预防疾病）、mencegah kecelakaan（防止事故）、mencegah macet；名词形式 pencegahan（预防）。",
+      "example": "Cuci tangan sebelum makan bisa mencegah penyakit perut.",
+      "example_cn": "饭前洗手可以预防肠胃病。",
+      "synonym_note": "mencegah＝事前预防、让事情不发生；melarang＝禁止（下命令不许做）；menghalangi＝阻挠（别人正在做的事）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyarankan",
+      "display": "menyarankan",
+      "audio_text": "menyarankan",
+      "cn": "建议",
+      "en": "to suggest; recommend",
+      "root": "saran",
+      "root_cn": "建议",
+      "formation": "menyarankan = meN- + saran + -kan（s 脱落）。常见用法：menyarankan + 人 + 动词 / menyarankan agar…；名词 saran（建议）。",
+      "example": "Dokter menyarankan saya banyak minum air putih.",
+      "example_cn": "医生建议我多喝白开水。",
+      "synonym_note": "menyarankan 是中性的“建议”；mengusulkan 是“提议、提出方案”（多用于会议）；menganjurkan 更正式，有“倡导、劝勉”的意味。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyala",
+      "display": "menyala",
+      "audio_text": "menyala",
+      "cn": "亮着；燃烧；（机器）启动",
+      "en": "to be lit; to blaze; to start up",
+      "root": "nyala",
+      "root_cn": "火焰、亮",
+      "formation": "menyala = meN- + nyala，不及物。常见搭配：lampu menyala（灯亮着）、api menyala（火在烧）、mesin tidak mau menyala（发动不了）；及物形式 menyalakan（打开、点燃）。",
+      "example": "Lampu di kamar masih menyala, padahal dia sudah tidur.",
+      "example_cn": "房间的灯还亮着，可他已经睡了。",
+      "synonym_note": "menyala 是灯、火自己“亮着/烧着”（不及物）；menyalakan 是“把它打开、点燃”（及物）；口语里灯亮着也说 lampunya hidup。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "puas",
+    "menanggung",
+    "ada urusan",
+    "menunggu",
+    "tersedia"
+  ],
+  "sentences": [
+    {
+      "text": "Waktu Rina sampai di taman, lampu lapangan masih menyala.",
+      "cn": "莉娜到公园的时候，场地的灯还亮着。"
+    },
+    {
+      "text": "Instruktur menyarankan kami pemanasan dulu untuk mencegah kaki sakit.",
+      "cn": "教练建议我们先热身，以防腿疼。"
+    },
+    {
+      "text": "Gerakan jongkok ini kelihatannya gampang, tapi kalau harus tahan satu menit, rasanya melelahkan.",
+      "cn": "这个深蹲动作看起来简单，但要保持一分钟就觉得很累。"
+    },
+    {
+      "text": "Karena udaranya sejuk, Rina betah berlatih di luar.",
+      "cn": "因为空气凉爽，莉娜很愿意待在室外练习。"
+    },
+    {
+      "text": "Film komedi yang Rina tonton siang itu cukup mengesankan, jadi dia ingin menontonnya lagi.",
+      "cn": "莉娜那天中午看的喜剧片相当令人印象深刻，所以她想再看一遍。"
+    }
+  ],
+  "reading": {
+    "text": "Hari Minggu pagi, Rina ikut kelas senam di taman kota. Pemerintah kota menanggung biayanya, jadi kelas ini gratis. Udaranya sejuk, dan air minum tersedia di pinggir lapangan. Dewi tidak bisa datang karena ada urusan keluarga, jadi Rina menunggu instruktur sendirian. Instruktur menyarankan semua peserta pemanasan dulu untuk mencegah kaki sakit. Gerakan jongkok paling melelahkan. \"Tahan satu menit!\" kata instruktur. Kaki Rina sampai sakit, tapi seorang ibu berumur tujuh puluh tahun bisa melakukannya dengan mudah. Semangatnya mengesankan sekali. Setelah kelas selesai, Rina puas dan badannya terasa segar. Siangnya, dia menelepon Dewi, \"Minggu depan kamu harus ikut!\" Setelah itu, dia menonton film komedi sambil tertawa.",
+    "cn": "星期天早上，莉娜参加了市区公园里的健身操课。市政府承担了费用，所以这堂课是免费的。空气凉爽，场地边上还备有饮用水。黛薇因为家里有事不能来，所以莉娜一个人等教练。教练建议所有学员先热身，以防腿疼。深蹲动作最累人。“保持一分钟！”教练说。莉娜的腿都酸痛了，可一位七十岁的老奶奶却轻轻松松就做到了。她的精神头真让人印象深刻。下课后，莉娜很满足，身体觉得清爽。中午她给黛薇打电话：“下周你一定要来！”之后，她一边看喜剧片一边笑。"
+  },
+  "quiz": [
+    {
+      "question": "Di pinggir lapangan, air minum ___ untuk semua peserta.",
+      "options": [
+        "menanggung",
+        "tersedia",
+        "menunggu",
+        "puas"
+      ],
+      "answer_index": 1,
+      "answer": "tersedia",
+      "explain": "tersedia = 备有、可以取用，air minum tersedia 是自然搭配。menanggung = 承担（费用、责任）；menunggu = 等待；puas = 满意，都不能用来说“水备有”。"
+    },
+    {
+      "question": "Cuci tangan sebelum makan bisa ___ penyakit perut.",
+      "options": [
+        "menyembuhkan",
+        "melarang",
+        "menahan",
+        "mencegah"
+      ],
+      "answer_index": 3,
+      "answer": "mencegah",
+      "explain": "洗手是事前预防，所以用 mencegah penyakit。menyembuhkan = 治好已有的病；melarang = 禁止（下令不许）；menahan = 挡住、忍住，都不符合语境。"
+    },
+    {
+      "question": "Bekerja dua belas jam tanpa istirahat itu sangat ___.",
+      "options": [
+        "lelah",
+        "kelelahan",
+        "melelahkan",
+        "dilelahkan"
+      ],
+      "answer_index": 2,
+      "answer": "melelahkan",
+      "explain": "主语是“工作十二小时”这件事，说它让人累，用 melelahkan。lelah 和 kelelahan 描述人的状态（Saya lelah / Dia kelelahan），不能直接形容一件事；dilelahkan 不是常用说法。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语向朋友介绍你最近参加的一次运动或课程，并说说感受（要用到 menyarankan 和 gerakan，也可以加上 melelahkan 或 puas）。",
+    "reference_answer": "Minggu lalu saya ikut kelas yoga untuk pertama kalinya. Instrukturnya menyarankan kami menahan setiap gerakan selama satu menit. Memang melelahkan, tapi saya puas.",
+    "reference_cn": "上周我第一次上了瑜伽课。教练建议我们每个动作保持一分钟。确实很累，不过我很满足。"
+  },
+  "review": [
+    "3秒主动提取：不看词卡，说出这 10 个词的意思——komedi、gerakan、tahan、jongkok、sejuk、melelahkan、mengesankan、mencegah、menyarankan、menyala；再各造半句：“Tahan satu menit!”（保持一分钟！）、“Lampunya masih menyala.”（灯还亮着。）",
+    "易混词与搭配：sejuk（舒服的凉）vs dingin（冷）；jongkok（蹲）vs berlutut（跪）；mencegah（事前预防）vs melarang（禁止）；melelahkan（事情累人）vs lelah / capek（人觉得累）；menyarankan（建议）vs mengusulkan（提议方案）。",
+    "重点复习词应用：从 puas、menanggung、ada urusan、menunggu、tersedia 里选两个各说一句，例如 “Maaf, hari ini saya ada urusan, jadi nggak bisa ikut.”（抱歉，今天我有事，来不了。）、“Perusahaan menanggung biaya pelatihan ini.”（公司承担这次培训的费用。）"
+  ]
+}
