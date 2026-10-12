@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-10-12T10:44:16.208Z",
-  "source_updated_at": "2026-10-12T03:59:45.592Z",
+  "generated_at": "2026-10-12T20:14:21.425Z",
+  "source_updated_at": "2026-10-12T12:50:21.289Z",
   "taught_total": 759,
   "confirmed_mastered": 182,
   "needs_reinforcement": 488,
@@ -12,21 +12,8 @@
   "primary_unlearned_total": 489,
   "primary_coverage_percent": 49.9,
   "primary_eligible_new_total": 159,
-  "focus_total": 482,
+  "focus_total": 476,
   "focus_words": [
-    {
-      "word": "layak",
-      "score": 108,
-      "signals": [
-        "automation_fail",
-        "quick_wrong",
-        "fuzzy"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-16T07:55:56.953Z",
-      "last_review": "2026-10-03T14:11:33.463Z",
-      "cn": "值得；合适；够资格"
-    },
     {
       "word": "menunjukkan",
       "score": 86,
@@ -110,6 +97,18 @@
       "last_wrong": "2026-09-25T14:59:12.780Z",
       "last_review": "2026-10-09T07:07:17.028Z",
       "cn": "强调；明确说明；确认"
+    },
+    {
+      "word": "memanggil",
+      "score": 78,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 0,
+      "last_wrong": "",
+      "last_review": "2026-10-09T07:09:29.993Z",
+      "cn": "呼唤 / 叫"
     }
   ],
   "definitions": {
