@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-12T03:59:45.592Z",
+  "updated_at": "2026-10-12T12:24:27.285Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -7407,9 +7407,11 @@
     "mengajak": {
       "word": "mengajak",
       "status": "active",
-      "updated_at": "2026-10-09T07:52:38.481Z",
+      "updated_at": "2026-10-12T12:22:45.789Z",
       "display": "mengajak",
-      "cn": "邀请",
+      "cn": "邀请；约；招呼（一起做某事）",
+      "root": "ajak",
+      "root_cn": "邀请；招呼",
       "last_review": "2026-10-09T07:52:38.453Z",
       "reasons": [
         "memory_dont"
@@ -9061,8 +9063,9 @@
     "suara": {
       "word": "suara",
       "status": "mastered",
-      "updated_at": "2026-09-12T14:13:50.917Z",
+      "updated_at": "2026-10-12T12:24:16.805Z",
       "display": "suara",
+      "cn": "声音",
       "last_review": "2026-09-12T14:13:50.911Z",
       "last_mastered": "2026-09-12T14:13:50.911Z",
       "reasons": [],
