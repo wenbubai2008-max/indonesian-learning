@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-12T01:49:50.228Z",
+  "updated_at": "2026-10-12T02:20:25.318Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2290,19 +2290,19 @@
     "menatap": {
       "word": "menatap",
       "status": "active",
-      "updated_at": "2026-10-09T07:52:12.850Z",
+      "updated_at": "2026-10-12T02:19:17.598Z",
       "display": "menatap",
       "cn": "凝视；注视",
       "root": "tatap",
       "root_cn": "凝视",
       "last_wrong": "2026-10-09T07:52:12.821Z",
-      "last_review": "2026-10-09T07:52:12.821Z",
+      "last_review": "2026-10-12T02:19:17.574Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "luas": {
       "word": "luas",
@@ -3566,19 +3566,19 @@
     "dengan demikian": {
       "word": "dengan demikian",
       "status": "active",
-      "updated_at": "2026-10-09T07:10:06.883Z",
+      "updated_at": "2026-10-12T02:18:54.651Z",
       "display": "dengan demikian",
       "cn": "因此；这样一来",
       "root": "demikian",
       "root_cn": "如此；这样",
       "last_wrong": "2026-10-09T07:10:06.857Z",
-      "last_review": "2026-10-09T07:10:06.857Z",
+      "last_review": "2026-10-12T02:18:54.626Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "detik": {
       "word": "detik",
@@ -4151,19 +4151,19 @@
     "membela": {
       "word": "membela",
       "status": "active",
-      "updated_at": "2026-10-09T07:33:33.583Z",
+      "updated_at": "2026-10-12T02:19:03.314Z",
       "display": "membela",
       "cn": "维护；为……辩护；替……说话",
       "root": "bela",
       "root_cn": "保卫；袒护",
       "last_wrong": "2026-10-09T07:33:33.554Z",
-      "last_review": "2026-10-09T07:33:33.554Z",
+      "last_review": "2026-10-12T02:19:03.289Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "memberi peringatan": {
       "word": "memberi peringatan",
@@ -4889,19 +4889,19 @@
     "menyembuhkan": {
       "word": "menyembuhkan",
       "status": "active",
-      "updated_at": "2026-10-09T07:56:09.260Z",
+      "updated_at": "2026-10-12T02:19:51.666Z",
       "display": "menyembuhkan",
       "cn": "治愈；使恢复",
       "root": "sembuh",
       "root_cn": "痊愈；恢复",
       "last_wrong": "2026-10-09T07:56:09.232Z",
-      "last_review": "2026-10-09T07:56:09.232Z",
+      "last_review": "2026-10-12T02:19:51.639Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menyembunyikan": {
       "word": "menyembunyikan",
@@ -6043,19 +6043,19 @@
     "menanggung": {
       "word": "menanggung",
       "status": "active",
-      "updated_at": "2026-10-09T07:52:03.320Z",
+      "updated_at": "2026-10-12T02:19:12.154Z",
       "display": "menanggung",
       "cn": "承担；承受（责任、费用、风险）",
       "root": "tanggung",
       "root_cn": "承担；负责",
       "last_wrong": "2026-10-09T07:52:03.289Z",
-      "last_review": "2026-10-09T07:52:03.289Z",
+      "last_review": "2026-10-12T02:19:12.125Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "melompat": {
       "word": "melompat",
@@ -7711,19 +7711,19 @@
     "puas": {
       "word": "puas",
       "status": "active",
-      "updated_at": "2026-10-09T07:08:26.911Z",
+      "updated_at": "2026-10-12T02:18:51.504Z",
       "display": "puas",
       "cn": "满意的",
       "root": "puas",
       "root_cn": "满意",
       "last_wrong": "2026-10-09T07:08:26.883Z",
-      "last_review": "2026-10-09T07:08:26.883Z",
+      "last_review": "2026-10-12T02:18:51.476Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menyediakan": {
       "word": "menyediakan",
@@ -28906,17 +28906,17 @@
     "menyampaikan": {
       "word": "menyampaikan",
       "status": "active",
-      "updated_at": "2026-10-09T07:56:00.252Z",
+      "updated_at": "2026-10-12T02:19:43.210Z",
       "display": "menyampaikan",
       "cn": "传达；表达",
       "last_wrong": "2026-10-09T07:56:00.224Z",
-      "last_review": "2026-10-09T07:56:00.224Z",
+      "last_review": "2026-10-12T02:19:43.180Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "mengingatkan": {
       "word": "mengingatkan",
@@ -29250,46 +29250,46 @@
     "nanti dulu": {
       "word": "nanti dulu",
       "status": "active",
-      "updated_at": "2026-10-09T07:57:47.198Z",
+      "updated_at": "2026-10-12T02:19:57.831Z",
       "display": "nanti dulu",
       "cn": "先等等",
       "last_wrong": "2026-10-09T07:57:47.170Z",
-      "last_review": "2026-10-09T07:57:47.170Z",
+      "last_review": "2026-10-12T02:19:57.805Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nggak jadi": {
       "word": "nggak jadi",
       "status": "active",
-      "updated_at": "2026-10-09T07:58:20.830Z",
+      "updated_at": "2026-10-12T02:20:10.425Z",
       "display": "nggak jadi",
       "cn": "不去了/取消了",
       "last_wrong": "2026-10-09T07:58:20.802Z",
-      "last_review": "2026-10-09T07:58:20.802Z",
+      "last_review": "2026-10-12T02:20:10.386Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nombok": {
       "word": "nombok",
       "status": "active",
-      "updated_at": "2026-10-09T07:59:15.690Z",
+      "updated_at": "2026-10-12T02:20:15.117Z",
       "display": "nombok",
       "cn": "自己垫钱；补差额（口语）",
       "root": "tombok",
       "root_cn": "补上差额；贴补",
       "last_wrong": "2026-10-09T07:59:15.663Z",
-      "last_review": "2026-10-09T07:59:15.663Z",
+      "last_review": "2026-10-12T02:20:15.093Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "curiga": {
       "word": "curiga",
