@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261011-menjadi-pendengar-yang-baik","date":"2026-10-11","title":"Menjadi Pendengar, Bantuan Sederhana untuk Kesehatan Mental","title_cn":"做一个倾听者：对心理健康最简单的帮助","path":"data/extensive-reading-history/2026-10-11.js"},
 {"id":"er-20261010-tiga-rute-mikrotrans-berubah","date":"2026-10-10","title":"Tiga Rute Mikrotrans Berubah Mulai 17 Oktober","title_cn":"三条 Mikrotrans 线路 10 月 17 日起调整","path":"data/extensive-reading-history/2026-10-10.js"},
 {"id":"er-20261009-harga-cabai-naik-lagi","date":"2026-10-09","title":"Harga Cabai Naik Lagi, Saatnya Belanja Lebih Hemat","title_cn":"辣椒价格又涨了，买菜该更省一点了","path":"data/extensive-reading-history/2026-10-09.js"},
 {"id":"er-20261008-bank-sampah-malaka-sari","date":"2026-10-08","title":"Dari Bank Sampah RW 02, Malaka Sari Ikut Lomba Kelurahan","title_cn":"从 RW 02 的垃圾银行出发，Malaka Sari 参加社区评比","path":"data/extensive-reading-history/2026-10-08.js"},
