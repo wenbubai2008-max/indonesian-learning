@@ -790,9 +790,9 @@ window.DAILY_VOCAB_DB = [
       "历史记录不完整",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-23 19:00",
-    "last_seen": "2026-08-26 08:00",
+    "last_seen": "2026-10-12 08:00",
     "sessions": [
       "19:00",
       "08:00"
@@ -800,14 +800,16 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-08-23",
       "2026-08-25",
-      "2026-08-26"
+      "2026-08-26",
+      "2026-10-12"
     ],
     "example": "Saya masih menunggu jawaban.",
     "example_cn": "我还在等回复。",
     "lesson_occurrences": [
       "2026-08-23 19:00",
       "2026-08-25 19:00",
-      "2026-08-26 08:00"
+      "2026-08-26 08:00",
+      "2026-10-12 08:00"
     ]
   },
   {
@@ -1033,17 +1035,19 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "历史记录不完整"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-26 08:00",
-    "last_seen": "2026-08-26 08:00",
+    "last_seen": "2026-10-12 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-26"
+      "2026-08-26",
+      "2026-10-12"
     ],
     "lesson_occurrences": [
-      "2026-08-26 08:00"
+      "2026-08-26 08:00",
+      "2026-10-12 08:00"
     ]
   },
   {
@@ -3181,21 +3185,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-26 19:00",
-    "last_seen": "2026-08-26 19:00",
+    "last_seen": "2026-10-12 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-26"
+      "2026-08-26",
+      "2026-10-12"
     ],
     "example": "Aku ada urusan mendadak.",
     "example_cn": "我临时有点事。",
     "lesson_occurrences": [
-      "2026-08-26 19:00"
+      "2026-08-26 19:00",
+      "2026-10-12 08:00"
     ]
   },
   {
@@ -13423,17 +13431,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-22 08:00",
-    "last_seen": "2026-09-22 08:00",
+    "last_seen": "2026-10-12 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-22"
+      "2026-09-22",
+      "2026-10-12"
     ],
     "lesson_occurrences": [
-      "2026-09-22 08:00"
+      "2026-09-22 08:00",
+      "2026-10-12 08:00"
     ]
   },
   {
@@ -15450,19 +15460,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "公司会承担额外运费。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-29 18:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-10-12 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-12"
     ],
     "lesson_occurrences": [
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-10-12 08:00"
     ]
   },
   {
@@ -19899,6 +19913,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-11 18:00"
+    ]
+  },
+  {
+    "word": "komedi",
+    "cn": "喜剧；喜剧作品",
+    "en": "comedy",
+    "root": "komedi",
+    "root_cn": "喜剧（外来词，本身即词根）",
+    "example": "Malam ini kami mau nonton film komedi di bioskop.",
+    "example_cn": "今晚我们想去电影院看喜剧片。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 08:00"
+    ]
+  },
+  {
+    "word": "gerakan",
+    "cn": "动作；运动（行动）",
+    "en": "movement; motion",
+    "root": "gerak",
+    "root_cn": "动、动作",
+    "example": "Ikuti gerakan instrukturnya pelan-pelan.",
+    "example_cn": "慢慢跟着教练的动作做。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 08:00"
+    ]
+  },
+  {
+    "word": "tahan",
+    "cn": "保持住；忍住；耐（用/受）",
+    "en": "hold; endure; resistant",
+    "root": "tahan",
+    "root_cn": "保持、忍耐、耐受",
+    "example": "Coba tahan napas sebentar.",
+    "example_cn": "试着屏住呼吸一会儿。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 08:00"
+    ]
+  },
+  {
+    "word": "jongkok",
+    "cn": "蹲；蹲下",
+    "en": "to squat; crouch",
+    "root": "jongkok",
+    "root_cn": "蹲",
+    "example": "Dia jongkok untuk mengikat tali sepatunya.",
+    "example_cn": "他蹲下来系鞋带。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 08:00"
+    ]
+  },
+  {
+    "word": "sejuk",
+    "cn": "凉爽的（让人舒服的凉）",
+    "en": "cool; refreshingly cool",
+    "root": "sejuk",
+    "root_cn": "凉爽",
+    "example": "Di daerah pegunungan, udaranya sejuk hampir setiap hari.",
+    "example_cn": "在山区，几乎每天空气都很凉爽。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 08:00"
+    ]
+  },
+  {
+    "word": "melelahkan",
+    "cn": "令人疲惫的；使人累",
+    "en": "tiring; exhausting",
+    "root": "lelah",
+    "root_cn": "累、疲劳",
+    "example": "Perjalanan ke kantor lewat macet itu melelahkan.",
+    "example_cn": "堵车去公司的路程让人精疲力尽。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 08:00"
+    ]
+  },
+  {
+    "word": "mengesankan",
+    "cn": "令人印象深刻的",
+    "en": "impressive; leaving a strong impression",
+    "root": "kesan",
+    "root_cn": "印象",
+    "example": "Presentasi Dina sangat mengesankan, semua orang bertepuk tangan.",
+    "example_cn": "蒂娜的演示给人印象很深，大家都鼓掌了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 08:00"
+    ]
+  },
+  {
+    "word": "mencegah",
+    "cn": "预防；阻止（使不发生）",
+    "en": "to prevent",
+    "root": "cegah",
+    "root_cn": "预防、阻止",
+    "example": "Cuci tangan sebelum makan bisa mencegah penyakit perut.",
+    "example_cn": "饭前洗手可以预防肠胃病。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 08:00"
+    ]
+  },
+  {
+    "word": "menyarankan",
+    "cn": "建议",
+    "en": "to suggest; recommend",
+    "root": "saran",
+    "root_cn": "建议",
+    "example": "Dokter menyarankan saya banyak minum air putih.",
+    "example_cn": "医生建议我多喝白开水。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 08:00"
+    ]
+  },
+  {
+    "word": "menyala",
+    "cn": "亮着；燃烧；（机器）启动",
+    "en": "to be lit; to blaze; to start up",
+    "root": "nyala",
+    "root_cn": "火焰、亮",
+    "example": "Lampu di kamar masih menyala, padahal dia sudah tidur.",
+    "example_cn": "房间的灯还亮着，可他已经睡了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-12"
+    ],
+    "lesson_occurrences": [
+      "2026-10-12 08:00"
     ]
   }
 ];

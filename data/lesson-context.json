@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-12",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 52
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-11T10:43:46.190Z",
-    "lesson_watermark": "2026-10-11 18:00",
-    "index_updated": "2026-10-11",
-    "runtime_hash": "f012a862e0b58cf79d881a9f99fe50880e203ccc489c80ecf19c7c096fd64dcd",
-    "index_hash": "e5a7fe54f32cff6264130b52db23d0e5b9e82117904955f421007b2e90aaaf53",
+    "runtime_generated_at": "2026-10-12T00:28:02.146Z",
+    "lesson_watermark": "2026-10-12 08:00",
+    "index_updated": "2026-10-12",
+    "runtime_hash": "b311118c68deacb09d6844eab53ed413b4b11602fbc59f507dd28bee0e634e22",
+    "index_hash": "1fd03565171a4d509cb63afff933531b3e7d43c530a4465e5a0ff43bfce8354a",
     "rules_hash": "d406904ea30ad06dfae711a64f1e979c1262ddd8401d79e7b17d4b3250ea5a06"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "komedi",
-        "喜剧"
-      ],
-      [
-        "gerakan",
-        "动作"
-      ],
-      [
-        "tahan",
-        "保持/憋住"
-      ],
-      [
-        "jongkok",
-        "蹲下"
-      ],
-      [
-        "sejuk",
-        "凉爽"
-      ],
-      [
-        "melelahkan",
-        "令人疲惫"
-      ],
-      [
-        "mengesankan",
-        "令人印象深刻"
-      ],
-      [
-        "mencegah",
-        "防止；预防"
-      ],
-      [
-        "menyarankan",
-        "建议"
-      ],
-      [
-        "menyala",
-        "亮着；启动"
-      ],
       [
         "kemudian",
         "然后；之后"
@@ -1862,26 +1822,6 @@
         "切；剪；扣除"
       ],
       [
-        "menunggu",
-        3,
-        0,
-        "",
-        "2026-10-08T09:07:51.555Z",
-        "等待",
-        "tunggu",
-        ""
-      ],
-      [
-        "tersedia",
-        3,
-        0,
-        "",
-        "2026-10-09T07:09:47.368Z",
-        "可用；有现货",
-        "sedia",
-        ""
-      ],
-      [
         "ribet",
         2,
         0,
@@ -2262,14 +2202,24 @@
         "困难；费劲"
       ],
       [
-        "ada urusan",
-        5,
+        "yakin",
+        3,
         0,
         "",
+        "2026-10-08T09:02:37.464Z",
+        "确信；确定；有把握",
+        "yakin",
+        "确信；相信"
+      ],
+      [
+        "anggota",
+        2,
+        0,
         "",
-        "有事要处理",
-        "",
-        ""
+        "2026-10-09T07:09:42.597Z",
+        "成员；会员",
+        "anggota",
+        "成员；会员"
       ],
       [
         "mendadak",
@@ -2360,6 +2310,116 @@
         "经历、遭遇",
         "alami",
         ""
+      ],
+      [
+        "nganter",
+        5,
+        0,
+        "",
+        "",
+        "送某人去；送到",
+        "antar",
+        ""
+      ],
+      [
+        "komedi",
+        2,
+        0,
+        "",
+        "",
+        "喜剧；喜剧作品",
+        "komedi",
+        "喜剧（外来词，本身即词根）"
+      ],
+      [
+        "gerakan",
+        2,
+        0,
+        "",
+        "",
+        "动作；运动（行动）",
+        "gerak",
+        "动、动作"
+      ],
+      [
+        "tahan",
+        2,
+        0,
+        "",
+        "",
+        "保持住；忍住；耐（用/受）",
+        "tahan",
+        "保持、忍耐、耐受"
+      ],
+      [
+        "jongkok",
+        2,
+        0,
+        "",
+        "",
+        "蹲；蹲下",
+        "jongkok",
+        "蹲"
+      ],
+      [
+        "sejuk",
+        2,
+        0,
+        "",
+        "",
+        "凉爽的（让人舒服的凉）",
+        "sejuk",
+        "凉爽"
+      ],
+      [
+        "melelahkan",
+        2,
+        0,
+        "",
+        "",
+        "令人疲惫的；使人累",
+        "lelah",
+        "累、疲劳"
+      ],
+      [
+        "mengesankan",
+        2,
+        0,
+        "",
+        "",
+        "令人印象深刻的",
+        "kesan",
+        "印象"
+      ],
+      [
+        "mencegah",
+        2,
+        0,
+        "",
+        "",
+        "预防；阻止（使不发生）",
+        "cegah",
+        "预防、阻止"
+      ],
+      [
+        "menyarankan",
+        2,
+        0,
+        "",
+        "",
+        "建议",
+        "saran",
+        "建议"
+      ],
+      [
+        "menyala",
+        2,
+        0,
+        "",
+        "2026-09-12T15:09:41.998Z",
+        "亮着；燃烧；（机器）启动",
+        "nyala",
+        "火焰、亮"
       ]
     ],
     "focus": [
@@ -3036,6 +3096,29 @@
         "berjanji",
         "bocor"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "session": "am",
+      "review_core": [
+        "puas",
+        "menanggung",
+        "ada urusan",
+        "menunggu",
+        "tersedia"
+      ],
+      "new_words": [
+        "komedi",
+        "gerakan",
+        "tahan",
+        "jongkok",
+        "sejuk",
+        "melelahkan",
+        "mengesankan",
+        "mencegah",
+        "menyarankan",
+        "menyala"
+      ]
     }
   ],
   "previous_pm": {
@@ -3053,7 +3136,88 @@
       "menyiapkan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-12",
+    "vocab": [
+      [
+        "komedi",
+        "喜剧；喜剧作品",
+        "comedy",
+        "komedi",
+        "喜剧（外来词，本身即词根）"
+      ],
+      [
+        "gerakan",
+        "动作；运动（行动）",
+        "movement; motion",
+        "gerak",
+        "动、动作"
+      ],
+      [
+        "tahan",
+        "保持住；忍住；耐（用/受）",
+        "hold; endure; resistant",
+        "tahan",
+        "保持、忍耐、耐受"
+      ],
+      [
+        "jongkok",
+        "蹲；蹲下",
+        "to squat; crouch",
+        "jongkok",
+        "蹲"
+      ],
+      [
+        "sejuk",
+        "凉爽的（让人舒服的凉）",
+        "cool; refreshingly cool",
+        "sejuk",
+        "凉爽"
+      ],
+      [
+        "melelahkan",
+        "令人疲惫的；使人累",
+        "tiring; exhausting",
+        "lelah",
+        "累、疲劳"
+      ],
+      [
+        "mengesankan",
+        "令人印象深刻的",
+        "impressive; leaving a strong impression",
+        "kesan",
+        "印象"
+      ],
+      [
+        "mencegah",
+        "预防；阻止（使不发生）",
+        "to prevent",
+        "cegah",
+        "预防、阻止"
+      ],
+      [
+        "menyarankan",
+        "建议",
+        "to suggest; recommend",
+        "saran",
+        "建议"
+      ],
+      [
+        "menyala",
+        "亮着；燃烧；（机器）启动",
+        "to be lit; to blaze; to start up",
+        "nyala",
+        "火焰、亮"
+      ]
+    ],
+    "review_vocab": [
+      "puas",
+      "menanggung",
+      "ada urusan",
+      "menunggu",
+      "tersedia"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
