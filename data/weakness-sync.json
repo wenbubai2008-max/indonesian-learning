@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-12T12:50:21.289Z",
+  "updated_at": "2026-10-13T14:20:25.376Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -29345,6 +29345,21 @@
       "source": "每日学习阅读",
       "source_date": "2026-10-12",
       "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "licin": {
+      "word": "licin",
+      "status": "active",
+      "updated_at": "2026-10-13T14:20:14.112Z",
+      "display": "licin",
+      "cn": "滑",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-13",
+      "session": "19:00",
       "reasons": [
         "manual_unknown"
       ],
