@@ -1,0 +1,337 @@
+{
+  "date": "2026-10-13",
+  "session": "pm",
+  "time": "18:00",
+  "day": 53,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "18:00 晚课｜Dimas 在大雨天赶着寄求职申请",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "mengingat",
+    "kecuali",
+    "tuntas"
+  ],
+  "vocab": [
+    {
+      "display": "mengingat",
+      "audio_text": "mengingat",
+      "is_new": true,
+      "is_oral_new": true,
+      "word": "mengingat",
+      "cn": "记住；想起；考虑到",
+      "en": "to remember; to recall; to take into account",
+      "root": "ingat",
+      "root_cn": "记得、想起",
+      "formation": "meN- + ingat → mengingat（词根以元音 i 开头，前缀写成 meng-）。相关：ingatan（记忆）、mengingatkan（提醒）、teringat（忽然想起）、diingat（被记住）。常见搭配：mengingat nama（记住名字）、mengingat kembali（回想）、Mengingat waktunya sempit,...（考虑到时间紧……）。",
+      "example": "Aku sulit mengingat nomor rekening yang panjang.",
+      "example_cn": "我很难记住那么长的账号。",
+      "synonym_note": "mengingat（记住、回想；放在句首时＝考虑到）vs ingat（口语：记得）vs mengingatkan（提醒别人）vs teringat（忽然想起）：Aku ingat wajahnya＝我记得他的脸；Tolong ingatkan aku besok＝明天请提醒我；Teringat janji tadi＝忽然想起刚才的约定。",
+      "usage_note": "新词（半熟词，口语高频词）。口语里常说 inget：Aku inget kok.（我记得啊。）放在句首的 Mengingat……（考虑到……）偏书面，说明做某个决定的原因。",
+      "source_group": "new"
+    },
+    {
+      "display": "kecuali",
+      "audio_text": "kecuali",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "kecuali",
+      "cn": "除了……以外（不包括）；除非",
+      "en": "except; unless",
+      "root": "kecuali",
+      "root_cn": "除外",
+      "formation": "kecuali 按一个整词记，不必拆分。常见搭配：kecuali hari Minggu（周日除外）、semua kecuali satu（除了一个以外全部）、kecuali kalau hujan（除非下雨）、tidak ada yang tahu kecuali dia（除了他没人知道）。",
+      "example": "Toko ini buka setiap hari kecuali hari Minggu.",
+      "example_cn": "这家店每天营业，周日除外。",
+      "synonym_note": "kecuali（把某人/某物排除在外）vs selain（除了……还有别的，被提到的也算在内）vs hanya（只有）：Semua datang kecuali Budi＝除了 Budi 全都来了（Budi 没来）；Selain Budi, Rina juga datang＝Budi 来了，Rina 也来了。",
+      "usage_note": "新词（半熟词）。后面可接名词（kecuali ijazah），也可接 kalau/jika 引导的句子表示“除非”。要说“除了 A 还有 B”时不要用 kecuali，用 selain。",
+      "source_group": "new"
+    },
+    {
+      "display": "tuntas",
+      "audio_text": "tuntas",
+      "is_new": true,
+      "is_oral_new": false,
+      "word": "tuntas",
+      "cn": "彻底完成；解决完",
+      "en": "completely finished; thoroughly resolved",
+      "root": "tuntas",
+      "root_cn": "彻底完成",
+      "formation": "tuntas 本身是词根。相关：menuntaskan（使彻底完成）、ketuntasan（彻底性）。常见搭配：sampai tuntas（做到彻底完成）、belum tuntas（还没彻底解决）、urusan tuntas（事情办妥）、menuntaskan masalah（彻底解决问题）。",
+      "example": "Aku nggak mau berhenti sebelum tugas ini tuntas.",
+      "example_cn": "这份作业没彻底做完之前，我不想停。",
+      "synonym_note": "tuntas（彻底做完，不留尾巴）vs selesai（做完、结束，一般用法）vs beres（口语：搞定）：Rapatnya sudah selesai, tapi masalahnya belum tuntas＝会开完了，但问题还没彻底解决。",
+      "usage_note": "新词（生词，原属“不会”词）。强调“彻底、没有遗留问题”，常说 sampai tuntas；只是时间到了、活动结束，用 selesai 就够了。",
+      "source_group": "new"
+    },
+    {
+      "display": "peduli",
+      "audio_text": "peduli",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "peduli",
+      "cn": "在意；关心；在乎",
+      "en": "to care; to mind",
+      "root": "peduli",
+      "root_cn": "在乎、关心",
+      "formation": "peduli 本身是词根。相关：kepedulian（关心、关怀）、mempedulikan（把……放在心上，书面）、tidak peduli（不在乎）。常见搭配：peduli sama teman（关心朋友）、nggak peduli（不在乎）、peduli lingkungan（关心环境）。",
+      "example": "Bu Wati peduli sama anak kosnya; kalau ada yang sakit, dia langsung menawarkan bantuan.",
+      "example_cn": "Wati 太太很关心她的租客；有人生病，她马上提出帮忙。",
+      "synonym_note": "peduli（把人或事放在心上、愿意关心）vs perhatian（体贴、关注）vs cuek（口语：漠不关心，反义）：Dia perhatian＝他很体贴；Dia nggak peduli＝他不在乎；Jangan cuek sama teman＝别对朋友不闻不问。",
+      "usage_note": "重点复习词（近期新错）。口语用 peduli sama＋人/事，较正式写 peduli terhadap；否定最常见：nggak peduli / tidak peduli（不在乎）。",
+      "source_group": "review"
+    },
+    {
+      "display": "membela",
+      "audio_text": "membela",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "membela",
+      "cn": "维护；为……辩护；替……说话",
+      "en": "to defend; to stand up for",
+      "root": "bela",
+      "root_cn": "保卫、袒护",
+      "formation": "meN- + bela → membela（词根以 b 开头，前缀写成 mem-）。相关：pembela（辩护人、捍卫者）、pembelaan（辩护、辩解）、dibela（被维护）。常见搭配：membela teman（替朋友说话）、membela diri（为自己辩解；自卫）、membela negara（保卫国家）。",
+      "example": "Waktu temannya dituduh bohong, Sari langsung membelanya di depan semua orang.",
+      "example_cn": "朋友被指责说谎时，Sari 立刻当着大家的面替他说话。",
+      "synonym_note": "membela（站在某人一边为他辩护、维护）vs melindungi（保护不受伤害）vs menyalahkan（责怪，反义）：Dia membela temannya＝他替朋友说话；Payung ini melindungi kita dari hujan＝这把伞帮我们挡雨。",
+      "usage_note": "重点复习词（近期新错）。带着“替对方说话、不让他被冤枉”的意思，不一定表示对方真的没错；常见固定说法 membela diri。",
+      "source_group": "review"
+    },
+    {
+      "display": "belum sempat",
+      "audio_text": "belum sempat",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "belum sempat",
+      "cn": "还没来得及",
+      "en": "haven't had the chance yet",
+      "root": "sempat",
+      "root_cn": "来得及、有机会",
+      "formation": "belum（还没）+ sempat（有时间、来得及）→ belum sempat。相关：sempat（来得及）、nggak sempat（没来得及）、kesempatan（机会）、menyempatkan diri（抽出时间去做）。常见搭配：belum sempat makan（还没来得及吃饭）、belum sempat jawab pesan（还没来得及回消息）、belum sempat mandi（还没来得及洗澡）。",
+      "example": "Maaf ya, aku belum sempat jawab pesan kamu dari tadi pagi.",
+      "example_cn": "不好意思，从早上到现在我都还没来得及回你的消息。",
+      "synonym_note": "belum sempat（想做，但一直没顾上，之后还打算做）vs belum（只是还没做）vs nggak sempat（当时没来得及，这次没做成）：Aku belum makan＝我还没吃；Aku belum sempat makan＝一直忙，没顾上吃；Tadi nggak sempat makan＝刚才没来得及吃。",
+      "usage_note": "重点复习词（久未复习）。后面直接接动词；它暗示“之后还会做”，和今天早课复习过的 nggak sempat 放在一起对比记。",
+      "source_group": "review"
+    },
+    {
+      "display": "mager",
+      "audio_text": "mager",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "mager",
+      "cn": "懒得动；不想动",
+      "en": "too lazy to move",
+      "root": "malas gerak",
+      "root_cn": "懒＋动",
+      "formation": "mager 是 malas gerak（懒得动）的口语缩略。相关：malas（懒）、gerak（动）、bergerak（移动）。常见搭配：lagi mager banget（现在特别不想动）、mager keluar rumah（懒得出门）、mager masak（懒得做饭）。",
+      "example": "Hari Minggu hujan begini, aku mager keluar rumah.",
+      "example_cn": "周日下这种雨，我懒得出门。",
+      "synonym_note": "mager（就想窝着不动，口语）vs malas（懒、不想做，通用）vs capek（身体累）：Aku capek＝我累了；Aku malas belajar＝我不想学习；Aku mager＝我只想窝着不动。",
+      "usage_note": "重点复习词（久未复习）。年轻人朋友之间的口语，后面常接地点或动作（mager keluar）；对长辈、在正式场合用 malas 更稳妥。",
+      "source_group": "review"
+    },
+    {
+      "display": "menyelesaikan",
+      "audio_text": "menyelesaikan",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "menyelesaikan",
+      "cn": "完成；解决",
+      "en": "to finish; to complete; to settle",
+      "root": "selesai",
+      "root_cn": "完毕、结束",
+      "formation": "meN- + selesai + -kan → menyelesaikan（词根以 s 开头，s 脱落变 meny-；-kan 表示“使……完成”）。相关：selesai（完毕）、penyelesaian（完成、解决）、terselesaikan（被完成、被解决）。常见搭配：menyelesaikan tugas（完成作业）、menyelesaikan masalah（解决问题）、menyelesaikan kuliah（读完大学）。",
+      "example": "Kakak harus menyelesaikan laporannya sebelum rapat besok.",
+      "example_cn": "姐姐必须在明天开会前把报告做完。",
+      "synonym_note": "menyelesaikan（把某件事做完或解决，后面要有宾语）vs selesai（事情自己完毕，不及物）vs menuntaskan（做得更彻底）：Tugasnya sudah selesai＝作业完成了；Aku menyelesaikan tugasnya＝我把作业做完了。",
+      "usage_note": "重点复习词（久未复习）。有宾语用 menyelesaikan＋事情，没有宾语就用 selesai（Aku sudah selesai）。",
+      "source_group": "review"
+    },
+    {
+      "display": "lamaran kerja",
+      "audio_text": "lamaran kerja",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "lamaran kerja",
+      "cn": "求职申请；求职材料",
+      "en": "job application",
+      "root": "lamar",
+      "root_cn": "申请；求职；求婚",
+      "formation": "lamar + -an + kerja → lamaran kerja（求职申请）；对应动词 melamar kerja（申请工作）。常见搭配：mengirim lamaran kerja（寄出求职申请）、surat lamaran（求职信）、melamar kerja di bank（应聘银行的工作）。今天08:00新学。",
+      "example": "Sebelum mengirim lamaran kerja, cek lagi CV dan lampirannya.",
+      "example_cn": "寄出求职申请之前，再检查一下简历和附件。",
+      "synonym_note": "lamaran kerja（整套求职申请）vs CV（简历文件）vs pelamar（求职的人）：Dia pelamar yang mengirim lamaran kerja dan CV＝他是递交求职申请和简历的应聘者；melamar 单独出现也可能是“求婚”，说求职时带上 kerja。",
+      "usage_note": "应用词（今天08:00新学）。上午已在早课学过，晚上放进“赶截止时间”的新场景再用一次：mengirim / menyelesaikan lamaran kerja。",
+      "source_group": "application"
+    },
+    {
+      "display": "deras",
+      "audio_text": "deras",
+      "is_new": false,
+      "is_oral_new": false,
+      "word": "deras",
+      "cn": "（雨）很大；（水流）湍急",
+      "en": "heavy (rain); fast-flowing",
+      "root": "deras",
+      "root_cn": "急、猛",
+      "formation": "deras 本身是词根，形容词。最常见搭配：hujan deras（大雨）、arus deras（水流湍急）、makin deras（越来越猛）。今天08:00新学。",
+      "example": "Hujan makin deras, jadi kami berteduh di warung dulu.",
+      "example_cn": "雨越下越大，所以我们先到小吃店里躲雨。",
+      "synonym_note": "deras（雨势猛、水流急）vs gerimis（毛毛雨）vs besar（口语也说 hujan besar）：Masih gerimis, belum deras＝只是毛毛雨，还没下大。说人跑得快用 cepat，不说 deras。",
+      "usage_note": "应用词（今天08:00新学）。上午学过，晚上放进出行场景再用：形容雨时说 hujan deras，雨变大用 makin deras。",
+      "source_group": "application"
+    }
+  ],
+  "reading": {
+    "text": "Hujan deras sejak pagi, dan Dimas mager keluar kamar. Mengingat lamaran kerjanya harus terkirim sebelum jam lima sore, ia akhirnya bangun. Masalahnya, ia belum sempat memindai ijazah untuk lampiran email. Bayu, teman kosnya, peduli dan menawarkan diri nganter ke tempat fotokopi pakai motor dan jas hujan. Jalanan licin, jadi Bayu menyetir pelan-pelan. Bayu memperkirakan perjalanannya hanya sepuluh menit, tetapi mereka nyasar dan harus putar balik di bundaran. Semua dokumen sudah lengkap kecuali ijazah. Setelah memindainya, Dimas kembali ke kamar dan menyelesaikan lamarannya. Email itu terkirim jam empat, dan urusannya tuntas satu jam lebih awal.",
+    "cn": "雨从早上就下得很大，Dimas 懒得出房间。考虑到求职申请必须在今天下午五点前发出，他终于起床了。问题是，他还没来得及扫描毕业证书，用来做邮件附件。同住的朋友 Bayu 很关心他，主动提出骑摩托车送他去复印店，两人都穿了雨衣。路面很滑，所以 Bayu 骑得很慢。Bayu 估计路上只要十分钟，可是他们走错了路，不得不在环岛调头。所有文件都齐了，只差毕业证书。扫描完之后，Dimas 回到房间，把求职申请做完。邮件在四点发出，这件事提前一小时彻底办妥了。"
+  },
+  "dialogue": {
+    "title": "傍晚在租房的客厅",
+    "lines": [
+      {
+        "speaker": "Bu Wati",
+        "id": "Dimas, tadi pagi kok nggak keluar kamar? Mager ya?",
+        "cn": "Dimas，今天早上怎么一直没出房间？懒得动吗？"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Bukan mager, Bu. Hujannya deras banget, dan aku belum sempat scan ijazah buat lampiran lamaran kerja.",
+        "cn": "不是懒，Wati 太太。雨下得太大了，而且我还没来得及扫描毕业证书，用来当求职申请的附件。"
+      },
+      {
+        "speaker": "Bayu",
+        "id": "Iya, Bu. Makanya tadi aku nganter dia ke tempat fotokopi. Kami sempat nyasar, padahal harusnya lurus aja dari bundaran.",
+        "cn": "对，太太。所以刚才我送他去复印店。我们还走错了路，其实从环岛一直走就对了。"
+      },
+      {
+        "speaker": "Bu Wati",
+        "id": "Kamu memang peduli sama teman, Bay. Tapi jangan keseringan membela dia kalau dia memang malas.",
+        "cn": "Bay，你确实关心朋友。但如果他真的懒，就别老是替他说话。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Aku nggak malas, Bu! Lamarannya sudah kuselesaikan dan terkirim jam empat.",
+        "cn": "我才不懒呢，太太！求职申请我已经做完，四点就发出去了。"
+      },
+      {
+        "speaker": "Bayu",
+        "id": "Aku cuma memperkirakan dia bakal telat kalau naik angkot, makanya aku anter.",
+        "cn": "我只是估计他坐小巴会来不及，所以才送他。"
+      },
+      {
+        "speaker": "Bu Wati",
+        "id": "Ya sudah, semoga dipanggil wawancara. Kalau besok ada keperluan lain, bilang aja ya.",
+        "cn": "好吧，希望你能被叫去面试。明天如果还有别的事要办，尽管说。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "用 mengingat 和 tuntas 写 2 句话：说说你最近一件有截止时间的事，你怎样提醒自己，并把它做完。",
+      "reference_answer": "Mengingat laporanku harus dikirim Jumat, aku mulai mengerjakannya dari awal minggu. Aku nggak mau berhenti sebelum semuanya tuntas.",
+      "reference_cn": "考虑到报告必须在周五交，我从周初就开始做。没彻底做完之前，我不想停。"
+    },
+    {
+      "task": "用 mager 和 belum sempat 写 2 句话：说说一个下雨天或很累的日子，你因为懒得动，有什么事还没来得及做。",
+      "reference_answer": "Kemarin hujan seharian, jadi aku mager banget. Sampai malam, aku belum sempat nyuci baju.",
+      "reference_cn": "昨天下了一整天的雨，我特别不想动。直到晚上，我都还没来得及洗衣服。"
+    },
+    {
+      "task": "用 peduli 和 membela 写 2 句话：说说一次朋友或家人替你说话、或关心你的经历。",
+      "reference_answer": "Waktu aku dituduh datang telat, kakakku langsung membelaku di depan Ibu. Aku senang punya kakak yang peduli sama adiknya.",
+      "reference_cn": "我被说迟到的时候，姐姐马上当着妈妈的面替我说话。我很高兴有一个关心弟弟的姐姐。"
+    },
+    {
+      "task": "用今天08:00新学的 lamaran kerja 和 deras，再加上 menyelesaikan，写 2 句话：想象一个下大雨的日子，你要在家把一份求职申请做完。",
+      "reference_answer": "Hujan deras sekali, jadi aku di rumah saja dan menyelesaikan lamaran kerjaku. Besok pagi baru aku kirim.",
+      "reference_cn": "雨下得特别大，所以我就待在家里，把求职申请做完。明天早上再寄出去。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Hujan deras begini, aku jadi ____ keluar rumah.",
+        "options": [
+          "pemalas",
+          "malas-malasan",
+          "mager",
+          "kemalasan"
+        ],
+        "answer_index": 2,
+        "answer": "mager",
+        "explain": "“懒得出门”的口语说法是 mager＋地点/动作（jadi mager keluar rumah）。pemalas 是名词（懒人），kemalasan 是名词（懒惰），malas-malasan 是动词，意思是闲散无所事事，都不能直接接 keluar rumah 表示“懒得”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Dimas 被说懒的时候，Bayu 站在 Dimas 这一边说话。选最自然的一句：Bayu langsung ____ Dimas di depan Bu Wati.",
+        "options": [
+          "membela",
+          "menolong",
+          "menyalahkan",
+          "mengingat"
+        ],
+        "answer_index": 0,
+        "answer": "membela",
+        "explain": "别人被指责时，站出来替他说话、辩护是 membela。menolong 是帮助做事或脱困；menyalahkan 是责怪，意思相反；mengingat 是记住或考虑到，不合语境。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选出最自然的一项：Semua dokumen Dimas sudah lengkap ____ ijazah, jadi dia harus scan dulu.",
+        "options": [
+          "selain",
+          "hanya",
+          "terutama",
+          "kecuali"
+        ],
+        "answer_index": 3,
+        "answer": "kecuali",
+        "explain": "“齐了，只差毕业证书”是把毕业证书排除在外，用 kecuali。selain 是“除了……还有别的”，ijazah 也算在内，意思会反过来；hanya 是“只有”；terutama 是“尤其是”。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Dimas ingin lamaran itu dikerjakan sampai ____, tanpa ada yang tertinggal.（彻底完成，不留尾巴）",
+        "answer": "tuntas",
+        "explain": "sampai tuntas 表示做到彻底完成、没有遗留问题。selesai 只表示做完了，不强调“彻底”，所以这里选 tuntas。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Bayu ____ sama temannya, jadi dia mau mengantar Dimas ke tempat fotokopi.（在乎、关心）",
+        "answer": "peduli",
+        "explain": "“关心朋友、把朋友放在心上”用 peduli sama teman。否定常说 nggak peduli（不在乎）。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：考虑到雨很大，我们慢慢地出发。",
+        "tokens": [
+          "Mengingat",
+          "hujannya",
+          "deras",
+          "kami",
+          "berangkat",
+          "pelan-pelan"
+        ],
+        "answer": "Mengingat hujannya deras kami berangkat pelan-pelan",
+        "answer_cn": "考虑到雨很大，我们慢慢地出发。",
+        "explain": "句首的 Mengingat 引出原因（考虑到），后面是 hujannya deras（雨很大），再接主句 kami berangkat pelan-pelan。"
+      }
+    ],
+    "self_check": [
+      "不看中文，mengingat、kecuali、tuntas 这 3 个新词里，有没有哪个我 3 秒内说不出意思？",
+      "peduli、membela、belum sempat、mager、menyelesaikan 里，有没有哪个我看着眼熟，却不确定它在句子里怎么用？",
+      "kecuali 和 selain、tuntas 和 selesai、belum sempat 和 nggak sempat 这几组，我现在分得清区别吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语，答不出的回看词卡再说一遍。",
+      "把 kecuali 和 selain 各放进一句话（说说你每天做的事里“除了哪件以外”），再用 tuntas 说一句你想彻底做完的事。",
+      "用 30 秒向朋友讲一遍 Dimas 在大雨天赶着寄求职申请的经过，至少用上 mager、belum sempat、peduli，不要背课文。",
+      "想一次别人替你说话或关心你的经历，用 membela 和 peduli 各说一句；最后用今天 08:00 早课新学的 lamaran kerja 和 deras 各说一句新句子。"
+    ]
+  }
+}
