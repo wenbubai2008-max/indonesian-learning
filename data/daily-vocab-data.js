@@ -1848,19 +1848,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-08-29 08:00",
+    "last_seen": "2026-10-13 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-29"
+      "2026-08-29",
+      "2026-10-13"
     ],
     "example": "Aku lagi nyari charger.",
     "example_cn": "我正在找充电器。",
     "lesson_occurrences": [
-      "2026-08-29 08:00"
+      "2026-08-29 08:00",
+      "2026-10-13 08:00"
     ]
   },
   {
@@ -2394,19 +2396,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 08:00",
-    "last_seen": "2026-08-30 08:00",
+    "last_seen": "2026-10-13 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-30"
+      "2026-08-30",
+      "2026-10-13"
     ],
     "example": "Jangan kebanyakan kopi.",
     "example_cn": "别喝太多咖啡。",
     "lesson_occurrences": [
-      "2026-08-30 08:00"
+      "2026-08-30 08:00",
+      "2026-10-13 08:00"
     ]
   },
   {
@@ -3224,21 +3228,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-26 19:00",
-    "last_seen": "2026-08-26 19:00",
+    "last_seen": "2026-10-13 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-26"
+      "2026-08-26",
+      "2026-10-13"
     ],
     "example": "Aku nggak sempat makan siang.",
     "example_cn": "我没时间吃午饭。",
     "lesson_occurrences": [
-      "2026-08-26 19:00"
+      "2026-08-26 19:00",
+      "2026-10-13 08:00"
     ]
   },
   {
@@ -8854,19 +8862,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-13 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-11",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-10-13"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
-      "2026-10-04 08:00"
+      "2026-10-04 08:00",
+      "2026-10-13 08:00"
     ]
   },
   {
@@ -17364,17 +17374,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-04 08:00",
-    "last_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-13 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-04"
+      "2026-10-04",
+      "2026-10-13"
     ],
     "lesson_occurrences": [
-      "2026-10-04 08:00"
+      "2026-10-04 08:00",
+      "2026-10-13 08:00"
     ]
   },
   {
@@ -20293,6 +20305,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-12 18:00"
+    ]
+  },
+  {
+    "word": "angkot",
+    "cn": "小公共交通车；城市里的小巴",
+    "en": "public minivan",
+    "root": "angkot",
+    "root_cn": "angkutan kota（城市交通）的缩写，本身当作词根",
+    "example": "Kalau macet, naik angkot dari sini ke pasar biasanya lebih santai.",
+    "example_cn": "如果堵车，从这里坐小巴去市场通常比较轻松。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 08:00"
+    ]
+  },
+  {
+    "word": "persimpangan",
+    "cn": "十字路口；岔路口",
+    "en": "intersection; junction",
+    "root": "simpang",
+    "root_cn": "岔开；分岔",
+    "example": "Belok kiri di persimpangan depan, nanti kelihatan apotek.",
+    "example_cn": "在前面的路口左转，就会看到药店。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 08:00"
+    ]
+  },
+  {
+    "word": "bundaran",
+    "cn": "环岛；圆形转盘",
+    "en": "roundabout",
+    "root": "bundar",
+    "root_cn": "圆的",
+    "example": "Setelah bundaran itu, lurus saja sampai kelihatan halte.",
+    "example_cn": "过了那个环岛，一直走就能看到车站。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 08:00"
+    ]
+  },
+  {
+    "word": "seberang",
+    "cn": "对面；彼岸",
+    "en": "the other side; opposite",
+    "root": "seberang",
+    "root_cn": "对面；另一边",
+    "example": "Toko roti itu ada di seberang jalan, tepat di depan halte.",
+    "example_cn": "那家面包店在马路对面，正对着车站。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 08:00"
+    ]
+  },
+  {
+    "word": "letak",
+    "cn": "位置；所在地",
+    "en": "location; position",
+    "root": "letak",
+    "root_cn": "位置",
+    "example": "Letak kantor kami cukup dekat dengan stasiun.",
+    "example_cn": "我们办公室的位置离车站相当近。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 08:00"
+    ]
+  },
+  {
+    "word": "deras",
+    "cn": "湍急的；（雨）很大；（水流）很猛",
+    "en": "heavy (rain); fast-flowing",
+    "root": "deras",
+    "root_cn": "急；猛",
+    "example": "Hujan deras sejak pagi, jadi saya menunda rencana ke pasar.",
+    "example_cn": "从早上就下大雨，所以我推迟了去市场的计划。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 08:00"
+    ]
+  },
+  {
+    "word": "perpustakaan",
+    "cn": "图书馆",
+    "en": "library",
+    "root": "pustaka",
+    "root_cn": "书；典籍",
+    "example": "Sabtu pagi saya biasa belajar di perpustakaan dekat rumah.",
+    "example_cn": "周六早上我常在家附近的图书馆学习。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 08:00"
+    ]
+  },
+  {
+    "word": "pengumuman",
+    "cn": "通知；公告；宣布",
+    "en": "announcement; notice",
+    "root": "umum",
+    "root_cn": "公开的；公众的；一般的",
+    "example": "Ada pengumuman di grup kelas bahwa ujian diundur.",
+    "example_cn": "班级群里有通知，说考试推迟了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 08:00"
+    ]
+  },
+  {
+    "word": "lampiran",
+    "cn": "附件；附录",
+    "en": "attachment; appendix",
+    "root": "lampir",
+    "root_cn": "附上；随附",
+    "example": "Maaf, lampiran di email tadi belum terkirim.",
+    "example_cn": "抱歉，刚才邮件里的附件没有发出去。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 08:00"
+    ]
+  },
+  {
+    "word": "lamaran kerja",
+    "cn": "求职申请；求职信",
+    "en": "job application",
+    "root": "lamar",
+    "root_cn": "申请；求职；求婚",
+    "example": "Minggu ini saya sudah mengirim tiga lamaran kerja.",
+    "example_cn": "这周我已经寄出三份求职申请。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 08:00"
     ]
   }
 ];
