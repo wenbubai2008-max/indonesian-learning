@@ -564,35 +564,40 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "menyelesaikan",
     "cn": "完成；解决",
-    "en": "",
+    "en": "to finish; to complete; to settle",
     "root": "selesai",
     "categories": [
       "每日学习",
       "08:00",
       "原始课程",
       "历史记录不完整",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-08-30 19:00",
+    "last_seen": "2026-10-13 18:00",
     "sessions": [
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-24",
       "2026-08-25",
-      "2026-08-30"
+      "2026-08-30",
+      "2026-10-13"
     ],
-    "example": "Hari ini harus diselesain.",
-    "example_cn": "今天必须弄完。",
+    "example": "Kakak harus menyelesaikan laporannya sebelum rapat besok.",
+    "example_cn": "姐姐必须在明天开会前把报告做完。",
     "lesson_occurrences": [
       "2026-08-24 19:00",
       "2026-08-25 08:00",
       "2026-08-25 19:00",
-      "2026-08-30 19:00"
-    ]
+      "2026-08-30 19:00",
+      "2026-10-13 18:00"
+    ],
+    "root_cn": "完毕、结束"
   },
   {
     "word": "mempertimbangkan",
@@ -2339,27 +2344,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "mager",
     "cn": "懒得动、不想动",
-    "en": "",
-    "root": "",
+    "en": "too lazy to move",
+    "root": "malas gerak",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 08:00",
-    "last_seen": "2026-08-30 08:00",
+    "last_seen": "2026-10-13 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-30"
+      "2026-08-30",
+      "2026-10-13"
     ],
-    "example": "Hari ini aku mager keluar.",
-    "example_cn": "今天我懒得出门。",
+    "example": "Hari Minggu hujan begini, aku mager keluar rumah.",
+    "example_cn": "周日下这种雨，我懒得出门。",
     "lesson_occurrences": [
-      "2026-08-30 08:00"
-    ]
+      "2026-08-30 08:00",
+      "2026-10-13 18:00"
+    ],
+    "root_cn": "懒＋动"
   },
   {
     "word": "bingung",
@@ -3757,27 +3767,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "belum sempat",
     "cn": "还没来得及",
-    "en": "",
-    "root": "",
+    "en": "haven't had the chance yet",
+    "root": "sempat",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-28 19:00",
-    "last_seen": "2026-08-28 19:00",
+    "last_seen": "2026-10-13 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-28"
+      "2026-08-28",
+      "2026-10-13"
     ],
-    "example": "Aku belum sempat cek.",
-    "example_cn": "我还没来得及看。",
+    "example": "Maaf ya, aku belum sempat jawab pesan kamu dari tadi pagi.",
+    "example_cn": "不好意思，从早上到现在我都还没来得及回你的消息。",
     "lesson_occurrences": [
-      "2026-08-28 19:00"
-    ]
+      "2026-08-28 19:00",
+      "2026-10-13 18:00"
+    ],
+    "root_cn": "来得及、有机会"
   },
   {
     "word": "sebentar / bentar",
@@ -17774,23 +17789,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to care; to mind",
     "root": "peduli",
     "root_cn": "在乎",
-    "example": "Dia kelihatan cuek, tapi sebenarnya peduli banget sama keluarganya.",
-    "example_cn": "他看起来满不在乎，其实非常在意家人。",
+    "example": "Bu Wati peduli sama anak kosnya; kalau ada yang sakit, dia langsung menawarkan bantuan.",
+    "example_cn": "Wati 太太很关心她的租客；有人生病，她马上提出帮忙。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-05 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-13 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-05"
+      "2026-10-05",
+      "2026-10-13"
     ],
     "lesson_occurrences": [
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-10-13 18:00"
     ]
   },
   {
@@ -18627,24 +18646,28 @@ window.DAILY_VOCAB_DB = [
     "en": "to defend; to stand up for",
     "root": "bela",
     "root_cn": "保卫；袒护",
-    "example": "Waktu semua orang menyalahkan Dimas, hanya Bu Rina yang membela dia.",
-    "example_cn": "大家都在怪迪马斯的时候，只有丽娜女士替他说话。",
+    "example": "Waktu temannya dituduh bohong, Sari langsung membelanya di depan semua orang.",
+    "example_cn": "朋友被指责说谎时，Sari 立刻当着大家的面替他说话。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-08 08:00",
-    "last_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-13 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-08"
+      "2026-10-08",
+      "2026-10-13"
     ],
     "lesson_occurrences": [
-      "2026-10-08 08:00"
+      "2026-10-08 08:00",
+      "2026-10-13 18:00"
     ]
   },
   {
@@ -20438,23 +20461,26 @@ window.DAILY_VOCAB_DB = [
     "en": "heavy (rain); fast-flowing",
     "root": "deras",
     "root_cn": "急；猛",
-    "example": "Hujan deras sejak pagi, jadi saya menunda rencana ke pasar.",
-    "example_cn": "从早上就下大雨，所以我推迟了去市场的计划。",
+    "example": "Hujan makin deras, jadi kami berteduh di warung dulu.",
+    "example_cn": "雨越下越大，所以我们先到小吃店里躲雨。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-13 08:00",
-    "last_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-13"
     ],
     "lesson_occurrences": [
-      "2026-10-13 08:00"
+      "2026-10-13 08:00",
+      "2026-10-13 18:00"
     ]
   },
   {
@@ -20538,23 +20564,102 @@ window.DAILY_VOCAB_DB = [
     "en": "job application",
     "root": "lamar",
     "root_cn": "申请；求职；求婚",
-    "example": "Minggu ini saya sudah mengirim tiga lamaran kerja.",
-    "example_cn": "这周我已经寄出三份求职申请。",
+    "example": "Sebelum mengirim lamaran kerja, cek lagi CV dan lampirannya.",
+    "example_cn": "寄出求职申请之前，再检查一下简历和附件。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-13 08:00",
-    "last_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-13 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-13"
     ],
     "lesson_occurrences": [
-      "2026-10-13 08:00"
+      "2026-10-13 08:00",
+      "2026-10-13 18:00"
+    ]
+  },
+  {
+    "word": "mengingat",
+    "cn": "记住；想起；考虑到",
+    "en": "to remember; to recall; to take into account",
+    "root": "ingat",
+    "root_cn": "记得、想起",
+    "example": "Aku sulit mengingat nomor rekening yang panjang.",
+    "example_cn": "我很难记住那么长的账号。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 18:00",
+    "last_seen": "2026-10-13 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 18:00"
+    ]
+  },
+  {
+    "word": "kecuali",
+    "cn": "除了……以外（不包括）；除非",
+    "en": "except; unless",
+    "root": "kecuali",
+    "root_cn": "除外",
+    "example": "Toko ini buka setiap hari kecuali hari Minggu.",
+    "example_cn": "这家店每天营业，周日除外。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 18:00",
+    "last_seen": "2026-10-13 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 18:00"
+    ]
+  },
+  {
+    "word": "tuntas",
+    "cn": "彻底完成；解决完",
+    "en": "completely finished; thoroughly resolved",
+    "root": "tuntas",
+    "root_cn": "彻底完成",
+    "example": "Aku nggak mau berhenti sebelum tugas ini tuntas.",
+    "example_cn": "这份作业没彻底做完之前，我不想停。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-13 18:00",
+    "last_seen": "2026-10-13 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-13"
+    ],
+    "lesson_occurrences": [
+      "2026-10-13 18:00"
     ]
   }
 ];

@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-13",
-    "session": "pm",
-    "time": "18:00",
-    "day": 53
+    "date": "2026-10-14",
+    "session": "am",
+    "time": "08:00",
+    "day": 54
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-13T00:27:27.776Z",
-    "lesson_watermark": "2026-10-13 08:00",
+    "runtime_generated_at": "2026-10-13T10:44:01.621Z",
+    "lesson_watermark": "2026-10-13 18:00",
     "index_updated": "2026-10-13",
-    "runtime_hash": "0bef7381ccd558a36f4ac5c0559e477929ba058623eff131281af595b9661c94",
-    "index_hash": "a5cc726d1b5cd07d7c4202c751983bbbc8860fc62a5832f2e3e5903fed8c3831",
+    "runtime_hash": "b3d40d3dca3ac4307c05899c503126a5eec22922eae25bbd57b307bd8fa7304c",
+    "index_hash": "d462ae662d7c5dd3dfde546a06f5e7dbe4e62cba94b5308a0264d9f74a917471",
     "rules_hash": "d406904ea30ad06dfae711a64f1e979c1262ddd8401d79e7b17d4b3250ea5a06"
   },
   "schema": {
@@ -96,10 +96,6 @@
       [
         "penanganan",
         "处理；应对"
-      ],
-      [
-        "tuntas",
-        "彻底完成；解决完"
       ],
       [
         "khas",
@@ -632,20 +628,12 @@
         "树"
       ],
       [
-        "kecuali",
-        "除了"
-      ],
-      [
         "mengeluarkan",
         "拿出"
       ],
       [
         "terang",
         "明亮的 / 清晰的"
-      ],
-      [
-        "mengingat",
-        "记住"
       ],
       [
         "momen",
@@ -1814,16 +1802,6 @@
         ""
       ],
       [
-        "mager",
-        3,
-        0,
-        "",
-        "2026-10-08T09:13:22.619Z",
-        "懒得动、不想动",
-        "",
-        ""
-      ],
-      [
         "pantes",
         3,
         0,
@@ -1831,16 +1809,6 @@
         "2026-10-09T07:59:36.155Z",
         "难怪、怪不得",
         "",
-        ""
-      ],
-      [
-        "menyelesaikan",
-        3,
-        0,
-        "",
-        "2026-10-08T09:15:45.009Z",
-        "完成；解决",
-        "selesai",
         ""
       ],
       [
@@ -2174,14 +2142,24 @@
         "送；递送"
       ],
       [
-        "belum sempat",
-        5,
+        "mantap",
+        3,
         0,
         "",
+        "2026-10-08T09:19:30.338Z",
+        "很棒；很稳；很可以（口语）",
+        "mantap",
+        "稳；确定；很棒"
+      ],
+      [
+        "sesuai",
+        3,
+        0,
         "",
-        "还没来得及",
-        "",
-        ""
+        "2026-10-08T09:20:43.953Z",
+        "符合；适合；与……一致",
+        "suai",
+        "匹配；合适"
       ],
       [
         "nggak usah",
@@ -2274,104 +2252,14 @@
         ""
       ],
       [
-        "angkot",
-        2,
+        "memperkirakan",
+        5,
         0,
         "",
         "",
-        "小公共交通车；城市里的小巴",
-        "angkot",
-        "angkutan kota（城市交通）的缩写，本身当作词根"
-      ],
-      [
-        "persimpangan",
-        2,
-        0,
-        "",
-        "",
-        "十字路口；岔路口",
-        "simpang",
-        "岔开；分岔"
-      ],
-      [
-        "bundaran",
-        2,
-        0,
-        "",
-        "",
-        "环岛；圆形转盘",
-        "bundar",
-        "圆的"
-      ],
-      [
-        "seberang",
-        2,
-        0,
-        "",
-        "",
-        "对面；彼岸",
-        "seberang",
-        "对面；另一边"
-      ],
-      [
-        "letak",
-        2,
-        0,
-        "",
-        "",
-        "位置；所在地",
-        "letak",
-        "位置"
-      ],
-      [
-        "deras",
-        2,
-        0,
-        "",
-        "",
-        "湍急的；（雨）很大；（水流）很猛",
-        "deras",
-        "急；猛"
-      ],
-      [
-        "perpustakaan",
-        2,
-        0,
-        "",
-        "",
-        "图书馆",
-        "pustaka",
-        "书；典籍"
-      ],
-      [
-        "pengumuman",
-        2,
-        0,
-        "",
-        "",
-        "通知；公告；宣布",
-        "umum",
-        "公开的；公众的；一般的"
-      ],
-      [
-        "lampiran",
-        2,
-        0,
-        "",
-        "",
-        "附件；附录",
-        "lampir",
-        "附上；随附"
-      ],
-      [
-        "lamaran kerja",
-        2,
-        0,
-        "",
-        "",
-        "求职申请；求职信",
-        "lamar",
-        "申请；求职；求婚"
+        "估计；预估",
+        "kira",
+        ""
       ]
     ],
     "focus": [
@@ -2634,14 +2522,6 @@
         "fuzzy"
       ],
       [
-        "mengingat",
-        "通用",
-        "inget",
-        "ingat",
-        721,
-        "fuzzy"
-      ],
-      [
         "mengeluarkan",
         "通用",
         "ngeluarin",
@@ -2764,45 +2644,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-06",
-      "session": "am",
-      "review_core": [
-        "layak",
-        "seraya",
-        "menyalin",
-        "pembangunan",
-        "jomblo"
-      ],
-      "new_words": [
-        "berkencan",
-        "cemburu",
-        "gengsi",
-        "kepo",
-        "mengunggah",
-        "menyembunyikan",
-        "setia",
-        "kecewa",
-        "nyesel",
-        "selamanya"
-      ]
-    },
-    {
-      "date": "2026-10-06",
-      "session": "pm",
-      "review_core": [
-        "heran",
-        "menemukan",
-        "ganjel",
-        "kepending",
-        "keteteran"
-      ],
-      "new_words": [
-        "bahas",
-        "catat",
-        "kerugian"
-      ]
-    },
     {
       "date": "2026-10-07",
       "session": "am",
@@ -3062,106 +2903,40 @@
         "lampiran",
         "lamaran kerja"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "session": "pm",
+      "review_core": [
+        "peduli",
+        "membela",
+        "belum sempat",
+        "mager",
+        "menyelesaikan"
+      ],
+      "new_words": [
+        "mengingat",
+        "kecuali",
+        "tuntas"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-12",
+    "date": "2026-10-13",
     "new_words": [
-      "menghitung",
-      "lembut",
-      "teratur",
-      "tantangan"
+      "mengingat",
+      "kecuali",
+      "tuntas"
     ],
     "review_core": [
-      "sudut",
-      "menyembuhkan",
-      "mendadak",
-      "biar",
-      "ribet"
+      "peduli",
+      "membela",
+      "belum sempat",
+      "mager",
+      "menyelesaikan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-13",
-    "vocab": [
-      [
-        "angkot",
-        "小公共交通车；城市里的小巴",
-        "public minivan",
-        "angkot",
-        "angkutan kota（城市交通）的缩写，本身当作词根"
-      ],
-      [
-        "persimpangan",
-        "十字路口；岔路口",
-        "intersection; junction",
-        "simpang",
-        "岔开；分岔"
-      ],
-      [
-        "bundaran",
-        "环岛；圆形转盘",
-        "roundabout",
-        "bundar",
-        "圆的"
-      ],
-      [
-        "seberang",
-        "对面；彼岸",
-        "the other side; opposite",
-        "seberang",
-        "对面；另一边"
-      ],
-      [
-        "letak",
-        "位置；所在地",
-        "location; position",
-        "letak",
-        "位置"
-      ],
-      [
-        "deras",
-        "湍急的；（雨）很大；（水流）很猛",
-        "heavy (rain); fast-flowing",
-        "deras",
-        "急；猛"
-      ],
-      [
-        "perpustakaan",
-        "图书馆",
-        "library",
-        "pustaka",
-        "书；典籍"
-      ],
-      [
-        "pengumuman",
-        "通知；公告；宣布",
-        "announcement; notice",
-        "umum",
-        "公开的；公众的；一般的"
-      ],
-      [
-        "lampiran",
-        "附件；附录",
-        "attachment; appendix",
-        "lampir",
-        "附上；随附"
-      ],
-      [
-        "lamaran kerja",
-        "求职申请；求职信",
-        "job application",
-        "lamar",
-        "申请；求职；求婚"
-      ]
-    ],
-    "review_vocab": [
-      "kelepasan",
-      "menatap",
-      "nggak sempat",
-      "nyari",
-      "kebanyakan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
