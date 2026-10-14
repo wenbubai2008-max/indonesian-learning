@@ -555,6 +555,8 @@ try {
   if(fs.existsSync(rel('data/home-modules-stability.js'))){
     const stability = read('data/home-modules-stability.js');
     ok(/Retired 2026-09-19/.test(stability) && !/const ORDER=|MutationObserver/.test(stability), 'retired homepage stability script cannot reorder cards');
+  }else{
+    ok(!indexHtml.includes('data/home-modules-stability.js'), 'removed homepage stability script cannot load or reorder cards');
   }
 
   const compat = read('data/vocab-dom-compat.js');
