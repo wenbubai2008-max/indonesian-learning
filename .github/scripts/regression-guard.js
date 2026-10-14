@@ -464,22 +464,24 @@ try {
     const b=sync.indexOf('\n      - name: ',a+10),c=sync.indexOf('\n  extensive_reading_release:',a+10);
     return sync.slice(a,[b,c].filter(x=>x>0).sort((x,y)=>x-y)[0]||sync.length)};
   const lessonRelease=stepBody('Generate index, validate and squash-merge the lesson release');
-  ok(lessonRelease.includes('for release_attempt in 0 1 2; do') &&
+  // Pinned pre-change main checks data; the proposed tree must pass these new workflow assertions.
+  const releaseWorkflowOk=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+  releaseWorkflowOk(lessonRelease.includes('for release_attempt in 0 1 2; do') &&
     lessonRelease.includes('git diff --name-only "$release_base" "$latest_main"') &&
     lessonRelease.includes("grep -q '^data/daily/'"),
     'lesson release handles main movement inside the same job with at most two retries');
-  ok(lessonRelease.includes('regenerate_index=false') &&
+  releaseWorkflowOk(lessonRelease.includes('regenerate_index=false') &&
     lessonRelease.includes('--main-head "$latest_main"') &&
     lessonRelease.includes('check-release-pr.js" "$latest_main" "$final_sha" "$PR_HEAD_REF"'),
     'main-only changes rerun authoritative planner and validator against the latest main');
-  ok(lessonRelease.includes('git merge --no-commit --no-ff "$latest_main"') &&
+  releaseWorkflowOk(lessonRelease.includes('git merge --no-commit --no-ff "$latest_main"') &&
     lessonRelease.includes('[ "$conflicts" != "data/daily/index.json" ]') &&
     lessonRelease.includes('git push origin "HEAD:$PR_HEAD_REF"'),
     'daily changes regenerate index on the original branch and reject lesson conflicts');
-  ok(!lessonRelease.includes('the synchronize run will recompute the index') &&
+  releaseWorkflowOk(!lessonRelease.includes('the synchronize run will recompute the index') &&
     !/git (?:pull --rebase|rebase|reset --hard)|git push[^\n]*(?:--force|-f\b)|\[skip ci\]/.test(lessonRelease),
     'lesson recovery never relies on bot synchronize approval, rebase, force push or skip ci');
-  ok(lessonRelease.includes('if [ "$main_moved" = "true" ]; then continue; fi') &&
+  releaseWorkflowOk(lessonRelease.includes('if [ "$main_moved" = "true" ]; then continue; fi') &&
     lessonRelease.includes('Lesson release retry limit') && lessonRelease.includes('dispatch_sync "$merge_sha"'),
     'late main movement shares the same bounded recovery and successful merge dispatches existing Sync');
   pausedOk(!/^  create:\s*$/m.test(sync), 'V4 paused: branch-create watcher is not an active workflow trigger');

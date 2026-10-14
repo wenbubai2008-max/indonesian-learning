@@ -154,10 +154,13 @@
   function selectReviews(ctx,count){
     const rows=reviewCandidates(ctx).filter(x=>!x.blocked)
       .sort((a,b)=>b.score-a.score||a.index-b.index);
-    const out=[];let repeated=0;
+    const out=[];let repeated=0,focusUsed=0;
+    // PM focus quota (review_rotation.focus_quota, 2026-10-04): at most 3 focus_pool words while non-focus words remain.
+    const focusCap=ctx.target.session==='pm'?3:Infinity;
     for(const r of rows){
       if(r.exposure>=3&&!r.fresh&&repeated>=1&&rows.some(x=>x.exposure<3&&!out.some(y=>y.word===x.word)))continue;
-      out.push(r);if(r.exposure>=3&&!r.fresh)repeated++;
+      if(r.focusScore>0&&focusUsed>=focusCap&&rows.some(x=>!(x.focusScore>0)&&!out.some(y=>y.word===x.word)))continue;
+      out.push(r);if(r.exposure>=3&&!r.fresh)repeated++;if(r.focusScore>0)focusUsed++;
       if(out.length===count)break;
     }
     return out;

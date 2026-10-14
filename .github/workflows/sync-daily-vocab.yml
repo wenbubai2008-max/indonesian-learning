@@ -238,6 +238,7 @@ jobs:
           node .github/scripts/test-publication-plan.js
           node .github/scripts/test-release-pr.js
           node .github/scripts/test-real-published-lesson.js
+          node .github/scripts/test-review-cycle.js
           node --check .github/scripts/reading-review.js
           node --check data/extensive-reading-history-ui.js
           node .github/scripts/test-extensive-reading.js

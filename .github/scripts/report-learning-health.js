@@ -117,7 +117,7 @@ function alerts(r){
   const max=x.session==='am'?ORAL_GUIDE.am_max:ORAL_GUIDE.pm_max;
   if(x.oral_new>max)a.push(`${x.date} ${x.session.toUpperCase()}: ${x.oral_new} oral new words of ${x.new_words} (guideline ~${x.session==='am'?2:1}, alert > ${max}): oral candidates will run out sooner`);
  }
- if(rw.est_days_until_all_new_exhausted<ALERT.all_new_days)a.push(`all new words run out in ~${rw.est_days_until_all_new_exhausted} days: the AM (exactly 10) / PM (3-4) new-word contracts cannot be met after that; the review-cycle lesson mode must be designed before then`);
+ if(rw.est_days_until_all_new_exhausted<ALERT.all_new_days)a.push(`all new words run out in ~${rw.est_days_until_all_new_exhausted} days: after that the review cycle takes over automatically (AM: remaining new words + cycle_vocab; PM: remaining new words + 4-9 reviews). Decide in time whether to add screened second-library words`);
  return a;
 }
 

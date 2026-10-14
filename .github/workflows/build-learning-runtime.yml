@@ -28,6 +28,9 @@ on:
       - '.github/scripts/test-cross-module-training.js'
       - '.github/scripts/test-handoff-drill.js'
       - '.github/scripts/test-training-sync.js'
+      - '.github/scripts/test-review-cycle.js'
+      - '.github/scripts/review-rotation.js'
+      - '.github/scripts/rank-review-candidates.js'
       - 'data/training-sync-client.js'
       - 'data/lesson-answer-signal.js'
       - 'cloudflare/weakness-sync-worker.js'
@@ -155,6 +158,7 @@ jobs:
           node --check data/training-sync-client.js
           node --check data/lesson-answer-signal.js
           node .github/scripts/test-training-sync.js
+          node .github/scripts/test-review-cycle.js
           node --check .github/scripts/build-vocab-profile.js
           node --check .github/scripts/write-vocab-profile-snapshot.js
           node --check .github/scripts/test-vocab-profile-snapshot.js
