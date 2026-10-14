@@ -40,7 +40,9 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
 #home #listenQuickCard:hover{border-color:#b4c8fa;background:#f3f7ff}
 /* First-paint dashboard: two aligned primary cards, then three compact training shortcuts. */
 #home .homeLearningGrid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,1fr);gap:12px;margin:0 0 12px;align-items:stretch}
-#home .homeLearningGrid > #vocabCoachHome,#home .homeLearningGrid > #vocabProfile{min-width:0;min-height:196px;height:100%;margin:0;padding:16px 18px;border-radius:18px}
+#home .homeLearningGrid > #vocabCoachHome,#home .homeLearningGrid > #vocabProfile{min-width:0;min-height:265px;height:100%;margin:0;padding:16px 18px;border-radius:18px}
+/* First paint reserves the FINAL height of the two script-filled cards (measured per width), so filling them never pushes the training cards down. */
+@media(max-width:856px) and (min-width:761px){#home .homeLearningGrid > #vocabCoachHome,#home .homeLearningGrid > #vocabProfile{min-height:286px}}
 #home .homeShortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 12px}
 #home .homeShortcuts>.homeShortcut{min-width:0;width:100%;min-height:82px;margin:0;border:1px solid #dce5f4;border-radius:15px;background:#fff;display:flex;align-items:center;text-align:left;gap:10px;padding:12px;cursor:pointer;color:#172033;box-shadow:0 2px 8px rgba(23,32,51,.025)}
 #home .homeShortcuts>.homeShortcut:hover{border-color:#9cb4e8;background:#f8faff}
@@ -61,7 +63,8 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
 #home .homeTrainingTitle{margin:12px 0 9px}
 @media(max-width:760px){
  #home .homeLearningGrid{grid-template-columns:1fr}
- #home .homeLearningGrid > #vocabCoachHome,#home .homeLearningGrid > #vocabProfile{min-height:0}
+ #home .homeLearningGrid > #vocabCoachHome{min-height:191px}
+ #home .homeLearningGrid > #vocabProfile{min-height:265px}
  #home .homeShortcuts{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
  #home .homeShortcuts>.homeShortcut{padding:10px 7px;gap:5px;min-height:78px}
  #home .homeShortcutIcon,#home .homeShortcuts .listenQuickIcon{width:29px;height:29px;flex-basis:29px;font-size:16px}
@@ -69,6 +72,9 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
  #home .homeShortcutText small,#home .homeShortcuts .listenQuickSub{font-size:11px}
  #home .homeShortcuts .listenQuickProgress,#home .homeShortcutArrow,#home .homeShortcuts .listenQuickArrow{display:none}
 }
+@media(max-width:360px){#home .homeLearningGrid > #vocabCoachHome{min-height:209px}}
+@media(max-width:332px){#home .homeLearningGrid > #vocabProfile{min-height:286px}}
+@media(max-width:328px){#home .homeLearningGrid > #vocabCoachHome{min-height:235px}}
 @media(max-width:410px){
  #home .homeShortcuts{grid-template-columns:1fr}
  #home .homeShortcuts>.homeShortcut{min-height:58px;padding:9px 11px}
