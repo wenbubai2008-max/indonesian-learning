@@ -13,7 +13,7 @@
       await load('data/vocab-bipa-toolbar-compact-20260917.js?v=20261014-mobile');
       await load('data/vocab-unified-ui-guard-20260917.js?v=20260917-level1');
       await load('data/vocab-flip-content-fix-20260917.js?v=20260917-level1');
-      await load('data/weakness-sync-client.js?v=20261014-qr1');
+      await load('data/weakness-sync-client.js?v=20261014-batch1');
       if(window.VocabController&&typeof window.VocabController.init==='function')await window.VocabController.init();
     }catch(e){console.error('[vocab controller boot]',e);var st=document.getElementById('dbStatus');if(st)st.textContent='词汇页面加载失败，请刷新页面重试';}
   }

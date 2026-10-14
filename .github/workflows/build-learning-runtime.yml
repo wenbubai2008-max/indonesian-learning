@@ -26,6 +26,8 @@ on:
       - '.github/scripts/test-vocab-profile-evidence.js'
       - '.github/scripts/test-vocab-study-coach.js'
       - '.github/scripts/test-cross-module-training.js'
+      - '.github/scripts/test-weakness-batch-import.js'
+      - 'data/weakness-sync-client.js'
       - '.github/scripts/test-handoff-drill.js'
       - '.github/scripts/test-training-sync.js'
       - '.github/scripts/test-review-cycle.js'
@@ -155,6 +157,8 @@ jobs:
           node .github/scripts/test-vocab-study-coach.js
           node --check .github/scripts/test-cross-module-training.js
           node .github/scripts/test-cross-module-training.js
+          node --check .github/scripts/test-weakness-batch-import.js
+          node .github/scripts/test-weakness-batch-import.js
           node --check .github/scripts/test-handoff-drill.js
           node .github/scripts/test-handoff-drill.js
           node --check data/training-sync-client.js

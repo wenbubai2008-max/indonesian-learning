@@ -142,9 +142,9 @@
     }
     save(pool);if(becameMastered)window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));return x;
   }
-  function importRecord(record){
-    if(!record||!record.word)return null;
-    const pool=migrate(),pair=ensureRecord(pool,record.word,record),k=pair[0],x=pair[1];if(!x)return null;
+  // Applies one cloud record to an already loaded pool. No storage write of the pool and no change event here.
+  function applyImportedRecord(pool,record){
+    const pair=ensureRecord(pool,record.word,record),k=pair[0],x=pair[1];if(!x)return null;
     x.status=record.status==='mastered'?'mastered':'active';
     x.reasons=uniq(Array.isArray(record.reasons)?record.reasons:[]);
     x.wrong_count=Math.max(0,Number(record.wrong_count||0));x.right_streak=Math.max(0,Number(record.right_streak||0));
@@ -153,7 +153,21 @@
       x.mastered_reason=x.mastered_reason||'cloud_sync';removeLegacyUnknown(k);
       const d=parse(LEGACY_DISMISSED);d[k]={word:x.word,at:ms(x.last_mastered)||Date.now()};localStorage.setItem(LEGACY_DISMISSED,JSON.stringify(d));
     }else{x.mastered_reason='';clearLegacyDismissed(k);}
+    return x;
+  }
+  function importRecord(record){
+    if(!record||!record.word)return null;
+    const pool=migrate(),x=applyImportedRecord(pool,record);if(!x)return null;
     save(pool);return x;
+  }
+  // 2026-10-14: batch import for the cloud pull. The pool is ~800KB: the old per-record path re-read it, re-wrote it and fired
+  // the change event once PER record (~50ms each), so a pull with hundreds of newer records froze the page for many seconds
+  // and, because the pull never finished, froze it again on every page load. One read, one write, one event.
+  function importRecords(records){
+    const list=(records||[]).filter(function(r){return r&&r.word;});if(!list.length)return 0;
+    const pool=migrate();let n=0;
+    list.forEach(function(r){if(applyImportedRecord(pool,r))n++;});
+    if(n)save(pool);return n;
   }
 
   // 2026-10-14: a wrong answer in the 08:00 quiz / 18:00 test is a real, dated error on a core word.
@@ -241,6 +255,6 @@
   }
   function exportActive(){return list('active').map(function(x){return Object.assign({},x);});}
 
-  window.WeaknessPool={KEY:KEY,norm:norm,migrate:migrate,get:get,all:all,listActive:function(){return list('active');},listMastered:function(){return list('mastered');},listListeningWeak:listeningWeak,activeMap:activeMap,focusMap:focusMap,isActive:isActive,markUnknown:markUnknown,enrich:enrich,markWeak:markWeak,markMastered:markMastered,markKnown:markKnown,reactivate:reactivate,removeReasons:removeReasons,importRecord:importRecord,recordPractice:recordPractice,recordLessonWrong:recordLessonWrong,recordListening:recordListening,syncSignals:syncSignals,primaryReason:primaryReason,restoreDismissed:restoreDismissed,exportActive:exportActive};
+  window.WeaknessPool={KEY:KEY,norm:norm,migrate:migrate,get:get,all:all,listActive:function(){return list('active');},listMastered:function(){return list('mastered');},listListeningWeak:listeningWeak,activeMap:activeMap,focusMap:focusMap,isActive:isActive,markUnknown:markUnknown,enrich:enrich,markWeak:markWeak,markMastered:markMastered,markKnown:markKnown,reactivate:reactivate,removeReasons:removeReasons,importRecord:importRecord,importRecords:importRecords,recordPractice:recordPractice,recordLessonWrong:recordLessonWrong,recordListening:recordListening,syncSignals:syncSignals,primaryReason:primaryReason,restoreDismissed:restoreDismissed,exportActive:exportActive};
   migrate();
 })();
