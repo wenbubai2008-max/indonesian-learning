@@ -43,6 +43,16 @@ Before changes: regression guard 1519 checks passed; vocabulary UI guard passed.
 
 After changes: regression guard 1519 checks passed; vocabulary UI guard passed; all 17 `.github/scripts/test-*.js` scripts passed (including 25 release-PR cases); both changed guards passed `node --check` and the diff passed `git diff --check`. The four protected frontend cache hashes still match their unchanged script content. The initial test run lacked a local `origin/main` ref; after restoring a verified local main snapshot, the five affected test scripts were rerun successfully without changing any tests.
 
-The full before/after matrix must cover homepage, AM, PM, extensive reading, vocabulary, root families, weakness, quick practice, listening, automatic training, calendar, difficulties, and profile at widths 1366/1000/600/390. An additional pre-2026-09-16 PM case protects the 19:00 history rule. The fixture includes weak-pool, quick/listen/auto progress and dummy sync configuration; it never contacts the production Worker.
+The full before/after matrix is now complete: homepage, AM, PM, extensive reading, vocabulary, root families, weakness, quick practice, listening, automatic training, calendar, difficulties, and profile at widths 1366/1000/600/390. All 52 screenshot pairs are byte-identical JPEGs (therefore identical decoded pixels); all 52 DOM text snapshots are identical. The additional 2026-09-15 PM case at 390px retains 19:00 in both versions. Async lesson/reading/calendar captures wait for actual content readiness rather than capturing loading placeholders.
 
-**Do not merge until the full screenshot/storage comparison is complete.** During baseline capture the browser automation transport disconnected (`Transport closed`); the initial homepage screenshot alone is not full acceptance. No screenshot equivalence or post-merge Pages verification is claimed yet.
+The storage fixture covers all 24 literal indo_* keys and the four indo_bipa_mem_ level keys found in active top-level frontend scripts and index.html. It contains weak-pool entries, quick/listen/auto progress and dummy sync configuration. The existing ceria quick/listen counts, auto stage 2 and next_due, memory states and sync endpoint/key/device remain intact. Weakness-pool normalization enriches the existing entry identically in both versions, preserving wrong_count, status and original timestamps. All requests to the dummy sync endpoint are mocked; the production Worker is never contacted. No console warnings/errors or 404 responses were observed during the full matrix.
+
+## Remaining merge blocker: pre-existing homepage movement
+
+Frame-by-frame sampling found a baseline acceptance failure in BOTH versions. The visible tool cards keep identical order, dimensions and 5/3/2/1 column layouts, but their absolute vertical position changes while the upper coach/profile modules initialize:
+- 1366px: y=637 -> 675 -> 702 (65px total).
+- 1000px: first-row y=637 -> 675 -> 702 (65px total).
+- 600px: first-row y=737 -> 982 -> 1009 (272px total).
+- 390px: first card y=847 -> 1092 -> 1119 (272px total; the intermediate sample can be skipped depending on timing).
+
+This is not caused by deleting unloaded files. Nevertheless, the user's absolute acceptance requirement that homepage cards must not move during loading is not satisfied. Do not relabel this as passing and do not weaken the guard or expand stage 1 into the later styling phase. PR remains Draft/unmerged pending resolution of this baseline requirement. No post-merge Pages deployment is claimed; stages 2-6 have not started.
