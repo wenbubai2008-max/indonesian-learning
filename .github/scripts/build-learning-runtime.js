@@ -203,7 +203,7 @@ for(const x of activeMap.values()){
   const k=key(x.word);if(!dailySet.has(k))continue;
   const reasons=Array.isArray(x.reasons)?x.reasons:[];
   let p=4;
-  if(reasons.includes('quick_wrong')||reasons.includes('manual_unknown'))p=1;
+  if(reasons.includes('quick_wrong')||reasons.includes('lesson_wrong')||reasons.includes('manual_unknown'))p=1;
   else if(reasons.includes('listening_wrong')||reasons.includes('memory_dont')||reasons.includes('bipa_secondary_dont'))p=2;
   else if(reasons.includes('listening_slow')||reasons.includes('memory_fuzzy')||reasons.includes('bipa_secondary_fuzzy'))p=3;
   const d=dailyMeta.get(k)||{};
@@ -229,6 +229,7 @@ for(const x of activeMap.values()){
   let score=0,signals=[];
   if(reasons.includes('automation_fail')){score+=50;signals.push('automation_fail');}
   if(reasons.includes('quick_wrong')){score+=36;signals.push('quick_wrong');}
+  if(reasons.includes('lesson_wrong')){score+=36;signals.push('lesson_wrong');}
   if(reasons.includes('listening_wrong')){score+=32;signals.push('listening_wrong');}
   if(reasons.includes('manual_unknown')||reasons.includes('seed_unfamiliar')){score+=30;signals.push('unknown');}
   if(reasons.includes('memory_dont')||reasons.includes('bipa_secondary_dont')){score+=28;signals.push('dont');}

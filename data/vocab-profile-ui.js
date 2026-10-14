@@ -2,7 +2,7 @@
   'use strict';
   let PROFILE=null,activeTab='today',activeWeak='',historyState='idle',selectedWord='',wordQuery='';
   const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]));
-  const signalLabel={automation_fail:'自动训练失败',quick_wrong:'快速练习答错',dont:'明确不会',fuzzy:'标记模糊',unknown:'陌生词',manual_unknown:'陌生词'};
+  const signalLabel={automation_fail:'自动训练失败',quick_wrong:'快速练习答错',lesson_wrong:'课程小测答错',dont:'明确不会',fuzzy:'标记模糊',unknown:'陌生词',manual_unknown:'陌生词'};
   function evidenceData(){
     return window.VocabProfileEvidence?window.VocabProfileEvidence.summarize():{attempts:0,observed:0,active:0,passive:0,forgotten:0,relearned:0};
   }
@@ -139,7 +139,7 @@
     if(!box){box=document.createElement('section');box.id='vocabProfile';box.className='vocabProfile';const hero=home.querySelector(':scope > .hero'),mods=document.getElementById('homeModules');if(hero)hero.insertAdjacentElement('afterend',box);else if(mods&&mods.parentNode)mods.parentNode.insertBefore(box,mods);else home.appendChild(box)}
     const focus=(data.focus_words||[]).slice(0,6);
     box.innerHTML='<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">真实学习与验证状态</div></div><span class="pill">网站快照</span></div><div class="vpHomeNumbers"><div><span>正式学习</span><b>'+data.taught_total+'</b></div><div><span>确认掌握</span><b>'+data.confirmed_mastered+'</b></div><div><span>待强化</span><b>'+data.needs_reinforcement+'</b></div><div><span>待验证</span><b>'+data.unverified+'</b></div><div class="vpHomeNumbersLast"><span>主词库待学习</span><b>'+data.primary_eligible_new_total+'</b></div></div><button class="vpOpen" type="button" id="openVocabProfile">查看能力与逐词档案 →</button>';
-    box.querySelector('#openVocabProfile').onclick=openDetail;
+    box.querySelector('#openVocabProfile').onclick=()=>openDetail('overview');
     ensureDetailPage();renderDetail();renderHomeCoach();
   }
   function trendHTML(data){

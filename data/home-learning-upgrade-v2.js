@@ -7,7 +7,8 @@
     var tag=document.getElementById('vocabTag');
     if(!tag)return;
     var count=(window.DAILY_VOCAB_DB||[]).length||(window.EMBEDDED_DB||[]).length||0;
-    if(count)tag.textContent=count+' 个词';
+    if(window.VocabController&&typeof window.VocabController.updateStats==='function')window.VocabController.updateStats(); // the controller owns this label once loaded
+    else if(count)tag.textContent=count+' 个词';
   }
   function ensurePage(id,title,bodyId){if(document.getElementById(id))return;var app=document.querySelector('.app');if(!app)return;var sec=document.createElement('section');sec.id=id;sec.className='page';sec.innerHTML='<button class="back" onclick="go(\'home\')">← 返回首页</button><div class="card"><div class="sectionHead"><h2>'+title+'</h2><span class="pill" id="'+id+'Meta"></span></div><div id="'+bodyId+'"></div></div>';app.appendChild(sec);}
   function setupPages(){ensurePage('quickPractice','快速练习','quickPracticeBody');ensurePage('weakness','弱项强化','weaknessBody');ensurePage('extensive','泛读','extensiveBody');}

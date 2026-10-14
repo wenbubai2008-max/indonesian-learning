@@ -98,4 +98,8 @@ const historic=app(['prior'],[{word:'prior',last_mastered:new Date(start-5*D).to
 assert.equal(historic.coach.status('quick','prior',start).stable,true,'Historical explicit mastery is respected without forging three dated choices');
 assert.equal(historic.coach.status('quick','prior',start).ready,false);
 assert.equal(historic.store.has('data/daily-vocab-data.js'),false,'Scheduler never alters lesson eligibility source');
+// 2026-10-14: never-practiced words are not served alphabetically; the longest-unseen lesson word comes first.
+const tie=app(['acara','zaman','tetangga']);
+tie.root.DAILY_VOCAB_DB[0].last_seen='2026-10-13 08:00';tie.root.DAILY_VOCAB_DB[1].last_seen='2026-09-01 08:00';tie.root.DAILY_VOCAB_DB[2].last_seen='2026-10-01 18:00';
+assert.deepEqual(Array.from(tie.coach.candidates('auto',start).map(x=>x.word)),['zaman','tetangga','acara'],'Ties go to the word longest without a lesson appearance, not to alphabetical order');
 console.log('Study coach tests passed: independent abilities and due dates, 2/7/30-day ladder, backlog, persistent rounds, legacy mastery, requested verification.');

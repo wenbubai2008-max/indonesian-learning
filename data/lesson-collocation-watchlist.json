@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "note": "Collocations the user flagged in lesson reviews (docs/LESSON-QUALITY.md). check-collocations.js warns when a lesson or reading candidate contains one; it never blocks publishing. Add new entries whenever a review flags an unnatural phrase.",
+  "entries": [
+    {
+      "pattern": "\\bsuhu\\b[a-z ,]{0,25}\\bpanas\\b",
+      "better": "Suhu ... tinggi banget / Siang ini panas banget",
+      "why": "suhu 是温度数值，不说 suhu panas（像“温度很热”）",
+      "source": "Day 54"
+    },
+    {
+      "pattern": "\\bkhas\\s+batik\\b",
+      "better": "batik khas Solo",
+      "why": "khas 紧跟被修饰的名词之后",
+      "source": "Day 54"
+    },
+    {
+      "pattern": "\\bkain\\s+motif\\s+khas\\b",
+      "better": "kain bermotif khas … / kain dengan motif khas …",
+      "why": "名词直接接 motif khas 不自然",
+      "source": "Day 54"
+    },
+    {
+      "pattern": "\\bmenerapkan\\s+harga\\b",
+      "better": "memberlakukan harga khusus / kasih harga khusus",
+      "why": "menerapkan 搭配 strategi / sistem / aturan",
+      "source": "Day 54"
+    },
+    {
+      "pattern": "\\bpembeli\\s+langganan\\b",
+      "better": "pelanggan tetap",
+      "why": "老顾客的地道说法",
+      "source": "Day 54"
+    },
+    {
+      "pattern": "\\bkemudian\\s+(bagaimana|gimana)\\b",
+      "better": "Terus gimana?",
+      "why": "口语里的“然后呢”用 terus / lalu",
+      "source": "Day 54"
+    },
+    {
+      "pattern": "\\bmenghasilkan\\s+keputusan\\b",
+      "better": "mengambil keputusan / membuat keputusan",
+      "why": "“作出决定”的固定搭配",
+      "source": "Day 43–45"
+    },
+    {
+      "pattern": "\\bterpeleset\\s+kulit\\b",
+      "better": "terpeleset karena menginjak kulit pisang",
+      "why": "不能直接接名词",
+      "source": "Day 43–45"
+    },
+    {
+      "pattern": "\\bpunya\\s+hak\\s+ikut\\b",
+      "better": "tidak boleh mengikuti ujian / kehilangan hak untuk mengikuti ujian",
+      "why": "生硬",
+      "source": "Day 43–45"
+    },
+    {
+      "pattern": "\\bmelepaskan\\s+gaji\\b",
+      "better": "melepaskan tawaran dengan gaji yang lebih besar",
+      "why": "放弃的是工作机会，不是工资",
+      "source": "Day 48"
+    },
+    {
+      "pattern": "\\bnyantai\\s+aja\\s+dulu\\b",
+      "better": "Santai aja dulu",
+      "why": "劝人别急用 santai；nyantai 作动作：Kita nyantai dulu aja",
+      "source": "Day 48"
+    },
+    {
+      "pattern": "\\bsudah\\s+nanggung\\s+kalau\\b",
+      "better": "Udah nanggung, jangan berhenti sekarang!",
+      "why": "nanggung 放进口语引语更自然",
+      "source": "Day 43–45"
+    }
+  ]
+}

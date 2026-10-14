@@ -25,7 +25,9 @@
       card.addEventListener('click',def.open);box.appendChild(card);
     });
     const vt=document.getElementById('vocabTag'),count=(window.DAILY_VOCAB_DB||[]).length||(window.EMBEDDED_DB||[]).length||0;
-    if(vt&&count)vt.textContent=count+' 个词';
+    // The library-aware VocabController owns this label once loaded; re-rendering the card must not replace it.
+    if(vt&&window.VocabController&&typeof window.VocabController.updateStats==='function')window.VocabController.updateStats();
+    else if(vt&&count)vt.textContent=count+' 个词';
     if(window.AutomationTraining&&typeof window.AutomationTraining.refreshTag==='function')setTimeout(window.AutomationTraining.refreshTag,0);
   }
   window.renderHomeModules=renderHomeModules;

@@ -156,6 +156,13 @@
     save(pool);return x;
   }
 
+  // 2026-10-14: a wrong answer in the 08:00 quiz / 18:00 test is a real, dated error on a core word.
+  function recordLessonWrong(word,item){
+    const pool=migrate(),k=norm(word);if(!k)return null;
+    const pair=ensureRecord(pool,word,item||{}),x=pair[1];if(!x)return null;
+    x.status='active';x.mastered_reason='';setReason(x,'lesson_wrong');x.wrong_count=(x.wrong_count||0)+1;x.right_streak=0;
+    x.last_wrong=nowISO();x.last_review=x.last_wrong;x.last_seen=x.last_wrong;clearLegacyDismissed(k);save(pool);return x;
+  }
   function recordPractice(word,ok,item){
     const pool=migrate(),k=norm(word);if(!k)return null;
     let x=pool[k]||null;
@@ -198,6 +205,7 @@
     if(r.includes('memory_fuzzy'))return '模糊';
     if(r.includes('manual_unknown')||r.includes('seed_unfamiliar'))return '陌生词';
     if(r.includes('quick_wrong'))return '快速练习错题';
+    if(r.includes('lesson_wrong'))return '课程小测答错';
     if(r.includes('listening_wrong'))return '听音连续答错';
     if(r.includes('listening_slow'))return '听音反应慢';
     if(r.includes('automation_fail'))return '自动训练不稳';
@@ -233,6 +241,6 @@
   }
   function exportActive(){return list('active').map(function(x){return Object.assign({},x);});}
 
-  window.WeaknessPool={KEY:KEY,norm:norm,migrate:migrate,get:get,all:all,listActive:function(){return list('active');},listMastered:function(){return list('mastered');},listListeningWeak:listeningWeak,activeMap:activeMap,focusMap:focusMap,isActive:isActive,markUnknown:markUnknown,enrich:enrich,markWeak:markWeak,markMastered:markMastered,markKnown:markKnown,reactivate:reactivate,removeReasons:removeReasons,importRecord:importRecord,recordPractice:recordPractice,recordListening:recordListening,syncSignals:syncSignals,primaryReason:primaryReason,restoreDismissed:restoreDismissed,exportActive:exportActive};
+  window.WeaknessPool={KEY:KEY,norm:norm,migrate:migrate,get:get,all:all,listActive:function(){return list('active');},listMastered:function(){return list('mastered');},listListeningWeak:listeningWeak,activeMap:activeMap,focusMap:focusMap,isActive:isActive,markUnknown:markUnknown,enrich:enrich,markWeak:markWeak,markMastered:markMastered,markKnown:markKnown,reactivate:reactivate,removeReasons:removeReasons,importRecord:importRecord,recordPractice:recordPractice,recordLessonWrong:recordLessonWrong,recordListening:recordListening,syncSignals:syncSignals,primaryReason:primaryReason,restoreDismissed:restoreDismissed,exportActive:exportActive};
   migrate();
 })();
