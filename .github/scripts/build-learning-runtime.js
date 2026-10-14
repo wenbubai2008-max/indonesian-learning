@@ -1,4 +1,4 @@
-const fs=require('fs'),vm=require('vm'),zlib=require('zlib');
+const fs=require('fs'),vm=require('vm'),zlib=require('zlib'),path=require('path');
 
 const rules=JSON.parse(fs.readFileSync('data/learning-pool-rules.json','utf8'));
 if(Number(rules.master_total)!==977) throw new Error('learning-pool-rules master_total must be 977');
@@ -309,6 +309,16 @@ if(/ 08:00$/.test(lessonWatermark)){
     const row=reviewByKeyAll.get(k);if(!row)continue;
     seenNow.add(k);sameDayAmExposed.push(row);
   }
+  // Review cycle (2026-10-14): that lesson's cycle_vocab words (old words reviewed at 08:00) are PM application material too.
+  try{
+    const amFile=path.join('data','daily',lessonWatermark.slice(0,10)+'-am.json');
+    if(fs.existsSync(amFile)){
+      for(const w of (JSON.parse(fs.readFileSync(amFile,'utf8')).cycle_vocab||[])){
+        const k=key(w);if(!k||seenNow.has(k))continue;const row=reviewByKeyAll.get(k);if(!row)continue;
+        seenNow.add(k);sameDayAmExposed.push(row);
+      }
+    }
+  }catch(e){throw new Error('Cannot read same-day AM cycle_vocab: '+e.message)}
   reviewExposed=[...reviewExposed,...sameDayAmExposed];
 }
 // Natural-recurrence pool (2026-10-07): every other A ∩ D word (plus the remaining legacy unverified words) in a minimal

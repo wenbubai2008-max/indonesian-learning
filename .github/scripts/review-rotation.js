@@ -35,7 +35,7 @@ function ledgerConfig(r,date){
 const lessonTime=h=>Date.parse(h.date+'T'+(h.session==='am'?'08:00:00':h.date<'2026-09-16'?'19:00:00':'18:00:00')+'+07:00');
 /** Active exposures of one lesson: AM.review_vocab; PM review, plus PM application when the ledger is on. */
 function activeWords(h,ledger){
- if(h.session==='am')return ws(h.review_vocab);
+ if(h.session==='am')return [...ws(h.review_vocab),...ws(h.cycle_vocab)]; // review-cycle words (2026-10-14) are active reviews too
  return ws((h.vocab||[]).filter(v=>v&&(v.source_group==='review'||(ledger&&v.source_group==='application'))));
 }
 
@@ -216,7 +216,7 @@ function lastExposureDays(date,longHistory,includeApplication=false){
 // Stale bonus: only beyond the 7-day window, capped (30) so it never outranks a fresh real error (+100).
 const staleBonus=d=>d==null||d<=7?0:Math.min(30,Math.round((d-7)*0.75));
 
-function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null,reviewCount=5,amVocab=[],amReview=[],passiveTexts=[]}){
+function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null,reviewCount=5,amVocab=[],amReview=[],passiveTexts=[],cycleCount=0}){
  const cfg=config(rotation,date),L=cfg.ledger,ctx=analyze({date,session,runtime,reviewHistory,ledger:L,passiveTexts});
  const pmRules=session==='pm'; // recent-4-day cap and focus quota are PM rules
  const recentCfg=pmRules?cfg.recent:null,focusCfg=pmRules?cfg.focus:null;
@@ -237,7 +237,7 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
   if(sb){score+=sb;reasons.push('stale_'+staleDays+'d(+'+sb+')')}
   const why=ctx.why(w),blocked=why.length>0,recent=recentCfg?isRecent(i,recentCfg.days)&&!i.fresh:false;
   if(blocked)reasons.push('blocked:'+why.join('+'));
-  return {word:w,score,stale_days:staleDays,legacy:i.priority===5,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,hard,focus:i.focus,recent4:recent,blocked,blocked_by:why,am_core:am.has(w),reasons};
+  return {word:w,score,stale_days:staleDays,priority:i.priority,wrong_count:i.wrongCount,legacy:i.priority===5,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,hard,focus:i.focus,recent4:recent,blocked,blocked_by:why,am_core:am.has(w),reasons};
  }).sort((a,b)=>b.score-a.score||a.word.localeCompare(b.word));
  const amNew=new Set(amVocab.map(norm)); // today's 08:00 new words are PM application material, never PM core review
  const usable=items.filter(x=>!x.blocked&&(x.count<3||x.fresh)&&!(pmRules&&amNew.has(x.word)));
@@ -262,6 +262,24 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
    if(!pick.includes(x)){take(x);notes.push('fallback_used:'+x.word)}}
  }
  const used=new Set(pick.map(x=>x.word));
+ // Review cycle (2026-10-14, user decision): when the AM has fewer than 10 new words, the free cards go to review-cycle
+ // words, half to the weakest words and half to the words longest unseen in any lesson; either half fills the other's gap.
+ let cycle=null;
+ if(!pmRules&&cycleCount>0){
+  const rest=usable.filter(x=>!used.has(x.word)&&!x.legacy);
+  const weakScore=x=>(x.fresh?100:0)+(x.focus?30:0)+({1:20,2:12,3:6}[x.priority]||0)+Math.min(x.wrong_count||0,5)*3;
+  const staleOf=x=>x.stale_days==null?60:x.stale_days; // never seen in the long history = treat as very stale
+  const weak=rest.slice().sort((a,b)=>weakScore(b)-weakScore(a)||b.score-a.score||a.word.localeCompare(b.word));
+  const stale=rest.slice().sort((a,b)=>staleOf(b)-staleOf(a)||b.score-a.score||a.word.localeCompare(b.word));
+  const chosen=[],taken=new Set();let heavy=pick.filter(x=>x.count>=3).length;
+  const grab=(list,n,tag)=>{for(const x of list){if(chosen.filter(c=>c.tag===tag).length>=n)break;if(taken.has(x.word))continue;if(x.count>=3&&heavy>=1)continue;if(x.count>=3)heavy++;taken.add(x.word);chosen.push({word:x.word,tag,weak_score:weakScore(x),stale_days:x.stale_days})}};
+  const nWeak=Math.ceil(cycleCount/2);
+  grab(weak,nWeak,'weak');grab(stale,cycleCount-chosen.length,'stale');
+  if(chosen.length<cycleCount)grab(weak,cycleCount-chosen.filter(c=>c.tag==='stale').length,'weak');
+  cycle={active:true,cycle_count:cycleCount,cycle_words:chosen.map(c=>c.word),weak:chosen.filter(c=>c.tag==='weak').map(c=>c.word),stale:chosen.filter(c=>c.tag==='stale').map(c=>c.word),detail:chosen};
+  if(chosen.length<cycleCount)notes.push('review_cycle_short:'+chosen.length+'/'+cycleCount);
+  chosen.forEach(c=>used.add(c.word));
+ }
  const deferred=usable.filter(x=>x.fresh&&!used.has(x.word)).map(x=>x.word);
  if(deferred.length)notes.push('fresh_errors_deferred_to_next_lesson:'+deferred.join(','));
  const amSet=new Set(amVocab.map(norm));
@@ -269,7 +287,7 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
   .slice(0,6).map(x=>({word:x.word,from_today_am_vocab:amSet.has(x.word),fresh:x.fresh,hard:x.hard})):[];
  // Words actively used very recently (or on a streak): keep them out of tonight's reading/dialogue/examples too.
  const avoid=L?items.filter(x=>!used.has(x.word)&&!amSet.has(x.word)&&x.blocked_by.some(r=>r.startsWith('active_')||r.startsWith('streak_'))).map(x=>x.word).sort():[];
- return {date,session,review_pool_size:items.length,recent_window_days:recentCfg?recentCfg.days:null,
+ return {date,session,review_cycle:cycle,review_pool_size:items.length,recent_window_days:recentCfg?recentCfg.days:null,
   recommended_review:pick.map(x=>x.word),recommended_detail:pick,
   counts:{recent4:recentUsed,focus:focusUsed,heavy_3plus:heavyUsed,fresh_errors:freshUsed,fresh_error_cap:Number.isFinite(errCap)?errCap:null},
   fresh_errors_deferred:deferred,application_candidates:apps,avoid_in_text:avoid,notes,ranking_top:items.filter(x=>!x.blocked).slice(0,25)};

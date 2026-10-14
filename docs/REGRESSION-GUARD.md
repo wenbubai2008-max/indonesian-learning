@@ -386,3 +386,14 @@
 - **不变**：新词 / 复习公式、课程合同、冷却与轮换、曝光账本、发布流程。
 - **补充（同日第二批）**：晚课排序题答错时，答案句里只有一个核心词才记 `lesson_wrong`；自检每条下面列出它提到的核心词，可点“卡住了”记一笔（`lessonSelfStuck`，只改渲染，`selfCheckHtml(items)` 签名和课程 JSON 不变）；首页画像卡显示“近 7 天”变化（掌握数不涨时标橙）；训练进度跨设备同步：Worker 新增 `/training`（只存 KV），网站端 `data/training-sync-client.js`，Worker 未更新时 404 → 6 小时退避，不影响弱项同步。测试 `test-training-sync.js`（两台模拟设备经真实 Worker 代码同步）已加入 Build learning runtime。
 - **本地复现 Build 步骤时注意**：工作流 Recompute 步骤的 for 循环里有 `git reset --hard origin/main`，只截取到 `vocab-ui-regression-guard.js` 为止的命令来跑，否则会清掉本地未提交的修改。
+
+## 18. 2026-10-14 复习循环课程形态（用户决定）
+
+- **用户决定**：新词学完后进入复习循环。早课把原来 10 个新词的名额换成复习词；晚课结构不变，只是没有新词；一个词“确认掌握”后退出循环；选词兼顾最弱的词和最久没出现的词（各一半，不足互补）。
+- **自动切换**：校验器按 runtime 判断，没有开关。合法新词不足 10 个时，早课用上全部剩余新词，其余名额填循环词（根字段 `cycle_vocab`）；当晚剩余新词不足 3 个时，晚课 new 组等于全部剩余新词（0–2），review 4–9，application 2–3，总数仍为 10–12。新词充足时行为与以前完全一致（`cycle_vocab` 必须为空）。
+- **选词**：`rank-review-candidates.js` 输出 `review_cycle`（AM：`cycle_words` / `weak` / `stale`；PM：`review_target`）。循环词与 `review_vocab` 不重叠，遵守曝光账本、冷却和“7 天 ≥3 次最多 1 个”。
+- **记账**：`cycle_vocab` 计为主动曝光（`activeWords`）；晚课把它们当作“今天08:00复习过的老词”（不是新词）；runtime 在 08:00 水位时把当天的循环词追加进 review_pool（并入 `same_day_am_review_exposed`），供晚课 application 使用；每日同步对已学词只更新出现时间，不需要改工作流。
+- **不变**：新词公式、复习公式、mastered 判定、课程其他结构、发布流程、`learning-pool-rules.json`（没有修改，避免改变 lesson-context 的规则哈希）。
+- **测试**：`test-review-cycle.js`（真实课程文件构造：早课 4+6、缺 cycle_vocab、未用完剩余新词、循环词不在 review_pool、正常模式拒绝 cycle_vocab、晚课 0 新词扩展复习、08:00 老词标记、账本、排序各半）。
+- **第二词库扩充的筛选入口（同日）**：词汇学习 → BIPA 各级默认显示“只看可加入第二词库、还没筛选过的词”（不在 977 主词库、B2 只看 S 级、在任何已同步设备上都没有学习记录；开关在工具栏下方，单独一行，不改变工具栏网格）。按真实数据：A1 217、A2 170、B1 42、B2 19（跨级重复的词在一级标过后，其他级自动隐藏），去重后约 424 个。标“模糊/不会”的词经现有 `bipa-secondary-seed` 自动进入第二词库新词池，标“认识”的词排除，流程不变。同时修复手机端 BIPA 工具栏被最长选项撑宽（`minmax(0,1fr)`）。
+- **CI 修复（同日）**：Sync preflight 的“停用的 V4 备用生成器演练”用当天数据生成晚课，选出 5 个 focus 词，被 planner 以 `PM_FOCUS_MIX_HIGH` 拒绝，导致所有改到课程脚本的代码 PR 预检都失败（main 上同样失败）。原因是 V4 停用前没有跟上 2026-10-04 的“晚课 focus 词 2–3 个”规则。现在 `prototype/lesson-engine/engine/core.js` 的 `selectReviews` 在晚课最多选 3 个 focus 词（还有非 focus 候选时）。V4 仍然停用，这只是让演练符合现行规则。
