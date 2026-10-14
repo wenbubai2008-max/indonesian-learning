@@ -115,17 +115,24 @@
     if(typeof p.enrich==='function')p.enrich(r.word,item);
   }
 
+  function applyRemoteRecords(list){
+    const p=pool();if(!p||!list.length)return;
+    if(typeof p.importRecords==='function'){p.importRecords(list);return;}
+    list.forEach(applyRemoteRecord);
+  }
+
   async function pullRemote(){
     if(!configured()||!navigator.onLine)return {changed:0};
     const data=await request('/state');const remote=data&&data.words||{},local=currentMaps(),meta=local.meta;
-    let changed=0,localNewer=0;applyingRemote=true;
+    let changed=0,localNewer=0;const batch=[];applyingRemote=true;
     try{
       Object.keys(remote).forEach(function(k0){
         const r=remote[k0]||{},k=norm(r.word||k0);if(!k)return;
         const rt=Date.parse(r.updated_at||0)||0,lt=Date.parse((meta[k]||{}).updated_at||0)||0;
-        if(rt>lt){applyRemoteRecord(Object.assign({},r,{word:r.word||k}));meta[k]={updated_at:new Date(rt).toISOString()};changed++;}
+        if(rt>lt){batch.push(Object.assign({},r,{word:r.word||k}));meta[k]={updated_at:new Date(rt).toISOString()};changed++;}
         else if(lt>rt)localNewer++;
       });
+      applyRemoteRecords(batch); // one pool read/write for the whole pull (was one per record)
     }finally{applyingRemote=false;}
     save(META_KEY,meta);refreshShadow();
     if(localNewer>0)scheduleSync(1200);
