@@ -76,7 +76,9 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     if(valid&&has(q,"answer"))check(norm(q.answer)===norm(opts[a]),"ANSWER_MISMATCH","Question "+(i+1)+" answer vs index");
     return valid?norm(opts[a]):"";
   };
-  const amNewWords=new Set(ws(sameDayAm?.vocab)),amReviewWords=new Set(ws(sameDayAm?.review_vocab));
+  // Review cycle (2026-10-14): words in the same-day AM's cycle_vocab are old words reviewed at 08:00, not new words.
+  const amCycleWords=new Set(ws(sameDayAm?.cycle_vocab));
+  const amNewWords=new Set(ws(sameDayAm?.vocab).filter(w=>!amCycleWords.has(w))),amReviewWords=new Set([...ws(sameDayAm?.review_vocab),...amCycleWords]);
   const amWords=new Set([...amNewWords,...amReviewWords]);
   if(session==="am"){
     check(vocab.length===10,"AM_CORE_COUNT","Exactly 10 new words required");
@@ -87,9 +89,23 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
       prevNew.forEach(w=>check(!newPool.has(w),"BASELINE_SYNC_STALE","Previous PM word still new: "+w));
     }
     const availDont=[...dont].filter(w=>newPool.has(w)&&!prevNew.has(w));
-    vw.forEach(w=>{pool(w,newPool,"NEW_WORD_INELIGIBLE");check(dont.has(w)||fuzzy.has(w),"NEW_MEMORY_POOL_INVALID",w);check(!unclassified.has(w),"UNCLASSIFIED_NEW_WORD",w);check(!prevNew.has(w),"CROSS_DAY_NEW_REPEAT",w)});
-    if(availDont.length>=10)check(vw.every(w=>dont.has(w)),"AM_DONT_PRIORITY","10 available dont -> choose 10 dont");
-    else check(vw.filter(w=>dont.has(w)).length===availDont.length,"AM_DONT_PRIORITY","Exhaust dont before fuzzy fallback");
+    // Review cycle (2026-10-14, user decision): when fewer than 10 legal new words remain, the AM teaches every remaining
+    // new word and fills the rest of its 10 cards with review-cycle words, listed in root cycle_vocab (all from review_pool).
+    const availNew=[...newPool].filter(w=>!prevNew.has(w)&&!unclassified.has(w)&&(dont.has(w)||fuzzy.has(w)));
+    const amCycle=availNew.length<10,cycleVocab=ws(lesson.cycle_vocab);
+    const newPart=amCycle?vw.filter(w=>newPool.has(w)):vw;
+    if(!amCycle)check(!has(lesson,"cycle_vocab")||cycleVocab.length===0,"CYCLE_NOT_ACTIVE","cycle_vocab is only allowed when fewer than 10 legal new words remain ("+availNew.length+" available)");
+    else{
+      const cyc=vw.filter(w=>!newPool.has(w));
+      check(availNew.every(w=>vw.includes(w)),"CYCLE_NEW_REQUIRED","Review cycle: teach every remaining new word first; missing "+availNew.filter(w=>!vw.includes(w)).join(", "));
+      check(Array.isArray(lesson.cycle_vocab)&&JSON.stringify([...cyc].sort())===JSON.stringify([...cycleVocab].sort()),"CYCLE_VOCAB_MISMATCH","cycle_vocab must list exactly the vocab words that are not new: "+cyc.join(", "));
+      cyc.forEach(w=>{pool(w,reviewPool,"CYCLE_WORD_INELIGIBLE");const v=vocab.find(x=>word(x)===w);check(v&&v.is_oral_new===false,"CYCLE_ORAL_FLAG",w)});
+    }
+    newPart.forEach(w=>{pool(w,newPool,"NEW_WORD_INELIGIBLE");check(dont.has(w)||fuzzy.has(w),"NEW_MEMORY_POOL_INVALID",w);check(!unclassified.has(w),"UNCLASSIFIED_NEW_WORD",w);check(!prevNew.has(w),"CROSS_DAY_NEW_REPEAT",w)});
+    if(!amCycle){
+      if(availDont.length>=10)check(vw.every(w=>dont.has(w)),"AM_DONT_PRIORITY","10 available dont -> choose 10 dont");
+      else check(vw.filter(w=>dont.has(w)).length===availDont.length,"AM_DONT_PRIORITY","Exhaust dont before fuzzy fallback");
+    }
     const oralEligible=[...oral].filter(w=>newPool.has(w)&&!prevNew.has(w));
     const oralDontEligible=oralEligible.filter(w=>dont.has(w));
     const oralFuzzyEligible=oralEligible.filter(w=>fuzzy.has(w));
@@ -116,7 +132,11 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     check(range(vocab.length,10,12),"PM_CORE_COUNT","10-12 core words required");
     const groups={new:vocab.filter(v=>v?.source_group==="new"),review:vocab.filter(v=>v?.source_group==="review"),application:vocab.filter(v=>v?.source_group==="application")};
     check(vocab.every(v=>["new","review","application"].includes(v?.source_group)),"PM_GROUP_INVALID","Invalid PM source_group");
-    check(range(groups.new.length,3,4)&&range(groups.review.length,4,6)&&range(groups.application.length,2,3),"PM_GROUP_COUNT","3-4 new, 4-6 review, 2-3 application");
+    // Review cycle (2026-10-14): fewer than 3 legal new words left for tonight -> teach all of them (0-2), and the review
+    // group grows (4-9) so the lesson keeps its 10-12 core cards.
+    const availNewPm=[...newPool].filter(w=>!amWords.has(w)&&!unclassified.has(w)&&(dont.has(w)||fuzzy.has(w)));
+    if(availNewPm.length>=3)check(range(groups.new.length,3,4)&&range(groups.review.length,4,6)&&range(groups.application.length,2,3),"PM_GROUP_COUNT","3-4 new, 4-6 review, 2-3 application");
+    else check(groups.new.length===availNewPm.length&&range(groups.review.length,4,9)&&range(groups.application.length,2,3),"PM_GROUP_COUNT","Review cycle: all "+availNewPm.length+" remaining new words, 4-9 review, 2-3 application");
     const actualNew=ws(groups.new),declared=ws(lesson.new_words);
     check(declared.length===actualNew.length&&JSON.stringify([...declared].sort())===JSON.stringify([...actualNew].sort()),"PM_NEW_WORDS_MISMATCH","new_words differs from new vocab group");
     check(existing?.am===true&&sameDayAm?.date===date&&sameDayAm?.session==="am"&&sameDayAm?.time==="08:00"&&sameDayAm?.vocab?.length===10,"AM_PREREQUISITE_MISSING","Published same-day AM must exist");
@@ -184,7 +204,7 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     const ids=reviewHistory.map(h=>String(h?.date||'')+'-'+String(h?.session||''));
     check(expected.length===ids.length&&expected.every(id=>ids.includes(id))&&new Set(ids).size===ids.length,'REVIEW_HISTORY_INCOMPLETE','The seven-day completed index coverage is incomplete or duplicated');
     // Original hard core-review rules: single shared implementation in review-rotation.js (core-only, unchanged).
-    const selected=session==='am'?ws(lesson.review_vocab):ws(vocab.filter(v=>v?.source_group==='review'));
+    const selected=session==='am'?[...ws(lesson.review_vocab),...ws(lesson.cycle_vocab)]:ws(vocab.filter(v=>v?.source_group==='review'));
     for(const e of checkCore({date,session,runtime,reviewHistory,selected}))add(e.code,e.detail);
     if(session==='pm'){ // executable recent-4-day / focus-mix / application rules (see review-rotation.js)
      const groupWords=g=>ws(vocab.filter(v=>v?.source_group===g));
@@ -193,7 +213,8 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     // Exposure ledger (2026-10-08+): application counts as an active exposure; no core slot right after an active
     // exposure or on the third day in a row. Only raised when enough legal alternatives exist (see review-rotation.js).
     {const g=gr=>ws(vocab.filter(v=>v?.source_group===gr));
-     const sel=session==='am'?{review:ws(lesson.review_vocab),application:[],newWords:vw}:{review:g('review'),application:g('application'),newWords:g('new')};
+     const amCyc=new Set(ws(lesson.cycle_vocab));
+     const sel=session==='am'?{review:[...ws(lesson.review_vocab),...amCyc],application:[],newWords:vw.filter(w=>!amCyc.has(w))}:{review:g('review'),application:g('application'),newWords:g('new')};
      for(const e of checkExposure({date,session,runtime,rotation,reviewHistory,...sel,amVocab:[...amNewWords]}))add(e.code,e.detail);}
    }
   }

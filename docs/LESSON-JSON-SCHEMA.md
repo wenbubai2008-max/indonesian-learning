@@ -37,3 +37,13 @@ Required root: `date, session:"pm", time:"18:00", day, title, write_status:"less
 5. Only approved unchanged candidate proceeds to two-file PR/squash publication. CI regression cases permanently exercise the historical AM/PM key mixups.
 
 Existing correct structural examples: `data/daily/2026-09-28-am.json` and `data/daily/2026-09-27-pm.json`. The example content is **historical**, not a valid future word selection.
+
+## Review cycle (2026-10-14)
+
+The validator switches to the review cycle on its own; there is no flag to set.
+
+- **08:00**: when fewer than 10 legal new words remain (`runtime.new_pool` ∩ (`new_pool_dont` ∪ `new_pool_fuzzy`), minus the previous PM's `new_words`), `vocab` still has exactly 10 cards: **every** remaining new word, plus review-cycle words. The review-cycle words are listed in an extra root field `cycle_vocab` (array of strings, exactly the vocab words that are not new). Each must be in `runtime.review_pool`, must not repeat `review_vocab`, and has `is_oral_new: false`. `review_vocab` (4–6), sentences, reading, quiz, output and review are unchanged. Outside the cycle, `cycle_vocab` must be absent or empty (`CYCLE_NOT_ACTIVE`).
+- **18:00**: when fewer than 3 legal new words remain (minus today's AM words), the `new` group holds **all** of them (0–2), `review` holds 4–9 and `application` 2–3, so the lesson keeps 10–12 cards. `new_words` lists the new group as before.
+- **Picking cycle words**: `rank-review-candidates.js --session am` returns `review_cycle.cycle_words` — half the weakest words, half the words longest unseen in any lesson, disjoint from `recommended_review`. For PM, `review_cycle.review_target` is the suggested review count.
+- **Bookkeeping**: cycle words count as active reviews in the exposure ledger (like `review_vocab`); in the evening they are "今天08:00复习过的老词", not new words. A word leaves the cycle when it becomes mastered.
+- Error codes: `CYCLE_NOT_ACTIVE`, `CYCLE_NEW_REQUIRED`, `CYCLE_VOCAB_MISMATCH`, `CYCLE_WORD_INELIGIBLE`, `CYCLE_ORAL_FLAG`; PM uses `PM_GROUP_COUNT` with the cycle counts.

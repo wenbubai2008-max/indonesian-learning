@@ -386,3 +386,12 @@
 - **不变**：新词 / 复习公式、课程合同、冷却与轮换、曝光账本、发布流程。
 - **补充（同日第二批）**：晚课排序题答错时，答案句里只有一个核心词才记 `lesson_wrong`；自检每条下面列出它提到的核心词，可点“卡住了”记一笔（`lessonSelfStuck`，只改渲染，`selfCheckHtml(items)` 签名和课程 JSON 不变）；首页画像卡显示“近 7 天”变化（掌握数不涨时标橙）；训练进度跨设备同步：Worker 新增 `/training`（只存 KV），网站端 `data/training-sync-client.js`，Worker 未更新时 404 → 6 小时退避，不影响弱项同步。测试 `test-training-sync.js`（两台模拟设备经真实 Worker 代码同步）已加入 Build learning runtime。
 - **本地复现 Build 步骤时注意**：工作流 Recompute 步骤的 for 循环里有 `git reset --hard origin/main`，只截取到 `vocab-ui-regression-guard.js` 为止的命令来跑，否则会清掉本地未提交的修改。
+
+## 18. 2026-10-14 复习循环课程形态（用户决定）
+
+- **用户决定**：新词学完后进入复习循环。早课把原来 10 个新词的名额换成复习词；晚课结构不变，只是没有新词；一个词“确认掌握”后退出循环；选词兼顾最弱的词和最久没出现的词（各一半，不足互补）。
+- **自动切换**：校验器按 runtime 判断，没有开关。合法新词不足 10 个时，早课用上全部剩余新词，其余名额填循环词（根字段 `cycle_vocab`）；当晚剩余新词不足 3 个时，晚课 new 组等于全部剩余新词（0–2），review 4–9，application 2–3，总数仍为 10–12。新词充足时行为与以前完全一致（`cycle_vocab` 必须为空）。
+- **选词**：`rank-review-candidates.js` 输出 `review_cycle`（AM：`cycle_words` / `weak` / `stale`；PM：`review_target`）。循环词与 `review_vocab` 不重叠，遵守曝光账本、冷却和“7 天 ≥3 次最多 1 个”。
+- **记账**：`cycle_vocab` 计为主动曝光（`activeWords`）；晚课把它们当作“今天08:00复习过的老词”（不是新词）；runtime 在 08:00 水位时把当天的循环词追加进 review_pool（并入 `same_day_am_review_exposed`），供晚课 application 使用；每日同步对已学词只更新出现时间，不需要改工作流。
+- **不变**：新词公式、复习公式、mastered 判定、课程其他结构、发布流程、`learning-pool-rules.json`（没有修改，避免改变 lesson-context 的规则哈希）。
+- **测试**：`test-review-cycle.js`（真实课程文件构造：早课 4+6、缺 cycle_vocab、未用完剩余新词、循环词不在 review_pool、正常模式拒绝 cycle_vocab、晚课 0 新词扩展复习、08:00 老词标记、账本、排序各半）。
