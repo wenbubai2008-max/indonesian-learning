@@ -95,6 +95,17 @@
   - 当天 08:00 早课词的回顾只放在 review.steps，不在 self_check 里重复。
   - 写完后逐条对照：若某条复盘只是把某条自检换个说法（同一批词、同一种动作），删掉或改成输出任务。
 
+## 7b. 口语随词学（2026-10-14 用户决定，必须）
+
+口语不再单独靠“口语新词”名额来学，而是挂在每天学的词上一起学。
+
+- **不追求口语新词数量**：`runtime.oral_new_pool` 里有合法候选时照 Validator 要求使用（`ORAL_COUNT` / `ORAL_DONT_PRIORITY` / `PM_ORAL_COUNT` 照常执行）；没有就是 0 个，不凑数，也不为此补充口语候选。`is_oral_new` 仍只按 runtime 标记。
+- **词卡写“口语说法”**：核心词（新词、复习词、循环词都算）如果在雅加达日常口语里有常用的不同说法，在 `synonym_note` 末尾加一句“口语说法：……”，并说明什么场合用标准形。例如 membeli → beli；mengerti → ngerti；tidak → nggak；sudah → udah；bagaimana → gimana；memberikan → ngasih；-kan → -in（membersihkan → bersihin）。只写真实常用的；没有常用口语说法的词（如 menegaskan）不写，不要硬造。不新增 JSON 字段。
+- **早课**：5 句 sentences 里至少 1 句是朋友、家人或同事之间的自然口语，句中的口语形式在该句 `cn` 末尾用括号注明标准形，例如“（nggak = tidak，udah = sudah）”。阅读保持标准语。
+- **晚课**：`dialogue` 一律用自然的雅加达日常口语（aku/kamu 或 gue/lo 按人物关系选，同一段对话保持一致；长辈、顾客、上级之间用 saya/Bapak/Ibu 加口语语气词）。每个口语形式第一次出现时，在那一行 `cn` 末尾用括号注明标准形。阅读保持标准语。
+- 口语形式不算新词或复习词，不计入任何名额，也不标 `is_oral_new`。
+- 审稿时检查：口语形式用在人物和场合都对得上的地方；同一句里不要标准形、口语形无理由混用；括号注明的标准形写对。
+
 ## 8. 汇报里的两行（必须）
 
 - **全课跨句逻辑检查**：已通读全课、未发现矛盾，或列出改了哪几句。

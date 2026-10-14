@@ -14,8 +14,9 @@ const DAY=86400000;
 // contract per-day consumption (AM 10 new; PM 3-4 new, default 2 fuzzy + 1-2 dont)
 const PER_DAY={am_new:10,pm_new:3.5,am_dont:10,pm_dont:1.5,oral:3}; // oral: AM 2 + PM 1 preferred oral new words
 // Alert thresholds (report only; they never block anything).
-const ALERT={dont_days:5,oral_days:7,transition_days:20,all_new_days:21};
-// Soft contract: ~2 oral new words at 08:00, ~1 at 18:00 (rules am_contract/pm_contract). Alert only when clearly above.
+const ALERT={dont_days:5,transition_days:20,all_new_days:21};
+// 2026-10-14 (user decision): colloquial forms are taught with every word card and dialogue (docs/LESSON-QUALITY.md 7b),
+// so the oral-new-word count and the oral candidate runway are informational only and never raise an alert.
 const ORAL_GUIDE={am_max:3,pm_max:2,days:7};
 
 function lessonWords(L){
@@ -84,7 +85,7 @@ function oralUsage({lessons,today}){
  }
  rows.sort((a,b)=>(a.date+a.session).localeCompare(b.date+b.session));
  const tot=rows.reduce((n,x)=>n+x.oral_new,0),newTot=rows.reduce((n,x)=>n+x.new_words,0);
- return {rows,oral_total:tot,new_total:newTot,oral_share:newTot?+(tot/newTot).toFixed(2):0,guideline:'AM ~2, PM ~1 (about 20% of new words)'};
+ return {rows,oral_total:tot,new_total:newTot,oral_share:newTot?+(tot/newTot).toFixed(2):0,guideline:'use eligible oral words when the validator requires them; colloquial forms are taught with every lesson (LESSON-QUALITY 7b), informational only'};
 }
 
 /** How much of the pending-review backlog actually shows up in lesson text (reading / dialogue / examples / core lists). */
@@ -109,14 +110,9 @@ function readingCoverage({runtime,readings,today}){
 }
 
 function alerts(r){
- const a=[],rw=r.runway,o=r.oral_runway,g=r.review_gap;
+ const a=[],rw=r.runway;
  if(rw.est_days_until_dont_exhausted<ALERT.dont_days)a.push(`dont pool runs out in ~${rw.est_days_until_dont_exhausted} days (< ${ALERT.dont_days})`);
- if(o.est_days<ALERT.oral_days)a.push(`oral candidates last ~${o.est_days} days (< ${ALERT.oral_days}): add more candidates or relax the oral quota`);
  if(rw.phase==='primary'&&rw.est_days_until_transition>0&&rw.est_days_until_transition<ALERT.transition_days)a.push(`primary->transition in ~${rw.est_days_until_transition} days`);
- for(const x of (r.oral_usage&&r.oral_usage.rows)||[]){
-  const max=x.session==='am'?ORAL_GUIDE.am_max:ORAL_GUIDE.pm_max;
-  if(x.oral_new>max)a.push(`${x.date} ${x.session.toUpperCase()}: ${x.oral_new} oral new words of ${x.new_words} (guideline ~${x.session==='am'?2:1}, alert > ${max}): oral candidates will run out sooner`);
- }
  if(rw.est_days_until_all_new_exhausted<ALERT.all_new_days)a.push(`all new words run out in ~${rw.est_days_until_all_new_exhausted} days: after that the review cycle takes over automatically (AM: remaining new words + cycle_vocab; PM: remaining new words + 4-9 reviews). Decide in time whether to add screened second-library words`);
  return a;
 }

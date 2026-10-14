@@ -45,7 +45,8 @@ t('alerts: thresholds trigger and stay quiet when healthy; stale-word count is N
  const healthy={runway:{phase:'primary',est_days_until_dont_exhausted:16,est_days_until_transition:40,est_days_until_all_new_exhausted:41},oral_runway:{est_days:11},review_gap:{buckets:{'31d+':999}}};
  assert.deepEqual(alerts(healthy),[]);
  const bad={runway:{phase:'primary',est_days_until_dont_exhausted:3,est_days_until_transition:15,est_days_until_all_new_exhausted:10},oral_runway:{est_days:2},review_gap:{buckets:{'31d+':0}}};
- assert.equal(alerts(bad).length,4);
+ assert.equal(alerts(bad).length,3);
+ assert.ok(!alerts(bad).some(x=>/oral/.test(x)),'oral runway is informational only (2026-10-14)');
  assert.ok(alerts(bad).some(x=>/all new words run out in ~10 days/.test(x)));
  assert.deepEqual(alerts({...healthy,runway:{phase:'secondary',est_days_until_dont_exhausted:16,est_days_until_transition:0,est_days_until_all_new_exhausted:30}}),[]);
 });
@@ -56,7 +57,7 @@ t('runway: remaining new words across both libraries, secondary phase counts onl
  const s=runway({runtime:runtime({handoff:{phase:'secondary',primary_remaining:0,secondary_available:270}}),lessons:[],today:'2026-10-07'});
  assert.equal(s.new_words_left_total,270);
 });
-t('oralUsage: counts oral new words per lesson, ignores review/application and old lessons, alerts only above the guideline',()=>{
+t('oralUsage: counts oral new words per lesson, ignores review/application and old lessons, informational only',()=>{
  const o=(w,oral)=>({word:w,source_group:'new',is_new:true,is_oral_new:oral});
  const lessons=[
   lesson('2026-10-07','am',{vocab:[{word:'a',is_oral_new:true},{word:'b',is_oral_new:true},{word:'c'}]}), // AM: every vocab entry is new
@@ -67,10 +68,7 @@ t('oralUsage: counts oral new words per lesson, ignores review/application and o
  assert.deepEqual(u.rows,[{date:'2026-10-07',session:'am',new_words:3,oral_new:2},{date:'2026-10-07',session:'pm',new_words:3,oral_new:3}]);
  assert.equal(u.oral_total,5);assert.equal(u.new_total,6);assert.equal(u.oral_share,0.83);
  const r={runway:{phase:'secondary',est_days_until_dont_exhausted:99,est_days_until_transition:0},oral_runway:{est_days:99},review_gap:{buckets:{'31d+':0}},oral_usage:u};
- const a=alerts(r);
- assert.equal(a.length,1);assert.match(a[0],/2026-10-07 PM: 3 oral new words of 3/);
- r.oral_usage=oralUsage({lessons:[lesson('2026-10-07','pm',{vocab:[o('x',true),o('y',true),o('z',false)]})],today:'2026-10-07'});
- assert.deepEqual(alerts(r),[],'2 oral in PM is within the alert threshold');
+ assert.deepEqual(alerts(r),[],'oral usage is informational only, never an alert (2026-10-14)');
  assert.deepEqual(oralUsage({lessons:[],today:'2026-10-07'}).rows,[]);
 });
 t('recurrenceCoverage: share of the backlog seen in lesson text in the last 14 days',()=>{
