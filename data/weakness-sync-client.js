@@ -66,11 +66,17 @@
   function injectUI(){
     const page=document.getElementById('weakness');if(!page||document.getElementById('weakSyncPanel'))return;
     const head=page.querySelector('.sectionHead');if(!head)return;
-    const panel=document.createElement('div');panel.id='weakSyncPanel';panel.innerHTML='<div class="weakSyncText"><b>学习状态同步</b><span id="weakSyncStatus">未配置</span></div><div class="weakSyncActions"><button type="button" id="weakSyncSetup">设置同步</button><button type="button" id="weakSyncNow">立即同步</button></div>';
+    const panel=document.createElement('div');panel.id='weakSyncPanel';panel.innerHTML='<div class="weakSyncText"><b>学习状态同步</b><span id="weakSyncStatus">未配置</span></div><div class="weakSyncActions"><button type="button" id="weakSyncSetup">设置同步</button><button type="button" id="weakSyncNow">立即同步</button><button type="button" id="weakSyncQr">手机扫码设置</button></div>';
     head.insertAdjacentElement('afterend',panel);
     const st=document.createElement('style');st.id='weakSyncStyle';st.textContent='#weakSyncPanel{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:12px 0 16px;padding:10px 12px;background:#f8faff;border:1px solid #e6ebf5;border-radius:12px}.weakSyncText{display:flex;flex-direction:column;gap:3px}.weakSyncText b{font-size:13px}.weakSyncText span{font-size:12px;color:#667085}.weakSyncActions{display:flex;gap:7px;flex-wrap:wrap}.weakSyncActions button{border:1px solid #dce3ef;background:#fff;border-radius:9px;padding:7px 10px;font-size:12px;font-weight:700;cursor:pointer}.weakSyncActions button:disabled{opacity:.5}@media(max-width:650px){#weakSyncPanel{align-items:flex-start;flex-direction:column}}';document.head.appendChild(st);
     document.getElementById('weakSyncSetup').onclick=configure;
     document.getElementById('weakSyncNow').onclick=function(){syncNow(true)};
+    // 2026-10-14: show this device's address and key as a QR code so a phone can be set up by scanning (data/sync-device-setup.js).
+    document.getElementById('weakSyncQr').onclick=function(){
+      if(!configured()){configure();return;}
+      if(!window.SyncDeviceSetup){setStatus('扫码组件未加载 · 请刷新页面');return;}
+      window.SyncDeviceSetup.showQr().catch(function(e){setStatus('二维码生成失败 · '+e.message);});
+    };
     setStatus(configured()?'已配置 · 有变化时后台同步':'未配置 · 本机状态正常保存');
   }
   function setStatus(msg){lastMessage=msg;const el=document.getElementById('weakSyncStatus');if(el)el.textContent=msg;}
