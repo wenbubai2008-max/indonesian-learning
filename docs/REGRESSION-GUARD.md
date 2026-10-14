@@ -175,7 +175,7 @@
 改晚课内容时至少检查：
 - `learning-pool-rules.json`
 - `learning-runtime.json`
-- 18点自动任务 prompt
+- `docs/tasks/PM-LESSON.md`（18点任务说明书；定时任务提示词只做引导，见 §20）
 - PM 渲染脚本
 - 最新 `data/daily/YYYY-MM-DD-pm.json`
 - `regression-guard.js` 对真实课程文件的检查
@@ -254,6 +254,7 @@
 - [ ] 18:00 task enabled
 - [ ] 20:00补漏保持 disabled，除非用户明确重新开启
 - [ ] 任务失败不得自动把正式任务 disabled
+- [ ] 任务行为改在 `docs/tasks/` 说明书里（守卫检查关键标记），不改回定时任务提示词
 - [ ] `.github/workflows` 没有临时/重复 workflow
 - [ ] `sync-daily-vocab.yml` 是唯一 daily-vocab writer
 - [ ] 12:00 泛读只把单个 candidate 写入 `extensive-reading-YYYY-MM-DD` 分支；归档/index/today 三文件由 GitHub Runner 生成并 squash merge，candidate 不进入 main
@@ -419,3 +420,12 @@
 - **代价**：第一次打开“难点解释”多一次约 145KB 的请求（之后走浏览器缓存）；加载失败时占位页显示提示，刷新可重试。
 - **验证**：7 篇课的 DOM 与逐元素计算样式在 390/720/1280px 下与旧版一致；首页 11 个宽度下可见卡片与旧版一致；深链 `#difficulty`、刷新、后退、测验按钮行为一致。
 - **守卫**：首页脚本不得再含难点课内容（体积 < 30KB），必须有桩、占位页和 7 篇课。
+
+## 20. 2026-10-14 定时任务说明书移进仓库（用户要求“定时任务和仓库规则优化”）
+
+- **问题**：08:00 早课、18:00 晚课、12:00 泛读三个定时任务的提示词各有 5–9 千字，大段重复仓库里的规则（曝光账本、复习循环、JSON 结构、发布流程），每次改规则都要改两处，已经出现偏差（例如口语新词名额的写法与 `LESSON-QUALITY.md` §7b 不一致）。提示词也不经过 PR 和回归守卫。
+- **做法**：三个任务的完整说明书放在 `docs/tasks/`：`COMMON.md`（仓库访问、写入边界、一次性 push、失败处理、V4 停用、汇报诚实）、`AM-LESSON.md`、`PM-LESSON.md`、`EXTENSIVE-READING.md`。原提示词的全部要求都搬了过来（晚课第 1–9 节“正式要求”原样保留），只把与 `LESSON-QUALITY.md`、`LESSON-JSON-SCHEMA.md`、`LESSON-RECOVERY.md` 完全相同的段落改成引用。定时任务提示词只保留：添加仓库、clone、读说明书、几条读不到说明书时也必须遵守的底线。
+- **守卫**：`regression-guard.js` 检查四份文件存在并包含关键标记（分支命名、`AUTO_PUBLISH_LESSON=1` / `AUTO_PUBLISH_EXTENSIVE_READING=1`、必跑脚本、题型数量、自检/复盘分工、早课来源标注、VERIFIED_COMPLETE、V4 停用、不得禁用任务等）。删掉任何一项都会失败。
+- **以后**：用户的新要求或点评，教学质量写 `LESSON-QUALITY.md`，流程写对应说明书，规则写 `learning-pool-rules.json`；不改定时任务提示词，也不在提示词里加“补充”段落。
+- **同时修正的过时描述（不改变学习规则）**：`pm_contract.cooling.recent_pm_focus` 与 `rules` 最后一条改为与曝光账本一致（application、cycle_vocab 计为主动曝光，不再写“应用复现独立计算”）；`pm_contract.listening_overlay` 的复习数 4–5 改为 4–6；`LESSON-RECOVERY.md` 早课开始时间 07:30 改为约 07:24。修改 `learning-pool-rules.json` 会让 `build-learning-runtime.yml` 重建 runtime 与 lesson-context（规则哈希随之更新），合并后需确认该运行成功、`build-lesson-context.js --check` 通过。
+- **不变**：新词节奏（早课 10 个、晚课 3–4 个，用户决定等新词全部学完再进入复习循环）、校验器、发布工作流、课程合同、词池公式。
