@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-14",
-    "session": "pm",
-    "time": "18:00",
-    "day": 54
+    "date": "2026-10-15",
+    "session": "am",
+    "time": "08:00",
+    "day": 55
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-14T07:03:18.936Z",
-    "lesson_watermark": "2026-10-14 08:00",
+    "runtime_generated_at": "2026-10-14T10:44:58.180Z",
+    "lesson_watermark": "2026-10-14 18:00",
     "index_updated": "2026-10-14",
-    "runtime_hash": "cb94355d2b52eafdc18e700a62f16edf6540a96bd30076511b1efc630d476b11",
-    "index_hash": "31cf1177355fe29068ec59ab0791ca14b7cb9ce97dd57f19ecb08cc5e5828848",
+    "runtime_hash": "89fe4880efde5c8bff340974c253523bf32a39aee7dc2458654d770cfb0da7b6",
+    "index_hash": "ced10352c04ee605d656ec0f4cb414cb13b676448e3905feca9c4f26af0e391c",
     "rules_hash": "d406904ea30ad06dfae711a64f1e979c1262ddd8401d79e7b17d4b3250ea5a06"
   },
   "schema": {
@@ -280,10 +280,6 @@
       [
         "alur",
         "情节；流程"
-      ],
-      [
-        "mengabaikan",
-        "忽视；不理会"
       ],
       [
         "menyusul",
@@ -676,10 +672,6 @@
         "伴侣、一对"
       ],
       [
-        "komentar",
-        "评论"
-      ],
-      [
         "kebijakan",
         "政策"
       ],
@@ -978,10 +970,6 @@
       [
         "hapus",
         "删除"
-      ],
-      [
-        "balas",
-        "回复"
       ],
       [
         "angkat",
@@ -1742,16 +1730,6 @@
         ""
       ],
       [
-        "penasaran",
-        2,
-        0,
-        "",
-        "2026-10-08T09:18:42.503Z",
-        "好奇、很想知道",
-        "",
-        ""
-      ],
-      [
         "seharusnya",
         3,
         0,
@@ -2122,14 +2100,14 @@
         "催款；要求付款"
       ],
       [
-        "tanyain",
-        5,
+        "hasil",
+        3,
         0,
         "",
-        "",
-        "帮忙问/问一下",
-        "tanya",
-        ""
+        "2026-10-09T07:09:11.994Z",
+        "结果；成果",
+        "hasil",
+        "结果；成果"
       ],
       [
         "harusnya",
@@ -2222,104 +2200,14 @@
         ""
       ],
       [
-        "kemudian",
-        2,
+        "pemasukan",
+        5,
         0,
         "",
         "",
-        "然后；之后",
-        "kemudian",
-        "然后；之后（本身当作词根）"
-      ],
-      [
-        "motif",
-        2,
-        0,
-        "",
-        "",
-        "图案；花纹；动机",
-        "motif",
-        "图案；花纹"
-      ],
-      [
-        "peralatan",
-        2,
-        0,
-        "",
-        "",
-        "设备；用具（成套的）",
-        "alat",
-        "工具；器具"
-      ],
-      [
-        "pedagang",
-        2,
-        0,
-        "",
-        "",
-        "商贩；商人",
-        "dagang",
-        "做买卖；经商"
-      ],
-      [
-        "menerapkan",
-        2,
-        0,
-        "",
-        "",
-        "应用；实施；推行",
-        "terap",
-        "应用；实施（词根少单独使用）"
-      ],
-      [
-        "suhu",
-        2,
-        0,
-        "",
-        "",
-        "温度；气温；体温",
-        "suhu",
-        "温度"
-      ],
-      [
-        "strategis",
-        2,
-        0,
-        "",
-        "",
-        "战略性的；位置便利的",
-        "strategi",
-        "策略；战略"
-      ],
-      [
-        "entahlah",
-        2,
-        0,
-        "",
-        "",
-        "不知道；谁知道呢",
-        "entah",
-        "不知；不晓得"
-      ],
-      [
-        "kawasan",
-        2,
-        0,
-        "",
-        "",
-        "区域；地带",
-        "kawasan",
-        "区域；地带（本身当作词根）"
-      ],
-      [
-        "khas",
-        2,
-        0,
-        "",
-        "",
-        "特有的；有特色的",
-        "khas",
-        "特有的；特色的"
+        "收入；进账",
+        "masuk",
+        ""
       ]
     ],
     "focus": [
@@ -2692,57 +2580,10 @@
         "saudara",
         749,
         "fuzzy"
-      ],
-      [
-        "balas",
-        "通用",
-        "bales",
-        "balas",
-        750,
-        "fuzzy"
       ]
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-07",
-      "session": "am",
-      "review_core": [
-        "nyaris",
-        "ngabarin",
-        "kesepakatan",
-        "upaya",
-        "ngurusin"
-      ],
-      "new_words": [
-        "mogok",
-        "putaran",
-        "kecelakaan",
-        "tabrak",
-        "muat",
-        "memindahkan",
-        "invoice",
-        "praktis",
-        "berikutnya",
-        "hafal"
-      ]
-    },
-    {
-      "date": "2026-10-07",
-      "session": "pm",
-      "review_core": [
-        "mengatur",
-        "keberatan",
-        "menurut",
-        "ngerjain",
-        "nggak heran"
-      ],
-      "new_words": [
-        "meminjam",
-        "mengumpulkan",
-        "mengetik"
-      ]
-    },
     {
       "date": "2026-10-08",
       "session": "am",
@@ -3002,105 +2843,40 @@
         "kawasan",
         "khas"
       ]
+    },
+    {
+      "date": "2026-10-14",
+      "session": "pm",
+      "review_core": [
+        "keberatan",
+        "baper",
+        "ganjel",
+        "tanyain",
+        "penasaran"
+      ],
+      "new_words": [
+        "balas",
+        "komentar",
+        "mengabaikan"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-13",
+    "date": "2026-10-14",
     "new_words": [
-      "mengingat",
-      "kecuali",
-      "tuntas"
+      "balas",
+      "komentar",
+      "mengabaikan"
     ],
     "review_core": [
-      "peduli",
-      "membela",
-      "belum sempat",
-      "mager",
-      "menyelesaikan"
+      "keberatan",
+      "baper",
+      "ganjel",
+      "tanyain",
+      "penasaran"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-14",
-    "vocab": [
-      [
-        "kemudian",
-        "然后；之后",
-        "then; after that",
-        "kemudian",
-        "然后；之后（本身当作词根）"
-      ],
-      [
-        "motif",
-        "图案；花纹；动机",
-        "pattern; motif",
-        "motif",
-        "图案；花纹"
-      ],
-      [
-        "peralatan",
-        "设备；用具（成套的）",
-        "equipment; set of tools",
-        "alat",
-        "工具；器具"
-      ],
-      [
-        "pedagang",
-        "商贩；商人",
-        "trader; vendor",
-        "dagang",
-        "做买卖；经商"
-      ],
-      [
-        "menerapkan",
-        "应用；实施；推行",
-        "to apply; to implement",
-        "terap",
-        "应用；实施（词根少单独使用）"
-      ],
-      [
-        "suhu",
-        "温度；气温；体温",
-        "temperature",
-        "suhu",
-        "温度"
-      ],
-      [
-        "strategis",
-        "战略性的；位置便利的",
-        "strategic; well-located",
-        "strategi",
-        "策略；战略"
-      ],
-      [
-        "entahlah",
-        "不知道；谁知道呢",
-        "who knows; I don't know",
-        "entah",
-        "不知；不晓得"
-      ],
-      [
-        "kawasan",
-        "区域；地带",
-        "area; zone",
-        "kawasan",
-        "区域；地带（本身当作词根）"
-      ],
-      [
-        "khas",
-        "特有的；有特色的",
-        "typical; characteristic",
-        "khas",
-        "特有的；特色的"
-      ]
-    ],
-    "review_vocab": [
-      "kendala",
-      "kelewat",
-      "nggak usah",
-      "ngaret",
-      "pantes"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

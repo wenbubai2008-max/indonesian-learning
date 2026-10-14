@@ -2294,27 +2294,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "penasaran",
     "cn": "好奇、很想知道",
-    "en": "",
-    "root": "",
+    "en": "curious",
+    "root": "penasaran",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 08:00",
-    "last_seen": "2026-08-30 08:00",
+    "last_seen": "2026-10-14 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-30"
+      "2026-08-30",
+      "2026-10-14"
     ],
-    "example": "Aku penasaran dia bakal bilang apa.",
-    "example_cn": "我很好奇他会说什么。",
+    "example": "Aku penasaran kenapa toko itu selalu ramai.",
+    "example_cn": "我很好奇为什么那家店总是人很多。",
     "lesson_occurrences": [
-      "2026-08-30 08:00"
-    ]
+      "2026-08-30 08:00",
+      "2026-10-14 18:00"
+    ],
+    "root_cn": "好奇（本身当作词根）"
   },
   {
     "word": "ngaret",
@@ -3671,27 +3676,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "tanyain",
     "cn": "帮忙问/问一下",
-    "en": "",
+    "en": "to ask about (colloquial)",
     "root": "tanya",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-28 19:00",
-    "last_seen": "2026-08-28 19:00",
+    "last_seen": "2026-10-14 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-28"
+      "2026-08-28",
+      "2026-10-14"
     ],
-    "example": "Bisa tanyain nggak?",
-    "example_cn": "能帮忙问一下吗？",
+    "example": "Coba tanyain ke penjualnya, masih ada ukuran M nggak.",
+    "example_cn": "你去问问卖家，还有没有 M 码。（nggak = tidak）",
     "lesson_occurrences": [
-      "2026-08-28 19:00"
-    ]
+      "2026-08-28 19:00",
+      "2026-10-14 18:00"
+    ],
+    "root_cn": "问"
   },
   {
     "word": "cek",
@@ -6064,9 +6074,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-03 19:00",
-    "last_seen": "2026-10-07 18:00",
+    "last_seen": "2026-10-14 18:00",
     "sessions": [
       "19:00",
       "18:00"
@@ -6077,10 +6087,11 @@ window.DAILY_VOCAB_DB = [
       "2026-09-26",
       "2026-09-29",
       "2026-10-01",
-      "2026-10-07"
+      "2026-10-07",
+      "2026-10-14"
     ],
-    "example": "Kalau kamu tidak keberatan, aku mau duduk di sini.",
-    "example_cn": "如果你不介意，我想坐这里。",
+    "example": "Kalau Ibu tidak keberatan, saya kirim fotonya lewat WhatsApp.",
+    "example_cn": "如果您不介意，我通过 WhatsApp 把照片发给您。",
     "root_cn": "重；沉重",
     "lesson_occurrences": [
       "2026-09-03 19:00",
@@ -6088,7 +6099,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-26 18:00",
       "2026-09-29 18:00",
       "2026-10-01 18:00",
-      "2026-10-07 18:00"
+      "2026-10-07 18:00",
+      "2026-10-14 18:00"
     ]
   },
   {
@@ -9383,27 +9395,29 @@ window.DAILY_VOCAB_DB = [
     "en": "feel something is off; have something unresolved",
     "root": "ganjal",
     "root_cn": "垫住；卡住；妨碍",
-    "example": "Aku masih ganjel soal tagihan kemarin, belum jelas siapa yang bayar.",
-    "example_cn": "关于昨天那笔账单我心里还是不踏实，还没说清楚谁来付。",
+    "example": "Udah minta maaf, tapi rasanya masih ada yang ganjel.",
+    "example_cn": "已经道过歉了，但总觉得心里还有点疙瘩。（udah = sudah）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-06 18:00",
+    "last_seen": "2026-10-14 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-12",
-      "2026-10-06"
+      "2026-10-06",
+      "2026-10-14"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
-      "2026-10-06 18:00"
+      "2026-10-06 18:00",
+      "2026-10-14 18:00"
     ]
   },
   {
@@ -9440,27 +9454,31 @@ window.DAILY_VOCAB_DB = [
     "en": "take it personally; get emotionally affected",
     "root": "bawa perasaan",
     "root_cn": "把情绪带进去；往心里去",
-    "example": "Dia cuma kasih masukan soal kerjaan, jadi jangan langsung baper.",
-    "example_cn": "他只是对工作提意见，所以别马上往心里去。",
+    "example": "Dia cuma bercanda, jangan baper, ya.",
+    "example_cn": "他只是开玩笑，别往心里去哦。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-14 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-12",
       "2026-10-02",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-10-14"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
       "2026-10-02 08:00",
-      "2026-10-04 08:00"
+      "2026-10-04 08:00",
+      "2026-10-14 18:00"
     ]
   },
   {
@@ -20855,23 +20873,26 @@ window.DAILY_VOCAB_DB = [
     "en": "who knows; I don't know",
     "root": "entah",
     "root_cn": "不知；不晓得",
-    "example": "Dia mau datang atau nggak? Entahlah, belum ada kabar.",
-    "example_cn": "他来还是不来？谁知道呢，还没消息。",
+    "example": "Apakah dia akan datang? Entahlah, belum ada kabar.",
+    "example_cn": "他会来吗？谁知道呢，还没有消息。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-14 08:00",
-    "last_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-14"
     ],
     "lesson_occurrences": [
-      "2026-10-14 08:00"
+      "2026-10-14 08:00",
+      "2026-10-14 18:00"
     ]
   },
   {
@@ -20905,23 +20926,102 @@ window.DAILY_VOCAB_DB = [
     "en": "typical; characteristic",
     "root": "khas",
     "root_cn": "特有的；特色的",
-    "example": "Rendang adalah makanan khas Padang yang terkenal.",
-    "example_cn": "仁当是著名的巴东特色菜。",
+    "example": "Kain batik khas Solo ini cocok untuk hadiah.",
+    "example_cn": "这块梭罗特色的蜡染布很适合当礼物。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-14 08:00",
-    "last_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-14"
     ],
     "lesson_occurrences": [
-      "2026-10-14 08:00"
+      "2026-10-14 08:00",
+      "2026-10-14 18:00"
+    ]
+  },
+  {
+    "word": "balas",
+    "cn": "回复；回报",
+    "en": "to reply; to repay",
+    "root": "balas",
+    "root_cn": "回复；回报",
+    "example": "Maaf baru membalas pesanmu, tadi aku lagi rapat.",
+    "example_cn": "抱歉现在才回你的消息，刚才我在开会。（lagi = sedang）",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 18:00",
+    "last_seen": "2026-10-14 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 18:00"
+    ]
+  },
+  {
+    "word": "komentar",
+    "cn": "评论；留言；意见",
+    "en": "comment",
+    "root": "komentar",
+    "root_cn": "评论（外来词）",
+    "example": "Banyak teman memberi komentar di foto itu.",
+    "example_cn": "很多朋友在那张照片下留言评论。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 18:00",
+    "last_seen": "2026-10-14 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 18:00"
+    ]
+  },
+  {
+    "word": "mengabaikan",
+    "cn": "忽视；不理会",
+    "en": "to ignore; to neglect",
+    "root": "abai",
+    "root_cn": "疏忽；不在意",
+    "example": "Jangan mengabaikan pesan dari atasan, apalagi yang penting.",
+    "example_cn": "别不理上司发来的消息，尤其是重要的。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 18:00",
+    "last_seen": "2026-10-14 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 18:00"
     ]
   }
 ];
