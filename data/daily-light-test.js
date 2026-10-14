@@ -7,7 +7,7 @@
   if(!document.getElementById('dailyLightPatchStyle')){
     const st=document.createElement('style');
     st.id='dailyLightPatchStyle';
-    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.dailyLightExtra .dailyFixAnswer{margin-top:8px}.dailyLightSelf{margin-top:12px;padding:10px 12px;background:#f8faff;border-radius:10px}.dailyLightSelf ul{margin:7px 0 0;padding-left:20px}.dailyLightSelf li{margin:4px 0}';
+    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.dailyLightExtra .dailyFixAnswer{margin-top:8px}.dailyLightSelf{margin-top:12px;padding:10px 12px;background:#f8faff;border-radius:10px}.dailyLightSelf ul{margin:7px 0 0;padding-left:20px}.dailyLightSelf li{margin:4px 0}.dailyLightStuck{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:5px 0 2px;font-size:12px;color:#667085}.dailyLightStuck button{border:1px solid #dce3ef;background:#fff;border-radius:999px;padding:3px 10px;font-size:12px;color:#3b465b;cursor:pointer}.dailyLightStuck button.done{background:#fff4e5;border-color:#f5c27a;color:#7a4b00}';
     document.head.appendChild(st);
   }
 
@@ -72,7 +72,11 @@
 
   function selfCheckHtml(items){
     if(!Array.isArray(items)||!items.length)return '';
-    return `<div class="dailyLightSelf"><b>自检</b><ul>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`;
+    // 2026-10-14: under each check, the core words it names get a "卡住了" button that records a dated error
+    // (data/lesson-answer-signal.js). The self_check text and the lesson JSON contract are unchanged.
+    const lesson=arguments[1]||{},api=window.LessonAnswerSignal;
+    const stuck=x=>{const ws=api&&typeof api.mentioned==='function'?api.mentioned(lesson,x):[];return ws.length?`<div class="dailyLightStuck"><span>卡住了就点：</span>${ws.map(v=>`<button type="button" data-word="${esc(v.word)}" data-cn="${esc(v.cn||'')}" data-date="${esc(lesson.date||'')}" onclick="lessonSelfStuck(this)">${esc(v.word)}</button>`).join('')}</div>`:''};
+    return `<div class="dailyLightSelf"><b>自检</b><ul>${items.map(x=>`<li>${esc(x)}${stuck(x)}</li>`).join('')}</ul></div>`;
   }
   function renderTest(t,x){
     let h='<div class="dailyFixMeta" style="margin-bottom:10px">轻量检测今天刚学的内容，不追求全对，也不用写长句。</div>';

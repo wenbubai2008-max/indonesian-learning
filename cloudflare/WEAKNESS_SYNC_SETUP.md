@@ -64,3 +64,17 @@ Variables：
 ## 19:00 课程
 
 后续生成 19:00 课程时应读取 `data/weakness-sync.json`，只选择 `status = active` 的弱项；`status = mastered` 的词不应继续作为弱项重复抓取。建议再结合最近 2–3 天冷却规则，避免连续重复同一个词。
+
+## 2026-10-14 更新：训练进度跨设备同步（需要重新部署一次 Worker）
+
+快速练习、听词训练、自动训练的复习级别和到期时间以前只存在当前浏览器里。新版 Worker 增加了 `/training` 接口，把这三份进度存进同一个 KV（键名 `training-state-v1`，不写 GitHub），各设备按“每个词最近一次练习时间较新的为准”合并。
+
+更新步骤（约 2 分钟，不需要改任何设置）：
+
+1. 打开 Cloudflare Dashboard → Workers & Pages → 你的同步 Worker → Edit code。
+2. 用仓库中最新的 `cloudflare/weakness-sync-worker.js` 全文替换原代码，点 Deploy。
+3. KV 绑定、Secrets、Variables、Cron 都保持不变。
+
+网站端（`data/training-sync-client.js`）复用“弱项强化 → 学习状态同步”里已经填好的 Worker 地址和 SYNC_KEY，不用重新设置。Worker 更新前接口返回 404，网站端会安静地跳过，6 小时后再试，不影响原有的弱项同步。
+
+更新后：每台设备打开网站约 2 秒后先拉取再上传；做题后约 10 秒合并上传一次；切到后台时也会上传。每台设备都要先在“设置同步”里填过地址和密钥。

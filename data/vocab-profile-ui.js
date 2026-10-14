@@ -2,7 +2,7 @@
   'use strict';
   let PROFILE=null,activeTab='today',activeWeak='',historyState='idle',selectedWord='',wordQuery='';
   const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]));
-  const signalLabel={automation_fail:'自动训练失败',quick_wrong:'快速练习答错',lesson_wrong:'课程小测答错',dont:'明确不会',fuzzy:'标记模糊',unknown:'陌生词',manual_unknown:'陌生词'};
+  const signalLabel={automation_fail:'自动训练失败',quick_wrong:'快速练习答错',lesson_wrong:'课程中答错或卡住',dont:'明确不会',fuzzy:'标记模糊',unknown:'陌生词',manual_unknown:'陌生词'};
   function evidenceData(){
     return window.VocabProfileEvidence?window.VocabProfileEvidence.summarize():{attempts:0,observed:0,active:0,passive:0,forgotten:0,relearned:0};
   }
@@ -117,6 +117,7 @@
       #home .vpHomeNext{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;min-width:0}#home .vpHomeNext small{font-size:12px;color:#667085;flex-basis:100%}#home .vpHomeNext b{font-size:19px;color:#172033;overflow-wrap:anywhere}#home .vpHomeNext span{font-size:12px;color:#667085}
       #home .vpHomeDone{font-size:13px;color:#54705b;line-height:1.5;margin-top:8px}#home .vpHomeMore{border:0;background:transparent;color:#3157d5;padding:5px 0;font-size:12px;font-weight:750;cursor:pointer;margin-top:7px}
       #home .homeLearningGrid .vpCoachTop{align-items:flex-start;gap:8px}#home .homeLearningGrid .vpCoachTop h3{font-size:19px;margin:0 0 3px}#home .homeLearningGrid .vpCoachTop button{font-size:13px;padding:10px 12px;white-space:nowrap}#home .homeLearningGrid .vpCoachTop button:disabled{background:#d8dce4;color:#687184;cursor:default}
+      #home .vpWeekDelta:empty{display:none}#home .vpWeekDelta{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;font-size:12px;color:#667085;margin:0 0 10px}#home .vpWeekDelta b{font-weight:700;color:#344054}#home .vpWeekDelta b.vpWarn{color:#c2410c}
       #home .vpHomeNumbers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 12px;margin:10px 0}#home .vpHomeNumbers>div{display:flex;align-items:baseline;justify-content:space-between;gap:5px;padding:3px 0;border-bottom:1px solid #edf0f6}#home .vpHomeNumbers span{font-size:12px;color:#667085;white-space:nowrap}#home .vpHomeNumbers b{font-size:16px;color:#172033}#home .vpHomeNumbers .vpHomeNumbersLast{grid-column:1/-1}#home .homeLearningGrid .vocabProfile .vpOpen{padding:8px 10px;font-size:12px;margin-top:6px}
       @media(max-width:760px){#home .homeLearningGrid .vpCoachTop button{white-space:normal}#home .homeLearningGrid .vpCoachTop{flex-direction:row}#home .vpHomeNumbers{grid-template-columns:repeat(2,minmax(0,1fr))}}
       .vpActionRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.vpActionRow button{border:0;border-radius:10px;padding:9px 12px;font-weight:800;cursor:pointer}.vpActionPrimary{background:#3157d5;color:#fff}.vpActionSoft{background:#eef1f6;color:#344054}
@@ -138,8 +139,9 @@
     let box=document.getElementById('vocabProfile');
     if(!box){box=document.createElement('section');box.id='vocabProfile';box.className='vocabProfile';const hero=home.querySelector(':scope > .hero'),mods=document.getElementById('homeModules');if(hero)hero.insertAdjacentElement('afterend',box);else if(mods&&mods.parentNode)mods.parentNode.insertBefore(box,mods);else home.appendChild(box)}
     const focus=(data.focus_words||[]).slice(0,6);
-    box.innerHTML='<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">真实学习与验证状态</div></div><span class="pill">网站快照</span></div><div class="vpHomeNumbers"><div><span>正式学习</span><b>'+data.taught_total+'</b></div><div><span>确认掌握</span><b>'+data.confirmed_mastered+'</b></div><div><span>待强化</span><b>'+data.needs_reinforcement+'</b></div><div><span>待验证</span><b>'+data.unverified+'</b></div><div class="vpHomeNumbersLast"><span>主词库待学习</span><b>'+data.primary_eligible_new_total+'</b></div></div><button class="vpOpen" type="button" id="openVocabProfile">查看能力与逐词档案 →</button>';
+    box.innerHTML='<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">真实学习与验证状态</div></div><span class="pill">网站快照</span></div><div class="vpHomeNumbers"><div><span>正式学习</span><b>'+data.taught_total+'</b></div><div><span>确认掌握</span><b>'+data.confirmed_mastered+'</b></div><div><span>待强化</span><b>'+data.needs_reinforcement+'</b></div><div><span>待验证</span><b>'+data.unverified+'</b></div><div class="vpHomeNumbersLast"><span>主词库待学习</span><b>'+data.primary_eligible_new_total+'</b></div></div><div class="vpWeekDelta" id="vpWeekDelta"></div><button class="vpOpen" type="button" id="openVocabProfile">查看能力与逐词档案 →</button>';
     box.querySelector('#openVocabProfile').onclick=()=>openDetail('overview');
+    renderWeekDelta();
     ensureDetailPage();renderDetail();renderHomeCoach();
   }
   function trendHTML(data){
@@ -222,6 +224,28 @@
     body.querySelectorAll('[data-vp-word]').forEach(btn=>btn.onclick=()=>{activeWeak=btn.dataset.vpWord;activeTab='weak';renderDetail()});
     bindCoachActions(body);wireWordSearch(body);
     body.querySelectorAll('[data-vp-action]').forEach(btn=>btn.onclick=()=>{const word=activeWeak;if(btn.dataset.vpAction==='automation'&&typeof window.openAutomationTrainingWord==='function')window.openAutomationTrainingWord(word);else if(btn.dataset.vpAction==='quick'&&typeof window.openQuickPracticeWordV2==='function')window.openQuickPracticeWordV2(word)});
+  }
+  // 2026-10-14: a one-line 7-day change on the home card, so a stalled mastery count is visible without opening the trend tab.
+  let weekDelta=null,weekDeltaLoading=false;
+  function weekDeltaHTML(x){
+    if(!x)return '';
+    const sign=n=>(n>0?'+':'')+n,warn=x.taught>0&&x.mastered<=0;
+    return '<span>近 '+x.days+' 天</span><b>正式学习 '+sign(x.taught)+'</b><b class="'+(warn?'vpWarn':'')+'">确认掌握 '+sign(x.mastered)+'</b><b>待强化 '+sign(x.needs)+'</b>';
+  }
+  async function renderWeekDelta(){
+    const el=document.getElementById('vpWeekDelta');if(!el)return;
+    if(weekDelta){el.innerHTML=weekDeltaHTML(weekDelta);return}
+    if(weekDeltaLoading)return;weekDeltaLoading=true;
+    try{
+      const res=await fetch('data/vocab-profile-history.json?v='+Date.now(),{cache:'no-store'});if(!res.ok)return;
+      const rows=((await res.json()).snapshots||[]).filter(x=>x&&/^\d{4}-\d{2}-\d{2}$/.test(x.date)).sort((a,b)=>a.date.localeCompare(b.date));
+      if(rows.length<2)return;
+      const last=rows[rows.length-1],cut=new Date(Date.parse(last.date+'T00:00:00Z')-7*86400000).toISOString().slice(0,10);
+      const base=rows.filter(x=>x.date<=cut).pop()||rows[0];
+      const days=Math.round((Date.parse(last.date)-Date.parse(base.date))/86400000);if(days<1)return;
+      weekDelta={days,taught:last.taught_total-base.taught_total,mastered:last.confirmed_mastered-base.confirmed_mastered,needs:last.needs_reinforcement-base.needs_reinforcement};
+      const now=document.getElementById('vpWeekDelta');if(now)now.innerHTML=weekDeltaHTML(weekDelta);
+    }catch(e){}finally{weekDeltaLoading=false}
   }
   async function loadHistory(){
     if(historyState==='loading'||historyState==='ready')return;

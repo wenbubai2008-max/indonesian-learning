@@ -68,5 +68,28 @@
     };
     window.dailyLightFillCheck.__lessonSignal=true;
   }
-  window.LessonAnswerSignal={target:target};
+  // 18:00 order: a wrong order records the single core word in the answer sentence (none or several → nothing).
+  const order=window.dailyLightOrderCheck;
+  if(typeof order==='function'&&!order.__lessonSignal){
+    window.dailyLightOrderCheck=function(btn,answer){
+      const box=btn&&btn.closest&&(btn.closest('.dailyFixItem')||btn.closest('.dailyLightOrder'));
+      const out=order.apply(this,arguments);
+      try{const fb=box&&box.querySelector('.dailyFixFeedback');if(fb&&!/^顺序正确/.test(String(fb.textContent||'').trim()))record(box,answer);}catch(e){}
+      return out;
+    };
+    window.dailyLightOrderCheck.__lessonSignal=true;
+  }
+  // 18:00 self-check: the learner marks a named core word as stuck.
+  window.lessonSelfStuck=function(btn){
+    if(!btn||btn.classList.contains('done'))return;
+    const wp=window.WeaknessPool,word=btn.dataset.word;if(!word||!wp||typeof wp.recordLessonWrong!=='function')return;
+    wp.recordLessonWrong(word,{word:word,cn:btn.dataset.cn||'',source:'课程自检',source_date:btn.dataset.date||''});
+    btn.classList.add('done');btn.disabled=true;btn.textContent=word+' · 已记下';
+    window.dispatchEvent(new CustomEvent('weak-pool-changed',{detail:{word:word,reason:'lesson_wrong'}}));
+  };
+  function mentioned(lesson,text){
+    const vocab=[].concat(lesson&&lesson.vocab||[],(lesson&&lesson.review_vocab||[]).map(w=>({word:w}))).filter(v=>v&&v.word);
+    const seen=new Set();return matches(vocab,text).filter(v=>{const k=v.word.toLowerCase();if(seen.has(k))return false;seen.add(k);return true});
+  }
+  window.LessonAnswerSignal={target:target,mentioned:mentioned};
 })();
