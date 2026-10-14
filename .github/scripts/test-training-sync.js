@@ -73,8 +73,25 @@ const repo=path.resolve(__dirname,'..','..');
   assert.deepEqual(JSON.parse(newPhone.store.get('indo_weak_sync_config_v1')),{endpoint:'https://w.example',key:'k'});
   assert.ok(!JSON.parse(newPhone.store.get('indo_training_sync_meta_v1')).unsupported_until,'setting up lifts the 404 back-off');
   assert.equal(newPhone.read('indo_quick_practice_state').tunda.review_level,3,'the newly set-up phone receives the existing training state');
+  // GitHub writes only in the pre-generator windows (Jakarta 06:40-07:15, 10:40-11:15, 16:40-17:20, 21:00-21:10).
+  {
+    const calls=[],realFetch=globalThis.fetch;
+    globalThis.fetch=async(u,o)=>{calls.push((o&&o.method||'GET')+' '+u);return (o&&o.method==='PUT')?new Response('{}',{status:200}):new Response('{}',{status:404});};
+    const genv=Object.assign({},env,{GITHUB_TOKEN:'t'});
+    const tick=async(utcH,utcM)=>{const jobs=[];kv.set('weakness-state-v1',JSON.stringify({version:1,updated_at:'2026-10-14T05:00:00.000Z',dirty:true,words:{x:{word:'x'}}}));calls.length=0;
+      await worker.scheduled({scheduledTime:Date.UTC(2026,9,14,utcH,utcM)},genv,{waitUntil:p=>jobs.push(p)});await Promise.all(jobs);return calls.some(c=>c.startsWith('PUT'));};
+    try{
+      for(const [h,m,want,label] of [[6,0,false,'13:00'],[23,35,false,'06:35'],[23,40,true,'06:40'],[0,10,true,'07:10'],[0,15,false,'07:15'],[3,45,true,'10:45'],[9,40,true,'16:40'],[10,15,true,'17:15'],[10,20,false,'17:20'],[14,0,true,'21:00'],[14,10,false,'21:10'],[18,0,false,'01:00']])
+        assert.equal(await tick(h,m),want,'Jakarta '+label+' GitHub write='+want);
+      kv.set('weakness-state-v1',JSON.stringify({version:1,updated_at:'x',dirty:false,words:{}}));calls.length=0;
+      const jobs=[];await worker.scheduled({scheduledTime:Date.UTC(2026,9,14,0,0)},genv,{waitUntil:p=>jobs.push(p)});await Promise.all(jobs);
+      assert.equal(calls.length,0,'a clean state never writes, even inside a window');
+      const res=await worker.fetch(new Request('https://w.example/flush',{method:'POST',headers:{'x-sync-key':'k'},body:'{}'}),(kv.set('weakness-state-v1',JSON.stringify({version:1,updated_at:'y',dirty:true,words:{}})),genv));
+      assert.equal(res.status,200);assert.ok(calls.some(c=>c.startsWith('PUT')),'立即同步 (/flush) still writes at once');
+    }finally{globalThis.fetch=realFetch;}
+  }
   // Unauthorized requests are rejected by the Worker.
   const res=await worker.fetch(new Request('https://w.example/training',{headers:{'x-sync-key':'bad'}}),env);
   assert.equal(res.status,401);
-  console.log('Training sync tests passed: newest record wins per word, three modes shared, key spelling kept, 404 back-off, QR setup link, auth.');
+  console.log('Training sync tests passed: newest record wins per word, three modes shared, key spelling kept, 404 back-off, QR setup link, GitHub write windows, auth.');
 })().catch(e=>{console.error(e);process.exit(1)});

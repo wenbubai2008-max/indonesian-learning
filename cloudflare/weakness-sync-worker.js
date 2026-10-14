@@ -76,6 +76,14 @@ async function loadTraining(env){
   const x=await env.WEAK_SYNC_KV.get(TRAIN_KEY,'json');
   return x&&x.modes?x:{version:1,updated_at:null,modes:{quick:{},listen:{},auto:{}}};
 }
+// 2026-10-14 (user decision): the 5-minute cron used to write every change to GitHub, so practice sessions produced a
+// commit (and a runtime rebuild) every few minutes. Devices sync through KV directly, so GitHub only needs the state
+// before each generator reads the runtime: 07:24 AM lesson, 11:24 reading, 17:30 PM lesson (Jakarta, UTC+7), plus
+// one evening snapshot. The cron keeps firing every 5 minutes; outside these windows it does nothing. A window has
+// several 5-minute ticks, so a failed write is retried, and a clean state (dirty=false) never writes.
+// "立即同步" (POST /flush) still writes at once.
+const FLUSH_WINDOWS_WIB=[[6*60+40,7*60+15],[10*60+40,11*60+15],[16*60+40,17*60+20],[21*60,21*60+10]];
+function inFlushWindow(ms){const d=new Date(Number(ms)+7*3600000),m=d.getUTCHours()*60+d.getUTCMinutes();return FLUSH_WINDOWS_WIB.some(w=>m>=w[0]&&m<w[1]);}
 async function flush(env){
   const state=await loadState(env);if(!state.dirty)return {flushed:false};
   const stamp=state.updated_at||new Date().toISOString(),snapshot={version:1,updated_at:stamp,words:state.words||{}};
@@ -114,5 +122,5 @@ export default {
       return json({error:'not_found'},404,env,origin);
     }catch(e){return json({error:String(e&&e.message||e)},500,env,origin);}
   },
-  async scheduled(event,env,ctx){ctx.waitUntil(flush(env));}
+  async scheduled(event,env,ctx){if(!inFlushWindow(event&&event.scheduledTime||Date.now()))return;ctx.waitUntil(flush(env));}
 };
