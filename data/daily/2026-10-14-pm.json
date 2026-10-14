@@ -1,0 +1,337 @@
+{
+  "date": "2026-10-14",
+  "session": "pm",
+  "time": "18:00",
+  "day": 54,
+  "title": "18:00 晚课｜已读不回，是被忽视了吗？",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "balas",
+    "komentar",
+    "mengabaikan"
+  ],
+  "vocab": [
+    {
+      "word": "balas",
+      "display": "balas",
+      "audio_text": "balas",
+      "cn": "回复；回报",
+      "en": "to reply; to repay",
+      "root": "balas",
+      "root_cn": "回复；回报",
+      "formation": "balas（词根，口语和命令句里可直接当动词）→ membalas（meN- + balas，b 开头变 mem-：回复；回报）→ dibalas（被回复）→ balasan（回复的内容；回报）→ berbalas（互相回复，如 berbalas komentar）。",
+      "example": "Maaf baru membalas pesanmu, tadi aku lagi rapat.",
+      "example_cn": "抱歉现在才回你的消息，刚才我在开会。（lagi = sedang）",
+      "synonym_note": "membalas vs menjawab：membalas 多指回复消息、邮件、评论（membalas chat / email / komentar），也指回报或报复（membalas kebaikan 报恩，membalas dendam 报仇）；menjawab 是回答问题（menjawab pertanyaan）。口语说法：bales / balesin（Udah dibales belum?）；工作邮件、正式书面用 membalas。",
+      "usage_note": "WhatsApp 里的“已读不回”常说：Pesannya cuma dibaca, nggak dibales。注意主语是消息时用被动 dibalas，主语是人时用 membalas。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "komentar",
+      "display": "komentar",
+      "audio_text": "komentar",
+      "cn": "评论；留言；意见",
+      "en": "comment",
+      "root": "komentar",
+      "root_cn": "评论（外来词）",
+      "formation": "外来词（荷兰语 commentaar / 英语 comment）→ berkomentar（ber- + komentar，发表评论，不带宾语）→ mengomentari（meN- + komentar + -i，评论某人/某事，带宾语）。",
+      "example": "Banyak teman memberi komentar di foto itu.",
+      "example_cn": "很多朋友在那张照片下留言评论。",
+      "synonym_note": "komentar vs pendapat：komentar 是对某件事、某个帖子公开说的评论，可以很随口；pendapat 是经过思考的看法（menurut pendapat saya）。berkomentar 不带宾语（Dia tidak mau berkomentar），mengomentari 带宾语（mengomentari foto itu）。口语说法：komen（Udah komen belum?）；正式场合用 komentar / berkomentar。",
+      "usage_note": "常见搭配：memberi komentar、menulis komentar、kolom komentar（评论区）、tanpa komentar（不予置评）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengabaikan",
+      "display": "mengabaikan",
+      "audio_text": "mengabaikan",
+      "cn": "忽视；不理会",
+      "en": "to ignore; to neglect",
+      "root": "abai",
+      "root_cn": "疏忽；不在意",
+      "formation": "meN- + abai + -kan（a 开头，meN- 变 meng-）→ mengabaikan；diabaikan（被忽视）；pengabaian（忽视，名词）；abai 本身是形容词“疏忽的”（abai terhadap kesehatan 不注意健康）。",
+      "example": "Jangan mengabaikan pesan dari atasan, apalagi yang penting.",
+      "example_cn": "别不理上司发来的消息，尤其是重要的。",
+      "synonym_note": "mengabaikan vs tidak membalas：mengabaikan 是不理会、不当回事，常带“故意或疏忽”的意味，语气较重、偏书面；tidak membalas 只说明“没回复”，不一定是故意的。merasa diabaikan = 觉得被冷落。口语说法：日常多说 nyuekin / dicuekin（Kok aku dicuekin?）；新闻、正式场合用 mengabaikan。",
+      "usage_note": "常见搭配：mengabaikan pesan / peringatan / nasihat dokter；merasa diabaikan。宾语一般是“本应回应或重视的东西”。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "keberatan",
+      "display": "keberatan",
+      "audio_text": "keberatan",
+      "cn": "介意；有异议；觉得为难",
+      "en": "to mind; objection",
+      "root": "berat",
+      "root_cn": "重；沉重",
+      "formation": "ke- + berat + -an → keberatan：① 觉得是负担、介意（Saya tidak keberatan）② 名词“异议”（mengajukan keberatan 提出异议）。相关：memberatkan（使…为难；加重负担）。",
+      "example": "Kalau Ibu tidak keberatan, saya kirim fotonya lewat WhatsApp.",
+      "example_cn": "如果您不介意，我通过 WhatsApp 把照片发给您。",
+      "synonym_note": "keberatan vs tidak mau：keberatan 是礼貌地表示“介意、觉得为难”，常用于征求同意（Apa Anda keberatan…? / Kalau tidak keberatan…）；tidak mau 是直接拒绝，语气硬。注意别和 berat（重）混：Tasnya berat 是“包很重”，Saya keberatan 才是“我介意”。",
+      "usage_note": "keberatan dengan / sama + 事物 = 对…有意见（keberatan dengan harganya）。回应别人征求同意时常说：Nggak keberatan kok。最近答错过，今晚放在选择题和 rewrite 里主动用。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "baper",
+      "display": "baper",
+      "audio_text": "baper",
+      "cn": "太往心里去；玻璃心（口语）",
+      "en": "to take things too personally",
+      "root": "bawa perasaan",
+      "root_cn": "把情绪带进去；往心里去",
+      "formation": "bawa perasaan 的口语缩略：ba(wa) + per(asaan) → baper；派生 baperan（爱往心里去的人；动不动就玻璃心）。",
+      "example": "Dia cuma bercanda, jangan baper, ya.",
+      "example_cn": "他只是开玩笑，别往心里去哦。",
+      "synonym_note": "baper vs tersinggung vs sensitif：tersinggung 是某一次被冒犯而不高兴；sensitif 是性格敏感，中性、可用于正式场合；baper 是口语，指把玩笑、冷淡等小事“带进感情”，想太多、情绪被牵动（可以是难过，也可以是心动）。正式场合别用 baper，改说 terlalu sensitif / mudah tersinggung。",
+      "usage_note": "典型搭配：jangan baper（别想太多）、gampang baper（容易玻璃心）、baper gara-gara…（因为…情绪上来了）。累计答错 3 次：今晚用辨析选择题和复盘造句来练，不只看词卡。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ganjel",
+      "display": "ganjel",
+      "audio_text": "ganjel",
+      "cn": "心里卡着；觉得哪里不对劲（口语）",
+      "en": "something feels off; uneasy",
+      "root": "ganjal",
+      "root_cn": "垫住；卡住",
+      "formation": "ganjal（垫住；卡住）→ 口语元音变为 ganjel；标准形动词 mengganjal（卡住；心里有疙瘩）；diganjal（被垫住，如 diganjal batu 用石头垫住）。",
+      "example": "Udah minta maaf, tapi rasanya masih ada yang ganjel.",
+      "example_cn": "已经道过歉了，但总觉得心里还有点疙瘩。（udah = sudah）",
+      "synonym_note": "ganjel vs curiga vs khawatir：ganjel 是“心里卡着、说不清哪里不对”；curiga 是怀疑某人、某事有问题；khawatir 是担心将来的结果。ganjel 本身就是口语；标准书面说 mengganjal（Ada hal yang mengganjal di hati saya）。",
+      "usage_note": "最常用 ada yang ganjel、masih ganjel di hati。最近答错过：注意它说的是心里的“疙瘩”，不是“生气”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "tanyain",
+      "display": "tanyain",
+      "audio_text": "tanyain",
+      "cn": "问一下；帮忙问（口语）",
+      "en": "to ask about (colloquial)",
+      "root": "tanya",
+      "root_cn": "问",
+      "formation": "tanya + -in（雅加达口语后缀，相当于 -kan）→ tanyain = tanyakan；带 meN- 的口语形 nanyain = menanyakan（询问某事）。",
+      "example": "Coba tanyain ke penjualnya, masih ada ukuran M nggak.",
+      "example_cn": "你去问问卖家，还有没有 M 码。（nggak = tidak）",
+      "synonym_note": "tanyain vs nanya：nanya（= bertanya）是“提问”这个动作，后面不直接接所问的事（Aku mau nanya）；tanyain（= tanyakan）后面接要问的事，或带“帮我问一下”的意思（Tanyain harganya dong）。tanyain 本身是口语，标准形 tanyakan / menanyakan。",
+      "usage_note": "常用 tanyain aja（直接问吧）、tanyain dong（帮我问一下）、tanyain langsung ke orangnya。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "penasaran",
+      "display": "penasaran",
+      "audio_text": "penasaran",
+      "cn": "好奇；很想知道",
+      "en": "curious",
+      "root": "penasaran",
+      "root_cn": "好奇（本身当作词根）",
+      "formation": "penasaran 本身作词根使用；常见搭配 bikin penasaran（让人好奇）、penasaran sama / dengan…（对…好奇）、rasa penasaran（好奇心）。",
+      "example": "Aku penasaran kenapa toko itu selalu ramai.",
+      "example_cn": "我很好奇为什么那家店总是人很多。",
+      "synonym_note": "penasaran vs ingin tahu：ingin tahu 中性、可正式（rasa ingin tahu 求知欲）；penasaran 在日常里更常用，带“心里痒痒、非弄清楚不可”的急切感，也可指没得到结果而不甘心（kalah terus, jadi penasaran）。",
+      "usage_note": "penasaran + kenapa / apa / siapa 从句，或 penasaran sama + 名词（penasaran sama rasanya）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "entahlah",
+      "display": "entahlah",
+      "audio_text": "entahlah",
+      "cn": "不知道；谁知道呢",
+      "en": "who knows; I don't know",
+      "root": "entah",
+      "root_cn": "不知；不晓得",
+      "formation": "entah（不知）+ -lah（语气助词）→ entahlah，常单独成句表示“谁知道呢”；entah … entah …（不知是…还是…）。今天08:00新学。",
+      "example": "Apakah dia akan datang? Entahlah, belum ada kabar.",
+      "example_cn": "他会来吗？谁知道呢，还没有消息。",
+      "synonym_note": "entahlah vs tidak tahu：entahlah 带无奈、拿不准的语气，常单独用作回应；tidak tahu 只是陈述“不知道”。口语说法：日常聊天更常说 nggak tahu deh，entahlah 带一点感叹，口语里也能用。",
+      "usage_note": "今天08:00新学（早课阅读里 Rina 说 Entahlah laku atau nggak）。今晚在对话里用来表达对别人反应的拿不准。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "khas",
+      "display": "khas",
+      "audio_text": "khas",
+      "cn": "特有的；有特色的",
+      "en": "typical; distinctive",
+      "root": "khas",
+      "root_cn": "特有的；特色的",
+      "formation": "khas 本身作词根；名词 kekhasan（特色）。今天08:00新学。",
+      "example": "Kain batik khas Solo ini cocok untuk hadiah.",
+      "example_cn": "这块梭罗特色的蜡染布很适合当礼物。",
+      "synonym_note": "khas vs khusus：khas 是“某地、某人特有的”（makanan khas Bandung）；khusus 是“专门的、特别指定的”（harga khusus 特价）。词序：名词 + khas + 地名/人，说 batik khas Solo，不说 khas batik Solo。",
+      "usage_note": "今天08:00新学（早课里的 Rina 卖梭罗风格的布）。常见搭配：makanan khas daerah、oleh-oleh khas、logat khas Jawa。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sabtu malam, Rina mengirim foto kain batik khas Solo ke grup WhatsApp kompleks. Dalam satu jam, banyak tetangga memberi komentar dan menanyakan harga. Rina juga mengirim pesan pribadi kepada Bu Wati, teman lama ibunya. Pesan itu sudah dibaca, tetapi sampai Senin belum dibalas. Rina mulai merasa Bu Wati sengaja mengabaikannya. Ia penasaran, apakah Bu Wati keberatan dengan harganya. Ibunya berkata, \"Jangan langsung menganggap dia marah. Tanyakan saja baik-baik.\" Senin sore, Rina menelepon Bu Wati. Ternyata Bu Wati demam sejak Sabtu malam. Ia membaca pesan itu di tempat tidur, lalu tertidur dan lupa membalas. Di akhir telepon, ia malah memesan dua kain untuk anaknya.",
+    "cn": "周六晚上，Rina 把梭罗特色蜡染布的照片发到小区的 WhatsApp 群里。一个小时内，很多邻居留言评论、询问价格。Rina 还私信了妈妈的老朋友 Bu Wati。消息显示已读，但到了周一还没有回复。Rina 开始觉得 Bu Wati 是故意不理她。她很想知道，Bu Wati 是不是对价格有意见。妈妈说：“别一下子就认定她生气了。好好问一问就是了。”周一下午，Rina 给 Bu Wati 打了电话。原来 Bu Wati 从周六晚上就发烧了。她躺在床上看了消息，然后睡着了，就忘了回复。电话快结束时，她反而为孩子订了两块布。"
+  },
+  "dialogue": {
+    "title": "周一下午：Rina 和妈妈在家里",
+    "lines": [
+      {
+        "speaker": "Rina",
+        "id": "Bu, Bu Wati kok nggak bales chat-ku, ya? Udah dua hari.",
+        "cn": "妈，Bu Wati 怎么不回我消息啊？已经两天了。（nggak = tidak，bales = balas，udah = sudah）"
+      },
+      {
+        "speaker": "Ibu",
+        "id": "Mungkin lagi sibuk. Jangan baper dulu.",
+        "cn": "可能正忙着呢。先别往心里去。（lagi = sedang）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Tapi rasanya ada yang ganjel, Bu. Biasanya dia cepet bales.",
+        "cn": "可是我总觉得心里有点不对劲，妈。她平时回得很快。（cepet = cepat）"
+      },
+      {
+        "speaker": "Ibu",
+        "id": "Ya udah, tanyain aja langsung. Jangan nebak-nebak sendiri.",
+        "cn": "那就直接问她吧。别自己瞎猜。（tanyain = tanyakan，nebak = menebak）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Entahlah, Bu. Jangan-jangan dia keberatan sama harganya.",
+        "cn": "谁知道呢，妈。说不定她是对价格有意见。（sama = dengan）"
+      },
+      {
+        "speaker": "Ibu",
+        "id": "Bu Wati nggak pernah ngeluh soal harga kok. Telepon aja sekarang.",
+        "cn": "Bu Wati 从来没抱怨过价格。现在就打个电话吧。（ngeluh = mengeluh，aja = saja）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Oke, aku sempetin telepon dia sebelum masak.",
+        "cn": "好，我做饭前抽空给她打个电话。（sempetin = sempatkan）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：用 membalas 和 mengabaikan（可加 menganggap），用标准印尼语写 2 句：朋友已读不回，你没有马上往坏处想，而是先做了什么。",
+      "reference_answer": "Teman saya sudah membaca pesan saya sejak kemarin, tetapi belum membalas. Saya tidak mau langsung menganggap dia mengabaikan saya, jadi saya menanyakan kabarnya dulu.",
+      "reference_cn": "我朋友从昨天起就看了我的消息，但还没回。我不想马上认定她是不理我，所以先问了问她的近况。"
+    },
+    {
+      "task": "弱词应用：同事说领导回她消息很冷淡，她心里不舒服。用 baper、ganjel、tanyain 写 2–3 句口语劝她。",
+      "reference_answer": "Jangan baper dulu. Kalau masih ada yang ganjel, tanyain aja langsung ke beliau. Siapa tahu beliau cuma lagi sibuk rapat.",
+      "reference_cn": "先别往心里去。要是心里还有疙瘩，就直接去问问他。说不定他只是在忙着开会。"
+    },
+    {
+      "task": "早课词迁移：你在网上看到一家卖地方特色点心的店，评论区说法不一。用今天08:00新学的 khas、entahlah 和新词 komentar 写 2–3 句口语。",
+      "reference_answer": "Toko itu jualan kue khas Bandung. Komentarnya beda-beda: ada yang bilang enak, ada yang bilang kemanisan. Enak nggak? Entahlah, aku harus coba sendiri.",
+      "reference_cn": "那家店卖万隆特色点心。评论说法不一：有人说好吃，有人说太甜。到底好不好吃？谁知道呢，我得自己尝尝。"
+    },
+    {
+      "task": "场景回应：邻居做的辣椒酱很好吃，你想向她要做法。用 keberatan 和 penasaran 礼貌地说 2 句（对长辈用 saya / Ibu）。",
+      "reference_answer": "Bu, kalau Ibu tidak keberatan, boleh saya minta resep sambalnya? Saya penasaran kenapa rasanya enak sekali.",
+      "reference_cn": "阿姨，如果您不介意，能把辣椒酱的做法告诉我吗？我很好奇为什么味道这么好。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "选最自然的一项：Pesan saya sudah dibaca dari kemarin, tapi belum ___ juga.",
+        "options": [
+          "membalas",
+          "balasan",
+          "dibalas",
+          "berbalas"
+        ],
+        "answer_index": 2,
+        "answer": "dibalas",
+        "explain": "主语是 pesan saya（消息），消息是“被回复”的，用被动 dibalas。membalas 是主动形，主语要是人（Dia belum membalas）；balasan 是名词“回复内容”；berbalas 是“互相回复”（berbalas komentar），这里不合适。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Teman saya cuma bercanda soal baju saya, tapi saya kepikiran seharian. Kata teman lain, saya terlalu ___.",
+        "options": [
+          "baper",
+          "penasaran",
+          "keberatan",
+          "ganjel"
+        ],
+        "answer_index": 0,
+        "answer": "baper",
+        "explain": "把一句玩笑放在心上一整天，就是 baper（往心里去、玻璃心），terlalu baper 是固定说法。penasaran 是好奇；keberatan 是介意、有异议，要接对象（keberatan dengan…）；ganjel 是心里卡着、觉得哪里不对，常说 ada yang ganjel，不说 terlalu ganjel。"
+      },
+      {
+        "type": "choice",
+        "prompt": "在群里发全家福之前，你想先征求大家同意：“Ada yang ___ kalau fotonya saya kirim ke grup?”",
+        "options": [
+          "baper",
+          "tersinggung",
+          "penasaran",
+          "keberatan"
+        ],
+        "answer_index": 3,
+        "answer": "keberatan",
+        "explain": "征求同意的固定问法是 Ada yang keberatan…? / Apa Anda keberatan…?（有人介意吗？）。tersinggung 是事后“被冒犯”的反应，不用来提前征求同意；baper 是口语“往心里去”；penasaran 是好奇，意思不对。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Banyak tetangga memberi ______ di foto kain Rina.（评论；留言）",
+        "answer": "komentar",
+        "explain": "memberi komentar = 留言评论。口语可说 komen，但这句是标准语，用 komentar。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Dia sudah tiga kali menelepon, kenapa kamu terus ______ teleponnya?（不理会；忽视）",
+        "answer": "mengabaikan",
+        "explain": "mengabaikan + 本应回应的东西（telepon、pesan、nasihat）= 不理会。主语 kamu 是做动作的人，用主动形 mengabaikan，不用被动 diabaikan。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：她不是不理你，她只是忘了回复。",
+        "tokens": [
+          "Dia",
+          "tidak",
+          "mengabaikanmu,",
+          "dia",
+          "hanya",
+          "lupa",
+          "membalas."
+        ],
+        "answer": "Dia tidak mengabaikanmu, dia hanya lupa membalas.",
+        "answer_cn": "她不是不理你，她只是忘了回复。",
+        "explain": "mengabaikanmu = mengabaikan + -mu（你）。前半句否定“故意不理”，后半句用 hanya lupa membalas 说明真正原因，正好对应阅读里 Bu Wati 的情况。"
+      }
+    ],
+    "self_check": [
+      "不看中文：balas、komentar、mengabaikan 这 3 个新词里，有没有哪个我 3 秒内说不出意思？",
+      "baper、ganjel、penasaran 这三个描述心情的词，我能分清各自是什么感觉吗？",
+      "keberatan：我知道它是“介意、有意见”，而且后面接 dengan / sama 吗？tanyain 我知道是 tanyakan 的口语形吗？",
+      "membalas、dibalas、balasan 三种形式，我能一眼选对吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语，答不出的回看词卡再说一遍。",
+      "易混词各造一句：baper 和 tersinggung 各说一句（玻璃心 vs 被冒犯）；再用 mengabaikan 和 tidak membalas 各说一句，说出“故意不理”和“只是没回”的区别。",
+      "早课词迁移：用今天08:00新学的 khas 和 entahlah 各说一句，khas 记得放在名词后面（batik khas Solo）。",
+      "30 秒复述：用 Rina 的视角说出事情经过——发了消息、已读不回、以为被冷落、打电话、原来 Bu Wati 在发烧，最后还订了两块布。"
+    ]
+  }
+}
