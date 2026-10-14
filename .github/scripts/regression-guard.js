@@ -610,6 +610,11 @@ try {
   ok(index.includes('<span class="slotTime">08:00</span><span id="amStatus"') && index.includes('<span class="slotTime">18:00</span><span id="pmStatus"'), 'index source homepage exposes the 08:00 / 18:00 lesson cards');
   ok(!index.includes('每天 08:00 / 18:00 自动生成到网站。学完后只点一次'), 'homepage obsolete lesson instructions remain removed');
   ok(index.includes('<span class="slotTime">18:00</span><span id="pmStatus"'), 'index source PM card first paint is 18:00');
+  // 2026-10-14: the two script-filled home cards must reserve their FINAL height in the early CSS, otherwise filling them pushes the training cards down (up to ~270px on phones).
+  ok(/#home \.homeLearningGrid > #vocabCoachHome,#home \.homeLearningGrid > #vocabProfile\{[^}]*min-height:265px/.test(index), 'home first paint reserves the final height of the coach/profile cards (desktop)');
+  ok(/@media\(max-width:856px\) and \(min-width:761px\)\{[^}]*#vocabCoachHome[^}]*\{min-height:286px\}\}/.test(index), 'home first paint reserves the final height of the coach/profile cards (narrow two-column)');
+  ok(/#home \.homeLearningGrid > #vocabCoachHome\{min-height:191px\}/.test(index) && /#home \.homeLearningGrid > #vocabProfile\{min-height:265px\}/.test(index), 'home first paint reserves the final height of the coach/profile cards (phones, stacked)');
+  ok(!/#vocabCoachHome,#home \.homeLearningGrid > #vocabProfile\{min-height:0\}/.test(index), 'coach/profile placeholder height must never collapse to 0 on phones');
   ok(index.includes("loadReading('pm')\">18:00短文"), 'index source PM reading button first paint is 18:00');
   ok(index.includes("const PM_SWITCH_DATE='2026-09-16'") && /function pmTimeForDate\(d\)/.test(index), 'index source keeps historical PM switch date');
   ok(/pmTimeForDate\(d\)\+' 晚间学习'/.test(index), 'index source lesson title is date-aware');
