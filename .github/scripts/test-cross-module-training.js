@@ -67,6 +67,22 @@ const recorded=vm.runInNewContext(recordSrc+"\nrecord('tunda',3,{ok:true,kind:'s
 assert.equal(recorded.last_result,'self_checked','Stage 3 must retain user-confirmed status, not rewrite to machine-graded right');
 assert.equal(recorded.stage,4,'Self-checked practice advances to delayed verification');
 
+// 2026-10-14: the third delayed verification certifies mastery even when the word still carries its
+// first-sight memory label; a listening weakness is a separate ability and keeps the word active.
+wp.markWeak('lain',{word:'lain',cn:'别的'},'memory_fuzzy');
+wp.markWeak('baru',{word:'baru',cn:'新'},'memory_dont');wp.markWeak('baru',{word:'baru',cn:'新'},'listening_wrong');
+const stableCtx=()=>({stateMap:()=>states,saveState:s=>Object.assign(states,s),norm:s=>String(s||'').toLowerCase(),Date,
+ HOUR:3600000,DAY:86400000,window:{dispatchEvent(){return true},WeaknessPool:wp},CustomEvent,Number,Object});
+states.lain={word:'lain',stage:4,status:'active',verify_streak:2};states.baru={word:'baru',stage:4,status:'active',verify_streak:2};
+assert.equal(vm.runInNewContext(recordSrc+"\nrecord('lain',4,{ok:true},{word:'lain'})",stableCtx()).status,'stable');
+assert.equal(wp.get('lain').status,'mastered','Three delayed active verifications must clear memory_fuzzy and master the word');
+assert.equal(wp.get('lain').mastered_reason,'automation_stable');
+vm.runInNewContext(recordSrc+"\nrecord('baru',4,{ok:true},{word:'baru'})",stableCtx());
+assert.equal(wp.get('baru').status,'active','A listening weakness keeps the word active after automation is stable');
+assert.deepEqual(Array.from(wp.get('baru').reasons),['listening_wrong'],'Only non-listening reasons are cleared');
+states.lain={word:'lain',stage:4,status:'active',verify_streak:1};
+vm.runInNewContext(recordSrc+"\nrecord('lain',4,{ok:true},{word:'lain'})",stableCtx());
+
 // Exercise each real entrypoint's selection logic when its priority assignment is empty.
 const quick=read('home-learning-upgrade-v2.js');
 const qw=quick.indexOf('  function weightedPool(){'),qend=quick.indexOf('  function sampleWeighted(',qw);
@@ -101,5 +117,17 @@ const persistentAuto=vm.runInNewContext(automation.slice(ba,bb)+'\nbuildPlan(fal
 });
 assert.equal(persistentAuto,oldPlan,'Finished automation cards persist on refresh');
 assert.equal(generated,0,'Refreshing an answered session must not call the unstable dynamic candidate list');
+
+// 2026-10-14: lesson quiz errors map to exactly one core word (vocab or AM review_vocab), never a guess.
+const signalCtx={window:{},document:{querySelector:()=>null},Map,CustomEvent};
+vm.runInNewContext(read('lesson-answer-signal.js'),signalCtx);
+const pick=signalCtx.window.LessonAnswerSignal.target;
+const lessonAm={vocab:[{word:'menerapkan'},{word:'entahlah'},{word:'khas'}],review_vocab:['ngaret','nggak usah']};
+assert.equal(pick(lessonAm,'ngarét','印尼人会说他又 ___ 了。').word,'ngaret','Accented display options and review_vocab words are matched');
+assert.equal(pick(lessonAm,'Nggak usah','___ panik.').word,'nggak usah','Multi-word core words are matched');
+assert.equal(pick(lessonAm,'menerapkannya','Toko ___ sistem baru.').word,'menerapkan','Clitic suffixes are allowed');
+assert.equal(pick(lessonAm,'Entahlah, khas sekali','Pilih ___'),null,'Two candidates and no unique blank records nothing');
+assert.equal(pick(lessonAm,'Entahlah, khas sekali','Pilih: entahlah ___').word,'khas','The core word missing from the question is the blank');
+assert.equal(pick(lessonAm,'中文意思','khas 是什么意思？').word,'khas','A Chinese-answer question falls back to the single Indonesian word in the prompt');
 
 console.log('Cross-module tests passed: independent quick/listen/auto selectors, persisted auto results, listening contrast boundaries and self-check integrity.');

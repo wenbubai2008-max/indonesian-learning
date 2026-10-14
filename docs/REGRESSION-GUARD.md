@@ -374,3 +374,13 @@
 - **效果（用 10-08 晚课后数据模拟 10-09 早课）**：推荐从 nyusahin、tumbuh、terjadi、melawan、memanggil 变为 nyusahin、tumbuh、keuntungan、memutuskan、mengganggu。新错仍优先，另外 3 个换成 47–48 天没出现的词。
 - **不变**：A ∩ D 定义与计数（画像依赖）、冷却、轮换、错词配额、focus 配额（晚课仍保证 2–3 个 focus 词）、课程合同。
 - **晚课模拟（10-08 晚课前数据）**：ceria、melepaskan（focus＋新错）＋ keuntungan、mengganggu、peningkatan（47 天未出现）；application 为当天早课词；checkPm / checkExposure / checkCore 全部通过。
+
+## 17. 2026-10-14 全站复盘后的修复（用户授权“能改的全部改”）
+
+- **掌握判定打通**：自动训练连续三次跨日验证（间隔 2/4/7 天）达到 stable 后，除了 `automation_fail`，同时清除首次分类留下的 `memory_dont / memory_fuzzy / bipa_secondary_* / manual_unknown / seed_unfamiliar / quick_wrong / lesson_wrong / weak`，没有剩余原因就转为 mastered（`mastered_reason=automation_stable`）。听力原因（`listening_*`）保留，因为听力是独立能力。此前 782 个已学词里有 479 个带首次分类标记，训练无论如何都清不掉，“确认掌握”从 9-29 起停在 182。已经 stable 的词在页面加载时补做一次（`backfillStable`）。单纯的识别练习仍然不能判定掌握。
+- **课程小测答错进入弱项池**：新脚本 `data/lesson-answer-signal.js` 包装 08:00 小测（`dailyFixGrade`）和 18:00 选择 / 填空（`dailyLightChoice` / `dailyLightFillCheck`），答错时给唯一能确定的核心词（vocab 或 AM review_vocab）记 `lesson_wrong`（带 `last_wrong`、`wrong_count`）。无法唯一确定的题和排序题不记录。runtime 中 `lesson_wrong` 与 `quick_wrong` 同级（priority 1，focus +36）。
+- **训练任务同分排序**：`vocab-study-coach.js` 同分时按“弱词优先、离上次在课程里出现最久优先”，不再按字母顺序（此前总是先练 a 开头的词）。
+- **搭配黑名单**：`data/lesson-collocation-watchlist.json` + `.github/scripts/check-collocations.js`（只警告，不阻断发布），三个生成任务在校验前运行。
+- **小修**：“查看能力与逐词档案”打开“能力总览”；首页词汇卡标签由 VocabController 独占，不再在“782 个词”和“主学习词库 977 词”之间跳动；自动训练页标签在手机上换行。
+- **测试**：`test-cross-module-training.js`（stable 清除首次分类标记、听力原因保留、小测答错的目标词判定），`test-vocab-study-coach.js`（同分排序），`test-handoff-drill.js`（主库 dont 用完后的断言，#128）。
+- **不变**：新词 / 复习公式、课程合同、冷却与轮换、曝光账本、发布流程。

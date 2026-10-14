@@ -46,14 +46,16 @@
     const overdue=due&&due!==Infinity?Math.max(0,Math.floor((now-due)/DAY)):0;
     score+=Math.min(110,overdue*3)+(stable?0:18);
     const ready=now>=due&&(mode==='auto'||!lastToday); // Stage failures may be retried after their own 1/3/6h delay.
-    return {word:item.word,cn:item.cn,mode,stage:mode==='auto'?(s.requests[k]?1:Math.max(1,Math.min(4,level))):1,score,due_at:due,last_at:last,ready,stable,kind,last_result:lastResult,level,weak:!!weak,last_today:lastToday};
+    return {word:item.word,cn:item.cn,taught_at:item.last_seen||'',mode,stage:mode==='auto'?(s.requests[k]?1:Math.max(1,Math.min(4,level))):1,score,due_at:due,last_at:last,ready,stable,kind,last_result:lastResult,level,weak:!!weak,last_today:lastToday};
   }
   function candidates(mode,now=Date.now()){
     const s=snapshot(),rows=[];s.items.forEach((_,k)=>{const x=status(mode,k,now,s);if(x&&x.ready)rows.push(x)});
     rows.sort((a,b)=>{
       const category=x=>x.kind==='stable'||x.kind==='legacy_stable'?2:x.kind==='new'?1:0;
       if(category(a)!==category(b))return category(a)-category(b);
-      return b.score-a.score||(a.due_at||0)-(b.due_at||0)||a.word.localeCompare(b.word);
+      // Ties (typically words never practiced in this mode) go to the word that has gone longest without a lesson
+      // appearance, weak words first, instead of alphabetical order (which always served "a…" words first).
+      return b.score-a.score||(a.due_at||0)-(b.due_at||0)||Number(b.weak)-Number(a.weak)||String(a.taught_at).localeCompare(String(b.taught_at))||a.word.localeCompare(b.word);
     });
     // Due/weak words first, then unverified words and long-term checks. No random starvation.
     return rows;
