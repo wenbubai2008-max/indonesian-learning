@@ -65,7 +65,10 @@ t('A0 primary phase: secondary dont top-up follows primary words',()=>{
  assert.ok(base.stats.new_pool_secondary_dont_topup>0,'top-up present');
  const dont=base.new_pool_dont;
  const firstSec=dont.findIndex(w=>!primary.has(key(w)));
- assert.ok(firstSec>0,'secondary dont exists and is not first');
+ // 2026-10-14: primary dont words can run out while primary fuzzy words remain; the
+ // top-up is then the whole dont list. Ordering still requires every remaining primary dont first.
+ assert.ok(firstSec>=0,'secondary dont top-up exists');
+ assert.equal(firstSec,dont.filter(w=>primary.has(key(w))).length,'secondary dont starts right after the remaining primary dont words');
  assert.ok(dont.slice(0,firstSec).every(w=>primary.has(key(w))),'all primary dont words precede secondary ones');
  assert.ok(base.new_pool_fuzzy.every(w=>primary.has(key(w))),'no secondary fuzzy before transition');
  const sab=Object.fromEntries(win2.SECONDARY_MASTER_VOCAB_DB.map(x=>[key(x.word),x.sab]));
@@ -92,7 +95,9 @@ t('A2 legacy unverified words are exposed separately and leave the A∩D totals 
  assert.ok(rows.length<=10);
  assert.ok(rows.every(r=>taught.has(key(r[0]))&&!wk.has(key(r[0]))),'only taught words without any weakness record');
  assert.ok(base.review_pool.filter(r=>r[1]!==5).every(r=>weak[key(r[0])]&&weak[key(r[0])].status==='active'),'normal rows stay active weak words');
- assert.ok(base.review_pool.findIndex(r=>r[1]===5)>=base.review_pool.filter(r=>r[1]!==5).length||!rows.length,'legacy rows come after every normal row');
+ // Same-day AM rows (2026-10-08) are appended after the legacy rows while the watermark is an 08:00 lesson.
+ const sameDay=base.stats.same_day_am_review_exposed||0,core=sameDay?base.review_pool.slice(0,-sameDay):base.review_pool;
+ assert.ok(core.findIndex(r=>r[1]===5)>=core.filter(r=>r[1]!==5).length||!rows.length,'legacy rows come after every normal row');
 });
 
 // A3. recurrence_pool: only pending-review words (A∩D plus remaining legacy), never mastered / new words, minimal rows, disjoint from review_pool.
