@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261013-sekolah-enam-lantai-pasar-rebo","date":"2026-10-13","title":"Lahan Terbatas, SD dan SMP di Pasar Rebo Kini Satu Gedung Enam Lantai","title_cn":"土地有限，Pasar Rebo 的小学和初中如今合用一栋六层楼","path":"data/extensive-reading-history/2026-10-13.js"},
 {"id":"er-20261012-mandalika-street-food-festival","date":"2026-10-12","title":"Festival Kuliner Lombok di Tengah Ramainya MotoGP Mandalika","title_cn":"MotoGP 热潮中的龙目美食节","path":"data/extensive-reading-history/2026-10-12.js"},
 {"id":"er-20261011-menjadi-pendengar-yang-baik","date":"2026-10-11","title":"Menjadi Pendengar, Bantuan Sederhana untuk Kesehatan Mental","title_cn":"做一个倾听者：对心理健康最简单的帮助","path":"data/extensive-reading-history/2026-10-11.js"},
 {"id":"er-20261010-tiga-rute-mikrotrans-berubah","date":"2026-10-10","title":"Tiga Rute Mikrotrans Berubah Mulai 17 Oktober","title_cn":"三条 Mikrotrans 线路 10 月 17 日起调整","path":"data/extensive-reading-history/2026-10-10.js"},
