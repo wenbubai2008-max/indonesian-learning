@@ -449,20 +449,45 @@ jobs:
           fi
 
           baseline_dir="${RUNNER_TEMP}/lesson-release-base-${GITHUB_RUN_ID}"
-          rm -rf "$baseline_dir"
-          git worktree add --detach "$baseline_dir" "$release_base"
           candidate_tmp="${RUNNER_TEMP}/lesson-candidate-${GITHUB_RUN_ID}.json"
           plan_json="${RUNNER_TEMP}/lesson-plan-${GITHUB_RUN_ID}.json"
           git show "HEAD:$candidate" > "$candidate_tmp"
+          trap 'git worktree remove --force "$baseline_dir" >/dev/null 2>&1 || true' EXIT
 
-          if ! (cd "$baseline_dir" && node .github/scripts/plan-lesson-publication.js             --candidate "$candidate_tmp"             --date "$release_date"             --session "$release_session"             --main-head "$release_base" > "$plan_json"); then
-            cat "$plan_json" || true
-            git worktree remove --force "$baseline_dir" || true
-            echo '::error title=Lesson planner rejected candidate::The unchanged lesson is not publishable against current main.'
-            exit 1
-          fi
+          prepare_release() {
+            # Always execute the planner/validator from the exact latest main, never PR scripts.
+            git worktree add --detach "$baseline_dir" "$latest_main"
+            if ! (cd "$baseline_dir" && node .github/scripts/plan-lesson-publication.js \
+                --candidate "$candidate_tmp" --date "$release_date" --session "$release_session" \
+                --main-head "$latest_main" > "$plan_json"); then
+              cat "$plan_json" || true
+              echo '::error title=Lesson planner rejected candidate::The unchanged lesson is not publishable against current main.'
+              return 1
+            fi
 
-          node - "$plan_json" "$GITHUB_WORKSPACE/data/daily/index.json" <<'NODE'
+            (cd "$baseline_dir" && \
+              node --check .github/scripts/validate-lesson-candidate.js && \
+              node --check .github/scripts/plan-lesson-publication.js && \
+              node --check .github/scripts/check-release-pr.js && \
+              node .github/scripts/test-lesson-candidate.js && \
+              node .github/scripts/test-publication-plan.js && \
+              node .github/scripts/test-release-pr.js && \
+              node .github/scripts/test-real-published-lesson.js && \
+              node .github/scripts/regression-guard.js)
+
+            if [ "$regenerate_index" = "true" ]; then
+              # Keep the same branch/PR and its original lesson. Merge current main normally;
+              # only a generated-index conflict can be resolved by the authoritative planner.
+              if ! git merge --no-commit --no-ff "$latest_main"; then
+                conflicts="$(git diff --name-only --diff-filter=U)"
+                if [ "$conflicts" != "data/daily/index.json" ]; then
+                  echo "::error title=Lesson release conflict::Refuse to change the original lesson or resolve other conflicts: $conflicts"
+                  git merge --abort
+                  return 1
+                fi
+              fi
+
+              node - "$plan_json" "$GITHUB_WORKSPACE/data/daily/index.json" <<'NODE'
           const fs=require('fs');
           const [planPath,indexPath]=process.argv.slice(2);
           const p=JSON.parse(fs.readFileSync(planPath,'utf8'));
@@ -473,97 +498,143 @@ jobs:
           fs.writeFileSync(indexPath,indexFile.content);
           NODE
 
-          (cd "$baseline_dir" &&             node --check .github/scripts/validate-lesson-candidate.js &&             node --check .github/scripts/plan-lesson-publication.js &&             node --check .github/scripts/check-release-pr.js &&             node .github/scripts/test-lesson-candidate.js &&             node .github/scripts/test-publication-plan.js &&             node .github/scripts/test-release-pr.js &&             node .github/scripts/test-real-published-lesson.js &&             node .github/scripts/regression-guard.js)
+              git add -- data/daily/index.json
+              if ! git diff --cached --quiet || git rev-parse -q --verify MERGE_HEAD >/dev/null; then
+                git commit -m "Prepare ${release_date} ${release_session^^} lesson release"
+              fi
+            fi
+            final_sha="$(git rev-parse HEAD)"
+            node "$baseline_dir/.github/scripts/check-release-pr.js" "$latest_main" "$final_sha" "$PR_HEAD_REF"
+            if [ "$regenerate_index" = "true" ]; then
+              git push origin "HEAD:$PR_HEAD_REF"
+              node "$baseline_dir/.github/scripts/check-release-pr.js" "$latest_main" "$final_sha" "$PR_HEAD_REF"
+            fi
+            git worktree remove --force "$baseline_dir"
+            release_base="$latest_main"
+          }
 
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- data/daily/index.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Prepare ${release_date} ${release_session^^} lesson release"
-          fi
-          final_sha="$(git rev-parse HEAD)"
-
-          node "$baseline_dir/.github/scripts/check-release-pr.js" "$release_base" "$final_sha" "$PR_HEAD_REF"
-          git worktree remove --force "$baseline_dir"
-
-          git push origin "HEAD:$PR_HEAD_REF"
-
-          git fetch --no-tags origin main
-          latest_main="$(git rev-parse origin/main)"
-          if [ "$latest_main" != "$release_base" ]; then
-            echo "::error title=Main advanced before lesson merge::Release was prepared from $release_base but origin/main is now $latest_main. The release branch is preserved and the synchronize run will recompute the index."
-            exit 1
-          fi
-
-          mergeable=""
-          merge_state=""
-          for attempt in 1 2 3 4 5 6 7 8 9 10; do
-            pr_json="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
-            remote_head="$(jq -r '.head.sha // empty' <<<"$pr_json")"
-            remote_base="$(jq -r '.base.sha // empty' <<<"$pr_json")"
-            pr_state="$(jq -r '.state // "unknown"' <<<"$pr_json")"
-            pr_merged="$(jq -r '.merged // false' <<<"$pr_json")"
-            if [ "$pr_merged" = "true" ] || [ "$pr_state" = "closed" ]; then
-              echo 'Lesson release PR already merged/closed after synchronize; no duplicate merge is needed.'
-              exit 0
+          merged=false
+          # Initial preparation plus at most two same-job retries. Bot synchronize runs
+          # may require approval and expire with zero jobs; they are never a recovery path.
+          for release_attempt in 0 1 2; do
+            git fetch --no-tags origin main
+            latest_main="$(git rev-parse origin/main)"
+            regenerate_index=true
+            if [ "$release_attempt" -gt 0 ]; then
+              changed_main="$(git diff --name-only "$release_base" "$latest_main")"
+              if ! grep -q '^data/daily/' <<<"$changed_main"; then
+                regenerate_index=false
+                echo "Main advanced without data/daily changes; revalidate the existing release against $latest_main (retry $release_attempt/2)."
+              else
+                echo "Main advanced with data/daily changes; regenerate index on the same release branch against $latest_main (retry $release_attempt/2)."
+              fi
             fi
-            if [ "$remote_head" != "$final_sha" ]; then
-              echo "Waiting for GitHub to observe final lesson PR head $final_sha (attempt $attempt/10, currently $remote_head)."
-              sleep 2
+            prepare_release
+
+            git fetch --no-tags origin main
+            if [ "$(git rev-parse origin/main)" != "$release_base" ]; then
+              echo 'Main advanced after preparation; retry inside this job.'
               continue
             fi
-            if [ "$remote_base" != "$release_base" ]; then
-              echo "::error title=Lesson PR base moved::Prepared from $release_base but GitHub reports $remote_base."
+
+            mergeable=""
+            merge_state=""
+            main_moved=false
+            for attempt in 1 2 3 4 5 6 7 8 9 10; do
+              pr_json="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+              remote_head="$(jq -r '.head.sha // empty' <<<"$pr_json")"
+              remote_base="$(jq -r '.base.sha // empty' <<<"$pr_json")"
+              pr_state="$(jq -r '.state // "unknown"' <<<"$pr_json")"
+              pr_merged="$(jq -r '.merged // false' <<<"$pr_json")"
+              if [ "$pr_merged" = "true" ] || [ "$pr_state" = "closed" ]; then
+                echo 'Lesson release PR already merged/closed; no duplicate merge is needed.'
+                exit 0
+              fi
+              if [ "$remote_head" != "$final_sha" ]; then
+                echo "Waiting for GitHub to observe final lesson PR head $final_sha (attempt $attempt/10, currently $remote_head)."
+                sleep 2
+                continue
+              fi
+              if [ "$remote_base" != "$release_base" ]; then
+                git fetch --no-tags origin main
+                if [ "$(git rev-parse origin/main)" != "$release_base" ]; then
+                  main_moved=true
+                  break
+                fi
+                # GitHub may still be reporting the previous base SHA after a fetch.
+                sleep 2
+                continue
+              fi
+              mergeable="$(jq -r 'if .mergeable == null then "unknown" else (.mergeable|tostring) end' <<<"$pr_json")"
+              merge_state="$(jq -r '.mergeable_state // "unknown"' <<<"$pr_json")"
+              if [ "$mergeable" = "true" ]; then break; fi
+              if [ "$mergeable" = "false" ]; then
+                git fetch --no-tags origin main
+                if [ "$(git rev-parse origin/main)" != "$release_base" ]; then
+                  main_moved=true
+                  break
+                fi
+                echo "::error title=Lesson PR not mergeable::GitHub reports mergeable=false state=$merge_state."
+                exit 1
+              fi
+              echo "Waiting for GitHub to recompute lesson PR mergeability (attempt $attempt/10, state=$merge_state)."
+              sleep 2
+            done
+            if [ "$main_moved" = "true" ]; then continue; fi
+            if [ "$mergeable" != "true" ]; then
+              echo "::error title=Lesson PR mergeability timeout::GitHub did not compute mergeable=true within the bounded wait; state=$merge_state."
               exit 1
             fi
-            mergeable="$(jq -r 'if .mergeable == null then "unknown" else (.mergeable|tostring) end' <<<"$pr_json")"
-            merge_state="$(jq -r '.mergeable_state // "unknown"' <<<"$pr_json")"
-            if [ "$mergeable" = "true" ]; then
-              break
+
+            response=""
+            merge_error="${RUNNER_TEMP}/lesson-merge-error.txt"
+            for attempt in 1 2 3; do
+              # Cover main movement during the mergeability wait and API retries as well.
+              git fetch --no-tags origin main
+              if [ "$(git rev-parse origin/main)" != "$release_base" ]; then
+                main_moved=true
+                break
+              fi
+              if response="$(gh api --method PUT "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/merge" -f merge_method=squash -f sha="$final_sha" 2>"$merge_error")"; then
+                break
+              fi
+              echo "Merge API attempt $attempt/3 did not complete:"
+              cat "$merge_error" || true
+              pr_after="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" 2>/dev/null || true)"
+              if [ -n "$pr_after" ] && [ "$(jq -r '.merged // false' <<<"$pr_after")" = "true" ]; then
+                merge_sha="$(jq -r '.merge_commit_sha // empty' <<<"$pr_after")"
+                response="$(jq -n --arg sha "$merge_sha" '{sha:$sha,merged:true,message:"Merge confirmed by read-back after API error"}')"
+                echo "Merge read-back confirmed merged=true after API error; sha=$merge_sha"
+                break
+              fi
+              if [ "$attempt" -lt 3 ]; then sleep 2; fi
+            done
+            if [ "$main_moved" = "true" ]; then continue; fi
+            # Even the last failed API attempt can race a main update.
+            git fetch --no-tags origin main
+            if [ "$(git rev-parse origin/main)" != "$release_base" ] &&
+                { [ -z "$response" ] || [ "$(jq -r '.merged // false' <<<"$response")" != "true" ]; }; then
+              continue
             fi
-            if [ "$mergeable" = "false" ]; then
-              echo "::error title=Lesson PR not mergeable::GitHub reports mergeable=false state=$merge_state."
+            if [ -z "$response" ]; then
+              echo '::error title=Lesson merge failed::GitHub merge API failed after bounded retries and read-back.'
               exit 1
             fi
-            echo "Waiting for GitHub to recompute lesson PR mergeability (attempt $attempt/10, state=$merge_state)."
-            sleep 2
-          done
-          if [ "$mergeable" != "true" ]; then
-            echo "::error title=Lesson PR mergeability timeout::GitHub did not compute mergeable=true within the bounded wait; state=$merge_state."
-            exit 1
-          fi
-
-          git fetch --no-tags origin main
-          test "$(git rev-parse origin/main)" = "$release_base"
-
-          response=""
-          merge_error="${RUNNER_TEMP}/lesson-merge-error.txt"
-          for attempt in 1 2 3; do
-            if response="$(gh api --method PUT "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/merge" -f merge_method=squash -f sha="$final_sha" 2>"$merge_error")"; then
-              break
+            printf '%s\n' "$response"
+            merged="$(jq -r '.merged // false' <<<"$response")"
+            if [ "$merged" != "true" ]; then
+              echo '::error title=Lesson merge failed::GitHub did not report merged=true.'
+              exit 1
             fi
-            echo "Merge API attempt $attempt/3 did not complete:"
-            cat "$merge_error" || true
-            pr_after="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" 2>/dev/null || true)"
-            if [ -n "$pr_after" ] && [ "$(jq -r '.merged // false' <<<"$pr_after")" = "true" ]; then
-              merge_sha="$(jq -r '.merge_commit_sha // empty' <<<"$pr_after")"
-              response="$(jq -n --arg sha "$merge_sha" '{sha:$sha,merged:true,message:"Merge confirmed by read-back after API error"}')"
-              echo "Merge read-back confirmed merged=true after API error; sha=$merge_sha"
-              break
-            fi
-            if [ "$attempt" -lt 3 ]; then sleep 2; fi
+            merge_sha="${merge_sha:-$(jq -r '.sha // empty' <<<"$response")}"
+            break
           done
-          if [ -z "$response" ]; then
-            echo '::error title=Lesson merge failed::GitHub merge API failed after bounded retries and read-back.'
-            exit 1
-          fi
-          printf '%s\n' "$response"
-          merged="$(jq -r '.merged // false' <<<"$response")"
           if [ "$merged" != "true" ]; then
-            echo '::error title=Lesson merge failed::GitHub did not report merged=true.'
+            echo '::error title=Lesson release retry limit::Main kept advancing after two same-job retries. Preserve the same branch/PR; do not generate another lesson.'
             exit 1
           fi
-          merge_sha="${merge_sha:-$(jq -r '.sha // empty' <<<"$response")}"
           echo "LESSON_RELEASE_PUBLISHED date=$release_date session=$release_session pr=$PR_NUMBER head=$final_sha merge=$merge_sha"
 
           # A merge performed with GITHUB_TOKEN does not recursively trigger normal push workflows.
