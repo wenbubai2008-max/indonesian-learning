@@ -32,6 +32,8 @@ on:
       - '.github/scripts/review-rotation.js'
       - '.github/scripts/rank-review-candidates.js'
       - 'data/training-sync-client.js'
+      - 'data/sync-device-setup.js'
+      - 'data/weakness-sync-client.js'
       - 'data/lesson-answer-signal.js'
       - 'cloudflare/weakness-sync-worker.js'
       - 'data/weakness-paging-roots.js'
@@ -156,6 +158,8 @@ jobs:
           node --check .github/scripts/test-handoff-drill.js
           node .github/scripts/test-handoff-drill.js
           node --check data/training-sync-client.js
+          node --check data/sync-device-setup.js
+          node --check data/weakness-sync-client.js
           node --check data/lesson-answer-signal.js
           node .github/scripts/test-training-sync.js
           node .github/scripts/test-review-cycle.js

@@ -396,6 +396,7 @@
 - **测试**：`test-cross-module-training.js`（stable 清除首次分类标记、听力原因保留、小测答错的目标词判定），`test-vocab-study-coach.js`（同分排序），`test-handoff-drill.js`（主库 dont 用完后的断言，#128）。
 - **不变**：新词 / 复习公式、课程合同、冷却与轮换、曝光账本、发布流程。
 - **补充（同日第二批）**：晚课排序题答错时，答案句里只有一个核心词才记 `lesson_wrong`；自检每条下面列出它提到的核心词，可点“卡住了”记一笔（`lessonSelfStuck`，只改渲染，`selfCheckHtml(items)` 签名和课程 JSON 不变）；首页画像卡显示“近 7 天”变化（掌握数不涨时标橙）；训练进度跨设备同步：Worker 新增 `/training`（只存 KV），网站端 `data/training-sync-client.js`，Worker 未更新时 404 → 6 小时退避，不影响弱项同步。测试 `test-training-sync.js`（两台模拟设备经真实 Worker 代码同步）已加入 Build learning runtime。
+- **手机扫码设置同步（同日第三批，用户要求）**：“学习状态同步”面板新增“手机扫码设置”，按本机已保存的地址和密钥生成二维码（`data/sync-device-setup.js`，二维码库 `data/vendor/qrcode-generator-1.4.4.js`（MIT）只在点开时加载）。链接形如 `…/indonesian-learning/#sync-setup=<base64url>`：只用 URL 片段（不会发到任何服务器），不用查询参数；该脚本在页面解析阶段同步执行，先于 `home-modules-layout.js` 在 DOMContentLoaded 读取 hash，立即用 `replaceState` 去掉片段；用户点“启用”前不保存任何东西；只接受 https 地址；启用时清除训练同步的 404 退避。二维码弹窗 3 分钟自动关闭。测试并入 `test-training-sync.js`。
 - **本地复现 Build 步骤时注意**：工作流 Recompute 步骤的 for 循环里有 `git reset --hard origin/main`，只截取到 `vocab-ui-regression-guard.js` 为止的命令来跑，否则会清掉本地未提交的修改。
 
 ## 18. 2026-10-14 复习循环课程形态（用户决定）

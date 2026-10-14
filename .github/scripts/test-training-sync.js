@@ -46,8 +46,35 @@ const repo=path.resolve(__dirname,'..','..');
   const old=device('old',{supported:false});old.write('indo_quick_practice_state',{x:{last:1}});
   await old.api.run();assert.ok(JSON.parse(old.store.get('indo_training_sync_meta_v1')).unsupported_until>Date.now(),'404 is remembered, no retries every minute');
   assert.deepEqual(old.read('indo_quick_practice_state'),{x:{last:1}},'local state untouched');
+  // QR setup (data/sync-device-setup.js): the computer's link configures a new phone, the fragment is removed from
+  // the address bar before the page's own navigation reads it, and a phone stuck in the 404 back-off syncs at once.
+  const setupSrc=fs.readFileSync(path.join(repo,'data','sync-device-setup.js'),'utf8');
+  function setupCtx(hash,store){
+    const urls=[],win={};
+    const ctx={window:win,localStorage:{getItem:k=>store.has(k)?store.get(k):null,setItem:(k,v)=>store.set(k,String(v)),removeItem:k=>store.delete(k)},
+      location:{hash,pathname:'/indonesian-learning/',search:'',origin:'https://wenbubai2008-max.github.io'},
+      history:{replaceState:(s,t,u)=>urls.push(u)},document:{readyState:'loading',addEventListener(){}},
+      btoa,atob,escape,unescape,JSON,Object,String,Promise,Array,setTimeout:()=>0,clearTimeout(){}};
+    vm.runInNewContext(setupSrc,ctx,{filename:'sync-device-setup.js'});return {api:win.SyncDeviceSetup,urls,win};
+  }
+  const pc=setupCtx('',new Map([['indo_weak_sync_config_v1',JSON.stringify({endpoint:'https://w.example/',key:'k'})]]));
+  const link=pc.api.link({endpoint:'https://w.example',key:'k'},'https://wenbubai2008-max.github.io/indonesian-learning/');
+  assert.match(link,/^https:\/\/wenbubai2008-max\.github\.io\/indonesian-learning\/#sync-setup=[A-Za-z0-9_-]+$/,'setup link is a URL fragment, never a query string');
+  assert.equal(pc.urls.length,0,'a normal visit leaves the address bar alone');
+  const newPhone=device('new-phone');newPhone.store.delete('indo_weak_sync_config_v1');
+  newPhone.store.set('indo_training_sync_meta_v1',JSON.stringify({unsupported_until:Date.now()+3600000}));
+  const rc=setupCtx(link.slice(link.indexOf('#')),newPhone.store);
+  assert.equal(rc.urls.join(),'/indonesian-learning/','the key is removed from the address bar at once');
+  assert.equal(newPhone.store.get('indo_weak_sync_config_v1'),undefined,'nothing is saved before the learner taps 启用');
+  assert.equal(JSON.stringify(rc.api.parse(link.slice(link.indexOf('#')))),JSON.stringify({endpoint:'https://w.example',key:'k'}));
+  assert.equal(rc.api.parse('#sync-setup='+Buffer.from(JSON.stringify({e:'http://w.example',k:'k'})).toString('base64url')),null,'plain http endpoints are refused');
+  assert.equal(rc.api.parse('#sync-setup=%%%'),null,'a damaged link is refused');
+  rc.win.TrainingSync=newPhone.api;await rc.api.accept(rc.api.parse(link.slice(link.indexOf('#'))));
+  assert.deepEqual(JSON.parse(newPhone.store.get('indo_weak_sync_config_v1')),{endpoint:'https://w.example',key:'k'});
+  assert.ok(!JSON.parse(newPhone.store.get('indo_training_sync_meta_v1')).unsupported_until,'setting up lifts the 404 back-off');
+  assert.equal(newPhone.read('indo_quick_practice_state').tunda.review_level,3,'the newly set-up phone receives the existing training state');
   // Unauthorized requests are rejected by the Worker.
   const res=await worker.fetch(new Request('https://w.example/training',{headers:{'x-sync-key':'bad'}}),env);
   assert.equal(res.status,401);
-  console.log('Training sync tests passed: newest record wins per word, three modes shared, key spelling kept, 404 back-off, auth.');
+  console.log('Training sync tests passed: newest record wins per word, three modes shared, key spelling kept, 404 back-off, QR setup link, auth.');
 })().catch(e=>{console.error(e);process.exit(1)});
