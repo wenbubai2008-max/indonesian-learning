@@ -1,6 +1,6 @@
 # 课程教学质量与审稿清单（08:00 早课、18:00 晚课共用）
 
-本文件汇总用户对 Day 43–45 课程的点评，是早课和晚课生成任务的统一教学要求（2026-10-07 起由两份任务提示词引用，取代提示词里各自粘贴的“补充”段落）。规则不因合并而放宽：凡下文写“必须”的，都是硬性要求。
+本文件汇总用户对 Day 43–45 课程的点评（以及之后各条带日期标注的点评），是早课和晚课生成任务的统一教学要求（2026-10-07 起由两份任务提示词引用，取代提示词里各自粘贴的“补充”段落）。规则不因合并而放宽：凡下文写“必须”的，都是硬性要求。
 
 适用说明：早课没有 dialogue / rewrite / fill / order，对应地把“对话”换成 sentences，“rewrite”换成 output，“choice”换成 quiz。
 
@@ -33,6 +33,13 @@
 
 **目标词入句检查（Day 48 点评，必须）：** 每个核心词放进阅读、对话、例句、rewrite 参考答案后，先单独问：这个搭配是不是本地人真会这么说？不能只因为“要复现这个词”就保留。真实反例：`Melepaskan gaji yang lebih besar` 不自然（放弃的是工作机会，不是工资），应写 `Melepaskan tawaran dengan gaji yang lebih besar`；`Nyantai aja dulu` 能懂，但劝人别急更自然是 `Santai aja dulu`，nyantai 更适合作动作：`Kita nyantai dulu aja`。为复现词而写、带明显刻意感的句子（如为 kabur 硬写的玩笑）宁可删掉。不要为展示词根或派生形式造不自然的搭配；也不要一味追求俚语，A2+→B1 仍需规范实用的印尼语。
 
+**新词首日搭配从严（Day 54 点评，必须）：** 新词第一次出现时，学习者会把课里的句子当作固定搭配记住，所以新词所在的每一句（例句、sentences、阅读、复盘里的示范半句）都要用最典型的搭配，“能懂但不地道”也不行。同一节课里词卡说明和正文用法必须一致：词卡写了“khas 放在名词后”，正文就不能出现 khas 放错位置的句子。真实反例：
+
+- `Suhu siang ini panas banget.`：suhu 是温度数值，应说 `Suhu siang ini tinggi banget.`，或不用 suhu，直接说 `Siang ini panas banget.`。“suhu panas”相当于中文“温度很热”，不能作为 suhu 的示范句。
+- `Kain jualannya bermotif khas batik Solo.` / `Kain motif khas Jawa ini…`：khas 要紧跟被修饰的名词，应写 `bermotif batik khas Solo`、`Kain bermotif khas Jawa ini…` 或 `Kain dengan motif khas Jawa ini…`。
+- `Pedagang itu menerapkan harga khusus untuk pembeli langganan.`：“老顾客”说 `pelanggan tetap`；“实行特价”说 `memberlakukan harga khusus`（口语 `kasih harga khusus`）。menerapkan 的示范搭配优先 `menerapkan strategi / sistem / aturan`。
+- 连接词：日常对话里“然后呢？”说 `Terus gimana?`，不说 `Kemudian bagaimana?`。kemudian 用在叙述和讲步骤里；对话、口语句里的“然后”优先用 terus / lalu。
+
 ## 2. 词卡准确性审稿 + 反例测试
 
 每张词卡检查：核心含义有没有讲窄或讲过头；“常见倾向”有没有被写成“绝对规则”；口语形式与规范形式有没有说清；近义/易混辨析是否真正成立。每个词至少想一个反例来验证解释。
@@ -41,6 +48,8 @@
 - 解释里凡出现“总是 / 一定 / 带……意味”等绝对化说法，都要用反例检验。
 
 **构词说明必须准确。** 涉及 meN-、peN-、ber-、ke-an、pe-an 等词缀时，检查词根与鼻音变化：pencuri＝peN- + curi（不是“pe- + curi”），menulis＝meN- + tulis，mengetik＝meN- + ketik，memukul＝meN- + pukul（p 脱落），penulis＝peN- + tulis。root 必须是真正的词根（如 curi），root_cn 对应；formation 的派生说明要经得起推敲。
+
+**不要编造音变规则（Day 54 点评，必须）：** 真实反例：词卡写 `pedagang = peN- + dagang（peN- 遇 d 变 pe-）`，这是错的。peN- 遇 d 规则上变 pen-（penduduk、pendaftar）。pedagang 属于 pe- 直接加词根、对应 ber- 动词的一类：berdagang → pedagang，bertani → petani，berlari → pelari。说不清规则时，就写成“dagang（买卖）→ pedagang（做买卖的人），对应动词 berdagang”，不要为了解释自造一条规则。
 
 ## 3. 全课事实一致性与因果
 
