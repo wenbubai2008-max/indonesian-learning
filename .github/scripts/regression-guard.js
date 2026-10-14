@@ -530,6 +530,8 @@ try {
 
   const protectedOrder = "const ORDER=['泛读','词汇学习','词根家族','弱项强化','难点解释'];";
   const layout = read('data/home-modules-layout.js');
+  // 2026-10-14: the JS-injected compact grid once said 4 columns while first paint said 5, so after load the fifth card wrapped to its own row.
+  ok(/#home \.modules\.homeModulesCompact\{display:grid!important;grid-template-columns:repeat\(5,minmax\(0,1fr\)\)/.test(layout) && !/homeModulesCompact\{display:grid!important;grid-template-columns:repeat\(4,/.test(layout), 'post-load desktop tool grid keeps the same 5 columns as first paint');
   const indexHtml = read('index.html');
   ok(layout.includes(protectedOrder), 'JS card order matches the protected order');
   ok(layout.includes("key:'roots'") && layout.includes("root-families/index.html"), 'root family homepage shortcut exists');
@@ -548,7 +550,7 @@ try {
     }
   }
   ok(rootPage.includes("fetch('roots.json'") && rootPage.includes('id="cards"') && rootPage.includes('id="detail"'), 'root family library loads independent expandable JSON');
-  ok(indexHtml.includes('data/daily-width-fix.css?v=20261004-roots-five') && indexHtml.includes('data/home-modules-layout.js?v=20261014-review1'),'homepage css and module JS cache keys are updated');
+  ok(indexHtml.includes('data/daily-width-fix.css?v=20261004-roots-five') && indexHtml.includes('data/home-modules-layout.js?v=20261014-five1'),'homepage css and module JS cache keys are updated');
   ok(!/<div class="modules"[^>]*>\s*<button/s.test(indexHtml), 'index does not hard-code homepage cards');
   if(fs.existsSync(rel('data/home-modules-stability.js'))){
     const stability = read('data/home-modules-stability.js');
