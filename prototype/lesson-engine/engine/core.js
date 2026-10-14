@@ -125,6 +125,9 @@
       if(freshWrong(r))return false;
       if(ctx.target.session==='pm'&&(sameAm?.review_core||[]).map(norm).includes(r.word))return true;
       if(ctx.target.session==='am'&&last?.session==='pm'&&(last.review_core||[]).map(norm).includes(r.word))return true;
+      // Exposure ledger (2026-10-08): a word actively reviewed in either of the last 2 completed lessons
+      // cools down. The CI-only V4 rehearsal must follow it or the planner rejects every variant.
+      if(hist.slice(-2).some(h=>(h.review_core||[]).map(norm).includes(r.word)))return true;
       if(prevPms.length===2&&prevPms.every(p=>(p.review_core||[]).map(norm).includes(r.word))){
         const days=(Date.parse(ctx.target.date+'T00:00:00Z')-Date.parse(prevPms[1].date+'T00:00:00Z'))/86400000;
         if(days<=3)return true;

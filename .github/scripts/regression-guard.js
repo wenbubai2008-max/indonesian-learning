@@ -484,6 +484,13 @@ try {
   releaseWorkflowOk(lessonRelease.includes('if [ "$main_moved" = "true" ]; then continue; fi') &&
     lessonRelease.includes('Lesson release retry limit') && lessonRelease.includes('dispatch_sync "$merge_sha"'),
     'late main movement shares the same bounded recovery and successful merge dispatches existing Sync');
+  // 2026-10-14: cosmetic cleanup of the zero-job bot run created by the index push. It must stay narrow
+  // (bot actor + 0 jobs + this release branch), run only after success, and never fail the release.
+  const noiseCleanup=stepBody('Remove the zero-job bot run left by the index push');
+  releaseWorkflowOk(noiseCleanup.includes("if: ${{ success() }}") && noiseCleanup.includes('continue-on-error: true') &&
+    noiseCleanup.includes('.triggering_actor.login == \\"github-actions[bot]\\"') && noiseCleanup.includes('[ "$jobs" = 0 ] || continue') &&
+    noiseCleanup.includes('select(.id != $GITHUB_RUN_ID') && noiseCleanup.includes('^lesson-release-') && !/--method DELETE[^\n]*\/git\//.test(noiseCleanup),
+    'bot-noise cleanup only deletes zero-job github-actions[bot] runs on the release branch, after success, without failing the release');
   pausedOk(!/^  create:\s*$/m.test(sync), 'V4 paused: branch-create watcher is not an active workflow trigger');
   pausedOk(/^    if: \$\{\{ false \}\}\s*$/m.test(sync), 'V4 paused: dormant release-scaffold watcher job is hard-disabled');
   const failedPrStep=stepBody('Recover immediately after an eligible lesson release fails');
