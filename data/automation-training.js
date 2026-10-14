@@ -315,7 +315,10 @@
   function refreshMeta(){
     const meta=document.getElementById('automationTrainingMeta');if(!meta)return;
     const plan=loadPlan(),total=Array.isArray(plan.words)?plan.words.length:0,done=plan.results?Object.keys(plan.results).length:0;
-    const stats=window.VocabStudyCoach&&window.VocabStudyCoach.statistics('auto');meta.textContent='本轮 '+done+'/'+total+(stats?' · 剩余到期 '+stats.due:'');
+    const stats=window.VocabStudyCoach&&window.VocabStudyCoach.statistics('auto');
+    // Entering by a single word (openWord) can run before today's round exists; then show only the due count.
+    const parts=[];if(total&&plan.date===today())parts.push('本轮 '+done+'/'+total);if(stats)parts.push('剩余到期 '+stats.due);
+    meta.textContent=parts.join(' · ');
   }
   function render(){
     ensurePage();const body=document.getElementById('automationTrainingBody');if(!body)return;
@@ -342,6 +345,7 @@
     const k=norm(word),taught=new Set(dailyWords().map(x=>norm(x.word))),coach=window.VocabStudyCoach;
     if(!taught.has(k))return false;
     ensurePage();if(typeof window.go==='function')window.go('automationTraining');
+    refreshMeta();
     const body=document.getElementById('automationTrainingBody');if(!body)return false;
     const detail=coach?coach.status('auto',k):null;
     if(detail&&!detail.ready){

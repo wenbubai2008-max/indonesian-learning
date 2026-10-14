@@ -9,6 +9,7 @@
       .difficultyPageCard{overflow:hidden}
       .difficultyHead{align-items:flex-start!important;gap:14px}
       .difficultyHead h2{margin:0 0 5px}
+      .difficultyHead .pill{white-space:nowrap;flex-shrink:0}
       .difficultyIndex{margin:20px 0 2px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
       .difficultyIndexItem{width:100%;min-width:0;min-height:108px;border:1px solid #dfe7f0;background:#fbfdff;border-radius:15px;padding:15px 42px 15px 15px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:center;text-align:left;cursor:pointer;color:#172033;transition:.16s ease;position:relative}
       .difficultyIndexItem:hover{border-color:#9ac5df;background:#f6fbff;transform:translateY(-2px);box-shadow:0 6px 16px rgba(23,32,51,.05)}
