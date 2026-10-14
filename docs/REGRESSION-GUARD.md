@@ -384,3 +384,5 @@
 - **小修**：“查看能力与逐词档案”打开“能力总览”；首页词汇卡标签由 VocabController 独占，不再在“782 个词”和“主学习词库 977 词”之间跳动；自动训练页标签在手机上换行。
 - **测试**：`test-cross-module-training.js`（stable 清除首次分类标记、听力原因保留、小测答错的目标词判定），`test-vocab-study-coach.js`（同分排序），`test-handoff-drill.js`（主库 dont 用完后的断言，#128）。
 - **不变**：新词 / 复习公式、课程合同、冷却与轮换、曝光账本、发布流程。
+- **补充（同日第二批）**：晚课排序题答错时，答案句里只有一个核心词才记 `lesson_wrong`；自检每条下面列出它提到的核心词，可点“卡住了”记一笔（`lessonSelfStuck`，只改渲染，`selfCheckHtml(items)` 签名和课程 JSON 不变）；首页画像卡显示“近 7 天”变化（掌握数不涨时标橙）；训练进度跨设备同步：Worker 新增 `/training`（只存 KV），网站端 `data/training-sync-client.js`，Worker 未更新时 404 → 6 小时退避，不影响弱项同步。测试 `test-training-sync.js`（两台模拟设备经真实 Worker 代码同步）已加入 Build learning runtime。
+- **本地复现 Build 步骤时注意**：工作流 Recompute 步骤的 for 循环里有 `git reset --hard origin/main`，只截取到 `vocab-ui-regression-guard.js` 为止的命令来跑，否则会清掉本地未提交的修改。

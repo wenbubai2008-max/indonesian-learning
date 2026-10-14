@@ -53,6 +53,29 @@ async function writeGitHub(env,snapshot){
   const u=`https://api.github.com/repos/${g.owner}/${g.repo}/contents/${g.path}`;
   const r=await ghFetch(env,u,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify(body)});if(!r.ok){const t=await r.text();throw new Error('GitHub write '+r.status+' '+t.slice(0,160));}return true;
 }
+// 2026-10-14: per-device training schedules (quick / listen / auto) synced across devices. Stored only in KV
+// (never written to GitHub). Each word keeps the record with the newest practice time.
+const TRAIN_KEY='training-state-v1';
+const TRAIN_FIELDS={quick:'last',listen:'last_at',auto:'last_at'};
+function tsAny(v){if(!v)return 0;if(typeof v==='number')return v;const n=Date.parse(String(v).replace(' ','T'));return Number.isFinite(n)?n:0;}
+function mergeTraining(base,incoming){
+  const out={};
+  Object.keys(TRAIN_FIELDS).forEach(mode=>{
+    const field=TRAIN_FIELDS[mode],cur=Object.assign({},base&&base[mode]||{}),inc=incoming&&incoming[mode]||{};
+    Object.keys(inc).slice(0,5000).forEach(k0=>{
+      const r=inc[k0],k=norm(k0);if(!k||!r||typeof r!=='object'||Array.isArray(r))return;
+      if(JSON.stringify(r).length>4000)return;
+      if(!cur[k]||tsAny(r[field])>tsAny(cur[k][field]))cur[k]=r;
+    });
+    out[mode]=cur;
+  });
+  return out;
+}
+async function loadTraining(env){
+  if(!env.WEAK_SYNC_KV)throw new Error('Missing WEAK_SYNC_KV binding');
+  const x=await env.WEAK_SYNC_KV.get(TRAIN_KEY,'json');
+  return x&&x.modes?x:{version:1,updated_at:null,modes:{quick:{},listen:{},auto:{}}};
+}
 async function flush(env){
   const state=await loadState(env);if(!state.dirty)return {flushed:false};
   const stamp=state.updated_at||new Date().toISOString(),snapshot={version:1,updated_at:stamp,words:state.words||{}};
@@ -77,6 +100,15 @@ export default {
       if(request.method==='POST'&&url.pathname==='/sync'){
         const body=await request.json();const state=await loadState(env);state.words=mergeWords(state.words,body&&body.words||{});state.updated_at=new Date().toISOString();state.dirty=true;state.last_device=String(body&&body.device_id||'').slice(0,120);await saveState(env,state);
         return json({ok:true,queued:true,updated_at:state.updated_at,count:Object.keys(state.words).length},200,env,origin);
+      }
+      if(request.method==='GET'&&url.pathname==='/training'){
+        const t=await loadTraining(env);return json({version:1,updated_at:t.updated_at||null,modes:t.modes},200,env,origin);
+      }
+      if(request.method==='POST'&&url.pathname==='/training'){
+        const body=await request.json(),t=await loadTraining(env);
+        t.modes=mergeTraining(t.modes,body&&body.modes||{});t.updated_at=new Date().toISOString();t.last_device=String(body&&body.device_id||'').slice(0,120);
+        await env.WEAK_SYNC_KV.put(TRAIN_KEY,JSON.stringify(t));
+        return json({ok:true,updated_at:t.updated_at,counts:Object.fromEntries(Object.keys(t.modes).map(m=>[m,Object.keys(t.modes[m]).length]))},200,env,origin);
       }
       if(request.method==='POST'&&url.pathname==='/flush')return json(Object.assign({ok:true},await flush(env)),200,env,origin);
       return json({error:'not_found'},404,env,origin);

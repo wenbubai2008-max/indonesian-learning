@@ -205,7 +205,7 @@
     if(r.includes('memory_fuzzy'))return '模糊';
     if(r.includes('manual_unknown')||r.includes('seed_unfamiliar'))return '陌生词';
     if(r.includes('quick_wrong'))return '快速练习错题';
-    if(r.includes('lesson_wrong'))return '课程小测答错';
+    if(r.includes('lesson_wrong'))return '课程中答错或卡住';
     if(r.includes('listening_wrong'))return '听音连续答错';
     if(r.includes('listening_slow'))return '听音反应慢';
     if(r.includes('automation_fail'))return '自动训练不稳';
