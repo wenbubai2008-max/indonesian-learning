@@ -48,11 +48,12 @@
       #vocab.bipaFinalV7 .toolbar button{font-weight:750!important;}
     }
     @media(max-width:900px){
-      #vocab.bipaFinalV7 .toolbar{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;gap:8px!important;overflow:visible!important;}
+      #vocab.bipaFinalV7 .toolbar{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;overflow:visible!important;}
+      #vocab.bipaFinalV7 .toolbar>*{min-width:0!important;max-width:100%!important;box-sizing:border-box!important;}
       #vocab.bipaFinalV7 #search{grid-column:span 2!important;max-width:none!important;}
     }
     @media(max-width:620px){
-      #vocab.bipaFinalV7 .toolbar{grid-template-columns:1fr 1fr!important;}
+      #vocab.bipaFinalV7 .toolbar{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
       #vocab.bipaFinalV7 #search{grid-column:1/-1!important;}
     }
   `;
