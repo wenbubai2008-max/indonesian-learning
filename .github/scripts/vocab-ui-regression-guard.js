@@ -21,9 +21,7 @@ try{
   const flip=read('data/vocab-flip-content-fix-20260917.js');
   const weaknessPool=read('data/weakness-pool.js');
   const weaknessSync=read('data/weakness-sync-client.js');
-  const libraryStub=read('data/library-switcher.js');
   const reviewStub=read('data/vocab-review-ui.js');
-  const bipaStateStub=read('data/vocab-bipa-state-20260917.js');
   const levelManifest=JSON.parse(read('data/bipa-level-manifest.json'));
 
   [
@@ -36,9 +34,7 @@ try{
     ['data/vocab-flip-content-fix-20260917.js',flip],
     ['data/weakness-pool.js',weaknessPool],
     ['data/weakness-sync-client.js',weaknessSync],
-    ['data/library-switcher.js',libraryStub],
-    ['data/vocab-review-ui.js',reviewStub],
-    ['data/vocab-bipa-state-20260917.js',bipaStateStub]
+    ['data/vocab-review-ui.js',reviewStub]
   ].forEach(([name,code])=>new vm.Script(code,{filename:name}));
 
   const externalScripts=[...index.matchAll(/<script\s+src=["']([^"']+)["']/g)].map(m=>m[1]);
@@ -243,10 +239,13 @@ try{
     ok(changedEvents===1,'a stable master must not dispatch duplicate master-core-locked events');
   }
 
-  ok(libraryStub.includes('__VOCAB_LIBRARY_SWITCHER_RETIRED_20260917__'),'legacy library-switcher must remain inert');
-  ok(!libraryStub.includes('FILTER='),'retired library-switcher must not write FILTER');
+  // Retirement now means absent, with no loader path that could restore competing ownership.
+  for(const name of ['library-switcher.js','vocab-bipa-state-20260917.js']){
+    ok(!exists('data/'+name),'retired controller/state module must remain removed: '+name);
+    ok(!externalScripts.some(src=>src.split('?')[0]==='data/'+name),'retired controller/state module must not load from index: '+name);
+    ok(!loader.includes(name),'retired controller/state module must not load dynamically: '+name);
+  }
   ok(reviewStub.includes('__VOCAB_REVIEW_UI_RETIRED_20260917__'),'old review UI must remain retired');
-  ok(bipaStateStub.includes('__VOCAB_BIPA_STATE_RETIRED_20260917__'),'old BIPA state module must remain retired');
 
   const retired=['vocab-bipa-badge-audio-fix-20260913.js','vocab-bipa-final-20260913.js','vocab-bipa-flip-layout-fix-20260913.js','vocab-bipa-progress-fix-20260913.js','vocab-bipa-stable-20260913.js','vocab-bipa-switch-polish-20260913.js','vocab-final-fix-20260913.js','vocab-final-hotfix-20260913.js','vocab-ui-cleanup-20260913.js','vocab-scoped-stats.js'];
   retired.forEach(name=>{ok(!loader.includes(name),'retired script must not be loaded: '+name);ok(!index.includes('data/'+name),'retired script must not be in index: '+name);ok(!exists('data/'+name),'retired script must not remain active: '+name);ok(exists('archive/vocab-legacy/'+name),'retired script must be archived: '+name)});
