@@ -46,7 +46,7 @@ Status examples: CONTEXT_STALE, FAILED_UNSTAGED_DRAFT, RELEASE_PARTIAL, PREFLIGH
 
 ## V4 backup generation is paused (2026-10-03, user instruction)
 
-Claude is the only automatic lesson generator (AM generation starts 07:30, PM 17:30). All automatic V4 entry points are off, while the V4 source stays in the repository and every official-lesson path is unchanged:
+Claude is the only automatic lesson generator (AM generation starts about 07:24, PM 17:30; task runbooks in `docs/tasks/`). All automatic V4 entry points are off, while the V4 source stays in the repository and every official-lesson path is unchanged:
 
 - `create:` branch-watcher trigger disabled and its job hard-disabled (`if: ${{ false }}`).
 - A failed lesson-release PR dispatches Sync only if the lesson is already published; otherwise it logs `LESSON_RECOVERY_V4_DISABLED` and dispatches nothing. The original lesson, branch, PR and error evidence stay untouched and the run is reported as failed.

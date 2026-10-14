@@ -30,4 +30,6 @@ Then follow this mandatory sequence:
 - Do not re-enable the disabled 20:00 fallback unless the user explicitly asks.
 - Do not re-enable V4 backup-lesson generation (create watcher, failed-PR dispatch, `LESSON_V4_FALLBACK`) unless the user explicitly asks. It was paused on 2026-10-03; Claude is the only automatic lesson generator, and a failed original release must be reported, never replaced by a second lesson.
 
+Scheduled-task behavior (08:00 / 12:00 / 18:00) is defined by the runbooks in `docs/tasks/`; the task prompts only bootstrap. Change task behavior there through a PR, never by editing the scheduled-task prompts.
+
 If a proposed change conflicts with `docs/REGRESSION-GUARD.md`, stop and resolve the conflict before writing.

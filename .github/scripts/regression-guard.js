@@ -641,6 +641,21 @@ try {
   ok(/pmTimeForDate\(TODAY\)/.test(index), 'index source PM reading meta uses current date-aware time');
   ok(!index.includes('每天 08:00 / 19:00') && !index.includes("loadReading('pm')\">19:00短文") && !index.includes("<span class=\"slotTime\">19:00</span><span id=\"pmStatus\""), 'index source has no stale current 19:00 static labels');
 
+  // 2026-10-14: the three scheduled tasks' full instructions live in docs/tasks/ (the task prompts only bootstrap).
+  // These markers stop a later edit from silently dropping a contract piece (see REGRESSION-GUARD §2.A and §20).
+  {
+    const taskOk=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const doc=p=>fs.existsSync(rel(p))?read(p):'';
+    const need=(name,text,markers)=>{
+      const missing=markers.filter(m=>!text.includes(m));
+      taskOk(text.length>0&&missing.length===0,'task runbook '+name+' keeps its required markers'+(missing.length?' (missing: '+missing.join(' | ')+')':''));
+    };
+    need('COMMON',doc('docs/tasks/COMMON.md'),['docs/tasks/AM-LESSON.md','docs/tasks/PM-LESSON.md','docs/tasks/EXTENSIVE-READING.md','TZ=Asia/Jakarta date +%F','REST','一次性 push','force push','不自己合并','LESSON_V4_FALLBACK','SendUserFile','PushNotification','不得禁用','未实际运行的检查不得声称通过']);
+    need('AM',doc('docs/tasks/AM-LESSON.md'),['docs/tasks/COMMON.md','lesson-release-D-am','data/daily/D-am.json','AUTO_PUBLISH_LESSON=1','rank-review-candidates.js --date D --session am','validate-lesson-candidate.js','plan-lesson-publication.js','regression-guard.js','check-collocations.js','docs/LESSON-QUALITY.md','docs/LESSON-JSON-SCHEMA.md','docs/LESSON-RECOVERY.md','dont-first','恰好 10 张','review_vocab','cycle_vocab','exposure_ledger','natural_recurrence','RELEASE_PREFLIGHT','LESSON_RELEASE_PUBLISHED','VERIFIED_COMPLETE','全课跨句逻辑检查']);
+    need('PM',doc('docs/tasks/PM-LESSON.md'),['docs/tasks/COMMON.md','lesson-release-YYYY-MM-DD-pm','data/daily/D-pm.json','AUTO_PUBLISH_LESSON=1','rank-review-candidates.js --date YYYY-MM-DD --session pm','validate-lesson-candidate.js','plan-lesson-publication.js','regression-guard.js','check-collocations.js','docs/LESSON-QUALITY.md','docs/LESSON-JSON-SCHEMA.md','docs/LESSON-RECOVERY.md','10–12','3 道 choice + 2 道 fill + 1 道 order','self_check','review.steps','今天08:00新学','今天08:00复习过的老词','exposure_ledger','natural_recurrence','RELEASE_PREFLIGHT','LESSON_RELEASE_PUBLISHED','VERIFIED_COMPLETE','全课跨句逻辑检查']);
+    need('EXTENSIVE-READING',doc('docs/tasks/EXTENSIVE-READING.md'),['docs/tasks/COMMON.md','extensive-reading-D','data/extensive-reading-candidate.json','AUTO_PUBLISH_EXTENSIVE_READING=1','reading-review.js --date D','publish-extensive-reading-candidate.js check','regression-guard.js','check-collocations.js','160–220','0–3 天','8–12','至少 3 个 tier=focus','term 必须逐字出现','不得生成第二篇']);
+  }
+
 } catch (e) {
   failures.push('guard script crashed: ' + (e && e.stack ? e.stack : e));
 }
