@@ -528,12 +528,13 @@ try {
   ok(css.includes('@media (max-width:430px)') && css.includes('grid-template-columns:1fr'), 'first-paint narrow layout keeps 1 column');
   ok(css.includes('[data-home-module="reading"]{order:1') && css.includes('[data-home-module="vocab"]{order:2') && css.includes('[data-home-module="roots"]{order:3') && css.includes('[data-home-module="weak"]{order:4') && css.includes('[data-home-module="difficulty"]{order:5'), 'visible 5-card CSS order matches the single module renderer');
 
-  const protectedOrder = "const ORDER=['泛读','词汇学习','词根家族','弱项强化','难点解释'];";
+  const homeKeys=(layout0=>{const m=layout0.match(/const HOME_MODULES=\[([\s\S]*?)\n  \];/);return m?[...m[1].matchAll(/\{key:'(\w+)'/g)].map(x=>x[1]).join(','):'';});
   const layout = read('data/home-modules-layout.js');
   // 2026-10-14: the JS-injected compact grid once said 4 columns while first paint said 5, so after load the fifth card wrapped to its own row.
-  ok(/#home \.modules\.homeModulesCompact\{display:grid!important;grid-template-columns:repeat\(5,minmax\(0,1fr\)\)/.test(layout) && !/homeModulesCompact\{display:grid!important;grid-template-columns:repeat\(4,/.test(layout), 'post-load desktop tool grid keeps the same 5 columns as first paint');
+  ok(!/homeModulesCompact|homeMod(?:Vocab|Reading|Quick|Weak|Automation|Difficulty)/.test(layout), '2026-10-14: home-modules-layout.js must not restyle/reorder the tool cards after load (daily-width-fix.css is the single source of the card grid, colours, sizes and order)');
+  ok(css.includes('min-height:139px!important') && css.includes('#home .modules>.module:hover{transform:translateY(-2px)'), 'first-paint card CSS owns final card height and hover effect');
   const indexHtml = read('index.html');
-  ok(layout.includes(protectedOrder), 'JS card order matches the protected order');
+  ok(homeKeys(layout).startsWith('reading,vocab,roots,weak,difficulty'), 'JS card order matches the protected order (HOME_MODULES: reading, vocab, roots, weak, difficulty; quick/automation stay hidden after them)');
   ok(layout.includes("key:'roots'") && layout.includes("root-families/index.html"), 'root family homepage shortcut exists');
   ok(layout.includes('const HOME_MODULES=[') && layout.includes('window.renderHomeModules=renderHomeModules'), 'homepage has one HOME_MODULES renderer');
   ok(indexHtml.includes('<div class="modules" id="homeModules"></div>'), 'index keeps only the homepage module mount point');
@@ -550,7 +551,7 @@ try {
     }
   }
   ok(rootPage.includes("fetch('roots.json'") && rootPage.includes('id="cards"') && rootPage.includes('id="detail"'), 'root family library loads independent expandable JSON');
-  ok(indexHtml.includes('data/daily-width-fix.css?v=20261004-roots-five') && indexHtml.includes('data/home-modules-layout.js?v=20261014-five1'),'homepage css and module JS cache keys are updated');
+  ok(indexHtml.includes('data/daily-width-fix.css?v=20261014-single1') && indexHtml.includes('data/home-modules-layout.js?v=20261014-single1'),'homepage css and module JS cache keys are updated');
   ok(!/<div class="modules"[^>]*>\s*<button/s.test(indexHtml), 'index does not hard-code homepage cards');
   if(fs.existsSync(rel('data/home-modules-stability.js'))){
     const stability = read('data/home-modules-stability.js');

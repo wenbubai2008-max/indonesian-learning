@@ -1,7 +1,4 @@
 (function(){
-  const ORDER=['泛读','词汇学习','词根家族','弱项强化','难点解释'];
-  let applying=false;
-
   const HOME_MODULES=[
     {key:'reading',title:'泛读',icon:'📚',desc:'今日短文 · 自然复现 · 划词查义。',tag:'划词查义 · 可加陌生词',open:function(){if(typeof window.openExtensiveV2==='function')window.openExtensiveV2();}},
     {key:'vocab',title:'词汇学习',icon:'🧠',desc:'按词库学习，结合闪卡、例句和发音。',tag:'词库',tagId:'vocabTag',open:function(){if(typeof window.go==='function')window.go('vocab');}},
@@ -31,11 +28,6 @@
     if(window.AutomationTraining&&typeof window.AutomationTraining.refreshTag==='function')setTimeout(window.AutomationTraining.refreshTag,0);
   }
   window.renderHomeModules=renderHomeModules;
-
-  function titleOf(card){
-    const h=card&&card.querySelector('h3');
-    return h?(h.textContent||'').trim():'';
-  }
 
   function hideDifficultyLessons(){
     document.querySelectorAll('#difficulty .difficultyLesson').forEach(function(x){x.style.display='none';});
@@ -1130,52 +1122,11 @@
     }
   }
 
-  function apply(){
-    if(applying)return;
-    const box=document.querySelector('#home .modules');
-    if(!box)return;
-    applying=true;
-    try{
-      box.classList.add('homeModulesCompact');
-      const cards=[].slice.call(box.querySelectorAll(':scope > .module'));
-      if(!cards.length)return;
-      const map={};
-      cards.forEach(function(card){
-        const title=titleOf(card);
-        map[title]=card;
-        card.classList.remove('homeModVocab','homeModReading','homeModQuick','homeModWeak','homeModAutomation','homeModDifficulty','v2-wide');
-        if(title==='词汇学习')card.classList.add('homeModVocab');
-        else if(title==='泛读')card.classList.add('homeModReading');
-        else if(title==='快速练习')card.classList.add('homeModQuick');
-        else if(title==='弱项强化')card.classList.add('homeModWeak');
-        else if(title==='自动训练')card.classList.add('homeModAutomation');
-        else if(title==='难点解释')card.classList.add('homeModDifficulty');
-      });
-      const desired=ORDER.filter(function(t){return map[t];});
-      desired.forEach(function(t){box.appendChild(map[t]);});
-    }finally{applying=false;}
-  }
-
   function style(){
-    if(document.getElementById('homeModulesCompactStyle'))return;
+    if(document.getElementById('difficultyLessonStyle'))return;
     const s=document.createElement('style');
-    s.id='homeModulesCompactStyle';
+    s.id='difficultyLessonStyle';
     s.textContent=`
-      #home .modules.homeModulesCompact{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:10px!important;align-items:stretch}
-      #home .homeModulesCompact .module{min-width:0!important;grid-column:auto!important;border-radius:16px!important;padding:14px 13px!important;min-height:139px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;box-shadow:0 2px 8px rgba(23,32,51,.035)!important;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease!important}
-      #home .homeModulesCompact .module:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(23,32,51,.08)!important}
-      #home .homeModulesCompact .module>div:first-child{font-size:20px!important;line-height:1!important;margin-bottom:3px!important}
-      #home .homeModulesCompact .module h3{font-size:18px!important;margin:6px 0 5px!important;line-height:1.25!important}
-      #home .homeModulesCompact .module p{font-size:13px!important;line-height:1.45!important;margin:0!important;color:#667085!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-      #home .homeModulesCompact .module .tag{font-size:11px!important;padding:4px 7px!important;margin-top:auto!important;position:relative;top:8px}
-      #home .homeModVocab{background:#f8faff!important;border-color:#dbe5ff!important;border-top:3px solid #7897e8!important}
-      #home .homeModReading{background:#f7fbf8!important;border-color:#d8eadf!important;border-top:3px solid #74b58a!important}
-      #home .homeModQuick{background:#fffaf3!important;border-color:#f0e2c9!important;border-top:3px solid #d6a653!important}
-      #home .homeModWeak{background:#fff8f8!important;border-color:#f0dcdc!important;border-top:3px solid #d98b8b!important}
-      #home .homeModAutomation{background:#f8f6ff!important;border-color:#e4def5!important;border-top:3px solid #8d73c9!important}
-      #home .homeModDifficulty{background:#f7fbff!important;border-color:#d8e8f5!important;border-top:3px solid #63a6cf!important;position:relative}
-      #home .difficultyIconWrap{display:flex!important;align-items:center!important;gap:7px!important;width:100%!important}
-      #home .difficultyCount{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:#e4f3ff;color:#24749f;font-size:11px;line-height:1}
 
       .siteNav{display:flex;align-items:center;gap:8px;margin:0 0 12px;min-height:38px}
       .siteNav button{appearance:none;border:1px solid #dfe4ee;background:#fff;color:#3157d5;border-radius:10px;padding:8px 12px;font-weight:750;cursor:pointer;box-shadow:0 1px 2px rgba(23,32,51,.03)}
@@ -1314,7 +1265,7 @@
       .terBranches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}.terBranches>div{position:relative;background:#fff;border:1px solid #ded7ed;border-radius:12px;padding:11px 9px 10px 36px;min-width:0}.terBranches>div>span{position:absolute;left:10px;top:11px;width:auto;height:auto;border-radius:0;display:block;background:transparent;color:#6a4aa0;font-size:13px;font-weight:950;line-height:1}.terBranches strong{display:block;font-size:15px;color:#342952}.terBranches b{display:block;font-size:12px;color:#6b4ea0;margin-top:4px}.terBranches small{display:block;font-size:11px;color:#6b7280;margin-top:3px;line-height:1.4}
 
       @media(max-width:1500px){.nasalRuleGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-      @media(max-width:1050px){#home .modules.homeModulesCompact{grid-template-columns:repeat(3,minmax(0,1fr))!important}.triExplain{grid-template-columns:1fr}.difficultyIndex{grid-template-columns:repeat(2,minmax(0,1fr))}}
+      @media(max-width:1050px){.triExplain{grid-template-columns:1fr}.difficultyIndex{grid-template-columns:repeat(2,minmax(0,1fr))}}
       @media(max-width:620px){.difficultyIndex{grid-template-columns:1fr}.difficultyIndexItem{min-height:92px}}
       @media(max-width:760px){
         .difficultyThree{grid-template-columns:1fr}
@@ -1330,8 +1281,7 @@
         .handleHeroTitle{font-size:24px}.handleFlow{grid-template-columns:1fr}.handleFlow i{transform:rotate(90deg);text-align:center}.handleSolveBranch{align-items:flex-start}.handleSolveBranch p{margin-left:0}.handleGrid{grid-template-columns:1fr}.handleCompare,.handleQuestions{grid-template-columns:1fr}
         .affixUnifiedGrid{grid-template-columns:1fr}.terBranches{grid-template-columns:1fr}.affixUnifiedExamples,.affixUnifiedExamples.twoCol{grid-template-columns:1fr 1fr}
       }
-      @media(max-width:700px){#home .modules.homeModulesCompact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#home .homeModulesCompact .module{min-height:145px!important;padding:12px!important}#home .homeModulesCompact .module h3{font-size:17px!important}#home .homeModulesCompact .module p{font-size:12px!important}.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}.difficultyPageCard{padding:16px!important}}
-      @media(max-width:430px){#home .modules.homeModulesCompact{grid-template-columns:1fr!important}#home .homeModulesCompact .module{min-height:0!important}}
+      @media(max-width:700px){.siteNav{position:sticky;top:0;z-index:50;background:rgba(245,247,251,.94);backdrop-filter:blur(10px);padding:8px 0;margin-top:-8px}.siteNav button{padding:8px 10px}.difficultyPageCard{padding:16px!important}}
     `;
     document.head.appendChild(s);
   }
@@ -1422,10 +1372,9 @@
     renderHomeModules();
     style();
     ensureDifficulty();
-    apply();
     installHistoryNavigation();
     installNavBars();
-    setTimeout(function(){renderHomeModules();ensureDifficulty();apply();installNavBars();},180);
+    setTimeout(function(){renderHomeModules();ensureDifficulty();installNavBars();},180);
   }
 
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});
