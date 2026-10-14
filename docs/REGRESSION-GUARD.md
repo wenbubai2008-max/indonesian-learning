@@ -139,6 +139,16 @@
 - 定时补偿需要真正幂等：runtime 比较跨 VM 来源的派生数组时按 JSON 内容比较，而不是要求原型完全相同；runtime 与词汇画像的数据内容无变化时沿用上一次 `generated_at`，审计时间和 runtime 保持一致；即使定时检查运行，也不能因时钟变化而推送三份派生 JSON、触发无意义 Pages 部署。数据确实变化时才刷新时间戳与提交。
 - 不新建第三条 workflow；不在失败恢复时修改课程内容或学习词池；不使正式 08:00/18:00 自动任务 disabled。历史事故另见上一节 J。
 
+### 课程 release 的 main 前进与 bot 批准运行（2026-10-14）
+
+- `lesson_release` 不得再报“the synchronize run will recompute the index”后退出并等待下一次运行。初次准备之外，同一 job 最多重试 2 次；push 后、等待 mergeability 时及 merge API 重试前发现 main 前进，均回到同一有界循环。
+- 用 `git diff --name-only "$release_base" "$latest_main"` 判断 main 变化是否涉及 `data/daily/`。未涉及时，不再提交或 push index，但必须从 `latest_main` 的受信任 worktree 重跑权威 planner（`--main-head "$latest_main"`）和 release validator；资格、context 或课程校验不通过仍停止，不能因“只是 runtime/weakness 更新”跳过校验。
+- 涉及时，将最新 main 普通 merge 到原 release 分支，基于最新 main 重生成 index，提交、普通 push 并再次校验。只有生成文件 `data/daily/index.json` 的冲突可以用权威 planner 的输出解决；原课程或其他冲突必须停止。不得 rebase、force push、修改原课程、创建第二个分支/PR或启用 V4。
+- GitHub 自 2026-06-11 起允许 `GITHUB_TOKEN` 创建/更新 PR 产生 `opened/synchronize/reopened` 运行，但这些运行需要人工批准；[官方 GITHUB_TOKEN 文档](https://docs.github.com/en/actions/concepts/security/github_token) 明确说明，免批需使用独立 GitHub App installation token 或 PAT。Settings → Actions 的 fork 审批设置及“Allow GitHub Actions to create and approve pull requests”分别控制 fork 工作流和 PR review 权限，不能消除这项 bot 运行审批；本次保持现有 token 与设置。
+- 例：[run 38490316334](https://github.com/wenbubai2008-max/indonesian-learning/actions/runs/38490316334)，actor=`github-actions[bot]`、`pull_request`、0 个 job、批准过期后 failure。**这些由 index push 派生、未获批准而过期的零 job 运行，对课程发布数据是无害的重复运行噪声**；原 job 自行完成生成、校验、合并和显式 Sync dispatch，不依赖它们。不得把实际 release/Sync 的失败也归为无害；仍需检查原 job、Sync、水位与新词退出。若以后配置必需 PR 状态检查，须重新评估它们是否阻挡合并，不得绕过保护。
+- 课程 release 提交不加 `[skip ci]`，防止默认 squash 提交说明携带该标记而跳过 main 后续流程。泛读现有的显式 squash 提交说明策略不在本次修改范围。
+- `test-release-pr.js` 直接执行工作流发布步骤，在临时本地 Git 仓库模拟两类 main 前进，使用真实 planner、validator、普通 merge/push，GitHub API 为本地替身；本地不得执行其他工作流中带 `git reset --hard` 的循环。
+
 ## 3. 每次修改前：Preflight
 
 修改前必须回答：
