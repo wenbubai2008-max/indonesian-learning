@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T07:02:57.609Z",
+  "updated_at": "2026-10-14T12:01:15.509Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -134,6 +134,9 @@
       "display": "kebuang",
       "cn": "被浪费掉；白白浪费",
       "root": "buang",
+      "root_cn": "扔掉；浪费",
+      "last_wrong": "2026-09-22T13:15:49.160Z",
+      "last_review": "2026-09-23T03:25:02.787Z",
       "source": "阅读陌生词",
       "reasons": [
         "seed_unfamiliar"
@@ -22211,6 +22214,7 @@
       "root": "urus",
       "root_cn": "处理；照料",
       "last_wrong": "2026-10-09T15:23:15.193Z",
+      "last_review": "2026-10-12T02:20:51.585Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -22792,6 +22796,7 @@
       "root": "hafal",
       "root_cn": "背诵；熟记",
       "last_wrong": "2026-10-13T15:14:42.028Z",
+      "last_review": "2026-10-13T15:14:42.075Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -28154,16 +28159,21 @@
     "menerapkan": {
       "word": "menerapkan",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:23.494Z",
+      "updated_at": "2026-10-14T12:01:05.154Z",
       "display": "menerapkan",
-      "cn": "应用；实施",
+      "cn": "应用；实施；推行",
       "root": "terap",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "root_cn": "应用；实施（词根少单独使用）",
+      "last_wrong": "2026-10-14T12:01:05.107Z",
+      "last_review": "2026-10-14T12:01:05.107Z",
+      "source": "课程小测",
+      "source_date": "2026-10-14",
+      "session": "08:00",
       "reasons": [
-        "bipa_secondary_dont"
+        "bipa_secondary_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 1,
       "right_streak": 0
     },
     "aset": {
@@ -28729,6 +28739,7 @@
       "root": "lepas",
       "root_cn": "松开；脱离",
       "last_wrong": "2026-10-12T12:44:01.575Z",
+      "last_review": "2026-10-13T15:10:29.443Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -28883,6 +28894,7 @@
       "display": "menyampaikan",
       "cn": "传达；表达",
       "last_wrong": "2026-10-09T07:56:00.191Z",
+      "last_review": "2026-10-12T02:19:43.180Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -29093,6 +29105,7 @@
       "root": "lewat",
       "root_cn": "经过；超过",
       "last_wrong": "2026-10-13T15:12:17.174Z",
+      "last_review": "2026-10-13T15:12:17.220Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -29123,6 +29136,7 @@
       "root": "pending",
       "root_cn": "搁置；待处理（英语借词 pending）",
       "last_wrong": "2026-10-06T09:55:52.857Z",
+      "last_review": "2026-10-09T15:14:37.771Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -29138,6 +29152,7 @@
       "root": "ganjal",
       "root_cn": "垫住；卡住；妨碍",
       "last_wrong": "2026-10-09T15:14:55.338Z",
+      "last_review": "2026-10-12T02:20:25.648Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -29153,6 +29168,7 @@
       "root": "ingat",
       "root_cn": "记得；想起",
       "last_wrong": "2026-10-06T09:59:46.380Z",
+      "last_review": "2026-10-09T15:15:02.432Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -29168,6 +29184,7 @@
       "root": "keteteran",
       "root_cn": "忙不过来；跟不上",
       "last_wrong": "2026-10-06T10:00:19.353Z",
+      "last_review": "2026-10-09T15:15:10.235Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -29183,6 +29200,7 @@
       "root": "susah",
       "root_cn": "困难；麻烦",
       "last_wrong": "2026-10-08T08:58:24.065Z",
+      "last_review": "2026-10-12T12:45:16.093Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -29211,6 +29229,7 @@
       "display": "nanti dulu",
       "cn": "先等等",
       "last_wrong": "2026-10-09T07:57:47.129Z",
+      "last_review": "2026-10-12T02:19:57.805Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -29224,6 +29243,7 @@
       "display": "nggak jadi",
       "cn": "不去了/取消了",
       "last_wrong": "2026-10-09T07:58:20.764Z",
+      "last_review": "2026-10-12T02:20:10.386Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -29239,6 +29259,7 @@
       "root": "tombok",
       "root_cn": "补上差额；贴补",
       "last_wrong": "2026-10-09T07:59:15.628Z",
+      "last_review": "2026-10-12T02:20:15.093Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -29329,6 +29350,36 @@
       "source": "每日学习阅读",
       "source_date": "2026-10-13",
       "session": "19:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "laku": {
+      "word": "laku",
+      "status": "active",
+      "updated_at": "2026-10-14T11:59:51.536Z",
+      "display": "laku",
+      "cn": "需求旺盛",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-14",
+      "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "menata": {
+      "word": "menata",
+      "status": "active",
+      "updated_at": "2026-10-14T12:00:11.362Z",
+      "display": "menata",
+      "cn": "组织",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-14",
+      "session": "08:00",
       "reasons": [
         "manual_unknown"
       ],
