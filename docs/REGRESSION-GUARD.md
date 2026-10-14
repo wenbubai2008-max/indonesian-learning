@@ -396,3 +396,4 @@
 - **不变**：新词公式、复习公式、mastered 判定、课程其他结构、发布流程、`learning-pool-rules.json`（没有修改，避免改变 lesson-context 的规则哈希）。
 - **测试**：`test-review-cycle.js`（真实课程文件构造：早课 4+6、缺 cycle_vocab、未用完剩余新词、循环词不在 review_pool、正常模式拒绝 cycle_vocab、晚课 0 新词扩展复习、08:00 老词标记、账本、排序各半）。
 - **第二词库扩充的筛选入口（同日）**：词汇学习 → BIPA 各级默认显示“只看可加入第二词库、还没筛选过的词”（不在 977 主词库、B2 只看 S 级、在任何已同步设备上都没有学习记录；开关在工具栏下方，单独一行，不改变工具栏网格）。按真实数据：A1 217、A2 170、B1 42、B2 19（跨级重复的词在一级标过后，其他级自动隐藏），去重后约 424 个。标“模糊/不会”的词经现有 `bipa-secondary-seed` 自动进入第二词库新词池，标“认识”的词排除，流程不变。同时修复手机端 BIPA 工具栏被最长选项撑宽（`minmax(0,1fr)`）。
+- **CI 修复（同日）**：Sync preflight 的“停用的 V4 备用生成器演练”用当天数据生成晚课，选出 5 个 focus 词，被 planner 以 `PM_FOCUS_MIX_HIGH` 拒绝，导致所有改到课程脚本的代码 PR 预检都失败（main 上同样失败）。原因是 V4 停用前没有跟上 2026-10-04 的“晚课 focus 词 2–3 个”规则。现在 `prototype/lesson-engine/engine/core.js` 的 `selectReviews` 在晚课最多选 3 个 focus 词（还有非 focus 候选时）。V4 仍然停用，这只是让演练符合现行规则。
