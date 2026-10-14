@@ -2169,19 +2169,21 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "后续纠正版"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 08:00",
-    "last_seen": "2026-08-30 08:00",
+    "last_seen": "2026-10-14 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-30"
+      "2026-08-30",
+      "2026-10-14"
     ],
     "example": "Pantes kamu capek, dari pagi belum istirahat.",
     "example_cn": "难怪你累，从早上就没休息。",
     "lesson_occurrences": [
-      "2026-08-30 08:00"
+      "2026-08-30 08:00",
+      "2026-10-14 08:00"
     ]
   },
   {
@@ -2325,20 +2327,22 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "后续纠正版"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 08:00",
-    "last_seen": "2026-08-30 08:00",
+    "last_seen": "2026-10-14 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-30"
+      "2026-08-30",
+      "2026-10-14"
     ],
     "root_cn": "橡胶；引申为时间被‘拉长’",
     "example": "Dia kalau janjian suka ngarét.",
     "example_cn": "他约时间经常迟到。",
     "lesson_occurrences": [
-      "2026-08-30 08:00"
+      "2026-08-30 08:00",
+      "2026-10-14 08:00"
     ]
   },
   {
@@ -3856,21 +3860,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-28 19:00",
-    "last_seen": "2026-08-28 19:00",
+    "last_seen": "2026-10-14 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-28"
+      "2026-08-28",
+      "2026-10-14"
     ],
     "example": "Nggak usah datang.",
     "example_cn": "不用来了。",
     "lesson_occurrences": [
-      "2026-08-28 19:00"
+      "2026-08-28 19:00",
+      "2026-10-14 08:00"
     ]
   },
   {
@@ -8825,19 +8833,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-14 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-11",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-10-14"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
-      "2026-10-04 08:00"
+      "2026-10-04 08:00",
+      "2026-10-14 08:00"
     ]
   },
   {
@@ -14196,19 +14206,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-26 08:00",
-    "last_seen": "2026-09-26 18:00",
+    "last_seen": "2026-10-14 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-26"
+      "2026-09-26",
+      "2026-10-14"
     ],
     "lesson_occurrences": [
       "2026-09-26 08:00",
-      "2026-09-26 18:00"
+      "2026-09-26 18:00",
+      "2026-10-14 08:00"
     ]
   },
   {
@@ -20660,6 +20672,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-13 18:00"
+    ]
+  },
+  {
+    "word": "kemudian",
+    "cn": "然后；之后",
+    "en": "then; after that",
+    "root": "kemudian",
+    "root_cn": "然后；之后（本身当作词根）",
+    "example": "Kita makan dulu, kemudian baru cari kado untuk Ibu.",
+    "example_cn": "我们先吃饭，然后再去找给妈妈的礼物。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 08:00"
+    ]
+  },
+  {
+    "word": "motif",
+    "cn": "图案；花纹；动机",
+    "en": "pattern; motif",
+    "root": "motif",
+    "root_cn": "图案；花纹",
+    "example": "Aku suka motif bunga di kain ini.",
+    "example_cn": "我喜欢这块布上的花朵图案。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 08:00"
+    ]
+  },
+  {
+    "word": "peralatan",
+    "cn": "设备；用具（成套的）",
+    "en": "equipment; set of tools",
+    "root": "alat",
+    "root_cn": "工具；器具",
+    "example": "Semua peralatan masak sudah saya bawa ke dapur umum.",
+    "example_cn": "所有炊具我都已经带到公共厨房了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 08:00"
+    ]
+  },
+  {
+    "word": "pedagang",
+    "cn": "商贩；商人",
+    "en": "trader; vendor",
+    "root": "dagang",
+    "root_cn": "做买卖；经商",
+    "example": "Pedagang di pasar ini biasanya buka dari pagi sekali.",
+    "example_cn": "这个市场的商贩通常一大早就开门。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 08:00"
+    ]
+  },
+  {
+    "word": "menerapkan",
+    "cn": "应用；实施；推行",
+    "en": "to apply; to implement",
+    "root": "terap",
+    "root_cn": "应用；实施（词根少单独使用）",
+    "example": "Kantor kami mulai menerapkan jam kerja fleksibel.",
+    "example_cn": "我们公司开始实行弹性工作时间。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 08:00"
+    ]
+  },
+  {
+    "word": "suhu",
+    "cn": "温度；气温；体温",
+    "en": "temperature",
+    "root": "suhu",
+    "root_cn": "温度",
+    "example": "Suhu tubuh Dina 38 derajat, sepertinya dia demam.",
+    "example_cn": "Dina 的体温有 38 度，她好像发烧了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 08:00"
+    ]
+  },
+  {
+    "word": "strategis",
+    "cn": "战略性的；位置便利的",
+    "en": "strategic; well-located",
+    "root": "strategi",
+    "root_cn": "策略；战略",
+    "example": "Kos ini harganya wajar dan letaknya strategis, dekat stasiun.",
+    "example_cn": "这间出租房价格合理，位置也很便利，离车站近。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 08:00"
+    ]
+  },
+  {
+    "word": "entahlah",
+    "cn": "不知道；谁知道呢",
+    "en": "who knows; I don't know",
+    "root": "entah",
+    "root_cn": "不知；不晓得",
+    "example": "Dia mau datang atau nggak? Entahlah, belum ada kabar.",
+    "example_cn": "他来还是不来？谁知道呢，还没消息。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 08:00"
+    ]
+  },
+  {
+    "word": "kawasan",
+    "cn": "区域；地带",
+    "en": "area; zone",
+    "root": "kawasan",
+    "root_cn": "区域；地带（本身当作词根）",
+    "example": "Kawasan ini ramai kalau akhir pekan, jadi parkir susah.",
+    "example_cn": "这一带周末人很多，所以很难停车。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 08:00"
+    ]
+  },
+  {
+    "word": "khas",
+    "cn": "特有的；有特色的",
+    "en": "typical; characteristic",
+    "root": "khas",
+    "root_cn": "特有的；特色的",
+    "example": "Rendang adalah makanan khas Padang yang terkenal.",
+    "example_cn": "仁当是著名的巴东特色菜。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-14"
+    ],
+    "lesson_occurrences": [
+      "2026-10-14 08:00"
     ]
   }
 ];

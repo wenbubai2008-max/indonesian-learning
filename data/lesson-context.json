@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-14",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 54
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-13T18:09:26.074Z",
-    "lesson_watermark": "2026-10-13 18:00",
-    "index_updated": "2026-10-13",
-    "runtime_hash": "5f308b44928cd4fa2ec4c409b7650b34c741e666d2757a0da15f982ee0423144",
-    "index_hash": "d462ae662d7c5dd3dfde546a06f5e7dbe4e62cba94b5308a0264d9f74a917471",
+    "runtime_generated_at": "2026-10-14T00:28:09.941Z",
+    "lesson_watermark": "2026-10-14 08:00",
+    "index_updated": "2026-10-14",
+    "runtime_hash": "be5facd7e3b3ace28c863fc82080040b2f977bbc33affaadadaa54060b6781a8",
+    "index_hash": "31cf1177355fe29068ec59ab0791ca14b7cb9ce97dd57f19ecb08cc5e5828848",
     "rules_hash": "d406904ea30ad06dfae711a64f1e979c1262ddd8401d79e7b17d4b3250ea5a06"
   },
   "schema": {
@@ -50,56 +50,16 @@
   "candidates": {
     "new_dont": [
       [
-        "kemudian",
-        "然后；之后"
-      ],
-      [
         "diberikan",
         "被给予"
-      ],
-      [
-        "motif",
-        "图案；花纹；动机"
-      ],
-      [
-        "peralatan",
-        "设备；工具用品"
-      ],
-      [
-        "pedagang",
-        "商贩；商人"
-      ],
-      [
-        "menerapkan",
-        "应用；实施"
       ],
       [
         "aset",
         "资产"
       ],
       [
-        "suhu",
-        "温度"
-      ],
-      [
-        "strategis",
-        "战略性的；位置便利的"
-      ],
-      [
-        "entahlah",
-        "不知道；谁知道呢"
-      ],
-      [
-        "kawasan",
-        "区域；地带"
-      ],
-      [
         "penanganan",
         "处理；应对"
-      ],
-      [
-        "khas",
-        "特有的；特色的"
       ],
       [
         "bergabung",
@@ -1782,32 +1742,12 @@
         ""
       ],
       [
-        "ngaret",
-        2,
-        0,
-        "",
-        "2026-10-08T09:18:33.002Z",
-        "拖延、迟到",
-        "karet",
-        "橡胶；引申为时间被‘拉长’"
-      ],
-      [
         "penasaran",
         2,
         0,
         "",
         "2026-10-08T09:18:42.503Z",
         "好奇、很想知道",
-        "",
-        ""
-      ],
-      [
-        "pantes",
-        3,
-        0,
-        "",
-        "2026-10-09T07:59:36.155Z",
-        "难怪、怪不得",
         "",
         ""
       ],
@@ -2162,14 +2102,24 @@
         "匹配；合适"
       ],
       [
-        "nggak usah",
-        5,
+        "tagihan",
+        3,
         0,
         "",
+        "2026-10-08T09:18:53.151Z",
+        "账单；应付款",
+        "tagih",
+        "催款；要求付款"
+      ],
+      [
+        "hasil",
+        3,
+        0,
         "",
-        "不用、不必",
-        "",
-        ""
+        "2026-10-09T07:09:11.994Z",
+        "结果；成果",
+        "hasil",
+        "结果；成果"
       ],
       [
         "tanyain",
@@ -2260,6 +2210,116 @@
         "估计；预估",
         "kira",
         ""
+      ],
+      [
+        "menunda",
+        5,
+        0,
+        "",
+        "",
+        "推迟；延后",
+        "tunda",
+        ""
+      ],
+      [
+        "kemudian",
+        2,
+        0,
+        "",
+        "",
+        "然后；之后",
+        "kemudian",
+        "然后；之后（本身当作词根）"
+      ],
+      [
+        "motif",
+        2,
+        0,
+        "",
+        "",
+        "图案；花纹；动机",
+        "motif",
+        "图案；花纹"
+      ],
+      [
+        "peralatan",
+        2,
+        0,
+        "",
+        "",
+        "设备；用具（成套的）",
+        "alat",
+        "工具；器具"
+      ],
+      [
+        "pedagang",
+        2,
+        0,
+        "",
+        "",
+        "商贩；商人",
+        "dagang",
+        "做买卖；经商"
+      ],
+      [
+        "menerapkan",
+        2,
+        0,
+        "",
+        "",
+        "应用；实施；推行",
+        "terap",
+        "应用；实施（词根少单独使用）"
+      ],
+      [
+        "suhu",
+        2,
+        0,
+        "",
+        "",
+        "温度；气温；体温",
+        "suhu",
+        "温度"
+      ],
+      [
+        "strategis",
+        2,
+        0,
+        "",
+        "",
+        "战略性的；位置便利的",
+        "strategi",
+        "策略；战略"
+      ],
+      [
+        "entahlah",
+        2,
+        0,
+        "",
+        "",
+        "不知道；谁知道呢",
+        "entah",
+        "不知；不晓得"
+      ],
+      [
+        "kawasan",
+        2,
+        0,
+        "",
+        "",
+        "区域；地带",
+        "kawasan",
+        "区域；地带（本身当作词根）"
+      ],
+      [
+        "khas",
+        2,
+        0,
+        "",
+        "",
+        "特有的；有特色的",
+        "khas",
+        "特有的；特色的"
       ]
     ],
     "focus": [
@@ -2919,6 +2979,29 @@
         "kecuali",
         "tuntas"
       ]
+    },
+    {
+      "date": "2026-10-14",
+      "session": "am",
+      "review_core": [
+        "kendala",
+        "kelewat",
+        "nggak usah",
+        "ngaret",
+        "pantes"
+      ],
+      "new_words": [
+        "kemudian",
+        "motif",
+        "peralatan",
+        "pedagang",
+        "menerapkan",
+        "suhu",
+        "strategis",
+        "entahlah",
+        "kawasan",
+        "khas"
+      ]
     }
   ],
   "previous_pm": {
@@ -2936,7 +3019,88 @@
       "menyelesaikan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-14",
+    "vocab": [
+      [
+        "kemudian",
+        "然后；之后",
+        "then; after that",
+        "kemudian",
+        "然后；之后（本身当作词根）"
+      ],
+      [
+        "motif",
+        "图案；花纹；动机",
+        "pattern; motif",
+        "motif",
+        "图案；花纹"
+      ],
+      [
+        "peralatan",
+        "设备；用具（成套的）",
+        "equipment; set of tools",
+        "alat",
+        "工具；器具"
+      ],
+      [
+        "pedagang",
+        "商贩；商人",
+        "trader; vendor",
+        "dagang",
+        "做买卖；经商"
+      ],
+      [
+        "menerapkan",
+        "应用；实施；推行",
+        "to apply; to implement",
+        "terap",
+        "应用；实施（词根少单独使用）"
+      ],
+      [
+        "suhu",
+        "温度；气温；体温",
+        "temperature",
+        "suhu",
+        "温度"
+      ],
+      [
+        "strategis",
+        "战略性的；位置便利的",
+        "strategic; well-located",
+        "strategi",
+        "策略；战略"
+      ],
+      [
+        "entahlah",
+        "不知道；谁知道呢",
+        "who knows; I don't know",
+        "entah",
+        "不知；不晓得"
+      ],
+      [
+        "kawasan",
+        "区域；地带",
+        "area; zone",
+        "kawasan",
+        "区域；地带（本身当作词根）"
+      ],
+      [
+        "khas",
+        "特有的；有特色的",
+        "typical; characteristic",
+        "khas",
+        "特有的；特色的"
+      ]
+    ],
+    "review_vocab": [
+      "kendala",
+      "kelewat",
+      "nggak usah",
+      "ngaret",
+      "pantes"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
