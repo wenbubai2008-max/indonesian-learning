@@ -174,28 +174,7 @@
     const tb=document.querySelector('#vocab .toolbar');if(!tb)return null;
     let s=$('sabFilterStable');
     if(!s){s=document.createElement('select');s.id='sabFilterStable';s.innerHTML='<option value="">全部分级</option><option value="S">S · 核心</option><option value="A">A · 常用</option><option value="B">B · 低频</option>';const cat=$('cat');if(cat&&cat.nextSibling)tb.insertBefore(s,cat.nextSibling);else tb.appendChild(s);}
-    s.style.display=isBipaKey()?'':'none';if(!isBipaKey())s.value='';s.onchange=()=>rebuild(true);
-    // 2026-10-14: show only words that can still join the second library (not in the 977 primary library, B2 only grade S,
-    // no learning record yet on any synced device). On by default; this is the 424-word screening list.
-    let t=$('bipaCandidateOnly');
-    if(!t){t=document.createElement('label');t.id='bipaCandidateOnly';t.style.cssText='display:flex;align-items:center;gap:6px;font-size:13px;color:#475467;margin:-4px 0 12px';t.title='只显示还能加入第二词库的词：不在 977 主词库、B2 只看 S 级、在任何设备上都还没有学习记录';t.innerHTML='<input type="checkbox"> 只看可加入第二词库、还没筛选过的词';tb.insertAdjacentElement('afterend',t);} // outside the fixed-column toolbar grid, so its layout is unchanged
-    const box=t.querySelector('input');box.checked=candidateOnly();box.onchange=()=>{try{localStorage.setItem('bipa_candidate_only',box.checked?'1':'0')}catch(e){}rebuild(true)};
-    t.style.display=isBipaKey()?'flex':'none';
-    return s;
-  }
-  function candidateOnly(){try{return localStorage.getItem('bipa_candidate_only')!=='0'}catch(e){return true}}
-  var candidateCache=null,candidateCount=null;
-  function candidateSets(){
-    if(candidateCache)return candidateCache;
-    const primary=new Set(masterObjects().map(x=>norm(x.word)));
-    let records=new Set();try{const wp=window.WeaknessPool;if(wp&&typeof wp.all==='function')records=new Set(wp.all().map(x=>norm(x&&x.word)).filter(Boolean))}catch(e){}
-    const out={primary,records};if(primary.size)candidateCache=out;return out;
-  }
-  function secondaryCandidate(x){
-    const k=norm(x.word),c=candidateSets();
-    if(c.primary.has(k)||c.records.has(k))return false;
-    if(bipaLevelForKey(activeKey)==='B2'&&String(x.sab||'').toUpperCase()!=='S')return false;
-    return true;
+    s.style.display=isBipaKey()?'':'none';if(!isBipaKey())s.value='';s.onchange=()=>rebuild(true);return s;
   }
   function rebuildCategories(){
     const cat=$('cat');if(!cat)return;
@@ -240,7 +219,7 @@
   function updateStats(src=sourceFor(),mem=memoryFor()){
     const s=computeStats(src,mem);
     if($('vocabCount'))$('vocabCount').textContent=s.total;if($('knownCount'))$('knownCount').textContent=s.known;if($('reviewCount'))$('reviewCount').textContent=s.review;
-    let suffix='';if(activeView==='known')suffix=' · 查看已掌握';else if(activeView==='review')suffix=' · 查看待掌握';else if(candidateCount!=null)suffix=' · 可加入第二词库待筛 '+candidateCount+' 个';
+    let suffix='';if(activeView==='known')suffix=' · 查看已掌握';else if(activeView==='review')suffix=' · 查看待掌握';
     if($('dbStatus'))$('dbStatus').textContent=isPendingKey()?labelFor()+' · '+s.total+' 个合法待学词 · 会了即可移出（同步后下次课程排除）':labelFor()+' · '+s.unchecked+' 未判断 · '+s.review+' 待掌握 · '+s.known+' 已掌握 · '+s.total+' 总词'+suffix;
     if($('vocabTag'))$('vocabTag').textContent=labelFor()+' '+s.total+' 词';return s;
   }
@@ -251,7 +230,6 @@
     const q=String($('search')?.value||'').trim().toLowerCase(),cat=String($('cat')?.value||''),sab=isBipaKey()?String($('sabFilterStable')?.value||''):'';
     if(cat){if(isBipaKey()){if(String(x.theme||'')!==cat)return false}else if(!(x.categories||[]).includes(cat))return false}
     if(sab&&String(x.sab||'').toUpperCase()!==sab)return false;
-    if(isBipaKey()&&!activeView&&candidateOnly()&&!secondaryCandidate(x))return false;
     if(q&&!([x.word,x.cn,x.en,x.root,x.theme,x.example,x.example_cn,x.scene,x.scene_cn,x.note].join(' ').toLowerCase().includes(q)))return false;return true;
   }
   function renderPendingUndo(){
@@ -283,9 +261,7 @@
   }
   function rebuild(reset=false){
     const src=sourceFor(),mem=memoryFor();try{DB=src.slice()}catch(e){}
-    candidateCache=null;
     const out=src.filter(x=>currentFilterPredicate(x,mem));
-    candidateCount=isBipaKey()&&!activeView&&candidateOnly()?out.length:null;
     try{FILTER=out;if(reset)idx=0;else if(out.length)idx=Math.min(Math.max(0,Number(idx||0)),out.length-1);else idx=0}catch(e){}
     updateStats(src,mem);renderCurrent();return out;
   }
@@ -321,9 +297,7 @@
     const select=$('librarySelect');if(select&&select.value!==key)select.value=key;localStorage.setItem('selected_vocab_library',key);
     if($('search'))$('search').value='';syncUiMode();rebuildCategories();if($('cat'))$('cat').value='';if($('sabFilterStable'))$('sabFilterStable').value='';
     const src=sourceFor(),mem=memoryFor();try{DB=src.slice()}catch(e){}
-    candidateCache=null;const onlyCandidates=isBipaKey()&&candidateOnly();
-    const out=src.filter(x=>(isPendingKey(key)||!statusFromMemory(x.word,activeKey,mem))&&!(x.categories||[]).includes('粗口/俚语')&&(!onlyCandidates||secondaryCandidate(x)));
-    candidateCount=onlyCandidates?out.length:null;
+    const out=src.filter(x=>(isPendingKey(key)||!statusFromMemory(x.word,activeKey,mem))&&!(x.categories||[]).includes('粗口/俚语'));
     try{FILTER=out;idx=opts.restore===false?0:restoreIndex(out)}catch(e){}
     updateStats(src,mem);renderCurrent();window.dispatchEvent(new CustomEvent('vocab-library-ready',{detail:{key,total:src.length}}));return out;
   }
