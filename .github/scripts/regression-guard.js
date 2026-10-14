@@ -535,6 +535,12 @@ try {
   ok(css.includes('min-height:139px!important') && css.includes('#home .modules>.module:hover{transform:translateY(-2px)'), 'first-paint card CSS owns final card height and hover effect');
   const indexHtml = read('index.html');
   ok(homeKeys(layout).startsWith('reading,vocab,roots,weak,difficulty'), 'JS card order matches the protected order (HOME_MODULES: reading, vocab, roots, weak, difficulty; quick/automation stay hidden after them)');
+  // 2026-10-14: the 7 difficulty lessons (~145KB incl. their CSS) load only when the learner opens 难点解释.
+  const diffLessons = read('data/difficulty-lessons.js');
+  ok(!layout.includes('class="difficultyLesson"') && !layout.includes('difficulty01') && layout.length < 30000, 'home-modules-layout.js must not carry the difficulty lesson content (keeps every homepage load small)');
+  ok(layout.includes("data/difficulty-lessons.js?v=") && /window\.showDifficultyList\s*=\s*showDifficultyList/.test(layout), 'homepage script lazy-loads the difficulty lessons from a stub');
+  ok(/<section id="difficulty" class="page">/.test(read('index.html')), 'index keeps the difficulty page placeholder (hash/history navigation needs it at load)');
+  ok(['difficulty01','difficulty02','difficulty03','difficulty04','difficulty05','difficulty06','difficulty07'].every(id => diffLessons.includes('id="'+id+'"')) && diffLessons.includes('window.__difficultyLessons=') && diffLessons.includes('window.answerDpQuiz=') && diffLessons.includes('window.openDifficulty07='), 'difficulty-lessons.js defines all 7 lessons and their handlers');
   ok(layout.includes("key:'roots'") && layout.includes("root-families/index.html"), 'root family homepage shortcut exists');
   ok(layout.includes('const HOME_MODULES=[') && layout.includes('window.renderHomeModules=renderHomeModules'), 'homepage has one HOME_MODULES renderer');
   ok(indexHtml.includes('<div class="modules" id="homeModules"></div>'), 'index keeps only the homepage module mount point');
@@ -551,7 +557,7 @@ try {
     }
   }
   ok(rootPage.includes("fetch('roots.json'") && rootPage.includes('id="cards"') && rootPage.includes('id="detail"'), 'root family library loads independent expandable JSON');
-  ok(indexHtml.includes('data/daily-width-fix.css?v=20261014-single1') && indexHtml.includes('data/home-modules-layout.js?v=20261014-single1'),'homepage css and module JS cache keys are updated');
+  ok(indexHtml.includes('data/daily-width-fix.css?v=20261014-single1') && indexHtml.includes('data/home-modules-layout.js?v=20261014-lazy1'),'homepage css and module JS cache keys are updated');
   ok(!/<div class="modules"[^>]*>\s*<button/s.test(indexHtml), 'index does not hard-code homepage cards');
   if(fs.existsSync(rel('data/home-modules-stability.js'))){
     const stability = read('data/home-modules-stability.js');
