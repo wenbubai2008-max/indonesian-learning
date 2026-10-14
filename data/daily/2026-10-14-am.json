@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-14",
+  "session": "am",
+  "time": "08:00",
+  "day": 54,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Lapak Kain di Kawasan Pasar Akhir Pekan",
+  "new_words": [
+    "kemudian",
+    "motif",
+    "peralatan",
+    "pedagang",
+    "menerapkan",
+    "suhu",
+    "strategis",
+    "entahlah",
+    "kawasan",
+    "khas"
+  ],
+  "vocab": [
+    {
+      "word": "kemudian",
+      "display": "kemudian",
+      "audio_text": "kemudian",
+      "cn": "然后；之后",
+      "en": "then; after that",
+      "root": "kemudian",
+      "root_cn": "然后；之后（本身当作词根）",
+      "formation": "kemudian 是连接动作先后的连词，本身当作词根。常见搭配：Pertama…, kemudian…（先……，然后……）、lalu kemudian（接着）。",
+      "example": "Kita makan dulu, kemudian baru cari kado untuk Ibu.",
+      "example_cn": "我们先吃饭，然后再去找给妈妈的礼物。",
+      "synonym_note": "kemudian 与 lalu、terus 都表示“然后”；lalu 最常用，terus 更口语，kemudian 稍完整，写作和讲步骤时常见。setelah itu 是“在那之后”，更强调时间点。",
+      "is_oral_new": false
+    },
+    {
+      "word": "motif",
+      "display": "motif",
+      "audio_text": "motif",
+      "cn": "图案；花纹；动机",
+      "en": "pattern; motif",
+      "root": "motif",
+      "root_cn": "图案；花纹",
+      "formation": "motif 本身当作词根，名词。常见搭配：motif batik（蜡染图案）、motif bunga（花朵图案）、kain bermotif（有图案的布）。",
+      "example": "Aku suka motif bunga di kain ini.",
+      "example_cn": "我喜欢这块布上的花朵图案。",
+      "synonym_note": "motif 常指布、墙纸等的图案花纹，和 corak 很接近，日常两者常通用；motif 还能表示犯罪或行为的“动机”（motif pembunuhan），看上下文区分。",
+      "is_oral_new": false
+    },
+    {
+      "word": "peralatan",
+      "display": "peralatan",
+      "audio_text": "peralatan",
+      "cn": "设备；用具（成套的）",
+      "en": "equipment; set of tools",
+      "root": "alat",
+      "root_cn": "工具；器具",
+      "formation": "peralatan = per- + alat + -an，指一整套工具设备。常见搭配：peralatan masak（炊具）、peralatan kantor（办公设备）、membawa peralatan（带设备）。",
+      "example": "Semua peralatan masak sudah saya bawa ke dapur umum.",
+      "example_cn": "所有炊具我都已经带到公共厨房了。",
+      "synonym_note": "alat 是单个工具（alat tulis 文具）；peralatan 是成套的一整批设备。说“一件工具”用 alat，不说 peralatan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pedagang",
+      "display": "pedagang",
+      "audio_text": "pedagang",
+      "cn": "商贩；商人",
+      "en": "trader; vendor",
+      "root": "dagang",
+      "root_cn": "做买卖；经商",
+      "formation": "pedagang = peN- + dagang（peN- 遇 d 变 pe-），指以买卖为业的人。常见搭配：pedagang kaki lima（路边摊贩）、pedagang pasar（市场商贩）、berdagang（做生意）。",
+      "example": "Pedagang di pasar ini biasanya buka dari pagi sekali.",
+      "example_cn": "这个市场的商贩通常一大早就开门。",
+      "synonym_note": "pedagang 偏“做买卖的人”；penjual 更泛指“卖东西的人”，包括店员；pengusaha 是“企业家／经营者”，规模更大。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menerapkan",
+      "display": "menerapkan",
+      "audio_text": "menerapkan",
+      "cn": "应用；实施；推行",
+      "en": "to apply; to implement",
+      "root": "terap",
+      "root_cn": "应用；实施（词根少单独使用）",
+      "formation": "menerapkan = meN- + terap + -kan，意思是把方法、规定、系统付诸实行。常见搭配：menerapkan aturan（推行规定）、menerapkan sistem baru（实施新系统）。",
+      "example": "Kantor kami mulai menerapkan jam kerja fleksibel.",
+      "example_cn": "我们公司开始实行弹性工作时间。",
+      "synonym_note": "menerapkan 强调把方法、规则或系统真正用起来；mempraktikkan 偏“实际练习／实践”（mempraktikkan bahasa Indonesia）；menggunakan 只是“使用某物”，没有“推行”的意思。",
+      "is_oral_new": false
+    },
+    {
+      "word": "suhu",
+      "display": "suhu",
+      "audio_text": "suhu",
+      "cn": "温度；气温；体温",
+      "en": "temperature",
+      "root": "suhu",
+      "root_cn": "温度",
+      "formation": "suhu 本身当作词根，名词。常见搭配：suhu udara（气温）、suhu tubuh（体温）、suhu ruangan（室温）、suhu naik／turun（温度升／降）。",
+      "example": "Suhu tubuh Dina 38 derajat, sepertinya dia demam.",
+      "example_cn": "Dina 的体温有 38 度，她好像发烧了。",
+      "synonym_note": "suhu 是温度这个数值；panas／dingin 是主观感觉；temperatur 是外来词，意思相同，较少口用。天气整体情况用 cuaca，不要和 suhu 混用。",
+      "is_oral_new": false
+    },
+    {
+      "word": "strategis",
+      "display": "strategis",
+      "audio_text": "strategis",
+      "cn": "战略性的；位置便利的",
+      "en": "strategic; well-located",
+      "root": "strategi",
+      "root_cn": "策略；战略",
+      "formation": "strategis = strategi + -is，形容词。常见搭配：lokasi strategis（位置好）、letak yang strategis（位置便利）、rencana strategis（战略规划）。",
+      "example": "Kos ini harganya wajar dan letaknya strategis, dekat stasiun.",
+      "example_cn": "这间出租房价格合理，位置也很便利，离车站近。",
+      "synonym_note": "strategis 说地点时是“交通方便、人流好”的位置好；说计划时才是“战略性的”。strategi 是名词“策略”，不要把 strategis 当名词用。",
+      "is_oral_new": false
+    },
+    {
+      "word": "entahlah",
+      "display": "entahlah",
+      "audio_text": "entahlah",
+      "cn": "不知道；谁知道呢",
+      "en": "who knows; I don't know",
+      "root": "entah",
+      "root_cn": "不知；不晓得",
+      "formation": "entahlah = entah + -lah，带着耸肩、拿不准的语气。常见搭配：Entahlah, aku juga nggak tahu.（谁知道呢，我也不清楚）；entah …, entah …（要么……要么……）。",
+      "example": "Dia mau datang atau nggak? Entahlah, belum ada kabar.",
+      "example_cn": "他来还是不来？谁知道呢，还没消息。",
+      "synonym_note": "entahlah 带“拿不准、无奈”的语气；nggak tahu 是直白的“不知道”。对长辈或上级正式回答时，用 kurang tahu／saya belum tahu 更稳妥，entahlah 偏随意。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kawasan",
+      "display": "kawasan",
+      "audio_text": "kawasan",
+      "cn": "区域；地带",
+      "en": "area; zone",
+      "root": "kawasan",
+      "root_cn": "区域；地带（本身当作词根）",
+      "formation": "kawasan 本身当作词根，名词，多指有某种功能的一片地方。常见搭配：kawasan wisata（旅游区）、kawasan industri（工业区）、kawasan bebas rokok（无烟区）。",
+      "example": "Kawasan ini ramai kalau akhir pekan, jadi parkir susah.",
+      "example_cn": "这一带周末人很多，所以很难停车。",
+      "synonym_note": "kawasan 指有特定用途或特点的一片区域；daerah 更泛，可指地区、家乡；wilayah 偏行政范围；area 是口语常见的外来词。",
+      "is_oral_new": false
+    },
+    {
+      "word": "khas",
+      "display": "khas",
+      "audio_text": "khas",
+      "cn": "特有的；有特色的",
+      "en": "typical; characteristic",
+      "root": "khas",
+      "root_cn": "特有的；特色的",
+      "formation": "khas 本身当作词根，形容词，放在名词后面。常见搭配：makanan khas Padang（巴东特色菜）、ciri khas（特点）、rasa khas（独特的味道）。",
+      "example": "Rendang adalah makanan khas Padang yang terkenal.",
+      "example_cn": "仁当是著名的巴东特色菜。",
+      "synonym_note": "khas 强调“某地或某人特有、有代表性”；spesial 是“特别的、不一般的”，不一定代表某地。khas 通常放在名词后面：batik khas Solo，不说 khas batik。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "kendala",
+    "kelewat",
+    "nggak usah",
+    "ngaret",
+    "pantes"
+  ],
+  "sentences": [
+    {
+      "text": "Kain motif khas Jawa ini paling laris di kawasan wisata.",
+      "cn": "这种爪哇特色图案的布，在旅游区卖得最好。"
+    },
+    {
+      "text": "Supaya tidak boros, kita beli peralatan seperlunya dulu, kemudian baru hitung pengeluaran lainnya.",
+      "cn": "为了不乱花钱，我们先只买必要的设备，然后再算其他支出。"
+    },
+    {
+      "text": "Pedagang itu menerapkan harga khusus untuk pembeli langganan.",
+      "cn": "那位商贩对老顾客实行特别价。"
+    },
+    {
+      "text": "Suhu siang ini panas banget, nggak usah jalan kaki jauh.",
+      "cn": "今天中午气温很高，不用走太远的路。"
+    },
+    {
+      "text": "Lokasinya strategis, tapi parkirnya gimana? Entahlah, aku belum cek.",
+      "cn": "地点位置很好，可是停车怎么样？谁知道呢，我还没查。"
+    }
+  ],
+  "reading": {
+    "text": "Sabtu pagi, Rina membuka lapak kain di kawasan pasar akhir pekan. Sebagai pedagang baru, ia memilih tempat yang strategis, dekat pintu masuk. Kain jualannya bermotif khas batik Solo. Dani, temannya, janji membawa peralatan jam tujuh, tapi seperti biasa dia ngaret. Jam delapan ia baru datang dan minta maaf, \"HP-ku mati, alarm nggak bunyi.\" \"Pantes chat-ku nggak dibales,\" kata Rina. Kendala utama hari itu, suhu siang hampir 35 derajat, sehingga pembeli malas jalan-jalan. \"Nggak usah panik,\" kata Dani. Rina menerapkan strategi baru, yaitu diskon kecil setelah jam tiga. \"Entahlah laku atau nggak, kita coba saja.\" Karena sibuk menata kain, jam makan siang kelewat begitu saja. Kemudian pembeli kembali ramai, dan jam lima kainnya hampir habis.",
+    "cn": "周六早上，Rina 在周末市场那一带开了一个布料摊。作为新手摊贩，她选了位置很好、靠近入口的地方。她卖的布是爪哇梭罗特色的蜡染图案。她的朋友 Dani 答应七点带设备来，但跟平时一样迟到了。八点他才到，一边道歉说：“我手机没电关机了，所以闹钟没响。”“难怪我发的消息你都没回，”Rina 说。当天最大的难题是中午气温将近 35 度，客人都懒得逛。“不用慌，”Dani 说。Rina 推行了新的办法，就是三点以后打一点小折扣。“不知道好不好卖，我们先试试吧。”因为忙着重新摆布料，午饭时间就这样错过了。后来客人又多了起来，五点时布料已经快卖完了。"
+  },
+  "quiz": [
+    {
+      "question": "Dani 答应七点到，结果八点才出现。印尼人会说他又 ___ 了。",
+      "options": [
+        "pantes",
+        "kelewat",
+        "ngaret",
+        "nggak usah"
+      ],
+      "answer_index": 2,
+      "answer": "ngaret",
+      "explain": "约好的时间过了才到，是 ngaret（拖延、迟到）。pantes＝难怪；kelewat＝错过／过头；nggak usah＝不必，都不是“迟到”。"
+    },
+    {
+      "question": "Toko kami akan ___ sistem diskon baru mulai bulan depan.",
+      "options": [
+        "memasang",
+        "menyewa",
+        "menyimpan",
+        "menerapkan"
+      ],
+      "answer_index": 3,
+      "answer": "menerapkan",
+      "explain": "“实行新的折扣制度”用 menerapkan sistem。memasang＝安装；menyewa＝租；menyimpan＝收藏／保存，都不能搭配 sistem diskon。"
+    },
+    {
+      "question": "Rina 问 Dani 明天会不会下雨，Dani 耸耸肩说：“___, aku belum lihat ramalan cuacanya.”",
+      "options": [
+        "Entahlah",
+        "Kemudian",
+        "Pantes",
+        "Nggak usah"
+      ],
+      "answer_index": 0,
+      "answer": "Entahlah",
+      "explain": "没看天气预报、拿不准，用 Entahlah（谁知道呢）。Kemudian＝然后；Pantes＝难怪；Nggak usah＝不必，语气和语境都不对。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语介绍你常去的一个地方（市场、咖啡店或商场）：它在哪一带、位置方不方便，那里有什么特色。至少用到 kawasan、strategis、khas 中的两个词。",
+    "reference_answer": "Aku sering ke pasar di kawasan Kemang. Letaknya strategis, dekat stasiun, jadi gampang dicapai. Di sana ada makanan khas Betawi yang enak.",
+    "reference_cn": "我常去 Kemang 一带的市场。位置很便利，离车站近，所以很容易到。那里有好吃的雅加达土著特色菜。"
+  },
+  "review": [
+    "3秒主动提取：不看词卡，看中文说印尼语——然后、图案、成套设备、商贩、推行、温度、谁知道呢；再各造半句：“Kita makan dulu, kemudian pulang.”（我们先吃饭，然后回家。）、“Suhu hari ini panas.”（今天气温很高。）",
+    "易混词与搭配：kemudian／lalu／terus（然后）；alat（单个工具）vs peralatan（成套设备）；pedagang（商贩）vs penjual（卖东西的人）；ngaret（迟到）vs kelewat（错过）；pantes（难怪）vs nggak usah（不必）。",
+    "重点复习词应用：从 kendala、kelewat、nggak usah、ngaret、pantes 里选两个各说一句，例如 “Kendala kami cuma satu: tempatnya terlalu kecil.”（我们的难题只有一个：地方太小。）、“Pantes dia nggak balas, HP-nya mati.”（难怪他没回，手机没电了。）"
+  ]
+}
