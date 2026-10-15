@@ -16,6 +16,30 @@
   function wordMap(){var m={};allSources().forEach(function(x){if(!x||!x.word)return;var k=norm(x.word),old=m[k]||{};m[k]=Object.assign({},old,x);if(!m[k].cn&&old.cn)m[k].cn=old.cn;if(!m[k].example){m[k].example=x.example||((x.contexts||[]).slice(-1)[0])||old.example||'';}if(!m[k].example_cn)m[k].example_cn=x.example_cn||old.example_cn||'';});return m;}
   function practiceState(){try{return JSON.parse(localStorage.getItem('indo_quick_practice_state')||'{}');}catch(e){return {};}}
   function savePracticeState(s){localStorage.setItem('indo_quick_practice_state',JSON.stringify(s));}
+  // 2026-10-15: show where the word stands on the cross-day ladder (2/7/30/90/180 days, one count per Jakarta day,
+  // 3 passes = visual recognition stable). Text only: levels and due dates come from VocabStudyCoach.markAnswer.
+  function jktDay(t){var m={};new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(t)).forEach(function(x){m[x.type]=x.value;});return m.year+'-'+m.month+'-'+m.day;}
+  function mdLabel(d){var a=String(d).split('-');return a.length===3?Number(a[1])+'月'+Number(a[2])+'日':'';}
+  function dayDiff(a,b){var x=Date.parse(a+'T00:00:00Z'),y=Date.parse(b+'T00:00:00Z');return Number.isFinite(x)&&Number.isFinite(y)?Math.round((y-x)/86400000):null;}
+  function quickResultText(ok,ans,prev,p,now){
+    try{
+      var today=jktDay(now),level=Number(p.review_level||0),due=Number(p.review_due||0);
+      var dueDay=due?jktDay(due):'',gap=dueDay?dayDiff(today,dueDay):null;
+      var next=dueDay?(dueDay.slice(0,4)!==today.slice(0,4)?dueDay.slice(0,4)+'年':'')+mdLabel(dueDay)+(gap>0?'（'+gap+' 天后）':''):'';
+      if(prev.countedToday){
+        return ok?'答对了。今天已经记过一次（第 '+level+' 次），同一天重复答对不再计数。'+(next?'下次验证：'+next+'。':'')
+          :'正确答案：'+ans+'。今天已经记过一次（第 '+level+' 次），这次答错不改变进度。'+(next?'下次验证：'+next+'。':'');
+      }
+      if(!ok)return prev.level>0?'正确答案：'+ans+'。连续验证中断（原来已到第 '+prev.level+' 次），明天重新从第 1 次开始。'
+        :'正确答案：'+ans+'。已记入错题，明天重新验证。';
+      var first=p.review_first_day||'',n=first?dayDiff(first,today):null,dayNo=n!=null&&n>=0?n+1:null;
+      if(level===1)return '答对了。第 1 次验证通过（共需 3 次）。'+(next?'下次验证：'+next+'。':'');
+      if(level===2)return '答对了。第 2 次验证通过'+(dayNo?'，距第一次答对第 '+dayNo+' 天':'')+'。'+(next?'下次验证：'+next+'。':'');
+      if(level===3)return '答对了。第 3 次验证通过，视觉识别已稳定'+(dayNo?'（从 '+mdLabel(first)+' 开始，共 '+dayNo+' 天）':'')+'。'+(next?'下次抽查：'+next+'。':'');
+      if(level>=4)return '答对了。'+(level===5&&prev.level===5?'已连续验证 5 次以上':'第 '+level+' 次验证通过')+'，已稳定。'+(next?'下次抽查：'+next+'。':'');
+    }catch(e){}
+    return ok?'答对了。已记录本次视觉识别，按自身复习周期再次验证。':'正确答案：'+ans+'。已记录识别错题，次日重新验证，并向弱项池提供信号。';
+  }
   function localUnknown(){try{return JSON.parse(localStorage.getItem('indo_unknown_words')||'{}');}catch(e){return {};}}
   function mem(){try{return JSON.parse(localStorage.getItem('indo_mem')||'{}');}catch(e){return {};}}
   function taughtSet(){var s=new Set();(window.DAILY_VOCAB_DB||[]).forEach(function(x){if(x&&x.word)s.add(norm(x.word));});return s;}
@@ -88,6 +112,7 @@
       btn.onclick=function(){
         var row=btn.closest('.v2-q');if(row.dataset.done)return;row.dataset.done='1';
         var ans=row.dataset.answer,ok=btn.dataset.v===ans,k=norm(ans),s=practiceState(),p=s[k]||{right:0,wrong:0,streak:0},now=Date.now();
+        var prev={level:Number(p.review_level||0),countedToday:p.review_last_counted_day===jktDay(now)};
         if(ok){p.right++;p.streak++;p.last_result='right';p.last_right=now;}
         else{p.wrong++;p.streak=0;p.last_result='wrong';p.last_wrong=now;}
         p.last=now;s[k]=p;savePracticeState(s);
@@ -97,7 +122,7 @@
         try{window.dispatchEvent(new CustomEvent('quick-practice-updated',{detail:{word:ans,ok:ok,state:p}}));}catch(e){}
         btn.classList.add(ok?'v2-ok':'v2-bad');
         row.querySelectorAll('.v2-opts button').forEach(function(b){b.disabled=true;if(b.dataset.v===ans)b.classList.add('v2-ok');});
-        row.querySelector('.v2-result').textContent=ok?'答对了。已记录本次视觉识别，按自身复习周期再次验证。':'正确答案：'+ans+'。已记录识别错题，次日重新验证，并向弱项池提供信号。';
+        row.querySelector('.v2-result').textContent=coach?quickResultText(ok,ans,prev,p,now):(ok?'答对了。已记录本次视觉识别，按自身复习周期再次验证。':'正确答案：'+ans+'。已记录识别错题，次日重新验证，并向弱项池提供信号。');
         if(coach){
           const s=coach.statistics('quick'),box=body.querySelector('#quickBatchResult');
           if(meta)meta.textContent='今日已练 '+s.today+' · 剩余到期 '+s.due+' · 已稳定 '+s.stable;
