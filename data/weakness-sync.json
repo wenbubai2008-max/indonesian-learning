@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T13:48:43.265Z",
+  "updated_at": "2026-10-15T14:57:21.285Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -12197,8 +12197,9 @@
     "palsu": {
       "word": "palsu",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:54.785Z",
+      "updated_at": "2026-10-15T14:44:35.177Z",
       "display": "palsu",
+      "cn": "假的",
       "last_review": "2026-09-12T14:13:55.326Z",
       "last_mastered": "2026-09-12T14:13:55.326Z",
       "reasons": [],
@@ -12857,8 +12858,9 @@
     "bantuan": {
       "word": "bantuan",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:55.811Z",
+      "updated_at": "2026-10-15T14:46:12.520Z",
       "display": "bantuan",
+      "cn": "帮助",
       "last_review": "2026-09-12T14:13:56.349Z",
       "last_mastered": "2026-09-12T14:13:56.349Z",
       "reasons": [],
@@ -13877,8 +13879,9 @@
     "cair": {
       "word": "cair",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:57.484Z",
+      "updated_at": "2026-10-15T14:44:09.689Z",
       "display": "cair",
+      "cn": "液体",
       "last_review": "2026-09-12T14:25:24.122Z",
       "last_mastered": "2026-09-12T14:25:24.122Z",
       "reasons": [],
@@ -23190,8 +23193,10 @@
     "tengah": {
       "word": "tengah",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:01:16.457Z",
+      "updated_at": "2026-10-15T14:51:00.024Z",
       "display": "tengah",
+      "cn": "中间",
+      "root": "tengah",
       "last_review": "2026-09-12T17:09:05.994Z",
       "last_mastered": "2026-09-12T17:09:05.994Z",
       "reasons": [],
