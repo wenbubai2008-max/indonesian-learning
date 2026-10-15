@@ -2464,17 +2464,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "dibandingkan",
-    "cn": "与……相比",
-    "en": "compared with",
-    "root": "banding",
-    "root_cn": "",
-    "formation": "di- + banding + -kan",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "menyala",
     "cn": "亮着；启动",
     "en": "be on; light up",
