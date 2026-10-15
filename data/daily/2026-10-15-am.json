@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-15",
+  "session": "am",
+  "time": "08:00",
+  "day": 55,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Kumpul Keluarga di Bogor",
+  "new_words": [
+    "diberikan",
+    "aset",
+    "penanganan",
+    "bergabung",
+    "berjuang",
+    "saya pamit",
+    "anak tunggal",
+    "anak sulung",
+    "anak bungsu",
+    "rusa"
+  ],
+  "vocab": [
+    {
+      "word": "diberikan",
+      "display": "diberikan",
+      "audio_text": "diberikan",
+      "cn": "被给予；被交给；被提供",
+      "en": "given; handed over",
+      "root": "beri",
+      "root_cn": "给",
+      "formation": "diberikan = di- + beri + -kan，是 memberikan（把……给出、提供）的被动形。常见搭配：diberikan kepada…（发给……）、diberikan secara gratis（免费提供）、kesempatan yang diberikan（得到的机会）。",
+      "example": "Beasiswa itu diberikan kepada mahasiswa yang nilainya paling tinggi.",
+      "example_cn": "那笔奖学金发给成绩最好的学生。",
+      "synonym_note": "diberikan 通常让“被给的东西”作主语：Hadiah diberikan kepada pemenang.（奖品发给获胜者。）；让“得到的人”作主语时多用 diberi：Pemenang diberi hadiah.（获胜者得到奖品。）。口语说法：dikasih（Hadiahnya dikasih ke siapa?），公告、文件、新闻等正式场合用 diberikan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "aset",
+      "display": "aset",
+      "audio_text": "aset",
+      "cn": "资产；（比喻）宝贵的人或东西",
+      "en": "asset",
+      "root": "",
+      "root_cn": "",
+      "formation": "借自英语 asset，单纯词。常见搭配：aset keluarga（家庭资产）、aset perusahaan（公司资产）、mengelola aset（管理资产）；也可比喻人：Dia aset berharga bagi tim.（他是团队的宝贵人才。）",
+      "example": "Rumah kontrakan itu aset keluarga kami. Setiap bulan uang sewanya jadi pemasukan tambahan.",
+      "example_cn": "那栋出租房是我们家的资产，每个月的租金就是一笔额外收入。",
+      "synonym_note": "aset 偏财务、正式，多用于公司、银行、遗产安排；harta 是日常的“财产”（harta warisan＝遗产）；kekayaan 指“财富”的总量。日常聊天里人们常直接说 rumah、tanah 或 harta，不一定用 aset。",
+      "is_oral_new": false
+    },
+    {
+      "word": "penanganan",
+      "display": "penanganan",
+      "audio_text": "penanganan",
+      "cn": "处理；应对（过程）",
+      "en": "handling; treatment",
+      "root": "tangan",
+      "root_cn": "手",
+      "formation": "tangan（手）→ menangani（处理，meN- + tangan + -i，t 脱落）→ penanganan（处理的过程，peN-an，同样 t 脱落）。常见搭配：penanganan pasien（病人的救治）、penanganan banjir（洪水应对）、penanganan keluhan（投诉处理）、penanganan yang cepat（处理及时）。",
+      "example": "Penanganan pasien di rumah sakit itu cepat, jadi ayah langsung diperiksa dokter.",
+      "example_cn": "那家医院对病人处理得很快，所以爸爸马上就看上了医生。",
+      "synonym_note": "penanganan 是名词，多见于医院、政府、公司、新闻等正式场合；动词说 menangani（Siapa yang menangani masalah ini?）。日常聊天里一般不用这个名词，改用动词：ngurus / ngurusin（Masalah ini siapa yang ngurusin?），正式场合用 menangani。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bergabung",
+      "display": "bergabung",
+      "audio_text": "bergabung",
+      "cn": "加入；合在一起",
+      "en": "to join",
+      "root": "gabung",
+      "root_cn": "合在一起；联合",
+      "formation": "bergabung = ber- + gabung。核心搭配是 bergabung dengan…（加入团队、公司、组织，成为其中一员）。派生：menggabungkan（把……合并）、gabungan（联合的、合起来的）。",
+      "example": "Sejak tahun lalu, kakak saya bergabung dengan perusahaan teknologi di Jakarta.",
+      "example_cn": "从去年起，我哥哥加入了雅加达的一家科技公司。",
+      "synonym_note": "bergabung dengan 强调“成为团体的一员”；ikut 更随意，多指“跟着参加一次活动”（ikut rapat、ikut jalan-jalan）。口语说法：gabung（Yuk, gabung sama kita!＝来，跟我们一起吧！），正式介绍、公司公告用 bergabung dengan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berjuang",
+      "display": "berjuang",
+      "audio_text": "berjuang",
+      "cn": "奋斗；拼搏；斗争",
+      "en": "to struggle; to fight for",
+      "root": "juang",
+      "root_cn": "斗争；奋斗",
+      "formation": "berjuang = ber- + juang。派生：perjuangan（奋斗、斗争的过程）、pejuang（斗士、为……奋斗的人，对应 berjuang，和 berlari → pelari 同类）。常见搭配：berjuang untuk…（为……奋斗）、berjuang melawan penyakit（与疾病抗争）。",
+      "example": "Dia berjuang melawan penyakitnya selama dua tahun, dan sekarang sudah sehat lagi.",
+      "example_cn": "他和病魔抗争了两年，现在已经恢复健康了。",
+      "synonym_note": "berjuang 语气重，用于长期、艰难的目标或对抗困难；berusaha 是日常最常用的“努力、尽力”（Aku berusaha datang tepat waktu.），小事用 berusaha 更自然。",
+      "is_oral_new": false
+    },
+    {
+      "word": "saya pamit",
+      "display": "saya pamit",
+      "audio_text": "saya pamit",
+      "cn": "我先告辞了",
+      "en": "I'll take my leave",
+      "root": "pamit",
+      "root_cn": "告辞；辞行",
+      "formation": "saya（我）+ pamit（告辞）。离开主人家、办公室或向长辈道别时的礼貌说法，常加 dulu：Saya pamit dulu.。派生：berpamitan（辞行、互相道别），口语 pamitan（Kita pamitan dulu sama Nenek.）。",
+      "example": "Sudah malam, saya pamit dulu ya, Bu. Terima kasih makan malamnya.",
+      "example_cn": "天已经晚了，阿姨，我先告辞了。谢谢您的晚饭。",
+      "synonym_note": "pamit 是“走之前打个招呼”，礼貌、日常都用；selamat tinggal 带有“永别、长时间分开”的感觉，日常离开别人家时很少说。口语说法：跟朋友说 Aku pamit dulu ya 或更随便的 Aku cabut dulu；对长辈、客户用 Saya pamit dulu。",
+      "is_oral_new": false
+    },
+    {
+      "word": "anak tunggal",
+      "display": "anak tunggal",
+      "audio_text": "anak tunggal",
+      "cn": "独生子女",
+      "en": "only child",
+      "root": "tunggal",
+      "root_cn": "单一；唯一",
+      "formation": "anak（孩子）+ tunggal（唯一的）。tunggal 只出现在少数搭配里，例如 orang tua tunggal（单亲父母）。",
+      "example": "Dimas anak tunggal, jadi waktu kecil dia sering main sendirian.",
+      "example_cn": "Dimas 是独生子，所以小时候常常一个人玩。",
+      "synonym_note": "anak tunggal 是中性说法；anak semata wayang 更亲昵，聊天时常听到。日常说“唯一的”一般用 satu-satunya（satu-satunya anak），不要随意用 tunggal 替代。",
+      "is_oral_new": false
+    },
+    {
+      "word": "anak sulung",
+      "display": "anak sulung",
+      "audio_text": "anak sulung",
+      "cn": "长子；长女；家里的老大",
+      "en": "eldest child",
+      "root": "sulung",
+      "root_cn": "排行第一的；最早出生的",
+      "formation": "anak + sulung。也说 si sulung（老大）、kakak sulung（大哥 / 大姐）。兄弟姐妹排行：sulung（老大）— tengah（中间的）— bungsu（老幺）。",
+      "example": "Anak sulung mereka sudah bekerja di Surabaya.",
+      "example_cn": "他们家老大已经在泗水工作了。",
+      "synonym_note": "anak sulung 稍正式，介绍家庭、填表时常见；日常聊天更常说 anak pertama（Aku anak pertama dari tiga bersaudara.）。sulung 不分男女，长子、长女都可以。",
+      "is_oral_new": false
+    },
+    {
+      "word": "anak bungsu",
+      "display": "anak bungsu",
+      "audio_text": "anak bungsu",
+      "cn": "最小的孩子；老幺",
+      "en": "youngest child",
+      "root": "bungsu",
+      "root_cn": "排行最后的；最小的",
+      "formation": "anak + bungsu。si bungsu＝家里的老幺；adik bungsu＝最小的弟弟 / 妹妹。和 anak sulung 相对。",
+      "example": "Si bungsu baru masuk SMA tahun ini.",
+      "example_cn": "家里的老幺今年刚上高中。",
+      "synonym_note": "anak bungsu 不分男女；日常也说 anak paling kecil。注意 paling kecil 在不同语境里也可能指“个子最小”，介绍排行时 bungsu 最清楚。",
+      "is_oral_new": false
+    },
+    {
+      "word": "rusa",
+      "display": "rusa",
+      "audio_text": "rusa",
+      "cn": "鹿",
+      "en": "deer",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词。常见搭配：rusa totol（斑点鹿，茂物总统府草坪上就养着一大群）、tanduk rusa（鹿角）、memberi makan rusa（喂鹿）。",
+      "example": "Di halaman Istana Bogor ada ratusan rusa totol yang hidup bebas.",
+      "example_cn": "茂物总统府的草坪上有好几百只斑点鹿自由生活。",
+      "synonym_note": "rusa 是“鹿”的统称；“喂鹿”说 memberi makan rusa，不说 makan rusa（那是“吃鹿肉”）。去茂物总统府外面，常看到人们隔着栏杆用胡萝卜（wortel）喂鹿。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "hafal",
+    "menerapkan",
+    "harusnya",
+    "boros",
+    "membatasi"
+  ],
+  "sentences": [
+    {
+      "text": "Sebagai anak sulung, Rina sering membantu adiknya mengerjakan PR waktu orang tua mereka masih di kantor.",
+      "cn": "作为家里的老大，父母还在上班时，Rina 常帮妹妹写作业。"
+    },
+    {
+      "text": "Udah malem nih, aku pamit dulu ya. Makasih udah nyiapin makanannya!",
+      "cn": "已经很晚了，我先走啦。谢谢你准备了吃的！（udah = sudah，malem = malam，makasih = terima kasih，nyiapin = menyiapkan）"
+    },
+    {
+      "text": "Bantuan ini diberikan kepada keluarga yang rumahnya rusak karena banjir.",
+      "cn": "这笔援助发给房子因洪水受损的家庭。"
+    },
+    {
+      "text": "Penanganan keluhan pelanggan harus cepat, jangan sampai mereka menunggu berhari-hari.",
+      "cn": "处理客户投诉必须及时，别让他们一等就是好几天。"
+    },
+    {
+      "text": "Setelah lulus, Bayu ingin bergabung dengan tim relawan di kotanya.",
+      "cn": "毕业后，Bayu 想加入他所在城市的志愿者团队。"
+    }
+  ],
+  "reading": {
+    "text": "Hari Minggu, keluarga Pak Hendra berkumpul di rumah mereka di Bogor. Rina, anak sulung, datang bersama suaminya, Dimas. Dimas anak tunggal, jadi dia senang melihat rumah yang ramai. Pak Hendra berkata bahwa tanah di belakang rumah adalah aset keluarga. Tanah itu akan diberikan kepada Sari, anak bungsu, karena dia yang paling sering menjaga orang tua. Sari baru bergabung dengan sebuah rumah sakit sebagai perawat. Katanya penanganan pasien di sana cepat, tapi kerjanya berat. Dulu Pak Hendra dan istrinya berjuang supaya kedua anak mereka bisa kuliah. Sore harinya, mereka memberi makan rusa dari balik pagar Istana Bogor. Lalu Dimas berkata, “Pak, Bu, saya pamit dulu. Besok saya harus kerja.”",
+    "cn": "星期天，Hendra 先生一家在他们茂物的家里团聚。老大 Rina 和丈夫 Dimas 一起回来。Dimas 是独生子，所以看到家里热热闹闹的很开心。Hendra 先生说，房子后面的那块地是家里的资产。这块地将交给老幺 Sari，因为平时最常照顾父母的是她。Sari 刚加入一家医院当护士。她说那里对病人处理得很及时，但工作很辛苦。当年 Hendra 先生和妻子一路打拼，才让两个孩子都上了大学。傍晚，他们隔着茂物总统府的栏杆喂鹿。然后 Dimas 说：“爸，妈，我先告辞了。明天我还要上班。”"
+  },
+  "quiz": [
+    {
+      "question": "Supaya anak-anaknya tidak boros, Ibu ___ uang jajan mereka: maksimal dua puluh ribu sehari.",
+      "options": [
+        "menerapkan",
+        "menghafal",
+        "membatasi",
+        "menyimpan"
+      ],
+      "answer_index": 2,
+      "answer": "membatasi",
+      "explain": "“把零花钱控制在每天两万以内”是限制，用 membatasi（复习词）。menerapkan 搭配 aturan / sistem（推行规定），不直接接 uang jajan；menghafal＝背诵；menyimpan＝收起来保管，和“每天最多两万”对不上。"
+    },
+    {
+      "question": "Rina terjebak macet satu jam. Dia mengeluh, “___ aku berangkat lebih pagi, biar nggak kena macet.”",
+      "options": [
+        "Harusnya",
+        "Kemungkinan",
+        "Entahlah",
+        "Kemudian"
+      ],
+      "answer_index": 0,
+      "answer": "Harusnya",
+      "explain": "事后后悔“本来应该早点出发”，用 Harusnya（复习词）。Kemungkinan＝可能；Entahlah＝谁知道呢；Kemudian＝然后（多用于叙述步骤），都表达不了“本该”的后悔语气。"
+    },
+    {
+      "question": "Hadiah untuk juara lomba akan ___ langsung oleh kepala sekolah.",
+      "options": [
+        "memberi",
+        "beri",
+        "pemberian",
+        "diberikan"
+      ],
+      "answer_index": 3,
+      "answer": "diberikan",
+      "explain": "主语是“奖品”（被给的东西），后面有 oleh（由……），要用被动形 diberikan。memberi 是主动形；beri 是词根 / 命令式；pemberian 是名词“给予、礼物”，都不能放在 akan 后面作这句的谓语。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语介绍你在家里的排行（anak sulung、anak bungsu 还是 anak tunggal？），再说一件家里人为你或为家里拼搏的事。至少用到本课两个新词，可以顺便用上复习词 boros 或 hafal。",
+    "reference_answer": "Aku anak bungsu dari tiga bersaudara. Kakak sulungku dulu benar-benar berjuang: kuliah sambil kerja, jadi sampai sekarang dia nggak pernah boros. Tahun lalu dia bergabung dengan perusahaan besar di Jakarta.",
+    "reference_cn": "我是三兄弟姐妹里最小的。我大哥 / 大姐当年很拼：一边上大学一边打工，所以到现在都从不乱花钱。去年他 / 她加入了雅加达的一家大公司。"
+  },
+  "review": [
+    "3秒主动提取：不看词卡，看中文说印尼语——被交给、资产、处理（名词）、加入、奋斗、我先告辞了、独生子女、老大、老幺、鹿；再各补半句：“… diberikan kepada …”、“bergabung dengan …”、“berjuang supaya …”。",
+    "易混词与搭配：diberikan（物作主语：Hadiah diberikan kepada…）vs diberi（人作主语：Dia diberi hadiah）；berjuang（艰难的大目标）vs berusaha（日常努力）；bergabung dengan（成为一员）vs ikut（跟着参加）；aset（正式、财务）vs harta（日常财产）；sulung — tengah — bungsu；saya pamit（走前打招呼）vs selamat tinggal（像永别）。",
+    "重点复习词应用：从 hafal、menerapkan、harusnya、boros、membatasi 里选两个各说一句，例如 “Aku belum hafal nama semua sepupuku.”（我还没记住所有表兄弟姐妹的名字。）、“Kantor kami menerapkan aturan baru: rapat maksimal satu jam.”（我们公司推行新规定：开会最多一小时。）"
+  ]
+}
