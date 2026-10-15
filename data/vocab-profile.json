@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generated_at": "2026-10-15T00:31:43.700Z",
-  "source_updated_at": "2026-10-14T12:01:15.509Z",
+  "generated_at": "2026-10-15T03:40:32.361Z",
+  "source_updated_at": "2026-10-15T03:29:41.971Z",
   "taught_total": 795,
-  "confirmed_mastered": 181,
-  "needs_reinforcement": 525,
-  "unverified": 89,
-  "mastery_percent": 22.8,
+  "confirmed_mastered": 180,
+  "needs_reinforcement": 527,
+  "unverified": 88,
+  "mastery_percent": 22.6,
   "primary_master_total": 977,
   "primary_taught_unique": 492,
   "primary_unlearned_total": 485,
   "primary_coverage_percent": 50.4,
   "primary_eligible_new_total": 155,
-  "focus_total": 506,
+  "focus_total": 508,
   "focus_words": [
     {
       "word": "menunjukkan",
@@ -99,16 +99,16 @@
       "cn": "强调；明确说明；确认"
     },
     {
-      "word": "memanggil",
+      "word": "ganjel",
       "score": 78,
       "signals": [
-        "automation_fail",
-        "dont"
+        "quick_wrong",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "last_wrong": "",
-      "last_review": "2026-10-09T07:09:29.993Z",
-      "cn": "呼唤 / 叫"
+      "wrong_count": 3,
+      "last_wrong": "2026-10-15T03:21:01.649Z",
+      "last_review": "2026-10-15T03:26:11.338Z",
+      "cn": "心里有点卡；觉得哪里不对劲；有件事没说开（口语）"
     }
   ],
   "definitions": {
