@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-15",
-    "session": "pm",
-    "time": "18:00",
-    "day": 55
+    "date": "2026-10-16",
+    "session": "am",
+    "time": "08:00",
+    "day": 56
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-15T09:40:34.943Z",
-    "lesson_watermark": "2026-10-15 08:00",
+    "runtime_generated_at": "2026-10-15T10:47:05.945Z",
+    "lesson_watermark": "2026-10-15 18:00",
     "index_updated": "2026-10-15",
-    "runtime_hash": "988f27410b818b5ad5f2fc0410a0d18481932ea979cd9ca3e1f9592678cd19a1",
-    "index_hash": "36a9bdc6d4a6a06dcb7d423cd47b468b494888b3aa6e88c41f9b0201cbac224d",
+    "runtime_hash": "4220130fdcc3a8cc3d7d7d2a271759cb678f7c34e808fd2b4e1675d3992727b9",
+    "index_hash": "8154fbac7b07db4fbdbf992bef19c3a559836bc4058ba2c65f0c2c5b0a8587cc",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -172,10 +172,6 @@
       [
         "mengangsur",
         "分期偿还"
-      ],
-      [
-        "angsuran",
-        "分期款"
       ],
       [
         "laga",
@@ -476,10 +472,6 @@
         "航班，飞行"
       ],
       [
-        "kekurangan",
-        "缺乏，不足"
-      ],
-      [
         "antara",
         "在……之间"
       ],
@@ -538,10 +530,6 @@
       [
         "pohon",
         "树"
-      ],
-      [
-        "mengeluarkan",
-        "拿出"
       ],
       [
         "terang",
@@ -1632,8 +1620,8 @@
         "",
         "2026-10-15T08:23:17.641Z",
         "故意；特意",
-        "",
-        ""
+        "sengaja",
+        "故意；有意"
       ],
       [
         "baper",
@@ -1733,16 +1721,6 @@
         "2026-10-08T09:11:57.323Z",
         "支出；花销",
         "keluar",
-        ""
-      ],
-      [
-        "anggaran",
-        3,
-        0,
-        "",
-        "2026-10-15T08:18:05.356Z",
-        "预算",
-        "anggar",
         ""
       ],
       [
@@ -2304,16 +2282,6 @@
         "领导、主席",
         "ketua",
         "领导；主席"
-      ],
-      [
-        "mendapatkan",
-        3,
-        0,
-        "",
-        "2026-10-08T09:13:19.111Z",
-        "获得 / 得到",
-        "dapat",
-        "得到；可以"
       ],
       [
         "pengalaman",
@@ -3266,6 +3234,26 @@
         "专家；擅长"
       ],
       [
+        "lamaran",
+        2,
+        0,
+        "",
+        "2026-10-08T09:20:00.347Z",
+        "申请；求婚",
+        "lamar",
+        "申请；求婚"
+      ],
+      [
+        "omzet",
+        2,
+        0,
+        "",
+        "2026-10-15T07:43:12.074Z",
+        "营业额",
+        "omzet",
+        "营业额"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3364,106 +3352,6 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
-      ],
-      [
-        "diberikan",
-        2,
-        0,
-        "",
-        "2026-10-15T08:29:01.825Z",
-        "被给予；被交给；被提供",
-        "beri",
-        "给"
-      ],
-      [
-        "aset",
-        2,
-        0,
-        "",
-        "2026-10-15T08:28:37.975Z",
-        "资产；（比喻）宝贵的人或东西",
-        "",
-        ""
-      ],
-      [
-        "penanganan",
-        2,
-        0,
-        "",
-        "2026-10-15T08:29:28.517Z",
-        "处理；应对（过程）",
-        "tangan",
-        "手"
-      ],
-      [
-        "bergabung",
-        2,
-        0,
-        "",
-        "2026-10-15T08:28:43.594Z",
-        "加入；合在一起",
-        "gabung",
-        "合在一起；联合"
-      ],
-      [
-        "berjuang",
-        2,
-        0,
-        "",
-        "2026-10-15T08:28:49.212Z",
-        "奋斗；拼搏；斗争",
-        "juang",
-        "斗争；奋斗"
-      ],
-      [
-        "saya pamit",
-        2,
-        0,
-        "",
-        "2026-10-15T08:29:42.658Z",
-        "我先告辞了",
-        "pamit",
-        "告辞；辞行"
-      ],
-      [
-        "anak tunggal",
-        2,
-        0,
-        "",
-        "2026-10-15T08:28:36.278Z",
-        "独生子女",
-        "tunggal",
-        "单一；唯一"
-      ],
-      [
-        "anak sulung",
-        2,
-        0,
-        "",
-        "2026-10-15T08:28:34.342Z",
-        "长子；长女；家里的老大",
-        "sulung",
-        "排行第一的；最早出生的"
-      ],
-      [
-        "anak bungsu",
-        2,
-        0,
-        "",
-        "2026-10-15T08:28:30.759Z",
-        "最小的孩子；老幺",
-        "bungsu",
-        "排行最后的；最小的"
-      ],
-      [
-        "rusa",
-        2,
-        0,
-        "",
-        "2026-10-15T08:29:40.793Z",
-        "鹿",
-        "",
-        ""
       ]
     ],
     "focus": [
@@ -3726,14 +3614,6 @@
         "fuzzy"
       ],
       [
-        "mengeluarkan",
-        "通用",
-        "ngeluarin",
-        "keluar",
-        723,
-        "fuzzy"
-      ],
-      [
         "membayangkan",
         "通用",
         "ngebayangin",
@@ -3840,46 +3720,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-08",
-      "session": "am",
-      "review_core": [
-        "berencana",
-        "nggak kepegang",
-        "nyimak",
-        "kepotong",
-        "nangkep"
-      ],
-      "new_words": [
-        "melempar",
-        "mematuhi",
-        "membela",
-        "mencuri",
-        "kejam",
-        "dilarang",
-        "penjara",
-        "berpartisipasi",
-        "cenderung",
-        "tepat"
-      ]
-    },
-    {
-      "date": "2026-10-08",
-      "session": "pm",
-      "review_core": [
-        "ceria",
-        "melepaskan",
-        "berubah",
-        "ngeh",
-        "kelabakan"
-      ],
-      "new_words": [
-        "tidak sabar",
-        "kontrak",
-        "diterima",
-        "bandingkan"
-      ]
-    },
     {
       "date": "2026-10-09",
       "session": "am",
@@ -4138,105 +3978,40 @@
         "anak bungsu",
         "rusa"
       ]
+    },
+    {
+      "date": "2026-10-15",
+      "session": "pm",
+      "review_core": [
+        "pendapatan",
+        "mendapatkan",
+        "sedangkan",
+        "sengaja",
+        "anggaran"
+      ],
+      "new_words": [
+        "angsuran",
+        "kekurangan",
+        "mengeluarkan"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "new_words": [
-      "balas",
-      "komentar",
-      "mengabaikan"
+      "angsuran",
+      "kekurangan",
+      "mengeluarkan"
     ],
     "review_core": [
-      "keberatan",
-      "baper",
-      "ganjel",
-      "tanyain",
-      "penasaran"
+      "pendapatan",
+      "mendapatkan",
+      "sedangkan",
+      "sengaja",
+      "anggaran"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-15",
-    "vocab": [
-      [
-        "diberikan",
-        "被给予；被交给；被提供",
-        "given; handed over",
-        "beri",
-        "给"
-      ],
-      [
-        "aset",
-        "资产；（比喻）宝贵的人或东西",
-        "asset",
-        "",
-        ""
-      ],
-      [
-        "penanganan",
-        "处理；应对（过程）",
-        "handling; treatment",
-        "tangan",
-        "手"
-      ],
-      [
-        "bergabung",
-        "加入；合在一起",
-        "to join",
-        "gabung",
-        "合在一起；联合"
-      ],
-      [
-        "berjuang",
-        "奋斗；拼搏；斗争",
-        "to struggle; to fight for",
-        "juang",
-        "斗争；奋斗"
-      ],
-      [
-        "saya pamit",
-        "我先告辞了",
-        "I'll take my leave",
-        "pamit",
-        "告辞；辞行"
-      ],
-      [
-        "anak tunggal",
-        "独生子女",
-        "only child",
-        "tunggal",
-        "单一；唯一"
-      ],
-      [
-        "anak sulung",
-        "长子；长女；家里的老大",
-        "eldest child",
-        "sulung",
-        "排行第一的；最早出生的"
-      ],
-      [
-        "anak bungsu",
-        "最小的孩子；老幺",
-        "youngest child",
-        "bungsu",
-        "排行最后的；最小的"
-      ],
-      [
-        "rusa",
-        "鹿",
-        "deer",
-        "",
-        ""
-      ]
-    ],
-    "review_vocab": [
-      "hafal",
-      "menerapkan",
-      "harusnya",
-      "boros",
-      "membatasi"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

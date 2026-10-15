@@ -1744,27 +1744,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "sengaja",
     "cn": "故意；特意",
-    "en": "",
-    "root": "",
+    "en": "on purpose; deliberately",
+    "root": "sengaja",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-08-29 08:00",
+    "last_seen": "2026-10-15 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-29"
+      "2026-08-29",
+      "2026-10-15"
     ],
-    "example": "Aku sengaja datang lebih pagi.",
-    "example_cn": "我特意早点来。",
+    "example": "Aku sengaja nggak bilang harganya ke Ibu. Nggak tega, nanti beliau kepikiran.",
+    "example_cn": "我故意没跟妈妈说价格。不忍心，不然她会一直惦记着。（nggak = tidak）",
     "lesson_occurrences": [
-      "2026-08-29 08:00"
-    ]
+      "2026-08-29 08:00",
+      "2026-10-15 18:00"
+    ],
+    "root_cn": "故意；有意"
   },
   {
     "word": "sekalian",
@@ -4479,22 +4484,27 @@ window.DAILY_VOCAB_DB = [
     "root": "anggar",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 19:00",
-    "last_seen": "2026-08-31 19:00",
+    "last_seen": "2026-10-15 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-10-15"
     ],
-    "example": "Anggaran buat bulan depan kayaknya harus dikurangin.",
-    "example_cn": "下个月的预算看来得压一压。",
+    "example": "Anggaran makan di luar bulan ini sudah habis. Minggu ini kita masak di rumah saja.",
+    "example_cn": "这个月下馆子的预算已经用完了。这周我们就在家做饭吧。",
     "lesson_occurrences": [
-      "2026-08-31 19:00"
-    ]
+      "2026-08-31 19:00",
+      "2026-10-15 18:00"
+    ],
+    "root_cn": "估算（词根很少单用）"
   },
   {
     "word": "biaya",
@@ -10622,23 +10632,27 @@ window.DAILY_VOCAB_DB = [
     "en": "get; obtain; receive",
     "root": "dapat",
     "root_cn": "得到；可以",
-    "example": "Kami mendapatkan informasi baru pagi ini.",
-    "example_cn": "我们今天早上得到了新信息。",
+    "example": "Datang lebih pagi kalau mau mendapatkan tempat duduk di depan. Telat sedikit saja, bisa keduluan orang lain.",
+    "example_cn": "想拿到前排座位就早点来。稍微晚一点，就会被别人抢先。（keduluan，口语：被抢先）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-16 08:00",
+    "last_seen": "2026-10-15 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-10-15"
     ],
     "lesson_occurrences": [
-      "2026-09-16 08:00"
+      "2026-09-16 08:00",
+      "2026-10-15 18:00"
     ]
   },
   {
@@ -10973,23 +10987,27 @@ window.DAILY_VOCAB_DB = [
     "en": "whereas; while",
     "root": "sedang",
     "root_cn": "正在；中等",
-    "example": "Aku bekerja dari kantor, sedangkan dia bekerja dari rumah.",
-    "example_cn": "我在办公室工作，而他在家工作。",
+    "example": "Kakak saya rajin menabung, sedangkan saya gampang tergoda diskon.",
+    "example_cn": "我姐姐很会存钱，而我很容易被打折诱惑。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-17 08:00",
+    "last_seen": "2026-10-15 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-10-15"
     ],
     "lesson_occurrences": [
-      "2026-09-17 08:00"
+      "2026-09-17 08:00",
+      "2026-10-15 18:00"
     ]
   },
   {
@@ -14410,23 +14428,27 @@ window.DAILY_VOCAB_DB = [
     "en": "income; revenue",
     "root": "dapat",
     "root_cn": "得到；获得",
-    "example": "Pendapatan perusahaan bulan ini cukup stabil.",
-    "example_cn": "公司这个月的收入比较稳定。",
+    "example": "Sebagai sopir ojek online, pendapatan Pak Anton tidak tetap. Kadang besar, kadang kecil, tergantung situasinya.",
+    "example_cn": "作为网约摩的司机，Anton 先生的收入不固定，时多时少，要看具体情况。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-26 08:00",
-    "last_seen": "2026-09-26 08:00",
+    "last_seen": "2026-10-15 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-26"
+      "2026-09-26",
+      "2026-10-15"
     ],
     "lesson_occurrences": [
-      "2026-09-26 08:00"
+      "2026-09-26 08:00",
+      "2026-10-15 18:00"
     ]
   },
   {
@@ -21069,23 +21091,26 @@ window.DAILY_VOCAB_DB = [
     "en": "asset",
     "root": "",
     "root_cn": "",
-    "example": "Rumah kontrakan itu aset keluarga kami. Setiap bulan uang sewanya jadi pemasukan tambahan.",
-    "example_cn": "那栋出租房是我们家的资产，每个月的租金就是一笔额外收入。",
+    "example": "Rumah termasuk aset karena harganya biasanya naik, sedangkan harga motor turun setiap tahun.",
+    "example_cn": "房子算资产，因为价格通常会涨，而摩托的价格每年都在跌。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-15"
     ],
     "lesson_occurrences": [
-      "2026-10-15 08:00"
+      "2026-10-15 08:00",
+      "2026-10-15 18:00"
     ]
   },
   {
@@ -21144,23 +21169,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to struggle; to fight for",
     "root": "juang",
     "root_cn": "斗争；奋斗",
-    "example": "Dia berjuang melawan penyakitnya selama dua tahun, dan sekarang sudah sehat lagi.",
-    "example_cn": "他和病魔抗争了两年，现在已经恢复健康了。",
+    "example": "Kami sedang berjuang mengumpulkan uang muka rumah. Untuk sementara, tidak ada liburan dulu.",
+    "example_cn": "我们正在拼命攒房子首付。暂时先不去度假了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-15"
     ],
     "lesson_occurrences": [
-      "2026-10-15 08:00"
+      "2026-10-15 08:00",
+      "2026-10-15 18:00"
     ]
   },
   {
@@ -21219,23 +21247,26 @@ window.DAILY_VOCAB_DB = [
     "en": "eldest child",
     "root": "sulung",
     "root_cn": "排行第一的；最早出生的",
-    "example": "Anak sulung mereka sudah bekerja di Surabaya.",
-    "example_cn": "他们家老大已经在泗水工作了。",
+    "example": "Namanya juga anak sulung, aku yang sering ketiban tugas bayarin sekolah adik.",
+    "example_cn": "谁让我是老大呢，付弟弟妹妹学费的活儿常常落到我头上。（bayarin = membayarkan，ketiban tugas：口语，摊上差事）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-15"
     ],
     "lesson_occurrences": [
-      "2026-10-15 08:00"
+      "2026-10-15 08:00",
+      "2026-10-15 18:00"
     ]
   },
   {
@@ -21286,6 +21317,82 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-15 08:00"
+    ]
+  },
+  {
+    "word": "angsuran",
+    "cn": "分期款；分期付款的每一期",
+    "en": "installment",
+    "root": "angsur",
+    "root_cn": "分次、一点一点地（挪动、偿还）",
+    "example": "Angsurannya cuma Rp500 ribu per bulan, tapi kalau dihitung totalnya, motor itu kemahalan.",
+    "example_cn": "每月分期只要 50 万盾，但算上总价的话，这辆摩托太贵了。（kemahalan = terlalu mahal，口语）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 18:00",
+    "last_seen": "2026-10-15 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 18:00"
+    ]
+  },
+  {
+    "word": "kekurangan",
+    "cn": "缺乏；不足；缺点",
+    "en": "to lack; shortage; weakness",
+    "root": "kurang",
+    "root_cn": "不够；少；不太",
+    "example": "Tim kami lagi kekurangan orang, makanya kerjaan numpuk terus.",
+    "example_cn": "我们团队最近缺人手，所以活儿一直堆着。（lagi = sedang）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 18:00",
+    "last_seen": "2026-10-15 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 18:00"
+    ]
+  },
+  {
+    "word": "mengeluarkan",
+    "cn": "拿出；掏出；花（钱）；发出",
+    "en": "to take out; to spend; to issue",
+    "root": "keluar",
+    "root_cn": "出去；出来",
+    "example": "Bulan ini kami sudah mengeluarkan dua juta rupiah hanya untuk servis motor.",
+    "example_cn": "这个月光是修摩托我们就已经花了两百万盾。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 18:00",
+    "last_seen": "2026-10-15 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 18:00"
     ]
   }
 ];
