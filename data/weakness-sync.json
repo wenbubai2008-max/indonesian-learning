@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T03:29:41.971Z",
+  "updated_at": "2026-10-15T04:09:36.458Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -29454,6 +29454,17 @@
       ],
       "wrong_count": 1,
       "right_streak": 0
+    },
+    "ketiduran": {
+      "word": "ketiduran",
+      "status": "mastered",
+      "updated_at": "2026-10-15T04:09:25.744Z",
+      "display": "ketiduran",
+      "last_review": "2026-10-15T04:09:25.703Z",
+      "last_mastered": "2026-10-15T04:09:25.703Z",
+      "reasons": [],
+      "wrong_count": 0,
+      "right_streak": 3
     }
   }
 }
