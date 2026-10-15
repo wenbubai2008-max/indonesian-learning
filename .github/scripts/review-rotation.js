@@ -243,24 +243,57 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
  const usable=items.filter(x=>!x.blocked&&(x.count<3||x.fresh)&&!(pmRules&&amNew.has(x.word)));
  // Fresh-error quota: errors come back next lesson, but never crowd out the due words (ledger only).
  const errCap=L?Math.min(L.capMax,Math.max(L.capMin,reviewCount-L.minDue)):Infinity;
- const pick=[];let recentUsed=0,heavyUsed=0,focusUsed=0,legacyUsed=0,freshUsed=0; // legacy = taught words without a weakness record (priority 5): at most 1 per lesson
- const fits=(x,ignoreFocusCap)=>{
-  if(x.recent4&&recentCfg&&recentUsed>=recentCfg.max)return false;
-  if(x.count>=3&&heavyUsed>=1)return false;
-  if(x.legacy&&legacyUsed>=1)return false;
-  if(x.fresh&&freshUsed>=errCap)return false;
-  if(!ignoreFocusCap&&focusCfg&&x.focus&&focusUsed>=focusCfg.max)return false;
-  return true;
- };
- const take=x=>{pick.push(x);if(x.recent4)recentUsed++;if(x.count>=3)heavyUsed++;if(x.focus)focusUsed++;if(x.legacy)legacyUsed++;if(x.fresh)freshUsed++};
+ // Selection is a function so a same-root group can be tried as a seed (2026-10-15) and compared with the plain pick.
  const focusMin=focusCfg?focusCfg.min:0;
- for(const x of usable){if(pick.length>=focusMin)break;if(x.focus&&fits(x))take(x)}
- for(const x of usable){if(pick.length>=reviewCount)break;if(!pick.includes(x)&&fits(x))take(x)}
- const notes=[];
- if(pick.length<reviewCount){ // legal fallback only: never mastered, never outside review_pool, never cooling-down words
-  for(const x of usable){if(pick.length>=reviewCount)break;if(x.legacy&&legacyUsed>=1)continue; // the legacy cap is strict even in fallback: fewer words beats padding with unverified ones
-   if(!pick.includes(x)){take(x);notes.push('fallback_used:'+x.word)}}
+ function select(seed){
+  const pick=[],notes=[];let recentUsed=0,heavyUsed=0,focusUsed=0,legacyUsed=0,freshUsed=0; // legacy = taught words without a weakness record (priority 5): at most 1 per lesson
+  const fits=(x,ignoreFocusCap)=>{
+   if(x.recent4&&recentCfg&&recentUsed>=recentCfg.max)return false;
+   if(x.count>=3&&heavyUsed>=1)return false;
+   if(x.legacy&&legacyUsed>=1)return false;
+   if(x.fresh&&freshUsed>=errCap)return false;
+   if(!ignoreFocusCap&&focusCfg&&x.focus&&focusUsed>=focusCfg.max)return false;
+   return true;
+  };
+  const take=x=>{pick.push(x);if(x.recent4)recentUsed++;if(x.count>=3)heavyUsed++;if(x.focus)focusUsed++;if(x.legacy)legacyUsed++;if(x.fresh)freshUsed++};
+  for(const x of usable){if(pick.length>=focusMin)break;if(x.focus&&fits(x))take(x)}
+  for(const x of seed){if(pick.length>=reviewCount)break;if(!pick.includes(x)&&fits(x))take(x)}
+  for(const x of usable){if(pick.length>=reviewCount)break;if(!pick.includes(x)&&fits(x))take(x)}
+  if(pick.length<reviewCount){ // legal fallback only: never mastered, never outside review_pool, never cooling-down words
+   for(const x of usable){if(pick.length>=reviewCount)break;if(x.legacy&&legacyUsed>=1)continue; // the legacy cap is strict even in fallback: fewer words beats padding with unverified ones
+    if(!pick.includes(x)){take(x);notes.push('fallback_used:'+x.word)}}
+  }
+  return {pick,notes,recentUsed,heavyUsed,focusUsed,freshUsed};
  }
+ const base=select([]);
+ // Same-root review groups (2026-10-15, user decision): put 2-3 words sharing a root into one lesson's core review.
+ // Built from usable (eligible, not cooling) words only; a group is applied only if every fresh error of the plain
+ // pick stays and the PM focus quota (focus_quota.min) still holds, so answered-wrong words are never pushed out by a group.
+ const rootOf=new Map();
+ for(const v of (runtime.review_pool||[]))if(Array.isArray(v)){const r=norm(v[6]||'');if(r)rootOf.set(word(v),r)}
+ const byRoot=new Map();
+ for(const x of usable){if(x.legacy)continue;const r=rootOf.get(x.word);if(!r)continue;if(!byRoot.has(r))byRoot.set(r,[]);byRoot.get(r).push(x)}
+ const groups=[...byRoot].filter(([,xs])=>xs.length>=2).map(([root,xs])=>({root,members:xs.slice().sort((a,b)=>b.score-a.score||a.word.localeCompare(b.word))}))
+  .sort((a,b)=>(b.members[0].score+b.members[1].score)-(a.members[0].score+a.members[1].score)||a.root.localeCompare(b.root));
+ const hasPair=p=>{const c=new Map();for(const x of p){const r=rootOf.get(x.word);if(r)c.set(r,(c.get(r)||0)+1)}return [...c].some(([,n])=>n>=2)};
+ let chosenSel=base,groupApplied=hasPair(base.pick)?'already_in_pick':null;
+ if(!groupApplied&&reviewCount>=3){
+  const keepFresh=base.pick.filter(x=>x.fresh).map(x=>x.word);
+  for(const g of groups){
+   for(const size of [3,2]){
+    if(g.members.length<size)continue;
+    const trial=select(g.members.slice(0,size));
+    const inPick=g.members.filter(x=>trial.pick.includes(x)).length;
+    if(inPick>=2&&trial.pick.length===base.pick.length&&keepFresh.every(w=>trial.pick.some(x=>x.word===w))&&trial.focusUsed>=Math.min(focusMin,base.focusUsed)){
+     chosenSel=trial;groupApplied=g.root;break;
+    }
+   }
+   if(groupApplied)break;
+  }
+ }
+ const pick=chosenSel.pick,notes=chosenSel.notes;
+ let {recentUsed,heavyUsed,focusUsed,freshUsed}=chosenSel;
+ const reviewGroups=groups.slice(0,6).map(g=>({root:g.root,words:g.members.map(x=>x.word),in_recommendation:g.members.filter(x=>pick.includes(x)).map(x=>x.word)}));
  const used=new Set(pick.map(x=>x.word));
  // Review cycle (2026-10-14, user decision): when the AM has fewer than 10 new words, the free cards go to review-cycle
  // words, half to the weakest words and half to the words longest unseen in any lesson; either half fills the other's gap.
@@ -290,7 +323,8 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
  return {date,session,review_cycle:cycle,review_pool_size:items.length,recent_window_days:recentCfg?recentCfg.days:null,
   recommended_review:pick.map(x=>x.word),recommended_detail:pick,
   counts:{recent4:recentUsed,focus:focusUsed,heavy_3plus:heavyUsed,fresh_errors:freshUsed,fresh_error_cap:Number.isFinite(errCap)?errCap:null},
-  fresh_errors_deferred:deferred,application_candidates:apps,avoid_in_text:avoid,notes,ranking_top:items.filter(x=>!x.blocked).slice(0,25)};
+  fresh_errors_deferred:deferred,application_candidates:apps,avoid_in_text:avoid,notes,ranking_top:items.filter(x=>!x.blocked).slice(0,25),
+  review_groups:reviewGroups,review_group_applied:groupApplied};
 }
 
 /** All Indonesian text of a lesson (reading, sentences, dialogue, example sentences) plus the core word lists. Lower-cased. */
@@ -301,6 +335,15 @@ function lessonText(L){
  if(L&&L.dialogue&&Array.isArray(L.dialogue.lines))for(const l of L.dialogue.lines)t.push((l&&l.id)||'');
  for(const v of (L&&L.vocab)||[])t.push((v&&(v.example||''))+' '+word(v));
  for(const v of (L&&L.review_vocab)||[])t.push(word(v));
+ return t.join(' \n ').toLowerCase();
+}
+/** Text used for natural recurrence only (2026-10-15): lessonText plus the AM output and PM rewrite reference answers,
+ * where extra review words may also be placed. The exposure ledger keeps using lessonText, so validator cooldowns do
+ * not change. */
+function recurrenceText(L){
+ const t=[lessonText(L)];
+ if(L&&L.output&&L.output.reference_answer)t.push(String(L.output.reference_answer));
+ for(const r of (L&&L.rewrite)||[])t.push(String((r&&r.reference_answer)||''));
  return t.join(' \n ').toLowerCase();
 }
 const reEsc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
@@ -326,7 +369,7 @@ function naturalRecurrence({date,runtime,longHistory,exclude=[],count=12,session
  // For an evening lesson the same day's 08:00 text counts too (2026-10-15 fix: words used that morning were recommended again).
  const lessons=(longHistory||[]).filter(h=>h&&['am','pm'].includes(h.session)&&before(h,date,session)).sort((a,b)=>(a.date+a.session).localeCompare(b.date+b.session));
  for(const h of lessons){
-  const text=lessonText(h),age=Math.round((at-Date.parse(h.date+'T00:00:00Z'))/DAY);
+  const text=recurrenceText(h),age=Math.round((at-Date.parse(h.date+'T00:00:00Z'))/DAY);
   for(const [r,re] of res)if(re.test(text)){last.set(r.word,age);if(age<=14)n14.set(r.word,(n14.get(r.word)||0)+1)}
   // later lessons overwrite earlier ones, so `last` ends up as the most recent appearance
  }
@@ -349,8 +392,8 @@ function overusedInText({date,runtime,longHistory,window=6,max=3,session='am'}){
  const lessons=(longHistory||[]).filter(h=>h&&['am','pm'].includes(h.session)&&before(h,date,session))
   .sort((a,b)=>(a.date+a.session).localeCompare(b.date+b.session)).slice(-window);
  const n=new Map(),res=[...pend].map(w=>[w,wordRe(w)]);
- for(const h of lessons){const text=lessonText(h);for(const [w,re] of res)if(re.test(text))n.set(w,(n.get(w)||0)+1)}
+ for(const h of lessons){const text=recurrenceText(h);for(const [w,re] of res)if(re.test(text))n.set(w,(n.get(w)||0)+1)}
  return [...n].filter(([,c])=>c>=max).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).map(([w,c])=>({word:w,lessons:c}));
 }
 
-module.exports={config,analyze,checkCore,checkPm,checkExposure,activeWords,rank,naturalRecurrence,overusedInText,wordRe,lessonText,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};
+module.exports={config,analyze,checkCore,checkPm,checkExposure,activeWords,rank,naturalRecurrence,overusedInText,wordRe,lessonText,recurrenceText,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};

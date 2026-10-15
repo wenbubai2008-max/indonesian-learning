@@ -31,9 +31,9 @@
 ## 四、复习词（本任务的重点）
 
 1. 运行 `node .github/scripts/reading-review.js --date D --count 40`。输出是按优先级排好的“学过但还没掌握”的词：tier=focus（最弱，最优先）> review > legacy > recurrence；`days_since_any_appearance` 是距上次在课程或泛读里出现的天数；`last_reading` 是它上次出现在哪篇泛读；`second_scene=true` 表示它适合换一个场景第二次出现；`oral=true` 是口语词；`too_recent=true` 的词最近 2 天泛读刚用过，尽量不用。
-2. 从名单靠前的词里挑 **8–12 个**能自然放进这条新闻的词，**至少 3 个 tier=focus**。优先排序靠前的词；若某词的 `last_reading` 场景和今天相同，尽量换别的词。`oral=true` 的词放进文末对话。
+2. 从名单靠前的词里挑 **12–16 个**能自然放进这条新闻的词，**至少 4 个 tier=focus**（2026-10-15 起，原 8–12 个、至少 3 个）。优先排序靠前的词；若某词的 `last_reading` 场景和今天相同，尽量换别的词。`oral=true` 的词放进文末对话。
 3. 只能用名单里的词作为复习词（check 模式会核对 runtime 词池）。词形要用对：可以带 -nya/-lah/-kah/-pun/-ku/-mu 后缀，但不要换成别的派生词（例如名单是 mengatur，正文写 diatur 不算）。
-4. **自然度和事实优先**：不得为了塞词歪曲新闻事实、编造数字或写别扭的句子。放不自然的词就换掉，宁可 8 个也不要硬凑 12 个。
+4. **自然度和事实优先**：不得为了塞词歪曲新闻事实、编造数字或写别扭的句子。放不自然的词就换掉，宁可少几个也不要硬凑。
 5. 泛读复现只是被动接触，不计入核心复习、不影响任何复习资格和掌握状态。不要因此去改任何学习数据。
 
 ## 五、写候选 JSON（`data/extensive-reading-candidate.json`，一个 JSON 对象）
@@ -48,7 +48,7 @@
 - `text`：印尼语正文 **160–220 词**（按空白分词实际统计，建议 180–200），4 段，段与段之间空一行。用自己的话改写成 A2+→B1 难度：句子清楚、常用搭配、不逐句翻译或照抄原文（版权）。
 - `cn`：中文翻译，段落与 text 一一对应（同样空行分段），意思准确完整。
 - `hints`：8–15 个，给真正可能陌生的词或短语：`{term, cn, root?, formation?}`。**term 必须逐字出现在正文或对话里**（大小写可不同，网页按原文查找，对不上就不显示，2026-10-07 曾因此漏掉 2 个）。root/formation 要准确（meN-/peN-/ber-/ke-an/-an 的鼻音变化写清楚，规则见 `docs/LESSON-QUALITY.md` §2）。不要给复习词加 hint。
-- `review_words`：8–12 个 `{word, cn}`，即第四节选定的复习词，每个都必须真的出现在正文或对话里；cn 写它在本文里的意思。
+- `review_words`：12–16 个 `{word, cn}`，即第四节选定的复习词，每个都必须真的出现在正文或对话里；cn 写它在本文里的意思。
 - `dialogue`：`{title, lines:[{speaker, text, cn}]}`，4–6 行（上限 8）。两个普通人（邻居、同事、朋友、家人）在日常场景里聊这条新闻，用自然的雅加达日常口语（aku/kamu、nggak、udah、aja 等，同一段对话人称和口语程度保持一致），每行不超过 30 词，逐行附中文。口语复习词优先放在这里。对话内容必须与正文事实一致。
 
 ## 六、第二遍审稿（写完后、校验前，必须真的动手改稿）
@@ -64,7 +64,7 @@
 ## 七、校验（必须实际运行）
 
 1. `node .github/scripts/publish-extensive-reading-candidate.js check --candidate data/extensive-reading-candidate.json --date D`
-   必须 `status: ok`、无 errors。warnings（复习词不足 8、focus 不足 3、没有对话）应先修改稿件消除；确实无法自然做到时可以保留，但必须在汇报里说明原因。
+   必须 `status: ok`、无 errors。warnings（复习词不足 12、focus 不足 4、没有对话）应先修改稿件消除；确实无法自然做到时可以保留，但必须在汇报里说明原因。
 2. `node .github/scripts/regression-guard.js` 必须通过。
 3. 搭配黑名单（2026-10-14 起）：`node .github/scripts/check-collocations.js --candidate data/extensive-reading-candidate.json`。它对照用户点评里标出过的不自然搭配（`data/lesson-collocation-watchlist.json`），只警告、不阻断；有命中就改句子，改不了在汇报里说明。
 

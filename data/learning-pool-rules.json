@@ -237,7 +237,7 @@
       "enabled": true,
       "effective_date": "2026-10-08",
       "generator": "12:00 泛读由 Claude 定时任务生成（约 11:24 开始），取代原 ChatGPT 任务；发布仍走 sync-daily-vocab.yml 的 extensive_reading_release，一天只发一篇。",
-      "rule": "先选一条 0–3 天内的真实新闻，再用 node .github/scripts/reading-review.js --date D 取复习词名单（focus_pool > review_pool > 旧词 > recurrence_pool，按距上次在课程或泛读出现的天数排序；最近 2 天泛读刚用过的词降权；3–10 天前只在一篇泛读里出现过的词加分，让同一个弱词隔几天换场景再出现），从中挑 8–12 个能自然放进这条新闻的词，至少 3 个 focus_pool 词；写进正文或文末 4–8 行口语小对话（两个普通人聊这条新闻，口语弱词放这里），并在 review_words 中列出。",
+      "rule": "先选一条 0–3 天内的真实新闻，再用 node .github/scripts/reading-review.js --date D 取复习词名单（focus_pool > review_pool > 旧词 > recurrence_pool，按距上次在课程或泛读出现的天数排序；最近 2 天泛读刚用过的词降权；3–10 天前只在一篇泛读里出现过的词加分，让同一个弱词隔几天换场景再出现），从中挑 12–16 个能自然放进这条新闻的词（2026-10-15 起，原 8–12），至少 4 个 focus_pool 词（原 3）；写进正文或文末 4–8 行口语小对话（两个普通人聊这条新闻，口语弱词放这里），并在 review_words 中列出。",
       "not_counted": "泛读复现只算被动接触：不计入核心复习次数，不改变复习资格、冷却、轮换、配额和 mastered；不得为了塞词歪曲新闻事实或牺牲自然度。",
       "schema": "可选字段 review_words=[{word, cn}]（1–20 个，每个必须真的出现在正文或对话中，可带 -nya/-lah/-kah/-pun/-ku/-mu）；dialogue={title?, lines:[{speaker, text, cn}]}（4–8 行，每行不超过 30 词）。旧文章没有这两个字段，照常显示。",
       "validator": "publish-extensive-reading-candidate.js：结构错误、提示词 term 不在原文（2026-10-07 曾漏显示 2 个提示）、同一天已发布过泛读，均阻止发布；check 模式另外报告复习词覆盖率（不足 8 个、focus 不足 3 个、没有对话只警告），复习词不在已学未掌握词池里则报错。"
@@ -250,16 +250,17 @@
       "soft_guideline": "自然度优先：名单上写不自然的词跳过换下一个，不得为凑数写别扭的句子或引入未正式教过的新词；不计入核心复习，不改变冷却、轮换、配额和掌握状态。覆盖度由 report-learning-health.js 的 3c 小节度量。",
       "pool": "runtime.recurrence_pool = [[word, priority, cn], ...]，最多 500 个，是 review_pool 之外的其余 A ∩ D 词（含剩余旧词）；不是复习资格池，stats.recurrence_pool_total_full / recurrence_pool_exposed 记录数量。",
       "min_per_lesson": {
-        "am": 5,
-        "pm": 8
+        "am": 10,
+        "pm": 15
       },
-      "list_size": 20,
-      "gate": "2026-10-15（用户要求改进复习覆盖）：旧的“早课至少2个、晚课至少3个”软规则实际没有执行（10-08至10-15共15节课，6节一个没带、只有3节达标，同一批46天没出现的词一直排在最前）。现在由 node .github/scripts/check-recurrence.js --candidate <课程JSON> --date D --session am|pm 在推送前检查：名单里的词出现在阅读、对话、sentences、词卡例句中（可带 -nya/-lah/-kah/-pun/-ku/-mu）的数量须达到 min_per_lesson，不够就改稿再查。只在生成端执行，不进入 Validator、不卡发布。",
+      "list_size": 30,
+      "gate": "2026-10-15（用户要求改进复习覆盖）：旧的“早课至少2个、晚课至少3个”软规则实际没有执行（10-08至10-15共15节课，6节一个没带、只有3节达标，同一批46天没出现的词一直排在最前）。现在由 node .github/scripts/check-recurrence.js --candidate <课程JSON> --date D --session am|pm 在推送前检查：名单里的词出现在课文（见 placement）中（可带 -nya/-lah/-kah/-pun/-ku/-mu）的数量须达到 min_per_lesson（2026-10-15 首版早 5、晚 8，同日用户决定提到早 10、晚 15），不够就改稿再查。只在生成端执行，不进入 Validator、不卡发布。",
       "overuse": {
         "window_lessons": 6,
         "max_lessons": 3,
         "rule": "最近6节课的课文里已出现≥3次的待复习词列在 overused_in_text：不禁止（常用词要写自然），但不要为了复现刻意写进去，把篇幅留给久未出现的词。只警告。"
-      }
+      },
+      "placement": "2026-10-15 用户决定：在原有基础上增加约 40–50%，新增的放在词卡例句、早课 sentences、早课 output 参考答案、晚课 rewrite 参考答案里；阅读和对话已接近合适密度（每百词约 9 个），不再刻意加密。文本范围（recurrenceText）= 阅读、对话、sentences、词卡例句、AM output.reference_answer、PM rewrite[].reference_answer；题目选项不算。"
     },
     "legacy_unverified_review": {
       "enabled": true,
@@ -293,9 +294,18 @@
     "review_pool_rotation": {
       "enabled": true,
       "effective_date": "2026-10-09",
-      "rule": "runtime.review_pool 在原有 60 个（focus 优先、按优先级排序）之后，再追加最多 40 个“最久没在课程中出现”的其他 A ∩ D 词（daily-vocab last_seen 最早的优先），让所有学过未掌握的词都能轮到核心复习。原 60 个里约 9 成是 priority-1 词，其余约 370 个词此前永远进不了核心复习。",
+      "rule": "runtime.review_pool 在原有 60 个（focus 优先、按优先级排序）之后，再追加最多 160 个“最久没在课程中出现”的其他 A ∩ D 词（daily-vocab last_seen 最早的优先），让所有学过未掌握的词都能轮到核心复习。2026-10-08 起为 40 个，2026-10-15 用户决定扩大一倍（备选约 119 → 约 239）。原 60 个里约 9 成是 priority-1 词。",
       "not_changed": "A ∩ D 定义与计数、冷却、轮换、错词配额、focus 配额、课程合同都不变；选哪几个仍由 rank-review-candidates.js 的排序决定（久未出现加分封顶 30，真实新错 +100）。",
-      "why": "2026-10-08 用户决定放宽复习范围"
+      "why": "2026-10-08 用户决定放宽复习范围",
+      "max": 160
+    },
+    "review_groups": {
+      "enabled": true,
+      "effective_date": "2026-10-15",
+      "rule": "用户决定：每节课的核心复习（早课 review_vocab、晚课 source_group=review）里放 1 组 2–3 个同词根的词。排序脚本 rank-review-candidates.js 在当节可用（合法、未冷却）的复习词里按 runtime.review_pool 第 7 列 root 分组，输出 review_groups，并在不挤掉真实新错、不破坏晚课 focus 配额的前提下把最优的一组放进 recommended_review（review_group_applied）。",
+      "no_root_group": "当节没有可用同词根组时，写课时可选 1 对反义词，或 1 对近义词（近义词必须配辨析题并写清区别）；这部分靠判断，不做检查。",
+      "gate": "check-recurrence.js：排序脚本列出了可用同词根组，而课程核心复习词里没有任何两个词同词根 → 不通过，改稿再查。只在生成端执行，不进 Validator。",
+      "not_changed": "复习词数量、资格、冷却、错词配额、focus 配额、校验器都不变；成组的词占原有名额。"
     }
   }
 }

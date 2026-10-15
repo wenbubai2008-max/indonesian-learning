@@ -277,10 +277,11 @@ for(const x of [...focusExposed.map(f=>reviewByKey.get(key(f[0]))).filter(Boolea
 }
 reviewExposed=mergedReview;
 // Rotation slots (2026-10-08): the 60 slots above are ~90% priority-1 (quick_wrong) words, so the other ~370 A ∩ D
-// words could never become a core review. Add up to 40 more, the ones that have gone longest without appearing in a
-// lesson (daily-vocab last_seen, oldest first; ties: higher priority, then word). The ranker's stale bonus, cooldowns
-// and quotas then decide; every A ∩ D word eventually rotates in. Counts used by the profile stay unchanged.
-const REVIEW_ROTATION_MAX=40;
+// words could never become a core review. Add up to 160 more (40 until 2026-10-15, then doubled at the user's request),
+// the ones that have gone longest without appearing in a lesson (daily-vocab last_seen, oldest first; ties: higher
+// priority, then word). The ranker's stale bonus, cooldowns and quotas then decide; every A ∩ D word eventually rotates
+// in. Counts used by the profile stay unchanged.
+const REVIEW_ROTATION_MAX=160;
 const rotationSeen=new Set(reviewExposed.map(x=>key(x[0])));
 const lastSeenOf=x=>String((dailyMeta.get(key(x[0]))||{}).last_seen||'');
 const rotationExposed=reviewFull.filter(x=>!rotationSeen.has(key(x[0])))
