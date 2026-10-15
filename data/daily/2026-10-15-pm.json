@@ -1,0 +1,358 @@
+{
+  "date": "2026-10-15",
+  "session": "pm",
+  "time": "18:00",
+  "day": 55,
+  "title": "18:00 晚课｜分期买摩托？先算算预算",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "angsuran",
+    "kekurangan",
+    "mengeluarkan"
+  ],
+  "vocab": [
+    {
+      "word": "angsuran",
+      "display": "angsuran",
+      "audio_text": "angsuran",
+      "cn": "分期款；分期付款的每一期",
+      "en": "installment",
+      "root": "angsur",
+      "root_cn": "分次、一点一点地（挪动、偿还）",
+      "formation": "angsur（词根）→ mengangsur（meN- + angsur：分期偿还，偏书面）→ angsuran（-an：每一期要付的钱）。常见搭配：bayar angsuran（付分期款）、angsuran per bulan（每月分期）、angsuran motor / rumah（摩托 / 房子分期）、telat bayar angsuran（分期迟交）。",
+      "example": "Angsurannya cuma Rp500 ribu per bulan, tapi kalau dihitung totalnya, motor itu kemahalan.",
+      "example_cn": "每月分期只要 50 万盾，但算上总价的话，这辆摩托太贵了。（kemahalan = terlalu mahal，口语）",
+      "synonym_note": "angsuran vs cicilan：意思基本相同。angsuran 偏正式，银行、合同、贷款广告里常见；日常聊天更多说 cicilan（Cicilan motorku tinggal lima bulan.）。angsuran 是“每期的钱”，utang 是“欠的债”总称。口语说法：cicilan；“分期付”说 nyicil（Beli HP-nya nyicil aja.）；和银行、财务打交道时用 angsuran。",
+      "usage_note": "看分期广告时先问两件事：angsurannya berapa per bulan（每月多少）、berapa bulan（多少期）。迟交常被罚款：Kalau telat bayar angsuran, kena denda.",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kekurangan",
+      "display": "kekurangan",
+      "audio_text": "kekurangan",
+      "cn": "缺乏；不足；缺点",
+      "en": "to lack; shortage; weakness",
+      "root": "kurang",
+      "root_cn": "不够；少；不太",
+      "formation": "ke-an + kurang → kekurangan：①（动词用法）缺少，后面直接接缺的东西：kekurangan uang / waktu / orang；②（名词）不足、缺点：kelebihan dan kekurangan（优点和缺点）。反义词 kelebihan（多出；优点）。",
+      "example": "Tim kami lagi kekurangan orang, makanya kerjaan numpuk terus.",
+      "example_cn": "我们团队最近缺人手，所以活儿一直堆着。（lagi = sedang）",
+      "synonym_note": "kekurangan vs kurang：kurang 是“不够、不太”，作谓语或修饰形容词（Uangnya kurang. / Kurang enak.）；kekurangan 后面直接接缺的东西（kekurangan uang），或作名词“缺点”（Apa kekurangan HP ini?）。口语说法：日常常直接说 kurang 或 nggak cukup（Duitnya nggak cukup.）；正式表达、谈优缺点时用 kekurangan。",
+      "usage_note": "kekurangan 后面不加 dengan：说 kekurangan uang，不说 kekurangan dengan uang。固定句：Setiap orang punya kelebihan dan kekurangan.（人各有长短。）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengeluarkan",
+      "display": "mengeluarkan",
+      "audio_text": "mengeluarkan",
+      "cn": "拿出；掏出；花（钱）；发出",
+      "en": "to take out; to spend; to issue",
+      "root": "keluar",
+      "root_cn": "出去；出来",
+      "formation": "meN- + keluar + -kan → mengeluarkan（k 开头，meN- 变 meng-，k 脱落）。派生：dikeluarkan（被拿出；被开除）、pengeluaran（支出，和 pemasukan / pendapatan 相对）。常见搭配：mengeluarkan uang / biaya（花钱）、mengeluarkan HP dari tas（从包里拿出手机）、mengeluarkan suara（发出声音）、mengeluarkan aturan baru（发布新规定）。",
+      "example": "Bulan ini kami sudah mengeluarkan dua juta rupiah hanya untuk servis motor.",
+      "example_cn": "这个月光是修摩托我们就已经花了两百万盾。",
+      "synonym_note": "mengeluarkan uang vs menghabiskan uang：mengeluarkan uang 是“花出去、支出”，中性；menghabiskan uang 是“把钱花光”。和 pengeluaran（支出）相对的是 pemasukan（进账）。口语说法：ngeluarin（Aku udah ngeluarin banyak buat motor.）；正式场合和书面用 mengeluarkan。",
+      "usage_note": "后面直接接被拿出来的东西：mengeluarkan uang / KTP / surat。注意被动 dikeluarkan dari sekolah 是“被学校开除”。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "pendapatan",
+      "display": "pendapatan",
+      "audio_text": "pendapatan",
+      "cn": "收入",
+      "en": "income; earnings",
+      "root": "dapat",
+      "root_cn": "得到；获得；能",
+      "formation": "peN-an + dapat → pendapatan（peN- 遇 d 变 pen-）。同词根：mendapatkan（得到）、dapat / dapet（得到；能）、pendapat（意见，注意别混）。常见搭配：pendapatan per bulan（月收入）、pendapatan tetap（固定收入）、pendapatan tambahan（额外收入）。",
+      "example": "Sebagai sopir ojek online, pendapatan Pak Anton tidak tetap. Kadang besar, kadang kecil, tergantung situasinya.",
+      "example_cn": "作为网约摩的司机，Anton 先生的收入不固定，时多时少，要看具体情况。",
+      "synonym_note": "pendapatan vs gaji vs pemasukan：gaji 是固定工资；pendapatan 是收入的总称，偏正式，填表、报税、统计常用（Berapa pendapatan Anda per bulan?）；pemasukan 是“进账”，常和 pengeluaran（支出）成对说（今天早课 aset 例句里用过 pemasukan）。口语说法：日常常说 penghasilan、pemasukan，或直接说 gaji；填表、正式谈话用 pendapatan。",
+      "usage_note": "和 pendapat（意见）只差一个 -an，别说成 “Apa pendapatan kamu soal ini?”（应是 pendapat）。今晚与 mendapatkan 组成同词根组：dapat → mendapatkan（得到）→ pendapatan（得到的钱 = 收入）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mendapatkan",
+      "display": "mendapatkan",
+      "audio_text": "mendapatkan",
+      "cn": "获得；得到",
+      "en": "to get; to obtain",
+      "root": "dapat",
+      "root_cn": "得到；获得；能",
+      "formation": "meN- + dapat + -kan → mendapatkan（d 开头变 men-，d 不脱落）。同词根：dapat（得到；能）、pendapatan（收入）、pendapat（意见）。常见搭配：mendapatkan bonus / diskon / informasi / pekerjaan / tempat duduk。",
+      "example": "Datang lebih pagi kalau mau mendapatkan tempat duduk di depan. Telat sedikit saja, bisa keduluan orang lain.",
+      "example_cn": "想拿到前排座位就早点来。稍微晚一点，就会被别人抢先。（keduluan，口语：被抢先）",
+      "synonym_note": "mendapatkan vs dapat vs memperoleh：三个都可表示“得到”。dapat 口语里最常用（Aku dapat bonus!）；mendapatkan 是标准语；memperoleh 更书面（memperoleh gelar sarjana）。口语说法：dapet（Aku dapet diskon, lho!）；写邮件、正式说明用 mendapatkan。",
+      "usage_note": "同词根组记忆：mendapatkan 是动作“拿到”，pendapatan 是结果“拿到的钱 = 收入”。Rudi 要等 mendapatkan bonus akhir tahun（拿到年终奖）再买摩托。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "sedangkan",
+      "display": "sedangkan",
+      "audio_text": "sedangkan",
+      "cn": "而；然而（对比两件事）",
+      "en": "whereas; while",
+      "root": "sedang",
+      "root_cn": "正在；中等",
+      "formation": "sedang + -kan → sedangkan，连词，连接两个对比的分句：A …, sedangkan B …。前面通常加逗号。",
+      "example": "Kakak saya rajin menabung, sedangkan saya gampang tergoda diskon.",
+      "example_cn": "我姐姐很会存钱，而我很容易被打折诱惑。",
+      "synonym_note": "sedangkan vs tetapi：sedangkan 只做“对比”，前后通常是两个不同的主语或两件并列的事（Pendapatan naik, sedangkan pengeluaran juga naik.）；tetapi 表示“转折、出乎意料”（Saya lapar, tetapi tidak sempat makan.），这里不能换成 sedangkan。口语说法：口语常用 kalau 或 sementara 来对比（Aku suka nabung, kalau dia boros banget.）；书面和正式说明用 sedangkan。",
+      "usage_note": "结构：主语A + 情况, sedangkan + 主语B + 情况。不单独放在句首回应对方。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "sengaja",
+      "display": "sengaja",
+      "audio_text": "sengaja",
+      "cn": "故意；特意",
+      "en": "on purpose; deliberately",
+      "root": "sengaja",
+      "root_cn": "故意；有意",
+      "formation": "sengaja（词根，直接用作副词）→ tidak / nggak sengaja（不小心、无意）→ disengaja（被故意做的：Itu tidak disengaja.）→ kesengajaan（故意性）。",
+      "example": "Aku sengaja nggak bilang harganya ke Ibu. Nggak tega, nanti beliau kepikiran.",
+      "example_cn": "我故意没跟妈妈说价格。不忍心，不然她会一直惦记着。（nggak = tidak）",
+      "synonym_note": "sengaja 有两个方向：做坏事是“故意”（Dia sengaja datang terlambat.），做好事是“特意”（Mega sengaja menyisihkan sebagian gajinya.）。反义：tidak sengaja（不小心）。口语说法：sengaja 本身口语、书面都用，口语常说 nggak sengaja（Sori, nggak sengaja!）。",
+      "usage_note": "道歉万能句：Maaf, saya tidak sengaja.（对不起，我不是故意的。）sengaja 放在动词前：sengaja menyimpan，不说 menyimpan sengaja。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "anggaran",
+      "display": "anggaran",
+      "audio_text": "anggaran",
+      "cn": "预算",
+      "en": "budget",
+      "root": "anggar",
+      "root_cn": "估算（词根很少单用）",
+      "formation": "anggar → anggaran（-an）；menganggarkan（把……列入预算、拨出预算）。常见搭配：membuat / menyusun anggaran（做预算）、anggaran bulanan（月预算）、di luar anggaran（预算外）、melebihi anggaran（超预算）、anggaran negara（国家预算）。",
+      "example": "Anggaran makan di luar bulan ini sudah habis. Minggu ini kita masak di rumah saja.",
+      "example_cn": "这个月下馆子的预算已经用完了。这周我们就在家做饭吧。",
+      "synonym_note": "anggaran vs biaya：anggaran 是事先计划好能花多少；biaya 是某件事实际要花的费用（biaya sekolah, biaya servis）。口语说法：很多人直接说英语 budget（Budget-nya berapa?）；家庭理财文章、单位和政府文件用 anggaran。",
+      "usage_note": "提醒对方“超预算了”：Wah, ini sudah melebihi anggaran. / 口语：Udah over budget, nih.",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "aset",
+      "display": "aset",
+      "audio_text": "aset",
+      "cn": "资产；（比喻）宝贵的人或东西",
+      "en": "asset",
+      "root": "",
+      "root_cn": "",
+      "formation": "借自英语 asset，单纯词。今天08:00新学。常见搭配：aset keluarga（家庭资产）、aset jangka panjang（长期资产）、mengelola aset（管理资产）；比喻人：Dia aset berharga bagi tim.",
+      "example": "Rumah termasuk aset karena harganya biasanya naik, sedangkan harga motor turun setiap tahun.",
+      "example_cn": "房子算资产，因为价格通常会涨，而摩托的价格每年都在跌。",
+      "synonym_note": "aset vs barang：理财话题里常把东西分成 aset（会保值、能带来收入的，如房子、土地）和 barang konsumsi（用着会贬值的消费品，如摩托、手机）。harta 是日常说的“财产”（harta warisan 遗产）。口语说法：aset 本身口语也直接用，没有另外的口语形。",
+      "usage_note": "今天08:00新学（早课阅读里 Pak Hendra 说屋后的地是 aset keluarga）。今晚用在“摩托算不算资产”的讨论里。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "anak sulung",
+      "display": "anak sulung",
+      "audio_text": "anak sulung",
+      "cn": "长子；长女；家里的老大",
+      "en": "eldest child",
+      "root": "sulung",
+      "root_cn": "排行第一的；最早出生的",
+      "formation": "anak + sulung。今天08:00新学。也说 si sulung（老大）、kakak sulung（大哥 / 大姐）。排行：sulung（老大）— tengah（中间的）— bungsu（老幺）。",
+      "example": "Namanya juga anak sulung, aku yang sering ketiban tugas bayarin sekolah adik.",
+      "example_cn": "谁让我是老大呢，付弟弟妹妹学费的活儿常常落到我头上。（bayarin = membayarkan，ketiban tugas：口语，摊上差事）",
+      "synonym_note": "anak sulung vs anak pertama：意思一样，anak sulung 稍正式，介绍家庭、写文章常见；日常聊天更常说 anak pertama（Aku anak pertama dari tiga bersaudara.）。sulung 不分男女。口语说法：anak pertama / si sulung。",
+      "usage_note": "今天08:00新学（早课阅读里 Rina 是 anak sulung）。今晚用在 Rudi 身上：作为老大，他帮父母负担弟弟的学费。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berjuang",
+      "display": "berjuang",
+      "audio_text": "berjuang",
+      "cn": "奋斗；拼搏；斗争",
+      "en": "to struggle; to fight for",
+      "root": "juang",
+      "root_cn": "斗争；奋斗",
+      "formation": "ber- + juang → berjuang。今天08:00新学。派生：perjuangan（奋斗的过程）、pejuang（斗士）。常见搭配：berjuang untuk…（为……奋斗）、berjuang melawan penyakit（与疾病抗争）、berjuang mengumpulkan uang（努力攒钱）。",
+      "example": "Kami sedang berjuang mengumpulkan uang muka rumah. Untuk sementara, tidak ada liburan dulu.",
+      "example_cn": "我们正在拼命攒房子首付。暂时先不去度假了。",
+      "synonym_note": "berjuang vs berusaha：berjuang 语气重，用于长期、艰难的目标；berusaha 是日常的“努力、尽力”（Aku berusaha datang tepat waktu.）。口语说法：口语常用名词开玩笑：Bangun pagi itu perjuangan banget!（早起真是一场苦战！）；berjuang 本身口语也用（lagi berjuang ngumpulin DP）。",
+      "usage_note": "今天08:00新学（早课阅读：Pak Hendra 夫妇当年 berjuang 供孩子上大学）。今晚用在“为首付努力攒钱”的场景。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Kamis malam, Rudi dan istrinya, Mega, menghitung anggaran bulan depan. Karena motor lamanya sering mogok, Rudi ingin membeli motor baru dengan angsuran Rp900 ribu per bulan. Pendapatan mereka cukup stabil, sedangkan pengeluaran rumah tangga terus naik. Setiap bulan mereka mengeluarkan uang untuk sewa rumah, belanja dapur, dan biaya sekolah adik Rudi, karena Rudi anak sulung. Menurut catatan Mega, kalau ditambah angsuran motor, mereka akan kekurangan uang sebelum gajian. Dari awal tahun, Mega sengaja menyisihkan sebagian gajinya untuk uang muka rumah. “Motor bukan aset, Mas. Harganya turun setiap tahun,” katanya. Rudi akhirnya setuju menunda. Motor lamanya diservis dulu, dan motor baru dibeli setelah dia mendapatkan bonus akhir tahun.",
+    "cn": "周四晚上，Rudi 和妻子 Mega 在计算下个月的预算。因为旧摩托经常抛锚，Rudi 想分期买一辆新摩托，每月分期 90 万盾。他们的收入还算稳定，而家里的开支却一直在涨。每个月他们都要花钱付房租、买菜，还要付 Rudi 弟弟的学费，因为 Rudi 是家里的老大。按 Mega 的记账本算，如果再加上摩托分期，他们在发工资前就会缺钱。而且从年初开始，Mega 就特意把一部分工资存起来，准备付房子的首付。“老公，摩托不是资产。它的价格每年都在跌。”她说。Rudi 最后同意先不买。旧摩托先拿去修，等他拿到年终奖之后再买新摩托。"
+  },
+  "dialogue": {
+    "title": "周四晚上：Rudi 和 Mega 在客厅算账",
+    "lines": [
+      {
+        "speaker": "Rudi",
+        "id": "Meg, kalau cicilannya sembilan ratus ribu sebulan, masih aman, kan?",
+        "cn": "Mega，要是每月分期九十万盾，还撑得住吧？（cicilan = angsuran，口语更常用）"
+      },
+      {
+        "speaker": "Mega",
+        "id": "Aman dari mana, Mas? Tiap bulan kita udah ngeluarin hampir semua gaji.",
+        "cn": "哪里撑得住啊，老公？每个月我们几乎已经把工资全花出去了。（udah = sudah，ngeluarin = mengeluarkan）"
+      },
+      {
+        "speaker": "Rudi",
+        "id": "Masa sih? Perasaan pengeluaran kita nggak banyak-banyak amat.",
+        "cn": "不会吧？我感觉我们花得也没那么多啊。（nggak = tidak）"
+      },
+      {
+        "speaker": "Mega",
+        "id": "Coba lihat catatanku. Sewa, belanja dapur, uang sekolah adikmu. Kalau ditambah cicilan, akhir bulan kita bisa kepepet.",
+        "cn": "你看看我的账本：房租、买菜、你弟弟的学费。再加上分期，到月底我们就会很紧。（catatanku = catatan saya）"
+      },
+      {
+        "speaker": "Rudi",
+        "id": "Iya juga, sih. Tapi motorku udah sering mogok. Repot banget tiap pagi.",
+        "cn": "也是。可我的摩托老是抛锚，每天早上都特别麻烦。"
+      },
+      {
+        "speaker": "Mega",
+        "id": "Diservis dulu aja. Kita kan lagi berjuang ngumpulin DP rumah. Sayang kalau tabungannya kepake buat motor.",
+        "cn": "先拿去修吧。我们不是正在拼命攒房子首付嘛。存款要是用在摩托上就可惜了。（aja = saja，lagi = sedang，ngumpulin = mengumpulkan，DP = uang muka，kepake = terpakai，buat = untuk）"
+      },
+      {
+        "speaker": "Rudi",
+        "id": "Oke, aku tunggu bonus akhir tahun aja. Seenggaknya kita nggak nambah utang.",
+        "cn": "好，那我等年终奖吧。起码我们不用再多背债。（seenggaknya = setidaknya，nambah = menambah）"
+      },
+      {
+        "speaker": "Mega",
+        "id": "Nah, gitu dong. Asal jangan tiba-tiba pulang bawa motor baru, ya!",
+        "cn": "这就对了嘛。只要你别突然骑辆新摩托回家就行！（gitu = begitu，bawa = membawa）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：用 angsuran 和 kekurangan（可加 mengeluarkan）写 2–3 句：朋友想分期买一部新手机，你劝他先算一算。",
+      "reference_answer": "Angsuran HP itu kelihatannya kecil, tapi coba hitung dulu pengeluaranmu tiap bulan. Kalau ditambah angsuran, kamu bisa kekurangan uang sebelum gajian. Nggak kebayang deh kalau tiap akhir bulan harus pinjam ke teman.",
+      "reference_cn": "那部手机的分期看起来不多，但你先算算每个月的开支。再加上分期，你可能在发工资前就缺钱了。真不敢想每到月底都要找朋友借钱。（nggak = tidak）"
+    },
+    {
+      "task": "弱词应用：用 sedangkan 和 pendapatan 写 2 句，对比你和一位家人（或朋友）的收入情况，并说说这带来的一个小习惯。",
+      "reference_answer": "Pendapatanku tiap bulan tetap, sedangkan pendapatan adikku tergantung pesanan di tokonya. Makanya tiap malam dia rapihin catatan keuangannya, biar uang pribadi nggak ketukar sama uang toko.",
+      "reference_cn": "我每个月的收入是固定的，而我弟弟的收入要看他店里的订单。所以他每天晚上都整理账目，免得私人的钱和店里的钱混在一起。（rapihin = merapikan，nggak = tidak，sama = dengan）"
+    },
+    {
+      "task": "早课词迁移：用今天08:00新学的 aset 和 berjuang，再加上 sengaja，说说你为一个大目标存钱的计划（2 句）。",
+      "reference_answer": "Tahun ini aku lagi berjuang nabung buat DP rumah, soalnya rumah itu aset jangka panjang. Aku sengaja nggak ambil cicilan apa-apa dulu, biar nggak ngeribetin rencana itu.",
+      "reference_cn": "今年我正在努力存房子首付，因为房子是长期资产。我特意先不办任何分期，免得把这个计划搞复杂。（lagi = sedang，nabung = menabung，DP = uang muka，ngeribetin = 把事情搞复杂）"
+    },
+    {
+      "task": "情景回应：同事问你拿到年终奖打算怎么花。用 mendapatkan 和 mengeluarkan 回答 2–3 句。",
+      "reference_answer": "Kalau nanti mendapatkan bonus, aku mau servis motor dulu. Sisanya langsung masuk tabungan, sebelum keburu habis buat jajan. Aku belum mau mengeluarkan banyak uang buat liburan; liburan bisa nyusul tahun depan.",
+      "reference_cn": "等拿到奖金，我先去修摩托。剩下的直接存起来，免得还没反应过来就花在零食上了。我暂时不想在度假上花很多钱，度假明年再补上。（keburu habis：还没来得及就先花光了，nyusul：随后再跟上）"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "选最自然的一项：Bulan ini kami sudah ___ hampir tiga juta rupiah untuk servis motor.",
+        "options": [
+          "keluar",
+          "mengeluarkan",
+          "pengeluaran",
+          "dikeluarkan"
+        ],
+        "answer_index": 1,
+        "answer": "mengeluarkan",
+        "explain": "主语 kami 是花钱的人，后面直接接 hampir tiga juta rupiah（钱），要用及物主动形 mengeluarkan（花出）。keluar 是不及物的“出去”，不能直接带钱；pengeluaran 是名词“支出”；dikeluarkan 是被动形，主语应是钱（Uangnya sudah dikeluarkan.）。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Rudi ingin membeli motor baru, ___ Mega ingin menabung untuk uang muka rumah.",
+        "options": [
+          "karena",
+          "sehingga",
+          "supaya",
+          "sedangkan"
+        ],
+        "answer_index": 3,
+        "answer": "sedangkan",
+        "explain": "前后是两个人的不同想法，属于对比，用 sedangkan（而）。karena 表示原因、sehingga 表示结果、supaya 表示目的，放进去都说不通：Mega 存钱不是 Rudi 想买摩托的原因、结果或目的。"
+      },
+      {
+        "type": "choice",
+        "prompt": "办银行贷款时，表格上有一题：“Berapa ___ Anda per bulan?”（您每月收入多少？）",
+        "options": [
+          "pendapatan",
+          "pendapat",
+          "mendapatkan",
+          "pengeluaran"
+        ],
+        "answer_index": 0,
+        "answer": "pendapatan",
+        "explain": "问“月收入”用名词 pendapatan，填表的固定问法是 Berapa pendapatan Anda per bulan?。pendapat 是“意见”（Apa pendapat Anda?），只差一个 -an，最容易混；mendapatkan 是动词“得到”，不能直接作名词；pengeluaran 是“支出”，意思正好相反。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kalau ditambah angsuran motor, kami bisa ______ uang sebelum gajian.（缺；不够）",
+        "answer": "kekurangan",
+        "explain": "kekurangan + 缺的东西：kekurangan uang（缺钱），中间不加 dengan。口语也常说 duitnya nggak cukup，但这句是标准语，用 kekurangan。对应阅读里 Mega 算账的结论。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Maaf, saya tidak ______ menumpahkan kopimu.（故意）",
+        "answer": "sengaja",
+        "explain": "tidak sengaja = 不是故意的，道歉时的固定说法。sengaja 放在动词 menumpahkan（洒出）前面。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我们得先做一个月度预算。",
+        "tokens": [
+          "Kami",
+          "harus",
+          "membuat",
+          "anggaran",
+          "bulanan",
+          "dulu."
+        ],
+        "answer": "Kami harus membuat anggaran bulanan dulu.",
+        "answer_cn": "我们得先做一个月度预算。",
+        "explain": "membuat anggaran = 做预算（也可说 menyusun anggaran）；bulanan（每月的）放在 anggaran 后面修饰它；dulu（先）放句末。"
+      }
+    ],
+    "self_check": [
+      "不看中文：angsuran、kekurangan、mengeluarkan 这 3 个新词，有没有哪个我 3 秒内说不出意思？",
+      "pendapatan 和 mendapatkan 这对同词根的词，我能马上分出哪个是“收入”、哪个是“得到”吗？",
+      "sedangkan：我知道它只用来对比两件事，不能代替 tetapi 表示转折吗？",
+      "sengaja、anggaran：看到中文“故意”“预算”，我能 3 秒内说出这两个印尼语词吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语，答不出的回看词卡再说一遍。",
+      "同词根与对比输出：用 mendapatkan 和 pendapatan 各说一句关于你自己工作的话；再用 sedangkan 把你和一位家人花钱的习惯对比一下。",
+      "早课词迁移：用今天08:00新学的 aset、anak sulung、berjuang 说 2 句——家里谁是老大？你们正在为什么目标努力存钱？",
+      "30 秒复述：用 Mega 的视角讲那天晚上——Rudi 想分期买摩托，她怎么算账，为什么说 motor bukan aset，两人最后怎么决定。"
+    ]
+  }
+}
