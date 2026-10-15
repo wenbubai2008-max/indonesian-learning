@@ -68,7 +68,7 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
 - 错词配额：新错最多 2 个（复习 6 个时最多 3 个），其余名额给到期最久、最近曝光最少的词。没排上的新错下一节优先。
 - 同等条件下的优先顺序：最近真实答错或重新标为不会 > memory_dont > memory_fuzzy > 其他 active；再优先核心曝光少、到期久、更值得主动输出训练的词。
 - 排序输出 `hard=true` 的词（累计答错 ≥3 次）：在 quiz 或 output 里换一种用法考它，并在复盘里补一句辨析或典型搭配。
-- `avoid_in_text` 里的词正在冷却：除非是本课核心词，否则不写进阅读和例句。`natural_recurrence` 是久未出现的待复习词：至少在阅读或例句里自然带入 2 个，排在前面的优先；某个词实在写不自然就换下一个。（2026-10-08 早课和晚课都一个没带，同一批词因此一直排在最前面。）
+- `avoid_in_text` 里的词正在冷却：除非是本课核心词，否则不写进阅读和例句。`natural_recurrence` 是久未出现的待复习词（最久没出现的在前，共约 20 个）：**至少 5 个**要自然出现在阅读、sentences 或词卡例句里（可带 -nya 等后缀；只出现在题目、output 里不算），排在前面的优先；某个词写不自然就跳过换下一个，不为凑数写别扭的句子。`overused_in_text` 里的词最近几节课已经出现很多次，不要为了复现刻意写进去。（2026-10-15：旧下限 2 个基本没执行，15 节课里 6 节一个没带。）
 
 ### 4.4 资格预检（写正文前，不得跳过）
 
@@ -112,9 +112,10 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
 然后在本地真实运行，全部通过才可写入：
 
 1. 内容守卫：把全部印尼语文本（阅读、句子、例句、选项、参考答案）分词，与 runtime.new_pool 比对；出现不属于今天新词的未教词，就换成已学词或基础词。
-2. `node .github/scripts/validate-lesson-candidate.js --candidate data/daily/D-am.json --date D --session am`（ok=true）
-3. `node .github/scripts/plan-lesson-publication.js --candidate data/daily/D-am.json --date D --session am --main-head "$(git rev-parse HEAD)"`（ok=true，status=ready）
-4. `node .github/scripts/regression-guard.js`
+2. 复现检查：`node .github/scripts/check-recurrence.js --candidate data/daily/D-am.json --date D --session am`（输出 RECURRENCE_CHECK，ok=true，即 natural_recurrence 名单里至少 5 个词出现在课文里）。不够就按 suggestions 在阅读、sentences 或例句里自然补上再查；必须在推送前通过。
+3. `node .github/scripts/validate-lesson-candidate.js --candidate data/daily/D-am.json --date D --session am`（ok=true）
+4. `node .github/scripts/plan-lesson-publication.js --candidate data/daily/D-am.json --date D --session am --main-head "$(git rev-parse HEAD)"`（ok=true，status=ready）
+5. `node .github/scripts/regression-guard.js`
 
 发现错误，先改同一份尚未提交的原稿再重跑；不降低标准，不借修结构之名更换已锁定的合法核心词。
 
@@ -142,6 +143,6 @@ Actions 日志可能因网络限制无法下载。此时以 PR merged=true、mai
 
 ## 十一、汇报（简洁中文）
 
-成功时报告：课程标题；新词（dont/fuzzy 与口语标记）；是否处于复习循环，若是则列出 cycle_vocab（哪些是 weak、哪些是 stale）和剩余新词数；复习词及选择理由（排序脚本是否运行、是否偏离推荐及原因、有无新错被顺延）；带入了哪些 natural_recurrence 词；搭配黑名单检查结果；PR 编号；是否已正式发布；runtime 是否同步；Pages 是否成功；按 `docs/LESSON-QUALITY.md` 第 8 节写“全课跨句逻辑检查”和“第二遍教学审稿”两行。
+成功时报告：课程标题；新词（dont/fuzzy 与口语标记）；是否处于复习循环，若是则列出 cycle_vocab（哪些是 weak、哪些是 stale）和剩余新词数；复习词及选择理由（排序脚本是否运行、是否偏离推荐及原因、有无新错被顺延）；复现检查结果（带入了哪些 natural_recurrence 词、几个/要求几个，用了哪些 overused_in_text 词）；搭配黑名单检查结果；PR 编号；是否已正式发布；runtime 是否同步；Pages 是否成功；按 `docs/LESSON-QUALITY.md` 第 8 节写“全课跨句逻辑检查”和“第二遍教学审稿”两行。
 
 失败时按 `docs/tasks/COMMON.md` §5 的要求说明。

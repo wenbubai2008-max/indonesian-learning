@@ -3,7 +3,7 @@
 /** Read-only: deterministic review/application candidate ranking for the AM (--session am) and PM generators. Writes nothing. */
 const fs=require('fs'),path=require('path');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
-const {rank,naturalRecurrence}=require('./review-rotation');
+const {rank,naturalRecurrence,overusedInText}=require('./review-rotation');
 /** All completed lessons before `date`, used only for the stale-word bonus (never for eligibility). */
 function readLongHistory(index,date,read){
  const out=[];
@@ -44,8 +44,14 @@ function main(argv){
  if(out.review_cycle.active)out.review_cycle.new_words_available=availNew;
  // Pending-review words to weave into reading / dialogue / examples (not core review, not application).
  // Excludes today's core picks and words still cooling down under the exposure ledger (avoid_in_text).
- out.natural_recurrence=naturalRecurrence({date:a.date,runtime,longHistory,count:12,
+ const nrCfg=(rules.review_rotation&&rules.review_rotation.natural_recurrence)||{};
+ const textHistory=session==='pm'&&am&&am.date===a.date?[...longHistory,am]:longHistory;
+ out.natural_recurrence=naturalRecurrence({date:a.date,session,runtime,longHistory:textHistory,count:Number(nrCfg.list_size)||12,
   exclude:[...out.recommended_review,...((out.review_cycle&&out.review_cycle.cycle_words)||[]),...out.application_candidates.slice(0,3).map(x=>x.word),...base.amVocab,...base.amReview,...(out.avoid_in_text||[])]});
+ // 2026-10-15: minimum woven per lesson (checked by check-recurrence.js before push) and words already overused in text.
+ out.natural_recurrence.min_required=Number((nrCfg.min_per_lesson||{})[session])||0;
+ const ov=nrCfg.overuse||{};
+ out.overused_in_text=overusedInText({date:a.date,session,runtime,longHistory:textHistory,window:Number(ov.window_lessons)||6,max:Number(ov.max_lessons)||3});
  if(a.compare==='1'){const old=rank(base);out.compare_without_stale_bonus={recommended_review:old.recommended_review,only_new:out.recommended_review.filter(w=>!old.recommended_review.includes(w)),only_old:old.recommended_review.filter(w=>!out.recommended_review.includes(w))}}
  return out;
 }

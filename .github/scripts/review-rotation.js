@@ -304,6 +304,10 @@ function lessonText(L){
  return t.join(' \n ').toLowerCase();
 }
 const reEsc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+// Whole-word match that also accepts the enclitics -nya/-lah/-kah/-pun/-ku/-mu (2026-10-15: 'kendalanya' counts as kendala).
+// Lessons completed before the target slot: earlier dates, plus the same day's 08:00 when the target is 18:00.
+const before=(h,date,session)=>h.date<date||(session==='pm'&&h.date===date&&h.session==='am');
+const wordRe=w=>new RegExp('(^|[^a-z])'+reEsc(w)+'(?:nya|lah|kah|pun|ku|mu)?([^a-z]|$)');
 const hashStr=x=>{let h=0;for(const c of x)h=(h*31+c.charCodeAt(0))>>>0;return h};
 
 /**
@@ -312,14 +316,15 @@ const hashStr=x=>{let h=0;for(const c of x)h=(h*31+c.charCodeAt(0))>>>0;return h
  * Never counts as core review, never overrides eligibility; mastered words are not in these pools.
  * Unknown history is treated as 45 days so a matching miss (inflection) cannot lock a word at the top forever.
  */
-function naturalRecurrence({date,runtime,longHistory,exclude=[],count=12}){
+function naturalRecurrence({date,runtime,longHistory,exclude=[],count=12,session='am'}){
  const at=Date.parse(date+'T00:00:00Z'),ex=new Set(exclude.map(norm));
  const rows=new Map();
  for(const v of (runtime.review_pool||[]))rows.set(word(v),{word:word(v),priority:Number(v[1]),cn:String(v[5]||'')});
  for(const v of (runtime.recurrence_pool||[]))if(!rows.has(word(v)))rows.set(word(v),{word:word(v),priority:Number(v[1]),cn:String(v[2]||'')});
- const res=[...rows.values()].filter(r=>r.word&&!ex.has(r.word)).map(r=>[r,new RegExp('(^|[^a-z])'+reEsc(r.word)+'([^a-z]|$)')]);
+ const res=[...rows.values()].filter(r=>r.word&&!ex.has(r.word)).map(r=>[r,wordRe(r.word)]);
  const last=new Map(),n14=new Map();
- const lessons=(longHistory||[]).filter(h=>h&&h.date<date&&['am','pm'].includes(h.session)).sort((a,b)=>(a.date+a.session).localeCompare(b.date+b.session));
+ // For an evening lesson the same day's 08:00 text counts too (2026-10-15 fix: words used that morning were recommended again).
+ const lessons=(longHistory||[]).filter(h=>h&&['am','pm'].includes(h.session)&&before(h,date,session)).sort((a,b)=>(a.date+a.session).localeCompare(b.date+b.session));
  for(const h of lessons){
   const text=lessonText(h),age=Math.round((at-Date.parse(h.date+'T00:00:00Z'))/DAY);
   for(const [r,re] of res)if(re.test(text)){last.set(r.word,age);if(age<=14)n14.set(r.word,(n14.get(r.word)||0)+1)}
@@ -333,4 +338,19 @@ function naturalRecurrence({date,runtime,longHistory,exclude=[],count=12}){
   guidance:'Weave these into reading / dialogue / example sentences (about 6-8 per lesson, earlier entries first). They do not count as core review or application and never replace them.'};
 }
 
-module.exports={config,analyze,checkCore,checkPm,checkExposure,activeWords,rank,naturalRecurrence,lessonText,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};
+/**
+ * Overused in text (2026-10-15): pending-review words that already appeared in the free text of at least `max` of the
+ * last `window` completed lessons. Not banned (common words must stay natural), but never woven in on purpose, so the
+ * text budget goes to stale words instead.
+ */
+function overusedInText({date,runtime,longHistory,window=6,max=3,session='am'}){
+ const pend=new Set();
+ for(const v of [...(runtime.review_pool||[]),...(runtime.recurrence_pool||[])]){const w=word(v);if(w)pend.add(w)}
+ const lessons=(longHistory||[]).filter(h=>h&&['am','pm'].includes(h.session)&&before(h,date,session))
+  .sort((a,b)=>(a.date+a.session).localeCompare(b.date+b.session)).slice(-window);
+ const n=new Map(),res=[...pend].map(w=>[w,wordRe(w)]);
+ for(const h of lessons){const text=lessonText(h);for(const [w,re] of res)if(re.test(text))n.set(w,(n.get(w)||0)+1)}
+ return [...n].filter(([,c])=>c>=max).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).map(([w,c])=>({word:w,lessons:c}));
+}
+
+module.exports={config,analyze,checkCore,checkPm,checkExposure,activeWords,rank,naturalRecurrence,overusedInText,wordRe,lessonText,lastExposureDays,staleBonus,eligibleAlternatives,word,ws,norm};

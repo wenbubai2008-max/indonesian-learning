@@ -137,9 +137,12 @@
     return (ctx.candidates?.review||[]).map((x,i)=>{
       const r={word:norm(x[0]),priority:Number(x[1])||9,wrong:Number(x[2])||0,lastWrong:x[3],lastReview:x[4],
         cn:x[5]||'',root:x[6]||'',root_cn:x[7]||'',index:i};
-      const exposure=(exp.get(r.word)||[]).length,fresh=freshWrong(r),blocked=cooling(r),focusScore=focus.get(r.word)||0;
+      const es=exp.get(r.word)||[],exposure=es.length,fresh=freshWrong(r),blocked=cooling(r),focusScore=focus.get(r.word)||0;
+      // review_rotation.recent_core (2026-10-04): core-reviewed within the last 4 days (inclusive).
+      const lastDate=es.length?es[es.length-1].date:null;
+      const recent=lastDate!=null&&Math.round((Date.parse(ctx.target.date+'T00:00:00Z')-Date.parse(lastDate+'T00:00:00Z'))/86400000)<=4;
       const score=(fresh?1000:0)+(r.priority===1?180:r.priority===2?70:10)+r.wrong*30+focusScore*2-exposure*20;
-      return {...r,exposure,fresh,blocked,focusScore,score};
+      return {...r,exposure,fresh,blocked,focusScore,score,recent};
     });
   }
   function pmCorePlan(ctx,newCount){
@@ -160,10 +163,13 @@
     const out=[];let repeated=0,focusUsed=0;
     // PM focus quota (review_rotation.focus_quota, 2026-10-04): at most 3 focus_pool words while non-focus words remain.
     const focusCap=ctx.target.session==='pm'?3:Infinity;
+    // PM recent-core cap (review_rotation.recent_core): at most 2 non-fresh words reviewed in the last 4 days while others remain.
+    const recentCap=ctx.target.session==='pm'?2:Infinity;let recentUsed=0;
     for(const r of rows){
+      if(r.recent&&!r.fresh&&recentUsed>=recentCap&&rows.some(x=>!(x.recent&&!x.fresh)&&!out.some(y=>y.word===x.word)))continue;
       if(r.exposure>=3&&!r.fresh&&repeated>=1&&rows.some(x=>x.exposure<3&&!out.some(y=>y.word===x.word)))continue;
       if(r.focusScore>0&&focusUsed>=focusCap&&rows.some(x=>!(x.focusScore>0)&&!out.some(y=>y.word===x.word)))continue;
-      out.push(r);if(r.exposure>=3&&!r.fresh)repeated++;if(r.focusScore>0)focusUsed++;
+      out.push(r);if(r.exposure>=3&&!r.fresh)repeated++;if(r.focusScore>0)focusUsed++;if(r.recent&&!r.fresh)recentUsed++;
       if(out.length===count)break;
     }
     return out;
