@@ -19,7 +19,10 @@ function main(argv){
   const amFile=path.join(root,'data/daily/'+a.date+'-am.json');
   if(fs.existsSync(amFile)){const am=read('data/daily/'+a.date+'-am.json');exclude.push(...names(am.vocab),...names(am.review_vocab))}
  }
- return naturalRecurrence({date:a.date,runtime,longHistory:readLongHistory(index,a.date,read),exclude,count:Number(a.count)||12});
+ const session=a.session||'pm',longHistory=readLongHistory(index,a.date,read);
+ const amPath=path.join(root,'data/daily/'+a.date+'-am.json');
+ if(session==='pm'&&fs.existsSync(amPath))longHistory.push(read('data/daily/'+a.date+'-am.json'));
+ return naturalRecurrence({date:a.date,session,runtime,longHistory,exclude,count:Number(a.count)||Number((read('data/learning-pool-rules.json').review_rotation?.natural_recurrence||{}).list_size)||12});
 }
 if(require.main===module){try{console.log(JSON.stringify(main(process.argv.slice(2)),null,2))}catch(e){console.error(JSON.stringify({ok:false,error:e.message}));process.exitCode=2}}
 module.exports={main};

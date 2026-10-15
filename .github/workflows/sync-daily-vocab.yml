@@ -56,6 +56,10 @@ on:
       - 'prototype/lesson-engine/materials/materials-bundle.json'
       - 'prototype/lesson-engine/materials/microcontent.json'
       - 'prototype/lesson-engine/materials/micro-scenes.json'
+      - '.github/scripts/review-rotation.js'
+      - '.github/scripts/rank-review-candidates.js'
+      - '.github/scripts/check-recurrence.js'
+      - '.github/scripts/test-check-recurrence.js'
       - '.github/scripts/publish-extensive-reading-candidate.js'
       - '.github/scripts/reading-review.js'
       - '.github/scripts/test-extensive-reading.js'
@@ -239,6 +243,8 @@ jobs:
           node .github/scripts/test-release-pr.js
           node .github/scripts/test-real-published-lesson.js
           node .github/scripts/test-review-cycle.js
+          node --check .github/scripts/check-recurrence.js
+          node .github/scripts/test-check-recurrence.js
           node --check .github/scripts/reading-review.js
           node --check data/extensive-reading-history-ui.js
           node .github/scripts/test-extensive-reading.js

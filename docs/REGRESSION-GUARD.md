@@ -431,3 +431,15 @@
 - **以后**：用户的新要求或点评，教学质量写 `LESSON-QUALITY.md`，流程写对应说明书，规则写 `learning-pool-rules.json`；不改定时任务提示词，也不在提示词里加“补充”段落。
 - **同时修正的过时描述（不改变学习规则）**：`pm_contract.cooling.recent_pm_focus` 与 `rules` 最后一条改为与曝光账本一致（application、cycle_vocab 计为主动曝光，不再写“应用复现独立计算”）；`pm_contract.listening_overlay` 的复习数 4–5 改为 4–6；`LESSON-RECOVERY.md` 早课开始时间 07:30 改为约 07:24。修改 `learning-pool-rules.json` 会让 `build-learning-runtime.yml` 重建 runtime 与 lesson-context（规则哈希随之更新），合并后需确认该运行成功、`build-lesson-context.js --check` 通过。
 - **不变**：新词节奏（早课 10 个、晚课 3–4 个，用户决定等新词全部学完再进入复习循环）、校验器、发布工作流、课程合同、词池公式。
+
+## 21. 2026-10-15 课文复现：最久没出现的词要真的带进课文（用户要求改进复习覆盖）
+
+- **问题**：10-08 至 10-15 的 15 节课里，每节课文平均用到约 15（早）/ 23（晚）个没掌握的学过词，但一周只覆盖 614 个待复习词中的 163 个，常用词反复出现（sejak、rapat 各 8 次）。原因是“从 natural_recurrence 名单带入，早课至少 2 个、晚课至少 3 个”是软规则、没有检查：15 节课里 6 节一个没带，只有 3 节达标，同一批 46 天没出现的词每天都排在最前。
+- **做法（只改课文用词，不改新词节奏、复习词名额、Validator 和发布流程）**：
+  1. `review_rotation.natural_recurrence` 新增 `min_per_lesson`（早 5、晚 8）、`list_size`（20）、`overuse`（最近 6 节课文出现 ≥3 次）。
+  2. 新脚本 `check-recurrence.js --candidate <JSON> --date D --session am|pm`：统计名单里有几个词出现在阅读、对话、sentences、词卡例句中（与排序用的 `lessonText()` 同一范围），不够返回非零。AM/PM 说明书要求推送前通过；只在生成端执行，不进 Validator、不卡发布。
+  3. 匹配接受 -nya/-lah/-kah/-pun/-ku/-mu 后缀（排序和检查一致），派生词仍不算。
+  4. **修正排序缺陷**：晚课的“最久没出现”排序原来不看当天早课课文，会把早上刚用过的词（如 10-15 的 pemasukan、nyiapin）再推荐给晚课。现在晚课把当天 08:00 课文算进去。
+  5. 排序输出新增 `overused_in_text`，只警告，不禁止常用词。
+- **守卫**：说明书必须保留 `check-recurrence.js` 和“至少 5 个 / 至少 8 个”；规则文件下限不得低于早 5、晚 8、名单 20。测试 `test-check-recurrence.js`（PR 预检运行）。
+- **预期**：每天约 13 个久未出现的弱词进入课文（原来约 1 个），一周可多覆盖约 90 个不同的弱词。覆盖度继续看 `report-learning-health.js` §3c。

@@ -93,7 +93,7 @@ function recurrenceCoverage({runtime,lessons,today}){
  const n=naturalRecurrence({date:today,runtime,longHistory:lessons,count:1e9});
  const c=n.candidates,seen14=c.filter(x=>x.appearances_14d>0).length,stale30=c.filter(x=>x.days_since_any_appearance==null||x.days_since_any_appearance>30).length;
  return {pool_size:n.pool_size,seen_last_14d:seen14,seen_share:n.pool_size?+(seen14/n.pool_size).toFixed(2):0,not_seen_30d_or_unknown:stale30,
-  note:'text match is exact-word (inflected forms are not matched); informational only, the backlog is meant to be reviewed in a later cycle'};
+  note:'text match is whole-word; enclitics -nya/-lah/-kah/-pun/-ku/-mu count, other derivations do not; informational only, the backlog is meant to be reviewed in a later cycle'};
 }
 
 /** Extensive readings in the last 7 days: declared review words and how many distinct focus_pool words were re-used. */

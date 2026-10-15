@@ -10,6 +10,7 @@ PM 专用的运行要求：
   1. `node .github/scripts/validate-lesson-candidate.js --candidate data/daily/D-pm.json --date D --session pm`（ok=true）
   2. `node .github/scripts/plan-lesson-publication.js --candidate data/daily/D-pm.json --date D --session pm --main-head "$(git rev-parse HEAD)"`（ok=true，status=ready）
   3. `node .github/scripts/regression-guard.js`
+  4. 复现检查：`node .github/scripts/check-recurrence.js --candidate data/daily/D-pm.json --date D --session pm`（输出 RECURRENCE_CHECK，ok=true，即 natural_recurrence 名单里至少 8 个词出现在课文里）。不够就按 suggestions 在阅读、对话或例句里自然补上再查；必须在推送前通过。
 - 内容守卫：课程中所有印尼语文本（阅读、对话、例句、选项、参考答案）不得出现 runtime.new_pool 中、但不属于今晚核心词的未教词。用脚本把文本分词后与 new_pool 比对，发现就换成已学或基础词。
 - 推送后用 REST 开 PR（base=main，head=分支，正文单独一行 `AUTO_PUBLISH_LESSON=1`），不要自己合并，不要写 index.json。
 - 发布后核验：轮询 PR 对应的 `Sync daily vocab` lesson_release 运行，确认 RELEASE_PREFLIGHT 成功和 LESSON_RELEASE_PUBLISHED。Actions 日志下载可能因网络限制失败，此时以 PR merged=true、main 上存在 D-pm.json、index.json 中 D 的 pm=true、随后 main 上 Sync 运行成功、runtime.lesson_watermark="D 18:00"、lesson-context.target 指向次日 08:00、Pages 部署成功作为依据，并在汇报中说明哪些是直接核验、哪些是间接核验。轮询总时长不超过约 40 分钟；超时则如实报告当前 checkpoint。release PR 上偶尔会多出 0 个 job 的失败运行，那是 bot push 派生的无害噪声，不要据此判断失败。
@@ -105,7 +106,7 @@ PM 专用的运行要求：
 **D. 课文用词（阅读、对话、例句、rewrite）**
 
 - 排序输出 avoid_in_text 里的词正在冷却：除非它是本课核心词，否则不写进阅读、对话和例句。
-- 排序输出 natural_recurrence 是久未出现的待复习词：在阅读、对话、例句里至少自然带入 3 个（目标约 6–8 个），排在前面的优先；某个词实在写不自然就换下一个。它们不算核心复习，不占任何名额。（2026-10-08 早课和晚课都一个没带，同一批词因此一直排在最前面。）
+- 排序输出 natural_recurrence 是久未出现的待复习词（最久没出现的在前，共约 20 个；当天 08:00 课文里用过的词已经排到后面）：**至少 8 个**要自然出现在阅读、对话或词卡例句里（可带 -nya 等后缀；只出现在题目、rewrite 里不算），排在前面的优先；某个词写不自然就跳过换下一个。它们不算核心复习，不占任何名额。`overused_in_text` 里的词最近几节课已经出现很多次，不要为了复现刻意写进去。（2026-10-15：旧下限 3 个基本没执行，15 节课里 6 节一个没带。）
 - 本课的新词和复习词鼓励在阅读、对话、例句中多次出现，同一节课内不额外计入跨课重复。
 
 **E. 复习循环（2026-10-14 用户决定；排序输出 review_cycle.active=true 时适用）**
@@ -206,7 +207,7 @@ PM 专用的运行要求：
 
 若课程已发布并同步但 Pages 尚未独立确认，须明确说明，不能虚报完全成功。
 
-完成后用简洁中文报告：课程标题、Day、实际生成者；是否处于复习循环（若是，剩余新词数和 review 数）；新词及来源；核心复习词与选择理由（排序脚本是否运行、是否偏离推荐及原因、有无新错被顺延）；带入了哪些 natural_recurrence 词；应用词及上午来源；最新训练弱项如何影响本课；按 `docs/LESSON-QUALITY.md` 第 8 节写“全课跨句逻辑检查”和“第二遍教学审稿”两行；搭配黑名单检查结果；实际 PR、最终 commit 和 Pages 状态；未通过的检查或仍然存在的限制。失败时按 `docs/tasks/COMMON.md` §5 说明。
+完成后用简洁中文报告：课程标题、Day、实际生成者；是否处于复习循环（若是，剩余新词数和 review 数）；新词及来源；核心复习词与选择理由（排序脚本是否运行、是否偏离推荐及原因、有无新错被顺延）；复现检查结果（带入了哪些 natural_recurrence 词、几个/要求几个，用了哪些 overused_in_text 词）；应用词及上午来源；最新训练弱项如何影响本课；按 `docs/LESSON-QUALITY.md` 第 8 节写“全课跨句逻辑检查”和“第二遍教学审稿”两行；搭配黑名单检查结果；实际 PR、最终 commit 和 Pages 状态；未通过的检查或仍然存在的限制。失败时按 `docs/tasks/COMMON.md` §5 说明。
 
 整个过程中，不重建项目、不增加备用课程、不新增定时任务或工作流、不改变学习规则。首要目标是每天交付高质量、符合个人学习状态且真正发布成功的 18:00 课程。
 

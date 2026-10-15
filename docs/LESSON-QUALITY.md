@@ -8,7 +8,7 @@
 
 ## 0. 固定执行顺序
 
-锁定合法词表 → 写初稿 → 第二遍教学审稿（下文 1–7 节逐项执行，真正动手改稿）→ 搭配黑名单检查 → 内容守卫脚本、Validator、planner、回归守卫 → 提交 GitHub 发布。
+锁定合法词表 → 写初稿 → 第二遍教学审稿（下文 1–7 节逐项执行，真正动手改稿）→ 搭配黑名单检查 → 复现检查（`check-recurrence.js`）→ 内容守卫脚本、Validator、planner、回归守卫 → 提交 GitHub 发布。
 
 **搭配黑名单检查（2026-10-14）：** `node .github/scripts/check-collocations.js --candidate <课程或泛读 JSON>`。它对照 `data/lesson-collocation-watchlist.json`（用户点评里标出过的不自然搭配）逐条检查，只警告、不阻断发布；有警告就改句子，改不了要在汇报里说明。以后每次点评标出新的不自然搭配，都要追加到这份清单里。
 
@@ -87,7 +87,7 @@
 - **新词三次接触**：词卡理解 → 在阅读、对话或 sentences 中以真实语境出现 → 在选择题、fill、order、rewrite / output 或复盘的“3 秒主动提取”里再用一次。只有“词卡 + 一句例句”的新词不合格；用现有题目改造补齐，逐词核对。
 - 只在词卡（和实用句）里出现过的核心词，必须在题目、主动输出或复盘的“3 秒主动提取”里至少再复现一次。
 - **复习词不必硬塞进阅读和对话**：只要在词卡、题目、主动输出或复盘里真实出现过即可。真实反例：“Saya nggak niat nyinggung, Bu, tapi lain kali jangan dikejar sendiri.” 能懂但很刻意（nyinggung 已在复习题里），更自然的是 “Maaf ya, Bu, bukan mau nyalahin, tapi lain kali jangan kejar pencurinya sendiri. Bahaya.”。写不自然就删掉。
-- 排序脚本 `avoid_in_text` 里的词不写进阅读、对话和例句（除非是本课核心词）；`natural_recurrence` 的词在自然的前提下带入，写不自然就不带。
+- 排序脚本 `avoid_in_text` 里的词不写进阅读、对话和例句（除非是本课核心词）；`natural_recurrence` 的词早课至少带入 5 个、晚课至少 8 个（2026-10-15 起由 `check-recurrence.js` 在推送前检查），在自然的前提下带入，写不自然的跳过换名单里的下一个；`overused_in_text` 里的词不要刻意写进去。
 - 复盘重点放在 3 秒主动提取、易混词、薄弱词和真实表达，不是让学习者重读词卡。
 - **晚课自检与复盘分工（2026-10-12 用户点评，必须）**：`daily_test.self_check` 和 `review.steps` 不得出现同一个练习。真实反例：某节晚课的 4 条自检（印→中说意思、找想不起来的词、辨析 berjanji/janjian/perjanjian 和 memerlukan/perlu、用早课词各说一句）在复盘里几乎原样又出现了一遍，5 条复盘只有“复述阅读”是新的。
   - **self_check = 诊断**：3–4 条简短的是/否问题，只用来找出哪些词还不熟（例如“不看中文，下面几个词里哪个我 3 秒内说不出意思？”“这几组易混词我分得清吗？”）。不要求造句、复述或写输出。

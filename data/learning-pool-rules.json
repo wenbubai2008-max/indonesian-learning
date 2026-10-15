@@ -196,7 +196,7 @@
     "pm_new_word_memory_check": "PM 3-4个新词必须来自new_pool_dont∪new_pool_fuzzy并属于new_pool；默认2 fuzzy + 1-2 dont，候选不足时可互补；unclassified命中数必须为0。",
     "review_rotation_check": "从2026-09-28起完整核验index最近7天已完成AM/PM核心历史；缺历史阻止发布；同日/前晚重复、连续PM冷却、7天高曝光超额严格依规则，解除需runtime.last_wrong新信号。仅新课生效。"
   },
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "focus_pool_formula": "重点弱词 = A ∩ D，按自动训练失败、快速练习答错、不会/模糊等信号综合排序；只做派生索引，不改变词库归属",
   "review_rotation": {
     "enabled": true,
@@ -245,10 +245,21 @@
     "natural_recurrence": {
       "enabled": true,
       "effective_date": "2026-10-07",
-      "rule": "待复习的词（A ∩ D 与旧词）不只靠核心复习名额复现：每节课在阅读、对话、新词例句、造句等文本里自然带入约 6–8 个“待复习词”，优先取排序靠前（最久没在任何课文里出现）的词。候选来自 runtime.review_pool ∪ runtime.recurrence_pool，用 node .github/scripts/rank-natural-recurrence.js --date D [--session am|pm]（PM 的 rank-review-candidates.js 输出也含 natural_recurrence）。",
+      "rule": "待复习的词（A ∩ D 与旧词）不只靠核心复习名额复现：每节课在阅读、对话、sentences、词卡例句里自然带入“待复习词”，从排序名单（最久没在任何课文里出现的词在前）里挑。名单由 node .github/scripts/rank-review-candidates.js --date D --session am|pm 的 natural_recurrence 输出（list_size 个），也可单独用 rank-natural-recurrence.js。",
       "not_counted": "自然复现不计入核心复习次数，不占 review_vocab / PM 复习 / application 名额，不改变冷却、轮换和配额；mastered 不在这两个池里，不得带入；不得为了带入这些词而牺牲课文自然度或引入未正式教过的新词。",
-      "soft_guideline": "这是软规则：不进入校验器，不会因为没做到而使发布失败；覆盖度由 report-learning-health.js 的 3c 小节度量。",
-      "pool": "runtime.recurrence_pool = [[word, priority, cn], ...]，最多 500 个，是 review_pool 之外的其余 A ∩ D 词（含剩余旧词）；不是复习资格池，stats.recurrence_pool_total_full / recurrence_pool_exposed 记录数量。"
+      "soft_guideline": "自然度优先：名单上写不自然的词跳过换下一个，不得为凑数写别扭的句子或引入未正式教过的新词；不计入核心复习，不改变冷却、轮换、配额和掌握状态。覆盖度由 report-learning-health.js 的 3c 小节度量。",
+      "pool": "runtime.recurrence_pool = [[word, priority, cn], ...]，最多 500 个，是 review_pool 之外的其余 A ∩ D 词（含剩余旧词）；不是复习资格池，stats.recurrence_pool_total_full / recurrence_pool_exposed 记录数量。",
+      "min_per_lesson": {
+        "am": 5,
+        "pm": 8
+      },
+      "list_size": 20,
+      "gate": "2026-10-15（用户要求改进复习覆盖）：旧的“早课至少2个、晚课至少3个”软规则实际没有执行（10-08至10-15共15节课，6节一个没带、只有3节达标，同一批46天没出现的词一直排在最前）。现在由 node .github/scripts/check-recurrence.js --candidate <课程JSON> --date D --session am|pm 在推送前检查：名单里的词出现在阅读、对话、sentences、词卡例句中（可带 -nya/-lah/-kah/-pun/-ku/-mu）的数量须达到 min_per_lesson，不够就改稿再查。只在生成端执行，不进入 Validator、不卡发布。",
+      "overuse": {
+        "window_lessons": 6,
+        "max_lessons": 3,
+        "rule": "最近6节课的课文里已出现≥3次的待复习词列在 overused_in_text：不禁止（常用词要写自然），但不要为了复现刻意写进去，把篇幅留给久未出现的词。只警告。"
+      }
     },
     "legacy_unverified_review": {
       "enabled": true,
