@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-15",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 55
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-14T14:00:29.845Z",
-    "lesson_watermark": "2026-10-14 18:00",
-    "index_updated": "2026-10-14",
-    "runtime_hash": "792293394ca8542d3c33a541c0c226c3dba867f29ffd6b6faa5683349ef07812",
-    "index_hash": "ced10352c04ee605d656ec0f4cb414cb13b676448e3905feca9c4f26af0e391c",
+    "runtime_generated_at": "2026-10-15T00:31:37.462Z",
+    "lesson_watermark": "2026-10-15 08:00",
+    "index_updated": "2026-10-15",
+    "runtime_hash": "2d90885e11724ac43c9227c8f7550ee1e33e727cb38c55c4d92ef4ae0daea4ea",
+    "index_hash": "36a9bdc6d4a6a06dcb7d423cd47b468b494888b3aa6e88c41f9b0201cbac224d",
     "rules_hash": "1926d20dd1cf14712e878a87a6ac51f3ca22ced2f70cca55b5e7f94c92b1b0fa"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "diberikan",
-        "被给予"
-      ],
-      [
-        "aset",
-        "资产"
-      ],
-      [
-        "penanganan",
-        "处理；应对"
-      ],
-      [
-        "bergabung",
-        "加入；合并"
-      ],
-      [
-        "berjuang",
-        "奋斗；斗争"
-      ],
-      [
-        "saya pamit",
-        "我先告辞了"
-      ],
-      [
-        "anak tunggal",
-        "独生子女"
-      ],
-      [
-        "anak sulung",
-        "长子/长女"
-      ],
-      [
-        "anak bungsu",
-        "最小的孩子"
-      ],
-      [
-        "rusa",
-        "鹿"
-      ],
       [
         "meja rias",
         "梳妆台"
@@ -1700,14 +1660,14 @@
         "轻松；悠闲"
       ],
       [
-        "angkot",
+        "anak bungsu",
         2,
         0,
         "",
         "",
-        "小公共交通车；城市里的小巴",
-        "angkot",
-        "angkutan kota（城市交通）的缩写，本身当作词根"
+        "最小的孩子；老幺",
+        "bungsu",
+        "排行最后的；最小的"
       ],
       [
         "janjian",
@@ -1740,16 +1700,6 @@
         ""
       ],
       [
-        "boros",
-        3,
-        0,
-        "",
-        "2026-10-09T07:09:36.613Z",
-        "浪费；花钱大手大脚；耗费多",
-        "boros",
-        ""
-      ],
-      [
         "nyasar",
         3,
         0,
@@ -1757,16 +1707,6 @@
         "2026-10-06T09:58:02.988Z",
         "迷路；走错路",
         "sasar",
-        ""
-      ],
-      [
-        "membatasi",
-        2,
-        0,
-        "",
-        "2026-10-08T09:18:47.663Z",
-        "限制；控制在一定范围内",
-        "batas",
         ""
       ],
       [
@@ -2110,14 +2050,24 @@
         "结果；成果"
       ],
       [
-        "harusnya",
-        5,
+        "kepikiran",
+        3,
         0,
         "",
+        "2026-10-08T09:08:22.855Z",
+        "一直想到；挂在心上",
+        "pikir",
+        "想；思考"
+      ],
+      [
+        "menarik",
+        3,
+        0,
         "",
-        "按理说、本来应该",
-        "harus",
-        ""
+        "2026-10-07T15:00:28.477Z",
+        "有趣的；吸引人的；引人注意的",
+        "tarik",
+        "拉；吸引"
       ],
       [
         "terpaksa",
@@ -2207,6 +2157,106 @@
         "",
         "收入；进账",
         "masuk",
+        ""
+      ],
+      [
+        "prioritas",
+        5,
+        0,
+        "",
+        "",
+        "优先事项；优先级",
+        "prioritas",
+        ""
+      ],
+      [
+        "diberikan",
+        2,
+        0,
+        "",
+        "",
+        "被给予；被交给；被提供",
+        "beri",
+        "给"
+      ],
+      [
+        "aset",
+        2,
+        0,
+        "",
+        "",
+        "资产；（比喻）宝贵的人或东西",
+        "",
+        ""
+      ],
+      [
+        "penanganan",
+        2,
+        0,
+        "",
+        "",
+        "处理；应对（过程）",
+        "tangan",
+        "手"
+      ],
+      [
+        "bergabung",
+        2,
+        0,
+        "",
+        "",
+        "加入；合在一起",
+        "gabung",
+        "合在一起；联合"
+      ],
+      [
+        "berjuang",
+        2,
+        0,
+        "",
+        "",
+        "奋斗；拼搏；斗争",
+        "juang",
+        "斗争；奋斗"
+      ],
+      [
+        "saya pamit",
+        2,
+        0,
+        "",
+        "",
+        "我先告辞了",
+        "pamit",
+        "告辞；辞行"
+      ],
+      [
+        "anak tunggal",
+        2,
+        0,
+        "",
+        "",
+        "独生子女",
+        "tunggal",
+        "单一；唯一"
+      ],
+      [
+        "anak sulung",
+        2,
+        0,
+        "",
+        "",
+        "长子；长女；家里的老大",
+        "sulung",
+        "排行第一的；最早出生的"
+      ],
+      [
+        "rusa",
+        2,
+        0,
+        "",
+        "",
+        "鹿",
+        "",
         ""
       ]
     ],
@@ -2859,6 +2909,29 @@
         "komentar",
         "mengabaikan"
       ]
+    },
+    {
+      "date": "2026-10-15",
+      "session": "am",
+      "review_core": [
+        "hafal",
+        "menerapkan",
+        "harusnya",
+        "boros",
+        "membatasi"
+      ],
+      "new_words": [
+        "diberikan",
+        "aset",
+        "penanganan",
+        "bergabung",
+        "berjuang",
+        "saya pamit",
+        "anak tunggal",
+        "anak sulung",
+        "anak bungsu",
+        "rusa"
+      ]
     }
   ],
   "previous_pm": {
@@ -2876,7 +2949,88 @@
       "penasaran"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-15",
+    "vocab": [
+      [
+        "diberikan",
+        "被给予；被交给；被提供",
+        "given; handed over",
+        "beri",
+        "给"
+      ],
+      [
+        "aset",
+        "资产；（比喻）宝贵的人或东西",
+        "asset",
+        "",
+        ""
+      ],
+      [
+        "penanganan",
+        "处理；应对（过程）",
+        "handling; treatment",
+        "tangan",
+        "手"
+      ],
+      [
+        "bergabung",
+        "加入；合在一起",
+        "to join",
+        "gabung",
+        "合在一起；联合"
+      ],
+      [
+        "berjuang",
+        "奋斗；拼搏；斗争",
+        "to struggle; to fight for",
+        "juang",
+        "斗争；奋斗"
+      ],
+      [
+        "saya pamit",
+        "我先告辞了",
+        "I'll take my leave",
+        "pamit",
+        "告辞；辞行"
+      ],
+      [
+        "anak tunggal",
+        "独生子女",
+        "only child",
+        "tunggal",
+        "单一；唯一"
+      ],
+      [
+        "anak sulung",
+        "长子；长女；家里的老大",
+        "eldest child",
+        "sulung",
+        "排行第一的；最早出生的"
+      ],
+      [
+        "anak bungsu",
+        "最小的孩子；老幺",
+        "youngest child",
+        "bungsu",
+        "排行最后的；最小的"
+      ],
+      [
+        "rusa",
+        "鹿",
+        "deer",
+        "",
+        ""
+      ]
+    ],
+    "review_vocab": [
+      "hafal",
+      "menerapkan",
+      "harusnya",
+      "boros",
+      "membatasi"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

@@ -3929,21 +3929,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-08-29 19:00",
+    "last_seen": "2026-10-15 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-29"
+      "2026-08-29",
+      "2026-10-15"
     ],
     "example": "Harusnya udah selesai.",
     "example_cn": "按理说应该已经好了。",
     "lesson_occurrences": [
-      "2026-08-29 19:00"
+      "2026-08-29 19:00",
+      "2026-10-15 08:00"
     ]
   },
   {
@@ -4403,19 +4407,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 08:00",
-    "last_seen": "2026-08-31 08:00",
+    "last_seen": "2026-10-15 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-10-15"
     ],
     "example": "Kalau tiap hari pesan kopi, lumayan boros juga.",
     "example_cn": "如果每天都点咖啡，其实也挺费钱的。",
     "lesson_occurrences": [
-      "2026-08-31 08:00"
+      "2026-08-31 08:00",
+      "2026-10-15 08:00"
     ]
   },
   {
@@ -4600,21 +4606,25 @@ window.DAILY_VOCAB_DB = [
     "root": "batas",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 19:00",
-    "last_seen": "2026-08-31 19:00",
+    "last_seen": "2026-10-15 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-10-15"
     ],
     "example": "Aku mulai ngebatasin jajan kopi tiap hari.",
     "example_cn": "我开始限制自己每天买咖啡了。",
     "lesson_occurrences": [
-      "2026-08-31 19:00"
+      "2026-08-31 19:00",
+      "2026-10-15 08:00"
     ]
   },
   {
@@ -18529,17 +18539,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-07 08:00",
-    "last_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-15 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-07"
+      "2026-10-07",
+      "2026-10-15"
     ],
     "lesson_occurrences": [
-      "2026-10-07 08:00"
+      "2026-10-07 08:00",
+      "2026-10-15 08:00"
     ]
   },
   {
@@ -20804,17 +20816,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-14 08:00",
-    "last_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-15 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-14"
+      "2026-10-14",
+      "2026-10-15"
     ],
     "lesson_occurrences": [
-      "2026-10-14 08:00"
+      "2026-10-14 08:00",
+      "2026-10-15 08:00"
     ]
   },
   {
@@ -21022,6 +21036,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-14 18:00"
+    ]
+  },
+  {
+    "word": "diberikan",
+    "cn": "被给予；被交给；被提供",
+    "en": "given; handed over",
+    "root": "beri",
+    "root_cn": "给",
+    "example": "Beasiswa itu diberikan kepada mahasiswa yang nilainya paling tinggi.",
+    "example_cn": "那笔奖学金发给成绩最好的学生。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 08:00"
+    ]
+  },
+  {
+    "word": "aset",
+    "cn": "资产；（比喻）宝贵的人或东西",
+    "en": "asset",
+    "root": "",
+    "root_cn": "",
+    "example": "Rumah kontrakan itu aset keluarga kami. Setiap bulan uang sewanya jadi pemasukan tambahan.",
+    "example_cn": "那栋出租房是我们家的资产，每个月的租金就是一笔额外收入。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 08:00"
+    ]
+  },
+  {
+    "word": "penanganan",
+    "cn": "处理；应对（过程）",
+    "en": "handling; treatment",
+    "root": "tangan",
+    "root_cn": "手",
+    "example": "Penanganan pasien di rumah sakit itu cepat, jadi ayah langsung diperiksa dokter.",
+    "example_cn": "那家医院对病人处理得很快，所以爸爸马上就看上了医生。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 08:00"
+    ]
+  },
+  {
+    "word": "bergabung",
+    "cn": "加入；合在一起",
+    "en": "to join",
+    "root": "gabung",
+    "root_cn": "合在一起；联合",
+    "example": "Sejak tahun lalu, kakak saya bergabung dengan perusahaan teknologi di Jakarta.",
+    "example_cn": "从去年起，我哥哥加入了雅加达的一家科技公司。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 08:00"
+    ]
+  },
+  {
+    "word": "berjuang",
+    "cn": "奋斗；拼搏；斗争",
+    "en": "to struggle; to fight for",
+    "root": "juang",
+    "root_cn": "斗争；奋斗",
+    "example": "Dia berjuang melawan penyakitnya selama dua tahun, dan sekarang sudah sehat lagi.",
+    "example_cn": "他和病魔抗争了两年，现在已经恢复健康了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 08:00"
+    ]
+  },
+  {
+    "word": "saya pamit",
+    "cn": "我先告辞了",
+    "en": "I'll take my leave",
+    "root": "pamit",
+    "root_cn": "告辞；辞行",
+    "example": "Sudah malam, saya pamit dulu ya, Bu. Terima kasih makan malamnya.",
+    "example_cn": "天已经晚了，阿姨，我先告辞了。谢谢您的晚饭。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 08:00"
+    ]
+  },
+  {
+    "word": "anak tunggal",
+    "cn": "独生子女",
+    "en": "only child",
+    "root": "tunggal",
+    "root_cn": "单一；唯一",
+    "example": "Dimas anak tunggal, jadi waktu kecil dia sering main sendirian.",
+    "example_cn": "Dimas 是独生子，所以小时候常常一个人玩。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 08:00"
+    ]
+  },
+  {
+    "word": "anak sulung",
+    "cn": "长子；长女；家里的老大",
+    "en": "eldest child",
+    "root": "sulung",
+    "root_cn": "排行第一的；最早出生的",
+    "example": "Anak sulung mereka sudah bekerja di Surabaya.",
+    "example_cn": "他们家老大已经在泗水工作了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 08:00"
+    ]
+  },
+  {
+    "word": "anak bungsu",
+    "cn": "最小的孩子；老幺",
+    "en": "youngest child",
+    "root": "bungsu",
+    "root_cn": "排行最后的；最小的",
+    "example": "Si bungsu baru masuk SMA tahun ini.",
+    "example_cn": "家里的老幺今年刚上高中。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 08:00"
+    ]
+  },
+  {
+    "word": "rusa",
+    "cn": "鹿",
+    "en": "deer",
+    "root": "",
+    "root_cn": "",
+    "example": "Di halaman Istana Bogor ada ratusan rusa totol yang hidup bebas.",
+    "example_cn": "茂物总统府的草坪上有好几百只斑点鹿自由生活。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-15"
+    ],
+    "lesson_occurrences": [
+      "2026-10-15 08:00"
     ]
   }
 ];
