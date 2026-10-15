@@ -443,3 +443,12 @@
   5. 排序输出新增 `overused_in_text`，只警告，不禁止常用词。
 - **守卫**：说明书必须保留 `check-recurrence.js` 和“至少 5 个 / 至少 8 个”；规则文件下限不得低于早 5、晚 8、名单 20。测试 `test-check-recurrence.js`（PR 预检运行）。
 - **预期**：每天约 13 个久未出现的弱词进入课文（原来约 1 个），一周可多覆盖约 90 个不同的弱词。覆盖度继续看 `report-learning-health.js` §3c。
+
+## 22. 2026-10-15 复习加量三项（用户确认的方案）
+
+1. **核心复习备选扩大一倍**：`build-learning-runtime.js` 的轮换名额 `REVIEW_ROTATION_MAX` 40 → 160，`runtime.review_pool` 约 119 → 约 239（60 个最弱 + 160 个最久没进课程的 + 10 个旧词 + 当天早课新词）。每节核心复习数量、排序优先级、冷却、配额都不变。`recurrence_pool` 相应变小，`natural_recurrence` 用两池并集，不受影响。
+2. **复习词同词根成组**：`rank()` 在可用（合法、未冷却）的复习词里按 `review_pool` 第 7 列 root 分组，输出 `review_groups`；在不挤掉真实新错、不破坏晚课 focus 下限的前提下，把最优的一组（2–3 个）放进 `recommended_review`，记为 `review_group_applied`。`check-recurrence.js` 只在 `review_group_applied` 不为空时要求核心复习词里有同词根的两个词；放不下时不要求，写课时可用反义/近义词对（近义词必须讲清区别）。不进 Validator。
+3. **课文复现加量约 40–50%**：`natural_recurrence.min_per_lesson` 早 5 → 10、晚 8 → 15，名单 20 → 30；计数文本新增 `recurrenceText()`（= `lessonText()` + AM output、PM rewrite 参考答案），新增的放在例句、sentences、rewrite / output 参考答案，阅读和对话不再加密。曝光账本的冷却仍只用 `lessonText()`，校验器行为不变。泛读复习词 8–12 → 12–16，focus ≥3 → ≥4（`publish-extensive-reading-candidate.js check` 的警告阈值同步，仍只警告）。
+- **回放验证**：用扩大后的 runtime 对 10-09 至 10-15 的 14 个课时重新排序，14 个都放进了同词根组，用校验器同一套 `checkCore` / `checkPm` / `checkExposure` 检查推荐结果，0 个违规。
+- **守卫**：规则文件与生成脚本的轮换名额都必须是 160；`review_groups` 开启且排序与检查脚本都实现；说明书保留“至少 10 个 / 至少 15 个 / review_groups / 12–16 / 至少 4 个 tier=focus”。测试 `test-check-recurrence.js` 12 项。
+- **不变**：新词节奏、词卡数量、复习循环、Validator、发布流程。

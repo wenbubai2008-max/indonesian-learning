@@ -307,9 +307,10 @@ function check(repo, expectedDate, candidatePath) {
     else errors.push(`review word "${w}" is not a learned-but-not-mastered word (not in focus_pool, review_pool or recurrence_pool)`);
   }
   const n = (article.review_words || []).length;
-  if (n < 8) warnings.push(`only ${n} review words (target 8-12)`);
-  if (n > 12) warnings.push(`${n} review words (target 8-12; make sure the text still reads naturally)`);
-  if (tiers.focus.length < 3) warnings.push(`only ${tiers.focus.length} focus_pool words (target at least 3)`);
+  // 2026-10-15 (user decision): 12-16 review words, at least 4 focus words (was 8-12 / 3). Warnings only.
+  if (n < 12) warnings.push(`only ${n} review words (target 12-16)`);
+  if (n > 16) warnings.push(`${n} review words (target 12-16; make sure the text still reads naturally)`);
+  if (tiers.focus.length < 4) warnings.push(`only ${tiers.focus.length} focus_pool words (target at least 4)`);
   if (!article.dialogue) warnings.push('no dialogue (target: 4-6 colloquial lines about the story)');
   const report = { status: errors.length ? 'error' : 'ok', date: expectedDate, words: stats.words, dialogue_lines: stats.dialogue_lines,
     review_words: n, by_tier: tiers, errors, warnings };
