@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-15T03:40:32.205Z",
+    "runtime_generated_at": "2026-10-15T04:10:34.716Z",
     "lesson_watermark": "2026-10-15 08:00",
     "index_updated": "2026-10-15",
-    "runtime_hash": "b38c117cd22bbfef0b62b6d8e599335ee1c3a8eec3c275fc2745419c4eee0564",
+    "runtime_hash": "5b35b746ac6f444fd1acbe49872582effcfa8871eafe9b5ce1fe235529c1b931",
     "index_hash": "36a9bdc6d4a6a06dcb7d423cd47b468b494888b3aa6e88c41f9b0201cbac224d",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
@@ -3280,16 +3280,6 @@
         ""
       ],
       [
-        "ketiduran",
-        5,
-        0,
-        "",
-        "",
-        "不小心睡着、睡过头",
-        "tidur",
-        ""
-      ],
-      [
         "mengalami",
         5,
         0,
@@ -3367,6 +3357,16 @@
         "",
         "优先事项；优先级",
         "prioritas",
+        ""
+      ],
+      [
+        "akhirnya",
+        5,
+        0,
+        "",
+        "",
+        "终于；最后结果是",
+        "akhir",
         ""
       ],
       [
