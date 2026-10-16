@@ -98,7 +98,7 @@
   function finalReviewHtml(x){
     if(!x.review||Array.isArray(x.review))return '';
     const steps=Array.isArray(x.review.steps)?x.review.steps:(Array.isArray(x.review.items)?x.review.items:[]);if(!steps.length)return '';
-    return sec(x.review.title||'最后 5 分钟复盘',steps.map(s=>`<div class="dailyFixItem">${esc(typeof s==='string'?s:(s.text||''))}</div>`).join(''),'dailyLightExtra dailyReviewPatch');
+    return sec(x.review.title||'最后 5 分钟复盘',steps.map(s=>{const t=typeof s==='string'?s:(s.text||'');return typeof window.reviewReadableHtml==='function'?window.reviewReadableHtml(t,x.vocab):`<div class="dailyFixItem">${esc(t)}</div>`}).join(''),'dailyLightExtra dailyReviewPatch');
   }
 
   async function markSameDayAm(x,date,s){
