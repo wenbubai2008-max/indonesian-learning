@@ -30,6 +30,8 @@ on:
       - 'data/weakness-sync-client.js'
       - '.github/scripts/test-handoff-drill.js'
       - '.github/scripts/test-training-sync.js'
+      - '.github/scripts/test-lesson-end-recall.js'
+      - 'data/lesson-end-recall.js'
       - '.github/scripts/test-review-cycle.js'
       - '.github/scripts/review-rotation.js'
       - '.github/scripts/rank-review-candidates.js'
@@ -166,6 +168,8 @@ jobs:
           node --check data/weakness-sync-client.js
           node --check data/lesson-answer-signal.js
           node .github/scripts/test-training-sync.js
+          node --check data/lesson-end-recall.js
+          node .github/scripts/test-lesson-end-recall.js
           node .github/scripts/test-review-cycle.js
           node --check .github/scripts/build-vocab-profile.js
           node --check .github/scripts/write-vocab-profile-snapshot.js

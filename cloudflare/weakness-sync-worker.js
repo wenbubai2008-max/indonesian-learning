@@ -58,8 +58,20 @@ async function writeGitHub(env,snapshot){
 const TRAIN_KEY='training-state-v1';
 const TRAIN_FIELDS={quick:'last',listen:'last_at',auto:'last_at'};
 function tsAny(v){if(!v)return 0;if(typeof v==='number')return v;const n=Date.parse(String(v).replace(' ','T'));return Number.isFinite(n)?n:0;}
+// 2026-10-16: lesson-end recall (self-report). Per word one history entry per day; the EARLIEST attempt of a day wins,
+// so a later answer on another device never replaces the day's first recall. Same rule as data/lesson-end-recall.js.
+function mergeRecall(a,b){
+  const by={};
+  [a,b].forEach(r=>{if(!r||typeof r!=='object')return;const hist=Array.isArray(r.hist)&&r.hist.length?r.hist:(r.day?[{day:r.day,result:r.result,at:r.at,lesson:r.lesson}]:[]);
+    hist.slice(0,60).forEach(h=>{if(!h||!/^\d{4}-\d{2}-\d{2}$/.test(h.day||'')||!['fast','slow','fail'].includes(h.result))return;const cur=by[h.day];if(!cur||tsAny(h.at)<tsAny(cur.at))by[h.day]={day:h.day,result:h.result,at:String(h.at||'').slice(0,40),lesson:String(h.lesson||'').slice(0,20)};});});
+  const hist=Object.keys(by).sort().slice(-20).map(d=>by[d]);if(!hist.length)return null;
+  const top=hist[hist.length-1];return {day:top.day,result:top.result,at:top.at,lesson:top.lesson,hist};
+}
 function mergeTraining(base,incoming){
   const out={};
+  const rc=Object.assign({},base&&base.recall||{}),ri=incoming&&incoming.recall||{};
+  Object.keys(ri).slice(0,5000).forEach(k0=>{const k=norm(k0);if(!k||JSON.stringify(ri[k0]||null).length>4000)return;const m=mergeRecall(rc[k],ri[k0]);if(m)rc[k]=m;});
+  out.recall=rc;
   Object.keys(TRAIN_FIELDS).forEach(mode=>{
     const field=TRAIN_FIELDS[mode],cur=Object.assign({},base&&base[mode]||{}),inc=incoming&&incoming[mode]||{};
     Object.keys(inc).slice(0,5000).forEach(k0=>{
@@ -74,7 +86,9 @@ function mergeTraining(base,incoming){
 async function loadTraining(env){
   if(!env.WEAK_SYNC_KV)throw new Error('Missing WEAK_SYNC_KV binding');
   const x=await env.WEAK_SYNC_KV.get(TRAIN_KEY,'json');
-  return x&&x.modes?x:{version:1,updated_at:null,modes:{quick:{},listen:{},auto:{}}};
+  const t=x&&x.modes?x:{version:1,updated_at:null,modes:{quick:{},listen:{},auto:{}}};
+  if(!t.modes.recall)t.modes.recall={}; // presence of modes.recall tells the page this Worker can sync lesson-end recall
+  return t;
 }
 // 2026-10-14 (user decision): the 5-minute cron used to write every change to GitHub, so practice sessions produced a
 // commit (and a runtime rebuild) every few minutes. Devices sync through KV directly, so GitHub only needs the state
