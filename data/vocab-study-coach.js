@@ -5,15 +5,25 @@
   const SESSION_KEY='indo_vocab_coach_daily_session_v1';
   const ROUND_KEY='indo_vocab_skill_rounds_v1';
   const HOUR=3600000,DAY=24*HOUR;
+  // 2026-10-15 (user-approved plan): words first taught 1-30 days ago that a skill has never checked get a capped share of
+  // every round, so new words are recalled within days instead of waiting weeks. Caps are upper bounds; unused slots go
+  // back to the normal order. Listening is unchanged. RECALL_KEY is written by the lesson-end recall (self-report only):
+  // it only reorders training, never counts as a pass, never touches mastery or due dates.
+  const RECALL_KEY='indo_lesson_recall_v1';
+  const LANE={quick:{page:10,cap:4},auto:{page:8,cap:3}},LANE_MAX_AGE=30,PLAN_LANE={auto:1,quick:1};
+  const RECALL_RANK={fail:0,slow:1,'':2,fast:3};
   const norm=s=>String(s||'').trim().toLowerCase();
   const time=v=>{const n=typeof v==='number'?v:Date.parse(String(v||''));return Number.isFinite(n)&&n>0?n:0};
   const read=(key,fallback)=>{try{const x=JSON.parse(root.localStorage.getItem(key)||'null');return x&&typeof x==='object'?x:fallback}catch(e){return fallback}};
   const write=(key,x)=>{try{root.localStorage.setItem(key,JSON.stringify(x));return true}catch(e){return false}};
   function day(now){const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(now)),m=Object.fromEntries(p.filter(x=>x.type!=='literal').map(x=>[x.type,x.value]));return m.year+'-'+m.month+'-'+m.day}
-  function taught(){const m=new Map();(root.DAILY_VOCAB_DB||[]).forEach(x=>{const k=norm(x&&x.word);if(k&&x.cn&&!m.has(k))m.set(k,{word:x.word,cn:x.cn,last_seen:x.last_seen||x.first_seen||''})});return m}
+  function taught(){const m=new Map();(root.DAILY_VOCAB_DB||[]).forEach(x=>{const k=norm(x&&x.word);if(k&&x.cn&&!m.has(k))m.set(k,{word:x.word,cn:x.cn,last_seen:x.last_seen||x.first_seen||'',first:String(x.first_seen||'').slice(0,10)})});return m}
+  // Age in Jakarta days since the word was FIRST formally taught (first_seen), not since it last appeared in a lesson.
+  function ageDays(first,now){if(!/^\d{4}-\d{2}-\d{2}$/.test(first||''))return null;const a=Date.parse(first+'T00:00:00Z'),b=Date.parse(day(now)+'T00:00:00Z');return Number.isFinite(a)&&Number.isFinite(b)?Math.round((b-a)/DAY):null}
+  function recallMap(){const x=read(RECALL_KEY,{});return x&&x.words&&typeof x.words==='object'?x.words:{}}
   function snapshot(){const mastered={};try{if(root.WeaknessPool&&root.WeaknessPool.listMastered)root.WeaknessPool.listMastered().forEach(x=>{mastered[norm(x.word)]=x})}catch(e){}
     let weak={};try{if(root.WeaknessPool)weak=root.WeaknessPool.focusMap?root.WeaknessPool.focusMap():root.WeaknessPool.activeMap()}catch(e){}
-    return {items:taught(),mastered,weak:weak||{},quick:read('indo_quick_practice_state',{}),listen:read('indo_listen_stats_v1',{}),auto:read('indo_automation_training_state_v1',{}),requests:read(KNOWN_KEY,{})};
+    return {items:taught(),mastered,weak:weak||{},quick:read('indo_quick_practice_state',{}),listen:read('indo_listen_stats_v1',{}),auto:read('indo_automation_training_state_v1',{}),requests:read(KNOWN_KEY,{}),recall:recallMap()};
   }
   function status(mode,word,now=Date.now(),src){
     const s=src||snapshot(),k=norm(word),item=s.items.get(k);if(!item||!['quick','listen','auto'].includes(mode))return null;
@@ -42,11 +52,16 @@
       const req=s.requests[k];if(req){due=Number(req.due_at)||time(req.requested_at)+DAY;kind='verification'}
       score=(lastResult==='fail'?110:0)+(old.status==='active'?55:0)+(weak&&weak.reasons&&weak.reasons.includes('automation_fail')?90:0)+(req?130:0)+(!last&&!mastered?22:0);
     }
+    // Lesson-end recall (self-report, quick/auto only) counts while it is newer than this skill's own last practice:
+    // 想不起来 first, 有点慢 next, 马上想到 lowest. Without recall data (before PR 2 / other device) nothing changes.
+    const rc=LANE[mode]&&s.recall&&s.recall[k],recall=rc&&['fail','slow','fast'].includes(rc.result)&&time(rc.at)>last?rc.result:'';
+    if(recall==='fail')score+=40;else if(recall==='slow')score+=15;else if(recall==='fast')score-=15;
+    const age=ageDays(item.first,now),lane=!!LANE[mode]&&kind==='new'&&!mastered&&age!=null&&age>=1&&age<=LANE_MAX_AGE;
     const lastToday=last>0&&day(last)===day(now);
     const overdue=due&&due!==Infinity?Math.max(0,Math.floor((now-due)/DAY)):0;
     score+=Math.min(110,overdue*3)+(stable?0:18);
     const ready=now>=due&&(mode==='auto'||!lastToday); // Stage failures may be retried after their own 1/3/6h delay.
-    return {word:item.word,cn:item.cn,taught_at:item.last_seen||'',mode,stage:mode==='auto'?(s.requests[k]?1:Math.max(1,Math.min(4,level))):1,score,due_at:due,last_at:last,ready,stable,kind,last_result:lastResult,level,weak:!!weak,last_today:lastToday};
+    return {word:item.word,cn:item.cn,taught_at:item.last_seen||'',mode,stage:mode==='auto'?(s.requests[k]?1:Math.max(1,Math.min(4,level))):1,score,due_at:due,last_at:last,ready,stable,kind,last_result:lastResult,level,weak:!!weak,last_today:lastToday,age,lane,recall};
   }
   function candidates(mode,now=Date.now()){
     const s=snapshot(),rows=[];s.items.forEach((_,k)=>{const x=status(mode,k,now,s);if(x&&x.ready)rows.push(x)});
@@ -58,7 +73,33 @@
       return b.score-a.score||(a.due_at||0)-(b.due_at||0)||Number(b.weak)-Number(a.weak)||String(a.taught_at).localeCompare(String(b.taught_at))||a.word.localeCompare(b.word);
     });
     // Due/weak words first, then unverified words and long-term checks. No random starvation.
-    return rows;
+    return arrange(mode,rows);
+  }
+  // Recent-new-word lane: three age groups — taught 1-2 days ago, 3-7 days ago, 8-30 days ago (backlog is never dropped
+  // after day 7). Quotas cap 4 → 2/1/1, cap 3 → 1/1/1, cap 1 → first non-empty group; unused quota refills in the same
+  // group order. Inside a group: 想不起来 > 有点慢 > no record > 马上想到, then older first.
+  function laneSort(a,b){return (RECALL_RANK[a.recall||'']-RECALL_RANK[b.recall||''])||(b.age-a.age)||a.word.localeCompare(b.word)}
+  function lanePicks(rows,cap,skip){
+    const lane=rows.filter(x=>x.lane&&!(skip&&skip.has(norm(x.word))));
+    const groups=[lane.filter(x=>x.age<=2),lane.filter(x=>x.age>=3&&x.age<=7),lane.filter(x=>x.age>=8)].map(g=>g.sort(laneSort));
+    const quota=cap>=4?[cap-2,1,1]:cap===3?[1,1,1]:[cap,0,0],take=groups.map((g,i)=>Math.min(g.length,quota[i]));
+    let left=cap-take.reduce((a,b)=>a+b,0);
+    for(let i=0;i<3&&left>0;i++){const more=Math.min(left,groups[i].length-take[i]);take[i]+=more;left-=more}
+    return groups.flatMap((g,i)=>g.slice(0,take[i]));
+  }
+  function arrange(mode,rows){
+    const cfg=LANE[mode];if(!cfg||!rows.some(x=>x.lane))return rows;
+    const picks=new Set(lanePicks(rows,cfg.cap));
+    const rest=rows.filter(x=>!x.lane),top=new Set([...rest.slice(0,Math.max(0,cfg.page-picks.size)),...picks]);
+    // First page = the best non-lane rows plus at most `cap` lane picks, in the original order; everything else follows unchanged.
+    return [...rows.filter(x=>top.has(x)),...rows.filter(x=>!top.has(x))];
+  }
+  // Words first taught in the last 7 days (today excluded) and how many each skill has already checked at least once.
+  function newWordCoverage(now=Date.now()){
+    const s=snapshot(),out={days:7,total:0,auto:0,quick:0};
+    s.items.forEach((item,k)=>{const age=ageDays(item.first,now);if(age==null||age<1||age>7)return;out.total++;
+      const a=s.auto[k]||s.auto[item.word]||{},q=s.quick[k]||s.quick[item.word]||{};if(time(a.last_at))out.auto++;if(time(q.last))out.quick++;});
+    return out;
   }
   function statistics(mode,now=Date.now()){
     const s=snapshot(),result={taught:s.items.size,due:0,future:0,stable:0,unverified:0,today:0};
@@ -102,9 +143,16 @@
   function dailySession(now=Date.now()){
     const old=read(SESSION_KEY,{}),d=day(now);
     if(old.version===2&&old.day===d&&Array.isArray(old.items))return old;
-    const all=[];for(const mode of ['auto','listen','quick']){
-      const quota=mode==='auto'?3:mode==='listen'?3:2;
-      candidates(mode,now).slice(0,quota).forEach(x=>all.push({word:x.word,mode,stage:x.stage}));
+    const all=[],laneUsed=new Set();for(const mode of ['auto','listen','quick']){
+      const quota=mode==='auto'?3:mode==='listen'?3:2,rows=candidates(mode,now);
+      // At most PLAN_LANE[mode] recent new words per skill (<= 2 of the 8); a word already picked for another skill is skipped.
+      // Today's words are age 0 and never in the lane, so a plan frozen before today's lesson publishes misses nothing and
+      // is never reset; yesterday's words are already age 1 at midnight.
+      const lanes=PLAN_LANE[mode]?lanePicks(rows,PLAN_LANE[mode],laneUsed):[];
+      lanes.forEach(x=>laneUsed.add(norm(x.word)));
+      const pick=[...lanes,...rows.filter(x=>!x.lane)].slice(0,quota);
+      if(pick.length<quota)rows.filter(x=>x.lane&&!pick.includes(x)).slice(0,quota-pick.length).forEach(x=>pick.push(x));
+      pick.forEach(x=>all.push({word:x.word,mode,stage:x.stage}));
     }
     const s={version:2,day:d,items:all,done:{}};write(SESSION_KEY,s);return s;
   }
@@ -129,7 +177,7 @@
   const assigned=(mode,now=Date.now())=>plan(now).filter(x=>x.mode===mode);
   const eligible=(word,now=Date.now(),mode='auto')=>{const x=status(mode,word,now);return !!x&&x.ready};
   const eligibleSet=(now=Date.now(),mode='auto')=>new Set(candidates(mode,now).map(x=>norm(x.word)));
-  root.VocabStudyCoach={day,status,candidates,statistics,round,markAnswer,plan,assigned,assignedSet:(mode,now=Date.now())=>new Set(assigned(mode,now).map(x=>norm(x.word))),dailyProgress:progress,detail,eligible,eligibleSet,supplement:(mode,now=Date.now(),max=10)=>candidates(mode,now).slice(0,max),quickSupplement:(now=Date.now(),max=10)=>candidates('quick',now).slice(0,max),pendingSet:()=>new Set(Object.keys(read(KNOWN_KEY,{}))),requestVerification,clearRequest,words:()=>[...taught().values()]};
+  root.VocabStudyCoach={day,status,candidates,statistics,round,markAnswer,plan,assigned,assignedSet:(mode,now=Date.now())=>new Set(assigned(mode,now).map(x=>norm(x.word))),dailyProgress:progress,detail,eligible,eligibleSet,supplement:(mode,now=Date.now(),max=10)=>candidates(mode,now).slice(0,max),quickSupplement:(now=Date.now(),max=10)=>candidates('quick',now).slice(0,max),pendingSet:()=>new Set(Object.keys(read(KNOWN_KEY,{}))),requestVerification,clearRequest,newWordCoverage,words:()=>[...taught().values()]};
   root.addEventListener('automation-training-updated',e=>{const d=e&&e.detail||{};if(d.word&&d.state)clearRequest(d.word,d.state.last_at)});
   // Freeze only the small recommendation list, never freeze any mode's full eligible vocabulary.
   if(root.document){if(root.document.readyState==='loading')root.document.addEventListener('DOMContentLoaded',()=>dailySession());else dailySession()}

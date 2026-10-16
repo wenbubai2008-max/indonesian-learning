@@ -42,6 +42,7 @@
 |---|---|---|---|---|
 | `indo_vocab_coach_daily_session_v1` | 今天的统一训练清单及完成情况 | 对象：`{version: 2, day: 'YYYY-MM-DD', items: [{mode, word…}], done: {}}` | `vocab-study-coach.js` | 同左 |
 | `indo_vocab_coach_verify_requests_v1` | "再验证一次"的请求 | 对象：单词 → `{requested_at: ISO 时间, due_at: 毫秒时间戳}` | `vocab-study-coach.js` | 同左 |
+| `indo_lesson_recall_v1` | 课末主动回想（自评，PR 2 写入；PR 1 只读，缺失时排序不变） | 对象：`{version: 1, words: {单词: {day: 'YYYY-MM-DD', result: 'fail' / 'slow' / 'fast', at: ISO 时间}}}`，每词只保留当天第一次作答 | `vocab-study-coach.js`（只读，仅调整快速练习/自动训练的新词顺序） | 课程页课末回想（PR 2） |
 | `indo_vocab_skill_rounds_v1` | 三种训练各自当天的一轮词表 | 对象：模式（quick / listen / auto）→ `{version: 1, day, items: [单词], done: {单词: true}}` | `vocab-study-coach.js` | 同左 |
 | `indo_vocab_profile_evidence_v2` | 词汇画像用的本机答题证据（只保留最近若干条） | 数组（细节见代码） | `vocab-profile-evidence.js` | 同左、`vocab-profile-ui.js` |
 | `indo_vocab_profile_evidence_v1` | 上面的旧版本；**保留**，仅用于迁移 | 数组 | （不再写入） | `vocab-profile-evidence.js`（迁移） |

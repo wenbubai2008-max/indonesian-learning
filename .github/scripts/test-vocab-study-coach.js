@@ -103,3 +103,48 @@ const tie=app(['acara','zaman','tetangga']);
 tie.root.DAILY_VOCAB_DB[0].last_seen='2026-10-13 08:00';tie.root.DAILY_VOCAB_DB[1].last_seen='2026-09-01 08:00';tie.root.DAILY_VOCAB_DB[2].last_seen='2026-10-01 18:00';
 assert.deepEqual(Array.from(tie.coach.candidates('auto',start).map(x=>x.word)),['zaman','tetangga','acara'],'Ties go to the word longest without a lesson appearance, not to alphabetical order');
 console.log('Study coach tests passed: independent abilities and due dates, 2/7/30-day ladder, backlog, persistent rounds, legacy mastery, requested verification.');
+// 2026-10-16 PR 1: recent-new-word lane. Age comes from first_seen; caps quick 4/10, auto 3/8, plan <= 2 of 8; recall
+// signals (indo_lesson_recall_v1) reorder only inside the lane and only when present.
+{
+  const now=Date.parse('2026-10-16T03:00:00Z'),dd=n=>new Date(now-n*D+7*H).toISOString().slice(0,10);
+  const old=Array.from({length:30},(_,i)=>'lama'+String(i).padStart(2,'0'));
+  const fresh=['baru1a','baru1b','baru1c','baru2a','baru5a','baru5b','baru9a','baru40','hariini'];
+  const L=app([...old,...fresh]);
+  const ages={baru1a:1,baru1b:1,baru1c:1,baru2a:2,baru5a:5,baru5b:5,baru9a:9,baru40:40,hariini:0};
+  L.root.DAILY_VOCAB_DB.forEach(x=>{if(ages[x.word]!=null){x.first_seen=dd(ages[x.word]);x.last_seen=dd(0)}else{x.first_seen='2026-08-01';x.last_seen='2026-08-01'}});
+  // Old words have prior auto/quick records that are due now, so without the lane they would fill every page.
+  const auto={},qs={};old.forEach((w,i)=>{auto[w]={last_at:new Date(now-3*D).toISOString(),stage:2,next_due:new Date(now-D-i*60000).toISOString(),last_result:'pass'};qs[w]={last:now-3*D,review_level:1,review_due:now-D-i*60000,last_result:'right',streak:1}});
+  L.write('indo_automation_training_state_v1',auto);L.write('indo_quick_practice_state',qs);
+  const st=L.coach.status('auto','baru1a',now);
+  assert.equal(st.age,1,'Age is counted from first_seen, not last_seen');assert.equal(st.lane,true);
+  assert.equal(L.coach.status('auto','hariini',now).lane,false,'Words taught today wait until tomorrow');
+  assert.equal(L.coach.status('auto','baru40',now).lane,false,'Lane window is 30 days; older unverified words keep the normal order');
+  assert.equal(L.coach.status('listen','baru1a',now).lane,false,'Listening is unchanged');
+  const page=(mode,n)=>L.coach.candidates(mode,now).slice(0,n).map(x=>x.word);
+  const isNew=w=>/^baru/.test(w);
+  const a8=page('auto',8),q10=page('quick',10);
+  assert.equal(a8.filter(isNew).length,3,'Auto: exactly the 3-word cap when enough new words exist');
+  assert.equal(q10.filter(isNew).length,4,'Quick: exactly the 4-word cap');
+  assert.ok(a8.filter(isNew).some(w=>/^baru[12]/.test(w))&&a8.filter(isNew).some(w=>/^baru[59]/.test(w)),'Recent and backlog words share the lane');
+  assert.ok(q10.includes('baru9a'),'Backlog older than 7 days is not dropped');
+  assert.equal(q10.filter(w=>!isNew(w)).length,6,'Due reviews keep at least 6 of 10 quick slots');
+  // Recall signals: fail first, fast last; stale recall (older than the skill's own practice) ignored.
+  L.write('indo_lesson_recall_v1',{version:1,words:{baru1c:{day:dd(0),result:'fail',at:new Date(now-H).toISOString()},baru1a:{day:dd(0),result:'fast',at:new Date(now-H).toISOString()},baru5b:{day:dd(0),result:'slow',at:new Date(now-H).toISOString()}}});
+  const a8r=page('auto',8).filter(isNew);
+  assert.ok(a8r.includes('baru1c')&&!a8r.includes('baru1a'),'Recall fail is picked first and fast drops behind other recent words');
+  assert.ok(a8r.includes('baru5b'),'Slow backlog word outranks unrecalled backlog');
+  assert.equal(L.coach.status('listen','baru1c',now).recall,'','Recall never alters listening');
+  // Daily plan: <= 2 lane words of 8, never both on the same word, plan frozen for the day.
+  const plan=L.coach.dailySession?L.coach.dailySession(now):L.coach.plan(now);
+  const items=(plan.items||plan).map(x=>x.word);
+  assert.ok(items.filter(isNew).length<=2&&items.filter(isNew).length>=1,'Daily plan uses at most 2 recent-new slots');
+  assert.equal(new Set(items.filter(isNew)).size,items.filter(isNew).length,'Lane word is not repeated across skills in the plan');
+  const cov=L.coach.newWordCoverage(now);
+  assert.equal(cov.total,6,'Coverage counts words first taught 1-7 days ago');assert.equal(cov.auto,0);
+  // Compat: with no first_seen anywhere the order equals the pre-lane order (covered by the tests above) and no lane exists.
+  const C=app(['satu','dua']);assert.equal(C.coach.status('auto','satu',now).lane,false);assert.equal(C.coach.status('auto','satu',now).age,null);
+  // Mastered new words never take a lane slot.
+  const M=app(['kuasa'],[{word:'kuasa',last_mastered:new Date(now-D).toISOString()}]);M.root.DAILY_VOCAB_DB[0].first_seen=dd(2);
+  assert.equal(M.coach.status('auto','kuasa',now).lane,false);assert.equal(M.coach.status('quick','kuasa',now).lane,false);
+}
+console.log('New-word lane tests passed: first_seen age, 4/3 caps with recent+backlog split, recall ordering, plan <= 2, coverage, compat.');
