@@ -681,7 +681,7 @@ try {
     ok(indexHtml.includes('data/weekly-memory-report.js?v=')&&indexHtml.indexOf('data/weekly-memory-report.js')<indexHtml.indexOf('data/vocab-profile-ui.js'),'index loads the weekly report before the profile UI');
     ok(!/setItem|removeItem|recordLessonWrong|markMastered/.test(wr),'weekly report never writes');
     ok(/MIN_SAMPLE=10/.test(wr)&&/样本不足/.test(ui)&&/age<7\|\|age>30/.test(wr),'retention uses formal answers on words 7-30 days after first teaching, with a 10-answer minimum');
-    ok(/\['weekly','本周报告'\]/.test(ui),'profile has the 本周报告 tab');
+    ok(/\['week','本周'\]/.test(ui)&&ui.includes('weeklyHTML()'),'profile 本周 tab shows the weekly report');
   }
 
   // 2026-10-14: the three scheduled tasks' full instructions live in docs/tasks/ (the task prompts only bootstrap).
