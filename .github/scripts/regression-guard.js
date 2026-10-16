@@ -656,6 +656,17 @@ try {
     ok(coach.includes("RECALL_KEY='indo_lesson_recall_v1'")&&!/recordLessonWrong/.test(coach),'lesson-end recall is read-only in the coach and never written as a lesson error');
   }
 
+  // 2026-10-16 (REGRESSION-GUARD §24): lesson-end recall is a self-report: separate key, first attempt wins, no side effects.
+  {
+    const rc=read('data/lesson-end-recall.js'),wk=read('cloudflare/weakness-sync-worker.js'),sc=read('data/training-sync-client.js');
+    ok(indexHtml.includes('data/lesson-end-recall.js?v=')&&indexHtml.indexOf('data/lesson-end-recall.js')<indexHtml.indexOf('data/training-sync-client.js'),'index loads lesson-end recall before the training sync client');
+    ok(!/\.recordLessonWrong\s*\(|markMastered\s*\(|markAnswer\s*\(|indo_automation_training_state_v1|indo_quick_practice_state/.test(rc),'lesson-end recall never writes lesson errors, mastery or training passes');
+    ok(rc.includes("KEY='indo_lesson_recall_v1'")&&/if\(todayResult\(word,now\)\)return false;/.test(rc),'lesson-end recall keeps only the first attempt per word per day');
+    ok(/taughtOn\(yesterday,session\)/.test(rc)&&!/while\(words\.length</.test(rc),'lesson-end recall uses the real number of yesterday new words (no padding)');
+    ok(/function mergeRecall\(a,b\)/.test(wk)&&/tsAny\(h\.at\)<tsAny\(cur\.at\)/.test(wk)&&/modes\.recall\)t\.modes\.recall=\{\}/.test(wk),'Worker keeps the earliest recall per word per day and advertises modes.recall');
+    ok(/m\.recall_supported/.test(sc)&&/function recallStatus\(\)/.test(sc),'recall is pushed only to a Worker that supports it; the page says 仅本机保存 otherwise');
+  }
+
   // 2026-10-14: the three scheduled tasks' full instructions live in docs/tasks/ (the task prompts only bootstrap).
   // These markers stop a later edit from silently dropping a contract piece (see REGRESSION-GUARD §2.A and §20).
   {

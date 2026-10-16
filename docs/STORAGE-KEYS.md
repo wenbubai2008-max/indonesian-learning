@@ -21,7 +21,7 @@
 | `indo_weak_sync_meta_v1` | 每个词的最后修改时间，用于云端/本机冲突时"新的覆盖旧的" | 对象：小写单词 → `{updated_at: ISO 时间}` | `weakness-sync-client.js` | 同左 |
 | `indo_weak_sync_config_v1` | 同步服务地址和密钥（**机密**） | 对象：`{endpoint, key}` | `weakness-sync-client.js`（`configure`）、`sync-device-setup.js`（扫码设置） | `weakness-sync-client.js`、`training-sync-client.js`、`sync-device-setup.js`（生成二维码） |
 | `indo_weak_sync_device_v1` | 本设备编号 | 字符串 | `weakness-sync-client.js` | `weakness-sync-client.js`、`training-sync-client.js` |
-| `indo_training_sync_meta_v1` | 三个训练进度的同步进度（已推送到哪个时间、服务端是否支持） | 对象：`{pushed: {quick, listen, auto: 毫秒时间戳}, last_push, unsupported_until}` | `training-sync-client.js`（`sync-device-setup.js` 也会引用） | 同左 |
+| `indo_training_sync_meta_v1` | 三个训练进度的同步进度（已推送到哪个时间、服务端是否支持） | 对象：`{pushed: {quick, listen, auto, recall: 毫秒时间戳}, last_push, unsupported_until, recall_supported: 服务端 GET /training 是否返回 modes.recall}` | `training-sync-client.js`（`sync-device-setup.js` 也会引用） | 同左 |
 | `indo_weakness_dismissed` | 旧版"已掌握/忽略"记录，现在仍参与弱项池导入时的状态一致化 | 对象：小写单词 → `{word, at: 毫秒时间戳}` | `weakness-dismiss.js`、`weakness-pool.js` | 同左 |
 | `indo_weak_manual_pause_v1` | 在"弱项强化"里手动暂停的词 | 对象：小写单词 → `true` | `weakness-paging-roots.js` | 同左 |
 | `indo_unknown_words` | 旧版"陌生词"列表（阅读里点词加入），启动时迁移进弱项池 | 对象：小写单词 → `{word, cn, times_seen, last_seen…}` | `reading-word-lookup.js`、`vocab-controller-20260917.js` | `weakness-pool.js`（迁移）、`home-learning-upgrade-v2.js`、`weakness-dismiss.js` |
@@ -42,7 +42,7 @@
 |---|---|---|---|---|
 | `indo_vocab_coach_daily_session_v1` | 今天的统一训练清单及完成情况 | 对象：`{version: 2, day: 'YYYY-MM-DD', items: [{mode, word…}], done: {}}` | `vocab-study-coach.js` | 同左 |
 | `indo_vocab_coach_verify_requests_v1` | "再验证一次"的请求 | 对象：单词 → `{requested_at: ISO 时间, due_at: 毫秒时间戳}` | `vocab-study-coach.js` | 同左 |
-| `indo_lesson_recall_v1` | 课末主动回想（自评，PR 2 写入；PR 1 只读，缺失时排序不变） | 对象：`{version: 1, words: {单词: {day: 'YYYY-MM-DD', result: 'fail' / 'slow' / 'fast', at: ISO 时间}}}`，每词只保留当天第一次作答 | `vocab-study-coach.js`（只读，仅调整快速练习/自动训练的新词顺序） | 课程页课末回想（PR 2） |
+| `indo_lesson_recall_v1` | 课末主动回想（自评，不算训练通过、不计入掌握、不改到期、不写课程错题） | 对象：`{version: 1, words: {单词(小写): {day, result: 'fail' / 'slow' / 'fast', at: ISO 时间, lesson: 'YYYY-MM-DD-am', hist: [{day, result, at, lesson}]（每天一条，最多 20 条）}}, lessons: {'YYYY-MM-DD-am': {words: [{word, cn, group}], created_at}}（最近 10 节课的选词，刷新不变）}`。每词每天只算第一次作答；跨设备合并时同一天取最早的那次 | `vocab-study-coach.js`（只读，调整快速练习/自动训练的新词顺序）、`training-sync-client.js`（同步 words） | `lesson-end-recall.js`；`training-sync-client.js`（合并其他设备的记录） |
 | `indo_vocab_skill_rounds_v1` | 三种训练各自当天的一轮词表 | 对象：模式（quick / listen / auto）→ `{version: 1, day, items: [单词], done: {单词: true}}` | `vocab-study-coach.js` | 同左 |
 | `indo_vocab_profile_evidence_v2` | 词汇画像用的本机答题证据（只保留最近若干条） | 数组（细节见代码） | `vocab-profile-evidence.js` | 同左、`vocab-profile-ui.js` |
 | `indo_vocab_profile_evidence_v1` | 上面的旧版本；**保留**，仅用于迁移 | 数组 | （不再写入） | `vocab-profile-evidence.js`（迁移） |

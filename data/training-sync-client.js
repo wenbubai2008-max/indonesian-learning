@@ -10,6 +10,17 @@
     listen:{key:'indo_listen_stats_v1',field:'last_at',event:'listening-weakness-updated'},
     auto:{key:'indo_automation_training_state_v1',field:'last_at',event:'automation-training-updated'}};
   const DEBOUNCE_MS=10000,RETRY_404_MS=6*3600000;
+  // 2026-10-16: lesson-end recall (indo_lesson_recall_v1 → words). Synced only after the Worker answers GET /training
+  // with modes.recall (Worker updated); before that it stays on this device and the lesson shows "仅本机保存".
+  // Merge = LessonRecall.mergeRecord: one entry per word per day, the earliest attempt of that day wins on every device.
+  const RECALL_KEY='indo_lesson_recall_v1';
+  function recallTs(r){return Math.max(0,...((r&&Array.isArray(r.hist)?r.hist:[r]).map(h=>ts(h&&h.at))));}
+  function mergeRecallWords(local,remote){
+    const fn=window.LessonRecall&&window.LessonRecall.mergeRecord;if(typeof fn!=='function')return {merged:local,changed:0};
+    const out=Object.assign({},local);let changed=0;
+    Object.keys(remote||{}).forEach(rk=>{const k=norm(rk),m=fn(out[k],remote[rk]);if(m&&JSON.stringify(m)!==JSON.stringify(out[k]||null)){out[k]=m;changed++;}});
+    return {merged:out,changed};
+  }
   let timer=null,busy=false,lastSig='';
   function norm(s){return String(s||'').trim().toLowerCase();}
   function ts(v){if(!v)return 0;if(typeof v==='number')return v;const n=Date.parse(String(v).replace(' ','T'));return Number.isFinite(n)?n:0;}
@@ -40,6 +51,12 @@
   async function pull(){
     const data=await call('GET');if(!data||!data.modes)return 0;
     let total=0;
+    const m0=meta(),sup=!!(data.modes.recall&&typeof data.modes.recall==='object');
+    if(!!m0.recall_supported!==sup){m0.recall_supported=sup;writeObj(META_KEY,m0);try{window.dispatchEvent(new CustomEvent('training-sync-recall'));}catch(e){}}
+    if(sup){
+      const st=readObj(RECALL_KEY),r=mergeRecallWords(st.words&&typeof st.words==='object'?st.words:{},data.modes.recall);
+      if(r.changed){st.version=1;st.words=r.merged;if(writeObj(RECALL_KEY,st)){total+=r.changed;try{window.dispatchEvent(new CustomEvent('lesson-recall-updated',{detail:{source:'training-sync'}}));}catch(e){}}}
+    }
     Object.keys(MODES).forEach(mode=>{
       const def=MODES[mode],r=mergeMode(readObj(def.key),data.modes[mode]||{},def.field);
       if(r.changed&&writeObj(def.key,r.merged)){total+=r.changed;try{window.dispatchEvent(new CustomEvent(def.event,{detail:{source:'training-sync'}}));}catch(e){}}
@@ -53,21 +70,27 @@
       const keys=Object.keys(d);if(!keys.length)return;modes[mode]=d;n+=keys.length;
       next[mode]=Math.max(Number(since[mode]||0),...keys.map(k=>ts(d[k][def.field])));
     });
+    if(m.recall_supported){
+      const words=readObj(RECALL_KEY).words||{},since0=Number(since.recall||0),d={};
+      Object.keys(words).forEach(k=>{if(recallTs(words[k])>since0)d[k]=words[k];});
+      const keys=Object.keys(d);if(keys.length){modes.recall=d;n+=keys.length;next.recall=Math.max(since0,...keys.map(k=>recallTs(d[k])));}
+    }
     if(!n)return 0;
     const res=await call('POST',{modes,device_id:localStorage.getItem(DEVICE_KEY)||''});
     if(res&&res.ok){const m2=meta();m2.pushed=Object.assign({},m2.pushed||{},next);m2.last_push=new Date().toISOString();writeObj(META_KEY,m2);}
     return n;
   }
-  function signature(){return Object.keys(MODES).map(m=>{const s=localStorage.getItem(MODES[m].key)||'';return s.length+':'+s.slice(-64);}).join('|');}
+  function signature(){return Object.keys(MODES).map(m=>MODES[m].key).concat(RECALL_KEY).map(k=>{const s=localStorage.getItem(k)||'';return s.length+':'+s.slice(-64);}).join('|');}
+  function recallStatus(){const c=cfg();return c.endpoint&&c.key&&meta().recall_supported?'synced':'local';}
   async function run(){
     const c=cfg();if(busy||!c.endpoint||!c.key||!supported())return;
     busy=true;
     try{await pull();await push();lastSig=signature();}catch(e){}finally{busy=false;}
   }
   function schedule(){clearTimeout(timer);timer=setTimeout(run,DEBOUNCE_MS);}
-  Object.keys(MODES).forEach(m=>window.addEventListener(MODES[m].event,e=>{if(!(e&&e.detail&&e.detail.source==='training-sync'))schedule();}));
+  Object.keys(MODES).map(m=>MODES[m].event).concat('lesson-recall-updated').forEach(ev=>window.addEventListener(ev,e=>{if(!(e&&e.detail&&e.detail.source==='training-sync'))schedule();}));
   document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&signature()!==lastSig)run();});
   setInterval(()=>{if(signature()!==lastSig)schedule();},60000);
-  window.TrainingSync={run,pull,push,mergeMode};
+  window.TrainingSync={run,pull,push,mergeMode,mergeRecallWords,recallStatus};
   if(document.readyState==='complete')setTimeout(run,2000);else window.addEventListener('load',()=>setTimeout(run,2000),{once:true});
 })();
