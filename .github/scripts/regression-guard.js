@@ -686,9 +686,11 @@ try {
 
   // 2026-10-16 (REGRESSION-GUARD §29): optional structured review cards; the page falls back to the three strings.
   {
+    // Code checks for this PR's own change; the preflight also runs this guard on the pinned base tree, which predates it.
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
     const hv=read('data/history-v2.js'),vl=read('.github/scripts/validate-lesson-candidate.js');
-    ok(/function reviewCardsHtml\(rc,vocab\)/.test(hv)&&hv.includes("const rc=reviewCardsHtml(x.review_cards,x.vocab);if(rc)h+=sec(no++,'复习',rc);else if(x.review?.length)"),'AM page shows review_cards when present and falls back to the review strings');
-    ok(vl.includes('if(lesson.review_cards!==undefined){')&&vl.includes('"AM_REVIEW_CARDS_ANSWER"')&&vl.includes('Three final review points required'),'validator keeps the 3 review strings required and checks review_cards only when present');
+    okNew(/function reviewCardsHtml\(rc,vocab\)/.test(hv)&&hv.includes("const rc=reviewCardsHtml(x.review_cards,x.vocab);if(rc)h+=sec(no++,'复习',rc);else if(x.review?.length)"),'AM page shows review_cards when present and falls back to the review strings');
+    okNew(vl.includes('if(lesson.review_cards!==undefined){')&&vl.includes('"AM_REVIEW_CARDS_ANSWER"')&&vl.includes('Three final review points required'),'validator keeps the 3 review strings required and checks review_cards only when present');
   }
   // 2026-10-16 (REGRESSION-GUARD §28): review points are shown through the display-only readable renderer.
   {
