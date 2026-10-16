@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T06:13:39.087Z",
+  "updated_at": "2026-10-16T15:59:29.047Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -554,18 +554,23 @@
     "kebaca": {
       "word": "kebaca",
       "status": "active",
-      "updated_at": "2026-10-15T08:37:07.539Z",
+      "updated_at": "2026-10-16T15:54:59.111Z",
       "display": "kebaca",
-      "cn": "看得清；读得出来；不小心被看到（口语）",
+      "cn": "看得清；读得出来；（心思）被看出来；不小心被人看到（口语）",
       "root": "baca",
       "root_cn": "读；阅读",
-      "last_review": "2026-10-15T08:37:07.512Z",
+      "last_wrong": "2026-10-16T15:54:59.027Z",
+      "last_review": "2026-10-16T15:54:59.027Z",
       "last_mastered": "2026-09-14T09:54:54.557Z",
+      "source": "课程小测",
+      "source_date": "2026-10-16",
+      "session": "18:00",
       "reasons": [
-        "quick_wrong"
+        "quick_wrong",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
-      "right_streak": 2
+      "wrong_count": 2,
+      "right_streak": 0
     },
     "kebentur": {
       "word": "kebentur",
@@ -5449,18 +5454,22 @@
     "seolah-olah": {
       "word": "seolah-olah",
       "status": "active",
-      "updated_at": "2026-10-15T08:12:45.028Z",
+      "updated_at": "2026-10-16T15:53:19.771Z",
       "display": "seolah-olah",
-      "cn": "仿佛；好像",
+      "cn": "仿佛；好像（实际上并不是）",
       "root": "olah",
-      "root_cn": "处理；操练（词形关联）",
-      "last_wrong": "2026-10-15T08:12:45.000Z",
-      "last_review": "2026-10-15T08:12:45.000Z",
+      "root_cn": "olah（此处义为“样子、举止”，与 mengolah“加工”的 olah 同形）",
+      "last_wrong": "2026-10-16T15:53:19.681Z",
+      "last_review": "2026-10-16T15:53:19.681Z",
+      "source": "课程小测",
+      "source_date": "2026-10-16",
+      "session": "18:00",
       "reasons": [
         "memory_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "seperti halnya": {
@@ -6034,12 +6043,21 @@
     "membayangkan": {
       "word": "membayangkan",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:46.423Z",
+      "updated_at": "2026-10-16T15:54:43.544Z",
       "display": "membayangkan",
+      "cn": "想象；设想",
+      "root": "bayang",
+      "root_cn": "影子；影像",
+      "last_wrong": "2026-10-16T15:54:43.469Z",
+      "last_review": "2026-10-16T15:54:43.469Z",
+      "source": "课程小测",
+      "source_date": "2026-10-16",
+      "session": "18:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 1,
       "right_streak": 0
     },
     "pingsan": {
@@ -6163,12 +6181,21 @@
     "mengenali": {
       "word": "mengenali",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:46.584Z",
+      "updated_at": "2026-10-16T15:59:18.369Z",
       "display": "mengenali",
+      "cn": "认出；辨认出（凭特征认出来）",
+      "root": "kenal",
+      "root_cn": "认识；熟悉",
+      "last_wrong": "2026-10-16T15:59:18.275Z",
+      "last_review": "2026-10-16T15:59:18.275Z",
+      "source": "课程自检",
+      "source_date": "2026-10-16",
+      "session": "18:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "majalah": {
@@ -30120,6 +30147,51 @@
         "quick_wrong"
       ],
       "wrong_count": 1,
+      "right_streak": 0
+    },
+    "ujung": {
+      "word": "ujung",
+      "status": "active",
+      "updated_at": "2026-10-16T15:39:18.424Z",
+      "display": "ujung",
+      "cn": "结尾",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-16",
+      "session": "19:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "pudar": {
+      "word": "pudar",
+      "status": "active",
+      "updated_at": "2026-10-16T15:39:47.954Z",
+      "display": "pudar",
+      "cn": "褪色了",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-16",
+      "session": "19:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "kuah": {
+      "word": "kuah",
+      "status": "active",
+      "updated_at": "2026-10-16T15:41:40.800Z",
+      "display": "Kuah",
+      "cn": "肉汤",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-16",
+      "session": "19:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
       "right_streak": 0
     }
   }
