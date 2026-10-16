@@ -252,8 +252,11 @@
   function buildCard(row,group,ctx,env){
     const {lex,daily,M}=env,k=norm(row.word),e=lex.get(k)||{},d=daily.get(k)||{};
     const rr=(ctx.candidates?.review||[]).find(x=>norm(x[0])===k);
-    const cn=e.cn||row.cn||rr?.[5]||d.cn||'',root=e.root||row.root||rr?.[6]||d.root||k;
-    const rootCn=e.root_cn||row.root_cn||rr?.[7]||d.root_cn||(root===k?cn:'');
+    const cn=e.cn||row.cn||rr?.[5]||d.cn||'';let root=e.root||row.root||rr?.[6]||d.root||k;
+    // 2026-10-16: a root with no known meaning made the card fail ROOT_CN_MISSING. Look the root up as a word; if it is
+    // still unknown, treat the word as its own root rather than publish an empty root meaning.
+    let rootCn=e.root_cn||row.root_cn||rr?.[7]||d.root_cn||(root===k?cn:'')||(lex.get(norm(root))||{}).cn||(daily.get(norm(root))||{}).cn||'';
+    if(!rootCn){root=k;rootCn=cn;}
     const lexicalSource=Object.keys(e).length?e:d;
     const collocations=deriveCollocations(lexicalSource,k,env);
     const card={
