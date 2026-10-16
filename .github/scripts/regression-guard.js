@@ -675,6 +675,15 @@ try {
     ok(body.length>0&&!/saveState|localStorage|record\(/.test(body),'progress line only reads the state');
   }
 
+  // 2026-10-16 (REGRESSION-GUARD §26): weekly memory report is read-only and keeps self-report apart from accuracy.
+  {
+    const wr=read('data/weekly-memory-report.js'),ui=read('data/vocab-profile-ui.js');
+    ok(indexHtml.includes('data/weekly-memory-report.js?v=')&&indexHtml.indexOf('data/weekly-memory-report.js')<indexHtml.indexOf('data/vocab-profile-ui.js'),'index loads the weekly report before the profile UI');
+    ok(!/setItem|removeItem|recordLessonWrong|markMastered/.test(wr),'weekly report never writes');
+    ok(/MIN_SAMPLE=10/.test(wr)&&/样本不足/.test(ui)&&/age<7\|\|age>30/.test(wr),'retention uses formal answers on words 7-30 days after first teaching, with a 10-answer minimum');
+    ok(/\['weekly','本周报告'\]/.test(ui),'profile has the 本周报告 tab');
+  }
+
   // 2026-10-14: the three scheduled tasks' full instructions live in docs/tasks/ (the task prompts only bootstrap).
   // These markers stop a later edit from silently dropping a contract piece (see REGRESSION-GUARD §2.A and §20).
   {

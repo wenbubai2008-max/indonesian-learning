@@ -31,6 +31,8 @@ on:
       - '.github/scripts/test-handoff-drill.js'
       - '.github/scripts/test-training-sync.js'
       - '.github/scripts/test-lesson-end-recall.js'
+      - '.github/scripts/test-weekly-memory-report.js'
+      - 'data/weekly-memory-report.js'
       - 'data/lesson-end-recall.js'
       - '.github/scripts/test-review-cycle.js'
       - '.github/scripts/review-rotation.js'
@@ -170,6 +172,8 @@ jobs:
           node .github/scripts/test-training-sync.js
           node --check data/lesson-end-recall.js
           node .github/scripts/test-lesson-end-recall.js
+          node --check data/weekly-memory-report.js
+          node .github/scripts/test-weekly-memory-report.js
           node .github/scripts/test-review-cycle.js
           node --check .github/scripts/build-vocab-profile.js
           node --check .github/scripts/write-vocab-profile-snapshot.js
