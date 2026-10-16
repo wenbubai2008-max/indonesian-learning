@@ -667,6 +667,14 @@ try {
     ok(/m\.recall_supported/.test(sc)&&/function recallStatus\(\)/.test(sc),'recall is pushed only to a Worker that supports it; the page says 仅本机保存 otherwise');
   }
 
+  // 2026-10-16 (REGRESSION-GUARD §25): automatic-training progress line is display-only.
+  {
+    const at=read('data/automation-training.js');
+    ok(/function progressText\(st,now,after\)/.test(at)&&/跨日验证 '\+v\+'\/3/.test(at)&&/class="autoProgress"/.test(at),'automatic training shows stage x/4, cross-day verifications x/3 and the next verification time per word');
+    const body=at.slice(at.indexOf('  function progressText('),at.indexOf('  function',at.indexOf('  function progressText(')+10));
+    ok(body.length>0&&!/saveState|localStorage|record\(/.test(body),'progress line only reads the state');
+  }
+
   // 2026-10-14: the three scheduled tasks' full instructions live in docs/tasks/ (the task prompts only bootstrap).
   // These markers stop a later edit from silently dropping a contract piece (see REGRESSION-GUARD §2.A and §20).
   {

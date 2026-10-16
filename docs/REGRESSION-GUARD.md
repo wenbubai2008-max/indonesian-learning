@@ -472,3 +472,9 @@
 - **边界**：只写 `indo_lesson_recall_v1`。不调用 `recordLessonWrong`、不算自动训练或快速练习通过、不计入掌握、不改到期日。训练排序按 §23 使用这个信号。
 - **跨设备**：`training-sync-client.js` 只在 Worker 的 GET `/training` 返回 `modes.recall` 时同步；同一词同一天取最早的作答（页面、客户端、Worker 同一规则），后上传的设备不会覆盖第一次回想。Worker 更新前页面显示“仅本机保存”，记录不会上传也不会丢失。Worker 需要重新部署一次（`cloudflare/WEAKNESS_SYNC_SETUP.md` 2026-10-16 节）。
 - **守卫 / 测试**：`regression-guard.js` §24 组；`test-lesson-end-recall.js`（实际数量、积压、第一次作答、无副作用、训练排序、两台设备经真实 Worker 合并、旧 Worker 只存本机），在 `build-learning-runtime.yml` 运行。
+
+## 25. 2026-10-16 自动训练逐词进度（用户确认的 PR 3，只显示）
+
+- 每张自动训练卡片（含从画像进入的单词卡、冷却提示）显示一行进度：`阶段 x/4 · 跨日验证 x/3 · 下次 今天/明天/日期 时间`（雅加达时间）。从没练过显示“第一次训练”；稳定词显示“已稳定 · 跨日验证 3/3 · 下次抽查”。作答后同一行立即更新为“进入阶段 x/4 …”或“这次没通过 · 阶段 x/4 …”。
+- 跨日验证 = 第 4 阶段（延迟验证）连续通过次数，间隔 2/4/7 天，满 3 次为稳定（与 `record()` 相同，不改规则）。
+- 只读状态：`progressText()` 不写任何存储。守卫 §25 组，测试在 `test-cross-module-training.js`。

@@ -130,4 +130,18 @@ assert.equal(pick(lessonAm,'Entahlah, khas sekali','Pilih ___'),null,'Two candid
 assert.equal(pick(lessonAm,'Entahlah, khas sekali','Pilih: entahlah ___').word,'khas','The core word missing from the question is the blank');
 assert.equal(pick(lessonAm,'中文意思','khas 是什么意思？').word,'khas','A Chinese-answer question falls back to the single Indonesian word in the prompt');
 
+// 2026-10-16 PR 3: automatic-training progress line (display only; reads the state, never writes it).
+{
+  const src=read('automation-training.js'),a=src.indexOf('  function whenText(ms,now){'),b=src.indexOf('  function',src.indexOf('  function progressText(st,now,after){')+10);
+  assert.ok(a>0&&b>a,'progress helpers exist');
+  const ctx={Intl,Date,Number,Math,Object};vm.runInNewContext(src.slice(a,b)+';this.p=progressText;',ctx);
+  const p=ctx.p,now=Date.parse('2026-10-16T03:00:00Z'),H=3600000,Dd=24*H; // 10:00 Jakarta
+  assert.equal(p(undefined,now,false),'第一次训练 · 阶段 1/4 · 跨日验证 0/3');
+  assert.equal(p({attempts:1,last_at:now,stage:2,verify_streak:0,next_due:now+20*H,last_result:'direct'},now,true),'进入阶段 2/4 · 跨日验证 0/3 · 下次 明天 06:00');
+  assert.equal(p({attempts:4,last_at:now,stage:4,verify_streak:2,next_due:now+4*Dd,last_result:'right'},now,true),'进入阶段 4/4 · 跨日验证 2/3 · 下次 10/20 10:00','cross-day count and date');
+  assert.equal(p({attempts:3,last_at:now,stage:1,verify_streak:0,next_due:now+6*H,last_result:'fail'},now,true),'这次没通过 · 阶段 1/4 · 跨日验证 0/3 · 下次 今天 16:00');
+  assert.match(p({attempts:6,last_at:now,stage:4,status:'stable',verify_streak:3,next_due:now+14*Dd},now,false),/^已稳定 · 跨日验证 3\/3 · 下次抽查 /);
+  assert.equal(p({attempts:2,last_at:now-2*Dd,stage:3,verify_streak:1,next_due:now-H},now,false),'阶段 3/4 · 跨日验证 1/3','a due card does not repeat "现在到期"');
+}
+
 console.log('Cross-module tests passed: independent quick/listen/auto selectors, persisted auto results, listening contrast boundaries and self-check integrity.');
