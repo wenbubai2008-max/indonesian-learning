@@ -51,7 +51,9 @@
   }
   function todayHTML(){
     const api=localCoach(),rows=api?api.plan():[],progress=api?api.dailyProgress():{total:0,done:0,waiting:0};
-    return '<div class="vpSection"><h3>今日针对性建议 · 已作答 '+progress.done+'/'+progress.total+'</h3><p class="vpCoverageNote">这里只推荐优先任务；三个专项独立判定到期，同一个词可接受不同能力的交叉验证。作答完成不等于已经掌握。'+(progress.waiting?'另有 '+progress.waiting+' 个词正在等待约定的验证时间。':'')+'</p>'+taskListHTML(rows)+'</div>';
+    const cov=api&&api.newWordCoverage?api.newWordCoverage():null;
+    const covLine=cov&&cov.total?'<p class="vpCoverageNote" data-new-word-coverage>最近 7 天新学 '+cov.total+' 个词，已做过主动提取 '+cov.auto+' 个、快速练习 '+cov.quick+' 个（本机记录）。新词会按上限优先进入训练：快速练习每轮最多 4 个、自动训练最多 3 个。</p>':'';
+    return '<div class="vpSection"><h3>今日针对性建议 · 已作答 '+progress.done+'/'+progress.total+'</h3><p class="vpCoverageNote">这里只推荐优先任务；三个专项独立判定到期，同一个词可接受不同能力的交叉验证。作答完成不等于已经掌握。'+(progress.waiting?'另有 '+progress.waiting+' 个词正在等待约定的验证时间。':'')+'</p>'+covLine+taskListHTML(rows)+'</div>';
   }
   function wordCandidates(){
     const api=localCoach();return new Map((api?api.words():[]).map(x=>[normWord(x.word),x]));

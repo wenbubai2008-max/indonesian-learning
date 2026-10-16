@@ -648,6 +648,14 @@ try {
   ok(/pmTimeForDate\(TODAY\)/.test(index), 'index source PM reading meta uses current date-aware time');
   ok(!index.includes('每天 08:00 / 19:00') && !index.includes("loadReading('pm')\">19:00短文") && !index.includes("<span class=\"slotTime\">19:00</span><span id=\"pmStatus\""), 'index source has no stale current 19:00 static labels');
 
+  // 2026-10-16 (REGRESSION-GUARD §23): recent-new-word lane in the training scheduler.
+  {
+    const coach=read('data/vocab-study-coach.js');
+    ok(/first:String\(x\.first_seen\|\|''\)/.test(coach)&&/function ageDays\(first,now\)/.test(coach),'coach counts new-word age from first_seen, not last_seen');
+    ok(coach.includes("LANE={quick:{page:10,cap:4},auto:{page:8,cap:3}}")&&coach.includes('PLAN_LANE={auto:1,quick:1}'),'new-word lane caps stay quick 4/10, auto 3/8, daily plan <= 2 (listening unchanged)');
+    ok(coach.includes("RECALL_KEY='indo_lesson_recall_v1'")&&!/recordLessonWrong/.test(coach),'lesson-end recall is read-only in the coach and never written as a lesson error');
+  }
+
   // 2026-10-14: the three scheduled tasks' full instructions live in docs/tasks/ (the task prompts only bootstrap).
   // These markers stop a later edit from silently dropping a contract piece (see REGRESSION-GUARD §2.A and §20).
   {
