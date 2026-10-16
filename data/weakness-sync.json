@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T14:57:21.285Z",
+  "updated_at": "2026-10-16T03:04:05.512Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2571,8 +2571,11 @@
     "langit": {
       "word": "langit",
       "status": "active",
-      "updated_at": "2026-10-15T13:46:28.997Z",
+      "updated_at": "2026-10-16T02:44:12.383Z",
       "display": "langit",
+      "cn": "天空",
+      "root": "langit",
+      "root_cn": "天空",
       "last_review": "2026-10-15T13:46:28.965Z",
       "reasons": [
         "memory_fuzzy"
@@ -7583,8 +7586,9 @@
     "karya": {
       "word": "karya",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.568Z",
+      "updated_at": "2026-10-16T02:39:14.203Z",
       "display": "karya",
+      "cn": "工作",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -8618,17 +8622,21 @@
     "jadi": {
       "word": "jadi",
       "status": "active",
-      "updated_at": "2026-10-15T08:32:42.990Z",
+      "updated_at": "2026-10-16T02:48:41.492Z",
       "display": "jadi",
       "cn": "成；确定；所以",
       "root": "jadi",
-      "last_wrong": "2026-10-15T08:32:42.962Z",
-      "last_review": "2026-10-15T08:32:42.962Z",
+      "last_wrong": "2026-10-16T02:48:41.446Z",
+      "last_review": "2026-10-16T02:48:41.446Z",
       "last_mastered": "2026-09-12T14:13:50.252Z",
+      "source": "课程小测",
+      "source_date": "2026-10-16",
+      "session": "08:00",
       "reasons": [
-        "quick_wrong"
+        "quick_wrong",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "biaya": {
@@ -28929,18 +28937,18 @@
     "kelepasan": {
       "word": "kelepasan",
       "status": "active",
-      "updated_at": "2026-10-14T07:02:47.133Z",
+      "updated_at": "2026-10-16T03:03:54.219Z",
       "display": "kelepasan",
       "cn": "一不小心说出/做出；没控制住（口语）",
       "root": "lepas",
       "root_cn": "松开；脱离",
       "last_wrong": "2026-10-12T12:44:01.575Z",
-      "last_review": "2026-10-13T15:10:29.443Z",
+      "last_review": "2026-10-16T03:03:54.185Z",
       "reasons": [
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 1
+      "right_streak": 2
     },
     "kepotong": {
       "word": "kepotong",
