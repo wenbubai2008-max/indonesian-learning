@@ -684,6 +684,12 @@ try {
     ok(/\['week','本周'\]/.test(ui)&&ui.includes('weeklyHTML()'),'profile 本周 tab shows the weekly report');
   }
 
+  // 2026-10-16 (REGRESSION-GUARD §28): review points are shown through the display-only readable renderer.
+  {
+    const hv=read('data/history-v2.js'),lt=read('data/daily-light-test.js');
+    ok(/window\.reviewReadableHtml=function\(raw,vocab\)/.test(hv)&&hv.includes("h+=sec(no++,'复习',x.review.map(r=>window.reviewReadableHtml(")&&lt.includes('window.reviewReadableHtml(t,x.vocab)'),'AM review and PM final review use the readable renderer (display only)');
+  }
+
   // 2026-10-14: the three scheduled tasks' full instructions live in docs/tasks/ (the task prompts only bootstrap).
   // These markers stop a later edit from silently dropping a contract piece (see REGRESSION-GUARD §2.A and §20).
   {
