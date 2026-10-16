@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-16",
+  "session": "am",
+  "time": "08:00",
+  "day": 56,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Main ke Rumah Baru Tante Lia",
+  "new_words": [
+    "meja rias",
+    "jemuran",
+    "lukisan",
+    "berbentuk",
+    "berkeliling",
+    "berjabat tangan",
+    "manja",
+    "penyayang",
+    "tekstur",
+    "gurih"
+  ],
+  "vocab": [
+    {
+      "word": "meja rias",
+      "display": "meja rias",
+      "audio_text": "meja rias",
+      "cn": "梳妆台",
+      "en": "dressing table",
+      "root": "rias",
+      "root_cn": "打扮；化妆",
+      "formation": "meja（桌子）+ rias（打扮、化妆）。同词根：merias（给……化妆，meN- + rias）、perias（化妆师，peN- 遇 r 变 pe-）、riasan（妆容）。常见搭配：duduk di depan meja rias（坐在梳妆台前）、cermin meja rias（梳妆镜）。",
+      "example": "Kakak kelamaan di depan meja rias, jadi kita harus ngejar waktu ke kondangan.",
+      "example_cn": "姐姐在梳妆台前磨蹭太久，我们只好赶时间去参加婚宴。",
+      "synonym_note": "meja rias 是带镜子的梳妆台，放化妆品的家具；只说“镜子”用 cermin。perias / perias pengantin 指（新娘）化妆师，别和 meja rias 混。",
+      "is_oral_new": false
+    },
+    {
+      "word": "jemuran",
+      "display": "jemuran",
+      "audio_text": "jemuran",
+      "cn": "晾着的衣服；晾衣架/晾衣处",
+      "en": "laundry being dried; clothesline",
+      "root": "jemur",
+      "root_cn": "晒；晾",
+      "formation": "jemur（晒）+ -an → jemuran（晾着的东西，也指晾衣的架子、地方）。同词根：menjemur（晾晒，menjemur pakaian＝晾衣服）。最典型的一句：Masukin jemuran, mau hujan!（快收衣服，要下雨了！）",
+      "example": "Aku kebablasan tidur siang, jemurannya kehujanan semua.",
+      "example_cn": "我午觉睡过头了，晾的衣服全被雨淋了。",
+      "synonym_note": "“收衣服”口语常说 masukin jemuran（＝把晾的衣服收进屋）；晾衣绳是 tali jemuran，晾衣架是 tiang jemuran / rak jemuran。menjemur 是“晾”这个动作，jemuran 是晾着的东西。",
+      "is_oral_new": false
+    },
+    {
+      "word": "lukisan",
+      "display": "lukisan",
+      "audio_text": "lukisan",
+      "cn": "画；画作",
+      "en": "painting",
+      "root": "lukis",
+      "root_cn": "绘画",
+      "formation": "lukis（画）→ melukis（画画，meN- + lukis）→ lukisan（画出来的作品，lukis + -an）→ pelukis（画家，peN- 遇 l 变 pe-）。常见搭配：lukisan pemandangan（风景画）、lukisan dinding（壁画）、lukisan karya…（……的作品）。",
+      "example": "Sayang banget, lukisan di ruang tamu sekarang ketutup lemari baru.",
+      "example_cn": "真可惜，客厅里的那幅画现在被新柜子挡住了。",
+      "synonym_note": "lukisan 指用颜料画的画作；gambar 范围更广，铅笔画、图片、插图都可以叫 gambar；照片是 foto。口语里“画画”常说 ngelukis（Adikku lagi ngelukis.），正式场合用 melukis。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berbentuk",
+      "display": "berbentuk",
+      "audio_text": "berbentuk",
+      "cn": "呈……形状；形状是……",
+      "en": "shaped (like)",
+      "root": "bentuk",
+      "root_cn": "形状",
+      "formation": "ber- + bentuk（形状）。用法：名词 + berbentuk + 形状名词：cermin berbentuk oval（椭圆形的镜子）、kue berbentuk hati（心形蛋糕）。同词根：membentuk（形成、组成：membentuk tim）、bentuk（形状；形式）。",
+      "example": "Kue ulang tahun Dika berbentuk mobil, dia senang banget.",
+      "example_cn": "Dika 的生日蛋糕做成了汽车的样子，他高兴极了。",
+      "synonym_note": "berbentuk 后面直接接形状，不加 seperti；要说“像……”用 seperti。口语说法：常说 bentuknya…（Kuenya bentuknya mobil.），书面描述物品时用 berbentuk。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berkeliling",
+      "display": "berkeliling",
+      "audio_text": "berkeliling",
+      "cn": "到处转转；绕着走一圈；巡游",
+      "en": "to go around; to tour",
+      "root": "keliling",
+      "root_cn": "周围；一圈",
+      "formation": "ber- + keliling（周围、一圈）。常见搭配：berkeliling kota（逛遍城市）、mengajak tamu berkeliling rumah（带客人参观房子）、pedagang keliling（走街串巷的小贩）。同词根：mengelilingi（围着……转：Bumi mengelilingi matahari.）。",
+      "example": "Seharian kami berkeliling Kota Bandung naik angkot. Malamnya semua kecapean.",
+      "example_cn": "我们坐小巴在万隆城里转了一整天，晚上大家都累坏了。",
+      "synonym_note": "berkeliling 是在一个地方里到处转、看一圈；mengelilingi 是“围着某物绕圈”，后面要接宾语。口语说法：直接说 keliling（Yuk, keliling kompleks!＝走，去小区里转一圈！），书面或较正式时用 berkeliling。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berjabat tangan",
+      "display": "berjabat tangan",
+      "audio_text": "berjabat tangan",
+      "cn": "握手",
+      "en": "to shake hands",
+      "root": "jabat",
+      "root_cn": "握住",
+      "formation": "ber- + jabat（握）+ tangan（手）。名词说 jabat tangan（握手）。搭配：berjabat tangan dengan…（和……握手）。jabat 另有 menjabat（担任职务）、jabatan（职位），这两个意思已经和“握”分开了。",
+      "example": "Setelah rapat selesai, kedua manajer itu berjabat tangan, lalu foto bersama.",
+      "example_cn": "会议结束后，那两位经理握了握手，然后一起合影。",
+      "synonym_note": "berjabat tangan 偏正式，新闻、商务场合常见。口语说法：salaman（Ayo, salaman dulu!）。对长辈常行 salim（握住长辈的手轻触额头或鼻子），比普通握手更表敬意。",
+      "is_oral_new": false
+    },
+    {
+      "word": "manja",
+      "display": "manja",
+      "audio_text": "manja",
+      "cn": "娇气；爱撒娇；（宠物）黏人",
+      "en": "spoiled; clingy; affectionate",
+      "root": "manja",
+      "root_cn": "娇惯",
+      "formation": "单纯词。派生：memanjakan（宠、娇惯，meN- + manja + -kan）、dimanja（被宠着）。常见搭配：anak manja（娇生惯养的孩子）、kucing yang manja（黏人的猫）、jangan terlalu memanjakan anak（别太宠孩子）。",
+      "example": "Kucingku manja banget. Kalau aku kerja, dia suka tidur di atas laptop, jadi kerjaku keganggu terus.",
+      "example_cn": "我的猫特别黏人。我一工作，它就爱睡在笔记本电脑上，害我老是被打扰。",
+      "synonym_note": "说人时 manja 多带贬义（娇气、离不开人）；说宠物、小孩撒娇时是亲昵的语气。memanjakan diri＝犒劳、宠一下自己（Sesekali memanjakan diri di spa.），是正面意思。",
+      "is_oral_new": false
+    },
+    {
+      "word": "penyayang",
+      "display": "penyayang",
+      "audio_text": "penyayang",
+      "cn": "有爱心的；慈爱的（人）",
+      "en": "loving; affectionate (person)",
+      "root": "sayang",
+      "root_cn": "爱；疼爱",
+      "formation": "peN- + sayang → penyayang（peN- 遇 s 变 peny-，s 脱落），指“很有爱心、很会疼人的人”，也可作形容词：Orangnya penyayang.。最常见搭配：penyayang binatang（爱护动物的人）、ibu yang penyayang（慈爱的母亲）。",
+      "example": "Bu Ani guru yang penyayang. Kalau ada murid yang bercandanya kelewatan, beliau menegurnya dengan sabar.",
+      "example_cn": "Ani 老师很有爱心。要是有学生开玩笑开过了头，她会耐心地提醒。",
+      "synonym_note": "sayang 是动词/形容词“疼爱、心疼”（Aku sayang kamu.），也能表示“可惜”（Sayang sekali!）；penyayang 是描述一个人“有爱心”的性格。日常聊天更常说 orangnya baik banget / sayang banget sama…，介绍人的性格时用 penyayang。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tekstur",
+      "display": "tekstur",
+      "audio_text": "tekstur",
+      "cn": "质地；（食物的）口感",
+      "en": "texture",
+      "root": "",
+      "root_cn": "",
+      "formation": "借自英语 texture，单纯词。常见搭配：tekstur lembut（柔软/细腻）、tekstur kasar（粗糙）、tekstur kain（布料手感）、tekstur kue（糕点的口感）。",
+      "example": "Tekstur kain kaus ini agak kasar, bikin kulitku gatal.",
+      "example_cn": "这件 T 恤的布料有点粗糙，弄得我皮肤发痒。",
+      "synonym_note": "tekstur 说的是摸起来、咬起来的感觉；rasa 说的是味道（manis、asin、gurih）。夸食物口感常说 teksturnya lembut；说布料、皮肤、墙面也都能用 tekstur。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gurih",
+      "display": "gurih",
+      "audio_text": "gurih",
+      "cn": "鲜香；咸香可口",
+      "en": "savory",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词。形容椰浆、高汤、油炸食品那种咸鲜、浓香的好味道。常见搭配：rasanya gurih（味道鲜香）、gurih banget（特别香）、nasi uduk yang gurih（香喷喷的椰浆饭）。",
+      "example": "Nasi uduk rasanya gurih karena dimasak dengan santan.",
+      "example_cn": "椰浆饭吃起来咸香可口，因为是用椰浆煮的。",
+      "synonym_note": "gurih 是好吃的咸鲜味，是夸奖；asin 只是“咸”，说 terlalu asin 就是太咸了。enak 是笼统的“好吃”，gurih 具体说出了是哪种好吃。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "nganter",
+    "antar",
+    "jadi",
+    "kewalahan",
+    "kayak"
+  ],
+  "sentences": [
+    {
+      "text": "Aku nganter Ibu ke rumah Tante Lia dulu, ya. Kalau nggak ngebut, setengah jam juga nyampe.",
+      "cn": "我先送妈妈去 Lia 阿姨家啊。不开快车的话，半小时也就到了。（nganter = mengantar，nggak = tidak，nyampe = sampai）"
+    },
+    {
+      "text": "Acara makan-makan di rumah baru Tante Lia ketunda seminggu, soalnya Tante kewalahan ngurus pindahan.",
+      "cn": "在 Lia 阿姨新家的聚餐推迟了一个星期，因为阿姨忙搬家忙不过来。（ketunda = tertunda，soalnya = karena，ngurus = mengurus）"
+    },
+    {
+      "text": "Kalau bertemu klien baru, biasanya kami berjabat tangan dulu, lalu memperkenalkan diri.",
+      "cn": "见新客户时，我们一般先握手，然后再自我介绍。"
+    },
+    {
+      "text": "Bajuku kecipratan air hujan waktu aku buru-buru masukin jemuran.",
+      "cn": "我急急忙忙收衣服的时候，衣服被雨水溅湿了。（kecipratan = terkena cipratan，masukin = memasukkan）"
+    },
+    {
+      "text": "Ngobrol sama Tante Lia selalu nyambung, kayak ngobrol sama teman sendiri.",
+      "cn": "跟 Lia 阿姨聊天总是很投机，就像跟自己的朋友聊天一样。（ngobrol = mengobrol，sama = dengan，kayak = seperti）"
+    }
+  ],
+  "reading": {
+    "text": "Sabtu pagi, Ayah mengantar kami ke rumah baru Tante Lia di Depok. Ayah berjabat tangan dengan Om Budi, lalu Tante Lia mengajak kami berkeliling rumah. Di ruang tamu ada lukisan pemandangan sawah karya Om Budi sendiri. Di kamar tidur ada meja rias dengan cermin berbentuk oval. Kucing mereka, Moli, terus mengikuti kami. Dia manja sekali dan selalu minta dipeluk. Tante Lia memang penyayang binatang. Kami lalu makan bakwan buatan Tante. Rasanya gurih, dan teksturnya garing di luar tetapi lembut di dalam. Tiba-tiba langit gelap. Tante Lia berteriak, “Ayo, masukin jemuran, mau hujan!” Kami berlari ke halaman belakang. Untung semua baju sudah masuk sebelum hujan turun.",
+    "cn": "星期六早上，爸爸开车送我们去 Lia 阿姨在德波的新家。爸爸和 Budi 叔叔握了握手，然后 Lia 阿姨带我们把房子转了一圈。客厅里有一幅稻田风景画，是 Budi 叔叔亲手画的。卧室里有一张梳妆台，镜子是椭圆形的。他们家的猫 Moli 一直跟着我们。它特别黏人，总是要人抱。Lia 阿姨果然是个爱护动物的人。接着我们吃了阿姨亲手做的炸蔬菜饼。味道咸香，口感外脆里软。突然，天暗了下来。Lia 阿姨大喊：“快收衣服，要下雨了！”我们跑到后院。幸好下雨之前，衣服全都收进屋了。"
+  },
+  "quiz": [
+    {
+      "question": "Pesanan bakso datang terus-menerus. Dua penjual di warung itu ___, dan banyak pembeli harus menunggu lama.",
+      "options": [
+        "kecapean",
+        "kewalahan",
+        "ketahuan",
+        "kelewatan"
+      ],
+      "answer_index": 1,
+      "answer": "kewalahan",
+      "explain": "订单不停地来、两个店员应付不过来，导致顾客久等——这是 kewalahan（复习词：事情太多、招架不住）。kecapean 只是“累坏了”，说不出“忙不过来、顾客要等”的因果；ketahuan＝被发现；kelewatan＝错过、过头，都不合语境。"
+    },
+    {
+      "question": "Di ruang tamu Tante Lia tergantung sebuah ___ pemandangan sawah karya Om Budi.",
+      "options": [
+        "melukis",
+        "pelukis",
+        "lukisan",
+        "dilukis"
+      ],
+      "answer_index": 2,
+      "answer": "lukisan",
+      "explain": "sebuah 后面要接名词“一幅画”，用 lukisan（画作）。melukis 是动词“画画”；pelukis 是“画家”（人，不能挂在墙上）；dilukis 是被动“被画”，不能放在 sebuah 后面。"
+    },
+    {
+      "question": "Rencananya hari Minggu kami makan di luar, tapi Ayah mendadak harus kerja. Akhirnya kami ___ pergi.",
+      "options": [
+        "nggak jadi",
+        "nggak usah",
+        "belum sempat",
+        "nggak boleh"
+      ],
+      "answer_index": 0,
+      "answer": "nggak jadi",
+      "explain": "原本有计划、最后取消，用 nggak jadi（复习词 jadi：事情最终成不成）。nggak usah＝不必（是别人建议“不用去”）；belum sempat＝还没来得及（以后可能还去，和 akhirnya 的“结果”不搭）；nggak boleh＝不被允许，题里没有人禁止。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语讲一次去亲戚或朋友家做客的经历：谁送谁去的、主人带你们看了什么、吃了什么。至少用到本课两个新词（如 berkeliling、lukisan、gurih、penyayang），并用上复习词 nganter 或 antar。",
+    "reference_answer": "Minggu lalu aku nganter Nenek ke rumah Om Hadi di Bogor. Om Hadi ngajak kami berkeliling rumahnya, terus nunjukin lukisan karya anaknya. Waktu makan, adikku nyeletuk, “Sotonya gurih banget, kayak di restoran!”",
+    "reference_cn": "上周我送奶奶去茂物的 Hadi 叔叔家。Hadi 叔叔带我们把他家转了一圈，还给我们看了他孩子画的画。吃饭的时候，我弟弟/妹妹冒出一句：“这汤好鲜啊，跟餐馆里的一样！”（ngajak = mengajak，terus = lalu，nunjukin = menunjukkan）"
+  },
+  "review": [
+    "3秒主动提取：不看词卡，看中文说印尼语——梳妆台、晾着的衣服、画作、呈……形状、到处转一圈、握手、黏人/娇气、有爱心的人、口感/质地、咸香可口；再各补半句：“Masukin …, mau hujan!”、“cermin … oval”、“… binatang”、“rasanya …”。",
+    "易混词与搭配：lukisan（画作）— melukis（画画）— pelukis（画家）；gurih（好吃的咸鲜）vs asin（咸）；tekstur（口感、手感）vs rasa（味道）；berjabat tangan（正式）vs salaman（口语）；berkeliling（在某处到处转）vs mengelilingi（围着某物转）；manja 说人多指娇气，说宠物是黏人；jemuran（晾着的衣服）vs menjemur（晾这个动作）。",
+    "重点复习词应用（同词根一组 antar）：antar 常用在请求里——Nanti antar Nenek pulang, ya.（等会儿送奶奶回家哦。）；nganter 是口语动词——Aku nganter Ibu ke pasar.（我送妈妈去市场。）；书面说 mengantar。再用 kewalahan、jadi、kayak 各说一句，例如 “Minggu ini kerjaanku banyak banget, aku sampai kewalahan.”（这周活儿太多，我都忙不过来了。）、“Kami nggak jadi makan di luar.”（我们最后没去外面吃。）、“Kucing ini manja, kayak anak kecil.”（这只猫很黏人，像个小孩。）"
+  ]
+}
