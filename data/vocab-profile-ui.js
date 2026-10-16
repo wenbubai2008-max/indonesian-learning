@@ -208,6 +208,27 @@
     out.push(['新词数量先不自动调整','目前画像只给学习方向建议，不会擅自改变08:00或18:00的新词配额。']);
     return out;
   }
+  // 2026-10-16 (PR 4): weekly memory report, computed on this device by data/weekly-memory-report.js. Read-only.
+  function weeklyHTML(){
+    const api=window.WeeklyMemoryReport;let r=null;try{r=api&&api.compute()}catch(e){}
+    if(!r)return '<div class="vpSection"><div class="vpEmpty">本周报告暂时无法计算。</div></div>';
+    const pct=(a,b)=>b?Math.round(a*100/b)+'%':'—',s=r.recall.split;
+    const card=(v,label,note)=>'<div><b>'+esc(v)+'</b><span>'+esc(label)+'</span>'+(note?'<small style="display:block;color:#667085">'+esc(note)+'</small>':'')+'</div>';
+    const ret=r.retention.enough?r.retention.rate+'%':'样本不足';
+    const retNote=r.retention.enough?r.retention.right+'/'+r.retention.n+' 次正式作答答对':'只有 '+r.retention.n+' 次正式作答，至少 '+r.retention.min+' 次才计算';
+    const max=Math.max(1,...r.days.map(x=>x.formal));
+    const strip='<div style="display:grid;grid-template-columns:repeat(14,1fr);gap:3px;align-items:end;height:56px;margin:8px 0 4px">'+r.days.map(x=>'<div title="'+esc(x.day+' 正式作答 '+x.formal+' 次，课末回想 '+x.recall+' 个')+'" style="background:'+(x.formal?'#6d5bd0':'#e6e8ef')+';height:'+(x.formal?Math.max(12,Math.round(x.formal*100/max)):8)+'%;border-radius:3px"></div>').join('')+'</div><div style="display:flex;justify-content:space-between;font-size:12px;color:#7a8396"><span>'+esc(r.days[0].day.slice(5))+'</span><span>今天</span></div>';
+    return '<div class="vpSection"><h3>本周（'+esc(r.weekStart.slice(5))+' 至 '+esc(r.today.slice(5))+'）</h3><div class="vpMiniStats">'+
+      card(r.newThisWeek,'本周新学的词','早课和晚课首次学习')+
+      card(r.mastered,'本周新增确认掌握','按掌握记录日期')+
+      card(r.verified+'/'+r.recentTotal,'近 7 天新词已正式验证',pct(r.verified,r.recentTotal)+' 做过快速练习、听词或自动训练')+
+      card(ret,'学后 7–30 天的词 · 正式测试正确率',retNote)+
+      '</div></div>'+
+      '<div class="vpSection"><h3>课末回想（自评，单独统计）</h3><p class="vpCoverageNote">近 7 天新学 '+r.recentTotal+' 个词，课末回想过 '+r.recall.covered+' 个（'+pct(r.recall.covered,r.recentTotal)+'）。第一次回想：马上想到 '+s.fast+' · 想得慢 '+s.slow+' · 没想起来 '+s.fail+'。自评不计入上面的正确率，也不计入掌握。</p></div>'+
+      '<div class="vpSection"><h3>反复遗忘的词（近 14 天至少 2 天出错）</h3>'+(r.forgotten.length?'<div class="vpWeakList">'+r.forgotten.slice(0,12).map(x=>'<button type="button" class="vpWeakItem" data-coach-select="'+esc(x.word)+'"><b>'+esc(x.word)+'</b><span>'+esc(x.cn)+' · '+x.days+' 天出错</span></button>').join('')+'</div>':'<div class="vpEmpty">近 14 天没有在两天以上出错的词。</div>')+'</div>'+
+      '<div class="vpSection"><h3>近 14 天练习</h3><p class="vpCoverageNote">练了 '+r.activeDays+' 天，正式作答 '+r.formalTotal+' 次（快速练习、听词、自动训练）。</p>'+strip+'</div>'+
+      '<div class="vpSection"><div class="vpEmpty">只统计本机记录。没有测试过的词不算掌握，也不算遗忘；正确率只用正式训练的作答，课末自评单独列出。</div></div>';
+  }
   function renderDetail(){
     const data=PROFILE,body=document.getElementById('vpDetailBody');if(!body||!data)return;
     const ev=evidenceData(),active=ev.attempts?String(ev.active):'待积累',passive=ev.attempts?String(ev.passive):'待积累';
@@ -215,11 +236,12 @@
     const chosen=focus.find(x=>x.word===activeWeak)||focus[0]||null;if(!activeWeak&&chosen)activeWeak=chosen.word;
     const adv=suggestions(data);
     body.innerHTML='<div class="vpDetailHero"><div><h2>个人词汇画像</h2><p>把学习结果、训练错误和后续验证汇总成一个持续更新的词汇能力档案。</p></div><span class="pill">网站快照＋本机训练</span></div>'+
-      '<div class="vpTabs">'+[['today','今日任务'],['overview','能力总览'],['words','逐词档案'],['trend','学习趋势'],['weak','弱词分析'],['advice','学习建议']].map(x=>'<button class="vpTab '+(activeTab===x[0]?'active':'')+'" data-vp-tab="'+x[0]+'" type="button">'+x[1]+'</button>').join('')+'</div>'+
+      '<div class="vpTabs">'+[['today','今日任务'],['overview','能力总览'],['words','逐词档案'],['trend','学习趋势'],['weekly','本周报告'],['weak','弱词分析'],['advice','学习建议']].map(x=>'<button class="vpTab '+(activeTab===x[0]?'active':'')+'" data-vp-tab="'+x[0]+'" type="button">'+x[1]+'</button>').join('')+'</div>'+
       '<section class="vpPanel '+(activeTab==='today'?'active':'')+'" data-vp-panel="today">'+todayHTML()+'</section>'+ 
       '<section class="vpPanel '+(activeTab==='overview'?'active':'')+'" data-vp-panel="overview"><div class="vpSection"><h3>三个专项的本机到期状态</h3><div class="vpMiniStats">'+[['quick','视觉识别'],['listen','听觉识别'],['auto','主动提取']].map(([mode,label])=>{const api=localCoach(),s=api?api.statistics(mode):null;return '<div><b>'+esc(s?s.due:'—')+'</b><span>'+esc(label)+' · 当前到期</span><small style="display:block;color:#667085">'+esc(s?'今日已练 '+s.today+' · 稳定或历史掌握 '+s.stable:'尚无记录')+'</small></div>'}).join('')+'</div><p class="vpCoverageNote">仅基于本机的逐词专项记录；不与GitHub的正式掌握总数混算。</p></div><div class="vpAbility"><div class="vpAbilityCard"><span>本机验证的主动词汇</span><b>'+active+'</b><small>必须记录无提示提取、语境补词、自我表达，并在至少两个不同日期通过延迟验证；表达环节由本人核对，系统不自动评判整句语法；不把原有 mastered 自动算入。</small></div><div class="vpAbilityCard"><span>本机稳定识别词汇</span><b>'+passive+'</b><small>选择识别或首次听音快速识别，最近一次错误后至少三次正确，覆盖两个不同日期；不与主动词汇重复统计。</small></div></div><div class="vpCoverageBox"><div class="vpCoverageHead"><b>主词库当前待学习</b><span>'+data.primary_eligible_new_total+' 个</span></div><div class="vpCoverageNote">这里显示当前仍会进入后续新词学习流程的主词库词数。</div></div><div class="vpSection"><h3>已学习词状态</h3><div class="vpMiniStats"><div><b>'+data.taught_total+'</b><span>正式学习</span></div><div><b>'+data.confirmed_mastered+'</b><span>确认掌握</span></div><div><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div><b>'+data.unverified+'</b><span>尚待验证</span></div></div></div>'+evidenceHTML()+'</section>'+
       '<section class="vpPanel '+(activeTab==='words'?'active':'')+'" data-vp-panel="words">'+wordsHTML()+'</section>'+ 
       '<section class="vpPanel '+(activeTab==='trend'?'active':'')+'" data-vp-panel="trend"><div class="vpSection"><h3>学习趋势</h3>'+trendHTML(data)+'</div><div class="vpSection"><h3>趋势原则</h3><div class="vpEmpty">只使用真实跨日快照和后续训练结果。只有后续获取到可靠的事件和日期快照，才会显示新增稳定词与遗忘变化；不会用当前总数伪造历史曲线。</div></div></section>'+
+      '<section class="vpPanel '+(activeTab==='weekly'?'active':'')+'" data-vp-panel="weekly">'+(activeTab==='weekly'?weeklyHTML():'')+'</section>'+
       '<section class="vpPanel '+(activeTab==='weak'?'active':'')+'" data-vp-panel="weak"><div class="vpSection"><h3>重点弱词</h3><div class="vpWeakList">'+(focus.length?focus.map(w=>'<button type="button" class="vpWeakItem '+(w.word===activeWeak?'active':'')+'" data-vp-word="'+esc(w.word)+'"><b>'+esc(w.word)+'</b><span>'+esc(w.cn||'')+'</span></button>').join(''):'<div class="vpEmpty">暂无重点弱词。</div>')+'</div><div id="vpWeakDetail">'+weakDetailHTML(chosen)+'</div></div></section>'+
       '<section class="vpPanel '+(activeTab==='advice'?'active':'')+'" data-vp-panel="advice"><div class="vpAdviceGrid">'+adv.map(x=>'<div class="vpAdvice"><b>'+esc(x[0])+'</b><p>'+esc(x[1])+'</p></div>').join('')+'</div><div class="vpSection"><h3>判断边界</h3><div class="vpEmpty">划词查询只算弱线索；明确加入陌生词、自动训练失败、快速练习答错等是更强证据。一次答对或一次阅读曝光不会直接判为“掌握”。</div></div></section>';
     body.querySelectorAll('[data-vp-tab]').forEach(btn=>btn.onclick=()=>{activeTab=btn.dataset.vpTab;renderDetail()});
