@@ -127,6 +127,19 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     quiz.forEach((q,i)=>{const recognition=/词义|意思|含义|形式|哪一个词|哪个词|哪种形式|正确形式|识别/.test(q?.question||"");if(ans[i])check(!String(q.question||"").toLowerCase().includes(ans[i])||recognition,"AM_QUIZ_ANSWER_LEAK","Question "+(i+1)+" leaks answer")});
     check(["task","reference_answer","reference_cn"].every(k=>str(lesson.output?.[k])),"AM_OUTPUT_INVALID","Active output incomplete");
     check(Array.isArray(lesson.review)&&lesson.review.length===3&&lesson.review.every(str),"AM_FINAL_REVIEW_INVALID","Three final review points required");
+    // 2026-10-16 (user decision): optional structured copy of the same three review points, for the review cards on the
+    // page. Absent = fine (the page shows the three strings). Present = must be well formed; every recall answer must be
+    // one of today's words, so the page never shows an answer that was not taught. On failure the generator removes it.
+    if(lesson.review_cards!==undefined){
+      const rc=lesson.review_cards,pair=x=>x&&str(x.id)&&str(x.cn),today=new Set(vocab.map(word).concat(rw,(Array.isArray(lesson.cycle_vocab)?lesson.cycle_vocab:[]).map(norm)));
+      const recall=rc&&rc.recall,contrasts=rc&&rc.contrasts,apply=rc&&rc.apply,frames=rc&&rc.frames;
+      check(rc&&typeof rc==="object"&&!Array.isArray(rc),"AM_REVIEW_CARDS_INVALID","review_cards must be an object {recall, contrasts, apply}");
+      check(Array.isArray(recall)&&range(recall.length,4,12)&&recall.every(pair),"AM_REVIEW_CARDS_INVALID","review_cards.recall: 4-12 {cn,id}");
+      if(Array.isArray(recall))recall.filter(pair).forEach(x=>check(today.has(norm(x.id)),"AM_REVIEW_CARDS_ANSWER","recall answer is not one of today's words: "+x.id));
+      check(frames===undefined||(Array.isArray(frames)&&frames.length<=6&&frames.every(str)),"AM_REVIEW_CARDS_INVALID","review_cards.frames: up to 6 strings");
+      check(Array.isArray(contrasts)&&range(contrasts.length,1,6)&&contrasts.every(g=>g&&Array.isArray(g.items)&&range(g.items.length,2,3)&&g.items.every(pair)&&str(g.note)),"AM_REVIEW_CARDS_INVALID","review_cards.contrasts: 1-6 groups of 2-3 {id,cn} with a note");
+      check(Array.isArray(apply)&&range(apply.length,1,4)&&apply.every(a=>a&&str(a.word)&&str(a.usage)&&Array.isArray(a.examples)&&range(a.examples.length,1,3)&&a.examples.every(pair)),"AM_REVIEW_CARDS_INVALID","review_cards.apply: 1-4 {word,usage,examples:[{id,cn}]}");
+    }
   } else {
     check(lesson.write_status==="lesson_complete","PM_STATUS_INVALID","PM status incomplete");
     check(range(vocab.length,10,12),"PM_CORE_COUNT","10-12 core words required");

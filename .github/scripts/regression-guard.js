@@ -684,6 +684,14 @@ try {
     ok(/\['week','本周'\]/.test(ui)&&ui.includes('weeklyHTML()'),'profile 本周 tab shows the weekly report');
   }
 
+  // 2026-10-16 (REGRESSION-GUARD §29): optional structured review cards; the page falls back to the three strings.
+  {
+    // Code checks for this PR's own change; the preflight also runs this guard on the pinned base tree, which predates it.
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const hv=read('data/history-v2.js'),vl=read('.github/scripts/validate-lesson-candidate.js');
+    okNew(/function reviewCardsHtml\(rc,vocab\)/.test(hv)&&hv.includes("const rc=reviewCardsHtml(x.review_cards,x.vocab);if(rc)h+=sec(no++,'复习',rc);else if(x.review?.length)"),'AM page shows review_cards when present and falls back to the review strings');
+    okNew(vl.includes('if(lesson.review_cards!==undefined){')&&vl.includes('"AM_REVIEW_CARDS_ANSWER"')&&vl.includes('Three final review points required'),'validator keeps the 3 review strings required and checks review_cards only when present');
+  }
   // 2026-10-16 (REGRESSION-GUARD §28): review points are shown through the display-only readable renderer.
   {
     const hv=read('data/history-v2.js'),lt=read('data/daily-light-test.js');
@@ -700,7 +708,7 @@ try {
       taskOk(text.length>0&&missing.length===0,'task runbook '+name+' keeps its required markers'+(missing.length?' (missing: '+missing.join(' | ')+')':''));
     };
     need('COMMON',doc('docs/tasks/COMMON.md'),['docs/tasks/AM-LESSON.md','docs/tasks/PM-LESSON.md','docs/tasks/EXTENSIVE-READING.md','TZ=Asia/Jakarta date +%F','REST','一次性 push','force push','不自己合并','LESSON_V4_FALLBACK','SendUserFile','PushNotification','不得禁用','未实际运行的检查不得声称通过']);
-    need('AM',doc('docs/tasks/AM-LESSON.md'),['docs/tasks/COMMON.md','lesson-release-D-am','data/daily/D-am.json','AUTO_PUBLISH_LESSON=1','rank-review-candidates.js --date D --session am','validate-lesson-candidate.js','plan-lesson-publication.js','regression-guard.js','check-collocations.js','docs/LESSON-QUALITY.md','docs/LESSON-JSON-SCHEMA.md','docs/LESSON-RECOVERY.md','dont-first','恰好 10 张','review_vocab','cycle_vocab','exposure_ledger','natural_recurrence','check-recurrence.js --candidate data/daily/D-am.json','至少 10 个','review_groups','RELEASE_PREFLIGHT','LESSON_RELEASE_PUBLISHED','VERIFIED_COMPLETE','全课跨句逻辑检查']);
+    need('AM',doc('docs/tasks/AM-LESSON.md'),['review_cards','AM_REVIEW_CARDS_INVALID','删掉整个 review_cards','docs/tasks/COMMON.md','lesson-release-D-am','data/daily/D-am.json','AUTO_PUBLISH_LESSON=1','rank-review-candidates.js --date D --session am','validate-lesson-candidate.js','plan-lesson-publication.js','regression-guard.js','check-collocations.js','docs/LESSON-QUALITY.md','docs/LESSON-JSON-SCHEMA.md','docs/LESSON-RECOVERY.md','dont-first','恰好 10 张','review_vocab','cycle_vocab','exposure_ledger','natural_recurrence','check-recurrence.js --candidate data/daily/D-am.json','至少 10 个','review_groups','RELEASE_PREFLIGHT','LESSON_RELEASE_PUBLISHED','VERIFIED_COMPLETE','全课跨句逻辑检查']);
     need('PM',doc('docs/tasks/PM-LESSON.md'),['docs/tasks/COMMON.md','lesson-release-YYYY-MM-DD-pm','data/daily/D-pm.json','AUTO_PUBLISH_LESSON=1','rank-review-candidates.js --date YYYY-MM-DD --session pm','validate-lesson-candidate.js','plan-lesson-publication.js','regression-guard.js','check-collocations.js','docs/LESSON-QUALITY.md','docs/LESSON-JSON-SCHEMA.md','docs/LESSON-RECOVERY.md','10–12','3 道 choice + 2 道 fill + 1 道 order','self_check','review.steps','今天08:00新学','今天08:00复习过的老词','exposure_ledger','natural_recurrence','check-recurrence.js --candidate data/daily/D-pm.json','至少 15 个','review_groups','RELEASE_PREFLIGHT','LESSON_RELEASE_PUBLISHED','VERIFIED_COMPLETE','全课跨句逻辑检查']);
     need('EXTENSIVE-READING',doc('docs/tasks/EXTENSIVE-READING.md'),['docs/tasks/COMMON.md','extensive-reading-D','data/extensive-reading-candidate.json','AUTO_PUBLISH_EXTENSIVE_READING=1','reading-review.js --date D','publish-extensive-reading-candidate.js check','regression-guard.js','check-collocations.js','160–220','0–3 天','12–16','至少 4 个 tier=focus','term 必须逐字出现','不得生成第二篇']);
     // 2026-10-15: the natural-recurrence minimum is a generator-side gate; it must not be loosened silently.
