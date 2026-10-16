@@ -109,7 +109,10 @@ try{
   ok(!profileUi.includes('DAILY_VOCAB_DB')&&!profileUi.includes('WeaknessPool'),'profile homepage must not recompute full vocab databases');
   ok(profileUi.includes('openVocabProfileDetail'),'profile summary must expose a clickable detail entry');
   ok(profileUi.includes('主词库当前待学习')&&profileUi.includes('primary_eligible_new_total')&&!profileUi.includes('尚未正式学习 '+"'+data.primary_unlearned_total+'"),'profile shows only the actionable primary new-word remainder');
-  ok(profileUi.includes("page.id='vocabProfileDetail'")&&profileUi.includes("['overview','能力总览']")&&profileUi.includes("['trend','学习趋势']")&&profileUi.includes("['weak','弱词分析']")&&profileUi.includes("['advice','学习建议']"),'profile detail page keeps four planned analysis tabs');
+  // 2026-10-16 (user decision): seven tabs merged into 今天 / 本周 / 查词; the old names still open the tab that holds their content.
+  ok(profileUi.includes("page.id='vocabProfileDetail'")&&profileUi.includes("[['today','今天'],['week','本周'],['words','查词']]")&&/TAB_ALIAS=\{today:'today',overview:'week',trend:'week',weekly:'week',advice:'week',week:'week',words:'words',weak:'words'\}/.test(profileUi),'profile detail page has the three tabs and maps old tab names');
+  ok(profileUi.includes('function weekHTML(')&&profileUi.includes('本机验证的主动词汇')&&profileUi.includes('本机稳定识别词汇')&&profileUi.includes('trendHTML(data)')&&profileUi.includes('weeklyHTML()'),'本周 keeps the long-term ability numbers, weekly report and trend');
+  ok(profileUi.includes("[['weak','弱词'],['due','到期'],['recent','最近练过']]"),'查词 offers weak / due / recent filters');
   ok(profileUi.includes('data-vp-action="automation"')&&profileUi.includes('data-vp-action="quick"'),'weak-word detail keeps direct training actions');
   ok(!externalScripts.some(x=>x.includes('library-switcher.js')),'legacy library-switcher must not be loaded by index.html');
   ok(!index.includes('sessionCount'),'retired 今日完成 vocab stat must not exist in index.html');
