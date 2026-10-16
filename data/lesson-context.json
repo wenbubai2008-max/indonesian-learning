@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-16",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 56
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-15T23:40:32.335Z",
-    "lesson_watermark": "2026-10-15 18:00",
-    "index_updated": "2026-10-15",
-    "runtime_hash": "52b4d0674201738c3db61ab4595e134cc8b9be2f848856830ddfeb241ef991f1",
-    "index_hash": "8154fbac7b07db4fbdbf992bef19c3a559836bc4058ba2c65f0c2c5b0a8587cc",
+    "runtime_generated_at": "2026-10-16T00:31:27.770Z",
+    "lesson_watermark": "2026-10-16 08:00",
+    "index_updated": "2026-10-16",
+    "runtime_hash": "2c6e5083494cae83deab8392e3cba2fb05919fb91486d7d2398f7715ca417b3f",
+    "index_hash": "e09f071094edafda0492c621a416b68117e38986af797819eadeb0940613e970",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "meja rias",
-        "梳妆台"
-      ],
-      [
-        "jemuran",
-        "晾衣架/晾晒处"
-      ],
-      [
-        "lukisan",
-        "画/绘画"
-      ],
-      [
-        "berbentuk",
-        "呈…形状"
-      ],
-      [
-        "berkeliling",
-        "到处走/环游"
-      ],
-      [
-        "berjabat tangan",
-        "握手"
-      ],
-      [
-        "manja",
-        "娇气/爱撒娇"
-      ],
-      [
-        "penyayang",
-        "有爱心的"
-      ],
-      [
-        "tekstur",
-        "口感/质地"
-      ],
-      [
-        "gurih",
-        "鲜香/咸香"
-      ],
       [
         "renyah",
         "酥脆"
@@ -1654,16 +1614,6 @@
         "困难；麻烦"
       ],
       [
-        "kayak",
-        1,
-        1,
-        "",
-        "2026-10-15T08:31:54.810Z",
-        "像、好像",
-        "",
-        ""
-      ],
-      [
         "janjian",
         3,
         0,
@@ -1701,16 +1651,6 @@
         "2026-10-09T07:09:02.080Z",
         "本应该、按理说",
         "harus",
-        ""
-      ],
-      [
-        "nganter",
-        3,
-        0,
-        "",
-        "2026-10-15T07:42:46.058Z",
-        "送某人去；送到",
-        "antar",
         ""
       ],
       [
@@ -2082,16 +2022,6 @@
         "解决方案；办法",
         "solusi",
         "解决方案"
-      ],
-      [
-        "antar",
-        3,
-        0,
-        "",
-        "2026-10-15T13:38:20.971Z",
-        "送；送到（口语高频）",
-        "antar",
-        "送；递送"
       ],
       [
         "mantap",
@@ -3254,6 +3184,36 @@
         "担任职务；握"
       ],
       [
+        "keahlian",
+        2,
+        0,
+        "",
+        "2026-10-13T15:15:49.402Z",
+        "专业技能；专长",
+        "ahli",
+        "专家；擅长"
+      ],
+      [
+        "lamaran",
+        2,
+        0,
+        "",
+        "2026-10-15T13:47:09.459Z",
+        "申请；求婚",
+        "lamar",
+        "申请；求婚"
+      ],
+      [
+        "omzet",
+        2,
+        0,
+        "",
+        "2026-10-15T07:43:12.074Z",
+        "营业额",
+        "omzet",
+        "营业额"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3352,6 +3312,106 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
+      ],
+      [
+        "meja rias",
+        2,
+        0,
+        "",
+        "",
+        "梳妆台",
+        "rias",
+        "打扮；化妆"
+      ],
+      [
+        "jemuran",
+        2,
+        0,
+        "",
+        "",
+        "晾着的衣服；晾衣架/晾衣处",
+        "jemur",
+        "晒；晾"
+      ],
+      [
+        "lukisan",
+        2,
+        0,
+        "",
+        "",
+        "画；画作",
+        "lukis",
+        "绘画"
+      ],
+      [
+        "berbentuk",
+        2,
+        0,
+        "",
+        "",
+        "呈……形状；形状是……",
+        "bentuk",
+        "形状"
+      ],
+      [
+        "berkeliling",
+        2,
+        0,
+        "",
+        "",
+        "到处转转；绕着走一圈；巡游",
+        "keliling",
+        "周围；一圈"
+      ],
+      [
+        "berjabat tangan",
+        2,
+        0,
+        "",
+        "",
+        "握手",
+        "jabat",
+        "握住"
+      ],
+      [
+        "manja",
+        2,
+        0,
+        "",
+        "",
+        "娇气；爱撒娇；（宠物）黏人",
+        "manja",
+        "娇惯"
+      ],
+      [
+        "penyayang",
+        2,
+        0,
+        "",
+        "",
+        "有爱心的；慈爱的（人）",
+        "sayang",
+        "爱；疼爱"
+      ],
+      [
+        "tekstur",
+        2,
+        0,
+        "",
+        "",
+        "质地；（食物的）口感",
+        "",
+        ""
+      ],
+      [
+        "gurih",
+        2,
+        0,
+        "",
+        "",
+        "鲜香；咸香可口",
+        "",
+        ""
       ]
     ],
     "focus": [
@@ -3994,6 +4054,29 @@
         "kekurangan",
         "mengeluarkan"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "session": "am",
+      "review_core": [
+        "nganter",
+        "antar",
+        "jadi",
+        "kewalahan",
+        "kayak"
+      ],
+      "new_words": [
+        "meja rias",
+        "jemuran",
+        "lukisan",
+        "berbentuk",
+        "berkeliling",
+        "berjabat tangan",
+        "manja",
+        "penyayang",
+        "tekstur",
+        "gurih"
+      ]
     }
   ],
   "previous_pm": {
@@ -4011,7 +4094,88 @@
       "anggaran"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-16",
+    "vocab": [
+      [
+        "meja rias",
+        "梳妆台",
+        "dressing table",
+        "rias",
+        "打扮；化妆"
+      ],
+      [
+        "jemuran",
+        "晾着的衣服；晾衣架/晾衣处",
+        "laundry being dried; clothesline",
+        "jemur",
+        "晒；晾"
+      ],
+      [
+        "lukisan",
+        "画；画作",
+        "painting",
+        "lukis",
+        "绘画"
+      ],
+      [
+        "berbentuk",
+        "呈……形状；形状是……",
+        "shaped (like)",
+        "bentuk",
+        "形状"
+      ],
+      [
+        "berkeliling",
+        "到处转转；绕着走一圈；巡游",
+        "to go around; to tour",
+        "keliling",
+        "周围；一圈"
+      ],
+      [
+        "berjabat tangan",
+        "握手",
+        "to shake hands",
+        "jabat",
+        "握住"
+      ],
+      [
+        "manja",
+        "娇气；爱撒娇；（宠物）黏人",
+        "spoiled; clingy; affectionate",
+        "manja",
+        "娇惯"
+      ],
+      [
+        "penyayang",
+        "有爱心的；慈爱的（人）",
+        "loving; affectionate (person)",
+        "sayang",
+        "爱；疼爱"
+      ],
+      [
+        "tekstur",
+        "质地；（食物的）口感",
+        "texture",
+        "",
+        ""
+      ],
+      [
+        "gurih",
+        "鲜香；咸香可口",
+        "savory",
+        "",
+        ""
+      ]
+    ],
+    "review_vocab": [
+      "nganter",
+      "antar",
+      "jadi",
+      "kewalahan",
+      "kayak"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

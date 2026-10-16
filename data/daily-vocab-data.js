@@ -1065,19 +1065,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-08-27 08:00",
+    "last_seen": "2026-10-16 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-27"
+      "2026-08-27",
+      "2026-10-16"
     ],
     "example": "Kayaknya dia lagi sibuk.",
     "example_cn": "好像他正在忙。",
     "lesson_occurrences": [
-      "2026-08-27 08:00"
+      "2026-08-27 08:00",
+      "2026-10-16 08:00"
     ]
   },
   {
@@ -3356,21 +3358,25 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-27 19:00",
-    "last_seen": "2026-08-27 19:00",
+    "last_seen": "2026-10-16 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-27"
+      "2026-08-27",
+      "2026-10-16"
     ],
     "example": "Besok jadi pergi nggak?",
     "example_cn": "明天还去吗？",
     "lesson_occurrences": [
-      "2026-08-27 19:00"
+      "2026-08-27 19:00",
+      "2026-10-16 08:00"
     ]
   },
   {
@@ -4239,19 +4245,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 08:00",
-    "last_seen": "2026-08-31 08:00",
+    "last_seen": "2026-10-16 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-10-16"
     ],
     "example": "Nanti aku nganter kamu sampai stasiun aja.",
     "example_cn": "等会儿我就送你到车站吧。",
     "lesson_occurrences": [
-      "2026-08-31 08:00"
+      "2026-08-31 08:00",
+      "2026-10-16 08:00"
     ]
   },
   {
@@ -7385,20 +7393,22 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-08 19:00",
+    "last_seen": "2026-10-16 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-09-08"
+      "2026-09-08",
+      "2026-10-16"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
-      "2026-09-08 19:00"
+      "2026-09-08 19:00",
+      "2026-10-16 08:00"
     ]
   },
   {
@@ -10325,19 +10335,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 19:00",
-    "last_seen": "2026-09-14 19:00",
+    "last_seen": "2026-10-16 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-10-16"
     ],
     "lesson_occurrences": [
-      "2026-09-14 19:00"
+      "2026-09-14 19:00",
+      "2026-10-16 08:00"
     ]
   },
   {
@@ -21393,6 +21407,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-15 18:00"
+    ]
+  },
+  {
+    "word": "meja rias",
+    "cn": "梳妆台",
+    "en": "dressing table",
+    "root": "rias",
+    "root_cn": "打扮；化妆",
+    "example": "Kakak kelamaan di depan meja rias, jadi kita harus ngejar waktu ke kondangan.",
+    "example_cn": "姐姐在梳妆台前磨蹭太久，我们只好赶时间去参加婚宴。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 08:00"
+    ]
+  },
+  {
+    "word": "jemuran",
+    "cn": "晾着的衣服；晾衣架/晾衣处",
+    "en": "laundry being dried; clothesline",
+    "root": "jemur",
+    "root_cn": "晒；晾",
+    "example": "Aku kebablasan tidur siang, jemurannya kehujanan semua.",
+    "example_cn": "我午觉睡过头了，晾的衣服全被雨淋了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 08:00"
+    ]
+  },
+  {
+    "word": "lukisan",
+    "cn": "画；画作",
+    "en": "painting",
+    "root": "lukis",
+    "root_cn": "绘画",
+    "example": "Sayang banget, lukisan di ruang tamu sekarang ketutup lemari baru.",
+    "example_cn": "真可惜，客厅里的那幅画现在被新柜子挡住了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 08:00"
+    ]
+  },
+  {
+    "word": "berbentuk",
+    "cn": "呈……形状；形状是……",
+    "en": "shaped (like)",
+    "root": "bentuk",
+    "root_cn": "形状",
+    "example": "Kue ulang tahun Dika berbentuk mobil, dia senang banget.",
+    "example_cn": "Dika 的生日蛋糕做成了汽车的样子，他高兴极了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 08:00"
+    ]
+  },
+  {
+    "word": "berkeliling",
+    "cn": "到处转转；绕着走一圈；巡游",
+    "en": "to go around; to tour",
+    "root": "keliling",
+    "root_cn": "周围；一圈",
+    "example": "Seharian kami berkeliling Kota Bandung naik angkot. Malamnya semua kecapean.",
+    "example_cn": "我们坐小巴在万隆城里转了一整天，晚上大家都累坏了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 08:00"
+    ]
+  },
+  {
+    "word": "berjabat tangan",
+    "cn": "握手",
+    "en": "to shake hands",
+    "root": "jabat",
+    "root_cn": "握住",
+    "example": "Setelah rapat selesai, kedua manajer itu berjabat tangan, lalu foto bersama.",
+    "example_cn": "会议结束后，那两位经理握了握手，然后一起合影。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 08:00"
+    ]
+  },
+  {
+    "word": "manja",
+    "cn": "娇气；爱撒娇；（宠物）黏人",
+    "en": "spoiled; clingy; affectionate",
+    "root": "manja",
+    "root_cn": "娇惯",
+    "example": "Kucingku manja banget. Kalau aku kerja, dia suka tidur di atas laptop, jadi kerjaku keganggu terus.",
+    "example_cn": "我的猫特别黏人。我一工作，它就爱睡在笔记本电脑上，害我老是被打扰。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 08:00"
+    ]
+  },
+  {
+    "word": "penyayang",
+    "cn": "有爱心的；慈爱的（人）",
+    "en": "loving; affectionate (person)",
+    "root": "sayang",
+    "root_cn": "爱；疼爱",
+    "example": "Bu Ani guru yang penyayang. Kalau ada murid yang bercandanya kelewatan, beliau menegurnya dengan sabar.",
+    "example_cn": "Ani 老师很有爱心。要是有学生开玩笑开过了头，她会耐心地提醒。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 08:00"
+    ]
+  },
+  {
+    "word": "tekstur",
+    "cn": "质地；（食物的）口感",
+    "en": "texture",
+    "root": "",
+    "root_cn": "",
+    "example": "Tekstur kain kaus ini agak kasar, bikin kulitku gatal.",
+    "example_cn": "这件 T 恤的布料有点粗糙，弄得我皮肤发痒。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 08:00"
+    ]
+  },
+  {
+    "word": "gurih",
+    "cn": "鲜香；咸香可口",
+    "en": "savory",
+    "root": "",
+    "root_cn": "",
+    "example": "Nasi uduk rasanya gurih karena dimasak dengan santan.",
+    "example_cn": "椰浆饭吃起来咸香可口，因为是用椰浆煮的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 08:00"
     ]
   }
 ];
