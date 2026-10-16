@@ -19,6 +19,12 @@ const runTests=function runTests(validate){
  }
  let count=0;const ok=(name,input)=>{const r=validate(input);if(!r.ok)throw Error(name+" valid failed "+JSON.stringify(r.errors));count++};const bad=(name,input,code)=>{const r=validate(input);if(r.ok||!r.errors.some(x=>x.code===code))throw Error(name+" expected "+code+" got "+JSON.stringify(r.errors));count++};
  ok("normal AM",AM());ok("normal PM",PM());
+ // 2026-10-16: optional review_cards.
+ {const cards=()=>({recall:[0,1,2,3].map(i=>({cn:"中文"+i,id:"new"+i})),frames:["Saya … hari ini."],contrasts:[{items:[{id:"new0",cn:"甲"},{id:"rev0",cn:"乙"}],note:"区别"}],apply:[{word:"rev0",usage:"用法",examples:[{id:"Saya pakai rev0.",cn:"我用。"}]}]});
+  const x=AM();x.lesson.review_cards=cards();ok("AM with review_cards",x);
+  const y=AM();y.lesson.review_cards=cards();y.lesson.review_cards.recall[0].id="belum diajar";bad("review_cards recall answer must be taught today",y,"AM_REVIEW_CARDS_ANSWER");
+  const z=AM();z.lesson.review_cards=cards();z.lesson.review_cards.contrasts[0].items.pop();bad("review_cards contrast needs 2-3 words",z,"AM_REVIEW_CARDS_INVALID");
+  const w=AM();w.lesson.review_cards=["x"];bad("review_cards must be an object",w,"AM_REVIEW_CARDS_INVALID");}
  {const x=AM();x.runtime.new_pool.push("f1");x.runtime.new_pool_fuzzy.push("f1");x.runtime.oral_new_pool=[["f0"],["f1"]];x.runtime.oral_new_pool_dont=[];x.lesson.vocab.forEach(v=>v.is_oral_new=false);ok("AM all fuzzy oral cannot override ten dont",x)}
  {const x=AM();x.runtime.new_pool=x.runtime.new_pool.filter(w=>w!=="new9").concat(["f1"]);x.runtime.new_pool_dont.pop();x.runtime.new_pool_fuzzy.push("f1");x.runtime.oral_new_pool=[["f0"],["f1"]];x.runtime.oral_new_pool_dont=[];x.lesson.vocab.forEach(v=>v.is_oral_new=false);x.lesson.vocab[9]={...card("f0"),is_oral_new:true};ok("AM one fuzzy slot cannot force two oral",x)}
  {const x=AM();x.lesson.vocab.forEach(v=>v.is_oral_new=false);bad("AM still requires two eligible oral dont",x,"ORAL_COUNT")}

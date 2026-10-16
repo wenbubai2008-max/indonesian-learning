@@ -13,6 +13,7 @@ Required root: `date, session:"am", time:"08:00", day, title, vocab, review_voca
 - `quiz`: exactly **3 multiple-choice questions**, each using `{ "question": "题干", "options": ["A","B","C","D"], "answer_index": 0, "answer": "A", "explain": "解释" }`. `answer`, when provided, must equal `options[answer_index]`. At least one correct option must be one of the actual `review_vocab` words. No PM-style `prompt` in place of `question` and no `fill` item. The question must not accidentally reveal the correct option.
 - `output`: `{ "task": "...", "reference_answer": "...", "reference_cn": "..." }`.
 - `review`: array of exactly three nonempty strings (NOT PM's `{title,steps}` object).
+- `review_cards` (optional, written every lesson since 2026-10-16): structured copy of the same three review points for the page's review cards. `{ "recall": [{"cn":"梳妆台","id":"meja rias"}] (4–12; every id is one of today's vocab / review_vocab / cycle_vocab words), "frames": ["Masukin …, mau hujan!"] (optional, ≤6), "contrasts": [{"items":[{"id":"gurih","cn":"好吃的咸鲜"},{"id":"asin","cn":"咸"}],"note":"gurih 是夸好吃"}] (1–6 groups of 2–3), "apply": [{"word":"antar","usage":"常用在请求里","examples":[{"id":"Nanti antar Nenek pulang, ya.","cn":"等会儿送奶奶回家哦。"}]}] (1–4, 1–3 examples) }`. Absent is valid; if present and malformed the validator fails with `AM_REVIEW_CARDS_INVALID` / `AM_REVIEW_CARDS_ANSWER` — fix once, otherwise delete the whole field.
 
 ## PM — 18:00
 

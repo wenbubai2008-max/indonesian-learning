@@ -100,6 +100,12 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
 - **quiz**：恰好 3 题，每题 question、options（建议 4 个）、answer_index（从 0 开始）、answer（必须等于 options[answer_index]）、explain。至少一题的正确答案是真实的 review_vocab 词（题干写“复习”两字不算）；题干不得泄露答案；不得照搬 PM 的 prompt/fill/order 结构。
 - **output**：task、reference_answer、reference_cn，用至少 2 个本课重点词的真实交流任务。
 - **review**：恰好 3 个非空字符串（3 秒主动提取、易混词或搭配、重点复习词的实际应用），不是晚课的 `{title, steps}`。
+- **review_cards**（2026-10-16 用户决定；可选但每节都要写）：上面 3 段复习的结构化版本，网页据此显示可点开的提取卡片、对比块和例句。**内容与 review 三段一致，不新增词、不加量**；review 三段照常写。格式：
+  - `recall`：4–12 个 `{cn, id}`——cn 是中文提示，id 是印尼语答案，**必须是本课 vocab / review_vocab / cycle_vocab 里的词**（校验器检查）。
+  - `frames`（可选）：最多 6 个补半句的印尼语字符串，例如 `"Masukin …, mau hujan!"`。
+  - `contrasts`：1–6 组 `{items:[{id, cn}] 2–3 个, note: 一句话区别}`，同词根一组也写在这里。
+  - `apply`：1–4 个 `{word, usage: 一句话用法, examples:[{id, cn}] 1–3 句}`。
+  - 预检报 `AM_REVIEW_CARDS_INVALID` / `AM_REVIEW_CARDS_ANSWER` 时，按报错改一次；仍不通过就**删掉整个 review_cards**（课程照样有效，网页退回显示 3 段文字），不得为此改动 review 或其他内容。
 
 ## 六、教学质量
 
@@ -111,7 +117,7 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
 
 ## 七、写入前校验
 
-写正文前已做资格预检（4.4）。完整 JSON 生成并完成第二遍教学审稿后，再核对：根字段齐全；vocab 恰好 10 张且字段完整；review_vocab 为 4–6 个合法词；复习循环时 cycle_vocab 正确；sentences 恰好 5 句；reading 80–120 词且有中文；quiz 3 题且答案对应，至少一题答案是 review_vocab 词；output 三字段完整；review 恰好 3 条；日期、day、时段和 runtime/index 基线一致。
+写正文前已做资格预检（4.4）。完整 JSON 生成并完成第二遍教学审稿后，再核对：根字段齐全；vocab 恰好 10 张且字段完整；review_vocab 为 4–6 个合法词；复习循环时 cycle_vocab 正确；sentences 恰好 5 句；reading 80–120 词且有中文；quiz 3 题且答案对应，至少一题答案是 review_vocab 词；output 三字段完整；review 恰好 3 条；review_cards 与 review 内容一致、recall 答案都是本课的词；日期、day、时段和 runtime/index 基线一致。
 
 然后在本地真实运行，全部通过才可写入：
 

@@ -498,3 +498,10 @@
 - 早课 `review` 三段文字、晚课 `review.steps` 由 `history-v2.js` 的 `reviewReadableHtml()` 显示：开头“标题：”变成小标题；顶层“；”换行（括号和引号里的不拆）；“——”后面是 3 个以上、每个不超过 14 字的“、”列表时显示成小块；印尼语加深加粗，`vs` 单独淡色显示。
 - 不猜答案、不生成互动题，文字内容一字不改；课程 JSON、校验器、生成任务都不变。旧课同样适用。
 - 需要答案和互动卡片的结构化复习（`review_cards`）是下一步，单独 PR。
+
+## 29. 2026-10-16 早课结构化复习 `review_cards`（用户确认）
+
+- **课程合同不变**：`review` 仍然必须是 3 段文字（`AM_FINAL_REVIEW_INVALID`）。新增可选根字段 `review_cards`，是同一内容的结构化版本：`recall`（4–12 个 {cn, id}，答案必须是本课 vocab / review_vocab / cycle_vocab 的词）、可选 `frames`、`contrasts`（1–6 组 2–3 个词 + 一句区别）、`apply`（1–4 个词，各 1–3 个例句）。
+- **校验**：字段不存在不检查；存在时格式错 `AM_REVIEW_CARDS_INVALID`、答案不是本课的词 `AM_REVIEW_CARDS_ANSWER`。生成任务按报错改一次，仍不通过就删掉整个字段，不改动 review 或其他内容（`docs/tasks/AM-LESSON.md`）。
+- **网页**：`history-v2.js` 的 `reviewCardsHtml()`：提取卡片显示中文、点开显示答案和发音（不记分、不存储）；易混词每组一块并附一句区别；应用词一词一块、例句带发音和中文。缺字段的条目跳过，什么都没有时退回 §28 的三段文字排版。
+- **守卫 / 测试**：`regression-guard.js` §29 组和 AM 说明书标记；`test-lesson-candidate.js` 新增 4 项（有卡片通过、答案不是本课的词、对比组不足 2 个、类型错误）。
