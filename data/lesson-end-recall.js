@@ -93,15 +93,15 @@
   function css(){
     if(document.getElementById('lessonRecallStyle'))return;
     const st=document.createElement('style');st.id='lessonRecallStyle';
-    st.textContent='.lessonRecall .lrIntro{color:#5b6475;font-size:14px;margin:4px 0 10px}.lessonRecall .lrList{display:grid;gap:8px}.lessonRecall .lrItem{border:1px solid #e3e8f0;border-radius:12px;padding:10px 12px;background:#fbfcfe}.lessonRecall .lrCn{font-weight:600}.lessonRecall .lrTag{font-size:12px;color:#7a8396;margin-left:6px;font-weight:400}.lessonRecall .lrBtns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.lessonRecall .lrBtns button{border:1px solid #cfd7e4;background:#fff;border-radius:999px;padding:5px 12px;font-size:14px;cursor:pointer}.lessonRecall .lrAns{display:none;margin-top:6px;font-size:16px}.lessonRecall .lrItem.open .lrAns{display:block}.lessonRecall .lrAns b{color:#1d4ed8}.lessonRecall .lrSpeak{border:0;background:none;cursor:pointer;font-size:16px}.lessonRecall .lrDone{margin-top:6px;font-size:13px;color:#4b5563}.lessonRecall .lrDone.fail{color:#b45309}.lessonRecall .lrFoot{margin-top:10px;font-size:13px;color:#6b7280}';
+    st.textContent='.lessonRecall .lrIntro{color:#5b6475;font-size:14px;margin:4px 0 10px}.lessonRecall .lrList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}@media(min-width:640px){.lessonRecall .lrList{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(min-width:900px){.lessonRecall .lrList{grid-template-columns:repeat(4,minmax(0,1fr))}}.lessonRecall .lrItem{border:1px solid #e3e8f0;border-radius:10px;padding:8px 8px 9px;background:#fbfcfe;display:flex;flex-direction:column;justify-content:space-between;gap:6px;text-align:center;min-width:0}.lessonRecall .lrCn{font-weight:600;font-size:14px;line-height:1.35;color:#475467;overflow-wrap:anywhere}.lessonRecall .lrTag{display:block;font-size:11px;color:#7a8396;font-weight:400}.lessonRecall .lrBtns{display:flex;flex-wrap:wrap;justify-content:center;gap:4px}.lessonRecall .lrBtns button{border:1px solid #cfd7e4;background:#fff;border-radius:999px;padding:3px 9px;font-size:13px;line-height:1.4;cursor:pointer;white-space:nowrap}.lessonRecall .lrAns{display:none;font-size:15px}.lessonRecall .lrItem.open .lrAns{display:block}.lessonRecall .lrAns b{color:#1d4ed8}.lessonRecall .lrSpeak{border:0;background:none;cursor:pointer;font-size:14px;padding:0 2px}.lessonRecall .lrDone{font-size:12px;color:#4b5563}.lessonRecall .lrDone.fail{color:#b45309}.lessonRecall .lrFoot{margin-top:10px;font-size:13px;color:#6b7280}@media(max-width:639px){.lessonRecall .lrItem{padding:7px 5px 8px}.lessonRecall .lrBtns{gap:3px}.lessonRecall .lrBtns button{padding:3px 6px;font-size:12.5px}.lessonRecall .lrCn{font-size:13.5px}}';
     document.head.appendChild(st);
   }
   function itemHTML(x,i){
     const res=todayResult(x.word);
     const tag=x.group==='backlog'?'<span class="lrTag">前几天学的</span>':'';
     const ans='<div class="lrAns"><b>'+esc(x.word)+'</b> <button type="button" class="lrSpeak" data-say="'+esc(x.word)+'" aria-label="发音">🔊</button></div>';
-    const body=res?'<div class="lrDone '+res+'">今天已回想：'+LABEL[res]+'</div>'
-      :'<div class="lrBtns" data-step="1"><button type="button" data-act="know">想到了</button><button type="button" data-act="fail">想不起来</button></div>';
+    const body=res?'<div class="lrDone '+res+'">已回想：'+LABEL[res]+'</div>'
+      :'<div class="lrBtns" data-step="1"><button type="button" data-act="know">想到了</button><button type="button" data-act="fail">想不出</button></div>';
     return '<div class="lrItem'+(res?' open':'')+'" data-i="'+i+'"><div class="lrCn">'+esc(x.cn)+tag+'</div>'+ans+body+'</div>';
   }
   function pending(sec){return [...sec.querySelectorAll('.lrItem')].filter(x=>!x.querySelector('.lrDone')).length;}
@@ -116,8 +116,8 @@
       if(b.dataset.say){try{root.speak&&root.speak(b.dataset.say);}catch(err){}return;}
       const item=b.closest('.lrItem');if(!item)return;const x=words[Number(item.dataset.i)];if(!x)return;
       const act=b.dataset.act,box=b.parentElement;
-      const finish=res=>{record(x.word,res,lessonId);box.outerHTML='<div class="lrDone '+res+'">'+(todayResult(x.word)===res?'已记录：':'今天已回想：')+LABEL[todayResult(x.word)||res]+'</div>';foot(sec);};
-      if(act==='know'){item.classList.add('open');box.innerHTML='<span style="font-size:13px;color:#6b7280;align-self:center">对照答案：</span><button type="button" data-act="fast">对，很快</button><button type="button" data-act="slow">对，有点慢</button><button type="button" data-act="wrong">不对</button>';return;}
+      const finish=res=>{record(x.word,res,lessonId);const r0=todayResult(x.word)||res;box.outerHTML='<div class="lrDone '+r0+'">已记录：'+LABEL[r0]+'</div>';foot(sec);};
+      if(act==='know'){item.classList.add('open');box.innerHTML='<button type="button" data-act="fast">对·很快</button><button type="button" data-act="slow">对·有点慢</button><button type="button" data-act="wrong">不对</button>';return;}
       if(act==='fail'||act==='wrong'){item.classList.add('open');finish('fail');return;}
       if(act==='fast'||act==='slow')finish(act);
     });
@@ -142,7 +142,7 @@
     css();
     const sec=document.createElement('section');sec.className='dailyFixSec lessonRecall';sec.dataset.lesson=cur.date+'-'+cur.session;
     const what=cur.session==='am'?'昨天早课的 '+words.length+' 个新词':'昨天晚课的新词和前几天学的词，共 '+words.length+' 个';
-    sec.innerHTML='<h3><span class="dailyFixNo">↺</span>课末回想 · 约 1 分钟</h3><div class="lrIntro">'+what+'。先看中文，在心里或说出印尼语，再点按钮看答案。</div><div class="lrList">'+words.map(itemHTML).join('')+'</div><div class="lrFoot"></div>';
+    sec.innerHTML='<h3><span class="dailyFixNo">↺</span>课末回想 · 约 1 分钟</h3><div class="lrIntro">'+what+'。先看中文，在心里或说出印尼语，再点「想到了」或「想不出」看答案。</div><div class="lrList">'+words.map(itemHTML).join('')+'</div><div class="lrFoot"></div>';
     place(body,sec,cur.btn);
     bind(sec,words,cur.date+'-'+cur.session);foot(sec);
   }
