@@ -1617,25 +1617,30 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "原始课程",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-28 08:00",
-    "last_seen": "2026-09-02 19:00",
+    "last_seen": "2026-10-16 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-28",
-      "2026-09-02"
+      "2026-09-02",
+      "2026-10-16"
     ],
-    "example": "Aku takut ketinggalan info kalau meeting-nya dipindah mendadak.",
-    "example_cn": "如果会议临时改时间，我怕错过消息。",
+    "example": "Gara-gara ketinggalan kereta pagi, aku harus mundurin semua jadwal hari ini satu jam.",
+    "example_cn": "因为误了早班火车，我得把今天所有安排往后推一个小时。（mundurin = memundurkan，口语）",
     "lesson_occurrences": [
       "2026-08-28 08:00",
-      "2026-09-02 19:00"
-    ]
+      "2026-09-02 19:00",
+      "2026-10-16 18:00"
+    ],
+    "root_cn": "留下；住；剩下"
   },
   {
     "word": "kabarin",
@@ -6375,24 +6380,28 @@ window.DAILY_VOCAB_DB = [
     "cn": "看得清；读得出来；不小心被看到（口语）",
     "en": "readable; can be read; accidentally seen/read",
     "root": "baca",
-    "example": "Tulisan di foto ini kecil banget, tapi masih kebaca.",
-    "example_cn": "照片里的字特别小，不过还是能看清。",
+    "example": "Mukamu gampang kebaca, tahu. Kalau lagi canggung, kamu pasti diem aja.",
+    "example_cn": "你的表情很好读懂，知道吗。一尴尬，你肯定就不说话了。（diem = diam，口语）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-04 08:00",
+    "last_seen": "2026-10-16 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-04"
+      "2026-09-04",
+      "2026-10-16"
     ],
     "root_cn": "读；阅读",
     "lesson_occurrences": [
-      "2026-09-04 08:00"
+      "2026-09-04 08:00",
+      "2026-10-16 18:00"
     ]
   },
   {
@@ -7954,21 +7963,25 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "蔓延；牵连",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-08 19:00",
-    "last_seen": "2026-09-08 19:00",
+    "last_seen": "2026-10-16 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-10-16"
     ],
-    "example": "Kalau masalah kecil ini nggak diberesin, nanti bisa ngerembet ke bagian lain.",
-    "example_cn": "如果这个小问题不处理好，之后可能会蔓延到其他部分。",
+    "example": "Jangan ngeles terus. Nanti masalahnya malah ngerembet ke mana-mana.",
+    "example_cn": "别老找借口了，不然问题反而会牵连一大串。",
     "lesson_occurrences": [
-      "2026-09-08 19:00"
+      "2026-09-08 19:00",
+      "2026-10-16 18:00"
     ]
   },
   {
@@ -13612,23 +13625,27 @@ window.DAILY_VOCAB_DB = [
     "en": "leave; leave behind",
     "root": "tinggal",
     "root_cn": "住；留下",
-    "example": "Dia meninggalkan kantor lebih awal karena ada urusan keluarga.",
-    "example_cn": "他因为家里有事提前离开了办公室。",
+    "example": "Banyak anak muda meninggalkan kampung untuk bekerja di kota, tetapi mereka tetap pulang setiap Lebaran.",
+    "example_cn": "很多年轻人离开村子到城里工作，但每到开斋节他们还是会回家。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-22 08:00",
-    "last_seen": "2026-09-22 08:00",
+    "last_seen": "2026-10-16 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-22"
+      "2026-09-22",
+      "2026-10-16"
     ],
     "lesson_occurrences": [
-      "2026-09-22 08:00"
+      "2026-09-22 08:00",
+      "2026-10-16 18:00"
     ]
   },
   {
@@ -14739,23 +14756,27 @@ window.DAILY_VOCAB_DB = [
     "en": "as if; as though",
     "root": "olah",
     "root_cn": "处理；操练（词形关联）",
-    "example": "Dia bicara seolah-olah sudah tahu semuanya.",
-    "example_cn": "他说话的样子仿佛什么都知道。",
+    "example": "Ia bersikap seolah-olah tidak terjadi apa-apa, padahal kemarin kami sempat salah paham.",
+    "example_cn": "他表现得好像什么都没发生，其实昨天我们还闹了误会。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-10-16 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-10-16"
     ],
     "lesson_occurrences": [
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-10-16 18:00"
     ]
   },
   {
@@ -16275,23 +16296,27 @@ window.DAILY_VOCAB_DB = [
     "en": "if; supposing that",
     "root": "andai",
     "root_cn": "假如；假设",
-    "example": "Seandainya besok libur, saya ingin tidur lebih lama.",
-    "example_cn": "假如明天放假，我想多睡一会儿。",
+    "example": "Seandainya aku berani ngomong dari awal, masalahnya nggak bakal ketumpuk kayak gini.",
+    "example_cn": "要是我一开始就敢说出来，问题就不会堆成这样了。（nggak = tidak，ketumpuk = bertumpuk，kayak gini = seperti ini）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-01 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-16 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-16"
     ],
     "lesson_occurrences": [
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-10-16 18:00"
     ]
   },
   {
@@ -21515,23 +21540,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to go around; to tour",
     "root": "keliling",
     "root_cn": "周围；一圈",
-    "example": "Seharian kami berkeliling Kota Bandung naik angkot. Malamnya semua kecapean.",
-    "example_cn": "我们坐小巴在万隆城里转了一整天，晚上大家都累坏了。",
+    "example": "Kita berkeliling pasar dulu, baru pilih mau makan di mana.",
+    "example_cn": "我们先在市场里转一圈，再挑在哪儿吃。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-16 08:00",
-    "last_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-16"
     ],
     "lesson_occurrences": [
-      "2026-10-16 08:00"
+      "2026-10-16 08:00",
+      "2026-10-16 18:00"
     ]
   },
   {
@@ -21640,23 +21668,102 @@ window.DAILY_VOCAB_DB = [
     "en": "savory",
     "root": "",
     "root_cn": "",
-    "example": "Nasi uduk rasanya gurih karena dimasak dengan santan.",
-    "example_cn": "椰浆饭吃起来咸香可口，因为是用椰浆煮的。",
+    "example": "Kuah laksanya gurih karena dimasak dengan santan dan ebi.",
+    "example_cn": "叻沙的汤很鲜香，因为是用椰浆和虾米煮的。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-16 08:00",
-    "last_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-16 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-16"
     ],
     "lesson_occurrences": [
-      "2026-10-16 08:00"
+      "2026-10-16 08:00",
+      "2026-10-16 18:00"
+    ]
+  },
+  {
+    "word": "membayangkan",
+    "cn": "想象；设想",
+    "en": "to imagine",
+    "root": "bayang",
+    "root_cn": "影子；影像",
+    "example": "Saya sulit membayangkan dia berbohong. Selama ini dia selalu bertanggung jawab atas pekerjaannya.",
+    "example_cn": "我很难想象他会撒谎。一直以来他对自己的工作都很负责。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 18:00",
+    "last_seen": "2026-10-16 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 18:00"
+    ]
+  },
+  {
+    "word": "mengenali",
+    "cn": "认出；辨认出（凭特征认出来）",
+    "en": "to recognize",
+    "root": "kenal",
+    "root_cn": "认识；熟悉",
+    "example": "Saya hampir tidak mengenali Andi karena sekarang ia jauh lebih kurus dan memakai kacamata.",
+    "example_cn": "我差点没认出 Andi，因为他现在瘦了很多，还戴了眼镜。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 18:00",
+    "last_seen": "2026-10-16 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 18:00"
+    ]
+  },
+  {
+    "word": "menyusul",
+    "cn": "随后赶来；（落后后）追上；接着到来",
+    "en": "to follow later; to catch up with",
+    "root": "susul",
+    "root_cn": "追随；随后跟上",
+    "example": "Kalian berangkat duluan saja, saya menyusul setelah urusan di kantor selesai.",
+    "example_cn": "你们先出发吧，我办完公司的事随后就到。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-16 18:00",
+    "last_seen": "2026-10-16 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-16"
+    ],
+    "lesson_occurrences": [
+      "2026-10-16 18:00"
     ]
   }
 ];

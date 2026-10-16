@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-16",
-    "session": "pm",
-    "time": "18:00",
-    "day": 56
+    "date": "2026-10-17",
+    "session": "am",
+    "time": "08:00",
+    "day": 57
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-16T09:40:46.080Z",
-    "lesson_watermark": "2026-10-16 08:00",
+    "runtime_generated_at": "2026-10-16T10:47:13.510Z",
+    "lesson_watermark": "2026-10-16 18:00",
     "index_updated": "2026-10-16",
-    "runtime_hash": "0aafc48bfca28ba8bcf97e8b4c4003bc946839f4ea2b87051329bb8e6d65c20e",
-    "index_hash": "e09f071094edafda0492c621a416b68117e38986af797819eadeb0940613e970",
+    "runtime_hash": "5ff27072a739d3434ef4001f4bb42d3f0d6fdd31750606bcb6379f2eda2b9b33",
+    "index_hash": "d8560bb44c65e5848942540347c626ab4b716ce5f4054b70697f6e2439ba7f64",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -192,10 +192,6 @@
       [
         "alur",
         "情节；流程"
-      ],
-      [
-        "menyusul",
-        "追上；随后跟上"
       ],
       [
         "roboh",
@@ -552,20 +548,12 @@
         "狭窄的"
       ],
       [
-        "membayangkan",
-        "想象"
-      ],
-      [
         "memukul",
         "击打"
       ],
       [
         "melompat",
         "跳跃"
-      ],
-      [
-        "mengenali",
-        "辨认、识别"
       ],
       [
         "mengapung",
@@ -1754,16 +1742,6 @@
         ""
       ],
       [
-        "ketinggalan",
-        3,
-        0,
-        "",
-        "2026-10-15T13:45:05.837Z",
-        "落下、忘带、错过",
-        "tinggal",
-        ""
-      ],
-      [
         "ngeluh",
         2,
         0,
@@ -1782,16 +1760,6 @@
         "整理好；收拾整齐；把……弄顺（口语）",
         "rapi",
         ""
-      ],
-      [
-        "kebaca",
-        1,
-        1,
-        "",
-        "2026-10-15T08:37:07.512Z",
-        "看得清；读得出来；不小心被看到（口语）",
-        "baca",
-        "读；阅读"
       ],
       [
         "kelewatan",
@@ -2774,16 +2742,6 @@
         "需要"
       ],
       [
-        "meninggalkan",
-        2,
-        0,
-        "",
-        "2026-10-15T07:40:43.824Z",
-        "离开，留下",
-        "tinggal",
-        "住；留下"
-      ],
-      [
         "menghapus",
         3,
         0,
@@ -3214,6 +3172,36 @@
         "营业额"
       ],
       [
+        "pelanggan",
+        2,
+        0,
+        "",
+        "2026-10-15T07:49:05.413Z",
+        "顾客；客户",
+        "langgan",
+        "经常购买；订购"
+      ],
+      [
+        "usahakan",
+        2,
+        0,
+        "",
+        "2026-10-15T08:15:48.779Z",
+        "尽量；努力做到",
+        "usaha",
+        "努力；事业"
+      ],
+      [
+        "atasan",
+        2,
+        0,
+        "",
+        "2026-10-15T13:48:10.236Z",
+        "上司；领导",
+        "atas",
+        "上；上方"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3312,106 +3300,6 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
-      ],
-      [
-        "meja rias",
-        2,
-        0,
-        "",
-        "2026-10-16T06:13:15.471Z",
-        "梳妆台",
-        "rias",
-        "打扮；化妆"
-      ],
-      [
-        "jemuran",
-        2,
-        0,
-        "",
-        "2026-10-16T06:13:04.434Z",
-        "晾着的衣服；晾衣架/晾衣处",
-        "jemur",
-        "晒；晾"
-      ],
-      [
-        "lukisan",
-        2,
-        0,
-        "",
-        "2026-10-16T06:13:07.426Z",
-        "画；画作",
-        "lukis",
-        "绘画"
-      ],
-      [
-        "berbentuk",
-        2,
-        0,
-        "",
-        "2026-10-16T06:12:51.264Z",
-        "呈……形状；形状是……",
-        "bentuk",
-        "形状"
-      ],
-      [
-        "berkeliling",
-        2,
-        0,
-        "",
-        "2026-10-16T06:12:59.253Z",
-        "到处转转；绕着走一圈；巡游",
-        "keliling",
-        "周围；一圈"
-      ],
-      [
-        "berjabat tangan",
-        2,
-        0,
-        "",
-        "2026-10-16T06:12:54.748Z",
-        "握手",
-        "jabat",
-        "握住"
-      ],
-      [
-        "manja",
-        2,
-        0,
-        "",
-        "2026-10-16T06:13:10.451Z",
-        "娇气；爱撒娇；（宠物）黏人",
-        "manja",
-        "娇惯"
-      ],
-      [
-        "penyayang",
-        2,
-        0,
-        "",
-        "2026-10-16T06:13:18.421Z",
-        "有爱心的；慈爱的（人）",
-        "sayang",
-        "爱；疼爱"
-      ],
-      [
-        "tekstur",
-        2,
-        0,
-        "",
-        "2026-10-16T06:13:27.185Z",
-        "质地；（食物的）口感",
-        "",
-        ""
-      ],
-      [
-        "gurih",
-        2,
-        0,
-        "",
-        "2026-10-16T06:13:01.936Z",
-        "鲜香；咸香可口",
-        "",
-        ""
       ]
     ],
     "focus": [
@@ -3674,14 +3562,6 @@
         "fuzzy"
       ],
       [
-        "membayangkan",
-        "通用",
-        "ngebayangin",
-        "bayang",
-        726,
-        "fuzzy"
-      ],
-      [
         "malahan",
         "通用",
         "malah",
@@ -3780,45 +3660,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-09",
-      "session": "am",
-      "review_core": [
-        "nyusahin",
-        "tumbuh",
-        "keuntungan",
-        "memutuskan",
-        "mengganggu"
-      ],
-      "new_words": [
-        "menggosok",
-        "menyalakan",
-        "negatif",
-        "kuno",
-        "mengembangkan",
-        "menguasai",
-        "kenal",
-        "kebutuhan",
-        "apabila",
-        "terletak"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "session": "pm",
-      "review_core": [
-        "cuek",
-        "melawan",
-        "peningkatan",
-        "terjadi",
-        "untung"
-      ],
-      "new_words": [
-        "menghabiskan",
-        "sampah",
-        "rapi"
-      ]
-    },
     {
       "date": "2026-10-10",
       "session": "am",
@@ -4077,105 +3918,42 @@
         "tekstur",
         "gurih"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "session": "pm",
+      "review_core": [
+        "seolah-olah",
+        "seandainya",
+        "ketinggalan",
+        "meninggalkan",
+        "kebaca",
+        "ngerembet"
+      ],
+      "new_words": [
+        "membayangkan",
+        "mengenali",
+        "menyusul"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "new_words": [
-      "angsuran",
-      "kekurangan",
-      "mengeluarkan"
+      "membayangkan",
+      "mengenali",
+      "menyusul"
     ],
     "review_core": [
-      "pendapatan",
-      "mendapatkan",
-      "sedangkan",
-      "sengaja",
-      "anggaran"
+      "seolah-olah",
+      "seandainya",
+      "ketinggalan",
+      "meninggalkan",
+      "kebaca",
+      "ngerembet"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-16",
-    "vocab": [
-      [
-        "meja rias",
-        "梳妆台",
-        "dressing table",
-        "rias",
-        "打扮；化妆"
-      ],
-      [
-        "jemuran",
-        "晾着的衣服；晾衣架/晾衣处",
-        "laundry being dried; clothesline",
-        "jemur",
-        "晒；晾"
-      ],
-      [
-        "lukisan",
-        "画；画作",
-        "painting",
-        "lukis",
-        "绘画"
-      ],
-      [
-        "berbentuk",
-        "呈……形状；形状是……",
-        "shaped (like)",
-        "bentuk",
-        "形状"
-      ],
-      [
-        "berkeliling",
-        "到处转转；绕着走一圈；巡游",
-        "to go around; to tour",
-        "keliling",
-        "周围；一圈"
-      ],
-      [
-        "berjabat tangan",
-        "握手",
-        "to shake hands",
-        "jabat",
-        "握住"
-      ],
-      [
-        "manja",
-        "娇气；爱撒娇；（宠物）黏人",
-        "spoiled; clingy; affectionate",
-        "manja",
-        "娇惯"
-      ],
-      [
-        "penyayang",
-        "有爱心的；慈爱的（人）",
-        "loving; affectionate (person)",
-        "sayang",
-        "爱；疼爱"
-      ],
-      [
-        "tekstur",
-        "质地；（食物的）口感",
-        "texture",
-        "",
-        ""
-      ],
-      [
-        "gurih",
-        "鲜香；咸香可口",
-        "savory",
-        "",
-        ""
-      ]
-    ],
-    "review_vocab": [
-      "nganter",
-      "antar",
-      "jadi",
-      "kewalahan",
-      "kayak"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
