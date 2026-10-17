@@ -93,7 +93,7 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
 
 完整 JSON 文件，结构与以往成功发布的 AM 课程一致；逐字段的键名表见 `docs/LESSON-JSON-SCHEMA.md` 的 AM 一节。要点：
 
-- **根字段**：date、session="am"、time="08:00"、day（按正式 index 确认，不是运行天数）、title（以 "08:00" 开头）、vocab、review_vocab、sentences、reading、quiz、output、review；复习循环时另加 cycle_vocab。可保留 Schema 允许的其他元数据，不得混入 PM 结构。
+- **根字段**：date、session="am"、time="08:00"、day（按正式 index 确认，不是运行天数）、title（以 "08:00" 开头；标题双语（2026-10-17 用户要求）：`时间 早课/晚课｜印尼语标题 · 中文标题`，两种语言说同一件事，例如 `08:00 早课｜Main ke Rumah Baru Tante Lia · 去莉亚阿姨的新家做客`）、vocab、review_vocab、sentences、reading、quiz、output、review；复习循环时另加 cycle_vocab。可保留 Schema 允许的其他元数据，不得混入 PM 结构。
 - **vocab**：恰好 10 张。每张有 word、display、audio_text（通常同 word，非空）、cn、en、root、root_cn（root 非空时必填）、formation（优先写构词关系、真实搭配和使用场景，不写空洞语法描述）、example、example_cn、synonym_note（实用辨析）、is_oral_new（布尔值）。
 - **sentences**：恰好 5 句 `{"text","cn"}`，尽量复现当天核心词，围绕真实情境（日常沟通、购物交通、办公室、朋友、家庭等），不要 5 句互不相关的字典例句。至少 1 句是自然口语（`docs/LESSON-QUALITY.md` §7b）。
 - **reading**：`{"text","cn"}`，印尼语 80–120 词（按空白分词实际统计，建议 90–105），有明确场景和连贯性，自然复现核心词和若干复习词，中文完整对应。
