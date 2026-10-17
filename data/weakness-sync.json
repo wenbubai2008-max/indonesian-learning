@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T15:59:29.047Z",
+  "updated_at": "2026-10-17T04:24:17.171Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -556,7 +556,7 @@
       "status": "active",
       "updated_at": "2026-10-16T15:54:59.111Z",
       "display": "kebaca",
-      "cn": "看得清；读得出来；（心思）被看出来；不小心被人看到（口语）",
+      "cn": "看得清；读得出来；不小心被看到（口语）",
       "root": "baca",
       "root_cn": "读；阅读",
       "last_wrong": "2026-10-16T15:54:59.027Z",
@@ -570,7 +570,7 @@
         "lesson_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 2
     },
     "kebentur": {
       "word": "kebentur",
@@ -5456,9 +5456,9 @@
       "status": "active",
       "updated_at": "2026-10-16T15:53:19.771Z",
       "display": "seolah-olah",
-      "cn": "仿佛；好像（实际上并不是）",
+      "cn": "仿佛；好像",
       "root": "olah",
-      "root_cn": "olah（此处义为“样子、举止”，与 mengolah“加工”的 olah 同形）",
+      "root_cn": "处理；操练（词形关联）",
       "last_wrong": "2026-10-16T15:53:19.681Z",
       "last_review": "2026-10-16T15:53:19.681Z",
       "source": "课程小测",
@@ -8027,8 +8027,9 @@
     "tanaman": {
       "word": "tanaman",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.995Z",
+      "updated_at": "2026-10-17T04:19:50.761Z",
       "display": "tanaman",
+      "cn": "植物",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -22126,16 +22127,21 @@
     "keluhan": {
       "word": "keluhan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:13.565Z",
+      "updated_at": "2026-10-17T04:24:04.868Z",
       "display": "keluhan",
       "cn": "投诉；抱怨",
       "root": "keluh",
-      "last_review": "2026-10-13T15:16:37.583Z",
+      "last_wrong": "2026-10-17T04:24:04.781Z",
+      "last_review": "2026-10-17T04:24:04.781Z",
+      "source": "课程小测",
+      "source_date": "2026-10-17",
+      "session": "08:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 2
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "pelayanan": {
       "word": "pelayanan",
