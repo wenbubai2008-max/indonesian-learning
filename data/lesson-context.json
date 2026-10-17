@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-17T00:32:39.057Z",
+    "runtime_generated_at": "2026-10-17T09:40:43.633Z",
     "lesson_watermark": "2026-10-17 08:00",
     "index_updated": "2026-10-17",
-    "runtime_hash": "58ece979443d3c2cd6458c1eb0e2c8d6c95b13d9eeb2859fbd898397c81fc1c5",
+    "runtime_hash": "cb03dde05f10c8e08d819682a2fea3993f4e92602bbcd1ea2883d3ef959da817",
     "index_hash": "f5ff13c90226dfc903520810eb2ff03dfc66f0499477f5e03f5a481f217eac6f",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
@@ -1182,6 +1182,16 @@
         "疏忽；不在意"
       ],
       [
+        "keluhan",
+        1,
+        1,
+        "2026-10-17T04:24:04.781Z",
+        "2026-10-17T04:24:04.781Z",
+        "投诉；抱怨",
+        "keluh",
+        "抱怨；叹息"
+      ],
+      [
         "menyiapkan",
         1,
         1,
@@ -1250,16 +1260,6 @@
         "暴力；强硬手段",
         "keras",
         "硬的；强烈的"
-      ],
-      [
-        "tepat",
-        1,
-        1,
-        "2026-10-15T08:14:17.765Z",
-        "2026-10-15T08:14:17.765Z",
-        "准确的；恰好；正好",
-        "tepat",
-        "准确；恰好"
       ],
       [
         "mengenali",
@@ -1390,6 +1390,16 @@
         "暗讽；含沙射影地说",
         "sindir",
         "讽刺；暗指"
+      ],
+      [
+        "tepat",
+        1,
+        1,
+        "2026-10-15T08:14:17.765Z",
+        "2026-10-15T08:14:17.765Z",
+        "准确的；恰好；正好",
+        "tepat",
+        "准确；恰好"
       ],
       [
         "seandainya",
@@ -1550,16 +1560,6 @@
         "传达；表达",
         "",
         ""
-      ],
-      [
-        "menatap",
-        1,
-        1,
-        "2026-10-09T07:52:12.821Z",
-        "2026-10-15T02:15:19.943Z",
-        "凝视；注视",
-        "tatap",
-        "凝视"
       ],
       [
         "janjian",
@@ -3541,6 +3541,14 @@
         ]
       ],
       [
+        "keluhan",
+        66,
+        [
+          "lesson_wrong",
+          "dont"
+        ]
+      ],
+      [
         "menyiapkan",
         66,
         [
@@ -3590,14 +3598,6 @@
       ],
       [
         "kekerasan",
-        66,
-        [
-          "quick_wrong",
-          "dont"
-        ]
-      ],
-      [
-        "tepat",
         66,
         [
           "quick_wrong",
