@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-17",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 57
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-16T23:40:44.754Z",
-    "lesson_watermark": "2026-10-16 18:00",
-    "index_updated": "2026-10-16",
-    "runtime_hash": "f2ef614735f10906702b17d02338986b9045192224f5e44beb1a2cfbbe2d839c",
-    "index_hash": "d8560bb44c65e5848942540347c626ab4b716ce5f4054b70697f6e2439ba7f64",
+    "runtime_generated_at": "2026-10-17T00:32:39.057Z",
+    "lesson_watermark": "2026-10-17 08:00",
+    "index_updated": "2026-10-17",
+    "runtime_hash": "58ece979443d3c2cd6458c1eb0e2c8d6c95b13d9eeb2859fbd898397c81fc1c5",
+    "index_hash": "f5ff13c90226dfc903520810eb2ff03dfc66f0499477f5e03f5a481f217eac6f",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "renyah",
-        "酥脆"
-      ],
-      [
-        "kenyal",
-        "Q弹/有嚼劲"
-      ],
-      [
-        "tepung",
-        "面粉/粉"
-      ],
-      [
-        "pena",
-        "笔"
-      ],
-      [
-        "berkebun",
-        "园艺/种植"
-      ],
-      [
-        "berkemah",
-        "露营"
-      ],
-      [
-        "bulat",
-        "圆形"
-      ],
-      [
-        "tumpul",
-        "钝"
-      ],
-      [
-        "lebat",
-        "浓密"
-      ],
-      [
-        "kumis",
-        "小胡子"
-      ],
       [
         "ramping",
         "苗条"
@@ -1742,16 +1702,6 @@
         ""
       ],
       [
-        "ngeluh",
-        2,
-        0,
-        "",
-        "2026-10-15T13:36:47.563Z",
-        "抱怨；发牢骚（口语）",
-        "keluh",
-        ""
-      ],
-      [
         "rapihin",
         3,
         0,
@@ -3072,16 +3022,6 @@
         "地区；区域"
       ],
       [
-        "keluhan",
-        2,
-        0,
-        "",
-        "2026-10-13T15:16:37.583Z",
-        "投诉；抱怨",
-        "keluh",
-        "抱怨；叹息"
-      ],
-      [
         "manfaat",
         2,
         0,
@@ -3202,6 +3142,26 @@
         "上；上方"
       ],
       [
+        "lowongan",
+        2,
+        0,
+        "",
+        "2026-10-15T03:28:32.556Z",
+        "职位空缺；招聘信息",
+        "lowong",
+        "空着；有空缺"
+      ],
+      [
+        "pesanan",
+        2,
+        0,
+        "",
+        "2026-10-15T13:46:56.673Z",
+        "订单；订购的东西",
+        "pesan",
+        "订购；传话"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3300,6 +3260,106 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
+      ],
+      [
+        "renyah",
+        2,
+        0,
+        "",
+        "",
+        "酥脆（炸物、饼干等）",
+        "",
+        ""
+      ],
+      [
+        "kenyal",
+        2,
+        0,
+        "",
+        "",
+        "Q弹；有嚼劲（有弹性）",
+        "",
+        ""
+      ],
+      [
+        "tepung",
+        2,
+        0,
+        "",
+        "",
+        "面粉；（食用）粉",
+        "",
+        ""
+      ],
+      [
+        "pena",
+        2,
+        0,
+        "",
+        "2026-09-12T14:13:55.433Z",
+        "笔（钢笔、签字笔，偏书面）",
+        "",
+        ""
+      ],
+      [
+        "berkebun",
+        2,
+        0,
+        "",
+        "",
+        "种菜种花；做园艺",
+        "kebun",
+        "园子；菜园；果园"
+      ],
+      [
+        "berkemah",
+        2,
+        0,
+        "",
+        "",
+        "露营",
+        "kemah",
+        "帐篷；营地"
+      ],
+      [
+        "bulat",
+        2,
+        0,
+        "",
+        "",
+        "圆的（球形、圆形）；完整的",
+        "",
+        ""
+      ],
+      [
+        "tumpul",
+        2,
+        0,
+        "",
+        "",
+        "钝的（不锋利）",
+        "",
+        ""
+      ],
+      [
+        "lebat",
+        1,
+        0,
+        "",
+        "",
+        "（雨）大；（毛发、树叶）浓密；（果实）累累",
+        "",
+        ""
+      ],
+      [
+        "kumis",
+        2,
+        0,
+        "",
+        "",
+        "小胡子（上唇的胡子）",
+        "",
+        ""
       ]
     ],
     "focus": [
@@ -3936,6 +3996,29 @@
         "mengenali",
         "menyusul"
       ]
+    },
+    {
+      "date": "2026-10-17",
+      "session": "am",
+      "review_core": [
+        "ngeluh",
+        "keluhan",
+        "mengeluh",
+        "nyindir",
+        "lengkap"
+      ],
+      "new_words": [
+        "renyah",
+        "kenyal",
+        "tepung",
+        "pena",
+        "berkebun",
+        "berkemah",
+        "bulat",
+        "tumpul",
+        "lebat",
+        "kumis"
+      ]
     }
   ],
   "previous_pm": {
@@ -3954,7 +4037,88 @@
       "ngerembet"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-17",
+    "vocab": [
+      [
+        "renyah",
+        "酥脆（炸物、饼干等）",
+        "crispy; crunchy",
+        "",
+        ""
+      ],
+      [
+        "kenyal",
+        "Q弹；有嚼劲（有弹性）",
+        "chewy; springy",
+        "",
+        ""
+      ],
+      [
+        "tepung",
+        "面粉；（食用）粉",
+        "flour",
+        "",
+        ""
+      ],
+      [
+        "pena",
+        "笔（钢笔、签字笔，偏书面）",
+        "pen",
+        "",
+        ""
+      ],
+      [
+        "berkebun",
+        "种菜种花；做园艺",
+        "to garden; to grow plants",
+        "kebun",
+        "园子；菜园；果园"
+      ],
+      [
+        "berkemah",
+        "露营",
+        "to camp; to go camping",
+        "kemah",
+        "帐篷；营地"
+      ],
+      [
+        "bulat",
+        "圆的（球形、圆形）；完整的",
+        "round; spherical; whole",
+        "",
+        ""
+      ],
+      [
+        "tumpul",
+        "钝的（不锋利）",
+        "blunt; dull",
+        "",
+        ""
+      ],
+      [
+        "lebat",
+        "（雨）大；（毛发、树叶）浓密；（果实）累累",
+        "heavy (rain); thick; dense",
+        "",
+        ""
+      ],
+      [
+        "kumis",
+        "小胡子（上唇的胡子）",
+        "moustache",
+        "",
+        ""
+      ]
+    ],
+    "review_vocab": [
+      "ngeluh",
+      "keluhan",
+      "mengeluh",
+      "nyindir",
+      "lengkap"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

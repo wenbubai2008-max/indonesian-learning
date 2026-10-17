@@ -5994,19 +5994,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-09-03 08:00",
+    "last_seen": "2026-10-17 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-03"
+      "2026-09-03",
+      "2026-10-17"
     ],
     "example": "Dia dari tadi ngeluh soal kerjaan yang numpuk.",
     "example_cn": "他从刚才开始就一直抱怨工作堆太多。",
     "lesson_occurrences": [
-      "2026-09-03 08:00"
+      "2026-09-03 08:00",
+      "2026-10-17 08:00"
     ]
   },
   {
@@ -9286,19 +9288,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 19:00",
+    "last_seen": "2026-10-17 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-12"
+      "2026-09-12",
+      "2026-10-17"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
-      "2026-09-12 19:00"
+      "2026-09-12 19:00",
+      "2026-10-17 08:00"
     ]
   },
   {
@@ -9694,19 +9698,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 19:00",
+    "last_seen": "2026-10-17 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-13"
+      "2026-09-13",
+      "2026-10-17"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
-      "2026-09-13 19:00"
+      "2026-09-13 19:00",
+      "2026-10-17 08:00"
     ]
   },
   {
@@ -13011,9 +13017,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-17 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13023,7 +13029,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-27",
       "2026-09-28",
       "2026-10-01",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-10-17"
     ],
     "lesson_occurrences": [
       "2026-09-23 08:00",
@@ -13031,7 +13038,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28 18:00",
       "2026-10-01 08:00",
       "2026-10-01 18:00",
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-10-17 08:00"
     ]
   },
   {
@@ -14174,19 +14182,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-25 18:00",
-    "last_seen": "2026-09-25 18:00",
+    "last_seen": "2026-10-17 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-25"
+      "2026-09-25",
+      "2026-10-17"
     ],
     "lesson_occurrences": [
-      "2026-09-25 18:00"
+      "2026-09-25 18:00",
+      "2026-10-17 08:00"
     ]
   },
   {
@@ -21764,6 +21776,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-16 18:00"
+    ]
+  },
+  {
+    "word": "renyah",
+    "cn": "酥脆（炸物、饼干等）",
+    "en": "crispy; crunchy",
+    "root": "",
+    "root_cn": "",
+    "example": "Pisang gorengnya renyah di luar, lembut di dalam. Mantap!",
+    "example_cn": "这炸香蕉外酥里软。太棒了！（mantap 是口语的称赞）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 08:00"
+    ]
+  },
+  {
+    "word": "kenyal",
+    "cn": "Q弹；有嚼劲（有弹性）",
+    "en": "chewy; springy",
+    "root": "",
+    "root_cn": "",
+    "example": "Bakso di warung ini kenyal dan kuahnya gurih, pantas selalu penuh pembeli.",
+    "example_cn": "这家小店的肉丸很Q弹，汤也鲜香，难怪总是挤满了顾客。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 08:00"
+    ]
+  },
+  {
+    "word": "tepung",
+    "cn": "面粉；（食用）粉",
+    "en": "flour",
+    "root": "",
+    "root_cn": "",
+    "example": "Tepung terigu dan tepung tapioka sama-sama putih, makanya sering ketuker.",
+    "example_cn": "小麦面粉和木薯淀粉都是白色的，所以经常被拿错。（ketuker = tertukar）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 08:00"
+    ]
+  },
+  {
+    "word": "pena",
+    "cn": "笔（钢笔、签字笔，偏书面）",
+    "en": "pen",
+    "root": "",
+    "root_cn": "",
+    "example": "Tinta pena ini cepat habis, makanya saya selalu membawa dua.",
+    "example_cn": "这支笔的墨水用得很快，所以我总是带两支。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 08:00"
+    ]
+  },
+  {
+    "word": "berkebun",
+    "cn": "种菜种花；做园艺",
+    "en": "to garden; to grow plants",
+    "root": "kebun",
+    "root_cn": "园子；菜园；果园",
+    "example": "Sejak pensiun, Kakek hobi berkebun. Sekarang halaman belakangnya penuh dengan sayur.",
+    "example_cn": "爷爷退休以后爱上了种菜种花。现在他的后院种满了蔬菜。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 08:00"
+    ]
+  },
+  {
+    "word": "berkemah",
+    "cn": "露营",
+    "en": "to camp; to go camping",
+    "root": "kemah",
+    "root_cn": "帐篷；营地",
+    "example": "Sebelum berkemah, jangan lupa cas power bank sampai penuh.",
+    "example_cn": "露营之前，别忘了把充电宝充满电。（cas = mengisi daya 的口语）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 08:00"
+    ]
+  },
+  {
+    "word": "bulat",
+    "cn": "圆的（球形、圆形）；完整的",
+    "en": "round; spherical; whole",
+    "root": "",
+    "root_cn": "",
+    "example": "Adonannya dibentuk bulat kecil-kecil, ya. Habis itu kita beresin dapur bareng.",
+    "example_cn": "面团要搓成一个个小圆球哦。然后我们一起收拾厨房。（beresin = membereskan，bareng = bersama）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 08:00"
+    ]
+  },
+  {
+    "word": "tumpul",
+    "cn": "钝的（不锋利）",
+    "en": "blunt; dull",
+    "root": "",
+    "root_cn": "",
+    "example": "Pisau dapur kami sudah tumpul, susah sekali dipakai untuk mengiris bawang.",
+    "example_cn": "我们家的菜刀已经钝了，切洋葱非常费劲。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 08:00"
+    ]
+  },
+  {
+    "word": "lebat",
+    "cn": "（雨）大；（毛发、树叶）浓密；（果实）累累",
+    "en": "heavy (rain); thick; dense",
+    "root": "",
+    "root_cn": "",
+    "example": "Hujan lebat semalam bikin atap bocor. Pagi ini Ayah langsung benerin.",
+    "example_cn": "昨晚的大雨把屋顶弄漏了。今天一早爸爸就去修了。（bikin = membuat，benerin = membetulkan）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 08:00"
+    ]
+  },
+  {
+    "word": "kumis",
+    "cn": "小胡子（上唇的胡子）",
+    "en": "moustache",
+    "root": "",
+    "root_cn": "",
+    "example": "Kakek berkumis tebal dan sikapnya tegas, tapi sebenarnya ia suka bercanda.",
+    "example_cn": "爷爷留着浓密的小胡子，态度看起来很严厉，其实他很爱开玩笑。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 08:00"
     ]
   }
 ];
