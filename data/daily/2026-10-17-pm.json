@@ -1,0 +1,342 @@
+{
+  "date": "2026-10-17",
+  "session": "pm",
+  "time": "18:00",
+  "day": 57,
+  "title": "18:00 晚课｜茂物露营夜：没听劝的帐篷遇上小滑坡",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "melindungi",
+    "membingungkan",
+    "longsor"
+  ],
+  "vocab": [
+    {
+      "word": "melindungi",
+      "display": "melindungi",
+      "audio_text": "melindungi",
+      "cn": "保护；使免受（危险、伤害）",
+      "en": "to protect; to shelter",
+      "root": "lindung",
+      "root_cn": "庇护；遮蔽",
+      "formation": "meN- + lindung + -i → melindungi（l 开头，meN- 变 me-）。同词根：perlindungan（保护，名词）、pelindung（保护者；防护用品）、terlindung（受到保护的；有遮蔽的）。常见搭配：melindungi diri dari …（保护自己免受……）、melindungi anak-anak（保护孩子）、melindungi data pribadi（保护个人资料）、melindungi kulit dari sinar matahari（保护皮肤不被晒）。",
+      "example": "Aturan ini dibuat bukan untuk menyusahkan tamu, melainkan untuk melindungi mereka.",
+      "example_cn": "这条规定不是为了给客人添麻烦，而是为了保护他们。",
+      "synonym_note": "melindungi vs menjaga：melindungi 是“挡住危险、让人或物不受伤害”，常接 dari（melindungi tenda dari hujan）；menjaga 是“看守、照看、保持”（menjaga anak 看孩子、menjaga kesehatan 保持健康），不一定有外来危险。口语说法：lindungin / ngelindungin（Jaketnya bisa ngelindungin kamu dari angin.）；新闻、法规、正式说明里用 melindungi。",
+      "usage_note": "后面直接接被保护的人或物，危险用 dari 引出：Atap pos jaga melindungi mereka dari hujan。被动式 dilindungi 也很常见：hewan yang dilindungi（受保护动物）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "membingungkan",
+      "display": "membingungkan",
+      "audio_text": "membingungkan",
+      "cn": "令人困惑的；把（人）搞糊涂",
+      "en": "confusing; to confuse",
+      "root": "bingung",
+      "root_cn": "困惑；不知所措",
+      "formation": "meN- + bingung + -kan → membingungkan（b 开头，meN- 变 mem-）。-kan 表示“使……”：使人 bingung。既当形容词用（Petanya membingungkan. 地图让人看不懂），也当及物动词（Jangan membingungkan pembeli. 别把顾客搞糊涂）。同词根：bingung（自己感到困惑）、kebingungan（困惑；不知所措的样子）。常见搭配：petunjuk / penjelasan / aturan yang membingungkan、agak membingungkan（有点让人摸不着头脑）。",
+      "example": "Petunjuk di aplikasi itu membingungkan, akhirnya saya bertanya langsung ke staf di pusat informasi.",
+      "example_cn": "那个应用里的指引让人看不懂，最后我直接去问了服务中心的工作人员。",
+      "synonym_note": "membingungkan vs bingung：主语是“人自己感到困惑”用 bingung（Saya bingung.）；主语是“让人困惑的东西”用 membingungkan（Penjelasannya membingungkan.）。不要说 Saya membingungkan（意思变成“我让人困惑”）。口语说法：bikin bingung（Papannya bikin bingung.）；书面说明、评论里用 membingungkan。",
+      "usage_note": "常放在被描述的事物后面作谓语：Papan petunjuknya membingungkan。程度副词放前面：agak / cukup / sangat membingungkan，口语也说 membingungkan banget。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "longsor",
+      "display": "longsor",
+      "audio_text": "longsor",
+      "cn": "山体滑坡；塌方；（土石）滑落",
+      "en": "landslide; to slide down",
+      "root": "longsor",
+      "root_cn": "滑落；坍塌",
+      "formation": "单纯词。名词最常说 tanah longsor（山体滑坡），也可单说 longsor；还可作动词：Tebing itu longsor.（那面山崖塌了）。常见搭配：terjadi longsor（发生滑坡）、rawan longsor（容易发生滑坡的）、longsor menutup jalan（滑坡堵住道路）、korban longsor（滑坡遇难者/受灾者）。",
+      "example": "Longsor menutup jalan ke desa itu, dan sejumlah rumah rusak.",
+      "example_cn": "山体滑坡堵住了通往那个村子的路，好几栋房子受损。",
+      "synonym_note": "longsor vs banjir：longsor 是泥土、石头从坡上滑下来；banjir 是水淹（banjir bandang 山洪）。雨季新闻里两者常一起出现：banjir dan tanah longsor。口语里没有另外的常用说法，日常和新闻都说 longsor。",
+      "usage_note": "说地方危险用 rawan longsor（lereng ini rawan longsor）；说事件用 terjadi longsor kecil / besar。注意它是“土石滑下”，房子倒塌不用 longsor。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "mematuhi",
+      "display": "mematuhi",
+      "audio_text": "mematuhi",
+      "cn": "遵守；服从（规定、命令）",
+      "en": "to obey; to comply with",
+      "root": "patuh",
+      "root_cn": "顺从；守规矩",
+      "formation": "meN- + patuh + -i → mematuhi（p 脱落，meN- 变 mem-）。同词根：patuh（形容词：听话、守规矩，patuh pada aturan）、kepatuhan（遵守程度；服从）。常见搭配：mematuhi aturan / peraturan（遵守规定）、mematuhi instruksi（服从指示）、mematuhi protokol kesehatan（遵守防疫规定）、wajib mematuhi（必须遵守）。",
+      "example": "Selama mendaki, semua peserta harus mematuhi instruksi pemimpin rombongan.",
+      "example_cn": "登山期间，所有参加者都必须服从领队的指示。",
+      "synonym_note": "mematuhi vs menaati vs mengikuti：mematuhi 和 menaati（taat）都是“遵守”，意思几乎相同，mematuhi 在通知、新闻里更常见；mengikuti aturan 是更口语、更轻的说法。反义：mengabaikan / melanggar aturan（无视 / 违反规定）。口语说法：ikut aturan、patuh sama aturan（Makanya harus patuh sama aturan.）；正式通知用 mematuhi。",
+      "usage_note": "后面直接接规定或指示，不加介词：mematuhi aturan（不说 mematuhi pada aturan）；用形容词时才加介词：patuh pada / sama aturan。今晚和 mengabaikan 组成一对反义词。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengabaikan",
+      "display": "mengabaikan",
+      "audio_text": "mengabaikan",
+      "cn": "忽视；不理会；无视",
+      "en": "to ignore; to neglect",
+      "root": "abai",
+      "root_cn": "疏忽；不在意",
+      "formation": "meN- + abai + -kan → mengabaikan（元音开头，meN- 变 meng-）。被动式 diabaikan（被忽视），名词 pengabaian（忽视）。常见搭配：mengabaikan peringatan / saran / nasihat（不听警告 / 建议 / 劝告）、mengabaikan kesehatan（不顾健康）、mengabaikan pesan（对消息不理不睬）。",
+      "example": "Warga diminta tidak mengabaikan ancaman banjir selama musim hujan.",
+      "example_cn": "雨季期间，居民被要求不要忽视洪水的威胁。",
+      "synonym_note": "mengabaikan vs melupakan：mengabaikan 是“知道却故意不理”；melupakan 是“忘了”。所以“没听劝”是 mengabaikan saran，不是 melupakan saran。反义：mematuhi（遵守）。口语说法：cuekin / nyuekin（Kamu cuekin aja.），对人对消息都能用；新闻、正式场合用 mengabaikan。",
+      "usage_note": "后接被忽视的东西或人：mengabaikan saran penjaga。说“别不当回事”常用否定式：Jangan abaikan pesan dokter!（祈使句可用词根形 abaikan）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kenalan",
+      "display": "kenalan",
+      "audio_text": "kenalan",
+      "cn": "熟人；认识的人；（口语）认识一下",
+      "en": "acquaintance; (colloq.) to get to know",
+      "root": "kenal",
+      "root_cn": "认识；熟悉",
+      "formation": "kenal + -an → kenalan，作名词表示“认识的人、熟人”（比 teman 关系浅）：kenalan baru（新认识的人）。口语里也当动词用，等于 berkenalan：Yuk, kenalan dulu!（来，先认识一下！）。同词根：mengenal（认识、了解）、mengenali（认出）、berkenalan（互相认识）、perkenalan（介绍；初识）、memperkenalkan（介绍）。",
+      "example": "Di acara itu saya dapat banyak kenalan baru, salah satunya calon klien kantor kami.",
+      "example_cn": "在那次活动上我认识了很多新的人，其中一位是我们公司的潜在客户。",
+      "synonym_note": "kenalan vs teman：kenalan 只是“认识”，不一定熟；teman 是朋友。说“他只是我认识的人，不算朋友”可以说 Dia cuma kenalan, bukan teman dekat. 同词根组：kenalan（熟人）／mengenal（长期认识、了解）／mengenali（一眼认出，昨晚新学）。口语说法：动词义 kenalan = berkenalan（Kita kenalan di Instagram.）；正式介绍时说 berkenalan / memperkenalkan diri。",
+      "usage_note": "作名词：kenalan saya, kenalan dari komunitas …；作口语动词：kenalan sama … / kenalan di …。今晚的 Raka 就是 Nadia 的 kenalan baru。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengenal",
+      "display": "mengenal",
+      "audio_text": "mengenal",
+      "cn": "认识；了解（长期、熟悉）",
+      "en": "to know (someone/something); to be acquainted with",
+      "root": "kenal",
+      "root_cn": "认识；熟悉",
+      "formation": "meN- + kenal → mengenal（k 脱落，meN- 变 meng-）。同词根组：kenal（认识，口语常直接用：Kamu kenal dia?）、kenalan（熟人）、mengenali（认出）、pengenalan（介绍；认识过程）。常见搭配：sudah lama mengenal …（认识……很久了）、belum terlalu mengenal …（还不太了解……）、mengenal budaya Indonesia（了解印尼文化）。",
+      "example": "Saya sudah lama mengenal dia, tapi baru kemarin tahu dia mau resign.",
+      "example_cn": "我认识他很久了，可直到昨天才知道他要辞职。",
+      "synonym_note": "mengenal vs mengenali：mengenal 是长期状态“认识、了解”（mengenal Raka）；mengenali 是某一刻“认出来”（langsung mengenali Rina）。mengenal vs tahu：mengenal 接人或领域，tahu 接事实（tahu bahwa …）。口语说法：kenal（Aku belum terlalu kenal dia.）；书面、介绍性文字里用 mengenal。",
+      "usage_note": "后面直接接人或事物：mengenal Raka、mengenal daerah ini。“还不太了解某人”说 belum terlalu mengenal …，比 tidak mengenal 委婉。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "memperkirakan",
+      "display": "memperkirakan",
+      "audio_text": "memperkirakan",
+      "cn": "估计；预计；预测",
+      "en": "to estimate; to predict; to forecast",
+      "root": "kira",
+      "root_cn": "猜想；估量",
+      "formation": "memper- + kira + -kan → memperkirakan（“把……估算出来”）。同词根：kira（以为；大约）、mengira（以为，常是猜错）、perkiraan（估计；预报：perkiraan cuaca 天气预报）、diperkirakan（被预计：Hujan diperkirakan turun sore ini.）、kira-kira（大约）。常见搭配：BMKG memperkirakan …（气象局预计……）、memperkirakan biaya / waktu（估算费用 / 时间）、sulit diperkirakan（难以预测）。",
+      "example": "BMKG memperkirakan hujan lebat masih akan turun selama tiga hari selanjutnya.",
+      "example_cn": "气象局预计接下来三天还会有大雨。",
+      "synonym_note": "memperkirakan vs mengira：memperkirakan 是有依据地“估算、预测”；mengira 是“以为”，事后常发现不对：Aku kira longsornya nggak bakal sampai ke tenda.（我还以为滑坡不会到帐篷那儿）。口语说法：日常聊天更常说 kira-kira（Kira-kira berapa lama?）或 perkiraan（Perkiraanku sih dua jam.）；天气预报、新闻、报告里用 memperkirakan / diperkirakan。",
+      "usage_note": "后面可接名词（memperkirakan biayanya）或整句（memperkirakan hujan akan turun）。新闻里被动式 diperkirakan 更常见：Jumlah peserta diperkirakan naik.",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berkemah",
+      "display": "berkemah",
+      "audio_text": "berkemah",
+      "cn": "露营",
+      "en": "to camp; to go camping",
+      "root": "kemah",
+      "root_cn": "帐篷；营地",
+      "formation": "ber- + kemah（帐篷、营地）→ berkemah。今天08:00新学（早课里因为大雨，在爷爷家院子露营的计划取消了）。同词根：perkemahan（营地；露营活动），bumi perkemahan（露营地，常简称 buper）。常见搭配：berkemah di gunung / di pantai（在山上 / 海边露营）、pergi berkemah（去露营）。",
+      "example": "Berkemah di alam memang seru, asal kita siap kalau cuaca berubah.",
+      "example_cn": "在大自然里露营确实很好玩，只要我们做好天气变化的准备。",
+      "synonym_note": "berkemah vs menginap：berkemah 专指搭帐篷过夜；menginap 是在别处住一晚（menginap di hotel / di rumah teman）。口语说法：年轻人常说 kemping / camping（Yuk, kemping minggu depan!）；学校活动通知、叙述里用 berkemah。帐篷叫 tenda。",
+      "usage_note": "今天08:00新学。今晚用在 Nadia、Bayu 和 Raka 去茂物露营地过夜这件事上。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "lebat",
+      "display": "lebat",
+      "audio_text": "lebat",
+      "cn": "（雨）大；（毛发、树叶）浓密",
+      "en": "heavy (rain); thick; dense",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词，基本意思是“很密”。今天08:00新学（早课里一场 hujan lebat 让露营计划取消）。最常见搭配：hujan lebat（大雨）、hutan lebat（茂密的森林）、rambut / kumis lebat（浓密的头发 / 胡子）、berbuah lebat（果实结得很多）。",
+      "example": "Hujan lebat semalam bikin jalan setapak ke air terjun licin dan berbahaya.",
+      "example_cn": "昨晚的大雨让通往瀑布的小路又滑又危险。（bikin = membuat）",
+      "synonym_note": "hujan lebat vs hujan deras：lebat 强调雨点又多又密，deras 强调又急又猛（水流也可说 arus deras），两者常可互换。说头发浓密也常说 rambut tebal；说树林、果实用 lebat。口语里没有另外的常用说法，天气预报和聊天都说 hujan lebat。",
+      "usage_note": "今天08:00新学。今晚的阅读里 BMKG 预报的就是 hujan lebat；注意它放在名词后面：hujan lebat，不说 lebat hujan。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sabtu sore, Nadia dan Bayu berkemah di bumi perkemahan di Bogor bersama Raka, kenalan baru dari komunitas pendaki. Penjaga dari pihak pengelola mengingatkan semua tamu bahwa BMKG memperkirakan hujan lebat akan turun malam itu. Lereng di ujung area berbahaya karena rawan longsor, sehingga tamu disarankan memasang tenda di lapangan tengah. Raka mengabaikan saran itu dan memasang tenda di dekat lereng karena pemandangannya indah. Nadia dan Bayu mematuhi aturan. Jam sebelas malam, hujan turun sangat deras. Terjadi longsor kecil, dan lumpur masuk ke tenda Raka. Dalam gelap, papan petunjuk ke pos jaga ternyata membingungkan. Bayu akhirnya menelepon penjaga. Mereka tidur di pos jaga, dan atapnya yang kuat melindungi mereka sampai pagi.",
+    "cn": "星期六傍晚，Nadia 和 Bayu 跟 Raka 一起去茂物的露营地露营。Raka 是她们在登山社团新认识的人。营地管理方的工作人员提醒所有客人：气象局预计当晚有大雨。营地尽头的山坡很危险，容易发生滑坡，所以建议客人把帐篷搭在中间的空地上。Raka 没理会这个建议，因为风景漂亮，把帐篷搭在了山坡旁边。Nadia 和 Bayu 遵守了规定。晚上十一点，雨下得非常猛。发生了一次小滑坡，泥浆灌进了 Raka 的帐篷。黑暗中，去值班岗亭的指示牌原来很让人看不懂。Bayu 最后给工作人员打了电话。他们在值班岗亭里过了一夜，结实的屋顶一直保护着他们到天亮。"
+  },
+  "dialogue": {
+    "title": "第二天早上，值班岗亭里",
+    "lines": [
+      {
+        "speaker": "Bayu",
+        "id": "Rak, tenda kamu gimana? Masih bisa dipake nggak?",
+        "cn": "Rak，你的帐篷怎么样了？还能用吗？（gimana = bagaimana，dipake = dipakai，nggak = tidak）"
+      },
+      {
+        "speaker": "Raka",
+        "id": "Udah nggak bisa. Matrasnya penuh lumpur. Percuma dijemur, hari ini nggak bakal kering.",
+        "cn": "已经不能用了。防潮垫上全是泥。晒也白晒，今天干不了。（udah = sudah，bakal = akan）"
+      },
+      {
+        "speaker": "Nadia",
+        "id": "Padahal kemarin Pak Herman udah ngingetin soal hujan lebat. Kamu cuekin aja.",
+        "cn": "可昨天 Herman 大叔明明提醒过会下大雨。你就是不理。（ngingetin = mengingatkan，cuekin = mengabaikan）"
+      },
+      {
+        "speaker": "Raka",
+        "id": "Iya, aku ngaku salah. Aku kira longsornya nggak bakal sampai ke tenda.",
+        "cn": "是，我认错。我还以为滑坡不会到帐篷那儿。（ngaku = mengaku）"
+      },
+      {
+        "speaker": "Pak Herman",
+        "id": "Untung cuma longsor kecil, Mas. Kalau lebih besar, bahaya banget. Makanya tamu harus patuh sama aturan.",
+        "cn": "幸好只是小滑坡，小伙子。要是再大一点，就太危险了。所以客人一定要守规矩。（patuh sama = patuh pada）"
+      },
+      {
+        "speaker": "Bayu",
+        "id": "Bukan mau komplain, Pak, tapi papan petunjuknya bikin bingung. Sinyalnya juga lemot, saya telepon Bapak tiga kali baru nyambung.",
+        "cn": "不是想投诉，大叔，不过指示牌真让人看不懂。信号也很慢，我给您打了三次才打通。（bikin = membuat，nyambung = tersambung）"
+      },
+      {
+        "speaker": "Pak Herman",
+        "id": "Makasih masukannya, Mas. Nanti saya sampaikan ke pengelola biar papannya diganti.",
+        "cn": "谢谢您的意见。我回头跟管理方说，让他们把牌子换了。（makasih = terima kasih，biar = supaya）"
+      },
+      {
+        "speaker": "Nadia",
+        "id": "Ya udah, sarapan dulu, yuk. Habis kenyang, kita bantuin Raka beresin tendanya.",
+        "cn": "好啦，先吃早饭吧。吃饱了，我们帮 Raka 收拾帐篷。（bantuin = membantu，beresin = membereskan）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：用 melindungi 和 longsor 写 2–3 句——给一个打算雨季去山里露营的朋友发提醒。",
+      "reference_answer": "Kalau mau berkemah bulan ini, cari tempat yang jauh dari lereng, soalnya musim hujan rawan longsor. Bawa terpal buat melindungi tenda dari hujan. Mending dari sekarang nyicil siapin barangnya, biar nggak buru-buru.",
+      "reference_cn": "这个月要是想去露营，找个离山坡远的地方，因为雨季容易滑坡。带块防水布，保护帐篷不被雨淋。最好从现在就一点点把东西准备好，免得到时候手忙脚乱。（siapin = menyiapkan，nggak = tidak）"
+    },
+    {
+      "task": "反义弱词应用：用 mengabaikan 和 mematuhi 写 2–3 句——说一次你没听劝的经历，以及后来你改成了什么习惯。",
+      "reference_answer": "Dulu saya sering mengabaikan saran dokter untuk tidur cukup. Akibatnya nyata: saya sakit hampir seminggu. Sekarang saya berusaha mematuhi jadwal tidur, walaupun kerjaan belum selesai.",
+      "reference_cn": "以前我经常不听医生让我睡够觉的建议。后果很明显：我病了差不多一个星期。现在我尽量遵守作息时间，哪怕工作还没做完。"
+    },
+    {
+      "task": "同词根组：用 kenalan 和 mengenal（可加昨晚学的 mengenali）介绍一个你最近认识的人。",
+      "reference_answer": "Bulan lalu saya dapat kenalan baru di kelas yoga, namanya Sari. Dia kerja di bidang desain. Saya belum terlalu mengenal dia, tapi kemarin saya hampir tidak mengenali dia karena rambutnya sekarang pendek.",
+      "reference_cn": "上个月我在瑜伽课上认识了一个新朋友，叫 Sari。她在设计行业工作。我还不太了解她，不过昨天我差点没认出她来，因为她现在留了短发。"
+    },
+    {
+      "task": "早课词迁移：用今天08:00新学的 berkemah、lebat，再加 memperkirakan，在同事群里解释为什么周末的露营要改期（2–3 句）。",
+      "reference_answer": "Teman-teman, acara berkemah hari Sabtu kita undur ke minggu depan, ya. BMKG memperkirakan hujan lebat akan turun sampai hari Minggu. Mending kita nahan dulu daripada kehujanan di tengah hutan.",
+      "reference_cn": "各位，周六的露营活动我们改到下周哦。气象局预计大雨会一直下到星期天。我们最好先缓一缓，免得在树林里淋雨。（mending = lebih baik）"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "选最自然的一项：Papan petunjuk di bumi perkemahan itu ___ banget, kami sampai salah belok dua kali.",
+        "options": [
+          "bingung",
+          "membingungkan",
+          "kebingungan",
+          "dibingungkan"
+        ],
+        "answer_index": 1,
+        "answer": "membingungkan",
+        "explain": "主语是指示牌（让人困惑的东西），用 membingungkan。bingung 是“人自己困惑”，说牌子 bingung 不通；kebingungan 是“人不知所措”（Kami kebingungan.），也不能形容牌子；dibingungkan 是“（人）被搞糊涂了”，主语应是人。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Raka ___ saran penjaga dan memasang tenda di dekat lereng.",
+        "options": [
+          "mematuhi",
+          "mengenali",
+          "memperkirakan",
+          "mengabaikan"
+        ],
+        "answer_index": 3,
+        "answer": "mengabaikan",
+        "explain": "建议是“搭在中间空地”，Raka 却搭在山坡边，说明他不理会建议，用 mengabaikan（口语 cuekin）。mematuhi 意思正好相反；mengenali 是“认出”；memperkirakan 是“预估”，和后半句的动作接不上。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选最自然的一项：Aku udah lima tahun ___ Bayu, makanya aku tahu dia nggak suka telat.",
+        "options": [
+          "mengenal",
+          "mengenali",
+          "kenalan",
+          "berkenalan"
+        ],
+        "answer_index": 0,
+        "answer": "mengenal",
+        "explain": "“认识五年”是长期状态，用 mengenal（口语也可直接说 kenal）。mengenali 是某一刻“认出来”，不和“五年”搭配；kenalan 作名词是“熟人”，作口语动词是“认识一下”，都不能直接接 Bayu 表示“认识了五年”；berkenalan 是“互相认识”这个动作，要说 berkenalan dengan Bayu，而且表示一次性的开始。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Terpal di atas tenda cukup untuk ______ kami dari hujan lebat.（保护）",
+        "answer": "melindungi",
+        "explain": "melindungi + 被保护的人 + dari + 危险。这里 terpal（防水布）挡住大雨，保护的是 kami。口语可说 ngelindungin kami。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：BMKG ______ hujan lebat akan turun mulai sore ini.（预计）",
+        "answer": "memperkirakan",
+        "explain": "气象局有依据地预测，用 memperkirakan，后面直接接整句。也可改成被动：Hujan lebat diperkirakan turun mulai sore ini。不要用 mengira（“以为”，常带猜错的意思）。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：所有客人都必须遵守露营地的规定。",
+        "tokens": [
+          "Semua",
+          "tamu",
+          "wajib",
+          "mematuhi",
+          "aturan",
+          "bumi",
+          "perkemahan."
+        ],
+        "answer": "Semua tamu wajib mematuhi aturan bumi perkemahan.",
+        "answer_cn": "所有客人都必须遵守露营地的规定。",
+        "explain": "wajib（必须）放在动词前；mematuhi 后面直接接 aturan，不加 pada；aturan bumi perkemahan = 露营地的规定，修饰语放在后面。"
+      }
+    ],
+    "self_check": [
+      "不看中文：melindungi、membingungkan、longsor 这 3 个新词，有没有哪个我 3 秒内说不出意思？",
+      "看到中文“遵守”和“不理会、无视”，我能 3 秒内说出 mematuhi 和 mengabaikan 吗？",
+      "同一个词根 kenal：kenalan 和 mengenal（加上昨晚的 mengenali），我分得清哪个是“熟人”、哪个是“长期认识”、哪个是“认出”吗？",
+      "memperkirakan 和 mengira，我能马上分清哪个是“有依据地预计”、哪个是“以为（常是猜错）”吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语，答不出的回看词卡再说一遍。",
+      "反义词输出：用 mematuhi 和 mengabaikan 各说一句你自己的事——一条你一直遵守的规矩，和一次你没理会别人提醒的经历及后果。",
+      "早课词迁移：用今天08:00新学的 berkemah、lebat 说 2 句——你去过或想去哪里露营？要是那天下大雨，你会怎么办？",
+      "30 秒复述：用 Nadia 的视角讲那一夜——工作人员 memperkirakan 了什么、Raka 为什么遇到 longsor、指示牌为什么 membingungkan、最后什么 melindungi 了他们。"
+    ]
+  }
+}
