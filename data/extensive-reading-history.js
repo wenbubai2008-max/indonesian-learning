@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261016-krisis-air-bersih-tegal","date":"2026-10-16","title":"Kemarau Panjang, 40 Desa di Tegal Krisis Air Bersih","title_cn":"旱季漫长，Tegal 县 40 个村缺干净用水","path":"data/extensive-reading-history/2026-10-16.js"},
 {"id":"er-20261015-kasus-dbd-naik-jakarta-psn","date":"2026-10-15","title":"Kasus DBD Naik, Warga Jakarta Diminta Rutin Berantas Sarang Nyamuk","title_cn":"登革热病例上升，雅加达居民被要求定期清除蚊子滋生地","path":"data/extensive-reading-history/2026-10-15.js"},
 {"id":"er-20261014-bsu-belum-cair-waspada-tautan-palsu","date":"2026-10-14","title":"BSU Rp900 Ribu Belum Cair, Pekerja Diminta Waspada Tautan Palsu","title_cn":"90 万印尼盾工资补贴还没发放，劳动者要小心假链接","path":"data/extensive-reading-history/2026-10-14.js"},
 {"id":"er-20261013-sekolah-enam-lantai-pasar-rebo","date":"2026-10-13","title":"Lahan Terbatas, SD dan SMP di Pasar Rebo Kini Satu Gedung Enam Lantai","title_cn":"土地有限，Pasar Rebo 的小学和初中如今合用一栋六层楼","path":"data/extensive-reading-history/2026-10-13.js"},
