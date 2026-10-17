@@ -1,0 +1,439 @@
+{
+  "date": "2026-10-17",
+  "session": "am",
+  "time": "08:00",
+  "day": 57,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Cilok di Rumah Kakek: Tepungnya Tertukar",
+  "new_words": [
+    "renyah",
+    "kenyal",
+    "tepung",
+    "pena",
+    "berkebun",
+    "berkemah",
+    "bulat",
+    "tumpul",
+    "lebat",
+    "kumis"
+  ],
+  "vocab": [
+    {
+      "word": "renyah",
+      "display": "renyah",
+      "audio_text": "renyah",
+      "cn": "酥脆（炸物、饼干等）",
+      "en": "crispy; crunchy",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词，形容食物咬下去“咔嚓”一声的脆。常见搭配：kerupuk yang renyah（酥脆的虾片）、gorengan renyah（酥脆的炸物）、renyah di luar, lembut di dalam（外酥里嫩）。",
+      "example": "Pisang gorengnya renyah di luar, lembut di dalam. Mantap!",
+      "example_cn": "这炸香蕉外酥里软。太棒了！（mantap 是口语的称赞）",
+      "synonym_note": "renyah 是正面的“酥脆”；放久了受潮、不脆了叫 melempem（Kerupuknya udah melempem.）。口语说法：garing、kriuk（Kerupuknya kriuk banget!），日常聊天更常用；写菜单、介绍食物时用 renyah。注意 garing 在口语里还可以指“笑话很冷”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kenyal",
+      "display": "kenyal",
+      "audio_text": "kenyal",
+      "cn": "Q弹；有嚼劲（有弹性）",
+      "en": "chewy; springy",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词，形容食物有弹性、咬起来会回弹。最典型的搭配：bakso yang kenyal（Q弹的肉丸）、mi kenyal（有嚼劲的面）、cilok kenyal（Q弹的木薯粉丸）、teksturnya kenyal（口感Q弹）。",
+      "example": "Bakso di warung ini kenyal dan kuahnya gurih, pantas selalu penuh pembeli.",
+      "example_cn": "这家小店的肉丸很Q弹，汤也鲜香，难怪总是挤满了顾客。",
+      "synonym_note": "kenyal 是正面的“有弹性、Q弹”；alot 是肉太老、嚼不动（负面：Dagingnya alot.）；lembek 是软塌塌、不成形（负面）。三者都说口感，但只有 kenyal 是夸奖。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tepung",
+      "display": "tepung",
+      "audio_text": "tepung",
+      "cn": "面粉；（食用）粉",
+      "en": "flour",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词。常见搭配：tepung terigu（小麦面粉）、tepung beras（米粉，炸东西更脆）、tepung tapioka / tepung kanji（木薯淀粉，做 cilok、bakso 的弹性来源）、tepung maizena（玉米淀粉）、tepung roti（面包糠）。",
+      "example": "Tepung terigu dan tepung tapioka sama-sama putih, makanya sering ketuker.",
+      "example_cn": "小麦面粉和木薯淀粉都是白色的，所以经常被拿错。（ketuker = tertukar）",
+      "synonym_note": "tepung 专指做食物的粉；一般的粉末说 bubuk（kopi bubuk 咖啡粉、susu bubuk 奶粉），爽身粉/粉饼是 bedak，都不说 tepung。口语说法：tepung tapioka 在雅加达、西爪哇口语里常叫 aci，cilok 的名字就来自 aci dicolok（用签子插着的木薯粉丸）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pena",
+      "display": "pena",
+      "audio_text": "pena",
+      "cn": "笔（钢笔、签字笔，偏书面）",
+      "en": "pen",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词。常见搭配：pinjam pena（借笔）、tinta pena（笔的墨水）、pena dan buku（纸笔）、nama pena（笔名）。相关文具：pensil（铅笔）、spidol（马克笔）。",
+      "example": "Tinta pena ini cepat habis, makanya saya selalu membawa dua.",
+      "example_cn": "这支笔的墨水用得很快，所以我总是带两支。",
+      "synonym_note": "口语说法：日常买笔、借笔最常说 pulpen（Ada pulpen nggak?）；pena 偏书面，出现在正式场合、文章或固定说法里（nama pena 笔名）。两个都指可以写字的笔，铅笔不算，铅笔是 pensil。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berkebun",
+      "display": "berkebun",
+      "audio_text": "berkebun",
+      "cn": "种菜种花；做园艺",
+      "en": "to garden; to grow plants",
+      "root": "kebun",
+      "root_cn": "园子；菜园；果园",
+      "formation": "ber- + kebun（园子）→ 在园子里种东西、打理园子。同词根：perkebunan（种植园，per-an：perkebunan teh 茶园）。常见搭配：hobi berkebun（爱好园艺）、berkebun di halaman rumah（在院子里种菜种花）、kebun sayur（菜园）。",
+      "example": "Sejak pensiun, Kakek hobi berkebun. Sekarang halaman belakangnya penuh dengan sayur.",
+      "example_cn": "爷爷退休以后爱上了种菜种花。现在他的后院种满了蔬菜。",
+      "synonym_note": "berkebun 多指自己家院子或小园子里种菜、种花、种果树，常是爱好；bertani 是务农、种田，当职业（petani 农民）。口语里也常直接说 nanem sayur（= menanam sayur，种菜）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berkemah",
+      "display": "berkemah",
+      "audio_text": "berkemah",
+      "cn": "露营",
+      "en": "to camp; to go camping",
+      "root": "kemah",
+      "root_cn": "帐篷；营地",
+      "formation": "ber- + kemah（帐篷、营地）→ 搭帐篷过夜、露营。同词根：perkemahan（营地；露营活动，per-an：bumi perkemahan 露营地）。常见搭配：berkemah di gunung / di pantai（在山上/海边露营）、pergi berkemah（去露营）。",
+      "example": "Sebelum berkemah, jangan lupa cas power bank sampai penuh.",
+      "example_cn": "露营之前，别忘了把充电宝充满电。（cas = mengisi daya 的口语）",
+      "synonym_note": "口语说法：年轻人常说 kemping / camping（Yuk, kemping minggu depan!），更正式的叙述、学校活动通知用 berkemah。帐篷本身叫 tenda。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bulat",
+      "display": "bulat",
+      "audio_text": "bulat",
+      "cn": "圆的（球形、圆形）；完整的",
+      "en": "round; spherical; whole",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词。常见搭配：bola-bola kecil yang bulat（圆圆的小球）、bentuknya bulat（形状是圆的）、bulat telur（椭圆形，像鸡蛋）、angka bulat（整数）。派生：membulatkan（弄圆；把数字取整，membulatkan harga）。",
+      "example": "Adonannya dibentuk bulat kecil-kecil, ya. Habis itu kita beresin dapur bareng.",
+      "example_cn": "面团要搓成一个个小圆球哦。然后我们一起收拾厨房。（beresin = membereskan，bareng = bersama）",
+      "synonym_note": "bulat 多指立体的圆、球形（jeruknya bulat、bola bulat），也可以说圆形；bundar 多指平面的圆，固定说法 meja bundar（圆桌）。引申：tekad bulat（下定决心）、keputusan bulat（一致通过的决定）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tumpul",
+      "display": "tumpul",
+      "audio_text": "tumpul",
+      "cn": "钝的（不锋利）",
+      "en": "blunt; dull",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词，反义词 tajam（锋利）。常见搭配：pisau tumpul（钝刀）、gunting yang tumpul（钝剪刀）、pensilnya tumpul（铅笔不尖了）。刀钝了要 diasah（磨），铅笔钝了要 diraut（削）。",
+      "example": "Pisau dapur kami sudah tumpul, susah sekali dipakai untuk mengiris bawang.",
+      "example_cn": "我们家的菜刀已经钝了，切洋葱非常费劲。",
+      "synonym_note": "tumpul ↔ tajam 是最常用的一对；说刀不快，日常也常说 pisaunya udah nggak tajam。引申义：pikiran/otak tumpul（脑子转不动），但日常更多用在刀、剪刀、铅笔上。",
+      "is_oral_new": false
+    },
+    {
+      "word": "lebat",
+      "display": "lebat",
+      "audio_text": "lebat",
+      "cn": "（雨）大；（毛发、树叶）浓密；（果实）累累",
+      "en": "heavy (rain); thick; dense",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词，基本意思是“很密”。最常见搭配：hujan lebat（大雨，雨点又多又密）、hutan lebat（茂密的森林）、rambut / kumis lebat（浓密的头发/胡子）、berbuah lebat（果实结得很多）。",
+      "example": "Hujan lebat semalam bikin atap bocor. Pagi ini Ayah langsung benerin.",
+      "example_cn": "昨晚的大雨把屋顶弄漏了。今天一早爸爸就去修了。（bikin = membuat，benerin = membetulkan）",
+      "synonym_note": "“大雨”说 hujan lebat 或 hujan deras：lebat 强调雨很密，deras 强调又急又猛（水流也可说 arus deras）。头发浓密也常说 rambut tebal。说树叶、果实时用 lebat，不用 tebal。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kumis",
+      "display": "kumis",
+      "audio_text": "kumis",
+      "cn": "小胡子（上唇的胡子）",
+      "en": "moustache",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词。派生：berkumis（留着小胡子的：bapak berkumis tebal）。常见搭配：kumis tebal / lebat（浓密的小胡子）、mencukur kumis（剃小胡子）。kumis kucing 是“猫的胡须”，也是一种草药植物的名字。",
+      "example": "Kakek berkumis tebal dan sikapnya tegas, tapi sebenarnya ia suka bercanda.",
+      "example_cn": "爷爷留着浓密的小胡子，态度看起来很严厉，其实他很爱开玩笑。",
+      "synonym_note": "kumis 只指上唇上方的胡子；下巴和两腮的胡子另有说法，不叫 kumis。描述人时常用 berkumis：Polisi yang berkumis itu ramah.（那位留小胡子的警察很和气。）",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "ngeluh",
+    "keluhan",
+    "mengeluh",
+    "nyindir",
+    "lengkap"
+  ],
+  "sentences": [
+    {
+      "text": "Kalau mau pisang goreng yang renyah, pakai tepung beras, jangan cuma tepung terigu.",
+      "cn": "想让炸香蕉酥脆的话，就用米粉，别只用小麦面粉。（cuma = hanya）"
+    },
+    {
+      "text": "Mas, boleh pinjam pena sebentar? Punyaku ketinggalan di ruang rapat.",
+      "cn": "大哥，能借一下笔吗？我的落在会议室了。（punyaku = punya saya，ketinggalan = tertinggal）"
+    },
+    {
+      "text": "Kami batal berkemah di pantai karena sore itu hujan lebat dan angin kencang.",
+      "cn": "那天下午下大雨、刮大风，我们取消了在海边露营。"
+    },
+    {
+      "text": "Sebelum berkebun, Kakek membeli gunting baru karena gunting yang lama sudah tumpul.",
+      "cn": "打理园子之前，爷爷买了一把新剪刀，因为旧的已经钝了。"
+    },
+    {
+      "text": "Ciloknya kenyal banget, mantap! Tapi abangnya cuma muncul di depan sekolah jam-jam tertentu.",
+      "cn": "这木薯粉丸太Q弹了，绝了！不过卖丸子的大哥只在特定的时间出现在学校门口。（banget = sekali，cuma = hanya）"
+    }
+  ],
+  "reading": {
+    "text": "Sabtu pagi, saya dan adik saya, Rani, main ke rumah Kakek. Kakek hobi berkebun, dan halaman belakangnya penuh dengan tanaman cabai dan tomat. Nenek mengajak kami membuat cilok. Kami membentuk adonan menjadi bola-bola kecil yang bulat. Setelah direbus, ciloknya lembek, tidak kenyal sama sekali. Ternyata tepungnya tertukar: Rani mengambil tepung terigu, bukan tepung tapioka. Dua jenis tepung itu memang sama-sama putih. Kakek tidak mengeluh. Sambil mengelus kumisnya, ia tertawa dan tetap memakannya. Nenek lalu menggoreng pisang dengan tepung beras, dan hasilnya renyah sekali. Sore itu turun hujan lebat, sehingga rencana kami berkemah di halaman batal. Supaya tidak salah lagi, Kakek menulis resep cilok dengan pena di buku kecil.",
+    "cn": "星期六早上，我和妹妹 Rani 去爷爷家玩。爷爷爱种菜种花，后院里种满了辣椒和番茄。奶奶带我们做 cilok（木薯粉丸）。我们把面团搓成一个个圆圆的小球。煮好以后，丸子软塌塌的，一点都不Q弹。原来是粉拿错了：Rani 拿的是小麦面粉，不是木薯淀粉。这两种粉确实都是白色的。爷爷没有抱怨。他一边摸着小胡子，一边笑，照样把丸子吃了。接着奶奶用米粉炸香蕉，炸出来特别酥脆。傍晚下起了大雨，我们在院子里露营的计划只好取消。为了下次不再弄错，爷爷用笔把 cilok 的做法写在一个小本子上。"
+  },
+  "quiz": [
+    {
+      "question": "Makanannya datang dingin dan kerupuknya sudah tidak renyah. Pak Andi lalu menyampaikan ___ kepada manajer restoran.",
+      "options": [
+        "mengeluh",
+        "ngeluh",
+        "keluhan",
+        "nyindir"
+      ],
+      "answer_index": 2,
+      "answer": "keluhan",
+      "explain": "menyampaikan（提出、转达）后面要接名词，“提出投诉”就是 menyampaikan keluhan（复习词 keluhan：投诉、抱怨的内容）。mengeluh 和 ngeluh 是动词“抱怨”（ngeluh 是口语），不能放在 menyampaikan 后面；nyindir 是口语动词“暗讽”，词性和意思都不对。"
+    },
+    {
+      "question": "Pisau ini sudah lama tidak diasah. Sekarang pisaunya ___, mengiris bawang saja susah.",
+      "options": [
+        "tajam",
+        "tumpul",
+        "licin",
+        "berat"
+      ],
+      "answer_index": 1,
+      "answer": "tumpul",
+      "explain": "很久没磨、连洋葱都切不动，说明刀钝了：tumpul。tajam 正好相反，是“锋利”；licin 是“滑”，刀滑不是切不动的原因；berat 是“重”，重刀反而好切，也解释不了“很久没磨”。"
+    },
+    {
+      "question": "Bakso yang enak teksturnya ___: tidak lembek, tapi juga tidak alot.",
+      "options": [
+        "renyah",
+        "gurih",
+        "lengket",
+        "kenyal"
+      ],
+      "answer_index": 3,
+      "answer": "kenyal",
+      "explain": "好吃的肉丸“既不软塌塌，也不老得嚼不动”，就是有弹性：kenyal（Q弹）。renyah 是炸物的“酥脆”，肉丸不会脆；gurih 说的是味道（咸鲜），不是口感（teksturnya）；lengket 是“黏”，是缺点。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语，跟朋友讲一次做菜或吃东西“翻车”的经历：哪里出了问题（材料、工具或口感），家里人有什么反应。至少用到本课两个新词（如 tepung、renyah、kenyal、tumpul），并用上复习词 ngeluh / mengeluh、nyindir 或 lengkap 中的至少一个。",
+    "reference_answer": "Minggu lalu aku bikin bakwan buat arisan Mama. Bahannya udah lengkap, tapi aku kebanyakan tepung terigu, akhirnya bakwannya nggak renyah sama sekali. Mama nggak ngeluh, cuma nyindir sambil ketawa, “Wah, ini bakwan atau batu?” Intinya, lain kali aku harus ngikutin resepnya.",
+    "reference_cn": "上周我给妈妈的聚会做炸蔬菜饼。材料都备齐了，可是我面粉放多了，结果炸出来一点都不脆。妈妈没有抱怨，只是笑着挖苦了一句：“哇，这是炸饼还是石头啊？”总之，下次我得照着做法来。（bikin = membuat，udah = sudah，nggak = tidak，cuma = hanya，ketawa = tertawa，ngikutin = mengikuti）"
+  },
+  "review": [
+    "3秒主动提取：不看词卡，看中文说印尼语——酥脆、Q弹、面粉/粉、笔、种菜种花、露营、圆的、钝的、（雨）大/浓密、小胡子；再各补半句：“pisang goreng yang …”、“bakso yang …”、“hujan …”、“pisau ini sudah …”、“tepung … （米粉）”。",
+    "易混词与搭配：renyah（酥脆）vs melempem（受潮不脆了），口语 garing / kriuk；kenyal（Q弹，正面）vs alot（嚼不动）vs lembek（软塌塌）；tumpul（钝）↔ tajam（锋利）；bulat（立体的圆）vs bundar（平面的圆，meja bundar）；pena（书面）vs pulpen（口语）vs pensil（铅笔）；berkebun（种菜种花，多是爱好）vs bertani（务农）；hujan lebat（雨密）vs hujan deras（雨急）。",
+    "重点复习词应用（同词根一组 keluh）：mengeluh 是一般动词——Pelanggan mengeluh soal pelayanan.（顾客抱怨服务。）；ngeluh 是口语——Jangan ngeluh terus, ayo dicoba lagi!（别老抱怨，再试一次！）；keluhan 是名词“投诉、抱怨的内容”——Dia menyampaikan keluhan kepada manajer.（他向经理提出投诉。）。再用 nyindir、lengkap 各说一句：“Kamu nyindir aku, ya?”（你是在挖苦我吧？）、“Bahannya sudah lengkap, tinggal dimasak.”（材料都齐了，就等下锅了。）"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "酥脆",
+        "id": "renyah"
+      },
+      {
+        "cn": "Q弹；有嚼劲",
+        "id": "kenyal"
+      },
+      {
+        "cn": "面粉；粉",
+        "id": "tepung"
+      },
+      {
+        "cn": "笔（书面）",
+        "id": "pena"
+      },
+      {
+        "cn": "种菜种花；做园艺",
+        "id": "berkebun"
+      },
+      {
+        "cn": "露营",
+        "id": "berkemah"
+      },
+      {
+        "cn": "圆的",
+        "id": "bulat"
+      },
+      {
+        "cn": "钝的",
+        "id": "tumpul"
+      },
+      {
+        "cn": "（雨）大；浓密",
+        "id": "lebat"
+      },
+      {
+        "cn": "小胡子",
+        "id": "kumis"
+      },
+      {
+        "cn": "投诉；抱怨的内容",
+        "id": "keluhan"
+      },
+      {
+        "cn": "暗讽（口语）",
+        "id": "nyindir"
+      }
+    ],
+    "frames": [
+      "Pisang goreng yang …",
+      "Bakso yang …",
+      "Tadi malam hujan …",
+      "Pisau ini sudah …",
+      "Pakai tepung … （米粉）"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "renyah",
+            "cn": "酥脆（正面）"
+          },
+          {
+            "id": "melempem",
+            "cn": "受潮不脆了"
+          },
+          {
+            "id": "garing",
+            "cn": "脆（口语）"
+          }
+        ],
+        "note": "夸炸物、饼干脆用 renyah，口语说 garing；放久受潮就 melempem 了。"
+      },
+      {
+        "items": [
+          {
+            "id": "kenyal",
+            "cn": "Q弹（正面）"
+          },
+          {
+            "id": "alot",
+            "cn": "老、嚼不动"
+          },
+          {
+            "id": "lembek",
+            "cn": "软塌塌"
+          }
+        ],
+        "note": "三个都说口感，只有 kenyal 是夸奖。"
+      },
+      {
+        "items": [
+          {
+            "id": "tumpul",
+            "cn": "钝"
+          },
+          {
+            "id": "tajam",
+            "cn": "锋利"
+          }
+        ],
+        "note": "一对反义词：pisau tumpul ↔ pisau tajam。"
+      },
+      {
+        "items": [
+          {
+            "id": "bulat",
+            "cn": "立体的圆、球形"
+          },
+          {
+            "id": "bundar",
+            "cn": "平面的圆"
+          }
+        ],
+        "note": "球、丸子用 bulat；圆桌固定说 meja bundar。"
+      },
+      {
+        "items": [
+          {
+            "id": "pena",
+            "cn": "笔（书面）"
+          },
+          {
+            "id": "pulpen",
+            "cn": "笔（口语）"
+          },
+          {
+            "id": "pensil",
+            "cn": "铅笔"
+          }
+        ],
+        "note": "借笔日常说 pulpen，正式场合和 nama pena 用 pena。"
+      },
+      {
+        "items": [
+          {
+            "id": "mengeluh",
+            "cn": "抱怨（动词）"
+          },
+          {
+            "id": "ngeluh",
+            "cn": "抱怨（口语动词）"
+          },
+          {
+            "id": "keluhan",
+            "cn": "投诉（名词）"
+          }
+        ],
+        "note": "同词根 keluh：动词说人在抱怨，名词 keluhan 是提出来的投诉内容。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "mengeluh / ngeluh / keluhan",
+        "usage": "动词说“在抱怨”，ngeluh 用在口语；名词 keluhan 常跟 menyampaikan 搭配。",
+        "examples": [
+          {
+            "id": "Pelanggan mengeluh soal pelayanan.",
+            "cn": "顾客抱怨服务。"
+          },
+          {
+            "id": "Jangan ngeluh terus, ayo dicoba lagi!",
+            "cn": "别老抱怨，再试一次！"
+          },
+          {
+            "id": "Dia menyampaikan keluhan kepada manajer.",
+            "cn": "他向经理提出投诉。"
+          }
+        ]
+      },
+      {
+        "word": "nyindir",
+        "usage": "口语，拐弯抹角地挖苦人，正式说法是 menyindir。",
+        "examples": [
+          {
+            "id": "Kamu nyindir aku, ya?",
+            "cn": "你是在挖苦我吧？"
+          }
+        ]
+      },
+      {
+        "word": "lengkap",
+        "usage": "东西、资料“齐全、完整”。",
+        "examples": [
+          {
+            "id": "Bahannya sudah lengkap, tinggal dimasak.",
+            "cn": "材料都齐了，就等下锅了。"
+          }
+        ]
+      }
+    ]
+  }
+}
