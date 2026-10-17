@@ -4681,22 +4681,27 @@ window.DAILY_VOCAB_DB = [
     "root": "kira",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 19:00",
-    "last_seen": "2026-08-31 19:00",
+    "last_seen": "2026-10-17 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-10-17"
     ],
-    "example": "Coba perkirain dulu total biayanya sebelum beli.",
-    "example_cn": "买之前先估一下总费用。",
+    "example": "BMKG memperkirakan hujan lebat masih akan turun selama tiga hari selanjutnya.",
+    "example_cn": "气象局预计接下来三天还会有大雨。",
     "lesson_occurrences": [
-      "2026-08-31 19:00"
-    ]
+      "2026-08-31 19:00",
+      "2026-10-17 18:00"
+    ],
+    "root_cn": "猜想；估量"
   },
   {
     "word": "keperluan",
@@ -11172,23 +11177,27 @@ window.DAILY_VOCAB_DB = [
     "en": "know; be acquainted with",
     "root": "kenal",
     "root_cn": "认识；熟悉",
-    "example": "Aku mulai mengenal cara kerja tim ini.",
-    "example_cn": "我开始了解这个团队的工作方式。",
+    "example": "Saya sudah lama mengenal dia, tapi baru kemarin tahu dia mau resign.",
+    "example_cn": "我认识他很久了，可直到昨天才知道他要辞职。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-17 08:00",
+    "last_seen": "2026-10-17 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-10-17"
     ],
     "lesson_occurrences": [
-      "2026-09-17 08:00"
+      "2026-09-17 08:00",
+      "2026-10-17 18:00"
     ]
   },
   {
@@ -11566,24 +11575,28 @@ window.DAILY_VOCAB_DB = [
     "en": "get acquainted / acquaintance",
     "root": "kenal",
     "root_cn": "认识；熟悉",
-    "example": "Kami kenalan lewat teman kantor.",
-    "example_cn": "我们是通过同事认识的。",
+    "example": "Di acara itu saya dapat banyak kenalan baru, salah satunya calon klien kantor kami.",
+    "example_cn": "在那次活动上我认识了很多新的人，其中一位是我们公司的潜在客户。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-09-18 08:00",
+    "last_seen": "2026-10-17 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-10-17"
     ],
     "lesson_occurrences": [
-      "2026-09-18 08:00"
+      "2026-09-18 08:00",
+      "2026-10-17 18:00"
     ]
   },
   {
@@ -18736,23 +18749,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to obey; to comply with",
     "root": "patuh",
     "root_cn": "顺从；遵守",
-    "example": "Semua penghuni wajib mematuhi aturan parkir di kompleks ini.",
-    "example_cn": "所有住户都必须遵守这个小区的停车规定。",
+    "example": "Selama mendaki, semua peserta harus mematuhi instruksi pemimpin rombongan.",
+    "example_cn": "登山期间，所有参加者都必须服从领队的指示。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-08 08:00",
-    "last_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-17 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-08"
+      "2026-10-08",
+      "2026-10-17"
     ],
     "lesson_occurrences": [
-      "2026-10-08 08:00"
+      "2026-10-08 08:00",
+      "2026-10-17 18:00"
     ]
   },
   {
@@ -21092,23 +21109,25 @@ window.DAILY_VOCAB_DB = [
     "en": "to ignore; to neglect",
     "root": "abai",
     "root_cn": "疏忽；不在意",
-    "example": "Jangan mengabaikan pesan dari atasan, apalagi yang penting.",
-    "example_cn": "别不理上司发来的消息，尤其是重要的。",
+    "example": "Warga diminta tidak mengabaikan ancaman banjir selama musim hujan.",
+    "example_cn": "雨季期间，居民被要求不要忽视洪水的威胁。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-14 18:00",
-    "last_seen": "2026-10-14 18:00",
+    "last_seen": "2026-10-17 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-14"
+      "2026-10-14",
+      "2026-10-17"
     ],
     "lesson_occurrences": [
-      "2026-10-14 18:00"
+      "2026-10-14 18:00",
+      "2026-10-17 18:00"
     ]
   },
   {
@@ -21909,23 +21928,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to camp; to go camping",
     "root": "kemah",
     "root_cn": "帐篷；营地",
-    "example": "Sebelum berkemah, jangan lupa cas power bank sampai penuh.",
-    "example_cn": "露营之前，别忘了把充电宝充满电。（cas = mengisi daya 的口语）",
+    "example": "Berkemah di alam memang seru, asal kita siap kalau cuaca berubah.",
+    "example_cn": "在大自然里露营确实很好玩，只要我们做好天气变化的准备。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-17 08:00",
-    "last_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-17"
     ],
     "lesson_occurrences": [
-      "2026-10-17 08:00"
+      "2026-10-17 08:00",
+      "2026-10-17 18:00"
     ]
   },
   {
@@ -21984,23 +22006,26 @@ window.DAILY_VOCAB_DB = [
     "en": "heavy (rain); thick; dense",
     "root": "",
     "root_cn": "",
-    "example": "Hujan lebat semalam bikin atap bocor. Pagi ini Ayah langsung benerin.",
-    "example_cn": "昨晚的大雨把屋顶弄漏了。今天一早爸爸就去修了。（bikin = membuat，benerin = membetulkan）",
+    "example": "Hujan lebat semalam bikin jalan setapak ke air terjun licin dan berbahaya.",
+    "example_cn": "昨晚的大雨让通往瀑布的小路又滑又危险。（bikin = membuat）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-17 08:00",
-    "last_seen": "2026-10-17 08:00",
+    "last_seen": "2026-10-17 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-17"
     ],
     "lesson_occurrences": [
-      "2026-10-17 08:00"
+      "2026-10-17 08:00",
+      "2026-10-17 18:00"
     ]
   },
   {
@@ -22026,6 +22051,82 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-17 08:00"
+    ]
+  },
+  {
+    "word": "melindungi",
+    "cn": "保护；使免受（危险、伤害）",
+    "en": "to protect; to shelter",
+    "root": "lindung",
+    "root_cn": "庇护；遮蔽",
+    "example": "Aturan ini dibuat bukan untuk menyusahkan tamu, melainkan untuk melindungi mereka.",
+    "example_cn": "这条规定不是为了给客人添麻烦，而是为了保护他们。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 18:00",
+    "last_seen": "2026-10-17 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 18:00"
+    ]
+  },
+  {
+    "word": "membingungkan",
+    "cn": "令人困惑的；把（人）搞糊涂",
+    "en": "confusing; to confuse",
+    "root": "bingung",
+    "root_cn": "困惑；不知所措",
+    "example": "Petunjuk di aplikasi itu membingungkan, akhirnya saya bertanya langsung ke staf di pusat informasi.",
+    "example_cn": "那个应用里的指引让人看不懂，最后我直接去问了服务中心的工作人员。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 18:00",
+    "last_seen": "2026-10-17 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 18:00"
+    ]
+  },
+  {
+    "word": "longsor",
+    "cn": "山体滑坡；塌方；（土石）滑落",
+    "en": "landslide; to slide down",
+    "root": "longsor",
+    "root_cn": "滑落；坍塌",
+    "example": "Longsor menutup jalan ke desa itu, dan sejumlah rumah rusak.",
+    "example_cn": "山体滑坡堵住了通往那个村子的路，好几栋房子受损。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-17 18:00",
+    "last_seen": "2026-10-17 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-17"
+    ],
+    "lesson_occurrences": [
+      "2026-10-17 18:00"
     ]
   }
 ];

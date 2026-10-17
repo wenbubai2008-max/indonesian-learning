@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-17",
-    "session": "pm",
-    "time": "18:00",
-    "day": 57
+    "date": "2026-10-18",
+    "session": "am",
+    "time": "08:00",
+    "day": 58
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-17T09:40:43.633Z",
-    "lesson_watermark": "2026-10-17 08:00",
+    "runtime_generated_at": "2026-10-17T10:47:37.487Z",
+    "lesson_watermark": "2026-10-17 18:00",
     "index_updated": "2026-10-17",
-    "runtime_hash": "cb03dde05f10c8e08d819682a2fea3993f4e92602bbcd1ea2883d3ef959da817",
-    "index_hash": "f5ff13c90226dfc903520810eb2ff03dfc66f0499477f5e03f5a481f217eac6f",
+    "runtime_hash": "e950ff83fa5805d31b4114cfa9212f906cc8e53991cabf2829634ae7618fc992",
+    "index_hash": "f1d4b56feedde7dbdd4877c4caddb8b946777727f659ee350029e4d60b361576",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -116,10 +116,6 @@
       [
         "bencana alam",
         "自然灾害"
-      ],
-      [
-        "longsor",
-        "山体滑坡；塌方"
       ],
       [
         "dimaksudkan",
@@ -364,10 +360,6 @@
         "混合"
       ],
       [
-        "membingungkan",
-        "令人困惑"
-      ],
-      [
         "penulis",
         "作家、作者"
       ],
@@ -498,10 +490,6 @@
       [
         "kotak",
         "盒子、箱子"
-      ],
-      [
-        "melindungi",
-        "保护"
       ],
       [
         "sempit",
@@ -1622,16 +1610,6 @@
         ""
       ],
       [
-        "memperkirakan",
-        3,
-        0,
-        "",
-        "2026-10-15T07:27:40.951Z",
-        "估计；预估",
-        "kira",
-        ""
-      ],
-      [
         "pemasukan",
         3,
         0,
@@ -2242,16 +2220,6 @@
         "议价；出价"
       ],
       [
-        "mengenal",
-        2,
-        0,
-        "",
-        "2026-10-15T13:36:05.664Z",
-        "认识",
-        "kenal",
-        "认识；熟悉"
-      ],
-      [
         "cas",
         3,
         0,
@@ -2350,16 +2318,6 @@
         "候选人",
         "calon",
         "候选；准……"
-      ],
-      [
-        "kenalan",
-        3,
-        0,
-        "",
-        "2026-10-15T08:22:51.097Z",
-        "认识；熟人",
-        "kenal",
-        "认识；熟悉"
       ],
       [
         "pikiran",
@@ -3162,6 +3120,36 @@
         "订购；传话"
       ],
       [
+        "periksa",
+        3,
+        0,
+        "",
+        "2026-10-15T08:09:49.677Z",
+        "检查；核对",
+        "periksa",
+        "检查"
+      ],
+      [
+        "suasana",
+        3,
+        0,
+        "",
+        "2026-10-15T08:13:50.879Z",
+        "气氛；氛围",
+        "suasana",
+        "气氛；环境"
+      ],
+      [
+        "melayani",
+        2,
+        0,
+        "",
+        "2026-10-15T13:47:06.341Z",
+        "服务；接待",
+        "layan",
+        "服务；接待"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3260,106 +3248,6 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
-      ],
-      [
-        "renyah",
-        2,
-        0,
-        "",
-        "",
-        "酥脆（炸物、饼干等）",
-        "",
-        ""
-      ],
-      [
-        "kenyal",
-        2,
-        0,
-        "",
-        "",
-        "Q弹；有嚼劲（有弹性）",
-        "",
-        ""
-      ],
-      [
-        "tepung",
-        2,
-        0,
-        "",
-        "",
-        "面粉；（食用）粉",
-        "",
-        ""
-      ],
-      [
-        "pena",
-        2,
-        0,
-        "",
-        "2026-09-12T14:13:55.433Z",
-        "笔（钢笔、签字笔，偏书面）",
-        "",
-        ""
-      ],
-      [
-        "berkebun",
-        2,
-        0,
-        "",
-        "",
-        "种菜种花；做园艺",
-        "kebun",
-        "园子；菜园；果园"
-      ],
-      [
-        "berkemah",
-        2,
-        0,
-        "",
-        "",
-        "露营",
-        "kemah",
-        "帐篷；营地"
-      ],
-      [
-        "bulat",
-        2,
-        0,
-        "",
-        "",
-        "圆的（球形、圆形）；完整的",
-        "",
-        ""
-      ],
-      [
-        "tumpul",
-        2,
-        0,
-        "",
-        "",
-        "钝的（不锋利）",
-        "",
-        ""
-      ],
-      [
-        "lebat",
-        1,
-        0,
-        "",
-        "",
-        "（雨）大；（毛发、树叶）浓密；（果实）累累",
-        "",
-        ""
-      ],
-      [
-        "kumis",
-        2,
-        0,
-        "",
-        "",
-        "小胡子（上唇的胡子）",
-        "",
-        ""
       ]
     ],
     "focus": [
@@ -3655,14 +3543,6 @@
         "fuzzy"
       ],
       [
-        "melindungi",
-        "通用",
-        "ngelindungin",
-        "lindung",
-        737,
-        "fuzzy"
-      ],
-      [
         "menutupi",
         "通用",
         "nutupin",
@@ -3721,46 +3601,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-10",
-      "session": "am",
-      "review_core": [
-        "menyampaikan",
-        "nggak jadi",
-        "berusaha",
-        "mengubah",
-        "meningkatkan"
-      ],
-      "new_words": [
-        "lapangan",
-        "kekerasan",
-        "berlaku",
-        "bergerak",
-        "menyediakan",
-        "keberadaan",
-        "penelitian",
-        "cerai",
-        "keras kepala",
-        "luar biasa"
-      ]
-    },
-    {
-      "date": "2026-10-10",
-      "session": "pm",
-      "review_core": [
-        "semacam",
-        "pernyataan",
-        "perubahan",
-        "terbiasa",
-        "walaupun"
-      ],
-      "new_words": [
-        "tubuh",
-        "santai",
-        "anjuran",
-        "peregangan"
-      ]
-    },
     {
       "date": "2026-10-11",
       "session": "am",
@@ -4019,106 +3859,40 @@
         "lebat",
         "kumis"
       ]
+    },
+    {
+      "date": "2026-10-17",
+      "session": "pm",
+      "review_core": [
+        "mematuhi",
+        "mengabaikan",
+        "kenalan",
+        "mengenal",
+        "memperkirakan"
+      ],
+      "new_words": [
+        "melindungi",
+        "membingungkan",
+        "longsor"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-16",
+    "date": "2026-10-17",
     "new_words": [
-      "membayangkan",
-      "mengenali",
-      "menyusul"
+      "melindungi",
+      "membingungkan",
+      "longsor"
     ],
     "review_core": [
-      "seolah-olah",
-      "seandainya",
-      "ketinggalan",
-      "meninggalkan",
-      "kebaca",
-      "ngerembet"
+      "mematuhi",
+      "mengabaikan",
+      "kenalan",
+      "mengenal",
+      "memperkirakan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-17",
-    "vocab": [
-      [
-        "renyah",
-        "酥脆（炸物、饼干等）",
-        "crispy; crunchy",
-        "",
-        ""
-      ],
-      [
-        "kenyal",
-        "Q弹；有嚼劲（有弹性）",
-        "chewy; springy",
-        "",
-        ""
-      ],
-      [
-        "tepung",
-        "面粉；（食用）粉",
-        "flour",
-        "",
-        ""
-      ],
-      [
-        "pena",
-        "笔（钢笔、签字笔，偏书面）",
-        "pen",
-        "",
-        ""
-      ],
-      [
-        "berkebun",
-        "种菜种花；做园艺",
-        "to garden; to grow plants",
-        "kebun",
-        "园子；菜园；果园"
-      ],
-      [
-        "berkemah",
-        "露营",
-        "to camp; to go camping",
-        "kemah",
-        "帐篷；营地"
-      ],
-      [
-        "bulat",
-        "圆的（球形、圆形）；完整的",
-        "round; spherical; whole",
-        "",
-        ""
-      ],
-      [
-        "tumpul",
-        "钝的（不锋利）",
-        "blunt; dull",
-        "",
-        ""
-      ],
-      [
-        "lebat",
-        "（雨）大；（毛发、树叶）浓密；（果实）累累",
-        "heavy (rain); thick; dense",
-        "",
-        ""
-      ],
-      [
-        "kumis",
-        "小胡子（上唇的胡子）",
-        "moustache",
-        "",
-        ""
-      ]
-    ],
-    "review_vocab": [
-      "ngeluh",
-      "keluhan",
-      "mengeluh",
-      "nyindir",
-      "lengkap"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
