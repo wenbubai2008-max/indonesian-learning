@@ -162,7 +162,7 @@ PM 专用的运行要求：
 
 逐字段的键名表见 `docs/LESSON-JSON-SCHEMA.md` 的 PM 一节。要点：
 
-- 根字段：date、session:"pm"、time:"18:00"、day、title（必须以 18:00 开头）、write_status:"lesson_complete"、new_words、vocab、reading、dialogue、rewrite、daily_test、review。
+- 根字段：date、session:"pm"、time:"18:00"、day、title（必须以 18:00 开头；标题双语（2026-10-17 用户要求）：`时间 早课/晚课｜印尼语标题 · 中文标题`，两种语言说同一件事，例如 `18:00 晚课｜Kemah di Bogor: Tenda Kena Longsor Kecil · 茂物露营夜：没听劝的帐篷遇上小滑坡`）、write_status:"lesson_complete"、new_words、vocab、reading、dialogue、rewrite、daily_test、review。
 - vocab 必须为 10–12 张词卡，每张含：word, display, audio_text, cn, en, root, root_cn, formation, example, example_cn, synonym_note, usage_note, source_group, is_new, is_oral_new。source_group 只能是 new、review、application。is_new 只能在 source_group=new 时为 true。根字段 new_words 必须恰好列出所有 new 组词汇，不能混入 review 或 application。正常时 new 3–4、review 4–6、application 2–3；复习循环时 new=全部剩余新词（0–2）、review 4–9、application 2–3。
 - reading 使用 {text,cn}。
 - dialogue 必须是 {title,lines:[{speaker,id,cn},...]}，其中 id 存放印尼语台词，不是数字编号。
