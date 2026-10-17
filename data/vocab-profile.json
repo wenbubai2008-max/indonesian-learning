@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-10-17T10:47:43.993Z",
-  "source_updated_at": "2026-10-17T04:24:17.171Z",
+  "generated_at": "2026-10-17T23:40:20.427Z",
+  "source_updated_at": "2026-10-17T15:37:42.021Z",
   "taught_total": 824,
   "confirmed_mastered": 225,
   "needs_reinforcement": 552,
@@ -14,6 +14,19 @@
   "primary_eligible_new_total": 149,
   "focus_total": 535,
   "focus_words": [
+    {
+      "word": "mematuhi",
+      "score": 106,
+      "signals": [
+        "quick_wrong",
+        "lesson_wrong",
+        "dont"
+      ],
+      "wrong_count": 3,
+      "last_wrong": "2026-10-17T14:22:18.757Z",
+      "last_review": "2026-10-17T14:22:18.757Z",
+      "cn": "遵守；服从"
+    },
     {
       "word": "seolah-olah",
       "score": 104,
@@ -98,18 +111,6 @@
       "last_wrong": "2026-09-25T15:02:05.313Z",
       "last_review": "2026-10-09T07:08:10.237Z",
       "cn": "逃跑；溜走"
-    },
-    {
-      "word": "menegaskan",
-      "score": 80,
-      "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-25T14:59:12.780Z",
-      "last_review": "2026-10-09T07:07:17.028Z",
-      "cn": "强调；明确说明；确认"
     }
   ],
   "definitions": {
