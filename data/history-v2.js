@@ -112,7 +112,8 @@
     const say=t=>`<button class="sound" onclick='speak(${JSON.stringify(t)})'>🔊</button>`;
     return '<section class="lfCard"><h3>今天的重点</h3><p class="lfSub">这节课最值得掌握的 '+f.words.length+' 个词和 '+f.patterns.length+' 个句型，都出自本课；其余内容认识即可。</p>'+
       (f.words.length?'<div class="lfWords">'+f.words.map(w=>'<div><b>'+esc2(displayText(w,x.vocab))+' '+say(w)+'</b><span>'+esc2(focusCnFor(w,x))+'</span></div>').join('')+'</div>':'')+
-      (f.patterns.length?'<div class="lfPats">'+f.patterns.map(p=>'<div><b>'+esc2(p.pattern)+'</b><span class="lfPcn">'+esc2(p.cn||'')+'</span><div class="lfEx">'+esc2(displayText(p.example,x.vocab))+' '+say(p.example)+'</div><div class="lfExCn">'+esc2(p.example_cn||'')+'</div></div>').join('')+'</div>':'')+'</section>';
+      (f.patterns.length?'<div class="lfPats">'+f.patterns.map(p=>'<div><b>'+esc2(p.pattern)+'</b><span class="lfPcn">'+esc2(p.cn||'')+'</span><div class="lfEx">'+esc2(displayText(p.example,x.vocab))+' '+say(p.example)+'</div><div class="lfExCn">'+esc2(p.example_cn||'')+'</div></div>').join('')+'</div>':'')+
+      (f.words.length&&f.patterns.length?'<button type="button" class="lfStart" data-guided-start="'+esc2(x.date+'-'+x.session)+'">开始带学 · 一步一步带你过重点（约 15 分钟）→</button>':'')+'</section>';
   }
   const lfHit=(f,t)=>!!f&&f.ex.some(e=>e&&lfNorm(t).includes(e));
   function lfMarkText(html,f,x){if(!f)return html;f.patterns.forEach(p=>{const e=esc2(displayText(p.example,x.vocab));if(e&&html.includes(e))html=html.replace(e,'<mark class="lfMark">'+e+'</mark>')});return html}
