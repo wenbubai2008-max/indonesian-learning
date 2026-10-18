@@ -121,7 +121,13 @@
   // on one line; collocations, word family, contrast, colloquial forms and usage are split by the labels the lesson text
   // already uses and stay folded until 展开 (today's focus words open). Text is never rewritten; unlabelled sentences
   // go to 补充. Collapsed cards in one row share a height; an opened card grows on its own.
-  function vcSentences(t){return String(t||'').split(/。|\.\s+(?=[一-鿿])/).map(x=>x.trim()).filter(Boolean)}
+  // Split at 。 (or ". " before Chinese) only outside brackets, so "（包裹送错到邻居家了。）" stays whole.
+  function vcSentences(t){const s=String(t||''),out=[];let d=0,cur='',inner=false;for(let i=0;i<s.length;i++){const ch=s[i];
+    if(ch==='（'||ch==='('){d++;cur+=ch;continue}
+    if(ch==='）'||ch===')'){d=Math.max(0,d-1);cur+=ch;if(!d&&inner){out.push(cur);cur='';inner=false}continue}
+    if(d){if(ch==='。')inner=true;cur+=ch;continue}
+    if(ch==='。'||(ch==='.'&&/\s/.test(s[i+1]||'')&&/[\u4e00-\u9fff]/.test(s.slice(i+1).trim()[0]||''))){if(ch==='.')cur+='.';out.push(cur);cur='';continue}
+    cur+=ch}out.push(cur);return out.map(x=>x.trim()).filter(Boolean)}
   function vcSplit(t){const out=[];let d=0,cur='';for(const ch of t){if(ch==='（'||ch==='(')d++;else if(ch==='）'||ch===')')d=Math.max(0,d-1);if((ch==='、'||ch==='／')&&!d){out.push(cur);cur=''}else cur+=ch}out.push(cur);return out.map(x=>x.trim()).filter(Boolean)}
   function vcPairs(t){return vcSplit(t).map(x=>{const m=x.match(/^(.*?)（(.+)）$/);return m?{id:m[1].trim(),cn:m[2]}:{id:x,cn:''}})}
   const vcI=t=>esc2(t).replace(/[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'’\-]*(?:[ ,/!?.…]+[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'’\-]*)*[.!?…]?/g,m=>'<span class="vcI">'+m+'</span>');
