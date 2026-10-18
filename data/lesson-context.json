@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-18",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 58
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-17T23:40:20.275Z",
-    "lesson_watermark": "2026-10-17 18:00",
-    "index_updated": "2026-10-17",
-    "runtime_hash": "09a9d3730c92b7dbb3b86c7e99029f05258397d5bfe53c2c9e13b906306c5943",
-    "index_hash": "f1d4b56feedde7dbdd4877c4caddb8b946777727f659ee350029e4d60b361576",
+    "runtime_generated_at": "2026-10-18T00:31:56.384Z",
+    "lesson_watermark": "2026-10-18 08:00",
+    "index_updated": "2026-10-18",
+    "runtime_hash": "0e24f7c21707f9280fe3dfdb8bc4ed70af34413351b943497e63d1330c74f5d2",
+    "index_hash": "b0a1ae8c27a3168f64f192a21627d90277ec0b84aff24519a553a6390c918120",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "ramping",
-        "苗条"
-      ],
-      [
-        "keriting",
-        "卷曲"
-      ],
-      [
-        "uban",
-        "白发"
-      ],
-      [
-        "jenggot",
-        "胡须/络腮胡"
-      ],
-      [
-        "kanak-kanak",
-        "儿童"
-      ],
-      [
-        "remaja",
-        "青少年"
-      ],
-      [
-        "sandal jepit",
-        "人字拖"
-      ],
-      [
-        "piyama",
-        "睡衣"
-      ],
-      [
-        "gelang",
-        "手镯"
-      ],
-      [
-        "kalung",
-        "项链"
-      ],
       [
         "mengangsur",
         "分期偿还"
@@ -1620,16 +1580,6 @@
         ""
       ],
       [
-        "lurus",
-        3,
-        0,
-        "",
-        "2026-10-15T08:23:04.043Z",
-        "直；直走",
-        "lurus",
-        ""
-      ],
-      [
         "putar balik",
         3,
         0,
@@ -1637,16 +1587,6 @@
         "2026-10-15T13:44:57.914Z",
         "掉头；调头",
         "putar + balik",
-        ""
-      ],
-      [
-        "memahami",
-        3,
-        0,
-        "",
-        "2026-10-15T13:37:37.271Z",
-        "理解；明白",
-        "paham",
         ""
       ],
       [
@@ -2540,16 +2480,6 @@
         "天空"
       ],
       [
-        "raya",
-        3,
-        0,
-        "",
-        "2026-10-15T08:21:00.991Z",
-        "盛大的；节庆的；大规模的",
-        "raya",
-        "盛大；节庆；大"
-      ],
-      [
         "ancaman",
         2,
         0,
@@ -3150,6 +3080,36 @@
         "服务；接待"
       ],
       [
+        "ngambek",
+        2,
+        0,
+        "",
+        "2026-10-15T07:42:34.583Z",
+        "闹别扭；赌气",
+        "ngambek",
+        "赌气；闹别扭"
+      ],
+      [
+        "nyalakan",
+        2,
+        0,
+        "",
+        "2026-10-15T13:47:14.754Z",
+        "打开（电器、灯、引擎）；点燃",
+        "nyala",
+        "亮；燃着"
+      ],
+      [
+        "perbaiki",
+        2,
+        0,
+        "",
+        "2026-10-15T08:09:44.734Z",
+        "修理；改进",
+        "baik",
+        "好"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3248,6 +3208,106 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
+      ],
+      [
+        "ramping",
+        2,
+        0,
+        "",
+        "",
+        "苗条的；（物体）纤细、修长的",
+        "",
+        ""
+      ],
+      [
+        "keriting",
+        2,
+        0,
+        "",
+        "",
+        "卷曲的（头发很卷）",
+        "",
+        ""
+      ],
+      [
+        "uban",
+        2,
+        0,
+        "",
+        "",
+        "白头发",
+        "",
+        ""
+      ],
+      [
+        "jenggot",
+        2,
+        0,
+        "",
+        "",
+        "胡须（下巴上的胡子）",
+        "",
+        ""
+      ],
+      [
+        "kanak-kanak",
+        2,
+        0,
+        "",
+        "",
+        "幼儿；孩童（多用在固定说法里）",
+        "kanak",
+        "孩子（只用在重叠形式里）"
+      ],
+      [
+        "remaja",
+        2,
+        0,
+        "",
+        "",
+        "青少年；少年时期（十几岁）",
+        "",
+        ""
+      ],
+      [
+        "sandal jepit",
+        2,
+        0,
+        "",
+        "",
+        "人字拖",
+        "jepit",
+        "夹"
+      ],
+      [
+        "piyama",
+        2,
+        0,
+        "",
+        "",
+        "（成套的）睡衣",
+        "",
+        ""
+      ],
+      [
+        "gelang",
+        2,
+        0,
+        "",
+        "",
+        "手镯；手链",
+        "",
+        ""
+      ],
+      [
+        "kalung",
+        2,
+        0,
+        "",
+        "",
+        "项链",
+        "",
+        ""
       ]
     ],
     "focus": [
@@ -3876,6 +3936,29 @@
         "membingungkan",
         "longsor"
       ]
+    },
+    {
+      "date": "2026-10-18",
+      "session": "am",
+      "review_core": [
+        "merayakan",
+        "raya",
+        "berisi",
+        "lurus",
+        "memahami"
+      ],
+      "new_words": [
+        "ramping",
+        "keriting",
+        "uban",
+        "jenggot",
+        "kanak-kanak",
+        "remaja",
+        "sandal jepit",
+        "piyama",
+        "gelang",
+        "kalung"
+      ]
     }
   ],
   "previous_pm": {
@@ -3893,7 +3976,88 @@
       "memperkirakan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-18",
+    "vocab": [
+      [
+        "ramping",
+        "苗条的；（物体）纤细、修长的",
+        "slim; slender",
+        "",
+        ""
+      ],
+      [
+        "keriting",
+        "卷曲的（头发很卷）",
+        "curly (hair)",
+        "",
+        ""
+      ],
+      [
+        "uban",
+        "白头发",
+        "gray hair; white hair",
+        "",
+        ""
+      ],
+      [
+        "jenggot",
+        "胡须（下巴上的胡子）",
+        "beard",
+        "",
+        ""
+      ],
+      [
+        "kanak-kanak",
+        "幼儿；孩童（多用在固定说法里）",
+        "children; childhood",
+        "kanak",
+        "孩子（只用在重叠形式里）"
+      ],
+      [
+        "remaja",
+        "青少年；少年时期（十几岁）",
+        "teenager; adolescent",
+        "",
+        ""
+      ],
+      [
+        "sandal jepit",
+        "人字拖",
+        "flip-flops",
+        "jepit",
+        "夹"
+      ],
+      [
+        "piyama",
+        "（成套的）睡衣",
+        "pajamas",
+        "",
+        ""
+      ],
+      [
+        "gelang",
+        "手镯；手链",
+        "bracelet; bangle",
+        "",
+        ""
+      ],
+      [
+        "kalung",
+        "项链",
+        "necklace",
+        "",
+        ""
+      ]
+    ],
+    "review_vocab": [
+      "merayakan",
+      "raya",
+      "berisi",
+      "lurus",
+      "memahami"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

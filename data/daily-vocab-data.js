@@ -4811,19 +4811,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-01 08:00",
-    "last_seen": "2026-09-01 08:00",
+    "last_seen": "2026-10-18 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-01"
+      "2026-09-01",
+      "2026-10-18"
     ],
     "example": "Dari sini lurus aja sampai lampu merah.",
     "example_cn": "从这里一直直走到红绿灯。",
     "lesson_occurrences": [
-      "2026-09-01 08:00"
+      "2026-09-01 08:00",
+      "2026-10-18 08:00"
     ]
   },
   {
@@ -5236,21 +5238,25 @@ window.DAILY_VOCAB_DB = [
     "root": "paham",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-01 19:00",
-    "last_seen": "2026-09-01 19:00",
+    "last_seen": "2026-10-18 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-01"
+      "2026-09-01",
+      "2026-10-18"
     ],
     "example": "Aku memahami maksud kamu, kok.",
     "example_cn": "我明白你的意思啊。",
     "lesson_occurrences": [
-      "2026-09-01 19:00"
+      "2026-09-01 19:00",
+      "2026-10-18 08:00"
     ]
   },
   {
@@ -12389,19 +12395,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "我们家通常会在节日期间团聚。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 18:00",
-    "last_seen": "2026-09-20 18:00",
+    "last_seen": "2026-10-18 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-10-18"
     ],
     "lesson_occurrences": [
-      "2026-09-20 18:00"
+      "2026-09-20 18:00",
+      "2026-10-18 08:00"
     ]
   },
   {
@@ -12625,17 +12635,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-21 08:00",
-    "last_seen": "2026-09-21 08:00",
+    "last_seen": "2026-10-18 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-21"
+      "2026-09-21",
+      "2026-10-18"
     ],
     "lesson_occurrences": [
-      "2026-09-21 08:00"
+      "2026-09-21 08:00",
+      "2026-10-18 08:00"
     ]
   },
   {
@@ -13281,17 +13293,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-09-24 08:00",
+    "last_seen": "2026-10-18 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-24"
+      "2026-09-24",
+      "2026-10-18"
     ],
     "lesson_occurrences": [
-      "2026-09-24 08:00"
+      "2026-09-24 08:00",
+      "2026-10-18 08:00"
     ]
   },
   {
@@ -22127,6 +22141,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-17 18:00"
+    ]
+  },
+  {
+    "word": "ramping",
+    "cn": "苗条的；（物体）纤细、修长的",
+    "en": "slim; slender",
+    "root": "",
+    "root_cn": "",
+    "example": "Dulu tubuh Tante Lia ramping sekali. Sekarang, setelah punya dua anak, tubuhnya lebih berisi.",
+    "example_cn": "以前莉亚阿姨身材特别苗条。现在生了两个孩子以后，身材丰满了一些。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 08:00"
+    ]
+  },
+  {
+    "word": "keriting",
+    "cn": "卷曲的（头发很卷）",
+    "en": "curly (hair)",
+    "root": "",
+    "root_cn": "",
+    "example": "Rambut Dina keriting. Dia pernah mencoba meluruskannya di salon, tapi gagal: seminggu kemudian rambutnya keriting lagi.",
+    "example_cn": "迪娜的头发是卷的。她曾经在美发店试过把头发拉直，但是失败了：一个星期后头发又卷回来了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 08:00"
+    ]
+  },
+  {
+    "word": "uban",
+    "cn": "白头发",
+    "en": "gray hair; white hair",
+    "root": "",
+    "root_cn": "",
+    "example": "Waktu bercermin, Ibu menemukan sehelai uban, lalu langsung mencabutnya.",
+    "example_cn": "妈妈照镜子的时候发现了一根白头发，马上就把它拔掉了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 08:00"
+    ]
+  },
+  {
+    "word": "jenggot",
+    "cn": "胡须（下巴上的胡子）",
+    "en": "beard",
+    "root": "",
+    "root_cn": "",
+    "example": "Sebelum wawancara kerja, Mas Dimas mencukur jenggotnya supaya kelihatan rapi.",
+    "example_cn": "求职面试前，迪马斯哥把胡子刮了，好让自己看起来整洁。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 08:00"
+    ]
+  },
+  {
+    "word": "kanak-kanak",
+    "cn": "幼儿；孩童（多用在固定说法里）",
+    "en": "children; childhood",
+    "root": "kanak",
+    "root_cn": "孩子（只用在重叠形式里）",
+    "example": "Adik saya masih sekolah di taman kanak-kanak, jadi jam sepuluh pagi dia sudah pulang.",
+    "example_cn": "我弟弟还在上幼儿园，所以上午十点他就已经放学回家了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 08:00"
+    ]
+  },
+  {
+    "word": "remaja",
+    "cn": "青少年；少年时期（十几岁）",
+    "en": "teenager; adolescent",
+    "root": "",
+    "root_cn": "",
+    "example": "Kehidupan remaja sekarang sangat berbeda dengan zaman orang tua kita dulu.",
+    "example_cn": "现在青少年的生活和我们父母那个年代很不一样。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 08:00"
+    ]
+  },
+  {
+    "word": "sandal jepit",
+    "cn": "人字拖",
+    "en": "flip-flops",
+    "root": "jepit",
+    "root_cn": "夹",
+    "example": "Kalau cuma ke warung depan, pakai sandal jepit aja.",
+    "example_cn": "要是只去门口的小店，穿人字拖就行了。（cuma = hanya，aja = saja）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 08:00"
+    ]
+  },
+  {
+    "word": "piyama",
+    "cn": "（成套的）睡衣",
+    "en": "pajamas",
+    "root": "",
+    "root_cn": "",
+    "example": "Hari Minggu, anak-anak masih memakai piyama sampai jam sembilan pagi.",
+    "example_cn": "星期天，孩子们穿着睡衣一直到上午九点。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 08:00"
+    ]
+  },
+  {
+    "word": "gelang",
+    "cn": "手镯；手链",
+    "en": "bracelet; bangle",
+    "root": "",
+    "root_cn": "",
+    "example": "Gelang emas ini hadiah dari Nenek waktu saya lulus kuliah.",
+    "example_cn": "这只金手镯是我大学毕业时奶奶送的礼物。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 08:00"
+    ]
+  },
+  {
+    "word": "kalung",
+    "cn": "项链",
+    "en": "necklace",
+    "root": "",
+    "root_cn": "",
+    "example": "Waduh, kalungku nyangkut di rambut. Tolong bantu lepasin, dong.",
+    "example_cn": "哎呀，我的项链缠在头发上了。帮我解一下嘛。（nyangkut = tersangkut，lepasin = melepaskan）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 08:00"
     ]
   }
 ];
