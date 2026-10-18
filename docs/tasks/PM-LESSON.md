@@ -173,7 +173,7 @@ PM 专用的运行要求：
   - order：{type:"order",prompt,tokens,answer,answer_cn,explain}
 - daily_test 还必须包含非空字符串数组 self_check（3–4 条诊断问题，按第 5 节“自检与复盘分工”写）。
 - review 必须使用 {title,steps:[...]}，不能把 steps 误写成 items。
-- lesson_focus（今天的重点，2026-10-18 用户决定；**2026-10-19 起每节必填**）：**不新增任何词或任务**，只是从本课已有内容里标出最值得掌握的部分（不是多学五项）。格式 `{"words":[3 个词],"patterns":[2 个 {pattern, cn, example, example_cn}]}`：
+- lesson_focus（今天的重点，2026-10-18 用户决定；**2026-10-18 晚课起每节必填**）：**不新增任何词或任务**，只是从本课已有内容里标出最值得掌握的部分（不是多学五项）。格式 `{"words":[3 个词],"patterns":[2 个 {pattern, cn, example, example_cn}]}`：
   - words：恰好 3 个，必须是本课的词（vocab 里任一组的词），优先选实用、容易忘、值得主动说出口的词。
   - patterns：恰好 2 个句型。pattern 用 `…` 标出可替换的部分（如 `Waktu masih …, …`），cn 是句型的中文意思；example 必须**逐字取自本课**（reading、dialogue 台词、词卡例句或 rewrite 参考答案），example_cn 是它的中文。
   - 校验器检查：`LESSON_FOCUS_MISSING`（缺字段）、`LESSON_FOCUS_INVALID`（数量或字段不对）、`LESSON_FOCUS_WORD`（词不是本课的）、`LESSON_FOCUS_PATTERN`（例句不在本课里）。按报错改正，不得为此改动选词、题目或其他内容。

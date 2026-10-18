@@ -25,7 +25,7 @@ function collectReviewHistory(index,targetDate,targetSession,load){
 
 // 2026-10-18 (user decision): every lesson from this date carries lesson_focus — 3 of the lesson's own words and 2
 // sentence patterns whose example is taken word for word from the lesson. Earlier lessons may lack it (optional there).
-const FOCUS_REQUIRED_FROM="2026-10-19";
+const FOCUS_REQUIRED_FROM="2026-10-18 18:00"; // first required lesson (that morning was already published)
 const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm,reviewHistory,focusRequiredFrom}) {
   const errors=[], add=(code,detail)=>errors.push({code,detail});
   const check=(c,code,detail)=>{if(!c)add(code,detail);return !!c};
@@ -207,7 +207,7 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
   // Today's focus: chosen from this lesson only; it adds no words and no tasks.
   {
     const lf=lesson.lesson_focus,from=focusRequiredFrom||FOCUS_REQUIRED_FROM;
-    if(lf===undefined)check(date<from,"LESSON_FOCUS_MISSING","lesson_focus (3 words + 2 patterns) required from "+from);
+    if(lf===undefined)check(date+" "+time<(from.length===10?from+" 00:00":from),"LESSON_FOCUS_MISSING","lesson_focus (3 words + 2 patterns) required from "+from);
     else{
       const own=new Set(session==="am"?[...vocab.map(word),...ws(lesson.review_vocab),...ws(lesson.cycle_vocab)]:vocab.map(word));
       const texts=[...(session==="am"?(Array.isArray(lesson.sentences)?lesson.sentences.map(x=>x&&x.text):[]):[]),lesson.reading&&lesson.reading.text,
