@@ -2538,29 +2538,34 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "mengalami",
     "cn": "经历、遭遇",
-    "en": "",
+    "en": "to experience; to undergo",
     "root": "alami",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-23 19:00",
-    "last_seen": "2026-08-30 19:00",
+    "last_seen": "2026-10-18 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-23",
-      "2026-08-30"
+      "2026-08-30",
+      "2026-10-18"
     ],
-    "example": "Kemarin sempat ngalamin masalah yang sama.",
-    "example_cn": "昨天也遇到过同样的问题。",
+    "example": "Di jalan tol, kami mengalami ban bocor dan harus menunggu derek.",
+    "example_cn": "在高速公路上，我们遇上爆胎，只好等拖车。",
     "lesson_occurrences": [
       "2026-08-23 19:00",
-      "2026-08-30 19:00"
-    ]
+      "2026-08-30 19:00",
+      "2026-10-18 18:00"
+    ],
+    "root_cn": "世界；（引申）亲身经历"
   },
   {
     "word": "mencoba",
@@ -4224,22 +4229,27 @@ window.DAILY_VOCAB_DB = [
     "root": "sasar",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 08:00",
-    "last_seen": "2026-08-31 08:00",
+    "last_seen": "2026-10-18 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-10-18"
     ],
-    "example": "Tadi driver-nya nyasar, jadi muter agak jauh.",
-    "example_cn": "刚才司机走错路了，所以绕得有点远。",
+    "example": "Gara-gara sok tahu jalan, kami malah nyasar ke kampung sebelah.",
+    "example_cn": "都怪我们自以为认得路，结果反而迷路走到了隔壁村。",
     "lesson_occurrences": [
-      "2026-08-31 08:00"
-    ]
+      "2026-08-31 08:00",
+      "2026-10-18 18:00"
+    ],
+    "root_cn": "偏离（方向、目标）"
   },
   {
     "word": "nganter",
@@ -11853,23 +11863,27 @@ window.DAILY_VOCAB_DB = [
     "en": "suggestion / advice",
     "root": "saran",
     "root_cn": "建议",
-    "example": "Aku butuh saran sebelum mengambil keputusan.",
-    "example_cn": "做决定之前我需要一些建议。",
+    "example": "Sejak ikut saran temannya, omzet warung Bu Rini naik dua kali lipat.",
+    "example_cn": "自从听了朋友的建议，Rini 阿姨小店的营业额翻了一倍。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-19 08:00",
+    "last_seen": "2026-10-18 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-19"
+      "2026-09-19",
+      "2026-10-18"
     ],
     "lesson_occurrences": [
-      "2026-09-19 08:00"
+      "2026-09-19 08:00",
+      "2026-10-18 18:00"
     ]
   },
   {
@@ -20256,23 +20270,27 @@ window.DAILY_VOCAB_DB = [
     "en": "tiring; exhausting",
     "root": "lelah",
     "root_cn": "累、疲劳",
-    "example": "Perjalanan ke kantor lewat macet itu melelahkan.",
-    "example_cn": "堵车去公司的路程让人精疲力尽。",
+    "example": "Antri tiga jam di kantor imigrasi itu benar-benar melelahkan.",
+    "example_cn": "在移民局排三个小时的队，真的累死人。（antri = antre）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-12 08:00",
-    "last_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-18 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-12"
+      "2026-10-12",
+      "2026-10-18"
     ],
     "lesson_occurrences": [
-      "2026-10-12 08:00"
+      "2026-10-12 08:00",
+      "2026-10-18 18:00"
     ]
   },
   {
@@ -20331,23 +20349,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to suggest; recommend",
     "root": "saran",
     "root_cn": "建议",
-    "example": "Dokter menyarankan saya banyak minum air putih.",
-    "example_cn": "医生建议我多喝白开水。",
+    "example": "Teman saya menyarankan saya mencoba lowongan itu karena cocok dengan keahlian saya.",
+    "example_cn": "我朋友建议我试试那个职位空缺，因为它和我的专长很对口。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-12 08:00",
-    "last_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-18 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-12"
+      "2026-10-12",
+      "2026-10-18"
     ],
     "lesson_occurrences": [
-      "2026-10-12 08:00"
+      "2026-10-12 08:00",
+      "2026-10-18 18:00"
     ]
   },
   {
@@ -22349,23 +22371,26 @@ window.DAILY_VOCAB_DB = [
     "en": "bracelet; bangle",
     "root": "",
     "root_cn": "",
-    "example": "Gelang emas ini hadiah dari Nenek waktu saya lulus kuliah.",
-    "example_cn": "这只金手镯是我大学毕业时奶奶送的礼物。",
+    "example": "Gelang ini dibuat perajin di wilayah Kotagede yang terkenal dengan peraknya.",
+    "example_cn": "这只手镯是科塔格德地区的工匠做的，那里以银器出名。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-18 08:00",
-    "last_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-18"
     ],
     "lesson_occurrences": [
-      "2026-10-18 08:00"
+      "2026-10-18 08:00",
+      "2026-10-18 18:00"
     ]
   },
   {
@@ -22374,23 +22399,127 @@ window.DAILY_VOCAB_DB = [
     "en": "necklace",
     "root": "",
     "root_cn": "",
-    "example": "Waduh, kalungku nyangkut di rambut. Tolong bantu lepasin, dong.",
-    "example_cn": "哎呀，我的项链缠在头发上了。帮我解一下嘛。（nyangkut = tersangkut，lepasin = melepaskan）",
+    "example": "Aku pengin beli kalung itu, tapi harus ngatur uang dulu sampai gajian.",
+    "example_cn": "我想买那条项链，但得先把钱安排好，撑到发工资。（pengin = ingin，ngatur = mengatur）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-18 08:00",
-    "last_seen": "2026-10-18 08:00",
+    "last_seen": "2026-10-18 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-18"
     ],
     "lesson_occurrences": [
-      "2026-10-18 08:00"
+      "2026-10-18 08:00",
+      "2026-10-18 18:00"
+    ]
+  },
+  {
+    "word": "gang",
+    "cn": "小巷；胡同（住宅区里的窄巷）",
+    "en": "alley; narrow lane",
+    "root": "",
+    "root_cn": "",
+    "example": "Rumah nenekku ada di ujung gang, jadi mobil harus parkir di jalan besar.",
+    "example_cn": "我奶奶家在巷子尽头，所以车得停在大路上。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 18:00",
+    "last_seen": "2026-10-18 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 18:00"
+    ]
+  },
+  {
+    "word": "memperhatikan",
+    "cn": "注意；留意观察；关心",
+    "en": "to pay attention to; to notice; to observe",
+    "root": "hati",
+    "root_cn": "心",
+    "example": "Dewi memperhatikan cara perajin itu mengangkat perak panas dengan penjepit.",
+    "example_cn": "Dewi 留心看那位工匠用夹子夹起滚烫银块的手法。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 18:00",
+    "last_seen": "2026-10-18 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 18:00"
+    ]
+  },
+  {
+    "word": "ditipu",
+    "cn": "被骗",
+    "en": "to be cheated; to be scammed",
+    "root": "tipu",
+    "root_cn": "欺骗；骗局",
+    "example": "Hati-hati belanja online. Banyak orang ditipu toko yang menawarkan diskon 70 persen.",
+    "example_cn": "网购要小心。很多人被那些号称打三折（优惠 70%）的网店骗了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 18:00",
+    "last_seen": "2026-10-18 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 18:00"
+    ]
+  },
+  {
+    "word": "menoleh",
+    "cn": "转头（看）；回头看",
+    "en": "to turn one's head; to look back",
+    "root": "toleh",
+    "root_cn": "转头",
+    "example": "Dia sempat menoleh ke arah toko itu, tapi akhirnya berubah pikiran dan pulang.",
+    "example_cn": "他回头朝那家店看了一眼，但最后改变主意回家了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-18 18:00",
+    "last_seen": "2026-10-18 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-18"
+    ],
+    "lesson_occurrences": [
+      "2026-10-18 18:00"
     ]
   }
 ];

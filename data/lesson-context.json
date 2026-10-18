@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-18",
-    "session": "pm",
-    "time": "18:00",
-    "day": 58
+    "date": "2026-10-19",
+    "session": "am",
+    "time": "08:00",
+    "day": 59
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-18T09:40:18.635Z",
-    "lesson_watermark": "2026-10-18 08:00",
+    "runtime_generated_at": "2026-10-18T10:52:17.961Z",
+    "lesson_watermark": "2026-10-18 18:00",
     "index_updated": "2026-10-18",
-    "runtime_hash": "18656e7d6dc7577578fe4506b1d55c9ea7a14a3fe0942981ad35bae5c35bcd30",
-    "index_hash": "b0a1ae8c27a3168f64f192a21627d90277ec0b84aff24519a553a6390c918120",
+    "runtime_hash": "aaf37494c7c56c791f6e9e2248c73118e2ef388271d57e2a09e2d438b1dfc712",
+    "index_hash": "e584108b90c25c8267eb0248a43b1c623791f6dae002b3c52a6c515ba87bf772",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -154,16 +154,8 @@
         "逃脱；通过"
       ],
       [
-        "ditipu",
-        "被骗"
-      ],
-      [
         "memaksa",
         "强迫"
-      ],
-      [
-        "menoleh",
-        "回头看；转头"
       ],
       [
         "perkirakan",
@@ -640,10 +632,6 @@
         "虚弱的"
       ],
       [
-        "memperhatikan",
-        "注意"
-      ],
-      [
         "tidak adil",
         "不公平的"
       ],
@@ -846,10 +834,6 @@
       [
         "negara",
         "国家"
-      ],
-      [
-        "gang",
-        "小巷"
       ],
       [
         "lancar",
@@ -1530,16 +1514,6 @@
         ""
       ],
       [
-        "mengalami",
-        3,
-        0,
-        "",
-        "2026-10-15T07:29:12.704Z",
-        "经历、遭遇",
-        "alami",
-        ""
-      ],
-      [
         "seharusnya",
         3,
         0,
@@ -1547,16 +1521,6 @@
         "2026-10-09T07:09:02.080Z",
         "本应该、按理说",
         "harus",
-        ""
-      ],
-      [
-        "nyasar",
-        3,
-        0,
-        "",
-        "2026-10-15T08:21:09.562Z",
-        "迷路；走错路",
-        "sasar",
         ""
       ],
       [
@@ -2370,16 +2334,6 @@
         "耐心"
       ],
       [
-        "saran",
-        3,
-        0,
-        "",
-        "2026-10-15T08:20:19.663Z",
-        "建议",
-        "saran",
-        "建议"
-      ],
-      [
         "masa sih",
         2,
         0,
@@ -3110,6 +3064,36 @@
         "亮；燃着"
       ],
       [
+        "perbaiki",
+        2,
+        0,
+        "",
+        "2026-10-15T08:09:44.734Z",
+        "修理；改进",
+        "baik",
+        "好"
+      ],
+      [
+        "rahasia",
+        2,
+        0,
+        "",
+        "2026-10-15T08:10:48.600Z",
+        "秘密；机密",
+        "rahasia",
+        "秘密"
+      ],
+      [
+        "asalkan",
+        2,
+        0,
+        "",
+        "2026-10-15T13:48:13.895Z",
+        "只要；前提是",
+        "asal",
+        "只要；来源"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3208,106 +3192,6 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
-      ],
-      [
-        "ramping",
-        2,
-        0,
-        "",
-        "",
-        "苗条的；（物体）纤细、修长的",
-        "",
-        ""
-      ],
-      [
-        "keriting",
-        2,
-        0,
-        "",
-        "",
-        "卷曲的（头发很卷）",
-        "",
-        ""
-      ],
-      [
-        "uban",
-        2,
-        0,
-        "",
-        "",
-        "白头发",
-        "",
-        ""
-      ],
-      [
-        "jenggot",
-        2,
-        0,
-        "",
-        "",
-        "胡须（下巴上的胡子）",
-        "",
-        ""
-      ],
-      [
-        "kanak-kanak",
-        2,
-        0,
-        "",
-        "",
-        "幼儿；孩童（多用在固定说法里）",
-        "kanak",
-        "孩子（只用在重叠形式里）"
-      ],
-      [
-        "remaja",
-        2,
-        0,
-        "",
-        "",
-        "青少年；少年时期（十几岁）",
-        "",
-        ""
-      ],
-      [
-        "sandal jepit",
-        2,
-        0,
-        "",
-        "",
-        "人字拖",
-        "jepit",
-        "夹"
-      ],
-      [
-        "piyama",
-        2,
-        0,
-        "",
-        "",
-        "（成套的）睡衣",
-        "",
-        ""
-      ],
-      [
-        "gelang",
-        2,
-        0,
-        "",
-        "",
-        "手镯；手链",
-        "",
-        ""
-      ],
-      [
-        "kalung",
-        2,
-        0,
-        "",
-        "",
-        "项链",
-        "",
-        ""
       ]
     ],
     "focus": [
@@ -3612,14 +3496,6 @@
         "fuzzy"
       ],
       [
-        "memperhatikan",
-        "通用",
-        "merhatiin",
-        "perhati",
-        739,
-        "fuzzy"
-      ],
-      [
         "mengukur",
         "通用",
         "ngukur",
@@ -3662,45 +3538,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-11",
-      "session": "am",
-      "review_core": [
-        "nanti dulu",
-        "nombok",
-        "kebiasaan",
-        "melanjutkan",
-        "mencapai"
-      ],
-      "new_words": [
-        "sambil",
-        "seberapa",
-        "bawahan",
-        "pecat",
-        "berguna",
-        "ucapan",
-        "curi",
-        "asyik",
-        "berjalan-jalan",
-        "gosok gigi"
-      ]
-    },
-    {
-      "date": "2026-10-11",
-      "session": "pm",
-      "review_core": [
-        "dengan demikian",
-        "sial",
-        "memerlukan",
-        "mengirim",
-        "menyiapkan"
-      ],
-      "new_words": [
-        "tetangga",
-        "berjanji",
-        "bocor"
-      ]
-    },
     {
       "date": "2026-10-12",
       "session": "am",
@@ -3959,105 +3796,42 @@
         "gelang",
         "kalung"
       ]
+    },
+    {
+      "date": "2026-10-18",
+      "session": "pm",
+      "review_core": [
+        "melelahkan",
+        "menyarankan",
+        "saran",
+        "mengalami",
+        "nyasar"
+      ],
+      "new_words": [
+        "gang",
+        "memperhatikan",
+        "ditipu",
+        "menoleh"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-17",
+    "date": "2026-10-18",
     "new_words": [
-      "melindungi",
-      "membingungkan",
-      "longsor"
+      "gang",
+      "memperhatikan",
+      "ditipu",
+      "menoleh"
     ],
     "review_core": [
-      "mematuhi",
-      "mengabaikan",
-      "kenalan",
-      "mengenal",
-      "memperkirakan"
+      "melelahkan",
+      "menyarankan",
+      "saran",
+      "mengalami",
+      "nyasar"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-18",
-    "vocab": [
-      [
-        "ramping",
-        "苗条的；（物体）纤细、修长的",
-        "slim; slender",
-        "",
-        ""
-      ],
-      [
-        "keriting",
-        "卷曲的（头发很卷）",
-        "curly (hair)",
-        "",
-        ""
-      ],
-      [
-        "uban",
-        "白头发",
-        "gray hair; white hair",
-        "",
-        ""
-      ],
-      [
-        "jenggot",
-        "胡须（下巴上的胡子）",
-        "beard",
-        "",
-        ""
-      ],
-      [
-        "kanak-kanak",
-        "幼儿；孩童（多用在固定说法里）",
-        "children; childhood",
-        "kanak",
-        "孩子（只用在重叠形式里）"
-      ],
-      [
-        "remaja",
-        "青少年；少年时期（十几岁）",
-        "teenager; adolescent",
-        "",
-        ""
-      ],
-      [
-        "sandal jepit",
-        "人字拖",
-        "flip-flops",
-        "jepit",
-        "夹"
-      ],
-      [
-        "piyama",
-        "（成套的）睡衣",
-        "pajamas",
-        "",
-        ""
-      ],
-      [
-        "gelang",
-        "手镯；手链",
-        "bracelet; bangle",
-        "",
-        ""
-      ],
-      [
-        "kalung",
-        "项链",
-        "necklace",
-        "",
-        ""
-      ]
-    ],
-    "review_vocab": [
-      "merayakan",
-      "raya",
-      "berisi",
-      "lurus",
-      "memahami"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
