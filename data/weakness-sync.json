@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-18T07:01:50.369Z",
+  "updated_at": "2026-10-18T12:42:34.414Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -4153,9 +4153,9 @@
       "status": "active",
       "updated_at": "2026-10-17T14:22:18.849Z",
       "display": "mematuhi",
-      "cn": "遵守；服从（规定、命令）",
+      "cn": "遵守；服从",
       "root": "patuh",
-      "root_cn": "顺从；守规矩",
+      "root_cn": "顺从；遵守",
       "last_wrong": "2026-10-17T14:22:18.757Z",
       "last_review": "2026-10-17T14:22:18.757Z",
       "source": "课程小测",
@@ -5045,10 +5045,15 @@
     "merayu": {
       "word": "merayu",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:45.095Z",
+      "updated_at": "2026-10-18T12:21:26.293Z",
       "display": "merayu",
+      "cn": "勾引",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-18",
+      "session": "19:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "manual_unknown"
       ],
       "wrong_count": 0,
       "right_streak": 0
@@ -6019,8 +6024,9 @@
     "peta": {
       "word": "peta",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:46.391Z",
+      "updated_at": "2026-10-18T12:18:06.156Z",
       "display": "peta",
+      "cn": "地图",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -7684,14 +7690,22 @@
     "saran": {
       "word": "saran",
       "status": "active",
-      "updated_at": "2026-10-15T08:20:19.690Z",
+      "updated_at": "2026-10-18T12:42:20.864Z",
       "display": "saran",
-      "last_review": "2026-10-15T08:20:19.663Z",
+      "cn": "建议；意见（名词）",
+      "root": "saran",
+      "root_cn": "建议",
+      "last_wrong": "2026-10-18T12:42:20.767Z",
+      "last_review": "2026-10-18T12:42:20.767Z",
+      "source": "课程小测",
+      "source_date": "2026-10-18",
+      "session": "18:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 4
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "jembatan": {
       "word": "jembatan",
@@ -29480,6 +29494,7 @@
       "root": "susah",
       "root_cn": "困难；麻烦",
       "last_wrong": "2026-10-08T08:58:24.065Z",
+      "last_review": "2026-10-12T12:45:16.093Z",
       "reasons": [
         "quick_wrong"
       ],
