@@ -46,20 +46,25 @@
   const RANK={fail:0,slow:1,'':2,fast:3};
 
   // Picks are frozen per lesson so a refresh shows the same words with their answers.
+  // 2026-10-18: words named in a lesson's 今天的重点 (remembered by history-v2.js) are asked first. Ordering only: the
+  // eligibility filters (mastered, practised today, recalled since yesterday) and first-attempt-wins are unchanged.
+  function focusSet(){try{const l=(JSON.parse(localStorage.getItem('indo_lesson_focus_v1')||'{}').lessons)||{};return new Set(Object.values(l).flatMap(x=>Array.isArray(x&&x.words)?x.words:[]).map(norm));}catch(e){return new Set();}}
   function select(date,session,now=Date.now()){
     const state=load(),id=date+'-'+session;
     if(state.lessons[id]&&Array.isArray(state.lessons[id].words))return state.lessons[id].words.slice();
     const mastered=masteredSet(),yesterday=shift(date,-1);
     const ok=x=>!mastered.has(norm(x.word))&&!practicedToday(x.word,now);
     const main=taughtOn(yesterday,session).filter(ok);
-    let words=main.map(x=>({word:x.word,cn:x.cn,group:'yesterday'}));
+    const focus=focusSet(),fo=w=>focus.has(norm(w))?0:1;
+    let words=main.map(x=>({word:x.word,cn:x.cn,group:'yesterday'})).sort((a,b)=>fo(a.word)-fo(b.word));
     if(session==='pm'){
       const taken=new Set(words.map(x=>norm(x.word))),pool=[],seen=new Set();
       (root.DAILY_VOCAB_DB||[]).forEach(x=>{const k=norm(x&&x.word),f=String(x&&x.first_seen||'').slice(0,10);if(!k||!x.cn||seen.has(k)||taken.has(k)||!/^\d{4}-\d{2}-\d{2}$/.test(f))return;seen.add(k);
         const age=diff(f,date);if(age<2||age>30||!ok(x)||autoChecked(x.word,now))return;
         const r=state.words[k];if(r&&r.day>=yesterday)return; // recalled at the previous lesson end or earlier today
         pool.push({word:x.word,cn:x.cn,age,prev:r&&r.result||''});});
-      const sort=(a,b)=>(RANK[a.prev]-RANK[b.prev])||(b.age-a.age)||a.word.localeCompare(b.word);
+      const rank=x=>RANK[x.prev]-(focus.has(norm(x.word))?0.5:0); // a focus word comes right after earlier misses
+      const sort=(a,b)=>(rank(a)-rank(b))||(b.age-a.age)||a.word.localeCompare(b.word);
       const g=[pool.filter(x=>x.age<=7).sort(sort),pool.filter(x=>x.age>7).sort(sort)];
       const n=Math.max(2,Math.min(3,7-words.length)),take=[Math.min(g[0].length,n-1),Math.min(g[1].length,1)];
       let left=n-take[0]-take[1];for(let i=0;i<2&&left>0;i++){const more=Math.min(left,g[i].length-take[i]);take[i]+=more;left-=more;}

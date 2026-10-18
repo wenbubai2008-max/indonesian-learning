@@ -100,6 +100,10 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
 - **quiz**：恰好 3 题，每题 question、options（建议 4 个）、answer_index（从 0 开始）、answer（必须等于 options[answer_index]）、explain。至少一题的正确答案是真实的 review_vocab 词（题干写“复习”两字不算）；题干不得泄露答案；不得照搬 PM 的 prompt/fill/order 结构。
 - **output**：task、reference_answer、reference_cn，用至少 2 个本课重点词的真实交流任务。
 - **review**：恰好 3 个非空字符串（3 秒主动提取、易混词或搭配、重点复习词的实际应用），不是晚课的 `{title, steps}`。
+- **lesson_focus**（今天的重点，2026-10-18 用户决定；**2026-10-19 起每节必填**）：**不新增任何词或任务**，只是从本课已有内容里标出最值得掌握的部分（不是多学五项）。格式 `{"words":[3 个词],"patterns":[2 个 {pattern, cn, example, example_cn}]}`：
+  - words：恰好 3 个，必须是本课的词（vocab / review_vocab / cycle_vocab），优先选实用、容易忘、值得主动说出口的词。
+  - patterns：恰好 2 个句型。pattern 用 `…` 标出可替换的部分（如 `Waktu masih …, …`），cn 是句型的中文意思；example 必须**逐字取自本课**（sentences、reading、词卡例句或 output 参考答案），example_cn 是它的中文。
+  - 校验器检查：`LESSON_FOCUS_MISSING`（缺字段）、`LESSON_FOCUS_INVALID`（数量或字段不对）、`LESSON_FOCUS_WORD`（词不是本课的）、`LESSON_FOCUS_PATTERN`（例句不在本课里）。按报错改正，不得为此改动选词、题目或其他内容。
 - **review_cards**（2026-10-16 用户决定；可选但每节都要写）：上面 3 段复习的结构化版本，网页据此显示可点开的提取卡片、对比块和例句。**内容与 review 三段一致，不新增词、不加量**；review 三段照常写。格式：
   - `recall`：4–12 个 `{cn, id}`——cn 是中文提示，id 是印尼语答案，**必须是本课 vocab / review_vocab / cycle_vocab 里的词**（校验器检查）。
   - `frames`（可选）：最多 6 个补半句的印尼语字符串，例如 `"Masukin …, mau hujan!"`。

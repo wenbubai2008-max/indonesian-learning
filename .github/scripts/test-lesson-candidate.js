@@ -19,6 +19,17 @@ const runTests=function runTests(validate){
  }
  let count=0;const ok=(name,input)=>{const r=validate(input);if(!r.ok)throw Error(name+" valid failed "+JSON.stringify(r.errors));count++};const bad=(name,input,code)=>{const r=validate(input);if(r.ok||!r.errors.some(x=>x.code===code))throw Error(name+" expected "+code+" got "+JSON.stringify(r.errors));count++};
  ok("normal AM",AM());ok("normal PM",PM());
+ // 2026-10-18: lesson_focus — required from FOCUS_REQUIRED_FROM (fixtures predate it unless focusRequiredFrom is set).
+ {const fAM=x=>({words:x.lesson.vocab.slice(0,3).map(v=>v.word),patterns:[0,1].map(i=>({pattern:"Saya … hari ini",cn:"我……今天",example:x.lesson.sentences[i].text,example_cn:x.lesson.sentences[i].cn}))});
+  const fPM=x=>({words:x.lesson.new_words.slice(0,3),patterns:[0,1].map(i=>({pattern:"…",cn:"对话",example:x.lesson.dialogue.lines[i].id,example_cn:x.lesson.dialogue.lines[i].cn||"中文"}))});
+  ok("old lesson without lesson_focus stays valid",AM());
+  {const x=AM();x.focusRequiredFrom=x.expectedDate;bad("AM after the cutoff needs lesson_focus",x,"LESSON_FOCUS_MISSING");}
+  {const x=AM();x.focusRequiredFrom=x.expectedDate;x.lesson.lesson_focus=fAM(x);ok("AM with lesson_focus from its own words and sentences",x);}
+  {const x=PM();x.focusRequiredFrom=x.expectedDate;x.lesson.lesson_focus=fPM(x);ok("PM with lesson_focus from its own words and dialogue",x);}
+  {const x=AM();x.lesson.lesson_focus=fAM(x);x.lesson.lesson_focus.words[0]="belum diajar";bad("focus word must be a lesson word",x,"LESSON_FOCUS_WORD");}
+  {const x=AM();x.lesson.lesson_focus=fAM(x);x.lesson.lesson_focus.patterns[0].example="Kalimat ini tidak ada di pelajaran.";bad("pattern example must be copied from the lesson",x,"LESSON_FOCUS_PATTERN");}
+  {const x=AM();x.lesson.lesson_focus=fAM(x);x.lesson.lesson_focus.words.pop();bad("exactly 3 focus words",x,"LESSON_FOCUS_INVALID");}
+  {const x=PM();x.lesson.lesson_focus=fPM(x);x.lesson.lesson_focus.patterns.pop();bad("exactly 2 patterns",x,"LESSON_FOCUS_INVALID");}}
  // 2026-10-16: optional review_cards.
  {const cards=()=>({recall:[0,1,2,3].map(i=>({cn:"中文"+i,id:"new"+i})),frames:["Saya … hari ini."],contrasts:[{items:[{id:"new0",cn:"甲"},{id:"rev0",cn:"乙"}],note:"区别"}],apply:[{word:"rev0",usage:"用法",examples:[{id:"Saya pakai rev0.",cn:"我用。"}]}]});
   const x=AM();x.lesson.review_cards=cards();ok("AM with review_cards",x);

@@ -511,3 +511,11 @@
 
 - 以前早课标题只有印尼语、晚课标题多是中文。现在两课都写成 `时间 早课/晚课｜印尼语标题 · 中文标题`（`docs/tasks/AM-LESSON.md` §5、`PM-LESSON.md` 根字段说明）。仍以时间开头，校验器 `TITLE_INVALID` 规则不变；旧课标题不改。
 - 守卫：两份说明书必须保留“标题双语 / 印尼语标题 · 中文标题”标记。
+
+## 31. 2026-10-18 今天的重点 `lesson_focus`（用户确认的带学方案第 1 步）
+
+- **课程数据**：早晚课新增根字段 `lesson_focus = {words: 3 个本课的词, patterns: 2 个 {pattern, cn, example, example_cn}}`，example 逐字取自本课（早课：sentences / reading / 词卡例句 / output 参考答案；晚课：reading / dialogue / 词卡例句 / rewrite 参考答案）。**2026-10-19 起必填**；之前的课没有这个字段也照常有效，不批量修改历史 JSON。不新增词、不改新词数量、词池、复习名额和题目。
+- **校验**：`validate-lesson-candidate.js`：`LESSON_FOCUS_MISSING` / `INVALID` / `WORD` / `PATTERN`。停用的 V4 预演也机械地生成 lesson_focus，CI 预演保持可用。
+- **网页**（`history-v2.js`）：有 lesson_focus 时课程顶部显示“今天的重点”卡片；词卡上重点词加小“重点”标签；句子、课文、对话里出现的重点例句用浅色标出。没有字段的课程完全照旧。
+- **回想排序**：渲染课程时把重点词存到 `indo_lesson_focus_v1`（本机）；第二天课末回想里重点词排在前面（积压词里排在“上次没想起来”之后）。资格规则（已掌握、当天练过、昨天以来回想过）和“每词每天第一次作答为准”不变，不会多加词。
+- **守卫 / 测试**：§31 代码检查（基线树跳过）、AM/PM 说明书标记；`test-lesson-candidate.js` +8 项，`test-lesson-end-recall.js` 新增重点排序一组。
