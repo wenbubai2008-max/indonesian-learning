@@ -697,6 +697,7 @@ try {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
     const hv=read('data/history-v2.js');
     okNew(/function vcCard\(v,i,list,fo\)/.test(hv)&&hv.includes('class="dailyFixGrid vcGrid"')&&hv.includes('.vcCard .vcDetail[hidden]{display:none}')&&hv.includes('class="dailyFixMeta vcRoot"'),'word cards: folded details, root line keeps .dailyFixMeta for the PM application tag');
+    okNew(hv.includes('<div class="vcDetail" hidden>')&&!hv.includes("${fo?'':' hidden'}"),'word cards: every card starts folded, focus words too (2026-10-18 user request)');
     okNew(hv.includes("$('dailyBody').innerHTML=h;setTimeout(vcEvenRows,0);")&&/function vcEvenRows\(\)/.test(hv),'collapsed word cards in one row share a height; opened cards grow on their own');
   }
 

@@ -119,7 +119,7 @@
   function lfMarkText(html,f,x){if(!f)return html;f.patterns.forEach(p=>{const e=esc2(displayText(p.example,x.vocab));if(e&&html.includes(e))html=html.replace(e,'<mark class="lfMark">'+e+'</mark>')});return html}
   // 2026-10-18 (user-approved): word cards. Head (word + sound / meaning / English), the example right under it, the root
   // on one line; collocations, word family, contrast, colloquial forms and usage are split by the labels the lesson text
-  // already uses and stay folded until 展开 (today's focus words open). Text is never rewritten; unlabelled sentences
+  // already uses and stay folded until 展开 — every card, focus words too (2026-10-18 user request: all cards start folded; focus only adds the 重点 badge). Text is never rewritten; unlabelled sentences
   // go to 补充. Collapsed cards in one row share a height; an opened card grows on its own.
   // Split at 。 (or ". " before Chinese) only outside brackets, so "（包裹送错到邻居家了。）" stays whole.
   function vcSentences(t){const s=String(t||''),out=[];let d=0,cur='',inner=false;for(let i=0;i<s.length;i++){const ch=s[i];
@@ -161,7 +161,7 @@
     const root=(v.root||p.build)?`<div class="dailyFixMeta vcRoot"><span class="vcTag">词根</span>${v.root?`<b>${esc2(v.root)}</b>${v.root_cn?`<span>${esc2(v.root_cn)}</span>`:''}`:''}${p.build?`<span>·</span><span>${vcI(p.build)}</span>`:''}</div>`:'';
     return `<div class="dailyFixVocab vcCard${fo?' lfVocab':''}"><div class="vcHead"><div class="vcRow"><span class="vcNum">${esc2(v.order??(i+1))}.</span><span class="vcWord">${esc2(v.display||v.word)}</span>${say(v.audio_text||v.word)}${fo?'<span class="lfBadge">重点</span>':''}</div>${v.cn?`<div class="vcCn">${esc2(v.cn)}</div>`:''}${v.en?`<div class="vcEn">${esc2(v.en)}</div>`:''}</div>`+
       (v.example?`<div class="vcEx"><div class="vcExId">${esc2(displayText(v.example,list))} ${say(v.example)}</div>${v.example_cn?`<div class="vcExCn">${esc2(v.example_cn)}</div>`:''}</div>`:'')+root+
-      (detail?`<button type="button" class="vcMore" data-vc-more>${fo?'收起 ▲':'展开 搭配 · 同词根 · 辨析 · 用法 ▼'}</button><div class="vcDetail"${fo?'':' hidden'}>${detail}</div>`:'')+`</div>`;
+      (detail?`<button type="button" class="vcMore" data-vc-more>展开 搭配 · 同词根 · 辨析 · 用法 ▼</button><div class="vcDetail" hidden>${detail}</div>`:'')+`</div>`;
   }
   function vcEvenRows(){const grids=document.querySelectorAll('#dailyBody .vcGrid');grids.forEach(g=>{const cards=[...g.children];cards.forEach(c=>c.style.minHeight='');const rows={};cards.forEach(c=>{(rows[c.offsetTop]=rows[c.offsetTop]||[]).push(c)});
     Object.values(rows).forEach(r=>{if(r.length<2||r.some(c=>{const d=c.querySelector('.vcDetail');return d&&!d.hidden}))return;const h=Math.max(...r.map(c=>c.offsetHeight));r.forEach(c=>c.style.minHeight=h+'px')})})}
