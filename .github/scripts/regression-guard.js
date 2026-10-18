@@ -684,6 +684,14 @@ try {
     ok(/\['week','本周'\]/.test(ui)&&ui.includes('weeklyHTML()'),'profile 本周 tab shows the weekly report');
   }
 
+  // 2026-10-18 (REGRESSION-GUARD §33): 带学模式 — a view over the lesson's own content; own progress key only.
+  {
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const gl=fs.existsSync(rel('data/guided-lesson.js'))?read('data/guided-lesson.js'):'',hv=read('data/history-v2.js');
+    okNew(gl.includes("const KEY='indo_guided_lesson_v1'")&&/function buildSteps\(x,am\)/.test(gl)&&!/recordLessonWrong|markAnswer|indo_lesson_recall_v1|indo_automation_training_state_v1|indo_quick_practice_state|markMastered/.test(gl),'guided mode builds steps from the lesson and writes only its own progress');
+    okNew(hv.includes('data-guided-start=')&&indexHtml.includes('data/guided-lesson.js?v='),'guided mode starts from the 今天的重点 card; the full page stays');
+  }
+
   // 2026-10-18 (REGRESSION-GUARD §32): word cards — example first, root on one line, details folded, display only.
   {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
