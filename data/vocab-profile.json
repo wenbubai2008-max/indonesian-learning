@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-10-18T14:00:45.310Z",
-  "source_updated_at": "2026-10-18T12:42:34.414Z",
+  "generated_at": "2026-10-18T23:40:43.299Z",
+  "source_updated_at": "2026-10-18T16:58:46.770Z",
   "taught_total": 838,
   "confirmed_mastered": 228,
   "needs_reinforcement": 563,
@@ -15,6 +15,19 @@
   "focus_total": 548,
   "focus_words": [
     {
+      "word": "seolah-olah",
+      "score": 106,
+      "signals": [
+        "quick_wrong",
+        "lesson_wrong",
+        "dont"
+      ],
+      "wrong_count": 3,
+      "last_wrong": "2026-10-18T16:57:30.914Z",
+      "last_review": "2026-10-18T16:57:30.914Z",
+      "cn": "仿佛；好像"
+    },
+    {
       "word": "mematuhi",
       "score": 106,
       "signals": [
@@ -26,19 +39,6 @@
       "last_wrong": "2026-10-17T14:22:18.757Z",
       "last_review": "2026-10-17T14:22:18.757Z",
       "cn": "遵守；服从"
-    },
-    {
-      "word": "seolah-olah",
-      "score": 104,
-      "signals": [
-        "quick_wrong",
-        "lesson_wrong",
-        "dont"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-10-16T15:53:19.681Z",
-      "last_review": "2026-10-16T15:53:19.681Z",
-      "cn": "仿佛；好像"
     },
     {
       "word": "menunjukkan",
