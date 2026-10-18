@@ -1,0 +1,349 @@
+{
+  "date": "2026-10-18",
+  "session": "am",
+  "time": "08:00",
+  "day": 58,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Album Foto Lama di Hari Raya · 节日里翻看老相册",
+  "new_words": [
+    "ramping",
+    "keriting",
+    "uban",
+    "jenggot",
+    "kanak-kanak",
+    "remaja",
+    "sandal jepit",
+    "piyama",
+    "gelang",
+    "kalung"
+  ],
+  "vocab": [
+    {
+      "word": "ramping",
+      "display": "ramping",
+      "audio_text": "ramping",
+      "cn": "苗条的；（物体）纤细、修长的",
+      "en": "slim; slender",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词，是夸奖身材的褒义词。常见搭配：tubuhnya ramping（身材苗条）、dia ramping（他/她很苗条）、pinggang ramping（细腰）。也能说东西：desain HP yang ramping（纤薄的手机设计）。",
+      "example": "Dulu tubuh Tante Lia ramping sekali. Sekarang, setelah punya dua anak, tubuhnya lebih berisi.",
+      "example_cn": "以前莉亚阿姨身材特别苗条。现在生了两个孩子以后，身材丰满了一些。",
+      "synonym_note": "ramping 和 langsing 都是“苗条”，是夸人的话；langsing 多说女性身材，减肥广告常说 ingin langsing（想变苗条）。kurus 只是“瘦”，可能带“太瘦了”的担心（Kamu kurus banget, sakit, ya?）。反义 gemuk（胖）；委婉地说别人胖了，常说 tubuhnya lebih berisi。",
+      "is_oral_new": false
+    },
+    {
+      "word": "keriting",
+      "display": "keriting",
+      "audio_text": "keriting",
+      "cn": "卷曲的（头发很卷）",
+      "en": "curly (hair)",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词。最常见搭配：rambut keriting（卷发）、rambutnya keriting（他的头发是卷的）。也用在食物上：mi keriting（卷面，方便面那种弯弯的面）。派生：mengeriting rambut（烫卷头发）。",
+      "example": "Rambut Dina keriting. Dia pernah mencoba meluruskannya di salon, tapi gagal: seminggu kemudian rambutnya keriting lagi.",
+      "example_cn": "迪娜的头发是卷的。她曾经在美发店试过把头发拉直，但是失败了：一个星期后头发又卷回来了。",
+      "synonym_note": "keriting 是卷得比较紧的小卷；ikal 是大波浪、微卷（rambut ikal）。反义是复习词 lurus（直的）：rambut lurus（直发）。把头发拉直叫 meluruskan rambut。",
+      "is_oral_new": false
+    },
+    {
+      "word": "uban",
+      "display": "uban",
+      "audio_text": "uban",
+      "cn": "白头发",
+      "en": "gray hair; white hair",
+      "root": "",
+      "root_cn": "",
+      "formation": "名词，本身就是“白头发”。常见搭配：ada uban（有白头发）、rambutnya penuh uban（满头白发）、mencabut uban（拔白头发）。派生：beruban（长白头发、头发花白：Ayah mulai beruban.）。",
+      "example": "Waktu bercermin, Ibu menemukan sehelai uban, lalu langsung mencabutnya.",
+      "example_cn": "妈妈照镜子的时候发现了一根白头发，马上就把它拔掉了。",
+      "synonym_note": "uban 是名词，所以说 ada uban / banyak uban；形容人头发花白用动词 beruban，或直接说 rambutnya putih。口语说法：ubanan（Ayah udah ubanan.），聊天常用；书面叙述用 beruban。",
+      "is_oral_new": false
+    },
+    {
+      "word": "jenggot",
+      "display": "jenggot",
+      "audio_text": "jenggot",
+      "cn": "胡须（下巴上的胡子）",
+      "en": "beard",
+      "root": "",
+      "root_cn": "",
+      "formation": "名词，专指下巴上的胡子。常见搭配：mencukur jenggot（刮胡子）、memelihara jenggot（留胡子）、jenggot panjang（长胡子）。派生：berjenggot（留着胡子的：Kakek berjenggot putih.）。",
+      "example": "Sebelum wawancara kerja, Mas Dimas mencukur jenggotnya supaya kelihatan rapi.",
+      "example_cn": "求职面试前，迪马斯哥把胡子刮了，好让自己看起来整洁。",
+      "synonym_note": "jenggot 在下巴；昨天学的 kumis 是上唇的小胡子；两鬓到脸颊的胡子叫 cambang；连成一片的络腮胡口语叫 brewok（Om Rudi brewokan.）。说“胡子刮了”要分清：cukur kumis 是刮上唇的，cukur jenggot 是刮下巴的。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kanak-kanak",
+      "display": "kanak-kanak",
+      "audio_text": "kanak-kanak",
+      "cn": "幼儿；孩童（多用在固定说法里）",
+      "en": "children; childhood",
+      "root": "kanak",
+      "root_cn": "孩子（只用在重叠形式里）",
+      "formation": "重叠词 kanak-kanak，指年纪很小的孩子。最常见的两个固定说法：taman kanak-kanak（幼儿园，缩写 TK）、masa kanak-kanak（童年时期）。也说 waktu masih kanak-kanak（还是小孩子的时候）。",
+      "example": "Adik saya masih sekolah di taman kanak-kanak, jadi jam sepuluh pagi dia sudah pulang.",
+      "example_cn": "我弟弟还在上幼儿园，所以上午十点他就已经放学回家了。",
+      "synonym_note": "kanak-kanak 偏书面，多出现在 taman kanak-kanak、masa kanak-kanak 这些固定说法里；日常说“孩子们”用 anak-anak，说“小孩”用 anak kecil。口语说法：说“我小时候”一般说 waktu kecil / pas kecil（Pas kecil aku tinggal di Bandung.），很少说 waktu kanak-kanak。",
+      "is_oral_new": false
+    },
+    {
+      "word": "remaja",
+      "display": "remaja",
+      "audio_text": "remaja",
+      "cn": "青少年；少年时期（十几岁）",
+      "en": "teenager; adolescent",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词，可作名词也可修饰名词。常见搭配：masa remaja（青春期、少年时代）、waktu masih remaja（还是少年的时候）、anak remaja（十几岁的孩子）、kalangan remaja（青少年群体）。",
+      "example": "Kehidupan remaja sekarang sangat berbeda dengan zaman orang tua kita dulu.",
+      "example_cn": "现在青少年的生活和我们父母那个年代很不一样。",
+      "synonym_note": "remaja 指十几岁到二十岁左右；anak muda 是“年轻人”，范围更宽，二十多岁也算；pemuda 偏正式，常见于组织、口号。口语说法：说十几岁的孩子常说 ABG（anak baru gede，略带调侃：Dia masih ABG.），正式场合用 remaja。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sandal jepit",
+      "display": "sandal jepit",
+      "audio_text": "sandal jepit",
+      "cn": "人字拖",
+      "en": "flip-flops",
+      "root": "jepit",
+      "root_cn": "夹",
+      "formation": "sandal（凉鞋、拖鞋）+ jepit（夹）→ 夹在脚趾间的拖鞋。常见搭配：pakai sandal jepit（穿人字拖）、sandal jepitnya putus（人字拖的带子断了）。同一个 jepit 还有：jepit rambut（发夹）、terjepit（被夹住）。",
+      "example": "Kalau cuma ke warung depan, pakai sandal jepit aja.",
+      "example_cn": "要是只去门口的小店，穿人字拖就行了。（cuma = hanya，aja = saja）",
+      "synonym_note": "sandal 是凉鞋、拖鞋的统称，sandal jepit 专指人字拖；sepatu 是包脚的鞋。去办公室、学校或正式场合穿 sandal jepit 被认为不礼貌（kurang sopan）。口语说法：很多人说成 sendal jepit，书面写 sandal jepit。",
+      "is_oral_new": false
+    },
+    {
+      "word": "piyama",
+      "display": "piyama",
+      "audio_text": "piyama",
+      "cn": "（成套的）睡衣",
+      "en": "pajamas",
+      "root": "",
+      "root_cn": "",
+      "formation": "外来词（英语 pajamas）。常见搭配：memakai piyama / pakai piyama（穿睡衣）、ganti piyama（换睡衣）、piyama bergambar …（印着……图案的睡衣）、sepasang piyama（一套睡衣）。",
+      "example": "Hari Minggu, anak-anak masih memakai piyama sampai jam sembilan pagi.",
+      "example_cn": "星期天，孩子们穿着睡衣一直到上午九点。",
+      "synonym_note": "piyama 指上衣加裤子的成套睡衣；baju tidur 是“睡觉穿的衣服”的统称，日常更常说；daster 是女性在家穿的宽松连衣裙。口语说法：日常多说 baju tidur（Ganti baju tidur dulu, ya!），piyama 多用在买衣服、描述款式时。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gelang",
+      "display": "gelang",
+      "audio_text": "gelang",
+      "cn": "手镯；手链",
+      "en": "bracelet; bangle",
+      "root": "",
+      "root_cn": "",
+      "formation": "名词。常见搭配：gelang emas（金手镯）、memakai gelang（戴手镯）、gelang tangan（手镯，强调戴在手上）、gelang kaki（脚链）。注意“戴”首饰用 memakai / pakai，不用 membawa。",
+      "example": "Gelang emas ini hadiah dari Nenek waktu saya lulus kuliah.",
+      "example_cn": "这只金手镯是我大学毕业时奶奶送的礼物。",
+      "synonym_note": "首饰按位置分：gelang（手腕）、kalung（脖子）、cincin（手指）、anting（耳朵）。gelang 硬的、软的都能说：手镯、手链都叫 gelang。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kalung",
+      "display": "kalung",
+      "audio_text": "kalung",
+      "cn": "项链",
+      "en": "necklace",
+      "root": "",
+      "root_cn": "",
+      "formation": "名词。常见搭配：kalung emas（金项链）、kalung mutiara（珍珠项链）、memakai kalung（戴项链）、melepas kalung（摘项链）。项链上的吊坠叫 liontin。",
+      "example": "Waduh, kalungku nyangkut di rambut. Tolong bantu lepasin, dong.",
+      "example_cn": "哎呀，我的项链缠在头发上了。帮我解一下嘛。（nyangkut = tersangkut，lepasin = melepaskan）",
+      "synonym_note": "kalung 戴在脖子上，gelang 戴在手腕上，别混。同一个 kalung 还能作动词 mengalungkan（把东西挂到别人脖子上），比如给获奖者 mengalungkan medali（挂奖牌）。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "merayakan",
+    "raya",
+    "berisi",
+    "lurus",
+    "memahami"
+  ],
+  "sentences": [
+    {
+      "text": "Waktu masih remaja, Om Rudi sering ketahuan pulang larut malam karena lupa mengunci pagar lagi.",
+      "cn": "鲁迪叔叔十几岁的时候，常常因为忘了把大门重新锁上，被发现很晚才回家。"
+    },
+    {
+      "text": "Ma, piyamaku yang gambar bintang di mana? Aku udah bolak-balik nyari, nggak ketemu juga.",
+      "cn": "妈，我那件印星星的睡衣在哪儿？我来来回回找了好几遍，还是没找到。（piyamaku = piyama saya，udah = sudah，nyari = mencari，nggak = tidak，ketemu = ditemukan）"
+    },
+    {
+      "text": "Meskipun rambutnya sudah penuh uban, Kakek masih rajin merapikan jenggotnya setiap pagi.",
+      "cn": "虽然头发已经全白了，爷爷还是每天早上认真地修整胡子。"
+    },
+    {
+      "text": "Sebaiknya pakai sandal jepit saja, karena acaranya di pinggir kolam renang.",
+      "cn": "最好就穿人字拖，因为活动在游泳池边上。"
+    },
+    {
+      "text": "Untuk merayakan ulang tahun pernikahan mereka, Ayah memberi Ibu kalung dan gelang dengan model yang sama. Ibu terkejut sekali.",
+      "cn": "为了庆祝结婚纪念日，爸爸送了妈妈一条项链和一只同款的手镯。妈妈非常意外。"
+    }
+  ],
+  "reading": {
+    "text": "Waktu merayakan Hari Raya tahun ini, keluarga besar kami berkunjung ke rumah Nenek. Setelah makan siang, Nenek membuka sebuah album tua yang berisi foto-foto keluarga. Di salah satu foto, Ayah masih remaja. Tubuhnya ramping, rambutnya keriting, dan ia memakai sandal jepit. Kami terkejut, karena sekarang tubuh Ayah lebih berisi dan rambutnya sudah penuh uban. Ada juga foto Ibu waktu masih kanak-kanak. Rambutnya lurus, dan ia memakai piyama bergambar bintang. Di foto pernikahan, jenggot Kakek masih hitam dan panjang, sedangkan Nenek memakai kalung dan gelang emas. Sampai sekarang, gelang itu masih Nenek simpan. Dari foto-foto itu, kami jadi lebih memahami sejarah keluarga kami.",
+    "cn": "今年过开斋节的时候，我们一大家子去奶奶家拜访。吃完午饭，奶奶打开一本旧相册，里面都是家里的老照片。其中一张照片里，爸爸还是个十几岁的少年。他身材苗条，头发是卷的，脚上穿着人字拖。我们都吃了一惊，因为现在爸爸的身材丰满了不少，头发也已经全白了。还有一张是妈妈小时候的照片。她留着直发，穿着一套印着星星的睡衣。在结婚照里，爷爷的胡子还是黑的，留得很长，奶奶则戴着金项链和金手镯。那只手镯奶奶到现在还收着。看了这些照片，我们对自己家的历史更了解了。"
+  },
+  "quiz": [
+    {
+      "question": "Rambut Rani sama sekali tidak keriting. Rambutnya ___ dan panjang sampai ke punggung.",
+      "options": [
+        "ikal",
+        "lurus",
+        "ramping",
+        "kurus"
+      ],
+      "answer_index": 1,
+      "answer": "lurus",
+      "explain": "“一点都不卷”，那就是直发：rambut lurus（复习词 lurus：直的）。ikal 是大波浪的微卷，仍然是卷，和“一点都不卷”矛盾；ramping（苗条）和 kurus（瘦）是说身材的，不能形容头发。"
+    },
+    {
+      "question": "Tahun ini kami ___ Hari Raya di rumah Nenek di Yogyakarta.",
+      "options": [
+        "perayaan",
+        "dirayakan",
+        "merayakan",
+        "raya"
+      ],
+      "answer_index": 2,
+      "answer": "merayakan",
+      "explain": "主语 kami 后面要一个主动动词“庆祝”：kami merayakan Hari Raya（复习词，同词根 raya）。perayaan 是名词“庆祝活动”，不能直接当谓语；dirayakan 是被动“被庆祝”，要说成 Hari Raya dirayakan di rumah Nenek，主语是节日而不是 kami；raya 是形容词“盛大的”，已经在 Hari Raya 这个固定说法里了。"
+    },
+    {
+      "question": "Kakek tidak punya kumis, tetapi ___-nya putih dan panjang sampai ke dada.",
+      "options": [
+        "uban",
+        "alis",
+        "cambang",
+        "jenggot"
+      ],
+      "answer_index": 3,
+      "answer": "jenggot",
+      "explain": "没有上唇的小胡子（kumis），但有一把长到胸口的白胡子，说的是下巴上的胡须：jenggot。uban 是白头发，长在头上，不会“长到胸口”；alis 是眉毛；cambang 是两鬓到脸颊的鬓角胡子，长在脸侧，垂不到胸口。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语，在家人群聊里介绍一张老照片里的人：他/她当时多大（kanak-kanak 或 remaja）、长什么样、穿戴什么，和现在有什么不同。至少用本课两个新词（如 ramping、keriting、uban、sandal jepit、kalung），并用上复习词 berisi、lurus 或 memahami 中的至少一个。",
+    "reference_answer": "Ini foto Om Rudi waktu masih remaja. Dulu dia ramping, rambutnya keriting, dan ke mana-mana pakai sandal jepit. Sekarang dia lebih berisi dan rambutnya udah mulai ubanan, tapi senyumnya masih sama!",
+    "reference_cn": "这是鲁迪叔叔十几岁时的照片。那时候他身材苗条，头发是卷的，去哪儿都穿着人字拖。现在他身材丰满了些，头发也开始白了，但笑容还是一模一样！（udah = sudah，ubanan = beruban）"
+  },
+  "review": [
+    "3秒主动提取：不看词卡，看中文说印尼语——苗条、卷的（头发）、白头发、下巴上的胡子、幼儿/孩童、青少年、人字拖、睡衣、手镯、项链；再各补半句：“tubuhnya …（苗条）”、“rambutnya …（卷）”、“rambutnya sudah penuh …”、“taman …（幼儿园）”、“waktu masih …（十几岁时）”。",
+    "易混词与搭配：ramping / langsing（苗条，夸人）vs kurus（瘦，可能是担心）；keriting（小卷）vs ikal（大波浪）↔ lurus（直）；uban（名词：白头发）vs beruban（动词：头发变白），口语 ubanan；jenggot（下巴）vs kumis（上唇）vs brewok（络腮胡，口语）；kanak-kanak（固定说法：taman kanak-kanak）vs anak-anak / waktu kecil（日常）；remaja vs anak muda vs ABG（口语）；gelang（手腕）vs kalung（脖子）vs cincin（手指）vs anting（耳朵）；piyama（成套睡衣）vs baju tidur（日常统称）。",
+    "重点复习词应用（同词根一组 raya）：merayakan 是动词“庆祝”——Kami merayakan ulang tahun Nenek di rumah.（我们在家给奶奶庆祝生日。）；raya 是形容词“盛大的、大的”，多用在固定说法里——Hari Raya（开斋节等大节日）、jalan raya（大马路）。再用 berisi、lurus、memahami 各说一句：Album ini berisi foto-foto lama.（这本相册里装的是老照片。）/ Tubuhnya sekarang lebih berisi.（他现在身材丰满些了，委婉地说“胖了”）；Jalan terus lurus, nanti belok kiri.（一直直走，然后左转。）；Saya bisa memahami alasannya.（我能理解他的理由。）"
+  ],
+  "review_cards": {
+    "recall": [
+      { "cn": "苗条的", "id": "ramping" },
+      { "cn": "卷的（头发）", "id": "keriting" },
+      { "cn": "白头发", "id": "uban" },
+      { "cn": "下巴上的胡子", "id": "jenggot" },
+      { "cn": "幼儿；孩童", "id": "kanak-kanak" },
+      { "cn": "青少年", "id": "remaja" },
+      { "cn": "人字拖", "id": "sandal jepit" },
+      { "cn": "睡衣（成套）", "id": "piyama" },
+      { "cn": "手镯；手链", "id": "gelang" },
+      { "cn": "项链", "id": "kalung" },
+      { "cn": "包含；（身材）丰满", "id": "berisi" },
+      { "cn": "直的", "id": "lurus" }
+    ],
+    "frames": [
+      "Tubuhnya … （苗条）",
+      "Rambutnya … （卷）",
+      "Rambutnya sudah penuh …",
+      "Adik saya masih di taman …",
+      "Waktu masih … （十几岁时）"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          { "id": "ramping", "cn": "苗条（夸人）" },
+          { "id": "langsing", "cn": "苗条（多说女性）" },
+          { "id": "kurus", "cn": "瘦（可能是担心）" }
+        ],
+        "note": "夸身材用 ramping / langsing；kurus 只是瘦，常带“太瘦了”的意思。"
+      },
+      {
+        "items": [
+          { "id": "keriting", "cn": "小卷" },
+          { "id": "ikal", "cn": "大波浪、微卷" },
+          { "id": "lurus", "cn": "直" }
+        ],
+        "note": "卷得紧是 keriting，微卷是 ikal，直发是 rambut lurus。"
+      },
+      {
+        "items": [
+          { "id": "uban", "cn": "白头发（名词）" },
+          { "id": "beruban", "cn": "头发变白（动词）" },
+          { "id": "ubanan", "cn": "头发变白（口语）" }
+        ],
+        "note": "说“有白头发”用 ada uban；说人头发花白用 beruban，聊天说 ubanan。"
+      },
+      {
+        "items": [
+          { "id": "jenggot", "cn": "下巴上的胡子" },
+          { "id": "kumis", "cn": "上唇的小胡子" },
+          { "id": "brewok", "cn": "络腮胡（口语）" }
+        ],
+        "note": "按位置分：下巴 jenggot，上唇 kumis，两颊连下巴 brewok。"
+      },
+      {
+        "items": [
+          { "id": "gelang", "cn": "手镯（手腕）" },
+          { "id": "kalung", "cn": "项链（脖子）" },
+          { "id": "cincin", "cn": "戒指（手指）" }
+        ],
+        "note": "首饰按戴的位置分，“戴”都用 pakai / memakai。"
+      },
+      {
+        "items": [
+          { "id": "merayakan", "cn": "庆祝（动词）" },
+          { "id": "raya", "cn": "盛大的（固定说法）" }
+        ],
+        "note": "同词根 raya：动词 merayakan 后面接要庆祝的事；raya 多出现在 Hari Raya、jalan raya 里。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "merayakan / raya",
+        "usage": "merayakan 接节日、生日、纪念日；raya 不单独用，多在固定说法里。",
+        "examples": [
+          { "id": "Kami merayakan ulang tahun Nenek di rumah.", "cn": "我们在家给奶奶庆祝生日。" },
+          { "id": "Hati-hati, jalan raya di depan sekolah selalu ramai.", "cn": "小心，学校前面的大马路总是车很多。" }
+        ]
+      },
+      {
+        "word": "berisi",
+        "usage": "“装着、包含”后面直接接内容；说身材时是“胖了”的委婉说法。",
+        "examples": [
+          { "id": "Album ini berisi foto-foto lama.", "cn": "这本相册里装的是老照片。" },
+          { "id": "Tubuhnya sekarang lebih berisi.", "cn": "他现在身材丰满些了。" }
+        ]
+      },
+      {
+        "word": "lurus",
+        "usage": "既说头发直，也说路直、直走。",
+        "examples": [
+          { "id": "Jalan terus lurus, nanti belok kiri.", "cn": "一直直走，然后左转。" },
+          { "id": "Rambut Ibu dulu lurus dan panjang.", "cn": "妈妈以前是长直发。" }
+        ]
+      },
+      {
+        "word": "memahami",
+        "usage": "比 mengerti 正式一点，常接“理由、情况、感受”。",
+        "examples": [
+          { "id": "Saya bisa memahami alasannya.", "cn": "我能理解他的理由。" }
+        ]
+      }
+    ]
+  }
+}
