@@ -42,6 +42,7 @@
 |---|---|---|---|---|
 | `indo_vocab_coach_daily_session_v1` | 今天的统一训练清单及完成情况 | 对象：`{version: 2, day: 'YYYY-MM-DD', items: [{mode, word…}], done: {}}` | `vocab-study-coach.js` | 同左 |
 | `indo_vocab_coach_verify_requests_v1` | "再验证一次"的请求 | 对象：单词 → `{requested_at: ISO 时间, due_at: 毫秒时间戳}` | `vocab-study-coach.js` | 同左 |
+| `indo_lesson_focus_v1` | 打开过的课程的“今天的重点”词（只用于课末回想排序） | 对象：`{version: 1, lessons: {'YYYY-MM-DD-am': {words: [3 个词], at: ISO 时间}}}`，保留最近 14 节 | `lesson-end-recall.js`（只读，重点词排前，资格规则不变） | `history-v2.js`（渲染带 lesson_focus 的课程时写入） |
 | `indo_lesson_recall_v1` | 课末主动回想（自评，不算训练通过、不计入掌握、不改到期、不写课程错题） | 对象：`{version: 1, words: {单词(小写): {day, result: 'fail' / 'slow' / 'fast', at: ISO 时间, lesson: 'YYYY-MM-DD-am', hist: [{day, result, at, lesson}]（每天一条，最多 20 条）}}, lessons: {'YYYY-MM-DD-am': {words: [{word, cn, group}], created_at}}（最近 10 节课的选词，刷新不变）}`。每词每天只算第一次作答；跨设备合并时同一天取最早的那次 | `vocab-study-coach.js`（只读，调整快速练习/自动训练的新词顺序）、`training-sync-client.js`（同步 words） | `lesson-end-recall.js`；`training-sync-client.js`（合并其他设备的记录） |
 | `indo_vocab_skill_rounds_v1` | 三种训练各自当天的一轮词表 | 对象：模式（quick / listen / auto）→ `{version: 1, day, items: [单词], done: {单词: true}}` | `vocab-study-coach.js` | 同左 |
 | `indo_vocab_profile_evidence_v2` | 词汇画像用的本机答题证据（只保留最近若干条） | 数组（细节见代码） | `vocab-profile-evidence.js` | 同左、`vocab-profile-ui.js` |

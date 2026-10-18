@@ -62,6 +62,17 @@ const db=[
   const P2=page(db);P2.R.record('b3','fail','2026-10-15-pm',now-15*H);
   assert.ok(!P2.R.select(today,'pm',now).some(x=>x.word==='b3'),'recalled yesterday evening → not asked again today');
 }
+// 2026-10-18: lesson focus words are asked first, but only among eligible words (mastered / practised today stay out).
+{
+  const P=page(db,{mastered:[{word:'m1',last_mastered:'2026-10-15T12:00:00Z'}]});
+  P.store.m.set('indo_lesson_focus_v1',JSON.stringify({version:1,lessons:{'2026-10-15-am':{words:['a6','a3','m1']},'2026-10-11-am':{words:['b5']}}}));
+  const am=Array.from(P.R.select(today,'am',now).map(x=>x.word));
+  assert.deepEqual(am.slice(0,2),['a3','a6'],'focus words lead the AM list');
+  assert.equal(am.length,7,'focus never adds words: still the 7 real new words');assert.ok(!am.includes('m1'),'a mastered focus word is not forced in');
+  const back=Array.from(P.R.select(today,'pm',now).filter(x=>x.group==='backlog').map(x=>x.word));
+  assert.equal(back[0],'b5','a focus backlog word is picked first among unrecalled words');
+  P.R.record('a3','fail','2026-10-16-am',now);assert.equal(P.R.record('a3','fast','2026-10-16-am',now+1000),false,'first attempt still wins');
+}
 // Merge rule shared by page, client and Worker: earliest attempt of a day wins, order of arrival does not matter.
 {
   const P=page([]),m=P.R.mergeRecord;

@@ -249,6 +249,12 @@
     return morph||'基础词形；结合本课例句与真实语境掌握。';
   }
 
+  // Dormant V4 (CI rehearsal only): mechanical lesson_focus so its rehearsal lessons stay valid — the first three new
+  // words and two of the lesson's own lines as patterns.
+  function focusFor(newCards,lines){
+    const ps=lines.slice(0,2).map(l=>({pattern:String(l.id).split(/\s+/).slice(0,2).join(' ')+' …',cn:String(l.cn).replace(/（.*$/,''),example:l.id,example_cn:l.cn}));
+    return {words:newCards.slice(0,3).map(x=>x.word),patterns:ps};
+  }
   function buildCard(row,group,ctx,env){
     const {lex,daily,M}=env,k=norm(row.word),e=lex.get(k)||{},d=daily.get(k)||{};
     const rr=(ctx.candidates?.review||[]).find(x=>norm(x[0])===k);
@@ -639,8 +645,9 @@
         answer:outputCards.map(c=>c.id).join(' '),
         cn:outputCards.map(c=>c.cn).join(' ')
       };
+      const amSentences=newCards.slice(0,5).map(x=>({text:x.example,cn:x.example_cn}));
       return {...base,new_words:newCards.map(x=>x.word),vocab:newCards.map(({group,_transfer,...x})=>x),review_vocab:reviewCards.map(x=>x.word),
-        sentences:newCards.slice(0,5).map(x=>({text:x.example,cn:x.example_cn})),reading,
+        sentences:amSentences,reading,lesson_focus:focusFor(newCards,amSentences.map(s=>({id:s.text,cn:s.cn}))),
         quiz:[
           {question:'哪个复习词表示“'+r.cn+'”？',...optionSet(r.word,pool,key+'q1'),explain:r.word+' = '+r.cn+'。'},
           {question:'哪个新词表示“'+n1.cn+'”？',...optionSet(n1.word,pool,key+'q2'),explain:n1.word+' = '+n1.cn+'。'},
@@ -675,6 +682,7 @@
     base._prototype.dialogue_contextual_review=dialogue._support_reused;
     delete dialogue._coverage;delete dialogue._paired_scene;delete dialogue._support_reused;
     return {...base,write_status:'lesson_complete',new_words:newCards.map(x=>x.word),vocab:cards.map(({group,_transfer,...x})=>x),reading,dialogue,rewrite:rewrite.slice(0,4),
+      lesson_focus:focusFor(newCards,(dialogue.lines||[]).filter(l=>l&&l.id&&l.cn)),
       daily_test:{questions:[...choices,...fills,orderQuestion(cards)],self_check:[
         '遮住中文，3秒内说出 '+newCards.map(x=>x.word).join(' / ')+' 的意思和一个常见搭配。',
         '主动复习 '+reviewCards.map(x=>x.word).join(' / ')+'，不要只做识别。',

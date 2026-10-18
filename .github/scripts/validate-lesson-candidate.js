@@ -23,7 +23,10 @@ function collectReviewHistory(index,targetDate,targetSession,load){
  return history;
 }
 
-const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm,reviewHistory}) {
+// 2026-10-18 (user decision): every lesson from this date carries lesson_focus — 3 of the lesson's own words and 2
+// sentence patterns whose example is taken word for word from the lesson. Earlier lessons may lack it (optional there).
+const FOCUS_REQUIRED_FROM="2026-10-19";
+const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm,reviewHistory,focusRequiredFrom}) {
   const errors=[], add=(code,detail)=>errors.push({code,detail});
   const check=(c,code,detail)=>{if(!c)add(code,detail);return !!c};
   const has=(o,k)=>Object.prototype.hasOwnProperty.call(o||{},k);
@@ -201,6 +204,23 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     check(lesson.review&&!Array.isArray(lesson.review)&&str(lesson.review.title)&&Array.isArray(lesson.review.steps)&&lesson.review.steps.length>0&&lesson.review.steps.every(str),"PM_FINAL_REVIEW_INVALID","Review {title,steps[]}");
   }
 
+  // Today's focus: chosen from this lesson only; it adds no words and no tasks.
+  {
+    const lf=lesson.lesson_focus,from=focusRequiredFrom||FOCUS_REQUIRED_FROM;
+    if(lf===undefined)check(date<from,"LESSON_FOCUS_MISSING","lesson_focus (3 words + 2 patterns) required from "+from);
+    else{
+      const own=new Set(session==="am"?[...vocab.map(word),...ws(lesson.review_vocab),...ws(lesson.cycle_vocab)]:vocab.map(word));
+      const texts=[...(session==="am"?(Array.isArray(lesson.sentences)?lesson.sentences.map(x=>x&&x.text):[]):[]),lesson.reading&&lesson.reading.text,
+        ...vocab.map(v=>v&&v.example),...(session==="am"?[lesson.output&&lesson.output.reference_answer]:[]),
+        ...(session==="pm"?[...(lesson.dialogue&&Array.isArray(lesson.dialogue.lines)?lesson.dialogue.lines.map(l=>l&&l.id):[]),...(Array.isArray(lesson.rewrite)?lesson.rewrite.map(r=>r&&r.reference_answer):[])]:[])]
+        .filter(str).map(norm).join(" | ");
+      const fw=lf&&Array.isArray(lf.words)?lf.words:[],fp=lf&&Array.isArray(lf.patterns)?lf.patterns:[];
+      check(lf&&typeof lf==="object"&&!Array.isArray(lf)&&fw.length===3&&fw.every(str)&&new Set(fw.map(norm)).size===3,"LESSON_FOCUS_INVALID","lesson_focus.words: exactly 3 distinct words");
+      fw.filter(str).forEach(w=>check(own.has(norm(w)),"LESSON_FOCUS_WORD","focus word is not one of this lesson's words: "+w));
+      check(fp.length===2&&fp.every(p=>p&&str(p.pattern)&&str(p.cn)&&str(p.example)&&str(p.example_cn)),"LESSON_FOCUS_INVALID","lesson_focus.patterns: exactly 2 {pattern, cn, example, example_cn}");
+      fp.filter(p=>p&&str(p.example)).forEach(p=>check(texts.includes(norm(p.example)),"LESSON_FOCUS_PATTERN","pattern example must be copied from this lesson: "+p.example));
+    }
+  }
   // Enforce new review rotation only for unpublished lessons on/after its effective date.
   const rotation=rules.review_rotation;
   if(rotation&&rotation.enabled===true&&date>=(rotation.effective_date||'2026-09-28')){
@@ -237,4 +257,4 @@ function cli(argv){const a={};for(let i=0;i<argv.length;i++){if(!argv[i].startsW
 function read(f){return JSON.parse(fs.readFileSync(path.resolve(process.cwd(),f),'utf8'))}
 function optional(f){return fs.existsSync(path.resolve(process.cwd(),f))?read(f):null}
 if(require.main===module){try{const a=cli(process.argv.slice(2));if(!a.candidate||!a.date||!a.session)throw Error('--candidate, --date, --session required');const date=a.date;const prev=new Date(Date.parse(date+'T00:00:00Z')-86400000).toISOString().slice(0,10);const lesson=read(a.candidate),index=read(a.index||'data/daily/index.json'),runtime=read(a.runtime||'data/learning-runtime.json'),rules=read(a.rules||'data/learning-pool-rules.json');const result=validate({lesson,index,runtime,rules,expectedDate:date,expectedSession:a.session,sameDayAm:optional(a['same-day-am']||'data/daily/'+date+'-am.json'),previousPm:optional(a['previous-pm']||'data/daily/'+prev+'-pm.json'),reviewHistory:collectReviewHistory(index,date,a.session,p=>read(p))});result.baselineFingerprint=crypto.createHash('sha256').update(JSON.stringify({index,runtime,rules})).digest('hex');console.log(JSON.stringify(result,null,2));process.exitCode=result.ok?0:1}catch(e){console.error(JSON.stringify({ok:false,errors:[{code:'VALIDATOR_INPUT_ERROR',detail:e.message}]}));process.exitCode=2}}
-module.exports={validate,collectReviewHistory};
+module.exports={validate,collectReviewHistory,FOCUS_REQUIRED_FROM};
