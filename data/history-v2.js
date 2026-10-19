@@ -20,7 +20,7 @@
     .vcCard .vcEx{background:#f4f7fc;border-radius:11px;padding:9px 11px}#daily .vcCard .vcEx .sound,#daily .vcCard .vcRow .sound{padding:2px 7px;font-size:13px;line-height:1.3;vertical-align:middle;border-radius:8px}.vcCard .vcExId{color:#285a94;font-weight:700;font-size:16px;line-height:1.5}.vcCard .vcExCn{color:#786554;font-size:14px;line-height:1.5}
     #daily .vcCard .dailyFixMeta.vcRoot{display:flex;flex-wrap:wrap;gap:4px 7px;align-items:center;font-size:13.5px;margin:0!important;padding:6px 9px!important}.vcRoot .vcTag{font-size:12px;font-weight:800;color:#7b8598}.vcRoot b{color:#26364f}.vcRoot .dailyAmTaught{margin-right:4px}
     .vcCard .vcMore{border:0;background:none;color:#3157d5;font:inherit;font-size:14px;font-weight:750;cursor:pointer;padding:0;align-self:flex-start}
-    .vcCard .vcDetail{display:flex;flex-direction:column;gap:11px;border-top:1px solid #e5eaf2;padding-top:10px}.vcCard .vcDetail[hidden]{display:none}.vcCard .vcBlk{display:flex;flex-direction:column;gap:5px}.vcCard .vcBlk>.vcTag{font-size:12px;font-weight:800;color:#7b8598;letter-spacing:.03em}
+    .vcCard .vcDetail{display:flex;flex-direction:column;gap:11px;border-top:1px solid #e5eaf2;padding-top:10px}.vcCard .vcDetail[hidden]{display:none}.lfStart[hidden]{display:none!important}.vcCard .vcBlk{display:flex;flex-direction:column;gap:5px}.vcCard .vcBlk>.vcTag{font-size:12px;font-weight:800;color:#7b8598;letter-spacing:.03em}
     .vcCard .vcChips{display:flex;flex-wrap:wrap;gap:6px}.vcCard .vcChip{background:#f1f4fa;border-radius:9px;padding:3px 9px;font-size:14px;min-width:0;overflow-wrap:anywhere}.vcCard .vcChip b{color:#1f3f8f}.vcCard .vcChip small{color:#6b7280;font-size:13px;margin-left:4px}
     .vcCard .vcLine{font-size:14px;color:#344054;line-height:1.6}.vcCard .vcLine .vcI{color:#1f3f8f;font-weight:650}.vcCard .vcVs{font-weight:800}.vcCard .vcInl{font-size:12px;font-weight:800;color:#7b8598;margin-right:8px}
     .lfCard{text-align:left;border:1px solid #efdcbc;background:#fffaf1;border-radius:16px;padding:14px 16px;margin:12px 0}.lfCard h3{margin:0 0 2px;font-size:17px}.lfCard .lfSub{font-size:13px;color:#7a6a55;margin:0 0 10px}
@@ -113,7 +113,7 @@
     return '<section class="lfCard"><h3>今天的重点</h3><p class="lfSub">这节课最值得掌握的 '+f.words.length+' 个词和 '+f.patterns.length+' 个句型，都出自本课；其余内容认识即可。</p>'+
       (f.words.length?'<div class="lfWords">'+f.words.map(w=>'<div><b>'+esc2(displayText(w,x.vocab))+' '+say(w)+'</b><span>'+esc2(focusCnFor(w,x))+'</span></div>').join('')+'</div>':'')+
       (f.patterns.length?'<div class="lfPats">'+f.patterns.map(p=>'<div><b>'+esc2(p.pattern)+'</b><span class="lfPcn">'+esc2(p.cn||'')+'</span><div class="lfEx">'+esc2(displayText(p.example,x.vocab))+' '+say(p.example)+'</div><div class="lfExCn">'+esc2(p.example_cn||'')+'</div></div>').join('')+'</div>':'')+
-      (f.words.length&&f.patterns.length?'<button type="button" class="lfStart" data-guided-start="'+esc2(x.date+'-'+x.session)+'">开始带学 · 一步一步带你过重点（约 15 分钟）→</button>':'')+'</section>';
+      (f.words.length&&f.patterns.length?'<button type="button" class="lfStart" hidden data-guided-start="'+esc2(x.date+'-'+x.session)+'">开始带学 · 一步一步带你过重点（约 15 分钟）→</button>':'')+'</section>';
   }
   const lfHit=(f,t)=>!!f&&f.ex.some(e=>e&&lfNorm(t).includes(e));
   function lfMarkText(html,f,x){if(!f)return html;f.patterns.forEach(p=>{const e=esc2(displayText(p.example,x.vocab));if(e&&html.includes(e))html=html.replace(e,'<mark class="lfMark">'+e+'</mark>')});return html}

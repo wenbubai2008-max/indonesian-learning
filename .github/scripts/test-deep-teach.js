@@ -41,6 +41,10 @@ test('markup escapes HTML/attributes before adding only supported tags',()=>{
  const html=D.md('<img src=x onerror="evil()"> {{a" onmouseover="evil()}} [[词]] **重点**\n下一行');
  assert(!html.includes('<img'));assert(!html.includes('data-say="a"'));assert(html.includes('&lt;img'));assert(html.includes('class="spk"'));assert(html.includes('<b>重点</b>'));assert(html.includes('<br>下一行'));assert.equal(D.md(null),'');assert(D.md('**{{uji}}**').includes('<b><span class="id">uji'));assert(!D.md('**<script>evil()</script>**').includes('<script>'));
 });
+test('old 带学 is paused: no GuidedLesson fallback, start button hidden until teaching data is confirmed',()=>{
+ assert(!/GuidedLesson\.open|data-dt-legacy/.test(source));assert(source.includes('revealStarts'));
+ assert(/class="lfStart" hidden data-guided-start=/.test(read('data/history-v2.js')));assert(read('data/history-v2.js').includes('.lfStart[hidden]{display:none!important}'));
+});
 test('no persistent records, data writers, external fonts or unscoped document listeners',()=>{
  assert(!/localStorage|sessionStorage|indexedDB|recordLessonWrong|markMastered|indo_lesson_recall_v1|indo_automation_training_state_v1|WeaknessPool|LessonRecall|TrainingSync/.test(source));
  assert(!/fonts\.google|@import|MutationObserver/.test(source));assert(source.includes("overlay.addEventListener('click'"));
@@ -49,12 +53,12 @@ test('no persistent records, data writers, external fonts or unscoped document l
  const without=copy(L);delete without.lesson_focus.teach;
  test('direct open safely rejects invalid data before touching the DOM',()=>assert.equal(D.open(L,{}),false));
  let count=0;const notFound=async()=>{count++;return {status:404}};
- assert.equal((await D.selectTeach(without,notFound)).mode,'legacy');assert.equal(count,1);n++;
+ assert.equal((await D.selectTeach(without,notFound)).mode,'none');assert.equal(count,1);n++;
  assert.equal((await D.selectTeach(without,async()=>({ok:true,json:async()=>T}))).mode,'deep');n++;
  const embedded=copy(L);embedded.lesson_focus.teach=T;
  assert.equal((await D.selectTeach(embedded,()=>{throw Error('embedded data must not fetch')})).mode,'deep');n++;
- embedded.lesson_focus.teach={};assert.equal((await D.selectTeach(embedded,notFound)).mode,'legacy');n++;
- assert.equal((await D.selectTeach(without,async()=>({ok:true,json:async()=>({})}))).mode,'legacy');n++;
- assert.equal((await D.selectTeach(without,async()=>{throw Error('offline')})).mode,'legacy');n++;
+ embedded.lesson_focus.teach={};assert.equal((await D.selectTeach(embedded,notFound)).mode,'none');n++;
+ assert.equal((await D.selectTeach(without,async()=>({ok:true,json:async()=>({})}))).mode,'none');n++;
+ assert.equal((await D.selectTeach(without,async()=>{throw Error('offline')})).mode,'none');n++;
  console.log(`PASS ${n} deep-teach tests (including absent/invalid/offline fallback and embedded precedence)`);
 })().catch(e=>{console.error(e);process.exitCode=1});
