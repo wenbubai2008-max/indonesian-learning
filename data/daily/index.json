@@ -631,11 +631,13 @@
     {
       "date": "2026-10-19",
       "am": true,
-      "pm": false,
+      "pm": true,
       "verified": "generated_daily_lesson",
       "day": 59,
       "am_day": 59,
-      "am_status": "generated"
+      "am_status": "generated",
+      "pm_day": 59,
+      "pm_status": "lesson_complete"
     }
   ],
   "updated": "2026-10-19",
