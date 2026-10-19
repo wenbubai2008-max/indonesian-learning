@@ -747,6 +747,19 @@ try {
     taskOk(rg.enabled===true&&/review_groups:reviewGroups/.test(read('.github/scripts/review-rotation.js'))&&/evaluateGroup/.test(read('.github/scripts/check-recurrence.js')),'same-root review groups: ranker outputs them and check-recurrence enforces one when available');
   }
 
+  // §34: optional, ephemeral deep teaching; old courses keep the legacy flow.
+  {
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const exists=fs.existsSync(rel('data/deep-teach.js'));
+    const dt=exists?read('data/deep-teach.js'):'';
+    okNew(exists&&/data\/deep-teach\.js\?v=[^"']+/.test(indexHtml),'deep teach exists and loads with a manual cache version');
+    okNew(!/localStorage|sessionStorage|indexedDB|recordLessonWrong|markMastered|indo_lesson_recall_v1|indo_automation_training_state_v1|WeaknessPool|LessonRecall|TrainingSync/.test(dt),'deep teach does not write learning, recall, training, mastery or preference records');
+    okNew(dt.includes("mode:'legacy'")&&dt.includes('window.GuidedLesson.open')&&dt.includes('selectTeach'),'deep teach falls back to GuidedLesson when no usable teaching data exists');
+    const dir=rel('data/teach');
+    const files=fs.existsSync(dir)?fs.readdirSync(dir).filter(f=>f.endsWith('.json')):[];
+    okNew(files.length>0&&files.every(f=>/^\d{4}-\d{2}-\d{2}-(am|pm)\.json$/.test(f)&&fs.existsSync(rel('data/daily/'+f))),'every pilot teach sidecar has a corresponding daily lesson');
+  }
+
 } catch (e) {
   failures.push('guard script crashed: ' + (e && e.stack ? e.stack : e));
 }

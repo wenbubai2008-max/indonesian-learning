@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "title": "科塔格德深讲课",
+  "intro": [
+    "今晚这节课叫《科塔格德小巷迷路记》。Lina 和 Dewi 去日惹的科塔格德给 Lina 妈妈买银手镯，先是跟着手机地图在小巷里绕了快一个小时，然后在小摊上差点买到假银项链。",
+    "今晚只讲 5 样东西，都是这个故事里真用到的：[[nyasar]] · [[memperhatikan]] · [[menyarankan]] · [[Saranku sih, …]] · [[Jangan sampai …]]"
+  ],
+  "items": [
+    {
+      "key": "nyasar", "name": "nyasar", "head": "nyasar · 迷路（口语）",
+      "scene": {
+        "quotes": [{"speaker": "课文", "id": "Mereka mengikuti peta di ponsel, tetapi malah masuk ke gang kecil yang berbelok-belok dan akhirnya nyasar hampir satu jam.", "cn": "她们跟着手机上的地图走，结果反而钻进了弯弯曲曲的小巷，最后迷路了将近一个小时。"}],
+        "ask": "先别看中文。她们跟着手机地图走，钻进弯弯曲曲的小巷，最后 nyasar 了快一个小时。你猜 nyasar 是什么？",
+        "options": [
+          {"t": "迷路了", "ok": true, "reply": ["对，就是\"迷路、走错路\"。线索就在前面：跟着地图（mengikuti peta），却钻进了拐来拐去的小巷（gang kecil yang berbelok-belok）。"]},
+          {"t": "堵车了", "reply": ["不是。她们是走路，没坐车。线索在前面：钻进了拐来拐去的小巷。所以 nyasar 是\"迷路、走错路\"。"]},
+          {"t": "走累了", "reply": ["累是下一句才说的（sangat melelahkan）。这里是跟着地图却钻进了拐来拐去的小巷，结果 nyasar，也就是\"迷路\"。"]}
+        ]
+      },
+      "explain": [
+        "{{nyasar}} 就是\"迷路\"，而且是**口语**。跟朋友聊天、讲自己的经历，用它最自然。",
+        "新闻和书面里说 {{tersesat}}，意思一样，只是正式：{{Dua pendaki tersesat di gunung.}}（两名登山者在山里迷路。）"
+      ],
+      "simple": ["[[nyasar]] = 迷路（聊天用）\n[[tersesat]] = 迷路（书面用）"],
+      "asks": [
+        {"label": "和 hilang 有什么区别？", "remedy": true, "src": "new", "reply": [
+          "这是中国学生最容易混的。中文的\"丢\"两边都能用：\"我走丢了\"\"我钱包丢了\"。印尼语要分开：",
+          {"table": [["nyasar", "自己不认得路、走到了不该到的地方"], ["hilang", "东西不见了、找不到：Dompetku hilang.（我钱包丢了。）"]]},
+          "从别人的角度说\"孩子走失了\"，也常用 hilang：{{Anaknya hilang di mal.}} 但你自己说\"我迷路了\"，就是 {{Aku nyasar.}}"]},
+        {"label": "为什么是 nyasar 这个形状？", "src": "mix", "reply": [
+          "它来自 {{sasar}}（偏离方向）。口语常给动词加鼻音前缀，s 开头的变成 ny：sasar → nyasar，sapu → nyapu（扫地），sewa → nyewa（租）。也常听到 {{kesasar}}，意思一样。"]},
+        {"label": "词卡上怎么说的？", "from": "synonym_note"}
+      ],
+      "check": {
+        "q": ["你手机丢了，给朋友发 WhatsApp：\"我手机丢了，现在用朋友的号码。\"前半句哪个对？"],
+        "options": [
+          {"t": "HP-ku nyasar.", "v": "wrong", "why": ["nyasar 是\"迷路、送错地方\"。手机是你弄丢、找不到了，要用 hilang。", "换个情境：如果是快递员把你的新手机送到了别人家，那才说 {{HP-nya nyasar ke rumah orang.}}"]},
+          {"t": "HP-ku hilang.", "v": "right", "why": ["对。东西不见了用 hilang；nyasar 留给\"人迷路\"和\"东西送错地方\"。"]},
+          {"t": "HP-ku tersesat.", "v": "wrong", "why": ["tersesat 也是\"迷路\"，只是更正式。东西丢了不说 tersesat，要用 hilang。"]}
+        ],
+        "backup": {
+          "q": ["换一题。新闻标题：\"两名登山者在默拉皮火山迷路\"，哪个最像真的标题？"],
+          "options": [
+            {"t": "Dua Pendaki Tersesat di Gunung Merapi", "v": "right", "why": ["对。新闻用规范说法 tersesat。"]},
+            {"t": "Dua Pendaki Nyasar di Gunung Merapi", "v": "ok", "why": ["意思没错，印尼人也看得懂；跟朋友聊天这么说完全可以。但新闻标题一般用规范的 tersesat，nyasar 太口语。"]},
+            {"t": "Dua Pendaki Kehilangan di Gunung Merapi", "v": "wrong", "why": ["kehilangan 是\"丢了某样东西\"：{{kehilangan dompet}}（丢了钱包）。它后面要接丢了什么，不能单独表示\"迷路\"。"]}
+          ]
+        }
+      },
+      "say": {"prompt": ["你跟朋友抱怨：\"我们昨天在巷子里迷路了快一个小时。\"先说出声，再点按钮。"], "kw": "kemarin · nyasar · di gang · hampir satu jam", "skel": "Kemarin kami ____ di ____ hampir ____.", "ref": "Kemarin kami nyasar di gang hampir satu jam.",
+        "notes": ["时长直接放在后面，不用介词，和课文的 nyasar hampir satu jam 一样。", "朋友当时不在场，严格说用 kami（不包括听话人的\"我们\"）；日常口语里很多人也说 kita。"]},
+      "recall": {"prompt": ["朋友打电话问你在哪儿。你说：\"我迷路了，走到隔壁村去了。\""], "kw": "aku · nyasar · ke · kampung sebelah", "skel": "Aku ____ ke ____.", "ref": "Aku nyasar ke kampung sebelah.", "notes": ["nyasar + ke + 地方 = 迷路走到了某处。"]},
+      "recall2": {"prompt": ["你跟同事说：\"我们差点迷路了。\""], "kw": "kami · hampir · nyasar", "skel": "Kami ____ ____.", "ref": "Kami hampir nyasar."},
+      "final": {"cn": "（跟朋友说）\"我们又迷路了！\"", "ref": "Kita nyasar lagi!"},
+      "remind": "nyasar = 迷路（聊天用），书面说 tersesat；东西丢了用 hilang。"
+    },
+    {
+      "key": "memperhatikan", "name": "memperhatikan", "head": "memperhatikan · 留意、仔细看",
+      "scene": {
+        "quotes": [{"speaker": "Dewi", "id": "Lin, bentar. Kamu merhatiin nggak? Di bagian dalam kalung ini nggak ada cap 925.", "cn": "Lin，等一下。你注意到没有？这条项链里面没有 925 的印记。"}],
+        "ask": "Lina 明明在看这条项链，她还在看价钱呢。Dewi 为什么不问 \"Kamu lihat nggak?\"（你看见没？），而要用 merhatiin？",
+        "options": [
+          {"t": "她要 Lina 仔细看细节", "ok": true, "reply": ["对。看见项链不算数，Dewi 要的是\"你有没有**留意到**里面没有 925 印记\"。这就是 memperhatikan。"]},
+          {"t": "merhatiin 更礼貌", "reply": ["不是礼貌的问题，merhatiin 其实是很随便的口语。区别在意思：lihat 是\"看见\"，memperhatikan 是\"留意、仔细看\"。"]},
+          {"t": "两个一样，随便用", "reply": ["不完全一样。lihat 是\"看见\"，眼睛看到就算；memperhatikan 是\"留意、仔细看\"。Dewi 要的是后者。"]}
+        ]
+      },
+      "explain": [
+        "{{melihat}} 是\"看见\"，眼睛看到了就算。{{memperhatikan}} 是\"留意、仔细看\"，有意识地把注意力放上去。",
+        "{{merhatiin}} 是它的口语说法。雅加达口语常把 -kan 换成 -in，对话里 Dewi 说的 bandingin 也是这样来的（= bandingkan）。"
+      ],
+      "simple": ["[[lihat]] = 看见\n[[memperhatikan]] = 留意、仔细看（口语 merhatiin）"],
+      "asks": [
+        {"label": "和 menyadari 有什么区别？", "remedy": true, "src": "card", "reply": [
+          {"table": [["melihat", "看见（靠眼睛）"], ["memperhatikan", "留意、仔细看（靠注意力）"], ["menyadari", "意识到（脑子里明白了）"]]},
+          "menyadari 不一定靠眼睛：{{Aku baru menyadari dompetku ketinggalan.}}（我这才意识到钱包落下了。）"]},
+        {"label": "叫别人注意怎么说？", "src": "mix", "reply": [
+          "老师上课说：{{Perhatikan baik-baik!}}（仔细看好！）叫人做事时去掉 mem-。朋友之间说 {{Perhatiin, ya!}}",
+          "它直接接要注意的东西，不加 pada：{{memperhatikan rambu lalu lintas}}（注意交通标志）。"]},
+        {"label": "词根是什么？", "src": "mix", "reply": [
+          "和 {{hati}}（心）是一家：perhatian 是\"注意力；关心\"。所以它也能表示\"关心\"：{{Dia kurang memperhatikan anaknya.}}（他不太关心孩子。）知道个大概就好，不用背。"]}
+      ],
+      "check": {
+        "q": ["你网购了一双鞋，到货后仔细对比图片，发现颜色不一样。你说：", "[[Aku ___ fotonya, ternyata warnanya beda.]]（我仔细看了图片，结果颜色不一样。）"],
+        "options": [
+          {"t": "melihat", "v": "ok", "why": ["能说，语法没问题，只是意思变成\"我看了图片\"。你这里强调\"仔细看才发现\"，memperhatikan 更准。", "只是看到的场合就用 melihat：{{Aku melihat dia di mal.}}（我在商场看见她了。）"]},
+          {"t": "memperhatikan", "v": "right", "why": ["对。仔细对比、留意细节，就是 memperhatikan。口语说 Aku merhatiin fotonya."]},
+          {"t": "menyadari", "v": "wrong", "why": ["menyadari 是\"意识到\"，后面接的是一件事，不接\"照片\"这种东西。可以说 {{Aku baru menyadari warnanya beda.}}（我这才意识到颜色不一样。）"]}
+        ],
+        "backup": {
+          "q": ["换一题。老师在课上说：\"大家仔细看黑板！\"哪句对？"],
+          "options": [
+            {"t": "Perhatikan papan tulis baik-baik!", "v": "right", "why": ["对。叫人做事时去掉 mem-：memperhatikan → Perhatikan!"]},
+            {"t": "Memperhatikan papan tulis baik-baik!", "v": "wrong", "why": ["叫别人做事要去掉 meN-：membaca → Baca!，memperhatikan → Perhatikan!。带着 mem- 听起来像在描述，不像在叫人做。"]},
+            {"t": "Sadari papan tulis baik-baik!", "v": "wrong", "why": ["\"意识到黑板\"说不通。sadari 是\"意识到某件事\"，不是用眼睛看。"]}
+          ]
+        }
+      },
+      "say": {"prompt": ["你跟朋友路过常去的店，发现今天没开门。用口语说：\"你注意到没？这家店今天没开门。\""], "kw": "kamu · merhatiin · nggak · toko ini · tutup · hari ini", "skel": "Kamu ____ nggak? Toko ini ____ hari ini.", "ref": "Kamu merhatiin nggak? Toko ini tutup hari ini.",
+        "notes": ["\"……没？\"把 nggak 放句尾，和 Dewi 的 Kamu merhatiin nggak? 一样。"]},
+      "recall": {"prompt": ["你提醒同事：\"仔细看看这份合同上的日期。\""], "kw": "perhatikan · tanggal · di kontrak ini · baik-baik", "skel": "____ tanggal di kontrak ini ____.", "ref": "Perhatikan tanggal di kontrak ini baik-baik.", "notes": ["叫人做事时去掉 mem-。口语也可以说 Perhatiin tanggalnya, ya."]},
+      "recall2": {"prompt": ["你说：\"我没注意到他换了眼镜。\"（口语）"], "kw": "aku · nggak · merhatiin · dia · ganti kacamata", "skel": "Aku nggak ____ dia ____ kacamata.", "ref": "Aku nggak merhatiin dia ganti kacamata."},
+      "final": {"cn": "\"你注意到没？他剪头发了。\"", "ref": "Kamu merhatiin nggak? Dia potong rambut."},
+      "remind": "lihat = 看见；memperhatikan = 留意、仔细看（口语 merhatiin）；叫人注意说 Perhatikan!"
+    },
+    {
+      "key": "menyarankan", "name": "menyarankan", "head": "menyarankan · 建议",
+      "scene": {
+        "quotes": [{"speaker": "课文", "id": "Ia menyarankan Lina membandingkannya dulu di bengkel perajin.", "cn": "她建议 Lina 先到工匠作坊去比较一下。"}],
+        "ask": "Dewi 是 Lina 的朋友，她在给建议，听不听由 Lina。如果换成上司命令下属\"去比价\"，你觉得用哪个动词更像？",
+        "options": [
+          {"t": "menyuruh", "ok": true, "reply": ["对。menyuruh 是\"叫（某人）去做\"，带命令味。Dewi 是朋友，所以用 menyarankan。"]},
+          {"t": "menyarankan", "reply": ["menyarankan 是\"建议\"，对方可以不听。上司下命令，用 menyuruh 更像。下面细讲。"]}
+        ]
+      },
+      "explain": [
+        "{{menyarankan}} = 建议（动词），对方可以不听。最常用两种说法：",
+        "① menyarankan + 人 + (untuk) + 做什么：{{Dokter menyarankan saya untuk istirahat.}}（医生建议我休息。）课文就是这种，人直接放后面。",
+        "② menyarankan agar / supaya + 一整句：{{Dewi menyarankan agar mereka membandingkan harga dulu.}} 口语说 {{nyaranin}}。"
+      ],
+      "simple": ["[[menyarankan]] = 建议（动词），对方可以不听\n[[saran]] = 建议（名词）；口语 [[nyaranin]]"],
+      "asks": [
+        {"label": "和 menyuruh、menganjurkan 有什么区别？", "remedy": true, "src": "mix", "reply": [
+          {"table": [["menyarankan", "给建议，听不听随你"], ["menyuruh", "叫你去做，带命令味：Ibu menyuruh aku beli gula."], ["menganjurkan", "较正式的\"提倡、建议\"，医生、政府常用"], ["merekomendasikan", "推荐一样东西、一家店：Dia merekomendasikan restoran itu."]]}]},
+        {"label": "词卡上怎么说的？", "from": "usage_note"},
+        {"label": "为什么是 menyarankan？", "src": "card", "reply": [
+          "meN- + saran + -kan。s 开头的词加 meN- 时，s 掉了变成 meny-：saran → menyarankan，sapu → menyapu。被动 disarankan 常见于告示：{{Pengunjung disarankan datang pagi.}}"]}
+      ],
+      "check": {
+        "q": ["妈妈叫你去买糖，她的意思是\"去！\"，不是商量。哪句最符合？"],
+        "options": [
+          {"t": "Ibu menyarankan aku beli gula.", "v": "wrong", "why": ["句子本身没错，但意思成了\"妈妈建议我买糖\"，好像我可以不去，和题目不符。", "换个情境：妈妈说\"天热，建议你带瓶水\"，那才是 {{Ibu menyarankan aku bawa air minum.}}"]},
+          {"t": "Ibu menyuruh aku beli gula.", "v": "right", "why": ["对。menyuruh 是\"叫某人去做\"。妈妈派你去买东西，就是 menyuruh。"]},
+          {"t": "Ibu merekomendasikan aku beli gula.", "v": "wrong", "why": ["merekomendasikan 是推荐一样东西或一家店，比如推荐餐厅，不用来叫人跑腿。"]}
+        ],
+        "backup": {
+          "q": ["换一题。朋友问你去日惹玩有什么建议，你回：\"我建议你早上去，中午太热了。\""],
+          "options": [
+            {"t": "Aku nyaranin kamu pergi pagi, siangnya panas banget.", "v": "right", "why": ["对。朋友之间给建议，nyaranin 很自然。"]},
+            {"t": "Aku nyuruh kamu pergi pagi, siangnya panas banget.", "v": "wrong", "why": ["nyuruh（menyuruh）是在叫你去做，跟朋友给旅行建议显得太强硬，意思也不是\"建议\"。"]},
+            {"t": "Aku saran kamu pergi pagi, siangnya panas banget.", "v": "wrong", "why": ["saran 是名词\"建议\"，不能直接当动词带\"你\"。要么用动词 Aku nyaranin kamu…，要么用名词开头：{{Saranku, kamu pergi pagi aja.}}"]}
+          ]
+        }
+      },
+      "say": {"prompt": ["朋友看中一个包，想马上买。你建议：\"我建议你先比比价。\""], "kw": "aku · nyaranin · kamu · bandingin harga · dulu", "skel": "Aku ____ kamu ____ harga ____.", "ref": "Aku nyaranin kamu bandingin harga dulu.",
+        "notes": ["dulu 放在后面是\"先（做这个）\"，不是\"以前\"。", "正式说法：{{Saya menyarankan Anda membandingkan harga dulu.}}"]},
+      "recall": {"prompt": ["你给经理写邮件（正式）：\"我建议会议改到周五。\""], "kw": "saya · menyarankan agar · rapatnya · diundur · ke hari Jumat", "skel": "Saya ____ agar rapatnya ____ ke hari Jumat.", "ref": "Saya menyarankan agar rapatnya diundur ke hari Jumat.", "notes": ["menyarankan agar + 一整句，是正式场合最稳的说法。diundur = 被推迟。"]},
+      "recall2": {"prompt": ["你说（口语）：\"我朋友建议我坐火车去。\""], "kw": "temanku · nyaranin · aku · naik kereta", "skel": "Temanku ____ aku ____ kereta.", "ref": "Temanku nyaranin aku naik kereta."},
+      "final": {"cn": "\"医生建议我多喝水。\"", "ref": "Dokter menyarankan saya banyak minum air putih."},
+      "remind": "menyarankan = 给建议，对方可以不听；menyuruh = 叫人去做。"
+    },
+    {
+      "key": "saranku", "name": "Saranku sih, …", "head": "Saranku sih, … · 我的建议嘛",
+      "scene": {
+        "quotes": [
+          {"speaker": "Lina", "id": "Eh, iya. Tapi murah banget, cuma seratus ribu.", "cn": "诶，真的。可是好便宜，才十万盾。"},
+          {"speaker": "Dewi", "id": "Justru itu. Perak asli nggak mungkin semurah itu. Saranku sih, kita bandingin dulu di bengkel perajin.", "cn": "问题就在这儿。真银不可能这么便宜。我的建议嘛，我们先去工匠作坊比一比。"}
+        ],
+        "ask": "Lina 已经心动了。Dewi 没说 \"Jangan beli!\"（别买！），而是用 Saranku sih 开头。你觉得这样说是什么效果？",
+        "options": [
+          {"t": "更委婉，像朋友商量", "ok": true, "reply": ["对。直接说\"别买！\"像命令；\"我的建议嘛……\"是把想法摆出来，决定权还在 Lina。"]},
+          {"t": "更强硬，非听不可", "reply": ["正好相反。Saranku sih 是在软化语气，意思是\"我个人建议嘛\"，不是命令。"]}
+        ]
+      },
+      "explain": [
+        "拆开看：[[saran]]（建议，名词）+ [[-ku]]（我的）→ {{saranku}} = 我的建议。",
+        "[[sih]] 在这里让语气变软，带一点\"我个人觉得嘛\"的味道。合起来：**\"我的建议嘛，……\"**",
+        "朋友之间很自然。正式场合换成 {{Saran saya, …}}；也常听到 {{Kalau saranku sih, …}}"
+      ],
+      "simple": ["[[Saranku sih, …]] = 我的建议嘛，……（朋友间委婉给建议）\n正式说 [[Saran saya, …]]"],
+      "asks": [
+        {"label": "-ku 到底接什么？", "remedy": true, "src": "new", "reply": [
+          "-ku 有两种用法，要分清：",
+          "① 接在**名词**后 = \"我的\"：saranku（我的建议）、kakiku（我的脚，待会儿 Lina 会说 {{Kakiku udah pegel.}}）",
+          "② 接在**动词**后 = \"我\"（宾语）：{{Dia mencintaiku.}}（他爱我。）{{Dewi menyarankanku membandingkan harga dulu.}}（Dewi 建议我先比价。）",
+          "所以 menyarankanku 本身没错，意思是\"建议我\"，只是不等于\"我的建议\"。口语里\"建议我\"更常把\"我\"单独说：{{Dia nyaranin aku bandingin harga dulu.}}"]},
+        {"label": "sih 是什么意思？", "src": "new", "reply": [
+          "sih 在陈述句里常表示\"这是我个人的看法，不强加给你\"：{{Aku sih oke-oke aja.}}（我嘛，都行。）",
+          "在问句里是追问，带点不耐烦：{{Kenapa sih?}}（到底为什么啊？）今天 Dewi 用的是前一种。"]},
+        {"label": "词卡上怎么说的？", "from": "usage_note", "word": "saran"}
+      ],
+      "check": {
+        "q": ["朋友问你去 Kotagede 怎么玩。你想开口说\"我的建议嘛，早点去\"：", "[[____ sih, datang pagi-pagi.]]"],
+        "options": [
+          {"t": "Saranku", "v": "right", "why": ["对。saran（名词）+ -ku = 我的建议。"]},
+          {"t": "Menyarankanku", "v": "wrong", "why": ["menyarankanku 本身是对的词，-ku 接在动词后是\"建议**我**\"，比如 {{Dewi menyarankanku datang pagi.}}（Dewi 建议我早点来。）但放在这个空里意思就成了\"建议我嘛，早点去\"，不通。这里要的是\"我的建议\"：saran + -ku。"]},
+          {"t": "Sarankan", "v": "wrong", "why": ["sarankan 是 menyarankan 去掉 meN- 的形式，用在叫人做事的句子或 yang saya sarankan 这种结构里。它是动词，放在这里表达不了\"我的建议\"。"]}
+        ],
+        "backup": {
+          "q": ["换一题。这句话是什么意思？", "{{Dewi menyarankanku membandingkan harga dulu.}}"],
+          "options": [
+            {"t": "Dewi 建议我先比价。", "v": "right", "why": ["对。-ku 接在动词 menyarankan 后，是\"建议我\"。同样的意思也常说 {{Dewi menyarankan aku untuk membandingkan harga dulu.}} 或 {{Dewi menyarankan agar aku membandingkan harga dulu.}}"]},
+            {"t": "我的建议是 Dewi 先比价。", "v": "wrong", "why": ["\"我的建议\"是名词 saranku。这里的 -ku 在动词后面，是被建议的人\"我\"，提建议的是 Dewi。"]},
+            {"t": "Dewi 采纳了我的建议，先比价。", "v": "wrong", "why": ["\"采纳我的建议\"要说 {{Dewi ikut saranku.}} 这句里没有\"采纳\"，是 Dewi 在给我建议。"]}
+          ]
+        }
+      },
+      "say": {"prompt": ["同事问中午去哪儿吃。你委婉建议：\"我的建议嘛，去巷子尽头那家小饭馆，便宜又好吃。\""], "kw": "saranku sih · ke warung · di ujung gang · aja · murah · enak", "skel": "Saranku sih, ke warung di ____ aja. ____ dan ____.", "ref": "Saranku sih, ke warung di ujung gang aja. Murah dan enak.",
+        "notes": ["句尾的 aja（= saja）也在软化语气，意思是\"就去那家吧\"。"]},
+      "recall": {"prompt": ["朋友纠结买哪部手机。你委婉地说：\"我的建议嘛，买第二部就行。\""], "kw": "saranku sih · beli · yang kedua · aja", "skel": "____ sih, beli yang ____ aja.", "ref": "Saranku sih, beli yang kedua aja."},
+      "recall2": {"prompt": ["朋友问什么时候去动物园。你说：\"我的建议嘛，工作日去，人少。\""], "kw": "saranku sih · pergi · hari kerja · aja · lebih sepi", "skel": "Saranku sih, pergi ____ aja. Lebih ____.", "ref": "Saranku sih, pergi hari kerja aja. Lebih sepi."},
+      "final": {"cn": "\"我的建议嘛，坐摩的去就行。\"", "ref": "Saranku sih, naik ojek aja."},
+      "remind": "saranku = 我的建议（-ku 接名词）；menyarankanku = 建议我（-ku 接动词）。"
+    },
+    {
+      "key": "jangan", "name": "Jangan sampai …", "head": "Jangan sampai … · 千万别（落到坏结果）",
+      "scene": {
+        "quotes": [
+          {"speaker": "Dewi", "id": "Jangan sampai kamu ditipu.", "cn": "可别被骗了。"},
+          {"speaker": "Lina", "id": "Oke deh. Tapi jangan nyasar lagi, ya.", "cn": "好吧。不过可别再迷路了。"}
+        ],
+        "ask": "同一段对话里有两个\"别\"：Dewi 说 jangan sampai，Lina 说 jangan。你觉得有区别吗？",
+        "options": [
+          {"t": "有，jangan sampai 是\"可别落到某个结果\"", "ok": true, "reply": ["对，下面细讲。"]},
+          {"t": "没区别", "reply": ["有一点区别，下面讲。"]}
+        ]
+      },
+      "explain": [
+        "[[sampai]] 本来是\"到、到达\"。{{jangan sampai}} 就是\"别到……那一步\"，重点是一个**不想要的结果**：{{Jangan sampai kamu ditipu.}}（可别被骗了。）",
+        "[[jangan]] 是普通的\"别（做某事）\"：{{Jangan beli!}}（别买！）Lina 的 jangan nyasar lagi 也很自然；迷路介于动作和结果之间，两种说法都常听到。"
+      ],
+      "simple": ["[[jangan]] = 别（做某事）\n[[jangan sampai]] = 千万别（落到某个坏结果）"],
+      "asks": [
+        {"label": "课文里还有它的亲戚吗？", "remedy": true, "src": "card", "reply": [
+          "课文最后一句：{{Ia lega karena tidak sampai ditipu.}}（她松了口气，因为最后没被骗。）三个一起记，正好是故事的三个阶段：",
+          {"table": [["jangan sampai ditipu", "可别被骗（提醒）"], ["hampir ditipu", "差点被骗（经过）"], ["tidak sampai ditipu", "最后没被骗（结局）"]]}]},
+        {"label": "和 biar nggak 有什么区别？", "src": "new", "reply": [
+          "biar nggak / supaya tidak 是\"免得……\"，放在后半句说目的：{{Bawa peta, biar nggak nyasar.}}（带上地图，免得迷路。）jangan sampai 常单独成句，是直接的提醒。"]},
+        {"label": "换个场景", "src": "new", "reply": ["{{Jangan sampai telat, ya!}}（千万别迟到啊！）{{Jangan sampai lupa bawa paspor.}}（可别忘了带护照。）"]}
+      ],
+      "check": {
+        "q": ["朋友明天赶早班飞机，你提醒他：\"千万别误了飞机！\"哪句最好？"],
+        "options": [
+          {"t": "Jangan sampai ketinggalan pesawat!", "v": "right", "why": ["对。误机是一个不想要的结果，jangan sampai 正好是\"千万别……了\"。ketinggalan pesawat = 没赶上飞机。"]},
+          {"t": "Jangan ketinggalan pesawat!", "v": "ok", "why": ["能说，也有人这么说，意思能懂。只是\"误机\"是个结果，jangan sampai 更像中文\"千万别……了\"的提醒语气。"]},
+          {"t": "Tidak sampai ketinggalan pesawat!", "v": "wrong", "why": ["tidak sampai 是陈述\"结果没有……\"，讲已经发生的事：{{Untung aku tidak sampai ketinggalan pesawat.}}（幸好没误机。）不能拿来提醒别人。"]}
+        ],
+        "backup": {
+          "q": ["换一题。你讲自己的经历：\"幸好我最后没被骗。\""],
+          "options": [
+            {"t": "Untung aku tidak sampai ditipu.", "v": "right", "why": ["对。tidak sampai 讲最后的结局：没落到被骗那一步。"]},
+            {"t": "Untung aku jangan sampai ditipu.", "v": "wrong", "why": ["jangan 是提醒、劝别人，不能用来讲已经发生的事。"]},
+            {"t": "Untung aku hampir ditipu.", "v": "wrong", "why": ["hampir ditipu 是\"差点被骗\"，\"幸好差点被骗\"说不通。可以说：{{Aku hampir ditipu, untung Dewi memperhatikan capnya.}}"]}
+          ]
+        }
+      },
+      "say": {"prompt": ["朋友第一次自己去 Kotagede 买银器。你提醒他：\"可别被骗了，也别再迷路了！\""], "kw": "jangan sampai · ditipu · nyasar lagi · juga", "skel": "Jangan sampai ____, ya. Jangan sampai ____ lagi juga!", "ref": "Jangan sampai ditipu, ya. Jangan sampai nyasar lagi juga!",
+        "notes": ["一句话里同时用上了 jangan sampai 和 nyasar。juga 放句尾 = \"也\"。"]},
+      "recall": {"prompt": ["你提醒同事：\"可别把文件弄丢了！\""], "kw": "jangan sampai · dokumennya · hilang", "skel": "Jangan sampai ____ ____!", "ref": "Jangan sampai dokumennya hilang!", "notes": ["顺便复习：东西丢了用 hilang。"]},
+      "recall2": {"prompt": ["明早有面试，你提醒自己：\"可别睡过头！\""], "kw": "jangan sampai · kesiangan", "skel": "Jangan sampai ____!", "ref": "Jangan sampai kesiangan!", "notes": ["kesiangan = 睡过头、起晚了。"]},
+      "final": {"cn": "\"千万别把钱包落在出租车上！\"", "ref": "Jangan sampai dompetmu ketinggalan di taksi!"},
+      "remind": "jangan sampai = 千万别落到坏结果；tidak sampai = 最后没落到；hampir = 差点。"
+    }
+  ],
+  "reading": [
+    {
+      "key": "malah",
+      "sentence": "Mereka mengikuti peta di ponsel, tetapi malah masuk ke gang kecil yang berbelok-belok dan akhirnya nyasar hampir satu jam.",
+      "cn": "她们跟着手机上的地图走，结果反而钻进了弯弯曲曲的小巷，最后迷路了将近一个小时。",
+      "chunks": [["Mereka mengikuti peta di ponsel,", "她们跟着手机地图走，", ""], ["tetapi malah masuk ke gang kecil", "结果反而钻进了小巷", "malah = 反而、偏偏：结果和预期相反"], ["yang berbelok-belok", "弯弯曲曲的", "yang 把描述接在 gang 后面；belok 是拐弯，ber- 加重叠 = 一直拐来拐去"], ["dan akhirnya nyasar hampir satu jam.", "最后迷路了快一个小时", "时长直接放在后面"]],
+      "steal": ["这句最值得拿来用的是 [[malah]]：跟着地图本来该找到路，结果反而迷路。口语很常用：{{Disuruh istirahat, malah main HP.}}（叫他休息，他反而玩手机。）"],
+      "check": {"q": ["[[Aku pakai GPS, tapi ___ nyasar.]]（我用了导航，结果反而迷路了。）"], "options": [
+        {"t": "malah", "v": "right", "why": ["对。用了导航本该不迷路，结果反而迷路，就是 malah。"]},
+        {"t": "juga", "v": "wrong", "why": ["juga 是\"也\"：Aku juga nyasar.（我也迷路了。）没有\"反而\"的反转。"]},
+        {"t": "masih", "v": "ok", "why": ["tapi masih nyasar 能说，意思是\"还是迷路了\"，强调没改变；少了\"本来不该这样\"的意外感。题目要的是\"反而\"。"]}]},
+      "say": {"prompt": ["用 malah 说一句你自己的事。比如：本来想早睡，结果反而玩手机玩到半夜。"], "kw": "mau tidur cepat · tapi malah · main HP · sampai tengah malam", "skel": "Aku mau ____, tapi malah ____ sampai ____.", "ref": "Aku mau tidur cepat, tapi malah main HP sampai tengah malam.", "notes": ["内容不用和参考一样，只要是\"本来想 A，结果反而 B\"的结构就对。"]}
+    },
+    {
+      "key": "dulu",
+      "sentence": "Ia menyarankan Lina membandingkannya dulu di bengkel perajin.",
+      "cn": "她建议 Lina 先到工匠作坊去比较一下。",
+      "chunks": [["Ia menyarankan Lina", "她建议 Lina", "人直接放在 menyarankan 后面"], ["membandingkannya", "比较它", "-nya 指前面那条项链，免得重复 kalung itu"], ["dulu", "先", "放在动作后面是\"先（做这个）\"，不是\"以前\""], ["di bengkel perajin.", "在工匠作坊", ""]],
+      "steal": ["对比一下：{{Makan dulu.}} = 先吃饭。{{Dulu aku tinggal di Medan.}} = 我以前住在棉兰。放在句首多是\"以前\"，放在动作后面是\"先\"。"],
+      "check": {"q": ["[[Kita makan dulu, baru kerja.]] 是什么意思？"], "options": [
+        {"t": "我们先吃饭，再工作。", "v": "right", "why": ["对。dulu 在动作后面是\"先\"，baru 是\"然后才\"。"]},
+        {"t": "我们以前吃过饭，再工作。", "v": "wrong", "why": ["这里的 dulu 跟在 makan 后面，是\"先\"。\"以前\"的 dulu 一般放在句首：{{Dulu kita sering makan di sini.}}（我们以前常在这儿吃。）"]}]}
+    }
+  ],
+  "dialogue": {
+    "head": "对话 · 你来演 Dewi",
+    "intro": ["最后把今天学的放回原对话。你来演 Dewi，我来演 Lina 和老爷爷。每一轮我先说 Dewi 想做什么，你看中文先说。"],
+    "turns": [
+      {"line": 0, "scene": "小摊前，Lina 拿着一条很便宜的\"真银\"项链，准备买。", "intent": "Dewi 想做三件事：叫住 Lina，问她注意到没有，指出问题。", "kw": "Lin, bentar · kamu merhatiin nggak · di bagian dalam kalung ini · nggak ada cap 925", "skel": "Lin, ____. Kamu ____ nggak? Di bagian dalam kalung ini nggak ada ____.", "notes": ["bentar = sebentar，\"等一下\"，用来叫住别人。"]},
+      {"line": 2, "intent": "Dewi 想把 Lina 说的\"便宜\"反过来当理由，然后委婉建议，再提醒最坏的结果。", "kw": "justru itu · nggak mungkin semurah itu · saranku sih · bandingin dulu · jangan sampai · ditipu", "skel": "____ itu. Perak asli nggak mungkin ____ itu. ____ sih, kita bandingin dulu di bengkel perajin. Jangan ____ kamu ____.", "notes": ["Justru itu = \"问题恰恰就在这儿\"，把对方的话拿来反驳。", "semurah itu = 这么便宜（se- + 形容词 + itu）。"]},
+      {"line": 4, "intent": "注意 Lina 的 kakiku：-ku 接在名词后，\"我的脚\"。Dewi 想先让她放心，再换个办法。", "kw": "tenang · kali ini · nggak usah ngandelin peta · tanya bapak itu aja", "skel": "____, kali ini kita nggak usah ____ peta. Tanya bapak itu ____.", "notes": ["Tenang 字面是\"冷静\"，安慰人时就是\"放心\"。nggak usah = 不用；ngandelin = mengandalkan。"]}
+    ],
+    "tail": ["问路时开头的 Permisi 和句尾的 ya 让问题很客气。老爷爷说的 belok 就是课文 berbelok-belok 里的\"拐弯\"。"]
+  },
+  "next": "正式版到这里会带你回整页，做今晚的改写、六道小测、复盘和课末回想。这些都不变。"
+}

@@ -77,3 +77,8 @@
 | `vocab_view_mode` | 词库页当前的"已认识 / 复习"视图（空则无） | `vocab-controller-20260917.js` |
 | `master_core_count_v1`、`master_top1000_weak_merge_result`、`master_top1000_weak_added_count` | 主词库与弱项合并的内部结果/计数 | `master-top1000-weak-merge.js` |
 | `selected_vocab_library`、`vocab_progress_master` | 旧版词库选择/进度；目前只有未加载的旧脚本引用（`master-library-patch.js`、`master-vocab-integration.js`），运行时不读写 | （死代码，见前端整理 PR #138） |
+
+
+## 深讲版带学（2026-10-19）
+
+`data/deep-teach.js` 不新增任何存储键，不读取或写入持久学习记录。讲解开关、自评、提示、回想队列与结束诊断只存在于当前覆盖层内存，关闭清空。切到「用旧版带学」后，由旧版继续按既有 `indo_guided_lesson_v1` 规则工作；正式训练、小测、课末回想和掌握规则保持不变。
