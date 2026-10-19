@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-19T00:32:19.845Z",
+    "runtime_generated_at": "2026-10-19T03:40:41.766Z",
     "lesson_watermark": "2026-10-19 08:00",
     "index_updated": "2026-10-19",
-    "runtime_hash": "b0d8e8b1d193a5cdc738da314c3299c254e394ff2de209e7b820f41c5eec8be5",
+    "runtime_hash": "3d4b39d5ce1864c1af84aada98d6879154d7ad059faec8f4fd7b1916e11db0db",
     "index_hash": "d614963df55d4b18e788a1fd25dfeacc783484d0f7a330dfe3b941212b0e54a8",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
@@ -1104,6 +1104,16 @@
         "疏忽；不在意"
       ],
       [
+        "kinerja",
+        1,
+        1,
+        "2026-10-19T02:10:30.516Z",
+        "2026-10-19T02:10:30.516Z",
+        "（工作）表现、绩效；（机器）性能",
+        "kerja",
+        "工作"
+      ],
+      [
         "keluhan",
         1,
         1,
@@ -1142,16 +1152,6 @@
         "建议",
         "saran",
         "建议"
-      ],
-      [
-        "melelahkan",
-        1,
-        1,
-        "2026-10-15T08:24:51.774Z",
-        "2026-10-15T08:24:51.774Z",
-        "令人疲惫的；使人累",
-        "lelah",
-        "累、疲劳"
       ],
       [
         "merayakan",
@@ -1292,6 +1292,16 @@
         "完整；齐全",
         "lengkap",
         "完整；齐全"
+      ],
+      [
+        "melelahkan",
+        1,
+        1,
+        "2026-10-15T08:24:51.774Z",
+        "2026-10-15T08:24:51.774Z",
+        "令人疲惫的；使人累",
+        "lelah",
+        "累、疲劳"
       ],
       [
         "berjanji",
@@ -1442,16 +1452,6 @@
         "限制；控制在一定范围内",
         "batas",
         ""
-      ],
-      [
-        "menerapkan",
-        1,
-        1,
-        "2026-10-14T12:01:05.107Z",
-        "2026-10-15T08:29:12.892Z",
-        "应用；实施；推行",
-        "terap",
-        "应用；实施（词根少单独使用）"
       ],
       [
         "janjian",
@@ -3204,16 +3204,6 @@
         ""
       ],
       [
-        "kinerja",
-        2,
-        0,
-        "",
-        "",
-        "（工作）表现、绩效；（机器）性能",
-        "kerja",
-        "工作"
-      ],
-      [
         "bencana alam",
         2,
         0,
@@ -3458,6 +3448,14 @@
         ]
       ],
       [
+        "kinerja",
+        66,
+        [
+          "lesson_wrong",
+          "dont"
+        ]
+      ],
+      [
         "keluhan",
         66,
         [
@@ -3483,14 +3481,6 @@
       ],
       [
         "menyarankan",
-        66,
-        [
-          "quick_wrong",
-          "dont"
-        ]
-      ],
-      [
-        "melelahkan",
         66,
         [
           "quick_wrong",
