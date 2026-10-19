@@ -1,0 +1,351 @@
+{
+  "date": "2026-10-19",
+  "session": "am",
+  "time": "08:00",
+  "day": 59,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Skripsi, Laptop Baru, dan Malam Film · 论文、新电脑和电影之夜",
+  "new_words": [
+    "mengangsur",
+    "laga",
+    "misteri",
+    "fantasi",
+    "skripsi",
+    "kinerja",
+    "bencana alam",
+    "dimaksudkan",
+    "menghirup",
+    "gejala"
+  ],
+  "vocab": [
+    {
+      "word": "mengangsur",
+      "display": "mengangsur",
+      "audio_text": "mengangsur",
+      "cn": "分期付款；分期偿还",
+      "en": "to pay in installments",
+      "root": "angsur",
+      "root_cn": "一点一点地（推进、偿还）",
+      "formation": "meN- + angsur → mengangsur（词根以元音开头，meN- 变 meng-）。名词 angsuran = 每一期的分期款（angsuran per bulan 每月分期款）。同词根还有 berangsur-angsur（逐渐地）。常见搭配：mengangsur motor / rumah / utang / pinjaman；membeli … dengan cara mengangsur（用分期的方式买……）；mengangsur selama dua tahun（分两年付清）。",
+      "example": "Rina membeli laptop baru dengan cara mengangsur selama dua belas bulan, lima ratus ribu rupiah per bulan.",
+      "example_cn": "丽娜用分期付款的方式买了一台新笔记本电脑，分十二个月，每月五十万印尼盾。",
+      "synonym_note": "mengangsur 和 mencicil 意思相同，都是“分期付”；mengangsur 偏正式，常见于银行、合同、新闻；mencicil 更日常。名词对应：angsuran = cicilan（每期款）。口语说法：nyicil（Aku nyicil HP-nya enam bulan.）；跟银行、财务部门谈话或写正式文字时用 mengangsur。",
+      "is_oral_new": false
+    },
+    {
+      "word": "laga",
+      "display": "laga",
+      "audio_text": "laga",
+      "cn": "动作（片）；打斗；（体育）比赛",
+      "en": "action (film); fight; match (sports)",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词，日常几乎不单独用，多在固定搭配里：film laga（动作片）、adegan laga（打斗场面）、aktor laga（动作片演员）。体育新闻里 laga = pertandingan（比赛）：laga final（决赛）、laga perdana（首场比赛）。",
+      "example": "Dewi suka banget film laga, apalagi yang banyak adegan berantem sama kejar-kejaran mobil.",
+      "example_cn": "德维特别喜欢动作片，尤其是打斗和飞车追逐场面多的那种。（banget = sekali，sama = dan）",
+      "synonym_note": "film laga 是印尼语的正式说法，年轻人聊天常直接说 film action。说体育比赛时，日常说 pertandingan；laga 多见于体育新闻标题（Laga final malam ini…）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "misteri",
+      "display": "misteri",
+      "audio_text": "misteri",
+      "cn": "谜；神秘的事；悬疑（片、小说）",
+      "en": "mystery",
+      "root": "",
+      "root_cn": "",
+      "formation": "外来词（来自 mystery）。常见搭配：film misteri（悬疑片）、novel misteri（悬疑小说）、masih menjadi misteri（仍然是个谜）、memecahkan misteri（解开谜团）。",
+      "example": "Isi surat lama itu masih menjadi misteri; Nenek tidak pernah mau menceritakan rahasianya.",
+      "example_cn": "那封旧信的内容至今还是个谜；奶奶从来不肯说出其中的秘密。",
+      "synonym_note": "misteri 是名词（谜、悬疑）；形容词是 misterius（神秘的）：pria misterius（神秘男子）。film misteri 是让人猜谜、找真相的悬疑片，不等于 film horor（恐怖片）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "fantasi",
+      "display": "fantasi",
+      "audio_text": "fantasi",
+      "cn": "幻想；奇幻（片、故事）",
+      "en": "fantasy",
+      "root": "",
+      "root_cn": "",
+      "formation": "外来词（来自 fantasy）。常见搭配：film fantasi（奇幻片）、cerita fantasi（奇幻故事）、dunia fantasi（幻想世界）。雅加达有名的游乐园 Dufan 就是 Dunia Fantasi 的缩写。",
+      "example": "Film fantasi favorit adik saya bercerita tentang seorang anak yang bisa berbicara dengan hewan.",
+      "example_cn": "我弟弟最喜欢的奇幻片讲的是一个能和动物说话的孩子。",
+      "synonym_note": "fantasi 指想象出来的、不存在的世界或情节；日常说“空想、瞎想”更常用 khayalan（Itu cuma khayalan.）。film fantasi 有魔法、神奇生物；film horor 是恐怖片。",
+      "is_oral_new": false
+    },
+    {
+      "word": "skripsi",
+      "display": "skripsi",
+      "audio_text": "skripsi",
+      "cn": "本科毕业论文",
+      "en": "undergraduate thesis",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词，大学生天天挂在嘴边。常见搭配：mengerjakan / menulis skripsi（写论文）、sidang skripsi（论文答辩）、dosen pembimbing skripsi（论文导师）、bab tiga skripsi（论文第三章）。",
+      "example": "Rina sedang mengerjakan skripsi tentang banjir di Jakarta. Setiap hari ia membaca belasan jurnal.",
+      "example_cn": "丽娜正在写一篇关于雅加达洪水的毕业论文。她每天要读十几篇期刊论文。",
+      "synonym_note": "按学位分：skripsi（本科）、tesis（硕士）、disertasi（博士）。口语说法：ngerjain skripsi（= mengerjakan skripsi），同学之间聊天常说 Lagi ngerjain skripsi, nih.；跟老师说话或写正式文字用 mengerjakan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kinerja",
+      "display": "kinerja",
+      "audio_text": "kinerja",
+      "cn": "（工作）表现、绩效；（机器）性能",
+      "en": "performance (of work, a person or a machine)",
+      "root": "kerja",
+      "root_cn": "工作",
+      "formation": "和 kerja（工作）同源的名词，指“干得怎么样、运行得好不好”，偏正式。常见搭配：kinerja tim（团队表现）、penilaian kinerja（绩效考核）、kinerja laptop / mesin（电脑 / 机器的性能）；kinerjanya meningkat / menurun（表现提升 / 下降）。",
+      "example": "Kinerja laptop lama Rina makin menurun; membuka satu file saja bisa makan waktu lima menit.",
+      "example_cn": "丽娜那台旧电脑的性能越来越差，光打开一个文件就要花五分钟。",
+      "synonym_note": "kinerja 看的是工作或运行的效果；prestasi 是“成绩、成就”（prestasi belajar 学习成绩，berprestasi 有出色成绩）。说电脑、手机时，日常也常用 performa（Performa HP ini bagus.）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bencana alam",
+      "display": "bencana alam",
+      "audio_text": "bencana alam",
+      "cn": "自然灾害",
+      "en": "natural disaster",
+      "root": "",
+      "root_cn": "",
+      "formation": "名词词组：bencana（灾难）+ alam（自然）。常见搭配：korban bencana alam（自然灾害的受灾者）、daerah rawan bencana（灾害易发地区）、terjadi bencana alam（发生自然灾害）。banjir（洪水）、gempa bumi（地震）都属于 bencana alam。",
+      "example": "Indonesia sering mengalami bencana alam, seperti banjir dan gempa bumi, sehingga warga perlu tahu cara menyelamatkan diri.",
+      "example_cn": "印度尼西亚经常发生洪水、地震等自然灾害，所以居民需要知道怎么自救。",
+      "synonym_note": "bencana 可以单用（bencana banjir 洪灾）；musibah 多指个人或家庭遭遇的不幸（Keluarganya sedang kena musibah. 他家正遭遇不幸），不一定是自然灾害。",
+      "is_oral_new": false
+    },
+    {
+      "word": "dimaksudkan",
+      "display": "dimaksudkan",
+      "audio_text": "dimaksudkan",
+      "cn": "意在；旨在；（被）打算用来……",
+      "en": "to be intended (to / for)",
+      "root": "maksud",
+      "root_cn": "意思；目的",
+      "formation": "di- + maksud + -kan（被动式）。最常见的句型：X dimaksudkan untuk / agar …（X 的用意是……）。主动形 memaksudkan 很少用。另一个常用说法 yang dimaksud（所说的那个）：Rumah yang dimaksud ada di ujung gang.",
+      "example": "Tugas kelompok ini dimaksudkan agar setiap anggota belajar bekerja sama.",
+      "example_cn": "这项小组作业的用意是让每个成员学会合作。",
+      "synonym_note": "dimaksudkan 偏书面，常见于说明、通知、叙述；日常说“为的是……”常用 tujuannya … / supaya …。口语说法：maksudnya biar …（Maksudnya biar kamu nggak stres.）；正式说明或书面里用 dimaksudkan untuk / agar。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menghirup",
+      "display": "menghirup",
+      "audio_text": "menghirup",
+      "cn": "吸入；呼吸（某种空气、气味）",
+      "en": "to inhale; to breathe in",
+      "root": "hirup",
+      "root_cn": "吸；啜",
+      "formation": "meN- + hirup → menghirup（词根以 h 开头，meN- 变 meng-）。后面直接接吸进去的东西：menghirup aroma kopi（闻咖啡的香味）、menghirup asap rokok（吸入烟）、menghirup napas dalam-dalam（深深吸一口气）。",
+      "example": "Rina mulai gelisah setelah tiga jam di depan laptop. Ia menutup laptopnya, lalu menghirup napas dalam-dalam.",
+      "example_cn": "在电脑前坐了三个小时后，丽娜开始坐立不安。她合上电脑，深深吸了一口气。",
+      "synonym_note": "bernapas 是“呼吸”这个动作本身，后面不接宾语（Dia sulit bernapas. 他呼吸困难）；menghirup 要说出吸进去的是什么（气味、烟、一口气）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gejala",
+      "display": "gejala",
+      "audio_text": "gejala",
+      "cn": "症状；迹象；现象",
+      "en": "symptom; sign",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯词。说病：gejala flu（感冒症状）、gejala awal（早期症状）、tanpa gejala（无症状）、mengalami gejala …（出现……症状）。说社会：gejala sosial（社会现象）。",
+      "example": "Kalau muncul gejala flu, sebaiknya istirahat yang cukup dan minum banyak air putih.",
+      "example_cn": "如果出现感冒症状，最好充分休息、多喝白开水。",
+      "synonym_note": "gejala 既可以是病的“症状”，也可以是事情的“迹象、现象”；keluhan 是病人自己说的不适（Apa keluhannya? 哪里不舒服？），gejala 是表现出来的症状。告诉医生“我有……症状”可以说 Saya mengalami gejala …。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "tertentu",
+    "nentuin",
+    "peristiwa",
+    "rupanya",
+    "beresin"
+  ],
+  "sentences": [
+    {
+      "text": "Kamu aja yang nentuin filmnya: laga, misteri, atau fantasi? Aku ikut aja, asalkan bukan film horor.",
+      "cn": "你来定看哪部吧：动作片、悬疑片还是奇幻片？我都行，只要不是恐怖片。（aja = saja，nentuin = menentukan）"
+    },
+    {
+      "text": "Rupanya kinerja laptop lama itu menurun karena terlalu banyak file. Rina sudah menghapus file yang tidak perlu, tetapi laptopnya tetap lambat.",
+      "cn": "原来那台旧电脑性能下降是因为文件太多。丽娜已经删掉了不需要的文件，可电脑还是很慢。"
+    },
+    {
+      "text": "Dosen pembimbing meminta Rina menambahkan penjelasan tentang metode penelitian di skripsinya.",
+      "cn": "导师要求丽娜在论文里补充关于研究方法的说明。"
+    },
+    {
+      "text": "Setiap pagi Rina berjalan kaki menuju kampus sambil menghirup aroma kopi dari warung-warung di pinggir jalan.",
+      "cn": "每天早上丽娜步行去学校，一路闻着路边小摊飘来的咖啡香。"
+    },
+    {
+      "text": "Setelah bencana alam itu, banyak warga membutuhkan bantuan, terutama air bersih dan obat-obatan.",
+      "cn": "那场自然灾害之后，很多居民需要援助，尤其是干净的水和药品。"
+    }
+  ],
+  "reading": {
+    "text": "Rina sedang mengerjakan skripsi tentang peristiwa banjir besar di Jakarta pada tahun 2007. Ia memilih topik ini karena bencana alam seperti banjir sering terjadi di kotanya. Sayangnya, kinerja laptop lamanya makin menurun, sehingga ia membeli laptop baru dengan cara mengangsur selama setahun. Minggu ini Rina kurang tidur dan mulai merasakan gejala flu. Sabtu malam, Dewi, teman kosnya, mengajaknya menonton film. Ajakan itu dimaksudkan untuk menghibur Rina. Dewi bertanya, \"Mau film laga, misteri, atau fantasi?\" Rina memilih film misteri. Awalnya ia ragu, tetapi rupanya filmnya seru sekali. Sesudah menonton, mereka duduk di teras kos. Rina menghirup napas dalam-dalam dan merasa lebih tenang. Malam itu ia tidur lebih nyenyak.",
+    "cn": "丽娜正在写毕业论文，题目是2007年雅加达的那场大洪水事件。她选这个题目，是因为洪水这样的自然灾害在她的城市经常发生。可惜她那台旧电脑的性能越来越差，于是她用分期付款的方式买了一台新电脑，分一年付清。这周丽娜睡得太少，开始出现感冒症状。星期六晚上，和她住同一个寄宿公寓（kos）的朋友德维约她去看电影。德维约她，是想让她开心一下。德维问：“想看动作片、悬疑片，还是奇幻片？”丽娜选了悬疑片。一开始她还有点犹豫，没想到电影非常精彩。看完电影，她们坐在寄宿公寓的露台上。丽娜深深吸了一口气，觉得心里平静多了。那天晚上，她睡得比平时香。"
+  },
+  "quiz": [
+    {
+      "question": "Dewi: “Aku ikut aja. Kamu yang ___ filmnya, ya.”（你来定看哪部。）",
+      "options": [
+        "tertentu",
+        "ditentukan",
+        "nentuin",
+        "tentu"
+      ],
+      "answer_index": 2,
+      "answer": "nentuin",
+      "explain": "主语是 kamu，后面要一个主动动词“决定”，朋友聊天用口语形 nentuin（= menentukan，复习词）。tertentu 是形容词“特定的”（pada hari tertentu）；ditentukan 是被动“被决定”，要说成 Filmnya ditentukan sama kamu，主语得是电影；tentu 是“当然、一定”，不能当“决定”用。四个词同一个词根 tentu，看清词缀就能分开。"
+    },
+    {
+      "question": "Sebelum membeli laptop baru, Rina membandingkan ___ beberapa merek: mana yang paling cepat dan tidak gampang panas.",
+      "options": [
+        "kinerja",
+        "prestasi",
+        "gejala",
+        "laga"
+      ],
+      "answer_index": 0,
+      "answer": "kinerja",
+      "explain": "比较电脑“快不快、容不容易发热”，比的是性能：kinerja laptop。prestasi 是人的“成绩、成就”，不说电脑；gejala 是“症状、迹象”；laga 只用在 film laga、laga final 这类搭配里。"
+    },
+    {
+      "question": "Rina demam, batuk, dan sakit tenggorokan. Kata dokter, itu ___ flu biasa, bukan penyakit yang parah.",
+      "options": [
+        "misteri",
+        "gejala",
+        "peristiwa",
+        "bencana"
+      ],
+      "answer_index": 1,
+      "answer": "gejala",
+      "explain": "发烧、咳嗽、喉咙痛是感冒的“症状”：gejala flu。peristiwa（复习词）是已经发生的“事件”（peristiwa banjir 2007），不能指身体的症状；misteri 是“谜”；bencana 是“灾难”，都不合语境。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语给朋友发消息：说说你最近在忙的一件大事（论文、工作项目或考试），为什么这周不能出去玩，以及忙完以后想怎么放松。至少用本课两个新词（如 skripsi、kinerja、gejala、menghirup、mengangsur），并用上复习词 beresin 或 tertentu 中的至少一个。",
+    "reference_answer": "Maaf ya, minggu ini aku belum bisa ikut nonton. Aku harus beresin bab tiga skripsiku dulu, soalnya besok file-nya harus udah aku unggah ke sistem kampus, dan dosen pembimbingku cuma bisa ditemui pada hari-hari tertentu. Kalau udah selesai, aku pengin ke Puncak, duduk di kafe sambil menghirup aroma kopi panas!",
+    "reference_cn": "不好意思啊，这周我还不能一起去看电影。我得先把论文第三章弄完，因为明天就得把文件上传到学校系统，而且我的导师只有特定的几天才能见到。等忙完了，我想去普恩查克山区，坐在咖啡馆里闻着热咖啡的香味！（beresin = membereskan，soalnya = karena，udah = sudah，cuma = hanya，pengin = ingin，buat = untuk）"
+  },
+  "review": [
+    "3秒主动提取：不看词卡，看中文说印尼语——分期付款、动作（片）、谜/悬疑、奇幻、本科毕业论文、绩效/性能、自然灾害、意在、吸入（空气）、症状；再各补半句：“membeli laptop dengan cara …（分期）”、“film …（动作片）”、“… napas dalam-dalam（深吸一口气）”、“… flu（感冒症状）”、“Ajakan itu … untuk menghibur Rina（意在）”。",
+    "易混词与搭配：mengangsur（正式）vs mencicil / nyicil（日常、口语），每期款 angsuran = cicilan；kinerja（工作、机器的表现：kinerja tim、kinerja laptop）vs prestasi（成绩、成就）；gejala（表现出来的症状）vs keluhan（病人自述的不适）；menghirup + 吸进的东西 vs bernapas（呼吸动作本身）；misteri（名词：谜）vs misterius（形容词：神秘的）；skripsi（本科）vs tesis（硕士）vs disertasi（博士）；film laga = film action（口语）。",
+    "重点复习词应用（同词根一组 tentu）：tertentu 是形容词“特定的、某些”——Dosen pembimbing hanya bisa ditemui pada hari-hari tertentu.（导师只有特定的几天才能见到。）；nentuin 是 menentukan 的口语“决定、定下来”——Kamu aja yang nentuin filmnya.（你来定看哪部。）别和 tentu（当然、一定）混。再用 peristiwa、rupanya、beresin 各说一句：Peristiwa banjir tahun 2007 masih diingat warga Jakarta.（2007年的洪水事件雅加达人至今还记得。）；Awalnya ragu, tetapi rupanya filmnya seru sekali.（一开始还犹豫，没想到电影这么精彩。）；Beresin dulu bab tiga, baru kita nonton.（先把第三章弄完，我们再去看电影。）"
+  ],
+  "review_cards": {
+    "recall": [
+      { "cn": "分期付款", "id": "mengangsur" },
+      { "cn": "动作（片）", "id": "laga" },
+      { "cn": "谜；悬疑", "id": "misteri" },
+      { "cn": "幻想；奇幻", "id": "fantasi" },
+      { "cn": "本科毕业论文", "id": "skripsi" },
+      { "cn": "绩效；性能", "id": "kinerja" },
+      { "cn": "自然灾害", "id": "bencana alam" },
+      { "cn": "意在；旨在", "id": "dimaksudkan" },
+      { "cn": "吸入（空气、气味）", "id": "menghirup" },
+      { "cn": "症状；迹象", "id": "gejala" },
+      { "cn": "决定（口语）", "id": "nentuin" },
+      { "cn": "事件", "id": "peristiwa" }
+    ],
+    "frames": [
+      "Rina membeli laptop dengan cara … （分期）",
+      "Rina … napas dalam-dalam. （深吸一口气）",
+      "Saya mengalami … flu. （症状）",
+      "Ajakan itu … untuk menghibur Rina. （意在）",
+      "Kamu aja yang … filmnya. （决定）"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          { "id": "mengangsur", "cn": "分期付（正式）" },
+          { "id": "mencicil", "cn": "分期付（日常）" },
+          { "id": "nyicil", "cn": "分期付（口语）" }
+        ],
+        "note": "意思一样，只是正式程度不同；每期款叫 angsuran 或 cicilan。"
+      },
+      {
+        "items": [
+          { "id": "kinerja", "cn": "工作、机器的表现" },
+          { "id": "prestasi", "cn": "成绩、成就" }
+        ],
+        "note": "电脑、员工“干得怎么样”用 kinerja；考试、比赛取得的成绩用 prestasi。"
+      },
+      {
+        "items": [
+          { "id": "menghirup", "cn": "吸入（后接吸的东西）" },
+          { "id": "bernapas", "cn": "呼吸（动作本身）" }
+        ],
+        "note": "menghirup aroma kopi（闻咖啡香）；Dia sulit bernapas.（他呼吸困难）"
+      },
+      {
+        "items": [
+          { "id": "tertentu", "cn": "特定的" },
+          { "id": "nentuin", "cn": "决定（口语）" },
+          { "id": "tentu", "cn": "当然、一定" }
+        ],
+        "note": "同词根 tentu：ter- 形容词“特定的”，nentuin = menentukan“决定”，tentu 本身是“当然”。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "tertentu / nentuin",
+        "usage": "tertentu 放在名词后：pada hari tertentu；nentuin 是朋友间说“决定”。",
+        "examples": [
+          { "id": "Dosen pembimbing hanya bisa ditemui pada hari-hari tertentu.", "cn": "导师只有特定的几天才能见到。" },
+          { "id": "Kamu aja yang nentuin filmnya.", "cn": "你来定看哪部。" }
+        ]
+      },
+      {
+        "word": "peristiwa",
+        "usage": "已经发生的具体事件，常接时间或事件名。",
+        "examples": [
+          { "id": "Peristiwa banjir tahun 2007 masih diingat warga Jakarta.", "cn": "2007年的洪水事件雅加达人至今还记得。" }
+        ]
+      },
+      {
+        "word": "rupanya",
+        "usage": "说出“原来、没想到”的发现，常放句首。",
+        "examples": [
+          { "id": "Awalnya ragu, tetapi rupanya filmnya seru sekali.", "cn": "一开始还犹豫，没想到电影这么精彩。" }
+        ]
+      },
+      {
+        "word": "beresin",
+        "usage": "口语“把……弄完、收拾好”，正式说 membereskan / menyelesaikan。",
+        "examples": [
+          { "id": "Beresin dulu bab tiga, baru kita nonton.", "cn": "先把第三章弄完，我们再去看电影。" }
+        ]
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "gejala",
+      "kinerja",
+      "nentuin"
+    ],
+    "patterns": [
+      {
+        "pattern": "… dengan cara …",
+        "cn": "用……的方式（做某事）",
+        "example": "Rina membeli laptop baru dengan cara mengangsur selama dua belas bulan, lima ratus ribu rupiah per bulan.",
+        "example_cn": "丽娜用分期付款的方式买了一台新笔记本电脑，分十二个月，每月五十万印尼盾。"
+      },
+      {
+        "pattern": "… dimaksudkan untuk …",
+        "cn": "……的用意是……；……是为了……",
+        "example": "Ajakan itu dimaksudkan untuk menghibur Rina.",
+        "example_cn": "德维约她，是想让她开心一下。"
+      }
+    ]
+  }
+}
