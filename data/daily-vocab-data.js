@@ -5542,22 +5542,26 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "08:00",
-      "2026-09-02"
+      "2026-09-02",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-02 08:00",
-    "last_seen": "2026-09-02 08:00",
+    "last_seen": "2026-10-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-02"
+      "2026-09-02",
+      "2026-10-19"
     ],
     "root_cn": "追；赶",
-    "example": "Hari ini aku harus ngejar deadline sebelum jam lima.",
-    "example_cn": "今天我得在五点前赶上截止时间。",
+    "example": "Raka nggak mikir panjang; dia langsung lari ngejar bus yang hampir berangkat.",
+    "example_cn": "Raka 没多想，直接跑去追那辆快要开走的公交车。（mikir = berpikir）",
     "lesson_occurrences": [
-      "2026-09-02 08:00"
+      "2026-09-02 08:00",
+      "2026-10-19 18:00"
     ]
   },
   {
@@ -10773,23 +10777,27 @@ window.DAILY_VOCAB_DB = [
     "en": "experience",
     "root": "alam",
     "root_cn": "经历；体验（词根用法）",
-    "example": "Pengalaman kerja di Indonesia sangat membantu aku.",
-    "example_cn": "在印尼的工作经历对我帮助很大。",
+    "example": "Pengalaman kerja dua tahun di bagian keuangan membuat Raka berani melamar jabatan yang lebih tinggi.",
+    "example_cn": "在财务部两年的工作经验，让 Raka 敢去申请更高的职位。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-16 08:00",
+    "last_seen": "2026-10-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-10-19"
     ],
     "lesson_occurrences": [
-      "2026-09-16 08:00"
+      "2026-09-16 08:00",
+      "2026-10-19 18:00"
     ]
   },
   {
@@ -11391,23 +11399,27 @@ window.DAILY_VOCAB_DB = [
     "en": "nature",
     "root": "alam",
     "root_cn": "自然",
-    "example": "Aku suka tempat yang dekat dengan alam.",
-    "example_cn": "我喜欢亲近自然的地方。",
+    "example": "Kami suka liburan ke gunung karena bisa lebih dekat dengan alam dan menghirup udara segar.",
+    "example_cn": "我们喜欢去山里度假，因为能更亲近大自然，呼吸新鲜空气。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-09-18 08:00",
+    "last_seen": "2026-10-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-10-19"
     ],
     "lesson_occurrences": [
-      "2026-09-18 08:00"
+      "2026-09-18 08:00",
+      "2026-10-19 18:00"
     ]
   },
   {
@@ -15366,25 +15378,27 @@ window.DAILY_VOCAB_DB = [
     "en": "unlucky; damn",
     "root": "sial",
     "root_cn": "倒霉；不走运",
-    "example": "Sial, payungku ketinggalan di kantor.",
-    "example_cn": "真倒霉，我的伞落在办公室了。",
+    "example": "Sial, kita lupa isi bensin tadi, padahal pom bensin berikutnya masih jauh.",
+    "example_cn": "糟了，我们刚才忘了加油，可下一个加油站还远着呢。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-28 18:00",
-    "last_seen": "2026-10-11 18:00",
+    "last_seen": "2026-10-19 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
       "2026-09-28",
-      "2026-10-11"
+      "2026-10-11",
+      "2026-10-19"
     ],
     "lesson_occurrences": [
       "2026-09-28 18:00",
-      "2026-10-11 18:00"
+      "2026-10-11 18:00",
+      "2026-10-19 18:00"
     ]
   },
   {
@@ -21053,23 +21067,27 @@ window.DAILY_VOCAB_DB = [
     "en": "area; zone",
     "root": "kawasan",
     "root_cn": "区域；地带（本身当作词根）",
-    "example": "Kawasan ini ramai kalau akhir pekan, jadi parkir susah.",
-    "example_cn": "这一带周末人很多，所以很难停车。",
+    "example": "Banyak penduduk di kawasan Ciater bekerja di kebun teh atau membuka warung.",
+    "example_cn": "芝亚特一带的很多居民在茶园工作，或者开小吃店。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-14 08:00",
-    "last_seen": "2026-10-14 08:00",
+    "last_seen": "2026-10-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-14"
+      "2026-10-14",
+      "2026-10-19"
     ],
     "lesson_occurrences": [
-      "2026-10-14 08:00"
+      "2026-10-14 08:00",
+      "2026-10-19 18:00"
     ]
   },
   {
@@ -22665,23 +22683,26 @@ window.DAILY_VOCAB_DB = [
     "en": "performance (of work, a person or a machine)",
     "root": "kerja",
     "root_cn": "工作",
-    "example": "Kinerja laptop lama Rina makin menurun; membuka satu file saja bisa makan waktu lima menit.",
-    "example_cn": "丽娜那台旧电脑的性能越来越差，光打开一个文件就要花五分钟。",
+    "example": "Di tanjakan, kinerja mesin mobil tua Raka menurun, jadi mobilnya jalan pelan sekali.",
+    "example_cn": "在上坡路上，Raka 那辆旧车的发动机性能下降了，所以车开得特别慢。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-19 08:00",
-    "last_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-19"
     ],
     "lesson_occurrences": [
-      "2026-10-19 08:00"
+      "2026-10-19 08:00",
+      "2026-10-19 18:00"
     ]
   },
   {
@@ -22763,25 +22784,104 @@ window.DAILY_VOCAB_DB = [
     "word": "gejala",
     "cn": "症状；迹象；现象",
     "en": "symptom; sign",
-    "root": "",
-    "root_cn": "",
-    "example": "Kalau muncul gejala flu, sebaiknya istirahat yang cukup dan minum banyak air putih.",
-    "example_cn": "如果出现感冒症状，最好充分休息、多喝白开水。",
+    "root": "gejala",
+    "root_cn": "症状；迹象（本身当作词根）",
+    "example": "Sejak pagi Sinta sudah merasakan gejala masuk angin: pusing, perut kembung, dan sedikit meriang.",
+    "example_cn": "从早上起 Sinta 就感觉到着凉的症状：头晕、肚子胀，还有点发冷发烧。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-19 08:00",
-    "last_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-19"
     ],
     "lesson_occurrences": [
-      "2026-10-19 08:00"
+      "2026-10-19 08:00",
+      "2026-10-19 18:00"
+    ]
+  },
+  {
+    "word": "mual",
+    "cn": "恶心；反胃想吐",
+    "en": "nauseous; queasy",
+    "root": "mual",
+    "root_cn": "恶心",
+    "example": "Jalan ke Ciater banyak tikungan tajam, jadi Sinta mulai mual setelah setengah jam di mobil.",
+    "example_cn": "去芝亚特的路上急弯很多，所以 Sinta 在车里坐了半个小时就开始恶心想吐。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 18:00",
+    "last_seen": "2026-10-19 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 18:00"
+    ]
+  },
+  {
+    "word": "udara",
+    "cn": "空气；（体感上的）天气、气温",
+    "en": "air; the air (weather feel)",
+    "root": "udara",
+    "root_cn": "空气",
+    "example": "Udara di Ciater sejuk banget, jadi kami nggak perlu nyalakan AC di mobil.",
+    "example_cn": "芝亚特的空气特别凉爽，所以我们在车里都不用开空调。（banget = sekali，nggak = tidak）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 18:00",
+    "last_seen": "2026-10-19 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 18:00"
+    ]
+  },
+  {
+    "word": "berendam",
+    "cn": "（人或动物自己）泡在水里；泡澡；泡温泉",
+    "en": "to soak oneself; to bathe (in a pool or hot spring)",
+    "root": "rendam",
+    "root_cn": "浸泡",
+    "example": "Jangan berendam air panas terlalu lama; kalau kurang minum, kamu bisa pusing, bahkan pingsan.",
+    "example_cn": "别泡温泉泡太久；如果喝水不够，你会头晕，甚至晕倒。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 18:00",
+    "last_seen": "2026-10-19 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 18:00"
     ]
   }
 ];

@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-19",
-    "session": "pm",
-    "time": "18:00",
-    "day": 59
+    "date": "2026-10-20",
+    "session": "am",
+    "time": "08:00",
+    "day": 60
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-19T09:40:43.152Z",
-    "lesson_watermark": "2026-10-19 08:00",
+    "runtime_generated_at": "2026-10-19T10:53:11.800Z",
+    "lesson_watermark": "2026-10-19 18:00",
     "index_updated": "2026-10-19",
-    "runtime_hash": "8e3b0774fee8d3f46fb354989bd37f1a0bf50e925662331dc25102ed2242b236",
-    "index_hash": "d614963df55d4b18e788a1fd25dfeacc783484d0f7a330dfe3b941212b0e54a8",
+    "runtime_hash": "9227a2bcf9b275998c74249c37cdc8afbd92eeb2cae5dbf91b552b36628b3ea7",
+    "index_hash": "6e3b6517bf151fe5b3155f187df2d65c63a4df55a3a98ac90e95be8423d882e6",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -88,10 +88,6 @@
       [
         "jarak tempuh",
         "行程距离；行驶距离"
-      ],
-      [
-        "berendam",
-        "浸泡；泡水/温泉"
       ],
       [
         "menyegarkan",
@@ -342,10 +338,6 @@
       [
         "menyatakan",
         "声明 / 表达"
-      ],
-      [
-        "udara",
-        "空气"
       ],
       [
         "pohon",
@@ -818,10 +810,6 @@
       [
         "pilek",
         "感冒流鼻涕"
-      ],
-      [
-        "mual",
-        "恶心；想吐"
       ],
       [
         "muntah",
@@ -1524,16 +1512,6 @@
         ""
       ],
       [
-        "ngejar",
-        3,
-        0,
-        "",
-        "2026-10-15T13:40:08.636Z",
-        "追赶；赶进度；争取赶上（口语）",
-        "kejar",
-        "追；赶"
-      ],
-      [
         "rapihin",
         3,
         0,
@@ -1984,16 +1962,6 @@
         "领导；主席"
       ],
       [
-        "pengalaman",
-        3,
-        0,
-        "",
-        "2026-10-15T13:40:26.258Z",
-        "经历",
-        "alam",
-        "经历；体验（词根用法）"
-      ],
-      [
         "perjalanan",
         3,
         0,
@@ -2132,16 +2100,6 @@
         "历史 / 故事",
         "sejarah",
         "历史"
-      ],
-      [
-        "alam",
-        3,
-        0,
-        "",
-        "2026-10-15T08:22:42.497Z",
-        "自然",
-        "alam",
-        "自然"
       ],
       [
         "bangun",
@@ -3054,6 +3012,36 @@
         "下载"
       ],
       [
+        "kesel",
+        3,
+        0,
+        "",
+        "2026-10-15T13:47:33.001Z",
+        "烦；心里不爽",
+        "kesel",
+        "心烦；烦躁"
+      ],
+      [
+        "malu-malu",
+        3,
+        0,
+        "",
+        "2026-10-15T13:47:26.384Z",
+        "有点害羞；不好意思表达",
+        "malu",
+        "害羞；难为情"
+      ],
+      [
+        "mikir",
+        2,
+        0,
+        "",
+        "2026-10-15T07:41:57.373Z",
+        "想；思考（口语）",
+        "pikir",
+        "想；思考"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3152,96 +3140,6 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
-      ],
-      [
-        "mengangsur",
-        2,
-        0,
-        "",
-        "2026-10-19T06:01:28.417Z",
-        "分期付款；分期偿还",
-        "angsur",
-        "一点一点地（推进、偿还）"
-      ],
-      [
-        "laga",
-        2,
-        0,
-        "",
-        "2026-10-19T06:01:21.400Z",
-        "动作（片）；打斗；（体育）比赛",
-        "",
-        ""
-      ],
-      [
-        "misteri",
-        2,
-        0,
-        "",
-        "2026-10-19T06:01:41.652Z",
-        "谜；神秘的事；悬疑（片、小说）",
-        "",
-        ""
-      ],
-      [
-        "fantasi",
-        2,
-        0,
-        "",
-        "2026-10-19T06:01:11.040Z",
-        "幻想；奇幻（片、故事）",
-        "",
-        ""
-      ],
-      [
-        "skripsi",
-        2,
-        0,
-        "",
-        "2026-10-19T06:01:45.628Z",
-        "本科毕业论文",
-        "",
-        ""
-      ],
-      [
-        "bencana alam",
-        2,
-        0,
-        "",
-        "2026-10-19T06:00:46.633Z",
-        "自然灾害",
-        "",
-        ""
-      ],
-      [
-        "dimaksudkan",
-        2,
-        0,
-        "",
-        "2026-10-19T06:01:04.592Z",
-        "意在；旨在；（被）打算用来……",
-        "maksud",
-        "意思；目的"
-      ],
-      [
-        "menghirup",
-        2,
-        0,
-        "",
-        "2026-10-19T06:01:37.970Z",
-        "吸入；呼吸（某种空气、气味）",
-        "hirup",
-        "吸；啜"
-      ],
-      [
-        "gejala",
-        2,
-        0,
-        "",
-        "2026-10-19T06:01:14.512Z",
-        "症状；迹象；现象",
-        "",
-        ""
       ]
     ],
     "focus": [
@@ -3571,14 +3469,6 @@
         "fuzzy"
       ],
       [
-        "mual",
-        "通用",
-        "eneg",
-        "mual",
-        748,
-        "fuzzy"
-      ],
-      [
         "saudara",
         "通用",
         "sodara",
@@ -3589,46 +3479,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-12",
-      "session": "am",
-      "review_core": [
-        "puas",
-        "menanggung",
-        "ada urusan",
-        "menunggu",
-        "tersedia"
-      ],
-      "new_words": [
-        "komedi",
-        "gerakan",
-        "tahan",
-        "jongkok",
-        "sejuk",
-        "melelahkan",
-        "mengesankan",
-        "mencegah",
-        "menyarankan",
-        "menyala"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "session": "pm",
-      "review_core": [
-        "sudut",
-        "menyembuhkan",
-        "mendadak",
-        "biar",
-        "ribet"
-      ],
-      "new_words": [
-        "menghitung",
-        "lembut",
-        "teratur",
-        "tantangan"
-      ]
-    },
     {
       "date": "2026-10-13",
       "session": "am",
@@ -3887,106 +3737,40 @@
         "menghirup",
         "gejala"
       ]
+    },
+    {
+      "date": "2026-10-19",
+      "session": "pm",
+      "review_core": [
+        "sial",
+        "kawasan",
+        "pengalaman",
+        "alam",
+        "ngejar"
+      ],
+      "new_words": [
+        "mual",
+        "udara",
+        "berendam"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-18",
+    "date": "2026-10-19",
     "new_words": [
-      "gang",
-      "memperhatikan",
-      "ditipu",
-      "menoleh"
+      "mual",
+      "udara",
+      "berendam"
     ],
     "review_core": [
-      "melelahkan",
-      "menyarankan",
-      "saran",
-      "mengalami",
-      "nyasar"
+      "sial",
+      "kawasan",
+      "pengalaman",
+      "alam",
+      "ngejar"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-19",
-    "vocab": [
-      [
-        "mengangsur",
-        "分期付款；分期偿还",
-        "to pay in installments",
-        "angsur",
-        "一点一点地（推进、偿还）"
-      ],
-      [
-        "laga",
-        "动作（片）；打斗；（体育）比赛",
-        "action (film); fight; match (sports)",
-        "",
-        ""
-      ],
-      [
-        "misteri",
-        "谜；神秘的事；悬疑（片、小说）",
-        "mystery",
-        "",
-        ""
-      ],
-      [
-        "fantasi",
-        "幻想；奇幻（片、故事）",
-        "fantasy",
-        "",
-        ""
-      ],
-      [
-        "skripsi",
-        "本科毕业论文",
-        "undergraduate thesis",
-        "",
-        ""
-      ],
-      [
-        "kinerja",
-        "（工作）表现、绩效；（机器）性能",
-        "performance (of work, a person or a machine)",
-        "kerja",
-        "工作"
-      ],
-      [
-        "bencana alam",
-        "自然灾害",
-        "natural disaster",
-        "",
-        ""
-      ],
-      [
-        "dimaksudkan",
-        "意在；旨在；（被）打算用来……",
-        "to be intended (to / for)",
-        "maksud",
-        "意思；目的"
-      ],
-      [
-        "menghirup",
-        "吸入；呼吸（某种空气、气味）",
-        "to inhale; to breathe in",
-        "hirup",
-        "吸；啜"
-      ],
-      [
-        "gejala",
-        "症状；迹象；现象",
-        "symptom; sign",
-        "",
-        ""
-      ]
-    ],
-    "review_vocab": [
-      "tertentu",
-      "nentuin",
-      "peristiwa",
-      "rupanya",
-      "beresin"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
