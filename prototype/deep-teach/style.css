@@ -66,7 +66,7 @@ nav button:focus-visible,.bar button:focus-visible,.spk:focus-visible,.cnbtn:foc
 .ref{align-self:stretch;max-width:none;background:var(--surface);border:1.5px solid var(--accent);border-radius:12px;padding:10px 14px}
 .ref .id{font-size:18px}
 .id{font-family:var(--f-id);font-weight:600;color:var(--ink)}
-.idw{font-family:var(--f-id);font-weight:600;white-space:nowrap}
+.idw{font-family:var(--f-id);font-weight:600}
 .spk{display:inline-flex;vertical-align:-2px;margin-left:4px;width:22px;height:22px;align-items:center;justify-content:center;border:0;border-radius:50%;background:var(--accent-soft);color:var(--accent);cursor:pointer;padding:0}
 .spk svg{width:12px;height:12px}
 table.cmp{border-collapse:collapse;margin:6px 0 2px;width:100%;font-size:14.5px}

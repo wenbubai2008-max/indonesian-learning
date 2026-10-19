@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "title": "早课深讲 · 10月19日",
+  "intro": [
+    "今天早上的课叫《论文、新电脑和电影之夜》。Rina 在赶毕业论文，旧电脑越来越慢，只好分期买了台新的；这周又累得开始有感冒症状。周六晚上，室友 Dewi 约她看电影，想让她放松一下。",
+    "今天只讲 5 样：[[gejala]] · [[kinerja]] · [[nentuin]]（复习词，换个角度讲）· [[… dengan cara …]] · [[… dimaksudkan untuk …]]"
+  ],
+  "items": [
+    {
+      "key": "gejala", "name": "gejala", "head": "gejala · 症状；现象",
+      "scene": {
+        "quotes": [{"speaker": "课文", "id": "Minggu ini Rina kurang tidur dan mulai merasakan gejala flu.", "cn": "这周丽娜睡得太少，开始出现感冒症状。"}],
+        "ask": "Rina 这周睡得少，mulai merasakan gejala flu。你猜 gejala flu 是什么？",
+        "options": [
+          {"t": "感冒症状", "ok": true, "reply": ["对。睡得少、身体开始不对劲，感觉到的是感冒的\"症状\"。"]},
+          {"t": "感冒药", "reply": ["不是。merasakan 是\"感觉到\"，药是吃的，不是感觉到的。感觉到的是\"症状\"：gejala flu = 感冒症状。"]},
+          {"t": "流感疫苗", "reply": ["不是。merasakan 是\"感觉到\"，她感觉到的是身体的变化，也就是\"症状\"。疫苗是 vaksin。"]}
+        ]
+      },
+      "explain": [
+        "{{gejala}} 是表现出来的\"症状\"：{{gejala flu}}（感冒症状）、{{gejala awal}}（早期症状）、{{tanpa gejala}}（无症状）。",
+        "它不只说病，也能说事情表现出来的\"现象\"：{{gejala sosial}}（社会现象）。核心意思是\"看得出来的表现\"。"
+      ],
+      "simple": ["[[gejala]] = 症状（病）；现象（社会、自然）"],
+      "asks": [
+        {"label": "它的两种用法怎么分？", "remedy": true, "src": "mix", "reply": [
+          {"table": [["gejala flu / gejala awal", "说病：症状"], ["tanpa gejala", "无症状"], ["gejala sosial / gejala alam", "说社会、自然：现象"]]},
+          "所以看到 gejala，先看后面接的是病还是社会、自然，就知道是\"症状\"还是\"现象\"。"]},
+        {"label": "和 keluhan 有什么区别？", "from": "synonym_note"},
+        {"label": "看病时怎么说？", "src": "mix", "reply": [
+          "医生常问：{{Apa keluhannya?}}（哪里不舒服？）",
+          "你可以答：{{Saya mengalami gejala flu sejak kemarin.}}（我从昨天开始有感冒症状。）课文里用的 merasakan gejala（感觉到症状）也可以。"]}
+      ],
+      "check": {
+        "q": ["新闻里说：[[Kemacetan di kota besar sudah menjadi gejala sosial.]]", "这里的 gejala sosial 是什么意思？"],
+        "options": [
+          {"t": "社会现象", "v": "right", "why": ["对。gejala 后面接 sosial，说的是社会上表现出来的\"现象\"：大城市堵车已经成了一种社会现象。"]},
+          {"t": "社会上的疾病症状", "v": "wrong", "why": ["gejala 说病时才是\"症状\"，比如 gejala flu。这里后面接的是 sosial（社会），不是病，所以是\"现象\"。"]},
+          {"t": "社会活动", "v": "wrong", "why": ["\"社会活动\"是 kegiatan sosial。gejala 说的是表现出来的现象，不是人去参加的活动。"]}
+        ],
+        "backup": {
+          "q": ["换一题。体检报告上写着：[[Pasien tanpa gejala.]]是什么意思？"],
+          "options": [
+            {"t": "病人没有症状", "v": "right", "why": ["对。tanpa = 没有；tanpa gejala = 无症状。"]},
+            {"t": "病人没有病因", "v": "wrong", "why": ["\"病因\"是 penyebab penyakit。gejala 是表现出来的症状，不是原因。"]},
+            {"t": "病人没有感觉", "v": "wrong", "why": ["\"感觉\"是 perasaan 或 rasa。gejala 是别人看得出、检查得到的症状。"]}
+          ]
+        }
+      },
+      "say": {"prompt": ["你给老板发消息：\"我今天开始有感冒症状，想在家休息。\"先说出声，再点按钮。"], "kw": "hari ini · mulai merasakan · gejala flu · istirahat di rumah", "skel": "Hari ini saya mulai ____ gejala ____, jadi saya ingin ____ di rumah.", "ref": "Hari ini saya mulai merasakan gejala flu, jadi saya ingin istirahat di rumah.",
+        "notes": ["跟老板说话用 saya。mulai merasakan gejala … = 开始出现……症状，和课文一样。"]},
+      "recall": {"prompt": ["朋友说他头疼、流鼻涕。你说：\"这些都是感冒的症状。\""], "kw": "itu semua · gejala flu", "skel": "Itu semua ____ ____.", "ref": "Itu semua gejala flu."},
+      "recall2": {"prompt": ["你说：\"我爸爸有高血压的早期症状。\""], "kw": "ayahku · mengalami · gejala awal · darah tinggi", "skel": "Ayahku ____ gejala ____ darah tinggi.", "ref": "Ayahku mengalami gejala awal darah tinggi.", "notes": ["darah tinggi = 高血压（日常说法）。"]},
+      "final": {"cn": "（跟医生说）\"我从昨天开始有发烧的症状。\"", "ref": "Saya mengalami gejala demam sejak kemarin."},
+      "remind": "gejala = 症状（gejala flu、tanpa gejala），也指现象（gejala sosial）；跟医生说 Saya mengalami gejala …"
+    },
+    {
+      "key": "kinerja", "name": "kinerja", "head": "kinerja · 表现；性能",
+      "scene": {
+        "quotes": [{"speaker": "课文", "id": "Sayangnya, kinerja laptop lamanya makin menurun, sehingga ia membeli laptop baru dengan cara mengangsur selama setahun.", "cn": "可惜她那台旧电脑的性能越来越差，于是她用分期付款的方式买了一台新电脑，分一年付清。"}],
+        "ask": "旧电脑的 kinerja 越来越差（makin menurun），她只好买新电脑。你猜 kinerja 是什么？",
+        "options": [
+          {"t": "性能", "ok": true, "reply": ["对。电脑越来越差、只好换新的，差的是\"性能\"。"]},
+          {"t": "外观", "reply": ["外观变旧不至于非换不可。这里说的是电脑\"运行得好不好\"，也就是性能。外观是 tampilan。"]},
+          {"t": "价格", "reply": ["价格不会\"越来越差\"。这里说的是电脑运行得好不好，也就是性能。"]}
+        ]
+      },
+      "explain": [
+        "{{kinerja}} 和 kerja（工作）同源，意思是\"干得怎么样、运行得好不好\"：说人是\"工作表现、绩效\"，说机器是\"性能\"。",
+        "它偏正式：公司的 {{penilaian kinerja}}（绩效考核），新闻里的 {{kinerja pemerintah}}（政府的工作表现）。日常说手机、电脑也常用 {{performa}}。"
+      ],
+      "simple": ["[[kinerja]] = （人的）工作表现、绩效；（机器的）性能"],
+      "asks": [
+        {"label": "和 prestasi 有什么区别？", "remedy": true, "src": "mix", "reply": [
+          {"table": [["kinerja", "干得怎么样、运行得好不好（过程和效果）"], ["prestasi", "取得的成绩、成就（prestasi belajar 学习成绩）"]]},
+          "{{Kinerjanya bagus tahun ini, jadi dia dapat bonus.}}（他今年工作表现好，所以拿到了奖金。）",
+          "{{Anaknya berprestasi di sekolah.}}（他孩子在学校成绩优秀。）"]},
+        {"label": "常跟哪些词一起用？", "src": "mix", "reply": [
+          "kinerja + meningkat / menurun（提升 / 下降），meningkatkan kinerja（提高表现）。",
+          "今天的例句就是：{{Rupanya kinerja laptop lama itu menurun karena terlalu banyak file.}}"]},
+        {"label": "词卡上怎么说的？", "from": "formation"}
+      ],
+      "check": {
+        "q": ["经理在会上说：[[Kinerja tim kita bulan ini menurun.]]", "他的意思是？"],
+        "options": [
+          {"t": "我们团队这个月的表现下滑了", "v": "right", "why": ["对。kinerja tim = 团队的工作表现；menurun = 下降。"]},
+          {"t": "我们团队这个月的人数减少了", "v": "wrong", "why": ["人数是 jumlah anggota。kinerja 说的是干得怎么样，不是有多少人。"]},
+          {"t": "我们团队这个月的工作时间减少了", "v": "wrong", "why": ["工作时间是 jam kerja。kinerja 虽然和 kerja 同源，但说的是\"干得好不好\"，不是干了多久。"]}
+        ],
+        "backup": {
+          "q": ["换一题。公司通知：[[Penilaian kinerja dilakukan setiap akhir tahun.]]这是什么？"],
+          "options": [
+            {"t": "每年年底做绩效考核", "v": "right", "why": ["对。penilaian = 评估；penilaian kinerja = 绩效考核。"]},
+            {"t": "每年年底招聘面试", "v": "wrong", "why": ["面试是 wawancara kerja。penilaian kinerja 是评估已经在职的人干得怎么样。"]},
+            {"t": "每年年底发年终奖", "v": "wrong", "why": ["年终奖是 bonus akhir tahun。penilaian 是\"评估、打分\"，不是发钱。"]}
+          ]
+        }
+      },
+      "say": {"prompt": ["你跟同事抱怨：\"我电脑的性能越来越差了，光打开一个文件就要五分钟。\""], "kw": "kinerja laptopku · makin menurun · buka satu file aja · lima menit", "skel": "____ laptopku makin ____. Buka satu file aja butuh ____.", "ref": "Kinerja laptopku makin menurun. Buka satu file aja butuh lima menit.",
+        "notes": ["makin（= semakin）+ 形容词/动词 = 越来越……。aja 在这里是\"光、仅仅\"。"]},
+      "recall": {"prompt": ["老板说：\"这个月团队的表现提升了。\""], "kw": "kinerja tim · bulan ini · meningkat", "skel": "____ tim bulan ini ____.", "ref": "Kinerja tim bulan ini meningkat."},
+      "recall2": {"prompt": ["你说：\"我们得提高工作表现。\""], "kw": "kita harus · meningkatkan · kinerja", "skel": "Kita harus ____ ____.", "ref": "Kita harus meningkatkan kinerja."},
+      "final": {"cn": "\"这台新电脑的性能好多了。\"", "ref": "Kinerja laptop baru ini jauh lebih baik."},
+      "remind": "kinerja = 工作表现、绩效；机器的性能。取得的成绩、成就用 prestasi。"
+    },
+    {
+      "key": "nentuin", "name": "nentuin", "head": "nentuin · 决定（口语，复习词）",
+      "scene": {
+        "quotes": [{"speaker": "例句", "id": "Kamu aja yang nentuin filmnya: laga, misteri, atau fantasi? Aku ikut aja, asalkan bukan film horor.", "cn": "你来定看哪部吧：动作片、悬疑片还是奇幻片？我都行，只要不是恐怖片。"}],
+        "ask": "后半句说\"我都行\"（Aku ikut aja）。那前半句 Kamu aja yang nentuin filmnya 是在说什么？",
+        "options": [
+          {"t": "你来定看哪部", "ok": true, "reply": ["对。nentuin = 决定、选定。Kamu aja yang nentuin = 你来定吧。"]},
+          {"t": "你去找那部电影", "reply": ["找是 nyari（mencari）。后面说\"我都行\"，说明前面是让对方\"决定\"：nentuin。"]},
+          {"t": "你先看那部电影", "reply": ["看是 nonton。后面说\"我都行\"，说明前面是让对方\"决定\"：nentuin。"]}
+        ]
+      },
+      "explain": [
+        "{{nentuin}} 就是 {{menentukan}}（决定、确定）的口语说法：口语常把 meN- 省成鼻音开头，-kan 变成 -in。你复习过的 beresin（= membereskan）也是这样来的。",
+        "{{Kamu aja yang nentuin.}} 是很常见的句型：yang 把\"你\"放在焦点上，意思是\"就你来定吧\"。"
+      ],
+      "simple": ["[[nentuin]] = 决定（口语）\n正式说 [[menentukan]]"],
+      "asks": [
+        {"label": "同词根 tentu 的几个词怎么分？", "remedy": true, "src": "new", "reply": [
+          {"table": [["tentu", "当然；一定"], ["menentukan / nentuin", "决定（主动）"], ["ditentukan", "被决定：Tanggalnya belum ditentukan.（日期还没定。）"], ["tertentu", "特定的：pada hari tertentu（在特定的几天）"], ["ketentuan", "规定、条款"]]}]},
+        {"label": "\"Kamu aja yang …\" 还能怎么用？", "src": "new", "reply": [
+          "{{Kamu aja yang pilih.}}（你来选吧。）{{Aku aja yang bayar.}}（我来付吧。）",
+          "结构是\"人 + aja yang + 动作\"：就由这个人来做。"]},
+        {"label": "正式场合怎么说？", "src": "new", "reply": [
+          "对上司、客户：{{Silakan Bapak yang menentukan.}}（请您来定。）",
+          "通知里多用被动：{{Jadwal rapat akan ditentukan kemudian.}}（会议时间另行确定。）"]}
+      ],
+      "check": {
+        "q": ["经理问你下次会议定在哪天。你想客气地说\"请您来定\"，哪句最合适？"],
+        "options": [
+          {"t": "Silakan Bapak yang menentukan.", "v": "right", "why": ["对。对上司用 Silakan + Bapak + 正式的 menentukan，客气又自然。"]},
+          {"t": "Bapak aja yang nentuin.", "v": "ok", "why": ["意思完全对，朋友、熟人之间这么说很自然。但 aja 加口语的 nentuin，对上司说有点随便。"]},
+          {"t": "Bapak yang ditentukan.", "v": "wrong", "why": ["ditentukan 是被动\"被决定\"，这句变成\"您被决定\"，说不通。被决定的应该是事情：Tanggalnya ditentukan Bapak.（日期由您定。）"]}
+        ],
+        "backup": {
+          "q": ["换一题。朋友问周五聚餐去哪家，你想说\"你来定吧，我都行\"："],
+          "options": [
+            {"t": "Kamu aja yang nentuin, aku ikut aja.", "v": "right", "why": ["对。朋友之间，口语的 nentuin 最自然。"]},
+            {"t": "Kamu aja yang tentu, aku ikut aja.", "v": "wrong", "why": ["tentu 是\"当然、一定\"，不是动词\"决定\"。要用 nentuin（menentukan）。"]},
+            {"t": "Kamu aja yang tertentu, aku ikut aja.", "v": "wrong", "why": ["tertentu 是形容词\"特定的\"（hari tertentu），不能当\"决定\"用。"]}
+          ]
+        }
+      },
+      "say": {"prompt": ["朋友问晚饭吃什么。你说：\"你来定吧，我都行，只要不辣。\""], "kw": "kamu aja yang nentuin · aku ikut aja · asalkan · nggak pedas", "skel": "Kamu aja yang ____, aku ____ aja. Asalkan nggak ____.", "ref": "Kamu aja yang nentuin, aku ikut aja. Asalkan nggak pedas.",
+        "notes": ["asalkan = 只要（课文里 asalkan bukan film horor）。"]},
+      "recall": {"prompt": ["写给同事的通知（正式）：\"会议时间还没定。\""], "kw": "waktu rapat · belum · ditentukan", "skel": "Waktu rapat belum ____.", "ref": "Waktu rapat belum ditentukan.", "notes": ["被决定的是事情，用被动 ditentukan。"]},
+      "recall2": {"prompt": ["（口语）抢着说：\"我来定吧！\""], "kw": "aku aja · yang · nentuin", "skel": "Aku ____ yang ____!", "ref": "Aku aja yang nentuin!"},
+      "final": {"cn": "（口语）\"日子你来定吧。\"", "ref": "Kamu aja yang nentuin tanggalnya."},
+      "remind": "nentuin = menentukan（决定）的口语；Kamu aja yang nentuin = 你来定吧；ditentukan 被决定，tertentu 特定的。"
+    },
+    {
+      "key": "dengancara", "name": "… dengan cara …", "head": "… dengan cara … · 用……的方式",
+      "scene": {
+        "quotes": [{"speaker": "课文", "id": "ia membeli laptop baru dengan cara mengangsur selama setahun.", "cn": "她用分期付款的方式买了一台新电脑，分一年付清。"}],
+        "ask": "她买新电脑是 dengan cara mengangsur。你觉得 dengan cara 在这里起什么作用？",
+        "options": [
+          {"t": "说明用什么方式买", "ok": true, "reply": ["对。dengan cara + 动作 = 用……的方式。这里说的是\"怎么买\"：分期付款。"]},
+          {"t": "说明为什么买", "reply": ["为什么买前半句已经说了：旧电脑性能变差。dengan cara 说的是\"怎么买\"，也就是方式。"]},
+          {"t": "说明什么时候买", "reply": ["这里没有说时间。dengan cara 说的是\"怎么买\"：用分期付款的方式。"]}
+        ]
+      },
+      "explain": [
+        "{{dengan cara}} + 动作 = \"用……的方式（做某事）\"，回答的是\"怎么做\"：{{membeli laptop dengan cara mengangsur}}。",
+        "{{mengangsur}} 是\"分期付款\"，偏正式；日常更常说 {{nyicil}}：{{Aku nyicil HP-nya enam bulan.}}"
+      ],
+      "simple": ["[[dengan cara …]] = 用……的方式（说怎么做）\n[[mengangsur]] = 分期付（口语 [[nyicil]]）"],
+      "asks": [
+        {"label": "和 untuk、karena 有什么区别？", "remedy": true, "src": "new", "reply": [
+          {"table": [["dengan cara", "怎么做（方式）"], ["untuk", "为了什么（目的）"], ["karena", "为什么（原因）"]]},
+          "{{Dia menabung dengan cara tidak jajan.}}（他靠不买零食来存钱。）",
+          "{{Dia menabung untuk beli laptop.}}（他存钱是为了买电脑。）",
+          "{{Dia menabung karena mau kuliah.}}（他存钱是因为想上大学。）"]},
+        {"label": "后面能接什么？", "src": "new", "reply": [
+          "常接动作：{{dengan cara menabung sedikit demi sedikit}}（一点点存钱的方式）。也可以说 {{dengan cara ini}}（用这种方法）。",
+          "说用什么工具，日常直接用 pakai 或 dengan：{{Aku bayar pakai kartu.}}（我用卡付。）"]},
+        {"label": "词卡上 mengangsur 怎么说？", "from": "synonym_note", "word": "mengangsur"}
+      ],
+      "check": {
+        "q": ["[[Rina belajar bahasa Inggris ___ menonton film tanpa subtitle.]]", "（丽娜靠看没字幕的电影来学英语。）"],
+        "options": [
+          {"t": "dengan cara", "v": "right", "why": ["对。看电影是她学英语的方式：dengan cara。"]},
+          {"t": "untuk", "v": "wrong", "why": ["句子本身成立，但意思变成\"她学英语是为了看没字幕的电影\"，看电影成了目的，和中文不符。"]},
+          {"t": "karena", "v": "wrong", "why": ["句子本身成立，但意思变成\"她学英语是因为看了没字幕的电影\"，看电影成了原因，和中文不符。"]}
+        ],
+        "backup": {
+          "q": ["换一题。[[Dia menurunkan berat badan dengan cara bersepeda setiap hari.]]是什么意思？"],
+          "options": [
+            {"t": "他靠每天骑车减了肥", "v": "right", "why": ["对。dengan cara bersepeda = 用骑车的方式。"]},
+            {"t": "他减肥以后开始每天骑车", "v": "wrong", "why": ["\"以后\"要用 setelah：Setelah menurunkan berat badan, dia bersepeda setiap hari. dengan cara 说的是方式，不是先后。"]},
+            {"t": "他因为每天骑车，体重增加了", "v": "wrong", "why": ["menurunkan 是\"降低\"，不是增加；而且 dengan cara 说的是方式，不是原因。"]}
+          ]
+        }
+      },
+      "say": {"prompt": ["朋友问你怎么学印尼语的。你说：\"我是靠每天看印尼电影来学的。\""], "kw": "aku belajar · bahasa Indonesia · dengan cara · nonton film · setiap hari", "skel": "Aku belajar bahasa Indonesia ____ nonton ____ setiap hari.", "ref": "Aku belajar bahasa Indonesia dengan cara nonton film Indonesia setiap hari.",
+        "notes": ["nonton = menonton（口语）。dengan cara 后面直接接动作。"]},
+      "recall": {"prompt": ["你说：\"他是靠存钱买的摩托车。\""], "kw": "dia membeli motor · dengan cara · menabung", "skel": "Dia membeli motor ____ ____.", "ref": "Dia membeli motor dengan cara menabung."},
+      "recall2": {"prompt": ["开会定不下来，你提议：\"我们用投票的方式决定吧。\""], "kw": "ayo kita · tentukan · dengan cara · voting", "skel": "Ayo kita ____ dengan cara ____.", "ref": "Ayo kita tentukan dengan cara voting.", "notes": ["顺便复习：tentukan 和 nentuin 同一个词根。"]},
+      "final": {"cn": "（店员说）\"您可以用分期付款的方式付。\"", "ref": "Bapak bisa bayar dengan cara mengangsur."},
+      "remind": "dengan cara + 动作 = 用……的方式（说怎么做）；untuk = 为了，karena = 因为。"
+    },
+    {
+      "key": "dimaksudkan", "name": "… dimaksudkan untuk …", "head": "… dimaksudkan untuk … · ……的用意是……",
+      "scene": {
+        "quotes": [
+          {"speaker": "课文", "id": "Sabtu malam, Dewi, teman kosnya, mengajaknya menonton film.", "cn": "星期六晚上，和她住同一个寄宿公寓的朋友德维约她去看电影。"},
+          {"speaker": "课文", "id": "Ajakan itu dimaksudkan untuk menghibur Rina.", "cn": "德维约她，是想让她开心一下。"}
+        ],
+        "ask": "Dewi 约 Rina 看电影。下一句 Ajakan itu dimaksudkan untuk menghibur Rina 在说什么？",
+        "options": [
+          {"t": "约她的用意是让她开心", "ok": true, "reply": ["对。ajakan = 邀请；dimaksudkan untuk … = 用意是……；menghibur = 让人开心、安慰。"]},
+          {"t": "Rina 被逼着去看电影", "reply": ["没有\"逼\"的意思。dimaksudkan 讲的是 Dewi 的用意：想让 Rina 开心。"]},
+          {"t": "那部电影是为了娱乐大众拍的", "reply": ["主语是 ajakan itu（那次邀请），不是电影。说的是 Dewi 约她的用意：让她开心。"]}
+        ]
+      },
+      "explain": [
+        "{{dimaksudkan untuk}} = \"……的用意是……、是为了……\"。maksud 是\"意思、目的\"，di-…-kan 是被动，字面是\"被打算用来……\"。",
+        "它偏**书面**，常见于说明、通知、叙述。聊天时更常说 {{maksudnya biar …}}：{{Maksudnya biar kamu nggak stres.}}"
+      ],
+      "simple": ["[[X dimaksudkan untuk …]] = X 的用意是……（书面）\n聊天说 [[maksudnya biar …]]"],
+      "asks": [
+        {"label": "直接说 untuk 不行吗？", "remedy": true, "src": "new", "reply": [
+          "可以。{{Ajakan itu untuk menghibur Rina.}} 意思接近。",
+          "加上 dimaksudkan，是强调\"这是有人特意的用意\"，常用来解释动机，或者说\"本来是想……\"（结果未必如愿）：{{Pesan itu dimaksudkan sebagai lelucon, tapi dia malah marah.}}（那条消息本来是开玩笑的，他却生气了。）",
+          "注意：讲原因用 karena，不用 dimaksudkan。"]},
+        {"label": "词卡上怎么说的？", "from": "formation", "word": "dimaksudkan"},
+        {"label": "\"Maksudnya apa?\" 是什么？", "src": "new", "reply": [
+          "聊天里没听懂对方的意思，就问 {{Maksudnya apa?}}（什么意思？你指的是什么？）",
+          "解释自己的用意：{{Maksudku biar kamu nggak khawatir.}}（我是想让你别担心。）"]}
+      ],
+      "check": {
+        "q": ["下面哪种场合，最适合用 dimaksudkan untuk？"],
+        "options": [
+          {"t": "学校通知：这项活动是为了培养合作精神", "v": "right", "why": ["对。通知、说明这类书面场合最合适：{{Kegiatan ini dimaksudkan untuk melatih kerja sama.}}"]},
+          {"t": "给朋友发消息：我约你是想让你开心点", "v": "ok", "why": ["能用，语法没问题，书面叙述里也常这样写。但朋友聊天显得有点正式，口语更常说 {{Maksudnya biar kamu seneng.}}"]},
+          {"t": "解释原因：我迟到是因为下雨", "v": "wrong", "why": ["原因要用 karena：{{Aku telat karena hujan.}} dimaksudkan 讲的是用意、目的，不是原因。"]}
+        ],
+        "backup": {
+          "q": ["换一题。[[Hadiah kecil ini dimaksudkan sebagai ucapan terima kasih.]]是什么意思？"],
+          "options": [
+            {"t": "这份小礼物是用来表达谢意的", "v": "right", "why": ["对。dimaksudkan sebagai … = 本意是作为……。"]},
+            {"t": "收到这份小礼物要说谢谢", "v": "wrong", "why": ["句子说的是礼物的用意（表达谢意），没有要求收礼的人做什么。"]},
+            {"t": "这份礼物太小，不够表达谢意", "v": "wrong", "why": ["kecil 只是说礼物小，句子里没有\"不够\"的意思。dimaksudkan 讲的是送礼的用意。"]}
+          ]
+        }
+      },
+      "say": {"prompt": ["你在写会议通知：\"这次会议的目的是讨论新的工作计划。\""], "kw": "rapat ini · dimaksudkan untuk · membahas · rencana kerja yang baru", "skel": "Rapat ini ____ membahas rencana kerja ____.", "ref": "Rapat ini dimaksudkan untuk membahas rencana kerja yang baru.",
+        "notes": ["membahas = 讨论（某个议题）。通知、说明里用 dimaksudkan untuk 很自然。"]},
+      "recall": {"prompt": ["（书面）\"这个应用是为了帮助学生学习。\""], "kw": "aplikasi ini · dimaksudkan untuk · membantu siswa belajar", "skel": "Aplikasi ini ____ membantu siswa ____.", "ref": "Aplikasi ini dimaksudkan untuk membantu siswa belajar."},
+      "recall2": {"prompt": ["（口语）跟朋友解释：\"我说那话是想让你别担心。\""], "kw": "maksudku · biar · kamu nggak khawatir", "skel": "____ biar kamu nggak ____.", "ref": "Maksudku biar kamu nggak khawatir.", "notes": ["聊天里不用 dimaksudkan，用 maksudku / maksudnya biar …"]},
+      "final": {"cn": "（书面）\"这项规定的用意是保护消费者。\"", "ref": "Aturan ini dimaksudkan untuk melindungi konsumen."},
+      "remind": "X dimaksudkan untuk … = X 的用意是……（书面）；聊天说 maksudnya biar …；原因用 karena。"
+    }
+  ],
+  "scan": {
+    "head": "其他新词 · 扫一眼",
+    "intro": ["今天其他的新词，词卡里都有完整讲解，这里只扫一眼。mengangsur 和 dimaksudkan 刚才在句型里讲过了。不熟的点一下，标出来给自己看。"],
+    "words": ["laga", "misteri", "fantasi", "skripsi", "bencana alam", "menghirup", "mengangsur", "dimaksudkan"]
+  },
+  "reading": [
+    {
+      "key": "seperti",
+      "sentence": "Ia memilih topik ini karena bencana alam seperti banjir sering terjadi di kotanya.",
+      "cn": "她选这个题目，是因为洪水这样的自然灾害在她的城市经常发生。",
+      "chunks": [["Ia memilih topik ini", "她选这个题目", ""], ["karena bencana alam", "因为自然灾害", "bencana alam = 自然灾害（新词）"], ["seperti banjir", "像洪水这样的", "seperti = 像、比如：用来举例"], ["sering terjadi di kotanya.", "在她的城市经常发生", "terjadi = 发生；kotanya = 她的城市"]],
+      "steal": ["这句值得拿来用的是 [[X seperti Y]]：\"像 Y 这样的 X\"，用来举例。{{Aku suka makanan pedas seperti sambal dan ayam geprek.}}（我喜欢辣的东西，比如参巴辣酱和辣味炸鸡。）"],
+      "check": {"q": ["[[Aku suka buah tropis ___ mangga dan durian.]]（我喜欢热带水果，比如芒果和榴莲。）"], "options": [
+        {"t": "seperti", "v": "right", "why": ["对。seperti 用来举例：像芒果、榴莲这样的。"]},
+        {"t": "sebagai", "v": "wrong", "why": ["sebagai 是\"作为\"：{{Dia bekerja sebagai guru.}}（他当老师。）不用来举例。"]},
+        {"t": "karena", "v": "wrong", "why": ["karena 是\"因为\"，这里没有因果关系。"]}]}
+    },
+    {
+      "key": "rupanya",
+      "sentence": "Awalnya ia ragu, tetapi rupanya filmnya seru sekali.",
+      "cn": "一开始她还有点犹豫，没想到电影非常精彩。",
+      "chunks": [["Awalnya ia ragu,", "一开始她还犹豫", "awalnya = 一开始"], ["tetapi rupanya", "可是没想到", "rupanya（复习词）= 原来、没想到：后来才发现的事"], ["filmnya seru sekali.", "电影非常精彩", "seru = 精彩、刺激（口语很常用）"]],
+      "steal": ["[[Awalnya …, tetapi rupanya …]] 是讲\"本来以为 vs 实际上\"的好结构，讲经历时很好用。"],
+      "check": {"q": ["[[Rupanya dia sudah menikah.]]是什么意思？"], "options": [
+        {"t": "原来他已经结婚了", "v": "right", "why": ["对。rupanya = 原来（后来才知道的事）；sudah = 已经。"]},
+        {"t": "他好像快要结婚了", "v": "wrong", "why": ["sudah 是\"已经\"，不是\"快要\"（akan / mau）。"]},
+        {"t": "他的长相已经变了", "v": "wrong", "why": ["rupa 单独用确实是\"外貌\"，但 rupanya 作副词是\"原来、看来\"，和长相无关。"]}]},
+      "say": {"prompt": ["用 Awalnya …, tapi rupanya … 说你自己的事：\"一开始我以为印尼语很难，没想到挺有意思的。\""], "kw": "awalnya · aku kira · susah · tapi rupanya · seru juga", "skel": "Awalnya aku kira bahasa Indonesia ____, tapi ____ seru juga.", "ref": "Awalnya aku kira bahasa Indonesia susah, tapi rupanya seru juga.", "notes": ["aku kira = 我以为。内容不用和参考一样，有\"本来以为 A，没想到 B\"就对。"]}
+    }
+  ],
+  "tasks": [
+    {"key": "output", "prompt": ["最后一个开口任务（来自今天的输出题，缩短版）：给朋友发消息，说这周得赶论文不能出去玩，忙完想去咖啡馆闻着咖啡香放松一下。"], "kw": "maaf ya · minggu ini · beresin skripsiku · kalau udah selesai · menghirup aroma kopi", "skel": "Maaf ya, minggu ini aku nggak bisa ____. Aku harus ____ skripsiku dulu. Kalau udah selesai, aku pengin duduk di kafe sambil ____ aroma kopi.", "ref": "Maaf ya, minggu ini aku nggak bisa ikut nonton. Aku harus beresin skripsiku dulu. Kalau udah selesai, aku pengin duduk di kafe sambil menghirup aroma kopi.",
+      "notes": ["整页的输出题有更长的参考答案，学完可以去对照。"]}
+  ],
+  "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
