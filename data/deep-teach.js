@@ -119,7 +119,7 @@ function css(){if(document.getElementById('deepTeachStyle'))return;const style=d
 .dt .l{align-self:flex-end;background:var(--accent-soft);border-radius:16px 4px 16px 16px;padding:8px 14px;color:var(--ink)}
 .dt .sys{align-self:stretch;max-width:none;display:flex;align-items:center;gap:10px;margin-top:18px;color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.04em}
 .dt .sys::before,.dt .sys::after{content:"";flex:1;height:1px;background:var(--line)}
-.dt .tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--muted);text-transform:none;margin-top:4px}
+.dt .tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--muted);text-transform:none;margin-top:4px;background:transparent;padding:0;border-radius:0;display:block}
 .dt .q{align-self:stretch;max-width:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
 .dt .qhead{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:2px}
 .dt .qid .id{font-size:18px;line-height:1.55}
