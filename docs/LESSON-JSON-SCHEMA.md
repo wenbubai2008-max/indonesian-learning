@@ -49,3 +49,26 @@ The validator switches to the review cycle on its own; there is no flag to set.
 - **Picking cycle words**: `rank-review-candidates.js --session am` returns `review_cycle.cycle_words` — half the weakest words, half the words longest unseen in any lesson, disjoint from `recommended_review`. For PM, `review_cycle.review_target` is the suggested review count.
 - **Bookkeeping**: cycle words count as active reviews in the exposure ledger (like `review_vocab`); in the evening they are "今天08:00复习过的老词", not new words. A word leaves the cycle when it becomes mastered.
 - Error codes: `CYCLE_NOT_ACTIVE`, `CYCLE_NEW_REQUIRED`, `CYCLE_VOCAB_MISMATCH`, `CYCLE_WORD_INELIGIBLE`, `CYCLE_ORAL_FLAG`; PM uses `PM_GROUP_COUNT` with the cycle counts.
+
+
+## 可选的深讲数据 `lesson_focus.teach`（初稿，2026-10-19）
+
+`lesson_focus` 原有 words / patterns 合同不变；`teach` 是可选对象，缺少时旧课继续有效。本 PR **只读不写**课程 JSON。试点旁挂 `data/teach/2026-10-18-pm.json`、`2026-10-19-am.json` 是完整格式示例，来源为已认可的深讲原型，原样复制。
+
+| 字段 | 结构与用途 |
+| --- | --- |
+| title / intro | 标题；开场消息数组 |
+| items | 对应 lesson_focus 的 3 词 + 2 句型；每项 key、name、head、remind |
+| items[].scene | quotes:[{speaker?, id, cn?}]（引用本课原文）、ask、options:[{t, ok, reply}] |
+| items[].explain / simple / asks | 讲解、简明版本、可选追问 [{label, reply 或 from/word, remedy?, remedy_only?, src?}] |
+| items[].check | q、options:[{t, v:right/ok/wrong, why:字符串数组}]，恰有一个 right；可选 backup 同结构。ok 要说明适用场合 |
+| items[].say / recall / recall2 | prompt、kw（用 ` · ` 分隔）、可选带空白的 skel、ref、ref_cn?、notes?；回想必须换新场景；recall2 可选 |
+| items[].final | cn、ref；最后一轮，不展示提示 |
+| scan | 可选 {head?, intro?, words:[本课非重点词]} |
+| reading | 可选 [{key?, sentence, cn?, chunks:[[原句片段,解释,提示?]], steal?, check?, say?}]，拆句须拼回本课原句 |
+| dialogue | 可选 {head,intro,turns:[{line,scene?,intent,kw,skel?,notes?}],tail?}；line 为本课 dialogue.lines 的 0 起始索引 |
+| tasks / next | 可选开口任务数组（同 say，另可带 key）；后续学习建议 |
+
+消息支持字符串，或 quote / table / chunks / from+word / tip / scene / tag 对象。文字标记：`{{可朗读印尼语}}`、`[[加粗印尼语]]`、`**加粗**`、换行；先 HTML 转义再解释标记，不接受原始 HTML。
+
+前端轻量形状检查失败即退回旧带学。离线完整校验：`node .github/scripts/validate-teach.js data/daily/D-S.json data/teach/D-S.json`，API 为 `validateTeach(lesson, teach) → {errors, warnings}`，每项错误保留 SCENE_QUOTE / CHECK_RIGHT / CHECK_WHY / CHECK_OK_REASON / SAY_SKEL_REF / RECALL_NOT_NEW / READING_CHUNKS / ITEM_MISSING / MARKUP 等原型错误码。本 PR 不接入课程候选校验器或生成任务。

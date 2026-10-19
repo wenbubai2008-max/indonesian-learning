@@ -33,6 +33,10 @@ on:
       - '.github/scripts/test-lesson-end-recall.js'
       - '.github/scripts/test-weekly-memory-report.js'
       - 'data/weekly-memory-report.js'
+      - 'data/deep-teach.js'
+      - 'data/teach/**'
+      - '.github/scripts/validate-teach.js'
+      - '.github/scripts/test-deep-teach.js'
       - 'data/guided-lesson.js'
       - '.github/scripts/test-guided-lesson.js'
       - 'data/lesson-end-recall.js'
@@ -176,6 +180,8 @@ jobs:
           node .github/scripts/test-lesson-end-recall.js
           node --check data/weekly-memory-report.js
           node .github/scripts/test-weekly-memory-report.js
+          node --check data/deep-teach.js
+          node .github/scripts/test-deep-teach.js
           node --check data/guided-lesson.js
           node .github/scripts/test-guided-lesson.js
           node .github/scripts/test-review-cycle.js
