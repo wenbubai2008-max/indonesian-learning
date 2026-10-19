@@ -5639,21 +5639,25 @@ window.DAILY_VOCAB_DB = [
     "root": "beres",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-02 19:00",
+    "last_seen": "2026-10-19 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-02"
+      "2026-09-02",
+      "2026-10-19"
     ],
     "example": "Aku mau beresin kerjaan ini dulu sebelum meeting berikutnya.",
     "example_cn": "我想先把这个工作处理完，再去下一个会议。",
     "lesson_occurrences": [
-      "2026-09-02 19:00"
+      "2026-09-02 19:00",
+      "2026-10-19 08:00"
     ]
   },
   {
@@ -8494,9 +8498,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-20 18:00",
+    "last_seen": "2026-10-19 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -8504,14 +8508,16 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-10",
       "2026-09-19",
-      "2026-09-20"
+      "2026-09-20",
+      "2026-10-19"
     ],
     "lesson_occurrences": [
       "2026-09-10 08:00",
       "2026-09-19 08:00",
       "2026-09-19 18:00",
       "2026-09-20 08:00",
-      "2026-09-20 18:00"
+      "2026-09-20 18:00",
+      "2026-10-19 08:00"
     ]
   },
   {
@@ -9826,17 +9832,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 08:00",
+    "last_seen": "2026-10-19 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-13"
+      "2026-09-13",
+      "2026-10-19"
     ],
     "lesson_occurrences": [
-      "2026-09-13 08:00"
+      "2026-09-13 08:00",
+      "2026-10-19 08:00"
     ]
   },
   {
@@ -16688,17 +16696,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-02 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-10-19 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-19"
     ],
     "lesson_occurrences": [
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-10-19 08:00"
     ]
   },
   {
@@ -17645,17 +17655,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-04 08:00",
-    "last_seen": "2026-10-04 08:00",
+    "last_seen": "2026-10-19 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-04"
+      "2026-10-04",
+      "2026-10-19"
     ],
     "lesson_occurrences": [
-      "2026-10-04 08:00"
+      "2026-10-04 08:00",
+      "2026-10-19 08:00"
     ]
   },
   {
@@ -22520,6 +22532,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-18 18:00"
+    ]
+  },
+  {
+    "word": "mengangsur",
+    "cn": "分期付款；分期偿还",
+    "en": "to pay in installments",
+    "root": "angsur",
+    "root_cn": "一点一点地（推进、偿还）",
+    "example": "Rina membeli laptop baru dengan cara mengangsur selama dua belas bulan, lima ratus ribu rupiah per bulan.",
+    "example_cn": "丽娜用分期付款的方式买了一台新笔记本电脑，分十二个月，每月五十万印尼盾。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 08:00"
+    ]
+  },
+  {
+    "word": "laga",
+    "cn": "动作（片）；打斗；（体育）比赛",
+    "en": "action (film); fight; match (sports)",
+    "root": "",
+    "root_cn": "",
+    "example": "Dewi suka banget film laga, apalagi yang banyak adegan berantem sama kejar-kejaran mobil.",
+    "example_cn": "德维特别喜欢动作片，尤其是打斗和飞车追逐场面多的那种。（banget = sekali，sama = dan）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 08:00"
+    ]
+  },
+  {
+    "word": "misteri",
+    "cn": "谜；神秘的事；悬疑（片、小说）",
+    "en": "mystery",
+    "root": "",
+    "root_cn": "",
+    "example": "Isi surat lama itu masih menjadi misteri; Nenek tidak pernah mau menceritakan rahasianya.",
+    "example_cn": "那封旧信的内容至今还是个谜；奶奶从来不肯说出其中的秘密。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 08:00"
+    ]
+  },
+  {
+    "word": "fantasi",
+    "cn": "幻想；奇幻（片、故事）",
+    "en": "fantasy",
+    "root": "",
+    "root_cn": "",
+    "example": "Film fantasi favorit adik saya bercerita tentang seorang anak yang bisa berbicara dengan hewan.",
+    "example_cn": "我弟弟最喜欢的奇幻片讲的是一个能和动物说话的孩子。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 08:00"
+    ]
+  },
+  {
+    "word": "skripsi",
+    "cn": "本科毕业论文",
+    "en": "undergraduate thesis",
+    "root": "",
+    "root_cn": "",
+    "example": "Rina sedang mengerjakan skripsi tentang banjir di Jakarta. Setiap hari ia membaca belasan jurnal.",
+    "example_cn": "丽娜正在写一篇关于雅加达洪水的毕业论文。她每天要读十几篇期刊论文。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 08:00"
+    ]
+  },
+  {
+    "word": "kinerja",
+    "cn": "（工作）表现、绩效；（机器）性能",
+    "en": "performance (of work, a person or a machine)",
+    "root": "kerja",
+    "root_cn": "工作",
+    "example": "Kinerja laptop lama Rina makin menurun; membuka satu file saja bisa makan waktu lima menit.",
+    "example_cn": "丽娜那台旧电脑的性能越来越差，光打开一个文件就要花五分钟。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 08:00"
+    ]
+  },
+  {
+    "word": "bencana alam",
+    "cn": "自然灾害",
+    "en": "natural disaster",
+    "root": "",
+    "root_cn": "",
+    "example": "Indonesia sering mengalami bencana alam, seperti banjir dan gempa bumi, sehingga warga perlu tahu cara menyelamatkan diri.",
+    "example_cn": "印度尼西亚经常发生洪水、地震等自然灾害，所以居民需要知道怎么自救。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 08:00"
+    ]
+  },
+  {
+    "word": "dimaksudkan",
+    "cn": "意在；旨在；（被）打算用来……",
+    "en": "to be intended (to / for)",
+    "root": "maksud",
+    "root_cn": "意思；目的",
+    "example": "Tugas kelompok ini dimaksudkan agar setiap anggota belajar bekerja sama.",
+    "example_cn": "这项小组作业的用意是让每个成员学会合作。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 08:00"
+    ]
+  },
+  {
+    "word": "menghirup",
+    "cn": "吸入；呼吸（某种空气、气味）",
+    "en": "to inhale; to breathe in",
+    "root": "hirup",
+    "root_cn": "吸；啜",
+    "example": "Rina mulai gelisah setelah tiga jam di depan laptop. Ia menutup laptopnya, lalu menghirup napas dalam-dalam.",
+    "example_cn": "在电脑前坐了三个小时后，丽娜开始坐立不安。她合上电脑，深深吸了一口气。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 08:00"
+    ]
+  },
+  {
+    "word": "gejala",
+    "cn": "症状；迹象；现象",
+    "en": "symptom; sign",
+    "root": "",
+    "root_cn": "",
+    "example": "Kalau muncul gejala flu, sebaiknya istirahat yang cukup dan minum banyak air putih.",
+    "example_cn": "如果出现感冒症状，最好充分休息、多喝白开水。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-19"
+    ],
+    "lesson_occurrences": [
+      "2026-10-19 08:00"
     ]
   }
 ];

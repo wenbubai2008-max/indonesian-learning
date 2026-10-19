@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-19",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 59
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-18T23:40:43.148Z",
-    "lesson_watermark": "2026-10-18 18:00",
-    "index_updated": "2026-10-18",
-    "runtime_hash": "1a5bea8c9d49c3de6d86862afae0239d684bf77788ef71d879a3f5831e473988",
-    "index_hash": "e584108b90c25c8267eb0248a43b1c623791f6dae002b3c52a6c515ba87bf772",
+    "runtime_generated_at": "2026-10-19T00:32:19.845Z",
+    "lesson_watermark": "2026-10-19 08:00",
+    "index_updated": "2026-10-19",
+    "runtime_hash": "b0d8e8b1d193a5cdc738da314c3299c254e394ff2de209e7b820f41c5eec8be5",
+    "index_hash": "d614963df55d4b18e788a1fd25dfeacc783484d0f7a330dfe3b941212b0e54a8",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "mengangsur",
-        "分期偿还"
-      ],
-      [
-        "laga",
-        "动作片/动作"
-      ],
-      [
-        "misteri",
-        "悬疑/神秘片"
-      ],
-      [
-        "fantasi",
-        "奇幻"
-      ],
-      [
-        "skripsi",
-        "本科毕业论文"
-      ],
-      [
-        "kinerja",
-        "表现；工作绩效"
-      ],
-      [
-        "bencana alam",
-        "自然灾害"
-      ],
-      [
-        "dimaksudkan",
-        "意在；旨在"
-      ],
-      [
-        "menghirup",
-        "吸入；呼吸"
-      ],
-      [
-        "gejala",
-        "症状；迹象"
-      ],
       [
         "penyebab",
         "原因；致因"
@@ -1574,16 +1534,6 @@
         "追；赶"
       ],
       [
-        "beresin",
-        2,
-        0,
-        "",
-        "2026-10-15T13:37:28.882Z",
-        "把……弄完、处理好（口语）",
-        "beres",
-        ""
-      ],
-      [
         "rapihin",
         3,
         0,
@@ -1652,16 +1602,6 @@
         "态度；立场；举止",
         "sikap",
         "态度；立场"
-      ],
-      [
-        "tertentu",
-        2,
-        0,
-        "",
-        "2026-10-15T13:36:43.856Z",
-        "特定的；某些特定的",
-        "tentu",
-        "确定；一定"
       ],
       [
         "bertanggung jawab",
@@ -2434,16 +2374,6 @@
         "天空"
       ],
       [
-        "nentuin",
-        4,
-        2,
-        "2026-09-18T15:04:31.809Z",
-        "2026-09-21T15:33:06.764Z",
-        "决定；确定具体安排（口语）",
-        "tentu",
-        "确定；一定"
-      ],
-      [
         "ancaman",
         2,
         0,
@@ -3094,6 +3024,36 @@
         "只要；来源"
       ],
       [
+        "gelisah",
+        2,
+        0,
+        "",
+        "2026-10-13T15:14:24.711Z",
+        "焦躁不安；心神不宁",
+        "gelisah",
+        "不安"
+      ],
+      [
+        "membandingkan",
+        2,
+        0,
+        "",
+        "2026-10-15T03:29:31.110Z",
+        "比较；进行对比",
+        "banding",
+        "比较"
+      ],
+      [
+        "unduh",
+        2,
+        0,
+        "",
+        "2026-10-15T08:15:40.131Z",
+        "下载（文件）",
+        "unduh",
+        "下载"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3192,6 +3152,106 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
+      ],
+      [
+        "mengangsur",
+        2,
+        0,
+        "",
+        "",
+        "分期付款；分期偿还",
+        "angsur",
+        "一点一点地（推进、偿还）"
+      ],
+      [
+        "laga",
+        2,
+        0,
+        "",
+        "",
+        "动作（片）；打斗；（体育）比赛",
+        "",
+        ""
+      ],
+      [
+        "misteri",
+        2,
+        0,
+        "",
+        "",
+        "谜；神秘的事；悬疑（片、小说）",
+        "",
+        ""
+      ],
+      [
+        "fantasi",
+        2,
+        0,
+        "",
+        "",
+        "幻想；奇幻（片、故事）",
+        "",
+        ""
+      ],
+      [
+        "skripsi",
+        2,
+        0,
+        "",
+        "",
+        "本科毕业论文",
+        "",
+        ""
+      ],
+      [
+        "kinerja",
+        2,
+        0,
+        "",
+        "",
+        "（工作）表现、绩效；（机器）性能",
+        "kerja",
+        "工作"
+      ],
+      [
+        "bencana alam",
+        2,
+        0,
+        "",
+        "",
+        "自然灾害",
+        "",
+        ""
+      ],
+      [
+        "dimaksudkan",
+        2,
+        0,
+        "",
+        "",
+        "意在；旨在；（被）打算用来……",
+        "maksud",
+        "意思；目的"
+      ],
+      [
+        "menghirup",
+        2,
+        0,
+        "",
+        "",
+        "吸入；呼吸（某种空气、气味）",
+        "hirup",
+        "吸；啜"
+      ],
+      [
+        "gejala",
+        2,
+        0,
+        "",
+        "",
+        "症状；迹象；现象",
+        "",
+        ""
       ]
     ],
     "focus": [
@@ -3813,6 +3873,29 @@
         "ditipu",
         "menoleh"
       ]
+    },
+    {
+      "date": "2026-10-19",
+      "session": "am",
+      "review_core": [
+        "tertentu",
+        "nentuin",
+        "peristiwa",
+        "rupanya",
+        "beresin"
+      ],
+      "new_words": [
+        "mengangsur",
+        "laga",
+        "misteri",
+        "fantasi",
+        "skripsi",
+        "kinerja",
+        "bencana alam",
+        "dimaksudkan",
+        "menghirup",
+        "gejala"
+      ]
     }
   ],
   "previous_pm": {
@@ -3831,7 +3914,88 @@
       "nyasar"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-19",
+    "vocab": [
+      [
+        "mengangsur",
+        "分期付款；分期偿还",
+        "to pay in installments",
+        "angsur",
+        "一点一点地（推进、偿还）"
+      ],
+      [
+        "laga",
+        "动作（片）；打斗；（体育）比赛",
+        "action (film); fight; match (sports)",
+        "",
+        ""
+      ],
+      [
+        "misteri",
+        "谜；神秘的事；悬疑（片、小说）",
+        "mystery",
+        "",
+        ""
+      ],
+      [
+        "fantasi",
+        "幻想；奇幻（片、故事）",
+        "fantasy",
+        "",
+        ""
+      ],
+      [
+        "skripsi",
+        "本科毕业论文",
+        "undergraduate thesis",
+        "",
+        ""
+      ],
+      [
+        "kinerja",
+        "（工作）表现、绩效；（机器）性能",
+        "performance (of work, a person or a machine)",
+        "kerja",
+        "工作"
+      ],
+      [
+        "bencana alam",
+        "自然灾害",
+        "natural disaster",
+        "",
+        ""
+      ],
+      [
+        "dimaksudkan",
+        "意在；旨在；（被）打算用来……",
+        "to be intended (to / for)",
+        "maksud",
+        "意思；目的"
+      ],
+      [
+        "menghirup",
+        "吸入；呼吸（某种空气、气味）",
+        "to inhale; to breathe in",
+        "hirup",
+        "吸；啜"
+      ],
+      [
+        "gejala",
+        "症状；迹象；现象",
+        "symptom; sign",
+        "",
+        ""
+      ]
+    ],
+    "review_vocab": [
+      "tertentu",
+      "nentuin",
+      "peristiwa",
+      "rupanya",
+      "beresin"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
