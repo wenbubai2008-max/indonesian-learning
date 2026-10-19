@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generated_at": "2026-10-19T03:40:41.916Z",
-  "source_updated_at": "2026-10-19T02:10:41.255Z",
+  "generated_at": "2026-10-19T09:40:43.315Z",
+  "source_updated_at": "2026-10-19T06:10:29.870Z",
   "taught_total": 848,
-  "confirmed_mastered": 228,
-  "needs_reinforcement": 573,
+  "confirmed_mastered": 226,
+  "needs_reinforcement": 575,
   "unverified": 47,
-  "mastery_percent": 26.9,
+  "mastery_percent": 26.7,
   "primary_master_total": 977,
   "primary_taught_unique": 500,
   "primary_unlearned_total": 477,
   "primary_coverage_percent": 51.2,
   "primary_eligible_new_total": 147,
-  "focus_total": 558,
+  "focus_total": 560,
   "focus_words": [
     {
       "word": "seolah-olah",
@@ -37,8 +37,21 @@
       ],
       "wrong_count": 3,
       "last_wrong": "2026-10-17T14:22:18.757Z",
-      "last_review": "2026-10-17T14:22:18.757Z",
+      "last_review": "2026-10-19T05:46:43.242Z",
       "cn": "遵守；服从"
+    },
+    {
+      "word": "menerapkan",
+      "score": 104,
+      "signals": [
+        "quick_wrong",
+        "lesson_wrong",
+        "dont"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-10-19T06:00:03.825Z",
+      "last_review": "2026-10-19T06:00:03.825Z",
+      "cn": "应用；实施；推行"
     },
     {
       "word": "menunjukkan",
@@ -99,18 +112,6 @@
       "last_wrong": "2026-09-27T13:57:54.512Z",
       "last_review": "2026-10-09T07:08:06.093Z",
       "cn": "复制"
-    },
-    {
-      "word": "kabur",
-      "score": 80,
-      "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-25T15:02:05.313Z",
-      "last_review": "2026-10-09T07:08:10.237Z",
-      "cn": "逃跑；溜走"
     }
   ],
   "definitions": {
