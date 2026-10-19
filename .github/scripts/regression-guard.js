@@ -754,7 +754,8 @@ try {
     const dt=exists?read('data/deep-teach.js'):'';
     okNew(exists&&/data\/deep-teach\.js\?v=[^"']+/.test(indexHtml),'deep teach exists and loads with a manual cache version');
     okNew(!/localStorage|sessionStorage|indexedDB|recordLessonWrong|markMastered|indo_lesson_recall_v1|indo_automation_training_state_v1|WeaknessPool|LessonRecall|TrainingSync/.test(dt),'deep teach does not write learning, recall, training, mastery or preference records');
-    okNew(dt.includes("mode:'legacy'")&&dt.includes('window.GuidedLesson.open')&&dt.includes('selectTeach'),'deep teach falls back to GuidedLesson when no usable teaching data exists');
+    okNew(dt.includes("mode:'none'")&&!dt.includes('GuidedLesson.open')&&dt.includes('revealStarts')&&dt.includes('selectTeach'),'deep teach: no usable teaching data → no start button (old 带学 paused 2026-10-19)');
+    okNew(read('data/history-v2.js').includes('class="lfStart" hidden data-guided-start='),'the 带学 start button is rendered hidden and only revealed when teaching data exists');
     const dir=rel('data/teach');
     const files=fs.existsSync(dir)?fs.readdirSync(dir).filter(f=>f.endsWith('.json')):[];
     okNew(files.length>0&&files.every(f=>/^\d{4}-\d{2}-\d{2}-(am|pm)\.json$/.test(f)&&fs.existsSync(rel('data/daily/'+f))),'every pilot teach sidecar has a corresponding daily lesson');

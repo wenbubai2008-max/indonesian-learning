@@ -52,25 +52,31 @@ function validateShape(teach,lesson){
   return true;
  }catch(e){return false}
 }
-// Embedded data wins. Invalid found data goes straight to legacy, rather than silently replacing it.
+// Embedded data wins. Missing or invalid data → mode none (no start button; the old 带学 is paused since 2026-10-19).
 async function selectTeach(lesson,fetcher){
  let teach=lesson&&lesson.lesson_focus&&lesson.lesson_focus.teach;
  if(teach===undefined||teach===null){
-  if(!lesson||!/^\d{4}-\d{2}-\d{2}$/.test(lesson.date)||!['am','pm'].includes(lesson.session))return {mode:'legacy'};
-  try{const r=await fetcher(`data/teach/${lesson.date}-${lesson.session}.json`);if(r.status===404)return {mode:'legacy'};if(!r.ok)throw new Error('HTTP '+r.status);teach=await r.json()}catch(e){console.warn('DeepTeach: 讲解数据不可用，使用旧版带学',e);return {mode:'legacy'}}
+  if(!lesson||!/^\d{4}-\d{2}-\d{2}$/.test(lesson.date)||!['am','pm'].includes(lesson.session))return {mode:'none'};
+  try{const r=await fetcher(`data/teach/${lesson.date}-${lesson.session}.json`);if(r.status===404)return {mode:'none'};if(!r.ok)throw new Error('HTTP '+r.status);teach=await r.json()}catch(e){console.warn('DeepTeach: 讲解数据不可用，不显示带学入口',e);return {mode:'none'}}
  }
- if(!validateShape(teach,lesson)){console.warn('DeepTeach: 讲解数据格式不合格，使用旧版带学');return {mode:'legacy'}}
+ if(!validateShape(teach,lesson)){console.warn('DeepTeach: 讲解数据格式不合格，不显示带学入口');return {mode:'none'}}
  return {mode:'deep',teach};
 }
 let active=null,busy=false;
 function close(){if(active){const session=active;active=null;session.close()}}
-function legacy(lesson){close();return window.GuidedLesson.open(lesson.date,lesson.session)}
+// 2026-10-19 (user request): the old 带学 is paused. A lesson without usable teaching data shows no start button at all;
+// guided-lesson.js stays in the repo but is never opened.
+async function revealStarts(root){const scope=root||document;if(!scope||typeof scope.querySelectorAll!=='function')return;const btns=[...scope.querySelectorAll('[data-guided-start][hidden]')];
+ for(const b of btns){const m=String(b.dataset.guidedStart||'').match(/^(\d{4}-\d{2}-\d{2})-(am|pm)$/);if(!m)continue;
+  try{const fetchJ=window.fetchJSON||(p=>fetch(p).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}));
+   const lesson=await fetchJ(`data/daily/${m[1]}-${m[2]}.json`),chosen=await selectTeach(lesson,p=>fetch(p));if(chosen.mode==='deep'&&b.isConnected)b.hidden=false}
+  catch(e){console.warn('DeepTeach: 无法确认讲解数据，不显示带学入口',e)}}}
 async function launch(date,session){
  if(busy)return;busy=true;
  try{const fetchJ=window.fetchJSON||(p=>fetch(p).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}));
   const lesson=await fetchJ(`data/daily/${date}-${session}.json`),chosen=await selectTeach(lesson,p=>fetch(p));
-  if(chosen.mode==='deep')open(lesson,chosen.teach);else await legacy(lesson);
- }catch(e){console.warn('DeepTeach: 无法打开深讲版，使用旧版带学',e);try{await window.GuidedLesson.open(date,session)}catch(err){console.warn('DeepTeach: 课程加载失败',err)}}finally{busy=false}
+  if(chosen.mode==='deep')open(lesson,chosen.teach);else console.warn('DeepTeach: 这节课没有讲解数据（旧版带学已暂停）');
+ }catch(e){console.warn('DeepTeach: 无法打开深讲版',e)}finally{busy=false}
 }
 function css(){if(document.getElementById('deepTeachStyle'))return;const style=document.createElement('style');style.id='deepTeachStyle';style.textContent=`
 .dt{
@@ -218,7 +224,7 @@ function open(lesson,teach){
  const previousFocus=document.activeElement,overflow=document.documentElement.style.overflow;
  const overlay=document.createElement('div');overlay.id='dtOverlay';overlay.className='dt';overlay.setAttribute('role','dialog');overlay.setAttribute('aria-modal','true');overlay.setAttribute('aria-label','深讲版带学');
  const theme=document.documentElement.dataset.theme||document.body.dataset.theme;if(theme)overlay.dataset.theme=theme;
- overlay.innerHTML=`<header><div class="wrap"><div class="hrow"><div class="htitle"><b>${esc(teach.title||'深讲版带学')}</b><span>${esc(lesson.date)} ${lesson.session==='am'?'早课':'晚课'}</span></div><button type="button" class="exit" data-dt-close>回到整页</button></div><div class="hrow toggles"><label class="tg"><input type="checkbox" id="dtSimple">简明讲解</label><label class="tg"><input type="checkbox" id="dtSource">标出内容来源</label><button class="legacy" type="button" data-dt-legacy>用旧版带学</button></div><nav id="dtNav" aria-label="课程环节"></nav></div></header><main class="wrap"><div class="notice">深讲版 · 不保存任何结果，随时可以回到整页。</div><div id="dtThread" aria-live="polite"></div></main><div class="bar"><div class="wrap" id="dtBar"></div></div>`;
+ overlay.innerHTML=`<header><div class="wrap"><div class="hrow"><div class="htitle"><b>${esc(teach.title||'深讲版带学')}</b><span>${esc(lesson.date)} ${lesson.session==='am'?'早课':'晚课'}</span></div><button type="button" class="exit" data-dt-close>回到整页</button></div><div class="hrow toggles"><label class="tg"><input type="checkbox" id="dtSimple">简明讲解</label><label class="tg"><input type="checkbox" id="dtSource">标出内容来源</label></div><nav id="dtNav" aria-label="课程环节"></nav></div></header><main class="wrap"><div class="notice">深讲版 · 不保存任何结果，随时可以回到整页。</div><div id="dtThread" aria-live="polite"></div></main><div class="bar"><div class="wrap" id="dtBar"></div></div>`;
  css();document.body.appendChild(overlay);document.documentElement.style.overflow='hidden';
  const hiddenSiblings=[...document.body.children].filter(n=>n!==overlay).map(n=>[n,n.inert]);hiddenSiblings.forEach(([n])=>{n.inert=true});
  const LESSON=lesson,TEACH=JSON.parse(JSON.stringify(teach));
@@ -285,7 +291,7 @@ async function start(from){gen++;clearTimers();S=fresh();thread.innerHTML='';las
   try{for(let i=from||0;i<UNITS.length;i++){navOn(i);const u=UNITS[i];
       if(u.type==='final'){await finalUnit();break}
       await RUN[u.type](u);S.pos++;await runDueRecalls()}}
-  catch(e){if(!(e instanceof Abort)){console.warn('DeepTeach: 讲解无法继续，返回旧版带学',e);if(overlay.isConnected)legacy(lesson).catch(err=>console.warn('DeepTeach: 旧版加载失败',err))}}}
+  catch(e){if(!(e instanceof Abort)){console.warn('DeepTeach: 讲解无法继续，回到整页',e);if(overlay.isConnected)close()}}}
 
 /* explanation with optional side questions; returns when the learner asks to be tested */
 async function explain(it,nextLabel){
@@ -414,10 +420,11 @@ function teardown(){gen++;clearTimers();document.removeEventListener('keydown',o
 function onKey(e){if(e.key==='Escape'){e.preventDefault();close()}else if(e.key==='Tab'){const controls=[...overlay.querySelectorAll('button,input')].filter(n=>!n.disabled&&n.getClientRects().length);const first=controls[0],last=controls[controls.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}}
 document.addEventListener('keydown',onKey);
 overlay.querySelector('[data-dt-close]').onclick=()=>close();
-overlay.querySelector('[data-dt-legacy]').onclick=()=>{legacy(lesson).catch(e=>console.warn('DeepTeach: 旧版加载失败',e))};
 active={close:teardown};overlay.querySelector('[data-dt-close]').focus({preventScroll:true});
 start(0);return true;
 }
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-guided-start]');if(!b)return;const m=String(b.dataset.guidedStart||'').match(/^(\d{4}-\d{2}-\d{2})-(am|pm)$/);if(!m)return;e.preventDefault();e.stopImmediatePropagation();launch(m[1],m[2])},true);
-window.DeepTeach={open,close,launch,selectTeach,validateShape,dueRecalls,classify,md};
+if(typeof window.openDaily==='function'){const base=window.openDaily;window.openDaily=async function(){const r=await base.apply(this,arguments);revealStarts().catch(()=>{});return r}}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>revealStarts().catch(()=>{}));else revealStarts().catch(()=>{});
+window.DeepTeach={open,close,launch,selectTeach,validateShape,dueRecalls,classify,md,revealStarts};
 })();

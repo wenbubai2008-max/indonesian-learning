@@ -177,7 +177,7 @@ function goReading(){go('readingPage');loadReading('am')}window.goReading=goRead
 function fmtDate(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}function renderCalendar(){const y=calDate.getFullYear(),m=calDate.getMonth();$('monthLabel').textContent=y+'年 '+(m+1)+'月';let h=['日','一','二','三','四','五','六'].map(x=>'<div class="dow">'+x+'</div>').join('');const start=new Date(y,m,1).getDay(),days=new Date(y,m+1,0).getDate();for(let i=0;i<start;i++)h+='<div class="day blank"></div>';for(let n=1;n<=days;n++){const d=fmtDate(new Date(y,m,n));let dots='';for(const s of ['am','pm'])if(hasSession(d,s))dots+='<div class="'+(isDone(d,s)?'dotDone':'dotReady')+'">'+s.toUpperCase()+' '+(isDone(d,s)?'✓':'●')+'</div>';h+='<button class="day '+(d===TODAY?'today':'')+'" onclick="calendarDay('+JSON.stringify(d)+')"><b>'+n+'</b>'+dots+'</button>'}$('cal').innerHTML=h}function moveMonth(n){calDate=new Date(calDate.getFullYear(),calDate.getMonth()+n,1);renderCalendar()}window.moveMonth=moveMonth;function calendarDay(d){if(hasSession(d,'am'))openDaily('am',d);else if(hasSession(d,'pm'))openDaily('pm',d)}window.calendarDay=calendarDay;
 loadArchive();
 </script><script src="data/daily-vocab-data.js?v=1"></script><script src="data/unfamiliar-vocab-data.js?v=20260901-1"></script><script src="data/daily-vocab-examples.js?v=20260902-1"></script>
-<script src="data/history-layout.js?v=2"></script><script src="data/history-v2.js?v=3ca11a08d745"></script>
+<script src="data/history-layout.js?v=2"></script><script src="data/history-v2.js?v=ec86d30a7f80"></script>
 <script src="data/daily-light-test.js?v=2ae4a0708592"></script><script src="data/pronunciation-fix.js?v=20261004-indo-voice1"></script>
 <script src="data/reading-sync.js?v=20260831-4"></script>
 <script src="data/vocab-review-ui.js?v=20260917-retired2"></script>
@@ -203,7 +203,7 @@ loadArchive();
 <script src="data/sync-device-setup.js?v=20261014-1"></script>
 <script src="data/lesson-end-recall.js?v=20261018-focus1"></script>
 <script src="data/guided-lesson.js?v=20261018-guided2"></script>
-<script src="data/deep-teach.js?v=20261019-deep2"></script>
+<script src="data/deep-teach.js?v=20261019-deep3"></script>
 <script src="data/training-sync-client.js?v=20261016-recall1"></script>
 <script src="data/lesson-answer-signal.js?v=20261014-2"></script>
 <script src="data/vocab-memory-feedback.js?v=1c43fcd703c7"></script>
