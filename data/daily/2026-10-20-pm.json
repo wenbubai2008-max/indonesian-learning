@@ -1,0 +1,363 @@
+{
+  "date": "2026-10-20",
+  "session": "pm",
+  "time": "18:00",
+  "day": 60,
+  "title": "18:00 晚课｜Diam-diam Bantu Ibu: Saatnya Bikin Dana Darurat · 偷偷帮妈妈：是时候存一笔应急金了",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "diam-diam",
+    "keadaan",
+    "memilah"
+  ],
+  "vocab": [
+    {
+      "word": "diam-diam",
+      "display": "diam-diam",
+      "audio_text": "diam-diam",
+      "cn": "偷偷地；暗中；不声不响地",
+      "en": "secretly; quietly, without telling anyone",
+      "root": "diam",
+      "root_cn": "安静；不说话",
+      "formation": "diam（安静、不出声）重叠成 diam-diam，作副词，放在动词前：diam-diam pergi（偷偷走掉）、diam-diam menabung（悄悄存钱）、diam-diam naksir（暗恋）、secara diam-diam（暗中，较正式）。同词根：pendiam（沉默寡言的人）、mendiamkan（对某人不理不睬、冷处理）、berdiam diri（一言不发）。",
+      "example": "Teman sekamarku diam-diam pakai parfumku. Pantas bajunya wangi banget!",
+      "example_cn": "我室友偷偷用我的香水。怪不得她衣服那么香！",
+      "synonym_note": "diam-diam vs sembunyi-sembunyi vs rahasia：diam-diam 是“不声张、别人不知道”，本身中性，也可以是好事（diam-diam bikin kejutan 悄悄准备惊喜）；sembunyi-sembunyi 是“躲躲藏藏”，强调怕被发现，多半是不该做的事；rahasia 是名词/形容词“秘密”（Ini rahasia, ya.）。口语说法：diem-diem（Dia diem-diem udah nabung.）；正式文章、新闻用 diam-diam 或 secara diam-diam。",
+      "usage_note": "单说 diam 是“安静、别出声”（Diam dulu! 先别说话），不是“偷偷”；要表达“偷偷做某事”必须用重叠的 diam-diam + 动词。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "keadaan",
+      "display": "keadaan",
+      "audio_text": "keadaan",
+      "cn": "情况；状况；处境",
+      "en": "condition; situation; state",
+      "root": "ada",
+      "root_cn": "有；在",
+      "formation": "ke-an + ada → keadaan（“存在的样子”→状况）。常见搭配：keadaan darurat（紧急状况）、keadaan ekonomi（经济状况）、dalam keadaan baik（状况良好）、melihat keadaan（看情况）、keadaan Ibu（妈妈的情况）。",
+      "example": "Biarpun dalam keadaan sakit, Pak RT tetap datang ke rapat warga.",
+      "example_cn": "尽管身体不舒服，居委会主任还是来参加了居民会议。",
+      "synonym_note": "keadaan vs kondisi vs situasi：keadaan 最通用，人、东西、局势都能说；kondisi 多说身体或物品的状态（kondisi badan、kondisi mobil），口语里常代替 keadaan；situasi 偏“局面、气氛”（Situasi di kantor lagi tegang.）。口语说法：日常问候人近况更常说 Gimana kabarnya? 或 Gimana kondisinya?；keadaan 在新闻、通知和正式场合更常见。",
+      "usage_note": "固定说法 keadaan darurat（紧急状况）、dalam keadaan + 形容词（处于……状态）。问病人时可说 Bagaimana keadaannya sekarang?（他现在情况怎么样？）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "memilah",
+      "display": "memilah",
+      "audio_text": "memilah",
+      "cn": "分拣；分类；区分（把混在一起的东西分开）",
+      "en": "to sort out; to separate; to tell apart",
+      "root": "pilah",
+      "root_cn": "分开；区分",
+      "formation": "meN- + pilah → memilah（p 脱落，和 memukul、memilih 同理）；被动 dipilah；重叠 memilah-milah（仔细地一样样分）；名词 pemilahan（分类）。常见搭配：memilah sampah（垃圾分类）、memilah barang（整理分拣东西）、memilah informasi（筛选信息）、memilah mana yang … mana yang …（分清哪些……哪些……）。",
+      "example": "Sebelum pindahan, aku memilah barang: mana yang masih ada gunanya, mana yang mau dijual.",
+      "example_cn": "搬家前，我把东西分了分：哪些还有用，哪些要卖掉。",
+      "synonym_note": "memilah vs memilih：memilih 是从几个里挑一个（memilih baju yang paling cocok）；memilah 是把混在一起的东西分成几类（memilah baju bekas menjadi dua kelompok）。两个词只差一个字母，最容易混。memilah vs menyortir：menyortir 多指仓库、快递等的分拣作业。口语说法：memilah 本身没有常用口语变体，日常口语常换成 misahin（= memisahkan）：Sampahnya dipisahin dulu, ya.",
+      "usage_note": "最常见的结构是 memilah + 东西 + menjadi …（分成……），或 memilah mana yang …, mana yang …。只“选一个”时用 memilih，不用 memilah。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "darurat",
+      "display": "darurat",
+      "audio_text": "darurat",
+      "cn": "紧急；紧急状况",
+      "en": "emergency",
+      "root": "darurat",
+      "root_cn": "紧急（源自阿拉伯语，本身即词根）",
+      "formation": "单纯词，多放在名词后作修饰语。常见搭配：dana darurat（应急金）、keadaan darurat（紧急状况）、pintu darurat（紧急出口）、tangga darurat（安全楼梯）、nomor darurat（紧急电话）；急诊室 UGD = Unit Gawat Darurat。",
+      "example": "Tolong jangan meletakkan kardus di depan pintu darurat, ya.",
+      "example_cn": "请不要把纸箱放在紧急出口前面哦。",
+      "synonym_note": "darurat vs mendesak vs gawat：mendesak 是“急迫、刻不容缓”，不一定危险（kebutuhan yang mendesak）；gawat 是“糟糕、危急”，口语里常单独惊呼 Gawat!；darurat 多作名词修饰语（dana / pintu / tangga darurat）。口语说法：darurat 本身不变形，口语说“很急”常用 urgent 或 penting banget（Ini urgent banget!）。",
+      "usage_note": "darurat 放在名词后面：dana darurat，不说 darurat dana。说“这是紧急情况”可以说 Ini keadaan darurat. 或口语 Ini darurat!",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ganjel",
+      "display": "ganjel",
+      "audio_text": "ganjel",
+      "cn": "心里有点卡；觉得哪里不对劲；有事没说开（口语）",
+      "en": "to feel something is off; to have something weighing on one's mind (colloquial)",
+      "root": "ganjal",
+      "root_cn": "垫住；卡住；妨碍",
+      "formation": "ganjel 是 ganjal 的口语音变（a → e）。规范动词 mengganjal（垫住、卡住；心里膈应），名词 ganjalan（垫块；心结）。典型搭配：ada yang ganjel（有什么不对劲）、rasanya ganjel（感觉卡卡的）、masih ganjel di hati（心里还有疙瘩）。",
+      "example": "Habis rapat tadi, rasanya masih ada yang ganjel. Kayaknya bos belum puas sama laporanku.",
+      "example_cn": "刚开完会，总觉得还有什么不对劲。老板好像对我的报告还不满意。",
+      "synonym_note": "ganjel vs curiga vs nggak enak hati：curiga 是怀疑某人做了什么（Aku curiga dia bohong.），有明确怀疑对象；nggak enak hati 是不好意思、过意不去；ganjel 是说不清的“卡在心里”：觉得哪里不对，或有话没说开。口语说法：ganjel 就是口语形，正式说法是 mengganjal：Ada sesuatu yang mengganjal di hati saya.（写信、正式谈话时用）。",
+      "usage_note": "主语通常是“某件事”，不是人：说 Ada yang ganjel. / Rasanya ganjel.，不说 Aku ganjel.。问朋友“是不是还有心结”可以说 Masih ada yang ganjel nggak?",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "butuh",
+      "display": "butuh",
+      "audio_text": "butuh",
+      "cn": "需要",
+      "en": "to need",
+      "root": "butuh",
+      "root_cn": "需要",
+      "formation": "同词根组：butuh（日常说法，直接接名词或动词）→ membutuhkan（meN- + butuh + -kan，较正式）→ kebutuhan（ke-an，名词“需要；需求”）、dibutuhkan（被需要；所需的）。常见搭配：butuh waktu（需要时间）、butuh bantuan（需要帮忙）、butuh uang（缺钱）、lagi butuh banget（正急需）。",
+      "example": "Kami butuh solusi yang jelas sebelum akhir bulan.",
+      "example_cn": "我们需要在月底前找到一个明确的解决办法。",
+      "synonym_note": "butuh vs perlu：意思接近；perlu 还能表示“有必要”（Nggak perlu bawa jaket. 不用带外套），butuh 更强调“缺了不行”（Aku butuh istirahat.）。同词根的 membutuhkan 是它的正式说法，见下一张卡。口语说法：butuh 本身就是日常口语的说法，口语常说 lagi butuh banget。",
+      "usage_note": "butuh 后面直接接名词或动词：butuh uang、butuh istirahat，不加 -kan。写正式邮件、公告时换成 membutuhkan。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "membutuhkan",
+      "display": "membutuhkan",
+      "audio_text": "membutuhkan",
+      "cn": "需要（较正式）",
+      "en": "to need; to require (formal)",
+      "root": "butuh",
+      "root_cn": "需要",
+      "formation": "meN- + butuh + -kan → membutuhkan（meN- 遇 b 变 mem-，b 不脱落）。被动 dibutuhkan（被需要；所需的），常作定语：barang yang dibutuhkan pembeli（顾客需要的东西）；招聘广告常见 Dibutuhkan segera …（急招……）。同词根组：butuh（日常说法）、kebutuhan（名词）。",
+      "example": "Perusahaan itu membutuhkan staf admin baru. Ini peluang bagus buat kamu!",
+      "example_cn": "那家公司需要一名新的行政人员。这对你是个好机会！",
+      "synonym_note": "membutuhkan vs memerlukan：几乎同义，都偏正式，公告、新闻、招聘常用。和 butuh 的区别主要是语体：同一句话聊天时说 Kantor lagi butuh admin.，写成通知就是 Kantor membutuhkan admin.。口语说法：口语直接说 butuh。",
+      "usage_note": "正式场合、书面用 membutuhkan；被动 dibutuhkan 很常用：yang dibutuhkan（所需的）、Dibutuhkan segera（急需）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "pemasukan",
+      "display": "pemasukan",
+      "audio_text": "pemasukan",
+      "cn": "收入；进账",
+      "en": "income; incoming money",
+      "root": "masuk",
+      "root_cn": "进入",
+      "formation": "peN-…-an + masuk → pemasukan（peN- 遇 m 写作 pe-；“进来的东西”→进账）。对应词：pengeluaran（支出，词根 keluar）。常见搭配：pemasukan bulanan（每月收入）、pemasukan tambahan（额外收入）、pemasukan turun / naik（收入减少/增加）、mencatat pemasukan dan pengeluaran（记录收支）。",
+      "example": "Selain gaji, Rani punya pemasukan tambahan dari jualan kue online. Kuenya laris karena cocok dengan selera anak muda.",
+      "example_cn": "除了工资，Rani 还靠在网上卖蛋糕有一笔额外收入。她的蛋糕很好卖，因为合年轻人的口味。",
+      "synonym_note": "pemasukan vs penghasilan vs pendapatan：penghasilan 多指个人工作所得（工资、报酬）；pendapatan 更正式，个人、公司、国家都可以（pendapatan negara）；pemasukan 强调“进来的钱”，常和 pengeluaran 成对出现在记账里。口语说法：口语常说 duit masuk：Bulan ini duit masuknya dikit.",
+      "usage_note": "记账时成对使用：pemasukan dan pengeluaran。说生意“进账少了”用 pemasukan turun / berkurang。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berjarak",
+      "display": "berjarak",
+      "audio_text": "berjarak",
+      "cn": "相距；隔开（一段距离）",
+      "en": "to be at a distance of; to be spaced apart",
+      "root": "jarak",
+      "root_cn": "距离",
+      "formation": "今天08:00新学。ber- + jarak → berjarak。常见搭配：berjarak … kilometer dari …（离……有……公里）、berjarak dekat（离得近）、duduk berjarak（隔开坐）。同词根：jarak（距离）、jarak tempuh（路程，今天早课也学了）。",
+      "example": "Kos baruku berjarak sekitar dua kilometer dari kantor. Aku bisa jalan kaki tiap pagi.",
+      "example_cn": "我新租的房间离公司大约两公里，每天早上都能走路去上班。",
+      "synonym_note": "berjarak vs jauh：jauh 只说“远”；berjarak 后面要接具体距离（berjarak dua kilometer）或 dekat / jauh。口语说法：口语更常直接用名词 jarak：Jaraknya sekitar dua kilo dari sini.（kilo = kilometer）",
+      "usage_note": "今天08:00新学：早课是潜水点 berjarak tiga kilometer dari pulau，今晚用来说两家住得有多远。句型：A berjarak + 距离 + dari B。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "pola",
+      "display": "pola",
+      "audio_text": "pola",
+      "cn": "模式；规律；（裁衣的）纸样",
+      "en": "pattern",
+      "root": "pola",
+      "root_cn": "模式；规律（本身即词根）",
+      "formation": "今天08:00新学。单纯词；派生 berpola（有花纹的；有规律的）。常见搭配：pola makan（饮食习惯）、pola tidur（作息规律）、pola pengeluaran（花钱习惯）、pola napas（呼吸节奏，早课学过）、pola baju（衣服纸样）。",
+      "example": "Sejak sering lembur, pola tidurku berantakan banget.",
+      "example_cn": "自从经常加班，我的作息完全乱了。",
+      "synonym_note": "pola vs kebiasaan：kebiasaan 是个人的习惯（kebiasaan begadang 熬夜的习惯）；pola 是能看出来的规律、模式，常用“pola + 名词”（pola makan、pola tidur）。说“看出规律”可以说 kelihatan polanya。口语说法：pola 没有常用的口语变体。",
+      "usage_note": "今天08:00新学：早课是 pola napas（呼吸节奏），今晚是 pola pengeluaran（花钱规律）。pola 一般放在前面：pola pengeluaran，不说 pengeluaran pola。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Rumah Dimas di Jakarta dan rumah ibunya di Sukabumi berjarak sekitar seratus kilometer. Sejak ada minimarket baru di dekat warung, pemasukan Ibu turun hampir setengah. Ibu tidak pernah cerita, tetapi adik Dimas, Laras, diam-diam mengirim uang setiap bulan. Minggu lalu kulkas warung rusak, dan Ibu membutuhkan tiga juta rupiah untuk servis. Tabungan Laras sudah habis, sehingga ia akhirnya curhat kepada Dimas. Meskipun kesal karena tidak diberi tahu, Dimas lebih khawatir pada keadaan Ibu. Mereka sepakat membagi dua biaya servis dan mulai menabung dana darurat. Laras membantu Ibu memilah barang dagangan: mana yang laku dan mana yang hanya menumpuk. Dimas meminta Ibu mencatat pola pengeluaran setiap hari.",
+    "cn": "Dimas 在雅加达的家和他妈妈在苏卡布米的家相距大约一百公里。自从小店附近开了一家新的便利店，妈妈的收入少了将近一半。妈妈从来没提过，可 Dimas 的妹妹 Laras 一直每个月偷偷给妈妈寄钱。上周小店的冰箱坏了，妈妈需要三百万印尼盾去修。Laras 的存款已经花光了，最后只好向 Dimas 倾诉。尽管因为没人告诉他而有点生气，Dimas 更担心的是妈妈的状况。兄妹俩商量好平摊修冰箱的钱，并开始存一笔应急金。Laras 帮妈妈把店里的货分了分：哪些好卖，哪些只是积压着。Dimas 请妈妈每天记下小店的支出规律。"
+  },
+  "dialogue": {
+    "title": "兄妹通电话：怎么不早说？",
+    "lines": [
+      {
+        "speaker": "Dimas",
+        "id": "Ras, kok kamu diem-diem kirim uang ke Ibu? Kenapa nggak bilang dari dulu?",
+        "cn": "小拉，你怎么偷偷给妈妈寄钱？为什么不早点说？（diem-diem = diam-diam，nggak = tidak）"
+      },
+      {
+        "speaker": "Laras",
+        "id": "Maaf, Kak. Kakak kan lagi butuh banyak uang buat cicilan rumah. Aku nggak mau Kakak ikut pusing.",
+        "cn": "对不起，哥。你不是正需要很多钱还房贷嘛。我不想让你也跟着发愁。（lagi = sedang，buat = untuk）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Pantesan waktu aku telepon Ibu hari Minggu, rasanya ada yang ganjel. Katanya semua baik, tapi suaranya beda.",
+        "cn": "怪不得周日我给妈妈打电话时，总觉得哪里不对劲。她说一切都好，可声音不一样。（pantesan = pantas，“怪不得”；ganjel = mengganjal）"
+      },
+      {
+        "speaker": "Laras",
+        "id": "Iya. Sekarang kulkas warung rusak, padahal tabunganku udah habis. Ini beneran darurat, Kak.",
+        "cn": "是啊。现在店里的冰箱坏了，可我的存款已经花光了。这真的是急事，哥。（udah = sudah，beneran = benar-benar）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Udah, nggak usah ribut soal siapa yang salah. Biaya buat perbaiki kulkas kita bagi dua aja. Abis itu kita mulai nabung dana darurat bareng.",
+        "cn": "好了，别争是谁的错了。修冰箱的钱我们俩平摊。然后我们一起开始存应急金。（aja = saja，abis = habis，nabung = menabung，bareng = bersama）"
+      },
+      {
+        "speaker": "Laras",
+        "id": "Setuju. Ibu juga perlu catat pemasukan sama pengeluaran warung, supaya kelihatan polanya.",
+        "cn": "同意。妈妈也得把店里的收入和支出记下来，这样才看得出规律。（catat = mencatat，sama = dan）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Nanti aku bantu Ibu pasang aplikasi catatan keuangan di HP. Kata sandinya kita bikin yang gampang diingat Ibu.",
+        "cn": "回头我帮妈妈在手机上装个记账软件。密码我们设一个妈妈好记的。（bikin = membuat）"
+      },
+      {
+        "speaker": "Laras",
+        "id": "Oke. Makasih ya, Kak. Lain kali aku langsung curhat ke Kakak, nggak diem-diem lagi.",
+        "cn": "好。谢谢你，哥。下次我直接跟你说心里话，不再偷偷摸摸了。（makasih = terima kasih）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：用 diam-diam、keadaan 和 memilah 写 2–3 句，讲你最近一次手头紧时是怎么调整开销的。",
+      "reference_answer": "Bulan lalu keadaan keuanganku lagi kurang bagus. Aku memilah semua langganan: mana yang masih kupakai, mana yang bisa berhenti. Aku juga diam-diam mengunduh aplikasi pencatat keuangan, dan ternyata pengeluaran buat jajan paling besar.",
+      "reference_cn": "上个月我的经济状况不太好。我把所有订阅都分了分：哪些还在用，哪些可以停掉。我还悄悄下载了一个记账软件，结果发现买零食的开销最大。"
+    },
+    {
+      "task": "同词根应用：用 butuh、membutuhkan 和 pemasukan，跟朋友说说你收入变少后怎么安排钱，再提一个找额外收入的机会（membutuhkan 用在正式的招聘信息里）。",
+      "reference_answer": "Sejak pemasukanku turun, aku selalu ngeduluin yang benar-benar aku butuh: kos, makan, sama biaya pendidikan adikku. Kalau ada sisa, baru aku nyelipin sedikit buat nonton. Kemarin aku lihat iklan: \"Kantor kami membutuhkan penerjemah lepas.\" Lumayan buat tambahan!",
+      "reference_cn": "自从收入减少，我总是先顾真正需要的：房租、吃饭和弟弟妹妹的学费。有剩的话，才挤一点出来看电影。昨天我看到一则广告：“本公司需要兼职翻译。”可以赚点外快！（ngeduluin = 先顾、优先；nyelipin = 挤出、塞进；sama = dan）"
+    },
+    {
+      "task": "难词换题型（中译印）：把下面这条消息翻成口语印尼语，要用 ganjel 和 darurat：“姐，我从刚才就觉得哪里不对劲。妈妈的手机从中午起就打不通。如果有紧急情况，请马上告诉我。”",
+      "reference_answer": "Kak, dari tadi rasanya ada yang ganjel. HP Ibu nggak aktif dari siang. Kalau ada keadaan darurat, tolong langsung kabari aku, ya.",
+      "reference_cn": "姐，我从刚才就觉得哪里不对劲。妈妈的手机从中午起就打不通。如果有紧急情况，请马上告诉我。（nggak = tidak；kabari = 通知、告诉）"
+    },
+    {
+      "task": "早课词迁移：用今天08:00新学的 berjarak 和 pola，说说你和家人住得多远、平时怎么保持联系。",
+      "reference_answer": "Rumahku dan rumah orang tuaku berjarak sekitar tiga ratus kilometer. Pola kami sudah tetap: tiap Minggu malam video call, dan sebulan sekali aku pulang. Rasanya belum sempurna, tapi kami tetap dekat.",
+      "reference_cn": "我家和我父母家相距大约三百公里。我们已经有固定的规律：每周日晚上视频通话，每个月我回家一次。说不上完美，但我们依然很亲近。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "招聘广告开头最自然的是哪一项？\"___ segera: kasir untuk minimarket, bisa kerja shift.\"",
+        "options": [
+          "Butuh",
+          "Kebutuhan",
+          "Dibutuhkan",
+          "Membutuhkan"
+        ],
+        "answer_index": 2,
+        "answer": "Dibutuhkan",
+        "explain": "招聘广告的固定开头是 Dibutuhkan segera（急招），被动式，不用说出“谁需要”。Butuh 是聊天用的日常说法，放在广告开头太随便；Kebutuhan 是名词“需求”，句子不通；Membutuhkan 是主动式，前面缺主语（要说 Kami membutuhkan …）。"
+      },
+      {
+        "type": "choice",
+        "prompt": "选最自然的一项：Ibu ___ barang dagangan menjadi dua kelompok: yang laku dan yang hanya menumpuk.",
+        "options": [
+          "memilah",
+          "memilih",
+          "menukar",
+          "menyimpan"
+        ],
+        "answer_index": 0,
+        "answer": "memilah",
+        "explain": "把货“分成两组”用 memilah（分类、分拣），固定结构 memilah … menjadi …。memilih 是“从中挑一个”，不能接 menjadi dua kelompok；menukar 是“交换”；menyimpan 是“存放”，都没有“分组”的意思。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Ibu bilang semua baik-baik saja, tapi suaranya lain dari biasanya. Dimas bilang ke Laras: \"Kok rasanya ada yang ___, ya?\"",
+        "options": [
+          "curiga",
+          "lega",
+          "kangen",
+          "ganjel"
+        ],
+        "answer_index": 3,
+        "answer": "ganjel",
+        "explain": "说不清的“哪里不对劲”用固定句式 ada yang ganjel。curiga 是“某人怀疑”，ada yang curiga 意思变成“有人起疑”，主语不对；lega 是“松了口气”，kangen 是“想念”，都和“声音不对劲”的担心不符。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kulkas warung rusak, padahal tabungan sudah habis. Ini beneran keadaan ______!（紧急）",
+        "answer": "darurat",
+        "explain": "keadaan darurat = 紧急状况，darurat 放在名词后面修饰。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Ternyata Laras ______ kirim uang ke Ibu setiap bulan.（偷偷地）",
+        "answer": "diam-diam",
+        "explain": "“偷偷地做某事”用重叠的 diam-diam 放在动词前；口语也写成 diem-diem。只写 diam 意思是“安静、不说话”。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：妈妈需要每天记下收入。",
+        "tokens": [
+          "Ibu",
+          "perlu",
+          "mencatat",
+          "pemasukan",
+          "setiap",
+          "hari."
+        ],
+        "answer": "Ibu perlu mencatat pemasukan setiap hari.",
+        "answer_cn": "妈妈需要每天记下收入。",
+        "explain": "主语 Ibu + perlu（需要）+ 动词 mencatat（记录）+ 宾语 pemasukan（收入），时间状语 setiap hari 放句末。"
+      }
+    ],
+    "self_check": [
+      "不看中文：diam-diam、keadaan、memilah 这 3 个新词，有没有哪个我 3 秒内说不出意思？",
+      "memilah 和 memilih，我分得清哪个是“分类、分开”、哪个是“挑一个”吗？",
+      "看到中文“心里不对劲”和“紧急”，我能 3 秒内说出 ganjel 和 darurat 吗？",
+      "butuh、membutuhkan、pemasukan 这 3 个复习词，我能马上说出意思吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语，答不出的回看词卡再说一遍。",
+      "同词根输出：用 butuh 说一句你这周最需要的东西，再把同一件事改写成正式说法 membutuhkan（比如写给公司的一句话）。",
+      "难词搭配：用 Ada yang ganjel … 或 Rasanya masih ganjel … 说一句你最近心里没说开的事；再用 curiga 说一句怀疑别人的事，对比两者的主语。",
+      "早课词迁移：用今天08:00新学的 berjarak 说你家离公司或学校多远，用 pola 说一句你的 pola makan 或 pola tidur。",
+      "30 秒复述：用 Dimas 的视角讲——妈妈的 pemasukan 为什么下降、Laras 偷偷做了什么、最后兄妹俩想了哪些办法。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "diam-diam",
+      "ganjel",
+      "pemasukan"
+    ],
+    "patterns": [
+      {
+        "pattern": "Pantesan …, rasanya ada yang ganjel.",
+        "cn": "怪不得……，总觉得哪里不对劲",
+        "example": "Pantesan waktu aku telepon Ibu hari Minggu, rasanya ada yang ganjel.",
+        "example_cn": "怪不得周日我给妈妈打电话时，总觉得哪里不对劲。"
+      },
+      {
+        "pattern": "memilah …: mana yang …, mana yang …",
+        "cn": "把……分一分：哪些……，哪些……",
+        "example": "Sebelum pindahan, aku memilah barang: mana yang masih ada gunanya, mana yang mau dijual.",
+        "example_cn": "搬家前，我把东西分了分：哪些还有用，哪些要卖掉。"
+      }
+    ]
+  }
+}
