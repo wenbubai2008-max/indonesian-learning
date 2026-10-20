@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-20T07:31:22.047Z",
+  "updated_at": "2026-10-20T14:59:04.334Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2074,13 +2074,14 @@
     "keadaan": {
       "word": "keadaan",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:42.773Z",
+      "updated_at": "2026-10-20T14:58:47.994Z",
       "display": "keadaan",
+      "last_review": "2026-10-20T14:58:47.930Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menyatakan": {
       "word": "menyatakan",
@@ -3656,13 +3657,14 @@
     "diam-diam": {
       "word": "diam-diam",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:43.841Z",
+      "updated_at": "2026-10-20T14:58:44.035Z",
       "display": "diam-diam",
+      "last_review": "2026-10-20T14:58:43.968Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "ekstrovert": {
       "word": "ekstrovert",
@@ -14697,6 +14699,8 @@
       "updated_at": "2026-10-20T05:14:41.097Z",
       "display": "pola",
       "cn": "模式；规律；（裁衣的）纸样",
+      "root": "pola",
+      "root_cn": "模式；规律（本身即词根）",
       "last_wrong": "2026-10-20T05:14:41.035Z",
       "last_review": "2026-10-20T05:14:41.035Z",
       "source": "BIPA secondary selection",
@@ -24033,19 +24037,19 @@
     "darurat": {
       "word": "darurat",
       "status": "active",
-      "updated_at": "2026-10-19T13:16:17.458Z",
+      "updated_at": "2026-10-20T14:58:40.630Z",
       "display": "darurat",
       "cn": "紧急；急诊",
       "root": "darurat",
       "root_cn": "紧急",
       "last_wrong": "2026-10-19T13:16:17.396Z",
-      "last_review": "2026-10-19T13:16:17.396Z",
+      "last_review": "2026-10-20T14:58:40.564Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pencuri": {
       "word": "pencuri",
@@ -27912,17 +27916,18 @@
     "memilah": {
       "word": "memilah",
       "status": "active",
-      "updated_at": "2026-10-14T07:02:41.644Z",
+      "updated_at": "2026-10-20T14:58:52.712Z",
       "display": "memilah",
       "cn": "挑选；分类",
       "root": "pilah",
+      "last_review": "2026-10-20T14:58:52.647Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_dont"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "layak jual": {
       "word": "layak jual",
