@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-20",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 60
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-19T14:01:01.289Z",
-    "lesson_watermark": "2026-10-19 18:00",
-    "index_updated": "2026-10-19",
-    "runtime_hash": "456b0125b502b7592717fc66dba290d0f0dac5b6c5f285c56d0aa35a7ce3e90c",
-    "index_hash": "6e3b6517bf151fe5b3155f187df2d65c63a4df55a3a98ac90e95be8423d882e6",
+    "runtime_generated_at": "2026-10-20T00:32:55.353Z",
+    "lesson_watermark": "2026-10-20 08:00",
+    "index_updated": "2026-10-20",
+    "runtime_hash": "ba423bddbbd656cb7807886e495a48ef94b194d1c1f1e45542e7abd60ae0b978",
+    "index_hash": "c8f46dd9d3317eb32bcfd4b4a2a66e777e6167fc78f784c64300edac7bc57f95",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "penyebab",
-        "原因；致因"
-      ],
-      [
-        "pola",
-        "模式；规律"
-      ],
-      [
-        "menekan",
-        "按；压"
-      ],
-      [
-        "paksa",
-        "强迫；强制"
-      ],
-      [
-        "alur",
-        "情节；流程"
-      ],
-      [
-        "roboh",
-        "倒塌"
-      ],
-      [
-        "berjarak",
-        "相距"
-      ],
-      [
-        "merupakan",
-        "是；构成"
-      ],
-      [
-        "menyelam",
-        "潜水"
-      ],
-      [
-        "jarak tempuh",
-        "行程距离；行驶距离"
-      ],
       [
         "menyegarkan",
         "使清爽；使精神焕发"
@@ -1782,16 +1742,6 @@
         "结果；成果"
       ],
       [
-        "kepikiran",
-        3,
-        0,
-        "",
-        "2026-10-15T13:36:11.132Z",
-        "一直想到；挂在心上",
-        "pikir",
-        "想；思考"
-      ],
-      [
         "menangani",
         3,
         1,
@@ -2100,16 +2050,6 @@
         "候选人",
         "calon",
         "候选；准……"
-      ],
-      [
-        "pikiran",
-        3,
-        0,
-        "",
-        "2026-10-19T05:52:57.416Z",
-        "思想",
-        "pikir",
-        "想；思考"
       ],
       [
         "tenang",
@@ -3012,16 +2952,6 @@
         "害羞；难为情"
       ],
       [
-        "mikir",
-        2,
-        0,
-        "",
-        "2026-10-15T07:41:57.373Z",
-        "想；思考（口语）",
-        "pikir",
-        "想；思考"
-      ],
-      [
         "pingsan",
         2,
         0,
@@ -3040,6 +2970,36 @@
         "吵闹；争吵",
         "ribut",
         "吵闹；争吵"
+      ],
+      [
+        "sia-sia",
+        2,
+        0,
+        "",
+        "2026-10-15T08:13:19.544Z",
+        "白费；徒劳",
+        "sia",
+        "徒然（用于固定重叠词）"
+      ],
+      [
+        "sombong",
+        2,
+        0,
+        "",
+        "2026-10-15T08:13:47.641Z",
+        "傲慢的；自大的",
+        "sombong",
+        "傲慢"
+      ],
+      [
+        "unggah",
+        2,
+        0,
+        "",
+        "2026-10-15T08:15:44.088Z",
+        "上传",
+        "unggah",
+        "上传"
       ],
       [
         "tergantung situasinya",
@@ -3140,6 +3100,106 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
+      ],
+      [
+        "penyebab",
+        2,
+        0,
+        "",
+        "",
+        "原因；起因（导致某个结果的因素）",
+        "sebab",
+        "原因；因为"
+      ],
+      [
+        "pola",
+        2,
+        0,
+        "",
+        "",
+        "模式；规律；（裁衣的）纸样",
+        "",
+        ""
+      ],
+      [
+        "menekan",
+        2,
+        0,
+        "",
+        "",
+        "按；压；压低（成本）；施压",
+        "tekan",
+        "压；按"
+      ],
+      [
+        "paksa",
+        2,
+        0,
+        "",
+        "",
+        "强迫；强制；硬来",
+        "",
+        ""
+      ],
+      [
+        "alur",
+        2,
+        0,
+        "",
+        "",
+        "情节；流程；先后顺序",
+        "",
+        ""
+      ],
+      [
+        "roboh",
+        2,
+        0,
+        "",
+        "",
+        "倒塌；（整个）倒下",
+        "",
+        ""
+      ],
+      [
+        "berjarak",
+        2,
+        0,
+        "",
+        "",
+        "相距；隔开（一段距离）",
+        "jarak",
+        "距离"
+      ],
+      [
+        "merupakan",
+        2,
+        0,
+        "",
+        "",
+        "是；构成（书面）",
+        "rupa",
+        "样子；外形"
+      ],
+      [
+        "menyelam",
+        2,
+        0,
+        "",
+        "",
+        "潜水；潜入水中",
+        "selam",
+        "潜（水）"
+      ],
+      [
+        "jarak tempuh",
+        2,
+        0,
+        "",
+        "",
+        "行程距离；路程（常用公里或所需时间表示）",
+        "",
+        ""
       ]
     ],
     "focus": [
@@ -3753,6 +3813,29 @@
         "udara",
         "berendam"
       ]
+    },
+    {
+      "date": "2026-10-20",
+      "session": "am",
+      "review_core": [
+        "kepikiran",
+        "pikiran",
+        "mikir",
+        "mepet",
+        "ngepasin"
+      ],
+      "new_words": [
+        "penyebab",
+        "pola",
+        "menekan",
+        "paksa",
+        "alur",
+        "roboh",
+        "berjarak",
+        "merupakan",
+        "menyelam",
+        "jarak tempuh"
+      ]
     }
   ],
   "previous_pm": {
@@ -3770,7 +3853,88 @@
       "ngejar"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-20",
+    "vocab": [
+      [
+        "penyebab",
+        "原因；起因（导致某个结果的因素）",
+        "cause",
+        "sebab",
+        "原因；因为"
+      ],
+      [
+        "pola",
+        "模式；规律；（裁衣的）纸样",
+        "pattern",
+        "",
+        ""
+      ],
+      [
+        "menekan",
+        "按；压；压低（成本）；施压",
+        "to press; to reduce (costs); to pressure",
+        "tekan",
+        "压；按"
+      ],
+      [
+        "paksa",
+        "强迫；强制；硬来",
+        "force; by force",
+        "",
+        ""
+      ],
+      [
+        "alur",
+        "情节；流程；先后顺序",
+        "plot; flow; procedure",
+        "",
+        ""
+      ],
+      [
+        "roboh",
+        "倒塌；（整个）倒下",
+        "to collapse; to fall down",
+        "",
+        ""
+      ],
+      [
+        "berjarak",
+        "相距；隔开（一段距离）",
+        "to be (a certain distance) away; spaced apart",
+        "jarak",
+        "距离"
+      ],
+      [
+        "merupakan",
+        "是；构成（书面）",
+        "to be; to constitute",
+        "rupa",
+        "样子；外形"
+      ],
+      [
+        "menyelam",
+        "潜水；潜入水中",
+        "to dive",
+        "selam",
+        "潜（水）"
+      ],
+      [
+        "jarak tempuh",
+        "行程距离；路程（常用公里或所需时间表示）",
+        "travel distance",
+        "",
+        ""
+      ]
+    ],
+    "review_vocab": [
+      "kepikiran",
+      "pikiran",
+      "mikir",
+      "mepet",
+      "ngepasin"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

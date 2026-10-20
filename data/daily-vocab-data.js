@@ -1945,9 +1945,9 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-05 19:00",
-    "last_seen": "2026-09-15 08:00",
+    "last_seen": "2026-10-20 08:00",
     "sessions": [
       "19:00",
       "08:00"
@@ -1955,7 +1955,8 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-05",
       "2026-09-11",
-      "2026-09-15"
+      "2026-09-15",
+      "2026-10-20"
     ],
     "root_cn": "想；思考",
     "example": "Aku masih kepikiran hasil meeting kemarin.",
@@ -1963,7 +1964,8 @@ window.DAILY_VOCAB_DB = [
     "lesson_occurrences": [
       "2026-09-05 19:00",
       "2026-09-11 19:00",
-      "2026-09-15 08:00"
+      "2026-09-15 08:00",
+      "2026-10-20 08:00"
     ]
   },
   {
@@ -6282,20 +6284,22 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-04 19:00",
+    "last_seen": "2026-10-20 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-04"
+      "2026-09-04",
+      "2026-10-20"
     ],
     "root_cn": "紧挨；逼近；时间很紧",
     "lesson_occurrences": [
       "2026-09-04 08:00",
-      "2026-09-04 19:00"
+      "2026-09-04 19:00",
+      "2026-10-20 08:00"
     ]
   },
   {
@@ -8561,17 +8565,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-10-20 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-10-20"
     ],
     "lesson_occurrences": [
-      "2026-09-10 08:00"
+      "2026-09-10 08:00",
+      "2026-10-20 08:00"
     ]
   },
   {
@@ -11567,17 +11573,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-09-18 08:00",
+    "last_seen": "2026-10-20 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-10-20"
     ],
     "lesson_occurrences": [
-      "2026-09-18 08:00"
+      "2026-09-18 08:00",
+      "2026-10-20 08:00"
     ]
   },
   {
@@ -15253,17 +15261,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-10-20 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-20"
     ],
     "lesson_occurrences": [
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-10-20 08:00"
     ]
   },
   {
@@ -22882,6 +22892,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-19 18:00"
+    ]
+  },
+  {
+    "word": "penyebab",
+    "cn": "原因；起因（导致某个结果的因素）",
+    "en": "cause",
+    "root": "sebab",
+    "root_cn": "原因；因为",
+    "example": "Polisi masih mencari penyebab kebakaran di bangunan tua itu.",
+    "example_cn": "警方还在查那栋老建筑起火的原因。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 08:00"
+    ]
+  },
+  {
+    "word": "pola",
+    "cn": "模式；规律；（裁衣的）纸样",
+    "en": "pattern",
+    "root": "",
+    "root_cn": "",
+    "example": "Gara-gara sering lembur, pola makan Bayu berantakan; malam-malam ia sering cuma makan mi instan.",
+    "example_cn": "因为经常加班，巴尤的饮食很不规律；晚上常常只吃泡面。（gara-gara = karena，cuma = hanya）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 08:00"
+    ]
+  },
+  {
+    "word": "menekan",
+    "cn": "按；压；压低（成本）；施压",
+    "en": "to press; to reduce (costs); to pressure",
+    "root": "tekan",
+    "root_cn": "压；按",
+    "example": "Untuk menekan biaya, kantor kami beralih ke pemasok yang lebih murah.",
+    "example_cn": "为了压低成本，我们公司换了一家更便宜的供应商。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 08:00"
+    ]
+  },
+  {
+    "word": "paksa",
+    "cn": "强迫；强制；硬来",
+    "en": "force; by force",
+    "root": "",
+    "root_cn": "",
+    "example": "Kunci gudangnya hilang, akhirnya pintunya dibuka secara paksa.",
+    "example_cn": "仓库钥匙丢了，最后门是被强行打开的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 08:00"
+    ]
+  },
+  {
+    "word": "alur",
+    "cn": "情节；流程；先后顺序",
+    "en": "plot; flow; procedure",
+    "root": "",
+    "root_cn": "",
+    "example": "Alur cerita film itu gampang ditebak, tetapi karakter tokoh utamanya menarik.",
+    "example_cn": "那部电影的情节很好猜，但主角的性格很有意思。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 08:00"
+    ]
+  },
+  {
+    "word": "roboh",
+    "cn": "倒塌；（整个）倒下",
+    "en": "to collapse; to fall down",
+    "root": "",
+    "root_cn": "",
+    "example": "Angin kencang semalam membuat papan reklame di pinggir jalan roboh dan menimpa pagar rumah warga.",
+    "example_cn": "昨晚的大风把路边的广告牌吹倒了，砸在了居民家的围栏上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 08:00"
+    ]
+  },
+  {
+    "word": "berjarak",
+    "cn": "相距；隔开（一段距离）",
+    "en": "to be (a certain distance) away; spaced apart",
+    "root": "jarak",
+    "root_cn": "距离",
+    "example": "Rumah kos Dewi berjarak sekitar dua kilometer dari kantornya.",
+    "example_cn": "德维的寄宿公寓离她公司大约两公里。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 08:00"
+    ]
+  },
+  {
+    "word": "merupakan",
+    "cn": "是；构成（书面）",
+    "en": "to be; to constitute",
+    "root": "rupa",
+    "root_cn": "样子；外形",
+    "example": "Rendang merupakan salah satu masakan Indonesia yang paling lezat menurut banyak orang.",
+    "example_cn": "在很多人看来，仁当牛肉是最好吃的印尼菜之一。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 08:00"
+    ]
+  },
+  {
+    "word": "menyelam",
+    "cn": "潜水；潜入水中",
+    "en": "to dive",
+    "root": "selam",
+    "root_cn": "潜（水）",
+    "example": "Bayu masih belajar menyelam, makanya ia selalu ditemani instruktur yang sudah biasa menangani pemula.",
+    "example_cn": "巴尤还在学潜水，所以总有一位很会带新手的教练陪着他。（makanya = 所以，口语色彩）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 08:00"
+    ]
+  },
+  {
+    "word": "jarak tempuh",
+    "cn": "行程距离；路程（常用公里或所需时间表示）",
+    "en": "travel distance",
+    "root": "",
+    "root_cn": "",
+    "example": "Jarak tempuh dari rumahku ke kantor sekitar empat puluh menit naik motor, kalau jalanan tidak macet.",
+    "example_cn": "如果路上不堵，从我家骑摩托到公司路程大约四十分钟。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 08:00"
     ]
   }
 ];
