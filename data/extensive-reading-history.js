@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261019-harga-cabai-aceh-barat-maulid","date":"2026-10-19","title":"Musim Maulid, Harga Cabai di Aceh Barat Naik Tajam","title_cn":"圣纪时节，亚齐西部辣椒价格大涨","path":"data/extensive-reading-history/2026-10-19.js"},
 {"id":"er-20261018-gebyar-rekrutmen-tangerang","date":"2026-10-18","title":"Gebyar Rekrutmen Tangerang: Daftar Online, Siapkan Dokumen dari Sekarang","title_cn":"坦格朗招聘盛会：在线报名，现在就准备好文件","path":"data/extensive-reading-history/2026-10-18.js"},
 {"id":"er-20261017-akhir-pekan-jakarta-festival-museum","date":"2026-10-17","title":"Akhir Pekan di Jakarta: Festival Literasi Gratis sampai Pameran Batik","title_cn":"雅加达周末去处：从免费文学节到蜡染展","path":"data/extensive-reading-history/2026-10-17.js"},
 {"id":"er-20261016-krisis-air-bersih-tegal","date":"2026-10-16","title":"Kemarau Panjang, 40 Desa di Tegal Krisis Air Bersih","title_cn":"旱季漫长，Tegal 县 40 个村缺干净用水","path":"data/extensive-reading-history/2026-10-16.js"},
