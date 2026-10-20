@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-20",
-    "session": "pm",
-    "time": "18:00",
-    "day": 60
+    "date": "2026-10-21",
+    "session": "am",
+    "time": "08:00",
+    "day": 61
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-20T09:40:41.266Z",
-    "lesson_watermark": "2026-10-20 08:00",
+    "runtime_generated_at": "2026-10-20T10:53:15.010Z",
+    "lesson_watermark": "2026-10-20 18:00",
     "index_updated": "2026-10-20",
-    "runtime_hash": "ae7ea816227e5419931fe620fd932714c232dcbac4c8b7030dcd399795c8a874",
-    "index_hash": "c8f46dd9d3317eb32bcfd4b4a2a66e777e6167fc78f784c64300edac7bc57f95",
+    "runtime_hash": "34a8ccc8aef207d466de0d10482fd735ebaea07f6a89116384f10bb16858fe81",
+    "index_hash": "0ba498c02f0ba11a2041dc718c5755091f184393212946c4a4cb82fc5169da6e",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -80,10 +80,6 @@
       [
         "hadiah utama",
         "大奖；头奖"
-      ],
-      [
-        "memilah",
-        "挑选；分类"
       ],
       [
         "perpaduan",
@@ -452,10 +448,6 @@
         "星期三"
       ],
       [
-        "keadaan",
-        "状况 / 情况"
-      ],
-      [
         "listrik",
         "电"
       ],
@@ -530,10 +522,6 @@
       [
         "bijak",
         "聪明的 / 明智的"
-      ],
-      [
-        "diam-diam",
-        "偷偷地"
       ],
       [
         "kemungkinan besar",
@@ -1068,8 +1056,8 @@
         "2026-10-20T05:14:41.035Z",
         "2026-10-20T05:14:41.035Z",
         "模式；规律；（裁衣的）纸样",
-        "",
-        ""
+        "pola",
+        "模式；规律（本身即词根）"
       ],
       [
         "berjarak",
@@ -1442,16 +1430,6 @@
         ""
       ],
       [
-        "pemasukan",
-        3,
-        0,
-        "",
-        "2026-10-15T08:19:24.408Z",
-        "收入；进账",
-        "masuk",
-        ""
-      ],
-      [
         "putar balik",
         3,
         0,
@@ -1800,16 +1778,6 @@
         "一般的；普遍的；公共的",
         "umum",
         "一般；公共"
-      ],
-      [
-        "butuh",
-        2,
-        0,
-        "",
-        "2026-10-19T05:52:41.714Z",
-        "需要",
-        "butuh",
-        "需要"
       ],
       [
         "nyata",
@@ -2340,16 +2308,6 @@
         "撞；撞上",
         "tabrak",
         "撞；碰撞"
-      ],
-      [
-        "membutuhkan",
-        4,
-        1,
-        "2026-09-19T03:56:12.208Z",
-        "2026-10-19T05:54:12.086Z",
-        "需要",
-        "butuh",
-        "需要"
       ],
       [
         "menghapus",
@@ -3002,6 +2960,36 @@
         "上传"
       ],
       [
+        "wangi",
+        2,
+        0,
+        "",
+        "2026-10-15T08:15:53.454Z",
+        "香的；香味好闻",
+        "wangi",
+        "香"
+      ],
+      [
+        "curhat",
+        2,
+        0,
+        "",
+        "2026-10-19T13:16:11.211Z",
+        "倾诉；诉苦；聊心事",
+        "curhat",
+        "倾诉（curahan hati的口语缩略）"
+      ],
+      [
+        "pelayanan",
+        2,
+        0,
+        "",
+        "2026-10-15T07:49:09.399Z",
+        "服务；服务质量",
+        "layan",
+        "服务；招待"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3100,86 +3088,6 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
-      ],
-      [
-        "penyebab",
-        2,
-        0,
-        "",
-        "2026-10-20T05:14:32.476Z",
-        "原因；起因（导致某个结果的因素）",
-        "sebab",
-        "原因；因为"
-      ],
-      [
-        "menekan",
-        2,
-        0,
-        "",
-        "2026-10-20T05:14:14.143Z",
-        "按；压；压低（成本）；施压",
-        "tekan",
-        "压；按"
-      ],
-      [
-        "paksa",
-        2,
-        0,
-        "",
-        "2026-10-20T05:14:28.176Z",
-        "强迫；强制；硬来",
-        "",
-        ""
-      ],
-      [
-        "alur",
-        2,
-        0,
-        "",
-        "2026-10-20T05:14:03.194Z",
-        "情节；流程；先后顺序",
-        "",
-        ""
-      ],
-      [
-        "roboh",
-        2,
-        0,
-        "",
-        "2026-10-20T05:14:48.148Z",
-        "倒塌；（整个）倒下",
-        "",
-        ""
-      ],
-      [
-        "merupakan",
-        2,
-        0,
-        "",
-        "2026-10-20T05:14:25.700Z",
-        "是；构成（书面）",
-        "rupa",
-        "样子；外形"
-      ],
-      [
-        "menyelam",
-        2,
-        0,
-        "",
-        "2026-10-20T05:14:18.308Z",
-        "潜水；潜入水中",
-        "selam",
-        "潜（水）"
-      ],
-      [
-        "jarak tempuh",
-        2,
-        0,
-        "",
-        "2026-10-20T05:14:10.282Z",
-        "行程距离；路程（常用公里或所需时间表示）",
-        "",
-        ""
       ]
     ],
     "focus": [
@@ -3501,14 +3409,6 @@
         "fuzzy"
       ],
       [
-        "diam-diam",
-        "通用",
-        "diem-diem",
-        "diam",
-        746,
-        "fuzzy"
-      ],
-      [
         "saudara",
         "通用",
         "sodara",
@@ -3519,45 +3419,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-13",
-      "session": "am",
-      "review_core": [
-        "kelepasan",
-        "menatap",
-        "nggak sempat",
-        "nyari",
-        "kebanyakan"
-      ],
-      "new_words": [
-        "angkot",
-        "persimpangan",
-        "bundaran",
-        "seberang",
-        "letak",
-        "deras",
-        "perpustakaan",
-        "pengumuman",
-        "lampiran",
-        "lamaran kerja"
-      ]
-    },
-    {
-      "date": "2026-10-13",
-      "session": "pm",
-      "review_core": [
-        "peduli",
-        "membela",
-        "belum sempat",
-        "mager",
-        "menyelesaikan"
-      ],
-      "new_words": [
-        "mengingat",
-        "kecuali",
-        "tuntas"
-      ]
-    },
     {
       "date": "2026-10-14",
       "session": "am",
@@ -3816,105 +3677,40 @@
         "menyelam",
         "jarak tempuh"
       ]
+    },
+    {
+      "date": "2026-10-20",
+      "session": "pm",
+      "review_core": [
+        "darurat",
+        "ganjel",
+        "butuh",
+        "membutuhkan",
+        "pemasukan"
+      ],
+      "new_words": [
+        "diam-diam",
+        "keadaan",
+        "memilah"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-19",
+    "date": "2026-10-20",
     "new_words": [
-      "mual",
-      "udara",
-      "berendam"
+      "diam-diam",
+      "keadaan",
+      "memilah"
     ],
     "review_core": [
-      "sial",
-      "kawasan",
-      "pengalaman",
-      "alam",
-      "ngejar"
+      "darurat",
+      "ganjel",
+      "butuh",
+      "membutuhkan",
+      "pemasukan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-20",
-    "vocab": [
-      [
-        "penyebab",
-        "原因；起因（导致某个结果的因素）",
-        "cause",
-        "sebab",
-        "原因；因为"
-      ],
-      [
-        "pola",
-        "模式；规律；（裁衣的）纸样",
-        "pattern",
-        "",
-        ""
-      ],
-      [
-        "menekan",
-        "按；压；压低（成本）；施压",
-        "to press; to reduce (costs); to pressure",
-        "tekan",
-        "压；按"
-      ],
-      [
-        "paksa",
-        "强迫；强制；硬来",
-        "force; by force",
-        "",
-        ""
-      ],
-      [
-        "alur",
-        "情节；流程；先后顺序",
-        "plot; flow; procedure",
-        "",
-        ""
-      ],
-      [
-        "roboh",
-        "倒塌；（整个）倒下",
-        "to collapse; to fall down",
-        "",
-        ""
-      ],
-      [
-        "berjarak",
-        "相距；隔开（一段距离）",
-        "to be (a certain distance) away; spaced apart",
-        "jarak",
-        "距离"
-      ],
-      [
-        "merupakan",
-        "是；构成（书面）",
-        "to be; to constitute",
-        "rupa",
-        "样子；外形"
-      ],
-      [
-        "menyelam",
-        "潜水；潜入水中",
-        "to dive",
-        "selam",
-        "潜（水）"
-      ],
-      [
-        "jarak tempuh",
-        "行程距离；路程（常用公里或所需时间表示）",
-        "travel distance",
-        "",
-        ""
-      ]
-    ],
-    "review_vocab": [
-      "kepikiran",
-      "pikiran",
-      "mikir",
-      "mepet",
-      "ngepasin"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

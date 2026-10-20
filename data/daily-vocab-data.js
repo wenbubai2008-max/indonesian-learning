@@ -4485,22 +4485,27 @@ window.DAILY_VOCAB_DB = [
     "root": "masuk",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 19:00",
-    "last_seen": "2026-08-31 19:00",
+    "last_seen": "2026-10-20 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-10-20"
     ],
-    "example": "Pemasukan bulan ini lumayan, tapi pengeluarannya juga naik.",
-    "example_cn": "这个月收入还可以，但支出也涨了。",
+    "example": "Selain gaji, Rani punya pemasukan tambahan dari jualan kue online. Kuenya laris karena cocok dengan selera anak muda.",
+    "example_cn": "除了工资，Rani 还靠在网上卖蛋糕有一笔额外收入。她的蛋糕很好卖，因为合年轻人的口味。",
     "lesson_occurrences": [
-      "2026-08-31 19:00"
-    ]
+      "2026-08-31 19:00",
+      "2026-10-20 18:00"
+    ],
+    "root_cn": "进入"
   },
   {
     "word": "anggaran",
@@ -9479,16 +9484,16 @@ window.DAILY_VOCAB_DB = [
     "en": "feel something is off; have something unresolved",
     "root": "ganjal",
     "root_cn": "垫住；卡住；妨碍",
-    "example": "Udah minta maaf, tapi rasanya masih ada yang ganjel.",
-    "example_cn": "已经道过歉了，但总觉得心里还有点疙瘩。（udah = sudah）",
+    "example": "Habis rapat tadi, rasanya masih ada yang ganjel. Kayaknya bos belum puas sama laporanku.",
+    "example_cn": "刚开完会，总觉得还有什么不对劲。老板好像对我的报告还不满意。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-14 18:00",
+    "last_seen": "2026-10-20 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9496,12 +9501,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-12",
       "2026-10-06",
-      "2026-10-14"
+      "2026-10-14",
+      "2026-10-20"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
       "2026-10-06 18:00",
-      "2026-10-14 18:00"
+      "2026-10-14 18:00",
+      "2026-10-20 18:00"
     ]
   },
   {
@@ -10600,22 +10607,26 @@ window.DAILY_VOCAB_DB = [
     "root": "butuh",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-15 19:00",
-    "last_seen": "2026-09-15 19:00",
+    "last_seen": "2026-10-20 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-15"
+      "2026-09-15",
+      "2026-10-20"
     ],
     "root_cn": "需要",
-    "example": "Aku butuh waktu sebentar buat cek semuanya.",
-    "example_cn": "我需要一点时间检查所有东西。",
+    "example": "Kami butuh solusi yang jelas sebelum akhir bulan.",
+    "example_cn": "我们需要在月底前找到一个明确的解决办法。",
     "lesson_occurrences": [
-      "2026-09-15 19:00"
+      "2026-09-15 19:00",
+      "2026-10-20 18:00"
     ]
   },
   {
@@ -10841,16 +10852,16 @@ window.DAILY_VOCAB_DB = [
     "en": "need; require",
     "root": "butuh",
     "root_cn": "需要",
-    "example": "Masalah ini membutuhkan jawaban yang jelas.",
-    "example_cn": "这个问题需要一个清楚的答复。",
+    "example": "Perusahaan itu membutuhkan staf admin baru. Ini peluang bagus buat kamu!",
+    "example_cn": "那家公司需要一名新的行政人员。这对你是个好机会！",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-21 18:00",
+    "last_seen": "2026-10-20 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -10859,7 +10870,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-16",
       "2026-09-19",
       "2026-09-20",
-      "2026-09-21"
+      "2026-09-21",
+      "2026-10-20"
     ],
     "lesson_occurrences": [
       "2026-09-16 08:00",
@@ -10867,7 +10879,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-20 08:00",
       "2026-09-20 18:00",
       "2026-09-21 08:00",
-      "2026-09-21 18:00"
+      "2026-09-21 18:00",
+      "2026-10-20 18:00"
     ]
   },
   {
@@ -17904,23 +17917,27 @@ window.DAILY_VOCAB_DB = [
     "en": "emergency; urgent",
     "root": "darurat",
     "root_cn": "紧急",
-    "example": "Kalau ada kebakaran, segera keluar lewat pintu darurat.",
-    "example_cn": "如果发生火灾，请马上从紧急出口出去。",
+    "example": "Tolong jangan meletakkan kardus di depan pintu darurat, ya.",
+    "example_cn": "请不要把纸箱放在紧急出口前面哦。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-05 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-20 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-05"
+      "2026-10-05",
+      "2026-10-20"
     ],
     "lesson_occurrences": [
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-10-20 18:00"
     ]
   },
   {
@@ -22923,25 +22940,28 @@ window.DAILY_VOCAB_DB = [
     "word": "pola",
     "cn": "模式；规律；（裁衣的）纸样",
     "en": "pattern",
-    "root": "",
-    "root_cn": "",
-    "example": "Gara-gara sering lembur, pola makan Bayu berantakan; malam-malam ia sering cuma makan mi instan.",
-    "example_cn": "因为经常加班，巴尤的饮食很不规律；晚上常常只吃泡面。（gara-gara = karena，cuma = hanya）",
+    "root": "pola",
+    "root_cn": "模式；规律（本身即词根）",
+    "example": "Sejak sering lembur, pola tidurku berantakan banget.",
+    "example_cn": "自从经常加班，我的作息完全乱了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-20 08:00",
-    "last_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-20"
     ],
     "lesson_occurrences": [
-      "2026-10-20 08:00"
+      "2026-10-20 08:00",
+      "2026-10-20 18:00"
     ]
   },
   {
@@ -23050,23 +23070,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to be (a certain distance) away; spaced apart",
     "root": "jarak",
     "root_cn": "距离",
-    "example": "Rumah kos Dewi berjarak sekitar dua kilometer dari kantornya.",
-    "example_cn": "德维的寄宿公寓离她公司大约两公里。",
+    "example": "Kos baruku berjarak sekitar dua kilometer dari kantor. Aku bisa jalan kaki tiap pagi.",
+    "example_cn": "我新租的房间离公司大约两公里，每天早上都能走路去上班。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-20 08:00",
-    "last_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-20 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-20"
     ],
     "lesson_occurrences": [
-      "2026-10-20 08:00"
+      "2026-10-20 08:00",
+      "2026-10-20 18:00"
     ]
   },
   {
@@ -23142,6 +23165,82 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-20 08:00"
+    ]
+  },
+  {
+    "word": "diam-diam",
+    "cn": "偷偷地；暗中；不声不响地",
+    "en": "secretly; quietly, without telling anyone",
+    "root": "diam",
+    "root_cn": "安静；不说话",
+    "example": "Teman sekamarku diam-diam pakai parfumku. Pantas bajunya wangi banget!",
+    "example_cn": "我室友偷偷用我的香水。怪不得她衣服那么香！",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 18:00",
+    "last_seen": "2026-10-20 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 18:00"
+    ]
+  },
+  {
+    "word": "keadaan",
+    "cn": "情况；状况；处境",
+    "en": "condition; situation; state",
+    "root": "ada",
+    "root_cn": "有；在",
+    "example": "Biarpun dalam keadaan sakit, Pak RT tetap datang ke rapat warga.",
+    "example_cn": "尽管身体不舒服，居委会主任还是来参加了居民会议。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 18:00",
+    "last_seen": "2026-10-20 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 18:00"
+    ]
+  },
+  {
+    "word": "memilah",
+    "cn": "分拣；分类；区分（把混在一起的东西分开）",
+    "en": "to sort out; to separate; to tell apart",
+    "root": "pilah",
+    "root_cn": "分开；区分",
+    "example": "Sebelum pindahan, aku memilah barang: mana yang masih ada gunanya, mana yang mau dijual.",
+    "example_cn": "搬家前，我把东西分了分：哪些还有用，哪些要卖掉。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-20 18:00",
+    "last_seen": "2026-10-20 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-20"
+    ],
+    "lesson_occurrences": [
+      "2026-10-20 18:00"
     ]
   }
 ];
