@@ -642,11 +642,13 @@
     {
       "date": "2026-10-20",
       "am": true,
-      "pm": false,
+      "pm": true,
       "verified": "generated_daily_lesson",
       "day": 60,
       "am_day": 60,
-      "am_status": "generated"
+      "am_status": "generated",
+      "pm_day": 60,
+      "pm_status": "lesson_complete"
     }
   ],
   "updated": "2026-10-20",
