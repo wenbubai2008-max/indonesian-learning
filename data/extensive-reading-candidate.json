@@ -1,0 +1,63 @@
+{
+  "id": "er-20261020-asap-karhutla-jakarta",
+  "date": "2026-10-20",
+  "title": "Asap Karhutla Mulai Berkurang, Warga Jakarta Tetap Diminta Waspada",
+  "title_cn": "林火烟雾开始减少，雅加达居民仍被要求保持警惕",
+  "category": "环境与天气 · 空气质量",
+  "level": "A2+ → B1",
+  "minutes": 4,
+  "source_name": "ANTARA News",
+  "source_date": "2026-10-19",
+  "source_url": "https://www.antaranews.com/berita/5795829/warga-dki-diimbau-waspada-terkait-sebaran-asap-karhutla",
+  "source_urls": [
+    "https://www.antaranews.com/berita/5795813/dki-siapkan-water-mist-meski-asap-karhutla-berkurang",
+    "https://katadata.co.id/digital/teknologi/6ad1c07b3d6e2/asap-karhutla-kalimantan-sudah-capai-jakarta-ini-daftar-aplikasi-untuk-cek"
+  ],
+  "text": "Sejak Jumat pagi, 16 Oktober, asap dari kebakaran hutan dan lahan atau karhutla di Kalimantan sudah masuk ke Jakarta. Walaupun Kalimantan berjarak ratusan kilometer dari ibu kota, angin tetap membawa asap itu sampai ke sini. BMKG juga mendeteksi asap di wilayah yang luas, dari Sumatra sampai Papua.\n\nPada hari Senin, Pemprov DKI Jakarta mengatakan bahwa sebaran asap di Jakarta sudah berkurang sejak Jumat. BMKG juga melaporkan bahwa asap mulai menjauh dari kawasan Jabodetabek. Meski begitu, warga diminta tetap waspada dan tidak panik. Selain itu, Pemprov sudah memasang 179 alat penyemprot kabut air di 145 gedung.\n\nWarga diimbau memantau kualitas udara lewat saluran resmi, seperti BMKG atau Dinas Lingkungan Hidup. Saat berada di luar rumah, sebaiknya pakai masker N95 atau KN95. Anak-anak, lansia, ibu hamil, dan orang yang punya penyakit pernapasan perlu mengurangi aktivitas berat di luar. Jika ada gangguan pernapasan, segera datang ke fasilitas kesehatan terdekat. Dalam keadaan darurat, warga bisa menelepon Jakarta Siaga 112. Warga juga diminta tidak membakar sampah.\n\nJika kualitas udara memburuk, Pemprov siap menerapkan langkah tambahan, misalnya menganjurkan pembelajaran jarak jauh bagi pelajar dan membatasi kegiatan di luar ruangan untuk kelompok rentan. Saran-saran ini cukup masuk akal. Sampai udara kembali bebas asap, tidak ada salahnya menyimpan satu atau dua masker di dalam tas.",
+  "cn": "从 10 月 16 日周五上午起，来自加里曼丹森林和土地火灾（karhutla）的烟雾已经飘进雅加达。虽然加里曼丹距离首都有几百公里，风还是把烟雾一路带到了这里。印尼气象局（BMKG）还在大范围地区检测到烟雾，从苏门答腊一直到巴布亚。\n\n周一，雅加达省政府表示，自周五以来，雅加达的烟雾扩散已经减少。BMKG 也报告说，烟雾开始远离大雅加达（Jabodetabek）地区。尽管如此，居民仍被要求保持警惕、不要恐慌。此外，省政府已在 145 栋建筑上安装了 179 台水雾喷洒装置。\n\n政府呼吁居民通过官方渠道（例如 BMKG 或环境局）关注空气质量。在户外时，最好戴 N95 或 KN95 口罩。儿童、老人、孕妇以及患有呼吸道疾病的人应减少户外剧烈活动。如果出现呼吸问题，要尽快到最近的医疗机构就诊。遇到紧急情况，居民可以拨打“雅加达待命”热线 112。居民还被要求不要焚烧垃圾。\n\n如果空气质量变差，省政府准备采取更多措施，例如建议学生远程上课，并限制易感人群的户外活动。这些建议相当合理。在空气重新没有烟雾之前，在包里放一两个口罩也无妨。",
+  "hints": [
+    {"term": "kebakaran hutan dan lahan", "cn": "森林和土地火灾（缩写 karhutla）", "root": "bakar", "formation": "ke- + bakar + -an"},
+    {"term": "mendeteksi", "cn": "检测到；探测", "root": "deteksi", "formation": "meN- + deteksi（d 前用 men-）"},
+    {"term": "sebaran", "cn": "扩散；分布范围", "root": "sebar", "formation": "sebar + -an"},
+    {"term": "menjauh", "cn": "远离；越走越远", "root": "jauh", "formation": "meN- + jauh（j 前用 men-）"},
+    {"term": "waspada", "cn": "警惕；提高警觉"},
+    {"term": "penyemprot", "cn": "喷洒器；喷雾装置", "root": "semprot", "formation": "peN- + semprot（s 脱落，变 peny-）"},
+    {"term": "memantau", "cn": "监测；关注", "root": "pantau", "formation": "meN- + pantau（p 脱落，变 mem-）"},
+    {"term": "saluran resmi", "cn": "官方渠道"},
+    {"term": "lansia", "cn": "老年人（lanjut usia 的缩写）"},
+    {"term": "pernapasan", "cn": "呼吸（系统）", "root": "napas", "formation": "per- + napas + -an"},
+    {"term": "fasilitas kesehatan", "cn": "医疗机构；医疗设施"},
+    {"term": "memburuk", "cn": "变差；恶化", "root": "buruk", "formation": "meN- + buruk（b 前用 mem-）"},
+    {"term": "menganjurkan", "cn": "建议；劝导", "root": "anjur", "formation": "meN- + anjur + -kan（元音前用 meng-）"},
+    {"term": "pembelajaran jarak jauh", "cn": "远程教学（PJJ）", "root": "ajar", "formation": "peN- + belajar + -an（词根 ajar）"},
+    {"term": "kelompok rentan", "cn": "易感人群；弱势群体"}
+  ],
+  "review_words": [
+    {"word": "berjarak", "cn": "相距（几百公里）"},
+    {"word": "luas", "cn": "大范围的（地区）"},
+    {"word": "kawasan", "cn": "地区；区域（大雅加达地区）"},
+    {"word": "darurat", "cn": "紧急（情况）"},
+    {"word": "menerapkan", "cn": "实施；采取（措施）"},
+    {"word": "masuk akal", "cn": "合理；说得通"},
+    {"word": "bebas", "cn": "没有……的（bebas asap：没有烟雾）"},
+    {"word": "menyimpan", "cn": "存放；放着（口罩）"},
+    {"word": "kebaca", "cn": "看得清（口语）"},
+    {"word": "unduh", "cn": "下载（应用）"},
+    {"word": "batuk", "cn": "咳嗽"},
+    {"word": "siapin", "cn": "准备好（口语）"},
+    {"word": "cerewet", "cn": "唠叨"},
+    {"word": "kadang", "cn": "有时"},
+    {"word": "kabur", "cn": "溜走；跑去（别处躲一躲）"}
+  ],
+  "dialogue": {
+    "title": "两个同事在办公室茶水间聊烟雾",
+    "lines": [
+      {"speaker": "Rina", "text": "Dod, Jumat kemarin langitnya abu-abu banget. Tulisan di gedung seberang sampai nggak kebaca.", "cn": "Dod，上周五天空灰得厉害，对面楼上的字都看不清了。"},
+      {"speaker": "Dodi", "text": "Iya, katanya asap dari Kalimantan. Untung sekarang udah berkurang. Aku udah unduh aplikasi buat cek kualitas udara.", "cn": "是啊，听说是从加里曼丹飘来的烟。还好现在已经少了。我已经下载了一个查空气质量的应用。"},
+      {"speaker": "Rina", "text": "Bagus tuh. Anakku dari Jumat batuk terus, jadi aku siapin masker N95 buat dia ke sekolah.", "cn": "不错啊。我孩子从周五开始一直咳嗽，所以我给孩子准备了 N95 口罩上学戴。"},
+      {"speaker": "Dodi", "text": "Ibuku juga cerewet banget, tiap pagi ngingetin pakai masker. Kadang aku lupa, jadi sekarang aku taruh satu di tas.", "cn": "我妈也特别唠叨，每天早上都提醒我戴口罩。我有时会忘，所以现在在包里放了一个。"},
+      {"speaker": "Rina", "text": "Rasanya pengen kabur ke luar kota aja sampai udaranya bersih, hehe.", "cn": "真想干脆溜到外地去，等空气干净了再回来，哈哈。"},
+      {"speaker": "Dodi", "text": "Nggak usah kabur. Yang penting jangan bakar sampah, dan kalau sesak napas, langsung ke puskesmas.", "cn": "不用跑啦。重要的是别烧垃圾，如果喘不过气，就马上去卫生所。"}
+    ]
+  }
+}
