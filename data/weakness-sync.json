@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-19T13:16:45.467Z",
+  "updated_at": "2026-10-20T03:14:20.560Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -3822,17 +3822,22 @@
     "kepikiran": {
       "word": "kepikiran",
       "status": "active",
-      "updated_at": "2026-10-15T13:36:11.160Z",
+      "updated_at": "2026-10-20T03:13:34.283Z",
       "display": "kepikiran",
       "cn": "一直想到；挂在心上",
       "root": "pikir",
       "root_cn": "想；思考",
-      "last_review": "2026-10-15T13:36:11.132Z",
+      "last_wrong": "2026-10-20T03:13:34.207Z",
+      "last_review": "2026-10-20T03:13:34.207Z",
+      "source": "课程小测",
+      "source_date": "2026-10-20",
+      "session": "08:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 6
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "kepo": {
       "word": "kepo",
@@ -24026,7 +24031,7 @@
       "status": "active",
       "updated_at": "2026-10-19T13:16:17.458Z",
       "display": "darurat",
-      "cn": "紧急；紧急状况",
+      "cn": "紧急；急诊",
       "root": "darurat",
       "root_cn": "紧急",
       "last_wrong": "2026-10-19T13:16:17.396Z",
@@ -27479,10 +27484,11 @@
     "penyebab": {
       "word": "penyebab",
       "status": "active",
-      "updated_at": "2026-10-14T07:02:40.695Z",
+      "updated_at": "2026-10-20T03:09:40.044Z",
       "display": "penyebab",
-      "cn": "原因；致因",
+      "cn": "原因；起因（导致某个结果的因素）",
       "root": "sebab",
+      "root_cn": "原因；因为",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28398,16 +28404,21 @@
     "berjarak": {
       "word": "berjarak",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:23.304Z",
+      "updated_at": "2026-10-20T03:14:10.173Z",
       "display": "berjarak",
-      "cn": "相距",
+      "cn": "相距；隔开（一段距离）",
       "root": "jarak",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "root_cn": "距离",
+      "last_wrong": "2026-10-20T03:14:10.103Z",
+      "last_review": "2026-10-20T03:14:10.103Z",
+      "source": "课程小测",
+      "source_date": "2026-10-20",
+      "session": "08:00",
       "reasons": [
-        "bipa_secondary_dont"
+        "bipa_secondary_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 1,
       "right_streak": 0
     },
     "motif": {
