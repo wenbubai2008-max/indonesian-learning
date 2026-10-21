@@ -140,6 +140,10 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
 3. 不要自己合并，也不要写 index。仓库 `sync-daily-vocab.yml` 的 lesson_release job 会验证作者、分支名和标记，基于最新 main 用权威 planner 校验，生成 index，执行 RELEASE_PREFLIGHT，按最终 head SHA squash merge，再触发 Sync（更新 daily-vocab、runtime、lesson-context）和 Pages 部署。
 4. 核对的必须是最新 head SHA 的运行结果：RELEASE_PREFLIGHT `{"ok":true,"status":"ready"}` 和 LESSON_RELEASE_PUBLISHED。PR 页面出现绿勾不等于课程已发布。release PR 上偶尔会多出 0 个 job 的失败运行，那是 bot push 派生的无害噪声（`docs/REGRESSION-GUARD.md` “课程 release 的 main 前进与 bot 批准运行”），不要据此判断失败。
 
+### 八-B、深讲（课程 PR 开出后）
+
+课程 PR 开出后，按 `docs/tasks/DEEP-TEACH.md` 为这节早课写 `data/teach/D-am.json`，在 `teach-D-am` 分支单独开一个深讲 PR（正文单独一行 `AUTO_PUBLISH_TEACH=1`）。可以一边等课程 release 一边写；到 08:15 还没写完就放弃当天深讲。深讲的任何问题都不得影响课程，下面的课程验收照常进行。
+
 ## 九、失败与恢复
 
 共用原则见 `docs/tasks/COMMON.md` §5，完整协议见 `docs/LESSON-RECOVERY.md`。早课补充：
@@ -157,6 +161,6 @@ Actions 日志可能因网络限制无法下载。此时以 PR merged=true、mai
 
 ## 十一、汇报（简洁中文）
 
-成功时报告：课程标题；新词（dont/fuzzy 与口语标记）；是否处于复习循环，若是则列出 cycle_vocab（哪些是 weak、哪些是 stale）和剩余新词数；复习词及选择理由（排序脚本是否运行、是否偏离推荐及原因、有无新错被顺延）；复现检查结果（带入了哪些 natural_recurrence 词、几个/要求几个，用了哪些 overused_in_text 词，复习词里用了哪一组同词根词或反义/近义词）；搭配黑名单检查结果；PR 编号；是否已正式发布；runtime 是否同步；Pages 是否成功；按 `docs/LESSON-QUALITY.md` 第 8 节写“全课跨句逻辑检查”和“第二遍教学审稿”两行。
+成功时报告：课程标题；新词（dont/fuzzy 与口语标记）；是否处于复习循环，若是则列出 cycle_vocab（哪些是 weak、哪些是 stale）和剩余新词数；复习词及选择理由（排序脚本是否运行、是否偏离推荐及原因、有无新错被顺延）；复现检查结果（带入了哪些 natural_recurrence 词、几个/要求几个，用了哪些 overused_in_text 词，复习词里用了哪一组同词根词或反义/近义词）；搭配黑名单检查结果；PR 编号；是否已正式发布；runtime 是否同步；Pages 是否成功；按 `docs/LESSON-QUALITY.md` 第 8 节写“全课跨句逻辑检查”和“第二遍教学审稿”两行；最后一行写深讲结果（`docs/tasks/DEEP-TEACH.md` 第六节）。
 
 失败时按 `docs/tasks/COMMON.md` §5 的要求说明。

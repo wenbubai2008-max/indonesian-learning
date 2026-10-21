@@ -1,6 +1,7 @@
 // Draft validator for the teaching layer (what PR 2 would add to validate-lesson-candidate.js).
 // node validate.js lesson.json teach.json   → exit 1 on errors; warnings are printed but do not fail.
 const fs=require('fs');
+const SIZE_TARGET=15000,SIZE_MAX=26000;// compact JSON characters; the two pilots are ~18–19k
 function validateTeach(L,T){
 const errs=[],warns=[];
 if(!L||typeof L!=='object'||!T||typeof T!=='object'||Array.isArray(T))return {errors:['TEACH_INVALID lesson and teach must be objects'],warnings:[]};
@@ -65,10 +66,22 @@ if(T.dialogue){const lines=(L.dialogue&&L.dialogue.lines)||[];let last=-1;T.dial
 if(T.scan){const focus=new Set((F?F.words:[]).map(norm));T.scan.words.forEach(x=>{if(!vocabOf(x))E('SCAN_WORD','"'+x+'" is not a lesson word');if(focus.has(norm(x)))E('SCAN_FOCUS','"'+x+'" is a focus word')});
   const others=(L.new_words||[]).filter(x=>!focus.has(norm(x))&&!T.scan.words.map(norm).includes(norm(x)));if(others.length)Wn('SCAN_INCOMPLETE','new words not in scan: '+others.join(', '))}
 (T.tasks||[]).forEach((t,n)=>checkSay('tasks['+n+']',t));
+// 2026-10-21 daily generation (user decision): keep each session short (~15 min, far fewer clicks than the pilots).
+// Hard ceilings are errors; the target sizes are warnings the generator should fix before publishing.
+const size=JSON.stringify(T).length;
+if(size>SIZE_MAX)E('TEACH_TOO_LONG','teaching data is '+size+' chars (max '+SIZE_MAX+'); cut asks, explanations and reading');
+else if(size>SIZE_TARGET)Wn('TEACH_LONG','teaching data is '+size+' chars (aim ≤'+SIZE_TARGET+')');
+items.forEach((it,n)=>{const w='items['+n+'] '+it.key;
+  if((it.explain||[]).length>2)Wn('EXPLAIN_PARAS',w+': '+it.explain.length+' explain paragraphs (aim ≤2)');
+  if((it.asks||[]).length>2)Wn('ASKS_MANY',w+': '+it.asks.length+' side questions (aim ≤2: one remedy + one card reference)');
+  if(it.scene&&(it.scene.options||[]).length>3)E('SCENE_OPTIONS',w+': scene has '+it.scene.options.length+' options (max 3)')});
+if((T.reading||[]).length>2)Wn('READING_MANY',(T.reading||[]).length+' reading sentences (aim 1–2)');
+if((T.tasks||[]).length>1)Wn('TASKS_MANY',(T.tasks||[]).length+' speaking tasks (aim 1)');
+if(T.dialogue&&(T.dialogue.turns||[]).length>3)Wn('DIALOGUE_TURNS',T.dialogue.turns.length+' dialogue turns (aim ≤3)');
 return {errors:errs,warnings:warns};
 }catch(e){return {errors:[...errs,'TEACH_INVALID '+e.message],warnings:warns}}
 }
-module.exports={validateTeach};
+module.exports={validateTeach,SIZE_TARGET,SIZE_MAX};
 if(require.main===module){
  const [,,lp,tp]=process.argv;
  if(!lp||!tp){console.error('Usage: node .github/scripts/validate-teach.js lesson.json teach.json');process.exit(1)}

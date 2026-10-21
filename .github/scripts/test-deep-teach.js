@@ -21,6 +21,19 @@ broken('SAY_SKEL_REF',t=>{t.items[0].say.skel='TidakAdaDalamReferensi ____.'});
 broken('READING_CHUNKS',t=>{t.reading[0].chunks[0][0]='potongan yang salah'});
 broken('MARKUP',t=>{t.intro.push('{{tidak ditutup')});
 broken('ITEM_MISSING',t=>{t.items.pop()});
+// 2026-10-21 daily generation: length ceilings and the combined check the release job runs.
+broken('TEACH_TOO_LONG',t=>{t.items[0].explain[0]+='x'.repeat(30000)});
+broken('SCENE_OPTIONS',t=>{const o=t.items[0].scene.options;o.push({t:'选项四',reply:['不是。']})});
+test('check-teach: both pilots pass validator and page shape; an empty file fails both',()=>{
+ const {checkTeach}=require('./check-teach');
+ for(const {L,T} of fixtures){const r=checkTeach(L,T);assert.equal(r.ok,true,JSON.stringify(r.errors));assert.equal(r.shape_ok,true)}
+ const bad=checkTeach(fixtures[0].L,{});assert.equal(bad.ok,false);assert.equal(bad.shape_ok,false);
+});
+test('every published deep-teach file passes check-teach against its lesson',()=>{
+ const {checkTeach}=require('./check-teach');
+ for(const f of fs.readdirSync(path.join(root,'data/teach')).filter(f=>f.endsWith('.json'))){const id=f.replace('.json','');
+  const r=checkTeach(json('data/daily/'+id+'.json'),json('data/teach/'+f));assert.equal(r.ok,true,id+': '+r.errors.join('; '))}
+});
 test('shape rejects missing and malformed nested fields without throwing',()=>{
  for(const value of [null,{},[],{items:[{}]}])assert.equal(D.validateShape(value,L),false);
  for(const change of [t=>delete t.items[0].scene,t=>delete t.items[0].check,t=>delete t.items[0].say,t=>delete t.items[0].final,t=>t.items[0].check.options[0].why='oops',t=>t.tasks={},t=>t.reading[0].chunks=[null],t=>t.items[1].key=t.items[0].key]){const t=copy(T);change(t);assert.equal(D.validateShape(t,L),false)}

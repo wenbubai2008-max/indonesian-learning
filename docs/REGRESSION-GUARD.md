@@ -553,3 +553,11 @@
 - 没有讲解数据的课程不显示带学入口，不再退回旧版；深讲版里的「用旧版带学」链接已去掉，讲解出错时直接回到整页。
 - `data/guided-lesson.js` 和 `indo_guided_lesson_v1` 保留不删，只是不再被打开；恢复旧版需要用户明确要求。
 - 守卫 / 测试：§34 的兜底检查改为"无讲解数据 → 不显示入口、不调用 GuidedLesson"；`test-deep-teach.js` 断言按钮默认隐藏、源码不再调用 `GuidedLesson.open`。
+
+## 36. 2026-10-21 深讲每节生成（用户决定：早晚课都写，先试几天）
+
+- **谁写、何时写**：早课、晚课任务在课程 PR 开出之后，按 `docs/tasks/DEEP-TEACH.md` 为同一节课写 `data/teach/D-am|pm.json`，在 `teach-D-am|pm` 分支单独开一个 PR（正文 `AUTO_PUBLISH_TEACH=1`）。课程优先：深讲的任何问题都不得影响、修改或推迟课程；早课 08:15、晚课 18:30 还没写完就放弃当天深讲。`COMMON.md` §2 的“一个文件、一个 PR”只为此开一个例外；定时任务提示词的底线行同步加了这一句（用户同意修改任务）。
+- **发布**：`sync-daily-vocab.yml` 新增 `teach_release` job（不新增工作流）。闸门同泛读（同仓库、所有者、分支名、标记）；PR 只能改这一个文件；先等课程进入 main（最多 30 分钟），main 上已有同名深讲就拒绝；用 main 的受信任 worktree 跑 `check-teach.js`（`validate-teach.js` + 网页自己的 `DeepTeach.validateShape`），通过后按 PR head squash merge，输出 `DEEP_TEACH_PUBLISHED`。job 用自己的并发组 `teach-release-<PR>`，不占 `learning-data-write`，不碰任何学习数据。通用 preflight 跳过 `teach-` 分支；PR 路径过滤加了 `data/teach/*.json`。
+- **精简**：`validate-teach.js` 新增体积上限（紧凑 JSON >26000 字符为错误，>15000 警告）、情境题选项 ≤3（错误），讲解段数、旁问数、阅读句数、开口任务数、对话轮数超过目标给警告。两份试点仍通过（只有警告）。
+- **晚课换场景**：`docs/LESSON-QUALITY.md` 7c，晚课不沿用当天早课的故事和场景。
+- **测试**：`test-teach-release.js` 在临时 Git 仓库直接执行工作流里的真实脚本（gh、sleep 为本地替身），覆盖合并、多余路径、课程未上 main、深讲不合格、已存在不覆盖、已合并空操作；`test-deep-teach.js` 新增体积、选项数、`check-teach` 和“main 上每份深讲都能通过检查”。两者接入 Build learning runtime。

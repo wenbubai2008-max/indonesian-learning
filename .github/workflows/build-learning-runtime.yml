@@ -37,6 +37,9 @@ on:
       - 'data/teach/**'
       - '.github/scripts/validate-teach.js'
       - '.github/scripts/test-deep-teach.js'
+      - '.github/scripts/check-teach.js'
+      - '.github/scripts/test-teach-release.js'
+      - '.github/workflows/sync-daily-vocab.yml'
       - 'data/guided-lesson.js'
       - '.github/scripts/test-guided-lesson.js'
       - 'data/lesson-end-recall.js'
@@ -182,6 +185,9 @@ jobs:
           node .github/scripts/test-weekly-memory-report.js
           node --check data/deep-teach.js
           node .github/scripts/test-deep-teach.js
+          node --check .github/scripts/check-teach.js
+          node --check .github/scripts/test-teach-release.js
+          node .github/scripts/test-teach-release.js
           node --check data/guided-lesson.js
           node .github/scripts/test-guided-lesson.js
           node .github/scripts/test-review-cycle.js
