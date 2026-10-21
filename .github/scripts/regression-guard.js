@@ -759,6 +759,16 @@ try {
     const dir=rel('data/teach');
     const files=fs.existsSync(dir)?fs.readdirSync(dir).filter(f=>f.endsWith('.json')):[];
     okNew(files.length>0&&files.every(f=>/^\d{4}-\d{2}-\d{2}-(am|pm)\.json$/.test(f)&&fs.existsSync(rel('data/daily/'+f))),'every pilot teach sidecar has a corresponding daily lesson');
+
+    // §36 (2026-10-21, user decision): deep-teach is written for every lesson and published through teach_release.
+    const swf=read('.github/workflows/sync-daily-vocab.yml'),tr=(swf.split('\n  teach_release:')[1]||'').split('\n  sync:')[0];
+    okNew(tr.includes("startsWith(github.head_ref, 'teach-')")&&tr.includes('AUTO_PUBLISH_TEACH=1')&&/\^teach-\[0-9\]\{4\}-\[0-9\]\{2\}-\[0-9\]\{2\}-\(am\|pm\)\$/.test(tr),'teach_release is gated on branch teach-D-am|pm, same repo/owner and the AUTO_PUBLISH_TEACH=1 marker');
+    okNew(tr.includes('Unexpected deep-teach PR paths')&&tr.includes('Lesson not published')&&tr.includes('Deep-teach already published')&&tr.includes('git worktree add --detach "$trusted" origin/main')&&tr.includes('check-teach.js'),'teach_release: one file only, waits for the lesson on main, never overwrites, validates with trusted main scripts');
+    okNew(/group: teach-release-/.test(tr)&&!/learning-data-write/.test(tr)&&!/lesson_release|daily-vocab-data|learning-runtime/.test(tr.replace(/#[^\n]*/g,'')),'teach_release has its own concurrency group and touches no learning data');
+    okNew(swf.includes("!startsWith(github.head_ref, 'teach-')")&&swf.includes("- 'data/teach/*.json'"),'teach PRs wake the workflow and skip the generic preflight');
+    const dtDoc=fs.existsSync(rel('docs/tasks/DEEP-TEACH.md'))?read('docs/tasks/DEEP-TEACH.md'):'';
+    okNew(['teach-D-am','AUTO_PUBLISH_TEACH=1','check-teach.js','shape_ok','不得影响','08:15','18:30','lesson_focus'].every(m=>dtDoc.includes(m))&&read('docs/tasks/COMMON.md').includes('docs/tasks/DEEP-TEACH.md')&&read('docs/tasks/AM-LESSON.md').includes('docs/tasks/DEEP-TEACH.md')&&read('docs/tasks/PM-LESSON.md').includes('docs/tasks/DEEP-TEACH.md'),'deep-teach runbook exists and both lesson runbooks call it after the lesson PR');
+    okNew(read('docs/LESSON-QUALITY.md').includes('晚课换场景'),'LESSON-QUALITY keeps the PM different-scene rule');
   }
 
 } catch (e) {
