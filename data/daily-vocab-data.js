@@ -10584,22 +10584,26 @@ window.DAILY_VOCAB_DB = [
     "root": "arah",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-15 19:00",
-    "last_seen": "2026-09-15 19:00",
+    "last_seen": "2026-10-21 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-15"
+      "2026-09-15",
+      "2026-10-21"
     ],
     "root_cn": "方向",
-    "example": "Kalau salah arah, kita bisa muter cukup jauh.",
-    "example_cn": "如果走错方向，我们可能要绕很远。",
+    "example": "Petunjuk arah yang lama masih mengarah ke gerbang selatan, sehingga panitia menggantinya dengan petunjuk baru yang lebih tepat.",
+    "example_cn": "旧的方向指示仍然指向南门，因此主办方换成了更准确的新指示牌。",
     "lesson_occurrences": [
-      "2026-09-15 19:00"
+      "2026-09-15 19:00",
+      "2026-10-21 18:00"
     ]
   },
   {
@@ -11078,27 +11082,29 @@ window.DAILY_VOCAB_DB = [
     "en": "whereas; while",
     "root": "sedang",
     "root_cn": "正在；中等",
-    "example": "Kakak saya rajin menabung, sedangkan saya gampang tergoda diskon.",
-    "example_cn": "我姐姐很会存钱，而我很容易被打折诱惑。",
+    "example": "Rina memilih duduk dekat panggung, sedangkan Dewi lebih suka tempat yang tidak terlalu ramai.",
+    "example_cn": "丽娜选择坐在舞台附近，而德维更喜欢不那么拥挤的位置。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-10-15 18:00",
+    "last_seen": "2026-10-21 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-17",
-      "2026-10-15"
+      "2026-10-15",
+      "2026-10-21"
     ],
     "lesson_occurrences": [
       "2026-09-17 08:00",
-      "2026-10-15 18:00"
+      "2026-10-15 18:00",
+      "2026-10-21 18:00"
     ]
   },
   {
@@ -11132,16 +11138,16 @@ window.DAILY_VOCAB_DB = [
     "en": "show; indicate",
     "root": "tunjuk",
     "root_cn": "指；指出",
-    "example": "Data ini menunjukkan bahwa penjualan mulai naik.",
-    "example_cn": "这些数据显示销售开始上升。",
+    "example": "Panitia menunjukkan peta baru kepada Dewi seraya menjelaskan jalur masuk yang benar. Dewi sempat terkejut karena pintu masuknya berubah.",
+    "example_cn": "主办人员一边向德维出示新地图，一边解释正确的入场路线。德维起初有些惊讶，因为入口变了。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 10,
+    "times_seen": 11,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-10-21 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -11155,7 +11161,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-26",
       "2026-09-30",
       "2026-10-01",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-10-21"
     ],
     "lesson_occurrences": [
       "2026-09-17 08:00",
@@ -11167,7 +11174,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-26 18:00",
       "2026-09-30 08:00",
       "2026-10-01 18:00",
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-10-21 18:00"
     ]
   },
   {
@@ -12971,23 +12979,27 @@ window.DAILY_VOCAB_DB = [
     "en": "direct; guide",
     "root": "arah",
     "root_cn": "方向",
-    "example": "Atasan mengarahkan tim untuk fokus pada masalah utama.",
-    "example_cn": "上司指导团队把注意力放在主要问题上。",
+    "example": "Ketika beberapa penonton berjalan menuju gerbang selatan, panitia mengarahkan mereka ke gerbang utara.",
+    "example_cn": "几位观众走向南门时，主办人员把他们引导到了北门。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-23 08:00",
+    "last_seen": "2026-10-21 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-23"
+      "2026-09-23",
+      "2026-10-21"
     ],
     "lesson_occurrences": [
-      "2026-09-23 08:00"
+      "2026-09-23 08:00",
+      "2026-10-21 18:00"
     ]
   },
   {
@@ -20995,25 +21007,29 @@ window.DAILY_VOCAB_DB = [
     "en": "to apply; to implement",
     "root": "terap",
     "root_cn": "应用；实施（词根少单独使用）",
-    "example": "Kantor kami mulai menerapkan jam kerja fleksibel.",
-    "example_cn": "我们公司开始实行弹性工作时间。",
+    "example": "Panitia menerapkan sistem antrean baru karena ada peningkatan jumlah penonton. Tantangan mereka adalah menjelaskan perubahan itu sebelum konser dimulai.",
+    "example_cn": "由于观众人数增加，主办方实行了新的排队制度。他们面临的挑战是在音乐会开始前把调整说明白。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-14 08:00",
-    "last_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-21 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-14",
-      "2026-10-15"
+      "2026-10-15",
+      "2026-10-21"
     ],
     "lesson_occurrences": [
       "2026-10-14 08:00",
-      "2026-10-15 08:00"
+      "2026-10-15 08:00",
+      "2026-10-21 18:00"
     ]
   },
   {
@@ -23388,23 +23404,26 @@ window.DAILY_VOCAB_DB = [
     "en": "atmosphere; nuance",
     "root": "",
     "root_cn": "",
-    "example": "Saat lampu panggung mulai menyala, perpaduan musik akustik dan dekorasi batik memberi nuansa hangat.",
-    "example_cn": "舞台灯光亮起时，原声音乐与蜡染布装饰营造出了温馨的情调。",
+    "example": "Panitia menyalakan lampu kuning di sekitar panggung. Kain dengan motif batik di belakang penyanyi memberi nuansa Jawa.",
+    "example_cn": "主办方点亮舞台周围的黄色灯光。歌手身后的蜡染花纹布让舞台带有爪哇风情。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-21"
     ],
     "lesson_occurrences": [
-      "2026-10-21 08:00"
+      "2026-10-21 08:00",
+      "2026-10-21 18:00"
     ]
   },
   {
@@ -23413,23 +23432,26 @@ window.DAILY_VOCAB_DB = [
     "en": "watch; witness",
     "root": "saksi",
     "root_cn": "证人；见证",
-    "example": "Rina sengaja datang untuk menyaksikan temannya tampil di atas panggung.",
-    "example_cn": "丽娜特意赶来观看朋友在舞台上表演。",
+    "example": "Rina sudah membeli tiket. Rasanya rugi kalau pulang sebelum menyaksikan penampilan temannya, jadi ia memilih tetap di sana.",
+    "example_cn": "丽娜已经买了票，觉得看完朋友的表演前就离开有点亏，所以她选择留下来。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-21"
     ],
     "lesson_occurrences": [
-      "2026-10-21 08:00"
+      "2026-10-21 08:00",
+      "2026-10-21 18:00"
     ]
   },
   {
@@ -23505,6 +23527,82 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-21 08:00"
+    ]
+  },
+  {
+    "word": "memaksa",
+    "cn": "强迫；逼迫；硬要",
+    "en": "to force; to insist on",
+    "root": "paksa",
+    "root_cn": "强迫；强制",
+    "example": "Panitia menyampaikan aturan baru dan meminta penonton tidak memaksa masuk dari gerbang selatan karena gerbang itu hanya untuk keluar.",
+    "example_cn": "主办方传达了新规定，请观众不要硬从南门进去，因为南门只供出场使用。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 18:00",
+    "last_seen": "2026-10-21 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 18:00"
+    ]
+  },
+  {
+    "word": "menempel",
+    "cn": "贴着；粘在；附着",
+    "en": "to stick; to be attached",
+    "root": "tempel",
+    "root_cn": "贴；粘",
+    "example": "Panitia menyediakan peta baru yang sekarang menempel di papan pengumuman dekat loket.",
+    "example_cn": "主办方提供了新地图，现在它贴在售票处附近的公告板上。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 18:00",
+    "last_seen": "2026-10-21 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 18:00"
+    ]
+  },
+  {
+    "word": "mengetahui",
+    "cn": "知道；获悉；了解到",
+    "en": "to know; to find out",
+    "root": "tahu",
+    "root_cn": "知道",
+    "example": "Sebelum membalas pesan temannya, Dewi ingin mengetahui alasan perubahan pintu masuk. Ia merasa lega setelah mendengar penjelasannya.",
+    "example_cn": "在回复朋友消息前，德维想先弄清楚入口变更的原因。听完解释后，她松了一口气。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 18:00",
+    "last_seen": "2026-10-21 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 18:00"
     ]
   }
 ];

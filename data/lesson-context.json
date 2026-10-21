@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-21",
-    "session": "pm",
-    "time": "18:00",
-    "day": 61
+    "date": "2026-10-22",
+    "session": "am",
+    "time": "08:00",
+    "day": 62
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-21T01:53:01.810Z",
-    "lesson_watermark": "2026-10-21 08:00",
+    "runtime_generated_at": "2026-10-21T03:28:29.665Z",
+    "lesson_watermark": "2026-10-21 18:00",
     "index_updated": "2026-10-21",
-    "runtime_hash": "868dc233843b9e05d90fb23b01989c725ddbc5cefa6a9c1d57619269158e4a21",
-    "index_hash": "fa0a62afa2c16f424cda877413019c6f0b102b0b3401d4aa34c5ac161c1e306a",
+    "runtime_hash": "bffdac464fa3f12d9a632ea7cb12196627e4e3a482a20858c3a58a90917ffcca",
+    "index_hash": "7ebefdebf301275175cdf6100d2596c9eda207a7ed8f22a22c63e31041a3a374",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -56,10 +56,6 @@
       [
         "lolos",
         "逃脱；通过"
-      ],
-      [
-        "memaksa",
-        "强迫"
       ],
       [
         "hadiah utama",
@@ -175,10 +171,6 @@
       ]
     ],
     "new_fuzzy": [
-      [
-        "menempel",
-        "粘贴 / 贴上"
-      ],
       [
         "mencampur",
         "混合"
@@ -430,10 +422,6 @@
       [
         "tradisional",
         "传统的"
-      ],
-      [
-        "mengetahui",
-        "知道"
       ],
       [
         "buruk",
@@ -1770,16 +1758,6 @@
         "泥土；土地"
       ],
       [
-        "arah",
-        3,
-        0,
-        "",
-        "2026-10-15T13:38:01.921Z",
-        "方向",
-        "arah",
-        "方向"
-      ],
-      [
         "benerin",
         2,
         0,
@@ -2328,16 +2306,6 @@
         "听",
         "dengar",
         "听；听见"
-      ],
-      [
-        "mengarahkan",
-        2,
-        0,
-        "",
-        "2026-10-15T07:29:32.074Z",
-        "指导 / 导向",
-        "arah",
-        "方向"
       ],
       [
         "mengetuk",
@@ -2950,6 +2918,26 @@
         "伙伴；同伴"
       ],
       [
+        "terus-menerus",
+        3,
+        0,
+        "",
+        "2026-10-15T08:15:09.139Z",
+        "不断地；持续不停地",
+        "terus",
+        "继续；一直"
+      ],
+      [
+        "aliran",
+        2,
+        0,
+        "",
+        "2026-10-19T13:14:10.229Z",
+        "流动；流派；流向",
+        "alir",
+        "流；流动"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3048,106 +3036,6 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
-      ],
-      [
-        "menyegarkan",
-        2,
-        0,
-        "",
-        "",
-        "使清爽；使精神焕发",
-        "segar",
-        "清新；清爽"
-      ],
-      [
-        "paku",
-        2,
-        0,
-        "",
-        "",
-        "钉子",
-        "",
-        ""
-      ],
-      [
-        "empuk",
-        2,
-        0,
-        "",
-        "",
-        "软的；松软的；软嫩的",
-        "",
-        ""
-      ],
-      [
-        "perkirakan",
-        2,
-        0,
-        "",
-        "",
-        "估计一下；请预计（常见指令用法）",
-        "kira",
-        "猜测；估量"
-      ],
-      [
-        "perpaduan",
-        2,
-        0,
-        "",
-        "",
-        "融合；结合；搭配",
-        "padu",
-        "协调；融合"
-      ],
-      [
-        "nuansa",
-        2,
-        0,
-        "",
-        "",
-        "氛围；色彩；情调",
-        "",
-        ""
-      ],
-      [
-        "menyaksikan",
-        2,
-        0,
-        "",
-        "",
-        "观看；亲眼目睹；见证",
-        "saksi",
-        "证人；见证"
-      ],
-      [
-        "penampilan",
-        2,
-        0,
-        "",
-        "",
-        "表演；表现；外表",
-        "tampil",
-        "出现；登场；展示"
-      ],
-      [
-        "panggung",
-        2,
-        0,
-        "",
-        "",
-        "舞台；演出场地",
-        "",
-        ""
-      ],
-      [
-        "konser",
-        2,
-        0,
-        "",
-        "",
-        "音乐会；演唱会",
-        "",
-        ""
       ]
     ],
     "focus": [
@@ -3405,14 +3293,6 @@
         "fuzzy"
       ],
       [
-        "mengetahui",
-        "通用",
-        "tau",
-        "tahu",
-        720,
-        "fuzzy"
-      ],
-      [
         "malahan",
         "通用",
         "malah",
@@ -3479,45 +3359,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-14",
-      "session": "am",
-      "review_core": [
-        "kendala",
-        "kelewat",
-        "nggak usah",
-        "ngaret",
-        "pantes"
-      ],
-      "new_words": [
-        "kemudian",
-        "motif",
-        "peralatan",
-        "pedagang",
-        "menerapkan",
-        "suhu",
-        "strategis",
-        "entahlah",
-        "kawasan",
-        "khas"
-      ]
-    },
-    {
-      "date": "2026-10-14",
-      "session": "pm",
-      "review_core": [
-        "keberatan",
-        "baper",
-        "ganjel",
-        "tanyain",
-        "penasaran"
-      ],
-      "new_words": [
-        "balas",
-        "komentar",
-        "mengabaikan"
-      ]
-    },
     {
       "date": "2026-10-15",
       "session": "am",
@@ -3776,105 +3617,40 @@
         "panggung",
         "konser"
       ]
+    },
+    {
+      "date": "2026-10-21",
+      "session": "pm",
+      "review_core": [
+        "sedangkan",
+        "menerapkan",
+        "arah",
+        "mengarahkan",
+        "menunjukkan"
+      ],
+      "new_words": [
+        "memaksa",
+        "menempel",
+        "mengetahui"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "new_words": [
-      "diam-diam",
-      "keadaan",
-      "memilah"
+      "memaksa",
+      "menempel",
+      "mengetahui"
     ],
     "review_core": [
-      "darurat",
-      "ganjel",
-      "butuh",
-      "membutuhkan",
-      "pemasukan"
+      "sedangkan",
+      "menerapkan",
+      "arah",
+      "mengarahkan",
+      "menunjukkan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-21",
-    "vocab": [
-      [
-        "menyegarkan",
-        "使清爽；使精神焕发",
-        "refresh; invigorate",
-        "segar",
-        "清新；清爽"
-      ],
-      [
-        "paku",
-        "钉子",
-        "nail",
-        "",
-        ""
-      ],
-      [
-        "empuk",
-        "软的；松软的；软嫩的",
-        "soft; tender",
-        "",
-        ""
-      ],
-      [
-        "perkirakan",
-        "估计一下；请预计（常见指令用法）",
-        "estimate; predict",
-        "kira",
-        "猜测；估量"
-      ],
-      [
-        "perpaduan",
-        "融合；结合；搭配",
-        "combination; blend",
-        "padu",
-        "协调；融合"
-      ],
-      [
-        "nuansa",
-        "氛围；色彩；情调",
-        "atmosphere; nuance",
-        "",
-        ""
-      ],
-      [
-        "menyaksikan",
-        "观看；亲眼目睹；见证",
-        "watch; witness",
-        "saksi",
-        "证人；见证"
-      ],
-      [
-        "penampilan",
-        "表演；表现；外表",
-        "performance; appearance",
-        "tampil",
-        "出现；登场；展示"
-      ],
-      [
-        "panggung",
-        "舞台；演出场地",
-        "stage",
-        "",
-        ""
-      ],
-      [
-        "konser",
-        "音乐会；演唱会",
-        "concert",
-        "",
-        ""
-      ]
-    ],
-    "review_vocab": [
-      "menegaskan",
-      "tegas",
-      "komentar",
-      "mengenali",
-      "kelepasan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
