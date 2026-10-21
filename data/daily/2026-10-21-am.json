@@ -1,0 +1,407 @@
+{
+  "date": "2026-10-21",
+  "session": "am",
+  "time": "08:00",
+  "day": 61,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Konser Kecil di Taman Kota · 城市公园里的小型音乐会",
+  "new_words": [
+    "menyegarkan",
+    "paku",
+    "empuk",
+    "perkirakan",
+    "perpaduan",
+    "nuansa",
+    "menyaksikan",
+    "penampilan",
+    "panggung",
+    "konser"
+  ],
+  "vocab": [
+    {
+      "word": "menyegarkan",
+      "display": "menyegarkan",
+      "audio_text": "menyegarkan",
+      "cn": "使清爽；使精神焕发",
+      "en": "refresh; invigorate",
+      "root": "segar",
+      "root_cn": "清新；清爽",
+      "formation": "meN- + segar + -kan → menyegarkan（s 脱落，meny-）；表示“让人感到清爽、恢复精神”。典型搭配：minuman yang menyegarkan（清爽的饮料）、udara segar（清新空气）、jalan pagi menyegarkan pikiran（晨走令人精神一振）。",
+      "example": "Dewi menikmati es jeruk yang menyegarkan setelah konser selesai; ia akhirnya merasa lega.",
+      "example_cn": "音乐会结束后，德维喝着清爽的冰橙汁，终于松了口气。",
+      "synonym_note": "segar 是“清爽、新鲜”的状态；menyegarkan 强调“使……清爽”。例如：Udaranya segar.（空气清新。）/ Jalan pagi menyegarkan pikiran.（晨走能提神。）口语说饮料清爽也常说 Segar banget!。",
+      "is_oral_new": false
+    },
+    {
+      "word": "paku",
+      "display": "paku",
+      "audio_text": "paku",
+      "cn": "钉子",
+      "en": "nail",
+      "root": "",
+      "root_cn": "",
+      "formation": "独立名词“钉子”。实用搭配：paku mencuat（钉子凸出来）、mencabut paku（拔钉子）、memaku papan（把木板钉住）；木板上露出的钉子可能划伤人。",
+      "example": "Dewi melihat paku mencuat dari papan dekat panggung, lalu meminta petugas mencabutnya.",
+      "example_cn": "德维看见舞台旁一块木板上有钉子露出来，就请工作人员把它拔掉。",
+      "synonym_note": "paku 是钉子；kuku 是手指甲、脚趾甲。memaku 是“用钉子钉住”，不要把 paku 与 kuku 混淆。",
+      "is_oral_new": false
+    },
+    {
+      "word": "empuk",
+      "display": "empuk",
+      "audio_text": "empuk",
+      "cn": "软的；松软的；软嫩的",
+      "en": "soft; tender",
+      "root": "",
+      "root_cn": "",
+      "formation": "形容触感或口感上的柔软，常修饰 kasur（床垫）、bantal（枕头）、sofa（沙发）、daging（肉）和 roti（面包）。常见搭配：kasur empuk、dagingnya empuk。",
+      "example": "Panitia menyediakan bantalan empuk untuk kursi penonton lanjut usia.",
+      "example_cn": "工作人员为年长观众的座椅准备了柔软的坐垫。",
+      "synonym_note": "empuk 用于可以压下去的软、松软或肉质软嫩，如 kasur empuk、daging empuk；lembut 用于触感细腻、声音温柔等，不能把所有“柔软”都机械换成 empuk。",
+      "is_oral_new": false
+    },
+    {
+      "word": "perkirakan",
+      "display": "perkirakan",
+      "audio_text": "perkirakan",
+      "cn": "估计一下；请预计（常见指令用法）",
+      "en": "estimate; predict",
+      "root": "kira",
+      "root_cn": "猜测；估量",
+      "formation": "词根 kira（估算、推测）→ memperkirakan（预计，完整主动动词）、diperkirakan（被预计）、perkirakan（“请估计”，多用于指令/祈使）。搭配：perkirakan jumlah penonton（估算观众人数）；口语问数量更常说 kira-kira berapa …?。",
+      "example": "Coba perkirakan jumlah kursi yang dibutuhkan sebelum panitia menyewa kursi tambahan.",
+      "example_cn": "工作人员租更多椅子之前，先试着估计一下需要多少个座位。",
+      "synonym_note": "perkirakan 是对听话人发出的“估计一下”指令；memperkirakan 通常陈述某人“正在预计”：Panitia memperkirakan ada seratus tamu.（主办方预计有一百位客人。）kira-kira 表示“大约”，不是同一种句法角色。",
+      "is_oral_new": false
+    },
+    {
+      "word": "perpaduan",
+      "display": "perpaduan",
+      "audio_text": "perpaduan",
+      "cn": "融合；结合；搭配",
+      "en": "combination; blend",
+      "root": "padu",
+      "root_cn": "协调；融合",
+      "formation": "per- + padu + -an → perpaduan，表示不同元素相互结合形成的整体。常见：perpaduan warna（配色组合）、perpaduan musik dan tari（音乐和舞蹈的结合）、perpaduan rasa manis dan asam（酸甜融合）。",
+      "example": "Perpaduan musik akustik dan lampu kuning memberi nuansa hangat pada panggung itu.",
+      "example_cn": "原声音乐和暖黄色灯光的组合，让舞台有了温馨的情调。",
+      "synonym_note": "perpaduan 通常强调搭配、组合后的协调效果，如 perpaduan warna；campuran 更侧重把东西混到一起（campuran air dan gula），不一定强调协调、美感。口语可以说 Warnanya cocok banget.（配色很搭。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "nuansa",
+      "display": "nuansa",
+      "audio_text": "nuansa",
+      "cn": "氛围；色彩；情调",
+      "en": "atmosphere; nuance",
+      "root": "",
+      "root_cn": "",
+      "formation": "多用于描述场所、作品或活动所呈现的整体情调。常见搭配：nuansa hangat（温馨的氛围）、nuansa tradisional（传统风格）、nuansa alami（自然风格）、memberi nuansa baru（带来新的感觉）。",
+      "example": "Saat lampu panggung mulai menyala, perpaduan musik akustik dan dekorasi batik memberi nuansa hangat.",
+      "example_cn": "舞台灯光亮起时，原声音乐与蜡染布装饰营造出了温馨的情调。",
+      "synonym_note": "nuansa 偏重呈现出来的风格、色调和细微情调（nuansa tradisional / hangat）；suasana 偏重现场整体环境或气氛（suasana ramai / sepi）。两者有重叠，不能说其中一个在所有语境里都错。聊天时可说 Suasananya nyaman banget.（现场气氛很舒服。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyaksikan",
+      "display": "menyaksikan",
+      "audio_text": "menyaksikan",
+      "cn": "观看；亲眼目睹；见证",
+      "en": "watch; witness",
+      "root": "saksi",
+      "root_cn": "证人；见证",
+      "formation": "meN- + saksi + -kan → menyaksikan：s 脱落。可用于观看演出、见证事件。常见搭配：menyaksikan konser（观看演唱会）、menyaksikan pertandingan（观看比赛）、menyaksikan langsung（现场亲眼看）。",
+      "example": "Rina sengaja datang untuk menyaksikan temannya tampil di atas panggung.",
+      "example_cn": "丽娜特意赶来观看朋友在舞台上表演。",
+      "synonym_note": "menyaksikan 更偏正式，可指观看演出、比赛或见证事情发生，不限于人在现场，也可看直播；nonton / menonton 更常见于朋友聊天。例：Mau nonton konser bareng?（要不要一起看音乐会？）",
+      "is_oral_new": false
+    },
+    {
+      "word": "penampilan",
+      "display": "penampilan",
+      "audio_text": "penampilan",
+      "cn": "表演；表现；外表",
+      "en": "performance; appearance",
+      "root": "tampil",
+      "root_cn": "出现；登场；展示",
+      "formation": "peN- + tampil + -an → penampilan：t 在派生过程中脱落。常见搭配：penampilan penyanyi（歌手演出）、penampilan pertama（首次登台）、penampilan luar（外表）、menjaga penampilan（注意形象）。",
+      "example": "Penampilan pertama nyaris tertunda karena mikrofon belum siap; masalah itu menjadi tantangan bagi panitia.",
+      "example_cn": "第一场表演因麦克风没准备好差点延迟，主办方必须应对这一难题。",
+      "synonym_note": "penampilan 可指人的表演、外在形象或表现：penampilan penyanyi、menjaga penampilan；pertunjukan 更多是整个“演出、演出活动”；tampil 是“登台、露面、表现”的动词。",
+      "is_oral_new": false
+    },
+    {
+      "word": "panggung",
+      "display": "panggung",
+      "audio_text": "panggung",
+      "cn": "舞台；演出场地",
+      "en": "stage",
+      "root": "",
+      "root_cn": "",
+      "formation": "名词。常见搭配：naik panggung（登台）、turun dari panggung（下台）、di atas panggung（在舞台上）、panggung kecil（小舞台）、panggung terbuka（露天舞台）。",
+      "example": "Petugas menyampaikan aturan keselamatan sebelum penyanyi naik ke panggung.",
+      "example_cn": "歌手登台前，工作人员传达了安全规定。",
+      "synonym_note": "panggung 是舞台、台子；naik panggung 是上台。pentas 可指演出，pementasan 指演出活动；不要把 panggung（地点）和 penampilan（表演）混为一谈。",
+      "is_oral_new": false
+    },
+    {
+      "word": "konser",
+      "display": "konser",
+      "audio_text": "konser",
+      "cn": "音乐会；演唱会",
+      "en": "concert",
+      "root": "",
+      "root_cn": "",
+      "formation": "外来词名词。常见搭配：konser musik、konser amal（慈善音乐会）、tiket konser、menonton konser、mengadakan konser（举办音乐会）。",
+      "example": "Panitia berjanji akan menyiapkan tempat duduk tepat waktu sebelum konser dimulai.",
+      "example_cn": "工作人员答应在音乐会开始前及时准备好座位。",
+      "synonym_note": "konser 主要指以音乐为核心的演出；acara 是活动的总称，pertunjukan 也可能是舞蹈或戏剧。口语说 nonton konser（看演唱会）很自然。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "menegaskan",
+    "tegas",
+    "komentar",
+    "mengenali",
+    "kelepasan"
+  ],
+  "sentences": [
+    {
+      "text": "Coba perkirakan berapa kursi lagi yang kita butuhkan sebelum pesan tambahan.",
+      "cn": "订更多椅子前，先估计一下我们还需要多少张。（pesan = memesan，口语中可省略 meN-）"
+    },
+    {
+      "text": "Eh, ada paku yang nongol dari papan dekat panggung. Hati-hati, ya!",
+      "cn": "哎，舞台附近的木板上有颗钉子凸出来了。小心点！（nongol 是口语，标准形可说 mencuat）"
+    },
+    {
+      "text": "Panitia menyediakan bantalan empuk untuk lansia dan es jeruk yang menyegarkan untuk petugas.",
+      "cn": "主办方给老人准备了软坐垫，也给工作人员准备了清爽的冰橙汁。"
+    },
+    {
+      "text": "Perpaduan lampu kuning dan musik akustik memberi nuansa hangat; banyak komentar penonton pun positif.",
+      "cn": "黄色灯光和原声音乐的搭配营造了温馨的情调，观众的评价也大多很积极。"
+    },
+    {
+      "text": "Sebelum penampilan dimulai, ketua panitia menegaskan aturan keselamatan. Sikapnya tegas, tetapi ramah.",
+      "cn": "演出开始前，主办负责人强调安全规定。他态度坚定，但仍然友善。"
+    }
+  ],
+  "reading": {
+    "text": "Sabtu sore, Dewi membantu panitia menyiapkan konser kecil di taman kota. Ia melihat paku mencuat dari papan di dekat panggung dan meminta petugas mencabutnya. Panitia menyediakan bantalan empuk untuk penonton lanjut usia. “Coba perkirakan jumlah kursi tambahan yang dibutuhkan,” kata ketua panitia. Mereka memperkirakan sekitar seratus orang akan datang. Perpaduan lampu kuning dan musik akustik memberi nuansa hangat. Sebelum penampilan dimulai, ketua panitia menegaskan aturan keselamatan. Sikapnya tegas, tetapi ramah. Rina datang untuk menyaksikan temannya bernyanyi dan langsung mengenali suaranya. Seusai konser, Dewi minum es jeruk yang menyegarkan. Ia lega karena acara berjalan lancar. Bagi warga, konser itu bukan sekadar hiburan, tetapi juga kesempatan untuk bertemu.",
+    "cn": "周六傍晚，德维帮忙在城市公园筹备一场小型音乐会。她看见舞台附近木板上露出一颗钉子，便请工作人员把它拔掉。主办方为年长观众准备了软坐垫。主办负责人说：“先估计一下还需要多少张椅子。”他们预计大约会来一百个人。黄色灯光和原声音乐的搭配营造了温馨的情调。演出开始前，负责人强调了安全规定。他态度坚定，但很友善。丽娜赶来看朋友唱歌，一下就认出了朋友的声音。音乐会结束后，德维喝了一杯清爽的冰橙汁。活动顺利结束，她松了口气。"
+  },
+  "quiz": [
+    {
+      "question": "Ketua panitia memberi instruksi: “___ jumlah kursi yang diperlukan sebelum kita memesan tambahan!”（这里是在直接吩咐“估计一下”）",
+      "options": [
+        "Perkiraan",
+        "Diperkirakan",
+        "Perkirakan",
+        "Memperkirakan"
+      ],
+      "answer_index": 2,
+      "answer": "Perkirakan",
+      "explain": "命令/指示语气直接用 Perkirakan!；memperkirakan 用于一般主动陈述（Panitia memperkirakan jumlah tamu）；diperkirakan 是被动形式；perkiraan 是“估计、预计数”的名词。注意不是把 perkirakan 无条件替换成 memperkirakan。"
+    },
+    {
+      "question": "Yang ingin digambarkan adalah gaya tradisional dari perpaduan batik dan musik, bukan ramai atau sepinya penonton. “Dekorasi batik memberi ___ tradisional pada panggung.”（选最贴切的词）",
+      "options": [
+        "nuansa",
+        "suasana",
+        "keadaan",
+        "situasi"
+      ],
+      "answer_index": 0,
+      "answer": "nuansa",
+      "explain": "固定搭配 memberi nuansa tradisional（增添传统风格/情调）最贴切。suasana 可以表达整体气氛（suasana konser ramai），但这里说的是装饰呈现出来的风格；两词有重叠，并非任何场合完全互斥。keadaan/situasi 通常表示状态或局面。"
+    },
+    {
+      "question": "Sebelum pertunjukan dimulai, ketua panitia ___ kembali aturan keselamatan dengan suara yang tenang.（明确强调规定；复习词）",
+      "options": [
+        "ketegasan",
+        "menegaskan",
+        "tegas",
+        "penegasan"
+      ],
+      "answer_index": 1,
+      "answer": "menegaskan",
+      "explain": "空格需要及物动词：menegaskan aturan = 强调规定。tegas 是形容词，可说 bersikap tegas；ketegasan / penegasan 都是名词，不能直接代替谓语。这同时复习了 tegas → menegaskan 的构词区别。"
+    }
+  ],
+  "output": {
+    "task": "情景：朋友问你明晚的公园音乐会值不值得去。不要看词卡，用 2–3 句自然印尼语回复他：①邀请他来看表演；②用“Coba perkirakan …”请他估计会来多少人；③描述现场打算营造的风格/情调。必须主动用出 perkirakan、nuansa，以及 konser / penampilan / menyaksikan 中至少一个，另用评论类复习词 komentar。不要照抄今天的阅读。",
+    "reference_answer": "Besok malam ada konser kecil di taman, mau nonton bareng? Coba perkirakan berapa orang yang bakal datang; komentar di grup warga ramai banget. Katanya, perpaduan lampu warna-warni dan musik jazz bakal memberi nuansa santai, jadi penampilannya pasti seru.",
+    "reference_cn": "明晚公园有一场小型音乐会，要不要一起去看？你估计大概会来多少人？社区群里的评论可热闹了。听说彩色灯光和爵士乐的搭配会营造轻松的氛围，所以演出应该会很精彩。（bakal = akan；banget = sekali；nonton = menonton，朋友间自然口语。）"
+  },
+  "review": [
+    "第 1 轮｜3 秒主动提取：先盖住词卡，看中文依次说——让人清爽、钉子、松软、估计一下（祈使）、搭配/融合、风格情调、观看/见证、表演、舞台、音乐会。特别检查 perkirakan，不要只会 memperkirakan；不熟的词再读一次完整例句。",
+    "第 2 轮｜最小差异：请区分“Coba perkirakan …”与“Panitia memperkirakan …”；“nuansa tradisional”与“suasana ramai”；“menyaksikan konser”（较正式）与“nonton konser”（口语）。然后把两组说法各放进自己的生活场景。",
+    "第 3 轮｜隔情境输出：不用音乐会场景，说“老板强调了规定”“老板态度坚定”；再说“我认得这声音”“我不小心说漏嘴了”“我看到许多评论”。分别用 menegaskan / tegas / mengenali / kelepasan / komentar。说不出就回看词卡，换一个具体场景再说。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "perkirakan",
+      "nuansa",
+      "menyaksikan"
+    ],
+    "patterns": [
+      {
+        "pattern": "Coba perkirakan … sebelum …",
+        "cn": "先估计一下……，然后再……",
+        "example": "Coba perkirakan jumlah kursi yang dibutuhkan sebelum panitia menyewa kursi tambahan.",
+        "example_cn": "工作人员租更多椅子之前，先试着估计一下需要多少个座位。"
+      },
+      {
+        "pattern": "Perpaduan … dan … memberi nuansa …",
+        "cn": "……和……的搭配营造了……的情调",
+        "example": "Perpaduan lampu kuning dan musik akustik memberi nuansa hangat; banyak komentar penonton pun positif.",
+        "example_cn": "黄色灯光和原声音乐的搭配营造了温馨的情调，观众的评价也大多很积极。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "让人清爽",
+        "id": "menyegarkan"
+      },
+      {
+        "cn": "钉子",
+        "id": "paku"
+      },
+      {
+        "cn": "松软、软嫩",
+        "id": "empuk"
+      },
+      {
+        "cn": "请估计一下",
+        "id": "perkirakan"
+      },
+      {
+        "cn": "融合、搭配",
+        "id": "perpaduan"
+      },
+      {
+        "cn": "风格、情调",
+        "id": "nuansa"
+      },
+      {
+        "cn": "观看、见证",
+        "id": "menyaksikan"
+      },
+      {
+        "cn": "表演、外表",
+        "id": "penampilan"
+      },
+      {
+        "cn": "舞台",
+        "id": "panggung"
+      },
+      {
+        "cn": "音乐会",
+        "id": "konser"
+      },
+      {
+        "cn": "态度坚定",
+        "id": "tegas"
+      },
+      {
+        "cn": "强调、明确说明",
+        "id": "menegaskan"
+      }
+    ],
+    "frames": [
+      "Coba … jumlah kursinya sebelum memesan tambahan.（估计一下）",
+      "Perpaduan batik dan lampu kuning memberi … tradisional.（传统情调）",
+      "Aku datang untuk … penampilan temanku.（观看、见证）"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "perkirakan",
+            "cn": "估计一下（指令）"
+          },
+          {
+            "id": "memperkirakan",
+            "cn": "预计（陈述主动式）"
+          }
+        ],
+        "note": "先分清句法角色，不把两个词当作完全相同的替换词。"
+      },
+      {
+        "items": [
+          {
+            "id": "nuansa",
+            "cn": "风格情调"
+          },
+          {
+            "id": "suasana",
+            "cn": "现场整体气氛"
+          }
+        ],
+        "note": "两者存在重叠：nuansa tradisional 强调风格，suasana ramai 强调现场热闹。"
+      },
+      {
+        "items": [
+          {
+            "id": "tegas",
+            "cn": "坚定（形容词）"
+          },
+          {
+            "id": "menegaskan",
+            "cn": "明确强调（动词）"
+          }
+        ],
+        "note": "bersikap tegas（态度坚定），menegaskan aturan（强调规定）。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "perkirakan",
+        "usage": "指令句中用 Coba perkirakan …；陈述预计用 memperkirakan。",
+        "examples": [
+          {
+            "id": "Coba perkirakan berapa tamu yang akan datang.",
+            "cn": "估计一下会来多少位客人。"
+          }
+        ]
+      },
+      {
+        "word": "menegaskan / tegas",
+        "usage": "描述某人坚持原则和某人明确说明内容，是两种不同的句法。",
+        "examples": [
+          {
+            "id": "Atasan bersikap tegas soal jadwal.",
+            "cn": "上司在日程问题上态度坚定。"
+          },
+          {
+            "id": "Atasan menegaskan aturan baru.",
+            "cn": "上司强调了新规定。"
+          }
+        ]
+      },
+      {
+        "word": "kelepasan / mengenali / komentar",
+        "usage": "换到日常聊天场景，而不是重复音乐会故事。",
+        "examples": [
+          {
+            "id": "Aku kelepasan ngomong soal kejutan itu.",
+            "cn": "我一不小心把那个惊喜说漏嘴了。"
+          },
+          {
+            "id": "Aku langsung mengenali suaranya.",
+            "cn": "我立刻认出了他的声音。"
+          },
+          {
+            "id": "Aku baca komentarnya dulu.",
+            "cn": "我先看一下他的评论。"
+          }
+        ]
+      }
+    ]
+  }
+}
