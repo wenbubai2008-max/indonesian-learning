@@ -1,0 +1,826 @@
+{
+ "version": 1,
+ "title": "晚课深讲 · 10月21日",
+ "intro": [
+  "今晚的课叫《音乐会入口临时调整》。公园小音乐会开场前，主办方把入口改到北门，南门只出不进；有人硬要从南门进，被引导去了北门，Dewi 也差点走错。",
+  "今晚只讲 5 样：[[memaksa]] · [[sedangkan]] · [[mengarahkan]] · [[A …, sedangkan B …]] · [[mengarahkan … ke …]]"
+ ],
+ "items": [
+  {
+   "key": "memaksa",
+   "name": "memaksa",
+   "head": "memaksa · 硬要；逼迫",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Seorang pria tetap memaksa masuk dari gerbang selatan.",
+      "cn": "有位男子仍硬要从南门进去。"
+     }
+    ],
+    "ask": "南门只供出场，可这位男子 tetap memaksa masuk。他做了什么？",
+    "options": [
+     {
+      "t": "硬要从南门进去",
+      "reply": [
+       "对。memaksa masuk = 硬要进去，是他自己硬来。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "被别人逼着进去",
+      "reply": [
+       "不是。被别人逼是 dipaksa；memaksa 的主语自己在硬来。"
+      ]
+     },
+     {
+      "t": "没办法只好进去",
+      "reply": [
+       "不是。没办法只好做，用 terpaksa。他是明知不行还硬要进。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{memaksa}} = 硬要；逼。两种用法：{{memaksa masuk}}（自己硬要进去）；{{memaksa temannya pulang}}（逼朋友回家）。",
+    "同根三兄弟：{{memaksa}} 自己硬来或逼人，{{dipaksa}} 被别人逼，{{terpaksa}} 形势所迫只好。口语常说 {{maksa}}：{{Jangan maksa, ya.}}"
+   ],
+   "simple": [
+    "[[memaksa]] = 硬要／逼；[[terpaksa]] = 只好；[[dipaksa]] = 被逼"
+   ],
+   "asks": [
+    {
+     "label": "memaksa、terpaksa、dipaksa 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Dia memaksa masuk.",
+         "他硬要进（自己硬来）"
+        ],
+        [
+         "Dia terpaksa pulang.",
+         "他只好回家（没别的办法）"
+        ],
+        [
+         "Dia dipaksa pulang.",
+         "他被逼回家（有人逼他）"
+        ]
+       ]
+      },
+      "先问：是谁在“逼”？自己硬来用 memaksa，别人逼他用 dipaksa，没办法只好用 terpaksa。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Hujan deras, jadi kami ___ pulang lebih awal.]]",
+     "（下大雨，我们只好提早回家。）"
+    ],
+    "options": [
+     {
+      "t": "terpaksa",
+      "v": "right",
+      "why": [
+       "对。没别的办法、只好这样做：terpaksa。"
+      ]
+     },
+     {
+      "t": "memaksa",
+      "v": "wrong",
+      "why": [
+       "memaksa 是硬要做或逼别人。这里没人硬来，是下雨逼得只好回家。"
+      ]
+     },
+     {
+      "t": "dipaksa",
+      "v": "wrong",
+      "why": [
+       "dipaksa 要有一个逼人的人。这里是天气原因，不是谁逼他们。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。[[Jangan ___ anakmu makan kalau dia sudah kenyang.]]（孩子已经饱了，就别逼他吃。）"
+     ],
+     "options": [
+      {
+       "t": "memaksa",
+       "v": "right",
+       "why": [
+        "对。逼别人做事：memaksa + 人 + 动词。"
+       ]
+      },
+      {
+       "t": "terpaksa",
+       "v": "wrong",
+       "why": [
+        "terpaksa 说的是自己只好做，后面不接被逼的人。"
+       ]
+      },
+      {
+       "t": "dipaksa",
+       "v": "wrong",
+       "why": [
+        "dipaksa 是被动“被逼”。这里是你去逼孩子，用主动 memaksa。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "朋友想硬闯已经关门的超市。你对他说：\"别硬要进去，门已经关了。\"先说出声，再点按钮。"
+    ],
+    "kw": "jangan · maksa masuk · pintunya · udah tutup",
+    "skel": "Jangan ____ masuk, pintunya ____ tutup.",
+    "ref": "Jangan maksa masuk, pintunya udah tutup.",
+    "notes": [
+     "朋友之间用口语：maksa = memaksa，udah = sudah。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "同事想让新人周六来上班。你说：\"别逼他周六来上班。\""
+    ],
+    "kw": "jangan · memaksa dia · masuk kerja · hari Sabtu",
+    "skel": "Jangan ____ dia masuk kerja hari ____.",
+    "ref": "Jangan memaksa dia masuk kerja hari Sabtu."
+   },
+   "final": {
+    "cn": "（跟朋友说）\"我不想逼你，可是我们真的需要你帮忙。\"",
+    "ref": "Aku nggak mau maksa kamu, tapi kami beneran butuh bantuanmu."
+   },
+   "remind": "memaksa = 硬要／逼（memaksa masuk、memaksa dia pulang）；只好用 terpaksa，被逼用 dipaksa；口语 maksa。"
+  },
+  {
+   "key": "sedangkan",
+   "name": "sedangkan",
+   "head": "sedangkan · 而（对比两边）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Mereka menerapkan aturan baru: penonton masuk lewat gerbang utara, sedangkan gerbang selatan hanya untuk keluar.",
+      "cn": "他们实行新规定：观众从北门进入，而南门只供离场使用。"
+     }
+    ],
+    "ask": "这句里的 sedangkan 在做什么？",
+    "options": [
+     {
+      "t": "把北门和南门的用途放在一起对比",
+      "reply": [
+       "对。北门进，南门出，两边各说各的：sedangkan = 而。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "表示“正在”",
+      "reply": [
+       "不是。它长得像 sedang，但 sedangkan 是连词“而”，用来对比两边。"
+      ]
+     },
+     {
+      "t": "表示“所以”",
+      "reply": [
+       "不是。“所以”是 jadi。这里两边没有因果，只是对比用途。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{sedangkan}} = 而：把两件并列的事放在一起对比，A 是这样，B 是那样。不是“正在”，也不是出乎意料的转折。",
+    "和 {{tapi}} 的区别：tapi 表示结果和预期相反（{{Aku udah datang, tapi pintunya tutup.}}）；sedangkan 只是两边各说各的。"
+   ],
+   "simple": [
+    "[[sedangkan]] = 而（A 这样，B 那样，单纯对比）"
+   ],
+   "asks": [
+    {
+     "label": "sedangkan、tapi、padahal 怎么选？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "A …, sedangkan B …",
+         "单纯对比两边"
+        ],
+        [
+         "…, tapi …",
+         "结果和预期相反"
+        ],
+        [
+         "…, padahal …",
+         "其实……却……（带意外或不满）"
+        ]
+       ]
+      },
+      "{{Kakakku suka kopi, sedangkan aku suka teh.}}（我哥喜欢咖啡，而我喜欢茶。）两边没有意外，只是对比，所以用 sedangkan。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Kantor kami buka jam delapan, ___ toko di bawahnya buka jam sepuluh.]]",
+     "（我们公司八点开门，而楼下的店十点开门。）"
+    ],
+    "options": [
+     {
+      "t": "sedangkan",
+      "v": "right",
+      "why": [
+       "对。两边各说各的开门时间，单纯对比：sedangkan。"
+      ]
+     },
+     {
+      "t": "padahal",
+      "v": "wrong",
+      "why": [
+       "padahal 带“其实……却……”的意外或不满。这里只是对比两个时间。"
+      ]
+     },
+     {
+      "t": "jadi",
+      "v": "wrong",
+      "why": [
+       "jadi 是“所以”。店十点开门，不是因为公司八点开门。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。哪一句用 sedangkan 最自然？"
+     ],
+     "options": [
+      {
+       "t": "Aku suka pedas, sedangkan adikku nggak bisa makan pedas.",
+       "v": "right",
+       "why": [
+        "对。我和弟弟的口味对比，两边换了主语。"
+       ]
+      },
+      {
+       "t": "Aku lapar, sedangkan aku makan.",
+       "v": "wrong",
+       "why": [
+        "同一个人前后两件事，没有可以对比的两边。"
+       ]
+      },
+      {
+       "t": "Hujan turun, sedangkan jalannya macet.",
+       "v": "wrong",
+       "why": [
+        "下雨导致堵车，是因果关系，用 jadi。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "介绍你家：\"我爸爸早上喝咖啡，而妈妈只喝温水。\""
+    ],
+    "kw": "ayahku · minum kopi · sedangkan · ibuku · air hangat",
+    "skel": "Ayahku minum kopi pagi-pagi, ____ ibuku cuma ____ air hangat.",
+    "ref": "Ayahku minum kopi pagi-pagi, sedangkan ibuku cuma minum air hangat.",
+    "notes": [
+     "cuma = hanya（口语）。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "比较两个城市：\"雅加达很热，而万隆比较凉。\""
+    ],
+    "kw": "Jakarta panas · sedangkan · Bandung · lebih dingin",
+    "skel": "Jakarta panas, ____ Bandung lebih ____.",
+    "ref": "Jakarta panas, sedangkan Bandung lebih dingin."
+   },
+   "final": {
+    "cn": "（分工）\"我来写报告，而你来联系客户。\"",
+    "ref": "Aku yang bikin laporan, sedangkan kamu yang menghubungi klien."
+   },
+   "remind": "sedangkan = 而：A …, sedangkan B …（单纯对比两边）；出乎意料的转折用 tapi。"
+  },
+  {
+   "key": "mengarahkan",
+   "name": "mengarahkan",
+   "head": "mengarahkan · 引导（往某个方向）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Panitia kemudian mengarahkan pria itu ke gerbang utara sambil menjelaskan alasan perubahan aturan.",
+      "cn": "主办方一边解释改规定的原因，一边把他引导到北门。"
+     }
+    ],
+    "ask": "主办人员 mengarahkan pria itu ke gerbang utara。他们做了什么？",
+    "options": [
+     {
+      "t": "引导那名男子去北门",
+      "reply": [
+       "对。mengarahkan = 让人朝某个方向走，ke 后面是去处。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "给那名男子看北门的照片",
+      "reply": [
+       "不是。给人看东西更像 menunjukkan。mengarahkan 是让人往那边走。"
+      ]
+     },
+     {
+      "t": "一定陪他走到北门",
+      "reply": [
+       "不一定陪着走。mengarahkan 的重点是告诉他往哪走、引他朝那个方向。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{mengarahkan}} = 引导朝某个方向：词根 {{arah}}（方向）+ meng- + -kan。结构：mengarahkan + 人 + ke + 地方。",
+    "和 {{menunjukkan}} 的区别：menunjukkan 是拿给人看、指出来（{{menunjukkan peta}} 出示地图）；mengarahkan 是让人往那边走。"
+   ],
+   "simple": [
+    "[[mengarahkan]] = 引导（人）往某方向；[[menunjukkan]] = 出示、指出"
+   ],
+   "asks": [
+    {
+     "label": "它和 menunjukkan 到底怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "mengarahkan penonton ke gerbang utara",
+         "引导观众去北门（让人移动）"
+        ],
+        [
+         "menunjukkan peta kepada penonton",
+         "给观众看地图（展示信息）"
+        ],
+        [
+         "menunjukkan arah",
+         "指出方向（告诉你哪边）"
+        ]
+       ]
+      },
+      "问自己：对方是被带着往哪儿走，还是看到了什么？前者用 mengarahkan，后者用 menunjukkan。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Satpam ___ tamu itu ke lift sebelah kiri.]]",
+     "（保安引导那位客人去左边的电梯。）"
+    ],
+    "options": [
+     {
+      "t": "mengarahkan",
+      "v": "right",
+      "why": [
+       "对。让客人往左边电梯走：mengarahkan + 人 + ke + 地方。"
+      ]
+     },
+     {
+      "t": "menunjukkan",
+      "v": "wrong",
+      "why": [
+       "menunjukkan 后面接给人看的东西，比如 menunjukkan tiket。这里说的是带人往哪走。"
+      ]
+     },
+     {
+      "t": "menunjuk",
+      "v": "wrong",
+      "why": [
+       "menunjuk 是用手指着、指定，不表示把人引到某处。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。[[Panitia meminta kami ___ tiket sebelum masuk.]]（主办人员要我们进场前出示门票。）"
+     ],
+     "options": [
+      {
+       "t": "menunjukkan",
+       "v": "right",
+       "why": [
+        "对。出示门票：menunjukkan tiket。"
+       ]
+      },
+      {
+       "t": "mengarahkan",
+       "v": "wrong",
+       "why": [
+        "mengarahkan 是引导方向，门票不是被引去某个地方。"
+       ]
+      },
+      {
+       "t": "menunjuk",
+       "v": "wrong",
+       "why": [
+        "menunjuk 是用手指着。出示东西给人看，用 menunjukkan。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你在商场上班，一位阿姨找不到出口。你说：\"我带您往出口那边走吧。\""
+    ],
+    "kw": "mari · saya arahkan · Ibu · ke pintu keluar",
+    "skel": "Mari, saya ____ Ibu ke pintu ____.",
+    "ref": "Mari, saya arahkan Ibu ke pintu keluar.",
+    "notes": [
+     "saya arahkan … 是说话时很常见的说法（省掉 meng-）。对顾客用 saya 和 Ibu。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "开会时你说：\"我想把大家的注意力引到这张图表上。\""
+    ],
+    "kw": "saya ingin · mengarahkan perhatian · ke grafik ini",
+    "skel": "Saya ingin ____ perhatian kalian ke ____ ini.",
+    "ref": "Saya ingin mengarahkan perhatian kalian ke grafik ini."
+   },
+   "final": {
+    "cn": "（停车场保安对司机说）\"我引导您的车去二楼。\"",
+    "ref": "Saya arahkan mobil Bapak ke lantai dua, ya."
+   },
+   "remind": "mengarahkan + 人 + ke + 地方 = 引导某人去某处；给人看东西用 menunjukkan。"
+  },
+  {
+   "key": "ab-sedangkan",
+   "name": "A …, sedangkan B …",
+   "head": "A …, sedangkan B … · A 是……，而 B 则……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "例句",
+      "id": "Rina memilih duduk dekat panggung, sedangkan Dewi lebih suka tempat yang tidak terlalu ramai.",
+      "cn": "丽娜选择坐在舞台附近，而德维更喜欢不那么拥挤的位置。"
+     }
+    ],
+    "ask": "这句话前后两半分别在说谁？",
+    "options": [
+     {
+      "t": "前半说 Rina，后半说 Dewi，各说各的选择",
+      "reply": [
+       "对。这个句型就是 A 怎样，而 B 怎样，两边换主语。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "两半都在说 Rina",
+      "reply": [
+       "不是。sedangkan 后面换了主语 Dewi。"
+      ]
+     },
+     {
+      "t": "后半是前半的原因",
+      "reply": [
+       "不是。Dewi 喜欢人少的地方，不是 Rina 坐前面的原因，两边没有因果。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "句型骨架：**A + 情况，sedangkan + B + 情况**。两边主语通常不同，sedangkan 前面加逗号。",
+    "后半句和前半句动词一样时可以省掉：{{Aku pesan teh, sedangkan dia kopi.}}（我点茶，他点咖啡。）"
+   ],
+   "simple": [
+    "[[A …, sedangkan B …]] = A……，而 B……（两边换主语）"
+   ],
+   "asks": [
+    {
+     "label": "怎么快速造这种句子？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      "三步：① 先说 A 的情况；② 加逗号和 sedangkan；③ 换一个主语 B，说不同的情况。",
+      "{{Kamar ini luas, sedangkan kamar itu kecil.}}（这间房宽敞，而那间小。）"
+     ]
+    },
+    {
+     "label": "词卡上怎么说这个句型？",
+     "from": "formation",
+     "word": "sedangkan"
+    }
+   ],
+   "check": {
+    "q": [
+     "哪一句是正确的 A …, sedangkan B …？"
+    ],
+    "options": [
+     {
+      "t": "Hari Senin aku kerja di kantor, sedangkan hari Jumat aku kerja dari rumah.",
+      "v": "right",
+      "why": [
+       "对。周一和周五的安排做对比，逗号 + sedangkan。"
+      ]
+     },
+     {
+      "t": "Aku kerja di kantor sedangkan.",
+      "v": "wrong",
+      "why": [
+       "sedangkan 后面必须说出 B 的情况，不能放在句尾。"
+      ]
+     },
+     {
+      "t": "Aku kerja di kantor, sedangkan aku.",
+      "v": "wrong",
+      "why": [
+       "sedangkan 后面只有主语，没有说 B 怎么样，对比不成立。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。把两句合成一句：[[Rumahku dekat kantor. Rumah Budi jauh.]]"
+     ],
+     "options": [
+      {
+       "t": "Rumahku dekat kantor, sedangkan rumah Budi jauh.",
+       "v": "right",
+       "why": [
+        "对。我家近，而 Budi 家远：两边换主语对比。"
+       ]
+      },
+      {
+       "t": "Rumahku dekat kantor, jadi rumah Budi jauh.",
+       "v": "wrong",
+       "why": [
+        "jadi 是“所以”。你家近，不是 Budi 家远的原因。"
+       ]
+      },
+      {
+       "t": "Rumahku dekat kantor, sedangkan jauh.",
+       "v": "wrong",
+       "why": [
+        "sedangkan 后面要换主语说清是谁远：rumah Budi。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "比较你和朋友的周末：\"周末我喜欢待在家，而我朋友喜欢去商场逛。\""
+    ],
+    "kw": "di rumah aja · sedangkan · temanku · jalan-jalan ke mal",
+    "skel": "Kalau weekend aku suka di rumah ____, ____ temanku suka jalan-jalan ke ____.",
+    "ref": "Kalau weekend aku suka di rumah aja, sedangkan temanku suka jalan-jalan ke mal.",
+    "notes": [
+     "aja = saja（口语）。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "比较两家店：\"这家店便宜，而那家店质量更好。\""
+    ],
+    "kw": "toko ini · murah · sedangkan · toko itu · lebih bagus",
+    "skel": "Toko ini ____, ____ toko itu kualitasnya lebih ____.",
+    "ref": "Toko ini murah, sedangkan toko itu kualitasnya lebih bagus."
+   },
+   "final": {
+    "cn": "（说两位同事）\"Andi 喜欢在办公室吃午饭，而 Sari 更喜欢出去吃。\"",
+    "ref": "Andi suka makan siang di kantor, sedangkan Sari lebih suka makan di luar."
+   },
+   "remind": "A …, sedangkan B …：先说 A，加逗号和 sedangkan，再换主语说 B。"
+  },
+  {
+   "key": "arahkan-ke",
+   "name": "mengarahkan … ke …",
+   "head": "mengarahkan … ke … · 引导……去……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "例句",
+      "id": "Ketika beberapa penonton berjalan menuju gerbang selatan, panitia mengarahkan mereka ke gerbang utara.",
+      "cn": "几位观众走向南门时，主办人员把他们引导到了北门。"
+     }
+    ],
+    "ask": "这里 ke 后面接的是什么？",
+    "options": [
+     {
+      "t": "要去的地方",
+      "reply": [
+       "对。ke gerbang utara = 去北门。ke 后面是去处，也可以是抽象的目标。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "被引导的人",
+      "reply": [
+       "不是。被引导的人放在 mengarahkan 后面：mengarahkan mereka。ke 后面是去处。"
+      ]
+     },
+     {
+      "t": "引导的原因",
+      "reply": [
+       "不是。原因要用 karena。ke 后面是去处。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "结构：**mengarahkan + 谁／什么 + ke + 去处**。对象可以是人、车，也可以是注意力：{{mengarahkan perhatian ke layar}}（把注意力引向屏幕）。",
+    "公告里常用被动 {{diarahkan ke}}：{{Penonton diarahkan ke pintu timur.}}（观众请走东门。）"
+   ],
+   "simple": [
+    "[[mengarahkan X ke Y]] = 把 X 引向 Y（人、车、注意力都行）"
+   ],
+   "asks": [
+    {
+     "label": "主动和被动怎么用？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      "主动强调谁在引导：{{Panitia mengarahkan penonton ke pintu timur.}}（主办人员引导观众去东门。）",
+      "被动强调被引导的人，公告常用：{{Penonton diarahkan ke pintu timur.}}"
+     ]
+    },
+    {
+     "label": "词卡上的搭配",
+     "from": "formation",
+     "word": "mengarahkan"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Guru itu ___ murid-murid ___ halaman sekolah.]]",
+     "（老师把学生们引导到操场上。）"
+    ],
+    "options": [
+     {
+      "t": "mengarahkan … ke",
+      "v": "right",
+      "why": [
+       "对。引导到某处：mengarahkan + 人 + ke + 地方。"
+      ]
+     },
+     {
+      "t": "mengarahkan … di",
+      "v": "wrong",
+      "why": [
+       "di 表示在哪里。引导到某处要用 ke。"
+      ]
+     },
+     {
+      "t": "menunjukkan … ke",
+      "v": "wrong",
+      "why": [
+       "menunjukkan 是出示、指出，不是带人去某处。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。[[Polisi mengarahkan ___ ke jalan lain karena ada banjir.]]（因为淹水，警察把车辆引到别的路上。）"
+     ],
+     "options": [
+      {
+       "t": "kendaraan",
+       "v": "right",
+       "why": [
+        "对。mengarahkan 后面直接放被引导的对象：车辆 kendaraan。"
+       ]
+      },
+      {
+       "t": "ke kendaraan",
+       "v": "wrong",
+       "why": [
+        "对象前面不加 ke；ke 留给去处 jalan lain。"
+       ]
+      },
+      {
+       "t": "dengan kendaraan",
+       "v": "wrong",
+       "why": [
+        "dengan kendaraan 是“开车、用车”，这里需要的是被引导的对象。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "讲昨天吃饭：\"服务员把我们带到了靠窗的桌子。\""
+    ],
+    "kw": "pelayannya · mengarahkan kami · ke meja · dekat jendela",
+    "skel": "Pelayannya ____ kami ke meja ____ jendela.",
+    "ref": "Pelayannya mengarahkan kami ke meja dekat jendela."
+   },
+   "recall": {
+    "prompt": [
+     "说导航：\"地图软件把我们引到了一条小路上。\""
+    ],
+    "kw": "aplikasi peta · mengarahkan kami · ke jalan kecil",
+    "skel": "Aplikasi peta ____ kami ke jalan ____.",
+    "ref": "Aplikasi peta mengarahkan kami ke jalan kecil."
+   },
+   "final": {
+    "cn": "（说公司规定）\"新员工会被引导到人事部。\"",
+    "ref": "Staf baru akan diarahkan ke bagian HRD."
+   },
+   "remind": "mengarahkan + 对象 + ke + 去处；公告常用被动 diarahkan ke …。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "今晚另外两个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+  ],
+  "words": [
+   "menempel",
+   "mengetahui"
+  ]
+ },
+ "reading": [
+  {
+   "key": "peta",
+   "sentence": "Peta yang menunjukkan arah baru sudah menempel di papan dekat loket, tetapi belum semua penonton melihatnya.",
+   "cn": "标示新方向的地图已经贴在售票处附近的公告板上，但不是所有观众都看到了。",
+   "chunks": [
+    [
+     "Peta yang menunjukkan arah baru",
+     "标示新方向的地图",
+     "yang 引出说明：哪张地图？指示新方向的那张"
+    ],
+    [
+     "sudah menempel di papan dekat loket,",
+     "已经贴在售票处附近的板上",
+     "menempel di + 地方 = 贴在某处（说状态）"
+    ],
+    [
+     "tetapi belum semua penonton melihatnya.",
+     "但不是所有观众都看到了",
+     "belum semua = 还不是全部；-nya = 它（地图）"
+    ]
+   ],
+   "steal": [
+    "值得借的是 [[belum semua …]]：还不是所有……都……。{{Belum semua teman sudah datang.}}（朋友还没全到。）"
+   ]
+  }
+ ],
+ "dialogue": {
+  "head": "对话 · 你来演 Dewi",
+  "intro": [
+   "把今晚的词放回原对话。你演 Dewi，我演 Bayu。每一轮先看 Dewi 想说什么，看中文先说。"
+  ],
+  "turns": [
+   {
+    "line": 0,
+    "intent": "Dewi 到了门口，问 Bayu 为什么现在不能从南门进。",
+    "kw": "aku udah sampai · kok · nggak boleh masuk · gerbang selatan",
+    "skel": "Bay, aku ____ sampai. Kok sekarang ____ boleh masuk dari gerbang ____?",
+    "notes": [
+     "kok 表示意外，相当于“怎么……”。"
+    ]
+   },
+   {
+    "line": 4,
+    "intent": "Dewi 答应让 Bayu 带水，说怕错过第一首歌，约在舞台附近见。",
+    "kw": "boleh, makasih · takut nyesel · kelewatan lagu pertama · dekat panggung",
+    "skel": "Boleh, ____! Aku takut ____ kalau kelewatan lagu ____. Kita ketemu dekat ____, ya."
+   }
+  ],
+  "tail": [
+   "kok、udah、nggak、nyesel 都是朋友之间的口语；正式场合换成 kenapa、sudah、tidak、menyesal。"
+  ]
+ },
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今晚的改写题，缩短版）：公司门口贴了新通道的说明，可有位客人还硬要走旧通道。说两句：先说情况，再说你怎么处理。"
+   ],
+   "kw": "peta baru · sudah menempel · masih memaksa masuk · saya mengarahkan",
+   "skel": "Peta baru sudah ____ di dinding, tapi ada tamu yang masih ____ masuk lewat jalur lama. Saya ____ dia ke pintu yang benar.",
+   "ref": "Peta baru sudah menempel di dinding, tapi ada tamu yang masih memaksa masuk lewat jalur lama. Saya mengarahkan dia ke pintu yang benar.",
+   "notes": [
+    "整页的改写题有更完整的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
