@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-21",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 61
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-20T23:40:42.965Z",
-    "lesson_watermark": "2026-10-20 18:00",
-    "index_updated": "2026-10-20",
-    "runtime_hash": "fdac8dbb4f68ff1d61c0394cadefa8311dcfcb1276162c88eb3c8b4fe3658f24",
-    "index_hash": "0ba498c02f0ba11a2041dc718c5755091f184393212946c4a4cb82fc5169da6e",
+    "runtime_generated_at": "2026-10-21T01:53:01.810Z",
+    "lesson_watermark": "2026-10-21 08:00",
+    "index_updated": "2026-10-21",
+    "runtime_hash": "868dc233843b9e05d90fb23b01989c725ddbc5cefa6a9c1d57619269158e4a21",
+    "index_hash": "fa0a62afa2c16f424cda877413019c6f0b102b0b3401d4aa34c5ac161c1e306a",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -50,20 +50,8 @@
   "candidates": {
     "new_dont": [
       [
-        "menyegarkan",
-        "使清爽；使精神焕发"
-      ],
-      [
-        "paku",
-        "钉子"
-      ],
-      [
         "mengincar",
         "盯上；瞄准"
-      ],
-      [
-        "empuk",
-        "柔软的；软嫩的"
       ],
       [
         "lolos",
@@ -74,36 +62,8 @@
         "强迫"
       ],
       [
-        "perkirakan",
-        "估计；预计"
-      ],
-      [
         "hadiah utama",
         "大奖；头奖"
-      ],
-      [
-        "perpaduan",
-        "融合；结合"
-      ],
-      [
-        "nuansa",
-        "氛围；色彩；情调"
-      ],
-      [
-        "menyaksikan",
-        "观看；见证"
-      ],
-      [
-        "penampilan",
-        "表演；外观"
-      ],
-      [
-        "panggung",
-        "舞台"
-      ],
-      [
-        "konser",
-        "音乐会"
       ],
       [
         "golongan darah",
@@ -2070,16 +2030,6 @@
         "轻"
       ],
       [
-        "tegas",
-        2,
-        0,
-        "",
-        "2026-10-15T08:20:29.855Z",
-        "坚定",
-        "tegas",
-        "明确；坚定"
-      ],
-      [
         "berangkat",
         3,
         0,
@@ -2990,6 +2940,16 @@
         "服务；招待"
       ],
       [
+        "rekan kerja",
+        3,
+        0,
+        "",
+        "2026-10-15T08:10:54.398Z",
+        "同事；工作伙伴",
+        "rekan",
+        "伙伴；同伴"
+      ],
+      [
         "tergantung situasinya",
         5,
         0,
@@ -3088,6 +3048,106 @@
         "不忍心；狠不下心（口语）",
         "tega",
         "忍心；狠得下心"
+      ],
+      [
+        "menyegarkan",
+        2,
+        0,
+        "",
+        "",
+        "使清爽；使精神焕发",
+        "segar",
+        "清新；清爽"
+      ],
+      [
+        "paku",
+        2,
+        0,
+        "",
+        "",
+        "钉子",
+        "",
+        ""
+      ],
+      [
+        "empuk",
+        2,
+        0,
+        "",
+        "",
+        "软的；松软的；软嫩的",
+        "",
+        ""
+      ],
+      [
+        "perkirakan",
+        2,
+        0,
+        "",
+        "",
+        "估计一下；请预计（常见指令用法）",
+        "kira",
+        "猜测；估量"
+      ],
+      [
+        "perpaduan",
+        2,
+        0,
+        "",
+        "",
+        "融合；结合；搭配",
+        "padu",
+        "协调；融合"
+      ],
+      [
+        "nuansa",
+        2,
+        0,
+        "",
+        "",
+        "氛围；色彩；情调",
+        "",
+        ""
+      ],
+      [
+        "menyaksikan",
+        2,
+        0,
+        "",
+        "",
+        "观看；亲眼目睹；见证",
+        "saksi",
+        "证人；见证"
+      ],
+      [
+        "penampilan",
+        2,
+        0,
+        "",
+        "",
+        "表演；表现；外表",
+        "tampil",
+        "出现；登场；展示"
+      ],
+      [
+        "panggung",
+        2,
+        0,
+        "",
+        "",
+        "舞台；演出场地",
+        "",
+        ""
+      ],
+      [
+        "konser",
+        2,
+        0,
+        "",
+        "",
+        "音乐会；演唱会",
+        "",
+        ""
       ]
     ],
     "focus": [
@@ -3693,6 +3753,29 @@
         "keadaan",
         "memilah"
       ]
+    },
+    {
+      "date": "2026-10-21",
+      "session": "am",
+      "review_core": [
+        "menegaskan",
+        "tegas",
+        "komentar",
+        "mengenali",
+        "kelepasan"
+      ],
+      "new_words": [
+        "menyegarkan",
+        "paku",
+        "empuk",
+        "perkirakan",
+        "perpaduan",
+        "nuansa",
+        "menyaksikan",
+        "penampilan",
+        "panggung",
+        "konser"
+      ]
     }
   ],
   "previous_pm": {
@@ -3710,7 +3793,88 @@
       "pemasukan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-21",
+    "vocab": [
+      [
+        "menyegarkan",
+        "使清爽；使精神焕发",
+        "refresh; invigorate",
+        "segar",
+        "清新；清爽"
+      ],
+      [
+        "paku",
+        "钉子",
+        "nail",
+        "",
+        ""
+      ],
+      [
+        "empuk",
+        "软的；松软的；软嫩的",
+        "soft; tender",
+        "",
+        ""
+      ],
+      [
+        "perkirakan",
+        "估计一下；请预计（常见指令用法）",
+        "estimate; predict",
+        "kira",
+        "猜测；估量"
+      ],
+      [
+        "perpaduan",
+        "融合；结合；搭配",
+        "combination; blend",
+        "padu",
+        "协调；融合"
+      ],
+      [
+        "nuansa",
+        "氛围；色彩；情调",
+        "atmosphere; nuance",
+        "",
+        ""
+      ],
+      [
+        "menyaksikan",
+        "观看；亲眼目睹；见证",
+        "watch; witness",
+        "saksi",
+        "证人；见证"
+      ],
+      [
+        "penampilan",
+        "表演；表现；外表",
+        "performance; appearance",
+        "tampil",
+        "出现；登场；展示"
+      ],
+      [
+        "panggung",
+        "舞台；演出场地",
+        "stage",
+        "",
+        ""
+      ],
+      [
+        "konser",
+        "音乐会；演唱会",
+        "concert",
+        "",
+        ""
+      ]
+    ],
+    "review_vocab": [
+      "menegaskan",
+      "tegas",
+      "komentar",
+      "mengenali",
+      "kelepasan"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

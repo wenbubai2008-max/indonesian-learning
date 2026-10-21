@@ -8986,21 +8986,23 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-10-13 08:00",
+    "last_seen": "2026-10-21 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-11",
       "2026-10-04",
-      "2026-10-13"
+      "2026-10-13",
+      "2026-10-21"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
       "2026-10-04 08:00",
-      "2026-10-13 08:00"
+      "2026-10-13 08:00",
+      "2026-10-21 08:00"
     ]
   },
   {
@@ -11939,17 +11941,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-19 08:00",
+    "last_seen": "2026-10-21 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-19"
+      "2026-09-19",
+      "2026-10-21"
     ],
     "lesson_occurrences": [
-      "2026-09-19 08:00"
+      "2026-09-19 08:00",
+      "2026-10-21 08:00"
     ]
   },
   {
@@ -12077,9 +12081,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-19 18:00",
-    "last_seen": "2026-10-05 18:00",
+    "last_seen": "2026-10-21 08:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -12089,14 +12093,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-26",
       "2026-09-28",
       "2026-09-30",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-10-21"
     ],
     "lesson_occurrences": [
       "2026-09-19 18:00",
       "2026-09-26 18:00",
       "2026-09-28 08:00",
       "2026-09-30 18:00",
-      "2026-10-05 18:00"
+      "2026-10-05 18:00",
+      "2026-10-21 08:00"
     ]
   },
   {
@@ -21181,19 +21187,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "很多朋友在那张照片下留言评论。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-14 18:00",
-    "last_seen": "2026-10-14 18:00",
+    "last_seen": "2026-10-21 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-14"
+      "2026-10-14",
+      "2026-10-21"
     ],
     "lesson_occurrences": [
-      "2026-10-14 18:00"
+      "2026-10-14 18:00",
+      "2026-10-21 08:00"
     ]
   },
   {
@@ -21850,19 +21860,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "我差点没认出 Andi，因为他现在瘦了很多，还戴了眼镜。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-16 18:00",
-    "last_seen": "2026-10-16 18:00",
+    "last_seen": "2026-10-21 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-16"
+      "2026-10-16",
+      "2026-10-21"
     ],
     "lesson_occurrences": [
-      "2026-10-16 18:00"
+      "2026-10-16 18:00",
+      "2026-10-21 08:00"
     ]
   },
   {
@@ -23241,6 +23255,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-20 18:00"
+    ]
+  },
+  {
+    "word": "menyegarkan",
+    "cn": "使清爽；使精神焕发",
+    "en": "refresh; invigorate",
+    "root": "segar",
+    "root_cn": "清新；清爽",
+    "example": "Dewi menikmati es jeruk yang menyegarkan setelah konser selesai; ia akhirnya merasa lega.",
+    "example_cn": "音乐会结束后，德维喝着清爽的冰橙汁，终于松了口气。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 08:00"
+    ]
+  },
+  {
+    "word": "paku",
+    "cn": "钉子",
+    "en": "nail",
+    "root": "",
+    "root_cn": "",
+    "example": "Dewi melihat paku mencuat dari papan dekat panggung, lalu meminta petugas mencabutnya.",
+    "example_cn": "德维看见舞台旁一块木板上有钉子露出来，就请工作人员把它拔掉。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 08:00"
+    ]
+  },
+  {
+    "word": "empuk",
+    "cn": "软的；松软的；软嫩的",
+    "en": "soft; tender",
+    "root": "",
+    "root_cn": "",
+    "example": "Panitia menyediakan bantalan empuk untuk kursi penonton lanjut usia.",
+    "example_cn": "工作人员为年长观众的座椅准备了柔软的坐垫。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 08:00"
+    ]
+  },
+  {
+    "word": "perkirakan",
+    "cn": "估计一下；请预计（常见指令用法）",
+    "en": "estimate; predict",
+    "root": "kira",
+    "root_cn": "猜测；估量",
+    "example": "Coba perkirakan jumlah kursi yang dibutuhkan sebelum panitia menyewa kursi tambahan.",
+    "example_cn": "工作人员租更多椅子之前，先试着估计一下需要多少个座位。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 08:00"
+    ]
+  },
+  {
+    "word": "perpaduan",
+    "cn": "融合；结合；搭配",
+    "en": "combination; blend",
+    "root": "padu",
+    "root_cn": "协调；融合",
+    "example": "Perpaduan musik akustik dan lampu kuning memberi nuansa hangat pada panggung itu.",
+    "example_cn": "原声音乐和暖黄色灯光的组合，让舞台有了温馨的情调。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 08:00"
+    ]
+  },
+  {
+    "word": "nuansa",
+    "cn": "氛围；色彩；情调",
+    "en": "atmosphere; nuance",
+    "root": "",
+    "root_cn": "",
+    "example": "Saat lampu panggung mulai menyala, perpaduan musik akustik dan dekorasi batik memberi nuansa hangat.",
+    "example_cn": "舞台灯光亮起时，原声音乐与蜡染布装饰营造出了温馨的情调。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 08:00"
+    ]
+  },
+  {
+    "word": "menyaksikan",
+    "cn": "观看；亲眼目睹；见证",
+    "en": "watch; witness",
+    "root": "saksi",
+    "root_cn": "证人；见证",
+    "example": "Rina sengaja datang untuk menyaksikan temannya tampil di atas panggung.",
+    "example_cn": "丽娜特意赶来观看朋友在舞台上表演。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 08:00"
+    ]
+  },
+  {
+    "word": "penampilan",
+    "cn": "表演；表现；外表",
+    "en": "performance; appearance",
+    "root": "tampil",
+    "root_cn": "出现；登场；展示",
+    "example": "Penampilan pertama nyaris tertunda karena mikrofon belum siap; masalah itu menjadi tantangan bagi panitia.",
+    "example_cn": "第一场表演因麦克风没准备好差点延迟，主办方必须应对这一难题。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 08:00"
+    ]
+  },
+  {
+    "word": "panggung",
+    "cn": "舞台；演出场地",
+    "en": "stage",
+    "root": "",
+    "root_cn": "",
+    "example": "Petugas menyampaikan aturan keselamatan sebelum penyanyi naik ke panggung.",
+    "example_cn": "歌手登台前，工作人员传达了安全规定。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 08:00"
+    ]
+  },
+  {
+    "word": "konser",
+    "cn": "音乐会；演唱会",
+    "en": "concert",
+    "root": "",
+    "root_cn": "",
+    "example": "Panitia berjanji akan menyiapkan tempat duduk tepat waktu sebelum konser dimulai.",
+    "example_cn": "工作人员答应在音乐会开始前及时准备好座位。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-21 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-21"
+    ],
+    "lesson_occurrences": [
+      "2026-10-21 08:00"
     ]
   }
 ];
