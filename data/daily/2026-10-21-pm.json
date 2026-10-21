@@ -1,0 +1,352 @@
+{
+  "date": "2026-10-21",
+  "session": "pm",
+  "time": "18:00",
+  "day": 61,
+  "title": "18:00 晚课｜Pintu Masuk Konser Berubah · 音乐会入口临时调整",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "memaksa",
+    "menempel",
+    "mengetahui"
+  ],
+  "vocab": [
+    {
+      "word": "memaksa",
+      "display": "memaksa",
+      "audio_text": "memaksa",
+      "cn": "强迫；逼迫；硬要",
+      "en": "to force; to insist on",
+      "root": "paksa",
+      "root_cn": "强迫；强制",
+      "formation": "meN- + paksa → memaksa：词根 p 脱落，鼻音前缀变 mem-。同词根：paksa（词根；secara paksa＝强行地）、dipaksa（被逼）、terpaksa（不得不）、paksaan（强制）。典型搭配：memaksa orang lain（强迫别人）、memaksa masuk（硬闯）、memaksa seseorang pulang（逼某人回家）、jangan memaksa（别硬来）。",
+      "example": "Panitia menyampaikan aturan baru dan meminta penonton tidak memaksa masuk dari gerbang selatan karena gerbang itu hanya untuk keluar.",
+      "example_cn": "主办方传达了新规定，请观众不要硬从南门进去，因为南门只供出场使用。",
+      "synonym_note": "memaksa 可以是逼别人做事，也可以是自己硬要做：Dia memaksa temannya pulang（他逼朋友回家）；Dia memaksa masuk（他硬要进去）。terpaksa 则是自己迫于形势不得不做：Dia terpaksa pulang（他只好回家）。dipaksa 强调受到外力逼迫。口语说法：maksa（Jangan maksa masuk, ya. 别硬闯）；正式通知和书面说明使用 memaksa。",
+      "usage_note": "今晚新词；今天08:00学过 paksa（词根），今晚首次学习其主动动词 memaksa。用法① memaksa + 人 + 动词；② memaksa masuk / memaksa ikut（硬要进入/硬要参加）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menempel",
+      "display": "menempel",
+      "audio_text": "menempel",
+      "cn": "贴着；粘在；附着",
+      "en": "to stick; to be attached",
+      "root": "tempel",
+      "root_cn": "贴；粘",
+      "formation": "meN- + tempel → menempel：词根开头 t 脱落，形成 menempel。它通常描述东西“粘着、附着在某处”，结构：menempel di / pada + 地点。词族：menempelkan（把某物贴上去，及物）、ditempel（被贴上）、tempelan（贴上去的东西）。搭配：stiker menempel di kaca（贴纸粘在玻璃上）、debu menempel di meja（灰尘附着桌面）、poster masih menempel（海报还贴着）。",
+      "example": "Panitia menyediakan peta baru yang sekarang menempel di papan pengumuman dekat loket.",
+      "example_cn": "主办方提供了新地图，现在它贴在售票处附近的公告板上。",
+      "synonym_note": "注意区分“状态”和“动作”：Poster itu menempel di papan（海报贴在板上，描述状态）；Panitia menempelkan poster itu di papan（主办人员把海报贴到板上，描述动作）。ditempelkan 是“被贴上”，重点是动作的受事，并不等同于所有语境下的 menempel。口语说法：nempel（Posternya masih nempel, kok. 海报还贴着呢）；正式书写用 menempel。",
+      "usage_note": "今晚新词；menempel di/pada + 地点，主语通常是正在附着的东西。要说“某人把某物贴上去”，用 menempelkan + 物 + di/pada + 地点。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengetahui",
+      "display": "mengetahui",
+      "audio_text": "mengetahui",
+      "cn": "知道；获悉；了解到",
+      "en": "to know; to find out",
+      "root": "tahu",
+      "root_cn": "知道",
+      "formation": "词根 tahu（知道）→ mengetahui（知道、得知、查明某项信息），注意正确拼写 me-nge-ta-hu-i；不要错误写作 *mentahui。同词族：tahu（知道）、memberi tahu（通知）、pemberitahuan（通知）、pengetahuan（知识）、diketahui（已获知）。常见搭配：mengetahui alasan（了解原因）、mengetahui bahwa …（得知某事实）、ingin mengetahui hasilnya（想知道结果）、untuk mengetahui informasi terbaru（为了了解最新消息）。",
+      "example": "Sebelum membalas pesan temannya, Dewi ingin mengetahui alasan perubahan pintu masuk. Ia merasa lega setelah mendengar penjelasannya.",
+      "example_cn": "在回复朋友消息前，德维想先弄清楚入口变更的原因。听完解释后，她松了一口气。",
+      "synonym_note": "mengetahui 多用于得知或了解信息、事实；mengenal 更强调认识人、地方或熟悉事物：Saya mengetahui jadwalnya（我了解时间安排）；Saya mengenal temannya（我认识他的朋友）。menyadari 是“意识到”，不完全等同于“知道”。口语说法：tahu / tau（Aku baru tau pintunya pindah. 我刚知道入口换了）；邮件和公告可用 mengetahui。",
+      "usage_note": "今晚新词；在 runtime.oral_new_pool 中具备合法口语新词资格。学习目标为 mengetahui，聊天时可换成 tahu / tau；不得把“知道事实”和“认识某人”混用。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "sedangkan",
+      "display": "sedangkan",
+      "audio_text": "sedangkan",
+      "cn": "而；然而；相比之下（用于对照）",
+      "en": "whereas; while (contrast)",
+      "root": "sedang",
+      "root_cn": "正在；处于某种状态",
+      "formation": "词形关联 sedang，但 sedangkan 在现代印尼语中已固定为表示并列对照的连词，不应逐字理解成“正在＋-kan”。最实用句型：A …, sedangkan B …（A……，而B……）。适合对照两个人的选择、两条规定、两个地点的用途；不表示先后顺序。常见：yang satu …, sedangkan yang lain …。",
+      "example": "Rina memilih duduk dekat panggung, sedangkan Dewi lebih suka tempat yang tidak terlalu ramai.",
+      "example_cn": "丽娜选择坐在舞台附近，而德维更喜欢不那么拥挤的位置。",
+      "synonym_note": "sedangkan 对照并列事实；tetapi / tapi 通常强调转折或反预期；padahal 常带“其实……却……”的落差。例：Aku mau duduk di depan, sedangkan dia di belakang（单纯对照）；Aku sudah datang, tetapi pintunya tutup（发生转折）。口语说法：聊天常说 kalau … sih … 或 tapi，例如 Kalau aku sih mau di depan, dia di belakang；较正式的清楚对照用 sedangkan。",
+      "usage_note": "重点复习，当前真实错题压力较高（hard）；今晚要完成 A …, sedangkan B … 的主动输出，不能只记为“但是”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menerapkan",
+      "display": "menerapkan",
+      "audio_text": "menerapkan",
+      "cn": "实施；应用；执行（制度/办法）",
+      "en": "to implement; to apply",
+      "root": "terap",
+      "root_cn": "应用；落实（词根较少独立用）",
+      "formation": "meN- + terap + -kan → menerapkan：词根开头的 t 脱落，前缀表现为 men-，-kan 构成及物动词。名词：penerapan（实施）；被动：diterapkan（被实施）。常见搭配：menerapkan aturan（执行规则）、menerapkan sistem antrean（实行排队制度）、menerapkan strategi（实施策略）、menerapkan prosedur keamanan（执行安全流程）。",
+      "example": "Panitia menerapkan sistem antrean baru karena ada peningkatan jumlah penonton. Tantangan mereka adalah menjelaskan perubahan itu sebelum konser dimulai.",
+      "example_cn": "由于观众人数增加，主办方实行了新的排队制度。他们面临的挑战是在音乐会开始前把调整说明白。",
+      "synonym_note": "menerapkan 强调将规则、方法或制度落到实际；menggunakan 只是“使用”。公司可以 menerapkan sistem baru（推行新制度），但不能把它直接套在优惠价上；优惠价应改用 memberlakukan harga khusus，口语说 kasih harga khusus。口语说法：日常聊规定会说 panitia sekarang pakai aturan baru；工作汇报和正式说明用 menerapkan。",
+      "usage_note": "重点复习：宾语优先选 aturan / sistem / strategi / prosedur。把“制定规定”（membuat aturan）与“实际执行规定”（menerapkan aturan）区分开。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "arah",
+      "display": "arah",
+      "audio_text": "arah",
+      "cn": "方向；朝向；方位",
+      "en": "direction; orientation",
+      "root": "",
+      "root_cn": "",
+      "formation": "基本名词“方向”。搭配：petunjuk arah（指路标识）、arah masuk / arah keluar（进/出方向）、ke arah utara（往北边）、dari arah selatan（从南边）、salah arah（走错方向）、searah（同方向）。同词族：mengarahkan（引导）、diarahkan（被引导）、pengarahan（说明与引导）。",
+      "example": "Petunjuk arah yang lama masih mengarah ke gerbang selatan, sehingga panitia menggantinya dengan petunjuk baru yang lebih tepat.",
+      "example_cn": "旧的方向指示仍然指向南门，因此主办方换成了更准确的新指示牌。",
+      "synonym_note": "arah 指一个“方向”，jalan 指“路/道路”，rute 指整条“路线”；Ke arah mana?（往哪边？）和 Lewat mana?（走哪条路？）并不完全相同。mengarahkan 是“引导某人朝某方向”，而 menunjukkan arah 是“把方向指出来”，两者可以服务于同一目的但侧重点不同。口语问路常说 Lewat mana, ya?；正式指引可以说 ke arah …。",
+      "usage_note": "今晚同词根复习：arah（名词）↔ mengarahkan（及物动词）。说“方向牌”优先记 petunjuk arah，而不是机械翻译成“方向的牌”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengarahkan",
+      "display": "mengarahkan",
+      "audio_text": "mengarahkan",
+      "cn": "引导；指引；把……导向",
+      "en": "to direct; to guide",
+      "root": "arah",
+      "root_cn": "方向",
+      "formation": "meN- + arah + -kan → mengarahkan：词根以元音 a 开头，前缀采用 meng-，接 -kan 表示“使朝向”。常用格式：mengarahkan + 人/车辆/注意力 + ke + 地点/目标，如 mengarahkan penonton ke pintu utara（引导观众去北门）、mengarahkan perhatian ke layar（引导注意看屏幕）。同根：arah、diarahkan、pengarahan（指示说明；说明会）。",
+      "example": "Ketika beberapa penonton berjalan menuju gerbang selatan, panitia mengarahkan mereka ke gerbang utara.",
+      "example_cn": "几位观众走向南门时，主办人员把他们引导到了北门。",
+      "synonym_note": "mengarahkan 强调给出方向、让对方朝某目标走，不一定必须亲自陪同；menunjukkan 强调指出、展示信息。Panitia mengarahkan penonton ke gerbang utara（引导观众去北门）；Panitia menunjukkan peta kepada penonton（向观众出示地图）。口语说法：可说 nunjukin jalan（指出怎么走）或 nyuruh lewat sana（叫人走那边），但这两种说法不完全覆盖正式 mengarahkan 的意义。",
+      "usage_note": "与 arah 形成同词根训练；句型 mengarahkan + 对象 + ke + 地点，也能说 mengarahkan perhatian ke …（将注意力引向……）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menunjukkan",
+      "display": "menunjukkan",
+      "audio_text": "menunjukkan",
+      "cn": "显示；指出；拿给……看；表明",
+      "en": "to show; to indicate",
+      "root": "tunjuk",
+      "root_cn": "指；指示",
+      "formation": "meN- + tunjuk + -kan → menunjukkan：t 脱落，前缀 men-；注意双 k 来自 tunjuk 末尾 k + 后缀 -kan 的 k。词族：menunjuk（指着；指定）、petunjuk（提示；指示）、ditunjukkan（被展示）。高频搭配：menunjukkan tiket（出示票）、menunjukkan arah（指方向）、menunjukkan hasil（展示结果）、menunjukkan bahwa ...（表明……）。",
+      "example": "Panitia menunjukkan peta baru kepada Dewi seraya menjelaskan jalur masuk yang benar. Dewi sempat terkejut karena pintu masuknya berubah.",
+      "example_cn": "主办人员一边向德维出示新地图，一边解释正确的入场路线。德维起初有些惊讶，因为入口变了。",
+      "synonym_note": "menunjukkan 不仅可以“出示”，也能“指出/表明”：menunjukkan tiket（出示票）、menunjukkan jalan（指路）、hasilnya menunjukkan bahwa …（结果表明……）。menunjuk 是“用手指向/指定”；mengarahkan 更侧重引导方向或注意力，不是绝对不能与 menunjukkan 互换。口语说法：nunjukin（Coba nunjukin tiketnya. 请出示一下票）；正式说明用 menunjukkan。",
+      "usage_note": "累计答错较多，重点做“出示地图”与“引导人走向入口”的情境辨析。今晚不把其作用简单缩成“展示证据”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nuansa",
+      "display": "nuansa",
+      "audio_text": "nuansa",
+      "cn": "风格情调；某种氛围色彩",
+      "en": "nuance; atmosphere; tone",
+      "root": "",
+      "root_cn": "",
+      "formation": "今天早课的新词，今晚迁移到另一个语境。nuansa 常描写装修、灯光、作品带来的风格或情调。常用：nuansa hangat（温馨感）、nuansa klasik（复古格调）、nuansa Jawa（爪哇风情）、memberi nuansa baru（带来不同风格）、nuansa warna（颜色中的细微差别）。与表示人群是否热闹的 suasana 常有交集，但不能一概互换。",
+      "example": "Panitia menyalakan lampu kuning di sekitar panggung. Kain dengan motif batik di belakang penyanyi memberi nuansa Jawa.",
+      "example_cn": "主办方点亮舞台周围的黄色灯光。歌手身后的蜡染花纹布让舞台带有爪哇风情。",
+      "synonym_note": "nuansa 更侧重某种风格、色调或细微情调，suasana 更常指现场的整体氛围。nuansa Jawa（爪哇风格）、nuansa hangat（温馨感）、suasana ramai（现场热闹），并不是绝对不能互换。口语说法：描述坐在那里的感受时，更常说 Tempatnya nyaman / Suasananya enak banget；描述设计或文案时用 nuansa 很自然。",
+      "usage_note": "今天08:00新学，今晚是 application（应用复现），不是今晚新词。主动练习时改用咖啡店或工作空间场景。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menyaksikan",
+      "display": "menyaksikan",
+      "audio_text": "menyaksikan",
+      "cn": "观看；目睹；见证",
+      "en": "to watch; to witness",
+      "root": "saksi",
+      "root_cn": "证人；见证",
+      "formation": "meN- + saksi + -kan → menyaksikan：s 脱落，形成 meny-，派生出“观看或见证”的动词。高频搭配：menyaksikan konser（观看演唱会）、menyaksikan pertunjukan（观看表演）、menyaksikan langsung（现场亲眼看）、menyaksikan peristiwa（见证事件）。不要求一定站在现场：电视直播也可以 menyaksikan。",
+      "example": "Rina sudah membeli tiket. Rasanya rugi kalau pulang sebelum menyaksikan penampilan temannya, jadi ia memilih tetap di sana.",
+      "example_cn": "丽娜已经买了票，觉得看完朋友的表演前就离开有点亏，所以她选择留下来。",
+      "synonym_note": "menyaksikan 可以指观看比赛、演出、现场直播，也可以指亲眼见证某事；melihat 是更一般的“看到”；menonton / nonton 常用于娱乐活动。menyaksikan langsung 不一定意味着从头到尾看到结束，不能把它理解成“必须全程看完”。口语说法：nonton（Mau nonton bareng nggak? 一起看吗？）；报道、说明中用 menyaksikan。",
+      "usage_note": "今天08:00新学，今晚作为 application。核心是迁移：在写实描述里用 menyaksikan，在与朋友闲聊时常用 nonton，不要生硬地强行把书面词塞进朋友聊天。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sebelum konser kecil di taman kota dimulai, panitia mengetahui bahwa gerbang dekat panggung tidak cukup lebar untuk banyak penonton. Mereka menerapkan aturan baru: penonton masuk lewat gerbang utara, sedangkan gerbang selatan hanya untuk keluar. Peta yang menunjukkan arah baru sudah menempel di papan dekat loket, tetapi belum semua penonton melihatnya. Seorang pria tetap memaksa masuk dari gerbang selatan. Panitia kemudian mengarahkan pria itu ke gerbang utara sambil menjelaskan alasan perubahan aturan. Dewi juga sempat bingung sebelum melihat petunjuk tersebut. Setelah masuk, ia dapat menyaksikan temannya tampil di panggung. Musik dan lampu kuning memberi nuansa hangat. Antrean pun menjadi lebih tertib, dan acara dimulai sesuai jadwal.",
+    "cn": "公园里的小型音乐会开始前，主办方发现靠近舞台的大门不足以让大量观众通过。于是他们实行新规定：观众从北门进入，而南门只供离场使用。标示新入口方向的地图已经贴在售票处附近的公告板上，但不是所有观众都看到了。有位男子仍硬要从南门进去。主办方一边解释改规定的原因，一边把他引导到北门。德维一开始也没弄明白，直到看到指示牌。入场后，她终于能看到朋友在舞台上表演。音乐和暖黄色灯光营造出温馨的情调。排队渐渐变得有秩序，活动也按原定时间开始。"
+  },
+  "dialogue": {
+    "title": "Dewi 和 Bayu：南门怎么不能进了？",
+    "lines": [
+      {
+        "speaker": "Dewi",
+        "id": "Bay, aku udah sampai. Kok sekarang nggak boleh masuk dari gerbang selatan?",
+        "cn": "Bayu，我到了。怎么现在不让从南门进了？（udah = sudah，nggak = tidak）"
+      },
+      {
+        "speaker": "Bayu",
+        "id": "Masuknya dari utara sekarang. Lihat petunjuk yang nempel di papan dekat loket itu.",
+        "cn": "现在得从北边进。你看售票处附近公告板上贴着的指示牌。（nempel = menempel）"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Oh, pantes. Aku tadi gengsi mau nanya langsung. Untung kamu cepat balas chat-ku.",
+        "cn": "噢，难怪。我刚才还拉不下脸直接问。幸好你很快回了消息。（pantes = pantas，gengsi = 因面子不想开口，nanya = bertanya，balas = membalas）"
+      },
+      {
+        "speaker": "Bayu",
+        "id": "Santai aja. Aku udah di dalam. Mau aku bawain air minum pas kita ketemu?",
+        "cn": "别急。我已经在里面了。等咱们见面时，要我顺便给你带瓶水吗？（aja = saja，udah = sudah，bawain = membawakan）"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Boleh, makasih! Aku takut nyesel kalau kelewatan lagu pertama. Kita ketemu dekat panggung, ya.",
+        "cn": "好呀，谢谢！要是错过第一首歌我会后悔的。咱们在舞台附近见吧。（makasih = terima kasih，nyesel = menyesal，kelewatan = terlewat）"
+      },
+      {
+        "speaker": "Bayu",
+        "id": "Oke. Jangan maksa masuk dari pintu keluar, ya. Ikutin arahan panitia aja.",
+        "cn": "好。别硬从出口进啊。按主办方的指示走就行。（maksa = memaksa，ikutin = mengikuti，aja = saja）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "现场说明：一位客人不清楚为什么改入口。用 mengetahui、arah、mengarahkan 三词中的至少两个，用比较礼貌的语气写 2–3 句，告诉他哪里能查看信息、该往哪里走。不要照抄课文。",
+      "reference_answer": "Saya baru mengetahui perubahan itu dari panitia. Petunjuk arah ada di sebelah loket, dan panitia bisa mengarahkan Bapak ke gerbang utara. Kalau masih bingung, silakan bertanya langsung.",
+      "reference_cn": "我也是刚从主办人员那里得知这个变更。售票处旁边有方向指示牌，主办人员也可以引导您去北门。如果还不清楚，可以直接询问。"
+    },
+    {
+      "task": "工作场景：公司更改领货流程。请用 menerapkan、sedangkan、menunjukkan 至少两个词，写 2–3 句，比较旧做法和新规定，并解释这样做的理由。",
+      "reference_answer": "Atasan kami menerapkan sistem baru untuk mengambil barang. Dulu cukup menyebut nomor pesanan, sedangkan sekarang pelanggan harus menunjukkan invoice. Dengan demikian, risiko barang tertukar bisa berkurang meskipun awalnya ada tanggapan negatif.",
+      "reference_cn": "我们主管实行了新的领货制度。过去只要报订单号，现在领货人则必须出示发票。这样可以减少领错货的风险，尽管最初也有一些负面意见。"
+    },
+    {
+      "task": "早课延迟迁移：今天08:00新学了 nuansa 和 menyaksikan。这次不用音乐会场景，用这两个词写 2–3 句，描述一家咖啡店的风格和你在那里亲眼看到的一件事，再说一句评价。",
+      "reference_answer": "Kafe itu punya nuansa hangat karena cahaya lampunya lembut. Dari kursi dekat meja bar, saya menyaksikan barista menyiapkan kopi pesanan saya dengan teliti. Saya suka tempat itu karena baristanya sabar menjelaskan cara membuat kopi.",
+      "reference_cn": "那家咖啡店的灯光柔和，有一种温暖的情调。我从吧台附近的座位上，亲眼看着咖啡师仔细准备我点的咖啡。我喜欢那家店，因为咖啡师很耐心，还会解释咖啡的制作方法。"
+    },
+    {
+      "task": "真实工作表达：办公室已经张贴了新通道的说明，但仍有人坚持走旧通道。用 menempel、memaksa 至少两个词写 2–3 句；先说明状况，再解释具体障碍 kendala，最后礼貌地处理。",
+      "reference_answer": "Peta baru sudah menempel di dinding dekat pintu, tetapi seorang tamu masih memaksa masuk lewat jalur lama. Kendalanya, jalur itu sekarang dipakai untuk membawa barang. Saya menjelaskan situasinya dengan sopan lalu mengarahkan tamu itu ke pintu yang benar.",
+      "reference_cn": "新地图已经贴在门旁的墙上，但有位客人仍硬要从旧通道进来。问题是，那条通道如今用来搬运货物。我礼貌地说明情况，然后引导这位客人走向正确的入口。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "哪一组选句准确区分“海报正贴在板上”和“工作人员把海报贴上去”？（先描述状态，后描述动作）",
+        "options": [
+          "Poster itu sudah ditempelkan di papan. / Panitia menempelkan poster itu di papan.",
+          "Poster itu menempel di papan. / Panitia menempelkan poster itu di papan.",
+          "Poster itu menempel di papan. / Panitia menempel poster itu di papan.",
+          "Panitia menempelkan poster itu di papan. / Poster itu menempel di papan."
+        ],
+        "answer_index": 1,
+        "answer": "Poster itu menempel di papan. / Panitia menempelkan poster itu di papan.",
+        "explain": "状态用 Poster itu menempel di papan；执行动作用 Panitia menempelkan poster itu di papan。A 的 ditempelkan 侧重“被贴上”这一动作的受事，并非直接强调附着状态；D 的两句都是对的，但把题目要求的状态—动作顺序倒过来了；C 错把不及物 menempel 当及物动词使用。"
+      },
+      {
+        "type": "choice",
+        "prompt": "在比较同一场所两个入口的不同用途时，选最能表达“而另一边则……”的连词：Gerbang utara dipakai untuk masuk, ___ gerbang selatan hanya untuk keluar.",
+        "options": [
+          "padahal",
+          "kemudian",
+          "sedangkan",
+          "meskipun"
+        ],
+        "answer_index": 2,
+        "answer": "sedangkan",
+        "explain": "sedangkan 用于两个事实的并列对照。padahal 强调与预期不符（明明……却……）；meskipun 是“尽管”（通常需要另一个分句）；kemudian 是时间顺序“然后”。但 sedangkan 与 tetapi/ sementara 在某些其他句子中确实可能部分重叠，不能死记为绝对互斥。"
+      },
+      {
+        "type": "choice",
+        "prompt": "主办方不仅要向观众出示地图，还要引导他们走向北门。选最符合动作要求的词：Panitia perlu ___ penonton ke gerbang utara.",
+        "options": [
+          "menunjukkan",
+          "menunjuk",
+          "mengarah",
+          "mengarahkan"
+        ],
+        "answer_index": 3,
+        "answer": "mengarahkan",
+        "explain": "mengarahkan + 人 + ke + 地点，表示引导观众朝北门走。menunjukkan 也能 menunjukkan arah（指出方向），但此处直接接 penonton ke gerbang utara 表达的是引导观众；menunjuk 是指向/指定，mengarah 通常是不及物的“朝向”。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Perusahaan mulai ______ sistem baru untuk menerima barang.（实施一套新制度）",
+        "answer": "menerapkan",
+        "explain": "menerapkan sistem/aturan/strategi = 真正推行制度、规则、策略；membuat aturan 只是制定规则，不等于已实施。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Walaupun gerbang selatan hanya untuk keluar, seorang penonton tetap ______ masuk dari sana.（硬要进入）",
+        "answer": "memaksa",
+        "explain": "memaksa masuk 是自己硬要闯进去；terpaksa masuk 是受情况所迫、不得不进去。朋友聊天可说 maksa masuk。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：主办人员把观众引导到了北门。",
+        "tokens": [
+          "Panitia",
+          "mengarahkan",
+          "penonton",
+          "ke",
+          "gerbang",
+          "utara."
+        ],
+        "answer": "Panitia mengarahkan penonton ke gerbang utara.",
+        "answer_cn": "主办人员把观众引导到了北门。",
+        "explain": "Panitia（主语）+ mengarahkan（动作）+ penonton（对象）+ ke gerbang utara（目标地点）。与 arah（方向名词）、menunjukkan peta（出示地图）区别开。"
+      }
+    ],
+    "self_check": [
+      "不看中文提示：memaksa、menempel、mengetahui 这三个新词，我是否能在 3 秒内辨认意思？哪一个容易想错？",
+      "遇到 menempel / menempelkan、memaksa / terpaksa、mengetahui / mengenal 这三组形式，我是否一眼能分辨含义和基本句法？",
+      "对于 sedangkan、menerapkan、arah、mengarahkan、menunjukkan，我能否仅看印尼语就快速理解其用法，并判断有没有卡住的词？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘（主动输出，不重复自检）",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出就回看词卡，再合上词卡说一遍。不要把全部核心词机械重读。",
+      "同根输出：先用 arah 说一个真实的方向，再用 mengarahkan 说某人怎样引导别人；最后用 menunjukkan 造一句“向顾客出示信息”的句子，比较三个词的宾语和用法。",
+      "连词与动词输出：用 A …, sedangkan B … 对比两个真实生活习惯；再用 menerapkan 说明公司正在推行的一项规则。避免把对照误当成“随后”。",
+      "早课迁移：描述你去过的餐厅或咖啡店的 nuansa；用规范的 menyaksikan 描述一次亲眼看到的事件，再试着改用更口语的 nonton 讲看演出。",
+      "30 秒脱稿复述：为什么换入口，哪个门进哪个门出，为什么有人走错？用 memaksa、menempel、mengarahkan 中至少两个词串成因果清楚的叙述。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "memaksa",
+      "sedangkan",
+      "mengarahkan"
+    ],
+    "patterns": [
+      {
+        "pattern": "A …, sedangkan B …",
+        "cn": "A 是……，而 B 则……（对比用途、立场或情况）",
+        "example": "Rina memilih duduk dekat panggung, sedangkan Dewi lebih suka tempat yang tidak terlalu ramai.",
+        "example_cn": "丽娜选择坐在舞台附近，而德维更喜欢不那么拥挤的位置。"
+      },
+      {
+        "pattern": "mengarahkan … ke …",
+        "cn": "引导……去……",
+        "example": "Ketika beberapa penonton berjalan menuju gerbang selatan, panitia mengarahkan mereka ke gerbang utara.",
+        "example_cn": "几位观众走向南门时，主办人员把他们引导到了北门。"
+      }
+    ]
+  }
+}
