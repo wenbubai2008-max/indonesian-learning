@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T03:40:41.381Z",
+  "generated_at": "2026-10-21T09:40:56.173Z",
   "lesson_watermark": "2026-10-21 18:00",
   "master_unique": 977,
   "primary_new_pool_total": 141,
@@ -15,7 +15,7 @@
     "switched_at": ""
   },
   "weak_active_total": 1451,
-  "weak_mastered_total": 977,
+  "weak_mastered_total": 978,
   "daily_taught_unique": 877,
   "primary_taught_unique": 506,
   "primary_unlearned_total": 471,
@@ -24,8 +24,8 @@
   "new_pool_fuzzy_total": 141,
   "new_pool_unclassified_total": 0,
   "review_pool_total": 602,
-  "focus_pool_total": 586,
-  "listening_focus_pool_total": 1,
+  "focus_pool_total": 587,
+  "listening_focus_pool_total": 7,
   "oral_new_pool_total": 9,
   "rules": {
     "new_pool": "combined legal pool; primary first; when primary has 1-9 legal words, expose them first and top up from secondary; split views new_pool_dont/new_pool_fuzzy preserve the same handoff eligibility",

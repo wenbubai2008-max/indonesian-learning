@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generated_at": "2026-10-21T03:40:41.512Z",
-  "source_updated_at": "2026-10-21T03:34:42.991Z",
+  "generated_at": "2026-10-21T09:40:56.342Z",
+  "source_updated_at": "2026-10-21T06:54:19.319Z",
   "taught_total": 877,
-  "confirmed_mastered": 228,
+  "confirmed_mastered": 229,
   "needs_reinforcement": 602,
-  "unverified": 47,
-  "mastery_percent": 26,
+  "unverified": 46,
+  "mastery_percent": 26.1,
   "primary_master_total": 977,
   "primary_taught_unique": 506,
   "primary_unlearned_total": 471,
   "primary_coverage_percent": 51.8,
   "primary_eligible_new_total": 141,
-  "focus_total": 586,
+  "focus_total": 587,
   "focus_words": [
     {
       "word": "seolah-olah",
@@ -37,7 +37,7 @@
       ],
       "wrong_count": 3,
       "last_wrong": "2026-10-17T14:22:18.757Z",
-      "last_review": "2026-10-19T05:46:43.242Z",
+      "last_review": "2026-10-21T05:54:00.000Z",
       "cn": "遵守；服从"
     },
     {
