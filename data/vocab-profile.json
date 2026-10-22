@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-10-22T00:31:51.672Z",
-  "source_updated_at": "2026-10-21T06:54:19.319Z",
+  "generated_at": "2026-10-22T03:41:04.120Z",
+  "source_updated_at": "2026-10-22T01:58:52.645Z",
   "taught_total": 887,
   "confirmed_mastered": 229,
   "needs_reinforcement": 612,
@@ -14,6 +14,19 @@
   "primary_eligible_new_total": 141,
   "focus_total": 597,
   "focus_words": [
+    {
+      "word": "menerapkan",
+      "score": 106,
+      "signals": [
+        "quick_wrong",
+        "lesson_wrong",
+        "dont"
+      ],
+      "wrong_count": 3,
+      "last_wrong": "2026-10-22T01:57:32.245Z",
+      "last_review": "2026-10-22T01:57:32.245Z",
+      "cn": "应用；实施；推行"
+    },
     {
       "word": "seolah-olah",
       "score": 106,
@@ -39,19 +52,6 @@
       "last_wrong": "2026-10-17T14:22:18.757Z",
       "last_review": "2026-10-21T05:54:00.000Z",
       "cn": "遵守；服从"
-    },
-    {
-      "word": "menerapkan",
-      "score": 104,
-      "signals": [
-        "quick_wrong",
-        "lesson_wrong",
-        "dont"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-10-19T06:00:03.825Z",
-      "last_review": "2026-10-20T07:30:57.847Z",
-      "cn": "应用；实施；推行"
     },
     {
       "word": "menunjukkan",
