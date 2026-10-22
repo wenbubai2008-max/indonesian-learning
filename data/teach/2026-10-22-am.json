@@ -213,7 +213,7 @@
                 ]
               ]
             },
-            "记法：有“下一轮”的用 lolos；拿到成绩、文凭的用 lulus。"
+            "记法：有“下一轮”的多用 lolos；拿到成绩、文凭的用 lulus。选拔、审核场合两个都能说：lolos seleksi / lulus seleksi。"
           ]
         },
         {
@@ -262,9 +262,9 @@
             },
             {
               "t": "lulus",
-              "v": "wrong",
+              "v": "ok",
               "why": [
-                "lulus 用于考试及格、毕业；筛选过关固定说 lolos seleksi。"
+                "也可以。正式公告里常写 dinyatakan lulus seleksi（通过审核）；说过关、进下一轮，日常更常用 lolos。"
               ]
             },
             {
@@ -300,7 +300,7 @@
         "cn": "“她的作品通过了选拔。”",
         "ref": "Karyanya lolos seleksi."
       },
-      "remind": "lolos = 比赛、选拔过关（lolos ke final、lolos seleksi）；毕业、及格用 lulus。"
+      "remind": "lolos = 过关、晋级、逃脱（lolos ke final）；毕业、及格用 lulus；选拔审核两个都能用（lolos / lulus seleksi）。"
     },
     {
       "key": "berlaku",
