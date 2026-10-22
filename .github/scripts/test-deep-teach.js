@@ -23,6 +23,7 @@ broken('MARKUP',t=>{t.intro.push('{{tidak ditutup')});
 broken('ITEM_MISSING',t=>{t.items.pop()});
 // 2026-10-21 daily generation: length ceilings and the combined check the release job runs.
 broken('TEACH_TOO_LONG',t=>{t.items[0].explain[0]+='x'.repeat(30000)});
+broken('TEACH_JARGON',t=>{t.items[0].remind+='（runtime.review_pool）'});
 broken('SCENE_OPTIONS',t=>{const o=t.items[0].scene.options;o.push({t:'选项四',reply:['不是。']})});
 test('check-teach: both pilots pass validator and page shape; an empty file fails both',()=>{
  const {checkTeach}=require('./check-teach');

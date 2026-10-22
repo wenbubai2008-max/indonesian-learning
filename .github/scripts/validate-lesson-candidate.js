@@ -26,7 +26,13 @@ function collectReviewHistory(index,targetDate,targetSession,load){
 // 2026-10-18 (user decision): every lesson from this date carries lesson_focus — 3 of the lesson's own words and 2
 // sentence patterns whose example is taken word for word from the lesson. Earlier lessons may lack it (optional there).
 const FOCUS_REQUIRED_FROM="2026-10-18 18:00"; // first required lesson (that morning was already published)
-const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm,reviewHistory,focusRequiredFrom}) {
+// 2026-10-22 (user review, LESSON-QUALITY 7d): learner-facing text must not carry the generator's internal vocabulary
+// (the 10-21 PM showed "runtime.oral_new_pool", "（hard）", "application" in usage notes). Field values only; the
+// English gloss (en) and structural fields are not checked. Applies to lessons dated from JARGON_FROM.
+const JARGON_FROM="2026-10-23";
+const JARGON=/runtime|\b[a-z]+_pool\b|source_group|is_oral_new|\bis_new\b|exposure_ledger|natural_recurrence|review_cycle|cycle_vocab|review_vocab|lesson_focus|validator|（hard）|\(hard\)|hard\s*词|hard=|\bapplication\b/i;
+const JARGON_SKIP=new Set(["en","source_group","session","write_status","date","time","day","group"]);
+const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm,reviewHistory,focusRequiredFrom,jargonFrom}) {
   const errors=[], add=(code,detail)=>errors.push({code,detail});
   const check=(c,code,detail)=>{if(!c)add(code,detail);return !!c};
   const has=(o,k)=>Object.prototype.hasOwnProperty.call(o||{},k);
@@ -221,6 +227,14 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
       fp.filter(p=>p&&str(p.example)).forEach(p=>check(texts.includes(norm(p.example)),"LESSON_FOCUS_PATTERN","pattern example must be copied from this lesson: "+p.example));
     }
   }
+  if(String(date||"")>=(jargonFrom||JARGON_FROM)){
+    const seen=[];
+    const walk=(o,at)=>{if(typeof o==="string"){const m=o.match(JARGON);if(m)seen.push(at+": "+m[0]);}
+      else if(Array.isArray(o))o.forEach((x,i)=>walk(x,at+"["+i+"]"));
+      else if(o&&typeof o==="object")Object.keys(o).forEach(k=>{if(!JARGON_SKIP.has(k))walk(o[k],at?at+"."+k:k)});};
+    walk(lesson,"");
+    check(!seen.length,"LEARNER_JARGON","internal system words in learner-facing text (write it for the learner): "+seen.slice(0,5).join("; "));
+  }
   // Enforce new review rotation only for unpublished lessons on/after its effective date.
   const rotation=rules.review_rotation;
   if(rotation&&rotation.enabled===true&&date>=(rotation.effective_date||'2026-09-28')){
@@ -257,4 +271,4 @@ function cli(argv){const a={};for(let i=0;i<argv.length;i++){if(!argv[i].startsW
 function read(f){return JSON.parse(fs.readFileSync(path.resolve(process.cwd(),f),'utf8'))}
 function optional(f){return fs.existsSync(path.resolve(process.cwd(),f))?read(f):null}
 if(require.main===module){try{const a=cli(process.argv.slice(2));if(!a.candidate||!a.date||!a.session)throw Error('--candidate, --date, --session required');const date=a.date;const prev=new Date(Date.parse(date+'T00:00:00Z')-86400000).toISOString().slice(0,10);const lesson=read(a.candidate),index=read(a.index||'data/daily/index.json'),runtime=read(a.runtime||'data/learning-runtime.json'),rules=read(a.rules||'data/learning-pool-rules.json');const result=validate({lesson,index,runtime,rules,expectedDate:date,expectedSession:a.session,sameDayAm:optional(a['same-day-am']||'data/daily/'+date+'-am.json'),previousPm:optional(a['previous-pm']||'data/daily/'+prev+'-pm.json'),reviewHistory:collectReviewHistory(index,date,a.session,p=>read(p))});result.baselineFingerprint=crypto.createHash('sha256').update(JSON.stringify({index,runtime,rules})).digest('hex');console.log(JSON.stringify(result,null,2));process.exitCode=result.ok?0:1}catch(e){console.error(JSON.stringify({ok:false,errors:[{code:'VALIDATOR_INPUT_ERROR',detail:e.message}]}));process.exitCode=2}}
-module.exports={validate,collectReviewHistory,FOCUS_REQUIRED_FROM};
+module.exports={validate,collectReviewHistory,FOCUS_REQUIRED_FROM,JARGON_FROM};

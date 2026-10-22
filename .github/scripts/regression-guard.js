@@ -769,6 +769,10 @@ try {
     const dtDoc=fs.existsSync(rel('docs/tasks/DEEP-TEACH.md'))?read('docs/tasks/DEEP-TEACH.md'):'';
     okNew(['teach-D-am','AUTO_PUBLISH_TEACH=1','check-teach.js','shape_ok','不得影响','08:15','18:30','lesson_focus'].every(m=>dtDoc.includes(m))&&read('docs/tasks/COMMON.md').includes('docs/tasks/DEEP-TEACH.md')&&read('docs/tasks/AM-LESSON.md').includes('docs/tasks/DEEP-TEACH.md')&&read('docs/tasks/PM-LESSON.md').includes('docs/tasks/DEEP-TEACH.md'),'deep-teach runbook exists and both lesson runbooks call it after the lesson PR');
     okNew(read('docs/LESSON-QUALITY.md').includes('晚课换场景'),'LESSON-QUALITY keeps the PM different-scene rule');
+    // §37 (2026-10-22 review): natural reading, non-absolute contrasts, quiz stems without the answer's Chinese, no system words.
+    const lq=read('docs/LESSON-QUALITY.md'),vlc=read('.github/scripts/validate-lesson-candidate.js');
+    okNew(['只把自然放得进去的词写进阅读','情节合理性检查','近义辨析不绝对化','题干不给答案的中文','至少 1 道是完整情境判断','不让系统用语出现在课程里'].every(m=>lq.includes(m)),'LESSON-QUALITY keeps the 2026-10-22 review rules');
+    okNew(vlc.includes('"LEARNER_JARGON"')&&vlc.includes('const JARGON_FROM="2026-10-23"')&&read('.github/scripts/validate-teach.js').includes('TEACH_JARGON'),'validators refuse internal system words in lessons (from 2026-10-23) and deep-teach files');
   }
 
 } catch (e) {

@@ -17,6 +17,9 @@ const F=L.lesson_focus;if(!F){E('FOCUS_MISSING','lesson has no lesson_focus');}
 function markup(where,s){if(typeof s!=='string')return;const c=(a,b)=>(s.split(a).length-1)!==(s.split(b).length-1);if(c('{{','}}')||c('[[',']]')||(s.split('**').length-1)%2)E('MARKUP',where+': unbalanced {{ }} / [[ ]] / **')}
 function walk(where,o){if(typeof o==='string')return markup(where,o);if(Array.isArray(o))return o.forEach((x,i)=>walk(where+'['+i+']',x));if(o&&typeof o==='object')for(const k in o)walk(where+'.'+k,o[k])}
 walk('teach',T);
+// 2026-10-22: no generator-internal words in what the learner reads (LESSON-QUALITY 7d).
+(function jargon(o,at){if(typeof o==='string'){const m=o.match(/runtime|\b[a-z]+_pool\b|source_group|is_oral_new|lesson_focus|validator|（hard）|\(hard\)|hard\s*词|\bapplication\b/i);if(m)E('TEACH_JARGON',at+': '+m[0]);}
+  else if(Array.isArray(o))o.forEach((x,i)=>jargon(x,at+'['+i+']'));else if(o&&typeof o==='object')for(const k in o)jargon(o[k],at+'.'+k)})(T,'teach');
 function checkQ(where,q,required){
   if(!q){if(required)E('CHECK_MISSING',where);return}
   if(!q.q||!q.options||q.options.length<2||q.options.length>4)return E('CHECK_INVALID',where+': needs q and 2–4 options');

@@ -30,6 +30,14 @@ const runTests=function runTests(validate){
   {const x=AM();x.lesson.lesson_focus=fAM(x);x.lesson.lesson_focus.patterns[0].example="Kalimat ini tidak ada di pelajaran.";bad("pattern example must be copied from the lesson",x,"LESSON_FOCUS_PATTERN");}
   {const x=AM();x.lesson.lesson_focus=fAM(x);x.lesson.lesson_focus.words.pop();bad("exactly 3 focus words",x,"LESSON_FOCUS_INVALID");}
   {const x=PM();x.lesson.lesson_focus=fPM(x);x.lesson.lesson_focus.patterns.pop();bad("exactly 2 patterns",x,"LESSON_FOCUS_INVALID");}}
+ // 2026-10-22: internal system words must not reach the learner (LESSON-QUALITY 7d), from JARGON_FROM.
+ {const j=x=>{x.jargonFrom=x.expectedDate;return x};
+  ok("AM and PM fixtures have no system words",j(AM()));ok("PM fixture has no system words (application stays a group value)",j(PM()));
+  {const x=j(PM());x.lesson.vocab[0].usage_note="在 runtime.oral_new_pool 中具备合法口语新词资格";bad("runtime/pool wording in a word card is refused",x,"LEARNER_JARGON");}
+  {const x=j(PM());x.lesson.vocab[0].usage_note="重点复习，当前真实错题压力较高（hard）";bad("(hard) label is refused",x,"LEARNER_JARGON");}
+  {const x=j(AM());x.lesson.review=[x.lesson.review[0],"复习 application 词",x.lesson.review[2]];bad("application as a group name is refused",x,"LEARNER_JARGON");}
+  {const x=j(AM());x.lesson.vocab[0].en="application; use";ok("the English gloss may say application",x);}
+  {const x=AM();x.lesson.vocab[0].usage_note="runtime";ok("lessons before the cutoff are not re-judged",x);}}
  // 2026-10-16: optional review_cards.
  {const cards=()=>({recall:[0,1,2,3].map(i=>({cn:"中文"+i,id:"new"+i})),frames:["Saya … hari ini."],contrasts:[{items:[{id:"new0",cn:"甲"},{id:"rev0",cn:"乙"}],note:"区别"}],apply:[{word:"rev0",usage:"用法",examples:[{id:"Saya pakai rev0.",cn:"我用。"}]}]});
   const x=AM();x.lesson.review_cards=cards();ok("AM with review_cards",x);
