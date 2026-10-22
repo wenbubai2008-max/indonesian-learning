@@ -1,0 +1,828 @@
+{
+ "version": 1,
+ "title": "晚课深讲 · 10月22日",
+ "intro": [
+  "今晚的课叫《预告片比电影还精彩》。Nadia 用公司抽奖得的电影券，带弟弟 Raka 看了一部科幻片：预告片超精彩，电影却又长又闷，Raka 还抱怨每次都是姐姐选片。",
+  "今晚只讲 5 样：[[seolah-olah]] · [[tidak adil]] · [[usah]] · [[Aku usahakan …]] · [[… lebih … daripada yang … perkirakan]]"
+ ],
+ "items": [
+  {
+   "key": "seolah",
+   "name": "seolah-olah",
+   "head": "seolah-olah · 仿佛；好像（其实不是）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Dari trailernya, film itu seolah-olah penuh aksi.",
+      "cn": "看预告片，这部电影好像全是动作场面。"
+     }
+    ],
+    "ask": "后来他们发现最精彩的镜头全在预告片里。这里的 seolah-olah 暗示了什么？",
+    "options": [
+     {
+      "t": "看起来像动作片，其实不是",
+      "reply": [
+       "对。seolah-olah 多半在说“看起来像，其实不是”，后文马上揭了底。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "电影确实全是动作戏",
+      "reply": [
+       "不是。seolah-olah 只说“看起来像”；后面说精彩镜头全在预告片里，说明并不是。"
+      ]
+     },
+     {
+      "t": "他们希望电影是动作片",
+      "reply": [
+       "不是。“希望”是 berharap。seolah-olah 说的是预告片给人的印象。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{seolah-olah}} = 仿佛、好像（多半其实不是）。后面接一整句，常接着用 {{padahal}} 说出真相：{{Dia diam seolah-olah nggak dengar, padahal dia dengar.}}",
+    "和 {{seperti}} 的区别：seperti 后面可以直接接名词（{{seperti ibunya}}）；seolah-olah 后面一般是一整句。{{seakan-akan}} 意思基本一样，可以互换。口语常说 {{kayak}}。"
+   ],
+   "simple": [
+    "[[seolah-olah]] + 一整句 = 好像……（其实不是），常配 padahal"
+   ],
+   "asks": [
+    {
+     "label": "seolah-olah 和 seperti 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Dia seperti ibunya.",
+         "他像他妈妈（接名词）"
+        ],
+        [
+         "Dia diam seolah-olah nggak dengar.",
+         "他不吭声，好像没听见（接整句）"
+        ],
+        [
+         "…, padahal dia dengar.",
+         "……其实他听见了（说出真相）"
+        ]
+       ]
+      },
+      "看后面：是一个名词就用 seperti；是一整句、而且其实不是那样，就用 seolah-olah。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Bosku bicara ___ semua masalah sudah beres, padahal belum.]]",
+     "（老板说话的样子好像问题都解决了，其实还没有。）"
+    ],
+    "options": [
+     {
+      "t": "seolah-olah",
+      "v": "right",
+      "why": [
+       "对。后面是一整句，又用 padahal 说出真相：seolah-olah。"
+      ]
+     },
+     {
+      "t": "seakan-akan",
+      "v": "ok",
+      "why": [
+       "也可以。seakan-akan 和 seolah-olah 基本同义，书面、口语都用。"
+      ]
+     },
+     {
+      "t": "sehingga",
+      "v": "wrong",
+      "why": [
+       "sehingga 是“以至于”，表示结果。老板这样说话并不会让问题解决，因果不成立。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。哪一句用 seolah-olah 最自然？"
+     ],
+     "options": [
+      {
+       "t": "Dia ketawa seolah-olah nggak ada masalah, padahal dia lagi pusing.",
+       "v": "right",
+       "why": [
+        "对。表面上笑得像没事，padahal 说出真相。"
+       ]
+      },
+      {
+       "t": "Dia seolah-olah ibunya.",
+       "v": "wrong",
+       "why": [
+        "后面只有名词“他妈妈”，说“像”用 seperti：Dia seperti ibunya。"
+       ]
+      },
+      {
+       "t": "Aku lapar seolah-olah aku makan.",
+       "v": "wrong",
+       "why": [
+        "意思不通：饿和“好像在吃饭”之间没有“看起来像”的关系。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "同事明明很累，却装作没事。你跟别人说：“他表现得好像不累，其实他昨晚加班了。”先说出声，再点按钮。"
+    ],
+    "kw": "santai aja · seolah-olah · nggak capek · padahal · lembur",
+    "skel": "Dia santai ____ seolah-olah nggak ____, padahal semalam dia ____.",
+    "ref": "Dia santai aja seolah-olah nggak capek, padahal semalam dia lembur.",
+    "notes": [
+     "aja = saja，nggak = tidak，capek = lelah（口语）。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "孩子打碎了杯子，却装作什么都没发生。你跟家人说：“我儿子不吭声，好像什么事都没有，其实杯子碎了。”"
+    ],
+    "kw": "diam aja · seolah-olah · nggak terjadi apa-apa · padahal",
+    "skel": "Anakku diam ____ seolah-olah nggak terjadi ____, padahal gelasnya ____.",
+    "ref": "Anakku diam aja seolah-olah nggak terjadi apa-apa, padahal gelasnya pecah."
+   },
+   "final": {
+    "cn": "（说一个司机）“他开车的样子，好像这条路是他自己的。”",
+    "ref": "Dia nyetir seolah-olah jalan ini punya dia sendiri."
+   },
+   "remind": "seolah-olah + 一整句 = 好像……（其实不是）；常接 padahal 说真相；接名词用 seperti；口语 kayak。"
+  },
+  {
+   "key": "adil",
+   "name": "tidak adil",
+   "head": "tidak adil · 不公平",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Raka",
+      "id": "Pokoknya nggak adil. Tiap kali nonton, Kakak terus yang milih judulnya.",
+      "cn": "反正就是不公平。每次看电影都是姐你选片。"
+     }
+    ],
+    "ask": "Raka 为什么说 nggak adil？",
+    "options": [
+     {
+      "t": "每次都是姐姐选片，他没机会选",
+      "reply": [
+       "对。安排不公平：机会总在一个人手里。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "姐姐看电影时耍赖作弊",
+      "reply": [
+       "不是。故意耍赖、作弊是 curang；这里没人作弊，只是安排不公平。"
+      ]
+     },
+     {
+      "t": "电影票太贵了",
+      "reply": [
+       "不是。他抱怨的是谁来选片，票是公司发的券。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{tidak adil}} = 不公平，说的是安排、分配或结果。对谁不公平：{{tidak adil untuk saya}}、{{tidak adil bagi pelanggan}}。家人朋友之间说 {{nggak adil}}。",
+    "和 {{curang}} 的区别：curang 是有人故意耍赖、作弊（{{Dia curang waktu main kartu.}}）；tidak adil 不一定有人故意，只是不公平。"
+   ],
+   "simple": [
+    "[[tidak adil]] = 不公平（口语 nggak adil）；故意耍赖用 curang"
+   ],
+   "asks": [
+    {
+     "label": "tidak adil 和 curang 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Pembagiannya tidak adil.",
+         "分配不公平（说安排）"
+        ],
+        [
+         "Dia curang.",
+         "他耍赖、作弊（说人故意）"
+        ],
+        [
+         "Nggak adil dong!",
+         "太不公平了吧！（口语抱怨）"
+        ]
+       ]
+      },
+      "问自己：有没有人故意占便宜、违反规则？有就用 curang；只是安排不公平，用 tidak adil。"
+     ]
+    },
+    {
+     "label": "词卡上的用法",
+     "from": "usage_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Semua orang lembur, tapi cuma dia yang dapat bonus. Itu ___.]]",
+     "（大家都加班，可只有他拿到奖金。）"
+    ],
+    "options": [
+     {
+      "t": "tidak adil",
+      "v": "right",
+      "why": [
+       "对。奖金分配不公平：tidak adil。"
+      ]
+     },
+     {
+      "t": "curang",
+      "v": "wrong",
+      "why": [
+       "curang 要有人故意作弊。拿奖金的人并没有耍赖，问题在分配。"
+      ]
+     },
+     {
+      "t": "kebetulan",
+      "v": "wrong",
+      "why": [
+       "kebetulan 是“碰巧”。奖金是有人决定发给谁的，不是碰巧，这里要评价的是分配不公平。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。朋友打牌时偷看别人的牌，你说：[[Jangan ___, dong!]]"
+     ],
+     "options": [
+      {
+       "t": "curang",
+       "v": "right",
+       "why": [
+        "对。偷看牌是故意作弊：Jangan curang!"
+       ]
+      },
+      {
+       "t": "tidak adil",
+       "v": "wrong",
+       "why": [
+        "tidak adil 用来评价安排或结果，不说 jangan tidak adil；偷看牌是作弊。"
+       ]
+      },
+      {
+       "t": "telat",
+       "v": "wrong",
+       "why": [
+        "Jangan telat 是“别迟到”，和偷看牌没关系。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "公司只让你一个人周末值班。你礼貌地对主管说：“我觉得这样对我不公平，经理。”"
+    ],
+    "kw": "Menurut saya · tidak adil · untuk saya",
+    "skel": "Menurut saya, ini ____ adil untuk ____, Pak.",
+    "ref": "Menurut saya, ini tidak adil untuk saya, Pak.",
+    "notes": [
+     "对上级用 saya 和标准形 tidak adil。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "妹妹分蛋糕，自己拿了最大的一块。你说：“不公平！你那块比较大。”"
+    ],
+    "kw": "nggak adil · punyamu · lebih besar",
+    "skel": "Nggak ____! Punyamu lebih ____.",
+    "ref": "Nggak adil! Punyamu lebih besar.",
+    "notes": [
+     "nggak = tidak；punyamu = 你的那份。"
+    ]
+   },
+   "final": {
+    "cn": "（跟朋友）“挨骂的是他，可错的是别人，这对他不公平。”",
+    "ref": "Dia yang dimarahi, padahal yang salah orang lain. Itu nggak adil buat dia."
+   },
+   "remind": "tidak adil = 不公平（对谁：untuk / bagi …）；口语 nggak adil；故意耍赖用 curang。"
+  },
+  {
+   "key": "usah",
+   "name": "usah",
+   "head": "usah · 必要（只用在 nggak usah：不用、别）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Nadia",
+      "id": "Ya udah, nggak usah ngambek. Minggu depan kamu yang pilih. Aku usahakan pulang kantor lebih cepat.",
+      "cn": "好啦，别赌气了。下周你来选。我尽量早点下班。"
+     }
+    ],
+    "ask": "Nadia 说 nggak usah ngambek，是什么意思？",
+    "options": [
+     {
+      "t": "别赌气了",
+      "reply": [
+       "对。nggak usah + 动作 = 不用、别做某事。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "要努力赌气",
+      "reply": [
+       "不是。“努力”是 usaha；usah 只在 nggak usah 里出现，意思是“不必”。"
+      ]
+     },
+     {
+      "t": "尽量别赌气",
+      "reply": [
+       "不是。“尽量”是 usahakan，后半句 Aku usahakan … 才是“我尽量”。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{usah}} 几乎只出现在否定里：{{tidak usah}} / {{nggak usah}} = 不用、不必、别……。常用来劝人或客气推辞：{{Nggak usah, makasih.}}（不用了，谢谢。）",
+    "别和长得像的 {{usaha}}（努力；生意）、{{usahakan}}（尽量做到）混。{{tidak usah}} 和 {{tidak perlu}} 意思接近，tidak usah 更口语、更常用来劝人。"
+   ],
+   "simple": [
+    "[[nggak usah]] = 不用／别；[[usaha]] = 努力；[[usahakan]] = 尽量做到"
+   ],
+   "asks": [
+    {
+     "label": "usah、usaha、usahakan 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Nggak usah repot-repot.",
+         "不用麻烦了"
+        ],
+        [
+         "Aku udah usaha, kok.",
+         "我已经努力了嘛"
+        ],
+        [
+         "Aku usahakan datang.",
+         "我尽量来"
+        ]
+       ]
+      },
+      "前面有 nggak / tidak 而且意思是“不用”，就是 usah；说努力是 usaha；答应尽量做到是 usahakan。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "朋友要开车送你回家，可你家就在附近。你说："
+    ],
+    "options": [
+     {
+      "t": "Nggak usah, rumahku dekat kok.",
+      "v": "right",
+      "why": [
+       "对。客气推辞：nggak usah。"
+      ]
+     },
+     {
+      "t": "Aku usahakan, rumahku dekat kok.",
+      "v": "wrong",
+      "why": [
+       "usahakan 是答应“我尽量做到”，不是推辞。"
+      ]
+     },
+     {
+      "t": "Nggak usaha, rumahku dekat kok.",
+      "v": "wrong",
+      "why": [
+       "usaha 是“努力”，nggak usaha 不是推辞的说法。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。[[Tidak ___ menunggu saya, nanti saya menyusul.]]（不用等我，我等会儿跟上。）"
+     ],
+     "options": [
+      {
+       "t": "usah",
+       "v": "right",
+       "why": [
+        "对。tidak usah + 动作 = 不用做某事。"
+       ]
+      },
+      {
+       "t": "perlu",
+       "v": "ok",
+       "why": [
+        "也可以。tidak perlu menunggu 意思一样，语气更中性，正式场合常用。"
+       ]
+      },
+      {
+       "t": "usaha",
+       "v": "wrong",
+       "why": [
+        "usaha 是“努力”，tidak usaha menunggu 说不通。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "同事要帮你买午饭，可你带了饭。你说：“不用了，谢谢，我带了饭。”"
+    ],
+    "kw": "nggak usah · makasih · bawa bekal",
+    "skel": "Nggak ____, makasih. Aku bawa ____.",
+    "ref": "Nggak usah, makasih. Aku bawa bekal.",
+    "notes": [
+     "makasih = terima kasih；bekal = 自己带的饭。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "出门前你跟妈妈说：“不用担心，妈，到了我给你打电话。”"
+    ],
+    "kw": "nggak usah khawatir · nanti aku telepon · udah sampai",
+    "skel": "Nggak usah ____, Ma. Nanti aku ____ kalau udah ____.",
+    "ref": "Nggak usah khawatir, Ma. Nanti aku telepon kalau udah sampai."
+   },
+   "final": {
+    "cn": "（对客人，礼貌）“您不用带任何东西来。”",
+    "ref": "Bapak tidak usah membawa apa-apa."
+   },
+   "remind": "nggak usah / tidak usah = 不用、别；usaha = 努力；usahakan = 尽量做到。"
+  },
+  {
+   "key": "usahakan",
+   "name": "Aku usahakan …",
+   "head": "Aku usahakan … · 我尽量……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Nadia",
+      "id": "Ya udah, nggak usah ngambek. Minggu depan kamu yang pilih. Aku usahakan pulang kantor lebih cepat.",
+      "cn": "好啦，别赌气了。下周你来选。我尽量早点下班。"
+     }
+    ],
+    "ask": "Nadia 说 Aku usahakan pulang kantor lebih cepat，她保证一定早下班吗？",
+    "options": [
+     {
+      "t": "会尽量，但不打包票",
+      "reply": [
+       "对。usahakan = 会尽力，但留有余地。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "一定会早下班",
+      "reply": [
+       "不是。“一定”是 pasti：Aku pasti pulang cepat。"
+      ]
+     },
+     {
+      "t": "她不想早下班",
+      "reply": [
+       "不是。她是在答应弟弟，只是不敢百分之百保证。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "句型：**Aku usahakan + 动作**（我尽量……）。答应别人、又不敢百分之百保证时用。对上级、客户说 {{Akan saya usahakan.}} 或 {{Saya usahakan …}}。",
+    "口语常把 -kan 说成 -in：{{Aku usahain dateng, ya.}}（我尽量来哈。）它比 {{coba}}（试试）更有诚意，比 {{pasti}}（一定）留有余地。"
+   ],
+   "simple": [
+    "[[Aku usahakan …]] = 我尽量……（会尽力，但不打包票）"
+   ],
+   "asks": [
+    {
+     "label": "coba、usahakan、pasti 差在哪？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      "三档承诺：{{Aku coba datang.}} 试试看 → {{Aku usahakan datang.}} 尽量来 → {{Aku pasti datang.}} 一定来。",
+      "不敢保证、又想让对方安心时，选中间那档。"
+     ]
+    },
+    {
+     "label": "词卡上的构词",
+     "from": "formation",
+     "word": "usahakan"
+    }
+   ],
+   "check": {
+    "q": [
+     "客户问报告今天能不能发。你想尽力，但不敢保证。最合适的是："
+    ],
+    "options": [
+     {
+      "t": "Akan saya usahakan hari ini, Pak.",
+      "v": "right",
+      "why": [
+       "对。对客户礼貌地答应尽力，又留有余地。"
+      ]
+     },
+     {
+      "t": "Saya pasti kirim hari ini, Pak.",
+      "v": "ok",
+      "why": [
+       "如果你确定能发，可以这么说；但题目说不敢保证，pasti 太满。"
+      ]
+     },
+     {
+      "t": "Tidak usah hari ini, Pak.",
+      "v": "wrong",
+      "why": [
+       "tidak usah 是“不用”，变成叫客户今天别要了。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。朋友约你周六吃饭，可你那天可能要加班。最自然的回答："
+     ],
+     "options": [
+      {
+       "t": "Aku usahain datang, ya.",
+       "v": "right",
+       "why": [
+        "对。口语 usahain = usahakan：我尽量来。"
+       ]
+      },
+      {
+       "t": "Nggak usah datang, ya.",
+       "v": "wrong",
+       "why": [
+        "意思变成“你别来了”，是叫对方别来。"
+       ]
+      },
+      {
+       "t": "Aku pasti nggak bisa datang.",
+       "v": "wrong",
+       "why": [
+        "只是“可能”加班，说“肯定来不了”太绝对。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "主管让你周五前交方案。你说：“我尽量周四就做完，经理。”"
+    ],
+    "kw": "Saya usahakan · selesai · hari Kamis",
+    "skel": "Saya ____ selesai hari ____, Pak.",
+    "ref": "Saya usahakan selesai hari Kamis, Pak.",
+    "notes": [
+     "对上级用 saya；跟朋友说 Aku usahain …。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "朋友生日聚会那天你要上班。你说：“我尽量八点前到哈。”"
+    ],
+    "kw": "Aku usahakan · sampai · sebelum jam delapan",
+    "skel": "Aku ____ sampai sebelum jam ____, ya.",
+    "ref": "Aku usahakan sampai sebelum jam delapan, ya."
+   },
+   "final": {
+    "cn": "（对妈妈）“这个月我尽量每个周末都回家。”",
+    "ref": "Bulan ini aku usahakan pulang setiap akhir pekan, Ma."
+   },
+   "remind": "Aku usahakan + 动作 = 我尽量……；对上级说 Akan saya usahakan；口语 usahain。"
+  },
+  {
+   "key": "perkirakan",
+   "name": "… lebih … daripada yang … perkirakan",
+   "head": "… lebih … daripada yang … perkirakan · 比……预计的更……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Ternyata semua adegan terbaik sudah ada di trailer, dan filmnya jauh lebih panjang daripada yang mereka perkirakan.",
+      "cn": "结果最精彩的镜头全都已经在预告片里了，而且电影比他们预计的长得多。"
+     }
+    ],
+    "ask": "电影比他们预计的怎么样？",
+    "options": [
+     {
+      "t": "长得多",
+      "reply": [
+       "对。jauh lebih panjang = 长得多，超出了他们的预计。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "短得多",
+      "reply": [
+       "不是。panjang 是“长”，lebih panjang 是更长。"
+      ]
+     },
+     {
+      "t": "和预计的一样长",
+      "reply": [
+       "不是。lebih 表示超过；一样长要说 sama panjangnya。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "句型：**A + lebih + 形容词 + daripada yang + 人称 + perkirakan** = 比……预计的更……。人称放在前面时，用不带 mem- 的 {{perkirakan}}：{{yang kami perkirakan}}、{{yang aku perkirakan}}。",
+    "{{daripada}} 也可以说 {{dari}}（口语更常见）；也可以换成名词：{{lebih mahal dari perkiraan kami}}。前面加 {{jauh}} 表示“……得多”。"
+   ],
+   "simple": [
+    "[[lebih … daripada yang kami perkirakan]] = 比我们预计的更……"
+   ],
+   "asks": [
+    {
+     "label": "怎么快速造这种句子？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      "三步：① 主语 + lebih + 形容词；② 加 daripada yang；③ 人称 + perkirakan。",
+      "{{Antreannya lebih panjang daripada yang aku perkirakan.}}（队比我预计的长。）"
+     ]
+    },
+    {
+     "label": "词卡上的用法",
+     "from": "usage_note",
+     "word": "perkirakan"
+    }
+   ],
+   "check": {
+    "q": [
+     "哪一句正确？"
+    ],
+    "options": [
+     {
+      "t": "Biayanya lebih mahal daripada yang kami perkirakan.",
+      "v": "right",
+      "why": [
+       "对。人称 kami 在前，用 perkirakan。"
+      ]
+     },
+     {
+      "t": "Biayanya lebih mahal daripada yang kami memperkirakan.",
+      "v": "wrong",
+      "why": [
+       "人称放在前面时不用 memperkirakan，要说 yang kami perkirakan。"
+      ]
+     },
+     {
+      "t": "Biayanya lebih mahal daripada perkiraan kami.",
+      "v": "ok",
+      "why": [
+       "也可以。这是换成名词 perkiraan 的说法，意思一样，口语、书面都能用。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。[[Macetnya lebih parah dari yang aku ___.]]（堵车比我预计的严重。）"
+     ],
+     "options": [
+      {
+       "t": "perkirakan",
+       "v": "right",
+       "why": [
+        "对。dari yang aku perkirakan = 比我预计的。"
+       ]
+      },
+      {
+       "t": "kira",
+       "v": "ok",
+       "why": [
+        "也可以。口语 dari yang aku kira 很常见，意思偏“比我以为的”。"
+       ]
+      },
+      {
+       "t": "diperkirakan",
+       "v": "wrong",
+       "why": [
+        "diperkirakan 是被动形，前面不能再放 aku。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "搬家比你预计的累。你跟朋友说：“搬家比我预计的累多了。”"
+    ],
+    "kw": "pindahan · jauh lebih capek · dari yang aku perkirakan",
+    "skel": "Pindahan ternyata jauh lebih ____ dari yang aku ____.",
+    "ref": "Pindahan ternyata jauh lebih capek dari yang aku perkirakan.",
+    "notes": [
+     "pindahan = 搬家（口语）；capek = lelah。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "向主管汇报：“项目比我们预计的早完成了，经理。”"
+    ],
+    "kw": "selesai lebih cepat · daripada yang kami perkirakan",
+    "skel": "Proyeknya selesai lebih ____ daripada yang kami ____, Pak.",
+    "ref": "Proyeknya selesai lebih cepat daripada yang kami perkirakan, Pak."
+   },
+   "final": {
+    "cn": "（旅行回来）“巴厘岛的东西比我预计的便宜。”",
+    "ref": "Barang-barang di Bali lebih murah dari yang aku perkirakan."
+   },
+   "remind": "lebih + 形容词 + daripada yang + 人称 + perkirakan；人称在前用 perkirakan，不用 memperkirakan。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "今晚另外三个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+  ],
+  "words": [
+   "trailer",
+   "fiksi ilmiah",
+   "judul"
+  ]
+ },
+ "reading": [
+  {
+   "key": "voucher",
+   "sentence": "Vouchernya berlaku sampai hari Minggu, karena itu Sabtu kemarin ia mengajak adiknya, Raka.",
+   "cn": "电影券有效期到周日，所以上周六她约了弟弟 Raka。",
+   "chunks": [
+    [
+     "Vouchernya berlaku sampai hari Minggu,",
+     "电影券有效期到周日",
+     "berlaku sampai = 有效期至（今天08:00新学）"
+    ],
+    [
+     "karena itu",
+     "所以",
+     "karena itu 放在后半句开头 = 因此"
+    ],
+    [
+     "Sabtu kemarin ia mengajak adiknya, Raka.",
+     "上周六她约了弟弟 Raka",
+     "mengajak + 人 = 约某人一起去"
+    ]
+   ],
+   "steal": [
+    "值得借的是 [[…, karena itu …]]：前半说原因，后半说结果。{{Hujan deras, karena itu kami pulang lebih awal.}}（雨很大，所以我们提早回家。）"
+   ]
+  }
+ ],
+ "dialogue": {
+  "head": "对话 · 你来演 Raka",
+  "intro": [
+   "把今晚的词放回原对话。你演 Raka，我演 Nadia。每一轮先看 Raka 想说什么，看中文先说。"
+  ],
+  "turns": [
+   {
+    "line": 2,
+    "intent": "Raka 说预告片很酷，好像整部片都是动作戏，结果只是在飞船里聊天。",
+    "kw": "trailernya keren banget · seolah-olah · cuma ngobrol",
+    "skel": "Trailernya keren ____, seolah-olah filmnya penuh ____. Ternyata isinya cuma ____ di dalam kapal."
+   },
+   {
+    "line": 4,
+    "intent": "Raka 抱怨不公平：每次看电影都是姐姐选片。",
+    "kw": "pokoknya · nggak adil · tiap kali nonton · milih judulnya",
+    "skel": "Pokoknya nggak ____. Tiap kali nonton, Kakak terus yang ____ judulnya."
+   }
+  ],
+  "tail": [
+   "kirain、nggak、banget、ngobrol、milih 都是家人朋友之间的口语；正式场合换成 saya kira、tidak、sekali、mengobrol、memilih。"
+  ]
+ },
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今晚的改写题，缩短版）：弟弟抱怨这周家务分得不公平。说两句：先承认确实不公平，劝他别赌气，再说你会尽量做什么。"
+   ],
+   "kw": "memang nggak adil · nggak usah ngambek · aku usahakan",
+   "skel": "Kamu benar, ini memang nggak ____. Nggak usah ____, ya. Mulai besok aku ____ cuci piring tiap malam.",
+   "ref": "Kamu benar, ini memang nggak adil. Nggak usah ngambek, ya. Mulai besok aku usahakan cuci piring tiap malam.",
+   "notes": [
+    "整页的改写题有更完整的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
