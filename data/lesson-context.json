@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-22",
-    "session": "pm",
-    "time": "18:00",
-    "day": 62
+    "date": "2026-10-23",
+    "session": "am",
+    "time": "08:00",
+    "day": 63
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-22T03:41:03.954Z",
-    "lesson_watermark": "2026-10-22 08:00",
+    "runtime_generated_at": "2026-10-22T10:53:12.698Z",
+    "lesson_watermark": "2026-10-22 18:00",
     "index_updated": "2026-10-22",
-    "runtime_hash": "4fcb079c4ee8004bc269bfa5b33ac9eb0bbf2ea033716ba847f532c24e9339ef",
-    "index_hash": "93ca061f4a9a38e4ef2b9757a5203d8e76c0db15cc703931f9cc7e2e723d99c3",
+    "runtime_hash": "b0efedc18b46bfa3afb0175ad0953992b078c03da2aaca6bd190850dec9160ca",
+    "index_hash": "7ffbaaf19e19182878ae2d123ee120110196287fae253002ec3c0fe5bf3bae18",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -110,16 +110,8 @@
         "长裤"
       ],
       [
-        "trailer",
-        "预告片"
-      ],
-      [
         "perang",
         "战争片/战争"
-      ],
-      [
-        "fiksi ilmiah",
-        "科幻"
       ],
       [
         "tentara",
@@ -332,10 +324,6 @@
         "命运"
       ],
       [
-        "judul",
-        "标题"
-      ],
-      [
         "perintah",
         "命令、指令"
       ],
@@ -438,10 +426,6 @@
       [
         "lemah",
         "虚弱的"
-      ],
-      [
-        "tidak adil",
-        "不公平的"
       ],
       [
         "adil",
@@ -1928,16 +1912,6 @@
         "数量；总数"
       ],
       [
-        "usah",
-        3,
-        0,
-        "",
-        "2026-10-15T08:22:34.608Z",
-        "努力；费心；尝试",
-        "usaha",
-        "努力；事业；尝试"
-      ],
-      [
         "kehidupan",
         2,
         0,
@@ -2488,16 +2462,6 @@
         "自从"
       ],
       [
-        "usaha",
-        2,
-        0,
-        "",
-        "2026-10-15T13:47:28.253Z",
-        "努力；生意；企业",
-        "usaha",
-        "努力；事业"
-      ],
-      [
         "wilayah",
         2,
         0,
@@ -2606,16 +2570,6 @@
         "顾客；客户",
         "langgan",
         "经常购买；订购"
-      ],
-      [
-        "usahakan",
-        2,
-        0,
-        "",
-        "2026-10-15T08:15:48.779Z",
-        "尽量；努力做到",
-        "usaha",
-        "努力；事业"
       ],
       [
         "atasan",
@@ -2898,6 +2852,36 @@
         "贴；粘"
       ],
       [
+        "nikmat",
+        2,
+        0,
+        "",
+        "2026-10-15T07:42:59.075Z",
+        "美味的；享受的感觉",
+        "nikmat",
+        "享受；美味"
+      ],
+      [
+        "penduduk",
+        2,
+        0,
+        "",
+        "2026-10-15T08:09:28.381Z",
+        "居民；人口",
+        "duduk",
+        "坐；居住（词根相关）"
+      ],
+      [
+        "sempurna",
+        2,
+        0,
+        "",
+        "2026-10-15T08:12:36.665Z",
+        "完美的；完整圆满的",
+        "sempurna",
+        "完美；圆满"
+      ],
+      [
         "ketukar",
         5,
         0,
@@ -2996,106 +2980,6 @@
         "只要别……就行",
         "asal",
         "只要；条件是"
-      ],
-      [
-        "mengincar",
-        2,
-        0,
-        "",
-        "",
-        "盯上；瞄准；一心想得到",
-        "incar",
-        "瞄准；盯着"
-      ],
-      [
-        "lolos",
-        2,
-        0,
-        "",
-        "",
-        "通过（选拔、筛选）；晋级；逃脱",
-        "",
-        ""
-      ],
-      [
-        "hadiah utama",
-        2,
-        0,
-        "",
-        "",
-        "大奖；头奖",
-        "hadiah",
-        "礼物；奖品"
-      ],
-      [
-        "golongan darah",
-        2,
-        0,
-        "",
-        "",
-        "血型",
-        "golong",
-        "类；组"
-      ],
-      [
-        "berlaku sampai",
-        2,
-        0,
-        "",
-        "",
-        "有效期至",
-        "laku",
-        "有效；畅销"
-      ],
-      [
-        "silsilah keluarga",
-        2,
-        0,
-        "",
-        "",
-        "家谱；家族关系图",
-        "silsilah",
-        "家谱；世系"
-      ],
-      [
-        "jerapah",
-        2,
-        0,
-        "",
-        "",
-        "长颈鹿",
-        "",
-        ""
-      ],
-      [
-        "kijang",
-        2,
-        0,
-        "",
-        "",
-        "麂（一种小型鹿）",
-        "",
-        ""
-      ],
-      [
-        "macan kumbang",
-        2,
-        0,
-        "",
-        "",
-        "黑豹",
-        "macan",
-        "虎；豹（口语）"
-      ],
-      [
-        "kangguru",
-        2,
-        0,
-        "",
-        "",
-        "袋鼠",
-        "",
-        ""
       ]
     ],
     "focus": [
@@ -3401,14 +3285,6 @@
         "fuzzy"
       ],
       [
-        "tidak adil",
-        "通用",
-        "nggak adil",
-        "adil",
-        745,
-        "fuzzy"
-      ],
-      [
         "saudara",
         "通用",
         "sodara",
@@ -3419,45 +3295,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-15",
-      "session": "am",
-      "review_core": [
-        "hafal",
-        "menerapkan",
-        "harusnya",
-        "boros",
-        "membatasi"
-      ],
-      "new_words": [
-        "diberikan",
-        "aset",
-        "penanganan",
-        "bergabung",
-        "berjuang",
-        "saya pamit",
-        "anak tunggal",
-        "anak sulung",
-        "anak bungsu",
-        "rusa"
-      ]
-    },
-    {
-      "date": "2026-10-15",
-      "session": "pm",
-      "review_core": [
-        "pendapatan",
-        "mendapatkan",
-        "sedangkan",
-        "sengaja",
-        "anggaran"
-      ],
-      "new_words": [
-        "angsuran",
-        "kekurangan",
-        "mengeluarkan"
-      ]
-    },
     {
       "date": "2026-10-16",
       "session": "am",
@@ -3716,105 +3553,42 @@
         "macan kumbang",
         "kangguru"
       ]
+    },
+    {
+      "date": "2026-10-22",
+      "session": "pm",
+      "review_core": [
+        "perkirakan",
+        "seolah-olah",
+        "usaha",
+        "usahakan",
+        "usah"
+      ],
+      "new_words": [
+        "trailer",
+        "fiksi ilmiah",
+        "judul",
+        "tidak adil"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-21",
+    "date": "2026-10-22",
     "new_words": [
-      "memaksa",
-      "menempel",
-      "mengetahui"
+      "trailer",
+      "fiksi ilmiah",
+      "judul",
+      "tidak adil"
     ],
     "review_core": [
-      "sedangkan",
-      "menerapkan",
-      "arah",
-      "mengarahkan",
-      "menunjukkan"
+      "perkirakan",
+      "seolah-olah",
+      "usaha",
+      "usahakan",
+      "usah"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-22",
-    "vocab": [
-      [
-        "mengincar",
-        "盯上；瞄准；一心想得到",
-        "to aim for; to have one's eye on",
-        "incar",
-        "瞄准；盯着"
-      ],
-      [
-        "lolos",
-        "通过（选拔、筛选）；晋级；逃脱",
-        "to pass (a selection); to get through; to escape",
-        "",
-        ""
-      ],
-      [
-        "hadiah utama",
-        "大奖；头奖",
-        "grand prize; first prize",
-        "hadiah",
-        "礼物；奖品"
-      ],
-      [
-        "golongan darah",
-        "血型",
-        "blood type",
-        "golong",
-        "类；组"
-      ],
-      [
-        "berlaku sampai",
-        "有效期至",
-        "valid until",
-        "laku",
-        "有效；畅销"
-      ],
-      [
-        "silsilah keluarga",
-        "家谱；家族关系图",
-        "family tree",
-        "silsilah",
-        "家谱；世系"
-      ],
-      [
-        "jerapah",
-        "长颈鹿",
-        "giraffe",
-        "",
-        ""
-      ],
-      [
-        "kijang",
-        "麂（一种小型鹿）",
-        "barking deer; muntjac",
-        "",
-        ""
-      ],
-      [
-        "macan kumbang",
-        "黑豹",
-        "black panther",
-        "macan",
-        "虎；豹（口语）"
-      ],
-      [
-        "kangguru",
-        "袋鼠",
-        "kangaroo",
-        "",
-        ""
-      ]
-    ],
-    "review_vocab": [
-      "sebaiknya",
-      "perbaiki",
-      "tepat",
-      "kebutuhan",
-      "kebayang"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

@@ -11705,23 +11705,25 @@ window.DAILY_VOCAB_DB = [
     "en": "effort; bother; try",
     "root": "usaha",
     "root_cn": "努力；事业；尝试",
-    "example": "Tidak usah buru-buru, kita kerjakan satu per satu.",
-    "example_cn": "不用着急，我们一件一件做。",
+    "example": "Tidak usah sebel begitu. Kita bisa memilih film lain minggu depan.",
+    "example_cn": "别那么烦嘛。我们下周可以选别的电影。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-09-18 18:00",
+    "last_seen": "2026-10-22 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-10-22"
     ],
     "lesson_occurrences": [
-      "2026-09-18 18:00"
+      "2026-09-18 18:00",
+      "2026-10-22 18:00"
     ]
   },
   {
@@ -14204,23 +14206,27 @@ window.DAILY_VOCAB_DB = [
     "en": "effort; business; enterprise",
     "root": "usaha",
     "root_cn": "努力；事业",
-    "example": "Dengan usaha yang konsisten, kemampuan bahasa bisa meningkat.",
-    "example_cn": "通过持续努力，语言能力可以提高。",
+    "example": "Usaha tim produksi menghasilkan efek visual yang memukau, tetapi ceritanya terasa kosong.",
+    "example_cn": "制作团队的努力换来了惊艳的视觉效果，可是故事显得很空洞。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-10-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-25"
+      "2026-09-25",
+      "2026-10-22"
     ],
     "lesson_occurrences": [
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-10-22 18:00"
     ]
   },
   {
@@ -14422,23 +14428,27 @@ window.DAILY_VOCAB_DB = [
     "en": "try to; make an effort to",
     "root": "usaha",
     "root_cn": "努力；事业",
-    "example": "Usahakan semua dokumen selesai sebelum siang.",
-    "example_cn": "尽量在中午前把所有文件处理完。",
+    "example": "Saya usahakan kwitansinya dikirim hari ini, Bu.",
+    "example_cn": "我尽量今天把收据发给您，女士。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-26 08:00",
-    "last_seen": "2026-09-26 08:00",
+    "last_seen": "2026-10-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-26"
+      "2026-09-26",
+      "2026-10-22"
     ],
     "lesson_occurrences": [
-      "2026-09-26 08:00"
+      "2026-09-26 08:00",
+      "2026-10-22 18:00"
     ]
   },
   {
@@ -14874,27 +14884,29 @@ window.DAILY_VOCAB_DB = [
     "en": "as if; as though",
     "root": "olah",
     "root_cn": "处理；操练（词形关联）",
-    "example": "Ia bersikap seolah-olah tidak terjadi apa-apa, padahal kemarin kami sempat salah paham.",
-    "example_cn": "他表现得好像什么都没发生，其实昨天我们还闹了误会。",
+    "example": "Trailernya dibuat seolah-olah film itu penuh aksi, padahal sebagian besar adegannya hanya percakapan.",
+    "example_cn": "预告片剪得好像那部电影全是动作场面，其实大部分镜头只是对话。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-10-16 18:00",
+    "last_seen": "2026-10-22 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-27",
-      "2026-10-16"
+      "2026-10-16",
+      "2026-10-22"
     ],
     "lesson_occurrences": [
       "2026-09-27 08:00",
-      "2026-10-16 18:00"
+      "2026-10-16 18:00",
+      "2026-10-22 18:00"
     ]
   },
   {
@@ -23364,23 +23376,27 @@ window.DAILY_VOCAB_DB = [
     "en": "estimate; predict",
     "root": "kira",
     "root_cn": "猜测；估量",
-    "example": "Coba perkirakan jumlah kursi yang dibutuhkan sebelum panitia menyewa kursi tambahan.",
-    "example_cn": "工作人员租更多椅子之前，先试着估计一下需要多少个座位。",
+    "example": "Coba perkirakan dulu, berapa lama kita harus antre di loket?",
+    "example_cn": "先估计一下，我们得在售票处排多久的队？",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-21"
+      "2026-10-21",
+      "2026-10-22"
     ],
     "lesson_occurrences": [
-      "2026-10-21 08:00"
+      "2026-10-21 08:00",
+      "2026-10-22 18:00"
     ]
   },
   {
@@ -23671,23 +23687,26 @@ window.DAILY_VOCAB_DB = [
     "en": "grand prize; first prize",
     "root": "hadiah",
     "root_cn": "礼物；奖品",
-    "example": "Hadiah utamanya cukup istimewa: tiket keluarga ke kebun binatang.",
-    "example_cn": "大奖相当特别：一套去动物园的家庭门票。",
+    "example": "Semua orang di kantor berharap memenangkan hadiah utama, padahal hadiahnya hanya satu.",
+    "example_cn": "公司里人人都盼着赢大奖，其实大奖只有一个。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-22 08:00",
-    "last_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-22"
     ],
     "lesson_occurrences": [
-      "2026-10-22 08:00"
+      "2026-10-22 08:00",
+      "2026-10-22 18:00"
     ]
   },
   {
@@ -23721,23 +23740,26 @@ window.DAILY_VOCAB_DB = [
     "en": "valid until",
     "root": "laku",
     "root_cn": "有效；畅销",
-    "example": "Mama melihat tanggal di tiket itu; ternyata tiketnya berlaku sampai akhir bulan.",
-    "example_cn": "妈妈看了看票上的日期，原来票的有效期到月底。",
+    "example": "Voucher bioskop dari kantor ini berlaku sampai hari Minggu, karena itu kami harus menonton akhir pekan ini.",
+    "example_cn": "公司发的这张电影券有效期到周日，所以我们这个周末就得去看。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-22 08:00",
-    "last_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-22"
     ],
     "lesson_occurrences": [
-      "2026-10-22 08:00"
+      "2026-10-22 08:00",
+      "2026-10-22 18:00"
     ]
   },
   {
@@ -23863,6 +23885,107 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-22 08:00"
+    ]
+  },
+  {
+    "word": "trailer",
+    "cn": "预告片",
+    "en": "trailer (of a film)",
+    "root": "trailer",
+    "root_cn": "预告片（英语借词）",
+    "example": "Trailer resmi film itu menampilkan berbagai adegan seru, padahal ceritanya cukup sederhana.",
+    "example_cn": "那部电影的官方预告片展示了各种精彩场面，其实故事挺简单的。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 18:00",
+    "last_seen": "2026-10-22 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 18:00"
+    ]
+  },
+  {
+    "word": "fiksi ilmiah",
+    "cn": "科幻（作品）",
+    "en": "science fiction",
+    "root": "fiksi + ilmiah",
+    "root_cn": "虚构作品 + 科学的",
+    "example": "Dalam film fiksi ilmiah itu, seluruh kota tenggelam dan manusia harus pindah ke planet lain.",
+    "example_cn": "在那部科幻片里，整座城市被淹没，人类不得不搬到另一个星球。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 18:00",
+    "last_seen": "2026-10-22 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 18:00"
+    ]
+  },
+  {
+    "word": "judul",
+    "cn": "标题；片名；书名",
+    "en": "title",
+    "root": "judul",
+    "root_cn": "标题（本身即词根）",
+    "example": "Film berjudul Langit Merah itu bercerita tentang sebuah bangsa yang harus meninggalkan planetnya.",
+    "example_cn": "那部名叫《红色天空》的电影，讲的是一个民族不得不离开自己的星球。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 18:00",
+    "last_seen": "2026-10-22 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 18:00"
+    ]
+  },
+  {
+    "word": "tidak adil",
+    "cn": "不公平的",
+    "en": "unfair",
+    "root": "adil",
+    "root_cn": "公平；公正",
+    "example": "Tiketnya kita beli patungan, tidak adil kalau hanya kamu yang memilih filmnya.",
+    "example_cn": "票是我们一起凑钱买的，只有你一个人选电影就不公平了。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 18:00",
+    "last_seen": "2026-10-22 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 18:00"
     ]
   }
 ];
