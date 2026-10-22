@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261021-kereta-pso-terjangkau","date":"2026-10-21","title":"Kereta Ekonomi Bersubsidi Bantu Warga Menghemat Ongkos","title_cn":"有补贴的经济列车，让居民出行更省钱","path":"data/extensive-reading-history/2026-10-21.js"},
 {"id":"er-20261020-asap-karhutla-jakarta","date":"2026-10-20","title":"Asap Karhutla Mulai Berkurang, Warga Jakarta Tetap Diminta Waspada","title_cn":"林火烟雾开始减少，雅加达居民仍被要求保持警惕","path":"data/extensive-reading-history/2026-10-20.js"},
 {"id":"er-20261019-harga-cabai-aceh-barat-maulid","date":"2026-10-19","title":"Musim Maulid, Harga Cabai di Aceh Barat Naik Tajam","title_cn":"圣纪时节，亚齐西部辣椒价格大涨","path":"data/extensive-reading-history/2026-10-19.js"},
 {"id":"er-20261018-gebyar-rekrutmen-tangerang","date":"2026-10-18","title":"Gebyar Rekrutmen Tangerang: Daftar Online, Siapkan Dokumen dari Sekarang","title_cn":"坦格朗招聘盛会：在线报名，现在就准备好文件","path":"data/extensive-reading-history/2026-10-18.js"},
