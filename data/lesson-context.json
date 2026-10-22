@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-22",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 62
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-21T09:40:56.173Z",
-    "lesson_watermark": "2026-10-21 18:00",
-    "index_updated": "2026-10-21",
-    "runtime_hash": "5a2e2f79523d44d18b42ba7baeeb76cad571ece4d7eb205c6109d6eda99dea38",
-    "index_hash": "7ebefdebf301275175cdf6100d2596c9eda207a7ed8f22a22c63e31041a3a374",
+    "runtime_generated_at": "2026-10-22T00:31:45.202Z",
+    "lesson_watermark": "2026-10-22 08:00",
+    "index_updated": "2026-10-22",
+    "runtime_hash": "903dd9ef9ca16abd6b413d60e3335c87dff7c5b276df8093edb0484ec63f6d4e",
+    "index_hash": "93ca061f4a9a38e4ef2b9757a5203d8e76c0db15cc703931f9cc7e2e723d99c3",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "mengincar",
-        "盯上；瞄准"
-      ],
-      [
-        "lolos",
-        "逃脱；通过"
-      ],
-      [
-        "hadiah utama",
-        "大奖；头奖"
-      ],
-      [
-        "golongan darah",
-        "血型"
-      ],
-      [
-        "berlaku sampai",
-        "有效期至"
-      ],
-      [
-        "silsilah keluarga",
-        "家谱/家庭关系图"
-      ],
-      [
-        "jerapah",
-        "长颈鹿"
-      ],
-      [
-        "kijang",
-        "麂/小鹿"
-      ],
-      [
-        "macan kumbang",
-        "黑豹"
-      ],
-      [
-        "kangguru",
-        "袋鼠"
-      ],
       [
         "unta",
         "骆驼"
@@ -1738,16 +1698,6 @@
         "真实；明显"
       ],
       [
-        "sebaiknya",
-        2,
-        0,
-        "",
-        "2026-10-15T13:45:21.255Z",
-        "最好；应该（委婉建议）",
-        "baik",
-        "好；良好"
-      ],
-      [
         "tanah",
         2,
         0,
@@ -2748,16 +2698,6 @@
         "亮；燃着"
       ],
       [
-        "perbaiki",
-        2,
-        0,
-        "",
-        "2026-10-15T08:09:44.734Z",
-        "修理；改进",
-        "baik",
-        "好"
-      ],
-      [
         "rahasia",
         2,
         0,
@@ -2938,14 +2878,24 @@
         "流；流动"
       ],
       [
-        "kebayang",
-        5,
+        "namun",
+        2,
         0,
         "",
+        "2026-10-15T07:42:15.039Z",
+        "然而；不过",
+        "namun",
+        "然而；不过"
+      ],
+      [
+        "nempel",
+        2,
+        0,
         "",
-        "想象得到；脑子里浮现出来（口语）",
-        "bayang",
-        "影子；脑中的影像"
+        "2026-10-15T07:42:24.031Z",
+        "黏住；贴着（口语）",
+        "tempel",
+        "贴；粘"
       ],
       [
         "ketukar",
@@ -3036,6 +2986,116 @@
         "一起分摊；凑钱；AA出钱（口语）",
         "patungan",
         "共同凑钱；分摊费用"
+      ],
+      [
+        "asal jangan",
+        5,
+        0,
+        "",
+        "",
+        "只要别……就行",
+        "asal",
+        "只要；条件是"
+      ],
+      [
+        "mengincar",
+        2,
+        0,
+        "",
+        "",
+        "盯上；瞄准；一心想得到",
+        "incar",
+        "瞄准；盯着"
+      ],
+      [
+        "lolos",
+        2,
+        0,
+        "",
+        "",
+        "通过（选拔、筛选）；晋级；逃脱",
+        "",
+        ""
+      ],
+      [
+        "hadiah utama",
+        2,
+        0,
+        "",
+        "",
+        "大奖；头奖",
+        "hadiah",
+        "礼物；奖品"
+      ],
+      [
+        "golongan darah",
+        2,
+        0,
+        "",
+        "",
+        "血型",
+        "golong",
+        "类；组"
+      ],
+      [
+        "berlaku sampai",
+        2,
+        0,
+        "",
+        "",
+        "有效期至",
+        "laku",
+        "有效；畅销"
+      ],
+      [
+        "silsilah keluarga",
+        2,
+        0,
+        "",
+        "",
+        "家谱；家族关系图",
+        "silsilah",
+        "家谱；世系"
+      ],
+      [
+        "jerapah",
+        2,
+        0,
+        "",
+        "",
+        "长颈鹿",
+        "",
+        ""
+      ],
+      [
+        "kijang",
+        2,
+        0,
+        "",
+        "",
+        "麂（一种小型鹿）",
+        "",
+        ""
+      ],
+      [
+        "macan kumbang",
+        2,
+        0,
+        "",
+        "",
+        "黑豹",
+        "macan",
+        "虎；豹（口语）"
+      ],
+      [
+        "kangguru",
+        2,
+        0,
+        "",
+        "",
+        "袋鼠",
+        "",
+        ""
       ]
     ],
     "focus": [
@@ -3633,6 +3693,29 @@
         "menempel",
         "mengetahui"
       ]
+    },
+    {
+      "date": "2026-10-22",
+      "session": "am",
+      "review_core": [
+        "sebaiknya",
+        "perbaiki",
+        "tepat",
+        "kebutuhan",
+        "kebayang"
+      ],
+      "new_words": [
+        "mengincar",
+        "lolos",
+        "hadiah utama",
+        "golongan darah",
+        "berlaku sampai",
+        "silsilah keluarga",
+        "jerapah",
+        "kijang",
+        "macan kumbang",
+        "kangguru"
+      ]
     }
   ],
   "previous_pm": {
@@ -3650,7 +3733,88 @@
       "menunjukkan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-22",
+    "vocab": [
+      [
+        "mengincar",
+        "盯上；瞄准；一心想得到",
+        "to aim for; to have one's eye on",
+        "incar",
+        "瞄准；盯着"
+      ],
+      [
+        "lolos",
+        "通过（选拔、筛选）；晋级；逃脱",
+        "to pass (a selection); to get through; to escape",
+        "",
+        ""
+      ],
+      [
+        "hadiah utama",
+        "大奖；头奖",
+        "grand prize; first prize",
+        "hadiah",
+        "礼物；奖品"
+      ],
+      [
+        "golongan darah",
+        "血型",
+        "blood type",
+        "golong",
+        "类；组"
+      ],
+      [
+        "berlaku sampai",
+        "有效期至",
+        "valid until",
+        "laku",
+        "有效；畅销"
+      ],
+      [
+        "silsilah keluarga",
+        "家谱；家族关系图",
+        "family tree",
+        "silsilah",
+        "家谱；世系"
+      ],
+      [
+        "jerapah",
+        "长颈鹿",
+        "giraffe",
+        "",
+        ""
+      ],
+      [
+        "kijang",
+        "麂（一种小型鹿）",
+        "barking deer; muntjac",
+        "",
+        ""
+      ],
+      [
+        "macan kumbang",
+        "黑豹",
+        "black panther",
+        "macan",
+        "虎；豹（口语）"
+      ],
+      [
+        "kangguru",
+        "袋鼠",
+        "kangaroo",
+        "",
+        ""
+      ]
+    ],
+    "review_vocab": [
+      "sebaiknya",
+      "perbaiki",
+      "tepat",
+      "kebutuhan",
+      "kebayang"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

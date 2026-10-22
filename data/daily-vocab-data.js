@@ -6455,18 +6455,20 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-04 08:00",
+    "last_seen": "2026-10-22 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-04"
+      "2026-09-04",
+      "2026-10-22"
     ],
     "root_cn": "影子；脑中的影像",
     "lesson_occurrences": [
-      "2026-09-04 08:00"
+      "2026-09-04 08:00",
+      "2026-10-22 08:00"
     ]
   },
   {
@@ -10537,19 +10539,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-15 08:00",
-    "last_seen": "2026-09-15 19:00",
+    "last_seen": "2026-10-22 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-15"
+      "2026-09-15",
+      "2026-10-22"
     ],
     "lesson_occurrences": [
       "2026-09-15 08:00",
-      "2026-09-15 19:00"
+      "2026-09-15 19:00",
+      "2026-10-22 08:00"
     ]
   },
   {
@@ -14713,17 +14717,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-10-22 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-10-22"
     ],
     "lesson_occurrences": [
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-10-22 08:00"
     ]
   },
   {
@@ -19064,17 +19070,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-08 08:00",
-    "last_seen": "2026-10-08 08:00",
+    "last_seen": "2026-10-22 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-08"
+      "2026-10-08",
+      "2026-10-22"
     ],
     "lesson_occurrences": [
-      "2026-10-08 08:00"
+      "2026-10-08 08:00",
+      "2026-10-22 08:00"
     ]
   },
   {
@@ -19371,19 +19379,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-09 08:00",
-    "last_seen": "2026-10-09 18:00",
+    "last_seen": "2026-10-22 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-10-09"
+      "2026-10-09",
+      "2026-10-22"
     ],
     "lesson_occurrences": [
       "2026-10-09 08:00",
-      "2026-10-09 18:00"
+      "2026-10-09 18:00",
+      "2026-10-22 08:00"
     ]
   },
   {
@@ -23603,6 +23613,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-21 18:00"
+    ]
+  },
+  {
+    "word": "mengincar",
+    "cn": "盯上；瞄准；一心想得到",
+    "en": "to aim for; to have one's eye on",
+    "root": "incar",
+    "root_cn": "瞄准；盯着",
+    "example": "Dimas mengincar hadiah utama, tapi ia tidak sombong; kalau ditanya teman, ia cuma bilang, \"Coba-coba aja.\"",
+    "example_cn": "迪马斯盯着大奖，但他一点也不骄傲；同学问起来，他只说：“试试看而已。”（aja = saja，口语）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 08:00"
+    ]
+  },
+  {
+    "word": "lolos",
+    "cn": "通过（选拔、筛选）；晋级；逃脱",
+    "en": "to pass (a selection); to get through; to escape",
+    "root": "",
+    "root_cn": "",
+    "example": "Dimas lolos ke babak final karena hampir semua jawabannya tepat.",
+    "example_cn": "迪马斯晋级了决赛，因为他几乎所有答案都是对的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 08:00"
+    ]
+  },
+  {
+    "word": "hadiah utama",
+    "cn": "大奖；头奖",
+    "en": "grand prize; first prize",
+    "root": "hadiah",
+    "root_cn": "礼物；奖品",
+    "example": "Hadiah utamanya cukup istimewa: tiket keluarga ke kebun binatang.",
+    "example_cn": "大奖相当特别：一套去动物园的家庭门票。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 08:00"
+    ]
+  },
+  {
+    "word": "golongan darah",
+    "cn": "血型",
+    "en": "blood type",
+    "root": "golong",
+    "root_cn": "类；组",
+    "example": "Untuk tugas sekolah, Dimas menanyakan golongan darah setiap anggota keluarga.",
+    "example_cn": "为了学校作业，迪马斯问了家里每个人的血型。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 08:00"
+    ]
+  },
+  {
+    "word": "berlaku sampai",
+    "cn": "有效期至",
+    "en": "valid until",
+    "root": "laku",
+    "root_cn": "有效；畅销",
+    "example": "Mama melihat tanggal di tiket itu; ternyata tiketnya berlaku sampai akhir bulan.",
+    "example_cn": "妈妈看了看票上的日期，原来票的有效期到月底。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 08:00"
+    ]
+  },
+  {
+    "word": "silsilah keluarga",
+    "cn": "家谱；家族关系图",
+    "en": "family tree",
+    "root": "silsilah",
+    "root_cn": "家谱；世系",
+    "example": "Dimas menggambar silsilah keluarga dari kakek buyut sampai adik sepupunya; kisah keluarga ibunya paling menarik.",
+    "example_cn": "迪马斯画了从曾祖父到表弟的家谱图；他妈妈那边的家族故事最有意思。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 08:00"
+    ]
+  },
+  {
+    "word": "jerapah",
+    "cn": "长颈鹿",
+    "en": "giraffe",
+    "root": "",
+    "root_cn": "",
+    "example": "Leher jerapah itu panjang sekali; kepalanya hampir menyentuh atap kandang.",
+    "example_cn": "那只长颈鹿的脖子特别长，头都快碰到围栏顶棚了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 08:00"
+    ]
+  },
+  {
+    "word": "kijang",
+    "cn": "麂（一种小型鹿）",
+    "en": "barking deer; muntjac",
+    "root": "",
+    "root_cn": "",
+    "example": "Pagar kandang kijang itu rusak dan harus segera diperbaiki agar kijangnya tidak kabur.",
+    "example_cn": "麂的围栏坏了，得赶快修好，免得麂跑掉。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 08:00"
+    ]
+  },
+  {
+    "word": "macan kumbang",
+    "cn": "黑豹",
+    "en": "black panther",
+    "root": "macan",
+    "root_cn": "虎；豹（口语）",
+    "example": "Macan kumbang itu tidur di atas batu besar; bulunya hitam dan mengilap.",
+    "example_cn": "那只黑豹睡在一块大石头上，毛又黑又亮。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 08:00"
+    ]
+  },
+  {
+    "word": "kangguru",
+    "cn": "袋鼠",
+    "en": "kangaroo",
+    "root": "",
+    "root_cn": "",
+    "example": "Anak kangguru itu mengintip dari kantong induknya, lalu masuk lagi, seperti malu-malu.",
+    "example_cn": "那只小袋鼠从妈妈的育儿袋里探出头来张望，然后又像害羞似的缩了回去。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-22 08:00",
+    "last_seen": "2026-10-22 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-22"
+    ],
+    "lesson_occurrences": [
+      "2026-10-22 08:00"
     ]
   }
 ];
