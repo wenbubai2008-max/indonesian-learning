@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-10-22T10:53:17.520Z",
-  "source_updated_at": "2026-10-22T01:58:52.645Z",
+  "generated_at": "2026-10-22T23:40:42.762Z",
+  "source_updated_at": "2026-10-22T15:36:24.960Z",
   "taught_total": 891,
   "confirmed_mastered": 229,
   "needs_reinforcement": 616,
@@ -12,7 +12,7 @@
   "primary_unlearned_total": 469,
   "primary_coverage_percent": 52,
   "primary_eligible_new_total": 139,
-  "focus_total": 601,
+  "focus_total": 599,
   "focus_words": [
     {
       "word": "menerapkan",
@@ -24,7 +24,7 @@
       ],
       "wrong_count": 3,
       "last_wrong": "2026-10-22T01:57:32.245Z",
-      "last_review": "2026-10-22T01:57:32.245Z",
+      "last_review": "2026-10-22T15:27:12.124Z",
       "cn": "应用；实施；推行"
     },
     {
@@ -37,7 +37,7 @@
       ],
       "wrong_count": 3,
       "last_wrong": "2026-10-18T16:57:30.914Z",
-      "last_review": "2026-10-20T05:11:21.135Z",
+      "last_review": "2026-10-22T15:26:48.166Z",
       "cn": "仿佛；好像"
     },
     {
