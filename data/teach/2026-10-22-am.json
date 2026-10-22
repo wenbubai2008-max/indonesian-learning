@@ -1,0 +1,827 @@
+{
+  "version": 1,
+  "title": "早课深讲 · 10月22日",
+  "intro": [
+    "今天早上的课叫《科学竞赛赢来的大奖》。Dimas 参加学校的科学竞赛，为了准备画了家谱、问了全家人的血型，一路晋级决赛赢了大奖——动物园家庭门票，周日全家就去看了长颈鹿、黑豹和袋鼠。",
+    "今天只讲 5 样：[[mengincar]] · [[lolos]] · [[berlaku sampai]] · [[Sebaiknya kita …, sebelum …]] · [[… lolos ke … karena …]]"
+  ],
+  "items": [
+    {
+      "key": "mengincar",
+      "name": "mengincar",
+      "head": "mengincar · 盯上；一心想得到",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Banyak murid mengincar hadiah utama, yaitu tiket keluarga ke kebun binatang.",
+            "cn": "很多学生都盯着大奖——一套去动物园的家庭门票。"
+          }
+        ],
+        "ask": "很多学生 mengincar hadiah utama。你猜他们对大奖是什么态度？",
+        "options": [
+          {
+            "t": "盯准了，想办法拿到",
+            "ok": true,
+            "reply": [
+              "对。mengincar 是有明确目标、主动去争取。"
+            ]
+          },
+          {
+            "t": "只是随便希望一下",
+            "reply": [
+              "不是。只是希望说 berharap；mengincar 是盯准目标、主动去争取。"
+            ]
+          },
+          {
+            "t": "不太感兴趣",
+            "reply": [
+              "正好相反。mengincar 是一心想拿到，眼睛一直盯着。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{mengincar}} = 盯准一个目标去争取：{{mengincar hadiah utama}}、{{mengincar juara satu}}。坏人或动物“盯上”东西也用它，被动是 {{diincar}}：{{Ponsel mahal sering diincar pencopet.}}"
+      ],
+      "simple": [
+        "[[mengincar]] = 盯上、一心想拿到（口语 [[ngincer]]）"
+      ],
+      "asks": [
+        {
+          "label": "和 berharap 有什么区别？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "mengincar",
+                  "盯准目标，主动争取"
+                ],
+                [
+                  "berharap",
+                  "只是希望"
+                ]
+              ]
+            },
+            "{{Aku berharap menang.}}（我希望赢。）/ {{Aku mengincar juara satu.}}（我冲着第一名去。）"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "街上提醒标语：[[Hati-hati, tas kamu bisa ___ pencopet!]]（小心，你的包可能被扒手盯上！）"
+        ],
+        "options": [
+          {
+            "t": "diincar",
+            "v": "right",
+            "why": [
+              "对。被扒手盯上是被动：diincar pencopet。"
+            ]
+          },
+          {
+            "t": "mengincar",
+            "v": "wrong",
+            "why": [
+              "mengincar 是主动“盯上别人的东西”，这里包是被盯上的，要用被动 diincar。"
+            ]
+          },
+          {
+            "t": "diharapkan",
+            "v": "wrong",
+            "why": [
+              "diharapkan 是“被期望”，和扒手盯上东西无关。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Dia sudah lama mengincar posisi manajer.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "他早就盯上经理的位置了",
+              "v": "right",
+              "why": [
+                "对。mengincar posisi = 盯上一个职位，想争取到。"
+              ]
+            },
+            {
+              "t": "他当经理很久了",
+              "v": "wrong",
+              "why": [
+                "当了很久要说 sudah lama menjadi manajer；mengincar 是还没得到、正想拿到。"
+              ]
+            },
+            {
+              "t": "他很怕当经理",
+              "v": "wrong",
+              "why": [
+                "mengincar 是想得到，不是害怕。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "跟同事说：“我盯上那双鞋很久了，等打折再买。”"
+        ],
+        "kw": "aku · udah lama · ngincer · sepatu itu · nunggu diskon",
+        "skel": "Aku udah lama ____ sepatu itu, ____ diskon dulu.",
+        "ref": "Aku udah lama ngincer sepatu itu, nunggu diskon dulu.",
+        "notes": [
+          "同事、朋友之间用口语：udah = sudah，ngincer = mengincar，nunggu = menunggu。"
+        ]
+      },
+      "recall": {
+        "prompt": [
+          "说：“很多公司都盯上了这块地。”"
+        ],
+        "kw": "banyak perusahaan · mengincar · tanah ini",
+        "skel": "Banyak perusahaan ____ tanah ini.",
+        "ref": "Banyak perusahaan mengincar tanah ini."
+      },
+      "final": {
+        "cn": "（说一个目标）“今年我想拿下第一名。”",
+        "ref": "Tahun ini aku mengincar juara satu."
+      },
+      "remind": "mengincar = 盯准目标去争取（mengincar hadiah utama）；被盯上用 diincar；只是希望用 berharap。"
+    },
+    {
+      "key": "lolos",
+      "name": "lolos",
+      "head": "lolos · 通过筛选；晋级",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Di babak pertama, hampir semua jawabannya tepat, sehingga ia lolos ke final.",
+            "cn": "第一轮他几乎所有答案都是对的，于是晋级决赛。"
+          }
+        ],
+        "ask": "第一轮答得很好，所以 lolos ke final。这里 lolos 是什么意思？",
+        "options": [
+          {
+            "t": "晋级、过关进入下一轮",
+            "ok": true,
+            "reply": [
+              "对。lolos ke + 下一轮 = 晋级到……。"
+            ]
+          },
+          {
+            "t": "毕业",
+            "reply": [
+              "毕业是 lulus（lulus SMA）。比赛里过关晋级用 lolos。"
+            ]
+          },
+          {
+            "t": "错过",
+            "reply": [
+              "错过是 ketinggalan / terlewat。lolos ke final 是进了决赛。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{lolos}} = 在筛选、淘汰中过关：{{lolos ke babak final}}、{{lolos seleksi}}、{{tidak lolos}}（被淘汰）。另一个意思是“逃脱”：{{Pencurinya lolos.}}（小偷跑掉了。）"
+      ],
+      "simple": [
+        "[[lolos]] = 过关晋级；逃脱。考试及格、毕业是 [[lulus]]"
+      ],
+      "asks": [
+        {
+          "label": "lolos 和 lulus 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "lolos ke final / lolos seleksi",
+                  "比赛、选拔过关"
+                ],
+                [
+                  "lulus ujian / lulus SMA",
+                  "考试及格、毕业"
+                ]
+              ]
+            },
+            "记法：有“下一轮”的用 lolos；拿到成绩、文凭的用 lulus。"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Kakakku ___ SMA tahun lalu.]]（我哥哥去年高中毕业。）"
+        ],
+        "options": [
+          {
+            "t": "lulus",
+            "v": "right",
+            "why": [
+              "对。毕业用 lulus：lulus SMA。"
+            ]
+          },
+          {
+            "t": "lolos",
+            "v": "wrong",
+            "why": [
+              "lolos 是选拔、比赛过关，不说“毕业”。"
+            ]
+          },
+          {
+            "t": "lewat",
+            "v": "wrong",
+            "why": [
+              "lewat 是“经过”，不能表示毕业。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Dari 200 pelamar, cuma 10 orang yang ___ seleksi.]]（200 个应聘者里只有 10 个通过了筛选。）"
+          ],
+          "options": [
+            {
+              "t": "lolos",
+              "v": "right",
+              "why": [
+                "对。通过选拔、筛选：lolos seleksi。"
+              ]
+            },
+            {
+              "t": "lulus",
+              "v": "wrong",
+              "why": [
+                "lulus 用于考试及格、毕业；筛选过关固定说 lolos seleksi。"
+              ]
+            },
+            {
+              "t": "lepas",
+              "v": "wrong",
+              "why": [
+                "lepas 是“松开、脱落”。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "跟朋友说：“我们队进决赛了！”"
+        ],
+        "kw": "tim kita · lolos · ke final",
+        "skel": "Tim kita ____ ke ____!",
+        "ref": "Tim kita lolos ke final!"
+      },
+      "recall": {
+        "prompt": [
+          "说：“可惜我没通过面试。”"
+        ],
+        "kw": "sayangnya · aku · nggak lolos · wawancara",
+        "skel": "Sayangnya aku nggak ____ wawancara.",
+        "ref": "Sayangnya aku nggak lolos wawancara.",
+        "notes": [
+          "nggak = tidak。"
+        ]
+      },
+      "final": {
+        "cn": "“她的作品通过了选拔。”",
+        "ref": "Karyanya lolos seleksi."
+      },
+      "remind": "lolos = 比赛、选拔过关（lolos ke final、lolos seleksi）；毕业、及格用 lulus。"
+    },
+    {
+      "key": "berlaku",
+      "name": "berlaku sampai",
+      "head": "berlaku sampai · 有效期至",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Tiketnya berlaku sampai akhir bulan, karena itu Minggu kemarin mereka langsung berangkat.",
+            "cn": "门票的有效期到月底，所以上周日他们马上就出发了。"
+          }
+        ],
+        "ask": "门票 berlaku sampai akhir bulan。过了月底会怎样？",
+        "options": [
+          {
+            "t": "票就不能用了",
+            "ok": true,
+            "reply": [
+              "对。berlaku sampai = 有效期到……，过了就失效。"
+            ]
+          },
+          {
+            "t": "票会降价",
+            "reply": [
+              "不是。berlaku 是“有效”，说的是能用到什么时候，不是价格。"
+            ]
+          },
+          {
+            "t": "要到月底才能用",
+            "reply": [
+              "正好相反。是“到月底为止都能用”，不是“月底才开始”。开始生效说 mulai berlaku。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{berlaku}} = 有效、生效，{{berlaku sampai}} + 日期 = 有效期至：{{Voucher ini berlaku sampai 31 Oktober.}} 相关：{{masa berlaku}}（有效期）、{{sudah tidak berlaku}}（已失效）、{{mulai berlaku}}（开始生效）。"
+      ],
+      "simple": [
+        "[[berlaku sampai]] + 日期 = 有效期至；只说 [[sampai]] 是“直到”"
+      ],
+      "asks": [
+        {
+          "label": "开始、结束、失效怎么说？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "mulai berlaku",
+                  "开始生效"
+                ],
+                [
+                  "berlaku sampai …",
+                  "有效期至……"
+                ],
+                [
+                  "sudah tidak berlaku",
+                  "已失效"
+                ]
+              ]
+            },
+            "{{Aturan baru mulai berlaku besok.}}（新规定明天起生效。）"
+          ]
+        },
+        {
+          "label": "词卡上的提醒",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "你的护照过期了，你说：[[Paspor saya ___.]]"
+        ],
+        "options": [
+          {
+            "t": "sudah tidak berlaku",
+            "v": "right",
+            "why": [
+              "对。过期、失效：sudah tidak berlaku。"
+            ]
+          },
+          {
+            "t": "berlaku sampai",
+            "v": "wrong",
+            "why": [
+              "berlaku sampai 后面要接日期，表示还能用到哪天，不表示已经过期。"
+            ]
+          },
+          {
+            "t": "sudah tidak laku",
+            "v": "wrong",
+            "why": [
+              "laku 是“好卖、畅销”，tidak laku 是卖不出去，不是证件失效。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "优惠券上写着：[[Berlaku sampai 30 November.]]今天是 12 月 1 日，这张券："
+          ],
+          "options": [
+            {
+              "t": "已经不能用了",
+              "v": "right",
+              "why": [
+                "对。有效期到 11 月 30 日，今天已经过了。"
+              ]
+            },
+            {
+              "t": "明天才能用",
+              "v": "wrong",
+              "why": [
+                "berlaku sampai 是截止日期，不是开始日期。"
+              ]
+            },
+            {
+              "t": "还能用一个月",
+              "v": "wrong",
+              "why": [
+                "日期已经过了，券失效了。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "跟顾客说明：“这张优惠券有效期到这个月底。”"
+        ],
+        "kw": "voucher ini · berlaku sampai · akhir bulan ini",
+        "skel": "Voucher ini ____ sampai ____ bulan ini.",
+        "ref": "Voucher ini berlaku sampai akhir bulan ini.",
+        "notes": [
+          "对顾客用标准说法即可。"
+        ]
+      },
+      "recall": {
+        "prompt": [
+          "说：“我的签证有效期到明年三月。”"
+        ],
+        "kw": "visa saya · berlaku sampai · Maret tahun depan",
+        "skel": "Visa saya ____ ____ Maret tahun depan.",
+        "ref": "Visa saya berlaku sampai Maret tahun depan."
+      },
+      "final": {
+        "cn": "“这张会员卡有效期到 12 月 31 日。”",
+        "ref": "Kartu anggota ini berlaku sampai 31 Desember."
+      },
+      "remind": "berlaku sampai + 日期 = 有效期至；开始生效 mulai berlaku；失效 sudah tidak berlaku。"
+    },
+    {
+      "key": "sebaiknya",
+      "name": "Sebaiknya kita …, sebelum …",
+      "head": "Sebaiknya kita …, sebelum … · 我们最好……，趁还没……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "句子",
+            "id": "Kalau mau ke kebun binatang, sebaiknya kita berangkat pagi sebelum udaranya panas.",
+            "cn": "要去动物园的话，我们最好早上出发，趁天还没热。"
+          }
+        ],
+        "ask": "说话人用 sebaiknya kita …。他是在下命令，还是在给建议？",
+        "options": [
+          {
+            "t": "委婉地给建议",
+            "ok": true,
+            "reply": [
+              "对。sebaiknya = 最好、还是……为好，语气柔和。"
+            ]
+          },
+          {
+            "t": "严格的命令",
+            "reply": [
+              "不是。命令会直接说 Ayo berangkat! 或 Harus berangkat pagi。sebaiknya 是商量的口气。"
+            ]
+          },
+          {
+            "t": "说过去的事",
+            "reply": [
+              "不是。这是对出发时间的建议，说的是接下来要做的事。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{sebaiknya}}（复习词，词根 baik）= “最好……”，用来委婉建议；后面加 {{sebelum}} + 情况，说“趁……之前”：{{Sebaiknya kita pulang sebelum hujan.}}"
+      ],
+      "simple": [
+        "[[Sebaiknya kita …, sebelum …]] = 我们最好……，趁还没……"
+      ],
+      "asks": [
+        {
+          "label": "sebaiknya 和 harus 差多少？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "sebaiknya",
+                  "建议：最好……"
+                ],
+                [
+                  "harus",
+                  "必须：没得商量"
+                ]
+              ]
+            },
+            "{{Sebaiknya kamu istirahat.}}（你最好休息一下。）/ {{Kamu harus istirahat.}}（你必须休息。）"
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "你想劝朋友早点去买票：[[___ kita beli tiket sekarang, sebelum habis.]]"
+        ],
+        "options": [
+          {
+            "t": "Sebaiknya",
+            "v": "right",
+            "why": [
+              "对。委婉建议：Sebaiknya kita …。"
+            ]
+          },
+          {
+            "t": "Sebenarnya",
+            "v": "wrong",
+            "why": [
+              "sebenarnya 是“其实”，不用来提建议。"
+            ]
+          },
+          {
+            "t": "Sebelumnya",
+            "v": "wrong",
+            "why": [
+              "sebelumnya 是“在此之前”，不用来提建议，放这里意思不通。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Sebaiknya kita berangkat sekarang, sebelum macet.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "我们最好现在出发，趁还没堵车",
+              "v": "right",
+              "why": [
+                "对。sebaiknya = 最好；sebelum macet = 在堵车之前。"
+              ]
+            },
+            {
+              "t": "我们其实现在就出发了",
+              "v": "wrong",
+              "why": [
+                "“其实”是 sebenarnya。"
+              ]
+            },
+            {
+              "t": "我们堵车以后再出发",
+              "v": "wrong",
+              "why": [
+                "“以后”是 setelah；这里是 sebelum（之前）。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "对家人说：“我们最好现在去超市，趁还没关门。”"
+        ],
+        "kw": "sebaiknya kita · ke supermarket sekarang · sebelum tutup",
+        "skel": "Sebaiknya kita ke supermarket ____, sebelum ____.",
+        "ref": "Sebaiknya kita ke supermarket sekarang, sebelum tutup."
+      },
+      "recall": {
+        "prompt": [
+          "对同事说：“我们最好今天把报告改好，趁老板还没看。”"
+        ],
+        "kw": "sebaiknya kita · perbaiki laporannya · hari ini · sebelum bos baca",
+        "skel": "Sebaiknya kita ____ laporannya hari ini, sebelum bos ____.",
+        "ref": "Sebaiknya kita perbaiki laporannya hari ini, sebelum bos baca.",
+        "notes": [
+          "perbaiki（复习词，同词根 baik）= 改好、修好；bos baca 是口语，正式说 sebelum atasan membacanya。"
+        ]
+      },
+      "final": {
+        "cn": "“我们最好先吃饭，趁电影还没开始。”",
+        "ref": "Sebaiknya kita makan dulu, sebelum filmnya mulai."
+      },
+      "remind": "Sebaiknya kita …, sebelum … = 我们最好……，趁还没……；比 harus 柔和。"
+    },
+    {
+      "key": "loloskarena",
+      "name": "… lolos ke … karena …",
+      "head": "… lolos ke … karena … · ……因为……而晋级到……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "词卡例句",
+            "id": "Dimas lolos ke babak final karena hampir semua jawabannya tepat.",
+            "cn": "迪马斯晋级了决赛，因为他几乎所有答案都是对的。"
+          }
+        ],
+        "ask": "这句话分成两半。karena 后面那一半说的是什么？",
+        "options": [
+          {
+            "t": "晋级的原因",
+            "ok": true,
+            "reply": [
+              "对。karena = 因为：先说结果（lolos ke final），再说原因。"
+            ]
+          },
+          {
+            "t": "晋级以后做了什么",
+            "reply": [
+              "不是。那要用 lalu / setelah itu。karena 引出的是原因。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "先说结果 {{lolos ke …}}，再用 {{karena}} 补原因，是讲“为什么过关”的常用顺序。{{tepat}}（复习词）= 准确、正好：{{jawabannya tepat}}（答案准确）、{{tepat waktu}}（准时）。"
+      ],
+      "simple": [
+        "[[A lolos ke B karena C]] = A 因为 C 晋级到 B"
+      ],
+      "asks": [
+        {
+          "label": "karena 和 sehingga 顺序有什么不同？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "结果 + karena + 原因",
+                  "Dia lolos karena jawabannya tepat."
+                ],
+                [
+                  "原因 + sehingga + 结果",
+                  "Jawabannya tepat, sehingga dia lolos."
+                ]
+              ]
+            },
+            "课文用的是第二种，词卡例句用的是第一种，意思一样。"
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Timnya lolos ke semifinal ___ mereka latihan setiap hari.]]（他们队进了半决赛，因为每天都训练。）"
+        ],
+        "options": [
+          {
+            "t": "karena",
+            "v": "right",
+            "why": [
+              "对。后半句是原因：karena。"
+            ]
+          },
+          {
+            "t": "sehingga",
+            "v": "wrong",
+            "why": [
+              "sehingga 后面接结果；这里后半句“每天训练”是原因。"
+            ]
+          },
+          {
+            "t": "supaya",
+            "v": "wrong",
+            "why": [
+              "supaya 是“为了、以便”，说目的，不说原因。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Rina lolos seleksi karena pengalamannya cukup.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "丽娜通过了筛选，因为她经验够",
+              "v": "right",
+              "why": [
+                "对。结果 lolos seleksi，原因 karena pengalamannya cukup。"
+              ]
+            },
+            {
+              "t": "丽娜为了积累经验去参加筛选",
+              "v": "wrong",
+              "why": [
+                "“为了”是 untuk / supaya；karena 是“因为”。"
+              ]
+            },
+            {
+              "t": "丽娜没通过筛选",
+              "v": "wrong",
+              "why": [
+                "lolos 是通过；没通过是 tidak lolos。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "说：“我弟弟进了决赛，因为他练得很认真。”"
+        ],
+        "kw": "adikku · lolos ke final · karena · latihannya serius",
+        "skel": "Adikku ____ ke final karena latihannya ____.",
+        "ref": "Adikku lolos ke final karena latihannya serius."
+      },
+      "recall": {
+        "prompt": [
+          "说：“她通过了面试，因为回答都很准确。”"
+        ],
+        "kw": "dia · lolos wawancara · karena · jawabannya tepat",
+        "skel": "Dia ____ wawancara karena jawabannya ____.",
+        "ref": "Dia lolos wawancara karena jawabannya tepat."
+      },
+      "final": {
+        "cn": "“我们乐队进了第二轮，因为评委喜欢我们的歌。”",
+        "ref": "Band kami lolos ke babak kedua karena juri suka lagu kami."
+      },
+      "remind": "结果 + karena + 原因：Dia lolos ke final karena jawabannya tepat。"
+    }
+  ],
+  "scan": {
+    "head": "其他新词 · 扫一眼",
+    "intro": [
+      "其余新词词卡里都有完整讲解，这里只扫一眼。不熟的点一下，标出来给自己看。"
+    ],
+    "words": [
+      "hadiah utama",
+      "golongan darah",
+      "silsilah keluarga",
+      "jerapah",
+      "kijang",
+      "macan kumbang",
+      "kangguru"
+    ]
+  },
+  "reading": [
+    {
+      "key": "persiapan",
+      "sentence": "Sebagai persiapan, guru meminta setiap murid membuat silsilah keluarga lengkap dengan golongan darah setiap anggota.",
+      "cn": "作为准备，老师要求每个学生画一张家谱图，并写上每位家庭成员的血型。",
+      "chunks": [
+        [
+          "Sebagai persiapan,",
+          "作为准备",
+          "sebagai = 作为"
+        ],
+        [
+          "guru meminta setiap murid",
+          "老师要求每个学生",
+          "meminta + 人 = 要求某人（做事）"
+        ],
+        [
+          "membuat silsilah keluarga",
+          "画一张家谱图",
+          "silsilah keluarga = 家谱（新词）"
+        ],
+        [
+          "lengkap dengan golongan darah setiap anggota.",
+          "附上每位成员的血型",
+          "lengkap dengan … = 附带、配齐……"
+        ]
+      ],
+      "steal": [
+        "值得借用的是 [[lengkap dengan …]]：“配齐……、附带……”。{{Aku pesan nasi goreng lengkap dengan telur dan kerupuk.}}（我点了炒饭，配鸡蛋和虾片。）"
+      ],
+      "check": {
+        "q": [
+          "[[Kamarnya sudah ___ AC dan kamar mandi.]]（房间配有空调和浴室。）"
+        ],
+        "options": [
+          {
+            "t": "lengkap dengan",
+            "v": "right",
+            "why": [
+              "对。lengkap dengan = 配齐、附带。"
+            ]
+          },
+          {
+            "t": "sebagai",
+            "v": "wrong",
+            "why": [
+              "sebagai 是“作为”，不表示配有什么。"
+            ]
+          },
+          {
+            "t": "berlaku sampai",
+            "v": "wrong",
+            "why": [
+              "berlaku sampai 是“有效期至”，后面接日期。"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "key": "output",
+      "prompt": [
+        "最后一个开口任务（来自今天的输出题，缩短版）：朋友抽中了动物园门票。提醒他看有效期，再用 Sebaiknya 给个建议。"
+      ],
+      "kw": "coba periksa · berlaku sampai kapan · sebaiknya kalian · datang pagi",
+      "skel": "Coba periksa dulu tiketnya ____ sampai kapan. ____ kalian datang pagi.",
+      "ref": "Coba periksa dulu tiketnya berlaku sampai kapan. Sebaiknya kalian datang pagi.",
+      "notes": [
+        "整页的输出题有更长的参考答案，学完可以去对照。"
+      ]
+    }
+  ],
+  "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
