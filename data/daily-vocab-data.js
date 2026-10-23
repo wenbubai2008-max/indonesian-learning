@@ -4461,21 +4461,25 @@ window.DAILY_VOCAB_DB = [
     "root": "keluar",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-31 19:00",
-    "last_seen": "2026-08-31 19:00",
+    "last_seen": "2026-10-23 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-10-23"
     ],
     "example": "Aku lagi nyatet pengeluaran bulan ini biar nggak kebablasan.",
     "example_cn": "我正在记这个月的支出，免得花过头。",
     "lesson_occurrences": [
-      "2026-08-31 19:00"
+      "2026-08-31 19:00",
+      "2026-10-23 08:00"
     ]
   },
   {
@@ -6318,18 +6322,20 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-09-04 08:00",
+    "last_seen": "2026-10-23 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-04"
+      "2026-09-04",
+      "2026-10-23"
     ],
     "root_cn": "经过；超过",
     "lesson_occurrences": [
-      "2026-09-04 08:00"
+      "2026-09-04 08:00",
+      "2026-10-23 08:00"
     ]
   },
   {
@@ -21591,19 +21597,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-15 18:00",
-    "last_seen": "2026-10-15 18:00",
+    "last_seen": "2026-10-23 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-15"
+      "2026-10-15",
+      "2026-10-23"
     ],
     "lesson_occurrences": [
-      "2026-10-15 18:00"
+      "2026-10-15 18:00",
+      "2026-10-23 08:00"
     ]
   },
   {
@@ -22209,19 +22219,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-17 18:00",
-    "last_seen": "2026-10-17 18:00",
+    "last_seen": "2026-10-23 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-17"
+      "2026-10-17",
+      "2026-10-23"
     ],
     "lesson_occurrences": [
-      "2026-10-17 18:00"
+      "2026-10-17 18:00",
+      "2026-10-23 08:00"
     ]
   },
   {
@@ -23947,19 +23961,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "那部名叫《红色天空》的电影，讲的是一个民族不得不离开自己的星球。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-22 18:00",
-    "last_seen": "2026-10-22 18:00",
+    "last_seen": "2026-10-23 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-22"
+      "2026-10-22",
+      "2026-10-23"
     ],
     "lesson_occurrences": [
-      "2026-10-22 18:00"
+      "2026-10-22 18:00",
+      "2026-10-23 08:00"
     ]
   },
   {
@@ -23986,6 +24004,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-22 18:00"
+    ]
+  },
+  {
+    "word": "unta",
+    "cn": "骆驼",
+    "en": "camel",
+    "root": "",
+    "root_cn": "",
+    "example": "Di Mesir, turis bisa naik unta di dekat piramida, tapi kadang harganya tidak masuk akal.",
+    "example_cn": "在埃及，游客可以在金字塔附近骑骆驼，不过有时价格贵得离谱（不合理）。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 08:00"
+    ]
+  },
+  {
+    "word": "tapir",
+    "cn": "貘",
+    "en": "tapir",
+    "root": "",
+    "root_cn": "",
+    "example": "Tapir Asia badannya hitam, tapi bagian tengahnya putih, seperti sedang memakai sarung.",
+    "example_cn": "亚洲貘身体是黑色的，可中间一段是白色的，好像围着一条纱笼。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 08:00"
+    ]
+  },
+  {
+    "word": "lemari pajangan",
+    "cn": "展示柜；陈列柜",
+    "en": "display cabinet",
+    "root": "pajang",
+    "root_cn": "陈列；摆出来给人看",
+    "example": "Lemari pajangan di ruang tamu itu kelihatan mewah, padahal harganya murah.",
+    "example_cn": "客厅里那个展示柜看起来很豪华，其实价格很便宜。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 08:00"
+    ]
+  },
+  {
+    "word": "pot bunga",
+    "cn": "花盆",
+    "en": "flower pot",
+    "root": "pot",
+    "root_cn": "盆；罐",
+    "example": "Waktu memindahkan tanaman ke teras, Rani terpeleset karena lantainya licin, dan pot bunga di tangannya pecah.",
+    "example_cn": "拉妮把植物搬到露台时，因为地板很滑摔了一跤，手里的花盆摔碎了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 08:00"
+    ]
+  },
+  {
+    "word": "lincah",
+    "cn": "灵活；活泼好动",
+    "en": "agile; lively",
+    "root": "",
+    "root_cn": "",
+    "example": "Walaupun sudah tujuh puluh tahun, kakek masih lincah naik turun tangga.",
+    "example_cn": "虽然已经七十岁了，爷爷上下楼梯还是很利索。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 08:00"
+    ]
+  },
+  {
+    "word": "perfeksionis",
+    "cn": "完美主义的；完美主义者",
+    "en": "perfectionist",
+    "root": "",
+    "root_cn": "",
+    "example": "Dina orangnya perfeksionis: kopernya yang sudah rapi pun ia bongkar lagi supaya lebih rapi.",
+    "example_cn": "迪娜是个完美主义者：已经收拾整齐的行李箱，她也要拆开重新整理，好让它更整齐。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 08:00"
+    ]
+  },
+  {
+    "word": "berserat",
+    "cn": "含纤维的；有纤维的",
+    "en": "fibrous; high in fiber",
+    "root": "serat",
+    "root_cn": "纤维",
+    "example": "Demi kesehatannya, Om Hendra sekarang lebih banyak makan sayur dan buah yang berserat.",
+    "example_cn": "为了健康，亨德拉叔叔现在多吃含纤维的蔬菜和水果。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 08:00"
+    ]
+  },
+  {
+    "word": "berjemur",
+    "cn": "晒太阳（晒自己）",
+    "en": "to sunbathe; to bask in the sun",
+    "root": "jemur",
+    "root_cn": "晒",
+    "example": "Setelah sembuh dari batuk, Kakek rajin berjemur setiap pagi di halaman.",
+    "example_cn": "咳嗽好了以后，爷爷每天早上都坚持在院子里晒太阳。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 08:00"
+    ]
+  },
+  {
+    "word": "jantan",
+    "cn": "雄性的（动物）；公的",
+    "en": "male (of animals)",
+    "root": "",
+    "root_cn": "",
+    "example": "Kucing jantan biasanya lebih besar daripada kucing betina.",
+    "example_cn": "公猫通常比母猫大。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 08:00"
+    ]
+  },
+  {
+    "word": "betina",
+    "cn": "雌性的（动物）；母的",
+    "en": "female (of animals)",
+    "root": "",
+    "root_cn": "",
+    "example": "Kucing betina kami baru beranak tiga ekor, jadi ia galak kalau didekati.",
+    "example_cn": "我们家的母猫刚生了三只小猫，所以有人靠近它就会变凶。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 08:00"
     ]
   }
 ];

@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-23",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 63
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-22T23:40:42.609Z",
-    "lesson_watermark": "2026-10-22 18:00",
-    "index_updated": "2026-10-22",
-    "runtime_hash": "765dfd39ec5f09c02cb97827f9f91b0a0d7ea95448ef78c93d8b43c9c7e0f4a9",
-    "index_hash": "7ffbaaf19e19182878ae2d123ee120110196287fae253002ec3c0fe5bf3bae18",
+    "runtime_generated_at": "2026-10-23T00:32:24.596Z",
+    "lesson_watermark": "2026-10-23 08:00",
+    "index_updated": "2026-10-23",
+    "runtime_hash": "c0166c319b0a4d22867079a5faa5ecae3060c76a4c8895ab21642df0ae0636a7",
+    "index_hash": "94aa4f94c02373a5c6f2ccda95174693721c388acc6679b0c5946deca50e259a",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -50,48 +50,8 @@
   "candidates": {
     "new_dont": [
       [
-        "unta",
-        "骆驼"
-      ],
-      [
-        "tapir",
-        "貘"
-      ],
-      [
-        "lemari pajangan",
-        "展示柜"
-      ],
-      [
-        "pot bunga",
-        "花盆"
-      ],
-      [
-        "lincah",
-        "灵活活泼"
-      ],
-      [
-        "perfeksionis",
-        "完美主义的"
-      ],
-      [
-        "berserat",
-        "有纤维感"
-      ],
-      [
         "anak panah",
         "箭头"
-      ],
-      [
-        "berjemur",
-        "晒太阳"
-      ],
-      [
-        "jantan",
-        "雄性"
-      ],
-      [
-        "betina",
-        "雌性"
       ],
       [
         "sawo matang",
@@ -1312,16 +1272,6 @@
         ""
       ],
       [
-        "pengeluaran",
-        2,
-        0,
-        "",
-        "2026-10-15T13:37:20.054Z",
-        "支出；花销",
-        "keluar",
-        ""
-      ],
-      [
         "putar balik",
         3,
         0,
@@ -1350,16 +1300,6 @@
         "整理好；收拾整齐；把……弄顺（口语）",
         "rapi",
         ""
-      ],
-      [
-        "kelewatan",
-        3,
-        0,
-        "",
-        "2026-10-15T13:36:35.436Z",
-        "错过；坐过站；超过头；过分（口语）",
-        "lewat",
-        "经过；超过"
       ],
       [
         "masuk akal",
@@ -2882,6 +2822,26 @@
         "完美；圆满"
       ],
       [
+        "tenggelam",
+        2,
+        0,
+        "",
+        "2026-10-15T08:14:06.796Z",
+        "沉没；淹没；溺水",
+        "tenggelam",
+        "沉没；淹没"
+      ],
+      [
+        "guna",
+        2,
+        0,
+        "",
+        "2026-10-21T01:43:07.889Z",
+        "用途；作用；使用",
+        "guna",
+        "用途；作用"
+      ],
+      [
         "ketukar",
         5,
         0,
@@ -2980,6 +2940,106 @@
         "只要别……就行",
         "asal",
         "只要；条件是"
+      ],
+      [
+        "unta",
+        2,
+        0,
+        "",
+        "",
+        "骆驼",
+        "",
+        ""
+      ],
+      [
+        "tapir",
+        2,
+        0,
+        "",
+        "",
+        "貘",
+        "",
+        ""
+      ],
+      [
+        "lemari pajangan",
+        2,
+        0,
+        "",
+        "",
+        "展示柜；陈列柜",
+        "pajang",
+        "陈列；摆出来给人看"
+      ],
+      [
+        "pot bunga",
+        2,
+        0,
+        "",
+        "",
+        "花盆",
+        "pot",
+        "盆；罐"
+      ],
+      [
+        "lincah",
+        2,
+        0,
+        "",
+        "",
+        "灵活；活泼好动",
+        "",
+        ""
+      ],
+      [
+        "perfeksionis",
+        2,
+        0,
+        "",
+        "",
+        "完美主义的；完美主义者",
+        "",
+        ""
+      ],
+      [
+        "berserat",
+        2,
+        0,
+        "",
+        "",
+        "含纤维的；有纤维的",
+        "serat",
+        "纤维"
+      ],
+      [
+        "berjemur",
+        2,
+        0,
+        "",
+        "",
+        "晒太阳（晒自己）",
+        "jemur",
+        "晒"
+      ],
+      [
+        "jantan",
+        2,
+        0,
+        "",
+        "",
+        "雄性的（动物）；公的",
+        "",
+        ""
+      ],
+      [
+        "betina",
+        2,
+        0,
+        "",
+        "",
+        "雌性的（动物）；母的",
+        "",
+        ""
       ]
     ],
     "focus": [
@@ -3570,6 +3630,29 @@
         "judul",
         "tidak adil"
       ]
+    },
+    {
+      "date": "2026-10-23",
+      "session": "am",
+      "review_core": [
+        "pengeluaran",
+        "mengeluarkan",
+        "judul",
+        "melindungi",
+        "kelewatan"
+      ],
+      "new_words": [
+        "unta",
+        "tapir",
+        "lemari pajangan",
+        "pot bunga",
+        "lincah",
+        "perfeksionis",
+        "berserat",
+        "berjemur",
+        "jantan",
+        "betina"
+      ]
     }
   ],
   "previous_pm": {
@@ -3588,7 +3671,88 @@
       "usah"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-23",
+    "vocab": [
+      [
+        "unta",
+        "骆驼",
+        "camel",
+        "",
+        ""
+      ],
+      [
+        "tapir",
+        "貘",
+        "tapir",
+        "",
+        ""
+      ],
+      [
+        "lemari pajangan",
+        "展示柜；陈列柜",
+        "display cabinet",
+        "pajang",
+        "陈列；摆出来给人看"
+      ],
+      [
+        "pot bunga",
+        "花盆",
+        "flower pot",
+        "pot",
+        "盆；罐"
+      ],
+      [
+        "lincah",
+        "灵活；活泼好动",
+        "agile; lively",
+        "",
+        ""
+      ],
+      [
+        "perfeksionis",
+        "完美主义的；完美主义者",
+        "perfectionist",
+        "",
+        ""
+      ],
+      [
+        "berserat",
+        "含纤维的；有纤维的",
+        "fibrous; high in fiber",
+        "serat",
+        "纤维"
+      ],
+      [
+        "berjemur",
+        "晒太阳（晒自己）",
+        "to sunbathe; to bask in the sun",
+        "jemur",
+        "晒"
+      ],
+      [
+        "jantan",
+        "雄性的（动物）；公的",
+        "male (of animals)",
+        "",
+        ""
+      ],
+      [
+        "betina",
+        "雌性的（动物）；母的",
+        "female (of animals)",
+        "",
+        ""
+      ]
+    ],
+    "review_vocab": [
+      "pengeluaran",
+      "mengeluarkan",
+      "judul",
+      "melindungi",
+      "kelewatan"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
