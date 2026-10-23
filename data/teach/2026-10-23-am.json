@@ -1,0 +1,819 @@
+{
+ "version": 1,
+ "title": "早课深讲 · 10月23日",
+ "intro": [
+  "今天早上的课叫《灵活的猫和亨德拉叔叔的展示柜》。完美主义的亨德拉叔叔把展示柜摆得整整齐齐，结果公猫奥彦爬上柜子，骆驼摆件掉下来砸碎了花盆——叔叔却只是笑了笑。",
+  "今天只讲 5 样：[[berjemur]] · [[lincah]] · [[melindungi]] · [[… untuk melindungi … dari …]] · [[Untung …, jadi …]]"
+ ],
+ "items": [
+  {
+   "key": "berjemur",
+   "name": "berjemur",
+   "head": "berjemur · 晒太阳（晒自己）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Setiap pagi Mimi berjemur di depan jendela, di samping pot bunga.",
+      "cn": "每天早上，咪咪都在窗前、花盆旁边晒太阳。"
+     }
+    ],
+    "ask": "咪咪每天早上 berjemur。是谁在晒太阳？",
+    "options": [
+     {
+      "t": "咪咪自己躺在太阳下",
+      "ok": true,
+      "reply": [
+       "对。berjemur 是自己去晒太阳，后面不接宾语。"
+      ]
+     },
+     {
+      "t": "咪咪把东西拿去晒",
+      "reply": [
+       "不是。把东西拿去晒是 menjemur（menjemur pakaian）。berjemur 晒的是自己。"
+      ]
+     },
+     {
+      "t": "有人把咪咪抱去晒",
+      "reply": [
+       "不是。被人拿去晒是 dijemur。课文里咪咪是自己躺过去的。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{berjemur}} = ber- + jemur：自己待在太阳下。常说 {{berjemur pagi-pagi}}、{{berjemur di pantai}}、{{berjemur sebentar}}。同词根 {{menjemur}} 后面接要晒的东西：{{menjemur pakaian}}。"
+   ],
+   "simple": [
+    "[[berjemur]] = 自己晒太阳；[[menjemur]] + 东西 = 晒东西"
+   ],
+   "asks": [
+    {
+     "label": "berjemur、menjemur、dijemur 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "berjemur",
+         "自己晒太阳"
+        ],
+        [
+         "menjemur pakaian",
+         "晒衣服"
+        ],
+        [
+         "pakaiannya dijemur",
+         "衣服被拿去晒着"
+        ]
+       ]
+      },
+      "看后面有没有“被晒的东西”：有就用 menjemur。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "妈妈在院子里晾衣服：[[Ibu sedang ___ pakaian di halaman.]]"
+    ],
+    "options": [
+     {
+      "t": "menjemur",
+      "v": "right",
+      "why": [
+       "对。晒的是衣服，后面有宾语，用 menjemur。"
+      ]
+     },
+     {
+      "t": "berjemur",
+      "v": "wrong",
+      "why": [
+       "berjemur 是自己晒太阳，后面不能接 pakaian。"
+      ]
+     },
+     {
+      "t": "dijemur",
+      "v": "wrong",
+      "why": [
+       "dijemur 是被动，主语应该是衣服：Pakaiannya dijemur。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Kakek suka berjemur sebentar setelah sarapan.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "爷爷喜欢早饭后晒一会儿太阳",
+       "v": "right",
+       "why": [
+        "对。berjemur sebentar = 晒一会儿太阳。"
+       ]
+      },
+      {
+       "t": "爷爷喜欢早饭后晒被子",
+       "v": "wrong",
+       "why": [
+        "晒被子是 menjemur kasur；berjemur 晒的是自己。"
+       ]
+      },
+      {
+       "t": "爷爷早饭后喜欢睡一会儿",
+       "v": "wrong",
+       "why": [
+        "睡一会儿是 tidur sebentar。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟朋友说：“我们去海边晒晒太阳吧。”"
+    ],
+    "kw": "yuk · kita · berjemur · di pantai",
+    "skel": "Yuk, kita ____ di ____.",
+    "ref": "Yuk, kita berjemur di pantai.",
+    "notes": [
+     "yuk 是朋友之间的“走吧、来吧”。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "说：“医生建议我每天早上晒十分钟太阳。”"
+    ],
+    "kw": "dokter · menyarankan · berjemur · sepuluh menit · setiap pagi",
+    "skel": "Dokter menyarankan saya ____ sepuluh menit ____ pagi.",
+    "ref": "Dokter menyarankan saya berjemur sepuluh menit setiap pagi."
+   },
+   "final": {
+    "cn": "“中午太晒了，别在外面晒太阳。”",
+    "ref": "Siang ini terlalu terik, jangan berjemur di luar."
+   },
+   "remind": "berjemur = 自己晒太阳（不接宾语）；晒东西用 menjemur pakaian。"
+  },
+  {
+   "key": "lincah",
+   "name": "lincah",
+   "head": "lincah · 灵活；活泼好动",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Ia juga punya dua kucing: Oyen, kucing jantan yang lincah, dan Mimi, kucing betina yang pemalas.",
+      "cn": "亨德拉叔叔还养了两只猫：灵活好动的公猫奥彦，和懒洋洋的母猫咪咪。"
+     }
+    ],
+    "ask": "奥彦 lincah，咪咪 pemalas。后来爬上柜子的是哪一只？",
+    "options": [
+     {
+      "t": "奥彦，因为它灵活好动",
+      "ok": true,
+      "reply": [
+       "对。lincah 的猫动作轻快，爬高跳低都不费劲，所以是奥彦爬上了柜顶。"
+      ]
+     },
+     {
+      "t": "咪咪，因为它很懒",
+      "reply": [
+       "不对。pemalas 是“懒”，咪咪只在窗前晒太阳。爬上柜子的是 lincah 的奥彦。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{lincah}} 形容动作轻快、灵巧、精力足，人和动物都能用，常带称赞：{{anak yang lincah}}、{{gerakannya lincah}}、{{Kakek masih lincah naik turun tangga.}}"
+   ],
+   "simple": [
+    "[[lincah]] = 动作灵活、活泼好动（带夸的味道）"
+   ],
+   "asks": [
+    {
+     "label": "lincah 和 cepat、nakal 有什么不同？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "lincah",
+         "灵巧、轻快，夸人"
+        ],
+        [
+         "cepat",
+         "只是快"
+        ],
+        [
+         "nakal",
+         "调皮、不听话"
+        ]
+       ]
+      },
+      "{{Anaknya lincah.}} 是夸孩子好动灵活；{{Anaknya nakal.}} 是说孩子调皮。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "教练夸一个小球员：[[Gerakannya ___ sekali, lawan susah merebut bolanya.]]"
+    ],
+    "options": [
+     {
+      "t": "lincah",
+      "v": "right",
+      "why": [
+       "对。动作灵巧、对手抢不到球：gerakannya lincah。"
+      ]
+     },
+     {
+      "t": "nakal",
+      "v": "wrong",
+      "why": [
+       "nakal 是调皮不听话，不是夸动作好。"
+      ]
+     },
+     {
+      "t": "pemalas",
+      "v": "wrong",
+      "why": [
+       "pemalas 是懒，和抢不到球的意思相反。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Walaupun sudah tua, nenek masih lincah.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "奶奶虽然老了，身手还很利索",
+       "v": "right",
+       "why": [
+        "对。lincah 说老人行动利索，是夸奖。"
+       ]
+      },
+      {
+       "t": "奶奶虽然老了，还是很调皮",
+       "v": "wrong",
+       "why": [
+        "调皮是 nakal；lincah 说的是动作灵活。"
+       ]
+      },
+      {
+       "t": "奶奶虽然老了，说话还很快",
+       "v": "wrong",
+       "why": [
+        "lincah 说的是身体动作，不是说话快。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟朋友夸你的小狗：“我的狗特别灵活，跳得很高。”"
+    ],
+    "kw": "anjingku · lincah banget · bisa lompat tinggi",
+    "skel": "Anjingku ____ banget, bisa ____ tinggi.",
+    "ref": "Anjingku lincah banget, bisa lompat tinggi.",
+    "notes": [
+     "banget = sekali；lompat 是口语里常用的“跳”。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "说：“那个舞者动作很灵活。”"
+    ],
+    "kw": "penari itu · gerakannya · lincah",
+    "skel": "Penari itu ____ lincah.",
+    "ref": "Penari itu gerakannya lincah."
+   },
+   "final": {
+    "cn": "“我儿子很好动，一刻也停不下来。”",
+    "ref": "Anak saya lincah sekali, tidak bisa diam."
+   },
+   "remind": "lincah = 动作灵活、活泼（夸）；只是快用 cepat；调皮用 nakal。"
+  },
+  {
+   "key": "melindungi",
+   "name": "melindungi",
+   "head": "melindungi · 保护（复习词）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "句子",
+      "id": "Sekarang Om Hendra memasang pintu kaca pada lemari pajangannya untuk melindungi koleksinya dari debu dan kucing.",
+      "cn": "现在亨德拉叔叔给展示柜装了玻璃门，好保护他的收藏不沾灰尘、不被猫碰。"
+     }
+    ],
+    "ask": "叔叔装玻璃门，是为了 melindungi koleksinya。他要防的是什么？",
+    "options": [
+     {
+      "t": "灰尘和猫",
+      "ok": true,
+      "reply": [
+       "对。melindungi A dari B：dari 后面就是要防的东西——debu dan kucing。"
+      ]
+     },
+     {
+      "t": "小偷",
+      "reply": [
+       "句子里没说小偷。dari 后面是 debu dan kucing（灰尘和猫）。"
+      ]
+     },
+     {
+      "t": "他想把收藏卖掉",
+      "reply": [
+       "不是。melindungi 是保护，不是卖。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{melindungi}} = meN- + lindung + -i，“保护、遮挡”。最常用的结构是 {{melindungi A dari B}}：保护 A 不受 B 伤害。{{Helm melindungi kepala dari benturan.}}"
+   ],
+   "simple": [
+    "[[melindungi A dari B]] = 保护 A 不受 B 的伤害"
+   ],
+   "asks": [
+    {
+     "label": "melindungi 和 menjaga 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "melindungi … dari …",
+         "挡住危险、伤害"
+        ],
+        [
+         "menjaga …",
+         "看着、照看、维持"
+        ]
+       ]
+      },
+      "{{menjaga anak}} 是看孩子；{{melindungi anak dari bahaya}} 是保护孩子免受危险。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Pakai sunblock untuk ___ kulit dari sinar matahari.]]（涂防晒保护皮肤不被晒伤。）"
+    ],
+    "options": [
+     {
+      "t": "melindungi",
+      "v": "right",
+      "why": [
+       "对。挡住阳光的伤害：melindungi kulit dari sinar matahari。"
+      ]
+     },
+     {
+      "t": "menjaga",
+      "v": "ok",
+      "why": [
+       "也能听懂，menjaga kesehatan kulit 是“保养皮肤”；但后面接 dari 挡住伤害时，melindungi 更自然。"
+      ]
+     },
+     {
+      "t": "mengeluarkan",
+      "v": "wrong",
+      "why": [
+       "mengeluarkan 是拿出、花钱，和保护无关。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Atap teras itu melindungi motor kami dari hujan.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "露台的顶棚替我们的摩托车挡雨",
+       "v": "right",
+       "why": [
+        "对。melindungi A dari B：保护摩托车不被雨淋。"
+       ]
+      },
+      {
+       "t": "露台的顶棚被雨淋坏了",
+       "v": "wrong",
+       "why": [
+        "句子里顶棚是保护者，没有说它坏了。"
+       ]
+      },
+      {
+       "t": "我们的摩托车保护了顶棚",
+       "v": "wrong",
+       "why": [
+        "主语是 atap teras，是顶棚保护摩托车。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "对孩子说：“戴上帽子，保护你的头不被太阳晒。”"
+    ],
+    "kw": "pakai topi · untuk melindungi · kepalamu · dari panas",
+    "skel": "Pakai topi untuk ____ kepalamu dari ____.",
+    "ref": "Pakai topi untuk melindungi kepalamu dari panas."
+   },
+   "recall": {
+    "prompt": [
+     "说：“这个手机壳可以保护手机不摔坏。”"
+    ],
+    "kw": "casing ini · bisa melindungi · HP · dari benturan",
+    "skel": "Casing ini bisa ____ HP dari ____.",
+    "ref": "Casing ini bisa melindungi HP dari benturan.",
+    "notes": [
+     "HP = 手机，casing = 手机壳，benturan = 磕碰。"
+    ]
+   },
+   "final": {
+    "cn": "“妈妈总是保护我们不受危险。”",
+    "ref": "Ibu selalu melindungi kami dari bahaya."
+   },
+   "remind": "melindungi A dari B = 保护 A 不受 B 伤害；照看用 menjaga。"
+  },
+  {
+   "key": "untuklindungi",
+   "name": "… untuk melindungi … dari …",
+   "head": "… untuk melindungi … dari … · 做某事来保护……不受……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "输出参考",
+      "id": "Untuk melindunginya dari debu, saya selalu menutup pintu lemarinya rapat-rapat dan membersihkannya seminggu sekali.",
+      "cn": "为了不让它们落灰，我总是把柜门关紧，并且每周擦一次。"
+     }
+    ],
+    "ask": "这句话把 untuk melindungi… 放在了句子开头。它说的是什么？",
+    "options": [
+     {
+      "t": "做后面那些事的目的",
+      "ok": true,
+      "reply": [
+       "对。untuk = 为了；先说目的，再说做法。放句首、句尾都可以。"
+      ]
+     },
+     {
+      "t": "做完以后的结果",
+      "reply": [
+       "不是。结果会用 jadi / sehingga。untuk 引出的是目的。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "句型：做法 + {{untuk melindungi}} A {{dari}} B，或者把目的放前面：{{Untuk melindungi A dari B, …}}。melindungi 后加 -nya 指前面说过的东西：{{melindunginya}}。"
+   ],
+   "simple": [
+    "[[做法 + untuk melindungi A dari B]] = 做……来保护 A 不受 B"
+   ],
+   "asks": [
+    {
+     "label": "untuk 和 supaya 能换吗？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "untuk + 动词",
+         "untuk melindungi kulit"
+        ],
+        [
+         "supaya + 句子",
+         "supaya kulitnya tidak terbakar"
+        ]
+       ]
+      },
+      "untuk 后面直接接动词；supaya 后面接一个完整的小句。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Kami menutup kolam itu ___ melindungi anak-anak dari bahaya.]]"
+    ],
+    "options": [
+     {
+      "t": "untuk",
+      "v": "right",
+      "why": [
+       "对。untuk + 动词，说目的。"
+      ]
+     },
+     {
+      "t": "karena",
+      "v": "wrong",
+      "why": [
+       "karena 引出原因，后面不直接接 melindungi 这个目的。"
+      ]
+     },
+     {
+      "t": "sehingga",
+      "v": "wrong",
+      "why": [
+       "sehingga 引出结果，这里说的是目的。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "哪句话的意思是“为了保护眼睛不受阳光伤害，他戴了墨镜”？"
+     ],
+     "options": [
+      {
+       "t": "Untuk melindungi matanya dari sinar matahari, ia memakai kacamata hitam.",
+       "v": "right",
+       "why": [
+        "对。目的放句首，后面接做法。"
+       ]
+      },
+      {
+       "t": "Ia melindungi kacamata hitam dari matanya.",
+       "v": "wrong",
+       "why": [
+        "主宾颠倒了：要保护的是眼睛。"
+       ]
+      },
+      {
+       "t": "Karena memakai kacamata hitam, ia tidak bisa melihat.",
+       "v": "wrong",
+       "why": [
+        "这句是“因为戴着墨镜，他看不见”，说的是结果，不是保护眼睛的目的。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "说：“我们给沙发盖上布，保护它不被猫抓。”"
+    ],
+    "kw": "kami menutup sofa · dengan kain · untuk melindunginya · dari cakaran kucing",
+    "skel": "Kami menutup sofa dengan kain untuk ____ dari cakaran ____.",
+    "ref": "Kami menutup sofa dengan kain untuk melindunginya dari cakaran kucing.",
+    "notes": [
+     "cakaran = 抓痕、抓挠。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "说：“为了保护文件不被雨淋，我把它放进塑料袋。”"
+    ],
+    "kw": "untuk melindungi · dokumen · dari hujan · saya memasukkannya · ke kantong plastik",
+    "skel": "Untuk melindungi dokumen dari ____, saya memasukkannya ke ____ plastik.",
+    "ref": "Untuk melindungi dokumen dari hujan, saya memasukkannya ke kantong plastik."
+   },
+   "final": {
+    "cn": "“农民盖了网子，保护水果不被鸟吃。”",
+    "ref": "Petani memasang jaring untuk melindungi buahnya dari burung."
+   },
+   "remind": "做法 + untuk melindungi A dari B；也可以把 Untuk melindungi … 放句首。"
+  },
+  {
+   "key": "untung",
+   "name": "Untung …, jadi …",
+   "head": "Untung …, jadi … · 幸好……，所以……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Untung patungnya terbuat dari kayu, jadi tidak rusak.",
+      "cn": "幸好摆件是木头做的，没有坏。"
+     }
+    ],
+    "ask": "摆件掉下来了。Untung 后面说的是什么？",
+    "options": [
+     {
+      "t": "让结果没那么糟的好运气",
+      "ok": true,
+      "reply": [
+       "对。Untung … = 幸好……，后面 jadi … 说因此避免了什么。"
+      ]
+     },
+     {
+      "t": "赚了钱",
+      "reply": [
+       "这里不是赚钱。untung 单用也有“赚到、利润”的意思，但放在句首 Untung … 是“幸好”。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{Untung …, jadi …}}：先说幸运的情况，再说因此没出事。口语也说 {{Untungnya …}}。{{Untung bawa payung, jadi nggak kehujanan.}}"
+   ],
+   "simple": [
+    "[[Untung …, jadi …]] = 幸好……，所以……"
+   ],
+   "asks": [
+    {
+     "label": "Untung 和 Sayang 是一对吗？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Untung …",
+         "幸好……（好事）"
+        ],
+        [
+         "Sayang …",
+         "可惜……（坏事）"
+        ]
+       ]
+      },
+      "{{Untung masih ada tiket.}}（幸好还有票。）/ {{Sayang tiketnya habis.}}（可惜票卖完了。）"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "你差点没赶上火车：[[___ keretanya telat lima menit, jadi saya masih sempat naik.]]"
+    ],
+    "options": [
+     {
+      "t": "Untung",
+      "v": "right",
+      "why": [
+       "对。火车晚点是好运气，让你赶上了：Untung …, jadi …。"
+      ]
+     },
+     {
+      "t": "Sayang",
+      "v": "wrong",
+      "why": [
+       "sayang 是“可惜”，后面接坏事；这里结果是好的。"
+      ]
+     },
+     {
+      "t": "Karena itu",
+      "v": "wrong",
+      "why": [
+       "karena itu 是“因此”，要放在原因之后，不能这样开头说幸好。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Untung ada teman yang bisa bahasa Indonesia, jadi kami tidak tersesat.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "幸好有会印尼语的朋友，所以我们没迷路",
+       "v": "right",
+       "why": [
+        "对。Untung … = 幸好；jadi … = 所以。"
+       ]
+      },
+      {
+       "t": "可惜朋友不会印尼语，所以我们迷路了",
+       "v": "wrong",
+       "why": [
+        "“可惜”是 sayang，而且句子里没迷路。"
+       ]
+      },
+      {
+       "t": "朋友赚了钱，所以我们没迷路",
+       "v": "wrong",
+       "why": [
+        "这里 untung 是“幸好”，不是赚钱。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟同事说：“幸好我存了文件，所以没丢。”"
+    ],
+    "kw": "untung · aku udah simpan · filenya · jadi nggak hilang",
+    "skel": "Untung aku udah ____ filenya, jadi nggak ____.",
+    "ref": "Untung aku udah simpan filenya, jadi nggak hilang.",
+    "notes": [
+     "udah = sudah，nggak = tidak。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "说：“幸好下雨前我们就到家了，所以没淋湿。”"
+    ],
+    "kw": "untung · kami sampai rumah · sebelum hujan · jadi tidak kehujanan",
+    "skel": "Untung kami sampai rumah sebelum ____, jadi tidak ____.",
+    "ref": "Untung kami sampai rumah sebelum hujan, jadi tidak kehujanan."
+   },
+   "final": {
+    "cn": "“幸好医生来得快，所以爷爷没事。”",
+    "ref": "Untung dokternya cepat datang, jadi kakek tidak apa-apa."
+   },
+   "remind": "Untung …, jadi … = 幸好……所以……；相反的“可惜”用 Sayang …。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "其余新词词卡里都有完整讲解，这里只扫一眼。不熟的点一下，标出来给自己看。"
+  ],
+  "words": [
+   "unta",
+   "tapir",
+   "lemari pajangan",
+   "pot bunga",
+   "perfeksionis",
+   "berserat",
+   "jantan",
+   "betina"
+  ]
+ },
+ "reading": [
+  {
+   "key": "jatuh",
+   "sentence": "Patung unta di rak itu jatuh dan mengenai pot bunga di bawahnya, sampai potnya pecah.",
+   "cn": "那层上的骆驼摆件掉下来砸到了下面的花盆，把花盆砸碎了。",
+   "chunks": [
+    [
+     "Patung unta di rak itu",
+     "那层上的骆驼摆件",
+     "unta = 骆驼（新词）"
+    ],
+    [
+     "jatuh dan mengenai",
+     "掉下来，砸到了",
+     "mengenai 在这里是“碰到、击中”"
+    ],
+    [
+     "pot bunga di bawahnya,",
+     "下面的花盆",
+     "pot bunga = 花盆（新词）"
+    ],
+    [
+     "sampai potnya pecah.",
+     "以至于花盆碎了",
+     "sampai + 结果 = 以至于……"
+    ]
+   ],
+   "steal": [
+    "值得借用的是 [[sampai + 结果]]：“……到……的程度”。{{Dia tertawa sampai menangis.}}（他笑到流眼泪。）"
+   ],
+   "check": {
+    "q": [
+     "[[Aku capek banget, ___ ketiduran di bus.]]（我累得在公交上睡着了。）"
+    ],
+    "options": [
+     {
+      "t": "sampai",
+      "v": "right",
+      "why": [
+       "对。sampai + 结果：累到睡着。"
+      ]
+     },
+     {
+      "t": "untuk",
+      "v": "wrong",
+      "why": [
+       "untuk 说目的，不说程度和结果。"
+      ]
+     },
+     {
+      "t": "untung",
+      "v": "wrong",
+      "why": [
+       "untung 是“幸好”，意思不对。"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今天的输出题，缩短版）：说一件你家里你很小心保护的东西，以及你怎么保护它。"
+   ],
+   "kw": "di rumah saya ada · lemari pajangan · untuk melindunginya dari debu · saya",
+   "skel": "Di rumah saya ada ____ kecil. Untuk ____ dari debu, saya menutupnya dengan kaca.",
+   "ref": "Di rumah saya ada lemari pajangan kecil. Untuk melindunginya dari debu, saya menutupnya dengan kaca.",
+   "notes": [
+    "整页的输出题有更长的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
