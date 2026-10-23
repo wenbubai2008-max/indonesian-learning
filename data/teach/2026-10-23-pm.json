@@ -1,0 +1,858 @@
+{
+ "version": 1,
+ "title": "晚课深讲 · 10月23日",
+ "intro": [
+  "今晚的课叫《隔壁工地把电挖断了》。Dimas 家隔壁在盖商铺，工人挖坏了电线，他的设计稿没保存就断电了；工头 Joko 叔道歉、叫来电力公司，下午才来电，Dimas 只好加班。",
+  "今晚只讲 5 样：[[jadi]] · [[menutupi]] · [[kebaca]] · [[Sambil menunggu, …]] · [[Saya jadi … terus.]]"
+ ],
+ "items": [
+  {
+   "key": "jadi",
+   "name": "jadi",
+   "head": "jadi · （计划）成不成、照常进行",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "词卡例句",
+      "id": "Tadinya aku niat lari pagi, tapi nggak jadi karena hujan.",
+      "cn": "我本来打算去晨跑，结果因为下雨没去成。"
+     }
+    ],
+    "ask": "这里的 nggak jadi 是什么意思？",
+    "options": [
+     {
+      "t": "计划取消了，没去成",
+      "reply": [
+       "对。nggak jadi = 原来的计划没进行。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "没有变成晨跑的人",
+      "reply": [
+       "不是。“变成”的 jadi 后面要接名词或形容词，这里说的是计划成不成。"
+      ]
+     },
+     {
+      "t": "跑得不好",
+      "reply": [
+       "不是。跑得好不好要用 bagus / jelek 来说，nggak jadi 说的是根本没去。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{jadi}} 最容易漏掉的用法是“计划成不成”：问 {{Jadi nggak?}}（还去吗？还办吗？），回答 {{Jadi!}}（照常！）或 {{Nggak jadi.}}（不了，取消了）。",
+    "正式公告写 {{dibatalkan}}（取消）；聊天里说 {{nggak jadi}} 最自然。书面的 {{menjadi}} 只表示“成为”，不用来问计划。"
+   ],
+   "simple": [
+    "[[Jadi nggak?]] = 还照计划吗？[[Nggak jadi.]] = 取消了"
+   ],
+   "asks": [
+    {
+     "label": "jadi 的三种用法怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Jadi nonton nggak?",
+         "还去看电影吗？（成不成）"
+        ],
+        [
+         "Aku jadi telat.",
+         "害得我迟到了（结果）"
+        ],
+        [
+         "Jadi, gimana?",
+         "那么，怎么办？（所以、那么）"
+        ]
+       ]
+      },
+      "看位置：问计划、答计划时是“成不成”；放在原因后面是“结果就……”；放句首是“那么”。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Hujannya deras banget. Kita ___ ke pantai nggak?]]",
+     "（雨好大，我们还去不去海边？）"
+    ],
+    "options": [
+     {
+      "t": "jadi",
+      "v": "right",
+      "why": [
+       "对。问原来的计划还算不算数：Kita jadi … nggak?"
+      ]
+     },
+     {
+      "t": "menjadi",
+      "v": "wrong",
+      "why": [
+       "menjadi 是书面的“成为”，不用来问计划。"
+      ]
+     },
+     {
+      "t": "terjadi",
+      "v": "wrong",
+      "why": [
+       "terjadi 是“发生”（事故、问题），不说自己的计划。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。朋友问你 Jadi nonton nggak?，可你临时有事去不了。最自然的回答："
+     ],
+     "options": [
+      {
+       "t": "Nggak jadi, ya. Aku ada urusan mendadak.",
+       "v": "right",
+       "why": [
+        "对。nggak jadi = 不去了，后面说原因。"
+       ]
+      },
+      {
+       "t": "Batal, ya. Aku ada urusan mendadak.",
+       "v": "ok",
+       "why": [
+        "也可以。batal 意思一样，语气更干脆；朋友之间更常说 nggak jadi。"
+       ]
+      },
+      {
+       "t": "Aku nggak menjadi, ya.",
+       "v": "wrong",
+       "why": [
+        "menjadi 是“成为”，这句话没有意思。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "同事问你午饭还一起吃吗。你说：“当然照常啊，十二点见。”先说出声，再点按钮。"
+    ],
+    "kw": "Jadi, dong · ketemu · jam dua belas",
+    "skel": "____, dong. Ketemu jam dua ____, ya.",
+    "ref": "Jadi, dong. Ketemu jam dua belas, ya.",
+    "notes": [
+     "dong 加强语气：“当然啦”。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "你告诉家人：“周日不去奶奶家了，因为奶奶生病了。”"
+    ],
+    "kw": "nggak jadi · ke rumah Nenek · soalnya",
+    "skel": "Hari Minggu kita nggak ____ ke rumah Nenek, soalnya Nenek lagi ____.",
+    "ref": "Hari Minggu kita nggak jadi ke rumah Nenek, soalnya Nenek lagi sakit.",
+    "notes": [
+     "soalnya = karena（口语），lagi = sedang。"
+    ]
+   },
+   "final": {
+    "cn": "（跟另一半）“那我们到底还搬不搬家？”",
+    "ref": "Kita jadi pindah rumah nggak, sih?"
+   },
+   "remind": "问计划说 Jadi nggak?；回答 Jadi! / Nggak jadi.；正式公告写 dibatalkan。"
+  },
+  {
+   "key": "tutupi",
+   "name": "menutupi",
+   "head": "menutupi · 盖住；遮住；掩饰",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Pak Joko",
+      "id": "Maaf ya, Mas. Sambil nunggu, lubangnya kami tutupin pakai papan dulu biar nggak ada yang jatuh.",
+      "cn": "对不起啊，小哥。等的时候，我们先用木板把坑盖上，免得有人掉下去。"
+     }
+    ],
+    "ask": "工人们用木板对那个坑做了什么？",
+    "options": [
+     {
+      "t": "把坑盖住",
+      "reply": [
+       "对。tutupin 是 menutupi 的口语：把东西盖在上面。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "把坑填平",
+      "reply": [
+       "不是。填平要用土把坑填满，木板只是盖在上面。"
+      ]
+     },
+     {
+      "t": "把工地大门关上",
+      "reply": [
+       "不是。关门是 menutup pintu；这里盖的是坑。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{menutupi}} = 把东西盖在某个表面上：{{menutupi lubang dengan papan}}（用木板盖住坑）。也能说掩饰情绪或错误：{{menutupi rasa malu}}、{{menutupi kesalahan}}。",
+    "和 {{menutup}} 分开：menutup 是“关上”（{{menutup pintu}}、{{menutup toko}}）。口语把 -i 说成 -in：{{tutupin}} / {{nutupin}}。"
+   ],
+   "simple": [
+    "[[menutupi]] = 盖住、遮住、掩饰；[[menutup]] = 关上；口语 tutupin"
+   ],
+   "asks": [
+    {
+     "label": "menutup 和 menutupi 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Tolong tutup pintunya.",
+         "请把门关上（menutup）"
+        ],
+        [
+         "Lubangnya ditutupi papan.",
+         "坑用木板盖住了（menutupi）"
+        ],
+        [
+         "Dia ketawa buat menutupi rasa malunya.",
+         "他笑着掩饰难为情（menutupi）"
+        ]
+       ]
+      },
+      "开关的动作用 menutup；把东西盖到表面上，或把情绪、错误遮掩起来，用 menutupi。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Ibu ___ makanan di meja dengan tudung saji.]]",
+     "（妈妈用菜罩把桌上的饭菜盖住。）"
+    ],
+    "options": [
+     {
+      "t": "menutupi",
+      "v": "right",
+      "why": [
+       "对。把菜罩盖在饭菜上面：menutupi。"
+      ]
+     },
+     {
+      "t": "menutup",
+      "v": "ok",
+      "why": [
+       "日常口语里也能说 menutup makanan；说“盖住表面”时 menutupi 更准确。"
+      ]
+     },
+     {
+      "t": "menyembunyikan",
+      "v": "wrong",
+      "why": [
+       "menyembunyikan 是“藏起来不让人看见”，妈妈只是防苍蝇，不是藏饭菜。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。同事出了错却装作没事。你说：“他想掩盖自己的错误。”"
+     ],
+     "options": [
+      {
+       "t": "Dia mau menutupi kesalahannya.",
+       "v": "right",
+       "why": [
+        "对。menutupi kesalahan = 掩盖错误。"
+       ]
+      },
+      {
+       "t": "Dia mau menyembunyikan kesalahannya.",
+       "v": "ok",
+       "why": [
+        "也可以。menyembunyikan kesalahan 是“隐瞒错误”，意思很接近。"
+       ]
+      },
+      {
+       "t": "Dia mau menutup kesalahannya.",
+       "v": "wrong",
+       "why": [
+        "menutup 是“关上”，不说 menutup kesalahan。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "下雨了，你让孩子用塑料袋把书包盖住：“书包用塑料袋盖上哦！”"
+    ],
+    "kw": "tutupin · pakai plastik",
+    "skel": "Tasnya ____ pakai ____, ya!",
+    "ref": "Tasnya tutupin pakai plastik, ya!",
+    "notes": [
+     "tutupin = tutupi（menutupi 的口语命令形）。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "朋友失恋了却一直开玩笑。你说：“他一直开玩笑，是为了掩饰难过。”"
+    ],
+    "kw": "bercanda terus · buat menutupi · rasa sedihnya",
+    "skel": "Dia bercanda terus buat ____ rasa ____.",
+    "ref": "Dia bercanda terus buat menutupi rasa sedihnya.",
+    "notes": [
+     "buat = untuk（口语）。"
+    ]
+   },
+   "final": {
+    "cn": "（跟朋友）“她戴帽子遮住刚剪坏的头发。”",
+    "ref": "Dia pakai topi buat menutupi rambutnya yang salah potong."
+   },
+   "remind": "menutupi = 盖住表面／掩饰（rasa malu, kesalahan）；menutup = 关上；口语 tutupin。"
+  },
+  {
+   "key": "kebaca",
+   "name": "kebaca",
+   "head": "kebaca · 看得清、读得出来（口语）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Dimas",
+      "id": "Tadi saya mau telepon nomor di papan proyek, tapi tulisannya udah pudar, nggak kebaca.",
+      "cn": "我刚才想打工地牌子上的电话，可是字已经褪色了，认不出来。"
+     }
+    ],
+    "ask": "Dimas 说 nggak kebaca，问题出在哪里？",
+    "options": [
+     {
+      "t": "字褪色了，读不出来",
+      "reply": [
+       "对。nggak kebaca = 字读不出来、看不清。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "他根本没去看牌子",
+      "reply": [
+       "不是。没去看是 nggak baca / nggak lihat；他看了，只是读不出来。"
+      ]
+     },
+     {
+      "t": "号码打不通",
+      "reply": [
+       "不是。打不通要说 nggak nyambung；他连号码都认不出来。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{kebaca}} 是口语，等于标准语 {{terbaca}}：字迹、号码、屏幕上的字“读得出来”。最常用否定：{{nggak kebaca}}。",
+    "和 {{kelihatan}}（看得见）不同：{{Tulisannya kelihatan, tapi nggak kebaca.}} 字看得见，可读不出来。还可以说心思被看穿：{{Niatnya kebaca.}}"
+   ],
+   "simple": [
+    "[[nggak kebaca]] = 看不清、读不出来（标准语 tidak terbaca）"
+   ],
+   "asks": [
+    {
+     "label": "kebaca、kelihatan、dibaca 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Nomornya nggak kebaca.",
+         "号码读不出来（字不清）"
+        ],
+        [
+         "Nomornya nggak kelihatan.",
+         "号码看不见（被挡住或太远）"
+        ],
+        [
+         "Pesannya belum dibaca.",
+         "消息还没被人读（没人去看）"
+        ]
+       ]
+      },
+      "字在、人也看了，就是读不出来：nggak kebaca。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Layar HP-ku retak, pesannya nggak ___.]]",
+     "（手机屏幕裂了，消息看不清。）"
+    ],
+    "options": [
+     {
+      "t": "kebaca",
+      "v": "right",
+      "why": [
+       "对。屏幕裂了，字读不出来：nggak kebaca。"
+      ]
+     },
+     {
+      "t": "terbaca",
+      "v": "ok",
+      "why": [
+       "也对，是标准语说法，写作、正式场合用；聊天里多说 kebaca。"
+      ]
+     },
+     {
+      "t": "dibaca",
+      "v": "wrong",
+      "why": [
+       "nggak dibaca 是“没人读”，好像是你没去看，不是看不清。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。朋友喜欢一个人都写在脸上了，大家都看出来了。你笑他："
+     ],
+     "options": [
+      {
+       "t": "Niatmu kebaca banget, tahu!",
+       "v": "right",
+       "why": [
+        "对。kebaca 也能说心思被看穿。"
+       ]
+      },
+      {
+       "t": "Niatmu kelihatan banget, tahu!",
+       "v": "ok",
+       "why": [
+        "也可以，意思是“太明显了”；kebaca 更有“被看穿”的味道。"
+       ]
+      },
+      {
+       "t": "Niatmu dibaca banget, tahu!",
+       "v": "wrong",
+       "why": [
+        "dibaca 是“被读”，不这么说心思被看穿。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "超市小票印得太淡，你跟收银员说：“不好意思，这张小票上的字看不清。”"
+    ],
+    "kw": "Maaf, Mbak · struk ini · nggak kebaca",
+    "skel": "Maaf, Mbak, tulisan di ____ ini nggak ____.",
+    "ref": "Maaf, Mbak, tulisan di struk ini nggak kebaca.",
+    "notes": [
+     "struk = 小票。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "老师在白板上写得太小，你跟同学说：“从后面根本看不清。”"
+    ],
+    "kw": "dari belakang · sama sekali · nggak kebaca",
+    "skel": "Dari belakang tulisannya sama ____ nggak ____.",
+    "ref": "Dari belakang tulisannya sama sekali nggak kebaca."
+   },
+   "final": {
+    "cn": "（对同事）“这个文件扫描得太糊了，好多字读不出来。”",
+    "ref": "Hasil scan file ini buram, banyak kata yang nggak kebaca."
+   },
+   "remind": "nggak kebaca = 字读不出来（标准 tidak terbaca）；看不见用 kelihatan；没人读用 dibaca。"
+  },
+  {
+   "key": "sambil",
+   "name": "Sambil menunggu, …",
+   "head": "Sambil menunggu, … · 等待的时候（顺便）……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Sambil menunggu, para pekerja menutupi lubang galian dengan papan supaya tidak ada yang jatuh.",
+      "cn": "等待的时候，工人们用木板把挖开的坑盖住，免得有人掉进去。"
+     }
+    ],
+    "ask": "工人们是什么时候把坑盖住的？",
+    "options": [
+     {
+      "t": "在等技工来的那段时间",
+      "reply": [
+       "对。Sambil menunggu = 趁着等的时候，同时做另一件事。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "技工修好电线以后",
+      "reply": [
+       "不是。修好以后要说 setelah；sambil 是“同时”。"
+      ]
+     },
+     {
+      "t": "停电以前",
+      "reply": [
+       "不是。sebelum 才是“之前”；坑是在等人的时候盖的。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "句型：**Sambil menunggu, + 做另一件事**：利用等待的时间顺便做点别的。口语说 {{Sambil nunggu, …}}。",
+    "{{sambil}} 也可以放在句子中间：{{Ia berjemur sambil ngobrol.}}（他一边晒太阳一边聊天。）同一个人同时做两件事用 sambil；两个人各做各的，用 {{sementara itu}}（与此同时）。"
+   ],
+   "simple": [
+    "[[Sambil menunggu, …]] = 等的时候顺便……；口语 Sambil nunggu"
+   ],
+   "asks": [
+    {
+     "label": "sambil 和 sementara itu 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Sambil menunggu, aku baca buku.",
+         "等的时候，我看看书（同一个人）"
+        ],
+        [
+         "Aku masak sambil dengar musik.",
+         "我边做饭边听音乐（同一个人）"
+        ],
+        [
+         "Aku masak. Sementara itu, adikku main.",
+         "我做饭，与此同时弟弟在玩（两个人）"
+        ]
+       ]
+      },
+      "同一个人同时做两件事：sambil；两个人各做各的：sementara itu。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[___, aku balas e-mail dulu.]]",
+     "（等的时候，我先回个邮件。）"
+    ],
+    "options": [
+     {
+      "t": "Sambil menunggu",
+      "v": "right",
+      "why": [
+       "对。利用等的时间顺便做事。"
+      ]
+     },
+     {
+      "t": "Sementara menunggu",
+      "v": "ok",
+      "why": [
+       "也可以，意思是“在等的期间”，书面一点。"
+      ]
+     },
+     {
+      "t": "Setelah menunggu",
+      "v": "wrong",
+      "why": [
+       "setelah 是“等完以后”，和“等的时候”意思不同。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。哪一句最自然？"
+     ],
+     "options": [
+      {
+       "t": "Aku dengar podcast sambil nyetir.",
+       "v": "right",
+       "why": [
+        "对。主要动作 + sambil + 同时的动作。"
+       ]
+      },
+      {
+       "t": "Aku sambil dengar podcast nyetir.",
+       "v": "wrong",
+       "why": [
+        "sambil 要放在第二个动作前面：… sambil nyetir。"
+       ]
+      },
+      {
+       "t": "Sambil aku, dengar podcast.",
+       "v": "wrong",
+       "why": [
+        "sambil 后面要接动作，不能只接人。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "在医院排队时，你跟朋友说：“等的时候我们先吃点东西吧。”"
+    ],
+    "kw": "Sambil nunggu · makan dulu · yuk",
+    "skel": "Sambil ____, kita makan ____, yuk.",
+    "ref": "Sambil nunggu, kita makan dulu, yuk.",
+    "notes": [
+     "nunggu = menunggu，yuk = 一起……吧。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "在机场等登机，你给妈妈发语音：“等的时候，我先给你打个电话哦。”"
+    ],
+    "kw": "Sambil menunggu · telepon Mama · dulu",
+    "skel": "Sambil ____, aku telepon Mama ____, ya.",
+    "ref": "Sambil menunggu, aku telepon Mama dulu, ya."
+   },
+   "final": {
+    "cn": "（对同事）“等会议开始的时候，我先把资料打印出来。”",
+    "ref": "Sambil menunggu rapat mulai, saya print bahannya dulu."
+   },
+   "remind": "Sambil menunggu, … = 等的时候顺便……；同一个人同时做两件事用 sambil。"
+  },
+  {
+   "key": "jadiresult",
+   "name": "Saya jadi … terus.",
+   "head": "Saya jadi … terus. · 害得我老是……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Dimas",
+      "id": "Oke, Pak. Satu lagi, tolong jangan mulai ngebor jam enam, ya. Saya jadi bangun kepagian terus.",
+      "cn": "好吧，叔。还有一件事，请别六点就开始钻了。害得我老是起得太早。"
+     }
+    ],
+    "ask": "这里的 Saya jadi bangun kepagian terus 是什么意思？",
+    "options": [
+     {
+      "t": "（因为六点就钻）害得我老是起太早",
+      "reply": [
+       "对。原因在前，jadi 后面说结果，terus 是“老是”。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "我还照计划早起",
+      "reply": [
+       "不是。“照计划”的 jadi 用在问答计划里（Jadi nggak?）；这里是在抱怨结果。"
+      ]
+     },
+     {
+      "t": "我变成了早起的人",
+      "reply": [
+       "不是。他不是在说自己变成什么人，而是在说噪音带来的结果。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "句型：**原因 + Saya / Aku jadi + 结果 + terus.**：说别人的事“害得我老是……”。{{terus}} 放句尾 = 一直、老是。",
+    "对长辈、上级说 {{Saya jadi …}}；朋友之间说 {{Aku jadi …}}。书面可以写 {{menjadi}}，口语一律说 jadi。"
+   ],
+   "simple": [
+    "原因，[[Saya jadi … terus.]] = 害得我老是……"
+   ],
+   "asks": [
+    {
+     "label": "这个 jadi 和“成不成”的 jadi 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Kita jadi pergi nggak?",
+         "我们还去不去？（问计划）"
+        ],
+        [
+         "Hujan, aku jadi malas keluar.",
+         "下雨了，害得我懒得出门（结果）"
+        ]
+       ]
+      },
+      "前面先有原因、后面说受到的影响，就是“结果”的 jadi。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Tetanggaku nyetel musik tiap malam. Aku ___ susah tidur terus.]]",
+     "（邻居每晚放音乐，害得我老是睡不好。）"
+    ],
+    "options": [
+     {
+      "t": "jadi",
+      "v": "right",
+      "why": [
+       "对。原因 + aku jadi + 结果。"
+      ]
+     },
+     {
+      "t": "menjadi",
+      "v": "ok",
+      "why": [
+       "书面可以写 menjadi；可是这句是口语（nyetel、aku），说 jadi 更自然。"
+      ]
+     },
+     {
+      "t": "supaya",
+      "v": "wrong",
+      "why": [
+       "supaya 是“为了”，变成“为了睡不好”，说不通。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。哪一句的 jadi 是在说“结果”？"
+     ],
+     "options": [
+      {
+       "t": "Hujan terus, aku jadi malas keluar.",
+       "v": "right",
+       "why": [
+        "对。下雨是原因，jadi 后面是结果。"
+       ]
+      },
+      {
+       "t": "Kita jadi ketemu besok?",
+       "v": "wrong",
+       "why": [
+        "这是在问明天的计划还算不算数，不是结果。"
+       ]
+      },
+      {
+       "t": "Dia mau jadi dokter.",
+       "v": "wrong",
+       "why": [
+        "这是“成为”：他想当医生。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "邻居的狗每天早上叫，你跟朋友抱怨：“它天天早上叫，害得我老是起太早。”"
+    ],
+    "kw": "gonggong tiap pagi · aku jadi · kepagian terus",
+    "skel": "Anjingnya gonggong tiap ____. Aku jadi bangun ____ terus.",
+    "ref": "Anjingnya gonggong tiap pagi. Aku jadi bangun kepagian terus.",
+    "notes": [
+     "gonggong = 狗叫，kepagian = terlalu pagi。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "公司的会老是拖时间，你跟同事抱怨：“害得我老是很晚才吃午饭。”"
+    ],
+    "kw": "selalu molor · aku jadi · telat makan siang",
+    "skel": "Rapatnya selalu ____. Aku jadi telat makan ____ terus.",
+    "ref": "Rapatnya selalu molor. Aku jadi telat makan siang terus.",
+    "notes": [
+     "molor = 拖延。"
+    ]
+   },
+   "final": {
+    "cn": "（对家人）“楼上在装修，害得我老是没法专心工作。”",
+    "ref": "Tetangga di atas lagi renovasi, aku jadi susah fokus kerja terus."
+   },
+   "remind": "原因 + Saya / Aku jadi + 结果 + terus = 害得我老是……"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "今晚另外两个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+  ],
+  "words": [
+   "separuh baya",
+   "listrik"
+  ]
+ },
+ "reading": [
+  {
+   "key": "sempat",
+   "sentence": "Listrik langsung padam, dan komputer Dimas mati sebelum ia sempat menyimpan desainnya.",
+   "cn": "马上就停电了，Dimas 的电脑还没来得及保存设计稿就断电关机了。",
+   "chunks": [
+    [
+     "Listrik langsung padam,",
+     "马上停电了",
+     "listrik padam = listrik mati，padam 书面一点"
+    ],
+    [
+     "dan komputer Dimas mati",
+     "Dimas 的电脑也断电关机",
+     "mati 也能说机器“关掉、没电”"
+    ],
+    [
+     "sebelum ia sempat menyimpan desainnya.",
+     "还没来得及保存设计稿",
+     "sebelum … sempat … = 还没来得及……"
+    ]
+   ],
+   "steal": [
+    "值得借的是 [[sebelum … sempat …]]：说事情来得太快，还没来得及做。{{Teleponnya mati sebelum aku sempat jawab.}}（我还没来得及接，电话就断了。）"
+   ]
+  }
+ ],
+ "dialogue": {
+  "head": "对话 · 你来演 Dimas",
+  "intro": [
+   "把今晚的词放回原对话。你演 Dimas，我演 Joko 叔。每一轮先看 Dimas 想说什么，看中文先说。"
+  ],
+  "turns": [
+   {
+    "line": 2,
+    "intent": "Dimas 说他想打工地牌子上的电话，可是字褪色了，认不出来。",
+    "kw": "papan proyek · udah pudar · nggak kebaca",
+    "skel": "Tadi saya mau telepon nomor di ____ proyek, tapi tulisannya udah ____, nggak ____."
+   },
+   {
+    "line": 4,
+    "intent": "Dimas 着急：还要等一个小时，可他工作堆成山，今晚要交稿。",
+    "kw": "sejam lagi · kerjaan numpuk · kirim desain",
+    "skel": "Sejam lagi? Aduh, Pak, kerjaan ____. Malam ini saya harus kirim ____ ke klien."
+   },
+   {
+    "line": 6,
+    "intent": "Dimas 请工头别六点就开钻，害得他老是起太早。",
+    "kw": "jangan mulai ngebor · saya jadi · kepagian terus",
+    "skel": "Oke, Pak. Satu lagi, tolong jangan mulai ____ jam enam, ya. Saya jadi bangun ____ terus."
+   }
+  ],
+  "tail": [
+   "对工头 Dimas 用 saya 和 Pak，但句子里有 udah、nggak、ngebor、kepagian 这些口语形；正式场合换成 sudah、tidak、mengebor、terlalu pagi。"
+  ]
+ },
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今晚的改写题，缩短版）：朋友问你周六的聚会还办不办。说两句：聚会照常，但你发的邀请图片看不清，等下重发。"
+   ],
+   "kw": "jadi, kok · nggak kebaca · kirim ulang",
+   "skel": "Acaranya ____, kok. Tapi undangannya nggak ____, nanti aku kirim ____, ya.",
+   "ref": "Acaranya jadi, kok. Tapi undangannya nggak kebaca, nanti aku kirim ulang, ya.",
+   "notes": [
+    "整页的改写题有更完整的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
