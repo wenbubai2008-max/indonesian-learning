@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-23",
-    "session": "pm",
-    "time": "18:00",
-    "day": 63
+    "date": "2026-10-24",
+    "session": "am",
+    "time": "08:00",
+    "day": 64
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-23T00:32:24.596Z",
-    "lesson_watermark": "2026-10-23 08:00",
+    "runtime_generated_at": "2026-10-23T10:52:50.788Z",
+    "lesson_watermark": "2026-10-23 18:00",
     "index_updated": "2026-10-23",
-    "runtime_hash": "c0166c319b0a4d22867079a5faa5ecae3060c76a4c8895ab21642df0ae0636a7",
-    "index_hash": "94aa4f94c02373a5c6f2ccda95174693721c388acc6679b0c5946deca50e259a",
+    "runtime_hash": "26c2bac27b5332193e662d361957d46d98ceb634f15b25e54f3936ac24e9ce0b",
+    "index_hash": "859508483d4b327c880a9882babfadc036bcefab10991fac895162258bebc275",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -60,10 +60,6 @@
       [
         "lesung pipit",
         "酒窝"
-      ],
-      [
-        "separuh baya",
-        "中年"
       ],
       [
         "pantalon",
@@ -308,10 +304,6 @@
         "星期三"
       ],
       [
-        "listrik",
-        "电"
-      ],
-      [
         "tersenyum",
         "微笑"
       ],
@@ -394,10 +386,6 @@
       [
         "menyukai",
         "喜欢"
-      ],
-      [
-        "menutupi",
-        "覆盖"
       ],
       [
         "menderita",
@@ -839,7 +827,7 @@
         "2026-10-21T05:53:28.217Z",
         "最终成不成、还做不做；也可表示所以",
         "jadi",
-        ""
+        "成；成为"
       ],
       [
         "layak",
@@ -1810,16 +1798,6 @@
         "历史 / 故事",
         "sejarah",
         "历史"
-      ],
-      [
-        "bangun",
-        3,
-        0,
-        "",
-        "2026-10-15T13:37:45.252Z",
-        "醒来 / 起床",
-        "bangun",
-        "醒；起；建"
       ],
       [
         "calon",
@@ -2842,6 +2820,16 @@
         "用途；作用"
       ],
       [
+        "instan",
+        2,
+        0,
+        "",
+        "2026-10-21T01:43:48.715Z",
+        "即时的；速成的；方便即食的",
+        "instan",
+        "即时；速成"
+      ],
+      [
         "ketukar",
         5,
         0,
@@ -2860,16 +2848,6 @@
         "连得上；接得上；说得通；聊得来（口语）",
         "sambung",
         "连接；接上"
-      ],
-      [
-        "kerjaan numpuk",
-        5,
-        0,
-        "",
-        "",
-        "工作堆了一堆；事情越积越多",
-        "kerja + tumpuk",
-        "工作；堆积"
       ],
       [
         "ngikutin",
@@ -2942,104 +2920,14 @@
         "只要；条件是"
       ],
       [
-        "unta",
-        2,
+        "keduluan",
+        5,
         0,
         "",
         "",
-        "骆驼",
-        "",
-        ""
-      ],
-      [
-        "tapir",
-        2,
-        0,
-        "",
-        "",
-        "貘",
-        "",
-        ""
-      ],
-      [
-        "lemari pajangan",
-        2,
-        0,
-        "",
-        "",
-        "展示柜；陈列柜",
-        "pajang",
-        "陈列；摆出来给人看"
-      ],
-      [
-        "pot bunga",
-        2,
-        0,
-        "",
-        "",
-        "花盆",
-        "pot",
-        "盆；罐"
-      ],
-      [
-        "lincah",
-        2,
-        0,
-        "",
-        "",
-        "灵活；活泼好动",
-        "",
-        ""
-      ],
-      [
-        "perfeksionis",
-        2,
-        0,
-        "",
-        "",
-        "完美主义的；完美主义者",
-        "",
-        ""
-      ],
-      [
-        "berserat",
-        2,
-        0,
-        "",
-        "",
-        "含纤维的；有纤维的",
-        "serat",
-        "纤维"
-      ],
-      [
-        "berjemur",
-        2,
-        0,
-        "",
-        "",
-        "晒太阳（晒自己）",
-        "jemur",
-        "晒"
-      ],
-      [
-        "jantan",
-        2,
-        0,
-        "",
-        "",
-        "雄性的（动物）；公的",
-        "",
-        ""
-      ],
-      [
-        "betina",
-        2,
-        0,
-        "",
-        "",
-        "雌性的（动物）；母的",
-        "",
-        ""
+        "被别人抢先；还没来得及就被先做了（口语）",
+        "dulu",
+        "先；以前"
       ]
     ],
     "focus": [
@@ -3329,14 +3217,6 @@
         "fuzzy"
       ],
       [
-        "menutupi",
-        "通用",
-        "nutupin",
-        "tutup",
-        738,
-        "fuzzy"
-      ],
-      [
         "mengukur",
         "通用",
         "ngukur",
@@ -3355,46 +3235,6 @@
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-16",
-      "session": "am",
-      "review_core": [
-        "nganter",
-        "antar",
-        "jadi",
-        "kewalahan",
-        "kayak"
-      ],
-      "new_words": [
-        "meja rias",
-        "jemuran",
-        "lukisan",
-        "berbentuk",
-        "berkeliling",
-        "berjabat tangan",
-        "manja",
-        "penyayang",
-        "tekstur",
-        "gurih"
-      ]
-    },
-    {
-      "date": "2026-10-16",
-      "session": "pm",
-      "review_core": [
-        "seolah-olah",
-        "seandainya",
-        "ketinggalan",
-        "meninggalkan",
-        "kebaca",
-        "ngerembet"
-      ],
-      "new_words": [
-        "membayangkan",
-        "mengenali",
-        "menyusul"
-      ]
-    },
     {
       "date": "2026-10-17",
       "session": "am",
@@ -3653,106 +3493,40 @@
         "jantan",
         "betina"
       ]
+    },
+    {
+      "date": "2026-10-23",
+      "session": "pm",
+      "review_core": [
+        "jadi",
+        "kebaca",
+        "bangun",
+        "pembangunan",
+        "kerjaan numpuk"
+      ],
+      "new_words": [
+        "separuh baya",
+        "listrik",
+        "menutupi"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-22",
+    "date": "2026-10-23",
     "new_words": [
-      "trailer",
-      "fiksi ilmiah",
-      "judul",
-      "tidak adil"
+      "separuh baya",
+      "listrik",
+      "menutupi"
     ],
     "review_core": [
-      "perkirakan",
-      "seolah-olah",
-      "usaha",
-      "usahakan",
-      "usah"
+      "jadi",
+      "kebaca",
+      "bangun",
+      "pembangunan",
+      "kerjaan numpuk"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-23",
-    "vocab": [
-      [
-        "unta",
-        "骆驼",
-        "camel",
-        "",
-        ""
-      ],
-      [
-        "tapir",
-        "貘",
-        "tapir",
-        "",
-        ""
-      ],
-      [
-        "lemari pajangan",
-        "展示柜；陈列柜",
-        "display cabinet",
-        "pajang",
-        "陈列；摆出来给人看"
-      ],
-      [
-        "pot bunga",
-        "花盆",
-        "flower pot",
-        "pot",
-        "盆；罐"
-      ],
-      [
-        "lincah",
-        "灵活；活泼好动",
-        "agile; lively",
-        "",
-        ""
-      ],
-      [
-        "perfeksionis",
-        "完美主义的；完美主义者",
-        "perfectionist",
-        "",
-        ""
-      ],
-      [
-        "berserat",
-        "含纤维的；有纤维的",
-        "fibrous; high in fiber",
-        "serat",
-        "纤维"
-      ],
-      [
-        "berjemur",
-        "晒太阳（晒自己）",
-        "to sunbathe; to bask in the sun",
-        "jemur",
-        "晒"
-      ],
-      [
-        "jantan",
-        "雄性的（动物）；公的",
-        "male (of animals)",
-        "",
-        ""
-      ],
-      [
-        "betina",
-        "雌性的（动物）；母的",
-        "female (of animals)",
-        "",
-        ""
-      ]
-    ],
-    "review_vocab": [
-      "pengeluaran",
-      "mengeluarkan",
-      "judul",
-      "melindungi",
-      "kelewatan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

@@ -3365,31 +3365,36 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "jadi",
     "cn": "最终成不成、还做不做；也可表示所以",
-    "en": "",
-    "root": "",
+    "en": "to go ahead (as planned); so; to become",
+    "root": "jadi",
     "categories": [
       "每日学习",
       "19:00",
       "原始课程",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-27 19:00",
-    "last_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-23 18:00",
     "sessions": [
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-27",
-      "2026-10-16"
+      "2026-10-16",
+      "2026-10-23"
     ],
-    "example": "Besok jadi pergi nggak?",
-    "example_cn": "明天还去吗？",
+    "example": "Tadinya aku niat lari pagi, tapi nggak jadi karena hujan.",
+    "example_cn": "我本来打算去晨跑，结果因为下雨没去成。",
     "lesson_occurrences": [
       "2026-08-27 19:00",
-      "2026-10-16 08:00"
-    ]
+      "2026-10-16 08:00",
+      "2026-10-23 18:00"
+    ],
+    "root_cn": "成；成为"
   },
   {
     "word": "aja",
@@ -6426,28 +6431,30 @@ window.DAILY_VOCAB_DB = [
     "cn": "看得清；读得出来；不小心被看到（口语）",
     "en": "readable; can be read; accidentally seen/read",
     "root": "baca",
-    "example": "Mukamu gampang kebaca, tahu. Kalau lagi canggung, kamu pasti diem aja.",
-    "example_cn": "你的表情很好读懂，知道吗。一尴尬，你肯定就不说话了。（diem = diam，口语）",
+    "example": "Tulisan tangan dokter itu sama sekali nggak kebaca, aku sampai tanya ke apoteker.",
+    "example_cn": "那个医生的手写字完全认不出来，我只好去问药剂师。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-10-16 18:00",
+    "last_seen": "2026-10-23 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-04",
-      "2026-10-16"
+      "2026-10-16",
+      "2026-10-23"
     ],
     "root_cn": "读；阅读",
     "lesson_occurrences": [
       "2026-09-04 08:00",
-      "2026-10-16 18:00"
+      "2026-10-16 18:00",
+      "2026-10-23 18:00"
     ]
   },
   {
@@ -6568,22 +6575,26 @@ window.DAILY_VOCAB_DB = [
     "root": "kerja + tumpuk",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-04 19:00",
-    "last_seen": "2026-09-04 19:00",
+    "last_seen": "2026-10-23 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-04"
+      "2026-09-04",
+      "2026-10-23"
     ],
-    "example": "Kalau ditunda terus, nanti kerjaan numpuk di akhir minggu.",
-    "example_cn": "如果一直往后拖，到周末工作就会堆成一堆。",
+    "example": "Habis cuti seminggu, kerjaanku numpuk banget. Aku sungkan nolak lembur, padahal capek.",
+    "example_cn": "休了一周假回来，我的工作堆成山。我不好意思拒绝加班，其实很累。",
     "root_cn": "工作；堆积",
     "lesson_occurrences": [
-      "2026-09-04 19:00"
+      "2026-09-04 19:00",
+      "2026-10-23 18:00"
     ]
   },
   {
@@ -11517,23 +11528,27 @@ window.DAILY_VOCAB_DB = [
     "en": "wake up / get up",
     "root": "bangun",
     "root_cn": "醒；起；建",
-    "example": "Aku biasanya bangun pukul enam pagi.",
-    "example_cn": "我通常早上六点起床。",
+    "example": "Tiap pagi Ibu harus teriak dulu, baru aku bangun.",
+    "example_cn": "每天早上妈妈都得先喊一嗓子，我才起得来。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-09-18 08:00",
+    "last_seen": "2026-10-23 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-10-23"
     ],
     "lesson_occurrences": [
-      "2026-09-18 08:00"
+      "2026-09-18 08:00",
+      "2026-10-23 18:00"
     ]
   },
   {
@@ -11763,16 +11778,16 @@ window.DAILY_VOCAB_DB = [
     "en": "development; construction",
     "root": "bangun",
     "root_cn": "建；起；醒",
-    "example": "Pembangunan jalan itu hampir selesai.",
-    "example_cn": "那条道路的建设快完成了。",
+    "example": "Pembangunan jalan tol itu molor setahun, dan warga di sekitarnya ikut menanggung kerugian.",
+    "example_cn": "那条高速公路的工程拖了一年，周边居民也跟着承受损失。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-23 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -11780,12 +11795,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-18",
       "2026-09-30",
-      "2026-10-06"
+      "2026-10-06",
+      "2026-10-23"
     ],
     "lesson_occurrences": [
       "2026-09-18 18:00",
       "2026-09-30 08:00",
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-10-23 18:00"
     ]
   },
   {
@@ -24110,25 +24127,28 @@ window.DAILY_VOCAB_DB = [
     "word": "lincah",
     "cn": "灵活；活泼好动",
     "en": "agile; lively",
-    "root": "",
-    "root_cn": "",
-    "example": "Walaupun sudah tujuh puluh tahun, kakek masih lincah naik turun tangga.",
-    "example_cn": "虽然已经七十岁了，爷爷上下楼梯还是很利索。",
+    "root": "lincah",
+    "root_cn": "灵活",
+    "example": "Pemain bulu tangkis itu tidak punya banyak kekuatan, tapi ia lincah sekali.",
+    "example_cn": "那个羽毛球运动员力量不大，但是非常灵活。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-23 08:00",
-    "last_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-23"
     ],
     "lesson_occurrences": [
-      "2026-10-23 08:00"
+      "2026-10-23 08:00",
+      "2026-10-23 18:00"
     ]
   },
   {
@@ -24187,23 +24207,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to sunbathe; to bask in the sun",
     "root": "jemur",
     "root_cn": "晒",
-    "example": "Setelah sembuh dari batuk, Kakek rajin berjemur setiap pagi di halaman.",
-    "example_cn": "咳嗽好了以后，爷爷每天早上都坚持在院子里晒太阳。",
+    "example": "Dokter menyarankan Kakek berjemur sepuluh menit tiap pagi sebelum jam sembilan.",
+    "example_cn": "医生建议爷爷每天早上九点前晒十分钟太阳。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-23 08:00",
-    "last_seen": "2026-10-23 08:00",
+    "last_seen": "2026-10-23 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-23"
     ],
     "lesson_occurrences": [
-      "2026-10-23 08:00"
+      "2026-10-23 08:00",
+      "2026-10-23 18:00"
     ]
   },
   {
@@ -24254,6 +24277,82 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-23 08:00"
+    ]
+  },
+  {
+    "word": "separuh baya",
+    "cn": "中年（的）",
+    "en": "middle-aged",
+    "root": "baya",
+    "root_cn": "年纪（旧词，现在多见于固定说法）",
+    "example": "Penjual nasi uduk itu seorang ibu separuh baya. Pelanggannya setia karena ia hafal pesanan semua orang.",
+    "example_cn": "卖椰浆饭的是一位中年阿姨。她的顾客都很忠实，因为她记得每个人点什么。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 18:00",
+    "last_seen": "2026-10-23 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 18:00"
+    ]
+  },
+  {
+    "word": "listrik",
+    "cn": "电；电力",
+    "en": "electricity",
+    "root": "listrik",
+    "root_cn": "电（来自荷兰语 elektrisch）",
+    "example": "Aliran listrik di kompleks kami padam dua jam karena ada kabel yang rusak.",
+    "example_cn": "我们小区因为有一根电线坏了，停电了两个小时。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 18:00",
+    "last_seen": "2026-10-23 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 18:00"
+    ]
+  },
+  {
+    "word": "menutupi",
+    "cn": "盖住；遮住；掩盖",
+    "en": "to cover; to cover up",
+    "root": "tutup",
+    "root_cn": "关；盖",
+    "example": "Dia tertawa untuk menutupi rasa kecewanya, padahal sebenarnya sedih.",
+    "example_cn": "他笑着掩饰自己的失望，其实心里很难过。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-23 18:00",
+    "last_seen": "2026-10-23 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-23"
+    ],
+    "lesson_occurrences": [
+      "2026-10-23 18:00"
     ]
   }
 ];
