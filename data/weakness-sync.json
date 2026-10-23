@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T23:38:46.525Z",
+  "updated_at": "2026-10-23T23:42:32.952Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -14632,8 +14632,9 @@
     "lubang": {
       "word": "lubang",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:58.328Z",
+      "updated_at": "2026-10-23T23:42:22.415Z",
       "display": "lubang",
+      "cn": "洞",
       "reasons": [
         "memory_dont"
       ],
