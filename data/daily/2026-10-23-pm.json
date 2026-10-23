@@ -1,0 +1,362 @@
+{
+  "date": "2026-10-23",
+  "session": "pm",
+  "time": "18:00",
+  "day": 63,
+  "title": "18:00 晚课｜Listrik Mati gara-gara Proyek Sebelah · 隔壁工地把电挖断了",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "separuh baya",
+    "listrik",
+    "menutupi"
+  ],
+  "vocab": [
+    {
+      "word": "separuh baya",
+      "display": "separuh baya",
+      "audio_text": "separuh baya",
+      "cn": "中年（的）",
+      "en": "middle-aged",
+      "root": "baya",
+      "root_cn": "年纪（旧词，现在多见于固定说法）",
+      "formation": "separuh（一半）+ baya（年纪）→ separuh baya，字面是“走到人生一半的年纪”，大约四五十岁。同义说法：paruh baya、setengah baya，新闻里 paruh baya 最常见。常见搭配：seorang pria separuh baya（一位中年男子）、ibu-ibu separuh baya（中年妇女们）、sudah separuh baya（已人到中年）。",
+      "example": "Penjual nasi uduk itu seorang ibu separuh baya. Pelanggannya setia karena ia hafal pesanan semua orang.",
+      "example_cn": "卖椰浆饭的是一位中年阿姨。她的顾客都很忠实，因为她记得每个人点什么。",
+      "synonym_note": "separuh baya、paruh baya、setengah baya 意思相同，都用于描述别人的年纪，偏叙述和书面；tua 是“老”，年纪更大；dewasa 是“成年”，范围更宽，二十多岁也算。当面称呼人时不用 separuh baya。口语说法：聊天里一般说 bapak-bapak / ibu-ibu（那种中年大叔/阿姨），例如 Mandornya bapak-bapak, orangnya baik.（那个工头是个中年大叔，人挺好。）",
+      "usage_note": "今晚新词。放在 pria / wanita / bapak / ibu 后面描述外貌年纪：seorang pria separuh baya。讲故事、写描述时用，聊天时换成 bapak-bapak / ibu-ibu。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "listrik",
+      "display": "listrik",
+      "audio_text": "listrik",
+      "cn": "电；电力",
+      "en": "electricity",
+      "root": "listrik",
+      "root_cn": "电（来自荷兰语 elektrisch）",
+      "formation": "名词，常直接放在别的名词后面作修饰：kabel listrik（电线）、tiang listrik（电线杆）、tagihan listrik（电费账单）、aliran listrik（供电、电流）。常见动词搭配：listrik mati / padam（停电）、listrik menyala lagi（来电了）、hemat listrik（省电）。",
+      "example": "Aliran listrik di kompleks kami padam dua jam karena ada kabel yang rusak.",
+      "example_cn": "我们小区因为有一根电线坏了，停电了两个小时。",
+      "synonym_note": "listrik 是电本身；lampu 是灯，但口语 mati lampu 常常就是“停电”，不一定只是灯坏了；PLN 是印尼国家电力公司，停电时打给 PLN。正式通知里说 pemadaman listrik（停电、拉闸限电）。口语说法：停电常说 mati lampu 或 listriknya mati；“来电了”说 Udah nyala!（udah = sudah，nyala = menyala）。",
+      "usage_note": "今晚新词（以前见过但还不稳）。记住三个说法：listrik mati / padam（停电），listrik menyala lagi（来电），kabel listrik（电线）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menutupi",
+      "display": "menutupi",
+      "audio_text": "menutupi",
+      "cn": "盖住；遮住；掩盖",
+      "en": "to cover; to cover up",
+      "root": "tutup",
+      "root_cn": "关；盖",
+      "formation": "meN- + tutup + -i → menutupi（t 脱落，变 men-）。-i 表示把东西盖到某个表面上，或把事情遮掩起来。对比 menutup（关上：menutup pintu、menutup toko）。常见搭配：menutupi lubang dengan papan（用木板盖住坑）、menutupi makanan（把饭菜盖起来）、menutupi wajah（遮住脸）、menutupi kesalahan / rasa malu（掩盖错误/难为情）。",
+      "example": "Dia tertawa untuk menutupi rasa kecewanya, padahal sebenarnya sedih.",
+      "example_cn": "他笑着掩饰自己的失望，其实心里很难过。",
+      "synonym_note": "menutup 是“关上”（pintu, toko, mata）；menutupi 是“盖住某物的表面”或“掩饰”；menyembunyikan 是“藏到别人看不见的地方、隐瞒”。说“掩盖错误”时 menutupi kesalahan 和 menyembunyikan kesalahan 都可以。口语说法：nutupin / tutupin（-i 变 -in），例如 Tutupin makanannya, banyak lalat.（把饭菜盖上，苍蝇好多。）",
+      "usage_note": "今晚新词，口语里常说 nutupin / tutupin。具体的东西：menutupi + 被盖的东西 + dengan + 用什么盖；抽象的情绪：menutupi rasa malu / kecewa。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "jadi",
+      "display": "jadi",
+      "audio_text": "jadi",
+      "cn": "（计划）照常进行、成不成；所以；变成",
+      "en": "to go ahead (as planned); so; to become",
+      "root": "jadi",
+      "root_cn": "成；成为",
+      "formation": "三种常用法：① jadi / nggak jadi 说计划成不成：Jadi berangkat?（还去吗？）Nggak jadi.（不去了，取消了。）② jadi + 名词/形容词 = 变成：jadi dokter、jadi bingung。③ 句首 Jadi, … = 所以、那么。派生：menjadi（成为，书面）、jadinya（结果是）。",
+      "example": "Tadinya aku niat lari pagi, tapi nggak jadi karena hujan.",
+      "example_cn": "我本来打算去晨跑，结果因为下雨没去成。",
+      "synonym_note": "nggak jadi 和 batal 都表示计划取消：日常聊天多说 nggak jadi，通知、公告多写 dibatalkan；“计划成不成”这个意思用 jadi，不用书面的 menjadi。口语说法：jadinya（结果），例如 Jadinya gimana?（结果怎么样？gimana = bagaimana）；问计划还算不算数：Jadi nggak?",
+      "usage_note": "最近常错的词。今晚重点是“成不成”：问 Jadi nggak?，回答 Jadi! 或 Nggak jadi.；“所以”的 jadi 放在句首或两句之间。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kebaca",
+      "display": "kebaca",
+      "audio_text": "kebaca",
+      "cn": "看得清、读得出来（口语）；（心思）被看出来",
+      "en": "legible, can be read (colloquial)",
+      "root": "baca",
+      "root_cn": "读；阅读",
+      "formation": "ke- + baca → kebaca，口语里相当于标准语 terbaca（能被读出来）。也可以说意图被别人看穿：Niatnya kebaca.（他的打算被看穿了。）最常见的是否定：nggak kebaca（看不清、读不出来）。",
+      "example": "Tulisan tangan dokter itu sama sekali nggak kebaca, aku sampai tanya ke apoteker.",
+      "example_cn": "那个医生的手写字完全认不出来，我只好去问药剂师。",
+      "synonym_note": "kebaca（口语）= terbaca（标准）：字能读得出来；kelihatan 是“看得见”，看得见的字不一定读得懂：Tulisannya kelihatan, tapi nggak kebaca.（字看得见，可是认不出来。）口语说法：kebaca 本身就是口语，正式书面写 terbaca / tidak terbaca。",
+      "usage_note": "最近常错的词。描述字迹、号码、屏幕：nggak kebaca；同样的 ke- 口语结构还有 kelihatan、kedengeran（听得见）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bangun",
+      "display": "bangun",
+      "audio_text": "bangun",
+      "cn": "醒来；起床；（引申）建",
+      "en": "to wake up; to get up; (to build)",
+      "root": "bangun",
+      "root_cn": "醒；起；建",
+      "formation": "bangun 本义是“起来”：bangun tidur（睡醒）、bangun pagi（早起）、bangun kesiangan（睡过头）。派生：terbangun（被吵醒）、membangunkan（叫醒，口语 bangunin）、membangun（让东西立起来 = 建造）→ pembangunan（建设）。",
+      "example": "Tiap pagi Ibu harus teriak dulu, baru aku bangun.",
+      "example_cn": "每天早上妈妈都得先喊一嗓子，我才起得来。",
+      "synonym_note": "bangun = 自己醒来、起床；terbangun = 被声音等弄醒，不是自己想醒；membangunkan（口语 bangunin）= 叫醒别人。口语说法：bangunin（= membangunkan），例如 Besok bangunin aku jam lima, ya.（明天五点叫我起来哦。）",
+      "usage_note": "和 pembangunan 是一组同词根：bangun 的“起来”引申出 membangun（让房子立起来 = 建造）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "pembangunan",
+      "display": "pembangunan",
+      "audio_text": "pembangunan",
+      "cn": "建设；施工；发展",
+      "en": "construction; development",
+      "root": "bangun",
+      "root_cn": "建；起；醒",
+      "formation": "peN- + bangun + -an → pembangunan（N 在 b 前变 m），来自动词 membangun（建造）。常见搭配：pembangunan jalan tol（修高速公路）、proyek pembangunan（建设项目）、sedang dalam pembangunan（正在施工）、pembangunan ekonomi（经济发展）。",
+      "example": "Pembangunan jalan tol itu molor setahun, dan warga di sekitarnya ikut menanggung kerugian.",
+      "example_cn": "那条高速公路的工程拖了一年，周边居民也跟着承受损失。",
+      "synonym_note": "pembangunan 是建设这件事、施工过程（偏正式）；bangunan 是建好的建筑物（结果）：pembangunan ruko（建商铺这件事）≠ bangunan ruko（那栋商铺楼）。口语说法：聊天里常说 lagi dibangun 或 lagi ada proyek，例如 Sebelah rumahku lagi dibangun ruko.（我家隔壁正在盖商铺。lagi = sedang）",
+      "usage_note": "最近常错的词，和 bangun 同词根：bangun（起来）→ membangun（建造）→ pembangunan（建设）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kerjaan numpuk",
+      "display": "kerjaan numpuk",
+      "audio_text": "kerjaan numpuk",
+      "cn": "工作堆成山；事情越积越多",
+      "en": "work piling up",
+      "root": "kerja + tumpuk",
+      "root_cn": "工作；堆",
+      "formation": "kerjaan（口语，= pekerjaan）+ numpuk（口语，= menumpuk，N- 加 tumpuk，t 脱落）。常见说法：lagi kerjaan numpuk（最近工作堆成山）、kerjaanku numpuk（我的工作堆了一堆）、cucian numpuk（脏衣服堆了一堆）。",
+      "example": "Habis cuti seminggu, kerjaanku numpuk banget. Aku sungkan nolak lembur, padahal capek.",
+      "example_cn": "休了一周假回来，我的工作堆成山。我不好意思拒绝加班，其实很累。",
+      "synonym_note": "numpuk 强调一直累积、没处理完；banyak kerjaan 只是说工作多；kewalahan 说人忙不过来的状态。口语说法：这本身就是口语；对上级或写邮件用标准形 pekerjaan saya sedang menumpuk。",
+      "usage_note": "朋友、同事之间抱怨时用。注意词形：kerjaan（不是 pekerjaan）+ numpuk（不是 menumpuk），两个都是口语形，一起用最自然。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "lincah",
+      "display": "lincah",
+      "audio_text": "lincah",
+      "cn": "灵活；动作敏捷；活泼好动",
+      "en": "agile; nimble; lively",
+      "root": "lincah",
+      "root_cn": "灵活",
+      "formation": "形容词，没有词缀。常见搭配：gerakannya lincah（动作灵活）、lincah sekali、pemain yang lincah（灵活的球员）、anak yang lincah（活泼好动的孩子）。",
+      "example": "Pemain bulu tangkis itu tidak punya banyak kekuatan, tapi ia lincah sekali.",
+      "example_cn": "那个羽毛球运动员力量不大，但是非常灵活。",
+      "synonym_note": "lincah 偏身体动作快又灵；gesit 也是敏捷，两者常可互换，gesit 多说做事麻利；aktif 是积极、活跃，不一定动作灵。口语说法：没有特别的口语形，聊天里说 lincah banget（banget = sekali）。",
+      "usage_note": "今天08:00新学（早课里是一只活泼的公猫）。今晚换到人身上：修电的技工、运动员、孩子。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berjemur",
+      "display": "berjemur",
+      "audio_text": "berjemur",
+      "cn": "晒太阳（晒自己）",
+      "en": "to sunbathe; to bask in the sun",
+      "root": "jemur",
+      "root_cn": "晒",
+      "formation": "ber- + jemur → berjemur（让自己晒太阳）。对比 menjemur（晒别的东西：menjemur pakaian 晒衣服）、jemuran（晾着的衣服；晾衣架）。常见搭配：berjemur di pantai（在海滩晒太阳）、berjemur pagi-pagi（一大早晒太阳）。",
+      "example": "Dokter menyarankan Kakek berjemur sepuluh menit tiap pagi sebelum jam sembilan.",
+      "example_cn": "医生建议爷爷每天早上九点前晒十分钟太阳。",
+      "synonym_note": "berjemur 晒的是自己；menjemur 晒的是别的东西（衣服、鱼干）。口语说法：晒衣服常省掉 meN- 只说 jemur，例如 Jemur bajunya dulu, mumpung panas.（趁有太阳先把衣服晒了。）",
+      "usage_note": "今天08:00新学（早课里是母猫在窗前晒太阳）。今晚用在人身上：老人早上晒太阳。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sejak bulan lalu, ada pembangunan ruko di sebelah rumah Dimas, seorang desainer. Setiap hari ia bangun jam enam karena suara bor. Kamis kemarin, seorang pekerja menggali tanah dan tidak sengaja merusak kabel listrik ke rumahnya. Listrik langsung padam, dan komputer Dimas mati sebelum ia sempat menyimpan desainnya. Padahal malam itu desainnya harus dikirim ke klien. Dimas segera menemui mandor proyek, Pak Joko, seorang pria separuh baya. Pak Joko minta maaf. Ternyata ia sudah menelepon PLN. Sambil menunggu, para pekerja menutupi lubang galian dengan papan supaya tidak ada yang jatuh. Teknisi PLN yang lincah lalu turun ke galian dan menyambung kabelnya. Jam dua siang listrik menyala lagi, tetapi Dimas harus lembur karena desainnya hilang.",
+    "cn": "从上个月开始，设计师 Dimas 家隔壁在盖一栋商铺楼。他每天六点就被电钻声吵得起床。上周四，一名工人挖土时不小心挖坏了通往他家的电线。马上就停电了，Dimas 的电脑还没来得及保存设计稿就断电关机了。可那天晚上设计稿必须交给客户。Dimas 立刻去找工地的工头 Joko 叔，一位中年男子。Joko 叔向他道歉，原来他已经打电话给国家电力公司了。等待的时候，工人们用木板把挖开的坑盖住，免得有人掉进去。随后，电力公司那位身手灵活的技工下到坑里，把电线接好了。下午两点来电了，可是 Dimas 的设计稿丢了，他只好加班到晚上。"
+  },
+  "dialogue": {
+    "title": "工地门口：电什么时候来？",
+    "lines": [
+      {
+        "speaker": "Dimas",
+        "id": "Permisi, Pak. Listrik di rumah saya mati dari tadi. Kabelnya kena galian, ya?",
+        "cn": "打扰一下，叔。我家从刚才就停电了。电线是被挖到了吧？（dari tadi = sejak tadi）"
+      },
+      {
+        "speaker": "Pak Joko",
+        "id": "Aduh, iya, Mas. Maaf banget. Anak buah saya nggak tahu ada kabel di situ.",
+        "cn": "哎呀，是的，小哥。真对不起。我手下的工人不知道那里埋着电线。（banget = sekali，nggak = tidak）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Tadi saya mau telepon nomor di papan proyek, tapi tulisannya udah pudar, nggak kebaca.",
+        "cn": "我刚才想打工地牌子上的电话，可是字已经褪色了，认不出来。（udah = sudah，nggak kebaca = tidak terbaca）"
+      },
+      {
+        "speaker": "Pak Joko",
+        "id": "Iya, papannya memang udah lama. Saya udah telepon PLN barusan, katanya teknisinya datang sejam lagi.",
+        "cn": "是啊，那块牌子确实很旧了。我刚刚已经给电力公司打了电话，说是技工一个小时后到。（barusan = baru saja）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Sejam lagi? Aduh, Pak, kerjaan numpuk. Malam ini saya harus kirim desain ke klien.",
+        "cn": "还要一个小时？哎呀，叔，我工作堆成山了。今晚我得把设计稿交给客户。（kerjaan numpuk = pekerjaan menumpuk）"
+      },
+      {
+        "speaker": "Pak Joko",
+        "id": "Maaf ya, Mas. Sambil nunggu, lubangnya kami tutupin pakai papan dulu biar nggak ada yang jatuh.",
+        "cn": "对不起啊，小哥。等的时候，我们先用木板把坑盖上，免得有人掉下去。（nunggu = menunggu，tutupin = menutupi，biar = supaya）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Oke, Pak. Satu lagi, tolong jangan mulai ngebor jam enam, ya. Saya jadi bangun kepagian terus.",
+        "cn": "好吧，叔。还有一件事，请别六点就开始钻了。害得我老是起得太早。（ngebor = mengebor，kepagian = terlalu pagi）"
+      },
+      {
+        "speaker": "Pak Joko",
+        "id": "Siap, Mas. Warga memang punya hak buat istirahat. Mulai Senin, kerja yang berisik baru mulai jam delapan. Saya pastikan.",
+        "cn": "没问题，小哥。居民确实有休息的权利。从下周一开始，吵的活儿八点才开始。我保证。（buat = untuk）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：你发现小区门口有一个施工留下的坑，在小区居民群里发一条提醒（换一个场景，不是今晚的工地停电）。用 separuh baya、menutupi、listrik 中至少两个，写 2–3 句。",
+      "reference_answer": "Info buat warga: di depan gerbang kompleks ada lubang bekas galian. Tadi seorang bapak separuh baya menutupinya dengan papan, tapi anak-anak tolong jangan main di situ. Aliran listrik di blok C juga mati, semoga pengurus segera ambil tindakan.",
+      "reference_cn": "通知各位居民：小区大门前有一个挖完没填的坑。刚才有一位中年大叔用木板把它盖住了，不过请孩子们别在那里玩。C 区也停电了，希望管理人员尽快采取措施。"
+    },
+    {
+      "task": "弱词应用：朋友问你周六的聚会还办不办。用 jadi（成不成）和 kebaca 回答：聚会照常，但你昨天发的邀请图片有问题。朋友之间用口语，2–3 句。",
+      "reference_answer": "Acara hari Sabtu jadi, kok. Tapi undangan yang aku kirim kemarin ternyata nggak kebaca karena fotonya buram. Nanti aku kirim ulang, ya. Maaf kalau aku cerewet, tapi jangan telat!",
+      "reference_cn": "周六的聚会照常办哦。不过我昨天发的邀请原来看不清，因为照片很糊。等下我重新发一次。抱歉我啰嗦，但别迟到！"
+    },
+    {
+      "task": "同词根 + 口语表达：跟朋友抱怨你上班路上在修一个工程（换成桥、地铁站等，不是商铺）。用 pembangunan、bangun、kerjaan numpuk，写 2–3 句。",
+      "reference_answer": "Di dekat kantorku lagi ada pembangunan jembatan. Tiap hari aku bangun lebih pagi biar nggak kena macet, tapi tetap aja telat. Kerjaan numpuk, bosku juga ngotot semuanya selesai minggu ini. Mau istirahat juga nanggung, tinggal sedikit lagi.",
+      "reference_cn": "我公司附近正在修一座桥。我每天都更早起床，免得堵车，可还是迟到。工作堆成山，老板还硬要这周全部做完。想休息一下又不上不下的，只剩一点了。"
+    },
+    {
+      "task": "早课词迁移：介绍你家里一位老人或小孩的日常（不要用猫或展示柜的场景）。用 lincah 和 berjemur，2–3 句。",
+      "reference_answer": "Nenekku sudah tujuh puluh tahun, tapi masih lincah. Tiap pagi ia berjemur di teras sambil ngobrol dengan tetangga. Kalau dipuji cucunya, Nenek langsung salah tingkah.",
+      "reference_cn": "我奶奶已经七十岁了，但还很灵活。她每天早上坐在门廊晒太阳，顺便跟邻居聊天。孙子孙女一夸她，奶奶就不好意思得不知所措。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "Dimas 的设计稿丢了，心里很烦，但视频会议时还得面对客户。选最自然的一项：Di depan klien, Dimas pura-pura santai untuk ___ rasa kesalnya.",
+        "options": [
+          "menutup",
+          "menutupi",
+          "tertutup",
+          "penutup"
+        ],
+        "answer_index": 1,
+        "answer": "menutupi",
+        "explain": "menutupi rasa kesal / malu / kecewa 是“掩饰情绪”的典型搭配，-i 表示把东西遮住。menutup 是“关上”（menutup pintu），不说 menutup rasa kesal；tertutup 是“关着的、封闭的”，不能带宾语；penutup 是名词“盖子、结尾”，放不进 untuk 后面的动词位置。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Dimas 加班到晚上，朋友 Rani 发消息：“Dim, nanti malam kita ___ nonton nggak? Kamu kan lagi lembur.” 选最自然的一项：",
+        "options": [
+          "menjadi",
+          "bisa jadi",
+          "jadi",
+          "terjadi"
+        ],
+        "answer_index": 2,
+        "answer": "jadi",
+        "explain": "问约好的计划还算不算数，口语固定问 Jadi … nggak?，回答 Jadi! 或 Nggak jadi.。menjadi 是书面的“成为”，不用来问计划；bisa jadi 是“说不定、可能”，放进去意思变成“我们可能去看吗”，不通；terjadi 是“发生”（事故、问题），不用于自己的计划。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Dimas 回家后跟妈妈说，他想打工地牌子上的电话，可是牌子太旧、字都褪色了。选最自然的一项：",
+        "options": [
+          "Nomornya nggak dibaca, Ma, tulisannya udah pudar.",
+          "Nomornya nggak baca, Ma, tulisannya udah pudar.",
+          "Nomornya nggak bacain, Ma, tulisannya udah pudar.",
+          "Nomornya nggak kebaca, Ma, tulisannya udah pudar."
+        ],
+        "answer_index": 3,
+        "answer": "Nomornya nggak kebaca, Ma, tulisannya udah pudar.",
+        "explain": "字看不清、读不出来，口语说 nggak kebaca（标准语 tidak terbaca）。nggak dibaca 是“没人去读”，好像是没人看，而不是看不清；nggak baca 缺主语，像在说“号码自己不读”；bacain 是“念给别人听”，意思完全不同。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Sejak bulan lalu, ada ______ ruko tiga lantai di sebelah rumah Dimas.（建设、施工）",
+        "answer": "pembangunan",
+        "explain": "pembangunan + 建筑名 = 在盖某个建筑（这件事）。bangunan 是建好的楼本身；membangun 是动词“建造”，ada 后面这里要名词。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Jam dua siang ______ menyala lagi, jadi Dimas langsung membuka komputernya.（电）",
+        "answer": "listrik",
+        "explain": "listrik menyala lagi = 来电了；停电说 listrik mati / padam。口语里停电也常说 mati lampu。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：因为工作堆成山，我五点就起床了。",
+        "tokens": [
+          "Aku",
+          "bangun",
+          "jam lima",
+          "karena",
+          "kerjaan numpuk."
+        ],
+        "answer": "Aku bangun jam lima karena kerjaan numpuk.",
+        "answer_cn": "因为工作堆成山，我五点就起床了。",
+        "explain": "主语 Aku + bangun（起床）+ 时间 jam lima，原因用 karena 放在后面。kerjaan numpuk 是口语的固定说法，两个词都用口语形。"
+      }
+    ],
+    "self_check": [
+      "不看中文：separuh baya、listrik、menutupi 这三个新词，我能在 3 秒内说出意思吗？哪一个卡住了？",
+      "jadi 和 kebaca 这两个最近常错的词，看到 Nggak jadi.、nggak kebaca 我能马上明白意思吗？",
+      "bangun 和 pembangunan 这一组同词根词，我分得清哪个是“起床”、哪个是“建设”吗？",
+      "kerjaan numpuk 这个口语说法，我一看到就能想起意思吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘（主动输出，不重复自检）",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "menutup 和 menutupi 各说一句：用 menutup 说关上一样东西，用 menutupi 说盖住一样东西，或者掩饰一种情绪（menutupi rasa malu / kecewa）。",
+      "jadi 两句连说：先用 Jadi nggak …? 问朋友一个约好的计划，再用 Nggak jadi, … 说你最近取消的一件事和原因。",
+      "早课迁移：用 lincah 说一个你认识的动作灵活的人，用 berjemur 说你或家人什么时候晒太阳。不要用猫或展示柜的场景。",
+      "30 秒脱稿复述：Dimas 家为什么停电、他为什么着急、Joko 叔做了什么、最后结果怎样。至少用上 pembangunan、listrik、menutupi、bangun 中的三个。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "jadi",
+      "menutupi",
+      "kebaca"
+    ],
+    "patterns": [
+      {
+        "pattern": "Sambil menunggu, …",
+        "cn": "等待的时候（顺便）……",
+        "example": "Sambil menunggu, para pekerja menutupi lubang galian dengan papan supaya tidak ada yang jatuh.",
+        "example_cn": "等待的时候，工人们用木板把挖开的坑盖住，免得有人掉进去。"
+      },
+      {
+        "pattern": "Saya jadi … terus.",
+        "cn": "害得我老是……（说某事带来的结果）",
+        "example": "Saya jadi bangun kepagian terus.",
+        "example_cn": "害得我老是起得太早。"
+      }
+    ]
+  }
+}
