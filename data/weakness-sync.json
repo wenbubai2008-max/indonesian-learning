@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-24T03:37:24.014Z",
+  "updated_at": "2026-10-24T03:49:36.665Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -8428,11 +8428,15 @@
     "berbeda": {
       "word": "berbeda",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:02:21.813Z",
+      "updated_at": "2026-10-24T03:48:21.719Z",
       "display": "berbeda",
-      "last_review": "2026-10-19T06:02:21.753Z",
+      "last_review": "2026-10-24T03:48:21.657Z",
       "last_mastered": "2026-09-12T14:13:49.702Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8450,11 +8454,15 @@
     "langsung": {
       "word": "langsung",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:02:34.464Z",
+      "updated_at": "2026-10-24T03:48:21.719Z",
       "display": "langsung",
-      "last_review": "2026-10-19T06:02:34.403Z",
+      "last_review": "2026-10-24T03:48:21.657Z",
       "last_mastered": "2026-09-12T14:13:49.744Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8472,66 +8480,90 @@
     "ketemu": {
       "word": "ketemu",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:02:38.174Z",
+      "updated_at": "2026-10-24T03:48:21.719Z",
       "display": "ketemu",
-      "last_review": "2026-10-19T06:02:38.115Z",
+      "last_review": "2026-10-24T03:48:21.657Z",
       "last_mastered": "2026-09-12T14:13:49.771Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "cocok": {
       "word": "cocok",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:02:41.156Z",
+      "updated_at": "2026-10-24T03:48:21.719Z",
       "display": "cocok",
-      "last_review": "2026-10-19T06:02:41.096Z",
+      "last_review": "2026-10-24T03:48:21.657Z",
       "last_mastered": "2026-09-12T14:13:49.785Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "aja": {
       "word": "aja",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:02:46.334Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "aja",
-      "last_review": "2026-10-19T06:02:46.270Z",
+      "last_review": "2026-10-24T03:49:26.111Z",
       "last_mastered": "2026-09-12T14:13:49.798Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "kan": {
       "word": "kan",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:02:50.803Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "kan",
-      "last_review": "2026-10-19T06:02:50.739Z",
+      "last_review": "2026-10-24T03:49:26.111Z",
       "last_mastered": "2026-09-12T14:13:49.811Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "sih": {
       "word": "sih",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:02:52.870Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "sih",
-      "last_review": "2026-10-19T06:02:52.810Z",
+      "last_review": "2026-10-24T03:49:26.111Z",
       "last_mastered": "2026-09-12T14:13:49.824Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "kok": {
       "word": "kok",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:02:54.938Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "kok",
-      "last_review": "2026-10-19T06:02:54.876Z",
+      "last_review": "2026-10-24T03:49:26.111Z",
       "last_mastered": "2026-09-12T14:13:49.838Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8553,11 +8585,15 @@
     "nih": {
       "word": "nih",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:00.157Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "nih",
-      "last_review": "2026-10-19T06:03:00.093Z",
+      "last_review": "2026-10-24T03:49:26.111Z",
       "last_mastered": "2026-09-12T14:13:49.865Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8579,55 +8615,75 @@
     "emang": {
       "word": "emang",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:03.235Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "emang",
-      "last_review": "2026-10-19T06:03:03.175Z",
+      "last_review": "2026-10-24T03:49:26.111Z",
       "last_mastered": "2026-09-12T14:13:49.892Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "terus": {
       "word": "terus",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:05.209Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "terus",
-      "last_review": "2026-10-19T06:03:05.149Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T14:13:49.905Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "tolong": {
       "word": "tolong",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:08.907Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "tolong",
-      "last_review": "2026-10-19T06:03:08.847Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T14:13:49.918Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "minta": {
       "word": "minta",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:13.929Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "minta",
-      "last_review": "2026-10-19T06:03:13.866Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T14:13:49.932Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "cek": {
       "word": "cek",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:15.393Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "cek",
-      "last_review": "2026-10-19T06:03:15.331Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T14:13:49.945Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8656,44 +8712,60 @@
     "macet": {
       "word": "macet",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:26.121Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "macet",
-      "last_review": "2026-10-19T06:03:26.058Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T14:13:49.992Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "parkir": {
       "word": "parkir",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:28.410Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "parkir",
-      "last_review": "2026-10-19T06:03:28.348Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T14:13:50.008Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "rekening": {
       "word": "rekening",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:31.164Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "rekening",
-      "last_review": "2026-10-19T06:03:31.103Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T14:13:50.025Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "hemat": {
       "word": "hemat",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:34.072Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "hemat",
-      "last_review": "2026-10-19T06:03:34.011Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T14:13:50.038Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8854,19 +8926,21 @@
     },
     "jadi": {
       "word": "jadi",
-      "status": "active",
-      "updated_at": "2026-10-21T05:53:28.280Z",
+      "status": "mastered",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "jadi",
       "cn": "成；确定；所以",
       "root": "jadi",
       "root_cn": "成；成为",
       "last_wrong": "2026-10-16T02:48:41.446Z",
-      "last_review": "2026-10-21T05:53:28.217Z",
-      "last_mastered": "2026-09-12T14:13:50.252Z",
+      "last_review": "2026-10-24T03:49:26.111Z",
+      "last_mastered": "2026-10-24T03:49:26.111Z",
       "source": "课程小测",
       "source_date": "2026-10-16",
       "session": "08:00",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "quick_wrong",
         "lesson_wrong"
       ],
@@ -8876,11 +8950,15 @@
     "biaya": {
       "word": "biaya",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:04:26.219Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "biaya",
-      "last_review": "2026-10-19T06:04:26.158Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T14:13:50.266Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8898,11 +8976,15 @@
     "stok": {
       "word": "stok",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:04:32.103Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "stok",
-      "last_review": "2026-10-19T06:04:32.039Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T14:13:50.295Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -10536,11 +10618,15 @@
     "pilihan": {
       "word": "pilihan",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:06:28.890Z",
+      "updated_at": "2026-10-24T03:48:21.719Z",
       "display": "pilihan",
-      "last_review": "2026-10-19T06:06:28.829Z",
+      "last_review": "2026-10-24T03:48:21.657Z",
       "last_mastered": "2026-09-12T14:13:52.390Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -19397,11 +19483,15 @@
     "transfer": {
       "word": "transfer",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:07:25.356Z",
+      "updated_at": "2026-10-24T03:49:26.171Z",
       "display": "transfer",
-      "last_review": "2026-10-19T06:07:25.294Z",
+      "last_review": "2026-10-24T03:49:26.112Z",
       "last_mastered": "2026-09-12T16:50:05.759Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -19585,11 +19675,15 @@
     "bingung": {
       "word": "bingung",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:07:43.625Z",
+      "updated_at": "2026-10-24T03:48:21.719Z",
       "display": "bingung",
-      "last_review": "2026-10-19T06:07:43.559Z",
+      "last_review": "2026-10-24T03:48:21.657Z",
       "last_mastered": "2026-09-12T16:52:23.537Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -19629,11 +19723,15 @@
     "pilih": {
       "word": "pilih",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:07:45.504Z",
+      "updated_at": "2026-10-24T03:48:21.719Z",
       "display": "pilih",
-      "last_review": "2026-10-19T06:07:45.444Z",
+      "last_review": "2026-10-24T03:48:21.657Z",
       "last_mastered": "2026-09-12T16:52:30.959Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -26315,7 +26413,7 @@
       "status": "active",
       "updated_at": "2026-10-24T03:28:26.008Z",
       "display": "lebat",
-      "cn": "（雨）大；（毛发、树叶）浓密；（果实）累累",
+      "cn": "浓密",
       "last_review": "2026-10-21T05:54:08.951Z",
       "source": "每日学习阅读",
       "source_date": "2026-10-11",
@@ -29954,10 +30052,11 @@
       "last_review": "2026-10-16T09:43:46.491Z",
       "last_mastered": "2026-10-16T09:43:46.491Z",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 3
+      "right_streak": 1
     },
     "kemasan": {
       "word": "kemasan",
