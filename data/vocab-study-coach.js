@@ -26,7 +26,7 @@
     return {items:taught(),mastered,weak:weak||{},quick:read('indo_quick_practice_state',{}),listen:read('indo_listen_stats_v1',{}),auto:read('indo_automation_training_state_v1',{}),requests:read(KNOWN_KEY,{}),recall:recallMap()};
   }
   function status(mode,word,now=Date.now(),src){
-    const s=src||snapshot(),k=norm(word),item=s.items.get(k);if(!item||!['quick','listen','auto'].includes(mode))return null;
+    const s=src||snapshot(),k=norm(word),item=s.items.get(k);if(!item||!['quick','listen','auto'].includes(mode)||s.mastered[k]||root.WeaknessPool?.isExcluded?.(word))return null;
     const old=s[mode][k]||s[mode][item.word]||{},mastered=s.mastered[k]||null,weak=s.weak[k]||null;
     let last=0,due=0,level=0,stable=false,kind='new',lastResult='',score=0;
     if(mode==='quick'){

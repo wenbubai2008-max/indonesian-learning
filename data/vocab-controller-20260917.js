@@ -12,6 +12,8 @@
   const BIPA_KEYS=['bipa-a1','bipa-a2','bipa-b1','bipa-b2'];
   const ALL_KEYS=[...NORMAL_KEYS,...BIPA_KEYS];
   let activeKey='master';
+  let batchOpen=false,batchFilter='all',batchQuery='',batchPage=0;
+  const batchSelected=new Set(),BATCH_PAGE_SIZE=60;
   let activeView='';
   let installed=false;
   let initPromise=null;
@@ -212,21 +214,29 @@
   }
   function ensureLibrarySelect(){const tb=document.querySelector('#vocab .toolbar');if(!tb)return null;let s=$('librarySelect');if(!s){s=document.createElement('select');s.id='librarySelect';tb.insertBefore(s,tb.firstChild)}return s}
   function syncUiMode(){const sec=$('vocab');if(sec){sec.classList.toggle('bipaFinalV7',isBipaKey());sec.classList.remove('bipaStable','bipaSwitching')}ensureGradeSelect()}
-  function computeStats(src=sourceFor(),mem=memoryFor()){
-    let known=0,review=0;src.forEach(x=>{const s=statusFromMemory(x.word,activeKey,mem);if(s==='know')known++;else if(s==='fuzzy'||s==='dont')review++});
-    return {total:src.length,known,review,unchecked:Math.max(0,src.length-known-review)};
+  function computeStats(src=sourceFor(),mem=memoryFor(),excludedKeys=new Set((window.WeaknessPool?.listExcluded?.()||[]).map(x=>norm(x.word)))){
+    let known=0,review=0,excluded=0;
+    src.forEach(x=>{
+      if(excludedKeys.has(norm(x.word))){excluded++;return;}
+      const s=statusFromMemory(x.word,activeKey,mem);
+      if(s==='know')known++;else if(s==='fuzzy'||s==='dont')review++;
+    });
+    return {total:src.length,known,review,excluded,unchecked:Math.max(0,src.length-known-review-excluded)};
   }
-  function updateStats(src=sourceFor(),mem=memoryFor()){
-    const s=computeStats(src,mem);
+  function updateStats(src=sourceFor(),mem=memoryFor(),excludedKeys){
+    const s=computeStats(src,mem,excludedKeys);
     if($('vocabCount'))$('vocabCount').textContent=s.total;if($('knownCount'))$('knownCount').textContent=s.known;if($('reviewCount'))$('reviewCount').textContent=s.review;
     let suffix='';if(activeView==='known')suffix=' · 查看已掌握';else if(activeView==='review')suffix=' · 查看待掌握';
-    if($('dbStatus'))$('dbStatus').textContent=isPendingKey()?labelFor()+' · '+s.total+' 个合法待学词 · 会了即可移出（同步后下次课程排除）':labelFor()+' · '+s.unchecked+' 未判断 · '+s.review+' 待掌握 · '+s.known+' 已掌握 · '+s.total+' 总词'+suffix;
+    if($('dbStatus'))$('dbStatus').textContent=isPendingKey()?labelFor()+' · '+s.total+' 个合法待学词 · 会了即可移出（同步后下次课程排除）':labelFor()+' · '+s.unchecked+' 未判断 · '+s.review+' 待掌握 · '+s.known+' 已掌握 · '+s.excluded+' 已排除 · '+s.total+' 总词'+suffix;
     if($('vocabTag'))$('vocabTag').textContent=labelFor()+' '+s.total+' 词';return s;
   }
-  function currentFilterPredicate(x,mem=memoryFor()){
+  function currentFilterPredicate(x,mem=memoryFor(),excludedKeys=new Set()){
     if(!x||!x.word)return false;if((x.categories||[]).includes('粗口/俚语'))return false;
     const st=statusFromMemory(x.word,activeKey,mem);
-    if(activeView==='known'){if(st!=='know')return false}else if(activeView==='review'){if(st!=='fuzzy'&&st!=='dont')return false}else if(st&&!isPendingKey())return false;
+    const excluded=excludedKeys.has(norm(x.word));
+    if(excluded&&activeView!=='excluded')return false;
+    if(activeView==='excluded'){if(!excluded)return false}
+    else if(activeView==='known'){if(st!=='know')return false}else if(activeView==='review'){if(st!=='fuzzy'&&st!=='dont')return false}else if(st&&!isPendingKey())return false;
     const q=String($('search')?.value||'').trim().toLowerCase(),cat=String($('cat')?.value||''),sab=isBipaKey()?String($('sabFilterStable')?.value||''):'';
     if(cat){if(isBipaKey()){if(String(x.theme||'')!==cat)return false}else if(!(x.categories||[]).includes(cat))return false}
     if(sab&&String(x.sab||'').toUpperCase()!==sab)return false;
@@ -260,10 +270,12 @@
     renderPendingUndo();
   }
   function rebuild(reset=false){
-    const src=sourceFor(),mem=memoryFor();try{DB=src.slice()}catch(e){}
-    const out=src.filter(x=>currentFilterPredicate(x,mem));
+    const src=sourceFor(),mem=memoryFor();
+    const excludedKeys=new Set((window.WeaknessPool?.listExcluded?.()||[]).map(x=>norm(x.word)));
+    try{DB=src.slice()}catch(e){}
+    const out=src.filter(x=>currentFilterPredicate(x,mem,excludedKeys));
     try{FILTER=out;if(reset)idx=0;else if(out.length)idx=Math.min(Math.max(0,Number(idx||0)),out.length-1);else idx=0}catch(e){}
-    updateStats(src,mem);renderCurrent();return out;
+    updateStats(src,mem,excludedKeys);renderCurrent();renderBatch();return out;
   }
   function setView(mode=''){
     activeView=mode==='known'||mode==='review'?mode:'';if(activeView)localStorage.setItem('vocab_view_mode',activeView);else localStorage.removeItem('vocab_view_mode');
@@ -293,13 +305,14 @@
       }
       if(mySeq!==switchSeq)return [];
     }
-    saveProgress();activeKey=key;if(!isPendingKey(key))pendingUndo=null;activeView='';localStorage.removeItem('vocab_view_mode');
+    saveProgress();activeKey=key;batchSelected.clear();batchPage=0;if(!isPendingKey(key))pendingUndo=null;activeView='';localStorage.removeItem('vocab_view_mode');
     const select=$('librarySelect');if(select&&select.value!==key)select.value=key;localStorage.setItem('selected_vocab_library',key);
     if($('search'))$('search').value='';syncUiMode();rebuildCategories();if($('cat'))$('cat').value='';if($('sabFilterStable'))$('sabFilterStable').value='';
-    const src=sourceFor(),mem=memoryFor();try{DB=src.slice()}catch(e){}
-    const out=src.filter(x=>(isPendingKey(key)||!statusFromMemory(x.word,activeKey,mem))&&!(x.categories||[]).includes('粗口/俚语'));
+    const src=sourceFor(),mem=memoryFor(),excludedKeys=new Set((window.WeaknessPool?.listExcluded?.()||[]).map(x=>norm(x.word)));
+    try{DB=src.slice()}catch(e){}
+    const out=src.filter(x=>!excludedKeys.has(norm(x.word))&&(isPendingKey(key)||!statusFromMemory(x.word,activeKey,mem))&&!(x.categories||[]).includes('粗口/俚语'));
     try{FILTER=out;idx=opts.restore===false?0:restoreIndex(out)}catch(e){}
-    updateStats(src,mem);renderCurrent();window.dispatchEvent(new CustomEvent('vocab-library-ready',{detail:{key,total:src.length}}));return out;
+    updateStats(src,mem,excludedKeys);renderCurrent();renderBatch();window.dispatchEvent(new CustomEvent('vocab-library-ready',{detail:{key,total:src.length}}));return out;
   }
   function move(delta){const a=Array.isArray(FILTER)?FILTER:[];if(!a.length)return;try{idx=(Number(idx||0)+delta+a.length)%a.length}catch(e){}saveProgress();renderCurrent()}
   function syncWeakness(item,v){
@@ -334,6 +347,74 @@
     const map=localUnknownMap();let changed=false;
     for(const [key,item] of Object.entries(map)){if(!item||!item.word||!missingMeaning(item.cn))continue;const shared=sharedUnknownWords().find(x=>norm(x.word)===norm(item.word));if(shared&&!missingMeaning(shared.cn)){item.cn=shared.cn;map[key]=item;changed=true;continue}const k=norm(item.word);if(meaningAttempts.has(k))continue;meaningAttempts.add(k);const zh=await translateZh(item.word);if(zh){item.cn=zh;map[key]=item;changed=true}}
     if(changed){localStorage.setItem('indo_unknown_words',JSON.stringify(map));populateLibraryOptions();if(activeKey==='unknown')setLibrary('unknown')}
+  }
+  function batchRows(){
+    const pool=window.WeaknessPool,records=new Map((pool?.all?.()||[]).map(x=>[norm(x.word),x]));
+    const base=batchFilter==='excluded'?[...records.values()].filter(x=>(x.reasons||[]).includes('training_excluded')):sourceFor();
+    const mem=memoryFor(),q=batchQuery.trim().toLowerCase();
+    return base.filter(x=>{
+      const word=String(x.word||''),record=records.get(norm(word)),st=statusFromMemory(word,activeKey,mem);
+      const excluded=(record?.reasons||[]).includes('training_excluded');
+      if(q&&!([word,x.cn||'',x.en||''].join(' ').toLowerCase().includes(q)))return false;
+      if(batchFilter==='mastered'&&(excluded||!(record?.status==='mastered'||st==='know')))return false;
+      if(batchFilter==='review'&&(!['fuzzy','dont'].includes(st)||excluded))return false;
+      return true;
+    }).map(x=>Object.assign({},x,{_batchRecord:records.get(norm(x.word))||null}));
+  }
+  function renderBatch(){
+    const panel=$('vocabBatchManager'),toggle=$('vocabBatchToggle');if(!panel)return;
+    panel.hidden=!batchOpen;if(toggle){toggle.textContent=batchOpen?'收起批量管理':'批量管理';toggle.setAttribute('aria-expanded',String(batchOpen));}
+    if(!batchOpen)return;
+    const rows=batchRows(),pages=Math.max(1,Math.ceil(rows.length/BATCH_PAGE_SIZE));
+    batchPage=Math.min(batchPage,pages-1);const page=rows.slice(batchPage*BATCH_PAGE_SIZE,(batchPage+1)*BATCH_PAGE_SIZE);
+    const escAttr=v=>esc(v).replace(/"/g,'&quot;');
+    const prevScroll=$('vocabBatchList')?.scrollTop||0;
+    panel.innerHTML=
+      '<div class="vocabBatchHead"><strong>批量管理</strong><span>仅管理训练资格，不删除词卡或历史记录</span></div>'+
+      '<div class="vocabBatchTools"><input id="vocabBatchSearch" aria-label="搜索批量管理词汇" placeholder="搜索词语／中文" value="'+escAttr(batchQuery)+'">'+
+      '<select id="vocabBatchFilter" aria-label="筛选词汇"><option value="all">当前词库全部</option><option value="review">模糊／不会</option><option value="mastered">已掌握</option><option value="excluded">已排除（所有词库）</option></select></div>'+
+      '<div class="vocabBatchMeta">'+rows.length+' 个符合条件，已选 '+batchSelected.size+' 个（本页 '+(batchPage+1)+'／'+pages+'）</div>'+
+      '<div id="vocabBatchList" class="vocabBatchList">'+(page.length?page.map(x=>{
+        const word=String(x.word),record=x._batchRecord,state=(record?.reasons||[]).includes('training_excluded')?'已排除':record?.status==='mastered'?'已掌握':statusFromMemory(word,activeKey,memoryFor())||'未标记';
+        return '<label class="vocabBatchRow"><input type="checkbox" data-batch-word="'+escAttr(word)+'" '+(batchSelected.has(norm(word))?'checked':'')+'><span><b>'+esc(word)+'</b> · '+esc(x.cn||'')+'</span><small>'+esc(state)+'</small></label>';
+      }).join(''):'<div class="vocabBatchEmpty">没有匹配的词</div>')+'</div>'+
+      '<div class="vocabBatchActions"><button type="button" id="vocabBatchSelectPage">选择本页</button><button type="button" id="vocabBatchClear">清空选择</button><button type="button" id="vocabBatchPrev" '+(batchPage===0?'disabled':'')+'>上一页</button><button type="button" id="vocabBatchNext" '+(batchPage>=pages-1?'disabled':'')+'>下一页</button></div>'+
+      '<div class="vocabBatchActions"><select id="vocabBatchReason" aria-label="排除原因"><option value="rare">太冷门／没必要</option><option value="easy">太简单／已熟练</option></select>'+
+      '<button type="button" id="vocabBatchExclude">不再训练</button><button type="button" id="vocabBatchMastered">标记已掌握</button><button type="button" id="vocabBatchRestore">恢复训练</button></div>';
+    $('vocabBatchFilter').value=batchFilter;
+    $('vocabBatchList').scrollTop=prevScroll;
+    $('vocabBatchSearch').oninput=function(){const p=this.selectionStart;batchQuery=this.value;batchPage=0;renderBatch();const next=$('vocabBatchSearch');next.focus();try{next.setSelectionRange(p,p)}catch(e){}};
+    $('vocabBatchFilter').onchange=function(){batchFilter=this.value;batchPage=0;batchSelected.clear();renderBatch()};
+    panel.querySelectorAll('[data-batch-word]').forEach(c=>c.onchange=function(){if(this.checked)batchSelected.add(norm(this.getAttribute('data-batch-word')));else batchSelected.delete(norm(this.getAttribute('data-batch-word')));renderBatch()});
+    $('vocabBatchSelectPage').onclick=()=>{page.forEach(x=>batchSelected.add(norm(x.word)));renderBatch()};
+    $('vocabBatchClear').onclick=()=>{batchSelected.clear();renderBatch()};
+    $('vocabBatchPrev').onclick=()=>{batchPage--;renderBatch()};
+    $('vocabBatchNext').onclick=()=>{batchPage++;renderBatch()};
+    for(const [id,act] of [['vocabBatchExclude','exclude'],['vocabBatchMastered','mastered'],['vocabBatchRestore','restore']]){
+      $(id).onclick=()=>{
+        if(!batchSelected.size)return;
+        const words=[...batchSelected];
+        if(!window.confirm('确认对 '+words.length+' 个词执行'+(act==='exclude'?'「不再训练」':act==='mastered'?'「已掌握」':'「恢复训练」')+'吗？'))return;
+        const count=window.WeaknessPool?.updateTrainingBatch?.(words,act,$('vocabBatchReason').value)||0;
+        if(act==='mastered'){
+          const m=normalMem();words.forEach(w=>m[w]='know');persistMemory('master',m);
+          if(isBipaKey()){const b=memoryFor(),inCurrent=new Set(sourceFor().map(x=>norm(x.word)));words.filter(w=>inCurrent.has(w)).forEach(w=>b[w]='know');persistMemory(activeKey,b);}
+        }
+        batchSelected.clear();rebuild(false);renderBatch();
+        if(!count)window.alert('没有需要更改的词');
+      };
+    }
+  }
+  function toggleBatch(){batchOpen=!batchOpen;batchSelected.clear();batchPage=0;renderBatch();}
+  function excludeCurrent(kind){
+    const item=currentItem();if(!item)return;
+    window.WeaknessPool?.updateTrainingBatch?.([item.word],'exclude',kind==='easy'?'easy':'rare');
+    rebuild(false);
+  }
+  function restoreCurrent(){
+    const item=currentItem();if(!item)return;
+    window.WeaknessPool?.updateTrainingBatch?.([item.word],'restore');
+    rebuild(false);
   }
   function bindControls(){
     const select=ensureLibrarySelect();if(select)select.onchange=function(){void setLibrary(this.value)};
@@ -386,7 +467,7 @@
   }
 
   window.VocabController={
-    init,rebuild,setLibrary,setView,mark,move,sourceFor,statusOf,currentItem,updateStats,emptyMessage,speak,activeKey:()=>activeKey,activeView:()=>activeView,isBipa:()=>isBipaKey(),bipaLevel:()=>bipaLevelForKey(),refresh:function(reset=false){bindControls();installOwnership();syncUiMode();rebuildCategories();return rebuild(reset)},dataReady:()=>dataReady
+    init,rebuild,setLibrary,setView,mark,move,toggleBatch,excludeCurrent,restoreCurrent,renderBatch,sourceFor,statusOf,currentItem,updateStats,emptyMessage,speak,activeKey:()=>activeKey,activeView:()=>activeView,isBipa:()=>isBipaKey(),bipaLevel:()=>bipaLevelForKey(),refresh:function(reset=false){bindControls();installOwnership();syncUiMode();rebuildCategories();return rebuild(reset)},dataReady:()=>dataReady
   };
   if(document.readyState==='complete')setTimeout(init,0);else window.addEventListener('load',()=>setTimeout(init,0),{once:true});
 })();

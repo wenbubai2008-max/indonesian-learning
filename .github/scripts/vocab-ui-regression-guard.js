@@ -176,9 +176,9 @@ try{
   ok(controller.includes('const memCache=new Map()'),'controller must cache parsed memory maps');
   ok(controller.includes('const sourceCache=new Map()'),'controller must cache static vocabulary sources');
   ok(controller.includes('function statusFromMemory'),'status filtering must reuse one parsed memory map');
-  ok(controller.includes('function computeStats(src=sourceFor(),mem=memoryFor())'),'stats must reuse cached memory');
-  ok(controller.includes('function currentFilterPredicate(x,mem=memoryFor())'),'FILTER predicate must accept cached memory');
-  ok(controller.includes('src.filter(x=>currentFilterPredicate(x,mem))'),'rebuild must not parse localStorage once per word');
+  ok(controller.includes('function computeStats(src=sourceFor(),mem=memoryFor(),excludedKeys='),'stats must reuse cached memory');
+  ok(controller.includes('function currentFilterPredicate(x,mem=memoryFor(),excludedKeys='),'FILTER predicate must accept cached memory');
+  ok(controller.includes('src.filter(x=>currentFilterPredicate(x,mem,excludedKeys))'),'rebuild must not parse localStorage once per word');
   ok(controller.includes('function bipaReady(level)'),'controller must support per-level BIPA readiness');
   ok(controller.includes('async function ensureBipaData(level)'),'controller must load one BIPA level on demand');
   ok(controller.includes("await window.BipaDataLoader.load(lv)"),'controller must request only the selected BIPA level');
@@ -192,6 +192,7 @@ try{
   ok(controller.includes('FILTER=out'),'controller must own FILTER writes');
   ok(controller.includes('DB=src.slice()'),'controller must own DB writes');
   ok(controller.includes('window.VocabController={'),'single VocabController API must be installed');
+  ok(controller.includes('const excludedKeys=new Set(')&&controller.includes('renderBatch();'),'exclusion is cached per rebuild and batch UI stays in existing controller');
   ok(!controller.includes('runGzipPayload'),'controller must never execute decompressed BIPA JSON as JS');
   ok(!controller.includes('bipaV7Card'),'controller must not render legacy BIPA cards');
 

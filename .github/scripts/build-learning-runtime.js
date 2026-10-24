@@ -83,7 +83,8 @@ const primaryUnlearnedTotal=master.length-primaryTaughtUnique;
 const dailyMeta=new Map(dailyRaw.map(x=>[key(x&&x.word),x]).filter(([k])=>k));
 const weakMap=new Map();for(const x of weakWords){const k=key(x&&x.word);if(k)weakMap.set(k,x)}
 const activeMap=new Map([...weakMap].filter(([,x])=>x&&x.status==='active'));
-const masteredCount=[...weakMap.values()].filter(x=>x&&x.status==='mastered').length;
+const isExcluded=x=>Array.isArray(x&&x.reasons)&&x.reasons.includes('training_excluded');
+const masteredCount=[...weakMap.values()].filter(x=>x&&x.status==='mastered'&&!isExcluded(x)).length;
 const secondaryReason=x=>Array.isArray(x&&x.reasons)&&x.reasons.some(r=>r==='bipa_secondary_dont'||r==='bipa_secondary_fuzzy');
 const newMemoryClass=x=>{
   const reasons=Array.isArray(x&&x.reasons)?x.reasons:[];
@@ -255,7 +256,7 @@ const focusExposed=focusFull.slice(0,30);
 
 const listeningFocusFull=[];
 for(const x of weakMap.values()){
-  const k=key(x&&x.word);if(!k||!dailySet.has(k))continue;
+  const k=key(x&&x.word);if(!k||!dailySet.has(k)||x.status!=='active'||isExcluded(x))continue;
   const reasons=Array.isArray(x.reasons)?x.reasons:[];
   const signals=[];let score=0;
   if(reasons.includes('listening_wrong')){score+=40;signals.push('listening_wrong');}

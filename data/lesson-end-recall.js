@@ -39,7 +39,7 @@
       const am=f.slice(11,16)==='08:00';if((session==='am')!==am)return;seen.add(k);out.push({word:x.word,cn:x.cn,first:f.slice(0,10)});});
     return out;
   }
-  function masteredSet(){try{return new Set((root.WeaknessPool&&root.WeaknessPool.listMastered()||[]).map(x=>norm(x&&x.word)));}catch(e){return new Set();}}
+  function masteredSet(){try{const p=root.WeaknessPool,rows=p&&typeof p.all==='function'?p.all().filter(x=>x&&x.status==='mastered'):(p&&p.listMastered?p.listMastered():[]);return new Set(rows.map(x=>norm(x&&x.word)));}catch(e){return new Set();}}
   function practicedToday(word,now){const c=root.VocabStudyCoach;if(!c||typeof c.status!=='function')return false;
     return ['quick','listen','auto'].some(m=>{try{const s=c.status(m,word,now);return !!(s&&s.last_today);}catch(e){return false;}});}
   function autoChecked(word,now){const c=root.VocabStudyCoach;try{const s=c&&c.status('auto',word,now);return !!(s&&s.last_at);}catch(e){return false;}}
@@ -51,7 +51,7 @@
   function focusSet(){try{const l=(JSON.parse(localStorage.getItem('indo_lesson_focus_v1')||'{}').lessons)||{};return new Set(Object.values(l).flatMap(x=>Array.isArray(x&&x.words)?x.words:[]).map(norm));}catch(e){return new Set();}}
   function select(date,session,now=Date.now()){
     const state=load(),id=date+'-'+session;
-    if(state.lessons[id]&&Array.isArray(state.lessons[id].words))return state.lessons[id].words.slice();
+    if(state.lessons[id]&&Array.isArray(state.lessons[id].words)){const mastered=masteredSet();return state.lessons[id].words.filter(w=>!mastered.has(norm(w.word))).slice();}
     const mastered=masteredSet(),yesterday=shift(date,-1);
     const ok=x=>!mastered.has(norm(x.word))&&!practicedToday(x.word,now);
     const main=taughtOn(yesterday,session).filter(ok);
