@@ -147,4 +147,19 @@ console.log('Study coach tests passed: independent abilities and due dates, 2/7/
   const M=app(['kuasa'],[{word:'kuasa',last_mastered:new Date(now-D).toISOString()}]);M.root.DAILY_VOCAB_DB[0].first_seen=dd(2);
   assert.equal(M.coach.status('auto','kuasa',now),null);assert.equal(M.coach.status('quick','kuasa',now),null);
 }
-console.log('New-word lane tests passed: first_seen age, 4/3 caps with recent+backlog split, recall ordering, plan <= 2, coverage, compat.');
+// Regression: one candidate batch must inspect a large weakness pool ONCE, not once per word.
+{
+  const B=app(Array.from({length:120},(_,i)=>'kata'+i));
+  let reads=0;
+  B.root.WeaknessPool.all=()=>{
+    reads++;
+    return [{word:'kata0',status:'mastered',reasons:[]},
+            {word:'kata1',status:'mastered',reasons:['training_excluded']},
+            {word:'kata2',status:'active',reasons:['memory_fuzzy']}];
+  };
+  const candidates=B.coach.candidates('quick',start);
+  assert.equal(reads,1,'One weakness snapshot is reused across all candidate words');
+  assert.ok(!candidates.some(x=>x.word==='kata0'||x.word==='kata1'),'Mastered and excluded words are skipped');
+  assert.ok(candidates.some(x=>x.word==='kata2'),'Active words remain eligible');
+}
+console.log('New-word lane tests passed: first_seen age, 4/3 caps, single weakness snapshot, exclusion and compat.');

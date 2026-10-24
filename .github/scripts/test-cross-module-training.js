@@ -168,4 +168,24 @@ assert.equal(pick(lessonAm,'中文意思','khas 是什么意思？').word,'khas'
   restored.updateTrainingBatch(['tapir'],'mastered');
   assert.equal(restored.listMastered().some(x=>x.word==='tapir'),true,'Explicit mastery clears training exclusion');
 }
-console.log('Cross-module tests passed: exclusions, independent quick/listen/auto selectors, persisted auto results, listening contrast boundaries and self-check integrity.');
+// Regression: each card or training lookup must NOT deserialize the full weakness pool again.
+{
+  const fresh=root.WeaknessPool;
+  const originalGet=root.localStorage.getItem.bind(root.localStorage);
+  let wholeReads=0;
+  root.localStorage.getItem=k=>{if(k===fresh.KEY)wholeReads++;return originalGet(k)};
+  for(let i=0;i<120;i++)fresh.isExcluded(i%2?'tapir':'tunda');
+  assert.ok(wholeReads<=1,'Repeated isExcluded lookups share one cached Set');
+  fresh.updateTrainingBatch(['tapir'],'exclude','rare');
+  const afterWrite=wholeReads;
+  assert.equal(fresh.isExcluded('tapir'),true,'A write invalidates the exclusion cache');
+  assert.equal(wholeReads,afterWrite+1,'Cache rebuild reads the pool exactly once after a write');
+  const beforeStorage=wholeReads;
+  root.dispatchEvent({type:'storage',key:fresh.KEY});
+  fresh.isExcluded('tapir');
+  assert.equal(wholeReads,beforeStorage+1,'Cross-tab storage event invalidates the cache');
+  fresh.updateTrainingBatch(['tapir'],'restore');
+  assert.equal(fresh.isExcluded('tapir'),false);
+  root.localStorage.getItem=originalGet;
+}
+console.log('Cross-module tests passed: exclusions, cached lookup, independent skill selectors and integrity.');

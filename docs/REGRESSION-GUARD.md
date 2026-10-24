@@ -575,4 +575,5 @@
 - 不新增云端记录类型、键、Worker 或另一份本机黑名单。为了兼容**当前已部署**的 weakness-sync Worker，复用 `status=mastered` 并在现有 `reasons` 数组最前保留 `training_excluded`、原因与原 mastered 状态标记。所有统计必须优先识别 `training_excluded`，不得把主动跳过当作真正 mastered；恢复时保留以前的模糊/不会原因以及原 mastered 身份和掌握时间。
 - 已有真正 `mastered` 不迁移、不重新标记；核心训练的快速/听词/自动候选和已保存的自动计划都必须跳过真正 mastered 与训练排除词。已排除词不能因为再次读到历史题、错题或听音信号自动变回 active。恢复必须由用户显式操作。
 - 词汇筛选须一次获取弱项快照并建立 Set/Map；禁止在 977 词循环中逐词调用 `WeaknessPool.get()`/ `isExcluded()` 反复解析本机弱项数据。
+- **2026-10-24 性能修复**：`VocabStudyCoach.snapshot()` 只能读取一次弱项全集，随后所有核心候选复用 snapshot.excluded；`WeaknessPool.isExcluded()` 的排除 Set 在保存和跨标签页 storage 变化时失效。严禁在 `status()` 的逐词循环里直接重新解析 `indo_weak_pool_v1`。回归测试覆盖「120个候选只读一次」和「连续120次排除查询只读一次、写入后清缓存」。
 - 全面运行 `test-cross-module-training.js`、`test-vocab-study-coach.js`、`vocab-ui-regression-guard.js` 和 `regression-guard.js`。仅语法解析或单个功能模拟不等于完整 CI 通过。

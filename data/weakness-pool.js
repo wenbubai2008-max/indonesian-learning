@@ -5,6 +5,7 @@
   const LEGACY_MEM='indo_mem';
   let legacyMigrated=false;
   let legacyMigrating=false;
+  let excludedLookup=null; // Rebuilt only after a weak-pool write or another tab's update.
 
   function norm(s){return String(s||'').trim().toLowerCase();}
   function parse(key){try{return JSON.parse(localStorage.getItem(key)||'{}')||{};}catch(e){return {};}}
@@ -13,6 +14,7 @@
   function uniq(a){return Array.from(new Set((a||[]).filter(Boolean)));}
   function same(a,b){try{return JSON.stringify(a||null)===JSON.stringify(b||null);}catch(e){return false;}}
   function save(pool){
+    excludedLookup=null;
     localStorage.setItem(KEY,JSON.stringify(pool));
     window.dispatchEvent(new CustomEvent('weak-pool-changed'));
     return pool;
@@ -42,7 +44,17 @@
   const exclusionFlags=['training_excluded','training_excluded_easy','training_excluded_rare','training_excluded_was_mastered'];
   function isExcludedRecord(x){return !!x&&Array.isArray(x.reasons)&&x.reasons.includes(EXCLUDE);}
   function exclusionKind(x){return isExcludedRecord(x)?(x.reasons.includes('training_excluded_easy')?'easy':'rare'):'';}
-  function isExcluded(word){return isExcludedRecord(get(word));}
+  function isExcluded(word){
+    const k=norm(word);if(!k)return false;
+    if(!excludedLookup){
+      const records=migrate();
+      excludedLookup=new Set(Object.keys(records).filter(x=>isExcludedRecord(records[x])));
+    }
+    return excludedLookup.has(k);
+  }
+  window.addEventListener('storage',function(e){
+    if(e&&e.key===KEY)excludedLookup=null;
+  });
   // Reuse the existing cloud-synced status and reasons. An excluded word is NOT counted as mastered.
   // This avoids adding a second cloud schema or another state store.
   function updateTrainingBatch(words,action,kind){
