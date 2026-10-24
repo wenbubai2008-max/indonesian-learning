@@ -32,6 +32,12 @@ try{
  run();let next=JSON.parse(fs.readFileSync(h,'utf8'));
  assert.equal(next.snapshots.length,1,'Same Jakarta day must upsert');
  assert.equal(next.snapshots[0].confirmed_mastered,2);
+ p.excluded_from_training=1;p.unverified=0;
+ save('vocab-profile.json',p);
+ run();next=JSON.parse(fs.readFileSync(h,'utf8'));
+ assert.equal(next.snapshots[0].excluded_from_training,1,'Excluded words must be saved separately');
+ assert.equal(next.snapshots[0].confirmed_mastered,2,'Excluded words must not inflate mastered');
+ assert.equal(next.snapshots[0].unverified,0,'The full mastery partition must remain consistent');
  const stable=fs.readFileSync(h,'utf8');
  p.source_updated_at='2026-09-26T01:00:00.000Z';save('vocab-profile.json',p);
  run(false);assert.equal(fs.readFileSync(h,'utf8'),stable,'Invalid source watermark must not alter history');
