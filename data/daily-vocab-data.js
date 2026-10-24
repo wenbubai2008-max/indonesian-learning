@@ -1173,29 +1173,33 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "原始课程",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-10-24 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-27",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-07"
+      "2026-09-07",
+      "2026-10-24"
     ],
-    "example": "Aku mau jelasin dulu, tapi dia keburu pulang.",
-    "example_cn": "我本来想先解释一下，但他已经先回去了。",
+    "example": "Ayo berangkat sekarang, nanti keburu kejebak macet di tol.",
+    "example_cn": "现在就出发吧，不然就要被堵在高速上了。",
     "root_cn": "赶；追赶",
     "lesson_occurrences": [
       "2026-08-27 08:00",
       "2026-09-02 19:00",
       "2026-09-04 19:00",
-      "2026-09-07 19:00"
+      "2026-09-07 19:00",
+      "2026-10-24 18:00"
     ]
   },
   {
@@ -7794,23 +7798,27 @@ window.DAILY_VOCAB_DB = [
     "en": "be beaten to it; someone gets there first",
     "root": "dulu",
     "root_cn": "先；以前",
-    "example": "Aku mau booking tempat itu, tapi keduluan tim lain.",
-    "example_cn": "我本来想订那个地方，但被别的团队抢先了。",
+    "example": "Aku mau beli kursi bekas itu, tapi keduluan orang lain. Cuma telat lima menit!",
+    "example_cn": "我想买那把二手椅子，可是被别人抢先了。就晚了五分钟！",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-08 08:00",
+    "last_seen": "2026-10-24 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-10-24"
     ],
     "lesson_occurrences": [
-      "2026-09-08 08:00"
+      "2026-09-08 08:00",
+      "2026-10-24 18:00"
     ]
   },
   {
@@ -9059,23 +9067,27 @@ window.DAILY_VOCAB_DB = [
     "en": "do first; prioritize",
     "root": "dulu",
     "root_cn": "先；以前",
-    "example": "Yang urgent kita ngeduluin dulu, sisanya bisa nyicil nanti.",
-    "example_cn": "紧急的我们先优先处理，其他的之后可以一点点做。",
+    "example": "Tadi ada motor yang ngeduluin kita di tikungan, hampir aja kena mobil dari depan.",
+    "example_cn": "刚才有辆摩托在弯道上超到我们前面，差点就撞上对面来的车。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-10-24 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-11"
+      "2026-09-11",
+      "2026-10-24"
     ],
     "lesson_occurrences": [
-      "2026-09-11 08:00"
+      "2026-09-11 08:00",
+      "2026-10-24 18:00"
     ]
   },
   {
@@ -18903,27 +18915,29 @@ window.DAILY_VOCAB_DB = [
     "en": "to obey; to comply with",
     "root": "patuh",
     "root_cn": "顺从；遵守",
-    "example": "Selama mendaki, semua peserta harus mematuhi instruksi pemimpin rombongan.",
-    "example_cn": "登山期间，所有参加者都必须服从领队的指示。",
+    "example": "Sopir truk itu tidak mematuhi rambu lalu lintas dan menabrak sebuah motor.",
+    "example_cn": "那个卡车司机没有遵守交通标志，撞上了一辆摩托车。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-08 08:00",
-    "last_seen": "2026-10-17 18:00",
+    "last_seen": "2026-10-24 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-10-08",
-      "2026-10-17"
+      "2026-10-17",
+      "2026-10-24"
     ],
     "lesson_occurrences": [
       "2026-10-08 08:00",
-      "2026-10-17 18:00"
+      "2026-10-17 18:00",
+      "2026-10-24 18:00"
     ]
   },
   {
@@ -23450,23 +23464,27 @@ window.DAILY_VOCAB_DB = [
     "en": "combination; blend",
     "root": "padu",
     "root_cn": "协调；融合",
-    "example": "Perpaduan musik akustik dan lampu kuning memberi nuansa hangat pada panggung itu.",
-    "example_cn": "原声音乐和暖黄色灯光的组合，让舞台有了温馨的情调。",
+    "example": "Sambal ini layak dicoba. Perpaduan pedas dan manisnya pas.",
+    "example_cn": "这款辣椒酱值得一试，辣和甜搭配得刚刚好。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-24 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-21"
+      "2026-10-21",
+      "2026-10-24"
     ],
     "lesson_occurrences": [
-      "2026-10-21 08:00"
+      "2026-10-21 08:00",
+      "2026-10-24 18:00"
     ]
   },
   {
@@ -24550,24 +24568,27 @@ window.DAILY_VOCAB_DB = [
     "en": "sibling; relative",
     "root": "saudara",
     "root_cn": "兄弟姐妹；亲属",
-    "example": "Kami tiga bersaudara, dan kakak-kakak saya masih memanggil saya \"Dek\" sampai sekarang.",
-    "example_cn": "我们兄弟姐妹三个，哥哥姐姐们到现在还叫我“小弟（Dek）”。",
+    "example": "Kalau ada tagihan yang aneh, saya biasanya tanya saudara saya yang kerja di bank.",
+    "example_cn": "如果有奇怪的账单，我一般会问我在银行工作的亲戚。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-24 08:00",
-    "last_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-24"
     ],
     "lesson_occurrences": [
-      "2026-10-24 08:00"
+      "2026-10-24 08:00",
+      "2026-10-24 18:00"
     ]
   },
   {
@@ -24602,23 +24623,127 @@ window.DAILY_VOCAB_DB = [
     "en": "to be born",
     "root": "lahir",
     "root_cn": "出生",
-    "example": "Saya lahir di Surabaya, tapi sejak umur lima tahun tinggal di Jakarta.",
-    "example_cn": "我出生在泗水，不过五岁起就住在雅加达。",
+    "example": "Pemain itu lahir di Bandung, tetapi ia mendapat gelar sarjananya di Yogyakarta.",
+    "example_cn": "那个运动员出生在万隆，但他是在日惹拿到学士学位的。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-24 08:00",
-    "last_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-24"
     ],
     "lesson_occurrences": [
-      "2026-10-24 08:00"
+      "2026-10-24 08:00",
+      "2026-10-24 18:00"
+    ]
+  },
+  {
+    "word": "mengukur",
+    "cn": "测量；量（尺寸、长度、体温等）",
+    "en": "to measure",
+    "root": "ukur",
+    "root_cn": "量、测量",
+    "example": "Sebelum pesan gorden, Ibu mengukur tinggi jendela dua kali supaya tidak salah.",
+    "example_cn": "订窗帘之前，妈妈把窗户的高度量了两遍，免得出错。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 18:00",
+    "last_seen": "2026-10-24 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 18:00"
+    ]
+  },
+  {
+    "word": "sempit",
+    "cn": "窄；狭小；（时间）紧",
+    "en": "narrow; cramped; tight",
+    "root": "sempit",
+    "root_cn": "窄",
+    "example": "Gang di depan kos saya sempit sekali. Kalau ada dua motor berpapasan, salah satunya harus mundur.",
+    "example_cn": "我住的宿舍门前那条巷子很窄。如果两辆摩托车迎面碰上，其中一辆就得往后退。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 18:00",
+    "last_seen": "2026-10-24 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 18:00"
+    ]
+  },
+  {
+    "word": "kotak",
+    "cn": "盒子；箱子；方格",
+    "en": "box; square",
+    "root": "kotak",
+    "root_cn": "盒子、方形",
+    "example": "Kalau mau retur, barangnya harus dikirim lagi dengan kotak aslinya.",
+    "example_cn": "如果要退货，东西必须用原来的盒子寄回去。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 18:00",
+    "last_seen": "2026-10-24 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 18:00"
+    ]
+  },
+  {
+    "word": "mendorong",
+    "cn": "推；推动；鼓励",
+    "en": "to push; to encourage",
+    "root": "dorong",
+    "root_cn": "推",
+    "example": "Mobil kami mogok di putaran dekat pasar, jadi kami mendorongnya ke pinggir jalan.",
+    "example_cn": "我们的车在市场附近的掉头处抛锚了，所以我们把它推到了路边。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 18:00",
+    "last_seen": "2026-10-24 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 18:00"
     ]
   }
 ];

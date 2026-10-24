@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-24",
-    "session": "pm",
-    "time": "18:00",
-    "day": 64
+    "date": "2026-10-25",
+    "session": "am",
+    "time": "08:00",
+    "day": 65
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-24T09:40:39.068Z",
-    "lesson_watermark": "2026-10-24 08:00",
+    "runtime_generated_at": "2026-10-24T10:53:01.906Z",
+    "lesson_watermark": "2026-10-24 18:00",
     "index_updated": "2026-10-24",
-    "runtime_hash": "6f59a134a34ab3a260dfd8f83d6a2dbf1e72808fdaed9dedaaabf34ea3e827c3",
-    "index_hash": "b3607189f2fd1c3f4b92a9a8afbdb79a4e52bb6c7553c6f93431f9d4509591be",
+    "runtime_hash": "61a0f4bf1522aa5f882998ba758023230a50f468984194954cad49bfc78fe8bf",
+    "index_hash": "76346cca00bcd7cfcf05c048226bdf6972e6e8b86b4d76a24300c87165c1087b",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -143,10 +143,6 @@
         "有趣的 / 令人愉快的"
       ],
       [
-        "mendorong",
-        "推"
-      ],
-      [
         "bepergian",
         "旅行"
       ],
@@ -169,14 +165,6 @@
       [
         "mengakhiri",
         "结束"
-      ],
-      [
-        "kotak",
-        "盒子、箱子"
-      ],
-      [
-        "sempit",
-        "狭窄的"
       ],
       [
         "memukul",
@@ -357,10 +345,6 @@
       [
         "bergetar",
         "震动"
-      ],
-      [
-        "mengukur",
-        "测量"
       ],
       [
         "lusa",
@@ -1319,26 +1303,6 @@
         "追上；随后跟上"
       ],
       [
-        "keburu",
-        3,
-        0,
-        "",
-        "2026-10-15T13:37:56.752Z",
-        "来不及就……；抢先已经……",
-        "buru",
-        "赶；追赶"
-      ],
-      [
-        "keduluan",
-        3,
-        0,
-        "",
-        "",
-        "被别人抢先；还没来得及就被先做了（口语）",
-        "dulu",
-        "先；以前"
-      ],
-      [
         "ngebut",
         3,
         0,
@@ -1497,16 +1461,6 @@
         "突然插一句；随口冒出一句（口语）",
         "celetuk",
         "随口插话；突然说一句"
-      ],
-      [
-        "ngeduluin",
-        3,
-        0,
-        "",
-        "",
-        "优先先做；把某事放前面（口语）",
-        "dulu",
-        "先；以前"
       ],
       [
         "nyelipin",
@@ -2789,94 +2743,34 @@
         "上；上方"
       ],
       [
-        "anak panah",
+        "lowongan",
         2,
         0,
         "",
-        "2026-10-24T02:35:59.246Z",
-        "箭（弓箭射出去的箭）",
-        "panah",
-        "弓箭；箭"
+        "2026-10-22T15:34:30.654Z",
+        "职位空缺；招聘信息",
+        "lowong",
+        "空着；有空缺"
       ],
       [
-        "sawo matang",
+        "pesanan",
         2,
         0,
         "",
-        "2026-10-24T02:36:15.706Z",
-        "（肤色）小麦色、浅棕色",
-        "sawo",
-        "人心果（一种热带水果）"
+        "2026-10-15T13:46:56.673Z",
+        "订单；订购的东西",
+        "pesan",
+        "订购；传话"
       ],
       [
-        "lesung pipit",
-        2,
-        0,
-        "",
-        "2026-10-24T02:36:06.043Z",
-        "酒窝",
-        "lesung",
-        "石臼（舂米用）"
-      ],
-      [
-        "perang",
-        2,
-        0,
-        "",
-        "2026-10-24T02:36:11.867Z",
-        "战争；打仗",
-        "perang",
-        "战争"
-      ],
-      [
-        "tentara",
-        2,
-        0,
-        "",
-        "2026-10-24T02:36:21.414Z",
-        "军人；军队",
-        "tentara",
-        "军队；军人"
-      ],
-      [
-        "terurai",
-        2,
-        0,
-        "",
-        "2026-10-24T02:36:28.333Z",
-        "（头发）披散着；（结、线）松开；（物质）被分解",
-        "urai",
-        "散开；分开"
-      ],
-      [
-        "saudara",
+        "periksa",
         3,
         0,
         "",
-        "2026-10-24T02:36:14.018Z",
-        "兄弟姐妹；亲戚；（正式称呼）您、诸位",
-        "saudara",
-        "兄弟姐妹；亲属"
-      ],
-      [
-        "berkelahi",
-        3,
-        0,
-        "",
-        "2026-10-24T02:36:02.107Z",
-        "打架",
-        "kelahi",
-        "打架；争斗"
-      ],
-      [
-        "lahir",
-        3,
-        0,
-        "",
-        "2026-10-24T02:36:04.340Z",
-        "出生；诞生",
-        "lahir",
-        "出生"
+        "2026-10-23T23:34:19.883Z",
+        "检查；核对",
+        "periksa",
+        "检查"
       ]
     ],
     "focus": [
@@ -3164,57 +3058,10 @@
         "akhir",
         735,
         "fuzzy"
-      ],
-      [
-        "mengukur",
-        "通用",
-        "ngukur",
-        "ukur",
-        742,
-        "fuzzy"
       ]
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-17",
-      "session": "am",
-      "review_core": [
-        "ngeluh",
-        "keluhan",
-        "mengeluh",
-        "nyindir",
-        "lengkap"
-      ],
-      "new_words": [
-        "renyah",
-        "kenyal",
-        "tepung",
-        "pena",
-        "berkebun",
-        "berkemah",
-        "bulat",
-        "tumpul",
-        "lebat",
-        "kumis"
-      ]
-    },
-    {
-      "date": "2026-10-17",
-      "session": "pm",
-      "review_core": [
-        "mematuhi",
-        "mengabaikan",
-        "kenalan",
-        "mengenal",
-        "memperkirakan"
-      ],
-      "new_words": [
-        "melindungi",
-        "membingungkan",
-        "longsor"
-      ]
-    },
     {
       "date": "2026-10-18",
       "session": "am",
@@ -3473,105 +3320,42 @@
         "berkelahi",
         "lahir"
       ]
+    },
+    {
+      "date": "2026-10-24",
+      "session": "pm",
+      "review_core": [
+        "perpaduan",
+        "mematuhi",
+        "keduluan",
+        "ngeduluin",
+        "keburu"
+      ],
+      "new_words": [
+        "mengukur",
+        "sempit",
+        "kotak",
+        "mendorong"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-23",
+    "date": "2026-10-24",
     "new_words": [
-      "separuh baya",
-      "listrik",
-      "menutupi"
+      "mengukur",
+      "sempit",
+      "kotak",
+      "mendorong"
     ],
     "review_core": [
-      "jadi",
-      "kebaca",
-      "bangun",
-      "pembangunan",
-      "kerjaan numpuk"
+      "perpaduan",
+      "mematuhi",
+      "keduluan",
+      "ngeduluin",
+      "keburu"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-24",
-    "vocab": [
-      [
-        "anak panah",
-        "箭（弓箭射出去的箭）",
-        "arrow",
-        "panah",
-        "弓箭；箭"
-      ],
-      [
-        "sawo matang",
-        "（肤色）小麦色、浅棕色",
-        "light brown (skin tone)",
-        "sawo",
-        "人心果（一种热带水果）"
-      ],
-      [
-        "lesung pipit",
-        "酒窝",
-        "dimple",
-        "lesung",
-        "石臼（舂米用）"
-      ],
-      [
-        "pantalon",
-        "正装长裤；西裤",
-        "dress trousers",
-        "",
-        ""
-      ],
-      [
-        "perang",
-        "战争；打仗",
-        "war",
-        "perang",
-        "战争"
-      ],
-      [
-        "tentara",
-        "军人；军队",
-        "soldier; army",
-        "tentara",
-        "军队；军人"
-      ],
-      [
-        "terurai",
-        "（头发）披散着；（结、线）松开；（物质）被分解",
-        "loose (hair); decomposed",
-        "urai",
-        "散开；分开"
-      ],
-      [
-        "saudara",
-        "兄弟姐妹；亲戚；（正式称呼）您、诸位",
-        "sibling; relative",
-        "saudara",
-        "兄弟姐妹；亲属"
-      ],
-      [
-        "berkelahi",
-        "打架",
-        "to fight (physically)",
-        "kelahi",
-        "打架；争斗"
-      ],
-      [
-        "lahir",
-        "出生；诞生",
-        "to be born",
-        "lahir",
-        "出生"
-      ]
-    ],
-    "review_vocab": [
-      "melayani",
-      "pelayanan",
-      "sok",
-      "nikmat",
-      "asal jangan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
