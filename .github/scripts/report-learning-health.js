@@ -126,7 +126,7 @@ function oralDiagnosis({oral,primary,secondary,taught,weak}){
  for(const o of oral){
   const w=o&&o.word,k=key(w);if(!k||seen.has(k))continue;seen.add(k);b.total++;
   if(taught.has(k))note('taught',w);
-  else if(weak.get(k)&&weak.get(k).status==='mastered')note('mastered',w);
+  else if(weak.get(k)&&weak.get(k).status==='mastered'&&!(weak.get(k).reasons||[]).includes('training_excluded'))note('mastered',w);
   else if(!prim.has(k)&&!sec.has(k))note('not_in_primary_or_secondary',w);
   else if(!weak.get(k)||weak.get(k).status!=='active')note('not_active',w);
   else note('eligible_new',w);
