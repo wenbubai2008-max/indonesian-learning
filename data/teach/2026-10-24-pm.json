@@ -1,0 +1,847 @@
+{
+  "version": 1,
+  "title": "晚课深讲 · 10月24日",
+  "intro": [
+    "今晚的课叫《新出租屋的门太窄，柜子进不去》。Raka 怕房间被人抢先，当场交了定金；搬家那天才发现门太窄，柜子只能斜着推进去，房东还提醒九点后不能吵。",
+    "今晚只讲 5 样：[[mengukur]] · [[keduluan]] · [[mematuhi]] · [[Karena takut …, …]] · [[…, nanti keburu …]]"
+  ],
+  "items": [
+    {
+      "key": "ukur",
+      "name": "mengukur",
+      "head": "mengukur · 测量；量",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "Raka",
+            "id": "Masa sih? Tadi pagi aku udah ngukur lemarinya, kok.",
+            "cn": "不会吧？我今天早上已经量过柜子了呀。"
+          }
+        ],
+        "ask": "Raka 早上做了什么，结果还是出了问题？",
+        "options": [
+          {
+            "t": "量了柜子，却没量门",
+            "reply": [
+              "对。ngukur 是 mengukur 的口语：他只量了柜子，门没量。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "数了柜子有几个抽屉",
+            "reply": [
+              "不是。数数是 menghitung；mengukur 是量尺寸。"
+            ]
+          },
+          {
+            "t": "检查柜子有没有坏",
+            "reply": [
+              "不是。检查是 memeriksa / ngecek；这里是量大小。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{mengukur}} = 用尺子、仪器去量：{{mengukur lebar pintu}}（量门宽）、{{mengukur suhu tubuh}}（量体温）。量出来的结果是 {{ukuran}}（尺寸）。",
+        "口语说 {{ngukur}}；叫别人量，直接说 {{Ukur dulu!}}"
+      ],
+      "simple": [
+        "[[mengukur]] = 量；结果是 [[ukuran]]；口语 ngukur"
+      ],
+      "asks": [
+        {
+          "label": "mengukur、menghitung、ukuran 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "Aku mengukur pintunya.",
+                  "我量门（尺寸）"
+                ],
+                [
+                  "Aku menghitung kotaknya.",
+                  "我数箱子（数量）"
+                ],
+                [
+                  "Ukuran lemarinya besar.",
+                  "柜子尺寸大（名词）"
+                ]
+              ]
+            },
+            "量长短大小用 mengukur，数个数用 menghitung。"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Sebelum beli kasur, ___ dulu kamarnya.]]",
+          "（买床垫之前，先量一下房间。）"
+        ],
+        "options": [
+          {
+            "t": "ukur",
+            "v": "right",
+            "why": [
+              "对。口语命令直接用词根：Ukur dulu!"
+            ]
+          },
+          {
+            "t": "ukuran",
+            "v": "wrong",
+            "why": [
+              "ukuran 是名词“尺寸”，不能当命令动词。"
+            ]
+          },
+          {
+            "t": "hitung",
+            "v": "wrong",
+            "why": [
+              "hitung 是“数、算”，房间要量，不是数。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。护士在诊所给你量血压。她说：“Saya ___ tekanan darah Bapak dulu, ya.”"
+          ],
+          "options": [
+            {
+              "t": "ukur",
+              "v": "right",
+              "why": [
+                "对。量血压：mengukur tekanan darah，对病人口语常说 ukur。"
+              ]
+            },
+            {
+              "t": "periksa",
+              "v": "ok",
+              "why": [
+                "也可以。periksa 是“检查”，Saya periksa tekanan darahnya 也常听到；说“量”这个动作时 ukur 更准确。"
+              ]
+            },
+            {
+              "t": "hitung",
+              "v": "wrong",
+              "why": [
+                "hitung 是数数，血压不是数出来的。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你跟室友说：“先量一下窗户，再去买窗帘。”先说出声，再点按钮。"
+        ],
+        "kw": "ukur dulu · jendelanya · beli gorden",
+        "skel": "____ dulu jendelanya, baru kita beli ____.",
+        "ref": "Ukur dulu jendelanya, baru kita beli gorden.",
+        "notes": [
+          "baru = 然后才。"
+        ]
+      },
+      "recall": {
+        "prompt": [
+          "裁缝店里，你对裁缝说：“请帮我量一下腰围。”"
+        ],
+        "kw": "tolong · ukur · lingkar pinggang",
+        "skel": "Bu, tolong ____ lingkar ____ saya, ya.",
+        "ref": "Bu, tolong ukur lingkar pinggang saya, ya.",
+        "notes": [
+          "lingkar pinggang = 腰围。"
+        ]
+      },
+      "final": {
+        "cn": "（对同事）“我量过了，这张桌子放得进会议室。”",
+        "ref": "Aku udah ngukur, mejanya muat di ruang rapat."
+      },
+      "remind": "mengukur = 量（口语 ngukur / Ukur dulu!）；结果是 ukuran；数数用 menghitung。"
+    },
+    {
+      "key": "duluan",
+      "name": "keduluan",
+      "head": "keduluan · 被别人抢先（口语）",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "Raka",
+            "id": "Kalau nggak cepet, aku keduluan orang lain!",
+            "cn": "不快点的话，我就被别人抢先了！"
+          }
+        ],
+        "ask": "Raka 为什么那么急着交定金？",
+        "options": [
+          {
+            "t": "怕房间被别人先订走",
+            "reply": [
+              "对。keduluan orang lain = 被别人抢先一步。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "想比别人先搬进去住",
+            "reply": [
+              "不是。那是他想抢先（ngeduluin）；keduluan 是“被”抢先，他是吃亏的一方。"
+            ]
+          },
+          {
+            "t": "想早点下班",
+            "reply": [
+              "不是。这句话说的是租房会被人抢走。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{keduluan}} 的主语是晚了一步的人：{{Aku keduluan dia.}}（我被他抢先了）。ke-an 表示“遭遇”，和 {{kehujanan}}（被雨淋）同类。",
+        "反过来，抢到前面的人用 {{ngeduluin}}：{{Dia ngeduluin aku.}} 正式场合说 {{didahului}}。"
+      ],
+      "simple": [
+        "[[keduluan]] = 我被抢先；[[ngeduluin]] = 他抢到我前面"
+      ],
+      "asks": [
+        {
+          "label": "keduluan 和 ngeduluin 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "Aku keduluan orang lain.",
+                  "我被别人抢先了"
+                ],
+                [
+                  "Orang itu ngeduluin aku.",
+                  "那个人抢到我前面"
+                ],
+                [
+                  "Kamu duluan aja.",
+                  "你先走吧（duluan = 先）"
+                ]
+              ]
+            },
+            "先找吃亏的人：他做主语就用 keduluan。"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Promo tiketnya cuma lima menit, aku ___ orang lain.]]",
+          "（优惠票只开了五分钟，我被别人抢先了。）"
+        ],
+        "options": [
+          {
+            "t": "keduluan",
+            "v": "right",
+            "why": [
+              "对。我是晚了一步的人：aku keduluan orang lain。"
+            ]
+          },
+          {
+            "t": "ngeduluin",
+            "v": "wrong",
+            "why": [
+              "方向反了：aku ngeduluin orang lain 是“我抢在别人前面”。"
+            ]
+          },
+          {
+            "t": "duluan",
+            "v": "wrong",
+            "why": [
+              "duluan 是“先”，后面不能直接带 orang lain。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。你想买的最后一件衬衫被别人先拿走了。最自然的说法："
+          ],
+          "options": [
+            {
+              "t": "Yah, aku keduluan.",
+              "v": "right",
+              "why": [
+                "对。没说是谁，只说“被抢先了”。"
+              ]
+            },
+            {
+              "t": "Yah, aku didahului orang lain.",
+              "v": "ok",
+              "why": [
+                "也可以，是更正式的说法；聊天里多说 keduluan。"
+              ]
+            },
+            {
+              "t": "Yah, aku ngeduluin.",
+              "v": "wrong",
+              "why": [
+                "这是说“我抢到前面了”，意思反了。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你跟朋友说：“快订吧，不然被别人抢先了。”先说出声。"
+        ],
+        "kw": "cepetan pesan · nanti · keduluan",
+        "skel": "Cepetan pesan, nanti ____ orang ____.",
+        "ref": "Cepetan pesan, nanti keduluan orang lain.",
+        "notes": [
+          "cepetan = cepat（口语催促）。"
+        ]
+      },
+      "recall": {
+        "prompt": [
+          "你想跟老板提加薪的点子，结果同事先说了。你跟朋友抱怨：“我本来想先提的，结果被他抢先了。”"
+        ],
+        "kw": "tadinya · mau ngusulin · keduluan dia",
+        "skel": "Tadinya aku mau ngusulin duluan, eh ____ dia.",
+        "ref": "Tadinya aku mau ngusulin duluan, eh keduluan dia.",
+        "notes": [
+          "ngusulin = mengusulkan（提议）；eh 表示意外。"
+        ]
+      },
+      "final": {
+        "cn": "（跟家人）“那个停车位又被别人抢先占了。”",
+        "ref": "Tempat parkirnya keduluan orang lain lagi."
+      },
+      "remind": "keduluan = 我被抢先（正式 didahului）；ngeduluin = 抢到别人前面。"
+    },
+    {
+      "key": "patuh",
+      "name": "mematuhi",
+      "head": "mematuhi · 遵守（规定）",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Sore itu Ibu kos mengingatkan bahwa semua penghuni wajib mematuhi aturan: setelah jam sembilan malam tidak boleh berisik, karena cucunya baru lahir.",
+            "cn": "那天下午房东太太提醒：所有房客都必须遵守规定，晚上九点以后不能吵，因为她的孙子刚出生。"
+          }
+        ],
+        "ask": "房东要房客怎么做？",
+        "options": [
+          {
+            "t": "遵守规定，九点后别吵",
+            "reply": [
+              "对。mematuhi aturan = 遵守规定。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "一起来制定规定",
+            "reply": [
+              "不是。制定规定是 membuat / mengatur；房客只要遵守。"
+            ]
+          },
+          {
+            "t": "九点前必须搬完",
+            "reply": [
+              "不完全对。规定是九点后不能吵；赶在九点前搬完是他们自己的决定。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{mematuhi}} 后面直接跟规定：{{mematuhi aturan}}、{{mematuhi rambu lalu lintas}}，不加 dengan。p 脱落：meN- + patuh + -i → mematuhi。",
+        "{{menaati}} 意思一样，也对；口语说 {{ikutin aturan}}，对孩子常说 {{nurut}}。{{memenuhi}} 是满足（{{memenuhi syarat}}），说守规矩一般不用它。"
+      ],
+      "simple": [
+        "[[mematuhi aturan]] = 遵守规定；口语 ikutin aturan"
+      ],
+      "asks": [
+        {
+          "label": "mematuhi 和 memenuhi 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "mematuhi aturan",
+                  "遵守规定"
+                ],
+                [
+                  "memenuhi syarat",
+                  "符合条件"
+                ],
+                [
+                  "memenuhi janji",
+                  "兑现承诺"
+                ]
+              ]
+            },
+            "守规矩用 mematuhi；达到条件、兑现承诺用 memenuhi。"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Semua tamu hotel wajib ___ aturan kolam renang.]]",
+          "（所有酒店客人都必须遵守泳池的规定。）"
+        ],
+        "options": [
+          {
+            "t": "mematuhi",
+            "v": "right",
+            "why": [
+              "对。mematuhi aturan 是告示里最常见的说法。"
+            ]
+          },
+          {
+            "t": "menaati",
+            "v": "ok",
+            "why": [
+              "也对，menaati aturan 和 mematuhi 意思一样，正式程度也差不多。"
+            ]
+          },
+          {
+            "t": "memenuhi",
+            "v": "wrong",
+            "why": [
+              "memenuhi 是“满足、符合”，接 syarat、kebutuhan，告示里说客人守规矩一般不用 memenuhi aturan。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。你跟朋友吐槽合租室友：“他从来不守规矩，十二点还在打游戏。”"
+          ],
+          "options": [
+            {
+              "t": "Dia nggak pernah ikutin aturan, jam dua belas masih main game.",
+              "v": "right",
+              "why": [
+                "对。朋友之间说 ikutin aturan 最自然。"
+              ]
+            },
+            {
+              "t": "Dia nggak pernah mematuhi aturan, jam dua belas masih main game.",
+              "v": "ok",
+              "why": [
+                "也对，语气更正式一点，像在正式投诉。"
+              ]
+            },
+            {
+              "t": "Dia nggak pernah mengatur aturan, jam dua belas masih main game.",
+              "v": "wrong",
+              "why": [
+                "mengatur 是“安排、制定”，意思不对。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你在小区群里提醒：“请大家遵守停车规定。”先说出声。"
+        ],
+        "kw": "mohon · warga · mematuhi aturan parkir",
+        "skel": "Mohon semua warga ____ aturan ____, ya.",
+        "ref": "Mohon semua warga mematuhi aturan parkir, ya.",
+        "notes": [
+          "mohon = 请（礼貌、正式）。"
+        ]
+      },
+      "recall": {
+        "prompt": [
+          "你跟新来的同事说：“在工地一定要遵守安全规定，要戴安全帽。”"
+        ],
+        "kw": "di proyek · harus mematuhi · aturan keselamatan",
+        "skel": "Di proyek kita harus ____ aturan ____, pakai helm.",
+        "ref": "Di proyek kita harus mematuhi aturan keselamatan, pakai helm.",
+        "notes": [
+          "keselamatan = 安全。"
+        ]
+      },
+      "final": {
+        "cn": "（对孩子）“在学校要遵守老师定的规矩哦。”",
+        "ref": "Di sekolah kamu harus mematuhi aturan dari guru, ya."
+      },
+      "remind": "mematuhi + 规定（不加 dengan）；menaati 同义；口语 ikutin aturan / nurut；memenuhi 接 syarat。"
+    },
+    {
+      "key": "takut",
+      "name": "Karena takut …, …",
+      "head": "Karena takut …, … · 因为怕……，（所以）……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Karena takut didahului orang lain, Raka langsung membayar uang muka.",
+            "cn": "因为怕被别人抢先，Raka 当场就交了定金。"
+          }
+        ],
+        "ask": "Raka 为什么马上交定金？",
+        "options": [
+          {
+            "t": "怕房间被别人先订走",
+            "reply": [
+              "对。Karena takut … 先说担心，后半句说因此做了什么。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "房东要求马上付",
+            "reply": [
+              "不是。课文没说房东催他，是他自己怕。"
+            ]
+          },
+          {
+            "t": "定金很便宜",
+            "reply": [
+              "不是。takut 说的是担心，不是价格。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "句型：**Karena takut + 担心的事, + 采取的行动**。担心的事可以是动词或被动：{{takut telat}}（怕迟到）、{{takut didahului}}（怕被抢先）。",
+        "口语常说 {{Takut …, jadi …}}：{{Takut macet, jadi aku berangkat jam enam.}}"
+      ],
+      "simple": [
+        "[[Karena takut …, …]] = 因为怕……，所以……"
+      ],
+      "asks": [
+        {
+          "label": "karena takut 和 supaya tidak 有什么不同？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "Karena takut telat, aku naik ojek.",
+                  "因为怕迟到，我坐了摩的"
+                ],
+                [
+                  "Aku naik ojek supaya tidak telat.",
+                  "我坐摩的，免得迟到"
+                ]
+              ]
+            },
+            "意思接近：karena takut 放前面说原因；supaya tidak 放后面说目的。"
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "[[___ hujan, Ibu mengangkat jemuran lebih awal.]]",
+          "（因为怕下雨，妈妈提早把晾的衣服收了。）"
+        ],
+        "options": [
+          {
+            "t": "Karena takut",
+            "v": "right",
+            "why": [
+              "对。先说担心下雨，后半句说提早收衣服。"
+            ]
+          },
+          {
+            "t": "Supaya takut",
+            "v": "wrong",
+            "why": [
+              "supaya 是“为了”，不会“为了害怕”。"
+            ]
+          },
+          {
+            "t": "Walaupun takut",
+            "v": "wrong",
+            "why": [
+              "walaupun 是“虽然”，后面应接相反的结果，这里不通。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。你跟朋友说：“因为怕没座位，我们提前到了。”最自然的说法："
+          ],
+          "options": [
+            {
+              "t": "Karena takut nggak dapat tempat duduk, kami datang lebih awal.",
+              "v": "right",
+              "why": [
+                "对。先说担心，后面说提前到。"
+              ]
+            },
+            {
+              "t": "Takut nggak dapat tempat duduk, jadi kami datang lebih awal.",
+              "v": "ok",
+              "why": [
+                "也可以，是更口语的 Takut …, jadi … 说法。"
+              ]
+            },
+            {
+              "t": "Karena takut kami datang lebih awal, nggak dapat tempat duduk.",
+              "v": "wrong",
+              "why": [
+                "因果放反了：变成“因为怕提前到，所以没座位”。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你跟同事说：“因为怕堵车，我六点就出门了。”先说出声。"
+        ],
+        "kw": "karena takut · macet · berangkat jam enam",
+        "skel": "Karena takut ____, aku ____ jam enam.",
+        "ref": "Karena takut macet, aku berangkat jam enam."
+      },
+      "recall": {
+        "prompt": [
+          "你跟朋友说：“因为怕忘，我把密码写在本子上了。”"
+        ],
+        "kw": "karena takut lupa · aku tulis · di buku",
+        "skel": "Karena takut ____, password-nya aku tulis di ____.",
+        "ref": "Karena takut lupa, password-nya aku tulis di buku."
+      },
+      "final": {
+        "cn": "（对家人）“因为怕吵醒宝宝，我们小声说话。”",
+        "ref": "Karena takut bayinya bangun, kami ngomong pelan-pelan."
+      },
+      "remind": "Karena takut + 担心的事, + 行动；口语 Takut …, jadi …"
+    },
+    {
+      "key": "keburu",
+      "name": "…, nanti keburu …",
+      "head": "…, nanti keburu … · ……，再不快点就要……了",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "Bima",
+            "id": "Silakan, Mbak. Ayo, Ka, cepetan. Kotaknya masih sepuluh, nanti keburu malam.",
+            "cn": "请吧。走，阿卡，快点。还有十个箱子，再不快点天就黑了。"
+          }
+        ],
+        "ask": "Bima 说 nanti keburu malam，是想表达什么？",
+        "options": [
+          {
+            "t": "快点，不然天黑了还没搬完",
+            "reply": [
+              "对。nanti keburu … = 再拖下去，……就先来了。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "晚上再搬比较好",
+            "reply": [
+              "不是。他在催，不是建议晚上搬。"
+            ]
+          },
+          {
+            "t": "天已经黑了",
+            "reply": [
+              "不是。keburu 说的是“快要先发生”，现在还没黑。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "句型：**催促 + nanti keburu + 不想发生的事**：{{Cepetan, nanti keburu hujan.}}（快点，要下雨了）、{{nanti keburu habis}}（要卖完了）。",
+        "另一个用法：{{masih keburu}} = 还来得及（≈ masih sempat）。正式说法用 {{sebelum …}}。"
+      ],
+      "simple": [
+        "[[nanti keburu …]] = 再不快点，……就先来了"
+      ],
+      "asks": [
+        {
+          "label": "keburu 和 sempat 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "Cepetan, nanti keburu hujan.",
+                  "快点，要下雨了（不能换 sempat）"
+                ],
+                [
+                  "Masih keburu, kok.",
+                  "还来得及"
+                ],
+                [
+                  "Masih sempat, kok.",
+                  "还来得及（同上）"
+                ]
+              ]
+            },
+            "说“还来得及”两个都行；说“……要先来了”只用 keburu。"
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Ayo makan sekarang, nanti keburu ___.]]",
+          "（现在就去吃吧，再不去就要关门了。）"
+        ],
+        "options": [
+          {
+            "t": "tutup",
+            "v": "right",
+            "why": [
+              "对。nanti keburu tutup = 再拖就关门了。"
+            ]
+          },
+          {
+            "t": "buka",
+            "v": "wrong",
+            "why": [
+              "这里担心的是餐馆关门，nanti keburu buka 意思变成“再不去就要开门了”，跟催人的语气对不上。"
+            ]
+          },
+          {
+            "t": "sempat",
+            "v": "wrong",
+            "why": [
+              "keburu 后面接要先发生的事，不接 sempat；sempat 自己就是“来得及”。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。快下雨了，你催孩子把自行车推进屋。最自然的说法："
+          ],
+          "options": [
+            {
+              "t": "Sepedanya masukin, nanti keburu hujan.",
+              "v": "right",
+              "why": [
+                "对。nanti keburu hujan = 再不快点就下雨了。"
+              ]
+            },
+            {
+              "t": "Sepedanya masukin sebelum hujan.",
+              "v": "ok",
+              "why": [
+                "也可以，sebelum hujan 更中性，催促的味道弱一些。"
+              ]
+            },
+            {
+              "t": "Sepedanya masukin, nanti sempat hujan.",
+              "v": "wrong",
+              "why": [
+                "sempat 是“来得及、有空”，不能说“要下雨了”。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你催朋友：“快走吧，要堵车了。”先说出声。"
+        ],
+        "kw": "ayo jalan · nanti keburu macet",
+        "skel": "Ayo ____ sekarang, nanti ____ macet.",
+        "ref": "Ayo jalan sekarang, nanti keburu macet."
+      },
+      "recall": {
+        "prompt": [
+          "超市里，你跟妈妈说：“快去收银台，要排长队了。”"
+        ],
+        "kw": "cepetan ke kasir · nanti keburu · antre panjang",
+        "skel": "Ma, cepetan ke ____, nanti keburu ____ panjang.",
+        "ref": "Ma, cepetan ke kasir, nanti keburu antre panjang."
+      },
+      "final": {
+        "cn": "（对同事）“快点下单吧，优惠要结束了。”",
+        "ref": "Cepetan pesan, nanti keburu promonya selesai."
+      },
+      "remind": "nanti keburu + 不想先发生的事（hujan / malam / habis）；masih keburu = 还来得及。"
+    }
+  ],
+  "scan": {
+    "head": "其他新词 · 扫一眼",
+    "intro": [
+      "今晚另外三个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+    ],
+    "words": [
+      "sempit",
+      "kotak",
+      "mendorong"
+    ]
+  },
+  "reading": [
+    {
+      "key": "miring",
+      "sentence": "Mereka memiringkan lemari, lalu Bima mendorongnya pelan-pelan.",
+      "cn": "他们把柜子斜过来，然后 Bima 慢慢地推。",
+      "chunks": [
+        [
+          "Mereka memiringkan lemari,",
+          "他们把柜子斜过来",
+          "memiringkan = 让……倾斜，口语 miringin"
+        ],
+        [
+          "lalu Bima mendorongnya",
+          "然后 Bima 推它",
+          "-nya 指柜子"
+        ],
+        [
+          "pelan-pelan.",
+          "慢慢地",
+          "pelan-pelan 放在动词后面说方式"
+        ]
+      ],
+      "steal": [
+        "值得借的是 [[…, lalu …]]：按顺序说两个动作。{{Aku cuci tangan, lalu makan.}}（我洗了手，然后吃饭。）"
+      ]
+    }
+  ],
+  "dialogue": {
+    "head": "对话 · 你来演 Raka",
+    "intro": [
+      "你演 Raka，我演 Bima。每一轮先看 Raka 想说什么，看中文先说。"
+    ],
+    "turns": [
+      {
+        "line": 1,
+        "intent": "Raka 不信：他早上已经量过柜子了。",
+        "kw": "masa sih · udah ngukur · lemarinya",
+        "skel": "Masa sih? Tadi pagi aku udah ____ lemarinya, kok."
+      },
+      {
+        "line": 3,
+        "intent": "Raka 解释：不快点就会被别人抢先。",
+        "kw": "kalau nggak cepet · keduluan · orang lain",
+        "skel": "Kalau nggak cepet, aku ____ orang lain!"
+      }
+    ],
+    "tail": [
+      "兄弟之间用 aku / kamu，句子里有 udah、nggak、ngukur、cepet 这些口语形；正式场合换成 sudah、tidak、mengukur、cepat。"
+    ]
+  },
+  "tasks": [
+    {
+      "key": "output",
+      "prompt": [
+        "最后一个开口任务（来自今晚的改写题，缩短版）：跟朋友抱怨排队时有人插到你前面，结果你没买到粥。"
+      ],
+      "kw": "ngeduluin aku · akhirnya · keduluan",
+      "skel": "Tadi ada bapak-bapak yang ____ aku. Akhirnya aku ____, buburnya habis.",
+      "ref": "Tadi ada bapak-bapak yang ngeduluin aku. Akhirnya aku keduluan, buburnya habis.",
+      "notes": [
+        "整页的改写题有更完整的参考答案，学完可以去对照。"
+      ]
+    }
+  ],
+  "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
