@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-24",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 64
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-23T23:45:40.430Z",
-    "lesson_watermark": "2026-10-23 18:00",
-    "index_updated": "2026-10-23",
-    "runtime_hash": "d0a80eab0299ea11c8e6dee0d1499cee4f9ec313639425bde25247fa2fceb27c",
-    "index_hash": "859508483d4b327c880a9882babfadc036bcefab10991fac895162258bebc275",
+    "runtime_generated_at": "2026-10-24T00:32:52.504Z",
+    "lesson_watermark": "2026-10-24 08:00",
+    "index_updated": "2026-10-24",
+    "runtime_hash": "55333724dd83247d04d8b48caea4a6a5796883e14ec6e63eb08b6548ea9f0e00",
+    "index_hash": "b3607189f2fd1c3f4b92a9a8afbdb79a4e52bb6c7553c6f93431f9d4509591be",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -48,36 +48,7 @@
     ]
   },
   "candidates": {
-    "new_dont": [
-      [
-        "anak panah",
-        "箭头"
-      ],
-      [
-        "sawo matang",
-        "棕褐肤色"
-      ],
-      [
-        "lesung pipit",
-        "酒窝"
-      ],
-      [
-        "pantalon",
-        "长裤"
-      ],
-      [
-        "perang",
-        "战争片/战争"
-      ],
-      [
-        "tentara",
-        "军人"
-      ],
-      [
-        "terurai",
-        "分解；散开"
-      ]
-    ],
+    "new_dont": [],
     "new_fuzzy": [
       [
         "mencampur",
@@ -168,10 +139,6 @@
         "片刻 / 瞬间"
       ],
       [
-        "lahir",
-        "出生"
-      ],
-      [
         "menyenangkan",
         "有趣的 / 令人愉快的"
       ],
@@ -182,10 +149,6 @@
       [
         "bepergian",
         "旅行"
-      ],
-      [
-        "berkelahi",
-        "打架"
       ],
       [
         "detik",
@@ -334,10 +297,6 @@
       [
         "fakta",
         "事实"
-      ],
-      [
-        "saudara",
-        "兄弟"
       ],
       [
         "positif",
@@ -2530,16 +2489,6 @@
         "气氛；环境"
       ],
       [
-        "melayani",
-        2,
-        0,
-        "",
-        "2026-10-15T13:47:06.341Z",
-        "服务；接待",
-        "layan",
-        "服务；接待"
-      ],
-      [
         "ngambek",
         2,
         0,
@@ -2690,16 +2639,6 @@
         "倾诉（curahan hati的口语缩略）"
       ],
       [
-        "pelayanan",
-        2,
-        0,
-        "",
-        "2026-10-23T23:33:43.781Z",
-        "服务；服务质量",
-        "layan",
-        "服务；招待"
-      ],
-      [
         "rekan kerja",
         3,
         0,
@@ -2830,6 +2769,26 @@
         "必须；义务"
       ],
       [
+        "bangsa",
+        2,
+        0,
+        "",
+        "2026-10-19T13:14:25.345Z",
+        "民族；国家",
+        "bangsa",
+        "民族；国家"
+      ],
+      [
+        "demikian",
+        2,
+        0,
+        "",
+        "2026-10-21T01:42:34.625Z",
+        "如此；这样",
+        "demikian",
+        "如此；这样"
+      ],
+      [
         "ketukar",
         5,
         0,
@@ -2900,16 +2859,6 @@
         "共同凑钱；分摊费用"
       ],
       [
-        "asal jangan",
-        5,
-        0,
-        "",
-        "",
-        "只要别……就行",
-        "asal",
-        "只要；条件是"
-      ],
-      [
         "keduluan",
         5,
         0,
@@ -2928,6 +2877,116 @@
         "被发现；被看出来；终于查到（口语）",
         "tahu",
         "知道；了解"
+      ],
+      [
+        "ngebut",
+        5,
+        0,
+        "",
+        "",
+        "加速赶；猛赶进度；开快车（口语）",
+        "kebut",
+        "快速赶；高速行进"
+      ],
+      [
+        "anak panah",
+        2,
+        0,
+        "",
+        "",
+        "箭（弓箭射出去的箭）",
+        "panah",
+        "弓箭；箭"
+      ],
+      [
+        "sawo matang",
+        2,
+        0,
+        "",
+        "",
+        "（肤色）小麦色、浅棕色",
+        "sawo",
+        "人心果（一种热带水果）"
+      ],
+      [
+        "lesung pipit",
+        2,
+        0,
+        "",
+        "",
+        "酒窝",
+        "lesung",
+        "石臼（舂米用）"
+      ],
+      [
+        "pantalon",
+        2,
+        0,
+        "",
+        "",
+        "正装长裤；西裤",
+        "",
+        ""
+      ],
+      [
+        "perang",
+        2,
+        0,
+        "",
+        "",
+        "战争；打仗",
+        "perang",
+        "战争"
+      ],
+      [
+        "tentara",
+        2,
+        0,
+        "",
+        "",
+        "军人；军队",
+        "tentara",
+        "军队；军人"
+      ],
+      [
+        "terurai",
+        2,
+        0,
+        "",
+        "",
+        "（头发）披散着；（结、线）松开；（物质）被分解",
+        "urai",
+        "散开；分开"
+      ],
+      [
+        "saudara",
+        3,
+        0,
+        "",
+        "",
+        "兄弟姐妹；亲戚；（正式称呼）您、诸位",
+        "saudara",
+        "兄弟姐妹；亲属"
+      ],
+      [
+        "berkelahi",
+        3,
+        0,
+        "",
+        "",
+        "打架",
+        "kelahi",
+        "打架；争斗"
+      ],
+      [
+        "lahir",
+        3,
+        0,
+        "",
+        "",
+        "出生；诞生",
+        "lahir",
+        "出生"
       ]
     ],
     "focus": [
@@ -3177,14 +3236,6 @@
     ],
     "oral": [
       [
-        "berkelahi",
-        "通用",
-        "berantem",
-        "kelahi",
-        717,
-        "fuzzy"
-      ],
-      [
         "malahan",
         "通用",
         "malah",
@@ -3222,14 +3273,6 @@
         "ngukur",
         "ukur",
         742,
-        "fuzzy"
-      ],
-      [
-        "saudara",
-        "通用",
-        "sodara",
-        "saudara",
-        749,
         "fuzzy"
       ]
     ]
@@ -3509,6 +3552,29 @@
         "listrik",
         "menutupi"
       ]
+    },
+    {
+      "date": "2026-10-24",
+      "session": "am",
+      "review_core": [
+        "melayani",
+        "pelayanan",
+        "sok",
+        "nikmat",
+        "asal jangan"
+      ],
+      "new_words": [
+        "anak panah",
+        "sawo matang",
+        "lesung pipit",
+        "pantalon",
+        "perang",
+        "tentara",
+        "terurai",
+        "saudara",
+        "berkelahi",
+        "lahir"
+      ]
     }
   ],
   "previous_pm": {
@@ -3526,7 +3592,88 @@
       "kerjaan numpuk"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-24",
+    "vocab": [
+      [
+        "anak panah",
+        "箭（弓箭射出去的箭）",
+        "arrow",
+        "panah",
+        "弓箭；箭"
+      ],
+      [
+        "sawo matang",
+        "（肤色）小麦色、浅棕色",
+        "light brown (skin tone)",
+        "sawo",
+        "人心果（一种热带水果）"
+      ],
+      [
+        "lesung pipit",
+        "酒窝",
+        "dimple",
+        "lesung",
+        "石臼（舂米用）"
+      ],
+      [
+        "pantalon",
+        "正装长裤；西裤",
+        "dress trousers",
+        "",
+        ""
+      ],
+      [
+        "perang",
+        "战争；打仗",
+        "war",
+        "perang",
+        "战争"
+      ],
+      [
+        "tentara",
+        "军人；军队",
+        "soldier; army",
+        "tentara",
+        "军队；军人"
+      ],
+      [
+        "terurai",
+        "（头发）披散着；（结、线）松开；（物质）被分解",
+        "loose (hair); decomposed",
+        "urai",
+        "散开；分开"
+      ],
+      [
+        "saudara",
+        "兄弟姐妹；亲戚；（正式称呼）您、诸位",
+        "sibling; relative",
+        "saudara",
+        "兄弟姐妹；亲属"
+      ],
+      [
+        "berkelahi",
+        "打架",
+        "to fight (physically)",
+        "kelahi",
+        "打架；争斗"
+      ],
+      [
+        "lahir",
+        "出生；诞生",
+        "to be born",
+        "lahir",
+        "出生"
+      ]
+    ],
+    "review_vocab": [
+      "melayani",
+      "pelayanan",
+      "sok",
+      "nikmat",
+      "asal jangan"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

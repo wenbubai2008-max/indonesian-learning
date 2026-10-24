@@ -7714,21 +7714,25 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "只要；条件是",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-10-24 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-10-24"
     ],
     "example": "Jam berapa aja boleh, asal jangan terlalu malam.",
     "example_cn": "几点都可以，只要别太晚就行。",
     "lesson_occurrences": [
-      "2026-09-07 19:00"
+      "2026-09-07 19:00",
+      "2026-10-24 08:00"
     ]
   },
   {
@@ -13795,19 +13799,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "如果还不懂，别装懂；最好先问一下。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-22 18:00",
-    "last_seen": "2026-09-22 18:00",
+    "last_seen": "2026-10-24 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-22"
+      "2026-09-22",
+      "2026-10-24"
     ],
     "lesson_occurrences": [
-      "2026-09-22 18:00"
+      "2026-09-22 18:00",
+      "2026-10-24 08:00"
     ]
   },
   {
@@ -14972,17 +14980,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-10-24 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-10-24"
     ],
     "lesson_occurrences": [
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-10-24 08:00"
     ]
   },
   {
@@ -15181,19 +15191,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-09-28 18:00",
+    "last_seen": "2026-10-24 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-24"
     ],
     "lesson_occurrences": [
       "2026-09-28 08:00",
-      "2026-09-28 18:00"
+      "2026-09-28 18:00",
+      "2026-10-24 08:00"
     ]
   },
   {
@@ -15573,17 +15585,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-29 08:00",
-    "last_seen": "2026-09-29 08:00",
+    "last_seen": "2026-10-24 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-24"
     ],
     "lesson_occurrences": [
-      "2026-09-29 08:00"
+      "2026-09-29 08:00",
+      "2026-10-24 08:00"
     ]
   },
   {
@@ -24353,6 +24367,258 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-23 18:00"
+    ]
+  },
+  {
+    "word": "anak panah",
+    "cn": "箭（弓箭射出去的箭）",
+    "en": "arrow",
+    "root": "panah",
+    "root_cn": "弓箭；箭",
+    "example": "Waktu pertama kali belajar memanah, anak panah saya selalu jatuh jauh dari sasaran.",
+    "example_cn": "第一次学射箭的时候，我的箭总是落在离靶子很远的地方。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 08:00"
+    ]
+  },
+  {
+    "word": "sawo matang",
+    "cn": "（肤色）小麦色、浅棕色",
+    "en": "light brown (skin tone)",
+    "root": "sawo",
+    "root_cn": "人心果（一种热带水果）",
+    "example": "Kulit saya sawo matang, sama seperti kebanyakan orang di keluarga ayah saya.",
+    "example_cn": "我的皮肤是小麦色的，和我爸爸家里大多数人一样。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 08:00"
+    ]
+  },
+  {
+    "word": "lesung pipit",
+    "cn": "酒窝",
+    "en": "dimple",
+    "root": "lesung",
+    "root_cn": "石臼（舂米用）",
+    "example": "Kalau dia sedang tertawa, lesung pipit di pipi kirinya kelihatan.",
+    "example_cn": "她一笑，左脸上的酒窝就露出来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 08:00"
+    ]
+  },
+  {
+    "word": "pantalon",
+    "cn": "正装长裤；西裤",
+    "en": "dress trousers",
+    "root": "",
+    "root_cn": "",
+    "example": "Rekan kerja saya selalu memakai kemeja rapi dan celana pantalon, bahkan pada hari Jumat.",
+    "example_cn": "我的同事总是穿整齐的衬衫和西裤，连星期五也一样。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 08:00"
+    ]
+  },
+  {
+    "word": "perang",
+    "cn": "战争；打仗",
+    "en": "war",
+    "root": "perang",
+    "root_cn": "战争",
+    "example": "Dua minimarket di dekat rumah kami sedang perang harga, dan minggu ini harga minyak goreng di sana murah sekali.",
+    "example_cn": "我家附近的两家便利店正在打价格战，这周那里的食用油便宜得很。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 08:00"
+    ]
+  },
+  {
+    "word": "tentara",
+    "cn": "军人；军队",
+    "en": "soldier; army",
+    "root": "tentara",
+    "root_cn": "军队；军人",
+    "example": "Om Budi dulu tentara. Dia mengaku masih sering bangun jam lima pagi, padahal sudah lama pensiun.",
+    "example_cn": "布迪叔叔以前是军人。他承认自己到现在还常常早上五点就醒，虽然早就退休了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 08:00"
+    ]
+  },
+  {
+    "word": "terurai",
+    "cn": "（头发）披散着；（结、线）松开；（物质）被分解",
+    "en": "loose (hair); decomposed",
+    "root": "urai",
+    "root_cn": "散开；分开",
+    "example": "Sampah plastik butuh ratusan tahun untuk terurai, makanya kami bawa tas kain sendiri. Selain lebih baik untuk lingkungan, tas kain juga praktis.",
+    "example_cn": "塑料垃圾要几百年才能分解，所以我们自己带布袋。布袋不但环保，还很方便。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 08:00"
+    ]
+  },
+  {
+    "word": "saudara",
+    "cn": "兄弟姐妹；亲戚；（正式称呼）您、诸位",
+    "en": "sibling; relative",
+    "root": "saudara",
+    "root_cn": "兄弟姐妹；亲属",
+    "example": "Kami tiga bersaudara, dan kakak-kakak saya masih memanggil saya \"Dek\" sampai sekarang.",
+    "example_cn": "我们兄弟姐妹三个，哥哥姐姐们到现在还叫我“小弟（Dek）”。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 08:00"
+    ]
+  },
+  {
+    "word": "berkelahi",
+    "cn": "打架",
+    "en": "to fight (physically)",
+    "root": "kelahi",
+    "root_cn": "打架；争斗",
+    "example": "Waktu kecil, aku dan kakakku sering berkelahi gara-gara rebutan remote TV, sampai Ibu harus memisahkan kami.",
+    "example_cn": "小时候我和哥哥常常因为抢电视遥控器打架，打到妈妈得把我们拉开。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 08:00"
+    ]
+  },
+  {
+    "word": "lahir",
+    "cn": "出生；诞生",
+    "en": "to be born",
+    "root": "lahir",
+    "root_cn": "出生",
+    "example": "Saya lahir di Surabaya, tapi sejak umur lima tahun tinggal di Jakarta.",
+    "example_cn": "我出生在泗水，不过五岁起就住在雅加达。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-24 08:00",
+    "last_seen": "2026-10-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-24"
+    ],
+    "lesson_occurrences": [
+      "2026-10-24 08:00"
     ]
   }
 ];
