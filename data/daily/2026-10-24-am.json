@@ -1,0 +1,403 @@
+{
+  "date": "2026-10-24",
+  "session": "am",
+  "time": "08:00",
+  "day": 64,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Album Foto Lama di Rumah Nenek · 奶奶家的旧相册",
+  "new_words": [
+    "anak panah",
+    "sawo matang",
+    "lesung pipit",
+    "pantalon",
+    "perang",
+    "tentara",
+    "terurai",
+    "saudara",
+    "berkelahi",
+    "lahir"
+  ],
+  "vocab": [
+    {
+      "word": "anak panah",
+      "display": "anak panah",
+      "audio_text": "anak panah",
+      "cn": "箭（弓箭射出去的箭）",
+      "en": "arrow",
+      "root": "panah",
+      "root_cn": "弓箭；箭",
+      "formation": "anak（这里表示“附属的小部件”，同 anak kunci 钥匙）+ panah（弓箭）。常见搭配：busur dan anak panah（弓和箭）、melepaskan anak panah（射出一支箭）；动词 memanah（射箭）。",
+      "example": "Waktu pertama kali belajar memanah, anak panah saya selalu jatuh jauh dari sasaran.",
+      "example_cn": "第一次学射箭的时候，我的箭总是落在离靶子很远的地方。",
+      "synonym_note": "anak panah 是射出去的那支箭本身；路标、屏幕上指方向的“箭头”说 tanda panah（Ikuti tanda panah ke kanan. 跟着向右的箭头走）。日常口语里也常只说 panah。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sawo matang",
+      "display": "sawo matang",
+      "audio_text": "sawo matang",
+      "cn": "（肤色）小麦色、浅棕色",
+      "en": "light brown (skin tone)",
+      "root": "sawo",
+      "root_cn": "人心果（一种热带水果）",
+      "formation": "sawo（人心果）+ matang（熟的）：熟透的人心果皮是浅棕色，用来形容肤色。几乎只用在 kulit 后面：kulit sawo matang、kulitnya sawo matang。",
+      "example": "Kulit saya sawo matang, sama seperti kebanyakan orang di keluarga ayah saya.",
+      "example_cn": "我的皮肤是小麦色的，和我爸爸家里大多数人一样。",
+      "synonym_note": "这是印尼人描述典型肤色的中性说法，没有贬义。比它浅的常说 kuning langsat（偏黄的白皙），更深的说 kulit gelap。说“晒黑了”用 kulitnya tambah gelap，不用 sawo matang。",
+      "is_oral_new": false
+    },
+    {
+      "word": "lesung pipit",
+      "display": "lesung pipit",
+      "audio_text": "lesung pipit",
+      "cn": "酒窝",
+      "en": "dimple",
+      "root": "lesung",
+      "root_cn": "石臼（舂米用）",
+      "formation": "lesung（石臼）+ pipit（麻雀），整体是固定说法“酒窝”，不要拆开理解。常见搭配：punya lesung pipit（有酒窝）、lesung pipit di pipi kiri（左脸的酒窝）、lesung pipitnya kelihatan（酒窝露出来）。",
+      "example": "Kalau dia sedang tertawa, lesung pipit di pipi kirinya kelihatan.",
+      "example_cn": "她一笑，左脸上的酒窝就露出来。",
+      "synonym_note": "日常也常听到 lesung pipi，意思一样。只指脸上的酒窝；“下巴上的小窝”一般不用这个词。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pantalon",
+      "display": "pantalon",
+      "audio_text": "pantalon",
+      "cn": "正装长裤；西裤",
+      "en": "dress trousers",
+      "root": "",
+      "root_cn": "",
+      "formation": "来自荷兰语的借词，常说 celana pantalon。指布料较挺、裤腿直或偏宽的长裤，常配衬衫上班或出席正式场合：celana pantalon hitam（黑色西裤）、pakai pantalon ke kantor（穿西裤上班）。",
+      "example": "Rekan kerja saya selalu memakai kemeja rapi dan celana pantalon, bahkan pada hari Jumat.",
+      "example_cn": "我的同事总是穿整齐的衬衫和西裤，连星期五也一样。",
+      "synonym_note": "celana panjang 是所有长裤的统称（牛仔裤也算）；pantalon 是其中偏正式的布料长裤；牛仔裤说 celana jeans。",
+      "is_oral_new": false
+    },
+    {
+      "word": "perang",
+      "display": "perang",
+      "audio_text": "perang",
+      "cn": "战争；打仗",
+      "en": "war",
+      "root": "perang",
+      "root_cn": "战争",
+      "formation": "名词，也可作动词。派生：berperang（打仗、参战）、peperangan（战争，较书面）。常见搭配：perang dunia（世界大战）、zaman perang（战争年代）；比喻用法：perang harga（价格战）、perang dingin（冷战，也指两个人赌气不说话）。",
+      "example": "Dua minimarket di dekat rumah kami sedang perang harga, dan minggu ini harga minyak goreng di sana murah sekali.",
+      "example_cn": "我家附近的两家便利店正在打价格战，这周那里的食用油便宜得很。",
+      "synonym_note": "perang 指国家、军队之间的大规模冲突，或上面的比喻用法；两个人动手打架用 berkelahi，不用 perang。朋友之间说 “Mereka lagi perang dingin.” 意思是两人在冷战、互不理睬。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tentara",
+      "display": "tentara",
+      "audio_text": "tentara",
+      "cn": "军人；军队",
+      "en": "soldier; army",
+      "root": "tentara",
+      "root_cn": "军队；军人",
+      "formation": "名词，既可指一个人（seorang tentara 一名军人），也可指整支军队（tentara Indonesia）。常见搭配：seragam tentara（军装）、masuk tentara（参军）、pensiunan tentara（退伍军人）。",
+      "example": "Om Budi dulu tentara. Dia mengaku masih sering bangun jam lima pagi, padahal sudah lama pensiun.",
+      "example_cn": "布迪叔叔以前是军人。他承认自己到现在还常常早上五点就醒，虽然早就退休了。",
+      "synonym_note": "tentara 是日常最常用的说法；prajurit 偏指士兵个人，较书面；polisi 是警察，不是军人，别混用。",
+      "is_oral_new": false
+    },
+    {
+      "word": "terurai",
+      "display": "terurai",
+      "audio_text": "terurai",
+      "cn": "（头发）披散着；（结、线）松开；（物质）被分解",
+      "en": "loose (hair); decomposed",
+      "root": "urai",
+      "root_cn": "散开；分开",
+      "formation": "ter- + urai，表示“处于散开的状态”。两个最常用的场景：rambut panjang terurai（长发披散着）、sampah plastik sulit terurai（塑料垃圾很难分解）。主动形式 menguraikan 是“解开；详细说明”（menguraikan masalah 把问题讲清楚）。",
+      "example": "Sampah plastik butuh ratusan tahun untuk terurai, makanya kami bawa tas kain sendiri. Selain lebih baik untuk lingkungan, tas kain juga praktis.",
+      "example_cn": "塑料垃圾要几百年才能分解，所以我们自己带布袋。布袋不但环保，还很方便。",
+      "synonym_note": "说头发时 terurai 描写“披着、没扎起来”的样子（Rambutnya dibiarkan terurai. 她让头发披着）；把头发扎起来说 rambutnya diikat。说垃圾、落叶时是“自然分解”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "saudara",
+      "display": "saudara",
+      "audio_text": "saudara",
+      "cn": "兄弟姐妹；亲戚；（正式称呼）您、诸位",
+      "en": "sibling; relative",
+      "root": "saudara",
+      "root_cn": "兄弟姐妹；亲属",
+      "formation": "常见搭配：saudara kandung（亲兄弟姐妹）、saudara sepupu（堂/表兄弟姐妹）、saudara jauh（远亲）；bersaudara 表示“是兄弟姐妹”：kami tiga bersaudara（我们兄弟姐妹三个）。",
+      "example": "Kami tiga bersaudara, dan kakak-kakak saya masih memanggil saya \"Dek\" sampai sekarang.",
+      "example_cn": "我们兄弟姐妹三个，哥哥姐姐们到现在还叫我“小弟（Dek）”。",
+      "synonym_note": "saudara 的范围比中文“兄弟姐妹”宽，也可以泛指亲戚；要说清长幼用 kakak / adik。正式场合 Saudara 还是对人的称呼（Saudara-saudara sekalian 各位）。口语说法：sodara（Ada sodara dari kampung mau dateng.），家人朋友之间用；书面和正式场合写 saudara。",
+      "is_oral_new": true
+    },
+    {
+      "word": "berkelahi",
+      "display": "berkelahi",
+      "audio_text": "berkelahi",
+      "cn": "打架",
+      "en": "to fight (physically)",
+      "root": "kelahi",
+      "root_cn": "打架；争斗",
+      "formation": "ber- + kelahi；名词 perkelahian（打架事件）。常见搭配：berkelahi dengan …（和……打架）、berkelahi gara-gara …（因为……打起来）、memisahkan dua orang yang berkelahi（把打架的两个人拉开）。",
+      "example": "Waktu kecil, aku dan kakakku sering berkelahi gara-gara rebutan remote TV, sampai Ibu harus memisahkan kami.",
+      "example_cn": "小时候我和哥哥常常因为抢电视遥控器打架，打到妈妈得把我们拉开。",
+      "synonym_note": "berkelahi 一般指动手打架；bertengkar 多指吵架（动嘴）。口语说法：berantem，既能指打架，也能指吵架（Mereka lagi berantem. 他们在闹矛盾/吵架），朋友家人之间常用；新闻和正式场合用 berkelahi / perkelahian。",
+      "is_oral_new": true
+    },
+    {
+      "word": "lahir",
+      "display": "lahir",
+      "audio_text": "lahir",
+      "cn": "出生；诞生",
+      "en": "to be born",
+      "root": "lahir",
+      "root_cn": "出生",
+      "formation": "动词，主语是出生的人：Saya lahir di …。派生：kelahiran（出生；tanggal kelahiran 出生日期）、melahirkan（生孩子，主语是母亲）。口语里 lahiran 指“生产、坐月子那段时间”（Kakak lagi lahiran.）。",
+      "example": "Saya lahir di Surabaya, tapi sejak umur lima tahun tinggal di Jakarta.",
+      "example_cn": "我出生在泗水，不过五岁起就住在雅加达。",
+      "synonym_note": "lahir 是“（自己）出生”；melahirkan 是“（妈妈）生孩子”：Kakak saya baru melahirkan anak kedua.（我姐姐刚生了第二个孩子）。“生日”说 ulang tahun，不说 hari lahir。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "melayani",
+    "pelayanan",
+    "sok",
+    "nikmat",
+    "asal jangan"
+  ],
+  "sentences": [
+    {
+      "text": "Kak, jangan sok tahu deh. Kamu kan belum pernah ketemu sodara-sodara Nenek di Solo.",
+      "cn": "姐，别装懂了。你又没见过奶奶在梭罗的那些亲戚。（sodara = saudara，ketemu = bertemu，deh、kan 是语气词）"
+    },
+    {
+      "text": "Restoran itu kecil, tapi pelayanannya cepat dan sopan. Kalau pelayannya keteteran pada jam makan siang, pemiliknya sendiri ikut melayani tamu.",
+      "cn": "那家餐馆不大，但服务又快又有礼貌。午饭时间服务员忙不过来的时候，老板会亲自出来招呼客人。"
+    },
+    {
+      "text": "Teh manis buatan Nenek selalu terasa nikmat, apalagi diminum sore-sore sambil mengobrol.",
+      "cn": "奶奶泡的甜茶总是很好喝，尤其是傍晚边聊天边喝的时候。"
+    },
+    {
+      "text": "Kamu boleh menyalin catatanku, asal jangan mengunggahnya ke grup kelas, ya.",
+      "cn": "你可以抄我的笔记，只要别把它发到班级群里就行。"
+    },
+    {
+      "text": "Di museum itu, kami melihat busur dan anak panah yang dulu dipakai para tentara dalam perang melawan Belanda.",
+      "cn": "在那家博物馆里，我们看到了过去士兵们抗击荷兰人时用过的弓和箭。"
+    }
+  ],
+  "reading": {
+    "text": "Hari Minggu kemarin, saya dan Dina, sepupu saya, mengunjungi Nenek. Sambil minum teh, Nenek membuka album foto lama. Di foto pertama, Kakek berdiri tegak dengan seragam tentara. Kata Nenek, Kakek tidak suka bercerita tentang perang karena kenangannya terlalu berat. Di foto berikutnya, Nenek masih berumur dua puluh tahun. Rambutnya panjang terurai, kulitnya sawo matang, dan ada lesung pipit di pipinya. \"Lesung pipit Nenek persis seperti punya Mama!\" seru Dina. Foto ketiga membuat kami tertawa. Di situ Kakek memakai celana pantalon putih yang sangat lebar. Menurut Nenek, dulu Kakek dan adiknya pernah berkelahi karena sama-sama ingin memakai celana itu ke pesta.",
+    "cn": "上周日，我和表妹迪娜去看奶奶。奶奶一边喝茶，一边打开了一本旧相册。第一张照片里，爷爷穿着军装，站得笔直。奶奶说，爷爷不喜欢讲打仗的事，因为那些回忆太沉重了。下一张照片里，奶奶才二十岁。她长发披肩，皮肤是小麦色的，脸上还有酒窝。“奶奶的酒窝跟妈妈的一模一样！”迪娜叫了起来。第三张照片把我们逗笑了。照片里爷爷穿着一条裤腿特别宽的白色西裤。奶奶说，当年爷爷和他弟弟还为这条裤子打过一架，因为两个人都想穿它去参加聚会。"
+  },
+  "quiz": [
+    {
+      "question": "Adik Rani baru seminggu bekerja di sebuah kafe. Dia masih sering bingung mencari menu, tapi tetap sabar ___ setiap tamu yang datang. 空格里哪个最自然？",
+      "options": [
+        "pelayanan",
+        "dilayani",
+        "melayani",
+        "pelayan"
+      ],
+      "answer_index": 2,
+      "answer": "melayani",
+      "explain": "“耐心地招呼每一位客人”，空格后面直接接宾语 setiap tamu，需要主动动词 melayani。pelayanan 是名词“服务”（Pelayanannya cepat.），后面不能直接接宾语；dilayani 是被动“被服务”，主语是客人才用（Tamu harus dilayani dengan sopan.）；pelayan 是“服务员”这个人。melayani / pelayanan 同一个词根 layan。"
+    },
+    {
+      "question": "Di grup WhatsApp keluarga, Tante Mira menulis: \"Alhamdulillah, cucu pertama kami sudah ___ tadi pagi di rumah sakit. Beratnya 3,2 kilo, ibu dan bayinya sehat.\" 空格里哪个最自然？",
+      "options": [
+        "lahir",
+        "melahirkan",
+        "kelahiran",
+        "lahiran"
+      ],
+      "answer_index": 0,
+      "answer": "lahir",
+      "explain": "主语是“我们的第一个孙子”，婴儿自己“出生”用 lahir。melahirkan 的主语是妈妈（Menantu kami sudah melahirkan.）；kelahiran 是名词（tanggal kelahiran）；lahiran 是口语“生产”，主语也是妈妈（Kakak lagi lahiran.），不能说婴儿 lahiran。"
+    },
+    {
+      "question": "Dua murid saling dorong di halaman sekolah sampai Pak Guru harus memisahkan mereka. Besoknya kepala sekolah berkata, \"Kalau ada yang ___ lagi di sekolah, kami akan memanggil orang tuanya.\" 空格里哪个最自然？",
+      "options": [
+        "perkelahian",
+        "berkelahi",
+        "berperang",
+        "menendang"
+      ],
+      "answer_index": 1,
+      "answer": "berkelahi",
+      "explain": "“谁再在学校打架”，空格要一个不及物动词：berkelahi。perkelahian 是名词“打架事件”（Ada perkelahian di sekolah.），不能放在 yang 后面当动作；berperang 是国家、军队之间打仗，用在学生身上不对；menendang 是“踢（某人、某物）”，必须接宾语（menendang temannya），这里没有宾语，句子不完整。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语描述你家里的一张老照片：照片里是谁、他/她长什么样、穿什么，以及这张照片对家人有什么意义。至少用 sawo matang、terurai、pantalon、lesung pipit、saudara 中的两个。",
+    "reference_answer": "Di kamar Mama ada foto lamanya waktu masih kuliah: rambutnya panjang terurai, kulitnya sawo matang, dan dia memakai celana pantalon cokelat. Mama pernah hampir kehilangan foto itu waktu kami pindah rumah. Sejak itu dia menyimpannya di dalam laci dan bilang mau menjaganya selamanya.",
+    "reference_cn": "妈妈房间里有一张她上大学时的老照片：她长发披肩，皮肤是小麦色的，穿着一条棕色西裤。我们搬家的时候，妈妈差点把这张照片弄丢了。从那以后她就把照片收在抽屉里，说要永远好好保存。"
+  },
+  "review": [
+    "3 秒主动提取：看中文马上说印尼语——箭、小麦色（肤色）、酒窝、西裤、战争、军人、披散着/被分解、兄弟姐妹/亲戚、打架、出生；说不出来的回看词卡再说一遍。",
+    "易混词：berkelahi（动手打架；口语 berantem 也能指吵架）vs bertengkar（吵架）vs perang（国家、军队打仗）；lahir（婴儿出生）vs melahirkan（妈妈生孩子）；anak panah（射出的箭）vs tanda panah（指方向的箭头）。",
+    "复习词应用：同词根 layan——melayani（招待、服务，动词，后接人）vs pelayanan（服务，名词），各说一句你常去的一家店；用 “… boleh …, asal jangan …” 给朋友提一个条件；用 nikmat 说一样你喜欢吃喝的东西；用 jangan sok … 劝一个装懂的朋友。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "箭",
+        "id": "anak panah"
+      },
+      {
+        "cn": "小麦色（肤色）",
+        "id": "sawo matang"
+      },
+      {
+        "cn": "酒窝",
+        "id": "lesung pipit"
+      },
+      {
+        "cn": "西裤",
+        "id": "pantalon"
+      },
+      {
+        "cn": "战争",
+        "id": "perang"
+      },
+      {
+        "cn": "军人",
+        "id": "tentara"
+      },
+      {
+        "cn": "披散着；被分解",
+        "id": "terurai"
+      },
+      {
+        "cn": "兄弟姐妹；亲戚",
+        "id": "saudara"
+      },
+      {
+        "cn": "打架",
+        "id": "berkelahi"
+      },
+      {
+        "cn": "出生",
+        "id": "lahir"
+      }
+    ],
+    "frames": [
+      "Kamu boleh …, asal jangan …, ya.",
+      "Kata Nenek, … karena …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "berkelahi",
+            "cn": "动手打架"
+          },
+          {
+            "id": "bertengkar",
+            "cn": "吵架"
+          },
+          {
+            "id": "perang",
+            "cn": "国家、军队打仗"
+          }
+        ],
+        "note": "两个人动手用 berkelahi，动嘴用 bertengkar；perang 是大规模冲突或比喻（perang harga）。口语 berantem 两种都能指。"
+      },
+      {
+        "items": [
+          {
+            "id": "lahir",
+            "cn": "（婴儿）出生"
+          },
+          {
+            "id": "melahirkan",
+            "cn": "（妈妈）生孩子"
+          }
+        ],
+        "note": "Bayinya lahir kemarin. / Ibunya melahirkan kemarin."
+      },
+      {
+        "items": [
+          {
+            "id": "anak panah",
+            "cn": "射出的箭"
+          },
+          {
+            "id": "tanda panah",
+            "cn": "指方向的箭头"
+          }
+        ],
+        "note": "弓箭用 anak panah；路标、屏幕上的箭头用 tanda panah。"
+      },
+      {
+        "items": [
+          {
+            "id": "melayani",
+            "cn": "招待、服务（动词）"
+          },
+          {
+            "id": "pelayanan",
+            "cn": "服务（名词）"
+          }
+        ],
+        "note": "同一个词根 layan：melayani 后面直接接人（melayani tamu），pelayanan 作主语或宾语（pelayanannya cepat）。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "asal jangan",
+        "usage": "先答应，再加一个“只要别……”的条件。",
+        "examples": [
+          {
+            "id": "Kamu boleh menyalin catatanku, asal jangan mengunggahnya ke grup kelas, ya.",
+            "cn": "你可以抄我的笔记，只要别把它发到班级群里就行。"
+          }
+        ]
+      },
+      {
+        "word": "sok",
+        "usage": "sok + 形容词/动词：装作、自以为（sok tahu 装懂、sok sibuk 装忙），语气带批评。",
+        "examples": [
+          {
+            "id": "Kak, jangan sok tahu deh.",
+            "cn": "姐，别装懂了。"
+          }
+        ]
+      },
+      {
+        "word": "nikmat",
+        "usage": "吃喝或享受的感觉很美好，常和 terasa 连用。",
+        "examples": [
+          {
+            "id": "Teh manis buatan Nenek selalu terasa nikmat.",
+            "cn": "奶奶泡的甜茶总是很好喝。"
+          }
+        ]
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "saudara",
+      "berkelahi",
+      "terurai"
+    ],
+    "patterns": [
+      {
+        "pattern": "… boleh …, asal jangan …",
+        "cn": "可以……，只要别……就行",
+        "example": "Kamu boleh menyalin catatanku, asal jangan mengunggahnya ke grup kelas, ya.",
+        "example_cn": "你可以抄我的笔记，只要别把它发到班级群里就行。"
+      },
+      {
+        "pattern": "Kata …, … karena …",
+        "cn": "据……说，……是因为……",
+        "example": "Kata Nenek, Kakek tidak suka bercerita tentang perang karena kenangannya terlalu berat.",
+        "example_cn": "奶奶说，爷爷不喜欢讲打仗的事，因为那些回忆太沉重了。"
+      }
+    ]
+  }
+}
