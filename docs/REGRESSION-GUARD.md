@@ -568,3 +568,11 @@
 - `validate-lesson-candidate.js`：`LEARNER_JARGON`，2026-10-23 起的课程，学习者可见字段（不含 en 和结构字段）出现 runtime、`*_pool`、source_group、（hard）、application 等即拒绝；之前已发布的课程不重新判定。`validate-teach.js`：`TEACH_JARGON`。
 - `data/teach/2026-10-22-am.json`：lolos 备用题里 lulus 改为“也可以”，讲解和提醒句补上“选拔场合两个都能用”。当天早课 JSON 的词卡不改（已发布课程不回改）。
 - 深讲其余新词的快速回忆（引擎改动）暂缓，等用户试用几天后再定。
+
+## 2026-10-24 词汇训练排除（不混淆已掌握）
+
+- 「词汇学习」词卡和批量管理的「不再训练」只改变后续**主动选词资格**；不删除历史课程、阅读原文和词库内容。批量管理默认收起，未改首页模块、排序或首屏布局。
+- 不新增云端记录类型、键、Worker 或另一份本机黑名单。为了兼容**当前已部署**的 weakness-sync Worker，复用 `status=mastered` 并在现有 `reasons` 数组最前保留 `training_excluded`、原因与原 mastered 状态标记。所有统计必须优先识别 `training_excluded`，不得把主动跳过当作真正 mastered；恢复时保留以前的模糊/不会原因以及原 mastered 身份和掌握时间。
+- 已有真正 `mastered` 不迁移、不重新标记；核心训练的快速/听词/自动候选和已保存的自动计划都必须跳过真正 mastered 与训练排除词。已排除词不能因为再次读到历史题、错题或听音信号自动变回 active。恢复必须由用户显式操作。
+- 词汇筛选须一次获取弱项快照并建立 Set/Map；禁止在 977 词循环中逐词调用 `WeaknessPool.get()`/ `isExcluded()` 反复解析本机弱项数据。
+- 全面运行 `test-cross-module-training.js`、`test-vocab-study-coach.js`、`vocab-ui-regression-guard.js` 和 `regression-guard.js`。仅语法解析或单个功能模拟不等于完整 CI 通过。
