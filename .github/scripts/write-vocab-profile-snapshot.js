@@ -13,13 +13,16 @@ function build(){
  if(!validDate(p.generated_at)||!validDate(r.generated_at)||!validDate(w.updated_at))throw Error('Missing valid source timestamp');
  if(p.source_updated_at!==w.updated_at||r.weakness_updated_at!==w.updated_at)throw Error('Source watermark mismatch');
  const keys=['taught_total','confirmed_mastered','needs_reinforcement','unverified'];
+ const excluded=Object.hasOwn(p,'excluded_from_training')?p.excluded_from_training:0; // Historical profiles lacked this field.
  if(keys.some(k=>!Number.isSafeInteger(p[k])||p[k]<0))throw Error('Invalid profile count');
- if(p.confirmed_mastered+p.needs_reinforcement+p.unverified!==p.taught_total)throw Error('Invalid partition');
+ if(!Number.isSafeInteger(excluded)||excluded<0)throw Error('Invalid excluded count');
+ if(p.confirmed_mastered+p.needs_reinforcement+p.unverified+excluded!==p.taught_total)throw Error('Invalid partition');
  if(p.taught_total!==r.stats.daily_taught_unique||p.needs_reinforcement!==r.stats.review_pool_total_full)throw Error('Runtime mismatch');
  const now=new Date().toISOString(),date=jakartaDate(now);
  // A snapshot is a daily observation, never reconstructed from later totals.
  const row={date,generated_at:now};
  for(const k of keys)row[k]=p[k];
+ row.excluded_from_training=excluded;
  for(const k of ['active_vocab','passive_vocab','forgotten','relearned']){
    if(Number.isSafeInteger(p[k])&&p[k]>=0)row[k]=p[k];
  }
@@ -29,7 +32,7 @@ function build(){
  const map=new Map(old.snapshots.map(x=>[x.date,x]));
  if(map.size!==old.snapshots.length)throw Error('Duplicate existing history date');
  const prev=map.get(date);
- if(prev&&keys.every(k=>prev[k]===row[k])&&['active_vocab','passive_vocab','forgotten','relearned'].every(k=>prev[k]===row[k])){
+ if(prev&&keys.every(k=>prev[k]===row[k])&&(prev.excluded_from_training||0)===row.excluded_from_training&&['active_vocab','passive_vocab','forgotten','relearned'].every(k=>prev[k]===row[k])){
    console.log('Daily snapshot unchanged');return;
  }
  map.set(date,row);
