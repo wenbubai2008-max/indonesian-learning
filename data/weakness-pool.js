@@ -38,6 +38,47 @@
     x.wrong_count=Number(x.wrong_count||0);x.right_streak=Number(x.right_streak||0);
     pool[k]=x;return [k,x];
   }
+  const EXCLUDE='training_excluded';
+  const exclusionFlags=['training_excluded','training_excluded_easy','training_excluded_rare','training_excluded_was_mastered'];
+  function isExcludedRecord(x){return !!x&&Array.isArray(x.reasons)&&x.reasons.includes(EXCLUDE);}
+  function exclusionKind(x){return isExcludedRecord(x)?(x.reasons.includes('training_excluded_easy')?'easy':'rare'):'';}
+  function isExcluded(word){return isExcludedRecord(get(word));}
+  // Reuse the existing cloud-synced status and reasons. An excluded word is NOT counted as mastered.
+  // This avoids adding a second cloud schema or another state store.
+  function updateTrainingBatch(words,action,kind){
+    if(!['exclude','restore','mastered'].includes(action))return 0;
+    const pool=migrate(),dismissed=parse(LEGACY_DISMISSED),seen=new Set();let changed=0;
+    (words||[]).forEach(function(word){
+      const k=norm(word);if(!k||seen.has(k))return;seen.add(k);
+      let x=pool[k];if(action==='restore'&&!isExcludedRecord(x))return;
+      if(!x){const pair=ensureRecord(pool,word,{word:word});x=pair[1];}
+      if(!x)return;
+      const now=nowISO(),wasExcluded=isExcludedRecord(x);
+      if(action==='exclude'){
+        if(wasExcluded&&exclusionKind(x)===(kind==='easy'?'easy':'rare'))return;
+        const previouslyMastered=wasExcluded?x.reasons.includes('training_excluded_was_mastered'):x.status==='mastered';
+        x.reasons=uniq([EXCLUDE,kind==='easy'?'training_excluded_easy':'training_excluded_rare',...(previouslyMastered?['training_excluded_was_mastered']:[]),...(x.reasons||[]).filter(r=>!exclusionFlags.includes(r))]);
+        x.status='mastered';x.last_mastered=now;x.last_review=now;x.mastered_reason='';removeLegacyUnknown(k);
+        dismissed[k]={word:x.word,at:Date.now()};
+      }else if(action==='restore'){
+        const previousMastered=x.reasons.includes('training_excluded_was_mastered');
+        x.reasons=x.reasons.filter(r=>!exclusionFlags.includes(r));
+        x.status=previousMastered?'mastered':'active';x.last_review=now;
+        if(!previousMastered){delete x.last_mastered;x.mastered_reason='';delete dismissed[k];}
+      }else{
+        x.status='mastered';x.last_mastered=now;x.last_review=now;
+        x.right_streak=Math.max(3,x.right_streak||0);x.mastered_reason='user_mastered';
+        x.reasons=x.reasons.filter(r=>!exclusionFlags.includes(r));archiveReasons(x);removeLegacyUnknown(k);
+        dismissed[k]={word:x.word,at:Date.now()};
+      }
+      changed++;
+    });
+    if(changed){
+      localStorage.setItem(LEGACY_DISMISSED,JSON.stringify(dismissed));
+      save(pool);window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));
+    }
+    return changed;
+  }
   function setReason(x,reason){if(reason)x.reasons=uniq((x.reasons||[]).concat(reason));}
   function archiveReasons(x){x.reason_history=uniq((x.reason_history||[]).concat(x.reasons||[]));x.reasons=[];}
   function clearLegacyDismissed(k){const d=parse(LEGACY_DISMISSED);if(d[k]){delete d[k];localStorage.setItem(LEGACY_DISMISSED,JSON.stringify(d));}}
@@ -84,7 +125,7 @@
         x.status='mastered';
         if(!x.last_mastered)x.last_mastered=t?new Date(t).toISOString():nowISO();
         x.mastered_reason=x.mastered_reason||'legacy_dismiss';
-        archiveReasons(x);
+        if(!isExcludedRecord(x))archiveReasons(x);
       }
       if(!same(before,x))changed=true;
     });
@@ -103,11 +144,12 @@
 
   function get(word){const pool=migrate(),k=norm(word);return pool[k]||null;}
   function all(){return Object.values(migrate());}
-  function list(status){return all().filter(function(x){return x.status===status;});}
+  function list(status){return all().filter(function(x){return x.status===status&&!isExcludedRecord(x);});}
   function isActive(word){const x=get(word);return !!x&&x.status==='active';}
 
   function activate(word,item,reason){
     const pool=migrate(),pair=ensureRecord(pool,word,item),k=pair[0],x=pair[1];if(!x)return null;
+    if(isExcludedRecord(x))return x;
     const n=nowISO();x.status='active';x.last_seen=n;x.times_seen=(x.times_seen||0)+1;x.mastered_reason='';setReason(x,reason||'manual_unknown');clearLegacyDismissed(k);save(pool);return x;
   }
   function markUnknown(item){
@@ -173,12 +215,14 @@
   // 2026-10-14: a wrong answer in the 08:00 quiz / 18:00 test is a real, dated error on a core word.
   function recordLessonWrong(word,item){
     const pool=migrate(),k=norm(word);if(!k)return null;
+    if(isExcludedRecord(pool[k]))return pool[k];
     const pair=ensureRecord(pool,word,item||{}),x=pair[1];if(!x)return null;
     x.status='active';x.mastered_reason='';setReason(x,'lesson_wrong');x.wrong_count=(x.wrong_count||0)+1;x.right_streak=0;
     x.last_wrong=nowISO();x.last_review=x.last_wrong;x.last_seen=x.last_wrong;clearLegacyDismissed(k);save(pool);return x;
   }
   function recordPractice(word,ok,item){
     const pool=migrate(),k=norm(word);if(!k)return null;
+    if(isExcludedRecord(pool[k]))return pool[k];
     let x=pool[k]||null;
     if(!ok){
       const pair=ensureRecord(pool,word,item||{});x=pair[1];x.status='active';setReason(x,'quick_wrong');x.wrong_count=(x.wrong_count||0)+1;x.right_streak=0;x.last_wrong=nowISO();x.last_review=x.last_wrong;x.last_seen=x.last_wrong;clearLegacyDismissed(k);save(pool);queueExampleTranslation(x);return x;
@@ -227,11 +271,12 @@
   }
   function activeMap(){const out={};list('active').forEach(function(x){out[norm(x.word)]=x;});return out;}
   function hasListeningReason(x){const r=x&&x.reasons||[];return r.includes('listening_wrong')||r.includes('listening_slow');}
-  function listeningWeak(){return all().filter(function(x){return hasListeningReason(x);});}
-  function focusMap(){const out={};all().forEach(function(x){if(x&&x.word&&(x.status==='active'||hasListeningReason(x)))out[norm(x.word)]=x;});return out;}
+  function listeningWeak(){return all().filter(function(x){return x.status==='active'&&hasListeningReason(x);});}
+  function focusMap(){const out={};all().forEach(function(x){if(x&&x.word&&x.status==='active')out[norm(x.word)]=x;});return out;}
   function recordListening(word,item,signal){
     const allowed=new Set(['listening_wrong','listening_slow','clear_listening']);if(!allowed.has(signal))return get(word);
     const pool=migrate(),k=norm(word||(item||{}).word);if(!k)return null;const existing=pool[k]||null;
+    if(isExcludedRecord(existing))return existing;
     if(signal==='clear_listening'){
       if(!existing)return null;const before=(existing.reasons||[]).slice();existing.reason_history=uniq((existing.reason_history||[]).concat(before.filter(function(r){return r==='listening_wrong'||r==='listening_slow';})));existing.reasons=before.filter(function(r){return r!=='listening_wrong'&&r!=='listening_slow';});
       if(!same(before,existing.reasons))save(pool);return existing;
@@ -255,6 +300,6 @@
   }
   function exportActive(){return list('active').map(function(x){return Object.assign({},x);});}
 
-  window.WeaknessPool={KEY:KEY,norm:norm,migrate:migrate,get:get,all:all,listActive:function(){return list('active');},listMastered:function(){return list('mastered');},listListeningWeak:listeningWeak,activeMap:activeMap,focusMap:focusMap,isActive:isActive,markUnknown:markUnknown,enrich:enrich,markWeak:markWeak,markMastered:markMastered,markKnown:markKnown,reactivate:reactivate,removeReasons:removeReasons,importRecord:importRecord,importRecords:importRecords,recordPractice:recordPractice,recordLessonWrong:recordLessonWrong,recordListening:recordListening,syncSignals:syncSignals,primaryReason:primaryReason,restoreDismissed:restoreDismissed,exportActive:exportActive};
+  window.WeaknessPool={KEY:KEY,norm:norm,migrate:migrate,get:get,all:all,isExcluded:isExcluded,exclusionKind:exclusionKind,listExcluded:function(){return all().filter(isExcludedRecord);},updateTrainingBatch:updateTrainingBatch,listActive:function(){return list('active');},listMastered:function(){return list('mastered');},listListeningWeak:listeningWeak,activeMap:activeMap,focusMap:focusMap,isActive:isActive,markUnknown:markUnknown,enrich:enrich,markWeak:markWeak,markMastered:markMastered,markKnown:markKnown,reactivate:reactivate,removeReasons:removeReasons,importRecord:importRecord,importRecords:importRecords,recordPractice:recordPractice,recordLessonWrong:recordLessonWrong,recordListening:recordListening,syncSignals:syncSignals,primaryReason:primaryReason,restoreDismissed:restoreDismissed,exportActive:exportActive};
   migrate();
 })();
