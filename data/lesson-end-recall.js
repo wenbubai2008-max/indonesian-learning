@@ -39,7 +39,7 @@
       const am=f.slice(11,16)==='08:00';if((session==='am')!==am)return;seen.add(k);out.push({word:x.word,cn:x.cn,first:f.slice(0,10)});});
     return out;
   }
-  function masteredSet(){try{return new Set((root.WeaknessPool&&root.WeaknessPool.all()||[]).filter(x=>x&&x.status==='mastered').map(x=>norm(x&&x.word)));}catch(e){return new Set();}}
+  function masteredSet(){try{const p=root.WeaknessPool,rows=p&&typeof p.all==='function'?p.all().filter(x=>x&&x.status==='mastered'):(p&&p.listMastered?p.listMastered():[]);return new Set(rows.map(x=>norm(x&&x.word)));}catch(e){return new Set();}}
   function practicedToday(word,now){const c=root.VocabStudyCoach;if(!c||typeof c.status!=='function')return false;
     return ['quick','listen','auto'].some(m=>{try{const s=c.status(m,word,now);return !!(s&&s.last_today);}catch(e){return false;}});}
   function autoChecked(word,now){const c=root.VocabStudyCoach;try{const s=c&&c.status('auto',word,now);return !!(s&&s.last_at);}catch(e){return false;}}
