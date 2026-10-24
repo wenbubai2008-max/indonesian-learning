@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261023-surabaya-sekolah-bebas-perundungan","date":"2026-10-23","title":"Surabaya Perkuat Pendidikan Karakter agar Sekolah Bebas Perundungan","title_cn":"泗水加强品格教育，让学校远离霸凌","path":"data/extensive-reading-history/2026-10-23.js"},
 {"id":"er-20261022-puskesmas-tambal-gigi-gratis","date":"2026-10-22","title":"Tambal Gigi Gratis di Puskesmas, Warga Tak Perlu Jauh ke Klinik","title_cn":"在社区卫生中心免费补牙，居民不用再跑远去诊所","path":"data/extensive-reading-history/2026-10-22.js"},
 {"id":"er-20261021-kereta-pso-terjangkau","date":"2026-10-21","title":"Kereta Ekonomi Bersubsidi Bantu Warga Menghemat Ongkos","title_cn":"有补贴的经济列车，让居民出行更省钱","path":"data/extensive-reading-history/2026-10-21.js"},
 {"id":"er-20261020-asap-karhutla-jakarta","date":"2026-10-20","title":"Asap Karhutla Mulai Berkurang, Warga Jakarta Tetap Diminta Waspada","title_cn":"林火烟雾开始减少，雅加达居民仍被要求保持警惕","path":"data/extensive-reading-history/2026-10-20.js"},
