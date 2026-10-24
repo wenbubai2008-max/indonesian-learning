@@ -62,18 +62,22 @@ t('0 baseline copy builds and matches the repo state',()=>{
 // A0. 2026-10-07: primary phase appends secondary dont words after the primary words (never fuzzy, never ahead of primary).
 t('A0 primary phase: secondary dont top-up follows primary words',()=>{
  assert.equal(base.handoff.phase,'primary');
- assert.ok(base.stats.new_pool_secondary_dont_topup>0,'top-up present');
  const dont=base.new_pool_dont;
- const firstSec=dont.findIndex(w=>!primary.has(key(w)));
- // 2026-10-14: primary dont words can run out while primary fuzzy words remain; the
- // top-up is then the whole dont list. Ordering still requires every remaining primary dont first.
- assert.ok(firstSec>=0,'secondary dont top-up exists');
- assert.equal(firstSec,dont.filter(w=>primary.has(key(w))).length,'secondary dont starts right after the remaining primary dont words');
- assert.ok(dont.slice(0,firstSec).every(w=>primary.has(key(w))),'all primary dont words precede secondary ones');
+ const topup=dont.filter(w=>!primary.has(key(w)));
+ assert.equal(topup.length,base.stats.new_pool_secondary_dont_topup,'reported top-up matches available secondary dont words');
+ // Top-up can legitimately reach zero before primary fuzzy words do (2026-10-24).
+ // In that case the fallback to fuzzy is correct; only assert ordering when a top-up exists.
+ if(topup.length){
+   const firstSec=dont.findIndex(w=>!primary.has(key(w)));
+   assert.equal(firstSec,dont.filter(w=>primary.has(key(w))).length,'secondary dont starts right after the remaining primary dont words');
+   assert.ok(dont.slice(0,firstSec).every(w=>primary.has(key(w))),'all primary dont words precede secondary ones');
+   const sab=Object.fromEntries(win2.SECONDARY_MASTER_VOCAB_DB.map(x=>[key(x.word),x.sab]));
+   const rank={S:0,A:1,B:2},order=topup.map(w=>rank[sab[key(w)]]??3);
+   assert.deepEqual(order,[...order].sort((a,b)=>a-b),'secondary dont ordered S>A>B');
+ }else{
+   assert.ok(dont.every(w=>primary.has(key(w))),'no secondary dont is added when none remains eligible');
+ }
  assert.ok(base.new_pool_fuzzy.every(w=>primary.has(key(w))),'no secondary fuzzy before transition');
- const sab=Object.fromEntries(win2.SECONDARY_MASTER_VOCAB_DB.map(x=>[key(x.word),x.sab]));
- const rank={S:0,A:1,B:2},order=dont.filter(w=>!primary.has(key(w))).map(w=>rank[sab[key(w)]]??3);
- assert.deepEqual(order,[...order].sort((a,b)=>a-b),'secondary dont ordered S>A>B');
  assert.equal(base.stats.primary_new_pool_total_full,base.handoff.primary_remaining);
 });
 t('A1 oral pool is a legal subset (its size is reported by report-learning-health.js, not asserted here)',()=>{
