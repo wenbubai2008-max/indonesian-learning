@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-24T10:53:01.906Z",
+    "runtime_generated_at": "2026-10-24T23:40:39.704Z",
     "lesson_watermark": "2026-10-24 18:00",
     "index_updated": "2026-10-24",
-    "runtime_hash": "61a0f4bf1522aa5f882998ba758023230a50f468984194954cad49bfc78fe8bf",
+    "runtime_hash": "5e441d7e131e956b9596a63b14d266b9316e1ceabd2b7b85304f380873e19534",
     "index_hash": "76346cca00bcd7cfcf05c048226bdf6972e6e8b86b4d76a24300c87165c1087b",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
@@ -573,6 +573,16 @@
     ],
     "review": [
       [
+        "perpaduan",
+        1,
+        2,
+        "2026-10-24T15:35:27.721Z",
+        "2026-10-24T15:35:27.721Z",
+        "融合；结合；搭配",
+        "padu",
+        "协调；融合"
+      ],
+      [
         "pembangunan",
         1,
         1,
@@ -651,16 +661,6 @@
         "指出",
         "tunjuk",
         "指；指出"
-      ],
-      [
-        "perpaduan",
-        1,
-        1,
-        "2026-10-23T14:55:55.744Z",
-        "2026-10-23T14:55:55.744Z",
-        "融合；结合；搭配",
-        "padu",
-        "协调；融合"
       ],
       [
         "perkirakan",
@@ -2775,6 +2775,16 @@
     ],
     "focus": [
       [
+        "perpaduan",
+        124,
+        [
+          "quick_wrong",
+          "lesson_wrong",
+          "dont",
+          "fuzzy"
+        ]
+      ],
+      [
         "pembangunan",
         116,
         [
@@ -2843,15 +2853,6 @@
         [
           "automation_fail",
           "dont"
-        ]
-      ],
-      [
-        "perpaduan",
-        86,
-        [
-          "quick_wrong",
-          "dont",
-          "fuzzy"
         ]
       ],
       [
