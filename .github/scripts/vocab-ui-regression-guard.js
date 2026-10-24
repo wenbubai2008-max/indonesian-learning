@@ -193,6 +193,19 @@ try{
   ok(controller.includes('DB=src.slice()'),'controller must own DB writes');
   ok(controller.includes('window.VocabController={'),'single VocabController API must be installed');
   ok(controller.includes('const excludedKeys=new Set(')&&controller.includes('renderBatch();'),'exclusion is cached per rebuild and batch UI stays in existing controller');
+  // The "mastered" batch filter includes older local know records; never mislabel them
+  // as authoritative mastered or leak the raw storage token into the UI.
+  const labelStart=controller.indexOf('  function batchStatusLabel(');
+  const labelEnd=controller.indexOf('  function renderBatch(){',labelStart);
+  ok(labelStart>0&&labelEnd>labelStart,'batch status label helper exists');
+  if(labelStart>0&&labelEnd>labelStart){
+    const label=vm.runInNewContext(controller.slice(labelStart,labelEnd)+';batchStatusLabel',{});
+    ok(label({status:'mastered',reasons:[]},'know')==='已掌握','authoritative mastered label is retained');
+    ok(label({status:'active',reasons:['memory_fuzzy']},'know')==='本地标记会了','legacy local know is not falsely labeled mastered');
+    ok(label({status:'mastered',reasons:['training_excluded']},'know')==='已排除','excluded words are not labeled mastered');
+    ok(label(null,'fuzzy')==='模糊'&&label(null,'dont')==='不会','legacy memory tokens are translated to Chinese');
+  }
+  ok(controller.includes("'本页 '+page.length+' 个（第 '")&&controller.includes("BATCH_PAGE_SIZE=60"),'batch counter states the actual page item count and the page size');
   ok(!controller.includes('runGzipPayload'),'controller must never execute decompressed BIPA JSON as JS');
   ok(!controller.includes('bipaV7Card'),'controller must not render legacy BIPA cards');
 
