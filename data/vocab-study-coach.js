@@ -21,12 +21,30 @@
   // Age in Jakarta days since the word was FIRST formally taught (first_seen), not since it last appeared in a lesson.
   function ageDays(first,now){if(!/^\d{4}-\d{2}-\d{2}$/.test(first||''))return null;const a=Date.parse(first+'T00:00:00Z'),b=Date.parse(day(now)+'T00:00:00Z');return Number.isFinite(a)&&Number.isFinite(b)?Math.round((b-a)/DAY):null}
   function recallMap(){const x=read(RECALL_KEY,{});return x&&x.words&&typeof x.words==='object'?x.words:{}}
-  function snapshot(){const mastered={};try{if(root.WeaknessPool&&root.WeaknessPool.listMastered)root.WeaknessPool.listMastered().forEach(x=>{mastered[norm(x.word)]=x})}catch(e){}
-    let weak={};try{if(root.WeaknessPool)weak=root.WeaknessPool.focusMap?root.WeaknessPool.focusMap():root.WeaknessPool.activeMap()}catch(e){}
-    return {items:taught(),mastered,weak:weak||{},quick:read('indo_quick_practice_state',{}),listen:read('indo_listen_stats_v1',{}),auto:read('indo_automation_training_state_v1',{}),requests:read(KNOWN_KEY,{}),recall:recallMap()};
+  function snapshot(){
+    const mastered={},weak={};let excluded=null;
+    try{
+      const pool=root.WeaknessPool;
+      if(pool&&typeof pool.all==='function'){
+        // One snapshot per candidate batch: never parse the large persisted pool for each word.
+        excluded=new Set();
+        pool.all().forEach(x=>{
+          if(!x||!x.word)return;
+          const k=norm(x.word);
+          if(Array.isArray(x.reasons)&&x.reasons.includes('training_excluded')){excluded.add(k);return;}
+          if(x.status==='mastered')mastered[k]=x;
+          else if(x.status==='active')weak[k]=x;
+        });
+      }else if(pool){
+        if(pool.listMastered)pool.listMastered().forEach(x=>{mastered[norm(x.word)]=x});
+        const prev=pool.focusMap?pool.focusMap():pool.activeMap?pool.activeMap():{};
+        Object.assign(weak,prev||{});
+      }
+    }catch(e){}
+    return {items:taught(),mastered,weak,excluded,quick:read('indo_quick_practice_state',{}),listen:read('indo_listen_stats_v1',{}),auto:read('indo_automation_training_state_v1',{}),requests:read(KNOWN_KEY,{}),recall:recallMap()};
   }
   function status(mode,word,now=Date.now(),src){
-    const s=src||snapshot(),k=norm(word),item=s.items.get(k);if(!item||!['quick','listen','auto'].includes(mode)||s.mastered[k]||root.WeaknessPool?.isExcluded?.(word))return null;
+    const s=src||snapshot(),k=norm(word),item=s.items.get(k);if(!item||!['quick','listen','auto'].includes(mode)||s.mastered[k]||(s.excluded?s.excluded.has(k):root.WeaknessPool?.isExcluded?.(word)))return null;
     const old=s[mode][k]||s[mode][item.word]||{},mastered=s.mastered[k]||null,weak=s.weak[k]||null;
     let last=0,due=0,level=0,stable=false,kind='new',lastResult='',score=0;
     if(mode==='quick'){
