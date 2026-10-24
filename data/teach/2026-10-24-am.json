@@ -1,0 +1,773 @@
+{
+ "version": 1,
+ "title": "早课深讲 · 10月24日",
+ "intro": [
+  "今天早上的课叫《奶奶家的旧相册》。奶奶翻开老照片：穿军装的爷爷、二十岁长发披肩的奶奶，还有爷爷那条兄弟俩抢着穿、还为它打过架的宽腿西裤。",
+  "今天只讲 5 样：[[saudara]] · [[berkelahi]] · [[terurai]] · [[… boleh …, asal jangan …]] · [[Kata …, … karena …]]"
+ ],
+ "items": [
+  {
+   "key": "saudara",
+   "name": "saudara",
+   "head": "saudara · 兄弟姐妹；亲戚",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "实用句",
+      "id": "Kak, jangan sok tahu deh. Kamu kan belum pernah ketemu sodara-sodara Nenek di Solo.",
+      "cn": "姐，别装懂了。你又没见过奶奶在梭罗的那些亲戚。"
+     }
+    ],
+    "ask": "这里的 sodara-sodara Nenek 指的是谁？",
+    "options": [
+     {
+      "t": "奶奶的兄弟姐妹和亲戚们",
+      "reply": [
+       "对。saudara 范围很宽：兄弟姐妹、也可以泛指亲戚。sodara 是口语说法。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "奶奶的朋友们",
+      "reply": [
+       "不是。朋友是 teman。saudara 是有亲属关系的人。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{saudara}} 比中文“兄弟姐妹”宽：{{saudara kandung}} 是亲兄弟姐妹，{{saudara sepupu}} 是堂表亲，{{saudara jauh}} 是远亲。说“我们兄妹三个”用 {{Kami tiga bersaudara.}} 口语常说 {{sodara}}。"
+   ],
+   "simple": [
+    "[[saudara]] = 兄弟姐妹或亲戚；口语 sodara"
+   ],
+   "asks": [
+    {
+     "label": "saudara、kakak、adik 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "saudara",
+         "兄弟姐妹、亲戚（不分长幼）"
+        ],
+        [
+         "kakak",
+         "哥哥、姐姐"
+        ],
+        [
+         "adik",
+         "弟弟、妹妹"
+        ]
+       ]
+      },
+      "要说清长幼就用 kakak / adik；不分长幼、或说亲戚，用 saudara。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "朋友问你家几个孩子，你说“我们兄弟姐妹四个”：[[Kami empat ___.]]"
+    ],
+    "options": [
+     {
+      "t": "bersaudara",
+      "v": "right",
+      "why": [
+       "对。数字 + bersaudara：Kami empat bersaudara。"
+      ]
+     },
+     {
+      "t": "saudara",
+      "v": "wrong",
+      "why": [
+       "这里要表示“是兄弟姐妹关系”，用 bersaudara，光说 saudara 不完整。"
+      ]
+     },
+     {
+      "t": "kakak",
+      "v": "wrong",
+      "why": [
+       "kakak 只指哥哥姐姐，不能表示一家几个孩子。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Dia saudara jauh saya.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "他是我的远房亲戚",
+       "v": "right",
+       "why": [
+        "对。saudara jauh = 远亲。"
+       ]
+      },
+      {
+       "t": "他是住得很远的朋友",
+       "v": "wrong",
+       "why": [
+        "朋友是 teman；saudara jauh 说的是亲属关系远。"
+       ]
+      },
+      {
+       "t": "他是我的亲哥哥",
+       "v": "wrong",
+       "why": [
+        "亲兄弟姐妹是 saudara kandung。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟同事说：“我兄弟姐妹三个，我是老大。”"
+    ],
+    "kw": "saya · tiga bersaudara · anak pertama",
+    "skel": "Kami ____ bersaudara, dan saya anak ____.",
+    "ref": "Kami tiga bersaudara, dan saya anak pertama."
+   },
+   "recall": {
+    "prompt": [
+     "跟朋友说：“周末我有亲戚从村里来。”（口语）"
+    ],
+    "kw": "akhir pekan · ada · sodara · dari kampung",
+    "skel": "Akhir pekan ini ada ____ dari ____ yang mau datang.",
+    "ref": "Akhir pekan ini ada sodara dari kampung yang mau datang.",
+    "notes": [
+     "sodara = saudara，朋友之间用。"
+    ]
+   },
+   "final": {
+    "cn": "“他不是我的亲哥哥，是我的堂哥。”",
+    "ref": "Dia bukan saudara kandung saya, tapi saudara sepupu."
+   },
+   "remind": "saudara = 兄弟姐妹/亲戚；Kami tiga bersaudara；口语 sodara。"
+  },
+  {
+   "key": "berkelahi",
+   "name": "berkelahi",
+   "head": "berkelahi · 打架",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Menurut Nenek, dulu Kakek dan adiknya pernah berkelahi karena sama-sama ingin memakai celana itu ke pesta.",
+      "cn": "奶奶说，当年爷爷和他弟弟还为这条裤子打过一架，因为两个人都想穿它去参加聚会。"
+     }
+    ],
+    "ask": "爷爷和弟弟 berkelahi，最可能是什么样子？",
+    "options": [
+     {
+      "t": "两兄弟动手打了起来",
+      "reply": [
+       "对。berkelahi 一般指动手打架。只吵嘴多用 bertengkar。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "两个国家打仗",
+      "reply": [
+       "不对。国家、军队打仗是 perang / berperang，不说两兄弟 berperang。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{berkelahi}} = 动手打架：{{berkelahi dengan …}}、{{berkelahi gara-gara …}}。名词是 {{perkelahian}}。口语说 {{berantem}}，它既能指打架，也能指吵架。"
+   ],
+   "simple": [
+    "[[berkelahi]] = 打架；口语 berantem"
+   ],
+   "asks": [
+    {
+     "label": "berkelahi、bertengkar、perang 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "berkelahi",
+         "动手打架"
+        ],
+        [
+         "bertengkar",
+         "吵架（动嘴）"
+        ],
+        [
+         "perang",
+         "国家、军队打仗"
+        ]
+       ]
+      },
+      "朋友家人之间说 berantem，打架、吵架都可以。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "新闻报道：[[Dua pemuda ___ di depan warung tadi malam.]]"
+    ],
+    "options": [
+     {
+      "t": "berkelahi",
+      "v": "right",
+      "why": [
+       "对。新闻、正式场合说 berkelahi。"
+      ]
+     },
+     {
+      "t": "berantem",
+      "v": "ok",
+      "why": [
+       "意思对，但 berantem 是口语，朋友聊天时这样说可以，新闻稿里一般写 berkelahi。"
+      ]
+     },
+     {
+      "t": "berperang",
+      "v": "wrong",
+      "why": [
+       "berperang 是国家、军队之间打仗，两个年轻人不用。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Mereka lagi berantem, jangan diganggu dulu.]]最可能是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "他们在闹矛盾，先别打扰",
+       "v": "right",
+       "why": [
+        "对。berantem 常指吵架、闹别扭。"
+       ]
+      },
+      {
+       "t": "他们在打仗",
+       "v": "wrong",
+       "why": [
+        "打仗是 perang，说的是国家、军队；berantem 是人和人之间闹矛盾。"
+       ]
+      },
+      {
+       "t": "他们在比赛",
+       "v": "wrong",
+       "why": [
+        "比赛是 bertanding。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟朋友说：“小时候我和姐姐常常因为抢衣服打架。”（口语）"
+    ],
+    "kw": "waktu kecil · aku · kakakku · sering berantem · gara-gara · baju",
+    "skel": "Waktu kecil, aku dan ____ sering berantem gara-gara ____.",
+    "ref": "Waktu kecil, aku dan kakakku sering berantem gara-gara baju.",
+    "notes": [
+     "berantem = berkelahi / bertengkar，口语。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "说：“老师把两个打架的学生拉开了。”"
+    ],
+    "kw": "guru · memisahkan · dua murid · yang berkelahi",
+    "skel": "Guru itu ____ dua murid yang ____.",
+    "ref": "Guru itu memisahkan dua murid yang berkelahi."
+   },
+   "final": {
+    "cn": "“别为了一点小事打架。”",
+    "ref": "Jangan berkelahi cuma karena masalah kecil."
+   },
+   "remind": "berkelahi = 动手打架；吵架 bertengkar；口语 berantem 两种都行。"
+  },
+  {
+   "key": "terurai",
+   "name": "terurai",
+   "head": "terurai · 披散着；被分解",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Rambutnya panjang terurai, kulitnya sawo matang, dan ada lesung pipit di pipinya.",
+      "cn": "她长发披肩，皮肤是小麦色的，脸上还有酒窝。"
+     }
+    ],
+    "ask": "照片里奶奶的头发 terurai，是什么样子？",
+    "options": [
+     {
+      "t": "长发散着、没扎起来",
+      "reply": [
+       "对。rambut terurai = 头发披散着。扎起来是 rambutnya diikat。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "头发剪短了",
+      "reply": [
+       "不对。剪头发是 potong rambut。terurai 说的是散开的状态。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{terurai}} = ter- + urai，“处于散开的状态”。两个常用场景：{{rambut panjang terurai}}（长发披着），{{sampah plastik sulit terurai}}（塑料很难分解）。"
+   ],
+   "simple": [
+    "[[terurai]] = 头发散着；垃圾被分解"
+   ],
+   "asks": [
+    {
+     "label": "说头发和说垃圾，为什么是同一个词？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "rambutnya terurai",
+         "头发散开（不扎）"
+        ],
+        [
+         "plastik sulit terurai",
+         "塑料很难分解（散成小块）"
+        ]
+       ]
+      },
+      "核心都是“散开”：头发散开，或者东西慢慢散成更小的部分。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "环保海报上写：[[Kantong plastik butuh ratusan tahun untuk ___.]]"
+    ],
+    "options": [
+     {
+      "t": "terurai",
+      "v": "right",
+      "why": [
+       "对。自然分解用 terurai。"
+      ]
+     },
+     {
+      "t": "diikat",
+      "v": "wrong",
+      "why": [
+       "diikat 是“被扎起来、绑起来”，意思不对。"
+      ]
+     },
+     {
+      "t": "dibuang",
+      "v": "wrong",
+      "why": [
+       "dibuang 是“被扔掉”，扔掉一下子就完成了；要花几百年的是分解。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Hari ini rambutnya dibiarkan terurai.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "今天她让头发披着",
+       "v": "right",
+       "why": [
+        "对。dibiarkan terurai = 让头发散着。"
+       ]
+      },
+      {
+       "t": "今天她把头发剪了",
+       "v": "wrong",
+       "why": [
+        "剪头发是 potong rambut。"
+       ]
+      },
+      {
+       "t": "今天她把头发扎起来了",
+       "v": "wrong",
+       "why": [
+        "扎起来是 rambutnya diikat，正好相反。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "描述一个人：“她长发披肩，穿一件白衬衫。”"
+    ],
+    "kw": "rambutnya · panjang terurai · memakai · kemeja putih",
+    "skel": "Rambutnya panjang ____, dan dia memakai ____ putih.",
+    "ref": "Rambutnya panjang terurai, dan dia memakai kemeja putih."
+   },
+   "recall": {
+    "prompt": [
+     "说：“果皮在土里能自己分解。”"
+    ],
+    "kw": "kulit buah · bisa terurai · sendiri · di dalam tanah",
+    "skel": "Kulit buah bisa ____ sendiri di dalam ____.",
+    "ref": "Kulit buah bisa terurai sendiri di dalam tanah."
+   },
+   "final": {
+    "cn": "“风太大了，她扎好的头发全散开了。”",
+    "ref": "Anginnya kencang sekali, sampai rambutnya yang tadi diikat terurai semua."
+   },
+   "remind": "terurai：rambut panjang terurai（头发披着）；plastik sulit terurai（难分解）。"
+  },
+  {
+   "key": "asaljangan",
+   "name": "… boleh …, asal jangan …",
+   "head": "… boleh …, asal jangan … · 可以……，只要别……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "实用句",
+      "id": "Kamu boleh menyalin catatanku, asal jangan mengunggahnya ke grup kelas, ya.",
+      "cn": "你可以抄我的笔记，只要别把它发到班级群里就行。"
+     }
+    ],
+    "ask": "说这句话的人，同意对方抄笔记吗？",
+    "options": [
+     {
+      "t": "同意，但有一个条件",
+      "reply": [
+       "对。先说 boleh（可以），再用 asal jangan 加一个“只要别……”的条件。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "不同意",
+      "reply": [
+       "不对。boleh 就是答应了；asal jangan 后面只是条件。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "先答应：{{… boleh …}}，再加条件：{{asal jangan …}}（只要别……）。asal 本身是“只要”，后面也可以接肯定句：{{asal pulang sebelum jam sepuluh}}。"
+   ],
+   "simple": [
+    "[[boleh …, asal jangan …]] = 可以……，只要别……"
+   ],
+   "asks": [
+    {
+     "label": "asal jangan 和 tapi jangan 有什么不同？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "boleh …, asal jangan …",
+         "答应的条件：只要别……就行"
+        ],
+        [
+         "boleh …, tapi jangan …",
+         "可以……，但是别……"
+        ]
+       ]
+      },
+      "两种都对；asal jangan 更强调“这是唯一的条件”。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "妈妈答应孩子玩手机：[[Boleh main HP, ___ sampai lupa makan.]]"
+    ],
+    "options": [
+     {
+      "t": "asal jangan",
+      "v": "right",
+      "why": [
+       "对。答应以后加条件：只要别玩到忘了吃饭。"
+      ]
+     },
+     {
+      "t": "tapi jangan",
+      "v": "ok",
+      "why": [
+       "也可以，意思是“但是别……”；asal jangan 更像唯一的条件。"
+      ]
+     },
+     {
+      "t": "karena",
+      "v": "wrong",
+      "why": [
+       "karena 是“因为”，这里不是在说原因。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Boleh pinjam motorku, asal jangan ngebut.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "可以借我的摩托，只要别飙车",
+       "v": "right",
+       "why": [
+        "对。ngebut = 开快车（口语）。"
+       ]
+      },
+      {
+       "t": "不能借我的摩托，因为你会飙车",
+       "v": "wrong",
+       "why": [
+        "boleh 是答应了，不是拒绝。"
+       ]
+      },
+      {
+       "t": "你借摩托一定要开快一点",
+       "v": "wrong",
+       "why": [
+        "jangan 是“别”，正好相反。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟室友说：“你可以用我的锅，只要别忘了洗。”"
+    ],
+    "kw": "kamu boleh · pakai · panciku · asal jangan · lupa dicuci",
+    "skel": "Kamu boleh pakai ____, asal jangan lupa ____.",
+    "ref": "Kamu boleh pakai panciku, asal jangan lupa dicuci."
+   },
+   "recall": {
+    "prompt": [
+     "跟孩子说：“可以去朋友家玩，只要别回来太晚。”"
+    ],
+    "kw": "boleh · main ke rumah teman · asal jangan · pulang terlalu malam",
+    "skel": "Boleh main ke rumah ____, asal jangan pulang terlalu ____.",
+    "ref": "Boleh main ke rumah teman, asal jangan pulang terlalu malam."
+   },
+   "final": {
+    "cn": "“可以开空调，只要别开到太冷。”",
+    "ref": "Boleh nyalakan AC, asal jangan terlalu dingin."
+   },
+   "remind": "先 boleh 答应，再 asal jangan 加条件。"
+  },
+  {
+   "key": "katakarena",
+   "name": "Kata …, … karena …",
+   "head": "Kata …, … karena … · 据……说，……是因为……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Kata Nenek, Kakek tidak suka bercerita tentang perang karena kenangannya terlalu berat.",
+      "cn": "奶奶说，爷爷不喜欢讲打仗的事，因为那些回忆太沉重了。"
+     }
+    ],
+    "ask": "“爷爷不喜欢讲打仗的事”，这是谁说的？",
+    "options": [
+     {
+      "t": "奶奶",
+      "reply": [
+       "对。Kata Nenek = 奶奶说。句首的 Kata … 表示话是从谁那里听来的。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "爷爷自己",
+      "reply": [
+       "不是。句子开头是 Kata Nenek，消息来源是奶奶。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{Kata + 人}} 放句首 = “据……说”，转述听来的话，后面接一个完整的句子。再用 {{karena}} 补上原因。口语也说 {{Katanya, …}}（听说）。"
+   ],
+   "simple": [
+    "[[Kata 某人, 句子 karena 原因]] = 某人说……，因为……"
+   ],
+   "asks": [
+    {
+     "label": "Kata Nenek 和 Nenek bilang 一样吗？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Kata Nenek, …",
+         "奶奶说……（转述，放句首）"
+        ],
+        [
+         "Nenek bilang …",
+         "奶奶说……（口语，普通主谓）"
+        ]
+       ]
+      },
+      "意思基本一样；Kata … 放句首，听起来更像在转述消息。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "你转述同事的话：“据丽娜说，会议改到明天了，因为老板生病了。”[[___ Rina, rapatnya diundur ke besok karena bosnya sakit.]]"
+    ],
+    "options": [
+     {
+      "t": "Kata",
+      "v": "right",
+      "why": [
+       "对。Kata Rina = 据丽娜说。"
+      ]
+     },
+     {
+      "t": "Menurut",
+      "v": "ok",
+      "why": [
+       "也可以。Menurut Rina 也表示“据丽娜说/丽娜认为”，略正式。"
+      ]
+     },
+     {
+      "t": "Karena",
+      "v": "wrong",
+      "why": [
+       "karena 是“因为”，句首放它就变成“因为丽娜……”，意思不通。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Kata dokter, saya harus banyak minum air.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "医生说我得多喝水",
+       "v": "right",
+       "why": [
+        "对。Kata dokter = 医生说。"
+       ]
+      },
+      {
+       "t": "我跟医生说我要多喝水",
+       "v": "wrong",
+       "why": [
+        "这是转述医生的话，不是我说的。"
+       ]
+      },
+      {
+       "t": "因为医生，我得多喝水",
+       "v": "wrong",
+       "why": [
+        "Kata 不是“因为”。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "转述：“我妈妈说，今天不用带伞，因为不会下雨。”"
+    ],
+    "kw": "kata Ibu · tidak perlu bawa payung · karena · tidak akan hujan",
+    "skel": "Kata Ibu, hari ini ____ bawa payung karena tidak akan ____.",
+    "ref": "Kata Ibu, hari ini tidak perlu bawa payung karena tidak akan hujan."
+   },
+   "recall": {
+    "prompt": [
+     "转述：“店员说，这件衣服打折，因为是旧款。”"
+    ],
+    "kw": "kata penjualnya · baju ini · didiskon · karena · model lama",
+    "skel": "Kata penjualnya, baju ini ____ karena modelnya sudah ____.",
+    "ref": "Kata penjualnya, baju ini didiskon karena modelnya sudah lama."
+   },
+   "final": {
+    "cn": "“听朋友说，那家店关门了，因为房租太贵。”",
+    "ref": "Kata teman saya, toko itu tutup karena sewanya terlalu mahal."
+   },
+   "remind": "Kata + 人, 句子 + karena + 原因：转述别人的话并说明原因。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "其余新词词卡里都有完整讲解，这里只扫一眼。不熟的点一下，标出来给自己看。"
+  ],
+  "words": [
+   "anak panah",
+   "sawo matang",
+   "lesung pipit",
+   "pantalon",
+   "perang",
+   "tentara",
+   "lahir"
+  ]
+ },
+ "reading": [
+  {
+   "key": "pantalon",
+   "sentence": "Di situ Kakek memakai celana pantalon putih yang sangat lebar.",
+   "cn": "照片里爷爷穿着一条裤腿特别宽的白色西裤。",
+   "chunks": [
+    [
+     "Di situ",
+     "在那（张照片）里",
+     "di situ 指前面说过的地方"
+    ],
+    [
+     "Kakek memakai",
+     "爷爷穿着",
+     "memakai = 穿、戴"
+    ],
+    [
+     "celana pantalon putih",
+     "白色西裤",
+     "pantalon = 西裤（新词），颜色放后面"
+    ],
+    [
+     "yang sangat lebar.",
+     "（裤腿）特别宽的",
+     "yang + 形容词：给名词再加一个描述"
+    ]
+   ],
+   "steal": [
+    "值得借用的是 [[名词 + 颜色 + yang + 形容词]]：{{Dia memakai kemeja biru yang agak kebesaran.}}（他穿着一件有点偏大的蓝衬衫。）"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今天的输出题，缩短版）：描述家里一张老照片里的人长什么样、穿什么。"
+   ],
+   "kw": "di foto itu · rambut Ayah · kulitnya sawo matang · memakai",
+   "skel": "Di foto itu, rambut Ayah masih ____, kulitnya sawo matang, dan dia memakai ____.",
+   "ref": "Di foto itu, rambut Ayah masih hitam, kulitnya sawo matang, dan dia memakai celana pantalon abu-abu.",
+   "notes": [
+    "整页的输出题有更长的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
