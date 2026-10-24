@@ -32,6 +32,20 @@
       #vocab .vocabUnifiedActions,#vocab .vocabUnifiedMemory{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
       #vocab .vocabUnifiedActions button,#vocab .vocabUnifiedMemory button{border-radius:14px;padding:12px 22px;font-weight:800;cursor:pointer}.vocabUnifiedActions .nav{border:0;background:#eef1f6;color:#172033}.vocabUnifiedActions .next{border:0;background:#3157d5;color:#fff}.vocabUnifiedMemory{border-top:1px solid #e5e9f1;padding-top:17px}.vocabUnifiedMemory button{background:#fff;border:1px solid #e0e5ee;color:#283246}
       #vocab .vocabUnifiedMemory .know{border-color:#bfe8cb}#vocab .vocabUnifiedMemory .fuzzy{border-color:#f2d89c}#vocab .vocabUnifiedMemory .dont{border-color:#efc8c4}
+      #vocab .vocabUnifiedExclude{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:12px;font-size:13px;color:#647084}
+      #vocab .vocabUnifiedExclude button,#vocab .vocabUnifiedExclude select{border:1px solid #dce3ee;border-radius:8px;background:white;color:#43516b;padding:7px 10px;cursor:pointer}
+      #vocab #vocabBatchManager{margin:16px 0;padding:15px;background:#fafbff;border:1px solid #dce3ee;border-radius:14px}
+      #vocab #vocabBatchManager[hidden]{display:none}
+      #vocab .vocabBatchHead{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.vocabBatchHead span{font-size:12px;color:#647084}
+      #vocab .vocabBatchTools,#vocab .vocabBatchActions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:11px}
+      #vocab .vocabBatchTools input{min-width:160px;flex:1}#vocab .vocabBatchTools input,#vocab .vocabBatchTools select,#vocab .vocabBatchActions select{padding:9px;border:1px solid #dce3ee;border-radius:8px;background:white}
+      #vocab .vocabBatchMeta{margin:12px 0 8px;font-size:12px;color:#566174}
+      #vocab .vocabBatchList{max-height:300px;overflow-y:auto;background:white;border:1px solid #e5e9f1;border-radius:9px}
+      #vocab .vocabBatchRow{display:flex;gap:9px;align-items:center;padding:8px 10px;border-bottom:1px solid #f1f3f8;cursor:pointer;font-size:13px}
+      #vocab .vocabBatchRow span{flex:1;min-width:0;overflow-wrap:anywhere}#vocab .vocabBatchRow small{color:#7a8495}
+      #vocab .vocabBatchActions button{padding:8px 10px;border:1px solid #dce3ee;border-radius:8px;background:white;cursor:pointer;color:#263855}
+      #vocab .vocabBatchActions button:disabled{opacity:.4;cursor:default}
+      #vocab .vocabBatchEmpty{padding:16px;font-size:13px;color:#647084}
       #vocabBox>.flash,#vocabBox>.cleanFlash,#vocabBox>.bipaV7Card,#vocabBox>.bipaStableCard{display:none!important}
       @media(max-width:700px){#vocab .vocabUnifiedCard{min-height:430px;padding:68px 20px 36px}#vocab .vocabUnifiedProgress{left:20px;top:24px;font-size:14px}#vocab .vocabUnifiedTopic{right:18px;top:19px;max-width:55%;font-size:12px;padding:7px 10px}#vocab .vocabUnifiedWord{font-size:38px}#vocab .vocabUnifiedSound{width:50px!important;height:50px!important;min-width:50px!important}#vocab .vocabUnifiedCn{font-size:23px}}
     `;document.head.appendChild(st);
@@ -59,8 +73,13 @@
     const example=!isBipa()&&d.example?'<div class="vocabUnifiedExample">'+esc(d.example)+'</div>':'';
     const exampleCn=!isBipa()&&d.exampleCn?'<div class="vocabUnifiedExampleCn">'+esc(d.exampleCn)+'</div>':'';
     const note=!isBipa()&&d.note?'<div class="vocabUnifiedNote">'+esc(d.note)+'</div>':'';
-    box.innerHTML='<div id="vocabUnifiedCard" class="vocabUnifiedCard'+(isBipa()?' vocabUnifiedBipa':'')+'"><div class="vocabUnifiedProgress">第 '+p+' / '+a.length+' 个</div>'+topic+'<div class="vocabUnifiedCore">'+badge+'<div class="vocabUnifiedWordLine"><div class="vocabUnifiedWord">'+esc(d.word)+'</div><button class="vocabUnifiedSound" type="button" onclick="event.preventDefault();event.stopPropagation();vocabUnifiedSpeak('+JSON.stringify(d.word).replace(/"/g,'&quot;')+')">🔊</button></div><div class="vocabUnifiedMeaning"><div class="vocabUnifiedCn">'+esc(d.cn||'暂无中文')+'</div>'+en+root+example+exampleCn+note+'</div></div></div><div class="vocabUnifiedActions"><button class="nav" type="button" onclick="vocabUnifiedPrev()">上一个</button><button class="nav" id="vocabUnifiedFlipBtn" type="button" onclick="vocabUnifiedFlip()">翻卡</button><button class="next" type="button" onclick="vocabUnifiedNext()">下一个</button></div><div class="vocabUnifiedMemory"><button class="know" type="button" onclick="vocabUnifiedMark(\'know\')">会了</button><button class="fuzzy" type="button" onclick="vocabUnifiedMark(\'fuzzy\')">模糊</button><button class="dont" type="button" onclick="vocabUnifiedMark(\'dont\')">不会</button></div>';
+    box.innerHTML='<div id="vocabUnifiedCard" class="vocabUnifiedCard'+(isBipa()?' vocabUnifiedBipa':'')+'"><div class="vocabUnifiedProgress">第 '+p+' / '+a.length+' 个</div>'+topic+'<div class="vocabUnifiedCore">'+badge+'<div class="vocabUnifiedWordLine"><div class="vocabUnifiedWord">'+esc(d.word)+'</div><button class="vocabUnifiedSound" type="button" onclick="event.preventDefault();event.stopPropagation();vocabUnifiedSpeak('+JSON.stringify(d.word).replace(/"/g,'&quot;')+')">🔊</button></div><div class="vocabUnifiedMeaning"><div class="vocabUnifiedCn">'+esc(d.cn||'暂无中文')+'</div>'+en+root+example+exampleCn+note+'</div></div></div><div class="vocabUnifiedActions"><button class="nav" type="button" onclick="vocabUnifiedPrev()">上一个</button><button class="nav" id="vocabUnifiedFlipBtn" type="button" onclick="vocabUnifiedFlip()">翻卡</button><button class="next" type="button" onclick="vocabUnifiedNext()">下一个</button></div><div class="vocabUnifiedMemory"><button class="know" type="button" onclick="vocabUnifiedMark(\'know\')">会了</button><button class="fuzzy" type="button" onclick="vocabUnifiedMark(\'fuzzy\')">模糊</button><button class="dont" type="button" onclick="vocabUnifiedMark(\'dont\')">不会</button></div>'+
+      (window.WeaknessPool?.isExcluded?.(x.word)
+        ?'<div class="vocabUnifiedExclude"><span>该词已退出训练</span><button type="button" onclick="vocabUnifiedRestore()">恢复训练</button></div>'
+        :'<div class="vocabUnifiedExclude"><select id="vocabSkipReason" aria-label="不再训练原因"><option value="rare">太冷门</option><option value="easy">太简单</option></select><button type="button" onclick="vocabUnifiedExclude()">不再训练</button></div>');
   }
+  window.vocabUnifiedExclude=function(){window.VocabController?.excludeCurrent?.($('vocabSkipReason')?.value||'rare')};
+  window.vocabUnifiedRestore=function(){window.VocabController?.restoreCurrent?.()};
   window.vocabUnifiedFlip=function(){const c=$('vocabUnifiedCard'),b=$('vocabUnifiedFlipBtn');if(!c)return;c.classList.toggle('revealed');const opened=c.classList.contains('revealed'),m=c.querySelector('.vocabUnifiedMeaning');if(m)m.style.display=opened?'block':'none';if(b)b.textContent=opened?'收起':'翻卡'};
   window.vocabUnifiedPrev=function(){window.VocabController?.move?.(-1)};
   window.vocabUnifiedNext=function(){window.VocabController?.move?.(1)};
