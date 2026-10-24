@@ -308,10 +308,11 @@
     saveProgress();activeKey=key;batchSelected.clear();batchPage=0;if(!isPendingKey(key))pendingUndo=null;activeView='';localStorage.removeItem('vocab_view_mode');
     const select=$('librarySelect');if(select&&select.value!==key)select.value=key;localStorage.setItem('selected_vocab_library',key);
     if($('search'))$('search').value='';syncUiMode();rebuildCategories();if($('cat'))$('cat').value='';if($('sabFilterStable'))$('sabFilterStable').value='';
-    const src=sourceFor(),mem=memoryFor();try{DB=src.slice()}catch(e){}
-    const out=src.filter(x=>(isPendingKey(key)||!statusFromMemory(x.word,activeKey,mem))&&!(x.categories||[]).includes('粗口/俚语'));
+    const src=sourceFor(),mem=memoryFor(),excludedKeys=new Set((window.WeaknessPool?.listExcluded?.()||[]).map(x=>norm(x.word)));
+    try{DB=src.slice()}catch(e){}
+    const out=src.filter(x=>!excludedKeys.has(norm(x.word))&&(isPendingKey(key)||!statusFromMemory(x.word,activeKey,mem))&&!(x.categories||[]).includes('粗口/俚语'));
     try{FILTER=out;idx=opts.restore===false?0:restoreIndex(out)}catch(e){}
-    updateStats(src,mem);renderCurrent();window.dispatchEvent(new CustomEvent('vocab-library-ready',{detail:{key,total:src.length}}));return out;
+    updateStats(src,mem,excludedKeys);renderCurrent();renderBatch();window.dispatchEvent(new CustomEvent('vocab-library-ready',{detail:{key,total:src.length}}));return out;
   }
   function move(delta){const a=Array.isArray(FILTER)?FILTER:[];if(!a.length)return;try{idx=(Number(idx||0)+delta+a.length)%a.length}catch(e){}saveProgress();renderCurrent()}
   function syncWeakness(item,v){
@@ -395,7 +396,10 @@
         const words=[...batchSelected];
         if(!window.confirm('确认对 '+words.length+' 个词执行'+(act==='exclude'?'「不再训练」':act==='mastered'?'「已掌握」':'「恢复训练」')+'吗？'))return;
         const count=window.WeaknessPool?.updateTrainingBatch?.(words,act,$('vocabBatchReason').value)||0;
-        if(act==='mastered'){const m=memoryFor();words.forEach(w=>m[w]='know');persistMemory(activeKey,m);}
+        if(act==='mastered'){
+          const m=normalMem();words.forEach(w=>m[w]='know');persistMemory('master',m);
+          if(isBipaKey()){const b=memoryFor(),inCurrent=new Set(sourceFor().map(x=>norm(x.word)));words.filter(w=>inCurrent.has(w)).forEach(w=>b[w]='know');persistMemory(activeKey,b);}
+        }
         batchSelected.clear();rebuild(false);renderBatch();
         if(!count)window.alert('没有需要更改的词');
       };
