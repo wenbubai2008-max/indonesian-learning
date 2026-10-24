@@ -361,6 +361,15 @@
       return true;
     }).map(x=>Object.assign({},x,{_batchRecord:records.get(norm(x.word))||null}));
   }
+  // UI labels only: legacy local "know" is distinct from synced mastered.
+  function batchStatusLabel(record,localStatus){
+    if((record?.reasons||[]).includes('training_excluded'))return '已排除';
+    if(record?.status==='mastered')return '已掌握';
+    if(localStatus==='know')return '本地标记会了';
+    if(localStatus==='fuzzy')return '模糊';
+    if(localStatus==='dont')return '不会';
+    return '未标记';
+  }
   function renderBatch(){
     const panel=$('vocabBatchManager'),toggle=$('vocabBatchToggle');if(!panel)return;
     panel.hidden=!batchOpen;if(toggle){toggle.textContent=batchOpen?'收起批量管理':'批量管理';toggle.setAttribute('aria-expanded',String(batchOpen));}
@@ -368,14 +377,15 @@
     const rows=batchRows(),pages=Math.max(1,Math.ceil(rows.length/BATCH_PAGE_SIZE));
     batchPage=Math.min(batchPage,pages-1);const page=rows.slice(batchPage*BATCH_PAGE_SIZE,(batchPage+1)*BATCH_PAGE_SIZE);
     const escAttr=v=>esc(v).replace(/"/g,'&quot;');
+    const mem=memoryFor();
     const prevScroll=$('vocabBatchList')?.scrollTop||0;
     panel.innerHTML=
       '<div class="vocabBatchHead"><strong>批量管理</strong><span>仅管理训练资格，不删除词卡或历史记录</span></div>'+
       '<div class="vocabBatchTools"><input id="vocabBatchSearch" aria-label="搜索批量管理词汇" placeholder="搜索词语／中文" value="'+escAttr(batchQuery)+'">'+
-      '<select id="vocabBatchFilter" aria-label="筛选词汇"><option value="all">当前词库全部</option><option value="review">模糊／不会</option><option value="mastered">已掌握</option><option value="excluded">已排除（所有词库）</option></select></div>'+
-      '<div class="vocabBatchMeta">'+rows.length+' 个符合条件，已选 '+batchSelected.size+' 个（本页 '+(batchPage+1)+'／'+pages+'）</div>'+
+      '<select id="vocabBatchFilter" aria-label="筛选词汇"><option value="all">当前词库全部</option><option value="review">模糊／不会</option><option value="mastered">已掌握／本地会了</option><option value="excluded">已排除（所有词库）</option></select></div>'+
+      '<div class="vocabBatchMeta">共 '+rows.length+' 个词 · 本页 '+page.length+' 个（第 '+(batchPage+1)+'／'+pages+' 页，每页最多 '+BATCH_PAGE_SIZE+' 个）· 已选 '+batchSelected.size+' 个 · 列表可向下滚动</div>'+
       '<div id="vocabBatchList" class="vocabBatchList">'+(page.length?page.map(x=>{
-        const word=String(x.word),record=x._batchRecord,state=(record?.reasons||[]).includes('training_excluded')?'已排除':record?.status==='mastered'?'已掌握':statusFromMemory(word,activeKey,memoryFor())||'未标记';
+        const word=String(x.word),state=batchStatusLabel(x._batchRecord,statusFromMemory(word,activeKey,mem));
         return '<label class="vocabBatchRow"><input type="checkbox" data-batch-word="'+escAttr(word)+'" '+(batchSelected.has(norm(word))?'checked':'')+'><span><b>'+esc(word)+'</b> · '+esc(x.cn||'')+'</span><small>'+esc(state)+'</small></label>';
       }).join(''):'<div class="vocabBatchEmpty">没有匹配的词</div>')+'</div>'+
       '<div class="vocabBatchActions"><button type="button" id="vocabBatchSelectPage">选择本页</button><button type="button" id="vocabBatchClear">清空选择</button><button type="button" id="vocabBatchPrev" '+(batchPage===0?'disabled':'')+'>上一页</button><button type="button" id="vocabBatchNext" '+(batchPage>=pages-1?'disabled':'')+'>下一页</button></div>'+
