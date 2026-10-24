@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-24T05:45:05.050Z",
+  "updated_at": "2026-10-24T16:37:19.656Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -28386,21 +28386,23 @@
     "perpaduan": {
       "word": "perpaduan",
       "status": "active",
-      "updated_at": "2026-10-24T03:31:04.424Z",
+      "updated_at": "2026-10-24T15:35:27.800Z",
       "display": "perpaduan",
-      "cn": "融合；结合；搭配",
+      "cn": "融合；结合；搭配（两种东西配在一起的效果）",
       "root": "padu",
-      "root_cn": "协调；融合",
-      "last_wrong": "2026-10-23T14:55:55.744Z",
-      "last_review": "2026-10-23T14:55:55.744Z",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "root_cn": "融合、结合在一起",
+      "last_wrong": "2026-10-24T15:35:27.721Z",
+      "last_review": "2026-10-24T15:35:27.721Z",
+      "source": "课程小测",
+      "source_date": "2026-10-24",
+      "session": "18:00",
       "reasons": [
         "bipa_secondary_dont",
         "quick_wrong",
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "usaha mikro": {
