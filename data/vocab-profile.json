@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-10-24T03:55:40.296Z",
-  "source_updated_at": "2026-10-24T03:50:39.903Z",
+  "generated_at": "2026-10-24T09:40:39.219Z",
+  "source_updated_at": "2026-10-24T05:45:05.050Z",
   "taught_total": 914,
   "confirmed_mastered": 222,
   "needs_reinforcement": 643,
@@ -68,6 +68,19 @@
       "cn": "遵守；服从"
     },
     {
+      "word": "berlaku sampai",
+      "score": 98,
+      "signals": [
+        "automation_fail",
+        "dont",
+        "fuzzy"
+      ],
+      "wrong_count": 0,
+      "last_wrong": "",
+      "last_review": "2026-10-23T14:55:31.479Z",
+      "cn": "有效期至"
+    },
+    {
       "word": "tepat",
       "score": 88,
       "signals": [
@@ -104,19 +117,6 @@
       "last_wrong": "2026-09-27T13:58:43.322Z",
       "last_review": "2026-10-09T07:07:34.461Z",
       "cn": "指出"
-    },
-    {
-      "word": "perpaduan",
-      "score": 86,
-      "signals": [
-        "quick_wrong",
-        "dont",
-        "fuzzy"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-10-23T14:55:55.744Z",
-      "last_review": "2026-10-23T14:55:55.744Z",
-      "cn": "融合；结合；搭配"
     }
   ],
   "definitions": {
