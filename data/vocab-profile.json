@@ -1,20 +1,33 @@
 {
   "version": 1,
-  "generated_at": "2026-10-24T03:07:38.837Z",
-  "source_updated_at": "2026-10-23T23:42:32.952Z",
+  "generated_at": "2026-10-24T03:45:51.452Z",
+  "source_updated_at": "2026-10-24T03:37:24.014Z",
   "taught_total": 914,
-  "confirmed_mastered": 230,
-  "needs_reinforcement": 639,
-  "excluded_from_training": 0,
-  "unverified": 45,
-  "mastery_percent": 25.2,
+  "confirmed_mastered": 253,
+  "needs_reinforcement": 644,
+  "excluded_from_training": 17,
+  "unverified": 0,
+  "mastery_percent": 27.7,
   "primary_master_total": 977,
   "primary_taught_unique": 513,
   "primary_unlearned_total": 464,
   "primary_coverage_percent": 52.5,
   "primary_eligible_new_total": 134,
-  "focus_total": 621,
+  "focus_total": 643,
   "focus_words": [
+    {
+      "word": "pembangunan",
+      "score": 116,
+      "signals": [
+        "automation_fail",
+        "lesson_wrong",
+        "dont"
+      ],
+      "wrong_count": 1,
+      "last_wrong": "2026-10-24T01:47:02.177Z",
+      "last_review": "2026-10-24T01:47:02.177Z",
+      "cn": "建设；发展；建造过程"
+    },
     {
       "word": "menerapkan",
       "score": 106,
@@ -55,6 +68,32 @@
       "cn": "遵守；服从"
     },
     {
+      "word": "tepat",
+      "score": 88,
+      "signals": [
+        "quick_wrong",
+        "dont",
+        "fuzzy"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-10-21T01:41:38.712Z",
+      "last_review": "2026-10-22T15:25:30.037Z",
+      "cn": "准确的；恰好；正好"
+    },
+    {
+      "word": "mengabaikan",
+      "score": 88,
+      "signals": [
+        "lesson_wrong",
+        "dont",
+        "fuzzy"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-10-15T03:20:48.795Z",
+      "last_review": "2026-10-19T05:59:55.698Z",
+      "cn": "忽视；不理会"
+    },
+    {
       "word": "menunjukkan",
       "score": 86,
       "signals": [
@@ -67,52 +106,17 @@
       "cn": "指出"
     },
     {
-      "word": "niat",
-      "score": 84,
+      "word": "perpaduan",
+      "score": 86,
       "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "wrong_count": 3,
-      "last_wrong": "2026-09-25T13:46:19.310Z",
-      "last_review": "2026-10-09T07:08:04.548Z",
-      "cn": "打算；意图；认真想做的心意"
-    },
-    {
-      "word": "mengeluh",
-      "score": 82,
-      "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-09-28T09:17:16.003Z",
-      "last_review": "2026-10-09T07:07:49.585Z",
-      "cn": "抱怨"
-    },
-    {
-      "word": "seraya",
-      "score": 80,
-      "signals": [
-        "automation_fail",
-        "dont"
+        "quick_wrong",
+        "dont",
+        "fuzzy"
       ],
       "wrong_count": 1,
-      "last_wrong": "2026-09-27T13:59:29.228Z",
-      "last_review": "2026-10-09T07:08:08.347Z",
-      "cn": "同时；一边……一边……"
-    },
-    {
-      "word": "menyalin",
-      "score": 80,
-      "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "wrong_count": 1,
-      "last_wrong": "2026-09-27T13:57:54.512Z",
-      "last_review": "2026-10-09T07:08:06.093Z",
-      "cn": "复制"
+      "last_wrong": "2026-10-23T14:55:55.744Z",
+      "last_review": "2026-10-23T14:55:55.744Z",
+      "cn": "融合；结合；搭配"
     }
   ],
   "definitions": {

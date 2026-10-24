@@ -220,11 +220,12 @@
     },
     {
       "date": "2026-10-24",
-      "generated_at": "2026-10-24T00:32:58.909Z",
+      "generated_at": "2026-10-24T03:45:51.485Z",
       "taught_total": 914,
-      "confirmed_mastered": 230,
-      "needs_reinforcement": 639,
-      "unverified": 45
+      "confirmed_mastered": 253,
+      "needs_reinforcement": 644,
+      "unverified": 0,
+      "excluded_from_training": 17
     }
   ]
 }

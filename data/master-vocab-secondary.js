@@ -143,28 +143,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "anak sulung",
-    "cn": "长子/长女",
-    "en": "eldest child",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
-    "word": "anak bungsu",
-    "cn": "最小的孩子",
-    "en": "youngest child",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
     "word": "silsilah keluarga",
     "cn": "家谱/家庭关系图",
     "en": "family tree",
@@ -253,28 +231,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "kijang",
-    "cn": "麂/小鹿",
-    "en": "deer/muntjac",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "dont"
-  },
-  {
-    "word": "macan kumbang",
-    "cn": "黑豹",
-    "en": "black panther",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "dont"
-  },
-  {
     "word": "kangguru",
     "cn": "袋鼠",
     "en": "kangaroo",
@@ -306,17 +262,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "B",
     "selection": "fuzzy"
-  },
-  {
-    "word": "tapir",
-    "cn": "貘",
-    "en": "tapir",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "dont"
   },
   {
     "word": "macan tutul",
@@ -471,17 +416,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "A",
     "selection": "fuzzy"
-  },
-  {
-    "word": "pot bunga",
-    "cn": "花盆",
-    "en": "flower pot",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "dont"
   },
   {
     "word": "lukisan",
@@ -693,17 +627,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "berserat",
-    "cn": "有纤维感",
-    "en": "fibrous",
-    "root": "serat",
-    "root_cn": "",
-    "formation": "ber- + serat",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "dont"
-  },
-  {
     "word": "cimol",
     "cn": "西爪哇木薯粉小吃",
     "en": "cimol snack",
@@ -765,17 +688,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "root": "",
     "root_cn": "",
     "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
-    "word": "persimpangan",
-    "cn": "十字路口/交叉口",
-    "en": "intersection",
-    "root": "simpang",
-    "root_cn": "",
-    "formation": "per- + simpang + -an",
     "bipa_level": "A1",
     "sab": "A",
     "selection": "dont"
@@ -867,17 +779,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "S",
     "selection": "fuzzy"
-  },
-  {
-    "word": "gosok gigi",
-    "cn": "刷牙",
-    "en": "brush teeth",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "S",
-    "selection": "dont"
   },
   {
     "word": "menyapu",
@@ -1287,17 +1188,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "kumis",
-    "cn": "小胡子",
-    "en": "moustache",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
     "word": "ramping",
     "cn": "苗条",
     "en": "slim",
@@ -1397,28 +1287,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "jenggot",
-    "cn": "胡须/络腮胡",
-    "en": "beard",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
-    "word": "kanak-kanak",
-    "cn": "儿童",
-    "en": "childhood/child",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
     "word": "remaja",
     "cn": "青少年",
     "en": "teenager",
@@ -1450,17 +1318,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "A",
     "selection": "fuzzy"
-  },
-  {
-    "word": "sandal jepit",
-    "cn": "人字拖",
-    "en": "flip-flops",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "dont"
   },
   {
     "word": "kemeja",
@@ -1516,28 +1373,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "A",
     "selection": "fuzzy"
-  },
-  {
-    "word": "piyama",
-    "cn": "睡衣",
-    "en": "pajamas",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
-    "word": "pantalon",
-    "cn": "长裤",
-    "en": "trousers",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "dont"
   },
   {
     "word": "rok",
@@ -1713,17 +1548,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "",
     "bipa_level": "A2",
     "sab": "A",
-    "selection": "dont"
-  },
-  {
-    "word": "komedi",
-    "cn": "喜剧",
-    "en": "comedy",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "S",
     "selection": "dont"
   },
   {
@@ -2497,17 +2321,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "paksa",
-    "cn": "强迫；强制",
-    "en": "force",
-    "root": "",
-    "root_cn": "",
-    "formation": "常见于 secara paksa / memaksa",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
     "word": "pengaturan",
     "cn": "设置；安排",
     "en": "setting; arrangement",
@@ -2684,17 +2497,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "berjarak",
-    "cn": "相距",
-    "en": "be at a distance",
-    "root": "jarak",
-    "root_cn": "",
-    "formation": "ber- + jarak",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
     "word": "merupakan",
     "cn": "是；构成",
     "en": "constitute; be",
@@ -2750,17 +2552,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "kemudian",
-    "cn": "然后；之后",
-    "en": "then; afterwards",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B1",
-    "sab": "S",
-    "selection": "dont"
-  },
-  {
     "word": "bocor",
     "cn": "漏；破洞；泄漏",
     "en": "leak; punctured",
@@ -2792,17 +2583,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B1",
     "sab": "A",
     "selection": "fuzzy"
-  },
-  {
-    "word": "paku",
-    "cn": "钉子",
-    "en": "nail",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "dont"
   },
   {
     "word": "menancap",
@@ -2948,17 +2728,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "lolos",
-    "cn": "逃脱；通过",
-    "en": "escape; pass",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
     "word": "ditipu",
     "cn": "被骗",
     "en": "be deceived",
@@ -2967,17 +2736,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "di- + tipu",
     "bipa_level": "B1",
     "sab": "A",
-    "selection": "dont"
-  },
-  {
-    "word": "diberikan",
-    "cn": "被给予",
-    "en": "be given",
-    "root": "beri",
-    "root_cn": "",
-    "formation": "di- + beri + -kan",
-    "bipa_level": "B1",
-    "sab": "S",
     "selection": "dont"
   },
   {
@@ -3077,17 +2835,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "peN- + umum + -an",
     "bipa_level": "B1",
     "sab": "S",
-    "selection": "dont"
-  },
-  {
-    "word": "hadiah utama",
-    "cn": "大奖；头奖",
-    "en": "grand prize",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组",
-    "bipa_level": "B1",
-    "sab": "A",
     "selection": "dont"
   },
   {
@@ -3229,17 +2976,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "root": "tampil",
     "root_cn": "",
     "formation": "peN- + tampil + -an",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
-    "word": "panggung",
-    "cn": "舞台",
-    "en": "stage",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
     "bipa_level": "B1",
     "sab": "A",
     "selection": "dont"
@@ -3507,28 +3243,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B2",
     "sab": "S",
     "selection": "fuzzy"
-  },
-  {
-    "word": "strategis",
-    "cn": "战略性的；位置便利的",
-    "en": "strategic",
-    "root": "strategi",
-    "root_cn": "",
-    "formation": "strategi + -is",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "dont"
-  },
-  {
-    "word": "entahlah",
-    "cn": "不知道；谁知道呢",
-    "en": "I don't know; who knows",
-    "root": "entah",
-    "root_cn": "",
-    "formation": "entah + -lah",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "dont"
   },
   {
     "word": "peran",
