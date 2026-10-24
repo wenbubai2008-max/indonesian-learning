@@ -1,0 +1,382 @@
+{
+  "date": "2026-10-24",
+  "session": "pm",
+  "time": "18:00",
+  "day": 64,
+  "title": "18:00 晚课｜Lemari Tidak Muat di Kos Baru · 新出租屋的门太窄，柜子进不去",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "mengukur",
+    "sempit",
+    "kotak",
+    "mendorong"
+  ],
+  "vocab": [
+    {
+      "word": "mengukur",
+      "display": "mengukur",
+      "audio_text": "mengukur",
+      "cn": "测量；量（尺寸、长度、体温等）",
+      "en": "to measure",
+      "root": "ukur",
+      "root_cn": "量、测量",
+      "formation": "meN- + ukur → mengukur（词根以元音开头，meN- 变 meng-）。派生：ukuran（尺寸、尺码）、pengukur（测量工具，如 pengukur suhu）、terukur（可衡量的、有分寸的）。常见搭配：mengukur lebar / panjang / tinggi（量宽度/长度/高度）、mengukur suhu tubuh（量体温）、mengukur tekanan darah（量血压）。",
+      "example": "Sebelum pesan gorden, Ibu mengukur tinggi jendela dua kali supaya tidak salah.",
+      "example_cn": "订窗帘之前，妈妈把窗户的高度量了两遍，免得出错。",
+      "synonym_note": "mengukur 是动手去量；menghitung 是计算、数数（menghitung uang 数钱），不能互换；memeriksa 是检查，医生 memeriksa pasien，但量体温、量血压用 mengukur。口语说法：ngukur（Tadi aku udah ngukur lemarinya.），叫别人量时直接说 Ukur dulu!；写通知、说明书时用标准形 mengukur。",
+      "usage_note": "今晚新词。宾语可以是被量的东西（mengukur pintu），也可以是要量的数值（mengukur lebar pintu）。量完得到的结果是 ukuran：ukuran lemari（柜子尺寸）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "sempit",
+      "display": "sempit",
+      "audio_text": "sempit",
+      "cn": "窄；狭小；（时间）紧",
+      "en": "narrow; cramped; tight",
+      "root": "sempit",
+      "root_cn": "窄",
+      "formation": "形容词，没有词缀。派生：menyempit（变窄）、kesempitan（太窄、地方不够，口语也说“手头紧”）。常见搭配：jalan sempit / gang sempit（窄路、窄巷）、kamar sempit（小房间）、waktunya sempit（时间紧）、pikiran sempit（心胸狭窄、想法狭隘）。反义词：lebar（宽）、luas（宽敞）。",
+      "example": "Gang di depan kos saya sempit sekali. Kalau ada dua motor berpapasan, salah satunya harus mundur.",
+      "example_cn": "我住的宿舍门前那条巷子很窄。如果两辆摩托车迎面碰上，其中一辆就得往后退。",
+      "synonym_note": "sempit 说宽度不够、空间挤；kecil 是整体小。小房间两种都能说，kamar kecil 偏“面积小”，kamar sempit 偏“挤、转不开身”（注意 kamar kecil 也常指厕所）。sesak 是挤得透不过气（人太多、胸口闷）。口语说法：没有特别的口语形，聊天里常说 sempit banget（banget = sekali）。",
+      "usage_note": "今晚新词。说门、路、巷子、房间不够宽时用。也能说时间：waktunya sempit = 时间很紧。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kotak",
+      "display": "kotak",
+      "audio_text": "kotak",
+      "cn": "盒子；箱子；方格",
+      "en": "box; square",
+      "root": "kotak",
+      "root_cn": "盒子、方形",
+      "formation": "名词，没有词缀。常见搭配：kotak makan（饭盒）、kotak surat（信箱）、kotak P3K（急救箱）、kotak buku（装书的箱子）。重叠 kotak-kotak 表示“格子图案”：kemeja kotak-kotak（格子衬衫）。",
+      "example": "Kalau mau retur, barangnya harus dikirim lagi dengan kotak aslinya.",
+      "example_cn": "如果要退货，东西必须用原来的盒子寄回去。",
+      "synonym_note": "kotak 是一般的盒子、箱子，什么材料都可以；kardus 专指纸箱、纸板箱；peti 是大木箱（peti kemas 集装箱）。搬家装东西的纸箱，kotak 和 kardus 都能说。口语说法：纸箱口语常说 kardus 或 dus（Dusnya jangan dibuang dulu.）。",
+      "usage_note": "今晚新词。数箱子：sepuluh kotak buku（十箱书）；kotak 也能当量词用。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "mendorong",
+      "display": "mendorong",
+      "audio_text": "mendorong",
+      "cn": "推；推动；鼓励",
+      "en": "to push; to encourage",
+      "root": "dorong",
+      "root_cn": "推",
+      "formation": "meN- + dorong → mendorong（词根以 d 开头，meN- 变 men-）。派生：dorongan（推力；鼓励、动力）、terdorong（被推动；不由自主地想去做）。常见搭配：mendorong pintu / motor / lemari（推门/摩托/柜子）、mendorong troli（推购物车）、mendorong seseorang untuk …（鼓励某人去……）。反义词：menarik（拉）。",
+      "example": "Mobil kami mogok di putaran dekat pasar, jadi kami mendorongnya ke pinggir jalan.",
+      "example_cn": "我们的车在市场附近的掉头处抛锚了，所以我们把它推到了路边。",
+      "synonym_note": "mendorong 是向前推；menarik 是往自己这边拉；menekan 是按、压（menekan tombol 按按钮）。抽象意思“鼓励”：Orang tuanya mendorong dia untuk kuliah di luar negeri.（父母鼓励他出国读书）。口语说法：常直接用词根 dorong（Kamu dorong dari belakang!、Dorong dikit lagi!）；书面和叙述用 mendorong。",
+      "usage_note": "今晚新词。推的东西直接放在后面：mendorong lemari。门上写的 DORONG 是“推”，TARIK 是“拉”。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "perpaduan",
+      "display": "perpaduan",
+      "audio_text": "perpaduan",
+      "cn": "融合；结合；搭配（两种东西配在一起的效果）",
+      "en": "combination; blend",
+      "root": "padu",
+      "root_cn": "融合、结合在一起",
+      "formation": "per-an + padu → perpaduan（名词，“结合的结果”）。同根词：berpadu（相互融合）、memadukan（把……结合起来）、terpadu（综合的、一体化的，如 sistem terpadu）。常见搭配：perpaduan warna（颜色的搭配）、perpaduan rasa（味道的融合）、perpaduan A dan B（A 与 B 的结合）。",
+      "example": "Sambal ini layak dicoba. Perpaduan pedas dan manisnya pas.",
+      "example_cn": "这款辣椒酱值得一试，辣和甜搭配得刚刚好。",
+      "synonym_note": "perpaduan 强调两样东西配在一起效果好、很协调，多带正面评价；campuran 是“混合物、混在一起”，中性，比如 campuran semen dan pasir（水泥和沙的混合）。kombinasi 意思接近 perpaduan，更口语、更常见。口语说法：聊天里常说 kombinasi 或 paduan（Paduan warnanya bagus.）。",
+      "usage_note": "最近常错的词。今晚用来描述房间、味道、穿搭。常见句型：Perpaduan A dan B membuat … terasa …（A 和 B 的搭配让……显得……）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mematuhi",
+      "display": "mematuhi",
+      "audio_text": "mematuhi",
+      "cn": "遵守；服从（规定、命令）",
+      "en": "to obey; to comply with",
+      "root": "patuh",
+      "root_cn": "听话、守规矩",
+      "formation": "meN- + patuh + -i → mematuhi（词根以 p 开头，p 脱落变成 mem-）。同根词：patuh（守规矩的、听话的）、kepatuhan（遵守程度）。常见搭配：mematuhi aturan / peraturan（遵守规定）、mematuhi rambu lalu lintas（遵守交通标志）。",
+      "example": "Sopir truk itu tidak mematuhi rambu lalu lintas dan menabrak sebuah motor.",
+      "example_cn": "那个卡车司机没有遵守交通标志，撞上了一辆摩托车。",
+      "synonym_note": "mematuhi 和 menaati 意思几乎一样，都偏正式，通知、规章里最常见，两个都对；mengikuti aturan 是“按规定来”，语气更平常。memenuhi 是“满足、达到”，接 syarat（条件）、kebutuhan（需要）、janji（诺言），说遵守规定一般不用它。口语说法：ikutin aturan、nurut（Anaknya nurut banget.），对小孩、对家里规矩常用 nurut。",
+      "usage_note": "最近常错的词，答错过好几次：这次不只看意思，要能主动说出 mematuhi + 宾语。宾语直接跟在后面，不加 dengan / kepada。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "keduluan",
+      "display": "keduluan",
+      "audio_text": "keduluan",
+      "cn": "被（别人）抢先；晚了一步（口语）",
+      "en": "to be beaten to it; to be preceded",
+      "root": "dulu",
+      "root_cn": "先、以前（标准形 dahulu）",
+      "formation": "ke- + dulu + -an → keduluan，标准形 kedahuluan / didahului。ke-an 在这里表示“遭受、不情愿地碰上”，和 kehujanan（被雨淋）、kemalingan（遭小偷）同一类。同根词：duluan（先）、ngeduluin（抢到前面，标准形 mendahului）。",
+      "example": "Aku mau beli kursi bekas itu, tapi keduluan orang lain. Cuma telat lima menit!",
+      "example_cn": "我想买那把二手椅子，可是被别人抢先了。就晚了五分钟！",
+      "synonym_note": "keduluan 的主语是“吃亏、晚了一步的人”：Aku keduluan dia.（我被他抢先了）；ngeduluin 的主语是“抢到前面的人”：Dia ngeduluin aku.（他抢在我前面）。两句说的是同一件事，方向相反。口语说法：keduluan 本身就是口语；正式场合说 didahului（Kami didahului pembeli lain.）或 kedahuluan。",
+      "usage_note": "此前已学的复习词，和 ngeduluin 一起复习。常说：takut keduluan（怕被抢先）、keduluan orang lain（被别人抢先）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngeduluin",
+      "display": "ngeduluin",
+      "audio_text": "ngeduluin",
+      "cn": "抢到（某人）前面；先走一步；插到前面（口语）",
+      "en": "to go ahead of; to precede (colloquial)",
+      "root": "dulu",
+      "root_cn": "先、以前（标准形 dahulu）",
+      "formation": "口语 nge- + dulu + -in → ngeduluin，标准形 mendahului（meN- + dahulu + -i）。-in 是口语里对应 -i / -kan 的后缀。同根词：duluan（先）、keduluan（被抢先）。",
+      "example": "Tadi ada motor yang ngeduluin kita di tikungan, hampir aja kena mobil dari depan.",
+      "example_cn": "刚才有辆摩托在弯道上超到我们前面，差点就撞上对面来的车。",
+      "synonym_note": "ngeduluin 是主动跑到别人前面：超车、插队、抢先做；keduluan 是自己被别人抢先。礼貌用法：Maaf, saya ngeduluin, ya.（不好意思，我先走/先过一下）。也说“先做某事”：Yang penting kita duluin dulu.（重要的先做）。口语说法：本身是口语；正式说 mendahului（Dilarang mendahului dari kiri.〔禁止从左侧超车〕）。",
+      "usage_note": "此前已学的复习词。今晚重点是和 keduluan 分清“谁抢到前面”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "keburu",
+      "display": "keburu",
+      "audio_text": "keburu",
+      "cn": "（还没来得及就）已经……；再不快点就……；来得及",
+      "en": "before (something) happens; to be in time",
+      "root": "buru",
+      "root_cn": "追赶（buru-buru 匆忙）",
+      "formation": "ke- + buru → keburu，是口语常用词。两个主要用法：① nanti keburu + 情况：再不快点就会……（Nanti keburu hujan.）；② masih keburu / nggak keburu：来得及 / 来不及（Masih keburu, kok.）。同根词：buru-buru（匆忙）、memburu（追捕、追赶）、terburu-buru（匆匆忙忙）。",
+      "example": "Ayo berangkat sekarang, nanti keburu kejebak macet di tol.",
+      "example_cn": "现在就出发吧，不然就要被堵在高速上了。",
+      "synonym_note": "keburu 偏口语，说“在……发生之前”；sempat 是“有时间、来得及做”，masih keburu ≈ masih sempat，但“nanti keburu hujan”不能换成 sempat。terlambat 是“迟到、晚了”。还有一个用法：Dia keburu pulang.（还没等我说，他就已经走了）。口语说法：本身就是口语；正式场合说 sebelum … 或 sempat（sebelum hujan turun / masih sempat）。",
+      "usage_note": "此前已学的复习词。最常用的是催人：Cepetan, nanti keburu malam / hujan / habis.",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "saudara",
+      "display": "saudara",
+      "audio_text": "saudara",
+      "cn": "兄弟姐妹；亲戚；（正式称呼）您、诸位",
+      "en": "sibling; relative; (formal) you",
+      "root": "saudara",
+      "root_cn": "兄弟姐妹、亲人",
+      "formation": "名词，没有词缀。派生：bersaudara（是兄弟姐妹的）、persaudaraan（情谊、兄弟情）。常见搭配：saudara kandung（亲兄弟姐妹）、saudara sepupu（堂/表兄弟姐妹）、saudara jauh（远亲）、tiga bersaudara（兄弟姐妹三人）。",
+      "example": "Kalau ada tagihan yang aneh, saya biasanya tanya saudara saya yang kerja di bank.",
+      "example_cn": "如果有奇怪的账单，我一般会问我在银行工作的亲戚。",
+      "synonym_note": "saudara 范围宽，兄弟姐妹、亲戚都可以；要说清楚就用 kakak（哥哥姐姐）/ adik（弟弟妹妹）或 saudara kandung；kerabat 是“亲属”，更书面。正式场合 Saudara 也是第二人称“您”，常见于主持、公文。口语说法：sodara（Dia masih sodara aku.〔他算是我亲戚〕）。",
+      "usage_note": "今天08:00新学。早课在老相册里认识它，今晚换到日常生活：帮忙搬家的亲戚、向同事介绍家人。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "lahir",
+      "display": "lahir",
+      "audio_text": "lahir",
+      "cn": "出生；诞生",
+      "en": "to be born",
+      "root": "lahir",
+      "root_cn": "出生",
+      "formation": "词根本身就是动词。派生：kelahiran（出生；出生地/时间，如 tanggal kelahiran）、melahirkan（生孩子；产生）、dilahirkan（被生下）。常见搭配：lahir di + 地点（生于某地）、lahir pada tahun …（生于……年）、baru lahir（刚出生）。",
+      "example": "Pemain itu lahir di Bandung, tetapi ia mendapat gelar sarjananya di Yogyakarta.",
+      "example_cn": "那个运动员出生在万隆，但他是在日惹拿到学士学位的。",
+      "synonym_note": "lahir 的主语是被生下的人：Anak saya lahir tahun lalu.；melahirkan 的主语是母亲：Istrinya melahirkan anak laki-laki.（他妻子生了个男孩）。dilahirkan 和 lahir 意思接近，更书面。口语说法：口语说“生孩子”常用 lahiran（Kakakku baru lahiran.〔我姐刚生完孩子〕）。",
+      "usage_note": "今天08:00新学。早课说奶奶年轻时的事，今晚放进新场景：房东的孙子刚出生、介绍家人在哪里出生。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Raka baru pindah ke kamar kos dekat kantornya. Kamarnya kecil, tetapi perpaduan dinding putih dan jendela besar membuatnya terasa luas. Karena takut didahului orang lain, Raka langsung membayar uang muka. Hari Sabtu, saudaranya, Bima, datang membantu. Masalah muncul di lantai dua: pintu kamarnya sempit. Raka mengukurnya, dan ternyata lemarinya lebih lebar lima sentimeter. Mereka memiringkan lemari, lalu Bima mendorongnya pelan-pelan. Lemari akhirnya masuk, tetapi tangan Bima terbentur pintu dan sedikit bengkak. Sore itu Ibu kos mengingatkan bahwa semua penghuni wajib mematuhi aturan: setelah jam sembilan malam tidak boleh berisik, karena cucunya baru lahir. Mereka pun cepat-cepat mengangkat sepuluh kotak buku ke atas sebelum jam sembilan.",
+    "cn": "Raka 刚搬进公司附近的一间出租房。房间不大，但白墙配上大窗户，让它显得很宽敞。因为怕被别人抢先，Raka 当场就交了定金。星期六，他的亲戚 Bima 来帮忙。问题出在二楼：房门很窄。Raka 量了一下，结果发现柜子比门宽了五厘米。他们把柜子斜过来，然后 Bima 慢慢地推。柜子终于进去了，可是 Bima 的手撞到了门，有点肿。那天下午房东太太提醒：所有房客都必须遵守规定，晚上九点以后不能吵，因为她的孙子刚出生。于是他们赶紧在九点之前把十箱书搬上了楼。"
+  },
+  "dialogue": {
+    "title": "二楼门口：柜子进不去",
+    "lines": [
+      {
+        "speaker": "Bima",
+        "id": "Ka, lemarinya nggak muat. Pintunya sempit banget.",
+        "cn": "阿卡，柜子进不去。门太窄了。（nggak = tidak，banget = sekali）"
+      },
+      {
+        "speaker": "Raka",
+        "id": "Masa sih? Tadi pagi aku udah ngukur lemarinya, kok.",
+        "cn": "不会吧？我今天早上已经量过柜子了呀。（udah = sudah，ngukur = mengukur）"
+      },
+      {
+        "speaker": "Bima",
+        "id": "Lemarinya doang? Pintunya nggak kamu ukur? Kamu sih, buru-buru bayar DP.",
+        "cn": "只量了柜子？门你没量？都怪你，急急忙忙就交了定金。（doang = saja）"
+      },
+      {
+        "speaker": "Raka",
+        "id": "Kalau nggak cepet, aku keduluan orang lain! Ya udah, kita miringin aja. Kamu dorong pelan-pelan dari belakang, aku tarik dari depan.",
+        "cn": "不快点的话，我就被别人抢先了！那好吧，我们把它斜过来。你从后面慢慢推，我在前面拉。（cepet = cepat，keduluan = didahului，ya udah = ya sudah，miringin = memiringkan）"
+      },
+      {
+        "speaker": "Bima",
+        "id": "Aduh! Tanganku kebentur pintu. Pelan-pelan, Ka!",
+        "cn": "哎哟！我的手撞到门了。慢点，阿卡！（kebentur = terbentur）"
+      },
+      {
+        "speaker": "Mbak Sinta",
+        "id": "Permisi, Mas, saya ngeduluin, ya. Ojek saya udah nunggu di bawah.",
+        "cn": "不好意思，两位，我先过去一下哦。我叫的摩的已经在楼下等了。（ngeduluin = mendahului，nunggu = menunggu）"
+      },
+      {
+        "speaker": "Bima",
+        "id": "Silakan, Mbak. Ayo, Ka, cepetan. Kotaknya masih sepuluh, nanti keburu malam.",
+        "cn": "请吧。走，阿卡，快点。还有十个箱子，再不快点天就黑了。（cepetan = cepatlah）"
+      },
+      {
+        "speaker": "Raka",
+        "id": "Iya, iya. Pokoknya hari ini kita harus ngelarin semuanya. Abis ini aku traktir bakso, deh.",
+        "cn": "好好好。总之今天我们得把所有东西弄完。弄完我请你吃肉丸汤。（ngelarin = menyelesaikan，abis = habis / sesudah）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：你在网上买了一个书架，到货后发现放不进房间角落，给卖家发消息问能不能退货（换一个场景，不是今晚的搬家）。用 mengukur、sempit、kotak 中至少两个，写 3–4 句，对卖家用礼貌说法。",
+      "reference_answer": "Selamat siang, Kak. Rak bukunya sudah sampai, tapi ternyata tidak muat. Sebelum pesan, saya sudah mengukur sudut kamar, tapi ukuran raknya lebih besar daripada yang tertulis di foto, jadi sudutnya terlalu sempit. Apa bisa retur, Kak? Kotaknya masih utuh dan masih saya simpan.",
+      "reference_cn": "您好。书架已经到了，可是发现放不进去。下单之前我量过房间角落，但书架的实际尺寸比图片上写的大，所以那个角落太窄了。请问可以退货吗？盒子还完好，我也还留着。"
+    },
+    {
+      "task": "弱词应用：你负责安排公司会议室，在同事群里发通知，提醒大家遵守新规定。用 mematuhi 和 keburu，写 3–4 句。",
+      "reference_answer": "Teman-teman, mulai Senin kita wajib mematuhi aturan baru ruang rapat: pesan dulu lewat aplikasi, dan keluar tepat waktu. Pesan dari pagi, ya, nanti keburu dipakai tim lain. Kalau jadwalnya bentrok, langsung bahas di grup ini. Ini upaya kita supaya rapat nggak molor lagi.",
+      "reference_cn": "各位，从周一开始大家必须遵守会议室新规定：先在应用里预订，并且按时离开。要从早上就订好哦，不然就被别的组先用了。如果时间撞了，直接在这个群里商量。这是为了让会议别再拖延。"
+    },
+    {
+      "task": "同词根应用：跟朋友抱怨一次排队时有人插到你前面、结果你没买到的经历（不要用搬家的场景）。用 keduluan 和 ngeduluin，朋友之间用口语，3–4 句。",
+      "reference_answer": "Tadi pagi aku antre bubur ayam. Tiba-tiba ada bapak-bapak yang ngeduluin aku, padahal aku udah nunggu lama. Aku pengin negur, tapi takut nyinggung perasaannya. Akhirnya aku keduluan: buburnya tinggal satu porsi, dan dia yang dapet.",
+      "reference_cn": "今天早上我排队买鸡肉粥。突然有个大叔插到我前面，可我已经等了很久了。我想说他，又怕伤他的面子。结果我被他抢先了：粥只剩一份，被他买走了。"
+    },
+    {
+      "task": "早课词迁移：向新同事介绍你的兄弟姐妹（不要用旧照片或相册的场景）。用 saudara 和 lahir，口语，2–3 句。",
+      "reference_answer": "Aku punya dua saudara kandung, kakak perempuan dan adik laki-laki. Kakakku lahir di Medan, tapi aku dan adikku lahir di Jakarta. Adikku paling kepo, semua urusan kakaknya mau dia tahu.",
+      "reference_cn": "我有两个亲兄弟姐妹，一个姐姐和一个弟弟。我姐姐出生在棉兰，我和弟弟都出生在雅加达。我弟弟最爱打听，哥哥姐姐的什么事他都想知道。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "Raka 搬家前想确认柜子能不能进门。选最自然的一项：Sebelum lemarinya diangkat, Raka ___ lebar pintu kamar dulu.",
+        "options": [
+          "ukuran",
+          "terukur",
+          "mengukur",
+          "pengukur"
+        ],
+        "answer_index": 2,
+        "answer": "mengukur",
+        "explain": "这里缺一个带宾语（lebar pintu）的动词，mengukur lebar pintu = 量门的宽度。ukuran 是名词“尺寸”，不能直接带宾语；terukur 是“可衡量的、有分寸的”，不能带宾语；pengukur 是“测量工具”，也是名词。"
+      },
+      {
+        "type": "choice",
+        "prompt": "新房客问房东晚上能不能在房间里放音乐。房东回答：“Boleh, tapi semua penghuni harus ___ aturan kos, ya. Lewat jam sembilan, musiknya dimatikan.” 选最自然的一项：",
+        "options": [
+          "mematuhi",
+          "memenuhi",
+          "mengatur",
+          "menaruh"
+        ],
+        "answer_index": 0,
+        "answer": "mematuhi",
+        "explain": "mematuhi aturan 是“遵守规定”的典型搭配（menaati aturan 也对，口语还可以说 ikutin aturan）。memenuhi 是“满足、达到”，常接 syarat、kebutuhan、janji，说房客守规矩一般不用它；mengatur 是“安排、制定”，房客不是去制定规定的人；menaruh 是“放置”，意思不通。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Raka 看房时还在犹豫要不要马上交定金。陪他看房的朋友说：“Bayar DP sekarang aja, nanti kamu ___ orang lain.” 选最自然的一项：",
+        "options": [
+          "ngeduluin",
+          "duluan",
+          "mendahului",
+          "keduluan"
+        ],
+        "answer_index": 3,
+        "answer": "keduluan",
+        "explain": "朋友担心的是 Raka 晚了一步、被别人抢先，所以用 keduluan orang lain。ngeduluin 和它的标准形 mendahului 都是“抢到别人前面”，主语是抢先的人，放在这里意思反了；duluan 是副词“先”（Kamu duluan aja = 你先走），后面不能带 orang lain 当宾语。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kamarnya kecil, tapi ______ dinding putih dan jendela besar membuatnya terasa luas.（搭配、结合）",
+        "answer": "perpaduan",
+        "explain": "perpaduan A dan B = A 和 B 的搭配，带“配得好”的意思。campuran 是中性的“混合物”，形容颜色、装修的协调效果时用 perpaduan 更自然。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Pintunya terlalu ______, jadi lemarinya harus dimiringkan dulu.（窄）",
+        "answer": "sempit",
+        "explain": "门、路、房间不够宽用 sempit，反义是 lebar / luas。kecil 是整体小，说门“窄得过不去”用 sempit 更准确。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：你从后面慢慢推，我在前面拉。",
+        "tokens": [
+          "Kamu",
+          "dorong",
+          "pelan-pelan",
+          "dari belakang,",
+          "aku",
+          "tarik",
+          "dari depan."
+        ],
+        "answer": "Kamu dorong pelan-pelan dari belakang, aku tarik dari depan.",
+        "answer_cn": "你从后面慢慢推，我在前面拉。",
+        "explain": "口语分工时常直接用词根 dorong / tarik（标准形 mendorong / menarik）。结构：主语 + 动作 + 方式 pelan-pelan + 位置 dari belakang；后半句对称：aku tarik dari depan。"
+      }
+    ],
+    "self_check": [
+      "不看中文：mengukur、sempit、kotak、mendorong 这四个新词，我能在 3 秒内说出意思吗？哪一个卡住了？",
+      "keduluan 和 ngeduluin，我分得清哪个是“被别人抢先”、哪个是“抢到别人前面”吗？",
+      "mematuhi 和 perpaduan 这两个最近常错的词，看到时我能马上想起意思吗？",
+      "看到 Nanti keburu malam.，我能马上明白 keburu 在这里的意思吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘（主动输出，不重复自检）",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "keduluan 和 ngeduluin 各说一句：先用 Aku keduluan … 说一次你晚了一步、被别人抢先的经历，再用 … ngeduluin aku 说一次有人插到你前面。",
+      "mematuhi 主动说两句：一句说你公司或住处必须遵守的一条规定（… wajib mematuhi aturan …），一句说有人没遵守造成的后果（… tidak mematuhi …, jadi …）。再想想：同一句换成 menaati 或口语 ikutin aturan，语气有什么不同？",
+      "早课迁移：用 saudara 和 lahir 介绍你自己或一位朋友的家人（在哪里出生、有几个兄弟姐妹），不要用老相册的场景。",
+      "30 秒脱稿复述：Raka 搬家时遇到什么问题、两人怎么解决、房东提醒了什么、为什么。至少用上 sempit、mengukur、mendorong、kotak 中的三个。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "mengukur",
+      "keduluan",
+      "mematuhi"
+    ],
+    "patterns": [
+      {
+        "pattern": "Karena takut …, …",
+        "cn": "因为怕……，（所以）……",
+        "example": "Karena takut didahului orang lain, Raka langsung membayar uang muka.",
+        "example_cn": "因为怕被别人抢先，Raka 当场就交了定金。"
+      },
+      {
+        "pattern": "…, nanti keburu …",
+        "cn": "……，再不快点就要……了",
+        "example": "Kotaknya masih sepuluh, nanti keburu malam.",
+        "example_cn": "还有十个箱子，再不快点天就黑了。"
+      }
+    ]
+  }
+}
