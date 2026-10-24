@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-24T03:50:39.903Z",
+  "updated_at": "2026-10-24T05:45:05.050Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -550,18 +550,18 @@
     "kejebak": {
       "word": "kejebak",
       "status": "active",
-      "updated_at": "2026-10-24T03:20:45.669Z",
+      "updated_at": "2026-10-24T04:18:29.879Z",
       "display": "kejebak",
       "cn": "陷进去；被困在某个情况里（口语）",
       "root": "jebak",
       "root_cn": "设陷阱；困住",
-      "last_review": "2026-09-25T13:46:05.021Z",
+      "last_review": "2026-10-24T04:18:29.826Z",
       "last_mastered": "2026-09-25T13:46:05.021Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 1,
-      "right_streak": 3
+      "right_streak": 4
     },
     "kebaca": {
       "word": "kebaca",
@@ -24953,7 +24953,7 @@
     "berlaku sampai": {
       "word": "berlaku sampai",
       "status": "active",
-      "updated_at": "2026-10-24T03:31:40.785Z",
+      "updated_at": "2026-10-24T04:20:15.780Z",
       "display": "berlaku sampai",
       "cn": "有效期至",
       "root": "laku",
@@ -24963,7 +24963,8 @@
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_dont",
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "automation_fail"
       ],
       "wrong_count": 0,
       "right_streak": 1
@@ -30071,20 +30072,20 @@
     "kelewat": {
       "word": "kelewat",
       "status": "active",
-      "updated_at": "2026-10-24T03:21:48.784Z",
+      "updated_at": "2026-10-24T04:18:27.739Z",
       "display": "kelewat",
       "cn": "错过；漏掉；超过（口语）",
       "root": "lewat",
       "root_cn": "经过；超过",
       "last_wrong": "2026-10-13T15:12:17.174Z",
-      "last_review": "2026-10-16T09:43:46.491Z",
+      "last_review": "2026-10-24T04:18:27.680Z",
       "last_mastered": "2026-10-16T09:43:46.491Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 1
+      "right_streak": 2
     },
     "kemasan": {
       "word": "kemasan",
@@ -30693,8 +30694,10 @@
     "kemungkinan": {
       "word": "kemungkinan",
       "status": "mastered",
-      "updated_at": "2026-10-15T04:12:09.673Z",
+      "updated_at": "2026-10-24T05:44:54.102Z",
       "display": "kemungkinan",
+      "cn": "可能性；有可能",
+      "root": "mungkin",
       "last_review": "2026-10-15T04:12:09.634Z",
       "last_mastered": "2026-10-15T04:12:09.634Z",
       "reasons": [],
