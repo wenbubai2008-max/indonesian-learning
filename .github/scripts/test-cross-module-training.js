@@ -176,10 +176,14 @@ assert.equal(pick(lessonAm,'中文意思','khas 是什么意思？').word,'khas'
   root.localStorage.getItem=k=>{if(k===fresh.KEY)wholeReads++;return originalGet(k)};
   for(let i=0;i<120;i++)fresh.isExcluded(i%2?'tapir':'tunda');
   assert.ok(wholeReads<=1,'Repeated isExcluded lookups share one cached Set');
-  const was=wholeReads;
   fresh.updateTrainingBatch(['tapir'],'exclude','rare');
+  const afterWrite=wholeReads;
   assert.equal(fresh.isExcluded('tapir'),true,'A write invalidates the exclusion cache');
-  assert.ok(wholeReads>was,'The exclusion cache rereads after an actual write');
+  assert.equal(wholeReads,afterWrite+1,'Cache rebuild reads the pool exactly once after a write');
+  const beforeStorage=wholeReads;
+  root.dispatchEvent({type:'storage',key:fresh.KEY});
+  fresh.isExcluded('tapir');
+  assert.equal(wholeReads,beforeStorage+1,'Cross-tab storage event invalidates the cache');
   fresh.updateTrainingBatch(['tapir'],'restore');
   assert.equal(fresh.isExcluded('tapir'),false);
   root.localStorage.getItem=originalGet;
