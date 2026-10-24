@@ -144,4 +144,28 @@ assert.equal(pick(lessonAm,'中文意思','khas 是什么意思？').word,'khas'
   assert.equal(p({attempts:2,last_at:now-2*Dd,stage:3,verify_streak:1,next_due:now-H},now,false),'阶段 3/4 · 跨日验证 1/3','a due card does not repeat "现在到期"');
 }
 
-console.log('Cross-module tests passed: independent quick/listen/auto selectors, persisted auto results, listening contrast boundaries and self-check integrity.');
+// Exclusion is synced using existing weakness records. A skipped word is not mastered,
+// is not eligible for training, and can be restored without losing its old state.
+{
+  wp.markWeak('tapir',{word:'tapir',cn:'貘'},'memory_fuzzy');
+  wp.updateTrainingBatch(['tapir'],'exclude','rare');
+  assert.equal(wp.isExcluded('tapir'),true);
+  assert.equal(wp.listMastered().some(x=>x.word==='tapir'),false,'Skipping an obscure word is not mastery');
+  assert.equal(wp.listActive().some(x=>x.word==='tapir'),false,'Excluded word leaves weak training');
+  wp.recordPractice('tapir',false,{word:'tapir'});
+  wp.recordListening('tapir',{word:'tapir'},'listening_wrong');
+  assert.equal(wp.isExcluded('tapir'),true,'Practice cannot silently reactivate an excluded word');
+  vm.runInNewContext(read('weakness-pool.js'),{window:root,localStorage:root.localStorage,CustomEvent,Date,Map,Set,Object,String,Number,Array},{filename:'weakness-pool.js'});
+  const restored=root.WeaknessPool;
+  assert.equal(restored.isExcluded('tapir'),true,'Exclusion survives reload/migration');
+  restored.updateTrainingBatch(['tapir'],'restore');
+  assert.equal(restored.get('tapir').status,'active');
+  assert.ok(restored.get('tapir').reasons.includes('memory_fuzzy'),'Restored word keeps previous weak reasons');
+  restored.updateTrainingBatch(['tunda'],'exclude','easy');
+  assert.equal(restored.listMastered().some(x=>x.word==='tunda'),false);
+  restored.updateTrainingBatch(['tunda'],'restore');
+  assert.equal(restored.get('tunda').status,'mastered','Restored mastered state remains mastered');
+  restored.updateTrainingBatch(['tapir'],'mastered');
+  assert.equal(restored.listMastered().some(x=>x.word==='tapir'),true,'Explicit mastery clears training exclusion');
+}
+console.log('Cross-module tests passed: exclusions, independent quick/listen/auto selectors, persisted auto results, listening contrast boundaries and self-check integrity.');
