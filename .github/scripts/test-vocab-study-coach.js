@@ -95,8 +95,8 @@ const next=bc.round('quick',start,true,10);
 assert.equal(next.length,10);
 assert.ok(next.every(r=>!batch.some(prev=>prev.word===r.word)),'No repeated same-day answer; backlog continues in bounded rounds');
 const historic=app(['prior'],[{word:'prior',last_mastered:new Date(start-5*D).toISOString()}]);
-assert.equal(historic.coach.status('quick','prior',start).stable,true,'Historical explicit mastery is respected without forging three dated choices');
-assert.equal(historic.coach.status('quick','prior',start).ready,false);
+assert.equal(historic.coach.status('quick','prior',start),null,'Historical mastered words never reenter everyday quick practice');
+assert.equal(historic.coach.candidates('quick',start).length,0,'Mastered words do not occupy a daily practice slot');
 assert.equal(historic.store.has('data/daily-vocab-data.js'),false,'Scheduler never alters lesson eligibility source');
 // 2026-10-14: never-practiced words are not served alphabetically; the longest-unseen lesson word comes first.
 const tie=app(['acara','zaman','tetangga']);
@@ -145,6 +145,6 @@ console.log('Study coach tests passed: independent abilities and due dates, 2/7/
   const C=app(['satu','dua']);assert.equal(C.coach.status('auto','satu',now).lane,false);assert.equal(C.coach.status('auto','satu',now).age,null);
   // Mastered new words never take a lane slot.
   const M=app(['kuasa'],[{word:'kuasa',last_mastered:new Date(now-D).toISOString()}]);M.root.DAILY_VOCAB_DB[0].first_seen=dd(2);
-  assert.equal(M.coach.status('auto','kuasa',now).lane,false);assert.equal(M.coach.status('quick','kuasa',now).lane,false);
+  assert.equal(M.coach.status('auto','kuasa',now),null);assert.equal(M.coach.status('quick','kuasa',now),null);
 }
 console.log('New-word lane tests passed: first_seen age, 4/3 caps with recent+backlog split, recall ordering, plan <= 2, coverage, compat.');
