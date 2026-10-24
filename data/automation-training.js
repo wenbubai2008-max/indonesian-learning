@@ -119,7 +119,16 @@
     out.sort(function(a,b){return b.score-a.score||ts(b.last_seen)-ts(a.last_seen)||a.word.localeCompare(b.word);});
     return out;
   }
-  function loadPlan(){return parse(PLAN_KEY,{});}
+  function loadPlan(){
+    const plan=parse(PLAN_KEY,{});
+    if(!Array.isArray(plan.words)||!window.WeaknessPool?.all)return plan;
+    const blocked=new Set(window.WeaknessPool.all().filter(x=>x&&x.status==='mastered').map(x=>norm(x.word)));
+    if(!blocked.size)return plan;
+    const words=plan.words.filter(x=>!blocked.has(norm(x.word)));
+    if(words.length===plan.words.length)return plan;
+    const allowed=new Set(words.map(x=>norm(x.word)));
+    return Object.assign({},plan,{words:words,results:Object.fromEntries(Object.entries(plan.results||{}).filter(([k])=>allowed.has(norm(k))))});
+  }
   function buildPlan(force){
     const d=today(),old=loadPlan();
     if(old.date===d&&Array.isArray(old.words)&&old.words.length&&(!force||old.words.some(x=>!(old.results||{})[norm(x.word)])))return old; // Only advance a fully answered round on explicit request.
