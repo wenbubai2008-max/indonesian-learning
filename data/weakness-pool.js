@@ -58,7 +58,7 @@
         if(wasExcluded&&exclusionKind(x)===(kind==='easy'?'easy':'rare'))return;
         const previouslyMastered=wasExcluded?x.reasons.includes('training_excluded_was_mastered'):x.status==='mastered';
         x.reasons=uniq([EXCLUDE,kind==='easy'?'training_excluded_easy':'training_excluded_rare',...(previouslyMastered?['training_excluded_was_mastered']:[]),...(x.reasons||[]).filter(r=>!exclusionFlags.includes(r))]);
-        x.status='mastered';x.last_mastered=now;x.last_review=now;x.mastered_reason='';removeLegacyUnknown(k);
+        x.status='mastered';if(!previouslyMastered)x.last_mastered=now;x.last_review=now;if(!previouslyMastered)x.mastered_reason='';removeLegacyUnknown(k);
         dismissed[k]={word:x.word,at:Date.now()};
       }else if(action==='restore'){
         const previousMastered=x.reasons.includes('training_excluded_was_mastered');
