@@ -1,0 +1,856 @@
+{
+ "version": 1,
+ "title": "晚课深讲 · 10月25日",
+ "intro": [
+  "今晚的课叫《洗衣店的新规定：差点被捐出去的衬衫》。Rina 阿姨定了“三十天不取就捐掉”的新规定，可告示被横幅挡住、数字又小；Dimas 第三十五天才来，急着要穿去婚礼的衬衫。",
+  "今晚只讲 5 样：[[kebijakan]] · [[menerapkan]] · [[kepepet]] · [[Untuk mengakhiri …, …]] · [[Saran saya, … aja, terus …]]"
+ ],
+ "items": [
+  {
+   "key": "bijak",
+   "name": "kebijakan",
+   "head": "kebijakan · 规定；政策",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "词卡例句",
+      "id": "Kafe dekat kantor punya kebijakan baru: yang bawa tumbler sendiri dapat diskon.",
+      "cn": "公司附近的咖啡店有个新规定：自带保温杯的人可以打折。"
+     }
+    ],
+    "ask": "这家咖啡店的 kebijakan baru 是什么？",
+    "options": [
+     {
+      "t": "自带杯子的人打折",
+      "reply": [
+       "对。kebijakan baru = 店里新定的做法、规定。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "咖啡涨价了",
+      "reply": [
+       "不是。句子里说的是打折，而且 kebijakan 是规定，不是价格。"
+      ]
+     },
+     {
+      "t": "店里招了新员工",
+      "reply": [
+       "不是。这句话说的是顾客自带杯子的规定。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{kebijakan}} = 店家、公司、政府定下的做法、规定：{{kebijakan baru}}、{{kebijakan toko}}、{{kebijakan kantor}}。",
+    "很多时候和 {{aturan}} 都能用：aturan 更日常，kebijakan 更正式，常见于告示、新闻。别和 {{kebijaksanaan}}（智慧）混。"
+   ],
+   "simple": [
+    "[[kebijakan]] = 规定、政策；日常也说 aturan"
+   ],
+   "asks": [
+    {
+     "label": "kebijakan、aturan、kebijaksanaan 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "kebijakan baru toko",
+         "店里的新规定（整体做法）"
+        ],
+        [
+         "aturan parkir",
+         "停车规则（具体条文）"
+        ],
+        [
+         "kebijaksanaan",
+         "智慧（另一个词）"
+        ]
+       ]
+      },
+      "说“某地方开始有个新规定”，kebijakan 和 aturan 都行；kebijaksanaan 意思完全不同。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Mulai bulan depan, kantor kami punya ___ baru: kerja dari rumah setiap Jumat.]]",
+     "（从下个月起，我们公司有个新规定：每周五在家办公。）"
+    ],
+    "options": [
+     {
+      "t": "kebijakan",
+      "v": "right",
+      "why": [
+       "对。公司定下的做法：kebijakan baru。"
+      ]
+     },
+     {
+      "t": "aturan",
+      "v": "ok",
+      "why": [
+       "也可以。aturan baru 更日常、更口语，同事聊天时常这么说。"
+      ]
+     },
+     {
+      "t": "kebijaksanaan",
+      "v": "wrong",
+      "why": [
+       "kebijaksanaan 是“智慧、明智”，不是规定。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。新闻里说：“政府宣布了新的燃油政策。”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Pemerintah mengumumkan kebijakan baru soal BBM.",
+       "v": "right",
+       "why": [
+        "对。新闻说政府政策，最常用 kebijakan。"
+       ]
+      },
+      {
+       "t": "Pemerintah mengumumkan aturan baru soal BBM.",
+       "v": "ok",
+       "why": [
+        "也可以，新闻里也常见，偏指具体的条文。"
+       ]
+      },
+      {
+       "t": "Pemerintah mengumumkan kebijaksanaan baru soal BBM.",
+       "v": "wrong",
+       "why": [
+        "kebijaksanaan 是“智慧”，政府不会“宣布新的智慧”。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟邻居说：“我们小区有个新规定：晚上十点以后大门关闭。”先说出声，再点按钮。"
+    ],
+    "kw": "kompleks kita · kebijakan baru · ditutup",
+    "skel": "Kompleks kita punya ____ baru: jam sepuluh malam gerbangnya ____.",
+    "ref": "Kompleks kita punya kebijakan baru: jam sepuluh malam gerbangnya ditutup.",
+    "notes": [
+     "gerbang = 大门。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "你在健身房跟朋友说：“这家健身房的规定很严，不能带食物进去。”"
+    ],
+    "kw": "kebijakan · ketat banget · bawa makanan",
+    "skel": "____ gym ini ketat banget, nggak boleh ____ makanan ke dalam.",
+    "ref": "Kebijakan gym ini ketat banget, nggak boleh bawa makanan ke dalam.",
+    "notes": [
+     "ketat = 严格。"
+    ]
+   },
+   "final": {
+    "cn": "（对顾客）“按照我们店的规定，商品七天内可以换。”",
+    "ref": "Sesuai kebijakan toko kami, barang bisa ditukar dalam tujuh hari."
+   },
+   "remind": "kebijakan = 规定、政策（比 aturan 正式）；kebijaksanaan 是“智慧”。"
+  },
+  {
+   "key": "terap",
+   "name": "menerapkan",
+   "head": "menerapkan · 实行；用起来（规定、制度、方法）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Bu Rina",
+      "id": "Masuk akal juga, Mas. Minggu ini langsung Ibu terapin, deh.",
+      "cn": "倒也有道理。这周我就开始这么做。"
+     }
+    ],
+    "ask": "Rina 阿姨说 langsung Ibu terapin，她打算做什么？",
+    "options": [
+     {
+      "t": "这周就照 Dimas 的建议去做",
+      "reply": [
+       "对。terapin 是 terapkan（menerapkan）的口语：把建议真正用起来。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "把建议解释给别的顾客听",
+      "reply": [
+       "不是。解释是 menerangkan，和 menerapkan 只差几个音，意思完全不同。"
+      ]
+     },
+     {
+      "t": "把 Dimas 的衬衫捐出去",
+      "reply": [
+       "不是。衬衫已经还给他了，她要做的是改进通知的办法。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{menerapkan}} = 把规定、制度、方法真正用起来：{{menerapkan kebijakan baru}}、{{menerapkan sistem antrean online}}。t 脱落：meN- + terap + -kan。口语常说 {{terapin}}。",
+    "通知里最常见被动：{{Aturan ini diterapkan mulai Senin.}} 小心和 {{menerangkan}}（解释）混。"
+   ],
+   "simple": [
+    "[[menerapkan]] + 规定/制度 = 实行；被动 diterapkan"
+   ],
+   "asks": [
+    {
+     "label": "menerapkan、menerangkan、mengikuti 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "menerapkan aturan",
+         "实行规定（定规矩、推规矩的人）"
+        ],
+        [
+         "menerangkan aturan",
+         "解释规定"
+        ],
+        [
+         "mengikuti aturan",
+         "照规定做（守规矩的人）"
+        ]
+       ]
+      },
+      "推行规定的是店主、公司：menerapkan；照着做的是顾客、员工：mengikuti。"
+     ]
+    },
+    {
+     "label": "词卡上的用法",
+     "from": "usage_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Sekolah itu mulai ___ sistem kartu untuk pinjam buku.]]",
+     "（那所学校开始实行借书刷卡制度。）"
+    ],
+    "options": [
+     {
+      "t": "menerapkan",
+      "v": "right",
+      "why": [
+       "对。menerapkan sistem = 实行一套制度。"
+      ]
+     },
+     {
+      "t": "menggunakan",
+      "v": "ok",
+      "why": [
+       "也可以，menggunakan sistem = 使用这套制度，意思接近，只是不强调“推行”。"
+      ]
+     },
+     {
+      "t": "menerangkan",
+      "v": "wrong",
+      "why": [
+       "menerangkan 是“解释”，学校开始“解释制度”和后面的意思对不上。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。经理宣布：“新规定从周一开始实行。”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Aturan baru ini diterapkan mulai Senin.",
+       "v": "right",
+       "why": [
+        "对。规定是被实行的，用被动 diterapkan。"
+       ]
+      },
+      {
+       "t": "Aturan baru ini berlaku mulai Senin.",
+       "v": "ok",
+       "why": [
+        "也可以，berlaku = 生效，通知里也很常用。"
+       ]
+      },
+      {
+       "t": "Aturan baru ini menerapkan mulai Senin.",
+       "v": "wrong",
+       "why": [
+        "规定不会自己去实行，这里要用被动 diterapkan。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟同事说：“我们组想实行一套新的费用报告制度。”先说出声。"
+    ],
+    "kw": "tim kita · menerapkan · sistem baru",
+    "skel": "Tim kita mau ____ sistem ____ untuk laporan biaya.",
+    "ref": "Tim kita mau menerapkan sistem baru untuk laporan biaya."
+   },
+   "recall": {
+    "prompt": [
+     "你跟家人说：“这个月我们实行一个新规矩：吃饭时不玩手机。”"
+    ],
+    "kw": "terapkan · aturan baru · nggak main HP",
+    "skel": "Bulan ini kita ____ aturan baru: nggak main ____ waktu makan.",
+    "ref": "Bulan ini kita terapkan aturan baru: nggak main HP waktu makan.",
+    "notes": [
+     "家人之间常省掉 meN-，直接说 terapkan。"
+    ]
+   },
+   "final": {
+    "cn": "（对朋友）“我把网上学到的省钱方法用起来了，结果真的有用。”",
+    "ref": "Aku udah menerapkan cara hemat dari internet, ternyata berhasil."
+   },
+   "remind": "menerapkan + 规定/制度/方法 = 实行、用起来；被动 diterapkan；≠ menerangkan（解释）。"
+  },
+  {
+   "key": "pepet",
+   "name": "kepepet",
+   "head": "kepepet · 被逼急了；没办法了（口语）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Dimas",
+      "id": "Iya, Bu, saya lagi kepepet. Besok pagi saya harus ke nikahan temen, kemeja batiknya cuma itu.",
+      "cn": "是的阿姨，我现在急死了。明天早上我得去朋友的婚礼，蜡染衬衫就那一件。"
+     }
+    ],
+    "ask": "Dimas 为什么说 saya lagi kepepet？",
+    "options": [
+     {
+      "t": "明天就要穿那件衬衫，没有别的选择",
+      "reply": [
+       "对。kepepet = 被情况逼急、没有退路。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "他嫌洗衣费太贵",
+      "reply": [
+       "不是。对话里没说钱，他急的是明天要穿的衬衫。"
+      ]
+     },
+     {
+      "t": "他身体不舒服",
+      "reply": [
+       "不是。kepepet 说的是处境很急，不是生病。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{kepepet}} = 被时间、钱或情况逼得很急，没有退路：{{lagi kepepet}}、{{kepepet waktu}}、{{kepepet duit}}。正式说 {{terdesak}}。",
+    "常和 {{terpaksa}}（只好）连用：{{Aku kepepet, jadi terpaksa naik taksi.}}"
+   ],
+   "simple": [
+    "[[kepepet]] = 急得没办法（正式 terdesak）"
+   ],
+   "asks": [
+    {
+     "label": "kepepet、buru-buru、terpaksa 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Aku lagi kepepet.",
+         "我现在急得没办法（处境）"
+        ],
+        [
+         "Aku buru-buru.",
+         "我很匆忙（动作快）"
+        ],
+        [
+         "Aku terpaksa pinjam uang.",
+         "我只好去借钱（不得不做）"
+        ]
+       ]
+      },
+      "kepepet 说处境，buru-buru 说动作，terpaksa 说被迫做的事。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Maaf ganggu malam-malam, aku lagi ___. Boleh pinjam charger?]]",
+     "（不好意思这么晚打扰，我现在急着用。能借个充电器吗？）"
+    ],
+    "options": [
+     {
+      "t": "kepepet",
+      "v": "right",
+      "why": [
+       "对。朋友之间求帮忙最常说 lagi kepepet。"
+      ]
+     },
+     {
+      "t": "terdesak",
+      "v": "ok",
+      "why": [
+       "也可以，是正式说法，朋友之间听起来有点生硬。"
+      ]
+     },
+     {
+      "t": "ketutup",
+      "v": "wrong",
+      "why": [
+       "ketutup 是“被挡住、关着”，和求人帮忙的处境无关。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟朋友说：“要不是时间来不及，我才不会坐这么贵的车。”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Kalau nggak kepepet waktu, aku nggak bakal naik taksi semahal ini.",
+       "v": "right",
+       "why": [
+        "对。kepepet waktu = 时间逼得没办法。"
+       ]
+      },
+      {
+       "t": "Kalau nggak buru-buru, aku nggak bakal naik taksi semahal ini.",
+       "v": "ok",
+       "why": [
+        "也可以，口语里能这么说；buru-buru 只说匆忙，kepepet waktu 更强调没有别的办法。"
+       ]
+      },
+      {
+       "t": "Kalau nggak kepepet, aku buru-buru naik taksi semahal ini.",
+       "v": "wrong",
+       "why": [
+        "意思乱了：变成“要是不急，我就匆匆坐贵车”。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你给房东发消息：“不好意思，我这个月手头紧，房租能晚三天交吗？”先说出声。"
+    ],
+    "kw": "lagi kepepet · bayar kosnya · telat tiga hari",
+    "skel": "Maaf, Bu, bulan ini saya lagi ____. Boleh bayar ____ telat tiga hari?",
+    "ref": "Maaf, Bu, bulan ini saya lagi kepepet. Boleh bayar kosnya telat tiga hari?"
+   },
+   "recall": {
+    "prompt": [
+     "朋友问你为什么穿拖鞋去面试，你说：“我急了，鞋子落在家里了。”"
+    ],
+    "kw": "kepepet · sepatuku · ketinggalan",
+    "skel": "Aku ____, sepatuku ____ di rumah.",
+    "ref": "Aku kepepet, sepatuku ketinggalan di rumah.",
+    "notes": [
+     "ketinggalan = 落下、忘带。"
+    ]
+   },
+   "final": {
+    "cn": "（对同事）“我是实在没办法了才找你帮忙的。”",
+    "ref": "Aku minta tolong kamu karena udah kepepet banget."
+   },
+   "remind": "kepepet = 被逼急（时间/钱）；正式 terdesak；常接 jadi terpaksa …"
+  },
+  {
+   "key": "akhir",
+   "name": "Untuk mengakhiri …, …",
+   "head": "Untuk mengakhiri …, … · 为了结束（改掉）……，就……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Untuk mengakhiri kebiasaan itu, Bu Rina menerapkan kebijakan baru: apabila cucian tidak diambil dalam tiga puluh hari, cucian itu akan disumbangkan.",
+      "cn": "为了改掉这种情况，Rina 阿姨实行了一个新规定：衣服如果三十天内没有取走，就会被捐出去。"
+     }
+    ],
+    "ask": "Rina 阿姨定新规定，是想结束什么？",
+    "options": [
+     {
+      "t": "顾客把衣服放好几个月不来拿",
+      "reply": [
+       "对。kebiasaan itu 指前一句说的情况：衣服放着好几个月不取。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "她想把洗衣店关掉",
+      "reply": [
+       "不是。mengakhiri 的宾语是 kebiasaan（习惯），不是店。"
+      ]
+     },
+     {
+      "t": "她想涨价",
+      "reply": [
+       "不是。课文里没有提价格。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "句型：**Untuk mengakhiri + 想结束的事, + 采取的办法**。{{mengakhiri}} 带宾语：{{mengakhiri kebiasaan}}、{{mengakhiri masalah}}、{{mengakhiri kontrak}}。",
+    "事情自己结束用 {{berakhir}}：{{Masalahnya akhirnya berakhir.}} 口语说 {{ngakhirin}}。"
+   ],
+   "simple": [
+    "[[Untuk mengakhiri …, …]] = 为了结束……，就……"
+   ],
+   "asks": [
+    {
+     "label": "mengakhiri、berakhir、menyelesaikan 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Dia mengakhiri kontraknya.",
+         "他终止了合同（有人去结束）"
+        ],
+        [
+         "Kontraknya berakhir bulan depan.",
+         "合同下个月到期（自己结束）"
+        ],
+        [
+         "Dia menyelesaikan laporannya.",
+         "他把报告写完了（完成）"
+        ]
+       ]
+      },
+      "后面有宾语用 mengakhiri；没有宾语用 berakhir；做完一件事用 menyelesaikan。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Untuk ___ masalah sampah di depan rumah, warga membuat jadwal piket.]]",
+     "（为了解决家门口的垃圾问题，居民们排了值日表。）"
+    ],
+    "options": [
+     {
+      "t": "mengakhiri",
+      "v": "right",
+      "why": [
+       "对。mengakhiri masalah = 让问题不再发生。"
+      ]
+     },
+     {
+      "t": "menyelesaikan",
+      "v": "ok",
+      "why": [
+       "也可以，而且很常用：menyelesaikan masalah = 解决问题；mengakhiri 更强调让它停下来。"
+      ]
+     },
+     {
+      "t": "berakhir",
+      "v": "wrong",
+      "why": [
+       "berakhir 不带宾语，后面不能直接接 masalah sampah。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟朋友说：“为了戒掉熬夜的习惯，我十一点就关手机。”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Untuk mengakhiri kebiasaan begadang, aku matiin HP jam sebelas.",
+       "v": "right",
+       "why": [
+        "对。先说要结束的习惯，再说办法。"
+       ]
+      },
+      {
+       "t": "Untuk berakhir kebiasaan begadang, aku matiin HP jam sebelas.",
+       "v": "wrong",
+       "why": [
+        "berakhir 不带宾语，这里要用 mengakhiri。"
+       ]
+      },
+      {
+       "t": "Untuk mengakhiri, aku matiin HP jam sebelas kebiasaan begadang.",
+       "v": "wrong",
+       "why": [
+        "语序乱了：要结束的事应紧跟在 mengakhiri 后面。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你在小区群里说：“为了解决乱停车的问题，每家只能停一辆车。”先说出声。"
+    ],
+    "kw": "untuk mengakhiri · masalah parkir · satu mobil",
+    "skel": "Untuk ____ masalah parkir, setiap rumah cuma boleh parkir ____ mobil.",
+    "ref": "Untuk mengakhiri masalah parkir, setiap rumah cuma boleh parkir satu mobil."
+   },
+   "recall": {
+    "prompt": [
+     "你跟同事说：“为了结束这场争论，我们投票决定吧。”"
+    ],
+    "kw": "untuk mengakhiri · perdebatan ini · voting",
+    "skel": "Untuk ____ perdebatan ini, kita ____ aja.",
+    "ref": "Untuk mengakhiri perdebatan ini, kita voting aja.",
+    "notes": [
+     "perdebatan = 争论。"
+    ]
+   },
+   "final": {
+    "cn": "（对家人）“为了别再为钱吵架，我们每个月一起算一次开销吧。”",
+    "ref": "Untuk mengakhiri pertengkaran soal uang, kita hitung pengeluaran bareng tiap bulan, yuk."
+   },
+   "remind": "Untuk mengakhiri + 事情, + 办法；mengakhiri 带宾语，事情自己结束用 berakhir。"
+  },
+  {
+   "key": "saran",
+   "name": "Saran saya, … aja, terus …",
+   "head": "Saran saya, … aja, terus … · 我建议……就好，然后……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Dimas",
+      "id": "Saran saya, aturannya ditulis di nota aja, terus Ibu kirim pengingat lewat WA.",
+      "cn": "我建议把规定写在收据上，然后您再用 WhatsApp 发个提醒。"
+     }
+    ],
+    "ask": "Dimas 给了什么建议？",
+    "options": [
+     {
+      "t": "把规定写在收据上，再发 WA 提醒",
+      "reply": [
+       "对。Saran saya 引出建议，terus 接下一步。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "把告示贴得更高一点",
+      "reply": [
+       "不是。他建议的是收据和 WA，不是告示。"
+      ]
+     },
+     {
+      "t": "让洗衣店早点关门",
+      "reply": [
+       "不是。对话里没有说营业时间。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "句型：**Saran saya, + 建议 + aja, terus + 下一步**。{{aja}}（= saja）让建议听起来轻松、不强迫；{{terus}} 接下一步。",
+    "对长辈、客户说 {{Saran saya, …}}；朋友之间可以说 {{Saranku, …}} 或 {{Mending … aja}}（不如……吧）。"
+   ],
+   "simple": [
+    "[[Saran saya, … aja, terus …]] = 我建议……就好，然后……"
+   ],
+   "asks": [
+    {
+     "label": "Saran saya、Mending、harus 语气有什么不同？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Saran saya, kita pesan online aja.",
+         "我建议我们网上订就好（礼貌）"
+        ],
+        [
+         "Mending pesan online aja.",
+         "不如网上订吧（朋友间）"
+        ],
+        [
+         "Kamu harus pesan online.",
+         "你必须网上订（命令，太硬）"
+        ]
+       ]
+      },
+      "提建议别用 harus，用 Saran saya … aja 或 Mending … aja。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[___, kita naik kereta aja, terus lanjut ojek dari stasiun.]]",
+     "（我建议我们坐火车就好，然后从车站转摩的。）"
+    ],
+    "options": [
+     {
+      "t": "Saran saya",
+      "v": "right",
+      "why": [
+       "对。Saran saya 放句首引出建议，后面用 aja 和 terus。"
+      ]
+     },
+     {
+      "t": "Menurut saran",
+      "v": "wrong",
+      "why": [
+       "不完整：只说“根据建议”，没有说是谁的建议，也不是提建议的说法。"
+      ]
+     },
+     {
+      "t": "Kalau saran",
+      "v": "wrong",
+      "why": [
+       "kalau 是“如果”，Kalau saran 不成句。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。同事问报告怎么改。你礼貌地建议：“我建议把第二页和第一页合并，然后加一张图表。”"
+     ],
+     "options": [
+      {
+       "t": "Saran saya, halaman dua digabung sama halaman satu aja, terus tambahin satu grafik.",
+       "v": "right",
+       "why": [
+        "对。礼貌提建议，aja 让语气柔和。"
+       ]
+      },
+      {
+       "t": "Saran saya, halaman dua digabung sama halaman satu, terus tambahin satu grafik.",
+       "v": "ok",
+       "why": [
+        "也可以，口语里也能这么说，只是少了 aja，语气稍直接。"
+       ]
+      },
+      {
+       "t": "Saran saya halaman dua, terus digabung aja satu grafik.",
+       "v": "wrong",
+       "why": [
+        "句子不完整，意思也乱了。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟朋友说：“我建议你先问问房东，然后再做决定。”先说出声。"
+    ],
+    "kw": "saranku · tanya ibu kos dulu aja · terus",
+    "skel": "Saranku, kamu ____ ibu kos dulu aja, terus baru ambil ____.",
+    "ref": "Saranku, kamu tanya ibu kos dulu aja, terus baru ambil keputusan.",
+    "notes": [
+     "朋友之间 saran saya 可以说 saranku。"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "在餐厅里，你建议朋友：“我建议点套餐就好，然后再加一杯冰茶。”"
+    ],
+    "kw": "saran saya · pesan paket aja · terus tambah",
+    "skel": "Saran saya, pesan ____ aja, terus tambah ____ satu.",
+    "ref": "Saran saya, pesan paket aja, terus tambah es teh satu."
+   },
+   "final": {
+    "cn": "（对客户）“我建议您先试用一周，然后再决定要不要续订。”",
+    "ref": "Saran saya, Bapak coba dulu seminggu saja, terus baru tentukan mau lanjut atau tidak."
+   },
+   "remind": "Saran saya, … aja, terus … = 礼貌提建议；朋友间也说 Mending … aja。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "今晚另外两个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+  ],
+  "words": [
+   "mengakhiri",
+   "angka"
+  ]
+ },
+ "reading": [
+  {
+   "key": "tutup",
+   "sentence": "Ia menempelkan pengumuman di dekat kasir, tetapi angkanya terlalu kecil, dan sebagian pengumuman itu tertutup spanduk promo.",
+   "cn": "她在收银台旁边贴了一张告示，可是上面的数字太小，告示还有一部分被促销横幅挡住了。",
+   "chunks": [
+    [
+     "Ia menempelkan pengumuman di dekat kasir,",
+     "她在收银台旁边贴了告示",
+     "menempelkan = 把……贴上"
+    ],
+    [
+     "tetapi angkanya terlalu kecil,",
+     "可是上面的数字太小",
+     "angkanya = 告示上的数字"
+    ],
+    [
+     "dan sebagian pengumuman itu tertutup spanduk promo.",
+     "而且告示有一部分被促销横幅挡住了",
+     "tertutup 的口语是 ketutup"
+    ]
+   ],
+   "steal": [
+    "值得借的是 [[…, tetapi …, dan …]]：先说做了什么，再连着说两个问题。{{Aku sudah pesan taksi, tetapi mobilnya telat, dan sopirnya salah jalan.}}（我叫了车，可是车来晚了，司机还走错了路。）"
+   ]
+  }
+ ],
+ "dialogue": {
+  "head": "对话 · 你来演 Dimas",
+  "intro": [
+   "你演 Dimas，我演 Rina 阿姨。每一轮先看 Dimas 想说什么，看中文先说。"
+  ],
+  "turns": [
+   {
+    "line": 2,
+    "intent": "Dimas 解释：他没注意到，告示被横幅挡住，数字小得看不清。",
+    "kw": "nggak ngeh · ketutup spanduk · nggak kebaca",
+    "skel": "Aduh, saya nggak ____, Bu. Pengumumannya ____ spanduk, angkanya juga kecil banget, nggak ____ dari sini."
+   },
+   {
+    "line": 4,
+    "intent": "Dimas 说自己很急：明天要去婚礼，只有那一件衬衫。",
+    "kw": "lagi kepepet · nikahan temen",
+    "skel": "Iya, Bu, saya lagi ____. Besok pagi saya harus ke ____ temen, kemeja batiknya cuma itu."
+   },
+   {
+    "line": 6,
+    "intent": "Dimas 道谢并提建议：写在收据上，再发 WA 提醒。",
+    "kw": "saran saya · di nota aja · terus",
+    "skel": "Wah, makasih banyak, Bu! Saran saya, aturannya ditulis di ____ aja, terus Ibu kirim ____ lewat WA. Gimana?"
+   }
+  ],
+  "tail": [
+   "Dimas 对老板娘用 saya / Bu，句子里也有 udah、nggak、banget、aja 这些口语形；写正式通知时换成 sudah、tidak、sekali、saja。"
+  ]
+ },
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今晚的改写题，缩短版）：公司开始用刷脸打卡，屏幕上的说明字太小，在同事群里吐槽一下。"
+   ],
+   "kw": "mulai menerapkan · absen pakai wajah · nggak kebaca",
+   "skel": "Kantor kita mulai ____ absen pakai wajah, tapi petunjuknya nggak ____.",
+   "ref": "Kantor kita mulai menerapkan absen pakai wajah, tapi petunjuknya nggak kebaca.",
+   "notes": [
+    "整页的改写题有更完整的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
