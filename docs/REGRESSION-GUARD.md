@@ -586,3 +586,13 @@
 - **目标建议**：`.github/scripts/suggest-vocab-goals.js` → `data/vocab-goals-suggested.json`（use / recognize / unsure，use 可带 fast）。顺序：词表规则 → `data/vocab-goals-review.json`（Claude 初次复核，学习者可直接改）→ 历史纠偏（答错 ≥3 次或有课程 / 自动训练错误的词不只要求“会认”，改为待确认）。Build learning runtime 每次重算并提交该文件（无时间戳，没变化不提交）。健康报告第 5 节显示分布。
 - **边界（守卫 §38）**：观察面板不写任何存储、不调用训练或弱项池的写接口；选词、复习排程、掌握判定、课程 / 泛读 / 深讲生成相关脚本和说明书都不得引用 `vocab-goals`。
 - **测试**：`test-ability-observation.js`（重叠计数、到期分档、长期未出现、来源标注、只读、建议规则）；`test-training-sync.js` 增加 last_pull 断言。
+
+## 39. 2026-10-25 复习阶段新规则先放进仓库，休眠（用户决定）
+
+- **开关**：`data/review-phase.json`，`active: false`。只有用户通知后才打开（`docs/tasks/REVIEW-PHASE.md` 第七节）；关闭期间所有课程、校验、排序、复现检查、上下文和守卫都按原规则运行，输出和以前一致。
+- **共用模块** `.github/scripts/review-phase.js`：`on()` 只在 `active===true` 且课程日期 ≥ `activated_at` 时为真；`counts()` 关闭时返回原来写死的数（AM 10 张、阅读 80–120、PM 10–12 / 3–4 / 4–6 / 2–3、对话 ≥4）；`goals()` 关闭时不打开 `data/vocab-goals.json`。
+- **接入点**：`validate-lesson-candidate.js`（数量、表达难点卡、转折、主题标签、周日小测）、`rank-review-candidates.js` / `review-rotation.js`（循环卡数、复习数、“会认”词移出核心卡、“要快”加分、复现最低数）、`build-lesson-context.js`、`regression-guard.js` 的真实课程数量检查。
+- **主题表** `data/themes.json`：7 个主题，周一至周三核心、周四周五变化、周六迁移、周日小测。
+- **说明书**：早课、晚课说明书先运行 `review-phase.js`，`active=false` 时不读 `REVIEW-PHASE.md`。
+- **顺带修好的复习循环问题**（原 10-14 规则，新词用完后会自动启用）：晚课 0 个新词时 `build-lesson-context.js` 不再报 HISTORY_INVALID；守卫的最新晚课检查接受循环期 0–2 个新词、4–9 个复习；守卫把早课 `cycle_vocab` 当作复习过的老词，和校验器一致。
+- **测试**：`test-review-phase.js`（关闭 = 原数量、不读目标文件、真实课程结果不变；打开后各项新规则；主题轮换；排序跳过“会认”词；上下文接受 0 新词晚课）。

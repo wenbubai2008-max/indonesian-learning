@@ -12,6 +12,8 @@
 
 数据：`data/learning-runtime.json`（词汇资格与复习候选，唯一资格来源）、`data/lesson-context.json`、`data/daily/index.json`、前一天的 PM 课程、最近 7 天已完成的课程、最近一节成功发布的 AM 课程（只参考 JSON 结构，不复制单词、例句和答案）。不需要读完整的 977 词库、`daily-vocab-data.js` 或 `weakness-sync.json`，也不要自行重算词池。
 
+**复习阶段开关（2026-10-25 起放入，默认关闭）**：读完上面的资料后运行 `node .github/scripts/review-phase.js --date D --session am`。输出 `active=false`（现在的状态）时照本说明书执行，不读 `docs/tasks/REVIEW-PHASE.md`；只有输出 `active=true` 时，才按 `docs/tasks/REVIEW-PHASE.md` 覆盖本说明书的词卡数量、课程结构和复现最低数，其余照旧。
+
 ## 二、先恢复，后生成
 
 先查远端真实状态：main 上是否已有当天 AM 课程、index 是否已标 am=true、当天分支是否存在且有课程文件、是否已有同日 PR、是否有正在运行或刚失败的 lesson_release。

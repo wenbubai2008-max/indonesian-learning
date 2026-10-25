@@ -216,13 +216,15 @@ function lastExposureDays(date,longHistory,includeApplication=false){
 // Stale bonus: only beyond the 7-day window, capped (30) so it never outranks a fresh real error (+100).
 const staleBonus=d=>d==null||d<=7?0:Math.min(30,Math.round((d-7)*0.75));
 
-function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null,reviewCount=5,amVocab=[],amReview=[],passiveTexts=[],cycleCount=0}){
+// goalSkip / goalFast / goalBonus: review phase only (review-phase.js goals(); empty while the phase is off = unchanged).
+function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null,reviewCount=5,amVocab=[],amReview=[],passiveTexts=[],cycleCount=0,goalSkip=null,goalFast=null,goalBonus=0}){
  const cfg=config(rotation,date),L=cfg.ledger,ctx=analyze({date,session,runtime,reviewHistory,ledger:L,passiveTexts});
  const pmRules=session==='pm'; // recent-4-day cap and focus quota are PM rules
  const recentCfg=pmRules?cfg.recent:null,focusCfg=pmRules?cfg.focus:null;
  const stale=longHistory?lastExposureDays(date,longHistory,!!L):new Map();
  const am=new Set(amReview.map(norm)),penalty={0:0,1:12,2:25};
- const items=[...ctx.reviewPool].map(w=>{
+ const skipGoal=goalSkip&&goalSkip.size?goalSkip:null,fastGoal=goalFast&&goalFast.size&&goalBonus?goalFast:null;
+ const items=[...ctx.reviewPool].filter(w=>!skipGoal||!skipGoal.has(w)).map(w=>{
   const i=ctx.info(w),reasons=[];
   let score=0;
   if(i.fresh){score+=100;reasons.push(L?'fresh_error_after_last_active_exposure':'fresh_error_after_last_core_review')}
@@ -235,6 +237,7 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
   if(hard)reasons.push('hard_word_'+i.wrongCount+'_wrongs(换题型/辨析讲解)');
   const staleDays=stale.has(w)?stale.get(w):null,sb=staleBonus(staleDays);
   if(sb){score+=sb;reasons.push('stale_'+staleDays+'d(+'+sb+')')}
+  if(fastGoal&&fastGoal.has(w)){score+=goalBonus;reasons.push('goal_fast(+'+goalBonus+')')}
   const why=ctx.why(w),blocked=why.length>0,recent=recentCfg?isRecent(i,recentCfg.days)&&!i.fresh:false;
   if(blocked)reasons.push('blocked:'+why.join('+'));
   return {word:w,score,stale_days:staleDays,priority:i.priority,wrong_count:i.wrongCount,legacy:i.priority===5,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,hard,focus:i.focus,recent4:recent,blocked,blocked_by:why,am_core:am.has(w),reasons};
