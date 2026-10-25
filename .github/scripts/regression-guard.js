@@ -3,6 +3,13 @@ const path = require('path');
 const crypto = require('crypto');
 
 const ROOT = path.resolve(__dirname, '../..');
+// Review phase (2026-10-25, dormant): while data/review-phase.json is off, PC(d) returns the old fixed counts.
+// The release check also runs this guard inside an older main tree that may not have review-phase.js yet: then the
+// phase is simply off.
+let RPH = null; try { RPH = require('./review-phase'); } catch (e) { RPH = null; }
+const PHASE = RPH ? RPH.load(ROOT) : { active: false };
+const OLD_COUNTS = { am_cards:[10,10], am_reading:[80,120], pm_core:[10,12], pm_new:[3,4], pm_review:[4,6], pm_review_cycle:[4,9], pm_application:[2,3], pm_dialogue:[4,1e9] };
+const PC = d => RPH ? RPH.counts(PHASE, d) : JSON.parse(JSON.stringify(OLD_COUNTS)), PON = d => !!RPH && RPH.on(PHASE, d);
 const failures = [];
 const warnings = [];
 const passes = [];
@@ -76,7 +83,7 @@ function validateRecentDailyWindow(){
         ok(x.session==='am'&&x.time==='08:00',`recent AM ${d}: session/time canonical`);
         ok(/^08:00/.test(String(x.title||'')),`recent AM ${d}: title canonical`);
         const recentAmWords=v.map(y=>norm(y&&y.word)).filter(Boolean);
-        ok(recentAmWords.length===10&&unique(recentAmWords),`recent AM ${d}: 10 unique vocab`);
+        ok(inRange(recentAmWords.length,PC(d).am_cards[0],PC(d).am_cards[1])&&recentAmWords.length===v.length&&unique(recentAmWords),`recent AM ${d}: ${PON(d)?PC(d).am_cards.join('-'):10} unique vocab`);
         ok(inRange(rv.length,4,6)&&rv.every(y=>typeof y==='string'&&y.trim()),`recent AM ${d}: review_vocab canonical`);
         ok(Array.isArray(x.sentences)&&x.sentences.length===5,`recent AM ${d}: 5 sentences`);
         ok(Array.isArray(x.quiz)&&x.quiz.length===3,`recent AM ${d}: 3 quiz questions`);
@@ -113,8 +120,8 @@ function validateRecentDailyWindow(){
         ok(x.session==='pm'&&x.time===(d>='2026-09-16'?'18:00':'19:00'),`recent PM ${d}: session/time canonical`);
         ok(x.write_status==='lesson_complete',`recent PM ${d}: lesson_complete`);
         const recentPmWords=v.map(y=>norm(y&&y.word)).filter(Boolean);
-        ok(inRange(v.length,10,12)&&recentPmWords.length===v.length&&unique(recentPmWords),`recent PM ${d}: 10-12 unique vocab`);
-        ok(x.dialogue&&Array.isArray(x.dialogue.lines)&&x.dialogue.lines.length>=4,`recent PM ${d}: dialogue canonical`);
+        ok(inRange(v.length,PC(d).pm_core[0],PC(d).pm_core[1])&&recentPmWords.length===v.length&&unique(recentPmWords),`recent PM ${d}: ${PC(d).pm_core.join('-')} unique vocab`);
+        ok(x.dialogue&&Array.isArray(x.dialogue.lines)&&x.dialogue.lines.length>=PC(d).pm_dialogue[0]&&x.dialogue.lines.length<=PC(d).pm_dialogue[1],`recent PM ${d}: dialogue canonical`);
         ok(Array.isArray(x.rewrite)&&inRange(x.rewrite.length,3,4),`recent PM ${d}: rewrite canonical`);
         const recentQuestions=Array.isArray(test.questions)?test.questions:[];
         const recentChoice=recentQuestions.filter(q=>q&&q.type==='choice').length;
@@ -152,9 +159,10 @@ function validateLatestAm(){
   ok(/^08:00/.test(String(am.title || '')), `latest AM ${date}: title starts with 08:00`);
 
   const vocab = Array.isArray(am.vocab) ? am.vocab : [];
-  ok(vocab.length === 10, `latest AM ${date}: exactly 10 vocab words`);
+  const amC = PC(date);
+  ok(inRange(vocab.length, amC.am_cards[0], amC.am_cards[1]), PON(date) ? `latest AM ${date}: ${amC.am_cards.join('-')} vocab words (review phase)` : `latest AM ${date}: exactly 10 vocab words`);
   const vocabWords = vocab.map(v => norm(v && v.word)).filter(Boolean);
-  ok(vocabWords.length === 10 && unique(vocabWords), `latest AM ${date}: vocab words are non-empty and unique`);
+  ok(vocabWords.length === vocab.length && vocab.length > 0 && unique(vocabWords), `latest AM ${date}: vocab words are non-empty and unique`);
 
   const requiredFields = ['word','display','audio_text','cn','en','root','root_cn','formation','example','example_cn','synonym_note','is_oral_new'];
   vocab.forEach((v,i) => {
@@ -179,7 +187,7 @@ function validateLatestAm(){
 
   const reading = am.reading || {};
   const wc = wordCount(reading.text);
-  ok(inRange(wc,80,120), `latest AM ${date}: reading is 80-120 words (${wc})`);
+  ok(inRange(wc,amC.am_reading[0],amC.am_reading[1]), `latest AM ${date}: reading is ${amC.am_reading.join('-')} words (${wc})`);
   ok(Boolean(String(reading.cn || '').trim()), `latest AM ${date}: reading Chinese translation exists`);
 
   const quiz = Array.isArray(am.quiz) ? am.quiz : [];
@@ -252,10 +260,20 @@ function validateLatestPm(){
     review: vocab.filter(v => v && v.source_group === 'review'),
     application: vocab.filter(v => v && v.source_group === 'application')
   };
-  ok(inRange(vocab.length,10,12), `latest PM ${date}: 10-12 core vocab`);
-  ok(inRange(groups.new.length,3,4), `latest PM ${date}: 3-4 new words`);
-  ok(inRange(groups.review.length,4,6), `latest PM ${date}: 4-6 review words`);
-  ok(inRange(groups.application.length,2,3), `latest PM ${date}: 2-3 application words`);
+  const pmC = PC(date);
+  ok(inRange(vocab.length,pmC.pm_core[0],pmC.pm_core[1]), `latest PM ${date}: ${pmC.pm_core.join('-')} core vocab`);
+  if(PON(date)){
+    ok(inRange(groups.new.length,pmC.pm_new[0],pmC.pm_new[1]), `latest PM ${date}: ${pmC.pm_new.join('-')} new words (review phase)`);
+    ok(inRange(groups.review.length,pmC.pm_review[0],pmC.pm_review[1]), `latest PM ${date}: ${pmC.pm_review.join('-')} review words (review phase)`);
+    ok(inRange(groups.application.length,pmC.pm_application[0],pmC.pm_application[1]), `latest PM ${date}: ${pmC.pm_application.join('-')} application words (review phase)`);
+  }else{
+    // Review cycle (2026-10-14): with fewer than 3 new words left the PM teaches all of them (0-2) and reviews 4-9.
+    // The validator enforces the exact rule at publication; this check accepts both shapes (2026-10-25 fix).
+    const cyclePm = inRange(groups.new.length,0,2);
+    ok(inRange(groups.new.length,cyclePm?0:3,cyclePm?2:4), `latest PM ${date}: 3-4 new words (0-2 in the review cycle)`);
+    ok(inRange(groups.review.length,4,cyclePm?9:6), `latest PM ${date}: 4-6 review words (4-9 in the review cycle)`);
+    ok(inRange(groups.application.length,2,3), `latest PM ${date}: 2-3 application words`);
+  }
 
   const words = vocab.map(v => norm(v && v.word)).filter(Boolean);
   ok(unique(words), `latest PM ${date}: core vocab has no duplicates`);
@@ -299,7 +317,7 @@ function validateLatestPm(){
   ok(Boolean(String(reading.cn || '').trim()), `latest PM ${date}: reading Chinese translation exists`);
 
   const lines = pm.dialogue && Array.isArray(pm.dialogue.lines) ? pm.dialogue.lines : [];
-  ok(lines.length >= 4, `latest PM ${date}: dialogue exists`);
+  ok(lines.length >= pmC.pm_dialogue[0] && lines.length <= pmC.pm_dialogue[1], `latest PM ${date}: dialogue exists`);
   ok(lines.length > 0 && lines.every(x => String(x && x.id || '').trim() && String(x && x.cn || '').trim()), `latest PM ${date}: dialogue lines have Indonesian and Chinese`);
 
   const rewrite = Array.isArray(pm.rewrite) ? pm.rewrite : [];
@@ -341,10 +359,12 @@ function validateLatestPm(){
   const amPath = `data/daily/${date}-am.json`;
   if(fs.existsSync(rel(amPath))){
     const am = readJSON(amPath);
+    // Review-cycle AM cards (cycle_vocab) are old words reviewed at 08:00, as in the validator (2026-10-25 fix).
+    const amCycle = new Set((Array.isArray(am.cycle_vocab) ? am.cycle_vocab : []).map(norm).filter(Boolean));
     const amNewWords = new Set((Array.isArray(am.vocab) ? am.vocab : [])
-      .map(v => norm(typeof v === 'string' ? v : v && v.word)).filter(Boolean));
-    const amReviewWords = new Set((Array.isArray(am.review_vocab) ? am.review_vocab : [])
-      .map(v => norm(typeof v === 'string' ? v : v && v.word)).filter(Boolean));
+      .map(v => norm(typeof v === 'string' ? v : v && v.word)).filter(w => w && !amCycle.has(w)));
+    const amReviewWords = new Set([...(Array.isArray(am.review_vocab) ? am.review_vocab : [])
+      .map(v => norm(typeof v === 'string' ? v : v && v.word)).filter(Boolean), ...amCycle]);
     const amWords = new Set([...amNewWords,...amReviewWords]);
     groups.application.forEach(v => {
       const w=norm(v.word),label=String(v.formation || '') + ' ' + String(v.usage_note || '');
@@ -780,7 +800,18 @@ try {
     const consumers=['.github/scripts/build-learning-runtime.js','.github/scripts/rank-review-candidates.js','.github/scripts/review-rotation.js','.github/scripts/validate-lesson-candidate.js','.github/scripts/plan-lesson-publication.js','.github/scripts/build-lesson-context.js','.github/scripts/reading-review.js','.github/scripts/check-recurrence.js','.github/scripts/publish-extensive-reading-candidate.js','data/vocab-study-coach.js','data/automation-training.js','data/home-learning-upgrade-v2.js','data/listening-word-training.js','data/lesson-end-recall.js','data/weakness-pool.js','docs/tasks/AM-LESSON.md','docs/tasks/PM-LESSON.md','docs/tasks/EXTENSIVE-READING.md','docs/tasks/DEEP-TEACH.md','docs/tasks/COMMON.md'];
     const leak=consumers.filter(f=>fs.existsSync(rel(f))&&/vocab-goals/.test(read(f)));
     okNew(leak.length===0,'goal suggestions are not read by selection, scheduling, mastery or generation'+(leak.length?' (found in: '+leak.join(', ')+')':''));
-    // §39 (2026-10-25, profile redesign step A, user-approved): word diagnosis is a pure read-only function. It must not
+    // §39 (2026-10-25, user decision): review-phase rules staged dormant behind data/review-phase.json.
+    const rpSw=(()=>{try{return readJSON('data/review-phase.json')}catch(e){return null}})(),rpThemes=(()=>{try{return readJSON('data/themes.json')}catch(e){return null}})();
+    const isDate=d=>/^\d{4}-\d{2}-\d{2}$/.test(String(d||''));
+    okNew(rpSw&&typeof rpSw.active==='boolean'&&(rpSw.active===false||(isDate(rpSw.activated_at)&&isDate(rpSw.theme_start_date)&&new Date(rpSw.theme_start_date+'T00:00:00Z').getUTCDay()===1)),'review-phase switch: boolean active; when on, activated_at and a Monday theme_start_date');
+    okNew(rpThemes&&Array.isArray(rpThemes.themes)&&rpThemes.themes.length===7&&new Set(rpThemes.themes.map(x=>x&&x.id)).size===7&&rpThemes.themes.every(x=>x&&x.id&&x.cn&&Array.isArray(x.scenes)&&x.scenes.length>=2),'theme table: 7 distinct themes, each with scenes');
+    const rpDoc=fs.existsSync(rel('docs/tasks/REVIEW-PHASE.md'))?read('docs/tasks/REVIEW-PHASE.md'):'';
+    okNew(['"active": false','忽略本说明书','七、启用步骤','八、停用','不重置、不覆盖'].every(m=>rpDoc.includes(m)),'REVIEW-PHASE.md: switch first, activation steps, rollback, no data reset');
+    okNew(['AM-LESSON.md','PM-LESSON.md'].every(f=>{const t=read('docs/tasks/'+f);return t.includes('review-phase.js --date D')&&t.includes('active=false')&&t.includes('docs/tasks/REVIEW-PHASE.md')}),'AM/PM runbooks read REVIEW-PHASE.md only when the switch is on');
+    const rpJs=fs.existsSync(rel('.github/scripts/review-phase.js'))?read('.github/scripts/review-phase.js'):'';
+    okNew(/function goals\([^)]*\)\{\s*const empty=[^;]+;\s*if\(!on\(phase,date\)\)return empty;/.test(rpJs)&&!rpJs.includes('vocab-goals-suggested'),'confirmed goals are read only while the phase is on; suggestions never');
+    okNew(['validate-lesson-candidate.js','rank-review-candidates.js','build-lesson-context.js'].every(f=>/require\('\.\/review-phase'\)/.test(read('.github/scripts/'+f))),'validator, ranking and context use the shared review-phase switch');
+    // §40 (2026-10-25, profile redesign step A, user-approved): word diagnosis is a pure read-only function. It must not
     // write storage, and nothing that selects words, schedules reviews, judges mastery or generates content may read it.
     const wd=fs.existsSync(rel('data/word-diagnosis.js'))?read('data/word-diagnosis.js'):'';
     okNew(wd.length>0&&!/setItem|removeItem|localStorage\.|recordLessonWrong|markMastered|markWeak|removeReasons|recordPractice|markAnswer|requestVerification|MutationObserver|fetch\(/.test(wd),'word diagnosis exists and is read-only (no storage writes, no observers, no network)');

@@ -51,6 +51,16 @@ The validator switches to the review cycle on its own; there is no flag to set.
 - Error codes: `CYCLE_NOT_ACTIVE`, `CYCLE_NEW_REQUIRED`, `CYCLE_VOCAB_MISMATCH`, `CYCLE_WORD_INELIGIBLE`, `CYCLE_ORAL_FLAG`; PM uses `PM_GROUP_COUNT` with the cycle counts.
 
 
+## Review phase (2026-10-25, dormant)
+
+Off by default. Applies only when `data/review-phase.json` has `active: true` and the lesson date is on/after `activated_at` (`node .github/scripts/review-phase.js --date D --session am|pm` tells). While off, nothing in this section is checked and none of these fields are needed. Full rules: `docs/tasks/REVIEW-PHASE.md`.
+
+- Both sessions: root `phase: {theme_id, day_role}` matching `data/themes.json` for the date (`PHASE_TAG_MISSING`, `PHASE_TAG_MISMATCH`).
+- **08:00**: `vocab` 5–7 cards (remaining new words first, the rest listed in `cycle_vocab`), reading 60–100 words, `review_cards` required (`PHASE_AM_CONTRAST_MISSING`).
+- **18:00**: `vocab` 6–8 (new = all remaining, at most 3; review 4–6; application 1–3), dialogue 8–12 lines with `dialogue.twist` = index of the turn where the situation changes, and at least one `rewrite[]` with `kind: "twist"` (`PHASE_PM_TWIST`).
+- **Sunday 18:00** (`day_role: weekly_test`): `daily_test.week_words` lists 6–12 words taught or reviewed since Monday, each tested by a question (`PHASE_WEEKLY_TEST`).
+- Counts come from `review-phase.json` `counts`; `PM_CORE_COUNT`, `PM_GROUP_COUNT`, `AM_CORE_COUNT`, `READING_INVALID`, `PM_DIALOGUE_INVALID` report them.
+
 ## 可选的深讲数据 `lesson_focus.teach`（初稿，2026-10-19）
 
 `lesson_focus` 原有 words / patterns 合同不变；`teach` 是可选对象，缺少时旧课继续有效。本 PR **只读不写**课程 JSON。试点旁挂 `data/teach/2026-10-18-pm.json`、`2026-10-19-am.json` 是完整格式示例，来源为已认可的深讲原型，原样复制。

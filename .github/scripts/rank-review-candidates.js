@@ -4,6 +4,7 @@
 const fs=require('fs'),path=require('path');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
 const {rank,naturalRecurrence,overusedInText}=require('./review-rotation');
+const RP=require('./review-phase');
 /** All completed lessons before `date`, used only for the stale-word bonus (never for eligibility). */
 function readLongHistory(index,date,read){
  const out=[];
@@ -29,16 +30,19 @@ function main(argv){
   if(fs.existsSync(path.join(root,pf))){const pm=read(pf);if(pm.write_status==='lesson_complete')blockedNew=new Set(names(pm.new_words).map(key))}}
  else blockedNew=new Set([...names(am.vocab),...names(am.review_vocab)].map(key));
  const availNew=[...pool].filter(w=>!blockedNew.has(w)&&!uncl.has(w)&&(dont.has(w)||fuzzy.has(w))).length;
- const amCycleCount=session==='am'&&availNew<10?10-availNew:0;
- const pmCycle=session==='pm'&&availNew<3;
- const reviewCount=Number(a.count)||(pmCycle?Math.max(4,Math.min(9,10-availNew-3)):5);
+ // Review phase (2026-10-25, dormant until data/review-phase.json is switched on): shorter lessons and confirmed goals.
+ const phase=RP.load(root),P=RP.on(phase,a.date),C=RP.counts(phase,a.date),G=RP.goals(phase,a.date,root);
+ const amCycleCount=session==='am'?(P?Math.max(0,C.am_target-availNew):availNew<10?10-availNew:0):0;
+ const pmCycle=session==='pm'&&(P||availNew<3);
+ const reviewCount=Number(a.count)||(P&&session==='pm'?Math.max(C.pm_review[0],Math.min(C.pm_review[1],C.pm_target-Math.min(availNew,C.pm_new[1])-2)):pmCycle?Math.max(4,Math.min(9,10-availNew-3)):5);
  const base={date:a.date,session,runtime,rotation:rules.review_rotation,reviewHistory:history,reviewCount,amVocab:names(am.vocab).filter(w=>!names(am.cycle_vocab).includes(w)),amReview:[...names(am.review_vocab),...names(am.cycle_vocab)]};
  const longHistory=readLongHistory(index,a.date,read);
  // 12:00 extensive readings of the last 7 days count as passive appearances for the 3-day streak (ranking only).
  let passiveTexts=[];
  try{const {loadReadings,readingText}=require('./reading-review');
   passiveTexts=loadReadings(root).filter(r=>r&&r.date&&r.date<=a.date).map(r=>({date:r.date,text:readingText(r)}));}catch(e){passiveTexts=[]}
- const out=rank({...base,longHistory,passiveTexts,cycleCount:amCycleCount});
+ const out=rank({...base,longHistory,passiveTexts,cycleCount:amCycleCount,goalSkip:G.skip,goalFast:G.fast,goalBonus:G.bonus});
+ if(P)out.review_phase={active:true,counts:C,plan:RP.dayPlan(phase,a.date,RP.loadThemes(root)),goal_skipped:G.skip.size,goal_fast:G.fast.size};
  if(session==='am')out.review_cycle=out.review_cycle||{active:false,new_words_available:availNew};
  else out.review_cycle={active:pmCycle,new_words_available:availNew,review_target:pmCycle?reviewCount:null};
  if(out.review_cycle.active)out.review_cycle.new_words_available=availNew;
@@ -50,6 +54,7 @@ function main(argv){
   exclude:[...out.recommended_review,...((out.review_cycle&&out.review_cycle.cycle_words)||[]),...out.application_candidates.slice(0,3).map(x=>x.word),...base.amVocab,...base.amReview,...(out.avoid_in_text||[])]});
  // 2026-10-15: minimum woven per lesson (checked by check-recurrence.js before push) and words already overused in text.
  out.natural_recurrence.min_required=Number((nrCfg.min_per_lesson||{})[session])||0;
+ {const pm=RP.recurrenceMin(phase,a.date,session);if(pm!=null)out.natural_recurrence.min_required=pm;}
  const ov=nrCfg.overuse||{};
  out.overused_in_text=overusedInText({date:a.date,session,runtime,longHistory:textHistory,window:Number(ov.window_lessons)||6,max:Number(ov.max_lessons)||3});
  if(a.compare==='1'){const old=rank(base);out.compare_without_stale_bonus={recommended_review:old.recommended_review,only_new:out.recommended_review.filter(w=>!old.recommended_review.includes(w)),only_old:old.recommended_review.filter(w=>!out.recommended_review.includes(w))}}

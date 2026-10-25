@@ -11,6 +11,7 @@ const fs=require('node:fs');
 const crypto=require('node:crypto');
 const path=require('node:path');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
+const RP=require('./review-phase');
 const hash=x=>crypto.createHash('sha256').update(JSON.stringify(x)).digest('hex');
 const word=x=>String(Array.isArray(x)?x[0]:x||'').trim().toLowerCase();
 const words=x=>Array.isArray(x)?x.map(word).filter(Boolean):[];
@@ -24,7 +25,7 @@ const set=x=>new Set(words(x));
 const same=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
 const stamp=(row,session)=>row.date+' '+(session==='am'?'08:00':row.date<'2026-09-16'?'19:00':'18:00');
 
-function buildLessonContext({index,runtime,rules,load,sourceSha=''}) {
+function buildLessonContext({index,runtime,rules,load,sourceSha='',reviewPhase}) {
  requireIt(index&&Array.isArray(index.dates)&&runtime&&rules&&typeof load==='function','INPUT_INVALID','Requires index, runtime, rules and an actual lesson loader');
  requireIt(runtime.version===4&&runtime.rules_version===4&&rules.version===4&&runtime.stats?.master_unique===977,
    'RULE_RUNTIME_MISMATCH','Require version 4 and 977 primary master words');
@@ -42,6 +43,7 @@ function buildLessonContext({index,runtime,rules,load,sourceSha=''}) {
  requireIt(m&&dateOK(m[1]),'WATERMARK_INVALID','Unexpected lesson watermark');
  const targetSession=m[2]==='08:00'?'pm':'am';
  const targetDate=targetSession==='am'?datePlus(m[1],1):m[1];
+ const phase=reviewPhase===undefined?RP.load():reviewPhase,phaseOn=RP.on(phase,targetDate),phaseCounts=RP.counts(phase,targetDate);
  requireIt(targetDate>='2026-09-16','TARGET_INVALID','Only current 08:00/18:00 contracts are supported');
  const targetRow=rows.find(x=>x.date===targetDate);
  requireIt(!targetRow||targetRow[targetSession]!==true,'ALREADY_PUBLISHED','Target session already complete');
@@ -79,15 +81,18 @@ function buildLessonContext({index,runtime,rules,load,sourceSha=''}) {
  const history=fullHistory.map(h=>{
    requireIt(h&&dateOK(h.date)&&['am','pm'].includes(h.session),'HISTORY_INVALID','Completed history identity invalid');
    const core=h.session==='am'?words(h.review_vocab):words((h.vocab||[]).filter(v=>v?.source_group==='review').map(v=>v.word));
-   const taught=h.session==='am'?words((h.vocab||[]).map(v=>v?.word)):words(h.new_words);
-   requireIt(core.length>=0&&taught.length>0,'HISTORY_INVALID','Missing completed lesson vocabulary');
+   // Review-cycle AM cards (cycle_vocab) are old words, not new ones; a cycle PM may teach no new word at all
+   // (2026-10-25 fix: it used to stop here with HISTORY_INVALID). A lesson still needs word cards.
+   const cyc=new Set(words(h.cycle_vocab||[]));
+   const taught=h.session==='am'?words((h.vocab||[]).map(v=>v?.word)).filter(w=>!cyc.has(w)):words(h.new_words);
+   requireIt(core.length>=0&&(h.vocab||[]).length>0,'HISTORY_INVALID','Missing completed lesson vocabulary');
    return {date:h.date,session:h.session,review_core:core,new_words:taught};
  });
  const prior=history.find(x=>x.date===yesterday&&x.session==='pm')||null;
  const sameDayAm=targetSession==='pm'?load('data/daily/'+targetDate+'-am.json'):null;
  if(targetSession==='pm'){
    requireIt(sameDayAm&&sameDayAm.date===targetDate&&sameDayAm.session==='am'&&
-      sameDayAm.time==='08:00'&&sameDayAm.vocab?.length===10,'AM_PREREQUISITE_MISSING','Actual completed same-day AM missing');
+      sameDayAm.time==='08:00'&&(phaseOn?sameDayAm.vocab?.length>=phaseCounts.am_cards[0]&&sameDayAm.vocab?.length<=phaseCounts.am_cards[1]:sameDayAm.vocab?.length===10),'AM_PREREQUISITE_MISSING','Actual completed same-day AM missing');
    for(const v of sameDayAm.vocab)
      requireIt(!newAll.has(word(v.word)),'AM_SYNC_STALE','Today AM taught new word remains in new_pool: '+v.word);
  }

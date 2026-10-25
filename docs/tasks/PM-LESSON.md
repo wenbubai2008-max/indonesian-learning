@@ -41,6 +41,8 @@ PM 专用的运行要求：
 
 并读取：`data/daily/index.json`、`data/learning-runtime.json`、`data/lesson-context.json`、`data/daily/YYYY-MM-DD-am.json`（当天正式早课）、前一天正式 PM 课程、最近 7 天已经完成的 AM/PM 核心复习记录、最近一节正式 PM 课程（作为 JSON 结构参考，只参考结构，不复制其单词、例句和答案）。
 
+**复习阶段开关（2026-10-25 起放入，默认关闭）**：读完上面的资料后运行 `node .github/scripts/review-phase.js --date D --session pm`。输出 `active=false`（现在的状态）时照本说明书执行，不读 `docs/tasks/REVIEW-PHASE.md`；只有输出 `active=true` 时，才按 `docs/tasks/REVIEW-PHASE.md` 覆盖本说明书的词卡数量、课程结构和复现最低数，其余照旧。
+
 日期 YYYY-MM-DD 按 Asia/Jakarta 当日自动确定，不得写死。
 
 必须确认：

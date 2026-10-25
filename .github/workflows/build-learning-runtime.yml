@@ -50,6 +50,11 @@ on:
       - '.github/scripts/test-guided-lesson.js'
       - 'data/lesson-end-recall.js'
       - '.github/scripts/test-review-cycle.js'
+      - '.github/scripts/review-phase.js'
+      - '.github/scripts/validate-lesson-candidate.js'
+      - '.github/scripts/test-review-phase.js'
+      - 'data/review-phase.json'
+      - 'data/themes.json'
       - '.github/scripts/review-rotation.js'
       - '.github/scripts/rank-review-candidates.js'
       - 'data/training-sync-client.js'
@@ -202,6 +207,7 @@ jobs:
           node --check data/guided-lesson.js
           node .github/scripts/test-guided-lesson.js
           node .github/scripts/test-review-cycle.js
+          node .github/scripts/test-review-phase.js
           node --check .github/scripts/build-vocab-profile.js
           node --check .github/scripts/write-vocab-profile-snapshot.js
           node --check .github/scripts/test-vocab-profile-snapshot.js

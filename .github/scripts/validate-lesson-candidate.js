@@ -2,6 +2,7 @@
 'use strict';
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
 const {checkCore,checkPm,checkExposure}=require('./review-rotation');
+const RP=require('./review-phase');
 
 /** Only completed core-review exposures count; a PM application is not another core review. */
 function collectReviewHistory(index,targetDate,targetSession,load){
@@ -32,7 +33,7 @@ const FOCUS_REQUIRED_FROM="2026-10-18 18:00"; // first required lesson (that mor
 const JARGON_FROM="2026-10-23";
 const JARGON=/runtime|\b[a-z]+_pool\b|source_group|is_oral_new|\bis_new\b|exposure_ledger|natural_recurrence|review_cycle|cycle_vocab|review_vocab|lesson_focus|validator|（hard）|\(hard\)|hard\s*词|hard=|\bapplication\b/i;
 const JARGON_SKIP=new Set(["en","source_group","session","write_status","date","time","day","group"]);
-const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm,reviewHistory,focusRequiredFrom,jargonFrom}) {
+const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm,reviewHistory,focusRequiredFrom,jargonFrom,reviewPhase,themes}) {
   const errors=[], add=(code,detail)=>errors.push({code,detail});
   const check=(c,code,detail)=>{if(!c)add(code,detail);return !!c};
   const has=(o,k)=>Object.prototype.hasOwnProperty.call(o||{},k);
@@ -47,6 +48,9 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
   if(!index||!Array.isArray(index.dates)||!runtime||!rules)return {ok:false,errors:[{code:"INPUT_INVALID",detail:"Index, runtime and rules required"}]};
   const date=expectedDate, session=expectedSession,time=session==="am"?"08:00":"18:00";
   if(!validDate(date)||!["am","pm"].includes(session))return {ok:false,errors:[{code:"TARGET_INVALID",detail:"Explicit date/session required"}]};
+  // Review phase (2026-10-25, dormant until the learner switches data/review-phase.json on): P=false keeps every
+  // count and rule below exactly as before; C then equals the old hard-coded numbers.
+  const phase=reviewPhase===undefined?RP.load():reviewPhase,P=RP.on(phase,date),C=RP.counts(phase,date);
   check(rules.version===4&&runtime.version===4&&runtime.rules_version===4&&runtime.stats?.master_unique===977,"RULE_RUNTIME_MISMATCH","Rules/runtime v4, 977 primary master required");
   check(Number.isFinite(Date.parse(runtime.generated_at||"")),"RUNTIME_INVALID","Runtime generated_at invalid");
   const seen=new Set(),stamps=[];
@@ -77,7 +81,8 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     if(str(v?.root))check(str(v.root_cn),"ROOT_CN_MISSING","vocab["+i+"] root_cn");
     check(typeof v?.is_oral_new==="boolean","VOCAB_ORAL_FLAG","vocab["+i+"] flag");
   });
-  check(range(count(lesson.reading?.text),80,120)&&str(lesson.reading?.cn),"READING_INVALID","80-120 Indonesian words plus Chinese required");
+  {const rd=session==="am"?C.am_reading:RP.LEGACY.am_reading;
+  check(range(count(lesson.reading?.text),rd[0],rd[1])&&str(lesson.reading?.cn),"READING_INVALID",rd[0]+"-"+rd[1]+" Indonesian words plus Chinese required");}
   const choice=(q,i,label)=>{
     const opts=Array.isArray(q?.options)?q.options:[],a=q?.answer_index;
     const valid=opts.length>=2&&opts.every(str)&&new Set(opts.map(norm)).size===opts.length&&Number.isInteger(a)&&a>=0&&a<opts.length;
@@ -90,7 +95,9 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
   const amNewWords=new Set(ws(sameDayAm?.vocab).filter(w=>!amCycleWords.has(w))),amReviewWords=new Set([...ws(sameDayAm?.review_vocab),...amCycleWords]);
   const amWords=new Set([...amNewWords,...amReviewWords]);
   if(session==="am"){
-    check(vocab.length===10,"AM_CORE_COUNT","Exactly 10 new words required");
+    if(!P)check(vocab.length===10,"AM_CORE_COUNT","Exactly 10 new words required");
+    else check(range(vocab.length,C.am_cards[0],C.am_cards[1]),"AM_CORE_COUNT","Review phase: "+C.am_cards.join("-")+" word cards");
+    const N=P?vocab.length:10; // cards to fill (review phase: whatever the lesson has within its range)
     const prevDate=new Date(Date.parse(date+"T00:00:00Z")-86400000).toISOString().slice(0,10);
     const prevNew=new Set(previousPm?.write_status==="lesson_complete"?ws(previousPm.new_words):[]);
     if(previousPm){
@@ -101,9 +108,9 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     // Review cycle (2026-10-14, user decision): when fewer than 10 legal new words remain, the AM teaches every remaining
     // new word and fills the rest of its 10 cards with review-cycle words, listed in root cycle_vocab (all from review_pool).
     const availNew=[...newPool].filter(w=>!prevNew.has(w)&&!unclassified.has(w)&&(dont.has(w)||fuzzy.has(w)));
-    const amCycle=availNew.length<10,cycleVocab=ws(lesson.cycle_vocab);
+    const amCycle=availNew.length<N,cycleVocab=ws(lesson.cycle_vocab);
     const newPart=amCycle?vw.filter(w=>newPool.has(w)):vw;
-    if(!amCycle)check(!has(lesson,"cycle_vocab")||cycleVocab.length===0,"CYCLE_NOT_ACTIVE","cycle_vocab is only allowed when fewer than 10 legal new words remain ("+availNew.length+" available)");
+    if(!amCycle)check(!has(lesson,"cycle_vocab")||cycleVocab.length===0,"CYCLE_NOT_ACTIVE","cycle_vocab is only allowed when fewer than "+N+" legal new words remain ("+availNew.length+" available)");
     else{
       const cyc=vw.filter(w=>!newPool.has(w));
       check(availNew.every(w=>vw.includes(w)),"CYCLE_NEW_REQUIRED","Review cycle: teach every remaining new word first; missing "+availNew.filter(w=>!vw.includes(w)).join(", "));
@@ -112,13 +119,13 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     }
     newPart.forEach(w=>{pool(w,newPool,"NEW_WORD_INELIGIBLE");check(dont.has(w)||fuzzy.has(w),"NEW_MEMORY_POOL_INVALID",w);check(!unclassified.has(w),"UNCLASSIFIED_NEW_WORD",w);check(!prevNew.has(w),"CROSS_DAY_NEW_REPEAT",w)});
     if(!amCycle){
-      if(availDont.length>=10)check(vw.every(w=>dont.has(w)),"AM_DONT_PRIORITY","10 available dont -> choose 10 dont");
+      if(availDont.length>=N)check(vw.every(w=>dont.has(w)),"AM_DONT_PRIORITY",N+" available dont -> choose "+N+" dont");
       else check(vw.filter(w=>dont.has(w)).length===availDont.length,"AM_DONT_PRIORITY","Exhaust dont before fuzzy fallback");
     }
     const oralEligible=[...oral].filter(w=>newPool.has(w)&&!prevNew.has(w));
     const oralDontEligible=oralEligible.filter(w=>dont.has(w));
     const oralFuzzyEligible=oralEligible.filter(w=>fuzzy.has(w));
-    const dontSlots=Math.min(10,availDont.length),fuzzySlots=10-dontSlots;
+    const dontSlots=Math.min(N,availDont.length),fuzzySlots=N-dontSlots;
     // Oral priority must never require a fuzzy word when AM's dont-first contract forbids it.
     const feasibleOral=Math.min(dontSlots,oralDontEligible.length)+Math.min(fuzzySlots,oralFuzzyEligible.length);
     const marked=vocab.filter(v=>v?.is_oral_new).map(word);
@@ -139,6 +146,8 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     // 2026-10-16 (user decision): optional structured copy of the same three review points, for the review cards on the
     // page. Absent = fine (the page shows the three strings). Present = must be well formed; every recall answer must be
     // one of today's words, so the page never shows an answer that was not taught. On failure the generator removes it.
+    // Review phase AM = 表达难点课: the easily confused words are shown as contrast cards (review_cards.contrasts).
+    if(P)check(lesson.review_cards!==undefined,"PHASE_AM_CONTRAST_MISSING","Review phase: review_cards with contrasts (1-6 groups) required");
     if(lesson.review_cards!==undefined){
       const rc=lesson.review_cards,pair=x=>x&&str(x.id)&&str(x.cn),today=new Set(vocab.map(word).concat(rw,(Array.isArray(lesson.cycle_vocab)?lesson.cycle_vocab:[]).map(norm)));
       const recall=rc&&rc.recall,contrasts=rc&&rc.contrasts,apply=rc&&rc.apply,frames=rc&&rc.frames;
@@ -151,17 +160,19 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     }
   } else {
     check(lesson.write_status==="lesson_complete","PM_STATUS_INVALID","PM status incomplete");
-    check(range(vocab.length,10,12),"PM_CORE_COUNT","10-12 core words required");
+    check(range(vocab.length,C.pm_core[0],C.pm_core[1]),"PM_CORE_COUNT",C.pm_core.join("-")+" core words required");
     const groups={new:vocab.filter(v=>v?.source_group==="new"),review:vocab.filter(v=>v?.source_group==="review"),application:vocab.filter(v=>v?.source_group==="application")};
     check(vocab.every(v=>["new","review","application"].includes(v?.source_group)),"PM_GROUP_INVALID","Invalid PM source_group");
     // Review cycle (2026-10-14): fewer than 3 legal new words left for tonight -> teach all of them (0-2), and the review
     // group grows (4-9) so the lesson keeps its 10-12 core cards.
     const availNewPm=[...newPool].filter(w=>!amWords.has(w)&&!unclassified.has(w)&&(dont.has(w)||fuzzy.has(w)));
-    if(availNewPm.length>=3)check(range(groups.new.length,3,4)&&range(groups.review.length,4,6)&&range(groups.application.length,2,3),"PM_GROUP_COUNT","3-4 new, 4-6 review, 2-3 application");
+    if(P){const nn=Math.min(availNewPm.length,C.pm_new[1]);
+      check(groups.new.length===nn&&range(groups.review.length,C.pm_review[0],C.pm_review[1])&&range(groups.application.length,C.pm_application[0],C.pm_application[1]),"PM_GROUP_COUNT","Review phase: "+nn+" new, "+C.pm_review.join("-")+" review, "+C.pm_application.join("-")+" application");}
+    else if(availNewPm.length>=3)check(range(groups.new.length,3,4)&&range(groups.review.length,4,6)&&range(groups.application.length,2,3),"PM_GROUP_COUNT","3-4 new, 4-6 review, 2-3 application");
     else check(groups.new.length===availNewPm.length&&range(groups.review.length,4,9)&&range(groups.application.length,2,3),"PM_GROUP_COUNT","Review cycle: all "+availNewPm.length+" remaining new words, 4-9 review, 2-3 application");
     const actualNew=ws(groups.new),declared=ws(lesson.new_words);
     check(declared.length===actualNew.length&&JSON.stringify([...declared].sort())===JSON.stringify([...actualNew].sort()),"PM_NEW_WORDS_MISMATCH","new_words differs from new vocab group");
-    check(existing?.am===true&&sameDayAm?.date===date&&sameDayAm?.session==="am"&&sameDayAm?.time==="08:00"&&sameDayAm?.vocab?.length===10,"AM_PREREQUISITE_MISSING","Published same-day AM must exist");
+    check(existing?.am===true&&sameDayAm?.date===date&&sameDayAm?.session==="am"&&sameDayAm?.time==="08:00"&&(P?range(sameDayAm?.vocab?.length,C.am_cards[0],C.am_cards[1]):sameDayAm?.vocab?.length===10),"AM_PREREQUISITE_MISSING","Published same-day AM must exist");
     vocab.forEach(v=>{
       const w=word(v),g=v?.source_group;
       check(typeof v?.is_new==="boolean"&&v.is_new===(g==="new"),"PM_NEW_FLAG_INVALID",w);
@@ -195,7 +206,12 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     }
     const pmEligibleOral=[...oral].some(w=>newPool.has(w)&&!amWords.has(w)&&(dont.has(w)||fuzzy.has(w)));
     if(pmEligibleOral)check(groups.new.some(v=>v.is_oral_new),"PM_ORAL_COUNT","Use eligible oral new word");
-    check(lesson.dialogue&&!Array.isArray(lesson.dialogue)&&str(lesson.dialogue.title)&&Array.isArray(lesson.dialogue.lines)&&lesson.dialogue.lines.length>=4&&lesson.dialogue.lines.every(x=>str(x?.speaker)&&str(x?.id)&&str(x?.cn)),"PM_DIALOGUE_INVALID","Dialogue object with 4+ bilingual lines");
+    check(lesson.dialogue&&!Array.isArray(lesson.dialogue)&&str(lesson.dialogue.title)&&Array.isArray(lesson.dialogue.lines)&&range(lesson.dialogue.lines.length,C.pm_dialogue[0],C.pm_dialogue[1])&&lesson.dialogue.lines.every(x=>str(x?.speaker)&&str(x?.id)&&str(x?.cn)),"PM_DIALOGUE_INVALID",P?"Review phase: dialogue with "+C.pm_dialogue.join("-")+" bilingual lines":"Dialogue object with 4+ bilingual lines");
+    // Review phase PM = 任务课: the dialogue has one turn where the situation changes (dialogue.twist = its line index),
+    // and at least one rewrite task (kind "twist") asks the learner to handle that change.
+    if(P){const L=Array.isArray(lesson.dialogue?.lines)?lesson.dialogue.lines.length:0,tw=lesson.dialogue?.twist;
+      check(Number.isInteger(tw)&&tw>=1&&tw<L,"PHASE_PM_TWIST","Review phase: dialogue.twist must be the index (1.."+(L-1)+") of the line where the situation changes");
+      check(Array.isArray(lesson.rewrite)&&lesson.rewrite.some(x=>x&&x.kind==="twist"),"PHASE_PM_TWIST","Review phase: one rewrite task with kind \"twist\" (respond to the change)");}
     check(!has(lesson,"rewrite_application"),"PM_LEGACY_REWRITE","Use root rewrite");
     check(Array.isArray(lesson.rewrite)&&range(lesson.rewrite.length,3,4)&&lesson.rewrite.every(x=>["task","reference_answer","reference_cn"].every(k=>str(x?.[k]))),"PM_REWRITE_INVALID","3-4 bilingual rewrite tasks required");
     const test=lesson.daily_test,qs=Array.isArray(test?.questions)?test.questions:[];
@@ -210,6 +226,24 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     check(lesson.review&&!Array.isArray(lesson.review)&&str(lesson.review.title)&&Array.isArray(lesson.review.steps)&&lesson.review.steps.length>0&&lesson.review.steps.every(str),"PM_FINAL_REVIEW_INVALID","Review {title,steps[]}");
   }
 
+  // Review phase: every lesson names its theme and day role, which must match data/themes.json for this date.
+  if(P){
+    const plan=RP.dayPlan(phase,date,themes===undefined?RP.loadThemes():themes);
+    const ph=lesson.phase;
+    check(ph&&typeof ph==="object"&&!Array.isArray(ph)&&str(ph.theme_id)&&str(ph.day_role),"PHASE_TAG_MISSING","Review phase: root phase {theme_id, day_role} required");
+    if(plan&&ph)check(ph.theme_id===plan.theme_id&&ph.day_role===plan.day_role,"PHASE_TAG_MISMATCH","Review phase: expected theme "+plan.theme_id+" / "+plan.day_role+" for "+date);
+    if(plan&&plan.day_role==="weekly_test"&&session==="pm"){
+      // Sunday PM test covers this theme week: 6-12 week words, each taught or reviewed in a lesson since Monday, each tested.
+      const weekStart=new Date(Date.parse(date+"T00:00:00Z")-6*86400000).toISOString().slice(0,10);
+      const weekSet=new Set();
+      for(const h of [...(Array.isArray(reviewHistory)?reviewHistory:[]),sameDayAm].filter(Boolean))
+        if(h.date>=weekStart&&h.date<=date)[...ws(h.vocab),...ws(h.review_vocab),...ws(h.cycle_vocab)].forEach(w=>weekSet.add(w));
+      const ww=ws(lesson.daily_test?.week_words),qs=Array.isArray(lesson.daily_test?.questions)?lesson.daily_test.questions:[];
+      const qtext=norm(JSON.stringify(qs));
+      check(range(ww.length,6,12)&&new Set(ww).size===ww.length,"PHASE_WEEKLY_TEST","Weekly test: daily_test.week_words lists 6-12 distinct words");
+      ww.forEach(w=>{check(weekSet.has(w),"PHASE_WEEKLY_TEST","Weekly test word not in this week's lessons: "+w);check(qtext.includes(w),"PHASE_WEEKLY_TEST","Weekly test word is not tested by any question: "+w)});
+    }
+  }
   // Today's focus: chosen from this lesson only; it adds no words and no tasks.
   {
     const lf=lesson.lesson_focus,from=focusRequiredFrom||FOCUS_REQUIRED_FROM;
