@@ -37,6 +37,10 @@ on:
       - 'data/teach/**'
       - '.github/scripts/validate-teach.js'
       - '.github/scripts/test-deep-teach.js'
+      - '.github/scripts/suggest-vocab-goals.js'
+      - '.github/scripts/test-ability-observation.js'
+      - 'data/vocab-goals-review.json'
+      - 'data/ability-observation.js'
       - '.github/scripts/check-teach.js'
       - '.github/scripts/test-teach-release.js'
       - '.github/workflows/sync-daily-vocab.yml'
@@ -188,6 +192,9 @@ jobs:
           node --check .github/scripts/check-teach.js
           node --check .github/scripts/test-teach-release.js
           node .github/scripts/test-teach-release.js
+          node --check data/ability-observation.js
+          node --check .github/scripts/suggest-vocab-goals.js
+          node .github/scripts/test-ability-observation.js
           node --check data/guided-lesson.js
           node .github/scripts/test-guided-lesson.js
           node .github/scripts/test-review-cycle.js
@@ -207,6 +214,8 @@ jobs:
           node .github/scripts/build-lesson-context.js --check
           node .github/scripts/build-vocab-profile.js
           node .github/scripts/write-vocab-profile-snapshot.js
+          # 2026-10-25 phase-1 observation: goal suggestions (read by nothing that schedules or generates).
+          node .github/scripts/suggest-vocab-goals.js
           incident_phase='regression_guard'; incident_category='validation'
           node .github/scripts/regression-guard.js
           node .github/scripts/vocab-ui-regression-guard.js
@@ -216,7 +225,7 @@ jobs:
               continue
             fi
             incident_phase='prepare_commit'; incident_category='git_write'
-            git add index.html data/learning-runtime.json data/lesson-context.json data/pending-vocab.json data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json
+            git add index.html data/learning-runtime.json data/lesson-context.json data/pending-vocab.json data/vocab-profile.json data/vocab-profile-history.json data/master-vocab-secondary.js data/master-handoff-state.json data/learning-pool-audit.json data/bipa-level-a1-gz.js data/bipa-level-a2-gz.js data/bipa-level-b1-gz.js data/bipa-level-b2-gz.js data/bipa-level-manifest.json data/vocab-goals-suggested.json
             if git diff --cached --quiet; then
               echo 'Build already current; no empty commit.'
               exit 0

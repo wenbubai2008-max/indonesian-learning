@@ -38,6 +38,7 @@ const repo=path.resolve(__dirname,'..','..');
   }
   assert.ok(laptop.read('indo_quick_practice_state').Tunda&&!laptop.read('indo_quick_practice_state').tunda,'local key spelling is kept');
   assert.ok(laptop.events.includes('quick-practice-updated'),'modules are told to refresh after a pull');
+  assert.ok(Date.parse(laptop.read('indo_training_sync_meta_v1').last_pull)>0,'a successful pull is time-stamped (ability panel completeness, 2026-10-25)');
   const before=JSON.parse(kv.get('training-state-v1')).modes.quick.tunda.review_level;
   laptop.write('indo_quick_practice_state',Object.assign(laptop.read('indo_quick_practice_state'),{Tunda:{last:9000,review_level:3}}));
   await laptop.api.run();await phone.api.run();

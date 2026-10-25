@@ -773,6 +773,13 @@ try {
     const lq=read('docs/LESSON-QUALITY.md'),vlc=read('.github/scripts/validate-lesson-candidate.js');
     okNew(['只把自然放得进去的词写进阅读','情节合理性检查','近义辨析不绝对化','题干不给答案的中文','至少 1 道是完整情境判断','不让系统用语出现在课程里'].every(m=>lq.includes(m)),'LESSON-QUALITY keeps the 2026-10-22 review rules');
     okNew(vlc.includes('"LEARNER_JARGON"')&&vlc.includes('const JARGON_FROM="2026-10-23"')&&read('.github/scripts/validate-teach.js').includes('TEACH_JARGON'),'validators refuse internal system words in lessons (from 2026-10-23) and deep-teach files');
+    // §38 (2026-10-25, user-approved phase 1): observation only. The ability panel is read-only and the goal suggestions
+    // are read by nothing that selects words, schedules reviews, judges mastery or generates/publishes content.
+    const obs=fs.existsSync(rel('data/ability-observation.js'))?read('data/ability-observation.js'):'';
+    okNew(obs.length>0&&!/setItem|removeItem|recordLessonWrong|markMastered|markWeak|removeReasons|recordPractice|markAnswer|requestVerification|\.round\(/.test(obs)&&indexHtml.includes('data/ability-observation.js?v='),'ability observation panel exists, is loaded, and writes nothing');
+    const consumers=['.github/scripts/build-learning-runtime.js','.github/scripts/rank-review-candidates.js','.github/scripts/review-rotation.js','.github/scripts/validate-lesson-candidate.js','.github/scripts/plan-lesson-publication.js','.github/scripts/build-lesson-context.js','.github/scripts/reading-review.js','.github/scripts/check-recurrence.js','.github/scripts/publish-extensive-reading-candidate.js','data/vocab-study-coach.js','data/automation-training.js','data/home-learning-upgrade-v2.js','data/listening-word-training.js','data/lesson-end-recall.js','data/weakness-pool.js','docs/tasks/AM-LESSON.md','docs/tasks/PM-LESSON.md','docs/tasks/EXTENSIVE-READING.md','docs/tasks/DEEP-TEACH.md','docs/tasks/COMMON.md'];
+    const leak=consumers.filter(f=>fs.existsSync(rel(f))&&/vocab-goals/.test(read(f)));
+    okNew(leak.length===0,'goal suggestions are not read by selection, scheduling, mastery or generation'+(leak.length?' (found in: '+leak.join(', ')+')':''));
   }
 
 } catch (e) {

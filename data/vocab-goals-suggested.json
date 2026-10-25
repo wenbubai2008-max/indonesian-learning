@@ -1,0 +1,8581 @@
+{
+ "version": 1,
+ "observation_only": true,
+ "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
+ "counts": {
+  "all": {
+   "use": 804,
+   "recognize": 104,
+   "unsure": 20,
+   "fast": 130
+  },
+  "active": {
+   "use": 550,
+   "recognize": 89,
+   "unsure": 18,
+   "fast": 56
+  }
+ },
+ "words": {
+  "tingkat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 488 位"
+   ]
+  },
+  "meningkat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "meningkatkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "peningkatan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ganggu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "mengganggu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 908 位"
+   ]
+  },
+  "pilih": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "pilihan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 336 位"
+   ]
+  },
+  "untung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 879 位"
+   ]
+  },
+  "keuntungan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 532 位"
+   ]
+  },
+  "menghadapi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "mengurangi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 652 位"
+   ]
+  },
+  "memilih": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 319 位"
+   ]
+  },
+  "kesalahan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "menyadari": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "berkembang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kemampuan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "berbeda": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 560 位"
+   ]
+  },
+  "mencapai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 609 位"
+   ]
+  },
+  "mendukung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 356 位"
+   ]
+  },
+  "menghindari": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 793 位"
+   ]
+  },
+  "menyelesaikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 666 位"
+   ]
+  },
+  "mempertimbangkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "memastikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "menerima": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 593 位"
+   ]
+  },
+  "menolak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "menyesuaikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kebiasaan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "menunggu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 610 位"
+   ]
+  },
+  "menghubungi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "mengirimkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "meminta": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 558 位"
+   ]
+  },
+  "memberikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "menjelaskan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 600 位"
+   ]
+  },
+  "menyampaikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "mengingatkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "terlambat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "tersedia": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 808 位"
+   ]
+  },
+  "kayak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 1 位"
+   ]
+  },
+  "soalnya": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 346 位"
+   ]
+  },
+  "makanya": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "sempat": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（时间）",
+    "977 主库第 556 位"
+   ]
+  },
+  "keburu": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 683 位"
+   ]
+  },
+  "mending": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 858 位"
+   ]
+  },
+  "ribet": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 904 位"
+   ]
+  },
+  "nyebelin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 441 位"
+   ]
+  },
+  "terserah": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "nggak apa-apa": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "bentar": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "lumayan": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 588 位"
+   ]
+  },
+  "ternyata": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出"
+   ]
+  },
+  "malah": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 846 位"
+   ]
+  },
+  "padahal": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 535 位"
+   ]
+  },
+  "cuma": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "langsung": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngobrol": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "ngerepotin": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 907 位"
+   ]
+  },
+  "ketinggalan": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 948 位"
+   ]
+  },
+  "kabarin": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "ketemu": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "mampir": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 947 位"
+   ]
+  },
+  "buru-buru": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 678 位"
+   ]
+  },
+  "sengaja": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出"
+   ]
+  },
+  "sekalian": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 354 位"
+   ]
+  },
+  "kebetulan": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 100 位"
+   ]
+  },
+  "nyari": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 819 位"
+   ]
+  },
+  "cocok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 288 位"
+   ]
+  },
+  "bawain": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kepikiran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 418 位"
+   ]
+  },
+  "ngerasa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyangka": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "beres": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 912 位"
+   ]
+  },
+  "telanjur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "bakal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "giliran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 946 位"
+   ]
+  },
+  "janjian": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nongkrong": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyusul": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "pantes": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kebagian": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kehabisan": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ketiduran": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngantuk": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "penasaran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 62 位"
+   ]
+  },
+  "ngaret": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 707 位"
+   ]
+  },
+  "mager": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "bingung": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出"
+   ]
+  },
+  "kebanyakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 91 位"
+   ]
+  },
+  "terjadi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "berubah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "memutuskan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 214 位"
+   ]
+  },
+  "mengalami": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "mencoba": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 298 位"
+   ]
+  },
+  "menurut": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "walaupun": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 342 位"
+   ]
+  },
+  "mengubah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 702 位"
+   ]
+  },
+  "perubahan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 743 位"
+   ]
+  },
+  "mengatasi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "berusaha": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / S"
+   ]
+  },
+  "berencana": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "terbiasa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "terutama": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 82 位"
+   ]
+  },
+  "sementara": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 2 位"
+   ]
+  },
+  "setidaknya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 655 位"
+   ]
+  },
+  "selesai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "memerlukan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "menyiapkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 172 位"
+   ]
+  },
+  "mengirim": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 701 位"
+   ]
+  },
+  "memeriksa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 456 位"
+   ]
+  },
+  "melanjutkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "segera": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 16 位"
+   ]
+  },
+  "proses": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 555 位"
+   ]
+  },
+  "kayaknya": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "nggak jadi": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "mendadak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ada urusan": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nggak sempat": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "telat": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "gimana kalau": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "kabari aja": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "jadi": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "aja": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "kan": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "sih": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "kok": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "dong": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "nih": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "deh": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "emang": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "terus": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（连接词）"
+   ]
+  },
+  "biar": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 848 位"
+   ]
+  },
+  "tolong": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出"
+   ]
+  },
+  "minta": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "tanyain": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "cek": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "ingetin": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "nunggu": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "belum sempat": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "sebentar / bentar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nanti dulu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nggak usah": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "heran": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 614 位"
+   ]
+  },
+  "harusnya": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyaris": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "terpaksa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "menentukan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 798 位"
+   ]
+  },
+  "menangani": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "tergantung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 236 位"
+   ]
+  },
+  "seharusnya": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 359 位"
+   ]
+  },
+  "terlanjur": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（时间）"
+   ]
+  },
+  "macet": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "nyasar": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 802 位"
+   ]
+  },
+  "nganter": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "jemput": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "parkir": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "saldo": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "rekening": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 723 位"
+   ]
+  },
+  "tagihan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 806 位"
+   ]
+  },
+  "hemat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "boros": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 807 位"
+   ]
+  },
+  "pengeluaran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 884 位"
+   ]
+  },
+  "pemasukan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "anggaran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "biaya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 303 位"
+   ]
+  },
+  "cicilan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "prioritas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "mengatur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "membatasi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "menunda": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "memperkirakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "keperluan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "cadangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kendaraan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 577 位"
+   ]
+  },
+  "belok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "lurus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 803 位"
+   ]
+  },
+  "putar balik": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 804 位"
+   ]
+  },
+  "tunai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "kembalian": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "transfer": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "utang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 805 位"
+   ]
+  },
+  "pinjam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "stok": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "生活或工作常用：要能说出来"
+   ]
+  },
+  "akhirnya": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "sebenarnya": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 553 位"
+   ]
+  },
+  "justru": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "meskipun": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 64 位"
+   ]
+  },
+  "tetap": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "bahkan": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 854 位"
+   ]
+  },
+  "berarti": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 42 位"
+   ]
+  },
+  "termasuk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 15 位"
+   ]
+  },
+  "menganggap": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "memahami": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 668 位"
+   ]
+  },
+  "menjaga": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 79 位"
+   ]
+  },
+  "kemungkinan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "jadwal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "batal": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "lanjut": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "izin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 494 位"
+   ]
+  },
+  "cuti": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "lembur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "urusan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngurus": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 910 位"
+   ]
+  },
+  "ngejar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "dadakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kebuang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "beresin": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 911 位"
+   ]
+  },
+  "ngabarin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "sempetin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "keteteran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kepending": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngejar deadline": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "urusan dadakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "tunda": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kerjaan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngerjain": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyatet": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyiapin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "fokus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "setuju": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 365 位"
+   ]
+  },
+  "ngeluh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "masukan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "rapihin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "masuk akal": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "keberatan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "sepakat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "tergantung situasinya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kurang cocok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nggak masalah": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "mepet": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kelewatan": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 949 位"
+   ]
+  },
+  "nyambung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kepake": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ketukar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kebaca": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kebayang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngikutin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "berantakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 816 位"
+   ]
+  },
+  "beneran": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kerjaan numpuk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "cobain": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "cukup": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出"
+   ]
+  },
+  "kurang": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出"
+   ]
+  },
+  "hampir": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 562 位"
+   ]
+  },
+  "sekitar": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出"
+   ]
+  },
+  "habis": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出"
+   ]
+  },
+  "pesan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "tambah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "diskon": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "promo": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "nggak sengaja": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）"
+   ]
+  },
+  "nggak heran": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "bayar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "murah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 566 位"
+   ]
+  },
+  "mahal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 328 位"
+   ]
+  },
+  "tawar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "bungkus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "porsi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "rasa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": []
+  },
+  "naik": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 269 位"
+   ]
+  },
+  "turun": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 561 位"
+   ]
+  },
+  "sampai": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出"
+   ]
+  },
+  "daripada": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 318 位"
+   ]
+  },
+  "ujung-ujungnya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 718 位"
+   ]
+  },
+  "nggak worth it": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "seenggaknya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "sekadar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 178 位"
+   ]
+  },
+  "sayang kalau": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "patungan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nombok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngirit": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kemahalan": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kewalahan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngulur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngandelin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nggak enakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nanggung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nggak tega": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kepotong": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngingetin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "asal jangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ketahuan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kepepet": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "keduluan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kecolongan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyangkut": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyicil": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyelip": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngebut": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngurusin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kebawa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngerembet": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ketutup": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nahan dulu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngelarin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ketumpuk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ketiban": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kecipratan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngilang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngedrop": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyusahin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngeribetin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kebablasan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyantai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 174 位"
+   ]
+  },
+  "kebentur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "keganggu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "serba salah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kejebak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "molor": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nentuin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ketuker": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngepasin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "bentrok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "mundurin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "majuin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyempetin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kesiangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ketunda": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nggak kepegang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kelabakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngejar waktu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kecapean": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nangkep": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kelewat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngobrolin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kelepasan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyelipin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngeduluin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngeh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyimak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyeletuk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngegas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "sungkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ceplas-ceplos": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "salah tingkah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngotot": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ngeles": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyindir": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nyinggung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "nimpalin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kepancing": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "canggung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ganjel": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "salah paham": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "baper": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 672 位"
+   ]
+  },
+  "keputusan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 211 位"
+   ]
+  },
+  "kesempatan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 215 位"
+   ]
+  },
+  "sikap": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 755 位"
+   ]
+  },
+  "layak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 515 位"
+   ]
+  },
+  "niat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 512 位"
+   ]
+  },
+  "lengkap": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 487 位"
+   ]
+  },
+  "mampu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 58 位"
+   ]
+  },
+  "khawatir": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 246 位"
+   ]
+  },
+  "berani": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 50 位"
+   ]
+  },
+  "tertentu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 232 位"
+   ]
+  },
+  "intinya": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 254 位"
+   ]
+  },
+  "pokoknya": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 767 位"
+   ]
+  },
+  "bertanggung jawab": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 143 位"
+   ]
+  },
+  "hasil": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 284 位"
+   ]
+  },
+  "alasan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 299 位"
+   ]
+  },
+  "bukti": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 618 位"
+   ]
+  },
+  "sebelumnya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 539 位"
+   ]
+  },
+  "berbagai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 8 位"
+   ]
+  },
+  "kegiatan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 330 位"
+   ]
+  },
+  "yakin": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 602 位"
+   ]
+  },
+  "khusus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 596 位"
+   ]
+  },
+  "pribadi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 14 位"
+   ]
+  },
+  "anggota": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 22 位"
+   ]
+  },
+  "selanjutnya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 603 位"
+   ]
+  },
+  "pihak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 6 位"
+   ]
+  },
+  "mantap": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 574 位"
+   ]
+  },
+  "susah": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 313 位"
+   ]
+  },
+  "sesuai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 4 位"
+   ]
+  },
+  "solusi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 245 位"
+   ]
+  },
+  "misalnya": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 228 位"
+   ]
+  },
+  "antar": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 132 位"
+   ]
+  },
+  "menarik": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 18 位"
+   ]
+  },
+  "umum": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 552 位"
+   ]
+  },
+  "muncul": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 60 位"
+   ]
+  },
+  "nyata": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 656 位"
+   ]
+  },
+  "sebaiknya": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 660 位"
+   ]
+  },
+  "tanah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 11 位"
+   ]
+  },
+  "arah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 25 位"
+   ]
+  },
+  "butuh": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 65 位"
+   ]
+  },
+  "barusan": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 139 位"
+   ]
+  },
+  "ketua": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 9 位"
+   ]
+  },
+  "perjalanan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 24 位"
+   ]
+  },
+  "mendapatkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 27 位"
+   ]
+  },
+  "jenis": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 30 位"
+   ]
+  },
+  "acara": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 41 位"
+   ]
+  },
+  "pengalaman": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 75 位"
+   ]
+  },
+  "menemukan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 81 位"
+   ]
+  },
+  "membutuhkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 116 位"
+   ]
+  },
+  "kadang": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 812 位"
+   ]
+  },
+  "benerin": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 818 位"
+   ]
+  },
+  "pusat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 39 位"
+   ]
+  },
+  "mengaku": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 45 位"
+   ]
+  },
+  "penuh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 46 位"
+   ]
+  },
+  "colok": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 823 位"
+   ]
+  },
+  "mudah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 13 位"
+   ]
+  },
+  "sedangkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 47 位"
+   ]
+  },
+  "akibat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 74 位"
+   ]
+  },
+  "menunjukkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 90 位"
+   ]
+  },
+  "perasaan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 98 位"
+   ]
+  },
+  "menawarkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 121 位"
+   ]
+  },
+  "mengenal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 129 位"
+   ]
+  },
+  "walau": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 206 位"
+   ]
+  },
+  "cas": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 824 位"
+   ]
+  },
+  "lemot": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 827 位"
+   ]
+  },
+  "begini": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 70 位"
+   ]
+  },
+  "lakukan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 85 位"
+   ]
+  },
+  "kaget": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "日常高频表达（口语）",
+    "977 主库第 104 位"
+   ]
+  },
+  "alam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 33 位"
+   ]
+  },
+  "persen": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 51 位"
+   ]
+  },
+  "calon": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 61 位"
+   ]
+  },
+  "bangun": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 80 位"
+   ]
+  },
+  "sejarah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 87 位"
+   ]
+  },
+  "bebas": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 88 位"
+   ]
+  },
+  "pikiran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 107 位"
+   ]
+  },
+  "tenang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 360 位"
+   ]
+  },
+  "kenalan": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 834 位"
+   ]
+  },
+  "pas": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 897 位"
+   ]
+  },
+  "usah": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 55 位"
+   ]
+  },
+  "sejumlah": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 59 位"
+   ]
+  },
+  "pembangunan": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review+history",
+   "status": "active",
+   "why": [
+    "答错较多，不建议只要求认识",
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 71 位"
+   ]
+  },
+  "jomblo": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 836 位"
+   ]
+  },
+  "ramai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 105 位"
+   ]
+  },
+  "ringan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 119 位"
+   ]
+  },
+  "berbicara": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 120 位"
+   ]
+  },
+  "berangkat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 217 位"
+   ]
+  },
+  "saran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 250 位"
+   ]
+  },
+  "tegas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 233 位"
+   ]
+  },
+  "kehidupan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 357 位"
+   ]
+  },
+  "sabar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 393 位"
+   ]
+  },
+  "sebel": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 838 位"
+   ]
+  },
+  "cerewet": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 843 位"
+   ]
+  },
+  "menegaskan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 106 位"
+   ]
+  },
+  "luas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 96 位"
+   ]
+  },
+  "masa sih": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 857 位"
+   ]
+  },
+  "kereta": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 86 位"
+   ]
+  },
+  "melawan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 114 位"
+   ]
+  },
+  "tumbuh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 127 位"
+   ]
+  },
+  "berbahaya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 137 位"
+   ]
+  },
+  "berkat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 141 位"
+   ]
+  },
+  "kenyang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 151 位"
+   ]
+  },
+  "memanggil": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 157 位"
+   ]
+  },
+  "mengizinkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 168 位"
+   ]
+  },
+  "resign": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 868 位"
+   ]
+  },
+  "gampang": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 903 位"
+   ]
+  },
+  "raya": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 72 位"
+   ]
+  },
+  "amat": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 89 位"
+   ]
+  },
+  "langit": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 113 位"
+   ]
+  },
+  "komplain": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "日常高频表达（口语）",
+    "977 主库第 894 位"
+   ]
+  },
+  "berhenti": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 208 位"
+   ]
+  },
+  "budaya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 216 位"
+   ]
+  },
+  "bidang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 223 位"
+   ]
+  },
+  "pemimpin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 224 位"
+   ]
+  },
+  "upaya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 237 位"
+   ]
+  },
+  "berisi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 240 位"
+   ]
+  },
+  "ukuran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 244 位"
+   ]
+  },
+  "ancaman": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 252 位"
+   ]
+  },
+  "percuma": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 901 位"
+   ]
+  },
+  "ngatur": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 914 位"
+   ]
+  },
+  "menangis": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 133 位"
+   ]
+  },
+  "bercerai": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "977 主库第 140 位"
+   ]
+  },
+  "ceria": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 145 位"
+   ]
+  },
+  "siapin": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 916 位"
+   ]
+  },
+  "menyalin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 171 位"
+   ]
+  },
+  "mengarahkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 165 位"
+   ]
+  },
+  "mengetuk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 166 位"
+   ]
+  },
+  "menambahkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 380 位"
+   ]
+  },
+  "kehilangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 382 位"
+   ]
+  },
+  "terkejut": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 840 位"
+   ]
+  },
+  "mengeluh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 432 位"
+   ]
+  },
+  "menyimpan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 439 位"
+   ]
+  },
+  "antri": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 944 位"
+   ]
+  },
+  "nyampe": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 950 位"
+   ]
+  },
+  "melepaskan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 156 位"
+   ]
+  },
+  "memisahkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 161 位"
+   ]
+  },
+  "tajam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 186 位"
+   ]
+  },
+  "mengangkat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 189 位"
+   ]
+  },
+  "berteriak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 194 位"
+   ]
+  },
+  "merayakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 196 位"
+   ]
+  },
+  "batuk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 203 位"
+   ]
+  },
+  "berkunjung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 222 位"
+   ]
+  },
+  "balik": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 563 位"
+   ]
+  },
+  "isi bensin": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 938 位"
+   ]
+  },
+  "semacam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 122 位"
+   ]
+  },
+  "melainkan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 128 位"
+   ]
+  },
+  "menabrak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 162 位"
+   ]
+  },
+  "nanya": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 919 位"
+   ]
+  },
+  "mendengarkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 164 位"
+   ]
+  },
+  "gagal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 209 位"
+   ]
+  },
+  "puas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 253 位"
+   ]
+  },
+  "menghapus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 167 位"
+   ]
+  },
+  "mengunci": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 169 位"
+   ]
+  },
+  "meninggalkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 369 位"
+   ]
+  },
+  "sok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 125 位"
+   ]
+  },
+  "seraya": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review+history",
+   "status": "active",
+   "why": [
+    "答错较多，不建议只要求认识",
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 135 位"
+   ]
+  },
+  "bolak-balik": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 144 位"
+   ]
+  },
+  "ban bocor": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 939 位"
+   ]
+  },
+  "wawancara": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 870 位"
+   ]
+  },
+  "peluang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 861 位"
+   ]
+  },
+  "tepat waktu": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（时间）",
+    "977 主库第 813 位"
+   ]
+  },
+  "berantem": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 971 位"
+   ]
+  },
+  "kabur": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 973 位"
+   ]
+  },
+  "pantas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 263 位"
+   ]
+  },
+  "kesepakatan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 267 位"
+   ]
+  },
+  "wilayah": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "977 主库第 295 位"
+   ]
+  },
+  "manfaat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 510 位"
+   ]
+  },
+  "metode": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 533 位"
+   ]
+  },
+  "sejak": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 543 位"
+   ]
+  },
+  "menuju": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 549 位"
+   ]
+  },
+  "usaha": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 604 位"
+   ]
+  },
+  "ketika": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 852 位"
+   ]
+  },
+  "rapat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 769 位"
+   ]
+  },
+  "keluhan": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "977 主库第 895 位"
+   ]
+  },
+  "pemasok": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "977 主库第 878 位"
+   ]
+  },
+  "atasan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 864 位"
+   ]
+  },
+  "pelanggan": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "977 主库第 877 位"
+   ]
+  },
+  "kendala": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 860 位"
+   ]
+  },
+  "usahakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 810 位"
+   ]
+  },
+  "keahlian": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 862 位"
+   ]
+  },
+  "lamaran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 871 位"
+   ]
+  },
+  "lowongan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 872 位"
+   ]
+  },
+  "jabatan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 875 位"
+   ]
+  },
+  "omzet": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "977 主库第 882 位"
+   ]
+  },
+  "pendapatan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 883 位"
+   ]
+  },
+  "periksa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 918 位"
+   ]
+  },
+  "suasana": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 740 位"
+   ]
+  },
+  "atur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 913 位"
+   ]
+  },
+  "pesanan": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "977 主库第 887 位"
+   ]
+  },
+  "perbaiki": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 817 位"
+   ]
+  },
+  "nyalakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 822 位"
+   ]
+  },
+  "asalkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 405 位"
+   ]
+  },
+  "membandingkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 425 位"
+   ]
+  },
+  "pernyataan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 219 位"
+   ]
+  },
+  "rahasia": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 262 位"
+   ]
+  },
+  "seolah-olah": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review+history",
+   "status": "active",
+   "why": [
+    "答错较多，不建议只要求认识",
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 179 位"
+   ]
+  },
+  "gelisah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 414 位"
+   ]
+  },
+  "melayani": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 460 位"
+   ]
+  },
+  "ngambek": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 440 位"
+   ]
+  },
+  "kesel": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 152 位"
+   ]
+  },
+  "malu-malu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 155 位"
+   ]
+  },
+  "maksa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 154 位"
+   ]
+  },
+  "unduh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 829 位"
+   ]
+  },
+  "becek": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 954 位"
+   ]
+  },
+  "unggah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 830 位"
+   ]
+  },
+  "pelayanan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 896 位"
+   ]
+  },
+  "sia-sia": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 902 位"
+   ]
+  },
+  "ribut": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 177 位"
+   ]
+  },
+  "sombong": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 180 位"
+   ]
+  },
+  "wangi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 185 位"
+   ]
+  },
+  "pingsan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 199 位"
+   ]
+  },
+  "mikir": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 657 位"
+   ]
+  },
+  "curhat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 679 位"
+   ]
+  },
+  "rekan kerja": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 866 位"
+   ]
+  },
+  "terus-menerus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 182 位"
+   ]
+  },
+  "dengan demikian": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 146 位"
+   ]
+  },
+  "sial": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 198 位"
+   ]
+  },
+  "nempel": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 173 位"
+   ]
+  },
+  "tenggelam": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "977 主库第 193 位"
+   ]
+  },
+  "instan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 221 位"
+   ]
+  },
+  "nikmat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 225 位"
+   ]
+  },
+  "penduduk": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 231 位"
+   ]
+  },
+  "aliran": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 258 位"
+   ]
+  },
+  "sempurna": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 260 位"
+   ]
+  },
+  "karakter": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 261 位"
+   ]
+  },
+  "namun": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "日常高频表达（连接词）",
+    "扩展词"
+   ]
+  },
+  "guna": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "扩展词",
+    "977 主库第 926 位"
+   ]
+  },
+  "menanggung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 201 位"
+   ]
+  },
+  "wajib": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 309 位"
+   ]
+  },
+  "sebab": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 334 位"
+   ]
+  },
+  "cuek": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 412 位"
+   ]
+  },
+  "sudut": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 265 位"
+   ]
+  },
+  "kalah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 317 位"
+   ]
+  },
+  "pula": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 324 位"
+   ]
+  },
+  "selera": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 337 位"
+   ]
+  },
+  "demikian": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 340 位"
+   ]
+  },
+  "bangsa": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 341 位"
+   ]
+  },
+  "beliau": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 343 位"
+   ]
+  },
+  "pendidikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 344 位"
+   ]
+  },
+  "bangunan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 348 位"
+   ]
+  },
+  "membangun": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 366 位"
+   ]
+  },
+  "mencret": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "口语常用，但不必追求 3 秒",
+    "日常高频表达（口语）",
+    "977 主库第 960 位"
+   ]
+  },
+  "kata sandi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 828 位"
+   ]
+  },
+  "agar": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "日常高频表达（连接词）",
+    "扩展词"
+   ]
+  },
+  "lezat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 385 位"
+   ]
+  },
+  "mundur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 390 位"
+   ]
+  },
+  "biarpun": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 410 位"
+   ]
+  },
+  "haus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 415 位"
+   ]
+  },
+  "meledak": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "977 主库第 422 位"
+   ]
+  },
+  "meletakkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 423 位"
+   ]
+  },
+  "memeluk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 427 位"
+   ]
+  },
+  "mengunduh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 436 位"
+   ]
+  },
+  "menuduh": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "977 主库第 437 位"
+   ]
+  },
+  "menyembuhkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 438 位"
+   ]
+  },
+  "seandainya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 444 位"
+   ]
+  },
+  "sesudah": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 851 位"
+   ]
+  },
+  "awan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 192 位"
+   ]
+  },
+  "membunuh": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "977 主库第 453 位"
+   ]
+  },
+  "mengalir": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 455 位"
+   ]
+  },
+  "sepenuhnya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 458 位"
+   ]
+  },
+  "sembuh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 459 位"
+   ]
+  },
+  "menyentuh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 462 位"
+   ]
+  },
+  "bersinar": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 470 位"
+   ]
+  },
+  "tindakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 477 位"
+   ]
+  },
+  "kisah": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "977 主库第 478 位"
+   ]
+  },
+  "ditemukan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 485 位"
+   ]
+  },
+  "sebelah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 489 位"
+   ]
+  },
+  "peristiwa": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 490 位"
+   ]
+  },
+  "daya": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 491 位"
+   ]
+  },
+  "taruh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 820 位"
+   ]
+  },
+  "cemas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 839 位"
+   ]
+  },
+  "lega": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 841 位"
+   ]
+  },
+  "semoga": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "977 主库第 859 位"
+   ]
+  },
+  "repot": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 906 位"
+   ]
+  },
+  "urus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 909 位"
+   ]
+  },
+  "pasang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 922 位"
+   ]
+  },
+  "lepas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 923 位"
+   ]
+  },
+  "demam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 956 位"
+   ]
+  },
+  "gatal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 962 位"
+   ]
+  },
+  "siapkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 915 位"
+   ]
+  },
+  "mencetak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 202 位"
+   ]
+  },
+  "jarak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 495 位"
+   ]
+  },
+  "terbuat": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 498 位"
+   ]
+  },
+  "mewah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 500 位"
+   ]
+  },
+  "istimewa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 521 位"
+   ]
+  },
+  "menghasilkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 525 位"
+   ]
+  },
+  "gelar": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "977 主库第 530 位"
+   ]
+  },
+  "yaitu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 545 位"
+   ]
+  },
+  "seluruh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 557 位"
+   ]
+  },
+  "bentuk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 579 位"
+   ]
+  },
+  "demi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 585 位"
+   ]
+  },
+  "berat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 591 位"
+   ]
+  },
+  "antre": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 945 位"
+   ]
+  },
+  "berfungsi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 407 位"
+   ]
+  },
+  "tukar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 893 位"
+   ]
+  },
+  "kwitansi": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "977 主库第 886 位"
+   ]
+  },
+  "kelompok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 599 位"
+   ]
+  },
+  "mengenai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 601 位"
+   ]
+  },
+  "langkah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 616 位"
+   ]
+  },
+  "meninggal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 626 位"
+   ]
+  },
+  "hak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 627 位"
+   ]
+  },
+  "menatap": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 629 位"
+   ]
+  },
+  "parah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 639 位"
+   ]
+  },
+  "kekuatan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 647 位"
+   ]
+  },
+  "memenuhi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 654 位"
+   ]
+  },
+  "rupanya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 671 位"
+   ]
+  },
+  "buat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 927 位"
+   ]
+  },
+  "belanja": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 518 位"
+   ]
+  },
+  "mengajak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 780 位"
+   ]
+  },
+  "pencuri": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "977 主库第 966 位"
+   ]
+  },
+  "teriak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 972 位"
+   ]
+  },
+  "kejar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 974 位"
+   ]
+  },
+  "terpeleset": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 715 位"
+   ]
+  },
+  "bengkak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 961 位"
+   ]
+  },
+  "darurat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 965 位"
+   ]
+  },
+  "rugi": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "977 主库第 880 位"
+   ]
+  },
+  "mengantar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 698 位"
+   ]
+  },
+  "peduli": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 778 位"
+   ]
+  },
+  "hukuman": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 751 位"
+   ]
+  },
+  "paket": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "977 主库第 889 位"
+   ]
+  },
+  "pastikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 917 位"
+   ]
+  },
+  "retur": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "977 主库第 892 位"
+   ]
+  },
+  "bongkar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 891 位"
+   ]
+  },
+  "berkencan": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "977 主库第 675 位"
+   ]
+  },
+  "cemburu": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "977 主库第 837 位"
+   ]
+  },
+  "gengsi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 681 位"
+   ]
+  },
+  "kepo": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 685 位"
+   ]
+  },
+  "mengunggah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 703 位"
+   ]
+  },
+  "menyembunyikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 705 位"
+   ]
+  },
+  "setia": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 713 位"
+   ]
+  },
+  "kecewa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 791 位"
+   ]
+  },
+  "nyesel": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 708 位"
+   ]
+  },
+  "selamanya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 712 位"
+   ]
+  },
+  "bahas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 247 位"
+   ]
+  },
+  "catat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 920 位"
+   ]
+  },
+  "kerugian": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 881 位"
+   ]
+  },
+  "mogok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 940 位"
+   ]
+  },
+  "putaran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 937 位"
+   ]
+  },
+  "kecelakaan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 941 位"
+   ]
+  },
+  "tabrak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 942 位"
+   ]
+  },
+  "muat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 890 位"
+   ]
+  },
+  "memindahkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 694 位"
+   ]
+  },
+  "invoice": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "977 主库第 885 位"
+   ]
+  },
+  "praktis": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 905 位"
+   ]
+  },
+  "berikutnya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 783 位"
+   ]
+  },
+  "hafal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 928 位"
+   ]
+  },
+  "meminjam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 736 位"
+   ]
+  },
+  "mengumpulkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 729 位"
+   ]
+  },
+  "mengetik": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 699 位"
+   ]
+  },
+  "melempar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 689 位"
+   ]
+  },
+  "mematuhi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 691 位"
+   ]
+  },
+  "membela": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 692 位"
+   ]
+  },
+  "mencuri": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "977 主库第 697 位"
+   ]
+  },
+  "kejam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 733 位"
+   ]
+  },
+  "dilarang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 977 位"
+   ]
+  },
+  "penjara": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "扩展词",
+    "977 主库第 976 位"
+   ]
+  },
+  "berpartisipasi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 676 位"
+   ]
+  },
+  "cenderung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 788 位"
+   ]
+  },
+  "tepat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
+   ]
+  },
+  "tidak sabar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 451 位"
+   ]
+  },
+  "kontrak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 801 位"
+   ]
+  },
+  "diterima": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 873 位"
+   ]
+  },
+  "bandingkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 899 位"
+   ]
+  },
+  "menggosok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 700 位"
+   ]
+  },
+  "menyalakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 704 位"
+   ]
+  },
+  "negatif": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 706 位"
+   ]
+  },
+  "kuno": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 725 位"
+   ]
+  },
+  "mengembangkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 726 位"
+   ]
+  },
+  "menguasai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 727 位"
+   ]
+  },
+  "kenal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 758 位"
+   ]
+  },
+  "kebutuhan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 762 位"
+   ]
+  },
+  "apabila": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review+history",
+   "status": "active",
+   "why": [
+    "答错较多，不建议只要求认识",
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 768 位"
+   ]
+  },
+  "terletak": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 770 位"
+   ]
+  },
+  "menghabiskan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 719 位"
+   ]
+  },
+  "sampah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 218 位"
+   ]
+  },
+  "rapi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 815 位"
+   ]
+  },
+  "lapangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 771 位"
+   ]
+  },
+  "kekerasan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "977 主库第 775 位"
+   ]
+  },
+  "berlaku": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 776 位"
+   ]
+  },
+  "bergerak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 779 位"
+   ]
+  },
+  "menyediakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 787 位"
+   ]
+  },
+  "keberadaan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 794 位"
+   ]
+  },
+  "penelitian": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "977 主库第 800 位"
+   ]
+  },
+  "cerai": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "977 主库第 835 位"
+   ]
+  },
+  "keras kepala": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 842 位"
+   ]
+  },
+  "luar biasa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 845 位"
+   ]
+  },
+  "tubuh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 314 位"
+   ]
+  },
+  "santai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 814 位"
+   ]
+  },
+  "anjuran": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "peregangan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 A2 / S"
+   ]
+  },
+  "sambil": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（连接词）",
+    "977 主库第 850 位"
+   ]
+  },
+  "seberapa": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（疑问词）",
+    "977 主库第 856 位"
+   ]
+  },
+  "bawahan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 865 位"
+   ]
+  },
+  "pecat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 869 位"
+   ]
+  },
+  "berguna": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "977 主库第 900 位"
+   ]
+  },
+  "ucapan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 931 位"
+   ]
+  },
+  "curi": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "977 主库第 967 位"
+   ]
+  },
+  "asyik": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "第二词库 B1 / A"
+   ]
+  },
+  "berjalan-jalan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
+   ]
+  },
+  "gosok gigi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "tetangga": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 499 位"
+   ]
+  },
+  "berjanji": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 463 位"
+   ]
+  },
+  "bocor": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / S"
+   ]
+  },
+  "komedi": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "gerakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "tahan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "jongkok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "sejuk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "melelahkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "mengesankan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "mencegah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / S"
+   ]
+  },
+  "menyarankan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / S"
+   ]
+  },
+  "menyala": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / S"
+   ]
+  },
+  "menghitung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 467 位"
+   ]
+  },
+  "lembut": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 372 位"
+   ]
+  },
+  "teratur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "tantangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "angkot": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "persimpangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "bundaran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "seberang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "letak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "deras": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "perpustakaan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "pengumuman": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / S"
+   ]
+  },
+  "lampiran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "lamaran kerja": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "mengingat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 387 位"
+   ]
+  },
+  "kecuali": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 368 位"
+   ]
+  },
+  "tuntas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "kemudian": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "motif": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "peralatan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "pedagang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "menerapkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "suhu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "strategis": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "entahlah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kawasan": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "第二词库 B2 / S"
+   ]
+  },
+  "khas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "balas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 832 位"
+   ]
+  },
+  "komentar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 481 位"
+   ]
+  },
+  "mengabaikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "diberikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "aset": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "第二词库 B2 / S"
+   ]
+  },
+  "penanganan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "bergabung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "berjuang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "saya pamit": {
+   "goal": "use",
+   "fast": true,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "日常高频表达：要能 3 秒内说出",
+    "第二词库 A1 / A"
+   ]
+  },
+  "anak tunggal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "anak sulung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "anak bungsu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "rusa": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "动物名称：读懂即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "angsuran": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 A2 / A"
+   ]
+  },
+  "kekurangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 266 位"
+   ]
+  },
+  "mengeluarkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 381 位"
+   ]
+  },
+  "meja rias": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "具体物品名：见到认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "jemuran": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "具体物品名：见到认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "lukisan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "具体物品名：见到认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "berbentuk": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "第二词库 A1 / A"
+   ]
+  },
+  "berkeliling": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "berjabat tangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "manja": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "penyayang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "tekstur": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "gurih": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "membayangkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 465 位"
+   ]
+  },
+  "mengenali": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 469 位"
+   ]
+  },
+  "menyusul": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "renyah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "kenyal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "tepung": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "具体物品名：见到认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "pena": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "具体物品名：见到认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "berkebun": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "第二词库 A1 / A"
+   ]
+  },
+  "berkemah": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "第二词库 A1 / A"
+   ]
+  },
+  "bulat": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "第二词库 A1 / A"
+   ]
+  },
+  "tumpul": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "第二词库 A1 / A"
+   ]
+  },
+  "lebat": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "第二词库 A1 / A"
+   ]
+  },
+  "kumis": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "melindungi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 454 位"
+   ]
+  },
+  "membingungkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 205 位"
+   ]
+  },
+  "longsor": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "ramping": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "keriting": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "uban": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "jenggot": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kanak-kanak": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "remaja": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "sandal jepit": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "piyama": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "具体物品名：见到认得即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "gelang": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "具体物品名：见到认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "kalung": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "具体物品名：见到认得即可",
+    "第二词库 A1 / A"
+   ]
+  },
+  "gang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 936 位"
+   ]
+  },
+  "memperhatikan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 695 位"
+   ]
+  },
+  "ditipu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "menoleh": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "第二词库 B1 / A"
+   ]
+  },
+  "mengangsur": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 A2 / A"
+   ]
+  },
+  "laga": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "第二词库 A2 / A"
+   ]
+  },
+  "misteri": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "第二词库 A2 / A"
+   ]
+  },
+  "fantasi": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "第二词库 A2 / A"
+   ]
+  },
+  "skripsi": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "kinerja": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "第二词库 B1 / A"
+   ]
+  },
+  "bencana alam": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "dimaksudkan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "menghirup": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "gejala": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "第二词库 B1 / A"
+   ]
+  },
+  "mual": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 958 位"
+   ]
+  },
+  "udara": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 352 位"
+   ]
+  },
+  "berendam": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "penyebab": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "pola": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "menekan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "paksa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "alur": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "roboh": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "berjarak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "mastered",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "merupakan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "书面或描写用语：读懂即可，口语有更常用的说法",
+    "第二词库 B1 / A"
+   ]
+  },
+  "menyelam": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "jarak tempuh": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "diam-diam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 680 位"
+   ]
+  },
+  "keadaan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 617 位"
+   ]
+  },
+  "memilah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "menyegarkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "paku": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "具体物品名：见到认得即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "empuk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "perkirakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "perpaduan": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review+history",
+   "status": "active",
+   "why": [
+    "答错较多，不建议只要求认识",
+    "影视和演出相关：读懂即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "nuansa": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "menyaksikan": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "第二词库 B1 / A"
+   ]
+  },
+  "penampilan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "第二词库 B1 / A"
+   ]
+  },
+  "panggung": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "konser": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "memaksa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "menempel": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 197 位"
+   ]
+  },
+  "mengetahui": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 638 位"
+   ]
+  },
+  "mengincar": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "第二词库 B1 / A"
+   ]
+  },
+  "lolos": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "hadiah utama": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "使用面窄：认得即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "golongan darah": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "要看你的生活和工作里会不会用到",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "berlaku sampai": {
+   "goal": "use",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "生活或工作常用：要能说出来",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "silsilah keluarga": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "jerapah": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "动物名称：读懂即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "kijang": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "动物名称：读懂即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "macan kumbang": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "动物名称：读懂即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kangguru": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "动物名称：读懂即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "trailer": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "fiksi ilmiah": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "影视和演出相关：读懂即可",
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "judul": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 528 位"
+   ]
+  },
+  "tidak adil": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 716 位"
+   ]
+  },
+  "unta": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "动物名称：读懂即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "tapir": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "动物名称：读懂即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "lemari pajangan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "具体物品名：见到认得即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "pot bunga": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "具体物品名：见到认得即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "lincah": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "perfeksionis": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "berserat": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "使用面窄：认得即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "berjemur": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "使用面窄：认得即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "jantan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "动物名称：读懂即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "betina": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "动物名称：读懂即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "separuh baya": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "listrik": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 619 位"
+   ]
+  },
+  "menutupi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 724 位"
+   ]
+  },
+  "anak panah": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "具体物品名：见到认得即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "sawo matang": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "lesung pipit": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "pantalon": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "mastered",
+   "why": [
+    "具体物品名：见到认得即可",
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "perang": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "tentara": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "新闻和事件类词：读懂即可",
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "terurai": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "外貌和性格描写：认得即可",
+    "第二词库低重要度（B1 / B）"
+   ]
+  },
+  "saudara": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 650 位"
+   ]
+  },
+  "berkelahi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 408 位"
+   ]
+  },
+  "lahir": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 395 位"
+   ]
+  },
+  "mengukur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 735 位"
+   ]
+  },
+  "sempit": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 464 位"
+   ]
+  },
+  "kotak": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "review",
+   "status": "active",
+   "why": [
+    "具体物品名：见到认得即可",
+    "977 主库第 452 位"
+   ]
+  },
+  "mendorong": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 404 位"
+   ]
+  },
+  "dompet": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 968 位"
+   ]
+  },
+  "lapor": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 969 位"
+   ]
+  },
+  "kejadian": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 970 位"
+   ]
+  },
+  "petugas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 744 位"
+   ]
+  },
+  "penumpang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 785 位"
+   ]
+  },
+  "menangkap": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 429 位"
+   ]
+  },
+  "malahan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 421 位"
+   ]
+  },
+  "ramah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 784 位"
+   ]
+  },
+  "berhasil": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 811 位"
+   ]
+  },
+  "terakhir": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 571 位"
+   ]
+  }
+ }
+}

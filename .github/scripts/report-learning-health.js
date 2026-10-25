@@ -200,6 +200,9 @@ function format(r){
  L.push('## 3b. Oral new words per lesson (last '+ORAL_GUIDE.days+' days)',ou.rows.length?'- '+ou.rows.map(x=>x.date.slice(5)+' '+x.session+': '+x.oral_new+'/'+x.new_words).join(' | '):'- no lessons',`- total ${ou.oral_total}/${ou.new_total} new words (${Math.round(ou.oral_share*100)}%), guideline ${ou.guideline}`,'');
  const c=r.commits;
  L.push('## 4. Recent commit mix (git history, last 7 days)',c.total?`- total=${c.total} machine_runtime_sync=${c.machine_runtime_sync} (${Math.round(c.machine_share*100)}%) lesson=${c.lesson} reading=${c.reading} other=${c.other}`:'- unavailable (no git history)','');
+ // 2026-10-25 phase-1 observation: goal suggestions only (training due loads live on the devices, see the profile panel).
+ try{const g=JSON.parse(require('fs').readFileSync(require('path').join(__dirname,'..','..','data','vocab-goals-suggested.json'),'utf8')).counts.active;
+  L.push('## 5. Goal suggestions for words still being reinforced (observation only)',`- use=${g.use} (fast=${g.fast}) recognize=${g.recognize} unsure=${g.unsure}`,'- (not read by word selection, scheduling, mastery or lesson generation; review the unsure words)','');}catch(e){}
  L.push('## Alerts',...(r.alerts.length?r.alerts.map(x=>'- WARNING: '+x):['- none']));
  return L.join('\n');
 }
