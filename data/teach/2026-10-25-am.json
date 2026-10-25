@@ -1,0 +1,774 @@
+{
+  "version": 1,
+  "title": "早课深讲 · 10月25日",
+  "intro": [
+    "今天早上的课叫《在通勤电车上丢了钱包》。挤 KRL 时钱包被偷，“我”去找车站工作人员报告，以为会挨骂，没想到对方很和气；一小时后保安在隔壁站台抓到了小偷。",
+    "今天只讲 5 样：[[lapor]] · [[kejadian]] · [[terakhir]] · [[Ternyata … tidak …, malahan …]] · [[Coba cek lagi, siapa tahu …]]"
+  ],
+  "items": [
+    {
+      "key": "lapor",
+      "name": "lapor",
+      "head": "lapor · 报告；报案",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Saya kelabakan mencarinya di semua kantong, lalu langsung lapor ke petugas stasiun.",
+            "cn": "我手忙脚乱地翻遍了所有口袋，然后马上去向车站工作人员报告。"
+          }
+        ],
+        "ask": "lapor 后面为什么跟着 ke？",
+        "options": [
+          {
+            "t": "lapor 不直接接宾语，向谁报告用 ke + 人",
+            "ok": true,
+            "reply": [
+              "对。lapor ke petugas、lapor ke polisi。要说“报告某件事”才用 melaporkan + 事情。"
+            ]
+          },
+          {
+            "t": "ke 表示“去”，意思是走去车站",
+            "reply": [
+              "不完全是。这里 ke 引出报告的对象：向工作人员报告。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{lapor}} 本身就能当动词：{{lapor ke polisi}}（报警）。正式写法 {{melapor}}。带宾语用 {{melaporkan}}：{{melaporkan kejadian itu}}。名词是 {{laporan}}（报告）。"
+      ],
+      "simple": [
+        "[[lapor ke + 人]] = 向……报告；报某件事用 melaporkan"
+      ],
+      "asks": [
+        {
+          "label": "lapor、melaporkan、laporan 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "lapor / melapor ke …",
+                  "向……报告（不带宾语）"
+                ],
+                [
+                  "melaporkan + 事情",
+                  "报告某事"
+                ],
+                [
+                  "laporan",
+                  "报告（名词）"
+                ]
+              ]
+            },
+            "日常说话 lapor 最常用。"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "你在商场捡到一个钱包，朋友说：“交给保安吧，向他们报告一下。”[[Kasih ke satpam aja, terus ___ ke mereka.]]"
+        ],
+        "options": [
+          {
+            "t": "lapor",
+            "v": "right",
+            "why": [
+              "对。lapor ke + 人，口语里最自然。"
+            ]
+          },
+          {
+            "t": "melapor",
+            "v": "ok",
+            "why": [
+              "也可以，意思一样，只是比 lapor 正式一点，朋友聊天里少说。"
+            ]
+          },
+          {
+            "t": "laporan",
+            "v": "wrong",
+            "why": [
+              "laporan 是名词“报告”，不能当动作用。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Dia sudah melaporkan kehilangan itu ke polisi.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "他已经向警察报了失",
+              "v": "right",
+              "why": [
+                "对。melaporkan + 事情（kehilangan 丢失）+ ke + 人。"
+              ]
+            },
+            {
+              "t": "警察已经向他报告了",
+              "v": "wrong",
+              "why": [
+                "主语是 dia，是他向警察报告。"
+              ]
+            },
+            {
+              "t": "他已经写好了报告",
+              "v": "wrong",
+              "why": [
+                "写报告是 menulis laporan，这里说的是报失。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "跟同事说：“我的笔记本电脑坏了，我已经报告给 IT 部门了。”"
+        ],
+        "kw": "laptop saya rusak · sudah lapor · ke bagian IT",
+        "skel": "Laptop saya ____, dan saya sudah ____ ke bagian IT.",
+        "ref": "Laptop saya rusak, dan saya sudah lapor ke bagian IT."
+      },
+      "recall": {
+        "prompt": [
+          "跟邻居说：“路灯坏了好几天了，我们去跟居委会报告吧。”"
+        ],
+        "kw": "lampu jalan · sudah beberapa hari mati · kita lapor · ke Pak RT",
+        "skel": "Lampu jalan sudah beberapa hari ____. Ayo kita ____ ke Pak RT.",
+        "ref": "Lampu jalan sudah beberapa hari mati. Ayo kita lapor ke Pak RT."
+      },
+      "final": {
+        "cn": "“如果看到可疑的包，请马上向工作人员报告。”",
+        "ref": "Kalau melihat tas yang mencurigakan, segera lapor ke petugas."
+      },
+      "remind": "lapor ke + 人；报某件事用 melaporkan + 事情；laporan 是名词。"
+    },
+    {
+      "key": "kejadian",
+      "name": "kejadian",
+      "head": "kejadian · 发生的事；事件",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "实用句",
+            "id": "Pagi itu ada kejadian di gerbong kami: seorang penumpang tiba-tiba pingsan karena keretanya terlalu penuh dan panas.",
+            "cn": "那天早上我们车厢里出了件事：一位乘客因为车里太挤太热，突然晕倒了。"
+          }
+        ],
+        "ask": "ada kejadian 在这里是什么意思？",
+        "options": [
+          {
+            "t": "出了件事",
+            "ok": true,
+            "reply": [
+              "对。ada kejadian = 出事了、发生了一件事，冒号后面就是那件事。"
+            ]
+          },
+          {
+            "t": "有一场表演",
+            "reply": [
+              "不对。表演是 pertunjukan。kejadian 是“发生的事”。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{kejadian}} = ke- + jadi + -an，和 {{terjadi}}（发生）同一个词根。常说 {{ada kejadian}}（出事了）、{{kejadian itu}}（那件事）、{{lokasi kejadian}}（事发地点）。说“发生”要用动词 {{terjadi}}。"
+      ],
+      "simple": [
+        "[[kejadian]] = 发生的事（名词）；“发生”说 terjadi"
+      ],
+      "asks": [
+        {
+          "label": "kejadian 和 terjadi 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "kejadian",
+                  "发生的事（名词）"
+                ],
+                [
+                  "terjadi",
+                  "发生（动词）"
+                ]
+              ]
+            },
+            "Kejadiannya cepat sekali. / Apa yang terjadi?"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "朋友看到你脸色不好，问：“到底发生了什么？”[[Sebenarnya apa yang ___?]]"
+        ],
+        "options": [
+          {
+            "t": "terjadi",
+            "v": "right",
+            "why": [
+              "对。“发生”是动词 terjadi。"
+            ]
+          },
+          {
+            "t": "kejadian",
+            "v": "wrong",
+            "why": [
+              "kejadian 是名词“发生的事”，这里需要动词。"
+            ]
+          },
+          {
+            "t": "kecelakaan",
+            "v": "wrong",
+            "why": [
+              "kecelakaan 是“事故”，名词，放这里句子不通。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Polisi sudah datang ke lokasi kejadian.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "警察已经到了事发地点",
+              "v": "right",
+              "why": [
+                "对。lokasi kejadian = 事发地点。"
+              ]
+            },
+            {
+              "t": "警察已经去了出事的人家里",
+              "v": "wrong",
+              "why": [
+                "lokasi 是地点，不是谁的家。"
+              ]
+            },
+            {
+              "t": "警察已经知道发生了什么",
+              "v": "wrong",
+              "why": [
+                "这里说的是警察到了现场。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "跟家人讲：“那件事发生得太快了，我什么都没看清。”"
+        ],
+        "kw": "kejadiannya · cepat sekali · saya tidak sempat · melihat jelas",
+        "skel": "Kejadiannya ____ sekali, saya tidak sempat melihat ____.",
+        "ref": "Kejadiannya cepat sekali, saya tidak sempat melihat jelas."
+      },
+      "recall": {
+        "prompt": [
+          "跟同事说：“昨天办公室出了点事：电梯卡住了半个小时。”"
+        ],
+        "kw": "kemarin · ada kejadian · di kantor · lift macet",
+        "skel": "Kemarin ada ____ di kantor: lift-nya macet ____ jam.",
+        "ref": "Kemarin ada kejadian di kantor: lift-nya macet setengah jam."
+      },
+      "final": {
+        "cn": "“那件事我永远忘不了。”",
+        "ref": "Saya tidak akan pernah lupa kejadian itu."
+      },
+      "remind": "kejadian 是名词（ada kejadian）；“发生”用 terjadi。"
+    },
+    {
+      "key": "terakhir",
+      "name": "terakhir",
+      "head": "terakhir · 最后的；上一次的",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Dia bertanya kapan terakhir kali saya melihat dompet itu, lalu memeriksa rekaman CCTV.",
+            "cn": "他问我最后一次看到钱包是什么时候，然后去查看监控录像。"
+          }
+        ],
+        "ask": "工作人员为什么问 kapan terakhir kali？",
+        "options": [
+          {
+            "t": "想知道最后一次看到钱包的时间，好去查监控",
+            "ok": true,
+            "reply": [
+              "对。terakhir kali = 最后一次、上一次。知道时间才能找对录像。"
+            ]
+          },
+          {
+            "t": "想知道钱包最后会不会找回来",
+            "reply": [
+              "不是。“最后、终于”是 akhirnya。terakhir kali 问的是上一次的时间。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{terakhir kali}} 既能指“最后一次”，也常指“上一次”：{{Kapan terakhir kali kamu ke dokter?}}。还有 {{hari terakhir}}（最后一天）、{{kesempatan terakhir}}（最后的机会）。"
+      ],
+      "simple": [
+        "[[terakhir kali]] = 上一次、最后一次；“终于”是 akhirnya"
+      ],
+      "asks": [
+        {
+          "label": "terakhir 和 akhirnya 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "terakhir kali",
+                  "上一次、最后一次"
+                ],
+                [
+                  "akhirnya",
+                  "终于、最后（结果）"
+                ]
+              ]
+            },
+            "Akhirnya dompetnya ketemu. 钱包终于找到了。"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "医生问你：“你上次发烧是什么时候？”[[Kapan ___ kali Anda demam?]]"
+        ],
+        "options": [
+          {
+            "t": "terakhir",
+            "v": "right",
+            "why": [
+              "对。terakhir kali = 上一次。"
+            ]
+          },
+          {
+            "t": "akhirnya",
+            "v": "wrong",
+            "why": [
+              "akhirnya 是“终于”，不能放在 kali 前面。"
+            ]
+          },
+          {
+            "t": "pertama",
+            "v": "wrong",
+            "why": [
+              "pertama kali 是“第一次”，医生问的是最近一次。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Ini kesempatan terakhir untuk mendaftar.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "这是报名的最后机会",
+              "v": "right",
+              "why": [
+                "对。kesempatan terakhir = 最后的机会。"
+              ]
+            },
+            {
+              "t": "报名终于开始了",
+              "v": "wrong",
+              "why": [
+                "“终于”是 akhirnya，这里说的是机会只剩这一次。"
+              ]
+            },
+            {
+              "t": "这是第一次报名",
+              "v": "wrong",
+              "why": [
+                "第一次是 pertama kali。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "问朋友：“你上次回老家是什么时候？”（口语）"
+        ],
+        "kw": "kapan · terakhir kali · kamu · pulang kampung",
+        "skel": "Kapan ____ kali kamu pulang ____?",
+        "ref": "Kapan terakhir kali kamu pulang kampung?"
+      },
+      "recall": {
+        "prompt": [
+          "跟同事说：“这是我们今年最后一次开会了。”"
+        ],
+        "kw": "ini · rapat terakhir · kita · tahun ini",
+        "skel": "Ini rapat ____ kita ____ ini.",
+        "ref": "Ini rapat terakhir kita tahun ini."
+      },
+      "final": {
+        "cn": "“我上次见他是两年前。”",
+        "ref": "Terakhir kali saya bertemu dia dua tahun yang lalu."
+      },
+      "remind": "terakhir kali = 上一次/最后一次；“终于”是 akhirnya。"
+    },
+    {
+      "key": "malahan",
+      "name": "Ternyata … tidak …, malahan …",
+      "head": "Ternyata … tidak …, malahan … · 没想到不但没……，反而……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Saya kira dia akan memarahi saya karena kurang hati-hati. Ternyata dia tidak marah, malahan sangat ramah dan menyuruh saya duduk dulu.",
+            "cn": "我以为他会骂我不小心。没想到他一点也没生气，反而非常和气，让我先坐下。"
+          }
+        ],
+        "ask": "malahan 后面的内容和“我”的预期是什么关系？",
+        "options": [
+          {
+            "t": "相反，而且比预期好",
+            "ok": true,
+            "reply": [
+              "对。预期是挨骂，结果不但没骂，反而很和气。malahan 接的就是这种相反的结果。"
+            ]
+          },
+          {
+            "t": "一样，证明“我”猜对了",
+            "reply": [
+              "不对。ternyata 已经提示“没想到”，后面是和预期不一样的事。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "先说预期（{{Saya kira …}}），再用 {{Ternyata … tidak …}} 否定它，最后 {{malahan …}} 给出相反的结果。口语多说 {{malah}}：{{Bukannya marah, dia malah ketawa.}}"
+      ],
+      "simple": [
+        "[[Ternyata tidak A, malahan B]] = 没想到不是 A，反而是 B"
+      ],
+      "asks": [
+        {
+          "label": "malahan 和 padahal 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "malahan",
+                  "结果和预期相反（反而）"
+                ],
+                [
+                  "padahal",
+                  "拿已知事实对比（明明、可事实上）"
+                ]
+              ]
+            },
+            "Dia tidak marah, malahan senyum. / Dia marah, padahal saya sudah minta maaf."
+          ]
+        },
+        {
+          "label": "malahan 的词卡辨析",
+          "from": "synonym_note",
+          "word": "malahan"
+        }
+      ],
+      "check": {
+        "q": [
+          "你以为下雨会让市集没人去：[[Ternyata hujan tidak membuat pasar itu sepi, ___ makin ramai.]]"
+        ],
+        "options": [
+          {
+            "t": "malahan",
+            "v": "right",
+            "why": [
+              "对。预期冷清，结果反而更热闹。"
+            ]
+          },
+          {
+            "t": "bahkan",
+            "v": "ok",
+            "why": [
+              "也可以。“甚至更热闹”，意思接近；malahan 更突出“和预期相反”。"
+            ]
+          },
+          {
+            "t": "padahal",
+            "v": "wrong",
+            "why": [
+              "padahal 是拿已知事实对比，这里是说出乎意料的结果。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Saya kira dia akan sedih, ternyata dia malah senang.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "我以为他会难过，没想到他反而很高兴",
+              "v": "right",
+              "why": [
+                "对。malah = malahan，口语。"
+              ]
+            },
+            {
+              "t": "我以为他会难过，结果他真的很难过",
+              "v": "wrong",
+              "why": [
+                "ternyata … malah 表示和预期相反。"
+              ]
+            },
+            {
+              "t": "他很高兴，所以我也很高兴",
+              "v": "wrong",
+              "why": [
+                "句子里没有“所以”，说的是预期和结果相反。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "讲一件事：“我以为考试会很难，没想到不难，反而挺有意思。”"
+        ],
+        "kw": "saya kira · ujiannya sulit · ternyata tidak · malahan · cukup menarik",
+        "skel": "Saya kira ujiannya akan ____. Ternyata tidak, malahan ____ menarik.",
+        "ref": "Saya kira ujiannya akan sulit. Ternyata tidak, malahan cukup menarik."
+      },
+      "recall": {
+        "prompt": [
+          "跟朋友说：“吃了药感冒没好，反而更严重了。”（口语）"
+        ],
+        "kw": "udah minum obat · flunya nggak sembuh · malah · makin parah",
+        "skel": "Udah minum obat, flunya nggak ____, malah makin ____.",
+        "ref": "Udah minum obat, flunya nggak sembuh, malah makin parah.",
+        "notes": [
+          "udah = sudah，nggak = tidak，malah = malahan。"
+        ]
+      },
+      "final": {
+        "cn": "“孩子没哭，反而笑了起来。”",
+        "ref": "Anak itu tidak menangis, malahan tertawa."
+      },
+      "remind": "Ternyata tidak A, malahan B：结果和预期相反；口语 malah。"
+    },
+    {
+      "key": "siapatahu",
+      "name": "Coba cek lagi, siapa tahu …",
+      "head": "Coba cek lagi, siapa tahu … · 再找找看，说不定……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "实用句",
+            "id": "Jangan panik dulu. Coba cek lagi, siapa tahu dompetnya cuma nyelip di sela jok mobil.",
+            "cn": "先别慌。再找找看，说不定钱包只是夹在车座缝里了。"
+          }
+        ],
+        "ask": "siapa tahu 在这里是什么意思？",
+        "options": [
+          {
+            "t": "说不定、也许",
+            "ok": true,
+            "reply": [
+              "对。siapa tahu 字面是“谁知道”，口语里表示“说不定……”，带一点希望。"
+            ]
+          },
+          {
+            "t": "谁知道这件事？（真的在问人）",
+            "reply": [
+              "不是。这里不是提问，是安慰对方：说不定只是夹在缝里了。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{Coba …}} 是很软的建议：“试着……看看”。{{siapa tahu …}} = 说不定……，后面接一个有希望的可能性。合起来常用来安慰别人别急着放弃。"
+      ],
+      "simple": [
+        "[[Coba cek lagi, siapa tahu …]] = 再看看，说不定……"
+      ],
+      "asks": [
+        {
+          "label": "siapa tahu 和 mungkin 一样吗？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "siapa tahu …",
+                  "说不定……（带希望，劝人试试）"
+                ],
+                [
+                  "mungkin …",
+                  "可能……（一般的猜测）"
+                ]
+              ]
+            },
+            "劝人再试一次时，siapa tahu 更自然。"
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "朋友说票卖完了，你劝他：“再刷新一下，说不定还有退票。”[[Coba refresh lagi, ___ masih ada tiket yang dibatalkan.]]"
+        ],
+        "options": [
+          {
+            "t": "siapa tahu",
+            "v": "right",
+            "why": [
+              "对。劝人再试试，说不定还有。"
+            ]
+          },
+          {
+            "t": "mungkin",
+            "v": "ok",
+            "why": [
+              "也可以，意思是“可能”；siapa tahu 更像在鼓励对方再试。"
+            ]
+          },
+          {
+            "t": "padahal",
+            "v": "wrong",
+            "why": [
+              "padahal 是“明明、可事实上”，接不上这里的意思。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Coba tanya Rudi, siapa tahu dia punya nomornya.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "问问鲁迪吧，说不定他有那个号码",
+              "v": "right",
+              "why": [
+                "对。coba = 试试；siapa tahu = 说不定。"
+              ]
+            },
+            {
+              "t": "鲁迪问谁有那个号码",
+              "v": "wrong",
+              "why": [
+                "主语不是鲁迪：Coba tanya Rudi 是我建议你去问鲁迪，不是鲁迪在问别人。"
+              ]
+            },
+            {
+              "t": "谁知道鲁迪的号码？",
+              "v": "wrong",
+              "why": [
+                "这里不是提问，siapa tahu 是“说不定”。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "劝朋友：“再看看包里，说不定钥匙在里面。”（口语）"
+        ],
+        "kw": "coba cek lagi · tasmu · siapa tahu · kuncinya di situ",
+        "skel": "Coba cek lagi ____, siapa tahu kuncinya ____.",
+        "ref": "Coba cek lagi tasmu, siapa tahu kuncinya di situ.",
+        "notes": [
+          "tasmu = tas kamu，朋友之间用。"
+        ]
+      },
+      "recall": {
+        "prompt": [
+          "跟同事说：“再发一次邮件试试，说不定他上次没看到。”"
+        ],
+        "kw": "coba kirim email lagi · siapa tahu · dia belum baca · yang kemarin",
+        "skel": "Coba kirim ____ lagi, siapa tahu dia belum baca yang ____.",
+        "ref": "Coba kirim email lagi, siapa tahu dia belum baca yang kemarin."
+      },
+      "final": {
+        "cn": "“去楼下问问保安，说不定有人交上去了。”",
+        "ref": "Coba tanya satpam di bawah, siapa tahu ada yang menyerahkannya."
+      },
+      "remind": "Coba …, siapa tahu …：劝人再试试，说不定有希望。"
+    }
+  ],
+  "scan": {
+    "head": "其他新词 · 扫一眼",
+    "intro": [
+      "其余新词词卡里都有完整讲解，这里只扫一眼。不熟的点一下，标出来给自己看。"
+    ],
+    "words": [
+      "dompet",
+      "petugas",
+      "penumpang",
+      "menangkap",
+      "malahan",
+      "ramah",
+      "berhasil"
+    ]
+  },
+  "reading": [
+    {
+      "key": "menangkap",
+      "sentence": "Satu jam kemudian, petugas keamanan menangkap seorang pencuri di peron sebelah.",
+      "cn": "一小时后，保安在隔壁站台抓住了一个小偷。",
+      "chunks": [
+        [
+          "Satu jam kemudian,",
+          "一小时后",
+          "kemudian = 之后，放在时间后面"
+        ],
+        [
+          "petugas keamanan",
+          "保安",
+          "petugas（工作人员）+ keamanan（安全）"
+        ],
+        [
+          "menangkap seorang pencuri",
+          "抓住了一个小偷",
+          "menangkap = 抓住（新词）；seorang 用在人前面"
+        ],
+        [
+          "di peron sebelah.",
+          "在隔壁站台",
+          "sebelah = 旁边、隔壁"
+        ]
+      ],
+      "steal": [
+        "值得借用的是 [[时间 + kemudian, 谁 + 做了什么 + 在哪里]]：{{Dua hari kemudian, sopir taksi itu mengembalikan tas saya.}}（两天后，那位出租车司机把我的包送了回来。）"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "key": "output",
+      "prompt": [
+        "最后一个开口任务（来自今天的输出题，缩短版）：讲一次你或家人丢东西、去报告的经历。"
+      ],
+      "kw": "saya · lupa tas · di bioskop · lapor ke petugas · petugasnya ramah",
+      "skel": "Saya pernah lupa tas di ____. Saya langsung lapor ke ____, dan petugasnya ____ sekali.",
+      "ref": "Saya pernah lupa tas di bioskop. Saya langsung lapor ke petugas, dan petugasnya ramah sekali.",
+      "notes": [
+        "整页的输出题有更长的参考答案，学完可以去对照。"
+      ]
+    }
+  ],
+  "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
