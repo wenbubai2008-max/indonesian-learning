@@ -811,6 +811,13 @@ try {
     const rpJs=fs.existsSync(rel('.github/scripts/review-phase.js'))?read('.github/scripts/review-phase.js'):'';
     okNew(/function goals\([^)]*\)\{\s*const empty=[^;]+;\s*if\(!on\(phase,date\)\)return empty;/.test(rpJs)&&!rpJs.includes('vocab-goals-suggested'),'confirmed goals are read only while the phase is on; suggestions never');
     okNew(['validate-lesson-candidate.js','rank-review-candidates.js','build-lesson-context.js'].every(f=>/require\('\.\/review-phase'\)/.test(read('.github/scripts/'+f))),'validator, ranking and context use the shared review-phase switch');
+    // §40 (2026-10-25, profile redesign step A, user-approved): word diagnosis is a pure read-only function. It must not
+    // write storage, and nothing that selects words, schedules reviews, judges mastery or generates content may read it.
+    const wd=fs.existsSync(rel('data/word-diagnosis.js'))?read('data/word-diagnosis.js'):'';
+    okNew(wd.length>0&&!/setItem|removeItem|localStorage\.|recordLessonWrong|markMastered|markWeak|removeReasons|recordPractice|markAnswer|requestVerification|MutationObserver|fetch\(/.test(wd),'word diagnosis exists and is read-only (no storage writes, no observers, no network)');
+    const wdConsumers=[...(consumers),'data/vocab-study-coach.js','data/weakness-pool.js','data/automation-training.js','data/listening-word-training.js','data/home-learning-upgrade-v2.js','data/training-sync-client.js'];
+    const wdLeak=wdConsumers.filter(f=>fs.existsSync(rel(f))&&/word-diagnosis|WordDiagnosis/.test(read(f)));
+    okNew(wdLeak.length===0,'word diagnosis is not read by selection, scheduling, mastery, training or generation scripts'+(wdLeak.length?' (found in: '+wdLeak.join(', ')+')':''));
   }
 
 } catch (e) {

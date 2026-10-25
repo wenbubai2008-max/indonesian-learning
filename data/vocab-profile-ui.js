@@ -304,7 +304,9 @@
       doc.snapshots.forEach(x=>{
         if(!x||typeof x.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(x.date)||seen.has(x.date))throw new Error('Invalid/duplicate history date');
         if(['taught_total','confirmed_mastered','needs_reinforcement','unverified'].some(k=>!Number.isSafeInteger(x[k])||x[k]<0))throw new Error('Invalid history count');
-        if(x.confirmed_mastered+x.needs_reinforcement+x.unverified!==x.taught_total)throw new Error('History partition mismatch');
+        const ex=Object.hasOwn(x,'excluded_from_training')?x.excluded_from_training:0; // snapshots before 2026-10-24 lack this field
+        if(!Number.isSafeInteger(ex)||ex<0)throw new Error('Invalid history excluded count');
+        if(x.confirmed_mastered+x.needs_reinforcement+x.unverified+ex!==x.taught_total)throw new Error('History partition mismatch');
         seen.add(x.date);rows.push(x);
       });
       if(PROFILE)PROFILE.history=rows.sort((a,b)=>a.date.localeCompare(b.date));
