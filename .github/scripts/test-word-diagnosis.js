@@ -58,11 +58,25 @@ t('mastered earlier then wrong again → 反复遗忘 (primary only when no laye
   const both=dx({quick:quick(1,4,'wrong'),weak});
   assert.equal(both.type,'meaning');assert.ok(both.secondary.includes('forgetting'));
   assert.equal(dx({weak}).type,'forgetting','the weakness record alone is enough evidence');
-  assert.equal(dx({quick:quick(4,0),weak:{status:'mastered',last_mastered:iso(1),last_wrong:iso(5)}}).type,'ok','wrong BEFORE mastering is not forgetting');
+  assert.equal(dx({quick:quick(4,0),weak:{status:'mastered',last_mastered:iso(1),last_wrong:iso(5)}}).type,'recognized','wrong BEFORE mastering is not forgetting');
 });
-t('nothing wrong → 暂无明显问题 and lists the layers that were never tested',()=>{
+t('recognition fine but listening / automatic training never tested → 认得没问题 (NOT "no problem"), label names what is untested',()=>{
   const r=dx({quick:quick(4,0)});
-  assert.equal(r.type,'ok');assert.deepEqual(r.untested.sort(),['auto','listen']);
+  assert.equal(r.type,'recognized');assert.deepEqual(r.untested.sort(),['auto','listen']);
+  assert.equal(r.label,'认得没问题，听词、自动训练还没测');
+  assert.equal(dx({quick:quick(4,0),listen:listen(3,3)}).label,'认得没问题，自动训练还没测');
+  assert.equal(dx({quick:quick(4,0),auto:auto(3,0,3)}).label,'认得没问题，听词还没测');
+});
+t('every layer tested and reliable → 各层都验证过，暂无问题',()=>{
+  const r=dx({quick:quick(4,0),listen:listen(3,3),auto:auto(3,0,3)});
+  assert.equal(r.type,'ok');assert.equal(r.label,'各层都验证过，暂无问题');assert.deepEqual(r.layers,{recognition:'reliable',listening:'reliable',production:'reliable'});
+});
+t('summarize counts words per type and how many words each layer was tested on',()=>{
+  const store={indo_quick_practice_state:{a:quick(4,0),b:quick(1,4,'wrong'),c:quick(4,0)},indo_listen_stats_v1:{c:listen(3,3)},indo_automation_training_state_v1:{c:auto(3,0,3)},indo_lesson_recall_v1:{words:{b:{hist:[]}}},indo_weak_pool_v1:{}};
+  const snap=D.snapshot({getItem:k=>k in store?JSON.stringify(store[k]):null});
+  const s=D.summarize(snap,NOW);
+  assert.equal(s.words,3);assert.deepEqual(s.tested,{recognition:3,listening:1,production:1,self_report:1});
+  assert.deepEqual(s.types,{recognized:1,meaning:1,ok:1});
 });
 t('mixed recognition (not reliable, not failing) → 原因待确认, not a guess',()=>{
   assert.equal(dx({quick:quick(2,1,'wrong')}).type,'unclear');
@@ -92,7 +106,7 @@ t('read-only: snapshot/diagnoseFrom never write storage; keys are matched case-i
 t('malformed records never throw and never invent a cause',()=>{
   for(const bad of [null,undefined,{},{quick:'x'},{quick:[1],listen:5,auto:null,weak:'a'},{quick:{right:'a',wrong:{}}},{recall:{hist:'zz'}}]){
     const r=D.diagnose(Object.assign({word:'x'},bad||{}),NOW);
-    assert.ok(['insufficient','unclear','ok'].includes(r.type),JSON.stringify(bad));
+    assert.ok(['insufficient','unclear','recognized','ok'].includes(r.type),JSON.stringify(bad));
   }
   assert.doesNotThrow(()=>D.snapshot({getItem:()=>'{not json'}));
 });

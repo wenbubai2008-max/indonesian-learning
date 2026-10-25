@@ -9,14 +9,17 @@
 //               or the lesson-end self-report says 想不起来 on most recent days (labelled as self-report)
 //   forgetting  mastered earlier, answered wrong later (weakness record: last_wrong after last_mastered)
 //   unclear     records exist but the layer below is not proven yet, so no cause is guessed
-//   insufficient too few records; ok = nothing wrong found so far (untested layers are listed)
+//   insufficient too few records
+//   recognized   recognition is fine, but listening / automatic training were never tested — NOT "no problem" (real data 2026-10-25:
+//               917 words had quick practice, 24 listening, 48 automatic training, so most words are only proven at recognition)
+//   ok           every layer was tested and nothing wrong was found
 (function(root,factory){
   const m=factory();
   if(typeof module==='object'&&module.exports)module.exports=m;else root.WordDiagnosis=m;
 })(typeof window!=='undefined'?window:globalThis,function(){
   'use strict';
   const CFG={min_records:3,recog_min_right:2,recog_fail_wrong:2,recog_fail_ratio:.5,listen_fail_streak:2,listen_fail_rate:.5,auto_fail_streak:2,auto_fail_total:3,recall_window:3,recall_fail_min:2};
-  const LABEL={meaning:'意思记不住',listening:'听不出来',production:'说不出来',forgetting:'反复遗忘',unclear:'原因待确认',insufficient:'待验证',ok:'暂无明显问题'};
+  const LABEL={meaning:'意思记不住',listening:'听不出来',production:'说不出来',forgetting:'反复遗忘',unclear:'原因待确认',insufficient:'待验证',recognized:'认得没问题',ok:'各层都验证过，暂无问题'};
   const NEXT={
     meaning:{train:'quick',text:'快速练习（看印尼语选中文），并回看词义和例句'},
     listening:{train:'listen',text:'听词训练（只听声音判断词义）'},
@@ -24,6 +27,7 @@
     forgetting:{train:'quick',text:'间隔复测：快速练习 + 自动训练，按跨日间隔再验证'},
     unclear:{train:'quick',text:'先做快速练习，确认认得之后才能判断'},
     insufficient:{train:'quick',text:'再练几次才能判断'},
+    recognized:{train:'listen',text:'认得已经验证；听词和自动训练还没测，有机会时补测'},
     ok:{train:'',text:'按计划跨日验证即可'}
   };
   const num=x=>{const n=Number(x);return Number.isFinite(n)?n:0};
@@ -95,7 +99,7 @@
       if(l.state==='fail')type='listening';
       else if(a.state==='fail'||r.fail)type='production';
       else if(forgotten)type='forgetting';
-      else type='ok';
+      else type=(l.state==='unknown'||a.state==='unknown')?'recognized':'ok';
       if(type==='listening'&&(a.state==='fail'||r.fail))secondary.push('production');
       if(forgotten&&type!=='forgetting')secondary.push('forgetting');
     }else{
@@ -110,7 +114,10 @@
     }
     const due=[q.due,l.due,a.due].filter(t=>t>now);
     const next=Object.assign({verify_at:due.length?new Date(Math.min(...due)).toISOString():null},NEXT[type]);
-    return {word,type,label:LABEL[type],secondary,confidence,evidence,records:total,days:days.size,untested,next};
+    let label=LABEL[type];
+    if(type==='recognized'){const miss=[l.state==='unknown'?'听词':'',a.state==='unknown'?'自动训练':''].filter(Boolean).join('、');label='认得没问题，'+miss+'还没测';}
+    const layers={recognition:q.state,listening:l.state,production:a.state};
+    return {word,type,label,secondary,confidence,evidence,records:total,days:days.size,untested,layers,next};
   }
 
   // Browser/Node helper: build one snapshot of the stored records (read-only), then diagnose any word from it.
@@ -124,5 +131,19 @@
     const k=norm(word);
     return diagnose({word:k,quick:snap.quick[k],listen:snap.listen[k],auto:snap.auto[k],recall:snap.recall[k],weak:snap.weak[k]},now);
   }
-  return {CFG,LABEL,diagnose,snapshot,diagnoseFrom};
+  // Counts for a summary card: how many words each layer was actually tested on, and how many words fall in each type.
+  // Words without any training record are not in the snapshot; the caller knows the taught total.
+  function summarize(snap,now){
+    const words=new Set([...Object.keys(snap.quick),...Object.keys(snap.listen),...Object.keys(snap.auto),...Object.keys(snap.recall)]);
+    const out={words:words.size,types:{},tested:{recognition:0,listening:0,production:0,self_report:Object.keys(snap.recall).length}};
+    words.forEach(w=>{
+      const r=diagnoseFrom(snap,w,now);
+      out.types[r.type]=(out.types[r.type]||0)+1;
+      if(r.layers.recognition!=='unknown')out.tested.recognition++;
+      if(r.layers.listening!=='unknown')out.tested.listening++;
+      if(r.layers.production!=='unknown')out.tested.production++;
+    });
+    return out;
+  }
+  return {CFG,LABEL,diagnose,snapshot,diagnoseFrom,summarize};
 });
