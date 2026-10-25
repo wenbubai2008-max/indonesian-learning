@@ -577,3 +577,12 @@
 - 词汇筛选须一次获取弱项快照并建立 Set/Map；禁止在 977 词循环中逐词调用 `WeaknessPool.get()`/ `isExcluded()` 反复解析本机弱项数据。
 - **2026-10-24 性能修复**：`VocabStudyCoach.snapshot()` 只能读取一次弱项全集，随后所有核心候选复用 snapshot.excluded；`WeaknessPool.isExcluded()` 的排除 Set 在保存和跨标签页 storage 变化时失效。严禁在 `status()` 的逐词循环里直接重新解析 `indo_weak_pool_v1`。回归测试覆盖「120个候选只读一次」和「连续120次排除查询只读一次、写入后清缓存」。
 - 全面运行 `test-cross-module-training.js`、`test-vocab-study-coach.js`、`vocab-ui-regression-guard.js` 和 `regression-guard.js`。仅语法解析或单个功能模拟不等于完整 CI 通过。
+
+## 38. 2026-10-25 复习阶段方案 · 第一阶段：旁路观察（用户确认）
+
+- **观察开始**：2026-10-25 上线后观察两周，期间新指标不影响任何学习状态。第二阶段的细节等统计出来后再定。
+- **词汇画像「本周」新增「复习负担与能力指标（观察中，不影响学习）」**（`data/ability-observation.js`，只读）：确认掌握（原定义）、主动掌握（自动训练 `status=stable`，三次跨日打字回忆）、识别达标（快速练习 `review_level ≥ 3`）、听觉识别达标（`fast_first_hear_streak ≥ 3`）分开显示、可重叠不相加，并给出确认掌握里有 / 没有主动证据的数量；自动训练第一关 5 秒内想出的比例；三个训练各自今天到期量（按超期 当天 / 1–3 / 4–7 / 8+ 天分档，从没练过的单列）；30 天以上课程和训练都没碰到的已学词。每个数注明来源：当天从同步服务器拉取过才算“完整”，否则标“仅本机”。旧的「本机验证的主动词汇 / 稳定识别词」（事件日志口径）保留不动，观察期内两套并列。
+- **唯一新增记录**：`training-sync-client.js` 成功拉取后写 `indo_training_sync_meta_v1.last_pull`。
+- **目标建议**：`.github/scripts/suggest-vocab-goals.js` → `data/vocab-goals-suggested.json`（use / recognize / unsure，use 可带 fast）。顺序：词表规则 → `data/vocab-goals-review.json`（Claude 初次复核，学习者可直接改）→ 历史纠偏（答错 ≥3 次或有课程 / 自动训练错误的词不只要求“会认”，改为待确认）。Build learning runtime 每次重算并提交该文件（无时间戳，没变化不提交）。健康报告第 5 节显示分布。
+- **边界（守卫 §38）**：观察面板不写任何存储、不调用训练或弱项池的写接口；选词、复习排程、掌握判定、课程 / 泛读 / 深讲生成相关脚本和说明书都不得引用 `vocab-goals`。
+- **测试**：`test-ability-observation.js`（重叠计数、到期分档、长期未出现、来源标注、只读、建议规则）；`test-training-sync.js` 增加 last_pull 断言。
