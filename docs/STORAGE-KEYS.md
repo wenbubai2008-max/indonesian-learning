@@ -21,7 +21,7 @@
 | `indo_weak_sync_meta_v1` | 每个词的最后修改时间，用于云端/本机冲突时"新的覆盖旧的" | 对象：小写单词 → `{updated_at: ISO 时间}` | `weakness-sync-client.js` | 同左 |
 | `indo_weak_sync_config_v1` | 同步服务地址和密钥（**机密**） | 对象：`{endpoint, key}` | `weakness-sync-client.js`（`configure`）、`sync-device-setup.js`（扫码设置） | `weakness-sync-client.js`、`training-sync-client.js`、`sync-device-setup.js`（生成二维码） |
 | `indo_weak_sync_device_v1` | 本设备编号 | 字符串 | `weakness-sync-client.js` | `weakness-sync-client.js`、`training-sync-client.js` |
-| `indo_training_sync_meta_v1` | 三个训练进度的同步进度（已推送到哪个时间、服务端是否支持） | 对象：`{pushed: {quick, listen, auto, recall: 毫秒时间戳}, last_push, unsupported_until, recall_supported: 服务端 GET /training 是否返回 modes.recall}` | `training-sync-client.js`（`sync-device-setup.js` 也会引用） | 同左 |
+| `indo_training_sync_meta_v1` | 三个训练进度的同步进度（已推送到哪个时间、服务端是否支持） | 对象：`{pushed: {quick, listen, auto, recall: 毫秒时间戳}, last_push, last_pull（2026-10-25：最近一次成功拉取，词汇画像观察面板据此判断数据是否完整）, unsupported_until, recall_supported: 服务端 GET /training 是否返回 modes.recall}` | `training-sync-client.js`（`sync-device-setup.js` 也会引用） | 同左 |
 | `indo_weakness_dismissed` | 旧版"已掌握/忽略"记录，现在仍参与弱项池导入时的状态一致化 | 对象：小写单词 → `{word, at: 毫秒时间戳}` | `weakness-dismiss.js`、`weakness-pool.js` | 同左 |
 | `indo_weak_manual_pause_v1` | 在"弱项强化"里手动暂停的词 | 对象：小写单词 → `true` | `weakness-paging-roots.js` | 同左 |
 | `indo_unknown_words` | 旧版"陌生词"列表（阅读里点词加入），启动时迁移进弱项池 | 对象：小写单词 → `{word, cn, times_seen, last_seen…}` | `reading-word-lookup.js`、`vocab-controller-20260917.js` | `weakness-pool.js`（迁移）、`home-learning-upgrade-v2.js`、`weakness-dismiss.js` |

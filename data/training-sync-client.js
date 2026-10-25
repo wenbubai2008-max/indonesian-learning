@@ -50,6 +50,8 @@
   function supported(){const m=meta();return !(m.unsupported_until&&Date.now()<m.unsupported_until);}
   async function pull(){
     const data=await call('GET');if(!data||!data.modes)return 0;
+    // 2026-10-25: remember the last successful pull so the ability panel can say whether its numbers are complete.
+    {const m=meta();m.last_pull=new Date().toISOString();writeObj(META_KEY,m);}
     let total=0;
     const m0=meta(),sup=!!(data.modes.recall&&typeof data.modes.recall==='object');
     if(!!m0.recall_supported!==sup){m0.recall_supported=sup;writeObj(META_KEY,m0);try{window.dispatchEvent(new CustomEvent('training-sync-recall'));}catch(e){}}

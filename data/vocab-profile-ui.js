@@ -252,7 +252,9 @@
     const adv=suggestions(data)[0];
     const conclusion='<div class="vpConclusion"><b>本周结论：</b>'+esc(parts.join('，'))+'。'+(adv&&adv[0]!=='继续观察'?'<br><b>'+esc(adv[0])+'：</b>'+esc(adv[1]):'')+'</div>';
     const totals='<div class="vpSection"><h3>总体情况</h3><div class="vpMiniStats"><div><b>'+data.taught_total+'</b><span>正式学习</span></div><div><b>'+data.confirmed_mastered+'</b><span>确认掌握</span></div><div><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div><b>'+data.unverified+'</b><span>尚待验证</span></div></div><div class="vpMiniStats"><div><b>'+active+'</b><span>本机验证的主动词汇</span></div><div><b>'+passive+'</b><span>本机稳定识别词汇</span></div><div><b>'+data.primary_eligible_new_total+'</b><span>主词库当前待学习</span></div><div><b>'+(ev.relearned||0)+'/'+(ev.forgotten||0)+'</b><span>再次通过 / 验证后又忘</span></div></div><p class="vpCoverageNote">主动词汇：无提示提取、语境补词、自我表达都完成，并在两个不同日期通过延迟验证。稳定识别：最近一次错误后至少三次正确、覆盖两个日期。两者不重复统计，也不把原有 mastered 自动算入。</p></div>';
-    return conclusion+totals+weeklyHTML()+'<div class="vpSection"><h3>掌握数趋势</h3>'+trendHTML(data)+'</div>';
+    // 2026-10-25 phase-1 observation panel (read-only, data/ability-observation.js).
+    const obs=window.AbilityObservation?window.AbilityObservation.html():'';
+    return conclusion+totals+weeklyHTML()+obs+'<div class="vpSection"><h3>掌握数趋势</h3>'+trendHTML(data)+'</div>';
   }
   function renderDetail(){
     const data=PROFILE,body=document.getElementById('vpDetailBody');if(!body||!data)return;
@@ -264,6 +266,7 @@
       '<section class="vpPanel '+(activeTab==='words'?'active':'')+'" data-vp-panel="words">'+(activeTab==='words'?wordsHTML():'')+'</section>';
     body.querySelectorAll('[data-vp-tab]').forEach(btn=>btn.onclick=()=>{activeTab=btn.dataset.vpTab;renderDetail()});
     bindCoachActions(body);wireWordSearch(body);
+    if(activeTab==='week'&&window.AbilityObservation)window.AbilityObservation.refreshGoals();
     body.querySelectorAll('[data-vp-action]').forEach(btn=>btn.onclick=()=>{const word=btn.dataset.vpWord;if(btn.dataset.vpAction==='automation'&&typeof window.openAutomationTrainingWord==='function')window.openAutomationTrainingWord(word);else if(btn.dataset.vpAction==='quick'&&typeof window.openQuickPracticeWordV2==='function')window.openQuickPracticeWordV2(word)});
   }
   // 2026-10-14: a one-line 7-day change on the home card, so a stalled mastery count is visible without opening the trend tab.

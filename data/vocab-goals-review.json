@@ -1,0 +1,1021 @@
+{
+ "version": 1,
+ "reviewed_by": "Claude（2026-10-25 初次复核；学习者可以直接改这个文件）",
+ "words": {
+  "jerapah": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "动物名称：读懂即可"
+  },
+  "kijang": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "动物名称：读懂即可"
+  },
+  "macan kumbang": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "动物名称：读懂即可"
+  },
+  "kangguru": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "动物名称：读懂即可"
+  },
+  "unta": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "动物名称：读懂即可"
+  },
+  "tapir": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "动物名称：读懂即可"
+  },
+  "rusa": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "动物名称：读懂即可"
+  },
+  "jantan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "动物名称：读懂即可"
+  },
+  "betina": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "动物名称：读懂即可"
+  },
+  "lemari pajangan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "pot bunga": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "meja rias": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "jemuran": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "anak panah": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "pantalon": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "piyama": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "gelang": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "kalung": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "lukisan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "paku": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "pena": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "tepung": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "kotak": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "具体物品名：见到认得即可"
+  },
+  "perang": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "tentara": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "penjara": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "kekerasan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "membunuh": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "meledak": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "longsor": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "bencana alam": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "roboh": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "tenggelam": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "pencuri": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "mencuri": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "curi": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "新闻和事件类词：读懂即可"
+  },
+  "sawo matang": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "lesung pipit": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "terurai": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "uban": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "jenggot": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "kumis": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "keriting": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "ramping": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "separuh baya": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "kanak-kanak": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "lincah": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "perfeksionis": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "外貌和性格描写：认得即可"
+  },
+  "fiksi ilmiah": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "trailer": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "laga": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "misteri": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "fantasi": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "alur": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "komedi": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "kisah": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "panggung": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "penampilan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "nuansa": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "perpaduan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "影视和演出相关：读懂即可"
+  },
+  "silsilah keluarga": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "skripsi": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "gelar": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "hadiah utama": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "mengangsur": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "angsuran": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "dimaksudkan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "menghirup": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "berendam": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "berjemur": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "berserat": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "tekstur": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "peregangan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "anjuran": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "jarak tempuh": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "menyelam": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "使用面窄：认得即可"
+  },
+  "seraya": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "merupakan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "melainkan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "dengan demikian": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "apabila": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "demikian": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "pula": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "amat": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "raya": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "guna": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "sejumlah": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "seolah-olah": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "keberadaan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "penelitian": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "pembangunan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "bangsa": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "penduduk": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "aliran": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "mengalir": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "bersinar": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "awan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "daya": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "kekuatan": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "peristiwa": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "usah": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "menatap": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "menoleh": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "bulat": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "tumpul": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "lebat": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "berbentuk": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "terletak": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "terbuat": {
+   "goal": "recognize",
+   "fast": false,
+   "note": "书面或描写用语：读懂即可，口语有更常用的说法"
+  },
+  "golongan darah": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "berkencan": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "cemburu": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "cerai": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "bercerai": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "menuduh": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "berkemah": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "berkebun": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "wilayah": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "kawasan": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "strategis": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "aset": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "mengincar": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "menyaksikan": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "lolos": {
+   "goal": "unsure",
+   "fast": false,
+   "note": "要看你的生活和工作里会不会用到"
+  },
+  "namun": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "agar": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "berlaku sampai": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "kinerja": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "omzet": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "pesanan": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "pelanggan": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "pemasok": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "retur": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "stok": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "invoice": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "kwitansi": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "paket": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "keluhan": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "komplain": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "gejala": {
+   "goal": "use",
+   "fast": false,
+   "note": "生活或工作常用：要能说出来"
+  },
+  "ternyata": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "langsung": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "lumayan": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "tolong": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "minta": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "nggak usah": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "nggak masalah": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "belum sempat": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "akhirnya": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "sebenarnya": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "justru": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "tetap": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "berarti": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "harusnya": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "seharusnya": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "pokoknya": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "intinya": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "sampai": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "sekitar": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "cukup": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "kurang": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "hampir": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "habis": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "setuju": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "beneran": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "masuk akal": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "saya pamit": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "kebetulan": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "sekalian": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "sengaja": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "mampir": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "buru-buru": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "bingung": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "kehabisan": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "ketiduran": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "nggak jadi": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "ada urusan": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "nggak sempat": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "kabari aja": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "heran": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "nggak heran": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "kemahalan": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "mepet": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "kelewatan": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "ketinggalan": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "khawatir": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "yakin": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "butuh": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "repot": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "lega": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "kaget": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "rugi": {
+   "goal": "use",
+   "fast": true,
+   "note": "日常高频表达：要能 3 秒内说出"
+  },
+  "becek": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  },
+  "mencret": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  },
+  "ban bocor": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  },
+  "jomblo": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  },
+  "isi bensin": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  },
+  "berantem": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  },
+  "kabur": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  },
+  "cerewet": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  },
+  "colok": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  },
+  "lemot": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  },
+  "resign": {
+   "goal": "use",
+   "fast": false,
+   "note": "口语常用，但不必追求 3 秒"
+  }
+ }
+}
