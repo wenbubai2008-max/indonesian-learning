@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  let PROFILE=null,activeTab='today',historyState='idle',selectedWord='',wordQuery='',wordFilter='weak';
+  let PROFILE=null,homeDirty=false,homeSeen=false,activeTab='today',historyState='idle',selectedWord='',wordQuery='',wordFilter='weak';
   // 2026-10-16: seven tabs merged into three (今天 / 本周 / 查词). Old tab names still open the tab that now holds them.
   const TAB_ALIAS={today:'today',overview:'week',trend:'week',weekly:'week',advice:'week',week:'week',words:'words',weak:'words'};
   const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]));
@@ -149,14 +149,24 @@
     if(typeof window.installSiteNavBars==='function')window.installSiteNavBars();
     return page;
   }
+  // 2026-10-25 profile redesign B1: the home card is built by data/word-diagnosis-ui.js (per-layer coverage); the old numbers card is the fallback.
+  function legacyHomeCard(data){return '<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">真实学习与验证状态</div></div><span class="pill">网站快照</span></div><div class="vpHomeNumbers"><div><span>正式学习</span><b>'+data.taught_total+'</b></div><div><span>确认掌握</span><b>'+data.confirmed_mastered+'</b></div><div><span>待强化</span><b>'+data.needs_reinforcement+'</b></div><div><span>待验证</span><b>'+data.unverified+'</b></div><div class="vpHomeNumbersLast"><span>主词库待学习</span><b>'+data.primary_eligible_new_total+'</b></div></div><div class="vpWeekDelta" id="vpWeekDelta"></div><button class="vpOpen" type="button" id="openVocabProfile">查看本周情况与查词 →</button>';}
+  function renderHomeCard(){
+    const box=document.getElementById('vocabProfile');if(!box||!PROFILE)return;
+    const diag=window.WordDiagnosisUI?window.WordDiagnosisUI.homeCard(PROFILE):'';
+    box.innerHTML=diag||legacyHomeCard(PROFILE);
+    const open=box.querySelector('#openVocabProfile');if(open)open.onclick=()=>openDetail('week');
+    renderWeekDelta();
+  }
+  // Practice events only mark the card dirty; it is rebuilt when the home page is on screen, never per answer on a training page.
+  function flushHome(){if(!homeDirty)return;homeDirty=false;if(window.WordDiagnosisUI)window.WordDiagnosisUI.reset();renderHomeCard()}
+  function markHomeDirty(){homeDirty=true;const h=document.getElementById('home');if(h&&h.classList.contains('active'))flushHome()}
   function mount(data){
     PROFILE=data;const home=document.getElementById('home');if(!home)return;
     let box=document.getElementById('vocabProfile');
     if(!box){box=document.createElement('section');box.id='vocabProfile';box.className='vocabProfile';const hero=home.querySelector(':scope > .hero'),mods=document.getElementById('homeModules');if(hero)hero.insertAdjacentElement('afterend',box);else if(mods&&mods.parentNode)mods.parentNode.insertBefore(box,mods);else home.appendChild(box)}
-    const focus=(data.focus_words||[]).slice(0,6);
-    box.innerHTML='<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">真实学习与验证状态</div></div><span class="pill">网站快照</span></div><div class="vpHomeNumbers"><div><span>正式学习</span><b>'+data.taught_total+'</b></div><div><span>确认掌握</span><b>'+data.confirmed_mastered+'</b></div><div><span>待强化</span><b>'+data.needs_reinforcement+'</b></div><div><span>待验证</span><b>'+data.unverified+'</b></div><div class="vpHomeNumbersLast"><span>主词库待学习</span><b>'+data.primary_eligible_new_total+'</b></div></div><div class="vpWeekDelta" id="vpWeekDelta"></div><button class="vpOpen" type="button" id="openVocabProfile">查看本周情况与查词 →</button>';
-    box.querySelector('#openVocabProfile').onclick=()=>openDetail('week');
-    renderWeekDelta();
+    if(window.IntersectionObserver&&!homeSeen){homeSeen=true;new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting))flushHome()}).observe(box)}
+    renderHomeCard();
     ensureDetailPage();renderDetail();renderHomeCoach();
   }
   function trendHTML(data){
@@ -253,8 +263,10 @@
     const conclusion='<div class="vpConclusion"><b>本周结论：</b>'+esc(parts.join('，'))+'。'+(adv&&adv[0]!=='继续观察'?'<br><b>'+esc(adv[0])+'：</b>'+esc(adv[1]):'')+'</div>';
     const totals='<div class="vpSection"><h3>总体情况</h3><div class="vpMiniStats"><div><b>'+data.taught_total+'</b><span>正式学习</span></div><div><b>'+data.confirmed_mastered+'</b><span>确认掌握</span></div><div><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div><b>'+data.unverified+'</b><span>尚待验证</span></div></div><div class="vpMiniStats"><div><b>'+active+'</b><span>本机验证的主动词汇</span></div><div><b>'+passive+'</b><span>本机稳定识别词汇</span></div><div><b>'+data.primary_eligible_new_total+'</b><span>主词库当前待学习</span></div><div><b>'+(ev.relearned||0)+'/'+(ev.forgotten||0)+'</b><span>再次通过 / 验证后又忘</span></div></div><p class="vpCoverageNote">主动词汇：无提示提取、语境补词、自我表达都完成，并在两个不同日期通过延迟验证。稳定识别：最近一次错误后至少三次正确、覆盖两个日期。两者不重复统计，也不把原有 mastered 自动算入。</p></div>';
     // 2026-10-25 phase-1 observation panel (read-only, data/ability-observation.js).
-    const obs=window.AbilityObservation?window.AbilityObservation.html():'';
-    return conclusion+totals+weeklyHTML()+obs+'<div class="vpSection"><h3>掌握数趋势</h3>'+trendHTML(data)+'</div>';
+    const obsRaw=window.AbilityObservation?window.AbilityObservation.html():'';
+    const obs=obsRaw?'<details class="vpObsFold"><summary>观察数据（两周观察期，不影响学习）</summary>'+obsRaw+'</details>':'';
+    const diagnosis=window.WordDiagnosisUI?window.WordDiagnosisUI.detail(data):'';
+    return conclusion+diagnosis+totals+weeklyHTML()+obs+'<div class="vpSection"><h3>掌握数趋势</h3>'+trendHTML(data)+'</div>';
   }
   function renderDetail(){
     const data=PROFILE,body=document.getElementById('vpDetailBody');if(!body||!data)return;
@@ -277,8 +289,8 @@
     return '<span>近 '+x.days+' 天</span><b>正式学习 '+sign(x.taught)+'</b><b class="'+(warn?'vpWarn':'')+'">确认掌握 '+sign(x.mastered)+'</b><b>待强化 '+sign(x.needs)+'</b>';
   }
   async function renderWeekDelta(){
-    const el=document.getElementById('vpWeekDelta');if(!el)return;
-    if(weekDelta){el.innerHTML=weekDeltaHTML(weekDelta);return}
+    const el=document.getElementById('vpWeekDelta');
+    if(weekDelta){if(el)el.innerHTML=weekDeltaHTML(weekDelta);return}
     if(weekDeltaLoading)return;weekDeltaLoading=true;
     try{
       const res=await fetch('data/vocab-profile-history.json?v='+Date.now(),{cache:'no-store'});if(!res.ok)return;
@@ -316,7 +328,7 @@
   }
   function openDetail(tab){if(typeof tab==='string'&&TAB_ALIAS[tab])activeTab=TAB_ALIAS[tab];ensureDetailPage();renderDetail();if(typeof window.go==='function')window.go('vocabProfileDetail');loadHistory()}
   window.openVocabProfileDetail=openDetail;
-  function refreshCoachView(){renderHomeCoach();const page=document.getElementById('vocabProfileDetail');if(page&&page.classList.contains('active'))renderDetail()}
+  function refreshCoachView(){markHomeDirty();renderHomeCoach();const page=document.getElementById('vocabProfileDetail');if(page&&page.classList.contains('active'))renderDetail()}
   window.addEventListener('vocab-coach-updated',refreshCoachView);
   window.addEventListener('vocab-profile-evidence-updated',refreshCoachView);
   async function load(){ensureStyle();try{const r=await fetch('data/vocab-profile.json?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);mount(await r.json())}catch(e){console.warn('vocab profile unavailable',e);const box=document.getElementById('vocabProfile');if(box)box.innerHTML='<h3 style="margin:0 0 5px;font-size:18px">个人词汇画像</h3><p style="margin:0;color:#667085;font-size:13px">暂时无法读取统计，其他学习模块可以正常使用。</p>';renderHomeCoach()}}

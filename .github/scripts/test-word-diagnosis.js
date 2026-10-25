@@ -78,6 +78,26 @@ t('summarize counts words per type and how many words each layer was tested on',
   assert.equal(s.words,3);assert.deepEqual(s.tested,{recognition:3,listening:1,production:1,self_report:1});
   assert.deepEqual(s.types,{recognized:1,meaning:1,ok:1});
 });
+t('words the learner opted out of training are never diagnosed (they are status=mastered + training_excluded, not real mastery)',()=>{
+  const weak={status:'mastered',reasons:['training_excluded','memory_dont'],last_mastered:iso(3),last_wrong:iso(1),wrong_count:3};
+  const r=dx({quick:quick(1,4,'wrong'),weak});
+  assert.equal(r.type,'excluded');assert.equal(r.label,'已退出训练');
+});
+t('summarize skips excluded words and counts words that failed before and were mastered in the last 30 days',()=>{
+  const store={
+    indo_quick_practice_state:{a:quick(4,0),x:quick(1,4,'wrong')},
+    indo_weak_pool_v1:{
+      x:{status:'mastered',reasons:['training_excluded'],wrong_count:2,last_mastered:iso(2)},
+      r1:{status:'mastered',reasons:[],wrong_count:2,last_mastered:iso(5)},
+      r2:{status:'mastered',reasons:[],wrong_count:1,last_mastered:iso(40)},
+      r3:{status:'mastered',reasons:[],wrong_count:0,last_mastered:iso(2)},
+      r4:{status:'mastered',reasons:[],wrong_count:3,last_mastered:iso(1)}}};
+  const snap=D.snapshot({getItem:k=>k in store?JSON.stringify(store[k]):null});
+  const s=D.summarize(snap,NOW);
+  assert.equal(s.words,1);assert.equal(s.excluded,1);assert.deepEqual(s.tested,{recognition:1,listening:0,production:0,self_report:0});
+  assert.equal(s.recovered_30d,2,'r1 and r4 only: r2 is too old, r3 never failed, x is excluded');
+  assert.equal(D.summarize(snap,NOW,{taught:new Set(['r1'])}).recovered_30d,1);
+});
 t('mixed recognition (not reliable, not failing) → 原因待确认, not a guess',()=>{
   assert.equal(dx({quick:quick(2,1,'wrong')}).type,'unclear');
   assert.equal(dx({quick:quick(2,2,'wrong')}).type,'meaning','half wrong or worse is a recognition failure');

@@ -40,9 +40,9 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
 #home #listenQuickCard:hover{border-color:#b4c8fa;background:#f3f7ff}
 /* First-paint dashboard: two aligned primary cards, then three compact training shortcuts. */
 #home .homeLearningGrid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,1fr);gap:12px;margin:0 0 12px;align-items:stretch}
-#home .homeLearningGrid > #vocabCoachHome,#home .homeLearningGrid > #vocabProfile{min-width:0;min-height:265px;height:100%;margin:0;padding:16px 18px;border-radius:18px}
+#home .homeLearningGrid > #vocabCoachHome,#home .homeLearningGrid > #vocabProfile{min-width:0;min-height:273px;height:100%;margin:0;padding:16px 18px;border-radius:18px}
 /* First paint reserves the FINAL height of the two script-filled cards (measured per width), so filling them never pushes the training cards down. */
-@media(max-width:856px) and (min-width:761px){#home .homeLearningGrid > #vocabCoachHome,#home .homeLearningGrid > #vocabProfile{min-height:286px}}
+@media(max-width:900px) and (min-width:761px){#home .homeLearningGrid > #vocabCoachHome,#home .homeLearningGrid > #vocabProfile{min-height:291px}}
 #home .homeShortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 12px}
 #home .homeShortcuts>.homeShortcut{min-width:0;width:100%;min-height:82px;margin:0;border:1px solid #dce5f4;border-radius:15px;background:#fff;display:flex;align-items:center;text-align:left;gap:10px;padding:12px;cursor:pointer;color:#172033;box-shadow:0 2px 8px rgba(23,32,51,.025)}
 #home .homeShortcuts>.homeShortcut:hover{border-color:#9cb4e8;background:#f8faff}
@@ -64,7 +64,7 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
 @media(max-width:760px){
  #home .homeLearningGrid{grid-template-columns:1fr}
  #home .homeLearningGrid > #vocabCoachHome{min-height:191px}
- #home .homeLearningGrid > #vocabProfile{min-height:265px}
+ #home .homeLearningGrid > #vocabProfile{min-height:273px}
  #home .homeShortcuts{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
  #home .homeShortcuts>.homeShortcut{padding:10px 7px;gap:5px;min-height:78px}
  #home .homeShortcutIcon,#home .homeShortcuts .listenQuickIcon{width:29px;height:29px;flex-basis:29px;font-size:16px}
@@ -73,7 +73,7 @@ body>.app>.top #todayLabel{font-size:13px;letter-spacing:.02em}
  #home .homeShortcuts .listenQuickProgress,#home .homeShortcutArrow,#home .homeShortcuts .listenQuickArrow{display:none}
 }
 @media(max-width:360px){#home .homeLearningGrid > #vocabCoachHome{min-height:209px}}
-@media(max-width:332px){#home .homeLearningGrid > #vocabProfile{min-height:286px}}
+@media(max-width:350px){#home .homeLearningGrid > #vocabProfile{min-height:291px}}
 @media(max-width:328px){#home .homeLearningGrid > #vocabCoachHome{min-height:235px}}
 @media(max-width:410px){
  #home .homeShortcuts{grid-template-columns:1fr}
@@ -200,7 +200,9 @@ loadArchive();
 <script src="data/listening-word-training.js?v=20260928-skill-independent-v2"></script>
 <script src="data/weekly-memory-report.js?v=20261016-week1"></script>
 <script src="data/ability-observation.js?v=20261025-obs2"></script>
-<script src="data/vocab-profile-ui.js?v=f0d60302e07a"></script>
+<script src="data/word-diagnosis.js?v=20261025-diag1"></script>
+<script src="data/word-diagnosis-ui.js?v=20261025-diag1"></script>
+<script src="data/vocab-profile-ui.js?v=4675af1c34bf"></script>
 <script src="data/sync-device-setup.js?v=20261014-1"></script>
 <script src="data/lesson-end-recall.js?v=20261024-exclusion1"></script>
 <script src="data/guided-lesson.js?v=20261018-guided2"></script>
