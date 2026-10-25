@@ -39,8 +39,10 @@ on:
       - '.github/scripts/test-deep-teach.js'
       - '.github/scripts/suggest-vocab-goals.js'
       - '.github/scripts/test-ability-observation.js'
+      - '.github/scripts/test-word-diagnosis.js'
       - 'data/vocab-goals-review.json'
       - 'data/ability-observation.js'
+      - 'data/word-diagnosis.js'
       - '.github/scripts/check-teach.js'
       - '.github/scripts/test-teach-release.js'
       - '.github/workflows/sync-daily-vocab.yml'
@@ -195,6 +197,8 @@ jobs:
           node --check data/ability-observation.js
           node --check .github/scripts/suggest-vocab-goals.js
           node .github/scripts/test-ability-observation.js
+          node --check data/word-diagnosis.js
+          node .github/scripts/test-word-diagnosis.js
           node --check data/guided-lesson.js
           node .github/scripts/test-guided-lesson.js
           node .github/scripts/test-review-cycle.js

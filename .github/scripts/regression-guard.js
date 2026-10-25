@@ -780,6 +780,13 @@ try {
     const consumers=['.github/scripts/build-learning-runtime.js','.github/scripts/rank-review-candidates.js','.github/scripts/review-rotation.js','.github/scripts/validate-lesson-candidate.js','.github/scripts/plan-lesson-publication.js','.github/scripts/build-lesson-context.js','.github/scripts/reading-review.js','.github/scripts/check-recurrence.js','.github/scripts/publish-extensive-reading-candidate.js','data/vocab-study-coach.js','data/automation-training.js','data/home-learning-upgrade-v2.js','data/listening-word-training.js','data/lesson-end-recall.js','data/weakness-pool.js','docs/tasks/AM-LESSON.md','docs/tasks/PM-LESSON.md','docs/tasks/EXTENSIVE-READING.md','docs/tasks/DEEP-TEACH.md','docs/tasks/COMMON.md'];
     const leak=consumers.filter(f=>fs.existsSync(rel(f))&&/vocab-goals/.test(read(f)));
     okNew(leak.length===0,'goal suggestions are not read by selection, scheduling, mastery or generation'+(leak.length?' (found in: '+leak.join(', ')+')':''));
+    // §39 (2026-10-25, profile redesign step A, user-approved): word diagnosis is a pure read-only function. It must not
+    // write storage, and nothing that selects words, schedules reviews, judges mastery or generates content may read it.
+    const wd=fs.existsSync(rel('data/word-diagnosis.js'))?read('data/word-diagnosis.js'):'';
+    okNew(wd.length>0&&!/setItem|removeItem|localStorage\.|recordLessonWrong|markMastered|markWeak|removeReasons|recordPractice|markAnswer|requestVerification|MutationObserver|fetch\(/.test(wd),'word diagnosis exists and is read-only (no storage writes, no observers, no network)');
+    const wdConsumers=[...(consumers),'data/vocab-study-coach.js','data/weakness-pool.js','data/automation-training.js','data/listening-word-training.js','data/home-learning-upgrade-v2.js','data/training-sync-client.js'];
+    const wdLeak=wdConsumers.filter(f=>fs.existsSync(rel(f))&&/word-diagnosis|WordDiagnosis/.test(read(f)));
+    okNew(wdLeak.length===0,'word diagnosis is not read by selection, scheduling, mastery, training or generation scripts'+(wdLeak.length?' (found in: '+wdLeak.join(', ')+')':''));
   }
 
 } catch (e) {
