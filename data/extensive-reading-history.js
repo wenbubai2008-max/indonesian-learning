@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261024-bmkg-peringatan-hujan-lebat-jabodetabek","date":"2026-10-24","title":"BMKG Peringatkan Hujan Lebat di Jabodetabek sampai Minggu","title_cn":"气象局预警：大雅加达地区大雨将持续到周日","path":"data/extensive-reading-history/2026-10-24.js"},
 {"id":"er-20261023-surabaya-sekolah-bebas-perundungan","date":"2026-10-23","title":"Surabaya Perkuat Pendidikan Karakter agar Sekolah Bebas Perundungan","title_cn":"泗水加强品格教育，让学校远离霸凌","path":"data/extensive-reading-history/2026-10-23.js"},
 {"id":"er-20261022-puskesmas-tambal-gigi-gratis","date":"2026-10-22","title":"Tambal Gigi Gratis di Puskesmas, Warga Tak Perlu Jauh ke Klinik","title_cn":"在社区卫生中心免费补牙，居民不用再跑远去诊所","path":"data/extensive-reading-history/2026-10-22.js"},
 {"id":"er-20261021-kereta-pso-terjangkau","date":"2026-10-21","title":"Kereta Ekonomi Bersubsidi Bantu Warga Menghemat Ongkos","title_cn":"有补贴的经济列车，让居民出行更省钱","path":"data/extensive-reading-history/2026-10-21.js"},
