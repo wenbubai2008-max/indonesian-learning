@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "generated_at": "2026-10-25T10:51:40.735Z",
-  "source_updated_at": "2026-10-25T05:09:00.594Z",
+  "generated_at": "2026-10-25T14:00:45.721Z",
+  "source_updated_at": "2026-10-25T13:31:28.827Z",
   "taught_total": 931,
-  "confirmed_mastered": 222,
-  "needs_reinforcement": 660,
-  "excluded_from_training": 49,
+  "confirmed_mastered": 199,
+  "needs_reinforcement": 647,
+  "excluded_from_training": 85,
   "unverified": 0,
-  "mastery_percent": 23.8,
+  "mastery_percent": 21.4,
   "primary_master_total": 977,
   "primary_taught_unique": 530,
   "primary_unlearned_total": 447,
   "primary_coverage_percent": 54.2,
   "primary_eligible_new_total": 117,
-  "focus_total": 659,
+  "focus_total": 646,
   "focus_words": [
     {
       "word": "perpaduan",
@@ -95,6 +95,19 @@
       "cn": "有效期至"
     },
     {
+      "word": "mengakhiri",
+      "score": 96,
+      "signals": [
+        "quick_wrong",
+        "lesson_wrong",
+        "fuzzy"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-10-25T13:10:06.986Z",
+      "last_review": "2026-10-25T13:10:06.986Z",
+      "cn": "结束；终止（让某事停下来）"
+    },
+    {
       "word": "tepat",
       "score": 88,
       "signals": [
@@ -106,19 +119,6 @@
       "last_wrong": "2026-10-21T01:41:38.712Z",
       "last_review": "2026-10-25T01:52:18.277Z",
       "cn": "准确的；恰好；正好"
-    },
-    {
-      "word": "mengabaikan",
-      "score": 88,
-      "signals": [
-        "lesson_wrong",
-        "dont",
-        "fuzzy"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-10-15T03:20:48.795Z",
-      "last_review": "2026-10-19T05:59:55.698Z",
-      "cn": "忽视；不理会"
     }
   ],
   "definitions": {

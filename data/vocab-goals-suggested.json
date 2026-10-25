@@ -4,16 +4,16 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 804,
+   "use": 807,
    "recognize": 104,
    "unsure": 20,
    "fast": 130
   },
   "active": {
-   "use": 550,
-   "recognize": 89,
+   "use": 541,
+   "recognize": 88,
    "unsure": 18,
-   "fast": 56
+   "fast": 53
   }
  },
  "words": {
@@ -89,7 +89,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 879 位"
    ]
@@ -3315,7 +3315,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 22 位"
    ]
@@ -3352,7 +3352,7 @@
    "goal": "use",
    "fast": true,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "日常高频表达（口语）",
     "977 主库第 313 位"
@@ -3371,7 +3371,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 245 位"
    ]
@@ -3390,7 +3390,7 @@
    "goal": "use",
    "fast": true,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "日常高频表达（口语）",
     "977 主库第 132 位"
@@ -3409,7 +3409,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 552 位"
    ]
@@ -3614,7 +3614,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 13 位"
    ]
@@ -3736,7 +3736,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 33 位"
    ]
@@ -4085,7 +4085,7 @@
    "goal": "recognize",
    "fast": false,
    "by": "review",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "书面或描写用语：读懂即可，口语有更常用的说法",
     "977 主库第 72 位"
@@ -4327,7 +4327,7 @@
    "goal": "use",
    "fast": true,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "日常高频表达（口语）",
     "977 主库第 944 位"
@@ -5825,7 +5825,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 945 位"
    ]
@@ -6073,7 +6073,7 @@
    "goal": "use",
    "fast": false,
    "by": "review",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "生活或工作常用：要能说出来",
     "977 主库第 889 位"
@@ -7103,9 +7103,9 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 B2 / S"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "peralatan": {
@@ -8575,6 +8575,33 @@
    "status": "active",
    "why": [
     "977 主库第 571 位"
+   ]
+  },
+  "kebijakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 484 位"
+   ]
+  },
+  "mengakhiri": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 431 位"
+   ]
+  },
+  "angka": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 509 位"
    ]
   }
  }

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-25T10:51:35.110Z",
+  "generated_at": "2026-10-25T14:00:45.557Z",
   "lesson_watermark": "2026-10-25 18:00",
   "master_unique": 977,
   "primary_new_pool_total": 117,
-  "secondary_master_unique": 314,
+  "secondary_master_unique": 313,
   "secondary_new_pool_total": 189,
   "active_master_pool": "primary_977",
   "handoff": {
@@ -14,8 +14,8 @@
     "secondary_available": 189,
     "switched_at": ""
   },
-  "weak_active_total": 1456,
-  "weak_mastered_total": 971,
+  "weak_active_total": 1443,
+  "weak_mastered_total": 948,
   "daily_taught_unique": 931,
   "primary_taught_unique": 530,
   "primary_unlearned_total": 447,
@@ -23,8 +23,8 @@
   "new_pool_dont_total": 0,
   "new_pool_fuzzy_total": 117,
   "new_pool_unclassified_total": 0,
-  "review_pool_total": 660,
-  "focus_pool_total": 659,
+  "review_pool_total": 647,
+  "focus_pool_total": 646,
   "listening_focus_pool_total": 2,
   "oral_new_pool_total": 1,
   "rules": {

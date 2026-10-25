@@ -3025,17 +3025,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "motif",
-    "cn": "图案；花纹；动机",
-    "en": "motif; pattern; motive",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "dont"
-  },
-  {
     "word": "peralatan",
     "cn": "设备；工具用品",
     "en": "equipment; tools",
