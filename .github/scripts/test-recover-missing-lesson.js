@@ -401,7 +401,7 @@ test('formal PM validator enforces precise AM source without invalidating immuta
  let result=validate({lesson:candidate,...params});
  assert(result.ok,'Correct V2 labels must be accepted: '+JSON.stringify(result.errors));
  const mistaken=JSON.parse(JSON.stringify(candidate));
- mistaken.vocab.find(v=>v.word==='niat').usage_note='今天08:00新学；晚课作为 application 主动复现。';
+ mistaken.vocab.find(v=>v.word==='niat').usage_note='今天08:00新学；晚课里再主动用出来。';
  result=validate({lesson:mistaken,...params});
  assert(!result.ok,'Old niat must never be falsely marked as AM new');
  assert(result.errors.some(e=>e.code==='AM_MARKER_FALSE'&&e.detail==='niat'),

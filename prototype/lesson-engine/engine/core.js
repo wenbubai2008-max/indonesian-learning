@@ -285,9 +285,9 @@
       const amNew=new Set((ctx.same_day_am?.vocab||[]).map(x=>norm(Array.isArray(x)?x[0]:x?.word)));
       const amReview=new Set((ctx.same_day_am?.review_vocab||[]).map(x=>norm(typeof x==='string'?x:x?.word)));
       card.usage_note=group==='application'
-        ?(amNew.has(k)?'今天08:00新学；晚课作为 application 主动复现。'
-          :amReview.has(k)?'今天08:00复习过的老词；晚课作为 application 再次复现。'
-          :'此前已正式学习的老词；晚课作为 application 主动复现。')
+        ?(amNew.has(k)?'今天08:00新学；晚课里再主动用出来。'
+          :amReview.has(k)?'今天08:00复习过的老词；晚课里再用一次。'
+          :'此前已正式学习的老词；晚课里主动用出来。')
         :group==='review'?'已正式学习；本晚课进行主动复习。'
         :(e.note||d.usage_note||'本晚课新词；重点掌握常见搭配、语体和3秒主动提取。');
       card.source_group=group;card.is_new=group==='new';

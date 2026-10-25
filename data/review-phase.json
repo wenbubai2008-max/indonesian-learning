@@ -1,0 +1,26 @@
+{
+ "version": 1,
+ "active": false,
+ "activated_at": null,
+ "theme_start_date": null,
+ "note": "复习阶段新规则（2026-10-25 放入，休眠中）。active 不是 true 时，所有脚本、校验和任务说明书都按现在的规则运行，本文件其余内容不生效。学完新词、用户通知后才启用，步骤见 docs/tasks/REVIEW-PHASE.md 第七节。",
+ "counts": {
+  "am_cards": [5, 7],
+  "am_target": 6,
+  "am_reading": [60, 100],
+  "pm_core": [6, 8],
+  "pm_target": 7,
+  "pm_new": [0, 3],
+  "pm_review": [4, 6],
+  "pm_application": [1, 3],
+  "pm_dialogue": [8, 12]
+ },
+ "recurrence_min": {
+  "am": 6,
+  "pm": 8
+ },
+ "ranking": {
+  "skip_goal": "recognize",
+  "fast_bonus": 8
+ }
+}
