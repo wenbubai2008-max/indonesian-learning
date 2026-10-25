@@ -52,7 +52,7 @@ t('lesson-end self-report counts for production only when recognition is reliabl
   assert.equal(r.type,'production');assert.ok(r.evidence.some(e=>e.includes('只是自我感觉')));
   assert.equal(dx({quick:quick(1,3,'wrong'),recall}).type,'meaning');
 });
-t('mastered earlier then wrong again → 反复遗忘 (primary only when no layer explains it)',()=>{
+t('mastered earlier then wrong again → 掌握后又答错 (primary only when no layer explains it)',()=>{
   const weak={status:'active',last_mastered:iso(10),last_wrong:iso(2),wrong_count:2};
   assert.equal(dx({quick:quick(4,0),weak}).type,'forgetting');
   const both=dx({quick:quick(1,4,'wrong'),weak});

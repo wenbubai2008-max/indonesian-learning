@@ -7,7 +7,7 @@
 //   listening   recognition is reliable, but listening is repeatedly wrong or slow
 //   production  recognition is reliable, but automatic training fails repeatedly (hinted passes are by design, not failures)
 //               or the lesson-end self-report says 想不起来 on most recent days (labelled as self-report)
-//   forgetting  mastered earlier, answered wrong later (weakness record: last_wrong after last_mastered)
+//   forgetting  (shown as 掌握后又答错 — 反复遗忘 is the weekly report's own, different, definition) mastered earlier, answered wrong later (weakness record: last_wrong after last_mastered)
 //   unclear     records exist but the layer below is not proven yet, so no cause is guessed
 //   insufficient too few records
 //   recognized   recognition is fine, but listening / automatic training were never tested — NOT "no problem" (real data 2026-10-25:
@@ -19,7 +19,7 @@
 })(typeof window!=='undefined'?window:globalThis,function(){
   'use strict';
   const CFG={min_records:3,recog_min_right:2,recog_fail_wrong:2,recog_fail_ratio:.5,listen_fail_streak:2,listen_fail_rate:.5,auto_fail_streak:2,auto_fail_total:3,recall_window:3,recall_fail_min:2};
-  const LABEL={excluded:'已退出训练',meaning:'意思记不住',listening:'听不出来',production:'说不出来',forgetting:'反复遗忘',unclear:'原因待确认',insufficient:'待验证',recognized:'认得没问题',ok:'各层都验证过，暂无问题'};
+  const LABEL={excluded:'已退出训练',meaning:'意思记不住',listening:'听不出来',production:'说不出来',forgetting:'掌握后又答错',unclear:'原因待确认',insufficient:'待验证',recognized:'认得没问题',ok:'各层都验证过，暂无问题'};
   const NEXT={
     meaning:{train:'quick',text:'快速练习（看印尼语选中文），并回看词义和例句'},
     listening:{train:'listen',text:'听词训练（只听声音判断词义）'},

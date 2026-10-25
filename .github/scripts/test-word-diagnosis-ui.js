@@ -41,10 +41,10 @@ t('detail: groups follow the fixed order, sort by confidence then records, cap a
   for(let i=0;i<17;i++)items.push(item('w'+String(i).padStart(2,'0'),'forgetting','medium',4));
   const h=UI.detailHTML(model({items,cnOf:w=>w==='kebutuhan'?'需求<b>':''}));
   const at=g=>h.indexOf('<summary>'+g);
-  assert.ok(at('意思记不住')>-1&&at('意思记不住')<at('听不出来')&&at('听不出来')<at('说不出来')&&at('说不出来')<at('反复遗忘'));
+  assert.ok(at('意思记不住')>-1&&at('意思记不住')<at('听不出来')&&at('听不出来')<at('说不出来')&&at('说不出来')<at('掌握后又答错'));
   assert.doesNotMatch(h,/<img/);assert.match(h,/&lt;img src=x onerror=1&gt;/);assert.match(h,/需求&lt;b&gt;/);
   assert.match(h,/还没有|还有 2 个/);assert.equal((h.match(/class="vdItem"/g)||[]).length,1+1+1+15);
-  assert.match(h,/也有：反复遗忘/);assert.match(h,/近 30 天：之前答错过、现在已掌握 <b>46<\/b> 个/);
+  assert.match(h,/也有：掌握后又答错/);assert.match(h,/近 30 天：之前答错过、现在已掌握 <b>46<\/b> 个/);
   assert.match(h,/认得没问题、但听词或自动训练还没测：637 个/);assert.match(h,/记录不足（少于 3 次）：254 个/);assert.match(h,/已选择不再训练：49 个/);
 });
 t('detail: "原因待确认" starts collapsed, problem groups start open; empty groups are not rendered',()=>{
@@ -52,6 +52,24 @@ t('detail: "原因待确认" starts collapsed, problem groups start open; empty 
   assert.match(h,/<details class="vdGroup" open><summary>意思记不住/);assert.match(h,/<details class="vdGroup"><summary>原因待确认/);
   assert.doesNotMatch(h,/听不出来 <b>/);
   assert.match(UI.detailHTML(model({items:[]})),/目前没有发现需要单独处理的词/);
+});
+t('tags: only the four clear problem types get a tag; uncertain or fine words stay untagged',()=>{
+  for(const ty of ['meaning','listening','production','forgetting'])assert.match(UI.tagHTML(item('w',ty,'high',5)),new RegExp('vdTag-'+ty));
+  assert.match(UI.tagHTML(item('w','forgetting','high',5)),/掌握后又答错/);
+  for(const ty of ['unclear','insufficient','recognized','ok','excluded'])assert.equal(UI.tagHTML(item('w',ty,null,1)),'');
+  assert.equal(UI.tagHTML(null),'');
+  assert.doesNotMatch(UI.tagHTML(item('w','meaning','high',5,{evidence:['<script>x</script>']})),/<script>/);
+});
+t('word page block: type, confidence, evidence list, how to practise, next verification in Jakarta date; excluded words get nothing',()=>{
+  const r=item('kebutuhan','production','medium',8,{evidence:['快速练习：答对 5 次','自动训练：5 次中失败 3 次'],secondary:['forgetting'],next:{verify_at:'2026-10-27T18:30:00Z'}});
+  const h=UI.wordHTML(r);
+  assert.match(h,/能力诊断/);assert.match(h,/vdTag-production">说不出来/);assert.match(h,/把握：中/);
+  assert.equal((h.match(/<li>/g)||[]).length,2);assert.match(h,/也有：掌握后又答错/);assert.match(h,/怎么练|用自动训练/);
+  assert.match(h,/下一次验证：10 月 28 日/,'27th 18:30Z is the 28th 01:30 in Jakarta');
+  assert.equal(UI.wordHTML(item('x','excluded',null,0)),'');assert.equal(UI.wordHTML(null),'');
+  const ins=UI.wordHTML(item('y','insufficient',null,1,{evidence:[],label:'待验证'}));
+  assert.match(ins,/vdTag-plain">待验证/);assert.match(ins,/少于 3 次/);assert.doesNotMatch(ins,/把握/);
+  assert.match(UI.wordHTML(item('z','recognized',null,4,{label:'认得没问题，听词、自动训练还没测'})),/认得没问题，听词、自动训练还没测/);
 });
 t('browser wrapper: reads the stored records once (memoised), writes nothing, falls back to "" when the diagnosis module is missing',()=>{
   const reads=[],writes=[],store={
@@ -67,6 +85,9 @@ t('browser wrapper: reads the stored records once (memoised), writes nothing, fa
   assert.match(a,/认得/);assert.match(b,/晒太阳/);assert.match(b,/需求/);
   win.WordDiagnosisUI.homeCard(data);win.WordDiagnosisUI.detail(data);
   assert.equal(reads.length,once,'second render inside the memo window reads nothing');
+  assert.match(win.WordDiagnosisUI.word('berjemur'),/vdTag-meaning/);assert.match(win.WordDiagnosisUI.tag('berjemur'),/意思记不住/);assert.match(win.WordDiagnosisUI.tag('kebutuhan'),/说不出来/);assert.equal(win.WordDiagnosisUI.tag('word-without-records'),'','no records → no tag');
+  assert.equal(reads.length,once,'word() and tag() reuse the same snapshot');
+  win.WordDiagnosisUI.reset();win.WordDiagnosisUI.tag('berjemur');assert.ok(reads.length>once,'reset() forces a fresh read');
   assert.deepEqual(writes,[]);
   const bare={localStorage:win.localStorage};bare.window=bare;
   vm.runInNewContext(fs.readFileSync(path.join(repo,'data/word-diagnosis-ui.js'),'utf8'),bare);

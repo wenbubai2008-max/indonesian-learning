@@ -661,6 +661,7 @@ try {
   ok(/#home \.homeLearningGrid > #vocabCoachHome,#home \.homeLearningGrid > #vocabProfile\{[^}]*min-height:273px/.test(index), 'home first paint reserves the final height of the coach/profile cards (desktop; 2026-10-25 coverage-ladder card measured 273px)');
   ok(/@media\(max-width:900px\) and \(min-width:761px\)\{[^}]*#vocabCoachHome[^}]*\{min-height:291px\}\}/.test(index), 'home first paint reserves the final height of the coach/profile cards (narrow two-column)');
   ok(/#home \.homeLearningGrid > #vocabCoachHome\{min-height:191px\}/.test(index) && /#home \.homeLearningGrid > #vocabProfile\{min-height:273px\}/.test(index) && /@media\(max-width:350px\)\{#home \.homeLearningGrid > #vocabProfile\{min-height:291px\}\}/.test(index), 'home first paint reserves the final height of the coach/profile cards (phones, stacked; 273px, 291px on very narrow screens)');
+  ok(/@media\(max-width:480px\)\{#home \.homeLearningGrid > #vocabCoachHome\{min-height:209px\}\}/.test(index) && /@media\(max-width:328px\)\{#home \.homeLearningGrid > #vocabCoachHome\{min-height:235px\}\}/.test(index) && /@media\(max-width:324px\)\{#home \.homeLearningGrid > #vocabCoachHome\{min-height:253px\}\}/.test(index), 'coach card reserves the height it grows to once it has tasks (2026-10-25: 209px up to 480px wide, 235/253px on the narrowest screens), so the shortcuts row below no longer moves');
   ok(!/#vocabCoachHome,#home \.homeLearningGrid > #vocabProfile\{min-height:0\}/.test(index), 'coach/profile placeholder height must never collapse to 0 on phones');
   ok(index.includes("loadReading('pm')\">18:00短文"), 'index source PM reading button first paint is 18:00');
   ok(index.includes("const PM_SWITCH_DATE='2026-09-16'") && /function pmTimeForDate\(d\)/.test(index), 'index source keeps historical PM switch date');
@@ -824,6 +825,8 @@ try {
     okNew(/word-diagnosis\.js\?v=[^"]+"><\/script>\s*<script src="data\/word-diagnosis-ui\.js\?v=[^"]+"><\/script>\s*<script src="data\/vocab-profile-ui\.js/.test(indexHtml),'diagnosis modules load right before the profile UI');
     const vpui=read('data/vocab-profile-ui.js');
     okNew(vpui.includes('WordDiagnosisUI.homeCard(')&&vpui.includes('legacyHomeCard(')&&vpui.includes('function markHomeDirty()'),'profile UI builds the home card from the diagnosis UI, keeps the old card as fallback, and only refreshes it while the home page is visible');
+    // §42 (2026-10-25, step B2): word page diagnosis block, task-row tags (home tag only while the home page is visible), "掌握后又答错" naming.
+    okNew(vpui.includes('WordDiagnosisUI.word(detail.word)')&&vpui.includes('function diagTag(')&&vpui.includes('homeOn?diagTag(next.word)')&&read('data/word-diagnosis.js').includes("forgetting:'掌握后又答错'")&&!/forgetting:'反复遗忘'/.test(read('data/word-diagnosis.js')+read('data/word-diagnosis-ui.js')),'word page shows the diagnosis block, task rows carry diagnosis tags, and the diagnosis never reuses the weekly report\'s name 反复遗忘');
   }
 
 } catch (e) {

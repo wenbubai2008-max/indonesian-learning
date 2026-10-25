@@ -16,9 +16,11 @@
     if(Number(ms)<1e12)return '现在可练'; // never practised: the scheduler's due time is only a placeholder near 1970
     return new Date(ms).toLocaleString('zh-CN',{timeZone:'Asia/Jakarta',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
   }
+  // Diagnosis tag for a word (data/word-diagnosis-ui.js); '' when the module is missing or the word has no clear problem.
+  function diagTag(w){return window.WordDiagnosisUI?window.WordDiagnosisUI.tag(w):''}
   function taskListHTML(rows){
     if(!rows.length)return '<div class="vpCoachEmpty">当前没有到期的重点任务。先正常上课；到时间后才会再安排，不为凑题重复出现。</div>';
-    return '<div class="vpCoachList">'+rows.map(x=>'<div class="vpCoachRow"><div><b>'+esc(x.word)+' · '+esc(x.cn)+'</b><small>'+esc(x.note)+' · '+esc(modeNames[x.mode]||'针对训练')+'</small></div><button type="button" data-coach-start="'+esc(x.word)+'" data-coach-mode="'+esc(x.mode)+'">练这个</button></div>').join('')+'</div>';
+    return '<div class="vpCoachList">'+rows.map(x=>'<div class="vpCoachRow"><div><b>'+esc(x.word)+' · '+esc(x.cn)+'</b> '+diagTag(x.word)+'<small>'+esc(x.note)+' · '+esc(modeNames[x.mode]||'针对训练')+'</small></div><button type="button" data-coach-start="'+esc(x.word)+'" data-coach-mode="'+esc(x.mode)+'">练这个</button></div>').join('')+'</div>';
   }
   function openCoachTask(word,mode){
     const api=localCoach(),item=api&&(mode?api.status(mode,word):api.detail(word));
@@ -39,8 +41,8 @@
     let el=document.getElementById('vocabCoachHome');
     if(!el){el=document.createElement('section');el.id='vocabCoachHome';el.className='vpCoachHome';profile.insertAdjacentElement('beforebegin',el)}
     const rows=api.plan(),progress=api.dailyProgress();
-    const next=rows[0]||null,ratio=progress.total?Math.round(progress.done/progress.total*100):0;
-    el.innerHTML='<div class="vpCoachTop"><div><h3>今天最该练什么</h3><p>已作答 '+progress.done+'/'+progress.total+' · 建议任务待练 '+rows.length+' 个'+(progress.waiting?' · 等待验证 '+progress.waiting+' 个':'')+'</p></div><button type="button" id="vpCoachStart" '+(!next?'disabled':'')+'>开始今日训练 →</button></div><div class="vpHomeProgress" aria-label="今日任务进度"><span style="width:'+Math.max(0,Math.min(100,ratio))+'%"></span></div>'+(next?'<div class="vpHomeNext"><small>下一个建议训练 · '+esc(modeNames[next.mode]||'专项训练')+'</small><b>'+esc(next.word)+'</b><span>'+esc(next.cn)+'</span></div>':'<div class="vpHomeDone">'+(progress.waiting?'当前任务均在等待验证时间，到期后再练。':'今日建议任务已作答；各专项仍可继续练习其他到期词。')+'</div>')+'<button class="vpHomeMore" type="button" id="vpCoachAll">查看全部任务 →</button>';
+    const next=rows[0]||null,ratio=progress.total?Math.round(progress.done/progress.total*100):0,homeOn=home.classList.contains('active');
+    el.innerHTML='<div class="vpCoachTop"><div><h3>今天最该练什么</h3><p>已作答 '+progress.done+'/'+progress.total+' · 建议任务待练 '+rows.length+' 个'+(progress.waiting?' · 等待验证 '+progress.waiting+' 个':'')+'</p></div><button type="button" id="vpCoachStart" '+(!next?'disabled':'')+'>开始今日训练 →</button></div><div class="vpHomeProgress" aria-label="今日任务进度"><span style="width:'+Math.max(0,Math.min(100,ratio))+'%"></span></div>'+(next?'<div class="vpHomeNext"><small>下一个建议训练 · '+esc(modeNames[next.mode]||'专项训练')+'</small><b>'+esc(next.word)+'</b><span>'+esc(next.cn)+'</span>'+(homeOn?diagTag(next.word):'')+'</div>':'<div class="vpHomeDone">'+(progress.waiting?'当前任务均在等待验证时间，到期后再练。':'今日建议任务已作答；各专项仍可继续练习其他到期词。')+'</div>')+'<button class="vpHomeMore" type="button" id="vpCoachAll">查看全部任务 →</button>';
     el.querySelector('#vpCoachStart').onclick=()=>{if(next)openCoachTask(next.word,next.mode)};
     el.querySelector('#vpCoachAll').onclick=()=>openDetail('today');
   }
@@ -91,7 +93,7 @@
     const resultNames={direct:'快速提取',slow:'提取较慢',right:'正确',self_checked:'本人核对表达',stable:'延迟通过',hinted:'使用提示',fail:'未能提取',wrong:'答错',fast_first:'首次听懂'};
     const fw=((PROFILE&&PROFILE.focus_words)||[]).find(w=>normWord(w.word)===normWord(detail.word));
     const weakLine=fw?weakDetailHTML(fw):'';
-    return '<div class="vpSection"><h3>'+esc(detail.word)+' · '+esc(detail.cn)+'</h3><span class="vpSignal">'+esc(status)+'</span>'+weakLine+'<div class="vpCoverageNote">下一次建议：'+esc(Number.isFinite(detail.due_at)?jakartaTime(detail.due_at):'常规训练暂停或尚未安排')+'（雅加达） · '+esc(detail.note)+'</div><div class="vpCoachButtons"><button type="button" data-coach-start="'+esc(detail.word)+'" data-coach-mode="'+esc(detail.mode)+'" '+(!detail.ready?'disabled':'')+'>到期后练这个 · '+esc(modeNames[detail.mode])+'</button><button type="button" class="secondary" data-coach-known="'+esc(detail.word)+'">我会了 · 明天验证</button></div>'+skillInfo+'<h3 style="margin-top:15px">真实学习轨迹</h3>'+(ev.length?'<div class="vpWordTrail">'+ev.map(e=>'<div><b>'+esc(e.at.slice(0,16).replace('T',' '))+' UTC</b> · '+esc(names[e.source]||e.source)+' · '+esc(resultNames[e.result]||e.result)+'</div>').join('')+'</div>':'<div class="vpEmpty">还没有本机答题事件。正式学过不等于已经掌握，也不补造旧记录。</div>')+'</div>';
+    return '<div class="vpSection"><h3>'+esc(detail.word)+' · '+esc(detail.cn)+'</h3><span class="vpSignal">'+esc(status)+'</span>'+(window.WordDiagnosisUI?window.WordDiagnosisUI.word(detail.word):'')+weakLine+'<div class="vpCoverageNote">下一次建议：'+esc(Number.isFinite(detail.due_at)?jakartaTime(detail.due_at):'常规训练暂停或尚未安排')+'（雅加达） · '+esc(detail.note)+'</div><div class="vpCoachButtons"><button type="button" data-coach-start="'+esc(detail.word)+'" data-coach-mode="'+esc(detail.mode)+'" '+(!detail.ready?'disabled':'')+'>到期后练这个 · '+esc(modeNames[detail.mode])+'</button><button type="button" class="secondary" data-coach-known="'+esc(detail.word)+'">我会了 · 明天验证</button></div>'+skillInfo+'<h3 style="margin-top:15px">真实学习轨迹</h3>'+(ev.length?'<div class="vpWordTrail">'+ev.map(e=>'<div><b>'+esc(e.at.slice(0,16).replace('T',' '))+' UTC</b> · '+esc(names[e.source]||e.source)+' · '+esc(resultNames[e.result]||e.result)+'</div>').join('')+'</div>':'<div class="vpEmpty">还没有本机答题事件。正式学过不等于已经掌握，也不补造旧记录。</div>')+'</div>';
   }
   function wordsHTML(){
     const chips=[['weak','弱词'],['due','到期'],['recent','最近练过']].map(f=>'<button type="button" class="vpFilter'+(wordFilter===f[0]?' active':'')+'" data-vp-filter="'+f[0]+'">'+f[1]+'</button>').join('');
@@ -159,7 +161,7 @@
     renderWeekDelta();
   }
   // Practice events only mark the card dirty; it is rebuilt when the home page is on screen, never per answer on a training page.
-  function flushHome(){if(!homeDirty)return;homeDirty=false;if(window.WordDiagnosisUI)window.WordDiagnosisUI.reset();renderHomeCard()}
+  function flushHome(){if(!homeDirty)return;homeDirty=false;if(window.WordDiagnosisUI)window.WordDiagnosisUI.reset();renderHomeCard();renderHomeCoach()}
   function markHomeDirty(){homeDirty=true;const h=document.getElementById('home');if(h&&h.classList.contains('active'))flushHome()}
   function mount(data){
     PROFILE=data;const home=document.getElementById('home');if(!home)return;
@@ -199,10 +201,10 @@
     // daily net change of needs_reinforcement (positive = backlog grows)
     const ch=rows.slice(1).map((x,i)=>x.needs_reinforcement-rows[i].needs_reinforcement),hasNeg=ch.some(v=>v<0),BH=hasNeg?104:80,mid=hasNeg?BH/2:BH-6,upRoom=mid-16,downRoom=hasNeg?BH-mid-14:0,amp=Math.max(10,...ch.map(Math.abs)); // baseline sits at the bottom while nothing is negative
     const bw=pw/ch.length;let b='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+mid+'" y2="'+mid+'" stroke="#cfd6e4"/>';
-    ch.forEach((v,i)=>{const h=Math.abs(v)/amp*(v>=0?upRoom:downRoom),y=v>=0?mid-h:mid;b+='<rect x="'+(L+i*bw+bw*0.15).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+(bw*0.7).toFixed(1)+'" height="'+Math.max(h,v?1:0).toFixed(1)+'" fill="'+(v>0?'#c2410c':v<0?'#15803d':'#cfd6e4')+'"/>'+(v?'<text x="'+(L+i*bw+bw/2).toFixed(1)+'" y="'+(v>0?y-3:y+h+10).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#667085">'+sign(v)+'</text>':'')});
+    ch.forEach((v,i)=>{const h=Math.abs(v)/amp*(v>=0?upRoom:downRoom),y=v>=0?mid-h:mid;b+='<rect x="'+(L+i*bw+bw*0.15).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+(bw*0.7).toFixed(1)+'" height="'+Math.max(h,v?1:0).toFixed(1)+'" fill="'+(v>0?'#c2410c':v<0?'#15803d':'#cfd6e4')+'"><title>'+esc(rows[i+1].date+'：'+sign(v))+'</title></rect>'+(v&&(i===ch.findIndex(z=>Math.abs(z)===amp)||i===ch.length-1)?'<text x="'+(L+i*bw+bw/2).toFixed(1)+'" y="'+(v>0?y-3:y+h+10).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#667085">'+sign(v)+'</text>':'')});
     const bars='<svg class="vpChart" viewBox="0 0 '+W+' '+BH+'" role="img" aria-label="每天“需要加强”的净增减">'+b+'</svg>';
     return '<div class="vpTrendNote"><b>'+esc(summary)+'</b></div>'+line+
-      '<div class="vpTrendNote" style="margin-top:14px"><b>每天“需要加强”净增减</b>（橙色向上=积压增加，绿色向下=清账）</div>'+bars+
+      '<div class="vpTrendNote" style="margin-top:14px"><b>每天“需要加强”净增减</b>（橙色向上=积压增加，绿色向下=清账；只标出最大和最近一天，指向柱子可看每天的数）</div>'+bars+
       '<div class="vpTrendNote">口径：“确认掌握”只统计你在练习中标记为已掌握的词，不是客观测验；“需要加强”是已教但仍需复习的词。</div>';
   }
   function weakDetailHTML(w){
