@@ -7928,17 +7928,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-08 08:00",
+    "last_seen": "2026-10-25 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-10-25"
     ],
     "lesson_occurrences": [
-      "2026-09-08 08:00"
+      "2026-09-08 08:00",
+      "2026-10-25 08:00"
     ]
   },
   {
@@ -8629,19 +8631,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 19:00",
+    "last_seen": "2026-10-25 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-10-25"
     ],
     "lesson_occurrences": [
       "2026-09-10 08:00",
-      "2026-09-10 19:00"
+      "2026-09-10 19:00",
+      "2026-10-25 08:00"
     ]
   },
   {
@@ -9048,17 +9052,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 08:00",
+    "last_seen": "2026-10-25 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-11"
+      "2026-09-11",
+      "2026-10-25"
     ],
     "lesson_occurrences": [
-      "2026-09-11 08:00"
+      "2026-09-11 08:00",
+      "2026-10-25 08:00"
     ]
   },
   {
@@ -15118,19 +15124,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 18:00",
-    "last_seen": "2026-09-27 18:00",
+    "last_seen": "2026-10-25 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-10-25"
     ],
     "lesson_occurrences": [
-      "2026-09-27 18:00"
+      "2026-09-27 18:00",
+      "2026-10-25 08:00"
     ]
   },
   {
@@ -15332,17 +15342,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-10-25 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-25"
     ],
     "lesson_occurrences": [
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-10-25 08:00"
     ]
   },
   {
@@ -24744,6 +24756,258 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-24 18:00"
+    ]
+  },
+  {
+    "word": "dompet",
+    "cn": "钱包",
+    "en": "wallet",
+    "root": "",
+    "root_cn": "",
+    "example": "Kalau naik kereta yang penuh, saya selalu menyembunyikan dompet di saku dalam jaket.",
+    "example_cn": "坐拥挤的电车时，我总是把钱包藏在夹克的内袋里。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 08:00"
+    ]
+  },
+  {
+    "word": "lapor",
+    "cn": "报告；报案；报到",
+    "en": "to report",
+    "root": "lapor",
+    "root_cn": "报告",
+    "example": "Kalau melihat orang mencuri di dalam kereta, langsung lapor ke petugas, jangan dikejar sendiri.",
+    "example_cn": "如果在电车里看到有人偷东西，马上报告工作人员，别自己去追。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 08:00"
+    ]
+  },
+  {
+    "word": "kejadian",
+    "cn": "事件；发生的事",
+    "en": "incident; event",
+    "root": "jadi",
+    "root_cn": "成为；发生",
+    "example": "Polisi masih mencari saksi kecelakaan itu; siapa saja yang melihat kejadiannya diminta menghubungi nomor ini.",
+    "example_cn": "警方还在寻找那起事故的目击者；凡是看到事发经过的人，请联系这个号码。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 08:00"
+    ]
+  },
+  {
+    "word": "petugas",
+    "cn": "工作人员（执勤人员）",
+    "en": "officer; staff on duty",
+    "root": "tugas",
+    "root_cn": "任务；职责",
+    "example": "Petugas di stasiun itu cenderung sabar menjawab pertanyaan, walaupun stasiunnya sedang ramai sekali.",
+    "example_cn": "那个车站的工作人员一般都很耐心地回答问题，即使车站里人非常多的时候也一样。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 08:00"
+    ]
+  },
+  {
+    "word": "penumpang",
+    "cn": "乘客",
+    "en": "passenger",
+    "root": "tumpang",
+    "root_cn": "搭乘；借住",
+    "example": "Begitu pintu kereta dibuka, para penumpang yang tidak sabar langsung berebut masuk.",
+    "example_cn": "车门一打开，那些等不及的乘客就抢着往里挤。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 08:00"
+    ]
+  },
+  {
+    "word": "menangkap",
+    "cn": "抓住；接住；领会",
+    "en": "to catch",
+    "root": "tangkap",
+    "root_cn": "抓；捕",
+    "example": "Untung Kakak cepat menangkap gelas yang hampir jatuh dari meja.",
+    "example_cn": "幸好哥哥手快，接住了快要从桌上掉下去的杯子。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 08:00"
+    ]
+  },
+  {
+    "word": "malahan",
+    "cn": "反而；甚至",
+    "en": "on the contrary; instead",
+    "root": "malah",
+    "root_cn": "反而",
+    "example": "Saya kira satpam akan menuduh saya mencuri waktu alarm toko berbunyi, ternyata dia malahan minta maaf karena alarmnya memang sering rusak.",
+    "example_cn": "商店警报响的时候，我以为保安会说我偷东西，没想到他反而向我道歉，因为那个警报本来就经常出毛病。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 08:00"
+    ]
+  },
+  {
+    "word": "ramah",
+    "cn": "友善；和气",
+    "en": "friendly",
+    "root": "ramah",
+    "root_cn": "友善",
+    "example": "Penjual di warung itu ramah sekali; kalau uang kita kurang sedikit, dia bilang bayar besok saja.",
+    "example_cn": "那家小店的老板特别和气；要是我们的钱差一点，他就说明天再付好了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 08:00"
+    ]
+  },
+  {
+    "word": "berhasil",
+    "cn": "成功（做成某事）",
+    "en": "to succeed",
+    "root": "hasil",
+    "root_cn": "结果；收获",
+    "example": "Setelah tiga kali gagal, adik saya akhirnya berhasil mengetik dengan sepuluh jari tanpa melihat keyboard.",
+    "example_cn": "失败了三次之后，我弟弟终于能不看键盘用十个手指打字了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 08:00"
+    ]
+  },
+  {
+    "word": "terakhir",
+    "cn": "最后的；最近一次的",
+    "en": "last",
+    "root": "akhir",
+    "root_cn": "结束；末尾",
+    "example": "Kapan terakhir kali kamu bener-bener nyantai tanpa pegang HP?",
+    "example_cn": "你上一次真正放松、不碰手机是什么时候？（bener-bener = benar-benar，pegang = memegang）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 08:00"
     ]
   }
 ];

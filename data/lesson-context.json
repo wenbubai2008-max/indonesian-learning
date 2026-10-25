@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-25",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 65
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-24T23:40:39.704Z",
-    "lesson_watermark": "2026-10-24 18:00",
-    "index_updated": "2026-10-24",
-    "runtime_hash": "5e441d7e131e956b9596a63b14d266b9316e1ceabd2b7b85304f380873e19534",
-    "index_hash": "76346cca00bcd7cfcf05c048226bdf6972e6e8b86b4d76a24300c87165c1087b",
+    "runtime_generated_at": "2026-10-25T00:31:22.275Z",
+    "lesson_watermark": "2026-10-25 08:00",
+    "index_updated": "2026-10-25",
+    "runtime_hash": "d6bd8d24257d5180b8a413db665e77176a910855d58d2a8b354a3f5dd35cba41",
+    "index_hash": "10e5fbfb72f55bc87c5c59cf3fce72f04b33b8a4a769993efe45308d4e8b3218",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -151,16 +151,8 @@
         "秒"
       ],
       [
-        "malahan",
-        "反而"
-      ],
-      [
         "memotong",
         "切 / 割"
-      ],
-      [
-        "menangkap",
-        "抓住"
       ],
       [
         "mengakhiri",
@@ -237,10 +229,6 @@
       [
         "daun",
         "叶子"
-      ],
-      [
-        "terakhir",
-        "最后的"
       ],
       [
         "maupun",
@@ -363,10 +351,6 @@
         "光滑的"
       ],
       [
-        "petugas",
-        "工作人员"
-      ],
-      [
         "pegawai",
         "职员，公务员"
       ],
@@ -391,14 +375,6 @@
         "标志，信号"
       ],
       [
-        "ramah",
-        "友善"
-      ],
-      [
-        "penumpang",
-        "乘客"
-      ],
-      [
         "angkatan",
         "队伍 / 年级 / 班次"
       ],
@@ -421,10 +397,6 @@
       [
         "putuskan",
         "决定"
-      ],
-      [
-        "berhasil",
-        "成功"
       ],
       [
         "buang",
@@ -553,18 +525,6 @@
       [
         "membaik",
         "好转"
-      ],
-      [
-        "dompet",
-        "钱包"
-      ],
-      [
-        "lapor",
-        "报告；报案"
-      ],
-      [
-        "kejadian",
-        "事件；发生的事"
       ],
       [
         "tangkap",
@@ -1313,16 +1273,6 @@
         "快速赶；高速行进"
       ],
       [
-        "nyelip",
-        3,
-        0,
-        "",
-        "",
-        "夹进去；塞在中间；顺便插进一件事（口语）",
-        "selip",
-        "夹入；插入"
-      ],
-      [
         "kepepet",
         2,
         0,
@@ -1423,16 +1373,6 @@
         "拖长；延后"
       ],
       [
-        "bentrok",
-        2,
-        1,
-        "2026-09-11T15:03:45.009Z",
-        "2026-10-21T06:02:35.715Z",
-        "时间冲突；撞期",
-        "bentrok",
-        "冲突；相撞"
-      ],
-      [
         "mundurin",
         3,
         0,
@@ -1461,16 +1401,6 @@
         "突然插一句；随口冒出一句（口语）",
         "celetuk",
         "随口插话；突然说一句"
-      ],
-      [
-        "nyelipin",
-        3,
-        0,
-        "",
-        "",
-        "顺便插入；塞进安排里（口语）",
-        "selip",
-        "夹入；插入"
       ],
       [
         "ceplas-ceplos",
@@ -2771,6 +2701,136 @@
         "检查；核对",
         "periksa",
         "检查"
+      ],
+      [
+        "suasana",
+        3,
+        0,
+        "",
+        "2026-10-23T23:37:54.092Z",
+        "气氛；氛围",
+        "suasana",
+        "气氛；环境"
+      ],
+      [
+        "ngambek",
+        2,
+        0,
+        "",
+        "2026-10-23T23:33:00.515Z",
+        "闹别扭；赌气",
+        "ngambek",
+        "赌气；闹别扭"
+      ],
+      [
+        "nyalakan",
+        2,
+        0,
+        "",
+        "2026-10-15T13:47:14.754Z",
+        "打开（电器、灯、引擎）；点燃",
+        "nyala",
+        "亮；燃着"
+      ],
+      [
+        "dompet",
+        3,
+        0,
+        "",
+        "",
+        "钱包",
+        "dompet",
+        ""
+      ],
+      [
+        "lapor",
+        3,
+        0,
+        "",
+        "",
+        "报告；报案；报到",
+        "lapor",
+        "报告"
+      ],
+      [
+        "kejadian",
+        3,
+        0,
+        "",
+        "",
+        "事件；发生的事",
+        "jadi",
+        "成为；发生"
+      ],
+      [
+        "petugas",
+        3,
+        0,
+        "",
+        "",
+        "工作人员（执勤人员）",
+        "tugas",
+        "任务；职责"
+      ],
+      [
+        "penumpang",
+        3,
+        0,
+        "",
+        "",
+        "乘客",
+        "tumpang",
+        "搭乘；借住"
+      ],
+      [
+        "menangkap",
+        3,
+        0,
+        "",
+        "",
+        "抓住；接住；领会",
+        "tangkap",
+        "抓；捕"
+      ],
+      [
+        "malahan",
+        3,
+        0,
+        "",
+        "",
+        "反而；甚至",
+        "malah",
+        "反而"
+      ],
+      [
+        "ramah",
+        3,
+        0,
+        "",
+        "",
+        "友善；和气",
+        "ramah",
+        "友善"
+      ],
+      [
+        "berhasil",
+        3,
+        0,
+        "",
+        "",
+        "成功（做成某事）",
+        "hasil",
+        "结果；收获"
+      ],
+      [
+        "terakhir",
+        3,
+        0,
+        "",
+        "",
+        "最后的；最近一次的",
+        "akhir",
+        "结束；末尾"
       ]
     ],
     "focus": [
@@ -3029,27 +3089,11 @@
     ],
     "oral": [
       [
-        "malahan",
-        "通用",
-        "malah",
-        "malah",
-        728,
-        "fuzzy"
-      ],
-      [
         "melompat",
         "通用",
         "loncat",
         "lompat",
         729,
-        "fuzzy"
-      ],
-      [
-        "menangkap",
-        "通用",
-        "nangkep",
-        "tangkap",
-        734,
         "fuzzy"
       ],
       [
@@ -3338,6 +3382,29 @@
         "kotak",
         "mendorong"
       ]
+    },
+    {
+      "date": "2026-10-25",
+      "session": "am",
+      "review_core": [
+        "nyelip",
+        "nyelipin",
+        "unduh",
+        "pingsan",
+        "bentrok"
+      ],
+      "new_words": [
+        "dompet",
+        "lapor",
+        "kejadian",
+        "petugas",
+        "penumpang",
+        "menangkap",
+        "malahan",
+        "ramah",
+        "berhasil",
+        "terakhir"
+      ]
     }
   ],
   "previous_pm": {
@@ -3356,7 +3423,88 @@
       "keburu"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-25",
+    "vocab": [
+      [
+        "dompet",
+        "钱包",
+        "wallet",
+        "",
+        ""
+      ],
+      [
+        "lapor",
+        "报告；报案；报到",
+        "to report",
+        "lapor",
+        "报告"
+      ],
+      [
+        "kejadian",
+        "事件；发生的事",
+        "incident; event",
+        "jadi",
+        "成为；发生"
+      ],
+      [
+        "petugas",
+        "工作人员（执勤人员）",
+        "officer; staff on duty",
+        "tugas",
+        "任务；职责"
+      ],
+      [
+        "penumpang",
+        "乘客",
+        "passenger",
+        "tumpang",
+        "搭乘；借住"
+      ],
+      [
+        "menangkap",
+        "抓住；接住；领会",
+        "to catch",
+        "tangkap",
+        "抓；捕"
+      ],
+      [
+        "malahan",
+        "反而；甚至",
+        "on the contrary; instead",
+        "malah",
+        "反而"
+      ],
+      [
+        "ramah",
+        "友善；和气",
+        "friendly",
+        "ramah",
+        "友善"
+      ],
+      [
+        "berhasil",
+        "成功（做成某事）",
+        "to succeed",
+        "hasil",
+        "结果；收获"
+      ],
+      [
+        "terakhir",
+        "最后的；最近一次的",
+        "last",
+        "akhir",
+        "结束；末尾"
+      ]
+    ],
+    "review_vocab": [
+      "nyelip",
+      "nyelipin",
+      "unduh",
+      "pingsan",
+      "bentrok"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
