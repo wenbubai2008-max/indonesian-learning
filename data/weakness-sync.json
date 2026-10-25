@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-25T01:53:14.750Z",
+  "updated_at": "2026-10-25T05:09:00.594Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -5723,19 +5723,19 @@
     "tidak sabar": {
       "word": "tidak sabar",
       "status": "active",
-      "updated_at": "2026-10-24T02:33:10.289Z",
+      "updated_at": "2026-10-25T05:08:26.109Z",
       "display": "tidak sabar",
       "cn": "迫不及待；不耐烦",
       "root": "sabar",
       "root_cn": "耐心",
       "last_wrong": "2026-10-24T02:33:10.221Z",
-      "last_review": "2026-10-24T02:33:10.221Z",
+      "last_review": "2026-10-25T05:08:26.019Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "tidak setia": {
       "word": "tidak setia",
@@ -19802,18 +19802,18 @@
     "usahakan": {
       "word": "usahakan",
       "status": "active",
-      "updated_at": "2026-10-24T02:33:47.218Z",
+      "updated_at": "2026-10-25T05:08:40.120Z",
       "display": "usahakan",
       "cn": "尽量；努力做到",
       "root": "usaha",
       "root_cn": "努力；事业",
-      "last_wrong": "2026-10-24T02:33:47.153Z",
-      "last_review": "2026-10-24T02:33:47.153Z",
+      "last_wrong": "2026-10-25T05:08:40.041Z",
+      "last_review": "2026-10-25T05:08:40.041Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "berhasil": {
@@ -20368,19 +20368,19 @@
     "unduh": {
       "word": "unduh",
       "status": "active",
-      "updated_at": "2026-10-24T02:33:31.628Z",
+      "updated_at": "2026-10-25T05:08:28.490Z",
       "display": "unduh",
       "cn": "下载",
       "root": "unduh",
       "root_cn": "下载",
       "last_wrong": "2026-10-24T02:33:31.563Z",
-      "last_review": "2026-10-24T02:33:31.563Z",
+      "last_review": "2026-10-25T05:08:28.393Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "unggah": {
       "word": "unggah",
@@ -28452,13 +28452,13 @@
     "memilah": {
       "word": "memilah",
       "status": "active",
-      "updated_at": "2026-10-24T03:30:37.669Z",
+      "updated_at": "2026-10-25T05:08:50.074Z",
       "display": "memilah",
       "cn": "分拣；分类；区分（把混在一起的东西分开）",
       "root": "pilah",
       "root_cn": "分开；区分",
       "last_wrong": "2026-10-24T02:35:33.130Z",
-      "last_review": "2026-10-24T02:35:33.130Z",
+      "last_review": "2026-10-25T05:08:50.008Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28467,7 +28467,7 @@
         "memory_dont"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "layak jual": {
       "word": "layak jual",
