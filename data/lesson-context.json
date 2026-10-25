@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-25",
-    "session": "pm",
-    "time": "18:00",
-    "day": 65
+    "date": "2026-10-26",
+    "session": "am",
+    "time": "08:00",
+    "day": 66
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-25T09:40:37.408Z",
-    "lesson_watermark": "2026-10-25 08:00",
+    "runtime_generated_at": "2026-10-25T10:51:35.110Z",
+    "lesson_watermark": "2026-10-25 18:00",
     "index_updated": "2026-10-25",
-    "runtime_hash": "5857cc1b4ed86c15741012c119af397dc37d92dd3a2c147cfffef656320fe81b",
-    "index_hash": "10e5fbfb72f55bc87c5c59cf3fce72f04b33b8a4a769993efe45308d4e8b3218",
+    "runtime_hash": "25372f7bf2ed8f04154b36440d16eeb07365d78307c45265a028b4c64c115fb6",
+    "index_hash": "5f4fbe3b5ca86406ee9aef1ced4187a9210f9c5bdce80de98f545847be7939f0",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -155,10 +155,6 @@
         "切 / 割"
       ],
       [
-        "mengakhiri",
-        "结束"
-      ],
-      [
         "memukul",
         "击打"
       ],
@@ -173,10 +169,6 @@
       [
         "pasangan",
         "伴侣、一对"
-      ],
-      [
-        "kebijakan",
-        "政策"
       ],
       [
         "hadir",
@@ -197,10 +189,6 @@
       [
         "gaya",
         "风格"
-      ],
-      [
-        "angka",
-        "数字"
       ],
       [
         "khususnya",
@@ -1203,16 +1191,6 @@
         ""
       ],
       [
-        "masuk akal",
-        3,
-        0,
-        "",
-        "2026-10-15T08:18:31.855Z",
-        "说得通；合理",
-        "akal",
-        "理智；思考能力"
-      ],
-      [
         "sayang kalau",
         3,
         0,
@@ -1273,16 +1251,6 @@
         "快速赶；高速行进"
       ],
       [
-        "kepepet",
-        2,
-        0,
-        "",
-        "",
-        "被逼到很紧；没什么余地",
-        "pepet",
-        "逼近；紧逼"
-      ],
-      [
         "nyangkut",
         2,
         0,
@@ -1291,16 +1259,6 @@
         "卡住；事情卡在某一步",
         "sangkut",
         "挂住；卡住；牵连"
-      ],
-      [
-        "ketutup",
-        3,
-        0,
-        "",
-        "",
-        "被盖住；被其他事情淹没而没注意到（口语）",
-        "tutup",
-        "关闭；盖住"
       ],
       [
         "kebablasan",
@@ -2733,104 +2691,34 @@
         "亮；燃着"
       ],
       [
-        "dompet",
-        3,
+        "rahasia",
+        2,
         0,
         "",
-        "2026-10-25T01:52:37.212Z",
-        "钱包",
-        "dompet",
-        ""
+        "2026-10-23T23:35:10.494Z",
+        "秘密；机密",
+        "rahasia",
+        "秘密"
       ],
       [
-        "lapor",
-        3,
+        "asalkan",
+        2,
         0,
         "",
-        "2026-10-25T01:52:46.174Z",
-        "报告；报案；报到",
-        "lapor",
-        "报告"
+        "2026-10-15T13:48:13.895Z",
+        "只要；前提是",
+        "asal",
+        "只要；来源"
       ],
       [
-        "kejadian",
-        3,
+        "gelisah",
+        2,
         0,
         "",
-        "2026-10-25T01:52:44.254Z",
-        "事件；发生的事",
-        "jadi",
-        "成为；发生"
-      ],
-      [
-        "petugas",
-        3,
-        0,
-        "",
-        "2026-10-25T01:52:58.690Z",
-        "工作人员（执勤人员）",
-        "tugas",
-        "任务；职责"
-      ],
-      [
-        "penumpang",
-        3,
-        0,
-        "",
-        "2026-10-25T01:52:55.219Z",
-        "乘客",
-        "tumpang",
-        "搭乘；借住"
-      ],
-      [
-        "menangkap",
-        3,
-        0,
-        "",
-        "2026-10-25T01:52:51.105Z",
-        "抓住；接住；领会",
-        "tangkap",
-        "抓；捕"
-      ],
-      [
-        "malahan",
-        3,
-        0,
-        "",
-        "2026-10-25T01:52:48.793Z",
-        "反而；甚至",
-        "malah",
-        "反而"
-      ],
-      [
-        "ramah",
-        3,
-        0,
-        "",
-        "2026-10-25T01:53:00.897Z",
-        "友善；和气",
-        "ramah",
-        "友善"
-      ],
-      [
-        "berhasil",
-        3,
-        0,
-        "",
-        "2026-10-25T01:52:35.160Z",
-        "成功（做成某事）",
-        "hasil",
-        "结果；收获"
-      ],
-      [
-        "terakhir",
-        3,
-        0,
-        "",
-        "2026-10-25T01:53:03.137Z",
-        "最后的；最近一次的",
-        "akhir",
-        "结束；末尾"
+        "2026-10-21T01:43:01.297Z",
+        "焦躁不安；心神不宁",
+        "gelisah",
+        "不安"
       ]
     ],
     "focus": [
@@ -3095,58 +2983,10 @@
         "lompat",
         729,
         "fuzzy"
-      ],
-      [
-        "mengakhiri",
-        "通用",
-        "ngakhirin",
-        "akhir",
-        735,
-        "fuzzy"
       ]
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-18",
-      "session": "am",
-      "review_core": [
-        "merayakan",
-        "raya",
-        "berisi",
-        "lurus",
-        "memahami"
-      ],
-      "new_words": [
-        "ramping",
-        "keriting",
-        "uban",
-        "jenggot",
-        "kanak-kanak",
-        "remaja",
-        "sandal jepit",
-        "piyama",
-        "gelang",
-        "kalung"
-      ]
-    },
-    {
-      "date": "2026-10-18",
-      "session": "pm",
-      "review_core": [
-        "melelahkan",
-        "menyarankan",
-        "saran",
-        "mengalami",
-        "nyasar"
-      ],
-      "new_words": [
-        "gang",
-        "memperhatikan",
-        "ditipu",
-        "menoleh"
-      ]
-    },
     {
       "date": "2026-10-19",
       "session": "am",
@@ -3405,106 +3245,40 @@
         "berhasil",
         "terakhir"
       ]
+    },
+    {
+      "date": "2026-10-25",
+      "session": "pm",
+      "review_core": [
+        "menerapkan",
+        "kebaca",
+        "kepepet",
+        "ketutup",
+        "masuk akal"
+      ],
+      "new_words": [
+        "kebijakan",
+        "mengakhiri",
+        "angka"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "new_words": [
-      "mengukur",
-      "sempit",
-      "kotak",
-      "mendorong"
+      "kebijakan",
+      "mengakhiri",
+      "angka"
     ],
     "review_core": [
-      "perpaduan",
-      "mematuhi",
-      "keduluan",
-      "ngeduluin",
-      "keburu"
+      "menerapkan",
+      "kebaca",
+      "kepepet",
+      "ketutup",
+      "masuk akal"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-25",
-    "vocab": [
-      [
-        "dompet",
-        "钱包",
-        "wallet",
-        "",
-        ""
-      ],
-      [
-        "lapor",
-        "报告；报案；报到",
-        "to report",
-        "lapor",
-        "报告"
-      ],
-      [
-        "kejadian",
-        "事件；发生的事",
-        "incident; event",
-        "jadi",
-        "成为；发生"
-      ],
-      [
-        "petugas",
-        "工作人员（执勤人员）",
-        "officer; staff on duty",
-        "tugas",
-        "任务；职责"
-      ],
-      [
-        "penumpang",
-        "乘客",
-        "passenger",
-        "tumpang",
-        "搭乘；借住"
-      ],
-      [
-        "menangkap",
-        "抓住；接住；领会",
-        "to catch",
-        "tangkap",
-        "抓；捕"
-      ],
-      [
-        "malahan",
-        "反而；甚至",
-        "on the contrary; instead",
-        "malah",
-        "反而"
-      ],
-      [
-        "ramah",
-        "友善；和气",
-        "friendly",
-        "ramah",
-        "友善"
-      ],
-      [
-        "berhasil",
-        "成功（做成某事）",
-        "to succeed",
-        "hasil",
-        "结果；收获"
-      ],
-      [
-        "terakhir",
-        "最后的；最近一次的",
-        "last",
-        "akhir",
-        "结束；末尾"
-      ]
-    ],
-    "review_vocab": [
-      "nyelip",
-      "nyelipin",
-      "unduh",
-      "pingsan",
-      "bentrok"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

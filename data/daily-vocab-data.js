@@ -6128,24 +6128,28 @@ window.DAILY_VOCAB_DB = [
     "root": "akal",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-03 19:00",
-    "last_seen": "2026-09-05 19:00",
+    "last_seen": "2026-10-25 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-03",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-10-25"
     ],
-    "example": "Alasannya masuk akal, jadi aku nggak masalah kalau jadwalnya diganti.",
-    "example_cn": "他的理由说得通，所以改时间我没意见。",
+    "example": "Rumah itu memang kuno, tapi harga sewanya masih masuk akal untuk daerah sini.",
+    "example_cn": "那栋房子确实很老旧，但在这一带，房租还算合理。",
     "root_cn": "理智；思考能力",
     "lesson_occurrences": [
       "2026-09-03 19:00",
-      "2026-09-05 19:00"
+      "2026-09-05 19:00",
+      "2026-10-25 18:00"
     ]
   },
   {
@@ -6435,16 +6439,16 @@ window.DAILY_VOCAB_DB = [
     "cn": "看得清；读得出来；不小心被看到（口语）",
     "en": "readable; can be read; accidentally seen/read",
     "root": "baca",
-    "example": "Tulisan tangan dokter itu sama sekali nggak kebaca, aku sampai tanya ke apoteker.",
-    "example_cn": "那个医生的手写字完全认不出来，我只好去问药剂师。",
+    "example": "Tulisan tangan dokter di resep ini nggak kebaca sama sekali. Untung apotekernya nangkep maksudnya.",
+    "example_cn": "这张处方上医生的手写字完全看不清。还好药剂师明白是什么意思。（nggak = tidak，nangkep = menangkap）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-10-23 18:00",
+    "last_seen": "2026-10-25 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -6452,13 +6456,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-04",
       "2026-10-16",
-      "2026-10-23"
+      "2026-10-23",
+      "2026-10-25"
     ],
     "root_cn": "读；阅读",
     "lesson_occurrences": [
       "2026-09-04 08:00",
       "2026-10-16 18:00",
-      "2026-10-23 18:00"
+      "2026-10-23 18:00",
+      "2026-10-25 18:00"
     ]
   },
   {
@@ -7770,26 +7776,30 @@ window.DAILY_VOCAB_DB = [
     "en": "be pressed; be in a tight spot",
     "root": "pepet",
     "root_cn": "逼近；紧逼",
-    "example": "Jangan tunggu sampai kepepet baru beresin semuanya.",
-    "example_cn": "别等到已经被逼得很紧了才一次性把所有事情处理掉。",
+    "example": "Kalau udah kepepet waktu, aku terpaksa naik ojek. Udah mahal, macet pula.",
+    "example_cn": "要是时间实在来不及，我只好坐摩的。又贵，路上还堵。（udah = sudah）",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-08 19:00",
+    "last_seen": "2026-10-25 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-10-25"
     ],
     "lesson_occurrences": [
       "2026-09-08 08:00",
-      "2026-09-08 19:00"
+      "2026-09-08 19:00",
+      "2026-10-25 18:00"
     ]
   },
   {
@@ -8065,21 +8075,25 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "关闭；盖住",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-08 19:00",
-    "last_seen": "2026-09-08 19:00",
+    "last_seen": "2026-10-25 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-10-25"
     ],
-    "example": "Chat vendor tadi ketutup pesan lain, jadi aku baru sadar sekarang.",
-    "example_cn": "刚才供应商的消息被其他消息淹没了，所以我现在才注意到。",
+    "example": "Mataharinya ketutup awan, jadi siang ini nggak terlalu panas.",
+    "example_cn": "太阳被云遮住了，所以今天中午不太热。",
     "lesson_occurrences": [
-      "2026-09-08 19:00"
+      "2026-09-08 19:00",
+      "2026-10-25 18:00"
     ]
   },
   {
@@ -21092,16 +21106,16 @@ window.DAILY_VOCAB_DB = [
     "en": "to apply; to implement",
     "root": "terap",
     "root_cn": "应用；实施（词根少单独使用）",
-    "example": "Panitia menerapkan sistem antrean baru karena ada peningkatan jumlah penonton. Tantangan mereka adalah menjelaskan perubahan itu sebelum konser dimulai.",
-    "example_cn": "由于观众人数增加，主办方实行了新的排队制度。他们面临的挑战是在音乐会开始前把调整说明白。",
+    "example": "Setelah klinik itu menerapkan antrean online, tingkat keluhan pasien turun jauh.",
+    "example_cn": "那家诊所实行线上排队以后，病人的投诉率大大下降了。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-14 08:00",
-    "last_seen": "2026-10-21 18:00",
+    "last_seen": "2026-10-25 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -21109,12 +21123,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-10-14",
       "2026-10-15",
-      "2026-10-21"
+      "2026-10-21",
+      "2026-10-25"
     ],
     "lesson_occurrences": [
       "2026-10-14 08:00",
       "2026-10-15 08:00",
-      "2026-10-21 18:00"
+      "2026-10-21 18:00",
+      "2026-10-25 18:00"
     ]
   },
   {
@@ -24915,24 +24931,27 @@ window.DAILY_VOCAB_DB = [
     "en": "on the contrary; instead",
     "root": "malah",
     "root_cn": "反而",
-    "example": "Saya kira satpam akan menuduh saya mencuri waktu alarm toko berbunyi, ternyata dia malahan minta maaf karena alarmnya memang sering rusak.",
-    "example_cn": "商店警报响的时候，我以为保安会说我偷东西，没想到他反而向我道歉，因为那个警报本来就经常出毛病。",
+    "example": "Orang bilang bos baru itu kejam, tapi dia malahan sering kasih izin pulang lebih cepat.",
+    "example_cn": "大家都说那个新老板很狠，可是他反而经常准许大家早点下班。（kasih = memberi）",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-25 08:00",
-    "last_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-25"
     ],
     "lesson_occurrences": [
-      "2026-10-25 08:00"
+      "2026-10-25 08:00",
+      "2026-10-25 18:00"
     ]
   },
   {
@@ -24966,23 +24985,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to succeed",
     "root": "hasil",
     "root_cn": "结果；收获",
-    "example": "Setelah tiga kali gagal, adik saya akhirnya berhasil mengetik dengan sepuluh jari tanpa melihat keyboard.",
-    "example_cn": "失败了三次之后，我弟弟终于能不看键盘用十个手指打字了。",
+    "example": "Aku nyimak video tutorialnya pelan-pelan, dan akhirnya berhasil benerin printer sendiri.",
+    "example_cn": "我慢慢地跟着看完了教学视频，终于自己把打印机修好了。（nyimak = menyimak，benerin = membetulkan / memperbaiki）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-25 08:00",
-    "last_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-25 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-25"
     ],
     "lesson_occurrences": [
-      "2026-10-25 08:00"
+      "2026-10-25 08:00",
+      "2026-10-25 18:00"
     ]
   },
   {
@@ -25008,6 +25030,82 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-25 08:00"
+    ]
+  },
+  {
+    "word": "kebijakan",
+    "cn": "政策；（店家、公司、学校定的）规定、做法",
+    "en": "policy",
+    "root": "bijak",
+    "root_cn": "明智的",
+    "example": "Kafe dekat kantor punya kebijakan baru: yang bawa tumbler sendiri dapat diskon. Lumayan, aku bisa ngirit.",
+    "example_cn": "公司附近的咖啡店有个新规定：自带保温杯的人可以打折。还不错，我能省点钱。（bawa = membawa，dapat 也常说 dapet）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 18:00",
+    "last_seen": "2026-10-25 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 18:00"
+    ]
+  },
+  {
+    "word": "mengakhiri",
+    "cn": "结束；终止（让某事停下来）",
+    "en": "to end; to put an end to",
+    "root": "akhir",
+    "root_cn": "最后；末尾",
+    "example": "Pemilik rumah mau menjual rumahnya, jadi dia mengakhiri kontrak sewa kami tiga bulan lebih awal.",
+    "example_cn": "房东要把房子卖掉，所以提前三个月终止了我们的租约。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 18:00",
+    "last_seen": "2026-10-25 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 18:00"
+    ]
+  },
+  {
+    "word": "angka",
+    "cn": "数字",
+    "en": "number; figure",
+    "root": "angka",
+    "root_cn": "数字",
+    "example": "Coba bandingkan angka di tagihan listrik bulan ini dan bulan lalu. Naiknya hampir dua kali lipat!",
+    "example_cn": "你比较一下这个月和上个月电费单上的数字。涨了将近一倍！",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-25 18:00",
+    "last_seen": "2026-10-25 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-25"
+    ],
+    "lesson_occurrences": [
+      "2026-10-25 18:00"
     ]
   }
 ];
