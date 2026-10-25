@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-25T05:09:00.594Z",
+  "updated_at": "2026-10-25T13:31:28.827Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -825,13 +825,16 @@
     },
     "mudah": {
       "word": "mudah",
-      "status": "active",
-      "updated_at": "2026-10-15T08:22:49.218Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:28:34.958Z",
       "display": "mudah",
       "cn": "容易",
       "root": "mudah",
-      "last_review": "2026-10-15T08:22:49.189Z",
+      "last_review": "2026-10-25T13:28:34.881Z",
+      "last_mastered": "2026-10-25T13:28:34.881Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_fuzzy"
       ],
       "wrong_count": 0,
@@ -963,14 +966,17 @@
     },
     "umum": {
       "word": "umum",
-      "status": "active",
-      "updated_at": "2026-10-19T05:53:48.604Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:28:34.958Z",
       "display": "umum",
       "cn": "一般的；普遍的；公共的",
       "root": "umum",
       "root_cn": "一般；公共",
-      "last_review": "2026-10-19T05:53:48.540Z",
+      "last_review": "2026-10-25T13:28:34.881Z",
+      "last_mastered": "2026-10-25T13:28:34.881Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_fuzzy"
       ],
       "wrong_count": 0,
@@ -989,14 +995,17 @@
     },
     "anggota": {
       "word": "anggota",
-      "status": "active",
-      "updated_at": "2026-10-19T05:54:02.254Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:28:34.958Z",
       "display": "anggota",
       "cn": "成员；会员",
       "root": "anggota",
       "root_cn": "成员；会员",
-      "last_review": "2026-10-19T05:54:02.191Z",
+      "last_review": "2026-10-25T13:28:34.881Z",
+      "last_mastered": "2026-10-25T13:28:34.881Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_dont"
       ],
       "wrong_count": 0,
@@ -1133,11 +1142,14 @@
     },
     "alam": {
       "word": "alam",
-      "status": "active",
-      "updated_at": "2026-10-15T08:22:42.523Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:28:34.958Z",
       "display": "alam",
-      "last_review": "2026-10-15T08:22:42.497Z",
+      "last_review": "2026-10-25T13:28:34.882Z",
+      "last_mastered": "2026-10-25T13:28:34.882Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_fuzzy"
       ],
       "wrong_count": 0,
@@ -1335,14 +1347,17 @@
     },
     "susah": {
       "word": "susah",
-      "status": "active",
-      "updated_at": "2026-10-15T13:37:50.589Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:28:34.958Z",
       "display": "susah",
       "cn": "难；费劲；麻烦（口语高频）",
       "root": "susah",
       "root_cn": "困难；费劲",
-      "last_review": "2026-10-15T13:37:50.561Z",
+      "last_review": "2026-10-25T13:28:34.881Z",
+      "last_mastered": "2026-10-25T13:28:34.881Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_fuzzy"
       ],
       "wrong_count": 0,
@@ -1875,11 +1890,14 @@
     },
     "raya": {
       "word": "raya",
-      "status": "active",
-      "updated_at": "2026-10-15T08:21:01.018Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:29:16.563Z",
       "display": "raya",
-      "last_review": "2026-10-15T08:21:00.991Z",
+      "last_review": "2026-10-25T13:29:16.487Z",
+      "last_mastered": "2026-10-25T13:29:16.487Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_fuzzy"
       ],
       "wrong_count": 0,
@@ -3112,14 +3130,17 @@
     },
     "antar": {
       "word": "antar",
-      "status": "active",
-      "updated_at": "2026-10-15T13:38:20.997Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:28:34.958Z",
       "display": "antar",
       "cn": "送；送到（口语高频）",
       "root": "antar",
       "root_cn": "送；递送",
-      "last_review": "2026-10-15T13:38:20.971Z",
+      "last_review": "2026-10-25T13:28:34.881Z",
+      "last_mastered": "2026-10-25T13:28:34.881Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_fuzzy"
       ],
       "wrong_count": 0,
@@ -4566,12 +4587,22 @@
     "mengakhiri": {
       "word": "mengakhiri",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:44.542Z",
+      "updated_at": "2026-10-25T13:10:07.070Z",
       "display": "mengakhiri",
+      "cn": "结束；终止（让某事停下来）",
+      "root": "akhir",
+      "root_cn": "最后；末尾",
+      "last_wrong": "2026-10-25T13:10:06.986Z",
+      "last_review": "2026-10-25T13:10:06.986Z",
+      "source": "课程小测",
+      "source_date": "2026-10-25",
+      "session": "18:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "quick_wrong",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "mengalikan": {
@@ -6575,15 +6606,19 @@
     "berhenti": {
       "word": "berhenti",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:46.835Z",
+      "updated_at": "2026-10-25T13:26:07.082Z",
       "display": "berhenti",
       "cn": "停止",
       "root": "henti",
       "root_cn": "停；停止",
       "last_wrong": "2026-09-27T13:56:59.142Z",
-      "last_review": "2026-09-27T14:01:45.746Z",
+      "last_review": "2026-10-25T13:26:07.014Z",
       "last_mastered": "2026-09-27T14:01:45.746Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 1,
       "right_streak": 3
     },
@@ -6788,12 +6823,18 @@
     "kebijakan": {
       "word": "kebijakan",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:47.998Z",
+      "updated_at": "2026-10-25T12:16:56.822Z",
       "display": "kebijakan",
+      "cn": "政策；（店家、公司、学校定的）规定、做法",
+      "root": "bijak",
+      "root_cn": "明智的",
+      "last_wrong": "2026-10-25T12:16:56.720Z",
+      "last_review": "2026-10-25T12:16:56.720Z",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "quick_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 1,
       "right_streak": 0
     },
     "hukuman": {
@@ -7483,13 +7524,21 @@
     "angka": {
       "word": "angka",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.355Z",
+      "updated_at": "2026-10-25T13:11:31.196Z",
       "display": "angka",
       "cn": "数字",
+      "root": "angka",
+      "root_cn": "数字",
+      "last_wrong": "2026-10-25T13:11:31.122Z",
+      "last_review": "2026-10-25T13:11:31.122Z",
+      "source": "课程自检",
+      "source_date": "2026-10-25",
+      "session": "18:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "berlaku": {
@@ -7590,14 +7639,17 @@
     },
     "solusi": {
       "word": "solusi",
-      "status": "active",
-      "updated_at": "2026-10-15T13:37:42.741Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:28:34.958Z",
       "display": "solusi",
       "cn": "解决方案；办法",
       "root": "solusi",
       "root_cn": "解决方案",
-      "last_review": "2026-10-15T13:37:42.714Z",
+      "last_review": "2026-10-25T13:28:34.881Z",
+      "last_mastered": "2026-10-25T13:28:34.881Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_dont"
       ],
       "wrong_count": 0,
@@ -8479,11 +8531,15 @@
     "ngobrol": {
       "word": "ngobrol",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:02:36.153Z",
+      "updated_at": "2026-10-25T13:22:48.598Z",
       "display": "ngobrol",
-      "last_review": "2026-10-19T06:02:36.093Z",
+      "last_review": "2026-10-25T13:22:48.523Z",
       "last_mastered": "2026-09-12T14:13:49.757Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8782,22 +8838,30 @@
     "jadwal": {
       "word": "jadwal",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:36.009Z",
+      "updated_at": "2026-10-25T13:24:58.561Z",
       "display": "jadwal",
-      "last_review": "2026-10-19T06:03:35.943Z",
+      "last_review": "2026-10-25T13:24:58.490Z",
       "last_mastered": "2026-09-12T14:13:50.052Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "batal": {
       "word": "batal",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:38.613Z",
+      "updated_at": "2026-10-25T13:24:58.561Z",
       "display": "batal",
-      "last_review": "2026-10-19T06:03:38.551Z",
+      "last_review": "2026-10-25T13:24:58.490Z",
       "last_mastered": "2026-09-12T14:13:50.066Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8815,11 +8879,15 @@
     "cuti": {
       "word": "cuti",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:46.392Z",
+      "updated_at": "2026-10-25T13:24:58.561Z",
       "display": "cuti",
-      "last_review": "2026-10-19T06:03:46.323Z",
+      "last_review": "2026-10-25T13:24:58.490Z",
       "last_mastered": "2026-09-12T14:13:50.093Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8837,23 +8905,31 @@
     "nggak apa-apa": {
       "word": "nggak apa-apa",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:51.871Z",
+      "updated_at": "2026-10-25T13:22:48.598Z",
       "display": "nggak apa-apa",
-      "last_review": "2026-10-19T06:03:51.810Z",
+      "last_review": "2026-10-25T13:22:48.523Z",
       "last_mastered": "2026-09-12T14:13:50.132Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "lumayan": {
       "word": "lumayan",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:54.316Z",
+      "updated_at": "2026-10-25T13:22:48.598Z",
       "display": "lumayan",
       "cn": "还不错；挺……",
-      "last_review": "2026-10-19T06:03:54.256Z",
+      "last_review": "2026-10-25T13:22:48.523Z",
       "last_mastered": "2026-09-12T14:13:50.145Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8871,44 +8947,60 @@
     "cuma": {
       "word": "cuma",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:59.257Z",
+      "updated_at": "2026-10-25T13:22:48.598Z",
       "display": "cuma",
-      "last_review": "2026-10-19T06:03:59.194Z",
+      "last_review": "2026-10-25T13:22:48.523Z",
       "last_mastered": "2026-09-12T14:13:50.172Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "kabarin": {
       "word": "kabarin",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:04:03.918Z",
+      "updated_at": "2026-10-25T13:22:48.598Z",
       "display": "kabarin",
-      "last_review": "2026-10-19T06:04:03.856Z",
+      "last_review": "2026-10-25T13:22:48.523Z",
       "last_mastered": "2026-09-12T14:13:50.185Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "proses": {
       "word": "proses",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:04:07.978Z",
+      "updated_at": "2026-10-25T13:23:40.574Z",
       "display": "proses",
-      "last_review": "2026-10-19T06:04:07.917Z",
+      "last_review": "2026-10-25T13:23:40.495Z",
       "last_mastered": "2026-09-12T14:13:50.198Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "kayaknya": {
       "word": "kayaknya",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:04:11.345Z",
+      "updated_at": "2026-10-25T13:23:49.867Z",
       "display": "kayaknya",
-      "last_review": "2026-10-19T06:04:11.284Z",
+      "last_review": "2026-10-25T13:23:49.808Z",
       "last_mastered": "2026-09-12T14:13:50.212Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -8926,11 +9018,15 @@
     "kabari aja": {
       "word": "kabari aja",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:04:20.970Z",
+      "updated_at": "2026-10-25T13:24:58.561Z",
       "display": "kabari aja",
-      "last_review": "2026-10-19T06:04:20.908Z",
+      "last_review": "2026-10-25T13:24:58.490Z",
       "last_mastered": "2026-09-12T14:13:50.238Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -9068,11 +9164,15 @@
     "hampir": {
       "word": "hampir",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:04:50.411Z",
+      "updated_at": "2026-10-25T13:26:07.082Z",
       "display": "hampir",
-      "last_review": "2026-10-19T06:04:50.346Z",
+      "last_review": "2026-10-25T13:26:07.013Z",
       "last_mastered": "2026-09-12T14:13:50.380Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -9202,11 +9302,15 @@
     "bungkus": {
       "word": "bungkus",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:05:10.888Z",
+      "updated_at": "2026-10-25T13:26:07.082Z",
       "display": "bungkus",
-      "last_review": "2026-10-19T06:05:10.827Z",
+      "last_review": "2026-10-25T13:26:07.014Z",
       "last_mastered": "2026-09-12T14:13:50.500Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -9258,11 +9362,15 @@
     "sampai": {
       "word": "sampai",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:05:21.966Z",
+      "updated_at": "2026-10-25T13:26:07.082Z",
       "display": "sampai",
-      "last_review": "2026-10-19T06:05:21.904Z",
+      "last_review": "2026-10-25T13:26:07.014Z",
       "last_mastered": "2026-09-12T14:13:50.553Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -9809,11 +9917,15 @@
     "meminta": {
       "word": "meminta",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:06:04.306Z",
+      "updated_at": "2026-10-25T13:22:48.598Z",
       "display": "meminta",
-      "last_review": "2026-10-19T06:06:04.246Z",
+      "last_review": "2026-10-25T13:22:48.523Z",
       "last_mastered": "2026-09-12T14:13:51.263Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -9955,11 +10067,15 @@
     "mencoba": {
       "word": "mencoba",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:06:07.037Z",
+      "updated_at": "2026-10-25T13:23:40.574Z",
       "display": "mencoba",
-      "last_review": "2026-10-19T06:06:06.977Z",
+      "last_review": "2026-10-25T13:23:40.495Z",
       "last_mastered": "2026-09-12T14:13:51.461Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -10365,11 +10481,15 @@
     "daripada": {
       "word": "daripada",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:06:15.552Z",
+      "updated_at": "2026-10-25T13:26:07.082Z",
       "display": "daripada",
-      "last_review": "2026-10-19T06:06:15.491Z",
+      "last_review": "2026-10-25T13:26:07.014Z",
       "last_mastered": "2026-09-12T14:13:51.999Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -19635,11 +19755,15 @@
     "tambah": {
       "word": "tambah",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:07:39.856Z",
+      "updated_at": "2026-10-25T13:26:07.082Z",
       "display": "tambah",
-      "last_review": "2026-10-19T06:07:39.793Z",
+      "last_review": "2026-10-25T13:26:07.014Z",
       "last_mastered": "2026-09-12T16:52:05.851Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -19844,22 +19968,30 @@
     "lanjut": {
       "word": "lanjut",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:07:48.235Z",
+      "updated_at": "2026-10-25T13:24:58.561Z",
       "display": "lanjut",
-      "last_review": "2026-10-19T06:07:48.176Z",
+      "last_review": "2026-10-25T13:24:58.490Z",
       "last_mastered": "2026-09-12T16:52:57.249Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
     "selesai": {
       "word": "selesai",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:07:51.049Z",
+      "updated_at": "2026-10-25T13:23:40.574Z",
       "display": "selesai",
-      "last_review": "2026-10-19T06:07:50.989Z",
+      "last_review": "2026-10-25T13:23:40.495Z",
       "last_mastered": "2026-09-12T16:53:01.914Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 5
     },
@@ -22279,13 +22411,16 @@
     },
     "untung": {
       "word": "untung",
-      "status": "active",
-      "updated_at": "2026-10-19T05:53:36.002Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:22:48.598Z",
       "display": "untung",
       "cn": "幸运；赚到",
       "root": "untung",
-      "last_review": "2026-10-19T05:53:35.936Z",
+      "last_review": "2026-10-25T13:22:48.523Z",
+      "last_mastered": "2026-10-25T13:22:48.523Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_dont"
       ],
       "wrong_count": 0,
@@ -22416,13 +22551,16 @@
     },
     "paket": {
       "word": "paket",
-      "status": "active",
-      "updated_at": "2026-10-23T23:33:21.171Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:30:38.481Z",
       "display": "paket",
       "cn": "包裹",
       "root": "paket",
-      "last_review": "2026-10-23T23:33:21.109Z",
+      "last_review": "2026-10-25T13:30:38.405Z",
+      "last_mastered": "2026-10-25T13:30:38.405Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_fuzzy"
       ],
       "wrong_count": 0,
@@ -23852,13 +23990,16 @@
     },
     "antri": {
       "word": "antri",
-      "status": "active",
-      "updated_at": "2026-10-15T13:47:44.860Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:29:16.563Z",
       "display": "antri",
       "cn": "排队",
       "root": "antre",
-      "last_review": "2026-10-15T13:47:44.834Z",
+      "last_review": "2026-10-25T13:29:16.487Z",
+      "last_mastered": "2026-10-25T13:29:16.487Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_fuzzy"
       ],
       "wrong_count": 0,
@@ -23866,13 +24007,16 @@
     },
     "antre": {
       "word": "antre",
-      "status": "active",
-      "updated_at": "2026-10-19T13:14:11.495Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:30:38.481Z",
       "display": "antre",
       "cn": "排队",
       "root": "antre",
-      "last_review": "2026-10-19T13:14:11.432Z",
+      "last_review": "2026-10-25T13:30:38.405Z",
+      "last_mastered": "2026-10-25T13:30:38.405Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "memory_fuzzy"
       ],
       "wrong_count": 0,
@@ -29000,16 +29144,19 @@
     },
     "motif": {
       "word": "motif",
-      "status": "active",
-      "updated_at": "2026-10-24T03:25:06.377Z",
+      "status": "mastered",
+      "updated_at": "2026-10-25T13:31:17.914Z",
       "display": "motif",
       "cn": "图案；花纹；动机",
       "root": "motif",
       "root_cn": "图案；花纹",
-      "last_review": "2026-10-19T05:59:07.011Z",
+      "last_review": "2026-10-25T13:31:17.840Z",
+      "last_mastered": "2026-10-25T13:31:17.840Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "bipa_secondary_dont",
         "memory_fuzzy"
       ],
@@ -29850,12 +29997,15 @@
     "mengirimkan": {
       "word": "mengirimkan",
       "status": "mastered",
-      "updated_at": "2026-10-21T06:06:30.322Z",
+      "updated_at": "2026-10-25T13:22:48.598Z",
       "display": "mengirimkan",
       "cn": "发送；寄送",
-      "last_review": "2026-10-21T06:06:30.248Z",
+      "last_review": "2026-10-25T13:22:48.523Z",
       "last_mastered": "2026-09-29T12:25:16.864Z",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered",
         "listening_slow"
       ],
       "wrong_count": 0,
@@ -30516,11 +30666,15 @@
     "ada urusan": {
       "word": "ada urusan",
       "status": "mastered",
-      "updated_at": "2026-10-15T04:10:34.406Z",
+      "updated_at": "2026-10-25T13:23:56.024Z",
       "display": "ada urusan",
-      "last_review": "2026-10-15T04:10:34.374Z",
+      "last_review": "2026-10-25T13:23:55.959Z",
       "last_mastered": "2026-10-15T04:10:34.374Z",
-      "reasons": [],
+      "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
+        "training_excluded_was_mastered"
+      ],
       "wrong_count": 0,
       "right_streak": 3
     },
@@ -31136,15 +31290,21 @@
     "kepepet": {
       "word": "kepepet",
       "status": "active",
-      "updated_at": "2026-10-24T03:09:22.834Z",
+      "updated_at": "2026-10-25T13:11:42.833Z",
       "display": "kepepet",
-      "cn": "被逼到很紧；没什么余地",
+      "cn": "被逼急了；走投无路（时间、钱很紧）（口语）",
       "root": "pepet",
-      "root_cn": "逼近；紧逼",
+      "root_cn": "挤、紧贴",
+      "last_wrong": "2026-10-25T13:11:42.764Z",
+      "last_review": "2026-10-25T13:11:42.764Z",
+      "source": "课程自检",
+      "source_date": "2026-10-25",
+      "session": "18:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "keduluan": {
