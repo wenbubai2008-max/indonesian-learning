@@ -19,7 +19,7 @@
 })(typeof window!=='undefined'?window:globalThis,function(){
   'use strict';
   const CFG={min_records:3,recog_min_right:2,recog_fail_wrong:2,recog_fail_ratio:.5,listen_fail_streak:2,listen_fail_rate:.5,auto_fail_streak:2,auto_fail_total:3,recall_window:3,recall_fail_min:2};
-  const LABEL={meaning:'意思记不住',listening:'听不出来',production:'说不出来',forgetting:'反复遗忘',unclear:'原因待确认',insufficient:'待验证',recognized:'认得没问题',ok:'各层都验证过，暂无问题'};
+  const LABEL={excluded:'已退出训练',meaning:'意思记不住',listening:'听不出来',production:'说不出来',forgetting:'反复遗忘',unclear:'原因待确认',insufficient:'待验证',recognized:'认得没问题',ok:'各层都验证过，暂无问题'};
   const NEXT={
     meaning:{train:'quick',text:'快速练习（看印尼语选中文），并回看词义和例句'},
     listening:{train:'listen',text:'听词训练（只听声音判断词义）'},
@@ -28,6 +28,7 @@
     unclear:{train:'quick',text:'先做快速练习，确认认得之后才能判断'},
     insufficient:{train:'quick',text:'再练几次才能判断'},
     recognized:{train:'listen',text:'认得已经验证；听词和自动训练还没测，有机会时补测'},
+    excluded:{train:'',text:'已在词汇学习里选择不再训练，不参与诊断'},
     ok:{train:'',text:'按计划跨日验证即可'}
   };
   const num=x=>{const n=Number(x);return Number.isFinite(n)?n:0};
@@ -35,6 +36,8 @@
   const jkt=t=>new Date(t+7*3600000).toISOString().slice(0,10);
   const norm=w=>String(w||'').trim().toLowerCase();
   const obj=x=>x&&typeof x==='object'&&!Array.isArray(x)?x:{};
+  // WeaknessPool marks "不再训练" words as status=mastered + reasons[training_excluded]; they are skipped, never diagnosed as mastered or forgotten.
+  const isExcluded=w=>!!w&&Array.isArray(w.reasons)&&w.reasons.includes('training_excluded');
 
   function quickLayer(q,weak){
     const right=num(q.right),wrong=num(q.wrong),n=right+wrong,lastWrong=q.last_result==='wrong';
@@ -80,6 +83,7 @@
   function diagnose(input,now){
     now=now||Date.now();
     const word=norm(input&&input.word),weak=obj(input&&input.weak);
+    if(isExcluded(weak))return {word,type:'excluded',label:LABEL.excluded,secondary:[],confidence:null,evidence:[],records:0,days:0,untested:[],layers:{recognition:'unknown',listening:'unknown',production:'unknown'},next:Object.assign({verify_at:null},NEXT.excluded)};
     const q=quickLayer(obj(input&&input.quick),weak),l=listenLayer(obj(input&&input.listen)),a=autoLayer(obj(input&&input.auto)),r=recallLayer(obj(input&&input.recall));
     const lastMastered=ts(weak.last_mastered),lastWrong=ts(weak.last_wrong);
     const forgotten=!!(weak.status!=='mastered'&&lastMastered&&lastWrong&&lastWrong>lastMastered);
@@ -133,15 +137,26 @@
   }
   // Counts for a summary card: how many words each layer was actually tested on, and how many words fall in each type.
   // Words without any training record are not in the snapshot; the caller knows the taught total.
-  function summarize(snap,now){
+  // opts.taught (Set of lower-case words) limits the "recovered" count to formally taught words.
+  function summarize(snap,now,opts){
+    now=now||Date.now();opts=opts||{};
     const words=new Set([...Object.keys(snap.quick),...Object.keys(snap.listen),...Object.keys(snap.auto),...Object.keys(snap.recall)]);
-    const out={words:words.size,types:{},tested:{recognition:0,listening:0,production:0,self_report:Object.keys(snap.recall).length}};
+    const out={words:0,excluded:0,types:{},tested:{recognition:0,listening:0,production:0,self_report:Object.keys(snap.recall).length},recovered_30d:0,items:[]};
     words.forEach(w=>{
       const r=diagnoseFrom(snap,w,now);
+      if(r.type==='excluded'){out.excluded++;return}
+      out.words++;
       out.types[r.type]=(out.types[r.type]||0)+1;
+      if(opts.items&&['meaning','listening','production','forgetting','unclear'].includes(r.type))out.items.push(r);
       if(r.layers.recognition!=='unknown')out.tested.recognition++;
       if(r.layers.listening!=='unknown')out.tested.listening++;
       if(r.layers.production!=='unknown')out.tested.production++;
+    });
+    // Words that once failed (wrong_count >= 1) and are mastered now, mastered within the last 30 days — evidence that practice worked.
+    Object.keys(snap.weak).forEach(k=>{
+      const w=snap.weak[k];if(!w||w.status!=='mastered'||isExcluded(w)||num(w.wrong_count)<1)return;
+      if(opts.taught&&!opts.taught.has(k))return;
+      const t=ts(w.last_mastered);if(t&&now-t<=30*86400000&&t<=now)out.recovered_30d++;
     });
     return out;
   }

@@ -658,9 +658,9 @@ try {
     ok(missing.length === 0, 'every indo_* storage key is documented in docs/STORAGE-KEYS.md' + (missing.length ? ': ' + missing.join(', ') : ''));
   }
   // 2026-10-14: the two script-filled home cards must reserve their FINAL height in the early CSS, otherwise filling them pushes the training cards down (up to ~270px on phones).
-  ok(/#home \.homeLearningGrid > #vocabCoachHome,#home \.homeLearningGrid > #vocabProfile\{[^}]*min-height:265px/.test(index), 'home first paint reserves the final height of the coach/profile cards (desktop)');
-  ok(/@media\(max-width:856px\) and \(min-width:761px\)\{[^}]*#vocabCoachHome[^}]*\{min-height:286px\}\}/.test(index), 'home first paint reserves the final height of the coach/profile cards (narrow two-column)');
-  ok(/#home \.homeLearningGrid > #vocabCoachHome\{min-height:191px\}/.test(index) && /#home \.homeLearningGrid > #vocabProfile\{min-height:265px\}/.test(index), 'home first paint reserves the final height of the coach/profile cards (phones, stacked)');
+  ok(/#home \.homeLearningGrid > #vocabCoachHome,#home \.homeLearningGrid > #vocabProfile\{[^}]*min-height:273px/.test(index), 'home first paint reserves the final height of the coach/profile cards (desktop; 2026-10-25 coverage-ladder card measured 273px)');
+  ok(/@media\(max-width:900px\) and \(min-width:761px\)\{[^}]*#vocabCoachHome[^}]*\{min-height:291px\}\}/.test(index), 'home first paint reserves the final height of the coach/profile cards (narrow two-column)');
+  ok(/#home \.homeLearningGrid > #vocabCoachHome\{min-height:191px\}/.test(index) && /#home \.homeLearningGrid > #vocabProfile\{min-height:273px\}/.test(index) && /@media\(max-width:350px\)\{#home \.homeLearningGrid > #vocabProfile\{min-height:291px\}\}/.test(index), 'home first paint reserves the final height of the coach/profile cards (phones, stacked; 273px, 291px on very narrow screens)');
   ok(!/#vocabCoachHome,#home \.homeLearningGrid > #vocabProfile\{min-height:0\}/.test(index), 'coach/profile placeholder height must never collapse to 0 on phones');
   ok(index.includes("loadReading('pm')\">18:00短文"), 'index source PM reading button first paint is 18:00');
   ok(index.includes("const PM_SWITCH_DATE='2026-09-16'") && /function pmTimeForDate\(d\)/.test(index), 'index source keeps historical PM switch date');
@@ -818,6 +818,12 @@ try {
     const wdConsumers=[...(consumers),'data/vocab-study-coach.js','data/weakness-pool.js','data/automation-training.js','data/listening-word-training.js','data/home-learning-upgrade-v2.js','data/training-sync-client.js'];
     const wdLeak=wdConsumers.filter(f=>fs.existsSync(rel(f))&&/word-diagnosis|WordDiagnosis/.test(read(f)));
     okNew(wdLeak.length===0,'word diagnosis is not read by selection, scheduling, mastery, training or generation scripts'+(wdLeak.length?' (found in: '+wdLeak.join(', ')+')':''));
+    // §41 (2026-10-25, profile redesign step B1): the home card and detail section come from word-diagnosis-ui.js (pure builders, read-only).
+    const wdui=fs.existsSync(rel('data/word-diagnosis-ui.js'))?read('data/word-diagnosis-ui.js'):'';
+    okNew(wdui.length>0&&!/setItem|removeItem|localStorage\.(set|remove|clear)|MutationObserver|fetch\(|XMLHttpRequest/.test(wdui),'word diagnosis UI exists and is read-only (no storage writes, no observers, no network)');
+    okNew(/word-diagnosis\.js\?v=[^"]+"><\/script>\s*<script src="data\/word-diagnosis-ui\.js\?v=[^"]+"><\/script>\s*<script src="data\/vocab-profile-ui\.js/.test(indexHtml),'diagnosis modules load right before the profile UI');
+    const vpui=read('data/vocab-profile-ui.js');
+    okNew(vpui.includes('WordDiagnosisUI.homeCard(')&&vpui.includes('legacyHomeCard(')&&vpui.includes('function markHomeDirty()'),'profile UI builds the home card from the diagnosis UI, keeps the old card as fallback, and only refreshes it while the home page is visible');
   }
 
 } catch (e) {
