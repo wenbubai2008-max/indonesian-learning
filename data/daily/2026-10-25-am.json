@@ -1,0 +1,404 @@
+{
+  "date": "2026-10-25",
+  "session": "am",
+  "time": "08:00",
+  "day": 65,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Dompet Hilang di KRL · 在通勤电车上丢了钱包",
+  "new_words": [
+    "dompet",
+    "lapor",
+    "kejadian",
+    "petugas",
+    "penumpang",
+    "menangkap",
+    "malahan",
+    "ramah",
+    "berhasil",
+    "terakhir"
+  ],
+  "vocab": [
+    {
+      "word": "dompet",
+      "display": "dompet",
+      "audio_text": "dompet",
+      "cn": "钱包",
+      "en": "wallet",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯名词。常见搭配：dompet hilang（钱包丢了）、dompet ketinggalan（钱包忘带了）、dompet kulit（皮夹）、isi dompet（钱包里的东西）；dompet digital 指手机里的电子钱包。",
+      "example": "Kalau naik kereta yang penuh, saya selalu menyembunyikan dompet di saku dalam jaket.",
+      "example_cn": "坐拥挤的电车时，我总是把钱包藏在夹克的内袋里。",
+      "synonym_note": "dompet 是装钱和卡的钱包；tas 是包（手提包、背包），钱包一般放在 tas 里。说“钱包丢了”可以说 dompet saya hilang，也可以说 dompet saya sudah tidak ada。",
+      "is_oral_new": false
+    },
+    {
+      "word": "lapor",
+      "display": "lapor",
+      "audio_text": "lapor",
+      "cn": "报告；报案；报到",
+      "en": "to report",
+      "root": "lapor",
+      "root_cn": "报告",
+      "formation": "lapor 本身就能当动词用：lapor ke polisi（去报警）、lapor ke petugas（向工作人员报告）。正式说法 melapor = meN- + lapor；带宾语用 melaporkan（melaporkan kehilangan 报失）；laporan 是名词“报告”，pelapor 是“报案人”。",
+      "example": "Kalau melihat orang mencuri di dalam kereta, langsung lapor ke petugas, jangan dikejar sendiri.",
+      "example_cn": "如果在电车里看到有人偷东西，马上报告工作人员，别自己去追。",
+      "synonym_note": "lapor / melapor 后面不直接接宾语，用 ke + 对象（lapor ke petugas）；要说“报告某件事”用 melaporkan + 宾语（melaporkan kejadian itu）。日常说话里 lapor 比 melapor 更常用，公文、新闻里多写 melapor。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kejadian",
+      "display": "kejadian",
+      "audio_text": "kejadian",
+      "cn": "事件；发生的事",
+      "en": "incident; event",
+      "root": "jadi",
+      "root_cn": "成为；发生",
+      "formation": "ke- + jadi + -an，和动词 terjadi（发生）同一个词根。常见搭配：ada kejadian（出了事）、kejadian itu（那件事）、lokasi kejadian（事发地点）、menceritakan kejadiannya（讲述事情经过）。",
+      "example": "Polisi masih mencari saksi kecelakaan itu; siapa saja yang melihat kejadiannya diminta menghubungi nomor ini.",
+      "example_cn": "警方还在寻找那起事故的目击者；凡是看到事发经过的人，请联系这个号码。",
+      "synonym_note": "kejadian 泛指发生的事，大事小事都可以；kecelakaan 专指事故（车祸、意外受伤）。说“发生了”用动词 terjadi，不说 kejadian 当动词。",
+      "is_oral_new": false
+    },
+    {
+      "word": "petugas",
+      "display": "petugas",
+      "audio_text": "petugas",
+      "cn": "工作人员（执勤人员）",
+      "en": "officer; staff on duty",
+      "root": "tugas",
+      "root_cn": "任务；职责",
+      "formation": "tugas（任务）→ petugas（执行任务的人），对应动词 bertugas（值班、执勤）。常见搭配：petugas stasiun（车站工作人员）、petugas keamanan（保安）、petugas kebersihan（清洁工）、petugas bank（银行工作人员）。",
+      "example": "Petugas di stasiun itu cenderung sabar menjawab pertanyaan, walaupun stasiunnya sedang ramai sekali.",
+      "example_cn": "那个车站的工作人员一般都很耐心地回答问题，即使车站里人非常多的时候也一样。",
+      "synonym_note": "petugas 强调“在岗位上负责某件事的人”，比如车站、安检、清洁；它看的是职责，不是雇佣关系。在车站、商场找人帮忙时，问 petugas 最自然：Permisi, Pak, petugasnya di mana?",
+      "is_oral_new": false
+    },
+    {
+      "word": "penumpang",
+      "display": "penumpang",
+      "audio_text": "penumpang",
+      "cn": "乘客",
+      "en": "passenger",
+      "root": "tumpang",
+      "root_cn": "搭乘；借住",
+      "formation": "peN- + tumpang（t 脱落 → penumpang）；动词 menumpang（搭车；借住）。常见搭配：penumpang kereta / bus / pesawat、para penumpang（各位乘客）、kursi penumpang（乘客座位）。",
+      "example": "Begitu pintu kereta dibuka, para penumpang yang tidak sabar langsung berebut masuk.",
+      "example_cn": "车门一打开，那些等不及的乘客就抢着往里挤。",
+      "synonym_note": "penumpang 是坐车、船、飞机的人；开车的人是 sopir 或 pengemudi。口语说法：动词 menumpang 常说 numpang（Numpang lewat, ya. 借过一下），借用别人地方也说 numpang（numpang ke toilet）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menangkap",
+      "display": "menangkap",
+      "audio_text": "menangkap",
+      "cn": "抓住；接住；领会",
+      "en": "to catch",
+      "root": "tangkap",
+      "root_cn": "抓；捕",
+      "formation": "meN- + tangkap（t 脱落 → menangkap）。常见搭配：menangkap bola（接球）、menangkap pencuri（抓小偷）、menangkap maksud（听懂意思）；被动 ditangkap（被抓）、tertangkap（被抓到，常指意外地被逮住）。",
+      "example": "Untung Kakak cepat menangkap gelas yang hampir jatuh dari meja.",
+      "example_cn": "幸好哥哥手快，接住了快要从桌上掉下去的杯子。",
+      "synonym_note": "menangkap 是“抓住、接住”正在动的东西或人（球、杯子、小偷、猫）；memegang 是“拿着、握着”，东西本来就在手里。口语说法：nangkep（Tangkep, ya! 接住哦！），新闻和正式场合用 menangkap。",
+      "is_oral_new": true
+    },
+    {
+      "word": "malahan",
+      "display": "malahan",
+      "audio_text": "malahan",
+      "cn": "反而；甚至",
+      "en": "on the contrary; instead",
+      "root": "malah",
+      "root_cn": "反而",
+      "formation": "malah + -an，意思和 malah 相同，语气稍完整。常用结构：tidak / bukannya …, malahan …（不但没……，反而……），前半句说预期，后半句说相反的结果。",
+      "example": "Saya kira satpam akan menuduh saya mencuri waktu alarm toko berbunyi, ternyata dia malahan minta maaf karena alarmnya memang sering rusak.",
+      "example_cn": "商店警报响的时候，我以为保安会说我偷东西，没想到他反而向我道歉，因为那个警报本来就经常出毛病。",
+      "synonym_note": "malahan / malah 表示结果和预期相反；在“不但没……还更……”的意思上也和 bahkan（甚至）接近，两者常可互换（Dia tidak capek, malahan / bahkan mau lari lagi）。padahal 是“明明、可事实上”，用来和已知事实对比，不能代替 malahan。口语说法：malah（更常用）。",
+      "is_oral_new": true
+    },
+    {
+      "word": "ramah",
+      "display": "ramah",
+      "audio_text": "ramah",
+      "cn": "友善；和气",
+      "en": "friendly",
+      "root": "ramah",
+      "root_cn": "友善",
+      "formation": "形容词。常见搭配：ramah kepada pelanggan（对顾客友善）、senyum ramah（和气的笑容）、ramah lingkungan（环保的）、ramah anak（适合孩子的）；名词 keramahan（热情友好）。",
+      "example": "Penjual di warung itu ramah sekali; kalau uang kita kurang sedikit, dia bilang bayar besok saja.",
+      "example_cn": "那家小店的老板特别和气；要是我们的钱差一点，他就说明天再付好了。",
+      "synonym_note": "ramah 讲待人的态度热情、和气（服务员、邻居、店主）；sopan 是有礼貌、守规矩；baik 是“人好”，范围最宽。一个人可以 sopan 但不 ramah（客气但冷淡）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berhasil",
+      "display": "berhasil",
+      "audio_text": "berhasil",
+      "cn": "成功（做成某事）",
+      "en": "to succeed",
+      "root": "hasil",
+      "root_cn": "结果；收获",
+      "formation": "ber- + hasil。berhasil 后面常直接接动词：berhasil memblokir kartu（成功冻结了卡）、berhasil lulus（考过了）；也可说 berhasil dalam … 。同词根：hasil（结果）、menghasilkan（产生、生产）。",
+      "example": "Setelah tiga kali gagal, adik saya akhirnya berhasil mengetik dengan sepuluh jari tanpa melihat keyboard.",
+      "example_cn": "失败了三次之后，我弟弟终于能不看键盘用十个手指打字了。",
+      "synonym_note": "berhasil 多说做成了一件具体的事；sukses 也能用，常说整体上的成功（usahanya sukses 生意很成功），两者在很多场合可以互换。反义词 gagal（失败）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "terakhir",
+      "display": "terakhir",
+      "audio_text": "terakhir",
+      "cn": "最后的；最近一次的",
+      "en": "last",
+      "root": "akhir",
+      "root_cn": "结束；末尾",
+      "formation": "ter- + akhir。常见搭配：terakhir kali（最后一次；上一次）、yang terakhir（最后一个）、hari terakhir（最后一天）、kesempatan terakhir（最后的机会）。",
+      "example": "Kapan terakhir kali kamu bener-bener nyantai tanpa pegang HP?",
+      "example_cn": "你上一次真正放松、不碰手机是什么时候？（bener-bener = benar-benar，pegang = memegang）",
+      "synonym_note": "terakhir kali 既能指“最后一次”，也常指“上一次”（Kapan terakhir kali kamu ke dokter? 你上次看医生是什么时候）。akhirnya 是“终于、最后的结果”，不是 terakhir。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "nyelip",
+    "nyelipin",
+    "unduh",
+    "pingsan",
+    "bentrok"
+  ],
+  "sentences": [
+    {
+      "text": "Jangan panik dulu. Coba cek lagi, siapa tahu dompetnya cuma nyelip di sela jok mobil.",
+      "cn": "先别慌。再找找看，说不定钱包只是夹在车座缝里了。（cuma = hanya）"
+    },
+    {
+      "text": "Pagi itu ada kejadian di gerbong kami: seorang penumpang tiba-tiba pingsan karena keretanya terlalu penuh dan panas.",
+      "cn": "那天早上我们车厢里出了件事：一位乘客因为车里太挤太热，突然晕倒了。"
+    },
+    {
+      "text": "Aku selalu nyelipin uang lima puluh ribu di balik casing HP, buat jaga-jaga kalau dompet ketinggalan.",
+      "cn": "我总是在手机壳后面塞五万盾，以防哪天忘带钱包。（aku 是朋友之间的“我”，nyelipin = menyelipkan，buat = untuk）"
+    },
+    {
+      "text": "Saya harus lapor ke kantor polisi pagi ini, tapi jadwalnya bentrok dengan rapat kantor, jadi saya minta izin datang siang.",
+      "cn": "我今天上午得去警察局报案，可是时间和公司的会撞了，所以我请假中午再到公司。"
+    },
+    {
+      "text": "Petugas bank menyarankan saya mengunduh aplikasi resminya, dan dalam lima menit saya berhasil memblokir kartu debit yang ikut hilang.",
+      "cn": "银行工作人员建议我下载他们的官方应用，五分钟内我就成功冻结了一起丢的借记卡。"
+    }
+  ],
+  "reading": {
+    "text": "Sabtu pagi, saya naik KRL dari Bogor ke Jakarta. Keretanya penuh sekali, jadi saya berdiri dekat pintu dengan ransel di punggung. Waktu turun di Stasiun Manggarai, saya baru sadar dompet saya sudah tidak ada. Saya kelabakan mencarinya di semua kantong, lalu langsung lapor ke petugas stasiun. Saya kira dia akan memarahi saya karena kurang hati-hati. Ternyata dia tidak marah, malahan sangat ramah dan menyuruh saya duduk dulu. Dia bertanya kapan terakhir kali saya melihat dompet itu, lalu memeriksa rekaman CCTV. Satu jam kemudian, petugas keamanan menangkap seorang pencuri di peron sebelah. Di dalam tasnya ada dompet saya dan dua dompet lain.",
+    "cn": "星期六早上，我坐 KRL 通勤电车从茂物去雅加达。车里挤得满满的，我背着双肩包站在车门边。在芒加莱站下车时，我才发现钱包不见了。我手忙脚乱地翻遍了所有口袋，然后马上去向车站工作人员报告。我以为他会骂我不小心。没想到他一点也没生气，反而非常和气，让我先坐下。他问我最后一次看到钱包是什么时候，然后去查看监控录像。一小时后，保安在隔壁站台抓住了一个小偷。他的包里有我的钱包，还有另外两个钱包。"
+  },
+  "quiz": [
+    {
+      "question": "Andi mencari kunci motornya ke mana-mana sebelum berangkat kerja. Akhirnya istrinya menemukan kunci itu ___ di sela-sela bantal sofa. 空格里哪个最自然？",
+      "options": [
+        "nyelipin",
+        "nyelip",
+        "menyelipkan",
+        "menjatuhkan"
+      ],
+      "answer_index": 1,
+      "answer": "nyelip",
+      "explain": "钥匙是自己“夹在”沙发靠垫缝里，不需要宾语，用不及物的 nyelip（正式说 terselip）。nyelipin 和 menyelipkan 都是“把某物塞进去”，后面要接宾语（nyelipin uang di casing HP）；menjatuhkan 是“把……弄掉”，也要接宾语，而且意思不对。"
+    },
+    {
+      "question": "Di stasiun, seorang ibu bingung karena tasnya tertinggal di dalam kereta yang sudah berangkat. Petugas berkata, \"Ibu tenang saja. Sekarang Ibu ___ di loket ini dulu, nanti kami hubungi stasiun berikutnya.\" 空格里哪个最自然？",
+      "options": [
+        "laporan",
+        "dilaporkan",
+        "lapor",
+        "kejadian"
+      ],
+      "answer_index": 2,
+      "answer": "lapor",
+      "explain": "主语是“您”（Ibu），空格要一个不带宾语的动词，lapor（也可以说 melapor）最自然。laporan 是名词“报告”，不能当谓语；dilaporkan 是被动“被报告”，主语应该是事情（Kehilangan itu sudah dilaporkan.）；kejadian 是名词“发生的事”，放在这里句子不成立。"
+    },
+    {
+      "question": "Rina datang terlambat satu jam ke acara ulang tahun temannya. Dia pikir temannya pasti kesal. Ternyata temannya tidak kesal sama sekali, ___ dia sudah menyisakan sepotong kue untuk Rina. 空格里哪个最自然？",
+      "options": [
+        "malahan",
+        "padahal",
+        "makanya",
+        "apalagi"
+      ],
+      "answer_index": 0,
+      "answer": "malahan",
+      "explain": "前面说预期（朋友会生气），后面是相反而且更好的结果（还给她留了蛋糕），用 malahan（口语 malah）。padahal 用来和已知事实对比（Dia kesal, padahal Rina sudah minta maaf.）；makanya 是“所以、难怪”；apalagi 是“更何况、尤其”，都接不上这里的逻辑。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语讲一次你或家人丢东西的经历：在哪里丢的、向谁报告、结果怎样。至少用 lapor、petugas、terakhir、ramah、berhasil 中的两个。",
+    "reference_answer": "Bulan lalu ibu saya meninggalkan tasnya di taksi. Karena HP-nya ada di dalam tas, dia meminjam HP saya, menelepon kantor taksi itu untuk lapor, dan menjelaskan dari mana dan jam berapa dia naik. Petugasnya ramah sekali, dan dua jam kemudian sopirnya berhasil mengembalikan tas itu ke rumah kami.",
+    "reference_cn": "上个月我妈妈把包落在了出租车上。因为她的手机在包里，她借了我的手机，打电话向那家出租车公司报告，说明她是几点、从哪里上的车。那里的工作人员非常和气，两个小时后，司机就把包送回了我们家。"
+  },
+  "review": [
+    "3 秒主动提取：看中文马上说印尼语——钱包、报告/报案、发生的事、工作人员、乘客、抓住/接住、反而、和气、成功、最后一次/上一次；说不出来的回看词卡再说一遍。",
+    "易混词：lapor ke …（不带宾语）vs melaporkan + 宾语 vs laporan（名词“报告”）；malahan（结果和预期相反）vs padahal（明明、可事实上）；terakhir kali（上一次）vs akhirnya（终于）。",
+    "复习词应用：同词根 selip——nyelip（东西自己夹进缝里，不及物）vs nyelipin（把东西塞进去，后接宾语），各说一句你家里常找不到的东西；用 unduh / mengunduh 说一个你最近下载的应用；用 pingsan 讲一次你见过或听说的晕倒；用 bentrok 说一次两件事撞期。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "钱包",
+        "id": "dompet"
+      },
+      {
+        "cn": "报告；报案",
+        "id": "lapor"
+      },
+      {
+        "cn": "发生的事",
+        "id": "kejadian"
+      },
+      {
+        "cn": "工作人员",
+        "id": "petugas"
+      },
+      {
+        "cn": "乘客",
+        "id": "penumpang"
+      },
+      {
+        "cn": "抓住；接住",
+        "id": "menangkap"
+      },
+      {
+        "cn": "反而",
+        "id": "malahan"
+      },
+      {
+        "cn": "和气",
+        "id": "ramah"
+      },
+      {
+        "cn": "成功",
+        "id": "berhasil"
+      },
+      {
+        "cn": "最后一次；上一次",
+        "id": "terakhir"
+      }
+    ],
+    "frames": [
+      "Coba cek lagi, siapa tahu …",
+      "Ternyata dia tidak …, malahan …",
+      "Kapan terakhir kali kamu …?"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "lapor",
+            "cn": "报告（不带宾语）"
+          },
+          {
+            "id": "melaporkan",
+            "cn": "报告某事（带宾语）"
+          },
+          {
+            "id": "laporan",
+            "cn": "报告（名词）"
+          }
+        ],
+        "note": "Saya lapor ke petugas. / Saya melaporkan kejadian itu. / Laporannya sudah selesai."
+      },
+      {
+        "items": [
+          {
+            "id": "malahan",
+            "cn": "反而"
+          },
+          {
+            "id": "padahal",
+            "cn": "明明；可事实上"
+          }
+        ],
+        "note": "malahan 接和预期相反的结果；padahal 拿已知事实来对比。"
+      },
+      {
+        "items": [
+          {
+            "id": "terakhir kali",
+            "cn": "上一次；最后一次"
+          },
+          {
+            "id": "akhirnya",
+            "cn": "终于"
+          }
+        ],
+        "note": "Kapan terakhir kali …? 问上一次；Akhirnya … 说最后的结果。"
+      },
+      {
+        "items": [
+          {
+            "id": "nyelip",
+            "cn": "自己夹进缝里"
+          },
+          {
+            "id": "nyelipin",
+            "cn": "把东西塞进去"
+          }
+        ],
+        "note": "同一个词根 selip：nyelip 不接宾语（dompetnya nyelip），nyelipin 后面接东西（nyelipin uang）。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "unduh",
+        "usage": "下载文件或应用，句子里多用 mengunduh；口语也常说 download。",
+        "examples": [
+          {
+            "id": "Petugas bank menyarankan saya mengunduh aplikasi resminya.",
+            "cn": "银行工作人员建议我下载他们的官方应用。"
+          }
+        ]
+      },
+      {
+        "word": "pingsan",
+        "usage": "晕倒、昏过去，常和 tiba-tiba 连用。",
+        "examples": [
+          {
+            "id": "Seorang penumpang tiba-tiba pingsan karena keretanya terlalu penuh dan panas.",
+            "cn": "一位乘客因为车里太挤太热，突然晕倒了。"
+          }
+        ]
+      },
+      {
+        "word": "bentrok",
+        "usage": "两件事时间撞了：A bentrok dengan B。",
+        "examples": [
+          {
+            "id": "Jadwalnya bentrok dengan rapat kantor.",
+            "cn": "时间和公司的会撞了。"
+          }
+        ]
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "lapor",
+      "kejadian",
+      "terakhir"
+    ],
+    "patterns": [
+      {
+        "pattern": "Ternyata … tidak …, malahan …",
+        "cn": "没想到……不但没……，反而……",
+        "example": "Ternyata dia tidak marah, malahan sangat ramah dan menyuruh saya duduk dulu.",
+        "example_cn": "没想到他一点也没生气，反而非常和气，让我先坐下。"
+      },
+      {
+        "pattern": "Coba cek lagi, siapa tahu …",
+        "cn": "再找找看，说不定……",
+        "example": "Coba cek lagi, siapa tahu dompetnya cuma nyelip di sela jok mobil.",
+        "example_cn": "再找找看，说不定钱包只是夹在车座缝里了。"
+      }
+    ]
+  }
+}
