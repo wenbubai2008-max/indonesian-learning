@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 817,
+   "use": 821,
    "recognize": 104,
    "unsure": 20,
    "fast": 131
   },
   "active": {
-   "use": 550,
+   "use": 554,
    "recognize": 88,
    "unsure": 18,
    "fast": 54
@@ -8693,6 +8693,42 @@
    "why": [
     "日常高频表达（时间）",
     "977 主库第 738 位"
+   ]
+  },
+  "penerbangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 264 位"
+   ]
+  },
+  "baterai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 825 位"
+   ]
+  },
+  "jaringan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 826 位"
+   ]
+  },
+  "hadir": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 492 位"
    ]
   }
  }

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-10-26T10:51:42.903Z",
-  "source_updated_at": "2026-10-26T07:55:27.579Z",
+  "generated_at": "2026-10-26T14:00:53.217Z",
+  "source_updated_at": "2026-10-26T13:21:15.234Z",
   "taught_total": 945,
   "confirmed_mastered": 200,
   "needs_reinforcement": 660,
@@ -15,6 +15,20 @@
   "primary_eligible_new_total": 103,
   "focus_total": 659,
   "focus_words": [
+    {
+      "word": "penanganan",
+      "score": 124,
+      "signals": [
+        "quick_wrong",
+        "lesson_wrong",
+        "dont",
+        "fuzzy"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-10-26T13:19:57.977Z",
+      "last_review": "2026-10-26T13:19:57.977Z",
+      "cn": "处理；应对（过程）"
+    },
     {
       "word": "perpaduan",
       "score": 124,
@@ -104,21 +118,8 @@
       ],
       "wrong_count": 2,
       "last_wrong": "2026-10-25T13:10:06.986Z",
-      "last_review": "2026-10-25T13:10:06.986Z",
+      "last_review": "2026-10-26T12:41:21.779Z",
       "cn": "结束；终止（让某事停下来）"
-    },
-    {
-      "word": "tepat",
-      "score": 88,
-      "signals": [
-        "quick_wrong",
-        "dont",
-        "fuzzy"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-10-21T01:41:38.712Z",
-      "last_review": "2026-10-25T01:52:18.277Z",
-      "cn": "准确的；恰好；正好"
     }
   ],
   "definitions": {
