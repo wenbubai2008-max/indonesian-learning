@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-26T07:55:27.579Z",
+  "updated_at": "2026-10-26T13:21:15.234Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -4587,13 +4587,13 @@
     "mengakhiri": {
       "word": "mengakhiri",
       "status": "active",
-      "updated_at": "2026-10-25T13:10:07.070Z",
+      "updated_at": "2026-10-26T12:41:21.838Z",
       "display": "mengakhiri",
       "cn": "结束；终止（让某事停下来）",
       "root": "akhir",
       "root_cn": "最后；末尾",
       "last_wrong": "2026-10-25T13:10:06.986Z",
-      "last_review": "2026-10-25T13:10:06.986Z",
+      "last_review": "2026-10-26T12:41:21.779Z",
       "source": "课程小测",
       "source_date": "2026-10-25",
       "session": "18:00",
@@ -4603,7 +4603,7 @@
         "lesson_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "mengalikan": {
       "word": "mengalikan",
@@ -6824,19 +6824,19 @@
     "kebijakan": {
       "word": "kebijakan",
       "status": "active",
-      "updated_at": "2026-10-25T12:16:56.822Z",
+      "updated_at": "2026-10-26T12:41:15.202Z",
       "display": "kebijakan",
       "cn": "政策；（店家、公司、学校定的）规定、做法",
       "root": "bijak",
       "root_cn": "明智的",
       "last_wrong": "2026-10-25T12:16:56.720Z",
-      "last_review": "2026-10-25T12:16:56.720Z",
+      "last_review": "2026-10-26T12:41:15.144Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "hukuman": {
       "word": "hukuman",
@@ -7028,14 +7028,15 @@
     "hadir": {
       "word": "hadir",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.089Z",
+      "updated_at": "2026-10-26T11:35:55.028Z",
       "display": "hadir",
       "cn": "出席",
+      "last_review": "2026-10-26T11:35:54.975Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "hakim": {
       "word": "hakim",
@@ -14469,13 +14470,14 @@
     "penerbangan": {
       "word": "penerbangan",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:57.580Z",
+      "updated_at": "2026-10-26T11:36:20.011Z",
       "display": "penerbangan",
+      "last_review": "2026-10-26T11:36:19.959Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "biarkan": {
       "word": "biarkan",
@@ -17663,15 +17665,16 @@
     "baterai": {
       "word": "baterai",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:02.652Z",
+      "updated_at": "2026-10-26T11:35:52.235Z",
       "display": "baterai",
       "cn": "电池",
       "root": "baterai",
+      "last_review": "2026-10-26T11:35:52.183Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "gerak": {
       "word": "gerak",
@@ -20409,14 +20412,21 @@
     "jaringan": {
       "word": "jaringan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:07.969Z",
+      "updated_at": "2026-10-26T13:21:04.705Z",
       "display": "jaringan",
-      "cn": "网络；网络连接",
+      "cn": "网络；（手机、网络的）信号连接；（人、机构的）网",
       "root": "jaring",
+      "root_cn": "网（渔网等）",
+      "last_wrong": "2026-10-26T13:21:04.637Z",
+      "last_review": "2026-10-26T13:21:04.637Z",
+      "source": "课程小测",
+      "source_date": "2026-10-26",
+      "session": "18:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 1,
       "right_streak": 0
     },
     "lemot": {
@@ -29571,21 +29581,23 @@
     "penanganan": {
       "word": "penanganan",
       "status": "active",
-      "updated_at": "2026-10-26T07:48:42.117Z",
+      "updated_at": "2026-10-26T13:19:58.154Z",
       "display": "penanganan",
-      "cn": "处理；应对（过程）",
+      "cn": "处理；应对（的过程、方式）",
       "root": "tangan",
       "root_cn": "手",
-      "last_wrong": "2026-10-26T07:48:42.060Z",
-      "last_review": "2026-10-26T07:48:42.060Z",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "last_wrong": "2026-10-26T13:19:57.977Z",
+      "last_review": "2026-10-26T13:19:57.977Z",
+      "source": "课程小测",
+      "source_date": "2026-10-26",
+      "session": "18:00",
       "reasons": [
         "bipa_secondary_dont",
         "memory_fuzzy",
-        "quick_wrong"
+        "quick_wrong",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "tuntas": {
