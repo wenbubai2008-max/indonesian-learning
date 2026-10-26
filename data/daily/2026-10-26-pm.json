@@ -1,0 +1,386 @@
+{
+  "date": "2026-10-26",
+  "session": "pm",
+  "time": "18:00",
+  "day": 66,
+  "title": "18:00 晚课｜Penerbangan Molor, Baterai Tinggal Sepuluh Persen · 航班延误，电量只剩百分之十",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "penerbangan",
+    "baterai",
+    "jaringan",
+    "hadir"
+  ],
+  "vocab": [
+    {
+      "word": "penerbangan",
+      "display": "penerbangan",
+      "audio_text": "penerbangan",
+      "cn": "航班；（一次）飞行；航空",
+      "en": "flight; aviation",
+      "root": "terbang",
+      "root_cn": "飞",
+      "formation": "peN-an + terbang → penerbangan（peN- 遇 t，t 脱落，变成 pen-）。同词根：terbang（飞）、menerbangkan（放飞；驾驶飞行）。常见搭配：penerbangan ke Bali（飞往巴厘的航班）、penerbangan langsung（直飞）、penerbangan transit（转机航班）、penerbangan ditunda / dibatalkan（航班延误 / 取消）、jadwal penerbangan（航班时刻）。",
+      "example": "Di dalam penerbangan, penumpang dilarang merokok, termasuk rokok elektrik.",
+      "example_cn": "在航班上，乘客禁止吸烟，电子烟也包括在内。",
+      "synonym_note": "penerbangan 指“这一班航班、这次飞行”，pesawat 指飞机这个交通工具本身：Penerbangannya ditunda（航班延误了）；Pesawatnya besar（飞机很大）。说自己的行程时两种都常用：Penerbanganku jam tujuh / Pesawatku jam tujuh。口语说法：聊天多说 pesawat，年轻人也直接说 flight（Flight-ku delay）；penerbangan 多见于广播、机票和新闻。",
+      "usage_note": "今晚新词。机场广播和订票软件里最常见：Penerbangan … ke Surabaya ditunda dua jam。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "baterai",
+      "display": "baterai",
+      "audio_text": "baterai",
+      "cn": "电池；（手机、电脑的）电量",
+      "en": "battery",
+      "root": "baterai",
+      "root_cn": "电池（外来词）",
+      "formation": "外来词（来自荷兰语 batterij），没有词缀派生。常见搭配：baterai habis（没电了）、baterai tinggal sepuluh persen（电量只剩百分之十）、mengisi baterai（充电）、baterai cepat habis（很快没电）、daya tahan baterai（电池续航）。",
+      "example": "Daya tahan baterai HP baruku luar biasa; seharian dipakai, masih sisa lima puluh persen.",
+      "example_cn": "我新手机的电池续航太厉害了，用了一整天还剩百分之五十。",
+      "synonym_note": "baterai 是手机、电脑、遥控器里的电池；汽车、摩托车的电瓶叫 aki；随身充电宝叫 power bank。口语说法：mengisi baterai 口语说 ngecas（Aku ngecas HP dulu）；电量低常说 lowbat（HP-ku lowbat）。",
+      "usage_note": "今晚新词。最常用在“没电、快没电、充电”这三种情况。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "jaringan",
+      "display": "jaringan",
+      "audio_text": "jaringan",
+      "cn": "网络；（手机、网络的）信号连接；（人、机构的）网",
+      "en": "network; connection",
+      "root": "jaring",
+      "root_cn": "网（渔网等）",
+      "formation": "jaring + -an → jaringan（名词）。同词根：jaring（网）、menjaring（用网捕；筛选人才）。常见搭配：jaringan internet（互联网连接）、jaringan wifi、jaringan lambat / hilang / putus（网慢 / 没信号 / 断了）、jaringan 4G、jaringan toko（连锁店网络）。",
+      "example": "Jaringan internet di kantor baru belum memenuhi kebutuhan kami; video call dengan klien sering putus.",
+      "example_cn": "新办公室的网络还满足不了我们的需要，和客户视频通话经常断线。",
+      "synonym_note": "jaringan 是整个网络连接，sinyal 是手机收到的信号强弱。手机没网时 Nggak ada sinyal 和 Jaringannya hilang 都常说；说网速慢一般说 jaringannya lambat。口语说法：网慢常说 jaringannya lemot（lemot = lambat）、internetnya lemot。",
+      "usage_note": "今晚新词。抱怨网络时最常用：Jaringannya lambat banget。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "hadir",
+      "display": "hadir",
+      "audio_text": "hadir",
+      "cn": "出席；到场；在场",
+      "en": "to attend; to be present",
+      "root": "hadir",
+      "root_cn": "出席；在场",
+      "formation": "hadir 本身是词根，不带宾语：hadir di rapat（出席会议）。派生：menghadiri（meN- + hadir + -i，带宾语：menghadiri rapat）、kehadiran（出席，名词）、hadirin（在场的各位）。常见搭配：hadir di rapat / acara、hadir tepat waktu（准时到场）、tidak bisa hadir（无法出席）、hadir secara online（线上参加）。",
+      "example": "Seluruh staf wajib hadir di pelatihan Sabtu ini supaya bisa menguasai sistem kasir yang baru.",
+      "example_cn": "全体员工这周六必须参加培训，好掌握新的收银系统。",
+      "synonym_note": "hadir 不带宾语（hadir di rapat）；menghadiri 带宾语（menghadiri rapat），两句意思一样。datang 是最普通的“来”，日常最常用。口语说法：朋友之间多说 datang / dateng（Besok kamu dateng nggak?）；hadir 偏正式，常见于会议、婚礼请柬、点名和通知。",
+      "usage_note": "今晚新词。请假、回复通知时最常用：Maaf, saya tidak bisa hadir。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengesankan",
+      "display": "mengesankan",
+      "audio_text": "mengesankan",
+      "cn": "令人印象深刻的；给人留下好印象的",
+      "en": "impressive",
+      "root": "kesan",
+      "root_cn": "印象",
+      "formation": "meN- + kesan + -kan → mengesankan（meN- 遇 k，k 脱落，变成 meng-）。同词根：kesan（印象）、terkesan（被打动；显得）、berkesan（难忘的、有纪念意义的）。常见搭配：sangat mengesankan、penampilan yang mengesankan（令人印象深刻的表现）、hasil yang mengesankan（出色的成绩）。",
+      "example": "Presentasi bawahanku tadi pagi mengesankan banget; klien langsung setuju meningkatkan kerja sama.",
+      "example_cn": "我下属今天早上的展示特别出彩，客户马上就同意加强合作了。",
+      "synonym_note": "mengesankan 说事物“让人印象深刻”（Presentasinya mengesankan）；terkesan 说人“被打动”（Saya terkesan dengan presentasinya），也可表示“显得”（terkesan buru-buru）；berkesan 多说经历“难忘、有意义”（pengalaman yang berkesan）。说经历时 mengesankan 和 berkesan 常可互换。口语说法：聊天里常直接说 keren banget / mantap。",
+      "usage_note": "最近答错过的词。记住主语是“让人佩服的事或表现”，人自己被打动要用 terkesan。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "penanganan",
+      "display": "penanganan",
+      "audio_text": "penanganan",
+      "cn": "处理；应对（的过程、方式）",
+      "en": "handling; treatment",
+      "root": "tangan",
+      "root_cn": "手",
+      "formation": "peN-an + tangan → penanganan（peN- 遇 t，t 脱落）。和今晚的 menangani 是同一词根：menangani（处理，动词）→ penanganan（处理这件事，名词）；被动形 ditangani。常见搭配：penanganan keluhan（投诉处理）、penanganan pasien（病人救治）、penanganan banjir（防洪救灾）、penanganan yang cepat（处理得快）。",
+      "example": "Berkat penanganan yang cepat, toko online itu berhasil mencapai rating 4,9 di aplikasi.",
+      "example_cn": "多亏处理得快，那家网店在应用上拿到了 4.9 分。",
+      "synonym_note": "penanganan 是名词，说“处理得怎么样”：Penanganannya cepat；menangani 是动词，说“谁处理什么”：Petugas menangani keluhan。别把名词放到动词位置：说 Dia menangani masalah ini，不说 Dia penanganan masalah ini。口语说法：名词没有常用口语形；聊天里常换成动词说 Cepet banget nanganinnya。",
+      "usage_note": "最近答错过的词。今晚和 menangani 一起练：一个是“处理”这个动作，一个是“处理的过程和效果”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menangani",
+      "display": "menangani",
+      "audio_text": "menangani",
+      "cn": "处理；负责应对（问题、病人、案件、客户）",
+      "en": "to handle; to deal with",
+      "root": "tangan",
+      "root_cn": "手",
+      "formation": "meN- + tangan + -i → menangani（t 脱落）。和今晚的 penanganan 同词根：menangani（动词）→ penanganan（名词）→ ditangani（被处理）。常见搭配：menangani keluhan（处理投诉）、menangani pasien（救治病人）、menangani kasus（办理案件）、menangani klien（负责客户）。",
+      "example": "Dokter jaga yang menangani korban tabrak lari semalam belum tidur sama sekali.",
+      "example_cn": "昨晚救治肇事逃逸受害者的值班医生到现在一点都没睡。",
+      "synonym_note": "menangani 强调“负责处理并采取行动”（问题、病人、客户）；mengurus 偏“办理、照料”（mengurus surat, mengurus anak）；mengatasi 偏“克服、解决掉”（mengatasi masalah）。处理问题时 menangani masalah 和 mengatasi masalah 都常说，前者说负责处理，后者说把它解决掉。口语说法：nanganin（Siapa yang nanganin klien ini?）。",
+      "usage_note": "和 penanganan 是一组同词根词。说工作分工时很好用：Saya yang menangani klien ini。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ketiban",
+      "display": "ketiban",
+      "audio_text": "ketiban",
+      "cn": "突然摊上；（任务、麻烦或好运）意外落到自己头上（口语）",
+      "en": "to be saddled with; to get landed with",
+      "root": "tiban",
+      "root_cn": "落到；砸到（来自爪哇语）",
+      "formation": "口语词，来自爪哇语，意思相当于标准语 kejatuhan / tertimpa（被落下的东西砸到），引申为“突然摊上”。常见搭配：ketiban tugas / kerjaan（摊上任务、活儿）、ketiban sial（倒霉）、ketiban rezeki（天降好运）。",
+      "example": "Gara-gara jadi satu-satunya jomblo di tim, aku yang ketiban tugas lembur malam Minggu.",
+      "example_cn": "因为我是组里唯一的单身，周六晚上加班的任务就落到我头上了。（gara-gara = karena）",
+      "synonym_note": "ketiban 强调“不是自己选的，突然落到头上”，好事坏事都能用（ketiban sial / ketiban rezeki）。kebagian 是“分到一份”，比较中性：Aku kebagian tugas bikin slide（我分到做幻灯片的活）。说被派任务时两者都常用，ketiban 更有“倒霉、没办法”的味道。口语说法：ketiban 本身是口语；正式说 mendapat tugas mendadak、tertimpa musibah。",
+      "usage_note": "很久没复习的口语词。今晚的场景：上司生病，出差的任务突然落到 Nadia 头上。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "molor",
+      "display": "molor",
+      "audio_text": "molor",
+      "cn": "（时间）拖长；延误；比原计划晚（口语）",
+      "en": "to drag on; to be delayed",
+      "root": "molor",
+      "root_cn": "拖长；延后",
+      "formation": "口语词，本义是“（橡皮筋等）拉长”，引申为时间被拉长。常见搭配：jadwal molor（日程拖延）、rapat molor（会议超时）、proyek molor（项目延期）、molor dua jam（拖了两个小时）、molor terus（一拖再拖）。",
+      "example": "Rapatnya molor sampai jam sembilan malam gara-gara bos mau mengubah semua target.",
+      "example_cn": "会议拖到了晚上九点，因为老板要把所有目标都改掉。（gara-gara = karena）",
+      "synonym_note": "molor 说事情“比计划拖长、延后”，口语色彩浓；ditunda 是“被推迟”，正式，常见于广播和通知（Penerbangan ditunda）；terlambat / telat 是“迟到”。同一件事，广播说 ditunda，跟朋友聊说 molor 或 delay。口语说法：molor 本身是口语；正式场合说 tertunda / mundur dari jadwal。",
+      "usage_note": "很久没复习、以前答错过的词。今晚出现在机场：航班 molor 三个小时。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mendung",
+      "display": "mendung",
+      "audio_text": "mendung",
+      "cn": "阴天；（天）阴沉沉的",
+      "en": "overcast; cloudy and dark",
+      "root": "mendung",
+      "root_cn": "阴天",
+      "formation": "词根本身，形容词。今天08:00新学。常见搭配：langit mendung（天阴）、cuaca mendung（阴天）、mendung tebal（乌云很厚）、mendung tapi tidak hujan（阴天但没下雨）。",
+      "example": "Pagi ini mendung, jadi kelas peregangan di atap kantor dipindah ke ruang rapat.",
+      "example_cn": "今天早上天阴，所以在公司天台上的拉伸课改到会议室上了。",
+      "synonym_note": "mendung 是乌云多、天暗下来、可能要下雨；berawan 只是“多云”，天不一定暗。口语说法：没有常用的不同说法，聊天里也说 mendung（Mendung nih, kayaknya mau hujan）。",
+      "usage_note": "今天08:00新学。早上在野餐里学的，今晚换到上班、出差的场景：天阴、航班延误。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "lusa",
+      "display": "lusa",
+      "audio_text": "lusa",
+      "cn": "后天",
+      "en": "the day after tomorrow",
+      "root": "lusa",
+      "root_cn": "后天",
+      "formation": "词根本身，时间名词。今天08:00新学。常见搭配：besok lusa（明后天）、lusa pagi / sore（后天早上 / 下午）、paling lambat lusa（最迟后天）、sampai lusa（到后天为止）。",
+      "example": "Bos minta laporan keuntungan bulan ini dikirim paling lambat lusa.",
+      "example_cn": "老板要求这个月的利润报告最晚后天发出去。",
+      "synonym_note": "lusa = 后天；besok = 明天；kemarin lusa = 前天。besok lusa 有时指“明后天、过两天”。口语说法：没有常用的不同说法，聊天里也说 lusa。",
+      "usage_note": "今天08:00新学。今晚换到工作场景：上司说后天赶过去。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Senin sore, Nadia mendapat tugas mendadak: menggantikan atasannya yang sakit untuk menangani keluhan klien di Surabaya besok pagi. Langit Jakarta mendung, dan penerbangannya molor tiga jam karena hujan deras di Surabaya. Masalahnya, presentasi untuk rapat belum dikirim ke klien. Baterai laptopnya tinggal sepuluh persen, dan jaringan wifi di ruang tunggu sangat lambat. Untung petugas maskapai bertindak cepat. Mereka membagikan voucher makan dan menunjukkan ruang tunggu lain yang punya colokan dan internet lebih kencang. Penanganan seperti itu cukup mengesankan. Setengah jam kemudian, presentasi Nadia terkirim, dan klien membalas bahwa semua kepala bagian akan hadir.",
+    "cn": "周一下午，Nadia 接到一个临时任务：替生病的上司去泗水，明天早上处理客户的投诉。雅加达天色阴沉，她的航班又因为泗水下大雨延误了三个小时。问题是，开会用的演示文稿还没发给客户。她的笔记本电脑只剩百分之十的电，候机室的 wifi 又特别慢。还好航空公司的工作人员反应很快。他们给大家发了餐券，还告诉大家另一个有插座、网速更快的候机室。这样的处理方式挺让人佩服的。半个小时后，Nadia 的演示文稿发出去了，客户回复说各部门的负责人都会出席。"
+  },
+  "dialogue": {
+    "title": "候机室里的电话：上司的嘱咐",
+    "lines": [
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Nad, maaf ya, kamu jadi ketiban tugas gara-gara saya sakit. Udah di bandara?",
+        "cn": "Nadia，不好意思啊，因为我生病，这个任务落到你头上了。到机场了吗？（gara-gara = karena，udah = sudah）"
+      },
+      {
+        "speaker": "Nadia",
+        "id": "Udah, Pak. Tapi penerbangannya molor tiga jam. Dari tadi langitnya mendung banget.",
+        "cn": "到了，Yusuf 先生。可是航班延误了三个小时。天从刚才起就阴得厉害。（banget = sekali）"
+      },
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Waduh. Presentasinya udah dikirim ke klien?",
+        "cn": "哎呀。演示文稿发给客户了吗？"
+      },
+      {
+        "speaker": "Nadia",
+        "id": "Belum, Pak. Baterai laptop saya tinggal dikit, jaringannya juga lemot.",
+        "cn": "还没有。我电脑电量没剩多少了，网也很慢。（dikit = sedikit，lemot = lambat）"
+      },
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Coba tanya petugasnya, biasanya ada ruangan yang ada colokannya.",
+        "cn": "去问问工作人员，一般都有带插座的房间。"
+      },
+      {
+        "speaker": "Nadia",
+        "id": "Barusan petugasnya udah nawarin, Pak. Penanganannya cepet juga.",
+        "cn": "工作人员刚才已经主动提出来了。他们处理得还挺快的。（nawarin = menawarkan，cepet = cepat）"
+      },
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Bagus. Besok kalau ada yang ngegas, jangan kepancing, ya. Dengerin dulu keluhannya.",
+        "cn": "很好。明天要是有人说话很冲，你别被激到啊。先听他们把投诉说完。（dengerin = dengarkan）"
+      },
+      {
+        "speaker": "Nadia",
+        "id": "Siap, Pak. Bapak jadi nyusul lusa, kan?",
+        "cn": "好的。您后天还是会赶过来吧？（nyusul = menyusul）"
+      },
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Jadi, kalau dokter udah ngizinin. Saya yang nanganin bagian kontraknya.",
+        "cn": "会的，只要医生允许。合同那部分由我来处理。（ngizinin = mengizinkan，nanganin = menangani）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：你负责公司培训，培训老师来不了，在同事群里发通知，说明明天的培训改成线上，并提醒大家准备好设备。用 hadir、jaringan、baterai，对同事用礼貌的标准说法，写 3–4 句（不要用机场的场景）。",
+      "reference_answer": "Selamat sore, rekan-rekan. Karena penerbangan pelatih kita dari Bali dibatalkan, pelatihan besok diadakan secara online. Semua staf tetap wajib hadir jam sembilan dan berpartisipasi dalam diskusi. Tolong pastikan jaringan internet di rumah stabil dan baterai laptop sudah penuh, ya.",
+      "reference_cn": "各位同事下午好。因为培训老师从巴厘岛过来的航班取消了，明天的培训改为线上进行。所有员工仍须在九点准时参加，并参与讨论。请确认家里的网络稳定，笔记本电脑的电也充满了。"
+    },
+    {
+      "task": "弱词应用：跟朋友讲一次网购投诉的经历，说说客服处理得怎么样。用 penanganan 和 mengesankan，再用一次 menangani 的口语形式，朋友之间用口语，写 3 句。",
+      "reference_answer": "Kemarin paketku datang rusak, terus aku komplain lewat chat. CS-nya langsung nanganin, dan dua jam kemudian aku udah dapet barang pengganti. Jujur, penanganannya mengesankan banget, beda sama toko lain.",
+      "reference_cn": "昨天我的包裹到的时候坏了，然后我在聊天窗口投诉。客服马上就处理了，两个小时后我就拿到了换的货。说实话，他们的处理让我印象很深，和别的店不一样。（nanganin = menangani，udah = sudah，dapet = dapat）"
+    },
+    {
+      "task": "场景回应：同事抱怨项目一拖再拖，最后多出来的活又落到他头上。用 molor 和 ketiban 回应他，安慰一下再出个主意，朋友式口语，写 2–3 句。",
+      "reference_answer": "Wah, kamu ketiban kerjaan tambahan lagi? Kalau proyeknya molor terus, mending kita ngomong ke bos sekarang biar jadwalnya diatur ulang. Jangan diem aja, nanti kamu yang capek sendiri.",
+      "reference_cn": "哇，额外的活又落到你头上了？如果项目一直这么拖，不如我们现在就去跟老板说，让他重新安排日程。别一声不吭，不然累的是你自己。（mending = lebih baik，ngomong = berbicara，diem = diam）"
+    },
+    {
+      "task": "早课词迁移：你开网店，今天天阴、傍晚可能下雨，你决定推迟发货。给顾客回一条礼貌的消息。用 mendung 和 lusa，写 2–3 句（不要用野餐或生病的场景）。",
+      "reference_answer": "Selamat sore, Kak. Hari ini mendung dan sore nanti diperkirakan hujan, jadi supaya kardusnya tidak basah, paket Kakak kami kirim lusa pagi. Sebagai bentuk permintaan maaf, kami tambahkan satu masker gratis.",
+      "reference_cn": "您好。今天天阴，预计傍晚会下雨，为了不让纸箱淋湿，您的包裹我们后天早上寄出。作为致歉，我们会多送您一个口罩。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "客户在邮件里写道：“Terima kasih, Bu Nadia. ___ keluhan kami kemarin sangat cepat dan jelas.” 选最自然的一项：",
+        "options": [
+          "Menangani",
+          "Penanganan",
+          "Ditangani",
+          "Tangani"
+        ],
+        "answer_index": 1,
+        "answer": "Penanganan",
+        "explain": "空格是句子的主语，后面接 keluhan kami，再说它 sangat cepat，所以要用名词 penanganan（处理的过程）。Menangani 是动词，要有人做主语（Bu Nadia menangani keluhan kami）；Ditangani 是被动“被处理”，放句首要写成 Keluhan kami ditangani dengan cepat；Tangani 是命令式“处理一下！”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "开完会，Raka 跟经理聊新同事：“Bu, presentasi Dina tadi ___ banget. Kliennya sampai minta file slide-nya.” 选最自然的一项：",
+        "options": [
+          "terkesan",
+          "kesannya",
+          "dikesankan",
+          "mengesankan"
+        ],
+        "answer_index": 3,
+        "answer": "mengesankan",
+        "explain": "主语是 presentasi Dina（一件事），说它让人印象深刻用 mengesankan。terkesan 说人被打动，要写成 Kliennya terkesan dengan presentasi Dina；单独跟在 presentasi 后面会变成“显得……”，句子不完整。kesannya 是名词“它的印象”，不能接 banget 当谓语；dikesankan 不是常用说法。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Nadia 在电话里跟大学同学说：“Bosku tiba-tiba sakit, jadi aku yang ___ tugas ke Surabaya besok.” 选最自然的一项：",
+        "options": [
+          "ketiban",
+          "ketinggalan",
+          "kebanyakan",
+          "kelewatan"
+        ],
+        "answer_index": 0,
+        "answer": "ketiban",
+        "explain": "上司病了，任务突然落到自己头上，用 ketiban tugas。ketinggalan 是“落下、没赶上”（ketinggalan pesawat）；kebanyakan 是“太多了”；kelewatan 是“错过、过头了”。这几个都是 ke- 开头的口语词，要看意思选。这里也可以说 kebagian tugas（分到任务），只是 ketiban 更有“没办法、突然摊上”的味道。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Maaf, Pak, besok saya tidak bisa ______ di rapat karena masih di Surabaya.（出席、到场）",
+        "answer": "hadir",
+        "explain": "hadir 不带宾语，后面接 di rapat。如果直接接 rapat，要用 menghadiri：tidak bisa menghadiri rapat。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Wifi di ruang tunggu ini lemot banget, mungkin ______ internetnya lagi padat.（网络）",
+        "answer": "jaringan",
+        "explain": "jaringan internet = 网络连接。sinyal 是手机信号强弱，一般不说 sinyal internetnya padat；说网慢、网络拥挤用 jaringan（jaringannya lagi padat / lemot）。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我们的航班因为大雨延误了三个小时。",
+        "tokens": [
+          "Penerbangan",
+          "kami",
+          "molor",
+          "tiga jam",
+          "karena",
+          "hujan deras."
+        ],
+        "answer": "Penerbangan kami molor tiga jam karena hujan deras.",
+        "answer_cn": "我们的航班因为大雨延误了三个小时。",
+        "explain": "penerbangan kami（我们的航班）做主语，后面直接接 molor tiga jam（拖了三个小时），原因放在 karena 后面。广播里会说 ditunda tiga jam，聊天用 molor 更自然。"
+      }
+    ],
+    "self_check": [
+      "不看中文：penerbangan、baterai、jaringan、hadir 这四个新词，我能在 3 秒内说出意思吗？",
+      "看到“处理（动作）”和“处理（的过程、效果）”，我能马上分清用 menangani 还是 penanganan 吗？",
+      "mengesankan 和 terkesan，我分得清哪个说事情“让人印象深刻”、哪个说人“被打动”吗？",
+      "听到 ketiban、molor，我能马上反应出“突然摊上”“拖长、延误”吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘（主动输出，不重复自检）",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "同词根输出：用 menangani 说一件你工作或生活中负责处理的事（Saya yang menangani …），再用 penanganan 评价一次你遇到过的客服或医院（Penanganannya …）。",
+      "mengesankan / terkesan 各说一句：想一个最近让你佩服的人或作品，先说它 … mengesankan banget，再从自己的角度说 Saya terkesan dengan …。",
+      "早课迁移：用 mendung 和 lusa 说一句和上班或出行有关的话，例如因为天阴把约好的事改到后天（不用野餐、生病的场景）。",
+      "30 秒脱稿复述：Nadia 为什么要去泗水、在机场遇到了哪些麻烦、问题是怎么解决的。至少用上 penerbangan、molor、baterai、jaringan 中的三个。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "menangani",
+      "molor",
+      "hadir"
+    ],
+    "patterns": [
+      {
+        "pattern": "Masalahnya, … belum …",
+        "cn": "问题是，……还没……",
+        "example": "Masalahnya, presentasi untuk rapat belum dikirim ke klien.",
+        "example_cn": "问题是，开会用的演示文稿还没发给客户。"
+      },
+      {
+        "pattern": "Kalau ada yang …, jangan …, ya.",
+        "cn": "要是有人……，你别……啊。",
+        "example": "Besok kalau ada yang ngegas, jangan kepancing, ya.",
+        "example_cn": "明天要是有人说话很冲，你别被激到啊。"
+      }
+    ]
+  }
+}
