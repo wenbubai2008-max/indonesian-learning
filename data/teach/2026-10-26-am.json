@@ -1,0 +1,774 @@
+{
+ "version": 1,
+ "title": "早课深讲 · 10月26日",
+ "intro": [
+  "今天早上的课叫《阴天里的野餐》。早上天阴沉沉的，哈迪一家还是决定去公园野餐；小女儿拉妮娅路上晕车吐了，一到公园又跳进水坑把鞋弄湿，爸爸劝妈妈别急。",
+  "今天只讲 5 样：[[mendung]] · [[membaik]] · [[tidak sabar]] · [[… sudah mulai membaik, namun …]] · [[Begitu …, … langsung …]]"
+ ],
+ "items": [
+  {
+   "key": "mendung",
+   "name": "mendung",
+   "head": "mendung · 阴天；阴沉沉的",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Minggu pagi langit mendung, padahal keluarga Pak Hadi sudah berencana piknik di taman kota.",
+      "cn": "星期天早上天阴沉沉的，可哈迪先生一家早就计划好去城市公园野餐了。"
+     }
+    ],
+    "ask": "为什么这里用 mendung，而不是 berawan？",
+    "options": [
+     {
+      "t": "天又暗又厚，看起来要下雨，野餐可能泡汤",
+      "ok": true,
+      "reply": [
+       "对。mendung 带着“快下雨了”的感觉，所以后面用 padahal 表示和计划冲突。"
+      ]
+     },
+     {
+      "t": "两个词完全一样，随便用",
+      "reply": [
+       "不完全一样。berawan 只是说有云，天气预报常写 cerah berawan（晴间多云），不一定会下雨。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{mendung}} 说天空：{{langit mendung}}、{{dari pagi mendung terus}}。它和 {{cerah}}（晴）是一对：{{Tadi mendung, sekarang sudah cerah.}}"
+   ],
+   "simple": [
+    "[[mendung]] = 天阴、快下雨；反义 cerah"
+   ],
+   "asks": [
+    {
+     "label": "mendung、berawan、cerah 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "mendung",
+         "云厚天暗，快下雨"
+        ],
+        [
+         "berawan",
+         "有云，不一定下雨"
+        ],
+        [
+         "cerah",
+         "晴"
+        ]
+       ]
+      },
+      "聊天说“天阴了”多用 mendung。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "妈妈看着窗外说：“天这么阴，带把伞吧。”[[Langitnya ___ banget, bawa payung, ya.]]"
+    ],
+    "options": [
+     {
+      "t": "mendung",
+      "v": "right",
+      "why": [
+       "对。天阴、可能下雨，最自然。"
+      ]
+     },
+     {
+      "t": "berawan",
+      "v": "ok",
+      "why": [
+       "也能懂，只是 berawan 偏中性描述，多见于天气预报，劝人带伞时没有 mendung 自然。"
+      ]
+     },
+     {
+      "t": "cerah",
+      "v": "wrong",
+      "why": [
+       "cerah 是晴天，不用带伞。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Tadi mendung, sekarang sudah cerah.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "刚才阴天，现在已经晴了",
+       "v": "right",
+       "why": [
+        "对。mendung ↔ cerah。"
+       ]
+      },
+      {
+       "t": "刚才下雨，现在还在下",
+       "v": "wrong",
+       "why": [
+        "句子里没有 hujan，说的是阴转晴。"
+       ]
+      },
+      {
+       "t": "刚才很热，现在凉快了",
+       "v": "wrong",
+       "why": [
+        "cerah 是晴，不是凉快。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟同事说：“外面天阴了，我们早点回家吧。”"
+    ],
+    "kw": "di luar · sudah mendung · kita pulang · lebih awal",
+    "skel": "Di luar sudah ____, kita pulang lebih ____ yuk.",
+    "ref": "Di luar sudah mendung, kita pulang lebih awal yuk."
+   },
+   "recall": {
+    "prompt": [
+     "跟朋友说：“昨天一整天都阴着，可一滴雨都没下。”（口语）"
+    ],
+    "kw": "kemarin · seharian mendung · tapi · nggak hujan sama sekali",
+    "skel": "Kemarin seharian ____, tapi nggak ____ sama sekali.",
+    "ref": "Kemarin seharian mendung, tapi nggak hujan sama sekali.",
+    "notes": [
+     "nggak = tidak。"
+    ]
+   },
+   "final": {
+    "cn": "“天阴了，快把衣服收进来！”",
+    "ref": "Udah mendung, cepat masukin jemuran!"
+   },
+   "remind": "mendung = 天阴、快下雨；berawan 只是有云；反义 cerah。"
+  },
+  {
+   "key": "membaik",
+   "name": "membaik",
+   "head": "membaik · 好转",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Pileknya sudah membaik; kata dokter, pilek itu karena alergi debu, bukan flu.",
+      "cn": "她的鼻涕感冒已经好转了；医生说，那是对灰尘过敏引起的，不是流感。"
+     }
+    ],
+    "ask": "pileknya sudah membaik 是说感冒已经全好了吗？",
+    "options": [
+     {
+      "t": "不是，是在变好，还没完全好",
+      "ok": true,
+      "reply": [
+       "对。membaik 是“好转”；完全好了说 sembuh。"
+      ]
+     },
+     {
+      "t": "是，已经完全好了",
+      "reply": [
+       "不对。完全好了是 sudah sembuh；membaik 只是比之前好。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{membaik}} = meN- + baik，“自己变好”，不接宾语：{{kondisinya membaik}}、{{cuaca mulai membaik}}。要“修好、改进某物”用 {{memperbaiki}}：{{memperbaiki motor}}。"
+   ],
+   "simple": [
+    "[[membaik]] = 好转（不接宾语）；修东西用 memperbaiki"
+   ],
+   "asks": [
+    {
+     "label": "membaik、memperbaiki、sembuh 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "membaik",
+         "自己好转"
+        ],
+        [
+         "memperbaiki + 东西",
+         "修理、改进"
+        ],
+        [
+         "sembuh",
+         "痊愈"
+        ]
+       ]
+      },
+      "口语说身体好些了常说 udah mendingan。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "同事问你妈妈的身体，你说：“已经好多了，谢谢。”[[Kondisinya sudah jauh ___, terima kasih.]]"
+    ],
+    "options": [
+     {
+      "t": "membaik",
+      "v": "right",
+      "why": [
+       "对。情况好转，不接宾语。"
+      ]
+     },
+     {
+      "t": "memperbaiki",
+      "v": "wrong",
+      "why": [
+       "memperbaiki 要接宾语，是“修理、改进某物”，不能说身体自己好转。"
+      ]
+     },
+     {
+      "t": "baik",
+      "v": "wrong",
+      "why": [
+       "sudah jauh baik 不自然；要么说 membaik，要么说 jauh lebih baik。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Ayah sedang memperbaiki sepeda Rania.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "爸爸正在修拉妮娅的自行车",
+       "v": "right",
+       "why": [
+        "对。memperbaiki + 东西 = 修理。"
+       ]
+      },
+      {
+       "t": "拉妮娅的自行车自己好了",
+       "v": "wrong",
+       "why": [
+        "那要说 membaik，而且自行车不会自己好。"
+       ]
+      },
+      {
+       "t": "爸爸的身体好转了",
+       "v": "wrong",
+       "why": [
+        "主语是爸爸在做动作，宾语是自行车。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟老板请假后汇报：“我的情况已经好转了，明天可以上班。”"
+    ],
+    "kw": "kondisi saya · sudah membaik · besok · bisa masuk kerja",
+    "skel": "Kondisi saya sudah ____, Pak. Besok saya bisa ____ kerja.",
+    "ref": "Kondisi saya sudah membaik, Pak. Besok saya bisa masuk kerja."
+   },
+   "recall": {
+    "prompt": [
+     "新闻里说：“这周雅加达的空气质量开始好转。”"
+    ],
+    "kw": "kualitas udara · di Jakarta · mulai membaik · minggu ini",
+    "skel": "Kualitas udara di Jakarta mulai ____ minggu ____.",
+    "ref": "Kualitas udara di Jakarta mulai membaik minggu ini."
+   },
+   "final": {
+    "cn": "“吃了两天药，我的咳嗽好多了。”",
+    "ref": "Setelah dua hari minum obat, batuk saya sudah jauh membaik."
+   },
+   "remind": "membaik = 自己好转，不接宾语；修东西用 memperbaiki；全好了是 sembuh。"
+  },
+  {
+   "key": "tidaksabar",
+   "name": "tidak sabar",
+   "head": "tidak sabar · 等不及；没耐心",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Rania, anak bungsu mereka, sudah tidak sabar.",
+      "cn": "他们的小女儿拉妮娅早就等不及了。"
+     },
+     {
+      "speaker": "课文",
+      "id": "\"Sabar, Bu. Sampai lusa pasti sudah kering.\"",
+      "cn": "“别急嘛。到后天肯定干了。”"
+     }
+    ],
+    "ask": "同一个故事里，tidak sabar 和 Sabar, Bu 分别是什么意思？",
+    "options": [
+     {
+      "t": "前一个是孩子等不及去玩；后一个是爸爸劝妈妈别急",
+      "ok": true,
+      "reply": [
+       "对。sabar 是“有耐心”，单独说 Sabar! 就是劝人“别急、耐心点”；tidak sabar 可以是期待得等不及，也可以是没耐心。"
+      ]
+     },
+     {
+      "t": "两个都是说人生气了",
+      "reply": [
+       "不对。sabar 说的是耐心，不是生气。Ibu 差点生气，所以 Ayah 劝她 Sabar。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{tidak sabar}} 有两种味道：开心地期待——{{Saya sudah tidak sabar ketemu kalian!}}（好想快点见到你们）；或者没耐心——{{Dia orangnya tidak sabar.}}。后面常接动词：{{tidak sabar ingin …}}。"
+   ],
+   "simple": [
+    "[[tidak sabar]] = 等不及；没耐心。[[Sabar!]] = 别急"
+   ],
+   "asks": [
+    {
+     "label": "等不及和没耐心怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Aku udah nggak sabar ke Bali!",
+         "期待：等不及去巴厘岛"
+        ],
+        [
+         "Jangan nggak sabar gitu, dong.",
+         "批评：别那么没耐心"
+        ],
+        [
+         "Sabar, ya.",
+         "安慰：耐心点、别急"
+        ]
+       ]
+      },
+      "看上下文：开心的事就是“等不及”。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "明天去看演唱会，你跟朋友说：“我已经等不及了！”[[Aku udah ___ banget!]]"
+    ],
+    "options": [
+     {
+      "t": "nggak sabar",
+      "v": "right",
+      "why": [
+       "对。nggak sabar = tidak sabar，期待得等不及。"
+      ]
+     },
+     {
+      "t": "sabar",
+      "v": "wrong",
+      "why": [
+       "sabar 是有耐心，意思反了。"
+      ]
+     },
+     {
+      "t": "keganggu",
+      "v": "wrong",
+      "why": [
+       "keganggu 是被打扰，跟期待无关。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Sabar dulu, ya. Dokternya sebentar lagi datang.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "再耐心等一下哦，医生马上就来",
+       "v": "right",
+       "why": [
+        "对。Sabar dulu = 先耐心等等。"
+       ]
+      },
+      {
+       "t": "医生没耐心，马上要走",
+       "v": "wrong",
+       "why": [
+        "sabar 是劝听话的人耐心，不是说医生。"
+       ]
+      },
+      {
+       "t": "别生病了，医生要来了",
+       "v": "wrong",
+       "why": [
+        "句子里没有生病的意思，sabar 是劝人耐心等。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "给好久没见的家人发消息：“下周就回家了，好想快点见到你们！”"
+    ],
+    "kw": "minggu depan · saya pulang · sudah tidak sabar · ketemu kalian",
+    "skel": "Minggu depan saya pulang. Saya sudah tidak ____ ketemu ____!",
+    "ref": "Minggu depan saya pulang. Saya sudah tidak sabar ketemu kalian!"
+   },
+   "recall": {
+    "prompt": [
+     "排队时劝朋友：“耐心点，前面只剩两个人了。”（口语）"
+    ],
+    "kw": "sabar dulu · tinggal dua orang · di depan",
+    "skel": "____ dulu, tinggal dua orang lagi di ____.",
+    "ref": "Sabar dulu, tinggal dua orang lagi di depan."
+   },
+   "final": {
+    "cn": "“我哥哥开车时很没耐心，老是按喇叭。”",
+    "ref": "Kakak saya tidak sabar kalau menyetir, sering membunyikan klakson."
+   },
+   "remind": "tidak sabar = 等不及/没耐心；Sabar! = 别急。"
+  },
+  {
+   "key": "mulaimembaik",
+   "name": "… sudah mulai membaik, namun …",
+   "head": "… sudah mulai membaik, namun … · ……已经开始好转了，不过……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "实用句",
+      "id": "Kondisi Kakek sudah mulai membaik, namun beliau tetap harus banyak istirahat sesuai anjuran dokter.",
+      "cn": "爷爷的情况已经开始好转了，不过他还是得按医嘱多休息。"
+     }
+    ],
+    "ask": "namun 后面那半句起什么作用？",
+    "options": [
+     {
+      "t": "补一个“但还要注意”的转折",
+      "ok": true,
+      "reply": [
+       "对。先报好消息，再用 namun 说还没完全放心的地方，常和 tetap（还是、仍然）一起用。"
+      ]
+     },
+     {
+      "t": "说明爷爷为什么会好转",
+      "reply": [
+       "不是。原因要用 karena；namun 是“不过、然而”，表示转折。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "这个句型先报好消息、再提醒：{{… sudah mulai membaik, namun … tetap …}}。{{namun}} 比 {{tapi}} 正式，适合跟长辈、同事、医生说，或写消息；朋友聊天说 {{tapi}} 就行。"
+   ],
+   "simple": [
+    "[[… sudah mulai membaik, namun … tetap …]] = 已经开始好转了，不过还是……"
+   ],
+   "asks": [
+    {
+     "label": "namun 和 tapi 有什么区别？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "namun",
+         "不过、然而（正式、书面）"
+        ],
+        [
+         "tapi / tetapi",
+         "但是（日常）"
+        ]
+       ]
+      },
+      "意思一样，场合不同。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "给老板发消息：“网络已经开始恢复了，不过速度还是很慢。”[[Internetnya sudah mulai membaik, ___ kecepatannya masih lambat.]]"
+    ],
+    "options": [
+     {
+      "t": "namun",
+      "v": "right",
+      "why": [
+       "对。正式的转折，适合给老板发消息。"
+      ]
+     },
+     {
+      "t": "tapi",
+      "v": "ok",
+      "why": [
+       "也可以，意思一样，只是更口语。"
+      ]
+     },
+     {
+      "t": "karena",
+      "v": "wrong",
+      "why": [
+       "karena 是“因为”，前后不是因果关系。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Cuacanya sudah mulai membaik, namun jalannya masih licin.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "天气已经开始转好了，不过路还是很滑",
+       "v": "right",
+       "why": [
+        "对。先说好转，再用 namun 提醒。"
+       ]
+      },
+      {
+       "t": "因为天气好了，所以路很滑",
+       "v": "wrong",
+       "why": [
+        "namun 是转折，不是因果。"
+       ]
+      },
+      {
+       "t": "天气越来越差，路很滑",
+       "v": "wrong",
+       "why": [
+        "membaik 是变好。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟同事说：“我的感冒已经开始好转了，不过还是得戴口罩。”"
+    ],
+    "kw": "pilek saya · sudah mulai membaik · namun · tetap harus pakai masker",
+    "skel": "Pilek saya sudah mulai ____, namun saya tetap harus pakai ____.",
+    "ref": "Pilek saya sudah mulai membaik, namun saya tetap harus pakai masker."
+   },
+   "recall": {
+    "prompt": [
+     "跟家人说：“妈妈店里的生意开始好转了，不过她还是很累。”"
+    ],
+    "kw": "usaha Ibu · sudah mulai membaik · namun · tetap capek",
+    "skel": "Usaha Ibu sudah mulai ____, namun beliau tetap ____.",
+    "ref": "Usaha Ibu sudah mulai membaik, namun beliau tetap capek."
+   },
+   "final": {
+    "cn": "“交通已经开始好转了，不过我们还是早点出发吧。”",
+    "ref": "Lalu lintasnya sudah mulai membaik, namun sebaiknya kita tetap berangkat lebih awal."
+   },
+   "remind": "先报好消息，再 namun … tetap … 提醒；namun 比 tapi 正式。"
+  },
+  {
+   "key": "begitu",
+   "name": "Begitu …, … langsung …",
+   "head": "Begitu …, … langsung … · 一……就马上……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Begitu sampai, Rania langsung melompat ke genangan air sampai sepatunya basah.",
+      "cn": "一到公园，拉妮娅马上跳进水坑，鞋子都湿了。"
+     }
+    ],
+    "ask": "Begitu sampai 是什么意思？",
+    "options": [
+     {
+      "t": "一到（那里）",
+      "ok": true,
+      "reply": [
+       "对。begitu + 动作 = “一……就”，后面常配 langsung（马上）。"
+      ]
+     },
+     {
+      "t": "那样到达",
+      "reply": [
+       "不是。begitu 单独用是“那样”，可放在句首接动作时，意思是“一……就……”。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{Begitu + 动作A, 主语 + langsung + 动作B}}：A 一发生，B 马上跟着发生。{{Begitu pulang, dia langsung tidur.}}（他一回家就睡了。）口语也常说 {{Pas …, langsung …}}。"
+   ],
+   "simple": [
+    "[[Begitu A, langsung B]] = 一 A 就马上 B"
+   ],
+   "asks": [
+    {
+     "label": "begitu 不是“那样”吗？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Jangan begitu.",
+         "别那样（指方式）"
+        ],
+        [
+         "Begitu sampai, …",
+         "一到……就（句首 + 动作）"
+        ]
+       ]
+      },
+      "看位置：放在句首、后面接动作，就是“一……就”。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "说你的习惯：“我一醒来就马上看手机。”[[___ bangun, saya langsung lihat HP.]]"
+    ],
+    "options": [
+     {
+      "t": "Begitu",
+      "v": "right",
+      "why": [
+       "对。begitu + 动作 = 一……就。"
+      ]
+     },
+     {
+      "t": "Sambil",
+      "v": "wrong",
+      "why": [
+       "sambil 是“一边……一边”，两件事同时进行，这里是一个接一个。"
+      ]
+     },
+     {
+      "t": "Supaya",
+      "v": "wrong",
+      "why": [
+       "supaya 是“为了”，意思不对。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Begitu hujan berhenti, anak-anak langsung main di luar.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "雨一停，孩子们马上就到外面玩",
+       "v": "right",
+       "why": [
+        "对。begitu A, langsung B。"
+       ]
+      },
+      {
+       "t": "雨就那样停了，孩子们在外面",
+       "v": "wrong",
+       "why": [
+        "这里 begitu 在句首接动作，是“一……就”。"
+       ]
+      },
+      {
+       "t": "孩子们在外面玩，所以雨停了",
+       "v": "wrong",
+       "why": [
+        "句子里没有因果关系，begitu A, langsung B 只说先后紧接。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟同事讲：“我一到办公室，马上就开了电脑。”"
+    ],
+    "kw": "begitu sampai · di kantor · saya langsung · menyalakan komputer",
+    "skel": "Begitu ____ di kantor, saya langsung menyalakan ____.",
+    "ref": "Begitu sampai di kantor, saya langsung menyalakan komputer."
+   },
+   "recall": {
+    "prompt": [
+     "跟朋友说：“工资一到账，他马上就去买新鞋了。”（口语）"
+    ],
+    "kw": "begitu gajian · dia langsung · beli sepatu baru",
+    "skel": "Begitu ____, dia langsung beli sepatu ____.",
+    "ref": "Begitu gajian, dia langsung beli sepatu baru.",
+    "notes": [
+     "gajian = 发工资（口语）。"
+    ]
+   },
+   "final": {
+    "cn": "“门一开，猫就马上跑出去了。”",
+    "ref": "Begitu pintunya dibuka, kucingnya langsung lari keluar."
+   },
+   "remind": "Begitu A, langsung B = 一 A 就马上 B。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "其余新词词卡里都有完整讲解，这里只扫一眼。不熟的点一下，标出来给自己看。"
+  ],
+  "words": [
+   "berawan",
+   "cerah",
+   "pilek",
+   "alergi",
+   "muntah",
+   "melompat",
+   "basah",
+   "lusa"
+  ]
+ },
+ "reading": [
+  {
+   "key": "muntah",
+   "sentence": "Di perjalanan Rania mabuk darat dan muntah, jadi mereka berhenti sebentar.",
+   "cn": "路上拉妮娅晕车吐了，所以他们停下来歇了一会儿。",
+   "chunks": [
+    [
+     "Di perjalanan",
+     "路上",
+     "perjalanan = 旅途、路程"
+    ],
+    [
+     "Rania mabuk darat dan muntah,",
+     "拉妮娅晕车吐了",
+     "mabuk darat = 晕车；muntah = 吐（新词）"
+    ],
+    [
+     "jadi mereka berhenti sebentar.",
+     "所以他们停下来歇了一会儿",
+     "jadi = 所以；sebentar = 一会儿"
+    ]
+   ],
+   "steal": [
+    "值得借用的是 [[A terjadi, jadi kami … sebentar]]：{{Hujannya deras, jadi kami berteduh sebentar.}}（雨很大，所以我们先避了一会儿雨。）"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今天的输出题，缩短版）：讲一次你因为身体不舒服改了计划。"
+   ],
+   "kw": "saya pilek · jadi saya memutuskan · menunda · sampai lusa",
+   "skel": "Hari itu saya ____, jadi saya memutuskan menunda janji itu sampai ____.",
+   "ref": "Hari itu saya pilek, jadi saya memutuskan menunda janji itu sampai lusa.",
+   "notes": [
+    "整页的输出题有更长的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
