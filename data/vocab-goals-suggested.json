@@ -4,16 +4,16 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 807,
+   "use": 817,
    "recognize": 104,
    "unsure": 20,
-   "fast": 130
+   "fast": 131
   },
   "active": {
-   "use": 541,
+   "use": 550,
    "recognize": 88,
    "unsure": 18,
-   "fast": 53
+   "fast": 54
   }
  },
  "words": {
@@ -355,7 +355,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 1 位"
    ]
@@ -8602,6 +8602,97 @@
    "status": "active",
    "why": [
     "977 主库第 509 位"
+   ]
+  },
+  "mendung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 952 位"
+   ]
+  },
+  "berawan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 955 位"
+   ]
+  },
+  "cerah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 953 位"
+   ]
+  },
+  "pilek": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 957 位"
+   ]
+  },
+  "alergi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 963 位"
+   ]
+  },
+  "membaik": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 964 位"
+   ]
+  },
+  "muntah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 959 位"
+   ]
+  },
+  "melompat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 468 位"
+   ]
+  },
+  "basah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 663 位"
+   ]
+  },
+  "lusa": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（时间）",
+    "977 主库第 738 位"
    ]
   }
  }

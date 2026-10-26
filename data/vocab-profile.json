@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "generated_at": "2026-10-26T00:31:39.039Z",
-  "source_updated_at": "2026-10-25T13:31:28.827Z",
+  "generated_at": "2026-10-26T09:40:41.220Z",
+  "source_updated_at": "2026-10-26T07:55:27.579Z",
   "taught_total": 941,
-  "confirmed_mastered": 199,
-  "needs_reinforcement": 657,
+  "confirmed_mastered": 200,
+  "needs_reinforcement": 656,
   "excluded_from_training": 85,
   "unverified": 0,
-  "mastery_percent": 21.1,
+  "mastery_percent": 21.3,
   "primary_master_total": 977,
   "primary_taught_unique": 540,
   "primary_unlearned_total": 437,
   "primary_coverage_percent": 55.3,
   "primary_eligible_new_total": 107,
-  "focus_total": 656,
+  "focus_total": 655,
   "focus_words": [
     {
       "word": "perpaduan",
@@ -91,7 +91,7 @@
       ],
       "wrong_count": 0,
       "last_wrong": "",
-      "last_review": "2026-10-23T14:55:31.479Z",
+      "last_review": "2026-10-26T07:46:12.354Z",
       "cn": "有效期至"
     },
     {
