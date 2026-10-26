@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-26",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 66
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-25T14:00:45.557Z",
-    "lesson_watermark": "2026-10-25 18:00",
-    "index_updated": "2026-10-25",
-    "runtime_hash": "7392d1f4b2363ca1df9ba7385af9b0866867d2866f3e76e80474abf3f9dd736d",
-    "index_hash": "5f4fbe3b5ca86406ee9aef1ced4187a9210f9c5bdce80de98f545847be7939f0",
+    "runtime_generated_at": "2026-10-26T00:31:32.717Z",
+    "lesson_watermark": "2026-10-26 08:00",
+    "index_updated": "2026-10-26",
+    "runtime_hash": "451b6759d93e624d61a70c9d95feb8e5830ce3b3387de3b4b7f99082a421974e",
+    "index_hash": "d1c8530d87968487d91e30a00887bba9c30db4304cce376525d6fd2731d7e6ec",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -159,10 +159,6 @@
         "击打"
       ],
       [
-        "melompat",
-        "跳跃"
-      ],
-      [
         "mengapung",
         "漂浮"
       ],
@@ -279,10 +275,6 @@
         "薄的"
       ],
       [
-        "basah",
-        "湿的"
-      ],
-      [
         "kertas",
         "纸"
       ],
@@ -321,10 +313,6 @@
       [
         "bergetar",
         "震动"
-      ],
-      [
-        "lusa",
-        "后天"
       ],
       [
         "nilai",
@@ -485,34 +473,6 @@
       [
         "subuh",
         "黎明；晨礼时间"
-      ],
-      [
-        "mendung",
-        "阴天；多云"
-      ],
-      [
-        "cerah",
-        "晴朗；明亮"
-      ],
-      [
-        "berawan",
-        "多云"
-      ],
-      [
-        "pilek",
-        "感冒流鼻涕"
-      ],
-      [
-        "muntah",
-        "呕吐"
-      ],
-      [
-        "alergi",
-        "过敏"
-      ],
-      [
-        "membaik",
-        "好转"
       ],
       [
         "tangkap",
@@ -1261,16 +1221,6 @@
         "挂住；卡住；牵连"
       ],
       [
-        "kebablasan",
-        3,
-        0,
-        "",
-        "",
-        "过头；超过原本界限；一不小心做过了（口语）",
-        "bablas",
-        "一直冲过去；越过"
-      ],
-      [
         "ketiban",
         2,
         0,
@@ -1279,16 +1229,6 @@
         "突然摊上；意外落到自己头上",
         "tiban",
         "落到；压到"
-      ],
-      [
-        "keganggu",
-        3,
-        0,
-        "",
-        "",
-        "被打扰；受到影响（口语）",
-        "ganggu",
-        "打扰；干扰"
       ],
       [
         "ngeribetin",
@@ -1949,16 +1889,6 @@
         "拥挤的 / 热闹的",
         "ramai",
         "热闹；人多"
-      ],
-      [
-        "sabar",
-        3,
-        0,
-        "",
-        "2026-10-19T05:53:59.188Z",
-        "有耐心的",
-        "sabar",
-        "耐心"
       ],
       [
         "kebentur",
@@ -2719,6 +2649,136 @@
         "傲慢的；自大的",
         "sombong",
         "傲慢"
+      ],
+      [
+        "unggah",
+        2,
+        0,
+        "",
+        "2026-10-24T02:33:38.053Z",
+        "上传",
+        "unggah",
+        "上传"
+      ],
+      [
+        "wangi",
+        2,
+        0,
+        "",
+        "2026-10-24T02:33:58.273Z",
+        "香的；香味好闻",
+        "wangi",
+        "香"
+      ],
+      [
+        "curhat",
+        2,
+        0,
+        "",
+        "2026-10-19T13:16:11.211Z",
+        "倾诉；诉苦；聊心事",
+        "curhat",
+        "倾诉（curahan hati的口语缩略）"
+      ],
+      [
+        "mendung",
+        3,
+        0,
+        "",
+        "",
+        "阴天；（天）阴沉沉的",
+        "mendung",
+        ""
+      ],
+      [
+        "berawan",
+        3,
+        0,
+        "",
+        "",
+        "多云的",
+        "awan",
+        "云"
+      ],
+      [
+        "cerah",
+        3,
+        0,
+        "",
+        "",
+        "晴朗；明亮；（颜色）鲜亮",
+        "cerah",
+        ""
+      ],
+      [
+        "pilek",
+        3,
+        0,
+        "",
+        "",
+        "感冒流鼻涕；鼻塞",
+        "pilek",
+        ""
+      ],
+      [
+        "alergi",
+        3,
+        0,
+        "",
+        "",
+        "过敏",
+        "alergi",
+        ""
+      ],
+      [
+        "membaik",
+        3,
+        0,
+        "",
+        "",
+        "好转；变好",
+        "baik",
+        "好"
+      ],
+      [
+        "muntah",
+        3,
+        0,
+        "",
+        "",
+        "呕吐；吐",
+        "muntah",
+        ""
+      ],
+      [
+        "melompat",
+        3,
+        0,
+        "",
+        "",
+        "跳；跳跃",
+        "lompat",
+        "跳"
+      ],
+      [
+        "basah",
+        3,
+        0,
+        "",
+        "",
+        "湿；湿的",
+        "basah",
+        ""
+      ],
+      [
+        "lusa",
+        3,
+        0,
+        "",
+        "",
+        "后天",
+        "lusa",
+        ""
       ]
     ],
     "focus": [
@@ -2976,16 +3036,7 @@
         ]
       ]
     ],
-    "oral": [
-      [
-        "melompat",
-        "通用",
-        "loncat",
-        "lompat",
-        729,
-        "fuzzy"
-      ]
-    ]
+    "oral": []
   },
   "history_7d": [
     {
@@ -3262,6 +3313,30 @@
         "mengakhiri",
         "angka"
       ]
+    },
+    {
+      "date": "2026-10-26",
+      "session": "am",
+      "review_core": [
+        "pula",
+        "selera",
+        "kebablasan",
+        "keganggu",
+        "sabar",
+        "tidak sabar"
+      ],
+      "new_words": [
+        "mendung",
+        "berawan",
+        "cerah",
+        "pilek",
+        "alergi",
+        "membaik",
+        "muntah",
+        "melompat",
+        "basah",
+        "lusa"
+      ]
     }
   ],
   "previous_pm": {
@@ -3279,7 +3354,89 @@
       "masuk akal"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-26",
+    "vocab": [
+      [
+        "mendung",
+        "阴天；（天）阴沉沉的",
+        "overcast; cloudy and dark",
+        "",
+        ""
+      ],
+      [
+        "berawan",
+        "多云的",
+        "cloudy",
+        "awan",
+        "云"
+      ],
+      [
+        "cerah",
+        "晴朗；明亮；（颜色）鲜亮",
+        "clear, sunny; bright",
+        "",
+        ""
+      ],
+      [
+        "pilek",
+        "感冒流鼻涕；鼻塞",
+        "a cold, runny nose",
+        "",
+        ""
+      ],
+      [
+        "alergi",
+        "过敏",
+        "allergy; allergic",
+        "",
+        ""
+      ],
+      [
+        "membaik",
+        "好转；变好",
+        "to improve, get better",
+        "baik",
+        "好"
+      ],
+      [
+        "muntah",
+        "呕吐；吐",
+        "to vomit, throw up",
+        "",
+        ""
+      ],
+      [
+        "melompat",
+        "跳；跳跃",
+        "to jump",
+        "lompat",
+        "跳"
+      ],
+      [
+        "basah",
+        "湿；湿的",
+        "wet",
+        "",
+        ""
+      ],
+      [
+        "lusa",
+        "后天",
+        "the day after tomorrow",
+        "",
+        ""
+      ]
+    ],
+    "review_vocab": [
+      "pula",
+      "selera",
+      "kebablasan",
+      "keganggu",
+      "sabar",
+      "tidak sabar"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

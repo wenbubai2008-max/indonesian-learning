@@ -8363,17 +8363,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-09 08:00",
+    "last_seen": "2026-10-26 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-09"
+      "2026-09-09",
+      "2026-10-26"
     ],
     "lesson_occurrences": [
-      "2026-09-09 08:00"
+      "2026-09-09 08:00",
+      "2026-10-26 08:00"
     ]
   },
   {
@@ -8446,21 +8448,25 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "打扰；干扰",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-09 19:00",
-    "last_seen": "2026-09-09 19:00",
+    "last_seen": "2026-10-26 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-09"
+      "2026-09-09",
+      "2026-10-26"
     ],
     "example": "Fokusku tadi agak keganggu karena chat masuk terus.",
     "example_cn": "我刚才因为消息一直进来，专注度有点被影响。",
     "lesson_occurrences": [
-      "2026-09-09 19:00"
+      "2026-09-09 19:00",
+      "2026-10-26 08:00"
     ]
   },
   {
@@ -12066,17 +12072,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-19 08:00",
+    "last_seen": "2026-10-26 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-19"
+      "2026-09-19",
+      "2026-10-26"
     ],
     "lesson_occurrences": [
-      "2026-09-19 08:00"
+      "2026-09-19 08:00",
+      "2026-10-26 08:00"
     ]
   },
   {
@@ -15969,17 +15977,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-10-26 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-26"
     ],
     "lesson_occurrences": [
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-10-26 08:00"
     ]
   },
   {
@@ -15994,17 +16004,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-10-26 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-26"
     ],
     "lesson_occurrences": [
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-10-26 08:00"
     ]
   },
   {
@@ -19185,19 +19197,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-08 18:00",
-    "last_seen": "2026-10-08 18:00",
+    "last_seen": "2026-10-26 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-08"
+      "2026-10-08",
+      "2026-10-26"
     ],
     "lesson_occurrences": [
-      "2026-10-08 18:00"
+      "2026-10-08 18:00",
+      "2026-10-26 08:00"
     ]
   },
   {
@@ -25106,6 +25122,257 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-25 18:00"
+    ]
+  },
+  {
+    "word": "mendung",
+    "cn": "阴天；（天）阴沉沉的",
+    "en": "overcast; cloudy and dark",
+    "root": "",
+    "root_cn": "",
+    "example": "Langit di atas kantor masih mendung, tapi awannya bergerak ke selatan, jadi hujannya mungkin tidak sampai ke sini.",
+    "example_cn": "办公室上空还阴沉沉的，不过云在往南移动，所以雨也许下不到这边。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 08:00"
+    ]
+  },
+  {
+    "word": "berawan",
+    "cn": "多云的",
+    "en": "cloudy",
+    "root": "awan",
+    "root_cn": "云",
+    "example": "Menurut ramalan cuaca, Jakarta hari ini cerah berawan dan tidak akan hujan.",
+    "example_cn": "根据天气预报，雅加达今天晴间多云，不会下雨。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 08:00"
+    ]
+  },
+  {
+    "word": "cerah",
+    "cn": "晴朗；明亮；（颜色）鲜亮",
+    "en": "clear, sunny; bright",
+    "root": "",
+    "root_cn": "",
+    "example": "Untung sekitar jam sepuluh langitnya cerah lagi, jadi pertandingan bola anak-anak tetap jalan.",
+    "example_cn": "幸好十点左右天又放晴了，所以孩子们的足球比赛照常进行。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 08:00"
+    ]
+  },
+  {
+    "word": "pilek",
+    "cn": "感冒流鼻涕；鼻塞",
+    "en": "a cold, runny nose",
+    "root": "",
+    "root_cn": "",
+    "example": "Pileknya tidak parah, tapi hidung tersumbat sangat mengganggu tidur saya.",
+    "example_cn": "鼻涕感冒倒不严重，可鼻子堵着特别影响我睡觉。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 08:00"
+    ]
+  },
+  {
+    "word": "alergi",
+    "cn": "过敏",
+    "en": "allergy; allergic",
+    "root": "",
+    "root_cn": "",
+    "example": "Kalau alerginya kambuh, matanya gatal dan dia terus menggosok mata.",
+    "example_cn": "他过敏一犯，眼睛就发痒，一直揉眼睛。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 08:00"
+    ]
+  },
+  {
+    "word": "membaik",
+    "cn": "好转；变好",
+    "en": "to improve, get better",
+    "root": "baik",
+    "root_cn": "好",
+    "example": "Setelah tiga hari minum obat, kondisinya sudah jauh membaik.",
+    "example_cn": "吃了三天药之后，他的情况已经好多了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 08:00"
+    ]
+  },
+  {
+    "word": "muntah",
+    "cn": "呕吐；吐",
+    "en": "to vomit, throw up",
+    "root": "",
+    "root_cn": "",
+    "example": "Di tengah jalan adik saya mabuk darat, muntah, lalu menangis karena bajunya kotor.",
+    "example_cn": "半路上我弟弟晕车吐了，然后因为衣服弄脏了哭了起来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 08:00"
+    ]
+  },
+  {
+    "word": "melompat",
+    "cn": "跳；跳跃",
+    "en": "to jump",
+    "root": "lompat",
+    "root_cn": "跳",
+    "example": "Kucing itu melompat ke atas meja dan menjatuhkan gelas.",
+    "example_cn": "那只猫跳上桌子，把杯子碰掉了。",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 08:00"
+    ]
+  },
+  {
+    "word": "basah",
+    "cn": "湿；湿的",
+    "en": "wet",
+    "root": "",
+    "root_cn": "",
+    "example": "Hujannya deras sekali; air mengalir di pinggir jalan dan sepatu saya basah kuyup.",
+    "example_cn": "雨下得特别大，水沿着路边流，我的鞋全湿透了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 08:00"
+    ]
+  },
+  {
+    "word": "lusa",
+    "cn": "后天",
+    "en": "the day after tomorrow",
+    "root": "",
+    "root_cn": "",
+    "example": "Paketnya baru sampai lusa, karena gudangnya terletak di luar kota.",
+    "example_cn": "包裹后天才到，因为仓库在城外。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 08:00"
     ]
   }
 ];
