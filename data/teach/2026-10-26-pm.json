@@ -1,0 +1,837 @@
+{
+  "version": 1,
+  "title": "晚课深讲 · 10月26日",
+  "intro": [
+    "今晚的课叫《航班延误，电量只剩百分之十》。Nadia 临时替生病的上司去泗水处理客户投诉，航班却延误了三个小时；电脑快没电、网又慢，演示文稿还没发出去。",
+    "今晚只讲 5 样：[[menangani]] · [[molor]] · [[hadir]] · [[Masalahnya, … belum …]] · [[Kalau ada yang …, jangan …, ya.]]"
+  ],
+  "items": [
+    {
+      "key": "tangan",
+      "name": "menangani",
+      "head": "menangani · 处理；负责应对",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Senin sore, Nadia mendapat tugas mendadak: menggantikan atasannya yang sakit untuk menangani keluhan klien di Surabaya besok pagi.",
+            "cn": "周一下午，Nadia 接到一个临时任务：替生病的上司去泗水，明天早上处理客户的投诉。"
+          }
+        ],
+        "ask": "Nadia 去泗水，具体要做什么？",
+        "options": [
+          {
+            "t": "处理客户的投诉",
+            "reply": [
+              "对。menangani keluhan = 负责处理投诉。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "给客户做培训",
+            "reply": [
+              "不是。课文说的是 keluhan（投诉），不是培训。"
+            ]
+          },
+          {
+            "t": "去签新的合同",
+            "reply": [
+              "不是。合同那部分是上司后天来处理的。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{menangani}} = 负责处理并采取行动：{{menangani keluhan}}、{{menangani pasien}}、{{menangani klien}}。t 脱落：meN- + tangan + -i。口语常说 {{nanganin}}。",
+        "名词是 {{penanganan}}（处理的过程、效果）：{{Penanganannya cepat.}} 说“谁处理什么”用动词，说“处理得怎么样”用名词。"
+      ],
+      "simple": [
+        "[[menangani]] = 处理（问题、病人、客户）；名词 penanganan"
+      ],
+      "asks": [
+        {
+          "label": "menangani、mengatasi、mengurus 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "menangani keluhan",
+                  "处理投诉（负责去处理）"
+                ],
+                [
+                  "mengatasi masalah",
+                  "把问题解决掉、克服"
+                ],
+                [
+                  "mengurus surat",
+                  "办理手续、证件"
+                ]
+              ]
+            },
+            "说处理问题时 menangani masalah 和 mengatasi masalah 都常说：前者说负责处理，后者说把它解决掉。"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Siapa yang ___ klien dari Bandung ini? Dia minta ditelepon balik.]]",
+          "（这位万隆来的客户是谁负责的？他要求回电。）"
+        ],
+        "options": [
+          {
+            "t": "menangani",
+            "v": "right",
+            "why": [
+              "对。谁负责处理哪位客户：menangani klien。"
+            ]
+          },
+          {
+            "t": "mengurus",
+            "v": "ok",
+            "why": [
+              "也可以，口语常说 ngurus klien，偏“照应、打理”。"
+            ]
+          },
+          {
+            "t": "penanganan",
+            "v": "wrong",
+            "why": [
+              "penanganan 是名词，不能放在 yang 后面当动作。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。客户夸你们：“你们处理得很快。”最自然的说法："
+          ],
+          "options": [
+            {
+              "t": "Penanganannya cepat sekali.",
+              "v": "right",
+              "why": [
+                "对。说“处理得怎么样”，用名词 penanganan 做主语。"
+              ]
+            },
+            {
+              "t": "Kalian menanganinya cepat sekali.",
+              "v": "ok",
+              "why": [
+                "也可以，用动词说“你们处理得很快”，稍长一点。"
+              ]
+            },
+            {
+              "t": "Penanganan kalian menangani cepat.",
+              "v": "wrong",
+              "why": [
+                "名词和动词叠在一起，句子不通。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你在新公司自我介绍：“我在这里负责处理客户投诉。”先说出声，再点按钮。"
+        ],
+        "kw": "saya yang menangani · keluhan pelanggan",
+        "skel": "Di sini saya yang ____ keluhan ____.",
+        "ref": "Di sini saya yang menangani keluhan pelanggan."
+      },
+      "recall": {
+        "prompt": [
+          "在医院里，你问护士：“哪位医生负责我妈妈？”"
+        ],
+        "kw": "dokter siapa · menangani · ibu saya",
+        "skel": "Suster, dokter siapa yang ____ ibu ____?",
+        "ref": "Suster, dokter siapa yang menangani ibu saya?"
+      },
+      "final": {
+        "cn": "（对同事）“这个问题交给我来处理吧。”",
+        "ref": "Masalah ini biar aku yang nanganin, ya."
+      },
+      "remind": "menangani = 负责处理（问题/病人/客户）；名词 penanganan；口语 nanganin。"
+    },
+    {
+      "key": "molor",
+      "name": "molor",
+      "head": "molor · 拖长；延误（口语）",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "Nadia",
+            "id": "Udah, Pak. Tapi penerbangannya molor tiga jam. Dari tadi langitnya mendung banget.",
+            "cn": "到了。可是航班延误了三个小时。天从刚才起就阴得厉害。"
+          }
+        ],
+        "ask": "penerbangannya molor tiga jam 是什么意思？",
+        "options": [
+          {
+            "t": "航班延误了三个小时",
+            "reply": [
+              "对。molor = 时间被拖长、比计划晚。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "要飞三个小时",
+            "reply": [
+              "不是。飞行时间不用 molor，molor 说的是延误。"
+            ]
+          },
+          {
+            "t": "航班提前了三个小时",
+            "reply": [
+              "不是。molor 只往后拖，不会提前。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{molor}} 本义是橡皮筋被拉长，引申为时间拖长、比计划晚：{{rapat molor}}、{{jadwal molor}}、{{molor dua jam}}。口语色彩浓。",
+        "广播、通知多用 {{ditunda}}（被推迟）；朋友之间说 {{molor}} 或 {{delay}}。人迟到一般说 {{telat}}。"
+      ],
+      "simple": [
+        "[[molor]] = 拖长、延误（口语）；广播说 ditunda"
+      ],
+      "asks": [
+        {
+          "label": "molor、ditunda、telat 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "Rapatnya molor sejam.",
+                  "会议拖了一个小时（口语）"
+                ],
+                [
+                  "Penerbangan ditunda.",
+                  "航班延误（广播、通知）"
+                ],
+                [
+                  "Aku telat sepuluh menit.",
+                  "我迟到了十分钟（人）"
+                ]
+              ]
+            },
+            "事情拖长：molor；正式通知：ditunda；人来晚：telat。"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Proyeknya ___ terus, padahal targetnya bulan lalu.]]",
+          "（项目一拖再拖，可目标本来是上个月。）"
+        ],
+        "options": [
+          {
+            "t": "molor",
+            "v": "right",
+            "why": [
+              "对。项目一直比计划拖长：molor terus。"
+            ]
+          },
+          {
+            "t": "mundur",
+            "v": "ok",
+            "why": [
+              "也可以，mundur 说日期往后推，jadwalnya mundur 很常见。"
+            ]
+          },
+          {
+            "t": "ditunggu",
+            "v": "wrong",
+            "why": [
+              "ditunggu 是“被等待”，说不出“拖延”的意思。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。机场广播：“前往泗水的航班延误两小时。”最自然的说法："
+          ],
+          "options": [
+            {
+              "t": "Penerbangan ke Surabaya ditunda dua jam.",
+              "v": "right",
+              "why": [
+                "对。广播用正式的 ditunda。"
+              ]
+            },
+            {
+              "t": "Penerbangan ke Surabaya molor dua jam.",
+              "v": "ok",
+              "why": [
+                "也听得懂，跟朋友转述时更自然；广播一般不用口语词。"
+              ]
+            },
+            {
+              "t": "Penerbangan ke Surabaya molor dua jam lebih cepat.",
+              "v": "wrong",
+              "why": [
+                "molor 是往后拖，不能和 lebih cepat（更早）连用。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你给家人发语音：“会开到了晚上八点，我会晚点回家。”先说出声。"
+        ],
+        "kw": "rapatnya molor · jam delapan · pulang telat",
+        "skel": "Rapatnya ____ sampai jam delapan, aku pulang ____, ya.",
+        "ref": "Rapatnya molor sampai jam delapan, aku pulang telat, ya."
+      },
+      "recall": {
+        "prompt": [
+          "你跟朋友抱怨：“我家的装修又拖了一个星期。”"
+        ],
+        "kw": "renovasi rumahku · molor lagi · seminggu",
+        "skel": "Renovasi rumahku ____ lagi ____.",
+        "ref": "Renovasi rumahku molor lagi seminggu."
+      },
+      "final": {
+        "cn": "（对朋友）“抱歉，我们的计划拖了，下周才能见面。”",
+        "ref": "Maaf, rencana kita molor, kita baru bisa ketemu minggu depan."
+      },
+      "remind": "molor = 拖长、延误（口语）；广播说 ditunda；人迟到说 telat。"
+    },
+    {
+      "key": "hadir",
+      "name": "hadir",
+      "head": "hadir · 出席；到场",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Setengah jam kemudian, presentasi Nadia terkirim, dan klien membalas bahwa semua kepala bagian akan hadir.",
+            "cn": "半个小时后，Nadia 的演示文稿发出去了，客户回复说各部门的负责人都会出席。"
+          }
+        ],
+        "ask": "客户回复了什么？",
+        "options": [
+          {
+            "t": "各部门负责人都会到场",
+            "reply": [
+              "对。akan hadir = 会出席。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "会议取消了",
+            "reply": [
+              "不是。hadir 是“到场”，正好相反。"
+            ]
+          },
+          {
+            "t": "负责人们都在出差",
+            "reply": [
+              "不是。他们会来开会，不是出差。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{hadir}} = 出席、到场，不带宾语：{{hadir di rapat}}、{{hadir tepat waktu}}、{{tidak bisa hadir}}。要直接接宾语就用 {{menghadiri}}：{{menghadiri rapat}}。",
+        "hadir 偏正式，常见于会议、请柬、通知和点名；朋友之间多说 {{datang}}，口语 {{dateng}}。"
+      ],
+      "simple": [
+        "[[hadir]] = 出席、到场（正式）；朋友间说 datang"
+      ],
+      "asks": [
+        {
+          "label": "hadir、menghadiri、datang 怎么分？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "Saya akan hadir di rapat.",
+                  "我会出席会议（不带宾语，加 di）"
+                ],
+                [
+                  "Saya akan menghadiri rapat.",
+                  "我会出席会议（直接带宾语）"
+                ],
+                [
+                  "Besok kamu dateng nggak?",
+                  "你明天来不来？（朋友间）"
+                ]
+              ]
+            },
+            "前两句意思一样，只是句子结构不同。"
+          ]
+        },
+        {
+          "label": "词卡上的构词",
+          "from": "formation"
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Mohon maaf, Bu, saya tidak bisa ___ di acara pernikahan putri Ibu.]]",
+          "（很抱歉，阿姨，我没法出席您女儿的婚礼。）"
+        ],
+        "options": [
+          {
+            "t": "hadir",
+            "v": "right",
+            "why": [
+              "对。后面有 di，用不带宾语的 hadir。"
+            ]
+          },
+          {
+            "t": "datang",
+            "v": "ok",
+            "why": [
+              "也可以，更日常；正式回复长辈时 hadir 更得体。"
+            ]
+          },
+          {
+            "t": "menghadiri",
+            "v": "wrong",
+            "why": [
+              "menghadiri 要直接接宾语（menghadiri acara …），后面不能再加 di。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。会议通知写：“请全体员工准时出席。”最自然的说法："
+          ],
+          "options": [
+            {
+              "t": "Mohon semua staf hadir tepat waktu.",
+              "v": "right",
+              "why": [
+                "对。通知里最常用 hadir tepat waktu。"
+              ]
+            },
+            {
+              "t": "Mohon semua staf datang tepat waktu.",
+              "v": "ok",
+              "why": [
+                "也可以，语气更日常。"
+              ]
+            },
+            {
+              "t": "Mohon semua staf menghadiri tepat waktu.",
+              "v": "wrong",
+              "why": [
+                "menghadiri 后面缺了宾语（menghadiri rapat）。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你回复会议通知：“好的，我明天会准时出席。”先说出声。"
+        ],
+        "kw": "baik · saya akan hadir · tepat waktu",
+        "skel": "Baik, besok saya akan ____ tepat ____.",
+        "ref": "Baik, besok saya akan hadir tepat waktu."
+      },
+      "recall": {
+        "prompt": [
+          "你给老师发消息：“我孩子发烧了，明天没法参加学校的活动。”"
+        ],
+        "kw": "anak saya demam · tidak bisa hadir · acara sekolah",
+        "skel": "Bu, anak saya ____, jadi besok tidak bisa ____ di acara sekolah.",
+        "ref": "Bu, anak saya demam, jadi besok tidak bisa hadir di acara sekolah."
+      },
+      "final": {
+        "cn": "（对同事）“下周的会我线上参加。”",
+        "ref": "Rapat minggu depan aku hadir secara online, ya."
+      },
+      "remind": "hadir = 出席、到场（hadir di …）；带宾语用 menghadiri；口语多说 datang。"
+    },
+    {
+      "key": "masalah",
+      "name": "Masalahnya, … belum …",
+      "head": "Masalahnya, … belum … · 问题是，……还没……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Masalahnya, presentasi untuk rapat belum dikirim ke klien.",
+            "cn": "问题是，开会用的演示文稿还没发给客户。"
+          }
+        ],
+        "ask": "Nadia 在机场最着急的问题是什么？",
+        "options": [
+          {
+            "t": "演示文稿还没发给客户",
+            "reply": [
+              "对。Masalahnya 引出问题，belum 说还没做好的事。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "她忘了带电脑",
+            "reply": [
+              "不是。电脑带了，只是快没电。"
+            ]
+          },
+          {
+            "t": "客户还没回复她",
+            "reply": [
+              "不是。课文最后客户回复了，问题在于文件还没发。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "句型：**Masalahnya, + 某事 + belum + 动作**。{{Masalahnya}} 先点出“问题在于”，再用 {{belum}} 说还没完成的事。",
+        "口语也常说 {{Tapi masalahnya, …}}；正式写作可以说 {{Masalahnya adalah …}}。后半句不一定用 belum，说别的麻烦也行。"
+      ],
+      "simple": [
+        "[[Masalahnya, … belum …]] = 问题是，……还没……"
+      ],
+      "asks": [
+        {
+          "label": "再看几个例子",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "Masalahnya, tiketnya belum dibayar.",
+                  "问题是，票还没付钱"
+                ],
+                [
+                  "Masalahnya, aku belum makan dari pagi.",
+                  "问题是，我从早上到现在还没吃饭"
+                ],
+                [
+                  "Masalahnya, dia udah pulang.",
+                  "问题是，他已经走了（不一定用 belum）"
+                ]
+              ]
+            },
+            "先说打算或现状，再用 Masalahnya 点出卡住的地方。"
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Kita mau berangkat sekarang. ___, mobilnya belum diisi bensin.]]",
+          "（我们想现在出发。问题是，车还没加油。）"
+        ],
+        "options": [
+          {
+            "t": "Masalahnya",
+            "v": "right",
+            "why": [
+              "对。句首点出问题：Masalahnya, …"
+            ]
+          },
+          {
+            "t": "Tapi masalahnya",
+            "v": "ok",
+            "why": [
+              "也可以，口语里更顺，多了一点转折。"
+            ]
+          },
+          {
+            "t": "Masalah",
+            "v": "wrong",
+            "why": [
+              "少了 -nya，不像“问题在于”的开头。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。你跟同事说：“问题是，老板还没同意。”最自然的说法："
+          ],
+          "options": [
+            {
+              "t": "Masalahnya, bos belum setuju.",
+              "v": "right",
+              "why": [
+                "对。belum setuju = 还没同意。"
+              ]
+            },
+            {
+              "t": "Tapi masalahnya, bos belum setuju.",
+              "v": "ok",
+              "why": [
+                "也可以，前面有别的话时更自然。"
+              ]
+            },
+            {
+              "t": "Masalahnya, bos sudah belum setuju.",
+              "v": "wrong",
+              "why": [
+                "sudah 和 belum 不能叠在一起。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你跟朋友说：“我想去旅行。问题是，签证还没办下来。”先说出声。"
+        ],
+        "kw": "aku mau jalan-jalan · masalahnya · visanya belum keluar",
+        "skel": "Aku mau jalan-jalan. ____, visanya ____ keluar.",
+        "ref": "Aku mau jalan-jalan. Masalahnya, visanya belum keluar."
+      },
+      "recall": {
+        "prompt": [
+          "家里周末要请客，你跟妈妈说：“问题是，蛋糕还没订。”"
+        ],
+        "kw": "masalahnya · kuenya · belum dipesan",
+        "skel": "____, kuenya belum ____.",
+        "ref": "Masalahnya, kuenya belum dipesan."
+      },
+      "final": {
+        "cn": "（对同事）“报告写好了。问题是，数据还没核对。”",
+        "ref": "Laporannya sudah selesai. Masalahnya, datanya belum dicek."
+      },
+      "remind": "Masalahnya, … belum … = 问题是，……还没……"
+    },
+    {
+      "key": "jangan",
+      "name": "Kalau ada yang …, jangan …, ya.",
+      "head": "Kalau ada yang …, jangan …, ya. · 要是有人……，你别……啊",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "Pak Yusuf",
+            "id": "Besok kalau ada yang ngegas, jangan kepancing, ya. Dengerin dulu keluhannya.",
+            "cn": "明天要是有人说话很冲，你别被激到啊。先听他们把投诉说完。"
+          }
+        ],
+        "ask": "Yusuf 先生在嘱咐 Nadia 什么？",
+        "options": [
+          {
+            "t": "有人说话冲也别被激怒，先听完",
+            "reply": [
+              "对。Kalau ada yang …, jangan …, ya 就是提前叮嘱。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "有人生气就马上道歉离开",
+            "reply": [
+              "不是。他让 Nadia 先听投诉，不是离开。"
+            ]
+          },
+          {
+            "t": "别接客户的电话",
+            "reply": [
+              "不是。对话里没有说电话。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "句型：**Kalau ada yang + 情况, jangan + 别做的事, ya.** 用来提前叮嘱别人。{{ada yang}} = 有人；句末 {{ya}} 让叮嘱更柔和。",
+        "例：{{Kalau ada yang nanya, jangan bilang aku di sini, ya.}}（要是有人问，别说我在这儿啊。nanya = bertanya）"
+      ],
+      "simple": [
+        "[[Kalau ada yang …, jangan …, ya.]] = 要是有人……，你别……啊"
+      ],
+      "asks": [
+        {
+          "label": "什么时候不用 jangan？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "Kalau ada yang telepon, bilang aku lagi rapat, ya.",
+                  "要是有人打电话，就说我在开会（正面嘱咐）"
+                ],
+                [
+                  "Kalau ada yang nawarin, jangan langsung mau, ya.",
+                  "要是有人推销，别马上答应（叮嘱别做）"
+                ],
+                [
+                  "Kalau hujan, jangan lupa bawa payung, ya.",
+                  "要是下雨，别忘了带伞（情况不是“有人”）"
+                ]
+              ]
+            },
+            "让人别做某事用 jangan；让人去做某事，直接说要做的事。"
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Kalau ada yang minta nomor HP-ku, ___ kasih, ya.]]",
+          "（要是有人要我的手机号，你别给啊。）"
+        ],
+        "options": [
+          {
+            "t": "jangan",
+            "v": "right",
+            "why": [
+              "对。叮嘱别人别做：jangan kasih。"
+            ]
+          },
+          {
+            "t": "nggak usah",
+            "v": "ok",
+            "why": [
+              "也可以，nggak usah kasih = 不用给，语气更轻。"
+            ]
+          },
+          {
+            "t": "tidak",
+            "v": "wrong",
+            "why": [
+              "tidak 只是陈述“不”，叮嘱别人别做要用 jangan。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。你出门前叮嘱孩子：“要是有人敲门，别开门啊。”最自然的说法："
+          ],
+          "options": [
+            {
+              "t": "Kalau ada yang ketuk pintu, jangan dibuka, ya.",
+              "v": "right",
+              "why": [
+                "对。jangan dibuka = 别开（门）。"
+              ]
+            },
+            {
+              "t": "Kalau ada yang ketuk pintu, jangan buka pintunya, ya.",
+              "v": "ok",
+              "why": [
+                "也可以，只是把 pintu 又说了一遍。"
+              ]
+            },
+            {
+              "t": "Kalau ada yang ketuk pintu, tidak dibuka, ya.",
+              "v": "wrong",
+              "why": [
+                "tidak 不能用来叮嘱，要说 jangan。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你出差前叮嘱同事：“要是有人投诉，别马上答应退款啊。”先说出声。"
+        ],
+        "kw": "kalau ada yang komplain · jangan langsung · refund",
+        "skel": "Kalau ada yang ____, jangan langsung janji ____, ya.",
+        "ref": "Kalau ada yang komplain, jangan langsung janji refund, ya."
+      },
+      "recall": {
+        "prompt": [
+          "你叮嘱新来的室友：“要是有人借钱，别随便借给他啊。”"
+        ],
+        "kw": "kalau ada yang pinjam uang · jangan asal kasih",
+        "skel": "Kalau ada yang ____ uang, jangan ____ kasih, ya.",
+        "ref": "Kalau ada yang pinjam uang, jangan asal kasih, ya.",
+        "notes": [
+          "asal = 随便、不多想。"
+        ]
+      },
+      "final": {
+        "cn": "（对孩子）“要是有人给你糖，别随便拿啊。”",
+        "ref": "Kalau ada yang kasih permen, jangan asal ambil, ya."
+      },
+      "remind": "Kalau ada yang …, jangan …, ya. = 提前叮嘱：要是有人……，你别……"
+    }
+  ],
+  "scan": {
+    "head": "其他新词 · 扫一眼",
+    "intro": [
+      "今晚另外三个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+    ],
+    "words": [
+      "penerbangan",
+      "baterai",
+      "jaringan"
+    ]
+  },
+  "reading": [
+    {
+      "key": "baterai",
+      "sentence": "Baterai laptopnya tinggal sepuluh persen, dan jaringan wifi di ruang tunggu sangat lambat.",
+      "cn": "她的笔记本电脑只剩百分之十的电，候机室的 wifi 又特别慢。",
+      "chunks": [
+        [
+          "Baterai laptopnya tinggal sepuluh persen,",
+          "电脑只剩百分之十的电",
+          "tinggal = 只剩"
+        ],
+        [
+          "dan jaringan wifi di ruang tunggu sangat lambat.",
+          "候机室的 wifi 网络很慢",
+          "口语说 jaringannya lemot"
+        ]
+      ],
+      "steal": [
+        "值得借的是 [[… tinggal …, dan …]]：先说剩下的不多，再连着说另一个麻烦。{{Uangku tinggal lima puluh ribu, dan gajian masih seminggu lagi.}}（我只剩五万盾了，离发工资还有一个星期。）"
+      ]
+    }
+  ],
+  "dialogue": {
+    "head": "对话 · 你来演 Nadia",
+    "intro": [
+      "你演 Nadia，我演 Yusuf 先生。每一轮先看 Nadia 想说什么，看中文先说。"
+    ],
+    "turns": [
+      {
+        "line": 1,
+        "intent": "Nadia 说：已经到机场了，但航班延误三小时，天一直很阴。",
+        "kw": "udah · molor tiga jam · mendung banget",
+        "skel": "Udah, Pak. Tapi penerbangannya ____ tiga jam. Dari tadi langitnya ____ banget."
+      },
+      {
+        "line": 3,
+        "intent": "Nadia 说还没发：电脑快没电了，网也慢。",
+        "kw": "baterai laptop · tinggal dikit · jaringannya lemot",
+        "skel": "Belum, Pak. ____ laptop saya tinggal dikit, ____ juga lemot."
+      },
+      {
+        "line": 7,
+        "intent": "Nadia 答应，并确认上司后天会赶过来。",
+        "kw": "siap · jadi nyusul lusa",
+        "skel": "Siap, Pak. Bapak jadi ____ lusa, kan?"
+      }
+    ],
+    "tail": [
+      "Nadia 对上司用 saya / Pak，句子里也有 udah、dikit、lemot 这些口语形；写邮件时换成 sudah、sedikit、lambat。"
+    ]
+  },
+  "tasks": [
+    {
+      "key": "output",
+      "prompt": [
+        "最后一个开口任务（来自今晚的改写题，缩短版）：跟朋友说一次网购投诉，客服马上处理了，处理得让你印象很深。"
+      ],
+      "kw": "CS-nya langsung nanganin · penanganannya · mengesankan",
+      "skel": "CS-nya langsung ____, penanganannya ____ banget.",
+      "ref": "CS-nya langsung nanganin, penanganannya mengesankan banget.",
+      "notes": [
+        "整页的改写题有更完整的参考答案，学完可以去对照。"
+      ]
+    }
+  ],
+  "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
