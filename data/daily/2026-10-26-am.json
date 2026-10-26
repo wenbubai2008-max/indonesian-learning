@@ -1,0 +1,419 @@
+{
+  "date": "2026-10-26",
+  "session": "am",
+  "time": "08:00",
+  "day": 66,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Piknik di Hari yang Mendung · 阴天里的野餐",
+  "new_words": [
+    "mendung",
+    "berawan",
+    "cerah",
+    "pilek",
+    "alergi",
+    "membaik",
+    "muntah",
+    "melompat",
+    "basah",
+    "lusa"
+  ],
+  "vocab": [
+    {
+      "word": "mendung",
+      "display": "mendung",
+      "audio_text": "mendung",
+      "cn": "阴天；（天）阴沉沉的",
+      "en": "overcast; cloudy and dark",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯形容词，说天空或天气：langit mendung（天阴）、cuaca mendung（阴天）、mendung tebal（乌云很厚）、dari pagi mendung terus（从早上一直阴着）。也可当名词指“乌云”：mendungnya sudah hilang（乌云散了）。",
+      "example": "Langit di atas kantor masih mendung, tapi awannya bergerak ke selatan, jadi hujannya mungkin tidak sampai ke sini.",
+      "example_cn": "办公室上空还阴沉沉的，不过云在往南移动，所以雨也许下不到这边。",
+      "synonym_note": "mendung 是云又厚又暗、看起来快要下雨；berawan 只是天上有云，不一定会下雨（天气预报常说 cerah berawan“晴间多云”）。反义词是 cerah。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berawan",
+      "display": "berawan",
+      "audio_text": "berawan",
+      "cn": "多云的",
+      "en": "cloudy",
+      "root": "awan",
+      "root_cn": "云",
+      "formation": "ber- + awan（云）→ berawan，“有云的”。天气预报的常见说法：cerah berawan（晴间多云）、berawan tebal（云层很厚）、langit berawan（天上有云）。",
+      "example": "Menurut ramalan cuaca, Jakarta hari ini cerah berawan dan tidak akan hujan.",
+      "example_cn": "根据天气预报，雅加达今天晴间多云，不会下雨。",
+      "synonym_note": "berawan 是中性的描述，多见于天气预报；日常聊天说“天阴了、快下雨了”更常用 mendung。awan 是“云”本身：awannya gelap（云很黑）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "cerah",
+      "display": "cerah",
+      "audio_text": "cerah",
+      "cn": "晴朗；明亮；（颜色）鲜亮",
+      "en": "clear, sunny; bright",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯形容词：cuaca cerah（晴天）、langit cerah（天空晴朗）；也用于颜色和表情：warna cerah（鲜亮的颜色）、wajahnya cerah（满面笑容）；比喻：masa depan cerah（前途光明）。",
+      "example": "Untung sekitar jam sepuluh langitnya cerah lagi, jadi pertandingan bola anak-anak tetap jalan.",
+      "example_cn": "幸好十点左右天又放晴了，所以孩子们的足球比赛照常进行。",
+      "synonym_note": "cerah 是“晴、亮”，不等于“热”：天晴也可以很凉快，热要说 panas。和 mendung 是一对反义词：Tadi mendung, sekarang sudah cerah.（刚才阴天，现在已经晴了。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "pilek",
+      "display": "pilek",
+      "audio_text": "pilek",
+      "cn": "感冒流鼻涕；鼻塞",
+      "en": "a cold, runny nose",
+      "root": "",
+      "root_cn": "",
+      "formation": "名词，也可当谓语说状态：kena pilek（得了鼻涕感冒）、sedang pilek（正感冒流鼻涕）、pilek dan batuk（流鼻涕加咳嗽）、obat pilek（感冒药）。",
+      "example": "Pileknya tidak parah, tapi hidung tersumbat sangat mengganggu tidur saya.",
+      "example_cn": "鼻涕感冒倒不严重，可鼻子堵着特别影响我睡觉。",
+      "synonym_note": "pilek 指流鼻涕、鼻塞这类鼻子的症状；flu 是流感，通常还会发烧、浑身酸痛；masuk angin 是印尼常说的“着凉”（肚子胀、浑身不舒服），不等于 pilek。口语说法：lagi pilek（= sedang pilek）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "alergi",
+      "display": "alergi",
+      "audio_text": "alergi",
+      "cn": "过敏",
+      "en": "allergy; allergic",
+      "root": "",
+      "root_cn": "",
+      "formation": "外来词（allergy）。直接接过敏原：alergi debu（对灰尘过敏）、alergi udang（对虾过敏）、alergi obat（药物过敏）；正式文件也写 alergi terhadap …。过敏又犯了说 alerginya kambuh。",
+      "example": "Kalau alerginya kambuh, matanya gatal dan dia terus menggosok mata.",
+      "example_cn": "他过敏一犯，眼睛就发痒，一直揉眼睛。",
+      "synonym_note": "alergi 后面直接接过敏的东西，不用加 dengan：saya alergi kacang。口语也常说 alergi sama …（alergi sama kucing）。alergi 是体质反应；吃坏肚子是 keracunan makanan（食物中毒），不要混用。",
+      "is_oral_new": false
+    },
+    {
+      "word": "membaik",
+      "display": "membaik",
+      "audio_text": "membaik",
+      "cn": "好转；变好",
+      "en": "to improve, get better",
+      "root": "baik",
+      "root_cn": "好",
+      "formation": "meN- + baik（好）→ membaik，“自己变好、好转”，不及物，不接宾语。主语多是情况、病情、天气、经济：kondisinya membaik（情况好转）、cuaca mulai membaik（天气开始转好）、jauh membaik（好多了）。",
+      "example": "Setelah tiga hari minum obat, kondisinya sudah jauh membaik.",
+      "example_cn": "吃了三天药之后，他的情况已经好多了。",
+      "synonym_note": "membaik（自己好转）≠ memperbaiki（修理、改进，要接宾语：memperbaiki motor）；sembuh 是“痊愈、完全好了”，membaik 只是在变好、还没全好。口语说法：说身体好些了常说 udah mendingan（= sudah lebih baik）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "muntah",
+      "display": "muntah",
+      "audio_text": "muntah",
+      "cn": "呕吐；吐",
+      "en": "to vomit, throw up",
+      "root": "",
+      "root_cn": "",
+      "formation": "不及物动词：muntah di mobil（在车里吐了）、muntah-muntah（一直吐）、rasanya mau muntah（感觉想吐）。“把……吐出来”书面说 memuntahkan。晕车说 mabuk darat，常和 muntah 一起出现。",
+      "example": "Di tengah jalan adik saya mabuk darat, muntah, lalu menangis karena bajunya kotor.",
+      "example_cn": "半路上我弟弟晕车吐了，然后因为衣服弄脏了哭了起来。",
+      "synonym_note": "muntah 是真的吐出来了；mual 是恶心、想吐但还没吐：Saya mual, tapi belum muntah.（我恶心，但还没吐。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "melompat",
+      "display": "melompat",
+      "audio_text": "melompat",
+      "cn": "跳；跳跃",
+      "en": "to jump",
+      "root": "lompat",
+      "root_cn": "跳",
+      "formation": "meN- + lompat → melompat（跳），不及物：melompat ke …（跳到……）、melompat dari …（从……跳下）；重叠 melompat-lompat（蹦蹦跳跳）；melompati + 宾语 = 跳过某物（melompati pagar 跳过围栏）。",
+      "example": "Kucing itu melompat ke atas meja dan menjatuhkan gelas.",
+      "example_cn": "那只猫跳上桌子，把杯子碰掉了。",
+      "synonym_note": "melompat 是双脚离地往上或往前跳；terjun 是从高处往下跳（跳水、跳伞）。口语说法：朋友、孩子之间多说 lompat 或 loncat（Ayo, lompat!），叙述和书面用 melompat。",
+      "is_oral_new": true
+    },
+    {
+      "word": "basah",
+      "display": "basah",
+      "audio_text": "basah",
+      "cn": "湿；湿的",
+      "en": "wet",
+      "root": "",
+      "root_cn": "",
+      "formation": "形容词：baju basah（衣服湿了）、basah kuyup（湿透）、rambut masih basah（头发还湿着）；membasahi（把……弄湿）；口语 kebasahan（被弄湿了）。反义词 kering（干）。",
+      "example": "Hujannya deras sekali; air mengalir di pinggir jalan dan sepatu saya basah kuyup.",
+      "example_cn": "雨下得特别大，水沿着路边流，我的鞋全湿透了。",
+      "synonym_note": "basah 是表面沾了水、湿了；lembap 是潮湿、湿润（空气、皮肤、房间）。被雨淋湿常说 kehujanan：Tadi saya kehujanan, jadi bajunya basah.（刚才我被雨淋了，所以衣服湿了。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "lusa",
+      "display": "lusa",
+      "audio_text": "lusa",
+      "cn": "后天",
+      "en": "the day after tomorrow",
+      "root": "",
+      "root_cn": "",
+      "formation": "时间名词：besok（明天）→ lusa（后天）；kemarin（昨天）→ kemarin lusa（前天）。常见：lusa pagi（后天早上）、paling lambat lusa（最晚后天）。",
+      "example": "Paketnya baru sampai lusa, karena gudangnya terletak di luar kota.",
+      "example_cn": "包裹后天才到，因为仓库在城外。",
+      "synonym_note": "lusa 是后天，kemarin lusa 是前天，别混。口语里 besok lusa 有时不精确地表示“过一两天”，要说准确的后天就说 lusa。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "pula",
+    "selera",
+    "kebablasan",
+    "keganggu",
+    "sabar",
+    "tidak sabar"
+  ],
+  "sentences": [
+    {
+      "text": "Pagi ini memang mendung, tapi menurut ramalan cuaca, siang nanti cerah berawan.",
+      "cn": "今天早上确实是阴天，不过根据天气预报，中午会晴间多云。"
+    },
+    {
+      "text": "Aku lagi pilek nih, maaf ya kalau nyusahin. Lusa aja kita ketemu, gimana?",
+      "cn": "我正感冒流鼻涕呢，给你添麻烦了不好意思。我们后天再见面，怎么样？（lagi = sedang，nyusahin = menyusahkan，aja = saja，gimana = bagaimana）"
+    },
+    {
+      "text": "Anak saya alergi udang, Bu. Tolong taruh udangnya di piring terpisah, ya.",
+      "cn": "我孩子对虾过敏，阿姨。麻烦把虾放在另一个盘子里，好吗？"
+    },
+    {
+      "text": "Jangan dipaksa makan dulu; lagi pula, anak yang baru muntah biasanya memang tidak ada selera makan.",
+      "cn": "先别逼他吃东西；再说，刚吐过的孩子通常本来就没胃口。"
+    },
+    {
+      "text": "Kondisi Kakek sudah mulai membaik, namun beliau tetap harus banyak istirahat sesuai anjuran dokter.",
+      "cn": "爷爷的情况已经开始好转了，不过他还是得按医嘱多休息。"
+    }
+  ],
+  "reading": {
+    "text": "Minggu pagi langit mendung, padahal keluarga Pak Hadi sudah berencana piknik di taman kota. Rania, anak bungsu mereka, sudah tidak sabar. Pileknya sudah membaik; kata dokter, pilek itu karena alergi debu, bukan flu. Akhirnya Ayah memutuskan untuk tetap berangkat dan membawa payung. Di perjalanan Rania mabuk darat dan muntah, jadi mereka berhenti sebentar. Untung sekitar jam sepuluh cuacanya cerah. Begitu sampai, Rania langsung melompat ke genangan air sampai sepatunya basah. Ibu hampir marah karena sepatu itu harus dipakai ke sekolah lusa, tetapi Ayah berkata, \"Sabar, Bu. Sampai lusa pasti sudah kering.\" Siang itu mereka menghabiskan bekal di atas tikar sambil tertawa.",
+    "cn": "星期天早上天阴沉沉的，可哈迪先生一家早就计划好去城市公园野餐了。他们的小女儿拉妮娅早就等不及了。她的鼻涕感冒已经好转了；医生说，那是对灰尘过敏引起的，不是流感。最后爸爸决定还是出发，带上雨伞。路上拉妮娅晕车吐了，所以他们停下来歇了一会儿。幸好大约十点天就放晴了。一到公园，拉妮娅马上跳进水坑，鞋子都湿了。妈妈差点发火，因为后天上学还要穿这双鞋，可爸爸说：“别急嘛。到后天肯定干了。”那天中午，他们坐在野餐垫上，一边说笑一边把带来的吃的都吃光了。"
+  },
+  "quiz": [
+    {
+      "question": "Rina cerita ke temannya: \"Tadi aku ketiduran di bus. Harusnya turun di halte Sudirman, eh malah sampai Blok M. Aku ___!\" 空格里哪个最自然？",
+      "options": [
+        "ketinggalan",
+        "kesasar",
+        "kebablasan",
+        "keganggu"
+      ],
+      "answer_index": 2,
+      "answer": "kebablasan",
+      "explain": "睡着了没在该下的站下车、一直坐过了头，口语说 kebablasan（坐过站；也可以说 kelewatan）。ketinggalan 是“没赶上、落下了”（ketinggalan bus 是车开走了没坐上），可 Rina 明明在车上；kesasar 是走错路、迷路，她走的路线没错，只是没下车；keganggu 是被打扰，意思不对。"
+    },
+    {
+      "question": "Kerja dari rumah itu enak, tapi tetangga sebelah lagi renovasi. Dari pagi suara bornya bikin aku ___ terus. 空格里哪个最自然？",
+      "options": [
+        "mengganggu",
+        "gangguan",
+        "ganggu",
+        "keganggu"
+      ],
+      "answer_index": 3,
+      "answer": "keganggu",
+      "explain": "“我”是被吵到的一方，用 keganggu（口语，正式说 terganggu）：bikin aku keganggu = 让我受干扰。mengganggu 的主语是吵人的东西：Suara bornya mengganggu.；gangguan 是名词“干扰”；ganggu 是词根，多用在祈使句 Jangan ganggu aku!。"
+    },
+    {
+      "question": "Pagi ini langitnya gelap dan awannya tebal sekali. Ibu bilang, \"Bawa payung, ya. Langitnya ___ banget, sebentar lagi pasti hujan.\" 空格里哪个最自然？",
+      "options": [
+        "berawan",
+        "mendung",
+        "cerah",
+        "basah"
+      ],
+      "answer_index": 1,
+      "answer": "mendung",
+      "explain": "云又厚又暗、马上要下雨，口语最自然的是 mendung。berawan 只是说天上有云，多用在天气预报（cerah berawan 晴间多云），不带“快下雨”的意思，放在这里分量不够；cerah 是晴天，和“要下雨”矛盾；basah 是东西湿了，不能形容天空。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语讲一次你因为天气或身体不舒服改了计划的经历：本来要做什么、为什么改、后来怎样。至少用 mendung、cerah、pilek、membaik、lusa 中的两个。",
+    "reference_answer": "Minggu lalu saya sudah janjian makan malam dengan teman, tapi hari itu saya pilek berat dan tidak ada selera makan. Jadi saya memutuskan untuk menunda pertemuan itu sampai lusa. Untung dua hari kemudian kondisi saya sudah membaik, dan kami bisa makan bersama seperti biasa.",
+    "reference_cn": "上周我和朋友约好了吃晚饭，可那天我鼻涕感冒得很厉害，也没有胃口。所以我决定把见面推到后天。幸好两天后我的情况已经好转了，我们像平常一样一起吃了饭。"
+  },
+  "review": [
+    "3 秒主动提取：看中文马上说印尼语——阴天、多云、晴朗、感冒流鼻涕、过敏、好转、呕吐、跳、湿、后天；说不出来的回看词卡再说一遍。",
+    "易混词：mendung（云厚天暗、快下雨）vs berawan（有云，不一定下雨，cerah berawan 晴间多云）vs cerah（晴）；membaik（自己好转，不接宾语）vs memperbaiki（修理、改进，要接宾语）vs sembuh（痊愈）；muntah（吐出来了）vs mual（恶心想吐）。",
+    "复习词应用：同词根 sabar——sabar（有耐心；劝人“别急”）vs tidak sabar（等不及、没耐心），各说一句家里的事；用 kebablasan 说一次坐过站或睡过头；用 keganggu 说一件让你分心的事；用 lagi pula 给一个决定再补一条理由；用 tidak ada selera makan 说生病时的胃口。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "阴天；阴沉沉的",
+        "id": "mendung"
+      },
+      {
+        "cn": "多云的",
+        "id": "berawan"
+      },
+      {
+        "cn": "晴朗",
+        "id": "cerah"
+      },
+      {
+        "cn": "感冒流鼻涕",
+        "id": "pilek"
+      },
+      {
+        "cn": "过敏",
+        "id": "alergi"
+      },
+      {
+        "cn": "好转",
+        "id": "membaik"
+      },
+      {
+        "cn": "呕吐",
+        "id": "muntah"
+      },
+      {
+        "cn": "跳",
+        "id": "melompat"
+      },
+      {
+        "cn": "湿的",
+        "id": "basah"
+      },
+      {
+        "cn": "后天",
+        "id": "lusa"
+      }
+    ],
+    "frames": [
+      "Langitnya … banget, bawa payung, ya.",
+      "Lagi pula, …",
+      "Begitu …, dia langsung …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "mendung",
+            "cn": "云厚天暗、快下雨"
+          },
+          {
+            "id": "berawan",
+            "cn": "有云，不一定下雨"
+          },
+          {
+            "id": "cerah",
+            "cn": "晴"
+          }
+        ],
+        "note": "Tadi mendung, sekarang sudah cerah. 天气预报常说 cerah berawan（晴间多云）。"
+      },
+      {
+        "items": [
+          {
+            "id": "membaik",
+            "cn": "自己好转"
+          },
+          {
+            "id": "memperbaiki",
+            "cn": "修理；改进（要宾语）"
+          },
+          {
+            "id": "sembuh",
+            "cn": "痊愈"
+          }
+        ],
+        "note": "Kondisinya membaik. / Ayah memperbaiki motor. / Dia sudah sembuh."
+      },
+      {
+        "items": [
+          {
+            "id": "muntah",
+            "cn": "吐出来了"
+          },
+          {
+            "id": "mual",
+            "cn": "恶心想吐"
+          }
+        ],
+        "note": "Saya mual, tapi belum muntah."
+      },
+      {
+        "items": [
+          {
+            "id": "sabar",
+            "cn": "有耐心；别急"
+          },
+          {
+            "id": "tidak sabar",
+            "cn": "等不及；没耐心"
+          }
+        ],
+        "note": "同一个词根 sabar：Sabar, Bu.（别急嘛）/ Rania sudah tidak sabar.（拉妮娅早就等不及了）"
+      }
+    ],
+    "apply": [
+      {
+        "word": "kebablasan",
+        "usage": "口语：一不留神过了头——坐过站、睡过头、说过头。",
+        "examples": [
+          {
+            "id": "Aku ketiduran di bus, jadi kebablasan sampai Blok M.",
+            "cn": "我在公交车上睡着了，结果坐过站一直到了 Blok M。"
+          }
+        ]
+      },
+      {
+        "word": "keganggu",
+        "usage": "口语“被打扰、受影响”，正式说 terganggu；吵人的东西做主语时用 mengganggu。",
+        "examples": [
+          {
+            "id": "Suara bornya bikin aku keganggu terus.",
+            "cn": "电钻的声音让我一直被打扰。"
+          }
+        ]
+      },
+      {
+        "word": "pula",
+        "usage": "lagi pula 用来再补一条理由：“再说、况且”。",
+        "examples": [
+          {
+            "id": "Jangan dipaksa makan dulu; lagi pula, anak yang baru muntah biasanya memang tidak ada selera makan.",
+            "cn": "先别逼他吃东西；再说，刚吐过的孩子通常本来就没胃口。"
+          }
+        ]
+      },
+      {
+        "word": "selera",
+        "usage": "胃口；口味。生病时常说 tidak ada selera makan / nggak selera makan。",
+        "examples": [
+          {
+            "id": "Hari itu saya pilek berat dan tidak ada selera makan.",
+            "cn": "那天我鼻涕感冒得很厉害，也没有胃口。"
+          }
+        ]
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "mendung",
+      "membaik",
+      "tidak sabar"
+    ],
+    "patterns": [
+      {
+        "pattern": "… sudah mulai membaik, namun …",
+        "cn": "……已经开始好转了，不过……",
+        "example": "Kondisi Kakek sudah mulai membaik, namun beliau tetap harus banyak istirahat sesuai anjuran dokter.",
+        "example_cn": "爷爷的情况已经开始好转了，不过他还是得按医嘱多休息。"
+      },
+      {
+        "pattern": "Begitu …, … langsung …",
+        "cn": "一……就马上……",
+        "example": "Begitu sampai, Rania langsung melompat ke genangan air sampai sepatunya basah.",
+        "example_cn": "一到公园，拉妮娅马上跳进水坑，鞋子都湿了。"
+      }
+    ]
+  }
+}
