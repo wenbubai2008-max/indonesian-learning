@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-26",
-    "session": "pm",
-    "time": "18:00",
-    "day": 66
+    "date": "2026-10-27",
+    "session": "am",
+    "time": "08:00",
+    "day": 67
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-26T09:40:41.066Z",
-    "lesson_watermark": "2026-10-26 08:00",
+    "runtime_generated_at": "2026-10-26T10:51:36.518Z",
+    "lesson_watermark": "2026-10-26 18:00",
     "index_updated": "2026-10-26",
-    "runtime_hash": "7a6f2b1b92a2ebe832f9fd56f469475de40a8e463801446042d6d56d236680a9",
-    "index_hash": "d1c8530d87968487d91e30a00887bba9c30db4304cce376525d6fd2731d7e6ec",
+    "runtime_hash": "1f4e2219c9fec577d142dac9196d7a35c89d501d90427a247ec34b97ec7b1cc8",
+    "index_hash": "32321693db0f2f32760665179e7e21438369ae9a2a6e6194d33a5979d9e7d9d5",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -69,10 +69,6 @@
       [
         "terkadang",
         "有时"
-      ],
-      [
-        "penerbangan",
-        "航班，飞行"
       ],
       [
         "antara",
@@ -165,10 +161,6 @@
       [
         "pasangan",
         "伴侣、一对"
-      ],
-      [
-        "hadir",
-        "出席"
       ],
       [
         "rendah",
@@ -377,14 +369,6 @@
       [
         "buang",
         "扔；丢弃"
-      ],
-      [
-        "baterai",
-        "电池"
-      ],
-      [
-        "jaringan",
-        "网络；网络连接"
       ],
       [
         "hapus",
@@ -948,7 +932,7 @@
         "2026-10-26T07:55:11.661Z",
         "阴天；（天）阴沉沉的",
         "mendung",
-        ""
+        "阴天"
       ],
       [
         "kebablasan",
@@ -1221,16 +1205,6 @@
         "挂住；卡住；牵连"
       ],
       [
-        "ketiban",
-        2,
-        0,
-        "",
-        "",
-        "突然摊上；意外落到自己头上",
-        "tiban",
-        "落到；压到"
-      ],
-      [
         "ngeribetin",
         3,
         0,
@@ -1259,16 +1233,6 @@
         "把时间提前；往前挪（口语）",
         "maju",
         "向前；前进"
-      ],
-      [
-        "molor",
-        3,
-        1,
-        "",
-        "2026-10-26T07:48:21.229Z",
-        "延期；拖长；时间超出原计划（口语）",
-        "molor",
-        "拖长；延后"
       ],
       [
         "mundurin",
@@ -1549,16 +1513,6 @@
         "结果；成果",
         "hasil",
         "结果；成果"
-      ],
-      [
-        "menangani",
-        3,
-        1,
-        "",
-        "2026-10-26T07:50:17.511Z",
-        "处理；负责应对",
-        "tangan",
-        "手"
       ],
       [
         "menarik",
@@ -2681,94 +2635,34 @@
         "伙伴；同伴"
       ],
       [
-        "berawan",
+        "terus-menerus",
         3,
         0,
         "",
-        "2026-10-26T07:55:01.491Z",
-        "多云的",
-        "awan",
-        "云"
+        "2026-10-24T02:33:02.205Z",
+        "不断地；持续不停地",
+        "terus",
+        "继续；一直"
       ],
       [
-        "cerah",
-        3,
+        "aliran",
+        2,
         0,
         "",
-        "2026-10-26T07:55:03.265Z",
-        "晴朗；明亮；（颜色）鲜亮",
-        "cerah",
-        ""
+        "2026-10-19T13:14:10.229Z",
+        "流动；流派；流向",
+        "alir",
+        "流；流动"
       ],
       [
-        "pilek",
-        3,
+        "namun",
+        2,
         0,
         "",
-        "2026-10-26T07:55:16.634Z",
-        "感冒流鼻涕；鼻塞",
-        "pilek",
-        ""
-      ],
-      [
-        "alergi",
-        3,
-        0,
-        "",
-        "2026-10-26T07:54:53.743Z",
-        "过敏",
-        "alergi",
-        ""
-      ],
-      [
-        "membaik",
-        3,
-        0,
-        "",
-        "2026-10-26T07:55:09.418Z",
-        "好转；变好",
-        "baik",
-        "好"
-      ],
-      [
-        "muntah",
-        3,
-        0,
-        "",
-        "2026-10-26T07:55:14.079Z",
-        "呕吐；吐",
-        "muntah",
-        ""
-      ],
-      [
-        "melompat",
-        3,
-        0,
-        "",
-        "2026-10-26T07:55:07.089Z",
-        "跳；跳跃",
-        "lompat",
-        "跳"
-      ],
-      [
-        "basah",
-        3,
-        0,
-        "",
-        "2026-10-26T07:54:56.178Z",
-        "湿；湿的",
-        "basah",
-        ""
-      ],
-      [
-        "lusa",
-        3,
-        0,
-        "",
-        "2026-10-26T07:55:04.566Z",
-        "后天",
-        "lusa",
-        ""
+        "2026-10-23T23:32:42.814Z",
+        "然而；不过",
+        "namun",
+        "然而；不过"
       ]
     ],
     "focus": [
@@ -3032,45 +2926,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-10-19",
-      "session": "am",
-      "review_core": [
-        "tertentu",
-        "nentuin",
-        "peristiwa",
-        "rupanya",
-        "beresin"
-      ],
-      "new_words": [
-        "mengangsur",
-        "laga",
-        "misteri",
-        "fantasi",
-        "skripsi",
-        "kinerja",
-        "bencana alam",
-        "dimaksudkan",
-        "menghirup",
-        "gejala"
-      ]
-    },
-    {
-      "date": "2026-10-19",
-      "session": "pm",
-      "review_core": [
-        "sial",
-        "kawasan",
-        "pengalaman",
-        "alam",
-        "ngejar"
-      ],
-      "new_words": [
-        "mual",
-        "udara",
-        "berendam"
-      ]
-    },
-    {
       "date": "2026-10-20",
       "session": "am",
       "review_core": [
@@ -3329,106 +3184,42 @@
         "basah",
         "lusa"
       ]
+    },
+    {
+      "date": "2026-10-26",
+      "session": "pm",
+      "review_core": [
+        "mengesankan",
+        "penanganan",
+        "menangani",
+        "ketiban",
+        "molor"
+      ],
+      "new_words": [
+        "penerbangan",
+        "baterai",
+        "jaringan",
+        "hadir"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-25",
+    "date": "2026-10-26",
     "new_words": [
-      "kebijakan",
-      "mengakhiri",
-      "angka"
+      "penerbangan",
+      "baterai",
+      "jaringan",
+      "hadir"
     ],
     "review_core": [
-      "menerapkan",
-      "kebaca",
-      "kepepet",
-      "ketutup",
-      "masuk akal"
+      "mengesankan",
+      "penanganan",
+      "menangani",
+      "ketiban",
+      "molor"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-26",
-    "vocab": [
-      [
-        "mendung",
-        "阴天；（天）阴沉沉的",
-        "overcast; cloudy and dark",
-        "",
-        ""
-      ],
-      [
-        "berawan",
-        "多云的",
-        "cloudy",
-        "awan",
-        "云"
-      ],
-      [
-        "cerah",
-        "晴朗；明亮；（颜色）鲜亮",
-        "clear, sunny; bright",
-        "",
-        ""
-      ],
-      [
-        "pilek",
-        "感冒流鼻涕；鼻塞",
-        "a cold, runny nose",
-        "",
-        ""
-      ],
-      [
-        "alergi",
-        "过敏",
-        "allergy; allergic",
-        "",
-        ""
-      ],
-      [
-        "membaik",
-        "好转；变好",
-        "to improve, get better",
-        "baik",
-        "好"
-      ],
-      [
-        "muntah",
-        "呕吐；吐",
-        "to vomit, throw up",
-        "",
-        ""
-      ],
-      [
-        "melompat",
-        "跳；跳跃",
-        "to jump",
-        "lompat",
-        "跳"
-      ],
-      [
-        "basah",
-        "湿；湿的",
-        "wet",
-        "",
-        ""
-      ],
-      [
-        "lusa",
-        "后天",
-        "the day after tomorrow",
-        "",
-        ""
-      ]
-    ],
-    "review_vocab": [
-      "pula",
-      "selera",
-      "kebablasan",
-      "keganggu",
-      "sabar",
-      "tidak sabar"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

@@ -4095,29 +4095,33 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00",
       "原始课程",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-30 19:00",
-    "last_seen": "2026-09-15 08:00",
+    "last_seen": "2026-10-26 18:00",
     "sessions": [
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-30",
       "2026-09-04",
       "2026-09-12",
-      "2026-09-15"
+      "2026-09-15",
+      "2026-10-26"
     ],
-    "example": "Kalau situasinya mulai panas, siapa yang paling cocok menangani pembicaraan ini?",
-    "example_cn": "如果气氛开始紧张，谁最适合来处理这次沟通？",
+    "example": "Dokter jaga yang menangani korban tabrak lari semalam belum tidur sama sekali.",
+    "example_cn": "昨晚救治肇事逃逸受害者的值班医生到现在一点都没睡。",
     "root_cn": "手",
     "lesson_occurrences": [
       "2026-08-30 19:00",
       "2026-09-04 19:00",
       "2026-09-12 19:00",
-      "2026-09-15 08:00"
+      "2026-09-15 08:00",
+      "2026-10-26 18:00"
     ]
   },
   {
@@ -8199,26 +8203,30 @@ window.DAILY_VOCAB_DB = [
     "en": "unexpectedly get saddled with",
     "root": "tiban",
     "root_cn": "落到；压到",
-    "example": "Temanku izin, jadi aku ketiban follow up tambahan.",
-    "example_cn": "同事请假了，所以我突然又摊上一项额外跟进。",
+    "example": "Gara-gara jadi satu-satunya jomblo di tim, aku yang ketiban tugas lembur malam Minggu.",
+    "example_cn": "因为我是组里唯一的单身，周六晚上加班的任务就落到我头上了。（gara-gara = karena）",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-09 19:00",
+    "last_seen": "2026-10-26 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-09"
+      "2026-09-09",
+      "2026-10-26"
     ],
     "lesson_occurrences": [
       "2026-09-09 08:00",
-      "2026-09-09 19:00"
+      "2026-09-09 19:00",
+      "2026-10-26 18:00"
     ]
   },
   {
@@ -8532,23 +8540,27 @@ window.DAILY_VOCAB_DB = [
     "en": "overrun; drag on; be extended",
     "root": "molor",
     "root_cn": "拖长；延后",
-    "example": "Kalau diskusinya terus panjang, meeting ini bisa molor sampai siang.",
-    "example_cn": "如果讨论一直这么长，这个会议可能会拖到中午。",
+    "example": "Rapatnya molor sampai jam sembilan malam gara-gara bos mau mengubah semua target.",
+    "example_cn": "会议拖到了晚上九点，因为老板要把所有目标都改掉。（gara-gara = karena）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-10-26 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-10-26"
     ],
     "lesson_occurrences": [
-      "2026-09-10 08:00"
+      "2026-09-10 08:00",
+      "2026-10-26 18:00"
     ]
   },
   {
@@ -20485,23 +20497,27 @@ window.DAILY_VOCAB_DB = [
     "en": "impressive; leaving a strong impression",
     "root": "kesan",
     "root_cn": "印象",
-    "example": "Presentasi Dina sangat mengesankan, semua orang bertepuk tangan.",
-    "example_cn": "蒂娜的演示给人印象很深，大家都鼓掌了。",
+    "example": "Presentasi bawahanku tadi pagi mengesankan banget; klien langsung setuju meningkatkan kerja sama.",
+    "example_cn": "我下属今天早上的展示特别出彩，客户马上就同意加强合作了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-12 08:00",
-    "last_seen": "2026-10-12 08:00",
+    "last_seen": "2026-10-26 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-12"
+      "2026-10-12",
+      "2026-10-26"
     ],
     "lesson_occurrences": [
-      "2026-10-12 08:00"
+      "2026-10-12 08:00",
+      "2026-10-26 18:00"
     ]
   },
   {
@@ -21425,23 +21441,27 @@ window.DAILY_VOCAB_DB = [
     "en": "handling; treatment",
     "root": "tangan",
     "root_cn": "手",
-    "example": "Penanganan pasien di rumah sakit itu cepat, jadi ayah langsung diperiksa dokter.",
-    "example_cn": "那家医院对病人处理得很快，所以爸爸马上就看上了医生。",
+    "example": "Berkat penanganan yang cepat, toko online itu berhasil mencapai rating 4,9 di aplikasi.",
+    "example_cn": "多亏处理得快，那家网店在应用上拿到了 4.9 分。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-10-15 08:00",
+    "last_seen": "2026-10-26 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-15"
+      "2026-10-15",
+      "2026-10-26"
     ],
     "lesson_occurrences": [
-      "2026-10-15 08:00"
+      "2026-10-15 08:00",
+      "2026-10-26 18:00"
     ]
   },
   {
@@ -25128,25 +25148,28 @@ window.DAILY_VOCAB_DB = [
     "word": "mendung",
     "cn": "阴天；（天）阴沉沉的",
     "en": "overcast; cloudy and dark",
-    "root": "",
-    "root_cn": "",
-    "example": "Langit di atas kantor masih mendung, tapi awannya bergerak ke selatan, jadi hujannya mungkin tidak sampai ke sini.",
-    "example_cn": "办公室上空还阴沉沉的，不过云在往南移动，所以雨也许下不到这边。",
+    "root": "mendung",
+    "root_cn": "阴天",
+    "example": "Pagi ini mendung, jadi kelas peregangan di atap kantor dipindah ke ruang rapat.",
+    "example_cn": "今天早上天阴，所以在公司天台上的拉伸课改到会议室上了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-26 08:00",
-    "last_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-26"
     ],
     "lesson_occurrences": [
-      "2026-10-26 08:00"
+      "2026-10-26 08:00",
+      "2026-10-26 18:00"
     ]
   },
   {
@@ -25354,25 +25377,128 @@ window.DAILY_VOCAB_DB = [
     "word": "lusa",
     "cn": "后天",
     "en": "the day after tomorrow",
-    "root": "",
-    "root_cn": "",
-    "example": "Paketnya baru sampai lusa, karena gudangnya terletak di luar kota.",
-    "example_cn": "包裹后天才到，因为仓库在城外。",
+    "root": "lusa",
+    "root_cn": "后天",
+    "example": "Bos minta laporan keuntungan bulan ini dikirim paling lambat lusa.",
+    "example_cn": "老板要求这个月的利润报告最晚后天发出去。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-26 08:00",
-    "last_seen": "2026-10-26 08:00",
+    "last_seen": "2026-10-26 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-26"
     ],
     "lesson_occurrences": [
-      "2026-10-26 08:00"
+      "2026-10-26 08:00",
+      "2026-10-26 18:00"
+    ]
+  },
+  {
+    "word": "penerbangan",
+    "cn": "航班；（一次）飞行；航空",
+    "en": "flight; aviation",
+    "root": "terbang",
+    "root_cn": "飞",
+    "example": "Di dalam penerbangan, penumpang dilarang merokok, termasuk rokok elektrik.",
+    "example_cn": "在航班上，乘客禁止吸烟，电子烟也包括在内。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 18:00",
+    "last_seen": "2026-10-26 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 18:00"
+    ]
+  },
+  {
+    "word": "baterai",
+    "cn": "电池；（手机、电脑的）电量",
+    "en": "battery",
+    "root": "baterai",
+    "root_cn": "电池（外来词）",
+    "example": "Daya tahan baterai HP baruku luar biasa; seharian dipakai, masih sisa lima puluh persen.",
+    "example_cn": "我新手机的电池续航太厉害了，用了一整天还剩百分之五十。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 18:00",
+    "last_seen": "2026-10-26 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 18:00"
+    ]
+  },
+  {
+    "word": "jaringan",
+    "cn": "网络；（手机、网络的）信号连接；（人、机构的）网",
+    "en": "network; connection",
+    "root": "jaring",
+    "root_cn": "网（渔网等）",
+    "example": "Jaringan internet di kantor baru belum memenuhi kebutuhan kami; video call dengan klien sering putus.",
+    "example_cn": "新办公室的网络还满足不了我们的需要，和客户视频通话经常断线。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 18:00",
+    "last_seen": "2026-10-26 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 18:00"
+    ]
+  },
+  {
+    "word": "hadir",
+    "cn": "出席；到场；在场",
+    "en": "to attend; to be present",
+    "root": "hadir",
+    "root_cn": "出席；在场",
+    "example": "Seluruh staf wajib hadir di pelatihan Sabtu ini supaya bisa menguasai sistem kasir yang baru.",
+    "example_cn": "全体员工这周六必须参加培训，好掌握新的收银系统。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-26 18:00",
+    "last_seen": "2026-10-26 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-26"
+    ],
+    "lesson_occurrences": [
+      "2026-10-26 18:00"
     ]
   }
 ];
