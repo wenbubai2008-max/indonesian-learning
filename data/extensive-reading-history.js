@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261025-gbk-ramai-festival-jajanan","date":"2026-10-25","title":"Akhir Pekan GBK Ramai, Festival Jajanan Padukan Rasa Lama dan Baru","title_cn":"GBK 周末人潮涌动，小吃节融合新老口味","path":"data/extensive-reading-history/2026-10-25.js"},
 {"id":"er-20261024-bmkg-peringatan-hujan-lebat-jabodetabek","date":"2026-10-24","title":"BMKG Peringatkan Hujan Lebat di Jabodetabek sampai Minggu","title_cn":"气象局预警：大雅加达地区大雨将持续到周日","path":"data/extensive-reading-history/2026-10-24.js"},
 {"id":"er-20261023-surabaya-sekolah-bebas-perundungan","date":"2026-10-23","title":"Surabaya Perkuat Pendidikan Karakter agar Sekolah Bebas Perundungan","title_cn":"泗水加强品格教育，让学校远离霸凌","path":"data/extensive-reading-history/2026-10-23.js"},
 {"id":"er-20261022-puskesmas-tambal-gigi-gratis","date":"2026-10-22","title":"Tambal Gigi Gratis di Puskesmas, Warga Tak Perlu Jauh ke Klinik","title_cn":"在社区卫生中心免费补牙，居民不用再跑远去诊所","path":"data/extensive-reading-history/2026-10-22.js"},
