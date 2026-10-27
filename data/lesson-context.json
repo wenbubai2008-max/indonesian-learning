@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-27",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 67
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-26T23:40:37.458Z",
-    "lesson_watermark": "2026-10-26 18:00",
-    "index_updated": "2026-10-26",
-    "runtime_hash": "b4fa4a11e8ef31bd77c18bcc7b6c74fc5714b7a92e6798b484ee7ea203533db5",
-    "index_hash": "32321693db0f2f32760665179e7e21438369ae9a2a6e6194d33a5979d9e7d9d5",
+    "runtime_generated_at": "2026-10-27T00:30:59.871Z",
+    "lesson_watermark": "2026-10-27 08:00",
+    "index_updated": "2026-10-27",
+    "runtime_hash": "702c99f752e1aa501b988a47902e82e28a1bd6b80b557f7f4c14be77757f2f4c",
+    "index_hash": "6f95e2edf90c3223233c5f304f0a6dfeb7bb44b0f829d25a86aa92e4387518c2",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -50,46 +50,6 @@
   "candidates": {
     "new_dont": [],
     "new_fuzzy": [
-      [
-        "mencampur",
-        "混合"
-      ],
-      [
-        "penulis",
-        "作家、作者"
-      ],
-      [
-        "usia",
-        "年龄"
-      ],
-      [
-        "alami",
-        "自然的、天然的"
-      ],
-      [
-        "terkadang",
-        "有时"
-      ],
-      [
-        "antara",
-        "在……之间"
-      ],
-      [
-        "hukum",
-        "法律"
-      ],
-      [
-        "melalui",
-        "通过、经由"
-      ],
-      [
-        "gua",
-        "洞穴"
-      ],
-      [
-        "terdapat",
-        "存在"
-      ],
       [
         "selasa",
         "星期二"
@@ -1213,36 +1173,6 @@
         "把事情搞复杂；让事情更麻烦",
         "ribet",
         "麻烦；复杂"
-      ],
-      [
-        "ketuker",
-        3,
-        0,
-        "",
-        "",
-        "弄反了；拿错了；互相弄混（口语）",
-        "tukar",
-        "交换；更换"
-      ],
-      [
-        "majuin",
-        3,
-        0,
-        "",
-        "",
-        "把时间提前；往前挪（口语）",
-        "maju",
-        "向前；前进"
-      ],
-      [
-        "mundurin",
-        3,
-        0,
-        "",
-        "",
-        "把时间往后推；推迟（口语）",
-        "mundur",
-        "后退；往后"
       ],
       [
         "ngegas",
@@ -2663,6 +2593,136 @@
         "然而；不过",
         "namun",
         "然而；不过"
+      ],
+      [
+        "nempel",
+        2,
+        0,
+        "",
+        "2026-10-23T23:32:53.037Z",
+        "黏住；贴着（口语）",
+        "tempel",
+        "贴；粘"
+      ],
+      [
+        "penduduk",
+        2,
+        0,
+        "",
+        "2026-10-23T23:34:07.504Z",
+        "居民；人口",
+        "duduk",
+        "坐；居住（词根相关）"
+      ],
+      [
+        "sempurna",
+        2,
+        0,
+        "",
+        "2026-10-23T23:36:48.862Z",
+        "完美的；完整圆满的",
+        "sempurna",
+        "完美；圆满"
+      ],
+      [
+        "mencampur",
+        3,
+        0,
+        "",
+        "",
+        "混合；把……掺在一起",
+        "campur",
+        "混合；掺杂"
+      ],
+      [
+        "penulis",
+        3,
+        0,
+        "",
+        "",
+        "作家；作者；写的人",
+        "tulis",
+        "写"
+      ],
+      [
+        "usia",
+        3,
+        0,
+        "",
+        "",
+        "年龄；年纪",
+        "",
+        ""
+      ],
+      [
+        "alami",
+        3,
+        0,
+        "",
+        "",
+        "天然的；自然的",
+        "alam",
+        "自然；大自然"
+      ],
+      [
+        "terkadang",
+        3,
+        0,
+        "",
+        "",
+        "有时；有时候",
+        "kadang",
+        "有时"
+      ],
+      [
+        "antara",
+        3,
+        0,
+        "",
+        "",
+        "在……之间；……之间",
+        "",
+        ""
+      ],
+      [
+        "hukum",
+        3,
+        0,
+        "",
+        "",
+        "法律；法",
+        "hukum",
+        ""
+      ],
+      [
+        "melalui",
+        3,
+        0,
+        "",
+        "",
+        "通过；经由；从……经过",
+        "lalu",
+        "经过；过去"
+      ],
+      [
+        "gua",
+        3,
+        0,
+        "",
+        "",
+        "山洞；洞穴",
+        "",
+        ""
+      ],
+      [
+        "terdapat",
+        3,
+        0,
+        "",
+        "",
+        "有；存在；（在某处）可以找到",
+        "dapat",
+        "得到；能"
       ]
     ],
     "focus": [
@@ -3202,6 +3262,29 @@
         "jaringan",
         "hadir"
       ]
+    },
+    {
+      "date": "2026-10-27",
+      "session": "am",
+      "review_core": [
+        "kebentur",
+        "menyembunyikan",
+        "ketuker",
+        "majuin",
+        "mundurin"
+      ],
+      "new_words": [
+        "mencampur",
+        "penulis",
+        "usia",
+        "alami",
+        "terkadang",
+        "antara",
+        "hukum",
+        "melalui",
+        "gua",
+        "terdapat"
+      ]
     }
   ],
   "previous_pm": {
@@ -3220,7 +3303,88 @@
       "molor"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-27",
+    "vocab": [
+      [
+        "mencampur",
+        "混合；把……掺在一起",
+        "to mix; to combine",
+        "campur",
+        "混合；掺杂"
+      ],
+      [
+        "penulis",
+        "作家；作者；写的人",
+        "writer; author",
+        "tulis",
+        "写"
+      ],
+      [
+        "usia",
+        "年龄；年纪",
+        "age",
+        "",
+        ""
+      ],
+      [
+        "alami",
+        "天然的；自然的",
+        "natural",
+        "alam",
+        "自然；大自然"
+      ],
+      [
+        "terkadang",
+        "有时；有时候",
+        "sometimes",
+        "kadang",
+        "有时"
+      ],
+      [
+        "antara",
+        "在……之间；……之间",
+        "between; among",
+        "",
+        ""
+      ],
+      [
+        "hukum",
+        "法律；法",
+        "law",
+        "",
+        ""
+      ],
+      [
+        "melalui",
+        "通过；经由；从……经过",
+        "through; via",
+        "lalu",
+        "经过；过去"
+      ],
+      [
+        "gua",
+        "山洞；洞穴",
+        "cave",
+        "",
+        ""
+      ],
+      [
+        "terdapat",
+        "有；存在；（在某处）可以找到",
+        "there is / there are (formal)",
+        "dapat",
+        "得到；能"
+      ]
+    ],
+    "review_vocab": [
+      "kebentur",
+      "menyembunyikan",
+      "ketuker",
+      "majuin",
+      "mundurin"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

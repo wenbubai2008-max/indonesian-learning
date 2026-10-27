@@ -8426,26 +8426,30 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-09 19:00",
-    "last_seen": "2026-09-19 18:00",
+    "last_seen": "2026-10-27 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-09",
       "2026-09-15",
-      "2026-09-19"
+      "2026-09-19",
+      "2026-10-27"
     ],
     "example": "Rencana ini kebentur waktu, jadi kita perlu cara yang lebih sederhana.",
     "example_cn": "这个计划受时间限制，所以我们需要更简单的方法。",
     "lesson_occurrences": [
       "2026-09-09 19:00",
       "2026-09-15 19:00",
-      "2026-09-19 18:00"
+      "2026-09-19 18:00",
+      "2026-10-27 08:00"
     ]
   },
   {
@@ -8610,17 +8614,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-10-27 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-10-27"
     ],
     "lesson_occurrences": [
-      "2026-09-10 08:00"
+      "2026-09-10 08:00",
+      "2026-10-27 08:00"
     ]
   },
   {
@@ -8693,19 +8699,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 19:00",
+    "last_seen": "2026-10-27 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-10-27"
     ],
     "lesson_occurrences": [
       "2026-09-10 08:00",
-      "2026-09-10 19:00"
+      "2026-09-10 19:00",
+      "2026-10-27 08:00"
     ]
   },
   {
@@ -8720,17 +8728,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-09-10 08:00",
+    "last_seen": "2026-10-27 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-10"
+      "2026-09-10",
+      "2026-10-27"
     ],
     "lesson_occurrences": [
-      "2026-09-10 08:00"
+      "2026-09-10 08:00",
+      "2026-10-27 08:00"
     ]
   },
   {
@@ -18416,17 +18426,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-06 08:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-10-27 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-06"
+      "2026-10-06",
+      "2026-10-27"
     ],
     "lesson_occurrences": [
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-10-27 08:00"
     ]
   },
   {
@@ -25499,6 +25511,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-26 18:00"
+    ]
+  },
+  {
+    "word": "mencampur",
+    "cn": "混合；把……掺在一起",
+    "en": "to mix; to combine",
+    "root": "campur",
+    "root_cn": "混合；掺杂",
+    "example": "Ibu mencampur tepung, gula, dan telur, lalu mengaduknya pelan-pelan sampai rata.",
+    "example_cn": "妈妈把面粉、糖和鸡蛋混在一起，然后慢慢搅拌，直到搅匀。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 08:00"
+    ]
+  },
+  {
+    "word": "penulis",
+    "cn": "作家；作者；写的人",
+    "en": "writer; author",
+    "root": "tulis",
+    "root_cn": "写",
+    "example": "Penulis favorit saya baru saja menerbitkan buku tentang suasana Jakarta tahun 80-an.",
+    "example_cn": "我最喜欢的作家刚出版了一本写 80 年代雅加达氛围的书。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 08:00"
+    ]
+  },
+  {
+    "word": "usia",
+    "cn": "年龄；年纪",
+    "en": "age",
+    "root": "",
+    "root_cn": "",
+    "example": "Di usia 40 tahun, dia memutuskan berhenti kerja kantoran dan membuka usaha sendiri. Dia yakin keputusannya benar.",
+    "example_cn": "40 岁那年，他决定辞掉坐办公室的工作，自己做生意。他确信自己的决定是对的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 08:00"
+    ]
+  },
+  {
+    "word": "alami",
+    "cn": "天然的；自然的",
+    "en": "natural",
+    "root": "alam",
+    "root_cn": "自然；大自然",
+    "example": "Sabun ini dibuat dari bahan alami, jadi aman untuk kulit bayi.",
+    "example_cn": "这块香皂是用天然原料做的，所以对婴儿皮肤是安全的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 08:00"
+    ]
+  },
+  {
+    "word": "terkadang",
+    "cn": "有时；有时候",
+    "en": "sometimes",
+    "root": "kadang",
+    "root_cn": "有时",
+    "example": "Saya tahu seharusnya jam tidur saya teratur, tapi terkadang saya masih begadang sampai jam dua.",
+    "example_cn": "我知道自己本该作息规律，可有时候我还是熬夜到两点。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 08:00"
+    ]
+  },
+  {
+    "word": "antara",
+    "cn": "在……之间；……之间",
+    "en": "between; among",
+    "root": "",
+    "root_cn": "",
+    "example": "Kantor saya ada di antara bank dan apotek, jadi gampang dicari.",
+    "example_cn": "我的办公室在银行和药店中间，所以很好找。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 08:00"
+    ]
+  },
+  {
+    "word": "hukum",
+    "cn": "法律；法",
+    "en": "law",
+    "root": "",
+    "root_cn": "",
+    "example": "Mengambil barang orang lain tanpa izin tetap melanggar hukum, seberapa pun murah harganya.",
+    "example_cn": "不经允许拿别人的东西，不管多便宜，都是违法的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 08:00"
+    ]
+  },
+  {
+    "word": "melalui",
+    "cn": "通过；经由；从……经过",
+    "en": "through; via",
+    "root": "lalu",
+    "root_cn": "经过；过去",
+    "example": "Untuk orang tua, pendaftaran melalui aplikasi kadang terasa ribet.",
+    "example_cn": "对老人来说，通过应用报名有时会觉得很麻烦。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 08:00"
+    ]
+  },
+  {
+    "word": "gua",
+    "cn": "山洞；洞穴",
+    "en": "cave",
+    "root": "",
+    "root_cn": "",
+    "example": "Di dalam gua, perhatikan setiap langkah karena batunya licin.",
+    "example_cn": "在山洞里，每一步都要小心，因为石头很滑。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 08:00"
+    ]
+  },
+  {
+    "word": "terdapat",
+    "cn": "有；存在；（在某处）可以找到",
+    "en": "there is / there are (formal)",
+    "root": "dapat",
+    "root_cn": "得到；能",
+    "example": "Di lantai dua mal ini terdapat musala dan ruang menyusui.",
+    "example_cn": "这家商场二楼有祈祷室和哺乳室。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 08:00"
     ]
   }
 ];
