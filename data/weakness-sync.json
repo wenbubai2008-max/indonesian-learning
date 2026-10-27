@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-26T16:08:58.929Z",
+  "updated_at": "2026-10-27T03:07:30.129Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1457,12 +1457,21 @@
     "terdapat": {
       "word": "terdapat",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:42.544Z",
+      "updated_at": "2026-10-27T03:07:19.246Z",
       "display": "terdapat",
+      "cn": "有；存在；（在某处）可以找到",
+      "root": "dapat",
+      "root_cn": "得到；能",
+      "last_wrong": "2026-10-27T03:07:19.186Z",
+      "last_review": "2026-10-27T03:07:19.186Z",
+      "source": "课程小测",
+      "source_date": "2026-10-27",
+      "session": "08:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 1,
       "right_streak": 0
     },
     "selasa": {
@@ -9629,8 +9638,9 @@
     "kepala": {
       "word": "kepala",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:50.336Z",
+      "updated_at": "2026-10-27T03:04:58.263Z",
       "display": "kepala",
+      "cn": "头部",
       "last_review": "2026-09-12T14:13:50.883Z",
       "last_mastered": "2026-09-12T14:13:50.883Z",
       "reasons": [],
@@ -29583,7 +29593,7 @@
       "status": "active",
       "updated_at": "2026-10-26T13:19:58.154Z",
       "display": "penanganan",
-      "cn": "处理；应对（的过程、方式）",
+      "cn": "处理；应对（过程）",
       "root": "tangan",
       "root_cn": "手",
       "last_wrong": "2026-10-26T13:19:57.977Z",
