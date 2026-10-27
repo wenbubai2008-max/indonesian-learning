@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "generated_at": "2026-10-27T03:40:40.354Z",
-  "source_updated_at": "2026-10-27T03:07:30.129Z",
+  "generated_at": "2026-10-27T09:40:40.129Z",
+  "source_updated_at": "2026-10-27T08:57:23.987Z",
   "taught_total": 955,
-  "confirmed_mastered": 200,
-  "needs_reinforcement": 670,
-  "excluded_from_training": 85,
+  "confirmed_mastered": 203,
+  "needs_reinforcement": 660,
+  "excluded_from_training": 92,
   "unverified": 0,
-  "mastery_percent": 20.9,
+  "mastery_percent": 21.3,
   "primary_master_total": 977,
   "primary_taught_unique": 554,
   "primary_unlearned_total": 423,
   "primary_coverage_percent": 56.7,
   "primary_eligible_new_total": 93,
-  "focus_total": 669,
+  "focus_total": 659,
   "focus_words": [
     {
       "word": "penanganan",
@@ -26,7 +26,7 @@
       ],
       "wrong_count": 2,
       "last_wrong": "2026-10-26T13:19:57.977Z",
-      "last_review": "2026-10-26T13:19:57.977Z",
+      "last_review": "2026-10-27T08:27:45.052Z",
       "cn": "处理；应对（过程）"
     },
     {
@@ -40,7 +40,7 @@
       ],
       "wrong_count": 2,
       "last_wrong": "2026-10-24T15:35:27.721Z",
-      "last_review": "2026-10-25T01:50:42.476Z",
+      "last_review": "2026-10-27T05:48:17.030Z",
       "cn": "融合；结合；搭配"
     },
     {
@@ -96,6 +96,19 @@
       "cn": "遵守；服从"
     },
     {
+      "word": "mengenali",
+      "score": 98,
+      "signals": [
+        "quick_wrong",
+        "lesson_wrong",
+        "fuzzy"
+      ],
+      "wrong_count": 3,
+      "last_wrong": "2026-10-27T07:33:35.980Z",
+      "last_review": "2026-10-27T07:33:35.980Z",
+      "cn": "认出；辨认出（凭特征认出来）"
+    },
+    {
       "word": "berlaku sampai",
       "score": 98,
       "signals": [
@@ -107,19 +120,6 @@
       "last_wrong": "",
       "last_review": "2026-10-26T07:46:12.354Z",
       "cn": "有效期至"
-    },
-    {
-      "word": "mengakhiri",
-      "score": 96,
-      "signals": [
-        "quick_wrong",
-        "lesson_wrong",
-        "fuzzy"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-10-25T13:10:06.986Z",
-      "last_review": "2026-10-26T12:41:21.779Z",
-      "cn": "结束；终止（让某事停下来）"
     }
   ],
   "definitions": {

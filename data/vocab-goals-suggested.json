@@ -10,10 +10,10 @@
    "fast": 131
   },
   "active": {
-   "use": 563,
+   "use": 553,
    "recognize": 89,
    "unsure": 18,
-   "fast": 54
+   "fast": 53
   }
  },
  "words": {
@@ -3745,7 +3745,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 51 位"
    ]
@@ -3763,7 +3763,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 80 位"
    ]
@@ -3982,7 +3982,7 @@
    "goal": "use",
    "fast": true,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "日常高频表达（口语）",
     "977 主库第 857 位"
@@ -3992,7 +3992,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 86 位"
    ]
@@ -4735,7 +4735,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 864 位"
    ]
@@ -6394,7 +6394,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 977 位"
    ]
@@ -6700,7 +6700,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 814 位"
    ]
@@ -7269,9 +7269,9 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "anak sulung": {
@@ -8055,9 +8055,9 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 B1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "memaksa": {
@@ -8427,7 +8427,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 650 位"
    ]

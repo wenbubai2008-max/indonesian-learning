@@ -132,17 +132,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "anak tunggal",
-    "cn": "独生子女",
-    "en": "only child",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "dont"
-  },
-  {
     "word": "silsilah keluarga",
     "cn": "家谱/家庭关系图",
     "en": "family tree",
@@ -2979,17 +2968,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B1",
     "sab": "A",
     "selection": "dont"
-  },
-  {
-    "word": "konser",
-    "cn": "音乐会",
-    "en": "concert",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "penonton",
