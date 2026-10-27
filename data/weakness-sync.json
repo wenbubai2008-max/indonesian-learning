@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-27T14:03:30.057Z",
+  "updated_at": "2026-10-27T14:17:50.826Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -22121,16 +22121,22 @@
     "tanggung jawab": {
       "word": "tanggung jawab",
       "status": "active",
-      "updated_at": "2026-10-27T13:28:48.281Z",
+      "updated_at": "2026-10-27T14:17:22.061Z",
       "display": "tanggung jawab",
       "cn": "责任",
-      "root": "tanggung jawab",
-      "last_review": "2026-10-27T13:28:48.230Z",
+      "root": "tanggung",
+      "root_cn": "承担",
+      "last_wrong": "2026-10-27T14:17:21.987Z",
+      "last_review": "2026-10-27T14:17:21.987Z",
+      "source": "课程小测",
+      "source_date": "2026-10-27",
+      "session": "18:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 1
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "atasan": {
       "word": "atasan",
@@ -24017,16 +24023,22 @@
     "lancar": {
       "word": "lancar",
       "status": "active",
-      "updated_at": "2026-10-27T13:28:45.002Z",
+      "updated_at": "2026-10-27T14:17:38.698Z",
       "display": "lancar",
-      "cn": "顺畅；流畅",
+      "cn": "顺利；顺畅；流利",
       "root": "lancar",
-      "last_review": "2026-10-27T13:28:44.947Z",
+      "root_cn": "顺畅",
+      "last_wrong": "2026-10-27T14:17:38.631Z",
+      "last_review": "2026-10-27T14:17:38.631Z",
+      "source": "课程小测",
+      "source_date": "2026-10-27",
+      "session": "18:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 1
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "jam buka": {
       "word": "jam buka",
