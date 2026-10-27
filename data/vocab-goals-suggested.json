@@ -4,14 +4,14 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 821,
-   "recognize": 104,
+   "use": 830,
+   "recognize": 105,
    "unsure": 20,
    "fast": 131
   },
   "active": {
-   "use": 554,
-   "recognize": 88,
+   "use": 563,
+   "recognize": 89,
    "unsure": 18,
    "fast": 54
   }
@@ -8729,6 +8729,97 @@
    "status": "active",
    "why": [
     "977 主库第 492 位"
+   ]
+  },
+  "mencampur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 204 位"
+   ]
+  },
+  "penulis": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 234 位"
+   ]
+  },
+  "usia": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 242 位"
+   ]
+  },
+  "alami": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 243 位"
+   ]
+  },
+  "terkadang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 251 位"
+   ]
+  },
+  "antara": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 274 位"
+   ]
+  },
+  "hukum": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "扩展词",
+    "977 主库第 282 位"
+   ]
+  },
+  "melalui": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 290 位"
+   ]
+  },
+  "gua": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 301 位"
+   ]
+  },
+  "terdapat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 320 位"
    ]
   }
  }

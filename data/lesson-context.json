@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-27T00:30:59.871Z",
+    "runtime_generated_at": "2026-10-27T03:40:40.219Z",
     "lesson_watermark": "2026-10-27 08:00",
     "index_updated": "2026-10-27",
-    "runtime_hash": "702c99f752e1aa501b988a47902e82e28a1bd6b80b557f7f4c14be77757f2f4c",
+    "runtime_hash": "f4d53b2531946d8b92bd7b72d19fb33841677203b3d336fb8c42a39a11911e4e",
     "index_hash": "6f95e2edf90c3223233c5f304f0a6dfeb7bb44b0f829d25a86aa92e4387518c2",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
@@ -875,6 +875,16 @@
         "经过；超过"
       ],
       [
+        "terdapat",
+        1,
+        1,
+        "2026-10-27T03:07:19.186Z",
+        "2026-10-27T03:07:19.186Z",
+        "有；存在；（在某处）可以找到",
+        "dapat",
+        "得到；能"
+      ],
+      [
         "jaringan",
         1,
         1,
@@ -1013,16 +1023,6 @@
         "美味的；享受的感觉",
         "nikmat",
         "享受；美味"
-      ],
-      [
-        "negatif",
-        1,
-        1,
-        "2026-10-23T23:32:45.582Z",
-        "2026-10-25T01:51:11.962Z",
-        "消极的；负面的；阴性的",
-        "negatif",
-        "消极的；负面的"
       ],
       [
         "tingkat",
@@ -2713,16 +2713,6 @@
         "山洞；洞穴",
         "",
         ""
-      ],
-      [
-        "terdapat",
-        3,
-        0,
-        "",
-        "",
-        "有；存在；（在某处）可以找到",
-        "dapat",
-        "得到；能"
       ]
     ],
     "focus": [
