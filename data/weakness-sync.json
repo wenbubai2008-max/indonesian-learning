@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-27T08:57:23.987Z",
+  "updated_at": "2026-10-27T13:28:58.983Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -7554,13 +7554,13 @@
     "angka": {
       "word": "angka",
       "status": "active",
-      "updated_at": "2026-10-25T13:11:31.196Z",
+      "updated_at": "2026-10-27T13:28:36.631Z",
       "display": "angka",
       "cn": "数字",
       "root": "angka",
       "root_cn": "数字",
       "last_wrong": "2026-10-25T13:11:31.122Z",
-      "last_review": "2026-10-25T13:11:31.122Z",
+      "last_review": "2026-10-27T13:28:36.574Z",
       "source": "课程自检",
       "source_date": "2026-10-25",
       "session": "18:00",
@@ -7569,7 +7569,7 @@
         "lesson_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "berlaku": {
       "word": "berlaku",
@@ -19372,15 +19372,16 @@
     "kurir": {
       "word": "kurir",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:05.651Z",
+      "updated_at": "2026-10-27T13:28:40.659Z",
       "display": "kurir",
       "cn": "快递员",
       "root": "kurir",
+      "last_review": "2026-10-27T13:28:40.599Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "mengelilingi": {
       "word": "mengelilingi",
@@ -22118,15 +22119,16 @@
     "tanggung jawab": {
       "word": "tanggung jawab",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:12.148Z",
+      "updated_at": "2026-10-27T13:28:48.281Z",
       "display": "tanggung jawab",
       "cn": "责任",
       "root": "tanggung jawab",
+      "last_review": "2026-10-27T13:28:48.230Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "atasan": {
       "word": "atasan",
@@ -24013,15 +24015,16 @@
     "lancar": {
       "word": "lancar",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:16.945Z",
+      "updated_at": "2026-10-27T13:28:45.002Z",
       "display": "lancar",
       "cn": "顺畅；流畅",
       "root": "lancar",
+      "last_review": "2026-10-27T13:28:44.947Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "jam buka": {
       "word": "jam buka",
