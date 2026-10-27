@@ -1,0 +1,826 @@
+{
+ "version": 1,
+ "title": "晚课深讲 · 10月27日",
+ "intro": [
+  "今晚的课叫《布朗尼在路上碎了，快递员还是新人》。Rina 在家开网店卖布朗尼，新来的快递员迟到后骑得太快，蛋糕全碎了；她没有投诉，而是自己承担，还重新安排了取件时间。",
+  "今晚只讲 5 样：[[tanggung jawab]] · [[mengenali]] · [[nggak tega]] · [[Sejak itu, …]] · [[… aja, nggak usah …]]"
+ ],
+ "items": [
+  {
+   "key": "tanggung",
+   "name": "tanggung jawab",
+   "head": "tanggung jawab · 责任",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Dia merasa ini juga tanggung jawabnya sebagai penjual, jadi dia mengirim kotak pengganti gratis.",
+      "cn": "她觉得这也是自己作为卖家的责任，于是免费寄了一盒新的。"
+     }
+    ],
+    "ask": "Rina 为什么自己免费再寄一盒？",
+    "options": [
+     {
+      "t": "她觉得这也是卖家的责任",
+      "reply": [
+       "对。tanggung jawabnya sebagai penjual = 她作为卖家的责任。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "快递公司让她这么做",
+      "reply": [
+       "不是。是她自己觉得该负责，快递员也没有赔。"
+      ]
+     },
+     {
+      "t": "顾客威胁要差评",
+      "reply": [
+       "不是。课文没有提差评，是 Rina 自己觉得有责任。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{tanggung jawab}} 是名词“责任”：{{tanggung jawab saya}}。加 ber- 变动词/形容词：{{bertanggung jawab}}（负责；有责任心），“对……负责”接 atas：{{bertanggung jawab atas kerusakan}}。"
+   ],
+   "simple": [
+    "[[tanggung jawab]] = 责任（名词）；bertanggung jawab = 负责"
+   ],
+   "asks": [
+    {
+     "label": "tanggung jawab 和 bertanggung jawab 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Itu tanggung jawab saya.",
+         "那是我的责任（名词）"
+        ],
+        [
+         "Saya yang bertanggung jawab.",
+         "由我负责（动词）"
+        ],
+        [
+         "Dia orang yang bertanggung jawab.",
+         "他是个有责任心的人（形容词）"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Kalau laptop kantor hilang, siapa yang ___?]]",
+     "（如果公司的电脑丢了，谁来负责？）"
+    ],
+    "options": [
+     {
+      "t": "bertanggung jawab",
+      "v": "right",
+      "why": [
+       "对。yang 后面要动作“负责”，用 bertanggung jawab。"
+      ]
+     },
+     {
+      "t": "tanggung jawab",
+      "v": "wrong",
+      "why": [
+       "这里缺动词：tanggung jawab 是名词，要说 tanggung jawab siapa?"
+      ]
+     },
+     {
+      "t": "menanggung jawab",
+      "v": "wrong",
+      "why": [
+       "没有这种说法。要么说 bertanggung jawab，要么只用 menanggung（承担），如 menanggung biaya。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟同事说：“这是我们大家的责任。”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Ini tanggung jawab kita semua.",
+       "v": "right",
+       "why": [
+        "对。名词 tanggung jawab 后面直接接 kita semua。"
+       ]
+      },
+      {
+       "t": "Ini kewajiban kita semua.",
+       "v": "ok",
+       "why": [
+        "也可以，kewajiban 偏“义务、该做的事”。"
+       ]
+      },
+      {
+       "t": "Ini bertanggung jawab kita semua.",
+       "v": "wrong",
+       "why": [
+        "ber- 形式是动词，不能接 kita 当“我们的”。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "顾客说包裹坏了，你是卖家：“这是我的责任，我会再寄一个。”先说出声。"
+    ],
+    "kw": "ini tanggung jawab saya · saya kirim lagi",
+    "skel": "Maaf, Kak, ini ____ saya. Saya ____ lagi, ya.",
+    "ref": "Maaf, Kak, ini tanggung jawab saya. Saya kirim lagi, ya."
+   },
+   "recall": {
+    "prompt": [
+     "家里请客，你跟弟弟分工：“洗碗是你的责任。”"
+    ],
+    "kw": "cuci piring · tanggung jawab kamu",
+    "skel": "Nanti ____ piring itu ____ kamu, ya.",
+    "ref": "Nanti cuci piring itu tanggung jawab kamu, ya."
+   },
+   "final": {
+    "cn": "（对上司）“这个项目由我负责。”",
+    "ref": "Proyek ini saya yang bertanggung jawab, Pak."
+   },
+   "remind": "tanggung jawab = 责任（名词）；bertanggung jawab (atas …) = 负责。"
+  },
+  {
+   "key": "kenali",
+   "name": "mengenali",
+   "head": "mengenali · 认出；辨认出",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Rina",
+      "id": "Iya, Mas. Browniesnya ancur semua. Pelanggannya sampai nggak ngenalin kuenya.",
+      "cn": "是啊。布朗尼全碎了，顾客都快认不出那是蛋糕了。"
+     }
+    ],
+    "ask": "nggak ngenalin kuenya 是什么意思？",
+    "options": [
+     {
+      "t": "认不出那是蛋糕",
+      "reply": [
+       "对。ngenalin 在这里是 mengenali：凭样子认出来。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "不认识卖蛋糕的人",
+      "reply": [
+       "不是。说的是蛋糕碎得看不出原样。"
+      ]
+     },
+     {
+      "t": "没有介绍这款蛋糕",
+      "reply": [
+       "不是。ngenalin 也能是“介绍”，但这里讲的是认不出来，要看上下文。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{mengenali}} = 凭特征认出来，是一次辨认：{{hampir tidak mengenali dia}}（差点没认出他）、{{mengenali suaranya}}。{{mengenal}} 是长期“认识、了解”：{{Saya mengenal dia sejak SD}}。"
+   ],
+   "simple": [
+    "[[mengenali]] = 认出来；mengenal = 认识"
+   ],
+   "asks": [
+    {
+     "label": "mengenal、mengenali、mengenalkan 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Saya mengenal Pak Budi.",
+         "我认识 Budi 先生（长期）"
+        ],
+        [
+         "Saya hampir tidak mengenali beliau.",
+         "我差点没认出他（一次）"
+        ],
+        [
+         "Saya mengenalkan teman ke ibu.",
+         "我把朋友介绍给妈妈"
+        ]
+       ]
+      },
+      "变化很大认不出来，口语还常说 pangling。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Rumahnya sudah direnovasi, saya hampir tidak ___ rumah itu.]]",
+     "（房子翻新过了，我差点没认出那栋房子。）"
+    ],
+    "options": [
+     {
+      "t": "mengenali",
+      "v": "right",
+      "why": [
+       "对。凭样子认出来：mengenali。"
+      ]
+     },
+     {
+      "t": "mengenal",
+      "v": "wrong",
+      "why": [
+       "mengenal 是长期认识、了解，不说“差点没认出”。"
+      ]
+     },
+     {
+      "t": "mengenalkan",
+      "v": "wrong",
+      "why": [
+       "mengenalkan 是介绍，意思不对。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。老同学见到你说：“我都快认不出你了！”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Aku hampir nggak ngenalin kamu!",
+       "v": "right",
+       "why": [
+        "对。口语 ngenalin = mengenali。"
+       ]
+      },
+      {
+       "t": "Aku sampai pangling!",
+       "v": "ok",
+       "why": [
+        "也可以，pangling 专说对方变化大、一下认不出。"
+       ]
+      },
+      {
+       "t": "Aku hampir nggak kenalin kamu!",
+       "v": "wrong",
+       "why": [
+        "kenalin 是“介绍”，意思不对。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟朋友说：“你剪了头发，我差点没认出你。”先说出声。"
+    ],
+    "kw": "potong rambut · hampir nggak ngenalin",
+    "skel": "Kamu potong rambut, ya? Aku ____ nggak ____ kamu.",
+    "ref": "Kamu potong rambut, ya? Aku hampir nggak ngenalin kamu."
+   },
+   "recall": {
+    "prompt": [
+     "打电话时你跟妈妈说：“我一听声音就认出是你了。”（标准形）"
+    ],
+    "kw": "langsung mengenali · suara Ibu",
+    "skel": "Saya langsung ____ suara ____.",
+    "ref": "Saya langsung mengenali suara Ibu."
+   },
+   "final": {
+    "cn": "（对同事）“监控很模糊，很难认出那个人。”",
+    "ref": "CCTV-nya buram, jadi orangnya sulit dikenali."
+   },
+   "remind": "mengenali = 认出来（一次）；mengenal = 认识（长期）；口语 ngenalin。"
+  },
+  {
+   "key": "tega",
+   "name": "nggak tega",
+   "head": "nggak tega · 不忍心",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Rina",
+      "id": "Nggak, kok. Saya nggak tega, Mas kan masih baru.",
+      "cn": "没有啦。我不忍心，你毕竟还是新人嘛。"
+     }
+    ],
+    "ask": "Rina 为什么没向快递公司投诉？",
+    "options": [
+     {
+      "t": "她心软，快递员还是新人",
+      "reply": [
+       "对。nggak tega = 心软，下不了手。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "她不敢得罪快递公司",
+      "reply": [
+       "不是。“不敢”是 nggak berani，nggak tega 是心软。"
+      ]
+     },
+     {
+      "t": "她觉得不是快递员的错",
+      "reply": [
+       "不完全对。快递员确实开太快了，她只是不忍心。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{nggak tega}} 是因为同情、心软而“下不了手”，后面直接接动词：{{nggak tega bilang}}、{{nggak tega marahin}}。“不敢”是 {{nggak berani}}。单用 {{tega}} 是“狠心”：{{Kok kamu tega sih?}}"
+   ],
+   "simple": [
+    "[[nggak tega]] = 不忍心（心软）；nggak berani = 不敢"
+   ],
+   "asks": [
+    {
+     "label": "nggak tega 和 nggak berani 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Aku nggak tega marahin dia.",
+         "心软，骂不下去"
+        ],
+        [
+         "Aku nggak berani marahin dia.",
+         "怕他，不敢骂"
+        ]
+       ]
+      },
+      "正式场合说 tidak tega 或 tidak sampai hati。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Anaknya nangis terus, aku ___ ninggalin dia sendirian.]]",
+     "（孩子一直哭，我不忍心把他一个人留下。）"
+    ],
+    "options": [
+     {
+      "t": "nggak tega",
+      "v": "right",
+      "why": [
+       "对。心软，舍不得留下他。"
+      ]
+     },
+     {
+      "t": "nggak berani",
+      "v": "wrong",
+      "why": [
+       "nggak berani 是因为害怕而不敢；这里是看孩子哭、心软舍不得，所以用 nggak tega。"
+      ]
+     },
+     {
+      "t": "tega",
+      "v": "wrong",
+      "why": [
+       "tega 是“狠心”，意思反了。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟朋友说：“我不忍心告诉她这个坏消息。”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Aku nggak tega bilang ke dia.",
+       "v": "right",
+       "why": [
+        "对。nggak tega + bilang。"
+       ]
+      },
+      {
+       "t": "Aku nggak sampai hati bilang ke dia.",
+       "v": "ok",
+       "why": [
+        "也可以，sampai hati 比较书面、文雅。"
+       ]
+      },
+      {
+       "t": "Aku nggak tega ke dia bilang.",
+       "v": "wrong",
+       "why": [
+        "语序不对，动词 bilang 紧跟 nggak tega。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟朋友说：“我不忍心扔掉这只旧猫的玩具。”先说出声。"
+    ],
+    "kw": "nggak tega · ngebuang · mainan kucing",
+    "skel": "Aku ____ ngebuang mainan ____ yang lama ini.",
+    "ref": "Aku nggak tega ngebuang mainan kucing yang lama ini."
+   },
+   "recall": {
+    "prompt": [
+     "同事迟到被老板骂，你跟另一个同事说：“我不忍心看他被骂。”"
+    ],
+    "kw": "nggak tega · lihat dia dimarahin",
+    "skel": "Aku nggak tega ____ dia ____.",
+    "ref": "Aku nggak tega lihat dia dimarahin."
+   },
+   "final": {
+    "cn": "（对妈妈）“我不忍心拒绝邻居的请求。”",
+    "ref": "Aku nggak tega nolak permintaan tetangga, Ma."
+   },
+   "remind": "nggak tega + 动词 = 不忍心做；nggak berani = 不敢。"
+  },
+  {
+   "key": "sejak",
+   "name": "Sejak itu, …",
+   "head": "Sejak itu, … · 从那以后，……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Sejak itu, Rina mengatur jadwal pengambilan yang lebih teratur: kurir datang jam sembilan, sebelum mengambil paket lain.",
+      "cn": "从那以后，Rina 把取件时间安排得更有规律：快递员九点来，先取她的，再去取别家的包裹。"
+     }
+    ],
+    "ask": "Sejak itu 指的是从什么时候开始？",
+    "options": [
+     {
+      "t": "从布朗尼碎掉那次以后",
+      "reply": [
+       "对。Sejak itu 指前面说过的那件事之后。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "从 Rina 开店那天起",
+      "reply": [
+       "不是。itu 指的是前面刚讲的事故。"
+      ]
+     },
+     {
+      "t": "从明年开始",
+      "reply": [
+       "不是。Sejak 往回看，从过去某个点一直到现在。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "句型：**Sejak itu, + 之后一直成立的变化**。{{itu}} 指前面讲过的事。也可以换成具体时间：{{Sejak kejadian itu, …}}、{{Sejak pindah ke Depok, …}}。"
+   ],
+   "simple": [
+    "[[Sejak itu, …]] = 从那以后，……"
+   ],
+   "asks": [
+    {
+     "label": "再看几个例子",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Sejak itu, aku selalu bawa payung.",
+         "从那以后我总带伞"
+        ],
+        [
+         "Sejak kejadian itu, dia lebih hati-hati.",
+         "那件事之后他更小心了"
+        ],
+        [
+         "Sejak pindah kerja, aku pulang lebih malam.",
+         "换工作后我回家更晚了"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Dompetku pernah hilang di bus. ___, aku selalu simpan dompet di tas depan.]]",
+     "（我的钱包在公交上丢过。从那以后，我总把钱包放在前面的包里。）"
+    ],
+    "options": [
+     {
+      "t": "Sejak itu",
+      "v": "right",
+      "why": [
+       "对。从那次以后一直这样做。"
+      ]
+     },
+     {
+      "t": "Sejak kejadian itu",
+      "v": "ok",
+      "why": [
+       "也可以，把“那件事”说得更明白。"
+      ]
+     },
+     {
+      "t": "Sebelum itu",
+      "v": "wrong",
+      "why": [
+       "Sebelum itu 是“在那之前”，时间反了。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你说：“我去年生了一场病。从那以后，我每天运动。”后半句最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Sejak itu, aku olahraga tiap hari.",
+       "v": "right",
+       "why": [
+        "对。Sejak itu + 之后养成的习惯。"
+       ]
+      },
+      {
+       "t": "Sejak itu, aku akan olahraga tiap hari.",
+       "v": "wrong",
+       "why": [
+        "已经在做的习惯不用 akan（将要）。"
+       ]
+      },
+      {
+       "t": "Itu sejak, aku olahraga tiap hari.",
+       "v": "wrong",
+       "why": [
+        "语序不对，Sejak 在前。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟朋友说：“我上次差点迟到。从那以后，我总是提前出门。”先说出声。"
+    ],
+    "kw": "hampir telat · sejak itu · berangkat lebih awal",
+    "skel": "Aku pernah hampir telat. ____, aku selalu berangkat lebih ____.",
+    "ref": "Aku pernah hampir telat. Sejak itu, aku selalu berangkat lebih awal."
+   },
+   "recall": {
+    "prompt": [
+     "你跟同事说：“新经理来了以后，开会都准时开始了。”"
+    ],
+    "kw": "sejak · manajer baru · tepat waktu",
+    "skel": "____ ada manajer baru, pertemuan selalu mulai ____ waktu.",
+    "ref": "Sejak ada manajer baru, pertemuan selalu mulai tepat waktu."
+   },
+   "final": {
+    "cn": "（对朋友）“我被骗过一次。从那以后，我不再网上转账给陌生人。”",
+    "ref": "Aku pernah ditipu sekali. Sejak itu, aku nggak pernah transfer ke orang asing lagi."
+   },
+   "remind": "Sejak itu, … = 从那以后，……（后面说一直持续的变化）"
+  },
+  {
+   "key": "aja",
+   "name": "… aja, nggak usah …",
+   "head": "… aja, nggak usah … · ……就好，不用……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Rina",
+      "id": "Nah, gitu. Pelan-pelan aja, nggak usah ngebut.",
+      "cn": "对，就是这样。慢慢骑就好，不用开那么快。"
+     }
+    ],
+    "ask": "Rina 最后对快递员说了什么？",
+    "options": [
+     {
+      "t": "慢慢骑就好，不用开快",
+      "reply": [
+       "对。前半句给建议，后半句说不必做的事。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "以后不用来取件了",
+      "reply": [
+       "不是。她让他明天九点来。"
+      ]
+     },
+     {
+      "t": "让他骑快一点",
+      "reply": [
+       "反了。nggak usah ngebut = 不用开快。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "句型：**做法 + aja, nggak usah + 不必做的事**。{{aja}}（= saja）让建议听起来轻松，{{nggak usah}} = 不用、不必。正式说法：{{… saja, tidak perlu …}}。"
+   ],
+   "simple": [
+    "[[… aja, nggak usah …]] = ……就好，不用……"
+   ],
+   "asks": [
+    {
+     "label": "再看几个例子",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Naik ojol aja, nggak usah bawa mobil.",
+         "坐摩的就行，不用开车"
+        ],
+        [
+         "Transfer aja, nggak usah tunai.",
+         "转账就好，不用现金"
+        ],
+        [
+         "Duduk aja, nggak usah bantu.",
+         "坐着就好，不用帮忙"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Hujan deras. Pesan makanan ___, nggak usah keluar.]]",
+     "（雨很大。点外卖就好，不用出门。）"
+    ],
+    "options": [
+     {
+      "t": "aja",
+      "v": "right",
+      "why": [
+       "对。做法 + aja，后面接 nggak usah。"
+      ]
+     },
+     {
+      "t": "saja",
+      "v": "ok",
+      "why": [
+       "也可以，标准形，口语对话里 aja 更自然。"
+      ]
+     },
+     {
+      "t": "juga",
+      "v": "wrong",
+      "why": [
+       "juga 是“也”，意思不对。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。朋友要帮你搬家，你说：“你拿小箱子就好，不用搬柜子。”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Kamu bawa kardus kecil aja, nggak usah angkut lemari.",
+       "v": "right",
+       "why": [
+        "对。前面给做法，后面说不必做的事。"
+       ]
+      },
+      {
+       "t": "Kamu bawa kardus kecil saja, tidak perlu angkut lemari.",
+       "v": "ok",
+       "why": [
+        "也可以，是标准说法，稍微正式。"
+       ]
+      },
+      {
+       "t": "Kamu nggak usah aja bawa kardus kecil.",
+       "v": "wrong",
+       "why": [
+        "顺序乱了，意思变成“不用拿小箱子”。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟朋友说：“打电话就好，不用专门过来。”先说出声。"
+    ],
+    "kw": "telepon aja · nggak usah datang",
+    "skel": "____ aja, ____ datang ke sini.",
+    "ref": "Telepon aja, nggak usah datang ke sini."
+   },
+   "recall": {
+    "prompt": [
+     "朋友要请你吃饭，你说：“喝杯咖啡就好，不用吃大餐。”"
+    ],
+    "kw": "ngopi aja · nggak usah makan besar",
+    "skel": "Kita ngopi ____, nggak usah ____ besar.",
+    "ref": "Kita ngopi aja, nggak usah makan besar."
+   },
+   "final": {
+    "cn": "（对妹妹）“穿运动鞋就好，不用穿高跟鞋。”",
+    "ref": "Pakai sepatu olahraga aja, nggak usah pakai sepatu hak tinggi."
+   },
+   "remind": "… aja, nggak usah … = ……就好，不用……"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "今晚另外两个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+  ],
+  "words": [
+   "kurir",
+   "lancar"
+  ]
+ },
+ "reading": [
+  {
+   "key": "akhiri",
+   "sentence": "Rina sempat ingin mengakhiri kerja sama dengan jasa kurir itu, tetapi tidak tega karena kurirnya masih baru dan bisa dimarahi atasannya.",
+   "cn": "Rina 一度想终止和这家快递公司的合作，可她不忍心，因为快递员还是新人，可能会被上司骂。",
+   "chunks": [
+    [
+     "Rina sempat ingin mengakhiri kerja sama dengan jasa kurir itu,",
+     "Rina 一度想终止和这家快递公司的合作",
+     "sempat ingin = 一度想（后来没做）"
+    ],
+    [
+     "tetapi tidak tega",
+     "可是不忍心",
+     "主语还是 Rina，省略了"
+    ],
+    [
+     "karena kurirnya masih baru dan bisa dimarahi atasannya.",
+     "因为快递员还是新人，可能会被上司骂",
+     "dimarahi = 被骂"
+    ]
+   ],
+   "steal": [
+    "值得借的是 [[sempat ingin …, tetapi …]]：说一度想做、最后没做。{{Aku sempat ingin pindah kos, tetapi harganya terlalu mahal.}}（我一度想换个出租屋，可是太贵了。）"
+   ]
+  }
+ ],
+ "dialogue": {
+  "head": "对话 · 你来演 Rina",
+  "intro": [
+   "你演 Rina，我演快递员 Dimas。每一轮先看 Rina 想说什么，看中文先说。"
+  ],
+  "turns": [
+   {
+    "line": 3,
+    "intent": "Rina 说没投诉：她不忍心，对方还是新人。",
+    "kw": "nggak, kok · nggak tega · masih baru",
+    "skel": "Nggak, kok. Saya ____, Mas kan masih ____."
+   },
+   {
+    "line": 5,
+    "intent": "Rina 说不用赔：这是卖家的责任，她自己贴钱。",
+    "kw": "nggak usah · tanggung jawab · nombok",
+    "skel": "Nggak usah. Itu ____ saya sebagai penjual, biar saya aja yang ____."
+   },
+   {
+    "line": 9,
+    "intent": "Rina 叮嘱：慢慢骑就好，不用开快。",
+    "kw": "pelan-pelan aja · nggak usah ngebut",
+    "skel": "Nah, gitu. Pelan-pelan ____, nggak usah ____."
+   }
+  ],
+  "tail": [
+   "Rina 对快递员用 saya / Mas，句子里有 nggak、aja、udah 这些口语形；写消息给顾客时换成 tidak、saja、sudah。"
+  ]
+ },
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今晚的改写题，缩短版）：跟朋友说同学聚会上你差点没认出一个老同学，聚会最后怎么结束的。"
+   ],
+   "kw": "nggak ngenalin dia · panitia mengakhiri acaranya",
+   "skel": "Awalnya aku nggak ____ dia. Panitia ____ acaranya dengan foto bareng.",
+   "ref": "Awalnya aku nggak ngenalin dia. Panitia mengakhiri acaranya dengan foto bareng.",
+   "notes": [
+    "整页的改写题有更完整的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
