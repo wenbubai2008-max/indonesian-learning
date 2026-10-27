@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-27T13:28:58.983Z",
+  "updated_at": "2026-10-27T14:03:30.057Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -21011,8 +21011,10 @@
     "lalu": {
       "word": "lalu",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:01:09.293Z",
+      "updated_at": "2026-10-27T14:03:15.799Z",
       "display": "lalu",
+      "cn": "然后；过去",
+      "root": "lalu",
       "last_review": "2026-09-12T16:57:31.460Z",
       "last_mastered": "2026-09-12T16:57:31.460Z",
       "reasons": [],
