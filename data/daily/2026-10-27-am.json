@@ -1,0 +1,339 @@
+{
+  "date": "2026-10-27",
+  "session": "am",
+  "time": "08:00",
+  "day": 67,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Kakek Penulis Masuk Gua · 当作家的爷爷进山洞",
+  "new_words": [
+    "mencampur",
+    "penulis",
+    "usia",
+    "alami",
+    "terkadang",
+    "antara",
+    "hukum",
+    "melalui",
+    "gua",
+    "terdapat"
+  ],
+  "vocab": [
+    {
+      "word": "mencampur",
+      "display": "mencampur",
+      "audio_text": "mencampur",
+      "cn": "混合；把……掺在一起",
+      "en": "to mix; to combine",
+      "root": "campur",
+      "root_cn": "混合；掺杂",
+      "formation": "meN- + campur → mencampur（c 前用 men-）。常见搭配：mencampur A dengan B（把 A 和 B 混在一起）、mencampur bahan-bahan（把材料混合）。同词根：bercampur（混在一起，不及物）、campuran（混合物）、campur aduk（乱七八糟混在一起）。",
+      "example": "Ibu mencampur tepung, gula, dan telur, lalu mengaduknya pelan-pelan sampai rata.",
+      "example_cn": "妈妈把面粉、糖和鸡蛋混在一起，然后慢慢搅拌，直到搅匀。",
+      "synonym_note": "mencampur 是“把几样东西合到一起”；mengaduk 是“搅拌”这个动作，常常先 mencampur 再 mengaduk。口语说法：日常说菜谱、做饭时多用被动 dicampur（Gulanya dicampur aja.），朋友之间也说 campurin / nyampur；写说明书、正式场合用 mencampur。",
+      "is_oral_new": false
+    },
+    {
+      "word": "penulis",
+      "display": "penulis",
+      "audio_text": "penulis",
+      "cn": "作家；作者；写的人",
+      "en": "writer; author",
+      "root": "tulis",
+      "root_cn": "写",
+      "formation": "peN- + tulis → penulis（t 脱落，变 pen-）。同类构词：menulis（写）、tulisan（写的东西、字）。常见搭配：penulis buku（书的作者）、penulis novel（小说家）、penulis lagu（词曲作者）。",
+      "example": "Penulis favorit saya baru saja menerbitkan buku tentang suasana Jakarta tahun 80-an.",
+      "example_cn": "我最喜欢的作家刚出版了一本写 80 年代雅加达氛围的书。",
+      "synonym_note": "penulis 是最常用的“作者、写作的人”，不限文体；pengarang 也指作者，偏文学、偏书面；wartawan 是记者，写新闻的人。penulis 也可以指“写这段文字的人”：menurut penulis（笔者认为）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "usia",
+      "display": "usia",
+      "audio_text": "usia",
+      "cn": "年龄；年纪",
+      "en": "age",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯名词。常见搭配：berusia 40 tahun（40 岁）、pada usia / di usia 20 tahun（在 20 岁的时候）、usia lanjut（高龄）、usia muda（年纪轻轻）。",
+      "example": "Di usia 40 tahun, dia memutuskan berhenti kerja kantoran dan membuka usaha sendiri. Dia yakin keputusannya benar.",
+      "example_cn": "40 岁那年，他决定辞掉坐办公室的工作，自己做生意。他确信自己的决定是对的。",
+      "synonym_note": "usia 和 umur 意思一样。日常聊天问年龄多说 umur：Umurnya berapa?；usia 听起来更礼貌、更书面，新闻、表格、介绍长辈时常用：Beliau berusia 72 tahun.。两个在大多数句子里都能互换。",
+      "is_oral_new": false
+    },
+    {
+      "word": "alami",
+      "display": "alami",
+      "audio_text": "alami",
+      "cn": "天然的；自然的",
+      "en": "natural",
+      "root": "alam",
+      "root_cn": "自然；大自然",
+      "formation": "alam（自然界）→ alami（自然的、天然的），放在名词后面：bahan alami（天然材料）、cahaya alami（自然光）、gua alami（天然山洞）、secara alami（自然地、天然地）。",
+      "example": "Sabun ini dibuat dari bahan alami, jadi aman untuk kulit bayi.",
+      "example_cn": "这块香皂是用天然原料做的，所以对婴儿皮肤是安全的。",
+      "synonym_note": "注意同形词：mengalami（经历）的词根也写作 alami，Saya pernah mengalami hal yang sama.（我也经历过同样的事）。形容词 alami 只放在名词后，意思是“天然的”；alam 是名词“大自然”：pemandangan alam（自然风光）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "terkadang",
+      "display": "terkadang",
+      "audio_text": "terkadang",
+      "cn": "有时；有时候",
+      "en": "sometimes",
+      "root": "kadang",
+      "root_cn": "有时",
+      "formation": "ter- + kadang → terkadang，副词，多放在句首或主语后：Terkadang saya…… / Saya terkadang……。同义形式：kadang、kadang-kadang。",
+      "example": "Saya tahu seharusnya jam tidur saya teratur, tapi terkadang saya masih begadang sampai jam dua.",
+      "example_cn": "我知道自己本该作息规律，可有时候我还是熬夜到两点。",
+      "synonym_note": "terkadang、kadang-kadang、kadang 意思相同；terkadang 稍微书面一点，写文章、讲故事常用。口语说法：聊天里最常说 kadang（Kadang aku males masak.），kadang-kadang 也很常见。",
+      "is_oral_new": false
+    },
+    {
+      "word": "antara",
+      "display": "antara",
+      "audio_text": "antara",
+      "cn": "在……之间；……之间",
+      "en": "between; among",
+      "root": "",
+      "root_cn": "",
+      "formation": "常见搭配：di antara A dan B（在 A 和 B 之间）、antara A dan B（A 和 B 之间）、hubungan antara……（……之间的关系）、memilih antara A atau B 也常听到（在 A 和 B 之间选）、antara lain（其中包括、例如）。",
+      "example": "Kantor saya ada di antara bank dan apotek, jadi gampang dicari.",
+      "example_cn": "我的办公室在银行和药店中间，所以很好找。",
+      "synonym_note": "antara 讲“两者或几者之间”；di tengah 是“在正中间、在……当中”：di tengah jalan（路中间）。“A 和 B 之间”最常说 antara A dan B。",
+      "is_oral_new": false
+    },
+    {
+      "word": "hukum",
+      "display": "hukum",
+      "audio_text": "hukum",
+      "cn": "法律；法",
+      "en": "law",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯名词。常见搭配：melanggar hukum（违法）、menurut hukum（依法、按法律）、hukum adat（习惯法）、ahli hukum（法律专家）、fakultas hukum（法学院）。同词根：hukuman（惩罚、刑罚）、menghukum（惩罚某人）。",
+      "example": "Mengambil barang orang lain tanpa izin tetap melanggar hukum, seberapa pun murah harganya.",
+      "example_cn": "不经允许拿别人的东西，不管多便宜，都是违法的。",
+      "synonym_note": "hukum 是法律本身；aturan 是一般的规定、规矩（家规、公司规定都可以）；undang-undang 是正式颁布的法律条文。hukuman 是“惩罚”，不是“法律”：Dia dapat hukuman dari guru.（他被老师罚了）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "melalui",
+      "display": "melalui",
+      "audio_text": "melalui",
+      "cn": "通过；经由；从……经过",
+      "en": "through; via",
+      "root": "lalu",
+      "root_cn": "经过；过去",
+      "formation": "meN- + lalu + -i → melalui。两种用法：① 路线“经过”：melalui jalan tol（走收费公路）、melalui jalan kecil（从小路走）；② 方式“通过”：melalui aplikasi（通过应用）、melalui email、melalui teman（通过朋友）。",
+      "example": "Untuk orang tua, pendaftaran melalui aplikasi kadang terasa ribet.",
+      "example_cn": "对老人来说，通过应用报名有时会觉得很麻烦。",
+      "synonym_note": "melalui 偏书面，公告、新闻常用：Pendaftaran dilakukan melalui situs resmi.。口语说法：日常最常说 lewat：lewat aplikasi、lewat jalan tol、lewat teman；和朋友聊天用 lewat，写通知、正式场合用 melalui。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gua",
+      "display": "gua",
+      "audio_text": "gua",
+      "cn": "山洞；洞穴",
+      "en": "cave",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯名词，也写作 goa（景点名常见：Goa Jomblang、Goa Pindul）。常见搭配：masuk ke gua（进山洞）、mulut gua（洞口）、di dalam gua（在洞里）、gua alami（天然洞穴）。",
+      "example": "Di dalam gua, perhatikan setiap langkah karena batunya licin.",
+      "example_cn": "在山洞里，每一步都要小心，因为石头很滑。",
+      "synonym_note": "同音异义：雅加达口语里 gua 也是“我”（= gue，和 lo 配对，非常随便，只在熟人之间用）。听的时候看上下文：Gua capek banget.（我累死了）≠ Guanya gelap.（山洞很黑）。“山洞”的 gua 在任何场合都可以用。",
+      "is_oral_new": false
+    },
+    {
+      "word": "terdapat",
+      "display": "terdapat",
+      "audio_text": "terdapat",
+      "cn": "有；存在；（在某处）可以找到",
+      "en": "there is / there are (formal)",
+      "root": "dapat",
+      "root_cn": "得到；能",
+      "formation": "ter- + dapat → terdapat，“在某处有、存在”，常用格式：Di + 地点 + terdapat + 东西（Di lantai dua terdapat musala.），或 东西 + terdapat di + 地点。",
+      "example": "Di lantai dua mal ini terdapat musala dan ruang menyusui.",
+      "example_cn": "这家商场二楼有祈祷室和哺乳室。",
+      "synonym_note": "terdapat 是书面的“有”，多见于说明牌、介绍、新闻、课文；日常说话几乎都用 ada：Di lantai dua ada musala.。terdapat 只表示“某处存在某物”，不表示“拥有”：“我有车”只能说 Saya punya mobil。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "kebentur",
+    "menyembunyikan",
+    "ketuker",
+    "majuin",
+    "mundurin"
+  ],
+  "sentences": [
+    {
+      "text": "Jangan mencampur sampah plastik dengan sisa makanan, ya. Pisahkan di dua tempat sampah yang berbeda.",
+      "cn": "别把塑料垃圾和剩饭剩菜混在一起哦。分开放在两个不同的垃圾桶里。"
+    },
+    {
+      "text": "Eh, sandal kita ketuker, nih! Yang biru itu punyaku. Pantesan dari tadi kerasa kegedean.",
+      "cn": "哎，我们的拖鞋拿错了！蓝色那双是我的。怪不得我一直觉得太大。（ketuker = tertukar，punyaku = punya saya，pantesan = pantas saja，kerasa = terasa，kegedean = kebesaran）"
+    },
+    {
+      "text": "Jadwal futsal Jumat dimundurin sejam, tapi yang Minggu malah dimajuin ke jam tujuh pagi.",
+      "cn": "周五的足球时间往后推了一个小时，可周日那场反而提前到早上七点了。（dimundurin = dimundurkan，dimajuin = dimajukan）"
+    },
+    {
+      "text": "Lowongan kerja itu saya dapat melalui teman lama, bukan dari internet.",
+      "cn": "那个招聘信息我是通过一位老朋友得到的，不是从网上看到的。"
+    },
+    {
+      "text": "Dia berusaha menyembunyikan rasa cemburunya, tapi wajahnya tidak bisa bohong.",
+      "cn": "他努力想掩饰自己的醋意，可脸上的表情骗不了人。"
+    }
+  ],
+  "reading": {
+    "text": "Kakek Hasan adalah penulis buku perjalanan. Walaupun usianya sudah 72 tahun, Sabtu lalu dia mengajak cucunya, Dina, ke sebuah gua alami di dekat Bogor untuk bahan buku barunya. Untuk sampai ke gua itu, mereka harus berjalan kaki melalui jalan kecil di antara sawah. Di dalam gua terdapat kolam kecil dan ratusan kelelawar. Suasananya gelap dan dingin. Terkadang air menetes dari atas, jadi mereka berjalan pelan-pelan. Di bagian yang sempit, Dina harus jongkok supaya kepalanya tidak terbentur. Pemandu mengingatkan bahwa menurut hukum, batu dari dalam gua tidak boleh dibawa pulang. Kakek mendengarkan penjelasannya sambil mencatat. Katanya, cerita hari itu akan masuk ke bab pertama bukunya.",
+    "cn": "哈桑爷爷是一位写旅行书的作家。虽然他已经 72 岁了，上星期六他还是带着孙女迪娜去了茂物附近的一个天然山洞，为新书收集素材。要到那个山洞，他们得从稻田之间的一条小路走过去。洞里有一个小水池和几百只蝙蝠。里面又黑又冷。有时水会从上面滴下来，所以他们走得很慢。在狭窄的地方，迪娜得蹲下来，免得头撞到石头。向导提醒说，按照法律，洞里的石头不能带回家。爷爷一边听讲解一边做笔记。他说，那天的经历会写进新书的第一章。"
+  },
+  "quiz": [
+    {
+      "question": "Dina cerita ke ibunya: \"Bu, guanya sempit banget. Aku lupa nunduk, jadi kepalaku ___ batu. Untung nggak sampai berdarah.\" 空格里哪个最自然？",
+      "options": [
+        "ketabrak",
+        "kejatuhan",
+        "ketuker",
+        "kebentur"
+      ],
+      "answer_index": 3,
+      "answer": "kebentur",
+      "explain": "头撞到了不动的硬东西（石头、门框、柜角），口语说 kebentur（正式说 terbentur）。ketabrak 多指被车或跑动的人撞到；kejatuhan 是被掉下来的东西砸到（kejatuhan batu 是石头从上面掉下来砸中），可这里是 Dina 自己没低头撞上去；ketuker 是东西拿错、弄混了，意思不对。"
+    },
+    {
+      "question": "Di papan informasi di depan gua tertulis: \"Di dalam gua ini ___ dua kolam kecil dan ratusan kelelawar.\" 空格里哪个最自然？",
+      "options": [
+        "terdapat",
+        "mendapat",
+        "didapat",
+        "dapat"
+      ],
+      "answer_index": 0,
+      "answer": "terdapat",
+      "explain": "说明牌上介绍“某处有什么”，书面说法是 terdapat（聊天时说 ada 也完全可以）。mendapat 是“得到”，主语要是人：Dia mendapat hadiah.；didapat 是“被得到”，不表示“在某处有”；dapat 单独用是“能、可以”，放在这里句子不通。"
+    },
+    {
+      "question": "Rani: \"Kok kamu bisa kenal sama Mas Budi?\" Sinta: \"Aku kenal dia ___ teman kantor. Dia yang ngenalin kami waktu makan siang.\" 空格里哪个最自然？",
+      "options": [
+        "antara",
+        "sampai",
+        "melalui",
+        "terhadap"
+      ],
+      "answer_index": 2,
+      "answer": "melalui",
+      "explain": "“通过某人认识”用 melalui（口语更常说 lewat：kenal lewat teman kantor）。antara 是“在……之间”，要说 antara A dan B；sampai 是“直到、到达”；terhadap 是“对……（的态度）”：sikapnya terhadap teman kantor。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语，向朋友推荐一个你去过或想去的地方（自然景点、老街、博物馆都可以）：在哪里、怎么去、那里有什么、要注意什么。至少用 melalui、terdapat、alami、antara、terkadang 中的两个。",
+    "reference_answer": "Kalau ke Bandung, coba berjalan-jalan ke sebuah danau alami di daerah utara. Jalannya melalui kebun teh, dan di sekitar danau terdapat beberapa warung kecil. Terkadang kabutnya cukup tebal, jadi siapkan jaket, ya.",
+    "reference_cn": "要是去万隆，可以去北边的一个天然湖走走。路要穿过茶园，湖边有几家小摊。有时候雾挺浓的，所以记得准备好外套哦。"
+  },
+  "review": [
+    "3 秒主动提取：看中文马上说印尼语——混合、作家、年龄、天然的、有时候、在……之间、法律、通过／经由、山洞、（书面的）有；说不出来的回看词卡再说一遍。",
+    "易混词：terdapat（书面“某处有”）vs ada（日常“有”）vs punya（拥有）；melalui（书面）vs lewat（口语）；usia（礼貌、书面）vs umur（日常）；alami（天然的）vs alam（大自然）vs mengalami（经历）；mencampur（混合）vs mengaduk（搅拌）；hukum（法律）vs hukuman（惩罚）。",
+    "复习词应用：反义词一对 majuin（往前挪、提前）vs mundurin（往后推、推迟），各说一句改时间的事；用 kebentur 说一次撞到头或膝盖；用 ketuker 说一次东西拿错；用 menyembunyikan 说一次藏东西或掩饰心情。"
+  ],
+  "review_cards": {
+    "recall": [
+      { "cn": "混合；把……掺在一起", "id": "mencampur" },
+      { "cn": "作家；作者", "id": "penulis" },
+      { "cn": "年龄", "id": "usia" },
+      { "cn": "天然的", "id": "alami" },
+      { "cn": "有时候", "id": "terkadang" },
+      { "cn": "在……之间", "id": "antara" },
+      { "cn": "法律", "id": "hukum" },
+      { "cn": "通过；经由", "id": "melalui" },
+      { "cn": "山洞", "id": "gua" },
+      { "cn": "（某处）有；存在", "id": "terdapat" }
+    ],
+    "frames": [
+      "Di dalam … terdapat …",
+      "Walaupun usianya sudah …, …",
+      "Saya kenal dia melalui …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          { "id": "terdapat", "cn": "书面：某处有" },
+          { "id": "ada", "cn": "日常：有" },
+          { "id": "punya", "cn": "拥有" }
+        ],
+        "note": "Di lantai dua terdapat musala. = Di lantai dua ada musala. / Saya punya mobil.（拥有只能用 punya）"
+      },
+      {
+        "items": [
+          { "id": "melalui", "cn": "书面：通过、经由" },
+          { "id": "lewat", "cn": "口语：通过、经过" }
+        ],
+        "note": "Pendaftaran melalui aplikasi.（通知）/ Daftar lewat aplikasi aja.（聊天）"
+      },
+      {
+        "items": [
+          { "id": "alami", "cn": "天然的" },
+          { "id": "alam", "cn": "大自然" },
+          { "id": "mengalami", "cn": "经历" }
+        ],
+        "note": "bahan alami（天然材料）/ pemandangan alam（自然风光）/ mengalami kecelakaan（遭遇事故）"
+      },
+      {
+        "items": [
+          { "id": "majuin", "cn": "提前；往前挪" },
+          { "id": "mundurin", "cn": "推迟；往后推" }
+        ],
+        "note": "一对反义词：Jadwalnya dimajuin.（提前了）/ Jadwalnya dimundurin.（推迟了）"
+      }
+    ],
+    "apply": [
+      {
+        "word": "kebentur",
+        "usage": "口语：撞到不动的硬东西（正式说 terbentur）。",
+        "examples": [
+          { "id": "Aku lupa nunduk, jadi kepalaku kebentur batu.", "cn": "我忘了低头，结果头撞到了石头。" }
+        ]
+      },
+      {
+        "word": "ketuker",
+        "usage": "口语：东西拿错、弄混了（正式说 tertukar）。",
+        "examples": [
+          { "id": "Eh, sandal kita ketuker, nih!", "cn": "哎，我们的拖鞋拿错了！" }
+        ]
+      },
+      {
+        "word": "menyembunyikan",
+        "usage": "藏起东西，也可以说掩饰心情、隐瞒事情。",
+        "examples": [
+          { "id": "Dia berusaha menyembunyikan rasa cemburunya, tapi wajahnya tidak bisa bohong.", "cn": "他努力想掩饰自己的醋意，可脸上的表情骗不了人。" }
+        ]
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "terdapat",
+      "melalui",
+      "usia"
+    ],
+    "patterns": [
+      {
+        "pattern": "Walaupun usianya sudah …, …",
+        "cn": "虽然他已经……岁了，（还是）……",
+        "example": "Walaupun usianya sudah 72 tahun, Sabtu lalu dia mengajak cucunya, Dina, ke sebuah gua alami di dekat Bogor untuk bahan buku barunya.",
+        "example_cn": "虽然他已经 72 岁了，上星期六他还是带着孙女迪娜去了茂物附近的一个天然山洞，为新书收集素材。"
+      },
+      {
+        "pattern": "Untuk sampai ke …, … harus … melalui …",
+        "cn": "要到……，得从……走过去",
+        "example": "Untuk sampai ke gua itu, mereka harus berjalan kaki melalui jalan kecil di antara sawah.",
+        "example_cn": "要到那个山洞，他们得从稻田之间的一条小路走过去。"
+      }
+    ]
+  }
+}
