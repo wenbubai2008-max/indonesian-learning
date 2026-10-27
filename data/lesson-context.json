@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-27",
-    "session": "pm",
-    "time": "18:00",
-    "day": 67
+    "date": "2026-10-28",
+    "session": "am",
+    "time": "08:00",
+    "day": 68
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-27T09:40:39.966Z",
-    "lesson_watermark": "2026-10-27 08:00",
+    "runtime_generated_at": "2026-10-27T10:52:55.659Z",
+    "lesson_watermark": "2026-10-27 18:00",
     "index_updated": "2026-10-27",
-    "runtime_hash": "3504307abc890cd1f0ba7fdd9cb4c9bb5c4b2b9e39072c430983b0c9eb007d5d",
-    "index_hash": "6f95e2edf90c3223233c5f304f0a6dfeb7bb44b0f829d25a86aa92e4387518c2",
+    "runtime_hash": "5ca9fa077788d15f185965273f3675cbe8ab4095bc7bb9a184ad2ab71c909a54",
+    "index_hash": "2bc6b5f46bb6c93a179f5a27468e90d9be2ce1cdface33507108409690383fc2",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -351,10 +351,6 @@
         "讨厌；恨"
       ],
       [
-        "tanggung jawab",
-        "责任"
-      ],
-      [
         "karyawan",
         "员工"
       ],
@@ -365,10 +361,6 @@
       [
         "divisi",
         "部门；事业部"
-      ],
-      [
-        "kurir",
-        "快递员"
       ],
       [
         "mirip",
@@ -409,10 +401,6 @@
       [
         "negara",
         "国家"
-      ],
-      [
-        "lancar",
-        "顺畅；流畅"
       ],
       [
         "subuh",
@@ -1125,16 +1113,6 @@
         "共同凑钱；分摊费用"
       ],
       [
-        "nggak tega",
-        3,
-        0,
-        "",
-        "",
-        "不忍心；狠不下心（口语）",
-        "tega",
-        "忍心；狠得下心"
-      ],
-      [
         "nyusul",
         2,
         0,
@@ -1143,16 +1121,6 @@
         "随后跟上；晚点再过去会合",
         "susul",
         "追上；随后跟上"
-      ],
-      [
-        "ngebut",
-        3,
-        0,
-        "",
-        "",
-        "加速赶；猛赶进度；开快车（口语）",
-        "kebut",
-        "快速赶；高速行进"
       ],
       [
         "nyangkut",
@@ -1905,16 +1873,6 @@
         "文化"
       ],
       [
-        "ngatur",
-        3,
-        0,
-        "",
-        "2026-10-15T13:40:29.251Z",
-        "安排；管理",
-        "atur",
-        "安排；整理"
-      ],
-      [
         "ukuran",
         3,
         0,
@@ -2625,94 +2583,34 @@
         "性格；角色"
       ],
       [
-        "mencampur",
-        3,
+        "sebab",
+        2,
         0,
         "",
-        "2026-10-27T07:34:15.191Z",
-        "混合；把……掺在一起",
-        "campur",
-        "混合；掺杂"
+        "2026-10-23T23:35:33.134Z",
+        "原因；缘故；因为",
+        "sebab",
+        "缘由；原因"
       ],
       [
-        "penulis",
+        "wajib",
         3,
         0,
         "",
-        "2026-10-27T07:34:17.203Z",
-        "作家；作者；写的人",
-        "tulis",
-        "写"
+        "2026-10-24T02:33:53.530Z",
+        "必须；有义务的",
+        "wajib",
+        "必须；义务"
       ],
       [
-        "usia",
-        3,
+        "bangsa",
+        2,
         0,
         "",
-        "2026-10-27T07:34:25.855Z",
-        "年龄；年纪",
-        "",
-        ""
-      ],
-      [
-        "alami",
-        3,
-        0,
-        "",
-        "2026-10-27T07:33:58.374Z",
-        "天然的；自然的",
-        "alam",
-        "自然；大自然"
-      ],
-      [
-        "terkadang",
-        3,
-        0,
-        "",
-        "2026-10-27T07:34:23.211Z",
-        "有时；有时候",
-        "kadang",
-        "有时"
-      ],
-      [
-        "antara",
-        3,
-        0,
-        "",
-        "2026-10-27T07:34:00.612Z",
-        "在……之间；……之间",
-        "",
-        ""
-      ],
-      [
-        "hukum",
-        3,
-        0,
-        "",
-        "2026-10-27T07:34:04.823Z",
-        "法律；法",
-        "hukum",
-        ""
-      ],
-      [
-        "melalui",
-        3,
-        0,
-        "",
-        "2026-10-27T07:34:08.882Z",
-        "通过；经由；从……经过",
-        "lalu",
-        "经过；过去"
-      ],
-      [
-        "gua",
-        3,
-        0,
-        "",
-        "2026-10-27T07:34:02.938Z",
-        "山洞；洞穴",
-        "",
-        ""
+        "2026-10-19T13:14:25.345Z",
+        "民族；国家",
+        "bangsa",
+        "民族；国家"
       ]
     ],
     "focus": [
@@ -2978,45 +2876,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-10-20",
-      "session": "am",
-      "review_core": [
-        "kepikiran",
-        "pikiran",
-        "mikir",
-        "mepet",
-        "ngepasin"
-      ],
-      "new_words": [
-        "penyebab",
-        "pola",
-        "menekan",
-        "paksa",
-        "alur",
-        "roboh",
-        "berjarak",
-        "merupakan",
-        "menyelam",
-        "jarak tempuh"
-      ]
-    },
-    {
-      "date": "2026-10-20",
-      "session": "pm",
-      "review_core": [
-        "darurat",
-        "ganjel",
-        "butuh",
-        "membutuhkan",
-        "pemasukan"
-      ],
-      "new_words": [
-        "diam-diam",
-        "keadaan",
-        "memilah"
-      ]
-    },
-    {
       "date": "2026-10-21",
       "session": "am",
       "review_core": [
@@ -3276,106 +3135,42 @@
         "gua",
         "terdapat"
       ]
+    },
+    {
+      "date": "2026-10-27",
+      "session": "pm",
+      "review_core": [
+        "mengakhiri",
+        "mengenali",
+        "teratur",
+        "ngatur",
+        "ngebut",
+        "nggak tega"
+      ],
+      "new_words": [
+        "kurir",
+        "lancar",
+        "tanggung jawab"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "new_words": [
-      "penerbangan",
-      "baterai",
-      "jaringan",
-      "hadir"
+      "kurir",
+      "lancar",
+      "tanggung jawab"
     ],
     "review_core": [
-      "mengesankan",
-      "penanganan",
-      "menangani",
-      "ketiban",
-      "molor"
+      "mengakhiri",
+      "mengenali",
+      "teratur",
+      "ngatur",
+      "ngebut",
+      "nggak tega"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-27",
-    "vocab": [
-      [
-        "mencampur",
-        "混合；把……掺在一起",
-        "to mix; to combine",
-        "campur",
-        "混合；掺杂"
-      ],
-      [
-        "penulis",
-        "作家；作者；写的人",
-        "writer; author",
-        "tulis",
-        "写"
-      ],
-      [
-        "usia",
-        "年龄；年纪",
-        "age",
-        "",
-        ""
-      ],
-      [
-        "alami",
-        "天然的；自然的",
-        "natural",
-        "alam",
-        "自然；大自然"
-      ],
-      [
-        "terkadang",
-        "有时；有时候",
-        "sometimes",
-        "kadang",
-        "有时"
-      ],
-      [
-        "antara",
-        "在……之间；……之间",
-        "between; among",
-        "",
-        ""
-      ],
-      [
-        "hukum",
-        "法律；法",
-        "law",
-        "",
-        ""
-      ],
-      [
-        "melalui",
-        "通过；经由；从……经过",
-        "through; via",
-        "lalu",
-        "经过；过去"
-      ],
-      [
-        "gua",
-        "山洞；洞穴",
-        "cave",
-        "",
-        ""
-      ],
-      [
-        "terdapat",
-        "有；存在；（在某处）可以找到",
-        "there is / there are (formal)",
-        "dapat",
-        "得到；能"
-      ]
-    ],
-    "review_vocab": [
-      "kebentur",
-      "menyembunyikan",
-      "ketuker",
-      "majuin",
-      "mundurin"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

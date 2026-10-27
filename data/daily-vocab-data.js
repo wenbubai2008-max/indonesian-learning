@@ -7638,23 +7638,27 @@ window.DAILY_VOCAB_DB = [
     "en": "cannot bear to; do not have the heart to",
     "root": "tega",
     "root_cn": "忍心；狠得下心",
-    "example": "Aku nggak tega nolak langsung, tapi tetap harus kasih batas yang jelas.",
-    "example_cn": "我不忍心直接拒绝，但还是得把界限说清楚。",
+    "example": "Aku nggak tega bilang ke dia kalau lamaran kerjanya ditolak.",
+    "example_cn": "我不忍心告诉他，他的求职申请被拒了。（nggak = tidak）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-07 08:00",
+    "last_seen": "2026-10-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-10-27"
     ],
     "lesson_occurrences": [
-      "2026-09-07 08:00"
+      "2026-09-07 08:00",
+      "2026-10-27 18:00"
     ]
   },
   {
@@ -7963,23 +7967,27 @@ window.DAILY_VOCAB_DB = [
     "en": "rush; speed up; work at full speed",
     "root": "kebut",
     "root_cn": "快速赶；高速行进",
-    "example": "Kalau baru mulai sore, nanti kita harus ngebut sebelum deadline.",
-    "example_cn": "如果下午才开始，我们截止前就得猛赶进度了。",
+    "example": "Pengendara yang ngebut di jalan tol bisa mendapat hukuman berupa denda.",
+    "example_cn": "在高速公路上开快车的司机可能会受到罚款处罚。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-08 08:00",
+    "last_seen": "2026-10-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-10-27"
     ],
     "lesson_occurrences": [
-      "2026-09-08 08:00"
+      "2026-09-08 08:00",
+      "2026-10-27 18:00"
     ]
   },
   {
@@ -12896,24 +12904,28 @@ window.DAILY_VOCAB_DB = [
     "en": "arrange; manage",
     "root": "atur",
     "root_cn": "安排；整理",
-    "example": "Aku lagi ngatur jadwal untuk minggu depan.",
-    "example_cn": "我正在安排下周的日程。",
+    "example": "Kakakku yang ngatur acara lamaran itu, dari makanan sampai dekorasi.",
+    "example_cn": "那场提亲仪式是我姐姐张罗的，从吃的到布置全是她。（ngatur = mengatur）",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-21 08:00",
-    "last_seen": "2026-09-21 08:00",
+    "last_seen": "2026-10-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-21"
+      "2026-09-21",
+      "2026-10-27"
     ],
     "lesson_occurrences": [
-      "2026-09-21 08:00"
+      "2026-09-21 08:00",
+      "2026-10-27 18:00"
     ]
   },
   {
@@ -20668,23 +20680,25 @@ window.DAILY_VOCAB_DB = [
     "en": "regular; orderly",
     "root": "atur",
     "root_cn": "安排、整理",
-    "example": "Kalau mau tubuh sehat, kamu harus berolahraga secara teratur.",
-    "example_cn": "想要身体健康，你就得有规律地运动。",
+    "example": "Olahraga teratur bisa membantu mencegah sakit punggung.",
+    "example_cn": "规律运动可以帮助预防腰背痛。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-12 18:00",
-    "last_seen": "2026-10-12 18:00",
+    "last_seen": "2026-10-27 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-12"
+      "2026-10-12",
+      "2026-10-27"
     ],
     "lesson_occurrences": [
-      "2026-10-12 18:00"
+      "2026-10-12 18:00",
+      "2026-10-27 18:00"
     ]
   },
   {
@@ -22025,27 +22039,29 @@ window.DAILY_VOCAB_DB = [
     "en": "to recognize",
     "root": "kenal",
     "root_cn": "认识；熟悉",
-    "example": "Saya hampir tidak mengenali Andi karena sekarang ia jauh lebih kurus dan memakai kacamata.",
-    "example_cn": "我差点没认出 Andi，因为他现在瘦了很多，还戴了眼镜。",
+    "example": "Polisi mengenali pria itu dari rekaman CCTV, dan sekarang dia sudah di penjara.",
+    "example_cn": "警察从监控录像里认出了那个男人，现在他已经进了监狱。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-16 18:00",
-    "last_seen": "2026-10-21 08:00",
+    "last_seen": "2026-10-27 18:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-10-16",
-      "2026-10-21"
+      "2026-10-21",
+      "2026-10-27"
     ],
     "lesson_occurrences": [
       "2026-10-16 18:00",
-      "2026-10-21 08:00"
+      "2026-10-21 08:00",
+      "2026-10-27 18:00"
     ]
   },
   {
@@ -25111,24 +25127,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to end; to put an end to",
     "root": "akhir",
     "root_cn": "最后；末尾",
-    "example": "Pemilik rumah mau menjual rumahnya, jadi dia mengakhiri kontrak sewa kami tiga bulan lebih awal.",
-    "example_cn": "房东要把房子卖掉，所以提前三个月终止了我们的租约。",
+    "example": "Mereka akhirnya mengakhiri pernikahan itu dan resmi bercerai tahun lalu.",
+    "example_cn": "他们最终结束了那段婚姻，去年正式离了婚。",
     "categories": [
       "每日学习",
       "18:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-25 18:00",
-    "last_seen": "2026-10-25 18:00",
+    "last_seen": "2026-10-27 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-27"
     ],
     "lesson_occurrences": [
-      "2026-10-25 18:00"
+      "2026-10-25 18:00",
+      "2026-10-27 18:00"
     ]
   },
   {
@@ -25694,23 +25712,26 @@ window.DAILY_VOCAB_DB = [
     "en": "through; via",
     "root": "lalu",
     "root_cn": "经过；过去",
-    "example": "Untuk orang tua, pendaftaran melalui aplikasi kadang terasa ribet.",
-    "example_cn": "对老人来说，通过应用报名有时会觉得很麻烦。",
+    "example": "Lampiran dokumen bisa dikirim melalui email paling lambat hari Jumat.",
+    "example_cn": "文件附件最晚在周五前通过邮件发送即可。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-27 08:00",
-    "last_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-27"
     ],
     "lesson_occurrences": [
-      "2026-10-27 08:00"
+      "2026-10-27 08:00",
+      "2026-10-27 18:00"
     ]
   },
   {
@@ -25744,23 +25765,101 @@ window.DAILY_VOCAB_DB = [
     "en": "there is / there are (formal)",
     "root": "dapat",
     "root_cn": "得到；能",
-    "example": "Di lantai dua mal ini terdapat musala dan ruang menyusui.",
-    "example_cn": "这家商场二楼有祈祷室和哺乳室。",
+    "example": "Di seberang kantor pos itu terdapat apotek yang buka 24 jam.",
+    "example_cn": "那家邮局对面有一家24小时营业的药店。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-27 08:00",
-    "last_seen": "2026-10-27 08:00",
+    "last_seen": "2026-10-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-27"
     ],
     "lesson_occurrences": [
-      "2026-10-27 08:00"
+      "2026-10-27 08:00",
+      "2026-10-27 18:00"
+    ]
+  },
+  {
+    "word": "kurir",
+    "cn": "快递员；送货员",
+    "en": "courier",
+    "root": "kurir",
+    "root_cn": "快递员（外来词）",
+    "example": "Kurir itu mengetuk pintu tiga kali, tetapi tidak ada yang membukakan.",
+    "example_cn": "快递员敲了三次门，可是没有人来开。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 18:00",
+    "last_seen": "2026-10-27 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 18:00"
+    ]
+  },
+  {
+    "word": "lancar",
+    "cn": "顺利；顺畅；流利",
+    "en": "smooth; fluent",
+    "root": "lancar",
+    "root_cn": "顺畅",
+    "example": "Berkat polisi yang berjaga di bundaran, lalu lintas pagi ini lancar.",
+    "example_cn": "多亏有警察在环岛执勤，今天早上的交通很顺畅。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 18:00",
+    "last_seen": "2026-10-27 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 18:00"
+    ]
+  },
+  {
+    "word": "tanggung jawab",
+    "cn": "责任",
+    "en": "responsibility",
+    "root": "tanggung",
+    "root_cn": "承担",
+    "example": "Mengembalikan buku tepat waktu adalah tanggung jawab setiap anggota perpustakaan.",
+    "example_cn": "按时还书是每一位图书馆会员的责任。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-27 18:00",
+    "last_seen": "2026-10-27 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-27"
+    ],
+    "lesson_occurrences": [
+      "2026-10-27 18:00"
     ]
   }
 ];
