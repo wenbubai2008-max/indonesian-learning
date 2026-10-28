@@ -1,0 +1,829 @@
+{
+ "version": 1,
+ "title": "晚课深讲 · 10月28日",
+ "intro": [
+  "今晚的课叫《Dewi 的升职考验》。房地产公司员工 Dewi 想升到项目部，可样板房工程被承包商一拖再拖，许可也卡在审批部门；她亲自补齐文件，问题才解决。",
+  "今晚只讲 5 样：[[promosi]] · [[nyangkut]] · [[ngulur]] · [[…, asal …]] · [[Kalau aku … aja, … nggak bakal …]]"
+ ],
+ "items": [
+  {
+   "key": "promosi",
+   "name": "promosi",
+   "head": "promosi · 晋升；促销",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Bulan lalu, atasannya menawarkan promosi ke divisi proyek, asal Dewi bisa menyelesaikan satu masalah: pembangunan sepuluh rumah contoh sudah terlambat tiga bulan.",
+      "cn": "上个月，上司提出让她升到项目部，条件是她能解决一个问题：十套样板房的建设已经拖了三个月。"
+     }
+    ],
+    "ask": "这里的 promosi 是什么意思？",
+    "options": [
+     {
+      "t": "升职，调到项目部",
+      "ok": true,
+      "reply": [
+       "对。说人的时候 promosi 是“晋升”：promosi ke divisi proyek。"
+      ]
+     },
+     {
+      "t": "给样板房做促销",
+      "reply": [
+       "不是。促销说的是商品，这里说的是 Dewi 本人。"
+      ]
+     },
+     {
+      "t": "去别的公司上班",
+      "reply": [
+       "不是。她还在同一家公司，只是换到更高的位置。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "说人：{{dapat promosi}}（升职）、{{promosi jabatan}}、{{promosi ke divisi …}}。说商品：{{harga promosi}}（促销价）、{{lagi promo}}（在搞促销）。聊天里升职也常说 {{naik jabatan}}。"
+   ],
+   "simple": [
+    "[[promosi]] = 人：升职；商品：促销"
+   ],
+   "asks": [
+    {
+     "label": "两个意思怎么分？",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Dia dapat promosi.",
+         "他升职了（人）"
+        ],
+        [
+         "Tokonya lagi promo.",
+         "那家店在搞促销（商品）"
+        ],
+        [
+         "Dia naik jabatan.",
+         "他升职了（更口语）"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Selamat, ya! Katanya kamu ___ bulan ini?]]",
+     "（恭喜！听说你这个月升职了？）"
+    ],
+    "options": [
+     {
+      "t": "dapat promosi",
+      "v": "right",
+      "why": [
+       "对。获得晋升 = dapat promosi。"
+      ]
+     },
+     {
+      "t": "naik jabatan",
+      "v": "ok",
+      "why": [
+       "也可以，更口语、更直白。"
+      ]
+     },
+     {
+      "t": "lagi promo",
+      "v": "wrong",
+      "why": [
+       "lagi promo 说商店在促销，不说人。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。超市广播：“洗衣粉今天促销，买二送一。”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Hari ini sabun cuci lagi promo, beli dua gratis satu.",
+       "v": "right",
+       "why": [
+        "对。商品促销用 lagi promo / ada promosi。"
+       ]
+      },
+      {
+       "t": "Hari ini ada promosi sabun cuci, beli dua gratis satu.",
+       "v": "ok",
+       "why": [
+        "也可以，偏广告、书面。"
+       ]
+      },
+      {
+       "t": "Hari ini sabun cuci dapat promosi, beli dua gratis satu.",
+       "v": "wrong",
+       "why": [
+        "dapat promosi 是人“获得晋升”，不说商品。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟朋友说：“我哥下个月升职，调到财务部。”先说出声。"
+    ],
+    "kw": "dapat promosi · divisi keuangan",
+    "skel": "Kakakku bulan depan ____ ke ____ keuangan.",
+    "ref": "Kakakku bulan depan dapat promosi ke divisi keuangan."
+   },
+   "recall": {
+    "prompt": [
+     "逛商场时你跟妈妈说：“妈，那家鞋店在搞促销！”"
+    ],
+    "kw": "toko sepatu · lagi promo",
+    "skel": "Ma, toko sepatu itu lagi ____!",
+    "ref": "Ma, toko sepatu itu lagi promo!"
+   },
+   "final": {
+    "cn": "（对同事）“她工作三年就升职了。”",
+    "ref": "Dia dapat promosi setelah tiga tahun bekerja."
+   },
+   "remind": "promosi：人 = 升职（dapat promosi）；商品 = 促销（lagi promo）。"
+  },
+  {
+   "key": "sangkut",
+   "name": "nyangkut",
+   "head": "nyangkut · 卡住；挂住",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Dewi",
+      "id": "Udah keluar kemarin. Ternyata kurang satu dokumen, makanya nyangkut.",
+      "cn": "昨天批下来了。原来是缺了一份文件，所以才卡住。"
+     }
+    ],
+    "ask": "许可之前为什么 nyangkut？",
+    "options": [
+     {
+      "t": "缺了一份文件，卡在审批那一步",
+      "ok": true,
+      "reply": [
+       "对。nyangkut = 卡在某一步动不了。"
+      ]
+     },
+     {
+      "t": "承包商故意拖时间",
+      "reply": [
+       "那是 ngulur waktu，说的是承包商。许可卡住是因为缺文件。"
+      ]
+     },
+     {
+      "t": "许可被取消了",
+      "reply": [
+       "不是。卡住不是取消，补齐文件后就批下来了。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{nyangkut}} 原意是东西被挂住：{{Layangannya nyangkut di pohon}}。引申为手续、包裹卡在某个环节：{{Paketnya nyangkut di bea cukai}}。书面说 {{tersangkut}} 或 {{tertahan}}。注意标准形 {{menyangkut}} 常用的是“涉及”。"
+   ],
+   "simple": [
+    "[[nyangkut]] = 卡住、挂住（口语）；书面 tersangkut / tertahan"
+   ],
+   "asks": [
+    {
+     "label": "nyangkut 和 macet 怎么分？",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Layangannya nyangkut di kabel.",
+         "风筝挂在电线上"
+        ],
+        [
+         "Izinnya masih nyangkut.",
+         "许可还卡着"
+        ],
+        [
+         "Jalannya macet.",
+         "路堵了（交通）"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Uangnya belum masuk, katanya transfernya masih ___ di bank.]]",
+     "（钱还没到账，说是转账还卡在银行。）"
+    ],
+    "options": [
+     {
+      "t": "nyangkut",
+      "v": "right",
+      "why": [
+       "对。转账停在某个环节没过去，口语说 nyangkut。"
+      ]
+     },
+     {
+      "t": "tertahan",
+      "v": "ok",
+      "why": [
+       "也可以，偏书面、正式。"
+      ]
+     },
+     {
+      "t": "ngulur",
+      "v": "wrong",
+      "why": [
+       "ngulur 是人故意拖时间，要接 waktu，不说转账。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟朋友说：“我的风筝挂在树上了！”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Layanganku nyangkut di pohon!",
+       "v": "right",
+       "why": [
+        "对。东西被挂住 = nyangkut。"
+       ]
+      },
+      {
+       "t": "Layanganku macet di pohon!",
+       "v": "wrong",
+       "why": [
+        "macet 说交通、机器卡壳，不说东西挂住。"
+       ]
+      },
+      {
+       "t": "Layanganku menyangkut di pohon!",
+       "v": "wrong",
+       "why": [
+        "menyangkut 现在常用的是“涉及”，这里会让人误解；书面要说 tersangkut。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "朋友问你的网购包裹到了没。你说：“还没，说是还卡在海关。”先说出声。"
+    ],
+    "kw": "belum · masih nyangkut · bea cukai",
+    "skel": "Belum, katanya masih ____ di ____ cukai.",
+    "ref": "Belum, katanya masih nyangkut di bea cukai."
+   },
+   "recall": {
+    "prompt": [
+     "你跟室友说：“打印机里又卡纸了，一张卡在里面。”（用 lembar 说“一张”）"
+    ],
+    "kw": "printernya · selembar · nyangkut",
+    "skel": "Printernya rusak lagi, ada ____ yang ____ di dalam.",
+    "ref": "Printernya rusak lagi, ada selembar yang nyangkut di dalam."
+   },
+   "final": {
+    "cn": "（对同事）“我的报销还卡在财务部。”",
+    "ref": "Reimburse-ku masih nyangkut di divisi keuangan."
+   },
+   "remind": "nyangkut = 卡住、挂住；手续、包裹卡在某一步也用它。"
+  },
+  {
+   "key": "ulur",
+   "name": "ngulur",
+   "head": "ngulur · 拖（时间）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Raka",
+      "id": "Gara-gara proyek rumah contoh itu, ya? Kontraktornya kan ngulur waktu terus. Kenapa nggak pecat aja?",
+      "cn": "是因为样板房那个项目吧？那个承包商不是一直在拖时间嘛。干嘛不干脆把他开了？"
+     }
+    ],
+    "ask": "承包商 ngulur waktu，是什么情况？",
+    "options": [
+     {
+      "t": "找各种理由故意拖着不完工",
+      "ok": true,
+      "reply": [
+       "对。ngulur waktu 带“故意拖”的意思。"
+      ]
+     },
+     {
+      "t": "工人生病，工期自然推迟",
+      "reply": [
+       "那是普通的推迟（tertunda / molor），不一定是故意的。"
+      ]
+     },
+     {
+      "t": "承包商加班赶工",
+      "reply": [
+       "正好相反。赶工是 ngebut / kejar target。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{ngulur waktu}}（标准形 {{mengulur waktu}}）= 故意拖时间。中性的“推迟某事”用 {{menunda}}：{{menunda rapat}}；时间自己拖长用 {{molor}}：{{Rapatnya molor satu jam}}。"
+   ],
+   "simple": [
+    "[[ngulur waktu]] = 故意拖时间；menunda = 推迟；molor = 拖长了"
+   ],
+   "asks": [
+    {
+     "label": "ngulur、menunda、molor 怎么分？",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Dia sengaja ngulur waktu.",
+         "他故意拖时间"
+        ],
+        [
+         "Kami menunda rapat.",
+         "我们把会推迟了"
+        ],
+        [
+         "Rapatnya molor.",
+         "会拖长了"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Tiap ditagih, dia bilang ‘besok’. Dia cuma ___ waktu.]]",
+     "（每次催他还钱，他都说“明天”。他只是在拖时间。）"
+    ],
+    "options": [
+     {
+      "t": "ngulur",
+      "v": "right",
+      "why": [
+       "对。一再找借口，故意拖：ngulur waktu。"
+      ]
+     },
+     {
+      "t": "mengulur",
+      "v": "ok",
+      "why": [
+       "也可以，是标准形，书面或正式场合用。"
+      ]
+     },
+     {
+      "t": "menunda",
+      "v": "wrong",
+      "why": [
+       "menunda 后面接被推迟的事（menunda pembayaran），不说 menunda waktu。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你催朋友：“别再拖了，现在就报名吧！”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Jangan ngulur-ngulur lagi, daftar sekarang aja!",
+       "v": "right",
+       "why": [
+        "对。ngulur-ngulur = 一拖再拖。"
+       ]
+      },
+      {
+       "t": "Jangan molor lagi, daftar sekarang aja!",
+       "v": "wrong",
+       "why": [
+        "molor 说时间自己拖长，不用来劝人。"
+       ]
+      },
+      {
+       "t": "Jangan ngulur pendaftaran lagi, daftar sekarang aja!",
+       "v": "wrong",
+       "why": [
+        "ngulur 一般只接 waktu，不接具体的事。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟同事说：“他明显在拖时间，不想回答。”先说出声。"
+    ],
+    "kw": "jelas · ngulur waktu · nggak mau jawab",
+    "skel": "Dia jelas ____ waktu, ____ mau jawab.",
+    "ref": "Dia jelas ngulur waktu, nggak mau jawab.",
+    "notes": [
+     "nggak = tidak"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "你劝弟弟：“别再拖了，作业今晚就写完。”"
+    ],
+    "kw": "jangan ngulur-ngulur · PR-nya",
+    "skel": "Jangan ____ lagi, PR-nya selesain malam ini.",
+    "ref": "Jangan ngulur-ngulur lagi, PR-nya selesain malam ini.",
+    "notes": [
+     "selesain = selesaikan"
+    ]
+   },
+   "final": {
+    "cn": "（朋友之间）“卖家一直在拖时间，钱还没退。”",
+    "ref": "Penjualnya ngulur waktu terus, uangnya belum dikembaliin."
+   },
+   "remind": "ngulur waktu = 故意拖时间；menunda + 事 = 推迟。"
+  },
+  {
+   "key": "asal",
+   "name": "…, asal …",
+   "head": "…, asal … · ……，条件是……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Bulan lalu, atasannya menawarkan promosi ke divisi proyek, asal Dewi bisa menyelesaikan satu masalah: pembangunan sepuluh rumah contoh sudah terlambat tiga bulan.",
+      "cn": "上个月，上司提出让她升到项目部，条件是她能解决一个问题：十套样板房的建设已经拖了三个月。"
+     }
+    ],
+    "ask": "Dewi 要升职，需要先做到什么？",
+    "options": [
+     {
+      "t": "把样板房拖延的问题解决",
+      "ok": true,
+      "reply": [
+       "对。asal 后面就是条件。"
+      ]
+     },
+     {
+      "t": "什么都不用做",
+      "reply": [
+       "不是。asal 引出的是必须满足的条件。"
+      ]
+     },
+     {
+      "t": "先换一家公司",
+      "reply": [
+       "不是。条件是解决项目问题。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{asal}}（也说 {{asalkan}}）= “只要……就行；条件是……”，放在后半句：{{Boleh pinjam, asal dikembalikan besok}}。和 {{kalau}} 比，asal 更强调“只要满足这一点就可以”。"
+   ],
+   "simple": [
+    "[[…, asal …]] = ……，只要……就行"
+   ],
+   "asks": [
+    {
+     "label": "再看几个例子",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Boleh main, asal PR-nya udah selesai.",
+         "可以玩，只要作业写完了"
+        ],
+        [
+         "Aku ikut, asal nggak pulang malam.",
+         "我去，只要不太晚回家"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Kamu boleh pakai motorku, ___ bensinnya diisi lagi.]]",
+     "（你可以骑我的摩托，只要把油加回来。）"
+    ],
+    "options": [
+     {
+      "t": "asal",
+      "v": "right",
+      "why": [
+       "对。只要满足这个条件就可以。"
+      ]
+     },
+     {
+      "t": "asalkan",
+      "v": "ok",
+      "why": [
+       "也可以，意思一样，略正式。"
+      ]
+     },
+     {
+      "t": "walaupun",
+      "v": "wrong",
+      "why": [
+       "walaupun 是“虽然”，逻辑不对。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。房东说：“可以养猫，只要不弄坏家具。”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Boleh pelihara kucing, asal perabotnya tidak rusak.",
+       "v": "right",
+       "why": [
+        "对。前面许可，后面 asal 给条件。"
+       ]
+      },
+      {
+       "t": "Asal boleh pelihara kucing, perabotnya tidak rusak.",
+       "v": "wrong",
+       "why": [
+        "asal 要放在条件那一半前面，位置放错了。"
+       ]
+      },
+      {
+       "t": "Boleh pelihara kucing, karena perabotnya tidak rusak.",
+       "v": "wrong",
+       "why": [
+        "karena 是“因为”，不是条件。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟同事说：“我可以帮你，只要你先把文件发给我。”先说出声。"
+    ],
+    "kw": "bisa bantu · asal · kirim dokumennya",
+    "skel": "Aku bisa bantu, ____ kamu kirim ____ dulu.",
+    "ref": "Aku bisa bantu, asal kamu kirim dokumennya dulu."
+   },
+   "recall": {
+    "prompt": [
+     "妈妈对孩子说：“可以看电视，只要九点前睡觉。”"
+    ],
+    "kw": "boleh nonton TV · asal · tidur",
+    "skel": "Boleh nonton TV, ____ tidur sebelum jam ____.",
+    "ref": "Boleh nonton TV, asal tidur sebelum jam sembilan."
+   },
+   "final": {
+    "cn": "（对朋友）“周末我去，只要不下雨。”",
+    "ref": "Aku ikut akhir pekan ini, asal nggak hujan."
+   },
+   "remind": "…, asal … = ……，只要……就行（后半句给条件）。"
+  },
+  {
+   "key": "kalau",
+   "name": "Kalau aku … aja, … nggak bakal …",
+   "head": "Kalau aku … aja, … nggak bakal … · 我要是只……，……就不会……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Dewi",
+      "id": "Terpaksa. Udah nanggung, Ka. Kalau aku diem aja, proyeknya nggak bakal jalan.",
+      "cn": "没办法。都到这一步了。我要是一直不吭声，项目根本动不起来。"
+     }
+    ],
+    "ask": "Dewi 为什么说重话？",
+    "options": [
+     {
+      "t": "她觉得一直不吭声项目就动不了",
+      "ok": true,
+      "reply": [
+       "对。Kalau aku diem aja = 我要是光不吭声。"
+      ]
+     },
+     {
+      "t": "她本来就爱发火",
+      "reply": [
+       "不是。Raka 说她 jarang marah，这次是不得已。"
+      ]
+     },
+     {
+      "t": "她想换掉承包商",
+      "reply": [
+       "不是。她说合同还没到期，换不了。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{Kalau aku … aja}} = “我要是只/光……（不做别的）”，{{aja}} 有“光、只是”的意思；后半句 {{nggak bakal …}} = “就不会……”（标准形 tidak akan）。用来说明为什么不得不做某事。"
+   ],
+   "simple": [
+    "[[Kalau aku … aja, … nggak bakal …]] = 我要是光……，……就不会……"
+   ],
+   "asks": [
+    {
+     "label": "再看几个例子",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Kalau aku nunggu aja, dia nggak bakal datang.",
+         "我要是光等，他是不会来的"
+        ],
+        [
+         "Kalau kamu diem aja, bos nggak bakal tahu.",
+         "你要是不说，老板不会知道"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Kalau aku tidur ___, kerjaannya nggak bakal selesai.]]",
+     "（我要是光睡觉，活儿就干不完。）"
+    ],
+    "options": [
+     {
+      "t": "aja",
+      "v": "right",
+      "why": [
+       "对。aja = 光、只（标准形 saja）。"
+      ]
+     },
+     {
+      "t": "saja",
+      "v": "ok",
+      "why": [
+       "也可以，是标准形；跟朋友聊天多说 aja。"
+      ]
+     },
+     {
+      "t": "juga",
+      "v": "wrong",
+      "why": [
+       "juga 是“也”，意思变成“我也睡觉”。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟朋友说：“我要是不问，他是不会说的。”最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Kalau aku nggak nanya, dia nggak bakal cerita.",
+       "v": "right",
+       "why": [
+        "对。nggak bakal = 不会。"
+       ]
+      },
+      {
+       "t": "Kalau aku nggak nanya, dia nggak akan cerita.",
+       "v": "ok",
+       "why": [
+        "也可以，akan 比 bakal 稍标准。"
+       ]
+      },
+      {
+       "t": "Kalau aku nggak nanya, dia nggak bakal cerita aja.",
+       "v": "wrong",
+       "why": [
+        "aja 放错位置，放在句尾意思变怪。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟同事说：“我要是光等着，报告是不会有人做的。”先说出声。"
+    ],
+    "kw": "kalau aku nunggu aja · nggak bakal ada",
+    "skel": "Kalau aku nunggu ____, laporannya ____ bakal ada yang ngerjain.",
+    "ref": "Kalau aku nunggu aja, laporannya nggak bakal ada yang ngerjain.",
+    "notes": [
+     "nunggu = menunggu，ngerjain = mengerjakan"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "你跟室友说：“我要是光看视频，是学不会做饭的。”"
+    ],
+    "kw": "nonton video aja · nggak bakal bisa masak",
+    "skel": "Kalau aku nonton video ____, aku nggak bakal ____ masak.",
+    "ref": "Kalau aku nonton video aja, aku nggak bakal bisa masak."
+   },
+   "final": {
+    "cn": "（朋友之间）“你要是光抱怨，事情是不会变好的。”",
+    "ref": "Kalau kamu ngeluh aja, masalahnya nggak bakal beres."
+   },
+   "remind": "Kalau aku … aja = 我要是光……；nggak bakal = 不会。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "今晚另外两个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+  ],
+  "words": [
+   "karyawan",
+   "divisi"
+  ]
+ },
+ "reading": [
+  {
+   "key": "keras",
+   "sentence": "Dewi jarang marah, tetapi kali ini dia berbicara dengan nada keras kepada kontraktor itu.",
+   "cn": "Dewi 很少发火，可这一次她对那个承包商说话语气很重。",
+   "chunks": [
+    [
+     "Dewi jarang marah,",
+     "Dewi 很少发火",
+     "jarang + 形容词/动词 = 很少……"
+    ],
+    [
+     "tetapi kali ini",
+     "可是这一次",
+     "kali ini = 这一次"
+    ],
+    [
+     "dia berbicara dengan nada keras",
+     "她说话语气很重",
+     "nada keras = 语气重"
+    ],
+    [
+     "kepada kontraktor itu.",
+     "对那个承包商",
+     "kepada 引出说话对象"
+    ]
+   ],
+   "steal": [
+    "值得借的是 [[… jarang …, tetapi kali ini …]]：平时很少这样，这一次却……。{{Aku jarang telat, tetapi kali ini busnya mogok.}}（我很少迟到，可这一次公交车抛锚了。）"
+   ]
+  }
+ ],
+ "dialogue": {
+  "head": "对话 · 你来演 Dewi",
+  "intro": [
+   "你演 Dewi，我演同事 Raka。每一轮先看 Dewi 想说什么，看中文先说。"
+  ],
+  "turns": [
+   {
+    "line": 3,
+    "intent": "Dewi 说换不掉：那人固执，可合同还没到期。",
+    "kw": "nggak segampang itu · keras kepala · kontraknya",
+    "skel": "Nggak segampang itu. Orangnya ____, tapi ____ belum habis."
+   },
+   {
+    "line": 5,
+    "intent": "Dewi 说许可昨天批了，之前卡住是缺一份文件。",
+    "kw": "udah keluar · kurang satu dokumen · nyangkut",
+    "skel": "Udah keluar kemarin. Ternyata ____ satu dokumen, makanya ____."
+   },
+   {
+    "line": 7,
+    "intent": "Dewi 解释为什么说重话：都到这一步了，光不吭声项目动不了。",
+    "kw": "udah nanggung · diem aja · nggak bakal jalan",
+    "skel": "Terpaksa. Udah ____, Ka. Kalau aku ____ aja, proyeknya nggak bakal ____."
+   }
+  ],
+  "tail": [
+   "同事之间用 aku/kamu 和 nggak、udah、aja；写给上司或客户时换成 saya、tidak、sudah、saja。"
+  ]
+ },
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今晚的改写题，缩短版）：朋友问你送修的电脑好了没。说零件还卡在海关，你怀疑店家在拖时间。"
+   ],
+   "kw": "masih nyangkut · ngulur waktu",
+   "skel": "Spare part-nya masih ____ di bea cukai. Aku curiga tokonya cuma ____ waktu.",
+   "ref": "Spare part-nya masih nyangkut di bea cukai. Aku curiga tokonya cuma ngulur waktu.",
+   "notes": [
+    "整页的改写题有更完整的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
