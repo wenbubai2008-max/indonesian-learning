@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T03:34:47.548Z",
+  "updated_at": "2026-10-28T15:42:21.949Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1895,22 +1895,22 @@
     "pembangunan": {
       "word": "pembangunan",
       "status": "active",
-      "updated_at": "2026-10-24T01:47:02.249Z",
+      "updated_at": "2026-10-28T15:40:31.514Z",
       "display": "pembangunan",
-      "cn": "建设；施工；发展",
+      "cn": "建设；建造（过程）；发展",
       "root": "bangun",
       "root_cn": "建；起；醒",
-      "last_wrong": "2026-10-24T01:47:02.177Z",
-      "last_review": "2026-10-24T01:47:02.177Z",
+      "last_wrong": "2026-10-28T15:40:31.426Z",
+      "last_review": "2026-10-28T15:40:31.426Z",
       "source": "课程小测",
-      "source_date": "2026-10-23",
+      "source_date": "2026-10-28",
       "session": "18:00",
       "reasons": [
         "memory_dont",
         "automation_fail",
         "lesson_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "raya": {
@@ -10141,8 +10141,11 @@
     "alasan": {
       "word": "alasan",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:06:11.953Z",
+      "updated_at": "2026-10-28T15:17:51.886Z",
       "display": "alasan",
+      "cn": "理由；原因",
+      "root": "alas",
+      "root_cn": "垫；基础（词源相关）",
       "last_review": "2026-10-19T06:06:11.894Z",
       "last_mastered": "2026-09-12T14:13:51.503Z",
       "reasons": [],
@@ -11399,8 +11402,9 @@
     "contoh": {
       "word": "contoh",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:52.686Z",
+      "updated_at": "2026-10-28T15:17:24.222Z",
       "display": "contoh",
+      "cn": "例子、范例",
       "last_review": "2026-09-12T14:13:53.176Z",
       "last_mastered": "2026-09-12T14:13:53.176Z",
       "reasons": [],
@@ -22203,14 +22207,21 @@
     "karyawan": {
       "word": "karyawan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:12.270Z",
+      "updated_at": "2026-10-28T15:42:11.366Z",
       "display": "karyawan",
-      "cn": "员工",
+      "cn": "员工；职员（多指公司员工）",
       "root": "karya",
+      "root_cn": "作品；工作成果",
+      "last_wrong": "2026-10-28T15:42:11.294Z",
+      "last_review": "2026-10-28T15:42:11.294Z",
+      "source": "课程小测",
+      "source_date": "2026-10-28",
+      "session": "18:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 1,
       "right_streak": 0
     },
     "bos": {
