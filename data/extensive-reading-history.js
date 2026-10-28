@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261027-pameran-seni-taman-stasiun-manggarai","date":"2026-10-27","title":"Taman Stasiun Manggarai Jadi Ruang Pameran Seni untuk Warga","title_cn":"曼加拉伊车站花园变身居民艺术展空间","path":"data/extensive-reading-history/2026-10-27.js"},
 {"id":"er-20261025-gbk-ramai-festival-jajanan","date":"2026-10-25","title":"Akhir Pekan GBK Ramai, Festival Jajanan Padukan Rasa Lama dan Baru","title_cn":"GBK 周末人潮涌动，小吃节融合新老口味","path":"data/extensive-reading-history/2026-10-25.js"},
 {"id":"er-20261024-bmkg-peringatan-hujan-lebat-jabodetabek","date":"2026-10-24","title":"BMKG Peringatkan Hujan Lebat di Jabodetabek sampai Minggu","title_cn":"气象局预警：大雅加达地区大雨将持续到周日","path":"data/extensive-reading-history/2026-10-24.js"},
 {"id":"er-20261023-surabaya-sekolah-bebas-perundungan","date":"2026-10-23","title":"Surabaya Perkuat Pendidikan Karakter agar Sekolah Bebas Perundungan","title_cn":"泗水加强品格教育，让学校远离霸凌","path":"data/extensive-reading-history/2026-10-23.js"},
