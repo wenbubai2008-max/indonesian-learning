@@ -7505,32 +7505,36 @@ window.DAILY_VOCAB_DB = [
     "en": "stall; drag out",
     "root": "ulur",
     "root_cn": "延长；拖长",
-    "example": "Kalau memang belum siap, bilang aja terus terang, jangan ngulur terus.",
-    "example_cn": "如果确实还没准备好，就直接说，别一直拖。",
+    "example": "Jangan ngulur-ngulur lagi, bilang aja ke bos kalau kamu mau resign.",
+    "example_cn": "别再拖了，想辞职就直接跟老板说吧。（bilang = berkata，aja = saja）",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-11 19:00",
+    "last_seen": "2026-10-28 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-07",
       "2026-09-09",
       "2026-09-10",
-      "2026-09-11"
+      "2026-09-11",
+      "2026-10-28"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
       "2026-09-07 19:00",
       "2026-09-09 19:00",
       "2026-09-10 19:00",
-      "2026-09-11 19:00"
+      "2026-09-11 19:00",
+      "2026-10-28 18:00"
     ]
   },
   {
@@ -7890,26 +7894,30 @@ window.DAILY_VOCAB_DB = [
     "en": "get stuck; be held up",
     "root": "sangkut",
     "root_cn": "挂住；卡住；牵连",
-    "example": "Approval-nya masih nyangkut di satu orang, jadi proses berikutnya belum jalan.",
-    "example_cn": "审批还卡在一个人那里，所以后面的流程还没动。",
+    "example": "Layangan anak itu nyangkut di kabel listrik.",
+    "example_cn": "那个孩子的风筝挂在电线上了。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-09-08 19:00",
+    "last_seen": "2026-10-28 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-10-28"
     ],
     "lesson_occurrences": [
       "2026-09-08 08:00",
-      "2026-09-08 19:00"
+      "2026-09-08 19:00",
+      "2026-10-28 18:00"
     ]
   },
   {
@@ -11860,16 +11868,16 @@ window.DAILY_VOCAB_DB = [
     "en": "development; construction",
     "root": "bangun",
     "root_cn": "建；起；醒",
-    "example": "Pembangunan jalan tol itu molor setahun, dan warga di sekitarnya ikut menanggung kerugian.",
-    "example_cn": "那条高速公路的工程拖了一年，周边居民也跟着承受损失。",
+    "example": "Pembangunan jembatan baru itu membuat jalan di depan sekolah macet setiap pagi.",
+    "example_cn": "那座新桥的施工让学校门前的路每天早上都堵车。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-10-23 18:00",
+    "last_seen": "2026-10-28 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -11878,13 +11886,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-18",
       "2026-09-30",
       "2026-10-06",
-      "2026-10-23"
+      "2026-10-23",
+      "2026-10-28"
     ],
     "lesson_occurrences": [
       "2026-09-18 18:00",
       "2026-09-30 08:00",
       "2026-10-06 08:00",
-      "2026-10-23 18:00"
+      "2026-10-23 18:00",
+      "2026-10-28 18:00"
     ]
   },
   {
@@ -16202,23 +16212,27 @@ window.DAILY_VOCAB_DB = [
     "en": "build; develop",
     "root": "bangun",
     "root_cn": "建；起；醒",
-    "example": "Perusahaan ingin membangun gudang baru tahun depan.",
-    "example_cn": "公司想明年建一个新仓库。",
+    "example": "Butuh waktu bertahun-tahun untuk membangun kepercayaan pelanggan, tetapi cukup satu hari untuk merusaknya.",
+    "example_cn": "建立顾客的信任要花好几年，毁掉它一天就够了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-10-28 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-28"
     ],
     "lesson_occurrences": [
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-10-28 18:00"
     ]
   },
   {
@@ -23568,27 +23582,29 @@ window.DAILY_VOCAB_DB = [
     "en": "combination; blend",
     "root": "padu",
     "root_cn": "协调；融合",
-    "example": "Sambal ini layak dicoba. Perpaduan pedas dan manisnya pas.",
-    "example_cn": "这款辣椒酱值得一试，辣和甜搭配得刚刚好。",
+    "example": "Kopi susu di kafe itu enak karena perpaduan gula aren dan susunya pas.",
+    "example_cn": "那家咖啡店的奶咖好喝，因为椰糖和牛奶搭配得刚刚好。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-10-24 18:00",
+    "last_seen": "2026-10-28 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-10-21",
-      "2026-10-24"
+      "2026-10-24",
+      "2026-10-28"
     ],
     "lesson_occurrences": [
       "2026-10-21 08:00",
-      "2026-10-24 18:00"
+      "2026-10-24 18:00",
+      "2026-10-28 18:00"
     ]
   },
   {
@@ -25930,23 +25946,26 @@ window.DAILY_VOCAB_DB = [
     "en": "hard; loud; strict",
     "root": "keras",
     "root_cn": "硬；猛；大声",
-    "example": "Tolong jangan bicara terlalu keras, bayinya baru saja tidur.",
-    "example_cn": "请别说话太大声，宝宝刚睡着。",
+    "example": "Maaf kalau tadi saya bicara terlalu keras, Bu.",
+    "example_cn": "对不起，刚才我说话太冲了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-28 08:00",
-    "last_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-28"
     ],
     "lesson_occurrences": [
-      "2026-10-28 08:00"
+      "2026-10-28 08:00",
+      "2026-10-28 18:00"
     ]
   },
   {
@@ -26030,23 +26049,26 @@ window.DAILY_VOCAB_DB = [
     "en": "rarely; seldom; sparse",
     "root": "jarang",
     "root_cn": "稀少",
-    "example": "Teman saya itu jarang ngaret. Kalau janjian jam tujuh, dia sudah datang sebelum jam tujuh.",
-    "example_cn": "我那个朋友很少迟到。约好七点，他七点前就到了。",
+    "example": "Sejak kerja dari rumah, aku jarang olahraga karena mager terus.",
+    "example_cn": "自从在家办公，我就很少运动，因为总是懒得动。（mager = malas gerak）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-28 08:00",
-    "last_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-28"
     ],
     "lesson_occurrences": [
-      "2026-10-28 08:00"
+      "2026-10-28 08:00",
+      "2026-10-28 18:00"
     ]
   },
   {
@@ -26122,6 +26144,81 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-28 08:00"
+    ]
+  },
+  {
+    "word": "karyawan",
+    "cn": "员工；职员（多指公司员工）",
+    "en": "employee",
+    "root": "karya",
+    "root_cn": "作品；工作成果",
+    "example": "Perusahaan itu membatasi jam lembur karyawan, maksimal dua jam sehari.",
+    "example_cn": "那家公司限制员工的加班时间，每天最多两个小时。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 18:00",
+    "last_seen": "2026-10-28 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 18:00"
+    ]
+  },
+  {
+    "word": "promosi",
+    "cn": "晋升；（商品）推广、促销",
+    "en": "promotion",
+    "root": "promosi",
+    "root_cn": "晋升；推广（外来词）",
+    "example": "Setelah tiga tahun berjuang di bagian penjualan, akhirnya dia dapat promosi jabatan.",
+    "example_cn": "在销售部拼了三年之后，他终于升职了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 18:00",
+    "last_seen": "2026-10-28 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 18:00"
+    ]
+  },
+  {
+    "word": "divisi",
+    "cn": "部门；事业部",
+    "en": "division; department",
+    "root": "divisi",
+    "root_cn": "部门（外来词）",
+    "example": "Divisi keuangan sedang menghitung ulang anggaran untuk tahun depan.",
+    "example_cn": "财务部正在重新核算明年的预算。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 18:00",
+    "last_seen": "2026-10-28 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 18:00"
     ]
   }
 ];

@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-28",
-    "session": "pm",
-    "time": "18:00",
-    "day": 68
+    "date": "2026-10-29",
+    "session": "am",
+    "time": "08:00",
+    "day": 69
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-28T03:40:38.293Z",
-    "lesson_watermark": "2026-10-28 08:00",
+    "runtime_generated_at": "2026-10-28T10:54:01.461Z",
+    "lesson_watermark": "2026-10-28 18:00",
     "index_updated": "2026-10-28",
-    "runtime_hash": "cf1471a93ea2381a73805eea78ca22eebcbc783046d1e4145693d9c848177ead",
-    "index_hash": "960939cd5590f95963acf71ae4812aee79518cd989bea7e2783e98ca031a1348",
+    "runtime_hash": "893ebda23a2cebc2ca212600f463a071cc9a5faf66229504c3f562c6863ae6ed",
+    "index_hash": "c267cc7464b756755524dcdfb15801d49d9dc5529a462e6c13e57baaf16905e6",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -309,18 +309,6 @@
       [
         "benci",
         "讨厌；恨"
-      ],
-      [
-        "karyawan",
-        "员工"
-      ],
-      [
-        "promosi",
-        "晋升；推广"
-      ],
-      [
-        "divisi",
-        "部门；事业部"
       ],
       [
         "mirip",
@@ -1083,16 +1071,6 @@
         "追上；随后跟上"
       ],
       [
-        "nyangkut",
-        2,
-        0,
-        "",
-        "",
-        "卡住；事情卡在某一步",
-        "sangkut",
-        "挂住；卡住；牵连"
-      ],
-      [
         "ngegas",
         2,
         0,
@@ -1111,16 +1089,6 @@
         "突然插一句；随口冒出一句（口语）",
         "celetuk",
         "随口插话；突然说一句"
-      ],
-      [
-        "ngulur",
-        3,
-        0,
-        "",
-        "",
-        "拖时间；故意往后拖",
-        "ulur",
-        "延长；拖长"
       ],
       [
         "serba salah",
@@ -2563,114 +2531,34 @@
         "输；失败"
       ],
       [
-        "membangun",
+        "pendidikan",
         2,
         0,
         "",
-        "2026-10-22T15:35:07.664Z",
-        "建造；建设；建立",
+        "2026-10-23T23:34:02.981Z",
+        "教育；教育程度",
+        "didik",
+        "教育；培养"
+      ],
+      [
+        "bangunan",
+        2,
+        0,
+        "",
+        "2026-10-19T13:14:27.119Z",
+        "建筑；建筑物",
         "bangun",
         "建；起；醒"
       ],
       [
-        "selasa",
-        3,
+        "lezat",
+        2,
         0,
         "",
-        "2026-10-28T03:34:30.123Z",
-        "星期二",
-        "",
-        ""
-      ],
-      [
-        "berita",
-        3,
-        0,
-        "",
-        "2026-10-28T03:34:06.673Z",
-        "新闻；消息",
-        "berita",
-        "新闻；消息"
-      ],
-      [
-        "keras",
-        3,
-        0,
-        "",
-        "2026-10-28T03:34:10.522Z",
-        "硬的；（声音）大的；用力的；严厉的",
-        "keras",
-        "硬；猛；大声"
-      ],
-      [
-        "sesuatu",
-        3,
-        0,
-        "",
-        "2026-10-28T03:34:35.066Z",
-        "某样东西；某件事",
-        "suatu",
-        "某一个"
-      ],
-      [
-        "pukul",
-        3,
-        0,
-        "",
-        "2026-10-28T03:34:28.064Z",
-        "（几）点钟；打",
-        "pukul",
-        "打；（几）点钟"
-      ],
-      [
-        "macam",
-        3,
-        0,
-        "",
-        "2026-10-28T03:34:20.384Z",
-        "种类；样子",
-        "macam",
-        "种类"
-      ],
-      [
-        "jarang",
-        3,
-        0,
-        "",
-        "2026-10-28T03:34:09.180Z",
-        "很少；不常；（头发、树等）稀疏",
-        "jarang",
-        "稀少"
-      ],
-      [
-        "menyatakan",
-        3,
-        0,
-        "",
-        "2026-10-28T03:34:24.914Z",
-        "声明；宣布；表示；表达",
-        "nyata",
-        "真实的；明显的"
-      ],
-      [
-        "pohon",
-        3,
-        0,
-        "",
-        "2026-10-28T03:34:26.980Z",
-        "树",
-        "pohon",
-        "树"
-      ],
-      [
-        "terang",
-        3,
-        0,
-        "",
-        "2026-10-28T03:34:36.994Z",
-        "明亮的；（天）亮的；清楚的",
-        "terang",
-        "亮；清楚"
+        "2026-10-22T15:34:26.552Z",
+        "美味的；可口的",
+        "lezat",
+        "美味"
       ]
     ],
     "focus": [
@@ -2936,45 +2824,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-10-21",
-      "session": "am",
-      "review_core": [
-        "menegaskan",
-        "tegas",
-        "komentar",
-        "mengenali",
-        "kelepasan"
-      ],
-      "new_words": [
-        "menyegarkan",
-        "paku",
-        "empuk",
-        "perkirakan",
-        "perpaduan",
-        "nuansa",
-        "menyaksikan",
-        "penampilan",
-        "panggung",
-        "konser"
-      ]
-    },
-    {
-      "date": "2026-10-21",
-      "session": "pm",
-      "review_core": [
-        "sedangkan",
-        "menerapkan",
-        "arah",
-        "mengarahkan",
-        "menunjukkan"
-      ],
-      "new_words": [
-        "memaksa",
-        "menempel",
-        "mengetahui"
-      ]
-    },
-    {
       "date": "2026-10-22",
       "session": "am",
       "review_core": [
@@ -3235,106 +3084,40 @@
         "pohon",
         "terang"
       ]
+    },
+    {
+      "date": "2026-10-28",
+      "session": "pm",
+      "review_core": [
+        "pembangunan",
+        "membangun",
+        "perpaduan",
+        "ngulur",
+        "nyangkut"
+      ],
+      "new_words": [
+        "karyawan",
+        "promosi",
+        "divisi"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-27",
+    "date": "2026-10-28",
     "new_words": [
-      "kurir",
-      "lancar",
-      "tanggung jawab"
+      "karyawan",
+      "promosi",
+      "divisi"
     ],
     "review_core": [
-      "mengakhiri",
-      "mengenali",
-      "teratur",
-      "ngatur",
-      "ngebut",
-      "nggak tega"
+      "pembangunan",
+      "membangun",
+      "perpaduan",
+      "ngulur",
+      "nyangkut"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-28",
-    "vocab": [
-      [
-        "selasa",
-        "星期二",
-        "Tuesday",
-        "",
-        ""
-      ],
-      [
-        "berita",
-        "新闻；消息",
-        "news",
-        "berita",
-        "新闻；消息"
-      ],
-      [
-        "keras",
-        "硬的；（声音）大的；用力的；严厉的",
-        "hard; loud; strict",
-        "keras",
-        "硬；猛；大声"
-      ],
-      [
-        "sesuatu",
-        "某样东西；某件事",
-        "something",
-        "suatu",
-        "某一个"
-      ],
-      [
-        "pukul",
-        "（几）点钟；打",
-        "o'clock; to hit",
-        "pukul",
-        "打；（几）点钟"
-      ],
-      [
-        "macam",
-        "种类；样子",
-        "kind; type",
-        "macam",
-        "种类"
-      ],
-      [
-        "jarang",
-        "很少；不常；（头发、树等）稀疏",
-        "rarely; seldom; sparse",
-        "jarang",
-        "稀少"
-      ],
-      [
-        "menyatakan",
-        "声明；宣布；表示；表达",
-        "to state; to declare; to express",
-        "nyata",
-        "真实的；明显的"
-      ],
-      [
-        "pohon",
-        "树",
-        "tree",
-        "pohon",
-        "树"
-      ],
-      [
-        "terang",
-        "明亮的；（天）亮的；清楚的",
-        "bright; light; clear",
-        "terang",
-        "亮；清楚"
-      ]
-    ],
-    "review_vocab": [
-      "praktis",
-      "kewalahan",
-      "ceplas-ceplos",
-      "kebuang",
-      "ngeribetin"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
