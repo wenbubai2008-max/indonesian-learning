@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-10-28T10:54:07.968Z",
-  "source_updated_at": "2026-10-28T03:34:47.548Z",
+  "generated_at": "2026-10-28T23:40:37.438Z",
+  "source_updated_at": "2026-10-28T15:42:21.949Z",
   "taught_total": 971,
   "confirmed_mastered": 203,
   "needs_reinforcement": 676,
@@ -45,15 +45,15 @@
     },
     {
       "word": "pembangunan",
-      "score": 116,
+      "score": 118,
       "signals": [
         "automation_fail",
         "lesson_wrong",
         "dont"
       ],
-      "wrong_count": 1,
-      "last_wrong": "2026-10-24T01:47:02.177Z",
-      "last_review": "2026-10-24T01:47:02.177Z",
+      "wrong_count": 2,
+      "last_wrong": "2026-10-28T15:40:31.426Z",
+      "last_review": "2026-10-28T15:40:31.426Z",
       "cn": "建设；发展；建造过程"
     },
     {

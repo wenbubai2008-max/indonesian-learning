@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-28T10:54:01.461Z",
+    "runtime_generated_at": "2026-10-28T23:40:37.269Z",
     "lesson_watermark": "2026-10-28 18:00",
     "index_updated": "2026-10-28",
-    "runtime_hash": "893ebda23a2cebc2ca212600f463a071cc9a5faf66229504c3f562c6863ae6ed",
+    "runtime_hash": "80f468f07d49fe216568b8d5e4e17a190e1701ec9b6aac1db03ee043f5b69b86",
     "index_hash": "c267cc7464b756755524dcdfb15801d49d9dc5529a462e6c13e57baaf16905e6",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
@@ -383,9 +383,9 @@
       [
         "pembangunan",
         1,
-        1,
-        "2026-10-24T01:47:02.177Z",
-        "2026-10-24T01:47:02.177Z",
+        2,
+        "2026-10-28T15:40:31.426Z",
+        "2026-10-28T15:40:31.426Z",
         "建设；发展；建造过程",
         "bangun",
         "建；起；醒"
@@ -811,6 +811,16 @@
         "经过；超过"
       ],
       [
+        "karyawan",
+        1,
+        1,
+        "2026-10-28T15:42:11.294Z",
+        "2026-10-28T15:42:11.294Z",
+        "员工；职员（多指公司员工）",
+        "karya",
+        "作品；工作成果"
+      ],
+      [
         "lancar",
         1,
         1,
@@ -949,16 +959,6 @@
         "胃口；口味；喜好",
         "selera",
         "胃口；喜好"
-      ],
-      [
-        "praktis",
-        1,
-        1,
-        "2026-10-23T23:34:50.746Z",
-        "2026-10-27T05:48:47.548Z",
-        "方便；省事；实用",
-        "praktis",
-        "方便；实用"
       ],
       [
         "tingkat",
@@ -2584,7 +2584,7 @@
       ],
       [
         "pembangunan",
-        116,
+        118,
         [
           "automation_fail",
           "lesson_wrong",
