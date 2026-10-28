@@ -4,16 +4,16 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 833,
+   "use": 843,
    "recognize": 105,
    "unsure": 20,
-   "fast": 131
+   "fast": 132
   },
   "active": {
-   "use": 556,
+   "use": 566,
    "recognize": 89,
    "unsure": 18,
-   "fast": 53
+   "fast": 54
   }
  },
  "words": {
@@ -8847,6 +8847,97 @@
    "status": "active",
    "why": [
     "977 主库第 863 位"
+   ]
+  },
+  "selasa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 321 位"
+   ]
+  },
+  "berita": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 322 位"
+   ]
+  },
+  "keras": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 325 位"
+   ]
+  },
+  "sesuatu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 331 位"
+   ]
+  },
+  "pukul": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 332 位"
+   ]
+  },
+  "macam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 335 位"
+   ]
+  },
+  "jarang": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（时间）",
+    "977 主库第 350 位"
+   ]
+  },
+  "menyatakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 351 位"
+   ]
+  },
+  "pohon": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 358 位"
+   ]
+  },
+  "terang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 383 位"
    ]
   }
  }
