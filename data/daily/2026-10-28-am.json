@@ -1,0 +1,341 @@
+{
+  "date": "2026-10-28",
+  "session": "am",
+  "time": "08:00",
+  "day": 68,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Pohon Tumbang di Depan Rumah Pak Joko · 乔科先生家门前的树倒了",
+  "new_words": [
+    "selasa",
+    "berita",
+    "keras",
+    "sesuatu",
+    "pukul",
+    "macam",
+    "jarang",
+    "menyatakan",
+    "pohon",
+    "terang"
+  ],
+  "vocab": [
+    {
+      "word": "selasa",
+      "display": "Selasa",
+      "audio_text": "Selasa",
+      "cn": "星期二",
+      "en": "Tuesday",
+      "root": "",
+      "root_cn": "",
+      "formation": "单纯名词，星期名，书写时首字母大写。常见搭配：hari Selasa（星期二）、Selasa pagi / sore（星期二早上／下午）、setiap Selasa（每个星期二）、Selasa depan（下星期二）、Selasa lalu（上星期二）。前面可以加 hari，也可以省略：Rapatnya (hari) Selasa.",
+      "example": "Kelas yoga khusus pemula diadakan setiap Selasa pukul enam sore.",
+      "example_cn": "专门给初学者的瑜伽课每个星期二下午六点上。",
+      "synonym_note": "Selasa 只指星期二，排在 Senin（星期一）之后。说“这个星期二”用 Selasa ini，“下星期二”用 Selasa depan。口语说法：聊天里“上星期二”常说 Selasa kemarin，写通知、正式场合用 Selasa lalu。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berita",
+      "display": "berita",
+      "audio_text": "berita",
+      "cn": "新闻；消息",
+      "en": "news",
+      "root": "berita",
+      "root_cn": "新闻；消息",
+      "formation": "名词。常见搭配：menonton berita（看新闻）、membaca berita（读新闻）、berita pagi / malam（早间／晚间新闻）、berita utama（头条新闻）、menurut berita（据新闻报道）。同词根：memberitakan（报道）、pemberitaan（新闻报道，书面）。",
+      "example": "Menurut berita pagi ini, suhu di Jakarta siang nanti bisa mencapai 36 derajat.",
+      "example_cn": "据今天早上的新闻，雅加达今天中午的气温可能达到 36 度。",
+      "synonym_note": "berita 多指媒体上的新闻、报道；kabar 是“消息、近况”，问候 Apa kabar? 就是这个词；info 是口语里的“消息、通知”。“有个好消息”日常更常说 Ada kabar baik.；说电视、网上的新闻用 berita。口语说法：朋友之间也常说 beritanya（那条新闻）、liat berita（= melihat berita，看新闻）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "keras",
+      "display": "keras",
+      "audio_text": "keras",
+      "cn": "硬的；（声音）大的；用力的；严厉的",
+      "en": "hard; loud; strict",
+      "root": "keras",
+      "root_cn": "硬；猛；大声",
+      "formation": "形容词，意思随搭配变：suara keras（声音很大）、bicara terlalu keras（说话太大声）、kerja keras（努力工作）、roti keras（硬面包）、aturan keras（严格的规定）。同词根：mengeraskan（加大、使变硬：mengeraskan suara TV）、kekerasan（暴力）；固定说法 keras kepala（固执）。",
+      "example": "Tolong jangan bicara terlalu keras, bayinya baru saja tidur.",
+      "example_cn": "请别说话太大声，宝宝刚睡着。",
+      "synonym_note": "注意：“雨下得很大”说 hujan deras，一般不说 hujan keras；风很大常说 angin kencang。keras 讲声音大、东西硬、态度严。说“用力”也可以：Dia memukul meja dengan keras.（他用力拍了桌子）。口语说法：说音乐、声音大，朋友之间常说 kenceng（= kencang）：Musiknya kenceng banget.；“大声点”也说 Yang keras dong!",
+      "is_oral_new": false
+    },
+    {
+      "word": "sesuatu",
+      "display": "sesuatu",
+      "audio_text": "sesuatu",
+      "cn": "某样东西；某件事",
+      "en": "something",
+      "root": "suatu",
+      "root_cn": "某一个",
+      "formation": "se- + suatu → sesuatu，单独当名词用。常见搭配：ada sesuatu yang……（有某件事／某样东西……）、sesuatu yang penting（重要的事）、mencari sesuatu（找东西）。suatu 本身后面必须接名词：suatu hari（有一天）、pada suatu waktu（某个时候）。",
+      "example": "Saya merasa ada sesuatu yang kelewat dari daftar belanja ini, tapi belum ketemu.",
+      "example_cn": "我觉得这张购物清单好像漏了什么，可还没找出来。",
+      "synonym_note": "sesuatu 单独用：Ada sesuatu di dalam tas.；suatu 要接名词：suatu hari。否定句、疑问句里“什么也（没）”常用 apa-apa：Nggak ada apa-apa.（没什么事）。sesuatu 不只指东西，也可以指事情：Ada sesuatu yang mau saya bicarakan.（我有件事想谈谈）。口语说法：口语里也说 sesuatu；“有点事要办”日常多说 ada urusan / ada perlu。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pukul",
+      "display": "pukul",
+      "audio_text": "pukul",
+      "cn": "（几）点钟；打",
+      "en": "o'clock; to hit",
+      "root": "pukul",
+      "root_cn": "打；（几）点钟",
+      "formation": "词根。表示时间：pukul tujuh pagi（早上七点）、pukul 10.30（十点半）、sejak pukul…… sampai pukul……（从……点到……点）、sekitar pukul dua（大约两点）。表示“打”时，动词多用 memukul（meN- + pukul，p 脱落），pukul 单独作“打”多见于命令句或固定说法。",
+      "example": "Toko itu buka dari pukul sembilan pagi sampai pukul sembilan malam.",
+      "example_cn": "那家店从早上九点开到晚上九点。",
+      "synonym_note": "pukul 和 jam 都能表示“……点”。pukul 偏正式，通知、新闻、日程表常用：Rapat dimulai pukul 09.00.；jam 还可以表示“小时”（dua jam = 两个小时），pukul 没有这个意思。口语说法：日常聊天多说 jam：jam tujuh、Jam berapa sekarang?；正式场合问时间也可以说 Pukul berapa?",
+      "is_oral_new": false
+    },
+    {
+      "word": "macam",
+      "display": "macam",
+      "audio_text": "macam",
+      "cn": "种类；样子",
+      "en": "kind; type",
+      "root": "macam",
+      "root_cn": "种类",
+      "formation": "名词。常见搭配：macam-macam（各种各样）、bermacam-macam（各式各样，较书面）、berapa macam（几种）、semacam（一种……；类似……的）、macam apa（什么样的）。",
+      "example": "Di warung itu ada macam-macam gorengan: tahu, tempe, dan pisang goreng.",
+      "example_cn": "那个小摊上有各种各样的炸物：炸豆腐、炸天贝和炸香蕉。",
+      "synonym_note": "macam 和 jenis 都是“种类”；jenis 更偏分类、书面（jenis kelamin 性别、jenis kendaraan 车辆类型），macam-macam 更口语，常带“五花八门”的感觉：Alasannya macam-macam.（理由五花八门）。口语说法：聊天里 macam-macam 常读成 macem-macem。",
+      "is_oral_new": false
+    },
+    {
+      "word": "jarang",
+      "display": "jarang",
+      "audio_text": "jarang",
+      "cn": "很少；不常；（头发、树等）稀疏",
+      "en": "rarely; seldom; sparse",
+      "root": "jarang",
+      "root_cn": "稀少",
+      "formation": "副词／形容词。常见搭配：jarang + 动词（jarang masak 很少做饭）、jarang sekali（非常少）、sudah jarang（已经很少）、jarang terjadi（很少发生）、tidak jarang（不少见、相当常见，书面）、jarang-jarang（难得）。",
+      "example": "Teman saya itu jarang ngaret. Kalau janjian jam tujuh, dia sudah datang sebelum jam tujuh.",
+      "example_cn": "我那个朋友很少迟到。约好七点，他七点前就到了。",
+      "synonym_note": "jarang 本身就带否定意思，后面直接接动词：Saya jarang makan pedas.（我很少吃辣）；反义词是 sering（常常）。tidak jarang 是“经常、不少见”，意思反过来了，多用在书面。口语说法：jarang 口语照样用；jarang-jarang 表示“难得”：Jarang-jarang kamu datang pagi!（你难得来这么早！）",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyatakan",
+      "display": "menyatakan",
+      "audio_text": "menyatakan",
+      "cn": "声明；宣布；表示；表达",
+      "en": "to state; to declare; to express",
+      "root": "nyata",
+      "root_cn": "真实的；明显的",
+      "formation": "meN- + nyata + -kan → menyatakan（词根以 ny 开头，前缀写作 me-）。常见搭配：menyatakan bahwa……（宣布／表示……）、menyatakan pendapat（发表意见）、menyatakan cinta（表白）、dinyatakan lulus（被宣布通过）。同词根：pernyataan（声明）、kenyataan（现实）、nyata（真实的）。",
+      "example": "Pihak sekolah menyatakan bahwa ujian hari Selasa ditunda, tetapi tidak menjelaskan sebabnya.",
+      "example_cn": "校方宣布星期二的考试延期，但没有说明原因。",
+      "synonym_note": "menyatakan 偏正式，多用于官方、新闻、书面：Polisi menyatakan bahwa……；mengatakan 是一般的“说”；mengungkapkan 偏“表达（感受、想法）”。口语说法：日常转述别人的话不用 menyatakan，用 bilang 或 katanya：Sekolah bilang ujiannya ditunda. / Katanya ujiannya ditunda.；“表白”口语说 nyatain perasaan 或 nembak。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pohon",
+      "display": "pohon",
+      "audio_text": "pohon",
+      "cn": "树",
+      "en": "tree",
+      "root": "pohon",
+      "root_cn": "树",
+      "formation": "名词。常见搭配：pohon mangga（芒果树）、di bawah pohon（在树下）、menanam pohon（种树）、memanjat pohon（爬树）、pohon tumbang（树倒了）。同词根：pepohonan（成片的树木，书面）。",
+      "example": "Anak-anak suka main di bawah pohon mangga di belakang rumah Nenek.",
+      "example_cn": "孩子们喜欢在奶奶家后面的芒果树下玩。",
+      "synonym_note": "pohon 是长着的树；kayu 是木头、木材：meja kayu（木桌）。树被风刮倒，新闻和日常都说 pohon tumbang，也可以说 pohonnya roboh；pohon jatuh 听起来像树从高处掉下来，不常这么说。",
+      "is_oral_new": false
+    },
+    {
+      "word": "terang",
+      "display": "terang",
+      "audio_text": "terang",
+      "cn": "明亮的；（天）亮的；清楚的",
+      "en": "bright; light; clear",
+      "root": "terang",
+      "root_cn": "亮；清楚",
+      "formation": "形容词。常见搭配：lampunya terang（灯很亮）、langit sudah terang（天已经亮了）、warna terang（亮色、浅色）、terus terang（坦白说、直说）、terang-terangan（公开地、毫不掩饰地）。同词根：menerangkan（解释、说明）、keterangan（说明；证明）、penerangan（照明）。",
+      "example": "Kamar ini terang sekali karena jendelanya besar, jadi siang-siang tidak perlu menyalakan lampu.",
+      "example_cn": "这个房间很亮，因为窗户很大，所以白天不用开灯。",
+      "synonym_note": "terang 讲光线亮，反义词是 gelap（暗）；说话“清楚、明白”多用 jelas：Suaranya jelas.。terus terang 是固定说法“坦白说”，可以放句首：Terus terang, saya kurang setuju.。口语说法：朋友之间说“老实说”常用 terus terang aja……，也说 jujur aja……。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "praktis",
+    "kewalahan",
+    "ceplas-ceplos",
+    "kebuang",
+    "ngeribetin"
+  ],
+  "sentences": [
+    {
+      "text": "Udah, nggak usah ngeribetin. Bayar pakai QRIS aja, lebih praktis.",
+      "cn": "行了，别搞复杂了。用 QRIS 扫码付就好，更省事。（udah = sudah，nggak = tidak，ngeribetin = meribetkan，aja = saja）"
+    },
+    {
+      "text": "Sayang banget, nasinya kebuang. Harusnya tadi kita masak sedikit aja.",
+      "cn": "太可惜了，米饭白白倒掉了。我们刚才本该少做一点的。（kebuang = terbuang，harusnya = seharusnya，aja = saja）"
+    },
+    {
+      "text": "Rina orangnya ceplas-ceplos. Kalau nggak suka sesuatu, dia langsung bilang terus terang.",
+      "cn": "莉娜这个人说话直来直去。要是不喜欢什么，她会直接坦白说出来。（nggak = tidak，bilang = berkata）"
+    },
+    {
+      "text": "Rapat hari Selasa diundur ke pukul tiga sore karena manajer kami masih demam.",
+      "cn": "星期二的会议推迟到下午三点，因为我们经理还在发烧。"
+    },
+    {
+      "text": "Pedagang di pasar itu jarang memberi diskon, kecuali kalau kita beli banyak.",
+      "cn": "那个市场的商贩很少给折扣，除非我们买得多。"
+    }
+  ],
+  "reading": {
+    "text": "Selasa pagi, Pak Joko bangun lebih awal. Semalam hujan turun dengan angin yang sangat kencang. Sekitar pukul dua, dia mendengar suara keras dari depan rumah. Dia mengira ada sesuatu yang jatuh ke atap, tetapi karena masih hujan, dia tidak berani keluar. Ternyata pohon mangga di depan rumahnya tumbang dan menutup jalan. Menurut berita pagi, angin sekencang itu jarang terjadi di Jakarta. Wali kota menyatakan bahwa petugas sedang bekerja, tetapi mereka kewalahan karena lebih dari seratus pohon tumbang di seluruh kota. Pak Joko dan para tetangga tidak mau menunggu. Mereka membawa macam-macam peralatan, seperti gergaji dan tali, lalu memindahkan dahan-dahan ke pinggir jalan. Sekitar pukul sembilan, jalan sudah bisa dilewati lagi, dan langit pun sudah terang.",
+    "cn": "星期二早上，乔科先生很早就起来了。昨晚下着雨，风刮得非常猛。大约两点，他听到屋前传来一声巨响。他以为有什么东西掉到了屋顶上，可因为还在下雨，他不敢出去。原来，他家门前的芒果树倒了，把路堵住了。据早间新闻报道，这么大的风在雅加达很少见。市长表示，工作人员正在处理，但全市倒了一百多棵树，他们忙不过来。乔科先生和邻居们不想干等。他们带上锯子、绳子等各种工具，把树枝一根根挪到路边。大约九点，路又能通行了，天也已经放亮了。"
+  },
+  "quiz": [
+    {
+      "question": "Bu Rina baru seminggu jadi guru TK. Di kelasnya ada 30 anak, dan semuanya aktif sekali. Hari pertama dia benar-benar ___ menghadapi mereka. 空格里哪个最自然？",
+      "options": [
+        "kelewatan",
+        "kewalahan",
+        "keberatan",
+        "ketinggalan"
+      ],
+      "answer_index": 1,
+      "answer": "kewalahan",
+      "explain": "一个人要应付的人或事太多、招架不住，说 kewalahan，常见搭配 kewalahan menghadapi……（应付……应付不过来）、kewalahan melayani pesanan（订单多得忙不过来）。kelewatan 是“过分了”或“错过了”；keberatan 是“觉得有负担、有意见”：Saya keberatan kalau……；ketinggalan 是“落下、没赶上”。"
+    },
+    {
+      "question": "Kamu mengirim pesan ke tetangga: \"Pak, maaf mengganggu. Suara musik dari rumah Bapak ___ sekali, anak saya tidak bisa tidur.\" 空格里哪个最自然？",
+      "options": [
+        "deras",
+        "tinggi",
+        "kuat",
+        "keras"
+      ],
+      "answer_index": 3,
+      "answer": "keras",
+      "explain": "声音、音乐“大”用 keras（口语也说 kenceng）。deras 只说雨或水流急：hujan deras；tinggi 讲音调高（suara tinggi 是高音），不是音量大；kuat 是力气大、结实、（信号）强，不用来说音乐吵。"
+    },
+    {
+      "question": "Di berita malam: \"Juru bicara rumah sakit ___ bahwa kondisi pasien sudah stabil dan keluarga boleh menjenguk besok.\" 空格里哪个最自然？",
+      "options": [
+        "menanyakan",
+        "menyalakan",
+        "menyatakan",
+        "menyetujui"
+      ],
+      "answer_index": 2,
+      "answer": "menyatakan",
+      "explain": "新闻里转述官方“表示、宣布……”，用 menyatakan bahwa……。menanyakan 是“询问”，后面不接 bahwa；menyalakan 是“点燃、打开（灯、火）”；menyetujui 是“同意、批准”，宾语通常是计划、请求（menyetujui rencana），放在这里意思不对。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语，给同事或上司发一条消息，说说昨晚遇到的一件突发情况（停电、打雷、漏水……）：发生了什么、对今天有什么影响、你打算几点完成手上的事。至少用 pukul、keras、jarang、selasa、sesuatu 中的两个。",
+    "reference_answer": "Bu Sinta, maaf, pagi ini saya masuk sekitar pukul sepuluh. Semalam suara petirnya keras sekali, lalu listrik di rumah saya mati sampai pagi. Kejadian seperti ini jarang terjadi, jadi saya kekurangan lilin dan tidak bisa menyelesaikan laporan tadi malam. Laporannya akan saya kirim sebelum pukul dua siang.",
+    "reference_cn": "辛塔女士，抱歉，我今天上午大约十点到。昨晚雷声特别响，然后我家一直停电到早上。这种情况很少发生，所以我家蜡烛不够，昨晚没能把报告做完。报告我会在下午两点前发过去。"
+  },
+  "review": [
+    "3 秒主动提取：看中文马上说印尼语——星期二、新闻、（声音）大／硬、某样东西、……点钟、种类、很少、声明／宣布、树、明亮的；说不出来的回看词卡再说一遍。",
+    "易混词：keras（声音大、硬）vs deras（雨大）vs kencang（风大，口语也说声音大）；pukul（正式的“……点”）vs jam（日常，也表示“小时”）；sesuatu（单独用）vs suatu（后接名词）vs apa-apa（否定、疑问）；menyatakan（正式宣布）vs bilang（口语转述）；jarang（很少）vs tidak jarang（经常）；terang（光线亮）vs jelas（说得清楚）。",
+    "复习词应用：kewalahan（最近常错）换个用法——kewalahan menghadapi + 人／kewalahan melayani pesanan，说一句你应付不过来的时候；反义一对 praktis（省事）vs ngeribetin（把事搞复杂），各说一句；用 kebuang 说一次东西白白浪费了；用 ceplas-ceplos 说一个说话直来直去的朋友。"
+  ],
+  "review_cards": {
+    "recall": [
+      { "cn": "星期二", "id": "selasa" },
+      { "cn": "新闻", "id": "berita" },
+      { "cn": "（声音）大；硬", "id": "keras" },
+      { "cn": "某样东西；某件事", "id": "sesuatu" },
+      { "cn": "（几）点钟（正式）", "id": "pukul" },
+      { "cn": "种类", "id": "macam" },
+      { "cn": "很少；不常", "id": "jarang" },
+      { "cn": "声明；宣布", "id": "menyatakan" },
+      { "cn": "树", "id": "pohon" },
+      { "cn": "明亮的", "id": "terang" },
+      { "cn": "忙不过来；招架不住", "id": "kewalahan" },
+      { "cn": "省事；方便", "id": "praktis" }
+    ],
+    "frames": [
+      "Menurut berita …, …",
+      "Sekitar pukul …, …",
+      "Nggak usah ngeribetin. … aja, lebih praktis."
+    ],
+    "contrasts": [
+      {
+        "items": [
+          { "id": "keras", "cn": "声音大；硬" },
+          { "id": "deras", "cn": "雨大、水流急" },
+          { "id": "kencang", "cn": "风大；口语也说声音大" }
+        ],
+        "note": "suara keras（声音大）/ hujan deras（雨大）/ angin kencang（风大）"
+      },
+      {
+        "items": [
+          { "id": "pukul", "cn": "正式：……点" },
+          { "id": "jam", "cn": "日常：……点；小时" }
+        ],
+        "note": "Rapat dimulai pukul 09.00.（通知）/ Jam berapa sekarang?（聊天）/ dua jam（两个小时）"
+      },
+      {
+        "items": [
+          { "id": "sesuatu", "cn": "某样东西（单独用）" },
+          { "id": "suatu", "cn": "某一个（后接名词）" },
+          { "id": "apa-apa", "cn": "什么（否定、疑问）" }
+        ],
+        "note": "Ada sesuatu di tas. / suatu hari / Nggak ada apa-apa."
+      },
+      {
+        "items": [
+          { "id": "praktis", "cn": "省事；方便" },
+          { "id": "ngeribetin", "cn": "把事情搞复杂" }
+        ],
+        "note": "一对反义：Pakai QRIS lebih praktis. / Nggak usah ngeribetin."
+      }
+    ],
+    "apply": [
+      {
+        "word": "kewalahan",
+        "usage": "要应付的人或事太多、招架不住；常接 menghadapi + 人 或 melayani + 事。",
+        "examples": [
+          { "id": "Hari pertama dia benar-benar kewalahan menghadapi mereka.", "cn": "第一天她真是被他们弄得招架不住。" }
+        ]
+      },
+      {
+        "word": "kebuang",
+        "usage": "口语：东西白白浪费、被倒掉（正式说 terbuang）。",
+        "examples": [
+          { "id": "Sayang banget, nasinya kebuang.", "cn": "太可惜了，米饭白白倒掉了。" }
+        ]
+      },
+      {
+        "word": "ceplas-ceplos",
+        "usage": "说话直来直去、想到什么说什么，多用来形容人。",
+        "examples": [
+          { "id": "Rina orangnya ceplas-ceplos.", "cn": "莉娜这个人说话直来直去。" }
+        ]
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "jarang",
+      "menyatakan",
+      "keras"
+    ],
+    "patterns": [
+      {
+        "pattern": "Menurut berita …, …",
+        "cn": "据……新闻报道，……",
+        "example": "Menurut berita pagi, angin sekencang itu jarang terjadi di Jakarta.",
+        "example_cn": "据早间新闻报道，这么大的风在雅加达很少见。"
+      },
+      {
+        "pattern": "… aja, lebih …",
+        "cn": "就……好了，更……",
+        "example": "Bayar pakai QRIS aja, lebih praktis.",
+        "example_cn": "用 QRIS 扫码付就好，更省事。"
+      }
+    ]
+  }
+}
