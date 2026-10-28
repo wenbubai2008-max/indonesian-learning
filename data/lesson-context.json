@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-28",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 68
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-27T23:40:41.804Z",
-    "lesson_watermark": "2026-10-27 18:00",
-    "index_updated": "2026-10-27",
-    "runtime_hash": "a83ae8b5848b8f2e80aec5fd9a90b0a5ff9f3cb3d0ede548e0621b28f6bc4ec3",
-    "index_hash": "2bc6b5f46bb6c93a179f5a27468e90d9be2ce1cdface33507108409690383fc2",
+    "runtime_generated_at": "2026-10-28T00:32:01.331Z",
+    "lesson_watermark": "2026-10-28 08:00",
+    "index_updated": "2026-10-28",
+    "runtime_hash": "624934ae89b058ad61f28b7ff672be78f5765d6c103e27735c9c3cb13dffc7fe",
+    "index_hash": "960939cd5590f95963acf71ae4812aee79518cd989bea7e2783e98ca031a1348",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -50,46 +50,6 @@
   "candidates": {
     "new_dont": [],
     "new_fuzzy": [
-      [
-        "selasa",
-        "星期二"
-      ],
-      [
-        "berita",
-        "新闻"
-      ],
-      [
-        "keras",
-        "硬的、猛烈"
-      ],
-      [
-        "sesuatu",
-        "某物，某件事"
-      ],
-      [
-        "pukul",
-        "打 / 点钟"
-      ],
-      [
-        "macam",
-        "种类"
-      ],
-      [
-        "jarang",
-        "很少 / 偶尔"
-      ],
-      [
-        "menyatakan",
-        "声明 / 表达"
-      ],
-      [
-        "pohon",
-        "树"
-      ],
-      [
-        "terang",
-        "明亮的 / 清晰的"
-      ],
       [
         "momen",
         "片刻 / 瞬间"
@@ -1133,16 +1093,6 @@
         "挂住；卡住；牵连"
       ],
       [
-        "ngeribetin",
-        3,
-        0,
-        "",
-        "",
-        "把事情搞复杂；让事情更麻烦",
-        "ribet",
-        "麻烦；复杂"
-      ],
-      [
         "ngegas",
         2,
         0,
@@ -1163,16 +1113,6 @@
         "随口插话；突然说一句"
       ],
       [
-        "ceplas-ceplos",
-        3,
-        0,
-        "",
-        "",
-        "说话直来直去；想到什么说什么",
-        "ceplas-ceplos",
-        "直来直去地说"
-      ],
-      [
         "ngulur",
         3,
         0,
@@ -1191,16 +1131,6 @@
         "左右为难；怎么做都不对",
         "salah",
         "错；不对"
-      ],
-      [
-        "kebuang",
-        4,
-        0,
-        "2026-09-22T13:15:49.160Z",
-        "2026-10-26T07:50:05.800Z",
-        "被白白浪费掉",
-        "buang",
-        "扔掉；浪费"
       ],
       [
         "ngeles",
@@ -2611,6 +2541,136 @@
         "民族；国家",
         "bangsa",
         "民族；国家"
+      ],
+      [
+        "demikian",
+        2,
+        0,
+        "",
+        "2026-10-21T01:42:34.625Z",
+        "如此；这样",
+        "demikian",
+        "如此；这样"
+      ],
+      [
+        "kalah",
+        2,
+        0,
+        "",
+        "2026-10-21T01:44:22.292Z",
+        "输；失败",
+        "kalah",
+        "输；失败"
+      ],
+      [
+        "membangun",
+        2,
+        0,
+        "",
+        "2026-10-22T15:35:07.664Z",
+        "建造；建设；建立",
+        "bangun",
+        "建；起；醒"
+      ],
+      [
+        "selasa",
+        3,
+        0,
+        "",
+        "",
+        "星期二",
+        "",
+        ""
+      ],
+      [
+        "berita",
+        3,
+        0,
+        "",
+        "",
+        "新闻；消息",
+        "berita",
+        "新闻；消息"
+      ],
+      [
+        "keras",
+        3,
+        0,
+        "",
+        "",
+        "硬的；（声音）大的；用力的；严厉的",
+        "keras",
+        "硬；猛；大声"
+      ],
+      [
+        "sesuatu",
+        3,
+        0,
+        "",
+        "",
+        "某样东西；某件事",
+        "suatu",
+        "某一个"
+      ],
+      [
+        "pukul",
+        3,
+        0,
+        "",
+        "",
+        "（几）点钟；打",
+        "pukul",
+        "打；（几）点钟"
+      ],
+      [
+        "macam",
+        3,
+        0,
+        "",
+        "",
+        "种类；样子",
+        "macam",
+        "种类"
+      ],
+      [
+        "jarang",
+        3,
+        0,
+        "",
+        "",
+        "很少；不常；（头发、树等）稀疏",
+        "jarang",
+        "稀少"
+      ],
+      [
+        "menyatakan",
+        3,
+        0,
+        "",
+        "",
+        "声明；宣布；表示；表达",
+        "nyata",
+        "真实的；明显的"
+      ],
+      [
+        "pohon",
+        3,
+        0,
+        "",
+        "",
+        "树",
+        "pohon",
+        "树"
+      ],
+      [
+        "terang",
+        3,
+        0,
+        "",
+        "",
+        "明亮的；（天）亮的；清楚的",
+        "terang",
+        "亮；清楚"
       ]
     ],
     "focus": [
@@ -3152,6 +3212,29 @@
         "lancar",
         "tanggung jawab"
       ]
+    },
+    {
+      "date": "2026-10-28",
+      "session": "am",
+      "review_core": [
+        "praktis",
+        "kewalahan",
+        "ceplas-ceplos",
+        "kebuang",
+        "ngeribetin"
+      ],
+      "new_words": [
+        "selasa",
+        "berita",
+        "keras",
+        "sesuatu",
+        "pukul",
+        "macam",
+        "jarang",
+        "menyatakan",
+        "pohon",
+        "terang"
+      ]
     }
   ],
   "previous_pm": {
@@ -3170,7 +3253,88 @@
       "nggak tega"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-28",
+    "vocab": [
+      [
+        "selasa",
+        "星期二",
+        "Tuesday",
+        "",
+        ""
+      ],
+      [
+        "berita",
+        "新闻；消息",
+        "news",
+        "berita",
+        "新闻；消息"
+      ],
+      [
+        "keras",
+        "硬的；（声音）大的；用力的；严厉的",
+        "hard; loud; strict",
+        "keras",
+        "硬；猛；大声"
+      ],
+      [
+        "sesuatu",
+        "某样东西；某件事",
+        "something",
+        "suatu",
+        "某一个"
+      ],
+      [
+        "pukul",
+        "（几）点钟；打",
+        "o'clock; to hit",
+        "pukul",
+        "打；（几）点钟"
+      ],
+      [
+        "macam",
+        "种类；样子",
+        "kind; type",
+        "macam",
+        "种类"
+      ],
+      [
+        "jarang",
+        "很少；不常；（头发、树等）稀疏",
+        "rarely; seldom; sparse",
+        "jarang",
+        "稀少"
+      ],
+      [
+        "menyatakan",
+        "声明；宣布；表示；表达",
+        "to state; to declare; to express",
+        "nyata",
+        "真实的；明显的"
+      ],
+      [
+        "pohon",
+        "树",
+        "tree",
+        "pohon",
+        "树"
+      ],
+      [
+        "terang",
+        "明亮的；（天）亮的；清楚的",
+        "bright; light; clear",
+        "terang",
+        "亮；清楚"
+      ]
+    ],
+    "review_vocab": [
+      "praktis",
+      "kewalahan",
+      "ceplas-ceplos",
+      "kebuang",
+      "ngeribetin"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

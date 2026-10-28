@@ -5624,13 +5624,15 @@ window.DAILY_VOCAB_DB = [
     "root": "buang",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 10,
+    "times_seen": 11,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-09-11 19:00",
+    "last_seen": "2026-10-28 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-02",
@@ -5642,7 +5644,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-08",
       "2026-09-09",
       "2026-09-10",
-      "2026-09-11"
+      "2026-09-11",
+      "2026-10-28"
     ],
     "example": "Kalau terus mikirin hal kecil, energi kita malah kebuang.",
     "example_cn": "如果一直纠结小事，我们的精力反而会被浪费。",
@@ -5657,7 +5660,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-08 19:00",
       "2026-09-09 19:00",
       "2026-09-10 19:00",
-      "2026-09-11 19:00"
+      "2026-09-11 19:00",
+      "2026-10-28 08:00"
     ]
   },
   {
@@ -7475,9 +7479,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-10-16 08:00",
+    "last_seen": "2026-10-28 08:00",
     "sessions": [
       "08:00",
       "19:00"
@@ -7485,12 +7489,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-07",
       "2026-09-08",
-      "2026-10-16"
+      "2026-10-16",
+      "2026-10-28"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
       "2026-09-08 19:00",
-      "2026-10-16 08:00"
+      "2026-10-16 08:00",
+      "2026-10-28 08:00"
     ]
   },
   {
@@ -8352,19 +8358,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-09 19:00",
+    "last_seen": "2026-10-28 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-09"
+      "2026-09-09",
+      "2026-10-28"
     ],
     "lesson_occurrences": [
       "2026-09-09 08:00",
-      "2026-09-09 19:00"
+      "2026-09-09 19:00",
+      "2026-10-28 08:00"
     ]
   },
   {
@@ -9298,19 +9306,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-09-11 19:00",
+    "last_seen": "2026-10-28 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-11"
+      "2026-09-11",
+      "2026-10-28"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
-      "2026-09-11 19:00"
+      "2026-09-11 19:00",
+      "2026-10-28 08:00"
     ]
   },
   {
@@ -18815,17 +18825,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-07 08:00",
-    "last_seen": "2026-10-07 08:00",
+    "last_seen": "2026-10-28 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-07"
+      "2026-10-07",
+      "2026-10-28"
     ],
     "lesson_occurrences": [
-      "2026-10-07 08:00"
+      "2026-10-07 08:00",
+      "2026-10-28 08:00"
     ]
   },
   {
@@ -25860,6 +25872,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-27 18:00"
+    ]
+  },
+  {
+    "word": "selasa",
+    "cn": "星期二",
+    "en": "Tuesday",
+    "root": "",
+    "root_cn": "",
+    "example": "Kelas yoga khusus pemula diadakan setiap Selasa pukul enam sore.",
+    "example_cn": "专门给初学者的瑜伽课每个星期二下午六点上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 08:00"
+    ]
+  },
+  {
+    "word": "berita",
+    "cn": "新闻；消息",
+    "en": "news",
+    "root": "berita",
+    "root_cn": "新闻；消息",
+    "example": "Menurut berita pagi ini, suhu di Jakarta siang nanti bisa mencapai 36 derajat.",
+    "example_cn": "据今天早上的新闻，雅加达今天中午的气温可能达到 36 度。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 08:00"
+    ]
+  },
+  {
+    "word": "keras",
+    "cn": "硬的；（声音）大的；用力的；严厉的",
+    "en": "hard; loud; strict",
+    "root": "keras",
+    "root_cn": "硬；猛；大声",
+    "example": "Tolong jangan bicara terlalu keras, bayinya baru saja tidur.",
+    "example_cn": "请别说话太大声，宝宝刚睡着。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 08:00"
+    ]
+  },
+  {
+    "word": "sesuatu",
+    "cn": "某样东西；某件事",
+    "en": "something",
+    "root": "suatu",
+    "root_cn": "某一个",
+    "example": "Saya merasa ada sesuatu yang kelewat dari daftar belanja ini, tapi belum ketemu.",
+    "example_cn": "我觉得这张购物清单好像漏了什么，可还没找出来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 08:00"
+    ]
+  },
+  {
+    "word": "pukul",
+    "cn": "（几）点钟；打",
+    "en": "o'clock; to hit",
+    "root": "pukul",
+    "root_cn": "打；（几）点钟",
+    "example": "Toko itu buka dari pukul sembilan pagi sampai pukul sembilan malam.",
+    "example_cn": "那家店从早上九点开到晚上九点。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 08:00"
+    ]
+  },
+  {
+    "word": "macam",
+    "cn": "种类；样子",
+    "en": "kind; type",
+    "root": "macam",
+    "root_cn": "种类",
+    "example": "Di warung itu ada macam-macam gorengan: tahu, tempe, dan pisang goreng.",
+    "example_cn": "那个小摊上有各种各样的炸物：炸豆腐、炸天贝和炸香蕉。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 08:00"
+    ]
+  },
+  {
+    "word": "jarang",
+    "cn": "很少；不常；（头发、树等）稀疏",
+    "en": "rarely; seldom; sparse",
+    "root": "jarang",
+    "root_cn": "稀少",
+    "example": "Teman saya itu jarang ngaret. Kalau janjian jam tujuh, dia sudah datang sebelum jam tujuh.",
+    "example_cn": "我那个朋友很少迟到。约好七点，他七点前就到了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 08:00"
+    ]
+  },
+  {
+    "word": "menyatakan",
+    "cn": "声明；宣布；表示；表达",
+    "en": "to state; to declare; to express",
+    "root": "nyata",
+    "root_cn": "真实的；明显的",
+    "example": "Pihak sekolah menyatakan bahwa ujian hari Selasa ditunda, tetapi tidak menjelaskan sebabnya.",
+    "example_cn": "校方宣布星期二的考试延期，但没有说明原因。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 08:00"
+    ]
+  },
+  {
+    "word": "pohon",
+    "cn": "树",
+    "en": "tree",
+    "root": "pohon",
+    "root_cn": "树",
+    "example": "Anak-anak suka main di bawah pohon mangga di belakang rumah Nenek.",
+    "example_cn": "孩子们喜欢在奶奶家后面的芒果树下玩。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 08:00"
+    ]
+  },
+  {
+    "word": "terang",
+    "cn": "明亮的；（天）亮的；清楚的",
+    "en": "bright; light; clear",
+    "root": "terang",
+    "root_cn": "亮；清楚",
+    "example": "Kamar ini terang sekali karena jendelanya besar, jadi siang-siang tidak perlu menyalakan lampu.",
+    "example_cn": "这个房间很亮，因为窗户很大，所以白天不用开灯。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-28 08:00",
+    "last_seen": "2026-10-28 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-28"
+    ],
+    "lesson_occurrences": [
+      "2026-10-28 08:00"
     ]
   }
 ];
