@@ -1,0 +1,770 @@
+{
+  "version": 1,
+  "title": "早课深讲 · 10月29日",
+  "intro": [
+    "今天早上的课叫《逛梭罗的大市场》。年底前鲁迪和玛雅坐火车去梭罗，逛传统市场时玛雅不好意思讲价，旁边卖 dawet 的老奶奶教了她几招，最后买到了价格合适的布。",
+    "今天只讲 5 样：[[menjelang]] · [[sepanjang]] · [[beragam]] · [[Menjelang …, …]] · [[Mending … aja, seenggaknya …]]"
+  ],
+  "items": [
+    {
+      "key": "menjelang",
+      "name": "menjelang",
+      "head": "menjelang · 临近；快到……的时候",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "词卡例句",
+            "id": "Menjelang akhir bulan, uang saya tinggal sedikit karena harus bayar angsuran motor.",
+            "cn": "快到月底的时候，我的钱只剩一点了，因为要还摩托车的分期款。"
+          }
+        ],
+        "ask": "说话的人钱只剩一点，是在什么时候？",
+        "options": [
+          {
+            "t": "月底快到了的那几天",
+            "ok": true,
+            "reply": [
+              "对。menjelang akhir bulan = 快到月底的时候，月底还没到。"
+            ]
+          },
+          {
+            "t": "月底过了以后",
+            "reply": [
+              "不对。“之后”是 sesudah / setelah；menjelang 说的是“快到了”。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{menjelang}} 后面多接节日、时刻或事件：{{menjelang Lebaran}}、{{menjelang ujian}}、{{menjelang pagi}}。说的是“就快到了”的那段时间。普通的“在……之前”用 {{sebelum}}，比如 {{sebelum makan}}。"
+      ],
+      "simple": [
+        "[[menjelang]] + 节日／时刻 = 快到……的时候。"
+      ],
+      "asks": [
+        {
+          "label": "menjelang 和 sebelum 有什么不同？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "menjelang Lebaran",
+                  "快过节的那段时间"
+                ],
+                [
+                  "sebelum Lebaran",
+                  "节日之前（多早都行）"
+                ],
+                [
+                  "sebelum makan",
+                  "吃饭前（日常动作用 sebelum）"
+                ]
+              ]
+            },
+            "口语说“快过节了”常说 {{Udah mau Lebaran.}}"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "下周就要考试了，你跟朋友说这几天很紧张：[[___ ujian, aku jadi susah tidur.]]"
+        ],
+        "options": [
+          {
+            "t": "Menjelang",
+            "v": "right",
+            "why": [
+              "对。考试快到了，用 menjelang ujian。"
+            ]
+          },
+          {
+            "t": "Sebelum",
+            "v": "ok",
+            "why": [
+              "也可以，意思是“考试前”；menjelang 更突出“就快到了”。"
+            ]
+          },
+          {
+            "t": "Sepanjang",
+            "v": "wrong",
+            "why": [
+              "sepanjang ujian 是“整个考试过程中”，考试还没开始。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Menjelang pagi, hujannya berhenti.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "快天亮的时候，雨停了",
+              "v": "right",
+              "why": [
+                "对。menjelang pagi = 快天亮时。"
+              ]
+            },
+            {
+              "t": "一整个早上雨都没停",
+              "v": "wrong",
+              "why": [
+                "句子说雨停了，而且“一整个早上”是 sepanjang pagi。"
+              ]
+            },
+            {
+              "t": "早上过后雨才停",
+              "v": "wrong",
+              "why": [
+                "“过后”是 setelah / sesudah，menjelang 是“快到”。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "跟同事说：“快到月底的时候，办公室总是很忙。”"
+        ],
+        "kw": "menjelang akhir bulan · kantor · selalu sibuk",
+        "skel": "Menjelang ____ bulan, kantor selalu ____.",
+        "ref": "Menjelang akhir bulan, kantor selalu sibuk."
+      },
+      "recall": {
+        "prompt": [
+          "跟家人说：“快过圣诞节的时候，商场里人特别多。”"
+        ],
+        "kw": "menjelang Natal · mal · ramai sekali",
+        "skel": "Menjelang ____, mal ramai ____.",
+        "ref": "Menjelang Natal, mal ramai sekali."
+      },
+      "final": {
+        "cn": "“婚礼前几天，她瘦了很多。”",
+        "ref": "Menjelang pernikahannya, dia jadi jauh lebih kurus."
+      },
+      "remind": "menjelang + 节日／时刻 = 快到……时；普通“之前”用 sebelum。"
+    },
+    {
+      "key": "sepanjang",
+      "name": "sepanjang",
+      "head": "sepanjang · 沿着；整个……期间",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "实用句",
+            "id": "Sepanjang jalan menuju desa itu, ada sawah hijau dan rumah-rumah tradisional dari kayu.",
+            "cn": "去那个村子的一路上，都是绿油油的稻田和木头造的传统房子。"
+          }
+        ],
+        "ask": "稻田和木房子在哪儿？",
+        "options": [
+          {
+            "t": "去村子的一路上都有",
+            "ok": true,
+            "reply": [
+              "对。sepanjang jalan = 沿着整条路、一路上。"
+            ]
+          },
+          {
+            "t": "只在村口有一点",
+            "reply": [
+              "不对。sepanjang 是“从头到尾”，不是某一个点。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{sepanjang}} 有两种用法：地点，{{sepanjang jalan}}、{{sepanjang pantai}}（沿着整条……）；时间，{{sepanjang hari}}、{{sepanjang malam}}（一整天、一整夜）。说时间时它强调“从头到尾一直”。"
+      ],
+      "simple": [
+        "[[sepanjang]] + 路／一天 = 一路上／一整天。"
+      ],
+      "asks": [
+        {
+          "label": "sepanjang 和 selama 怎么选？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "sepanjang jalan",
+                  "一路上（地点只用 sepanjang）"
+                ],
+                [
+                  "sepanjang hari",
+                  "一整天"
+                ],
+                [
+                  "selama liburan",
+                  "假期里（sepanjang liburan 也可以）"
+                ]
+              ]
+            },
+            "说时间时两个常能互换；说地点只用 sepanjang。"
+          ]
+        },
+        {
+          "label": "构词",
+          "from": "formation"
+        }
+      ],
+      "check": {
+        "q": [
+          "你跟朋友抱怨邻居家的狗：[[Anjingnya menggonggong ___ malam, aku nggak bisa tidur.]]"
+        ],
+        "options": [
+          {
+            "t": "sepanjang",
+            "v": "right",
+            "why": [
+              "对。sepanjang malam = 叫了一整夜。"
+            ]
+          },
+          {
+            "t": "semalaman",
+            "v": "ok",
+            "why": [
+              "也可以，semalaman 也是“一整夜”，口语里很常用。"
+            ]
+          },
+          {
+            "t": "menjelang",
+            "v": "wrong",
+            "why": [
+              "menjelang malam 是“快到晚上时”，不是叫了一整夜。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "哪一句用错了？"
+          ],
+          "options": [
+            {
+              "t": "Selama jalan ke pantai, kami nyanyi di mobil.",
+              "v": "right",
+              "why": [
+                "对，这句错了：“一路上”要说 Sepanjang jalan。"
+              ]
+            },
+            {
+              "t": "Sepanjang hari dia di kamar terus.",
+              "v": "wrong",
+              "why": [
+                "这句没错：他一整天都待在房间里。"
+              ]
+            },
+            {
+              "t": "Selama liburan, kami di rumah nenek.",
+              "v": "wrong",
+              "why": [
+                "这句没错：假期里我们在奶奶家。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "跟朋友说（口语）：“整个周末我都在家睡觉。”"
+        ],
+        "kw": "sepanjang akhir pekan · aku · tidur di rumah",
+        "skel": "Sepanjang ____ pekan, aku ____ di rumah.",
+        "ref": "Sepanjang akhir pekan, aku tidur di rumah.",
+        "notes": [
+          "aku 用于朋友之间；正式场合用 saya。"
+        ]
+      },
+      "recall": {
+        "prompt": [
+          "介绍一个海边小镇：“沿着海边有很多小咖啡馆。”"
+        ],
+        "kw": "sepanjang pantai · banyak · kafe kecil",
+        "skel": "Sepanjang ____, ada banyak ____ kecil.",
+        "ref": "Sepanjang pantai, ada banyak kafe kecil."
+      },
+      "final": {
+        "cn": "“去机场的一路上，孩子一直在哭。”",
+        "ref": "Sepanjang jalan ke bandara, anak saya menangis terus."
+      },
+      "remind": "sepanjang jalan 一路上 · sepanjang hari 一整天；地点不用 selama。"
+    },
+    {
+      "key": "beragam",
+      "name": "beragam",
+      "head": "beragam · 各种各样的；多样的",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "实用句",
+            "id": "Museum ini bebas biaya masuk, jadi pengunjungnya beragam: anak sekolah, pasangan lansia, sampai rombongan turis.",
+            "cn": "这家博物馆免门票，所以参观者各种各样：有学生、老年夫妇，还有旅游团。"
+          }
+        ],
+        "ask": "pengunjungnya beragam 是什么意思？",
+        "options": [
+          {
+            "t": "来的人各种各样",
+            "ok": true,
+            "reply": [
+              "对。beragam = 种类多，后面冒号列出了几种人。"
+            ]
+          },
+          {
+            "t": "来的人非常多",
+            "reply": [
+              "不对。人多是 ramai 或 banyak；beragam 说的是“种类多”。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{beragam}} 说的是“种类多”，不是“数量多”。可以放在名词前（{{beragam pilihan}}），也可以放在后面或作谓语（{{Pilihannya beragam.}}）。口语常说 {{macam-macam}}。"
+      ],
+      "simple": [
+        "[[beragam]] = 种类多；人多用 ramai。"
+      ],
+      "asks": [
+        {
+          "label": "beragam 和 berbagai 有什么不同？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "beragam makanan / makanannya beragam",
+                  "前后都能放"
+                ],
+                [
+                  "berbagai makanan",
+                  "一般放在名词前"
+                ],
+                [
+                  "macam-macam",
+                  "口语"
+                ]
+              ]
+            },
+            "意思差不多，区别主要在位置。"
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "你推荐一家餐厅：[[Menunya ___, dari nasi goreng sampai pasta.]]"
+        ],
+        "options": [
+          {
+            "t": "beragam",
+            "v": "right",
+            "why": [
+              "对。菜单种类多，后面举了例子。"
+            ]
+          },
+          {
+            "t": "macam-macam",
+            "v": "ok",
+            "why": [
+              "也可以，口语里更常说 macam-macam。"
+            ]
+          },
+          {
+            "t": "ramai",
+            "v": "wrong",
+            "why": [
+              "ramai 是人多、热闹，不说菜单。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "哪一句最自然？"
+          ],
+          "options": [
+            {
+              "t": "Di pasar ini ada berbagai jenis buah.",
+              "v": "right",
+              "why": [
+                "对。berbagai 放在名词前。"
+              ]
+            },
+            {
+              "t": "Di pasar ini ada buah berbagai.",
+              "v": "wrong",
+              "why": [
+                "berbagai 一般不放在名词后；放后面要说 buah yang beragam。"
+              ]
+            },
+            {
+              "t": "Pasar ini beragam sekali orangnya, jadi sempit.",
+              "v": "wrong",
+              "why": [
+                "“人多、挤”用 ramai；beragam 只说种类多。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "介绍你的公司：“我们公司的员工来自各种各样的城市。”"
+        ],
+        "kw": "karyawan · kantor kami · dari kota yang beragam",
+        "skel": "Karyawan di kantor kami datang dari ____ yang ____.",
+        "ref": "Karyawan di kantor kami datang dari kota yang beragam."
+      },
+      "recall": {
+        "prompt": [
+          "跟朋友说（口语）：“这家书店的书种类很多，你肯定能找到喜欢的。”"
+        ],
+        "kw": "toko buku ini · bukunya beragam · pasti nemu",
+        "skel": "Bukunya di toko ini ____, kamu pasti ____ yang kamu suka.",
+        "ref": "Bukunya di toko ini beragam, kamu pasti nemu yang kamu suka.",
+        "notes": [
+          "nemu = menemukan（口语）。"
+        ]
+      },
+      "final": {
+        "cn": "“雅加达的食物非常多样。”",
+        "ref": "Makanan di Jakarta sangat beragam."
+      },
+      "remind": "beragam = 种类多；人多用 ramai；口语 macam-macam。"
+    },
+    {
+      "key": "menjelang-pola",
+      "name": "Menjelang …, …",
+      "head": "Menjelang …, … · 快到……的时候，……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Menjelang akhir tahun, Rudi dan pasangannya, Maya, bepergian ke Solo naik kereta.",
+            "cn": "快到年底的时候，鲁迪和他的另一半玛雅坐火车去梭罗。"
+          }
+        ],
+        "ask": "这句话先交代了什么？",
+        "options": [
+          {
+            "t": "先说时间（快到年底），再说发生了什么",
+            "ok": true,
+            "reply": [
+              "对。Menjelang ……, 放在句首交代时间，逗号后面才是事情。"
+            ]
+          },
+          {
+            "t": "先说去哪儿，再说时间",
+            "reply": [
+              "不对。句首的 Menjelang akhir tahun 就是时间。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "这个句型把时间放在最前面：{{Menjelang + 节日／时刻,}} + 发生的事。写叙述、讲经历都很常用。"
+      ],
+      "simple": [
+        "[[Menjelang ……,]] + 事情 = 快到……时，……"
+      ],
+      "asks": [
+        {
+          "label": "能把 menjelang 放到后面吗？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            "能：{{Rudi dan Maya bepergian ke Solo menjelang akhir tahun.}} 放句首更突出时间，放句尾更突出事情。"
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "“快过开斋节时，很多人回老家。”哪一句对？"
+        ],
+        "options": [
+          {
+            "t": "Menjelang Lebaran, banyak orang pulang kampung.",
+            "v": "right",
+            "why": [
+              "对。时间在前，事情在后。"
+            ]
+          },
+          {
+            "t": "Banyak orang pulang kampung menjelang Lebaran.",
+            "v": "ok",
+            "why": [
+              "也可以，只是把时间放到了句尾，叙述里也常这么说。"
+            ]
+          },
+          {
+            "t": "Menjelang banyak orang, Lebaran pulang kampung.",
+            "v": "wrong",
+            "why": [
+              "menjelang 后面要接时间或事件，不能接“很多人”。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Menjelang ujian, perpustakaan penuh.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "快考试的时候，图书馆满了",
+              "v": "right",
+              "why": [
+                "对。"
+              ]
+            },
+            {
+              "t": "考试的时候图书馆关门",
+              "v": "wrong",
+              "why": [
+                "penuh 是“满”，不是关门。"
+              ]
+            },
+            {
+              "t": "考完试图书馆就空了",
+              "v": "wrong",
+              "why": [
+                "menjelang 是“快到”，不是“之后”。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "讲讲你家：“快到年底的时候，我们家都会大扫除。”"
+        ],
+        "kw": "menjelang akhir tahun · keluarga kami · bersih-bersih rumah",
+        "skel": "Menjelang ____ tahun, keluarga kami selalu ____ rumah.",
+        "ref": "Menjelang akhir tahun, keluarga kami selalu bersih-bersih rumah."
+      },
+      "recall": {
+        "prompt": [
+          "跟同事说：“快下班的时候，老板突然叫我去开会。”"
+        ],
+        "kw": "menjelang jam pulang · bos · tiba-tiba · rapat",
+        "skel": "Menjelang jam ____, bos tiba-tiba ____ saya rapat.",
+        "ref": "Menjelang jam pulang, bos tiba-tiba mengajak saya rapat."
+      },
+      "final": {
+        "cn": "“快天亮的时候，我才睡着。”",
+        "ref": "Menjelang pagi, saya baru bisa tidur."
+      },
+      "remind": "Menjelang + 时间, + 事情：先交代时间。"
+    },
+    {
+      "key": "mending",
+      "name": "Mending … aja, seenggaknya …",
+      "head": "Mending … aja, seenggaknya … · 还不如……吧，至少……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "实用句",
+            "id": "Udah mau Lebaran, tiket kereta pasti susah dicari. Mending kita bepergian sesudah Lebaran aja, seenggaknya nggak desak-desakan.",
+            "cn": "快过开斋节了，火车票肯定难买。我们还不如节后再出门，至少不用人挤人。"
+          }
+        ],
+        "ask": "说话的人在做什么？",
+        "options": [
+          {
+            "t": "提出一个更好的办法，并说出好处",
+            "ok": true,
+            "reply": [
+              "对。mending ……aja 提建议，seenggaknya …… 补一个好处。"
+            ]
+          },
+          {
+            "t": "决定不出门了",
+            "reply": [
+              "不是不去，是建议换个时间去。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "这是朋友之间的口语：{{Mending + 建议 + aja,}} 再用 {{seenggaknya + 好处}} 说服对方。正式说法是 {{Lebih baik …, setidaknya …}}。"
+      ],
+      "simple": [
+        "[[Mending …aja, seenggaknya …]] = 还不如……，至少……（口语）。"
+      ],
+      "asks": [
+        {
+          "label": "对上司也能这么说吗？",
+          "remedy": true,
+          "src": "new",
+          "reply": [
+            {
+              "table": [
+                [
+                  "Mending … aja",
+                  "朋友、家人之间"
+                ],
+                [
+                  "Lebih baik …",
+                  "对上司、正式场合"
+                ],
+                [
+                  "seenggaknya / setidaknya",
+                  "口语／正式"
+                ]
+              ]
+            },
+            "对上司可以说：{{Lebih baik kita berangkat besok pagi, setidaknya jalannya belum macet.}}"
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "朋友想打车去，你觉得坐地铁更好：哪一句最自然？"
+        ],
+        "options": [
+          {
+            "t": "Mending naik MRT aja, seenggaknya nggak kena macet.",
+            "v": "right",
+            "why": [
+              "对。先建议，再说好处。"
+            ]
+          },
+          {
+            "t": "Lebih baik naik MRT, setidaknya tidak kena macet.",
+            "v": "ok",
+            "why": [
+              "也对，只是更正式，朋友之间听起来有点客气。"
+            ]
+          },
+          {
+            "t": "Mending naik MRT aja, seenggaknya kena macet.",
+            "v": "wrong",
+            "why": [
+              "“至少会堵车”不是好处，说服不了人；应是 nggak kena macet。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "[[Mending masak di rumah aja, seenggaknya lebih hemat.]]是什么意思？"
+          ],
+          "options": [
+            {
+              "t": "还不如在家做饭，至少更省钱",
+              "v": "right",
+              "why": [
+                "对。"
+              ]
+            },
+            {
+              "t": "在家做饭一点也不省钱",
+              "v": "wrong",
+              "why": [
+                "lebih hemat 是“更省钱”，意思反了。"
+              ]
+            },
+            {
+              "t": "必须在家做饭",
+              "v": "wrong",
+              "why": [
+                "mending 是建议，不是“必须”。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "朋友想现在去商场，你建议晚点去：“还不如晚上再去，至少没那么热。”"
+        ],
+        "kw": "mending · nanti malam aja · seenggaknya · nggak panas",
+        "skel": "Mending ____ malam aja, seenggaknya ____ panas.",
+        "ref": "Mending nanti malam aja, seenggaknya nggak panas.",
+        "notes": [
+          "nggak = tidak，aja = saja，seenggaknya = setidaknya。"
+        ]
+      },
+      "recall": {
+        "prompt": [
+          "朋友想买很贵的新手机，你建议：“还不如买二手的，至少钱还够。”"
+        ],
+        "kw": "mending · beli yang bekas aja · seenggaknya · uangnya cukup",
+        "skel": "Mending beli yang ____ aja, seenggaknya ____ cukup.",
+        "ref": "Mending beli yang bekas aja, seenggaknya uangnya cukup."
+      },
+      "final": {
+        "cn": "（对朋友说）“还不如早点出发，至少不会迟到。”",
+        "ref": "Mending berangkat lebih pagi aja, seenggaknya nggak telat."
+      },
+      "remind": "Mending …aja（建议）+ seenggaknya …（好处）；正式用 Lebih baik …, setidaknya …"
+    }
+  ],
+  "scan": {
+    "head": "其他新词 · 扫一眼",
+    "intro": [
+      "其余新词词卡里都有完整讲解，这里只扫一眼。不熟的点一下，标出来给自己看。"
+    ],
+    "words": [
+      "bepergian",
+      "pasangan",
+      "pengunjung",
+      "tradisional",
+      "menyenangkan",
+      "momen",
+      "tersenyum"
+    ]
+  },
+  "reading": [
+    {
+      "key": "canggung",
+      "sentence": "Maya ingin membeli kain batik untuk ibunya, tapi dia canggung waktu harus menawar harga.",
+      "cn": "玛雅想给妈妈买块蜡染布，可是要讲价的时候她觉得很不自在。",
+      "chunks": [
+        [
+          "Maya ingin membeli kain batik",
+          "玛雅想买蜡染布"
+        ],
+        [
+          "untuk ibunya,",
+          "给她妈妈"
+        ],
+        [
+          "tapi dia canggung",
+          "可是她觉得不自在",
+          "canggung = 拘谨、不自在（复习词）"
+        ],
+        [
+          "waktu harus menawar harga.",
+          "在要讲价的时候",
+          "menawar harga = 讲价"
+        ]
+      ],
+      "steal": [
+        "值得借用的是 [[canggung waktu harus …]]：{{Saya selalu canggung waktu harus bicara di depan banyak orang.}}（我每次要在很多人面前讲话都很不自在。）"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "key": "output",
+      "prompt": [
+        "最后一个开口任务（来自今天的输出题，缩短版）：跟朋友说说你最近去了哪里、最开心的时刻是什么。"
+      ],
+      "kw": "bepergian · momen · menyenangkan",
+      "skel": "Bulan lalu saya ____ ke Malang. Momen yang paling ____ adalah waktu anak saya memetik apel.",
+      "ref": "Bulan lalu saya bepergian ke Malang. Momen yang paling menyenangkan adalah waktu anak saya memetik apel.",
+      "notes": [
+        "整页的输出题有更长的参考答案，学完可以去对照。"
+      ]
+    }
+  ],
+  "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
