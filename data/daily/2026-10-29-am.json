@@ -1,0 +1,436 @@
+{
+  "date": "2026-10-29",
+  "session": "am",
+  "time": "08:00",
+  "day": 69,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Jalan-jalan ke Pasar Gede Solo · 逛梭罗的大市场",
+  "new_words": [
+    "bepergian",
+    "pasangan",
+    "pengunjung",
+    "tradisional",
+    "beragam",
+    "menyenangkan",
+    "momen",
+    "sepanjang",
+    "menjelang",
+    "tersenyum"
+  ],
+  "vocab": [
+    {
+      "word": "bepergian",
+      "display": "bepergian",
+      "audio_text": "bepergian",
+      "cn": "出门（去外地）；出行；远行",
+      "en": "to travel; to go on a trip",
+      "root": "pergi",
+      "root_cn": "去；离开",
+      "formation": "ber- + pergi + -an → bepergian。词根第一个音节以 -er 结尾时，ber- 写成 be-，和 bekerja（ker-ja）同理，所以不写 berpergian。常见搭配：bepergian ke luar kota（去外地）、bepergian jauh（出远门）、bepergian dengan kereta／pesawat（坐火车／飞机出行）、sering bepergian（常出门）。",
+      "example": "Sebelum bepergian ke luar kota, Ayah selalu mencetak tiket keretanya, padahal tiket di HP sudah cukup.",
+      "example_cn": "爸爸每次去外地之前都要把火车票打印出来，其实手机上的票就够了。",
+      "synonym_note": "bepergian 指离开住的地方去别处，中性，不一定是玩，出差、回老家也算；jalan-jalan 是出去逛逛、玩；liburan／berwisata 是度假、旅游。口语说法：聊天里不太说 bepergian，多说 pergi ke luar kota、jalan ke……，如 Minggu depan aku mau ke Bandung；bepergian 常见于通知、新闻和比较正式的叙述。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pasangan",
+      "display": "pasangan",
+      "audio_text": "pasangan",
+      "cn": "伴侣；另一半；（一）对",
+      "en": "partner; spouse; couple; pair",
+      "root": "pasang",
+      "root_cn": "一对；安装",
+      "formation": "pasang + -an → pasangan。常见搭配：pasangan suami istri（夫妻）、pasangan muda（年轻夫妻／情侣）、pasangan hidup（人生伴侣）、pasangan pengantin（新人）、mencari pasangan（找对象）。同词根：sepasang（一对、一双）：sepasang sepatu（一双鞋）。",
+      "example": "Pasangan muda itu berkeliling kota naik motor sambil mencari rumah kontrakan.",
+      "example_cn": "那对年轻夫妻骑着摩托车在城里转，一边找出租的房子。",
+      "synonym_note": "pasangan 是中性说法，可以指已婚的另一半，也可以指恋爱中的另一半，还能指“一对”人（pasangan pengantin）或搭档（羽毛球双打的 pasangan）；pacar 只指男／女朋友；suami／istri 指丈夫／妻子。口语说法：说自己的另一半时，口语里多直接说 suami、istri 或 pacar；pasangan 偏中性、略正式，常见于问卷、新闻和一般叙述。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pengunjung",
+      "display": "pengunjung",
+      "audio_text": "pengunjung",
+      "cn": "参观者；来访者；（商场、景点等的）客人",
+      "en": "visitor",
+      "root": "kunjung",
+      "root_cn": "访问；拜访",
+      "formation": "peN- + kunjung → pengunjung（k 脱落，peN- 变 peng-，和 meN- + kunjungi → mengunjungi 一样）。同词根：berkunjung（拜访、去做客）、mengunjungi（参观、探访某地或某人）、kunjungan（访问，名词）。常见搭配：pengunjung mal／museum／pasar、jumlah pengunjung（来客人数）、pengunjung ramai（人很多）。",
+      "example": "Setiap akhir pekan, pengunjung kebun binatang itu boleh memberi makan rusa.",
+      "example_cn": "每到周末，那家动物园的游客都可以喂鹿。",
+      "synonym_note": "pengunjung 是去某个公共地方（商场、博物馆、医院、网站）的人；tamu 是到家里或被邀请参加活动的客人；pembeli 是买东西的人；wisatawan／turis 专指游客。在店里，进来逛的人是 pengunjung，真正买了东西的才是 pembeli。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tradisional",
+      "display": "tradisional",
+      "audio_text": "tradisional",
+      "cn": "传统的",
+      "en": "traditional",
+      "root": "",
+      "root_cn": "",
+      "formation": "借词（对应英语 traditional），形容词，放在名词后面。常见搭配：pasar tradisional（传统市场）、makanan tradisional（传统食物）、pakaian tradisional（传统服装）、obat tradisional（传统草药）、dengan cara tradisional（用传统方法）。相关名词：tradisi（传统）。",
+      "example": "Belanja di pasar tradisional tidak terlalu boros karena kita masih bisa menawar harga.",
+      "example_cn": "在传统市场买东西不会太费钱，因为我们还能讲价。",
+      "synonym_note": "tradisional 是形容词，修饰名词（rumah tradisional）；tradisi 是名词（tradisi keluarga 家里的传统）；adat 偏风俗礼仪（adat Jawa 爪哇习俗）。反义常用 modern：pasar modern（超市式的现代市场）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "beragam",
+      "display": "beragam",
+      "audio_text": "beragam",
+      "cn": "各种各样的；多样的",
+      "en": "various; diverse",
+      "root": "ragam",
+      "root_cn": "种类；样式",
+      "formation": "ber- + ragam → beragam（具有多种样式）。常见用法：beragam pilihan（各种选择）、makanan yang beragam（各种各样的食物），也可以作谓语：Pilihannya beragam.（选择很多样。）同词根：keberagaman（多样性）、seragam（统一的；制服）。",
+      "example": "Pilihan makanan di festival itu sangat beragam, dari sate sampai es krim durian.",
+      "example_cn": "那个美食节的食物选择非常多样，从沙爹到榴莲冰淇淋都有。",
+      "synonym_note": "beragam 可以放在名词前（beragam makanan），也可以放在名词后或作谓语（makanannya beragam）；berbagai 一般放在名词前（berbagai makanan），意思相近；bermacam-macam 意思也一样，更口语一些。口语说法：聊天里常说 macam-macam 或 banyak macamnya，如 Makanannya macam-macam!",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyenangkan",
+      "display": "menyenangkan",
+      "audio_text": "menyenangkan",
+      "cn": "令人愉快的；让人开心的",
+      "en": "pleasant; enjoyable",
+      "root": "senang",
+      "root_cn": "高兴；喜欢",
+      "formation": "meN- + senang + -kan → menyenangkan（s 脱落，meN- 变 meny-）。用来说“某件事、某个地方让人开心”：perjalanan yang menyenangkan（愉快的旅程）、pengalaman yang menyenangkan（愉快的经历）。也可作动词“使……高兴”：menyenangkan hati orang tua（讨父母欢心）。",
+      "example": "Tinggal di kos ini cukup menyenangkan: tetangganya ramah dan pemiliknya cepat memperbaiki kalau ada yang rusak.",
+      "example_cn": "住在这间宿舍挺愉快的：邻居很友好，房东在东西坏了的时候修得很快。",
+      "synonym_note": "menyenangkan 的主语是事情或地方（Liburannya menyenangkan.）；senang 的主语是人（Saya senang.）。不说 Saya menyenangkan 来表示“我很开心”。口语说法：聊天里常说 seru 或 asyik：Liburannya seru banget!；写文章、正式介绍时用 menyenangkan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "momen",
+      "display": "momen",
+      "audio_text": "momen",
+      "cn": "时刻；（难忘的）瞬间；时机",
+      "en": "moment",
+      "root": "",
+      "root_cn": "",
+      "formation": "借词（对应英语 moment），名词。常见搭配：momen penting（重要时刻）、momen bahagia（幸福的时刻）、momen spesial（特别的时刻）、momen yang tepat（合适的时机）、mengabadikan momen（拍照留念）。",
+      "example": "Sampai sekarang saya masih ingat momen pertama kali Ayah mengantar saya ke sekolah.",
+      "example_cn": "直到现在我还记得爸爸第一次送我去上学的那个瞬间。",
+      "synonym_note": "momen 指某个有意义、值得记住的时刻，或“合适的时机”（Ini momen yang tepat untuk bicara.）；waktu 泛指时间，也表示“……的时候”，不带“值得记住”的意味。口语里也常用 momen：Momen kayak gini jarang banget!",
+      "is_oral_new": false
+    },
+    {
+      "word": "sepanjang",
+      "display": "sepanjang",
+      "audio_text": "sepanjang",
+      "cn": "沿着（整条）；整个……期间",
+      "en": "along; throughout; all (day/night)",
+      "root": "panjang",
+      "root_cn": "长",
+      "formation": "se- + panjang → sepanjang（“像……一样长”→ 从头到尾）。两种用法：①地点：sepanjang jalan／pantai／sungai（沿着整条路／海边／河）；②时间：sepanjang hari／malam／tahun（一整天／一整夜／一整年）、sepanjang hidup（一辈子）。",
+      "example": "Sepanjang hari Minggu kami rapihin rumah, jadi nggak sempat ke mana-mana.",
+      "example_cn": "整个星期天我们都在收拾屋子，所以哪儿也没来得及去。（rapihin = merapikan，nggak = tidak）",
+      "synonym_note": "时间上，sepanjang 强调从头到尾一直（sepanjang hari 一整天）；selama 是“在……期间”（selama liburan 假期里），很多时候两个都能用，如 sepanjang／selama liburan。说地点时用 sepanjang（sepanjang jalan），不用 selama。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menjelang",
+      "display": "menjelang",
+      "audio_text": "menjelang",
+      "cn": "临近；快到……的时候",
+      "en": "approaching; shortly before",
+      "root": "jelang",
+      "root_cn": "临近",
+      "formation": "meN- + jelang → menjelang（j 开头，meN- 变 men-）。后面多接节日、时刻或重要事件：menjelang Lebaran（快过开斋节时）、menjelang akhir tahun（临近年底）、menjelang pagi（快天亮时）、menjelang ujian（考试前夕）、menjelang pernikahan（婚礼前）。",
+      "example": "Menjelang akhir bulan, uang saya tinggal sedikit karena harus bayar angsuran motor.",
+      "example_cn": "快到月底的时候，我的钱只剩一点了，因为要还摩托车的分期款。",
+      "synonym_note": "sebelum 是“在……之前”，什么时间距离都可以（sebelum makan、sebelum tahun 2020）；menjelang 是“就快到了”的那段时间，后面多接节日、时刻或事件名词。口语说法：聊天里常用 mau 表示“快到了”：Udah mau Lebaran nih!（快过开斋节了！）",
+      "is_oral_new": false
+    },
+    {
+      "word": "tersenyum",
+      "display": "tersenyum",
+      "audio_text": "tersenyum",
+      "cn": "微笑",
+      "en": "to smile",
+      "root": "senyum",
+      "root_cn": "微笑；笑容",
+      "formation": "ter- + senyum → tersenyum。这里的 ter- 不表示“被”或“不小心”，就是“露出笑容”的动作，和 tertawa（笑出声）是一对。常见搭配：tersenyum kepada seseorang（对某人微笑）、tersenyum lebar（咧嘴笑）、tersenyum malu（害羞地笑）。同词根：senyuman（笑容）。",
+      "example": "Waktu pertama kali kenal, dia cuma tersenyum dan tidak banyak bicara.",
+      "example_cn": "刚认识的时候，他只是笑笑，话不多。",
+      "synonym_note": "tersenyum 是微笑、不出声；tertawa 是笑出声。口语说法：口语里常直接说 senyum，如拍照时说 Senyum, ya!；写作和叙述用 tersenyum。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "pembangunan",
+    "bangunan",
+    "kekerasan",
+    "memilah",
+    "canggung",
+    "ngeles"
+  ],
+  "sentences": [
+    {
+      "text": "Udah mau Lebaran, tiket kereta pasti susah dicari. Mending kita bepergian sesudah Lebaran aja, seenggaknya nggak desak-desakan.",
+      "cn": "快过开斋节了，火车票肯定难买。我们还不如节后再出门，至少不用人挤人。（udah = sudah，mending = lebih baik，aja = saja，seenggaknya = setidaknya，nggak = tidak）"
+    },
+    {
+      "text": "Museum ini bebas biaya masuk, jadi pengunjungnya beragam: anak sekolah, pasangan lansia, sampai rombongan turis.",
+      "cn": "这家博物馆免门票，所以参观者各种各样：有学生、老年夫妇，还有旅游团。"
+    },
+    {
+      "text": "Sepanjang jalan menuju desa itu, ada sawah hijau dan rumah-rumah tradisional dari kayu.",
+      "cn": "去那个村子的一路上，都是绿油油的稻田和木头造的传统房子。"
+    },
+    {
+      "text": "Menjelang rapat besok, Pak Hadi minta kami memilah dokumen lama dan mengumpulkan yang masih penting.",
+      "cn": "明天开会之前，哈迪先生让我们把旧文件分一分，把还重要的收在一起。"
+    },
+    {
+      "text": "Makan malam bersama keluarga setelah seminggu sibuk adalah momen yang paling menyenangkan buat saya.",
+      "cn": "忙了一个星期之后和家人一起吃晚饭，对我来说是最开心的时刻。"
+    }
+  ],
+  "reading": {
+    "text": "Menjelang akhir tahun, Rudi dan pasangannya, Maya, bepergian ke Solo naik kereta. Pagi pertama, mereka berkeliling Pasar Gede, pasar tradisional dengan bangunan tua yang selalu ramai. Pengunjungnya bermacam-macam: ibu-ibu yang belanja sayur, mahasiswa, dan turis asing. Maya ingin membeli kain batik untuk ibunya, tapi dia canggung waktu harus menawar harga. Seorang nenek penjual dawet di sebelah toko kain itu tersenyum dan memberinya beberapa tips. Sambil minum dawet, mereka mengobrol dengan nenek itu. Katanya, sejak ada pembangunan jalan di depan pasar, pembeli jadi berkurang. Berkat tips nenek itu, Maya akhirnya mendapat dua kain dengan harga yang pas. Bagi Rudi, itu momen terbaik dalam perjalanan mereka.",
+    "cn": "快到年底的时候，鲁迪和他的另一半玛雅坐火车去梭罗。第一天上午，他们逛了大市场（Pasar Gede），那是一个建筑很老、总是很热闹的传统市场。来逛的人形形色色：买菜的阿姨们、大学生，还有外国游客。玛雅想给妈妈买块蜡染布，可是要讲价的时候她觉得很不自在。布店旁边一位卖椰汁冰（dawet）的老奶奶笑了笑，给了她几个窍门。他们一边喝 dawet，一边和老奶奶聊天。老奶奶说，自从市场门口开始修路，买东西的人就少了。多亏老奶奶的窍门，玛雅最后用合适的价格买到了两块布。对鲁迪来说，那是这趟旅行里最美好的时刻。"
+  },
+  "quiz": [
+    {
+      "question": "Rina cerita ke temannya: \"Jalan di depan pasar sekarang ditutup karena ada ___ jembatan baru. Pembeli jadi sepi.\" 空格里哪个最自然？",
+      "options": [
+        "bangunan",
+        "pembangunan",
+        "membangun",
+        "terbangun"
+      ],
+      "answer_index": 1,
+      "answer": "pembangunan",
+      "explain": "这里要一个名词，表示“正在进行的建设、施工”，所以是 pembangunan（ada pembangunan jembatan 正在修桥）。bangunan 是已经建好的“建筑物”（bangunan tua 老建筑），不是施工过程；membangun 是动词“建造”，要说 sedang membangun jembatan，不能放在 ada 后面当名词；terbangun 是“（突然）醒来”。"
+    },
+    {
+      "question": "Minggu depan sudah Lebaran. Seperti biasa, ___ Lebaran harga ayam di pasar mulai naik. 空格里哪个最自然？",
+      "options": [
+        "menjelang",
+        "sepanjang",
+        "sesudah",
+        "selama"
+      ],
+      "answer_index": 0,
+      "answer": "menjelang",
+      "explain": "开斋节还没到，价格在节前就开始涨，所以用 menjelang（临近）。sepanjang／selama 表示“整个……期间”，说的是节日当中，不符合“还没到”；sesudah 是“之后”，时间正好相反。"
+    },
+    {
+      "question": "Museum itu baru dibuka lagi setelah direnovasi. Hari Minggu kemarin, ___ yang datang lebih dari dua ribu orang. 空格里哪个最自然？",
+      "options": [
+        "penumpang",
+        "tamu",
+        "pengunjung",
+        "pelanggan"
+      ],
+      "answer_index": 2,
+      "answer": "pengunjung",
+      "explain": "去博物馆、商场、景点这类公共地方的人叫 pengunjung。penumpang 是乘客；tamu 是到家里或受邀参加活动的客人；pelanggan 是常来买东西、用服务的老顾客，博物馆的来客不这么说。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语，给朋友介绍一次你最近出门（去外地、逛市场或景点）的经历：去了哪里、那里怎么样、最难忘的一个瞬间。至少用 bepergian、pengunjung、beragam、momen、menyenangkan、tersenyum 中的两个。",
+    "reference_answer": "Bulan lalu saya bepergian ke Malang dengan keluarga. Sopir hotel mengantar kami ke kebun apel pagi-pagi; pengunjungnya ramai, tapi pilihan buahnya beragam dan harganya murah. Momen yang paling menyenangkan adalah waktu anak saya memetik apel sendiri dan tersenyum lebar. Sayang kalau kalian belum pernah ke sana!",
+    "reference_cn": "上个月我和家人去了玛琅。酒店司机一大早送我们去苹果园；那里游客很多，但水果品种多，价格也便宜。最开心的时刻是我孩子自己摘苹果、笑得合不拢嘴的时候。你们要是还没去过就太可惜了！"
+  },
+  "review": [
+    "3 秒主动提取：看中文马上说印尼语——出门（去外地）、伴侣／另一半、参观者、传统的、各种各样的、令人愉快的、（难忘的）时刻、沿着／整个……期间、临近……、微笑；说不出来的回看词卡再说一遍。",
+    "易混词：bepergian（出门去外地，略正式）vs jalan-jalan（出去逛、玩）；pengunjung（去公共场所的人）vs tamu（来家里或受邀的客人）vs pembeli（真正买东西的人）；menjelang（临近，后接节日、事件）vs sebelum（在……之前）；sepanjang（从头到尾一直、沿着）vs selama（在……期间）；menyenangkan（事情让人愉快）vs senang（人觉得高兴）；tersenyum（微笑）vs tertawa（笑出声）。",
+    "复习词应用：同词根一组 bangunan（建筑物）vs pembangunan（建设、施工）——用 pembangunan 说一句附近修路或盖楼带来的影响（最近常错）；kekerasan 是 keras 的名词形式，意思是“暴力”，说一句“这部电影暴力镜头太多，不适合孩子”；用 memilah 说一次把东西分类整理；用 canggung 说一次第一次见面的不自在；用 ngeles 说一个总找借口的人。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "出门（去外地）；出行",
+        "id": "bepergian"
+      },
+      {
+        "cn": "伴侣；另一半",
+        "id": "pasangan"
+      },
+      {
+        "cn": "参观者；来客",
+        "id": "pengunjung"
+      },
+      {
+        "cn": "传统的",
+        "id": "tradisional"
+      },
+      {
+        "cn": "各种各样的",
+        "id": "beragam"
+      },
+      {
+        "cn": "令人愉快的",
+        "id": "menyenangkan"
+      },
+      {
+        "cn": "（难忘的）时刻",
+        "id": "momen"
+      },
+      {
+        "cn": "沿着；整个……期间",
+        "id": "sepanjang"
+      },
+      {
+        "cn": "临近；快到……时",
+        "id": "menjelang"
+      },
+      {
+        "cn": "微笑",
+        "id": "tersenyum"
+      },
+      {
+        "cn": "建设；施工",
+        "id": "pembangunan"
+      },
+      {
+        "cn": "拘谨；不自在",
+        "id": "canggung"
+      }
+    ],
+    "frames": [
+      "Menjelang …, …",
+      "Mending kita … aja, seenggaknya …",
+      "Sepanjang hari …, jadi …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "bangunan",
+            "cn": "建筑物（建好的）"
+          },
+          {
+            "id": "pembangunan",
+            "cn": "建设；施工过程"
+          }
+        ],
+        "note": "同词根 bangun：bangunan tua（老建筑）/ ada pembangunan jalan（正在修路）"
+      },
+      {
+        "items": [
+          {
+            "id": "pengunjung",
+            "cn": "去公共场所的人"
+          },
+          {
+            "id": "tamu",
+            "cn": "来家里、受邀的客人"
+          },
+          {
+            "id": "pembeli",
+            "cn": "买东西的人"
+          }
+        ],
+        "note": "进店逛的是 pengunjung，掏钱买的才是 pembeli；请到家里的是 tamu"
+      },
+      {
+        "items": [
+          {
+            "id": "menjelang",
+            "cn": "临近（后接节日、事件）"
+          },
+          {
+            "id": "sebelum",
+            "cn": "在……之前"
+          }
+        ],
+        "note": "menjelang Lebaran（快过节时）/ sebelum makan（吃饭前）"
+      },
+      {
+        "items": [
+          {
+            "id": "menyenangkan",
+            "cn": "（事情）让人愉快"
+          },
+          {
+            "id": "senang",
+            "cn": "（人）高兴"
+          }
+        ],
+        "note": "Perjalanannya menyenangkan. / Saya senang."
+      },
+      {
+        "items": [
+          {
+            "id": "keras",
+            "cn": "硬；（声音）大"
+          },
+          {
+            "id": "kekerasan",
+            "cn": "暴力"
+          }
+        ],
+        "note": "ke- + keras + -an → kekerasan：suara keras（声音大）/ adegan kekerasan（暴力镜头）"
+      }
+    ],
+    "apply": [
+      {
+        "word": "kekerasan",
+        "usage": "名词“暴力”，常说 adegan kekerasan（暴力镜头）、tindak kekerasan（暴力行为）。",
+        "examples": [
+          {
+            "id": "Film ini banyak adegan kekerasan, jadi tidak cocok untuk anak-anak.",
+            "cn": "这部电影暴力镜头很多，不适合孩子看。"
+          }
+        ]
+      },
+      {
+        "word": "memilah",
+        "usage": "把混在一起的东西分开、分类：memilah dokumen／sampah／baju。",
+        "examples": [
+          {
+            "id": "Pak Hadi minta kami memilah dokumen lama.",
+            "cn": "哈迪先生让我们把旧文件分一分。"
+          }
+        ]
+      },
+      {
+        "word": "canggung",
+        "usage": "和人相处不自然、拘谨，或做不熟悉的事时不自在。",
+        "examples": [
+          {
+            "id": "Dia canggung waktu harus menawar harga.",
+            "cn": "要讲价的时候她觉得很不自在。"
+          }
+        ]
+      },
+      {
+        "word": "ngeles",
+        "usage": "口语：找借口、绕开正题，不正面承认。",
+        "examples": [
+          {
+            "id": "Udah, jangan ngeles terus. Akui aja kalau kamu lupa.",
+            "cn": "行了，别老找借口。忘了就承认吧。（udah = sudah，aja = saja）"
+          }
+        ]
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "menjelang",
+      "sepanjang",
+      "beragam"
+    ],
+    "patterns": [
+      {
+        "pattern": "Menjelang …, …",
+        "cn": "快到……的时候，……",
+        "example": "Menjelang akhir tahun, Rudi dan pasangannya, Maya, bepergian ke Solo naik kereta.",
+        "example_cn": "快到年底的时候，鲁迪和他的另一半玛雅坐火车去梭罗。"
+      },
+      {
+        "pattern": "Mending … aja, seenggaknya …",
+        "cn": "还不如……吧，至少……",
+        "example": "Mending kita bepergian sesudah Lebaran aja, seenggaknya nggak desak-desakan.",
+        "example_cn": "我们还不如节后再出门，至少不用人挤人。"
+      }
+    ]
+  }
+}
