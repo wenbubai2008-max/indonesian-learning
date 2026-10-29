@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261028-tambah-anggota-keluarga-kk-online","date":"2026-10-28","title":"Tambah Anggota Keluarga di KK Kini Bisa Diurus Online","title_cn":"户口卡添加家庭成员，现在可以在线办理","path":"data/extensive-reading-history/2026-10-28.js"},
 {"id":"er-20261027-pameran-seni-taman-stasiun-manggarai","date":"2026-10-27","title":"Taman Stasiun Manggarai Jadi Ruang Pameran Seni untuk Warga","title_cn":"曼加拉伊车站花园变身居民艺术展空间","path":"data/extensive-reading-history/2026-10-27.js"},
 {"id":"er-20261025-gbk-ramai-festival-jajanan","date":"2026-10-25","title":"Akhir Pekan GBK Ramai, Festival Jajanan Padukan Rasa Lama dan Baru","title_cn":"GBK 周末人潮涌动，小吃节融合新老口味","path":"data/extensive-reading-history/2026-10-25.js"},
 {"id":"er-20261024-bmkg-peringatan-hujan-lebat-jabodetabek","date":"2026-10-24","title":"BMKG Peringatkan Hujan Lebat di Jabodetabek sampai Minggu","title_cn":"气象局预警：大雅加达地区大雨将持续到周日","path":"data/extensive-reading-history/2026-10-24.js"},
