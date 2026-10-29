@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 856,
+   "use": 859,
    "recognize": 105,
    "unsure": 20,
    "fast": 132
   },
   "active": {
-   "use": 579,
+   "use": 582,
    "recognize": 89,
    "unsure": 18,
    "fast": 54
@@ -9055,6 +9055,33 @@
    "status": "active",
    "why": [
     "977 主库第 624 位"
+   ]
+  },
+  "hapus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 831 位"
+   ]
+  },
+  "angkat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 833 位"
+   ]
+  },
+  "batas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 795 位"
    ]
   }
  }
