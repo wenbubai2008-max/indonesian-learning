@@ -9415,17 +9415,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 08:00",
+    "last_seen": "2026-10-29 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-12"
+      "2026-09-12",
+      "2026-10-29"
     ],
     "lesson_occurrences": [
-      "2026-09-12 08:00"
+      "2026-09-12 08:00",
+      "2026-10-29 08:00"
     ]
   },
   {
@@ -9574,19 +9576,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 19:00",
+    "last_seen": "2026-10-29 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-12"
+      "2026-09-12",
+      "2026-10-29"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
-      "2026-09-12 19:00"
+      "2026-09-12 19:00",
+      "2026-10-29 08:00"
     ]
   },
   {
@@ -11875,9 +11879,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-10-28 18:00",
+    "last_seen": "2026-10-29 08:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -11887,14 +11891,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-30",
       "2026-10-06",
       "2026-10-23",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-29"
     ],
     "lesson_occurrences": [
       "2026-09-18 18:00",
       "2026-09-30 08:00",
       "2026-10-06 08:00",
       "2026-10-23 18:00",
-      "2026-10-28 18:00"
+      "2026-10-28 18:00",
+      "2026-10-29 08:00"
     ]
   },
   {
@@ -16191,19 +16197,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-09-30 18:00",
+    "last_seen": "2026-10-29 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-29"
     ],
     "lesson_occurrences": [
       "2026-09-30 08:00",
-      "2026-09-30 18:00"
+      "2026-09-30 18:00",
+      "2026-10-29 08:00"
     ]
   },
   {
@@ -19726,17 +19734,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-10 08:00",
-    "last_seen": "2026-10-10 08:00",
+    "last_seen": "2026-10-29 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-10"
+      "2026-10-10",
+      "2026-10-29"
     ],
     "lesson_occurrences": [
-      "2026-10-10 08:00"
+      "2026-10-10 08:00",
+      "2026-10-29 08:00"
     ]
   },
   {
@@ -23457,19 +23467,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "搬家前，我把东西分了分：哪些还有用，哪些要卖掉。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-20 18:00",
-    "last_seen": "2026-10-20 18:00",
+    "last_seen": "2026-10-29 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-20"
+      "2026-10-20",
+      "2026-10-29"
     ],
     "lesson_occurrences": [
-      "2026-10-20 18:00"
+      "2026-10-20 18:00",
+      "2026-10-29 08:00"
     ]
   },
   {
@@ -26219,6 +26233,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-28 18:00"
+    ]
+  },
+  {
+    "word": "bepergian",
+    "cn": "出门（去外地）；出行；远行",
+    "en": "to travel; to go on a trip",
+    "root": "pergi",
+    "root_cn": "去；离开",
+    "example": "Sebelum bepergian ke luar kota, Ayah selalu mencetak tiket keretanya, padahal tiket di HP sudah cukup.",
+    "example_cn": "爸爸每次去外地之前都要把火车票打印出来，其实手机上的票就够了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 08:00"
+    ]
+  },
+  {
+    "word": "pasangan",
+    "cn": "伴侣；另一半；（一）对",
+    "en": "partner; spouse; couple; pair",
+    "root": "pasang",
+    "root_cn": "一对；安装",
+    "example": "Pasangan muda itu berkeliling kota naik motor sambil mencari rumah kontrakan.",
+    "example_cn": "那对年轻夫妻骑着摩托车在城里转，一边找出租的房子。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 08:00"
+    ]
+  },
+  {
+    "word": "pengunjung",
+    "cn": "参观者；来访者；（商场、景点等的）客人",
+    "en": "visitor",
+    "root": "kunjung",
+    "root_cn": "访问；拜访",
+    "example": "Setiap akhir pekan, pengunjung kebun binatang itu boleh memberi makan rusa.",
+    "example_cn": "每到周末，那家动物园的游客都可以喂鹿。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 08:00"
+    ]
+  },
+  {
+    "word": "tradisional",
+    "cn": "传统的",
+    "en": "traditional",
+    "root": "",
+    "root_cn": "",
+    "example": "Belanja di pasar tradisional tidak terlalu boros karena kita masih bisa menawar harga.",
+    "example_cn": "在传统市场买东西不会太费钱，因为我们还能讲价。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 08:00"
+    ]
+  },
+  {
+    "word": "beragam",
+    "cn": "各种各样的；多样的",
+    "en": "various; diverse",
+    "root": "ragam",
+    "root_cn": "种类；样式",
+    "example": "Pilihan makanan di festival itu sangat beragam, dari sate sampai es krim durian.",
+    "example_cn": "那个美食节的食物选择非常多样，从沙爹到榴莲冰淇淋都有。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 08:00"
+    ]
+  },
+  {
+    "word": "menyenangkan",
+    "cn": "令人愉快的；让人开心的",
+    "en": "pleasant; enjoyable",
+    "root": "senang",
+    "root_cn": "高兴；喜欢",
+    "example": "Tinggal di kos ini cukup menyenangkan: tetangganya ramah dan pemiliknya cepat memperbaiki kalau ada yang rusak.",
+    "example_cn": "住在这间宿舍挺愉快的：邻居很友好，房东在东西坏了的时候修得很快。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 08:00"
+    ]
+  },
+  {
+    "word": "momen",
+    "cn": "时刻；（难忘的）瞬间；时机",
+    "en": "moment",
+    "root": "",
+    "root_cn": "",
+    "example": "Sampai sekarang saya masih ingat momen pertama kali Ayah mengantar saya ke sekolah.",
+    "example_cn": "直到现在我还记得爸爸第一次送我去上学的那个瞬间。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 08:00"
+    ]
+  },
+  {
+    "word": "sepanjang",
+    "cn": "沿着（整条）；整个……期间",
+    "en": "along; throughout; all (day/night)",
+    "root": "panjang",
+    "root_cn": "长",
+    "example": "Sepanjang hari Minggu kami rapihin rumah, jadi nggak sempat ke mana-mana.",
+    "example_cn": "整个星期天我们都在收拾屋子，所以哪儿也没来得及去。（rapihin = merapikan，nggak = tidak）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 08:00"
+    ]
+  },
+  {
+    "word": "menjelang",
+    "cn": "临近；快到……的时候",
+    "en": "approaching; shortly before",
+    "root": "jelang",
+    "root_cn": "临近",
+    "example": "Menjelang akhir bulan, uang saya tinggal sedikit karena harus bayar angsuran motor.",
+    "example_cn": "快到月底的时候，我的钱只剩一点了，因为要还摩托车的分期款。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 08:00"
+    ]
+  },
+  {
+    "word": "tersenyum",
+    "cn": "微笑",
+    "en": "to smile",
+    "root": "senyum",
+    "root_cn": "微笑；笑容",
+    "example": "Waktu pertama kali kenal, dia cuma tersenyum dan tidak banyak bicara.",
+    "example_cn": "刚认识的时候，他只是笑笑，话不多。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 08:00"
     ]
   }
 ];

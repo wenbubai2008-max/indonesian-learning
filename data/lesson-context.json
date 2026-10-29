@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-29",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 69
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-28T23:40:37.269Z",
-    "lesson_watermark": "2026-10-28 18:00",
-    "index_updated": "2026-10-28",
-    "runtime_hash": "80f468f07d49fe216568b8d5e4e17a190e1701ec9b6aac1db03ee043f5b69b86",
-    "index_hash": "c267cc7464b756755524dcdfb15801d49d9dc5529a462e6c13e57baaf16905e6",
+    "runtime_generated_at": "2026-10-29T00:31:59.523Z",
+    "lesson_watermark": "2026-10-29 08:00",
+    "index_updated": "2026-10-29",
+    "runtime_hash": "3320cbf95abeb1235a9095d71a501abc0d183fa8f7361812407851f5fe66c53b",
+    "index_hash": "0307e25a9b355bea980c20d47aba05cc30ae1755c22238d063b97c30070b4f21",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -51,18 +51,6 @@
     "new_dont": [],
     "new_fuzzy": [
       [
-        "momen",
-        "片刻 / 瞬间"
-      ],
-      [
-        "menyenangkan",
-        "有趣的 / 令人愉快的"
-      ],
-      [
-        "bepergian",
-        "旅行"
-      ],
-      [
         "detik",
         "秒"
       ],
@@ -77,10 +65,6 @@
       [
         "mengapung",
         "漂浮"
-      ],
-      [
-        "pasangan",
-        "伴侣、一对"
       ],
       [
         "rendah",
@@ -105,10 +89,6 @@
       [
         "penggunaan",
         "使用"
-      ],
-      [
-        "beragam",
-        "多种多样"
       ],
       [
         "pers",
@@ -139,24 +119,12 @@
         "星期三"
       ],
       [
-        "tersenyum",
-        "微笑"
-      ],
-      [
         "sendok",
         "勺子"
       ],
       [
         "terbuka",
         "敞开的"
-      ],
-      [
-        "sepanjang",
-        "沿着"
-      ],
-      [
-        "tradisional",
-        "传统的"
       ],
       [
         "buruk",
@@ -189,10 +157,6 @@
       [
         "kertas",
         "纸"
-      ],
-      [
-        "menjelang",
-        "临近"
       ],
       [
         "bijak",
@@ -241,10 +205,6 @@
       [
         "pegawai",
         "职员，公务员"
-      ],
-      [
-        "pengunjung",
-        "访客"
       ],
       [
         "modal",
@@ -1101,16 +1061,6 @@
         "错；不对"
       ],
       [
-        "ngeles",
-        3,
-        0,
-        "",
-        "",
-        "找借口；绕着说；回避真正问题（口语）",
-        "ngeles",
-        "找借口；回避重点"
-      ],
-      [
         "nimpalin",
         3,
         0,
@@ -1119,16 +1069,6 @@
         "接话；回一句；顺着对方的话回应（口语）",
         "timpal",
         "接话；回应"
-      ],
-      [
-        "canggung",
-        2,
-        0,
-        "",
-        "",
-        "尴尬拘谨；相处不自然",
-        "canggung",
-        "拘谨；不自然"
       ],
       [
         "sikap",
@@ -2541,16 +2481,6 @@
         "教育；培养"
       ],
       [
-        "bangunan",
-        2,
-        0,
-        "",
-        "2026-10-19T13:14:27.119Z",
-        "建筑；建筑物",
-        "bangun",
-        "建；起；醒"
-      ],
-      [
         "lezat",
         2,
         0,
@@ -2559,6 +2489,136 @@
         "美味的；可口的",
         "lezat",
         "美味"
+      ],
+      [
+        "agar",
+        3,
+        0,
+        "",
+        "2026-10-19T13:14:07.817Z",
+        "为了；以便",
+        "agar",
+        "为了；以便"
+      ],
+      [
+        "kata sandi",
+        3,
+        0,
+        "",
+        "2026-10-21T01:44:28.367Z",
+        "密码",
+        "kata sandi",
+        "密码"
+      ],
+      [
+        "mencret",
+        3,
+        0,
+        "",
+        "2026-10-22T15:36:07.942Z",
+        "拉肚子；腹泻（口语）",
+        "mencret",
+        "拉肚子"
+      ],
+      [
+        "bepergian",
+        3,
+        0,
+        "",
+        "",
+        "出门（去外地）；出行；远行",
+        "pergi",
+        "去；离开"
+      ],
+      [
+        "pasangan",
+        3,
+        0,
+        "",
+        "",
+        "伴侣；另一半；（一）对",
+        "pasang",
+        "一对；安装"
+      ],
+      [
+        "pengunjung",
+        3,
+        0,
+        "",
+        "",
+        "参观者；来访者；（商场、景点等的）客人",
+        "kunjung",
+        "访问；拜访"
+      ],
+      [
+        "tradisional",
+        3,
+        0,
+        "",
+        "",
+        "传统的",
+        "",
+        ""
+      ],
+      [
+        "beragam",
+        3,
+        0,
+        "",
+        "",
+        "各种各样的；多样的",
+        "ragam",
+        "种类；样式"
+      ],
+      [
+        "menyenangkan",
+        3,
+        0,
+        "",
+        "",
+        "令人愉快的；让人开心的",
+        "senang",
+        "高兴；喜欢"
+      ],
+      [
+        "momen",
+        3,
+        0,
+        "",
+        "",
+        "时刻；（难忘的）瞬间；时机",
+        "",
+        ""
+      ],
+      [
+        "sepanjang",
+        3,
+        0,
+        "",
+        "",
+        "沿着（整条）；整个……期间",
+        "panjang",
+        "长"
+      ],
+      [
+        "menjelang",
+        3,
+        0,
+        "",
+        "",
+        "临近；快到……的时候",
+        "jelang",
+        "临近"
+      ],
+      [
+        "tersenyum",
+        3,
+        0,
+        "",
+        "",
+        "微笑",
+        "senyum",
+        "微笑；笑容"
       ]
     ],
     "focus": [
@@ -3100,6 +3160,30 @@
         "promosi",
         "divisi"
       ]
+    },
+    {
+      "date": "2026-10-29",
+      "session": "am",
+      "review_core": [
+        "pembangunan",
+        "bangunan",
+        "kekerasan",
+        "memilah",
+        "canggung",
+        "ngeles"
+      ],
+      "new_words": [
+        "bepergian",
+        "pasangan",
+        "pengunjung",
+        "tradisional",
+        "beragam",
+        "menyenangkan",
+        "momen",
+        "sepanjang",
+        "menjelang",
+        "tersenyum"
+      ]
     }
   ],
   "previous_pm": {
@@ -3117,7 +3201,89 @@
       "nyangkut"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-29",
+    "vocab": [
+      [
+        "bepergian",
+        "出门（去外地）；出行；远行",
+        "to travel; to go on a trip",
+        "pergi",
+        "去；离开"
+      ],
+      [
+        "pasangan",
+        "伴侣；另一半；（一）对",
+        "partner; spouse; couple; pair",
+        "pasang",
+        "一对；安装"
+      ],
+      [
+        "pengunjung",
+        "参观者；来访者；（商场、景点等的）客人",
+        "visitor",
+        "kunjung",
+        "访问；拜访"
+      ],
+      [
+        "tradisional",
+        "传统的",
+        "traditional",
+        "",
+        ""
+      ],
+      [
+        "beragam",
+        "各种各样的；多样的",
+        "various; diverse",
+        "ragam",
+        "种类；样式"
+      ],
+      [
+        "menyenangkan",
+        "令人愉快的；让人开心的",
+        "pleasant; enjoyable",
+        "senang",
+        "高兴；喜欢"
+      ],
+      [
+        "momen",
+        "时刻；（难忘的）瞬间；时机",
+        "moment",
+        "",
+        ""
+      ],
+      [
+        "sepanjang",
+        "沿着（整条）；整个……期间",
+        "along; throughout; all (day/night)",
+        "panjang",
+        "长"
+      ],
+      [
+        "menjelang",
+        "临近；快到……的时候",
+        "approaching; shortly before",
+        "jelang",
+        "临近"
+      ],
+      [
+        "tersenyum",
+        "微笑",
+        "to smile",
+        "senyum",
+        "微笑；笑容"
+      ]
+    ],
+    "review_vocab": [
+      "pembangunan",
+      "bangunan",
+      "kekerasan",
+      "memilah",
+      "canggung",
+      "ngeles"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
