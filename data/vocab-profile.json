@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-10-29T03:41:05.580Z",
-  "source_updated_at": "2026-10-29T03:23:06.670Z",
+  "generated_at": "2026-10-29T03:56:04.029Z",
+  "source_updated_at": "2026-10-29T03:55:34.680Z",
   "taught_total": 981,
   "confirmed_mastered": 203,
   "needs_reinforcement": 686,
@@ -13,7 +13,7 @@
   "primary_unlearned_total": 397,
   "primary_coverage_percent": 59.4,
   "primary_eligible_new_total": 67,
-  "focus_total": 685,
+  "focus_total": 684,
   "focus_words": [
     {
       "word": "penanganan",
@@ -83,19 +83,6 @@
       "cn": "仿佛；好像"
     },
     {
-      "word": "mematuhi",
-      "score": 106,
-      "signals": [
-        "quick_wrong",
-        "lesson_wrong",
-        "dont"
-      ],
-      "wrong_count": 3,
-      "last_wrong": "2026-10-17T14:22:18.757Z",
-      "last_review": "2026-10-21T05:54:00.000Z",
-      "cn": "遵守；服从"
-    },
-    {
       "word": "mengenali",
       "score": 98,
       "signals": [
@@ -105,7 +92,7 @@
       ],
       "wrong_count": 3,
       "last_wrong": "2026-10-27T07:33:35.980Z",
-      "last_review": "2026-10-27T07:33:35.980Z",
+      "last_review": "2026-10-29T03:52:25.666Z",
       "cn": "认出；辨认出（凭特征认出来）"
     },
     {
@@ -120,6 +107,19 @@
       "last_wrong": "",
       "last_review": "2026-10-26T07:46:12.354Z",
       "cn": "有效期至"
+    },
+    {
+      "word": "mengakhiri",
+      "score": 96,
+      "signals": [
+        "quick_wrong",
+        "lesson_wrong",
+        "fuzzy"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-10-25T13:10:06.986Z",
+      "last_review": "2026-10-29T03:52:51.473Z",
+      "cn": "结束；终止（让某事停下来）"
     }
   ],
   "definitions": {
