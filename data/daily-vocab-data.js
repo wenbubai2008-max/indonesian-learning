@@ -2158,22 +2158,26 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "原始课程",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-09-07 19:00",
+    "last_seen": "2026-10-29 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-10-29"
     ],
     "root_cn": "追上；随后跟上",
-    "example": "Kalian jalan dulu aja, nanti aku nyusul habis meeting.",
-    "example_cn": "你们先走吧，我开完会晚点再过去找你们。",
+    "example": "Kalian duluan aja, aku nyusul abis nganter adikku ke sekolah.",
+    "example_cn": "你们先走吧，我送完弟弟上学就过去。（aja = saja，abis = habis）",
     "lesson_occurrences": [
-      "2026-09-07 19:00"
+      "2026-09-07 19:00",
+      "2026-10-29 18:00"
     ]
   },
   {
@@ -7362,23 +7366,27 @@ window.DAILY_VOCAB_DB = [
     "en": "chip in; split the cost; contribute together",
     "root": "patungan",
     "root_cn": "共同凑钱；分摊费用",
-    "example": "Hadiah buat dia kita patungan aja biar nggak berat sendiri.",
-    "example_cn": "给他的礼物我们一起凑钱吧，这样不用一个人承担太多。",
+    "example": "Yuk, patungan beli kue buat ulang tahun Nenek. Nenek orangnya penyayang banget, pasti senang.",
+    "example_cn": "走，咱们凑钱给奶奶买生日蛋糕吧。奶奶特别疼人，一定会很高兴。（buat = untuk）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-07 08:00",
+    "last_seen": "2026-10-29 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-07"
+      "2026-09-07",
+      "2026-10-29"
     ],
     "lesson_occurrences": [
-      "2026-09-07 08:00"
+      "2026-09-07 08:00",
+      "2026-10-29 18:00"
     ]
   },
   {
@@ -9508,23 +9516,27 @@ window.DAILY_VOCAB_DB = [
     "en": "reply; chime in; respond to a remark",
     "root": "timpal",
     "root_cn": "接话；回应",
-    "example": "Dia baru selesai ngomong, terus temanku langsung nimpalin dengan contoh lain.",
-    "example_cn": "他刚说完，我朋友马上接了一句，补了另一个例子。",
+    "example": "Waktu aku cerita, Andi nyeletuk, terus yang lain ikut nimpalin.",
+    "example_cn": "我讲的时候，Andi 突然插了一句，然后其他人也跟着接话。（terus = lalu）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-09-12 08:00",
+    "last_seen": "2026-10-29 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-12"
+      "2026-09-12",
+      "2026-10-29"
     ],
     "lesson_occurrences": [
-      "2026-09-12 08:00"
+      "2026-09-12 08:00",
+      "2026-10-29 18:00"
     ]
   },
   {
@@ -21503,27 +21515,29 @@ window.DAILY_VOCAB_DB = [
     "en": "handling; treatment",
     "root": "tangan",
     "root_cn": "手",
-    "example": "Berkat penanganan yang cepat, toko online itu berhasil mencapai rating 4,9 di aplikasi.",
-    "example_cn": "多亏处理得快，那家网店在应用上拿到了 4.9 分。",
+    "example": "Tim kami bertanggung jawab atas penanganan keluhan pelanggan.",
+    "example_cn": "我们团队负责处理客户投诉。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-10-26 18:00",
+    "last_seen": "2026-10-29 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-10-15",
-      "2026-10-26"
+      "2026-10-26",
+      "2026-10-29"
     ],
     "lesson_occurrences": [
       "2026-10-15 08:00",
-      "2026-10-26 18:00"
+      "2026-10-26 18:00",
+      "2026-10-29 18:00"
     ]
   },
   {
@@ -23002,23 +23016,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to be intended (to / for)",
     "root": "maksud",
     "root_cn": "意思；目的",
-    "example": "Tugas kelompok ini dimaksudkan agar setiap anggota belajar bekerja sama.",
-    "example_cn": "这项小组作业的用意是让每个成员学会合作。",
+    "example": "Lukisan besar di lobi itu dimaksudkan untuk memperkenalkan budaya Indonesia kepada tamu asing.",
+    "example_cn": "大厅里那幅大画，用意是向外国客人介绍印尼文化。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-19 08:00",
-    "last_seen": "2026-10-19 08:00",
+    "last_seen": "2026-10-29 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-19"
+      "2026-10-19",
+      "2026-10-29"
     ],
     "lesson_occurrences": [
-      "2026-10-19 08:00"
+      "2026-10-19 08:00",
+      "2026-10-29 18:00"
     ]
   },
   {
@@ -26389,25 +26407,28 @@ window.DAILY_VOCAB_DB = [
     "word": "momen",
     "cn": "时刻；（难忘的）瞬间；时机",
     "en": "moment",
-    "root": "",
-    "root_cn": "",
-    "example": "Sampai sekarang saya masih ingat momen pertama kali Ayah mengantar saya ke sekolah.",
-    "example_cn": "直到现在我还记得爸爸第一次送我去上学的那个瞬间。",
+    "root": "momen",
+    "root_cn": "时刻；瞬间（外来词）",
+    "example": "Momen berjabat tangan dengan idolanya itu tidak akan pernah dia lupakan.",
+    "example_cn": "和偶像握手的那一刻，他永远不会忘记。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-29 08:00",
-    "last_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-29"
     ],
     "lesson_occurrences": [
-      "2026-10-29 08:00"
+      "2026-10-29 08:00",
+      "2026-10-29 18:00"
     ]
   },
   {
@@ -26441,23 +26462,26 @@ window.DAILY_VOCAB_DB = [
     "en": "approaching; shortly before",
     "root": "jelang",
     "root_cn": "临近",
-    "example": "Menjelang akhir bulan, uang saya tinggal sedikit karena harus bayar angsuran motor.",
-    "example_cn": "快到月底的时候，我的钱只剩一点了，因为要还摩托车的分期款。",
+    "example": "Menjelang Lebaran, jalan tol ke luar kota biasanya amat padat.",
+    "example_cn": "临近开斋节时，出城的高速公路通常非常堵。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-29 08:00",
-    "last_seen": "2026-10-29 08:00",
+    "last_seen": "2026-10-29 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-29"
     ],
     "lesson_occurrences": [
-      "2026-10-29 08:00"
+      "2026-10-29 08:00",
+      "2026-10-29 18:00"
     ]
   },
   {
@@ -26483,6 +26507,81 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-29 08:00"
+    ]
+  },
+  {
+    "word": "hapus",
+    "cn": "删除；擦掉；取消",
+    "en": "to delete; to erase",
+    "root": "hapus",
+    "root_cn": "删去；擦去",
+    "example": "Tolong hapus foto pribadi saya dari grup, ya.",
+    "example_cn": "麻烦把我的私人照片从群里删掉，好吗？",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 18:00",
+    "last_seen": "2026-10-29 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 18:00"
+    ]
+  },
+  {
+    "word": "angkat",
+    "cn": "接（电话）；抬起；举起",
+    "en": "to pick up (a call); to lift",
+    "root": "angkat",
+    "root_cn": "抬；举",
+    "example": "Teleponnya nggak diangkat, mungkin dia lagi di angkot.",
+    "example_cn": "电话没人接，他可能正在坐小巴。（nggak = tidak，lagi = sedang）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 18:00",
+    "last_seen": "2026-10-29 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 18:00"
+    ]
+  },
+  {
+    "word": "batas",
+    "cn": "界限；限度；期限",
+    "en": "limit; boundary",
+    "root": "batas",
+    "root_cn": "边界；界限",
+    "example": "Seandainya kamu mendaftar melewati batas waktu, pendaftaranmu tidak akan diterima.",
+    "example_cn": "要是你过了期限才报名，报名就不会被接受。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-29 18:00",
+    "last_seen": "2026-10-29 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-29"
+    ],
+    "lesson_occurrences": [
+      "2026-10-29 18:00"
     ]
   }
 ];

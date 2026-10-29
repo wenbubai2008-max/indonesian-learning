@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-29",
-    "session": "pm",
-    "time": "18:00",
-    "day": 69
+    "date": "2026-10-30",
+    "session": "am",
+    "time": "08:00",
+    "day": 70
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-29T04:01:07.757Z",
-    "lesson_watermark": "2026-10-29 08:00",
+    "runtime_generated_at": "2026-10-29T10:51:26.562Z",
+    "lesson_watermark": "2026-10-29 18:00",
     "index_updated": "2026-10-29",
-    "runtime_hash": "ee61b3288f2381a04fcf11a93523f327f51d89ad9b5b57d46d745f1cbf0962b8",
-    "index_hash": "0307e25a9b355bea980c20d47aba05cc30ae1755c22238d063b97c30070b4f21",
+    "runtime_hash": "c7f9c594319d3278dca38e2a7b4203c2302cee842a9599abdcf274953a251099",
+    "index_hash": "c4864fc0f0a5fc0430961a1f44d7e6c4f95d2a5b847f1a5015a25ddfc5784099",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -231,10 +231,6 @@
         "智慧"
       ],
       [
-        "batas",
-        "边界/限制"
-      ],
-      [
         "kehadiran",
         "出席、在场"
       ],
@@ -249,14 +245,6 @@
       [
         "buang",
         "扔；丢弃"
-      ],
-      [
-        "hapus",
-        "删除"
-      ],
-      [
-        "angkat",
-        "接（电话）；抬起"
       ],
       [
         "pendiam",
@@ -1011,26 +999,6 @@
         "不；不是"
       ],
       [
-        "patungan",
-        2,
-        0,
-        "",
-        "",
-        "一起分摊；凑钱；AA出钱（口语）",
-        "patungan",
-        "共同凑钱；分摊费用"
-      ],
-      [
-        "nyusul",
-        2,
-        0,
-        "",
-        "2026-10-15T13:39:44.539Z",
-        "随后跟上；晚点再过去会合",
-        "susul",
-        "追上；随后跟上"
-      ],
-      [
         "ngegas",
         2,
         0,
@@ -1059,16 +1027,6 @@
         "左右为难；怎么做都不对",
         "salah",
         "错；不对"
-      ],
-      [
-        "nimpalin",
-        3,
-        0,
-        "",
-        "",
-        "接话；回一句；顺着对方的话回应（口语）",
-        "timpal",
-        "接话；回应"
       ],
       [
         "sikap",
@@ -2521,94 +2479,34 @@
         "拉肚子"
       ],
       [
-        "bepergian",
-        3,
+        "haus",
+        2,
         0,
         "",
-        "2026-10-29T03:58:18.199Z",
-        "出门（去外地）；出行；远行",
-        "pergi",
-        "去；离开"
+        "2026-10-21T01:43:37.813Z",
+        "口渴",
+        "haus",
+        "口渴"
       ],
       [
-        "pasangan",
-        3,
+        "meledak",
+        2,
         0,
         "",
-        "2026-10-29T03:58:37.160Z",
-        "伴侣；另一半；（一）对",
-        "pasang",
-        "一对；安装"
+        "2026-10-22T15:34:37.418Z",
+        "爆炸；突然爆发",
+        "ledak",
+        "爆炸"
       ],
       [
-        "pengunjung",
-        3,
+        "meletakkan",
+        2,
         0,
         "",
-        "2026-10-29T03:58:39.254Z",
-        "参观者；来访者；（商场、景点等的）客人",
-        "kunjung",
-        "访问；拜访"
-      ],
-      [
-        "tradisional",
-        3,
-        0,
-        "",
-        "2026-10-29T03:58:46.150Z",
-        "传统的",
-        "",
-        ""
-      ],
-      [
-        "beragam",
-        3,
-        0,
-        "",
-        "2026-10-29T03:58:20.357Z",
-        "各种各样的；多样的",
-        "ragam",
-        "种类；样式"
-      ],
-      [
-        "menyenangkan",
-        3,
-        0,
-        "",
-        "2026-10-29T03:58:29.018Z",
-        "令人愉快的；让人开心的",
-        "senang",
-        "高兴；喜欢"
-      ],
-      [
-        "momen",
-        3,
-        0,
-        "",
-        "2026-10-29T03:58:35.037Z",
-        "时刻；（难忘的）瞬间；时机",
-        "",
-        ""
-      ],
-      [
-        "sepanjang",
-        3,
-        0,
-        "",
-        "2026-10-29T03:58:41.638Z",
-        "沿着（整条）；整个……期间",
-        "panjang",
-        "长"
-      ],
-      [
-        "tersenyum",
-        3,
-        0,
-        "",
-        "2026-10-29T03:58:43.371Z",
-        "微笑",
-        "senyum",
-        "微笑；笑容"
+        "2026-10-22T15:34:51.171Z",
+        "放置；把……放下",
+        "letak",
+        "位置；放置"
       ]
     ],
     "focus": [
@@ -2873,46 +2771,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-10-22",
-      "session": "am",
-      "review_core": [
-        "sebaiknya",
-        "perbaiki",
-        "tepat",
-        "kebutuhan",
-        "kebayang"
-      ],
-      "new_words": [
-        "mengincar",
-        "lolos",
-        "hadiah utama",
-        "golongan darah",
-        "berlaku sampai",
-        "silsilah keluarga",
-        "jerapah",
-        "kijang",
-        "macan kumbang",
-        "kangguru"
-      ]
-    },
-    {
-      "date": "2026-10-22",
-      "session": "pm",
-      "review_core": [
-        "perkirakan",
-        "seolah-olah",
-        "usaha",
-        "usahakan",
-        "usah"
-      ],
-      "new_words": [
-        "trailer",
-        "fiksi ilmiah",
-        "judul",
-        "tidak adil"
-      ]
-    },
-    {
       "date": "2026-10-23",
       "session": "am",
       "review_core": [
@@ -3173,106 +3031,40 @@
         "menjelang",
         "tersenyum"
       ]
+    },
+    {
+      "date": "2026-10-29",
+      "session": "pm",
+      "review_core": [
+        "dimaksudkan",
+        "penanganan",
+        "nimpalin",
+        "nyusul",
+        "patungan"
+      ],
+      "new_words": [
+        "hapus",
+        "angkat",
+        "batas"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "new_words": [
-      "karyawan",
-      "promosi",
-      "divisi"
+      "hapus",
+      "angkat",
+      "batas"
     ],
     "review_core": [
-      "pembangunan",
-      "membangun",
-      "perpaduan",
-      "ngulur",
-      "nyangkut"
+      "dimaksudkan",
+      "penanganan",
+      "nimpalin",
+      "nyusul",
+      "patungan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-29",
-    "vocab": [
-      [
-        "bepergian",
-        "出门（去外地）；出行；远行",
-        "to travel; to go on a trip",
-        "pergi",
-        "去；离开"
-      ],
-      [
-        "pasangan",
-        "伴侣；另一半；（一）对",
-        "partner; spouse; couple; pair",
-        "pasang",
-        "一对；安装"
-      ],
-      [
-        "pengunjung",
-        "参观者；来访者；（商场、景点等的）客人",
-        "visitor",
-        "kunjung",
-        "访问；拜访"
-      ],
-      [
-        "tradisional",
-        "传统的",
-        "traditional",
-        "",
-        ""
-      ],
-      [
-        "beragam",
-        "各种各样的；多样的",
-        "various; diverse",
-        "ragam",
-        "种类；样式"
-      ],
-      [
-        "menyenangkan",
-        "令人愉快的；让人开心的",
-        "pleasant; enjoyable",
-        "senang",
-        "高兴；喜欢"
-      ],
-      [
-        "momen",
-        "时刻；（难忘的）瞬间；时机",
-        "moment",
-        "",
-        ""
-      ],
-      [
-        "sepanjang",
-        "沿着（整条）；整个……期间",
-        "along; throughout; all (day/night)",
-        "panjang",
-        "长"
-      ],
-      [
-        "menjelang",
-        "临近；快到……的时候",
-        "approaching; shortly before",
-        "jelang",
-        "临近"
-      ],
-      [
-        "tersenyum",
-        "微笑",
-        "to smile",
-        "senyum",
-        "微笑；笑容"
-      ]
-    ],
-    "review_vocab": [
-      "pembangunan",
-      "bangunan",
-      "kekerasan",
-      "memilah",
-      "canggung",
-      "ngeles"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
