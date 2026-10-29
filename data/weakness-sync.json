@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T15:42:21.949Z",
+  "updated_at": "2026-10-29T03:23:06.670Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -3159,12 +3159,21 @@
     "menjelang": {
       "word": "menjelang",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:43.383Z",
+      "updated_at": "2026-10-29T03:22:55.678Z",
       "display": "menjelang",
+      "cn": "临近；快到……的时候",
+      "root": "jelang",
+      "root_cn": "临近",
+      "last_wrong": "2026-10-29T03:22:55.556Z",
+      "last_review": "2026-10-29T03:22:55.556Z",
+      "source": "课程小测",
+      "source_date": "2026-10-29",
+      "session": "08:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 1,
       "right_streak": 0
     },
     "antar": {
