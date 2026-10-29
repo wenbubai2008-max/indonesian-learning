@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-29T00:31:59.523Z",
+    "runtime_generated_at": "2026-10-29T03:41:05.417Z",
     "lesson_watermark": "2026-10-29 08:00",
     "index_updated": "2026-10-29",
-    "runtime_hash": "3320cbf95abeb1235a9095d71a501abc0d183fa8f7361812407851f5fe66c53b",
+    "runtime_hash": "8c28b3df5ce70e3ad4a1dc576f73fda5ae3780a066a27550067ccc0ebc12d5a7",
     "index_hash": "0307e25a9b355bea980c20d47aba05cc30ae1755c22238d063b97c30070b4f21",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
@@ -771,6 +771,16 @@
         "经过；超过"
       ],
       [
+        "menjelang",
+        1,
+        1,
+        "2026-10-29T03:22:55.556Z",
+        "2026-10-29T03:22:55.556Z",
+        "临近；快到……的时候",
+        "jelang",
+        "临近"
+      ],
+      [
         "karyawan",
         1,
         1,
@@ -909,16 +919,6 @@
         "装作；自以为；故意摆出某种样子",
         "sok",
         "装作；自以为"
-      ],
-      [
-        "selera",
-        1,
-        1,
-        "2026-10-23T23:36:19.199Z",
-        "2026-10-27T05:48:59.236Z",
-        "胃口；口味；喜好",
-        "selera",
-        "胃口；喜好"
       ],
       [
         "tingkat",
@@ -2599,16 +2599,6 @@
         "沿着（整条）；整个……期间",
         "panjang",
         "长"
-      ],
-      [
-        "menjelang",
-        3,
-        0,
-        "",
-        "",
-        "临近；快到……的时候",
-        "jelang",
-        "临近"
       ],
       [
         "tersenyum",
