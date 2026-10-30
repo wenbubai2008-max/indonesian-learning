@@ -1,0 +1,737 @@
+{
+ "version": 1,
+ "title": "早课深讲 · 10月30日",
+ "intro": [
+  "今天早上的课叫《在奶奶家学做酸菜汤》。丁达在奶奶的指导下切菜、调味，最后爸爸说味道跟奶奶做的特别像。",
+  "今天只讲 5 样：[[usahakan]] · [[mirip]] · [[kurangi]] · [[Usahakan …, supaya …]] · [[… mirip sekali dengan …]]"
+ ],
+ "items": [
+  {
+   "key": "usahakan",
+   "name": "usahakan",
+   "head": "usahakan · 尽量（做到）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "\"Pelan-pelan saja. Usahakan potongannya tipis dan sama besar, supaya cepat matang,\" kata Nenek.",
+      "cn": "奶奶说：“慢慢来。尽量切得薄一点、大小一样，这样熟得快。”"
+     }
+    ],
+    "ask": "奶奶这句话是在做什么？",
+    "options": [
+     {
+      "t": "提醒丁达尽量切薄、切匀",
+      "ok": true,
+      "reply": [
+       "对。Usahakan + 要做到的事 = 尽量做到。"
+      ]
+     },
+     {
+      "t": "夸丁达已经切得很好了",
+      "reply": [
+       "不对。奶奶是在提要求，usahakan 是“尽量做到”，还没做到。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{usahakan}} 常放句首提醒别人：{{Usahakan datang pagi, ya.}}（尽量早点来。）自己答应别人时说 {{Saya usahakan.}}（我尽量。）"
+   ],
+   "simple": [
+    "[[Usahakan]] + 要做到的事 = 尽量……"
+   ],
+   "asks": [
+    {
+     "label": "usahakan、berusaha、usaha 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Usahakan datang pagi.",
+         "尽量早点来（提醒别人）"
+        ],
+        [
+         "Saya berusaha datang pagi.",
+         "我努力早来（说自己）"
+        ],
+        [
+         "usaha",
+         "名词：努力；生意"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "朋友约你明早去市场，你答应：[[Aku ___ jam tujuh udah sampai, ya.]]"
+    ],
+    "options": [
+     {
+      "t": "usahakan",
+      "v": "right",
+      "why": [
+       "对。Aku usahakan … = 我尽量……，口语里很常用。"
+      ]
+     },
+     {
+      "t": "coba",
+      "v": "ok",
+      "why": [
+       "也可以，Aku coba … 是“我试试”，语气更随意。"
+      ]
+     },
+     {
+      "t": "usaha",
+      "v": "wrong",
+      "why": [
+       "usaha 是名词“努力；生意”，这里要动词。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Usahakan jangan telat, ya.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "尽量别迟到哦",
+       "v": "right",
+       "why": [
+        "对。Usahakan + jangan … = 尽量别……"
+       ]
+      },
+      {
+       "t": "别再努力了",
+       "v": "wrong",
+       "why": [
+        "句子说的是别迟到，不是别努力。"
+       ]
+      },
+      {
+       "t": "你迟到是因为不努力",
+       "v": "wrong",
+       "why": [
+        "这是提醒，不是在说原因。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "提醒同事：“尽量周五之前把报告发过来。”"
+    ],
+    "kw": "Usahakan · laporannya · sebelum hari Jumat",
+    "skel": "Usahakan ____ dikirim sebelum hari ____, ya.",
+    "ref": "Usahakan laporannya dikirim sebelum hari Jumat, ya."
+   },
+   "recall": {
+    "prompt": [
+     "叮嘱孩子：“尽量九点前睡觉。”"
+    ],
+    "kw": "Usahakan · tidur · sebelum jam sembilan",
+    "skel": "Usahakan ____ sebelum jam ____, ya.",
+    "ref": "Usahakan tidur sebelum jam sembilan, ya."
+   },
+   "final": {
+    "cn": "“我尽量明天回你消息。”",
+    "ref": "Saya usahakan besok sudah membalas pesanmu."
+   },
+   "remind": "Usahakan + 事情 = 尽量做到；自己答应时说 Saya usahakan。"
+  },
+  {
+   "key": "mirip",
+   "name": "mirip",
+   "head": "mirip · 相像；相似",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Ayah bilang rasanya mirip sekali dengan sayur asem buatan Nenek.",
+      "cn": "爸爸说味道跟奶奶做的酸菜汤特别像。"
+     }
+    ],
+    "ask": "爸爸是什么意思？",
+    "options": [
+     {
+      "t": "丁达做的汤，味道跟奶奶做的很像",
+      "ok": true,
+      "reply": [
+       "对。mirip = 像，但不完全一样。"
+      ]
+     },
+     {
+      "t": "这锅汤其实是奶奶做的",
+      "reply": [
+       "不对。汤是丁达做的。mirip 是“像”，不是“就是”。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{mirip}} 后面接 {{dengan}}，口语用 {{sama}}：{{Mukanya mirip sama ayahnya.}} 可以说 {{agak mirip}}（有点像）、{{mirip banget}}（好像）。"
+   ],
+   "simple": [
+    "A [[mirip dengan]] B = A 跟 B 很像。"
+   ],
+   "asks": [
+    {
+     "label": "mirip、sama、kayak 怎么选？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "mirip dengan",
+         "像，但不完全一样"
+        ],
+        [
+         "sama dengan",
+         "相同、一样"
+        ],
+        [
+         "kayak / seperti",
+         "像……一样（打比方；说长相时也常用）"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note",
+     "word": "mirip"
+    }
+   ],
+   "check": {
+    "q": [
+     "朋友给你看她妹妹的照片，你说：[[Wah, kalian ___ banget!]]"
+    ],
+    "options": [
+     {
+      "t": "mirip",
+      "v": "right",
+      "why": [
+       "对。说两个人长得像用 mirip。"
+      ]
+     },
+     {
+      "t": "cocok",
+      "v": "wrong",
+      "why": [
+       "cocok 是“合适、合得来”，不是长得像。"
+      ]
+     },
+     {
+      "t": "setuju",
+      "v": "wrong",
+      "why": [
+       "setuju 是“同意”。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Rasanya agak mirip dengan sate.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "味道有点像沙爹",
+       "v": "right",
+       "why": [
+        "对。agak mirip = 有点像。"
+       ]
+      },
+      {
+       "t": "味道跟沙爹完全一样",
+       "v": "wrong",
+       "why": [
+        "完全一样是 sama；agak mirip 只是有点像。"
+       ]
+      },
+      {
+       "t": "比沙爹好吃",
+       "v": "wrong",
+       "why": [
+        "句子里没有比较好不好吃。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟朋友说：“这家店的奶茶跟台湾的很像。”"
+    ],
+    "kw": "mirip · toko ini · Taiwan",
+    "skel": "Teh susu di ____ ini mirip dengan yang di ____.",
+    "ref": "Teh susu di toko ini mirip dengan yang di Taiwan."
+   },
+   "recall": {
+    "prompt": [
+     "跟同事说：“新办公室跟旧的差不多。”"
+    ],
+    "kw": "kantor barunya · mirip dengan · kantor lama",
+    "skel": "Ruangan kantor ____ mirip dengan kantor ____.",
+    "ref": "Ruangan kantor barunya mirip dengan kantor lama."
+   },
+   "final": {
+    "cn": "“你笑起来跟你妈妈好像。”",
+    "ref": "Kalau senyum, kamu mirip banget sama ibumu."
+   },
+   "remind": "mirip dengan／sama = 像（不完全一样）；完全一样用 sama。"
+  },
+  {
+   "key": "kurangi",
+   "name": "kurangi",
+   "head": "kurangi · （把……）减少；少放",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "实用句",
+      "id": "Gulanya kurangi dikit aja, ya. Kemarin kuenya kemanisan, Ayah sampai ngeluh.",
+      "cn": "糖少放一点吧。昨天的蛋糕太甜了，爸爸都抱怨了。"
+     }
+    ],
+    "ask": "说话人想让对方怎么做？",
+    "options": [
+     {
+      "t": "这次少放点糖",
+      "ok": true,
+      "reply": [
+       "对。kurangi + 东西 = 把它减少。"
+      ]
+     },
+     {
+      "t": "再多加点糖",
+      "reply": [
+       "不对。蛋糕太甜了，所以要 kurangi（减少）。加是 tambah。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{kurangi}} 后面接要减少的东西：{{kurangi gula}}、{{kurangi kecepatan}}。书面说 {{mengurangi}}，跟朋友家人说 {{kurangin}}。"
+   ],
+   "simple": [
+    "[[kurangi]] + 东西 = 少放、少用一点。"
+   ],
+   "asks": [
+    {
+     "label": "kurangi、berkurang、kurang 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Kurangi gulanya.",
+         "把糖减少（接宾语）"
+        ],
+        [
+         "Pembelinya berkurang.",
+         "买的人少了（自己变少）"
+        ],
+        [
+         "Gulanya kurang.",
+         "糖不够"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "构词",
+     "from": "formation",
+     "word": "kurangi"
+    }
+   ],
+   "check": {
+    "q": [
+     "你提醒爸爸少吃咸的：[[Yah, ___ makanan yang asin, ya.]]"
+    ],
+    "options": [
+     {
+      "t": "kurangi",
+      "v": "right",
+      "why": [
+       "对。kurangi makanan yang asin = 少吃咸的。"
+      ]
+     },
+     {
+      "t": "kurangin",
+      "v": "ok",
+      "why": [
+       "也可以，口语说法，跟家人说话很自然。"
+      ]
+     },
+     {
+      "t": "berkurang",
+      "v": "wrong",
+      "why": [
+       "berkurang 是“自己变少”，后面不接宾语。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "哪一句用得对？"
+     ],
+     "options": [
+      {
+       "t": "Kurangi garamnya sedikit.",
+       "v": "right",
+       "why": [
+        "对。kurangi + 宾语。"
+       ]
+      },
+      {
+       "t": "Jumlah pembeli kurangi tahun ini.",
+       "v": "wrong",
+       "why": [
+        "人数自己变少，要用 berkurang。"
+       ]
+      },
+      {
+       "t": "Tolong berkurang gulanya.",
+       "v": "wrong",
+       "why": [
+        "后面有宾语 gulanya，要用 kurangi。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟同事说：“我最近在少喝咖啡。”（书面形）"
+    ],
+    "kw": "mengurangi · kopi",
+    "skel": "Sekarang saya lagi ____ kopi.",
+    "ref": "Sekarang saya lagi mengurangi kopi."
+   },
+   "recall": {
+    "prompt": [
+     "劝朋友：“少玩点手机，眼睛会累。”"
+    ],
+    "kw": "Kurangi · main HP · capek",
+    "skel": "Kurangi ____ HP, matamu nanti ____.",
+    "ref": "Kurangi main HP, matamu nanti capek."
+   },
+   "final": {
+    "cn": "“开慢点，前面有学校。”",
+    "ref": "Kurangi kecepatan, di depan ada sekolah."
+   },
+   "remind": "kurangi + 东西 = 把它减少；自己变少用 berkurang。"
+  },
+  {
+   "key": "usahakan-pola",
+   "name": "Usahakan …, supaya …",
+   "head": "Usahakan …, supaya … · 尽量……，这样……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "\"Pelan-pelan saja. Usahakan potongannya tipis dan sama besar, supaya cepat matang,\" kata Nenek.",
+      "cn": "奶奶说：“慢慢来。尽量切得薄一点、大小一样，这样熟得快。”"
+     }
+    ],
+    "ask": "supaya 后面说的是什么？",
+    "options": [
+     {
+      "t": "这样做的目的：熟得快",
+      "ok": true,
+      "reply": [
+       "对。supaya 后面说目的。"
+      ]
+     },
+     {
+      "t": "已经发生的结果",
+      "reply": [
+       "不对。菜还没下锅，supaya 说的是想达到的目的。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "前半句提要求，{{supaya}} 后面说目的：{{Usahakan datang pagi, supaya dapat tempat duduk.}} 口语里 supaya 常换成 {{biar}}。"
+   ],
+   "simple": [
+    "[[Usahakan A, supaya B]] = 尽量 A，这样 B。"
+   ],
+   "asks": [
+    {
+     "label": "supaya 和 karena 有什么不同？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      "supaya 说目的（想要的结果），karena 说原因（已经有的理由）：{{Saya pulang cepat karena hujan.}}（因为下雨我早回家。）"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "“尽量早点睡，这样明天不累。”哪一句对？"
+    ],
+    "options": [
+     {
+      "t": "Usahakan tidur cepat, supaya besok tidak capek.",
+      "v": "right",
+      "why": [
+       "对。先提要求，再说目的。"
+      ]
+     },
+     {
+      "t": "Usahakan tidur cepat, biar besok nggak capek.",
+      "v": "ok",
+      "why": [
+       "也可以，口语说法，biar = supaya。"
+      ]
+     },
+     {
+      "t": "Usahakan tidur cepat, karena besok tidak capek.",
+      "v": "wrong",
+      "why": [
+       "karena 是原因，这里要说目的。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Usahakan bawa payung, supaya tidak kehujanan.]]里 supaya 后面是什么？"
+     ],
+     "options": [
+      {
+       "t": "目的：不被雨淋",
+       "v": "right",
+       "why": [
+        "对。"
+       ]
+      },
+      {
+       "t": "原因：已经在下雨",
+       "v": "wrong",
+       "why": [
+        "原因要用 karena。"
+       ]
+      },
+      {
+       "t": "条件：如果带了伞",
+       "v": "wrong",
+       "why": [
+        "“如果带了伞”是条件，要用 kalau；supaya 后面说的是目的。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "对新同事说：“尽量早点到，这样能找到停车位。”"
+    ],
+    "kw": "Usahakan · lebih awal · supaya · tempat parkir",
+    "skel": "Usahakan datang ____, supaya dapat ____ parkir.",
+    "ref": "Usahakan datang lebih awal, supaya dapat tempat parkir."
+   },
+   "recall": {
+    "prompt": [
+     "跟朋友说：“尽量多喝水，这样嗓子好得快。”"
+    ],
+    "kw": "Usahakan · minum air · supaya",
+    "skel": "Usahakan ____ air yang banyak, supaya ____ cepat sembuh.",
+    "ref": "Usahakan minum air yang banyak, supaya tenggorokanmu cepat sembuh."
+   },
+   "final": {
+    "cn": "“尽量把房间收拾整齐，这样来的客人不会不自在。”",
+    "ref": "Usahakan kamarnya rapi, supaya tamu yang datang tidak canggung."
+   },
+   "remind": "Usahakan A, supaya B：先提要求，再说目的。"
+  },
+  {
+   "key": "mirip-pola",
+   "name": "… mirip sekali dengan …",
+   "head": "… mirip sekali dengan … · ……跟……特别像",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Ayah bilang rasanya mirip sekali dengan sayur asem buatan Nenek.",
+      "cn": "爸爸说味道跟奶奶做的酸菜汤特别像。"
+     }
+    ],
+    "ask": "这句话拿什么和什么比？",
+    "options": [
+     {
+      "t": "丁达做的汤和奶奶做的汤",
+      "ok": true,
+      "reply": [
+       "对。rasanya（它的味道）mirip sekali dengan 奶奶做的。"
+      ]
+     },
+     {
+      "t": "爸爸和奶奶",
+      "reply": [
+       "不对。爸爸只是说话的人，比的是汤的味道。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "A {{mirip sekali dengan}} B，sekali 加强“像”。A 常用 {{rasanya}}、{{wajahnya}}、{{suaranya}}。口语说 {{mirip banget sama}}。"
+   ],
+   "simple": [
+    "[[A mirip sekali dengan B]] = A 跟 B 特别像。"
+   ],
+   "asks": [
+    {
+     "label": "能说 sangat mirip 吗？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      "能：{{sangat mirip dengan}} 偏书面；{{mirip sekali}} 日常叙述常用；{{mirip banget sama}} 是口语。"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "“她的声音跟她姐姐特别像。”哪一句对？"
+    ],
+    "options": [
+     {
+      "t": "Suaranya mirip sekali dengan kakaknya.",
+      "v": "right",
+      "why": [
+       "对。"
+      ]
+     },
+     {
+      "t": "Suaranya mirip banget sama kakaknya.",
+      "v": "ok",
+      "why": [
+       "也可以，口语说法。"
+      ]
+     },
+     {
+      "t": "Suaranya mirip sekali kakaknya dengan.",
+      "v": "wrong",
+      "why": [
+       "dengan 要放在被比的对象前面。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Kota ini mirip sekali dengan Bandung.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "这个城市跟万隆特别像",
+       "v": "right",
+       "why": [
+        "对。"
+       ]
+      },
+      {
+       "t": "这个城市就是万隆",
+       "v": "wrong",
+       "why": [
+        "mirip 是像，不是就是。"
+       ]
+      },
+      {
+       "t": "这个城市离万隆很近",
+       "v": "wrong",
+       "why": [
+        "句子说的是像，不是距离。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟朋友说：“这家店的面，味道跟我妈妈做的特别像。”"
+    ],
+    "kw": "Rasanya · mirip sekali dengan · buatan ibu saya",
+    "skel": "Rasanya mirip ____ dengan mi ____ ibu saya.",
+    "ref": "Rasanya mirip sekali dengan mi buatan ibu saya."
+   },
+   "recall": {
+    "prompt": [
+     "跟同事说：“新来的经理长得跟一个演员特别像。”"
+    ],
+    "kw": "Manajer baru · mirip sekali dengan · aktor",
+    "skel": "Manajer ____ itu mirip sekali dengan seorang ____.",
+    "ref": "Manajer baru itu mirip sekali dengan seorang aktor."
+   },
+   "final": {
+    "cn": "“这张照片里的海边跟巴厘岛特别像。”",
+    "ref": "Pantai di foto ini mirip sekali dengan Bali."
+   },
+   "remind": "A mirip sekali dengan B：A 跟 B 特别像；口语 mirip banget sama。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "其余新词词卡里都有完整讲解，这里只扫一眼。不熟的点一下，标出来给自己看。"
+  ],
+  "words": [
+   "memotong",
+   "daun",
+   "sendok",
+   "asam",
+   "tipis",
+   "buang",
+   "halus",
+   "ukur"
+  ]
+ },
+ "reading": [
+  {
+   "key": "berani",
+   "sentence": "Pisaunya agak tumpul, jadi awalnya Dinda tidak berani memotong cepat-cepat.",
+   "cn": "刀有点钝，所以丁达一开始不敢切得太快。",
+   "chunks": [
+    [
+     "Pisaunya agak tumpul,",
+     "刀有点钝",
+     "tumpul = 钝"
+    ],
+    [
+     "jadi awalnya Dinda",
+     "所以丁达一开始"
+    ],
+    [
+     "tidak berani memotong cepat-cepat.",
+     "不敢切得太快",
+     "berani + 动作 = 敢做（复习词）"
+    ]
+   ],
+   "steal": [
+    "值得借用的是 [[awalnya … tidak berani …]]：{{Awalnya saya tidak berani naik motor sendiri.}}（我一开始不敢自己骑摩托车。）"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今天的输出题，缩短版）：跟朋友介绍一道你会做的菜：怎么切、味道像什么。"
+   ],
+   "kw": "dipotong tipis · mirip",
+   "skel": "Bawang putihnya dipotong ____, lalu ditumis sampai ____. Rasanya ____ tumis kangkung di warung.",
+   "ref": "Bawang putihnya dipotong tipis, lalu ditumis sampai harum. Rasanya mirip tumis kangkung di warung.",
+   "notes": [
+    "整页的输出题有更长的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
