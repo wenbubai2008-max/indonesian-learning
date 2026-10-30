@@ -1,0 +1,362 @@
+{
+  "date": "2026-10-30",
+  "session": "pm",
+  "time": "18:00",
+  "day": 70,
+  "title": "18:00 晚课｜Token Listrik Cepat Habis, Ternyata Kulkas Penyebabnya · 家里电量用得飞快，原来是冰箱惹的祸",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "kemungkinan besar",
+    "tanda",
+    "rendah"
+  ],
+  "vocab": [
+    {
+      "word": "kemungkinan besar",
+      "display": "kemungkinan besar",
+      "audio_text": "kemungkinan besar",
+      "cn": "很可能；大概率；多半",
+      "en": "most likely; in all likelihood",
+      "root": "mungkin",
+      "root_cn": "可能",
+      "formation": "ke-an + mungkin → kemungkinan（可能性）；kemungkinan besar 字面是“可能性很大”，整体当副词用，放句首或谓语前：Kemungkinan besar dia telat. 同词根：mungkin（也许）、memungkinkan（使……成为可能）、tidak mungkin（不可能）。常见搭配：kemungkinan besar benar（多半是对的）、kemungkinan kecil（可能性很小）、ada kemungkinan（有可能）。",
+      "example": "Jalan ke Puncak ditutup dari tadi pagi; kemungkinan besar ada longsor lagi.",
+      "example_cn": "去 Puncak 的路从今天早上起就封了，很可能又发生了塌方。",
+      "synonym_note": "kemungkinan besar 比 mungkin 把握更大：mungkin 是“也许”（五五开也能用），kemungkinan besar 是“多半、八成”；反过来 kemungkinan kecil 是“可能性不大”。口语说法：kayaknya（好像、八成），如 Kayaknya dia nggak dateng.；写报告、跟长辈或客户说话时用 kemungkinan besar 更稳妥。",
+      "usage_note": "今晚新词。猜原因、估计结果时放在句首：Kemungkinan besar penyebabnya …（多半是因为……）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "tanda",
+      "display": "tanda",
+      "audio_text": "tanda",
+      "cn": "迹象；信号；标志；记号",
+      "en": "sign; signal; mark",
+      "root": "tanda",
+      "root_cn": "标记；迹象",
+      "formation": "词根本身是名词。同词根：menandai（做记号、标出）、ditandai（被标出；以……为标志）、pertanda（预兆）、tanda tangan（签名）、menandatangani（签署）。常见搭配：tanda-tanda（种种迹象）、tanda bahaya（危险信号）、itu tandanya …（那说明……）、memberi tanda（打信号、示意）。",
+      "example": "Langit gelap dan angin makin kencang, itu tanda mau hujan deras; berbahaya kalau anak-anak masih main di lapangan.",
+      "example_cn": "天色暗了、风越来越大，这是要下大雨的迹象；孩子们还在球场上玩就危险了。",
+      "synonym_note": "tanda 是看得见、听得到的“迹象、信号、记号”；gejala 多指病的“症状”或某种现象（gejala flu 感冒症状）；isyarat 偏有意发出的“手势、暗号”（memberi isyarat 打手势）。口语里常说 itu tandanya …（那就说明……），口语和书面都用 tanda，没有另外的口语形式。",
+      "usage_note": "今晚新词。发现问题时说 Itu salah satu tandanya.（这就是其中一个迹象。）“签名”是 tanda tangan，不能只说 tanda。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "rendah",
+      "display": "rendah",
+      "audio_text": "rendah",
+      "cn": "低的；（数值、程度、地位）低",
+      "en": "low",
+      "root": "rendah",
+      "root_cn": "低",
+      "formation": "形容词，反义词 tinggi。同词根：terendah（最低）、merendah（放低姿态、谦虚）、merendahkan（贬低、看不起）、rendah hati（谦虚）。常见搭配：suhu rendah（低温）、harga rendah（低价）、gaji rendah（工资低）、suara rendah（低沉的声音）、tekanan darah rendah（低血压）、disetel paling rendah（调到最低）。",
+      "example": "Gaji di bidang ini memang masih rendah, tapi pengalamannya sangat berharga.",
+      "example_cn": "这个领域的工资确实还偏低，但经验很宝贵。",
+      "synonym_note": "rendah 说高度、数值、程度、地位“低”（suhu rendah、harga rendah、tembok rendah 矮墙）；pendek 说长度、身高“短、矮”——人个子矮说 orangnya pendek，不说 rendah。说温度数值高低用 suhu tinggi / suhu rendah；单说“天冷”直接用 dingin。口语也说 rendah，没有常用的另一种说法。",
+      "usage_note": "今晚新词。调空调、冰箱时常说 disetel paling rendah（调到最低）；夸人谦虚说 rendah hati。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menekan",
+      "display": "menekan",
+      "audio_text": "menekan",
+      "cn": "按；压；压低（成本）；施压",
+      "en": "to press; to push down; to put pressure on",
+      "root": "tekan",
+      "root_cn": "压；按",
+      "formation": "meN- + tekan → menekan（t 脱落，meN- 变 men-，同 menulis ← tulis）。被动 ditekan；名词 tekanan（压力）；tertekan（感到压抑、有压力）。常见搭配：menekan tombol（按按钮）、menekan biaya / pengeluaran（压低成本、开支）、menekan seseorang（向某人施压）。",
+      "example": "Untuk menekan biaya, perusahaan membatalkan sejumlah perjalanan dinas tahun ini.",
+      "example_cn": "为了压低成本，公司今年取消了一些出差。",
+      "synonym_note": "menekan 本义是“往下压、按”，引申为“把数字压下来”和“给人施压”；mengurangi 是一般的“减少”。说成本、开支时 menekan biaya 和 mengurangi biaya 都可以，menekan 更有“努力把它压下来”的味道。tekanan 是名词“压力”，tertekan 是“心里有压力”。口语说法：按按钮常说 pencet（Pencet tombolnya）；说成本时口语也用 nekan，开会、写报告用 menekan。",
+      "usage_note": "最近答错过的词，今晚换到“家里省电费”的场景：biar pengeluaran listrik bisa ditekan。注意 t 脱落：tekan → menekan。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "penyebab",
+      "display": "penyebab",
+      "audio_text": "penyebab",
+      "cn": "原因；起因（导致结果的因素）",
+      "en": "cause",
+      "root": "sebab",
+      "root_cn": "原因；因为",
+      "formation": "peN- + sebab → penyebab（s 脱落，peN- 变 peny-，和 menyebabkan 里 meN- 变 meny- 同理）。同词根：sebab（原因；因为）、menyebabkan（导致）、disebabkan oleh（由……引起）。常见搭配：penyebab utama（主要原因）、mencari penyebab（找原因）、penyebab kecelakaan（事故原因）。今晚和 sebab 一组复习。",
+      "example": "Penyebab utama kecelakaan itu adalah pengemudi yang mengabaikan lampu merah.",
+      "example_cn": "那起事故的主要原因是司机无视红灯。",
+      "synonym_note": "penyebab 和 sebab 同词根：penyebab 只当名词，指导致结果的那个因素，常说 penyebab utama；sebab 既能当名词“原因”，也能当连词“因为”。alasan 是人给出的“理由”（alasannya telat 他迟到的理由），不是客观起因。口语说法：说“都怪……”常用 gara-gara（Gara-gara kulkas, tokennya cepet abis）；正式说明原因时用 penyebab。",
+      "usage_note": "最近答错过的词。找问题时最常用两句：Apa penyebabnya?（什么原因？）/ Penyebabnya ternyata …（原来原因是……）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "sebab",
+      "display": "sebab",
+      "audio_text": "sebab",
+      "cn": "原因；缘故；因为",
+      "en": "cause, reason; because",
+      "root": "sebab",
+      "root_cn": "缘由；原因",
+      "formation": "词根本身。作连词：…, sebab …（……，因为……）；作名词：sebabnya（它的原因）、tanpa sebab（无缘无故）、oleh sebab itu（因此）。派生：penyebab（原因、起因）、menyebabkan（导致）、disebabkan（由……引起）。",
+      "example": "Rapat hari ini ditunda, sebab pemimpin proyeknya masih terjebak macet.",
+      "example_cn": "今天的会延期了，因为项目负责人还堵在路上。",
+      "synonym_note": "作连词时 sebab ≈ karena，sebab 稍偏书面，日常说话 karena 更常用。作名词时 sebab 和 penyebab 都能说“原因”：Sebabnya belum jelas / Penyebabnya belum jelas 都自然；“主要原因”多说 penyebab utama。sebab 后面能接整句（sebab dia sakit），penyebab 后面接名词（penyebab kecelakaan）。口语说法：soalnya（Aku telat, soalnya macet）。",
+      "usage_note": "和 penyebab 同词根一组复习：先分清“连词 sebab”和“名词 penyebab”，再记 oleh sebab itu（因此）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "intinya",
+      "display": "intinya",
+      "audio_text": "intinya",
+      "cn": "重点是；核心就是；总之",
+      "en": "the point is; basically",
+      "root": "inti",
+      "root_cn": "核心；要点",
+      "formation": "inti（核心）+ -nya → intinya，整体当话语标记，放句首总结：Intinya, … 同词根：inti（核心）、inti sari（精华）。常见搭配：intinya begini（重点是这样）、inti masalahnya（问题的核心）、inti ceritanya（故事主旨）。",
+      "example": "Dia bicara panjang lebar, tapi intinya kita diminta menyusul ke lokasi besok pagi.",
+      "example_cn": "他说了一大堆，但重点是让我们明天早上随后赶到现场。",
+      "synonym_note": "intinya 是把前面一堆话归结成一句重点；pokoknya 偏“反正、不管怎样”，带坚持或不容商量的语气（Pokoknya aku nggak mau!）；singkatnya 是“简单说”。总结原因或方案用 intinya，表态坚持用 pokoknya。口语里 intinya 本身就很常用；正式总结可以说 pada intinya。",
+      "usage_note": "说完一长串解释之后，用 Intinya, … 收尾，听的人马上知道结论。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "meskipun",
+      "display": "meskipun",
+      "audio_text": "meskipun",
+      "cn": "虽然；即使",
+      "en": "although; even though",
+      "root": "meski",
+      "root_cn": "虽然",
+      "formation": "meski + -pun → meskipun。同义变体：meski、walaupun、walau。句型：Meskipun …, …（虽然……，……）；也可放后半句：…, meskipun …。",
+      "example": "Meskipun sudah lama saling mengenal, mereka baru mulai berkencan tahun lalu.",
+      "example_cn": "虽然认识很久了，他们去年才开始交往。",
+      "synonym_note": "meskipun 和 walaupun 意思基本一样，可以互换；padahal 是“可是（实际上）”，用来引出和预期相反的事实，放在后半句，不能替代句首的 meskipun。规范写作里 meskipun 引出的句子后面一般不再加 tetapi，口语里有人加。口语说法：biarpun / walau（Biarpun capek, aku tetep dateng）；正式场合用 meskipun。",
+      "usage_note": "表达“表面这样，实际却……”时用：Meskipun masih dingin, kulkasnya boros listrik.",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kurangi",
+      "display": "kurangi",
+      "audio_text": "kurangi",
+      "cn": "（把……）减少；少用",
+      "en": "to reduce (imperative / base form)",
+      "root": "kurang",
+      "root_cn": "少；不够",
+      "formation": "今天08:00新学（早上用在“少放糖”）。kurang + -i → kurangi，是 mengurangi 的命令式和口语基本形；被动 dikurangi。常见搭配：kurangi pemakaian（少用）、kurangi jajan（少吃零食、少在外面买吃的）、kurangi buka-tutup pintu（少开关门）。",
+      "example": "Kurangi main HP sebelum tidur; percuma pasang alarm kalau tidurnya jam dua pagi.",
+      "example_cn": "睡前少玩手机；凌晨两点才睡的话，定了闹钟也白搭。",
+      "synonym_note": "kurangi / mengurangi 是主动减少某物；berkurang 是“自己变少”，后面不接宾语（Tagihannya berkurang 账单少了）；menekan 偏“把成本、数字压下来”，比 kurangi 更用力。口语说法：kurangin（Kurangin buka-tutup kulkas）；对长辈、写说明时用 kurangi 或 mengurangi。",
+      "usage_note": "今天08:00新学。早上在厨房里少放糖，今晚换到省电费：kurangi pemakaian AC。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "buang",
+      "display": "buang",
+      "audio_text": "buang",
+      "cn": "扔；丢掉；（口语）浪费",
+      "en": "to throw away; to waste",
+      "root": "buang",
+      "root_cn": "扔",
+      "formation": "今天08:00新学（早上是把汤里的酸角籽挑出来扔掉）。书面主动形 membuang、被动 dibuang；terbuang 是“白白流失、被浪费掉”。常见搭配：buang-buang listrik / uang / waktu（浪费电、钱、时间）、listrik terbuang（电被浪费）、buang sampah（扔垃圾）。",
+      "example": "Lampu teras jangan dinyalakan siang-siang, buang-buang listrik.",
+      "example_cn": "白天别开门廊的灯，太浪费电了。",
+      "synonym_note": "buang 本义“扔掉”，重叠成 buang-buang 表示“白白浪费”；terbuang 是“（被）浪费掉、流失掉”（waktu terbuang 浪费掉的时间），不强调是谁造成的；boros 是形容词“费、浪费”（kulkas boros listrik 冰箱很费电）。口语说法：buang、buangin（Buangin aja!）；正式通知用 membuang。",
+      "usage_note": "今天08:00新学。早上扔的是汤里的籽，今晚说的是白白浪费掉的电：listriknya banyak terbuang。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Bulan ini token listrik di rumah Raka cepat sekali habis, padahal pemakaian keluarganya tidak bertambah. Ibu mulai khawatir dan meminta Raka mencari penyebabnya. Pak Darto, seorang teknisi listrik, lalu datang memeriksa. Dia menunjukkan dua tanda yang tidak diperhatikan Raka: bagian belakang kulkas panas sekali, dan mesinnya berbunyi terus. \"Kemungkinan besar sebabnya karet pintu ini sudah sobek. Udara dinginnya bocor, jadi mesinnya bekerja lebih keras,\" kata Pak Darto. Selain itu, Ibu menyetel suhu kulkas paling rendah supaya sayur lebih awet. Meskipun kulkas itu masih dingin, ternyata listriknya banyak terbuang. Raka mengganti karet pintu dan mengatur ulang suhunya. Intinya, untuk menekan biaya listrik, mereka tidak perlu membeli kulkas baru.",
+    "cn": "这个月 Raka 家的预付电量用得特别快，可家里用电并没有增加。妈妈开始担心，让 Raka 去找原因。后来电工 Darto 师傅上门检查。他指出了两个 Raka 没注意到的迹象：冰箱背面特别烫，而且机器一直响个不停。“很可能是因为这个门封胶条已经裂了。冷气一直在漏，所以机器得更卖力地工作。”Darto 师傅说。另外，妈妈把冰箱温度调到了最低，想让蔬菜放得久一点。虽然冰箱还很冷，其实很多电都白白浪费了。Raka 换了门封胶条，又重新调好了温度。总之，要压低电费，他们并不需要买一台新冰箱。"
+  },
+  "dialogue": {
+    "title": "Nisa 打电话问哥哥：家里的电怎么用得这么快？",
+    "lines": [
+      {
+        "speaker": "Nisa",
+        "id": "Kak, kata Ibu token listrik di rumah cepet abis, ya? Kenapa sih?",
+        "cn": "哥，妈说家里的预付电量用得特别快，是吗？到底怎么回事？（cepet = cepat，abis = habis）"
+      },
+      {
+        "speaker": "Raka",
+        "id": "Iya. Tadi Pak Darto udah ngecek. Penyebabnya ternyata kulkas, bukan AC.",
+        "cn": "对。刚才 Darto 师傅来查过了。原来原因是冰箱，不是空调。（udah = sudah，ngecek = mengecek）"
+      },
+      {
+        "speaker": "Nisa",
+        "id": "Kulkas? Kok bisa? Waktu aku nyampe rumah minggu lalu, kulkasnya masih dingin, kok.",
+        "cn": "冰箱？怎么会？上周我到家的时候，冰箱还挺冷的呀。（nyampe = sampai）"
+      },
+      {
+        "speaker": "Raka",
+        "id": "Meskipun masih dingin, karet pintunya udah sobek. Jadi mesinnya kerja terus.",
+        "cn": "虽然还冷，可门封胶条已经裂了，所以机器一直在运转。（kerja = bekerja）"
+      },
+      {
+        "speaker": "Nisa",
+        "id": "Pantes bunyinya nggak berhenti-berhenti. Aku kira itu biasa.",
+        "cn": "难怪它一直响个不停。我还以为那很正常。（pantes = pantas，nggak = tidak）"
+      },
+      {
+        "speaker": "Raka",
+        "id": "Nah, itu salah satu tandanya. Ibu juga nyetel suhunya paling rendah, biar sayurnya awet.",
+        "cn": "对，那就是迹象之一。妈还把温度调到最低，想让蔬菜放得久一点。（nyetel = menyetel，biar = agar）"
+      },
+      {
+        "speaker": "Nisa",
+        "id": "Terus gimana? Mau beli kulkas baru?",
+        "cn": "那怎么办？要买台新冰箱吗？（gimana = bagaimana）"
+      },
+      {
+        "speaker": "Raka",
+        "id": "Nggak usah. Intinya ganti karetnya aja, terus kurangin buka-tutup pintu kulkas. Biar pengeluaran listrik bisa ditekan.",
+        "cn": "不用。重点是换个胶条就行，再少开关冰箱门。这样电费开支就能压下来。（aja = saja，kurangin = kurangi）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：你的手机最近耗电特别快。给朋友发消息：说你注意到的迹象、你猜的原因，以及你已经试过的办法。用 tanda、kemungkinan besar、rendah，像朋友聊天那样用口语，写 3–4 句。",
+      "reference_answer": "HP-ku belakangan cepet panas, baterainya juga udah abis sebelum sore. Itu tanda ada aplikasi yang jalan terus di belakang. Kemungkinan besar penyebabnya bukan baterai, melainkan game yang baru aku pasang. Padahal kecerahan layar udah aku setel paling rendah.",
+      "reference_cn": "我的手机最近很容易发烫，电池不到傍晚就没电了。这说明有个应用一直在后台运行。原因多半不是电池，而是我新装的那个游戏。可我已经把屏幕亮度调到最低了。（cepet = cepat，udah = sudah，abis = habis）"
+    },
+    {
+      "task": "弱词应用：你管家里的开销。在家庭群里说明这个月开支变多的主要原因，并说接下来怎么压低开支。用 penyebab、sebab（可以用 oleh sebab itu）和 menekan，写 3 句。",
+      "reference_answer": "Penyebab utama pengeluaran kita membengkak bulan ini adalah pesan makanan online hampir tiap malam. Oleh sebab itu, mulai minggu depan kita masak sendiri di rumah. Cara ini cukup ampuh untuk menekan biaya, apalagi semua jenis sayur di pasar sedang murah.",
+      "reference_cn": "这个月咱们开支暴涨，主要原因是几乎每晚都在网上点外卖。因此，从下周开始咱们在家自己做饭。这个办法压低开支挺管用，何况现在市场上各种蔬菜都很便宜。"
+    },
+    {
+      "task": "早课迁移（换场景，不用厨房）：朋友要搬进一间更小的出租屋，给她提建议：先扔掉什么、少带什么。用今天08:00新学的 buang 和 kurangi，口语，写 3 句。",
+      "reference_answer": "Kamar kos barumu lebih kecil, jadi buang dulu barang yang udah nggak dipakai, kayak kardus bekas sama pena yang tintanya udah abis. Baju yang mau dibawa juga kurangi, yang jarang dipakai sumbangin aja. Kalau semua dibawa, kamarnya bakal sesak banget.",
+      "reference_cn": "你的新出租屋更小，所以先把不用的东西扔掉，比如旧纸箱和没墨水的笔。要带的衣服也减一减，不常穿的就捐掉吧。要是全都带过去，房间会挤得要命。（udah = sudah，nggak = tidak，sama = dan，sumbangin = sumbangkan，bakal = akan）"
+    },
+    {
+      "task": "场景回应：朋友问你要不要换一台新笔记本电脑。用 meskipun 和 intinya 回答：说说现在这台的情况，以及为什么暂时不换，写 2–3 句。",
+      "reference_answer": "Meskipun laptopku udah lima tahun, buat kerja sehari-hari masih lancar, kok. Baterainya memang cepet abis, tapi aku kerjanya di meja, deket colokan. Intinya, aku belum perlu beli yang baru; laptop ini aset penting buat kerjaku, jadi aku rawat baik-baik.",
+      "reference_cn": "虽然我的笔记本已经用了五年，日常工作还是挺顺的。电池确实掉电快，但我都在桌子前工作，离插座很近。总之，我还不需要买新的；这台电脑是我工作的重要资产，所以我好好保养着。（buat = untuk，deket = dekat）"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "公司开会，经理看着这个月的电费单说：“Mulai bulan depan kita harus ___ biaya operasional, minimal sepuluh persen.” 选最自然的一项：",
+        "options": [
+          "tertekan",
+          "tekanan",
+          "menekan",
+          "ditekan"
+        ],
+        "answer_index": 2,
+        "answer": "menekan",
+        "explain": "“我们”主动去压低成本，harus 后面要接主动动词 menekan，固定搭配 menekan biaya。ditekan 是被动，要换语序说 Biaya operasional harus ditekan；tekanan 是名词“压力”；tertekan 是“心里有压力、感到压抑”，都接不上 biaya。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Dimas 开会迟到了二十分钟。主管问他怎么回事，他说：“Maaf, Pak, saya telat ___ motor saya mogok di jalan.” 选最自然的一项：",
+        "options": [
+          "sebab",
+          "penyebab",
+          "meskipun",
+          "intinya"
+        ],
+        "answer_index": 0,
+        "answer": "sebab",
+        "explain": "空格后面是一整句话（motor saya mogok），要用连词 sebab（= karena）。penyebab 是名词，只能说 Penyebabnya motor saya mogok；meskipun 是“虽然”，意思反了；intinya 是“重点是”，用来总结，不用来接原因。"
+      },
+      {
+        "type": "choice",
+        "prompt": "早上九点，你常去的那家面包店还关着门，灯也没开。朋友看了看，说：“___ hari ini mereka libur. Kita cari tempat lain aja.” 选最自然的一项：",
+        "options": [
+          "Meskipun",
+          "Penyebabnya",
+          "Intinya",
+          "Kemungkinan besar"
+        ],
+        "answer_index": 3,
+        "answer": "Kemungkinan besar",
+        "explain": "朋友是根据门关着、灯没开来猜测，用 Kemungkinan besar（多半、很可能）。Intinya 是把前面说过的一堆话归结成重点，这里前面没有解释，用不上；Penyebabnya 要先有一个结果才能说原因；Meskipun 后面还得接转折的后半句。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kalau token cepat habis, ______ pemakaian AC di siang hari.（少用、减少）",
+        "answer": "kurangi",
+        "explain": "命令、建议别人“减少某物”用 kurangi（今天08:00新学），后面直接接宾语 pemakaian AC。berkurang 是“自己变少”，不能接宾语；口语可以说 kurangin。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Bunyi mesin yang tidak berhenti itu ______ bahwa kulkasnya bekerja terlalu keras.（迹象、信号）",
+        "answer": "tanda",
+        "explain": "“……是……的迹象”说 … tanda bahwa …，口语常说 Itu tandanya …。gejala 多指病症，说冰箱的异常用 tanda 更自然。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：虽然冰箱还很冷，电却白白浪费了很多。",
+        "tokens": [
+          "Meskipun",
+          "kulkasnya",
+          "masih dingin,",
+          "listriknya",
+          "banyak",
+          "terbuang."
+        ],
+        "answer": "Meskipun kulkasnya masih dingin, listriknya banyak terbuang.",
+        "answer_cn": "虽然冰箱还很冷，电却白白浪费了很多。",
+        "explain": "Meskipun 引出让步的前半句，逗号后直接接结果，规范写法里后半句不再加 tetapi。terbuang 是“被白白浪费掉”，不强调谁造成的，比 dibuang（被人扔掉）更贴切。"
+      }
+    ],
+    "self_check": [
+      "不看中文：kemungkinan besar、tanda、rendah 这三个新词，我能在 3 秒内说出意思吗？",
+      "menekan 和 penyebab 这两个最近答错过的词，我能马上想起意思，并各说出一个搭配（如 menekan biaya、penyebab utama）吗？",
+      "sebab 和 penyebab 哪个能当连词接整句、哪个只能当名词，我分得清吗？",
+      "intinya 和 meskipun 放在句首分别是什么意思，我能不犹豫地说出来吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘（主动输出，不重复自检）",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "易混输出：用 sebab 说一次你最近迟到或没去成某事的理由（… , sebab …），再用 penyebab 说一件东西坏掉的原因（Penyebabnya …）；最后用 menekan biaya 说一个你自己省钱的办法。",
+      "早课迁移（换场景，不用厨房）：用 kurangi 说一件你这周想少做的事，再用 buang-buang 说一件你觉得在浪费时间或钱的事。",
+      "30 秒脱稿复述：Raka 家的电为什么用得快、Darto 师傅指出了哪些迹象、最后怎么解决。至少用上 tanda、kemungkinan besar、rendah、meskipun、intinya 中的三个，最后用 Intinya, … 收尾。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "kemungkinan besar",
+      "tanda",
+      "menekan"
+    ],
+    "patterns": [
+      {
+        "pattern": "Meskipun …, ternyata …",
+        "cn": "虽然……，其实（结果却）……",
+        "example": "Meskipun kulkas itu masih dingin, ternyata listriknya banyak terbuang.",
+        "example_cn": "虽然冰箱还很冷，其实很多电都白白浪费了。"
+      },
+      {
+        "pattern": "Kemungkinan besar penyebabnya bukan …, melainkan …",
+        "cn": "原因多半不是……，而是……",
+        "example": "Kemungkinan besar penyebabnya bukan baterai, melainkan game yang baru aku pasang.",
+        "example_cn": "原因多半不是电池，而是我新装的那个游戏。"
+      }
+    ]
+  }
+}
