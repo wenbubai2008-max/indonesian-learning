@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-10-30",
-    "session": "pm",
-    "time": "18:00",
-    "day": 70
+    "date": "2026-10-31",
+    "session": "am",
+    "time": "08:00",
+    "day": 71
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-30T03:41:04.843Z",
-    "lesson_watermark": "2026-10-30 08:00",
+    "runtime_generated_at": "2026-10-30T10:52:11.102Z",
+    "lesson_watermark": "2026-10-30 18:00",
     "index_updated": "2026-10-30",
-    "runtime_hash": "f9a05e41994e0caf667b9f022b59cfb5e25621b78eb191bf7001864830c4f49b",
-    "index_hash": "be8553820126c3d486e65d5e2ef825db2d3c068929b3b8a5503b2fdf36cac2b7",
+    "runtime_hash": "9cfca3d89d47ea97474e15ea3acefac870ee6af22d48c60ca457d0361e697b63",
+    "index_hash": "cc95ca7a9aa50a16f0497981a9433054402a20b8e4e49951f229cc1b2763bc6f",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -61,10 +61,6 @@
       [
         "mengapung",
         "漂浮"
-      ],
-      [
-        "rendah",
-        "低的"
       ],
       [
         "sungguh",
@@ -143,10 +139,6 @@
         "聪明的 / 明智的"
       ],
       [
-        "kemungkinan besar",
-        "大概率"
-      ],
-      [
         "lemah",
         "虚弱的"
       ],
@@ -193,10 +185,6 @@
       [
         "ilmu",
         "知识"
-      ],
-      [
-        "tanda",
-        "标志，信号"
       ],
       [
         "angkatan",
@@ -997,26 +985,6 @@
         "态度；立场；举止",
         "sikap",
         "态度；立场"
-      ],
-      [
-        "intinya",
-        2,
-        0,
-        "",
-        "2026-10-15T13:37:22.702Z",
-        "重点是；核心就是",
-        "inti",
-        "核心；要点"
-      ],
-      [
-        "meskipun",
-        3,
-        0,
-        "",
-        "2026-10-15T13:37:58.862Z",
-        "虽然；即使",
-        "meskipun",
-        "虽然；即使"
       ],
       [
         "kegiatan",
@@ -2309,16 +2277,6 @@
         "性格；角色"
       ],
       [
-        "sebab",
-        2,
-        0,
-        "",
-        "2026-10-23T23:35:33.134Z",
-        "原因；缘故；因为",
-        "sebab",
-        "缘由；原因"
-      ],
-      [
         "wajib",
         3,
         0,
@@ -2469,104 +2427,34 @@
         "指控；指责"
       ],
       [
-        "memotong",
-        3,
+        "mundur",
+        2,
         0,
         "",
-        "",
-        "切；剪；切断",
-        "potong",
-        "切；（一）块"
+        "2026-10-23T23:32:21.377Z",
+        "后退；倒退；落后",
+        "mundur",
+        "后退；倒退"
       ],
       [
-        "daun",
-        3,
+        "biarpun",
+        2,
         0,
         "",
-        "",
-        "叶子；叶",
-        "",
-        ""
+        "2026-10-19T13:15:32.724Z",
+        "即使；尽管",
+        "biar",
+        "让；即便"
       ],
       [
-        "sendok",
-        3,
+        "membunuh",
+        2,
         0,
         "",
-        "",
-        "勺子；（一）勺",
-        "",
-        ""
-      ],
-      [
-        "asam",
-        3,
-        0,
-        "",
-        "",
-        "酸的；（名词）罗望子",
-        "",
-        ""
-      ],
-      [
-        "tipis",
-        3,
-        0,
-        "",
-        "",
-        "薄的；（差距、希望等）很小",
-        "tipis",
-        "薄的"
-      ],
-      [
-        "buang",
-        3,
-        0,
-        "",
-        "",
-        "扔；丢掉；（口语）浪费",
-        "buang",
-        "扔"
-      ],
-      [
-        "mirip",
-        3,
-        0,
-        "",
-        "",
-        "相像；相似",
-        "mirip",
-        "相像"
-      ],
-      [
-        "kurangi",
-        3,
-        0,
-        "",
-        "",
-        "（把……）减少；少放",
-        "kurang",
-        "少；不够"
-      ],
-      [
-        "halus",
-        3,
-        0,
-        "",
-        "",
-        "细腻的；光滑的；（说话）委婉",
-        "halus",
-        "细；滑"
-      ],
-      [
-        "ukur",
-        3,
-        0,
-        "",
-        "",
-        "量；测量",
-        "ukur",
-        "量"
+        "2026-10-22T15:35:16.390Z",
+        "杀死",
+        "bunuh",
+        "杀死"
       ]
     ],
     "focus": [
@@ -2831,45 +2719,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-10-23",
-      "session": "am",
-      "review_core": [
-        "pengeluaran",
-        "mengeluarkan",
-        "judul",
-        "melindungi",
-        "kelewatan"
-      ],
-      "new_words": [
-        "unta",
-        "tapir",
-        "lemari pajangan",
-        "pot bunga",
-        "lincah",
-        "perfeksionis",
-        "berserat",
-        "berjemur",
-        "jantan",
-        "betina"
-      ]
-    },
-    {
-      "date": "2026-10-23",
-      "session": "pm",
-      "review_core": [
-        "jadi",
-        "kebaca",
-        "bangun",
-        "pembangunan",
-        "kerjaan numpuk"
-      ],
-      "new_words": [
-        "separuh baya",
-        "listrik",
-        "menutupi"
-      ]
-    },
-    {
       "date": "2026-10-24",
       "session": "am",
       "review_core": [
@@ -3130,105 +2979,40 @@
         "halus",
         "ukur"
       ]
+    },
+    {
+      "date": "2026-10-30",
+      "session": "pm",
+      "review_core": [
+        "menekan",
+        "penyebab",
+        "sebab",
+        "intinya",
+        "meskipun"
+      ],
+      "new_words": [
+        "kemungkinan besar",
+        "tanda",
+        "rendah"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-29",
+    "date": "2026-10-30",
     "new_words": [
-      "hapus",
-      "angkat",
-      "batas"
+      "kemungkinan besar",
+      "tanda",
+      "rendah"
     ],
     "review_core": [
-      "dimaksudkan",
-      "penanganan",
-      "nimpalin",
-      "nyusul",
-      "patungan"
+      "menekan",
+      "penyebab",
+      "sebab",
+      "intinya",
+      "meskipun"
     ]
   },
-  "same_day_am": {
-    "date": "2026-10-30",
-    "vocab": [
-      [
-        "memotong",
-        "切；剪；切断",
-        "to cut",
-        "potong",
-        "切；（一）块"
-      ],
-      [
-        "daun",
-        "叶子；叶",
-        "leaf",
-        "",
-        ""
-      ],
-      [
-        "sendok",
-        "勺子；（一）勺",
-        "spoon; spoonful",
-        "",
-        ""
-      ],
-      [
-        "asam",
-        "酸的；（名词）罗望子",
-        "sour; tamarind",
-        "",
-        ""
-      ],
-      [
-        "tipis",
-        "薄的；（差距、希望等）很小",
-        "thin; slim (chance, margin)",
-        "tipis",
-        "薄的"
-      ],
-      [
-        "buang",
-        "扔；丢掉；（口语）浪费",
-        "to throw away; to waste",
-        "buang",
-        "扔"
-      ],
-      [
-        "mirip",
-        "相像；相似",
-        "similar; to look alike",
-        "mirip",
-        "相像"
-      ],
-      [
-        "kurangi",
-        "（把……）减少；少放",
-        "to reduce (imperative / base form)",
-        "kurang",
-        "少；不够"
-      ],
-      [
-        "halus",
-        "细腻的；光滑的；（说话）委婉",
-        "smooth; fine; refined, polite",
-        "halus",
-        "细；滑"
-      ],
-      [
-        "ukur",
-        "量；测量",
-        "to measure (imperative / base form)",
-        "ukur",
-        "量"
-      ]
-    ],
-    "review_vocab": [
-      "usahakan",
-      "angka",
-      "bahkan",
-      "berani",
-      "bertanggung jawab"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

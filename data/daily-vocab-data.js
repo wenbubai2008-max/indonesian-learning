@@ -5117,24 +5117,28 @@ window.DAILY_VOCAB_DB = [
     "root": "meskipun",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-01 19:00",
-    "last_seen": "2026-09-13 19:00",
+    "last_seen": "2026-10-30 18:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-01",
-      "2026-09-13"
+      "2026-09-13",
+      "2026-10-30"
     ],
     "root_cn": "虽然；即使",
-    "example": "Meskipun hasilnya belum pasti, kita tetap bisa menyiapkan rencana cadangan.",
-    "example_cn": "虽然结果还不确定，我们仍然可以准备备用方案。",
+    "example": "Meskipun sudah lama saling mengenal, mereka baru mulai berkencan tahun lalu.",
+    "example_cn": "虽然认识很久了，他们去年才开始交往。",
     "lesson_occurrences": [
       "2026-09-01 19:00",
-      "2026-09-13 19:00"
+      "2026-09-13 19:00",
+      "2026-10-30 18:00"
     ]
   },
   {
@@ -10003,26 +10007,30 @@ window.DAILY_VOCAB_DB = [
     "en": "the point is; essentially",
     "root": "inti",
     "root_cn": "核心；要点",
-    "example": "Intinya, keputusan harus punya alasan yang jelas.",
-    "example_cn": "重点是，决定必须有清楚的理由。",
+    "example": "Dia bicara panjang lebar, tapi intinya kita diminta menyusul ke lokasi besok pagi.",
+    "example_cn": "他说了一大堆，但重点是让我们明天早上随后赶到现场。",
     "categories": [
       "每日学习",
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 19:00",
+    "last_seen": "2026-10-30 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-13"
+      "2026-09-13",
+      "2026-10-30"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
-      "2026-09-13 19:00"
+      "2026-09-13 19:00",
+      "2026-10-30 18:00"
     ]
   },
   {
@@ -15947,23 +15955,25 @@ window.DAILY_VOCAB_DB = [
     "en": "cause; reason; because",
     "root": "sebab",
     "root_cn": "缘由；原因",
-    "example": "Apa sebab barang ini belum dikirim?",
-    "example_cn": "这批货还没寄出，原因是什么？",
+    "example": "Rapat hari ini ditunda, sebab pemimpin proyeknya masih terjebak macet.",
+    "example_cn": "今天的会延期了，因为项目负责人还堵在路上。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-29 18:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-10-30 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-30"
     ],
     "lesson_occurrences": [
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-10-30 18:00"
     ]
   },
   {
@@ -23184,23 +23194,27 @@ window.DAILY_VOCAB_DB = [
     "en": "cause",
     "root": "sebab",
     "root_cn": "原因；因为",
-    "example": "Polisi masih mencari penyebab kebakaran di bangunan tua itu.",
-    "example_cn": "警方还在查那栋老建筑起火的原因。",
+    "example": "Penyebab utama kecelakaan itu adalah pengemudi yang mengabaikan lampu merah.",
+    "example_cn": "那起事故的主要原因是司机无视红灯。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-20 08:00",
-    "last_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-30 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-20"
+      "2026-10-20",
+      "2026-10-30"
     ],
     "lesson_occurrences": [
-      "2026-10-20 08:00"
+      "2026-10-20 08:00",
+      "2026-10-30 18:00"
     ]
   },
   {
@@ -23237,23 +23251,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to press; to reduce (costs); to pressure",
     "root": "tekan",
     "root_cn": "压；按",
-    "example": "Untuk menekan biaya, kantor kami beralih ke pemasok yang lebih murah.",
-    "example_cn": "为了压低成本，我们公司换了一家更便宜的供应商。",
+    "example": "Untuk menekan biaya, perusahaan membatalkan sejumlah perjalanan dinas tahun ini.",
+    "example_cn": "为了压低成本，公司今年取消了一些出差。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-20 08:00",
-    "last_seen": "2026-10-20 08:00",
+    "last_seen": "2026-10-30 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-20"
+      "2026-10-20",
+      "2026-10-30"
     ],
     "lesson_occurrences": [
-      "2026-10-20 08:00"
+      "2026-10-20 08:00",
+      "2026-10-30 18:00"
     ]
   },
   {
@@ -26729,23 +26747,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to throw away; to waste",
     "root": "buang",
     "root_cn": "扔",
-    "example": "Jangan buang nasi sisa itu; besok pagi bisa dibuat nasi goreng.",
-    "example_cn": "别把那些剩饭扔掉；明天早上可以做炒饭。",
+    "example": "Lampu teras jangan dinyalakan siang-siang, buang-buang listrik.",
+    "example_cn": "白天别开门廊的灯，太浪费电了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-30 08:00",
-    "last_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-30"
     ],
     "lesson_occurrences": [
-      "2026-10-30 08:00"
+      "2026-10-30 08:00",
+      "2026-10-30 18:00"
     ]
   },
   {
@@ -26779,23 +26800,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to reduce (imperative / base form)",
     "root": "kurang",
     "root_cn": "少；不够",
-    "example": "Kalau mau tidur nyenyak, kurangi minum kopi setelah jam tiga sore.",
-    "example_cn": "想睡得好，下午三点以后就少喝咖啡。",
+    "example": "Kurangi main HP sebelum tidur; percuma pasang alarm kalau tidurnya jam dua pagi.",
+    "example_cn": "睡前少玩手机；凌晨两点才睡的话，定了闹钟也白搭。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-30 08:00",
-    "last_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-30"
     ],
     "lesson_occurrences": [
-      "2026-10-30 08:00"
+      "2026-10-30 08:00",
+      "2026-10-30 18:00"
     ]
   },
   {
@@ -26846,6 +26870,81 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-30 08:00"
+    ]
+  },
+  {
+    "word": "kemungkinan besar",
+    "cn": "很可能；大概率；多半",
+    "en": "most likely; in all likelihood",
+    "root": "mungkin",
+    "root_cn": "可能",
+    "example": "Jalan ke Puncak ditutup dari tadi pagi; kemungkinan besar ada longsor lagi.",
+    "example_cn": "去 Puncak 的路从今天早上起就封了，很可能又发生了塌方。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 18:00",
+    "last_seen": "2026-10-30 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 18:00"
+    ]
+  },
+  {
+    "word": "tanda",
+    "cn": "迹象；信号；标志；记号",
+    "en": "sign; signal; mark",
+    "root": "tanda",
+    "root_cn": "标记；迹象",
+    "example": "Langit gelap dan angin makin kencang, itu tanda mau hujan deras; berbahaya kalau anak-anak masih main di lapangan.",
+    "example_cn": "天色暗了、风越来越大，这是要下大雨的迹象；孩子们还在球场上玩就危险了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 18:00",
+    "last_seen": "2026-10-30 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 18:00"
+    ]
+  },
+  {
+    "word": "rendah",
+    "cn": "低的；（数值、程度、地位）低",
+    "en": "low",
+    "root": "rendah",
+    "root_cn": "低",
+    "example": "Gaji di bidang ini memang masih rendah, tapi pengalamannya sangat berharga.",
+    "example_cn": "这个领域的工资确实还偏低，但经验很宝贵。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 18:00",
+    "last_seen": "2026-10-30 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 18:00"
     ]
   }
 ];
