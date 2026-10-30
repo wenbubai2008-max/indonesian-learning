@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-30",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 70
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-29T14:01:18.022Z",
-    "lesson_watermark": "2026-10-29 18:00",
-    "index_updated": "2026-10-29",
-    "runtime_hash": "27ef75e718b40f7a7341f99e2550072683a0599e1711f114e34c42643a54214b",
-    "index_hash": "c4864fc0f0a5fc0430961a1f44d7e6c4f95d2a5b847f1a5015a25ddfc5784099",
+    "runtime_generated_at": "2026-10-30T00:32:14.644Z",
+    "lesson_watermark": "2026-10-30 08:00",
+    "index_updated": "2026-10-30",
+    "runtime_hash": "949d34352871df93627de459ab7c5b9a178997b69be890ecebd6364762bd3671",
+    "index_hash": "be8553820126c3d486e65d5e2ef825db2d3c068929b3b8a5503b2fdf36cac2b7",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -53,10 +53,6 @@
       [
         "detik",
         "秒"
-      ],
-      [
-        "memotong",
-        "切 / 割"
       ],
       [
         "memukul",
@@ -103,10 +99,6 @@
         "命令、指令"
       ],
       [
-        "daun",
-        "叶子"
-      ],
-      [
         "maupun",
         "以及/或者"
       ],
@@ -117,10 +109,6 @@
       [
         "rabu",
         "星期三"
-      ],
-      [
-        "sendok",
-        "勺子"
       ],
       [
         "terbuka",
@@ -145,14 +133,6 @@
       [
         "terbang",
         "飞"
-      ],
-      [
-        "asam",
-        "酸的"
-      ],
-      [
-        "tipis",
-        "薄的"
       ],
       [
         "kertas",
@@ -199,10 +179,6 @@
         "看起来"
       ],
       [
-        "halus",
-        "光滑的"
-      ],
-      [
         "pegawai",
         "职员，公务员"
       ],
@@ -243,10 +219,6 @@
         "决定"
       ],
       [
-        "buang",
-        "扔；丢弃"
-      ],
-      [
         "pendiam",
         "沉默寡言"
       ],
@@ -257,18 +229,6 @@
       [
         "benci",
         "讨厌；恨"
-      ],
-      [
-        "mirip",
-        "相似"
-      ],
-      [
-        "ukur",
-        "测量"
-      ],
-      [
-        "kurangi",
-        "减少"
       ],
       [
         "ubah",
@@ -1039,16 +999,6 @@
         "态度；立场"
       ],
       [
-        "bertanggung jawab",
-        2,
-        0,
-        "",
-        "2026-10-15T08:22:39.220Z",
-        "负责；承担责任",
-        "tanggung jawab",
-        "责任；负责"
-      ],
-      [
         "intinya",
         2,
         0,
@@ -1057,26 +1007,6 @@
         "重点是；核心就是",
         "inti",
         "核心；要点"
-      ],
-      [
-        "bahkan",
-        3,
-        0,
-        "",
-        "2026-10-15T13:37:26.349Z",
-        "甚至；甚至还",
-        "bahkan",
-        "甚至"
-      ],
-      [
-        "berani",
-        3,
-        0,
-        "",
-        "2026-10-15T13:35:56.048Z",
-        "敢；有勇气",
-        "berani",
-        "敢；有勇气"
       ],
       [
         "meskipun",
@@ -2507,6 +2437,136 @@
         "放置；把……放下",
         "letak",
         "位置；放置"
+      ],
+      [
+        "memeluk",
+        2,
+        0,
+        "",
+        "2026-10-22T15:35:22.245Z",
+        "拥抱",
+        "peluk",
+        "抱；拥抱"
+      ],
+      [
+        "mengunduh",
+        2,
+        0,
+        "",
+        "2026-10-23T23:29:39.156Z",
+        "下载",
+        "unduh",
+        "下载"
+      ],
+      [
+        "menuduh",
+        2,
+        0,
+        "",
+        "2026-10-23T23:30:43.886Z",
+        "指控；指责",
+        "tuduh",
+        "指控；指责"
+      ],
+      [
+        "memotong",
+        3,
+        0,
+        "",
+        "",
+        "切；剪；切断",
+        "potong",
+        "切；（一）块"
+      ],
+      [
+        "daun",
+        3,
+        0,
+        "",
+        "",
+        "叶子；叶",
+        "",
+        ""
+      ],
+      [
+        "sendok",
+        3,
+        0,
+        "",
+        "",
+        "勺子；（一）勺",
+        "",
+        ""
+      ],
+      [
+        "asam",
+        3,
+        0,
+        "",
+        "",
+        "酸的；（名词）罗望子",
+        "",
+        ""
+      ],
+      [
+        "tipis",
+        3,
+        0,
+        "",
+        "",
+        "薄的；（差距、希望等）很小",
+        "tipis",
+        "薄的"
+      ],
+      [
+        "buang",
+        3,
+        0,
+        "",
+        "",
+        "扔；丢掉；（口语）浪费",
+        "buang",
+        "扔"
+      ],
+      [
+        "mirip",
+        3,
+        0,
+        "",
+        "",
+        "相像；相似",
+        "mirip",
+        "相像"
+      ],
+      [
+        "kurangi",
+        3,
+        0,
+        "",
+        "",
+        "（把……）减少；少放",
+        "kurang",
+        "少；不够"
+      ],
+      [
+        "halus",
+        3,
+        0,
+        "",
+        "",
+        "细腻的；光滑的；（说话）委婉",
+        "halus",
+        "细；滑"
+      ],
+      [
+        "ukur",
+        3,
+        0,
+        "",
+        "",
+        "量；测量",
+        "ukur",
+        "量"
       ]
     ],
     "focus": [
@@ -3047,6 +3107,29 @@
         "angkat",
         "batas"
       ]
+    },
+    {
+      "date": "2026-10-30",
+      "session": "am",
+      "review_core": [
+        "usahakan",
+        "angka",
+        "bahkan",
+        "berani",
+        "bertanggung jawab"
+      ],
+      "new_words": [
+        "memotong",
+        "daun",
+        "sendok",
+        "asam",
+        "tipis",
+        "buang",
+        "mirip",
+        "kurangi",
+        "halus",
+        "ukur"
+      ]
     }
   ],
   "previous_pm": {
@@ -3064,7 +3147,88 @@
       "patungan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-30",
+    "vocab": [
+      [
+        "memotong",
+        "切；剪；切断",
+        "to cut",
+        "potong",
+        "切；（一）块"
+      ],
+      [
+        "daun",
+        "叶子；叶",
+        "leaf",
+        "",
+        ""
+      ],
+      [
+        "sendok",
+        "勺子；（一）勺",
+        "spoon; spoonful",
+        "",
+        ""
+      ],
+      [
+        "asam",
+        "酸的；（名词）罗望子",
+        "sour; tamarind",
+        "",
+        ""
+      ],
+      [
+        "tipis",
+        "薄的；（差距、希望等）很小",
+        "thin; slim (chance, margin)",
+        "tipis",
+        "薄的"
+      ],
+      [
+        "buang",
+        "扔；丢掉；（口语）浪费",
+        "to throw away; to waste",
+        "buang",
+        "扔"
+      ],
+      [
+        "mirip",
+        "相像；相似",
+        "similar; to look alike",
+        "mirip",
+        "相像"
+      ],
+      [
+        "kurangi",
+        "（把……）减少；少放",
+        "to reduce (imperative / base form)",
+        "kurang",
+        "少；不够"
+      ],
+      [
+        "halus",
+        "细腻的；光滑的；（说话）委婉",
+        "smooth; fine; refined, polite",
+        "halus",
+        "细；滑"
+      ],
+      [
+        "ukur",
+        "量；测量",
+        "to measure (imperative / base form)",
+        "ukur",
+        "量"
+      ]
+    ],
+    "review_vocab": [
+      "usahakan",
+      "angka",
+      "bahkan",
+      "berani",
+      "bertanggung jawab"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

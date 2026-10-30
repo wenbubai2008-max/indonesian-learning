@@ -5168,24 +5168,28 @@ window.DAILY_VOCAB_DB = [
     "root": "bahkan",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-01 19:00",
-    "last_seen": "2026-09-13 19:00",
+    "last_seen": "2026-10-30 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-01",
-      "2026-09-13"
+      "2026-09-13",
+      "2026-10-30"
     ],
     "root_cn": "甚至",
     "example": "Datanya belum lengkap, bahkan satu laporan belum masuk sama sekali.",
     "example_cn": "数据还不完整，甚至还有一份报告完全没提交。",
     "lesson_occurrences": [
       "2026-09-01 19:00",
-      "2026-09-13 19:00"
+      "2026-09-13 19:00",
+      "2026-10-30 08:00"
     ]
   },
   {
@@ -9949,19 +9953,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 19:00",
+    "last_seen": "2026-10-30 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-13"
+      "2026-09-13",
+      "2026-10-30"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
-      "2026-09-13 19:00"
+      "2026-09-13 19:00",
+      "2026-10-30 08:00"
     ]
   },
   {
@@ -10061,19 +10067,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-09-13 19:00",
+    "last_seen": "2026-10-30 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-13"
+      "2026-09-13",
+      "2026-10-30"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
-      "2026-09-13 19:00"
+      "2026-09-13 19:00",
+      "2026-10-30 08:00"
     ]
   },
   {
@@ -14578,20 +14586,22 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-26 08:00",
-    "last_seen": "2026-10-22 18:00",
+    "last_seen": "2026-10-30 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-26",
-      "2026-10-22"
+      "2026-10-22",
+      "2026-10-30"
     ],
     "lesson_occurrences": [
       "2026-09-26 08:00",
-      "2026-10-22 18:00"
+      "2026-10-22 18:00",
+      "2026-10-30 08:00"
     ]
   },
   {
@@ -25219,19 +25229,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "你比较一下这个月和上个月电费单上的数字。涨了将近一倍！",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-25 18:00",
-    "last_seen": "2026-10-25 18:00",
+    "last_seen": "2026-10-30 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-30"
     ],
     "lesson_occurrences": [
-      "2026-10-25 18:00"
+      "2026-10-25 18:00",
+      "2026-10-30 08:00"
     ]
   },
   {
@@ -26582,6 +26596,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-29 18:00"
+    ]
+  },
+  {
+    "word": "memotong",
+    "cn": "切；剪；切断",
+    "en": "to cut",
+    "root": "potong",
+    "root_cn": "切；（一）块",
+    "example": "Ibu memotong semangka menjadi potongan kecil berbentuk segitiga supaya mudah dipegang anak-anak.",
+    "example_cn": "妈妈把西瓜切成三角形的小块，方便孩子们拿着吃。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 08:00"
+    ]
+  },
+  {
+    "word": "daun",
+    "cn": "叶子；叶",
+    "en": "leaf",
+    "root": "",
+    "root_cn": "",
+    "example": "Setelah hujan lebat semalam, halaman rumah penuh daun yang jatuh dari pohon mangga.",
+    "example_cn": "昨晚下了一场大雨，院子里全是从芒果树上掉下来的叶子。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 08:00"
+    ]
+  },
+  {
+    "word": "sendok",
+    "cn": "勺子；（一）勺",
+    "en": "spoon; spoonful",
+    "root": "",
+    "root_cn": "",
+    "example": "Untuk segelas teh, Nenek cuma pakai satu sendok gula, katanya sudah cukup manis.",
+    "example_cn": "一杯茶奶奶只放一勺糖，她说这样就够甜了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 08:00"
+    ]
+  },
+  {
+    "word": "asam",
+    "cn": "酸的；（名词）罗望子",
+    "en": "sour; tamarind",
+    "root": "",
+    "root_cn": "",
+    "example": "Mangga muda ini masih asam, enaknya dimakan dengan garam dan cabai.",
+    "example_cn": "这个青芒果还很酸，蘸盐和辣椒吃最好吃。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 08:00"
+    ]
+  },
+  {
+    "word": "tipis",
+    "cn": "薄的；（差距、希望等）很小",
+    "en": "thin; slim (chance, margin)",
+    "root": "tipis",
+    "root_cn": "薄的",
+    "example": "Kalau mau keripiknya renyah, singkongnya harus diiris tipis-tipis.",
+    "example_cn": "要想薯片脆，木薯得切成薄薄的片。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 08:00"
+    ]
+  },
+  {
+    "word": "buang",
+    "cn": "扔；丢掉；（口语）浪费",
+    "en": "to throw away; to waste",
+    "root": "buang",
+    "root_cn": "扔",
+    "example": "Jangan buang nasi sisa itu; besok pagi bisa dibuat nasi goreng.",
+    "example_cn": "别把那些剩饭扔掉；明天早上可以做炒饭。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 08:00"
+    ]
+  },
+  {
+    "word": "mirip",
+    "cn": "相像；相似",
+    "en": "similar; to look alike",
+    "root": "mirip",
+    "root_cn": "相像",
+    "example": "Rumah-rumah di kompleks itu mirip satu sama lain, jadi saya sering salah masuk gang.",
+    "example_cn": "那个小区的房子彼此都差不多，所以我常常走错巷子。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 08:00"
+    ]
+  },
+  {
+    "word": "kurangi",
+    "cn": "（把……）减少；少放",
+    "en": "to reduce (imperative / base form)",
+    "root": "kurang",
+    "root_cn": "少；不够",
+    "example": "Kalau mau tidur nyenyak, kurangi minum kopi setelah jam tiga sore.",
+    "example_cn": "想睡得好，下午三点以后就少喝咖啡。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 08:00"
+    ]
+  },
+  {
+    "word": "halus",
+    "cn": "细腻的；光滑的；（说话）委婉",
+    "en": "smooth; fine; refined, polite",
+    "root": "halus",
+    "root_cn": "细；滑",
+    "example": "Bawang dan cabainya diulek sampai halus dulu, baru ditumis sampai harum.",
+    "example_cn": "先把蒜和辣椒捣到细碎，再炒到出香味。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 08:00"
+    ]
+  },
+  {
+    "word": "ukur",
+    "cn": "量；测量",
+    "en": "to measure (imperative / base form)",
+    "root": "ukur",
+    "root_cn": "量",
+    "example": "Sebelum memesan gorden, ukur dulu tinggi dan lebar jendelanya.",
+    "example_cn": "订窗帘之前，先量一下窗户的高和宽。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-30 08:00",
+    "last_seen": "2026-10-30 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-30"
+    ],
+    "lesson_occurrences": [
+      "2026-10-30 08:00"
     ]
   }
 ];
