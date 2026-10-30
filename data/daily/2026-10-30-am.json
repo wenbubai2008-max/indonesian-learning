@@ -1,0 +1,435 @@
+{
+  "date": "2026-10-30",
+  "session": "am",
+  "time": "08:00",
+  "day": 70,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Belajar Masak Sayur Asem di Rumah Nenek · 在奶奶家学做酸菜汤",
+  "new_words": [
+    "memotong",
+    "daun",
+    "sendok",
+    "asam",
+    "tipis",
+    "buang",
+    "mirip",
+    "kurangi",
+    "halus",
+    "ukur"
+  ],
+  "vocab": [
+    {
+      "word": "memotong",
+      "display": "memotong",
+      "audio_text": "memotong",
+      "cn": "切；剪；切断",
+      "en": "to cut",
+      "root": "potong",
+      "root_cn": "切；（一）块",
+      "formation": "meN- + potong → memotong（p 脱落，meN- 变 mem-，和 memakai ← pakai 同理）。常见搭配：memotong sayur／daging／kue（切菜／肉／蛋糕）、memotong rambut（剪头发）、memotong kuku（剪指甲）、memotong pembicaraan（打断别人说话）。同词根：dipotong（被切）、potongan（切好的块；折扣，如 potongan harga）。",
+      "example": "Ibu memotong semangka menjadi potongan kecil berbentuk segitiga supaya mudah dipegang anak-anak.",
+      "example_cn": "妈妈把西瓜切成三角形的小块，方便孩子们拿着吃。",
+      "synonym_note": "memotong 泛指切开、切断，切菜、剪头发、剪指甲都能用；mengiris 是切成薄片（mengiris bawang 把洋葱切片）；mencincang 是剁碎。口语说法：motong 或直接说 potong，请人帮忙常说 Potongin bawangnya dong（= Tolong potongkan bawangnya）；正式场合和写作用 memotong。",
+      "is_oral_new": false
+    },
+    {
+      "word": "daun",
+      "display": "daun",
+      "audio_text": "daun",
+      "cn": "叶子；叶",
+      "en": "leaf",
+      "root": "",
+      "root_cn": "",
+      "formation": "名词。量词常用 lembar：selembar daun（一片叶子）、beberapa lembar daun salam（几片香叶）。做菜常见：daun salam（印尼香叶）、daun pandan（香兰叶）、daun jeruk（青柠叶）、daun bawang（葱）。其他：daun kering（枯叶）、daun pintu（门扇）。",
+      "example": "Setelah hujan lebat semalam, halaman rumah penuh daun yang jatuh dari pohon mangga.",
+      "example_cn": "昨晚下了一场大雨，院子里全是从芒果树上掉下来的叶子。",
+      "synonym_note": "daun 是一片片的叶子；dedaunan 是“各种叶子、一大片叶子”，多见于书面描写。注意 daun bawang 就是“葱（青葱）”，买菜时直接说 daun bawang。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sendok",
+      "display": "sendok",
+      "audio_text": "sendok",
+      "cn": "勺子；（一）勺",
+      "en": "spoon; spoonful",
+      "root": "",
+      "root_cn": "",
+      "formation": "名词，也常当量词：satu sendok gula（一勺糖）、dua sendok makan minyak（两大勺油）、setengah sendok teh garam（半茶匙盐）。常见搭配：sendok teh（茶匙）、sendok makan（汤匙）、sendok garpu（勺子和叉子，指餐具）。动词 menyendok（用勺舀）。",
+      "example": "Untuk segelas teh, Nenek cuma pakai satu sendok gula, katanya sudah cukup manis.",
+      "example_cn": "一杯茶奶奶只放一勺糖，她说这样就够甜了。",
+      "synonym_note": "sendok 是吃饭、舀汤、量调料用的勺子；盛饭用的大饭勺叫 centong（centong nasi）；舀水的大勺叫 gayung。印尼人吃饭常用 sendok 配 garpu（叉子），右手拿勺。",
+      "is_oral_new": false
+    },
+    {
+      "word": "asam",
+      "display": "asam",
+      "audio_text": "asam",
+      "cn": "酸的；（名词）罗望子",
+      "en": "sour; tamarind",
+      "root": "",
+      "root_cn": "",
+      "formation": "形容词“酸”，也是名词：asam jawa（罗望子，做菜用来调酸味）。常见搭配：rasanya asam（味道酸）、masih asam（还酸，没熟）、asam manis（酸甜）。sayur asem（酸菜汤，一道爪哇家常菜）的 asem 就是 asam 的口语／爪哇读法。",
+      "example": "Mangga muda ini masih asam, enaknya dimakan dengan garam dan cabai.",
+      "example_cn": "这个青芒果还很酸，蘸盐和辣椒吃最好吃。",
+      "synonym_note": "asam 是一般说法；kecut 也是酸，偏口语，常说水果或味道发酸；wajah masam 是“脸色难看、拉着脸”，是比喻。口语说法：asem，如 Asem banget!（好酸！）、sayur asem；写菜谱、正式说明时用 asam。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tipis",
+      "display": "tipis",
+      "audio_text": "tipis",
+      "cn": "薄的；（差距、希望等）很小",
+      "en": "thin; slim (chance, margin)",
+      "root": "tipis",
+      "root_cn": "薄的",
+      "formation": "形容词，反义词 tebal（厚）。常见搭配：diiris tipis（切得薄）、tipis-tipis（薄薄的）、baju tipis（薄衣服）、menang tipis（险胜）、harapan tipis（希望很小）。同词根：menipis（变薄；变少，如 persediaan menipis 存货快没了）。",
+      "example": "Kalau mau keripiknya renyah, singkongnya harus diiris tipis-tipis.",
+      "example_cn": "要想薯片脆，木薯得切成薄薄的片。",
+      "synonym_note": "tipis 说东西薄（kain、roti、buku），也比喻“很小、很少”（menang tipis 险胜，harapan tipis 希望渺茫）；说人瘦一般用 kurus，不用 tipis。口语里也常说 tipis：Selisihnya tipis banget!（差得很少！）",
+      "is_oral_new": false
+    },
+    {
+      "word": "buang",
+      "display": "buang",
+      "audio_text": "buang",
+      "cn": "扔；丢掉；（口语）浪费",
+      "en": "to throw away; to waste",
+      "root": "buang",
+      "root_cn": "扔",
+      "formation": "词根 buang 本身就常用：命令句 Buang ke tempat sampah!、口语 aku buang。书面主动形 membuang，被动形 dibuang。常见搭配：buang sampah（扔垃圾）、buang air（上厕所，委婉说法）、buang waktu（浪费时间）、buang-buang uang（白花钱）。",
+      "example": "Jangan buang nasi sisa itu; besok pagi bisa dibuat nasi goreng.",
+      "example_cn": "别把那些剩饭扔掉；明天早上可以做炒饭。",
+      "synonym_note": "buang／membuang 是“扔掉、不要了”；lempar／melempar 是“朝某处扔、投”（melempar bola 扔球），不一定是不要了。口语说法：口语多用 buang、buangin（Buangin aja!）；正式通知写 membuang：Dilarang membuang sampah di sini。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mirip",
+      "display": "mirip",
+      "audio_text": "mirip",
+      "cn": "相像；相似",
+      "en": "similar; to look alike",
+      "root": "mirip",
+      "root_cn": "相像",
+      "formation": "形容词，常说 mirip dengan …／口语 mirip sama …（像……）。可受程度副词修饰：mirip sekali、agak mirip、mirip banget。名词 kemiripan（相似之处）。",
+      "example": "Rumah-rumah di kompleks itu mirip satu sama lain, jadi saya sering salah masuk gang.",
+      "example_cn": "那个小区的房子彼此都差不多，所以我常常走错巷子。",
+      "synonym_note": "mirip 是“像，但不完全一样”；sama 是“相同、一样”；seperti／kayak 是“像……一样”，用来打比方（dingin seperti es 像冰一样凉）。说长相时 mirip 和 kayak 常可互换：Mukanya mirip／kayak ayahnya。口语说法：mirip banget sama kamu（跟你好像）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kurangi",
+      "display": "kurangi",
+      "audio_text": "kurangi",
+      "cn": "（把……）减少；少放",
+      "en": "to reduce (imperative / base form)",
+      "root": "kurang",
+      "root_cn": "少；不够",
+      "formation": "kurang + -i → kurangi，是 mengurangi 的命令式和口语基本形（被动形 dikurangi）。常见搭配：kurangi gula／garam（少放糖／盐）、kurangi kecepatan（减速）、kurangi jam main HP（少玩手机）。",
+      "example": "Kalau mau tidur nyenyak, kurangi minum kopi setelah jam tiga sore.",
+      "example_cn": "想睡得好，下午三点以后就少喝咖啡。",
+      "synonym_note": "kurangi／mengurangi 是“主动把某物减少”；berkurang 是“自己变少”（Pembeli berkurang 买的人少了），后面不接宾语；kurang 是“不够、少”（kurang garam 盐不够）。口语说法：kurangin，如 Kurangin gulanya dikit；对长辈、写说明时用 kurangi 或 mengurangi。",
+      "is_oral_new": false
+    },
+    {
+      "word": "halus",
+      "display": "halus",
+      "audio_text": "halus",
+      "cn": "细腻的；光滑的；（说话）委婉",
+      "en": "smooth; fine; refined, polite",
+      "root": "halus",
+      "root_cn": "细；滑",
+      "formation": "形容词，反义词 kasar（粗糙；粗鲁）。常见搭配：kulit halus（皮肤光滑）、tepung halus（细面粉）、diulek sampai halus（捣到细碎）、bahasa halus（客气、委婉的说法）、menolak dengan halus（委婉地拒绝）。同词根：haluskan／menghaluskan（磨碎、弄细）。",
+      "example": "Bawang dan cabainya diulek sampai halus dulu, baru ditumis sampai harum.",
+      "example_cn": "先把蒜和辣椒捣到细碎，再炒到出香味。",
+      "synonym_note": "halus 既说东西细、滑，也说话、态度“委婉、有礼”（Dia menolak dengan halus. 他委婉地拒绝了）；lembut 偏“柔软、温柔”（kue lembut 松软的蛋糕，suara lembut 温柔的声音）。说调料“捣细、磨细”一般用 sampai halus。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ukur",
+      "display": "ukur",
+      "audio_text": "ukur",
+      "cn": "量；测量",
+      "en": "to measure (imperative / base form)",
+      "root": "ukur",
+      "root_cn": "量",
+      "formation": "词根 ukur 常用于命令句和口语：Ukur dulu!（先量一下！）。书面主动形 mengukur，被动形 diukur。同词根：ukuran（尺寸；尺码，如 ukuran baju 衣服尺码）、pengukur（测量工具）。常见搭配：ukur panjang／lebar／tinggi（量长／宽／高）、mengukur suhu（量温度）。",
+      "example": "Sebelum memesan gorden, ukur dulu tinggi dan lebar jendelanya.",
+      "example_cn": "订窗帘之前，先量一下窗户的高和宽。",
+      "synonym_note": "ukur／mengukur 是量长短、大小、温度等；timbang／menimbang 是称重量（menimbang beras 称米），也比喻“权衡、考虑”。口语说法：ukurin，如 Ukurin dulu dong mejanya；正式说明用 ukur 或 mengukur。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "usahakan",
+    "angka",
+    "bahkan",
+    "berani",
+    "bertanggung jawab"
+  ],
+  "sentences": [
+    {
+      "text": "Gulanya kurangi dikit aja, ya. Kemarin kuenya kemanisan, Ayah sampai ngeluh.",
+      "cn": "糖少放一点吧。昨天的蛋糕太甜了，爸爸都抱怨了。（dikit = sedikit，aja = saja，kemanisan = terlalu manis）"
+    },
+    {
+      "text": "Sebelum membeli meja rias, ukur dulu ruang di samping tempat tidur. Jangan cuma percaya angka di foto iklan.",
+      "cn": "买梳妆台之前，先量一下床边的空间。别只信广告图片上的数字。"
+    },
+    {
+      "text": "Tekstur kue ini halus dan lembut, beda dengan kue kemarin yang agak kasar.",
+      "cn": "这块蛋糕口感细腻松软，跟昨天那块有点粗的不一样。"
+    },
+    {
+      "text": "Selama kakaknya berkemah, Raka yang bertanggung jawab memberi makan kucing dan mengangkat jemuran kalau hujan.",
+      "cn": "哥哥去露营的这几天，由拉卡负责喂猫，下雨时收晾着的衣服。"
+    },
+    {
+      "text": "Ibu suka berkebun, jadi daun pandan dan cabai untuk masak selalu dipetik dari halaman sendiri.",
+      "cn": "妈妈喜欢种菜种花，所以做菜用的香兰叶和辣椒都是从自家院子里摘的。"
+    }
+  ],
+  "reading": {
+    "text": "Sabtu pagi, Dinda belajar memasak sayur asem di rumah neneknya. Nenek memintanya memotong labu siam dan kacang panjang. Pisaunya agak tumpul, jadi awalnya Dinda tidak berani memotong cepat-cepat. \"Pelan-pelan saja. Usahakan potongannya tipis dan sama besar, supaya cepat matang,\" kata Nenek. Kemudian Dinda memasukkan asam jawa dan beberapa lembar daun salam ke dalam panci. Dia mencicipi kuahnya dengan sendok kecil. \"Terlalu asam, Nek,\" katanya. Nenek menyuruhnya menambahkan sedikit gula dan air. Sebelum sayur disajikan, biji-biji asam di dalam kuah dibuang dulu. Siangnya, Ayah dan Ibu datang menjemput. Ayah bilang rasanya mirip sekali dengan sayur asem buatan Nenek. Bahkan Ibu minta tambah dua kali.",
+    "cn": "星期六上午，丁达在奶奶家学做酸菜汤（sayur asem）。奶奶让她切佛手瓜和豇豆。刀有点钝，所以丁达一开始不敢切得太快。奶奶说：“慢慢来。尽量切得薄一点、大小一样，这样熟得快。”接着，丁达把罗望子和几片香叶放进锅里。她用小勺尝了尝汤。“奶奶，太酸了。”她说。奶奶让她加一点糖和水。汤端上桌之前，先把汤里的罗望子籽捞出来扔掉。中午，爸爸妈妈来接她。爸爸说味道跟奶奶做的酸菜汤特别像。妈妈甚至又添了两次。"
+  },
+  "quiz": [
+    {
+      "question": "Besok ujian masuk mulai jam tujuh pagi. Guru berpesan kepada murid-muridnya: \"___ datang sebelum jam setengah tujuh, ya. Pintu ruangan ditutup jam tujuh.\" 空格里哪个最自然？",
+      "options": [
+        "Usaha",
+        "Mengusahakan",
+        "Usahakan",
+        "Berusaha"
+      ],
+      "answer_index": 2,
+      "answer": "Usahakan",
+      "explain": "老师在提醒、要求学生“尽量做到”，用命令式 Usahakan（尽量……）。Usaha 是名词“努力；生意”，不能直接放句首当命令；Mengusahakan 是主动陈述形（Saya mengusahakan dana. 我设法筹钱），不用来下指令；Berusaha 是“努力、尽力”，作命令要说 Berusahalah datang…，而且语气更郑重，日常提醒多说 Usahakan。"
+    },
+    {
+      "question": "Rina melihat foto adik temannya, lalu berkata: \"Wah, matanya ___ banget sama kamu! Kayak anak kembar.\" 空格里哪个最自然？",
+      "options": [
+        "mirip",
+        "cocok",
+        "sesuai",
+        "setuju"
+      ],
+      "answer_index": 0,
+      "answer": "mirip",
+      "explain": "说两个人长得像用 mirip（mirip sama／dengan …）。cocok sama kamu 是“适合你、跟你合得来”；sesuai 是“符合（要求、标准）”；setuju 是“同意”。这几个都能跟 sama／dengan 连用，但意思和“长得像”无关。"
+    },
+    {
+      "question": "Kopi buatan Rudi kemanisan. Temannya mencicipi, lalu bilang: \"Besok ___ gulanya, ya. Satu sendok aja cukup.\" 空格里哪个最自然？",
+      "options": [
+        "kurang",
+        "kurangi",
+        "berkurang",
+        "tambah"
+      ],
+      "answer_index": 1,
+      "answer": "kurangi",
+      "explain": "要别人“把糖减少”，后面有宾语 gulanya，用 kurangi（命令式）。kurang 是“不够”（Gulanya kurang. 糖不够）；berkurang 是“自己变少”，不接宾语；tambah 是“加”，和“太甜”正好相反。"
+    }
+  ],
+  "output": {
+    "task": "用 2–4 句印尼语，跟朋友介绍一道你会做的家常菜：要切什么、放多少调料、味道怎么样或像哪里的味道。至少用 memotong、tipis、sendok、asam、mirip、kurangi 中的两个。",
+    "reference_answer": "Masakan pertama yang saya pelajari dari Ibu adalah tumis kangkung. Intinya gampang: bawang putihnya dipotong tipis, lalu ditumis sebentar sampai harum. Garamnya cukup setengah sendok teh; kalau tidak suka pedas, kurangi cabainya. Rasanya gurih, bahkan mirip tumis kangkung di warung langganan saya.",
+    "reference_cn": "我跟妈妈学会的第一道菜是炒空心菜。要点很简单：蒜切成薄片，然后稍微炒一下，炒出香味。盐放半茶匙就够了；不喜欢辣的话，辣椒少放点。味道咸香可口，甚至跟我常去的那家小饭馆做的很像。"
+  },
+  "review": [
+    "3 秒主动提取：看中文马上说印尼语——切、叶子、勺子、酸的、薄的、扔掉、相像、（把……）减少、细腻／光滑、量一下；说不出来的回看词卡再说一遍。",
+    "易混词与搭配：memotong（泛指切）vs mengiris（切片）；tipis（薄）vs tebal（厚），说人瘦用 kurus；kurangi（把……减少，接宾语）vs berkurang（自己变少）vs kurang（不够）；mirip（像但不完全一样）vs sama（相同）；halus（细、滑；说话委婉）vs lembut（柔软、温柔）；ukur（量长短大小）vs timbang（称重量）。",
+    "复习词应用：用 usahakan 提醒别人“尽量……”（最近常错），例如提醒朋友明天早点到；用 angka 说一句看价钱或电表上的数字（最近常错）；用 berani 说一件你一开始不敢做的事；用 bahkan 补一句“甚至……”加强语气；用 bertanggung jawab 说说家里谁负责做什么。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "切；剪",
+        "id": "memotong"
+      },
+      {
+        "cn": "叶子",
+        "id": "daun"
+      },
+      {
+        "cn": "勺子；一勺",
+        "id": "sendok"
+      },
+      {
+        "cn": "酸的",
+        "id": "asam"
+      },
+      {
+        "cn": "薄的",
+        "id": "tipis"
+      },
+      {
+        "cn": "扔掉",
+        "id": "buang"
+      },
+      {
+        "cn": "相像",
+        "id": "mirip"
+      },
+      {
+        "cn": "（把……）减少",
+        "id": "kurangi"
+      },
+      {
+        "cn": "细腻；光滑",
+        "id": "halus"
+      },
+      {
+        "cn": "量；测量",
+        "id": "ukur"
+      },
+      {
+        "cn": "尽量（做到）",
+        "id": "usahakan"
+      },
+      {
+        "cn": "数字",
+        "id": "angka"
+      }
+    ],
+    "frames": [
+      "Usahakan …, supaya …",
+      "… mirip sekali dengan …",
+      "Kurangi … dikit aja, ya."
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "kurangi",
+            "cn": "把……减少（接宾语）"
+          },
+          {
+            "id": "berkurang",
+            "cn": "自己变少"
+          },
+          {
+            "id": "kurang",
+            "cn": "不够"
+          }
+        ],
+        "note": "Kurangi gulanya. / Pembelinya berkurang. / Gulanya kurang."
+      },
+      {
+        "items": [
+          {
+            "id": "memotong",
+            "cn": "切（泛指）"
+          },
+          {
+            "id": "mengiris",
+            "cn": "切片"
+          }
+        ],
+        "note": "memotong kue（切蛋糕）/ mengiris bawang tipis-tipis（把洋葱切成薄片）"
+      },
+      {
+        "items": [
+          {
+            "id": "mirip",
+            "cn": "像，但不完全一样"
+          },
+          {
+            "id": "sama",
+            "cn": "相同"
+          }
+        ],
+        "note": "Mukanya mirip ayahnya. / Ukuran kami sama."
+      },
+      {
+        "items": [
+          {
+            "id": "halus",
+            "cn": "细；滑；委婉"
+          },
+          {
+            "id": "lembut",
+            "cn": "柔软；温柔"
+          }
+        ],
+        "note": "diulek sampai halus（捣细）/ kue yang lembut（松软的蛋糕）"
+      },
+      {
+        "items": [
+          {
+            "id": "tanggung jawab",
+            "cn": "责任（名词）"
+          },
+          {
+            "id": "bertanggung jawab",
+            "cn": "负责（动词）"
+          }
+        ],
+        "note": "Ini tanggung jawab saya. / Saya yang bertanggung jawab."
+      }
+    ],
+    "apply": [
+      {
+        "word": "usahakan",
+        "usage": "提醒或要求别人“尽量做到”，放在句首：Usahakan + 动作／结果。",
+        "examples": [
+          {
+            "id": "Usahakan potongannya tipis dan sama besar, supaya cepat matang.",
+            "cn": "尽量切得薄一点、大小一样，这样熟得快。"
+          }
+        ]
+      },
+      {
+        "word": "angka",
+        "usage": "指写出来的数字、数值：angka di iklan、angka di meteran listrik；“数量、人数”多用 jumlah。",
+        "examples": [
+          {
+            "id": "Jangan cuma percaya angka di foto iklan.",
+            "cn": "别只信广告图片上的数字。"
+          }
+        ]
+      },
+      {
+        "word": "berani",
+        "usage": "berani + 动作：敢做某事；否定 tidak berani。",
+        "examples": [
+          {
+            "id": "Awalnya Dinda tidak berani memotong cepat-cepat.",
+            "cn": "丁达一开始不敢切得太快。"
+          }
+        ]
+      },
+      {
+        "word": "bertanggung jawab",
+        "usage": "负责某事：bertanggung jawab atas …／口语 yang bertanggung jawab + 动作。",
+        "examples": [
+          {
+            "id": "Raka yang bertanggung jawab memberi makan kucing.",
+            "cn": "由拉卡负责喂猫。"
+          }
+        ]
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "usahakan",
+      "mirip",
+      "kurangi"
+    ],
+    "patterns": [
+      {
+        "pattern": "Usahakan …, supaya …",
+        "cn": "尽量……，这样……",
+        "example": "Usahakan potongannya tipis dan sama besar, supaya cepat matang",
+        "example_cn": "尽量切得薄一点、大小一样，这样熟得快"
+      },
+      {
+        "pattern": "… mirip sekali dengan …",
+        "cn": "……跟……特别像",
+        "example": "Ayah bilang rasanya mirip sekali dengan sayur asem buatan Nenek.",
+        "example_cn": "爸爸说味道跟奶奶做的酸菜汤特别像。"
+      }
+    ]
+  }
+}
