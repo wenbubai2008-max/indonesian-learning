@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-30T10:52:11.102Z",
+    "runtime_generated_at": "2026-10-30T14:00:55.827Z",
     "lesson_watermark": "2026-10-30 18:00",
     "index_updated": "2026-10-30",
-    "runtime_hash": "9cfca3d89d47ea97474e15ea3acefac870ee6af22d48c60ca457d0361e697b63",
+    "runtime_hash": "9851d43d189ca9b3eee962310c9a1b705cee7dd84fca6d930d42d96bdabb3aeb",
     "index_hash": "cc95ca7a9aa50a16f0497981a9433054402a20b8e4e49951f229cc1b2763bc6f",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
@@ -257,6 +257,16 @@
     ],
     "review": [
       [
+        "dimaksudkan",
+        1,
+        2,
+        "2026-10-30T11:11:50.668Z",
+        "2026-10-30T11:51:26.319Z",
+        "意在；旨在；（被）打算用来……",
+        "maksud",
+        "意思；目的"
+      ],
+      [
         "penanganan",
         1,
         2,
@@ -365,16 +375,6 @@
         "原因；起因（导致某个结果的因素）",
         "sebab",
         "原因；因为"
-      ],
-      [
-        "dimaksudkan",
-        1,
-        1,
-        "2026-10-29T03:56:50.974Z",
-        "2026-10-29T03:56:50.974Z",
-        "意在；旨在；（被）打算用来……",
-        "maksud",
-        "意思；目的"
       ],
       [
         "mengesankan",
@@ -717,6 +717,26 @@
         "经过；超过"
       ],
       [
+        "nyusul",
+        1,
+        1,
+        "2026-10-30T11:14:02.852Z",
+        "2026-10-30T11:14:02.852Z",
+        "随后跟上；晚点再过去会合",
+        "susul",
+        "追上；随后跟上"
+      ],
+      [
+        "nimpalin",
+        1,
+        1,
+        "2026-10-30T11:10:53.068Z",
+        "2026-10-30T11:10:53.068Z",
+        "接话；回一句；顺着对方的话回应（口语）",
+        "timpal",
+        "接话；回应"
+      ],
+      [
         "menjelang",
         1,
         1,
@@ -835,26 +855,6 @@
         "下载（文件）",
         "unduh",
         "下载"
-      ],
-      [
-        "tidak sabar",
-        1,
-        1,
-        "2026-10-24T02:33:10.221Z",
-        "2026-10-27T05:49:09.482Z",
-        "迫不及待；不耐烦",
-        "sabar",
-        "耐心"
-      ],
-      [
-        "melayani",
-        1,
-        1,
-        "2026-10-24T02:12:39.635Z",
-        "2026-10-24T02:12:39.635Z",
-        "服务；接待",
-        "layan",
-        "服务；接待"
       ],
       [
         "tingkat",
@@ -2459,6 +2459,16 @@
     ],
     "focus": [
       [
+        "dimaksudkan",
+        124,
+        [
+          "quick_wrong",
+          "lesson_wrong",
+          "dont",
+          "fuzzy"
+        ]
+      ],
+      [
         "penanganan",
         124,
         [
@@ -2551,15 +2561,6 @@
       ],
       [
         "penyebab",
-        86,
-        [
-          "quick_wrong",
-          "dont",
-          "fuzzy"
-        ]
-      ],
-      [
-        "dimaksudkan",
         86,
         [
           "quick_wrong",

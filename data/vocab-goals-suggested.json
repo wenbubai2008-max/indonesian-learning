@@ -4,15 +4,15 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 869,
-   "recognize": 105,
-   "unsure": 20,
+   "use": 872,
+   "recognize": 104,
+   "unsure": 21,
    "fast": 132
   },
   "active": {
-   "use": 592,
-   "recognize": 89,
-   "unsure": 18,
+   "use": 595,
+   "recognize": 88,
+   "unsure": 19,
    "fast": 54
   }
  },
@@ -7784,11 +7784,12 @@
    ]
   },
   "dimaksudkan": {
-   "goal": "recognize",
+   "goal": "unsure",
    "fast": false,
-   "by": "review",
+   "by": "review+history",
    "status": "active",
    "why": [
+    "答错较多，不建议只要求认识",
     "使用面窄：认得即可",
     "第二词库 B1 / A"
    ]
@@ -9172,6 +9173,33 @@
    "status": "active",
    "why": [
     "977 主库第 921 位"
+   ]
+  },
+  "kemungkinan besar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 684 位"
+   ]
+  },
+  "tanda": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 773 位"
+   ]
+  },
+  "rendah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 502 位"
    ]
   }
  }
