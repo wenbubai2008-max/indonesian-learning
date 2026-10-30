@@ -1,0 +1,713 @@
+{
+ "version": 1,
+ "title": "晚课深讲 · 10月30日",
+ "intro": [
+  "今晚的课叫《家里电量用得飞快》。Raka 家的预付电量掉得特别快，电工 Darto 师傅一查，原来是冰箱门封胶条裂了、温度又调得太低；换了胶条、调好温度，就不用买新冰箱。",
+  "今晚只讲 5 样：[[kemungkinan besar]] · [[tanda]] · [[menekan]] · [[Meskipun …, ternyata …]] · [[Kemungkinan besar penyebabnya bukan …, melainkan …]]"
+ ],
+ "items": [
+  {
+   "key": "kemungkinan",
+   "name": "kemungkinan besar",
+   "head": "kemungkinan besar · 很可能；多半",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Pak Darto",
+      "id": "\"Kemungkinan besar sebabnya karet pintu ini sudah sobek.",
+      "cn": "“很可能是因为这个门封胶条已经裂了。"
+     }
+    ],
+    "ask": "Darto 师傅对原因有多大把握？",
+    "options": [
+     {
+      "t": "把握挺大，但还是推测",
+      "ok": true,
+      "reply": [
+       "对。kemungkinan besar = 多半、八成，是有根据的猜测。"
+      ]
+     },
+     {
+      "t": "百分之百确定",
+      "reply": [
+       "不是。确定会说 pasti 或 ternyata，kemungkinan 还是“可能性”。"
+      ]
+     },
+     {
+      "t": "一点把握都没有",
+      "reply": [
+       "不是。没把握说 mungkin（也许）或 kemungkinan kecil（不太可能）。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[kemungkinan besar]] 比 {{mungkin}} 更有把握：mungkin 是“也许”，kemungkinan besar 是“多半”。常放句首：{{Kemungkinan besar dia telat.}} 反过来 {{kemungkinan kecil}} = 可能性不大。"
+   ],
+   "simple": [
+    "[[kemungkinan besar]] = 多半、很可能（有根据的猜）"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Mungkin dia telat.",
+         "他也许会迟到。（五五开）"
+        ],
+        [
+         "Kemungkinan besar dia telat.",
+         "他多半会迟到。（把握大）"
+        ],
+        [
+         "Kemungkinan kecil dia telat.",
+         "他不太可能迟到。"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Langitnya gelap banget. ___ sebentar lagi hujan.]]",
+     "（天很暗，多半马上要下雨。）"
+    ],
+    "options": [
+     {
+      "t": "Kemungkinan besar",
+      "v": "right",
+      "why": [
+       "对。看到天色做出有把握的推测。"
+      ]
+     },
+     {
+      "t": "Kayaknya",
+      "v": "ok",
+      "why": [
+       "也可以，朋友聊天更口语。"
+      ]
+     },
+     {
+      "t": "Kemungkinan kecil",
+      "v": "wrong",
+      "why": [
+       "意思反了：“不太可能下雨”，和天很暗对不上。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。同事问报告什么时候好，你估计明天多半能交。最自然的说法："
+     ],
+     "options": [
+      {
+       "t": "Kemungkinan besar besok sudah selesai.",
+       "v": "right",
+       "why": [
+        "对。有把握的估计。"
+       ]
+      },
+      {
+       "t": "Pasti besok sudah selesai.",
+       "v": "wrong",
+       "why": [
+        "pasti 是“肯定”，你只是估计，说太满。"
+       ]
+      },
+      {
+       "t": "Mungkin besok sudah selesai.",
+       "v": "ok",
+       "why": [
+        "也可以，只是把握听起来小一点。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "朋友的猫一整天没吃东西。你说：“它多半是太热了。”先说出声。"
+    ],
+    "kw": "kemungkinan besar · kepanasan",
+    "skel": "____ dia ____.",
+    "ref": "Kemungkinan besar dia kepanasan."
+   },
+   "recall": {
+    "prompt": [
+     "你在车站等车，车一直没来。你跟旁边的人说：“很可能前面堵车了。”（用 Bu）"
+    ],
+    "kw": "kemungkinan besar · macet",
+    "skel": "Bu, ____ di depan lagi ____.",
+    "ref": "Bu, kemungkinan besar di depan lagi macet."
+   },
+   "final": {
+    "cn": "（对同事）“老板多半今天不来办公室。”",
+    "ref": "Kemungkinan besar bos nggak datang ke kantor hari ini."
+   },
+   "remind": "kemungkinan besar = 多半；mungkin = 也许；kemungkinan kecil = 不太可能。"
+  },
+  {
+   "key": "tanda",
+   "name": "tanda",
+   "head": "tanda · 迹象；信号；记号",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "Raka",
+      "id": "Nah, itu salah satu tandanya. Ibu juga nyetel suhunya paling rendah, biar sayurnya awet.",
+      "cn": "对，那就是迹象之一。妈还把温度调到最低，想让蔬菜放得久一点。"
+     }
+    ],
+    "ask": "Raka 说的“迹象”指什么？",
+    "options": [
+     {
+      "t": "冰箱一直响个不停",
+      "ok": true,
+      "reply": [
+       "对。机器一直响，说明冰箱在硬撑：itu salah satu tandanya。"
+      ]
+     },
+     {
+      "t": "冰箱上贴的标签",
+      "reply": [
+       "不是。标签是 label / stiker；tanda 在这里是“迹象”。"
+      ]
+     },
+     {
+      "t": "妈妈的签名",
+      "reply": [
+       "不是。签名要说 tanda tangan，单说 tanda 不是签名。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[tanda]] 是看得到、听得到的“迹象、信号”。最常用：{{Itu tandanya …}}（那说明……）、{{tanda-tanda}}（种种迹象）。签名是 {{tanda tangan}}；病的“症状”多用 {{gejala}}。"
+   ],
+   "simple": [
+    "[[tanda]] = 迹象、信号；Itu tandanya … = 那说明……"
+   ],
+   "asks": [
+    {
+     "label": "tanda 和 gejala",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Itu tanda mau hujan.",
+         "那是要下雨的迹象。"
+        ],
+        [
+         "Gejala flu-nya ringan.",
+         "感冒症状很轻。"
+        ],
+        [
+         "Tanda tangan di sini, ya.",
+         "请在这里签名。"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的构词",
+     "from": "formation"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Matanya merah dan dia terus menguap. Itu ___ dia kurang tidur.]]",
+     "（他眼睛红、一直打哈欠，说明他没睡够。）"
+    ],
+    "options": [
+     {
+      "t": "tandanya",
+      "v": "right",
+      "why": [
+       "对。Itu tandanya … = 那说明……"
+      ]
+     },
+     {
+      "t": "tanda tangan",
+      "v": "wrong",
+      "why": [
+       "tanda tangan 是签名，放这里不通。"
+      ]
+     },
+     {
+      "t": "buktinya",
+      "v": "ok",
+      "why": [
+       "也可以，Itu buktinya … 是“那证明……”，语气更肯定。"
+      ]
+     }
+    ]
+   },
+   "say": {
+    "prompt": [
+     "你的车发动时有怪声。你跟修车师傅说：“这是不是电瓶坏了的迹象？”（用 Pak）"
+    ],
+    "kw": "tanda · aki",
+    "skel": "Pak, ini ____ akinya ____ ya?",
+    "ref": "Pak, ini tanda akinya rusak, ya?"
+   },
+   "recall": {
+    "prompt": [
+     "你看到朋友的植物叶子发黄，说：“叶子发黄说明水浇多了。”"
+    ],
+    "kw": "daunnya · tanda",
+    "skel": "Daunnya kuning, itu ____ kebanyakan ____.",
+    "ref": "Daunnya kuning, itu tanda kebanyakan disiram."
+   },
+   "final": {
+    "cn": "（对家人）“狗一直叫，说明外面有人。”",
+    "ref": "Anjingnya menggonggong terus, itu tandanya ada orang di luar."
+   },
+   "remind": "tanda = 迹象；Itu tandanya … = 那说明……；签名是 tanda tangan。"
+  },
+  {
+   "key": "menekan",
+   "name": "menekan",
+   "head": "menekan · 按；压低（成本）；施压",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Intinya, untuk menekan biaya listrik, mereka tidak perlu membeli kulkas baru.",
+      "cn": "总之，要压低电费，他们并不需要买一台新冰箱。"
+     }
+    ],
+    "ask": "menekan biaya listrik 是什么意思？",
+    "options": [
+     {
+      "t": "把电费压下来",
+      "ok": true,
+      "reply": [
+       "对。menekan biaya = 把成本、开支往下压。"
+      ]
+     },
+     {
+      "t": "按电费单上的按钮",
+      "reply": [
+       "不是。menekan 本义是按、压，这里是引申：把数字压低。"
+      ]
+     },
+     {
+      "t": "催别人交电费",
+      "reply": [
+       "不是。催人交钱是 menagih；menekan 说的是“压低”。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[menekan]] = meN- + tekan（t 脱落）。本义按、压：{{menekan tombol}}；引申把数字压低：{{menekan biaya}}；或给人施压。被动 {{ditekan}}：{{Biayanya bisa ditekan.}} 名词 {{tekanan}} 是“压力”。"
+   ],
+   "simple": [
+    "[[menekan biaya]] = 压低成本；[[ditekan]] = 被压下来"
+   ],
+   "asks": [
+    {
+     "label": "几个词形怎么分？",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Kita harus menekan biaya.",
+         "我们得压低成本。（主动）"
+        ],
+        [
+         "Biayanya bisa ditekan.",
+         "成本能压下来。（被动）"
+        ],
+        [
+         "Dia lagi banyak tekanan.",
+         "他最近压力很大。（名词）"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Supaya tabungan cepat naik, aku mau ___ pengeluaran buat jajan.]]",
+     "（为了存款涨得快，我要压低零食开支。）"
+    ],
+    "options": [
+     {
+      "t": "menekan",
+      "v": "right",
+      "why": [
+       "对。menekan pengeluaran = 压低开支。"
+      ]
+     },
+     {
+      "t": "mengurangi",
+      "v": "ok",
+      "why": [
+       "也可以，mengurangi 是一般的“减少”，menekan 更有“使劲压下来”的味道。"
+      ]
+     },
+     {
+      "t": "tertekan",
+      "v": "wrong",
+      "why": [
+       "tertekan 是“心里有压力”，后面不能接开支。"
+      ]
+     }
+    ]
+   },
+   "say": {
+    "prompt": [
+     "你在家庭群里说：“这个月咱们得把买菜的开支压下来。”"
+    ],
+    "kw": "menekan · pengeluaran",
+    "skel": "Bulan ini kita harus ____ ____ buat belanja.",
+    "ref": "Bulan ini kita harus menekan pengeluaran buat belanja."
+   },
+   "recall": {
+    "prompt": [
+     "你在电梯里跟同事说：“按一下七楼。”"
+    ],
+    "kw": "tolong · tekan",
+    "skel": "Tolong ____ lantai tujuh, ya.",
+    "ref": "Tolong tekan lantai tujuh, ya.",
+    "notes": [
+     "口语里按按钮常直接说 tekan 或 pencet。"
+    ]
+   },
+   "final": {
+    "cn": "（开会时对经理）“我们可以压低运费成本。”",
+    "ref": "Kita bisa menekan biaya pengiriman, Pak."
+   },
+   "remind": "menekan biaya = 压低成本；被动 ditekan；t 脱落：tekan → menekan。"
+  },
+  {
+   "key": "p1",
+   "name": "Meskipun …, ternyata …",
+   "head": "Meskipun …, ternyata … · 虽然……，其实（结果却）……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Meskipun kulkas itu masih dingin, ternyata listriknya banyak terbuang.",
+      "cn": "虽然冰箱还很冷，其实很多电都白白浪费了。"
+     }
+    ],
+    "ask": "ternyata 在这里加了什么意思？",
+    "options": [
+     {
+      "t": "事后才发现，和表面看到的不一样",
+      "ok": true,
+      "reply": [
+       "对。ternyata = 原来、结果发现。配 Meskipun 就是“表面这样，实际却那样”。"
+      ]
+     },
+     {
+      "t": "表示原因",
+      "reply": [
+       "不是。原因用 karena / sebab；ternyata 是“结果发现”。"
+      ]
+     },
+     {
+      "t": "表示时间先后",
+      "reply": [
+       "不是。先后用 lalu / terus；ternyata 讲的是“发现”。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "前半句说表面情况：{{Meskipun …}}，后半句用 {{ternyata}} 说后来发现的真相：{{Meskipun murah, ternyata kualitasnya bagus.}} 规范写法里 meskipun 句后一般不再加 tetapi。"
+   ],
+   "simple": [
+    "[[Meskipun …, ternyata …]] = 虽然看起来……，结果发现……"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Meskipun kecil, ternyata kamarnya nyaman.",
+         "虽然小，房间其实挺舒服。"
+        ],
+        [
+         "Meskipun mahal, ternyata cepat rusak.",
+         "虽然贵，结果很快就坏了。"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "朋友推荐的小餐馆看起来很普通，吃了才发现很好吃。最自然的说法："
+    ],
+    "options": [
+     {
+      "t": "Meskipun tempatnya biasa, ternyata makanannya enak banget.",
+      "v": "right",
+      "why": [
+       "对。表面普通，结果发现好吃。"
+      ]
+     },
+     {
+      "t": "Walaupun tempatnya biasa, ternyata makanannya enak banget.",
+      "v": "ok",
+      "why": [
+       "也对，walaupun 和 meskipun 可以互换。"
+      ]
+     },
+     {
+      "t": "Meskipun tempatnya biasa, makanya makanannya enak banget.",
+      "v": "wrong",
+      "why": [
+       "makanya 是“所以”，因果关系不成立。"
+      ]
+     }
+    ]
+   },
+   "say": {
+    "prompt": [
+     "你跟朋友说：“虽然那件衬衫便宜，结果料子挺好。”"
+    ],
+    "kw": "meskipun · ternyata",
+    "skel": "____ kemejanya murah, ____ bahannya bagus.",
+    "ref": "Meskipun kemejanya murah, ternyata bahannya bagus."
+   },
+   "recall": {
+    "prompt": [
+     "你第一次坐夜车去日惹，跟同事说：“虽然坐了十个小时，结果一点也不累。”"
+    ],
+    "kw": "meskipun · ternyata",
+    "skel": "____ sepuluh jam di kereta, ____ aku nggak capek sama sekali.",
+    "ref": "Meskipun sepuluh jam di kereta, ternyata aku nggak capek sama sekali."
+   },
+   "final": {
+    "cn": "（对朋友）“虽然考试很难，结果我及格了。”",
+    "ref": "Meskipun ujiannya susah, ternyata aku lulus."
+   },
+   "remind": "Meskipun …, ternyata … = 虽然表面……，结果发现……"
+  },
+  {
+   "key": "p2",
+   "name": "Kemungkinan besar penyebabnya bukan …, melainkan …",
+   "head": "Kemungkinan besar penyebabnya bukan …, melainkan … · 原因多半不是……，而是……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "改写参考",
+      "id": "Kemungkinan besar penyebabnya bukan baterai, melainkan game yang baru aku pasang.",
+      "cn": "原因多半不是电池，而是我新装的那个游戏。"
+     }
+    ],
+    "ask": "说话的人觉得手机耗电的原因是什么？",
+    "options": [
+     {
+      "t": "新装的游戏",
+      "ok": true,
+      "reply": [
+       "对。bukan A, melainkan B = 不是 A，而是 B，重点在 B。"
+      ]
+     },
+     {
+      "t": "电池",
+      "reply": [
+       "正好相反，bukan baterai = 不是电池。"
+      ]
+     },
+     {
+      "t": "电池和游戏都有问题",
+      "reply": [
+       "不是。melainkan 是“而是”，把 A 否掉、换成 B。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "三块拼起来：{{Kemungkinan besar}}（多半）+ {{penyebabnya}}（原因）+ {{bukan …, melainkan …}}（不是……而是……）。melainkan 偏书面，聊天里也常说 {{tapi}}：{{bukan baterai, tapi game-nya}}。"
+   ],
+   "simple": [
+    "[[bukan …, melainkan …]] = 不是……，而是……；前面加 Kemungkinan besar penyebabnya 就是猜原因。"
+   ],
+   "asks": [
+    {
+     "label": "penyebab 和 sebab",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Penyebabnya kulkas.",
+         "原因是冰箱。（名词）"
+        ],
+        [
+         "Aku telat, sebab macet.",
+         "我迟到了，因为堵车。（连词）"
+        ],
+        [
+         "Sebabnya belum jelas.",
+         "原因还不清楚。（名词也行）"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Kemungkinan besar penyebabnya bukan AC, ___ kulkas yang karetnya sobek.]]",
+     "（原因多半不是空调，而是胶条裂了的冰箱。）"
+    ],
+    "options": [
+     {
+      "t": "melainkan",
+      "v": "right",
+      "why": [
+       "对。bukan …, melainkan … 固定搭配。"
+      ]
+     },
+     {
+      "t": "tapi",
+      "v": "ok",
+      "why": [
+       "也可以，口语里常用 tapi。"
+      ]
+     },
+     {
+      "t": "meskipun",
+      "v": "wrong",
+      "why": [
+       "meskipun 是“虽然”，不能接在 bukan … 后面表示“而是”。"
+      ]
+     }
+    ]
+   },
+   "say": {
+    "prompt": [
+     "你跟同事解释网速慢：“原因多半不是路由器，而是用的人太多。”"
+    ],
+    "kw": "kemungkinan besar · bukan · melainkan",
+    "skel": "____ penyebabnya ____ router-nya, ____ terlalu banyak yang pakai.",
+    "ref": "Kemungkinan besar penyebabnya bukan router-nya, melainkan terlalu banyak yang pakai."
+   },
+   "recall": {
+    "prompt": [
+     "孩子肚子疼，你跟医生说：“原因多半不是吃坏了，而是没睡好。”（用 Dok）"
+    ],
+    "kw": "bukan makanan · melainkan",
+    "skel": "Dok, kemungkinan besar penyebabnya ____ makanan, ____ kurang tidur.",
+    "ref": "Dok, kemungkinan besar penyebabnya bukan makanan, melainkan kurang tidur."
+   },
+   "final": {
+    "cn": "（对朋友）“植物死掉的原因多半不是缺水，而是太晒了。”",
+    "ref": "Kemungkinan besar penyebab tanamannya mati bukan kurang air, melainkan kepanasan."
+   },
+   "remind": "Kemungkinan besar penyebabnya bukan A, melainkan B = 原因多半不是 A，而是 B。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "今晚另一个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+  ],
+  "words": [
+   "rendah"
+  ]
+ },
+ "reading": [
+  {
+   "key": "bocor",
+   "sentence": "\"Kemungkinan besar sebabnya karet pintu ini sudah sobek.",
+   "cn": "“很可能是因为这个门封胶条已经裂了。",
+   "chunks": [
+    [
+     "\"Kemungkinan besar",
+     "多半",
+     "把握大的推测"
+    ],
+    [
+     "sebabnya",
+     "原因是",
+     "sebab + -nya，名词“它的原因”"
+    ],
+    [
+     "karet pintu ini",
+     "这个门封胶条",
+     ""
+    ],
+    [
+     "sudah sobek.",
+     "已经裂了",
+     "sobek = 撕裂、破口"
+    ]
+   ],
+   "steal": [
+    "值得借的是 [[Kemungkinan besar sebabnya …]]：猜一件事的原因。{{Kemungkinan besar sebabnya ban motornya bocor.}}（原因多半是摩托车胎漏气了。）"
+   ]
+  }
+ ],
+ "dialogue": {
+  "head": "对话 · 你来演 Raka",
+  "intro": [
+   "你演哥哥 Raka，我演妹妹 Nisa。每一轮先看 Raka 想说什么，看中文先说。"
+  ],
+  "turns": [
+   {
+    "line": 1,
+    "intent": "Raka 说 Darto 师傅查过了，原因原来是冰箱，不是空调。",
+    "kw": "udah ngecek · penyebabnya ternyata",
+    "skel": "Iya. Tadi Pak Darto ____. ____ kulkas, bukan AC."
+   },
+   {
+    "line": 3,
+    "intent": "Raka 说虽然还冷，可胶条已经裂了，所以机器一直在转。",
+    "kw": "meskipun · udah sobek · kerja terus",
+    "skel": "____ masih dingin, karet pintunya ____. Jadi mesinnya ____."
+   },
+   {
+    "line": 7,
+    "intent": "Raka 说不用买新的，换胶条、少开关门，电费就能压下来。",
+    "kw": "intinya · kurangin · ditekan",
+    "skel": "Nggak usah. ____ ganti karetnya aja, terus ____ buka-tutup pintu kulkas. Biar pengeluaran listrik bisa ____."
+   }
+  ],
+  "tail": [
+   "兄妹之间用 aku/kamu 和 udah、nggak、aja；跟师傅、长辈说话时换成 saya 和标准形。"
+  ]
+ },
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今晚的改写题，缩短版）：跟朋友说你手机发烫是个迹象，原因多半不是电池，而是新装的游戏。"
+   ],
+   "kw": "tanda · kemungkinan besar · bukan · melainkan",
+   "skel": "HP-ku cepet panas, itu ____ ada aplikasi yang jalan terus. ____ penyebabnya bukan baterai, ____ game yang baru aku pasang.",
+   "ref": "HP-ku cepet panas, itu tanda ada aplikasi yang jalan terus. Kemungkinan besar penyebabnya bukan baterai, melainkan game yang baru aku pasang.",
+   "notes": [
+    "整页的改写题有更完整的参考答案，学完可以去对照。cepet = cepat"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
