@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 859,
+   "use": 869,
    "recognize": 105,
    "unsure": 20,
    "fast": 132
   },
   "active": {
-   "use": 582,
+   "use": 592,
    "recognize": 89,
    "unsure": 18,
    "fast": 54
@@ -9082,6 +9082,96 @@
    "status": "active",
    "why": [
     "977 主库第 795 位"
+   ]
+  },
+  "memotong": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 428 位"
+   ]
+  },
+  "daun": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 548 位"
+   ]
+  },
+  "sendok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 625 位"
+   ]
+  },
+  "asam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 659 位"
+   ]
+  },
+  "tipis": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 661 位"
+   ]
+  },
+  "buang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 821 位"
+   ]
+  },
+  "mirip": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 898 位"
+   ]
+  },
+  "kurangi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 924 位"
+   ]
+  },
+  "halus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 742 位"
+   ]
+  },
+  "ukur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 921 位"
    ]
   }
  }
