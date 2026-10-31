@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-31T07:02:14.706Z",
+  "updated_at": "2026-10-31T13:30:07.349Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -5955,12 +5955,21 @@
     "adil": {
       "word": "adil",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:46.139Z",
+      "updated_at": "2026-10-31T13:05:46.629Z",
       "display": "adil",
+      "cn": "公平的；公正的",
+      "root": "adil",
+      "root_cn": "公平；公正",
+      "last_wrong": "2026-10-31T13:05:46.556Z",
+      "last_review": "2026-10-31T13:05:46.556Z",
+      "source": "课程小测",
+      "source_date": "2026-10-31",
+      "session": "18:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 1,
       "right_streak": 0
     },
     "melindungi": {
@@ -9613,8 +9622,9 @@
     "tadi": {
       "word": "tadi",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:50.201Z",
+      "updated_at": "2026-10-31T12:46:39.003Z",
       "display": "tadi",
+      "cn": "刚才",
       "last_review": "2026-09-12T14:13:50.763Z",
       "last_mastered": "2026-09-12T14:13:50.763Z",
       "reasons": [],
@@ -25583,13 +25593,17 @@
     },
     "babi rusa": {
       "word": "babi rusa",
-      "status": "active",
-      "updated_at": "2026-10-14T07:01:20.973Z",
+      "status": "mastered",
+      "updated_at": "2026-10-31T13:25:52.150Z",
       "display": "babi rusa",
       "cn": "鹿猪",
+      "last_review": "2026-10-31T13:25:52.071Z",
+      "last_mastered": "2026-10-31T13:25:52.071Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
@@ -25615,13 +25629,17 @@
     },
     "macan tutul": {
       "word": "macan tutul",
-      "status": "active",
-      "updated_at": "2026-10-14T07:01:21.067Z",
+      "status": "mastered",
+      "updated_at": "2026-10-31T13:26:04.131Z",
       "display": "macan tutul",
       "cn": "豹",
+      "last_review": "2026-10-31T13:26:04.063Z",
+      "last_mastered": "2026-10-31T13:26:04.063Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
@@ -25629,13 +25647,17 @@
     },
     "orang utan": {
       "word": "orang utan",
-      "status": "active",
-      "updated_at": "2026-10-14T07:01:21.104Z",
+      "status": "mastered",
+      "updated_at": "2026-10-31T13:26:07.971Z",
       "display": "orang utan",
       "cn": "红毛猩猩",
+      "last_review": "2026-10-31T13:26:07.907Z",
+      "last_mastered": "2026-10-31T13:26:07.907Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
@@ -25715,13 +25737,17 @@
     },
     "cendrawasih": {
       "word": "cendrawasih",
-      "status": "active",
-      "updated_at": "2026-10-14T07:01:21.349Z",
+      "status": "mastered",
+      "updated_at": "2026-10-31T13:26:21.900Z",
       "display": "cendrawasih",
       "cn": "极乐鸟",
+      "last_review": "2026-10-31T13:26:21.839Z",
+      "last_mastered": "2026-10-31T13:26:21.839Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
@@ -31944,6 +31970,21 @@
       "cn": "彼此",
       "source": "泛读",
       "source_date": "2026-10-27",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "bakti": {
+      "word": "bakti",
+      "status": "active",
+      "updated_at": "2026-10-31T12:44:55.137Z",
+      "display": "bakti",
+      "cn": "奉献精神",
+      "source": "每日学习阅读",
+      "source_date": "2026-10-31",
+      "session": "19:00",
       "reasons": [
         "manual_unknown"
       ],
