@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-10-31",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 71
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-30T14:00:55.827Z",
-    "lesson_watermark": "2026-10-30 18:00",
-    "index_updated": "2026-10-30",
-    "runtime_hash": "9851d43d189ca9b3eee962310c9a1b705cee7dd84fca6d930d42d96bdabb3aeb",
-    "index_hash": "cc95ca7a9aa50a16f0497981a9433054402a20b8e4e49951f229cc1b2763bc6f",
+    "runtime_generated_at": "2026-10-31T00:31:53.276Z",
+    "lesson_watermark": "2026-10-31 08:00",
+    "index_updated": "2026-10-31",
+    "runtime_hash": "dc3f7e4fdf358dc2bf457209eda238dddc5fcb7a067ed136487376f03187d1f3",
+    "index_hash": "e8668b1c809c33cae8aa858622a453a8d0881591a879ef8cb4762ee567f3503d",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -75,10 +75,6 @@
         "风格"
       ],
       [
-        "khususnya",
-        "特别地"
-      ],
-      [
         "penggunaan",
         "使用"
       ],
@@ -107,14 +103,6 @@
         "星期三"
       ],
       [
-        "terbuka",
-        "敞开的"
-      ],
-      [
-        "buruk",
-        "糟糕地"
-      ],
-      [
         "titik",
         "点、滴"
       ],
@@ -129,10 +117,6 @@
       [
         "terbang",
         "飞"
-      ],
-      [
-        "kertas",
-        "纸"
       ],
       [
         "bijak",
@@ -171,10 +155,6 @@
         "看起来"
       ],
       [
-        "pegawai",
-        "职员，公务员"
-      ],
-      [
         "modal",
         "资金，资本"
       ],
@@ -211,32 +191,12 @@
         "沉默寡言"
       ],
       [
-        "saat",
-        "时刻；当……时候"
-      ],
-      [
         "benci",
         "讨厌；恨"
       ],
       [
-        "ubah",
-        "改变；修改"
-      ],
-      [
-        "arti",
-        "意思；含义"
-      ],
-      [
-        "kalimat",
-        "句子"
-      ],
-      [
         "ucap",
         "说；表达"
-      ],
-      [
-        "sebut",
-        "提到；称呼"
       ],
       [
         "sebutan",
@@ -995,16 +955,6 @@
         "活动；要做的事情",
         "giat",
         "积极；活跃；勤奋"
-      ],
-      [
-        "berbagai",
-        3,
-        0,
-        "",
-        "2026-10-15T13:38:13.286Z",
-        "各种；多种多样的",
-        "bagai",
-        "种类；方式"
       ],
       [
         "khusus",
@@ -2407,16 +2357,6 @@
         "抱；拥抱"
       ],
       [
-        "mengunduh",
-        2,
-        0,
-        "",
-        "2026-10-23T23:29:39.156Z",
-        "下载",
-        "unduh",
-        "下载"
-      ],
-      [
         "menuduh",
         2,
         0,
@@ -2455,6 +2395,126 @@
         "杀死",
         "bunuh",
         "杀死"
+      ],
+      [
+        "mengalir",
+        2,
+        0,
+        "",
+        "2026-10-23T23:27:18.650Z",
+        "流动",
+        "alir",
+        "流；流动"
+      ],
+      [
+        "awan",
+        3,
+        0,
+        "",
+        "2026-10-19T13:14:15.963Z",
+        "云",
+        "awan",
+        "云"
+      ],
+      [
+        "pegawai",
+        3,
+        0,
+        "",
+        "",
+        "员工；职员",
+        "pegawai",
+        "员工；职员"
+      ],
+      [
+        "kertas",
+        3,
+        0,
+        "",
+        "",
+        "纸；纸张",
+        "kertas",
+        "纸"
+      ],
+      [
+        "khususnya",
+        3,
+        0,
+        "",
+        "",
+        "尤其是；特别是",
+        "khusus",
+        "特别的；专门的"
+      ],
+      [
+        "terbuka",
+        3,
+        0,
+        "",
+        "",
+        "开着的；公开的；（人）开放、乐于接受",
+        "buka",
+        "开；打开"
+      ],
+      [
+        "buruk",
+        3,
+        0,
+        "",
+        "",
+        "坏的；差的；糟糕的",
+        "buruk",
+        "坏的；差的"
+      ],
+      [
+        "ubah",
+        3,
+        0,
+        "",
+        "",
+        "改；改变（mengubah 的词根和命令式）",
+        "ubah",
+        "改变"
+      ],
+      [
+        "kalimat",
+        3,
+        0,
+        "",
+        "",
+        "句子",
+        "kalimat",
+        "句子"
+      ],
+      [
+        "arti",
+        3,
+        0,
+        "",
+        "",
+        "意思；意义",
+        "arti",
+        "意思；意义"
+      ],
+      [
+        "sebut",
+        3,
+        0,
+        "",
+        "",
+        "提到；说出（名字）；称作",
+        "sebut",
+        "提到；称呼"
+      ],
+      [
+        "saat",
+        3,
+        0,
+        "",
+        "",
+        "时候；时刻",
+        "saat",
+        "时刻；时候"
       ]
     ],
     "focus": [
@@ -2996,6 +3056,29 @@
         "tanda",
         "rendah"
       ]
+    },
+    {
+      "date": "2026-10-31",
+      "session": "am",
+      "review_core": [
+        "mengunduh",
+        "unduh",
+        "jaringan",
+        "karyawan",
+        "berbagai"
+      ],
+      "new_words": [
+        "pegawai",
+        "kertas",
+        "khususnya",
+        "terbuka",
+        "buruk",
+        "ubah",
+        "kalimat",
+        "arti",
+        "sebut",
+        "saat"
+      ]
     }
   ],
   "previous_pm": {
@@ -3013,7 +3096,88 @@
       "meskipun"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-10-31",
+    "vocab": [
+      [
+        "pegawai",
+        "员工；职员",
+        "employee; staff member",
+        "pegawai",
+        "员工；职员"
+      ],
+      [
+        "kertas",
+        "纸；纸张",
+        "paper",
+        "kertas",
+        "纸"
+      ],
+      [
+        "khususnya",
+        "尤其是；特别是",
+        "especially; in particular",
+        "khusus",
+        "特别的；专门的"
+      ],
+      [
+        "terbuka",
+        "开着的；公开的；（人）开放、乐于接受",
+        "open",
+        "buka",
+        "开；打开"
+      ],
+      [
+        "buruk",
+        "坏的；差的；糟糕的",
+        "bad; poor",
+        "buruk",
+        "坏的；差的"
+      ],
+      [
+        "ubah",
+        "改；改变（mengubah 的词根和命令式）",
+        "change; alter",
+        "ubah",
+        "改变"
+      ],
+      [
+        "kalimat",
+        "句子",
+        "sentence",
+        "kalimat",
+        "句子"
+      ],
+      [
+        "arti",
+        "意思；意义",
+        "meaning",
+        "arti",
+        "意思；意义"
+      ],
+      [
+        "sebut",
+        "提到；说出（名字）；称作",
+        "mention; name; call",
+        "sebut",
+        "提到；称呼"
+      ],
+      [
+        "saat",
+        "时候；时刻",
+        "moment; when; at the time",
+        "saat",
+        "时刻；时候"
+      ]
+    ],
+    "review_vocab": [
+      "mengunduh",
+      "unduh",
+      "jaringan",
+      "karyawan",
+      "berbagai"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

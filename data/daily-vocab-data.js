@@ -10208,17 +10208,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 08:00",
+    "last_seen": "2026-10-31 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-10-31"
     ],
     "lesson_occurrences": [
-      "2026-09-14 08:00"
+      "2026-09-14 08:00",
+      "2026-10-31 08:00"
     ]
   },
   {
@@ -15239,20 +15241,22 @@ window.DAILY_VOCAB_DB = [
       "口语",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-27 18:00",
-    "last_seen": "2026-10-25 08:00",
+    "last_seen": "2026-10-31 08:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-09-27",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
     "lesson_occurrences": [
       "2026-09-27 18:00",
-      "2026-10-25 08:00"
+      "2026-10-25 08:00",
+      "2026-10-31 08:00"
     ]
   },
   {
@@ -16542,17 +16546,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-01 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-31 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-31"
     ],
     "lesson_occurrences": [
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-10-31 08:00"
     ]
   },
   {
@@ -25583,19 +25589,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "新办公室的网络还满足不了我们的需要，和客户视频通话经常断线。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-26 18:00",
-    "last_seen": "2026-10-26 18:00",
+    "last_seen": "2026-10-31 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-26"
+      "2026-10-26",
+      "2026-10-31"
     ],
     "lesson_occurrences": [
-      "2026-10-26 18:00"
+      "2026-10-26 18:00",
+      "2026-10-31 08:00"
     ]
   },
   {
@@ -26220,19 +26230,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "那家公司限制员工的加班时间，每天最多两个小时。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-28 18:00",
-    "last_seen": "2026-10-28 18:00",
+    "last_seen": "2026-10-31 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-31"
     ],
     "lesson_occurrences": [
-      "2026-10-28 18:00"
+      "2026-10-28 18:00",
+      "2026-10-31 08:00"
     ]
   },
   {
@@ -26945,6 +26959,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-30 18:00"
+    ]
+  },
+  {
+    "word": "pegawai",
+    "cn": "员工；职员",
+    "en": "employee; staff member",
+    "root": "pegawai",
+    "root_cn": "员工；职员",
+    "example": "Hari ini ada lima calon pegawai yang datang untuk wawancara di kantor kami.",
+    "example_cn": "今天有五位应聘者来我们公司面试。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 08:00"
+    ]
+  },
+  {
+    "word": "kertas",
+    "cn": "纸；纸张",
+    "en": "paper",
+    "root": "kertas",
+    "root_cn": "纸",
+    "example": "Tolong siapin dua rim kertas, ya. Besok kita harus mencetak banyak materi pelatihan.",
+    "example_cn": "麻烦准备两令纸。明天我们要打印很多培训资料。（siapin = siapkan）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 08:00"
+    ]
+  },
+  {
+    "word": "khususnya",
+    "cn": "尤其是；特别是",
+    "en": "especially; in particular",
+    "root": "khusus",
+    "root_cn": "特别的；专门的",
+    "example": "Berbagai barang di toko itu sedang didiskon, khususnya alat dapur dan perlengkapan mandi.",
+    "example_cn": "那家店的各种商品都在打折，尤其是厨具和洗浴用品。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 08:00"
+    ]
+  },
+  {
+    "word": "terbuka",
+    "cn": "开着的；公开的；（人）开放、乐于接受",
+    "en": "open",
+    "root": "buka",
+    "root_cn": "开；打开",
+    "example": "Lowongan ini terbuka untuk siapa saja yang punya keahlian desain grafis.",
+    "example_cn": "这个职位面向所有有平面设计专长的人开放。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 08:00"
+    ]
+  },
+  {
+    "word": "buruk",
+    "cn": "坏的；差的；糟糕的",
+    "en": "bad; poor",
+    "root": "buruk",
+    "root_cn": "坏的；差的",
+    "example": "Sinyal di lantai bawah buruk sekali, jadi Mira harus bolak-balik ke balkon setiap kali menelepon.",
+    "example_cn": "楼下的信号很差，所以米拉每次打电话都得跑到阳台上，来来回回的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 08:00"
+    ]
+  },
+  {
+    "word": "ubah",
+    "cn": "改；改变（mengubah 的词根和命令式）",
+    "en": "change; alter",
+    "root": "ubah",
+    "root_cn": "改变",
+    "example": "Tolong ubah jadwal pertemuannya ke sore, ya. Pagi ini saya harus ke kantor pusat.",
+    "example_cn": "麻烦把会面时间改到下午。今天上午我得去总部。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 08:00"
+    ]
+  },
+  {
+    "word": "kalimat",
+    "cn": "句子",
+    "en": "sentence",
+    "root": "kalimat",
+    "root_cn": "句子",
+    "example": "Kalimat terakhir di email itu agak membingungkan, jadi saya bertanya lagi kepada pengirimnya.",
+    "example_cn": "那封邮件的最后一句有点让人看不懂，所以我又问了发件人一遍。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 08:00"
+    ]
+  },
+  {
+    "word": "arti",
+    "cn": "意思；意义",
+    "en": "meaning",
+    "root": "arti",
+    "root_cn": "意思；意义",
+    "example": "Kalau kamu belum tahu arti kata kenyal, coba gigit bakso ini. Nah, itu yang namanya kenyal!",
+    "example_cn": "要是你还不知道 kenyal 是什么意思，就咬一口这个肉丸。你看，这就叫 kenyal（Q弹）！",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 08:00"
+    ]
+  },
+  {
+    "word": "sebut",
+    "cn": "提到；说出（名字）；称作",
+    "en": "mention; name; call",
+    "root": "sebut",
+    "root_cn": "提到；称呼",
+    "example": "Bandung disebut Kota Kembang karena dulu kota ini penuh dengan taman dan bunga.",
+    "example_cn": "万隆被称为“花城”，因为过去城里到处都是花园和鲜花。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 08:00"
+    ]
+  },
+  {
+    "word": "saat",
+    "cn": "时候；时刻",
+    "en": "moment; when; at the time",
+    "root": "saat",
+    "root_cn": "时刻；时候",
+    "example": "Saat masih remaja, Ayah sering membantu Kakek menjual sayur di pasar.",
+    "example_cn": "爸爸十几岁的时候，常常帮爷爷在市场卖菜。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 08:00"
     ]
   }
 ];
