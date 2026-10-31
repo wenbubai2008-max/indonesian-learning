@@ -12504,27 +12504,31 @@ window.DAILY_VOCAB_DB = [
     "en": "call / summon",
     "root": "panggil",
     "root_cn": "叫；呼唤",
-    "example": "Tolong panggil saya kalau pelanggan itu datang.",
-    "example_cn": "那位顾客来了请叫我。",
+    "example": "Satpam memanggil pemilik mobil merah itu lewat pengeras suara karena lampu mobilnya masih menyala.",
+    "example_cn": "保安用广播喊那辆红车的车主，因为车灯还亮着。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-10-31 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-20",
       "2026-09-29",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-31"
     ],
     "lesson_occurrences": [
       "2026-09-20 08:00",
       "2026-09-29 08:00",
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-10-31 18:00"
     ]
   },
   {
@@ -15771,23 +15775,27 @@ window.DAILY_VOCAB_DB = [
     "en": "flow; stream; school",
     "root": "alir",
     "root_cn": "流；流动",
-    "example": "Aliran air di kamar mandi tiba-tiba berhenti.",
-    "example_cn": "浴室里的水流突然停了。",
+    "example": "Aliran listrik di wilayah kami terputus sejak sore, jadi kami makan malam pakai lilin.",
+    "example_cn": "我们这一片从傍晚起就断电了，所以我们点着蜡烛吃晚饭。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-29 08:00",
-    "last_seen": "2026-09-29 08:00",
+    "last_seen": "2026-10-31 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-29"
+      "2026-09-29",
+      "2026-10-31"
     ],
     "lesson_occurrences": [
-      "2026-09-29 08:00"
+      "2026-09-29 08:00",
+      "2026-10-31 18:00"
     ]
   },
   {
@@ -16726,23 +16734,25 @@ window.DAILY_VOCAB_DB = [
     "en": "flow",
     "root": "alir",
     "root_cn": "流；流动",
-    "example": "Air hujan mengalir ke selokan di depan rumah.",
-    "example_cn": "雨水流进房子前面的排水沟。",
+    "example": "Obrolan kami mengalir begitu saja sampai kami lupa waktu.",
+    "example_cn": "我们聊着聊着就停不下来，连时间都忘了。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-01 18:00",
-    "last_seen": "2026-10-01 18:00",
+    "last_seen": "2026-10-31 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-31"
     ],
     "lesson_occurrences": [
-      "2026-10-01 18:00"
+      "2026-10-01 18:00",
+      "2026-10-31 18:00"
     ]
   },
   {
@@ -23042,27 +23052,29 @@ window.DAILY_VOCAB_DB = [
     "en": "to be intended (to / for)",
     "root": "maksud",
     "root_cn": "意思；目的",
-    "example": "Lukisan besar di lobi itu dimaksudkan untuk memperkenalkan budaya Indonesia kepada tamu asing.",
-    "example_cn": "大厅里那幅大画，用意是向外国客人介绍印尼文化。",
+    "example": "Surat dari pengelola apartemen itu dimaksudkan sebagai pengingat, bukan ancaman.",
+    "example_cn": "公寓管理处发的那封信本意是提醒，不是威胁。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-19 08:00",
-    "last_seen": "2026-10-29 18:00",
+    "last_seen": "2026-10-31 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-10-19",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-10-31"
     ],
     "lesson_occurrences": [
       "2026-10-19 08:00",
-      "2026-10-29 18:00"
+      "2026-10-29 18:00",
+      "2026-10-31 18:00"
     ]
   },
   {
@@ -25196,23 +25208,25 @@ window.DAILY_VOCAB_DB = [
     "en": "policy",
     "root": "bijak",
     "root_cn": "明智的",
-    "example": "Kafe dekat kantor punya kebijakan baru: yang bawa tumbler sendiri dapat diskon. Lumayan, aku bisa ngirit.",
-    "example_cn": "公司附近的咖啡店有个新规定：自带保温杯的人可以打折。还不错，我能省点钱。（bawa = membawa，dapat 也常说 dapet）",
+    "example": "Kebijakan baru toko itu cukup ketat: barang yang sudah dibeli tidak bisa ditukar.",
+    "example_cn": "那家店的新规定挺严：已经买下的东西不能换。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-25 18:00",
-    "last_seen": "2026-10-25 18:00",
+    "last_seen": "2026-10-31 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
     "lesson_occurrences": [
-      "2026-10-25 18:00"
+      "2026-10-25 18:00",
+      "2026-10-31 18:00"
     ]
   },
   {
@@ -27017,23 +27031,26 @@ window.DAILY_VOCAB_DB = [
     "en": "especially; in particular",
     "root": "khusus",
     "root_cn": "特别的；专门的",
-    "example": "Berbagai barang di toko itu sedang didiskon, khususnya alat dapur dan perlengkapan mandi.",
-    "example_cn": "那家店的各种商品都在打折，尤其是厨具和洗浴用品。",
+    "example": "Hati-hati belanja online, khususnya di akun baru yang harganya jauh lebih murah; banyak orang sudah ditipu dengan cara itu.",
+    "example_cn": "网购要小心，尤其是那些价格便宜得多的新账号；很多人就是这样被骗的。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-31 08:00",
-    "last_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-31"
     ],
     "lesson_occurrences": [
-      "2026-10-31 08:00"
+      "2026-10-31 08:00",
+      "2026-10-31 18:00"
     ]
   },
   {
@@ -27067,23 +27084,26 @@ window.DAILY_VOCAB_DB = [
     "en": "bad; poor",
     "root": "buruk",
     "root_cn": "坏的；差的",
-    "example": "Sinyal di lantai bawah buruk sekali, jadi Mira harus bolak-balik ke balkon setiap kali menelepon.",
-    "example_cn": "楼下的信号很差，所以米拉每次打电话都得跑到阳台上，来来回回的。",
+    "example": "Kebiasaan buruk saya adalah main HP sampai lewat tengah malam, padahal besok harus bangun pagi.",
+    "example_cn": "我的坏习惯是玩手机玩到半夜过后，可第二天还得早起。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-31 08:00",
-    "last_seen": "2026-10-31 08:00",
+    "last_seen": "2026-10-31 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-10-31"
     ],
     "lesson_occurrences": [
-      "2026-10-31 08:00"
+      "2026-10-31 08:00",
+      "2026-10-31 18:00"
     ]
   },
   {
@@ -27209,6 +27229,106 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-31 08:00"
+    ]
+  },
+  {
+    "word": "detik",
+    "cn": "秒；片刻",
+    "en": "second (of time); a moment",
+    "root": "detik",
+    "root_cn": "秒",
+    "example": "Saya cuma menoleh beberapa detik, tapi anak saya sudah lari ke ujung lorong supermarket.",
+    "example_cn": "我只是回头看了几秒钟，我儿子就已经跑到超市过道的另一头了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 18:00",
+    "last_seen": "2026-10-31 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 18:00"
+    ]
+  },
+  {
+    "word": "tampak",
+    "cn": "看起来；显得；看得见",
+    "en": "to look, to appear; visible",
+    "root": "tampak",
+    "root_cn": "显现；看得见",
+    "example": "Dari luar, rumah tua itu tampak biasa saja, padahal sejarahnya panjang sekali.",
+    "example_cn": "从外面看，那栋老房子看起来很普通，其实它的历史非常悠久。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 18:00",
+    "last_seen": "2026-10-31 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 18:00"
+    ]
+  },
+  {
+    "word": "adil",
+    "cn": "公平的；公正的",
+    "en": "fair; just",
+    "root": "adil",
+    "root_cn": "公平；公正",
+    "example": "Bagi tugasnya yang adil, dong. Jangan cuma ngandelin anak yang paling rajin.",
+    "example_cn": "任务分得公平一点嘛。别总是指望最勤快的那个孩子。（ngandelin = mengandalkan）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 18:00",
+    "last_seen": "2026-10-31 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 18:00"
+    ]
+  },
+  {
+    "word": "bijak",
+    "cn": "明智的；有分寸的",
+    "en": "wise; sensible",
+    "root": "bijak",
+    "root_cn": "明智",
+    "example": "Orang tua yang bijak tidak membandingkan anaknya dengan anak tetangga.",
+    "example_cn": "明智的父母不会拿自己的孩子跟邻居家的孩子比。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-10-31 18:00",
+    "last_seen": "2026-10-31 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-10-31"
+    ],
+    "lesson_occurrences": [
+      "2026-10-31 18:00"
     ]
   }
 ];
