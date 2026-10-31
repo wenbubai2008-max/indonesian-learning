@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-31T03:32:43.108Z",
+  "updated_at": "2026-10-31T07:02:14.706Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2329,14 +2329,14 @@
     "tersenyum": {
       "word": "tersenyum",
       "status": "active",
-      "updated_at": "2026-10-29T03:58:43.420Z",
+      "updated_at": "2026-10-31T06:42:01.888Z",
       "display": "tersenyum",
-      "last_review": "2026-10-29T03:58:43.371Z",
+      "last_review": "2026-10-31T06:42:01.829Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "kebanyakan": {
       "word": "kebanyakan",
@@ -2473,14 +2473,14 @@
     "sepanjang": {
       "word": "sepanjang",
       "status": "active",
-      "updated_at": "2026-10-29T03:58:41.684Z",
+      "updated_at": "2026-10-31T06:42:18.183Z",
       "display": "sepanjang",
-      "last_review": "2026-10-29T03:58:41.638Z",
+      "last_review": "2026-10-31T06:42:18.128Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "membangun": {
       "word": "membangun",
@@ -2534,14 +2534,14 @@
     "tradisional": {
       "word": "tradisional",
       "status": "active",
-      "updated_at": "2026-10-29T03:58:46.196Z",
+      "updated_at": "2026-10-31T06:42:19.661Z",
       "display": "tradisional",
-      "last_review": "2026-10-29T03:58:46.150Z",
+      "last_review": "2026-10-31T06:42:19.607Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "kaget": {
       "word": "kaget",
@@ -2947,14 +2947,14 @@
     "momen": {
       "word": "momen",
       "status": "active",
-      "updated_at": "2026-10-29T03:58:35.088Z",
+      "updated_at": "2026-10-31T06:41:58.360Z",
       "display": "momen",
-      "last_review": "2026-10-29T03:58:35.037Z",
+      "last_review": "2026-10-31T06:41:58.302Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "nyata": {
       "word": "nyata",
@@ -3171,13 +3171,13 @@
     "menjelang": {
       "word": "menjelang",
       "status": "active",
-      "updated_at": "2026-10-29T03:58:24.995Z",
+      "updated_at": "2026-10-31T06:41:52.088Z",
       "display": "menjelang",
       "cn": "临近；快到……的时候",
       "root": "jelang",
       "root_cn": "临近",
       "last_wrong": "2026-10-29T03:22:55.556Z",
-      "last_review": "2026-10-29T03:58:24.944Z",
+      "last_review": "2026-10-31T06:41:52.032Z",
       "source": "课程小测",
       "source_date": "2026-10-29",
       "session": "08:00",
@@ -3186,7 +3186,7 @@
         "lesson_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "antar": {
       "word": "antar",
@@ -3277,14 +3277,14 @@
     "menyenangkan": {
       "word": "menyenangkan",
       "status": "active",
-      "updated_at": "2026-10-29T03:58:29.059Z",
+      "updated_at": "2026-10-31T06:41:56.181Z",
       "display": "menyenangkan",
-      "last_review": "2026-10-29T03:58:29.018Z",
+      "last_review": "2026-10-31T06:41:56.121Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "berbahaya": {
       "word": "berbahaya",
@@ -3420,15 +3420,16 @@
     "bepergian": {
       "word": "bepergian",
       "status": "active",
-      "updated_at": "2026-10-29T03:58:18.244Z",
+      "updated_at": "2026-10-31T07:02:04.109Z",
       "display": "bepergian",
       "cn": "旅行",
-      "last_review": "2026-10-29T03:58:18.199Z",
+      "last_review": "2026-10-31T06:41:45.366Z",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "automation_fail"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "berbisik": {
       "word": "berbisik",
@@ -6447,13 +6448,13 @@
     "mengenali": {
       "word": "mengenali",
       "status": "active",
-      "updated_at": "2026-10-29T03:52:25.717Z",
+      "updated_at": "2026-10-31T06:41:33.000Z",
       "display": "mengenali",
       "cn": "认出；辨认出（凭特征认出来）",
       "root": "kenal",
       "root_cn": "认识；熟悉",
       "last_wrong": "2026-10-27T07:33:35.980Z",
-      "last_review": "2026-10-29T03:52:25.666Z",
+      "last_review": "2026-10-31T06:41:32.935Z",
       "source": "课程自检",
       "source_date": "2026-10-16",
       "session": "18:00",
@@ -6463,7 +6464,7 @@
         "quick_wrong"
       ],
       "wrong_count": 3,
-      "right_streak": 1
+      "right_streak": 2
     },
     "majalah": {
       "word": "majalah",
@@ -6643,14 +6644,14 @@
     "pasangan": {
       "word": "pasangan",
       "status": "active",
-      "updated_at": "2026-10-29T03:58:37.207Z",
+      "updated_at": "2026-10-31T06:42:15.083Z",
       "display": "pasangan",
-      "last_review": "2026-10-29T03:58:37.160Z",
+      "last_review": "2026-10-31T06:42:15.030Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "hutan": {
       "word": "hutan",
@@ -6870,15 +6871,15 @@
     "pengunjung": {
       "word": "pengunjung",
       "status": "active",
-      "updated_at": "2026-10-29T03:58:39.303Z",
+      "updated_at": "2026-10-31T06:42:00.588Z",
       "display": "pengunjung",
       "cn": "访客",
-      "last_review": "2026-10-29T03:58:39.254Z",
+      "last_review": "2026-10-31T06:42:00.533Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "berangkat": {
       "word": "berangkat",
@@ -7578,19 +7579,19 @@
     "kekerasan": {
       "word": "kekerasan",
       "status": "active",
-      "updated_at": "2026-10-29T03:52:27.378Z",
+      "updated_at": "2026-10-31T06:41:36.029Z",
       "display": "kekerasan",
       "cn": "暴力；强硬手段",
       "root": "keras",
       "root_cn": "硬的；强烈的",
       "last_wrong": "2026-10-28T03:33:34.449Z",
-      "last_review": "2026-10-29T03:52:27.329Z",
+      "last_review": "2026-10-31T06:41:35.972Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 1
+      "right_streak": 2
     },
     "usia": {
       "word": "usia",
@@ -7964,14 +7965,14 @@
     "beragam": {
       "word": "beragam",
       "status": "active",
-      "updated_at": "2026-10-29T03:58:20.404Z",
+      "updated_at": "2026-10-31T06:41:48.469Z",
       "display": "beragam",
-      "last_review": "2026-10-29T03:58:20.357Z",
+      "last_review": "2026-10-31T06:41:48.410Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "berikutnya": {
       "word": "berikutnya",
@@ -22253,13 +22254,13 @@
     "karyawan": {
       "word": "karyawan",
       "status": "active",
-      "updated_at": "2026-10-29T03:53:27.031Z",
+      "updated_at": "2026-10-31T06:42:09.875Z",
       "display": "karyawan",
       "cn": "员工；职员（多指公司员工）",
       "root": "karya",
       "root_cn": "作品；工作成果",
       "last_wrong": "2026-10-28T15:42:11.294Z",
-      "last_review": "2026-10-29T03:53:26.980Z",
+      "last_review": "2026-10-31T06:42:09.818Z",
       "source": "课程小测",
       "source_date": "2026-10-28",
       "session": "18:00",
@@ -22268,7 +22269,7 @@
         "lesson_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "bos": {
       "word": "bos",
@@ -22409,16 +22410,16 @@
     "promosi": {
       "word": "promosi",
       "status": "active",
-      "updated_at": "2026-10-29T03:53:29.372Z",
+      "updated_at": "2026-10-31T06:42:12.926Z",
       "display": "promosi",
       "cn": "晋升；推广",
       "root": "promosi",
-      "last_review": "2026-10-29T03:53:29.326Z",
+      "last_review": "2026-10-31T06:42:12.873Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "jabatan": {
       "word": "jabatan",
@@ -22437,16 +22438,16 @@
     "divisi": {
       "word": "divisi",
       "status": "active",
-      "updated_at": "2026-10-29T03:53:23.969Z",
+      "updated_at": "2026-10-31T06:42:06.370Z",
       "display": "divisi",
       "cn": "部门；事业部",
       "root": "divisi",
-      "last_review": "2026-10-29T03:53:23.920Z",
+      "last_review": "2026-10-31T06:42:06.311Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "departemen": {
       "word": "departemen",
@@ -30413,20 +30414,19 @@
     "kelewat": {
       "word": "kelewat",
       "status": "active",
-      "updated_at": "2026-10-24T04:18:27.739Z",
+      "updated_at": "2026-10-31T06:41:41.603Z",
       "display": "kelewat",
       "cn": "错过；漏掉；超过（口语）",
       "root": "lewat",
       "root_cn": "经过；超过",
       "last_wrong": "2026-10-13T15:12:17.174Z",
-      "last_review": "2026-10-24T04:18:27.680Z",
+      "last_review": "2026-10-31T06:41:41.475Z",
       "last_mastered": "2026-10-16T09:43:46.491Z",
       "reasons": [
-        "memory_fuzzy",
-        "quick_wrong"
+        "memory_fuzzy"
       ],
       "wrong_count": 2,
-      "right_streak": 2
+      "right_streak": 3
     },
     "kemasan": {
       "word": "kemasan",
