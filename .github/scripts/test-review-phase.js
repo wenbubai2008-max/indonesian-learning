@@ -98,10 +98,13 @@ function phaseAm(){
   L.reading.text=L.reading.text.split(/\s+/).slice(0,70).join(' ');
   L.review_cards={recall:six.slice(0,4).map(x=>({cn:'提示',id:x})),contrasts:[{items:[{id:six[0],cn:'甲'},{id:six[1],cn:'乙'}],note:'区别'}],apply:[{word:six[2],usage:'用法',examples:[{id:'contoh',cn:'例'}]}]};
   L.phase={theme_id:'online-shop',day_role:'core'};
+  // One of the two focus patterns is a frame of this week's functions (2026-10-31), with its example in the lesson.
+  L.sentences[0].text='Menurut resi, paketnya seharusnya sampai kemarin.';
+  L.lesson_focus={words:six.slice(0,3),patterns:[{pattern:'Menurut …, … seharusnya …',function:'state-problem',cn:'按……，……本该……',example:'Menurut resi, paketnya seharusnya sampai kemarin.',example_cn:'根据运单，包裹本该昨天到。'},{pattern:'自由句型',cn:'自由',example:L.sentences[1].text,example_cn:L.sentences[1].cn}]};
   return L;
 }
 const runAm=(L,reviewPhase=ON)=>codes(validate({lesson:L,index,runtime:rtAm,rules,expectedDate:'2026-10-14',expectedSession:'am',sameDayAm:null,previousPm:null,reviewHistory:[],reviewPhase,themes}));
-const PHASE_CODES=['AM_CORE_COUNT','READING_INVALID','PHASE_AM_CONTRAST_MISSING','PHASE_TAG_MISSING','PHASE_TAG_MISMATCH','CYCLE_NOT_ACTIVE','CYCLE_NEW_REQUIRED','CYCLE_VOCAB_MISMATCH','CYCLE_WORD_INELIGIBLE','CYCLE_ORAL_FLAG','AM_REVIEW_CARDS_INVALID','AM_REVIEW_CARDS_ANSWER'];
+const PHASE_CODES=['PHASE_FUNCTION_MISSING','PHASE_FUNCTION_INVALID','LESSON_FOCUS_PATTERN','LESSON_FOCUS_INVALID','LESSON_FOCUS_WORD','AM_CORE_COUNT','READING_INVALID','PHASE_AM_CONTRAST_MISSING','PHASE_TAG_MISSING','PHASE_TAG_MISMATCH','CYCLE_NOT_ACTIVE','CYCLE_NEW_REQUIRED','CYCLE_VOCAB_MISMATCH','CYCLE_WORD_INELIGIBLE','CYCLE_ORAL_FLAG','AM_REVIEW_CARDS_INVALID','AM_REVIEW_CARDS_ANSWER'];
 t('on AM: 6 cycle cards, 70-word reading, contrast cards and theme tag pass every phase rule',()=>{
   const c=runAm(phaseAm());for(const k of PHASE_CODES)assert.ok(!c.has(k),k);
 });
@@ -114,6 +117,16 @@ t('on AM: 10 cards, missing contrasts, missing or wrong theme tag are refused',(
   const a=phaseAm();delete a.review_cards;assert.ok(runAm(a).has('PHASE_AM_CONTRAST_MISSING'));
   const b=phaseAm();delete b.phase;assert.ok(runAm(b).has('PHASE_TAG_MISSING'));
   const c=phaseAm();c.phase={theme_id:'logistics',day_role:'core'};assert.ok(runAm(c).has('PHASE_TAG_MISMATCH'));
+});
+
+t('on: weekly function frames: one focus pattern must be a frame of this week, tagged and really used',()=>{
+  const a=phaseAm();delete a.lesson_focus.patterns[0].function;assert.ok(runAm(a).has('PHASE_FUNCTION_MISSING'),'untagged');
+  const b=phaseAm();b.lesson_focus.patterns[0].function='ask-status';assert.ok(runAm(b).has('PHASE_FUNCTION_INVALID'),'function of another theme');
+  const c=phaseAm();c.lesson_focus.patterns[0].pattern='Menurut …, … harus …';assert.ok(runAm(c).has('PHASE_FUNCTION_INVALID'),'not one of the frames');
+  const d=phaseAm();d.sentences[0].text='Menurut resi, paketnya sampai kemarin.';d.lesson_focus.patterns[0].example=d.sentences[0].text;assert.ok(runAm(d).has('PHASE_FUNCTION_INVALID'),'example does not use the frame');
+  assert.ok(!runAm(phaseAm(),{active:false}).has('PHASE_FUNCTION_MISSING'),'off: no function rule');
+  const plan=RP.dayPlan(ON,'2026-10-19',themes);assert.equal(plan.theme_id,'logistics');assert.ok(plan.functions.length>=2);
+  for(const th of themes.themes){assert.ok(th.functions.length>=2&&th.functions.length<=3,th.id);for(const f of th.functions)assert.ok(f.frames.length>=2&&f.frames.every(x=>x.id.includes('…')&&x.cn),th.id+'/'+f.id)}
 });
 
 // ---------- on: 18:00 任务课 ----------
@@ -153,6 +166,15 @@ t('on Sunday PM: week_words must come from this week and be tested',()=>{
   b.daily_test.questions[0].prompt+=' '+amWords.slice(0,6).join(' ');assert.ok(!run(b).has('PHASE_WEEKLY_TEST'),'6 week words, all tested');
   const c=base();c.daily_test.week_words=[...amWords.slice(0,5),'kata-lain'];c.daily_test.questions[0].prompt+=' '+c.daily_test.week_words.join(' ');assert.ok(run(c).has('PHASE_WEEKLY_TEST'),'word outside the week');
   const d=base();d.daily_test.week_words=amWords.slice(0,6);assert.equal(run(d).has('PHASE_WEEKLY_TEST'),amWords.slice(0,6).some(x=>!tested.includes(x)),'untested word refused');
+});
+t('on Sunday PM: exactly one open-speaking challenge naming 2+ of this week\'s functions',()=>{
+  const sun='2026-10-18',run=L=>runPm(L,ON,{date:sun,am:{...sameAm,date:sun}});
+  const base=()=>{const L=phasePm();L.date=sun;L.phase={theme_id:'online-shop',day_role:'weekly_test'};return L};
+  assert.ok(run(base()).has('PHASE_WEEKLY_CHALLENGE'),'challenge required on Sunday');
+  const ok=base();ok.rewrite.push({kind:'challenge',functions:['state-problem','offer-solution'],task:'t',reference_answer:'r',reference_cn:'c'});ok.rewrite=ok.rewrite.slice(-4);
+  assert.ok(!run(ok).has('PHASE_WEEKLY_CHALLENGE'));
+  const bad=base();bad.rewrite[1].kind='challenge';bad.rewrite[1].functions=['state-problem','ask-status'];assert.ok(run(bad).has('PHASE_WEEKLY_CHALLENGE'),'function of another week');
+  const mon=phasePm();assert.ok(!runPm(mon).has('PHASE_WEEKLY_CHALLENGE'),'not required on other days');
 });
 
 // ---------- lesson context (fix applies with the switch off too) ----------

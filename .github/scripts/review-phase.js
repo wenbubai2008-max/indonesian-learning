@@ -46,7 +46,7 @@ function dayPlan(phase,date,themes){
   const start=Date.parse(phase.theme_start_date+'T00:00:00Z'),at=Date.parse(date+'T00:00:00Z');
   if(new Date(start).getUTCDay()!==1||at<start)return null;
   const days=Math.round((at-start)/DAY),week=Math.floor(days/7),theme=themes.themes[week%themes.themes.length];
-  return {theme_id:theme.id,theme_cn:theme.cn,day_role:ROLES[days%7],week:week+1,scenes:theme.scenes||[]};
+  return {theme_id:theme.id,theme_cn:theme.cn,day_role:ROLES[days%7],week:week+1,scenes:theme.scenes||[],functions:theme.functions||[]};
 }
 /**
  * Confirmed learning goals (data/vocab-goals.json, written at activation from the learner-reviewed suggestions).

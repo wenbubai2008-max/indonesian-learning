@@ -228,11 +228,30 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
 
   // Review phase: every lesson names its theme and day role, which must match data/themes.json for this date.
   if(P){
-    const plan=RP.dayPlan(phase,date,themes===undefined?RP.loadThemes():themes);
+    const themeTable=themes===undefined?RP.loadThemes():themes,plan=RP.dayPlan(phase,date,themeTable);
     const ph=lesson.phase;
     check(ph&&typeof ph==="object"&&!Array.isArray(ph)&&str(ph.theme_id)&&str(ph.day_role),"PHASE_TAG_MISSING","Review phase: root phase {theme_id, day_role} required");
     if(plan&&ph)check(ph.theme_id===plan.theme_id&&ph.day_role===plan.day_role,"PHASE_TAG_MISMATCH","Review phase: expected theme "+plan.theme_id+" / "+plan.day_role+" for "+date);
+    // Weekly communication functions (2026-10-31, user decision): the week's theme lists 2-3 functions (state a problem,
+    // explain the cause, offer a solution ...) with fixed frames. At least one of the lesson's two lesson_focus patterns
+    // must be one of those frames (tagged with its function id) and its example must really use the frame, so the same
+    // few frames come back all week in different situations. They take no review-word slot.
+    const fns=plan&&Array.isArray(plan.functions)?plan.functions:[];
+    if(fns.length){
+      const fp=Array.isArray(lesson.lesson_focus?.patterns)?lesson.lesson_focus.patterns:[],tagged=fp.filter(p=>p&&p.function!==undefined);
+      const frameOk=(frame,example)=>{let at=0;const ex=norm(example);for(const part of String(frame).split("…").map(norm).filter(Boolean)){const i=ex.indexOf(part,at);if(i<0)return false;at=i+part.length;}return true;};
+      check(tagged.length>=1,"PHASE_FUNCTION_MISSING","Review phase: at least one lesson_focus pattern must be a frame of this week's functions ("+fns.map(f=>f.id).join(", ")+"), tagged with \"function\"");
+      tagged.forEach(p=>{
+        const f=fns.find(x=>x.id===p.function),frames=f&&Array.isArray(f.frames)?f.frames:[];
+        const fr=frames.find(x=>norm(x.id)===norm(p.pattern));
+        check(!!fr,"PHASE_FUNCTION_INVALID","pattern \""+p.pattern+"\" is not a frame of function "+p.function+" ("+frames.map(x=>x.id).join(" | ")+")");
+        if(fr)check(frameOk(fr.id,p.example),"PHASE_FUNCTION_INVALID","example does not use the frame \""+fr.id+"\": "+p.example);
+      });
+    }
     if(plan&&plan.day_role==="weekly_test"&&session==="pm"){
+      // Sunday open-speaking challenge: one rewrite with kind "challenge" naming 2+ of this week's functions it practises.
+      const ch=Array.isArray(lesson.rewrite)?lesson.rewrite.filter(r=>r&&r.kind==="challenge"):[];
+      check(ch.length===1&&Array.isArray(ch[0].functions)&&new Set(ch[0].functions).size>=2&&ch[0].functions.every(id=>fns.some(f=>f.id===id)),"PHASE_WEEKLY_CHALLENGE","Weekly test: exactly one rewrite with kind \"challenge\" listing 2+ of this week's function ids in functions");
       // Sunday PM test covers this theme week: 6-12 week words, each taught or reviewed in a lesson since Monday, each tested.
       const weekStart=new Date(Date.parse(date+"T00:00:00Z")-6*86400000).toISOString().slice(0,10);
       const weekSet=new Set();
