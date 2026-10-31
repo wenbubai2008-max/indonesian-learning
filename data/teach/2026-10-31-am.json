@@ -1,0 +1,748 @@
+{
+ "version": 1,
+ "title": "早课深讲 · 10月31日",
+ "intro": [
+  "今天早上的课叫《星期六早上要交给总部的报告》。新员工迪娜碰上网络差、打印机没纸，还被上司要求改一句话，最后九点五十分把报告发了出去。",
+  "今天只讲 5 样：[[ubah]] · [[saat]] · [[jaringan]] · [[Saat …, …]] · [[Ubah … supaya …]]"
+ ],
+ "items": [
+  {
+   "key": "ubah",
+   "name": "ubah",
+   "head": "ubah · 改；改一下",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Ubah kalimat ini supaya lebih jelas, ya.",
+      "cn": "把这句改一下，写得清楚一点。"
+     }
+    ],
+    "ask": "哈迪先生要迪娜做什么？",
+    "options": [
+     {
+      "t": "把这句话改清楚",
+      "ok": true,
+      "reply": [
+       "对。Ubah + 东西 = 把它改一下。"
+      ]
+     },
+     {
+      "t": "把这句话删掉",
+      "reply": [
+       "不对。删掉是 hapus；ubah 是在原句上改。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{ubah}} 是叫别人“改一下”的命令式：{{Ubah dulu jadwalnya.}} 说自己在改用 {{mengubah}}：{{Saya sedang mengubah laporan.}} 东西自己变了用 {{berubah}}：{{Jadwalnya berubah.}}"
+   ],
+   "simple": [
+    "[[Ubah]] + 东西 = 把它改一下。"
+   ],
+   "asks": [
+    {
+     "label": "ubah、berubah、ganti 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Ubah kalimat ini.",
+         "改（某物），叫别人改"
+        ],
+        [
+         "Jadwalnya berubah.",
+         "自己变了，不接宾语"
+        ],
+        [
+         "Ganti baju dulu.",
+         "换成另一个"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note",
+     "word": "ubah"
+    }
+   ],
+   "check": {
+    "q": [
+     "你提醒室友：[[Tolong ___ password Wi-Fi-nya, ya. Terlalu gampang ditebak.]]"
+    ],
+    "options": [
+     {
+      "t": "ubah",
+      "v": "right",
+      "why": [
+       "对。改密码，ubah password 很常用。"
+      ]
+     },
+     {
+      "t": "ganti",
+      "v": "ok",
+      "why": [
+       "也可以。改密码 ubah / ganti password 两种都说。"
+      ]
+     },
+     {
+      "t": "berubah",
+      "v": "wrong",
+      "why": [
+       "berubah 是“自己变了”，后面不接宾语。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "哪一句用得对？"
+     ],
+     "options": [
+      {
+       "t": "Jadwal kereta berubah lagi.",
+       "v": "right",
+       "why": [
+        "对。时间表自己变了，用 berubah。"
+       ]
+      },
+      {
+       "t": "Jadwal kereta ubah lagi.",
+       "v": "wrong",
+       "why": [
+        "时间表不是在“改别的东西”，要用 berubah。"
+       ]
+      },
+      {
+       "t": "Tolong berubah jadwalnya.",
+       "v": "wrong",
+       "why": [
+        "后面有宾语 jadwalnya，要用 ubah。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "请同事：“麻烦把时间改到周四吧。”"
+    ],
+    "kw": "ubah · jadwalnya · hari Kamis",
+    "skel": "Tolong ____ jadwalnya ke hari ____, ya.",
+    "ref": "Tolong ubah jadwalnya ke hari Kamis, ya."
+   },
+   "recall": {
+    "prompt": [
+     "跟理发师说：“发型稍微改一下，别剪太短。”"
+    ],
+    "kw": "ubah · model rambutnya · terlalu pendek",
+    "skel": "Mas, tolong ____ sedikit model ____, jangan terlalu ____.",
+    "ref": "Mas, tolong ubah sedikit model rambutnya, jangan terlalu pendek."
+   },
+   "final": {
+    "cn": "“你改地址了吗？包裹还寄到旧地址呢。”",
+    "ref": "Kamu sudah ubah alamatnya belum? Paketnya masih dikirim ke alamat lama."
+   },
+   "remind": "Ubah + 东西 = 改一下；自己变了用 berubah。"
+  },
+  {
+   "key": "saat",
+   "name": "saat",
+   "head": "saat · ……的时候",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "词卡例句",
+      "id": "Saat masih remaja, Ayah sering membantu Kakek menjual sayur di pasar.",
+      "cn": "爸爸十几岁的时候，常常帮爷爷在市场卖菜。"
+     }
+    ],
+    "ask": "这句说的是什么时候的事？",
+    "options": [
+     {
+      "t": "爸爸十几岁的时候",
+      "ok": true,
+      "reply": [
+       "对。Saat + 情况 = ……的时候。"
+      ]
+     },
+     {
+      "t": "爸爸现在每天做的事",
+      "reply": [
+       "不对。masih remaja 是“还是少年的时候”，说的是过去。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{saat}} + 情况 = ……的时候：{{saat hujan}}、{{saat makan}}。{{saat ini}} = 目前，比 {{sekarang}} 正式。跟朋友说话常用 {{pas}}：{{Pas aku sampai, tokonya udah tutup.}}"
+   ],
+   "simple": [
+    "[[saat]] + 情况 = ……的时候。"
+   ],
+   "asks": [
+    {
+     "label": "saat、waktu、pas 怎么选？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "saat / waktu hujan",
+         "下雨的时候（两个都行）"
+        ],
+        [
+         "Saya tidak punya waktu.",
+         "我没时间（“时间”只能用 waktu）"
+        ],
+        [
+         "Pas aku sampai, …",
+         "口语：……的时候"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note",
+     "word": "saat"
+    }
+   ],
+   "check": {
+    "q": [
+     "同事问公司在不在招人，你说：[[___ ini kantor kami belum menerima karyawan baru.]]"
+    ],
+    "options": [
+     {
+      "t": "Saat",
+      "v": "right",
+      "why": [
+       "对。Saat ini = 目前，正式场合很常用。"
+      ]
+     },
+     {
+      "t": "Sekarang",
+      "v": "ok",
+      "why": [
+       "也可以，Sekarang ini 更口语。"
+      ]
+     },
+     {
+      "t": "Pas",
+      "v": "wrong",
+      "why": [
+       "pas 后面要接情况（pas aku sampai），不说 pas ini。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "你跟同事说：[[Maaf, saya tidak punya ___ untuk makan siang hari ini.]]"
+     ],
+     "options": [
+      {
+       "t": "waktu",
+       "v": "right",
+       "why": [
+        "对。“时间”只能用 waktu。"
+       ]
+      },
+      {
+       "t": "saat",
+       "v": "wrong",
+       "why": [
+        "saat 是“……的时候、时刻”，不能当“时间”用。"
+       ]
+      },
+      {
+       "t": "jam",
+       "v": "wrong",
+       "why": [
+        "tidak punya jam 是“没有手表”。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟同事说：“下雨的时候，路上特别堵。”"
+    ],
+    "kw": "Saat hujan · macet",
+    "skel": "Saat ____, jalanan ____ sekali.",
+    "ref": "Saat hujan, jalanan macet sekali."
+   },
+   "recall": {
+    "prompt": [
+     "叮嘱家人：“吃饭的时候别玩手机。”"
+    ],
+    "kw": "saat makan · main HP",
+    "skel": "Jangan main HP ____ makan, ya.",
+    "ref": "Jangan main HP saat makan, ya."
+   },
+   "final": {
+    "cn": "“目前我在一家银行上班。”",
+    "ref": "Saat ini saya bekerja di sebuah bank."
+   },
+   "remind": "saat + 情况 = ……的时候；“时间”只能用 waktu。"
+  },
+  {
+   "key": "jaringan",
+   "name": "jaringan",
+   "head": "jaringan · 网络；关系网",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Sayangnya, jaringan internet di kantor sedang buruk.",
+      "cn": "可惜办公室的网络很差。"
+     }
+    ],
+    "ask": "迪娜遇到了什么麻烦？",
+    "options": [
+     {
+      "t": "办公室的网络很差",
+      "ok": true,
+      "reply": [
+       "对。jaringan internet = 网络。"
+      ]
+     },
+     {
+      "t": "办公室的电脑坏了",
+      "reply": [
+       "不对。坏的不是电脑，是 jaringan（网络）。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{jaringan}} 最常用来说网络：{{jaringan internet}}、{{jaringan Wi-Fi}}。也可以指关系网、连锁网点：{{Dia punya jaringan yang luas.}}（他人脉很广。）"
+   ],
+   "simple": [
+    "[[jaringan]] = 网络；也指人脉、网点。"
+   ],
+   "asks": [
+    {
+     "label": "jaringan、sinyal、koneksi 有什么不同？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "jaringan internet",
+         "网络（整体）"
+        ],
+        [
+         "sinyal",
+         "手机信号"
+        ],
+        [
+         "koneksi",
+         "连接（连上没连上）"
+        ]
+       ]
+      },
+      "日常说“网不好”，三个都常听到：{{Jaringannya lagi jelek.}} / {{Sinyalnya jelek.}}"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "朋友视频一直卡，你说：[[Kayaknya ___ di sini lagi jelek, deh.]]"
+    ],
+    "options": [
+     {
+      "t": "jaringan",
+      "v": "right",
+      "why": [
+       "对。说网络不好，jaringannya jelek 很常用。"
+      ]
+     },
+     {
+      "t": "sinyal",
+      "v": "ok",
+      "why": [
+       "也可以，说的是手机信号差。"
+      ]
+     },
+     {
+      "t": "jalan",
+      "v": "wrong",
+      "why": [
+       "jalan 是“路”，跟网络无关。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Perusahaan itu punya jaringan toko di berbagai kota.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "那家公司在各个城市都有连锁店",
+       "v": "right",
+       "why": [
+        "对。jaringan toko = 连锁网点。"
+       ]
+      },
+      {
+       "t": "那家公司的网速很快",
+       "v": "wrong",
+       "why": [
+        "这里的 jaringan 跟 toko 连用，说的是网点，不是网速。"
+       ]
+      },
+      {
+       "t": "那家公司打算在各城市开网店",
+       "v": "wrong",
+       "why": [
+        "句子说的是已经有（punya），也没提网店。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟同事说：“今天网络很慢，文件还没下完。”"
+    ],
+    "kw": "jaringannya · lambat · selesai diunduh",
+    "skel": "Hari ini jaringannya ____, filenya belum ____ diunduh.",
+    "ref": "Hari ini jaringannya lambat, filenya belum selesai diunduh."
+   },
+   "recall": {
+    "prompt": [
+     "在酒店问前台：“这里的 Wi-Fi 网络叫什么名字？”"
+    ],
+    "kw": "nama jaringan · Wi-Fi · hotel ini",
+    "skel": "Permisi, nama ____ Wi-Fi di ____ ini apa, ya?",
+    "ref": "Permisi, nama jaringan Wi-Fi di hotel ini apa, ya?"
+   },
+   "final": {
+    "cn": "“他在雅加达的人脉很广。”",
+    "ref": "Dia punya jaringan yang luas di Jakarta."
+   },
+   "remind": "jaringan = 网络（上网）；也指人脉、连锁网点。"
+  },
+  {
+   "key": "saat-pola",
+   "name": "Saat …, …",
+   "head": "Saat …, … · 在……的时候，……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Saat Dina mau mencetak laporan untuk Pak Hadi, kertas di printer habis, jadi ia mengambil kertas baru dari gudang.",
+      "cn": "迪娜正要把报告打印出来给哈迪先生看时，打印机里的纸用完了，她只好去仓库拿新纸。"
+     }
+    ],
+    "ask": "纸是什么时候用完的？",
+    "options": [
+     {
+      "t": "迪娜正要打印的时候",
+      "ok": true,
+      "reply": [
+       "对。Saat … mau … = 正要……的时候。"
+      ]
+     },
+     {
+      "t": "报告发出去以后",
+      "reply": [
+       "不对。Saat 后面说的是“正要打印”那一刻。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "逗号前的 {{Saat …}} 交代时间，逗号后说那时发生的事。常和 {{mau}}（正要）连用：{{Saat saya mau keluar, hujan turun.}}（我正要出门时下雨了。）"
+   ],
+   "simple": [
+    "[[Saat A, B]] = 在 A 的时候，B。"
+   ],
+   "asks": [
+    {
+     "label": "Saat 和 Setelah 有什么不同？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      "saat 是同一时间，setelah 是之后：{{Setelah makan, kami jalan-jalan.}}（吃完饭以后去散步。）"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "“我正要睡觉的时候，手机响了。”哪一句对？"
+    ],
+    "options": [
+     {
+      "t": "Saat saya mau tidur, HP saya berbunyi.",
+      "v": "right",
+      "why": [
+       "对。先交代时间，再说发生的事。"
+      ]
+     },
+     {
+      "t": "Waktu aku mau tidur, HP-ku bunyi.",
+      "v": "ok",
+      "why": [
+       "也可以，口语说法，waktu 和 saat 在这里可以互换。"
+      ]
+     },
+     {
+      "t": "Saat HP saya berbunyi, saya mau tidur.",
+      "v": "wrong",
+      "why": [
+       "顺序反了，变成“手机响的时候我想睡”。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Saat Ibu pulang, kami sudah selesai makan.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "妈妈回来的时候，我们已经吃完了",
+       "v": "right",
+       "why": [
+        "对。"
+       ]
+      },
+      {
+       "t": "妈妈回来以后我们才吃饭",
+       "v": "wrong",
+       "why": [
+        "sudah selesai makan 是“已经吃完”。"
+       ]
+      },
+      {
+       "t": "我们吃完饭，妈妈才出门",
+       "v": "wrong",
+       "why": [
+        "pulang 是回家，不是出门。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "对同事说：“我到办公室的时候，大家已经在等了。”"
+    ],
+    "kw": "Saat · sampai di kantor · sudah menunggu",
+    "skel": "Saat saya ____ di kantor, semua orang sudah ____.",
+    "ref": "Saat saya sampai di kantor, semua orang sudah menunggu."
+   },
+   "recall": {
+    "prompt": [
+     "跟朋友说：“我在超市排队的时候，碰到了以前的老师。”"
+    ],
+    "kw": "Saat antre · ketemu",
+    "skel": "Saat ____ di supermarket, aku ____ guru lamaku.",
+    "ref": "Saat antre di supermarket, aku ketemu guru lamaku.",
+    "notes": [
+     "ketemu = bertemu（口语）"
+    ]
+   },
+   "final": {
+    "cn": "“我们正要出发的时候，奶奶打电话来了。”",
+    "ref": "Saat kami mau berangkat, Nenek menelepon."
+   },
+   "remind": "Saat A, B：先说什么时候，再说发生了什么。"
+  },
+  {
+   "key": "ubah-pola",
+   "name": "Ubah … supaya …",
+   "head": "Ubah … supaya … · 把……改一下，好让……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Ubah kalimat ini supaya lebih jelas, ya.",
+      "cn": "把这句改一下，写得清楚一点。"
+     }
+    ],
+    "ask": "supaya 后面说的是什么？",
+    "options": [
+     {
+      "t": "改的目的：更清楚",
+      "ok": true,
+      "reply": [
+       "对。supaya 后面说想达到的效果。"
+      ]
+     },
+     {
+      "t": "改的原因：句子太长",
+      "reply": [
+       "不对。原因要用 karena；supaya 说的是目的。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "先说改什么，{{supaya}} 后面说想要的效果：{{Ubah warnanya supaya lebih cerah.}} 跟朋友说话时 supaya 常换成 {{biar}}。"
+   ],
+   "simple": [
+    "[[Ubah A supaya B]] = 把 A 改一下，好让 B。"
+   ],
+   "asks": [
+    {
+     "label": "supaya 和 karena 有什么不同？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      "supaya 说目的（想要的结果），karena 说原因（已经有的理由）：{{Saya pulang cepat karena hujan.}}（因为下雨我早回家。）"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "“把字改大一点，这样奶奶看得清。”哪一句对？"
+    ],
+    "options": [
+     {
+      "t": "Ubah hurufnya jadi lebih besar supaya Nenek bisa membaca.",
+      "v": "right",
+      "why": [
+       "对。先说改什么，再说目的。"
+      ]
+     },
+     {
+      "t": "Ubah hurufnya jadi lebih besar biar Nenek bisa baca.",
+      "v": "ok",
+      "why": [
+       "也可以，口语说法，biar = supaya。"
+      ]
+     },
+     {
+      "t": "Ubah hurufnya jadi lebih besar karena Nenek bisa membaca.",
+      "v": "wrong",
+      "why": [
+       "karena 是原因，这里要说目的。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "[[Ubah jamnya supaya tidak bentrok dengan kelas.]]是什么意思？"
+     ],
+     "options": [
+      {
+       "t": "把时间改一下，免得跟上课撞上",
+       "v": "right",
+       "why": [
+        "对。supaya tidak … = 免得……"
+       ]
+      },
+      {
+       "t": "因为跟上课冲突，所以时间变了",
+       "v": "wrong",
+       "why": [
+        "Ubah 是叫人去改，supaya 说的是目的，不是原因。"
+       ]
+      },
+      {
+       "t": "别改时间，会跟上课冲突",
+       "v": "wrong",
+       "why": [
+        "句子是叫人改，不是叫人别改。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "对设计师说：“把颜色改一下，让海报更吸引人。”"
+    ],
+    "kw": "Ubah warnanya · supaya · lebih menarik",
+    "skel": "Ubah ____ supaya posternya lebih ____.",
+    "ref": "Ubah warnanya supaya posternya lebih menarik."
+   },
+   "recall": {
+    "prompt": [
+     "跟室友说：“把闹钟改到六点，这样我们不会迟到。”"
+    ],
+    "kw": "Ubah alarmnya · jam enam · biar",
+    "skel": "Ubah ____ ke jam enam, biar kita nggak ____.",
+    "ref": "Ubah alarmnya ke jam enam, biar kita nggak telat.",
+    "notes": [
+     "biar = supaya，nggak = tidak，telat = terlambat（口语）"
+    ]
+   },
+   "final": {
+    "cn": "“把句子改短一点，这样读者容易懂。”",
+    "ref": "Ubah kalimatnya jadi lebih pendek supaya pembaca mudah mengerti."
+   },
+   "remind": "Ubah A supaya B：先说改什么，再说目的；口语 supaya = biar。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "其余新词词卡里都有完整讲解，这里只扫一眼。不熟的点一下，标出来给自己看。"
+  ],
+  "words": [
+   "pegawai",
+   "kertas",
+   "khususnya",
+   "terbuka",
+   "buruk",
+   "kalimat",
+   "arti",
+   "sebut"
+  ]
+ },
+ "reading": [
+  {
+   "key": "mengunduh",
+   "sentence": "Dina tidak bisa mengunduh data penjualan, jadi ia memakai hotspot dari HP Raka, karyawan bagian gudang.",
+   "cn": "迪娜下载不了销售数据，只好用仓库员工拉卡手机的热点。",
+   "chunks": [
+    [
+     "Dina tidak bisa mengunduh data penjualan,",
+     "迪娜下载不了销售数据",
+     "mengunduh = 下载（复习词）"
+    ],
+    [
+     "jadi ia memakai hotspot",
+     "所以她用了热点"
+    ],
+    [
+     "dari HP Raka,",
+     "拉卡手机的"
+    ],
+    [
+     "karyawan bagian gudang.",
+     "仓库部门的员工",
+     "karyawan bagian … = ……部门的员工（复习词）"
+    ]
+   ],
+   "steal": [
+    "值得借用的是 [[…, jadi …]]（……，所以……）：{{Hujannya deras, jadi saya naik taksi.}}（雨很大，所以我打车。）"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今天的输出题，缩短版）：跟朋友讲一个学习或工作中的小麻烦，以及你怎么解决的。"
+   ],
+   "kw": "Saat · buruk · kalimat",
+   "skel": "Saat saya mau mengirim tugas, Wi-Fi di kos sedang ____, jadi saya ke kafe. Di sana saya mengubah dua ____ yang kurang jelas.",
+   "ref": "Saat saya mau mengirim tugas, Wi-Fi di kos sedang buruk, jadi saya ke kafe. Di sana saya mengubah dua kalimat yang kurang jelas.",
+   "notes": [
+    "整页的输出题有更长的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
