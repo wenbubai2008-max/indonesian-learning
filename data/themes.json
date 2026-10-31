@@ -1,19 +1,68 @@
 {
- "version": 1,
- "note": "复习阶段主题表（休眠，data/review-phase.json 启用后才使用）。从 theme_start_date（周一）起每周一个主题，按顺序轮换。day_roles 是一周七天的分工。",
+ "version": 2,
+ "note": "复习阶段主题表（休眠，data/review-phase.json 启用后才使用）。从 theme_start_date（周一）起每周一个主题，按顺序轮换。day_roles 是一周七天的分工；functions 是这一周反复练的交流动作，每个动作配 2–3 个固定句型（…是要填的部分）。",
  "day_roles": {
   "core": "周一到周三：主题的核心场景，把这个场景最常用的说法用熟",
   "variation": "周四、周五：同一主题换一个情况（出问题、改主意、对方不配合），旧说法换着用",
   "transfer": "周六：把本周的说法搬到别的主题场景里用",
-  "weekly_test": "周日：早课照常复习，晚课的每日测试改为本周小测（daily_test.week_words 列出考到的本周词）"
+  "weekly_test": "周日：早课照常复习；晚课的每日测试改为本周小测（daily_test.week_words），另加一个情景开口挑战（rewrite kind=challenge）"
  },
  "themes": [
-  {"id": "online-shop", "cn": "网店客服", "scenes": ["问货和下单", "退换货和投诉", "催单和改地址"]},
-  {"id": "logistics", "cn": "物流", "scenes": ["寄件和报价", "查件和延误", "签收和丢件"]},
-  {"id": "government", "cn": "政府办事", "scenes": ["准备材料", "窗口排队和询问", "被退回补件"]},
-  {"id": "health", "cn": "看病健康", "scenes": ["挂号和描述症状", "药店买药", "复诊和请假"]},
-  {"id": "housing", "cn": "租房生活", "scenes": ["看房和谈价", "报修和邻居", "退租和押金"]},
-  {"id": "work", "cn": "工作沟通", "scenes": ["安排任务和催进度", "开会表达意见", "出错道歉和补救"]},
-  {"id": "friends", "cn": "朋友聊天表达意见", "scenes": ["约人和改约", "赞同和反对", "安慰和劝说"]}
+  {
+   "id": "online-shop", "cn": "网店客服", "scenes": ["问货和下单", "退换货和投诉", "催单和改地址"],
+   "functions": [
+    {"id": "state-problem", "cn": "说明问题", "frames": [{"id": "Menurut …, … seharusnya …", "cn": "按……，……本该……"}, {"id": "… belum …, padahal …", "cn": "……还没……，可是……"}]},
+    {"id": "explain-cause", "cn": "解释原因", "frames": [{"id": "… soalnya …", "cn": "……，因为……（口语）"}, {"id": "Penyebab utama … adalah …", "cn": "……的主要原因是……"}, {"id": "Ternyata …", "cn": "原来……"}]},
+    {"id": "offer-solution", "cn": "提出办法", "frames": [{"id": "… bebas pilih: … atau …", "cn": "……可以随便选：……或者……"}, {"id": "Kalau …, kami bisa …", "cn": "如果……，我们可以……"}]}
+   ]
+  },
+  {
+   "id": "logistics", "cn": "物流", "scenes": ["寄件和报价", "查件和延误", "签收和丢件"],
+   "functions": [
+    {"id": "ask-status", "cn": "询问进度", "frames": [{"id": "… sudah sampai mana, ya?", "cn": "……到哪儿了？"}, {"id": "Kira-kira kapan …?", "cn": "大概什么时候……？"}]},
+    {"id": "confirm-info", "cn": "确认信息", "frames": [{"id": "Jadi …, betul?", "cn": "所以……，对吗？"}, {"id": "Boleh saya cek dulu …?", "cn": "我可以先核对一下……吗？"}]},
+    {"id": "urge-politely", "cn": "委婉催促", "frames": [{"id": "Mohon dibantu …, ya.", "cn": "麻烦帮忙……"}, {"id": "Kalau bisa, … sebelum …", "cn": "如果可以的话，……在……之前"}]}
+   ]
+  },
+  {
+   "id": "government", "cn": "政府办事", "scenes": ["准备材料", "窗口排队和询问", "被退回补件"],
+   "functions": [
+    {"id": "ask-requirement", "cn": "问要求", "frames": [{"id": "Syaratnya apa saja untuk …?", "cn": "办……需要哪些条件？"}, {"id": "Apakah saya perlu …?", "cn": "我需要……吗？"}]},
+    {"id": "explain-situation", "cn": "说明情况", "frames": [{"id": "Saya sudah …, tapi …", "cn": "我已经……了，可是……"}, {"id": "Masalahnya, …", "cn": "问题是，……"}]},
+    {"id": "make-request", "cn": "提出请求", "frames": [{"id": "Bisa tolong …?", "cn": "能请您……吗？"}, {"id": "Boleh saya …?", "cn": "我可以……吗？"}]}
+   ]
+  },
+  {
+   "id": "health", "cn": "看病健康", "scenes": ["挂号和描述症状", "药店买药", "复诊和请假"],
+   "functions": [
+    {"id": "describe-symptom", "cn": "描述症状", "frames": [{"id": "Sejak …, saya …", "cn": "从……开始，我……"}, {"id": "Rasanya …, apalagi kalau …", "cn": "感觉……，尤其是……的时候"}]},
+    {"id": "ask-advice", "cn": "问建议", "frames": [{"id": "Sebaiknya saya … atau …?", "cn": "我最好……还是……？"}, {"id": "Apa boleh …?", "cn": "可以……吗？"}]},
+    {"id": "ask-leave", "cn": "请假说明", "frames": [{"id": "Saya izin … karena …", "cn": "我请假……，因为……"}, {"id": "Kalau …, saya akan …", "cn": "如果……，我会……"}]}
+   ]
+  },
+  {
+   "id": "housing", "cn": "租房生活", "scenes": ["看房和谈价", "报修和邻居", "退租和押金"],
+   "functions": [
+    {"id": "negotiate", "cn": "谈条件", "frames": [{"id": "Kalau …, bisa kurang?", "cn": "如果……，能便宜点吗？"}, {"id": "Harganya sudah termasuk …?", "cn": "价格已经包括……了吗？"}]},
+    {"id": "report-problem", "cn": "报告问题", "frames": [{"id": "… dari kemarin …", "cn": "……从昨天起就……"}, {"id": "… seharusnya …, tapi …", "cn": "……本该……，可是……"}]},
+    {"id": "settle-agreement", "cn": "敲定约定", "frames": [{"id": "Jadi kita sepakat …, ya?", "cn": "那我们说好……，对吧？"}, {"id": "Paling lambat …", "cn": "最迟……"}]}
+   ]
+  },
+  {
+   "id": "work", "cn": "工作沟通", "scenes": ["安排任务和催进度", "开会表达意见", "出错道歉和补救"],
+   "functions": [
+    {"id": "assign-task", "cn": "安排任务", "frames": [{"id": "Tolong … sebelum …", "cn": "请在……之前……"}, {"id": "Bisa minta tolong …?", "cn": "能麻烦你……吗？"}]},
+    {"id": "give-opinion", "cn": "表达意见", "frames": [{"id": "Menurut saya, …", "cn": "我认为……"}, {"id": "Saya setuju, tapi …", "cn": "我同意，不过……"}]},
+    {"id": "apologize-fix", "cn": "道歉补救", "frames": [{"id": "Maaf, … gara-gara saya.", "cn": "抱歉，……都怪我。"}, {"id": "Supaya tidak terulang, …", "cn": "为了不再发生，……"}]}
+   ]
+  },
+  {
+   "id": "friends", "cn": "朋友聊天表达意见", "scenes": ["约人和改约", "赞同和反对", "安慰和劝说"],
+   "functions": [
+    {"id": "invite-change", "cn": "约人改约", "frames": [{"id": "Gimana kalau …?", "cn": "……怎么样？（口语）"}, {"id": "Sori, … nggak jadi …, soalnya …", "cn": "抱歉，……去不成……了，因为……（口语）"}]},
+    {"id": "agree-disagree", "cn": "赞同和反对", "frames": [{"id": "Aku setuju, tapi …", "cn": "我同意，不过……"}, {"id": "Masa sih …?", "cn": "不会吧，……？"}]},
+    {"id": "comfort-persuade", "cn": "安慰劝说", "frames": [{"id": "Udah, nggak apa-apa, …", "cn": "好啦，没关系，……"}, {"id": "Mending … daripada …", "cn": "……总比……好（口语）"}]}
+   ]
+  }
  ]
 }

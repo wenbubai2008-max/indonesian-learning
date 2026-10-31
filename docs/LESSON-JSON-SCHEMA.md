@@ -58,7 +58,8 @@ Off by default. Applies only when `data/review-phase.json` has `active: true` an
 - Both sessions: root `phase: {theme_id, day_role}` matching `data/themes.json` for the date (`PHASE_TAG_MISSING`, `PHASE_TAG_MISMATCH`).
 - **08:00**: `vocab` 5–7 cards (remaining new words first, the rest listed in `cycle_vocab`), reading 60–100 words, `review_cards` required (`PHASE_AM_CONTRAST_MISSING`).
 - **18:00**: `vocab` 6–8 (new = all remaining, at most 3; review 4–6; application 1–3), dialogue 8–12 lines with `dialogue.twist` = index of the turn where the situation changes, and at least one `rewrite[]` with `kind: "twist"` (`PHASE_PM_TWIST`).
-- **Sunday 18:00** (`day_role: weekly_test`): `daily_test.week_words` lists 6–12 words taught or reviewed since Monday, each tested by a question (`PHASE_WEEKLY_TEST`).
+- **Sunday 18:00** (`day_role: weekly_test`): `daily_test.week_words` lists 6–12 words taught or reviewed since Monday, each tested by a question (`PHASE_WEEKLY_TEST`). Exactly one `rewrite[]` has `kind: "challenge"` and `functions: [ids]` naming 2+ of this week's functions (`PHASE_WEEKLY_CHALLENGE`).
+- **Weekly functions** (both sessions): at least one `lesson_focus.patterns[]` carries `function: "<id>"`; its `pattern` is exactly one of that function's frames in `data/themes.json` for this week, and its `example` uses the frame's fixed parts in order (`PHASE_FUNCTION_MISSING`, `PHASE_FUNCTION_INVALID`).
 - Counts come from `review-phase.json` `counts`; `PM_CORE_COUNT`, `PM_GROUP_COUNT`, `AM_CORE_COUNT`, `READING_INVALID`, `PM_DIALOGUE_INVALID` report them.
 
 ## 可选的深讲数据 `lesson_focus.teach`（初稿，2026-10-19）

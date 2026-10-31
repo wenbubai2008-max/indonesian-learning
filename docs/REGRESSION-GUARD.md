@@ -593,6 +593,7 @@
 - **共用模块** `.github/scripts/review-phase.js`：`on()` 只在 `active===true` 且课程日期 ≥ `activated_at` 时为真；`counts()` 关闭时返回原来写死的数（AM 10 张、阅读 80–120、PM 10–12 / 3–4 / 4–6 / 2–3、对话 ≥4）；`goals()` 关闭时不打开 `data/vocab-goals.json`。
 - **接入点**：`validate-lesson-candidate.js`（数量、表达难点卡、转折、主题标签、周日小测）、`rank-review-candidates.js` / `review-rotation.js`（循环卡数、复习数、“会认”词移出核心卡、“要快”加分、复现最低数）、`build-lesson-context.js`、`regression-guard.js` 的真实课程数量检查。
 - **主题表** `data/themes.json`：7 个主题，周一至周三核心、周四周五变化、周六迁移、周日小测。
+- **本周交流动作（2026-10-31 用户决定）**：每个主题 2–3 个交流动作、每个动作 2–3 个固定句型；打开后每节课至少 1 个重点句型逐字是本周句型（PHASE_FUNCTION_*），周日晚课另有 1 个开口挑战（PHASE_WEEKLY_CHALLENGE）。关闭时都不检查。
 - **说明书**：早课、晚课说明书先运行 `review-phase.js`，`active=false` 时不读 `REVIEW-PHASE.md`。
 - **顺带修好的复习循环问题**（原 10-14 规则，新词用完后会自动启用）：晚课 0 个新词时 `build-lesson-context.js` 不再报 HISTORY_INVALID；守卫的最新晚课检查接受循环期 0–2 个新词、4–9 个复习；守卫把早课 `cycle_vocab` 当作复习过的老词，和校验器一致。
 - **测试**：`test-review-phase.js`（关闭 = 原数量、不读目标文件、真实课程结果不变；打开后各项新规则；主题轮换；排序跳过“会认”词；上下文接受 0 新词晚课）。
