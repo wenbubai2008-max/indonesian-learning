@@ -1,0 +1,829 @@
+{
+  "version": 1,
+  "title": "晚课深讲 · 10月31日",
+  "intro": [
+    "今晚的课叫《每周日大扫除》。Lestari 太太家后巷一下雨就积水，原来是水沟被垃圾堵了；居委会主任定了新规定，每户每周日派人大扫除。有人说不公平，主任想了个有分寸的办法：来不了可以捐钱请工人。",
+    "今晚只讲 5 样：[[dimaksudkan]] · [[adil]] · [[tampak]] · [[… dimaksudkan agar …]] · [[Dari luar, … tampak …, padahal …]]"
+  ],
+  "items": [
+    {
+      "key": "maksud",
+      "name": "dimaksudkan",
+      "head": "dimaksudkan · 意在；目的（本意）是",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Kebijakan itu dimaksudkan agar air hujan bisa mengalir lagi ke sungai.",
+            "cn": "这项规定的目的是让雨水能重新流进河里。"
+          }
+        ],
+        "ask": "这句话讲的是新规定的什么？",
+        "options": [
+          {
+            "t": "规定的目的（制定的人想让它起什么作用）",
+            "reply": [
+              "对。dimaksudkan agar … = 本意是让……。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "规定是谁定的",
+            "reply": [
+              "不是。谁定的会说 dibuat oleh Pak RT；dimaksudkan 讲的是目的。"
+            ]
+          },
+          {
+            "t": "规定什么时候开始",
+            "reply": [
+              "不是。开始时间会说 mulai berlaku；这里讲的是目的。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "[[dimaksudkan]] 说的是“制定的人想让它起什么作用”。后面接 {{agar}} / {{supaya}}（让……）、{{untuk}}（用来……）、{{sebagai}}（当作……）。主语是人时用 {{bermaksud}}（打算）；{{yang dimaksud}}（所说的那个）没有 -kan。"
+      ],
+      "simple": [
+        "[[X dimaksudkan agar …]] = X 的目的（本意）是让……"
+      ],
+      "asks": [
+        {
+          "label": "换个角度",
+          "remedy": true,
+          "reply": [
+            {
+              "table": [
+                [
+                  "Saya bermaksud pindah.",
+                  "我打算搬家。（主语是人）"
+                ],
+                [
+                  "Aturan ini dimaksudkan agar kita aman.",
+                  "这条规定的目的是让我们安全。"
+                ],
+                [
+                  "Rumah yang dimaksud ada di ujung gang.",
+                  "说的那栋房子在巷子尽头。"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Lampu di gang itu ___ agar warga tidak takut pulang malam.]]",
+          "（巷子里那些灯，本意是让居民晚上回家不害怕。）"
+        ],
+        "options": [
+          {
+            "t": "dimaksudkan",
+            "v": "right",
+            "why": [
+              "对。灯本身不会“打算”，是装灯的人赋予它目的。"
+            ]
+          },
+          {
+            "t": "bermaksud",
+            "v": "wrong",
+            "why": [
+              "bermaksud 的主语要是人（Pak RT bermaksud …），灯不会“打算”。"
+            ]
+          },
+          {
+            "t": "dipasang",
+            "v": "ok",
+            "why": [
+              "也可以：“装灯是为了……”，日常叙述常这么说，只是不强调“本意”。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。你跟新同事解释：“这个群的目的是让大家快速沟通。”最自然的说法："
+          ],
+          "options": [
+            {
+              "t": "Grup ini dimaksudkan agar kita bisa cepat berkomunikasi.",
+              "v": "right",
+              "why": [
+                "对。说群的用途和本意。"
+              ]
+            },
+            {
+              "t": "Grup ini bermaksud agar kita bisa cepat berkomunikasi.",
+              "v": "wrong",
+              "why": [
+                "群不会“打算”，bermaksud 只用在人身上。"
+              ]
+            },
+            {
+              "t": "Grup ini tujuannya biar kita bisa cepat komunikasi.",
+              "v": "ok",
+              "why": [
+                "也可以，是聊天时的口语说法（biar = agar）。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你跟孩子解释：“这条规定的目的是让你早点睡。”先说出声。"
+        ],
+        "kw": "dimaksudkan · agar",
+        "skel": "Aturan ini ____ ____ kamu tidur lebih awal.",
+        "ref": "Aturan ini dimaksudkan agar kamu tidur lebih awal."
+      },
+      "recall": {
+        "prompt": [
+          "图书馆贴出新规定，不许带食物进去。你跟朋友说：“不许带食物，是为了让书保持干净。”"
+        ],
+        "kw": "dimaksudkan · supaya",
+        "skel": "Larangan membawa makanan ____ ____ bukunya tetap bersih.",
+        "ref": "Larangan membawa makanan dimaksudkan supaya bukunya tetap bersih."
+      },
+      "final": {
+        "cn": "（对客人）“这个折扣的本意是感谢老顾客。”",
+        "ref": "Diskon ini dimaksudkan untuk berterima kasih kepada pelanggan tetap."
+      },
+      "remind": "X dimaksudkan agar / untuk / sebagai … = X 的本意是……；主语是人用 bermaksud。"
+    },
+    {
+      "key": "adil",
+      "name": "adil",
+      "head": "adil · 公平的；公正的",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "\"Itu tidak adil,\" kata Pak Yudi, salah satu dari mereka.",
+            "cn": "“这不公平。”Yudi 先生说，他就是其中之一。"
+          }
+        ],
+        "ask": "Yudi 先生为什么觉得不公平？",
+        "options": [
+          {
+            "t": "他周末常去外地，每周日派人对他很难做到",
+            "reply": [
+              "对。他就是“周末常出差”的那一批人，所以觉得规定对他不公平。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "他觉得大扫除没有用",
+            "reply": [
+              "课文没这么说。他不满的是规定对他不公平，不是说没用。"
+            ]
+          },
+          {
+            "t": "他嫌捐的钱太多",
+            "reply": [
+              "不是。捐钱是主任听完抗议后才提出的办法。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "[[adil]] = 公平、合理。最常听到的是抱怨：{{Itu tidak adil}}，口语 {{Nggak adil, dong!}} 公平不等于平均：{{sama rata}} 是“每人一样多”，按情况多给一点也可以是 adil。名词是 {{keadilan}}（公正）。"
+      ],
+      "simple": [
+        "[[adil]] = 公平；tidak adil / nggak adil = 不公平"
+      ],
+      "asks": [
+        {
+          "label": "换个角度",
+          "remedy": true,
+          "reply": [
+            {
+              "table": [
+                [
+                  "Pembagiannya adil.",
+                  "分得公平。"
+                ],
+                [
+                  "Dibagi sama rata.",
+                  "平均分，每人一样多。"
+                ],
+                [
+                  "Itu nggak adil!",
+                  "这不公平！"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Kenapa cuma aku yang cuci piring tiap hari? Ini ___!]]",
+          "（为什么每天都只有我洗碗？这不公平！）"
+        ],
+        "options": [
+          {
+            "t": "nggak adil",
+            "v": "right",
+            "why": [
+              "对。抱怨分工不公平，最常用的说法。"
+            ]
+          },
+          {
+            "t": "nggak bijak",
+            "v": "wrong",
+            "why": [
+              "bijak 是“明智、有分寸”，说的是人的判断，这里是在抱怨分工。"
+            ]
+          },
+          {
+            "t": "nggak sama",
+            "v": "wrong",
+            "why": [
+              "nggak sama 是“不一样”，没有“不公平”的意思。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。比赛里裁判一直偏向主队，你跟朋友说：“裁判太不公平了。”"
+          ],
+          "options": [
+            {
+              "t": "Wasitnya nggak adil banget.",
+              "v": "right",
+              "why": [
+                "对。直接说不公平。"
+              ]
+            },
+            {
+              "t": "Wasitnya nggak bijak banget.",
+              "v": "wrong",
+              "why": [
+                "“不明智”不是你想说的，你是在说他偏心。"
+              ]
+            },
+            {
+              "t": "Wasitnya berat sebelah banget.",
+              "v": "ok",
+              "why": [
+                "也可以：berat sebelah = 偏向一方，正好说裁判偏心。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你跟同事说：“只让新人加班，这不公平。”"
+        ],
+        "kw": "lembur · nggak adil",
+        "skel": "Cuma anak baru yang disuruh ____, itu ____.",
+        "ref": "Cuma anak baru yang disuruh lembur, itu nggak adil."
+      },
+      "recall": {
+        "prompt": [
+          "两个孩子抢蛋糕。你对他们说：“蛋糕要分得公平，每人一块。”"
+        ],
+        "kw": "bagi · adil",
+        "skel": "Kuenya ____ yang ____, ya, satu orang satu potong.",
+        "ref": "Kuenya bagi yang adil, ya, satu orang satu potong."
+      },
+      "final": {
+        "cn": "（对上司）“我觉得这次的工作分配不太公平。”",
+        "ref": "Menurut saya, pembagian kerja kali ini kurang adil, Pak."
+      },
+      "remind": "adil = 公平；不公平说 tidak adil / nggak adil；公平 ≠ sama rata。"
+    },
+    {
+      "key": "tampak",
+      "name": "tampak",
+      "head": "tampak · 看起来；显得",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "课文",
+            "id": "Minggu itu, selokan yang tadinya penuh sampah tampak bersih.",
+            "cn": "那个星期天，原本塞满垃圾的水沟看上去干干净净。"
+          }
+        ],
+        "ask": "tampak bersih 是什么意思？",
+        "options": [
+          {
+            "t": "看上去很干净",
+            "reply": [
+              "对。tampak + 形容词 = 看起来……。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "被打扫干净了",
+            "reply": [
+              "打扫是 dibersihkan；tampak 讲的是看上去怎么样。"
+            ]
+          },
+          {
+            "t": "快要干净了",
+            "reply": [
+              "不是。“快要”会说 hampir；tampak 是“看起来”。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "[[tampak]] + 形容词 = 看起来……：{{tampak bersih}}、{{tampak lelah}}。它和 {{terlihat}}、口语 {{keliatan}} 意思一样，tampak 多用在叙述里。{{tampaknya}} 是“看样子”，表示推测：{{Tampaknya mau hujan.}}"
+      ],
+      "simple": [
+        "[[tampak]] = 看起来；聊天时多说 keliatan"
+      ],
+      "asks": [
+        {
+          "label": "换个角度",
+          "remedy": true,
+          "reply": [
+            {
+              "table": [
+                [
+                  "Dia tampak lelah.",
+                  "他看起来很累。（叙述）"
+                ],
+                [
+                  "Kamu keliatan capek.",
+                  "你看起来好累。（口语）"
+                ],
+                [
+                  "Tampaknya mau hujan.",
+                  "看样子要下雨了。"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "词卡上的辨析",
+          "from": "synonym_note"
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Dari foto, kamarnya ___ luas, padahal aslinya kecil banget.]]",
+          "（照片里房间看起来很大，其实特别小。）"
+        ],
+        "options": [
+          {
+            "t": "tampak",
+            "v": "right",
+            "why": [
+              "对。tampak luas = 看起来宽敞。"
+            ]
+          },
+          {
+            "t": "keliatan",
+            "v": "ok",
+            "why": [
+              "也可以，口语聊天时更常用。"
+            ]
+          },
+          {
+            "t": "menampakkan",
+            "v": "wrong",
+            "why": [
+              "menampakkan 是“显露出”，后面要接宾语，不直接接形容词。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。你跟朋友说：“那家店从外面看很贵，其实价格挺便宜。”"
+          ],
+          "options": [
+            {
+              "t": "Dari luar tokonya tampak mahal, padahal harganya murah.",
+              "v": "right",
+              "why": [
+                "对。外表和实际相反，用 padahal。"
+              ]
+            },
+            {
+              "t": "Dari luar tokonya tampak mahal, jadi harganya murah.",
+              "v": "wrong",
+              "why": [
+                "jadi 是“所以”，“看着贵所以便宜”说不通。"
+              ]
+            },
+            {
+              "t": "Dari luar tokonya keliatan mahal, padahal harganya murah.",
+              "v": "ok",
+              "why": [
+                "也对，口语说法。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你说起新搬来的邻居：“他看起来很安静。”"
+        ],
+        "kw": "tampak · tenang",
+        "skel": "Tetangga baru kita ____ ____.",
+        "ref": "Tetangga baru kita tampak tenang."
+      },
+      "recall": {
+        "prompt": [
+          "你在医院陪爷爷，跟家人说：“爷爷今天看起来比昨天精神。”"
+        ],
+        "kw": "tampak · lebih segar",
+        "skel": "Kakek hari ini ____ lebih ____ dari kemarin.",
+        "ref": "Kakek hari ini tampak lebih segar dari kemarin."
+      },
+      "final": {
+        "cn": "（对同事）“这个计划看起来简单，其实很花时间。”",
+        "ref": "Rencana ini tampak sederhana, padahal butuh banyak waktu."
+      },
+      "remind": "tampak + 形容词 = 看起来……；口语 keliatan；tampaknya = 看样子。"
+    },
+    {
+      "key": "p1",
+      "name": "… dimaksudkan agar …",
+      "head": "… dimaksudkan agar … · ……的目的（本意）是让……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "改写参考",
+            "id": "Kebijakan ini dimaksudkan supaya semua anggota mendapat giliran pada jam ramai.",
+            "cn": "这条规定的本意是让所有会员在高峰时段都能轮得上。"
+          }
+        ],
+        "ask": "这里把 agar 换成了 supaya，意思变了吗？",
+        "options": [
+          {
+            "t": "没变，都是“让……、以便……”",
+            "reply": [
+              "对。agar 稍正式，supaya 最通用，两个都能跟在 dimaksudkan 后面。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "变了，supaya 表示原因",
+            "reply": [
+              "不是。原因用 karena；supaya 是目的。"
+            ]
+          },
+          {
+            "t": "变了，supaya 只能用在口语里",
+            "reply": [
+              "不是。supaya 书面、口语都用；聊天时还会说 biar。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "三块拼起来：{{主语（规定、安排）}} + {{dimaksudkan}} + {{agar / supaya}} + 一个完整的句子：{{Kebijakan itu dimaksudkan agar air hujan bisa mengalir lagi.}} 后半句要有主语和动词。口语常说 {{tujuannya biar …}}。"
+      ],
+      "simple": [
+        "[[规定 + dimaksudkan agar + 句子]] = 这个规定是为了让……"
+      ],
+      "asks": [
+        {
+          "label": "换个角度",
+          "remedy": true,
+          "reply": [
+            {
+              "table": [
+                [
+                  "… dimaksudkan agar semua aman.",
+                  "……为了让大家安全。（目的）"
+                ],
+                [
+                  "… dibuat karena banyak yang telat.",
+                  "……是因为很多人迟到才定的。（原因）"
+                ],
+                [
+                  "Tujuannya biar semua aman.",
+                  "目的是让大家安全。（口语）"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Jadwal piket ini dimaksudkan ___ semua orang dapat giliran yang sama.]]",
+          "（这张值日表是为了让每个人轮到的次数一样。）"
+        ],
+        "options": [
+          {
+            "t": "agar",
+            "v": "right",
+            "why": [
+              "对。dimaksudkan agar + 句子。"
+            ]
+          },
+          {
+            "t": "supaya",
+            "v": "ok",
+            "why": [
+              "也对，和 agar 可以互换。"
+            ]
+          },
+          {
+            "t": "karena",
+            "v": "wrong",
+            "why": [
+              "karena 是“因为”，讲原因，不能接在 dimaksudkan 后面讲目的。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。你在小区群里发通知：“停车新规定是为了让巷子不再堵。”"
+          ],
+          "options": [
+            {
+              "t": "Aturan parkir baru ini dimaksudkan agar gang tidak macet lagi.",
+              "v": "right",
+              "why": [
+                "对。通知里用这句最得体。"
+              ]
+            },
+            {
+              "t": "Aturan parkir baru ini dimaksudkan karena gang tidak macet lagi.",
+              "v": "wrong",
+              "why": [
+                "karena 讲原因，意思变成“因为巷子不堵了”，不通。"
+              ]
+            },
+            {
+              "t": "Aturan parkir baru ini tujuannya biar gang nggak macet lagi.",
+              "v": "ok",
+              "why": [
+                "也可以，是聊天的口语说法。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你跟朋友解释：“今天早上的大扫除，是为了让水沟不再堵。”"
+        ],
+        "kw": "dimaksudkan agar · tersumbat",
+        "skel": "Kerja bakti pagi ini ____ selokannya tidak ____ lagi.",
+        "ref": "Kerja bakti pagi ini dimaksudkan agar selokannya tidak tersumbat lagi."
+      },
+      "recall": {
+        "prompt": [
+          "你是班主任，跟家长说：“这次家长会的目的是让家长认识新老师。”"
+        ],
+        "kw": "dimaksudkan agar · mengenal",
+        "skel": "Pertemuan ini ____ orang tua bisa ____ guru baru.",
+        "ref": "Pertemuan ini dimaksudkan agar orang tua bisa mengenal guru baru."
+      },
+      "final": {
+        "cn": "（对员工）“新排班表是为了让每个人每周都能休息两天。”",
+        "ref": "Jadwal baru ini dimaksudkan supaya semua orang bisa libur dua hari setiap minggu."
+      },
+      "remind": "规定 + dimaksudkan agar / supaya + 句子 = 这个规定是为了让……；karena 是原因，不能替换。"
+    },
+    {
+      "key": "p2",
+      "name": "Dari luar, … tampak …, padahal …",
+      "head": "Dari luar, … tampak …, padahal … · 从外面看……显得……，其实……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "词卡例句",
+            "id": "Dari luar, rumah tua itu tampak biasa saja, padahal sejarahnya panjang sekali.",
+            "cn": "从外面看，那栋老房子看起来很普通，其实它的历史非常悠久。"
+          }
+        ],
+        "ask": "padahal 后面说的是什么？",
+        "options": [
+          {
+            "t": "和外表相反的真实情况",
+            "reply": [
+              "对。前半句说外表，padahal 后面说“其实”。"
+            ],
+            "ok": true
+          },
+          {
+            "t": "房子普通的原因",
+            "reply": [
+              "不是。原因用 karena；padahal 是“其实（和表面相反）”。"
+            ]
+          },
+          {
+            "t": "后来发生的事",
+            "reply": [
+              "不是。后来用 lalu / kemudian；padahal 讲的是一直存在的真相。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "前半句 {{Dari luar, … tampak …}} 说外表，后半句 {{padahal …}} 说真实情况，两半意思相反。padahal 不能换成 {{jadi}}（所以）。聊天时前半句常说成 {{… keliatan …}}。"
+      ],
+      "simple": [
+        "[[Dari luar … tampak …, padahal …]] = 从外面看……，其实……（两半相反）"
+      ],
+      "asks": [
+        {
+          "label": "换个角度",
+          "remedy": true,
+          "reply": [
+            {
+              "table": [
+                [
+                  "Dari luar tampak sepi, padahal di dalam ramai.",
+                  "外面看着冷清，其实里面很热闹。"
+                ],
+                [
+                  "Tampak murah, padahal mahal.",
+                  "看着便宜，其实很贵。"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "[[Dari luar, warung itu tampak kecil, ___ di dalamnya bisa muat lima puluh orang.]]",
+          "（从外面看那家小饭馆很小，其实里面能坐五十个人。）"
+        ],
+        "options": [
+          {
+            "t": "padahal",
+            "v": "right",
+            "why": [
+              "对。外表小，实际大，正好相反。"
+            ]
+          },
+          {
+            "t": "tapi",
+            "v": "ok",
+            "why": [
+              "也可以，只是“其实”的意味弱一点。"
+            ]
+          },
+          {
+            "t": "jadi",
+            "v": "wrong",
+            "why": [
+              "jadi 是“所以”，“看着小所以能坐五十人”说不通。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "换一题。说“这个包看起来很旧，其实是上个月才买的”："
+          ],
+          "options": [
+            {
+              "t": "Tasnya tampak usang, padahal baru dibeli bulan lalu.",
+              "v": "right",
+              "why": [
+                "对。外表旧，实际新。"
+              ]
+            },
+            {
+              "t": "Tasnya tampak usang, karena baru dibeli bulan lalu.",
+              "v": "wrong",
+              "why": [
+                "karena 是“因为”，“因为刚买所以旧”说不通。"
+              ]
+            },
+            {
+              "t": "Tasnya keliatan usang, padahal baru dibeli bulan lalu.",
+              "v": "ok",
+              "why": [
+                "也对，口语说法。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "你跟朋友说那家酒店：“从外面看很豪华，其实房间很小。”"
+        ],
+        "kw": "tampak · padahal",
+        "skel": "Dari luar, hotelnya ____ mewah, ____ kamarnya kecil.",
+        "ref": "Dari luar, hotelnya tampak mewah, padahal kamarnya kecil."
+      },
+      "recall": {
+        "prompt": [
+          "你在二手店看手机，跟朋友说：“从外面看这部手机跟新的一样，其实电池很快就没电。”"
+        ],
+        "kw": "tampak · padahal",
+        "skel": "Dari luar, HP ini ____ seperti baru, ____ baterainya cepat habis.",
+        "ref": "Dari luar, HP ini tampak seperti baru, padahal baterainya cepat habis."
+      },
+      "final": {
+        "cn": "（对家人）“从外面看这个西瓜挺好，其实里面已经烂了。”",
+        "ref": "Dari luar, semangka ini tampak bagus, padahal dalamnya sudah busuk."
+      },
+      "remind": "Dari luar, … tampak …, padahal … = 从外面看……，其实……；padahal 不能换成 jadi。"
+    }
+  ],
+  "scan": {
+    "head": "其他新词 · 扫一眼",
+    "intro": [
+      "今晚另外两个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+    ],
+    "words": [
+      "detik",
+      "bijak"
+    ]
+  },
+  "reading": [
+    {
+      "key": "detik",
+      "sentence": "Pak RT diam beberapa detik, lalu menjawab dengan bijak: warga yang tidak bisa datang boleh menyumbang uang untuk membayar tukang.",
+      "cn": "居委会主任沉默了几秒，然后很有分寸地回答：来不了的居民可以捐钱，用来请工人。",
+      "chunks": [
+        [
+          "Pak RT diam beberapa detik,",
+          "主任沉默了几秒",
+          "detik = 秒"
+        ],
+        [
+          "lalu menjawab dengan bijak:",
+          "然后很有分寸地回答",
+          "dengan bijak = 明智地、有分寸地"
+        ],
+        [
+          "warga yang tidak bisa datang",
+          "来不了的居民",
+          ""
+        ],
+        [
+          "boleh menyumbang uang",
+          "可以捐钱",
+          "menyumbang = 捐"
+        ],
+        [
+          "untuk membayar tukang.",
+          "用来请工人",
+          "untuk = 用来"
+        ]
+      ],
+      "steal": [
+        "值得借的是 [[diam beberapa detik, lalu …]]：先停一下再回应。{{Dia diam beberapa detik, lalu tersenyum.}}（他沉默了几秒，然后笑了。）"
+      ]
+    }
+  ],
+  "dialogue": {
+    "head": "对话 · 你来演 Sari",
+    "intro": [
+      "你演 Sari，我演没去开会的 Dewi。每一轮先看 Sari 想说什么，看中文先说。"
+    ],
+    "turns": [
+      {
+        "line": 1,
+        "intent": "Sari 说主任宣布了新规定：每周日早上每家出一个人参加大扫除，清理水沟。",
+        "kw": "ngumumin · wajib · bersihin",
+        "skel": "Pak RT ____ aturan baru. Tiap Minggu pagi, satu orang dari tiap rumah ____ ikut kerja bakti ____ selokan."
+      },
+      {
+        "line": 5,
+        "intent": "Sari 说 Yudi 先生也抗议，说不公平，好像还顺带挖苦了主任。",
+        "kw": "nggak adil · nyindir",
+        "skel": "Pak Yudi juga protes, katanya ____. Kayaknya dia sekalian ____ Pak RT."
+      },
+      {
+        "line": 7,
+        "intent": "Sari 说她不是替主任说话，但主任回答得有分寸：来不了的可以捐钱请工人。",
+        "kw": "membela · bijak · nyumbang",
+        "skel": "Aku bukan mau ____ Pak RT, tapi jawabannya ____. Yang nggak bisa dateng boleh ____ uang, nanti uangnya dipakai bayar tukang."
+      }
+    ],
+    "tail": [
+      "邻居之间用 aku/kamu 和 nggak、dateng、nyumbang；跟主任、长辈说话时换成 saya 和标准形。"
+    ]
+  },
+  "tasks": [
+    {
+      "key": "output",
+      "prompt": [
+        "最后一个开口任务（来自今晚的改写题，缩短版）：跟朋友说你健身房的新规定：每人用跑步机最多三十分钟，本意是让大家高峰时段都轮得上。"
+      ],
+      "kw": "kebijakan · dimaksudkan supaya",
+      "skel": "Di tempat gym saya ada ____ baru: tiap orang hanya boleh memakai treadmill paling lama tiga puluh menit. Kebijakan ini ____ semua anggota mendapat giliran pada jam ramai.",
+      "ref": "Di tempat gym saya ada kebijakan baru: tiap orang hanya boleh memakai treadmill paling lama tiga puluh menit. Kebijakan ini dimaksudkan supaya semua anggota mendapat giliran pada jam ramai.",
+      "notes": [
+        "整页的改写题有更完整的参考答案，学完可以去对照。"
+      ]
+    }
+  ],
+  "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
