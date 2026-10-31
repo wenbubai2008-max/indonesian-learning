@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261030-harga-cabai-kobar-mulai-turun","date":"2026-10-30","title":"Harga Cabai di Pangkalan Bun Mulai Turun, Pemkab Gandeng Distributor","title_cn":"邦卡兰汶辣椒价格开始回落，县政府联手经销商保供应","path":"data/extensive-reading-history/2026-10-30.js"},
 {"id":"er-20261029-vaksinasi-peralihan-musim-hujan","date":"2026-10-29","title":"Masuk Musim Hujan, Dokter Ingatkan Pentingnya Vaksin Flu","title_cn":"进入雨季，医生提醒接种流感疫苗的重要性","path":"data/extensive-reading-history/2026-10-29.js"},
 {"id":"er-20261028-tambah-anggota-keluarga-kk-online","date":"2026-10-28","title":"Tambah Anggota Keluarga di KK Kini Bisa Diurus Online","title_cn":"户口卡添加家庭成员，现在可以在线办理","path":"data/extensive-reading-history/2026-10-28.js"},
 {"id":"er-20261027-pameran-seni-taman-stasiun-manggarai","date":"2026-10-27","title":"Taman Stasiun Manggarai Jadi Ruang Pameran Seni untuk Warga","title_cn":"曼加拉伊车站花园变身居民艺术展空间","path":"data/extensive-reading-history/2026-10-27.js"},
