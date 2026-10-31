@@ -1,0 +1,444 @@
+{
+  "date": "2026-10-31",
+  "session": "am",
+  "time": "08:00",
+  "day": 71,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Laporan Sabtu Pagi untuk Kantor Pusat · 星期六早上要交给总部的报告",
+  "new_words": [
+    "pegawai",
+    "kertas",
+    "khususnya",
+    "terbuka",
+    "buruk",
+    "ubah",
+    "kalimat",
+    "arti",
+    "sebut",
+    "saat"
+  ],
+  "vocab": [
+    {
+      "word": "pegawai",
+      "display": "pegawai",
+      "audio_text": "pegawai",
+      "cn": "员工；职员",
+      "en": "employee; staff member",
+      "root": "pegawai",
+      "root_cn": "员工；职员",
+      "formation": "整个词记住即可。常见搭配：pegawai baru（新员工）、pegawai bank（银行职员）、pegawai negeri（公务员）、pegawai tetap（正式员工）、pegawai kontrak（合同工）。同词根：kepegawaian（人事，如 bagian kepegawaian 人事部门）。",
+      "example": "Hari ini ada lima calon pegawai yang datang untuk wawancara di kantor kami.",
+      "example_cn": "今天有五位应聘者来我们公司面试。",
+      "synonym_note": "pegawai 用得很宽：政府机关、银行、公司、商店的员工都能叫 pegawai，“公务员”固定说 pegawai negeri。karyawan 多指公司、企业里的员工；在公司语境里两者常可互换（pegawai baru / karyawan baru 都行）。staf 也常用，偏办公室职员。没有常用的口语变体。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kertas",
+      "display": "kertas",
+      "audio_text": "kertas",
+      "cn": "纸；纸张",
+      "en": "paper",
+      "root": "kertas",
+      "root_cn": "纸",
+      "formation": "常见搭配：selembar kertas（一张纸）、kertas A4、satu rim kertas（一令纸，约 500 张）、kertas bekas（用过的纸）、kantong kertas（纸袋）。固定说法：di atas kertas（纸面上；理论上），如 Di atas kertas rencananya bagus.",
+      "example": "Tolong siapin dua rim kertas, ya. Besok kita harus mencetak banyak materi pelatihan.",
+      "example_cn": "麻烦准备两令纸。明天我们要打印很多培训资料。（siapin = siapkan）",
+      "synonym_note": "kertas 是“纸”这种材料；数张数用量词 lembar：dua lembar kertas（两张纸）。“文件、材料”说 dokumen / berkas，不要把 kertas 当“文件”。没有常用的口语变体。",
+      "is_oral_new": false
+    },
+    {
+      "word": "khususnya",
+      "display": "khususnya",
+      "audio_text": "khususnya",
+      "cn": "尤其是；特别是",
+      "en": "especially; in particular",
+      "root": "khusus",
+      "root_cn": "特别的；专门的",
+      "formation": "khusus + -nya → khususnya，放在要特别强调的那一部分前面：……, khususnya …。同词根：khusus（专门的、特别的：harga khusus 特价、tamu khusus 特邀嘉宾）、secara khusus（专门地）。",
+      "example": "Berbagai barang di toko itu sedang didiskon, khususnya alat dapur dan perlengkapan mandi.",
+      "example_cn": "那家店的各种商品都在打折，尤其是厨具和洗浴用品。",
+      "synonym_note": "khususnya 和 terutama 大多可以互换；terutama 日常说得更多，khususnya 稍正式，常见于通知、致辞（Terima kasih kepada semua, khususnya panitia.）。khusus 是形容词“专门的”，不能代替 khususnya 放在句中作强调。口语里多直接说 terutama 或 apalagi（更何况）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "terbuka",
+      "display": "terbuka",
+      "audio_text": "terbuka",
+      "cn": "开着的；公开的；（人）开放、乐于接受",
+      "en": "open",
+      "root": "buka",
+      "root_cn": "开；打开",
+      "formation": "ter- + buka → terbuka，表示状态：①开着（Jendelanya terbuka. 窗户开着）②公开、对外开放（terbuka untuk umum 对公众开放）③人开放、坦率（terbuka untuk masukan 乐于听取意见，orang yang terbuka 坦率的人）。同词根：membuka（打开）、dibuka（被打开；开门营业）、pembukaan（开幕；开头）、keterbukaan（开放性）。",
+      "example": "Lowongan ini terbuka untuk siapa saja yang punya keahlian desain grafis.",
+      "example_cn": "这个职位面向所有有平面设计专长的人开放。",
+      "synonym_note": "terbuka 说的是“处于开着的状态”；dibuka 强调“被人打开”或“开始营业”（Tokonya dibuka jam sembilan. 店九点开门）。说窗、门开着，两者有时都能用，但 terbuka 更常见。口语说法：kebuka（Pintunya kebuka. 门开着），正式场合和书面用 terbuka。",
+      "is_oral_new": false
+    },
+    {
+      "word": "buruk",
+      "display": "buruk",
+      "audio_text": "buruk",
+      "cn": "坏的；差的；糟糕的",
+      "en": "bad; poor",
+      "root": "buruk",
+      "root_cn": "坏的；差的",
+      "formation": "常见搭配：cuaca buruk（恶劣天气）、kabar buruk（坏消息）、kebiasaan buruk（坏习惯）、kondisi buruk（状况差）、sinyal buruk（信号差）。同词根：memburuk（变坏、恶化：Kondisinya memburuk.）、keburukan（坏处）。",
+      "example": "Sinyal di lantai bawah buruk sekali, jadi Mira harus bolak-balik ke balkon setiap kali menelepon.",
+      "example_cn": "楼下的信号很差，所以米拉每次打电话都得跑到阳台上，来来回回的。",
+      "synonym_note": "buruk 偏书面，多用于天气、消息、习惯、状况这类情况；jelek 是口语里最常用的“差、不好、丑”（Sinyalnya jelek. 信号很差）。说东西或人长得丑，日常用 jelek（buruk rupa 是书面老说法）。口语说法：jelek；新闻、正式报告用 buruk。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ubah",
+      "display": "ubah",
+      "audio_text": "ubah",
+      "cn": "改；改变（mengubah 的词根和命令式）",
+      "en": "change; alter",
+      "root": "ubah",
+      "root_cn": "改变",
+      "formation": "meN- + ubah → mengubah（改变某物，要接宾语）；ber- + ubah → berubah（自己发生变化，不接宾语）；di- + ubah → diubah（被改）；per-an：perubahan（变化）。请别人改时直接用命令式：Ubah dulu …！",
+      "example": "Tolong ubah jadwal pertemuannya ke sore, ya. Pagi ini saya harus ke kantor pusat.",
+      "example_cn": "麻烦把会面时间改到下午。今天上午我得去总部。",
+      "synonym_note": "mengubah 是在原来的基础上改（ubah kalimat 改句子、ubah jadwal 改时间）；mengganti 是用另一个替换（ganti baju 换衣服、ganti ban 换轮胎）；改密码两种都说（ubah / ganti password）。berubah 是“自己变了”：Jadwalnya berubah.（时间变了）。口语说法：ngubah（Aku mau ngubah jadwal），正式场合用 mengubah。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kalimat",
+      "display": "kalimat",
+      "audio_text": "kalimat",
+      "cn": "句子",
+      "en": "sentence",
+      "root": "kalimat",
+      "root_cn": "句子",
+      "formation": "常见搭配：satu kalimat（一句话）、kalimat pertama / terakhir（第一句／最后一句）、kalimat tanya（疑问句）、kalimat yang membingungkan（让人看不懂的句子）、dalam satu kalimat（用一句话）。",
+      "example": "Kalimat terakhir di email itu agak membingungkan, jadi saya bertanya lagi kepada pengirimnya.",
+      "example_cn": "那封邮件的最后一句有点让人看不懂，所以我又问了发件人一遍。",
+      "synonym_note": "kata 是“词”，kalimat 是“句子”，paragraf 是“段落”：Satu kalimat terdiri dari beberapa kata.（一句话由几个词组成）。没有常用的口语变体。",
+      "is_oral_new": false
+    },
+    {
+      "word": "arti",
+      "display": "arti",
+      "audio_text": "arti",
+      "cn": "意思；意义",
+      "en": "meaning",
+      "root": "arti",
+      "root_cn": "意思；意义",
+      "formation": "常见用法：Apa arti kata ini?（这个词是什么意思？）、artinya（意思是；也就是说）、berarti（意味着；有意义：Bantuanmu sangat berarti.）、tidak ada artinya（没有意义）。同词根：mengartikan（理解为、解释为）。",
+      "example": "Kalau kamu belum tahu arti kata kenyal, coba gigit bakso ini. Nah, itu yang namanya kenyal!",
+      "example_cn": "要是你还不知道 kenyal 是什么意思，就咬一口这个肉丸。你看，这就叫 kenyal（Q弹）！",
+      "synonym_note": "arti 多指词、符号本身的意思（arti kata ini）；maksud 是说话人想表达的意思（Maksudmu apa? 你什么意思？）。问一个词时两者都有人说，但问“你想说什么”只用 maksud。makna 更书面，常用于“意义、含义”。口语里常说 Artinya apa? 或 Maksudnya?",
+      "is_oral_new": false
+    },
+    {
+      "word": "sebut",
+      "display": "sebut",
+      "audio_text": "sebut",
+      "cn": "提到；说出（名字）；称作",
+      "en": "mention; name; call",
+      "root": "sebut",
+      "root_cn": "提到；称呼",
+      "formation": "meN- + sebut → menyebut（提到、说出名字）；di- + sebut → disebut（被称为：Bandung disebut Kota Kembang）；menyebutkan（说出、列出具体内容：Sebutkan tiga nama buah.）。固定说法：sebut saja …（就叫他……吧，常用来隐去真名）。",
+      "example": "Bandung disebut Kota Kembang karena dulu kota ini penuh dengan taman dan bunga.",
+      "example_cn": "万隆被称为“花城”，因为过去城里到处都是花园和鲜花。",
+      "synonym_note": "menyebut 的重点是“提到名字或某个词”（Dia menyebut nama saya. 他提到了我的名字）；bilang / mengatakan 的重点是“说了什么内容”（Dia bilang dia capek.）。memanggil 是“叫、呼唤（人）”。口语说法：nyebut（Tadi dia nyebut namamu.），正式场合用 menyebut。",
+      "is_oral_new": false
+    },
+    {
+      "word": "saat",
+      "display": "saat",
+      "audio_text": "saat",
+      "cn": "时候；时刻",
+      "en": "moment; when; at the time",
+      "root": "saat",
+      "root_cn": "时刻；时候",
+      "formation": "常见用法：saat + 动作／情况（在……的时候：saat makan、saat hujan）、saat ini（目前、现在）、pada saat itu（在那时）、sesaat（片刻）、saat-saat terakhir（最后的时刻）。",
+      "example": "Saat masih remaja, Ayah sering membantu Kakek menjual sayur di pasar.",
+      "example_cn": "爸爸十几岁的时候，常常帮爷爷在市场卖菜。",
+      "synonym_note": "表示“……的时候”，saat 和 waktu 基本可以互换（saat / waktu hujan）；但“时间”这个意思只能用 waktu（Saya tidak punya waktu. 我没时间），不能换成 saat。saat ini 比 sekarang 正式。口语说法：pas（Pas aku sampai, tokonya udah tutup.），正式场合用 saat。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "mengunduh",
+    "unduh",
+    "jaringan",
+    "karyawan",
+    "berbagai"
+  ],
+  "sentences": [
+    {
+      "text": "Tadi pas meeting, bos nyebut namamu, lho. Katanya presentasimu paling jelas.",
+      "cn": "刚才开会的时候，老板提到了你的名字哦。说你的汇报讲得最清楚。（pas = saat，nyebut = menyebut，lho 是提醒对方注意的语气词）"
+    },
+    {
+      "text": "File ini terlalu besar kalau diunduh lewat HP. Coba unduh pakai laptop kantor saja.",
+      "cn": "这个文件太大，用手机下载不合适。试试用公司的笔记本电脑下吧。"
+    },
+    {
+      "text": "Saya tahu arti setiap kata di kalimat ini, tapi saya masih belum paham maksudnya.",
+      "cn": "这句话里每个词的意思我都知道，可我还是没明白它想说什么。"
+    },
+    {
+      "text": "Kakak saya pegawai negeri, sedangkan suaminya karyawan di perusahaan swasta.",
+      "cn": "我姐姐是公务员，她丈夫则是私企员工。"
+    },
+    {
+      "text": "Pameran buku ini terbuka untuk umum dan menjual berbagai buku, khususnya buku anak-anak.",
+      "cn": "这个书展对公众开放，卖各种各样的书，尤其是儿童读物。"
+    }
+  ],
+  "reading": {
+    "text": "Sabtu pagi, Dina, pegawai baru di sebuah toko alat dapur, harus mengirim laporan omzet bulan Oktober ke kantor pusat sebelum jam sepuluh. Sayangnya, jaringan internet di kantor sedang buruk. Dina tidak bisa mengunduh data penjualan, jadi ia memakai hotspot dari HP Raka, karyawan bagian gudang. Saat Dina mau mencetak laporan untuk Pak Hadi, kertas di printer habis, jadi ia mengambil kertas baru dari gudang. Setelah membaca laporan itu, Pak Hadi bilang ada satu kalimat yang membingungkan. \"Ubah kalimat ini supaya lebih jelas, ya. Kalau kamu punya usul lain, sampaikan saja. Saya terbuka untuk masukan,\" katanya. Untungnya, laporan itu terkirim jam sembilan lewat lima puluh.",
+    "cn": "星期六早上，迪娜——一家厨具店的新员工——要在十点前把十月份的营业额报告发给总部。可惜办公室的网络很差。迪娜下载不了销售数据，只好用仓库员工拉卡手机的热点。迪娜正要把报告打印出来给哈迪先生看时，打印机里的纸用完了，她只好去仓库拿新纸。哈迪先生看完报告后说，有一句话让人看不明白。“把这句改一下，写得清楚一点。你要是有别的建议，尽管说。我很乐意听意见。”他说。还好，报告在九点五十分发出去了。"
+  },
+  "quiz": [
+    {
+      "question": "Seorang karyawan menulis email resmi ke kantor pusat: \"Mohon maaf, kami belum dapat ___ data penjualan karena jaringan internet kantor sedang terganggu.\" 空格里哪个最自然？",
+      "options": [
+        "unduh",
+        "mengunduh",
+        "diunduh",
+        "terunduh"
+      ],
+      "answer_index": 1,
+      "answer": "mengunduh",
+      "explain": "主语是 kami，后面直接接宾语 data penjualan，正式邮件用主动形 mengunduh。unduh 是词根，用在命令句（Unduh dulu aplikasinya.）或朋友间的随口说法（Aku belum bisa unduh.），正式邮件里不这样写；diunduh 是被动形，要改成 Data penjualan belum dapat diunduh 才通；terunduh 表示“已经（自动、意外地）下载下来”的状态，不接宾语。"
+    },
+    {
+      "question": "Pak Hadi membaca laporan Dina, lalu berkata: \"Laporannya sudah bagus. Cuma kalimat kedua agak membingungkan. Coba ___ sedikit supaya lebih jelas.\" 空格里哪个最自然？",
+      "options": [
+        "ubah",
+        "berubah",
+        "perubahan",
+        "terubah"
+      ],
+      "answer_index": 0,
+      "answer": "ubah",
+      "explain": "这是请对方动手“改一改”那句话，用命令式 ubah（= ubahlah / tolong ubah）。berubah 是“自己发生变化”，不能用来叫别人改；perubahan 是名词“变化”，放在 Coba 后面不通；terubah 日常几乎不用。"
+    },
+    {
+      "question": "Pak Hadi mengingatkan Dina: \"Di laporan untuk kantor pusat, jangan ___ nama pelanggan, ya. Tulis saja 'Pelanggan A' dan 'Pelanggan B'.\" 空格里哪个最自然？",
+      "options": [
+        "panggil",
+        "bicarakan",
+        "sebut",
+        "ceritakan"
+      ],
+      "answer_index": 2,
+      "answer": "sebut",
+      "explain": "“在报告里别写出／提到客户的名字”用 sebut（正式书面也常说 jangan sebutkan / jangan cantumkan）。panggil 是“叫、呼唤（人）”，panggil nama 是点名叫人；bicarakan 是“讨论（某事）”，ceritakan 是“讲述（经过）”，都不和 nama 搭配表示“写出名字”。"
+    }
+  ],
+  "output": {
+    "task": "用 2–4 句印尼语，跟朋友讲一次你在工作或学习中遇到的小麻烦（比如网络差、纸用完、文件要改）以及最后怎么解决的。至少用 buruk、ubah（mengubah）、kalimat、kertas、saat、terbuka 中的两个。",
+    "reference_answer": "Minggu lalu benar-benar melelahkan. Saat saya mau mengirim tugas, Wi-Fi di kos sedang buruk, jadi saya pergi ke kafe dekat kampus. Di sana saya kebetulan bertemu kenalan dari kelas bahasa, dan dia membantu mengecek tugas saya. Kami mengubah dua kalimat yang kurang jelas, lalu tugas itu terkirim satu jam sebelum batas waktu.",
+    "reference_cn": "上周真的很累。我正要交作业的时候，宿舍的 Wi-Fi 很差，所以我去了学校附近的咖啡馆。在那儿我碰巧遇到一个语言班认识的人，他帮我检查了作业。我们改了两句不太清楚的句子，然后作业在截止前一小时交上去了。"
+  },
+  "review": [
+    "3 秒主动提取：看中文马上说印尼语——员工、纸、尤其是、开着的／乐于接受、差的、改（命令式）、句子、意思、提到（名字）、……的时候；再加复习词：下载（正式／命令式）、网络、（公司）员工、各种各样的。说不出来的回看词卡再说一遍。",
+    "易混词与搭配：pegawai（各类机构的员工，pegawai negeri 公务员）vs karyawan（公司员工）；buruk（书面：cuaca／kabar buruk）vs jelek（口语：sinyalnya jelek）；ubah／mengubah（改某物）vs berubah（自己变）vs ganti（换成别的）；arti（词的意思）vs maksud（说话人想表达的意思）；saat vs waktu（“时间”只能用 waktu）；terbuka（开着的状态）vs dibuka（被打开；开门营业）；menyebut（提到名字）vs bilang（说内容）。",
+    "复习词应用：同词根 unduh 一组——命令或随口说用 unduh（Unduh dulu aplikasinya），正式句子用 mengunduh，被动用 diunduh（Datanya belum bisa diunduh）；用 jaringan 说一句网络出问题（最近常错）；用 karyawan 说说你认识的人在哪家公司上班，再对比 pegawai negeri（最近常错）；用 berbagai 说一句“各种各样的……”。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "员工；职员",
+        "id": "pegawai"
+      },
+      {
+        "cn": "纸",
+        "id": "kertas"
+      },
+      {
+        "cn": "尤其是",
+        "id": "khususnya"
+      },
+      {
+        "cn": "开着的；乐于接受",
+        "id": "terbuka"
+      },
+      {
+        "cn": "差的；糟糕的",
+        "id": "buruk"
+      },
+      {
+        "cn": "改（命令式）",
+        "id": "ubah"
+      },
+      {
+        "cn": "句子",
+        "id": "kalimat"
+      },
+      {
+        "cn": "意思",
+        "id": "arti"
+      },
+      {
+        "cn": "提到（名字）",
+        "id": "sebut"
+      },
+      {
+        "cn": "……的时候",
+        "id": "saat"
+      },
+      {
+        "cn": "网络",
+        "id": "jaringan"
+      },
+      {
+        "cn": "（公司）员工",
+        "id": "karyawan"
+      }
+    ],
+    "frames": [
+      "Saat …, …",
+      "Ubah … supaya …",
+      "…, khususnya …",
+      "Saya terbuka untuk …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "pegawai",
+            "cn": "各类机构的员工"
+          },
+          {
+            "id": "karyawan",
+            "cn": "公司员工"
+          }
+        ],
+        "note": "Kakak saya pegawai negeri. / Suaminya karyawan di perusahaan swasta."
+      },
+      {
+        "items": [
+          {
+            "id": "ubah",
+            "cn": "改（某物）"
+          },
+          {
+            "id": "berubah",
+            "cn": "自己变了"
+          },
+          {
+            "id": "ganti",
+            "cn": "换成别的"
+          }
+        ],
+        "note": "Ubah kalimat ini. / Jadwalnya berubah. / Ganti baju dulu."
+      },
+      {
+        "items": [
+          {
+            "id": "arti",
+            "cn": "词的意思"
+          },
+          {
+            "id": "maksud",
+            "cn": "想表达的意思"
+          }
+        ],
+        "note": "Apa arti kata ini? / Maksudmu apa?"
+      },
+      {
+        "items": [
+          {
+            "id": "buruk",
+            "cn": "差（偏书面）"
+          },
+          {
+            "id": "jelek",
+            "cn": "差；丑（口语）"
+          }
+        ],
+        "note": "Cuaca buruk. / Sinyalnya jelek banget."
+      },
+      {
+        "items": [
+          {
+            "id": "unduh",
+            "cn": "命令式；随口说"
+          },
+          {
+            "id": "mengunduh",
+            "cn": "主动（正式）"
+          },
+          {
+            "id": "diunduh",
+            "cn": "被下载"
+          }
+        ],
+        "note": "Unduh dulu aplikasinya. / Kami belum dapat mengunduh data. / Datanya belum bisa diunduh."
+      }
+    ],
+    "apply": [
+      {
+        "word": "mengunduh",
+        "usage": "正式说“下载（某物）”，后面直接接宾语；命令或随口说用 unduh。",
+        "examples": [
+          {
+            "id": "Dina tidak bisa mengunduh data penjualan.",
+            "cn": "迪娜下载不了销售数据。"
+          },
+          {
+            "id": "Coba unduh pakai laptop kantor saja.",
+            "cn": "试试用公司的笔记本电脑下吧。"
+          }
+        ]
+      },
+      {
+        "word": "jaringan",
+        "usage": "网络（jaringan internet / jaringan Wi-Fi）；也指人脉、连锁网点。",
+        "examples": [
+          {
+            "id": "Sayangnya, jaringan internet di kantor sedang buruk.",
+            "cn": "可惜办公室的网络很差。"
+          }
+        ]
+      },
+      {
+        "word": "karyawan",
+        "usage": "公司、企业的员工：karyawan bagian …（……部门的员工）。",
+        "examples": [
+          {
+            "id": "Raka adalah karyawan bagian gudang.",
+            "cn": "拉卡是仓库部门的员工。"
+          }
+        ]
+      },
+      {
+        "word": "berbagai",
+        "usage": "berbagai + 名词：各种各样的……（名词不用重叠）。",
+        "examples": [
+          {
+            "id": "Pameran buku ini menjual berbagai buku.",
+            "cn": "这个书展卖各种各样的书。"
+          }
+        ]
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "ubah",
+      "saat",
+      "jaringan"
+    ],
+    "patterns": [
+      {
+        "pattern": "Saat …, …",
+        "cn": "在……的时候，……",
+        "example": "Saat Dina mau mencetak laporan untuk Pak Hadi, kertas di printer habis, jadi ia mengambil kertas baru dari gudang.",
+        "example_cn": "迪娜正要把报告打印出来给哈迪先生看时，打印机里的纸用完了，她只好去仓库拿新纸。"
+      },
+      {
+        "pattern": "Ubah … supaya …",
+        "cn": "把……改一下，好让……",
+        "example": "Ubah kalimat ini supaya lebih jelas, ya.",
+        "example_cn": "把这句改一下，写得清楚一点。"
+      }
+    ]
+  }
+}
