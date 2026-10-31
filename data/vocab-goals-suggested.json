@@ -4,16 +4,16 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 882,
+   "use": 886,
    "recognize": 104,
    "unsure": 21,
-   "fast": 133
+   "fast": 134
   },
   "active": {
-   "use": 605,
+   "use": 609,
    "recognize": 88,
    "unsure": 19,
-   "fast": 55
+   "fast": 56
   }
  },
  "words": {
@@ -9291,6 +9291,43 @@
    "why": [
     "日常高频表达（连接词）",
     "977 主库第 853 位"
+   ]
+  },
+  "detik": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（时间）",
+    "977 主库第 413 位"
+   ]
+  },
+  "tampak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 741 位"
+   ]
+  },
+  "adil": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 720 位"
+   ]
+  },
+  "bijak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 677 位"
    ]
   }
  }
