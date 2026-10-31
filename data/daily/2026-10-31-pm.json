@@ -1,0 +1,385 @@
+{
+  "date": "2026-10-31",
+  "session": "pm",
+  "time": "18:00",
+  "day": 71,
+  "title": "18:00 晚课｜Kerja Bakti Tiap Minggu: Kebijakan Baru Pak RT · 每周日大扫除：居委会主任的新规定",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "detik",
+    "tampak",
+    "adil",
+    "bijak"
+  ],
+  "vocab": [
+    {
+      "word": "detik",
+      "display": "detik",
+      "audio_text": "detik",
+      "cn": "秒；片刻",
+      "en": "second (of time); a moment",
+      "root": "detik",
+      "root_cn": "秒",
+      "formation": "词根本身是名词。同词根：sedetik（一秒；一转眼）、detik-detik（最后关头，常说 detik-detik terakhir）。常见搭配：beberapa detik（几秒钟）、sepuluh detik lagi（再过十秒）、dalam hitungan detik（几秒之内、一转眼）、diam beberapa detik（沉默了几秒）。",
+      "example": "Saya cuma menoleh beberapa detik, tapi anak saya sudah lari ke ujung lorong supermarket.",
+      "example_cn": "我只是回头看了几秒钟，我儿子就已经跑到超市过道的另一头了。",
+      "synonym_note": "detik 是计时单位“秒”，比它大的是 menit（分钟）、jam（小时）；sebentar 是不计数的“一会儿”。日常说“等一下”用 Tunggu sebentar，不说 Tunggu detik。口语说法：bentar（Bentar, ya），sedetik 口语也常说成 sedetik doang（就一秒）；正式场合说 sebentar。",
+      "usage_note": "今晚新词。讲反应快慢时最常用 dalam hitungan detik（一转眼）和 diam beberapa detik（沉默了几秒）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "tampak",
+      "display": "tampak",
+      "audio_text": "tampak",
+      "cn": "看起来；显得；看得见",
+      "en": "to look, to appear; visible",
+      "root": "tampak",
+      "root_cn": "显现；看得见",
+      "formation": "词根本身可作动词、形容词用：tampak + 形容词（tampak sepi 看起来冷清）。同词根：tampaknya（看样子、似乎）、menampakkan（显露出）、penampakan（出现、显形）、tampak depan（正面外观）。常见搭配：tampak biasa saja（看起来很普通）、tampak bersih（看上去干净）、tampak lelah（显得疲惫）。",
+      "example": "Dari luar, rumah tua itu tampak biasa saja, padahal sejarahnya panjang sekali.",
+      "example_cn": "从外面看，那栋老房子看起来很普通，其实它的历史非常悠久。",
+      "synonym_note": "tampak、terlihat、kelihatan 都能说“看起来”，意思基本一样：tampak 和 terlihat 多用在叙述、书面里；kelihatan 是日常说话最常用的。tampaknya ≈ sepertinya（看样子），表示推测。口语说法：keliatan（Kamu keliatan capek）；写文章、讲故事时用 tampak 或 terlihat。",
+      "usage_note": "今晚新词。描述“外表和实际不一样”时常配 padahal：… tampak …, padahal …。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "adil",
+      "display": "adil",
+      "audio_text": "adil",
+      "cn": "公平的；公正的",
+      "en": "fair; just",
+      "root": "adil",
+      "root_cn": "公平；公正",
+      "formation": "形容词。同词根：keadilan（公正、正义）、mengadili（审判）、pengadilan（法院）。常见搭配：tidak adil（不公平）、pembagian yang adil（公平的分配）、secara adil（公平地）、bersikap adil（态度公正）。",
+      "example": "Bagi tugasnya yang adil, dong. Jangan cuma ngandelin anak yang paling rajin.",
+      "example_cn": "任务分得公平一点嘛。别总是指望最勤快的那个孩子。（ngandelin = mengandalkan）",
+      "synonym_note": "adil 是“公平、合理”，不一定等于 sama rata（平均分、每人一样多）：哥哥交通费贵多分一点，也可以是 adil 的。反义：tidak adil、berat sebelah（偏向一边）。口语里也说 adil，最常听到的是抱怨：Nggak adil, dong!（太不公平了吧！）；没有另一种口语形式。",
+      "usage_note": "今晚新词。表达不满时说 Itu tidak adil（口语 Nggak adil），讲分配时说 dibagi secara adil。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "bijak",
+      "display": "bijak",
+      "audio_text": "bijak",
+      "cn": "明智的；有分寸的",
+      "en": "wise; sensible",
+      "root": "bijak",
+      "root_cn": "明智",
+      "formation": "形容词。同词根：bijaksana（贤明、明智，更书面）、kebijaksanaan（智慧）、kebijakan（政策、规定——今晚的复习词，就是 ke-an + bijak）。常见搭配：keputusan yang bijak（明智的决定）、menjawab dengan bijak（回答得很有分寸）、memakai HP secara bijak（理性地用手机）。",
+      "example": "Orang tua yang bijak tidak membandingkan anaknya dengan anak tetangga.",
+      "example_cn": "明智的父母不会拿自己的孩子跟邻居家的孩子比。",
+      "synonym_note": "bijak 是判断力好、处事得体，偏“有智慧”；pintar 是“聪明、学得快”。聪明的人不一定 bijak。bijaksana 和 bijak 意思相同，更正式，常用来称赞长辈、领导。口语里也说 bijak（Jawabannya bijak banget），没有另一种口语形式。",
+      "usage_note": "今晚新词。和复习词 kebijakan 一起记：bijak（明智的）→ kebijakan（机构定的做法、政策）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "dimaksudkan",
+      "display": "dimaksudkan",
+      "audio_text": "dimaksudkan",
+      "cn": "意在；目的是；（被）打算用来……",
+      "en": "to be intended (for / to)",
+      "root": "maksud",
+      "root_cn": "意思；目的",
+      "formation": "di- + maksud + -kan → dimaksudkan（被动形）。同词根：maksud（意思、目的）、bermaksud（打算、有意）、yang dimaksud（所指的那个）、maksudnya（意思是）。常见句型：X dimaksudkan untuk …（X 是用来……的）、X dimaksudkan agar / supaya …（X 的目的是让……）、dimaksudkan sebagai …（本意是当作……）。",
+      "example": "Surat dari pengelola apartemen itu dimaksudkan sebagai pengingat, bukan ancaman.",
+      "example_cn": "公寓管理处发的那封信本意是提醒，不是威胁。",
+      "synonym_note": "dimaksudkan 强调“制定者的本意”：Aturan ini dimaksudkan agar …；bertujuan 是“以……为目标”，主语自己带着目的：Program ini bertujuan … 两者在说规定、计划的目的时常能互换。注意 yang dimaksud（所说的那个）不带 -kan。口语说法：maksudnya biar … / tujuannya biar …（Maksudnya biar kita nggak telat）；解释规定、写通知时用 dimaksudkan。",
+      "usage_note": "最近答错过的词。今晚放在“小区新规定”里：Kebijakan itu dimaksudkan agar …。先记住后面接 agar / supaya / untuk / sebagai。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "memanggil",
+      "display": "memanggil",
+      "audio_text": "memanggil",
+      "cn": "叫；喊；叫来；召见",
+      "en": "to call (someone); to summon",
+      "root": "panggil",
+      "root_cn": "叫；呼唤",
+      "formation": "meN- + panggil → memanggil（p 脱落，同 memakai ← pakai）。被动 dipanggil（被叫去、被召见）；名词 panggilan（称呼；来电；召唤）。常见搭配：memanggil nama（叫名字）、memanggil tukang / dokter（叫师傅、叫医生来）、memanggil warga（召集居民）、dipanggil atasan（被上司叫去）。",
+      "example": "Satpam memanggil pemilik mobil merah itu lewat pengeras suara karena lampu mobilnya masih menyala.",
+      "example_cn": "保安用广播喊那辆红车的车主，因为车灯还亮着。",
+      "synonym_note": "memanggil 是“叫某人来、喊名字、召集”；mengundang 是正式“邀请”（mengundang ke pesta 请去聚会）；menelepon 是“打电话”。叫人来开会，用 memanggil 带有“召集”的意味，用 mengundang 更客气。口语说法：manggil（Siapa yang manggil aku?），叫师傅口语说 panggil tukang aja；正式通知、叙述时用 memanggil。",
+      "usage_note": "留意 p 脱落：panggil → memanggil。被叫去说 dipanggil（Saya dipanggil Pak RT）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "aliran",
+      "display": "aliran",
+      "audio_text": "aliran",
+      "cn": "水流；（电、资金的）流；流派",
+      "en": "flow, current; (school of) thought",
+      "root": "alir",
+      "root_cn": "流；流动",
+      "formation": "alir + -an → aliran（名词）。今晚和 mengalir 一组复习：mengalir 是动词“流”，aliran 是名词“流动的东西或方向”。常见搭配：aliran air（水流）、aliran sungai（河流）、aliran listrik（电流、供电）、aliran dana（资金流向）、aliran musik（音乐流派）。",
+      "example": "Aliran listrik di wilayah kami terputus sejak sore, jadi kami makan malam pakai lilin.",
+      "example_cn": "我们这一片从傍晚起就断电了，所以我们点着蜡烛吃晚饭。",
+      "synonym_note": "aliran 是一般的“流、流向”；arus 偏“有力的流、水势”：arus sungai deras（河水湍急）、arus lalu lintas（车流）。aliran 还能指“流派”（aliran musik jazz），arus 不这样用。口语说法：停电日常直接说 mati lampu / listrik mati；新闻、通知里说 aliran listrik terputus / padam。",
+      "usage_note": "和 mengalir 同词根一组：先说名词 aliran air tersumbat（水流堵了），再说动词 air mengalir lagi（水又流了）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengalir",
+      "display": "mengalir",
+      "audio_text": "mengalir",
+      "cn": "流；流动；（话语、气氛）自然地进行",
+      "en": "to flow",
+      "root": "alir",
+      "root_cn": "流；流动",
+      "formation": "meN- + alir → mengalir（元音开头用 meng-）。同词根：aliran（水流）、mengalirkan（引流、让……流过去）、dialiri（被灌溉、被……流过）。常见搭配：air mengalir（流水；自来水）、mengalir deras（流得很急）、keringat mengalir（汗直流）、obrolan mengalir（聊得很自然）。",
+      "example": "Obrolan kami mengalir begitu saja sampai kami lupa waktu.",
+      "example_cn": "我们聊着聊着就停不下来，连时间都忘了。",
+      "synonym_note": "mengalir 是“自己流”，不接宾语：Airnya mengalir；mengalirkan 是“把……引过去”，要接宾语：mengalirkan air ke sawah（把水引到田里）；aliran 是名词。口语说法：ngalir（Airnya udah ngalir lagi）；书面、叙述用 mengalir。",
+      "usage_note": "和 aliran 同词根一组。除了水，也常说谈话 mengalir（聊得顺），表示气氛自然。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kebijakan",
+      "display": "kebijakan",
+      "audio_text": "kebijakan",
+      "cn": "政策；（机构、店家、小区定的）规定、做法",
+      "en": "policy",
+      "root": "bijak",
+      "root_cn": "明智的",
+      "formation": "ke-an + bijak → kebijakan。和今晚新词 bijak 同词根；另有 kebijaksanaan（智慧、贤明，意思不同，别混）。常见搭配：kebijakan baru（新规定）、mengumumkan kebijakan（宣布政策）、menerapkan kebijakan（实行政策）、kebijakan perusahaan / pemerintah（公司、政府政策）。",
+      "example": "Kebijakan baru toko itu cukup ketat: barang yang sudah dibeli tidak bisa ditukar.",
+      "example_cn": "那家店的新规定挺严：已经买下的东西不能换。",
+      "synonym_note": "kebijakan 是机构、负责人决定的“做法、政策”，可以没写成条文；peraturan 是正式写下来的“条例、法规”；aturan 是一般的“规矩、规定”，说话最常用。小区、公司的新规定三个词都能用，kebijakan 更强调“是领导层做的决定”。口语说法：aturan（Aturan barunya gitu）；开会、写通知用 kebijakan。",
+      "usage_note": "最近答错过的词。今晚和新词 bijak 一起记：kebijakan 的词根就是 bijak。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "buruk",
+      "display": "buruk",
+      "audio_text": "buruk",
+      "cn": "坏的；差的；糟糕的",
+      "en": "bad; poor",
+      "root": "buruk",
+      "root_cn": "坏的；差的",
+      "formation": "今天08:00新学（早上是办公室的网络信号很差）。同词根：memburuk（变坏、恶化）、keburukan（坏处、缺点）、buruk sangka（往坏处想）。常见搭配：cuaca buruk（恶劣天气）、kebiasaan buruk（坏习惯）、kabar buruk（坏消息）、pelayanan buruk（服务差）。",
+      "example": "Kebiasaan buruk saya adalah main HP sampai lewat tengah malam, padahal besok harus bangun pagi.",
+      "example_cn": "我的坏习惯是玩手机玩到半夜过后，可第二天还得早起。",
+      "synonym_note": "buruk 和 jelek 都是“差、不好”：buruk 多说质量、天气、习惯、消息、服务；jelek 更口语，还能指“难看”（bajunya jelek）。说气味难闻不用 buruk，说 bau tidak sedap / bau busuk。口语说法：jelek（Sinyalnya jelek banget）；正式场合用 buruk。",
+      "usage_note": "今天08:00新学。早上说网络信号差，今晚换到吃饭和生活习惯：pelayanan buruk、kebiasaan buruk。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "khususnya",
+      "display": "khususnya",
+      "audio_text": "khususnya",
+      "cn": "尤其是；特别是",
+      "en": "especially; in particular",
+      "root": "khusus",
+      "root_cn": "特别的；专门的",
+      "formation": "今天08:00新学（早上用在报告里点出重点）。khusus + -nya → khususnya，放在要强调的对象前。同词根：khusus（专门的：harga khusus 特价）、mengkhususkan（专门留给）、secara khusus（特别地）。常见搭配：khususnya kalau …（尤其是……的时候）、khususnya untuk …（特别是对……来说）。",
+      "example": "Hati-hati belanja online, khususnya di akun baru yang harganya jauh lebih murah; banyak orang sudah ditipu dengan cara itu.",
+      "example_cn": "网购要小心，尤其是那些价格便宜得多的新账号；很多人就是这样被骗的。",
+      "synonym_note": "khususnya 和 terutama 意思基本一样，可以互换；terutama 在日常说话里更常用。khusus 本身是形容词“专门的”，不能代替 khususnya 放在句中强调。口语说法：apalagi（Hati-hati, apalagi kalau malem）或 terutama；写通知、报告时用 khususnya。",
+      "usage_note": "今天08:00新学。早上在报告里用，今晚换到小区通知和吃饭：…, khususnya yang / kalau …。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Tiap hujan deras, gang belakang kompleks Bu Lestari selalu tergenang. Ternyata aliran air di selokan tersumbat sampah plastik. Kamis malam, Pak RT memanggil semua warga ke balai warga. Ia mengumumkan kebijakan baru: setiap Minggu pagi, tiap rumah wajib mengirim satu orang untuk kerja bakti. Kebijakan itu dimaksudkan agar air hujan bisa mengalir lagi ke sungai. Beberapa warga keberatan, khususnya yang sering bertugas ke luar kota saat akhir pekan. \"Itu tidak adil,\" kata Pak Yudi, salah satu dari mereka. Pak RT diam beberapa detik, lalu menjawab dengan bijak: warga yang tidak bisa datang boleh menyumbang uang untuk membayar tukang. Minggu itu, selokan yang tadinya penuh sampah tampak bersih. Sorenya hujan turun lagi, tetapi gang belakang tidak tergenang.",
+    "cn": "每逢下大雨，Lestari 太太家小区后面的小巷总会积水。原来是水沟里的水流被塑料垃圾堵住了。星期四晚上，居委会主任把所有居民叫到居民活动室。他宣布了一项新规定：每个星期天早上，每户必须派一个人参加集体大扫除。这项规定的目的是让雨水能重新流进河里。有些居民不太愿意，尤其是那些周末经常去外地出差的人。“这不公平。”Yudi 先生说，他就是其中之一。居委会主任沉默了几秒，然后很有分寸地回答：来不了的居民可以捐钱，用来请工人。那个星期天，原本塞满垃圾的水沟看上去干干净净。当天傍晚又下雨了，可后巷没有再积水。"
+  },
+  "dialogue": {
+    "title": "Dewi 没去开会，问邻居 Sari：居委会宣布了什么？",
+    "lines": [
+      {
+        "speaker": "Dewi",
+        "id": "Sar, semalam aku nggak dateng ke balai warga. HP-ku lagi di-cas di kamar, jadi aku nggak liat pesan Pak RT. Ada apa, sih?",
+        "cn": "Sari，昨晚我没去活动室。手机在房间里充电，所以没看到主任发的消息。到底什么事呀？（nggak = tidak，dateng = datang，liat = lihat，di-cas = diisi baterainya）"
+      },
+      {
+        "speaker": "Sari",
+        "id": "Pak RT ngumumin aturan baru. Tiap Minggu pagi, satu orang dari tiap rumah wajib ikut kerja bakti bersihin selokan.",
+        "cn": "主任宣布了新规定。每个星期天早上，每家要出一个人参加大扫除，清理水沟。（ngumumin = mengumumkan，bersihin = membersihkan）"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Oh, gara-gara gang belakang kebanjiran terus, ya?",
+        "cn": "哦，是因为后巷老是被水淹吧？"
+      },
+      {
+        "speaker": "Sari",
+        "id": "Iya. Kalau dibiarin, masalahnya bisa ngerembet ke mana-mana: nyamuk, bau, sampai penyakit.",
+        "cn": "对。要是放着不管，问题会牵连一大串：蚊子、臭味，甚至生病。（dibiarin = dibiarkan）"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Tapi suamiku sering tugas ke luar kota pas akhir pekan. Masa aku terus yang turun ke selokan?",
+        "cn": "可我老公周末经常去外地出差。难道每次都得我下水沟？（pas = pada saat）"
+      },
+      {
+        "speaker": "Sari",
+        "id": "Pak Yudi juga protes, katanya nggak adil. Kayaknya dia sekalian nyindir Pak RT.",
+        "cn": "Yudi 先生也抗议了，说这不公平。他好像还顺带挖苦了主任几句。（kayaknya = sepertinya，nyindir = menyindir）"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Terus Pak RT jawab apa?",
+        "cn": "那主任怎么回答？（jawab = menjawab）"
+      },
+      {
+        "speaker": "Sari",
+        "id": "Aku bukan mau membela Pak RT, tapi jawabannya bijak. Yang nggak bisa dateng boleh nyumbang uang, nanti uangnya dipakai bayar tukang.",
+        "cn": "我不是要替主任说话，但他的回答挺有分寸。来不了的人可以捐钱，到时候用这笔钱请工人。（nyumbang = menyumbang）"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Oke, adil juga, sih. Minggu ini aku ikut dulu, deh, biar kenal sama tetangga yang lain.",
+        "cn": "好吧，这也算公平。这个星期天我先去参加，顺便认识一下其他邻居。（sama = dengan）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取（换场景：家里）：你和兄弟姐妹轮流在周末陪妈妈，可最近总是你去。在家庭群里说说现在的情况，并提出一个更合理的办法。用 tampak、adil、bijak，像跟家人说话那样用口语，写 3–4 句。",
+      "reference_answer": "Jadwal nemenin Mama tiap akhir pekan selama ini tampak rapi, tapi kenyataannya aku yang paling sering dateng. Menurutku itu nggak adil. Yang paling bijak, kita gantian tiap minggu, dan kalau ada yang nggak bisa, dia tukar sendiri sama yang lain. Selanjutnya, jadwalnya kita taruh di grup ini biar semua inget gilirannya.",
+      "reference_cn": "每个周末陪妈妈的安排一直看起来很整齐，可实际上去得最多的是我。我觉得这不公平。最明智的办法是我们每周轮流，谁去不了就自己跟别人换。接下来，咱们把排班放在这个群里，这样大家都记得轮到自己。（nemenin = menemani，dateng = datang，nggak = tidak，gantian = bergantian，sama = dengan，inget = ingat）"
+    },
+    {
+      "task": "弱词应用（换场景：健身房）：你常去的健身房出了一条新规定。向刚办卡的朋友说明这条规定是什么、本意是什么，以及你现在的感受。用 kebijakan 和 dimaksudkan，写 3 句。",
+      "reference_answer": "Di tempat gym saya ada kebijakan baru: tiap orang hanya boleh memakai treadmill paling lama tiga puluh menit. Kebijakan ini dimaksudkan supaya semua anggota mendapat giliran pada jam ramai. Awalnya saya susah membayangkan latihan sesingkat itu, tapi hasilnya nyata: sekarang saya tidak perlu antre lama lagi.",
+      "reference_cn": "我常去的健身房有一条新规定：每人最多只能用跑步机三十分钟。这条规定的本意是让所有会员在高峰时段都能轮得上。一开始我很难想象练得这么短，但效果很明显：现在我不用再排很久的队了。"
+    },
+    {
+      "task": "早课迁移（换场景，不在办公室）：朋友想去汽车站旁边那家小饭馆吃饭，你劝她别去，说说你上次的经历。用今天08:00新学的 buruk 和 khususnya，口语，写 3–4 句。",
+      "reference_answer": "Jangan makan di warung dekat terminal itu, deh. Pelayanannya buruk banget, khususnya kalau lagi rame. Kemarin kami nunggu empat puluh menit, terus pesanannya salah. Akhirnya kami pulang belum kenyang.",
+      "reference_cn": "别去汽车站旁边那家小饭馆吃了。服务特别差，尤其是人多的时候。上次我们等了四十分钟，结果还上错了菜。最后我们没吃饱就回家了。（rame = ramai，nunggu = menunggu）"
+    },
+    {
+      "task": "场景回应：你租的房间一早就没水了。给房东发一条礼貌的消息：说明情况、你观察到了什么，并请他叫人来修。用 aliran、mengalir 和 memanggil，写 3–4 句。",
+      "reference_answer": "Selamat pagi, Pak. Aliran air di kamar mandi saya berhenti sejak tadi pagi. Airnya cuma mengalir beberapa detik, lalu mati lagi. Saya sudah memperhatikan keran tetangga, ternyata airnya juga kecil. Apa Bapak bisa memanggil tukang ledeng hari ini?",
+      "reference_cn": "早上好，先生。我房间浴室的水从今天早上起就停了。水只流了几秒钟就又没了。我留意了一下邻居的水龙头，发现他们的水也很小。您今天能叫个水管工来吗？"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "邻居在群里说：“Selokannya sudah dibersihkan kemarin. Sekarang air hujan bisa ___ dengan lancar ke sungai.” 选最自然的一项：",
+        "options": [
+          "aliran",
+          "mengalirkan",
+          "alirannya",
+          "mengalir"
+        ],
+        "answer_index": 3,
+        "answer": "mengalir",
+        "explain": "空格前是 bisa，后面要接动词，主语 air hujan 是自己在流，不接宾语，所以用 mengalir。mengalirkan 是“把……引过去”，后面必须有宾语（mengalirkan air ke sungai）；aliran、alirannya 是名词，不能放在 bisa 后面当谓语。"
+      },
+      {
+        "type": "choice",
+        "prompt": "新同事问 HR：为什么公司不让大家晚上八点以后在工作群里发消息？HR 回答：“Aturan itu ___ supaya pegawai bisa benar-benar istirahat di rumah.” 选最自然的一项：",
+        "options": [
+          "bermaksud",
+          "dimaksudkan",
+          "dimaksud",
+          "maksud"
+        ],
+        "answer_index": 1,
+        "answer": "dimaksudkan",
+        "explain": "规定本身不会“打算”，是制定的人赋予它目的，所以用被动的 dimaksudkan supaya …（目的是让……）。bermaksud 的主语要是人（Saya bermaksud pindah）；dimaksud 多用在 yang dimaksud（所指的那个），后面不接 supaya；maksud 是名词，放在这里语法不通。"
+      },
+      {
+        "type": "choice",
+        "prompt": "妈妈给两个孩子零花钱，上中学的哥哥每天要坐公交，所以多给了一些。妹妹不高兴，妈妈说：“Kakak dapat lebih banyak karena ongkos sekolahnya lebih mahal. Menurut Ibu, pembagian ini sudah ___.” 选最自然的一项：",
+        "options": [
+          "bijak",
+          "sama rata",
+          "adil",
+          "kebijakan"
+        ],
+        "answer_index": 2,
+        "answer": "adil",
+        "explain": "妈妈强调分配合理，用 adil：公平不等于每人一样多。sama rata 是“平均分”，和“哥哥多拿”正好矛盾；bijak 形容人或决定“明智”，不用来形容 pembagian 本身；kebijakan 是名词“政策”，接在 sudah 后面不通。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Tunggu sepuluh ______ lagi, airnya pasti keluar.（秒）",
+        "answer": "detik",
+        "explain": "计时的“秒”是 detik：sepuluh detik（十秒）。不计数的“一会儿”才说 sebentar（Tunggu sebentar）。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Dari luar, kafe itu ______ sepi, padahal di dalamnya penuh.（看起来）",
+        "answer": "tampak",
+        "explain": "tampak + 形容词 = 看起来……，常和 padahal（其实）搭配，表示外表和实际不一样。terlihat、口语 keliatan 也可以说同样的意思。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：星期四晚上，居委会主任把所有居民叫到了居民活动室。",
+        "tokens": [
+          "Kamis malam,",
+          "Pak RT",
+          "memanggil",
+          "semua warga",
+          "ke",
+          "balai warga."
+        ],
+        "answer": "Kamis malam, Pak RT memanggil semua warga ke balai warga.",
+        "answer_cn": "星期四晚上，居委会主任把所有居民叫到了居民活动室。",
+        "explain": "memanggil + 人 + ke + 地点 = 把某人叫到某处。注意 panggil 的 p 脱落：meN- + panggil → memanggil；被叫的一方说 dipanggil（Semua warga dipanggil ke balai warga）。"
+      }
+    ],
+    "self_check": [
+      "不看中文：detik、tampak、adil、bijak 这四个新词，我能在 3 秒内说出意思吗？",
+      "dimaksudkan 和 kebijakan 这两个最近答错过的词，我一看到就能想起意思吗？",
+      "aliran 和 mengalir 哪个是名词、哪个是动词，我分得清吗？",
+      "memanggil 的词根是什么、为什么 p 不见了，我能马上说出来吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘（主动输出，不重复自检）",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "易混输出：先用 aliran 说一句你家附近的水或电（如 Aliran air di … tersumbat），再用 mengalir 说它恢复了；然后用 bijak 夸一个你认识的人做过的决定，再用 kebijakan 说你公司或学校的一条规定。",
+      "早课迁移（换场景，不在办公室）：用 buruk 说一个你想改掉的坏习惯，再用 khususnya 说你在什么情况下最容易犯。",
+      "30 秒脱稿复述：后巷为什么总积水、居委会主任宣布了什么规定、谁觉得不公平、最后怎么解决。至少用上 dimaksudkan agar、adil、bijak、tampak 中的三个。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "dimaksudkan",
+      "adil",
+      "tampak"
+    ],
+    "patterns": [
+      {
+        "pattern": "… dimaksudkan agar …",
+        "cn": "……的目的（本意）是让……",
+        "example": "Kebijakan itu dimaksudkan agar air hujan bisa mengalir lagi ke sungai.",
+        "example_cn": "这项规定的目的是让雨水能重新流进河里。"
+      },
+      {
+        "pattern": "Dari luar, … tampak …, padahal …",
+        "cn": "从外面看……显得……，其实……",
+        "example": "Dari luar, rumah tua itu tampak biasa saja, padahal sejarahnya panjang sekali.",
+        "example_cn": "从外面看，那栋老房子看起来很普通，其实它的历史非常悠久。"
+      }
+    ]
+  }
+}
