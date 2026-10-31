@@ -242,39 +242,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "babi rusa",
-    "cn": "鹿猪",
-    "en": "babirusa",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "macan tutul",
-    "cn": "豹",
-    "en": "leopard",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "orang utan",
-    "cn": "红毛猩猩",
-    "en": "orangutan",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "beruang",
     "cn": "熊",
     "en": "bear",
@@ -327,17 +294,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "",
     "bipa_level": "A1",
     "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "cendrawasih",
-    "cn": "极乐鸟",
-    "en": "bird-of-paradise",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
     "selection": "fuzzy"
   },
   {
