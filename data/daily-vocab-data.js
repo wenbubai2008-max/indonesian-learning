@@ -1914,29 +1914,34 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "bawain",
     "cn": "帮带来、给某人带",
-    "en": "",
+    "en": "to bring/carry for someone (colloquial)",
     "root": "bawa",
     "categories": [
       "每日学习",
       "08:00",
-      "原始课程"
+      "原始课程",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-01 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-29",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-01"
     ],
-    "example": "Bisa bawain aku air?",
-    "example_cn": "能帮我带瓶水吗？",
+    "example": "Kalau besok jadi berkunjung ke rumah Nenek, bawain buah, ya.",
+    "example_cn": "明天要是去奶奶家，记得给她带点水果哦。",
     "lesson_occurrences": [
       "2026-08-29 08:00",
-      "2026-10-02 08:00"
-    ]
+      "2026-10-02 08:00",
+      "2026-11-01 18:00"
+    ],
+    "root_cn": "带；拿"
   },
   {
     "word": "kepikiran",
@@ -9831,16 +9836,16 @@ window.DAILY_VOCAB_DB = [
     "en": "intention; intent",
     "root": "niat",
     "root_cn": "打算；意图",
-    "example": "Saya punya niat menyelesaikan pekerjaan ini hari ini.",
-    "example_cn": "我打算今天完成这项工作。",
+    "example": "Kalau memang niat bantu, datang aja besok pagi, bantu aku beresin gudang.",
+    "example_cn": "如果真心想帮忙，明天早上就来吧，帮我收拾仓库。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-11-01 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9851,7 +9856,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-27",
       "2026-10-01",
       "2026-10-02",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-01"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
@@ -9861,7 +9867,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-01 08:00",
       "2026-10-01 18:00",
       "2026-10-02 08:00",
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-11-01 18:00"
     ]
   },
   {
@@ -10231,23 +10238,27 @@ window.DAILY_VOCAB_DB = [
     "en": "activity; activities",
     "root": "giat",
     "root_cn": "积极；活跃；勤奋",
-    "example": "Kegiatan tim bulan ini rencananya dibuat lebih santai.",
-    "example_cn": "这个月的团队活动计划安排得轻松一些。",
+    "example": "Kegiatan pramuka di sekolah ditunda seminggu karena lapangannya masih becek.",
+    "example_cn": "学校的童军活动延期一周，因为操场还是一片泥泞。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 08:00",
+    "last_seen": "2026-11-01 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-11-01"
     ],
     "lesson_occurrences": [
-      "2026-09-14 08:00"
+      "2026-09-14 08:00",
+      "2026-11-01 18:00"
     ]
   },
   {
@@ -20768,16 +20779,16 @@ window.DAILY_VOCAB_DB = [
     "en": "regular; orderly",
     "root": "atur",
     "root_cn": "安排、整理",
-    "example": "Olahraga teratur bisa membantu mencegah sakit punggung.",
-    "example_cn": "规律运动可以帮助预防腰背痛。",
+    "example": "Sejak minum obat dengan teratur, gejala alerginya jauh berkurang.",
+    "example_cn": "自从按时吃药以后，他的过敏症状减轻了很多。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-12 18:00",
-    "last_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -20790,7 +20801,8 @@ window.DAILY_VOCAB_DB = [
     "lesson_occurrences": [
       "2026-10-12 18:00",
       "2026-10-27 18:00",
-      "2026-11-01 08:00"
+      "2026-11-01 08:00",
+      "2026-11-01 18:00"
     ]
   },
   {
@@ -25942,23 +25954,25 @@ window.DAILY_VOCAB_DB = [
     "en": "smooth; fluent",
     "root": "lancar",
     "root_cn": "顺畅",
-    "example": "Berkat polisi yang berjaga di bundaran, lalu lintas pagi ini lancar.",
-    "example_cn": "多亏有警察在环岛执勤，今天早上的交通很顺畅。",
+    "example": "Untung perjalanan ke Bandung lancar, nggak macet dan nggak ada ban bocor.",
+    "example_cn": "幸好去万隆一路顺利，不堵车，也没爆胎。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-27 18:00",
-    "last_seen": "2026-10-27 18:00",
+    "last_seen": "2026-11-01 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-27"
+      "2026-10-27",
+      "2026-11-01"
     ],
     "lesson_occurrences": [
-      "2026-10-27 18:00"
+      "2026-10-27 18:00",
+      "2026-11-01 18:00"
     ]
   },
   {
@@ -27378,23 +27392,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to float",
     "root": "apung",
     "root_cn": "浮",
-    "example": "Pelatih ini punya metode sederhana: murid belajar mengapung dulu, baru belajar gerakan kaki.",
-    "example_cn": "这位教练的方法很简单：学员先学漂浮，再学腿部动作。",
+    "example": "Cara gampang cek telur: masukkan ke air. Kalau telurnya mengapung, berarti sudah lama.",
+    "example_cn": "检查鸡蛋的简单方法：放进水里。如果鸡蛋浮起来，说明已经放很久了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-01 08:00",
-    "last_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-01"
     ],
     "lesson_occurrences": [
-      "2026-11-01 08:00"
+      "2026-11-01 08:00",
+      "2026-11-01 18:00"
     ]
   },
   {
@@ -27453,23 +27470,26 @@ window.DAILY_VOCAB_DB = [
     "en": "body; agency",
     "root": "badan",
     "root_cn": "身体；机构",
-    "example": "Kalau badanmu masih panas, jangan ikut berenang dulu, ya.",
-    "example_cn": "你要是身上还发烫（发烧），就先别去游泳了啊。",
+    "example": "Habis begadang ngerjain skripsi, badanku pegal semua.",
+    "example_cn": "熬夜赶毕业论文之后，我浑身酸痛。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-01 08:00",
-    "last_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-01"
     ],
     "lesson_occurrences": [
-      "2026-11-01 08:00"
+      "2026-11-01 08:00",
+      "2026-11-01 18:00"
     ]
   },
   {
@@ -27595,6 +27615,81 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-01 08:00"
+    ]
+  },
+  {
+    "word": "subuh",
+    "cn": "黎明；晨礼时分",
+    "en": "dawn; the time of the dawn prayer",
+    "root": "subuh",
+    "root_cn": "黎明；晨礼",
+    "example": "Di desa nenek saya, kebanyakan penduduk sudah bangun sebelum subuh untuk pergi ke sawah.",
+    "example_cn": "在我奶奶的村子里，大多数居民天亮前就起床下田了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 18:00",
+    "last_seen": "2026-11-01 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 18:00"
+    ]
+  },
+  {
+    "word": "bergetar",
+    "cn": "震动；颤动",
+    "en": "to vibrate; to shake slightly",
+    "root": "getar",
+    "root_cn": "振动；颤动",
+    "example": "Kaca jendela bergetar setiap kali truk besar lewat di depan rumah.",
+    "example_cn": "每次有大卡车从家门口经过，窗玻璃都会震动。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 18:00",
+    "last_seen": "2026-11-01 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 18:00"
+    ]
+  },
+  {
+    "word": "titik",
+    "cn": "点；句号；（集合）点",
+    "en": "dot; full stop; point",
+    "root": "titik",
+    "root_cn": "点",
+    "example": "Cek lagi tanda titik dan koma sebelum kamu unggah tulisannya ke blog.",
+    "example_cn": "把文章上传到博客之前，再检查一下句号和逗号。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 18:00",
+    "last_seen": "2026-11-01 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 18:00"
     ]
   }
 ];

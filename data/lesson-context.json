@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-01",
-    "session": "pm",
-    "time": "18:00",
-    "day": 72
+    "date": "2026-11-02",
+    "session": "am",
+    "time": "08:00",
+    "day": 73
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-01T09:40:50.032Z",
-    "lesson_watermark": "2026-11-01 08:00",
+    "runtime_generated_at": "2026-11-01T10:51:17.719Z",
+    "lesson_watermark": "2026-11-01 18:00",
     "index_updated": "2026-11-01",
-    "runtime_hash": "8a761733a7ef42188e64e27710b0e542d5ccc5e74ab26efe4b9ae6969eb35d5f",
-    "index_hash": "380261cadba181ec395569b3b69c769bfb106cf408a5335e966107ac8b706d3e",
+    "runtime_hash": "24fae8bc1f6fafe277bf230d439178ee26200b30780eb3dfc5687dc557c80f96",
+    "index_hash": "ce20199ae1d3d2a438160de8043586ecd093968ec6fe2ada543cb8ae780dd4a1",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -71,10 +71,6 @@
         "星期三"
       ],
       [
-        "titik",
-        "点、滴"
-      ],
-      [
         "fakta",
         "事实"
       ],
@@ -89,10 +85,6 @@
       [
         "datar",
         "平坦的"
-      ],
-      [
-        "bergetar",
-        "震动"
       ],
       [
         "nilai",
@@ -149,10 +141,6 @@
       [
         "negara",
         "国家"
-      ],
-      [
-        "subuh",
-        "黎明；晨礼时间"
       ],
       [
         "tangkap",
@@ -889,16 +877,6 @@
         "态度；立场；举止",
         "sikap",
         "态度；立场"
-      ],
-      [
-        "kegiatan",
-        2,
-        0,
-        "",
-        "2026-10-15T13:37:15.268Z",
-        "活动；要做的事情",
-        "giat",
-        "积极；活跃；勤奋"
       ],
       [
         "khusus",
@@ -2341,16 +2319,6 @@
         "已经"
       ],
       [
-        "bawain",
-        2,
-        0,
-        "",
-        "2026-10-15T08:17:51.208Z",
-        "帮带来、给某人带",
-        "bawa",
-        ""
-      ],
-      [
         "becek",
         2,
         0,
@@ -2361,94 +2329,24 @@
         "泥泞"
       ],
       [
-        "memukul",
-        3,
+        "berantem",
+        2,
         0,
         "",
-        "2026-11-01T04:11:19.981Z",
-        "打；击打",
-        "pukul",
-        "打；击；（时间）点钟"
+        "2026-10-19T13:14:48.750Z",
+        "打架；吵架",
+        "antem",
+        "打；争吵"
       ],
       [
-        "sungguh",
-        3,
+        "bercerai",
+        2,
         0,
         "",
-        "2026-11-01T04:11:33.807Z",
-        "真的；实在；确实",
-        "sungguh",
-        "真的；确实"
-      ],
-      [
-        "gaya",
-        3,
-        0,
-        "",
-        "2026-11-01T04:11:12.559Z",
-        "风格；样式；（游泳）泳姿",
-        "gaya",
-        "风格；样式"
-      ],
-      [
-        "badan",
-        3,
-        0,
-        "",
-        "2026-11-01T04:11:08.270Z",
-        "身体；（政府）机构",
-        "badan",
-        "身体；机构"
-      ],
-      [
-        "lemah",
-        3,
-        0,
-        "",
-        "2026-11-01T04:11:13.701Z",
-        "弱的；虚弱的；无力的",
-        "lemah",
-        "弱"
-      ],
-      [
-        "perintah",
-        3,
-        0,
-        "",
-        "2026-11-01T04:11:28.735Z",
-        "命令；指令",
-        "perintah",
-        "命令"
-      ],
-      [
-        "terbang",
-        3,
-        0,
-        "",
-        "2026-11-01T04:11:36.360Z",
-        "飞；（坐飞机）飞往",
-        "terbang",
-        "飞"
-      ],
-      [
-        "positif",
-        3,
-        0,
-        "",
-        "2026-11-01T04:11:30.490Z",
-        "积极的；正面的；（检测）阳性",
-        "positif",
-        "积极的；阳性的"
-      ],
-      [
-        "maupun",
-        3,
-        0,
-        "",
-        "2026-11-01T04:11:16.207Z",
-        "以及；（baik…maupun…）……和……都",
-        "maupun",
-        "以及"
+        "2026-10-19T13:14:54.657Z",
+        "离婚；分开",
+        "cerai",
+        "分开；离婚"
       ]
     ],
     "focus": [
@@ -2714,45 +2612,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-10-25",
-      "session": "am",
-      "review_core": [
-        "nyelip",
-        "nyelipin",
-        "unduh",
-        "pingsan",
-        "bentrok"
-      ],
-      "new_words": [
-        "dompet",
-        "lapor",
-        "kejadian",
-        "petugas",
-        "penumpang",
-        "menangkap",
-        "malahan",
-        "ramah",
-        "berhasil",
-        "terakhir"
-      ]
-    },
-    {
-      "date": "2026-10-25",
-      "session": "pm",
-      "review_core": [
-        "menerapkan",
-        "kebaca",
-        "kepepet",
-        "ketutup",
-        "masuk akal"
-      ],
-      "new_words": [
-        "kebijakan",
-        "mengakhiri",
-        "angka"
-      ]
-    },
-    {
       "date": "2026-10-26",
       "session": "am",
       "review_core": [
@@ -3013,106 +2872,40 @@
         "positif",
         "maupun"
       ]
+    },
+    {
+      "date": "2026-11-01",
+      "session": "pm",
+      "review_core": [
+        "teratur",
+        "niat",
+        "lancar",
+        "bawain",
+        "kegiatan"
+      ],
+      "new_words": [
+        "subuh",
+        "bergetar",
+        "titik"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-10-31",
+    "date": "2026-11-01",
     "new_words": [
-      "detik",
-      "tampak",
-      "adil",
-      "bijak"
+      "subuh",
+      "bergetar",
+      "titik"
     ],
     "review_core": [
-      "dimaksudkan",
-      "memanggil",
-      "aliran",
-      "mengalir",
-      "kebijakan"
-    ]
-  },
-  "same_day_am": {
-    "date": "2026-11-01",
-    "vocab": [
-      [
-        "memukul",
-        "打；击打",
-        "to hit; to strike",
-        "pukul",
-        "打；击；（时间）点钟"
-      ],
-      [
-        "mengapung",
-        "漂浮；浮在水面上",
-        "to float",
-        "apung",
-        "浮"
-      ],
-      [
-        "sungguh",
-        "真的；实在；确实",
-        "truly; really",
-        "sungguh",
-        "真的；确实"
-      ],
-      [
-        "gaya",
-        "风格；样式；（游泳）泳姿",
-        "style; (swimming) stroke",
-        "gaya",
-        "风格；样式"
-      ],
-      [
-        "badan",
-        "身体；（政府）机构",
-        "body; agency",
-        "badan",
-        "身体；机构"
-      ],
-      [
-        "lemah",
-        "弱的；虚弱的；无力的",
-        "weak",
-        "lemah",
-        "弱"
-      ],
-      [
-        "perintah",
-        "命令；指令",
-        "command; order",
-        "perintah",
-        "命令"
-      ],
-      [
-        "terbang",
-        "飞；（坐飞机）飞往",
-        "to fly",
-        "terbang",
-        "飞"
-      ],
-      [
-        "positif",
-        "积极的；正面的；（检测）阳性",
-        "positive",
-        "positif",
-        "积极的；阳性的"
-      ],
-      [
-        "maupun",
-        "以及；（baik…maupun…）……和……都",
-        "both … and …; as well as",
-        "maupun",
-        "以及"
-      ]
-    ],
-    "review_vocab": [
-      "atur",
       "teratur",
-      "adil",
-      "kemungkinan besar",
-      "hasil"
+      "niat",
+      "lancar",
+      "bawain",
+      "kegiatan"
     ]
   },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
