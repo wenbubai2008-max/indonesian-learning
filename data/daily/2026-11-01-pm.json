@@ -1,0 +1,363 @@
+{
+  "date": "2026-11-01",
+  "session": "pm",
+  "time": "18:00",
+  "day": 72,
+  "title": "18:00 晚课｜Gempa Subuh di Apartemen: Turun ke Titik Kumpul · 黎明公寓地震：有序撤到集合点",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "subuh",
+    "bergetar",
+    "titik"
+  ],
+  "vocab": [
+    {
+      "word": "subuh",
+      "display": "subuh",
+      "audio_text": "subuh",
+      "cn": "黎明；晨礼时分",
+      "en": "dawn; the time of the dawn prayer",
+      "root": "subuh",
+      "root_cn": "黎明；晨礼",
+      "formation": "词根本身是名词（来自阿拉伯语）。常见搭配：salat subuh（晨礼）、waktu subuh（黎明时分）、sejak subuh（从天刚亮起）、menjelang subuh（快天亮时）、azan subuh（晨礼的宣礼声）。重叠 subuh-subuh 表示“一大早”。",
+      "example": "Di desa nenek saya, kebanyakan penduduk sudah bangun sebelum subuh untuk pergi ke sawah.",
+      "example_cn": "在我奶奶的村子里，大多数居民天亮前就起床下田了。",
+      "synonym_note": "subuh 指天刚亮前后、做晨礼的那段时间（大约 4:30–5:30），比 pagi 更早；fajar 是“曙光、黎明”，偏书面；dini hari 指半夜到凌晨（大约 1–4 点），新闻报道地震、事故时间常用 dini hari。口语说法：subuh-subuh（一大早，带“这么早”的语气），如 Subuh-subuh udah ditelepon bos（一大早就被老板打电话）。",
+      "usage_note": "今晚新词。在印尼，subuh 是很常用的时间参照：bangun sebelum subuh（天亮前起床）、berangkat habis subuh（晨礼后就出发）。不做礼拜的人也照样用 subuh 指这个时间。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "bergetar",
+      "display": "bergetar",
+      "audio_text": "bergetar",
+      "cn": "震动；颤动",
+      "en": "to vibrate; to shake slightly",
+      "root": "getar",
+      "root_cn": "振动；颤动",
+      "formation": "ber- + getar（振动）。同词根：getaran（震动、震感，名词）、menggetarkan（使震动；使心灵震撼）、gemetar（getar 加中缀 -em-，人因冷或害怕发抖）。常见搭配：HP bergetar（手机震动）、kaca jendela bergetar（窗玻璃震动）、tanah bergetar（地面震动）、suaranya bergetar（声音发颤）。",
+      "example": "Kaca jendela bergetar setiap kali truk besar lewat di depan rumah.",
+      "example_cn": "每次有大卡车从家门口经过，窗玻璃都会震动。",
+      "synonym_note": "bergetar 是快速、小幅度的震动，主语多是物体或声音；bergoyang 是摇晃、晃动，幅度更大（lampu bergoyang 灯在晃）；gemetar 多说人因冷、害怕、紧张而发抖（tangannya gemetar）。说人的声音发颤时，suaranya bergetar 和 suaranya gemetar 都可以。口语说法：geter（HP-nya geter terus 手机一直在震），正式场合说 bergetar。",
+      "usage_note": "今晚新词。最常用的两个场景：手机震动（HP saya bergetar），以及地震或大车经过时窗户、地面在震。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "titik",
+      "display": "titik",
+      "audio_text": "titik",
+      "cn": "点；句号；（集合）点",
+      "en": "dot; full stop; point",
+      "root": "titik",
+      "root_cn": "点",
+      "formation": "词根本身是名词。常见搭配：titik kumpul（集合点）、tanda titik（句号）、titik-titik air（水珠）、titik terang（眉目、线索：kasusnya mulai menemukan titik terang）、titik awal（起点）。",
+      "example": "Cek lagi tanda titik dan koma sebelum kamu unggah tulisannya ke blog.",
+      "example_cn": "把文章上传到博客之前，再检查一下句号和逗号。",
+      "synonym_note": "titik 是“点”：句号、地图上的点、集合点；印尼语写数字时千位用 titik（1.000 = 一千），小数用 koma（2,5 读作 dua koma lima），和中文习惯相反。tetes 是“滴”，说液体更常用（setetes air 一滴水）。koma 是逗号。",
+      "usage_note": "今晚新词。印尼的公寓、商场、办公楼里随处可见绿色的 TITIK KUMPUL（紧急集合点）标志；写作时 tanda titik 就是句号。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "teratur",
+      "display": "teratur",
+      "audio_text": "teratur",
+      "cn": "有规律的；有秩序的",
+      "en": "regular; orderly",
+      "root": "atur",
+      "root_cn": "安排、整理",
+      "formation": "ter- + atur（安排、整理）。同词根：mengatur（安排、调节）、aturan（规矩）、peraturan（法规）。常见搭配：olahraga teratur（规律运动）、minum obat dengan teratur（按时吃药）、secara teratur（定期地）、keluar dengan teratur（有序地离开）。",
+      "example": "Sejak minum obat dengan teratur, gejala alerginya jauh berkurang.",
+      "example_cn": "自从按时吃药以后，他的过敏症状减轻了很多。",
+      "synonym_note": "teratur 有两层意思：①有规律、按时（olahraga teratur）；②有秩序、整齐（turun dengan teratur）。tertib 偏“守秩序、守规矩”，在排队、撤离这类场合两者都可以用；rutin 是“例行的、经常做的”，只讲频率，不讲秩序。别和 lancar（顺利）混：撤离 berjalan lancar 说的是结果顺利，turun dengan teratur 说的是过程有秩序。",
+      "usage_note": "最近答错过的词。今天08:00早课里它是“有规律”（latihan teratur），今晚练第二个意思“有秩序”：Para penghuni turun dengan teratur（住户们有序地下楼）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "niat",
+      "display": "niat",
+      "audio_text": "niat",
+      "cn": "打算；意图；用心",
+      "en": "intention; to be serious about doing something",
+      "root": "niat",
+      "root_cn": "打算；意图",
+      "formation": "词根本身是名词（来自阿拉伯语）。派生：berniat（打算，较正式：Saya berniat pindah kerja）、meniatkan（下定心意要……）。常见搭配：niat baik（好意）、niatnya mau …（本来打算……）、kalau memang niat（如果真有心）、nggak niat（不上心）。",
+      "example": "Kalau memang niat bantu, datang aja besok pagi, bantu aku beresin gudang.",
+      "example_cn": "如果真心想帮忙，明天早上就来吧，帮我收拾仓库。",
+      "synonym_note": "niat 是心里真的想做、并且认真打算做；maksud 偏“想表达的意思、用意”（Apa maksudmu? 你什么意思？）；tujuan 是“目标、目的地”；rencana 是具体的计划安排。口语说法：niat 常当形容词用，Dia niat banget（他很用心、很拼）、Kalau nggak niat, mending nggak usah（不上心就别做）；正式场合说 berniat 或 bersungguh-sungguh。",
+      "usage_note": "已经答错过三次的词，这次换题型练。最典型的口语句型：Niatnya mau …, eh malah …（本来想……，结果却……）；劝人时说 Kalau nggak niat, …（要是不上心，……）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "lancar",
+      "display": "lancar",
+      "audio_text": "lancar",
+      "cn": "顺利；顺畅；流利",
+      "en": "smooth; fluent",
+      "root": "lancar",
+      "root_cn": "顺畅",
+      "formation": "词根本身是形容词。派生：kelancaran（顺利，名词：demi kelancaran acara 为了活动顺利）、memperlancar（使更顺畅）、melancarkan（使顺畅；发动（攻击））。常见搭配：berjalan lancar（进行顺利）、lalu lintas lancar（交通顺畅）、lancar berbahasa Inggris（英语流利）。",
+      "example": "Untung perjalanan ke Bandung lancar, nggak macet dan nggak ada ban bocor.",
+      "example_cn": "幸好去万隆一路顺利，不堵车，也没爆胎。",
+      "synonym_note": "lancar 是“没卡住、顺顺当当”：说事情进展、交通、说话流利都可以。teratur 讲“有规律、有秩序”，不等于快或顺；mulus 是“平滑、一路顺利”，在“事情顺利”这层意思上两者都能说（semuanya lancar / semuanya mulus）。口语说法：lancar jaya（顺得不得了，带玩笑语气）。",
+      "usage_note": "最近答错过的词。打招呼常说 Semoga lancar, ya!（祝一切顺利！）；问对方情况可以只说 Lancar?（顺利吗？）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bawain",
+      "display": "bawain",
+      "audio_text": "bawain",
+      "cn": "帮（某人）带；给（某人）拿",
+      "en": "to bring/carry for someone (colloquial)",
+      "root": "bawa",
+      "root_cn": "带；拿",
+      "formation": "bawa（带、拿）+ 口语后缀 -in，相当于标准语 membawakan（为某人带来）。同词根：bawa（带）、bawaan（随身带的东西；天生的）、kebawa（不小心被带走；被影响：kebawa suasana 被气氛带动）。",
+      "example": "Kalau besok jadi berkunjung ke rumah Nenek, bawain buah, ya.",
+      "example_cn": "明天要是去奶奶家，记得给她带点水果哦。",
+      "synonym_note": "bawa 只讲“带着”这个动作；bawain 多了“为别人带、帮别人拿”：Aku bawain kue buat kamu（我给你带了蛋糕）、Sini, aku bawain tasnya（来，我帮你拿包）。正式写作用 membawakan（Ia membawakan ibunya obat）。membawakan 还有“表演、演唱”的意思（membawakan lagu），口语也说 bawain lagu。",
+      "usage_note": "口语词，朋友、家人之间最常用。主动帮忙时说 Sini, aku bawain.（来，我帮你拿。）家人出门前常叮嘱 Jangan lupa bawain oleh-oleh, ya!（别忘了给我们带特产！）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kegiatan",
+      "display": "kegiatan",
+      "audio_text": "kegiatan",
+      "cn": "活动；要做的事情",
+      "en": "activity",
+      "root": "giat",
+      "root_cn": "积极；勤奋",
+      "formation": "ke- + giat（积极、勤奋）+ -an。同词根：giat（勤奋：giat belajar）、menggiatkan（加强、推动）。常见搭配：kegiatan sehari-hari（日常活动）、kegiatan sekolah（学校活动）、kegiatan sosial（公益活动）、kegiatan dibatalkan / ditunda（活动取消／延期）。",
+      "example": "Kegiatan pramuka di sekolah ditunda seminggu karena lapangannya masih becek.",
+      "example_cn": "学校的童军活动延期一周，因为操场还是一片泥泞。",
+      "synonym_note": "kegiatan 是有组织的或日常的“活动、要做的事”；acara 偏有时间安排的节目、聚会、仪式（acara ulang tahun 生日会）；aktivitas 和 kegiatan 意思接近，多数时候可以互换，说个人日常时 aktivitas sehari-hari 也很常见。",
+      "usage_note": "很久没复习的老词。说活动取消、延期常用被动：Kegiatan senam pagi dibatalkan.（早操活动取消了。）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengapung",
+      "display": "mengapung",
+      "audio_text": "mengapung",
+      "cn": "漂浮；浮在水面上",
+      "en": "to float",
+      "root": "apung",
+      "root_cn": "浮",
+      "formation": "meN- + apung（浮）→ mengapung（漂浮）。同词根：terapung（漂着的，多作修饰语：pasar terapung 水上市场、rumah terapung 水上屋）、mengapungkan（使漂起来）。今天08:00新学。",
+      "example": "Cara gampang cek telur: masukkan ke air. Kalau telurnya mengapung, berarti sudah lama.",
+      "example_cn": "检查鸡蛋的简单方法：放进水里。如果鸡蛋浮起来，说明已经放很久了。",
+      "synonym_note": "mengapung 是“浮在水面上”，反义词是 tenggelam（沉下去）；terapung 表示“处于漂浮状态”，常放在名词后面作修饰；hanyut 是“被水冲走”，强调随水流漂走。",
+      "usage_note": "今天08:00新学（早课在游泳课里学“身体浮起来”），今晚换到厨房、河边等完全不同的场景来用。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "badan",
+      "display": "badan",
+      "audio_text": "badan",
+      "cn": "身体；（政府）机构",
+      "en": "body; agency",
+      "root": "badan",
+      "root_cn": "身体；机构",
+      "formation": "词根本身是名词。两个常用义：①身体（badan pegal 浑身酸痛、berat badan 体重）；②机构（Badan Meteorologi, Klimatologi, dan Geofisika，简称 BMKG，印尼气象、气候与地球物理局）。派生：berbadan（有……身材：berbadan tinggi 个子高）。今天08:00新学。",
+      "example": "Habis begadang ngerjain skripsi, badanku pegal semua.",
+      "example_cn": "熬夜赶毕业论文之后，我浑身酸痛。",
+      "synonym_note": "说“身体”时 badan 最口语、最常用（badan saya nggak enak 我身体不舒服）；tubuh 偏书面和描写（tubuh manusia 人体）。说“机构”时 badan 多出现在政府机构的正式名称里；lembaga 是一般的“机构、组织”。",
+      "usage_note": "今天08:00新学（早课里是“身体”：badan Rina mulai mengapung）。今晚阅读练它的第二个意思“机构”：地震后看 BMKG（气象局）的通报。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Minggu pagi sebelum pukul lima, Dimas sudah bangun untuk salat subuh. Tiba-tiba lampu di kamarnya bergoyang dan kaca jendela apartemennya bergetar cukup keras. Ia segera membangunkan neneknya yang tidur di kamar sebelah. Lewat pengeras suara, petugas gedung meminta semua penghuni turun lewat tangga darurat menuju titik kumpul di lapangan parkir. Para penghuni turun dengan teratur; tidak ada yang berlari atau saling mendorong. Karena itu, evakuasi berjalan lancar. Di bawah, Dimas membaca kabar dari Badan Meteorologi, Klimatologi, dan Geofisika: gempanya berkekuatan 5,1 dan tidak berpotensi tsunami. Kegiatan senam pagi di taman apartemen dibatalkan. Setengah jam kemudian, penghuni boleh kembali ke unit masing-masing, dan kehidupan di gedung itu pelan-pelan kembali normal.",
+    "cn": "星期天早上不到五点，迪马斯已经起床准备做晨礼。突然，他房间的灯晃了起来，公寓的窗玻璃也震得相当厉害。他赶紧叫醒睡在隔壁房间的奶奶。大楼工作人员通过广播，要求所有住户走紧急楼梯下楼，前往停车场的集合点。住户们有序地下楼，没有人奔跑，也没有人互相推挤。因此，疏散进行得很顺利。到了楼下，迪马斯看了印尼气象、气候与地球物理局（BMKG）的消息：这次地震震级 5.1，没有引发海啸的可能。公寓花园里的早操活动取消了。半小时后，住户可以回到各自的房间，楼里的生活也慢慢恢复了正常。"
+  },
+  "dialogue": {
+    "title": "集合点上：迪马斯遇到邻居约加",
+    "lines": [
+      {
+        "speaker": "Yoga",
+        "id": "Dim! Aku nyari kamu dari tadi. Kamu sama Nenek aman?",
+        "cn": "阿迪！我找你半天了。你和奶奶都没事吧？（nyari = mencari，sama = dengan）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Aman, Ga. Untung tadi aku udah bangun buat salat subuh, jadi pas jendela bergetar, aku langsung bangunin Nenek.",
+        "cn": "没事，阿加。幸好我刚才已经起来做晨礼了，所以窗户一震，我马上就把奶奶叫醒了。（udah = sudah，buat = untuk，pas = saat，bangunin = membangunkan）"
+      },
+      {
+        "speaker": "Yoga",
+        "id": "Aku malah masih tidur. Niatnya mau bangun pagi buat jogging, eh malah kebangun gara-gara gempa.",
+        "cn": "我反而还在睡。本来打算早起去慢跑的，结果是被地震晃醒的。（kebangun = terbangun，gara-gara = karena）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Nenek belum minum dari tadi. Kamu bawa air, nggak?",
+        "cn": "奶奶到现在还没喝水。你带水了吗？（nggak = tidak）"
+      },
+      {
+        "speaker": "Yoga",
+        "id": "Bawa. Nih, aku bawain dua botol, satu buat Nenek.",
+        "cn": "带了。给，我给你们带了两瓶，一瓶给奶奶。（bawain = membawakan）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Makasih, ya. Ternyata simulasi evakuasi bulan lalu ada manfaatnya. Turunnya lancar, nggak ada yang dorong-dorongan.",
+        "cn": "谢谢啊。原来上个月的疏散演练真的有用。下楼很顺利，没有人推来推去。（makasih = terima kasih，dorong-dorongan = saling mendorong）"
+      },
+      {
+        "speaker": "Yoga",
+        "id": "Iya. Kata petugas, setengah jam lagi kita baru boleh naik.",
+        "cn": "是啊。工作人员说，要再过半小时我们才能上楼。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Ya udah, kita tunggu di sini aja dulu. Nek, duduk dulu di bangku ini, ya.",
+        "cn": "那好吧，我们先在这儿等着。奶奶，您先坐这张长椅吧。（aja = saja，Nek = Nenek）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：用 subuh 和 bergetar 写 2–3 句话，讲一次你一大早被手机吵醒的经历（不要写地震）。",
+      "reference_answer": "Tadi subuh HP saya bergetar terus di samping bantal. Ternyata kakak saya mengirim pesan: pesawatnya sudah mendarat dan dia mau langsung berkunjung ke rumah. Dia minta dijemput karena takut nyasar.",
+      "reference_cn": "今天天刚亮，我枕边的手机一直在震。原来是我哥发来消息：他的飞机已经落地，想直接来家里。他让我去接他，因为怕走错路。"
+    },
+    {
+      "task": "弱词应用：用 niat 和 teratur 说一个你今年想坚持的习惯，并说明为什么光有想法不够（2–3 句）。",
+      "reference_answer": "Niat saya tahun ini sederhana: olahraga teratur, minimal tiga kali seminggu, supaya tubuh lebih bugar. Tapi niat saja tidak cukup. Kalau tidak dijalani, semuanya sia-sia.",
+      "reference_cn": "我今年的打算很简单：规律运动，每周至少三次，让身体更健康。但光有打算还不够。如果不去做，一切都是白费。"
+    },
+    {
+      "task": "早课迁移（不写游泳课）：用今天08:00新学的 mengapung 和 badan，描述一次社区清理小河的经历（2–3 句）。",
+      "reference_answer": "Setelah hujan semalaman, banyak sampah plastik mengapung di kali dekat rumah. Warga dibagi menjadi tiga kelompok dan membersihkannya sampai siang. Sekarang badan saya pegal semua, tapi kalinya jadi bersih.",
+      "reference_cn": "下了一整夜雨之后，家附近的小河上漂着很多塑料垃圾。居民分成三组，一直清理到中午。现在我浑身酸痛，不过小河变干净了。"
+    },
+    {
+      "task": "场景回应（口语）：朋友问你昨天公司的户外活动怎么样，用 lancar、kegiatan 和 bawain 回答，并顺手把带给他的东西给他。",
+      "reference_answer": "Lancar, kok. Kegiatan pertamanya senam bareng di taman yang sejuk, terus lanjut lomba antartim. Nih, aku bawain kue dari sana buat kamu.",
+      "reference_cn": "挺顺利的。第一个活动是在凉爽的公园里一起做操，然后是团队比赛。给，我从那儿给你带了蛋糕。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "邻居在群里抱怨：“Rumahku di pinggir jalan raya. Setiap kali truk besar lewat, kaca jendelaku ___.” 选最自然的一项：",
+        "options": [
+          "gemetar",
+          "bergetar",
+          "getaran",
+          "menggetarkan"
+        ],
+        "answer_index": 1,
+        "answer": "bergetar",
+        "explain": "主语是 kaca jendela（窗玻璃），物体自己小幅震动，用不及物的 bergetar。gemetar 多说人因冷、怕、紧张而发抖（tangannya gemetar），不用来说窗户；getaran 是名词“震动”，不能直接当谓语；menggetarkan 是“使……震动”，后面要接宾语。"
+      },
+      {
+        "type": "choice",
+        "prompt": "朋友办了三个月健身卡一次都没去，还说下个月要续卡。你劝他：“Kalau memang nggak ___, mending duitnya ditabung aja.” 选最自然的一项：",
+        "options": [
+          "maksud",
+          "tujuan",
+          "arti",
+          "niat"
+        ],
+        "answer_index": 3,
+        "answer": "niat",
+        "explain": "口语 nggak niat 是“不上心、没真想做”，正好说他只办卡不去。maksud 是“用意、意思”（Apa maksudmu?），nggak maksud 不这么说；tujuan 是“目标”，arti 是“意思、含义”，放进这句都不通。"
+      },
+      {
+        "type": "choice",
+        "prompt": "同事问你今天早上开车上班的路况。你说：“Tumben, jalan tol pagi ini ___ banget. Dari rumah ke kantor cuma 25 menit.” 选最自然的一项：",
+        "options": [
+          "teratur",
+          "tertib",
+          "lancar",
+          "rajin"
+        ],
+        "answer_index": 2,
+        "answer": "lancar",
+        "explain": "说交通顺畅、不堵车用 lancar（lalu lintas lancar）。teratur、tertib 说的是有秩序、守规矩，车再守规矩也可能很堵，不能表示“快、顺”；rajin 是形容人勤快，不能形容道路。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kata dokter, obatnya harus diminum dengan ______, jangan cuma kalau ingat.（有规律地、按时）",
+        "answer": "teratur",
+        "explain": "dengan teratur / secara teratur = 有规律地、按时。minum obat dengan teratur 是最常见的搭配。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Pasar ikan itu sudah ramai sejak ______, sebelum matahari terbit.（黎明、晨礼时分）",
+        "answer": "subuh",
+        "explain": "sejak subuh = 从天刚亮（晨礼时分）起。比 pagi 更早，后面的 sebelum matahari terbit（日出前）也点明了时间。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：所有住户都要前往停车场的集合点。",
+        "tokens": [
+          "Semua penghuni",
+          "harus",
+          "menuju",
+          "titik kumpul",
+          "di",
+          "lapangan parkir."
+        ],
+        "answer": "Semua penghuni harus menuju titik kumpul di lapangan parkir.",
+        "answer_cn": "所有住户都要前往停车场的集合点。",
+        "explain": "titik kumpul = 集合点（紧急疏散标志上的固定说法）；menuju + 地点 = 前往某处；地点短语 di lapangan parkir 放在名词后面修饰 titik kumpul。"
+      }
+    ],
+    "self_check": [
+      "不看中文：subuh、bergetar、titik 这三个新词，我能在 3 秒内说出意思吗？",
+      "lancar 和 teratur 这两个最近答错过的词，我分得清哪个是“顺利”、哪个是“有规律／有秩序”吗？",
+      "niat 在 “Kalau nggak niat …” 里是什么意思，我能马上说出来吗？",
+      "bawain 和 bawa 差在哪里、kegiatan 的词根是什么，我还记得吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘（主动输出，不重复自检）",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "易混输出：用 bergetar 说一样会震动的东西（手机、窗户或地面），再用 gemetar 说一次你紧张或冷得发抖的经历；然后用 lancar 说一件最近很顺利的事，用 teratur 说一个你在坚持的规律习惯。",
+      "常错词搭配：用 Niatnya mau …, eh malah … 说一件你计划好却没做成的事，再用 Kalau nggak niat, … 劝一个朋友一句。",
+      "早课迁移（换场景，不在游泳池）：用今天08:00新学的 mengapung 说一样你在厨房或河边看到浮着的东西，再用 badan 说说你今天身体的感觉。",
+      "30 秒脱稿复述：地震时 Dimas 在做什么、大家怎么撤到集合点、为什么撤离很顺利、BMKG 说了什么。至少用上 subuh、teratur、lancar、titik 中的三个。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "bergetar",
+      "niat",
+      "lancar"
+    ],
+    "patterns": [
+      {
+        "pattern": "Niatnya mau …, eh malah …",
+        "cn": "本来打算……，结果却……",
+        "example": "Niatnya mau bangun pagi buat jogging, eh malah kebangun gara-gara gempa.",
+        "example_cn": "本来打算早起去慢跑的，结果是被地震晃醒的。"
+      },
+      {
+        "pattern": "Untung …, jadi …",
+        "cn": "幸好……，所以……",
+        "example": "Untung tadi aku udah bangun buat salat subuh, jadi pas jendela bergetar, aku langsung bangunin Nenek.",
+        "example_cn": "幸好我刚才已经起来做晨礼了，所以窗户一震，我马上就把奶奶叫醒了。"
+      }
+    ]
+  }
+}
