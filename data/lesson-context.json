@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-01",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 72
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-10-31T14:00:55.602Z",
-    "lesson_watermark": "2026-10-31 18:00",
-    "index_updated": "2026-10-31",
-    "runtime_hash": "164e0441bb304df37f0d41f822bdc20d9ec135774b2e7e9b2f4f719a1d6ce8ba",
-    "index_hash": "eb03aa86c3e78f118665dfc7f61161d53b2d973197b3e925bb20197821e4f644",
+    "runtime_generated_at": "2026-11-01T00:31:39.535Z",
+    "lesson_watermark": "2026-11-01 08:00",
+    "index_updated": "2026-11-01",
+    "runtime_hash": "120f660a2f8bd83c43ca45cac8f78fc0668c7f5116fb1d3a58c7688b3f71cf88",
+    "index_hash": "380261cadba181ec395569b3b69c769bfb106cf408a5335e966107ac8b706d3e",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -51,24 +51,8 @@
     "new_dont": [],
     "new_fuzzy": [
       [
-        "memukul",
-        "击打"
-      ],
-      [
-        "mengapung",
-        "漂浮"
-      ],
-      [
-        "sungguh",
-        "真的"
-      ],
-      [
         "periode",
         "时期"
-      ],
-      [
-        "gaya",
-        "风格"
       ],
       [
         "penggunaan",
@@ -83,18 +67,6 @@
         "命运"
       ],
       [
-        "perintah",
-        "命令、指令"
-      ],
-      [
-        "maupun",
-        "以及/或者"
-      ],
-      [
-        "badan",
-        "身体，机构"
-      ],
-      [
         "rabu",
         "星期三"
       ],
@@ -105,18 +77,6 @@
       [
         "fakta",
         "事实"
-      ],
-      [
-        "positif",
-        "积极地"
-      ],
-      [
-        "terbang",
-        "飞"
-      ],
-      [
-        "lemah",
-        "虚弱的"
       ],
       [
         "menyukai",
@@ -1029,16 +989,6 @@
         "账单；应付款",
         "tagih",
         "催款；要求付款"
-      ],
-      [
-        "hasil",
-        3,
-        0,
-        "",
-        "2026-10-19T05:53:26.185Z",
-        "结果；成果",
-        "hasil",
-        "结果；成果"
       ],
       [
         "menarik",
@@ -2391,14 +2341,124 @@
         "已经"
       ],
       [
-        "atur",
+        "bawain",
         2,
         0,
         "",
-        "2026-10-19T13:14:13.767Z",
-        "安排；调整；管理",
-        "atur",
-        "安排；调整"
+        "2026-10-15T08:17:51.208Z",
+        "帮带来、给某人带",
+        "bawa",
+        ""
+      ],
+      [
+        "becek",
+        2,
+        0,
+        "",
+        "2026-10-19T13:14:33.178Z",
+        "泥泞的；湿漉漉的",
+        "becek",
+        "泥泞"
+      ],
+      [
+        "memukul",
+        3,
+        0,
+        "",
+        "",
+        "打；击打",
+        "pukul",
+        "打；击；（时间）点钟"
+      ],
+      [
+        "mengapung",
+        3,
+        0,
+        "",
+        "",
+        "漂浮；浮在水面上",
+        "apung",
+        "浮"
+      ],
+      [
+        "sungguh",
+        3,
+        0,
+        "",
+        "",
+        "真的；实在；确实",
+        "sungguh",
+        "真的；确实"
+      ],
+      [
+        "gaya",
+        3,
+        0,
+        "",
+        "",
+        "风格；样式；（游泳）泳姿",
+        "gaya",
+        "风格；样式"
+      ],
+      [
+        "badan",
+        3,
+        0,
+        "",
+        "",
+        "身体；（政府）机构",
+        "badan",
+        "身体；机构"
+      ],
+      [
+        "lemah",
+        3,
+        0,
+        "",
+        "",
+        "弱的；虚弱的；无力的",
+        "lemah",
+        "弱"
+      ],
+      [
+        "perintah",
+        3,
+        0,
+        "",
+        "",
+        "命令；指令",
+        "perintah",
+        "命令"
+      ],
+      [
+        "terbang",
+        3,
+        0,
+        "",
+        "",
+        "飞；（坐飞机）飞往",
+        "terbang",
+        "飞"
+      ],
+      [
+        "positif",
+        3,
+        0,
+        "",
+        "",
+        "积极的；正面的；（检测）阳性",
+        "positif",
+        "积极的；阳性的"
+      ],
+      [
+        "maupun",
+        3,
+        0,
+        "",
+        "",
+        "以及；（baik…maupun…）……和……都",
+        "maupun",
+        "以及"
       ]
     ],
     "focus": [
@@ -2940,6 +3000,29 @@
         "adil",
         "bijak"
       ]
+    },
+    {
+      "date": "2026-11-01",
+      "session": "am",
+      "review_core": [
+        "atur",
+        "teratur",
+        "adil",
+        "kemungkinan besar",
+        "hasil"
+      ],
+      "new_words": [
+        "memukul",
+        "mengapung",
+        "sungguh",
+        "gaya",
+        "badan",
+        "lemah",
+        "perintah",
+        "terbang",
+        "positif",
+        "maupun"
+      ]
     }
   ],
   "previous_pm": {
@@ -2958,7 +3041,88 @@
       "kebijakan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-01",
+    "vocab": [
+      [
+        "memukul",
+        "打；击打",
+        "to hit; to strike",
+        "pukul",
+        "打；击；（时间）点钟"
+      ],
+      [
+        "mengapung",
+        "漂浮；浮在水面上",
+        "to float",
+        "apung",
+        "浮"
+      ],
+      [
+        "sungguh",
+        "真的；实在；确实",
+        "truly; really",
+        "sungguh",
+        "真的；确实"
+      ],
+      [
+        "gaya",
+        "风格；样式；（游泳）泳姿",
+        "style; (swimming) stroke",
+        "gaya",
+        "风格；样式"
+      ],
+      [
+        "badan",
+        "身体；（政府）机构",
+        "body; agency",
+        "badan",
+        "身体；机构"
+      ],
+      [
+        "lemah",
+        "弱的；虚弱的；无力的",
+        "weak",
+        "lemah",
+        "弱"
+      ],
+      [
+        "perintah",
+        "命令；指令",
+        "command; order",
+        "perintah",
+        "命令"
+      ],
+      [
+        "terbang",
+        "飞；（坐飞机）飞往",
+        "to fly",
+        "terbang",
+        "飞"
+      ],
+      [
+        "positif",
+        "积极的；正面的；（检测）阳性",
+        "positive",
+        "positif",
+        "积极的；阳性的"
+      ],
+      [
+        "maupun",
+        "以及；（baik…maupun…）……和……都",
+        "both … and …; as well as",
+        "maupun",
+        "以及"
+      ]
+    ],
+    "review_vocab": [
+      "atur",
+      "teratur",
+      "adil",
+      "kemungkinan besar",
+      "hasil"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

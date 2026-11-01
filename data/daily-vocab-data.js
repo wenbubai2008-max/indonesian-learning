@@ -10103,22 +10103,24 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-13 19:00",
-    "last_seen": "2026-09-15 08:00",
+    "last_seen": "2026-11-01 08:00",
     "sessions": [
       "19:00",
       "08:00"
     ],
     "dates": [
       "2026-09-13",
-      "2026-09-15"
+      "2026-09-15",
+      "2026-11-01"
     ],
     "example": "Hasil akhirnya lebih baik daripada yang kami kira.",
     "example_cn": "最后的结果比我们原先想的更好。",
     "lesson_occurrences": [
       "2026-09-13 19:00",
-      "2026-09-15 08:00"
+      "2026-09-15 08:00",
+      "2026-11-01 08:00"
     ]
   },
   {
@@ -14839,20 +14841,22 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-26 18:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-01 08:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-09-26",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-01"
     ],
     "lesson_occurrences": [
       "2026-09-26 18:00",
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-11-01 08:00"
     ]
   },
   {
@@ -20768,21 +20772,25 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "规律运动可以帮助预防腰背痛。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-12 18:00",
-    "last_seen": "2026-10-27 18:00",
+    "last_seen": "2026-11-01 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-10-12",
-      "2026-10-27"
+      "2026-10-27",
+      "2026-11-01"
     ],
     "lesson_occurrences": [
       "2026-10-12 18:00",
-      "2026-10-27 18:00"
+      "2026-10-27 18:00",
+      "2026-11-01 08:00"
     ]
   },
   {
@@ -26910,19 +26918,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "去 Puncak 的路从今天早上起就封了，很可能又发生了塌方。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-30 18:00",
-    "last_seen": "2026-10-30 18:00",
+    "last_seen": "2026-11-01 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-01"
     ],
     "lesson_occurrences": [
-      "2026-10-30 18:00"
+      "2026-10-30 18:00",
+      "2026-11-01 08:00"
     ]
   },
   {
@@ -27291,19 +27303,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "任务分得公平一点嘛。别总是指望最勤快的那个孩子。（ngandelin = mengandalkan）",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-31 18:00",
-    "last_seen": "2026-10-31 18:00",
+    "last_seen": "2026-11-01 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
     "lesson_occurrences": [
-      "2026-10-31 18:00"
+      "2026-10-31 18:00",
+      "2026-11-01 08:00"
     ]
   },
   {
@@ -27329,6 +27345,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-31 18:00"
+    ]
+  },
+  {
+    "word": "memukul",
+    "cn": "打；击打",
+    "en": "to hit; to strike",
+    "root": "pukul",
+    "root_cn": "打；击；（时间）点钟",
+    "example": "Pemain itu memukul kok terlalu keras, jadi kok-nya keluar lapangan.",
+    "example_cn": "那名球员把羽毛球打得太用力，球出界了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 08:00"
+    ]
+  },
+  {
+    "word": "mengapung",
+    "cn": "漂浮；浮在水面上",
+    "en": "to float",
+    "root": "apung",
+    "root_cn": "浮",
+    "example": "Pelatih ini punya metode sederhana: murid belajar mengapung dulu, baru belajar gerakan kaki.",
+    "example_cn": "这位教练的方法很简单：学员先学漂浮，再学腿部动作。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 08:00"
+    ]
+  },
+  {
+    "word": "sungguh",
+    "cn": "真的；实在；确实",
+    "en": "truly; really",
+    "root": "sungguh",
+    "root_cn": "真的；确实",
+    "example": "Hari ini saya sungguh sial: ban motor bocor, lalu hujan turun deras.",
+    "example_cn": "我今天真倒霉：摩托车胎爆了，接着又下起了大雨。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 08:00"
+    ]
+  },
+  {
+    "word": "gaya",
+    "cn": "风格；样式；（游泳）泳姿",
+    "en": "style; (swimming) stroke",
+    "root": "gaya",
+    "root_cn": "风格；样式",
+    "example": "Ibu saya ganti gaya rambut. Sekarang rambutnya keriting, dan ubannya sudah diwarnai cokelat.",
+    "example_cn": "我妈妈换了发型。现在她是卷发，白头发也染成了棕色。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 08:00"
+    ]
+  },
+  {
+    "word": "badan",
+    "cn": "身体；（政府）机构",
+    "en": "body; agency",
+    "root": "badan",
+    "root_cn": "身体；机构",
+    "example": "Kalau badanmu masih panas, jangan ikut berenang dulu, ya.",
+    "example_cn": "你要是身上还发烫（发烧），就先别去游泳了啊。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 08:00"
+    ]
+  },
+  {
+    "word": "lemah",
+    "cn": "弱的；虚弱的；无力的",
+    "en": "weak",
+    "root": "lemah",
+    "root_cn": "弱",
+    "example": "Di dalam lift, sinyal HP saya selalu lemah.",
+    "example_cn": "在电梯里，我手机的信号总是很弱。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 08:00"
+    ]
+  },
+  {
+    "word": "perintah",
+    "cn": "命令；指令",
+    "en": "command; order",
+    "root": "perintah",
+    "root_cn": "命令",
+    "example": "Semua murid menunggu perintah pelatih sebelum masuk ke kolam.",
+    "example_cn": "所有学员下水前都在等教练的指令。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 08:00"
+    ]
+  },
+  {
+    "word": "terbang",
+    "cn": "飞；（坐飞机）飞往",
+    "en": "to fly",
+    "root": "terbang",
+    "root_cn": "飞",
+    "example": "Pesawat kami terbang jam enam pagi, jadi kami berangkat ke bandara jam tiga.",
+    "example_cn": "我们的飞机早上六点起飞，所以我们三点就出发去机场。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 08:00"
+    ]
+  },
+  {
+    "word": "positif",
+    "cn": "积极的；正面的；（检测）阳性",
+    "en": "positive",
+    "root": "positif",
+    "root_cn": "积极的；阳性的",
+    "example": "Hasil tes COVID-nya positif, jadi ia harus istirahat di rumah lima hari.",
+    "example_cn": "他的新冠检测结果是阳性，所以得在家休息五天。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 08:00"
+    ]
+  },
+  {
+    "word": "maupun",
+    "cn": "以及；（baik…maupun…）……和……都",
+    "en": "both … and …; as well as",
+    "root": "maupun",
+    "root_cn": "以及",
+    "example": "Baik pelatih maupun murid wajib memakai topi renang di kolam ini.",
+    "example_cn": "在这个泳池，教练和学员都必须戴泳帽。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-01 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-01"
+    ],
+    "lesson_occurrences": [
+      "2026-11-01 08:00"
     ]
   }
 ];
