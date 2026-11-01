@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-31T13:30:07.349Z",
+  "updated_at": "2026-11-01T03:12:06.095Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -27367,14 +27367,18 @@
     },
     "perpustakaan kota": {
       "word": "perpustakaan kota",
-      "status": "active",
-      "updated_at": "2026-10-14T07:01:25.689Z",
+      "status": "mastered",
+      "updated_at": "2026-10-31T13:28:10.982Z",
       "display": "perpustakaan kota",
       "cn": "市图书馆",
       "root": "pustaka",
+      "last_review": "2026-10-31T13:28:10.907Z",
+      "last_mastered": "2026-10-31T13:28:10.907Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
+        "training_excluded",
+        "training_excluded_rare",
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
