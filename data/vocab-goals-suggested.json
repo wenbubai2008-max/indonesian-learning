@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 886,
+   "use": 896,
    "recognize": 104,
    "unsure": 21,
    "fast": 134
   },
   "active": {
-   "use": 609,
+   "use": 619,
    "recognize": 88,
    "unsure": 19,
    "fast": 56
@@ -9328,6 +9328,96 @@
    "status": "active",
    "why": [
     "977 主库第 677 位"
+   ]
+  },
+  "memukul": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 466 位"
+   ]
+  },
+  "mengapung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 471 位"
+   ]
+  },
+  "sungguh": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 505 位"
+   ]
+  },
+  "gaya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 507 位"
+   ]
+  },
+  "badan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 589 位"
+   ]
+  },
+  "lemah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 687 位"
+   ]
+  },
+  "perintah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 529 位"
+   ]
+  },
+  "terbang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 653 位"
+   ]
+  },
+  "positif": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 651 位"
+   ]
+  },
+  "maupun": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 572 位"
    ]
   }
  }

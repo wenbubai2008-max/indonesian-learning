@@ -1452,17 +1452,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "perpustakaan kota",
-    "cn": "市图书馆",
-    "en": "city library",
-    "root": "pustaka",
-    "root_cn": "",
-    "formation": "per- + pustaka + -an",
-    "bipa_level": "A2",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "mendaki",
     "cn": "登山",
     "en": "hike / climb",
