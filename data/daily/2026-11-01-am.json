@@ -1,0 +1,436 @@
+{
+  "date": "2026-11-01",
+  "session": "am",
+  "time": "08:00",
+  "day": 72,
+  "level": "A2+ → B1",
+  "duration_minutes": 30,
+  "title": "08:00 早课｜Belajar Mengapung di Kelas Renang Minggu Pagi · 周日早上的游泳课：学会浮起来",
+  "new_words": [
+    "memukul",
+    "mengapung",
+    "sungguh",
+    "gaya",
+    "badan",
+    "lemah",
+    "perintah",
+    "terbang",
+    "positif",
+    "maupun"
+  ],
+  "vocab": [
+    {
+      "word": "memukul",
+      "display": "memukul",
+      "audio_text": "memukul",
+      "cn": "打；击打",
+      "en": "to hit; to strike",
+      "root": "pukul",
+      "root_cn": "打；击；（时间）点钟",
+      "formation": "meN- + pukul，p 脱落 → memukul（同 memakai、memotong）。同词根：pukulan（一击；击球，如 pukulannya keras）、dipukul（被打）、pemukul（球棒、球拍；打人的人）。常见搭配：memukul bola / kok（击球）、memukul meja（拍桌子）、memukul paku pakai palu（用锤子钉钉子）。注意 pukul 单用还表示“……点钟”：pukul tujuh。",
+      "example": "Pemain itu memukul kok terlalu keras, jadi kok-nya keluar lapangan.",
+      "example_cn": "那名球员把羽毛球打得太用力，球出界了。",
+      "synonym_note": "memukul 是用手或工具“打、击”。中文“打”用得很宽，但印尼语不都用 memukul：踢是 menendang，扇耳光是 menampar，打电话是 menelepon，打字是 mengetik。口语说法：mukul（Jangan mukul adikmu!）；正式场合和书面用 memukul。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengapung",
+      "display": "mengapung",
+      "audio_text": "mengapung",
+      "cn": "漂浮；浮在水面上",
+      "en": "to float",
+      "root": "apung",
+      "root_cn": "浮",
+      "formation": "meN- + apung，词根以元音开头，前缀变成 meng- → mengapung。同词根：terapung（漂浮着的状态，如 pasar terapung 水上市场）。反义：tenggelam（沉下去；溺水）。常见搭配：badan mengapung（身体浮起来）、mengapung di atas air（浮在水面上）。",
+      "example": "Pelatih ini punya metode sederhana: murid belajar mengapung dulu, baru belajar gerakan kaki.",
+      "example_cn": "这位教练的方法很简单：学员先学漂浮，再学腿部动作。",
+      "synonym_note": "mengapung 多说“（能）浮起来、浮在水上”这个动作或能力；terapung 多描述“漂在那里”的状态（sampah terapung di sungai 河里漂着垃圾）；描述漂浮物时两者常可互换。在空中“飘”用 melayang，不用 mengapung。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sungguh",
+      "display": "sungguh",
+      "audio_text": "sungguh",
+      "cn": "真的；实在；确实",
+      "en": "truly; really",
+      "root": "sungguh",
+      "root_cn": "真的；确实",
+      "formation": "整个词就是词根。同词根：sungguh-sungguh（认真地，如 belajar dengan sungguh-sungguh）、bersungguh-sungguh（下决心认真做）、sesungguhnya（其实；实际上）。用法：放在形容词前加强语气（sungguh indah 真美），或放句首表示“说真的”（Sungguh, saya tidak tahu.）。",
+      "example": "Hari ini saya sungguh sial: ban motor bocor, lalu hujan turun deras.",
+      "example_cn": "我今天真倒霉：摩托车胎爆了，接着又下起了大雨。",
+      "synonym_note": "sungguh 带一点郑重、真诚的语气，书面、演讲和认真表态时常用。口语说法：日常聊天更常说 beneran（Beneran, aku nggak tahu.＝我真的不知道）或在形容词后加 banget（senang banget）；sungguh 用在口语里会显得比较认真、动情。",
+      "is_oral_new": false
+    },
+    {
+      "word": "gaya",
+      "display": "gaya",
+      "audio_text": "gaya",
+      "cn": "风格；样式；（游泳）泳姿",
+      "en": "style; (swimming) stroke",
+      "root": "gaya",
+      "root_cn": "风格；样式",
+      "formation": "整个词就是词根。同词根：bergaya（摆姿势；打扮得很有派头）。常见搭配：gaya rambut（发型）、gaya hidup（生活方式）、gaya bicara（说话方式）；游泳四种泳姿：gaya bebas（自由泳）、gaya dada（蛙泳）、gaya punggung（仰泳）、gaya kupu-kupu（蝶泳）。",
+      "example": "Ibu saya ganti gaya rambut. Sekarang rambutnya keriting, dan ubannya sudah diwarnai cokelat.",
+      "example_cn": "我妈妈换了发型。现在她是卷发，白头发也染成了棕色。",
+      "synonym_note": "gaya 指做事、打扮、说话的“方式、风格”；model 多指具体的“款式”（model baju 衣服款式），说衣服时两者都能用（gaya berpakaian 穿衣风格 / model baju 款式）。口语里 gaya 还可以指“爱显摆、装酷”：Gayanya sok banget.",
+      "is_oral_new": false
+    },
+    {
+      "word": "badan",
+      "display": "badan",
+      "audio_text": "badan",
+      "cn": "身体；（政府）机构",
+      "en": "body; agency",
+      "root": "badan",
+      "root_cn": "身体；机构",
+      "formation": "整个词就是词根。常见搭配：badan pegal（浑身酸痛）、badannya panas（发烧）、berat badan（体重）、menjaga badan（保养身体）。第二个意思是“机构、局”：Badan Pusat Statistik（中央统计局）。",
+      "example": "Kalau badanmu masih panas, jangan ikut berenang dulu, ya.",
+      "example_cn": "你要是身上还发烫（发烧），就先别去游泳了啊。",
+      "synonym_note": "badan 和 tubuh 都是“身体”：日常说话 badan 更常用（badan pegal、badannya panas），“体重”最常说 berat badan；tubuh 偏书面和科普（tubuh manusia 人体），两者在很多句子里都能互换。",
+      "is_oral_new": false
+    },
+    {
+      "word": "lemah",
+      "display": "lemah",
+      "audio_text": "lemah",
+      "cn": "弱的；虚弱的；无力的",
+      "en": "weak",
+      "root": "lemah",
+      "root_cn": "弱",
+      "formation": "整个词就是词根。同词根：kelemahan（弱点、缺点）、melemah（变弱，如 sinyalnya melemah）。常见搭配：sinyal lemah（信号弱）、kaki masih lemah（腿还没力气）、badan lemah（身体虚弱）、lemah lembut（温柔）。",
+      "example": "Di dalam lift, sinyal HP saya selalu lemah.",
+      "example_cn": "在电梯里，我手机的信号总是很弱。",
+      "synonym_note": "lemah 说力量、能力、信号等“弱”，可以是长期状态；lemas 多说一时浑身没力气（饿了、累坏了、病刚好时：badan lemas），运动后累瘫一般说 lemas 或 capek。反义：kuat（强、有力）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "perintah",
+      "display": "perintah",
+      "audio_text": "perintah",
+      "cn": "命令；指令",
+      "en": "command; order",
+      "root": "perintah",
+      "root_cn": "命令",
+      "formation": "整个词就是词根。同词根：memerintahkan（命令某人做某事）、diperintahkan（被命令）、pemerintah（政府）、pemerintahan（政权；执政）。常见搭配：memberi perintah（下命令）、mengikuti perintah（听从指令）、menunggu perintah（等指令）。",
+      "example": "Semua murid menunggu perintah pelatih sebelum masuk ke kolam.",
+      "example_cn": "所有学员下水前都在等教练的指令。",
+      "synonym_note": "perintah 是正式的“命令、指令”，常用于上级、教练、系统指令。口语说法：日常“叫某人去做某事”更常用 suruh / nyuruh（Siapa yang nyuruh kamu?＝谁叫你去的？），被动 disuruh；instruksi 偏工作、技术说明。",
+      "is_oral_new": false
+    },
+    {
+      "word": "terbang",
+      "display": "terbang",
+      "audio_text": "terbang",
+      "cn": "飞；（坐飞机）飞往",
+      "en": "to fly",
+      "root": "terbang",
+      "root_cn": "飞",
+      "formation": "terbang 整个词就是词根，不是 ter- + bang。同词根：penerbangan（航班；飞行）、menerbangkan（放飞；驾驶飞行，如 menerbangkan layang-layang 放风筝）、beterbangan（到处飞）。常见搭配：terbang ke Medan（飞往棉兰）、burung terbang（鸟飞）、pesawat terbang（飞机）。",
+      "example": "Pesawat kami terbang jam enam pagi, jadi kami berangkat ke bandara jam tiga.",
+      "example_cn": "我们的飞机早上六点起飞，所以我们三点就出发去机场。",
+      "synonym_note": "说人“坐飞机去某地”，terbang ke … 和 naik pesawat ke … 都很常用；berangkat 只表示“出发”，不说明交通方式。",
+      "is_oral_new": false
+    },
+    {
+      "word": "positif",
+      "display": "positif",
+      "audio_text": "positif",
+      "cn": "积极的；正面的；（检测）阳性",
+      "en": "positive",
+      "root": "positif",
+      "root_cn": "积极的；阳性的",
+      "formation": "外来词（英语 positive），没有词缀变化。反义：negatif。常见搭配：berpikir positif（往好处想）、komentar positif（正面的评价）、dampak positif（积极影响）、hasil tes positif（检测结果阳性）。",
+      "example": "Hasil tes COVID-nya positif, jadi ia harus istirahat di rumah lima hari.",
+      "example_cn": "他的新冠检测结果是阳性，所以得在家休息五天。",
+      "synonym_note": "注意场合：评价、心态里 positif 是“好的、积极的”；医学检测里 positif 是“阳性”，也就是检出了病毒或病，并不是好消息。",
+      "is_oral_new": false
+    },
+    {
+      "word": "maupun",
+      "display": "maupun",
+      "audio_text": "maupun",
+      "cn": "以及；（baik…maupun…）……和……都",
+      "en": "both … and …; as well as",
+      "root": "maupun",
+      "root_cn": "以及",
+      "formation": "整个词记住即可。最常见的结构：baik A maupun B（A 和 B 都……）；也可以直接说 A maupun B。否定句里：baik A maupun B tidak …（A 和 B 都不……）。",
+      "example": "Baik pelatih maupun murid wajib memakai topi renang di kolam ini.",
+      "example_cn": "在这个泳池，教练和学员都必须戴泳帽。",
+      "synonym_note": "maupun 偏书面，常见于通知、规定和介绍；它强调“两者都包括在内”，比 dan 更正式。口语说法：聊天里一般直接用 dan 或 sama（Anak-anak sama orang tua boleh ikut.）。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "atur",
+    "teratur",
+    "adil",
+    "kemungkinan besar",
+    "hasil"
+  ],
+  "sentences": [
+    {
+      "text": "Minggu depan Rina harus terbang ke Medan untuk urusan kantor, jadi ia tidak bisa ikut kelas renang.",
+      "cn": "下周丽娜要飞去棉兰出差，所以她没法去上游泳课。"
+    },
+    {
+      "text": "Setelah memahami cara mengatur napas, Rina tidak panik lagi waktu wajahnya masuk ke air.",
+      "cn": "弄懂了怎么调整呼吸之后，丽娜把脸埋进水里时就不再慌了。"
+    },
+    {
+      "text": "Setelah sakit seminggu, badan Kakek masih lemah, jadi dokter belum mengizinkannya berenang.",
+      "cn": "病了一个星期之后，爷爷身体还很虚弱，所以医生还不让他游泳。"
+    },
+    {
+      "text": "Pelatih Rina selalu memberi komentar positif, jadi murid-muridnya tidak malu mencoba lagi.",
+      "cn": "丽娜的教练总是给正面的评价，所以学员们不怕丢脸、愿意再试一次。"
+    },
+    {
+      "text": "Eh, jangan mukul adikmu, dong! Dia kan masih kecil, wajar kalau agak manja.",
+      "cn": "哎，别打你弟弟啊！他还小嘛，有点爱撒娇很正常。（mukul = memukul；dong、kan 是口语语气词）"
+    }
+  ],
+  "reading": {
+    "text": "Rina berumur tiga puluh tahun, tetapi belum bisa berenang. Karena itu, setiap Minggu pagi ia ikut kelas renang di kolam dekat rumahnya. Kelas ini untuk anak-anak maupun orang dewasa. Sebelum masuk ke air, Rina melepas kalung dan gelangnya, lalu mengunci lokernya. Awalnya ia takut tenggelam, jadi badannya kaku. Pelatihnya memberi perintah sederhana: \"Tarik napas, atur napasmu, lalu rileks.\" Pelan-pelan, badan Rina mulai mengapung. Setelah itu, ia belajar gaya dada. Gerakan tangannya sudah benar, tetapi tendangan kakinya masih lemah. \"Tidak apa-apa,\" kata pelatihnya. \"Asalkan latihan teratur, kemungkinan besar bulan depan kamu sudah bisa berenang sendiri.\" Karena baru pertama kali bisa mengapung, pagi itu Rina sungguh senang.",
+    "cn": "丽娜已经三十岁了，可还不会游泳。所以每个星期天早上，她都去家附近的泳池上游泳课。这个班孩子和大人都可以参加。下水之前，丽娜摘下项链和手链，然后锁好储物柜。一开始她怕沉下去，所以身体很僵硬。教练给了简单的指令：“吸气，调整好呼吸，然后放松。”慢慢地，丽娜的身体开始浮起来了。接着她学蛙泳。她的手部动作已经对了，可是腿蹬水还没什么力气。“没关系，”教练说，“只要坚持规律练习，你很可能下个月就能自己游了。”因为第一次浮了起来，那天早上丽娜真的很开心。"
+  },
+  "quiz": [
+    {
+      "question": "Rina cepat capek di kolam. Pelatihnya berkata: \"Itu karena napasmu tidak ___. Tarik napas waktu kepala di atas air, buang napas di dalam air.\" 空格里哪个最自然？",
+      "options": [
+        "aturan",
+        "mengatur",
+        "teratur",
+        "pengaturan"
+      ],
+      "answer_index": 2,
+      "answer": "teratur",
+      "explain": "napas tidak teratur＝呼吸没有规律，teratur 是形容词，正好放在 tidak 后面描述呼吸的状态。aturan 是名词“规定”，mengatur 是动词“调整、安排”，后面要接宾语（kamu belum mengatur napas），pengaturan 是名词“设置、安排”，三者都不能直接描述“呼吸有没有规律”。同词根记一下：atur napasmu（调整呼吸，命令式）→ napasnya teratur（呼吸有规律）。"
+    },
+    {
+      "question": "Anak kecil itu memakai pelampung, jadi ia bisa ___ di air walaupun belum bisa berenang.",
+      "options": [
+        "tenggelam",
+        "mengapung",
+        "menyelam",
+        "terbang"
+      ],
+      "answer_index": 1,
+      "answer": "mengapung",
+      "explain": "戴着浮具（pelampung），不会游泳也能“浮在水上”，用 mengapung。tenggelam 是“沉下去、溺水”，正好相反；menyelam 是“潜水”，要主动往下潜，和“戴浮具”矛盾；terbang 是“飞”，不用于水里。"
+    },
+    {
+      "question": "Rina mengirim pesan ke teman sekelasnya: \"Pelatih kita lagi sakit. ___ kelas besok juga libur, tapi kita tunggu kabar resmi dulu, ya.\" 空格里哪个最自然？",
+      "options": [
+        "Pasti",
+        "Sungguh",
+        "Asalkan",
+        "Kemungkinan besar"
+      ],
+      "answer_index": 3,
+      "answer": "Kemungkinan besar",
+      "explain": "丽娜的意思是“明天的课多半也停”，但后面又说要等正式通知，所以是“很有可能”，不是肯定，用 kemungkinan besar。pasti 是“一定”，和“还要等通知”矛盾；sungguh 只加强语气（真的），不表示可能性；asalkan 是“只要”，后面要接条件，这里句子不通。"
+    }
+  ],
+  "output": {
+    "task": "用 2–3 句印尼语，跟朋友说说你最近开始学的一项运动或技能（游泳、羽毛球、骑车都可以）：现在哪里还弱、练完身体感觉怎样、以后会怎样。至少用上 badan、lemah、sungguh 中的两个，再用一次 teratur 或 kemungkinan besar。",
+    "reference_answer": "Bulan lalu aku mulai belajar bulu tangkis. Pukulanku masih lemah, dan badanku sering pegal setelah latihan. Tapi sungguh, aku senang sekali. Kata pelatihku, kalau latihannya teratur, kemungkinan besar dua bulan lagi aku sudah bisa memukul kok dengan kuat, dan hasilnya akan kelihatan.",
+    "reference_cn": "我上个月开始学羽毛球。我击球还没什么力气，练完身体也常常酸痛。不过说真的，我很开心。教练说，只要规律练习，我很可能再过两个月就能把球打得很有力，效果也会看得出来。"
+  },
+  "review": [
+    "3 秒主动提取：看中文马上说印尼语——打（击球）、漂浮、真的／实在、泳姿／风格、身体、弱的、命令／指令、飞、积极的／阳性、（baik…）……和……都；再加复习词：调整（命令式）、有规律的、公平的、很可能、结果。说不出来的回看词卡再说一遍。",
+    "易混词与搭配：badan（日常的“身体”，berat badan 体重）vs tubuh（偏书面，tubuh manusia）；lemah（力量、信号弱）vs lemas（一时浑身没力气）；mengapung（浮起来）vs tenggelam（沉下去）vs melayang（在空中飘）；perintah（正式指令）vs suruh（口语“叫人去做”）；positif 在心态里是“积极”，在检测结果里是“阳性”；memukul 是“打、击”，但打电话是 menelepon、踢是 menendang。",
+    "复习词应用：同词根 atur 一组——命令或随口说用 atur（Atur napasmu.），描述有规律用 teratur（Latihannya harus teratur.）；用 kemungkinan besar 说一件“多半会发生、但还不确定”的事（最近常错）；用 adil 说一句分东西或分时间要公平（最近常错）；用 hasil 说说练习的效果（Hasilnya mulai kelihatan.）。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "打；击球",
+        "id": "memukul"
+      },
+      {
+        "cn": "漂浮",
+        "id": "mengapung"
+      },
+      {
+        "cn": "真的；实在",
+        "id": "sungguh"
+      },
+      {
+        "cn": "泳姿；风格",
+        "id": "gaya"
+      },
+      {
+        "cn": "身体",
+        "id": "badan"
+      },
+      {
+        "cn": "弱的",
+        "id": "lemah"
+      },
+      {
+        "cn": "命令；指令",
+        "id": "perintah"
+      },
+      {
+        "cn": "飞",
+        "id": "terbang"
+      },
+      {
+        "cn": "积极的；阳性",
+        "id": "positif"
+      },
+      {
+        "cn": "……和……都（baik…）",
+        "id": "maupun"
+      },
+      {
+        "cn": "有规律的",
+        "id": "teratur"
+      },
+      {
+        "cn": "很可能",
+        "id": "kemungkinan besar"
+      }
+    ],
+    "frames": [
+      "Asalkan …, kemungkinan besar …",
+      "Awalnya …, jadi …",
+      "Baik … maupun … wajib …",
+      "Setelah sakit …, badan … masih lemah."
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "badan",
+            "cn": "身体（日常）"
+          },
+          {
+            "id": "tubuh",
+            "cn": "身体（偏书面）"
+          }
+        ],
+        "note": "Badanku pegal semua. / berat badan / tubuh manusia"
+      },
+      {
+        "items": [
+          {
+            "id": "lemah",
+            "cn": "力量、信号弱"
+          },
+          {
+            "id": "lemas",
+            "cn": "一时浑身没力气"
+          }
+        ],
+        "note": "Sinyalnya lemah. / Habis lari, badanku lemas."
+      },
+      {
+        "items": [
+          {
+            "id": "mengapung",
+            "cn": "浮起来"
+          },
+          {
+            "id": "tenggelam",
+            "cn": "沉下去"
+          }
+        ],
+        "note": "Badannya mulai mengapung. / Ia takut tenggelam."
+      },
+      {
+        "items": [
+          {
+            "id": "atur",
+            "cn": "调整（命令式）"
+          },
+          {
+            "id": "teratur",
+            "cn": "有规律的"
+          }
+        ],
+        "note": "Atur napasmu. / Napasnya belum teratur."
+      },
+      {
+        "items": [
+          {
+            "id": "perintah",
+            "cn": "正式指令"
+          },
+          {
+            "id": "suruh",
+            "cn": "口语：叫人去做"
+          }
+        ],
+        "note": "Tunggu perintah pelatih. / Siapa yang nyuruh kamu?"
+      }
+    ],
+    "apply": [
+      {
+        "word": "teratur",
+        "usage": "描述有规律、有条理：latihan teratur、napas teratur、makan teratur。",
+        "examples": [
+          {
+            "id": "Asalkan latihan teratur, kemungkinan besar bulan depan kamu sudah bisa berenang sendiri.",
+            "cn": "只要坚持规律练习，你很可能下个月就能自己游了。"
+          }
+        ]
+      },
+      {
+        "word": "kemungkinan besar",
+        "usage": "“很可能、多半”，用在还不确定、但大概率会发生的事；确定的事用 pasti。",
+        "examples": [
+          {
+            "id": "Pelatih kita lagi sakit. Kemungkinan besar kelas besok juga libur.",
+            "cn": "我们教练病了，明天的课多半也停。"
+          }
+        ]
+      },
+      {
+        "word": "adil",
+        "usage": "“公平的”：分东西、分时间、评判时用，biar adil / supaya adil（为了公平）。",
+        "examples": [
+          {
+            "id": "Biar adil, setiap murid dapat giliran lima menit.",
+            "cn": "为了公平，每个学员轮流练五分钟。"
+          }
+        ]
+      },
+      {
+        "word": "hasil",
+        "usage": "“结果、效果”：hasil tes（检测结果）、hasilnya kelihatan（效果看得出来）。",
+        "examples": [
+          {
+            "id": "Hasil tes COVID-nya positif.",
+            "cn": "他的新冠检测结果是阳性。"
+          },
+          {
+            "id": "Kalau latihannya teratur, hasilnya akan kelihatan.",
+            "cn": "只要规律练习，效果就会看得出来。"
+          }
+        ]
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "badan",
+      "lemah",
+      "kemungkinan besar"
+    ],
+    "patterns": [
+      {
+        "pattern": "Asalkan …, kemungkinan besar …",
+        "cn": "只要……，很可能就……",
+        "example": "Asalkan latihan teratur, kemungkinan besar bulan depan kamu sudah bisa berenang sendiri.",
+        "example_cn": "只要坚持规律练习，你很可能下个月就能自己游了。"
+      },
+      {
+        "pattern": "Awalnya …, jadi …",
+        "cn": "一开始……，所以……",
+        "example": "Awalnya ia takut tenggelam, jadi badannya kaku.",
+        "example_cn": "一开始她怕沉下去，所以身体很僵硬。"
+      }
+    ]
+  }
+}
