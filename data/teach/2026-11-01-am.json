@@ -1,0 +1,747 @@
+{
+ "version": 1,
+ "title": "早课深讲 · 11月1日",
+ "intro": [
+  "今天早上的课叫《周日早上的游泳课：学会浮起来》。三十岁还不会游泳的丽娜去上游泳课，在教练的指令下第一次浮了起来，可腿蹬水还没力气。",
+  "今天只讲 5 样：[[badan]] · [[lemah]] · [[kemungkinan besar]] · [[Asalkan …, kemungkinan besar …]] · [[Awalnya …, jadi …]]"
+ ],
+ "items": [
+  {
+   "key": "badan",
+   "name": "badan",
+   "head": "badan · 身体",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Pelan-pelan, badan Rina mulai mengapung.",
+      "cn": "慢慢地，丽娜的身体开始浮起来了。"
+     }
+    ],
+    "ask": "这句里浮起来的是什么？",
+    "options": [
+     {
+      "t": "丽娜的身体",
+      "ok": true,
+      "reply": [
+       "对。badan = 身体，日常说话最常用。"
+      ]
+     },
+     {
+      "t": "丽娜的衣服",
+      "reply": [
+       "不对。衣服是 baju；badan 是身体。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{badan}} 是日常说“身体”最常用的词：{{Badanku pegal semua.}}（我浑身酸痛。）{{Badannya panas.}} 是“他发烧了”。“体重”最常说 {{berat badan}}。"
+   ],
+   "simple": [
+    "[[badan]] = 身体；badannya panas = 发烧。"
+   ],
+   "asks": [
+    {
+     "label": "badan 和 tubuh 怎么选？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Badanku pegal.",
+         "日常聊天，更常用 badan"
+        ],
+        [
+         "berat badan",
+         "体重（最常见说法）"
+        ],
+        [
+         "tubuh manusia",
+         "人体，偏书面、科普"
+        ]
+       ]
+      },
+      "很多句子两个都能用，只是 badan 更口语。"
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note",
+     "word": "badan"
+    }
+   ],
+   "check": {
+    "q": [
+     "孩子摸起来很烫，你跟老师请假：[[Bu, anak saya tidak masuk hari ini. ___ panas sejak tadi malam.]]"
+    ],
+    "options": [
+     {
+      "t": "Badannya",
+      "v": "right",
+      "why": [
+       "对。badannya panas 就是“发烧了”。"
+      ]
+     },
+     {
+      "t": "Tubuhnya",
+      "v": "ok",
+      "why": [
+       "也能懂，但说发烧时日常更常说 badannya panas。"
+      ]
+     },
+     {
+      "t": "Gayanya",
+      "v": "wrong",
+      "why": [
+       "gaya 是“风格、样式”，跟发烧无关。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "“我最近体重增加了三公斤。”空格填什么？[[Akhir-akhir ini berat ___ saya naik tiga kilo.]]"
+     ],
+     "options": [
+      {
+       "t": "badan",
+       "v": "right",
+       "why": [
+        "对。体重最常说 berat badan。"
+       ]
+      },
+      {
+       "t": "tubuh",
+       "v": "ok",
+       "why": [
+        "也可以，berat tubuh 偏书面，日常不如 berat badan 常用。"
+       ]
+      },
+      {
+       "t": "lemah",
+       "v": "wrong",
+       "why": [
+        "lemah 是“弱的”，berat lemah 不成话。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟朋友说：“昨天搬家，今天浑身酸痛。”"
+    ],
+    "kw": "badanku · pegal semua",
+    "skel": "Kemarin aku pindahan, hari ini ____ pegal ____.",
+    "ref": "Kemarin aku pindahan, hari ini badanku pegal semua.",
+    "notes": [
+     "pindahan = 搬家（口语）"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "在药店说：“我孩子发烧了，有退烧药吗？”"
+    ],
+    "kw": "badannya panas · obat",
+    "skel": "Mbak, anak saya ____ panas. Ada ____ penurun panas?",
+    "ref": "Mbak, anak saya badannya panas. Ada obat penurun panas?"
+   },
+   "final": {
+    "cn": "“多喝水，身体会舒服一点。”",
+    "ref": "Minum air yang banyak, biar badan lebih enak."
+   },
+   "remind": "badan = 身体（日常）；badannya panas = 发烧；berat badan = 体重。"
+  },
+  {
+   "key": "lemah",
+   "name": "lemah",
+   "head": "lemah · 弱的；没力气",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Gerakan tangannya sudah benar, tetapi tendangan kakinya masih lemah.",
+      "cn": "她的手部动作已经对了，可是腿蹬水还没什么力气。"
+     }
+    ],
+    "ask": "丽娜的腿怎么了？",
+    "options": [
+     {
+      "t": "蹬水还没力气",
+      "ok": true,
+      "reply": [
+       "对。lemah = 弱、没力气。"
+      ]
+     },
+     {
+      "t": "腿受伤了",
+      "reply": [
+       "不对。受伤是 terluka / cedera；lemah 只是力气不够。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{lemah}} 说力量、能力、信号“弱”：{{Sinyalnya lemah.}}（信号弱。）{{Kakinya masih lemah.}}（腿还没劲。）反义是 {{kuat}}。名词 {{kelemahan}} = 弱点。"
+   ],
+   "simple": [
+    "[[lemah]] = 弱；反义 kuat。"
+   ],
+   "asks": [
+    {
+     "label": "lemah 和 lemas 有什么不同？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Sinyalnya lemah.",
+         "力量、信号、能力弱"
+        ],
+        [
+         "Habis lari, badanku lemas.",
+         "一时浑身没力气（累、饿、病刚好）"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note",
+     "word": "lemah"
+    }
+   ],
+   "check": {
+    "q": [
+     "你在地下停车场打不出电话，跟同事说：[[Maaf, sinyal di sini ___ sekali, nanti saya telepon lagi.]]"
+    ],
+    "options": [
+     {
+      "t": "lemah",
+      "v": "right",
+      "why": [
+       "对。信号弱就说 sinyal lemah。"
+      ]
+     },
+     {
+      "t": "jelek",
+      "v": "ok",
+      "why": [
+       "也可以，sinyalnya jelek 更口语。"
+      ]
+     },
+     {
+      "t": "lemas",
+      "v": "wrong",
+      "why": [
+       "lemas 说人一时浑身没力气，不说信号。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "你刚跑完五公里，瘫坐在地上说：[[Aduh, badanku ___ banget.]] 哪个最自然？"
+     ],
+     "options": [
+      {
+       "t": "lemas",
+       "v": "right",
+       "why": [
+        "对。一时累得浑身没力气，用 lemas。"
+       ]
+      },
+      {
+       "t": "capek",
+       "v": "ok",
+       "why": [
+        "也可以，capek banget 是“累死了”。"
+       ]
+      },
+      {
+       "t": "lemah",
+       "v": "wrong",
+       "why": [
+        "badanku lemah 听起来像身体一直虚弱，不是跑完一时没劲。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟朋友说：“我的英语口语还很弱。”"
+    ],
+    "kw": "bahasa Inggris · masih lemah",
+    "skel": "Bahasa Inggrisku, terutama ngomongnya, masih ____.",
+    "ref": "Bahasa Inggrisku, terutama ngomongnya, masih lemah.",
+    "notes": [
+     "ngomong = berbicara"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "面试时说：“我的缺点是不太会拒绝别人。”"
+    ],
+    "kw": "kelemahan saya · menolak",
+    "skel": "____ saya adalah sulit ____ permintaan orang lain.",
+    "ref": "Kelemahan saya adalah sulit menolak permintaan orang lain."
+   },
+   "final": {
+    "cn": "“爷爷病了一周，身体还很虚弱。”",
+    "ref": "Kakek sakit seminggu, dan badannya masih lemah."
+   },
+   "remind": "lemah = 弱（力量、信号、能力）；一时没劲用 lemas。"
+  },
+  {
+   "key": "kemungkinan-besar",
+   "name": "kemungkinan besar",
+   "head": "kemungkinan besar · 很可能；多半",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Asalkan latihan teratur, kemungkinan besar bulan depan kamu sudah bisa berenang sendiri.",
+      "cn": "只要坚持规律练习，你很可能下个月就能自己游了。"
+     }
+    ],
+    "ask": "教练是在保证丽娜下个月一定会游吗？",
+    "options": [
+     {
+      "t": "不是，是说很有可能",
+      "ok": true,
+      "reply": [
+       "对。kemungkinan besar = 大概率，但不是百分之百。"
+      ]
+     },
+     {
+      "t": "是，一定能",
+      "reply": [
+       "不对。“一定”是 pasti；kemungkinan besar 留了余地。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{kemungkinan besar}} 放在句首或主语后，说“大概率会这样”：{{Kemungkinan besar dia telat.}} 比 {{mungkin}}（也许）把握更大，比 {{pasti}}（一定）弱。"
+   ],
+   "simple": [
+    "[[kemungkinan besar]] = 多半；pasti = 一定；mungkin = 也许。"
+   ],
+   "asks": [
+    {
+     "label": "mungkin、kemungkinan besar、pasti 排一排",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      {
+       "table": [
+        [
+         "Mungkin dia datang.",
+         "也许来（五五开）"
+        ],
+        [
+         "Kemungkinan besar dia datang.",
+         "多半会来"
+        ],
+        [
+         "Dia pasti datang.",
+         "一定来"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "天很阴，风也大。你跟家人说：[[___ nanti sore hujan. Bawa payung, ya.]] 哪个最自然？"
+    ],
+    "options": [
+     {
+      "t": "Kemungkinan besar",
+      "v": "right",
+      "why": [
+       "对。看天色判断大概率下雨，但还没确定。"
+      ]
+     },
+     {
+      "t": "Mungkin",
+      "v": "ok",
+      "why": [
+       "也可以，只是把握小一点。"
+      ]
+     },
+     {
+      "t": "Sungguh",
+      "v": "wrong",
+      "why": [
+       "sungguh 只加强语气（真的），不表示可能性。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "你同事已经上了飞机，你说：[[Dia ___ sudah di pesawat, tadi dia kirim foto dari dalam kabin.]]"
+     ],
+     "options": [
+      {
+       "t": "pasti",
+       "v": "right",
+       "why": [
+        "对。有照片为证，是确定的事，用 pasti。"
+       ]
+      },
+      {
+       "t": "kemungkinan besar",
+       "v": "wrong",
+       "why": [
+        "已经有照片证明了，不需要说“多半”。"
+       ]
+      },
+      {
+       "t": "asalkan",
+       "v": "wrong",
+       "why": [
+        "asalkan 是“只要”，后面接条件，句子不通。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟同事说：“路上很堵，我多半会晚到十分钟。”"
+    ],
+    "kw": "macet · kemungkinan besar · telat",
+    "skel": "Jalannya ____, kemungkinan besar saya ____ sepuluh menit.",
+    "ref": "Jalannya macet, kemungkinan besar saya telat sepuluh menit."
+   },
+   "recall": {
+    "prompt": [
+     "跟朋友说：“这家店周一多半不开门。”"
+    ],
+    "kw": "Kemungkinan besar · tutup · hari Senin",
+    "skel": "____ toko ini ____ hari Senin.",
+    "ref": "Kemungkinan besar toko ini tutup hari Senin."
+   },
+   "final": {
+    "cn": "“价格多半下个月会涨。”",
+    "ref": "Kemungkinan besar harganya naik bulan depan."
+   },
+   "remind": "kemungkinan besar = 多半（比 mungkin 有把握，比 pasti 弱）。"
+  },
+  {
+   "key": "asalkan-pola",
+   "name": "Asalkan …, kemungkinan besar …",
+   "head": "Asalkan …, kemungkinan besar … · 只要……，很可能就……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Asalkan latihan teratur, kemungkinan besar bulan depan kamu sudah bisa berenang sendiri.",
+      "cn": "只要坚持规律练习，你很可能下个月就能自己游了。"
+     }
+    ],
+    "ask": "丽娜要做到什么，才多半能自己游？",
+    "options": [
+     {
+      "t": "规律地练习",
+      "ok": true,
+      "reply": [
+       "对。Asalkan 后面就是条件。"
+      ]
+     },
+     {
+      "t": "换一个教练",
+      "reply": [
+       "不对。条件是 latihan teratur（规律练习）。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "前半句 {{Asalkan …}} 讲条件，后半句 {{kemungkinan besar …}} 讲大概率的结果。用来鼓励人或给建议很顺口：{{Asalkan berangkat sekarang, kemungkinan besar kita tidak telat.}}"
+   ],
+   "simple": [
+    "[[Asalkan A, kemungkinan besar B]] = 只要 A，多半就 B。"
+   ],
+   "asks": [
+    {
+     "label": "asalkan 和 kalau 有什么不同？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      "{{kalau}} 只是“如果”；{{asalkan}} 强调“只要满足这一点就行”。口语里也常说 {{asal}}：{{Asal rajin, pasti bisa.}}"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "“只要早点订票，多半能买到便宜的。”哪一句对？"
+    ],
+    "options": [
+     {
+      "t": "Asalkan pesan tiketnya lebih awal, kemungkinan besar dapat harga murah.",
+      "v": "right",
+      "why": [
+       "对。条件在前，结果在后。"
+      ]
+     },
+     {
+      "t": "Kalau pesan tiketnya lebih awal, kemungkinan besar dapat harga murah.",
+      "v": "ok",
+      "why": [
+       "也可以，用 kalau 语气弱一点，只是“如果”。"
+      ]
+     },
+     {
+      "t": "Kemungkinan besar pesan tiketnya lebih awal, asalkan dapat harga murah.",
+      "v": "wrong",
+      "why": [
+       "条件和结果放反了：早订票才是条件。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "你劝朋友：[[___ kamu tidur cukup, kemungkinan besar besok badanmu sudah enakan.]] 哪个最自然？"
+     ],
+     "options": [
+      {
+       "t": "Asalkan",
+       "v": "right",
+       "why": [
+        "对。只要睡够这个条件满足，多半就好了。"
+       ]
+      },
+      {
+       "t": "Kalau",
+       "v": "ok",
+       "why": [
+        "也可以，只是“如果”，不强调“只要这一点就行”。"
+       ]
+      },
+      {
+       "t": "Awalnya",
+       "v": "wrong",
+       "why": [
+        "awalnya 是“一开始”，讲过去的情况，不引出条件。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "鼓励朋友：“只要每天练，多半一个月就能骑车了。”"
+    ],
+    "kw": "Asalkan · kemungkinan besar · naik sepeda",
+    "skel": "Asalkan latihan tiap hari, kemungkinan besar sebulan lagi kamu sudah bisa ____ ____.",
+    "ref": "Asalkan latihan tiap hari, kemungkinan besar sebulan lagi kamu sudah bisa naik sepeda."
+   },
+   "recall": {
+    "prompt": [
+     "跟同事说：“只要资料今天齐了，报告多半明天能交。”"
+    ],
+    "kw": "Asalkan · datanya lengkap · kemungkinan besar",
+    "skel": "Asalkan ____ lengkap hari ini, kemungkinan besar laporannya bisa ____ besok.",
+    "ref": "Asalkan datanya lengkap hari ini, kemungkinan besar laporannya bisa dikirim besok."
+   },
+   "final": {
+    "cn": "“只要不下雨，我们多半周六去海边。”",
+    "ref": "Asalkan tidak hujan, kemungkinan besar kita ke pantai hari Sabtu."
+   },
+   "remind": "Asalkan + 条件, kemungkinan besar + 结果。"
+  },
+  {
+   "key": "awalnya-pola",
+   "name": "Awalnya …, jadi …",
+   "head": "Awalnya …, jadi … · 一开始……，所以……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Awalnya ia takut tenggelam, jadi badannya kaku.",
+      "cn": "一开始她怕沉下去，所以身体很僵硬。"
+     }
+    ],
+    "ask": "丽娜的身体为什么僵硬？",
+    "options": [
+     {
+      "t": "一开始害怕沉下去",
+      "ok": true,
+      "reply": [
+       "对。Awalnya 交代一开始的状态，jadi 引出结果。"
+      ]
+     },
+     {
+      "t": "因为水太凉",
+      "reply": [
+       "不对。原因写在 Awalnya 后面：takut tenggelam。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "{{Awalnya …}} 说“一开始”的情况，{{jadi …}} 说因此产生的结果。讲经历时很常用，后面常接 {{tapi sekarang …}}（可是现在……）讲变化。"
+   ],
+   "simple": [
+    "[[Awalnya A, jadi B]] = 一开始 A，所以 B。"
+   ],
+   "asks": [
+    {
+     "label": "awalnya 和 dulu 怎么分？",
+     "remedy": true,
+     "src": "new",
+     "reply": [
+      "{{awalnya}} 是一件事刚开始的阶段；{{dulu}} 是“以前（很久之前）”：{{Dulu saya tinggal di Bandung.}}"
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "“一开始我不认识路，所以老迷路。”哪一句最自然？"
+    ],
+    "options": [
+     {
+      "t": "Awalnya saya belum hafal jalan, jadi sering nyasar.",
+      "v": "right",
+      "why": [
+       "对。一开始的情况 + jadi + 结果。"
+      ]
+     },
+     {
+      "t": "Awalnya saya sering nyasar, jadi belum hafal jalan.",
+      "v": "wrong",
+      "why": [
+       "因果反了：不认路才会迷路。"
+      ]
+     },
+     {
+      "t": "Jadi saya belum hafal jalan, awalnya sering nyasar.",
+      "v": "wrong",
+      "why": [
+       "jadi 引出结果，不放句首交代原因。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "朋友问你为什么第一个月不怎么说话，你说：[[___ aku malu ngomong bahasa Indonesia, jadi lebih banyak diam.]]"
+     ],
+     "options": [
+      {
+       "t": "Awalnya",
+       "v": "right",
+       "why": [
+        "对。讲一开始的状态，后面 jadi 接结果。"
+       ]
+      },
+      {
+       "t": "Asalkan",
+       "v": "wrong",
+       "why": [
+        "asalkan 是“只要”，讲条件，不讲过去的经历。"
+       ]
+      },
+      {
+       "t": "Kemungkinan besar",
+       "v": "wrong",
+       "why": [
+        "这是你自己的真实经历，不是猜测。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "跟同事说：“一开始我不懂这个系统，所以做得很慢。”"
+    ],
+    "kw": "Awalnya · belum paham · jadi · lambat",
+    "skel": "Awalnya saya belum paham ____ ini, jadi kerjanya ____.",
+    "ref": "Awalnya saya belum paham sistem ini, jadi kerjanya lambat."
+   },
+   "recall": {
+    "prompt": [
+     "跟朋友说：“一开始我不敢吃辣，所以只点了鸡汤。”"
+    ],
+    "kw": "Awalnya · nggak berani · jadi",
+    "skel": "Awalnya aku nggak berani makan ____, jadi cuma pesan ____ ayam.",
+    "ref": "Awalnya aku nggak berani makan pedas, jadi cuma pesan sup ayam.",
+    "notes": [
+     "nggak = tidak"
+    ]
+   },
+   "final": {
+    "cn": "“一开始房租太贵，所以我们住在郊区。”",
+    "ref": "Awalnya sewa rumah terlalu mahal, jadi kami tinggal di pinggir kota."
+   },
+   "remind": "Awalnya + 一开始的情况, jadi + 结果。"
+  }
+ ],
+ "scan": {
+  "head": "其余新词扫一眼",
+  "intro": [
+   "其余新词词卡里都有完整讲解，这里只扫一眼。不熟的点一下，标出来给自己看。"
+  ],
+  "words": [
+   "memukul",
+   "mengapung",
+   "sungguh",
+   "gaya",
+   "perintah",
+   "terbang",
+   "positif",
+   "maupun"
+  ]
+ },
+ "reading": [
+  {
+   "key": "r1",
+   "sentence": "Pelatihnya memberi perintah sederhana: \"Tarik napas, atur napasmu, lalu rileks.\"",
+   "cn": "教练给了简单的指令：“吸气，调整好呼吸，然后放松。”",
+   "chunks": [
+    [
+     "Pelatihnya memberi perintah sederhana:",
+     "教练给了简单的指令：",
+     "memberi perintah = 下指令"
+    ],
+    [
+     "\"Tarik napas,",
+     "“吸气，"
+    ],
+    [
+     "atur napasmu,",
+     "调整好呼吸，",
+     "atur 是命令式：叫人调整（复习词）"
+    ],
+    [
+     "lalu rileks.\"",
+     "然后放松。”"
+    ]
+   ],
+   "steal": [
+    "值得借用的是 [[memberi perintah …]]（下指令）：{{Polisi memberi perintah supaya semua mobil berhenti.}}（警察下令所有车辆停下。）"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "key": "t1",
+   "prompt": [
+    "最后一个开口任务（来自今天的输出题，缩短版）：跟朋友说说你最近在学的一项运动：哪里还弱，以后多半会怎样。"
+   ],
+   "kw": "lemah · badanku · kemungkinan besar",
+   "skel": "Aku lagi belajar ____. ____ masih lemah, tapi kemungkinan besar ____.",
+   "ref": "Aku lagi belajar renang. Tendangan kakiku masih lemah, tapi kemungkinan besar bulan depan aku sudah lancar. Badanku juga jadi lebih segar.",
+   "notes": [
+    "lagi = sedang"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
