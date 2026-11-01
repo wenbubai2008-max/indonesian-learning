@@ -1,0 +1,844 @@
+{
+ "version": 1,
+ "title": "晚课深讲 · 11月1日",
+ "intro": [
+  "今晚的课叫《黎明公寓地震》。星期天天还没亮，Dimas 刚起来做晨礼，窗户突然震了起来；他叫醒奶奶，跟着全楼住户有序地走楼梯撤到集合点，疏散很顺利。",
+  "今晚只讲 5 样：[[bergetar]] · [[niat]] · [[lancar]] · [[Niatnya mau …, eh malah …]] · [[Untung …, jadi …]]"
+ ],
+ "items": [
+  {
+   "key": "getar",
+   "name": "bergetar",
+   "head": "bergetar · 震动；颤动",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Tiba-tiba lampu di kamarnya bergoyang dan kaca jendela apartemennya bergetar cukup keras.",
+      "cn": "突然，他房间的灯晃了起来，公寓的窗玻璃也震得相当厉害。"
+     }
+    ],
+    "ask": "灯和窗户的动法有什么不同？",
+    "options": [
+     {
+      "t": "灯是大幅度地晃，窗玻璃是快速小幅度地震",
+      "reply": [
+       "对。bergoyang 是晃，bergetar 是震。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "两个词完全一样，只是换个说法",
+      "reply": [
+       "不完全一样：bergoyang 幅度大，bergetar 是快而小的震动。"
+      ]
+     },
+     {
+      "t": "窗户被震碎了",
+      "reply": [
+       "不是。碎了会说 pecah；bergetar 只是在震。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[bergetar]] = 快速、小幅度地震动，主语多是东西：{{HP saya bergetar}}（手机在震）、{{tanah bergetar}}。人因为冷或害怕发抖，多说 {{gemetar}}：{{Tangannya gemetar.}} 名词是 {{getaran}}（震动、震感）。"
+   ],
+   "simple": [
+    "[[bergetar]] = （东西）在震；人发抖多说 gemetar"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "HP-ku bergetar terus.",
+         "我手机一直在震。"
+        ],
+        [
+         "Lampunya bergoyang.",
+         "灯在晃。"
+        ],
+        [
+         "Tangannya gemetar.",
+         "他的手在发抖。"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Lagi rapat, HP-ku ___ terus di saku. Ternyata Mama yang telepon.]]",
+     "（开会时手机在口袋里一直震，原来是妈妈打来的。）"
+    ],
+    "options": [
+     {
+      "t": "bergetar",
+      "v": "right",
+      "why": [
+       "对。手机震动就用 bergetar。"
+      ]
+     },
+     {
+      "t": "gemetar",
+      "v": "wrong",
+      "why": [
+       "gemetar 多说人发抖，不用来说手机。"
+      ]
+     },
+     {
+      "t": "geter",
+      "v": "ok",
+      "why": [
+       "也可以，是 bergetar 的口语说法，朋友聊天常用。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟朋友说：“昨晚太冷了，我冻得浑身发抖。”"
+     ],
+     "options": [
+      {
+       "t": "Semalam dingin banget, badanku sampai gemetar.",
+       "v": "right",
+       "why": [
+        "对。人冷得发抖用 gemetar。"
+       ]
+      },
+      {
+       "t": "Semalam dingin banget, badanku sampai bergoyang.",
+       "v": "wrong",
+       "why": [
+        "bergoyang 是摇晃、晃动，不是发抖。"
+       ]
+      },
+      {
+       "t": "Semalam dingin banget, aku sampai menggigil.",
+       "v": "ok",
+       "why": [
+        "也可以：menggigil 专指冷得或发烧时打寒战。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟邻居说：“每次火车经过，我家的窗户都在震。”"
+    ],
+    "kw": "kereta · bergetar",
+    "skel": "Setiap kali ____ lewat, jendela rumahku ____.",
+    "ref": "Setiap kali kereta lewat, jendela rumahku bergetar."
+   },
+   "recall": {
+    "prompt": [
+     "你在电影院，跟朋友小声说：“把手机调成震动吧，别响铃。”"
+    ],
+    "kw": "bergetar · bunyi",
+    "skel": "HP-nya ____ aja, jangan ____.",
+    "ref": "HP-nya bergetar aja, jangan bunyi.",
+    "notes": [
+     "aja = saja"
+    ]
+   },
+   "final": {
+    "cn": "（对同事）“刚才桌子震了一下，你感觉到了吗？”",
+    "ref": "Tadi mejanya bergetar sebentar. Kerasa nggak?"
+   },
+   "remind": "bergetar = 东西快速小幅震动（手机、窗户、地面）；人发抖说 gemetar。"
+  },
+  {
+   "key": "niat",
+   "name": "niat",
+   "head": "niat · 打算；用心",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "对话",
+      "id": "Niatnya mau bangun pagi buat jogging, eh malah kebangun gara-gara gempa.",
+      "cn": "本来打算早起去慢跑的，结果是被地震晃醒的。"
+     }
+    ],
+    "ask": "Yoga 后来去慢跑了吗？",
+    "options": [
+     {
+      "t": "没有，他本来打算去，结果被地震晃醒了",
+      "reply": [
+       "对。niatnya mau … 是“本来打算……”，后面 eh malah 说结果相反。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "去了，地震前就去了",
+      "reply": [
+       "不是。他说自己 masih tidur（还在睡）。"
+      ]
+     },
+     {
+      "t": "他根本不想去慢跑",
+      "reply": [
+       "不是。niat 恰恰是“心里打算要做”。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[niat]] = 心里真想做、认真打算做。口语里常当形容词：{{Dia niat banget}}（他很用心）、{{Kalau nggak niat, mending nggak usah}}（不上心就别做）。别和 {{maksud}}（用意、意思）混：问“你什么意思”说 {{Apa maksudmu?}}，不说 niat。"
+   ],
+   "simple": [
+    "[[niat]] = 真心想做；nggak niat = 不上心"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Niatnya mau diet.",
+         "本来打算减肥。"
+        ],
+        [
+         "Dia niat banget belajar.",
+         "他学习很用心。"
+        ],
+        [
+         "Apa maksudmu?",
+         "你什么意思？（不用 niat）"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的用法",
+     "from": "usage_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Kamu tuh ___ belajar nggak, sih? Dari tadi main HP terus.]]",
+     "（你到底有没有心学习啊？一直在玩手机。）"
+    ],
+    "options": [
+     {
+      "t": "niat",
+      "v": "right",
+      "why": [
+       "对。niat belajar = 真心想学。"
+      ]
+     },
+     {
+      "t": "maksud",
+      "v": "wrong",
+      "why": [
+       "maksud 是“用意、意思”，不说 maksud belajar。"
+      ]
+     },
+     {
+      "t": "mau",
+      "v": "ok",
+      "why": [
+       "也可以：mau belajar = 想学，只是语气没那么重。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。朋友送你礼物，你说：“谢谢你的好意。”"
+     ],
+     "options": [
+      {
+       "t": "Makasih atas niat baiknya.",
+       "v": "right",
+       "why": [
+        "对。niat baik = 好意。"
+       ]
+      },
+      {
+       "t": "Makasih atas arti baiknya.",
+       "v": "wrong",
+       "why": [
+        "arti 是“意思、含义”，没有 arti baik 这种说法。"
+       ]
+      },
+      {
+       "t": "Makasih, ya, kamu baik banget.",
+       "v": "ok",
+       "why": [
+        "也可以，更随意的口语说法。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟同事说：“他做这份报告很用心，连图表都重新画了。”"
+    ],
+    "kw": "niat banget · grafik",
+    "skel": "Dia ____ bikin laporan ini, sampai ____ pun digambar ulang.",
+    "ref": "Dia niat banget bikin laporan ini, sampai grafik pun digambar ulang.",
+    "notes": [
+     "bikin = membuat"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "你劝报了吉他课却总不去的妹妹：“如果不上心，就别交钱了。”"
+    ],
+    "kw": "nggak niat · bayar",
+    "skel": "Kalau ____, mending nggak usah ____ lagi.",
+    "ref": "Kalau nggak niat, mending nggak usah bayar lagi."
+   },
+   "final": {
+    "cn": "（对朋友）“我真心想帮你，不是随便说说。”",
+    "ref": "Aku niat bantu kamu, bukan cuma ngomong doang."
+   },
+   "remind": "niat = 真心打算做；口语 niat banget / nggak niat；“什么意思”用 maksud。"
+  },
+  {
+   "key": "lancar",
+   "name": "lancar",
+   "head": "lancar · 顺利；顺畅；流利",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "课文",
+      "id": "Para penghuni turun dengan teratur; tidak ada yang berlari atau saling mendorong. Karena itu, evakuasi berjalan lancar.",
+      "cn": "住户们有序地下楼，没有人奔跑，也没有人互相推挤。因此，疏散进行得很顺利。"
+     }
+    ],
+    "ask": "teratur 和 lancar 在这里各说了什么？",
+    "options": [
+     {
+      "t": "teratur 说大家下楼有秩序，lancar 说疏散结果很顺利",
+      "reply": [
+       "对。一个讲过程有序，一个讲结果顺利。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "两个都是“很快”",
+      "reply": [
+       "不对。teratur 是有秩序，lancar 是顺利，都不是“快”。"
+      ]
+     },
+     {
+      "t": "lancar 说的是大家很守规矩",
+      "reply": [
+       "守规矩是 teratur / tertib；lancar 是没卡住、顺顺当当。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[lancar]] = 没卡住、顺顺当当。三个最常用的地方：事情 {{berjalan lancar}}、交通 {{jalanannya lancar}}、说话 {{lancar berbahasa Inggris}}。祝福别人说 {{Semoga lancar, ya!}} 它不等于 {{teratur}}（有规律、有秩序）。"
+   ],
+   "simple": [
+    "[[lancar]] = 顺利、不堵、流利"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Acaranya lancar.",
+         "活动很顺利。"
+        ],
+        [
+         "Jalannya lancar.",
+         "路上不堵。"
+        ],
+        [
+         "Olahraganya teratur.",
+         "运动很有规律。"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Besok kamu wawancara kerja, kan? Semoga ___, ya!]]",
+     "（你明天面试对吧？祝你一切顺利！）"
+    ],
+    "options": [
+     {
+      "t": "lancar",
+      "v": "right",
+      "why": [
+       "对。Semoga lancar 是最常用的祝福。"
+      ]
+     },
+     {
+      "t": "teratur",
+      "v": "wrong",
+      "why": [
+       "teratur 是有规律、有秩序，不用来祝福。"
+      ]
+     },
+     {
+      "t": "sukses",
+      "v": "ok",
+      "why": [
+       "也可以：Semoga sukses = 祝你成功。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟老板汇报：“搬家进行得很顺利。”"
+     ],
+     "options": [
+      {
+       "t": "Pindahannya berjalan lancar, Pak.",
+       "v": "right",
+       "why": [
+        "对。berjalan lancar = 进行顺利。"
+       ]
+      },
+      {
+       "t": "Pindahannya berjalan teratur, Pak.",
+       "v": "wrong",
+       "why": [
+        "teratur 讲有秩序，不能说明搬家顺不顺利。"
+       ]
+      },
+      {
+       "t": "Pindahannya aman, Pak.",
+       "v": "ok",
+       "why": [
+        "也可以，强调“没出问题”。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟家人说：“今天回家路上一点都不堵。”"
+    ],
+    "kw": "jalanan · lancar",
+    "skel": "Hari ini ____ pulang ____ banget.",
+    "ref": "Hari ini jalanan pulang lancar banget."
+   },
+   "recall": {
+    "prompt": [
+     "你夸新同事：“他的英语说得很流利。”"
+    ],
+    "kw": "lancar · bahasa Inggris",
+    "skel": "Dia ____ banget ngomong ____.",
+    "ref": "Dia lancar banget ngomong bahasa Inggris.",
+    "notes": [
+     "ngomong = berbicara"
+    ]
+   },
+   "final": {
+    "cn": "（对要出发的顾客）“祝您一路顺利。”",
+    "ref": "Semoga perjalanan Ibu lancar."
+   },
+   "remind": "lancar = 顺利、不堵、流利；Semoga lancar = 祝顺利；有秩序说 teratur。"
+  },
+  {
+   "key": "p1",
+   "name": "Niatnya mau …, eh malah …",
+   "head": "Niatnya mau …, eh malah … · 本来打算……，结果却……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "对话",
+      "id": "Aku malah masih tidur. Niatnya mau bangun pagi buat jogging, eh malah kebangun gara-gara gempa.",
+      "cn": "我反而还在睡。本来打算早起去慢跑的，结果是被地震晃醒的。"
+     }
+    ],
+    "ask": "eh malah 后面说的是什么？",
+    "options": [
+     {
+      "t": "和原来打算相反、出乎意料的结果",
+      "reply": [
+       "对。eh 是一下子转折的语气，malah 是“反而、结果却”。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "原因",
+      "reply": [
+       "不是。原因用 gara-gara / karena，这句里 gara-gara gempa 才是原因。"
+      ]
+     },
+     {
+      "t": "下一步的计划",
+      "reply": [
+       "不是。malah 讲的是已经发生的意外结果。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "两半拼起来：{{Niatnya mau}} + 原来的打算，{{eh malah}} + 意外的结果。朋友之间讲自己的小失败最常用：{{Niatnya mau hemat, eh malah belanja banyak.}} 正式一点说 {{Tadinya saya berniat …, tetapi justru …}}。"
+   ],
+   "simple": [
+    "[[Niatnya mau A, eh malah B]] = 本来想 A，结果却 B"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Niatnya mau tidur cepat,",
+         "本来想早点睡，"
+        ],
+        [
+         "eh malah nonton film sampai jam dua.",
+         "结果看电影看到两点。"
+        ],
+        [
+         "Tadinya saya berniat …, tetapi justru …",
+         "正式说法"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Niatnya mau ke pasar sebentar, ___ ketemu teman lama dan ngobrol dua jam.]]",
+     "（本来只想去市场一下，结果碰到老朋友聊了两个小时。）"
+    ],
+    "options": [
+     {
+      "t": "eh malah",
+      "v": "right",
+      "why": [
+       "对。后面是意外的结果。"
+      ]
+     },
+     {
+      "t": "jadi",
+      "v": "wrong",
+      "why": [
+       "jadi 是“所以”，前后没有因果关系。"
+      ]
+     },
+     {
+      "t": "tapi malah",
+      "v": "ok",
+      "why": [
+       "也可以，语气稍平一点。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟朋友说：“本来想省钱，结果买了更多。”"
+     ],
+     "options": [
+      {
+       "t": "Niatnya mau hemat, eh malah belanja lebih banyak.",
+       "v": "right",
+       "why": [
+        "对。打算和结果相反。"
+       ]
+      },
+      {
+       "t": "Niatnya mau hemat, jadi belanja lebih banyak.",
+       "v": "wrong",
+       "why": [
+        "“想省钱所以买更多”说不通。"
+       ]
+      },
+      {
+       "t": "Tadinya mau hemat, eh malah belanja lebih banyak.",
+       "v": "ok",
+       "why": [
+        "也可以，tadinya = 原本。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟朋友说：“本来想早点到，结果走错路了。”"
+    ],
+    "kw": "niatnya mau · nyasar",
+    "skel": "____ datang lebih awal, eh malah ____.",
+    "ref": "Niatnya mau datang lebih awal, eh malah nyasar."
+   },
+   "recall": {
+    "prompt": [
+     "你跟同事吐槽：“本来想今天做完报告，结果一直在开会。”"
+    ],
+    "kw": "niatnya mau · rapat",
+    "skel": "____ selesaiin laporan hari ini, eh malah ____ terus.",
+    "ref": "Niatnya mau selesaiin laporan hari ini, eh malah rapat terus.",
+    "notes": [
+     "selesaiin = menyelesaikan"
+    ]
+   },
+   "final": {
+    "cn": "（对家人）“本来想做蛋糕，结果烤焦了。”",
+    "ref": "Niatnya mau bikin kue, eh malah gosong."
+   },
+   "remind": "Niatnya mau A, eh malah B = 本来想 A，结果却 B（口语）。"
+  },
+  {
+   "key": "p2",
+   "name": "Untung …, jadi …",
+   "head": "Untung …, jadi … · 幸好……，所以……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "对话",
+      "id": "Untung tadi aku udah bangun buat salat subuh, jadi pas jendela bergetar, aku langsung bangunin Nenek.",
+      "cn": "幸好我刚才已经起来做晨礼了，所以窗户一震，我马上就把奶奶叫醒了。"
+     }
+    ],
+    "ask": "Dimas 为什么能马上叫醒奶奶？",
+    "options": [
+     {
+      "t": "因为他碰巧已经醒了",
+      "reply": [
+       "对。Untung 后面是幸运的情况，jadi 后面是因此带来的好结果。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "因为奶奶叫醒了他",
+      "reply": [
+       "不是。是他叫醒了奶奶（bangunin Nenek）。"
+      ]
+     },
+     {
+      "t": "因为大楼广播叫他",
+      "reply": [
+       "广播是之后的事；这里说的是他本来就醒着。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[Untung]] + 幸运的情况，{{jadi}} + 因此的好结果。说自己躲过一劫时很常用：{{Untung bawa payung, jadi nggak kehujanan.}} 也可以只说前半句：{{Untung kamu datang!}}（幸好你来了！）"
+   ],
+   "simple": [
+    "[[Untung A, jadi B]] = 幸好 A，所以 B"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Untung bawa payung,",
+         "幸好带了伞，"
+        ],
+        [
+         "jadi nggak kehujanan.",
+         "所以没淋雨。"
+        ],
+        [
+         "Untung kamu datang!",
+         "幸好你来了！"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[___ aku simpan file-nya, jadi waktu laptop mati, kerjaanku nggak hilang.]]",
+     "（幸好我存了文件，所以电脑关机时工作没丢。）"
+    ],
+    "options": [
+     {
+      "t": "Untung",
+      "v": "right",
+      "why": [
+       "对。Untung + 幸运的情况。"
+      ]
+     },
+     {
+      "t": "Gara-gara",
+      "v": "wrong",
+      "why": [
+       "gara-gara 多用在坏结果的原因上，和“没丢”对不上。"
+      ]
+     },
+     {
+      "t": "Untung saja",
+      "v": "ok",
+      "why": [
+       "也可以，语气更强一点。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟同事说：“幸好早出门，所以没迟到。”"
+     ],
+     "options": [
+      {
+       "t": "Untung berangkat lebih awal, jadi nggak telat.",
+       "v": "right",
+       "why": [
+        "对。"
+       ]
+      },
+      {
+       "t": "Untung berangkat lebih awal, tapi nggak telat.",
+       "v": "wrong",
+       "why": [
+        "tapi 是“但是”，前后不是转折关系。"
+       ]
+      },
+      {
+       "t": "Untung berangkat lebih awal, makanya nggak telat.",
+       "v": "ok",
+       "why": [
+        "也可以：makanya = 所以才。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟朋友说：“幸好我带了充电宝，所以手机没关机。”"
+    ],
+    "kw": "untung · powerbank",
+    "skel": "____ aku bawa ____, jadi HP-ku nggak mati.",
+    "ref": "Untung aku bawa powerbank, jadi HP-ku nggak mati."
+   },
+   "recall": {
+    "prompt": [
+     "你跟家人说：“幸好我们提前订了票，所以还有座位。”"
+    ],
+    "kw": "untung · pesan tiket",
+    "skel": "____ kita ____ dari kemarin, jadi masih dapat kursi.",
+    "ref": "Untung kita pesan tiket dari kemarin, jadi masih dapat kursi."
+   },
+   "final": {
+    "cn": "（对上司）“幸好客户还没走，所以我们还能当面解释。”",
+    "ref": "Untung kliennya belum pulang, Pak, jadi kita masih bisa menjelaskan langsung."
+   },
+   "remind": "Untung A, jadi B = 幸好 A，所以 B。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "今晚另外两个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+  ],
+  "words": [
+   "subuh",
+   "titik"
+  ]
+ },
+ "reading": [
+  {
+   "key": "titik",
+   "sentence": "Lewat pengeras suara, petugas gedung meminta semua penghuni turun lewat tangga darurat menuju titik kumpul di lapangan parkir.",
+   "cn": "大楼工作人员通过广播，要求所有住户走紧急楼梯下楼，前往停车场的集合点。",
+   "chunks": [
+    [
+     "Lewat pengeras suara,",
+     "通过广播",
+     "lewat = 通过"
+    ],
+    [
+     "petugas gedung",
+     "大楼工作人员",
+     ""
+    ],
+    [
+     "meminta semua penghuni",
+     "要求所有住户",
+     "meminta + 人 = 要求某人"
+    ],
+    [
+     "turun lewat tangga darurat",
+     "走紧急楼梯下楼",
+     "tangga darurat = 紧急楼梯"
+    ],
+    [
+     "menuju titik kumpul",
+     "前往集合点",
+     "titik kumpul = 集合点"
+    ],
+    [
+     "di lapangan parkir.",
+     "在停车场的",
+     ""
+    ]
+   ],
+   "steal": [
+    "值得借的是 [[meminta semua … menuju …]]：要求大家前往某处。{{Guru meminta semua murid menuju aula.}}（老师要求所有学生前往礼堂。）"
+   ]
+  }
+ ],
+ "dialogue": {
+  "head": "对话 · 你来演 Dimas",
+  "intro": [
+   "你演 Dimas，我演邻居 Yoga。每一轮先看 Dimas 想说什么，看中文先说。"
+  ],
+  "turns": [
+   {
+    "line": 1,
+    "intent": "Dimas 说没事，幸好他已经起来做晨礼了，所以窗户一震就马上叫醒了奶奶。",
+    "kw": "untung · bergetar · bangunin",
+    "skel": "Aman, Ga. ____ tadi aku udah bangun buat salat subuh, jadi pas jendela ____, aku langsung ____ Nenek."
+   },
+   {
+    "line": 5,
+    "intent": "Dimas 道谢，说上个月的演练原来真有用，下楼很顺利。",
+    "kw": "manfaatnya · lancar",
+    "skel": "Makasih, ya. Ternyata simulasi evakuasi bulan lalu ada ____. Turunnya ____, nggak ada yang dorong-dorongan."
+   }
+  ],
+  "tail": [
+   "朋友、邻居之间用 aku/kamu 和 udah、nggak、bangunin；跟长辈、上级说话时换成 saya 和标准形。"
+  ]
+ },
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今晚的改写题，缩短版）：说一个你今年想坚持的习惯，并说光有打算还不够。"
+   ],
+   "kw": "niat · teratur · sia-sia",
+   "skel": "____ saya tahun ini sederhana: olahraga ____, minimal tiga kali seminggu. Kalau tidak dijalani, semuanya ____.",
+   "ref": "Niat saya tahun ini sederhana: olahraga teratur, minimal tiga kali seminggu. Kalau tidak dijalani, semuanya sia-sia.",
+   "notes": [
+    "整页的改写题有更完整的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
