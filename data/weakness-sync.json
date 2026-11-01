@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-01T03:12:06.095Z",
+  "updated_at": "2026-11-01T04:05:31.467Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -3929,21 +3929,21 @@
     "kemungkinan besar": {
       "word": "kemungkinan besar",
       "status": "active",
-      "updated_at": "2026-10-31T02:32:40.351Z",
+      "updated_at": "2026-11-01T04:05:21.165Z",
       "display": "kemungkinan besar",
       "cn": "很可能；大概率；多半",
       "root": "mungkin",
       "root_cn": "可能",
-      "last_wrong": "2026-10-31T02:32:40.273Z",
-      "last_review": "2026-10-31T02:32:40.273Z",
+      "last_wrong": "2026-11-01T04:05:21.113Z",
+      "last_review": "2026-11-01T04:05:21.113Z",
       "source": "课程小测",
-      "source_date": "2026-10-30",
-      "session": "18:00",
+      "source_date": "2026-11-01",
+      "session": "08:00",
       "reasons": [
         "memory_fuzzy",
         "lesson_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "kendatipun": {
@@ -6562,12 +6562,21 @@
     "mengapung": {
       "word": "mengapung",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:46.677Z",
+      "updated_at": "2026-11-01T04:04:37.331Z",
       "display": "mengapung",
+      "cn": "漂浮；浮在水面上",
+      "root": "apung",
+      "root_cn": "浮",
+      "last_wrong": "2026-11-01T04:04:37.271Z",
+      "last_review": "2026-11-01T04:04:37.271Z",
+      "source": "课程小测",
+      "source_date": "2026-11-01",
+      "session": "08:00",
       "reasons": [
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
+      "wrong_count": 1,
       "right_streak": 0
     },
     "lusa": {
@@ -8494,8 +8503,11 @@
     "perintah": {
       "word": "perintah",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:49.104Z",
+      "updated_at": "2026-11-01T04:01:57.229Z",
       "display": "perintah",
+      "cn": "命令；指令",
+      "root": "perintah",
+      "root_cn": "命令",
       "reasons": [
         "memory_fuzzy"
       ],
@@ -9802,8 +9814,9 @@
     "tangan": {
       "word": "tangan",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:50.432Z",
+      "updated_at": "2026-11-01T04:03:02.812Z",
       "display": "tangan",
+      "cn": "手",
       "last_review": "2026-09-12T14:13:50.978Z",
       "last_mastered": "2026-09-12T14:13:50.978Z",
       "reasons": [],
@@ -16368,8 +16381,9 @@
     "napas": {
       "word": "napas",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:01:00.367Z",
+      "updated_at": "2026-11-01T04:02:24.127Z",
       "display": "napas",
+      "cn": "气息",
       "last_review": "2026-09-12T14:54:21.270Z",
       "last_mastered": "2026-09-12T14:54:21.270Z",
       "reasons": [],
@@ -19268,22 +19282,24 @@
     "teratur": {
       "word": "teratur",
       "status": "active",
-      "updated_at": "2026-10-30T01:51:53.636Z",
+      "updated_at": "2026-11-01T04:04:10.487Z",
       "display": "teratur",
       "cn": "有规律的；有条理的",
       "root": "atur",
       "root_cn": "安排、整理",
-      "last_wrong": "2026-10-26T07:52:48.372Z",
-      "last_review": "2026-10-30T01:51:53.591Z",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "last_wrong": "2026-11-01T04:04:10.422Z",
+      "last_review": "2026-11-01T04:04:10.422Z",
+      "source": "课程小测",
+      "source_date": "2026-11-01",
+      "session": "08:00",
       "reasons": [
         "memory_dont",
         "bipa_secondary_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
-      "right_streak": 2
+      "wrong_count": 2,
+      "right_streak": 0
     },
     "dorong": {
       "word": "dorong",
