@@ -1,0 +1,836 @@
+{
+ "version": 1,
+ "title": "晚课深讲 · 11月2日",
+ "intro": [
+  "今晚的课叫《家庭饭桌上开过头的玩笑》。周日家庭聚餐，Herman 叔叔又叫 Laras 的老外号，还问她怎么还没找到工作；饭后 Laras 在门廊上跟叔叔说开了，叔叔承认玩笑开过头，向她道歉。",
+  "今晚只讲 5 样：[[nyinggung]] · [[kebablasan]] · [[akal]] · [[Jangan salah tangkap, …]] · [[Daripada …, mending …]]"
+ ],
+ "items": [
+  {
+   "key": "singgung",
+   "name": "nyinggung",
+   "head": "nyinggung · 提到；冒犯（口语）",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "对话",
+      "id": "Terus soal kerjaan itu, Om nyinggung banget. Minggu lalu aku baru gagal wawancara, dan Bima malah nimpalin pakai lelucon.",
+      "cn": "还有工作的事，叔叔那句话真的戳到我了。上星期我刚面试失败，Bima 还用玩笑接话。"
+     }
+    ],
+    "ask": "Laras 说 Om nyinggung banget，她是什么意思？",
+    "options": [
+     {
+      "t": "叔叔那句话让她很不舒服",
+      "reply": [
+       "对。nyinggung 在这里是“冒犯、戳到痛处”。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "叔叔一直在提工作",
+      "reply": [
+       "只对一半。nyinggung 也能是“提到”，但加了 banget、又讲到她刚面试失败，重点是“冒犯”。"
+      ]
+     },
+     {
+      "t": "她自己生叔叔的气了",
+      "reply": [
+       "她确实不高兴，但那要说 aku tersinggung；nyinggung 的主语是叔叔。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[nyinggung]] 是 {{menyinggung}} 的口语形式，两个意思：提到某事（{{nyinggung soal gaji}}），或说话伤到人。记住主客：{{A nyinggung B}}，被伤到的 B 说 {{Aku tersinggung}}。"
+   ],
+   "simple": [
+    "[[nyinggung]] = 戳到别人；被戳到的人 tersinggung"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Omongan Om nyinggung aku.",
+         "叔叔的话冒犯了我。"
+        ],
+        [
+         "Aku tersinggung.",
+         "我被冒犯了／不高兴了。"
+        ],
+        [
+         "Dia nyinggung soal gaji.",
+         "他提到了工资的事。"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Maaf, aku nggak bermaksud ___ perasaanmu.]]",
+     "（对不起，我不是故意伤你感情的。）"
+    ],
+    "options": [
+     {
+      "t": "nyinggung",
+      "v": "right",
+      "why": [
+       "对。nyinggung perasaan = 伤感情。"
+      ]
+     },
+     {
+      "t": "tersinggung",
+      "v": "wrong",
+      "why": [
+       "tersinggung 是“被冒犯”，主语应该是对方，不能接 perasaanmu。"
+      ]
+     },
+     {
+      "t": "menyinggung",
+      "v": "ok",
+      "why": [
+       "也可以，是标准形，写消息、正式道歉时更得体。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟朋友说：“他听了那句话就不高兴了。”"
+     ],
+     "options": [
+      {
+       "t": "Dia langsung tersinggung dengar omongan itu.",
+       "v": "right",
+       "why": [
+        "对。他是被冒犯的一方。"
+       ]
+      },
+      {
+       "t": "Dia langsung nyinggung dengar omongan itu.",
+       "v": "wrong",
+       "why": [
+        "nyinggung 是去冒犯别人，这里他是被冒犯的。"
+       ]
+      },
+      {
+       "t": "Dia langsung bete dengar omongan itu.",
+       "v": "ok",
+       "why": [
+        "也可以：bete 是口语“心情变差”，不点明被冒犯。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你提醒朋友：“别在聚会上提他工资的事。”"
+    ],
+    "kw": "jangan · nyinggung",
+    "skel": "____ ____ soal gajinya di acara nanti, ya.",
+    "ref": "Jangan nyinggung soal gajinya di acara nanti, ya."
+   },
+   "recall": {
+    "prompt": [
+     "你跟同事说：“老板那句话好像让她不高兴了。”"
+    ],
+    "kw": "tersinggung · bos",
+    "skel": "Kayaknya dia ____ sama omongan ____ tadi.",
+    "ref": "Kayaknya dia tersinggung sama omongan bos tadi.",
+    "notes": [
+     "kayaknya = sepertinya"
+    ]
+   },
+   "final": {
+    "cn": "（对上司）“抱歉，如果我刚才的话冒犯到您。”",
+    "ref": "Mohon maaf kalau perkataan saya tadi menyinggung Bapak."
+   },
+   "remind": "A nyinggung B（A 冒犯 B）→ B tersinggung；正式说 menyinggung。"
+  },
+  {
+   "key": "bablas",
+   "name": "kebablasan",
+   "head": "kebablasan · 过头；不小心越过了",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "对话",
+      "id": "Aduh, Om nggak tahu. Bercanda Om kebablasan. Maaf, ya, Ras.",
+      "cn": "哎呀，叔叔不知道。叔叔的玩笑开过头了。对不起啊，阿拉斯。"
+     }
+    ],
+    "ask": "Om 说 bercanda Om kebablasan，他在承认什么？",
+    "options": [
+     {
+      "t": "他的玩笑超出了分寸",
+      "reply": [
+       "对。kebablasan = 不小心越过了该停的地方。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "他的玩笑太无聊",
+      "reply": [
+       "不是。无聊会说 garing；kebablasan 是“过头”。"
+      ]
+     },
+     {
+      "t": "他是故意气 Laras",
+      "reply": [
+       "不是。kebablasan 恰恰带“不小心”的意思。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[kebablasan]] = 没刹住、越过了该停的地方。能说三种“过头”：距离 {{kebablasan satu halte}}（坐过站）、时间 {{tidurnya kebablasan}}（睡过头）、分寸 {{bercandanya kebablasan}}。说别人太过分、带责备时多用 {{keterlaluan}}。"
+   ],
+   "simple": [
+    "[[kebablasan]] = 不小心过头了（坐过站、睡过头、玩笑过头）"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Aku kebablasan satu halte.",
+         "我坐过了一站。"
+        ],
+        [
+         "Tidurku kebablasan.",
+         "我睡过头了。"
+        ],
+        [
+         "Kamu keterlaluan!",
+         "你太过分了！（责备）"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的用法",
+     "from": "usage_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Maaf telat, alarmku nggak bunyi, jadi tidurku ___.]]",
+     "（抱歉迟到了，闹钟没响，我睡过头了。）"
+    ],
+    "options": [
+     {
+      "t": "kebablasan",
+      "v": "right",
+      "why": [
+       "对。睡过头 = tidurnya kebablasan。"
+      ]
+     },
+     {
+      "t": "keterlaluan",
+      "v": "wrong",
+      "why": [
+       "keterlaluan 是“太过分”，用来责备行为，不说睡过头。"
+      ]
+     },
+     {
+      "t": "kesiangan",
+      "v": "ok",
+      "why": [
+       "也可以：bangun kesiangan 是“起晚了”，更常用。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你开车光顾着聊天，错过了要转的路口。你说："
+     ],
+     "options": [
+      {
+       "t": "Waduh, kebablasan! Kita harus putar balik.",
+       "v": "right",
+       "why": [
+        "对。错过路口就是 kebablasan。"
+       ]
+      },
+      {
+       "t": "Waduh, ketinggalan! Kita harus putar balik.",
+       "v": "wrong",
+       "why": [
+        "ketinggalan 是没赶上、落下了东西，不是开过头。"
+       ]
+      },
+      {
+       "t": "Waduh, kelewatan! Kita harus putar balik.",
+       "v": "ok",
+       "why": [
+        "也可以：kelewatan 口语里也能说“开过了”。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你在地铁上跟朋友发消息：“我坐过了一站，晚十分钟到。”"
+    ],
+    "kw": "kebablasan · satu stasiun",
+    "skel": "Aku ____ ____, telat sepuluh menit, ya.",
+    "ref": "Aku kebablasan satu stasiun, telat sepuluh menit, ya."
+   },
+   "recall": {
+    "prompt": [
+     "你向同事道歉：“抱歉，我刚才的玩笑开过头了。”"
+    ],
+    "kw": "bercandaku · kebablasan",
+    "skel": "Maaf, ya, ____ tadi ____.",
+    "ref": "Maaf, ya, bercandaku tadi kebablasan."
+   },
+   "final": {
+    "cn": "（对朋友）“看剧看过头了，一下子就凌晨两点了。”",
+    "ref": "Nonton drakornya kebablasan, tahu-tahu udah jam dua pagi."
+   },
+   "remind": "kebablasan = 不小心过头（坐过站、睡过头、玩笑过头）；责备别人用 keterlaluan。"
+  },
+  {
+   "key": "akal",
+   "name": "akal",
+   "head": "akal · 头脑；理智",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "对话",
+      "id": "Alasanmu masuk akal. Mulai sekarang, Om panggil kamu Laras aja.",
+      "cn": "你说得有道理。从现在起，叔叔就叫你 Laras。"
+     }
+    ],
+    "ask": "masuk akal 在这里是什么意思？",
+    "options": [
+     {
+      "t": "说得通、有道理",
+      "reply": [
+       "对。masuk akal = 进得了脑子 → 合理。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "很聪明",
+      "reply": [
+       "不是。夸人聪明说 pintar；masuk akal 说的是理由合理。"
+      ]
+     },
+     {
+      "t": "记住了",
+      "reply": [
+       "不是。记住是 ingat；masuk akal 是“说得通”。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[akal]] 单独用不多，最常用的是整块 {{masuk akal}}（说得通）和 {{nggak masuk akal}}（不合理）。吐槽价格、借口特别常用：{{Harganya nggak masuk akal!}} 另外 {{akal sehat}} 是“常识、理智”，{{cari akal}} 是“想办法”。"
+   ],
+   "simple": [
+    "[[masuk akal]] = 说得通；nggak masuk akal = 不合理"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Alasannya masuk akal.",
+         "理由说得通。"
+        ],
+        [
+         "Harganya nggak masuk akal!",
+         "价格太离谱了！"
+        ],
+        [
+         "Pakai akal sehat, dong.",
+         "用点常识吧。"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的搭配",
+     "from": "formation"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Parkir motor lima puluh ribu sejam? Itu nggak masuk ___!]]",
+     "（停摩托一小时五万？太离谱了！）"
+    ],
+    "options": [
+     {
+      "t": "akal",
+      "v": "right",
+      "why": [
+       "对。nggak masuk akal = 不合理、离谱。"
+      ]
+     },
+     {
+      "t": "pikiran",
+      "v": "wrong",
+      "why": [
+       "没有 masuk pikiran 这个说法。"
+      ]
+     },
+     {
+      "t": "otak",
+      "v": "wrong",
+      "why": [
+       "masuk otak 不是固定说法，这里只能说 masuk akal。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你同意同事的计划，说：“你的计划很合理。”"
+     ],
+     "options": [
+      {
+       "t": "Rencanamu masuk akal.",
+       "v": "right",
+       "why": [
+        "对。"
+       ]
+      },
+      {
+       "t": "Rencanamu masuk pikiran.",
+       "v": "wrong",
+       "why": [
+        "印尼语没有 masuk pikiran 这个搭配，说“合理”只能用 masuk akal。"
+       ]
+      },
+      {
+       "t": "Rencanamu bagus dan realistis.",
+       "v": "ok",
+       "why": [
+        "也可以，换了一种夸法。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你听朋友解释为什么换工作，说：“你的理由挺有道理的。”"
+    ],
+    "kw": "alasanmu · masuk akal",
+    "skel": "____ ____ juga, sih.",
+    "ref": "Alasanmu masuk akal juga, sih."
+   },
+   "recall": {
+    "prompt": [
+     "你在网上看到一部手机卖三千万印尼盾，跟朋友吐槽：“这价格太离谱了。”"
+    ],
+    "kw": "harganya · nggak masuk akal",
+    "skel": "____ ____ banget!",
+    "ref": "Harganya nggak masuk akal banget!"
+   },
+   "final": {
+    "cn": "（对客户）“您的要求很合理，我们会处理。”",
+    "ref": "Permintaan Bapak masuk akal, akan kami proses."
+   },
+   "remind": "akal 最常用在 masuk akal（说得通）/ nggak masuk akal（离谱）。"
+  },
+  {
+   "key": "p1",
+   "name": "Jangan salah tangkap, …",
+   "head": "Jangan salah tangkap, … · 别误会，……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "对话",
+      "id": "Waduh, ada apa? Jangan salah tangkap, ya. Om tadi cuma bercanda.",
+      "cn": "哎呀，怎么了？你别误会啊，叔叔刚才只是开玩笑。"
+     }
+    ],
+    "ask": "Om 说 Jangan salah tangkap，后面通常接什么？",
+    "options": [
+     {
+      "t": "解释自己的本意",
+      "reply": [
+       "对。先说“别误会”，再说自己真正的意思。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "道歉",
+      "reply": [
+       "不一定。道歉是 Maaf；salah tangkap 后面接的是解释。"
+      ]
+     },
+     {
+      "t": "让对方别生气就算了",
+      "reply": [
+       "不是。这句是为了说明本意，不是结束话题。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[Jangan salah tangkap]] 字面是“别抓错”，意思是“别误会”。后面接一句本意：{{Jangan salah tangkap, aku cuma mau bantu.}} 标准一点可以说 {{Jangan salah paham}}，两个都很常用。"
+   ],
+   "simple": [
+    "[[Jangan salah tangkap, + 本意]] = 别误会，我其实是……"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Jangan salah tangkap,",
+         "别误会，"
+        ],
+        [
+         "aku bukan marah.",
+         "我不是生气。"
+        ],
+        [
+         "Jangan salah paham, …",
+         "同样意思"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[___, aku bukan nggak suka masakanmu, cuma lagi kenyang.]]",
+     "（别误会，我不是不喜欢你做的菜，只是吃饱了。）"
+    ],
+    "options": [
+     {
+      "t": "Jangan salah tangkap",
+      "v": "right",
+      "why": [
+       "对。先说别误会，再解释。"
+      ]
+     },
+     {
+      "t": "Jangan salah paham",
+      "v": "ok",
+      "why": [
+       "也可以，意思一样。"
+      ]
+     },
+     {
+      "t": "Jangan tangkap",
+      "v": "wrong",
+      "why": [
+       "少了 salah，变成“别抓”，意思完全不对。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟同事说：“别误会，我不是在批评你。”"
+     ],
+     "options": [
+      {
+       "t": "Jangan salah tangkap, aku bukan mengkritik kamu.",
+       "v": "right",
+       "why": [
+        "对。"
+       ]
+      },
+      {
+       "t": "Jangan salah tangkap, karena aku mengkritik kamu.",
+       "v": "wrong",
+       "why": [
+        "意思反了：变成“因为我在批评你”。"
+       ]
+      },
+      {
+       "t": "Jangan salah paham, aku bukan mengkritik kamu.",
+       "v": "ok",
+       "why": [
+        "也可以。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你给朋友提建议后补一句：“别误会，我只是想帮你。”"
+    ],
+    "kw": "jangan salah tangkap · bantu",
+    "skel": "____, aku cuma mau ____ kamu.",
+    "ref": "Jangan salah tangkap, aku cuma mau bantu kamu."
+   },
+   "recall": {
+    "prompt": [
+     "你没去朋友的生日会，跟他解释：“别误会，我不是不想去，是真的要加班。”"
+    ],
+    "kw": "jangan salah tangkap · lembur",
+    "skel": "____, bukan nggak mau datang, aku beneran harus ____.",
+    "ref": "Jangan salah tangkap, bukan nggak mau datang, aku beneran harus lembur.",
+    "notes": [
+     "beneran = benar-benar"
+    ]
+   },
+   "final": {
+    "cn": "（对上司）“请别误会，我不是想推卸工作。”",
+    "ref": "Jangan salah tangkap, Pak, saya bukan mau menolak pekerjaan."
+   },
+   "remind": "Jangan salah tangkap, + 本意 = 别误会，我其实是……"
+  },
+  {
+   "key": "p2",
+   "name": "Daripada …, mending …",
+   "head": "Daripada …, mending … · 与其……，不如……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "对话",
+      "id": "Om, boleh ngobrol sebentar? Daripada ganjel di hati, mending aku ngomong langsung.",
+      "cn": "叔叔，能聊一会儿吗？与其憋在心里，不如我直接说。"
+     }
+    ],
+    "ask": "Laras 为什么要跟叔叔谈？",
+    "options": [
+     {
+      "t": "憋在心里不舒服，不如直接说出来",
+      "reply": [
+       "对。daripada 后面是不想要的做法，mending 后面是更好的选择。"
+      ],
+      "ok": true
+     },
+     {
+      "t": "她想要叔叔道歉才肯走",
+      "reply": [
+       "课文里她只是想说清楚，没有提条件。"
+      ]
+     },
+     {
+      "t": "她要跟叔叔借东西",
+      "reply": [
+       "不是。她是要谈刚才饭桌上的事。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[Daripada]] + 不想要的做法，{{mending}} + 更好的选择。很口语，劝人、给自己做决定都常用：{{Daripada macet, mending naik KRL.}} 标准说法是 {{Daripada …, lebih baik …}}。"
+   ],
+   "simple": [
+    "[[Daripada A, mending B]] = 与其 A，不如 B"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Daripada nunggu,",
+         "与其干等，"
+        ],
+        [
+         "mending kita jalan duluan.",
+         "不如我们先走。"
+        ],
+        [
+         "Daripada …, lebih baik …",
+         "标准说法"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Daripada bengong di rumah, ___ kita jalan-jalan ke taman.]]",
+     "（与其在家发呆，不如我们去公园走走。）"
+    ],
+    "options": [
+     {
+      "t": "mending",
+      "v": "right",
+      "why": [
+       "对。daripada … mending … 是固定搭配。"
+      ]
+     },
+     {
+      "t": "lebih baik",
+      "v": "ok",
+      "why": [
+       "也可以，是标准说法。"
+      ]
+     },
+     {
+      "t": "karena",
+      "v": "wrong",
+      "why": [
+       "karena 是“因为”，和 daripada 配不上。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟朋友说：“与其网上买，不如去店里试穿。”"
+     ],
+     "options": [
+      {
+       "t": "Daripada beli online, mending coba langsung di toko.",
+       "v": "right",
+       "why": [
+        "对。"
+       ]
+      },
+      {
+       "t": "Mending beli online, daripada coba langsung di toko.",
+       "v": "wrong",
+       "why": [
+        "顺序反了，意思变成“不如网上买”。"
+       ]
+      },
+      {
+       "t": "Daripada beli online, lebih baik coba langsung di toko.",
+       "v": "ok",
+       "why": [
+        "也可以，标准说法。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟同事说：“与其等外卖，不如我们自己去吃。”"
+    ],
+    "kw": "daripada · mending",
+    "skel": "____ nunggu ojol, ____ kita makan langsung di sana.",
+    "ref": "Daripada nunggu ojol, mending kita makan langsung di sana.",
+    "notes": [
+     "nunggu = menunggu；ojol = ojek online"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "你劝妹妹：“与其熬夜复习，不如早点睡。”"
+    ],
+    "kw": "daripada · mending",
+    "skel": "____ begadang belajar, ____ tidur lebih awal.",
+    "ref": "Daripada begadang belajar, mending tidur lebih awal."
+   },
+   "final": {
+    "cn": "（对朋友）“与其吵架，不如坐下来好好谈。”",
+    "ref": "Daripada berantem, mending kita duduk dan ngobrol baik-baik."
+   },
+   "remind": "Daripada A, mending B = 与其 A，不如 B；标准说 lebih baik。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "今晚另外两个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+  ],
+  "words": [
+   "tangkap",
+   "sebutan"
+  ]
+ },
+ "reading": [
+  {
+   "key": "sebutan",
+   "sentence": "Siang itu, Om Herman lagi-lagi menyebut Laras dengan sebutan lamanya, \"si Tukang Telat\".",
+   "cn": "那天中午，Herman 叔叔又用老外号“迟到大王”叫 Laras。",
+   "chunks": [
+    [
+     "Siang itu,",
+     "那天中午",
+     ""
+    ],
+    [
+     "Om Herman lagi-lagi",
+     "Herman 叔叔又一次",
+     "lagi-lagi = 又、再一次（带不满）"
+    ],
+    [
+     "menyebut Laras",
+     "称呼 Laras",
+     "menyebut = 称作；提到"
+    ],
+    [
+     "dengan sebutan lamanya,",
+     "用她的老称呼",
+     "sebutan = 称呼"
+    ],
+    [
+     "\"si Tukang Telat\".",
+     "“迟到大王”",
+     "tukang + 动作 = 总爱……的人"
+    ]
+   ],
+   "steal": [
+    "值得借的是 [[menyebut … dengan sebutan …]]：用某个称呼叫某人。{{Teman-teman menyebutnya dengan sebutan 'Pak Dosen'.}}（朋友们管他叫“教授”。）"
+   ]
+  }
+ ],
+ "dialogue": {
+  "head": "对话 · 你来演 Laras",
+  "intro": [
+   "你演 Laras，我演 Herman 叔叔。每一轮先看 Laras 想说什么，看中文先说。"
+  ],
+  "turns": [
+   {
+    "line": 0,
+    "intent": "Laras 请叔叔聊一会儿：与其憋在心里，不如直接说。",
+    "kw": "daripada · mending",
+    "skel": "Om, boleh ngobrol sebentar? ____ ganjel di hati, ____ aku ngomong langsung."
+   },
+   {
+    "line": 4,
+    "intent": "Laras 说工作那句话很戳人；她上周刚面试失败，Bima 还用玩笑接话。",
+    "kw": "nyinggung · nimpalin",
+    "skel": "Terus soal kerjaan itu, Om ____ banget. Minggu lalu aku baru gagal wawancara, dan Bima malah ____ pakai lelucon."
+   }
+  ],
+  "tail": [
+   "跟长辈说话时 Laras 用 aku/Om 加口语语气词；对上司、客户换成 saya 和标准形（menyinggung）。"
+  ]
+ },
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今晚的改写题，缩短版）：你昨天开玩笑提到朋友的前任，向他道歉。"
+   ],
+   "kw": "nyinggung · kebablasan",
+   "skel": "Maaf, ya, kemarin aku ____ soal mantanmu di depan semua orang. Bercandaku ____.",
+   "ref": "Maaf, ya, kemarin aku nyinggung soal mantanmu di depan semua orang. Bercandaku kebablasan.",
+   "notes": [
+    "整页的改写题有更完整的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
