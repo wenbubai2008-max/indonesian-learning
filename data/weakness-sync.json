@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T10:07:08.240Z",
+  "updated_at": "2026-11-02T10:14:52.402Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -31951,21 +31951,21 @@
     "nimpalin": {
       "word": "nimpalin",
       "status": "active",
-      "updated_at": "2026-10-30T11:10:53.217Z",
+      "updated_at": "2026-11-02T10:14:41.569Z",
       "display": "nimpalin",
-      "cn": "接话；回一句；顺着对方的话回应（口语）",
+      "cn": "接话；顺着话回一句（口语）",
       "root": "timpal",
       "root_cn": "接话；回应",
-      "last_wrong": "2026-10-30T11:10:53.068Z",
-      "last_review": "2026-10-30T11:10:53.068Z",
+      "last_wrong": "2026-11-02T10:14:41.490Z",
+      "last_review": "2026-11-02T10:14:41.490Z",
       "source": "课程小测",
-      "source_date": "2026-10-29",
+      "source_date": "2026-11-02",
       "session": "18:00",
       "reasons": [
         "memory_fuzzy",
         "lesson_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "canggung": {
