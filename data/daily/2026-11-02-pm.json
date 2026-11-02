@@ -1,0 +1,362 @@
+{
+  "date": "2026-11-02",
+  "session": "pm",
+  "time": "18:00",
+  "day": 73,
+  "title": "18:00 晚课｜Bercanda yang Kebablasan di Meja Makan Keluarga · 家庭饭桌上开过头的玩笑",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "tangkap",
+    "akal",
+    "sebutan"
+  ],
+  "vocab": [
+    {
+      "word": "tangkap",
+      "display": "tangkap",
+      "audio_text": "tangkap",
+      "cn": "抓；接住；理解（意思）",
+      "en": "to catch; to grasp (a meaning)",
+      "root": "tangkap",
+      "root_cn": "抓；捕",
+      "formation": "词根本身是动词。派生：menangkap（抓、捕；理解）、ditangkap（被抓）、tangkapan（捕获物；tangkapan layar 截图）、penangkapan（逮捕）。常见搭配：salah tangkap（误会；抓错人）、Tangkap bolanya!（接球！）、menangkap maksud（领会意思）。",
+      "example": "Jangan salah tangkap, komentarnya memang tajam, tapi dia cuma mau bantu.",
+      "example_cn": "别误会，他的评论确实尖锐，但他只是想帮忙。",
+      "synonym_note": "menangkap 是“抓住、接住”，也引申为“领会、听懂”（menangkap maksudnya）；mengerti / paham 是一般的“懂”。salah tangkap 有两个意思：误会别人的话，或警察抓错了人。口语说法：nangkep（Aku nggak nangkep maksudnya 我没听懂他的意思），标准形 menangkap。",
+      "usage_note": "今晚新词。不带前缀的 tangkap 主要用在命令句（Tangkap!）和 salah tangkap 里；陈述句一般用 menangkap / ditangkap。先把 Jangan salah tangkap（别误会）整句记住。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "akal",
+      "display": "akal",
+      "audio_text": "akal",
+      "cn": "头脑；理智；办法",
+      "en": "mind; reason; wits",
+      "root": "akal",
+      "root_cn": "智慧；头脑",
+      "formation": "词根本身是名词（来自阿拉伯语）。常见搭配：masuk akal（合理、说得通）、tidak masuk akal（不合理）、akal sehat（常识、理智）、cari akal（想办法）、akal-akalan（耍花招、钻空子）。派生：mengakali（想办法对付；钻……的空子）。",
+      "example": "Alasannya nggak masuk akal: katanya telat karena harus ngejar kucingnya yang kabur.",
+      "example_cn": "他的理由说不通：他说迟到是因为要去追跑掉的猫。",
+      "synonym_note": "akal 是“头脑、理智、想办法的能力”；pikiran 是“想法、念头”（ada di pikiran saya 在我脑子里）；ide 是“点子”。日常最常用的是整块 masuk akal / nggak masuk akal，比单用 akal 多得多。口语里 nggak masuk akal 常用来吐槽价格或借口：Harganya nggak masuk akal!",
+      "usage_note": "今晚新词。先记住 masuk akal（说得通）这个整块；夸别人的解释可以说 Penjelasanmu masuk akal.",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "sebutan",
+      "display": "sebutan",
+      "audio_text": "sebutan",
+      "cn": "称呼；叫法",
+      "en": "term of address; designation",
+      "root": "sebut",
+      "root_cn": "提到；称",
+      "formation": "sebut（提到、叫）+ -an。同词根：menyebut（提到；称作）、disebut（被称为）、tersebut（上述的，书面）、sebut saja（姑且叫他……）。常见搭配：sebutan untuk …（对……的称呼）、sebutan lama（老称呼）、sebutan akrab（亲昵的叫法）。",
+      "example": "Waktu kecil, sebutan 'si Bulat' terdengar lucu, tapi sekarang dia nggak suka dipanggil begitu.",
+      "example_cn": "小时候，“小圆球”这个叫法听起来很可爱，但现在他不喜欢被这样叫了。",
+      "synonym_note": "sebutan 是“称呼、叫法”，偏中性；julukan 是“绰号”，常带特点或调侃（julukan 'si Tukang Telat'）；panggilan 是平时叫人的称呼（panggilan sayang 昵称）。三者有重叠，说外号时 sebutan 和 julukan 都可以。",
+      "usage_note": "今晚新词。问一样东西印尼语怎么叫，可以说 Apa sebutannya dalam bahasa Indonesia?（印尼语里怎么叫？）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "nyinggung",
+      "display": "nyinggung",
+      "audio_text": "nyinggung",
+      "cn": "提到；触及；冒犯（口语）",
+      "en": "to touch on; to offend (colloquial)",
+      "root": "singgung",
+      "root_cn": "触及；提到",
+      "formation": "口语形式，标准形 menyinggung = meN- + singgung（s 脱落，变成 ny-）。同词根：tersinggung（被冒犯、心里不舒服）、singgungan（提及；摩擦）。常见搭配：nyinggung perasaan（伤感情）、nyinggung soal …（提到……的事）。",
+      "example": "Tolong jangan nyinggung soal cerai di depan Tante, dia masih sedih.",
+      "example_cn": "拜托别在阿姨面前提离婚的事，她还在难过。",
+      "synonym_note": "menyinggung 有两层：①提到、谈到（menyinggung soal gaji 提到工资）；②冒犯、伤到别人（menyinggung perasaan）。被冒犯的一方说 tersinggung（Dia tersinggung 他不高兴了）。menyakiti hati 更重，是“伤透心”。口语说法：nyinggung，正式场合说 menyinggung。",
+      "usage_note": "已经答错过三次的词，这次换成词形辨析和造句来练。最容易搞混的是主客：A nyinggung B → B tersinggung（A 冒犯了 B，B 觉得被冒犯）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "sebel",
+      "display": "sebel",
+      "audio_text": "sebel",
+      "cn": "烦；恼火（口语）",
+      "en": "annoyed (colloquial)",
+      "root": "sebel",
+      "root_cn": "烦；恼火",
+      "formation": "口语形容词，书面写作 sebal。常见搭配：sebel banget（烦死了）、sebel sama …（对……恼火）、bikin sebel（让人烦）。",
+      "example": "Aku sebel sama tetangga yang suka ribut tengah malam.",
+      "example_cn": "我烦那个总在半夜吵吵闹闹的邻居。",
+      "synonym_note": "sebel 和 kesel 都是“烦、恼火”，日常多数时候可以互换；kesel 更偏“生气、憋屈”，sebel 更偏“看不顺眼、烦”。marah 是真正发火，程度更重；benci 是长期、强烈的讨厌。口语说法：sebel 本身就是口语，书面写 sebal 或 kesal。",
+      "usage_note": "很久没复习的老词。常和 sama 连用：sebel sama dia（烦他）；说事情让人烦用 bikin sebel。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kebablasan",
+      "display": "kebablasan",
+      "audio_text": "kebablasan",
+      "cn": "过头；不小心越过了（口语）",
+      "en": "to overshoot; to go too far (colloquial)",
+      "root": "bablas",
+      "root_cn": "一直冲过去；越过",
+      "formation": "ke- + bablas（一直冲过去、越过）+ -an，表示“不小心超出了该停的地方”。常见搭配：bercandanya kebablasan（玩笑开过头）、tidurnya kebablasan（睡过头）、kebablasan satu halte（坐过一站）。",
+      "example": "Tadi aku keasyikan ngobrol sama abang ojek, jadi kebablasan dan harus putar balik.",
+      "example_cn": "刚才我光顾着和摩的司机聊天，结果骑过头了，只好掉头回去。",
+      "synonym_note": "kebablasan 强调“不小心越过了该停的地方”，可以是距离（坐过站）、时间（睡过头）或分寸（玩笑开过头）。keterlaluan 是“太过分了”，带责备，多说别人的行为；说玩笑过头时 kebablasan 和 keterlaluan 都可以，后者语气更重。",
+      "usage_note": "最近答错过的词。说自己时最常用：Maaf, bercandaku kebablasan.（抱歉，我玩笑开过头了。）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nimpalin",
+      "display": "nimpalin",
+      "audio_text": "nimpalin",
+      "cn": "接话；顺着话回一句（口语）",
+      "en": "to chime in; to respond to what someone said (colloquial)",
+      "root": "timpal",
+      "root_cn": "接话；回应",
+      "formation": "口语形式，标准形 menimpali = meN- + timpal + -i（t 脱落，变成 n-），口语把 -i 说成 -in。常见搭配：nimpalin omongan orang（接别人的话）、langsung nimpalin（马上接话）、nimpalin pakai lelucon（用玩笑接话）。",
+      "example": "Setiap kali Ayah cerita soal masa mudanya, adikku selalu nimpalin pakai lelucon.",
+      "example_cn": "每次爸爸讲他年轻时的事，我弟弟总是用玩笑接话。",
+      "synonym_note": "nimpalin 是别人说完后“接一句、搭腔”，可以附和也可以抬杠；menjawab 是回答问题；nyeletuk 是冷不丁插一句（多是玩笑）。口语说法：nimpalin，正式场合说 menimpali。",
+      "usage_note": "最近答错过的词。它需要“前面有人先说了话”的语境：Dia langsung nimpalin omongan Om.（他马上接了叔叔的话。）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kadang",
+      "display": "kadang",
+      "audio_text": "kadang",
+      "cn": "有时",
+      "en": "sometimes",
+      "root": "kadang",
+      "root_cn": "有时",
+      "formation": "副词。常见形式：kadang-kadang（有时，最常用）、terkadang（有时，偏书面）、kadang … kadang …（时而……时而……）。",
+      "example": "Kadang aku kepikiran pindah ke kawasan yang lebih tenang.",
+      "example_cn": "有时我会想搬到更安静的地区去。",
+      "synonym_note": "kadang / kadang-kadang 是“有时”；sering 是“经常”，jarang 是“很少”，selalu 是“总是”。terkadang 意思一样，多用于书面。口语里单用 kadang 很常见（Kadang aku males masak）。",
+      "usage_note": "很久没复习的老词。kadang … kadang … 表示“时而……时而……”：Kadang panas, kadang hujan.",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "fakta",
+      "display": "fakta",
+      "audio_text": "fakta",
+      "cn": "事实",
+      "en": "fact",
+      "root": "fakta",
+      "root_cn": "事实",
+      "formation": "词根本身是名词（外来词，对应英语 fact）。常见搭配：faktanya（事实上）、fakta menarik（有趣的事实）、sesuai fakta（符合事实）、berdasarkan fakta（根据事实）。今天08:00新学。",
+      "example": "Gosip itu tidak sesuai fakta; Rudi bukan dipecat karena kinerjanya, tapi pindah kerja sendiri.",
+      "example_cn": "那个八卦不符合事实：Rudi 不是因为业绩被开除的，而是自己跳槽了。",
+      "synonym_note": "fakta 是“事实”；kenyataan 是“现实、实际情况”，说“事实上”时 faktanya 和 kenyataannya 都可以；kabar / gosip 是消息、八卦，不一定是真的。",
+      "usage_note": "今天08:00新学，今晚换到办公室八卦、居家办公等新场景：用 Faktanya, …（事实是……）纠正别人的误会。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "benci",
+      "display": "benci",
+      "audio_text": "benci",
+      "cn": "讨厌；恨",
+      "en": "to hate",
+      "root": "benci",
+      "root_cn": "讨厌；恨",
+      "formation": "词根本身是动词。派生：membenci（恨、厌恶，偏书面）、kebencian（仇恨）、dibenci（被讨厌）。常见搭配：benci sama …（讨厌……）、benci banget（超讨厌）。今天08:00新学。",
+      "example": "Aku benci banget antre isi bensin pas jam pulang kantor.",
+      "example_cn": "我超讨厌在下班高峰排队加油。",
+      "synonym_note": "benci 是“讨厌、恨”，比 nggak suka 强得多；sebel / kesel 是一时的“烦”，benci 是长期、强烈的讨厌。说“不爱吃某种菜”多说 nggak suka，用 benci 会显得很重。",
+      "usage_note": "今天08:00新学。今晚和复习词 sebel 对比：一时烦说 sebel，一直讨厌说 benci。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Setiap Minggu siang, keluarga besar Laras makan bersama di rumah nenek. Siang itu, Om Herman lagi-lagi menyebut Laras dengan sebutan lamanya, \"si Tukang Telat\". Laras hanya tersenyum, walaupun sebenarnya ia kesal. Lalu Om Herman bertanya kenapa Laras belum juga dapat kerja. Pertanyaan itu menyinggung perasaannya, karena minggu lalu ia baru gagal dalam wawancara kerja. Adiknya, Bima, malah ikut menimpali dengan lelucon. Semua orang tertawa, kecuali Laras. Ia meletakkan sendoknya dan diam. Setelah makan, Laras mengajak Om Herman bicara di teras. Penjelasan Laras masuk akal: sebutan itu lucu waktu ia kecil, tetapi tidak untuk orang dewasa. Om Herman akhirnya mengakui bahwa bercandanya sudah kelewatan dan meminta maaf.",
+    "cn": "每个星期天中午，Laras 的大家族都会在奶奶家一起吃饭。那天中午，Herman 叔叔又用老外号“迟到大王”叫 Laras。Laras 只是笑了笑，虽然心里其实很不高兴。接着，Herman 叔叔问她为什么还没找到工作。这个问题刺痛了她，因为她上个星期刚刚面试失败。她弟弟 Bima 反而也跟着用玩笑接话。大家都笑了，只有 Laras 没笑。她放下勺子，沉默不语。饭后，Laras 请 Herman 叔叔到门廊上聊聊。Laras 的解释很有道理：这个外号在她小时候很可爱，但对一个成年人来说就不合适了。Herman 叔叔最后承认自己的玩笑开过头了，并向她道歉。"
+  },
+  "dialogue": {
+    "title": "门廊上：Laras 和叔叔说开了",
+    "lines": [
+      {
+        "speaker": "Laras",
+        "id": "Om, boleh ngobrol sebentar? Daripada ganjel di hati, mending aku ngomong langsung.",
+        "cn": "叔叔，能聊一会儿吗？与其憋在心里，不如我直接说。（ngobrol = mengobrol，mending = lebih baik，ngomong = berbicara）"
+      },
+      {
+        "speaker": "Om Herman",
+        "id": "Waduh, ada apa? Jangan salah tangkap, ya. Om tadi cuma bercanda.",
+        "cn": "哎呀，怎么了？你别误会啊，叔叔刚才只是开玩笑。（cuma = hanya）"
+      },
+      {
+        "speaker": "Laras",
+        "id": "Aku tahu, Om. Tapi jujur, aku agak sebel dipanggil 'Tukang Telat' terus. Umurku udah dua puluh enam.",
+        "cn": "我知道，叔叔。但说实话，一直被叫“迟到大王”我有点烦。我都二十六岁了。（udah = sudah）"
+      },
+      {
+        "speaker": "Om Herman",
+        "id": "Oh, pantes tadi kamu kelihatan kesel.",
+        "cn": "哦，难怪你刚才看起来不太高兴。（pantes = pantas，kesel = kesal）"
+      },
+      {
+        "speaker": "Laras",
+        "id": "Terus soal kerjaan itu, Om nyinggung banget. Minggu lalu aku baru gagal wawancara, dan Bima malah nimpalin pakai lelucon.",
+        "cn": "还有工作的事，叔叔那句话真的戳到我了。上星期我刚面试失败，Bima 还用玩笑接话。（terus = lalu，nyinggung = menyinggung，nimpalin = menimpali）"
+      },
+      {
+        "speaker": "Om Herman",
+        "id": "Aduh, Om nggak tahu. Bercanda Om kebablasan. Maaf, ya, Ras.",
+        "cn": "哎呀，叔叔不知道。叔叔的玩笑开过头了。对不起啊，阿拉斯。（nggak = tidak）"
+      },
+      {
+        "speaker": "Laras",
+        "id": "Nggak apa-apa, Om. Kadang orang memang nggak sadar kalau bercandanya udah kelewatan.",
+        "cn": "没关系，叔叔。有时候人确实意识不到自己的玩笑已经过分了。"
+      },
+      {
+        "speaker": "Om Herman",
+        "id": "Alasanmu masuk akal. Mulai sekarang, Om panggil kamu Laras aja.",
+        "cn": "你说得有道理。从现在起，叔叔就叫你 Laras。（aja = saja）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：同事以为你在会上批评他。用 salah tangkap 和 masuk akal 向他解释（2–3 句）。",
+      "reference_answer": "Jangan salah tangkap, ya. Aku bukan mengkritik kinerjamu, cuma kasih saran soal pola laporan kita. Kalau saranku nggak masuk akal, bilang aja.",
+      "reference_cn": "别误会啊。我不是在批评你的工作表现，只是对我们报告的格式提点建议。如果我的建议说不通，直接跟我说就好。"
+    },
+    {
+      "task": "弱词应用：你昨天当着大家的面开玩笑提到朋友的前任。用 nyinggung 和 kebablasan 向他道歉（2–3 句）。",
+      "reference_answer": "Maaf, ya, kemarin aku nyinggung soal mantanmu di depan semua orang. Bercandaku kebablasan. Biarpun maksudku cuma bercanda, harusnya aku nggak bahas itu.",
+      "reference_cn": "对不起啊，昨天我当着所有人的面提了你前任的事。我的玩笑开过头了。就算只是想开个玩笑，我也不该提那件事。"
+    },
+    {
+      "task": "早课迁移（不写同学会）：用今天08:00新学的 fakta 和 benci，跟朋友说一件你很讨厌、但别人常误会的事（2–3 句）。",
+      "reference_answer": "Aku benci banget kalau orang bilang kerja dari rumah itu santai. Faktanya, aku malah sering kerja sampai malam dan kepikiran kerjaan terus. Banyak teman juga mengalami hal yang sama.",
+      "reference_cn": "我特别讨厌别人说在家办公很轻松。事实上，我反而常常工作到很晚，脑子里一直想着工作。很多朋友也有同样的经历。"
+    },
+    {
+      "task": "场景回应（口语）：朋友问你家里的群聊为什么吵起来了。用 kadang、sebel 和 nimpalin 回答。",
+      "reference_answer": "Kadang grup keluarga itu bikin sebel. Tadi Tante cuma tanya soal liburan, eh Om langsung nimpalin soal topik tertentu yang sensitif, terus semua jadi ribut.",
+      "reference_cn": "家里的群有时候真让人烦。刚才阿姨只是问了问假期的事，结果叔叔马上扯到某个敏感话题，然后大家就吵起来了。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "饭桌上 Om 说完那句话后，Laras 一下子不说话了。Bima 小声对妈妈说：“Kayaknya Kak Laras ___ deh sama omongan Om.” 选最自然的一项：",
+        "options": [
+          "tersinggung",
+          "nyinggung",
+          "singgungan",
+          "menyinggung"
+        ],
+        "answer_index": 0,
+        "answer": "tersinggung",
+        "explain": "主语是 Laras，她是“被冒犯、心里不舒服”的一方，所以用 tersinggung（tersinggung sama …）。nyinggung / menyinggung 是“冒犯别人、提到某事”，主语应该是 Om（Omongan Om nyinggung Kak Laras）；singgungan 是名词，不能放在这里当谓语。"
+      },
+      {
+        "type": "choice",
+        "prompt": "你在公交车上看手机，抬头才发现已经过了要下的那一站。你给朋友发消息：“Sorry telat, tadi aku ___ satu halte.” 选最自然的一项：",
+        "options": [
+          "ketinggalan",
+          "kebablasan",
+          "kesasar",
+          "keterlaluan"
+        ],
+        "answer_index": 1,
+        "answer": "kebablasan",
+        "explain": "不小心越过了该停的地方，用 kebablasan（kebablasan satu halte 坐过了一站）。ketinggalan 是“落下、没赶上”（ketinggalan bus 没赶上车）；kesasar 是迷路；keterlaluan 是“太过分”，说的是行为，不说坐车。"
+      },
+      {
+        "type": "choice",
+        "prompt": "爸爸刚讲完他年轻时追妈妈的故事，弟弟马上就开了个玩笑，全家都笑了。妈妈笑着说：“Kamu tuh, Ayah baru selesai cerita, langsung ___ aja.” 选最自然的一项：",
+        "options": [
+          "menjawab",
+          "ngobrol",
+          "ngatain",
+          "nimpalin"
+        ],
+        "answer_index": 3,
+        "answer": "nimpalin",
+        "explain": "别人话音刚落就接一句，用 nimpalin（接话、搭腔）。爸爸没有提问，所以不是 menjawab（回答）；ngobrol 是闲聊，不是“接一句”；ngatain 是“骂、损人”，和全家笑着的气氛不符。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Penjelasanmu masuk ______, aku setuju.（理智；说得通）",
+        "answer": "akal",
+        "explain": "masuk akal = 说得通、合理，是 akal 最常用的搭配；反义是 nggak masuk akal。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：'Abang' adalah ______ yang umum untuk tukang ojek di Jakarta.（称呼）",
+        "answer": "sebutan",
+        "explain": "sebutan untuk … = 对……的称呼。sebut（称、提到）+ -an 变成名词。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：别误会，我只是开玩笑。",
+        "tokens": [
+          "Jangan",
+          "salah tangkap,",
+          "aku",
+          "cuma",
+          "bercanda."
+        ],
+        "answer": "Jangan salah tangkap, aku cuma bercanda.",
+        "answer_cn": "别误会，我只是开玩笑。",
+        "explain": "Jangan salah tangkap = 别误会（字面是“别抓错”）；cuma 是 hanya 的口语形式。说完 salah tangkap 常接一句解释自己的本意。"
+      }
+    ],
+    "self_check": [
+      "不看中文：tangkap（salah tangkap）、akal（masuk akal）、sebutan 这三个新词，我能在 3 秒内说出意思吗？",
+      "nyinggung 和 tersinggung，谁是冒犯人的一方、谁是被冒犯的一方，我分得清吗？",
+      "kebablasan 和 nimpalin 这两个最近答错过的词，我一看到就能想起意思吗？",
+      "sebel 和 kadang 这两个很久没复习的词，我还能马上说出意思吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘（主动输出，不重复自检）",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "易混输出：用 nyinggung 说一句曾让你不舒服的话，再用 tersinggung 说你当时的感受；然后用 sebel 说一件让你一时烦的小事，用 benci 说一件你一直很讨厌的事。",
+      "常错词搭配：用 Maaf, bercandaku kebablasan. 向一个朋友道歉；再用 … langsung nimpalin … 讲一次别人刚说完、马上有人接话的场景。",
+      "早课迁移（换场景，不在同学会）：用今天08:00新学的 fakta 说一句 Faktanya, …，纠正一个你听过的误会。",
+      "30 秒脱稿复述：Om Herman 在饭桌上说了什么、Laras 为什么不高兴、她在门廊上怎么说、最后 Om 怎么回应。至少用上 sebutan、salah tangkap、masuk akal、kebablasan 中的三个。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "nyinggung",
+      "kebablasan",
+      "akal"
+    ],
+    "patterns": [
+      {
+        "pattern": "Jangan salah tangkap, …",
+        "cn": "别误会，……",
+        "example": "Jangan salah tangkap, ya. Om tadi cuma bercanda.",
+        "example_cn": "你别误会啊，叔叔刚才只是开玩笑。"
+      },
+      {
+        "pattern": "Daripada …, mending …",
+        "cn": "与其……，不如……",
+        "example": "Daripada ganjel di hati, mending aku ngomong langsung.",
+        "example_cn": "与其憋在心里，不如我直接说。"
+      }
+    ]
+  }
+}
