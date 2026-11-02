@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-02",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 73
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-01T10:51:17.719Z",
-    "lesson_watermark": "2026-11-01 18:00",
-    "index_updated": "2026-11-01",
-    "runtime_hash": "24fae8bc1f6fafe277bf230d439178ee26200b30780eb3dfc5687dc557c80f96",
-    "index_hash": "ce20199ae1d3d2a438160de8043586ecd093968ec6fe2ada543cb8ae780dd4a1",
+    "runtime_generated_at": "2026-11-02T00:32:01.600Z",
+    "lesson_watermark": "2026-11-02 08:00",
+    "index_updated": "2026-11-02",
+    "runtime_hash": "304e7d6d81d2b74f74929e2318eba2d54893283c5c842b0ab3b999f3051ce169",
+    "index_hash": "591316e278f54ddd8dc436752debbbfd37f60fa3996adb082e2ea8e886d3ed74",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -71,24 +71,12 @@
         "星期三"
       ],
       [
-        "fakta",
-        "事实"
-      ],
-      [
-        "menyukai",
-        "喜欢"
-      ],
-      [
         "menderita",
         "遭受(痛苦)"
       ],
       [
         "datar",
         "平坦的"
-      ],
-      [
-        "nilai",
-        "分数，价值"
       ],
       [
         "modal",
@@ -99,36 +87,8 @@
         "文章，报道"
       ],
       [
-        "ilmu",
-        "知识"
-      ],
-      [
-        "angkatan",
-        "队伍 / 年级 / 班次"
-      ],
-      [
         "akal",
         "智慧"
-      ],
-      [
-        "kehadiran",
-        "出席、在场"
-      ],
-      [
-        "diperlukan",
-        "需要的"
-      ],
-      [
-        "putuskan",
-        "决定"
-      ],
-      [
-        "pendiam",
-        "沉默寡言"
-      ],
-      [
-        "benci",
-        "讨厌；恨"
       ],
       [
         "ucap",
@@ -989,16 +949,6 @@
         "接受；收到"
       ],
       [
-        "muncul",
-        3,
-        0,
-        "",
-        "2026-10-15T13:37:59.971Z",
-        "出现；冒出来",
-        "muncul",
-        "出现"
-      ],
-      [
         "segera",
         3,
         0,
@@ -1027,36 +977,6 @@
         "泥土；土地",
         "tanah",
         "泥土；土地"
-      ],
-      [
-        "benerin",
-        2,
-        0,
-        "",
-        "2026-10-15T13:46:06.896Z",
-        "修好；弄对",
-        "benar",
-        "正确"
-      ],
-      [
-        "acara",
-        3,
-        0,
-        "",
-        "2026-10-24T02:35:57.327Z",
-        "活动，节目",
-        "acara",
-        "活动；节目"
-      ],
-      [
-        "jenis",
-        3,
-        0,
-        "",
-        "2026-10-21T06:06:41.285Z",
-        "种类 / 类型",
-        "jenis",
-        "种类；类型"
       ],
       [
         "kadang",
@@ -2347,6 +2267,146 @@
         "离婚；分开",
         "cerai",
         "分开；离婚"
+      ],
+      [
+        "cemas",
+        2,
+        0,
+        "",
+        "2026-10-19T13:15:48.308Z",
+        "焦虑；担忧",
+        "cemas",
+        "焦虑；担忧"
+      ],
+      [
+        "daya",
+        2,
+        0,
+        "",
+        "2026-10-21T01:42:11.741Z",
+        "力量；能力；功率",
+        "daya",
+        "力量；能力"
+      ],
+      [
+        "demam",
+        2,
+        0,
+        "",
+        "2026-10-21T01:42:14.030Z",
+        "发烧",
+        "demam",
+        "发烧"
+      ],
+      [
+        "ditemukan",
+        2,
+        0,
+        "",
+        "2026-10-21T01:42:44.166Z",
+        "被发现；被找到",
+        "temu",
+        "见；找到"
+      ],
+      [
+        "angkatan",
+        3,
+        0,
+        "",
+        "",
+        "（学校的）届、年级；批次",
+        "angkat",
+        "抬；举；任命"
+      ],
+      [
+        "kehadiran",
+        3,
+        0,
+        "",
+        "",
+        "出席；到场；在场",
+        "hadir",
+        "出席；到场"
+      ],
+      [
+        "pendiam",
+        3,
+        0,
+        "",
+        "",
+        "沉默寡言的（人）；不爱说话的",
+        "diam",
+        "安静；不出声"
+      ],
+      [
+        "nilai",
+        3,
+        0,
+        "",
+        "",
+        "分数；价值",
+        "nilai",
+        "价值；分数"
+      ],
+      [
+        "ilmu",
+        3,
+        0,
+        "",
+        "",
+        "知识；学问；（某一门）学科",
+        "ilmu",
+        "知识；学问"
+      ],
+      [
+        "benci",
+        3,
+        0,
+        "",
+        "",
+        "讨厌；恨",
+        "benci",
+        "讨厌；恨"
+      ],
+      [
+        "menyukai",
+        3,
+        0,
+        "",
+        "",
+        "喜欢",
+        "suka",
+        "喜欢"
+      ],
+      [
+        "fakta",
+        3,
+        0,
+        "",
+        "",
+        "事实",
+        "fakta",
+        "事实"
+      ],
+      [
+        "putuskan",
+        3,
+        0,
+        "",
+        "",
+        "决定（不带 meN- 的形式）",
+        "putus",
+        "断；断开；分手"
+      ],
+      [
+        "diperlukan",
+        3,
+        0,
+        "",
+        "",
+        "需要的；被需要",
+        "perlu",
+        "需要"
       ]
     ],
     "focus": [
@@ -2888,6 +2948,30 @@
         "bergetar",
         "titik"
       ]
+    },
+    {
+      "date": "2026-11-02",
+      "session": "am",
+      "review_core": [
+        "tampak",
+        "tanggung jawab",
+        "acara",
+        "benerin",
+        "jenis",
+        "muncul"
+      ],
+      "new_words": [
+        "angkatan",
+        "kehadiran",
+        "pendiam",
+        "nilai",
+        "ilmu",
+        "benci",
+        "menyukai",
+        "fakta",
+        "putuskan",
+        "diperlukan"
+      ]
     }
   ],
   "previous_pm": {
@@ -2905,7 +2989,89 @@
       "kegiatan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-02",
+    "vocab": [
+      [
+        "angkatan",
+        "（学校的）届、年级；批次",
+        "class, batch (of the same school year); cohort",
+        "angkat",
+        "抬；举；任命"
+      ],
+      [
+        "kehadiran",
+        "出席；到场；在场",
+        "attendance; presence",
+        "hadir",
+        "出席；到场"
+      ],
+      [
+        "pendiam",
+        "沉默寡言的（人）；不爱说话的",
+        "quiet, reserved (person)",
+        "diam",
+        "安静；不出声"
+      ],
+      [
+        "nilai",
+        "分数；价值",
+        "grade, score; value",
+        "nilai",
+        "价值；分数"
+      ],
+      [
+        "ilmu",
+        "知识；学问；（某一门）学科",
+        "knowledge; science, field of study",
+        "ilmu",
+        "知识；学问"
+      ],
+      [
+        "benci",
+        "讨厌；恨",
+        "to hate",
+        "benci",
+        "讨厌；恨"
+      ],
+      [
+        "menyukai",
+        "喜欢",
+        "to like",
+        "suka",
+        "喜欢"
+      ],
+      [
+        "fakta",
+        "事实",
+        "fact",
+        "fakta",
+        "事实"
+      ],
+      [
+        "putuskan",
+        "决定（不带 meN- 的形式）",
+        "decide (bare form of memutuskan)",
+        "putus",
+        "断；断开；分手"
+      ],
+      [
+        "diperlukan",
+        "需要的；被需要",
+        "needed; required",
+        "perlu",
+        "需要"
+      ]
+    ],
+    "review_vocab": [
+      "tampak",
+      "tanggung jawab",
+      "acara",
+      "benerin",
+      "jenis",
+      "muncul"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

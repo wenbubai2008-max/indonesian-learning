@@ -10639,17 +10639,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-15 08:00",
-    "last_seen": "2026-09-15 08:00",
+    "last_seen": "2026-11-02 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-15"
+      "2026-09-15",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
-      "2026-09-15 08:00"
+      "2026-09-15 08:00",
+      "2026-11-02 08:00"
     ]
   },
   {
@@ -10914,17 +10916,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-16 08:00",
+    "last_seen": "2026-11-02 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
-      "2026-09-16 08:00"
+      "2026-09-16 08:00",
+      "2026-11-02 08:00"
     ]
   },
   {
@@ -10939,17 +10943,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-16 08:00",
+    "last_seen": "2026-11-02 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
-      "2026-09-16 08:00"
+      "2026-09-16 08:00",
+      "2026-11-02 08:00"
     ]
   },
   {
@@ -11086,17 +11092,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-16 08:00",
+    "last_seen": "2026-11-02 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
-      "2026-09-16 08:00"
+      "2026-09-16 08:00",
+      "2026-11-02 08:00"
     ]
   },
   {
@@ -25985,19 +25993,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "按时还书是每一位图书馆会员的责任。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-27 18:00",
-    "last_seen": "2026-10-27 18:00",
+    "last_seen": "2026-11-02 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-27"
+      "2026-10-27",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
-      "2026-10-27 18:00"
+      "2026-10-27 18:00",
+      "2026-11-02 08:00"
     ]
   },
   {
@@ -27292,19 +27304,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "从外面看，那栋老房子看起来很普通，其实它的历史非常悠久。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-31 18:00",
-    "last_seen": "2026-10-31 18:00",
+    "last_seen": "2026-11-02 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
-      "2026-10-31 18:00"
+      "2026-10-31 18:00",
+      "2026-11-02 08:00"
     ]
   },
   {
@@ -27690,6 +27706,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-01 18:00"
+    ]
+  },
+  {
+    "word": "angkatan",
+    "cn": "（学校的）届、年级；批次",
+    "en": "class, batch (of the same school year); cohort",
+    "root": "angkat",
+    "root_cn": "抬；举；任命",
+    "example": "Kami satu angkatan di kampus. Dulu sering berantem, sekarang malah jadi sahabat.",
+    "example_cn": "我们在大学是同一届的。以前常吵架，现在反而成了好朋友。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 08:00"
+    ]
+  },
+  {
+    "word": "kehadiran",
+    "cn": "出席；到场；在场",
+    "en": "attendance; presence",
+    "root": "hadir",
+    "root_cn": "出席；到场",
+    "example": "Terima kasih atas kehadiran Bapak dan Ibu di acara malam ini.",
+    "example_cn": "感谢各位今晚光临。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 08:00"
+    ]
+  },
+  {
+    "word": "pendiam",
+    "cn": "沉默寡言的（人）；不爱说话的",
+    "en": "quiet, reserved (person)",
+    "root": "diam",
+    "root_cn": "安静；不出声",
+    "example": "Raka memang pendiam, tapi kalau diajak ngobrol soal bola, dia bisa bicara terus-menerus.",
+    "example_cn": "拉卡确实不爱说话，但一聊起足球，他能一直说个不停。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 08:00"
+    ]
+  },
+  {
+    "word": "nilai",
+    "cn": "分数；价值",
+    "en": "grade, score; value",
+    "root": "nilai",
+    "root_cn": "价值；分数",
+    "example": "Waktu SMP, nilai matematikaku sering merah, jadi Ayah mencarikan guru les.",
+    "example_cn": "上初中时，我的数学常常不及格，所以爸爸给我找了家教。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 08:00"
+    ]
+  },
+  {
+    "word": "ilmu",
+    "cn": "知识；学问；（某一门）学科",
+    "en": "knowledge; science, field of study",
+    "root": "ilmu",
+    "root_cn": "知识；学问",
+    "example": "Bu Wati selalu bilang, ilmu itu tidak ada gunanya kalau tidak dipakai.",
+    "example_cn": "瓦蒂老师总说，知识不用就没有用。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 08:00"
+    ]
+  },
+  {
+    "word": "benci",
+    "cn": "讨厌；恨",
+    "en": "to hate",
+    "root": "benci",
+    "root_cn": "讨厌；恨",
+    "example": "Aku paling benci kalau rahasiaku diceritakan ke orang lain.",
+    "example_cn": "我最讨厌别人把我的秘密说给其他人听。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 08:00"
+    ]
+  },
+  {
+    "word": "menyukai",
+    "cn": "喜欢",
+    "en": "to like",
+    "root": "suka",
+    "root_cn": "喜欢",
+    "example": "Adikku sangat menyukai film laga dan misteri.",
+    "example_cn": "我弟弟特别喜欢动作片和悬疑片。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 08:00"
+    ]
+  },
+  {
+    "word": "fakta",
+    "cn": "事实",
+    "en": "fact",
+    "root": "fakta",
+    "root_cn": "事实",
+    "example": "Faktanya, banyak penelitian menunjukkan bahwa tidur cukup membantu kita belajar.",
+    "example_cn": "事实上，很多研究表明，睡眠充足有助于学习。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 08:00"
+    ]
+  },
+  {
+    "word": "putuskan",
+    "cn": "决定（不带 meN- 的形式）",
+    "en": "decide (bare form of memutuskan)",
+    "root": "putus",
+    "root_cn": "断；断开；分手",
+    "example": "Kamu sudah besar. Kamu sendiri yang putuskan mau kuliah di mana.",
+    "example_cn": "你已经长大了。去哪里上大学，你自己决定。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 08:00"
+    ]
+  },
+  {
+    "word": "diperlukan",
+    "cn": "需要的；被需要",
+    "en": "needed; required",
+    "root": "perlu",
+    "root_cn": "需要",
+    "example": "Untuk menyewa aula sekolah, diperlukan izin dari kepala sekolah.",
+    "example_cn": "要租用学校礼堂，需要校长批准。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 08:00"
     ]
   }
 ];
