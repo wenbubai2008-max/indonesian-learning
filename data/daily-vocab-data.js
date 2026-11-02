@@ -8410,25 +8410,29 @@ window.DAILY_VOCAB_DB = [
     "en": "go too far; overshoot; overdo it",
     "root": "bablas",
     "root_cn": "一直冲过去；越过",
-    "example": "Tadi ngobrolnya kebablasan, jadi aku telat mulai kerja.",
-    "example_cn": "刚才聊天聊过头了，所以我开始工作晚了。",
+    "example": "Tadi aku keasyikan ngobrol sama abang ojek, jadi kebablasan dan harus putar balik.",
+    "example_cn": "刚才我光顾着和摩的司机聊天，结果骑过头了，只好掉头回去。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-10-26 08:00",
+    "last_seen": "2026-11-02 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-09",
-      "2026-10-26"
+      "2026-10-26",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
       "2026-09-09 08:00",
-      "2026-10-26 08:00"
+      "2026-10-26 08:00",
+      "2026-11-02 18:00"
     ]
   },
   {
@@ -9487,16 +9491,16 @@ window.DAILY_VOCAB_DB = [
     "en": "mention; touch on; offend",
     "root": "singgung",
     "root_cn": "触及；提到",
-    "example": "Aku cuma nanya soal jadwal, bukan mau nyinggung hal pribadi.",
-    "example_cn": "我只是问日程，不是想触及私人话题。",
+    "example": "Tolong jangan nyinggung soal cerai di depan Tante, dia masih sedih.",
+    "example_cn": "拜托别在阿姨面前提离婚的事，她还在难过。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 9,
+    "times_seen": 10,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-11-02 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9509,7 +9513,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-21",
       "2026-09-28",
       "2026-10-01",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
@@ -9520,7 +9525,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-21 18:00",
       "2026-09-28 08:00",
       "2026-10-01 18:00",
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-11-02 18:00"
     ]
   },
   {
@@ -9529,27 +9535,29 @@ window.DAILY_VOCAB_DB = [
     "en": "reply; chime in; respond to a remark",
     "root": "timpal",
     "root_cn": "接话；回应",
-    "example": "Waktu aku cerita, Andi nyeletuk, terus yang lain ikut nimpalin.",
-    "example_cn": "我讲的时候，Andi 突然插了一句，然后其他人也跟着接话。（terus = lalu）",
+    "example": "Setiap kali Ayah cerita soal masa mudanya, adikku selalu nimpalin pakai lelucon.",
+    "example_cn": "每次爸爸讲他年轻时的事，我弟弟总是用玩笑接话。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-29 18:00",
+    "last_seen": "2026-11-02 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-12",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
-      "2026-10-29 18:00"
+      "2026-10-29 18:00",
+      "2026-11-02 18:00"
     ]
   },
   {
@@ -11059,24 +11067,28 @@ window.DAILY_VOCAB_DB = [
     "en": "sometimes",
     "root": "kadang",
     "root_cn": "有时",
-    "example": "Kadang rencana berubah karena kondisi di lapangan.",
-    "example_cn": "有时候计划会因为现场情况而改变。",
+    "example": "Kadang aku kepikiran pindah ke kawasan yang lebih tenang.",
+    "example_cn": "有时我会想搬到更安静的地区去。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-16 08:00",
+    "last_seen": "2026-11-02 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
-      "2026-09-16 08:00"
+      "2026-09-16 08:00",
+      "2026-11-02 18:00"
     ]
   },
   {
@@ -12200,17 +12212,17 @@ window.DAILY_VOCAB_DB = [
     "en": "annoyed / irritated",
     "root": "sebel",
     "root_cn": "烦；恼火",
-    "example": "Aku sebel banget karena barangnya rusak padahal baru seminggu.",
-    "example_cn": "我超烦的，因为东西才买一周就坏了。",
+    "example": "Aku sebel sama tetangga yang suka ribut tengah malam.",
+    "example_cn": "我烦那个总在半夜吵吵闹闹的邻居。",
     "categories": [
       "每日学习",
       "08:00",
       "口语",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-10-03 18:00",
+    "last_seen": "2026-11-02 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -12218,12 +12230,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-19",
       "2026-09-29",
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-02"
     ],
     "lesson_occurrences": [
       "2026-09-19 08:00",
       "2026-09-29 08:00",
-      "2026-10-03 18:00"
+      "2026-10-03 18:00",
+      "2026-11-02 18:00"
     ]
   },
   {
@@ -27839,23 +27853,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to hate",
     "root": "benci",
     "root_cn": "讨厌；恨",
-    "example": "Aku paling benci kalau rahasiaku diceritakan ke orang lain.",
-    "example_cn": "我最讨厌别人把我的秘密说给其他人听。",
+    "example": "Aku benci banget antre isi bensin pas jam pulang kantor.",
+    "example_cn": "我超讨厌在下班高峰排队加油。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-02 08:00",
-    "last_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-02"
     ],
     "lesson_occurrences": [
-      "2026-11-02 08:00"
+      "2026-11-02 08:00",
+      "2026-11-02 18:00"
     ]
   },
   {
@@ -27889,23 +27906,26 @@ window.DAILY_VOCAB_DB = [
     "en": "fact",
     "root": "fakta",
     "root_cn": "事实",
-    "example": "Faktanya, banyak penelitian menunjukkan bahwa tidur cukup membantu kita belajar.",
-    "example_cn": "事实上，很多研究表明，睡眠充足有助于学习。",
+    "example": "Gosip itu tidak sesuai fakta; Rudi bukan dipecat karena kinerjanya, tapi pindah kerja sendiri.",
+    "example_cn": "那个八卦不符合事实：Rudi 不是因为业绩被开除的，而是自己跳槽了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-02 08:00",
-    "last_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-02 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-02"
     ],
     "lesson_occurrences": [
-      "2026-11-02 08:00"
+      "2026-11-02 08:00",
+      "2026-11-02 18:00"
     ]
   },
   {
@@ -27956,6 +27976,81 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-02 08:00"
+    ]
+  },
+  {
+    "word": "tangkap",
+    "cn": "抓；接住；理解（意思）",
+    "en": "to catch; to grasp (a meaning)",
+    "root": "tangkap",
+    "root_cn": "抓；捕",
+    "example": "Jangan salah tangkap, komentarnya memang tajam, tapi dia cuma mau bantu.",
+    "example_cn": "别误会，他的评论确实尖锐，但他只是想帮忙。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 18:00",
+    "last_seen": "2026-11-02 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 18:00"
+    ]
+  },
+  {
+    "word": "akal",
+    "cn": "头脑；理智；办法",
+    "en": "mind; reason; wits",
+    "root": "akal",
+    "root_cn": "智慧；头脑",
+    "example": "Alasannya nggak masuk akal: katanya telat karena harus ngejar kucingnya yang kabur.",
+    "example_cn": "他的理由说不通：他说迟到是因为要去追跑掉的猫。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 18:00",
+    "last_seen": "2026-11-02 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 18:00"
+    ]
+  },
+  {
+    "word": "sebutan",
+    "cn": "称呼；叫法",
+    "en": "term of address; designation",
+    "root": "sebut",
+    "root_cn": "提到；称",
+    "example": "Waktu kecil, sebutan 'si Bulat' terdengar lucu, tapi sekarang dia nggak suka dipanggil begitu.",
+    "example_cn": "小时候，“小圆球”这个叫法听起来很可爱，但现在他不喜欢被这样叫了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-02 18:00",
+    "last_seen": "2026-11-02 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-02"
+    ],
+    "lesson_occurrences": [
+      "2026-11-02 18:00"
     ]
   }
 ];
