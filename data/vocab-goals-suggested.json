@@ -4,16 +4,16 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 896,
+   "use": 909,
    "recognize": 104,
    "unsure": 21,
-   "fast": 134
+   "fast": 135
   },
   "active": {
-   "use": 619,
+   "use": 632,
    "recognize": 88,
    "unsure": 19,
-   "fast": 56
+   "fast": 57
   }
  },
  "words": {
@@ -9418,6 +9418,124 @@
    "status": "active",
    "why": [
     "977 主库第 572 位"
+   ]
+  },
+  "subuh": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（时间）",
+    "977 主库第 951 位"
+   ]
+  },
+  "bergetar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 734 位"
+   ]
+  },
+  "titik": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 644 位"
+   ]
+  },
+  "angkatan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 786 位"
+   ]
+  },
+  "kehadiran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 796 位"
+   ]
+  },
+  "pendiam": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 844 位"
+   ]
+  },
+  "nilai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 739 位"
+   ]
+  },
+  "ilmu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 772 位"
+   ]
+  },
+  "benci": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 855 位"
+   ]
+  },
+  "menyukai": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 721 位"
+   ]
+  },
+  "fakta": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 648 位"
+   ]
+  },
+  "putuskan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 809 位"
+   ]
+  },
+  "diperlukan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 797 位"
    ]
   }
  }
