@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T08:37:18.452Z",
+  "updated_at": "2026-11-02T10:07:08.240Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -4229,8 +4229,11 @@
     "meletakkan": {
       "word": "meletakkan",
       "status": "active",
-      "updated_at": "2026-10-22T15:34:51.223Z",
+      "updated_at": "2026-11-02T10:06:57.089Z",
       "display": "meletakkan",
+      "cn": "放置；把……放下",
+      "root": "letak",
+      "root_cn": "位置；放置",
       "last_review": "2026-10-22T15:34:51.171Z",
       "reasons": [
         "memory_dont"
