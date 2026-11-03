@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261102-stroke-anak-muda-bekasi","date":"2026-11-02","title":"Stroke Bisa Menyerang Anak Muda, Dokter Minta Gejalanya Jangan Diabaikan","title_cn":"中风也会找上年轻人，医生提醒别忽视症状","path":"data/extensive-reading-history/2026-11-02.js"},
 {"id":"er-20261101-mbg-kehadiran-siswa","date":"2026-11-01","title":"Makan Bergizi Gratis Bikin Siswa Lebih Rajin ke Sekolah, Kata Mendikdasmen","title_cn":"教育部长：免费营养餐让学生更愿意上学","path":"data/extensive-reading-history/2026-11-01.js"},
 {"id":"er-20261031-banjir-mampang-normalisasi-kali","date":"2026-10-31","title":"Hampir 40 Tahun Kebanjiran, Warga Mampang Berharap Normalisasi Kali Berhasil","title_cn":"被水淹了近 40 年，Mampang 居民盼望河道整治见效","path":"data/extensive-reading-history/2026-10-31.js"},
 {"id":"er-20261030-harga-cabai-kobar-mulai-turun","date":"2026-10-30","title":"Harga Cabai di Pangkalan Bun Mulai Turun, Pemkab Gandeng Distributor","title_cn":"邦卡兰汶辣椒价格开始回落，县政府联手经销商保供应","path":"data/extensive-reading-history/2026-10-30.js"},
