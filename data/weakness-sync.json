@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T10:14:52.402Z",
+  "updated_at": "2026-11-03T02:13:08.169Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1960,13 +1960,14 @@
     "rabu": {
       "word": "rabu",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:42.698Z",
+      "updated_at": "2026-11-03T02:12:53.261Z",
       "display": "rabu",
+      "last_review": "2026-11-03T02:12:53.204Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "akibat": {
       "word": "akibat",
@@ -6248,13 +6249,14 @@
     "menderita": {
       "word": "menderita",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:46.359Z",
+      "updated_at": "2026-11-03T02:12:33.740Z",
       "display": "menderita",
+      "last_review": "2026-11-03T02:12:33.682Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menempel": {
       "word": "menempel",
@@ -6303,13 +6305,14 @@
     "datar": {
       "word": "datar",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:46.402Z",
+      "updated_at": "2026-11-03T02:12:32.029Z",
       "display": "datar",
+      "last_review": "2026-11-03T02:12:31.972Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "sial": {
       "word": "sial",
@@ -7241,15 +7244,16 @@
     "modal": {
       "word": "modal",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.128Z",
+      "updated_at": "2026-11-03T02:12:37.766Z",
       "display": "modal",
       "cn": "资本；本金",
       "root": "modal",
+      "last_review": "2026-11-03T02:12:37.710Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "tertentu": {
       "word": "tertentu",
@@ -7292,13 +7296,14 @@
     "artikel": {
       "word": "artikel",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.152Z",
+      "updated_at": "2026-11-03T02:12:30.337Z",
       "display": "artikel",
+      "last_review": "2026-11-03T02:12:30.278Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "tegas": {
       "word": "tegas",
@@ -7536,13 +7541,14 @@
     "periode": {
       "word": "periode",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.291Z",
+      "updated_at": "2026-11-03T02:12:50.464Z",
       "display": "periode",
+      "last_review": "2026-11-03T02:12:50.408Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "santai": {
       "word": "santai",
@@ -7931,13 +7937,14 @@
     "penggunaan": {
       "word": "penggunaan",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.525Z",
+      "updated_at": "2026-11-03T02:12:44.411Z",
       "display": "penggunaan",
+      "last_review": "2026-11-03T02:12:44.356Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "butir": {
       "word": "butir",
@@ -8323,24 +8330,26 @@
     "nasib": {
       "word": "nasib",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.894Z",
+      "updated_at": "2026-11-03T02:12:39.670Z",
       "display": "nasib",
+      "last_review": "2026-11-03T02:12:39.614Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "akal": {
       "word": "akal",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.906Z",
+      "updated_at": "2026-11-03T02:12:20.602Z",
       "display": "akal",
+      "last_review": "2026-11-03T02:12:20.540Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kolam": {
       "word": "kolam",
@@ -8445,8 +8454,11 @@
     "sempurna": {
       "word": "sempurna",
       "status": "active",
-      "updated_at": "2026-10-23T23:36:48.926Z",
+      "updated_at": "2026-11-03T02:07:15.296Z",
       "display": "sempurna",
+      "cn": "完美的；完整圆满的",
+      "root": "sempurna",
+      "root_cn": "完美；圆满",
       "last_review": "2026-10-23T23:36:48.862Z",
       "reasons": [
         "memory_dont"
@@ -10303,8 +10315,9 @@
     "semuanya": {
       "word": "semuanya",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:50.998Z",
+      "updated_at": "2026-11-03T02:07:09.564Z",
       "display": "semuanya",
+      "cn": "所有人、一切",
       "last_review": "2026-09-12T14:13:51.572Z",
       "last_mastered": "2026-09-12T14:13:51.572Z",
       "reasons": [],
@@ -23779,15 +23792,16 @@
     "ucap": {
       "word": "ucap",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:15.889Z",
+      "updated_at": "2026-11-03T02:12:57.200Z",
       "display": "ucap",
       "cn": "说；表达",
       "root": "ucap",
+      "last_review": "2026-11-03T02:12:57.144Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "sebut": {
       "word": "sebut",
@@ -23806,15 +23820,16 @@
     "sebutan": {
       "word": "sebutan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:15.947Z",
+      "updated_at": "2026-11-03T02:12:25.356Z",
       "display": "sebutan",
       "cn": "称呼；叫法",
       "root": "sebut",
+      "last_review": "2026-11-03T02:12:25.295Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nama": {
       "word": "nama",
@@ -23874,15 +23889,16 @@
     "negara": {
       "word": "negara",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:16.133Z",
+      "updated_at": "2026-11-03T02:12:41.028Z",
       "display": "negara",
       "cn": "国家",
       "root": "negara",
+      "last_review": "2026-11-03T02:12:40.973Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "daerah": {
       "word": "daerah",
@@ -24885,15 +24901,16 @@
     "tangkap": {
       "word": "tangkap",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:18.706Z",
+      "updated_at": "2026-11-03T02:12:28.446Z",
       "display": "tangkap",
       "cn": "抓住；逮捕",
       "root": "tangkap",
+      "last_review": "2026-11-03T02:12:28.384Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "dilarang": {
       "word": "dilarang",
