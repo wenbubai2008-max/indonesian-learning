@@ -12,8 +12,10 @@
 const fs=require('fs'),path=require('path');
 const REPO=path.resolve(__dirname,'..','..');
 const FILE='data/review-phase.json',THEMES='data/themes.json',GOALS='data/vocab-goals.json';
-// Current contract (identical to the numbers hard-coded before 2026-10-25). pm_dialogue max 1e9 = no upper limit.
+// Historical contract retained for published lessons before 2026-11-04. pm_dialogue max 1e9 = no upper limit.
 const LEGACY=Object.freeze({am_cards:[10,10],am_reading:[80,120],pm_core:[10,12],pm_new:[3,4],pm_review:[4,6],pm_review_cycle:[4,9],pm_application:[2,3],pm_dialogue:[4,1e9]});
+const PM_FIVE_FROM='2026-11-04';
+const PM_FIVE=Object.freeze({pm_core:[11,14],pm_new:[5,5]});
 const ROLES=['core','core','core','variation','variation','transfer','weekly_test']; // Monday .. Sunday of a theme week
 const DAY=86400000;
 const validDate=d=>/^\d{4}-\d{2}-\d{2}$/.test(String(d||''))&&new Date(d+'T00:00:00Z').toISOString().slice(0,10)===d;
@@ -23,9 +25,10 @@ function load(root=REPO){const p=readJson(root,FILE);return p&&typeof p==='objec
 /** True only when the learner switched the phase on and the lesson is on/after the activation date. */
 function on(phase,date){return !!phase&&phase.active===true&&validDate(phase.activated_at)&&validDate(date)&&date>=phase.activated_at}
 const pair=x=>Array.isArray(x)&&x.length===2&&x.every(Number.isInteger)&&x[0]<=x[1];
-/** Card / text counts for the lesson on `date`. Off → LEGACY (a fresh copy). */
+/** Date-aware card counts. Old published PM lessons keep their historical 3-4-new contract. */
 function counts(phase,date){
   const out={};for(const k of Object.keys(LEGACY))out[k]=LEGACY[k].slice();
+  if(String(date||'')>=PM_FIVE_FROM){for(const k of Object.keys(PM_FIVE))out[k]=PM_FIVE[k].slice()}
   if(!on(phase,date))return out;
   const c=phase.counts||{};
   for(const k of Object.keys(LEGACY))if(pair(c[k]))out[k]=c[k].slice();
@@ -75,4 +78,4 @@ if(require.main===module){
   if(!validDate(a.date)){console.error('--date YYYY-MM-DD required');process.exit(2)}
   console.log(JSON.stringify(describe(a.date,a.session),null,2));
 }
-module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,describe,LEGACY,ROLES};
+module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};
