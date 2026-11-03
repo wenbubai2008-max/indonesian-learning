@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-03T03:40:54.275Z",
+    "runtime_generated_at": "2026-11-03T09:40:53.742Z",
     "lesson_watermark": "2026-11-03 08:00",
     "index_updated": "2026-11-03",
-    "runtime_hash": "7cfd79b9217fb9e1a9b6edc6aaecbe6f665597ab37c9e59ea5244ab7722c756d",
+    "runtime_hash": "2d70bfde8465dc1ac494cd9d8f766d06bd370388084d4bcfdea90b67611c2c6d",
     "index_hash": "9bd08e180ec70b9b8491f41b22c0ec3eaf45324c4c2a267efdfac1b6f9dea315",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
@@ -717,16 +717,6 @@
         "手"
       ],
       [
-        "perpaduan",
-        1,
-        2,
-        "2026-10-24T15:35:27.721Z",
-        "2026-10-27T05:48:17.030Z",
-        "融合；结合；搭配",
-        "padu",
-        "协调；融合"
-      ],
-      [
         "pembangunan",
         1,
         2,
@@ -775,6 +765,16 @@
         "结束；终止（让某事停下来）",
         "akhir",
         "最后；末尾"
+      ],
+      [
+        "perpaduan",
+        1,
+        2,
+        "2026-10-24T15:35:27.721Z",
+        "2026-11-03T09:40:05.553Z",
+        "融合；结合；搭配",
+        "padu",
+        "协调；融合"
       ],
       [
         "mengabaikan",
@@ -3019,16 +3019,6 @@
         ]
       ],
       [
-        "perpaduan",
-        124,
-        [
-          "quick_wrong",
-          "lesson_wrong",
-          "dont",
-          "fuzzy"
-        ]
-      ],
-      [
         "pembangunan",
         118,
         [
@@ -3070,6 +3060,15 @@
         [
           "quick_wrong",
           "lesson_wrong",
+          "fuzzy"
+        ]
+      ],
+      [
+        "perpaduan",
+        88,
+        [
+          "lesson_wrong",
+          "dont",
           "fuzzy"
         ]
       ],
