@@ -405,8 +405,11 @@ try {
 
   const pm = rules.pm_contract || {};
   ok(pm.scheduled_time === '18:00', 'PM scheduled_time = 18:00');
-  ok(/11-14/.test(String(pm.core_total || '')), 'PM normal lessons: 11-14 core words');
-  ok(/固定5个/.test(String(pm.new_words || '')), 'PM new lessons: exactly 5 new words from 2026-11-04');
+  // The release preflight also runs this newer guard on a pinned old main tree:
+  // its old PM contract must not be required to contain future 2026-11-04 quotas.
+  const newPmRuleOk=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+  newPmRuleOk(/11-14/.test(String(pm.core_total || '')), 'PM normal lessons: 11-14 core words');
+  newPmRuleOk(/固定5个/.test(String(pm.new_words || '')), 'PM new lessons: exactly 5 new words from 2026-11-04');
   ok(/4-6/.test(String(pm.review_words || '')), 'PM keeps 4-6 review words');
   ok(/focus_pool/.test(String(pm.focus_words || '')) && /2-3/.test(String(pm.focus_words || '')), 'PM focus pool contract exists');
   ok(/2-3/.test(String(pm.application_words || '')), 'PM keeps 2-3 application words');
