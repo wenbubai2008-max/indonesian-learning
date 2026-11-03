@@ -1,0 +1,764 @@
+{
+  "version": 1,
+  "title": "早课深讲 · 11月3日",
+  "intro": [
+    "妮莎想在家试卖面包，但本钱不多。她先借姐姐的烤箱、记下用电情况，再少量试做。",
+    "今天只讲 5 样：[[modal]] · [[penggunaan]] · [[nyusul]] · [[Kalau …, jangan hanya …]] · [[… agar … jelas.]]"
+  ],
+  "items": [
+    {
+      "key": "modal",
+      "name": "modal",
+      "head": "modal · 本钱；资本",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "本课",
+            "id": "Ia ingin menjual roti, tetapi modalnya terbatas.",
+            "cn": "她想卖面包，但本钱有限。"
+          }
+        ],
+        "ask": "还没开始卖，缺少的是哪种钱？",
+        "options": [
+          {
+            "t": "开始经营要投入的本钱",
+            "ok": true,
+            "reply": [
+              "对。开始经营要投入的本钱，符合前后情境。"
+            ]
+          },
+          {
+            "t": "卖完后赚到的利润",
+            "ok": false,
+            "reply": [
+              "这里不是卖完后赚到的利润。请看说话者要做的事情和想达到的结果。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{modal}} 是投入经营的本钱：{{modal awal}}（启动资金）、{{modal usaha}}（经营资金）。还没卖出商品，也可以有 modal。",
+        "{{biaya}} 是费用，{{untung}} 是利润。用本钱买原料、支付费用；销售后再计算是否赚钱。"
+      ],
+      "simple": [
+        "modal 是拿来开始做生意的本钱，不是已经赚到的钱。"
+      ],
+      "asks": [
+        {
+          "label": "换个角度再理解一次",
+          "remedy": true,
+          "reply": [
+            {
+              "table": [
+                [
+                  "modal",
+                  "先投入的本钱"
+                ],
+                [
+                  "biaya",
+                  "需要付出的费用"
+                ],
+                [
+                  "untung",
+                  "收入扣除费用后的利润"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "看看词卡里的辨析",
+          "from": "synonym_note",
+          "word": "modal"
+        }
+      ],
+      "check": {
+        "q": [
+          "你拿积蓄开饮料摊，还没卖出第一杯。这笔投入最适合叫什么？"
+        ],
+        "options": [
+          {
+            "t": "modal",
+            "v": "right",
+            "why": [
+              "投入经营的本钱就是 modal，不需要已经卖出商品。"
+            ]
+          },
+          {
+            "t": "untung",
+            "v": "wrong",
+            "why": [
+              "untung 是利润，不能把尚未销售时投入的钱叫利润。"
+            ]
+          },
+          {
+            "t": "harga",
+            "v": "wrong",
+            "why": [
+              "harga 是某件商品的价格，不是整笔经营本钱。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "Uang ini akan jadi ____ usaha saya. 说的是投入经营的钱。"
+          ],
+          "options": [
+            {
+              "t": "penggunaan",
+              "v": "wrong",
+              "why": [
+                "penggunaan 是使用情况，不表示这笔可以投入的钱。"
+              ]
+            },
+            {
+              "t": "modal",
+              "v": "right",
+              "why": [
+                "modal usaha 是经营本钱，符合这笔钱的用途。"
+              ]
+            },
+            {
+              "t": "artikel",
+              "v": "wrong",
+              "why": [
+                "artikel 是文章，不是经营资金的名称。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "说明自己本钱有限，所以先借姐姐的烤箱。"
+        ],
+        "kw": "modal · terbatas · pinjam",
+        "skel": "Modal saya masih ____, jadi saya ____ oven kakak dulu.",
+        "ref": "Modal saya masih terbatas, jadi saya pinjam oven kakak dulu.",
+        "ref_cn": "我的本钱还有限，所以先借姐姐的烤箱。"
+      },
+      "recall": {
+        "prompt": [
+          "换到修车店：我会修车，但还没有足够本钱开店。"
+        ],
+        "kw": "modal · cukup · membuka toko",
+        "skel": "Saya bisa memperbaiki motor, tetapi belum punya ____ yang cukup untuk ____.",
+        "ref": "Saya bisa memperbaiki motor, tetapi belum punya modal yang cukup untuk membuka toko.",
+        "ref_cn": "我会修摩托车，但还没有足够本钱开店。"
+      },
+      "final": {
+        "cn": "我不会把全部本钱都拿去买设备。",
+        "ref": "Saya tidak akan memakai seluruh modal untuk membeli alat."
+      },
+      "remind": "modal 是投入的本钱；biaya 是费用；untung 是利润。"
+    },
+    {
+      "key": "penggunaan",
+      "name": "penggunaan",
+      "head": "penggunaan · 使用；使用情况",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "本课",
+            "id": "Mereka mencatat penggunaan listrik agar pembagian biaya jelas.",
+            "cn": "她们记录用电情况，好把费用分清楚。"
+          }
+        ],
+        "ask": "为了分清电费，她们记下的是什么？",
+        "options": [
+          {
+            "t": "用了多少电、怎样用电",
+            "ok": true,
+            "reply": [
+              "对。用了多少电、怎样用电，符合前后情境。"
+            ]
+          },
+          {
+            "t": "是谁在卖电",
+            "ok": false,
+            "reply": [
+              "这里不是是谁在卖电。请看说话者要做的事情和想达到的结果。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{penggunaan}} 把使用说成一件事：{{penggunaan listrik}}（用电情况）。动词是 {{menggunakan}}，使用者是 {{pengguna}}。",
+        "{{mencatat penggunaan air}} 是记录用水情况；{{menggunakan air}} 是使用水。先判断句子需要动作还是动作的名称。"
+      ],
+      "simple": [
+        "penggunaan 是使用这件事；menggunakan 是去使用；pengguna 是使用者。"
+      ],
+      "asks": [
+        {
+          "label": "换个角度再理解一次",
+          "remedy": true,
+          "reply": [
+            {
+              "table": [
+                [
+                  "Kami menggunakan listrik.",
+                  "我们用电。"
+                ],
+                [
+                  "Kami mencatat penggunaan listrik.",
+                  "我们记录用电情况。"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "看看词卡里的辨析",
+          "from": "synonym_note",
+          "word": "penggunaan"
+        }
+      ],
+      "check": {
+        "q": [
+          "Kami perlu mengurangi ____ air. 想减少用水量，选哪项？"
+        ],
+        "options": [
+          {
+            "t": "menggunakan",
+            "v": "wrong",
+            "why": [
+              "这里需要被减少的对象，menggunakan 是动作动词。"
+            ]
+          },
+          {
+            "t": "pengguna",
+            "v": "wrong",
+            "why": [
+              "pengguna 是使用者，这里不是要减少用户的人数。"
+            ]
+          },
+          {
+            "t": "penggunaan",
+            "v": "right",
+            "why": [
+              "penggunaan air 指用水情况，这里可以表示用水量。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "Kami ____ alat ini setiap hari. 这里要说每天使用设备。"
+          ],
+          "options": [
+            {
+              "t": "penggunaan",
+              "v": "wrong",
+              "why": [
+                "penggunaan 是名词，不能直接放在这里作使用的动作。"
+              ]
+            },
+            {
+              "t": "menggunakan",
+              "v": "right",
+              "why": [
+                "Kami 后接 menggunakan，意思是我们使用这台设备。"
+              ]
+            },
+            {
+              "t": "pengguna",
+              "v": "wrong",
+              "why": [
+                "pengguna 是使用者，不能替代使用某物的动词。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "告诉姐姐：记下用电情况，好把费用弄清楚。"
+        ],
+        "kw": "mencatat · penggunaan listrik · biaya",
+        "skel": "Kami mencatat ____ agar ____ jelas.",
+        "ref": "Kami mencatat penggunaan listrik agar biaya jelas.",
+        "ref_cn": "我们记下用电情况，好把费用弄清楚。"
+      },
+      "recall": {
+        "prompt": [
+          "换到租车：租车前，先确认车辆使用规定。"
+        ],
+        "kw": "penggunaan · mobil",
+        "skel": "Sebelum menyewa mobil, saya ingin memastikan aturan ____ ____.",
+        "ref": "Sebelum menyewa mobil, saya ingin memastikan aturan penggunaan mobil.",
+        "ref_cn": "租车前，我想先确认车辆使用规定。"
+      },
+      "final": {
+        "cn": "这家店每周记录用水情况。",
+        "ref": "Toko ini mencatat penggunaan air setiap minggu."
+      },
+      "remind": "penggunaan listrik 是名词短语；menggunakan listrik 是使用电。"
+    },
+    {
+      "key": "nyusul",
+      "name": "nyusul",
+      "head": "nyusul · 随后过去；跟上（口语）",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "本课",
+            "id": "Aku ngelarin daftar belanja dulu, nanti nyusul ke rumahmu hari Rabu.",
+            "cn": "我先弄完购物清单，星期三晚点去你家找你。"
+          }
+        ],
+        "ask": "说话者现在没和朋友一起出发，准备怎么过去？",
+        "options": [
+          {
+            "t": "晚点过去找对方",
+            "ok": true,
+            "reply": [
+              "对。晚点过去找对方，符合前后情境。"
+            ]
+          },
+          {
+            "t": "一直留在这里等对方回来",
+            "ok": false,
+            "reply": [
+              "这里不是一直留在这里等对方回来。请看说话者要做的事情和想达到的结果。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{nyusul}} 是 {{menyusul}} 的口语说法。别人先走，你稍后过去：{{Kalian duluan, aku nyusul nanti.}}",
+        "后面可用 {{ke}} 说明去哪里：{{nyusul ke kantor}}。{{nunggu}} 是等；nyusul 这里则是动身跟上。"
+      ],
+      "simple": [
+        "nyusul：你先走，我稍后过去；标准形是 menyusul。"
+      ],
+      "asks": [
+        {
+          "label": "换个角度再理解一次",
+          "remedy": true,
+          "reply": [
+            {
+              "table": [
+                [
+                  "Aku nyusul nanti.",
+                  "我稍后过去跟上。"
+                ],
+                [
+                  "Aku nunggu di sini.",
+                  "我留在这里等。"
+                ]
+              ]
+            },
+            "先想一想：自己要动身，还是留下来等？"
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "朋友先去咖啡店，你还要工作十分钟。选最自然的口语回复。"
+        ],
+        "options": [
+          {
+            "t": "Kamu duluan, aku nyusul nanti.",
+            "v": "right",
+            "why": [
+              "你让朋友先走，自己随后过去，正好使用口语 nyusul。"
+            ]
+          },
+          {
+            "t": "Kamu duluan, aku menyusul nanti.",
+            "v": "ok",
+            "why": [
+              "正式一些的场合也能用 menyusul，意思正确，只是没有那么口语。"
+            ]
+          },
+          {
+            "t": "Aku nunggu kamu di sini.",
+            "v": "wrong",
+            "why": [
+              "这句是自己留在原地等朋友回来，不是随后去咖啡店。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "Nanti aku nyusul ke kantor. 说话者打算做什么？"
+          ],
+          "options": [
+            {
+              "t": "稍后去办公室会合",
+              "v": "right",
+              "why": [
+                "nyusul ke kantor 是稍后到办公室与别人会合。"
+              ]
+            },
+            {
+              "t": "一直留在家里等",
+              "v": "wrong",
+              "why": [
+                "句中明确有 ke kantor，表示去办公室而不是原地等。"
+              ]
+            },
+            {
+              "t": "让别人代做工作",
+              "v": "wrong",
+              "why": [
+                "nyusul 表示随后跟上，并不表示让别人替自己做事。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "对朋友说：你先去，我弄完购物清单再过去。"
+        ],
+        "kw": "kamu duluan · ngelarin · nyusul",
+        "skel": "Kamu duluan, aku ____ daftar belanja dulu, lalu ____.",
+        "ref": "Kamu duluan, aku ngelarin daftar belanja dulu, lalu nyusul.",
+        "ref_cn": "你先去，我弄完购物清单再过去。"
+      },
+      "recall": {
+        "prompt": [
+          "换到聚餐：你们先点餐，我九点去餐厅找你们。"
+        ],
+        "kw": "nyusul · restoran · jam sembilan",
+        "skel": "Kalian pesan dulu, aku ____ ke ____ jam ____.",
+        "ref": "Kalian pesan dulu, aku nyusul ke restoran jam sembilan.",
+        "ref_cn": "你们先点餐，我九点去餐厅找你们。"
+      },
+      "final": {
+        "cn": "你先去办公室，我一会儿过去。",
+        "ref": "Kamu ke kantor dulu, aku nyusul sebentar lagi."
+      },
+      "remind": "nyusul 是随后跟上；nunggu 是等，二者的行动不同。"
+    },
+    {
+      "key": "kalau",
+      "name": "Kalau …, jangan hanya …",
+      "head": "Kalau …, jangan hanya … · 如果……，就不要只……",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "本课",
+            "id": "Kalau modal masih terbatas, jangan hanya ngandelin nasib baik.",
+            "cn": "如果本钱还有限，就别只指望好运。"
+          }
+        ],
+        "ask": "这句话是否否认一切好运？",
+        "options": [
+          {
+            "t": "没有，只提醒还需要行动",
+            "ok": true,
+            "reply": [
+              "对。没有，只提醒还需要行动，符合前后情境。"
+            ]
+          },
+          {
+            "t": "是，说好运绝对不存在",
+            "ok": false,
+            "reply": [
+              "这里不是是，说好运绝对不存在。请看说话者要做的事情和想达到的结果。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{Kalau}} 引出条件，{{jangan hanya}} 提醒不要仅仅如此。句子没有否认好运，而是说不要把希望全放在好运上。",
+        "条件在前，提醒在后。朋友间可把 {{hanya}} 换成 {{cuma}}，把 {{mengandalkan}} 换成 {{ngandelin}}。"
+      ],
+      "simple": [
+        "先说如果怎样，再提醒不要仅仅做一件事。"
+      ],
+      "asks": [
+        {
+          "label": "换个角度再理解一次",
+          "remedy": true,
+          "reply": [
+            {
+              "table": [
+                [
+                  "Jangan menunggu.",
+                  "不要等。"
+                ],
+                [
+                  "Jangan hanya menunggu.",
+                  "不要只是等，还需要行动。"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "朋友只看照片就想买东西。你提醒他还要检查实际情况，哪句贴切？"
+        ],
+        "options": [
+          {
+            "t": "Kalau mau membeli, jangan hanya melihat foto.",
+            "v": "right",
+            "why": [
+              "提醒别只看照片，没有说照片完全不能作为参考。"
+            ]
+          },
+          {
+            "t": "Kalau mau membeli, jangan melihat foto.",
+            "v": "wrong",
+            "why": [
+              "这句变成不要看照片，少了 hanya，建议的范围变了。"
+            ]
+          },
+          {
+            "t": "Kalau mau membeli, hanya jangan foto.",
+            "v": "wrong",
+            "why": [
+              "词序和搭配不成立，不能表达不要只看照片。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "Kalau mau mengerti, jangan hanya membaca judul. 这是建议什么？"
+          ],
+          "options": [
+            {
+              "t": "完全不应看标题",
+              "v": "wrong",
+              "why": [
+                "jangan hanya 不是全部禁止，而是不要只停在这一步。"
+              ]
+            },
+            {
+              "t": "除了标题，还要看内容",
+              "v": "right",
+              "why": [
+                "标题不够，还要了解内容，正是不要只的意思。"
+              ]
+            },
+            {
+              "t": "只读标题就够了",
+              "v": "wrong",
+              "why": [
+                "jangan hanya 明确提醒不要只是如此，并非鼓励只看标题。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "说出本课提醒：本钱有限时，别只指望好运。"
+        ],
+        "kw": "kalau · modal · jangan hanya · ngandelin",
+        "skel": "Kalau modal masih ____, jangan hanya ____ nasib baik.",
+        "ref": "Kalau modal masih terbatas, jangan hanya ngandelin nasib baik.",
+        "ref_cn": "如果本钱还有限，就别只指望好运。"
+      },
+      "recall": {
+        "prompt": [
+          "换到学语言：想进步，就不要只读书。"
+        ],
+        "kw": "kalau · ingin maju · jangan hanya",
+        "skel": "Kalau ingin ____, jangan hanya ____.",
+        "ref": "Kalau ingin maju, jangan hanya membaca buku.",
+        "ref_cn": "如果想进步，就不要只读书。"
+      },
+      "final": {
+        "cn": "想知道原因，就不要只问一个人。",
+        "ref": "Kalau ingin tahu penyebabnya, jangan hanya bertanya kepada satu orang."
+      },
+      "remind": "jangan hanya 不是全盘禁止，而是提醒不能仅靠一种做法。"
+    },
+    {
+      "key": "agar",
+      "name": "… agar … jelas.",
+      "head": "… agar … jelas. · ……以便把……弄清楚",
+      "scene": {
+        "quotes": [
+          {
+            "speaker": "本课",
+            "id": "Mereka mencatat penggunaan listrik agar pembagian biaya jelas.",
+            "cn": "她们记录用电情况，好把费用分清楚。"
+          }
+        ],
+        "ask": "她们做记录的目的是什么？",
+        "options": [
+          {
+            "t": "让费用分担更清楚",
+            "ok": true,
+            "reply": [
+              "对。让费用分担更清楚，符合前后情境。"
+            ]
+          },
+          {
+            "t": "说明她们已经付清了费用",
+            "ok": false,
+            "reply": [
+              "这里不是说明她们已经付清了费用。请看说话者要做的事情和想达到的结果。"
+            ]
+          }
+        ]
+      },
+      "explain": [
+        "{{agar}} 后面说明目的：{{agar pembagian biaya jelas}}，目的是把费用分担弄清楚。前半说行动，后半说希望达到的结果。",
+        "{{agar}} 和 {{supaya}} 在这种目的句中一般都能用。{{karena}} 则说明原因，换词后要重新核对意思。"
+      ],
+      "simple": [
+        "前面做一件事，agar 后面说想达到什么目的。"
+      ],
+      "asks": [
+        {
+          "label": "换个角度再理解一次",
+          "remedy": true,
+          "reply": [
+            {
+              "table": [
+                [
+                  "Saya mencatat agar jelas.",
+                  "记下来，为了弄清楚。"
+                ],
+                [
+                  "Saya mencatat karena belum jelas.",
+                  "因为还不清楚，所以记下来。"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "check": {
+        "q": [
+          "你分配工作，是为了让每个人的任务明确。选最贴切的一句。"
+        ],
+        "options": [
+          {
+            "t": "Kami membagi tugas agar tugas masing-masing jelas.",
+            "v": "right",
+            "why": [
+              "agar 后面的任务清楚，是前面分配工作的目的。"
+            ]
+          },
+          {
+            "t": "Kami membagi tugas supaya tugas masing-masing jelas.",
+            "v": "ok",
+            "why": [
+              "这个场合 supaya 也能表达相同目的，口语和正式场合都可以。"
+            ]
+          },
+          {
+            "t": "Kami membagi tugas karena semuanya sudah jelas.",
+            "v": "wrong",
+            "why": [
+              "这句说因为已经清楚才分配工作，因果与题目不同。"
+            ]
+          }
+        ],
+        "backup": {
+          "q": [
+            "Saya menulis alamat lengkap agar tujuannya jelas. 后半句说明什么？"
+          ],
+          "options": [
+            {
+              "t": "写地址想达到的目的",
+              "v": "right",
+              "why": [
+                "写全地址是行动，让去向明确是想达到的目的。"
+              ]
+            },
+            {
+              "t": "已经发生的结果",
+              "v": "wrong",
+              "why": [
+                "agar 说明预期目的，不保证结果在说话前已经实现。"
+              ]
+            },
+            {
+              "t": "写地址的具体时间",
+              "v": "wrong",
+              "why": [
+                "句子没有描述几点或哪天，agar 后面也不是时间。"
+              ]
+            }
+          ]
+        }
+      },
+      "say": {
+        "prompt": [
+          "说出记录用电的目的：让费用分担清楚。"
+        ],
+        "kw": "mencatat · penggunaan listrik · agar · jelas",
+        "skel": "Mereka mencatat ____ agar pembagian biaya ____.",
+        "ref": "Mereka mencatat penggunaan listrik agar pembagian biaya jelas.",
+        "ref_cn": "她们记录用电情况，好把费用分清楚。"
+      },
+      "recall": {
+        "prompt": [
+          "换到家庭安排：写下接孩子的时间，让安排清楚。"
+        ],
+        "kw": "menulis · jadwal · agar · jelas",
+        "skel": "Saya menulis ____ agar rencana kita ____.",
+        "ref": "Saya menulis jadwal menjemput anak agar rencana kita jelas.",
+        "ref_cn": "我写下接孩子的时间，好把安排弄清楚。"
+      },
+      "final": {
+        "cn": "我们记下付款日期，好把期限弄清楚。",
+        "ref": "Kami mencatat tanggal pembayaran agar batas waktunya jelas."
+      },
+      "remind": "agar / supaya 说明目的；karena 说明原因，不要机械替换。"
+    }
+  ],
+  "scan": {
+    "head": "其余新词：快速回忆",
+    "intro": "先看中文回想，再打开词卡确认。",
+    "words": [
+      "periode",
+      "nasib",
+      "rabu",
+      "menderita",
+      "datar",
+      "artikel",
+      "ucap",
+      "negara"
+    ]
+  },
+  "reading": [
+    {
+      "key": "costs",
+      "sentence": "Mereka mencatat penggunaan listrik agar pembagian biaya jelas.",
+      "cn": "她们记录用电情况，好把费用分清楚。",
+      "chunks": [
+        [
+          "Mereka mencatat",
+          "她们记下来",
+          "谁做什么"
+        ],
+        [
+          "penggunaan listrik",
+          "用电情况",
+          "记录对象"
+        ],
+        [
+          "agar pembagian biaya jelas.",
+          "为了让费用分担清楚",
+          "行动目的"
+        ]
+      ],
+      "steal": [
+        "可借用：{{… agar … jelas.}}",
+        "{{Saya menulis jumlahnya agar biaya jelas.}}（我写下数额，好把费用弄清楚。）"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "prompt": [
+        "联系你自己：想试做一门小生意，先借什么、怎样分担费用？用 modal 和 penggunaan 说2–3句，可换其他商品。"
+      ],
+      "kw": "modal · penggunaan",
+      "skel": "Modal saya masih ____. Saya pinjam ____ dulu. Kami mencatat penggunaan ____ agar biaya jelas.",
+      "ref": "Modal saya masih sedikit. Saya pinjam meja adik dulu. Kami mencatat penggunaan air agar biaya jelas.",
+      "ref_cn": "我本钱还少，先借弟弟的桌子。我们记下用水情况，好把费用弄清楚。"
+    }
+  ],
+  "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
