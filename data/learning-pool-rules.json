@@ -73,9 +73,9 @@
   },
   "pm_contract": {
     "scheduled_time": "18:00",
-    "core_total": "10-12",
-    "new_words": "3-4个真正新词，只能来自runtime.new_pool_dont或runtime.new_pool_fuzzy，并同时属于runtime.new_pool；不得使用new_pool_unclassified。默认目标为2个fuzzy + 1-2个dont，让晚课承担半熟词稳定化；若fuzzy不足则用dont补，若dont不足则可增加fuzzy，但总新词仍为3-4个。若处于transition阶段，同等条件下仍优先消耗977合法余量。",
-    "review_words": "4-6个，只能来自runtime.review_pool；动态10-12核心词扩容时优先增加复习或应用，不增加新词上限。",
+    "core_total": "11-14",
+    "new_words": "从2026-11-04起晚课固定5个真正新词（合法候选不足5个时按复习循环全部教完）。只从runtime.new_pool中且属于new_pool_dont或new_pool_fuzzy的词选；不得使用new_pool_unclassified或已教词。默认兼顾fuzzy/dont，某分池不足时由另一分池补齐5个。transition阶段同等条件仍优先使用977主库合法余量。",
+    "review_words": "4-6个，只能来自runtime.review_pool；数量保持不变，不因晚课5个新词而减少复习名额。",
     "application_words": "2-3个当天08:00课程中出现或近期已教且仍active的词；当天AM vocab或review_vocab均可作为当天复现来源；mastered不得进入应用核心词",
     "review_priority": [
       "最近答错或已教后重新标为不会/陌生",
@@ -91,7 +91,7 @@
       "recent_7_days": "7天核心曝光>=3时每课最多保留1个（合法替代充足时）"
     },
     "automation_value": "只在资格、记忆优先级、复习到期/冷却状态都相同时作为最后平局排序；优先更高频、更值得主动调用的词",
-    "oral_new_words": "结合当天08:00口语新词数，晚课3-4个新词中优先约1个合法口语新词；优先在当晚目标分池配额内选，默认先满足fuzzy/dont组合，不得为凑口语比例越界。",
+    "oral_new_words": "结合当天08:00口语新词数，晚课5个新词中优先约1个合法口语新词；仍须服从合法候选和fuzzy/dont组合，不得为凑比例越界。",
     "vocab_fields": [
       "word",
       "display",
@@ -126,22 +126,23 @@
     "focus_words": "4-6个重点复习中优先从runtime.focus_pool选2-3个；不足再从review_pool补。focus_pool只是review_pool的高优先级子集，不新增复习资格。",
     "listening_overlay": "listening_focus_pool 可用于阅读/对话等非核心自然复现；若词仍为 mastered，不得占用 4–6 个 review 核心词或 2–3 个 application 核心词名额。",
     "dynamic_core_total": {
-      "default": 10,
-      "medium": 11,
-      "high": 12,
-      "rule": "默认10个核心词；当runtime.focus_pool/review_pool中存在较多高优先级弱词、近期答错/重新激活明显增多或需要加强当天应用时提升到11；仅在高优先级复习压力明显较高时提升到12。不得为了凑12而增加新词数量。",
+      "default": 12,
+      "medium": 13,
+      "high": 14,
+      "rule": "新词合法候选至少5个时，晚课5个新词＋4-6个复习词＋2-3个应用词，合计11-14张词卡；默认12，按复习压力可使用11、13、14；不得挤占原复习/应用名额。新词不足5个时延续10-12张的复习循环。",
       "composition": {
-        "10": "3-4新词 + 4-5复习 + 2-3应用，按总数自然组合",
-        "11": "优先增加1个复习或应用名额，不增加新词上限",
-        "12": "优先使用4新词 + 5复习 + 3应用；若资格/冷却不合适可用3新词 + 6复习 + 3应用，但新词仍不得超过4"
+        "11": "5新词 + 4复习 + 2应用",
+        "12": "5新词 + 5复习 + 2应用，或5新词 + 4复习 + 3应用",
+        "13": "5新词 + 5复习 + 3应用，或5新词 + 6复习 + 2应用",
+        "14": "5新词 + 6复习 + 3应用"
       },
-      "guard": "总核心词10-12动态决定；新词始终3-4，扩容只服务于复习/应用，不得以总量增加为理由提高到5个新词"
+      "guard": "2026-11-04起当晚合法新词至少5个时固定5新词；4-6复习和2-3应用名额不变；候选少于5个按既有复习循环处理。历史日期照旧3-4新词。"
     },
     "new_word_memory_policy": {
-      "default_mix": "默认2个fuzzy + 1-2个dont",
+      "default_mix": "默认至少2个fuzzy、1个dont（若该类别合法候选存在）；5个名额的余量在合法fuzzy/dont间灵活补足。",
       "fuzzy_role": "fuzzy重点做主动回忆、造句、近义辨析和3秒提取，不把‘看着眼熟’当掌握",
       "dont_role": "dont仍按真正陌生词首次学习，但晚课不承担大量dont输入，主要由08:00处理",
-      "fallback": "任一分池合法候选不足时可由另一分池补足到3-4个；不得使用unclassified、mastered或已教词",
+      "fallback": "任一分池合法候选不足时由另一分池补足到5个；当晚全部合法新词不足5个时，进入复习循环且必须使用全部剩余新词。不得使用unclassified、mastered或已教词。",
       "after_taught": "一旦正式教过即退出新词逻辑，后续统一由review_pool/focus_pool按真实答错、不会、模糊等信号排序"
     },
     "rewrite": "必须有3-4个主动改写/中译印/主动回忆任务；课程根字段必须命名为 rewrite，结构为 rewrite:[{task,reference_answer,reference_cn},...]，可额外保留type；禁止使用根字段 rewrite_application。",
