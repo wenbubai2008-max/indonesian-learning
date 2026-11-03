@@ -2,6 +2,7 @@
 'use strict';
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
 const {checkCore,checkPm,checkExposure}=require('./review-rotation');
+const {checkFocus}=require('./lesson-focus-rotation');
 const RP=require('./review-phase');
 
 /** Only completed core-review exposures count; a PM application is not another core review. */
@@ -278,6 +279,7 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
       fw.filter(str).forEach(w=>check(own.has(norm(w)),"LESSON_FOCUS_WORD","focus word is not one of this lesson's words: "+w));
       check(fp.length===2&&fp.every(p=>p&&str(p.pattern)&&str(p.cn)&&str(p.example)&&str(p.example_cn)),"LESSON_FOCUS_INVALID","lesson_focus.patterns: exactly 2 {pattern, cn, example, example_cn}");
       fp.filter(p=>p&&str(p.example)).forEach(p=>check(texts.includes(norm(p.example)),"LESSON_FOCUS_PATTERN","pattern example must be copied from this lesson: "+p.example));
+      for(const e of checkFocus({lesson,reviewHistory,runtime,config:rules.lesson_focus_rotation}))add(e.code,e.detail);
     }
   }
   if(String(date||"")>=(jargonFrom||JARGON_FROM)){
