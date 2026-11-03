@@ -4,6 +4,17 @@
   "oral_candidate_total": 242,
   "new_pool_formula": "M ∩ A − D",
   "review_pool_formula": "A ∩ D",
+  "lesson_focus_rotation": {
+    "enabled": true,
+    "effective_date": "2026-11-04",
+    "cooldown_hours": 72,
+    "window_days": 7,
+    "max_prior_focus": 2,
+    "rule": "今天的重点3词独立于核心复习曝光账本：最近72小时内已经入选重点的词不再入选；最近7天已入选重点2次的词暂停入选。只统计已完成课程lesson_focus.words，阅读/例句的自然出现不计入重点。",
+    "fresh_error_override": "只有runtime.review_pool中last_wrong晚于该词最近一次重点和最近一次主动复习、且不晚于runtime.generated_at（允许5分钟时钟容差）的真实新错才能突破冷却，旧错和旧弱项标签不能突破。",
+    "fallback": "只在本节合法词卡中有未冷却的替代词时禁止重复重点；替代词不足才放行必要的重复，不阻断课程发布。",
+    "unchanged": "不改变new_pool、review_pool、focus_pool、已掌握状态、早晚课词卡配额、课文自然复现、深讲暂停状态；不追溯历史课程。"
+  },
   "symbols": {
     "M": "按持久化handoff状态决定的新词来源：primary阶段以977为主，并在977词之后追加第二库dont词作为dont补给（不追加第二库fuzzy词）；transition阶段977余量优先并由第二库补足；secondary阶段只用第二库",
     "A": "weak active（当前待掌握）",
