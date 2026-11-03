@@ -59,21 +59,21 @@ PM 专用的运行要求：
 
 ## 3. 晚课选词规则
 
-每晚默认 10 个核心词；有明显的弱词强化压力时可以增加到 11–12 个。
+2026-11-04 起：晚课固定 5 个合法新词，原有 4–6 个核心复习、2–3 个应用复现保持不变，因此正常共 11–14 张词卡（默认 12 张，可按复习压力在范围内组合）。当晚新词不足 5 个时，沿用原有 10–12 张复习循环。历史课程不修改。
 
 锁定词表前必须先运行排序脚本：
 
 `node .github/scripts/rank-review-candidates.js --date YYYY-MM-DD --session pm`
 
-查看输出里的 review_cycle：active=false 时按下面 A–D 的正常规则；active=true 时（当晚合法新词不足 3 个）按 E 的复习循环规则。
+查看输出里的 review_cycle：active=false 时按下面 A–D 的正常规则；active=true 时（从 2026-11-04 起当晚合法新词不足 5 个；此前历史阈值为 3 个）按 E 的复习循环规则。
 
 三组词必须完全去重：
 
-**A. 新词：3–4 个**
+**A. 新词：固定 5 个（2026-11-04 起）**
 
-必须同时属于 runtime.new_pool 以及 new_pool_dont 或 new_pool_fuzzy 之一。默认优先组合：2 个 fuzzy + 1–2 个 dont。原因是早课主要负责真正陌生词，晚课更侧重把半熟词训练成能够主动调用的词。不得选用 unclassified、mastered，或当天 08:00 已经正式学过的词充当 PM 新词。
+必须同时属于 runtime.new_pool 以及 new_pool_dont 或 new_pool_fuzzy 之一。优先兼顾至少 2 个 fuzzy 和 1 个 dont（仅在各类有足够合法候选时），剩余名额从合法候选补到 5 个；若 dont 已耗尽，则使用 5 个合法 fuzzy。晚课继续侧重把半熟词训练成能够主动调用的词。不得选用 unclassified、mastered，或当天 08:00 已经正式学过的词充当 PM 新词。晚课合法新词不足 5 个时按 E 处理，不凑数、不让旧词冒充新词。
 
-口语新词按 Validator 的 `PM_ORAL_COUNT` 执行：当晚有合法口语新词候选时至少用 1 个（最多 2 个，结合当天 08:00 已用的口语新词数；3–4 个新词不要全部是口语词，以免口语候选过快耗尽）；没有就是 0 个，不凑数（`docs/LESSON-QUALITY.md` §7b）。is_oral_new 必须以 runtime.oral_new_pool 为准，绝不能凭个人感觉标记（读取时按 Validator 的 word 归一化：字符串直接取词，数组取第一个元素，对象取 word 字段，再 trim/lowercase）。
+口语新词按 Validator 的 `PM_ORAL_COUNT` 执行：当晚有合法口语新词候选时至少用 1 个（最多 2 个，结合当天 08:00 已用的口语新词数；5 个新词不要全部是口语词，以免口语候选过快耗尽）；没有就是 0 个，不凑数（`docs/LESSON-QUALITY.md` §7b）。is_oral_new 必须以 runtime.oral_new_pool 为准，绝不能凭个人感觉标记（读取时按 Validator 的 word 归一化：字符串直接取词，数组取第一个元素，对象取 word 字段，再 trim/lowercase）。
 
 **B. 重点复习：4–6 个**
 
@@ -116,9 +116,9 @@ PM 专用的运行要求：
 
 **E. 复习循环（2026-10-14 用户决定；排序输出 review_cycle.active=true 时适用）**
 
-新词学完后，晚课结构不变，只是没有新词：
+当晚合法新词不足 5 个时（2026-11-04 起），晚课进入原有复习循环，优先把余量全部学完：
 
-- new 组 = 当晚**全部**剩余合法新词（review_cycle.new_words_available 个，0–2 个），new_words 照常列出它们。
+- new 组 = 当晚**全部**剩余合法新词（review_cycle.new_words_available 个，0–4 个），new_words 照常列出它们，不强行凑满 5 个。
 - review 组 4–9 个（以 review_cycle.review_target 和 recommended_review 为起点），application 2–3 个，总数仍为 10–12 张。focus 词 2–3 个、冷却和曝光账本规则照常。
 - 当天早课若有 cycle_vocab，这些是“今天08:00复习过的老词”，不是新词。
 - 一个词“确认掌握”后自动退出循环（不再出现在 review_pool），不需要手动处理。
@@ -165,7 +165,7 @@ PM 专用的运行要求：
 逐字段的键名表见 `docs/LESSON-JSON-SCHEMA.md` 的 PM 一节。要点：
 
 - 根字段：date、session:"pm"、time:"18:00"、day、title（必须以 18:00 开头；标题双语（2026-10-17 用户要求）：`时间 早课/晚课｜印尼语标题 · 中文标题`，两种语言说同一件事，例如 `18:00 晚课｜Kemah di Bogor: Tenda Kena Longsor Kecil · 茂物露营夜：没听劝的帐篷遇上小滑坡`）、write_status:"lesson_complete"、new_words、vocab、reading、dialogue、rewrite、daily_test、review。
-- vocab 必须为 10–12 张词卡，每张含：word, display, audio_text, cn, en, root, root_cn, formation, example, example_cn, synonym_note, usage_note, source_group, is_new, is_oral_new。source_group 只能是 new、review、application。is_new 只能在 source_group=new 时为 true。根字段 new_words 必须恰好列出所有 new 组词汇，不能混入 review 或 application。正常时 new 3–4、review 4–6、application 2–3；复习循环时 new=全部剩余新词（0–2）、review 4–9、application 2–3。
+- vocab 正常为 11–14 张词卡（当晚新词不足 5 个的复习循环仍为 10–12 张），每张含：word, display, audio_text, cn, en, root, root_cn, formation, example, example_cn, synonym_note, usage_note, source_group, is_new, is_oral_new。source_group 只能是 new、review、application。is_new 只能在 source_group=new 时为 true。根字段 new_words 必须恰好列出所有 new 组词汇，不能混入 review 或 application。2026-11-04 起正常时 new 恰好 5、review 4–6、application 2–3；复习循环时 new=全部剩余新词（0–4）、review 4–9、application 2–3。2026-11-03 及以前的历史晚课仍按 3–4 个新词校验。
 - reading 使用 {text,cn}。
 - dialogue 必须是 {title,lines:[{speaker,id,cn},...]}，其中 id 存放印尼语台词，不是数字编号。
 - rewrite 必须为 3–4 个：{task,reference_answer,reference_cn}。

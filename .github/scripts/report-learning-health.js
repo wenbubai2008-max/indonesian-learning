@@ -11,8 +11,8 @@ const fs=require('fs'),vm=require('vm'),path=require('path');
 const {naturalRecurrence}=require('./review-rotation');
 const key=s=>String(s==null?'':s).trim().toLowerCase();
 const DAY=86400000;
-// contract per-day consumption (AM 10 new; PM 3-4 new, default 2 fuzzy + 1-2 dont)
-const PER_DAY={am_new:10,pm_new:3.5,am_dont:10,pm_dont:1.5,oral:3}; // oral: AM 2 + PM 1 preferred oral new words
+// Forward-looking contract (AM 10 new; PM 5 new from 2026-11-04). Historical courses are not recounted.
+const PER_DAY={am_new:10,pm_new:5,am_dont:10,pm_dont:1.5,oral:3}; // oral: AM 2 + PM 1 preferred oral new words
 // Alert thresholds (report only; they never block anything).
 const ALERT={dont_days:5,transition_days:20,all_new_days:21};
 // 2026-10-14 (user decision): colloquial forms are taught with every word card and dialogue (docs/LESSON-QUALITY.md 7b),

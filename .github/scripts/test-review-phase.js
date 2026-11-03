@@ -17,14 +17,15 @@ const index=read('data/daily/index.json'),rules=read('data/learning-pool-rules.j
 const ON={version:1,active:true,activated_at:'2026-10-12',theme_start_date:'2026-10-12',counts:read('data/review-phase.json').counts,recurrence_min:{am:6,pm:8},ranking:{skip_goal:'recognize',fast_bonus:8}};
 
 // ---------- the switch itself ----------
-t('committed switch is off and gives the old fixed numbers',()=>{
+t('committed switch is off; PM keeps historical 3-4 quota and uses five new from Nov 4',()=>{
   const p=RP.load();assert.equal(p.active,false);
-  assert.deepEqual(RP.counts(p,'2026-11-20'),{am_cards:[10,10],am_reading:[80,120],pm_core:[10,12],pm_new:[3,4],pm_review:[4,6],pm_review_cycle:[4,9],pm_application:[2,3],pm_dialogue:[4,1e9]});
+  assert.deepEqual(RP.counts(p,'2026-11-03'),{am_cards:[10,10],am_reading:[80,120],pm_core:[10,12],pm_new:[3,4],pm_review:[4,6],pm_review_cycle:[4,9],pm_application:[2,3],pm_dialogue:[4,1e9]});
+  assert.deepEqual(RP.counts(p,'2026-11-20'),{am_cards:[10,10],am_reading:[80,120],pm_core:[11,14],pm_new:[5,5],pm_review:[4,6],pm_review_cycle:[4,9],pm_application:[2,3],pm_dialogue:[4,1e9]});
   assert.equal(RP.describe('2026-11-20','am').active,false);assert.equal(RP.recurrenceMin(p,'2026-11-20','am'),null);
 });
 t('the guard fallback (older trees without review-phase.js) uses the same old numbers',()=>{
   const g=fs.readFileSync(path.join(__dirname,'regression-guard.js'),'utf8').match(/const OLD_COUNTS = (\{[^\n]+\});/);
-  assert.ok(g);assert.deepEqual(Function('return '+g[1])(),RP.counts({active:false},'2026-11-20'));
+  assert.ok(g);assert.deepEqual(Function('return '+g[1])(),RP.counts({active:false},'2026-11-03'));
 });
 t('only active===true from activated_at on counts as on',()=>{
   assert.equal(RP.on({...ON,active:'true'},'2026-10-20'),false);

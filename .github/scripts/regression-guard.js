@@ -120,7 +120,9 @@ function validateRecentDailyWindow(){
         ok(x.session==='pm'&&x.time===(d>='2026-09-16'?'18:00':'19:00'),`recent PM ${d}: session/time canonical`);
         ok(x.write_status==='lesson_complete',`recent PM ${d}: lesson_complete`);
         const recentPmWords=v.map(y=>norm(y&&y.word)).filter(Boolean);
-        ok(inRange(v.length,PC(d).pm_core[0],PC(d).pm_core[1])&&recentPmWords.length===v.length&&unique(recentPmWords),`recent PM ${d}: ${PC(d).pm_core.join('-')} unique vocab`);
+        const count=PC(d),newCount=v.filter(y=>y&&y.source_group==='new').length;
+        const cycle=!PON(d)&&newCount<count.pm_new[0],pmCore=cycle?[10,12]:count.pm_core;
+        ok(inRange(v.length,pmCore[0],pmCore[1])&&recentPmWords.length===v.length&&unique(recentPmWords),`recent PM ${d}: ${pmCore.join('-')} unique vocab`);
         ok(x.dialogue&&Array.isArray(x.dialogue.lines)&&x.dialogue.lines.length>=PC(d).pm_dialogue[0]&&x.dialogue.lines.length<=PC(d).pm_dialogue[1],`recent PM ${d}: dialogue canonical`);
         ok(Array.isArray(x.rewrite)&&inRange(x.rewrite.length,3,4),`recent PM ${d}: rewrite canonical`);
         const recentQuestions=Array.isArray(test.questions)?test.questions:[];
@@ -261,17 +263,16 @@ function validateLatestPm(){
     application: vocab.filter(v => v && v.source_group === 'application')
   };
   const pmC = PC(date);
-  ok(inRange(vocab.length,pmC.pm_core[0],pmC.pm_core[1]), `latest PM ${date}: ${pmC.pm_core.join('-')} core vocab`);
+  const pmCycle=!PON(date)&&groups.new.length<pmC.pm_new[0],pmCore=pmCycle?[10,12]:pmC.pm_core;
+  ok(inRange(vocab.length,pmCore[0],pmCore[1]), `latest PM ${date}: ${pmCore.join('-')} core vocab`);
   if(PON(date)){
     ok(inRange(groups.new.length,pmC.pm_new[0],pmC.pm_new[1]), `latest PM ${date}: ${pmC.pm_new.join('-')} new words (review phase)`);
     ok(inRange(groups.review.length,pmC.pm_review[0],pmC.pm_review[1]), `latest PM ${date}: ${pmC.pm_review.join('-')} review words (review phase)`);
     ok(inRange(groups.application.length,pmC.pm_application[0],pmC.pm_application[1]), `latest PM ${date}: ${pmC.pm_application.join('-')} application words (review phase)`);
   }else{
-    // Review cycle (2026-10-14): with fewer than 3 new words left the PM teaches all of them (0-2) and reviews 4-9.
-    // The validator enforces the exact rule at publication; this check accepts both shapes (2026-10-25 fix).
-    const cyclePm = inRange(groups.new.length,0,2);
-    ok(inRange(groups.new.length,cyclePm?0:3,cyclePm?2:4), `latest PM ${date}: 3-4 new words (0-2 in the review cycle)`);
-    ok(inRange(groups.review.length,4,cyclePm?9:6), `latest PM ${date}: 4-6 review words (4-9 in the review cycle)`);
+    // Historical PM = 3-4 new; from 2026-11-04 normal PM = exactly 5; review cycle keeps 4-9 reviews.
+    ok(inRange(groups.new.length,pmCycle?0:pmC.pm_new[0],pmCycle?pmC.pm_new[0]-1:pmC.pm_new[1]), `latest PM ${date}: ${pmC.pm_new.join('-')} new words (0-${pmC.pm_new[0]-1} in the review cycle)`);
+    ok(inRange(groups.review.length,4,pmCycle?9:6), `latest PM ${date}: 4-6 review words (4-9 in the review cycle)`);
     ok(inRange(groups.application.length,2,3), `latest PM ${date}: 2-3 application words`);
   }
 
@@ -404,8 +405,11 @@ try {
 
   const pm = rules.pm_contract || {};
   ok(pm.scheduled_time === '18:00', 'PM scheduled_time = 18:00');
-  ok(/10-12/.test(String(pm.core_total || '')), 'PM keeps 10-12 core words');
-  ok(/3-4/.test(String(pm.new_words || '')), 'PM keeps 3-4 new words');
+  // The release preflight also runs this newer guard on a pinned old main tree:
+  // its old PM contract must not be required to contain future 2026-11-04 quotas.
+  const newPmRuleOk=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+  newPmRuleOk(/11-14/.test(String(pm.core_total || '')), 'PM normal lessons: 11-14 core words');
+  newPmRuleOk(/固定5个/.test(String(pm.new_words || '')), 'PM new lessons: exactly 5 new words from 2026-11-04');
   ok(/4-6/.test(String(pm.review_words || '')), 'PM keeps 4-6 review words');
   ok(/focus_pool/.test(String(pm.focus_words || '')) && /2-3/.test(String(pm.focus_words || '')), 'PM focus pool contract exists');
   ok(/2-3/.test(String(pm.application_words || '')), 'PM keeps 2-3 application words');

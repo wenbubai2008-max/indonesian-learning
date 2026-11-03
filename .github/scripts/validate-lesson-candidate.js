@@ -161,15 +161,16 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     }
   } else {
     check(lesson.write_status==="lesson_complete","PM_STATUS_INVALID","PM status incomplete");
-    check(range(vocab.length,C.pm_core[0],C.pm_core[1]),"PM_CORE_COUNT",C.pm_core.join("-")+" core words required");
     const groups={new:vocab.filter(v=>v?.source_group==="new"),review:vocab.filter(v=>v?.source_group==="review"),application:vocab.filter(v=>v?.source_group==="application")};
     check(vocab.every(v=>["new","review","application"].includes(v?.source_group)),"PM_GROUP_INVALID","Invalid PM source_group");
-    // Review cycle (2026-10-14): fewer than 3 legal new words left for tonight -> teach all of them (0-2), and the review
-    // group grows (4-9) so the lesson keeps its 10-12 core cards.
+    // From 2026-11-04: exactly five new words when available. Earlier PM lessons retain their historic 3-4 quota.
+    // When fewer than the quota remain, teach them all and keep the pre-existing 10-12-card review-cycle layout.
     const availNewPm=[...newPool].filter(w=>!amWords.has(w)&&!unclassified.has(w)&&(dont.has(w)||fuzzy.has(w)));
+    const pmCycle=!P&&availNewPm.length<C.pm_new[0],pmCore=pmCycle?[10,12]:C.pm_core;
+    check(range(vocab.length,pmCore[0],pmCore[1]),"PM_CORE_COUNT",pmCore.join("-")+" core words required");
     if(P){const nn=Math.min(availNewPm.length,C.pm_new[1]);
       check(groups.new.length===nn&&range(groups.review.length,C.pm_review[0],C.pm_review[1])&&range(groups.application.length,C.pm_application[0],C.pm_application[1]),"PM_GROUP_COUNT","Review phase: "+nn+" new, "+C.pm_review.join("-")+" review, "+C.pm_application.join("-")+" application");}
-    else if(availNewPm.length>=3)check(range(groups.new.length,3,4)&&range(groups.review.length,4,6)&&range(groups.application.length,2,3),"PM_GROUP_COUNT","3-4 new, 4-6 review, 2-3 application");
+    else if(!pmCycle)check(range(groups.new.length,C.pm_new[0],C.pm_new[1])&&range(groups.review.length,4,6)&&range(groups.application.length,2,3),"PM_GROUP_COUNT",C.pm_new.join("-")+" new, 4-6 review, 2-3 application");
     else check(groups.new.length===availNewPm.length&&range(groups.review.length,4,9)&&range(groups.application.length,2,3),"PM_GROUP_COUNT","Review cycle: all "+availNewPm.length+" remaining new words, 4-9 review, 2-3 application");
     const actualNew=ws(groups.new),declared=ws(lesson.new_words);
     check(declared.length===actualNew.length&&JSON.stringify([...declared].sort())===JSON.stringify([...actualNew].sort()),"PM_NEW_WORDS_MISMATCH","new_words differs from new vocab group");
