@@ -2166,23 +2166,26 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 19:00",
-    "last_seen": "2026-10-29 18:00",
+    "last_seen": "2026-11-03 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-11-03"
     ],
     "root_cn": "追上；随后跟上",
     "example": "Kalian duluan aja, aku nyusul abis nganter adikku ke sekolah.",
     "example_cn": "你们先走吧，我送完弟弟上学就过去。（aja = saja，abis = habis）",
     "lesson_occurrences": [
       "2026-09-07 19:00",
-      "2026-10-29 18:00"
+      "2026-10-29 18:00",
+      "2026-11-03 08:00"
     ]
   },
   {
@@ -7572,9 +7575,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-09-17 08:00",
+    "last_seen": "2026-11-03 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -7584,7 +7587,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-07",
       "2026-09-15",
       "2026-09-16",
-      "2026-09-17"
+      "2026-09-17",
+      "2026-11-03"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
@@ -7592,7 +7596,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-15 19:00",
       "2026-09-16 08:00",
       "2026-09-16 18:00",
-      "2026-09-17 08:00"
+      "2026-09-17 08:00",
+      "2026-11-03 08:00"
     ]
   },
   {
@@ -8186,9 +8191,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-09-19 08:00",
+    "last_seen": "2026-11-03 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -8199,7 +8204,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-16",
       "2026-09-17",
       "2026-09-18",
-      "2026-09-19"
+      "2026-09-19",
+      "2026-11-03"
     ],
     "lesson_occurrences": [
       "2026-09-09 08:00",
@@ -8209,7 +8215,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-17 08:00",
       "2026-09-17 18:00",
       "2026-09-18 08:00",
-      "2026-09-19 08:00"
+      "2026-09-19 08:00",
+      "2026-11-03 08:00"
     ]
   },
   {
@@ -16008,21 +16015,25 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "今天的会延期了，因为项目负责人还堵在路上。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-29 18:00",
-    "last_seen": "2026-10-30 18:00",
+    "last_seen": "2026-11-03 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "lesson_occurrences": [
       "2026-09-29 18:00",
-      "2026-10-30 18:00"
+      "2026-10-30 18:00",
+      "2026-11-03 08:00"
     ]
   },
   {
@@ -23261,20 +23272,22 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-20 08:00",
-    "last_seen": "2026-10-30 18:00",
+    "last_seen": "2026-11-03 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-10-20",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "lesson_occurrences": [
       "2026-10-20 08:00",
-      "2026-10-30 18:00"
+      "2026-10-30 18:00",
+      "2026-11-03 08:00"
     ]
   },
   {
@@ -28051,6 +28064,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-02 18:00"
+    ]
+  },
+  {
+    "word": "periode",
+    "cn": "时期；一段时间",
+    "en": "period",
+    "root": "periode",
+    "root_cn": "时期",
+    "example": "Dalam periode percobaan ini, kami ingin melihat peluang usaha tanpa membeli banyak alat.",
+    "example_cn": "在这段试做期，我们想先看看生意的机会，不急着买很多设备。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 08:00"
+    ]
+  },
+  {
+    "word": "penggunaan",
+    "cn": "使用；使用情况",
+    "en": "use; usage",
+    "root": "guna",
+    "root_cn": "用处；使用",
+    "example": "Penggunaan tas yang ringan membuat perjalanan lebih nyaman.",
+    "example_cn": "使用轻便的包能让旅途更舒服。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 08:00"
+    ]
+  },
+  {
+    "word": "nasib",
+    "cn": "命运；处境；运气",
+    "en": "fate; lot",
+    "root": "nasib",
+    "root_cn": "命运；处境",
+    "example": "Saat curhat, Rani bilang ia ingin mengubah nasib dengan belajar memasak makanan yang lezat.",
+    "example_cn": "倾诉时，拉妮说她想通过学做美味的食物来改变自己的处境。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 08:00"
+    ]
+  },
+  {
+    "word": "rabu",
+    "cn": "星期三",
+    "en": "Wednesday",
+    "root": "rabu",
+    "root_cn": "星期三",
+    "example": "Hari Rabu, Nisa akan membandingkan karakter dua jenis tepung sebelum memilih salah satunya.",
+    "example_cn": "星期三，妮莎会比较两种面粉的特性，再从中选一种。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 08:00"
+    ]
+  },
+  {
+    "word": "menderita",
+    "cn": "患有；遭受痛苦",
+    "en": "suffer from",
+    "root": "derita",
+    "root_cn": "痛苦；苦难",
+    "example": "Ibu menderita sakit kepala, jadi ia belum mau menghirup aroma kopi yang wangi itu.",
+    "example_cn": "妈妈头痛，所以暂时不想闻那杯香咖啡的气味。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 08:00"
+    ]
+  },
+  {
+    "word": "datar",
+    "cn": "平坦的；平平的",
+    "en": "flat; level",
+    "root": "datar",
+    "root_cn": "平坦",
+    "example": "Letakkan botol di permukaan datar sebelum kamu nyalakan lampu untuk memotretnya.",
+    "example_cn": "开灯拍照前，先把瓶子放在平坦的表面上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 08:00"
+    ]
+  },
+  {
+    "word": "modal",
+    "cn": "资金；本钱；资本",
+    "en": "capital; starting funds",
+    "root": "modal",
+    "root_cn": "本钱；资本",
+    "example": "Nisa tidak mau menghabiskan modal untuk bahan instan sebelum tahu apa yang disukai pembeli.",
+    "example_cn": "妮莎还不知道顾客喜欢什么，不想把本钱花在即食原料上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 08:00"
+    ]
+  },
+  {
+    "word": "artikel",
+    "cn": "文章",
+    "en": "article",
+    "root": "artikel",
+    "root_cn": "文章",
+    "example": "Artikel itu punya alur yang jelas, jadi saya tidak perlu mikir terlalu lama untuk memahami isinya.",
+    "example_cn": "那篇文章脉络清楚，所以我不用想太久就能理解内容。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 08:00"
+    ]
+  },
+  {
+    "word": "ucap",
+    "cn": "说；表达（常用于引语）",
+    "en": "say; utter",
+    "root": "ucap",
+    "root_cn": "说；表达",
+    "example": "“Mulai sedikit dulu, yang penting tahu biaya dan selera pembeli,” ucap kakaknya.",
+    "example_cn": "姐姐说：“先少量做，重要的是弄清成本和顾客的口味。”",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 08:00"
+    ]
+  },
+  {
+    "word": "negara",
+    "cn": "国家",
+    "en": "country; state",
+    "root": "negara",
+    "root_cn": "国家",
+    "example": "Di beberapa negara, pendidikan memasak juga membahas cara mengelola usaha kecil.",
+    "example_cn": "在一些国家，烹饪教育也会讲如何经营小生意。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 08:00"
     ]
   }
 ];

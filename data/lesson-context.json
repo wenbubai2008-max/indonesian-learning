@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-03",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 74
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-02T10:16:19.667Z",
-    "lesson_watermark": "2026-11-02 18:00",
-    "index_updated": "2026-11-02",
-    "runtime_hash": "0dff7491cf3987777f994d48d0f964c90d86af14574e9ac38da1a036bafe61ff",
-    "index_hash": "3a1ba5a63a918cd94149ee6a725dea345fadcf2776fce1b61dc0600a08a0edca",
+    "runtime_generated_at": "2026-11-03T00:30:34.479Z",
+    "lesson_watermark": "2026-11-03 08:00",
+    "index_updated": "2026-11-03",
+    "runtime_hash": "8e8bd0d7e4b14f44307ee9603d0fc5b7ac3abba2cd3294c81fd2e7ae4196c488",
+    "index_hash": "9bd08e180ec70b9b8491f41b22c0ec3eaf45324c4c2a267efdfac1b6f9dea315",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -51,48 +51,648 @@
     "new_dont": [],
     "new_fuzzy": [
       [
-        "periode",
-        "时期"
-      ],
-      [
-        "penggunaan",
-        "使用"
-      ],
-      [
         "pers",
         "媒体，新闻界"
       ],
       [
-        "nasib",
-        "命运"
+        "berasal dari",
+        "来自"
       ],
       [
-        "rabu",
-        "星期三"
+        "kasur",
+        "床垫/床"
       ],
       [
-        "menderita",
-        "遭受(痛苦)"
+        "berbelanja",
+        "购物"
       ],
       [
-        "datar",
-        "平坦的"
+        "suka menolong",
+        "乐于助人"
       ],
       [
-        "modal",
-        "资金，资本"
+        "samping",
+        "旁边"
       ],
       [
-        "artikel",
-        "文章，报道"
+        "di samping",
+        "在旁边"
       ],
       [
-        "ucap",
-        "说；表达"
+        "sering",
+        "经常"
       ],
       [
-        "negara",
-        "国家"
+        "menyapu",
+        "扫地"
+      ],
+      [
+        "sapu",
+        "扫帚"
+      ],
+      [
+        "ember",
+        "桶"
+      ],
+      [
+        "berbincang-bincang",
+        "聊天"
+      ],
+      [
+        "kemeja",
+        "衬衫"
+      ],
+      [
+        "kaos",
+        "T恤"
+      ],
+      [
+        "merek",
+        "品牌"
+      ],
+      [
+        "melewati",
+        "经过/穿过"
+      ],
+      [
+        "animasi",
+        "动画片"
+      ],
+      [
+        "pendinginan",
+        "整理/冷身运动"
+      ],
+      [
+        "tepuk tangan",
+        "拍手"
+      ],
+      [
+        "lompat",
+        "跳"
+      ],
+      [
+        "pinggang",
+        "腰"
+      ],
+      [
+        "pundak",
+        "肩膀"
+      ],
+      [
+        "bahu",
+        "肩"
+      ],
+      [
+        "menggunakan",
+        "使用"
+      ],
+      [
+        "mengasyikan",
+        "有趣、让人沉浸"
+      ],
+      [
+        "mengecewakan",
+        "令人失望"
+      ],
+      [
+        "menegangkan",
+        "令人紧张"
+      ],
+      [
+        "menanyakan",
+        "询问"
+      ],
+      [
+        "menikmati",
+        "享受"
+      ],
+      [
+        "digunakan",
+        "被使用"
+      ],
+      [
+        "tawar-menawar",
+        "讨价还价"
+      ],
+      [
+        "label",
+        "标签"
+      ],
+      [
+        "profesi",
+        "职业"
+      ],
+      [
+        "resep",
+        "食谱；处方"
+      ],
+      [
+        "iklan",
+        "广告"
+      ],
+      [
+        "lowongan kerja",
+        "职位空缺；招聘岗位"
+      ],
+      [
+        "tanda tangan",
+        "签名"
+      ],
+      [
+        "berkas",
+        "文件；材料；档案包"
+      ],
+      [
+        "pertimbangan",
+        "考虑；考量"
+      ],
+      [
+        "status",
+        "状态；身份"
+      ],
+      [
+        "menyerahkan",
+        "交给；提交"
+      ],
+      [
+        "peran",
+        "角色；作用"
+      ],
+      [
+        "gelombang",
+        "波浪；浪潮"
+      ],
+      [
+        "kerusakan",
+        "损坏；破坏"
+      ],
+      [
+        "menyebar",
+        "扩散；传播"
+      ],
+      [
+        "waspada",
+        "警惕；警觉"
+      ],
+      [
+        "berkaitan",
+        "相关；有关联"
+      ],
+      [
+        "aspek",
+        "方面"
+      ],
+      [
+        "menyerang",
+        "攻击；侵袭"
+      ],
+      [
+        "berasal",
+        "来自；起源于"
+      ],
+      [
+        "diakui",
+        "被承认；被认可"
+      ],
+      [
+        "dididik",
+        "被教育；受培养"
+      ],
+      [
+        "pembantu",
+        "助手；帮佣"
+      ],
+      [
+        "syarat",
+        "条件；要求"
+      ],
+      [
+        "natal",
+        "圣诞节"
+      ],
+      [
+        "identitas",
+        "身份信息"
+      ],
+      [
+        "tempat lahir",
+        "出生地"
+      ],
+      [
+        "jenis kelamin",
+        "性别"
+      ],
+      [
+        "status pernikahan",
+        "婚姻状况"
+      ],
+      [
+        "kewarganegaraan",
+        "国籍"
+      ],
+      [
+        "pengajar",
+        "教师/讲师"
+      ],
+      [
+        "anggota keluarga",
+        "家庭成员"
+      ],
+      [
+        "berulang tahun",
+        "过生日"
+      ],
+      [
+        "nol",
+        "零"
+      ],
+      [
+        "seperempat",
+        "四分之一；一刻钟"
+      ],
+      [
+        "harimau",
+        "老虎"
+      ],
+      [
+        "kura-kura",
+        "乌龟"
+      ],
+      [
+        "lumba-lumba",
+        "海豚"
+      ],
+      [
+        "bak mandi",
+        "浴池/浴缸"
+      ],
+      [
+        "bak cuci piring",
+        "洗碗池"
+      ],
+      [
+        "mandiri",
+        "独立的"
+      ],
+      [
+        "album foto",
+        "相册"
+      ],
+      [
+        "gantungan baju",
+        "衣架"
+      ],
+      [
+        "pertigaan",
+        "三岔路口"
+      ],
+      [
+        "peralatan masak",
+        "炊具"
+      ],
+      [
+        "setrika",
+        "熨斗"
+      ],
+      [
+        "kain pel",
+        "拖布"
+      ],
+      [
+        "guling",
+        "长抱枕"
+      ],
+      [
+        "lap",
+        "抹布"
+      ],
+      [
+        "baskom",
+        "盆"
+      ],
+      [
+        "bermain bulu tangkis",
+        "打羽毛球"
+      ],
+      [
+        "berkendara",
+        "驾驶/乘车"
+      ],
+      [
+        "emas",
+        "金色"
+      ],
+      [
+        "perak",
+        "银色"
+      ],
+      [
+        "oranye",
+        "橙色"
+      ],
+      [
+        "bulu",
+        "毛/羽毛"
+      ],
+      [
+        "ikal",
+        "波浪卷"
+      ],
+      [
+        "botak",
+        "秃头"
+      ],
+      [
+        "kebaya",
+        "印尼传统女装"
+      ],
+      [
+        "blus",
+        "女式衬衫"
+      ],
+      [
+        "gaun",
+        "连衣裙/礼服"
+      ],
+      [
+        "jas",
+        "西装/外套"
+      ],
+      [
+        "rok",
+        "裙子"
+      ],
+      [
+        "anting",
+        "耳环"
+      ],
+      [
+        "ikat pinggang",
+        "腰带"
+      ],
+      [
+        "kaos kaki",
+        "袜子"
+      ],
+      [
+        "bungkuk",
+        "弯腰"
+      ],
+      [
+        "struk",
+        "小票/收据"
+      ],
+      [
+        "wisuda",
+        "毕业典礼；毕业"
+      ],
+      [
+        "pemulihan",
+        "恢复；康复期"
+      ],
+      [
+        "fungsi",
+        "功能；作用"
+      ],
+      [
+        "bertujuan",
+        "旨在；以……为目的"
+      ],
+      [
+        "daya tahan",
+        "抵抗力；耐力"
+      ],
+      [
+        "menekan-nekan",
+        "反复按；乱按"
+      ],
+      [
+        "pengaturan",
+        "设置；安排"
+      ],
+      [
+        "bertema",
+        "以……为主题"
+      ],
+      [
+        "persahabatan",
+        "友谊"
+      ],
+      [
+        "bergoyang-goyang",
+        "摇来摇去；晃动"
+      ],
+      [
+        "menimpa",
+        "砸到；压到；降临到"
+      ],
+      [
+        "menambalnya",
+        "把它补好；给它补胎"
+      ],
+      [
+        "memperbaikinya",
+        "把它修好"
+      ],
+      [
+        "menancap",
+        "扎入；插入"
+      ],
+      [
+        "saking",
+        "太……以至于；由于太……"
+      ],
+      [
+        "meloloskan diri",
+        "逃脱"
+      ],
+      [
+        "berbaris",
+        "排成一列；列队"
+      ],
+      [
+        "penyimpanan",
+        "存放；储存"
+      ],
+      [
+        "keterangan",
+        "说明；信息；注释"
+      ],
+      [
+        "ketersediaannya",
+        "它的可用情况；库存情况"
+      ],
+      [
+        "brosur",
+        "宣传册；传单"
+      ],
+      [
+        "rempah-rempah",
+        "香料；各种香辛料"
+      ],
+      [
+        "dipatok",
+        "被定价；被固定"
+      ],
+      [
+        "tercantum",
+        "被列明；写在上面"
+      ],
+      [
+        "layak jual",
+        "适合销售"
+      ],
+      [
+        "lemari pendingin",
+        "冰箱；冷藏柜"
+      ],
+      [
+        "penonton",
+        "观众"
+      ],
+      [
+        "personil",
+        "人员；乐队成员"
+      ],
+      [
+        "berangkat kuliah",
+        "去上大学/去上课"
+      ],
+      [
+        "badak",
+        "犀牛"
+      ],
+      [
+        "beruang",
+        "熊"
+      ],
+      [
+        "cimol",
+        "西爪哇木薯粉小吃"
+      ],
+      [
+        "palang kereta api",
+        "铁路道口栏杆"
+      ],
+      [
+        "penyedot debu",
+        "吸尘器"
+      ],
+      [
+        "spatula",
+        "锅铲"
+      ],
+      [
+        "cobek",
+        "石臼/研钵"
+      ],
+      [
+        "ulek",
+        "研杵"
+      ],
+      [
+        "parutan",
+        "刨丝器"
+      ],
+      [
+        "centong",
+        "饭勺"
+      ],
+      [
+        "seprai",
+        "床单"
+      ],
+      [
+        "gantungan",
+        "挂钩/衣架"
+      ],
+      [
+        "jingga",
+        "橙色"
+      ],
+      [
+        "persegi panjang",
+        "长方形"
+      ],
+      [
+        "persegi",
+        "正方形"
+      ],
+      [
+        "lonjong",
+        "椭圆/长圆"
+      ],
+      [
+        "wajik",
+        "菱形"
+      ],
+      [
+        "kucir",
+        "马尾/辫子"
+      ],
+      [
+        "sanggul",
+        "发髻"
+      ],
+      [
+        "bot",
+        "靴子"
+      ],
+      [
+        "tenggara",
+        "东南"
+      ],
+      [
+        "mendaki",
+        "登山"
+      ],
+      [
+        "penjelajahan",
+        "探险"
+      ],
+      [
+        "resepsionis hotel",
+        "酒店前台"
+      ],
+      [
+        "catur",
+        "国际象棋"
+      ],
+      [
+        "gulat",
+        "摔跤"
+      ],
+      [
+        "panahan",
+        "射箭"
+      ],
+      [
+        "gerakan statis",
+        "静态动作"
+      ],
+      [
+        "becak",
+        "人力三轮车"
+      ],
+      [
+        "delman",
+        "马车"
+      ],
+      [
+        "antik",
+        "古董般的/古老有特色"
+      ],
+      [
+        "suci",
+        "神圣的"
+      ],
+      [
+        "keramat",
+        "神圣/灵验的"
+      ],
+      [
+        "menyebalkan",
+        "令人恼火"
       ]
     ],
     "review": [
@@ -1057,16 +1657,6 @@
         "慢；卡顿"
       ],
       [
-        "ngandelin",
-        3,
-        1,
-        "2026-09-15T04:30:14.684Z",
-        "2026-10-29T03:55:52.237Z",
-        "依赖；指望；靠",
-        "andal",
-        "可靠；可依靠"
-      ],
-      [
         "walau",
         3,
         0,
@@ -1165,16 +1755,6 @@
         "说话",
         "bicara",
         "说话；谈话"
-      ],
-      [
-        "ngelarin",
-        3,
-        2,
-        "",
-        "2026-10-29T03:57:41.627Z",
-        "把事情做完；收尾（口语）",
-        "kelar",
-        "完成；结束"
       ],
       [
         "ramai",
@@ -2295,6 +2875,126 @@
         "痒；发痒",
         "gatal",
         "痒"
+      ],
+      [
+        "kisah",
+        2,
+        0,
+        "",
+        "2026-10-22T15:34:00.674Z",
+        "故事；叙事",
+        "kisah",
+        "故事"
+      ],
+      [
+        "lega",
+        2,
+        1,
+        "2026-10-15T03:28:12.199Z",
+        "2026-10-26T07:45:22.738Z",
+        "松一口气；宽慰",
+        "lega",
+        "宽慰；轻松"
+      ],
+      [
+        "periode",
+        3,
+        0,
+        "",
+        "",
+        "时期；一段时间",
+        "periode",
+        "时期"
+      ],
+      [
+        "penggunaan",
+        3,
+        0,
+        "",
+        "",
+        "使用；使用情况",
+        "guna",
+        "用处；使用"
+      ],
+      [
+        "nasib",
+        3,
+        0,
+        "",
+        "",
+        "命运；处境；运气",
+        "nasib",
+        "命运；处境"
+      ],
+      [
+        "rabu",
+        3,
+        0,
+        "",
+        "",
+        "星期三",
+        "rabu",
+        "星期三"
+      ],
+      [
+        "menderita",
+        3,
+        0,
+        "",
+        "",
+        "患有；遭受痛苦",
+        "derita",
+        "痛苦；苦难"
+      ],
+      [
+        "datar",
+        3,
+        0,
+        "",
+        "",
+        "平坦的；平平的",
+        "datar",
+        "平坦"
+      ],
+      [
+        "modal",
+        3,
+        0,
+        "",
+        "",
+        "资金；本钱；资本",
+        "modal",
+        "本钱；资本"
+      ],
+      [
+        "artikel",
+        3,
+        0,
+        "",
+        "",
+        "文章",
+        "artikel",
+        "文章"
+      ],
+      [
+        "ucap",
+        3,
+        0,
+        "",
+        "",
+        "说；表达（常用于引语）",
+        "ucap",
+        "说；表达"
+      ],
+      [
+        "negara",
+        3,
+        0,
+        "",
+        "",
+        "国家",
+        "negara",
+        "国家"
       ]
     ],
     "focus": [
@@ -2556,7 +3256,32 @@
         ]
       ]
     ],
-    "oral": []
+    "oral": [
+      [
+        "saking",
+        "口语",
+        "",
+        "saking",
+        733,
+        "fuzzy"
+      ],
+      [
+        "menyebalkan",
+        "通用",
+        "nyebelin",
+        "sebal",
+        730,
+        "fuzzy"
+      ],
+      [
+        "mengecewakan",
+        "通用",
+        "ngecewain",
+        "kecewa",
+        731,
+        "fuzzy"
+      ]
+    ]
   },
   "history_7d": [
     {
@@ -2835,6 +3560,29 @@
         "akal",
         "sebutan"
       ]
+    },
+    {
+      "date": "2026-11-03",
+      "session": "am",
+      "review_core": [
+        "sebab",
+        "penyebab",
+        "nyusul",
+        "ngandelin",
+        "ngelarin"
+      ],
+      "new_words": [
+        "periode",
+        "penggunaan",
+        "nasib",
+        "rabu",
+        "menderita",
+        "datar",
+        "modal",
+        "artikel",
+        "ucap",
+        "negara"
+      ]
     }
   ],
   "previous_pm": {
@@ -2852,7 +3600,88 @@
       "kadang"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-03",
+    "vocab": [
+      [
+        "periode",
+        "时期；一段时间",
+        "period",
+        "periode",
+        "时期"
+      ],
+      [
+        "penggunaan",
+        "使用；使用情况",
+        "use; usage",
+        "guna",
+        "用处；使用"
+      ],
+      [
+        "nasib",
+        "命运；处境；运气",
+        "fate; lot",
+        "nasib",
+        "命运；处境"
+      ],
+      [
+        "rabu",
+        "星期三",
+        "Wednesday",
+        "rabu",
+        "星期三"
+      ],
+      [
+        "menderita",
+        "患有；遭受痛苦",
+        "suffer from",
+        "derita",
+        "痛苦；苦难"
+      ],
+      [
+        "datar",
+        "平坦的；平平的",
+        "flat; level",
+        "datar",
+        "平坦"
+      ],
+      [
+        "modal",
+        "资金；本钱；资本",
+        "capital; starting funds",
+        "modal",
+        "本钱；资本"
+      ],
+      [
+        "artikel",
+        "文章",
+        "article",
+        "artikel",
+        "文章"
+      ],
+      [
+        "ucap",
+        "说；表达（常用于引语）",
+        "say; utter",
+        "ucap",
+        "说；表达"
+      ],
+      [
+        "negara",
+        "国家",
+        "country; state",
+        "negara",
+        "国家"
+      ]
+    ],
+    "review_vocab": [
+      "sebab",
+      "penyebab",
+      "nyusul",
+      "ngandelin",
+      "ngelarin"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
