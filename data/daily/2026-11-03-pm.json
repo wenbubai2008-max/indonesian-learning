@@ -1,0 +1,352 @@
+{
+  "date": "2026-11-03",
+  "session": "pm",
+  "time": "18:00",
+  "day": 74,
+  "title": "18:00 晚课｜Minta Pindah Kamar Tanpa Bertengkar · 说明房间问题，平静提出换房",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "kasur",
+    "berbincang-bincang",
+    "mengecewakan"
+  ],
+  "vocab": [
+    {
+      "word": "kasur",
+      "display": "kasur",
+      "audio_text": "kasur",
+      "cn": "床垫",
+      "en": "mattress",
+      "root": "kasur",
+      "root_cn": "床垫",
+      "formation": "名词。搭配：kasur empuk（软床垫）、kasur keras（硬床垫）、kasur basah（湿床垫）。kasur 是睡觉时躺的垫子，不是整个床架。",
+      "example": "Kasur itu bersih, tetapi lantai di dekatnya masih berantakan. Aku terkejut karena kamar belum siap.",
+      "example_cn": "床垫是干净的，但旁边的地板仍一团乱。房间还没准备好，让我很惊讶。",
+      "synonym_note": "kasur 是床垫；tempat tidur 指床或睡觉的地方；bantal 是枕头。口语说法：kasurnya keras banget（床垫很硬），不需要另外造俚语。",
+      "usage_note": "描述问题先点出对象：Kasurnya basah.（床垫湿了。）不要只说 kamar jelek，让对方猜哪里有问题。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "berbincang-bincang",
+      "display": "berbincang-bincang",
+      "audio_text": "berbincang-bincang",
+      "cn": "聊天；交谈",
+      "en": "chat; converse",
+      "root": "bincang",
+      "root_cn": "谈；商谈",
+      "formation": "ber- + 重叠形式 bincang-bincang，表示交谈。搭配：berbincang-bincang dengan teman、berbincang-bincang tentang liburan、duduk berbincang-bincang。",
+      "example": "Kami berbincang-bincang tentang film fantasi sambil berendam di kolam air hangat.",
+      "example_cn": "我们一边泡温水池，一边聊奇幻电影。",
+      "synonym_note": "berbincang-bincang 偏交谈、闲聊；berdiskusi 通常围绕一个问题讨论。口语说法：ngobrol；朋友聊天说 Kita ngobrol dulu. 很自然。",
+      "usage_note": "写叙述可用 berbincang-bincang；朋友现场开口常用 ngobrol。注意 dengan 接聊天对象，tentang 接话题。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengecewakan",
+      "display": "mengecewakan",
+      "audio_text": "mengecewakan",
+      "cn": "令人失望；使人失望",
+      "en": "disappoint; disappointing",
+      "root": "kecewa",
+      "root_cn": "失望",
+      "formation": "meN- + kecewa + -kan → mengecewakan，k 脱落。搭配：pelayanan yang mengecewakan、hasilnya mengecewakan、mengecewakan tamu。",
+      "example": "Pelayanan hotel itu mengecewakan. Petugas mengetahui keadaan kamarnya, tetapi tetap menerima tamu.",
+      "example_cn": "那家旅馆的服务令人失望。工作人员明知房间的状况，却仍接待客人。",
+      "synonym_note": "mengecewakan 描述某事让人失望：Pelayanannya mengecewakan.；kecewa 描述人的感受：Saya kecewa.。口语说法：ngecewain；二者都不是“我感到失望”的同一个句型。",
+      "usage_note": "先区分“人感到失望”和“事情令人失望”。口语例：Kamarnya ngecewain.；向工作人员说明时可用标准形。kecewa 说人的感受，mengecewakan 说造成这种感受的人或事。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": true
+    },
+    {
+      "word": "bebas",
+      "display": "bebas",
+      "audio_text": "bebas",
+      "cn": "自由的；可以自由选择；免于",
+      "en": "free; unrestricted",
+      "root": "bebas",
+      "root_cn": "自由；免于",
+      "formation": "基本词。搭配：bebas memilih（自由选择）、bebas biaya（免收费）、bebas dari masalah（没有某种困扰）。含义由后面的词决定。",
+      "example": "Kamu bebas memilih kegiatan. Aku tidak akan memaksa kamu menyelam kalau kamu masih takut.",
+      "example_cn": "你可以自由选择活动。你还害怕的话，我不会强迫你潜水。",
+      "synonym_note": "bebas memilih 不表示免费；gratis 才直接表示不用付钱。bebas biaya 也表示免收费，但不能把所有 bebas 都译成免费。口语说法：Bebas, kamu pilih aja.（随你，你来选。）",
+      "usage_note": "今天练“自由选择”和“免费”的区别：Tamu bebas memilih kamar. 不保证任何房型都不用加钱。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "cerewet",
+      "display": "cerewet",
+      "audio_text": "cerewet",
+      "cn": "话多；唠叨；挑剔地反复说",
+      "en": "fussy; nagging; talkative",
+      "root": "cerewet",
+      "root_cn": "话多；唠叨",
+      "formation": "基本词。搭配：orang yang cerewet、terlalu cerewet、cerewet soal kebersihan。常带评价色彩；不能把所有认真询问都说成 cerewet。",
+      "example": "Aku bukan mau cerewet, tetapi tulisan kata sandi yang menempel di pintu itu tidak terbaca.",
+      "example_cn": "我不是想挑剔，但贴在门上的密码字迹看不清。",
+      "synonym_note": "cerewet 常指说得多、反复念叨或挑剔；teliti 是仔细、认真检查，并不等于爱挑毛病。口语说法：Bukan mau cerewet, tapi …（不是想挑剔，不过……）。",
+      "usage_note": "对不熟悉的人直接说 Kamu cerewet. 容易冒犯。表达自己的合理要求时，可以先说具体事实，而不评价对方性格。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "selera",
+      "display": "selera",
+      "audio_text": "selera",
+      "cn": "口味；喜好",
+      "en": "taste; preference",
+      "root": "selera",
+      "root_cn": "口味；喜好",
+      "formation": "名词。搭配：sesuai selera（合喜好）、selera makan（食欲）、selera musik（音乐品味）。",
+      "example": "Minuman yang menyegarkan itu cocok dengan selera Rina. Ia suka rasa asam, bukan sekadar manis.",
+      "example_cn": "那杯清爽的饮料合莉娜的口味。她喜欢酸味，而不只是甜。",
+      "synonym_note": "selera 是人的喜好；rasa 是食物的味道或人的感受：rasanya asam / sesuai selera saya。口语说法：Sesuai seleraku.（合我的喜好。）",
+      "usage_note": "不是所有 selera 都和吃饭有关。描述房间装饰，也可以说 warnanya sesuai selera saya。用场景题区分 selera 与 rasa。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kemungkinan besar",
+      "display": "kemungkinan besar",
+      "audio_text": "kemungkinan besar",
+      "cn": "很可能；大概率",
+      "en": "very likely; probably",
+      "root": "mungkin",
+      "root_cn": "可能",
+      "formation": "固定短语；kemungkinan = ke- + mungkin + -an，表示可能性；besar 在此表示可能性较高。搭配：kemungkinan besar akan …、kemungkinan besar sudah …、kemungkinan besar karena …。",
+      "example": "Kemungkinan besar, ia belum membalas pesanku karena sedang tidur. Aku tidak mau diam-diam masuk ke kamarnya.",
+      "example_cn": "他很可能因为正在睡觉，还没回我消息。我不想偷偷进他的房间。",
+      "synonym_note": "kemungkinan besar 比单独 mungkin 更肯定一些，但仍是推测；pasti 表示确定，不应在没有证据时替换。口语说法：Kayaknya …（好像／看来……）也常用于推测，但不总有“大概率”这么强。",
+      "usage_note": "说出判断依据，再保留不确定性。不要把“很可能有空房”转述成“已经保证有空房”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "akibat",
+      "display": "akibat",
+      "audio_text": "akibat",
+      "cn": "后果；由于……造成的结果",
+      "en": "consequence; as a result of",
+      "root": "akibat",
+      "root_cn": "后果；结果",
+      "formation": "基本词。搭配：akibat hujan（由于下雨）、akibat kurang tidur（由于睡眠不足）、akibat buruk（不良后果）。",
+      "example": "Ia merasa mual akibat perjalanan panjang. Setelah duduk sebentar, pikirannya lebih tenang.",
+      "example_cn": "长途旅行让他感到恶心。坐了一会儿后，他的心情平静了一些。",
+      "synonym_note": "akibat 常突出某事造成的后果，常见于不好的结果；hasil 更中性，也可以指成果。口语说法：日常解释原因常用 gara-gara 或 karena；gara-gara 也常带埋怨。",
+      "usage_note": "先说结果，再用 akibat 说明原因：Kasurnya basah akibat air hujan.。也可以说 Ini akibat hujan tadi.（这是刚才下雨造成的后果。）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "artikel",
+      "display": "artikel",
+      "audio_text": "artikel",
+      "cn": "文章",
+      "en": "article",
+      "root": "artikel",
+      "root_cn": "文章",
+      "formation": "名词。搭配：membaca artikel、artikel tentang …、isi artikel。今天08:00新学；今晚换到出行和住宿场景。",
+      "example": "Artikel itu membahas cara menjaga pikiran tetap tenang setelah bencana alam.",
+      "example_cn": "那篇文章讨论自然灾害后如何保持心态平稳。",
+      "synonym_note": "artikel 是成篇文章；berita 是新闻消息。介绍旅行体验的 artikel 不一定是新闻。口语说法：Aku baca artikel tentang hotel ini.（我读了篇介绍这家旅馆的文章。）",
+      "usage_note": "今天08:00新学。今晚用 artikel 说明做决定前读过什么，再核实现场情况；网上文章不能代替实际检查。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "datar",
+      "display": "datar",
+      "audio_text": "datar",
+      "cn": "平坦的；平平的",
+      "en": "flat; level",
+      "root": "datar",
+      "root_cn": "平坦",
+      "formation": "形容词。搭配：lantai datar（平坦地板）、tanah datar（平地）、nada datar（平淡语调）。今天08:00新学。",
+      "example": "Kami memilih tempat yang datar untuk duduk, jauh dari pagar yang hampir roboh.",
+      "example_cn": "我们选了一块平坦的地方坐下，离快要倒塌的围栏远远的。",
+      "synonym_note": "datar 指没有明显高低起伏；rata 也能说表面平整，在 lantai datar / rata 中有重叠。empuk 是软，两者不是相反词：平的表面可以硬，也可以软。口语说法：Lantainya datar, nggak miring.（地板平，不歪斜。）",
+      "usage_note": "今天08:00新学。今晚核对“平坦”和“柔软”两个不同标准；不能因为 lantai datar 就认定适合睡觉。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sore itu, Rani dan Dito tiba di sebuah penginapan dekat pantai. Sebelum datang, Rani membaca artikel tentang tempat itu. Namun, kasur di kamar mereka ternyata basah akibat air hujan dari jendela yang terbuka. Dito ingin tidur di lantai yang datar, tetapi Rani menolak karena lantainya dingin. Mereka lalu berbincang-bincang dengan petugas. Rani menjelaskan bahwa keadaan kamar itu mengecewakan, bukan sekadar berbeda dari selera mereka. Petugas mengatakan kemungkinan besar masih ada kamar kosong. Mereka diminta menunggu sambil petugas memeriksanya. Dito sempat takut dianggap cerewet, tetapi Rani mengingatkan bahwa mereka bebas menyampaikan masalah dengan sopan. Akhirnya, mereka mendapat kamar lain tanpa biaya tambahan.",
+    "cn": "那天下午，拉妮和迪托来到一家海边旅馆。来之前，拉妮读过一篇介绍这里的文章。然而，窗户开着，雨水进来，把他们房里的床垫弄湿了。迪托想睡在平坦的地板上，但拉妮不同意，因为地板很冷。于是，他们去和工作人员交谈。拉妮说明，房间的状况令人失望，并不只是与他们的个人喜好不同。工作人员说，很可能还有空房，请他们稍等，自己去查看。迪托一度担心会被觉得挑剔，但拉妮提醒他，他们有权礼貌地说出问题。最后，他们换到了另一间房，没有额外收费。"
+  },
+  "dialogue": {
+    "title": "向工作人员提出换房后，两人商量接下来的安排",
+    "lines": [
+      {
+        "speaker": "Rani",
+        "id": "Dit, kasurnya basah. Aku nggak mau tidur di lantai, walaupun lantainya datar.",
+        "cn": "迪托，床垫湿了。就算地板平，我也不想睡地上。（nggak = tidak）"
+      },
+      {
+        "speaker": "Dito",
+        "id": "Iya, kamarnya ngecewain. Tapi kalau kita minta pindah, dikira cerewet nggak?",
+        "cn": "是啊，这房间挺令人失望。不过我们要求换房，会不会被觉得挑剔？（ngecewain = mengecewakan；dikira = dianggap）"
+      },
+      {
+        "speaker": "Rani",
+        "id": "Nggak perlu gengsi. Kita jelasin aja kasurnya basah, terus tanya apakah bisa pindah kamar.",
+        "cn": "不用拉不下脸。咱们就说明床垫湿了，再问问能不能换房。（jelasin = menjelaskan；aja = saja；terus = lalu）"
+      },
+      {
+        "speaker": "Dito",
+        "id": "Petugas tadi bilang kemungkinan besar ada kamar kosong. Kita tunggu dia cek dulu, ya.",
+        "cn": "工作人员刚才说，很可能有空房。我们先等他检查一下吧。（bilang = mengatakan；cek = memeriksa）"
+      },
+      {
+        "speaker": "Rani",
+        "id": "Iya. Kalau udah pindah, lepas sepatu dulu. Kita istirahat sebentar sebelum jalan ke pantai.",
+        "cn": "嗯。换好房后，先脱鞋。我们稍微休息一下，再走去海边。（udah = sudah）"
+      },
+      {
+        "speaker": "Dito",
+        "id": "Boleh. Habis itu kita bebas mau duduk di pantai atau cari makan sesuai selera.",
+        "cn": "好。之后我们可以自由选择，去海边坐坐，或者找合口味的饭吃。（habis itu = setelah itu）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：你入住后发现床垫湿了，房间情况令人失望。用 kasur 和 mengecewakan，写2–3句向工作人员说明问题并请求查看另一间房。不要照抄阅读。",
+      "reference_answer": "Kasur di kamar saya basah. Ini mengecewakan karena saya ingin segera beristirahat. Bolehkah saya melihat kamar lain dulu?",
+      "reference_cn": "我房里的床垫湿了。这让人失望，因为我想马上休息。可以先看看另一间房吗？"
+    },
+    {
+      "task": "弱词应用：朋友说“你只是口味太挑”，但你遇到的是床垫进雨水。用 selera 和 akibat 说明两者的区别，再提出一个合理要求，至少2句。",
+      "reference_answer": "Ini bukan soal selera. Kasurnya basah akibat air hujan, jadi saya minta tempat tidur yang kering. Saya tidak meminta kamar yang lebih mahal.",
+      "reference_cn": "这不是喜好的问题。床垫被雨水弄湿了，所以我要求一个干燥的睡觉地方。我没有要求更贵的房间。"
+    },
+    {
+      "task": "早课词迁移：换到朋友周末出游的场景，用 artikel 和 datar，说说你读到了什么信息、准备选哪里坐，并说明还会先检查现场。至少2–3句。",
+      "reference_answer": "Aku membaca artikel tentang pantai itu. Katanya, ada tempat yang datar untuk duduk. Aku tetap mau melihat keadaan tempatnya dulu sebelum mengajak Ibu ke sana.",
+      "reference_cn": "我读了一篇关于那个海滩的文章。文章说有一块平坦的地方可以坐。我还是想先看看现场状况，再带妈妈过去。"
+    },
+    {
+      "task": "回应不确定消息：朋友说“很可能有空房”，却想立刻打包离开现在的房间。用 kemungkinan besar 和 berbincang-bincang，写2–3句，提醒他先确认，并邀请他去和工作人员聊清楚。",
+      "reference_answer": "Kemungkinan besar ada kamar kosong, tetapi belum ada kepastian. Kita berbincang-bincang dengan petugas dulu agar tahu kapan bisa pindah. Balas pesanku setelah kamu mendapat jawaban, ya.",
+      "reference_cn": "很可能有空房，但还没确定。我们先和工作人员交谈，弄清什么时候能换。你得到答复后，回我消息哦。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "“Saya ____ dengan kamar ini. Kasurnya basah.” 哪一项能自然放进句子？",
+        "options": [
+          "mengecewakan",
+          "kecewa",
+          "mengecewakan tamu",
+          "kekecewaan"
+        ],
+        "answer_index": 1,
+        "answer": "kecewa",
+        "explain": "这里 saya 是感到失望的人，用 kecewa dengan …。mengecewakan 表示让别人失望，通常说 Kamarnya mengecewakan.；mengecewakan tamu 指使客人失望，放入这里会改变主语的角色且接不上后半句；kekecewaan 是名词。"
+      },
+      {
+        "type": "choice",
+        "prompt": "“Tamu bebas memilih kamar. Harga tiap kamar tetap mengikuti daftar harga.” 这句话最准确的理解是什么？",
+        "options": [
+          "所有房间都免费",
+          "每个人都必须换房",
+          "只要挑选就能免房费",
+          "客人可以选择，但仍按各房型价格付费"
+        ],
+        "answer_index": 3,
+        "answer": "客人可以选择，但仍按各房型价格付费",
+        "explain": "bebas memilih 是可以自由选择。要表达免收费须有 bebas biaya 或 gratis；不能只看到 bebas 就认定免费。"
+      },
+      {
+        "type": "choice",
+        "prompt": "工作人员说：“Kemungkinan besar ada kamar kosong, tetapi saya harus cek dulu.” 朋友接下来怎么说最合适？",
+        "options": [
+          "Kita tunggu hasil pemeriksaannya dulu.",
+          "Kamarnya pasti kosong, ayo langsung pindah.",
+          "Kita pasti harus pulang sekarang.",
+          "Semua kamar pasti gratis."
+        ],
+        "answer_index": 0,
+        "answer": "Kita tunggu hasil pemeriksaannya dulu.",
+        "explain": "kemungkinan besar 是有把握的推测，尚非保证；先等核实结果符合语境。其余选项都把尚未确认的消息说成确定事实，或擅自增加收费结论。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Pilihan makanannya banyak, jadi kamu bisa memilih sesuai ____ kamu.（口味；喜好）",
+        "answer": "selera",
+        "explain": "sesuai selera kamu 表示按你的喜好选择；rasa 通常说食物的味道，不直接替换这里的人的喜好。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kami duduk ____ dengan petugas tentang pilihan kamar.（聊天；交谈）",
+        "answer": "berbincang-bincang",
+        "explain": "berbincang-bincang dengan 接交谈对象；tentang 接话题。这个句子描述交谈，不强调争论或正式会议。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：这张床垫因为雨水湿了。",
+        "tokens": [
+          "Kasur",
+          "ini",
+          "basah",
+          "akibat",
+          "air",
+          "hujan."
+        ],
+        "answer": "Kasur ini basah akibat air hujan.",
+        "answer_cn": "这张床垫因为雨水湿了。",
+        "explain": "先说对象 Kasur ini，再说状态 basah，最后用 akibat air hujan 补充造成这一结果的原因。"
+      }
+    ],
+    "self_check": [
+      "不看中文，我能在3秒内说出 kasur 和 berbincang-bincang 的意思吗？",
+      "我能分清 kecewa 与 mengecewakan，并知道哪一个描述“令人失望”吗？",
+      "我能分清 bebas memilih 与免费，也能说明 kemungkinan besar 还不是保证吗？",
+      "我是否清楚 selera 指喜好、akibat 指后果，并理解 cerewet 为什么可能让人不舒服？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "换人称输出：用 Saya kecewa. 说自己的感受，再用 … mengecewakan. 说让你失望的具体事情。接着为同一个要求写两种开头：直接说明问题，或先用 Bukan mau cerewet, tapi … 缓和语气。",
+      "30秒脱稿复述：床垫为什么湿、Dito 原来想怎么办、两人向工作人员提出什么要求、最后怎样解决。至少用 kasur、akibat、kemungkinan besar 三个词。",
+      "早课迁移：合上课文，用今天08:00新学的 artikel 和 datar，介绍一次你会怎样为家人选休息地点；说清文章提供了什么线索，自己还要核实什么。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "mengecewakan",
+      "bebas",
+      "kemungkinan besar"
+    ],
+    "patterns": [
+      {
+        "pattern": "Ini bukan soal …",
+        "cn": "这不是……的问题。",
+        "example": "Ini bukan soal selera.",
+        "example_cn": "这不是喜好的问题。"
+      },
+      {
+        "pattern": "Bolehkah saya … dulu?",
+        "cn": "我可以先……吗？",
+        "example": "Bolehkah saya melihat kamar lain dulu?",
+        "example_cn": "可以先看看另一间房吗？"
+      }
+    ]
+  }
+}
