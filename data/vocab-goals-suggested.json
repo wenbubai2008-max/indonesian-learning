@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 912,
+   "use": 922,
    "recognize": 104,
    "unsure": 21,
    "fast": 135
   },
   "active": {
-   "use": 635,
+   "use": 645,
    "recognize": 88,
    "unsure": 19,
    "fast": 57
@@ -9563,6 +9563,96 @@
    "status": "active",
    "why": [
     "977 主库第 934 位"
+   ]
+  },
+  "periode": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 506 位"
+   ]
+  },
+  "penggunaan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 514 位"
+   ]
+  },
+  "nasib": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 523 位"
+   ]
+  },
+  "rabu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 607 位"
+   ]
+  },
+  "menderita": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 730 位"
+   ]
+  },
+  "datar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 731 位"
+   ]
+  },
+  "modal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 765 位"
+   ]
+  },
+  "artikel": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 766 位"
+   ]
+  },
+  "ucap": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 932 位"
+   ]
+  },
+  "negara": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 935 位"
    ]
   }
  }
