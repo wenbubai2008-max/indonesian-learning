@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-03T02:13:08.169Z",
+  "updated_at": "2026-11-03T09:40:26.925Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -4709,19 +4709,18 @@
     "mengantar": {
       "word": "mengantar",
       "status": "active",
-      "updated_at": "2026-10-27T05:48:24.820Z",
+      "updated_at": "2026-11-03T09:40:10.005Z",
       "display": "mengantar",
       "cn": "送；陪送；送到",
       "root": "antar",
       "root_cn": "送",
       "last_wrong": "2026-10-23T23:27:45.570Z",
-      "last_review": "2026-10-27T05:48:24.767Z",
+      "last_review": "2026-11-03T09:40:09.880Z",
       "reasons": [
-        "memory_dont",
-        "quick_wrong"
+        "memory_dont"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "mengarahkan": {
       "word": "mengarahkan",
@@ -4780,19 +4779,18 @@
     "mengetik": {
       "word": "mengetik",
       "status": "active",
-      "updated_at": "2026-10-27T05:48:28.870Z",
+      "updated_at": "2026-11-03T09:40:13.695Z",
       "display": "mengetik",
       "cn": "打字；用键盘输入",
       "root": "ketik",
       "root_cn": "打字；键入",
       "last_wrong": "2026-10-23T23:28:35.532Z",
-      "last_review": "2026-10-27T05:48:28.816Z",
+      "last_review": "2026-11-03T09:40:13.572Z",
       "reasons": [
-        "memory_dont",
-        "quick_wrong"
+        "memory_dont"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "mengetuk": {
       "word": "mengetuk",
@@ -5311,19 +5309,18 @@
     "negatif": {
       "word": "negatif",
       "status": "active",
-      "updated_at": "2026-10-27T05:48:31.835Z",
+      "updated_at": "2026-11-03T09:40:16.559Z",
       "display": "negatif",
       "cn": "消极的；负面的；阴性的",
       "root": "negatif",
       "root_cn": "消极的；负面的",
       "last_wrong": "2026-10-23T23:32:45.582Z",
-      "last_review": "2026-10-27T05:48:31.783Z",
+      "last_review": "2026-11-03T09:40:16.434Z",
       "reasons": [
-        "memory_dont",
-        "quick_wrong"
+        "memory_dont"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "nempel": {
       "word": "nempel",
@@ -28819,24 +28816,23 @@
     "perpaduan": {
       "word": "perpaduan",
       "status": "active",
-      "updated_at": "2026-10-27T05:48:17.090Z",
+      "updated_at": "2026-11-03T09:40:05.691Z",
       "display": "perpaduan",
       "cn": "融合；结合；搭配",
       "root": "padu",
       "root_cn": "协调；融合",
       "last_wrong": "2026-10-24T15:35:27.721Z",
-      "last_review": "2026-10-27T05:48:17.030Z",
+      "last_review": "2026-11-03T09:40:05.553Z",
       "source": "课程小测",
       "source_date": "2026-10-24",
       "session": "18:00",
       "reasons": [
         "bipa_secondary_dont",
-        "quick_wrong",
         "memory_fuzzy",
         "lesson_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 2
+      "right_streak": 3
     },
     "usaha mikro": {
       "word": "usaha mikro",
