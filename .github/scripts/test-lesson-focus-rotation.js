@@ -47,5 +47,5 @@ function run(){
  assert.strictEqual(errors(candidate('2026-11-04','am',['a','b','c'],['a','b','c','d']),[history('2026-11-03','pm',['a','b'])]).length,1);
  return true;
 }
-if(require.main===module){run();console.log('lesson-focus-rotation: 11 checks passed')}
+if(require.main===module){run();console.log('lesson-focus-rotation: 13 checks passed')}
 module.exports={run};
