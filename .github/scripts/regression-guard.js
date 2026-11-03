@@ -831,6 +831,24 @@ try {
     okNew(vpui.includes('WordDiagnosisUI.word(detail.word)')&&vpui.includes('function diagTag(')&&vpui.includes('homeOn?diagTag(next.word)')&&read('data/word-diagnosis.js').includes("forgetting:'掌握后又答错'")&&!/forgetting:'反复遗忘'/.test(read('data/word-diagnosis.js')+read('data/word-diagnosis-ui.js')),'word page shows the diagnosis block, task rows carry diagnosis tags, and the diagnosis never reuses the weekly report\'s name 反复遗忘');
   }
 
+
+  // 2026-11-04: the three highlighted lesson_focus words rotate independently of core review.
+  // In a pinned old-main baseline tree, the new helper/test does not exist yet.
+  if(process.env.GUARD_BASELINE_TREE!=='1'){
+    const cfg=rules.lesson_focus_rotation||{};
+    ok(cfg.enabled===true&&cfg.effective_date==='2026-11-04'&&cfg.cooldown_hours===72&&cfg.window_days===7&&cfg.max_prior_focus===2,
+      'focus highlight cooldown is configured for 72 hours / two in seven days from 2026-11-04');
+    const validator=read('.github/scripts/validate-lesson-candidate.js');
+    ok(validator.includes("require('./lesson-focus-rotation')")&&validator.includes('checkFocus({lesson,reviewHistory,runtime,config:rules.lesson_focus_rotation})'),
+      'candidate validator applies focus cooldown to published seven-day lesson history');
+    ok(['docs/tasks/AM-LESSON.md','docs/tasks/PM-LESSON.md'].every(p=>read(p).includes('LESSON_FOCUS_COOLDOWN')&&read(p).includes('2026-11-04')),
+      'both course runbooks explain focus cooldown and exception handling');
+    try{
+      require('./test-lesson-focus-rotation').run();
+      ok(true,'lesson focus cooldown unit tests (real error, stale error, fallback, history)');
+    }catch(e){ok(false,'lesson focus cooldown unit tests: '+e.message)}
+  }
+
 } catch (e) {
   failures.push('guard script crashed: ' + (e && e.stack ? e.stack : e));
 }
