@@ -77,6 +77,38 @@ t('P4 a same-day AM cycle word is an old word reviewed at 08:00, not a new word'
  delete amX.cycle_vocab;assert.ok(codes(runPm(L,pmRuntime([],[]),amX)).has('AM_MARKER_FALSE'),'without cycle_vocab the same word counts as an 08:00 new word');
 });
 
+// ---------- 2026-11-04: five new PM words, unchanged review/application slots ----------
+const modernDate='2026-11-04';
+function modernPm(){
+ const L=clone(pm);L.date=modernDate;L.day=75;L.time='18:00';
+ const samples=L.vocab.filter(v=>v.source_group==='new');
+ const added=['synthetic-novel-04a','synthetic-novel-04b'].map((name,i)=>{
+  const v=clone(samples[i]);v.word=name;v.display=name;v.audio_text=name;
+  v.is_oral_new=false;v.is_new=true;return v;
+ });
+ L.vocab.push(...added);L.new_words.push(...added.map(v=>v.word));
+ return L;
+}
+const modernAm=clone(sameAm);modernAm.date=modernDate;
+const modernRun=(L,newPool)=>validate({lesson:L,index,runtime:pmRuntime(newPool,[]),rules,expectedDate:modernDate,expectedSession:'pm',sameDayAm:modernAm,previousPm:null,reviewHistory:[]});
+t('P5 normal PM on Nov 4 requires 5 new, retains 5 review + 2 application, 12 total',()=>{
+ const L=modernPm(),c=codes(modernRun(L,L.new_words));
+ assert.equal(L.vocab.length,12);assert.equal(L.vocab.filter(x=>x.source_group==='review').length,5);
+ assert.equal(L.vocab.filter(x=>x.source_group==='application').length,2);
+ assert.ok(!c.has('PM_CORE_COUNT')&&!c.has('PM_GROUP_COUNT'),[...c].join(','));
+});
+t('P6 four new words are rejected as normal when five legal new words exist',()=>{
+ const L=modernPm(),v=L.vocab.find(x=>x.word==='synthetic-novel-04b');v.source_group='review';v.is_new=false;
+ L.new_words=L.new_words.filter(w=>w!==v.word);
+ assert.ok(codes(modernRun(L,modernPm().new_words)).has('PM_GROUP_COUNT'));
+});
+t('P7 with only four legal new words the PM teaches all four in the existing 10-12-card review cycle',()=>{
+ const L=modernPm(),v=L.vocab.find(x=>x.word==='synthetic-novel-04b');v.source_group='review';v.is_new=false;
+ L.new_words=L.new_words.filter(w=>w!==v.word);
+ const c=codes(modernRun(L,L.new_words));
+ assert.ok(!c.has('PM_GROUP_COUNT')&&!c.has('PM_CORE_COUNT'),[...c].join(','));
+});
+
 // ---------- ranking and ledger ----------
 t('R1 cycle words are active reviews in the exposure ledger',()=>{
  assert.deepEqual(activeWords({session:'am',review_vocab:['a'],cycle_vocab:['B']},null),['a','b']);
