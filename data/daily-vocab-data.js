@@ -11298,23 +11298,27 @@ window.DAILY_VOCAB_DB = [
     "en": "result; consequence",
     "root": "akibat",
     "root_cn": "后果；结果",
-    "example": "Keterlambatan itu adalah akibat dari masalah teknis.",
-    "example_cn": "那次延误是技术问题造成的后果。",
+    "example": "Ia merasa mual akibat perjalanan panjang. Setelah duduk sebentar, pikirannya lebih tenang.",
+    "example_cn": "长途旅行让他感到恶心。坐了一会儿后，他的心情平静了一些。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-17 08:00",
+    "last_seen": "2026-11-03 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-11-03"
     ],
     "lesson_occurrences": [
-      "2026-09-17 08:00"
+      "2026-09-17 08:00",
+      "2026-11-03 18:00"
     ]
   },
   {
@@ -11746,16 +11750,16 @@ window.DAILY_VOCAB_DB = [
     "en": "free / unrestricted",
     "root": "bebas",
     "root_cn": "自由；免于",
-    "example": "Kalau barangnya rusak, retur bebas ongkir.",
-    "example_cn": "如果商品坏了，退货免运费。",
+    "example": "Kamu bebas memilih kegiatan. Aku tidak akan memaksa kamu menyelam kalau kamu masih takut.",
+    "example_cn": "你可以自由选择活动。你还害怕的话，我不会强迫你潜水。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-10-05 18:00",
+    "last_seen": "2026-11-03 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -11764,13 +11768,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-18",
       "2026-09-29",
       "2026-10-01",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-03"
     ],
     "lesson_occurrences": [
       "2026-09-18 08:00",
       "2026-09-29 08:00",
       "2026-10-01 08:00",
-      "2026-10-05 18:00"
+      "2026-10-05 18:00",
+      "2026-11-03 18:00"
     ]
   },
   {
@@ -12253,28 +12259,32 @@ window.DAILY_VOCAB_DB = [
     "en": "talkative / fussy / nagging",
     "root": "cerewet",
     "root_cn": "话多；挑剔唠叨",
-    "example": "Dia baik, cuma kadang agak cerewet soal pekerjaan.",
-    "example_cn": "他人很好，只是有时在工作方面有点唠叨。",
+    "example": "Aku bukan mau cerewet, tetapi tulisan kata sandi yang menempel di pintu itu tidak terbaca.",
+    "example_cn": "我不是想挑剔，但贴在门上的密码字迹看不清。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-11-03 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-19",
       "2026-09-30",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-03"
     ],
     "lesson_occurrences": [
       "2026-09-19 08:00",
       "2026-09-30 08:00",
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-11-03 18:00"
     ]
   },
   {
@@ -16150,25 +16160,29 @@ window.DAILY_VOCAB_DB = [
     "en": "appetite; taste; preference",
     "root": "selera",
     "root_cn": "胃口；喜好",
-    "example": "Pagi ini saya tidak punya selera makan.",
-    "example_cn": "今天早上我没什么胃口。",
+    "example": "Minuman yang menyegarkan itu cocok dengan selera Rina. Ia suka rasa asam, bukan sekadar manis.",
+    "example_cn": "那杯清爽的饮料合莉娜的口味。她喜欢酸味，而不只是甜。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-10-26 08:00",
+    "last_seen": "2026-11-03 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-30",
-      "2026-10-26"
+      "2026-10-26",
+      "2026-11-03"
     ],
     "lesson_occurrences": [
       "2026-09-30 08:00",
-      "2026-10-26 08:00"
+      "2026-10-26 08:00",
+      "2026-11-03 18:00"
     ]
   },
   {
@@ -26967,27 +26981,29 @@ window.DAILY_VOCAB_DB = [
     "en": "most likely; in all likelihood",
     "root": "mungkin",
     "root_cn": "可能",
-    "example": "Jalan ke Puncak ditutup dari tadi pagi; kemungkinan besar ada longsor lagi.",
-    "example_cn": "去 Puncak 的路从今天早上起就封了，很可能又发生了塌方。",
+    "example": "Kemungkinan besar, ia belum membalas pesanku karena sedang tidur. Aku tidak mau diam-diam masuk ke kamarnya.",
+    "example_cn": "他很可能因为正在睡觉，还没回我消息。我不想偷偷进他的房间。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-30 18:00",
-    "last_seen": "2026-11-01 08:00",
+    "last_seen": "2026-11-03 18:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-10-30",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-03"
     ],
     "lesson_occurrences": [
       "2026-10-30 18:00",
-      "2026-11-01 08:00"
+      "2026-11-01 08:00",
+      "2026-11-03 18:00"
     ]
   },
   {
@@ -28197,23 +28213,26 @@ window.DAILY_VOCAB_DB = [
     "en": "flat; level",
     "root": "datar",
     "root_cn": "平坦",
-    "example": "Letakkan botol di permukaan datar sebelum kamu nyalakan lampu untuk memotretnya.",
-    "example_cn": "开灯拍照前，先把瓶子放在平坦的表面上。",
+    "example": "Kami memilih tempat yang datar untuk duduk, jauh dari pagar yang hampir roboh.",
+    "example_cn": "我们选了一块平坦的地方坐下，离快要倒塌的围栏远远的。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-03 08:00",
-    "last_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-03"
     ],
     "lesson_occurrences": [
-      "2026-11-03 08:00"
+      "2026-11-03 08:00",
+      "2026-11-03 18:00"
     ]
   },
   {
@@ -28247,23 +28266,26 @@ window.DAILY_VOCAB_DB = [
     "en": "article",
     "root": "artikel",
     "root_cn": "文章",
-    "example": "Artikel itu punya alur yang jelas, jadi saya tidak perlu mikir terlalu lama untuk memahami isinya.",
-    "example_cn": "那篇文章脉络清楚，所以我不用想太久就能理解内容。",
+    "example": "Artikel itu membahas cara menjaga pikiran tetap tenang setelah bencana alam.",
+    "example_cn": "那篇文章讨论自然灾害后如何保持心态平稳。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-03 08:00",
-    "last_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-03 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-03"
     ],
     "lesson_occurrences": [
-      "2026-11-03 08:00"
+      "2026-11-03 08:00",
+      "2026-11-03 18:00"
     ]
   },
   {
@@ -28314,6 +28336,82 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-03 08:00"
+    ]
+  },
+  {
+    "word": "kasur",
+    "cn": "床垫",
+    "en": "mattress",
+    "root": "kasur",
+    "root_cn": "床垫",
+    "example": "Kasur itu bersih, tetapi lantai di dekatnya masih berantakan. Aku terkejut karena kamar belum siap.",
+    "example_cn": "床垫是干净的，但旁边的地板仍一团乱。房间还没准备好，让我很惊讶。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 18:00",
+    "last_seen": "2026-11-03 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 18:00"
+    ]
+  },
+  {
+    "word": "berbincang-bincang",
+    "cn": "聊天；交谈",
+    "en": "chat; converse",
+    "root": "bincang",
+    "root_cn": "谈；商谈",
+    "example": "Kami berbincang-bincang tentang film fantasi sambil berendam di kolam air hangat.",
+    "example_cn": "我们一边泡温水池，一边聊奇幻电影。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 18:00",
+    "last_seen": "2026-11-03 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 18:00"
+    ]
+  },
+  {
+    "word": "mengecewakan",
+    "cn": "令人失望；使人失望",
+    "en": "disappoint; disappointing",
+    "root": "kecewa",
+    "root_cn": "失望",
+    "example": "Pelayanan hotel itu mengecewakan. Petugas mengetahui keadaan kamarnya, tetapi tetap menerima tamu.",
+    "example_cn": "那家旅馆的服务令人失望。工作人员明知房间的状况，却仍接待客人。",
+    "categories": [
+      "每日学习",
+      "18:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-03 18:00",
+    "last_seen": "2026-11-03 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-03"
+    ],
+    "lesson_occurrences": [
+      "2026-11-03 18:00"
     ]
   }
 ];

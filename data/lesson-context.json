@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-03",
-    "session": "pm",
-    "time": "18:00",
-    "day": 74
+    "date": "2026-11-04",
+    "session": "am",
+    "time": "08:00",
+    "day": 75
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-03T09:45:57.079Z",
-    "lesson_watermark": "2026-11-03 08:00",
+    "runtime_generated_at": "2026-11-03T10:35:28.028Z",
+    "lesson_watermark": "2026-11-03 18:00",
     "index_updated": "2026-11-03",
-    "runtime_hash": "41d9f3d3e664a0361936f0b5a87705161967619af2ec35f822ab9d114018f090",
-    "index_hash": "9bd08e180ec70b9b8491f41b22c0ec3eaf45324c4c2a267efdfac1b6f9dea315",
+    "runtime_hash": "3a87f8b4c0e86ba90ce280be57c68091c283d18b2da78942d0e4f75d8a3b6cf9",
+    "index_hash": "6e736156a0377abfb0631243a024076e3f8a41e7b45b630e5bf8124439ad52a8",
     "rules_hash": "dbc1907450ec8585c862fde829f53d78d655ffd5385a5a4160e50f1bfc9f08fb"
   },
   "schema": {
@@ -59,10 +59,6 @@
         "来自"
       ],
       [
-        "kasur",
-        "床垫/床"
-      ],
-      [
         "berbelanja",
         "购物"
       ],
@@ -93,10 +89,6 @@
       [
         "ember",
         "桶"
-      ],
-      [
-        "berbincang-bincang",
-        "聊天"
       ],
       [
         "kemeja",
@@ -149,10 +141,6 @@
       [
         "mengasyikan",
         "有趣、让人沉浸"
-      ],
-      [
-        "mengecewakan",
-        "令人失望"
       ],
       [
         "menegangkan",
@@ -689,6 +677,18 @@
       [
         "keramat",
         "神圣/灵验的"
+      ],
+      [
+        "angker",
+        "阴森/闹鬼的"
+      ],
+      [
+        "megah",
+        "宏伟"
+      ],
+      [
+        "kokoh",
+        "坚固"
       ],
       [
         "menyebalkan",
@@ -1615,16 +1615,6 @@
         "中心",
         "pusat",
         "中心"
-      ],
-      [
-        "akibat",
-        2,
-        0,
-        "",
-        "2026-10-15T13:36:59.199Z",
-        "后果",
-        "akibat",
-        "后果；结果"
       ],
       [
         "menawarkan",
@@ -2897,104 +2887,14 @@
         "宽慰；轻松"
       ],
       [
-        "periode",
-        3,
+        "lepas",
+        2,
         0,
         "",
-        "2026-11-03T02:12:50.408Z",
-        "时期；一段时间",
-        "periode",
-        "时期"
-      ],
-      [
-        "penggunaan",
-        3,
-        0,
-        "",
-        "2026-11-03T02:12:44.356Z",
-        "使用；使用情况",
-        "guna",
-        "用处；使用"
-      ],
-      [
-        "nasib",
-        3,
-        0,
-        "",
-        "2026-11-03T02:12:39.614Z",
-        "命运；处境；运气",
-        "nasib",
-        "命运；处境"
-      ],
-      [
-        "rabu",
-        3,
-        0,
-        "",
-        "2026-11-03T02:12:53.204Z",
-        "星期三",
-        "rabu",
-        "星期三"
-      ],
-      [
-        "menderita",
-        3,
-        0,
-        "",
-        "2026-11-03T02:12:33.682Z",
-        "患有；遭受痛苦",
-        "derita",
-        "痛苦；苦难"
-      ],
-      [
-        "datar",
-        3,
-        0,
-        "",
-        "2026-11-03T02:12:31.972Z",
-        "平坦的；平平的",
-        "datar",
-        "平坦"
-      ],
-      [
-        "modal",
-        3,
-        0,
-        "",
-        "2026-11-03T02:12:37.710Z",
-        "资金；本钱；资本",
-        "modal",
-        "本钱；资本"
-      ],
-      [
-        "artikel",
-        3,
-        0,
-        "",
-        "2026-11-03T02:12:30.278Z",
-        "文章",
-        "artikel",
-        "文章"
-      ],
-      [
-        "ucap",
-        3,
-        0,
-        "",
-        "2026-11-03T02:12:57.144Z",
-        "说；表达（常用于引语）",
-        "ucap",
-        "说；表达"
-      ],
-      [
-        "negara",
-        3,
-        0,
-        "",
-        "2026-11-03T02:12:40.973Z",
-        "国家",
-        "negara",
-        "国家"
+        "2026-10-22T15:34:24.568Z",
+        "取下；脱下；松开；释放",
+        "lepas",
+        "松开；脱离"
       ]
     ],
     "focus": [
@@ -3271,58 +3171,10 @@
         "sebal",
         730,
         "fuzzy"
-      ],
-      [
-        "mengecewakan",
-        "通用",
-        "ngecewain",
-        "kecewa",
-        731,
-        "fuzzy"
       ]
     ]
   },
   "history_7d": [
-    {
-      "date": "2026-10-27",
-      "session": "am",
-      "review_core": [
-        "kebentur",
-        "menyembunyikan",
-        "ketuker",
-        "majuin",
-        "mundurin"
-      ],
-      "new_words": [
-        "mencampur",
-        "penulis",
-        "usia",
-        "alami",
-        "terkadang",
-        "antara",
-        "hukum",
-        "melalui",
-        "gua",
-        "terdapat"
-      ]
-    },
-    {
-      "date": "2026-10-27",
-      "session": "pm",
-      "review_core": [
-        "mengakhiri",
-        "mengenali",
-        "teratur",
-        "ngatur",
-        "ngebut",
-        "nggak tega"
-      ],
-      "new_words": [
-        "kurir",
-        "lancar",
-        "tanggung jawab"
-      ]
-    },
     {
       "date": "2026-10-28",
       "session": "am",
@@ -3582,105 +3434,40 @@
         "ucap",
         "negara"
       ]
+    },
+    {
+      "date": "2026-11-03",
+      "session": "pm",
+      "review_core": [
+        "bebas",
+        "cerewet",
+        "selera",
+        "kemungkinan besar",
+        "akibat"
+      ],
+      "new_words": [
+        "kasur",
+        "berbincang-bincang",
+        "mengecewakan"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-02",
+    "date": "2026-11-03",
     "new_words": [
-      "tangkap",
-      "akal",
-      "sebutan"
+      "kasur",
+      "berbincang-bincang",
+      "mengecewakan"
     ],
     "review_core": [
-      "nyinggung",
-      "sebel",
-      "kebablasan",
-      "nimpalin",
-      "kadang"
+      "bebas",
+      "cerewet",
+      "selera",
+      "kemungkinan besar",
+      "akibat"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-03",
-    "vocab": [
-      [
-        "periode",
-        "时期；一段时间",
-        "period",
-        "periode",
-        "时期"
-      ],
-      [
-        "penggunaan",
-        "使用；使用情况",
-        "use; usage",
-        "guna",
-        "用处；使用"
-      ],
-      [
-        "nasib",
-        "命运；处境；运气",
-        "fate; lot",
-        "nasib",
-        "命运；处境"
-      ],
-      [
-        "rabu",
-        "星期三",
-        "Wednesday",
-        "rabu",
-        "星期三"
-      ],
-      [
-        "menderita",
-        "患有；遭受痛苦",
-        "suffer from",
-        "derita",
-        "痛苦；苦难"
-      ],
-      [
-        "datar",
-        "平坦的；平平的",
-        "flat; level",
-        "datar",
-        "平坦"
-      ],
-      [
-        "modal",
-        "资金；本钱；资本",
-        "capital; starting funds",
-        "modal",
-        "本钱；资本"
-      ],
-      [
-        "artikel",
-        "文章",
-        "article",
-        "artikel",
-        "文章"
-      ],
-      [
-        "ucap",
-        "说；表达（常用于引语）",
-        "say; utter",
-        "ucap",
-        "说；表达"
-      ],
-      [
-        "negara",
-        "国家",
-        "country; state",
-        "negara",
-        "国家"
-      ]
-    ],
-    "review_vocab": [
-      "sebab",
-      "penyebab",
-      "nyusul",
-      "ngandelin",
-      "ngelarin"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
