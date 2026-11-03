@@ -33,7 +33,7 @@ function main(argv){
  // Review phase (2026-10-25, dormant until data/review-phase.json is switched on): shorter lessons and confirmed goals.
  const phase=RP.load(root),P=RP.on(phase,a.date),C=RP.counts(phase,a.date),G=RP.goals(phase,a.date,root);
  const amCycleCount=session==='am'?(P?Math.max(0,C.am_target-availNew):availNew<10?10-availNew:0):0;
- const pmCycle=session==='pm'&&(P||availNew<3);
+ const pmCycle=session==='pm'&&(P||availNew<C.pm_new[0]);
  const reviewCount=Number(a.count)||(P&&session==='pm'?Math.max(C.pm_review[0],Math.min(C.pm_review[1],C.pm_target-Math.min(availNew,C.pm_new[1])-2)):pmCycle?Math.max(4,Math.min(9,10-availNew-3)):5);
  const base={date:a.date,session,runtime,rotation:rules.review_rotation,reviewHistory:history,reviewCount,amVocab:names(am.vocab).filter(w=>!names(am.cycle_vocab).includes(w)),amReview:[...names(am.review_vocab),...names(am.cycle_vocab)]};
  const longHistory=readLongHistory(index,a.date,read);
