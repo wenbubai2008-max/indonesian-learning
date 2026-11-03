@@ -1,0 +1,349 @@
+{
+  "date": "2026-11-03",
+  "session": "am",
+  "time": "08:00",
+  "day": 74,
+  "title": "08:00 早课｜Mulai Usaha Roti Tanpa Membeli Semua Alat · 开始卖面包，不急着买齐设备",
+  "vocab": [
+    {
+      "word": "periode",
+      "display": "periode",
+      "audio_text": "periode",
+      "cn": "时期；一段时间",
+      "en": "period",
+      "root": "periode",
+      "root_cn": "时期",
+      "formation": "名词；常见搭配：periode percobaan（试用／试做期）、selama periode ini（在这段时期内）。表示有一定起止范围的时间，不等于一个具体时刻。",
+      "example": "Dalam periode percobaan ini, kami ingin melihat peluang usaha tanpa membeli banyak alat.",
+      "example_cn": "在这段试做期，我们想先看看生意的机会，不急着买很多设备。",
+      "synonym_note": "periode 强调一段时期；waktu 范围更广，既能指时间，也能指时刻。口语说法：日常可根据意思说 selama dua minggu ini（这两周内）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "penggunaan",
+      "display": "penggunaan",
+      "audio_text": "penggunaan",
+      "cn": "使用；使用情况",
+      "en": "use; usage",
+      "root": "guna",
+      "root_cn": "用处；使用",
+      "formation": "guna → menggunakan（使用）→ penggunaan（使用，名词）；常见搭配：penggunaan listrik、penggunaan air。使用者是 pengguna。",
+      "example": "Penggunaan tas yang ringan membuat perjalanan lebih nyaman.",
+      "example_cn": "使用轻便的包能让旅途更舒服。",
+      "synonym_note": "penggunaan 是名词，menggunakan 是动词：penggunaan listrik / menggunakan listrik。口语说法：menggunakan 常说 pakai；谈“用得多少”可说 berapa banyak yang dipakai。",
+      "is_oral_new": false
+    },
+    {
+      "word": "nasib",
+      "display": "nasib",
+      "audio_text": "nasib",
+      "cn": "命运；处境；运气",
+      "en": "fate; lot",
+      "root": "nasib",
+      "root_cn": "命运；处境",
+      "formation": "名词；nasib baik（好运）、nasib buruk（厄运）、mengubah nasib（改变命运）。要结合情境判断是长期处境还是一时运气。",
+      "example": "Saat curhat, Rani bilang ia ingin mengubah nasib dengan belajar memasak makanan yang lezat.",
+      "example_cn": "倾诉时，拉妮说她想通过学做美味的食物来改变自己的处境。",
+      "synonym_note": "nasib 常说人的命运或处境；keberuntungan 侧重幸运。说 nasib baik 时二者意思有重叠；nasib 不意味着人完全不能改变处境。",
+      "is_oral_new": false
+    },
+    {
+      "word": "rabu",
+      "display": "Rabu",
+      "audio_text": "Rabu",
+      "cn": "星期三",
+      "en": "Wednesday",
+      "root": "rabu",
+      "root_cn": "星期三",
+      "formation": "星期名称，书写时首字母大写：Rabu。hari Rabu（星期三）、setiap Rabu（每周三）、Rabu depan（下周三）。",
+      "example": "Hari Rabu, Nisa akan membandingkan karakter dua jenis tepung sebelum memilih salah satunya.",
+      "example_cn": "星期三，妮莎会比较两种面粉的特性，再从中选一种。",
+      "synonym_note": "Rabu 是星期三；Selasa 是星期二；Kamis 是星期四。口语说法：问“周三来吗？”可以说 Rabu datang, nggak? 正式邀请写 Apakah Anda bisa datang hari Rabu?",
+      "is_oral_new": false
+    },
+    {
+      "word": "menderita",
+      "display": "menderita",
+      "audio_text": "menderita",
+      "cn": "患有；遭受痛苦",
+      "en": "suffer from",
+      "root": "derita",
+      "root_cn": "痛苦；苦难",
+      "formation": "meN- + derita → menderita，d 保留；常见搭配：menderita sakit kepala（患头痛）、menderita kerugian（蒙受损失）。不用于普通的“吃不了某食物”。",
+      "example": "Ibu menderita sakit kepala, jadi ia belum mau menghirup aroma kopi yang wangi itu.",
+      "example_cn": "妈妈头痛，所以暂时不想闻那杯香咖啡的气味。",
+      "synonym_note": "menderita sakit kepala 较正式，sakit kepala 是日常表达；menderita 也能说遭受损失，不仅用于疾病。口语说法：说身体不舒服时常直接说 Aku lagi sakit kepala.（我这会儿头痛。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "datar",
+      "display": "datar",
+      "audio_text": "datar",
+      "cn": "平坦的；平平的",
+      "en": "flat; level",
+      "root": "datar",
+      "root_cn": "平坦",
+      "formation": "形容词；permukaan datar（平坦表面）、tanah datar（平地）、nada datar（平淡的语调）。根据修饰对象判断是地形还是声音。",
+      "example": "Letakkan botol di permukaan datar sebelum kamu nyalakan lampu untuk memotretnya.",
+      "example_cn": "开灯拍照前，先把瓶子放在平坦的表面上。",
+      "synonym_note": "datar 指没有明显高低起伏；rata 也可以形容平整，两者在 permukaan datar / rata 中能重叠。rata 还可指均匀，不能把所有 rata 都换成 datar。",
+      "is_oral_new": false
+    },
+    {
+      "word": "modal",
+      "display": "modal",
+      "audio_text": "modal",
+      "cn": "资金；本钱；资本",
+      "en": "capital; starting funds",
+      "root": "modal",
+      "root_cn": "本钱；资本",
+      "formation": "名词；modal awal（启动资金）、modal usaha（经营资金）、kekurangan modal（缺资金）。也可比喻有助于做事的条件，如 pengalaman adalah modal（经验是资本）。",
+      "example": "Nisa tidak mau menghabiskan modal untuk bahan instan sebelum tahu apa yang disukai pembeli.",
+      "example_cn": "妮莎还不知道顾客喜欢什么，不想把本钱花在即食原料上。",
+      "synonym_note": "modal 是做生意投入的本钱；biaya 是某项活动所需的费用。modal 可以用来支付 biaya，二者不是同一个概念。口语说法：Modalnya berapa?（本钱要多少？）",
+      "is_oral_new": false
+    },
+    {
+      "word": "artikel",
+      "display": "artikel",
+      "audio_text": "artikel",
+      "cn": "文章",
+      "en": "article",
+      "root": "artikel",
+      "root_cn": "文章",
+      "formation": "名词；membaca artikel（读文章）、menulis artikel（写文章）、artikel tentang …（关于……的文章）。不是所有 artikel 都是新闻报道。",
+      "example": "Artikel itu punya alur yang jelas, jadi saya tidak perlu mikir terlalu lama untuk memahami isinya.",
+      "example_cn": "那篇文章脉络清楚，所以我不用想太久就能理解内容。",
+      "synonym_note": "artikel 是文章的体裁或成篇文字；berita 是新闻消息。新闻可写成文章，但介绍烘焙方法的 artikel 不一定是 berita。口语说法：mikir = berpikir，朋友聊天可用。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ucap",
+      "display": "ucap",
+      "audio_text": "ucap",
+      "cn": "说；表达（常用于引语）",
+      "en": "say; utter",
+      "root": "ucap",
+      "root_cn": "说；表达",
+      "formation": "词根；引语后可用 ucap + 说话者，如 “Terima kasih,” ucap Nisa.；派生：mengucapkan（说出；表达）、ucapan（话语；祝福）。ucap 在此是叙述引语的用法，不是任意句子里都直接替换 berkata。",
+      "example": "“Mulai sedikit dulu, yang penting tahu biaya dan selera pembeli,” ucap kakaknya.",
+      "example_cn": "姐姐说：“先少量做，重要的是弄清成本和顾客的口味。”",
+      "synonym_note": "ucap 多见于叙述中的引语归属；kata 也可用于引语后。口语说法：日常转述常用 bilang，如 Nisa bilang rotinya enak.（妮莎说面包好吃。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "negara",
+      "display": "negara",
+      "audio_text": "negara",
+      "cn": "国家",
+      "en": "country; state",
+      "root": "negara",
+      "root_cn": "国家",
+      "formation": "名词；negara asal（来源国；祖国）、luar negeri（国外）、antarnegara（国家之间）。negara 和 negeri 在一些表达中接近，但固定搭配须分别学。",
+      "example": "Di beberapa negara, pendidikan memasak juga membahas cara mengelola usaha kecil.",
+      "example_cn": "在一些国家，烹饪教育也会讲如何经营小生意。",
+      "synonym_note": "negara 指国家；kota 指城市；bangsa 常指民族或国民整体。口语说法：问“你是哪国人？”常说 Kamu dari negara mana?；问城市则用 kota mana。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "sebab",
+    "penyebab",
+    "nyusul",
+    "ngandelin",
+    "ngelarin"
+  ],
+  "sentences": [
+    {
+      "text": "Kalau modal masih terbatas, jangan hanya ngandelin nasib baik.",
+      "cn": "如果本钱还有限，就别只指望好运。（ngandelin = mengandalkan，朋友之间的口语）"
+    },
+    {
+      "text": "Aku ngelarin daftar belanja dulu, nanti nyusul ke rumahmu hari Rabu.",
+      "cn": "我先把购物清单弄完，星期三晚点再去你家找你。（ngelarin = menyelesaikan，nyusul = menyusul；朋友之间的口语）"
+    },
+    {
+      "text": "Penggunaan tepung yang terlalu banyak bisa menjadi penyebab adonan sulit dibentuk.",
+      "cn": "面粉用得太多可能是面团难以塑形的原因。"
+    },
+    {
+      "text": "Ia membaca artikel dari negara lain tentang orang yang menderita kerugian karena salah menghitung biaya.",
+      "cn": "她读了一篇来自另一个国家的文章，讲有人因算错费用而蒙受损失。"
+    },
+    {
+      "text": "“Letakkan loyang di tempat yang datar,” ucap kakaknya, sebab adonannya bisa tumpah kalau miring.",
+      "cn": "姐姐说：“把烤盘放在平坦的地方。”因为倾斜的话，面糊可能会洒出来。"
+    }
+  ],
+  "reading": {
+    "text": "Selasa sore, Nisa membaca artikel tentang membuka usaha makanan dari rumah. Ia ingin menjual roti, tetapi modalnya terbatas. Ia sempat ingin mengangsur oven baru. Setelah menghitung biaya, ia memilih memakai oven milik kakaknya selama periode percobaan dua minggu. Mereka mencatat penggunaan listrik agar pembagian biaya jelas. Nisa juga membandingkan dua pemasok tepung; harga yang lebih murah ternyata belum tentu hemat karena jarak tempuhnya jauh. Hari Rabu, Nisa akan membuat beberapa roti untuk dicoba tetangga. Ia tidak menunggu semuanya sempurna. “Mulai sedikit dulu, yang penting tahu biaya dan selera pembeli,” ucap kakaknya. Nisa pun menulis daftar belanja.",
+    "cn": "星期二下午，妮莎读了一篇关于在家开食品生意的文章。她想卖面包，但本钱有限。她原本想分期买一台新烤箱。算过费用后，她决定在两周试做期内先用姐姐的烤箱。她们记下用电情况，好把费用分清楚。妮莎还比较了两家面粉供应商；价格更低的不一定更省，因为路程远。星期三，妮莎会做一些面包给邻居试吃。她不等一切都完美才开始。姐姐说：“先少量做，重要的是弄清成本和顾客的口味。”于是，妮莎写了一张购物清单。"
+  },
+  "quiz": [
+    {
+      "question": "朋友问：“Kamu ikut berangkat sekarang?” 你还要做完一件事，打算让他们先走。选最自然的一句：“Kalian duluan aja, aku ____ nanti.”",
+      "options": [
+        "nyusul",
+        "ngandelin",
+        "ngelarin",
+        "nunggu"
+      ],
+      "answer_index": 0,
+      "answer": "nyusul",
+      "explain": "nyusul 是稍后跟上、晚点过去；这里让别人先走，自己随后到。ngandelin 是依靠，ngelarin 是弄完，通常要有对象；nunggu 是等，不能表达自己随后过去。"
+    },
+    {
+      "question": "“Kami belum tahu kenapa adonan ini gagal. Kami sedang mencari ____.” 选最自然的一项。",
+      "options": [
+        "menyebabkan",
+        "penyebabnya",
+        "disebabkan",
+        "karena"
+      ],
+      "answer_index": 1,
+      "answer": "penyebabnya",
+      "explain": "mencari 后面需要寻找的对象，penyebabnya（它的成因）是名词。menyebabkan 是“导致”，disebabkan 是“被导致”，karena 是“因为”，都不能在这里直接作为 mencari 的对象。sebab 也可作原因名词，并不禁止说 mencari sebab kegagalan。"
+    },
+    {
+      "question": "朋友借给你五十万盾，让你买原料开始试卖点心。这笔投入还不是销售收入或利润。你说：“Uang ini akan jadi ____ usaha saya.”",
+      "options": [
+        "biaya",
+        "harga",
+        "modal",
+        "untung"
+      ],
+      "answer_index": 2,
+      "answer": "modal",
+      "explain": "投入经营的本钱用 modal usaha。biaya 是费用，通常说 biaya untuk membeli bahan；harga 是商品价格；untung 是扣除费用后的利润，这时尚未卖出商品。"
+    }
+  ],
+  "output": {
+    "task": "换到你自己的生活：你想试着做一门小生意。用 modal 和 penggunaan，说清你会先借用什么、怎样分担费用，并说明原因；至少2–3句，不照抄面包故事。",
+    "reference_answer": "Aku mau jual kopi, tapi modal masih sedikit. Aku pinjam meja adikku dulu. Kami catat penggunaan air dan listrik supaya biayanya jelas. Aku nggak mau cuma ngandelin nasib baik.",
+    "reference_cn": "我想卖咖啡，不过本钱还少。我先借弟弟的桌子用。我们记下水电使用情况，好把费用分清楚。我不想只靠好运气。"
+  },
+  "review": [
+    "3秒主动提取：看中文说印尼语——时期、使用、命运、星期三、患有或遭受、平坦的、本钱、文章、说（引语后）、国家。先说答案，再用其中一个词说一句自己的话；卡住才回看词卡。",
+    "同词根与易混：sebab 可以作“因为”也能作“原因”名词；penyebab 指导致结果的因素。说出 Mencari penyebabnya.，再用 sebab 解释一个原因。modal 是投入的本钱，biaya 是某项费用；不要混为一谈。",
+    "薄弱词应用：不看例句，向朋友说明你要先 ngelarin 什么、稍后何时 nyusul；再说一件你不想只 ngandelin 运气的事。复述故事时补上 periode percobaan、penggunaan listrik，并用 ucap 引出姐姐的一句话。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "modal",
+      "penggunaan",
+      "nyusul"
+    ],
+    "patterns": [
+      {
+        "pattern": "Kalau …, jangan hanya …",
+        "cn": "如果……，就不要只……",
+        "example": "Kalau modal masih terbatas, jangan hanya ngandelin nasib baik.",
+        "example_cn": "如果本钱还有限，就别只指望好运。"
+      },
+      {
+        "pattern": "… agar … jelas.",
+        "cn": "……，以便把……弄清楚。",
+        "example": "Mereka mencatat penggunaan listrik agar pembagian biaya jelas.",
+        "example_cn": "她们记下用电情况，好把费用分清楚。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "id": "periode",
+        "cn": "时期；一段时间"
+      },
+      {
+        "id": "penggunaan",
+        "cn": "使用；使用情况"
+      },
+      {
+        "id": "nasib",
+        "cn": "命运；处境；运气"
+      },
+      {
+        "id": "rabu",
+        "cn": "星期三"
+      },
+      {
+        "id": "menderita",
+        "cn": "患有；遭受痛苦"
+      },
+      {
+        "id": "datar",
+        "cn": "平坦的；平平的"
+      },
+      {
+        "id": "modal",
+        "cn": "资金；本钱；资本"
+      },
+      {
+        "id": "artikel",
+        "cn": "文章"
+      },
+      {
+        "id": "ucap",
+        "cn": "说；表达（常用于引语）"
+      },
+      {
+        "id": "negara",
+        "cn": "国家"
+      }
+    ],
+    "frames": [
+      "Kalau modal masih terbatas, …",
+      "Mereka mencatat … agar … jelas."
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "sebab",
+            "cn": "因为；原因"
+          },
+          {
+            "id": "penyebab",
+            "cn": "致因；导致结果的因素"
+          }
+        ],
+        "note": "sebab 可连接原因，也可作原因名词；penyebab 是名词，常用 mencari penyebabnya。"
+      },
+      {
+        "items": [
+          {
+            "id": "modal",
+            "cn": "投入的本钱"
+          },
+          {
+            "id": "biaya",
+            "cn": "所需的费用"
+          }
+        ],
+        "note": "本钱可以用来支付费用：modal usaha / biaya listrik。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "nyusul",
+        "usage": "别人先走，自己随后过去。",
+        "examples": [
+          {
+            "id": "Aku ngelarin daftar belanja dulu, nanti nyusul ke rumahmu hari Rabu.",
+            "cn": "我先把购物清单弄完，星期三晚点再去你家找你。"
+          }
+        ]
+      },
+      {
+        "word": "ngandelin",
+        "usage": "朋友间说依靠、指望，正式形 mengandalkan。",
+        "examples": [
+          {
+            "id": "Kalau modal masih terbatas, jangan hanya ngandelin nasib baik.",
+            "cn": "如果本钱还有限，就别只指望好运。"
+          }
+        ]
+      }
+    ]
+  }
+}
