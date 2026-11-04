@@ -56,7 +56,8 @@
     "runtime_is_derived_not_source_of_truth": true,
     "focus_pool": "focus_pool是小型跨模块重点弱词窗口，供自动训练、快速练习、18:00复习和泛读自然复现使用；模块不得自行重算完整词库",
     "listening_focus_pool": "听觉弱项覆盖层：只包含已正式教过的词；可包含 status=mastered 的词，但只表示听觉维度需要加强，不改变 mastered。客户端快速练习、弱项强化、自动训练可读取；课程核心复习资格仍以 review_pool/focus_pool 为准。",
-    "new_word_split": "learning-runtime额外暴露 new_pool_dont、new_pool_fuzzy、new_pool_unclassified，以及 oral_new_pool_dont、oral_new_pool_fuzzy；new_pool仍保留为兼容用合法总池。课程按时段使用分池，资格仍受M∩A−D与handoff约束。"
+    "new_word_split": "learning-runtime额外暴露 new_pool_dont、new_pool_fuzzy、new_pool_unclassified，以及 oral_new_pool_dont、oral_new_pool_fuzzy；new_pool仍保留为兼容用合法总池。课程按时段使用分池，资格仍受M∩A−D与handoff约束。",
+    "unfamiliar_lesson_pool": "第二词库阶段，将已同步到weakness且仍active、标记manual_unknown或seed_unfamiliar、尚未正式教过、不在977或已选BIPA第二库、未排除训练、具有中文释义的阅读陌生词，作为用户优先新词补充来源放到runtime.new_pool/new_pool_dont最前，并用runtime.unfamiliar_new_pool单独列明。不改变977主库和BIPA第二库原始数量，也不改变new/review配额。正式教过立即退出补充新词池、进入A∩D复习池；mastered/排除/未同步的词不进入。"
   },
   "am_contract": {
     "new_words": "恰好10个真正新词。优先且在数量充足时全部从runtime.new_pool_dont选择；只有在排除跨日重复后合法dont不足10个时，才允许从runtime.new_pool_fuzzy补足。不得主动用fuzzy替代仍可用的dont；不得使用new_pool_unclassified。transition阶段仍遵守977余量优先与第二库补足规则。",
@@ -73,7 +74,8 @@
     "root_schema": "课程根级必须同时包含 vocab、review_vocab、sentences、reading、quiz、output、review；vocab=10、sentences=5、quiz=3、review=3；reading含text/cn；output含task/reference_answer/reference_cn。",
     "cross_day_dedup": "若前一天PM完整，则其new_words不得再次进入当天AM vocab；且前一天PM new_words若仍存在于runtime.new_pool，视为runtime未同步并停止生成。",
     "review_rotation": "每次读取最近7天index完成的早晚课核心复习历史；前一晚PM重点次晨避免再次核心复习（新真实答错例外）；低曝光、到期词优先。",
-    "lesson_focus": "从2026-11-05起当天新词不少于3个时，今天的重点3词必须全部来自当天AM首次正式学习的vocab，不得使用review_vocab，即使昨晚真实答错也不例外；新词少于3个时，先放全部剩余新词，再选cycle_vocab；仍不足才用review_vocab。仅改变lesson_focus标记，不改变复习词配额或现有弱项排序。"
+    "lesson_focus": "从2026-11-05起当天新词不少于3个时，今天的重点3词必须全部来自当天AM首次正式学习的vocab，不得使用review_vocab，即使昨晚真实答错也不例外；新词少于3个时，先放全部剩余新词，再选cycle_vocab；仍不足才用review_vocab。仅改变lesson_focus标记，不改变复习词配额或现有弱项排序。",
+    "unknown_priority": "2026-11-05起，当前第二词库阶段若runtime.unfamiliar_new_pool非空，已人工标记、尚未教过的陌生词作为合法dont-first新词进入原有10个vocab，不额外增加词卡；仍须属于runtime.new_pool_dont，质量与正式课程其他新词相同。"
   },
   "pm_contract": {
     "scheduled_time": "18:00",
@@ -150,7 +152,8 @@
       "after_taught": "一旦正式教过即退出新词逻辑，后续统一由review_pool/focus_pool按真实答错、不会、模糊等信号排序"
     },
     "rewrite": "必须有3-4个主动改写/中译印/主动回忆任务；课程根字段必须命名为 rewrite，结构为 rewrite:[{task,reference_answer,reference_cn},...]，可额外保留type；禁止使用根字段 rewrite_application。",
-    "review_rotation": "4-6复习由合法focus与低曝光到期词混合；遵循根级review_rotation。2026-10-08起application计为主动曝光（exposure_ledger）。"
+    "review_rotation": "4-6复习由合法focus与低曝光到期词混合；遵循根级review_rotation。2026-10-08起application计为主动曝光（exposure_ledger）。",
+    "unknown_priority": "2026-11-05起，当前第二词库阶段若runtime.unfamiliar_new_pool非空，优先将其作为合法dont新词纳入晚课固定5个new名额（早课当日已教不得再选）；原有4-6复习、2-3应用不变。已正式学过的陌生词留在review_pool按真实答错和冷却复习。"
   },
   "rules": [
     "K不进入新词、重点复习或PM应用复现核心词",
