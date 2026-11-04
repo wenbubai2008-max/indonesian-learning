@@ -1,0 +1,390 @@
+{
+  "date": "2026-11-04",
+  "session": "am",
+  "time": "08:00",
+  "day": 75,
+  "title": "08:00 早课｜Belanja Seperlunya untuk Kamar Baru · 为新房间买够用的东西",
+  "vocab": [
+    {
+      "word": "pers",
+      "display": "pers",
+      "audio_text": "pers",
+      "cn": "媒体；新闻界",
+      "en": "the press",
+      "root": "pers",
+      "root_cn": "新闻界；媒体",
+      "formation": "外来名词，常指作为整体的新闻界。搭配：kebebasan pers（新闻自由）、konferensi pers（记者会）、anggota pers（新闻从业者）。不是某一篇报道。",
+      "example": "Dalam konferensi pers itu, panitia menegaskan bahwa acara akan tetap berjalan meski ada perubahan jadwal.",
+      "example_cn": "在那场记者会上，主办方强调，虽然时间有变，活动仍会进行。",
+      "synonym_note": "pers 指新闻界或媒体整体；berita 是新闻消息；wartawan 是记者。口语说法：日常谈信息来源常直接说 dari berita（从新闻里），并非所有情境都换成 pers。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berasal dari",
+      "display": "berasal dari",
+      "audio_text": "berasal dari",
+      "cn": "来自；起源于",
+      "en": "come from; originate from",
+      "root": "asal",
+      "root_cn": "来源；起点",
+      "formation": "ber- + asal → berasal；dari 引出来源。搭配：berasal dari Bandung、berasal dari keluarga besar、berasal dari bahan alami。",
+      "example": "Meja yang ramping itu berasal dari rumah lama Ibu. Bentuknya cocok dengan nuansa kamar baru kami.",
+      "example_cn": "那张纤细的桌子来自妈妈的旧家。它的造型与我们新房间的氛围很搭。",
+      "synonym_note": "berasal dari 强调来源；datang dari 常指从某地过来，两者介绍籍贯时有时重叠。口语说法：Aku dari Bandung.；需要明确来源时说 Aku berasal dari Bandung.。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berbelanja",
+      "display": "berbelanja",
+      "audio_text": "berbelanja",
+      "cn": "购物；买东西",
+      "en": "shop; go shopping",
+      "root": "belanja",
+      "root_cn": "购物；购买所需物品",
+      "formation": "ber- + belanja → berbelanja。搭配：berbelanja di pasar、berbelanja kebutuhan rumah、berbelanja sesuai anggaran。",
+      "example": "Kami berbelanja setelah mencatat pemasukan bulan ini. Toko itu juga menyediakan barang rumah tangga dengan harga yang jelas.",
+      "example_cn": "我们记下这个月的收入后才去购物。那家店也提供价格标明的家居用品。",
+      "synonym_note": "berbelanja 指购物活动；membeli 强调买某件东西：membeli sapu。口语说法：belanja，如 Aku mau belanja dulu.（我先去买点东西。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "suka menolong",
+      "display": "suka menolong",
+      "audio_text": "suka menolong",
+      "cn": "乐于助人",
+      "en": "like helping; helpful",
+      "root": "tolong",
+      "root_cn": "帮助；请",
+      "formation": "suka + menolong；menolong = meN- + tolong，t 脱落。搭配：orang yang suka menolong、suka menolong teman、menolong tanpa diminta。",
+      "example": "Arif suka menolong calon penghuni baru. Ia berjanji akan menunjukkan arah ke toko terdekat.",
+      "example_cn": "阿里夫乐于帮助准备入住的人。他答应指一下去最近商店的方向。",
+      "synonym_note": "suka menolong 表示乐于帮助人的倾向；sekali menolong 只说明帮过一次，不足以描述一个人的长期性格。口语说法：suka bantu orang（爱帮人），正式叙述可用 suka menolong。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyapu",
+      "display": "menyapu",
+      "audio_text": "menyapu",
+      "cn": "扫；扫地",
+      "en": "sweep",
+      "root": "sapu",
+      "root_cn": "扫帚；扫",
+      "formation": "meN- + sapu → menyapu，s 脱落，前缀呈 meny-。搭配：menyapu lantai、menyapu halaman、menyapu debu。",
+      "example": "Rina menyapu lantai sebelum menaruh kasur. Setelah debunya bersih, ia lega bisa beristirahat di kamar itu.",
+      "example_cn": "莉娜先扫地，再放床垫。灰尘清理干净后，她终于能在这个房间里休息，松了口气。",
+      "synonym_note": "menyapu 是扫地的动作；sapu 可指扫帚，也能在指令中表示“扫”：Sapu lantainya dulu.。口语说法：nyapu；正式写作和叙述用 menyapu。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sapu",
+      "display": "sapu",
+      "audio_text": "sapu",
+      "cn": "扫帚；扫（指令用法）",
+      "en": "broom; sweep",
+      "root": "sapu",
+      "root_cn": "扫帚；扫",
+      "formation": "基本词。搭配：sapu lantai（扫帚／扫地，依句法判断）、gagang sapu（扫帚柄）、sapu yang baru（新扫帚）。派生 menyapu 表示扫地。",
+      "example": "Sapu ini punya gagang yang panjang. Pantas saja Rina bisa membersihkan sudut itu tanpa banyak membungkuk.",
+      "example_cn": "这把扫帚的柄很长。难怪莉娜清理那个角落不用太弯腰。",
+      "synonym_note": "sapu 是工具或祈使形式；menyapu 是带前缀的动作词。例：Saya membeli sapu. / Saya menyapu lantai.。口语说法：工具仍叫 sapu，动作常说 nyapu。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ember",
+      "display": "ember",
+      "audio_text": "ember",
+      "cn": "桶；水桶",
+      "en": "bucket",
+      "root": "ember",
+      "root_cn": "桶",
+      "formation": "基本名词。搭配：ember berisi air（装水的桶）、mengisi ember（装满桶）、satu ember air（一桶水）。",
+      "example": "Ember itu nyaris jatuh ketika Rina membuka pintu. Arif segera memegangnya agar airnya tidak tumpah.",
+      "example_cn": "莉娜开门时，那个桶差点倒下。阿里夫马上扶住它，免得水洒出来。",
+      "synonym_note": "ember 是桶；botol 是瓶子；gelas 是杯子。口语说法：Ambilin ember, dong.（帮忙拿一下桶吧；ambilin = ambilkan），对熟人说。",
+      "is_oral_new": false
+    },
+    {
+      "word": "saking",
+      "display": "saking",
+      "audio_text": "saking",
+      "cn": "太……以至于；由于非常……",
+      "en": "so ... that; because of being so",
+      "root": "saking",
+      "root_cn": "由于太……",
+      "formation": "常用于口语，saking + 形容词／动词短语，接结果。搭配：saking capeknya、saking senangnya、saking sibuknya。常见 -nya 接在状态词后，不是固定接在 saking 后。",
+      "example": "Saking sibuknya, aku lupa cas HP. Aku harus ngepasin waktu belanja sama jadwal kerja, jadi nggak bisa lama-lama.",
+      "example_cn": "我忙得忘了给手机充电。我得把购物时间和工作安排对上，所以不能待太久。（cas = mengisi daya；HP = ponsel；ngepasin = menyesuaikan；nggak = tidak）",
+      "synonym_note": "saking 突出程度很高而带来的结果；karena 只是一般的“因为”，不一定有程度意味。口语说法：Saking capeknya, aku langsung tidur.（我太累了，一下就睡着了。）",
+      "is_oral_new": true
+    },
+    {
+      "word": "menyebalkan",
+      "display": "menyebalkan",
+      "audio_text": "menyebalkan",
+      "cn": "令人烦恼的；让人恼火的",
+      "en": "annoying; irritating",
+      "root": "sebal",
+      "root_cn": "烦；恼火",
+      "formation": "meN- + sebal + -kan → menyebalkan，s 脱落。搭配：suara yang menyebalkan、kebiasaan yang menyebalkan、situasinya menyebalkan。",
+      "example": "Suara dari kamar sebelah menyebalkan. Aku nyesel memilih kamar itu tanpa memeriksa suasananya lebih dulu.",
+      "example_cn": "隔壁房间的声音让人烦。我后悔选房前没先看看周围环境。（nyesel = menyesal）",
+      "synonym_note": "menyebalkan 描述让人恼火的人或事；merasa sebal 描述人的感受。mengecewakan 偏让期待落空，和“烦人”有重叠但不完全相同。口语说法：nyebelin，例如 Suaranya nyebelin.。",
+      "is_oral_new": true
+    },
+    {
+      "word": "kemeja",
+      "display": "kemeja",
+      "audio_text": "kemeja",
+      "cn": "衬衫",
+      "en": "shirt",
+      "root": "kemeja",
+      "root_cn": "衬衫",
+      "formation": "名词。搭配：kemeja lengan panjang（长袖衬衫）、kemeja putih（白衬衫）、memakai kemeja（穿衬衫）。",
+      "example": "Kemeja biru itu sesuai selera Rina. Untuk penampilan yang rapi, ia memilih ukuran yang pas, bukan hanya warna yang bagus.",
+      "example_cn": "那件蓝衬衫合莉娜的喜好。为了穿着整洁，她选择合身的尺码，而不只看颜色好不好看。",
+      "synonym_note": "kemeja 通常指带衣领、前面有纽扣的衬衫；baju 范围更广，可以泛指衣服。口语说法：Kemejanya cocok buat kamu.（这衬衫适合你；buat = untuk。）",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "kasur",
+    "selera",
+    "calon",
+    "cas",
+    "kaget"
+  ],
+  "sentences": [
+    {
+      "text": "Rina berasal dari Bandung dan baru pindah ke kamar sewaan; ia ingin memilih kemeja dan warna kamar sesuai seleranya.",
+      "cn": "莉娜来自万隆，刚搬进出租房；她想按自己的喜好挑衬衫和房间颜色。"
+    },
+    {
+      "text": "Sebelum berbelanja, Rina mencatat bahwa ia perlu sapu dan ember untuk membersihkan kamar.",
+      "cn": "去购物前，莉娜记下自己需要扫帚和水桶来清理房间。"
+    },
+    {
+      "text": "Arif suka menolong; ia membantu menyapu lantai supaya kasur bisa segera ditaruh di tempat yang bersih.",
+      "cn": "阿里夫乐于助人；他帮忙扫地，好把床垫尽快放到干净的地方。"
+    },
+    {
+      "text": "Saking capeknya, aku lupa cas HP; baterainya habis pas mau bayar, nyebelin banget.",
+      "cn": "我累得忘了给手机充电；正要付款时电池没电，烦死了。（cas = mengisi daya；HP = ponsel；pas = saat；nyebelin = menyebalkan）"
+    },
+    {
+      "text": "Rina membaca berita dari pers lokal tentang kenaikan harga, tetapi ia tetap membandingkan harga di toko sebelum membeli.",
+      "cn": "莉娜读了本地媒体关于涨价的报道，但买东西前仍会比较店里的价格。"
+    }
+  ],
+  "reading": {
+    "text": "Rina berasal dari Bandung dan baru pindah ke sebuah kamar sewaan. Sebelum berbelanja, ia memeriksa barang yang masih bisa dipakai. Kasurnya masih empuk, jadi ia hanya perlu sapu dan ember. Arif, teman yang suka menolong, ikut membersihkan kamar. Ia menyapu lantai sementara Rina mencatat kebutuhan lain. Di toko, Rina kaget karena harga beberapa barang naik. Ia memilih barang sesuai kebutuhan, bukan hanya selera. Saking sibuknya membandingkan harga, ia lupa bahwa baterai HP hampir habis. Keadaan itu menyebalkan, tetapi Arif membayar lebih dulu. Rina berjanji mengganti uangnya setelah pulang. Akhirnya, mereka pulang dengan barang yang diperlukan tanpa membeli kasur baru.",
+    "cn": "莉娜来自万隆，刚搬进一个出租房。去购物前，她先检查哪些东西还可以用。她的床垫还很软，所以只需要扫帚和水桶。乐于助人的朋友阿里夫来帮忙清理房间。他扫地，莉娜则记下其他需要的东西。到了店里，莉娜发现一些商品涨价，吃了一惊。她按实际需要选东西，而不只看个人喜好。她忙着比较价格，竟忘了手机快没电。这情况挺烦人，不过阿里夫先垫付了钱。莉娜答应回家后还钱。最后，两人带着需要的物品回家，没有买新床垫。"
+  },
+  "quiz": [
+    {
+      "question": "“Lantainya penuh debu. Rina sedang ____ lantai dengan alat yang baru dibelinya.” 哪项放进句子最自然？",
+      "options": [
+        "sapu",
+        "menyapu",
+        "disapu",
+        "penyapu"
+      ],
+      "answer_index": 1,
+      "answer": "menyapu",
+      "explain": "Rina 是主动做事的人，sedang 后接动作 menyapu。sapu 是工具名或指令形式；disapu 是被动，地板作主语时才说 Lantainya sedang disapu.；penyapu 可指扫地的人或工具，不能在这里表示正在扫地。"
+    },
+    {
+      "question": "朋友问：“Kamu pilih warna biru atau hijau?” 你说两种质量一样，自己更喜欢蓝色：“Biru aja, lebih sesuai ____ aku.”",
+      "options": [
+        "harga",
+        "ukuran",
+        "selera",
+        "rasa"
+      ],
+      "answer_index": 2,
+      "answer": "selera",
+      "explain": "这里表达人的颜色喜好，用 selera。harga 是价格、ukuran 是尺寸；rasa 多说味道、触感或感受，不能在这个句子里自然表达颜色偏好。"
+    },
+    {
+      "question": "朋友说：“Barangmu masih bagus. Kenapa mau beli lagi?” 你想解释昨天太忙，忘了先检查家里的东西。选最贴合情境的一句。",
+      "options": [
+        "Saking sibuknya, aku lupa cek barang di rumah.",
+        "Aku sudah cek barangnya, jadi yakin perlu beli lagi.",
+        "Barangnya rusak, makanya aku beli penggantinya.",
+        "Aku nggak suka warnanya, jadi mau cari yang lain."
+      ],
+      "answer_index": 0,
+      "answer": "Saking sibuknya, aku lupa cek barang di rumah.",
+      "explain": "saking sibuknya 引出忙到一定程度而导致的结果：忘记检查。其余三项都是能成立的生活解释，但分别说已经检查、物品坏了、或不喜欢颜色，均不符合题目指定的“昨天太忙，忘了检查”。"
+    }
+  ],
+  "output": {
+    "task": "换到你自己的真实生活：周末你准备买些日用品。用 berbelanja 和 menyebalkan，至少写3句，说明先检查什么、可能遇到什么烦人的情况、准备怎样处理；不要照抄莉娜的故事。",
+    "reference_answer": "Sebelum berbelanja, aku cek barang di dapur dulu. Antrean panjang itu menyebalkan, jadi aku pilih datang lebih pagi. Aku juga siapkan uang tunai supaya tetap bisa bayar kalau baterai HP habis.",
+    "reference_cn": "去购物前，我先看看厨房里的东西。排长队很烦，所以我选择早点去。我还会准备现金，手机没电时也能付款。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出本课10个新词；再提取床垫、喜好、候选／准……、充电、吃惊这5个复习词。卡住才回看，随后合上词卡再说一次。",
+    "同词根与易混：sapu 是扫帚或指令“扫”，menyapu 是扫地动作。selera 是人的喜好，rasa 是味道或感受；用一个具体颜色选择说明 selera，不只背中文。kasur 是床垫，tempat tidur 是床或睡觉的地方；empuk 说明柔软，不能替代物品名称。",
+    "主动应用：用 berbelanja 和 menyebalkan 说一次购物难题及处理办法；再用 saking …, aku … 解释一次太忙或太累带来的结果。用 calon 说一个准备成为某种身份的人，用 cas 说你会提前给什么设备充电；复述莉娜怎么避免重复买床垫。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "kasur",
+      "selera",
+      "berbelanja"
+    ],
+    "patterns": [
+      {
+        "pattern": "Sebelum …, aku … dulu.",
+        "cn": "……之前，我先……。",
+        "example": "Sebelum berbelanja, aku cek barang di dapur dulu.",
+        "example_cn": "去购物前，我先看看厨房里的东西。"
+      },
+      {
+        "pattern": "Saking …, aku …",
+        "cn": "太……，以至于我……。",
+        "example": "Saking sibuknya, aku lupa cas HP.",
+        "example_cn": "我忙得忘了给手机充电。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "媒体；新闻界",
+        "id": "pers"
+      },
+      {
+        "cn": "来自",
+        "id": "berasal dari"
+      },
+      {
+        "cn": "购物",
+        "id": "berbelanja"
+      },
+      {
+        "cn": "乐于助人",
+        "id": "suka menolong"
+      },
+      {
+        "cn": "扫地",
+        "id": "menyapu"
+      },
+      {
+        "cn": "扫帚",
+        "id": "sapu"
+      },
+      {
+        "cn": "桶",
+        "id": "ember"
+      },
+      {
+        "cn": "太……以至于",
+        "id": "saking"
+      },
+      {
+        "cn": "令人烦恼的",
+        "id": "menyebalkan"
+      },
+      {
+        "cn": "衬衫",
+        "id": "kemeja"
+      },
+      {
+        "cn": "床垫",
+        "id": "kasur"
+      },
+      {
+        "cn": "口味；喜好",
+        "id": "selera"
+      }
+    ],
+    "frames": [
+      "Sebelum …, aku … dulu.",
+      "Saking …, aku …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "sapu",
+            "cn": "扫帚；扫（指令）"
+          },
+          {
+            "id": "menyapu",
+            "cn": "扫地（动作）"
+          }
+        ],
+        "note": "我买扫帚：membeli sapu；我扫地：menyapu lantai。"
+      },
+      {
+        "items": [
+          {
+            "id": "selera",
+            "cn": "人的喜好"
+          },
+          {
+            "id": "rasa",
+            "cn": "味道；感受"
+          }
+        ],
+        "note": "颜色选择谈 selera；食物的咸甜谈 rasa。"
+      },
+      {
+        "items": [
+          {
+            "id": "kasur",
+            "cn": "床垫"
+          },
+          {
+            "id": "tempat tidur",
+            "cn": "床；睡觉的地方"
+          }
+        ],
+        "note": "kasur 是躺在上面的垫子，不是整个床架。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "berbelanja",
+        "usage": "说购物前的准备和应对。",
+        "examples": [
+          {
+            "id": "Sebelum berbelanja, aku cek barang di dapur dulu.",
+            "cn": "去购物前，我先看看厨房里的东西。"
+          }
+        ]
+      },
+      {
+        "word": "saking",
+        "usage": "先说程度高的状态，再接结果。",
+        "examples": [
+          {
+            "id": "Saking sibuknya, aku lupa cas HP.",
+            "cn": "我忙得忘了给手机充电。"
+          }
+        ]
+      },
+      {
+        "word": "calon",
+        "usage": "放在身份词前，表示准备成为该身份的人。",
+        "examples": [
+          {
+            "id": "Arif suka menolong calon penghuni baru.",
+            "cn": "阿里夫乐于帮助准备入住的人。"
+          }
+        ]
+      },
+      {
+        "word": "cas",
+        "usage": "朋友之间说给设备充电。",
+        "examples": [
+          {
+            "id": "Saking sibuknya, aku lupa cas HP.",
+            "cn": "我忙得忘了给手机充电。"
+          }
+        ]
+      }
+    ]
+  }
+}
