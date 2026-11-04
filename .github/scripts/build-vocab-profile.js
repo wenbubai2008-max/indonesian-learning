@@ -23,7 +23,7 @@ const primaryTaughtUnique=Number(runtime.stats&&runtime.stats.primary_taught_uni
 const primaryUnlearnedTotal=Number(runtime.stats&&runtime.stats.primary_unlearned_total||0);
 const primaryEligibleNewTotal=Number(runtime.stats&&runtime.stats.primary_new_pool_total_full||0);
 const secondaryEligibleNewTotal=Number(runtime.stats&&runtime.stats.secondary_new_pool_total_full||0);
-const activeMasterPool=runtime.active_master_pool==='secondary_bipa'?'secondary_bipa':'primary';
+const activeMasterPool=String(runtime.active_master_pool||'primary');
 if(!primaryMasterTotal||primaryTaughtUnique<0||primaryUnlearnedTotal<0||primaryTaughtUnique+primaryUnlearnedTotal!==primaryMasterTotal)throw new Error('Profile primary coverage mismatch');
 const primaryCoveragePercent=Math.round(primaryTaughtUnique/primaryMasterTotal*1000)/10;
 if(active!==Number(runtime.stats&&runtime.stats.review_pool_total_full||0))throw new Error(`Profile active mismatch: ${active} != runtime review ${runtime.stats&&runtime.stats.review_pool_total_full}`);
