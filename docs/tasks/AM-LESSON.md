@@ -42,6 +42,8 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
 
 ### 4.1 新词：恰好 10 个（复习循环时见 4.5）
 
+**2026-11-05 起阅读陌生词自动进新词卡**：第二词库阶段，已同步到云端的主动标记陌生词，若仍为 active、尚未正式教过、未排除且有中文释义，构建器会先放入 `runtime.unfamiliar_new_pool`，同时按合法 `dont` 放进 `runtime.new_pool_dont`。按原来10个新词名额和 dont-first 自动选，不单独再开一批词卡；必须写出可靠的中文释义、词根、常用搭配和例句，不可照搬用户初次划词时可能不准确的机器翻译。已正式学过的陌生词只从 `review_pool` 按原冷却规则复习，不得当作新词。未同步、已掌握或训练排除的陌生词不入课。977主库/第二库统计各自保持原口径。
+
 每个新词必须同时：属于 runtime.new_pool；属于 new_pool_dont 或 new_pool_fuzzy；不属于 new_pool_unclassified；不是 mastered；不是昨晚 PM 的新词。
 
 **dont-first**：排除昨晚新词后，合法 dont 有 10 个或更多，就 10 个全部来自 dont；只有合法 dont 不足 10 个时，才用 fuzzy 补足余量（例如剩 8 个 dont，就是 8 dont + 2 fuzzy，不能 5+5）。不能为了主题好看用 fuzzy 替换合法 dont。

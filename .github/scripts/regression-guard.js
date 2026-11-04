@@ -836,6 +836,18 @@ try {
   }
 
 
+  // 2026-11-05: the user-marked unfamiliar words can enter regular AM/PM new cards.
+  // Pinned historical baseline trees lack this source; never assert the future rule there.
+  if(process.env.GUARD_BASELINE_TREE!=='1'){
+    ok(typeof rules.runtime.unfamiliar_lesson_pool==='string'&&rules.runtime.unfamiliar_lesson_pool.includes('unfamiliar_new_pool'),
+      'regular AM/PM new-word pool includes opted-in unfamiliar words in secondary phase');
+    const builder=read('.github/scripts/build-learning-runtime.js');
+    ok(builder.includes("require('./unfamiliar-lesson-pool')")&&builder.includes("unfamiliar_new_pool:")&&builder.includes("unfamiliar_new_pool_total_full:"),
+      'runtime builder exposes explicitly filtered unfamiliar first-learning pool');
+    try{require('./test-unfamiliar-lesson-pool').run();ok(true,'unfamiliar learning eligibility tests')}
+    catch(e){ok(false,'unfamiliar learning eligibility tests: '+e.message)}
+  }
+
   // 2026-11-04: the three highlighted lesson_focus words rotate independently of core review.
   // In a pinned old-main baseline tree, the new helper/test does not exist yet.
   if(process.env.GUARD_BASELINE_TREE!=='1'){

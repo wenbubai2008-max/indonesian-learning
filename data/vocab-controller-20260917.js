@@ -163,6 +163,9 @@
   }
   function canonicalKey(v){
     const s=String(v||'').trim().toLowerCase();
+    // The exhausted primary pending list has been removed from the selector.
+    // Restore an older saved selection into the current secondary pending list.
+    if(s==='pending-primary')return 'pending-secondary';
     if(ALL_KEYS.includes(s))return s;
     if(s.includes('bipa')){for(const lv of ['a1','a2','b1','b2'])if(s.includes(lv))return 'bipa-'+lv;}
     return NORMAL_KEYS.includes(s)?s:'master';
@@ -192,7 +195,6 @@
     const cur=canonicalKey(select.value||localStorage.getItem('selected_vocab_library')||activeKey);
     const opts=[
       ['master','主学习词库',libraryCount('master')],
-      ['pending-primary','主词库·待学习',libraryCount('pending-primary')],
       ['pending-secondary','第二词库·待学习',libraryCount('pending-secondary')],
       ['daily','每日学习词汇',libraryCount('daily')],['unknown','陌生词汇',libraryCount('unknown')],
       ...['A1','A2','B1','B2'].map(lv=>['bipa-'+lv.toLowerCase(),'BIPA（'+lv+'）',libraryCount('bipa-'+lv.toLowerCase())])
@@ -227,7 +229,7 @@
     const s=computeStats(src,mem,excludedKeys);
     if($('vocabCount'))$('vocabCount').textContent=s.total;if($('knownCount'))$('knownCount').textContent=s.known;if($('reviewCount'))$('reviewCount').textContent=s.review;
     let suffix='';if(activeView==='known')suffix=' · 查看已掌握';else if(activeView==='review')suffix=' · 查看待掌握';
-    if($('dbStatus'))$('dbStatus').textContent=isPendingKey()?labelFor()+' · '+s.total+' 个合法待学词 · 会了即可移出（同步后下次课程排除）':labelFor()+' · '+s.unchecked+' 未判断 · '+s.review+' 待掌握 · '+s.known+' 已掌握 · '+s.excluded+' 已排除 · '+s.total+' 总词'+suffix;
+    if($('dbStatus'))$('dbStatus').textContent=isPendingKey()?labelFor()+' · '+s.total+' 个合法待学词 · 会了即可移出（同步后下次课程排除）':activeKey==='unknown'?labelFor()+' · '+s.total+' 个词 · 点击「翻卡」看中文、听发音，再标记会了／模糊／不会':labelFor()+' · '+s.unchecked+' 未判断 · '+s.review+' 待掌握 · '+s.known+' 已掌握 · '+s.excluded+' 已排除 · '+s.total+' 总词'+suffix;
     if($('vocabTag'))$('vocabTag').textContent=labelFor()+' '+s.total+' 词';return s;
   }
   function currentFilterPredicate(x,mem=memoryFor(),excludedKeys=new Set()){
@@ -307,7 +309,10 @@
     }
     saveProgress();activeKey=key;batchSelected.clear();batchPage=0;if(!isPendingKey(key))pendingUndo=null;activeView='';localStorage.removeItem('vocab_view_mode');
     const select=$('librarySelect');if(select&&select.value!==key)select.value=key;localStorage.setItem('selected_vocab_library',key);
-    if($('search'))$('search').value='';syncUiMode();rebuildCategories();if($('cat'))$('cat').value='';if($('sabFilterStable'))$('sabFilterStable').value='';
+    if($('search'))$('search').value='';
+    // The unfamiliar library is a dedicated vocabulary-card practice entry.
+    if(key==='unknown'&&$('mode'))$('mode').value='flash';
+    syncUiMode();rebuildCategories();if($('cat'))$('cat').value='';if($('sabFilterStable'))$('sabFilterStable').value='';
     const src=sourceFor(),mem=memoryFor(),excludedKeys=new Set((window.WeaknessPool?.listExcluded?.()||[]).map(x=>norm(x.word)));
     try{DB=src.slice()}catch(e){}
     const out=src.filter(x=>!excludedKeys.has(norm(x.word))&&(isPendingKey(key)||!statusFromMemory(x.word,activeKey,mem))&&!(x.categories||[]).includes('粗口/俚语'));
