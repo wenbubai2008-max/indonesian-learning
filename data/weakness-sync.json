@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-04T09:50:24.830Z",
+  "updated_at": "2026-11-04T13:56:03.528Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1956,8 +1956,11 @@
     "demikian": {
       "word": "demikian",
       "status": "active",
-      "updated_at": "2026-10-21T01:42:34.691Z",
+      "updated_at": "2026-11-04T13:47:31.849Z",
       "display": "demikian",
+      "cn": "如此；这样",
+      "root": "demikian",
+      "root_cn": "如此；这样",
       "last_review": "2026-10-21T01:42:34.625Z",
       "reasons": [
         "memory_dont"
@@ -28110,17 +28113,18 @@
     "menanyakan": {
       "word": "menanyakan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:27.384Z",
+      "updated_at": "2026-11-04T13:55:34.533Z",
       "display": "menanyakan",
       "cn": "询问",
       "root": "tanya",
+      "last_review": "2026-11-04T13:55:34.475Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menikmati": {
       "word": "menikmati",
@@ -29620,46 +29624,49 @@
     "tanda tangan": {
       "word": "tanda tangan",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:23.647Z",
+      "updated_at": "2026-11-04T13:55:52.312Z",
       "display": "tanda tangan",
       "cn": "签名",
       "root": "tanda; tangan",
+      "last_review": "2026-11-04T13:55:52.256Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "berkas": {
       "word": "berkas",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:23.674Z",
+      "updated_at": "2026-11-04T13:55:30.429Z",
       "display": "berkas",
       "cn": "文件；材料；档案包",
+      "last_review": "2026-11-04T13:55:30.367Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pertimbangan": {
       "word": "pertimbangan",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:23.700Z",
+      "updated_at": "2026-11-04T13:55:48.345Z",
       "display": "pertimbangan",
       "cn": "考虑；考量",
       "root": "timbang",
+      "last_review": "2026-11-04T13:55:48.288Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "tantangan": {
       "word": "tantangan",
@@ -29715,17 +29722,18 @@
     "menyerahkan": {
       "word": "menyerahkan",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:23.871Z",
+      "updated_at": "2026-11-04T13:55:46.095Z",
       "display": "menyerahkan",
       "cn": "交给；提交",
       "root": "serah",
+      "last_review": "2026-11-04T13:55:46.031Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "strategis": {
       "word": "strategis",
@@ -31161,8 +31169,10 @@
     "menganggap": {
       "word": "menganggap",
       "status": "mastered",
-      "updated_at": "2026-10-15T04:12:04.984Z",
+      "updated_at": "2026-11-04T13:47:47.978Z",
       "display": "menganggap",
+      "cn": "认为；把……看作",
+      "root": "anggap",
       "last_review": "2026-10-15T04:12:04.950Z",
       "last_mastered": "2026-10-15T04:12:04.950Z",
       "reasons": [],
