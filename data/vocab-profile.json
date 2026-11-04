@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-04T14:00:58.636Z",
+  "generated_at": "2026-11-04T14:03:11.878Z",
   "source_updated_at": "2026-11-04T13:56:03.528Z",
   "taught_total": 1065,
   "confirmed_mastered": 203,
@@ -13,6 +13,8 @@
   "primary_unlearned_total": 330,
   "primary_coverage_percent": 66.2,
   "primary_eligible_new_total": 0,
+  "secondary_eligible_new_total": 167,
+  "active_master_pool": "secondary_bipa",
   "focus_total": 767,
   "focus_words": [
     {
@@ -132,6 +134,8 @@
     "primary_taught_unique": "977主词库中已经正式进入每日学习的去重词数",
     "primary_unlearned_total": "977主词库中尚未正式进入每日学习的词数",
     "primary_coverage_percent": "primary_taught_unique / primary_master_total",
-    "primary_eligible_new_total": "977主词库尚未学习词中，当前同时满足新词资格规则的数量"
+    "primary_eligible_new_total": "977主词库尚未学习词中，当前同时满足新词资格规则的数量",
+    "secondary_eligible_new_total": "第二词库中当前符合新词资格且尚未正式学习的数量",
+    "active_master_pool": "当前教学使用的词库；secondary_bipa 表示已切换至第二词库"
   }
 }
