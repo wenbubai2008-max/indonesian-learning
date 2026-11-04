@@ -11,12 +11,12 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-04T14:00:58.484Z",
+    "runtime_generated_at": "2026-11-04T14:26:10.219Z",
     "lesson_watermark": "2026-11-04 18:00",
     "index_updated": "2026-11-04",
-    "runtime_hash": "eed7c3fbd2657443651b04ab34cae3654beb8495ee32beff54d571177f1c3cb8",
+    "runtime_hash": "4107c255a81cb90ab9754fd8076a8a6d67e62cc5d8446fa9f30d65c267fdac8e",
     "index_hash": "36fc37fd6946c4866825b8e48067a4b30a2391539d2caa701ec66f83ebe9ddf0",
-    "rules_hash": "c661271b679460387f2c02488892da1129daeb5b83809d9151fee8a10fff107e"
+    "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
     "new": [
@@ -48,7 +48,104 @@
     ]
   },
   "candidates": {
-    "new_dont": [],
+    "new_dont": [
+      [
+        "panik",
+        "恐慌"
+      ],
+      [
+        "nagih",
+        "催；催款；讨要欠款（口语）"
+      ],
+      [
+        "dampak",
+        "影响"
+      ],
+      [
+        "merayu",
+        "勾引"
+      ],
+      [
+        "kencang",
+        "紧的"
+      ],
+      [
+        "menaruh",
+        "放、置"
+      ],
+      [
+        "kemasan",
+        "包装"
+      ],
+      [
+        "menghela",
+        "叹"
+      ],
+      [
+        "curiga",
+        "怀疑"
+      ],
+      [
+        "nyenyak",
+        "宁静的"
+      ],
+      [
+        "senam",
+        "锻炼"
+      ],
+      [
+        "pinggir",
+        "边缘"
+      ],
+      [
+        "peserta",
+        "参与者"
+      ],
+      [
+        "licin",
+        "滑"
+      ],
+      [
+        "laku",
+        "需求旺盛"
+      ],
+      [
+        "menata",
+        "组织"
+      ],
+      [
+        "ujung",
+        "结尾"
+      ],
+      [
+        "pudar",
+        "褪色了"
+      ],
+      [
+        "kuah",
+        "肉汤"
+      ],
+      [
+        "patung",
+        "雕像"
+      ],
+      [
+        "bekal",
+        "规定"
+      ],
+      [
+        "tikar",
+        "垫"
+      ],
+      [
+        "saling",
+        "彼此"
+      ],
+      [
+        "bakti",
+        "奉献精神"
+      ]
+    ],
     "new_fuzzy": [
       [
         "samping",

@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-11-04T14:00:58.484Z",
+  "generated_at": "2026-11-04T14:26:10.219Z",
   "lesson_watermark": "2026-11-04 18:00",
   "master_unique": 977,
   "primary_new_pool_total": 0,
   "secondary_master_unique": 306,
   "secondary_new_pool_total": 167,
+  "unfamiliar_new_pool_total": 24,
   "active_master_pool": "secondary_bipa",
   "handoff": {
     "phase": "secondary",
@@ -19,8 +20,8 @@
   "daily_taught_unique": 1065,
   "primary_taught_unique": 647,
   "primary_unlearned_total": 330,
-  "new_pool_total": 167,
-  "new_pool_dont_total": 0,
+  "new_pool_total": 191,
+  "new_pool_dont_total": 24,
   "new_pool_fuzzy_total": 167,
   "new_pool_unclassified_total": 0,
   "review_pool_total": 770,
@@ -32,6 +33,7 @@
     "review_pool": "weak_active ∩ daily_vocab",
     "focus_pool": "high-priority subset of weak_active ∩ daily_vocab; automation_fail > quick_wrong > listening_wrong > unknown > dont > fuzzy > listening_slow",
     "listening_focus_pool": "auditory weakness overlay for taught words; may include mastered without changing mastered status",
-    "secondary": "BIPA人工筛选不会/模糊；B2仅S；与977重复永久剔除"
+    "secondary": "BIPA人工筛选不会/模糊；B2仅S；与977重复永久剔除",
+    "unfamiliar": "secondary阶段允许用户主动标记的active+untaught陌生词作为独立补充新词来源；从原有10/5新词名额中学习，不改变977/BIPA词库数量"
   }
 }
