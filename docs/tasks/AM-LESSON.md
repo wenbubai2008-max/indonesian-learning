@@ -103,10 +103,10 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
 - **output**：task、reference_answer、reference_cn，用至少 2 个本课重点词的真实交流任务。
 - **review**：恰好 3 个非空字符串（3 秒主动提取、易混词或搭配、重点复习词的实际应用），不是晚课的 `{title, steps}`。
 - **lesson_focus**（今天的重点，2026-10-18 用户决定；**2026-10-18 晚课起每节必填**）：**不新增任何词或任务**，只是从本课已有内容里标出最值得掌握的部分（不是多学五项）。格式 `{"words":[3 个词],"patterns":[2 个 {pattern, cn, example, example_cn}]}`：
-  - words：恰好 3 个，必须是本课的词（vocab / review_vocab / cycle_vocab），优先选实用、容易忘、值得主动说出口的词。
+  - **2026-11-05 起早课强制新词优先**：words 恰好 3 个；本课至少有 3 个新词时，3 个必须全部从本课新词 `vocab`（扣除 `cycle_vocab`）中挑选。昨晚答错、近期很弱的老词仍留在 `review_vocab`、题目及回顾中，不得挤占今天新词的3个重点；选新词时优先实用、易忘、值得主动说出口的词。合法新词不足3个时，把这些新词**全部**列为重点，其余位置优先从本课 `cycle_vocab` 补足；循环词也不足时才从 `review_vocab` 补。11月4日及以前的已发布早课不追溯改动。
   - **2026-11-04 起独立重点冷却**（权威配置 `data/learning-pool-rules.json` 的 `lesson_focus_rotation`）：从 `data/daily/index.json` 中最近 7 天已完成的早晚课读取 `lesson_focus.words`；最近 72 小时内入选过重点的词默认不再选，最近 7 天已经入选 2 次的词也不再占重点。只限制“今天的重点”3 个位置，不影响合法新词、核心复习、应用词和阅读/对话自然复现。
-  - **选词顺序与例外**：先看有时间证据的真实新错（`runtime.review_pool` 的 `last_wrong` 必须晚于最近一次重点和主动复习）、再选久未重点练过的到期弱词，最后从本课的新词中选实用表达；普通旧错、旧 `focus_pool` 标签不能自动突破冷却。若本课词卡里没有足够的未冷却替代词，可保留必要重复，不能为了重点冷却删除词卡、减少复习或阻断课程。
-  - 生成后执行原有 `validate-lesson-candidate.js`；`LESSON_FOCUS_COOLDOWN` 表示本节有可用未冷却替代词却仍重复重点，只替换 `lesson_focus.words`（并同步调整相关句型/输出的自然表达），不改新词/复习/应用资格。该检查只对 2026-11-04 起的新课程生效，已发布历史不追溯。
+  - **早课与晚课区分**：原来的“真实新错优先、到期弱词其次、新词最后”仅作为晚课重点选择的指导；早课以当天新词优先为硬条件，真实新错只影响当节 `review_vocab` 选取，不得突破该来源限制。早课复习循环时，循环词仍遵守72小时冷却；候选不足的既有冷却退让不改变“新词必须优先”的硬规则。
+  - 生成后执行 `validate-lesson-candidate.js`；`AM_FOCUS_NEW_REQUIRED` 表示有足够的当天新词却没有优先占满3个重点，`AM_FOCUS_CYCLE_REQUIRED` 表示新词不足3个时没有先用 `cycle_vocab` 补重点；这两项从2026-11-05早课起生效。`LESSON_FOCUS_COOLDOWN` 是独立的72小时/7天重复重点检查（从11月4日起），修改时仅调整 `lesson_focus.words`，不改新词、复习、应用和历史课程。
   - patterns：恰好 2 个句型。pattern 用 `…` 标出可替换的部分（如 `Waktu masih …, …`），cn 是句型的中文意思；example 必须**逐字取自本课**（sentences、reading、词卡例句或 output 参考答案），example_cn 是它的中文。
   - 校验器检查：`LESSON_FOCUS_MISSING`（缺字段）、`LESSON_FOCUS_INVALID`（数量或字段不对）、`LESSON_FOCUS_WORD`（词不是本课的）、`LESSON_FOCUS_PATTERN`（例句不在本课里）。按报错改正，不得为此改动选词、题目或其他内容。
 - **review_cards**（2026-10-16 用户决定；可选但每节都要写）：上面 3 段复习的结构化版本，网页据此显示可点开的提取卡片、对比块和例句。**内容与 review 三段一致，不新增词、不加量**；review 三段照常写。格式：
