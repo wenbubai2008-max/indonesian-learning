@@ -37,6 +37,7 @@ function lessonWords(L){
 function runway({runtime,lessons,today}){
  const st=runtime.stats||{},h=runtime.handoff||{};
  const primary=Number(h.primary_remaining||0),dont=Number(st.new_pool_dont_total_full||0),fuzzy=Number(st.new_pool_fuzzy_total_full||0);
+ const available=(h.phase==='secondary'?0:primary)+Number(h.secondary_available||0)+Number(st.unfamiliar_new_pool_total_full||0);
  const perDay=PER_DAY.am_new+PER_DAY.pm_new,perDayDont=PER_DAY.am_dont+PER_DAY.pm_dont;
  const recent=lessons.filter(l=>l.date<=today&&Date.parse(today)-Date.parse(l.date)<=14*DAY);
  const days=new Set(recent.map(l=>l.date));
@@ -49,9 +50,9 @@ function runway({runtime,lessons,today}){
   est_days_until_transition:primary>=10?+((primary-9)/perDay).toFixed(1):0,
   est_days_until_primary_exhausted:+(primary/perDay).toFixed(1),
   // every new word left in the libraries the lessons can still draw from (primary + secondary while not yet committed)
-  new_words_left_total:(h.phase==='secondary'?0:primary)+Number(h.secondary_available||0),
-  est_days_until_all_new_exhausted:+((((h.phase==='secondary'?0:primary)+Number(h.secondary_available||0)))/perDay).toFixed(1),
-  assumptions:'AM 10 new (all dont if available) + PM 3.5 new (1.5 dont); estimate only, ignores cross-day dedup'
+  new_words_left_total:available,
+  est_days_until_all_new_exhausted:+(available/perDay).toFixed(1),
+  assumptions:'AM 10 new + PM 5 new (including eligible user-marked unfamiliar words); estimate only, ignores cross-day dedup'
  };
 }
 
