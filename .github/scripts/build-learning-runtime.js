@@ -1,4 +1,5 @@
 const fs=require('fs'),vm=require('vm'),zlib=require('zlib'),path=require('path');
+const {collectUnfamiliar}=require('./unfamiliar-lesson-pool');
 
 const rules=JSON.parse(fs.readFileSync('data/learning-pool-rules.json','utf8'));
 if(Number(rules.master_total)!==977) throw new Error('learning-pool-rules master_total must be 977');
@@ -110,6 +111,14 @@ const secondaryNewFull=secondaryMaster.filter(x=>activeMap.has(key(x.word))&&!da
 // Primary phase top-up (2026-10-07): secondary 'dont' words may follow the primary words, so 08:00 keeps a dont supply after primary dont runs out.
 // Primary words always come first; secondary fuzzy words are NOT added before the transition phase.
 const secondaryDontTopup=secondaryNewFull.filter(w=>newMemoryClass(weakMap.get(key(w)))==='dont');
+// User-marked unfamiliar words outside both master libraries are still the user's
+// learning priorities. Keep their identity separate from the 977/BIPA bank counts.
+// Their active + untaught status is checked again on every derived-runtime build.
+const unfamiliarMetaFull=collectUnfamiliar({
+  weakWords,dailySet,primarySet,secondarySet:new Set(secondaryMaster.map(x=>key(x.word)))
+});
+const unfamiliarNewFull=unfamiliarMetaFull.map(x=>x.word);
+const unfamiliarMeta=new Map(unfamiliarMetaFull.map(x=>[key(x.word),x]));
 
 const HANDOFF_FILE='data/master-handoff-state.json';
 const HANDOFF_FILL_TARGET=10;
@@ -149,6 +158,14 @@ if(oldHandoff.committed_secondary||oldHandoff.phase==='secondary'){
 if(JSON.stringify(handoffCore(oldHandoff))!==JSON.stringify(handoffCore(handoff)))handoff.updated_at=new Date().toISOString();
 else handoff.updated_at=oldHandoff.updated_at||'';
 fs.writeFileSync(HANDOFF_FILE,JSON.stringify(handoff,null,2)+'\n');
+// The user is already in BIPA secondary phase. Put marked unfamiliar words ahead
+// of the remaining BIPA fuzzy words, so AM dont-first and PM new quotas teach them
+// as ordinary new cards. Earlier primary/transition priorities remain untouched.
+if(handoff.phase==='secondary'&&unfamiliarNewFull.length){
+  const existing=new Set(newFull.map(key));
+  newFull=[...unfamiliarNewFull.filter(w=>!existing.has(key(w))),...newFull];
+  if(activeMasterPool==='exhausted')activeMasterPool='secondary_bipa';
+}
 
 const newDontFull=[],newFuzzyFull=[],newUnclassifiedFull=[];
 for(const w of newFull){
@@ -195,7 +212,7 @@ for(const w of [...newFull.slice(0,140),...oralExposed.map(x=>x[0]),...newDontEx
 }
 const secondaryMeta=new Map(secondaryMaster.map(x=>[key(x.word),x]));
 const newMeta=newExposed.map(w=>{
-  const k=key(w),meta=secondaryMeta.get(k)||masterMeta.get(k)||{};
+  const k=key(w),meta=unfamiliarMeta.get(k)||secondaryMeta.get(k)||masterMeta.get(k)||{};
   return [w,meta.cn||''];
 });
 
@@ -361,6 +378,7 @@ const runtime={
     primary_unlearned_total:primaryUnlearnedTotal,
     primary_new_pool_total_full:primaryNewFull.length,
     secondary_new_pool_total_full:secondaryNewFull.length,
+    unfamiliar_new_pool_total_full:handoff.phase==='secondary'?unfamiliarNewFull.length:0,
     new_pool_total_full:newFull.length,
     new_pool_secondary_dont_topup:handoff.phase==='primary'?secondaryDontTopup.length:0,
     new_pool_exposed:newExposed.length,
@@ -398,6 +416,7 @@ const runtime={
     recurrence:['word','priority','cn']
   },
   new_pool:newExposed,
+  unfamiliar_new_pool:handoff.phase==='secondary'?unfamiliarNewFull.slice():[],
   new_pool_dont:newDontExposed,
   new_pool_fuzzy:newFuzzyExposed,
   new_pool_unclassified:newUnclassifiedExposed,
@@ -451,6 +470,7 @@ const audit={
   primary_new_pool_total:primaryNewFull.length,
   secondary_master_unique:secondaryMaster.length,
   secondary_new_pool_total:secondaryNewFull.length,
+  unfamiliar_new_pool_total:runtime.stats.unfamiliar_new_pool_total_full,
   active_master_pool:activeMasterPool,
   handoff:runtime.handoff,
   weak_active_total:activeMap.size,
@@ -471,7 +491,8 @@ const audit={
     review_pool:'weak_active ∩ daily_vocab',
     focus_pool:'high-priority subset of weak_active ∩ daily_vocab; automation_fail > quick_wrong > listening_wrong > unknown > dont > fuzzy > listening_slow',
     listening_focus_pool:'auditory weakness overlay for taught words; may include mastered without changing mastered status',
-    secondary:'BIPA人工筛选不会/模糊；B2仅S；与977重复永久剔除'
+    secondary:'BIPA人工筛选不会/模糊；B2仅S；与977重复永久剔除',
+    unfamiliar:'secondary阶段允许用户主动标记的active+untaught陌生词作为独立补充新词来源；从原有10/5新词名额中学习，不改变977/BIPA词库数量'
   }
 };
 fs.writeFileSync('data/learning-pool-audit.json',JSON.stringify(audit,null,2)+'\n');
