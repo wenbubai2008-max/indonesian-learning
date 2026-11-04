@@ -190,7 +190,19 @@ try{
   }
 
   ok(!controller.includes("['top1000','Top1000'"),'retired Top1000 option must not reappear');
-  ok(controller.includes("['pending-primary','主词库·待学习'")&&controller.includes("['pending-secondary','第二词库·待学习'"),'both pending library options must be present');
+  ok(!controller.includes("['pending-primary','主词库·待学习',libraryCount('pending-primary')]")&&
+    controller.includes("['pending-secondary','第二词库·待学习',libraryCount('pending-secondary')]"),
+    'the exhausted primary pending bank must not appear in selector; secondary pending remains selectable');
+  ok(controller.includes("if(s==='pending-primary')return 'pending-secondary'"),
+    'previously selected primary pending bank must migrate to secondary on refresh');
+  ok(controller.includes("if(key==='unknown'&&$('mode'))$('mode').value='flash'")&&
+    controller.includes("activeKey==='unknown'?labelFor()")&&
+    controller.includes('点击「翻卡」看中文'),
+    'unfamiliar vocabulary must open in flashcard mode with explicit learning guidance');
+  ok(controller.includes("if(key==='unknown')return uniqueByWord(unknownWords())")&&
+    unified.includes('vocabUnifiedFlip')&&unified.includes('vocabUnifiedMark')&&
+    unified.includes("onclick=\"vocabUnifiedFlip()\""),
+    'unfamiliar entries must retain the shared flip/speech/memory-card learning flow');
   ok(controller.includes('data/pending-vocab.json')&&controller.includes('async function ensurePendingData')&&controller.includes('function pendingRows'),'pending libraries must read the complete generated snapshot');
   ok(controller.includes("manual_preknown")&&controller.includes("pendingUndo=")&&controller.includes('weak-pool-changed'),'pending manually known state must sync and support undo/live counts');
   ok(controller.includes('const EXPECTED_MASTER_COUNT=977'),'controller must pin master count to 977');
