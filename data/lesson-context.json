@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-04",
-    "session": "pm",
-    "time": "18:00",
-    "day": 75
+    "date": "2026-11-05",
+    "session": "am",
+    "time": "08:00",
+    "day": 76
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-04T09:50:53.799Z",
-    "lesson_watermark": "2026-11-04 08:00",
+    "runtime_generated_at": "2026-11-04T10:38:18.872Z",
+    "lesson_watermark": "2026-11-04 18:00",
     "index_updated": "2026-11-04",
-    "runtime_hash": "d29de3700eba230d77a4119e1bebb7cbec0ec742b34b1a12cecb6a792a4803e2",
-    "index_hash": "a0559531cfc7545c84e0c7cf1d3c78cd5ca6ad9a759f923ea802014c598ce7c4",
+    "runtime_hash": "c0c034cf282c29ea96e387d70897b25879873cab762720ca96ae4d07db5146a9",
+    "index_hash": "36fc37fd6946c4866825b8e48067a4b30a2391539d2caa701ec66f83ebe9ddf0",
     "rules_hash": "c661271b679460387f2c02488892da1129daeb5b83809d9151fee8a10fff107e"
   },
   "schema": {
@@ -115,10 +115,6 @@
         "令人紧张"
       ],
       [
-        "menanyakan",
-        "询问"
-      ],
-      [
         "menikmati",
         "享受"
       ],
@@ -151,24 +147,8 @@
         "职位空缺；招聘岗位"
       ],
       [
-        "tanda tangan",
-        "签名"
-      ],
-      [
-        "berkas",
-        "文件；材料；档案包"
-      ],
-      [
-        "pertimbangan",
-        "考虑；考量"
-      ],
-      [
         "status",
         "状态；身份"
-      ],
-      [
-        "menyerahkan",
-        "交给；提交"
       ],
       [
         "peran",
@@ -689,6 +669,26 @@
       [
         "pesan cerita",
         "故事寓意；故事传达的信息"
+      ],
+      [
+        "alunan",
+        "旋律；流动的声调"
+      ],
+      [
+        "tunggang langgang",
+        "狼狈逃窜；四散奔逃"
+      ],
+      [
+        "berangsur",
+        "逐渐"
+      ],
+      [
+        "dahaga",
+        "口渴；渴"
+      ],
+      [
+        "mengintai",
+        "窥伺；潜伏盯着"
       ]
     ],
     "review": [
@@ -1423,16 +1423,6 @@
         "态度；立场"
       ],
       [
-        "khusus",
-        3,
-        0,
-        "",
-        "2026-10-15T13:46:27.049Z",
-        "特别的；专门的；特定用途的",
-        "khusus",
-        "特别；专门"
-      ],
-      [
         "pribadi",
         3,
         0,
@@ -1561,16 +1551,6 @@
         "泥土；土地",
         "tanah",
         "泥土；土地"
-      ],
-      [
-        "ketua",
-        3,
-        0,
-        "",
-        "2026-10-15T13:46:54.370Z",
-        "领导、主席",
-        "ketua",
-        "领导；主席"
       ],
       [
         "perjalanan",
@@ -1721,16 +1701,6 @@
         "拥挤的 / 热闹的",
         "ramai",
         "热闹；人多"
-      ],
-      [
-        "kejebak",
-        3,
-        1,
-        "",
-        "2026-11-02T08:37:08.097Z",
-        "陷进去；被困在某个情况里（口语）",
-        "jebak",
-        "设陷阱；困住"
       ],
       [
         "luas",
@@ -2893,94 +2863,34 @@
         "麻烦；费事"
       ],
       [
-        "pers",
-        3,
+        "sebelah",
+        2,
         0,
         "",
-        "2026-11-04T02:53:26.886Z",
-        "媒体；新闻界",
-        "pers",
-        "新闻界；媒体"
+        "2026-10-23T23:35:36.993Z",
+        "旁边；一侧",
+        "sebelah",
+        "一侧"
       ],
       [
-        "berasal dari",
-        3,
+        "sembuh",
+        2,
         0,
         "",
-        "2026-11-04T02:53:08.683Z",
-        "来自；起源于",
-        "asal",
-        "来源；起点"
+        "2026-10-23T23:36:36.972Z",
+        "恢复；痊愈",
+        "sembuh",
+        "痊愈"
       ],
       [
-        "berbelanja",
-        3,
+        "semoga",
+        2,
         0,
         "",
-        "2026-11-04T02:53:10.587Z",
-        "购物；买东西",
-        "belanja",
-        "购物；购买所需物品"
-      ],
-      [
-        "suka menolong",
-        3,
-        0,
-        "",
-        "2026-11-04T02:53:34.579Z",
-        "乐于助人",
-        "tolong",
-        "帮助；请"
-      ],
-      [
-        "menyapu",
-        3,
-        0,
-        "",
-        "2026-11-04T02:53:18.936Z",
-        "扫；扫地",
-        "sapu",
-        "扫帚；扫"
-      ],
-      [
-        "sapu",
-        3,
-        0,
-        "",
-        "2026-11-04T02:53:32.320Z",
-        "扫帚；扫（指令用法）",
-        "sapu",
-        "扫帚；扫"
-      ],
-      [
-        "ember",
-        3,
-        0,
-        "",
-        "2026-11-04T02:53:13.134Z",
-        "桶；水桶",
-        "ember",
-        "桶"
-      ],
-      [
-        "menyebalkan",
-        3,
-        0,
-        "",
-        "2026-11-04T02:53:21.823Z",
-        "令人烦恼的；让人恼火的",
-        "sebal",
-        "烦；恼火"
-      ],
-      [
-        "kemeja",
-        3,
-        0,
-        "",
-        "2026-11-04T02:53:16.681Z",
-        "衬衫",
-        "kemeja",
-        "衬衫"
+        "2026-10-23T23:36:40.426Z",
+        "希望；祝愿",
+        "semoga",
+        "希望；祝愿"
       ]
     ],
     "focus": [
@@ -3246,45 +3156,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-10-28",
-      "session": "am",
-      "review_core": [
-        "praktis",
-        "kewalahan",
-        "ceplas-ceplos",
-        "kebuang",
-        "ngeribetin"
-      ],
-      "new_words": [
-        "selasa",
-        "berita",
-        "keras",
-        "sesuatu",
-        "pukul",
-        "macam",
-        "jarang",
-        "menyatakan",
-        "pohon",
-        "terang"
-      ]
-    },
-    {
-      "date": "2026-10-28",
-      "session": "pm",
-      "review_core": [
-        "pembangunan",
-        "membangun",
-        "perpaduan",
-        "ngulur",
-        "nyangkut"
-      ],
-      "new_words": [
-        "karyawan",
-        "promosi",
-        "divisi"
-      ]
-    },
-    {
       "date": "2026-10-29",
       "session": "am",
       "review_core": [
@@ -3543,105 +3414,44 @@
         "menyebalkan",
         "kemeja"
       ]
+    },
+    {
+      "date": "2026-11-04",
+      "session": "pm",
+      "review_core": [
+        "menyalin",
+        "seraya",
+        "kejebak",
+        "ketua",
+        "khusus"
+      ],
+      "new_words": [
+        "menanyakan",
+        "berkas",
+        "tanda tangan",
+        "menyerahkan",
+        "pertimbangan"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-03",
+    "date": "2026-11-04",
     "new_words": [
-      "kasur",
-      "berbincang-bincang",
-      "mengecewakan"
+      "menanyakan",
+      "berkas",
+      "tanda tangan",
+      "menyerahkan",
+      "pertimbangan"
     ],
     "review_core": [
-      "bebas",
-      "cerewet",
-      "selera",
-      "kemungkinan besar",
-      "akibat"
+      "menyalin",
+      "seraya",
+      "kejebak",
+      "ketua",
+      "khusus"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-04",
-    "vocab": [
-      [
-        "pers",
-        "媒体；新闻界",
-        "the press",
-        "pers",
-        "新闻界；媒体"
-      ],
-      [
-        "berasal dari",
-        "来自；起源于",
-        "come from; originate from",
-        "asal",
-        "来源；起点"
-      ],
-      [
-        "berbelanja",
-        "购物；买东西",
-        "shop; go shopping",
-        "belanja",
-        "购物；购买所需物品"
-      ],
-      [
-        "suka menolong",
-        "乐于助人",
-        "like helping; helpful",
-        "tolong",
-        "帮助；请"
-      ],
-      [
-        "menyapu",
-        "扫；扫地",
-        "sweep",
-        "sapu",
-        "扫帚；扫"
-      ],
-      [
-        "sapu",
-        "扫帚；扫（指令用法）",
-        "broom; sweep",
-        "sapu",
-        "扫帚；扫"
-      ],
-      [
-        "ember",
-        "桶；水桶",
-        "bucket",
-        "ember",
-        "桶"
-      ],
-      [
-        "saking",
-        "太……以至于；由于非常……",
-        "so ... that; because of being so",
-        "saking",
-        "由于太……"
-      ],
-      [
-        "menyebalkan",
-        "令人烦恼的；让人恼火的",
-        "annoying; irritating",
-        "sebal",
-        "烦；恼火"
-      ],
-      [
-        "kemeja",
-        "衬衫",
-        "shirt",
-        "kemeja",
-        "衬衫"
-      ]
-    ],
-    "review_vocab": [
-      "kasur",
-      "selera",
-      "calon",
-      "cas",
-      "kaget"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

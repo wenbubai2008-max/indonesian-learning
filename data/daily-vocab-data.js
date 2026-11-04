@@ -8576,22 +8576,24 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-09 19:00",
-    "last_seen": "2026-09-19 18:00",
+    "last_seen": "2026-11-04 18:00",
     "sessions": [
       "19:00",
       "18:00"
     ],
     "dates": [
       "2026-09-09",
-      "2026-09-19"
+      "2026-09-19",
+      "2026-11-04"
     ],
-    "example": "Jangan sampai kita kejebak masalah yang sama lagi.",
-    "example_cn": "别让我们再次陷入同样的问题。",
+    "example": "Aku kejebak macet, jadi nggak sempat menyaksikan pertandingan sampai selesai.",
+    "example_cn": "我堵在路上，所以没来得及把比赛看完。（kejebak = terjebak；nggak = tidak）",
     "lesson_occurrences": [
       "2026-09-09 19:00",
-      "2026-09-19 18:00"
+      "2026-09-19 18:00",
+      "2026-11-04 18:00"
     ]
   },
   {
@@ -10307,23 +10309,27 @@ window.DAILY_VOCAB_DB = [
     "en": "special; specific; dedicated",
     "root": "khusus",
     "root_cn": "特别；专门",
-    "example": "Tempat itu punya ruangan khusus untuk kelompok kecil.",
-    "example_cn": "那个地方有专门给小团队用的房间。",
+    "example": "Tidak semua barang yang dibuat khusus harus mahal atau terlihat istimewa.",
+    "example_cn": "并不是所有专门制作的东西都必须昂贵或看起来出众。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 08:00",
+    "last_seen": "2026-11-04 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-11-04"
     ],
     "lesson_occurrences": [
-      "2026-09-14 08:00"
+      "2026-09-14 08:00",
+      "2026-11-04 18:00"
     ]
   },
   {
@@ -10846,23 +10852,27 @@ window.DAILY_VOCAB_DB = [
     "en": "leader; chairperson",
     "root": "ketua",
     "root_cn": "领导；主席",
-    "example": "Ketua tim akan menentukan jadwal rapat.",
-    "example_cn": "团队负责人会确定会议时间。",
+    "example": "Ketua mengajak kami membahas tantangan ini tanpa saling memberi komentar negatif.",
+    "example_cn": "负责人邀请我们讨论这项挑战，不要互相说负面的话。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-16 08:00",
+    "last_seen": "2026-11-04 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-11-04"
     ],
     "lesson_occurrences": [
-      "2026-09-16 08:00"
+      "2026-09-16 08:00",
+      "2026-11-04 18:00"
     ]
   },
   {
@@ -13171,16 +13181,16 @@ window.DAILY_VOCAB_DB = [
     "en": "copy",
     "root": "salin",
     "root_cn": "复制；抄写",
-    "example": "Tolong menyalin nomor pesanan ini ke dokumen baru.",
-    "example_cn": "请把这个订单号复制到新文档里。",
+    "example": "Saya menyalin silsilah keluarga dari buku lama supaya nama dan hubungan antarkeluarga tidak hilang.",
+    "example_cn": "我把家谱从旧书里抄下来，免得姓名和家族关系信息丢失。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-11-04 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13190,14 +13200,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28",
       "2026-09-30",
       "2026-10-02",
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-04"
     ],
     "lesson_occurrences": [
       "2026-09-23 08:00",
       "2026-09-28 08:00",
       "2026-09-30 18:00",
       "2026-10-02 08:00",
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-11-04 18:00"
     ]
   },
   {
@@ -14018,16 +14030,16 @@ window.DAILY_VOCAB_DB = [
     "en": "while; at the same time",
     "root": "seraya",
     "root_cn": "同时；一边……一边……",
-    "example": "Dia tersenyum seraya menjelaskan masalah itu.",
-    "example_cn": "他一边微笑，一边解释那个问题。",
+    "example": "Ketua mengarahkan peserta ke ruang utama seraya menunjuk peta gedung.",
+    "example_cn": "主席一边指着楼内地图，一边引导参与者去主会场。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-22 18:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-11-04 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -14037,14 +14049,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28",
       "2026-09-30",
       "2026-10-02",
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-04"
     ],
     "lesson_occurrences": [
       "2026-09-22 18:00",
       "2026-09-28 18:00",
       "2026-09-30 18:00",
       "2026-10-02 08:00",
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-11-04 18:00"
     ]
   },
   {
@@ -28609,24 +28623,27 @@ window.DAILY_VOCAB_DB = [
     "en": "so ... that; because of being so",
     "root": "saking",
     "root_cn": "由于太……",
-    "example": "Saking sibuknya, aku lupa cas HP. Aku harus ngepasin waktu belanja sama jadwal kerja, jadi nggak bisa lama-lama.",
-    "example_cn": "我忙得忘了给手机充电。我得把购物时间和工作安排对上，所以不能待太久。（cas = mengisi daya；HP = ponsel；ngepasin = menyesuaikan；nggak = tidak）",
+    "example": "Saking gugupnya, aku kelepasan bilang bahwa rapatnya dibatalkan, padahal baru ditunda. Aku langsung meralatnya.",
+    "example_cn": "我紧张得一不小心说会议取消了，其实只是推迟。我马上更正了。（kelepasan = terlanjur tanpa sengaja）",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-04 08:00",
-    "last_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-04"
     ],
     "lesson_occurrences": [
-      "2026-11-04 08:00"
+      "2026-11-04 08:00",
+      "2026-11-04 18:00"
     ]
   },
   {
@@ -28661,23 +28678,151 @@ window.DAILY_VOCAB_DB = [
     "en": "shirt",
     "root": "kemeja",
     "root_cn": "衬衫",
-    "example": "Kemeja biru itu sesuai selera Rina. Untuk penampilan yang rapi, ia memilih ukuran yang pas, bukan hanya warna yang bagus.",
-    "example_cn": "那件蓝衬衫合莉娜的喜好。为了穿着整洁，她选择合身的尺码，而不只看颜色好不好看。",
+    "example": "Kemeja itu tampak biasa, tetapi bagi Ayah sangat istimewa karena merupakan hadiah dari Ibu.",
+    "example_cn": "那件衬衫看起来普通，但对爸爸很特别，因为是妈妈送的礼物。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-04 08:00",
-    "last_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-04"
     ],
     "lesson_occurrences": [
-      "2026-11-04 08:00"
+      "2026-11-04 08:00",
+      "2026-11-04 18:00"
+    ]
+  },
+  {
+    "word": "menanyakan",
+    "cn": "询问；问及某事",
+    "en": "ask about; inquire",
+    "root": "tanya",
+    "root_cn": "问",
+    "example": "Saya menanyakan jadwal rapat untuk memperkirakan waktu yang tersedia. Kalau ada kendala, kami bisa membicarakannya lebih awal.",
+    "example_cn": "我询问会议时间，好估算可用的时间。若有困难，我们可以早点商量。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 18:00",
+    "last_seen": "2026-11-04 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 18:00"
+    ]
+  },
+  {
+    "word": "berkas",
+    "cn": "文件；材料；档案包",
+    "en": "documents; file; dossier",
+    "root": "berkas",
+    "root_cn": "一束；成套材料",
+    "example": "Invoice merupakan bagian dari berkas pembayaran ini. Simpan salinannya supaya jumlah yang dibayar bisa diperiksa kembali.",
+    "example_cn": "这张账单是这套付款材料的一部分。把副本留好，方便再次核对支付金额。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 18:00",
+    "last_seen": "2026-11-04 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 18:00"
+    ]
+  },
+  {
+    "word": "tanda tangan",
+    "cn": "签名",
+    "en": "signature",
+    "root": "tanda tangan",
+    "root_cn": "签名（固定词组）",
+    "example": "Sebaiknya baca aturan yang berlaku sebelum memberi tanda tangan. Jangan terburu-buru menyetujui hal yang belum dipahami.",
+    "example_cn": "签名前最好先读适用的规则。没有理解的事情，不要急着同意。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 18:00",
+    "last_seen": "2026-11-04 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 18:00"
+    ]
+  },
+  {
+    "word": "menyerahkan",
+    "cn": "交给；提交；移交",
+    "en": "hand over; submit",
+    "root": "serah",
+    "root_cn": "交；移交",
+    "example": "Saya menyerahkan laporan kepada ketua seraya menjelaskan kendala yang muncul.",
+    "example_cn": "我把报告交给主席，同时说明出现的困难。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 18:00",
+    "last_seen": "2026-11-04 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 18:00"
+    ]
+  },
+  {
+    "word": "pertimbangan",
+    "cn": "考虑；考量因素",
+    "en": "consideration; factor to consider",
+    "root": "timbang",
+    "root_cn": "称量；权衡",
+    "example": "Peningkatan biaya menjadi pertimbangan utama. Kami ingin kegiatan ini menghasilkan manfaat yang nyata.",
+    "example_cn": "费用上涨成了主要考量。我们希望这项活动能带来实际益处。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 18:00",
+    "last_seen": "2026-11-04 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 18:00"
     ]
   }
 ];
