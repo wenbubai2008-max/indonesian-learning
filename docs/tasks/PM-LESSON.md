@@ -71,6 +71,8 @@ PM 专用的运行要求：
 
 **A. 新词：固定 5 个（2026-11-04 起）**
 
+**2026-11-05 起阅读陌生词直接融入晚课**：第二词库阶段，`runtime.unfamiliar_new_pool` 中用户主动标记且尚未正式学过的陌生词已经属于合法 `runtime.new_pool_dont`；早课当日未用到的应优先纳入晚课原有5个 new 名额（有合法候选时至少1个），不额外增加总词卡数量、不挤占4–6 review与2–3 application。若早课已正式教过，该词必须进入 `review_pool` 按原冷却复现，不能再次算新。中文释义、搭配、口语差异、例句按正式晚课词卡质量完整审稿；不要机械采用划词时的初始翻译。
+
 必须同时属于 runtime.new_pool 以及 new_pool_dont 或 new_pool_fuzzy 之一。优先兼顾至少 2 个 fuzzy 和 1 个 dont（仅在各类有足够合法候选时），剩余名额从合法候选补到 5 个；若 dont 已耗尽，则使用 5 个合法 fuzzy。晚课继续侧重把半熟词训练成能够主动调用的词。不得选用 unclassified、mastered，或当天 08:00 已经正式学过的词充当 PM 新词。晚课合法新词不足 5 个时按 E 处理，不凑数、不让旧词冒充新词。
 
 口语新词按 Validator 的 `PM_ORAL_COUNT` 执行：当晚有合法口语新词候选时至少用 1 个（最多 2 个，结合当天 08:00 已用的口语新词数；5 个新词不要全部是口语词，以免口语候选过快耗尽）；没有就是 0 个，不凑数（`docs/LESSON-QUALITY.md` §7b）。is_oral_new 必须以 runtime.oral_new_pool 为准，绝不能凭个人感觉标记（读取时按 Validator 的 word 归一化：字符串直接取词，数组取第一个元素，对象取 word 字段，再 trim/lowercase）。
