@@ -108,7 +108,29 @@ try{
   ok(profileUi.includes("home.querySelector(':scope > .hero')"),'profile fallback must mount directly after daily hero');
   ok(!profileUi.includes('DAILY_VOCAB_DB')&&!profileUi.includes('WeaknessPool'),'profile homepage must not recompute full vocab databases');
   ok(profileUi.includes('openVocabProfileDetail'),'profile summary must expose a clickable detail entry');
-  ok(profileUi.includes('主词库当前待学习')&&profileUi.includes('primary_eligible_new_total')&&!profileUi.includes('尚未正式学习 '+"'+data.primary_unlearned_total+'"),'profile shows only the actionable primary new-word remainder');
+  ok(profileUi.includes('主词库当前待学习')&&profileUi.includes('第二词库当前待学习')&&
+    profileUi.includes('primary_eligible_new_total')&&profileUi.includes('secondary_eligible_new_total')&&
+    profileUi.includes("data.active_master_pool==='secondary_bipa'")&&
+    !profileUi.includes('尚未正式学习 '+"'+data.primary_unlearned_total+'"),
+    'profile displays eligible new words for the active primary/secondary pool, never ineligible primary leftovers');
+  const poolStat=profileUi.match(/  function pendingPoolStat\(data\)\{([\s\S]*?)\n  \}/);
+  ok(!!poolStat,'current vocabulary bank display helper exists');
+  if(poolStat){
+    try{
+      const pending=vm.runInNewContext('(function(data){'+poolStat[1]+'\n})');
+      const first=pending({active_master_pool:'primary',primary_eligible_new_total:9,secondary_eligible_new_total:167});
+      const second=pending({active_master_pool:'secondary_bipa',primary_eligible_new_total:0,secondary_eligible_new_total:167});
+      const exhausted=pending({active_master_pool:'secondary_bipa',primary_eligible_new_total:0,secondary_eligible_new_total:0});
+      ok(first.label==='主词库当前待学习'&&first.count===9,'profile primary display uses primary remainder');
+      ok(second.label==='第二词库当前待学习'&&second.count===167,'profile after handoff uses secondary remainder');
+      ok(exhausted.count===0,'secondary bank exhaustion still displays accurate zero');
+    }catch(e){ok(false,'profile active-bank display contract: '+e.message)}
+  }
+  const profile=JSON.parse(read('data/vocab-profile.json')),runtime=JSON.parse(read('data/learning-runtime.json'));
+  ok(profile.active_master_pool===runtime.active_master_pool &&
+    profile.primary_eligible_new_total===runtime.stats.primary_new_pool_total_full &&
+    profile.secondary_eligible_new_total===runtime.stats.secondary_new_pool_total_full,
+    'built profile must copy active pool and both complete eligible new-word counts directly from runtime');
   // 2026-10-16 (user decision): seven tabs merged into 今天 / 本周 / 查词; the old names still open the tab that holds their content.
   ok(profileUi.includes("page.id='vocabProfileDetail'")&&profileUi.includes("[['today','今天'],['week','本周'],['words','查词']]")&&/TAB_ALIAS=\{today:'today',overview:'week',trend:'week',weekly:'week',advice:'week',week:'week',words:'words',weak:'words'\}/.test(profileUi),'profile detail page has the three tabs and maps old tab names');
   ok(profileUi.includes('function weekHTML(')&&profileUi.includes('本机验证的主动词汇')&&profileUi.includes('本机稳定识别词汇')&&profileUi.includes('trendHTML(data)')&&profileUi.includes('weeklyHTML()'),'本周 keeps the long-term ability numbers, weekly report and trend');
