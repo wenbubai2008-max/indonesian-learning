@@ -655,3 +655,11 @@
 - **校验错误**：`AM_FOCUS_NEW_REQUIRED`（有新词却选了旧词重点），`AM_FOCUS_CYCLE_REQUIRED`（新词不足3个时不优先使用当节循环词）。写课说明书、`data/learning-pool-rules.json` 的 `lesson_focus_rotation.am_new_first_from`、`lesson-focus-rotation.js` 和回归测试统一。
 - **历史及晚课**：不改已发布的11-04 AM JSON、词库数据、已学状态、复习记录；晚课依然允许从新词/复习/应用中混选重点；72小时/7天重复重点的冷却和真实新错例外继续适用，但不能推翻 AM 新词来源这一条硬限制。
 - **回归**：`test-lesson-focus-rotation.js` 覆盖旧课程不追溯、新课强制选新词、昨晚错词不能抢重点、两个新词＋一个循环词、零新词退到循环词，以及晚课混选不受影响。PR 预检和 `regression-guard.js` 验证。
+
+## 46. 2026-11-04 词汇画像“当前待学习”自动跟随活跃词库
+
+- **现象**：11月4日晚课后已进入第二词库，runtime 的主词库合法新词为0、第二词库合法新词为167；但“个人词汇画像 → 本周 → 总体情况”仍固定显示 `主词库当前待学习 0`，误导为已没有待学新词。
+- **唯一数据来源**：`.github/scripts/build-vocab-profile.js` 将 `data/learning-runtime.json` 中 `active_master_pool`、`stats.primary_new_pool_total_full`、`stats.secondary_new_pool_total_full` 复制到轻量 `data/vocab-profile.json`；不得让前端额外加载完整 runtime、手工汇总词库或将不符合资格的330个主词库余量混入数字。
+- **展示条件**：当 `active_master_pool === "secondary_bipa"` 时显示“第二词库当前待学习”及 `secondary_eligible_new_total`；其余状态显示“主词库当前待学习”及 `primary_eligible_new_total`。这个逻辑同时应用在详情统计和首页旧版兜底数字卡。切换后数量随 runtime 快照自动下降，不写死167。
+- **不改变**：正式学习、确认掌握、待强化、能力诊断、主动/被动词汇、学习记录和历史快照的统计逻辑；不改变任何词库资格、自动课程、同步流程和页面布局。
+- **验证**：`vocab-ui-regression-guard.js` 验证源数据直连、主库/第二库切换、第二库归零场景，以及新画像快照与 runtime 数值一致。生成端继续由原有 Build learning runtime Workflow 生成快照，不直接写正式课程或弱项。

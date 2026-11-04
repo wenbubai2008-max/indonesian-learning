@@ -151,8 +151,16 @@
     if(typeof window.installSiteNavBars==='function')window.installSiteNavBars();
     return page;
   }
+  // Display the live teaching pool's eligible first-learning remainder; never sum it
+  // with another pool or mistake the 330 ineligible primary words for new candidates.
+  function pendingPoolStat(data){
+    const secondary=data.active_master_pool==='secondary_bipa';
+    const count=Number(secondary?data.secondary_eligible_new_total:data.primary_eligible_new_total);
+    return {label:secondary?'第二词库当前待学习':'主词库当前待学习',
+      count:Number.isFinite(count)&&count>=0?count:0};
+  }
   // 2026-10-25 profile redesign B1: the home card is built by data/word-diagnosis-ui.js (per-layer coverage); the old numbers card is the fallback.
-  function legacyHomeCard(data){return '<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">真实学习与验证状态</div></div><span class="pill">网站快照</span></div><div class="vpHomeNumbers"><div><span>正式学习</span><b>'+data.taught_total+'</b></div><div><span>确认掌握</span><b>'+data.confirmed_mastered+'</b></div><div><span>待强化</span><b>'+data.needs_reinforcement+'</b></div><div><span>待验证</span><b>'+data.unverified+'</b></div><div class="vpHomeNumbersLast"><span>主词库待学习</span><b>'+data.primary_eligible_new_total+'</b></div></div><div class="vpWeekDelta" id="vpWeekDelta"></div><button class="vpOpen" type="button" id="openVocabProfile">查看本周情况与查词 →</button>';}
+  function legacyHomeCard(data){const pending=pendingPoolStat(data);return '<div class="vpHead"><div><h3>个人词汇画像</h3><div class="muted">真实学习与验证状态</div></div><span class="pill">网站快照</span></div><div class="vpHomeNumbers"><div><span>正式学习</span><b>'+data.taught_total+'</b></div><div><span>确认掌握</span><b>'+data.confirmed_mastered+'</b></div><div><span>待强化</span><b>'+data.needs_reinforcement+'</b></div><div><span>待验证</span><b>'+data.unverified+'</b></div><div class="vpHomeNumbersLast"><span>'+pending.label+'</span><b>'+pending.count+'</b></div></div><div class="vpWeekDelta" id="vpWeekDelta"></div><button class="vpOpen" type="button" id="openVocabProfile">查看本周情况与查词 →</button>';}
   function renderHomeCard(){
     const box=document.getElementById('vocabProfile');if(!box||!PROFILE)return;
     const diag=window.WordDiagnosisUI?window.WordDiagnosisUI.homeCard(PROFILE):'';
@@ -256,14 +264,14 @@
   }
   // 本周: one-sentence conclusion, the long-term numbers (old 能力总览), this week's report, then the snapshot trend.
   function weekHTML(data){
-    const ev=evidenceData(),active=ev.attempts?String(ev.active):'待积累',passive=ev.attempts?String(ev.passive):'待积累';
+    const ev=evidenceData(),active=ev.attempts?String(ev.active):'待积累',passive=ev.attempts?String(ev.passive):'待积累',pending=pendingPoolStat(data);
     let r=null;try{r=window.WeeklyMemoryReport&&window.WeeklyMemoryReport.compute()}catch(e){}
     const parts=[];
     if(r){parts.push('本周新学 '+r.newThisWeek+' 个词');if(r.recentTotal)parts.push('近 7 天新词已正式验证 '+r.verified+'/'+r.recentTotal);parts.push(r.retention.enough?'学后 7–30 天正确率 '+r.retention.rate+'%':'正确率样本不足');if(r.forgotten.length)parts.push('反复遗忘 '+r.forgotten.length+' 个');}
     if(weekDelta)parts.push('确认掌握近 '+weekDelta.days+' 天 '+(weekDelta.mastered>0?'+':'')+weekDelta.mastered);
     const adv=suggestions(data)[0];
     const conclusion='<div class="vpConclusion"><b>本周结论：</b>'+esc(parts.join('，'))+'。'+(adv&&adv[0]!=='继续观察'?'<br><b>'+esc(adv[0])+'：</b>'+esc(adv[1]):'')+'</div>';
-    const totals='<div class="vpSection"><h3>总体情况</h3><div class="vpMiniStats"><div><b>'+data.taught_total+'</b><span>正式学习</span></div><div><b>'+data.confirmed_mastered+'</b><span>确认掌握</span></div><div><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div><b>'+data.unverified+'</b><span>尚待验证</span></div></div><div class="vpMiniStats"><div><b>'+active+'</b><span>本机验证的主动词汇</span></div><div><b>'+passive+'</b><span>本机稳定识别词汇</span></div><div><b>'+data.primary_eligible_new_total+'</b><span>主词库当前待学习</span></div><div><b>'+(ev.relearned||0)+'/'+(ev.forgotten||0)+'</b><span>再次通过 / 验证后又忘</span></div></div><p class="vpCoverageNote">主动词汇：无提示提取、语境补词、自我表达都完成，并在两个不同日期通过延迟验证。稳定识别：最近一次错误后至少三次正确、覆盖两个日期。两者不重复统计，也不把原有 mastered 自动算入。</p></div>';
+    const totals='<div class="vpSection"><h3>总体情况</h3><div class="vpMiniStats"><div><b>'+data.taught_total+'</b><span>正式学习</span></div><div><b>'+data.confirmed_mastered+'</b><span>确认掌握</span></div><div><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div><b>'+data.unverified+'</b><span>尚待验证</span></div></div><div class="vpMiniStats"><div><b>'+active+'</b><span>本机验证的主动词汇</span></div><div><b>'+passive+'</b><span>本机稳定识别词汇</span></div><div><b>'+pending.count+'</b><span>'+pending.label+'</span></div><div><b>'+(ev.relearned||0)+'/'+(ev.forgotten||0)+'</b><span>再次通过 / 验证后又忘</span></div></div><p class="vpCoverageNote">主动词汇：无提示提取、语境补词、自我表达都完成，并在两个不同日期通过延迟验证。稳定识别：最近一次错误后至少三次正确、覆盖两个日期。两者不重复统计，也不把原有 mastered 自动算入。</p></div>';
     // 2026-10-25 phase-1 observation panel (read-only, data/ability-observation.js).
     const obsRaw=window.AbilityObservation?window.AbilityObservation.html():'';
     const obs=obsRaw?'<details class="vpObsFold"><summary>观察数据（两周观察期，不影响学习）</summary>'+obsRaw+'</details>':'';
