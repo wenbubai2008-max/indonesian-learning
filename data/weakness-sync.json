@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-04T02:53:45.110Z",
+  "updated_at": "2026-11-04T07:07:03.497Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2674,14 +2674,14 @@
     "titik": {
       "word": "titik",
       "status": "active",
-      "updated_at": "2026-11-02T05:55:06.529Z",
+      "updated_at": "2026-11-04T06:54:29.246Z",
       "display": "titik",
-      "last_review": "2026-11-02T05:55:06.475Z",
+      "last_review": "2026-11-04T06:54:29.182Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "umumnya": {
       "word": "umumnya",
@@ -2781,14 +2781,14 @@
     "fakta": {
       "word": "fakta",
       "status": "active",
-      "updated_at": "2026-11-02T05:56:42.015Z",
+      "updated_at": "2026-11-04T06:53:58.392Z",
       "display": "fakta",
-      "last_review": "2026-11-02T05:56:41.961Z",
+      "last_review": "2026-11-04T06:53:58.333Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "kehilangan": {
       "word": "kehilangan",
@@ -6019,14 +6019,14 @@
     "menyukai": {
       "word": "menyukai",
       "status": "active",
-      "updated_at": "2026-11-02T05:56:50.717Z",
+      "updated_at": "2026-11-04T06:54:01.738Z",
       "display": "menyukai",
-      "last_review": "2026-11-02T05:56:50.662Z",
+      "last_review": "2026-11-04T06:54:01.675Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "mengalir": {
       "word": "mengalir",
@@ -6414,17 +6414,17 @@
     "bergetar": {
       "word": "bergetar",
       "status": "active",
-      "updated_at": "2026-11-02T06:14:55.213Z",
+      "updated_at": "2026-11-04T06:54:21.657Z",
       "display": "bergetar",
       "cn": "震动；颤动",
       "root": "getar",
       "root_cn": "振动；颤动",
-      "last_review": "2026-11-02T05:54:42.237Z",
+      "last_review": "2026-11-04T06:54:21.595Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "menanggung": {
       "word": "menanggung",
@@ -6661,14 +6661,14 @@
     "nilai": {
       "word": "nilai",
       "status": "active",
-      "updated_at": "2026-11-02T05:56:52.912Z",
+      "updated_at": "2026-11-04T06:54:03.737Z",
       "display": "nilai",
-      "last_review": "2026-11-02T05:56:52.858Z",
+      "last_review": "2026-11-04T06:54:03.672Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "walau": {
       "word": "walau",
@@ -6720,19 +6720,19 @@
     "tampak": {
       "word": "tampak",
       "status": "active",
-      "updated_at": "2026-11-02T05:54:10.822Z",
+      "updated_at": "2026-11-04T06:53:54.750Z",
       "display": "tampak",
       "cn": "看起来；显得；看得见",
       "root": "tampak",
       "root_cn": "显现；看得见",
       "last_wrong": "2026-11-01T04:10:53.135Z",
-      "last_review": "2026-11-02T05:54:10.759Z",
+      "last_review": "2026-11-04T06:53:54.656Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "berhenti": {
       "word": "berhenti",
@@ -7536,14 +7536,14 @@
     "ilmu": {
       "word": "ilmu",
       "status": "active",
-      "updated_at": "2026-11-02T05:56:44.134Z",
+      "updated_at": "2026-11-04T06:54:36.142Z",
       "display": "ilmu",
-      "last_review": "2026-11-02T05:56:44.081Z",
+      "last_review": "2026-11-04T06:54:36.087Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "periode": {
       "word": "periode",
@@ -8204,14 +8204,14 @@
     "angkatan": {
       "word": "angkatan",
       "status": "active",
-      "updated_at": "2026-11-02T05:56:35.084Z",
+      "updated_at": "2026-11-04T06:54:31.653Z",
       "display": "angkatan",
-      "last_review": "2026-11-02T05:56:35.025Z",
+      "last_review": "2026-11-04T06:54:31.598Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "mayoritas": {
       "word": "mayoritas",
@@ -8582,14 +8582,14 @@
     "kehadiran": {
       "word": "kehadiran",
       "status": "active",
-      "updated_at": "2026-11-02T05:56:48.368Z",
+      "updated_at": "2026-11-04T06:54:13.676Z",
       "display": "kehadiran",
-      "last_review": "2026-11-02T05:56:48.312Z",
+      "last_review": "2026-11-04T06:54:13.615Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "sepakat": {
       "word": "sepakat",
@@ -14043,8 +14043,9 @@
     "daftar": {
       "word": "daftar",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:56.591Z",
+      "updated_at": "2026-11-04T07:06:52.286Z",
       "display": "daftar",
+      "cn": "清单",
       "last_review": "2026-09-12T14:13:57.139Z",
       "last_mastered": "2026-09-12T14:13:57.139Z",
       "reasons": [],
@@ -14623,15 +14624,15 @@
     "diperlukan": {
       "word": "diperlukan",
       "status": "active",
-      "updated_at": "2026-11-02T05:56:40.316Z",
+      "updated_at": "2026-11-04T06:54:11.155Z",
       "display": "diperlukan",
       "cn": "需要的",
-      "last_review": "2026-11-02T05:56:40.261Z",
+      "last_review": "2026-11-04T06:54:11.099Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "penerbangan": {
       "word": "penerbangan",
@@ -16257,16 +16258,16 @@
     "benci": {
       "word": "benci",
       "status": "active",
-      "updated_at": "2026-11-02T05:56:37.292Z",
+      "updated_at": "2026-11-04T06:54:34.154Z",
       "display": "benci",
       "cn": "讨厌；恨",
       "root": "benci",
-      "last_review": "2026-11-02T05:56:37.236Z",
+      "last_review": "2026-11-04T06:54:34.098Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "prinsip": {
       "word": "prinsip",
@@ -17102,16 +17103,16 @@
     "subuh": {
       "word": "subuh",
       "status": "active",
-      "updated_at": "2026-11-02T05:54:59.629Z",
+      "updated_at": "2026-11-04T06:54:24.094Z",
       "display": "subuh",
       "cn": "黎明；晨礼时间",
       "root": "subuh",
-      "last_review": "2026-11-02T05:54:59.574Z",
+      "last_review": "2026-11-04T06:54:24.039Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "memenangkan": {
       "word": "memenangkan",
@@ -20085,16 +20086,16 @@
     "putuskan": {
       "word": "putuskan",
       "status": "active",
-      "updated_at": "2026-11-02T05:57:00.852Z",
+      "updated_at": "2026-11-04T06:54:17.589Z",
       "display": "putuskan",
       "cn": "决定",
       "root": "putus",
-      "last_review": "2026-11-02T05:57:00.796Z",
+      "last_review": "2026-11-04T06:54:17.533Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "coba": {
       "word": "coba",
@@ -21045,16 +21046,16 @@
     "pendiam": {
       "word": "pendiam",
       "status": "active",
-      "updated_at": "2026-11-02T05:56:55.955Z",
+      "updated_at": "2026-11-04T06:54:06.725Z",
       "display": "pendiam",
       "cn": "沉默寡言",
       "root": "diam",
-      "last_review": "2026-11-02T05:56:55.900Z",
+      "last_review": "2026-11-04T06:54:06.665Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "biasa": {
       "word": "biasa",
