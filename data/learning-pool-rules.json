@@ -13,7 +13,10 @@
     "rule": "今天的重点3词独立于核心复习曝光账本：最近72小时内已经入选重点的词不再入选；最近7天已入选重点2次的词暂停入选。只统计已完成课程lesson_focus.words，阅读/例句的自然出现不计入重点。",
     "fresh_error_override": "只有runtime.review_pool中last_wrong晚于该词最近一次重点和最近一次主动复习、且不晚于runtime.generated_at（允许5分钟时钟容差）的真实新错才能突破冷却，旧错和旧弱项标签不能突破。",
     "fallback": "只在本节合法词卡中有未冷却的替代词时禁止重复重点；替代词不足才放行必要的重复，不阻断课程发布。",
-    "unchanged": "不改变new_pool、review_pool、focus_pool、已掌握状态、早晚课词卡配额、课文自然复现、深讲暂停状态；不追溯历史课程。"
+    "unchanged": "不改变new_pool、review_pool、focus_pool、已掌握状态、早晚课词卡配额、课文自然复现、深讲暂停状态；不追溯历史课程。",
+    "am_new_first_from": "2026-11-05",
+    "am_new_first_rule": "从2026-11-05早课起，lesson_focus.words三个重点全部选当节首次正式学习的新词（AM vocab排除cycle_vocab）；真实新错只能影响review_vocab，不得占用新词重点。PM继续允许新词、复习和应用混选，原72小时/7天重点冷却继续有效。",
+    "am_cycle_fallback": "若当日合法新词不足3个，全部剩余新词必须入选重点，剩余位置先从当节cycle_vocab里选；cycle_vocab也不足时才用review_vocab。新词为0时三个重点选循环复习词，不能因此卡住复习阶段。"
   },
   "symbols": {
     "M": "按持久化handoff状态决定的新词来源：primary阶段以977为主，并在977词之后追加第二库dont词作为dont补给（不追加第二库fuzzy词）；transition阶段977余量优先并由第二库补足；secondary阶段只用第二库",
@@ -69,7 +72,8 @@
     "review_vocab_schema": "课程根字段必须命名为 review_vocab；约5个（允许4-6个）非空字符串，全部来自runtime.review_pool，与当天10个vocab新词不重叠。",
     "root_schema": "课程根级必须同时包含 vocab、review_vocab、sentences、reading、quiz、output、review；vocab=10、sentences=5、quiz=3、review=3；reading含text/cn；output含task/reference_answer/reference_cn。",
     "cross_day_dedup": "若前一天PM完整，则其new_words不得再次进入当天AM vocab；且前一天PM new_words若仍存在于runtime.new_pool，视为runtime未同步并停止生成。",
-    "review_rotation": "每次读取最近7天index完成的早晚课核心复习历史；前一晚PM重点次晨避免再次核心复习（新真实答错例外）；低曝光、到期词优先。"
+    "review_rotation": "每次读取最近7天index完成的早晚课核心复习历史；前一晚PM重点次晨避免再次核心复习（新真实答错例外）；低曝光、到期词优先。",
+    "lesson_focus": "从2026-11-05起当天新词不少于3个时，今天的重点3词必须全部来自当天AM首次正式学习的vocab，不得使用review_vocab，即使昨晚真实答错也不例外；新词少于3个时，先放全部剩余新词，再选cycle_vocab；仍不足才用review_vocab。仅改变lesson_focus标记，不改变复习词配额或现有弱项排序。"
   },
   "pm_contract": {
     "scheduled_time": "18:00",
