@@ -4,16 +4,16 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 925,
-   "recognize": 104,
+   "use": 934,
+   "recognize": 105,
    "unsure": 21,
-   "fast": 135
+   "fast": 136
   },
   "active": {
-   "use": 648,
-   "recognize": 88,
+   "use": 657,
+   "recognize": 89,
    "unsure": 19,
-   "fast": 57
+   "fast": 58
   }
  },
  "words": {
@@ -9680,6 +9680,97 @@
    "status": "active",
    "why": [
     "第二词库 A2 / S"
+   ]
+  },
+  "pers": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "977 主库第 517 位"
+   ]
+  },
+  "berasal dari": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
+   ]
+  },
+  "berbelanja": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
+   ]
+  },
+  "suka menolong": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
+   ]
+  },
+  "menyapu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
+   ]
+  },
+  "sapu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
+   ]
+  },
+  "ember": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
+   ]
+  },
+  "saking": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（口语）",
+    "第二词库 B1 / A"
+   ]
+  },
+  "menyebalkan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "kemeja": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
    ]
   }
  }
