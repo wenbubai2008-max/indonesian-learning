@@ -842,6 +842,10 @@ try {
     const cfg=rules.lesson_focus_rotation||{};
     ok(cfg.enabled===true&&cfg.effective_date==='2026-11-04'&&cfg.cooldown_hours===72&&cfg.window_days===7&&cfg.max_prior_focus===2,
       'focus highlight cooldown is configured for 72 hours / two in seven days from 2026-11-04');
+    ok(cfg.am_new_first_from==='2026-11-05'&&/新词/.test(String(cfg.am_new_first_rule||''))&&/cycle_vocab/.test(String(cfg.am_cycle_fallback||'')),
+      'AM focus highlights must be newly taught words from 2026-11-05, then review-cycle fallback');
+    ok(read('docs/tasks/AM-LESSON.md').includes('AM_FOCUS_NEW_REQUIRED')&&read('docs/tasks/AM-LESSON.md').includes('AM_FOCUS_CYCLE_REQUIRED'),
+      'AM generation runbook explicitly guards three focus words from old reviews');
     const validator=read('.github/scripts/validate-lesson-candidate.js');
     ok(validator.includes("require('./lesson-focus-rotation')")&&validator.includes('checkFocus({lesson,reviewHistory,runtime,config:rules.lesson_focus_rotation})'),
       'candidate validator applies focus cooldown to published seven-day lesson history');

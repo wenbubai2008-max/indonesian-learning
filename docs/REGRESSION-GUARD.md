@@ -647,3 +647,11 @@
 - **不足 5 个新词时**：晚课 `review_cycle.active=true`，新词数量恰等于晚课仍合法的全部余量（0–4 个），原有循环复习 4–9 个、应用 2–3 个、总词卡 10–12 的结构保留；不会强行使用未教资格不明或已掌握词来补足 5。校验器 `PM_GROUP_COUNT` 和 `PM_CORE_COUNT` 均使用同一日期与新词可用量判断。
 - **验收**：`.github/scripts/test-review-phase.js` 断言历史与新日期的配额不同；`.github/scripts/test-review-cycle.js` 断言新日期 5 个新词、复习/应用名额不变，且不足 5 个进入复习循环；`regression-guard.js` 的最近课程、最新 PM 检查使用课程各自的日期合同；`rank-review-candidates.js` 的循环阈值与校验器一致。预测工具使用新的每日消耗速度。
 - **不得改变**：早课 10 新词、原有复习冷却/曝光账本、runtime 学习资格与 977/第二库切换、历史课程 JSON、12:00 泛读、定时任务启停、暂停中的深讲或 V4 备用课程。只修改本次必要的权威数据规则、教学任务说明、校验/排序/统计脚本及其测试。
+
+## 45. 2026-11-04 早课重点词只从当天新词中选（2026-11-05 起）
+
+- **触发问题**：2026-11-04 AM `lesson_focus.words=["kasur","selera","berbelanja"]`，其中 `kasur` 是前晚新词、`selera` 是前晚复习词，早课10个新词只占了重点3词中的1词。旧规则允许从 `vocab/review_vocab/cycle_vocab` 混选，并且真实新错可以突破72小时重点冷却；用户明确要求早课3个重点聚焦今天的新词，老错词继续正常复习，不抢占新词重点。
+- **新硬规则**：自 2026-11-05 AM 起，优先从 AM 当节 `vocab` 排除 `cycle_vocab` 的新词中选满3个重点。若合法新词只剩1或2个，则必须全部入选重点，余下名额从当节 `cycle_vocab` 补足；如没有足够循环词，最后才考虑 `review_vocab`。没有新词时，3个重点进入循环复习模式。仅约束 `lesson_focus.words`，两个句型的数量和来源不变。
+- **校验错误**：`AM_FOCUS_NEW_REQUIRED`（有新词却选了旧词重点），`AM_FOCUS_CYCLE_REQUIRED`（新词不足3个时不优先使用当节循环词）。写课说明书、`data/learning-pool-rules.json` 的 `lesson_focus_rotation.am_new_first_from`、`lesson-focus-rotation.js` 和回归测试统一。
+- **历史及晚课**：不改已发布的11-04 AM JSON、词库数据、已学状态、复习记录；晚课依然允许从新词/复习/应用中混选重点；72小时/7天重复重点的冷却和真实新错例外继续适用，但不能推翻 AM 新词来源这一条硬限制。
+- **回归**：`test-lesson-focus-rotation.js` 覆盖旧课程不追溯、新课强制选新词、昨晚错词不能抢重点、两个新词＋一个循环词、零新词退到循环词，以及晚课混选不受影响。PR 预检和 `regression-guard.js` 验证。
