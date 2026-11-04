@@ -18,6 +18,8 @@ on:
       - 'data/bipa-secondary-seed-20260917.js'
       - '.github/scripts/build-bipa-level-chunks.js'
       - '.github/scripts/build-learning-runtime.js'
+      - '.github/scripts/unfamiliar-lesson-pool.js'
+      - '.github/scripts/test-unfamiliar-lesson-pool.js'
       - '.github/scripts/build-lesson-context.js'
       - '.github/scripts/test-build-lesson-context.js'
       - '.github/scripts/build-vocab-profile.js'
@@ -187,6 +189,9 @@ jobs:
           node .github/scripts/test-weakness-batch-import.js
           node --check .github/scripts/test-handoff-drill.js
           node .github/scripts/test-handoff-drill.js
+          node --check .github/scripts/unfamiliar-lesson-pool.js
+          node --check .github/scripts/test-unfamiliar-lesson-pool.js
+          node .github/scripts/test-unfamiliar-lesson-pool.js
           node --check data/training-sync-client.js
           node --check data/sync-device-setup.js
           node --check data/weakness-sync-client.js
