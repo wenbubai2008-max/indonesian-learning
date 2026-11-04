@@ -1,0 +1,388 @@
+{
+  "date": "2026-11-04",
+  "session": "pm",
+  "time": "18:00",
+  "day": 75,
+  "title": "18:00 晚课｜Tanya Dulu Sebelum Menyerahkan Berkas · 交材料前，先把要求问清楚",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "menanyakan",
+    "berkas",
+    "tanda tangan",
+    "menyerahkan",
+    "pertimbangan"
+  ],
+  "vocab": [
+    {
+      "word": "menanyakan",
+      "display": "menanyakan",
+      "audio_text": "menanyakan",
+      "cn": "询问；问及某事",
+      "en": "ask about; inquire",
+      "root": "tanya",
+      "root_cn": "问",
+      "formation": "meN- + tanya + -kan → menanyakan，t 脱落。搭配：menanyakan jadwal、menanyakan biaya、menanyakan sesuatu kepada petugas。",
+      "example": "Saya menanyakan jadwal rapat untuk memperkirakan waktu yang tersedia. Kalau ada kendala, kami bisa membicarakannya lebih awal.",
+      "example_cn": "我询问会议时间，好估算可用的时间。若有困难，我们可以早点商量。",
+      "synonym_note": "menanyakan 接所问的内容：menanyakan jadwal；bertanya 可接 kepada 人或 tentang 话题。口语说法：nanyain，如 Aku mau nanyain jadwalnya.（我想问问时间。）",
+      "usage_note": "注意内容和对象：Saya menanyakan jadwal kepada petugas. 不要把所问的人和所问的事情混成一个宾语。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "berkas",
+      "display": "berkas",
+      "audio_text": "berkas",
+      "cn": "文件；材料；档案包",
+      "en": "documents; file; dossier",
+      "root": "berkas",
+      "root_cn": "一束；成套材料",
+      "formation": "基本名词。搭配：berkas permohonan（申请材料）、berkas lengkap（齐全的材料）、memeriksa berkas（检查材料）。也可指电脑文件，须看语境。",
+      "example": "Invoice merupakan bagian dari berkas pembayaran ini. Simpan salinannya supaya jumlah yang dibayar bisa diperiksa kembali.",
+      "example_cn": "这张账单是这套付款材料的一部分。把副本留好，方便再次核对支付金额。",
+      "synonym_note": "berkas 可以是一套相关材料；surat 常指信件或一份书面函件。dokumen 范围也很广，不能把 berkas 永远理解成纸。口语说法：Berkasnya udah lengkap?（材料齐了吗？）",
+      "usage_note": "今天练的是纸面申请材料；不要把一份 surat 和一整套 berkas 的数量机械等同。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "tanda tangan",
+      "display": "tanda tangan",
+      "audio_text": "tanda tangan",
+      "cn": "签名",
+      "en": "signature",
+      "root": "tanda tangan",
+      "root_cn": "签名（固定词组）",
+      "formation": "tanda（标记）+ tangan（手），整体表示签名。搭配：memberi tanda tangan、meminta tanda tangan、tanda tangan ketua。动词形式 menandatangani 表示签署。",
+      "example": "Sebaiknya baca aturan yang berlaku sebelum memberi tanda tangan. Jangan terburu-buru menyetujui hal yang belum dipahami.",
+      "example_cn": "签名前最好先读适用的规则。没有理解的事情，不要急着同意。",
+      "synonym_note": "tanda tangan 是签名这个名词；menandatangani 是签署动作：menandatangani surat。口语说法：minta tanda tangan（请人签字）；不能把每个“标记”都叫签名。",
+      "usage_note": "请求签字时说明文件和目的：Mohon tanda tangan Bapak pada surat ini.（请您在这封函件上签字。）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menyerahkan",
+      "display": "menyerahkan",
+      "audio_text": "menyerahkan",
+      "cn": "交给；提交；移交",
+      "en": "hand over; submit",
+      "root": "serah",
+      "root_cn": "交；移交",
+      "formation": "meN- + serah + -kan → menyerahkan，s 脱落。搭配：menyerahkan berkas、menyerahkan surat kepada ketua、menyerahkan tugas kepada rekan。",
+      "example": "Saya menyerahkan laporan kepada ketua seraya menjelaskan kendala yang muncul.",
+      "example_cn": "我把报告交给主席，同时说明出现的困难。",
+      "synonym_note": "menyerahkan 强调把东西或责任交给对方；mengirim 强调发送，未必当面移交。口语说法：nyerahin；交材料可说 Aku mau nyerahin berkas.（我想交材料。）",
+      "usage_note": "用 kepada 说明接收者；不是所有 menyerahkan 都表示放弃。放弃抵抗常说 menyerah，不要和递交文件混淆。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "pertimbangan",
+      "display": "pertimbangan",
+      "audio_text": "pertimbangan",
+      "cn": "考虑；考量因素",
+      "en": "consideration; factor to consider",
+      "root": "timbang",
+      "root_cn": "称量；权衡",
+      "formation": "per- + timbang + -an → pertimbangan，t 保留。搭配：bahan pertimbangan（供考虑的依据）、menjadi pertimbangan、pertimbangan utama（主要考量）。",
+      "example": "Peningkatan biaya menjadi pertimbangan utama. Kami ingin kegiatan ini menghasilkan manfaat yang nyata.",
+      "example_cn": "费用上涨成了主要考量。我们希望这项活动能带来实际益处。",
+      "synonym_note": "pertimbangan 是考虑的过程或依据；keputusan 是作出的决定。Ada pertimbangan lain. 并不等于已经否决。口语说法：Buat bahan mikir dulu. 可表达“先供考虑”，正式汇报仍用 bahan pertimbangan。",
+      "usage_note": "问清“正在考虑”还是“已经决定”，不要替对方把尚未确定的事情说成批准。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menyalin",
+      "display": "menyalin",
+      "audio_text": "menyalin",
+      "cn": "抄写；复制",
+      "en": "copy; transcribe",
+      "root": "salin",
+      "root_cn": "复制；抄写",
+      "formation": "meN- + salin → menyalin，s 脱落。搭配：menyalin nama、menyalin catatan、menyalin isi surat。",
+      "example": "Saya menyalin silsilah keluarga dari buku lama supaya nama dan hubungan antarkeluarga tidak hilang.",
+      "example_cn": "我把家谱从旧书里抄下来，免得姓名和家族关系信息丢失。",
+      "synonym_note": "menyalin 是复制现有内容；menulis 可以写新内容；mencatat 常指做记录。口语说法：nyalin，如 Jangan salah nyalin namanya.（名字别抄错。）",
+      "usage_note": "复习时先判断内容是否已经存在。不要把自己新写一封信说成 menyalin，除非确实在抄原文。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "seraya",
+      "display": "seraya",
+      "audio_text": "seraya",
+      "cn": "同时；一边……一边……",
+      "en": "while; at the same time",
+      "root": "seraya",
+      "root_cn": "同时；一边……一边……",
+      "formation": "连接同时发生的动作，偏书面叙述。搭配：berkata seraya tersenyum、menjelaskan seraya menunjuk、berjalan seraya berbicara。",
+      "example": "Ketua mengarahkan peserta ke ruang utama seraya menunjuk peta gedung.",
+      "example_cn": "主席一边指着楼内地图，一边引导参与者去主会场。",
+      "synonym_note": "seraya 和 sambil 都能连接同时做的事；seraya 更常见于书面叙述，sambil 更适合日常聊天。口语说法：Kita cek namanya sambil nunggu.（咱们一边等，一边核对名字。）",
+      "usage_note": "不要为了复现 seraya 把朋友的口语写成文学旁白；叙述可以用它，对话优先用 sambil。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kejebak",
+      "display": "kejebak",
+      "audio_text": "kejebak",
+      "cn": "被困住；陷入某种情况（口语）",
+      "en": "get stuck; get trapped",
+      "root": "jebak",
+      "root_cn": "诱捕；使陷入",
+      "formation": "口语形式，对应标准语 terjebak。搭配：kejebak macet、kejebak hujan、kejebak di lift。ke- 在这个口语形式里对应意外进入某种状态。",
+      "example": "Aku kejebak macet, jadi nggak sempat menyaksikan pertandingan sampai selesai.",
+      "example_cn": "我堵在路上，所以没来得及把比赛看完。（kejebak = terjebak；nggak = tidak）",
+      "synonym_note": "kejebak 是自己陷在某个状况里；menjebak 是设局让别人陷进去。口语说法：Aku kejebak macet.；正式说明写 Saya terjebak kemacetan.。",
+      "usage_note": "本课把它放在朋友聊天和主动回应中练；不能把 kejebak macet 简单译成“正在开车”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ketua",
+      "display": "ketua",
+      "audio_text": "ketua",
+      "cn": "主席；负责人；组长",
+      "en": "chairperson; head",
+      "root": "ketua",
+      "root_cn": "主席；负责人",
+      "formation": "名词。搭配：ketua RT（邻里单位负责人）、ketua panitia（筹备组负责人）、ketua kelas（班长）。具体职务随组织而定。",
+      "example": "Ketua mengajak kami membahas tantangan ini tanpa saling memberi komentar negatif.",
+      "example_cn": "负责人邀请我们讨论这项挑战，不要互相说负面的话。",
+      "synonym_note": "ketua 通常是某团体或委员会的负责人；kepala 也用于负责人，但职称有固定习惯：ketua panitia、kepala sekolah。口语说法：Pak Ketua 可礼貌称呼男性负责人，不是所有上级都这么叫。",
+      "usage_note": "向负责人提出请求时，说清具体问题，再问对方是否能安排；不因为称呼是 ketua 就假定他有全部权限。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "khusus",
+      "display": "khusus",
+      "audio_text": "khusus",
+      "cn": "专门的；特定的",
+      "en": "special; specific; dedicated",
+      "root": "khusus",
+      "root_cn": "特定；专门",
+      "formation": "形容词。搭配：ruang khusus、waktu khusus、khusus untuk peserta。派生 khususnya 表示尤其、特别是，句法不同。",
+      "example": "Tidak semua barang yang dibuat khusus harus mahal atau terlihat istimewa.",
+      "example_cn": "并不是所有专门制作的东西都必须昂贵或看起来出众。",
+      "synonym_note": "khusus 强调用途或对象有特定范围；istimewa 强调特别、出众。ruang khusus untuk rapat 只是专供会议使用，不等于豪华。口语说法：Ini khusus buat peserta.（这是专给参与者的。）",
+      "usage_note": "关注“给谁、做什么用”，不要看到 khusus 就自动理解成高级或昂贵。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "saking",
+      "display": "saking",
+      "audio_text": "saking",
+      "cn": "太……以至于；由于非常……",
+      "en": "so ... that; because of being so",
+      "root": "saking",
+      "root_cn": "由于太……",
+      "formation": "口语结构 saking + 状态／动作，接程度过高带来的结果。搭配：saking gugupnya、saking capeknya、saking sibuknya。今天08:00新学。",
+      "example": "Saking gugupnya, aku kelepasan bilang bahwa rapatnya dibatalkan, padahal baru ditunda. Aku langsung meralatnya.",
+      "example_cn": "我紧张得一不小心说会议取消了，其实只是推迟。我马上更正了。（kelepasan = terlanjur tanpa sengaja）",
+      "synonym_note": "saking 突出程度导致结果；karena 不一定强调程度。saking gugupnya 是“太紧张”，不是“为了紧张”。口语说法：Saking gugupnya, aku lupa namanya.（我紧张得忘了名字。）",
+      "usage_note": "今天08:00新学。今晚换成向负责人说话的场景；上午遗忘的词在这里主动说，不重复购物故事。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kemeja",
+      "display": "kemeja",
+      "audio_text": "kemeja",
+      "cn": "衬衫",
+      "en": "shirt",
+      "root": "kemeja",
+      "root_cn": "衬衫",
+      "formation": "名词。搭配：kemeja putih、kemeja lengan panjang、memakai kemeja。今天08:00新学。",
+      "example": "Kemeja itu tampak biasa, tetapi bagi Ayah sangat istimewa karena merupakan hadiah dari Ibu.",
+      "example_cn": "那件衬衫看起来普通，但对爸爸很特别，因为是妈妈送的礼物。",
+      "synonym_note": "kemeja 指衬衫；baju 更泛指衣服。穿得正式不一定只穿某一种颜色，须看场合。口语说法：Pakai kemeja aja.（穿衬衫就好。）",
+      "usage_note": "今天08:00新学。今晚把它放到开会、见负责人等准备场景；不要求买新衣服。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Rabu sore, Dini datang ke kantor RT untuk menanyakan cara meminjam ruang pertemuan. Ia membawa berkas rencana kelas bahasa untuk warga. Ketua membaca rencana itu seraya mencatat waktu yang diminta. Menurutnya, jadwal kegiatan lain perlu menjadi pertimbangan sebelum ia memberi tanda tangan. Dini menjelaskan bahwa mereka tidak meminta ruang khusus; ruangan biasa pun cukup. Namun, daftar peserta dalam berkas belum lengkap. Dini lalu menyalin nama yang sudah pasti ikut dan berjanji melengkapi sisanya besok. Ia belum menyerahkan berkas itu sebagai permohonan lengkap. Dengan demikian, ia pulang dengan tugas yang jelas dan tidak menganggap permintaannya sudah disetujui.",
+    "cn": "星期三下午，迪妮来到RT办公室，询问借用会议室的办法。她带着一套为居民开语言班的计划材料。负责人一边阅读计划，一边记下她希望使用的时间。他说，签名前还需要考虑其他活动的安排。迪妮说明，他们不要求专门的房间，普通房间就够了。不过，材料里的参与者名单还不完整。于是，她把确定参加的人的名字抄下来，并答应明天补齐其余部分。她尚未把这些材料作为完整申请正式交上去。因此，她带着明确的待办事项回家，没有把请求当成已经获准。"
+  },
+  "dialogue": {
+    "title": "去办公室之前，Dini和Bayu核对材料",
+    "lines": [
+      {
+        "speaker": "Dini",
+        "id": "Bay, berkasnya udah kamu cek? Aku mau nanyain jadwal ruang pertemuan sore ini.",
+        "cn": "巴尤，你核对过材料了吗？我今天下午想去问会议室的时间。（udah = sudah；nanyain = menanyakan）"
+      },
+      {
+        "speaker": "Bayu",
+        "id": "Udah, tapi daftar pesertanya belum lengkap. Jangan nyerahin seolah-olah semuanya udah pasti.",
+        "cn": "看过了，但参与者名单还不完整。别像一切都确定了一样交上去。（nyerahin = menyerahkan）"
+      },
+      {
+        "speaker": "Dini",
+        "id": "Iya, aku mau tanya dulu. Saking gugupnya, tadi aku nyalin nama satu orang dua kali.",
+        "cn": "嗯，我先问清楚。我刚才太紧张，把一个人的名字抄了两遍。（nyalin = menyalin）"
+      },
+      {
+        "speaker": "Bayu",
+        "id": "Nggak apa-apa, kita benerin dulu. Ketua perlu lihat jadwal lain juga sebelum kasih tanda tangan.",
+        "cn": "没事，咱们先改好。负责人签名前也得看其他安排。（nggak = tidak；benerin = memperbaiki；kasih = memberi）"
+      },
+      {
+        "speaker": "Dini",
+        "id": "Aku pakai kemeja yang kemarin aja. Kamu masih kejebak macet?",
+        "cn": "我就穿昨天那件衬衫。你还堵在路上吗？（aja = saja；kejebak = terjebak）"
+      },
+      {
+        "speaker": "Bayu",
+        "id": "Iya, jalan di depan kantor macet. Kamu duluan aja, nanti kabarin apa yang perlu dilengkapi.",
+        "cn": "是啊，办公室前面的路正堵着。你先去，回头告诉我还要补什么。（kabarin = kabarkan）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：你准备把活动申请交给负责人，但不知道材料是否齐全。用 menanyakan、berkas、menyerahkan 写2–3句，先询问再决定是否提交。",
+      "reference_answer": "Saya ingin menanyakan apakah berkas ini sudah lengkap. Kalau masih ada yang kurang, saya akan melengkapinya dulu sebelum menyerahkan berkas kepada ketua.",
+      "reference_cn": "我想问一下这些材料是否齐全。若还有缺项，我会先补齐，再把材料交给负责人。"
+    },
+    {
+      "task": "复习词换语体：用 menyalin 写一句标准语叙述，说明你正在抄名单；再引用朋友用 kejebak 发来的口语消息，说明他因堵车迟到，让你先去。至少2句。",
+      "reference_answer": "Saya sedang menyalin daftar peserta. Bayu mengirim pesan, “Aku kejebak macet. Kamu duluan aja.”",
+      "reference_cn": "我正在抄参与者名单。巴尤发来消息：“我堵在路上了，你先去吧。”"
+    },
+    {
+      "task": "早课迁移：你准备去见负责人，紧张得忘带衬衫。用 saking 和 kemeja 给朋友说2–3句，再说明你怎样补救，不沿用早课购物场景。",
+      "reference_answer": "Saking gugupnya, aku lupa bawa kemeja. Aku pulang sebentar buat ambil. Tolong tunggu di depan kantor, ya.",
+      "reference_cn": "我太紧张，忘了带衬衫。我回家拿一下。请在办公室门口等我哦。"
+    },
+    {
+      "task": "区分考虑与批准：用 pertimbangan 和 tanda tangan，向同伴说明负责人还在考虑时间安排，尚未签字；再提醒同伴先预估补材料所需时间。至少3句。",
+      "reference_answer": "Jadwal kegiatan lain masih menjadi pertimbangan ketua. Kita belum mendapat tanda tangan, jadi jangan bilang sudah disetujui. Perkirakan waktu untuk melengkapi berkasnya dulu.",
+      "reference_cn": "其他活动的时间安排仍是负责人要考虑的因素。我们还没拿到签字，所以别说已经批准。先估算一下补齐材料需要的时间。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "“Saya ingin ____ jadwal kepada petugas.” 哪一项放在这里最自然？",
+        "options": [
+          "bertanya",
+          "ditanyakan",
+          "menanyakan",
+          "pertanyaan"
+        ],
+        "answer_index": 2,
+        "answer": "menanyakan",
+        "explain": "menanyakan 直接接所问内容 jadwal，再用 kepada 引出对象。bertanya 通常说 bertanya kepada petugas tentang jadwal；ditanyakan 是被动；pertanyaan 是名词。"
+      },
+      {
+        "type": "choice",
+        "prompt": "负责人说：“Jadwal kegiatan lain masih menjadi pertimbangan saya. Suratnya belum saya tanda tangani.” 同伴接下来怎么说最合适？",
+        "options": [
+          "Berarti kegiatan kita pasti dibatalkan.",
+          "Kita tunggu keputusan dan lengkapi daftar dulu.",
+          "Berarti semua jadwal sudah disetujui.",
+          "Kita boleh langsung memakai ruangan malam ini."
+        ],
+        "answer_index": 1,
+        "answer": "Kita tunggu keputusan dan lengkapi daftar dulu.",
+        "explain": "masih menjadi pertimbangan 表示还在考虑，belum 签字也不能当成批准或否决。先等决定并补材料符合事实，其余选项过早下结论。"
+      },
+      {
+        "type": "choice",
+        "prompt": "“Ruangan ini khusus untuk rapat warga.” 最准确的理解是什么？",
+        "options": [
+          "这间房一定比其他房间豪华",
+          "任何人都不能走进这间房",
+          "这间房里的所有东西都很出众",
+          "这间房指定用于居民会议"
+        ],
+        "answer_index": 3,
+        "answer": "这间房指定用于居民会议",
+        "explain": "khusus 指定用途或对象；istimewa 才侧重特别、出众。khusus 本身不保证昂贵或豪华，也不等于绝对禁止任何人进入。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Dini sedang ____ nama peserta dari catatan lama.（抄写；复制）",
+        "answer": "menyalin",
+        "explain": "sedang 后面用主动动词 menyalin，表示正在抄写已有内容；区别于自己创作新内容的 menulis。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Pak Ketua memberi ____ pada surat persetujuan itu.（签名）",
+        "answer": "tanda tangan",
+        "explain": "memberi tanda tangan 是签字；固定词组分开写。menandatangani 是动词，后面直接接被签的文件。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我把这些材料交给负责人。",
+        "tokens": [
+          "Saya",
+          "menyerahkan",
+          "berkas",
+          "ini",
+          "kepada",
+          "ketua."
+        ],
+        "answer": "Saya menyerahkan berkas ini kepada ketua.",
+        "answer_cn": "我把这些材料交给负责人。",
+        "explain": "menyerahkan 后接移交的东西 berkas ini，再用 kepada ketua 说明接收者。"
+      }
+    ],
+    "self_check": [
+      "我能在3秒内说出 menanyakan、berkas、tanda tangan 的意思吗？",
+      "我能分清 menyerahkan 是交给对方、menyalin 是复制现有内容吗？",
+      "看到 pertimbangan 和 khusus，我会不会误以为“已经决定”和“豪华出众”？",
+      "我是否知道 seraya 偏书面，同时能理解 kejebak 和 ketua 在这个场景里的意思？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "向负责人开口：用 Saya ingin menanyakan … 提出一个真实问题，再用 Saya akan menyerahkan … 说明你准备交什么。换一个对象再说一遍。",
+      "30秒脱稿复述：Dini 要借什么、负责人有哪些考虑、材料缺什么、为什么还不能当成已经批准。至少用 berkas、pertimbangan、tanda tangan 三个词。",
+      "早课迁移：用今天08:00新学的 saking 和 kemeja 说一次正式见面前的准备失误及补救。随后把“Ketua menjelaskan seraya menunjuk jadwal.” 改成朋友会说的 sambil 版本。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "menanyakan",
+      "menyalin",
+      "seraya"
+    ],
+    "patterns": [
+      {
+        "pattern": "Saya ingin menanyakan apakah …",
+        "cn": "我想问一下是否……。",
+        "example": "Saya ingin menanyakan apakah berkas ini sudah lengkap.",
+        "example_cn": "我想问一下这些材料是否齐全。"
+      },
+      {
+        "pattern": "… masih menjadi pertimbangan …",
+        "cn": "……仍是……要考虑的因素。",
+        "example": "Jadwal kegiatan lain masih menjadi pertimbangan ketua.",
+        "example_cn": "其他活动的时间安排仍是负责人要考虑的因素。"
+      }
+    ]
+  }
+}
