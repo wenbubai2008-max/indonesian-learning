@@ -2,7 +2,7 @@
 'use strict';
 const assert=require('assert');
 const {checkFocus,lessonTime}=require('./lesson-focus-rotation');
-const config={enabled:true,effective_date:'2026-11-04',cooldown_hours:72,window_days:7,max_prior_focus:2};
+const config={enabled:true,effective_date:'2026-11-04',cooldown_hours:72,window_days:7,max_prior_focus:2,am_new_first_from:'2026-11-05'};
 function history(date,session,focus=[],active=[]){
  return {date,session,lesson_focus:{words:focus},review_vocab:session==='am'?active:[],
   vocab:session==='pm'?active.map(word=>({word,source_group:'review'})):[]};
@@ -45,7 +45,35 @@ function run(){
  assert.strictEqual(errors(candidate(),[passive]).length,0);
  // Avoiding two cooled choices needs two distinct available alternatives.
  assert.strictEqual(errors(candidate('2026-11-04','am',['a','b','c'],['a','b','c','d']),[history('2026-11-03','pm',['a','b'])]).length,1);
+ // Nov 4 is already published: the new source restriction must not rewrite the old lesson.
+ const previous=candidate('2026-11-04','am',['old','a','b'],['a','b','c','d']);
+ previous.review_vocab=['old'];
+ assert.strictEqual(errors(previous,[]).some(e=>e.code==='AM_FOCUS_NEW_REQUIRED'),false);
+ // The original Nov 4 problem (two review highlights, one new) fails on the next AM.
+ const repeats=candidate('2026-11-05','am',['kasur','selera','berbelanja'],
+   ['pers','berasal dari','berbelanja','suka menolong','menyapu','sapu','ember','saking','menyebalkan','kemeja']);
+ repeats.review_vocab=['kasur','selera'];
+ assert.strictEqual(errors(repeats,[]).some(e=>e.code==='AM_FOCUS_NEW_REQUIRED'),true);
+ // Three genuinely new words always pass, even if old review words have fresh errors.
+ const freshOk=candidate('2026-11-05','am',['a','b','c'],['a','b','c','d']);freshOk.review_vocab=['old'];
+ assert.strictEqual(errors(freshOk,[],runtime('2026-11-04T00:25:00.000Z')).some(e=>e.code==='AM_FOCUS_NEW_REQUIRED'),false);
+ // When only two new words remain, include both plus a cycle word.
+ const two=candidate('2026-11-05','am',['a','b','c'],['a','b','c','d']);
+ two.cycle_vocab=['c','d'];two.review_vocab=['old'];
+ assert.strictEqual(errors(two,[]).filter(e=>e.code.startsWith('AM_FOCUS_')).length,0);
+ const insufficient={...two,lesson_focus:{words:['a','old','c']}};
+ assert.strictEqual(errors(insufficient,[]).some(e=>e.code==='AM_FOCUS_NEW_REQUIRED'),true);
+ const wrongFallback={...two,lesson_focus:{words:['a','b','old']}};
+ assert.strictEqual(errors(wrongFallback,[]).some(e=>e.code==='AM_FOCUS_CYCLE_REQUIRED'),true);
+ // Zero new words: the focus becomes three cycle words, never review_vocab first.
+ const none=candidate('2026-11-05','am',['a','b','c'],['a','b','c','d']);
+ none.cycle_vocab=['a','b','c','d'];none.review_vocab=['old'];
+ assert.strictEqual(errors(none,[]).filter(e=>e.code.startsWith('AM_FOCUS_')).length,0);
+ const noneBad={...none,lesson_focus:{words:['a','b','old']}};
+ assert.strictEqual(errors(noneBad,[]).some(e=>e.code==='AM_FOCUS_CYCLE_REQUIRED'),true);
+ // PM retains mixed new/review/application highlights.
+ assert.strictEqual(errors(candidate('2026-11-05','pm',['old','a','b'],['old','a','b']),[]).some(e=>e.code.startsWith('AM_FOCUS_')),false);
  return true;
 }
-if(require.main===module){run();console.log('lesson-focus-rotation: 13 checks passed')}
+if(require.main===module){run();console.log('lesson-focus-rotation: 22 checks passed')}
 module.exports={run};
