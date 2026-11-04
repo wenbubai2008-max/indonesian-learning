@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-04T07:07:03.497Z",
+  "updated_at": "2026-11-04T09:50:24.830Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1874,13 +1874,13 @@
     "selera": {
       "word": "selera",
       "status": "active",
-      "updated_at": "2026-11-03T13:33:47.333Z",
+      "updated_at": "2026-11-04T09:50:14.188Z",
       "display": "selera",
       "cn": "胃口；口味；喜好",
       "root": "selera",
       "root_cn": "胃口；喜好",
       "last_wrong": "2026-11-03T13:33:47.250Z",
-      "last_review": "2026-11-03T13:33:47.250Z",
+      "last_review": "2026-11-04T09:50:14.099Z",
       "source": "课程小测",
       "source_date": "2026-11-03",
       "session": "18:00",
@@ -1890,7 +1890,7 @@
         "lesson_wrong"
       ],
       "wrong_count": 3,
-      "right_streak": 0
+      "right_streak": 1
     },
     "usaha": {
       "word": "usaha",
