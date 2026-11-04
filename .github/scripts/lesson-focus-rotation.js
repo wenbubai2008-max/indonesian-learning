@@ -47,14 +47,32 @@ function checkFocus({lesson,reviewHistory,runtime,config}){
   return {blocked,fresh,count:recent.length,hours};
  };
  const selected=words(lesson&&lesson.lesson_focus&&lesson.lesson_focus.words);
+ const errors=[];
+ // An AM lesson is the first introduction to its new words. Fresh mistakes in old
+ // review words can still drive review_vocab, but cannot displace new-word highlights.
+ // When fewer than three new words remain, use cycle_vocab before review_vocab.
+ if(session==='am'&&cfg.am_new_first_from&&date>=cfg.am_new_first_from){
+  const cycle=new Set(words(lesson.cycle_vocab));
+  const newcomers=new Set(words(lesson.vocab).filter(w=>!cycle.has(w)));
+  const selectedSet=new Set(selected);
+  const expectedNew=Math.min(3,newcomers.size);
+  const actualNew=[...selectedSet].filter(w=>newcomers.has(w)).length;
+  if(actualNew<expectedNew)errors.push({code:'AM_FOCUS_NEW_REQUIRED',
+   detail:'AM lesson_focus needs '+expectedNew+' new vocab words, got '+actualNew+
+    '. Replace old review highlights with '+[...newcomers].filter(w=>!selectedSet.has(w)).slice(0,3).join(', ')});
+  const expectedCycle=Math.min(3-expectedNew,cycle.size);
+  const actualCycle=[...selectedSet].filter(w=>cycle.has(w)).length;
+  if(actualCycle<expectedCycle)errors.push({code:'AM_FOCUS_CYCLE_REQUIRED',
+   detail:'With '+expectedNew+' new words, the remaining focus slots must use '+expectedCycle+' cycle_vocab word(s); got '+actualCycle});
+ }
  const own=session==='am'?[...words(lesson.vocab),...words(lesson.review_vocab),...words(lesson.cycle_vocab)]:words(lesson&&lesson.vocab);
  const chosen=new Set(selected),available=[...new Set(own)].filter(w=>!chosen.has(w)&&!status(w).blocked);
  const blocked=selected.filter(w=>status(w).blocked);
  // Fallback: if fewer alternatives exist than repeated words, allow only the unavoidable repeats.
- return blocked.slice(0,available.length).map(w=>{
+ return errors.concat(blocked.slice(0,available.length).map(w=>{
   const info=status(w);
   const why=info.hours<cooldown?'within '+cfg.cooldown_hours+'h':'already highlighted '+info.count+' times in '+cfg.window_days+' days';
   return {code:'LESSON_FOCUS_COOLDOWN',detail:w+' '+why+'; available alternative(s): '+available.join(', ')};
- });
+ }));
 }
 module.exports={checkFocus,lessonTime};
