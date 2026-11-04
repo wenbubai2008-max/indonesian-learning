@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 934,
+   "use": 939,
    "recognize": 105,
    "unsure": 21,
    "fast": 136
   },
   "active": {
-   "use": 657,
+   "use": 662,
    "recognize": 89,
    "unsure": 19,
    "fast": 58
@@ -9771,6 +9771,51 @@
    "status": "active",
    "why": [
     "第二词库 A1 / S"
+   ]
+  },
+  "menanyakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / S"
+   ]
+  },
+  "berkas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "tanda tangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "menyerahkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "pertimbangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
    ]
   }
  }
