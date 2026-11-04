@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "phase": "transition",
-  "committed_secondary": false,
-  "switched_at": "",
-  "updated_at": "2026-11-03T00:30:34.449Z"
+  "phase": "secondary",
+  "committed_secondary": true,
+  "switched_at": "2026-11-04T00:30:01.637Z",
+  "updated_at": "2026-11-04T00:30:01.637Z"
 }

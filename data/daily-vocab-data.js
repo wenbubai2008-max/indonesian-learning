@@ -11488,17 +11488,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-17 08:00",
+    "last_seen": "2026-11-04 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-11-04"
     ],
     "lesson_occurrences": [
-      "2026-09-17 08:00"
+      "2026-09-17 08:00",
+      "2026-11-04 08:00"
     ]
   },
   {
@@ -11596,19 +11598,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 18:00",
-    "last_seen": "2026-09-17 18:00",
+    "last_seen": "2026-11-04 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-11-04"
     ],
     "lesson_occurrences": [
-      "2026-09-17 18:00"
+      "2026-09-17 18:00",
+      "2026-11-04 08:00"
     ]
   },
   {
@@ -11677,17 +11683,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-09-18 08:00",
+    "last_seen": "2026-11-04 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-11-04"
     ],
     "lesson_occurrences": [
-      "2026-09-18 08:00"
+      "2026-09-18 08:00",
+      "2026-11-04 08:00"
     ]
   },
   {
@@ -16167,9 +16175,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-11-03 18:00",
+    "last_seen": "2026-11-04 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -16177,12 +16185,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-30",
       "2026-10-26",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "lesson_occurrences": [
       "2026-09-30 08:00",
       "2026-10-26 08:00",
-      "2026-11-03 18:00"
+      "2026-11-03 18:00",
+      "2026-11-04 08:00"
     ]
   },
   {
@@ -28348,19 +28358,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "床垫是干净的，但旁边的地板仍一团乱。房间还没准备好，让我很惊讶。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-03 18:00",
-    "last_seen": "2026-11-03 18:00",
+    "last_seen": "2026-11-04 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "lesson_occurrences": [
-      "2026-11-03 18:00"
+      "2026-11-03 18:00",
+      "2026-11-04 08:00"
     ]
   },
   {
@@ -28412,6 +28426,258 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-03 18:00"
+    ]
+  },
+  {
+    "word": "pers",
+    "cn": "媒体；新闻界",
+    "en": "the press",
+    "root": "pers",
+    "root_cn": "新闻界；媒体",
+    "example": "Dalam konferensi pers itu, panitia menegaskan bahwa acara akan tetap berjalan meski ada perubahan jadwal.",
+    "example_cn": "在那场记者会上，主办方强调，虽然时间有变，活动仍会进行。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 08:00"
+    ]
+  },
+  {
+    "word": "berasal dari",
+    "cn": "来自；起源于",
+    "en": "come from; originate from",
+    "root": "asal",
+    "root_cn": "来源；起点",
+    "example": "Meja yang ramping itu berasal dari rumah lama Ibu. Bentuknya cocok dengan nuansa kamar baru kami.",
+    "example_cn": "那张纤细的桌子来自妈妈的旧家。它的造型与我们新房间的氛围很搭。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 08:00"
+    ]
+  },
+  {
+    "word": "berbelanja",
+    "cn": "购物；买东西",
+    "en": "shop; go shopping",
+    "root": "belanja",
+    "root_cn": "购物；购买所需物品",
+    "example": "Kami berbelanja setelah mencatat pemasukan bulan ini. Toko itu juga menyediakan barang rumah tangga dengan harga yang jelas.",
+    "example_cn": "我们记下这个月的收入后才去购物。那家店也提供价格标明的家居用品。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 08:00"
+    ]
+  },
+  {
+    "word": "suka menolong",
+    "cn": "乐于助人",
+    "en": "like helping; helpful",
+    "root": "tolong",
+    "root_cn": "帮助；请",
+    "example": "Arif suka menolong calon penghuni baru. Ia berjanji akan menunjukkan arah ke toko terdekat.",
+    "example_cn": "阿里夫乐于帮助准备入住的人。他答应指一下去最近商店的方向。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 08:00"
+    ]
+  },
+  {
+    "word": "menyapu",
+    "cn": "扫；扫地",
+    "en": "sweep",
+    "root": "sapu",
+    "root_cn": "扫帚；扫",
+    "example": "Rina menyapu lantai sebelum menaruh kasur. Setelah debunya bersih, ia lega bisa beristirahat di kamar itu.",
+    "example_cn": "莉娜先扫地，再放床垫。灰尘清理干净后，她终于能在这个房间里休息，松了口气。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 08:00"
+    ]
+  },
+  {
+    "word": "sapu",
+    "cn": "扫帚；扫（指令用法）",
+    "en": "broom; sweep",
+    "root": "sapu",
+    "root_cn": "扫帚；扫",
+    "example": "Sapu ini punya gagang yang panjang. Pantas saja Rina bisa membersihkan sudut itu tanpa banyak membungkuk.",
+    "example_cn": "这把扫帚的柄很长。难怪莉娜清理那个角落不用太弯腰。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 08:00"
+    ]
+  },
+  {
+    "word": "ember",
+    "cn": "桶；水桶",
+    "en": "bucket",
+    "root": "ember",
+    "root_cn": "桶",
+    "example": "Ember itu nyaris jatuh ketika Rina membuka pintu. Arif segera memegangnya agar airnya tidak tumpah.",
+    "example_cn": "莉娜开门时，那个桶差点倒下。阿里夫马上扶住它，免得水洒出来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 08:00"
+    ]
+  },
+  {
+    "word": "saking",
+    "cn": "太……以至于；由于非常……",
+    "en": "so ... that; because of being so",
+    "root": "saking",
+    "root_cn": "由于太……",
+    "example": "Saking sibuknya, aku lupa cas HP. Aku harus ngepasin waktu belanja sama jadwal kerja, jadi nggak bisa lama-lama.",
+    "example_cn": "我忙得忘了给手机充电。我得把购物时间和工作安排对上，所以不能待太久。（cas = mengisi daya；HP = ponsel；ngepasin = menyesuaikan；nggak = tidak）",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 08:00"
+    ]
+  },
+  {
+    "word": "menyebalkan",
+    "cn": "令人烦恼的；让人恼火的",
+    "en": "annoying; irritating",
+    "root": "sebal",
+    "root_cn": "烦；恼火",
+    "example": "Suara dari kamar sebelah menyebalkan. Aku nyesel memilih kamar itu tanpa memeriksa suasananya lebih dulu.",
+    "example_cn": "隔壁房间的声音让人烦。我后悔选房前没先看看周围环境。（nyesel = menyesal）",
+    "categories": [
+      "每日学习",
+      "08:00",
+      "口语"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 08:00"
+    ]
+  },
+  {
+    "word": "kemeja",
+    "cn": "衬衫",
+    "en": "shirt",
+    "root": "kemeja",
+    "root_cn": "衬衫",
+    "example": "Kemeja biru itu sesuai selera Rina. Untuk penampilan yang rapi, ia memilih ukuran yang pas, bukan hanya warna yang bagus.",
+    "example_cn": "那件蓝衬衫合莉娜的喜好。为了穿着整洁，她选择合身的尺码，而不只看颜色好不好看。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-04 08:00",
+    "last_seen": "2026-11-04 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-04"
+    ],
+    "lesson_occurrences": [
+      "2026-11-04 08:00"
     ]
   }
 ];

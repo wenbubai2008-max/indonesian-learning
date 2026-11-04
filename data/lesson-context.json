@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-04",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 75
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-03T14:01:03.984Z",
-    "lesson_watermark": "2026-11-03 18:00",
-    "index_updated": "2026-11-03",
-    "runtime_hash": "cd16e872db659a05282e0dc4280a5f4d1994adc191ba9a3b29e1a00e5b09fa17",
-    "index_hash": "6e736156a0377abfb0631243a024076e3f8a41e7b45b630e5bf8124439ad52a8",
+    "runtime_generated_at": "2026-11-04T00:30:01.653Z",
+    "lesson_watermark": "2026-11-04 08:00",
+    "index_updated": "2026-11-04",
+    "runtime_hash": "5232755321ba1d680642a85c607ebd55d64aa51391549abed7164cb168a26c63",
+    "index_hash": "a0559531cfc7545c84e0c7cf1d3c78cd5ca6ad9a759f923ea802014c598ce7c4",
     "rules_hash": "160e6c373d496ae286838bcce620bf77502d4636131a37a36f3be0e4e2bfc1a9"
   },
   "schema": {
@@ -51,22 +51,6 @@
     "new_dont": [],
     "new_fuzzy": [
       [
-        "pers",
-        "媒体，新闻界"
-      ],
-      [
-        "berasal dari",
-        "来自"
-      ],
-      [
-        "berbelanja",
-        "购物"
-      ],
-      [
-        "suka menolong",
-        "乐于助人"
-      ],
-      [
         "samping",
         "旁边"
       ],
@@ -77,22 +61,6 @@
       [
         "sering",
         "经常"
-      ],
-      [
-        "menyapu",
-        "扫地"
-      ],
-      [
-        "sapu",
-        "扫帚"
-      ],
-      [
-        "ember",
-        "桶"
-      ],
-      [
-        "kemeja",
-        "衬衫"
       ],
       [
         "kaos",
@@ -487,10 +455,6 @@
         "扎入；插入"
       ],
       [
-        "saking",
-        "太……以至于；由于太……"
-      ],
-      [
         "meloloskan diri",
         "逃脱"
       ],
@@ -691,8 +655,40 @@
         "坚固"
       ],
       [
-        "menyebalkan",
-        "令人恼火"
+        "mengharukan",
+        "令人感动"
+      ],
+      [
+        "menakjubkan",
+        "令人惊叹"
+      ],
+      [
+        "kelangsungan",
+        "持续；延续"
+      ],
+      [
+        "kesuburan",
+        "肥沃；生育力"
+      ],
+      [
+        "erosi",
+        "侵蚀；水土流失"
+      ],
+      [
+        "penyerapan",
+        "吸收"
+      ],
+      [
+        "humus",
+        "腐殖质"
+      ],
+      [
+        "tifus",
+        "伤寒"
+      ],
+      [
+        "pesan cerita",
+        "故事寓意；故事传达的信息"
       ]
     ],
     "review": [
@@ -1627,16 +1623,6 @@
         "议价；出价"
       ],
       [
-        "cas",
-        3,
-        0,
-        "",
-        "2026-10-15T13:35:44.988Z",
-        "充电",
-        "cas",
-        "充电"
-      ],
-      [
         "lemot",
         3,
         0,
@@ -1657,16 +1643,6 @@
         "虽然；尽管"
       ],
       [
-        "kaget",
-        3,
-        0,
-        "",
-        "2026-10-15T13:36:23.153Z",
-        "吓一跳；吃惊",
-        "kaget",
-        "吃惊；受惊"
-      ],
-      [
         "sejarah",
         2,
         0,
@@ -1675,16 +1651,6 @@
         "历史 / 故事",
         "sejarah",
         "历史"
-      ],
-      [
-        "calon",
-        3,
-        0,
-        "",
-        "2026-10-15T13:35:53.744Z",
-        "候选人",
-        "calon",
-        "候选；准……"
       ],
       [
         "tenang",
@@ -2895,6 +2861,136 @@
         "取下；脱下；松开；释放",
         "lepas",
         "松开；脱离"
+      ],
+      [
+        "menyentuh",
+        2,
+        0,
+        "",
+        "2026-10-23T23:31:51.807Z",
+        "触摸；触及",
+        "sentuh",
+        "触摸"
+      ],
+      [
+        "pasang",
+        2,
+        0,
+        "",
+        "2026-10-23T23:33:31.293Z",
+        "安装；装上；配对",
+        "pasang",
+        "安装；装上"
+      ],
+      [
+        "repot",
+        2,
+        0,
+        "",
+        "2026-10-23T23:35:20.434Z",
+        "麻烦；费事；忙乱",
+        "repot",
+        "麻烦；费事"
+      ],
+      [
+        "pers",
+        3,
+        0,
+        "",
+        "",
+        "媒体；新闻界",
+        "pers",
+        "新闻界；媒体"
+      ],
+      [
+        "berasal dari",
+        3,
+        0,
+        "",
+        "",
+        "来自；起源于",
+        "asal",
+        "来源；起点"
+      ],
+      [
+        "berbelanja",
+        3,
+        0,
+        "",
+        "",
+        "购物；买东西",
+        "belanja",
+        "购物；购买所需物品"
+      ],
+      [
+        "suka menolong",
+        3,
+        0,
+        "",
+        "",
+        "乐于助人",
+        "tolong",
+        "帮助；请"
+      ],
+      [
+        "menyapu",
+        3,
+        0,
+        "",
+        "2026-09-12T14:13:56.300Z",
+        "扫；扫地",
+        "sapu",
+        "扫帚；扫"
+      ],
+      [
+        "sapu",
+        3,
+        0,
+        "",
+        "",
+        "扫帚；扫（指令用法）",
+        "sapu",
+        "扫帚；扫"
+      ],
+      [
+        "ember",
+        3,
+        0,
+        "",
+        "",
+        "桶；水桶",
+        "ember",
+        "桶"
+      ],
+      [
+        "saking",
+        3,
+        0,
+        "",
+        "",
+        "太……以至于；由于非常……",
+        "saking",
+        "由于太……"
+      ],
+      [
+        "menyebalkan",
+        3,
+        0,
+        "",
+        "",
+        "令人烦恼的；让人恼火的",
+        "sebal",
+        "烦；恼火"
+      ],
+      [
+        "kemeja",
+        3,
+        0,
+        "",
+        "",
+        "衬衫",
+        "kemeja",
+        "衬衫"
       ]
     ],
     "focus": [
@@ -3156,24 +3252,7 @@
         ]
       ]
     ],
-    "oral": [
-      [
-        "saking",
-        "口语",
-        "",
-        "saking",
-        733,
-        "fuzzy"
-      ],
-      [
-        "menyebalkan",
-        "通用",
-        "nyebelin",
-        "sebal",
-        730,
-        "fuzzy"
-      ]
-    ]
+    "oral": []
   },
   "history_7d": [
     {
@@ -3451,6 +3530,29 @@
         "berbincang-bincang",
         "mengecewakan"
       ]
+    },
+    {
+      "date": "2026-11-04",
+      "session": "am",
+      "review_core": [
+        "kasur",
+        "selera",
+        "calon",
+        "cas",
+        "kaget"
+      ],
+      "new_words": [
+        "pers",
+        "berasal dari",
+        "berbelanja",
+        "suka menolong",
+        "menyapu",
+        "sapu",
+        "ember",
+        "saking",
+        "menyebalkan",
+        "kemeja"
+      ]
     }
   ],
   "previous_pm": {
@@ -3468,7 +3570,88 @@
       "akibat"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-04",
+    "vocab": [
+      [
+        "pers",
+        "媒体；新闻界",
+        "the press",
+        "pers",
+        "新闻界；媒体"
+      ],
+      [
+        "berasal dari",
+        "来自；起源于",
+        "come from; originate from",
+        "asal",
+        "来源；起点"
+      ],
+      [
+        "berbelanja",
+        "购物；买东西",
+        "shop; go shopping",
+        "belanja",
+        "购物；购买所需物品"
+      ],
+      [
+        "suka menolong",
+        "乐于助人",
+        "like helping; helpful",
+        "tolong",
+        "帮助；请"
+      ],
+      [
+        "menyapu",
+        "扫；扫地",
+        "sweep",
+        "sapu",
+        "扫帚；扫"
+      ],
+      [
+        "sapu",
+        "扫帚；扫（指令用法）",
+        "broom; sweep",
+        "sapu",
+        "扫帚；扫"
+      ],
+      [
+        "ember",
+        "桶；水桶",
+        "bucket",
+        "ember",
+        "桶"
+      ],
+      [
+        "saking",
+        "太……以至于；由于非常……",
+        "so ... that; because of being so",
+        "saking",
+        "由于太……"
+      ],
+      [
+        "menyebalkan",
+        "令人烦恼的；让人恼火的",
+        "annoying; irritating",
+        "sebal",
+        "烦；恼火"
+      ],
+      [
+        "kemeja",
+        "衬衫",
+        "shirt",
+        "kemeja",
+        "衬衫"
+      ]
+    ],
+    "review_vocab": [
+      "kasur",
+      "selera",
+      "calon",
+      "cas",
+      "kaget"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
