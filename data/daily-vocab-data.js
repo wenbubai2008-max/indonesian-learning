@@ -12091,17 +12091,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-19 08:00",
+    "last_seen": "2026-11-05 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-19"
+      "2026-09-19",
+      "2026-11-05"
     ],
     "lesson_occurrences": [
-      "2026-09-19 08:00"
+      "2026-09-19 08:00",
+      "2026-11-05 08:00"
     ]
   },
   {
@@ -12116,17 +12118,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-19 08:00",
+    "last_seen": "2026-11-05 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-19"
+      "2026-09-19",
+      "2026-11-05"
     ],
     "lesson_occurrences": [
-      "2026-09-19 08:00"
+      "2026-09-19 08:00",
+      "2026-11-05 08:00"
     ]
   },
   {
@@ -12197,17 +12201,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-19 08:00",
+    "last_seen": "2026-11-05 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-19"
+      "2026-09-19",
+      "2026-11-05"
     ],
     "lesson_occurrences": [
-      "2026-09-19 08:00"
+      "2026-09-19 08:00",
+      "2026-11-05 08:00"
     ]
   },
   {
@@ -16050,9 +16056,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-29 18:00",
-    "last_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-05 08:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -16060,12 +16066,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-29",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-05"
     ],
     "lesson_occurrences": [
       "2026-09-29 18:00",
       "2026-10-30 18:00",
-      "2026-11-03 08:00"
+      "2026-11-03 08:00",
+      "2026-11-05 08:00"
     ]
   },
   {
@@ -23310,9 +23318,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-20 08:00",
-    "last_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-05 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -23320,12 +23328,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-10-20",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-05"
     ],
     "lesson_occurrences": [
       "2026-10-20 08:00",
       "2026-10-30 18:00",
-      "2026-11-03 08:00"
+      "2026-11-03 08:00",
+      "2026-11-05 08:00"
     ]
   },
   {
@@ -28823,6 +28833,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-04 18:00"
+    ]
+  },
+  {
+    "word": "panik",
+    "cn": "惊慌；慌乱",
+    "en": "panic; panicked",
+    "root": "panik",
+    "root_cn": "惊慌",
+    "example": "Aku sempat panik, tetapi dompetku akhirnya ditemukan di bawah meja.",
+    "example_cn": "我一度很慌，但钱包最后在桌子底下找到了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 08:00"
+    ]
+  },
+  {
+    "word": "nagih",
+    "cn": "催要；催款（口语）",
+    "en": "ask for repayment; collect a debt (colloquial)",
+    "root": "tagih",
+    "root_cn": "讨要应付的钱；催收",
+    "example": "Aku nggak akan nagih lagi kalau kwitansi pembayarannya udah ada.",
+    "example_cn": "付款收据已经有了的话，我就不会再催了。（nggak = tidak；nagih = menagih；udah = sudah；kwitansi 是常见写法，规范拼写为 kuitansi）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 08:00"
+    ]
+  },
+  {
+    "word": "dampak",
+    "cn": "影响；产生的后果",
+    "en": "impact; effect",
+    "root": "dampak",
+    "root_cn": "影响；后果",
+    "example": "Kurang tidur bisa punya dampak pada kehidupan sehari-hari, yaitu sulit berkonsentrasi.",
+    "example_cn": "睡眠不足会影响日常生活，比如难以集中注意力。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 08:00"
+    ]
+  },
+  {
+    "word": "merayu",
+    "cn": "哄劝；讨好地劝说；献殷勤",
+    "en": "coax; sweet-talk; woo",
+    "root": "rayu",
+    "root_cn": "哄劝；讨好地劝说",
+    "example": "Anak itu memeluk ibunya lalu merayu supaya diizinkan bermain sebentar lagi.",
+    "example_cn": "那个孩子抱住妈妈，哄着她允许自己再玩一会儿。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 08:00"
+    ]
+  },
+  {
+    "word": "kencang",
+    "cn": "强劲的；快的；绷紧的",
+    "en": "strong; fast; tight",
+    "root": "kencang",
+    "root_cn": "强劲；快；绷紧",
+    "example": "Angin bertiup kencang, tetapi matahari masih bersinar.",
+    "example_cn": "风刮得很大，但太阳仍照着。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 08:00"
+    ]
+  },
+  {
+    "word": "menaruh",
+    "cn": "放置；把……放到某处",
+    "en": "put; place",
+    "root": "taruh",
+    "root_cn": "放",
+    "example": "Ia menaruh novel fiksi ilmiah yang menarik itu di meja.",
+    "example_cn": "她把那本有趣的科幻小说放在桌上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 08:00"
+    ]
+  },
+  {
+    "word": "kemasan",
+    "cn": "包装；包装形式",
+    "en": "packaging; package",
+    "root": "kemas",
+    "root_cn": "打包；整理",
+    "example": "Kemasan yang menarik belum tentu berarti isinya bagus. Periksa barangnya sebelum membayar.",
+    "example_cn": "包装好看，不一定表示里面的东西好。付款前检查一下商品。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 08:00"
+    ]
+  },
+  {
+    "word": "menghela",
+    "cn": "拉；吸（气）；常用于叹气",
+    "en": "draw; draw a breath; sigh",
+    "root": "hela",
+    "root_cn": "拉；牵引；吸气",
+    "example": "Ibu menghela napas ketika anaknya mulai ngambek karena waktu bermain sudah habis.",
+    "example_cn": "孩子因为玩耍时间结束而开始闹别扭时，妈妈叹了口气。（ngambek 是口语）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 08:00"
+    ]
+  },
+  {
+    "word": "curiga",
+    "cn": "怀疑；觉得可疑",
+    "en": "suspicious; suspect",
+    "root": "curiga",
+    "root_cn": "怀疑",
+    "example": "Ia mulai curiga karena temannya terus mengeluh tentang uang, tetapi belum menunjukkan bukti pembayaran.",
+    "example_cn": "朋友一直抱怨钱的事，却还没拿出付款凭证，她因此开始起疑。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 08:00"
+    ]
+  },
+  {
+    "word": "nyenyak",
+    "cn": "睡得沉；睡得香",
+    "en": "soundly; deeply asleep",
+    "root": "nyenyak",
+    "root_cn": "睡得沉；熟睡",
+    "example": "Setelah minum air karena haus, ia kembali ke kamar dan tidur nyenyak sampai pagi.",
+    "example_cn": "她口渴喝过水后，回到房间，一觉睡到早上。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 08:00"
     ]
   }
 ];

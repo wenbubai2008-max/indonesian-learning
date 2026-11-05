@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-05",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 76
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-04T14:26:10.219Z",
-    "lesson_watermark": "2026-11-04 18:00",
-    "index_updated": "2026-11-04",
-    "runtime_hash": "4107c255a81cb90ab9754fd8076a8a6d67e62cc5d8446fa9f30d65c267fdac8e",
-    "index_hash": "36fc37fd6946c4866825b8e48067a4b30a2391539d2caa701ec66f83ebe9ddf0",
+    "runtime_generated_at": "2026-11-05T00:33:31.566Z",
+    "lesson_watermark": "2026-11-05 08:00",
+    "index_updated": "2026-11-05",
+    "runtime_hash": "57c865956febb183f8a8e786291c6f44b7f23693b971bbfada0060dd625f873f",
+    "index_hash": "a9a0d7a68db6f18e2cbcbb34dabcd1a99d8e8a25cf871d34ad53c675d142e435",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "panik",
-        "恐慌"
-      ],
-      [
-        "nagih",
-        "催；催款；讨要欠款（口语）"
-      ],
-      [
-        "dampak",
-        "影响"
-      ],
-      [
-        "merayu",
-        "勾引"
-      ],
-      [
-        "kencang",
-        "紧的"
-      ],
-      [
-        "menaruh",
-        "放、置"
-      ],
-      [
-        "kemasan",
-        "包装"
-      ],
-      [
-        "menghela",
-        "叹"
-      ],
-      [
-        "curiga",
-        "怀疑"
-      ],
-      [
-        "nyenyak",
-        "宁静的"
-      ],
       [
         "senam",
         "锻炼"
@@ -1750,16 +1710,6 @@
         "数量；总数"
       ],
       [
-        "kehidupan",
-        2,
-        0,
-        "",
-        "2026-10-15T13:35:40.037Z",
-        "生活 / 生命",
-        "hidup",
-        "活；生活"
-      ],
-      [
         "ringan",
         2,
         0,
@@ -1768,26 +1718,6 @@
         "重量轻的",
         "ringan",
         "轻"
-      ],
-      [
-        "berangkat",
-        3,
-        0,
-        "",
-        "2026-10-15T13:48:04.973Z",
-        "出发",
-        "berangkat",
-        "出发"
-      ],
-      [
-        "berbicara",
-        3,
-        0,
-        "",
-        "2026-10-15T13:47:47.222Z",
-        "说话",
-        "bicara",
-        "说话；谈话"
       ],
       [
         "ramai",
@@ -2988,6 +2918,136 @@
         "希望；祝愿",
         "semoga",
         "希望；祝愿"
+      ],
+      [
+        "sepenuhnya",
+        2,
+        0,
+        "",
+        "2026-10-23T23:36:56.031Z",
+        "完全地",
+        "penuh",
+        "满；完整"
+      ],
+      [
+        "taruh",
+        2,
+        0,
+        "",
+        "2026-10-23T23:38:06.033Z",
+        "放；放置",
+        "taruh",
+        "放；放置"
+      ],
+      [
+        "tindakan",
+        2,
+        0,
+        "",
+        "2026-10-24T02:33:20.485Z",
+        "行动；措施",
+        "tindak",
+        "行动；处理"
+      ],
+      [
+        "panik",
+        1,
+        0,
+        "",
+        "",
+        "惊慌；慌乱",
+        "panik",
+        "惊慌"
+      ],
+      [
+        "nagih",
+        1,
+        0,
+        "",
+        "",
+        "催要；催款（口语）",
+        "tagih",
+        "讨要应付的钱；催收"
+      ],
+      [
+        "dampak",
+        1,
+        0,
+        "",
+        "",
+        "影响；产生的后果",
+        "dampak",
+        "影响；后果"
+      ],
+      [
+        "merayu",
+        1,
+        0,
+        "",
+        "",
+        "哄劝；讨好地劝说；献殷勤",
+        "rayu",
+        "哄劝；讨好地劝说"
+      ],
+      [
+        "kencang",
+        1,
+        0,
+        "",
+        "",
+        "强劲的；快的；绷紧的",
+        "kencang",
+        "强劲；快；绷紧"
+      ],
+      [
+        "menaruh",
+        1,
+        0,
+        "",
+        "",
+        "放置；把……放到某处",
+        "taruh",
+        "放"
+      ],
+      [
+        "kemasan",
+        1,
+        0,
+        "",
+        "",
+        "包装；包装形式",
+        "kemas",
+        "打包；整理"
+      ],
+      [
+        "menghela",
+        1,
+        0,
+        "",
+        "",
+        "拉；吸（气）；常用于叹气",
+        "hela",
+        "拉；牵引；吸气"
+      ],
+      [
+        "curiga",
+        1,
+        0,
+        "",
+        "",
+        "怀疑；觉得可疑",
+        "curiga",
+        "怀疑"
+      ],
+      [
+        "nyenyak",
+        1,
+        0,
+        "",
+        "",
+        "睡得沉；睡得香",
+        "nyenyak",
+        "睡得沉；熟睡"
       ]
     ],
     "focus": [
@@ -3529,6 +3589,29 @@
         "menyerahkan",
         "pertimbangan"
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "session": "am",
+      "review_core": [
+        "penyebab",
+        "sebab",
+        "berangkat",
+        "berbicara",
+        "kehidupan"
+      ],
+      "new_words": [
+        "panik",
+        "nagih",
+        "dampak",
+        "merayu",
+        "kencang",
+        "menaruh",
+        "kemasan",
+        "menghela",
+        "curiga",
+        "nyenyak"
+      ]
     }
   ],
   "previous_pm": {
@@ -3548,7 +3631,88 @@
       "khusus"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-05",
+    "vocab": [
+      [
+        "panik",
+        "惊慌；慌乱",
+        "panic; panicked",
+        "panik",
+        "惊慌"
+      ],
+      [
+        "nagih",
+        "催要；催款（口语）",
+        "ask for repayment; collect a debt (colloquial)",
+        "tagih",
+        "讨要应付的钱；催收"
+      ],
+      [
+        "dampak",
+        "影响；产生的后果",
+        "impact; effect",
+        "dampak",
+        "影响；后果"
+      ],
+      [
+        "merayu",
+        "哄劝；讨好地劝说；献殷勤",
+        "coax; sweet-talk; woo",
+        "rayu",
+        "哄劝；讨好地劝说"
+      ],
+      [
+        "kencang",
+        "强劲的；快的；绷紧的",
+        "strong; fast; tight",
+        "kencang",
+        "强劲；快；绷紧"
+      ],
+      [
+        "menaruh",
+        "放置；把……放到某处",
+        "put; place",
+        "taruh",
+        "放"
+      ],
+      [
+        "kemasan",
+        "包装；包装形式",
+        "packaging; package",
+        "kemas",
+        "打包；整理"
+      ],
+      [
+        "menghela",
+        "拉；吸（气）；常用于叹气",
+        "draw; draw a breath; sigh",
+        "hela",
+        "拉；牵引；吸气"
+      ],
+      [
+        "curiga",
+        "怀疑；觉得可疑",
+        "suspicious; suspect",
+        "curiga",
+        "怀疑"
+      ],
+      [
+        "nyenyak",
+        "睡得沉；睡得香",
+        "soundly; deeply asleep",
+        "nyenyak",
+        "睡得沉；熟睡"
+      ]
+    ],
+    "review_vocab": [
+      "penyebab",
+      "sebab",
+      "berangkat",
+      "berbicara",
+      "kehidupan"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
