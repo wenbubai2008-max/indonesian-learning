@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-05T03:40:51.433Z",
-  "source_updated_at": "2026-11-05T02:50:48.316Z",
+  "generated_at": "2026-11-05T09:40:55.998Z",
+  "source_updated_at": "2026-11-05T07:39:36.966Z",
   "taught_total": 1075,
   "confirmed_mastered": 203,
   "needs_reinforcement": 780,
@@ -111,17 +111,17 @@
       "cn": "有效期至"
     },
     {
-      "word": "mengakhiri",
-      "score": 96,
+      "word": "perpaduan",
+      "score": 88,
       "signals": [
-        "quick_wrong",
         "lesson_wrong",
+        "dont",
         "fuzzy"
       ],
       "wrong_count": 2,
-      "last_wrong": "2026-10-25T13:10:06.986Z",
-      "last_review": "2026-10-29T03:52:51.473Z",
-      "cn": "结束；终止（让某事停下来）"
+      "last_wrong": "2026-10-24T15:35:27.721Z",
+      "last_review": "2026-11-03T09:40:05.553Z",
+      "cn": "融合；结合；搭配"
     }
   ],
   "definitions": {
