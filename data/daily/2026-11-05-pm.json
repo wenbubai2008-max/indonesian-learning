@@ -1,0 +1,398 @@
+{
+  "date": "2026-11-05",
+  "session": "pm",
+  "time": "18:00",
+  "day": 76,
+  "title": "18:00 晚课｜Ikut Senam Tanpa Memaksakan Diri · 参加健身操，把情况说清楚",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "senam",
+    "peserta",
+    "licin",
+    "kaos",
+    "pendinginan"
+  ],
+  "vocab": [
+    {
+      "word": "senam",
+      "display": "senam",
+      "audio_text": "senam",
+      "cn": "体操；健身操",
+      "en": "gymnastics; group exercise",
+      "root": "senam",
+      "root_cn": "体操；健身操",
+      "formation": "基本名词，也可直接表示做操。搭配：senam pagi（早操）、ikut senam（参加健身操）、gerakan senam（体操动作）。bersenam 也表示做操。",
+      "example": "Untuk merayakan ulang tahun klub, warga mengadakan senam bersama. Beberapa orang masih malu-malu saat mengikuti gerakannya.",
+      "example_cn": "为庆祝俱乐部成立周年，居民一起做健身操。有些人跟着做动作时还略显害羞。",
+      "synonym_note": "senam 通常有成套动作；olahraga 泛指运动，跑步、游泳也属于 olahraga。口语说法：Besok ikut senam, yuk!（明天一起去做操吧！）",
+      "usage_note": "初始释义“锻炼”过宽；本课特指跟着成套动作做健身操，不把所有运动都叫 senam。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "peserta",
+      "display": "peserta",
+      "audio_text": "peserta",
+      "cn": "参与者；参加活动的人",
+      "en": "participant",
+      "root": "serta",
+      "root_cn": "共同；参与",
+      "formation": "peserta 是词汇化名词，与 ikut serta（参与）相关，不机械拆成规则音变。搭配：peserta senam、daftar peserta、jumlah peserta。",
+      "example": "Peserta boleh mengeluarkan kartu dari dompet untuk diperiksa. Kartu itu berlaku sampai akhir bulan.",
+      "example_cn": "参与者可以从钱包里取出卡片供检查。这张卡有效期至月底。",
+      "synonym_note": "peserta 是参加者这个名词；ikut 是参与动作：Saya peserta baru.（我是新参与者。）对比 Saya ikut kelas ini.（我参加这堂课。）口语说法：Pesertanya udah datang?（参与者到了吗？）",
+      "usage_note": "说清参加什么：peserta kelas、peserta lomba。不要把提供指导的人自动当成参赛者。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "licin",
+      "display": "licin",
+      "audio_text": "licin",
+      "cn": "滑的；光滑的",
+      "en": "slippery; smooth",
+      "root": "licin",
+      "root_cn": "滑；光滑",
+      "formation": "基本形容词。搭配：lantai licin（地板滑）、jalan licin（路滑）、permukaan licin（表面光滑）。licinnya 可表示“它的滑溜程度”。",
+      "example": "Lantainya licin setelah terkena air. Perbaiki bagian yang bocor untuk melindungi orang yang lewat.",
+      "example_cn": "地板沾水后很滑。修好漏水的地方，以保护经过的人。",
+      "synonym_note": "licin 强调表面滑、不易站稳或抓牢；basah 只表示湿，湿的东西不一定都滑。口语说法：Hati-hati, licin banget!（小心，特别滑！）",
+      "usage_note": "本课练地面安全的普通表达。与 orang licin 一类比喻用法分开，不把“滑”一概理解成湿。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kaos",
+      "display": "kaos",
+      "audio_text": "kaos",
+      "cn": "T恤；针织汗衫（常用写法）",
+      "en": "T-shirt",
+      "root": "kaos",
+      "root_cn": "T恤；汗衫",
+      "formation": "常用写法 kaos；规范拼写通常为 kaus。本课保留所学词形 kaos。搭配：kaos olahraga、kaos katun、ganti kaos。kaus kaki 是袜子，须把整个词组一起看。",
+      "example": "Kaos bergambar tokoh film itu dipasang di lemari pajangan. Pembeli boleh melihatnya, tetapi tidak boleh menyentuh barang di dalamnya.",
+      "example_cn": "印有那部电影角色图案的T恤被放在展示柜里。顾客可以看，但不能触摸柜内的物品。",
+      "synonym_note": "kaos 指T恤或汗衫；kemeja 指衬衫；baju 泛指衣服。口语说法：Aku bawa kaos ganti.（我带了替换的T恤。）",
+      "usage_note": "日常交流能认出 kaos，正式书写了解 kaus。不要把 kaos 单独当成“袜子”。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "pendinginan",
+      "display": "pendinginan",
+      "audio_text": "pendinginan",
+      "cn": "冷却；运动后的放松整理",
+      "en": "cooling; cool-down",
+      "root": "dingin",
+      "root_cn": "冷；凉",
+      "formation": "peN- + dingin + -an → pendinginan，d 保留，前缀呈 pen-。搭配：pendinginan setelah senam、gerakan pendinginan、proses pendinginan。也用于设备冷却，须看语境。",
+      "example": "Setelah latihan kekuatan, kelompok itu melakukan pendinginan di tempat yang teduh.",
+      "example_cn": "力量练习之后，小组在阴凉处做放松整理。",
+      "synonym_note": "pendinginan 在运动里是结束阶段的放松整理；pemanasan 是开始前的热身。口语说法：Habis ini pendinginan dulu, ya.（这个结束后先做放松整理哦。）",
+      "usage_note": "重点分清先后阶段，不把 pendinginan 当成运动前热身。本课只练描述活动过程。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "jomblo",
+      "display": "jomblo",
+      "audio_text": "jomblo",
+      "cn": "单身；没有恋爱对象（口语）",
+      "en": "single; not in a relationship",
+      "root": "jomblo",
+      "root_cn": "单身；没有对象",
+      "formation": "口语常用词。搭配：masih jomblo、lagi jomblo、teman yang jomblo。不必为基本词编造前后缀。",
+      "example": "Aku jomblo, tapi aku nggak datang ke kelas buat cari pasangan. Aku cuma pengin dengar kisah orang lain dan punya teman baru.",
+      "example_cn": "我单身，但不是来课堂找对象的。我只是想听听别人的故事、交新朋友。（nggak = tidak；pengin = ingin；buat = untuk）",
+      "synonym_note": "jomblo 强调没有恋爱对象；belum menikah 只是尚未结婚，可能已有对象。口语说法：Aku lagi jomblo.（我现在单身。）",
+      "usage_note": "用于熟人聊天，不擅自拿别人的关系状态开玩笑；“一个人来”也不能证明对方单身。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kabur",
+      "display": "kabur",
+      "audio_text": "kabur",
+      "cn": "逃跑；溜走（本课义）",
+      "en": "run away; sneak off",
+      "root": "kabur",
+      "root_cn": "逃跑；溜走",
+      "formation": "基本动词，口语常见。搭配：kabur dari rumah、kabur lewat pintu、jangan kabur dulu。另有同形形容词义“模糊”，如 foto kabur，须看句法。",
+      "example": "Jangan kabur dulu cuma karena kalah sekali. Aku juga nggak mau sombong kalau nanti menang.",
+      "example_cn": "别只因为输了一次就溜走。我之后即使赢了，也不想得意忘形。（nggak = tidak）",
+      "synonym_note": "kabur 常带逃开、偷偷离去的语气；pulang 是回家，中性。不能把所有正常离场都说成 kabur。口语说法：Eh, jangan kabur dulu!（哎，先别溜！）",
+      "usage_note": "本课复习“溜走”，与“照片模糊”的同形义区别；需要暂停活动时应直接说明，不必悄悄走。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "penuh",
+      "display": "penuh",
+      "audio_text": "penuh",
+      "cn": "满的；充满的",
+      "en": "full",
+      "root": "penuh",
+      "root_cn": "满；充满",
+      "formation": "基本形容词。搭配：ruang penuh、penuh orang、penuh semangat。同词根 sepenuhnya 表示“完全地”，句法不同。",
+      "example": "Ruang tunggu penuh, jadi kami menonton trailer di ponsel sambil menunggu. Setelah itu, kami memilih tempat yang lebih tenang.",
+      "example_cn": "等候室满了，所以我们等候时用手机看预告片。之后我们选了更安静的地方。",
+      "synonym_note": "penuh 描述容量满或充满某物；sepenuhnya 修饰理解、负责等，表示完全地。人多可说 penuh orang，但 tidak sepenuhnya paham 是没完全理解。口语说法：Di dalam udah penuh.（里面已经满了。）",
+      "usage_note": "与 sepenuhnya 成组提取：ruang penuh 对比 belum sepenuhnya paham，不互换词形。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "sepenuhnya",
+      "display": "sepenuhnya",
+      "audio_text": "sepenuhnya",
+      "cn": "完全地；全然",
+      "en": "fully; completely",
+      "root": "penuh",
+      "root_cn": "满；完整",
+      "formation": "se- + penuh + -nya → sepenuhnya，形成副词性表达。搭配：memahami sepenuhnya、sepenuhnya sadar、belum sepenuhnya selesai。",
+      "example": "Saya belum sepenuhnya paham cara alat ini berfungsi. Misalnya, saya belum tahu tombol untuk menghentikannya.",
+      "example_cn": "我还没有完全理解这台设备怎样运作。例如，我还不知道哪个是停止按钮。",
+      "synonym_note": "penuh 是“满的”；sepenuhnya 是“完全地”。belum sepenuhnya paham 表示尚未全懂，不等于一点也不懂。口语说法：Aku belum sepenuhnya paham.（我还没完全明白。）",
+      "usage_note": "说不确定的程度时很实用：并非全部否定，可以接具体尚未理解的部分。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menderita",
+      "display": "menderita",
+      "audio_text": "menderita",
+      "cn": "患有；遭受痛苦或损失",
+      "en": "suffer; suffer from",
+      "root": "derita",
+      "root_cn": "痛苦；苦难",
+      "formation": "meN- + derita → menderita，d 保留，前缀呈 men-。搭配：menderita sakit、menderita kerugian、menderita kekalahan。",
+      "example": "Tokoh separuh baya dalam kisah itu menderita kerugian setelah tokonya rusak. Ia lalu mencari bantuan untuk membukanya kembali.",
+      "example_cn": "故事里那位中年人物在店铺受损后遭受损失，随后找人帮忙重新开店。",
+      "synonym_note": "menderita 可表示承受疾病、痛苦或损失；memiliki 是中性的拥有。不能因为中文都能说“有”，就把健康状态说成拥有痛苦。口语说法：日常说具体身体不适也常用 sakit；说明患某病时正式形 menderita 仍常见。",
+      "usage_note": "针对今天的答错信号，练 menderita kerugian 和 menderita sakit；主语是承受者，不要与使别人受苦的含义混淆。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kencang",
+      "display": "kencang",
+      "audio_text": "kencang",
+      "cn": "强劲的；快的；绷紧的",
+      "en": "strong; fast; tight",
+      "root": "kencang",
+      "root_cn": "强劲；快；绷紧",
+      "formation": "基本形容词。搭配：angin kencang、lari kencang、ikat kencang；具体译义由搭配决定。今天08:00新学。",
+      "example": "Angin kencang membuat poster itu lepas. Aku memasangnya lagi supaya nempel, lalu meminta temanku memegang bagian bawahnya.",
+      "example_cn": "强风把海报吹掉了。我把它重新贴牢，再请朋友扶住下边。（nempel = menempel）",
+      "synonym_note": "angin kencang 说风强；suara keras 说声音大。不是所有“强”或“大”都换成 kencang。口语说法：Anginnya kencang banget.（风特别大。）",
+      "usage_note": "今天08:00新学。今晚迁移到社区活动受天气影响的场景，不重复早课借还款故事。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menaruh",
+      "display": "menaruh",
+      "audio_text": "menaruh",
+      "cn": "放置；把……放到某处",
+      "en": "put; place",
+      "root": "taruh",
+      "root_cn": "放",
+      "formation": "meN- + taruh → menaruh，t 脱落。搭配：menaruh tas di kursi、menaruh botol di meja、menaruh barang di tempat aman。今天08:00新学。",
+      "example": "Saya menaruh tas jauh dari pintu. Teman saya bilang, “Nggak perlu bongkar semua isinya; kartunya ada di saku depan.”",
+      "example_cn": "我把包放在离门远的地方。朋友说：“不用把里面的东西全翻出来，卡在前面的口袋里。”（nggak = tidak；bongkar 在口语里直接用词根）",
+      "synonym_note": "menaruh 强调把某物放到某处；membawa 是携带，位置变化不一定相同。口语说法：taruh，例 Taruh tasnya di sini.（把包放这儿。）",
+      "usage_note": "今天08:00新学。今晚用它描述进活动室后的物品摆放；不要与一直携带在身上混为一谈。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Kamis sore, Rani datang ke kelas senam di ruang warga. Ia memakai kaos dan membawa botol air. Karena angin kencang membawa air hujan ke dekat pintu, sebagian lantai menjadi licin. Sebelum kegiatan dimulai, seorang peserta memberi tahu Pak Arif, pemandu kelas. Pak Arif meminta semua orang menaruh tas jauh dari pintu dan pindah ke bagian lantai yang kering. Ruangan belum penuh, jadi masih ada tempat. Rani belum sepenuhnya memahami gerakan pertama dan meminta contoh sekali lagi. Pak Arif memperagakannya perlahan. Setelah kegiatan utama selesai, mereka melakukan pendinginan. Rani pulang dengan senang karena bisa mengikuti kelas tanpa merasa harus langsung mahir.",
+    "cn": "星期四下午，拉妮来到社区活动室的健身操课。她穿着T恤，带了水壶。强风把雨水吹到门边，部分地板变滑了。活动开始前，一位参与者告诉了带课的阿里夫先生。阿里夫请大家把包放到远离门的位置，移到干燥的那片地板。房间还没满，所以仍有位置。拉妮还没完全理解第一个动作，请对方再示范一次。阿里夫慢慢演示。主要活动结束后，大家做放松整理。拉妮高兴地回家，因为她能够参与课程，而不必觉得自己一开始就得熟练。"
+  },
+  "dialogue": {
+    "title": "开课前，Rani向朋友Dewa说明自己还没跟上",
+    "lines": [
+      {
+        "speaker": "Rani",
+        "id": "Aku baru pertama ikut senam di sini. Aku belum sepenuhnya paham gerakannya. Rasanya pengin pulang.",
+        "cn": "我第一次来这里做健身操，还没完全明白动作，有点想回家。（pengin = ingin）"
+      },
+      {
+        "speaker": "Dewa",
+        "id": "Nggak apa-apa, tanya Pak Arif aja. Jangan kabur dulu karena belum bisa.",
+        "cn": "没关系，问阿里夫先生就好。别因为还不会就溜走。（nggak = tidak；aja = saja）"
+      },
+      {
+        "speaker": "Rani",
+        "id": "Aku nggak akan kabur. Cuma lantai dekat pintu licin. Kita pindah, ya?",
+        "cn": "我不会溜走啦。只是门边地板滑，咱们换个位置吧。"
+      },
+      {
+        "speaker": "Dewa",
+        "id": "Iya, aku udah bilang ke Pak Arif. Kalau lantainya licin, kita pindah ke bagian yang kering.",
+        "cn": "嗯，我已经告诉阿里夫先生了。如果地板滑，我们就换到干的地方。（udah = sudah）"
+      },
+      {
+        "speaker": "Rani",
+        "id": "Oke. Kaos kamu basah juga? Aku bawa satu lagi kalau kamu butuh ganti.",
+        "cn": "好。你的T恤也湿了吗？我多带了一件，你要换的话可以用。"
+      },
+      {
+        "speaker": "Dewa",
+        "id": "Makasih, punyaku masih kering. Tadi kamu datang sendiri?",
+        "cn": "谢谢，我的还是干的。你刚才一个人来的吗？（makasih = terima kasih）"
+      },
+      {
+        "speaker": "Rani",
+        "id": "Iya. Aku jomblo, tapi ke sini memang buat olahraga. Kamu biasanya ikut sama siapa?",
+        "cn": "嗯。我单身，不过来这里确实是为了运动。你平时和谁一起来？（buat = untuk）"
+      },
+      {
+        "speaker": "Dewa",
+        "id": "Biasanya sendiri juga. Yuk, masuk dulu, nanti tempatnya penuh.",
+        "cn": "通常也是自己来。走，先进去吧，等会儿位置就满了。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：你第一次参加健身操，想确认主要活动结束后是否会做放松整理。用 senam、peserta、pendinginan 写2句，说明自己是新参与者，再问流程。",
+      "reference_answer": "Saya peserta baru di kelas senam ini. Apakah kita akan melakukan pendinginan setelah kegiatan utama selesai?",
+      "reference_cn": "我是这堂健身操课的新参与者。主要活动结束后，我们会做放松整理吗？"
+    },
+    {
+      "task": "弱词主动表达：朋友想因为一次没跟上就悄悄离开。用 kabur、sepenuhnya 写2句口语，请他先别溜，并承认自己也还没完全懂。",
+      "reference_answer": "Jangan kabur dulu. Aku juga belum sepenuhnya paham, jadi kita tanya pemandunya aja.",
+      "reference_cn": "先别溜。我也还没完全懂，所以我们问问带课的人吧。"
+    },
+    {
+      "task": "早课迁移：强风把雨水吹到门边，你想换地方放包。用今天08:00新学的 kencang、menaruh，加 licin，向同伴说明原因和做法。至少2句。",
+      "reference_answer": "Angin kencang membawa air ke dekat pintu, jadi lantainya licin. Saya akan menaruh tas di tempat yang kering.",
+      "reference_cn": "强风把水吹到了门边，所以地板滑。我会把包放到干燥的地方。"
+    },
+    {
+      "task": "针对今天答错的 menderita：把“故事里的人在店铺受损后遭受损失，但仍有权求助”译成2句，用 menderita kerugian 和 hak；不要把“遭受”写成“使别人受苦”。",
+      "reference_answer": "Tokoh dalam kisah itu menderita kerugian setelah tokonya rusak. Ia punya hak untuk meminta bantuan.",
+      "reference_cn": "故事里的人在店铺受损后遭受损失。他有权寻求帮助。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "“Ruangannya belum ____, tetapi aku belum ____ paham gerakannya.” 哪组填入后最自然？",
+        "options": [
+          "sepenuhnya / penuh",
+          "penuh / sepenuhnya",
+          "penuh / penuh",
+          "sepenuhnya / sepenuhnya"
+        ],
+        "answer_index": 1,
+        "answer": "penuh / sepenuhnya",
+        "explain": "penuh 描述房间满不满；sepenuhnya 修饰 paham，表示理解得是否完全。这两个同词根词不能在这里互换。"
+      },
+      {
+        "type": "choice",
+        "prompt": "朋友说：“Aku belum bisa gerakan ini. Aku pergi diam-diam aja, ya?” 哪个回应既接住困难，又提出具体做法？",
+        "options": [
+          "Iya, jangan bilang siapa-siapa.",
+          "Kalau belum bisa, berarti kamu tidak boleh ikut.",
+          "Jangan kabur dulu. Kita minta contoh sekali lagi.",
+          "Kamu harus langsung bisa semuanya."
+        ],
+        "answer_index": 2,
+        "answer": "Jangan kabur dulu. Kita minta contoh sekali lagi.",
+        "explain": "对方想悄悄走，用 jangan kabur dulu 接住这个意图，再提出请人示范的办法。不是强迫立刻掌握，也不是叫人隐瞒离场。"
+      },
+      {
+        "type": "choice",
+        "prompt": "“Tokoh itu ____ kerugian setelah tokonya rusak.” 哪一项表达最自然？",
+        "options": [
+          "menderita",
+          "menaruh",
+          "memperagakan",
+          "mengadakan"
+        ],
+        "answer_index": 0,
+        "answer": "menderita",
+        "explain": "menderita kerugian 表示遭受损失，主语是承受者。menaruh 是放置，memperagakan 是演示，mengadakan 是举办，均不与 kerugian 在这里自然搭配。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Jangan berdiri di dekat pintu; lantainya ____.（滑的）",
+        "answer": "licin",
+        "explain": "licin 描述地面滑。basah 只表示湿；这里练的是站立时不易稳住的表面性质。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Saya baru ikut kelas ini, jadi saya ____ baru.（参与者）",
+        "answer": "peserta",
+        "explain": "peserta baru 是新参与者，指亲自参加这堂课的人；ikut 则是参与动作，不能在这里代替表示人的名词。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我把T恤放在包里。",
+        "tokens": [
+          "Saya",
+          "menaruh",
+          "kaos",
+          "di",
+          "dalam",
+          "tas."
+        ],
+        "answer": "Saya menaruh kaos di dalam tas.",
+        "answer_cn": "我把T恤放在包里。",
+        "explain": "主语 Saya 后接 menaruh，再接物品 kaos 与位置 di dalam tas。"
+      }
+    ],
+    "self_check": [
+      "我能在3秒内说出 senam、peserta、licin 的意思吗？",
+      "我能分清 kaos 与衬衫，以及 pendinginan 与热身的区别吗？",
+      "我是否分清 penuh 描述满、sepenuhnya 表示完全地？",
+      "我知道 jomblo 不等于“一个人来”，kabur 不等于普通回家，menderita 的主语是承受者吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "30秒复述社区健身操课：为什么地板滑、大家换到哪里、Rani怎样请求示范、最后做了什么；用 senam、licin、pendinginan 说完整。",
+      "闭眼回想今天08:00新学的 kencang 和 menaruh：换成露台起风收东西的场景，各说一句；再把两句接成因果。",
+      "主动提取 menderita kerugian，换成一个虚构店铺的故事说两句；随后用 penuh／sepenuhnya 各造一句，分别说空间容量和理解程度。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "menderita",
+      "jomblo",
+      "kabur"
+    ],
+    "patterns": [
+      {
+        "pattern": "Aku belum sepenuhnya paham …",
+        "cn": "我还没有完全明白……。",
+        "example": "Aku belum sepenuhnya paham gerakannya.",
+        "example_cn": "我还没完全明白动作。"
+      },
+      {
+        "pattern": "Kalau …, kita …",
+        "cn": "如果……，我们就……。",
+        "example": "Kalau lantainya licin, kita pindah ke bagian yang kering.",
+        "example_cn": "如果地板滑，我们就换到干的地方。"
+      }
+    ]
+  }
+}
