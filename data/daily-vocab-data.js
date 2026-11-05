@@ -11192,23 +11192,25 @@ window.DAILY_VOCAB_DB = [
     "en": "full; filled",
     "root": "penuh",
     "root_cn": "满；充满",
-    "example": "Jadwal minggu ini sudah penuh, jadi kita perlu atur ulang.",
-    "example_cn": "这周日程已经满了，所以我们需要重新安排。",
+    "example": "Ruang tunggu penuh, jadi kami menonton trailer di ponsel sambil menunggu. Setelah itu, kami memilih tempat yang lebih tenang.",
+    "example_cn": "等候室满了，所以我们等候时用手机看预告片。之后我们选了更安静的地方。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 18:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-11-05 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-11-05"
     ],
     "lesson_occurrences": [
-      "2026-09-16 18:00"
+      "2026-09-16 18:00",
+      "2026-11-05 18:00"
     ]
   },
   {
@@ -12003,17 +12005,17 @@ window.DAILY_VOCAB_DB = [
     "en": "single; unattached",
     "root": "jomblo",
     "root_cn": "单身",
-    "example": "Dia masih jomblo dan sekarang lebih fokus pada pekerjaan.",
-    "example_cn": "他还是单身，现在更专注于工作。",
+    "example": "Aku jomblo, tapi aku nggak datang ke kelas buat cari pasangan. Aku cuma pengin dengar kisah orang lain dan punya teman baru.",
+    "example_cn": "我单身，但不是来课堂找对象的。我只是想听听别人的故事、交新朋友。（nggak = tidak；pengin = ingin；buat = untuk）",
     "categories": [
       "每日学习",
       "18:00",
       "口语",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-11-05 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -12021,12 +12023,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-18",
       "2026-09-30",
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-05"
     ],
     "lesson_occurrences": [
       "2026-09-18 18:00",
       "2026-09-30 08:00",
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-11-05 18:00"
     ]
   },
   {
@@ -14230,17 +14234,17 @@ window.DAILY_VOCAB_DB = [
     "en": "run away; flee",
     "root": "kabur",
     "root_cn": "逃跑；溜走",
-    "example": "Begitu pintu dibuka, kucing itu langsung kabur ke luar.",
-    "example_cn": "门一打开，那只猫就跑出去了。",
+    "example": "Jangan kabur dulu cuma karena kalah sekali. Aku juga nggak mau sombong kalau nanti menang.",
+    "example_cn": "别只因为输了一次就溜走。我之后即使赢了，也不想得意忘形。（nggak = tidak）",
     "categories": [
       "每日学习",
       "08:00",
       "口语",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-10-08 18:00",
+    "last_seen": "2026-11-05 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -14250,14 +14254,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-29",
       "2026-09-30",
       "2026-10-02",
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-05"
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00",
       "2026-09-29 08:00",
       "2026-09-30 18:00",
       "2026-10-02 08:00",
-      "2026-10-08 18:00"
+      "2026-10-08 18:00",
+      "2026-11-05 18:00"
     ]
   },
   {
@@ -16855,23 +16861,27 @@ window.DAILY_VOCAB_DB = [
     "en": "fully; completely",
     "root": "penuh",
     "root_cn": "满；完整",
-    "example": "Saya belum sepenuhnya paham cara kerja sistem ini.",
-    "example_cn": "我还没有完全理解这个系统的运作方式。",
+    "example": "Saya belum sepenuhnya paham cara alat ini berfungsi. Misalnya, saya belum tahu tombol untuk menghentikannya.",
+    "example_cn": "我还没有完全理解这台设备怎样运作。例如，我还不知道哪个是停止按钮。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-02 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-05 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-05"
     ],
     "lesson_occurrences": [
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-11-05 18:00"
     ]
   },
   {
@@ -28222,23 +28232,27 @@ window.DAILY_VOCAB_DB = [
     "en": "suffer from",
     "root": "derita",
     "root_cn": "痛苦；苦难",
-    "example": "Ibu menderita sakit kepala, jadi ia belum mau menghirup aroma kopi yang wangi itu.",
-    "example_cn": "妈妈头痛，所以暂时不想闻那杯香咖啡的气味。",
+    "example": "Tokoh separuh baya dalam kisah itu menderita kerugian setelah tokonya rusak. Ia lalu mencari bantuan untuk membukanya kembali.",
+    "example_cn": "故事里那位中年人物在店铺受损后遭受损失，随后找人帮忙重新开店。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-03 08:00",
-    "last_seen": "2026-11-03 08:00",
+    "last_seen": "2026-11-05 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-05"
     ],
     "lesson_occurrences": [
-      "2026-11-03 08:00"
+      "2026-11-03 08:00",
+      "2026-11-05 18:00"
     ]
   },
   {
@@ -28941,23 +28955,26 @@ window.DAILY_VOCAB_DB = [
     "en": "strong; fast; tight",
     "root": "kencang",
     "root_cn": "强劲；快；绷紧",
-    "example": "Angin bertiup kencang, tetapi matahari masih bersinar.",
-    "example_cn": "风刮得很大，但太阳仍照着。",
+    "example": "Angin kencang membuat poster itu lepas. Aku memasangnya lagi supaya nempel, lalu meminta temanku memegang bagian bawahnya.",
+    "example_cn": "强风把海报吹掉了。我把它重新贴牢，再请朋友扶住下边。（nempel = menempel）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-05 08:00",
-    "last_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-05"
     ],
     "lesson_occurrences": [
-      "2026-11-05 08:00"
+      "2026-11-05 08:00",
+      "2026-11-05 18:00"
     ]
   },
   {
@@ -28966,23 +28983,26 @@ window.DAILY_VOCAB_DB = [
     "en": "put; place",
     "root": "taruh",
     "root_cn": "放",
-    "example": "Ia menaruh novel fiksi ilmiah yang menarik itu di meja.",
-    "example_cn": "她把那本有趣的科幻小说放在桌上。",
+    "example": "Saya menaruh tas jauh dari pintu. Teman saya bilang, “Nggak perlu bongkar semua isinya; kartunya ada di saku depan.”",
+    "example_cn": "我把包放在离门远的地方。朋友说：“不用把里面的东西全翻出来，卡在前面的口袋里。”（nggak = tidak；bongkar 在口语里直接用词根）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-05 08:00",
-    "last_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-05 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-05"
     ],
     "lesson_occurrences": [
-      "2026-11-05 08:00"
+      "2026-11-05 08:00",
+      "2026-11-05 18:00"
     ]
   },
   {
@@ -29083,6 +29103,131 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-05 08:00"
+    ]
+  },
+  {
+    "word": "senam",
+    "cn": "体操；健身操",
+    "en": "gymnastics; group exercise",
+    "root": "senam",
+    "root_cn": "体操；健身操",
+    "example": "Untuk merayakan ulang tahun klub, warga mengadakan senam bersama. Beberapa orang masih malu-malu saat mengikuti gerakannya.",
+    "example_cn": "为庆祝俱乐部成立周年，居民一起做健身操。有些人跟着做动作时还略显害羞。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 18:00",
+    "last_seen": "2026-11-05 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 18:00"
+    ]
+  },
+  {
+    "word": "peserta",
+    "cn": "参与者；参加活动的人",
+    "en": "participant",
+    "root": "serta",
+    "root_cn": "共同；参与",
+    "example": "Peserta boleh mengeluarkan kartu dari dompet untuk diperiksa. Kartu itu berlaku sampai akhir bulan.",
+    "example_cn": "参与者可以从钱包里取出卡片供检查。这张卡有效期至月底。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 18:00",
+    "last_seen": "2026-11-05 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 18:00"
+    ]
+  },
+  {
+    "word": "licin",
+    "cn": "滑的；光滑的",
+    "en": "slippery; smooth",
+    "root": "licin",
+    "root_cn": "滑；光滑",
+    "example": "Lantainya licin setelah terkena air. Perbaiki bagian yang bocor untuk melindungi orang yang lewat.",
+    "example_cn": "地板沾水后很滑。修好漏水的地方，以保护经过的人。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 18:00",
+    "last_seen": "2026-11-05 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 18:00"
+    ]
+  },
+  {
+    "word": "kaos",
+    "cn": "T恤；针织汗衫（常用写法）",
+    "en": "T-shirt",
+    "root": "kaos",
+    "root_cn": "T恤；汗衫",
+    "example": "Kaos bergambar tokoh film itu dipasang di lemari pajangan. Pembeli boleh melihatnya, tetapi tidak boleh menyentuh barang di dalamnya.",
+    "example_cn": "印有那部电影角色图案的T恤被放在展示柜里。顾客可以看，但不能触摸柜内的物品。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 18:00",
+    "last_seen": "2026-11-05 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 18:00"
+    ]
+  },
+  {
+    "word": "pendinginan",
+    "cn": "冷却；运动后的放松整理",
+    "en": "cooling; cool-down",
+    "root": "dingin",
+    "root_cn": "冷；凉",
+    "example": "Setelah latihan kekuatan, kelompok itu melakukan pendinginan di tempat yang teduh.",
+    "example_cn": "力量练习之后，小组在阴凉处做放松整理。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-05 18:00",
+    "last_seen": "2026-11-05 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-05"
+    ],
+    "lesson_occurrences": [
+      "2026-11-05 18:00"
     ]
   }
 ];

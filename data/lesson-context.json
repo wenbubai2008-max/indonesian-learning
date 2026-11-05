@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-05",
-    "session": "pm",
-    "time": "18:00",
-    "day": 76
+    "date": "2026-11-06",
+    "session": "am",
+    "time": "08:00",
+    "day": 77
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-05T09:40:55.830Z",
-    "lesson_watermark": "2026-11-05 08:00",
+    "runtime_generated_at": "2026-11-05T10:34:01.496Z",
+    "lesson_watermark": "2026-11-05 18:00",
     "index_updated": "2026-11-05",
-    "runtime_hash": "85477c2f89421b226d9f2169187d88df74308a23f6fa6700f80c0b5097309004",
-    "index_hash": "a9a0d7a68db6f18e2cbcbb34dabcd1a99d8e8a25cf871d34ad53c675d142e435",
+    "runtime_hash": "c85a475d0206fc794ecc435c1dccadd175e5772ccc385825cfa385be3075dc75",
+    "index_hash": "c23cf7e14b94cf3b92d7e5823fe3b7e90ca6255f319e8de3022d2261bb35bcd6",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -50,20 +50,8 @@
   "candidates": {
     "new_dont": [
       [
-        "senam",
-        "锻炼"
-      ],
-      [
         "pinggir",
         "边缘"
-      ],
-      [
-        "peserta",
-        "参与者"
-      ],
-      [
-        "licin",
-        "滑"
       ],
       [
         "laku",
@@ -128,10 +116,6 @@
         "经常"
       ],
       [
-        "kaos",
-        "T恤"
-      ],
-      [
         "merek",
         "品牌"
       ],
@@ -142,10 +126,6 @@
       [
         "animasi",
         "动画片"
-      ],
-      [
-        "pendinginan",
-        "整理/冷身运动"
       ],
       [
         "tepuk tangan",
@@ -754,6 +734,14 @@
       [
         "mengintai",
         "窥伺；潜伏盯着"
+      ],
+      [
+        "menyergap",
+        "突袭；扑住"
+      ],
+      [
+        "santap",
+        "吃；享用（较文雅）"
       ]
     ],
     "review": [
@@ -1636,16 +1624,6 @@
         "承认；自称",
         "aku",
         "我；自我"
-      ],
-      [
-        "penuh",
-        3,
-        0,
-        "",
-        "2026-10-15T13:45:38.145Z",
-        "满的；充满的",
-        "penuh",
-        "满；充满"
       ],
       [
         "pusat",
@@ -2928,16 +2906,6 @@
         "希望；祝愿"
       ],
       [
-        "sepenuhnya",
-        2,
-        0,
-        "",
-        "2026-10-23T23:36:56.031Z",
-        "完全地",
-        "penuh",
-        "满；完整"
-      ],
-      [
         "taruh",
         2,
         0,
@@ -2958,104 +2926,24 @@
         "行动；处理"
       ],
       [
-        "panik",
-        1,
+        "bersinar",
+        2,
         0,
         "",
-        "2026-11-05T02:50:37.752Z",
-        "惊慌；慌乱",
-        "panik",
-        "惊慌"
+        "2026-10-19T13:15:28.991Z",
+        "闪耀；发光",
+        "sinar",
+        "光线"
       ],
       [
-        "nagih",
-        1,
+        "jarak",
+        2,
         0,
         "",
-        "2026-11-05T02:50:34.276Z",
-        "催要；催款（口语）",
-        "tagih",
-        "讨要应付的钱；催收"
-      ],
-      [
-        "dampak",
-        1,
-        0,
-        "",
-        "2026-11-05T02:50:04.001Z",
-        "影响；产生的后果",
-        "dampak",
-        "影响；后果"
-      ],
-      [
-        "merayu",
-        1,
-        0,
-        "",
-        "2026-11-05T02:50:26.350Z",
-        "哄劝；讨好地劝说；献殷勤",
-        "rayu",
-        "哄劝；讨好地劝说"
-      ],
-      [
-        "kencang",
-        1,
-        0,
-        "",
-        "2026-11-05T02:50:10.420Z",
-        "强劲的；快的；绷紧的",
-        "kencang",
-        "强劲；快；绷紧"
-      ],
-      [
-        "menaruh",
-        1,
-        0,
-        "",
-        "2026-11-05T02:50:13.005Z",
-        "放置；把……放到某处",
-        "taruh",
-        "放"
-      ],
-      [
-        "kemasan",
-        1,
-        0,
-        "",
-        "2026-11-05T02:50:07.536Z",
-        "包装；包装形式",
-        "kemas",
-        "打包；整理"
-      ],
-      [
-        "menghela",
-        1,
-        0,
-        "",
-        "2026-11-05T02:50:17.765Z",
-        "拉；吸（气）；常用于叹气",
-        "hela",
-        "拉；牵引；吸气"
-      ],
-      [
-        "curiga",
-        1,
-        0,
-        "",
-        "2026-11-05T02:50:00.323Z",
-        "怀疑；觉得可疑",
-        "curiga",
-        "怀疑"
-      ],
-      [
-        "nyenyak",
-        1,
-        0,
-        "",
-        "2026-11-05T02:50:35.769Z",
-        "睡得沉；睡得香",
-        "nyenyak",
-        "睡得沉；熟睡"
+        "2026-10-21T01:44:20.096Z",
+        "距离；间隔",
+        "jarak",
+        "距离；间隔"
       ]
     ],
     "focus": [
@@ -3320,46 +3208,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-10-29",
-      "session": "am",
-      "review_core": [
-        "pembangunan",
-        "bangunan",
-        "kekerasan",
-        "memilah",
-        "canggung",
-        "ngeles"
-      ],
-      "new_words": [
-        "bepergian",
-        "pasangan",
-        "pengunjung",
-        "tradisional",
-        "beragam",
-        "menyenangkan",
-        "momen",
-        "sepanjang",
-        "menjelang",
-        "tersenyum"
-      ]
-    },
-    {
-      "date": "2026-10-29",
-      "session": "pm",
-      "review_core": [
-        "dimaksudkan",
-        "penanganan",
-        "nimpalin",
-        "nyusul",
-        "patungan"
-      ],
-      "new_words": [
-        "hapus",
-        "angkat",
-        "batas"
-      ]
-    },
-    {
       "date": "2026-10-30",
       "session": "am",
       "review_core": [
@@ -3619,107 +3467,44 @@
         "curiga",
         "nyenyak"
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "session": "pm",
+      "review_core": [
+        "jomblo",
+        "kabur",
+        "penuh",
+        "sepenuhnya",
+        "menderita"
+      ],
+      "new_words": [
+        "senam",
+        "peserta",
+        "licin",
+        "kaos",
+        "pendinginan"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-04",
+    "date": "2026-11-05",
     "new_words": [
-      "menanyakan",
-      "berkas",
-      "tanda tangan",
-      "menyerahkan",
-      "pertimbangan"
+      "senam",
+      "peserta",
+      "licin",
+      "kaos",
+      "pendinginan"
     ],
     "review_core": [
-      "menyalin",
-      "seraya",
-      "kejebak",
-      "ketua",
-      "khusus"
+      "jomblo",
+      "kabur",
+      "penuh",
+      "sepenuhnya",
+      "menderita"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-05",
-    "vocab": [
-      [
-        "panik",
-        "惊慌；慌乱",
-        "panic; panicked",
-        "panik",
-        "惊慌"
-      ],
-      [
-        "nagih",
-        "催要；催款（口语）",
-        "ask for repayment; collect a debt (colloquial)",
-        "tagih",
-        "讨要应付的钱；催收"
-      ],
-      [
-        "dampak",
-        "影响；产生的后果",
-        "impact; effect",
-        "dampak",
-        "影响；后果"
-      ],
-      [
-        "merayu",
-        "哄劝；讨好地劝说；献殷勤",
-        "coax; sweet-talk; woo",
-        "rayu",
-        "哄劝；讨好地劝说"
-      ],
-      [
-        "kencang",
-        "强劲的；快的；绷紧的",
-        "strong; fast; tight",
-        "kencang",
-        "强劲；快；绷紧"
-      ],
-      [
-        "menaruh",
-        "放置；把……放到某处",
-        "put; place",
-        "taruh",
-        "放"
-      ],
-      [
-        "kemasan",
-        "包装；包装形式",
-        "packaging; package",
-        "kemas",
-        "打包；整理"
-      ],
-      [
-        "menghela",
-        "拉；吸（气）；常用于叹气",
-        "draw; draw a breath; sigh",
-        "hela",
-        "拉；牵引；吸气"
-      ],
-      [
-        "curiga",
-        "怀疑；觉得可疑",
-        "suspicious; suspect",
-        "curiga",
-        "怀疑"
-      ],
-      [
-        "nyenyak",
-        "睡得沉；睡得香",
-        "soundly; deeply asleep",
-        "nyenyak",
-        "睡得沉；熟睡"
-      ]
-    ],
-    "review_vocab": [
-      "penyebab",
-      "sebab",
-      "berangkat",
-      "berbicara",
-      "kehidupan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
