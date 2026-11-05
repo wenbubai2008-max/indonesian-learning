@@ -1,0 +1,362 @@
+{
+  "date": "2026-11-05",
+  "session": "am",
+  "time": "08:00",
+  "day": 76,
+  "title": "08:00 早课｜Cek Dulu Sebelum Curiga · 起疑之前，先核对清楚",
+  "vocab": [
+    {
+      "word": "panik",
+      "display": "panik",
+      "audio_text": "panik",
+      "cn": "惊慌；慌乱",
+      "en": "panic; panicked",
+      "root": "panik",
+      "root_cn": "惊慌",
+      "formation": "外来词，可描述慌乱状态。搭配：jangan panik、mulai panik、merasa panik。派生 kepanikan 表示惊慌这种状态。",
+      "example": "Aku sempat panik, tetapi dompetku akhirnya ditemukan di bawah meja.",
+      "example_cn": "我一度很慌，但钱包最后在桌子底下找到了。",
+      "synonym_note": "panik 比 khawatir 更强调慌乱，可能一时不知道怎么办；khawatir 是担心，不一定失去冷静。口语说法：Jangan panik dulu, kita cek bareng.（先别慌，咱们一起查。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "nagih",
+      "display": "nagih",
+      "audio_text": "nagih",
+      "cn": "催要；催款（口语）",
+      "en": "ask for repayment; collect a debt (colloquial)",
+      "root": "tagih",
+      "root_cn": "讨要应付的钱；催收",
+      "formation": "口语动词，对应标准语 menagih。meN- + tagih → menagih，t 脱落；口语说 nagih。搭配：nagih utang、nagih uang、nagih janji（催人兑现承诺）。",
+      "example": "Aku nggak akan nagih lagi kalau kwitansi pembayarannya udah ada.",
+      "example_cn": "付款收据已经有了的话，我就不会再催了。（nggak = tidak；nagih = menagih；udah = sudah；kwitansi 是常见写法，规范拼写为 kuitansi）",
+      "synonym_note": "nagih uang 是催要应付的钱，不等于借钱。bikin nagih 在饮食等口语里是“让人还想再来”，须按搭配辨义。口语说法：Aku mau nagih uang yang kemarin kamu pinjam.（我想要回你昨天借的钱。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "dampak",
+      "display": "dampak",
+      "audio_text": "dampak",
+      "cn": "影响；产生的后果",
+      "en": "impact; effect",
+      "root": "dampak",
+      "root_cn": "影响；后果",
+      "formation": "名词。搭配：dampak pada kehidupan、dampak positif、dampak negatif。派生 berdampak 表示产生影响。",
+      "example": "Kurang tidur bisa punya dampak pada kehidupan sehari-hari, yaitu sulit berkonsentrasi.",
+      "example_cn": "睡眠不足会影响日常生活，比如难以集中注意力。",
+      "synonym_note": "dampak 不一定负面，可说 dampak positif；akibat 常突出某事造成的后果，尤其是不好的后果，但两者有重叠。口语说法：谈具体结果也可说 efeknya …（它的影响是……）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "merayu",
+      "display": "merayu",
+      "audio_text": "merayu",
+      "cn": "哄劝；讨好地劝说；献殷勤",
+      "en": "coax; sweet-talk; woo",
+      "root": "rayu",
+      "root_cn": "哄劝；讨好地劝说",
+      "formation": "meN- + rayu → merayu，r 保留。搭配：merayu ibu、merayu agar diizinkan、merayu dengan kata-kata manis。浪漫情境也可指追求、献殷勤。",
+      "example": "Anak itu memeluk ibunya lalu merayu supaya diizinkan bermain sebentar lagi.",
+      "example_cn": "那个孩子抱住妈妈，哄着她允许自己再玩一会儿。",
+      "synonym_note": "merayu 强调用好听的话或讨好方式让对方答应；membujuk 范围更广，也可认真讲道理。不是每个 merayu 都有恋爱或“勾引”的意思。口语说法：Ngerayu 是常见口语形；对孩子哄妈妈的场景，译作哄劝更准确。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kencang",
+      "display": "kencang",
+      "audio_text": "kencang",
+      "cn": "强劲的；快的；绷紧的",
+      "en": "strong; fast; tight",
+      "root": "kencang",
+      "root_cn": "强劲；快；绷紧",
+      "formation": "基本形容词。搭配：angin kencang（大风）、berlari kencang（跑得快）、diikat kencang（绑紧）。由被描述对象决定具体意思。",
+      "example": "Angin bertiup kencang, tetapi matahari masih bersinar.",
+      "example_cn": "风刮得很大，但太阳仍照着。",
+      "synonym_note": "kencang 不只表示紧：angin kencang 是强风；ketat 常说衣服紧、规则严格。口语说法：Anginnya kencang banget.（风特别大。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "menaruh",
+      "display": "menaruh",
+      "audio_text": "menaruh",
+      "cn": "放置；把……放到某处",
+      "en": "put; place",
+      "root": "taruh",
+      "root_cn": "放",
+      "formation": "meN- + taruh → menaruh，t 脱落。搭配：menaruh tas di meja、menaruh barang di dalam kotak、menaruh harapan（寄予希望）。",
+      "example": "Ia menaruh novel fiksi ilmiah yang menarik itu di meja.",
+      "example_cn": "她把那本有趣的科幻小说放在桌上。",
+      "synonym_note": "menaruh 与 meletakkan 在放置物品时常能互换；menyimpan 更强调收好、保存。口语说法：taruh，如 Taruh di sini aja.（就放这里吧。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "kemasan",
+      "display": "kemasan",
+      "audio_text": "kemasan",
+      "cn": "包装；包装形式",
+      "en": "packaging; package",
+      "root": "kemas",
+      "root_cn": "打包；整理",
+      "formation": "kemas + -an → kemasan，不是 ke- + mas + -an。搭配：kemasan rusak、kemasan plastik、membuka kemasan。",
+      "example": "Kemasan yang menarik belum tentu berarti isinya bagus. Periksa barangnya sebelum membayar.",
+      "example_cn": "包装好看，不一定表示里面的东西好。付款前检查一下商品。",
+      "synonym_note": "kemasan 说商品的包装或包装形式；bungkus 也可指包裹、外包层，两者在一些场景能重叠。口语说法：Bungkusnya rusak. 常用来说明外包装坏了。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menghela",
+      "display": "menghela",
+      "audio_text": "menghela",
+      "cn": "拉；吸（气）；常用于叹气",
+      "en": "draw; draw a breath; sigh",
+      "root": "hela",
+      "root_cn": "拉；牵引；吸气",
+      "formation": "meN- + hela → menghela，h 保留。最实用的搭配：menghela napas（叹一口气／长出一口气）。不要把 menghela 单独固定译成“叹”。",
+      "example": "Ibu menghela napas ketika anaknya mulai ngambek karena waktu bermain sudah habis.",
+      "example_cn": "孩子因为玩耍时间结束而开始闹别扭时，妈妈叹了口气。（ngambek 是口语）",
+      "synonym_note": "menghela napas 是叹气或长出一口气；bernapas 是呼吸这个动作。口语说法：日常也说 Aku cuma bisa menghela napas.（我只能叹口气。）不是所有吸气都带失望情绪。",
+      "is_oral_new": false
+    },
+    {
+      "word": "curiga",
+      "display": "curiga",
+      "audio_text": "curiga",
+      "cn": "怀疑；觉得可疑",
+      "en": "suspicious; suspect",
+      "root": "curiga",
+      "root_cn": "怀疑",
+      "formation": "基本词。搭配：curiga kepada seseorang、curiga bahwa …、mulai curiga。派生 mencurigai 表示怀疑某人或某事。",
+      "example": "Ia mulai curiga karena temannya terus mengeluh tentang uang, tetapi belum menunjukkan bukti pembayaran.",
+      "example_cn": "朋友一直抱怨钱的事，却还没拿出付款凭证，她因此开始起疑。",
+      "synonym_note": "curiga 常含觉得有问题、不可信的意味；ragu 是拿不准，不一定怀疑有人做坏事。口语说法：Aku curiga ada yang salah.（我怀疑哪里出了问题。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "nyenyak",
+      "display": "nyenyak",
+      "audio_text": "nyenyak",
+      "cn": "睡得沉；睡得香",
+      "en": "soundly; deeply asleep",
+      "root": "nyenyak",
+      "root_cn": "睡得沉；熟睡",
+      "formation": "常和 tidur 连用。搭配：tidur nyenyak、tidak bisa tidur nyenyak、tidur lebih nyenyak。形容睡眠状态，不泛指所有环境安静。",
+      "example": "Setelah minum air karena haus, ia kembali ke kamar dan tidur nyenyak sampai pagi.",
+      "example_cn": "她口渴喝过水后，回到房间，一觉睡到早上。",
+      "synonym_note": "nyenyak 强调睡得熟；tenang 是平静、安宁，既能说人也能说环境。tidur nyenyak 不等于“房间很安静”。口语说法：Semalam tidurnya nyenyak, nggak?（昨晚睡得好吗？）",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "penyebab",
+    "sebab",
+    "berangkat",
+    "berbicara",
+    "kehidupan"
+  ],
+  "sentences": [
+    {
+      "text": "Sebelum berangkat kerja, Maya menaruh paket di dalam rumah karena kemasannya tidak tahan air.",
+      "cn": "上班出门前，玛雅把包裹放在屋里，因为包装不防水。"
+    },
+    {
+      "text": "Angin pagi itu kencang, tetapi anak Maya tetap merayu ibunya supaya boleh bermain di luar.",
+      "cn": "那天早上的风很大，但玛雅的孩子仍哄着妈妈，希望她允许自己到外面玩。"
+    },
+    {
+      "text": "Maya tidak langsung curiga ketika menerima pesan itu; ia ingin mencari penyebab masalah sebelum berbicara dengan temannya.",
+      "cn": "玛雅收到那条消息时没有马上起疑；她想先找出问题原因，再和朋友谈。"
+    },
+    {
+      "text": "Aku cuma mau nagih uangnya, bukan ngajak ribut; kalau udah bayar, kirim buktinya aja.",
+      "cn": "我只是想要回那笔钱，不是想吵架；已经付了的话，把凭证发来就好。（nagih = menagih；ngajak = mengajak；udah = sudah；aja = saja）"
+    },
+    {
+      "text": "Maya akhirnya bisa tidur nyenyak, sebab masalahnya sudah jelas dan tidak perlu dibesar-besarkan.",
+      "cn": "玛雅终于能睡个好觉，因为事情已经弄清，不需要再把问题放大。"
+    }
+  ],
+  "reading": {
+    "text": "Rabu malam, Maya menerima pesan dari Nita, teman yang pernah meminjamkan uang kepadanya. “Aku mau nagih uang yang kemarin, ya,” tulis Nita. Maya sempat panik sebab ia merasa sudah membayar. Namun, ia tidak langsung curiga bahwa Nita sengaja meminta uang dua kali. Ia memeriksa catatan pembayaran sebelum berbicara dengan Nita. Ternyata penyebab masalahnya sederhana: Maya belum mengirim bukti pembayaran. Setelah melihat bukti itu, Nita meminta maaf. Maya menghela napas dan menjelaskan bahwa salah paham kecil bisa punya dampak pada hubungan mereka. Ia senang masalah itu selesai. Malam itu, ia bisa tidur nyenyak tanpa memikirkan utang lagi.",
+    "cn": "星期三晚上，玛雅收到妮塔的消息；妮塔之前借过钱给她。妮塔写道：“我想要回之前那笔钱哦。”玛雅一度慌了，因为她觉得自己已经还了。不过，她没有马上怀疑妮塔故意要两遍钱，而是在与妮塔交谈前先检查付款记录。结果，问题原因很简单：玛雅还没发付款凭证。妮塔看到凭证后道了歉。玛雅长出一口气，说明小小的误会也可能影响两人的关系。她很高兴事情解决了。那晚，她能安心睡个好觉，不再想着欠款。"
+  },
+  "quiz": [
+    {
+      "question": "“Saya belum tahu kenapa pembayaran itu tidak tercatat. Saya ingin mencari ____.” 选最自然的一项。",
+      "options": [
+        "menyebabkan",
+        "penyebab",
+        "disebabkan",
+        "karena"
+      ],
+      "answer_index": 1,
+      "answer": "penyebab",
+      "explain": "mencari 后面需要寻找的对象，penyebab 是原因这个名词。menyebabkan 是“导致”，disebabkan 是被动形式，karena 是连词。sebab 也能作原因名词，如 mencari sebab masalah，不应把二者说成永远不能互换。"
+    },
+    {
+      "question": "朋友说：“Kamu masih belum bayar, ya?” 你已经付过，但还没发凭证。下面哪句最合适？",
+      "options": [
+        "Kamu pasti mau minta uang dua kali.",
+        "Aku nggak perlu cek apa-apa lagi.",
+        "Aku cek catatannya dulu, lalu kukirim bukti pembayarannya.",
+        "Kalau aku diam saja, uangnya pasti kembali."
+      ],
+      "answer_index": 2,
+      "answer": "Aku cek catatannya dulu, lalu kukirim bukti pembayarannya.",
+      "explain": "先核对记录、再发凭证能回应眼前的信息差。其余选项直接指控、拒绝核实，或把沉默当成一定能解决问题，都不符合已经付款但缺凭证的情况。"
+    },
+    {
+      "question": "“Maya ____ paket itu di meja, lalu menyimpannya di lemari.” 哪一项适合这里的主动动作？",
+      "options": [
+        "menaruh",
+        "ditaruh",
+        "taruhan",
+        "tertumpah"
+      ],
+      "answer_index": 0,
+      "answer": "menaruh",
+      "explain": "Maya 主动把包裹放到桌上，用 menaruh。ditaruh 是被动；taruhan 通常是赌注，不能误当作“放”的普通名词；tertumpah 表示洒出，不是主动放置。"
+    }
+  ],
+  "output": {
+    "task": "换到你自己的生活：朋友来催你兑现一个已经完成的承诺。用 nagih、curiga、panik 中至少2个，写3句自然消息或叙述，说明你会先核对什么，再怎样回应；不要照抄还款故事。",
+    "reference_answer": "Temanku nagih foto yang kemarin kujanjikan. Padahal fotonya sudah kukirim. Aku nggak panik dan nggak langsung curiga dia sengaja bikin masalah. Aku cek foldernya dulu, lalu kukirim ulang fotonya.",
+    "reference_cn": "朋友催我要昨天答应给的照片，可我已经发过了。我不慌，也不马上怀疑他故意找事。我先检查文件夹，再把照片重新发给他。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出惊慌、催要、影响、哄劝、强劲／快速、放置、包装、叹一口气、怀疑、睡得沉。把“叹一口气”完整说成 menghela napas；答不出才回看。",
+    "同词根与辨析：sebab 可以作“因为”或“原因”名词；penyebab 是导致结果的因素，常说 mencari penyebab masalah。kemasan = kemas + -an；kencang 不只表示紧，nyenyak 主要形容睡眠，merayu 不一定是恋爱中的追求。分别说出一个自己的例子。",
+    "主动应用：不看课文，用 nagih、panik、curiga 复述核对和回应的过程；再用 berangkat、berbicara、kehidupan 各说一个贴近自己的短句。用 dampak 说明误会会影响什么，语气只陈述后果，不指责对方。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "panik",
+      "nagih",
+      "curiga"
+    ],
+    "patterns": [
+      {
+        "pattern": "Aku cuma mau …, bukan …",
+        "cn": "我只是想……，不是……。",
+        "example": "Aku cuma mau nagih uangnya, bukan ngajak ribut; kalau udah bayar, kirim buktinya aja.",
+        "example_cn": "我只是想要回那笔钱，不是想吵架；已经付了的话，把凭证发来就好。"
+      },
+      {
+        "pattern": "… sebelum berbicara dengan …",
+        "cn": "与……交谈之前，先……。",
+        "example": "Ia memeriksa catatan pembayaran sebelum berbicara dengan Nita.",
+        "example_cn": "她先检查付款记录，再与妮塔交谈。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "惊慌",
+        "id": "panik"
+      },
+      {
+        "cn": "催要；催款",
+        "id": "nagih"
+      },
+      {
+        "cn": "影响",
+        "id": "dampak"
+      },
+      {
+        "cn": "哄劝；讨好地劝说",
+        "id": "merayu"
+      },
+      {
+        "cn": "强劲／快／绷紧",
+        "id": "kencang"
+      },
+      {
+        "cn": "放置",
+        "id": "menaruh"
+      },
+      {
+        "cn": "包装",
+        "id": "kemasan"
+      },
+      {
+        "cn": "拉；常用于叹气",
+        "id": "menghela"
+      },
+      {
+        "cn": "怀疑",
+        "id": "curiga"
+      },
+      {
+        "cn": "睡得沉",
+        "id": "nyenyak"
+      }
+    ],
+    "frames": [
+      "Aku cuma mau …, bukan …",
+      "… sebelum berbicara dengan …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "sebab",
+            "cn": "因为；原因"
+          },
+          {
+            "id": "penyebab",
+            "cn": "导致结果的因素"
+          }
+        ],
+        "note": "sebab 可连接原因，也可作名词；penyebab 是名词，常与 mencari 搭配。"
+      },
+      {
+        "items": [
+          {
+            "id": "nyenyak",
+            "cn": "睡得沉"
+          },
+          {
+            "id": "tenang",
+            "cn": "平静；安宁"
+          }
+        ],
+        "note": "nyenyak 主要说睡眠；tenang 的适用范围更广。"
+      },
+      {
+        "items": [
+          {
+            "id": "curiga",
+            "cn": "怀疑有问题"
+          },
+          {
+            "id": "ragu",
+            "cn": "拿不准"
+          }
+        ],
+        "note": "不确定不一定表示怀疑别人做坏事。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "nagih",
+        "usage": "催人履行付款或承诺，不先替对方定性。",
+        "examples": [
+          {
+            "id": "Aku cuma mau nagih uangnya, bukan ngajak ribut; kalau udah bayar, kirim buktinya aja.",
+            "cn": "我只是想要回那笔钱，不是想吵架；已经付了的话，把凭证发来就好。"
+          }
+        ]
+      },
+      {
+        "word": "menghela",
+        "usage": "把叹气作为完整搭配记。",
+        "examples": [
+          {
+            "id": "Ibu menghela napas ketika anaknya mulai ngambek karena waktu bermain sudah habis.",
+            "cn": "孩子因为玩耍时间结束而开始闹别扭时，妈妈叹了口气。"
+          }
+        ]
+      }
+    ]
+  }
+}
