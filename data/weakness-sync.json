@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-05T07:39:36.966Z",
+  "updated_at": "2026-11-05T13:54:41.932Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -26633,16 +26633,17 @@
     "kaos": {
       "word": "kaos",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:23.407Z",
+      "updated_at": "2026-11-05T13:54:22.029Z",
       "display": "kaos",
       "cn": "T恤",
+      "last_review": "2026-11-05T13:54:21.977Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kemeja": {
       "word": "kemeja",
@@ -27676,17 +27677,18 @@
     "pendinginan": {
       "word": "pendinginan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:26.212Z",
+      "updated_at": "2026-11-05T13:54:25.271Z",
       "display": "pendinginan",
       "cn": "整理/冷身运动",
       "root": "dingin",
+      "last_review": "2026-11-05T13:54:25.221Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "peregangan": {
       "word": "peregangan",
@@ -30767,9 +30769,10 @@
     "senam": {
       "word": "senam",
       "status": "active",
-      "updated_at": "2026-10-12T03:57:00.101Z",
+      "updated_at": "2026-11-05T13:54:30.568Z",
       "display": "senam",
       "cn": "锻炼",
+      "last_review": "2026-11-05T13:54:30.519Z",
       "source": "每日学习阅读",
       "source_date": "2026-10-12",
       "session": "08:00",
@@ -30777,7 +30780,7 @@
         "manual_unknown"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pinggir": {
       "word": "pinggir",
@@ -30797,32 +30800,42 @@
     "peserta": {
       "word": "peserta",
       "status": "active",
-      "updated_at": "2026-10-12T03:59:35.149Z",
+      "updated_at": "2026-11-05T13:54:28.478Z",
       "display": "peserta",
-      "cn": "参与者",
-      "source": "每日学习阅读",
-      "source_date": "2026-10-12",
-      "session": "08:00",
+      "cn": "参与者；参加活动的人",
+      "root": "serta",
+      "root_cn": "共同；参与",
+      "last_wrong": "2026-11-05T13:52:00.851Z",
+      "last_review": "2026-11-05T13:54:28.426Z",
+      "source": "课程小测",
+      "source_date": "2026-11-05",
+      "session": "18:00",
       "reasons": [
-        "manual_unknown"
+        "manual_unknown",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 0
+      "wrong_count": 1,
+      "right_streak": 1
     },
     "licin": {
       "word": "licin",
       "status": "active",
-      "updated_at": "2026-10-13T14:20:14.112Z",
+      "updated_at": "2026-11-05T13:54:23.219Z",
       "display": "licin",
-      "cn": "滑",
-      "source": "每日学习阅读",
-      "source_date": "2026-10-13",
-      "session": "19:00",
+      "cn": "滑的；光滑的",
+      "root": "licin",
+      "root_cn": "滑；光滑",
+      "last_wrong": "2026-11-05T13:51:49.220Z",
+      "last_review": "2026-11-05T13:54:23.165Z",
+      "source": "课程小测",
+      "source_date": "2026-11-05",
+      "session": "18:00",
       "reasons": [
-        "manual_unknown"
+        "manual_unknown",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 0
+      "wrong_count": 1,
+      "right_streak": 1
     },
     "laku": {
       "word": "laku",
@@ -30938,8 +30951,10 @@
     "berencana": {
       "word": "berencana",
       "status": "mastered",
-      "updated_at": "2026-10-15T04:09:57.499Z",
+      "updated_at": "2026-11-05T11:56:30.298Z",
       "display": "berencana",
+      "cn": "计划",
+      "root": "rencana",
       "last_review": "2026-10-15T04:09:57.467Z",
       "last_mastered": "2026-10-15T04:09:57.467Z",
       "reasons": [],
@@ -32141,6 +32156,21 @@
       "cn": "兴趣",
       "source": "泛读",
       "source_date": "2026-11-05",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mahir": {
+      "word": "mahir",
+      "status": "active",
+      "updated_at": "2026-11-05T13:45:20.994Z",
+      "display": "mahir",
+      "cn": "精通",
+      "source": "每日学习阅读",
+      "source_date": "2026-11-05",
+      "session": "19:00",
       "reasons": [
         "manual_unknown"
       ],
