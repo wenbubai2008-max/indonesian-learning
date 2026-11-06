@@ -1,0 +1,397 @@
+{
+  "date": "2026-11-06",
+  "session": "pm",
+  "time": "18:00",
+  "day": 77,
+  "title": "18:00 晚课｜Belum Mahir, Tetap Boleh Mencoba · 还不熟练，也可以先尝试",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "hiburan",
+    "minat",
+    "mahir",
+    "animasi",
+    "tepuk tangan"
+  ],
+  "vocab": [
+    {
+      "word": "hiburan",
+      "display": "hiburan",
+      "audio_text": "hiburan",
+      "cn": "娱乐；消遣；带来愉悦的活动",
+      "en": "entertainment; amusement",
+      "root": "hibur",
+      "root_cn": "使开心；安慰",
+      "formation": "hibur + -an → hiburan。搭配：hiburan keluarga、acara hiburan、mencari hiburan。名词，不是“感到开心”这个状态。",
+      "example": "Film animasi berjudul Teman yang Setia itu menjadi hiburan keluarga pada akhir pekan.",
+      "example_cn": "那部题为《忠诚的朋友》的动画片成了家庭周末的消遣。",
+      "synonym_note": "hiburan 指娱乐内容或消遣；senang 指开心的状态。某活动是 hiburan，不代表每个人都喜欢它。口语说法：Cari hiburan sebentar, yuk.（找点乐子放松一下吧。）",
+      "usage_note": "把名词和人的状态分开：Ini hiburan untuk keluarga. 对比 Saya senang.",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "minat",
+      "display": "minat",
+      "audio_text": "minat",
+      "cn": "兴趣；对某事的意愿或关注",
+      "en": "interest",
+      "root": "minat",
+      "root_cn": "兴趣；意愿",
+      "formation": "基本名词。搭配：minat pada seni、punya minat、menarik minat。派生 berminat 表示有兴趣；meminati 表示对某事感兴趣。",
+      "example": "Rina punya minat pada gambar hewan, terutama jerapah dan kangguru. Ia membawa beberapa gambar untuk ditunjukkan kepada temannya.",
+      "example_cn": "丽娜对动物画有兴趣，尤其是长颈鹿和袋鼠。她带了几张画给朋友看。",
+      "synonym_note": "minat 是兴趣这个名词；suka 常直接表达喜欢。berminat 还可用于有意参加、购买等，不等于已经答应。口语说法：Aku minat ikut kelasnya.（我有兴趣参加这堂课。）",
+      "usage_note": "不要把“有兴趣”说成“已经擅长”：punya minat 不保证已经会做。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "mahir",
+      "display": "mahir",
+      "audio_text": "mahir",
+      "cn": "熟练的；精于某项技能的",
+      "en": "skilled; proficient",
+      "root": "mahir",
+      "root_cn": "熟练；精于",
+      "formation": "基本形容词。搭配：mahir menggambar、mahir berbahasa Indonesia、mahir dalam bidang tertentu。派生 kemahiran 指熟练程度或技能。",
+      "example": "Orang yang mahir menggambar itu membuat tokoh unta yang lincah untuk buku anak.",
+      "example_cn": "那位擅长画画的人为儿童书画了一个活泼灵巧的骆驼角色。",
+      "synonym_note": "mahir 强调技能熟练；tahu 是知道，bisa 是能够。知道步骤不等于已熟练。口语说法：Aku belum mahir, masih belajar.（我还不熟练，正在学。）",
+      "usage_note": "可以先说明还不熟练，再提出具体学习请求，不必把初学说成完全不会。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "animasi",
+      "display": "animasi",
+      "audio_text": "animasi",
+      "cn": "动画；让图像呈现运动的制作方式",
+      "en": "animation",
+      "root": "animasi",
+      "root_cn": "动画",
+      "formation": "外来名词，不拆成印尼语前后缀。搭配：film animasi、animasi pendek、membuat animasi。",
+      "example": "Animasi pendek itu menampilkan burung jantan yang menari untuk menarik perhatian burung betina.",
+      "example_cn": "那部短动画展示了一只雄鸟跳舞，吸引雌鸟的注意。",
+      "synonym_note": "animasi 不只面向儿童，也不一定是搞笑故事；kartun 常指卡通形象或风格，两者常重叠但范围不完全相同。口语说法：Aku lagi belajar bikin animasi.（我正在学做动画。）",
+      "usage_note": "本课用来描述社区初学体验课，不宣称一次体验后就能熟练制作。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "tepuk tangan",
+      "display": "tepuk tangan",
+      "audio_text": "tepuk tangan",
+      "cn": "鼓掌；掌声",
+      "en": "applause; clapping",
+      "root": "tepuk / tangan",
+      "root_cn": "拍击／手",
+      "formation": "固定词组 tepuk tangan。完整动词 bertepuk tangan 表示鼓掌；口语可直接说 tepuk tangan。搭配：memberi tepuk tangan、mendapat tepuk tangan、tepuk tangan meriah。",
+      "example": "Anak itu salah tingkah ketika mendapat tepuk tangan. Ia menutupi wajahnya dengan buku karena malu.",
+      "example_cn": "那个孩子受到掌声时害羞得不知所措，拿书遮住了脸。",
+      "synonym_note": "tepuk tangan 是用双手拍出掌声；memukul meja 是拍打桌子，动作与对象不同。口语说法：Kasih tepuk tangan, dong!（给点掌声嘛！）",
+      "usage_note": "请求鼓掌和收到掌声都能说；看到手拍桌子，不能直接说成 tepuk tangan。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "layak",
+      "display": "layak",
+      "audio_text": "layak",
+      "cn": "合适的；值得的；达到要求的",
+      "en": "suitable; worthy; fit",
+      "root": "layak",
+      "root_cn": "合适；值得",
+      "formation": "基本形容词。搭配：layak dipakai、layak dicoba、layak untuk pemula。派生 kelayakan 表示适合性或资格条件。",
+      "example": "Tas ini tidak layak dijual sebagai barang baru karena rusak. Petugas toko melayani permintaan retur pembeli.",
+      "example_cn": "这个包坏了，不适合当新品出售。店员接待了顾客的退货请求。",
+      "synonym_note": "layak 判断是否合适或值得；mahal 只是贵。价格高不自动表示 layak dipakai，layak dicoba 也不是保证一定喜欢。口语说法：Masih layak dipakai, kok.（还可以用呢。）",
+      "usage_note": "今天练说明判断依据：适合谁、符合什么要求，不只给一个空泛的“值得”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengabaikan",
+      "display": "mengabaikan",
+      "audio_text": "mengabaikan",
+      "cn": "忽视；不理会；没有顾及",
+      "en": "ignore; neglect",
+      "root": "abai",
+      "root_cn": "疏忽；不理会",
+      "formation": "meN- + abai + -kan → mengabaikan，元音开头前缀呈 meng-，词根保留。搭配：mengabaikan pesan、mengabaikan aturan、mengabaikan peringatan。",
+      "example": "Jangan mengabaikan aturan ruangan. Semua orang perlu mematuhi petunjuk sebelum acara dimulai.",
+      "example_cn": "不要忽视场地规定。活动开始前，大家都需要遵守指引。",
+      "synonym_note": "mengabaikan 是不理会或未顾及；lupa 是忘记。二者可能造成相似结果，但不能仅凭漏做就断定对方故意忽视。口语说法：nggak ngindahin 常用于“不理会”；正式说明用 mengabaikan。",
+      "usage_note": "复习时说明被忽视的具体内容，再给出合理做法；不要只贴“不听话”的标签。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "siapin",
+      "display": "siapin",
+      "audio_text": "siapin",
+      "cn": "准备好（口语）",
+      "en": "prepare; get ready (colloquial)",
+      "root": "siap",
+      "root_cn": "准备好的",
+      "formation": "口语 siap + -in → siapin；常对应 siapkan 或 menyiapkan，随句法而定。搭配：siapin kursi、siapin alat、aku siapin dulu。",
+      "example": "Aku siapin kursinya dulu. Jangan ngotot mulai sebelum semuanya beres.",
+      "example_cn": "我先把椅子准备好。东西没弄妥前，别硬要开始。（ngotot = bersikeras）",
+      "synonym_note": "siapin 是朋友聊天里的形式；siapkan 更适合正式指令。Aku siapin … 说“我来准备”，Siapin …! 是请对方准备，须看主语。口语说法：Aku siapin alatnya dulu, ya.（我先准备工具哦。）",
+      "usage_note": "与 siapkan 同词根成组练，换语体时保留动作和对象，不把口语形式当成另一种任务。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "siapkan",
+      "display": "siapkan",
+      "audio_text": "siapkan",
+      "cn": "请准备好；把……备好",
+      "en": "prepare; get ... ready",
+      "root": "siap",
+      "root_cn": "准备好的",
+      "formation": "siap + -kan → siapkan，常用于指令。搭配：siapkan alat、siapkan kursi、siapkan diri。完整主动动词 menyiapkan 来自 meN- + siap + -kan，s 脱落。",
+      "example": "Siapkan petunjuk jalan sebelum acara. Mobil tamu bisa putar balik di putaran depan gedung.",
+      "example_cn": "活动前请准备好路线指引。来宾的车可以在楼前的掉头处掉头。",
+      "synonym_note": "siapkan 是较中性或正式的准备指令；siapin 是日常口语；siap 是已就绪的状态。口语说法：Siapin alatnya, ya.（把工具备好哦。）",
+      "usage_note": "不要把“已经准备好”一律说成 siapkan：状态用 sudah siap；准备动作看主语和语体。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "licin",
+      "display": "licin",
+      "audio_text": "licin",
+      "cn": "滑的；光滑的",
+      "en": "slippery; smooth",
+      "root": "licin",
+      "root_cn": "滑；光滑",
+      "formation": "基本形容词。搭配：lantai licin、tangga licin、permukaan licin。关注表面滑、站立或抓握不稳的性质。",
+      "example": "Jangan kejar kucing itu di lantai licin. Biarkan ia mendekat sendiri.",
+      "example_cn": "别在湿滑地板上追那只猫，让它自己靠近。",
+      "synonym_note": "licin 说滑；basah 说湿。干的光滑表面也可能 licin，不能把两个词当完全相同。口语说法：Lantainya licin banget.（地板特别滑。）",
+      "usage_note": "针对今天08:00之后的新答错，换成室内台阶和表面状态练辨析，不机械重复早课公园故事。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menata",
+      "display": "menata",
+      "audio_text": "menata",
+      "cn": "整理摆放；布置；安排",
+      "en": "arrange; organize",
+      "root": "tata",
+      "root_cn": "秩序；安排",
+      "formation": "meN- + tata → menata，t 脱落。搭配：menata kursi、menata ruangan、menata rambut。今天08:00新学。",
+      "example": "Ia menata rambutnya yang terurai sebelum tampil. Ia sungkan meminta bantuan, jadi temannya menawarkan diri.",
+      "example_cn": "她上台前整理披散的头发。她不好意思求助，所以朋友主动提出帮忙。",
+      "synonym_note": "menata 强调有条理地安排或造型；membersihkan 强调清洁。口语说法：nata，如 Aku bantu nata kursi.（我帮忙摆椅子。）",
+      "usage_note": "今天08:00新学。今晚迁移到体验课布置与上台准备，不沿用早课晨走野餐场景。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "laku",
+      "display": "laku",
+      "audio_text": "laku",
+      "cn": "卖得出去；有销路",
+      "en": "sell; be in demand",
+      "root": "laku",
+      "root_cn": "卖得出去；有销路",
+      "formation": "描述销售情况。搭配：belum laku、cepat laku、laku keras；主动出售用 menjual。今天08:00新学。",
+      "example": "Buku gambar di meja depan belum laku. Penjualnya tidak perlu teriak; ia bisa menjelaskan isinya kepada orang yang datang.",
+      "example_cn": "前台的画册还没卖出去。卖家不必大喊，可以向来的人介绍内容。",
+      "synonym_note": "laku 描述商品卖得出去；menjual 描述人主动出售。Belum laku 不表示已经卖光。口语说法：Bukunya udah laku?（书卖出去了吗？）",
+      "usage_note": "今天08:00新学。今晚换到体验课前台展示画册的场景，口头说清商品和出售者。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Jumat sore, Dimas datang ke kelas animasi untuk pemula di perpustakaan. Ia punya minat pada gambar bergerak, tetapi belum mahir membuatnya. Di meja depan, ada buku gambar yang dijual. Dimas melihat beberapa buku belum laku, lalu bertanya tentang isinya. Setelah itu, ia membantu panitia menata kursi. Pemandu meminta semua orang menyiapkan kertas dan pensil sebelum latihan. Kelas dimulai dengan contoh gerakan sederhana. Dimas sempat salah menggambar, tetapi ia meminta penjelasan dan mencoba lagi. Baginya, kelas ini bukan hanya hiburan, melainkan kesempatan belajar. Pada akhir acara, pemandu memberi tepuk tangan untuk usaha semua orang. Dimas pulang dengan rencana berlatih di rumah.",
+    "cn": "星期五下午，迪马斯来到图书馆的初学者动画课。他对会动的画面有兴趣，但还不熟练。前台有画册出售。迪马斯看到几本还没卖出去，便询问内容。之后，他帮筹备人员摆椅子。带课的人请大家在练习前准备好纸和铅笔。课程从简单的动作示范开始。迪马斯一度画错，但他请求解释，又试了一次。对他来说，这堂课不只是消遣，也是学习的机会。活动结束时，带课的人为大家的努力鼓掌。迪马斯带着回家练习的计划离开。"
+  },
+  "dialogue": {
+    "title": "开课前，Dimas和朋友Rina讨论准备与安全",
+    "lines": [
+      {
+        "speaker": "Dimas",
+        "id": "Aku punya minat bikin animasi, tapi belum mahir. Kelas ini cocok buat orang baru, kan?",
+        "cn": "我有兴趣做动画，但还不熟练。这堂课适合新人吧？（bikin = membuat；buat = untuk）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Iya, kelas pemula. Aku siapin kertas dulu. Kamu bantu nata kursi, ya.",
+        "cn": "对，初学者课。我先准备纸，你帮忙摆椅子吧。（siapin = menyiapkan；nata = menata）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Oke. Eh, tangga dekat pintu licin. Aku tadi hampir jatuh.",
+        "cn": "好。哎，门边的台阶滑，我刚才差点摔倒。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Jangan diabaikan. Kita bilang ke petugas dulu sebelum orang lain lewat.",
+        "cn": "别不当回事。趁其他人还没经过，我们先告诉工作人员。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Udah aku bilang, petugasnya lagi bersihin. Kita tunggu di sini aja.",
+        "cn": "我已经说了，工作人员正在清理。我们就在这里稍等吧。（udah = sudah；lagi = sedang；bersihin = membersihkan；aja = saja）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Aku datang bukan cuma buat hiburan. Aku pengin belajar sampai bisa bikin animasi sendiri.",
+        "cn": "我来不只是为了消遣，还想学到能自己做动画。（pengin = ingin）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Sama. Kalau hasilku belum bagus, jangan ketawa, ya.",
+        "cn": "我也是。我的作品还不好时，别笑我哦。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Nggak, aku kasih tepuk tangan buat usahamu. Kita belajar pelan-pelan.",
+        "cn": "不会，我会为你的努力鼓掌。咱们慢慢学。（nggak = tidak；kasih = memberi）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：你对动画有兴趣，但还不熟练。用 minat、mahir、animasi 向朋友写2–3句自然消息，说明为什么仍想报名初学者课。",
+      "reference_answer": "Aku punya minat bikin animasi, tapi belum mahir. Aku mau ikut kelas pemula supaya bisa belajar dari awal.",
+      "reference_cn": "我有兴趣做动画，但还不熟练。我想参加初学者课，从头学起。"
+    },
+    {
+      "task": "同词根换语体：先用 siapkan 给大家一条正式准备指令，再用 siapin 向朋友说明你来准备同样的东西。最后补一句朋友继续帮忙的话，共3句。",
+      "reference_answer": "Siapkan kertas dan pensil sebelum kelas dimulai. Aku siapin kertas dan pensilnya dulu, ya. Kamu bantu yang lain aja.",
+      "reference_cn": "开课前请准备好纸和铅笔。我先准备纸和铅笔哦。你帮帮其他人吧。"
+    },
+    {
+      "task": "早课迁移：你在布置体验课前台，画册还没卖出去。用今天08:00新学的 menata 和 laku 写2–3句，说明你先摆放画册，再向来宾介绍内容。",
+      "reference_answer": "Saya menata buku gambar di meja depan. Beberapa buku belum laku, jadi saya akan menjelaskan isinya kepada tamu.",
+      "reference_cn": "我把画册摆在前台桌上。有几本还没卖出去，所以我会向来宾介绍内容。"
+    },
+    {
+      "task": "真实弱词练习：用 licin 和 mengabaikan，向工作人员说明门边台阶的问题，请他处理，不是只抱怨；再说明处理前先等一下，共3句。",
+      "reference_answer": "Tangga dekat pintu licin. Kita tidak boleh mengabaikan keadaan ini; mohon bantu dibersihkan. Sebelum selesai, kami akan menunggu di sini.",
+      "reference_cn": "门边台阶滑。我们不能忽视这个情况，请帮忙清理。清理完之前，我们会在这里等。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "“Tolong ____ kertasnya sebelum kelas dimulai.” 在给全体来宾的中性书面指令中，哪项最合适？",
+        "options": [
+          "sudah siap",
+          "siapkan",
+          "kesiapan",
+          "bersiap"
+        ],
+        "answer_index": 1,
+        "answer": "siapkan",
+        "explain": "siapkan kertasnya 直接指示把纸备好；sudah siap 说明状态；kesiapan 是准备程度这个名词；bersiap 指自己作准备，不能这样直接接 kertasnya。朋友聊天可说 siapin。"
+      },
+      {
+        "type": "choice",
+        "prompt": "“Tas ini masih ____ dipakai, meskipun warnanya sudah pudar.” 哪项最自然地作出使用判断？",
+        "options": [
+          "minat",
+          "menjual",
+          "layak",
+          "tepuk tangan"
+        ],
+        "answer_index": 2,
+        "answer": "layak",
+        "explain": "layak dipakai 表示仍适合使用；颜色变淡本身不等于不能用。minat 是兴趣，menjual 是出售动作，tepuk tangan 是鼓掌。"
+      },
+      {
+        "type": "choice",
+        "prompt": "朋友说：“Tangga dekat pintu licin. Tadi aku hampir jatuh.” 怎样回应最能处理眼前的问题？",
+        "options": [
+          "Kita beri tahu petugas dan hindari tangga itu dulu.",
+          "Kalau cepat lewat, tangganya pasti tidak licin lagi.",
+          "Kita diam saja supaya tidak perlu menjelaskan apa-apa.",
+          "Semua orang harus langsung mencoba lewat."
+        ],
+        "answer_index": 0,
+        "answer": "Kita beri tahu petugas dan hindari tangga itu dulu.",
+        "explain": "licin 指表面滑。通知工作人员、暂时避开，回应了具体状况；其余说法无依据或忽视问题。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Dimas belum ____ membuat animasi, jadi ia memilih kelas pemula.（熟练；精于某项技能）",
+        "answer": "mahir",
+        "explain": "mahir menggambar／mahir membuat animasi 描述技能熟练；有 minat 只是有兴趣，并不保证已熟练。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Pada akhir acara, semua orang memberi ____ kepada pemandu.（掌声）",
+        "answer": "tepuk tangan",
+        "explain": "memberi tepuk tangan 表示给予掌声；bertepuk tangan 是鼓掌动作，不能原样接在 memberi 后。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：这堂课不只是消遣。",
+        "tokens": [
+          "Kelas",
+          "ini",
+          "bukan",
+          "hanya",
+          "hiburan."
+        ],
+        "answer": "Kelas ini bukan hanya hiburan.",
+        "answer_cn": "这堂课不只是消遣。",
+        "explain": "hiburan 是名词，所以这里用 bukan 否定；bukan hanya 表示不只是。"
+      }
+    ],
+    "self_check": [
+      "我能在3秒内说出 hiburan、minat、mahir、animasi、tepuk tangan 的意思吗？",
+      "我分得清 layak 是合适、mengabaikan 是忽视，而不是开心或忘记吗？",
+      "我能识别 siapkan 的中性指令和 siapin 的口语表达吗？",
+      "看到 licin，我知道说的是表面滑，不只是湿吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "用 minat、mahir、animasi 向朋友说一次自己想学但还不熟练的技能，再用 hiburan 说明来学习的目的。先说一个自己的真实兴趣，不照抄人物台词。",
+      "给全体来宾用 siapkan 说一条准备指令，再对朋友用 siapin 回答同一个任务。用 licin、mengabaikan 说明台阶问题和具体处理办法。",
+      "回顾今天08:00新学的 menata、laku：脱稿说清前台如何布置、什么还没卖出去；用 layak 补充对一件用品是否适合继续使用的判断。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "layak",
+      "mengabaikan",
+      "mahir"
+    ],
+    "patterns": [
+      {
+        "pattern": "Aku punya minat …, tapi belum mahir.",
+        "cn": "我有兴趣……，但还不熟练。",
+        "example": "Aku punya minat bikin animasi, tapi belum mahir.",
+        "example_cn": "我有兴趣做动画，但还不熟练。"
+      },
+      {
+        "pattern": "Kita tidak boleh mengabaikan …",
+        "cn": "我们不能忽视……。",
+        "example": "Kita tidak boleh mengabaikan keadaan ini; mohon bantu dibersihkan.",
+        "example_cn": "我们不能忽视这个情况，请帮忙清理。"
+      }
+    ]
+  }
+}
