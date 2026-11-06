@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 954,
+   "use": 964,
    "recognize": 105,
    "unsure": 21,
    "fast": 136
   },
   "active": {
-   "use": 677,
+   "use": 687,
    "recognize": 89,
    "unsure": 19,
    "fast": 58
@@ -9951,6 +9951,96 @@
    "status": "active",
    "why": [
     "第二词库 A2 / S"
+   ]
+  },
+  "pinggir": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "laku": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "menata": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "ujung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "pudar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kuah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "patung": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "bekal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "tikar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "saling": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
    ]
   }
  }

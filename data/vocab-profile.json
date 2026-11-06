@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-06T00:31:24.010Z",
-  "source_updated_at": "2026-11-05T13:54:41.932Z",
+  "generated_at": "2026-11-06T03:40:44.200Z",
+  "source_updated_at": "2026-11-06T02:51:19.175Z",
   "taught_total": 1090,
   "confirmed_mastered": 203,
   "needs_reinforcement": 795,
@@ -32,20 +32,6 @@
       "cn": "意在；旨在；（被）打算用来……"
     },
     {
-      "word": "penanganan",
-      "score": 124,
-      "signals": [
-        "quick_wrong",
-        "lesson_wrong",
-        "dont",
-        "fuzzy"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-10-26T13:19:57.977Z",
-      "last_review": "2026-10-30T01:51:34.806Z",
-      "cn": "处理；应对（过程）"
-    },
-    {
       "word": "pembangunan",
       "score": 118,
       "signals": [
@@ -70,19 +56,6 @@
       "last_wrong": "2026-11-03T13:33:47.250Z",
       "last_review": "2026-11-04T09:50:14.099Z",
       "cn": "胃口；口味；喜好"
-    },
-    {
-      "word": "teratur",
-      "score": 104,
-      "signals": [
-        "quick_wrong",
-        "lesson_wrong",
-        "dont"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-11-01T04:04:10.422Z",
-      "last_review": "2026-11-01T04:04:10.422Z",
-      "cn": "有规律的；有条理的"
     },
     {
       "word": "mengenali",
@@ -111,6 +84,19 @@
       "cn": "有效期至"
     },
     {
+      "word": "penanganan",
+      "score": 88,
+      "signals": [
+        "lesson_wrong",
+        "dont",
+        "fuzzy"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-10-26T13:19:57.977Z",
+      "last_review": "2026-11-06T01:57:09.654Z",
+      "cn": "处理；应对（过程）"
+    },
+    {
       "word": "perpaduan",
       "score": 88,
       "signals": [
@@ -122,6 +108,19 @@
       "last_wrong": "2026-10-24T15:35:27.721Z",
       "last_review": "2026-11-03T09:40:05.553Z",
       "cn": "融合；结合；搭配"
+    },
+    {
+      "word": "mengabaikan",
+      "score": 88,
+      "signals": [
+        "lesson_wrong",
+        "dont",
+        "fuzzy"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-10-15T03:20:48.795Z",
+      "last_review": "2026-10-26T07:54:40.387Z",
+      "cn": "忽视；不理会"
     }
   ],
   "definitions": {
