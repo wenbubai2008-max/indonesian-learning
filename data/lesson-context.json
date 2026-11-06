@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-06",
-    "session": "pm",
-    "time": "18:00",
-    "day": 77
+    "date": "2026-11-07",
+    "session": "am",
+    "time": "08:00",
+    "day": 78
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-06T09:41:17.228Z",
-    "lesson_watermark": "2026-11-06 08:00",
+    "runtime_generated_at": "2026-11-06T10:36:33.180Z",
+    "lesson_watermark": "2026-11-06 18:00",
     "index_updated": "2026-11-06",
-    "runtime_hash": "fbee9cfe722bf45b3d4828e18d239f693a47fdaf535c652290078d2d2c37d1a5",
-    "index_hash": "239a36c1a2c3fc252bcbeaf321a72f511486a1ee045d9397126d5e5c0d0943a3",
+    "runtime_hash": "280363530d80490b502f5943e97ffa5aa7ec70ab35d76c6ec39cd67689d94ede",
+    "index_hash": "696f3a55062458dee565e1963cb0b5dda4541d7bc6092748dd913105acceecac",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -52,18 +52,6 @@
       [
         "bakti",
         "奉献精神"
-      ],
-      [
-        "hiburan",
-        "娱乐"
-      ],
-      [
-        "minat",
-        "兴趣"
-      ],
-      [
-        "mahir",
-        "精通"
       ]
     ],
     "new_fuzzy": [
@@ -86,14 +74,6 @@
       [
         "melewati",
         "经过/穿过"
-      ],
-      [
-        "animasi",
-        "动画片"
-      ],
-      [
-        "tepuk tangan",
-        "拍手"
       ],
       [
         "lompat",
@@ -706,6 +686,14 @@
       [
         "santap",
         "吃；享用（较文雅）"
+      ],
+      [
+        "alangkah",
+        "多么……"
+      ],
+      [
+        "meronta",
+        "挣扎"
       ]
     ],
     "review": [
@@ -1940,16 +1928,6 @@
         "哭泣；哭声"
       ],
       [
-        "siapin",
-        3,
-        0,
-        "",
-        "2026-10-23T23:37:09.496Z",
-        "准备好；给……准备",
-        "siap",
-        "准备好"
-      ],
-      [
         "berteriak",
         2,
         0,
@@ -2900,114 +2878,24 @@
         "印；打印"
       ],
       [
-        "siapkan",
-        3,
-        0,
-        "",
-        "2026-10-23T23:37:11.756Z",
-        "准备好；把……准备好",
-        "siap",
-        "准备好的"
-      ],
-      [
-        "pinggir",
+        "seluruh",
         1,
         0,
         "",
-        "2026-11-06T01:58:19.851Z",
-        "边缘；边上",
-        "pinggir",
-        "边；边缘"
+        "2026-10-23T23:36:24.950Z",
+        "全部的；整个的",
+        "seluruh",
+        "全部；整个"
       ],
       [
-        "laku",
+        "berantakan",
+        2,
         1,
-        0,
-        "",
-        "2026-11-06T01:58:10.554Z",
-        "卖得出去；有销路",
-        "laku",
-        "卖得出去；有销路"
-      ],
-      [
-        "menata",
-        1,
-        0,
-        "",
-        "2026-11-06T01:58:15.379Z",
-        "整理摆放；布置；安排",
-        "tata",
-        "秩序；安排"
-      ],
-      [
-        "ujung",
-        1,
-        0,
-        "",
-        "2026-11-06T01:58:32.154Z",
-        "末端；尽头；尖端",
-        "ujung",
-        "尽头；尖端"
-      ],
-      [
-        "pudar",
-        1,
-        0,
-        "",
-        "2026-11-06T01:58:24.139Z",
-        "褪色；变淡；逐渐减弱",
-        "pudar",
-        "褪色；减弱"
-      ],
-      [
-        "kuah",
-        1,
-        0,
-        "",
-        "2026-11-06T01:58:06.321Z",
-        "汤汁；带汤菜肴里的汤",
-        "kuah",
-        "汤汁"
-      ],
-      [
-        "patung",
-        1,
-        0,
-        "",
-        "2026-11-06T01:58:18.048Z",
-        "雕像；塑像",
-        "patung",
-        "雕像；塑像"
-      ],
-      [
-        "bekal",
-        1,
-        0,
-        "",
-        "2026-11-06T01:58:04.039Z",
-        "出门携带的食物；准备好的用品或本领",
-        "bekal",
-        "旅途所需；随身准备"
-      ],
-      [
-        "tikar",
-        1,
-        0,
-        "",
-        "2026-11-06T01:58:29.542Z",
-        "席子；铺在地上坐的垫席",
-        "tikar",
-        "席子"
-      ],
-      [
-        "saling",
-        1,
-        0,
-        "",
-        "2026-11-06T01:58:27.308Z",
-        "互相；彼此（表示动作相互）",
-        "saling",
-        "互相"
+        "2026-09-30T14:06:45.377Z",
+        "2026-10-13T15:11:40.596Z",
+        "乱七八糟；一团乱；很凌乱",
+        "berantak",
+        "乱；散乱"
       ]
     ],
     "focus": [
@@ -3268,45 +3156,6 @@
     "oral": []
   },
   "history_7d": [
-    {
-      "date": "2026-10-30",
-      "session": "am",
-      "review_core": [
-        "usahakan",
-        "angka",
-        "bahkan",
-        "berani",
-        "bertanggung jawab"
-      ],
-      "new_words": [
-        "memotong",
-        "daun",
-        "sendok",
-        "asam",
-        "tipis",
-        "buang",
-        "mirip",
-        "kurangi",
-        "halus",
-        "ukur"
-      ]
-    },
-    {
-      "date": "2026-10-30",
-      "session": "pm",
-      "review_core": [
-        "menekan",
-        "penyebab",
-        "sebab",
-        "intinya",
-        "meskipun"
-      ],
-      "new_words": [
-        "kemungkinan besar",
-        "tanda",
-        "rendah"
-      ]
-    },
     {
       "date": "2026-10-31",
       "session": "am",
@@ -3569,107 +3418,44 @@
         "tikar",
         "saling"
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "session": "pm",
+      "review_core": [
+        "layak",
+        "mengabaikan",
+        "siapin",
+        "siapkan",
+        "licin"
+      ],
+      "new_words": [
+        "hiburan",
+        "minat",
+        "mahir",
+        "animasi",
+        "tepuk tangan"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "new_words": [
-      "senam",
-      "peserta",
-      "licin",
-      "kaos",
-      "pendinginan"
+      "hiburan",
+      "minat",
+      "mahir",
+      "animasi",
+      "tepuk tangan"
     ],
     "review_core": [
-      "jomblo",
-      "kabur",
-      "penuh",
-      "sepenuhnya",
-      "menderita"
+      "layak",
+      "mengabaikan",
+      "siapin",
+      "siapkan",
+      "licin"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-06",
-    "vocab": [
-      [
-        "pinggir",
-        "边缘；边上",
-        "edge; side",
-        "pinggir",
-        "边；边缘"
-      ],
-      [
-        "laku",
-        "卖得出去；有销路",
-        "sell; be in demand",
-        "laku",
-        "卖得出去；有销路"
-      ],
-      [
-        "menata",
-        "整理摆放；布置；安排",
-        "arrange; organize",
-        "tata",
-        "秩序；安排"
-      ],
-      [
-        "ujung",
-        "末端；尽头；尖端",
-        "end; tip",
-        "ujung",
-        "尽头；尖端"
-      ],
-      [
-        "pudar",
-        "褪色；变淡；逐渐减弱",
-        "fade; faded",
-        "pudar",
-        "褪色；减弱"
-      ],
-      [
-        "kuah",
-        "汤汁；带汤菜肴里的汤",
-        "broth; gravy; liquid in a soup dish",
-        "kuah",
-        "汤汁"
-      ],
-      [
-        "patung",
-        "雕像；塑像",
-        "statue; sculpture",
-        "patung",
-        "雕像；塑像"
-      ],
-      [
-        "bekal",
-        "出门携带的食物；准备好的用品或本领",
-        "packed food; provisions; preparation",
-        "bekal",
-        "旅途所需；随身准备"
-      ],
-      [
-        "tikar",
-        "席子；铺在地上坐的垫席",
-        "woven mat; ground mat",
-        "tikar",
-        "席子"
-      ],
-      [
-        "saling",
-        "互相；彼此（表示动作相互）",
-        "each other; mutually",
-        "saling",
-        "互相"
-      ]
-    ],
-    "review_vocab": [
-      "licin",
-      "peserta",
-      "amat",
-      "berbahaya",
-      "gampang"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

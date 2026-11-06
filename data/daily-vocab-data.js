@@ -9810,17 +9810,17 @@ window.DAILY_VOCAB_DB = [
     "en": "worthy; suitable; eligible",
     "root": "layak",
     "root_cn": "值得；合适",
-    "example": "Blender yang sudah rusak seperti ini tidak layak dipakai lagi.",
-    "example_cn": "像这样已经坏掉的搅拌机不适合再用了。",
+    "example": "Tas ini tidak layak dijual sebagai barang baru karena rusak. Petugas toko melayani permintaan retur pembeli.",
+    "example_cn": "这个包坏了，不适合当新品出售。店员接待了顾客的退货请求。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 9,
+    "times_seen": 10,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-11-06 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -9833,7 +9833,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-26",
       "2026-09-28",
       "2026-10-03",
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-06"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
@@ -9844,7 +9845,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28 18:00",
       "2026-10-03 08:00",
       "2026-10-03 18:00",
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-11-06 18:00"
     ]
   },
   {
@@ -13169,28 +13171,30 @@ window.DAILY_VOCAB_DB = [
     "en": "prepare; get ready",
     "root": "siap",
     "root_cn": "准备好",
-    "example": "Aku siapin dokumennya dulu sebelum kita bicara dengan atasan.",
-    "example_cn": "在我们和上司谈之前，我先把文件准备好。",
+    "example": "Aku siapin kursinya dulu. Jangan ngotot mulai sebelum semuanya beres.",
+    "example_cn": "我先把椅子准备好。东西没弄妥前，别硬要开始。（ngotot = bersikeras）",
     "categories": [
       "每日学习",
       "18:00",
       "口语",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-22 08:00",
-    "last_seen": "2026-09-23 18:00",
+    "last_seen": "2026-11-06 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-22",
-      "2026-09-23"
+      "2026-09-23",
+      "2026-11-06"
     ],
     "lesson_occurrences": [
       "2026-09-22 08:00",
-      "2026-09-23 18:00"
+      "2026-09-23 18:00",
+      "2026-11-06 18:00"
     ]
   },
   {
@@ -17378,24 +17382,26 @@ window.DAILY_VOCAB_DB = [
     "en": "prepare; get ready",
     "root": "siap",
     "root_cn": "准备好的",
-    "example": "Tolong siapkan dokumen sebelum rapat dimulai.",
-    "example_cn": "请在会议开始前把文件准备好。",
+    "example": "Siapkan petunjuk jalan sebelum acara. Mobil tamu bisa putar balik di putaran depan gedung.",
+    "example_cn": "活动前请准备好路线指引。来宾的车可以在楼前的掉头处掉头。",
     "categories": [
       "每日学习",
       "18:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-02 18:00",
-    "last_seen": "2026-10-02 18:00",
+    "last_seen": "2026-11-06 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-06"
     ],
     "lesson_occurrences": [
-      "2026-10-02 18:00"
+      "2026-10-02 18:00",
+      "2026-11-06 18:00"
     ]
   },
   {
@@ -21588,25 +21594,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to ignore; to neglect",
     "root": "abai",
     "root_cn": "疏忽；不在意",
-    "example": "Warga diminta tidak mengabaikan ancaman banjir selama musim hujan.",
-    "example_cn": "雨季期间，居民被要求不要忽视洪水的威胁。",
+    "example": "Jangan mengabaikan aturan ruangan. Semua orang perlu mematuhi petunjuk sebelum acara dimulai.",
+    "example_cn": "不要忽视场地规定。活动开始前，大家都需要遵守指引。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-14 18:00",
-    "last_seen": "2026-10-17 18:00",
+    "last_seen": "2026-11-06 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
       "2026-10-14",
-      "2026-10-17"
+      "2026-10-17",
+      "2026-11-06"
     ],
     "lesson_occurrences": [
       "2026-10-14 18:00",
-      "2026-10-17 18:00"
+      "2026-10-17 18:00",
+      "2026-11-06 18:00"
     ]
   },
   {
@@ -29173,16 +29181,16 @@ window.DAILY_VOCAB_DB = [
     "en": "slippery; smooth",
     "root": "licin",
     "root_cn": "滑；光滑",
-    "example": "Lantainya licin setelah terkena air. Perbaiki bagian yang bocor untuk melindungi orang yang lewat.",
-    "example_cn": "地板沾水后很滑。修好漏水的地方，以保护经过的人。",
+    "example": "Jangan kejar kucing itu di lantai licin. Biarkan ia mendekat sendiri.",
+    "example_cn": "别在湿滑地板上追那只猫，让它自己靠近。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-05 18:00",
-    "last_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -29193,7 +29201,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-05 18:00",
-      "2026-11-06 08:00"
+      "2026-11-06 08:00",
+      "2026-11-06 18:00"
     ]
   },
   {
@@ -29277,23 +29286,26 @@ window.DAILY_VOCAB_DB = [
     "en": "sell; be in demand",
     "root": "laku",
     "root_cn": "卖得出去；有销路",
-    "example": "Roti itu cepat laku karena banyak orang mengincar roti yang baru keluar dari oven.",
-    "example_cn": "那种面包卖得快，因为很多人都想买刚出炉的面包。",
+    "example": "Buku gambar di meja depan belum laku. Penjualnya tidak perlu teriak; ia bisa menjelaskan isinya kepada orang yang datang.",
+    "example_cn": "前台的画册还没卖出去。卖家不必大喊，可以向来的人介绍内容。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-06 08:00",
-    "last_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-06"
     ],
     "lesson_occurrences": [
-      "2026-11-06 08:00"
+      "2026-11-06 08:00",
+      "2026-11-06 18:00"
     ]
   },
   {
@@ -29302,23 +29314,26 @@ window.DAILY_VOCAB_DB = [
     "en": "arrange; organize",
     "root": "tata",
     "root_cn": "秩序；安排",
-    "example": "Nila menata meja sederhana tanpa ingin terlihat mewah. Ia tidak harus menjadi perfeksionis untuk membuat tamu nyaman.",
-    "example_cn": "妮拉布置了一张简单的桌子，不求显得豪华。她不必事事追求完美，也能让客人舒服。",
+    "example": "Ia menata rambutnya yang terurai sebelum tampil. Ia sungkan meminta bantuan, jadi temannya menawarkan diri.",
+    "example_cn": "她上台前整理披散的头发。她不好意思求助，所以朋友主动提出帮忙。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-06 08:00",
-    "last_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-06"
     ],
     "lesson_occurrences": [
-      "2026-11-06 08:00"
+      "2026-11-06 08:00",
+      "2026-11-06 18:00"
     ]
   },
   {
@@ -29494,6 +29509,131 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-06 08:00"
+    ]
+  },
+  {
+    "word": "hiburan",
+    "cn": "娱乐；消遣；带来愉悦的活动",
+    "en": "entertainment; amusement",
+    "root": "hibur",
+    "root_cn": "使开心；安慰",
+    "example": "Film animasi berjudul Teman yang Setia itu menjadi hiburan keluarga pada akhir pekan.",
+    "example_cn": "那部题为《忠诚的朋友》的动画片成了家庭周末的消遣。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-06 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 18:00"
+    ]
+  },
+  {
+    "word": "minat",
+    "cn": "兴趣；对某事的意愿或关注",
+    "en": "interest",
+    "root": "minat",
+    "root_cn": "兴趣；意愿",
+    "example": "Rina punya minat pada gambar hewan, terutama jerapah dan kangguru. Ia membawa beberapa gambar untuk ditunjukkan kepada temannya.",
+    "example_cn": "丽娜对动物画有兴趣，尤其是长颈鹿和袋鼠。她带了几张画给朋友看。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-06 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 18:00"
+    ]
+  },
+  {
+    "word": "mahir",
+    "cn": "熟练的；精于某项技能的",
+    "en": "skilled; proficient",
+    "root": "mahir",
+    "root_cn": "熟练；精于",
+    "example": "Orang yang mahir menggambar itu membuat tokoh unta yang lincah untuk buku anak.",
+    "example_cn": "那位擅长画画的人为儿童书画了一个活泼灵巧的骆驼角色。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-06 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 18:00"
+    ]
+  },
+  {
+    "word": "animasi",
+    "cn": "动画；让图像呈现运动的制作方式",
+    "en": "animation",
+    "root": "animasi",
+    "root_cn": "动画",
+    "example": "Animasi pendek itu menampilkan burung jantan yang menari untuk menarik perhatian burung betina.",
+    "example_cn": "那部短动画展示了一只雄鸟跳舞，吸引雌鸟的注意。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-06 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 18:00"
+    ]
+  },
+  {
+    "word": "tepuk tangan",
+    "cn": "鼓掌；掌声",
+    "en": "applause; clapping",
+    "root": "tepuk / tangan",
+    "root_cn": "拍击／手",
+    "example": "Anak itu salah tingkah ketika mendapat tepuk tangan. Ia menutupi wajahnya dengan buku karena malu.",
+    "example_cn": "那个孩子受到掌声时害羞得不知所措，拿书遮住了脸。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-06 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 18:00"
     ]
   }
 ];
