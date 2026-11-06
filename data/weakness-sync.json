@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T06:16:19.948Z",
+  "updated_at": "2026-11-06T13:23:44.029Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1494,14 +1494,14 @@
     "selasa": {
       "word": "selasa",
       "status": "active",
-      "updated_at": "2026-10-30T11:51:54.603Z",
+      "updated_at": "2026-11-06T13:23:21.962Z",
       "display": "selasa",
-      "last_review": "2026-10-30T11:51:54.558Z",
+      "last_review": "2026-11-06T13:23:21.899Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "usah": {
       "word": "usah",
@@ -1518,15 +1518,15 @@
     "berita": {
       "word": "berita",
       "status": "active",
-      "updated_at": "2026-10-30T11:51:29.653Z",
+      "updated_at": "2026-11-06T13:22:59.967Z",
       "display": "berita",
       "cn": "新闻",
-      "last_review": "2026-10-30T11:51:29.577Z",
+      "last_review": "2026-11-06T13:22:59.910Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "badan": {
       "word": "badan",
@@ -1574,15 +1574,15 @@
     "keras": {
       "word": "keras",
       "status": "active",
-      "updated_at": "2026-10-30T11:51:46.600Z",
+      "updated_at": "2026-11-06T13:23:13.526Z",
       "display": "keras",
       "cn": "硬的、猛烈",
-      "last_review": "2026-10-30T11:51:46.554Z",
+      "last_review": "2026-11-06T13:23:13.470Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "sejumlah": {
       "word": "sejumlah",
@@ -1732,14 +1732,14 @@
     "sesuatu": {
       "word": "sesuatu",
       "status": "active",
-      "updated_at": "2026-10-30T11:51:39.342Z",
+      "updated_at": "2026-11-06T13:23:05.809Z",
       "display": "sesuatu",
-      "last_review": "2026-10-30T11:51:39.296Z",
+      "last_review": "2026-11-06T13:23:05.753Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "butuh": {
       "word": "butuh",
@@ -1758,14 +1758,14 @@
     "pukul": {
       "word": "pukul",
       "status": "active",
-      "updated_at": "2026-10-30T11:51:49.840Z",
+      "updated_at": "2026-11-06T13:23:17.123Z",
       "display": "pukul",
-      "last_review": "2026-10-30T11:51:49.791Z",
+      "last_review": "2026-11-06T13:23:17.066Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "kelompok": {
       "word": "kelompok",
@@ -1818,14 +1818,14 @@
     "macam": {
       "word": "macam",
       "status": "active",
-      "updated_at": "2026-10-30T11:51:31.360Z",
+      "updated_at": "2026-11-06T13:23:01.375Z",
       "display": "macam",
-      "last_review": "2026-10-30T11:51:31.315Z",
+      "last_review": "2026-11-06T13:23:01.317Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "yakin": {
       "word": "yakin",
@@ -1875,13 +1875,13 @@
     "selera": {
       "word": "selera",
       "status": "active",
-      "updated_at": "2026-11-04T09:50:14.188Z",
+      "updated_at": "2026-11-06T13:22:51.322Z",
       "display": "selera",
       "cn": "胃口；口味；喜好",
       "root": "selera",
       "root_cn": "胃口；喜好",
       "last_wrong": "2026-11-03T13:33:47.250Z",
-      "last_review": "2026-11-04T09:50:14.099Z",
+      "last_review": "2026-11-06T13:22:51.261Z",
       "source": "课程小测",
       "source_date": "2026-11-03",
       "session": "18:00",
@@ -1891,7 +1891,7 @@
         "lesson_wrong"
       ],
       "wrong_count": 3,
-      "right_streak": 1
+      "right_streak": 2
     },
     "usaha": {
       "word": "usaha",
@@ -2161,16 +2161,16 @@
     "jarang": {
       "word": "jarang",
       "status": "active",
-      "updated_at": "2026-10-30T11:51:44.192Z",
+      "updated_at": "2026-11-06T13:23:11.766Z",
       "display": "jarang",
       "cn": "很少；不常",
       "root": "jarang",
-      "last_review": "2026-10-30T11:51:44.147Z",
+      "last_review": "2026-11-06T13:23:11.709Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "keadaan": {
       "word": "keadaan",
@@ -2190,14 +2190,14 @@
     "menyatakan": {
       "word": "menyatakan",
       "status": "active",
-      "updated_at": "2026-10-30T11:51:36.167Z",
+      "updated_at": "2026-11-06T13:22:57.229Z",
       "display": "menyatakan",
-      "last_review": "2026-10-30T11:51:36.122Z",
+      "last_review": "2026-11-06T13:22:57.170Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "pemandangan": {
       "word": "pemandangan",
@@ -2375,14 +2375,14 @@
     "pohon": {
       "word": "pohon",
       "status": "active",
-      "updated_at": "2026-10-30T11:51:48.647Z",
+      "updated_at": "2026-11-06T13:23:15.325Z",
       "display": "pohon",
-      "last_review": "2026-10-30T11:51:48.601Z",
+      "last_review": "2026-11-06T13:23:15.268Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "sendok": {
       "word": "sendok",
@@ -2826,14 +2826,14 @@
     "terang": {
       "word": "terang",
       "status": "active",
-      "updated_at": "2026-10-30T11:51:42.109Z",
+      "updated_at": "2026-11-06T13:23:09.027Z",
       "display": "terang",
-      "last_review": "2026-10-30T11:51:42.062Z",
+      "last_review": "2026-11-06T13:23:08.970Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "saudara": {
       "word": "saudara",
@@ -3182,8 +3182,11 @@
     "kertas": {
       "word": "kertas",
       "status": "active",
-      "updated_at": "2026-11-02T05:54:37.542Z",
+      "updated_at": "2026-11-06T13:12:30.353Z",
       "display": "kertas",
+      "cn": "纸；纸张",
+      "root": "kertas",
+      "root_cn": "纸",
       "last_review": "2026-11-02T05:54:37.486Z",
       "reasons": [
         "memory_fuzzy"
@@ -27608,16 +27611,17 @@
     "animasi": {
       "word": "animasi",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:26.004Z",
+      "updated_at": "2026-11-06T13:23:25.128Z",
       "display": "animasi",
       "cn": "动画片",
+      "last_review": "2026-11-06T13:23:25.072Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "resepsionis hotel": {
       "word": "resepsionis hotel",
@@ -27745,17 +27749,22 @@
     "tepuk tangan": {
       "word": "tepuk tangan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:26.372Z",
+      "updated_at": "2026-11-06T13:23:32.961Z",
       "display": "tepuk tangan",
-      "cn": "拍手",
-      "root": "tepuk",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "cn": "鼓掌；掌声",
+      "root": "tepuk / tangan",
+      "root_cn": "拍击／手",
+      "last_wrong": "2026-11-06T13:20:22.750Z",
+      "last_review": "2026-11-06T13:23:32.904Z",
+      "source": "课程小测",
+      "source_date": "2026-11-06",
+      "session": "18:00",
       "reasons": [
-        "bipa_secondary_fuzzy"
+        "bipa_secondary_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 0
+      "wrong_count": 1,
+      "right_streak": 1
     },
     "lompat": {
       "word": "lompat",
@@ -32146,45 +32155,56 @@
     "hiburan": {
       "word": "hiburan",
       "status": "active",
-      "updated_at": "2026-11-05T07:38:35.935Z",
+      "updated_at": "2026-11-06T13:23:26.327Z",
       "display": "hiburan",
-      "cn": "娱乐",
-      "source": "泛读",
-      "source_date": "2026-11-05",
+      "cn": "娱乐；消遣；带来愉悦的活动",
+      "last_wrong": "2026-11-06T13:21:02.697Z",
+      "last_review": "2026-11-06T13:23:26.271Z",
+      "source": "课程自检",
+      "source_date": "2026-11-06",
       "reasons": [
-        "manual_unknown"
+        "manual_unknown",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 0
+      "wrong_count": 1,
+      "right_streak": 1
     },
     "minat": {
       "word": "minat",
       "status": "active",
-      "updated_at": "2026-11-05T07:39:26.513Z",
+      "updated_at": "2026-11-06T13:23:30.736Z",
       "display": "minat",
-      "cn": "兴趣",
-      "source": "泛读",
-      "source_date": "2026-11-05",
+      "cn": "兴趣；对某事的意愿或关注",
+      "last_wrong": "2026-11-06T13:20:54.939Z",
+      "last_review": "2026-11-06T13:23:30.678Z",
+      "source": "课程自检",
+      "source_date": "2026-11-06",
       "reasons": [
-        "manual_unknown"
+        "manual_unknown",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 0
+      "wrong_count": 1,
+      "right_streak": 1
     },
     "mahir": {
       "word": "mahir",
       "status": "active",
-      "updated_at": "2026-11-05T13:45:20.994Z",
+      "updated_at": "2026-11-06T13:23:28.097Z",
       "display": "mahir",
-      "cn": "精通",
-      "source": "每日学习阅读",
-      "source_date": "2026-11-05",
-      "session": "19:00",
+      "cn": "熟练的；精于某项技能的",
+      "root": "mahir",
+      "root_cn": "熟练；精于",
+      "last_wrong": "2026-11-06T13:20:10.183Z",
+      "last_review": "2026-11-06T13:23:28.040Z",
+      "source": "课程小测",
+      "source_date": "2026-11-06",
+      "session": "18:00",
       "reasons": [
-        "manual_unknown"
+        "manual_unknown",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 0
+      "wrong_count": 1,
+      "right_streak": 1
     }
   }
 }
