@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 964,
+   "use": 969,
    "recognize": 105,
    "unsure": 21,
    "fast": 136
   },
   "active": {
-   "use": 687,
+   "use": 692,
    "recognize": 89,
    "unsure": 19,
    "fast": 58
@@ -10041,6 +10041,51 @@
    "status": "active",
    "why": [
     "课程里出现的派生词或常用表达"
+   ]
+  },
+  "hiburan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "minat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "mahir": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "animasi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "tepuk tangan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
    ]
   }
  }
