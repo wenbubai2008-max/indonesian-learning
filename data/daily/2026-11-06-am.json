@@ -1,0 +1,362 @@
+{
+  "date": "2026-11-06",
+  "session": "am",
+  "time": "08:00",
+  "day": 77,
+  "title": "08:00 早课｜Cari Tempat yang Pas untuk Makan Bersama · 找个合适的地方一起吃饭",
+  "vocab": [
+    {
+      "word": "pinggir",
+      "display": "pinggir",
+      "audio_text": "pinggir",
+      "cn": "边缘；边上",
+      "en": "edge; side",
+      "root": "pinggir",
+      "root_cn": "边；边缘",
+      "formation": "基本名词。搭配：di pinggir jalan（路边）、pinggir sungai（河边）、duduk di pinggir（坐在边上）。强调某物的边缘地带。",
+      "example": "Jangan berdiri di pinggir jalan yang tanahnya licin; kamu bisa terpeleset saat turun.",
+      "example_cn": "别站在泥土湿滑的路边；往下走时可能脚下一滑。",
+      "synonym_note": "pinggir 强调边缘；ujung 强调末端。di pinggir meja 是桌边，di ujung meja 是桌子的一端，两者可能重叠但视角不同。口语说法：Duduk di pinggir aja.（坐边上就好。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "laku",
+      "display": "laku",
+      "audio_text": "laku",
+      "cn": "卖得出去；有销路",
+      "en": "sell; be in demand",
+      "root": "laku",
+      "root_cn": "卖得出去；有销路",
+      "formation": "本课作描述销售情况的词。搭配：cepat laku（卖得快）、belum laku（还没卖出去）、laku keras（十分畅销）。不表示卖货的主动动作。",
+      "example": "Roti itu cepat laku karena banyak orang mengincar roti yang baru keluar dari oven.",
+      "example_cn": "那种面包卖得快，因为很多人都想买刚出炉的面包。",
+      "synonym_note": "laku 是商品卖得出去；menjual 是某人出售商品。Barang ini belum laku. 不等于这件商品从未被拿来卖。口语说法：Wah, cepat laku, ya!（哇，卖得真快！）",
+      "is_oral_new": false
+    },
+    {
+      "word": "menata",
+      "display": "menata",
+      "audio_text": "menata",
+      "cn": "整理摆放；布置；安排",
+      "en": "arrange; organize",
+      "root": "tata",
+      "root_cn": "秩序；安排",
+      "formation": "meN- + tata → menata，t 脱落。搭配：menata meja、menata makanan、menata ruangan。按用途或秩序摆放，不只是把东西移到一处。",
+      "example": "Nila menata meja sederhana tanpa ingin terlihat mewah. Ia tidak harus menjadi perfeksionis untuk membuat tamu nyaman.",
+      "example_cn": "妮拉布置了一张简单的桌子，不求显得豪华。她不必事事追求完美，也能让客人舒服。",
+      "synonym_note": "menata 强调摆放得有条理或作出布置；membersihkan 强调清洁。桌子干净，不代表桌上的东西已经摆好。口语说法：nata meja；正式说明用 menata meja。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ujung",
+      "display": "ujung",
+      "audio_text": "ujung",
+      "cn": "末端；尽头；尖端",
+      "en": "end; tip",
+      "root": "ujung",
+      "root_cn": "尽头；尖端",
+      "formation": "基本名词。搭配：ujung jalan、ujung meja、ujung jari。具体物体决定是尽头、一端还是尖端，不固定译成“结尾”。",
+      "example": "Jalan lurus sampai ujung gang, lalu belok kiri. Di sana ada papan mengenai aturan taman.",
+      "example_cn": "沿小巷直走到尽头，然后左转。那里有一块介绍公园规定的牌子。",
+      "synonym_note": "ujung 指空间末端；akhir 也可表示时间或事情的结尾，如 akhir pekan。pinggir 是边缘，不必位于尽头。口语说法：Di ujung sana.（在那边尽头。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "pudar",
+      "display": "pudar",
+      "audio_text": "pudar",
+      "cn": "褪色；变淡；逐渐减弱",
+      "en": "fade; faded",
+      "root": "pudar",
+      "root_cn": "褪色；减弱",
+      "formation": "基本状态词。搭配：warna pudar（颜色变淡）、mulai pudar、kenangan yang pudar（逐渐淡去的记忆）。派生 memudar 表示逐渐变淡。",
+      "example": "Warna kain yang terbuat dari katun itu mulai pudar, tetapi kainnya masih nyaman dipakai.",
+      "example_cn": "那块棉布的颜色开始变淡，但用起来仍舒服。",
+      "synonym_note": "pudar 强调颜色或印象减弱；hilang 是消失。颜色 pudar 时通常还能看见，不能一概说完全没了。口语说法：Warnanya udah pudar.（颜色已经褪了。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "kuah",
+      "display": "kuah",
+      "audio_text": "kuah",
+      "cn": "汤汁；带汤菜肴里的汤",
+      "en": "broth; gravy; liquid in a soup dish",
+      "root": "kuah",
+      "root_cn": "汤汁",
+      "formation": "基本名词。搭配：kuah bakso、kuah soto、kuah panas、pisahkan kuahnya（把汤分开装）。不只限于肉汤。",
+      "example": "Kuah bakso ini amat panas. Tunggu sebentar sebelum mencicipinya.",
+      "example_cn": "这碗肉丸汤的汤汁很烫。等一会儿再尝。",
+      "synonym_note": "kuah 是菜肴里的汤汁；sup 通常指一道汤菜，二者用法不完全相同。口语说法：Kuahnya dipisah aja, ya.（汤分开装吧。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "patung",
+      "display": "patung",
+      "audio_text": "patung",
+      "cn": "雕像；塑像",
+      "en": "statue; sculpture",
+      "root": "patung",
+      "root_cn": "雕像；塑像",
+      "formation": "基本名词。搭配：patung batu、patung pahlawan、berfoto di dekat patung。常指立体塑像，不是照片。",
+      "example": "Patung di depan museum itu mengenang seorang pahlawan yang meninggal bertahun-tahun lalu.",
+      "example_cn": "博物馆前的那尊雕像纪念一位多年前去世的英雄。",
+      "synonym_note": "patung 是立体塑像；foto 是照片；boneka 多指玩偶，但艺术品与玩具也可能有边界重叠，须看用途。口语说法：Ketemu di dekat patung, ya.（在雕像旁碰面哦。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "bekal",
+      "display": "bekal",
+      "audio_text": "bekal",
+      "cn": "出门携带的食物；准备好的用品或本领",
+      "en": "packed food; provisions; preparation",
+      "root": "bekal",
+      "root_cn": "旅途所需；随身准备",
+      "formation": "基本名词。搭配：membawa bekal、bekal makan siang、bekal perjalanan；bekal pengetahuan 表示储备的知识。不是“规定”。",
+      "example": "Nila membawa bekal setelah sembuh dan kembali ikut jalan pagi. Ia penasaran ingin mencoba rute baru bersama teman.",
+      "example_cn": "妮拉康复后又参加了晨走，带上了便当。她很好奇，想和朋友试试新路线。",
+      "synonym_note": "bekal 是为了接下来的活动预先准备的东西，常指自带食物；aturan 才是规定。口语说法：Aku bawa bekal dari rumah.（我从家里带了吃的。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "tikar",
+      "display": "tikar",
+      "audio_text": "tikar",
+      "cn": "席子；铺在地上坐的垫席",
+      "en": "woven mat; ground mat",
+      "root": "tikar",
+      "root_cn": "席子",
+      "formation": "基本名词。搭配：menggelar tikar（铺席子）、duduk di atas tikar、melipat tikar（叠席子）。材质不一定相同。",
+      "example": "Anak-anak duduk di atas tikar sambil membaca buku berjudul Petualangan di Taman. Ceritanya asyik dan mudah diikuti.",
+      "example_cn": "孩子们坐在席子上，读一本题为《公园冒险》的书。故事有趣，也容易看懂。",
+      "synonym_note": "tikar 通常铺在地上供坐卧；karpet 范围较广，也可为室内地毯。不是所有小垫子都叫 tikar，须看形状和用途。口语说法：Gelar tikarnya di sini aja.（把席子铺这儿吧。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "saling",
+      "display": "saling",
+      "audio_text": "saling",
+      "cn": "互相；彼此（表示动作相互）",
+      "en": "each other; mutually",
+      "root": "saling",
+      "root_cn": "互相",
+      "formation": "放在相互进行的动作前。搭配：saling membantu、saling mengenal、saling mengingatkan。通常需复数或集合意义的主体，不能单独替代“对方”这个名词。",
+      "example": "Para peserta saling mengingatkan demi keselamatan bersama. Tindakan kecil itu membantu semua orang merasa lebih tenang.",
+      "example_cn": "参与者们为了共同安全互相提醒。这个小举动让大家都更安心。",
+      "synonym_note": "saling membantu 是互相帮助；membantu orang lain 可以只是单向帮助。口语说法：Kita saling bantu aja.（咱们互相搭把手就好。）",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "licin",
+    "peserta",
+    "amat",
+    "berbahaya",
+    "gampang"
+  ],
+  "sentences": [
+    {
+      "text": "Nila dan peserta lain menata bekal di atas tikar dekat patung setelah selesai berjalan.",
+      "cn": "妮拉和其他参与者走完路后，在雕像旁的席子上摆好自带食物。"
+    },
+    {
+      "text": "Tikar yang warnanya mulai pudar itu masih bisa dipakai, jadi Nila tidak perlu membeli yang baru.",
+      "cn": "那张颜色开始变淡的席子仍能用，所以妮拉不用买新的。"
+    },
+    {
+      "text": "Aku bawa bekal, tapi kuahnya aku pisah biar nggak tumpah di tas.",
+      "cn": "我带了吃的，不过把汤分开装了，免得洒在包里。（biar = supaya；nggak = tidak）"
+    },
+    {
+      "text": "Tempat di pinggir jalan itu berbahaya untuk duduk, maka mereka pindah ke ujung taman.",
+      "cn": "坐在路边那个地方有危险，所以他们换到公园尽头。"
+    },
+    {
+      "text": "Roti di warung dekat taman cepat laku; para pembeli saling memberi jalan di pintu masuk.",
+      "cn": "公园旁小店的面包卖得快；顾客在入口处互相让路。"
+    }
+  ],
+  "reading": {
+    "text": "Jumat pagi, Nila mengikuti jalan pagi bersama warga. Setiap peserta membawa bekal sendiri untuk dimakan setelah berjalan. Nila membantu menata kotak makanan di atas tikar dekat patung di taman. Semula, mereka memilih tempat di pinggir jalan setapak. Tanah di sana masih basah dan licin, sehingga Nila merasa tempat itu berbahaya untuk anak-anak. Ia mengusulkan pindah ke ujung taman yang lebih kering dan jauh dari jalan. Teman-temannya setuju, lalu saling membantu membawa barang. Setelah duduk, mereka berbagi makanan dan mengobrol. Nila senang karena menyampaikan masalah dengan jelas membuat keputusan bersama terasa lebih gampang.",
+    "cn": "星期五早上，妮拉和居民一起晨走。每位参与者都自带食物，准备走完后吃。妮拉帮忙把食物盒摆在公园雕像旁的席子上。起初，大家选在步道边。那里的泥土仍湿滑，妮拉觉得让孩子们待在那里有危险。她提议换到更干燥、离路更远的公园尽头。朋友们同意了，随后互相帮忙搬东西。坐下后，大家分享食物、聊天。妮拉很高兴，因为把问题说清楚，让大家一起作决定变得容易了。"
+  },
+  "quiz": [
+    {
+      "question": "“Tanah itu basah. Jangan lari di situ karena permukaannya ____.” 哪个词最准确地说明脚下的状况？",
+      "options": [
+        "ramai",
+        "licin",
+        "pudar",
+        "gampang"
+      ],
+      "answer_index": 1,
+      "answer": "licin",
+      "explain": "licin 表示表面滑，和湿土、容易脚下一滑的语境相配。berbahaya 只泛指危险，未具体说明表面状况；pudar 说颜色或印象变淡。"
+    },
+    {
+      "question": "“Bu Sari ____ roti. Rotinya cepat ____.” 哪组词填入后搭配与语义都最自然？",
+      "options": [
+        "laku / menjual",
+        "menjual / menjual",
+        "menjual / laku",
+        "laku / laku"
+      ],
+      "answer_index": 2,
+      "answer": "menjual / laku",
+      "explain": "Bu Sari 是出售者，用 menjual roti；第二句主语是面包，用 cepat laku 描述卖得快。laku 不能直接代替主动出售动作，面包也不是出售者。"
+    },
+    {
+      "question": "朋友说：“Kita duduk di pinggir jalan aja.” 你看到那里泥土湿滑，而且旁边有车经过。怎样回应最合适？",
+      "options": [
+        "Di sini licin dan dekat kendaraan. Kita cari tempat yang lebih aman, yuk.",
+        "Kalau kita diam, semua kendaraan pasti berhenti.",
+        "Tempat yang basah selalu lebih aman untuk anak-anak.",
+        "Kita tidak perlu melihat kondisi tempatnya."
+      ],
+      "answer_index": 0,
+      "answer": "Di sini licin dan dekat kendaraan. Kita cari tempat yang lebih aman, yuk.",
+      "explain": "先说明湿滑和靠近车辆这两个具体问题，再提出换安全位置，回应了实际情况。其余说法无依据或回避了眼前的问题。"
+    }
+  ],
+  "output": {
+    "task": "你和朋友走完路，准备一起吃东西。用 menata、bekal、saling 三词，写3句邀请或安排：说明把食物摆在哪儿，再请大家分工互助。不要把自带食物误解成规定。",
+    "reference_answer": "Kita menata bekal di atas tikar dekat patung, yuk. Aku bawa nasi, kamu bawa buah. Kita saling bantu supaya cepat selesai.",
+    "reference_cn": "咱们把自带的食物摆在雕像旁的席子上吧。我带饭，你带水果。我们互相帮忙，这样能快点弄好。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出边缘、卖得出去、布置、末端、褪色、汤汁、雕像、自带食物、席子、互相。答不出才翻词卡；把 bekal 记成出门的准备，不是规定。",
+    "辨析后各说一句：pinggir 是边缘，ujung 是末端；laku 描述商品卖得出去，menjual 是主动出售；licin 具体说表面滑，berbahaya 泛指危险。用 amat 或 gampang 补一句自己的评价。",
+    "不看课文复述：参与者在哪里停下、哪里湿滑、为什么搬走、怎样互相帮忙；至少用 peserta、licin、menata、bekal、saling。再用 pudar、kuah、tikar 各说一个野餐准备细节。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "menata",
+      "bekal",
+      "saling"
+    ],
+    "patterns": [
+      {
+        "pattern": "Kita menata … di atas …, yuk.",
+        "cn": "我们把……摆到……上吧。",
+        "example": "Kita menata bekal di atas tikar dekat patung, yuk.",
+        "example_cn": "咱们把自带的食物摆在雕像旁的席子上吧。"
+      },
+      {
+        "pattern": "Kita saling bantu supaya …",
+        "cn": "我们互相帮忙，这样就……。",
+        "example": "Kita saling bantu supaya cepat selesai.",
+        "example_cn": "我们互相帮忙，这样能快点弄好。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "边缘；边上",
+        "id": "pinggir"
+      },
+      {
+        "cn": "卖得出去；有销路",
+        "id": "laku"
+      },
+      {
+        "cn": "整理摆放；布置；安排",
+        "id": "menata"
+      },
+      {
+        "cn": "末端；尽头；尖端",
+        "id": "ujung"
+      },
+      {
+        "cn": "褪色；变淡；逐渐减弱",
+        "id": "pudar"
+      },
+      {
+        "cn": "汤汁；带汤菜肴里的汤",
+        "id": "kuah"
+      },
+      {
+        "cn": "雕像；塑像",
+        "id": "patung"
+      },
+      {
+        "cn": "出门携带的食物；准备好的用品或本领",
+        "id": "bekal"
+      },
+      {
+        "cn": "席子；铺在地上坐的垫席",
+        "id": "tikar"
+      },
+      {
+        "cn": "互相；彼此（表示动作相互）",
+        "id": "saling"
+      }
+    ],
+    "frames": [
+      "Kita menata … di atas …, yuk.",
+      "Kita saling bantu supaya …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "pinggir",
+            "cn": "边缘；边上"
+          },
+          {
+            "id": "ujung",
+            "cn": "末端；尽头"
+          }
+        ],
+        "note": "沿边缘说pinggir，到末端说ujung；视角不同，位置可能重叠。"
+      },
+      {
+        "items": [
+          {
+            "id": "laku",
+            "cn": "卖得出去"
+          },
+          {
+            "id": "menjual",
+            "cn": "主动出售"
+          }
+        ],
+        "note": "Barang ini laku. 描述商品有销路；Saya menjual barang. 说明我出售商品。"
+      },
+      {
+        "items": [
+          {
+            "id": "licin",
+            "cn": "表面滑"
+          },
+          {
+            "id": "berbahaya",
+            "cn": "有危险"
+          }
+        ],
+        "note": "滑是具体表面性质；危险是更广的判断，不是所有危险都来自地滑。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "menata",
+        "usage": "一起安排吃饭的位置和分工。",
+        "examples": [
+          {
+            "id": "Kita menata bekal di atas tikar dekat patung, yuk. Aku bawa nasi, kamu bawa buah. Kita saling bantu supaya cepat selesai.",
+            "cn": "咱们把自带的食物摆在雕像旁的席子上吧。我带饭，你带水果。我们互相帮忙，这样能快点弄好。"
+          }
+        ]
+      },
+      {
+        "word": "bekal",
+        "usage": "描述自己提前带的食物，可与汤分开装一起说。",
+        "examples": [
+          {
+            "id": "Aku bawa bekal, tapi kuahnya aku pisah biar nggak tumpah di tas.",
+            "cn": "我带了吃的，不过把汤分开装了，免得洒在包里。（biar = supaya；nggak = tidak）"
+          }
+        ]
+      }
+    ]
+  }
+}
