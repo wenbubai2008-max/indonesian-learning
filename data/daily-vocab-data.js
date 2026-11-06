@@ -12500,17 +12500,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-20 08:00",
+    "last_seen": "2026-11-06 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-11-06"
     ],
     "lesson_occurrences": [
-      "2026-09-20 08:00"
+      "2026-09-20 08:00",
+      "2026-11-06 08:00"
     ]
   },
   {
@@ -12684,17 +12686,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-20 08:00",
+    "last_seen": "2026-11-06 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-11-06"
     ],
     "lesson_occurrences": [
-      "2026-09-20 08:00"
+      "2026-09-20 08:00",
+      "2026-11-06 08:00"
     ]
   },
   {
@@ -12736,19 +12740,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "这个问题非常重要，所以我们需要冷静讨论。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 18:00",
-    "last_seen": "2026-09-20 18:00",
+    "last_seen": "2026-11-06 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-11-06"
     ],
     "lesson_occurrences": [
-      "2026-09-20 18:00"
+      "2026-09-20 18:00",
+      "2026-11-06 08:00"
     ]
   },
   {
@@ -29140,19 +29148,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "参与者可以从钱包里取出卡片供检查。这张卡有效期至月底。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-05 18:00",
-    "last_seen": "2026-11-05 18:00",
+    "last_seen": "2026-11-06 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "lesson_occurrences": [
-      "2026-11-05 18:00"
+      "2026-11-05 18:00",
+      "2026-11-06 08:00"
     ]
   },
   {
@@ -29165,19 +29177,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "地板沾水后很滑。修好漏水的地方，以保护经过的人。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-05 18:00",
-    "last_seen": "2026-11-05 18:00",
+    "last_seen": "2026-11-06 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "lesson_occurrences": [
-      "2026-11-05 18:00"
+      "2026-11-05 18:00",
+      "2026-11-06 08:00"
     ]
   },
   {
@@ -29228,6 +29244,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-05 18:00"
+    ]
+  },
+  {
+    "word": "pinggir",
+    "cn": "边缘；边上",
+    "en": "edge; side",
+    "root": "pinggir",
+    "root_cn": "边；边缘",
+    "example": "Jangan berdiri di pinggir jalan yang tanahnya licin; kamu bisa terpeleset saat turun.",
+    "example_cn": "别站在泥土湿滑的路边；往下走时可能脚下一滑。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 08:00"
+    ]
+  },
+  {
+    "word": "laku",
+    "cn": "卖得出去；有销路",
+    "en": "sell; be in demand",
+    "root": "laku",
+    "root_cn": "卖得出去；有销路",
+    "example": "Roti itu cepat laku karena banyak orang mengincar roti yang baru keluar dari oven.",
+    "example_cn": "那种面包卖得快，因为很多人都想买刚出炉的面包。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 08:00"
+    ]
+  },
+  {
+    "word": "menata",
+    "cn": "整理摆放；布置；安排",
+    "en": "arrange; organize",
+    "root": "tata",
+    "root_cn": "秩序；安排",
+    "example": "Nila menata meja sederhana tanpa ingin terlihat mewah. Ia tidak harus menjadi perfeksionis untuk membuat tamu nyaman.",
+    "example_cn": "妮拉布置了一张简单的桌子，不求显得豪华。她不必事事追求完美，也能让客人舒服。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 08:00"
+    ]
+  },
+  {
+    "word": "ujung",
+    "cn": "末端；尽头；尖端",
+    "en": "end; tip",
+    "root": "ujung",
+    "root_cn": "尽头；尖端",
+    "example": "Jalan lurus sampai ujung gang, lalu belok kiri. Di sana ada papan mengenai aturan taman.",
+    "example_cn": "沿小巷直走到尽头，然后左转。那里有一块介绍公园规定的牌子。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 08:00"
+    ]
+  },
+  {
+    "word": "pudar",
+    "cn": "褪色；变淡；逐渐减弱",
+    "en": "fade; faded",
+    "root": "pudar",
+    "root_cn": "褪色；减弱",
+    "example": "Warna kain yang terbuat dari katun itu mulai pudar, tetapi kainnya masih nyaman dipakai.",
+    "example_cn": "那块棉布的颜色开始变淡，但用起来仍舒服。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 08:00"
+    ]
+  },
+  {
+    "word": "kuah",
+    "cn": "汤汁；带汤菜肴里的汤",
+    "en": "broth; gravy; liquid in a soup dish",
+    "root": "kuah",
+    "root_cn": "汤汁",
+    "example": "Kuah bakso ini amat panas. Tunggu sebentar sebelum mencicipinya.",
+    "example_cn": "这碗肉丸汤的汤汁很烫。等一会儿再尝。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 08:00"
+    ]
+  },
+  {
+    "word": "patung",
+    "cn": "雕像；塑像",
+    "en": "statue; sculpture",
+    "root": "patung",
+    "root_cn": "雕像；塑像",
+    "example": "Patung di depan museum itu mengenang seorang pahlawan yang meninggal bertahun-tahun lalu.",
+    "example_cn": "博物馆前的那尊雕像纪念一位多年前去世的英雄。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 08:00"
+    ]
+  },
+  {
+    "word": "bekal",
+    "cn": "出门携带的食物；准备好的用品或本领",
+    "en": "packed food; provisions; preparation",
+    "root": "bekal",
+    "root_cn": "旅途所需；随身准备",
+    "example": "Nila membawa bekal setelah sembuh dan kembali ikut jalan pagi. Ia penasaran ingin mencoba rute baru bersama teman.",
+    "example_cn": "妮拉康复后又参加了晨走，带上了便当。她很好奇，想和朋友试试新路线。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 08:00"
+    ]
+  },
+  {
+    "word": "tikar",
+    "cn": "席子；铺在地上坐的垫席",
+    "en": "woven mat; ground mat",
+    "root": "tikar",
+    "root_cn": "席子",
+    "example": "Anak-anak duduk di atas tikar sambil membaca buku berjudul Petualangan di Taman. Ceritanya asyik dan mudah diikuti.",
+    "example_cn": "孩子们坐在席子上，读一本题为《公园冒险》的书。故事有趣，也容易看懂。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 08:00"
+    ]
+  },
+  {
+    "word": "saling",
+    "cn": "互相；彼此（表示动作相互）",
+    "en": "each other; mutually",
+    "root": "saling",
+    "root_cn": "互相",
+    "example": "Para peserta saling mengingatkan demi keselamatan bersama. Tindakan kecil itu membantu semua orang merasa lebih tenang.",
+    "example_cn": "参与者们为了共同安全互相提醒。这个小举动让大家都更安心。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-06 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-06"
+    ],
+    "lesson_occurrences": [
+      "2026-11-06 08:00"
     ]
   }
 ];

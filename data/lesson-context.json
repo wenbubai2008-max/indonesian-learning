@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-06",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 77
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-05T14:01:08.023Z",
-    "lesson_watermark": "2026-11-05 18:00",
-    "index_updated": "2026-11-05",
-    "runtime_hash": "401b2cc87bd20804bc31d4d1f145d256b75c617640960573b1ac29644cba7785",
-    "index_hash": "c23cf7e14b94cf3b92d7e5823fe3b7e90ca6255f319e8de3022d2261bb35bcd6",
+    "runtime_generated_at": "2026-11-06T00:31:16.950Z",
+    "lesson_watermark": "2026-11-06 08:00",
+    "index_updated": "2026-11-06",
+    "runtime_hash": "d288bf284c11da8aee57b0fc652873138e2796315e3ff007f11d3ec476990d77",
+    "index_hash": "239a36c1a2c3fc252bcbeaf321a72f511486a1ee045d9397126d5e5c0d0943a3",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -49,46 +49,6 @@
   },
   "candidates": {
     "new_dont": [
-      [
-        "pinggir",
-        "边缘"
-      ],
-      [
-        "laku",
-        "需求旺盛"
-      ],
-      [
-        "menata",
-        "组织"
-      ],
-      [
-        "ujung",
-        "结尾"
-      ],
-      [
-        "pudar",
-        "褪色了"
-      ],
-      [
-        "kuah",
-        "肉汤"
-      ],
-      [
-        "patung",
-        "雕像"
-      ],
-      [
-        "bekal",
-        "规定"
-      ],
-      [
-        "tikar",
-        "垫"
-      ],
-      [
-        "saling",
-        "彼此"
-      ],
       [
         "bakti",
         "奉献精神"
@@ -1730,26 +1690,6 @@
         "宽广；广泛"
       ],
       [
-        "gampang",
-        2,
-        0,
-        "",
-        "2026-10-15T13:45:42.957Z",
-        "容易",
-        "gampang",
-        "容易"
-      ],
-      [
-        "berbahaya",
-        3,
-        0,
-        "",
-        "2026-10-15T13:46:33.791Z",
-        "危险的",
-        "bahaya",
-        "危险"
-      ],
-      [
         "kenyang",
         3,
         0,
@@ -1768,16 +1708,6 @@
         "辞职",
         "resign",
         "辞职"
-      ],
-      [
-        "amat",
-        2,
-        0,
-        "",
-        "2026-10-15T13:45:23.181Z",
-        "非常；很",
-        "amat",
-        "非常；很"
       ],
       [
         "komplain",
@@ -2948,6 +2878,136 @@
         "距离；间隔",
         "jarak",
         "距离；间隔"
+      ],
+      [
+        "pokoknya",
+        2,
+        1,
+        "2026-09-30T14:05:45.976Z",
+        "2026-10-13T15:11:31.360Z",
+        "总之；反正；不管怎样",
+        "pokok",
+        "要点；主要部分"
+      ],
+      [
+        "mencetak",
+        3,
+        0,
+        "",
+        "2026-10-22T15:35:57.748Z",
+        "打印；印刷",
+        "cetak",
+        "印；打印"
+      ],
+      [
+        "siapkan",
+        3,
+        0,
+        "",
+        "2026-10-23T23:37:11.756Z",
+        "准备好；把……准备好",
+        "siap",
+        "准备好的"
+      ],
+      [
+        "pinggir",
+        1,
+        0,
+        "",
+        "",
+        "边缘；边上",
+        "pinggir",
+        "边；边缘"
+      ],
+      [
+        "laku",
+        1,
+        0,
+        "",
+        "",
+        "卖得出去；有销路",
+        "laku",
+        "卖得出去；有销路"
+      ],
+      [
+        "menata",
+        1,
+        0,
+        "",
+        "",
+        "整理摆放；布置；安排",
+        "tata",
+        "秩序；安排"
+      ],
+      [
+        "ujung",
+        1,
+        0,
+        "",
+        "",
+        "末端；尽头；尖端",
+        "ujung",
+        "尽头；尖端"
+      ],
+      [
+        "pudar",
+        1,
+        0,
+        "",
+        "",
+        "褪色；变淡；逐渐减弱",
+        "pudar",
+        "褪色；减弱"
+      ],
+      [
+        "kuah",
+        1,
+        0,
+        "",
+        "",
+        "汤汁；带汤菜肴里的汤",
+        "kuah",
+        "汤汁"
+      ],
+      [
+        "patung",
+        1,
+        0,
+        "",
+        "",
+        "雕像；塑像",
+        "patung",
+        "雕像；塑像"
+      ],
+      [
+        "bekal",
+        1,
+        0,
+        "",
+        "",
+        "出门携带的食物；准备好的用品或本领",
+        "bekal",
+        "旅途所需；随身准备"
+      ],
+      [
+        "tikar",
+        1,
+        0,
+        "",
+        "",
+        "席子；铺在地上坐的垫席",
+        "tikar",
+        "席子"
+      ],
+      [
+        "saling",
+        1,
+        0,
+        "",
+        "",
+        "互相；彼此（表示动作相互）",
+        "saling",
+        "互相"
       ]
     ],
     "focus": [
@@ -3489,6 +3549,29 @@
         "kaos",
         "pendinginan"
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "session": "am",
+      "review_core": [
+        "licin",
+        "peserta",
+        "amat",
+        "berbahaya",
+        "gampang"
+      ],
+      "new_words": [
+        "pinggir",
+        "laku",
+        "menata",
+        "ujung",
+        "pudar",
+        "kuah",
+        "patung",
+        "bekal",
+        "tikar",
+        "saling"
+      ]
     }
   ],
   "previous_pm": {
@@ -3508,7 +3591,88 @@
       "menderita"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-06",
+    "vocab": [
+      [
+        "pinggir",
+        "边缘；边上",
+        "edge; side",
+        "pinggir",
+        "边；边缘"
+      ],
+      [
+        "laku",
+        "卖得出去；有销路",
+        "sell; be in demand",
+        "laku",
+        "卖得出去；有销路"
+      ],
+      [
+        "menata",
+        "整理摆放；布置；安排",
+        "arrange; organize",
+        "tata",
+        "秩序；安排"
+      ],
+      [
+        "ujung",
+        "末端；尽头；尖端",
+        "end; tip",
+        "ujung",
+        "尽头；尖端"
+      ],
+      [
+        "pudar",
+        "褪色；变淡；逐渐减弱",
+        "fade; faded",
+        "pudar",
+        "褪色；减弱"
+      ],
+      [
+        "kuah",
+        "汤汁；带汤菜肴里的汤",
+        "broth; gravy; liquid in a soup dish",
+        "kuah",
+        "汤汁"
+      ],
+      [
+        "patung",
+        "雕像；塑像",
+        "statue; sculpture",
+        "patung",
+        "雕像；塑像"
+      ],
+      [
+        "bekal",
+        "出门携带的食物；准备好的用品或本领",
+        "packed food; provisions; preparation",
+        "bekal",
+        "旅途所需；随身准备"
+      ],
+      [
+        "tikar",
+        "席子；铺在地上坐的垫席",
+        "woven mat; ground mat",
+        "tikar",
+        "席子"
+      ],
+      [
+        "saling",
+        "互相；彼此（表示动作相互）",
+        "each other; mutually",
+        "saling",
+        "互相"
+      ]
+    ],
+    "review_vocab": [
+      "licin",
+      "peserta",
+      "amat",
+      "berbahaya",
+      "gampang"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

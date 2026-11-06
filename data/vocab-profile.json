@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generated_at": "2026-11-05T14:01:08.191Z",
+  "generated_at": "2026-11-06T00:31:24.010Z",
   "source_updated_at": "2026-11-05T13:54:41.932Z",
-  "taught_total": 1080,
+  "taught_total": 1090,
   "confirmed_mastered": 203,
-  "needs_reinforcement": 785,
+  "needs_reinforcement": 795,
   "excluded_from_training": 92,
   "unverified": 0,
-  "mastery_percent": 18.8,
+  "mastery_percent": 18.6,
   "primary_master_total": 977,
   "primary_taught_unique": 647,
   "primary_unlearned_total": 330,
@@ -15,7 +15,7 @@
   "primary_eligible_new_total": 0,
   "secondary_eligible_new_total": 165,
   "active_master_pool": "secondary_bipa",
-  "focus_total": 782,
+  "focus_total": 792,
   "focus_words": [
     {
       "word": "dimaksudkan",
