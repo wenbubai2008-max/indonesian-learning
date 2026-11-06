@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T13:23:44.029Z",
+  "updated_at": "2026-11-06T15:14:30.360Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -28132,18 +28132,18 @@
     "menanyakan": {
       "word": "menanyakan",
       "status": "active",
-      "updated_at": "2026-11-04T13:55:34.533Z",
+      "updated_at": "2026-11-06T15:13:46.351Z",
       "display": "menanyakan",
       "cn": "询问",
       "root": "tanya",
-      "last_review": "2026-11-04T13:55:34.475Z",
+      "last_review": "2026-11-06T15:13:46.289Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "menikmati": {
       "word": "menikmati",
@@ -29643,49 +29643,52 @@
     "tanda tangan": {
       "word": "tanda tangan",
       "status": "active",
-      "updated_at": "2026-11-04T13:55:52.312Z",
+      "updated_at": "2026-11-06T15:14:19.582Z",
       "display": "tanda tangan",
       "cn": "签名",
       "root": "tanda; tangan",
-      "last_review": "2026-11-04T13:55:52.256Z",
+      "last_review": "2026-11-06T15:14:19.496Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "berkas": {
       "word": "berkas",
       "status": "active",
-      "updated_at": "2026-11-04T13:55:30.429Z",
+      "updated_at": "2026-11-06T15:13:42.552Z",
       "display": "berkas",
       "cn": "文件；材料；档案包",
-      "last_review": "2026-11-04T13:55:30.367Z",
+      "last_review": "2026-11-06T15:13:42.486Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "pertimbangan": {
       "word": "pertimbangan",
       "status": "active",
-      "updated_at": "2026-11-04T13:55:48.345Z",
+      "updated_at": "2026-11-06T15:14:08.739Z",
       "display": "pertimbangan",
-      "cn": "考虑；考量",
+      "cn": "考虑；考量因素",
       "root": "timbang",
-      "last_review": "2026-11-04T13:55:48.288Z",
+      "root_cn": "称量；权衡",
+      "last_wrong": "2026-11-06T15:14:08.677Z",
+      "last_review": "2026-11-06T15:14:08.677Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
-        "bipa_secondary_fuzzy"
+        "bipa_secondary_fuzzy",
+        "quick_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 1
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "tantangan": {
       "word": "tantangan",
@@ -29741,18 +29744,18 @@
     "menyerahkan": {
       "word": "menyerahkan",
       "status": "active",
-      "updated_at": "2026-11-04T13:55:46.095Z",
+      "updated_at": "2026-11-06T15:13:59.966Z",
       "display": "menyerahkan",
       "cn": "交给；提交",
       "root": "serah",
-      "last_review": "2026-11-04T13:55:46.031Z",
+      "last_review": "2026-11-06T15:13:59.901Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "strategis": {
       "word": "strategis",
@@ -32157,11 +32160,11 @@
       "status": "active",
       "updated_at": "2026-11-06T13:23:26.327Z",
       "display": "hiburan",
-      "cn": "娱乐；消遣；带来愉悦的活动",
+      "cn": "娱乐",
       "last_wrong": "2026-11-06T13:21:02.697Z",
       "last_review": "2026-11-06T13:23:26.271Z",
-      "source": "课程自检",
-      "source_date": "2026-11-06",
+      "source": "泛读",
+      "source_date": "2026-11-05",
       "reasons": [
         "manual_unknown",
         "lesson_wrong"
@@ -32174,11 +32177,11 @@
       "status": "active",
       "updated_at": "2026-11-06T13:23:30.736Z",
       "display": "minat",
-      "cn": "兴趣；对某事的意愿或关注",
+      "cn": "兴趣",
       "last_wrong": "2026-11-06T13:20:54.939Z",
       "last_review": "2026-11-06T13:23:30.678Z",
-      "source": "课程自检",
-      "source_date": "2026-11-06",
+      "source": "泛读",
+      "source_date": "2026-11-05",
       "reasons": [
         "manual_unknown",
         "lesson_wrong"
@@ -32191,14 +32194,14 @@
       "status": "active",
       "updated_at": "2026-11-06T13:23:28.097Z",
       "display": "mahir",
-      "cn": "熟练的；精于某项技能的",
+      "cn": "精通",
       "root": "mahir",
       "root_cn": "熟练；精于",
       "last_wrong": "2026-11-06T13:20:10.183Z",
       "last_review": "2026-11-06T13:23:28.040Z",
-      "source": "课程小测",
-      "source_date": "2026-11-06",
-      "session": "18:00",
+      "source": "每日学习阅读",
+      "source_date": "2026-11-05",
+      "session": "19:00",
       "reasons": [
         "manual_unknown",
         "lesson_wrong"
