@@ -1,0 +1,362 @@
+{
+  "date": "2026-11-07",
+  "session": "am",
+  "time": "08:00",
+  "day": 78,
+  "title": "08:00 早课｜Bagi Tugas Saat Kerja Bakti · 义务劳动时，先把分工说清楚",
+  "vocab": [
+    {
+      "word": "bakti",
+      "display": "bakti",
+      "audio_text": "bakti",
+      "cn": "奉献；服务；尽心履责，常见于 kerja bakti",
+      "en": "devotion; service",
+      "root": "bakti",
+      "root_cn": "奉献；尽心服务",
+      "formation": "基本名词。实用词组：kerja bakti（社区集体义务劳动，常为清洁）、bakti kepada orang tua（孝敬父母）、berbakti（尽心服务；孝敬）。不机械拆字。",
+      "example": "Kerja bakti ini merupakan upaya warga untuk menjaga lingkungan, bukan sekadar acara foto bersama.",
+      "example_cn": "这次集体义务劳动是居民维护环境的努力，不只是一起拍照的活动。",
+      "synonym_note": "bakti 强调奉献或尽心服务；kerja 泛指工作。kerja bakti 通常不是带薪上班，具体活动须看社区安排。口语说法：Besok ikut kerja bakti, yuk.（明天一起参加义务劳动吧。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "di samping",
+      "display": "di samping",
+      "audio_text": "di samping",
+      "cn": "在……旁边；此外（另一个用法）",
+      "en": "beside; in addition to",
+      "root": "samping",
+      "root_cn": "侧面；旁边",
+      "formation": "di + samping 分开写。搭配：di samping rumah、di samping pintu、berdiri di samping saya。也可表示除……之外，本文先练位置义。",
+      "example": "Kotak itu ada di samping pintu. Isinya tidak muat di lemari kecil, jadi kami akan memindahkannya.",
+      "example_cn": "箱子在门旁。里面的东西装不进小柜子，所以我们准备把它搬走。",
+      "synonym_note": "di samping 说旁边的位置；di depan 是前面，di belakang 是后面。不要因为两个东西相邻就把方向都说成前后。口语说法：Di samping sini aja.（就在这边旁边吧。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "sering",
+      "display": "sering",
+      "audio_text": "sering",
+      "cn": "经常；频繁地",
+      "en": "often",
+      "root": "sering",
+      "root_cn": "经常",
+      "formation": "频率副词。搭配：sering datang、sering lupa、tidak sering。sering-sering 可在劝说中表示多做几次，如 sering-sering mampir。",
+      "example": "Kucing itu sering berjemur di halaman setelah pagi mulai hangat.",
+      "example_cn": "早晨暖和起来后，那只猫经常在院子里晒太阳。",
+      "synonym_note": "sering 说明频率高，不等于 setiap hari（每天）或 selalu（总是）。一次看到某人做某事，不足以断定他经常如此。口语说法：Kamu sering lewat sini?（你经常经过这里吗？）",
+      "is_oral_new": false
+    },
+    {
+      "word": "merek",
+      "display": "merek",
+      "audio_text": "merek",
+      "cn": "品牌；牌子",
+      "en": "brand",
+      "root": "merek",
+      "root_cn": "品牌",
+      "formation": "基本名词。搭配：merek sepatu、merek yang sama、beda merek。型号不等于品牌，同一品牌可有多种型号。",
+      "example": "Saya menyimpan foto sepatu itu dan mencatat merek serta ukurannya sebelum pergi ke toko.",
+      "example_cn": "去店里之前，我保存了那双鞋的照片，并记下品牌和尺码。",
+      "synonym_note": "merek 是品牌；model 可以指款式或型号；harga 是价格。不能仅凭牌子就断定是否适合自己。口语说法：Ini merek apa?（这是什么牌子的？）",
+      "is_oral_new": false
+    },
+    {
+      "word": "melewati",
+      "display": "melewati",
+      "audio_text": "melewati",
+      "cn": "经过；穿过；越过某处",
+      "en": "pass; go through",
+      "root": "lewat",
+      "root_cn": "经过",
+      "formation": "meN- + lewat + -i → melewati，l 保留，前缀呈 me-。搭配：melewati gang、melewati pintu、melewati batas。正式形可直接接经过的地点。",
+      "example": "Mobil harus mundur sedikit sebelum melewati pintu yang sempit agar tidak menabrak tembok.",
+      "example_cn": "车要先倒退一点，再通过狭窄入口，以免撞墙。",
+      "synonym_note": "melewati 强调经过或通过；mendatangi 强调去找人或到某处。口语说法：lewat，如 Kita lewat jalan lain.（我们走另一条路。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "lompat",
+      "display": "lompat",
+      "audio_text": "lompat",
+      "cn": "跳；跳跃",
+      "en": "jump",
+      "root": "lompat",
+      "root_cn": "跳",
+      "formation": "基本动词，口语指令常直接用词根。搭配：lompat ke depan、lompat dari tempat rendah、jangan lompat。完整形式 melompat：meN- + lompat，l 保留。",
+      "example": "Jangan lompat ke dekat meja itu. Gelasnya bisa jatuh kalau kamu menabrak mejanya.",
+      "example_cn": "别跳到那张桌子旁边；如果你撞到桌子，杯子可能掉下来。",
+      "synonym_note": "lompat 是跳跃，不等于跑；melompat 是较完整的标准形式，日常指令常说 Lompat!。口语说法：Jangan lompat dulu.（先别跳。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "pinggang",
+      "display": "pinggang",
+      "audio_text": "pinggang",
+      "cn": "腰；腰部",
+      "en": "waist; lower back area",
+      "root": "pinggang",
+      "root_cn": "腰部",
+      "formation": "基本名词。搭配：ikat pinggang（腰带）、lingkar pinggang（腰围）、sakit pinggang（腰部疼痛）。身体位置与语境共同决定具体所指。",
+      "example": "Tas kecil itu dipasang di pinggang. Isinya hanya ponsel dan kartu yang mencatat golongan darah pemiliknya.",
+      "example_cn": "那个小包固定在腰部，里面只有手机和一张记着主人血型的卡。",
+      "synonym_note": "pinggang 是腰部；pundak 是肩部。sakit pinggang 描述部位，不自动说明病因。口语说法：Pinggangku pegal.（我的腰酸。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "pundak",
+      "display": "pundak",
+      "audio_text": "pundak",
+      "cn": "肩膀；肩部",
+      "en": "shoulder",
+      "root": "pundak",
+      "root_cn": "肩膀",
+      "formation": "基本名词。搭配：tas di pundak、menepuk pundak、beban di pundak。也可比喻肩上的责任。",
+      "example": "Tali tas di pundaknya terlalu pendek. Ia memisahkan barang berat dari tas itu sebelum berjalan lagi.",
+      "example_cn": "她肩上的包带太短；再次出发前，她把重物从那个包里分出来。",
+      "synonym_note": "pundak 常用于肩部，bahu 在很多身体语境里也可用；不能编成两者绝不相同。口语说法：Pundakku capek.（我的肩膀累了。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "menggunakan",
+      "display": "menggunakan",
+      "audio_text": "menggunakan",
+      "cn": "使用；利用工具或方式",
+      "en": "use",
+      "root": "guna",
+      "root_cn": "用途；用处",
+      "formation": "meN- + guna + -kan → menggunakan，g 保留，前缀呈 meng-。搭配：menggunakan sapu、menggunakan alat、menggunakan cara lain。",
+      "example": "Kami menggunakan judul yang singkat sebelum mengunggah foto kerja bakti ke grup warga.",
+      "example_cn": "把义务劳动的照片发到居民群之前，我们用了一个简短的标题。",
+      "synonym_note": "menggunakan 强调使用工具或方式；menikmati 强调享受。口语说法：pakai，如 Aku pakai sapu ini.（我用这把扫帚。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "menikmati",
+      "display": "menikmati",
+      "audio_text": "menikmati",
+      "cn": "享受；品味",
+      "en": "enjoy; savor",
+      "root": "nikmat",
+      "root_cn": "愉快；美味；享受的感觉",
+      "formation": "meN- + nikmat + -i → menikmati，n 保留，前缀呈 me-。搭配：menikmati kopi、menikmati waktu bersama、menikmati pemandangan。",
+      "example": "Setelah bekerja, mereka menikmati kopi yang nikmat dan membicarakan rencana minggu berikutnya.",
+      "example_cn": "干完活后，他们品着好喝的咖啡，聊下一周的安排。",
+      "synonym_note": "menikmati 是享受某物或体验的动作；nikmat 描述美味、舒适的感觉。口语说法：Nikmatin kopinya dulu.（先慢慢喝咖啡享受一下。）",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "penyebab",
+    "sebab",
+    "hiburan",
+    "mahir",
+    "ancaman"
+  ],
+  "sentences": [
+    {
+      "text": "Warga sering melewati gang itu, jadi mereka mencari penyebab tumpukan barang sebelum mulai kerja bakti.",
+      "cn": "居民经常经过那条小巷，所以开始义务劳动前，先查找物品堆积的原因。"
+    },
+    {
+      "text": "Pak Arman belum mahir menggunakan alat baru, sebab ia baru pertama kali mencobanya.",
+      "cn": "阿尔曼先生还不熟练使用新工具，因为他是第一次尝试。"
+    },
+    {
+      "text": "Tas di pundak terasa berat, jadi Rani memindahkan ponselnya ke tas kecil di pinggang.",
+      "cn": "肩上的包感觉很重，所以拉妮把手机移到了腰间的小包。"
+    },
+    {
+      "text": "Aku pakai merek apa aja, yang penting sapunya kuat. Pokoknya, jangan beli cuma karena warnanya bagus.",
+      "cn": "什么牌子我都可以用，重要的是扫帚结实。总之，别只因为颜色好看就买。（pakai = menggunakan；aja = saja）"
+    },
+    {
+      "text": "Setelah membersihkan tempat di samping pos, mereka menikmati cerita lucu sebagai hiburan sebentar.",
+      "cn": "把值班亭旁边清理完后，大家听有趣的故事，短暂消遣一下。"
+    }
+  ],
+  "reading": {
+    "text": "Sabtu pagi, Rani ikut kerja bakti di gang dekat rumahnya. Ia sering melewati gang itu dan melihat banyak kotak di samping pos. Kotak-kotak tersebut membuat jalan sempit dan bisa menjadi ancaman bagi orang yang lewat. Rani bertanya kepada Pak Arman tentang penyebab tumpukan itu. Ternyata pemiliknya belum sempat memindahkan barang. Mereka sepakat membantu setelah mendapat izin. Pak Arman belum mahir menggunakan alat baru, jadi ia memilih sapu biasa. Rani membantu membawa kotak yang ringan. Mereka tidak terburu-buru, sebab jalannya sempit. Setelah selesai, semua alat dikembalikan. Warga lalu duduk bersama untuk menikmati kopi dan mengobrol.",
+    "cn": "星期六早上，拉妮参加家附近小巷的集体义务劳动。她经常经过这条巷子，看到值班亭旁堆着许多箱子。箱子让道路变窄，可能威胁经过者的安全。拉妮向阿尔曼先生询问堆积的原因，才知道主人还没来得及搬东西。得到许可后，大家商量帮忙。阿尔曼还不熟练使用新工具，所以选了普通扫帚。拉妮帮忙搬轻的箱子。大家没有着急，因为路很窄。做完后，所有工具都归还原处，居民们坐在一起喝咖啡、聊天。"
+  },
+  "quiz": [
+    {
+      "question": "“Cerita lucu itu menjadi ____ setelah kami selesai bekerja.” 哪个词形最自然？",
+      "options": [
+        "menghibur",
+        "terhibur",
+        "hiburan",
+        "dihibur"
+      ],
+      "answer_index": 2,
+      "answer": "hiburan",
+      "explain": "menjadi 后这里需要名词 hiburan，表示一种消遣。menghibur 是使人开心或安慰的主动动作；terhibur 是感到愉快或得到安慰；dihibur 是被安慰。"
+    },
+    {
+      "question": "“Saya ____ kopi ini pelan-pelan, bukan memakainya untuk hal lain.” 哪个词最自然？",
+      "options": [
+        "menikmati",
+        "melewati",
+        "merek",
+        "menggunakan"
+      ],
+      "answer_index": 0,
+      "answer": "menikmati",
+      "explain": "menikmati kopi 是品味、享受咖啡；menggunakan kopi 强调把咖啡用作某种用途。melewati 是经过，merek 是品牌名词。"
+    },
+    {
+      "question": "居民说：“Kotaknya punya tetangga, tapi jalannya sempit.” 你想帮忙清理，怎样回应最合适？",
+      "options": [
+        "Kita buang semuanya tanpa tanya.",
+        "Kita pindahkan diam-diam supaya cepat.",
+        "Kalau kita diam, kotaknya pasti hilang sendiri.",
+        "Kita tanya pemiliknya dulu, lalu bagi tugas setelah diizinkan."
+      ],
+      "answer_index": 3,
+      "answer": "Kita tanya pemiliknya dulu, lalu bagi tugas setelah diizinkan.",
+      "explain": "先确认物品归属和搬动许可，再分工，回应了道路狭窄和私人财物两个事实；不能把清理公共通道当成擅自丢弃物品的许可。"
+    }
+  ],
+  "output": {
+    "task": "你准备参加一次社区义务劳动。用 kerja bakti、melewati、menggunakan 中至少2项，写3句自然消息：说明你要做什么、准备怎样分工，再约定结束后休息。不要照抄搬箱子的故事。",
+    "reference_answer": "Besok kita melewati pintu belakang untuk mengambil alat kerja bakti. Aku menggunakan sapu untuk membersihkan daun, kamu bawa kantong sampah. Setelah selesai, kita menikmati minuman bersama.",
+    "reference_cn": "明天我们走后门去取义务劳动的工具。我用扫帚扫落叶，你带垃圾袋。结束后，我们一起喝点东西休息。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出奉献／集体义务劳动、在旁边、经常、品牌、经过、跳、腰、肩、使用、享受；答不出才回看。用 lompat、pinggang、pundak 各说一个自己的短句。",
+    "同词根辨析：penyebab 是造成问题的原因这个名词，sebab 可作因为或原因；说一句 mencari penyebab，再用 sebab 解释。区分 menggunakan（用工具或方式）与 menikmati（享受），再把 menikmati kopi 改成自己的生活表达。",
+    "真实弱词应用：用 hiburan 说一种干活后的消遣，用 belum mahir 说明自己还不熟练的技能，再提出一个具体请求；最后用 ancaman 说明一处障碍可能带来的风险，不夸大、不直接指责别人。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "melewati",
+      "menggunakan",
+      "menikmati"
+    ],
+    "patterns": [
+      {
+        "pattern": "… belum mahir menggunakan …, sebab …",
+        "cn": "……还不熟练使用……，因为……。",
+        "example": "Pak Arman belum mahir menggunakan alat baru, sebab ia baru pertama kali mencobanya.",
+        "example_cn": "阿尔曼先生还不熟练使用新工具，因为他是第一次尝试。"
+      },
+      {
+        "pattern": "Setelah selesai, kita menikmati … bersama.",
+        "cn": "完成后，我们一起享受……。",
+        "example": "Setelah selesai, kita menikmati minuman bersama.",
+        "example_cn": "结束后，我们一起喝点东西休息。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "奉献；服务；尽心履责，常见于 kerja bakti",
+        "id": "bakti"
+      },
+      {
+        "cn": "在……旁边；此外（另一个用法）",
+        "id": "di samping"
+      },
+      {
+        "cn": "经常；频繁地",
+        "id": "sering"
+      },
+      {
+        "cn": "品牌；牌子",
+        "id": "merek"
+      },
+      {
+        "cn": "经过；穿过；越过某处",
+        "id": "melewati"
+      },
+      {
+        "cn": "跳；跳跃",
+        "id": "lompat"
+      },
+      {
+        "cn": "腰；腰部",
+        "id": "pinggang"
+      },
+      {
+        "cn": "肩膀；肩部",
+        "id": "pundak"
+      },
+      {
+        "cn": "使用；利用工具或方式",
+        "id": "menggunakan"
+      },
+      {
+        "cn": "享受；品味",
+        "id": "menikmati"
+      }
+    ],
+    "frames": [
+      "… belum mahir menggunakan …, sebab …",
+      "Setelah selesai, kita menikmati … bersama."
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "penyebab",
+            "cn": "造成结果的因素；原因名词"
+          },
+          {
+            "id": "sebab",
+            "cn": "因为；原因"
+          }
+        ],
+        "note": "penyebab 是名词；sebab 可以连接原因，也可以作原因名词。"
+      },
+      {
+        "items": [
+          {
+            "id": "menggunakan",
+            "cn": "使用"
+          },
+          {
+            "id": "menikmati",
+            "cn": "享受"
+          }
+        ],
+        "note": "前者关注用途，后者关注愉快的体验；不要把享受咖啡当成把咖啡用作工具。"
+      },
+      {
+        "items": [
+          {
+            "id": "pinggang",
+            "cn": "腰部"
+          },
+          {
+            "id": "pundak",
+            "cn": "肩膀"
+          }
+        ],
+        "note": "用包的位置辨认身体部位：腰间小包与肩上的包。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "menggunakan",
+        "usage": "说明你选择的工具，并承认不熟练的部分。",
+        "examples": [
+          {
+            "id": "Pak Arman belum mahir menggunakan alat baru, sebab ia baru pertama kali mencobanya.",
+            "cn": "阿尔曼先生还不熟练使用新工具，因为他是第一次尝试。"
+          }
+        ]
+      },
+      {
+        "word": "menikmati",
+        "usage": "用结束后的休息安排练主动表达。",
+        "examples": [
+          {
+            "id": "Setelah selesai, kita menikmati minuman bersama.",
+            "cn": "结束后，我们一起喝点东西休息。"
+          }
+        ]
+      }
+    ]
+  }
+}
