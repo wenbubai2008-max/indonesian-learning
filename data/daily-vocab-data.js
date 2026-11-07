@@ -13009,17 +13009,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-21 08:00",
-    "last_seen": "2026-09-21 08:00",
+    "last_seen": "2026-11-07 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-21"
+      "2026-09-21",
+      "2026-11-07"
     ],
     "lesson_occurrences": [
-      "2026-09-21 08:00"
+      "2026-09-21 08:00",
+      "2026-11-07 08:00"
     ]
   },
   {
@@ -16074,9 +16076,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-29 18:00",
-    "last_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-07 08:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -16085,13 +16087,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-29",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-07"
     ],
     "lesson_occurrences": [
       "2026-09-29 18:00",
       "2026-10-30 18:00",
       "2026-11-03 08:00",
-      "2026-11-05 08:00"
+      "2026-11-05 08:00",
+      "2026-11-07 08:00"
     ]
   },
   {
@@ -23344,9 +23348,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-10-20 08:00",
-    "last_seen": "2026-11-05 08:00",
+    "last_seen": "2026-11-07 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -23355,13 +23359,15 @@ window.DAILY_VOCAB_DB = [
       "2026-10-20",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-07"
     ],
     "lesson_occurrences": [
       "2026-10-20 08:00",
       "2026-10-30 18:00",
       "2026-11-03 08:00",
-      "2026-11-05 08:00"
+      "2026-11-05 08:00",
+      "2026-11-07 08:00"
     ]
   },
   {
@@ -29521,19 +29527,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "那部题为《忠诚的朋友》的动画片成了家庭周末的消遣。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-06 18:00",
-    "last_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-07 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-07"
     ],
     "lesson_occurrences": [
-      "2026-11-06 18:00"
+      "2026-11-06 18:00",
+      "2026-11-07 08:00"
     ]
   },
   {
@@ -29571,19 +29581,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "那位擅长画画的人为儿童书画了一个活泼灵巧的骆驼角色。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-06 18:00",
-    "last_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-07 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-07"
     ],
     "lesson_occurrences": [
-      "2026-11-06 18:00"
+      "2026-11-06 18:00",
+      "2026-11-07 08:00"
     ]
   },
   {
@@ -29634,6 +29648,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-06 18:00"
+    ]
+  },
+  {
+    "word": "bakti",
+    "cn": "奉献；服务；尽心履责，常见于 kerja bakti",
+    "en": "devotion; service",
+    "root": "bakti",
+    "root_cn": "奉献；尽心服务",
+    "example": "Kerja bakti ini merupakan upaya warga untuk menjaga lingkungan, bukan sekadar acara foto bersama.",
+    "example_cn": "这次集体义务劳动是居民维护环境的努力，不只是一起拍照的活动。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 08:00"
+    ]
+  },
+  {
+    "word": "di samping",
+    "cn": "在……旁边；此外（另一个用法）",
+    "en": "beside; in addition to",
+    "root": "samping",
+    "root_cn": "侧面；旁边",
+    "example": "Kotak itu ada di samping pintu. Isinya tidak muat di lemari kecil, jadi kami akan memindahkannya.",
+    "example_cn": "箱子在门旁。里面的东西装不进小柜子，所以我们准备把它搬走。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 08:00"
+    ]
+  },
+  {
+    "word": "sering",
+    "cn": "经常；频繁地",
+    "en": "often",
+    "root": "sering",
+    "root_cn": "经常",
+    "example": "Kucing itu sering berjemur di halaman setelah pagi mulai hangat.",
+    "example_cn": "早晨暖和起来后，那只猫经常在院子里晒太阳。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 08:00"
+    ]
+  },
+  {
+    "word": "merek",
+    "cn": "品牌；牌子",
+    "en": "brand",
+    "root": "merek",
+    "root_cn": "品牌",
+    "example": "Saya menyimpan foto sepatu itu dan mencatat merek serta ukurannya sebelum pergi ke toko.",
+    "example_cn": "去店里之前，我保存了那双鞋的照片，并记下品牌和尺码。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 08:00"
+    ]
+  },
+  {
+    "word": "melewati",
+    "cn": "经过；穿过；越过某处",
+    "en": "pass; go through",
+    "root": "lewat",
+    "root_cn": "经过",
+    "example": "Mobil harus mundur sedikit sebelum melewati pintu yang sempit agar tidak menabrak tembok.",
+    "example_cn": "车要先倒退一点，再通过狭窄入口，以免撞墙。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 08:00"
+    ]
+  },
+  {
+    "word": "lompat",
+    "cn": "跳；跳跃",
+    "en": "jump",
+    "root": "lompat",
+    "root_cn": "跳",
+    "example": "Jangan lompat ke dekat meja itu. Gelasnya bisa jatuh kalau kamu menabrak mejanya.",
+    "example_cn": "别跳到那张桌子旁边；如果你撞到桌子，杯子可能掉下来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 08:00"
+    ]
+  },
+  {
+    "word": "pinggang",
+    "cn": "腰；腰部",
+    "en": "waist; lower back area",
+    "root": "pinggang",
+    "root_cn": "腰部",
+    "example": "Tas kecil itu dipasang di pinggang. Isinya hanya ponsel dan kartu yang mencatat golongan darah pemiliknya.",
+    "example_cn": "那个小包固定在腰部，里面只有手机和一张记着主人血型的卡。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 08:00"
+    ]
+  },
+  {
+    "word": "pundak",
+    "cn": "肩膀；肩部",
+    "en": "shoulder",
+    "root": "pundak",
+    "root_cn": "肩膀",
+    "example": "Tali tas di pundaknya terlalu pendek. Ia memisahkan barang berat dari tas itu sebelum berjalan lagi.",
+    "example_cn": "她肩上的包带太短；再次出发前，她把重物从那个包里分出来。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 08:00"
+    ]
+  },
+  {
+    "word": "menggunakan",
+    "cn": "使用；利用工具或方式",
+    "en": "use",
+    "root": "guna",
+    "root_cn": "用途；用处",
+    "example": "Kami menggunakan judul yang singkat sebelum mengunggah foto kerja bakti ke grup warga.",
+    "example_cn": "把义务劳动的照片发到居民群之前，我们用了一个简短的标题。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 08:00"
+    ]
+  },
+  {
+    "word": "menikmati",
+    "cn": "享受；品味",
+    "en": "enjoy; savor",
+    "root": "nikmat",
+    "root_cn": "愉快；美味；享受的感觉",
+    "example": "Setelah bekerja, mereka menikmati kopi yang nikmat dan membicarakan rencana minggu berikutnya.",
+    "example_cn": "干完活后，他们品着好喝的咖啡，聊下一周的安排。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 08:00"
     ]
   }
 ];

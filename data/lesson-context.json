@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-07",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 78
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-06T23:40:44.150Z",
-    "lesson_watermark": "2026-11-06 18:00",
-    "index_updated": "2026-11-06",
-    "runtime_hash": "e76ce2b4c178ef8b015cc29eaf97afe77bcf9c8d262382fd9882d329e0cdabbe",
-    "index_hash": "696f3a55062458dee565e1963cb0b5dda4541d7bc6092748dd913105acceecac",
+    "runtime_generated_at": "2026-11-07T00:30:01.442Z",
+    "lesson_watermark": "2026-11-07 08:00",
+    "index_updated": "2026-11-07",
+    "runtime_hash": "b60184bf1c565e717419d25607e5035da6cfd0e7b01a246ce6424b503dd12487",
+    "index_hash": "e4a0051161c84b1843359d1802655a17a700ade5979891a7d9c36777fa41dce7",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -48,52 +48,15 @@
     ]
   },
   "candidates": {
-    "new_dont": [
-      [
-        "bakti",
-        "奉献精神"
-      ]
-    ],
+    "new_dont": [],
     "new_fuzzy": [
       [
         "samping",
         "旁边"
       ],
       [
-        "di samping",
-        "在旁边"
-      ],
-      [
-        "sering",
-        "经常"
-      ],
-      [
-        "merek",
-        "品牌"
-      ],
-      [
-        "melewati",
-        "经过/穿过"
-      ],
-      [
-        "lompat",
-        "跳"
-      ],
-      [
-        "pinggang",
-        "腰"
-      ],
-      [
-        "pundak",
-        "肩膀"
-      ],
-      [
         "bahu",
         "肩"
-      ],
-      [
-        "menggunakan",
-        "使用"
       ],
       [
         "mengasyikan",
@@ -102,10 +65,6 @@
       [
         "menegangkan",
         "令人紧张"
-      ],
-      [
-        "menikmati",
-        "享受"
       ],
       [
         "digunakan",
@@ -694,6 +653,18 @@
       [
         "meronta",
         "挣扎"
+      ],
+      [
+        "cerdik",
+        "机灵；狡黠"
+      ],
+      [
+        "usaha mikro",
+        "微型企业"
+      ],
+      [
+        "penggebuk",
+        "敲击者；鼓手"
       ]
     ],
     "review": [
@@ -1716,16 +1687,6 @@
         "天空",
         "langit",
         "天空"
-      ],
-      [
-        "ancaman",
-        2,
-        0,
-        "",
-        "2026-10-15T08:20:16.720Z",
-        "威胁",
-        "ancam",
-        "威胁"
       ],
       [
         "pemimpin",
@@ -2896,6 +2857,116 @@
         "乱七八糟；一团乱；很凌乱",
         "berantak",
         "乱；散乱"
+      ],
+      [
+        "berat",
+        2,
+        0,
+        "",
+        "2026-10-19T13:14:51.068Z",
+        "重的；沉重的；吃力的",
+        "berat",
+        "重"
+      ],
+      [
+        "bakti",
+        1,
+        0,
+        "",
+        "",
+        "奉献；服务；尽心履责，常见于 kerja bakti",
+        "bakti",
+        "奉献；尽心服务"
+      ],
+      [
+        "di samping",
+        3,
+        0,
+        "",
+        "",
+        "在……旁边；此外（另一个用法）",
+        "samping",
+        "侧面；旁边"
+      ],
+      [
+        "sering",
+        3,
+        0,
+        "",
+        "2026-09-12T16:53:06.764Z",
+        "经常；频繁地",
+        "sering",
+        "经常"
+      ],
+      [
+        "merek",
+        3,
+        0,
+        "",
+        "",
+        "品牌；牌子",
+        "merek",
+        "品牌"
+      ],
+      [
+        "melewati",
+        3,
+        0,
+        "",
+        "",
+        "经过；穿过；越过某处",
+        "lewat",
+        "经过"
+      ],
+      [
+        "lompat",
+        3,
+        0,
+        "",
+        "",
+        "跳；跳跃",
+        "lompat",
+        "跳"
+      ],
+      [
+        "pinggang",
+        3,
+        0,
+        "",
+        "",
+        "腰；腰部",
+        "pinggang",
+        "腰部"
+      ],
+      [
+        "pundak",
+        3,
+        0,
+        "",
+        "",
+        "肩膀；肩部",
+        "pundak",
+        "肩膀"
+      ],
+      [
+        "menggunakan",
+        3,
+        0,
+        "",
+        "",
+        "使用；利用工具或方式",
+        "guna",
+        "用途；用处"
+      ],
+      [
+        "menikmati",
+        3,
+        0,
+        "",
+        "",
+        "享受；品味",
+        "nikmat",
+        "愉快；美味；享受的感觉"
       ]
     ],
     "focus": [
@@ -3436,6 +3507,29 @@
         "animasi",
         "tepuk tangan"
       ]
+    },
+    {
+      "date": "2026-11-07",
+      "session": "am",
+      "review_core": [
+        "penyebab",
+        "sebab",
+        "hiburan",
+        "mahir",
+        "ancaman"
+      ],
+      "new_words": [
+        "bakti",
+        "di samping",
+        "sering",
+        "merek",
+        "melewati",
+        "lompat",
+        "pinggang",
+        "pundak",
+        "menggunakan",
+        "menikmati"
+      ]
     }
   ],
   "previous_pm": {
@@ -3455,7 +3549,88 @@
       "licin"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-07",
+    "vocab": [
+      [
+        "bakti",
+        "奉献；服务；尽心履责，常见于 kerja bakti",
+        "devotion; service",
+        "bakti",
+        "奉献；尽心服务"
+      ],
+      [
+        "di samping",
+        "在……旁边；此外（另一个用法）",
+        "beside; in addition to",
+        "samping",
+        "侧面；旁边"
+      ],
+      [
+        "sering",
+        "经常；频繁地",
+        "often",
+        "sering",
+        "经常"
+      ],
+      [
+        "merek",
+        "品牌；牌子",
+        "brand",
+        "merek",
+        "品牌"
+      ],
+      [
+        "melewati",
+        "经过；穿过；越过某处",
+        "pass; go through",
+        "lewat",
+        "经过"
+      ],
+      [
+        "lompat",
+        "跳；跳跃",
+        "jump",
+        "lompat",
+        "跳"
+      ],
+      [
+        "pinggang",
+        "腰；腰部",
+        "waist; lower back area",
+        "pinggang",
+        "腰部"
+      ],
+      [
+        "pundak",
+        "肩膀；肩部",
+        "shoulder",
+        "pundak",
+        "肩膀"
+      ],
+      [
+        "menggunakan",
+        "使用；利用工具或方式",
+        "use",
+        "guna",
+        "用途；用处"
+      ],
+      [
+        "menikmati",
+        "享受；品味",
+        "enjoy; savor",
+        "nikmat",
+        "愉快；美味；享受的感觉"
+      ]
+    ],
+    "review_vocab": [
+      "penyebab",
+      "sebab",
+      "hiburan",
+      "mahir",
+      "ancaman"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
