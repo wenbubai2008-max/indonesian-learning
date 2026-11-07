@@ -1,0 +1,399 @@
+{
+  "date": "2026-11-07",
+  "session": "pm",
+  "time": "18:00",
+  "day": 78,
+  "title": "18:00 晚课｜Tanya Dulu Sebelum Melamar · 应聘之前，先问清工作要求",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "lowongan kerja",
+    "profesi",
+    "syarat",
+    "identitas",
+    "mandiri"
+  ],
+  "vocab": [
+    {
+      "word": "lowongan kerja",
+      "display": "lowongan kerja",
+      "audio_text": "lowongan kerja",
+      "cn": "职位空缺；招聘岗位",
+      "en": "job vacancy",
+      "root": "lowong / kerja",
+      "root_cn": "空缺／工作",
+      "formation": "lowong + -an → lowongan，指空缺；与 kerja 组成招聘中的常用词组。搭配：mencari lowongan kerja、ada lowongan kerja、informasi lowongan kerja。",
+      "example": "Lowongan kerja ini tidak meminta gelar tertentu, tetapi pelamar perlu menunjukkan contoh hasil kerjanya.",
+      "example_cn": "这个招聘岗位不要求特定学位，但应聘者需要展示作品示例。",
+      "synonym_note": "lowongan kerja 是可应聘的空缺；pekerjaan 是工作本身，未必正在招人。口语说法：Ada lowongan nggak?（有空缺岗位吗？）",
+      "usage_note": "先说明想找什么岗位，再问工作要求；看到招聘信息不等于已获得工作。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "profesi",
+      "display": "profesi",
+      "audio_text": "profesi",
+      "cn": "职业；通常指需要一定知识或技能的工作",
+      "en": "profession; occupation",
+      "root": "profesi",
+      "root_cn": "职业",
+      "formation": "外来名词，不拆成印尼语词缀。搭配：memilih profesi、berganti profesi、profesi guru。",
+      "example": "Ayahnya bekerja sebagai tentara, tetapi ia memilih profesi lain. Pilihan profesi tidak harus tetap sama selamanya.",
+      "example_cn": "他父亲是军人，但他选择了另一种职业。职业选择不一定要一辈子不变。",
+      "synonym_note": "profesi 侧重职业类别，常涉及技能；pekerjaan 范围更广，可说具体工作或任务。两者在谈职业时可能重叠，不把 profesi 限定为必须持证的职业。",
+      "usage_note": "问职业可说 Apa profesi Anda?；朋友间常说 Kamu kerja apa?。后者更日常。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "syarat",
+      "display": "syarat",
+      "audio_text": "syarat",
+      "cn": "条件；要求",
+      "en": "requirement; condition",
+      "root": "syarat",
+      "root_cn": "条件；要求",
+      "formation": "基本名词。搭配：memenuhi syarat、syarat melamar、syarat utama。派生 persyaratan 表示所需条件或要求。",
+      "example": "Salah satu syarat pekerjaan ini adalah mampu mengukur ruangan dengan tepat sebelum memasang perabot.",
+      "example_cn": "这份工作的条件之一，是安装家具前能够准确测量房间。",
+      "synonym_note": "syarat 是必须达到或满足的条件；saran 是建议，不一定必须照做。口语说法：Syaratnya apa aja?（都有什么要求？）",
+      "usage_note": "先问清某项是必须满足的条件，还是可以后续学习的技能；不要自行假定有兴趣就满足全部要求。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "identitas",
+      "display": "identitas",
+      "audio_text": "identitas",
+      "cn": "身份；身份信息",
+      "en": "identity; identifying information",
+      "root": "identitas",
+      "root_cn": "身份",
+      "formation": "外来名词，不拆印尼语前后缀。搭配：kartu identitas、data identitas、memeriksa identitas。",
+      "example": "Petugas memeriksa nama dan tanggal lahir pada kartu identitas. Simpan kartunya baik-baik agar tidak kehilangan dokumen itu.",
+      "example_cn": "工作人员核对身份证件上的姓名和出生日期。请妥善收好卡片，以免丢失证件。",
+      "synonym_note": "identitas 是身份或身份信息；kartu identitas 才明确指身份证件，不能把 identitas 的每次出现都译成一张卡。口语说法：Bawa kartu identitas, ya.（带上身份证件哦。）",
+      "usage_note": "谈提交资料时说清是哪些身份信息或哪种证件，不把任何个人资料都笼统当成 identitas。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "mandiri",
+      "display": "mandiri",
+      "audio_text": "mandiri",
+      "cn": "独立的；能够自主处理事情的",
+      "en": "independent; self-reliant",
+      "root": "mandiri",
+      "root_cn": "独立；自主",
+      "formation": "基本形容词。搭配：bekerja secara mandiri、belajar mandiri、hidup mandiri。名词 kemandirian 表示独立能力。",
+      "example": "Ia bisa bekerja secara mandiri dan menerapkan langkah yang sudah dipelajari. Kalau ada masalah baru, ia tetap berdiskusi dengan rekan kerja.",
+      "example_cn": "他能独立工作，运用已经学过的步骤。遇到新问题时，他仍会和同事讨论。",
+      "synonym_note": "mandiri 说能够自主完成；sendiri 说一个人或亲自。能独立工作，不表示必须始终一个人做，也不表示不能求助。",
+      "usage_note": "用具体任务说明独立能力，不把“什么都得一个人包办”当成 mandiri 的定义。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "nangkep",
+      "display": "nangkep",
+      "audio_text": "nangkep",
+      "cn": "听懂；抓住意思（口语）；也可指抓住",
+      "en": "catch; grasp the meaning (colloquial)",
+      "root": "tangkap",
+      "root_cn": "抓住；捕捉",
+      "formation": "口语形式 nangkep 对应标准语 menangkap；本课练理解意思。搭配：nangkep maksudnya、belum nangkep、nangkep penjelasannya。",
+      "example": "Aku belum nangkep maksudnya. Daripada sok tahu, aku mending minta contoh dulu.",
+      "example_cn": "我还没听懂他的意思。与其装懂，我宁可先请对方举个例子。（mending = lebih baik）",
+      "synonym_note": "nangkep maksudnya 强调理解；dengar 只说听到，听见声音不保证听懂。口语说法：Aku belum nangkep.；正式说明可用 Saya belum memahami maksudnya.。",
+      "usage_note": "久未主动复习的词，今晚通过请求举例来练。不要用来指“网络信号差”，那是另一个表达问题。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nggak kepegang",
+      "display": "nggak kepegang",
+      "audio_text": "nggak kepegang",
+      "cn": "顾不过来；无暇处理（口语）",
+      "en": "cannot keep up with; cannot attend to",
+      "root": "pegang",
+      "root_cn": "拿；握；掌握",
+      "formation": "nggak 是 tidak 的口语形式；kepegang 在这里表示能被顾及、能处理。搭配：kerjaan nggak kepegang、ada yang nggak kepegang、pesan pelanggan nggak kepegang。",
+      "example": "Pesanan mendadak meledak, jadi beberapa pesan pelanggan nggak kepegang. Aku keteteran dan perlu bantuan.",
+      "example_cn": "订单突然暴增，所以有些客户消息顾不过来。我忙得应付不过来，需要帮忙。",
+      "synonym_note": "nggak kepegang 强调某些事顾不到；nggak paham 是不理解。与 nangkep 分清：听不懂不一定是工作太多。正式说明可用 belum sempat ditangani。",
+      "usage_note": "说清哪项事务顾不过来及原因，再请求分工。它也有字面“抓不住”的用法，本课不把两种意思混为一谈。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "minat",
+      "display": "minat",
+      "audio_text": "minat",
+      "cn": "兴趣；对某事的意愿或关注",
+      "en": "interest",
+      "root": "minat",
+      "root_cn": "兴趣；意愿",
+      "formation": "基本名词。搭配：punya minat pada fotografi、minat belajar、sesuai minat。派生 berminat 表示有兴趣。",
+      "example": "Aku punya minat pada fotografi. Aku kepo soal teknik mengambil foto, bukan soal kehidupan pribadi orang yang difoto.",
+      "example_cn": "我对摄影有兴趣。我好奇的是拍照技术，不是被拍摄者的私生活。（kepo = sangat ingin tahu，口语）",
+      "synonym_note": "minat 是兴趣；bakat 是天赋，pengalaman 是经验。有兴趣不代表已有经验或一定有天赋。口语说法：Aku minat, tapi mau tanya dulu.（我有兴趣，但想先问问。）",
+      "usage_note": "针对最近新错，练“说明兴趣＋承认经验情况＋提出具体问题”，不只背中文。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "pertimbangan",
+      "display": "pertimbangan",
+      "audio_text": "pertimbangan",
+      "cn": "考量；考虑因素",
+      "en": "consideration; factor in a decision",
+      "root": "timbang",
+      "root_cn": "称量；权衡",
+      "formation": "timbang → pertimbangan，表示权衡时所考虑的事。搭配：menjadi pertimbangan、bahan pertimbangan、dengan pertimbangan tertentu。",
+      "example": "Jarak menjadi pertimbangan karena mobilnya sering mogok. Ia ingin tahu apakah tempat kerja mudah dijangkau dengan angkutan umum.",
+      "example_cn": "距离是一个考量因素，因为他的车经常抛锚。他想知道工作地点是否方便乘公共交通到达。",
+      "synonym_note": "pertimbangan 是做决定时的考量；keputusan 是最终决定。考虑距离不等于已经拒绝工作。口语说法：Aku pikir-pikir dulu.（我先考虑一下。）",
+      "usage_note": "针对最近新错，练“什么成为考量＋为什么”，并与 minat 区分：感兴趣之后仍需权衡现实条件。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bidang",
+      "display": "bidang",
+      "audio_text": "bidang",
+      "cn": "领域；方面；范围",
+      "en": "field; area",
+      "root": "bidang",
+      "root_cn": "领域；范围",
+      "formation": "基本名词。搭配：bidang fotografi、bidang pendidikan、bekerja di bidang tertentu。并不只用于工作，也可指研究等领域。",
+      "example": "Pengalamannya luas di bidang pendidikan. Ia pernah mengajar anak-anak dan membantu orang dewasa belajar membaca.",
+      "example_cn": "他在教育领域经验广泛，教过孩子，也帮助过成年人学习阅读。",
+      "synonym_note": "bidang 是领域，profesi 是职业；同一领域里可以有不同职业。例如 bidang pendidikan 里有 guru，也有其他工作。",
+      "usage_note": "久未核心复习，今晚用来描述工作所属领域，不把一个领域名称直接当成一个人的具体职位。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "di samping",
+      "display": "di samping",
+      "audio_text": "di samping",
+      "cn": "在……旁边；也可表示此外",
+      "en": "beside; in addition to",
+      "root": "samping",
+      "root_cn": "侧面；旁边",
+      "formation": "di + samping，分开写。搭配：di samping toko、di samping pintu、berdiri di samping saya。今天08:00新学。",
+      "example": "Pengumuman itu dipasang di samping pintu studio. Tulisannya kecil, jadi dari jauh nggak kebaca.",
+      "example_cn": "通知贴在照相馆门旁。字很小，所以远处看不清。（nggak kebaca = tidak terbaca）",
+      "synonym_note": "di samping 说相邻的位置；melewati 说经过的动作。口语说法：Studionya di samping sini.（照相馆就在这边旁边。）",
+      "usage_note": "今天08:00新学。今晚换到应聘问路，先说位置，再说怎么走，不沿用义务劳动故事。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "melewati",
+      "display": "melewati",
+      "audio_text": "melewati",
+      "cn": "经过；穿过；越过某处",
+      "en": "pass; go through",
+      "root": "lewat",
+      "root_cn": "经过",
+      "formation": "meN- + lewat + -i → melewati，l 保留，前缀呈 me-。搭配：melewati toko、melewati gang、melewati pintu。今天08:00新学。",
+      "example": "Untuk sampai ke studio, kamu perlu melewati toko buku lalu belok kiri. Jangan berhenti di pintu toko buku itu.",
+      "example_cn": "要到照相馆，你需要先经过书店，再左转。不要停在书店门口。",
+      "synonym_note": "melewati 是经过某处；menuju 是朝某处去，不保证已经过任何地点。口语说法：lewat，如 Lewat toko buku dulu, ya.。",
+      "usage_note": "今天08:00新学。今晚练求职途中问路；不要把经过书店误说成去书店应聘。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sabtu sore, Rina melihat lowongan kerja di sebuah studio foto. Ia punya minat pada bidang fotografi, tetapi belum pernah bekerja di sana. Sebelum melamar, ia membaca syarat dalam pengumuman. Studio itu meminta contoh foto dan data identitas. Rina tidak langsung mengirim semuanya. Ia datang untuk bertanya tentang tugas, jam kerja, dan cara mengirim berkas. Studio berada di samping toko buku, jadi ia perlu melewati toko itu untuk sampai ke pintunya. Setelah mendapat penjelasan, Rina merasa lebih siap. Ia ingin belajar bekerja secara mandiri, tetapi jarak dari rumah tetap menjadi pertimbangan sebelum memilih profesi baru.",
+    "cn": "星期六下午，莉娜看到一家照相馆在招聘。她对摄影领域有兴趣，但从未在那里工作过。应聘前，她阅读通知里的要求。照相馆要求照片作品示例和身份信息。莉娜没有马上把所有东西都发过去，而是到店询问职责、工作时间和提交材料的方式。照相馆在书店旁边，所以她需要经过那家书店才能到门口。得到解释后，莉娜觉得更有准备了。她想学习独立工作，但选择新职业之前，离家的距离仍是一个考量因素。"
+  },
+  "dialogue": {
+    "title": "出发前，Rina和朋友Dimas聊应聘要问什么",
+    "lines": [
+      {
+        "speaker": "Rina",
+        "id": "Aku nemu lowongan kerja di studio foto. Aku punya minat, tapi belum nangkep tugasnya apa aja.",
+        "cn": "我发现一家照相馆在招聘。我有兴趣，但还没弄明白都要做什么。（nemu = menemukan；nangkep = menangkap／memahami；aja = saja）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Jangan keburu kirim berkas cuma karena takut keduluan. Tanya dulu syaratnya.",
+        "cn": "别只是怕被别人抢先，就急着交材料。先问问要求。（keburu = terlanjur／tergesa sebelum waktunya；keduluan = didahului orang lain；cuma = hanya）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Iya. Aku mau tanya soal data identitas juga. Mereka perlu data apa dan dikirim ke siapa?",
+        "cn": "对。我也想问身份信息的事：他们要哪些资料，发给谁？"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Tanya tugas mana yang perlu kamu kerjakan mandiri dan kapan kamu bisa minta bantuan tim.",
+        "cn": "问问哪些任务需要你独立完成，以及什么时候可以请团队帮忙。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Kalau semua tugas harus aku urus sendiri, takut ada yang nggak kepegang.",
+        "cn": "如果所有任务都要我一个人管，我担心有些事顾不过来。（nggak = tidak；nggak kepegang 此处指来不及处理）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Iya, mandiri bukan berarti semua harus kamu tangani sendiri. Pembagian tugasnya perlu jelas.",
+        "cn": "是啊，能独立工作不表示所有事情都得你一个人处理。分工要清楚。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Studionya di samping toko buku, kan? Aku perlu lewat toko itu dulu?",
+        "cn": "照相馆在书店旁边，对吧？我要先经过那家书店？（lewat = melewati）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Iya, terus belok kiri. Kalau penjelasannya masih belum jelas, minta contoh tugas sehari-harinya aja.",
+        "cn": "对，然后左转。如果说明还是不清楚，就请对方举个日常任务的例子。（terus = lalu）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：你看到一家小店招聘。用 lowongan kerja、syarat、identitas 给负责人写2–3句自然消息，询问岗位要求和需要哪些身份信息，不直接照抄阅读。",
+      "reference_answer": "Saya tertarik dengan lowongan kerja di toko ini. Apa saja syarat untuk melamar? Data identitas apa yang perlu saya siapkan?",
+      "reference_cn": "我对这家店的招聘岗位感兴趣。应聘有哪些条件？我需要准备哪些身份信息？"
+    },
+    {
+      "task": "新错词应用：用 minat、bidang、pertimbangan 写2–3句，说明自己想从事的领域，以及一个会影响决定的现实因素，并说清原因。",
+      "reference_answer": "Saya punya minat bekerja di bidang fotografi. Jarak menjadi pertimbangan karena saya bergantung pada angkutan umum. Saya ingin mencoba rutenya sebelum memutuskan.",
+      "reference_cn": "我有兴趣在摄影领域工作。距离是考量因素，因为我依靠公共交通。我想先试走路线，再做决定。"
+    },
+    {
+      "task": "两种卡住分清：用 nangkep、nggak kepegang、mandiri 回复朋友。你已听懂任务，但工作太多有些顾不上；说明自己能独立做哪项事，并提出分工请求，写3句口语。",
+      "reference_answer": "Aku udah nangkep tugasnya, tapi pesan pelanggan nggak kepegang karena aku harus ngeduluin pesanan yang mau diambil sore ini. Aku bisa mengedit foto secara mandiri. Kamu bisa bantu balas pesannya?",
+      "reference_cn": "我已经明白任务，但客户消息顾不过来，因为我得先处理今天下午要取的订单。我能独立修照片。你能帮忙回复消息吗？（udah = sudah；ngeduluin = mendahulukan）"
+    },
+    {
+      "task": "早课迁移：朋友想了解一家照相馆。用今天08:00新学的 di samping、melewati，再用 profesi，写2–3句，说明地点、路线和去询问职业情况的目的。",
+      "reference_answer": "Studio itu ada di samping toko buku. Kamu perlu melewati toko buku lalu belok kiri. Aku mau ke sana untuk bertanya tentang profesi fotografer dan tugas sehari-harinya.",
+      "reference_cn": "照相馆在书店旁边。你需要先经过书店，再左转。我想去那里问问摄影师这个职业和日常职责。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "“Saya tertarik melamar, tetapi belum memenuhi semua ____ yang diminta dalam pengumuman.” 哪项放入句中最自然？",
+        "options": [
+          "saran",
+          "syarat",
+          "keputusan",
+          "kesempatan"
+        ],
+        "answer_index": 1,
+        "answer": "syarat",
+        "explain": "memenuhi syarat 是满足条件的常用搭配；saran 是建议，通常说 mengikuti saran；keputusan 是决定，kesempatan 是机会，均不适合此处“尚未达到招聘要求”的语境。"
+      },
+      {
+        "type": "choice",
+        "prompt": "朋友说：“Aku udah ngerti tugasnya. Tapi pelanggan datang terus, jadi beberapa pesan belum sempat aku balas.” 哪句最贴合她的情况？",
+        "options": [
+          "Aku belum nangkep penjelasannya.",
+          "Aku nggak punya minat pada pekerjaan ini.",
+          "Beberapa pesan nggak kepegang.",
+          "Aku sudah menyelesaikan semua pesannya."
+        ],
+        "answer_index": 2,
+        "answer": "Beberapa pesan nggak kepegang.",
+        "explain": "她已明白任务，只是来不及回复部分消息，因此说 nggak kepegang。belum nangkep 是没理解；没有兴趣或全部做完均不能从情境推出。"
+      },
+      {
+        "type": "choice",
+        "prompt": "招聘方说：“Kamu harus bisa bekerja mandiri.” 哪种理解最恰当？",
+        "options": [
+          "Saya mampu menyelesaikan tugas sendiri, tetapi tetap boleh bertanya saat perlu.",
+          "Saya tidak boleh berbicara dengan rekan kerja.",
+          "Semua tugas di studio otomatis menjadi tugas saya.",
+          "Saya tidak perlu mengikuti cara kerja yang sudah disepakati."
+        ],
+        "answer_index": 0,
+        "answer": "Saya mampu menyelesaikan tugas sendiri, tetapi tetap boleh bertanya saat perlu.",
+        "explain": "mandiri 是自主处理任务的能力，不等于隔绝协作、包办全部工作或可以无视已约定的工作方式。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Nama dan tanggal lahir termasuk data ____.（身份信息）",
+        "answer": "identitas",
+        "explain": "data identitas 指可说明身份的信息；kartu identitas 则明确指身份证件。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Jarak dari rumah menjadi ____ sebelum Rina menerima pekerjaan itu.（考量因素）",
+        "answer": "pertimbangan",
+        "explain": "menjadi pertimbangan 表示成为作决定时需要考虑的因素；keputusan 是决定本身。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我想先问问这个职业。",
+        "tokens": [
+          "Saya",
+          "ingin",
+          "bertanya",
+          "tentang",
+          "profesi",
+          "ini",
+          "dulu."
+        ],
+        "answer": "Saya ingin bertanya tentang profesi ini dulu.",
+        "answer_cn": "我想先问问这个职业。",
+        "explain": "bertanya tentang 引出所询问的话题；dulu 在这里表示先做这一步，尚未作出选择。"
+      }
+    ],
+    "self_check": [
+      "我能在3秒内说出 lowongan kerja、profesi、syarat、identitas、mandiri 的意思吗？",
+      "我分得清 nangkep 的听懂和 nggak kepegang 的顾不过来吗？",
+      "我能区分 minat 是兴趣、bidang 是领域，而不是同一个意思吗？",
+      "看到 pertimbangan，我知道它是决定前的考量，而不是决定本身吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "脱稿向招聘方询问 lowongan kerja 的 syarat 和需要的 identitas；再用 mandiri 说明自己能完成的一项具体任务，最后用 profesi 说清想了解的职业。",
+      "把“没听懂”和“太忙顾不过来”各说成一句朋友间的消息，分别用 nangkep、nggak kepegang；第二句补一个原因及具体求助，不照抄对话。",
+      "回顾今天08:00新学的 di samping、melewati，给朋友讲一次去照相馆的路线；再用 minat、bidang、pertimbangan 说出自己真实感兴趣的工作领域和一个现实考量。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "nangkep",
+      "minat",
+      "pertimbangan"
+    ],
+    "patterns": [
+      {
+        "pattern": "Aku belum nangkep …",
+        "cn": "我还没理解……。",
+        "example": "Aku belum nangkep maksudnya.",
+        "example_cn": "我还没听懂他的意思。"
+      },
+      {
+        "pattern": "… menjadi pertimbangan karena …",
+        "cn": "……是一个考量因素，因为……。",
+        "example": "Jarak menjadi pertimbangan karena mobilnya sering mogok.",
+        "example_cn": "距离是一个考量因素，因为他的车经常抛锚。"
+      }
+    ]
+  }
+}
