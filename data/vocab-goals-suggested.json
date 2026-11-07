@@ -4,16 +4,16 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 969,
+   "use": 979,
    "recognize": 105,
    "unsure": 21,
-   "fast": 136
+   "fast": 137
   },
   "active": {
-   "use": 692,
+   "use": 702,
    "recognize": 89,
    "unsure": 19,
-   "fast": 58
+   "fast": 59
   }
  },
  "words": {
@@ -10086,6 +10086,97 @@
    "status": "active",
    "why": [
     "第二词库 A2 / S"
+   ]
+  },
+  "bakti": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "di samping": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
+   ]
+  },
+  "sering": {
+   "goal": "use",
+   "fast": true,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "日常高频表达（时间）",
+    "第二词库 A1 / S"
+   ]
+  },
+  "merek": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "melewati": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "lompat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "pinggang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "pundak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "menggunakan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "menikmati": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / S"
    ]
   }
  }
