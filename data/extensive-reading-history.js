@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261105-agenda-budaya-jawa-barat","date":"2026-11-05","title":"Akhir Pekan di Jawa Barat: Pilih Musik atau Festival Budaya?","title_cn":"西爪哇周末：听音乐，还是逛文化节？","path":"data/extensive-reading-history/2026-11-05.js"},
 {"id":"er-20261103-iklan-musik-belanja-bijak","date":"2026-11-03","title":"Iklan Musik no na Banyak Ditonton, Belanja Tetap Perlu Rencana","title_cn":"no na 音乐广告吸引大量观看，购物仍需有计划","path":"data/extensive-reading-history/2026-11-03.js"},
 {"id":"er-20261102-stroke-anak-muda-bekasi","date":"2026-11-02","title":"Stroke Bisa Menyerang Anak Muda, Dokter Minta Gejalanya Jangan Diabaikan","title_cn":"中风也会找上年轻人，医生提醒别忽视症状","path":"data/extensive-reading-history/2026-11-02.js"},
 {"id":"er-20261101-mbg-kehadiran-siswa","date":"2026-11-01","title":"Makan Bergizi Gratis Bikin Siswa Lebih Rajin ke Sekolah, Kata Mendikdasmen","title_cn":"教育部长：免费营养餐让学生更愿意上学","path":"data/extensive-reading-history/2026-11-01.js"},
