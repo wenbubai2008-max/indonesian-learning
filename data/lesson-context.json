@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-07T10:41:06.834Z",
+    "runtime_generated_at": "2026-11-07T14:00:45.200Z",
     "lesson_watermark": "2026-11-07 18:00",
     "index_updated": "2026-11-07",
-    "runtime_hash": "cb63dedb9975520a5677a3079ed13192f15b9d712fdc48bee46cda54298c5e21",
+    "runtime_hash": "ceb156366ae7288d4d2cdd3886f5625a05262bc2edf73f30e71fdfa103f1ff11",
     "index_hash": "39b485c6383f40ad38b8bc12d6f8a7f6e360c100ab3908769741f00ab33ef3cf",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
@@ -659,6 +659,16 @@
         "意思；目的"
       ],
       [
+        "nggak kepegang",
+        1,
+        2,
+        "2026-11-07T13:06:53.821Z",
+        "2026-11-07T13:06:53.821Z",
+        "顾不过来；管不过来",
+        "pegang",
+        "拿；握；掌握"
+      ],
+      [
         "pembangunan",
         1,
         2,
@@ -827,16 +837,6 @@
         "强调；明确说明；确认",
         "tegas",
         "明确；坚定"
-      ],
-      [
-        "nggak kepegang",
-        2,
-        1,
-        "2026-09-11T15:09:12.617Z",
-        "2026-10-12T12:44:24.905Z",
-        "顾不过来；管不过来",
-        "pegang",
-        "拿；握；掌握"
       ],
       [
         "lebat",
@@ -2861,6 +2861,15 @@
         ]
       ],
       [
+        "nggak kepegang",
+        118,
+        [
+          "automation_fail",
+          "lesson_wrong",
+          "dont"
+        ]
+      ],
+      [
         "pembangunan",
         118,
         [
@@ -2999,14 +3008,6 @@
       ],
       [
         "menegaskan",
-        80,
-        [
-          "automation_fail",
-          "dont"
-        ]
-      ],
-      [
-        "nggak kepegang",
         80,
         [
           "automation_fail",

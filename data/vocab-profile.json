@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-07T10:41:11.951Z",
-  "source_updated_at": "2026-11-07T07:29:47.881Z",
+  "generated_at": "2026-11-07T14:00:45.373Z",
+  "source_updated_at": "2026-11-07T13:10:09.121Z",
   "taught_total": 1110,
   "confirmed_mastered": 204,
   "needs_reinforcement": 814,
@@ -30,6 +30,19 @@
       "last_wrong": "2026-10-30T11:11:50.668Z",
       "last_review": "2026-11-02T05:54:20.084Z",
       "cn": "意在；旨在；（被）打算用来……"
+    },
+    {
+      "word": "nggak kepegang",
+      "score": 118,
+      "signals": [
+        "automation_fail",
+        "lesson_wrong",
+        "dont"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-11-07T13:06:53.821Z",
+      "last_review": "2026-11-07T13:06:53.821Z",
+      "cn": "顾不过来；管不过来"
     },
     {
       "word": "pembangunan",
@@ -108,18 +121,6 @@
       "last_wrong": "2026-10-15T03:20:48.795Z",
       "last_review": "2026-10-26T07:54:40.387Z",
       "cn": "忽视；不理会"
-    },
-    {
-      "word": "menunjukkan",
-      "score": 86,
-      "signals": [
-        "automation_fail",
-        "dont"
-      ],
-      "wrong_count": 4,
-      "last_wrong": "2026-09-27T13:58:43.322Z",
-      "last_review": "2026-10-09T07:07:34.461Z",
-      "cn": "指出"
     }
   ],
   "definitions": {
