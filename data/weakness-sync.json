@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-07T07:29:47.881Z",
+  "updated_at": "2026-11-07T13:10:09.121Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -687,19 +687,23 @@
     "nggak kepegang": {
       "word": "nggak kepegang",
       "status": "active",
-      "updated_at": "2026-10-24T03:21:28.747Z",
+      "updated_at": "2026-11-07T13:06:53.911Z",
       "display": "nggak kepegang",
-      "cn": "顾不过来；管不过来",
+      "cn": "顾不过来；无暇处理（口语）",
       "root": "pegang",
       "root_cn": "拿；握；掌握",
-      "last_wrong": "2026-09-11T15:09:12.617Z",
-      "last_review": "2026-10-12T12:44:24.905Z",
+      "last_wrong": "2026-11-07T13:06:53.821Z",
+      "last_review": "2026-11-07T13:06:53.821Z",
+      "source": "课程小测",
+      "source_date": "2026-11-07",
+      "session": "18:00",
       "reasons": [
         "automation_fail",
-        "memory_dont"
+        "memory_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
-      "right_streak": 6
+      "wrong_count": 2,
+      "right_streak": 0
     },
     "pajak": {
       "word": "pajak",
@@ -7211,8 +7215,11 @@
     "jarak": {
       "word": "jarak",
       "status": "active",
-      "updated_at": "2026-10-21T01:44:20.162Z",
+      "updated_at": "2026-11-07T12:39:25.300Z",
       "display": "jarak",
+      "cn": "距离；间隔",
+      "root": "jarak",
+      "root_cn": "距离；间隔",
       "last_review": "2026-10-21T01:44:20.096Z",
       "reasons": [
         "memory_dont"
@@ -24968,10 +24975,11 @@
     "identitas": {
       "word": "identitas",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:18.827Z",
+      "updated_at": "2026-11-07T13:09:52.247Z",
       "display": "identitas",
       "cn": "身份信息",
       "root": "identitas",
+      "last_review": "2026-11-07T13:09:52.186Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -24979,7 +24987,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "paspor": {
       "word": "paspor",
@@ -26178,16 +26186,17 @@
     "mandiri": {
       "word": "mandiri",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:22.140Z",
+      "updated_at": "2026-11-07T13:09:55.238Z",
       "display": "mandiri",
       "cn": "独立的",
+      "last_review": "2026-11-07T13:09:55.175Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "penyayang": {
       "word": "penyayang",
@@ -29514,16 +29523,17 @@
     "profesi": {
       "word": "profesi",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:23.411Z",
+      "updated_at": "2026-11-07T13:09:56.220Z",
       "display": "profesi",
       "cn": "职业",
+      "last_review": "2026-11-07T13:09:56.160Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pedagang": {
       "word": "pedagang",
@@ -29633,17 +29643,18 @@
     "lowongan kerja": {
       "word": "lowongan kerja",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:23.615Z",
+      "updated_at": "2026-11-07T13:09:53.464Z",
       "display": "lowongan kerja",
       "cn": "职位空缺；招聘岗位",
       "root": "lowong",
+      "last_review": "2026-11-07T13:09:53.404Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "tanda tangan": {
       "word": "tanda tangan",
@@ -29990,16 +30001,17 @@
     "syarat": {
       "word": "syarat",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:24.456Z",
+      "updated_at": "2026-11-07T13:09:58.530Z",
       "display": "syarat",
       "cn": "条件；要求",
+      "last_review": "2026-11-07T13:09:58.471Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nyinggung": {
       "word": "nyinggung",
