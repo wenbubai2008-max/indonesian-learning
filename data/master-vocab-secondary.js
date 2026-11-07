@@ -297,17 +297,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "kasur",
-    "cn": "床垫/床",
-    "en": "mattress/bed",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "bak mandi",
     "cn": "浴池/浴缸",
     "en": "bath tub / water tub",

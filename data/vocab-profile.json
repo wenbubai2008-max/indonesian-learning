@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generated_at": "2026-11-07T03:45:41.047Z",
-  "source_updated_at": "2026-11-07T03:42:18.408Z",
+  "generated_at": "2026-11-07T09:40:39.980Z",
+  "source_updated_at": "2026-11-07T07:29:47.881Z",
   "taught_total": 1105,
-  "confirmed_mastered": 203,
-  "needs_reinforcement": 810,
+  "confirmed_mastered": 204,
+  "needs_reinforcement": 809,
   "excluded_from_training": 92,
   "unverified": 0,
-  "mastery_percent": 18.4,
+  "mastery_percent": 18.5,
   "primary_master_total": 977,
   "primary_taught_unique": 647,
   "primary_unlearned_total": 330,
@@ -15,7 +15,7 @@
   "primary_eligible_new_total": 0,
   "secondary_eligible_new_total": 154,
   "active_master_pool": "secondary_bipa",
-  "focus_total": 807,
+  "focus_total": 806,
   "focus_words": [
     {
       "word": "dimaksudkan",
@@ -56,19 +56,6 @@
       "last_wrong": "2026-11-03T13:33:47.250Z",
       "last_review": "2026-11-06T13:22:51.261Z",
       "cn": "胃口；口味；喜好"
-    },
-    {
-      "word": "mengenali",
-      "score": 98,
-      "signals": [
-        "quick_wrong",
-        "lesson_wrong",
-        "fuzzy"
-      ],
-      "wrong_count": 3,
-      "last_wrong": "2026-10-27T07:33:35.980Z",
-      "last_review": "2026-10-31T06:41:32.935Z",
-      "cn": "认出；辨认出（凭特征认出来）"
     },
     {
       "word": "berlaku sampai",
@@ -121,6 +108,18 @@
       "last_wrong": "2026-10-15T03:20:48.795Z",
       "last_review": "2026-10-26T07:54:40.387Z",
       "cn": "忽视；不理会"
+    },
+    {
+      "word": "menunjukkan",
+      "score": 86,
+      "signals": [
+        "automation_fail",
+        "dont"
+      ],
+      "wrong_count": 4,
+      "last_wrong": "2026-09-27T13:58:43.322Z",
+      "last_review": "2026-10-09T07:07:34.461Z",
+      "cn": "指出"
     }
   ],
   "definitions": {
