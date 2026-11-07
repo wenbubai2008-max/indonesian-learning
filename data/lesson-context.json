@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-07",
-    "session": "pm",
-    "time": "18:00",
-    "day": 78
+    "date": "2026-11-08",
+    "session": "am",
+    "time": "08:00",
+    "day": 79
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-07T09:40:39.813Z",
-    "lesson_watermark": "2026-11-07 08:00",
+    "runtime_generated_at": "2026-11-07T10:41:06.834Z",
+    "lesson_watermark": "2026-11-07 18:00",
     "index_updated": "2026-11-07",
-    "runtime_hash": "2ad5d9320f1a612764d2d8a5063ff2df6dc75de3db87340f0a1bf32af446c01c",
-    "index_hash": "e4a0051161c84b1843359d1802655a17a700ade5979891a7d9c36777fa41dce7",
+    "runtime_hash": "cb63dedb9975520a5677a3079ed13192f15b9d712fdc48bee46cda54298c5e21",
+    "index_hash": "39b485c6383f40ad38b8bc12d6f8a7f6e360c100ab3908769741f00ab33ef3cf",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -79,20 +79,12 @@
         "标签"
       ],
       [
-        "profesi",
-        "职业"
-      ],
-      [
         "resep",
         "食谱；处方"
       ],
       [
         "iklan",
         "广告"
-      ],
-      [
-        "lowongan kerja",
-        "职位空缺；招聘岗位"
       ],
       [
         "status",
@@ -147,16 +139,8 @@
         "助手；帮佣"
       ],
       [
-        "syarat",
-        "条件；要求"
-      ],
-      [
         "natal",
         "圣诞节"
-      ],
-      [
-        "identitas",
-        "身份信息"
       ],
       [
         "tempat lahir",
@@ -213,10 +197,6 @@
       [
         "bak cuci piring",
         "洗碗池"
-      ],
-      [
-        "mandiri",
-        "独立的"
       ],
       [
         "album foto",
@@ -1709,16 +1689,6 @@
         "白费；没用"
       ],
       [
-        "bidang",
-        3,
-        0,
-        "",
-        "2026-10-15T13:45:40.551Z",
-        "领域、范围",
-        "bidang",
-        "领域；范围"
-      ],
-      [
         "budaya",
         3,
         0,
@@ -2869,104 +2839,14 @@
         "重"
       ],
       [
-        "bakti",
-        1,
+        "demi",
+        2,
         0,
         "",
-        "2026-11-07T03:41:42.922Z",
-        "奉献；服务；尽心履责，常见于 kerja bakti",
-        "bakti",
-        "奉献；尽心服务"
-      ],
-      [
-        "di samping",
-        3,
-        0,
-        "",
-        "2026-11-07T03:41:46.438Z",
-        "在……旁边；此外（另一个用法）",
-        "samping",
-        "侧面；旁边"
-      ],
-      [
-        "sering",
-        3,
-        0,
-        "",
-        "2026-11-07T03:42:07.909Z",
-        "经常；频繁地",
-        "sering",
-        "经常"
-      ],
-      [
-        "merek",
-        3,
-        0,
-        "",
-        "2026-11-07T03:41:59.825Z",
-        "品牌；牌子",
-        "merek",
-        "品牌"
-      ],
-      [
-        "melewati",
-        3,
-        0,
-        "",
-        "2026-11-07T03:41:50.875Z",
-        "经过；穿过；越过某处",
-        "lewat",
-        "经过"
-      ],
-      [
-        "lompat",
-        3,
-        0,
-        "",
-        "2026-11-07T03:41:48.448Z",
-        "跳；跳跃",
-        "lompat",
-        "跳"
-      ],
-      [
-        "pinggang",
-        3,
-        0,
-        "",
-        "2026-11-07T03:42:02.091Z",
-        "腰；腰部",
-        "pinggang",
-        "腰部"
-      ],
-      [
-        "pundak",
-        3,
-        0,
-        "",
-        "2026-11-07T03:42:03.678Z",
-        "肩膀；肩部",
-        "pundak",
-        "肩膀"
-      ],
-      [
-        "menggunakan",
-        3,
-        0,
-        "",
-        "2026-11-07T03:41:54.279Z",
-        "使用；利用工具或方式",
-        "guna",
-        "用途；用处"
-      ],
-      [
-        "menikmati",
-        3,
-        0,
-        "",
-        "2026-11-07T03:41:57.379Z",
-        "享受；品味",
-        "nikmat",
-        "愉快；美味；享受的感觉"
+        "2026-10-21T01:42:19.963Z",
+        "为了（甘愿付出）",
+        "demi",
+        "为了"
       ]
     ],
     "focus": [
@@ -3226,46 +3106,6 @@
     "oral": []
   },
   "history_7d": [
-    {
-      "date": "2026-10-31",
-      "session": "am",
-      "review_core": [
-        "mengunduh",
-        "unduh",
-        "jaringan",
-        "karyawan",
-        "berbagai"
-      ],
-      "new_words": [
-        "pegawai",
-        "kertas",
-        "khususnya",
-        "terbuka",
-        "buruk",
-        "ubah",
-        "kalimat",
-        "arti",
-        "sebut",
-        "saat"
-      ]
-    },
-    {
-      "date": "2026-10-31",
-      "session": "pm",
-      "review_core": [
-        "dimaksudkan",
-        "memanggil",
-        "aliran",
-        "mengalir",
-        "kebijakan"
-      ],
-      "new_words": [
-        "detik",
-        "tampak",
-        "adil",
-        "bijak"
-      ]
-    },
     {
       "date": "2026-11-01",
       "session": "am",
@@ -3529,107 +3369,44 @@
         "menggunakan",
         "menikmati"
       ]
+    },
+    {
+      "date": "2026-11-07",
+      "session": "pm",
+      "review_core": [
+        "nangkep",
+        "nggak kepegang",
+        "minat",
+        "pertimbangan",
+        "bidang"
+      ],
+      "new_words": [
+        "lowongan kerja",
+        "profesi",
+        "syarat",
+        "identitas",
+        "mandiri"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "new_words": [
-      "hiburan",
-      "minat",
-      "mahir",
-      "animasi",
-      "tepuk tangan"
+      "lowongan kerja",
+      "profesi",
+      "syarat",
+      "identitas",
+      "mandiri"
     ],
     "review_core": [
-      "layak",
-      "mengabaikan",
-      "siapin",
-      "siapkan",
-      "licin"
+      "nangkep",
+      "nggak kepegang",
+      "minat",
+      "pertimbangan",
+      "bidang"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-07",
-    "vocab": [
-      [
-        "bakti",
-        "奉献；服务；尽心履责，常见于 kerja bakti",
-        "devotion; service",
-        "bakti",
-        "奉献；尽心服务"
-      ],
-      [
-        "di samping",
-        "在……旁边；此外（另一个用法）",
-        "beside; in addition to",
-        "samping",
-        "侧面；旁边"
-      ],
-      [
-        "sering",
-        "经常；频繁地",
-        "often",
-        "sering",
-        "经常"
-      ],
-      [
-        "merek",
-        "品牌；牌子",
-        "brand",
-        "merek",
-        "品牌"
-      ],
-      [
-        "melewati",
-        "经过；穿过；越过某处",
-        "pass; go through",
-        "lewat",
-        "经过"
-      ],
-      [
-        "lompat",
-        "跳；跳跃",
-        "jump",
-        "lompat",
-        "跳"
-      ],
-      [
-        "pinggang",
-        "腰；腰部",
-        "waist; lower back area",
-        "pinggang",
-        "腰部"
-      ],
-      [
-        "pundak",
-        "肩膀；肩部",
-        "shoulder",
-        "pundak",
-        "肩膀"
-      ],
-      [
-        "menggunakan",
-        "使用；利用工具或方式",
-        "use",
-        "guna",
-        "用途；用处"
-      ],
-      [
-        "menikmati",
-        "享受；品味",
-        "enjoy; savor",
-        "nikmat",
-        "愉快；美味；享受的感觉"
-      ]
-    ],
-    "review_vocab": [
-      "penyebab",
-      "sebab",
-      "hiburan",
-      "mahir",
-      "ancaman"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

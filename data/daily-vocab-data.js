@@ -8904,9 +8904,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-10-08 08:00",
+    "last_seen": "2026-11-07 18:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -8916,15 +8916,17 @@ window.DAILY_VOCAB_DB = [
       "2026-09-10",
       "2026-09-11",
       "2026-09-16",
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-07"
     ],
-    "example": "Kalau semua tugas dikasih ke satu orang, nanti nggak kepegang.",
-    "example_cn": "如果所有任务都给一个人，最后会顾不过来。",
+    "example": "Pesanan mendadak meledak, jadi beberapa pesan pelanggan nggak kepegang. Aku keteteran dan perlu bantuan.",
+    "example_cn": "订单突然暴增，所以有些客户消息顾不过来。我忙得应付不过来，需要帮忙。",
     "lesson_occurrences": [
       "2026-09-10 19:00",
       "2026-09-11 19:00",
       "2026-09-16 18:00",
-      "2026-10-08 08:00"
+      "2026-10-08 08:00",
+      "2026-11-07 18:00"
     ]
   },
   {
@@ -9022,16 +9024,16 @@ window.DAILY_VOCAB_DB = [
     "en": "get; catch; understand",
     "root": "tangkap",
     "root_cn": "抓住；捕捉",
-    "example": "Aku nanya lagi karena tadi belum nangkep maksudnya.",
-    "example_cn": "我又问了一次，因为刚才还没听懂他的意思。",
+    "example": "Aku belum nangkep maksudnya. Daripada sok tahu, aku mending minta contoh dulu.",
+    "example_cn": "我还没听懂他的意思。与其装懂，我宁可先请对方举个例子。（mending = lebih baik）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-10-08 08:00",
+    "last_seen": "2026-11-07 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9042,7 +9044,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-20",
       "2026-09-21",
       "2026-09-28",
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-07"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
@@ -9052,7 +9055,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-21 08:00",
       "2026-09-21 18:00",
       "2026-09-28 08:00",
-      "2026-10-08 08:00"
+      "2026-10-08 08:00",
+      "2026-11-07 18:00"
     ]
   },
   {
@@ -12868,23 +12872,27 @@ window.DAILY_VOCAB_DB = [
     "en": "field; area",
     "root": "bidang",
     "root_cn": "领域；范围",
-    "example": "Dia sudah lama bekerja di bidang penjualan.",
-    "example_cn": "他已经在销售领域工作很久了。",
+    "example": "Pengalamannya luas di bidang pendidikan. Ia pernah mengajar anak-anak dan membantu orang dewasa belajar membaca.",
+    "example_cn": "他在教育领域经验广泛，教过孩子，也帮助过成年人学习阅读。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-21 08:00",
-    "last_seen": "2026-09-21 08:00",
+    "last_seen": "2026-11-07 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-21"
+      "2026-09-21",
+      "2026-11-07"
     ],
     "lesson_occurrences": [
-      "2026-09-21 08:00"
+      "2026-09-21 08:00",
+      "2026-11-07 18:00"
     ]
   },
   {
@@ -28852,23 +28860,25 @@ window.DAILY_VOCAB_DB = [
     "en": "consideration; factor to consider",
     "root": "timbang",
     "root_cn": "称量；权衡",
-    "example": "Peningkatan biaya menjadi pertimbangan utama. Kami ingin kegiatan ini menghasilkan manfaat yang nyata.",
-    "example_cn": "费用上涨成了主要考量。我们希望这项活动能带来实际益处。",
+    "example": "Jarak menjadi pertimbangan karena mobilnya sering mogok. Ia ingin tahu apakah tempat kerja mudah dijangkau dengan angkutan umum.",
+    "example_cn": "距离是一个考量因素，因为他的车经常抛锚。他想知道工作地点是否方便乘公共交通到达。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-04 18:00",
-    "last_seen": "2026-11-04 18:00",
+    "last_seen": "2026-11-07 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-07"
     ],
     "lesson_occurrences": [
-      "2026-11-04 18:00"
+      "2026-11-04 18:00",
+      "2026-11-07 18:00"
     ]
   },
   {
@@ -29552,23 +29562,25 @@ window.DAILY_VOCAB_DB = [
     "en": "interest",
     "root": "minat",
     "root_cn": "兴趣；意愿",
-    "example": "Rina punya minat pada gambar hewan, terutama jerapah dan kangguru. Ia membawa beberapa gambar untuk ditunjukkan kepada temannya.",
-    "example_cn": "丽娜对动物画有兴趣，尤其是长颈鹿和袋鼠。她带了几张画给朋友看。",
+    "example": "Aku punya minat pada fotografi. Aku kepo soal teknik mengambil foto, bukan soal kehidupan pribadi orang yang difoto.",
+    "example_cn": "我对摄影有兴趣。我好奇的是拍照技术，不是被拍摄者的私生活。（kepo = sangat ingin tahu，口语）",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-06 18:00",
-    "last_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-07 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-07"
     ],
     "lesson_occurrences": [
-      "2026-11-06 18:00"
+      "2026-11-06 18:00",
+      "2026-11-07 18:00"
     ]
   },
   {
@@ -29681,23 +29693,26 @@ window.DAILY_VOCAB_DB = [
     "en": "beside; in addition to",
     "root": "samping",
     "root_cn": "侧面；旁边",
-    "example": "Kotak itu ada di samping pintu. Isinya tidak muat di lemari kecil, jadi kami akan memindahkannya.",
-    "example_cn": "箱子在门旁。里面的东西装不进小柜子，所以我们准备把它搬走。",
+    "example": "Pengumuman itu dipasang di samping pintu studio. Tulisannya kecil, jadi dari jauh nggak kebaca.",
+    "example_cn": "通知贴在照相馆门旁。字很小，所以远处看不清。（nggak kebaca = tidak terbaca）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-07 08:00",
-    "last_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-07"
     ],
     "lesson_occurrences": [
-      "2026-11-07 08:00"
+      "2026-11-07 08:00",
+      "2026-11-07 18:00"
     ]
   },
   {
@@ -29756,23 +29771,26 @@ window.DAILY_VOCAB_DB = [
     "en": "pass; go through",
     "root": "lewat",
     "root_cn": "经过",
-    "example": "Mobil harus mundur sedikit sebelum melewati pintu yang sempit agar tidak menabrak tembok.",
-    "example_cn": "车要先倒退一点，再通过狭窄入口，以免撞墙。",
+    "example": "Untuk sampai ke studio, kamu perlu melewati toko buku lalu belok kiri. Jangan berhenti di pintu toko buku itu.",
+    "example_cn": "要到照相馆，你需要先经过书店，再左转。不要停在书店门口。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-07 08:00",
-    "last_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-07 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-07"
     ],
     "lesson_occurrences": [
-      "2026-11-07 08:00"
+      "2026-11-07 08:00",
+      "2026-11-07 18:00"
     ]
   },
   {
@@ -29898,6 +29916,131 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-07 08:00"
+    ]
+  },
+  {
+    "word": "lowongan kerja",
+    "cn": "职位空缺；招聘岗位",
+    "en": "job vacancy",
+    "root": "lowong / kerja",
+    "root_cn": "空缺／工作",
+    "example": "Lowongan kerja ini tidak meminta gelar tertentu, tetapi pelamar perlu menunjukkan contoh hasil kerjanya.",
+    "example_cn": "这个招聘岗位不要求特定学位，但应聘者需要展示作品示例。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 18:00",
+    "last_seen": "2026-11-07 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 18:00"
+    ]
+  },
+  {
+    "word": "profesi",
+    "cn": "职业；通常指需要一定知识或技能的工作",
+    "en": "profession; occupation",
+    "root": "profesi",
+    "root_cn": "职业",
+    "example": "Ayahnya bekerja sebagai tentara, tetapi ia memilih profesi lain. Pilihan profesi tidak harus tetap sama selamanya.",
+    "example_cn": "他父亲是军人，但他选择了另一种职业。职业选择不一定要一辈子不变。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 18:00",
+    "last_seen": "2026-11-07 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 18:00"
+    ]
+  },
+  {
+    "word": "syarat",
+    "cn": "条件；要求",
+    "en": "requirement; condition",
+    "root": "syarat",
+    "root_cn": "条件；要求",
+    "example": "Salah satu syarat pekerjaan ini adalah mampu mengukur ruangan dengan tepat sebelum memasang perabot.",
+    "example_cn": "这份工作的条件之一，是安装家具前能够准确测量房间。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 18:00",
+    "last_seen": "2026-11-07 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 18:00"
+    ]
+  },
+  {
+    "word": "identitas",
+    "cn": "身份；身份信息",
+    "en": "identity; identifying information",
+    "root": "identitas",
+    "root_cn": "身份",
+    "example": "Petugas memeriksa nama dan tanggal lahir pada kartu identitas. Simpan kartunya baik-baik agar tidak kehilangan dokumen itu.",
+    "example_cn": "工作人员核对身份证件上的姓名和出生日期。请妥善收好卡片，以免丢失证件。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 18:00",
+    "last_seen": "2026-11-07 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 18:00"
+    ]
+  },
+  {
+    "word": "mandiri",
+    "cn": "独立的；能够自主处理事情的",
+    "en": "independent; self-reliant",
+    "root": "mandiri",
+    "root_cn": "独立；自主",
+    "example": "Ia bisa bekerja secara mandiri dan menerapkan langkah yang sudah dipelajari. Kalau ada masalah baru, ia tetap berdiskusi dengan rekan kerja.",
+    "example_cn": "他能独立工作，运用已经学过的步骤。遇到新问题时，他仍会和同事讨论。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-07 18:00",
+    "last_seen": "2026-11-07 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-07"
+    ],
+    "lesson_occurrences": [
+      "2026-11-07 18:00"
     ]
   }
 ];
