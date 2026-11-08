@@ -1,0 +1,372 @@
+{
+  "date": "2026-11-08",
+  "session": "am",
+  "time": "08:00",
+  "day": 79,
+  "title": "08:00 早课｜Siapkan Dapur Sebelum Mulai Memasak · 开始做饭前，先备好厨房",
+  "vocab": [
+    {
+      "word": "resep",
+      "display": "resep",
+      "audio_text": "resep",
+      "cn": "食谱；处方（另一个义项）",
+      "en": "recipe; prescription",
+      "root": "resep",
+      "root_cn": "食谱；处方",
+      "formation": "外来名词，不拆印尼语词缀。搭配：resep nasi kuning、mengikuti resep、resep dokter。本课练做饭的食谱义。",
+      "example": "Saya mengetik resep ini supaya tidak lupa jumlah bahannya. Kalau hanya mengandalkan ingatan, saya cenderung menambahkan terlalu banyak garam.",
+      "example_cn": "我把这个食谱打下来，免得忘记食材的用量。只凭记忆的话，我容易多放盐。",
+      "synonym_note": "resep 在厨房指食谱，在医疗语境可指医生处方；bahan 是食材，不是食谱本身。口语说法：Resepnya dari siapa?（食谱是谁教的／从谁那里来的？）",
+      "is_oral_new": false
+    },
+    {
+      "word": "peralatan masak",
+      "display": "peralatan masak",
+      "audio_text": "peralatan masak",
+      "cn": "烹饪用具；炊具",
+      "en": "cooking equipment; cookware",
+      "root": "alat / masak",
+      "root_cn": "工具／做饭",
+      "formation": "alat → peralatan，指一组用具；与 masak 组成词组。搭配：menyiapkan peralatan masak、mencuci peralatan masak、peralatan masak sederhana。",
+      "example": "Bandingkan ukuran peralatan masak sebelum membeli. Panci besar belum tentu cocok untuk dapur kecil.",
+      "example_cn": "购买前比较一下炊具的大小。大锅不一定适合小厨房。",
+      "synonym_note": "peralatan masak 泛指做饭用具；bahan masakan 是烹饪材料。锅是用具，盐是材料。口语说法：Alat masaknya udah lengkap?（做饭的工具齐了吗？）",
+      "is_oral_new": false
+    },
+    {
+      "word": "rempah-rempah",
+      "display": "rempah-rempah",
+      "audio_text": "rempah-rempah",
+      "cn": "香料；各种香辛料",
+      "en": "spices",
+      "root": "rempah",
+      "root_cn": "香料",
+      "formation": "rempah 重叠成 rempah-rempah，常统称多种香料，不机械理解为恰好两个。搭配：aneka rempah-rempah、aroma rempah-rempah、membeli rempah-rempah。",
+      "example": "Aku mau ngirit, jadi beli rempah-rempah secukupnya dulu. Jangan sampai banyak yang terbuang karena jarang dipakai.",
+      "example_cn": "我想省点钱，所以先买够用的香料，免得因为不常用而浪费很多。（ngirit = berhemat）",
+      "synonym_note": "rempah-rempah 指姜、肉桂等香料；bumbu 是调味材料或调好的调料，范围更广。盐可算 bumbu，但不通常归为 rempah-rempah。",
+      "is_oral_new": false
+    },
+    {
+      "word": "cobek",
+      "display": "cobek",
+      "audio_text": "cobek",
+      "cn": "研钵；捣碎调料用的臼",
+      "en": "mortar for grinding spices",
+      "root": "cobek",
+      "root_cn": "研钵；臼",
+      "formation": "基本名词。搭配：cobek batu、cobek tanah liat、menghaluskan bumbu di cobek。cobek 是容器，配套用来捣磨的工具常叫 ulekan。",
+      "example": "Cobek kuno milik Nenek masih dipakai untuk membuat sambal. Bentuknya sederhana, tetapi permukaannya masih bagus.",
+      "example_cn": "奶奶那只老式研钵还在用来做辣椒酱。它造型简单，但表面仍然完好。",
+      "synonym_note": "cobek 是承放调料并研磨的臼；parutan 用擦孔或齿把材料擦细，两种工具的动作不同。口语说法：Bumbunya ulek di cobek aja.（调料就在研钵里捣吧。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "parutan",
+      "display": "parutan",
+      "audio_text": "parutan",
+      "cn": "擦菜器；刨丝器；也可指擦出的碎屑",
+      "en": "grater; grated material",
+      "root": "parut",
+      "root_cn": "擦碎；擦丝",
+      "formation": "parut + -an → parutan，可指工具或擦出的材料，要看语境。搭配：parutan kelapa、parutan keju、memakai parutan。本课主要练工具义。",
+      "example": "Apabila parutan masih kotor, cuci dahulu sebelum memarut kunyit. Pegang bahannya dengan hati-hati.",
+      "example_cn": "如果擦菜器还脏，先洗净再擦姜黄。拿食材时小心一点。",
+      "synonym_note": "parutan 用来擦丝或擦碎；pisau 用来切，cobek 用来捣磨。不要把任何让食物变小的工具都叫 parutan。口语说法：Parutannya mana?（擦菜器在哪儿？）",
+      "is_oral_new": false
+    },
+    {
+      "word": "spatula",
+      "display": "spatula",
+      "audio_text": "spatula",
+      "cn": "锅铲；刮刀（依形状和用途而定）",
+      "en": "spatula; turner; scraper",
+      "root": "spatula",
+      "root_cn": "锅铲；刮刀",
+      "formation": "外来名词。搭配：spatula kayu、spatula silikon、membalik telur dengan spatula。平铲可翻食物，软刮刀可刮拌，具体看工具类型。",
+      "example": "Dimas cemas telurnya akan gosong. Ia mengambil spatula untuk membalik telur, lalu mengecilkan api.",
+      "example_cn": "迪马斯担心鸡蛋会焦。他拿锅铲翻鸡蛋，然后把火调小。",
+      "synonym_note": "spatula 常用于翻、拌或刮；centong 常用于盛饭或舀取。印尼日常也常把炒菜铲叫 sutil；不是所有 spatula 都适合高温炒菜。",
+      "is_oral_new": false
+    },
+    {
+      "word": "centong",
+      "display": "centong",
+      "audio_text": "centong",
+      "cn": "饭勺；盛饭或舀取食物的勺具",
+      "en": "rice paddle; serving scoop",
+      "root": "centong",
+      "root_cn": "饭勺；舀取用的勺",
+      "formation": "基本名词。搭配：centong nasi、satu centong nasi、mengambil nasi dengan centong。具体形状和用途要看后面的名词。",
+      "example": "Rani mengambil satu centong nasi untuk mencoba rasanya. Semoga kali ini hasilnya pas dan tidak terlalu lembek.",
+      "example_cn": "拉妮盛了一饭勺米饭尝尝味道。希望这次正合适，不会太软。",
+      "synonym_note": "centong nasi 是饭勺；sendok makan 是汤匙或餐匙。satu centong 取决于勺的大小，不是固定的克数。口语说法：Ambilin centongnya, dong.（帮我拿一下饭勺嘛。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "baskom",
+      "display": "baskom",
+      "audio_text": "baskom",
+      "cn": "盆；洗涤或备料用的盆",
+      "en": "basin; mixing or washing bowl",
+      "root": "baskom",
+      "root_cn": "盆",
+      "formation": "基本名词。搭配：baskom plastik、baskom berisi air、mencuci sayur dalam baskom。",
+      "example": "Kami mencuci sayuran dalam baskom sebelum memotongnya. Sesuai kesepakatan, Rani menyiapkan sayur dan Dimas memasak nasi.",
+      "example_cn": "我们先在盆里洗菜，再切菜。按照约定，拉妮准备蔬菜，迪马斯煮饭。",
+      "synonym_note": "baskom 是盆；panci 是锅；mangkuk 是碗。普通塑料盆不能当锅放在火上。口语说法：Taruh di baskom dulu.（先放盆里。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "lap",
+      "display": "lap",
+      "audio_text": "lap",
+      "cn": "抹布；擦拭用的布",
+      "en": "wiping cloth; rag",
+      "root": "lap",
+      "root_cn": "擦拭用布；擦",
+      "formation": "本课作名词。搭配：lap bersih、lap basah、mengelap meja。动词 mengelap 来自 meN- + lap；单音节词根 lap 前用 menge-，l 保留。",
+      "example": "Air tumpah di meja, tetapi Rani tidak kelabakan. Ia mengambil lap bersih dan mengeringkan meja sebelum melanjutkan memasak.",
+      "example_cn": "水洒在桌上，但拉妮没有手忙脚乱。她拿干净抹布擦干桌面，再继续做饭。",
+      "synonym_note": "lap 名词是抹布；mengelap 是擦拭动作。洗菜用水冲洗，不能只用抹布擦一下就都叫 mencuci。口语说法：Lap mejanya dulu, ya.（先擦桌子哦。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "bak cuci piring",
+      "display": "bak cuci piring",
+      "audio_text": "bak cuci piring",
+      "cn": "洗碗池；厨房水槽",
+      "en": "kitchen sink",
+      "root": "bak / cuci / piring",
+      "root_cn": "池槽／洗／盘子",
+      "formation": "固定名词词组：bak（槽、池）+ cuci（洗）+ piring（盘子）。搭配：bak cuci piring penuh、mencuci di bak cuci piring、membersihkan bak cuci piring。",
+      "example": "Bak cuci piring sudah penuh. Karena waktunya kepepet, mereka membagi tugas agar dapur cepat rapi.",
+      "example_cn": "洗碗池已经堆满了。因为时间很紧，他们分工合作，让厨房尽快整洁。（kepepet = terdesak，口语）",
+      "synonym_note": "bak cuci piring 是固定的水槽；baskom 通常是可搬动的盆，两者不等同。口语说法：Piring kotornya taruh di bak cuci piring dulu.（脏盘子先放洗碗池里。）",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "tepuk tangan",
+    "nggak kepegang",
+    "bolak-balik",
+    "budaya",
+    "gagal"
+  ],
+  "sentences": [
+    {
+      "text": "Rani menyiapkan peralatan masak lebih awal agar tidak bolak-balik mencari alat saat nasi sedang dimasak.",
+      "cn": "拉妮提前备好炊具，免得煮饭时来来回回找工具。"
+    },
+    {
+      "text": "Dimas memakai spatula untuk membalik telur, lalu menaruhnya di piring kecil agar meja tetap bersih.",
+      "cn": "迪马斯用锅铲翻鸡蛋，然后把锅铲放在小碟上，让桌面保持干净。"
+    },
+    {
+      "text": "Aku pegang nasinya, ya. Kalau sambalnya nggak kepegang, kamu bantu aja; lap bersihnya ada di dekat meja.",
+      "cn": "我来负责米饭哦。如果辣椒酱顾不过来，你就帮忙做；干净抹布在桌边。（nggak = tidak；aja = saja；pegang nasinya 此处指负责做米饭）"
+    },
+    {
+      "text": "Setelah mencuci parutan di bak cuci piring, Rani mengeringkannya sebelum menyimpan alat itu.",
+      "cn": "在洗碗池洗净擦菜器后，拉妮先把它擦干，再收起来。"
+    },
+    {
+      "text": "Setelah nasi matang, mereka mencoba sedikit dulu sebelum mengambilnya dengan centong untuk makan bersama.",
+      "cn": "饭熟后，他们先尝一点，再用饭勺盛饭一起吃。"
+    }
+  ],
+  "reading": {
+    "text": "Minggu pagi, Rani dan Dimas memasak nasi kuning di rumah. Percobaan sebelumnya gagal karena airnya terlalu banyak. Kali ini, mereka membaca resep dan menyiapkan bahan lebih dahulu. Rani mencuci sayuran dalam baskom, sedangkan Dimas menyiapkan rempah-rempah. Mereka memakai parutan untuk memarut kunyit, lalu menghaluskan bumbu lain di cobek. Setelah semua siap, nasi mulai dimasak. Mereka membagi tugas supaya tidak sibuk mencari alat saat memasak. Sambil menunggu, Rani membersihkan meja dan Dimas menyiapkan piring. Ketika nasi matang, Rani mengambilnya dengan centong. Hasilnya lebih baik. Mereka makan bersama dan mencatat jumlah air agar percobaan berikutnya lebih mudah.",
+    "cn": "星期日早上，拉妮和迪马斯在家做黄米饭。上一次因为水太多，尝试失败了。这次他们先看食谱、备好材料。拉妮在盆里洗菜，迪马斯准备香料。他们用擦菜器擦碎姜黄，再在研钵里磨碎其他调料。都备好后，开始煮饭。他们分工合作，免得做饭时还忙着找工具。等待时，拉妮清理桌面，迪马斯准备盘子。饭熟后，拉妮用饭勺盛饭。这次做得更好。他们一起吃饭，并记下水的用量，让下次尝试更容易。"
+  },
+  "quiz": [
+    {
+      "question": "Rani ingin menghaluskan cabai dan bawang dengan cara diulek. Alat mana yang paling sesuai?",
+      "options": [
+        "parutan",
+        "cobek",
+        "centong",
+        "spatula"
+      ],
+      "answer_index": 1,
+      "answer": "cobek",
+      "explain": "cobek 是承放调料并捣磨的研钵；parutan 擦丝或擦碎，centong 盛饭或舀取，spatula 翻拌或刮。工具同属厨房，但动作不同。"
+    },
+    {
+      "question": "“Percobaan pertama ____: nasinya terlalu lembek dan tidak jadi disajikan.” 哪个词最贴合这个结果？",
+      "options": [
+        "berhasil",
+        "selesai",
+        "gagal",
+        "tertunda"
+      ],
+      "answer_index": 2,
+      "answer": "gagal",
+      "explain": "食物太软、最终没有端上桌，说明这次尝试没有达到目标，gagal 最贴切。selesai 只说结束；tertunda 是推迟，不能表示已经做完但结果不成。"
+    },
+    {
+      "question": "朋友说：“Aku harus jaga nasi dan bikin sambal sekaligus. Sambalnya nggak kepegang.” 你想实际帮忙，怎样回答最合适？",
+      "options": [
+        "Aku bantu bikin sambal. Kamu urus nasinya aja.",
+        "Kalau begitu, tambah satu masakan lagi sekarang.",
+        "Jangan bagi tugas; kamu kerjakan semua sendiri.",
+        "Kalau nggak kepegang, berarti kamu pasti nggak ngerti resepnya."
+      ],
+      "answer_index": 0,
+      "answer": "Aku bantu bikin sambal. Kamu urus nasinya aja.",
+      "explain": "nggak kepegang 在这里是忙得顾不过来，不是没听懂食谱。接手一项具体任务，能回应朋友的困难；不要直接把忙不过来判断成不理解。"
+    }
+  ],
+  "output": {
+    "task": "朋友来你家一起做饭。用 resep、peralatan masak、rempah-rempah 中至少2项，写3句口语消息：先约定分工，再说明准备什么，最后安排等待时休息；不要照抄黄米饭故事。",
+    "reference_answer": "Aku baca resepnya dulu, kamu siapin peralatan masak dan rempah-rempah, ya. Kita mulai jam sebelas supaya nggak bentrok sama rencana sore. Setelah supnya mulai dimasak, kita bisa nyantai sebentar sambil menunggu matang.",
+    "reference_cn": "我先看食谱，你准备炊具和香料哦。我们十一点开始，免得和下午的安排撞期。开始煮汤后，等煮熟时我们可以稍微放松一下。（siapin = menyiapkan；nggak = tidak；sama 此处 = dengan；nyantai = bersantai）"
+  },
+  "review": [
+    "3秒主动提取：看中文说出食谱、炊具、香料、研钵、擦菜器、锅铲、饭勺、盆、抹布、洗碗池，卡住才翻词卡。再用 parutan、centong、baskom、lap、bak cuci piring 各说一句自己的厨房安排。",
+    "工具与动作辨析：cobek 捣磨调料，parutan 擦丝，spatula 翻拌，centong 盛饭；分别指向家里对应工具，不把它们都笼统叫勺子。区分 gagal（尝试没成功）与没做完；用 resep 解释一次做饭结果，并用 bolak-balik 说明如何减少来回找工具。",
+    "真实弱词应用：先用 nggak kepegang 说清一项忙不过来的事和原因，再提出具体分工请求；它不等于没理解。用 tepuk tangan 说一句表演后的反应，例如 Mereka memberi tepuk tangan setelah pertunjukan selesai.（表演结束后，他们鼓掌。）再用 budaya 说一种自己接触过的文化习惯，不把掌声或某道食物说成所有人的固定习俗。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "resep",
+      "peralatan masak",
+      "rempah-rempah"
+    ],
+    "patterns": [
+      {
+        "pattern": "… menyiapkan … lebih awal agar tidak bolak-balik …",
+        "cn": "……提前准备……，免得来回……。",
+        "example": "Rani menyiapkan peralatan masak lebih awal agar tidak bolak-balik mencari alat saat nasi sedang dimasak.",
+        "example_cn": "拉妮提前备好炊具，免得煮饭时来来回回找工具。"
+      },
+      {
+        "pattern": "Kalau … nggak kepegang, kamu bantu aja; …",
+        "cn": "如果……顾不过来，你就帮忙做。",
+        "example": "Kalau sambalnya nggak kepegang, kamu bantu aja; lap bersihnya ada di dekat meja.",
+        "example_cn": "如果辣椒酱顾不过来，你就帮忙做；干净抹布在桌边。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "食谱；处方（另一个义项）",
+        "id": "resep"
+      },
+      {
+        "cn": "烹饪用具；炊具",
+        "id": "peralatan masak"
+      },
+      {
+        "cn": "香料；各种香辛料",
+        "id": "rempah-rempah"
+      },
+      {
+        "cn": "研钵；捣碎调料用的臼",
+        "id": "cobek"
+      },
+      {
+        "cn": "擦菜器；刨丝器；也可指擦出的碎屑",
+        "id": "parutan"
+      },
+      {
+        "cn": "锅铲；刮刀（依形状和用途而定）",
+        "id": "spatula"
+      },
+      {
+        "cn": "饭勺；盛饭或舀取食物的勺具",
+        "id": "centong"
+      },
+      {
+        "cn": "盆；洗涤或备料用的盆",
+        "id": "baskom"
+      },
+      {
+        "cn": "抹布；擦拭用的布",
+        "id": "lap"
+      },
+      {
+        "cn": "洗碗池；厨房水槽",
+        "id": "bak cuci piring"
+      }
+    ],
+    "frames": [
+      "Aku baca resepnya dulu, kamu siapin …, ya.",
+      "Kalau … nggak kepegang, kamu bantu aja."
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "cobek",
+            "cn": "捣磨调料的臼"
+          },
+          {
+            "id": "parutan",
+            "cn": "擦丝器"
+          }
+        ],
+        "note": "前者用配套工具捣磨，后者用擦孔或齿擦碎材料。"
+      },
+      {
+        "items": [
+          {
+            "id": "spatula",
+            "cn": "翻拌用铲／刮刀"
+          },
+          {
+            "id": "centong",
+            "cn": "盛饭或舀取用勺"
+          }
+        ],
+        "note": "按正在进行的动作选择，不能仅看它们都能拿在手上。"
+      },
+      {
+        "items": [
+          {
+            "id": "bak cuci piring",
+            "cn": "固定洗碗池"
+          },
+          {
+            "id": "baskom",
+            "cn": "可搬动的盆"
+          }
+        ],
+        "note": "水槽是厨房设施，盆是可以搬动的容器。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "nggak kepegang",
+        "usage": "先说哪项事顾不过来，再请求具体帮忙，不把忙碌说成没理解。",
+        "examples": [
+          {
+            "id": "Sambalnya nggak kepegang karena aku harus jaga nasi. Kamu bisa bantu?",
+            "cn": "辣椒酱顾不过来，因为我得看着米饭。你能帮忙吗？"
+          }
+        ]
+      },
+      {
+        "word": "gagal",
+        "usage": "说清一次尝试为何未成功，以及下一次怎么改。",
+        "examples": [
+          {
+            "id": "Percobaan sebelumnya gagal karena airnya terlalu banyak.",
+            "cn": "上次尝试因水太多而失败。"
+          }
+        ]
+      },
+      {
+        "word": "tepuk tangan",
+        "usage": "说明表演后的真实反应，再用 budaya 说一种自己的文化体验。",
+        "examples": [
+          {
+            "id": "Mereka memberi tepuk tangan setelah pertunjukan selesai.",
+            "cn": "表演结束后，他们鼓掌。"
+          }
+        ]
+      }
+    ]
+  }
+}
