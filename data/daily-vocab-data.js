@@ -7641,16 +7641,16 @@ window.DAILY_VOCAB_DB = [
     "en": "awkwardly incomplete; halfway; might as well finish",
     "root": "tanggung",
     "root_cn": "承担；未完全结束（相关语境）",
-    "example": "Kerjaannya sudah nanggung, jadi sekalian kita selesaikan malam ini.",
-    "example_cn": "工作都做到一半了，干脆今晚一起做完。",
+    "example": "Tinggal satu rak lagi yang belum dirapikan. Udah nanggung, sekalian aja aku beresin sekarang.",
+    "example_cn": "只剩一个架子还没整理。都做到这儿了，干脆现在一起收拾完。（udah = sudah，beresin = membereskan）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-10-04 08:00",
+    "last_seen": "2026-11-08 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -7659,13 +7659,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-07",
       "2026-09-18",
       "2026-09-23",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-08"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
       "2026-09-18 18:00",
       "2026-09-23 18:00",
-      "2026-10-04 08:00"
+      "2026-10-04 08:00",
+      "2026-11-08 18:00"
     ]
   },
   {
@@ -12569,23 +12571,27 @@ window.DAILY_VOCAB_DB = [
     "en": "full / satiated",
     "root": "kenyang",
     "root_cn": "饱",
-    "example": "Aku sudah kenyang, jadi tidak mau pesan makanan lagi.",
-    "example_cn": "我已经吃饱了，所以不想再点东西。",
+    "example": "Aku nggak lapar kok, malahan masih kenyang dari makan siang.",
+    "example_cn": "我不饿啊，中午吃的反而还饱着呢。（nggak = tidak）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-09-20 08:00",
+    "last_seen": "2026-11-08 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-11-08"
     ],
     "lesson_occurrences": [
-      "2026-09-20 08:00"
+      "2026-09-20 08:00",
+      "2026-11-08 18:00"
     ]
   },
   {
@@ -12798,24 +12804,26 @@ window.DAILY_VOCAB_DB = [
     "en": "complain; complaint",
     "root": "komplain",
     "root_cn": "投诉；抱怨",
-    "example": "Pelanggan komplain karena pesanannya datang terlambat.",
-    "example_cn": "顾客因为订单送晚了而投诉。",
+    "example": "Sebelum komplain, aku nanya dulu ke kurirnya. Ternyata paketku ketutup tumpukan paket lain di gudang.",
+    "example_cn": "投诉之前，我先问了快递员。原来我的包裹被仓库里别的包裹压在下面了。（nanya = bertanya，ketutup = tertutup）",
     "categories": [
       "每日学习",
       "18:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 18:00",
-    "last_seen": "2026-09-20 18:00",
+    "last_seen": "2026-11-08 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-11-08"
     ],
     "lesson_occurrences": [
-      "2026-09-20 18:00"
+      "2026-09-20 18:00",
+      "2026-11-08 18:00"
     ]
   },
   {
@@ -19765,23 +19773,27 @@ window.DAILY_VOCAB_DB = [
     "en": "if; when (formal)",
     "root": "apabila",
     "root_cn": "如果（书面）",
-    "example": "Apabila ada pesanan khusus, silakan hubungi kami lewat WhatsApp.",
-    "example_cn": "如有特殊订单，请通过 WhatsApp 联系我们。",
+    "example": "Apabila ada barang yang ketinggalan di kereta, lapor ke petugas di stasiun.",
+    "example_cn": "如果有东西落在火车上，请向车站工作人员报告。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-09 08:00",
-    "last_seen": "2026-10-09 08:00",
+    "last_seen": "2026-11-08 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-09"
+      "2026-10-09",
+      "2026-11-08"
     ],
     "lesson_occurrences": [
-      "2026-10-09 08:00"
+      "2026-10-09 08:00",
+      "2026-11-08 18:00"
     ]
   },
   {
@@ -29340,26 +29352,28 @@ window.DAILY_VOCAB_DB = [
     "en": "arrange; organize",
     "root": "tata",
     "root_cn": "秩序；安排",
-    "example": "Ia menata rambutnya yang terurai sebelum tampil. Ia sungkan meminta bantuan, jadi temannya menawarkan diri.",
-    "example_cn": "她上台前整理披散的头发。她不好意思求助，所以朋友主动提出帮忙。",
+    "example": "Petugas toko sedang menata barang baru di rak depan.",
+    "example_cn": "店员正在把新货摆到前面的货架上。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-06 08:00",
-    "last_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-08 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-08"
     ],
     "lesson_occurrences": [
       "2026-11-06 08:00",
-      "2026-11-06 18:00"
+      "2026-11-06 18:00",
+      "2026-11-08 18:00"
     ]
   },
   {
@@ -30238,23 +30252,26 @@ window.DAILY_VOCAB_DB = [
     "en": "basin; mixing or washing bowl",
     "root": "baskom",
     "root_cn": "盆",
-    "example": "Kami mencuci sayuran dalam baskom sebelum memotongnya. Sesuai kesepakatan, Rani menyiapkan sayur dan Dimas memasak nasi.",
-    "example_cn": "我们先在盆里洗菜，再切菜。按照约定，拉妮准备蔬菜，迪马斯煮饭。",
+    "example": "Adik hampir pingsan di lapangan karena kepanasan, jadi Ibu mengambil sebaskom air dingin untuk mengompres lehernya.",
+    "example_cn": "弟弟在球场上热得差点晕倒，所以妈妈端来一盆凉水给他敷脖子。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-08 08:00",
-    "last_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-08"
     ],
     "lesson_occurrences": [
-      "2026-11-08 08:00"
+      "2026-11-08 08:00",
+      "2026-11-08 18:00"
     ]
   },
   {
@@ -30263,23 +30280,26 @@ window.DAILY_VOCAB_DB = [
     "en": "wiping cloth; rag",
     "root": "lap",
     "root_cn": "擦拭用布；擦",
-    "example": "Air tumpah di meja, tetapi Rani tidak kelabakan. Ia mengambil lap bersih dan mengeringkan meja sebelum melanjutkan memasak.",
-    "example_cn": "水洒在桌上，但拉妮没有手忙脚乱。她拿干净抹布擦干桌面，再继续做饭。",
+    "example": "Bersihkan meja dengan lap basah dan sabun. Sabun bisa membunuh banyak kuman.",
+    "example_cn": "用湿抹布和肥皂擦桌子。肥皂能杀死很多细菌。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-08 08:00",
-    "last_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-08"
     ],
     "lesson_occurrences": [
-      "2026-11-08 08:00"
+      "2026-11-08 08:00",
+      "2026-11-08 18:00"
     ]
   },
   {
@@ -30305,6 +30325,131 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-08 08:00"
+    ]
+  },
+  {
+    "word": "daya tahan",
+    "cn": "抵抗力；耐力",
+    "en": "resistance; endurance",
+    "root": "daya / tahan",
+    "root_cn": "力量／承受、忍住",
+    "example": "Daya tahan tubuh yang baik membantu kita melawan virus flu.",
+    "example_cn": "良好的身体抵抗力帮助我们对抗流感病毒。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 18:00",
+    "last_seen": "2026-11-08 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 18:00"
+    ]
+  },
+  {
+    "word": "pemulihan",
+    "cn": "恢复；康复期",
+    "en": "recovery",
+    "root": "pulih",
+    "root_cn": "恢复（到原来的状态）",
+    "example": "Kakinya masih bengkak setelah jatuh dari motor, jadi masa pemulihannya bisa sampai dua minggu.",
+    "example_cn": "他摔车后脚还肿着，所以康复期可能要两个星期。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 18:00",
+    "last_seen": "2026-11-08 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 18:00"
+    ]
+  },
+  {
+    "word": "waspada",
+    "cn": "警惕；警觉",
+    "en": "alert; watchful",
+    "root": "waspada",
+    "root_cn": "警惕的",
+    "example": "Warga diminta tetap waspada karena minggu lalu ada pencuri masuk ke rumah kosong.",
+    "example_cn": "居民被提醒保持警惕，因为上周有小偷闯进了一栋空房子。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 18:00",
+    "last_seen": "2026-11-08 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 18:00"
+    ]
+  },
+  {
+    "word": "menyebar",
+    "cn": "扩散；传播",
+    "en": "to spread",
+    "root": "sebar",
+    "root_cn": "散开；散布",
+    "example": "Aku nggak nyangka kabarnya menyebar secepat itu di grup kantor.",
+    "example_cn": "我没想到这个消息在公司群里传得那么快。（nggak = tidak，nyangka = menyangka）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 18:00",
+    "last_seen": "2026-11-08 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 18:00"
+    ]
+  },
+  {
+    "word": "berangsur",
+    "cn": "逐渐（好转或变化）",
+    "en": "gradually",
+    "root": "angsur",
+    "root_cn": "一点一点地推进",
+    "example": "Setelah minum obat dan istirahat, batuknya berangsur hilang.",
+    "example_cn": "吃了药、休息之后，他的咳嗽慢慢好了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 18:00",
+    "last_seen": "2026-11-08 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 18:00"
     ]
   }
 ];

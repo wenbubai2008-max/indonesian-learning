@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-08",
-    "session": "pm",
-    "time": "18:00",
-    "day": 79
+    "date": "2026-11-09",
+    "session": "am",
+    "time": "08:00",
+    "day": 80
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-08T09:41:07.116Z",
-    "lesson_watermark": "2026-11-08 08:00",
+    "runtime_generated_at": "2026-11-08T10:45:47.845Z",
+    "lesson_watermark": "2026-11-08 18:00",
     "index_updated": "2026-11-08",
-    "runtime_hash": "7f4bd3b33ec37ea51195e05fec6eb4592c33a93ff225ed0cfc2b687f9ca99811",
-    "index_hash": "f165eed8100b92428f72ee5ba784fe4c06d5423d92b7bd7271957bdbc6b09a07",
+    "runtime_hash": "b6106f19cfa9be9e52c0210a54989733fd233af934079f54e466bc41b3b515d2",
+    "index_hash": "b688278e4bd00cf53c9da460350e23e35ac23a01c627edbe8ec5bab2010a2a38",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -97,14 +97,6 @@
       [
         "kerusakan",
         "损坏；破坏"
-      ],
-      [
-        "menyebar",
-        "扩散；传播"
-      ],
-      [
-        "waspada",
-        "警惕；警觉"
       ],
       [
         "berkaitan",
@@ -291,20 +283,12 @@
         "毕业典礼；毕业"
       ],
       [
-        "pemulihan",
-        "恢复；康复期"
-      ],
-      [
         "fungsi",
         "功能；作用"
       ],
       [
         "bertujuan",
         "旨在；以……为目的"
-      ],
-      [
-        "daya tahan",
-        "抵抗力；耐力"
       ],
       [
         "menekan-nekan",
@@ -565,10 +549,6 @@
       [
         "tunggang langgang",
         "狼狈逃窜；四散奔逃"
-      ],
-      [
-        "berangsur",
-        "逐渐"
       ],
       [
         "dahaga",
@@ -1589,16 +1569,6 @@
         "宽广；广泛"
       ],
       [
-        "kenyang",
-        3,
-        0,
-        "",
-        "2026-10-19T05:53:12.331Z",
-        "饱的",
-        "kenyang",
-        "饱"
-      ],
-      [
         "resign",
         3,
         0,
@@ -1607,16 +1577,6 @@
         "辞职",
         "resign",
         "辞职"
-      ],
-      [
-        "komplain",
-        2,
-        0,
-        "",
-        "2026-10-15T13:45:00.803Z",
-        "投诉；抱怨",
-        "komplain",
-        "投诉；抱怨"
       ],
       [
         "langit",
@@ -2809,104 +2769,24 @@
         "结果；成果；产量"
       ],
       [
-        "resep",
-        3,
+        "mewah",
+        2,
         0,
         "",
-        "",
-        "食谱；处方（另一个义项）",
-        "resep",
-        "食谱；处方"
+        "2026-10-23T23:31:55.049Z",
+        "奢华的；豪华的",
+        "mewah",
+        "奢华"
       ],
       [
-        "peralatan masak",
-        3,
+        "terbuat",
+        2,
         0,
         "",
-        "",
-        "烹饪用具；炊具",
-        "alat / masak",
-        "工具／做饭"
-      ],
-      [
-        "rempah-rempah",
-        3,
-        0,
-        "",
-        "",
-        "香料；各种香辛料",
-        "rempah",
-        "香料"
-      ],
-      [
-        "cobek",
-        3,
-        0,
-        "",
-        "",
-        "研钵；捣碎调料用的臼",
-        "cobek",
-        "研钵；臼"
-      ],
-      [
-        "parutan",
-        3,
-        0,
-        "",
-        "",
-        "擦菜器；刨丝器；也可指擦出的碎屑",
-        "parut",
-        "擦碎；擦丝"
-      ],
-      [
-        "spatula",
-        3,
-        0,
-        "",
-        "",
-        "锅铲；刮刀（依形状和用途而定）",
-        "spatula",
-        "锅铲；刮刀"
-      ],
-      [
-        "centong",
-        3,
-        0,
-        "",
-        "",
-        "饭勺；盛饭或舀取食物的勺具",
-        "centong",
-        "饭勺；舀取用的勺"
-      ],
-      [
-        "baskom",
-        3,
-        0,
-        "",
-        "",
-        "盆；洗涤或备料用的盆",
-        "baskom",
-        "盆"
-      ],
-      [
-        "lap",
-        3,
-        0,
-        "",
-        "",
-        "抹布；擦拭用的布",
-        "lap",
-        "擦拭用布；擦"
-      ],
-      [
-        "bak cuci piring",
-        3,
-        0,
-        "",
-        "",
-        "洗碗池；厨房水槽",
-        "bak / cuci / piring",
-        "池槽／洗／盘子"
+        "2026-10-23T23:38:20.389Z",
+        "由……制成的",
+        "buat",
+        "做；制作"
       ]
     ],
     "focus": [
@@ -3168,45 +3048,6 @@
     "oral": []
   },
   "history_7d": [
-    {
-      "date": "2026-11-01",
-      "session": "am",
-      "review_core": [
-        "atur",
-        "teratur",
-        "adil",
-        "kemungkinan besar",
-        "hasil"
-      ],
-      "new_words": [
-        "memukul",
-        "mengapung",
-        "sungguh",
-        "gaya",
-        "badan",
-        "lemah",
-        "perintah",
-        "terbang",
-        "positif",
-        "maupun"
-      ]
-    },
-    {
-      "date": "2026-11-01",
-      "session": "pm",
-      "review_core": [
-        "teratur",
-        "niat",
-        "lancar",
-        "bawain",
-        "kegiatan"
-      ],
-      "new_words": [
-        "subuh",
-        "bergetar",
-        "titik"
-      ]
-    },
     {
       "date": "2026-11-02",
       "session": "am",
@@ -3472,107 +3313,44 @@
         "lap",
         "bak cuci piring"
       ]
+    },
+    {
+      "date": "2026-11-08",
+      "session": "pm",
+      "review_core": [
+        "nanggung",
+        "apabila",
+        "menata",
+        "kenyang",
+        "komplain"
+      ],
+      "new_words": [
+        "daya tahan",
+        "pemulihan",
+        "waspada",
+        "menyebar",
+        "berangsur"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "new_words": [
-      "lowongan kerja",
-      "profesi",
-      "syarat",
-      "identitas",
-      "mandiri"
+      "daya tahan",
+      "pemulihan",
+      "waspada",
+      "menyebar",
+      "berangsur"
     ],
     "review_core": [
-      "nangkep",
-      "nggak kepegang",
-      "minat",
-      "pertimbangan",
-      "bidang"
+      "nanggung",
+      "apabila",
+      "menata",
+      "kenyang",
+      "komplain"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-08",
-    "vocab": [
-      [
-        "resep",
-        "食谱；处方（另一个义项）",
-        "recipe; prescription",
-        "resep",
-        "食谱；处方"
-      ],
-      [
-        "peralatan masak",
-        "烹饪用具；炊具",
-        "cooking equipment; cookware",
-        "alat / masak",
-        "工具／做饭"
-      ],
-      [
-        "rempah-rempah",
-        "香料；各种香辛料",
-        "spices",
-        "rempah",
-        "香料"
-      ],
-      [
-        "cobek",
-        "研钵；捣碎调料用的臼",
-        "mortar for grinding spices",
-        "cobek",
-        "研钵；臼"
-      ],
-      [
-        "parutan",
-        "擦菜器；刨丝器；也可指擦出的碎屑",
-        "grater; grated material",
-        "parut",
-        "擦碎；擦丝"
-      ],
-      [
-        "spatula",
-        "锅铲；刮刀（依形状和用途而定）",
-        "spatula; turner; scraper",
-        "spatula",
-        "锅铲；刮刀"
-      ],
-      [
-        "centong",
-        "饭勺；盛饭或舀取食物的勺具",
-        "rice paddle; serving scoop",
-        "centong",
-        "饭勺；舀取用的勺"
-      ],
-      [
-        "baskom",
-        "盆；洗涤或备料用的盆",
-        "basin; mixing or washing bowl",
-        "baskom",
-        "盆"
-      ],
-      [
-        "lap",
-        "抹布；擦拭用的布",
-        "wiping cloth; rag",
-        "lap",
-        "擦拭用布；擦"
-      ],
-      [
-        "bak cuci piring",
-        "洗碗池；厨房水槽",
-        "kitchen sink",
-        "bak / cuci / piring",
-        "池槽／洗／盘子"
-      ]
-    ],
-    "review_vocab": [
-      "tepuk tangan",
-      "nggak kepegang",
-      "bolak-balik",
-      "budaya",
-      "gagal"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
