@@ -361,6 +361,15 @@
       "needs_reinforcement": 829,
       "unverified": 0,
       "excluded_from_training": 92
+    },
+    {
+      "date": "2026-11-09",
+      "generated_at": "2026-11-08T23:41:10.171Z",
+      "taught_total": 1125,
+      "confirmed_mastered": 204,
+      "needs_reinforcement": 829,
+      "unverified": 0,
+      "excluded_from_training": 92
     }
   ]
 }

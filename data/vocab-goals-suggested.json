@@ -4,15 +4,15 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 990,
+   "use": 994,
    "recognize": 109,
-   "unsure": 21,
+   "unsure": 22,
    "fast": 137
   },
   "active": {
-   "use": 712,
+   "use": 716,
    "recognize": 93,
-   "unsure": 19,
+   "unsure": 20,
    "fast": 59
   }
  },
@@ -10312,6 +10312,52 @@
    "status": "active",
    "why": [
     "第二词库 A1 / A"
+   ]
+  },
+  "daya tahan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "pemulihan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "waspada": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "menyebar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "berangsur": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "rule+history",
+   "status": "active",
+   "why": [
+    "答错较多，不建议只要求认识",
+    "第二词库低重要度（B1 / B）"
    ]
   }
  }
