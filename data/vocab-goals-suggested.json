@@ -4,14 +4,14 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 984,
-   "recognize": 105,
+   "use": 990,
+   "recognize": 109,
    "unsure": 21,
    "fast": 137
   },
   "active": {
-   "use": 706,
-   "recognize": 89,
+   "use": 712,
+   "recognize": 93,
    "unsure": 19,
    "fast": 59
   }
@@ -10216,6 +10216,96 @@
    ]
   },
   "mandiri": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "resep": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "peralatan masak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "rempah-rempah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "cobek": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "parutan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "spatula": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "centong": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "baskom": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "lap": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "bak cuci piring": {
    "goal": "use",
    "fast": false,
    "by": "rule",
