@@ -8904,9 +8904,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-11-07 18:00",
+    "last_seen": "2026-11-08 08:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -8917,7 +8917,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-11",
       "2026-09-16",
       "2026-10-08",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
     "example": "Pesanan mendadak meledak, jadi beberapa pesan pelanggan nggak kepegang. Aku keteteran dan perlu bantuan.",
     "example_cn": "订单突然暴增，所以有些客户消息顾不过来。我忙得应付不过来，需要帮忙。",
@@ -8926,7 +8927,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-11 19:00",
       "2026-09-16 18:00",
       "2026-10-08 08:00",
-      "2026-11-07 18:00"
+      "2026-11-07 18:00",
+      "2026-11-08 08:00"
     ]
   },
   {
@@ -12853,17 +12855,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-21 08:00",
-    "last_seen": "2026-09-21 08:00",
+    "last_seen": "2026-11-08 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-21"
+      "2026-09-21",
+      "2026-11-08"
     ],
     "lesson_occurrences": [
-      "2026-09-21 08:00"
+      "2026-09-21 08:00",
+      "2026-11-08 08:00"
     ]
   },
   {
@@ -13906,19 +13910,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-22 08:00",
-    "last_seen": "2026-09-22 18:00",
+    "last_seen": "2026-11-08 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-22"
+      "2026-09-22",
+      "2026-11-08"
     ],
     "lesson_occurrences": [
       "2026-09-22 08:00",
-      "2026-09-22 18:00"
+      "2026-09-22 18:00",
+      "2026-11-08 08:00"
     ]
   },
   {
@@ -14103,19 +14109,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "因为信息还不清楚，我反复检查文件。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-22 18:00",
-    "last_seen": "2026-09-22 18:00",
+    "last_seen": "2026-11-08 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-22"
+      "2026-09-22",
+      "2026-11-08"
     ],
     "lesson_occurrences": [
-      "2026-09-22 18:00"
+      "2026-09-22 18:00",
+      "2026-11-08 08:00"
     ]
   },
   {
@@ -29647,19 +29657,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "那个孩子受到掌声时害羞得不知所措，拿书遮住了脸。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-06 18:00",
-    "last_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-08 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-08"
     ],
     "lesson_occurrences": [
-      "2026-11-06 18:00"
+      "2026-11-06 18:00",
+      "2026-11-08 08:00"
     ]
   },
   {
@@ -30041,6 +30055,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-07 18:00"
+    ]
+  },
+  {
+    "word": "resep",
+    "cn": "食谱；处方（另一个义项）",
+    "en": "recipe; prescription",
+    "root": "resep",
+    "root_cn": "食谱；处方",
+    "example": "Saya mengetik resep ini supaya tidak lupa jumlah bahannya. Kalau hanya mengandalkan ingatan, saya cenderung menambahkan terlalu banyak garam.",
+    "example_cn": "我把这个食谱打下来，免得忘记食材的用量。只凭记忆的话，我容易多放盐。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 08:00"
+    ]
+  },
+  {
+    "word": "peralatan masak",
+    "cn": "烹饪用具；炊具",
+    "en": "cooking equipment; cookware",
+    "root": "alat / masak",
+    "root_cn": "工具／做饭",
+    "example": "Bandingkan ukuran peralatan masak sebelum membeli. Panci besar belum tentu cocok untuk dapur kecil.",
+    "example_cn": "购买前比较一下炊具的大小。大锅不一定适合小厨房。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 08:00"
+    ]
+  },
+  {
+    "word": "rempah-rempah",
+    "cn": "香料；各种香辛料",
+    "en": "spices",
+    "root": "rempah",
+    "root_cn": "香料",
+    "example": "Aku mau ngirit, jadi beli rempah-rempah secukupnya dulu. Jangan sampai banyak yang terbuang karena jarang dipakai.",
+    "example_cn": "我想省点钱，所以先买够用的香料，免得因为不常用而浪费很多。（ngirit = berhemat）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 08:00"
+    ]
+  },
+  {
+    "word": "cobek",
+    "cn": "研钵；捣碎调料用的臼",
+    "en": "mortar for grinding spices",
+    "root": "cobek",
+    "root_cn": "研钵；臼",
+    "example": "Cobek kuno milik Nenek masih dipakai untuk membuat sambal. Bentuknya sederhana, tetapi permukaannya masih bagus.",
+    "example_cn": "奶奶那只老式研钵还在用来做辣椒酱。它造型简单，但表面仍然完好。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 08:00"
+    ]
+  },
+  {
+    "word": "parutan",
+    "cn": "擦菜器；刨丝器；也可指擦出的碎屑",
+    "en": "grater; grated material",
+    "root": "parut",
+    "root_cn": "擦碎；擦丝",
+    "example": "Apabila parutan masih kotor, cuci dahulu sebelum memarut kunyit. Pegang bahannya dengan hati-hati.",
+    "example_cn": "如果擦菜器还脏，先洗净再擦姜黄。拿食材时小心一点。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 08:00"
+    ]
+  },
+  {
+    "word": "spatula",
+    "cn": "锅铲；刮刀（依形状和用途而定）",
+    "en": "spatula; turner; scraper",
+    "root": "spatula",
+    "root_cn": "锅铲；刮刀",
+    "example": "Dimas cemas telurnya akan gosong. Ia mengambil spatula untuk membalik telur, lalu mengecilkan api.",
+    "example_cn": "迪马斯担心鸡蛋会焦。他拿锅铲翻鸡蛋，然后把火调小。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 08:00"
+    ]
+  },
+  {
+    "word": "centong",
+    "cn": "饭勺；盛饭或舀取食物的勺具",
+    "en": "rice paddle; serving scoop",
+    "root": "centong",
+    "root_cn": "饭勺；舀取用的勺",
+    "example": "Rani mengambil satu centong nasi untuk mencoba rasanya. Semoga kali ini hasilnya pas dan tidak terlalu lembek.",
+    "example_cn": "拉妮盛了一饭勺米饭尝尝味道。希望这次正合适，不会太软。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 08:00"
+    ]
+  },
+  {
+    "word": "baskom",
+    "cn": "盆；洗涤或备料用的盆",
+    "en": "basin; mixing or washing bowl",
+    "root": "baskom",
+    "root_cn": "盆",
+    "example": "Kami mencuci sayuran dalam baskom sebelum memotongnya. Sesuai kesepakatan, Rani menyiapkan sayur dan Dimas memasak nasi.",
+    "example_cn": "我们先在盆里洗菜，再切菜。按照约定，拉妮准备蔬菜，迪马斯煮饭。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 08:00"
+    ]
+  },
+  {
+    "word": "lap",
+    "cn": "抹布；擦拭用的布",
+    "en": "wiping cloth; rag",
+    "root": "lap",
+    "root_cn": "擦拭用布；擦",
+    "example": "Air tumpah di meja, tetapi Rani tidak kelabakan. Ia mengambil lap bersih dan mengeringkan meja sebelum melanjutkan memasak.",
+    "example_cn": "水洒在桌上，但拉妮没有手忙脚乱。她拿干净抹布擦干桌面，再继续做饭。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 08:00"
+    ]
+  },
+  {
+    "word": "bak cuci piring",
+    "cn": "洗碗池；厨房水槽",
+    "en": "kitchen sink",
+    "root": "bak / cuci / piring",
+    "root_cn": "池槽／洗／盘子",
+    "example": "Bak cuci piring sudah penuh. Karena waktunya kepepet, mereka membagi tugas agar dapur cepat rapi.",
+    "example_cn": "洗碗池已经堆满了。因为时间很紧，他们分工合作，让厨房尽快整洁。（kepepet = terdesak，口语）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-08 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-08"
+    ],
+    "lesson_occurrences": [
+      "2026-11-08 08:00"
     ]
   }
 ];

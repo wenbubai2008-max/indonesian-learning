@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-08",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 79
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-07T14:00:45.200Z",
-    "lesson_watermark": "2026-11-07 18:00",
-    "index_updated": "2026-11-07",
-    "runtime_hash": "ceb156366ae7288d4d2cdd3886f5625a05262bc2edf73f30e71fdfa103f1ff11",
-    "index_hash": "39b485c6383f40ad38b8bc12d6f8a7f6e360c100ab3908769741f00ab33ef3cf",
+    "runtime_generated_at": "2026-11-08T00:30:41.762Z",
+    "lesson_watermark": "2026-11-08 08:00",
+    "index_updated": "2026-11-08",
+    "runtime_hash": "3a18b6c51b25c59b04f969a494e74d3808ff37659e3f92f66e6a0ab5517b4317",
+    "index_hash": "f165eed8100b92428f72ee5ba784fe4c06d5423d92b7bd7271957bdbc6b09a07",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -77,10 +77,6 @@
       [
         "label",
         "标签"
-      ],
-      [
-        "resep",
-        "食谱；处方"
       ],
       [
         "iklan",
@@ -195,10 +191,6 @@
         "浴池/浴缸"
       ],
       [
-        "bak cuci piring",
-        "洗碗池"
-      ],
-      [
         "album foto",
         "相册"
       ],
@@ -211,10 +203,6 @@
         "三岔路口"
       ],
       [
-        "peralatan masak",
-        "炊具"
-      ],
-      [
         "setrika",
         "熨斗"
       ],
@@ -225,14 +213,6 @@
       [
         "guling",
         "长抱枕"
-      ],
-      [
-        "lap",
-        "抹布"
-      ],
-      [
-        "baskom",
-        "盆"
       ],
       [
         "bermain bulu tangkis",
@@ -387,10 +367,6 @@
         "宣传册；传单"
       ],
       [
-        "rempah-rempah",
-        "香料；各种香辛料"
-      ],
-      [
         "dipatok",
         "被定价；被固定"
       ],
@@ -439,24 +415,8 @@
         "吸尘器"
       ],
       [
-        "spatula",
-        "锅铲"
-      ],
-      [
-        "cobek",
-        "石臼/研钵"
-      ],
-      [
         "ulek",
         "研杵"
-      ],
-      [
-        "parutan",
-        "刨丝器"
-      ],
-      [
-        "centong",
-        "饭勺"
       ],
       [
         "seprai",
@@ -1689,16 +1649,6 @@
         "白费；没用"
       ],
       [
-        "budaya",
-        3,
-        0,
-        "",
-        "2026-10-15T13:45:14.584Z",
-        "文化",
-        "budaya",
-        "文化"
-      ],
-      [
         "ukuran",
         3,
         0,
@@ -1757,26 +1707,6 @@
         "问；询问（口语）",
         "tanya",
         "问；询问"
-      ],
-      [
-        "bolak-balik",
-        2,
-        0,
-        "",
-        "2026-10-15T13:37:13.432Z",
-        "来来回回；反复往返",
-        "bolak-balik",
-        "来回；反复"
-      ],
-      [
-        "gagal",
-        3,
-        0,
-        "",
-        "2026-10-21T01:42:51.248Z",
-        "失败",
-        "gagal",
-        "失败"
       ],
       [
         "mendengarkan",
@@ -2847,6 +2777,136 @@
         "为了（甘愿付出）",
         "demi",
         "为了"
+      ],
+      [
+        "gelar",
+        2,
+        0,
+        "",
+        "2026-10-21T01:42:56.967Z",
+        "学位；头衔",
+        "gelar",
+        "头衔；展开"
+      ],
+      [
+        "istimewa",
+        2,
+        0,
+        "",
+        "2026-10-21T01:44:01.335Z",
+        "特别的；特殊的；出众的",
+        "istimewa",
+        "特别"
+      ],
+      [
+        "menghasilkan",
+        2,
+        0,
+        "",
+        "2026-10-23T23:29:15.919Z",
+        "产出；生产；带来（结果）",
+        "hasil",
+        "结果；成果；产量"
+      ],
+      [
+        "resep",
+        3,
+        0,
+        "",
+        "",
+        "食谱；处方（另一个义项）",
+        "resep",
+        "食谱；处方"
+      ],
+      [
+        "peralatan masak",
+        3,
+        0,
+        "",
+        "",
+        "烹饪用具；炊具",
+        "alat / masak",
+        "工具／做饭"
+      ],
+      [
+        "rempah-rempah",
+        3,
+        0,
+        "",
+        "",
+        "香料；各种香辛料",
+        "rempah",
+        "香料"
+      ],
+      [
+        "cobek",
+        3,
+        0,
+        "",
+        "",
+        "研钵；捣碎调料用的臼",
+        "cobek",
+        "研钵；臼"
+      ],
+      [
+        "parutan",
+        3,
+        0,
+        "",
+        "",
+        "擦菜器；刨丝器；也可指擦出的碎屑",
+        "parut",
+        "擦碎；擦丝"
+      ],
+      [
+        "spatula",
+        3,
+        0,
+        "",
+        "",
+        "锅铲；刮刀（依形状和用途而定）",
+        "spatula",
+        "锅铲；刮刀"
+      ],
+      [
+        "centong",
+        3,
+        0,
+        "",
+        "",
+        "饭勺；盛饭或舀取食物的勺具",
+        "centong",
+        "饭勺；舀取用的勺"
+      ],
+      [
+        "baskom",
+        3,
+        0,
+        "",
+        "",
+        "盆；洗涤或备料用的盆",
+        "baskom",
+        "盆"
+      ],
+      [
+        "lap",
+        3,
+        0,
+        "",
+        "",
+        "抹布；擦拭用的布",
+        "lap",
+        "擦拭用布；擦"
+      ],
+      [
+        "bak cuci piring",
+        3,
+        0,
+        "",
+        "",
+        "洗碗池；厨房水槽",
+        "bak / cuci / piring",
+        "池槽／洗／盘子"
       ]
     ],
     "focus": [
@@ -3388,6 +3448,29 @@
         "identitas",
         "mandiri"
       ]
+    },
+    {
+      "date": "2026-11-08",
+      "session": "am",
+      "review_core": [
+        "tepuk tangan",
+        "nggak kepegang",
+        "bolak-balik",
+        "budaya",
+        "gagal"
+      ],
+      "new_words": [
+        "resep",
+        "peralatan masak",
+        "rempah-rempah",
+        "cobek",
+        "parutan",
+        "spatula",
+        "centong",
+        "baskom",
+        "lap",
+        "bak cuci piring"
+      ]
     }
   ],
   "previous_pm": {
@@ -3407,7 +3490,88 @@
       "bidang"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-08",
+    "vocab": [
+      [
+        "resep",
+        "食谱；处方（另一个义项）",
+        "recipe; prescription",
+        "resep",
+        "食谱；处方"
+      ],
+      [
+        "peralatan masak",
+        "烹饪用具；炊具",
+        "cooking equipment; cookware",
+        "alat / masak",
+        "工具／做饭"
+      ],
+      [
+        "rempah-rempah",
+        "香料；各种香辛料",
+        "spices",
+        "rempah",
+        "香料"
+      ],
+      [
+        "cobek",
+        "研钵；捣碎调料用的臼",
+        "mortar for grinding spices",
+        "cobek",
+        "研钵；臼"
+      ],
+      [
+        "parutan",
+        "擦菜器；刨丝器；也可指擦出的碎屑",
+        "grater; grated material",
+        "parut",
+        "擦碎；擦丝"
+      ],
+      [
+        "spatula",
+        "锅铲；刮刀（依形状和用途而定）",
+        "spatula; turner; scraper",
+        "spatula",
+        "锅铲；刮刀"
+      ],
+      [
+        "centong",
+        "饭勺；盛饭或舀取食物的勺具",
+        "rice paddle; serving scoop",
+        "centong",
+        "饭勺；舀取用的勺"
+      ],
+      [
+        "baskom",
+        "盆；洗涤或备料用的盆",
+        "basin; mixing or washing bowl",
+        "baskom",
+        "盆"
+      ],
+      [
+        "lap",
+        "抹布；擦拭用的布",
+        "wiping cloth; rag",
+        "lap",
+        "擦拭用布；擦"
+      ],
+      [
+        "bak cuci piring",
+        "洗碗池；厨房水槽",
+        "kitchen sink",
+        "bak / cuci / piring",
+        "池槽／洗／盘子"
+      ]
+    ],
+    "review_vocab": [
+      "tepuk tangan",
+      "nggak kepegang",
+      "bolak-balik",
+      "budaya",
+      "gagal"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
