@@ -1,0 +1,404 @@
+{
+  "date": "2026-11-09",
+  "session": "pm",
+  "time": "18:00",
+  "day": 80,
+  "title": "18:00 晚课｜Paku di Pertigaan: Ban Bocor Sepulang Kerja · 三岔路口的钉子：下班路上爆胎了",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "berkendara",
+    "pertigaan",
+    "menancap",
+    "menambalnya",
+    "kerusakan"
+  ],
+  "vocab": [
+    {
+      "word": "berkendara",
+      "display": "berkendara",
+      "audio_text": "berkendara",
+      "cn": "开车或骑车出行；驾驶（交通工具）",
+      "en": "to ride / drive (a vehicle)",
+      "root": "kendara",
+      "root_cn": "乘骑、驾驭（单独很少用）",
+      "formation": "ber- + kendara → berkendara（开车、骑车出行，不带宾语）。同族词：mengendarai（驾驶某辆车，带宾语：mengendarai motor）、pengendara（驾驶人、骑手）、kendaraan（交通工具）。常见搭配：berkendara dengan aman、berkendara malam hari、saat berkendara、hati-hati berkendara。",
+      "example": "Saat berkendara malam hari, pastikan lampu motormu menyala.",
+      "example_cn": "晚上开车骑车出行时，一定要确认你的摩托车灯是亮着的。",
+      "synonym_note": "berkendara 不带宾语，泛指“开车/骑车上路”；要说驾驶哪辆车用 mengendarai：Dia mengendarai motor baru. 口语说法：日常聊天多说 naik motor / bawa motor / nyetir（开汽车）；berkendara 多见于交通提示、新闻和较正式的提醒。",
+      "usage_note": "交通标语和家人叮嘱里很常见：Hati-hati berkendara, ya!（路上小心开车）。说“骑车上下班”时口语更常说 naik motor ke kantor。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "pertigaan",
+      "display": "pertigaan",
+      "audio_text": "pertigaan",
+      "cn": "三岔路口；丁字路口",
+      "en": "T-junction; three-way intersection",
+      "root": "tiga",
+      "root_cn": "三",
+      "formation": "per-an + tiga → pertigaan（三条路交汇的地方）。同类构词：perempatan（十字路口，empat = 四）。常见搭配：di pertigaan depan、pertigaan dekat pasar、belok kiri di pertigaan、lampu merah pertigaan。",
+      "example": "Dua sopir angkot sempat berkelahi di pertigaan itu karena berebut penumpang.",
+      "example_cn": "两个小巴司机为了抢乘客，曾在那个三岔路口打了起来。",
+      "synonym_note": "pertigaan 是三条路交汇；perempatan 是四条路交汇的十字路口。simpang 意思相近，较正式，也常出现在地名里（Simpang Lima）。口语里也直接说 pertigaan，没有别的常用说法。",
+      "usage_note": "指路时最常用：Nanti di pertigaan depan belok kiri, ya.（等会儿在前面的三岔路口左转。）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menancap",
+      "display": "menancap",
+      "audio_text": "menancap",
+      "cn": "扎进去；插在（某处）",
+      "en": "to be stuck in; to pierce into",
+      "root": "tancap",
+      "root_cn": "插、扎",
+      "formation": "meN- + tancap → menancap（尖的东西扎在某处，不带宾语）。menancapkan（把……插进去，带宾语：menancapkan bendera）、tertancap（被扎住、插着）。口语固定说法：tancap gas（猛踩油门、一溜烟开走）。常见搭配：paku menancap di ban、duri menancap di kaki、menancap kuat。",
+      "example": "Ada paku kecil menancap di ban belakang, makanya bannya kempis.",
+      "example_cn": "后轮扎着一根小钉子，难怪轮胎瘪了。",
+      "synonym_note": "menancap 强调尖物“扎进去以后插在那里”的状态；menusuk 是“刺、扎”这个动作，常说疼：Durinya menusuk jariku. 要说“把东西插进去”用 menancapkan。口语说法：nancep（Ada paku nancep di ban.）；写作和正式叙述用 menancap。",
+      "usage_note": "主语是钉子、刺、刀这类尖东西：Paku menancap di ban.；不要说 Ban menancap paku。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menambalnya",
+      "display": "menambalnya",
+      "audio_text": "menambalnya",
+      "cn": "把它补上；给它补好（补胎、补洞、补牙）",
+      "en": "to patch it",
+      "root": "tambal",
+      "root_cn": "补、补丁",
+      "formation": "meN- + tambal + -nya（它）→ menambalnya。同族词：menambal（补）、ditambal（被补）、tambalan（补丁、补的地方）、tukang tambal ban（补胎师傅）。常见搭配：menambal ban、menambal gigi（补牙）、menambal lubang di jalan。",
+      "example": "Ban sepeda anakku bocor, tapi tukang tambal ban di pasar bisa menambalnya dalam sepuluh menit.",
+      "example_cn": "我孩子的自行车胎漏气了，不过市场那边的补胎师傅十分钟就能补好。",
+      "synonym_note": "menambal 是在破洞上补一块，东西还用原来的；memperbaiki 是更广的“修理”；mengganti 是换新的：Bannya nggak bisa ditambal lagi, harus diganti. 口语说法：nambal（Ditambal aja, nggak usah ganti.），被动 ditambal 在口语里非常常用。",
+      "usage_note": "-nya 指前面已经说过的东西（这里是轮胎）。补胎在印尼路边到处都有，招牌一般写 Tambal Ban。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kerusakan",
+      "display": "kerusakan",
+      "audio_text": "kerusakan",
+      "cn": "损坏；损坏的情况；故障",
+      "en": "damage; breakdown",
+      "root": "rusak",
+      "root_cn": "坏的、损坏的",
+      "formation": "ke-an + rusak → kerusakan（损坏这件事或损坏的程度）。同族词：rusak（坏的）、merusak（破坏、弄坏）、perusakan（蓄意的破坏行为）。常见搭配：kerusakan ringan / parah、mengalami kerusakan、memeriksa kerusakan、tidak ada kerusakan lain。",
+      "example": "Untung kerusakannya tidak parah, cuma ban dalamnya yang sobek sedikit.",
+      "example_cn": "幸好损坏不严重，只是内胎破了一点。",
+      "synonym_note": "kerusakan 是名词（损坏的情况）；rusak 是形容词（坏了）：HP-ku rusak.；merusak 是动词（弄坏）：Jangan merusak fasilitas umum. 口语说法：日常一般直接说 rusak / ada yang rusak（Ada yang rusak lagi nggak, Pak?）；kerusakan 多用于检查结果、新闻、保险和维修单。",
+      "usage_note": "问师傅“还有别的地方坏吗？”口语说 Ada yang rusak lagi nggak?；师傅写单子或正式说明时才说 Tidak ada kerusakan lain.",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "dimaksudkan",
+      "display": "dimaksudkan",
+      "audio_text": "dimaksudkan",
+      "cn": "意在；本意是；（被）打算用来……",
+      "en": "to be intended (for / to)",
+      "root": "maksud",
+      "root_cn": "意思；目的",
+      "formation": "di- + maksud + -kan → dimaksudkan（被赋予某个用意）。同族词：bermaksud（人打算、有意）、maksudnya（意思是……）、yang dimaksud（所说的那个）。常见搭配：dimaksudkan untuk + 名词/动词、dimaksudkan supaya / agar + 句子。",
+      "example": "Polisi tidur di depan sekolah itu dimaksudkan supaya pengendara memperlambat motornya.",
+      "example_cn": "学校门口的减速带，本意是让骑车的人放慢速度。",
+      "synonym_note": "dimaksudkan 的主语是规定、设施、行为，讲“设计者的本意”：Aturan ini dimaksudkan untuk ….；bermaksud 的主语是人：Saya bermaksud minta izin.（我想请个假。）；yang dimaksud 是“所说的那个”：Bengkel yang dimaksud ada di sebelah pasar. 口语说法：聊天里一般说 maksudnya biar …（Maksudnya biar motor pelan-pelan.）；通知、说明里用 dimaksudkan。",
+      "usage_note": "最近常错的词：今晚用词形辨析选择题和中译印排序来练。记住先找主语：东西、规定 → dimaksudkan；人 → bermaksud。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ngotot",
+      "display": "ngotot",
+      "audio_text": "ngotot",
+      "cn": "硬要；死活坚持（口语）",
+      "en": "to insist stubbornly",
+      "root": "ngotot",
+      "root_cn": "强硬坚持、不肯让步",
+      "formation": "口语词，本身就是常用形式。常见搭配：ngotot mau …（硬要……）、ngotot minta …（坚持要求……）、jangan ngotot（别硬来）、ngotot banget。",
+      "example": "Penumpang di belakang tidak sabar dan ngotot minta sopir lewat jalan tikus.",
+      "example_cn": "后座的乘客等不及了，硬要司机走小路抄近道。",
+      "synonym_note": "ngotot 带“硬顶、不听劝”的味道，可以是贬义，也可以只是描述坚持到底；bersikeras 是规范、中性的“坚持”，多用于书面和新闻；keras kepala 形容一个人的性格固执。口语说法：ngotot 本身就是口语；正式场合说 bersikeras。",
+      "usage_note": "多说某一次的坚持：Dia ngotot mau pulang sekarang.；劝人别硬来：Udah, jangan ngotot.",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "pemulihan",
+      "display": "pemulihan",
+      "audio_text": "pemulihan",
+      "cn": "恢复（的过程）；康复",
+      "en": "recovery; restoration",
+      "root": "pulih",
+      "root_cn": "恢复（到原来的状态）",
+      "formation": "peN-an + pulih → pemulihan（恢复的过程）。同族词：pulih（恢复了）、memulihkan（使恢复）。常见搭配：masa pemulihan（康复期）、pemulihan jaringan / listrik（网络、电力恢复）、pemulihan ekonomi、dalam tahap pemulihan。",
+      "example": "Ada orang yang mencuri kabel internet di kompleks kami, jadi pemulihan jaringannya butuh dua hari.",
+      "example_cn": "有人偷了我们小区的网线，所以网络恢复要花两天。",
+      "synonym_note": "pemulihan 是过程名词；pulih 是“恢复了”的状态：Listriknya sudah pulih.；sembuh 只说人病好了：Ibu sudah sembuh. 病好了但体力还没回来时说 masih masa pemulihan。口语说法：聊天里常说 udah normal lagi / udah pulih（Sinyalnya udah normal lagi.）；pemulihan 多出现在通知、新闻里。",
+      "usage_note": "最近常错的词：昨晚学的是人的“康复期”，今晚换成网络、电力的“恢复”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "lemot",
+      "display": "lemot",
+      "audio_text": "lemot",
+      "cn": "卡；反应慢（多指手机、电脑、网络，口语）",
+      "en": "slow; laggy (devices, internet)",
+      "root": "lemot",
+      "root_cn": "慢、卡顿",
+      "formation": "口语词，不加词缀直接用。常见搭配：HP lemot、internet lemot、sinyal lemot、lemot banget。开玩笑说人反应慢也用（不太礼貌）：Kok lemot sih kamu?",
+      "example": "Bawahanku terus mengeluh karena laptop kantornya lemot.",
+      "example_cn": "我的下属一直抱怨，因为他的办公室笔记本电脑很卡。",
+      "synonym_note": "lambat 是标准、通用的“慢”；lemot 是口语，最常说设备和网络卡；lelet 也是口语，多说人做事慢吞吞：Jangan lelet, nanti telat! 口语说法：lemot 本身就是口语；正式写作、投诉信里用 lambat（Koneksi internet sangat lambat.）。",
+      "usage_note": "说网络卡时口语最自然：Internetnya lagi lemot.；写给客服的正式投诉换成 lambat。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "luas",
+      "display": "luas",
+      "audio_text": "luas",
+      "cn": "宽敞；面积大；（范围）广",
+      "en": "wide; spacious; broad",
+      "root": "luas",
+      "root_cn": "宽广、广泛",
+      "formation": "单纯词。同族词：luasnya（面积、范围）、memperluas（扩大）、secara luas（广泛地）。常见搭配：halaman yang luas、ruangan luas、wawasan luas（见识广）、dikenal secara luas。",
+      "example": "Pemandangan dari atas bukit itu luar biasa, sawahnya luas sampai ke kaki gunung.",
+      "example_cn": "从那座山丘上看去的风景太美了，稻田一直铺展到山脚下。",
+      "synonym_note": "luas 多说面积和范围（ruangan luas、wilayah yang luas、wawasan luas）；lebar 多说横向的宽度（jalan lebar、sungai lebar）。说路宽通常用 lebar，说空间大、地方大用 luas。口语里说地方大也常说 gede（Rumahnya gede banget.）。",
+      "usage_note": "形容地方：Halamannya luas.；形容影响、范围：Pemadamannya cukup luas.（停电范围挺广。）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "tercantum",
+      "display": "tercantum",
+      "audio_text": "tercantum",
+      "cn": "写明的；列在（价目牌、单据、文件等）上",
+      "en": "stated; listed (on a sign, document)",
+      "root": "cantum",
+      "root_cn": "载明、列入（单独很少用）",
+      "formation": "ter- + cantum → tercantum（已经写在上面、列在上面）。同族词：mencantumkan（写上、列明）、dicantumkan（被写上）。常见搭配：tercantum di …、seperti yang tercantum di …、harga yang tercantum。今天08:00新学。",
+      "example": "Nomor HP pemilik bengkel tercantum di spanduk, jadi kamu bisa menelepon dulu.",
+      "example_cn": "修车铺老板的手机号写在横幅上，所以你可以先打个电话。",
+      "synonym_note": "tercantum 偏书面，说“明确写在（文件、标签、牌子）上”；tertulis 更中性，口语书面都行：Di papan tertulis ….；mencantumkan 是主动“写上”：Jangan lupa mencantumkan nomor HP. 口语说法：聊天里常说 ada tulisannya / udah ditulis di situ。",
+      "usage_note": "今天08:00新学：早课在小店里看商品标签，今晚换到路边补胎摊的价目牌和横幅。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "dipatok",
+      "display": "dipatok",
+      "audio_text": "dipatok",
+      "cn": "被定为（固定的价格、目标）；定死了",
+      "en": "to be fixed / set (price, target)",
+      "root": "patok",
+      "root_cn": "桩子；界桩",
+      "formation": "di- + patok → dipatok（像钉桩子一样定死）。主动形式 mematok（定价、定目标）。常见搭配：harga dipatok …、tarif sudah dipatok、target dipatok。今天08:00新学。",
+      "example": "Ongkos ojek ke stasiun sudah dipatok Rp20.000, jadi tidak perlu menawar lagi.",
+      "example_cn": "到车站的摩的车费已经定死是两万盾，所以不用再讲价了。",
+      "synonym_note": "dipatok 强调“定死、不能改”；ditetapkan 是正式的“被规定”，多用于官方：Tarif ditetapkan oleh pemerintah. 口语说法：聊天里常说 harganya udah pas / udah fix, nggak bisa nawar。",
+      "usage_note": "今天08:00新学：早课是批发价被定死，今晚换成补胎、摩的这类路边服务的固定价钱。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Kamis malam, Dimas berkendara pulang dari kantor. Di pertigaan dekat pasar, motornya tiba-tiba terasa oleng. Ia menepi dan melihat sebuah paku menancap di ban belakang. Rumahnya masih tiga kilometer lagi, dan aplikasi peta di HP-nya lemot, jadi ia tidak bisa mencari bengkel. Seorang tukang parkir menunjukkan tempat tambal ban yang terletak di dekat pertigaan itu. Ia juga mengingatkan Dimas supaya tidak memaksakan motornya, karena ban yang kempis bisa merusak pelek. Pak Udin, tukang tambal ban, mencabut paku itu lalu menambalnya. Setelah memeriksa ban, ia berkata tidak ada kerusakan lain. Tarif tambal ban tercantum di papan kecil: Rp15.000 per lubang. Dimas pun pulang dengan tenang.",
+    "cn": "星期四晚上，Dimas 骑着摩托车下班回家。在市场附近的三岔路口，他的摩托车突然晃了起来。他把车停到路边，看见一根钉子扎在后轮上。家里还有三公里，手机上的地图应用又很卡，他没办法找修车铺。一位看车的停车员给他指了三岔路口附近的一个补胎摊。停车员还提醒 Dimas 别硬骑，因为瘪了的轮胎会把轮毂弄坏。补胎师傅 Pak Udin 拔出钉子，然后把轮胎补好了。检查完轮胎后，他说没有别的损坏。补胎的价钱写在一块小牌子上：每个洞一万五千盾。Dimas 这才安心地回家了。"
+  },
+  "dialogue": {
+    "title": "补胎摊前：钉子是哪儿来的？",
+    "lines": [
+      {
+        "speaker": "Dimas",
+        "id": "Pak, bisa tambal ban sekarang? Tadi ada paku nancep di ban belakang.",
+        "cn": "师傅，现在能补胎吗？刚才后轮扎了一根钉子。（nancep = menancap）"
+      },
+      {
+        "speaker": "Pak Udin",
+        "id": "Bisa, Mas. Wah, pakunya panjang juga. Untung Mas nggak maksa jalan jauh.",
+        "cn": "可以啊。哇，这钉子还挺长。幸好你没硬骑很远。（nggak = tidak，maksa = memaksa）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Tadi saya sempat ngotot mau langsung pulang, Pak. Untung tukang parkir di pertigaan ngelarang.",
+        "cn": "刚才我还硬要直接骑回家呢，师傅。幸好三岔路口那个停车员拦住了我。（ngelarang = melarang）"
+      },
+      {
+        "speaker": "Pak Udin",
+        "id": "Iya, kalau dipaksa, peleknya bisa ikut rusak. Biayanya jauh lebih mahal daripada tambal ban.",
+        "cn": "是啊，要是硬来，轮毂也会跟着坏掉。那花的钱可比补胎贵多了。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Jujur, tadi saya sempat curiga ada yang sengaja naruh paku di jalan.",
+        "cn": "说实话，刚才我还怀疑是有人故意在路上放钉子。（naruh = menaruh）"
+      },
+      {
+        "speaker": "Pak Udin",
+        "id": "Banyak yang menuduh tukang tambal ban begitu, Mas. Padahal paku ini dari proyek bangunan di pertigaan itu.",
+        "cn": "很多人都这样指责补胎师傅。其实这钉子是那个三岔路口工地上的。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Oh, pantes. Berapa, Pak? HP saya dari tadi lemot, nggak bisa buka peta.",
+        "cn": "哦，难怪。多少钱，师傅？我的手机一直很卡，打不开地图。（pantes = pantas）"
+      },
+      {
+        "speaker": "Pak Udin",
+        "id": "Lima belas ribu, Mas. Harganya udah dipatok segitu. Sinyal di sini emang jelek, katanya menaranya kena petir, masih proses pemulihan.",
+        "cn": "一万五。价钱就定死在这个数。这里信号确实差，听说信号塔被雷劈了，还在恢复中。（udah = sudah，emang = memang）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Wah, sinyalnya udah mulai membaik. Makasih, Pak, untung nggak ada yang rusak lagi.",
+        "cn": "哇，信号已经开始好转了。谢谢师傅，幸好没有别的地方坏。（makasih = terima kasih）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：朋友明天第一次骑摩托去新公司上班，要经过一个常出事的三岔路口。用 berkendara、pertigaan、menancap 给他发 2–3 句提醒，不照抄阅读。",
+      "reference_answer": "Besok hati-hati berkendara, ya. Tingkat kecelakaan di pertigaan dekat pom bensin itu lumayan tinggi, dan di situ lagi ada proyek, jadi banyak paku. Kalau ada paku menancap di ban, jangan dipaksa jalan, langsung cari tambal ban.",
+      "reference_cn": "明天骑车小心点哦。加油站旁边那个三岔路口事故率挺高的，那儿还在施工，钉子很多。要是有钉子扎进轮胎，别硬骑，马上找补胎的地方。"
+    },
+    {
+      "task": "最近常错的词造句：你们小区在路口新装了减速带，有邻居在业主群里坚持要求马上拆掉。用 dimaksudkan 和 ngotot 回复 2–3 句，礼貌说明装它的用意。",
+      "reference_answer": "Bapak-Ibu, polisi tidur yang baru itu dimaksudkan supaya motor tidak ngebut di depan TK. Saya paham polisi tidurnya agak mengganggu, tapi tolong jangan ngotot minta dibongkar dulu. Kita coba satu bulan, lalu dibahas lagi di rapat RT.",
+      "reference_cn": "各位叔叔阿姨，新装的减速带本意是不让摩托车在幼儿园门口飙车。我理解减速带有点碍事，但请先别坚持要拆。我们先试一个月，然后在居委会会议上再讨论。"
+    },
+    {
+      "task": "今天08:00新学的词换场景：朋友的手机一直很卡，你推荐他去你修过手机的店。用 tercantum、dipatok 和 lemot 发 2–3 句消息。",
+      "reference_answer": "HP kamu kan lemot terus. Coba bawa ke servis HP dekat kantorku. Harga ganti baterainya sudah dipatok Rp250.000, dan garansi tiga bulan tercantum di notanya. Pelayanannya juga mengesankan. Keuntungannya, kamu bisa tunggu di sana, cuma sejam.",
+      "reference_cn": "你的手机不是一直很卡吗？拿去我公司附近那家修手机的店看看吧。换电池的价钱定死是二十五万盾，三个月保修写在单据上。他们的服务也让人印象很深。好处是你可以在那儿等，只要一个小时。"
+    },
+    {
+      "task": "场景回应：你家那一片突然停电，你给在外地出差的家人发消息说明情况。用 kerusakan、pemulihan 和 luas 写 2–3 句。",
+      "reference_answer": "Listrik di rumah mati dari jam tujuh. Kata orang PLN, kerusakan gardu di ujung jalan cukup parah, jadi pemulihannya baru selesai besok pagi. Wilayah yang kena juga luas, satu kelurahan. Tenang aja, kami pakai lampu darurat dulu.",
+      "reference_cn": "家里从七点开始停电。电力公司的人说，路口变电箱损坏挺严重的，所以要到明天早上才能恢复。停电范围也挺广，整个街道都停了。放心，我们先用应急灯。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "小区群里的通知：“Portal di pertigaan ini ____ untuk mencegah truk besar masuk ke gang.” 哪项放进句中最自然？",
+        "options": [
+          "bermaksud",
+          "dimaksudkan",
+          "yang dimaksud",
+          "maksudnya"
+        ],
+        "answer_index": 1,
+        "answer": "dimaksudkan",
+        "explain": "主语是栏杆（portal）这个设施，讲设置它的本意，用 dimaksudkan untuk …。bermaksud 的主语必须是人（Kami bermaksud …）；yang dimaksud 是“所说的那个”，不能当谓语；maksudnya 是口语“意思是……”，后面接 untuk 不顺。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Pak Udin 检查完轮胎对 Dimas 说：“Untung nggak ada ____ lain, Mas. Cuma bannya yang bocor.” 哪项最自然？",
+        "options": [
+          "rusak",
+          "merusak",
+          "kerusakan",
+          "perusakan"
+        ],
+        "answer_index": 2,
+        "answer": "kerusakan",
+        "explain": "ada 后面要接名词“损坏的情况”，用 kerusakan。rusak 是形容词，要说 nggak ada yang rusak lagi；merusak 是动词“弄坏”；perusakan 是有人蓄意破坏，用在这里意思不对。"
+      },
+      {
+        "type": "choice",
+        "prompt": "外卖骑手打电话问路。从大路进来以后，路分成左右两条，你家在右边那条路上，门是绿色的。哪句回答最自然、也说得对？",
+        "options": [
+          "Nanti di perempatan setelah masjid, ambil kanan, rumah saya yang pagarnya hijau.",
+          "Nanti di pertigaan setelah masjid, berkendara kanan, rumah saya yang pagarnya hijau.",
+          "Nanti setelah masjid lurus terus sampai mentok, rumah saya yang pagarnya hijau.",
+          "Nanti di pertigaan setelah masjid, ambil kanan, rumah saya yang pagarnya hijau."
+        ],
+        "answer_index": 3,
+        "answer": "Nanti di pertigaan setelah masjid, ambil kanan, rumah saya yang pagarnya hijau.",
+        "explain": "路分成两条，是三岔路口 pertigaan，指路说 ambil kanan / belok kanan。perempatan 是十字路口，和情况不符；berkendara 不带方向，不能说 berkendara kanan；lurus terus sampai mentok（一直走到底）没有告诉他往右拐。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Ada paku kecil ____ di ban belakang motorku.（扎在里面）",
+        "answer": "menancap",
+        "explain": "尖的东西扎在某处用 menancap di …；口语说 nancep。要说“把东西插进去”才用 menancapkan。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Bannya bocor, tapi Pak Udin bisa ____ dalam lima belas menit.（把它补好）",
+        "answer": "menambalnya",
+        "explain": "menambal + -nya（它，指轮胎）。还能补就 ditambal，补不了才 diganti（换新）。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：这条规定的本意是保护行人。",
+        "tokens": [
+          "Aturan",
+          "ini",
+          "dimaksudkan",
+          "untuk",
+          "melindungi",
+          "pejalan",
+          "kaki."
+        ],
+        "answer": "Aturan ini dimaksudkan untuk melindungi pejalan kaki.",
+        "answer_cn": "这条规定的本意是保护行人。",
+        "explain": "规定是主语，所以用 dimaksudkan untuk + 动词；如果主语换成人，就说 Kami bermaksud melindungi pejalan kaki.（我们打算保护行人。）"
+      }
+    ],
+    "self_check": [
+      "不看中文，berkendara、pertigaan、menancap、menambalnya、kerusakan 这 5 个新词里，有没有哪个我 3 秒内说不出意思？",
+      "dimaksudkan、bermaksud、yang dimaksud 这三种说法，我能马上分清各自的主语和用法吗？",
+      "ngotot 和 lemot 这两个口语词，我能马上说出它们分别形容什么吗？",
+      "看到中文“恢复（的过程）”和“面积大、范围广”，我能马上说出 pemulihan 和 luas 吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "易混词各说一句：用 dimaksudkan 说一条你们公司或小区某个规定的用意，再用 bermaksud 说一句你自己最近打算做的事；然后用 menancap 和 menancapkan 各说一句（钉子扎在轮胎上／把旗子插在地上）。",
+      "用 pertigaan、menancap、menambalnya、kerusakan，30 秒复述 Dimas 那天晚上：在哪儿出的事、怎么发现的、谁帮他补好、最后花了多少钱。",
+      "联系自己：用今天08:00新学的 tercantum 和 dipatok 说一笔你最近付过的“价钱写明、不能讲价”的钱（停车费、理发、快递……）；再用 lemot 抱怨一次你的手机或网络，用 ngotot 说一次你或家人硬要做某件事的经历。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "dimaksudkan",
+      "ngotot",
+      "menancap"
+    ],
+    "patterns": [
+      {
+        "pattern": "… dimaksudkan supaya …",
+        "cn": "……的本意是让……",
+        "example": "Polisi tidur di depan sekolah itu dimaksudkan supaya pengendara memperlambat motornya.",
+        "example_cn": "学校门口的减速带，本意是让骑车的人放慢速度。"
+      },
+      {
+        "pattern": "Kalau dipaksa, … bisa ikut …",
+        "cn": "要是硬来，……也会跟着……",
+        "example": "Iya, kalau dipaksa, peleknya bisa ikut rusak.",
+        "example_cn": "是啊，要是硬来，轮毂也会跟着坏掉。"
+      }
+    ]
+  }
+}
