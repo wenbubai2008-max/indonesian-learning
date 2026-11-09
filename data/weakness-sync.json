@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-09T06:56:09.646Z",
+  "updated_at": "2026-11-09T09:44:10.110Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -605,20 +605,20 @@
     "nanggung": {
       "word": "nanggung",
       "status": "active",
-      "updated_at": "2026-11-08T07:34:43.364Z",
+      "updated_at": "2026-11-09T09:43:59.687Z",
       "display": "nanggung",
       "cn": "做到一半很尴尬；不上不下；既然都做到这了（口语）",
       "root": "tanggung",
       "root_cn": "承担；未完全结束（相关语境）",
       "last_wrong": "2026-11-08T07:34:43.306Z",
-      "last_review": "2026-11-08T07:34:43.306Z",
+      "last_review": "2026-11-09T09:43:59.619Z",
       "reasons": [
         "listening_slow",
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 3,
-      "right_streak": 0
+      "right_streak": 1
     },
     "molor": {
       "word": "molor",
