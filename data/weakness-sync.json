@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-09T09:44:10.110Z",
+  "updated_at": "2026-11-09T14:40:16.774Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -24978,11 +24978,11 @@
     "identitas": {
       "word": "identitas",
       "status": "active",
-      "updated_at": "2026-11-07T13:09:52.247Z",
+      "updated_at": "2026-11-09T14:39:43.979Z",
       "display": "identitas",
       "cn": "身份信息",
       "root": "identitas",
-      "last_review": "2026-11-07T13:09:52.186Z",
+      "last_review": "2026-11-09T14:39:43.920Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -24990,7 +24990,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "paspor": {
       "word": "paspor",
@@ -26193,17 +26193,17 @@
     "mandiri": {
       "word": "mandiri",
       "status": "active",
-      "updated_at": "2026-11-07T13:09:55.238Z",
+      "updated_at": "2026-11-09T14:39:40.308Z",
       "display": "mandiri",
       "cn": "独立的",
-      "last_review": "2026-11-07T13:09:55.175Z",
+      "last_review": "2026-11-09T14:39:40.245Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "penyayang": {
       "word": "penyayang",
@@ -26429,16 +26429,22 @@
     "pertigaan": {
       "word": "pertigaan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:22.792Z",
+      "updated_at": "2026-11-09T14:40:05.677Z",
       "display": "pertigaan",
-      "cn": "三岔路口",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "cn": "三岔路口；丁字路口",
+      "root": "tiga",
+      "root_cn": "三",
+      "last_wrong": "2026-11-09T14:35:52.816Z",
+      "last_review": "2026-11-09T14:40:05.620Z",
+      "source": "课程小测",
+      "source_date": "2026-11-09",
+      "session": "18:00",
       "reasons": [
-        "bipa_secondary_fuzzy"
+        "bipa_secondary_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 0
+      "wrong_count": 1,
+      "right_streak": 1
     },
     "bundaran": {
       "word": "bundaran",
@@ -27123,17 +27129,18 @@
     "berkendara": {
       "word": "berkendara",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:24.579Z",
+      "updated_at": "2026-11-09T14:39:50.926Z",
       "display": "berkendara",
       "cn": "驾驶/乘车",
       "root": "kendara",
+      "last_review": "2026-11-09T14:39:50.867Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "berkebun": {
       "word": "berkebun",
@@ -29351,17 +29358,18 @@
     "menancap": {
       "word": "menancap",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:23.042Z",
+      "updated_at": "2026-11-09T14:40:02.816Z",
       "display": "menancap",
       "cn": "扎入；插入",
       "root": "tancap",
+      "last_review": "2026-11-09T14:40:02.759Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "paku": {
       "word": "paku",
@@ -29395,17 +29403,22 @@
     "menambalnya": {
       "word": "menambalnya",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:23.114Z",
+      "updated_at": "2026-11-09T14:39:56.509Z",
       "display": "menambalnya",
-      "cn": "把它补好；给它补胎",
+      "cn": "把它补上；给它补好（补胎、补洞、补牙）",
       "root": "tambal",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "root_cn": "补、补丁",
+      "last_wrong": "2026-11-09T14:37:03.847Z",
+      "last_review": "2026-11-09T14:39:56.451Z",
+      "source": "课程小测",
+      "source_date": "2026-11-09",
+      "session": "18:00",
       "reasons": [
-        "bipa_secondary_fuzzy"
+        "bipa_secondary_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 0
+      "wrong_count": 1,
+      "right_streak": 1
     },
     "menyegarkan": {
       "word": "menyegarkan",
@@ -29555,17 +29568,17 @@
     "profesi": {
       "word": "profesi",
       "status": "active",
-      "updated_at": "2026-11-07T13:09:56.220Z",
+      "updated_at": "2026-11-09T14:39:41.782Z",
       "display": "profesi",
       "cn": "职业",
-      "last_review": "2026-11-07T13:09:56.160Z",
+      "last_review": "2026-11-09T14:39:41.721Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "pedagang": {
       "word": "pedagang",
@@ -29676,18 +29689,18 @@
     "lowongan kerja": {
       "word": "lowongan kerja",
       "status": "active",
-      "updated_at": "2026-11-07T13:09:53.464Z",
+      "updated_at": "2026-11-09T14:39:37.002Z",
       "display": "lowongan kerja",
       "cn": "职位空缺；招聘岗位",
       "root": "lowong",
-      "last_review": "2026-11-07T13:09:53.404Z",
+      "last_review": "2026-11-09T14:39:36.939Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "tanda tangan": {
       "word": "tanda tangan",
@@ -29858,17 +29871,22 @@
     "kerusakan": {
       "word": "kerusakan",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:24.031Z",
+      "updated_at": "2026-11-09T14:39:53.231Z",
       "display": "kerusakan",
-      "cn": "损坏；破坏",
+      "cn": "损坏；损坏的情况；故障",
       "root": "rusak",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "root_cn": "坏的、损坏的",
+      "last_wrong": "2026-11-09T14:34:40.853Z",
+      "last_review": "2026-11-09T14:39:53.174Z",
+      "source": "课程小测",
+      "source_date": "2026-11-09",
+      "session": "18:00",
       "reasons": [
-        "bipa_secondary_fuzzy"
+        "bipa_secondary_fuzzy",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 0
+      "wrong_count": 1,
+      "right_streak": 1
     },
     "menyebar": {
       "word": "menyebar",
@@ -30040,17 +30058,17 @@
     "syarat": {
       "word": "syarat",
       "status": "active",
-      "updated_at": "2026-11-07T13:09:58.530Z",
+      "updated_at": "2026-11-09T14:39:47.725Z",
       "display": "syarat",
       "cn": "条件；要求",
-      "last_review": "2026-11-07T13:09:58.471Z",
+      "last_review": "2026-11-09T14:39:47.666Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "nyinggung": {
       "word": "nyinggung",
