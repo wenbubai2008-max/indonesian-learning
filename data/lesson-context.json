@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-09",
-    "session": "pm",
-    "time": "18:00",
-    "day": 80
+    "date": "2026-11-10",
+    "session": "am",
+    "time": "08:00",
+    "day": 81
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-09T09:46:03.960Z",
-    "lesson_watermark": "2026-11-09 08:00",
+    "runtime_generated_at": "2026-11-09T10:53:34.529Z",
+    "lesson_watermark": "2026-11-09 18:00",
     "index_updated": "2026-11-09",
-    "runtime_hash": "40b587d8aa50f89e4432d19d9b7044814160b33f1b3db460239afc01dcddc074",
-    "index_hash": "1bbfbd9dd1ba235be0e3ea96d4f20dc087c2e5829e15f273bc029f4a205a934b",
+    "runtime_hash": "f5ba788d005f2d438cc75fc4a0de1e6e00c3b0c2727230217846bc5314670512",
+    "index_hash": "986f902ea2d9b34314486e3df1920a23a3daa50a434b6bd6d75dd1a0c86e7560",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -85,10 +85,6 @@
       [
         "gelombang",
         "波浪；浪潮"
-      ],
-      [
-        "kerusakan",
-        "损坏；破坏"
       ],
       [
         "berkaitan",
@@ -183,10 +179,6 @@
         "衣架"
       ],
       [
-        "pertigaan",
-        "三岔路口"
-      ],
-      [
         "setrika",
         "熨斗"
       ],
@@ -201,10 +193,6 @@
       [
         "bermain bulu tangkis",
         "打羽毛球"
-      ],
-      [
-        "berkendara",
-        "驾驶/乘车"
       ],
       [
         "emas",
@@ -303,16 +291,8 @@
         "砸到；压到；降临到"
       ],
       [
-        "menambalnya",
-        "把它补好；给它补胎"
-      ],
-      [
         "memperbaikinya",
         "把它修好"
-      ],
-      [
-        "menancap",
-        "扎入；插入"
       ],
       [
         "meloloskan diri",
@@ -1449,16 +1429,6 @@
         "议价；出价"
       ],
       [
-        "lemot",
-        3,
-        0,
-        "",
-        "2026-10-15T08:20:13.457Z",
-        "卡；慢（设备/网络）",
-        "lemot",
-        "慢；卡顿"
-      ],
-      [
         "walau",
         3,
         0,
@@ -1517,16 +1487,6 @@
         "拥挤的 / 热闹的",
         "ramai",
         "热闹；人多"
-      ],
-      [
-        "luas",
-        3,
-        0,
-        "",
-        "2026-10-15T13:35:07.056Z",
-        "宽阔的；广泛的",
-        "luas",
-        "宽广；广泛"
       ],
       [
         "resign",
@@ -2749,94 +2709,24 @@
         "形状；形式"
       ],
       [
-        "label",
-        3,
+        "kwitansi",
+        2,
         0,
         "",
-        "2026-11-09T06:55:46.241Z",
-        "标签（贴在商品上写价格、成分、日期等）",
-        "label",
-        "标签"
+        "2026-10-22T15:34:16.195Z",
+        "收据",
+        "kwitansi",
+        "收据（外来词）"
       ],
       [
-        "layak jual",
-        3,
+        "tukar",
+        2,
         0,
         "",
-        "2026-11-09T06:55:48.262Z",
-        "适合销售的；质量达标、可以卖的",
-        "layak",
-        "适合；够格"
-      ],
-      [
-        "keterangan",
-        3,
-        0,
-        "",
-        "2026-11-09T06:55:42.220Z",
-        "说明；信息；注释",
-        "terang",
-        "明亮；清楚"
-      ],
-      [
-        "lemari pendingin",
-        3,
-        0,
-        "",
-        "2026-11-09T06:55:50.641Z",
-        "冷藏柜；冰箱（偏正式）",
-        "dingin",
-        "冷"
-      ],
-      [
-        "penyimpanan",
-        3,
-        0,
-        "",
-        "2026-11-09T06:55:52.848Z",
-        "存放；储存（这件事或方式）",
-        "simpan",
-        "保存；收起"
-      ],
-      [
-        "struk",
-        3,
-        0,
-        "",
-        "2026-11-09T06:55:55.067Z",
-        "小票；购物收据",
-        "struk",
-        "小票"
-      ],
-      [
-        "brosur",
-        3,
-        0,
-        "",
-        "2026-11-09T06:55:33.385Z",
-        "宣传册；（折页）传单",
-        "brosur",
-        "宣传册"
-      ],
-      [
-        "dipatok",
-        3,
-        0,
-        "",
-        "2026-11-09T06:55:39.791Z",
-        "被定为（固定的价格、目标）；被定死",
-        "patok",
-        "桩子；界桩"
-      ],
-      [
-        "tawar-menawar",
-        3,
-        0,
-        "",
-        "2026-11-09T06:55:56.800Z",
-        "讨价还价",
-        "tawar",
-        "出价；还价"
+        "2026-10-24T02:33:23.286Z",
+        "更换；交换",
+        "tukar",
+        "交换；兑换"
       ]
     ],
     "focus": [
@@ -3096,46 +2986,6 @@
     "oral": []
   },
   "history_7d": [
-    {
-      "date": "2026-11-02",
-      "session": "am",
-      "review_core": [
-        "tampak",
-        "tanggung jawab",
-        "acara",
-        "benerin",
-        "jenis",
-        "muncul"
-      ],
-      "new_words": [
-        "angkatan",
-        "kehadiran",
-        "pendiam",
-        "nilai",
-        "ilmu",
-        "benci",
-        "menyukai",
-        "fakta",
-        "putuskan",
-        "diperlukan"
-      ]
-    },
-    {
-      "date": "2026-11-02",
-      "session": "pm",
-      "review_core": [
-        "nyinggung",
-        "sebel",
-        "kebablasan",
-        "nimpalin",
-        "kadang"
-      ],
-      "new_words": [
-        "tangkap",
-        "akal",
-        "sebutan"
-      ]
-    },
     {
       "date": "2026-11-03",
       "session": "am",
@@ -3402,107 +3252,44 @@
         "dipatok",
         "tawar-menawar"
       ]
+    },
+    {
+      "date": "2026-11-09",
+      "session": "pm",
+      "review_core": [
+        "dimaksudkan",
+        "ngotot",
+        "pemulihan",
+        "lemot",
+        "luas"
+      ],
+      "new_words": [
+        "berkendara",
+        "pertigaan",
+        "menancap",
+        "menambalnya",
+        "kerusakan"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "new_words": [
-      "daya tahan",
-      "pemulihan",
-      "waspada",
-      "menyebar",
-      "berangsur"
+      "berkendara",
+      "pertigaan",
+      "menancap",
+      "menambalnya",
+      "kerusakan"
     ],
     "review_core": [
-      "nanggung",
-      "apabila",
-      "menata",
-      "kenyang",
-      "komplain"
+      "dimaksudkan",
+      "ngotot",
+      "pemulihan",
+      "lemot",
+      "luas"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-09",
-    "vocab": [
-      [
-        "label",
-        "标签（贴在商品上写价格、成分、日期等）",
-        "label; tag",
-        "label",
-        "标签"
-      ],
-      [
-        "tercantum",
-        "写明的；被列在（文件、标签、合同等）上的",
-        "stated; listed (on a document or label)",
-        "cantum",
-        "载明；列入"
-      ],
-      [
-        "layak jual",
-        "适合销售的；质量达标、可以卖的",
-        "fit for sale; sellable",
-        "layak",
-        "适合；够格"
-      ],
-      [
-        "keterangan",
-        "说明；信息；注释",
-        "information; description; note",
-        "terang",
-        "明亮；清楚"
-      ],
-      [
-        "lemari pendingin",
-        "冷藏柜；冰箱（偏正式）",
-        "refrigerator; chiller cabinet",
-        "dingin",
-        "冷"
-      ],
-      [
-        "penyimpanan",
-        "存放；储存（这件事或方式）",
-        "storage",
-        "simpan",
-        "保存；收起"
-      ],
-      [
-        "struk",
-        "小票；购物收据",
-        "receipt (printed slip)",
-        "struk",
-        "小票"
-      ],
-      [
-        "brosur",
-        "宣传册；（折页）传单",
-        "brochure; leaflet",
-        "brosur",
-        "宣传册"
-      ],
-      [
-        "dipatok",
-        "被定为（固定的价格、目标）；被定死",
-        "to be fixed/set (price, target)",
-        "patok",
-        "桩子；界桩"
-      ],
-      [
-        "tawar-menawar",
-        "讨价还价",
-        "bargaining; haggling",
-        "tawar",
-        "出价；还价"
-      ]
-    ],
-    "review_vocab": [
-      "berangsur",
-      "menyebar",
-      "bercerai",
-      "kehilangan",
-      "langit"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

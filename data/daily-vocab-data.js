@@ -9413,17 +9413,17 @@ window.DAILY_VOCAB_DB = [
     "en": "insist strongly; be stubborn",
     "root": "ngotot",
     "root_cn": "强硬坚持；不肯让步",
-    "example": "Adikku ngotot mau ikut, padahal sudah malam.",
-    "example_cn": "弟弟/妹妹硬要跟着去，虽然已经很晚了。",
+    "example": "Penumpang di belakang tidak sabar dan ngotot minta sopir lewat jalan tikus.",
+    "example_cn": "后座的乘客等不及了，硬要司机走小路抄近道。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-05 18:00",
+    "last_seen": "2026-11-09 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -9434,7 +9434,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-16",
       "2026-09-28",
       "2026-10-02",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-09"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
@@ -9442,7 +9443,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-16 18:00",
       "2026-09-28 18:00",
       "2026-10-02 18:00",
-      "2026-10-05 18:00"
+      "2026-10-05 18:00",
+      "2026-11-09 18:00"
     ]
   },
   {
@@ -11531,24 +11533,28 @@ window.DAILY_VOCAB_DB = [
     "en": "slow; laggy",
     "root": "lemot",
     "root_cn": "慢；卡顿",
-    "example": "Internet di kantor agak lemot pagi ini.",
-    "example_cn": "今天早上办公室的网络有点卡。",
+    "example": "Bawahanku terus mengeluh karena laptop kantornya lemot.",
+    "example_cn": "我的下属一直抱怨，因为他的办公室笔记本电脑很卡。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-17 08:00",
+    "last_seen": "2026-11-09 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-11-09"
     ],
     "lesson_occurrences": [
-      "2026-09-17 08:00"
+      "2026-09-17 08:00",
+      "2026-11-09 18:00"
     ]
   },
   {
@@ -12368,23 +12374,25 @@ window.DAILY_VOCAB_DB = [
     "en": "wide; broad; extensive",
     "root": "luas",
     "root_cn": "宽广；广泛",
-    "example": "Masalah ini punya dampak yang cukup luas.",
-    "example_cn": "这个问题有相当广泛的影响。",
+    "example": "Pemandangan dari atas bukit itu luar biasa, sawahnya luas sampai ke kaki gunung.",
+    "example_cn": "从那座山丘上看去的风景太美了，稻田一直铺展到山脚下。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-19 18:00",
-    "last_seen": "2026-09-19 18:00",
+    "last_seen": "2026-11-09 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-19"
+      "2026-09-19",
+      "2026-11-09"
     ],
     "lesson_occurrences": [
-      "2026-09-19 18:00"
+      "2026-09-19 18:00",
+      "2026-11-09 18:00"
     ]
   },
   {
@@ -23219,16 +23227,16 @@ window.DAILY_VOCAB_DB = [
     "en": "to be intended (to / for)",
     "root": "maksud",
     "root_cn": "意思；目的",
-    "example": "Surat dari pengelola apartemen itu dimaksudkan sebagai pengingat, bukan ancaman.",
-    "example_cn": "公寓管理处发的那封信本意是提醒，不是威胁。",
+    "example": "Polisi tidur di depan sekolah itu dimaksudkan supaya pengendara memperlambat motornya.",
+    "example_cn": "学校门口的减速带，本意是让骑车的人放慢速度。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-19 08:00",
-    "last_seen": "2026-10-31 18:00",
+    "last_seen": "2026-11-09 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -23236,12 +23244,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-10-19",
       "2026-10-29",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-09"
     ],
     "lesson_occurrences": [
       "2026-10-19 08:00",
       "2026-10-29 18:00",
-      "2026-10-31 18:00"
+      "2026-10-31 18:00",
+      "2026-11-09 18:00"
     ]
   },
   {
@@ -30366,23 +30376,25 @@ window.DAILY_VOCAB_DB = [
     "en": "recovery",
     "root": "pulih",
     "root_cn": "恢复（到原来的状态）",
-    "example": "Kakinya masih bengkak setelah jatuh dari motor, jadi masa pemulihannya bisa sampai dua minggu.",
-    "example_cn": "他摔车后脚还肿着，所以康复期可能要两个星期。",
+    "example": "Ada orang yang mencuri kabel internet di kompleks kami, jadi pemulihan jaringannya butuh dua hari.",
+    "example_cn": "有人偷了我们小区的网线，所以网络恢复要花两天。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-08 18:00",
-    "last_seen": "2026-11-08 18:00",
+    "last_seen": "2026-11-09 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-09"
     ],
     "lesson_occurrences": [
-      "2026-11-08 18:00"
+      "2026-11-08 18:00",
+      "2026-11-09 18:00"
     ]
   },
   {
@@ -30499,23 +30511,26 @@ window.DAILY_VOCAB_DB = [
     "en": "stated; listed (on a document or label)",
     "root": "cantum",
     "root_cn": "载明；列入",
-    "example": "Harga yang tercantum di menu belum termasuk pajak, jadi total tagihannya lebih besar.",
-    "example_cn": "菜单上列出的价格还不含税，所以账单总额会更高。",
+    "example": "Nomor HP pemilik bengkel tercantum di spanduk, jadi kamu bisa menelepon dulu.",
+    "example_cn": "修车铺老板的手机号写在横幅上，所以你可以先打个电话。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-09 08:00",
-    "last_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-09"
     ],
     "lesson_occurrences": [
-      "2026-11-09 08:00"
+      "2026-11-09 08:00",
+      "2026-11-09 18:00"
     ]
   },
   {
@@ -30674,23 +30689,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to be fixed/set (price, target)",
     "root": "patok",
     "root_cn": "桩子；界桩",
-    "example": "Tarif parkir di mal itu dipatok Rp5.000 per jam.",
-    "example_cn": "那家商场的停车费定为每小时 5000 印尼盾。",
+    "example": "Ongkos ojek ke stasiun sudah dipatok Rp20.000, jadi tidak perlu menawar lagi.",
+    "example_cn": "到车站的摩的车费已经定死是两万盾，所以不用再讲价了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-09 08:00",
-    "last_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-09"
     ],
     "lesson_occurrences": [
-      "2026-11-09 08:00"
+      "2026-11-09 08:00",
+      "2026-11-09 18:00"
     ]
   },
   {
@@ -30716,6 +30734,131 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "berkendara",
+    "cn": "开车或骑车出行；驾驶（交通工具）",
+    "en": "to ride / drive (a vehicle)",
+    "root": "kendara",
+    "root_cn": "乘骑、驾驭（单独很少用）",
+    "example": "Saat berkendara malam hari, pastikan lampu motormu menyala.",
+    "example_cn": "晚上开车骑车出行时，一定要确认你的摩托车灯是亮着的。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 18:00",
+    "last_seen": "2026-11-09 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 18:00"
+    ]
+  },
+  {
+    "word": "pertigaan",
+    "cn": "三岔路口；丁字路口",
+    "en": "T-junction; three-way intersection",
+    "root": "tiga",
+    "root_cn": "三",
+    "example": "Dua sopir angkot sempat berkelahi di pertigaan itu karena berebut penumpang.",
+    "example_cn": "两个小巴司机为了抢乘客，曾在那个三岔路口打了起来。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 18:00",
+    "last_seen": "2026-11-09 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 18:00"
+    ]
+  },
+  {
+    "word": "menancap",
+    "cn": "扎进去；插在（某处）",
+    "en": "to be stuck in; to pierce into",
+    "root": "tancap",
+    "root_cn": "插、扎",
+    "example": "Ada paku kecil menancap di ban belakang, makanya bannya kempis.",
+    "example_cn": "后轮扎着一根小钉子，难怪轮胎瘪了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 18:00",
+    "last_seen": "2026-11-09 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 18:00"
+    ]
+  },
+  {
+    "word": "menambalnya",
+    "cn": "把它补上；给它补好（补胎、补洞、补牙）",
+    "en": "to patch it",
+    "root": "tambal",
+    "root_cn": "补、补丁",
+    "example": "Ban sepeda anakku bocor, tapi tukang tambal ban di pasar bisa menambalnya dalam sepuluh menit.",
+    "example_cn": "我孩子的自行车胎漏气了，不过市场那边的补胎师傅十分钟就能补好。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 18:00",
+    "last_seen": "2026-11-09 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 18:00"
+    ]
+  },
+  {
+    "word": "kerusakan",
+    "cn": "损坏；损坏的情况；故障",
+    "en": "damage; breakdown",
+    "root": "rusak",
+    "root_cn": "坏的、损坏的",
+    "example": "Untung kerusakannya tidak parah, cuma ban dalamnya yang sobek sedikit.",
+    "example_cn": "幸好损坏不严重，只是内胎破了一点。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 18:00",
+    "last_seen": "2026-11-09 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 18:00"
     ]
   }
 ];
