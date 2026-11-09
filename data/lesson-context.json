@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-09",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 80
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-08T23:41:09.943Z",
-    "lesson_watermark": "2026-11-08 18:00",
-    "index_updated": "2026-11-08",
-    "runtime_hash": "7f1390d1733e1e1d064a090677b13347c075e675c739ffbd426349b745d5663e",
-    "index_hash": "b688278e4bd00cf53c9da460350e23e35ac23a01c627edbe8ec5bab2010a2a38",
+    "runtime_generated_at": "2026-11-09T00:31:14.043Z",
+    "lesson_watermark": "2026-11-09 08:00",
+    "index_updated": "2026-11-09",
+    "runtime_hash": "9a52f433d861bf1e39c9171b4ab328d899c9105d2bd5acf857a3b589627d40de",
+    "index_hash": "1bbfbd9dd1ba235be0e3ea96d4f20dc087c2e5829e15f273bc029f4a205a934b",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -69,14 +69,6 @@
       [
         "digunakan",
         "被使用"
-      ],
-      [
-        "tawar-menawar",
-        "讨价还价"
-      ],
-      [
-        "label",
-        "标签"
       ],
       [
         "iklan",
@@ -275,10 +267,6 @@
         "弯腰"
       ],
       [
-        "struk",
-        "小票/收据"
-      ],
-      [
         "wisuda",
         "毕业典礼；毕业"
       ],
@@ -335,36 +323,8 @@
         "排成一列；列队"
       ],
       [
-        "penyimpanan",
-        "存放；储存"
-      ],
-      [
-        "keterangan",
-        "说明；信息；注释"
-      ],
-      [
         "ketersediaannya",
         "它的可用情况；库存情况"
-      ],
-      [
-        "brosur",
-        "宣传册；传单"
-      ],
-      [
-        "dipatok",
-        "被定价；被固定"
-      ],
-      [
-        "tercantum",
-        "被列明；写在上面"
-      ],
-      [
-        "layak jual",
-        "适合销售"
-      ],
-      [
-        "lemari pendingin",
-        "冰箱；冷藏柜"
       ],
       [
         "penonton",
@@ -1579,16 +1539,6 @@
         "辞职"
       ],
       [
-        "langit",
-        3,
-        0,
-        "",
-        "2026-10-15T13:46:28.965Z",
-        "天空",
-        "langit",
-        "天空"
-      ],
-      [
         "pemimpin",
         2,
         0,
@@ -1707,16 +1657,6 @@
         "惊讶；震惊",
         "kejut",
         "惊；使吃惊"
-      ],
-      [
-        "kehilangan",
-        3,
-        0,
-        "",
-        "2026-10-15T13:44:53.967Z",
-        "失去",
-        "hilang",
-        "消失；丢失"
       ],
       [
         "menambahkan",
@@ -2489,16 +2429,6 @@
         "打；争吵"
       ],
       [
-        "bercerai",
-        2,
-        0,
-        "",
-        "2026-10-19T13:14:54.657Z",
-        "离婚；分开",
-        "cerai",
-        "分开；离婚"
-      ],
-      [
         "cemas",
         2,
         0,
@@ -2787,6 +2717,136 @@
         "由……制成的",
         "buat",
         "做；制作"
+      ],
+      [
+        "yaitu",
+        2,
+        0,
+        "",
+        "2026-10-24T02:34:03.190Z",
+        "即；就是；也就是",
+        "yaitu",
+        "即"
+      ],
+      [
+        "salah tingkah",
+        3,
+        2,
+        "2026-10-01T12:32:10.275Z",
+        "2026-10-13T15:13:17.405Z",
+        "紧张尴尬到不知所措",
+        "tingkah",
+        "举止；行为"
+      ],
+      [
+        "bentuk",
+        2,
+        0,
+        "",
+        "2026-10-19T13:14:44.583Z",
+        "形状；形式",
+        "bentuk",
+        "形状；形式"
+      ],
+      [
+        "label",
+        3,
+        0,
+        "",
+        "",
+        "标签（贴在商品上写价格、成分、日期等）",
+        "label",
+        "标签"
+      ],
+      [
+        "tercantum",
+        3,
+        0,
+        "",
+        "",
+        "写明的；被列在（文件、标签、合同等）上的",
+        "cantum",
+        "载明；列入"
+      ],
+      [
+        "layak jual",
+        3,
+        0,
+        "",
+        "",
+        "适合销售的；质量达标、可以卖的",
+        "layak",
+        "适合；够格"
+      ],
+      [
+        "keterangan",
+        3,
+        0,
+        "",
+        "",
+        "说明；信息；注释",
+        "terang",
+        "明亮；清楚"
+      ],
+      [
+        "lemari pendingin",
+        3,
+        0,
+        "",
+        "",
+        "冷藏柜；冰箱（偏正式）",
+        "dingin",
+        "冷"
+      ],
+      [
+        "penyimpanan",
+        3,
+        0,
+        "",
+        "",
+        "存放；储存（这件事或方式）",
+        "simpan",
+        "保存；收起"
+      ],
+      [
+        "struk",
+        3,
+        0,
+        "",
+        "",
+        "小票；购物收据",
+        "struk",
+        "小票"
+      ],
+      [
+        "brosur",
+        3,
+        0,
+        "",
+        "",
+        "宣传册；（折页）传单",
+        "brosur",
+        "宣传册"
+      ],
+      [
+        "dipatok",
+        3,
+        0,
+        "",
+        "",
+        "被定为（固定的价格、目标）；被定死",
+        "patok",
+        "桩子；界桩"
+      ],
+      [
+        "tawar-menawar",
+        3,
+        0,
+        "",
+        "",
+        "讨价还价",
+        "tawar",
+        "出价；还价"
       ]
     ],
     "focus": [
@@ -3331,6 +3391,29 @@
         "menyebar",
         "berangsur"
       ]
+    },
+    {
+      "date": "2026-11-09",
+      "session": "am",
+      "review_core": [
+        "berangsur",
+        "menyebar",
+        "bercerai",
+        "kehilangan",
+        "langit"
+      ],
+      "new_words": [
+        "label",
+        "tercantum",
+        "layak jual",
+        "keterangan",
+        "lemari pendingin",
+        "penyimpanan",
+        "struk",
+        "brosur",
+        "dipatok",
+        "tawar-menawar"
+      ]
     }
   ],
   "previous_pm": {
@@ -3350,7 +3433,88 @@
       "komplain"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-09",
+    "vocab": [
+      [
+        "label",
+        "标签（贴在商品上写价格、成分、日期等）",
+        "label; tag",
+        "label",
+        "标签"
+      ],
+      [
+        "tercantum",
+        "写明的；被列在（文件、标签、合同等）上的",
+        "stated; listed (on a document or label)",
+        "cantum",
+        "载明；列入"
+      ],
+      [
+        "layak jual",
+        "适合销售的；质量达标、可以卖的",
+        "fit for sale; sellable",
+        "layak",
+        "适合；够格"
+      ],
+      [
+        "keterangan",
+        "说明；信息；注释",
+        "information; description; note",
+        "terang",
+        "明亮；清楚"
+      ],
+      [
+        "lemari pendingin",
+        "冷藏柜；冰箱（偏正式）",
+        "refrigerator; chiller cabinet",
+        "dingin",
+        "冷"
+      ],
+      [
+        "penyimpanan",
+        "存放；储存（这件事或方式）",
+        "storage",
+        "simpan",
+        "保存；收起"
+      ],
+      [
+        "struk",
+        "小票；购物收据",
+        "receipt (printed slip)",
+        "struk",
+        "小票"
+      ],
+      [
+        "brosur",
+        "宣传册；（折页）传单",
+        "brochure; leaflet",
+        "brosur",
+        "宣传册"
+      ],
+      [
+        "dipatok",
+        "被定为（固定的价格、目标）；被定死",
+        "to be fixed/set (price, target)",
+        "patok",
+        "桩子；界桩"
+      ],
+      [
+        "tawar-menawar",
+        "讨价还价",
+        "bargaining; haggling",
+        "tawar",
+        "出价；还价"
+      ]
+    ],
+    "review_vocab": [
+      "berangsur",
+      "menyebar",
+      "bercerai",
+      "kehilangan",
+      "langit"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

@@ -12783,19 +12783,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "今天傍晚天空仍然晴朗，虽然刚才一度下过雨。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-20 18:00",
-    "last_seen": "2026-09-20 18:00",
+    "last_seen": "2026-11-09 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-20"
+      "2026-09-20",
+      "2026-11-09"
     ],
     "lesson_occurrences": [
-      "2026-09-20 18:00"
+      "2026-09-20 18:00",
+      "2026-11-09 08:00"
     ]
   },
   {
@@ -13142,9 +13146,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-22 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-09 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13152,12 +13156,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-22",
       "2026-09-23",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-09"
     ],
     "lesson_occurrences": [
       "2026-09-22 08:00",
       "2026-09-23 18:00",
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-11-09 08:00"
     ]
   },
   {
@@ -13347,17 +13353,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-23 08:00",
+    "last_seen": "2026-11-09 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-23"
+      "2026-09-23",
+      "2026-11-09"
     ],
     "lesson_occurrences": [
-      "2026-09-23 08:00"
+      "2026-09-23 08:00",
+      "2026-11-09 08:00"
     ]
   },
   {
@@ -30412,19 +30420,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "我没想到这个消息在公司群里传得那么快。（nggak = tidak，nyangka = menyangka）",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-08 18:00",
-    "last_seen": "2026-11-08 18:00",
+    "last_seen": "2026-11-09 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-09"
     ],
     "lesson_occurrences": [
-      "2026-11-08 18:00"
+      "2026-11-08 18:00",
+      "2026-11-09 08:00"
     ]
   },
   {
@@ -30437,19 +30449,273 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "吃了药、休息之后，他的咳嗽慢慢好了。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-08 18:00",
-    "last_seen": "2026-11-08 18:00",
+    "last_seen": "2026-11-09 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-09"
     ],
     "lesson_occurrences": [
-      "2026-11-08 18:00"
+      "2026-11-08 18:00",
+      "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "label",
+    "cn": "标签（贴在商品上写价格、成分、日期等）",
+    "en": "label; tag",
+    "root": "label",
+    "root_cn": "标签",
+    "example": "Label harganya nyelip di bawah botol, makanya pembeli nggak ngeh harganya berapa.",
+    "example_cn": "价签夹在瓶子底下了，所以顾客没注意到价格是多少。（nggak = tidak；makanya = karena itu）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "tercantum",
+    "cn": "写明的；被列在（文件、标签、合同等）上的",
+    "en": "stated; listed (on a document or label)",
+    "root": "cantum",
+    "root_cn": "载明；列入",
+    "example": "Harga yang tercantum di menu belum termasuk pajak, jadi total tagihannya lebih besar.",
+    "example_cn": "菜单上列出的价格还不含税，所以账单总额会更高。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "layak jual",
+    "cn": "适合销售的；质量达标、可以卖的",
+    "en": "fit for sale; sellable",
+    "root": "layak",
+    "root_cn": "适合；够格",
+    "example": "Telur yang retak tidak memenuhi standar toko, jadi dianggap tidak layak jual.",
+    "example_cn": "裂了的鸡蛋不符合店里的标准，所以被认为不适合出售。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "keterangan",
+    "cn": "说明；信息；注释",
+    "en": "information; description; note",
+    "root": "terang",
+    "root_cn": "明亮；清楚",
+    "example": "Nenek selalu membaca keterangan di kemasan obat sebelum minum. Beliau mengikuti anjuran dokter dengan teliti.",
+    "example_cn": "奶奶吃药前总会先看药盒上的说明。她很仔细地遵照医嘱。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "lemari pendingin",
+    "cn": "冷藏柜；冰箱（偏正式）",
+    "en": "refrigerator; chiller cabinet",
+    "root": "dingin",
+    "root_cn": "冷",
+    "example": "Lemari pendingin di toko itu rusak sejak semalam, jadi es krimnya meleleh semua.",
+    "example_cn": "那家店的冷藏柜从昨晚就坏了，所以冰淇淋全化了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "penyimpanan",
+    "cn": "存放；储存（这件事或方式）",
+    "en": "storage",
+    "root": "simpan",
+    "root_cn": "保存；收起",
+    "example": "Cara penyimpanan: simpan di tempat sejuk dan kering, jauhkan dari sinar matahari.",
+    "example_cn": "储存方法：存放于阴凉干燥处，避免阳光照射。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "struk",
+    "cn": "小票；购物收据",
+    "en": "receipt (printed slip)",
+    "root": "struk",
+    "root_cn": "小票",
+    "example": "Kasirnya nyelipin struk ke dalam kantong belanja, jadi jangan dibuang dulu.",
+    "example_cn": "收银员把小票塞进购物袋里了，所以先别扔。（nyelipin = menyelipkan）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "brosur",
+    "cn": "宣传册；（折页）传单",
+    "en": "brochure; leaflet",
+    "root": "brosur",
+    "root_cn": "宣传册",
+    "example": "Brosur promo itu dibagikan di depan pasar, dan kabar diskonnya cepat menyebar di grup WhatsApp kompleks.",
+    "example_cn": "那份促销传单在市场门口发放，打折的消息很快在小区 WhatsApp 群里传开了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "dipatok",
+    "cn": "被定为（固定的价格、目标）；被定死",
+    "en": "to be fixed/set (price, target)",
+    "root": "patok",
+    "root_cn": "桩子；界桩",
+    "example": "Tarif parkir di mal itu dipatok Rp5.000 per jam.",
+    "example_cn": "那家商场的停车费定为每小时 5000 印尼盾。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 08:00"
+    ]
+  },
+  {
+    "word": "tawar-menawar",
+    "cn": "讨价还价",
+    "en": "bargaining; haggling",
+    "root": "tawar",
+    "root_cn": "出价；还价",
+    "example": "Pembelinya sempat ngegas waktu tawar-menawar, tapi penjualnya nggak kepancing dan menjawab dengan sabar.",
+    "example_cn": "讨价还价时那位顾客一度语气很冲，但卖家没被激到，耐心地回答。（nggak = tidak）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-09 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-09"
+    ],
+    "lesson_occurrences": [
+      "2026-11-09 08:00"
     ]
   }
 ];
