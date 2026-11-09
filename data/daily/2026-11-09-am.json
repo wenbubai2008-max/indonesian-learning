@@ -1,0 +1,380 @@
+{
+  "date": "2026-11-09",
+  "session": "am",
+  "time": "08:00",
+  "day": 80,
+  "title": "08:00 早课｜Cek Label Sebelum Warung Buka · 小店开门前，先看清标签",
+  "vocab": [
+    {
+      "word": "label",
+      "display": "label",
+      "audio_text": "label",
+      "cn": "标签（贴在商品上写价格、成分、日期等）",
+      "en": "label; tag",
+      "root": "label",
+      "root_cn": "标签",
+      "formation": "外来名词，不拆印尼语词缀。常见搭配：label harga（价签）、label kemasan（包装标签）、membaca label、menempelkan label（贴标签）。",
+      "example": "Label harganya nyelip di bawah botol, makanya pembeli nggak ngeh harganya berapa.",
+      "example_cn": "价签夹在瓶子底下了，所以顾客没注意到价格是多少。（nggak = tidak；makanya = karena itu）",
+      "synonym_note": "label 是贴在东西上的标签本身；merek 是品牌名，比如 label 上可以印着 merek。说“看清标签上的信息”用 membaca label。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tercantum",
+      "display": "tercantum",
+      "audio_text": "tercantum",
+      "cn": "写明的；被列在（文件、标签、合同等）上的",
+      "en": "stated; listed (on a document or label)",
+      "root": "cantum",
+      "root_cn": "载明；列入",
+      "formation": "ter- + cantum。词根 cantum 很少单独使用；ter- 在这里表示“已经写在上面”的状态。主动形 mencantumkan＝把……写上、列明（Toko wajib mencantumkan harga）。常见搭配：tercantum di label / di struk / dalam kontrak、harga yang tercantum。",
+      "example": "Harga yang tercantum di menu belum termasuk pajak, jadi total tagihannya lebih besar.",
+      "example_cn": "菜单上列出的价格还不含税，所以账单总额会更高。",
+      "synonym_note": "tertulis 是通用的“写着”；tercantum 偏书面，强调“被正式列在文件、标签、合同上”。日常说话两者常可互换：Tanggalnya tertulis / tercantum di label。口语说法：Di labelnya ada tulisan tanggalnya.（标签上写着日期。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "layak jual",
+      "display": "layak jual",
+      "audio_text": "layak jual",
+      "cn": "适合销售的；质量达标、可以卖的",
+      "en": "fit for sale; sellable",
+      "root": "layak",
+      "root_cn": "适合；够格",
+      "formation": "layak（够标准、合格）+ jual（卖）构成的固定短语，常用于商品检查：barang layak jual / tidak layak jual。同类说法：layak pakai（还能用）、layak huni（适合居住）、layak makan（可以吃）。",
+      "example": "Telur yang retak tidak memenuhi standar toko, jadi dianggap tidak layak jual.",
+      "example_cn": "裂了的鸡蛋不符合店里的标准，所以被认为不适合出售。",
+      "synonym_note": "layak jual 看的是质量：东西有没有达到可以卖的标准。cocok dijual 多指“适合拿来卖、好卖”（Kue ini cocok dijual saat Lebaran），说的是有没有市场，意思不同。",
+      "is_oral_new": false
+    },
+    {
+      "word": "keterangan",
+      "display": "keterangan",
+      "audio_text": "keterangan",
+      "cn": "说明；信息；注释",
+      "en": "information; description; note",
+      "root": "terang",
+      "root_cn": "明亮；清楚",
+      "formation": "ke-an + terang：把事情“弄清楚”的内容 → 说明、信息。同词根：menerangkan（解释、说明）、penerangan（照明；宣传说明）。常见搭配：keterangan produk、keterangan di kemasan、surat keterangan（证明信）、memberi keterangan（提供说明/作证）。",
+      "example": "Nenek selalu membaca keterangan di kemasan obat sebelum minum. Beliau mengikuti anjuran dokter dengan teliti.",
+      "example_cn": "奶奶吃药前总会先看药盒上的说明。她很仔细地遵照医嘱。",
+      "synonym_note": "keterangan 多指写出来或口头给出的具体说明；informasi 更泛指“信息、资讯”。surat keterangan 是固定说法“证明信”，如 surat keterangan sehat（健康证明）。口语里常问：Ada keterangannya nggak?（有说明吗？）",
+      "is_oral_new": false
+    },
+    {
+      "word": "lemari pendingin",
+      "display": "lemari pendingin",
+      "audio_text": "lemari pendingin",
+      "cn": "冷藏柜；冰箱（偏正式）",
+      "en": "refrigerator; chiller cabinet",
+      "root": "dingin",
+      "root_cn": "冷",
+      "formation": "lemari（柜子）+ pendingin。pendingin＝peN- + dingin（peN- 遇 d 变 pen-），意思是“使东西变冷的装置”。lemari pendingin 常用于说明文字、商店的立式冷藏柜或正式场合。",
+      "example": "Lemari pendingin di toko itu rusak sejak semalam, jadi es krimnya meleleh semua.",
+      "example_cn": "那家店的冷藏柜从昨晚就坏了，所以冰淇淋全化了。",
+      "synonym_note": "家里的冰箱日常多说 kulkas；包装说明、商店设备常写 lemari pendingin；freezer 是冷冻室。口语说法：Taruh di kulkas aja.（放冰箱里就行。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "penyimpanan",
+      "display": "penyimpanan",
+      "audio_text": "penyimpanan",
+      "cn": "存放；储存（这件事或方式）",
+      "en": "storage",
+      "root": "simpan",
+      "root_cn": "保存；收起",
+      "formation": "peN-an + simpan：peN- 遇 s 时 s 脱落、变 peny-，得到 penyimpanan。同词根：menyimpan（存放）、simpanan（储蓄；存放的东西）。常见搭配：cara penyimpanan（储存方法）、tempat penyimpanan、ruang penyimpanan（手机/电脑存储空间）。",
+      "example": "Cara penyimpanan: simpan di tempat sejuk dan kering, jauhkan dari sinar matahari.",
+      "example_cn": "储存方法：存放于阴凉干燥处，避免阳光照射。",
+      "synonym_note": "penyimpanan 是名词（存放、储存方式）；动作用 menyimpan / simpan。包装上的固定写法是 cara penyimpanan 或 saran penyimpanan。口语里一般直接说动作：Simpan di kulkas, ya.",
+      "is_oral_new": false
+    },
+    {
+      "word": "struk",
+      "display": "struk",
+      "audio_text": "struk",
+      "cn": "小票；购物收据",
+      "en": "receipt (printed slip)",
+      "root": "struk",
+      "root_cn": "小票",
+      "formation": "外来名词，不拆印尼语词缀。常见搭配：struk belanja（购物小票）、minta struk（要小票）、struk ATM、mencocokkan struk（核对小票）。",
+      "example": "Kasirnya nyelipin struk ke dalam kantong belanja, jadi jangan dibuang dulu.",
+      "example_cn": "收银员把小票塞进购物袋里了，所以先别扔。（nyelipin = menyelipkan）",
+      "synonym_note": "struk 多指收银机打出来的小票；kuitansi 是手写或正式开具、常有签名的收据；nota 是店家开的单据，日常有时混用。口语说法：Minta struknya, ya.（请给我小票。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "brosur",
+      "display": "brosur",
+      "audio_text": "brosur",
+      "cn": "宣传册；（折页）传单",
+      "en": "brochure; leaflet",
+      "root": "brosur",
+      "root_cn": "宣传册",
+      "formation": "外来名词（来自 brochure），不拆印尼语词缀。常见搭配：brosur promo、membagikan brosur（发传单）、menurut brosur（根据宣传册）。",
+      "example": "Brosur promo itu dibagikan di depan pasar, dan kabar diskonnya cepat menyebar di grup WhatsApp kompleks.",
+      "example_cn": "那份促销传单在市场门口发放，打折的消息很快在小区 WhatsApp 群里传开了。",
+      "synonym_note": "brosur 多是折页或小册子；selebaran 偏指单张传单；katalog 是商品目录。口语里也常说 pamflet 或直接用英语 flyer。",
+      "is_oral_new": false
+    },
+    {
+      "word": "dipatok",
+      "display": "dipatok",
+      "audio_text": "dipatok",
+      "cn": "被定为（固定的价格、目标）；被定死",
+      "en": "to be fixed/set (price, target)",
+      "root": "patok",
+      "root_cn": "桩子；界桩",
+      "formation": "di- + patok。patok 原义是“木桩、界桩”，mematok 是“打桩定界”，引申为把价格、目标“定死”。主动形：mematok harga / mematok target。常见搭配：harga dipatok、tarif dipatok Rp…。",
+      "example": "Tarif parkir di mal itu dipatok Rp5.000 per jam.",
+      "example_cn": "那家商场的停车费定为每小时 5000 印尼盾。",
+      "synonym_note": "dipatok 强调“定死、不随便改”；ditetapkan 更正式，多指由机构规定。说“不能讲价的定价”也常说 harga pas。口语说法：Harganya udah pas, Bu.（价格已经是实价了。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "tawar-menawar",
+      "display": "tawar-menawar",
+      "audio_text": "tawar-menawar",
+      "cn": "讨价还价",
+      "en": "bargaining; haggling",
+      "root": "tawar",
+      "root_cn": "出价；还价",
+      "formation": "tawar 重叠，后一半加 meN-：tawar-menawar，表示你来我往地还价（同类：tolong-menolong 互相帮助）。同词根：menawar（还价）、tawaran（报价；提议）。",
+      "example": "Pembelinya sempat ngegas waktu tawar-menawar, tapi penjualnya nggak kepancing dan menjawab dengan sabar.",
+      "example_cn": "讨价还价时那位顾客一度语气很冲，但卖家没被激到，耐心地回答。（nggak = tidak）",
+      "synonym_note": "tawar-menawar 指讨价还价的整个过程；menawar 是“还价”这个动作，如 Boleh saya tawar?。口语说法：nawar（= menawar），Aku nawar dikit, ya；买东西时常问 Bisa kurang, Bu?（能便宜点吗？）",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "berangsur",
+    "menyebar",
+    "bercerai",
+    "kehilangan",
+    "langit"
+  ],
+  "sentences": [
+    {
+      "text": "Brosur promo dari distributor dibagikan hari Sabtu, dan kabarnya langsung menyebar di grup RT.",
+      "cn": "经销商的促销宣传册周六发出，消息马上在居委会群里传开了。"
+    },
+    {
+      "text": "Di sini nggak ada tawar-menawar, Mbak. Harganya udah dipatok dari pusat.",
+      "cn": "这里不讲价哦，姐。价格是总部定好的。（nggak = tidak；udah = sudah）"
+    },
+    {
+      "text": "Sejak bercerai, Tante Mira membuka usaha kue kering di rumah, dan penjualannya berangsur naik setiap bulan.",
+      "cn": "离婚后，米拉阿姨在家做起了曲奇生意，销量每个月一点点上升。"
+    },
+    {
+      "text": "Perhatikan cara penyimpanan di kemasan. Susu yang sudah basi bisa membuat perut mencret.",
+      "cn": "注意包装上的储存方法。变质的牛奶会让人拉肚子。"
+    },
+    {
+      "text": "Langit mendung sejak pagi, jadi Bu Wati memasukkan karung beras ke dalam warung.",
+      "cn": "天从早上就阴沉沉的，所以瓦蒂阿姨把米袋搬进了店里。"
+    }
+  ],
+  "reading": {
+    "text": "Pagi ini Sinta membantu Bu Wati memeriksa barang di warungnya sebelum buka. Di label setiap susu kotak tercantum tanggal kedaluwarsa. Ternyata tiga kotak sudah lewat tanggal, jadi susu itu tidak layak jual lagi. Bu Wati langsung memisahkannya karena tidak mau kehilangan kepercayaan pembeli. Sinta lalu membaca keterangan di kemasan yogurt yang baru datang: produk harus disimpan di lemari pendingin. Karena lemari pendingin sudah penuh, mereka memindahkan minuman botol ke rak. Terakhir, Bu Wati mencocokkan struk dari distributor dengan tagihan bulan ini. Bulan lalu ia pernah membayar satu barang dua kali, jadi sekarang ia lebih teliti. Harga grosir dari distributor sudah dipatok, jadi ia tidak bisa menawar.",
+    "cn": "今天早上，辛塔帮瓦蒂阿姨在小店开门前检查货品。每盒牛奶的标签上都写明了保质期。结果有三盒已经过期，所以这些牛奶不能再卖了。瓦蒂阿姨马上把它们挑出来，因为她不想失去顾客的信任。接着辛塔看了刚到货的酸奶包装上的说明：产品必须放进冷藏柜。因为冷藏柜已经满了，她们把瓶装饮料挪到了货架上。最后，瓦蒂阿姨拿经销商的小票核对这个月的账单。上个月她曾经把一件货付了两次钱，所以现在她更仔细了。经销商的批发价是定死的，所以她没法还价。"
+  },
+  "quiz": [
+    {
+      "question": "Sinta menunjukkan kemasan roti kepada Bu Wati: “Bu, tanggal kedaluwarsanya ____ di bagian bawah, dekat kode produksi.”",
+      "options": [
+        "mencantumkan",
+        "dipatok",
+        "tercantum",
+        "ditawar"
+      ],
+      "answer_index": 2,
+      "answer": "tercantum",
+      "explain": "句子要说“日期写在下面”这个状态，用 tercantum。mencantumkan 是主动“把……写上”，主语要是写的人（Pabrik mencantumkan tanggal…）；dipatok 用于价格、目标被定死；ditawar 是被还价，都跟“日期在哪里”无关。"
+    },
+    {
+      "question": "Ada yang bilang susu di warung Bu Wati basi. Itu tidak benar, tapi dalam satu malam gosipnya sudah ____ ke seluruh kompleks. 哪个词最自然？",
+      "options": [
+        "menyebar",
+        "berangsur",
+        "bercerai",
+        "tercantum"
+      ],
+      "answer_index": 0,
+      "answer": "menyebar",
+      "explain": "消息、谣言、病毒从一处传到很多地方用 menyebar（复习词）。berangsur 是“逐渐”，后面要接变化（berangsur membaik）；bercerai 是离婚、分开；tercantum 是写在文件上，都不能说谣言传开。"
+    },
+    {
+      "question": "Pembeli: “Bu, ini bisa kurang nggak? Lima ribu aja.” 瓦蒂阿姨的进货价是经销商定死的，她想礼貌地拒绝。哪一句最合适？",
+      "options": [
+        "Maaf, Bu, barangnya sudah layak jual, jadi nggak bisa kurang.",
+        "Maaf, Bu, harganya sudah dipatok dari distributor, jadi nggak bisa kurang.",
+        "Boleh, Bu, tapi harganya harus tercantum dulu.",
+        "Maaf, Bu, di sini tawar-menawarnya dipatok."
+      ],
+      "answer_index": 1,
+      "answer": "Maaf, Bu, harganya sudah dipatok dari distributor, jadi nggak bisa kurang.",
+      "explain": "harga sudah dipatok 说清“价格是定死的”，再礼貌说 nggak bisa kurang。layak jual 讲商品质量达标，不能当作不降价的理由；第三句答应了降价，和她的意图相反；tawar-menawar 是讨价还价的过程，不能说“被定价”。"
+    }
+  ],
+  "output": {
+    "task": "你要在办公室群里通知同事：周五要清理公用冰箱。用 label、tercantum、lemari pendingin 中至少2个，写2–3句同事之间的口语消息：说清楚什么时间清理、哪些食物会被扔掉，并请人帮忙；不要照抄小店的故事。",
+    "reference_answer": "Teman-teman, Jumat sore aku mau bersihin lemari pendingin kantor. Tolong cek label makanan kalian, ya; kalau tanggal yang tercantum sudah lewat, makanannya aku buang. Biar nggak ada yang ketiban kerja sendirian, siapa yang mau bantu menggosok raknya?",
+    "reference_cn": "各位，周五下午我要清理办公室的冰箱。请检查一下你们食物的标签；如果上面写的日期已经过了，我就扔掉。为了不让谁一个人摊上这活儿，谁愿意帮忙擦一下隔板？（bersihin = membersihkan；nggak = tidak）"
+  },
+  "review": [
+    "3秒主动提取：看中文说出标签、写明的、适合销售的、说明、冷藏柜、储存方法、小票、宣传册、被定死（价格）、讨价还价；卡住的词回看词卡再说一遍。",
+    "易混搭配：tercantum（写在标签、文件上）≠ dipatok（价格、目标定死）；layak jual（质量达标可以卖）≠ cocok dijual（好卖、有市场）；struk（收银小票）≠ tagihan（要付的账单）。各用一句话说给自己听。",
+    "复习词应用：用 menyebar 说一个消息怎么传开，用 berangsur 说一件事怎样慢慢变好（如 Penjualannya berangsur naik），用 kehilangan 说一句开店最怕失去什么；再用 langit 描述今天的天气；最后用 Sejak bercerai, … 说米拉阿姨生活的变化。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "tercantum",
+      "dipatok",
+      "layak jual"
+    ],
+    "patterns": [
+      {
+        "pattern": "Di … tercantum …",
+        "cn": "……上写明了……",
+        "example": "Di label setiap susu kotak tercantum tanggal kedaluwarsa.",
+        "example_cn": "每盒牛奶的标签上都写明了保质期。"
+      },
+      {
+        "pattern": "Harga … sudah dipatok, jadi …",
+        "cn": "……的价格已经定死了，所以……",
+        "example": "Harga grosir dari distributor sudah dipatok, jadi ia tidak bisa menawar.",
+        "example_cn": "经销商的批发价是定死的，所以她没法还价。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "标签",
+        "id": "label"
+      },
+      {
+        "cn": "写明的；被列在",
+        "id": "tercantum"
+      },
+      {
+        "cn": "适合销售的；质量达标、可以卖的",
+        "id": "layak jual"
+      },
+      {
+        "cn": "说明；信息；注释",
+        "id": "keterangan"
+      },
+      {
+        "cn": "冷藏柜；冰箱",
+        "id": "lemari pendingin"
+      },
+      {
+        "cn": "存放；储存",
+        "id": "penyimpanan"
+      },
+      {
+        "cn": "小票；购物收据",
+        "id": "struk"
+      },
+      {
+        "cn": "宣传册；",
+        "id": "brosur"
+      },
+      {
+        "cn": "被定为",
+        "id": "dipatok"
+      },
+      {
+        "cn": "讨价还价",
+        "id": "tawar-menawar"
+      },
+      {
+        "cn": "扩散；传开",
+        "id": "menyebar"
+      },
+      {
+        "cn": "逐渐（好转或变化）",
+        "id": "berangsur"
+      }
+    ],
+    "frames": [
+      "Di labelnya tercantum …",
+      "Harganya udah dipatok, jadi …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "tercantum",
+            "cn": "写在标签、文件上"
+          },
+          {
+            "id": "dipatok",
+            "cn": "价格、目标被定死"
+          }
+        ],
+        "note": "一个说“写在哪里”，一个说“定成多少、不能改”。"
+      },
+      {
+        "items": [
+          {
+            "id": "struk",
+            "cn": "收银小票"
+          },
+          {
+            "id": "brosur",
+            "cn": "宣传册、传单"
+          }
+        ],
+        "note": "struk 是买完拿到的凭证，brosur 是买之前看到的宣传。"
+      },
+      {
+        "items": [
+          {
+            "id": "menyebar",
+            "cn": "从一处传到很多地方"
+          },
+          {
+            "id": "berangsur",
+            "cn": "一点一点地变化"
+          }
+        ],
+        "note": "menyebar 说范围变大，berangsur 说变化很慢，常接 naik / membaik。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "kehilangan",
+        "usage": "说失去某样重要的东西，宾语直接跟在后面。",
+        "examples": [
+          {
+            "id": "Bu Wati langsung memisahkannya karena tidak mau kehilangan kepercayaan pembeli.",
+            "cn": "瓦蒂阿姨马上把它们挑出来，因为她不想失去顾客的信任。"
+          }
+        ]
+      },
+      {
+        "word": "langit",
+        "usage": "描述天气时常和 mendung、cerah 搭配。",
+        "examples": [
+          {
+            "id": "Langit mendung sejak pagi, jadi Bu Wati memasukkan karung beras ke dalam warung.",
+            "cn": "天从早上就阴沉沉的，所以瓦蒂阿姨把米袋搬进了店里。"
+          }
+        ]
+      },
+      {
+        "word": "bercerai",
+        "usage": "指夫妻离婚，常说 sejak bercerai、sudah bercerai。",
+        "examples": [
+          {
+            "id": "Sejak bercerai, Tante Mira membuka usaha kue kering di rumah, dan penjualannya berangsur naik setiap bulan.",
+            "cn": "离婚后，米拉阿姨在家做起了曲奇生意，销量每个月一点点上升。"
+          }
+        ]
+      }
+    ]
+  }
+}
