@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-09T00:31:18.941Z",
-  "source_updated_at": "2026-11-08T15:37:49.121Z",
+  "generated_at": "2026-11-09T09:41:07.972Z",
+  "source_updated_at": "2026-11-09T06:56:09.646Z",
   "taught_total": 1135,
   "confirmed_mastered": 204,
   "needs_reinforcement": 839,
@@ -19,16 +19,16 @@
   "focus_words": [
     {
       "word": "dimaksudkan",
-      "score": 124,
+      "score": 126,
       "signals": [
         "quick_wrong",
         "lesson_wrong",
         "dont",
         "fuzzy"
       ],
-      "wrong_count": 2,
-      "last_wrong": "2026-10-30T11:11:50.668Z",
-      "last_review": "2026-11-02T05:54:20.084Z",
+      "wrong_count": 3,
+      "last_wrong": "2026-11-09T06:53:31.350Z",
+      "last_review": "2026-11-09T06:53:31.350Z",
       "cn": "意在；旨在；（被）打算用来……"
     },
     {
