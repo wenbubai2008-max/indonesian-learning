@@ -1,0 +1,381 @@
+{
+  "date": "2026-11-10",
+  "session": "am",
+  "time": "08:00",
+  "day": 81,
+  "title": "08:00 早课｜Hari Wisuda Kak Rani · 拉妮姐姐的毕业典礼",
+  "vocab": [
+    {
+      "word": "wisuda",
+      "display": "wisuda",
+      "audio_text": "wisuda",
+      "cn": "毕业典礼（大学、学校的学位授予仪式）",
+      "en": "graduation ceremony",
+      "root": "wisuda",
+      "root_cn": "毕业典礼",
+      "formation": "名词，本身就是词根，不拆词缀。派生：diwisuda（被授予学位、参加自己的毕业典礼：Kak Rani diwisuda hari Sabtu）、wisudawan / wisudawati（参加典礼的男/女毕业生）。常见搭配：acara wisuda、foto wisuda、datang ke wisuda。",
+      "example": "Kakakku berhasil lulus tepat waktu, dan wisudanya bulan depan.",
+      "example_cn": "我姐姐按时顺利毕业了，她的毕业典礼在下个月。",
+      "synonym_note": "wisuda 是典礼这件事；lulus 是考试合格、完成学业这个结果。先 lulus，之后才参加 wisuda，两者常在同一段话里出现。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kebaya",
+      "display": "kebaya",
+      "audio_text": "kebaya",
+      "cn": "可巴雅（印尼传统女式上衣）",
+      "en": "kebaya (traditional Indonesian women's blouse)",
+      "root": "kebaya",
+      "root_cn": "可巴雅上衣",
+      "formation": "名词，不拆词缀。常见搭配：memakai kebaya、kebaya modern、kebaya wisuda、kebaya kondangan（参加婚宴穿的可巴雅）。通常配 kain（围裙布）或 batik 长裙一起穿。",
+      "example": "Kebaya ini cantik, tapi bahannya bikin kulit agak gatal.",
+      "example_cn": "这件可巴雅很漂亮，可是料子让皮肤有点痒。（bikin = membuat）",
+      "synonym_note": "kebaya 指上衣本身；说整套常说 kebaya dan kain。毕业典礼、婚宴、国庆活动上女性常穿 kebaya，男性正式场合常穿 batik 或 jas。",
+      "is_oral_new": false
+    },
+    {
+      "word": "jas",
+      "display": "jas",
+      "audio_text": "jas",
+      "cn": "西装外套（正式场合穿）",
+      "en": "suit jacket; formal coat",
+      "root": "jas",
+      "root_cn": "西装外套",
+      "formation": "名词，不拆词缀。常见搭配：memakai jas、jas hitam、setelan jas（整套西装）。jas 也用在一些“外穿的衣服”上：jas hujan（雨衣）、jas lab（实验服）。",
+      "example": "Ayah jarang pakai jas; biasanya cuma kalau ke kondangan.",
+      "example_cn": "爸爸很少穿西装，一般只有去喝喜酒时才穿。（pakai = memakai；cuma = hanya）",
+      "synonym_note": "jas 是正式的西装外套；jaket 是夹克、外套，偏休闲、防风保暖。在雅加达，正式活动男性也常用 batik 代替 jas。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sanggul",
+      "display": "sanggul",
+      "audio_text": "sanggul",
+      "cn": "发髻（把长发盘在脑后）",
+      "en": "hair bun; chignon",
+      "root": "sanggul",
+      "root_cn": "发髻",
+      "formation": "名词。加 di- 成 disanggul（头发被盘成发髻：rambutnya disanggul），主动形式 menyanggul（盘发髻）。常见搭配：membuat sanggul、sanggul Jawa、rambut disanggul rapi。",
+      "example": "Nenek masih bisa membuat sanggul sendiri tanpa bantuan salon.",
+      "example_cn": "奶奶现在还能自己盘发髻，不用去美发店。",
+      "synonym_note": "sanggul 是盘起来的发髻；dikepang 是编成辫子。说“她把头发盘起来了”最常用被动：Rambutnya disanggul。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berbaris",
+      "display": "berbaris",
+      "audio_text": "berbaris",
+      "cn": "排成一列；列队",
+      "en": "to line up in rows; to stand in line",
+      "root": "baris",
+      "root_cn": "行；排",
+      "formation": "ber- + baris（行、排）→ berbaris（排成行、列队）。同词根：barisan（队伍、行列）、membariskan（让……排好队）。常见搭配：berbaris rapi、berbaris masuk、berbaris di depan kelas。",
+      "example": "Setiap Senin pagi, murid-murid berbaris di lapangan untuk upacara bendera.",
+      "example_cn": "每周一早上，学生们在操场上排好队参加升旗仪式。",
+      "synonym_note": "berbaris 强调排成整齐的队形（学生、士兵、典礼入场）；antre 强调排队等着轮到自己（买票、看病、付款）。日常排队等候多说 antre，排着整齐队伍走进会场用 berbaris。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengharukan",
+      "display": "mengharukan",
+      "audio_text": "mengharukan",
+      "cn": "令人感动的；让人动容的",
+      "en": "touching; moving",
+      "root": "haru",
+      "root_cn": "感动；动容",
+      "formation": "meN- + haru + -kan → mengharukan（遇 h 时 meN- 变 meng-，h 保留，同 menghargai）。同词根：terharu（人被感动）、keharuan（感动之情）。常见搭配：sangat mengharukan、cerita yang mengharukan、momen yang mengharukan。",
+      "example": "Pidato perpisahan Pak Guru sangat mengharukan; banyak murid yang menangis.",
+      "example_cn": "老师的告别演讲非常感人，很多学生都哭了。",
+      "synonym_note": "mengharukan 形容事情、场面、故事让人感动（Acaranya mengharukan）；人自己被感动用 terharu（Ibu terharu）。不能说 Saya mengharukan 表示“我很感动”。口语说法：bikin terharu（让人感动），例如 Videonya bikin terharu。",
+      "is_oral_new": false
+    },
+    {
+      "word": "album foto",
+      "display": "album foto",
+      "audio_text": "album foto",
+      "cn": "相册",
+      "en": "photo album",
+      "root": "album",
+      "root_cn": "相册",
+      "formation": "名词词组：album（相册、专辑）+ foto（照片），foto 说明是什么相册。常见搭配：membuka album foto、album foto keluarga、album foto pernikahan。",
+      "example": "Waktu membuka album foto lama, aku hampir tidak mengenali Ayah di masa mudanya.",
+      "example_cn": "翻开旧相册时，我差点认不出年轻时的爸爸。",
+      "synonym_note": "album foto 指装照片的册子，现在手机里的相册也可以叫 album；单说 album 时也可能是音乐专辑（album baru penyanyi itu），要看上下文。",
+      "is_oral_new": false
+    },
+    {
+      "word": "anggota keluarga",
+      "display": "anggota keluarga",
+      "audio_text": "anggota keluarga",
+      "cn": "家庭成员",
+      "en": "family member",
+      "root": "anggota",
+      "root_cn": "成员",
+      "formation": "名词词组：anggota（成员）+ keluarga（家庭）。常见搭配：semua anggota keluarga、anggota keluarga dekat（近亲）、anggota keluarga lain。anggota 也可以接别的团体：anggota tim、anggota klub。",
+      "example": "Semua anggota keluarga hadir di acara ulang tahun Kakek yang ke-80.",
+      "example_cn": "全家人都出席了爷爷的八十大寿。",
+      "synonym_note": "anggota keluarga 指一家里的每个人；keluarga besar 指包括亲戚在内的大家族。填表问“家里有几口人”常写 jumlah anggota keluarga。",
+      "is_oral_new": false
+    },
+    {
+      "word": "megah",
+      "display": "megah",
+      "audio_text": "megah",
+      "cn": "宏伟的；气派的",
+      "en": "grand; magnificent",
+      "root": "megah",
+      "root_cn": "宏伟；气派",
+      "formation": "形容词，不拆词缀。名词形式：kemegahan（宏伟、气派）。常见搭配：gedung megah、masjid yang megah、acara yang megah。",
+      "example": "Di pusat kota terdapat sebuah masjid yang megah, tapi di dalamnya terasa tenang.",
+      "example_cn": "市中心有一座宏伟的清真寺，但里面的感觉很安静。",
+      "synonym_note": "megah 说规模大、庄严气派（建筑、典礼）；mewah 说豪华、花钱多（hotel mewah、mobil mewah）。一栋楼可以既 megah 又 mewah，两词常一起出现。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ikat pinggang",
+      "display": "ikat pinggang",
+      "audio_text": "ikat pinggang",
+      "cn": "腰带；皮带",
+      "en": "belt",
+      "root": "ikat",
+      "root_cn": "系；绑",
+      "formation": "复合名词：ikat（系、绑）+ pinggang（腰）→ 系在腰上的带子。同词根动词：mengikat（绑、系）。常见搭配：memakai ikat pinggang、ikat pinggang kulit；mengencangkan ikat pinggang 字面是“勒紧腰带”，也比喻节省开支。",
+      "example": "Celana ini agak longgar; aku perlu ikat pinggang biar nggak melorot.",
+      "example_cn": "这条裤子有点松，我得系条腰带，免得往下掉。（nggak = tidak）",
+      "synonym_note": "ikat pinggang 是最通用的说法；sabuk 也指腰带，但更常用在 sabuk pengaman（安全带）。口语里两者都能听到。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "kerusakan",
+    "menambalnya",
+    "sekadar",
+    "balik",
+    "ban bocor"
+  ],
+  "sentences": [
+    {
+      "text": "Om Hadi datang terlambat ke wisuda gara-gara ban bocor, tapi untung tukang tambal ban di depan kampus bisa menambalnya dalam sepuluh menit.",
+      "cn": "哈迪叔叔因为爆胎，来毕业典礼迟到了，不过幸好校门口补胎的师傅十分钟就把它补好了。"
+    },
+    {
+      "text": "Habis acara kita balik ke rumah Nenek aja, ya. Biar nggak nyusahin Nenek, makanannya kita beli di jalan.",
+      "cn": "典礼结束后我们就回奶奶家吧。为了不给奶奶添麻烦，吃的我们在路上买。（habis = setelah；aja = saja；nggak = tidak；nyusahin = menyusahkan）"
+    },
+    {
+      "text": "Dina memberikan buket bunga kepada Kak Rani: “Ini sekadar hadiah kecil, Kak. Selamat, ya!”",
+      "cn": "迪娜把一束花送给拉妮姐姐：“只是一点小礼物，姐姐。恭喜你！”"
+    },
+    {
+      "text": "Waktu berfoto, Kak Rani tersenyum lebar sampai lesung pipitnya kelihatan.",
+      "cn": "拍照时，拉妮姐姐笑得很开心，连酒窝都露出来了。"
+    },
+    {
+      "text": "Di bawah toga, Kak Rani memakai kebaya krem yang cocok dengan kulitnya yang sawo matang.",
+      "cn": "学位服里面，拉妮姐姐穿着一件米色可巴雅，和她小麦色的皮肤很相配。"
+    }
+  ],
+  "reading": {
+    "text": "Hari Sabtu, keluarga Dina datang ke wisuda Kak Rani di gedung kampus yang megah. Sejak subuh Ibu sudah sibuk: ia memakai kebaya biru, dan rambutnya disanggul rapi. Ayah memakai jas hitam yang biasanya hanya dipakai ke kondangan. Di dalam gedung, para wisudawan berbaris masuk sambil diiringi musik. Ketika nama Kak Rani dipanggil, Ibu menangis. Dulu Ibu tidak bisa kuliah karena harus bekerja membantu Nenek, jadi hari itu sangat mengharukan baginya. Setelah acara, semua anggota keluarga berfoto bersama di depan gedung. Nenek tersenyum dan berkata, “Foto ini nanti kita masukkan ke album foto keluarga, ya.”",
+    "cn": "星期六，迪娜一家去宏伟的大学礼堂参加拉妮姐姐的毕业典礼。妈妈从天没亮就开始忙：她穿上蓝色的可巴雅，头发盘成了整齐的发髻。爸爸穿着平时只在喝喜酒时才穿的黑色西装。礼堂里，毕业生们在音乐声中排着队走进来。拉妮姐姐的名字被叫到时，妈妈哭了。妈妈当年因为要工作帮奶奶，没能上大学，所以那天对她来说特别感人。典礼结束后，全家人在礼堂前一起合影。奶奶笑着说：“这张照片以后我们放进家里的相册里。”"
+  },
+  "quiz": [
+    {
+      "question": "Sebelum acara mulai, panitia meminta para wisudawan ____ rapi di luar gedung, lalu masuk satu per satu.",
+      "options": [
+        "berbaring",
+        "barisan",
+        "berbaris",
+        "membariskan"
+      ],
+      "answer_index": 2,
+      "answer": "berbaris",
+      "explain": "主语是毕业生自己“排成一列”，用不及物的 berbaris。berbaring 是“躺下”，形近但意思完全不同；barisan 是名词“队伍”，不能直接当动词用；membariskan 是“让别人排好队”，主语应是安排的人（Panitia membariskan para wisudawan）。"
+    },
+    {
+      "question": "Sehari sebelum wisuda, laptop Kak Rani jatuh dari meja. Teknisi memeriksanya dan berkata, “Tenang, ____ pada layarnya tidak parah. Besok sore sudah bisa diambil.”",
+      "options": [
+        "rusak",
+        "kerusakan",
+        "merusak",
+        "dirusak"
+      ],
+      "answer_index": 1,
+      "answer": "kerusakan",
+      "explain": "空格处要一个名词作主语：“屏幕上的损坏不严重”，用 kerusakan（复习词，rusak + ke-an）。rusak 是形容词“坏的”，要说 layarnya tidak terlalu rusak；merusak 是“破坏、弄坏”，dirusak 是“被（人）故意弄坏”，都不符合摔坏的情况。"
+    },
+    {
+      "question": "Setelah wisuda, Dina bercerita kepada temannya lewat chat. Kalimat mana yang paling wajar?",
+      "options": [
+        "Acaranya mengharukan banget, Ibu sampai nangis.",
+        "Aku mengharukan banget waktu nama Kak Rani dipanggil.",
+        "Gedungnya mengharukan banget, besar dan tinggi.",
+        "Acaranya mengharukan banget, jadi semua orang tertawa."
+      ],
+      "answer_index": 0,
+      "answer": "Acaranya mengharukan banget, Ibu sampai nangis.",
+      "explain": "mengharukan 形容事情、场面让人感动，主语是 acaranya，后面 Ibu sampai nangis 说明感动到什么程度（nangis = menangis）。第二句主语是“我”，人被感动要说 Aku terharu banget；第三句说建筑高大气派应该用 megah；第四句感动和“大家都笑了”因果不通。"
+    }
+  ],
+  "output": {
+    "task": "下周六你要去参加同事的婚宴（kondangan）。给一位朋友发2–3句口语消息：问他打算穿什么，说说你自己的衣服遇到什么问题，再说说会场的情况。用 jas、ikat pinggang、megah 中至少2个；不要照抄毕业典礼的故事。",
+    "reference_answer": "Eh, kondangan Sabtu nanti kamu pakai jas atau batik? Jasku udah kekecilan, tapi rugi juga kalau beli baru cuma buat sekali pakai. Katanya gedungnya megah banget, jadi aku nggak mau salah kostum.",
+    "reference_cn": "哎，下周六的婚宴你穿西装还是蜡染衬衫？我的西装已经小了，可是只穿一次就买新的也太亏了。听说会场特别气派，所以我不想穿错衣服。（pakai = memakai；udah = sudah；cuma = hanya；nggak = tidak）"
+  },
+  "review": [
+    "3秒主动提取：看中文说出毕业典礼、可巴雅、西装外套、发髻、排成一列、令人感动的、相册、家庭成员、宏伟气派的、腰带；卡住的词回看词卡再说一遍。",
+    "易混词：mengharukan（事情让人感动）≠ terharu（人被感动）；megah（建筑、典礼宏伟气派）≠ mewah（豪华、花钱多）；berbaris（排成整齐的队形）≠ antre（排队等轮到自己）。各用一句话说给自己听，例如 Acaranya mengharukan, Ibu terharu。",
+    "复习词应用：用 ban bocor 和 menambalnya 说一次路上爆胎、找人补胎的经过；用 kerusakan 说一件东西坏得严不严重（Kerusakannya tidak parah）；送礼时用 Ini sekadar … 客气一句；最后用 balik 约朋友活动结束后去哪里。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "mengharukan",
+      "berbaris",
+      "anggota keluarga"
+    ],
+    "patterns": [
+      {
+        "pattern": "…, jadi … sangat mengharukan bagi …",
+        "cn": "……，所以……对……来说非常感人",
+        "example": "Dulu Ibu tidak bisa kuliah karena harus bekerja membantu Nenek, jadi hari itu sangat mengharukan baginya.",
+        "example_cn": "妈妈当年因为要工作帮奶奶，没能上大学，所以那天对她来说特别感人。"
+      },
+      {
+        "pattern": "Biar nggak …, …",
+        "cn": "为了不……，（就）……",
+        "example": "Biar nggak nyusahin Nenek, makanannya kita beli di jalan.",
+        "example_cn": "为了不给奶奶添麻烦，吃的我们在路上买。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "毕业典礼",
+        "id": "wisuda"
+      },
+      {
+        "cn": "可巴雅（传统女式上衣）",
+        "id": "kebaya"
+      },
+      {
+        "cn": "西装外套",
+        "id": "jas"
+      },
+      {
+        "cn": "发髻",
+        "id": "sanggul"
+      },
+      {
+        "cn": "排成一列；列队",
+        "id": "berbaris"
+      },
+      {
+        "cn": "令人感动的",
+        "id": "mengharukan"
+      },
+      {
+        "cn": "相册",
+        "id": "album foto"
+      },
+      {
+        "cn": "家庭成员",
+        "id": "anggota keluarga"
+      },
+      {
+        "cn": "宏伟的；气派的",
+        "id": "megah"
+      },
+      {
+        "cn": "腰带",
+        "id": "ikat pinggang"
+      },
+      {
+        "cn": "损坏；损坏的情况",
+        "id": "kerusakan"
+      },
+      {
+        "cn": "只是；不过是",
+        "id": "sekadar"
+      }
+    ],
+    "frames": [
+      "Acaranya mengharukan, … sampai nangis.",
+      "Biar nggak nyusahin …, …",
+      "Ini sekadar …, Kak."
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "mengharukan",
+            "cn": "事情、场面让人感动"
+          },
+          {
+            "id": "terharu",
+            "cn": "人被感动"
+          }
+        ],
+        "note": "Acaranya mengharukan, jadi Ibu terharu：前者说事情，后者说人。"
+      },
+      {
+        "items": [
+          {
+            "id": "megah",
+            "cn": "宏伟、庄严气派"
+          },
+          {
+            "id": "mewah",
+            "cn": "豪华、花钱多"
+          }
+        ],
+        "note": "megah 看规模和气势，mewah 看贵不贵；一栋楼可以两者都是。"
+      },
+      {
+        "items": [
+          {
+            "id": "berbaris",
+            "cn": "排成整齐的队形"
+          },
+          {
+            "id": "antre",
+            "cn": "排队等轮到自己"
+          }
+        ],
+        "note": "典礼入场用 berbaris，买票、付款排队多说 antre。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "menambalnya",
+        "usage": "tambal 是“补”，menambalnya = 把它（轮胎、洞）补上，常和 ban bocor 一起出现。",
+        "examples": [
+          {
+            "id": "Om Hadi datang terlambat ke wisuda gara-gara ban bocor, tapi untung tukang tambal ban di depan kampus bisa menambalnya dalam sepuluh menit.",
+            "cn": "哈迪叔叔因为爆胎，来毕业典礼迟到了，不过幸好校门口补胎的师傅十分钟就把它补好了。"
+          }
+        ]
+      },
+      {
+        "word": "sekadar",
+        "usage": "送礼、说明时表示“只是一点、分量不大”，是客气的说法。",
+        "examples": [
+          {
+            "id": "Ini sekadar hadiah kecil, Kak. Selamat, ya!",
+            "cn": "只是一点小礼物，姐姐。恭喜你！"
+          }
+        ]
+      },
+      {
+        "word": "balik",
+        "usage": "口语里的“回去、回来”，常说 balik ke rumah、balik lagi。",
+        "examples": [
+          {
+            "id": "Habis acara kita balik ke rumah Nenek aja, ya.",
+            "cn": "典礼结束后我们就回奶奶家吧。"
+          }
+        ]
+      }
+    ]
+  }
+}
