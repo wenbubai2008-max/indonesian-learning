@@ -678,3 +678,10 @@
 - **候选资格**：`.github/scripts/unfamiliar-lesson-pool.js` 仅从已同步的weakness中选择active、用户主动标记、尚未正式教学、未排除训练、有中文释义且未在977及已选BIPA第二库的词。只在第二词库阶段把这些额外词放到 `runtime.new_pool` 和 `new_pool_dont` 最前，同时通过 `unfamiliar_new_pool` 和 `stats.unfamiliar_new_pool_total_full` 单独标注；原977数、BIPA第二库数量、handoff和第二库“待学167”仍保持原始统计口径。用户标记的已学弱词仍走原 `review_pool=A∩D` 和冷却规则。
 - **质量与退出**：新来源仍必须经原有课程JSON schema、did-not-teach-before、中文义/例句/口语说明等所有校验。不准确的初始翻译须在生成时人工式审稿。完成正式教学进入daily-vocab后立刻从“陌生新词”候选退出，若active则进入复习；mastered/排除/未同步不入新词。早晚课原有新词和复习配额、页面结构均不变。
 - **测试**：`test-unfamiliar-lesson-pool.js` 验证已学、未同步、已掌握、排除、缺释义及大小写重复过滤；现有Build learning runtime运行该测试与权威构建，`regression-guard.js` 检查构建器和任务说明书。同一个写入源、工作流数量和主词库977约束不改变。
+
+## 49. 2026-11-10 早晚课深讲全部取消（用户决定）
+
+- **用户决定**：以后早课、晚课的带学（深讲）全部取消。从 2026-11-11 08:00 早课起，早晚课任务不写 `data/teach/D-am|pm.json`、不建 `teach-D-am|pm` 分支、不开深讲 PR。只有用户明确要求才能恢复。
+- **改动范围**：只改任务说明书：`docs/tasks/DEEP-TEACH.md` 开头加取消声明，正文只作历史格式记录；`COMMON.md` 的表格和 §2 例外、`AM-LESSON.md` 八-B、`PM-LESSON.md` 8-B 及两份汇报要求同步改为“不写深讲”。定时任务提示词不改。
+- **不改变**：`teach_release` job、`check-teach.js` / `validate-teach.js` / `deep-teach.js`、网页按钮逻辑（没有深讲数据的课程本来就不显示「开始带学」）、已发布的历史深讲文件（含 2026-11-10 晚课那一份）、课程合同和其他任务。
+- **守卫**：§36 的说明书检查保留；新增一项：DEEP-TEACH、COMMON、AM-LESSON、PM-LESSON 都写明 2026-11-10 深讲已取消。
