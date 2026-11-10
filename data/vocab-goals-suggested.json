@@ -4,14 +4,14 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1020,
-   "recognize": 107,
+   "use": 1024,
+   "recognize": 108,
    "unsure": 23,
    "fast": 137
   },
   "active": {
-   "use": 686,
-   "recognize": 91,
+   "use": 690,
+   "recognize": 92,
    "unsure": 21,
    "fast": 57
   }
@@ -10584,6 +10584,51 @@
    "status": "active",
    "why": [
     "第二词库 A1 / A"
+   ]
+  },
+  "bergoyang-goyang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "menimpa": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "kokoh": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "memperbaikinya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "ketersediaannya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
    ]
   }
  }
