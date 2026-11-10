@@ -793,6 +793,8 @@ try {
     okNew(swf.includes("!startsWith(github.head_ref, 'teach-')")&&swf.includes("- 'data/teach/*.json'"),'teach PRs wake the workflow and skip the generic preflight');
     const dtDoc=fs.existsSync(rel('docs/tasks/DEEP-TEACH.md'))?read('docs/tasks/DEEP-TEACH.md'):'';
     okNew(['teach-D-am','AUTO_PUBLISH_TEACH=1','check-teach.js','shape_ok','不得影响','08:15','18:30','lesson_focus'].every(m=>dtDoc.includes(m))&&read('docs/tasks/COMMON.md').includes('docs/tasks/DEEP-TEACH.md')&&read('docs/tasks/AM-LESSON.md').includes('docs/tasks/DEEP-TEACH.md')&&read('docs/tasks/PM-LESSON.md').includes('docs/tasks/DEEP-TEACH.md'),'deep-teach runbook exists and both lesson runbooks call it after the lesson PR');
+    // §49 (2026-11-10, user decision): deep-teach is cancelled for both lessons; runbooks must say so.
+    okNew(dtDoc.includes('2026-11-10 用户决定：早课、晚课的深讲（带学）全部取消')&&['docs/tasks/COMMON.md','docs/tasks/AM-LESSON.md','docs/tasks/PM-LESSON.md'].every(f=>/深讲[^\n]*2026-11-10[^\n]*取消|2026-11-10[^\n]*深讲[^\n]*取消/.test(read(f))),'deep-teach is cancelled (2026-11-10): DEEP-TEACH, COMMON and both lesson runbooks say not to write it');
     okNew(read('docs/LESSON-QUALITY.md').includes('晚课换场景'),'LESSON-QUALITY keeps the PM different-scene rule');
     // §37 (2026-10-22 review): natural reading, non-absolute contrasts, quiz stems without the answer's Chinese, no system words.
     const lq=read('docs/LESSON-QUALITY.md'),vlc=read('.github/scripts/validate-lesson-candidate.js');

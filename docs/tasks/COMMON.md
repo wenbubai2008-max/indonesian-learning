@@ -9,7 +9,7 @@
 | 08:00 早课 | 约 07:24 | `docs/tasks/AM-LESSON.md` |
 | 12:00 泛读 | 约 11:24 | `docs/tasks/EXTENSIVE-READING.md` |
 | 18:00 晚课 | 17:30（实际可能晚几分钟） | `docs/tasks/PM-LESSON.md` |
-| 早课、晚课之后的深讲 | 课程 PR 开出后 | `docs/tasks/DEEP-TEACH.md` |
+| 早课、晚课之后的深讲 | **2026-11-10 起已取消，不再生成** | `docs/tasks/DEEP-TEACH.md`（仅存历史格式） |
 
 三个任务互不触碰对方的产物。Claude 是唯一的自动课程/泛读生成者。
 
@@ -27,7 +27,7 @@
   - 早课：分支 `lesson-release-D-am`，文件 `data/daily/D-am.json`
   - 晚课：分支 `lesson-release-D-pm`，文件 `data/daily/D-pm.json`
   - 泛读：分支 `extensive-reading-D`，文件 `data/extensive-reading-candidate.json`
-- 唯一例外（2026-10-21 用户决定）：早课、晚课任务在课程 PR 开出之后，按 `docs/tasks/DEEP-TEACH.md` 另在 `teach-D-am` / `teach-D-pm` 分支只提交 `data/teach/D-am.json` / `data/teach/D-pm.json` 一个文件，开一个深讲 PR（正文单独一行 `AUTO_PUBLISH_TEACH=1`），由 `teach_release` job 合并。深讲的任何问题都不得影响课程。
+- 深讲已取消（2026-11-10 用户决定）：早课、晚课任务不再写深讲文件、不建 `teach-` 分支、不开深讲 PR，见 `docs/tasks/DEEP-TEACH.md` 开头。以下为 2026-10-21 至 2026-11-10 期间的历史例外，现已失效：早课、晚课任务在课程 PR 开出之后，按 `docs/tasks/DEEP-TEACH.md` 另在 `teach-D-am` / `teach-D-pm` 分支只提交 `data/teach/D-am.json` / `data/teach/D-pm.json` 一个文件，开一个深讲 PR（正文单独一行 `AUTO_PUBLISH_TEACH=1`），由 `teach_release` job 合并。深讲的任何问题都不得影响课程。
 - 除此之外，禁止 `-v2`、`-fix`、`-new` 之类的第二条分支，禁止第二个 PR、第二份课程或第二篇泛读。
 - 不直接写 main；不写 `data/daily/index.json`、`data/daily-vocab-data.js`、`data/learning-runtime.json`、`data/lesson-context.json`、`data/weakness-sync.json`、词库、mastered 状态、规则、Validator、Workflow，也不写本目录以外的任何文档。不新增工作流、定时任务、数据写入者或外部 API。
 - **一次性 push**：从最新 `origin/main` 在本地建分支，只提交自己的那一个文件，一次 push。不要先推空分支，不要 force push。push 后回读远端文件，确认内容完整、可解析，记下 commit SHA。
