@@ -4,15 +4,15 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1009,
-   "recognize": 109,
-   "unsure": 22,
+   "use": 1016,
+   "recognize": 111,
+   "unsure": 23,
    "fast": 137
   },
   "active": {
-   "use": 731,
-   "recognize": 93,
-   "unsure": 20,
+   "use": 738,
+   "recognize": 95,
+   "unsure": 21,
    "fast": 59
   }
  },
@@ -10493,6 +10493,97 @@
    "status": "active",
    "why": [
     "第二词库 B2 / S"
+   ]
+  },
+  "wisuda": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "kebaya": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "jas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "sanggul": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "berbaris": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "mengharukan": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "rule+history",
+   "status": "active",
+   "why": [
+    "答错较多，不建议只要求认识",
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "album foto": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "anggota keluarga": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "megah": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "ikat pinggang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
    ]
   }
  }
