@@ -110,28 +110,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "berasal dari",
-    "cn": "来自",
-    "en": "come from",
-    "root": "asal",
-    "root_cn": "",
-    "formation": "ber- + asal + dari",
-    "bipa_level": "A1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "anggota keluarga",
-    "cn": "家庭成员",
-    "en": "family member",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "silsilah keluarga",
     "cn": "家谱/家庭关系图",
     "en": "family tree",
@@ -297,17 +275,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "bak mandi",
-    "cn": "浴池/浴缸",
-    "en": "bath tub / water tub",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "meja rias",
     "cn": "梳妆台",
     "en": "dressing table",
@@ -339,17 +306,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "B",
     "selection": "dont"
-  },
-  {
-    "word": "bak cuci piring",
-    "cn": "洗碗池",
-    "en": "kitchen sink",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "lukisan",
@@ -407,17 +363,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "berbelanja",
-    "cn": "购物",
-    "en": "shop",
-    "root": "belanja",
-    "root_cn": "",
-    "formation": "ber- + belanja",
-    "bipa_level": "A1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "berjalan-jalan",
     "cn": "逛/游玩",
     "en": "stroll / go sightseeing",
@@ -462,17 +407,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "suka menolong",
-    "cn": "乐于助人",
-    "en": "helpful",
-    "root": "tolong",
-    "root_cn": "",
-    "formation": "固定表达；menolong = meN- + tolong",
-    "bipa_level": "A1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "perfeksionis",
     "cn": "完美主义的",
     "en": "perfectionist",
@@ -482,17 +416,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "B",
     "selection": "dont"
-  },
-  {
-    "word": "mandiri",
-    "cn": "独立的",
-    "en": "independent",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "teratur",
@@ -594,17 +517,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "album foto",
-    "cn": "相册",
-    "en": "photo album",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "gantungan baju",
     "cn": "衣架",
     "en": "clothes hanger",
@@ -649,17 +561,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "di samping",
-    "cn": "在旁边",
-    "en": "beside",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "anak panah",
     "cn": "箭头",
     "en": "arrow",
@@ -669,17 +570,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "B",
     "selection": "dont"
-  },
-  {
-    "word": "pertigaan",
-    "cn": "三岔路口",
-    "en": "T-junction",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "bundaran",
@@ -726,17 +616,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "peralatan masak",
-    "cn": "炊具",
-    "en": "cooking utensils",
-    "root": "alat",
-    "root_cn": "",
-    "formation": "per- + alat + -an；词组",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "setrika",
     "cn": "熨斗",
     "en": "iron",
@@ -745,28 +624,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "",
     "bipa_level": "A1",
     "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "sapu",
-    "cn": "扫帚",
-    "en": "broom",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "ember",
-    "cn": "桶",
-    "en": "bucket",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "S",
     "selection": "fuzzy"
   },
   {
@@ -792,42 +649,9 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "spatula",
-    "cn": "锅铲",
-    "en": "spatula",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "cobek",
-    "cn": "石臼/研钵",
-    "en": "mortar",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "ulek",
     "cn": "研杵",
     "en": "pestle",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "parutan",
-    "cn": "刨丝器",
-    "en": "grater",
     "root": "",
     "root_cn": "",
     "formation": "",
@@ -844,39 +668,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "",
     "bipa_level": "A1",
     "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "lap",
-    "cn": "抹布",
-    "en": "rag/cloth",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "baskom",
-    "cn": "盆",
-    "en": "basin",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "centong",
-    "cn": "饭勺",
-    "en": "rice scoop",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
     "selection": "fuzzy"
   },
   {
@@ -910,17 +701,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "ber- + main；词组",
     "bipa_level": "A1",
     "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "berbincang-bincang",
-    "cn": "聊天",
-    "en": "chat",
-    "root": "bincang",
-    "root_cn": "",
-    "formation": "ber- + bincang-bincang",
-    "bipa_level": "A1",
-    "sab": "S",
     "selection": "fuzzy"
   },
   {
@@ -1254,28 +1034,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "kemeja",
-    "cn": "衬衫",
-    "en": "shirt",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "kaos",
-    "cn": "T恤",
-    "en": "T-shirt",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "blus",
     "cn": "女式衬衫",
     "en": "blouse",
@@ -1386,17 +1144,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "merek",
-    "cn": "品牌",
-    "en": "brand",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "mengangsur",
     "cn": "分期偿还",
     "en": "pay in installments",
@@ -1427,17 +1174,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "",
     "bipa_level": "A2",
     "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "melewati",
-    "cn": "经过/穿过",
-    "en": "pass by / go through",
-    "root": "lewat",
-    "root_cn": "",
-    "formation": "meN- + lewat + -i",
-    "bipa_level": "A2",
-    "sab": "S",
     "selection": "fuzzy"
   },
   {
@@ -1527,17 +1263,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A2",
     "sab": "B",
     "selection": "dont"
-  },
-  {
-    "word": "animasi",
-    "cn": "动画片",
-    "en": "animation",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "S",
-    "selection": "fuzzy"
   },
   {
     "word": "tentara",
@@ -1661,17 +1386,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "lompat",
-    "cn": "跳",
-    "en": "jump",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "jongkok",
     "cn": "蹲下",
     "en": "squat",
@@ -1681,28 +1395,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A2",
     "sab": "S",
     "selection": "dont"
-  },
-  {
-    "word": "pinggang",
-    "cn": "腰",
-    "en": "waist",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "pundak",
-    "cn": "肩膀",
-    "en": "shoulder",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "S",
-    "selection": "fuzzy"
   },
   {
     "word": "bungkuk",
@@ -1746,17 +1438,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "",
     "bipa_level": "A2",
     "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "menggunakan",
-    "cn": "使用",
-    "en": "use",
-    "root": "guna",
-    "root_cn": "",
-    "formation": "meN- + guna + -kan",
-    "bipa_level": "A2",
-    "sab": "S",
     "selection": "fuzzy"
   },
   {
@@ -2145,17 +1826,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "tifus",
-    "cn": "伤寒",
-    "en": "typhus/typhoid",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "penyebab",
     "cn": "原因；致因",
     "en": "cause",
@@ -2319,17 +1989,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B1",
     "sab": "A",
     "selection": "dont"
-  },
-  {
-    "word": "menikmati",
-    "cn": "享受",
-    "en": "enjoy",
-    "root": "nikmat",
-    "root_cn": "",
-    "formation": "meN- + nikmat + -i",
-    "bipa_level": "B1",
-    "sab": "S",
-    "selection": "fuzzy"
   },
   {
     "word": "alunan",
@@ -2684,17 +2343,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "digunakan",
-    "cn": "被使用",
-    "en": "be used",
-    "root": "guna",
-    "root_cn": "",
-    "formation": "di- + guna + -kan",
-    "bipa_level": "B1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "keterangan",
     "cn": "说明；信息；注释",
     "en": "information; explanation",
@@ -2761,28 +2409,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "tawar-menawar",
-    "cn": "讨价还价",
-    "en": "bargaining",
-    "root": "tawar",
-    "root_cn": "",
-    "formation": "词根重叠：tawar-menawar",
-    "bipa_level": "B1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "rempah-rempah",
-    "cn": "香料；各种香辛料",
-    "en": "spices",
-    "root": "rempah",
-    "root_cn": "",
-    "formation": "词根重叠",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "dipatok",
     "cn": "被定价；被固定",
     "en": "be set/fixed (price)",
@@ -2800,28 +2426,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "root": "cantum",
     "root_cn": "",
     "formation": "ter- + cantum",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "label",
-    "cn": "标签",
-    "en": "label",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "layak jual",
-    "cn": "适合销售",
-    "en": "fit for sale",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组",
     "bipa_level": "B1",
     "sab": "A",
     "selection": "fuzzy"
@@ -2948,17 +2552,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "profesi",
-    "cn": "职业",
-    "en": "profession",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "pedagang",
     "cn": "商贩；商人",
     "en": "trader; merchant",
@@ -2968,17 +2561,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B2",
     "sab": "S",
     "selection": "dont"
-  },
-  {
-    "word": "resep",
-    "cn": "食谱；处方",
-    "en": "recipe; prescription",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
   },
   {
     "word": "menerapkan",
@@ -3036,45 +2618,12 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "lowongan kerja",
-    "cn": "职位空缺；招聘岗位",
-    "en": "job vacancy",
-    "root": "lowong",
-    "root_cn": "",
-    "formation": "lowong + -an + kerja",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "tanda tangan",
-    "cn": "签名",
-    "en": "signature",
-    "root": "tanda; tangan",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "berkas",
     "cn": "文件；材料；档案包",
     "en": "file; dossier; documents",
     "root": "",
     "root_cn": "",
     "formation": "",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "pertimbangan",
-    "cn": "考虑；考量",
-    "en": "consideration",
-    "root": "timbang",
-    "root_cn": "",
-    "formation": "per- + timbang + -an",
     "bipa_level": "B2",
     "sab": "S",
     "selection": "fuzzy"
@@ -3179,34 +2728,12 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "kerusakan",
-    "cn": "损坏；破坏",
-    "en": "damage",
-    "root": "rusak",
-    "root_cn": "",
-    "formation": "ke- + rusak + -an",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "menyebar",
     "cn": "扩散；传播",
     "en": "spread",
     "root": "sebar",
     "root_cn": "",
     "formation": "meN- + sebar",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "waspada",
-    "cn": "警惕；警觉",
-    "en": "alert; vigilant",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
     "bipa_level": "B2",
     "sab": "S",
     "selection": "fuzzy"
@@ -3339,17 +2866,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "root": "bantu",
     "root_cn": "",
     "formation": "peN- + bantu",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "syarat",
-    "cn": "条件；要求",
-    "en": "requirement; condition",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
     "bipa_level": "B2",
     "sab": "S",
     "selection": "fuzzy"

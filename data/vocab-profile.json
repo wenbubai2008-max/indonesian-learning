@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "generated_at": "2026-11-10T03:40:27.273Z",
-  "source_updated_at": "2026-11-10T03:32:01.086Z",
+  "generated_at": "2026-11-10T09:40:22.682Z",
+  "source_updated_at": "2026-11-10T09:11:55.749Z",
   "taught_total": 1150,
-  "confirmed_mastered": 204,
-  "needs_reinforcement": 854,
-  "excluded_from_training": 92,
+  "confirmed_mastered": 254,
+  "needs_reinforcement": 798,
+  "excluded_from_training": 98,
   "unverified": 0,
-  "mastery_percent": 17.7,
+  "mastery_percent": 22.1,
   "primary_master_total": 977,
   "primary_taught_unique": 647,
   "primary_unlearned_total": 330,
   "primary_coverage_percent": 66.2,
   "primary_eligible_new_total": 0,
-  "secondary_eligible_new_total": 109,
+  "secondary_eligible_new_total": 106,
   "active_master_pool": "secondary_bipa",
-  "focus_total": 851,
+  "focus_total": 795,
   "focus_words": [
     {
       "word": "dimaksudkan",
@@ -28,7 +28,7 @@
       ],
       "wrong_count": 3,
       "last_wrong": "2026-11-09T06:53:31.350Z",
-      "last_review": "2026-11-09T06:53:31.350Z",
+      "last_review": "2026-11-10T06:54:02.005Z",
       "cn": "意在；旨在；（被）打算用来……"
     },
     {
