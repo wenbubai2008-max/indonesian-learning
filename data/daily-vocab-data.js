@@ -12456,16 +12456,16 @@ window.DAILY_VOCAB_DB = [
     "en": "oppose / fight against",
     "root": "lawan",
     "root_cn": "对手；反对",
-    "example": "Dia berusaha melawan rasa kantuk supaya pekerjaannya cepat selesai.",
-    "example_cn": "他努力克服睡意，好让工作早点做完。",
+    "example": "Pulang kerja aku jalan kaki melawan angin, sampai payungku terbalik.",
+    "example_cn": "下班后我顶着风走路，伞都被吹翻了。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-20 08:00",
-    "last_seen": "2026-10-09 18:00",
+    "last_seen": "2026-11-10 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -12474,13 +12474,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-20",
       "2026-09-29",
       "2026-10-01",
-      "2026-10-09"
+      "2026-10-09",
+      "2026-11-10"
     ],
     "lesson_occurrences": [
       "2026-09-20 08:00",
       "2026-09-29 08:00",
       "2026-10-01 08:00",
-      "2026-10-09 18:00"
+      "2026-10-09 18:00",
+      "2026-11-10 18:00"
     ]
   },
   {
@@ -13690,23 +13692,27 @@ window.DAILY_VOCAB_DB = [
     "en": "cough",
     "root": "batuk",
     "root_cn": "咳嗽",
-    "example": "Dia masih batuk, jadi hari ini dia memilih banyak minum air.",
-    "example_cn": "他还在咳嗽，所以今天选择多喝水。",
+    "example": "Sejak kehujanan kemarin, adikku batuk dan pilek.",
+    "example_cn": "从昨天淋雨以后，我弟弟就咳嗽、流鼻涕。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-09-24 08:00",
+    "last_seen": "2026-11-10 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-24"
+      "2026-09-24",
+      "2026-11-10"
     ],
     "lesson_occurrences": [
-      "2026-09-24 08:00"
+      "2026-09-24 08:00",
+      "2026-11-10 18:00"
     ]
   },
   {
@@ -13715,23 +13721,27 @@ window.DAILY_VOCAB_DB = [
     "en": "visit",
     "root": "kunjung",
     "root_cn": "访问；拜访",
-    "example": "Akhir pekan ini saya ingin berkunjung ke rumah teman.",
-    "example_cn": "这个周末我想去朋友家拜访。",
+    "example": "Lusa teman lama ibuku mau berkunjung ke rumah.",
+    "example_cn": "后天我妈妈的一位老朋友要来家里拜访。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-09-24 08:00",
+    "last_seen": "2026-11-10 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-24"
+      "2026-09-24",
+      "2026-11-10"
     ],
     "lesson_occurrences": [
-      "2026-09-24 08:00"
+      "2026-09-24 08:00",
+      "2026-11-10 18:00"
     ]
   },
   {
@@ -22567,28 +22577,30 @@ window.DAILY_VOCAB_DB = [
     "word": "lebat",
     "cn": "（雨）大；（毛发、树叶）浓密；（果实）累累",
     "en": "heavy (rain); thick; dense",
-    "root": "",
-    "root_cn": "",
-    "example": "Hujan lebat semalam bikin jalan setapak ke air terjun licin dan berbahaya.",
-    "example_cn": "昨晚的大雨让通往瀑布的小路又滑又危险。（bikin = membuat）",
+    "root": "lebat",
+    "root_cn": "浓密；大",
+    "example": "Hujan lebat sejak siang membuat penerbangan kami molor dua jam.",
+    "example_cn": "从中午开始下大雨，我们的航班延误了两个小时。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-17 08:00",
-    "last_seen": "2026-10-17 18:00",
+    "last_seen": "2026-11-10 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-10-17"
+      "2026-10-17",
+      "2026-11-10"
     ],
     "lesson_occurrences": [
       "2026-10-17 08:00",
-      "2026-10-17 18:00"
+      "2026-10-17 18:00",
+      "2026-11-10 18:00"
     ]
   },
   {
@@ -30438,27 +30450,29 @@ window.DAILY_VOCAB_DB = [
     "en": "to spread",
     "root": "sebar",
     "root_cn": "散开；散布",
-    "example": "Aku nggak nyangka kabarnya menyebar secepat itu di grup kantor.",
-    "example_cn": "我没想到这个消息在公司群里传得那么快。（nggak = tidak，nyangka = menyangka）",
+    "example": "Apinya cepat menyebar karena angin sedang kencang, tapi petugas damkar berhasil menanganinya.",
+    "example_cn": "因为风正大，火很快蔓延开了，但消防员成功控制住了火势。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-08 18:00",
-    "last_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-10 18:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-11-08",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "lesson_occurrences": [
       "2026-11-08 18:00",
-      "2026-11-09 08:00"
+      "2026-11-09 08:00",
+      "2026-11-10 18:00"
     ]
   },
   {
@@ -30985,23 +30999,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to line up in rows; to stand in line",
     "root": "baris",
     "root_cn": "行；排",
-    "example": "Setiap Senin pagi, murid-murid berbaris di lapangan untuk upacara bendera.",
-    "example_cn": "每周一早上，学生们在操场上排好队参加升旗仪式。",
+    "example": "Setiap pagi, karyawan pabrik berbaris di halaman untuk peregangan.",
+    "example_cn": "每天早上，工厂员工在院子里排好队做拉伸运动。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-10 08:00",
-    "last_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-10"
     ],
     "lesson_occurrences": [
-      "2026-11-10 08:00"
+      "2026-11-10 08:00",
+      "2026-11-10 18:00"
     ]
   },
   {
@@ -31010,23 +31027,26 @@ window.DAILY_VOCAB_DB = [
     "en": "touching; moving",
     "root": "haru",
     "root_cn": "感动；动容",
-    "example": "Pidato perpisahan Pak Guru sangat mengharukan; banyak murid yang menangis.",
-    "example_cn": "老师的告别演讲非常感人，很多学生都哭了。",
+    "example": "Surat dari murid-muridnya di hari terakhir mengajar sangat mengharukan.",
+    "example_cn": "最后一天上课时学生们写给他的信非常感人。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-10 08:00",
-    "last_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-10"
     ],
     "lesson_occurrences": [
-      "2026-11-10 08:00"
+      "2026-11-10 08:00",
+      "2026-11-10 18:00"
     ]
   },
   {
@@ -31127,6 +31147,131 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "bergoyang-goyang",
+    "cn": "摇来晃去；不停地晃动",
+    "en": "to keep swaying / wobbling",
+    "root": "goyang",
+    "root_cn": "摇动；晃动",
+    "example": "Selama penerbangan ke Medan, pesawatnya bergoyang-goyang setiap kali melewati awan tebal, sampai adikku hampir muntah.",
+    "example_cn": "飞往棉兰的航班上，飞机每次穿过厚厚的云层都晃来晃去，我弟弟差点吐了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 18:00",
+    "last_seen": "2026-11-10 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 18:00"
+    ]
+  },
+  {
+    "word": "menimpa",
+    "cn": "砸到；压到（掉下来落在……上）；（灾祸）降临到",
+    "en": "to fall on / hit; to befall",
+    "root": "timpa",
+    "root_cn": "压下；砸落",
+    "example": "Papan reklame yang roboh semalam menimpa dua motor yang diparkir di dekat bundaran.",
+    "example_cn": "昨晚倒下的广告牌砸中了停在环岛附近的两辆摩托车。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 18:00",
+    "last_seen": "2026-11-10 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 18:00"
+    ]
+  },
+  {
+    "word": "kokoh",
+    "cn": "坚固的；结实稳固的",
+    "en": "sturdy; solid; firm",
+    "root": "kokoh",
+    "root_cn": "坚固（规范写法 kukuh）",
+    "example": "Jembatan bambu itu kelihatannya kokoh, tapi sebaiknya anak-anak tidak melompat di atasnya.",
+    "example_cn": "那座竹桥看起来挺结实，但孩子们最好别在上面跳。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 18:00",
+    "last_seen": "2026-11-10 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 18:00"
+    ]
+  },
+  {
+    "word": "memperbaikinya",
+    "cn": "把它修好；修理它",
+    "en": "to repair / fix it",
+    "root": "baik",
+    "root_cn": "好",
+    "example": "Kalau keran kamar mandi bocor lagi, panggil Pak Ujang saja; dia biasa memperbaikinya.",
+    "example_cn": "要是浴室水龙头又漏水，就叫 Pak Ujang 吧，他常修这个。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 18:00",
+    "last_seen": "2026-11-10 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 18:00"
+    ]
+  },
+  {
+    "word": "ketersediaannya",
+    "cn": "它的供应情况；（有没有）库存、空位",
+    "en": "its availability",
+    "root": "sedia",
+    "root_cn": "准备好的；有的",
+    "example": "Kalau mau pesan kamar untuk libur panjang, tanyakan dulu ketersediaannya ke hotel.",
+    "example_cn": "要是想订长假期间的房间，先问问酒店还有没有空房。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 18:00",
+    "last_seen": "2026-11-10 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 18:00"
     ]
   }
 ];
