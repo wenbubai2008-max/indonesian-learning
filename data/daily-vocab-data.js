@@ -7329,26 +7329,30 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-06 19:00",
-    "last_seen": "2026-10-04 18:00",
+    "last_seen": "2026-11-10 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-06",
       "2026-10-02",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-10"
     ],
     "example": "Aku sekadar bertanya, bukan mau membeli.",
     "example_cn": "我只是问问，不是要买。",
     "lesson_occurrences": [
       "2026-09-06 19:00",
       "2026-10-02 18:00",
-      "2026-10-04 18:00"
+      "2026-10-04 18:00",
+      "2026-11-10 08:00"
     ]
   },
   {
@@ -13744,20 +13748,22 @@ window.DAILY_VOCAB_DB = [
       "口语",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-22 18:00",
-    "last_seen": "2026-09-24 08:00",
+    "last_seen": "2026-11-10 08:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-09-22",
-      "2026-09-24"
+      "2026-09-24",
+      "2026-11-10"
     ],
     "lesson_occurrences": [
       "2026-09-22 18:00",
-      "2026-09-24 08:00"
+      "2026-09-24 08:00",
+      "2026-11-10 08:00"
     ]
   },
   {
@@ -14163,19 +14169,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-24 18:00",
-    "last_seen": "2026-09-24 18:00",
+    "last_seen": "2026-11-10 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-24"
+      "2026-09-24",
+      "2026-11-10"
     ],
     "lesson_occurrences": [
-      "2026-09-24 18:00"
+      "2026-09-24 18:00",
+      "2026-11-10 08:00"
     ]
   },
   {
@@ -30821,19 +30831,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "我孩子的自行车胎漏气了，不过市场那边的补胎师傅十分钟就能补好。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-09 18:00",
-    "last_seen": "2026-11-09 18:00",
+    "last_seen": "2026-11-10 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "lesson_occurrences": [
-      "2026-11-09 18:00"
+      "2026-11-09 18:00",
+      "2026-11-10 08:00"
     ]
   },
   {
@@ -30846,19 +30860,273 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "幸好损坏不严重，只是内胎破了一点。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-09 18:00",
-    "last_seen": "2026-11-09 18:00",
+    "last_seen": "2026-11-10 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "lesson_occurrences": [
-      "2026-11-09 18:00"
+      "2026-11-09 18:00",
+      "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "wisuda",
+    "cn": "毕业典礼（大学、学校的学位授予仪式）",
+    "en": "graduation ceremony",
+    "root": "wisuda",
+    "root_cn": "毕业典礼",
+    "example": "Kakakku berhasil lulus tepat waktu, dan wisudanya bulan depan.",
+    "example_cn": "我姐姐按时顺利毕业了，她的毕业典礼在下个月。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "kebaya",
+    "cn": "可巴雅（印尼传统女式上衣）",
+    "en": "kebaya (traditional Indonesian women's blouse)",
+    "root": "kebaya",
+    "root_cn": "可巴雅上衣",
+    "example": "Kebaya ini cantik, tapi bahannya bikin kulit agak gatal.",
+    "example_cn": "这件可巴雅很漂亮，可是料子让皮肤有点痒。（bikin = membuat）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "jas",
+    "cn": "西装外套（正式场合穿）",
+    "en": "suit jacket; formal coat",
+    "root": "jas",
+    "root_cn": "西装外套",
+    "example": "Ayah jarang pakai jas; biasanya cuma kalau ke kondangan.",
+    "example_cn": "爸爸很少穿西装，一般只有去喝喜酒时才穿。（pakai = memakai；cuma = hanya）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "sanggul",
+    "cn": "发髻（把长发盘在脑后）",
+    "en": "hair bun; chignon",
+    "root": "sanggul",
+    "root_cn": "发髻",
+    "example": "Nenek masih bisa membuat sanggul sendiri tanpa bantuan salon.",
+    "example_cn": "奶奶现在还能自己盘发髻，不用去美发店。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "berbaris",
+    "cn": "排成一列；列队",
+    "en": "to line up in rows; to stand in line",
+    "root": "baris",
+    "root_cn": "行；排",
+    "example": "Setiap Senin pagi, murid-murid berbaris di lapangan untuk upacara bendera.",
+    "example_cn": "每周一早上，学生们在操场上排好队参加升旗仪式。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "mengharukan",
+    "cn": "令人感动的；让人动容的",
+    "en": "touching; moving",
+    "root": "haru",
+    "root_cn": "感动；动容",
+    "example": "Pidato perpisahan Pak Guru sangat mengharukan; banyak murid yang menangis.",
+    "example_cn": "老师的告别演讲非常感人，很多学生都哭了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "album foto",
+    "cn": "相册",
+    "en": "photo album",
+    "root": "album",
+    "root_cn": "相册",
+    "example": "Waktu membuka album foto lama, aku hampir tidak mengenali Ayah di masa mudanya.",
+    "example_cn": "翻开旧相册时，我差点认不出年轻时的爸爸。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "anggota keluarga",
+    "cn": "家庭成员",
+    "en": "family member",
+    "root": "anggota",
+    "root_cn": "成员",
+    "example": "Semua anggota keluarga hadir di acara ulang tahun Kakek yang ke-80.",
+    "example_cn": "全家人都出席了爷爷的八十大寿。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "megah",
+    "cn": "宏伟的；气派的",
+    "en": "grand; magnificent",
+    "root": "megah",
+    "root_cn": "宏伟；气派",
+    "example": "Di pusat kota terdapat sebuah masjid yang megah, tapi di dalamnya terasa tenang.",
+    "example_cn": "市中心有一座宏伟的清真寺，但里面的感觉很安静。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 08:00"
+    ]
+  },
+  {
+    "word": "ikat pinggang",
+    "cn": "腰带；皮带",
+    "en": "belt",
+    "root": "ikat",
+    "root_cn": "系；绑",
+    "example": "Celana ini agak longgar; aku perlu ikat pinggang biar nggak melorot.",
+    "example_cn": "这条裤子有点松，我得系条腰带，免得往下掉。（nggak = tidak）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-10 08:00",
+    "last_seen": "2026-11-10 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-10"
+    ],
+    "lesson_occurrences": [
+      "2026-11-10 08:00"
     ]
   }
 ];

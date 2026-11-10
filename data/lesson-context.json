@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-10",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 81
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-09T23:40:28.404Z",
-    "lesson_watermark": "2026-11-09 18:00",
-    "index_updated": "2026-11-09",
-    "runtime_hash": "99730a132ab7b7cb4d81062f179de4ec6311a9c24cc39f6e28d1f13133fe19bf",
-    "index_hash": "986f902ea2d9b34314486e3df1920a23a3daa50a434b6bd6d75dd1a0c86e7560",
+    "runtime_generated_at": "2026-11-10T00:32:09.100Z",
+    "lesson_watermark": "2026-11-10 08:00",
+    "index_updated": "2026-11-10",
+    "runtime_hash": "10d4f8d4f3a767a5b4af55b6f33b2760c8f4360b540b6fca074b0b8f7b1f0927",
+    "index_hash": "93d4e1f42d6347938955daa11478ed71a974368fbbb1f23ac0fbb9536c897cb4",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -139,10 +139,6 @@
         "教师/讲师"
       ],
       [
-        "anggota keluarga",
-        "家庭成员"
-      ],
-      [
         "berulang tahun",
         "过生日"
       ],
@@ -169,10 +165,6 @@
       [
         "bak mandi",
         "浴池/浴缸"
-      ],
-      [
-        "album foto",
-        "相册"
       ],
       [
         "gantungan baju",
@@ -219,20 +211,12 @@
         "秃头"
       ],
       [
-        "kebaya",
-        "印尼传统女装"
-      ],
-      [
         "blus",
         "女式衬衫"
       ],
       [
         "gaun",
         "连衣裙/礼服"
-      ],
-      [
-        "jas",
-        "西装/外套"
       ],
       [
         "rok",
@@ -243,20 +227,12 @@
         "耳环"
       ],
       [
-        "ikat pinggang",
-        "腰带"
-      ],
-      [
         "kaos kaki",
         "袜子"
       ],
       [
         "bungkuk",
         "弯腰"
-      ],
-      [
-        "wisuda",
-        "毕业典礼；毕业"
       ],
       [
         "fungsi",
@@ -297,10 +273,6 @@
       [
         "meloloskan diri",
         "逃脱"
-      ],
-      [
-        "berbaris",
-        "排成一列；列队"
       ],
       [
         "ketersediaannya",
@@ -375,10 +347,6 @@
         "马尾/辫子"
       ],
       [
-        "sanggul",
-        "发髻"
-      ],
-      [
         "bot",
         "靴子"
       ],
@@ -439,16 +407,8 @@
         "阴森/闹鬼的"
       ],
       [
-        "megah",
-        "宏伟"
-      ],
-      [
         "kokoh",
         "坚固"
-      ],
-      [
-        "mengharukan",
-        "令人感动"
       ],
       [
         "menakjubkan",
@@ -1659,16 +1619,6 @@
         "喊叫"
       ],
       [
-        "balik",
-        3,
-        0,
-        "",
-        "2026-10-15T13:47:12.333Z",
-        "返回，回去",
-        "balik",
-        "返回；翻转"
-      ],
-      [
         "batuk",
         3,
         0,
@@ -1737,16 +1687,6 @@
         "准时",
         "tepat waktu",
         "准时"
-      ],
-      [
-        "ban bocor",
-        3,
-        0,
-        "",
-        "2026-10-19T13:14:21.967Z",
-        "爆胎；轮胎漏气",
-        "ban bocor",
-        "轮胎漏气"
       ],
       [
         "wawancara",
@@ -2727,6 +2667,126 @@
         "更换；交换",
         "tukar",
         "交换；兑换"
+      ],
+      [
+        "bakal",
+        3,
+        1,
+        "2026-09-29T07:59:14.910Z",
+        "2026-10-12T02:21:04.664Z",
+        "将会、要",
+        "bakal",
+        "将会；预感会发生"
+      ],
+      [
+        "berarti",
+        3,
+        1,
+        "2026-09-22T13:08:29.239Z",
+        "2026-11-08T07:33:48.205Z",
+        "意味着；也就是说",
+        "arti",
+        "意思；含义"
+      ],
+      [
+        "wisuda",
+        3,
+        0,
+        "",
+        "",
+        "毕业典礼（大学、学校的学位授予仪式）",
+        "wisuda",
+        "毕业典礼"
+      ],
+      [
+        "kebaya",
+        3,
+        0,
+        "",
+        "",
+        "可巴雅（印尼传统女式上衣）",
+        "kebaya",
+        "可巴雅上衣"
+      ],
+      [
+        "jas",
+        3,
+        0,
+        "",
+        "",
+        "西装外套（正式场合穿）",
+        "jas",
+        "西装外套"
+      ],
+      [
+        "sanggul",
+        3,
+        0,
+        "",
+        "",
+        "发髻（把长发盘在脑后）",
+        "sanggul",
+        "发髻"
+      ],
+      [
+        "berbaris",
+        3,
+        0,
+        "",
+        "",
+        "排成一列；列队",
+        "baris",
+        "行；排"
+      ],
+      [
+        "mengharukan",
+        3,
+        0,
+        "",
+        "",
+        "令人感动的；让人动容的",
+        "haru",
+        "感动；动容"
+      ],
+      [
+        "album foto",
+        3,
+        0,
+        "",
+        "",
+        "相册",
+        "album",
+        "相册"
+      ],
+      [
+        "anggota keluarga",
+        3,
+        0,
+        "",
+        "",
+        "家庭成员",
+        "anggota",
+        "成员"
+      ],
+      [
+        "megah",
+        3,
+        0,
+        "",
+        "",
+        "宏伟的；气派的",
+        "megah",
+        "宏伟；气派"
+      ],
+      [
+        "ikat pinggang",
+        3,
+        0,
+        "",
+        "",
+        "腰带；皮带",
+        "ikat",
+        "系；绑"
       ]
     ],
     "focus": [
@@ -3270,6 +3330,29 @@
         "menambalnya",
         "kerusakan"
       ]
+    },
+    {
+      "date": "2026-11-10",
+      "session": "am",
+      "review_core": [
+        "kerusakan",
+        "menambalnya",
+        "sekadar",
+        "balik",
+        "ban bocor"
+      ],
+      "new_words": [
+        "wisuda",
+        "kebaya",
+        "jas",
+        "sanggul",
+        "berbaris",
+        "mengharukan",
+        "album foto",
+        "anggota keluarga",
+        "megah",
+        "ikat pinggang"
+      ]
     }
   ],
   "previous_pm": {
@@ -3289,7 +3372,88 @@
       "luas"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-10",
+    "vocab": [
+      [
+        "wisuda",
+        "毕业典礼（大学、学校的学位授予仪式）",
+        "graduation ceremony",
+        "wisuda",
+        "毕业典礼"
+      ],
+      [
+        "kebaya",
+        "可巴雅（印尼传统女式上衣）",
+        "kebaya (traditional Indonesian women's blouse)",
+        "kebaya",
+        "可巴雅上衣"
+      ],
+      [
+        "jas",
+        "西装外套（正式场合穿）",
+        "suit jacket; formal coat",
+        "jas",
+        "西装外套"
+      ],
+      [
+        "sanggul",
+        "发髻（把长发盘在脑后）",
+        "hair bun; chignon",
+        "sanggul",
+        "发髻"
+      ],
+      [
+        "berbaris",
+        "排成一列；列队",
+        "to line up in rows; to stand in line",
+        "baris",
+        "行；排"
+      ],
+      [
+        "mengharukan",
+        "令人感动的；让人动容的",
+        "touching; moving",
+        "haru",
+        "感动；动容"
+      ],
+      [
+        "album foto",
+        "相册",
+        "photo album",
+        "album",
+        "相册"
+      ],
+      [
+        "anggota keluarga",
+        "家庭成员",
+        "family member",
+        "anggota",
+        "成员"
+      ],
+      [
+        "megah",
+        "宏伟的；气派的",
+        "grand; magnificent",
+        "megah",
+        "宏伟；气派"
+      ],
+      [
+        "ikat pinggang",
+        "腰带；皮带",
+        "belt",
+        "ikat",
+        "系；绑"
+      ]
+    ],
+    "review_vocab": [
+      "kerusakan",
+      "menambalnya",
+      "sekadar",
+      "balik",
+      "ban bocor"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
