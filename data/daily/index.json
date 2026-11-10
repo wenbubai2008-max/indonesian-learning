@@ -873,13 +873,11 @@
     {
       "date": "2026-11-10",
       "am": true,
-      "pm": true,
+      "pm": false,
       "verified": "generated_daily_lesson",
       "day": 81,
       "am_day": 81,
-      "am_status": "generated",
-      "pm_day": 81,
-      "pm_status": "lesson_complete"
+      "am_status": "generated"
     }
   ],
   "updated": "2026-11-10",

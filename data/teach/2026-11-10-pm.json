@@ -1,0 +1,825 @@
+{
+ "version": 1,
+ "title": "晚课深讲 · 11月10日",
+ "intro": [
+  "今晚的课叫《断枝砸中厨房屋顶》。暴雨大风里，Bu Wulan 家门口的芒果树断了一根大枝，砸坏了厨房屋顶；第二天邻居们排成一排往上传瓦片，一起把屋顶修好。",
+  "今晚只讲 5 样：[[menyebar]] · [[melawan]] · [[menimpa]] · [[… sudah tidak kokoh karena …]] · [[Untung … cuma …, bukan …]]"
+ ],
+ "items": [
+  {
+   "key": "sebar",
+   "name": "menyebar",
+   "head": "menyebar · 扩散；传开",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "阅读",
+      "id": "Kabar itu cepat menyebar di grup RT.",
+      "cn": "这件事很快在居委会群里传开了。"
+     }
+    ],
+    "ask": "这句里是谁在“传”？",
+    "options": [
+     {
+      "t": "没说谁传，是消息自己传开了",
+      "ok": true,
+      "reply": [
+       "对。menyebar 不带宾语，主语就是“消息”本身。"
+      ]
+     },
+     {
+      "t": "Bu Wulan 把消息发出去了",
+      "reply": [
+       "句子里没有 Bu Wulan。要说她主动发，得用 menyebarkan：Bu Wulan menyebarkan kabar itu."
+      ]
+     },
+     {
+      "t": "群被关掉了",
+      "reply": [
+       "不是。cepat menyebar 是“很快传开”。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[menyebar]] 是东西自己扩散：{{Kabarnya cepat menyebar.}} 要说“谁把它传出去”，加 -kan 带宾语：{{Siapa yang menyebarkan kabar ini?}} 先找句子里有没有“被传的东西”放在动词后面。"
+   ],
+   "simple": [
+    "[[menyebar]] = 自己传开；menyebarkan + 东西 = 把东西传出去"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Apinya menyebar.",
+         "火蔓延开了。"
+        ],
+        [
+         "Dia menyebarkan foto itu.",
+         "他把那张照片传了出去。"
+        ],
+        [
+         "Jangan disebarkan, ya.",
+         "别转发啊。"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Tolong jangan ___ kabar yang belum jelas sumbernya.]]",
+     "（来源不清楚的消息请别乱传。）"
+    ],
+    "options": [
+     {
+      "t": "menyebarkan",
+      "v": "right",
+      "why": [
+       "对。后面有宾语 kabar，要用 menyebarkan。"
+      ]
+     },
+     {
+      "t": "menyebar",
+      "v": "wrong",
+      "why": [
+       "menyebar 不带宾语，不能直接接 kabar。"
+      ]
+     },
+     {
+      "t": "penyebaran",
+      "v": "wrong",
+      "why": [
+       "penyebaran 是名词“传播”，不能放在 jangan 后面当动作。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你说：“流感在学校里传得很快。”"
+     ],
+     "options": [
+      {
+       "t": "Flu cepat menyebar di sekolah.",
+       "v": "right",
+       "why": [
+        "对。流感自己扩散，不带宾语。"
+       ]
+      },
+      {
+       "t": "Flu cepat menyebarkan di sekolah.",
+       "v": "wrong",
+       "why": [
+        "menyebarkan 后面缺了被传的东西。"
+       ]
+      },
+      {
+       "t": "Flu cepat menular di sekolah.",
+       "v": "ok",
+       "why": [
+        "也可以：menular 专指病会“传染”。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你在公司群里说：“这个消息已经到处传开了。”"
+    ],
+    "kw": "menyebar · ke mana-mana",
+    "skel": "Kabar ini sudah ____ ke ____.",
+    "ref": "Kabar ini sudah menyebar ke mana-mana."
+   },
+   "recall": {
+    "prompt": [
+     "你问同事：“是谁把会议照片传出去的？”"
+    ],
+    "kw": "menyebarkan · foto rapat",
+    "skel": "Siapa yang ____ ____ ____?",
+    "ref": "Siapa yang menyebarkan foto rapat?"
+   },
+   "final": {
+    "cn": "（对朋友）“小心，这种谣言传得很快。”",
+    "ref": "Hati-hati, gosip kayak gini cepat nyebar."
+   },
+   "remind": "menyebar = 自己传开（不带宾语）；menyebarkan + 东西 = 把它传出去。"
+  },
+  {
+   "key": "lawan",
+   "name": "melawan",
+   "head": "melawan · 对抗；逆着",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "词卡例句",
+      "id": "Pulang kerja aku jalan kaki melawan angin, sampai payungku terbalik.",
+      "cn": "下班后我顶着风走路，伞都被吹翻了。"
+     }
+    ],
+    "ask": "melawan angin 是什么样子？",
+    "options": [
+     {
+      "t": "迎着风、顶着风走",
+      "ok": true,
+      "reply": [
+       "对。melawan = 逆着、对着干，风从前面吹来。"
+      ]
+     },
+     {
+      "t": "顺着风走",
+      "reply": [
+       "反了。顺风说 searah angin 或 angin dari belakang。"
+      ]
+     },
+     {
+      "t": "躲着风走",
+      "reply": [
+       "不是。躲开说 menghindari angin。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[melawan]] = 跟某个力量“对着来”：逆着风、水流（{{melawan arus}}），对抗病（{{melawan penyakit}}），比赛对阵（{{Indonesia melawan Jepang}}），顶撞长辈（{{melawan orang tua}}）。反对意见、政策更正式的说法是 {{menentang}}。"
+   ],
+   "simple": [
+    "[[melawan]] = 对着干：逆风、对抗、对阵"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "melawan angin",
+         "顶着风"
+        ],
+        [
+         "melawan arah",
+         "逆行"
+        ],
+        [
+         "Persib melawan Persija",
+         "Persib 对阵 Persija"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的辨析",
+     "from": "synonym_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Jangan naik motor ___ arah, bahaya!]]",
+     "（别逆行骑摩托，危险！）"
+    ],
+    "options": [
+     {
+      "t": "melawan",
+      "v": "right",
+      "why": [
+       "对。逆行 = melawan arah。"
+      ]
+     },
+     {
+      "t": "menentang",
+      "v": "wrong",
+      "why": [
+       "menentang 是反对意见、政策，不用来说行车方向。"
+      ]
+     },
+     {
+      "t": "melewati",
+      "v": "wrong",
+      "why": [
+       "melewati 是“经过”，意思不对。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你跟朋友说：“今晚印尼对日本。”"
+     ],
+     "options": [
+      {
+       "t": "Malam ini Indonesia melawan Jepang.",
+       "v": "right",
+       "why": [
+        "对。比赛对阵用 melawan。"
+       ]
+      },
+      {
+       "t": "Malam ini Indonesia menentang Jepang.",
+       "v": "wrong",
+       "why": [
+        "menentang 是政治、意见上的反对，不说比赛。"
+       ]
+      },
+      {
+       "t": "Malam ini Indonesia vs Jepang.",
+       "v": "ok",
+       "why": [
+        "也可以：写成 vs，读作 lawan 或 versus。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟家人说：“我骑车回家一路顶着风，好累。”"
+    ],
+    "kw": "melawan angin · capek",
+    "skel": "Aku naik motor pulang ____ ____ terus, ____ banget.",
+    "ref": "Aku naik motor pulang melawan angin terus, capek banget.",
+    "notes": [
+     "capek = lelah"
+    ]
+   },
+   "recall": {
+    "prompt": [
+     "你给生病的朋友打气：“你一定能战胜这个病。”"
+    ],
+    "kw": "melawan · penyakit",
+    "skel": "Kamu pasti kuat ____ ____ ini.",
+    "ref": "Kamu pasti kuat melawan penyakit ini."
+   },
+   "final": {
+    "cn": "（对孩子）“别跟老师顶嘴。”",
+    "ref": "Jangan melawan sama guru, ya."
+   },
+   "remind": "melawan = 对着干：melawan angin / arus / arah / penyakit，比赛 A melawan B。"
+  },
+  {
+   "key": "timpa",
+   "name": "menimpa",
+   "head": "menimpa · 砸到；压到",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "阅读",
+      "id": "Tiba-tiba terdengar suara keras: sebuah dahan besar patah dan menimpa atap dapur.",
+      "cn": "突然传来一声巨响：一根粗大的树枝断了，砸中了厨房的屋顶。"
+     }
+    ],
+    "ask": "句子里谁是 menimpa 的主语？",
+    "options": [
+     {
+      "t": "树枝（掉下来的东西）",
+      "ok": true,
+      "reply": [
+       "对。掉下来的东西 + menimpa + 被砸的东西。"
+      ]
+     },
+     {
+      "t": "屋顶",
+      "reply": [
+       "屋顶是被砸的。屋顶做主语要说 Atapnya tertimpa dahan."
+      ]
+     },
+     {
+      "t": "大风",
+      "reply": [
+       "风让树枝断了，但句子里砸屋顶的是 dahan。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "[[menimpa]]：掉下来的东西做主语，{{Dahan itu menimpa atap.}} 被砸的东西做主语，用 {{tertimpa}}（意外被砸），口语 {{ketimpa}}：{{Motorku ketimpa pohon!}} 新闻里还说 {{musibah menimpa …}}（灾祸降临到……）。"
+   ],
+   "simple": [
+    "[[A menimpa B]] = A 砸到 B；B 被砸 = B tertimpa / ketimpa A"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Pohon itu menimpa mobil.",
+         "那棵树砸到了车。"
+        ],
+        [
+         "Mobil itu tertimpa pohon.",
+         "那辆车被树砸了。"
+        ],
+        [
+         "Mobilku ketimpa pohon!",
+         "我的车被树砸了！（口语）"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "词卡上的用法",
+     "from": "usage_note"
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Untung nggak ada orang yang ___ papan reklame itu.]]",
+     "（幸好没有人被那块广告牌砸到。）"
+    ],
+    "options": [
+     {
+      "t": "tertimpa",
+      "v": "right",
+      "why": [
+       "对。人是被砸的一方，用 tertimpa。"
+      ]
+     },
+     {
+      "t": "menimpa",
+      "v": "wrong",
+      "why": [
+       "menimpa 的主语要是掉下来的东西，这里主语是人。"
+      ]
+     },
+     {
+      "t": "ketimpa",
+      "v": "ok",
+      "why": [
+       "也可以：口语形式，聊天里很常用。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你说：“架子上的箱子掉下来砸到了我的笔记本电脑。”"
+     ],
+     "options": [
+      {
+       "t": "Kardus dari rak jatuh dan menimpa laptopku.",
+       "v": "right",
+       "why": [
+        "对。箱子做主语，用 menimpa。"
+       ]
+      },
+      {
+       "t": "Kardus dari rak jatuh dan tertimpa laptopku.",
+       "v": "wrong",
+       "why": [
+        "主客反了：变成箱子被电脑砸。"
+       ]
+      },
+      {
+       "t": "Laptopku ketimpa kardus dari rak.",
+       "v": "ok",
+       "why": [
+        "也可以：电脑做主语，用口语 ketimpa。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你给房东发消息：“昨晚一根树枝砸到了车棚顶。”"
+    ],
+    "kw": "dahan · menimpa",
+    "skel": "Semalam ada ____ yang patah dan ____ atap carport.",
+    "ref": "Semalam ada dahan yang patah dan menimpa atap carport."
+   },
+   "recall": {
+    "prompt": [
+     "你跟同事说：“我的摩托被倒下来的招牌砸了。”（口语）"
+    ],
+    "kw": "ketimpa · papan nama",
+    "skel": "Motorku ____ ____ ____ yang roboh.",
+    "ref": "Motorku ketimpa papan nama yang roboh.",
+    "notes": [
+     "ketimpa = tertimpa"
+    ]
+   },
+   "final": {
+    "cn": "（新闻）“一棵倒下的树砸中了一辆公交车。”",
+    "ref": "Sebuah pohon tumbang menimpa bus kota."
+   },
+   "remind": "A menimpa B（A 砸到 B）；B 做主语用 tertimpa / 口语 ketimpa。"
+  },
+  {
+   "key": "p1",
+   "name": "… sudah tidak kokoh karena …",
+   "head": "… sudah tidak kokoh karena … · ……已经不结实了，因为……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "阅读",
+      "id": "Menurutnya, batang pohon itu sudah tidak kokoh karena bagian dalamnya keropos.",
+      "cn": "他说，那棵树的树干已经不结实了，因为里面已经空了、烂了。"
+     }
+    ],
+    "ask": "Pak Harto 这句话的作用是什么？",
+    "options": [
+     {
+      "t": "说明树为什么危险",
+      "ok": true,
+      "reply": [
+       "对。先说现状（不结实了），再用 karena 说原因。"
+      ]
+     },
+     {
+      "t": "夸这棵树长得好",
+      "reply": [
+       "不是。tidak kokoh 是“不结实”。"
+      ]
+     },
+     {
+      "t": "说树叶太多",
+      "reply": [
+       "树叶多说 daunnya lebat，这句讲的是树干。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "用来说东西“已经不牢靠”并给出原因：[[… sudah tidak kokoh karena …]]。{{sudah tidak}} 表示“原来是、现在不再是”。口语说 {{udah nggak kokoh}}。kokoh 用于建筑、结构、树干；人身体壮用 kuat。"
+   ],
+   "simple": [
+    "[[X sudah tidak kokoh karena Y]] = X 已经不结实了，因为 Y"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Raknya sudah tidak kokoh",
+         "架子已经不结实了"
+        ],
+        [
+         "karena bautnya longgar.",
+         "因为螺丝松了。"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[Tangga kayu itu ___ karena sering kena hujan.]]",
+     "（那把木梯子已经不结实了，因为常常淋雨。）"
+    ],
+    "options": [
+     {
+      "t": "sudah tidak kokoh",
+      "v": "right",
+      "why": [
+       "对。"
+      ]
+     },
+     {
+      "t": "sudah tidak lebat",
+      "v": "wrong",
+      "why": [
+       "lebat 说雨大、叶子密，不说梯子。"
+      ]
+     },
+     {
+      "t": "sudah nggak kuat",
+      "v": "ok",
+      "why": [
+       "也可以：kuat 更通用，口语里常说。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。你说：“这面墙已经不结实了，因为有裂缝。”"
+     ],
+     "options": [
+      {
+       "t": "Tembok ini sudah tidak kokoh karena ada retakan.",
+       "v": "right",
+       "why": [
+        "对。"
+       ]
+      },
+      {
+       "t": "Tembok ini sudah tidak kokoh supaya ada retakan.",
+       "v": "wrong",
+       "why": [
+        "supaya 是“为了”，逻辑不通。"
+       ]
+      },
+      {
+       "t": "Tembok ini udah nggak kokoh soalnya retak.",
+       "v": "ok",
+       "why": [
+        "也可以：口语说法，soalnya = karena。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你跟师傅说：“这个架子已经不结实了，因为螺丝松了。”"
+    ],
+    "kw": "sudah tidak kokoh · karena",
+    "skel": "Rak ini ____ ____ ____ ____ bautnya longgar.",
+    "ref": "Rak ini sudah tidak kokoh karena bautnya longgar."
+   },
+   "recall": {
+    "prompt": [
+     "你提醒家人：“那张旧椅子已经不结实了，因为腿裂了。”（口语）"
+    ],
+    "kw": "udah nggak kokoh · soalnya",
+    "skel": "Kursi lama itu ____ ____ ____, ____ kakinya retak.",
+    "ref": "Kursi lama itu udah nggak kokoh, soalnya kakinya retak.",
+    "notes": [
+     "udah nggak = sudah tidak；soalnya = karena"
+    ]
+   },
+   "final": {
+    "cn": "（对物业）“楼梯扶手已经不牢了，因为生锈了。”",
+    "ref": "Pegangan tangganya sudah tidak kokoh karena berkarat."
+   },
+   "remind": "X sudah tidak kokoh karena Y：先说不牢靠，再说原因。"
+  },
+  {
+   "key": "p2",
+   "name": "Untung … cuma …, bukan …",
+   "head": "Untung … cuma …, bukan … · 幸好只是……，不是……",
+   "scene": {
+    "quotes": [
+     {
+      "speaker": "对话",
+      "id": "Kasihan. Untung dahannya cuma menimpa dapur, bukan kamar.",
+      "cn": "真可怜。幸好树枝只砸到厨房，没砸到卧室。"
+     }
+    ],
+    "ask": "Pak Harto 想表达什么？",
+    "options": [
+     {
+      "t": "坏事里还有一点庆幸",
+      "ok": true,
+      "reply": [
+       "对。untung 先表庆幸，cuma 说损失不大，bukan 说更糟的情况没发生。"
+      ]
+     },
+     {
+      "t": "他觉得厨房不重要",
+      "reply": [
+       "不是这个意思，他是在安慰 Bu Wulan。"
+      ]
+     },
+     {
+      "t": "他在责怪 Bu Wulan",
+      "reply": [
+       "没有责怪，Kasihan 是“真可怜”。"
+      ]
+     }
+    ]
+   },
+   "explain": [
+    "安慰人的常用句：[[Untung + 实际情况 cuma …, bukan + 更糟的情况]]。{{cuma}} 是口语“只”，正式说 {{hanya}}。也可以省掉 bukan 部分：{{Untung cuma lecet.}}（幸好只是擦伤。）"
+   ],
+   "simple": [
+    "[[Untung cuma A, bukan B]] = 幸好只是 A，不是更糟的 B"
+   ],
+   "asks": [
+    {
+     "label": "换个角度",
+     "remedy": true,
+     "reply": [
+      {
+       "table": [
+        [
+         "Untung cuma telat lima menit,",
+         "幸好只迟到五分钟，"
+        ],
+        [
+         "bukan ketinggalan pesawat.",
+         "不是误了飞机。"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "check": {
+    "q": [
+     "[[___ yang hilang cuma payung, bukan dompet.]]",
+     "（幸好丢的只是伞，不是钱包。）"
+    ],
+    "options": [
+     {
+      "t": "Untung",
+      "v": "right",
+      "why": [
+       "对。untung = 幸好。"
+      ]
+     },
+     {
+      "t": "Sayang",
+      "v": "wrong",
+      "why": [
+       "sayang 是“可惜”，语气正相反。"
+      ]
+     },
+     {
+      "t": "Untungnya",
+      "v": "ok",
+      "why": [
+       "也可以：untungnya 也常用，意思一样。"
+      ]
+     }
+    ],
+    "backup": {
+     "q": [
+      "换一题。朋友摔倒了，你说：“幸好只是擦伤，不是骨折。”"
+     ],
+     "options": [
+      {
+       "t": "Untung cuma lecet, bukan patah tulang.",
+       "v": "right",
+       "why": [
+        "对。"
+       ]
+      },
+      {
+       "t": "Untung bukan lecet, cuma patah tulang.",
+       "v": "wrong",
+       "why": [
+        "顺序反了，变成“幸好只是骨折”。"
+       ]
+      },
+      {
+       "t": "Untung hanya lecet, bukan patah tulang.",
+       "v": "ok",
+       "why": [
+        "也可以：hanya 是标准形。"
+       ]
+      }
+     ]
+    }
+   },
+   "say": {
+    "prompt": [
+     "你安慰同事：“幸好只是手机屏幕裂了，不是整部坏了。”"
+    ],
+    "kw": "untung · cuma · bukan",
+    "skel": "____ ____ layarnya yang retak, ____ HP-nya mati total.",
+    "ref": "Untung cuma layarnya yang retak, bukan HP-nya mati total."
+   },
+   "recall": {
+    "prompt": [
+     "你跟家人说：“幸好只是车胎瘪了，不是出车祸。”"
+    ],
+    "kw": "untung · cuma · bukan",
+    "skel": "____ ____ bannya kempes, ____ kecelakaan.",
+    "ref": "Untung cuma bannya kempes, bukan kecelakaan."
+   },
+   "final": {
+    "cn": "（对朋友）“幸好只是航班延误，不是取消。”",
+    "ref": "Untung pesawatnya cuma delay, bukan dibatalkan."
+   },
+   "remind": "Untung cuma A, bukan B：坏事里的庆幸、安慰人。"
+  }
+ ],
+ "scan": {
+  "head": "其他新词 · 扫一眼",
+  "intro": [
+   "今晚另外四个新词，词卡里有完整讲解，这里扫一眼：不熟的点一下。"
+  ],
+  "words": [
+   "bergoyang-goyang",
+   "kokoh",
+   "memperbaikinya",
+   "ketersediaannya"
+  ]
+ },
+ "reading": [
+  {
+   "key": "tersedia",
+   "sentence": "Bu Wulan pun menelepon toko bangunan untuk menanyakan ketersediaannya.",
+   "cn": "于是 Bu Wulan 打电话给建材店，问还有没有货。",
+   "chunks": [
+    [
+     "Bu Wulan pun",
+     "于是 Bu Wulan",
+     "pun = 于是、也就"
+    ],
+    [
+     "menelepon toko bangunan",
+     "打电话给建材店",
+     ""
+    ],
+    [
+     "untuk menanyakan",
+     "去询问",
+     "menanyakan + 要问的事"
+    ],
+    [
+     "ketersediaannya.",
+     "它（瓦）的供应情况",
+     "ke-an + tersedia + -nya"
+    ]
+   ],
+   "steal": [
+    "值得借的是 [[menelepon … untuk menanyakan …]]：打电话去问某事。{{Saya menelepon klinik untuk menanyakan jadwal dokter.}}（我打电话给诊所问医生的排班。）"
+   ]
+  }
+ ],
+ "dialogue": {
+  "head": "对话 · 你来演 Pak Harto",
+  "intro": [
+   "你演邻居 Pak Harto，我演 Bu Wulan。每一轮先看他想说什么，看中文先说。"
+  ],
+  "turns": [
+   {
+    "line": 2,
+    "intent": "Pak Harto 安慰：幸好树枝只砸到厨房，不是卧室；还说那棵树已经不结实了。",
+    "kw": "untung · cuma · kokoh",
+    "skel": "Kasihan. ____ dahannya ____ menimpa dapur, bukan kamar. Pohonnya udah nggak ____, Bu."
+   },
+   {
+    "line": 4,
+    "intent": "Pak Harto 安排孩子们从院子到梯子排成一排传瓦片。",
+    "kw": "berbaris · dioper",
+    "skel": "Sip. Nanti anak-anak ____ dari halaman sampai tangga, gentengnya ____ satu-satu ke atas."
+   }
+  ],
+  "tail": [
+   "Pak Harto 和 Bu Wulan 是平辈邻居，用 saya/Bu 加口语语气词（udah、nggak、aja）。"
+  ]
+ },
+ "tasks": [
+  {
+   "key": "output",
+   "prompt": [
+    "最后一个开口任务（来自今晚的改写题，缩短版）：大风天你看到朋友家车棚顶在晃，提醒他。"
+   ],
+   "kw": "bergoyang-goyang · kokoh · menimpa",
+   "skel": "Atap carport-mu ____ kena angin. Kayaknya udah nggak ____, nanti bisa ____ mobilmu.",
+   "ref": "Atap carport-mu bergoyang-goyang kena angin. Kayaknya udah nggak kokoh, nanti bisa menimpa mobilmu.",
+   "notes": [
+    "整页的改写题有更完整的参考答案，学完可以去对照。"
+   ]
+  }
+ ],
+ "next": "回到整页做小测、课末回想和「我学完了」。这些都不变。"
+}
