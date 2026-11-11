@@ -10460,27 +10460,31 @@ window.DAILY_VOCAB_DB = [
     "en": "great; solid; excellent",
     "root": "mantap",
     "root_cn": "稳；确定；很棒",
-    "example": "Kalau tempatnya dekat dan harganya masuk akal, menurutku sudah mantap.",
-    "example_cn": "如果地方近、价格也合理，我觉得就很不错了。",
+    "example": "Mantap! Kamu berhasil meningkatkan nilai bahasa Indonesiamu dalam sebulan.",
+    "example_cn": "太棒了！你一个月就把印尼语成绩提高了。",
     "categories": [
       "每日学习",
       "08:00",
       "口语",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 19:00",
+    "last_seen": "2026-11-11 18:00",
     "sessions": [
       "08:00",
-      "19:00"
+      "19:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-11-11"
     ],
     "lesson_occurrences": [
       "2026-09-14 08:00",
-      "2026-09-14 19:00"
+      "2026-09-14 19:00",
+      "2026-11-11 18:00"
     ]
   },
   {
@@ -13413,16 +13417,16 @@ window.DAILY_VOCAB_DB = [
     "en": "complain",
     "root": "keluh",
     "root_cn": "抱怨；叹息",
-    "example": "Dia sering mengeluh soal macet, tetapi tetap berangkat pagi.",
-    "example_cn": "他经常抱怨堵车，但还是早早出发。",
+    "example": "Tetangga mengeluh karena kami mendengarkan musik terlalu keras sampai tengah malam.",
+    "example_cn": "邻居抱怨，因为我们放音乐放得太大声，一直到半夜。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-10-17 08:00",
+    "last_seen": "2026-11-11 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13433,7 +13437,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28",
       "2026-10-01",
       "2026-10-05",
-      "2026-10-17"
+      "2026-10-17",
+      "2026-11-11"
     ],
     "lesson_occurrences": [
       "2026-09-23 08:00",
@@ -13442,7 +13447,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-01 08:00",
       "2026-10-01 18:00",
       "2026-10-05 08:00",
-      "2026-10-17 08:00"
+      "2026-10-17 08:00",
+      "2026-11-11 18:00"
     ]
   },
   {
@@ -13640,17 +13646,19 @@ window.DAILY_VOCAB_DB = [
     "en": "shout; scream",
     "root": "teriak",
     "root_cn": "喊叫",
-    "example": "Dia berteriak karena temannya berada terlalu jauh.",
-    "example_cn": "因为朋友离得太远，他大声喊了起来。",
+    "example": "Waktu melihat ada orang mau mengambil motornya, Pak Joko langsung berteriak, \"Maling!\"",
+    "example_cn": "看到有人要偷走他的摩托车，Pak Joko 立刻大喊：“有贼！”",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-24",
@@ -13658,7 +13666,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-09-24 08:00",
-      "2026-11-11 08:00"
+      "2026-11-11 08:00",
+      "2026-11-11 18:00"
     ]
   },
   {
@@ -14436,26 +14445,28 @@ window.DAILY_VOCAB_DB = [
     "en": "benefit; usefulness",
     "root": "manfaat",
     "root_cn": "益处；用途",
-    "example": "Metode baru ini memberi manfaat bagi tim dan pelanggan.",
-    "example_cn": "这个新方法对团队和客户都有好处。",
+    "example": "Manfaat olahraga pagi baru terasa setelah saya berusaha rutin selama sebulan.",
+    "example_cn": "晨练的好处，是我努力坚持了一个月之后才感受到的。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-25 18:00",
+    "last_seen": "2026-11-11 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-25"
+      "2026-09-25",
+      "2026-11-11"
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00",
-      "2026-09-25 18:00"
+      "2026-09-25 18:00",
+      "2026-11-11 18:00"
     ]
   },
   {
@@ -23846,27 +23857,29 @@ window.DAILY_VOCAB_DB = [
     "en": "estimate; predict",
     "root": "kira",
     "root_cn": "猜测；估量",
-    "example": "Coba perkirakan dulu, berapa lama kita harus antre di loket?",
-    "example_cn": "先估计一下，我们得在售票处排多久的队？",
+    "example": "Sebelum renovasi dapur, coba perkirakan dulu biayanya supaya kita nggak nombok di akhir bulan.",
+    "example_cn": "厨房装修之前，先估计一下费用，免得月底我们还得自己往里贴钱。（nggak = tidak，nombok = 自己垫钱补差额）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-10-22 18:00",
+    "last_seen": "2026-11-11 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-10-21",
-      "2026-10-22"
+      "2026-10-22",
+      "2026-11-11"
     ],
     "lesson_occurrences": [
       "2026-10-21 08:00",
-      "2026-10-22 18:00"
+      "2026-10-22 18:00",
+      "2026-11-11 18:00"
     ]
   },
   {
@@ -31294,23 +31307,26 @@ window.DAILY_VOCAB_DB = [
     "en": "shoulder",
     "root": "bahu",
     "root_cn": "肩",
-    "example": "Tas ranselnya terlalu berat, jadi bahu saya pegal setelah berjalan-jalan seharian.",
-    "example_cn": "背包太重了，逛了一整天之后我的肩膀很酸。",
+    "example": "Tas ini berat, talinya tipis pula, jadi bahu saya cepat pegal.",
+    "example_cn": "这个包很重，而且背带还很细，所以我的肩膀很快就酸了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-11 08:00",
-    "last_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-11"
     ],
     "lesson_occurrences": [
-      "2026-11-11 08:00"
+      "2026-11-11 08:00",
+      "2026-11-11 18:00"
     ]
   },
   {
@@ -31344,23 +31360,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to be related (to)",
     "root": "kait",
     "root_cn": "钩；挂住",
-    "example": "Dokter yakin sakit kepala saya berkaitan dengan kurang tidur, bukan dengan mata.",
-    "example_cn": "医生确信我的头痛和睡眠不足有关，跟眼睛无关。",
+    "example": "Pertanyaannya berkaitan dengan hukum waris, jadi lebih baik tanya pengacara.",
+    "example_cn": "这个问题跟继承法有关，所以最好问律师。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-11 08:00",
-    "last_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-11"
     ],
     "lesson_occurrences": [
-      "2026-11-11 08:00"
+      "2026-11-11 08:00",
+      "2026-11-11 18:00"
     ]
   },
   {
@@ -31469,23 +31488,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to come from; to originate",
     "root": "asal",
     "root_cn": "来源；原籍",
-    "example": "Penulis novel itu berasal dari Padang, tapi sudah lama tinggal di Yogyakarta.",
-    "example_cn": "那本小说的作者来自巴东，但已经在日惹住了很久。",
+    "example": "Pewarna kain ini berasal dari bahan alami, seperti daun dan kulit kayu.",
+    "example_cn": "这块布的染料来自天然材料，比如树叶和树皮。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-11 08:00",
-    "last_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-11"
     ],
     "lesson_occurrences": [
-      "2026-11-11 08:00"
+      "2026-11-11 08:00",
+      "2026-11-11 18:00"
     ]
   },
   {
@@ -31536,6 +31558,131 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-11 08:00"
+    ]
+  },
+  {
+    "word": "setrika",
+    "cn": "熨斗；熨（衣服）",
+    "en": "iron (for clothes); to iron",
+    "root": "setrika",
+    "root_cn": "熨斗",
+    "example": "Setrika di kos kami cuma satu, jadi tiap pagi kami harus ngatur giliran.",
+    "example_cn": "我们宿舍只有一个熨斗，所以每天早上都得安排好轮流用。（ngatur = mengatur）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 18:00",
+    "last_seen": "2026-11-11 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 18:00"
+    ]
+  },
+  {
+    "word": "kain pel",
+    "cn": "拖把布；拖布",
+    "en": "mop (cloth)",
+    "root": "pel",
+    "root_cn": "拖（地）",
+    "example": "Jangan mencampur pembersih lantai dengan pemutih waktu merendam kain pel, baunya bisa bikin pusing.",
+    "example_cn": "泡拖布的时候别把地板清洁剂和漂白水混在一起，那个味道会让人头晕。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 18:00",
+    "last_seen": "2026-11-11 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 18:00"
+    ]
+  },
+  {
+    "word": "penyedot debu",
+    "cn": "吸尘器",
+    "en": "vacuum cleaner",
+    "root": "sedot",
+    "root_cn": "吸",
+    "example": "Debu paling banyak menumpuk di antara sofa dan dinding, jadi ujung penyedot debu yang kecil sangat berguna.",
+    "example_cn": "灰尘最容易堆在沙发和墙之间，所以吸尘器那个小吸头很好用。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 18:00",
+    "last_seen": "2026-11-11 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 18:00"
+    ]
+  },
+  {
+    "word": "seprai",
+    "cn": "床单",
+    "en": "bed sheet",
+    "root": "seprai",
+    "root_cn": "床单",
+    "example": "Seharusnya seprai diganti seminggu sekali, tapi kalau lagi sibuk saya sering lupa.",
+    "example_cn": "床单本来应该一周换一次，可是一忙起来我经常忘。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 18:00",
+    "last_seen": "2026-11-11 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 18:00"
+    ]
+  },
+  {
+    "word": "guling",
+    "cn": "长抱枕（印尼床上常见的圆柱形抱枕）",
+    "en": "bolster; long hug pillow",
+    "root": "guling",
+    "root_cn": "滚动；翻滚",
+    "example": "Waktu kecil, adikku suka menyembunyikan permen di bawah guling supaya nggak ketahuan Ibu.",
+    "example_cn": "小时候，我弟弟喜欢把糖藏在长抱枕下面，免得被妈妈发现。（nggak = tidak）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 18:00",
+    "last_seen": "2026-11-11 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 18:00"
     ]
   }
 ];

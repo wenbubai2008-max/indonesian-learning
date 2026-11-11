@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-11",
-    "session": "pm",
-    "time": "18:00",
-    "day": 82
+    "date": "2026-11-12",
+    "session": "am",
+    "time": "08:00",
+    "day": 83
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-11T03:40:24.723Z",
-    "lesson_watermark": "2026-11-11 08:00",
+    "runtime_generated_at": "2026-11-11T10:51:41.194Z",
+    "lesson_watermark": "2026-11-11 18:00",
     "index_updated": "2026-11-11",
-    "runtime_hash": "48f75a83129644063bd93b015ddcdd58869413ead81485136842ba95ac71db6b",
-    "index_hash": "bb43c9e5a50264568275b4c7139f3ca8a072118431376bace57311bf0b6bcce8",
+    "runtime_hash": "ebe58d76822a9215aa9e4d6477a17d02fd2b2301d2eb96c7215322a3bd28f202",
+    "index_hash": "34775b14053c02336840d808faab7d36403baa7c20baf6c112666b54287895f3",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -127,18 +127,6 @@
         "衣架"
       ],
       [
-        "setrika",
-        "熨斗"
-      ],
-      [
-        "kain pel",
-        "拖布"
-      ],
-      [
-        "guling",
-        "长抱枕"
-      ],
-      [
         "emas",
         "金色"
       ],
@@ -243,16 +231,8 @@
         "铁路道口栏杆"
       ],
       [
-        "penyedot debu",
-        "吸尘器"
-      ],
-      [
         "ulek",
         "研杵"
-      ],
-      [
-        "seprai",
-        "床单"
       ],
       [
         "gantungan",
@@ -1187,16 +1167,6 @@
         "一方；方面"
       ],
       [
-        "mantap",
-        3,
-        0,
-        "",
-        "2026-10-15T13:46:41.938Z",
-        "很棒；很稳；很可以（口语）",
-        "mantap",
-        "稳；确定；很棒"
-      ],
-      [
         "sesuai",
         3,
         0,
@@ -1605,16 +1575,6 @@
         "地区；区域",
         "wilayah",
         "地区；区域"
-      ],
-      [
-        "manfaat",
-        2,
-        0,
-        "",
-        "2026-10-22T15:34:33.181Z",
-        "益处；好处",
-        "manfaat",
-        "益处；用途"
       ],
       [
         "pantas",
@@ -2617,104 +2577,24 @@
         "碰到；涉及"
       ],
       [
-        "bahu",
-        3,
+        "meninggal",
+        2,
         0,
         "",
-        "2026-11-11T03:23:41.238Z",
-        "肩；肩膀",
-        "bahu",
-        "肩"
+        "2026-10-23T23:30:08.749Z",
+        "去世；过世",
+        "tinggal",
+        "留下；居住"
       ],
       [
-        "bermain bulu tangkis",
-        3,
+        "parah",
+        2,
         0,
         "",
-        "2026-11-11T03:24:01.365Z",
-        "打羽毛球",
-        "main",
-        "玩；进行（游戏、运动）"
-      ],
-      [
-        "berkaitan",
-        3,
-        0,
-        "",
-        "2026-11-11T03:23:55.528Z",
-        "相关；有关联（与……）",
-        "kait",
-        "钩；挂住"
-      ],
-      [
-        "tempat lahir",
-        3,
-        0,
-        "",
-        "2026-11-11T03:24:22.469Z",
-        "出生地",
-        "lahir",
-        "出生"
-      ],
-      [
-        "jenis kelamin",
-        3,
-        0,
-        "",
-        "2026-11-11T03:24:04.506Z",
-        "性别",
-        "kelamin",
-        "性别（生理上的）"
-      ],
-      [
-        "status pernikahan",
-        3,
-        0,
-        "",
-        "2026-11-11T03:24:18.859Z",
-        "婚姻状况",
-        "nikah",
-        "结婚"
-      ],
-      [
-        "kewarganegaraan",
-        3,
-        0,
-        "",
-        "2026-11-11T03:24:06.769Z",
-        "国籍",
-        "warga negara",
-        "公民（某国的国民）"
-      ],
-      [
-        "berasal",
-        3,
-        0,
-        "",
-        "2026-11-11T03:23:43.494Z",
-        "来自；起源于（常接 dari）",
-        "asal",
-        "来源；原籍"
-      ],
-      [
-        "nol",
-        3,
-        0,
-        "",
-        "2026-11-11T03:24:11.995Z",
-        "零",
-        "nol",
-        "零"
-      ],
-      [
-        "seperempat",
-        3,
-        0,
-        "",
-        "2026-11-11T03:24:15.554Z",
-        "四分之一；一刻钟（15分钟）",
-        "empat",
-        "四"
+        "2026-10-23T23:33:28.795Z",
+        "严重的；糟糕的（多指坏事）",
+        "parah",
+        "严重"
       ]
     ],
     "focus": [
@@ -2978,47 +2858,6 @@
     "oral": []
   },
   "history_7d": [
-    {
-      "date": "2026-11-04",
-      "session": "am",
-      "review_core": [
-        "kasur",
-        "selera",
-        "calon",
-        "cas",
-        "kaget"
-      ],
-      "new_words": [
-        "pers",
-        "berasal dari",
-        "berbelanja",
-        "suka menolong",
-        "menyapu",
-        "sapu",
-        "ember",
-        "saking",
-        "menyebalkan",
-        "kemeja"
-      ]
-    },
-    {
-      "date": "2026-11-04",
-      "session": "pm",
-      "review_core": [
-        "menyalin",
-        "seraya",
-        "kejebak",
-        "ketua",
-        "khusus"
-      ],
-      "new_words": [
-        "menanyakan",
-        "berkas",
-        "tanda tangan",
-        "menyerahkan",
-        "pertimbangan"
-      ]
-    },
     {
       "date": "2026-11-05",
       "session": "am",
@@ -3287,107 +3126,44 @@
         "nol",
         "seperempat"
       ]
+    },
+    {
+      "date": "2026-11-11",
+      "session": "pm",
+      "review_core": [
+        "perkirakan",
+        "mengeluh",
+        "berteriak",
+        "manfaat",
+        "mantap"
+      ],
+      "new_words": [
+        "setrika",
+        "kain pel",
+        "penyedot debu",
+        "seprai",
+        "guling"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "new_words": [
-      "bergoyang-goyang",
-      "menimpa",
-      "kokoh",
-      "memperbaikinya",
-      "ketersediaannya"
+      "setrika",
+      "kain pel",
+      "penyedot debu",
+      "seprai",
+      "guling"
     ],
     "review_core": [
-      "lebat",
-      "melawan",
-      "menyebar",
-      "batuk",
-      "berkunjung"
-    ]
-  },
-  "same_day_am": {
-    "date": "2026-11-11",
-    "vocab": [
-      [
-        "bahu",
-        "肩；肩膀",
-        "shoulder",
-        "bahu",
-        "肩"
-      ],
-      [
-        "bermain bulu tangkis",
-        "打羽毛球",
-        "to play badminton",
-        "main",
-        "玩；进行（游戏、运动）"
-      ],
-      [
-        "berkaitan",
-        "相关；有关联（与……）",
-        "to be related (to)",
-        "kait",
-        "钩；挂住"
-      ],
-      [
-        "tempat lahir",
-        "出生地",
-        "place of birth",
-        "lahir",
-        "出生"
-      ],
-      [
-        "jenis kelamin",
-        "性别",
-        "sex; gender (on forms)",
-        "kelamin",
-        "性别（生理上的）"
-      ],
-      [
-        "status pernikahan",
-        "婚姻状况",
-        "marital status",
-        "nikah",
-        "结婚"
-      ],
-      [
-        "kewarganegaraan",
-        "国籍",
-        "nationality; citizenship",
-        "warga negara",
-        "公民（某国的国民）"
-      ],
-      [
-        "berasal",
-        "来自；起源于（常接 dari）",
-        "to come from; to originate",
-        "asal",
-        "来源；原籍"
-      ],
-      [
-        "nol",
-        "零",
-        "zero",
-        "nol",
-        "零"
-      ],
-      [
-        "seperempat",
-        "四分之一；一刻钟（15分钟）",
-        "a quarter; quarter of an hour",
-        "empat",
-        "四"
-      ]
-    ],
-    "review_vocab": [
-      "menimpa",
-      "berantem",
+      "perkirakan",
+      "mengeluh",
       "berteriak",
-      "isi bensin",
-      "ketika"
+      "manfaat",
+      "mantap"
     ]
   },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
