@@ -13646,17 +13646,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-09-24 08:00",
+    "last_seen": "2026-11-11 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-24"
+      "2026-09-24",
+      "2026-11-11"
     ],
     "lesson_occurrences": [
-      "2026-09-24 08:00"
+      "2026-09-24 08:00",
+      "2026-11-11 08:00"
     ]
   },
   {
@@ -13789,17 +13791,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-09-24 08:00",
+    "last_seen": "2026-11-11 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-24"
+      "2026-09-24",
+      "2026-11-11"
     ],
     "lesson_occurrences": [
-      "2026-09-24 08:00"
+      "2026-09-24 08:00",
+      "2026-11-11 08:00"
     ]
   },
   {
@@ -14287,21 +14291,23 @@ window.DAILY_VOCAB_DB = [
       "口语",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-11 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-25",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-11"
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00",
       "2026-09-25 18:00",
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-11-11 08:00"
     ]
   },
   {
@@ -14567,19 +14573,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-25 18:00",
-    "last_seen": "2026-09-25 18:00",
+    "last_seen": "2026-11-11 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-25"
+      "2026-09-25",
+      "2026-11-11"
     ],
     "lesson_occurrences": [
-      "2026-09-25 18:00"
+      "2026-09-25 18:00",
+      "2026-11-11 08:00"
     ]
   },
   {
@@ -31184,19 +31194,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "昨晚倒下的广告牌砸中了停在环岛附近的两辆摩托车。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-10 18:00",
-    "last_seen": "2026-11-10 18:00",
+    "last_seen": "2026-11-11 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "lesson_occurrences": [
-      "2026-11-10 18:00"
+      "2026-11-10 18:00",
+      "2026-11-11 08:00"
     ]
   },
   {
@@ -31272,6 +31286,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-10 18:00"
+    ]
+  },
+  {
+    "word": "bahu",
+    "cn": "肩；肩膀",
+    "en": "shoulder",
+    "root": "bahu",
+    "root_cn": "肩",
+    "example": "Tas ranselnya terlalu berat, jadi bahu saya pegal setelah berjalan-jalan seharian.",
+    "example_cn": "背包太重了，逛了一整天之后我的肩膀很酸。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 08:00"
+    ]
+  },
+  {
+    "word": "bermain bulu tangkis",
+    "cn": "打羽毛球",
+    "en": "to play badminton",
+    "root": "main",
+    "root_cn": "玩；进行（游戏、运动）",
+    "example": "Terkadang kami bermain bulu tangkis di lapangan kompleks setelah pulang kerja.",
+    "example_cn": "有时候我们下班后在小区球场打羽毛球。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 08:00"
+    ]
+  },
+  {
+    "word": "berkaitan",
+    "cn": "相关；有关联（与……）",
+    "en": "to be related (to)",
+    "root": "kait",
+    "root_cn": "钩；挂住",
+    "example": "Dokter yakin sakit kepala saya berkaitan dengan kurang tidur, bukan dengan mata.",
+    "example_cn": "医生确信我的头痛和睡眠不足有关，跟眼睛无关。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 08:00"
+    ]
+  },
+  {
+    "word": "tempat lahir",
+    "cn": "出生地",
+    "en": "place of birth",
+    "root": "lahir",
+    "root_cn": "出生",
+    "example": "Tolong tulis tempat lahir sesuai paspor, bukan nama kota tempat Anda tinggal sekarang.",
+    "example_cn": "请按护照填写出生地，不是你现在住的城市名。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 08:00"
+    ]
+  },
+  {
+    "word": "jenis kelamin",
+    "cn": "性别",
+    "en": "sex; gender (on forms)",
+    "root": "kelamin",
+    "root_cn": "性别（生理上的）",
+    "example": "Di formulir lamaran kerja itu ada kolom jenis kelamin, umur, dan pendidikan terakhir.",
+    "example_cn": "那份求职申请表上有性别、年龄和最高学历几栏。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 08:00"
+    ]
+  },
+  {
+    "word": "status pernikahan",
+    "cn": "婚姻状况",
+    "en": "marital status",
+    "root": "nikah",
+    "root_cn": "结婚",
+    "example": "Bank menanyakan status pernikahan saya dan meminta fotokopi buku nikah sebagai lampiran.",
+    "example_cn": "银行问了我的婚姻状况，并要求附上结婚证复印件。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 08:00"
+    ]
+  },
+  {
+    "word": "kewarganegaraan",
+    "cn": "国籍",
+    "en": "nationality; citizenship",
+    "root": "warga negara",
+    "root_cn": "公民（某国的国民）",
+    "example": "Di kolom kewarganegaraan, tulis nama negara, bukan nama kota.",
+    "example_cn": "国籍一栏写国家名，不写城市名。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 08:00"
+    ]
+  },
+  {
+    "word": "berasal",
+    "cn": "来自；起源于（常接 dari）",
+    "en": "to come from; to originate",
+    "root": "asal",
+    "root_cn": "来源；原籍",
+    "example": "Penulis novel itu berasal dari Padang, tapi sudah lama tinggal di Yogyakarta.",
+    "example_cn": "那本小说的作者来自巴东，但已经在日惹住了很久。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 08:00"
+    ]
+  },
+  {
+    "word": "nol",
+    "cn": "零",
+    "en": "zero",
+    "root": "nol",
+    "root_cn": "零",
+    "example": "Kalau menelepon dari luar negeri, angka nol di depan nomor HP diganti dengan +62.",
+    "example_cn": "从国外打电话时，手机号前面的0要换成+62。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 08:00"
+    ]
+  },
+  {
+    "word": "seperempat",
+    "cn": "四分之一；一刻钟（15分钟）",
+    "en": "a quarter; quarter of an hour",
+    "root": "empat",
+    "root_cn": "四",
+    "example": "Saya sampai di klinik seperempat jam sebelum jadwal, jadi masih sempat mengisi formulir.",
+    "example_cn": "我比预约时间早一刻钟到诊所，所以还来得及填表。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-11 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-11"
+    ],
+    "lesson_occurrences": [
+      "2026-11-11 08:00"
     ]
   }
 ];

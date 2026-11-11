@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-11",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 82
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-10T23:40:25.723Z",
-    "lesson_watermark": "2026-11-10 18:00",
-    "index_updated": "2026-11-10",
-    "runtime_hash": "371e14e93a5198c8b0a5a5430d779ca448d5c383ff6561a6f4fc3e77edea3181",
-    "index_hash": "785632515656380c1faf8de89a0e24a1519923f7a180c82c097c2fbed8b1896e",
+    "runtime_generated_at": "2026-11-11T00:31:01.282Z",
+    "lesson_watermark": "2026-11-11 08:00",
+    "index_updated": "2026-11-11",
+    "runtime_hash": "c8fbfce19134f16b82b31f53249775484a0d9e042f4f45c1bc33dc5cd5916c89",
+    "index_hash": "bb43c9e5a50264568275b4c7139f3ca8a072118431376bace57311bf0b6bcce8",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -55,10 +55,6 @@
         "旁边"
       ],
       [
-        "bahu",
-        "肩"
-      ],
-      [
         "mengasyikan",
         "有趣、让人沉浸"
       ],
@@ -83,20 +79,12 @@
         "波浪；浪潮"
       ],
       [
-        "berkaitan",
-        "相关；有关联"
-      ],
-      [
         "aspek",
         "方面"
       ],
       [
         "menyerang",
         "攻击；侵袭"
-      ],
-      [
-        "berasal",
-        "来自；起源于"
       ],
       [
         "diakui",
@@ -115,36 +103,12 @@
         "圣诞节"
       ],
       [
-        "tempat lahir",
-        "出生地"
-      ],
-      [
-        "jenis kelamin",
-        "性别"
-      ],
-      [
-        "status pernikahan",
-        "婚姻状况"
-      ],
-      [
-        "kewarganegaraan",
-        "国籍"
-      ],
-      [
         "pengajar",
         "教师/讲师"
       ],
       [
         "berulang tahun",
         "过生日"
-      ],
-      [
-        "nol",
-        "零"
-      ],
-      [
-        "seperempat",
-        "四分之一；一刻钟"
       ],
       [
         "harimau",
@@ -173,10 +137,6 @@
       [
         "guling",
         "长抱枕"
-      ],
-      [
-        "bermain bulu tangkis",
-        "打羽毛球"
       ],
       [
         "emas",
@@ -1557,26 +1517,6 @@
         "哭泣；哭声"
       ],
       [
-        "berteriak",
-        2,
-        0,
-        "",
-        "2026-10-19T05:53:38.143Z",
-        "喊叫",
-        "teriak",
-        "喊叫"
-      ],
-      [
-        "isi bensin",
-        3,
-        0,
-        "",
-        "2026-10-21T01:43:54.675Z",
-        "加油",
-        "isi bensin",
-        "加汽油"
-      ],
-      [
         "mengangkat",
         3,
         0,
@@ -1695,16 +1635,6 @@
         "供应商",
         "pasok",
         "供应；供给"
-      ],
-      [
-        "ketika",
-        3,
-        0,
-        "",
-        "2026-10-21T01:45:19.505Z",
-        "当……时候",
-        "ketika",
-        "当……时候"
       ],
       [
         "rapat",
@@ -2247,16 +2177,6 @@
         "泥泞"
       ],
       [
-        "berantem",
-        2,
-        0,
-        "",
-        "2026-10-19T13:14:48.750Z",
-        "打架；吵架",
-        "antem",
-        "打；争吵"
-      ],
-      [
         "cemas",
         2,
         0,
@@ -2655,6 +2575,146 @@
         "力量；实力；效力",
         "kuat",
         "强；有力"
+      ],
+      [
+        "kelompok",
+        2,
+        0,
+        "",
+        "2026-10-21T01:44:59.663Z",
+        "组；小组；群体",
+        "kelompok",
+        "组；群"
+      ],
+      [
+        "langkah",
+        2,
+        0,
+        "",
+        "2026-10-22T15:34:21.897Z",
+        "步骤；脚步；措施",
+        "langkah",
+        "步；步子"
+      ],
+      [
+        "memenuhi",
+        2,
+        0,
+        "",
+        "2026-10-22T15:35:34.705Z",
+        "满足；符合；装满",
+        "penuh",
+        "满"
+      ],
+      [
+        "mengenai",
+        2,
+        0,
+        "",
+        "2026-10-23T23:28:31.333Z",
+        "关于；有关",
+        "kena",
+        "碰到；涉及"
+      ],
+      [
+        "bahu",
+        3,
+        0,
+        "",
+        "",
+        "肩；肩膀",
+        "bahu",
+        "肩"
+      ],
+      [
+        "bermain bulu tangkis",
+        3,
+        0,
+        "",
+        "",
+        "打羽毛球",
+        "main",
+        "玩；进行（游戏、运动）"
+      ],
+      [
+        "berkaitan",
+        3,
+        0,
+        "",
+        "",
+        "相关；有关联（与……）",
+        "kait",
+        "钩；挂住"
+      ],
+      [
+        "tempat lahir",
+        3,
+        0,
+        "",
+        "",
+        "出生地",
+        "lahir",
+        "出生"
+      ],
+      [
+        "jenis kelamin",
+        3,
+        0,
+        "",
+        "",
+        "性别",
+        "kelamin",
+        "性别（生理上的）"
+      ],
+      [
+        "status pernikahan",
+        3,
+        0,
+        "",
+        "",
+        "婚姻状况",
+        "nikah",
+        "结婚"
+      ],
+      [
+        "kewarganegaraan",
+        3,
+        0,
+        "",
+        "",
+        "国籍",
+        "warga negara",
+        "公民（某国的国民）"
+      ],
+      [
+        "berasal",
+        3,
+        0,
+        "",
+        "",
+        "来自；起源于（常接 dari）",
+        "asal",
+        "来源；原籍"
+      ],
+      [
+        "nol",
+        3,
+        0,
+        "",
+        "",
+        "零",
+        "nol",
+        "零"
+      ],
+      [
+        "seperempat",
+        3,
+        0,
+        "",
+        "",
+        "四分之一；一刻钟（15分钟）",
+        "empat",
+        "四"
       ]
     ],
     "focus": [
@@ -3204,6 +3264,29 @@
         "memperbaikinya",
         "ketersediaannya"
       ]
+    },
+    {
+      "date": "2026-11-11",
+      "session": "am",
+      "review_core": [
+        "menimpa",
+        "berantem",
+        "berteriak",
+        "isi bensin",
+        "ketika"
+      ],
+      "new_words": [
+        "bahu",
+        "bermain bulu tangkis",
+        "berkaitan",
+        "tempat lahir",
+        "jenis kelamin",
+        "status pernikahan",
+        "kewarganegaraan",
+        "berasal",
+        "nol",
+        "seperempat"
+      ]
     }
   ],
   "previous_pm": {
@@ -3223,7 +3306,88 @@
       "berkunjung"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-11",
+    "vocab": [
+      [
+        "bahu",
+        "肩；肩膀",
+        "shoulder",
+        "bahu",
+        "肩"
+      ],
+      [
+        "bermain bulu tangkis",
+        "打羽毛球",
+        "to play badminton",
+        "main",
+        "玩；进行（游戏、运动）"
+      ],
+      [
+        "berkaitan",
+        "相关；有关联（与……）",
+        "to be related (to)",
+        "kait",
+        "钩；挂住"
+      ],
+      [
+        "tempat lahir",
+        "出生地",
+        "place of birth",
+        "lahir",
+        "出生"
+      ],
+      [
+        "jenis kelamin",
+        "性别",
+        "sex; gender (on forms)",
+        "kelamin",
+        "性别（生理上的）"
+      ],
+      [
+        "status pernikahan",
+        "婚姻状况",
+        "marital status",
+        "nikah",
+        "结婚"
+      ],
+      [
+        "kewarganegaraan",
+        "国籍",
+        "nationality; citizenship",
+        "warga negara",
+        "公民（某国的国民）"
+      ],
+      [
+        "berasal",
+        "来自；起源于（常接 dari）",
+        "to come from; to originate",
+        "asal",
+        "来源；原籍"
+      ],
+      [
+        "nol",
+        "零",
+        "zero",
+        "nol",
+        "零"
+      ],
+      [
+        "seperempat",
+        "四分之一；一刻钟（15分钟）",
+        "a quarter; quarter of an hour",
+        "empat",
+        "四"
+      ]
+    ],
+    "review_vocab": [
+      "menimpa",
+      "berantem",
+      "berteriak",
+      "isi bensin",
+      "ketika"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
