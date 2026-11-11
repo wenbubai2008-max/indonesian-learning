@@ -4,14 +4,14 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1034,
-   "recognize": 108,
+   "use": 1037,
+   "recognize": 110,
    "unsure": 23,
    "fast": 137
   },
   "active": {
-   "use": 700,
-   "recognize": 92,
+   "use": 703,
+   "recognize": 94,
    "unsure": 21,
    "fast": 57
   }
@@ -10713,6 +10713,51 @@
    ]
   },
   "seperempat": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "setrika": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "kain pel": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "penyedot debu": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "seprai": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "guling": {
    "goal": "use",
    "fast": false,
    "by": "rule",
