@@ -1,0 +1,381 @@
+{
+  "date": "2026-11-11",
+  "session": "am",
+  "time": "08:00",
+  "day": 82,
+  "title": "08:00 早课｜Mengisi Formulir Pasien Baru di Klinik · 在诊所填新病人登记表",
+  "vocab": [
+    {
+      "word": "bahu",
+      "display": "bahu",
+      "audio_text": "bahu",
+      "cn": "肩；肩膀",
+      "en": "shoulder",
+      "root": "bahu",
+      "root_cn": "肩",
+      "formation": "名词，本身就是词根，不拆词缀。常见搭配：bahu kanan / bahu kiri（右肩/左肩）、sakit bahu（肩膀疼）、bahu pegal（肩膀酸）、mengangkat bahu（耸肩，表示不知道或无所谓）。",
+      "example": "Tas ranselnya terlalu berat, jadi bahu saya pegal setelah berjalan-jalan seharian.",
+      "example_cn": "背包太重了，逛了一整天之后我的肩膀很酸。",
+      "synonym_note": "近义词 pundak：日常聊天里两者大多可以互换，pundak 更口语，常指扛东西、拍肩的那块地方（menepuk pundak）；看病、填表、说受伤时 bahu 更常见（cedera bahu）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bermain bulu tangkis",
+      "display": "bermain bulu tangkis",
+      "audio_text": "bermain bulu tangkis",
+      "cn": "打羽毛球",
+      "en": "to play badminton",
+      "root": "main",
+      "root_cn": "玩；进行（游戏、运动）",
+      "formation": "ber- + main（玩）= bermain（玩；进行某项运动），后面直接接运动名称；bulu tangkis = 羽毛球（字面是“羽毛 + 挡开”）。同样的结构：bermain sepak bola、bermain tenis。",
+      "example": "Terkadang kami bermain bulu tangkis di lapangan kompleks setelah pulang kerja.",
+      "example_cn": "有时候我们下班后在小区球场打羽毛球。",
+      "synonym_note": "bulu tangkis 是印尼语的正式说法，日常也很常说 badminton，两者都可以。口语说法：main bulu tangkis / main badminton（main = bermain）；写报名表、新闻时用 bermain。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berkaitan",
+      "display": "berkaitan",
+      "audio_text": "berkaitan",
+      "cn": "相关；有关联（与……）",
+      "en": "to be related (to)",
+      "root": "kait",
+      "root_cn": "钩；挂住",
+      "formation": "ber- + kait（钩）= berkaitan，字面是“互相钩在一起”，固定接 dengan：berkaitan dengan …（与……有关）。同词根常见词：kaitan（关联：tidak ada kaitannya）、terkait（相关的：pihak terkait 相关方；terkait hal ini 关于这件事）、mengaitkan（把……联系起来）。",
+      "example": "Dokter yakin sakit kepala saya berkaitan dengan kurang tidur, bukan dengan mata.",
+      "example_cn": "医生确信我的头痛和睡眠不足有关，跟眼睛无关。",
+      "synonym_note": "近义 berhubungan dengan：说“有关系”时两者大多可以互换；berkaitan 稍正式一些，常见于看病、工作、说明原因。注意介词是 dengan，不说 berkaitan dari。口语说法：ada hubungannya sama …（Ini ada hubungannya sama olahraga, nggak?）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tempat lahir",
+      "display": "tempat lahir",
+      "audio_text": "tempat lahir",
+      "cn": "出生地",
+      "en": "place of birth",
+      "root": "lahir",
+      "root_cn": "出生",
+      "formation": "tempat（地方）+ lahir（出生）。表格上常和出生日期写在一起：Tempat/Tanggal Lahir，缩写 TTL，例如 TTL: Medan, 3 Mei 1990。同词根：kelahiran（出生）→ kota kelahiran（出生的城市）、tanggal kelahiran。",
+      "example": "Tolong tulis tempat lahir sesuai paspor, bukan nama kota tempat Anda tinggal sekarang.",
+      "example_cn": "请按护照填写出生地，不是你现在住的城市名。",
+      "synonym_note": "tempat lahir 是“在哪里出生”，只写城市（或地区）名；berasal dari 是“来自哪里”，可以和出生地不同：在雅加达出生、但家乡在巴东的人会说 Saya lahir di Jakarta, tapi berasal dari Padang。",
+      "is_oral_new": false
+    },
+    {
+      "word": "jenis kelamin",
+      "display": "jenis kelamin",
+      "audio_text": "jenis kelamin",
+      "cn": "性别",
+      "en": "sex; gender (on forms)",
+      "root": "kelamin",
+      "root_cn": "性别（生理上的）",
+      "formation": "jenis（种类）+ kelamin（生理性别）= jenis kelamin，表格固定栏目名。选项通常写 Laki-laki / Perempuan（缩写 L / P）。",
+      "example": "Di formulir lamaran kerja itu ada kolom jenis kelamin, umur, dan pendidikan terakhir.",
+      "example_cn": "那份求职申请表上有性别、年龄和最高学历几栏。",
+      "synonym_note": "jenis kelamin 主要用在表格和正式场合，日常聊天几乎不说。口语里说男女用 cowok / cewek（= laki-laki / perempuan），例如 Bayinya cowok atau cewek?；填表、看病时用 laki-laki / perempuan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "status pernikahan",
+      "display": "status pernikahan",
+      "audio_text": "status pernikahan",
+      "cn": "婚姻状况",
+      "en": "marital status",
+      "root": "nikah",
+      "root_cn": "结婚",
+      "formation": "status（状况）+ pernikahan（per-an + nikah，婚姻）。身份证 KTP 上这一栏写作 Status Perkawinan，选项是 Belum Kawin / Kawin / Cerai Hidup / Cerai Mati；医院、银行的表格多写 status pernikahan：belum menikah / menikah / cerai。",
+      "example": "Bank menanyakan status pernikahan saya dan meminta fotokopi buku nikah sebagai lampiran.",
+      "example_cn": "银行问了我的婚姻状况，并要求附上结婚证复印件。",
+      "synonym_note": "nikah / menikah 与 kawin：表格和法律文件里两者都有；日常说人结婚，menikah 更礼貌，kawin 在口语里常用于动物，说人时显得随便。口语说法：udah nikah?（= sudah menikah?），问人“结婚了吗”就这样问。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kewarganegaraan",
+      "display": "kewarganegaraan",
+      "audio_text": "kewarganegaraan",
+      "cn": "国籍",
+      "en": "nationality; citizenship",
+      "root": "warga negara",
+      "root_cn": "公民（某国的国民）",
+      "formation": "ke-an + warga negara（公民）= kewarganegaraan（公民身份→国籍）。生活里常见缩写：WNI = Warga Negara Indonesia（印尼公民），WNA = Warga Negara Asing（外国公民），很多窗口和价目表按 WNI / WNA 分开。",
+      "example": "Di kolom kewarganegaraan, tulis nama negara, bukan nama kota.",
+      "example_cn": "国籍一栏写国家名，不写城市名。",
+      "synonym_note": "kewarganegaraan 是法律上属于哪个国家；berasal dari 是来自哪里，可以是城市或地区。日常聊天不太说 kewarganegaraan，而是直接问 Orang mana? / Dari negara mana?；填表、办证件时用 kewarganegaraan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berasal",
+      "display": "berasal",
+      "audio_text": "berasal",
+      "cn": "来自；起源于（常接 dari）",
+      "en": "to come from; to originate",
+      "root": "asal",
+      "root_cn": "来源；原籍",
+      "formation": "ber- + asal（来源）= berasal，几乎总是接 dari：berasal dari Medan（来自棉兰）、berasal dari keluarga petani（出身农民家庭），也可以说东西的产地：Kopi ini berasal dari Aceh。同词根：asal-usul（来历）、asli（原本的；本地的）。",
+      "example": "Penulis novel itu berasal dari Padang, tapi sudah lama tinggal di Yogyakarta.",
+      "example_cn": "那本小说的作者来自巴东，但已经在日惹住了很久。",
+      "synonym_note": "berasal dari 偏书面、介绍场合；口语说法：asalnya dari … / aslinya dari …，问人常说 Aslinya orang mana?（你老家是哪里的？）。和 tempat lahir 的区别见那张词卡。",
+      "is_oral_new": false
+    },
+    {
+      "word": "nol",
+      "display": "nol",
+      "audio_text": "nol",
+      "cn": "零",
+      "en": "zero",
+      "root": "nol",
+      "root_cn": "零",
+      "formation": "数词，本身就是词根，不拆词缀（来自荷兰语 nul）。常见用法：angka nol（数字零）、nol derajat（零度）、mulai dari nol（从零开始）、skor dua-nol（比分二比零）。",
+      "example": "Kalau menelepon dari luar negeri, angka nol di depan nomor HP diganti dengan +62.",
+      "example_cn": "从国外打电话时，手机号前面的0要换成+62。",
+      "synonym_note": "念电话号码时，印尼人很常把 0 念成 kosong（空），例如 kosong delapan satu dua；nol 也完全可以说。说温度、比分、“从零开始”时一般用 nol（mulai dari nol 不说 mulai dari kosong）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "seperempat",
+      "display": "seperempat",
+      "audio_text": "seperempat",
+      "cn": "四分之一；一刻钟（15分钟）",
+      "en": "a quarter; quarter of an hour",
+      "root": "empat",
+      "root_cn": "四",
+      "formation": "se-（一）+ perempat（四分之一，per- + empat）= seperempat。同类分数：setengah（一半）、sepertiga（三分之一）、tiga perempat（四分之三）。说时间：jam sembilan lewat seperempat（9:15）、jam sembilan kurang seperempat（8:45）、seperempat jam（15分钟）。",
+      "example": "Saya sampai di klinik seperempat jam sebelum jadwal, jadi masih sempat mengisi formulir.",
+      "example_cn": "我比预约时间早一刻钟到诊所，所以还来得及填表。",
+      "synonym_note": "kurang seperempat 是“差一刻”，指下一个整点前15分钟：jam sembilan kurang seperempat 是8:45，不是9:15，这一点最容易搞反。口语里 9:15 也常直接说 jam sembilan seperempat，或干脆说 jam sembilan lima belas。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "menimpa",
+    "berantem",
+    "berteriak",
+    "isi bensin",
+    "ketika"
+  ],
+  "sentences": [
+    {
+      "text": "Ketika mendaftar di klinik, saya diminta menulis tempat lahir, tanggal lahir, dan jenis kelamin sesuai KTP.",
+      "cn": "在诊所登记的时候，我被要求按身份证填写出生地、出生日期和性别。"
+    },
+    {
+      "text": "Bro, kemarin kita main bulu tangkis sampai jam sebelas malam. Pantes bahuku pegel banget.",
+      "cn": "兄弟，昨天我们打羽毛球打到晚上十一点，难怪我肩膀这么酸。（main = bermain，pantes = pantas，pegel = pegal，banget = sangat）"
+    },
+    {
+      "text": "Kardus berat dari atas lemari jatuh menimpa bahu saya, jadi sekarang lengan saya susah diangkat.",
+      "cn": "柜子上面的重纸箱掉下来砸到了我的肩膀，所以现在胳膊很难抬起来。"
+    },
+    {
+      "text": "Teman saya berasal dari Surabaya, tapi sekarang kewarganegaraannya Singapura.",
+      "cn": "我朋友来自泗水，但现在他的国籍是新加坡。"
+    },
+    {
+      "text": "Petugas meminta saya menulis nomor HP lengkap, mulai dari angka nol di depan.",
+      "cn": "工作人员要我把手机号写完整，从前面的0开始写。"
+    }
+  ],
+  "reading": {
+    "text": "Sabtu pagi, Liang pergi ke klinik di seberang kantornya. Sudah tiga hari bahu kanannya sakit, terutama kalau ia mengangkat tas. Di meja pendaftaran, petugas memberinya formulir pasien baru. Liang harus mengisi tempat lahir, status pernikahan, dan kewarganegaraan. Di kolom kewarganegaraan ia menulis \"Tiongkok\". Ia berasal dari Guangzhou dan baru dua tahun tinggal di Jakarta. Formulirnya agak ribet, tapi petugas membantunya dengan sabar. Sekitar seperempat jam kemudian, namanya dipanggil dan ia mengetuk pintu ruang dokter. Dokter bertanya seberapa sakit bahunya dan apakah sakitnya berkaitan dengan olahraga. Liang langsung ingat: setiap Kamis malam ia bermain bulu tangkis dengan teman kantor. \"Lain kali, lakukan pemanasan dulu untuk mencegah cedera,\" kata dokter.",
+    "cn": "星期六早上，梁去了他公司对面的诊所。他的右肩已经疼了三天，尤其是提包的时候。在登记台，工作人员给了他一张新病人登记表。梁要填写出生地、婚姻状况和国籍。在国籍一栏，他写了“中国”。他来自广州，来雅加达才两年。表格有点麻烦，不过工作人员很耐心地帮他。大约一刻钟后，叫到了他的名字，他敲了敲诊室的门。医生问他肩膀有多疼，还问疼痛是不是和运动有关。梁马上想起来：每个星期四晚上他都和公司同事打羽毛球。“下次先做热身，才能预防受伤。”医生说。"
+  },
+  "quiz": [
+    {
+      "question": "Di ruang tunggu klinik, dua anak kecil rebutan mainan dan mulai saling dorong. Ibunya langsung ____: \"Sudah, diam! Ini klinik!\"",
+      "options": [
+        "berbisik",
+        "berteriak",
+        "berantem",
+        "mengeluh"
+      ],
+      "answer_index": 1,
+      "answer": "berteriak",
+      "explain": "妈妈大声喊“够了，安静！”，是 berteriak（喊叫）。berbisik 是“小声说悄悄话”，和后面带感叹号的大喊不符；berantem 是口语“打架、吵架”，在这里打闹的是两个孩子，不是妈妈；mengeluh 是“抱怨、诉苦”，不是喝止。"
+    },
+    {
+      "question": "Formulir pasien baru —  Nama: Liang Wei.  Tanggal lahir: 12 Mei 1991.  ____: Guangzhou.",
+      "options": [
+        "Jenis kelamin",
+        "Status pernikahan",
+        "Kewarganegaraan",
+        "Tempat lahir"
+      ],
+      "answer_index": 3,
+      "answer": "Tempat lahir",
+      "explain": "Guangzhou 是城市名，又紧跟出生日期，填的是出生地 tempat lahir。kewarganegaraan 要写国家名（Tiongkok），不写城市；jenis kelamin 填 laki-laki / perempuan；status pernikahan 填 belum menikah / menikah 等。"
+    },
+    {
+      "question": "Dokter: \"Sakit di bahu Bapak mungkin ____ dengan kebiasaan main bulu tangkis tanpa pemanasan.\"",
+      "options": [
+        "berkaitan",
+        "bergantung",
+        "berasal",
+        "bersama"
+      ],
+      "answer_index": 0,
+      "answer": "berkaitan",
+      "explain": "berkaitan dengan = 与……有关，介词正好是 dengan。bergantung 要接 pada（bergantung pada cuaca 取决于天气）；berasal 要接 dari，意思是“来自”，不是“有关”；bersama 是“一起”，放在这里意思不通。"
+    }
+  ],
+  "output": {
+    "task": "给你的上司发一条 WhatsApp：今天要先去诊所看肩膀，会晚到。说清楚可能的原因、诊所几点开门、你大概几点到公司。至少用 bahu、berkaitan、seperempat 中的两个，2–4 句。",
+    "reference_answer": "Selamat pagi, Pak. Maaf, hari ini saya izin datang agak terlambat. Bahu kanan saya sakit sudah tiga hari. Sakitnya mungkin berkaitan dengan bermain bulu tangkis hari Kamis. Saya mau periksa dulu di klinik di seberang kantor. Kliniknya buka jam delapan lewat seperempat, jadi saya yakin bisa sampai di kantor sebelum jam sepuluh.",
+    "reference_cn": "早上好，老板。不好意思，今天我请假晚一点到。我右肩已经疼了三天，疼痛可能和星期四打羽毛球有关。我想先去公司对面的诊所检查一下。诊所八点一刻开门，所以我确定十点前能到公司。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出肩膀、打羽毛球、与……有关、出生地、性别、婚姻状况、国籍、来自、零、一刻钟；卡住的词回看词卡再说一遍。",
+    "易混词和搭配：tempat lahir（在哪儿出生）≠ berasal dari（来自哪里，可能不同）；kewarganegaraan 写国家，不写城市；berkaitan 接 dengan，berasal 接 dari；jam sembilan lewat seperempat = 9:15，jam sembilan kurang seperempat = 8:45；电话号码里的 0 常念 kosong。各说一句给自己听，例如 Saya lahir di Jakarta, tapi berasal dari Padang。",
+    "复习词应用：用 menimpa 说一次东西掉下来砸到人或物（Kardusnya jatuh menimpa bahu saya）；分清 berantem（吵架、打架）和 berteriak（大声喊）：Anak-anak berantem, ibunya berteriak；用 ketika 说一件办手续时发生的事；最后用 isi bensin 说出门前要先做的一件事。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "berkaitan",
+      "kewarganegaraan",
+      "seperempat"
+    ],
+    "patterns": [
+      {
+        "pattern": "… mungkin berkaitan dengan …",
+        "cn": "……可能和……有关",
+        "example": "Sakitnya mungkin berkaitan dengan bermain bulu tangkis hari Kamis.",
+        "example_cn": "疼痛可能和星期四打羽毛球有关。"
+      },
+      {
+        "pattern": "… berasal dari …, tapi sekarang …",
+        "cn": "……来自……，但现在……",
+        "example": "Teman saya berasal dari Surabaya, tapi sekarang kewarganegaraannya Singapura.",
+        "example_cn": "我朋友来自泗水，但现在他的国籍是新加坡。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "肩膀",
+        "id": "bahu"
+      },
+      {
+        "cn": "打羽毛球",
+        "id": "bermain bulu tangkis"
+      },
+      {
+        "cn": "与……有关",
+        "id": "berkaitan"
+      },
+      {
+        "cn": "出生地",
+        "id": "tempat lahir"
+      },
+      {
+        "cn": "性别（表格栏目）",
+        "id": "jenis kelamin"
+      },
+      {
+        "cn": "婚姻状况",
+        "id": "status pernikahan"
+      },
+      {
+        "cn": "国籍",
+        "id": "kewarganegaraan"
+      },
+      {
+        "cn": "来自；起源于",
+        "id": "berasal"
+      },
+      {
+        "cn": "零",
+        "id": "nol"
+      },
+      {
+        "cn": "四分之一；一刻钟",
+        "id": "seperempat"
+      },
+      {
+        "cn": "（东西掉下来）砸到",
+        "id": "menimpa"
+      },
+      {
+        "cn": "大声喊叫",
+        "id": "berteriak"
+      }
+    ],
+    "frames": [
+      "Sakitnya mungkin berkaitan dengan …",
+      "Saya lahir di …, tapi berasal dari …",
+      "Kliniknya buka jam … lewat seperempat."
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "tempat lahir",
+            "cn": "在哪儿出生"
+          },
+          {
+            "id": "berasal dari",
+            "cn": "来自哪里（老家、出身）"
+          }
+        ],
+        "note": "出生地只有一个答案；berasal dari 说的是家乡或出身，两者可以不同。"
+      },
+      {
+        "items": [
+          {
+            "id": "lewat seperempat",
+            "cn": "过一刻（9:15）"
+          },
+          {
+            "id": "kurang seperempat",
+            "cn": "差一刻（8:45）"
+          }
+        ],
+        "note": "kurang 是“还差”，jam sembilan kurang seperempat 是八点四十五。"
+      },
+      {
+        "items": [
+          {
+            "id": "berantem",
+            "cn": "吵架、打架（口语）"
+          },
+          {
+            "id": "berteriak",
+            "cn": "大声喊叫"
+          }
+        ],
+        "note": "berantem 是两个人以上起冲突，berteriak 是一个人提高嗓门喊。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "menimpa",
+        "usage": "东西从上面掉下来砸到人或物，常说 jatuh menimpa …。",
+        "examples": [
+          {
+            "id": "Kardus berat dari atas lemari jatuh menimpa bahu saya, jadi sekarang lengan saya susah diangkat.",
+            "cn": "柜子上面的重纸箱掉下来砸到了我的肩膀，所以现在胳膊很难抬起来。"
+          }
+        ]
+      },
+      {
+        "word": "ketika",
+        "usage": "“……的时候”，比 waktu 稍正式，讲经过、办手续时很常用。",
+        "examples": [
+          {
+            "id": "Ketika mendaftar di klinik, saya diminta menulis tempat lahir, tanggal lahir, dan jenis kelamin sesuai KTP.",
+            "cn": "在诊所登记的时候，我被要求按身份证填写出生地、出生日期和性别。"
+          }
+        ]
+      },
+      {
+        "word": "isi bensin",
+        "usage": "给车加油，常和 mampir（顺路停一下）一起说。",
+        "examples": [
+          {
+            "id": "Sebelum ke klinik, aku mampir isi bensin dulu, ya.",
+            "cn": "去诊所之前，我先顺路加个油哦。"
+          }
+        ]
+      }
+    ]
+  }
+}
