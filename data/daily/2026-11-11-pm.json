@@ -1,0 +1,415 @@
+{
+  "date": "2026-11-11",
+  "session": "pm",
+  "time": "18:00",
+  "day": 82,
+  "title": "18:00 晚课｜Bersih-Bersih Sebelum Nenek Datang · 奶奶来之前的大扫除",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "setrika",
+    "kain pel",
+    "penyedot debu",
+    "seprai",
+    "guling"
+  ],
+  "vocab": [
+    {
+      "word": "setrika",
+      "display": "setrika",
+      "audio_text": "setrika",
+      "cn": "熨斗；熨（衣服）",
+      "en": "iron (for clothes); to iron",
+      "root": "setrika",
+      "root_cn": "熨斗",
+      "formation": "setrika 本身是名词“熨斗”，口语里也直接当动词用（setrika bajunya dulu）。动词规范形 menyetrika（meN- + setrika，s 脱落变 ny-）；被动 disetrika；名词 setrikaan（要熨的一堆衣服）。常见搭配：menyetrika baju / kemeja、setrika uap（蒸汽熨斗）、papan setrika（熨衣板）、jasa setrika（代熨服务）。",
+      "example": "Setrika di kos kami cuma satu, jadi tiap pagi kami harus ngatur giliran.",
+      "example_cn": "我们宿舍只有一个熨斗，所以每天早上都得安排好轮流用。（ngatur = mengatur）",
+      "synonym_note": "setrika 是熨斗这个工具，menyetrika 是“熨”这个动作：Saya menyetrika kemeja.（我在熨衬衫。）书面句里说 Saya menyetrika kemeja，不写 Saya setrika kemeja。口语说法：nyetrika（= menyetrika）：Aku lagi nyetrika, bentar ya.",
+      "usage_note": "家里、宿舍、洗衣店都常用。熨好的衣服说 baju yang sudah disetrika；皱巴巴的衣服说 kusut。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kain pel",
+      "display": "kain pel",
+      "audio_text": "kain pel",
+      "cn": "拖把布；拖布",
+      "en": "mop (cloth)",
+      "root": "pel",
+      "root_cn": "拖（地）",
+      "formation": "kain（布）+ pel（拖地）→ kain pel。pel 加 meN- 变成动词 mengepel（拖地，单音节词根前加 menge-）；被动 dipel。常见搭配：mengepel lantai、memeras kain pel（拧干拖布）、kain pel basah、ember dan kain pel。",
+      "example": "Jangan mencampur pembersih lantai dengan pemutih waktu merendam kain pel, baunya bisa bikin pusing.",
+      "example_cn": "泡拖布的时候别把地板清洁剂和漂白水混在一起，那个味道会让人头晕。",
+      "synonym_note": "kain pel 指拖地用的布或拖把头；整根带杆的拖把也常叫 alat pel 或直接 pel。lap 是擦桌子、擦手的小抹布，不用来拖地。口语说法：ngepel（= mengepel）：Lantainya udah aku pel.",
+      "usage_note": "说拖地这个动作用 mengepel lantai，日常聊天说 ngepel。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "penyedot debu",
+      "display": "penyedot debu",
+      "audio_text": "penyedot debu",
+      "cn": "吸尘器",
+      "en": "vacuum cleaner",
+      "root": "sedot",
+      "root_cn": "吸",
+      "formation": "peN- + sedot → penyedot（吸的工具，s 变 ny-）+ debu（灰尘）→ penyedot debu。动词 menyedot（吸）；kesedot / tersedot（被吸进去）；sedotan（吸管）。常见搭配：menyalakan penyedot debu、penyedot debu rusak、filter penyedot debu。",
+      "example": "Debu paling banyak menumpuk di antara sofa dan dinding, jadi ujung penyedot debu yang kecil sangat berguna.",
+      "example_cn": "灰尘最容易堆在沙发和墙之间，所以吸尘器那个小吸头很好用。",
+      "synonym_note": "penyedot debu 是正式、说明书里常见的说法；日常更常直接说 vacuum cleaner 或 vakum。menyedot 是“吸”这个动作，penyedot 是“吸东西的工具”。口语说法：nyedot（= menyedot）：Debunya nggak kesedot.（灰吸不进去。）",
+      "usage_note": "说“开吸尘器”用 menyalakan penyedot debu；“用吸尘器吸地毯”可说 menyedot karpet pakai vacuum。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "seprai",
+      "display": "seprai",
+      "audio_text": "seprai",
+      "cn": "床单",
+      "en": "bed sheet",
+      "root": "seprai",
+      "root_cn": "床单",
+      "formation": "seprai 是外来词，没有可拆的词根。常见搭配：ganti seprai（换床单）、memasang seprai（铺床单）、seprai dan sarung bantal（床单和枕套）、seprai kasur ukuran king。拼写上日常常见 sprei / seprei，KBBI 规范写 seprai。",
+      "example": "Seharusnya seprai diganti seminggu sekali, tapi kalau lagi sibuk saya sering lupa.",
+      "example_cn": "床单本来应该一周换一次，可是一忙起来我经常忘。",
+      "synonym_note": "seprai 是铺在床垫上的床单；selimut 是盖在身上的被子；sarung bantal 是枕套。口语说法：多写成 sprei，读音一样：Spreinya udah aku ganti.",
+      "usage_note": "换床单最常说 ganti seprai；酒店、民宿收拾房间也这么说。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "guling",
+      "display": "guling",
+      "audio_text": "guling",
+      "cn": "长抱枕（印尼床上常见的圆柱形抱枕）",
+      "en": "bolster; long hug pillow",
+      "root": "guling",
+      "root_cn": "滚动；翻滚",
+      "formation": "guling 原义是“滚动”：berguling（打滚）、menggulingkan（把……滚倒；推翻）。床上的长条抱枕全称 bantal guling，日常直接说 guling。常见搭配：memeluk guling（抱着长抱枕）、sarung guling（抱枕套）、tidur sambil peluk guling。",
+      "example": "Waktu kecil, adikku suka menyembunyikan permen di bawah guling supaya nggak ketahuan Ibu.",
+      "example_cn": "小时候，我弟弟喜欢把糖藏在长抱枕下面，免得被妈妈发现。（nggak = tidak）",
+      "synonym_note": "bantal 是枕头（垫头的）；guling 是抱着睡的长条枕。印尼很多人习惯抱着 guling 睡，所以酒店床上也常放一个。口语说法：说 guling 就够，不用说全称 bantal guling。",
+      "usage_note": "印尼家里给客人准备床铺，常说 seprai, bantal, guling 一起准备好。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "perkirakan",
+      "display": "perkirakan",
+      "audio_text": "perkirakan",
+      "cn": "估计一下；请预计（常见于指令）",
+      "en": "estimate (it)",
+      "root": "kira",
+      "root_cn": "猜测；估量",
+      "formation": "per- + kira + -kan → memperkirakan（估计、预计）；perkirakan 是去掉 mem- 的命令形，也用于被动句（yang kami perkirakan）。同族：perkiraan（估计、预测）、kira-kira（大概）、mengira（以为）。常见搭配：perkirakan biayanya、perkirakan waktunya、diperkirakan selesai besok。之前答错过的词。",
+      "example": "Sebelum renovasi dapur, coba perkirakan dulu biayanya supaya kita nggak nombok di akhir bulan.",
+      "example_cn": "厨房装修之前，先估计一下费用，免得月底我们还得自己往里贴钱。（nggak = tidak，nombok = 自己垫钱补差额）",
+      "synonym_note": "memperkirakan 是“经过估量地预计”，可以用在正式场合（Polisi memperkirakan…）；mengira 是“（错误地）以为”：Saya kira kamu sudah pulang.（我还以为你回家了。）口语说法：日常问人估计多久，多说 kira-kira：Kira-kira berapa lama?",
+      "usage_note": "命令句“你估计一下”说 Coba perkirakan…；新闻里常见被动 diperkirakan（预计）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengeluh",
+      "display": "mengeluh",
+      "audio_text": "mengeluh",
+      "cn": "抱怨；诉苦",
+      "en": "to complain",
+      "root": "keluh",
+      "root_cn": "抱怨；叹息",
+      "formation": "meN- + keluh → mengeluh（k 脱落）。不及物，后面接 tentang / soal / karena：mengeluh soal harga。要直接带宾语用 mengeluhkan：mengeluhkan pelayanannya。名词 keluhan（投诉、不适症状：keluhan pelanggan、ada keluhan apa?）。",
+      "example": "Tetangga mengeluh karena kami mendengarkan musik terlalu keras sampai tengah malam.",
+      "example_cn": "邻居抱怨，因为我们放音乐放得太大声，一直到半夜。",
+      "synonym_note": "mengeluh + soal / karena …（抱怨某事）；mengeluhkan + 宾语（抱怨某事，书面多见）。protes 是当面提出反对，语气更强。口语说法：ngeluh（= mengeluh）：Jangan ngeluh terus, dong.",
+      "usage_note": "之前答错过的词。医生问“哪里不舒服”也常说 Ada keluhan apa?",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berteriak",
+      "display": "berteriak",
+      "audio_text": "berteriak",
+      "cn": "喊叫；大声喊",
+      "en": "to shout; to scream",
+      "root": "teriak",
+      "root_cn": "喊叫",
+      "formation": "ber- + teriak → berteriak（不及物，自己喊）。meneriakkan（喊出某句话：meneriakkan yel-yel）；meneriaki（冲着某人喊）；teriakan（喊声）。常见搭配：berteriak minta tolong、berteriak kesakitan、berteriak dari jauh。",
+      "example": "Waktu melihat ada orang mau mengambil motornya, Pak Joko langsung berteriak, \"Maling!\"",
+      "example_cn": "看到有人要偷走他的摩托车，Pak Joko 立刻大喊：“有贼！”",
+      "synonym_note": "berteriak 是提高嗓门地喊，可能是求救、生气或叫远处的人；memanggil 是“叫（某人过来）”，不一定大声；bersorak 是欢呼。口语说法：teriak / teriak-teriak：Jangan teriak-teriak, bayinya lagi tidur.",
+      "usage_note": "最近常错的词，今早练过后又答错了一次。今晚放进不同场景再用一遍。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "manfaat",
+      "display": "manfaat",
+      "audio_text": "manfaat",
+      "cn": "益处；好处；用处",
+      "en": "benefit; use",
+      "root": "manfaat",
+      "root_cn": "益处；用途",
+      "formation": "manfaat 是词根名词。bermanfaat（有益的，ber- + manfaat）；memanfaatkan（利用：memanfaatkan waktu luang）；pemanfaatan（利用，名词）。常见搭配：manfaat olahraga、ada manfaatnya、sangat bermanfaat。",
+      "example": "Manfaat olahraga pagi baru terasa setelah saya berusaha rutin selama sebulan.",
+      "example_cn": "晨练的好处，是我努力坚持了一个月之后才感受到的。",
+      "synonym_note": "manfaat 偏“带来的好处”；guna 偏“用途、用处”，口语常说 Apa gunanya?（有什么用？）；keuntungan 多指利润或优势。口语说法：日常常说 ada gunanya / berguna banget，manfaat 本身口语也常用。",
+      "usage_note": "说某件事“有好处”可以说 Ada manfaatnya 或 Bermanfaat banget。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mantap",
+      "display": "mantap",
+      "audio_text": "mantap",
+      "cn": "很棒；很稳；很有把握（口语多作赞叹）",
+      "en": "great; solid; steady",
+      "root": "mantap",
+      "root_cn": "稳；确定；很棒",
+      "formation": "mantap 是词根形容词。原义“稳、坚定”：langkahnya mantap（步子稳）、hatinya sudah mantap（心意已定）；口语里作赞叹“太棒了”：Mantap!。派生 kemantapan（稳定性，书面）、memantapkan（巩固）。",
+      "example": "Mantap! Kamu berhasil meningkatkan nilai bahasa Indonesiamu dalam sebulan.",
+      "example_cn": "太棒了！你一个月就把印尼语成绩提高了。",
+      "synonym_note": "作赞叹时 mantap 和 keren、hebat 接近：keren 偏“酷、好看”，hebat 偏“厉害”。正式场合说 sudah mantap 指“已经确定、稳妥”。口语说法：mantul（= mantap betul，较俏皮）、mantep。",
+      "usage_note": "朋友间夸人、夸饭菜都可以说 Mantap! 对长辈也能用，但写正式邮件不用。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bahu",
+      "display": "bahu",
+      "audio_text": "bahu",
+      "cn": "肩；肩膀",
+      "en": "shoulder",
+      "root": "bahu",
+      "root_cn": "肩",
+      "formation": "bahu 是词根名词。常见搭配：bahu kanan / kiri、bahu pegal（肩膀酸）、mengangkat bahu（耸肩）、bahu-membahu（齐心协力，固定说法）。今天08:00新学。",
+      "example": "Tas ini berat, talinya tipis pula, jadi bahu saya cepat pegal.",
+      "example_cn": "这个包很重，而且背带还很细，所以我的肩膀很快就酸了。",
+      "synonym_note": "bahu 和 pundak 意思基本一样，都能说“肩膀”；说扛东西、按摩时日常更常听到 pundak（dipijat pundaknya）。bahu-membahu 只用 bahu。口语说法：pundak 在口语里更常见。",
+      "usage_note": "今天08:00新学：早课在诊所说肩膀疼，今晚换成做家务累得肩膀酸。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berasal",
+      "display": "berasal",
+      "audio_text": "berasal",
+      "cn": "来自；起源于（常接 dari）",
+      "en": "to come from; to originate",
+      "root": "asal",
+      "root_cn": "来源；原籍",
+      "formation": "ber- + asal → berasal，后面几乎总接 dari：berasal dari Solo、berasal dari bahan alami。同族：asal-usul（来历）、asalnya（原来；本来）。今天08:00新学。",
+      "example": "Pewarna kain ini berasal dari bahan alami, seperti daun dan kulit kayu.",
+      "example_cn": "这块布的染料来自天然材料，比如树叶和树皮。",
+      "synonym_note": "berasal dari 偏“籍贯、来源、出处”，人和东西都能用；datang dari 偏“从某地来（这一趟）”。说老家时 Saya berasal dari… 比较正式。口语说法：asalnya dari mana?／Aku asli Solo.（我是地道的梭罗人。）",
+      "usage_note": "今天08:00新学：早课填登记表写籍贯，今晚用来介绍同事的家乡和东西的来源。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berkaitan",
+      "display": "berkaitan",
+      "audio_text": "berkaitan",
+      "cn": "相关；有关联（与……）",
+      "en": "to be related (to)",
+      "root": "kait",
+      "root_cn": "钩；挂住",
+      "formation": "ber- + kait → berkaitan，常接 dengan：berkaitan dengan pekerjaan。同族：terkait（相关的，书面常见：pihak terkait）、mengaitkan（把……联系起来）、kaitan（关联）。今天08:00新学。",
+      "example": "Pertanyaannya berkaitan dengan hukum waris, jadi lebih baik tanya pengacara.",
+      "example_cn": "这个问题跟继承法有关，所以最好问律师。",
+      "synonym_note": "berkaitan dengan 和 berhubungan dengan 意思接近，可以互换；terkait 更书面，常放名词后：masalah terkait。口语说法：ada hubungannya sama… / nyambung sama…：Ini ada hubungannya sama filter, kok.",
+      "usage_note": "今天08:00新学：早课是医生问肩膀疼跟运动有没有关系，今晚用来找吸尘器坏掉的原因。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Hari Sabtu, Nadia dan adiknya, Bima, bersih-bersih rumah karena besok nenek mereka datang dari Solo. Bima menyalakan penyedot debu, tetapi suaranya keras dan debunya tidak tersedot. Ia mulai mengeluh bahwa alat itu rusak. Nadia memeriksanya dan melihat filternya penuh debu. Ternyata masalahnya berkaitan dengan filter yang tidak pernah dicuci. Setelah filternya dibersihkan, alat itu bekerja lagi. Sementara Bima mengepel lantai dengan kain pel, Nadia mengganti seprai di kamar tamu dan menyiapkan dua guling untuk Nenek. Lalu ia mengambil setrika dan menyetrika baju sampai bahunya pegal. Menjelang siang, Ibu berteriak dari dapur memanggil mereka untuk makan siang. Rumahnya sudah rapi.",
+    "cn": "星期六，Nadia 和弟弟 Bima 在家大扫除，因为明天奶奶要从梭罗来。Bima 打开吸尘器，可是声音很大，灰尘却吸不进去。他开始抱怨说这机器坏了。Nadia 检查了一下，发现过滤网里全是灰。原来问题跟从来没洗过的过滤网有关。把过滤网清理干净以后，机器又能用了。Bima 用拖布拖地的时候，Nadia 在客房换了床单，还给奶奶准备了两个长抱枕。接着她拿起熨斗熨衣服，熨到肩膀都酸了。快到中午时，妈妈在厨房大声喊他们吃午饭。家里已经收拾得整整齐齐。"
+  },
+  "dialogue": {
+    "title": "大扫除进行中：吸尘器“罢工”了",
+    "lines": [
+      {
+        "speaker": "Bima",
+        "id": "Kak, penyedot debunya rusak nih. Suaranya kenceng, tapi debunya nggak kesedot sama sekali.",
+        "cn": "姐，吸尘器坏了。声音很响，可灰一点都吸不进去。（kenceng = kencang，nggak = tidak，kesedot = tersedot）"
+      },
+      {
+        "speaker": "Nadia",
+        "id": "Jangan ngeluh dulu. Coba lihat filternya. Seharusnya itu dicuci tiap bulan, kan?",
+        "cn": "先别抱怨。看看过滤网。那个本来应该每个月洗一次的，对吧？（ngeluh = mengeluh，tiap = setiap）"
+      },
+      {
+        "speaker": "Bima",
+        "id": "Waduh, iya, item banget. Pantesan nggak kuat nyedot.",
+        "cn": "哎呀，真的，黑得要命。难怪吸不动。（item = hitam，pantesan = pantas saja，nyedot = menyedot）"
+      },
+      {
+        "speaker": "Nadia",
+        "id": "Nah. Habis ini kamu ngepel ruang tamu pakai kain pel yang baru, ya. Yang lama udah bau.",
+        "cn": "对吧。弄完这个你用新拖布拖一下客厅。旧的已经臭了。（ngepel = mengepel，udah = sudah）"
+      },
+      {
+        "speaker": "Bima",
+        "id": "Tapi aku nggak tega buang yang lama, Kak. Masih bisa buat lap motor.",
+        "cn": "可是旧的我舍不得扔，姐。还能拿来擦摩托车。"
+      },
+      {
+        "speaker": "Nadia",
+        "id": "Terserah kamu. Aku ganti seprai di kamar tamu, terus nyetrika baju buat besok. Oh iya, Nenek nggak bisa tidur tanpa guling. Tolong ambilin dua dari lemari.",
+        "cn": "随你。我去客房换床单，然后熨明天要穿的衣服。对了，奶奶没有长抱枕睡不着。帮我从柜子里拿两个出来。（nyetrika = menyetrika，ambilin = ambilkan）"
+      },
+      {
+        "speaker": "Ibu",
+        "id": "Nadia! Bima! Makan siang udah siap!",
+        "cn": "Nadia！Bima！午饭好了！（妈妈在厨房大声喊）"
+      },
+      {
+        "speaker": "Bima",
+        "id": "Mantap! Pas banget, aku udah laper.",
+        "cn": "太好了！正是时候，我已经饿了。（laper = lapar）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：你刚租了一间新的 kos 房间，给房东发消息，问房间里有没有床单和长抱枕，再问能不能借熨斗。用 seprai、guling、setrika，2–3 句，不照抄阅读。",
+      "reference_answer": "Permisi, Bu. Uang sewanya sudah saya kirim melalui transfer tadi pagi. Saya mau tanya, di kamar sudah ada seprai dan guling, atau saya harus bawa sendiri? Kalau boleh, saya juga mau pinjam setrika sebentar, kemeja saya kusut semua.",
+      "reference_cn": "您好，阿姨。房租今天早上我已经转账给您了。想问一下，房间里已经有床单和长抱枕了，还是我得自己带？如果可以的话，我也想借一下熨斗，我的衬衫全皱了。"
+    },
+    {
+      "task": "最近常错的词造句：办公室的地毯很脏，同事们都在抱怨。给行政发消息，用 mengeluh、penyedot debu、kain pel，说明情况并请他们买新的，2–3 句。",
+      "reference_answer": "Pak, banyak karyawan di lantai tiga mengeluh karena karpetnya berdebu. Penyedot debu di gudang sudah tidak kuat menyedot, dan kain pelnya juga sudah sobek. Apakah bisa dibelikan yang baru minggu ini?",
+      "reference_cn": "您好，三楼很多员工抱怨地毯上全是灰。仓库里的吸尘器已经吸不动了，拖布也已经破了。这周能不能买新的？"
+    },
+    {
+      "task": "今天08:00新学的词换场景：向朋友介绍一位新同事，说说她的家乡和她的工作跟什么有关。用 berasal 和 berkaitan，2–3 句（不说看病、填表）。",
+      "reference_answer": "Teman baruku di kantor, Dewi, berasal dari Manado. Pekerjaannya berkaitan dengan ekspor kopi, jadi dia sering ke Sulawesi. Katanya, usia kebun kopi keluarganya sudah lebih dari lima puluh tahun.",
+      "reference_cn": "我公司的新同事 Dewi 是万鸦老人。她的工作跟咖啡出口有关，所以她经常去苏拉威西。听她说，她家的咖啡园已经有五十多年了。"
+    },
+    {
+      "task": "场景回应：同事提议这周五下午全组一起整理办公室。用 manfaat、perkirakan 回复 2–3 句：说说好处，请他估计人数和时间，再说你会调整会议时间。",
+      "reference_answer": "Ide bagus! Manfaatnya banyak: ruangan jadi lebih bersih dan kita nggak gampang bersin. Coba perkirakan dulu berapa orang yang bisa ikut dan butuh berapa jam, supaya aku bisa ngatur jadwal rapat hari Jumat. Kalau perlu, rapatnya aku mundurin ke sore.",
+      "reference_cn": "好主意！好处很多：办公室会更干净，我们也不容易打喷嚏。你先估计一下能来多少人、要花几个小时，我好安排周五的会议。需要的话，我把会往后推到傍晚。（nggak = tidak，ngatur = mengatur，mundurin = memundurkan）"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "Bima 打开吸尘器，可是灰吸不进去。他说：“Suaranya kenceng, tapi debunya nggak ____ sama sekali.” 哪项放进句中最自然？",
+        "options": [
+          "menyedot",
+          "penyedot",
+          "kesedot",
+          "sedotan"
+        ],
+        "answer_index": 2,
+        "answer": "kesedot",
+        "explain": "灰尘是“被吸进去”的一方，口语用 kesedot（= tersedot）。menyedot 是主动“吸”，主语应该是机器（Alatnya nggak kuat menyedot）；penyedot 是“吸的工具”；sedotan 是吸管，都不能放在这里。"
+      },
+      {
+        "type": "choice",
+        "prompt": "在菜市场，一位阿姨发现有人把她的钱包抽走了，人正往外跑。她马上 ____: \"Copet! Copet!\" 哪项最自然？",
+        "options": [
+          "berteriak",
+          "berbisik",
+          "bersorak",
+          "mengeluh"
+        ],
+        "answer_index": 0,
+        "answer": "berteriak",
+        "explain": "发现小偷要让周围的人听见，是大声喊：berteriak。berbisik 是小声说悄悄话；bersorak 是观众欢呼；mengeluh 是抱怨、诉苦，都不符合抓小偷的场景。"
+      },
+      {
+        "type": "choice",
+        "prompt": "酒店前台对经理说：“Tamu di kamar 305 ____ kamarnya yang bau rokok.” 哪项放进句中最自然？",
+        "options": [
+          "mengeluh",
+          "keluhan",
+          "dikeluhkan",
+          "mengeluhkan"
+        ],
+        "answer_index": 3,
+        "answer": "mengeluhkan",
+        "explain": "空格后面直接跟宾语 kamarnya，要用及物的 mengeluhkan。mengeluh 后面要加 soal / tentang（mengeluh soal kamarnya）；keluhan 是名词“投诉”；dikeluhkan 是被动，主语应该是被抱怨的东西（Kamarnya dikeluhkan tamu）。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Habis menyetrika satu jam, ____ saya pegal banget.（肩膀）",
+        "answer": "bahu",
+        "explain": "肩膀说 bahu，也可以说 pundak。“肩膀酸”是 bahu pegal，耸肩是 mengangkat bahu。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Sebelum tamu datang, saya ganti ____ di kamar tamu.（床单）",
+        "answer": "seprai",
+        "explain": "换床单固定说 ganti seprai；日常也常写 sprei。被子是 selimut，枕套是 sarung bantal。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：奶奶没有长抱枕就睡不着。",
+        "tokens": [
+          "Nenek",
+          "tidak",
+          "bisa",
+          "tidur",
+          "tanpa",
+          "guling."
+        ],
+        "answer": "Nenek tidak bisa tidur tanpa guling.",
+        "answer_cn": "奶奶没有长抱枕就睡不着。",
+        "explain": "“没有……就不能……”用 tidak bisa … tanpa …。guling 是抱着睡的长条枕，跟垫头的 bantal 不同。口语说 Nenek nggak bisa tidur tanpa guling."
+      }
+    ],
+    "self_check": [
+      "不看中文，setrika、kain pel、penyedot debu、seprai、guling 这 5 个新词里，有没有哪个我 3 秒内说不出意思？",
+      "mengeluh 和 mengeluhkan，我能马上判断哪个后面直接带宾语吗？",
+      "看到中文“估计一下”和“好处”，我能 3 秒内说出 perkirakan 和 manfaat 吗？",
+      "听到 berteriak 和 mantap，我能马上说出意思，并分清它们各在什么场合用吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "易混词各说一句：用 mengeluh soal … 说一件让你最近想抱怨的事，再用 mengeluhkan 把同一件事改成直接带宾语的句子；然后用 menyedot 说机器在吸，用 kesedot 说什么东西被吸进去了。",
+      "用 penyedot debu、kain pel、seprai、guling、setrika，30 秒复述 Nadia 和 Bima 的大扫除：吸尘器出了什么问题、原因是什么、两人各做了什么。",
+      "联系自己：用今天08:00新学的 berasal、berkaitan、bahu 说说你自己（老家在哪、你的工作跟什么有关、最近什么事让你肩膀酸）；再用 coba perkirakan 说你家大扫除一次大概要多久。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "berteriak",
+      "perkirakan",
+      "penyedot debu"
+    ],
+    "patterns": [
+      {
+        "pattern": "Ternyata masalahnya berkaitan dengan …",
+        "cn": "原来问题跟……有关",
+        "example": "Ternyata masalahnya berkaitan dengan filter yang tidak pernah dicuci.",
+        "example_cn": "原来问题跟从来没洗过的过滤网有关。"
+      },
+      {
+        "pattern": "Coba perkirakan dulu …, supaya …",
+        "cn": "先估计一下……，好让……",
+        "example": "Coba perkirakan dulu berapa orang yang bisa ikut dan butuh berapa jam, supaya aku bisa ngatur jadwal rapat hari Jumat.",
+        "example_cn": "你先估计一下能来多少人、要花几个小时，我好安排周五的会议。"
+      }
+    ]
+  }
+}
