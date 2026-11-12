@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-12T08:41:05.529Z",
+  "updated_at": "2026-11-12T09:53:20.532Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -29079,13 +29079,13 @@
     "tercantum": {
       "word": "tercantum",
       "status": "active",
-      "updated_at": "2026-11-10T09:07:01.997Z",
+      "updated_at": "2026-11-12T09:53:09.916Z",
       "display": "tercantum",
       "cn": "写明的；被列在（文件、标签、合同等）上的",
       "root": "cantum",
       "root_cn": "载明；列入",
       "last_wrong": "2026-11-09T06:55:58.933Z",
-      "last_review": "2026-11-10T08:56:12.010Z",
+      "last_review": "2026-11-12T09:53:09.810Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -29094,7 +29094,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "dipatok": {
       "word": "dipatok",
