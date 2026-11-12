@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-12T00:31:03.091Z",
+    "runtime_generated_at": "2026-11-12T03:41:03.325Z",
     "lesson_watermark": "2026-11-12 08:00",
     "index_updated": "2026-11-12",
-    "runtime_hash": "8f6191f4af424d2f8d589afeee3a80b9f4adee0583fcb8ea950779cb040fcaa5",
+    "runtime_hash": "ab1da1a08057c058e0626d44dafbcfba1c04730f04002e49b6d93d8f061a40d5",
     "index_hash": "7d722cc00e6ce57eaccdd0914e3611dbc42c581e8dde973bcdb09a6aa8eb70af",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
@@ -727,6 +727,16 @@
         "垫住；卡住；妨碍"
       ],
       [
+        "berteriak",
+        1,
+        2,
+        "2026-11-12T02:56:59.183Z",
+        "2026-11-12T02:56:59.183Z",
+        "喊叫",
+        "teriak",
+        "喊叫"
+      ],
+      [
         "menyebar",
         1,
         2,
@@ -815,16 +825,6 @@
         "只是；仅仅；不过是",
         "kadar",
         "程度；分量"
-      ],
-      [
-        "berteriak",
-        1,
-        1,
-        "2026-11-11T02:58:13.822Z",
-        "2026-11-11T02:58:13.822Z",
-        "喊叫",
-        "teriak",
-        "喊叫"
       ],
       [
         "menimpa",

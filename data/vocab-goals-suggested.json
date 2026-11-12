@@ -4,14 +4,14 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1037,
-   "recognize": 110,
+   "use": 1041,
+   "recognize": 116,
    "unsure": 23,
    "fast": 137
   },
   "active": {
-   "use": 703,
-   "recognize": 94,
+   "use": 707,
+   "recognize": 100,
    "unsure": 21,
    "fast": 57
   }
@@ -10764,6 +10764,96 @@
    "status": "active",
    "why": [
     "第二词库 A1 / A"
+   ]
+  },
+  "becak": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "delman": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "antik": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "perak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "angker": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "keramat": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "menakjubkan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "menegangkan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / S"
+   ]
+  },
+  "samping": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / S"
+   ]
+  },
+  "iklan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
    ]
   }
  }
