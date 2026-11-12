@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-11T10:38:18.397Z",
+  "updated_at": "2026-11-12T02:57:09.908Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -4784,8 +4784,9 @@
     "mengepel": {
       "word": "mengepel",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:44.606Z",
+      "updated_at": "2026-11-12T02:45:27.170Z",
       "display": "mengepel",
+      "cn": "拖把",
       "reasons": [
         "memory_dont"
       ],
@@ -5119,8 +5120,11 @@
     "menyalakan": {
       "word": "menyalakan",
       "status": "active",
-      "updated_at": "2026-10-23T23:30:57.026Z",
+      "updated_at": "2026-11-12T02:43:36.769Z",
       "display": "menyalakan",
+      "cn": "打开（灯、电器）；点燃",
+      "root": "nyala",
+      "root_cn": "亮；着火",
       "last_review": "2026-10-23T23:30:56.962Z",
       "reasons": [
         "memory_dont"
@@ -5190,8 +5194,9 @@
     "menyetrika": {
       "word": "menyetrika",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:45.017Z",
+      "updated_at": "2026-11-12T02:46:07.738Z",
       "display": "menyetrika",
+      "cn": "熨烫",
       "reasons": [
         "memory_dont"
       ],
@@ -6192,18 +6197,21 @@
     "berteriak": {
       "word": "berteriak",
       "status": "active",
-      "updated_at": "2026-11-11T02:58:13.956Z",
+      "updated_at": "2026-11-12T02:56:59.266Z",
       "display": "berteriak",
-      "last_wrong": "2026-11-11T02:58:13.822Z",
-      "last_review": "2026-11-11T02:58:13.822Z",
+      "cn": "喊叫；大声喊",
+      "root": "teriak",
+      "root_cn": "喊叫",
+      "last_wrong": "2026-11-12T02:56:59.183Z",
+      "last_review": "2026-11-12T02:56:59.183Z",
       "source": "课程小测",
       "source_date": "2026-11-11",
-      "session": "08:00",
+      "session": "18:00",
       "reasons": [
         "memory_dont",
         "lesson_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "menyentuh": {
@@ -9118,8 +9126,11 @@
     "ternyata": {
       "word": "ternyata",
       "status": "mastered",
-      "updated_at": "2026-10-19T06:03:56.602Z",
+      "updated_at": "2026-11-12T02:44:40.510Z",
       "display": "ternyata",
+      "cn": "原来；结果发现",
+      "root": "nyata",
+      "root_cn": "真实；明显",
       "last_review": "2026-10-19T06:03:56.542Z",
       "last_mastered": "2026-09-12T14:13:50.158Z",
       "reasons": [],
@@ -20274,8 +20285,10 @@
     "pernah": {
       "word": "pernah",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:01:07.233Z",
+      "updated_at": "2026-11-12T02:45:09.610Z",
       "display": "pernah",
+      "cn": "曾经",
+      "root": "pernah",
       "last_review": "2026-09-12T16:53:19.021Z",
       "last_mastered": "2026-09-12T16:53:19.021Z",
       "reasons": [],
