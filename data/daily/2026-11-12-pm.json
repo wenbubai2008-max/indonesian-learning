@@ -1,0 +1,388 @@
+{
+  "date": "2026-11-12",
+  "session": "pm",
+  "time": "18:00",
+  "day": 83,
+  "title": "18:00 晚课｜Pesta Kejutan Bertema 80-an untuk Rina · 给 Rina 的 80 年代主题惊喜派对",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "berulang tahun",
+    "bertema",
+    "persahabatan",
+    "gaun",
+    "anting"
+  ],
+  "vocab": [
+    {
+      "word": "berulang tahun",
+      "display": "berulang tahun",
+      "audio_text": "berulang tahun",
+      "cn": "过生日",
+      "en": "to have a birthday",
+      "root": "ulang tahun",
+      "root_cn": "生日（ulang 重复 + tahun 年）",
+      "formation": "ber- + ulang tahun → berulang tahun，“过生日”这个动作；后面常接岁数：berulang tahun ke-30（过三十岁生日）。名词 ulang tahun（生日）：pesta ulang tahun（生日派对）、kado ulang tahun（生日礼物）、Selamat ulang tahun!（生日快乐！）。",
+      "example": "Adikku berulang tahun minggu depan, jadi aku mau beli kartu ucapan dan sesuatu yang praktis buat kamar kosnya.",
+      "example_cn": "我妹妹下周过生日，所以我想买张贺卡，再买点实用的东西给她的出租屋用。",
+      "synonym_note": "berulang tahun 是动词“过生日”（Hari ini dia berulang tahun.）；ulang tahun 是名词“生日”（Ulang tahunnya hari ini.），两种说法意思一样。“庆祝生日”说 merayakan ulang tahun。口语说法：ultah（= ulang tahun）：Kapan ultahmu? 正式贺卡、公告里写完整的 berulang tahun / ulang tahun。",
+      "usage_note": "问别人生日用 Kapan ulang tahunmu?；说“几岁生日”用 ke- + 数字：ulang tahun ke-17。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "bertema",
+      "display": "bertema",
+      "audio_text": "bertema",
+      "cn": "以……为主题的",
+      "en": "themed; with the theme of",
+      "root": "tema",
+      "root_cn": "主题",
+      "formation": "ber- + tema → bertema，“有……主题的”，直接放在名词后面：pesta bertema pantai（海滩主题派对）、lomba foto bertema kerja sama tim（以团队合作为主题的摄影比赛）、kafe bertema film。也可说 dengan tema …：pesta dengan tema tahun 80-an。",
+      "example": "Bulan ini kantor kami mengadakan lomba foto bertema kerja sama tim, dan siapa pun boleh ikut.",
+      "example_cn": "这个月我们公司办了一个以团队合作为主题的摄影比赛，谁都可以参加。",
+      "synonym_note": "bertema 是“有明确主题”，说的是活动或作品的主题；bernuansa 是“带有某种氛围、味道”（kafe bernuansa Jawa），不一定是刻意定好的主题。问主题时直接说 Temanya apa?。没有特别常用的口语替代说法。",
+      "usage_note": "派对、比赛、展览、婚礼、装修风格都常用。注意 bertema 后面直接接主题，不加 dengan：pesta bertema pantai。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "persahabatan",
+      "display": "persahabatan",
+      "audio_text": "persahabatan",
+      "cn": "友谊；友情",
+      "en": "friendship",
+      "root": "sahabat",
+      "root_cn": "挚友；好朋友",
+      "formation": "per-an + sahabat → persahabatan，“友谊”这种关系。同族：sahabat（挚友）、bersahabat（交朋友；友好的：sikapnya bersahabat）。常见搭配：persahabatan kami（我们的友谊）、menjaga persahabatan（维护友谊）、persahabatan yang awet（长久的友谊）。",
+      "example": "Persahabatan kami tetap awet walaupun kami sering beda pendapat dan sama-sama keras kepala.",
+      "example_cn": "虽然我们常常意见不合，两个人又都很倔，可我们的友谊一直很长久。",
+      "synonym_note": "teman 是一般的朋友、同学、同事；sahabat 是关系很深的挚友。所以“友谊”说 persahabatan，比 pertemanan（朋友关系，比较一般）更深。口语说法：sohib / sobat（铁哥们、好朋友）：Dia sohibku dari SMA. 正式文字里写 sahabat。",
+      "usage_note": "persahabatan 多用在比较郑重的场合：致辞、贺卡、讲故事。日常聊天更常直接说 Kami sahabatan dari SMA.（我们从高中就是好朋友。）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "gaun",
+      "display": "gaun",
+      "audio_text": "gaun",
+      "cn": "连衣裙；（女式）礼服",
+      "en": "dress; gown",
+      "root": "gaun",
+      "root_cn": "连衣裙；礼服",
+      "formation": "名词，词根本身。常见搭配：gaun pesta（派对礼服）、gaun pengantin（婚纱）、gaun malam（晚礼服）、memakai gaun（穿连衣裙）。",
+      "example": "Gaun pengantin itu cantik, tapi kekurangannya cuma satu: harganya mahal banget.",
+      "example_cn": "那件婚纱很漂亮，可缺点只有一个：价格太贵了。",
+      "synonym_note": "gaun 偏正式、偏漂亮的连衣裙或礼服；平时穿的普通连衣裙，年轻人口语常直接说 dress（Aku pakai dress hitam.）；更传统的说法是 baju terusan（上下连在一起的衣服）。“穿”用 pakai / memakai，不用 memasang。",
+      "usage_note": "去婚礼、派对时说 gaun 最自然；说上班穿的连衣裙用 dress 或 baju terusan 更日常。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "anting",
+      "display": "anting",
+      "audio_text": "anting",
+      "cn": "耳环",
+      "en": "earring",
+      "root": "anting",
+      "root_cn": "耳环",
+      "formation": "名词，也说 anting-anting。常见搭配：sepasang anting（一对耳环）、memakai anting（戴耳环）、anting perak（银耳环）、anting sebelah（一只耳环）。",
+      "example": "Antingku ketuker sama punya adikku, soalnya modelnya mirip banget.",
+      "example_cn": "我的耳环和我妹妹的拿混了，因为款式太像了。（ketuker = tertukar，soalnya = karena）",
+      "synonym_note": "同类首饰：kalung（项链）、gelang（手镯、手链）、cincin（戒指）。“戴”首饰都用 pakai / memakai：pakai anting、pakai kalung。“打耳洞”说 tindik telinga。口语说法：日常就说 anting，不另有说法。",
+      "usage_note": "说一只耳环用 anting sebelah（Anting sebelahnya hilang.）；说一对用 sepasang anting。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menunjukkan",
+      "display": "menunjukkan",
+      "audio_text": "menunjukkan",
+      "cn": "显示；表明；指给……看",
+      "en": "to show; to indicate; to point out",
+      "root": "tunjuk",
+      "root_cn": "指；指出",
+      "formation": "meN- + tunjuk + -kan → menunjukkan（t 脱落变 n-）。被动 ditunjukkan；口语 nunjukin / tunjukin。最典型的搭配：menunjukkan bahwa …（表明……）、menunjukkan jalan（指路）、menunjukkan hasil / data（展示结果、数据）、menunjukkan sikap（表现出某种态度）。",
+      "example": "Sikapnya menunjukkan bahwa dia belum siap bergabung dengan tim baru.",
+      "example_cn": "他的态度表明，他还没准备好加入新团队。",
+      "synonym_note": "容易混的三个词：menunjuk 是“用手指着；指定某人”（Dia menunjuk gedung itu.／Saya ditunjuk jadi ketua.）；menunjukkan 是“显示、表明，或把东西指给人看”，后面常接 bahwa 从句或 data、jalan；memperlihatkan 是“拿出来给人看”，宾语是看得见的东西（memperlihatkan foto），一般不接 bahwa 从句。口语说法：tunjukin（= tunjukkan）：Tunjukin dong fotonya!",
+      "usage_note": "最近常错的词：记住两个典型句——Data ini menunjukkan bahwa …（数据表明……）；Bisa tolong tunjukkan jalannya?（能帮我指一下路吗？）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "perpaduan",
+      "display": "perpaduan",
+      "audio_text": "perpaduan",
+      "cn": "融合；结合；搭配",
+      "en": "blend; combination",
+      "root": "padu",
+      "root_cn": "协调；融合",
+      "formation": "per-an + padu → perpaduan，“两种以上东西融合在一起的结果”。常见搭配：perpaduan antara A dan B、perpaduan gaya / rasa / warna。同族：terpadu（综合的；一体化的：sistem terpadu）、memadukan（把……结合起来）。",
+      "example": "Pedagang di pasar itu menjual kain yang motifnya perpaduan batik dan tenun.",
+      "example_cn": "那个市场里的商贩卖一种布，图案融合了蜡染和手织布的风格。",
+      "synonym_note": "perpaduan 强调搭配得协调、好看或好吃；campuran 只是“混合物、掺在一起”（campuran air dan gula），不一定协调；kombinasi 和 perpaduan 接近，更口语一些。口语说法：日常常说 campur：rasanya campur manis sama asam。",
+      "usage_note": "多用来夸风格、味道、颜色：Desainnya perpaduan modern dan tradisional.",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kepake",
+      "display": "kepake",
+      "audio_text": "kepake",
+      "cn": "用得上；派上用场（口语）",
+      "en": "(gets) used; comes in handy (colloquial)",
+      "root": "pakai",
+      "root_cn": "使用；穿戴",
+      "formation": "口语 ke- + pakai → kepake（pakai 在雅加达口语里常读成 pake），相当于规范形 terpakai / bisa dipakai。常见说法：kepake juga（还真用上了）、jarang kepake（很少用到）、nggak kepake（用不上）。",
+      "example": "Kabel cadangan yang kubawa ternyata kepake juga waktu charger temanku rusak.",
+      "example_cn": "我带的备用数据线果然用上了——朋友的充电器坏了。",
+      "synonym_note": "kepake 是“被用上、派上用场”，主语是东西；memakai / pakai 是“用、穿”，主语是人（Aku pakai payung.）。规范形：terpakai（Ruangan itu jarang terpakai.）或 bisa dipakai。口语说法：kepake 本身就是口语，正式场合写 terpakai。",
+      "usage_note": "常用来说“当初觉得没用的东西，后来还真用上了”：Untung kamu bawa, akhirnya kepake juga!",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berteriak",
+      "display": "berteriak",
+      "audio_text": "berteriak",
+      "cn": "大声喊；喊叫",
+      "en": "to shout; to scream",
+      "root": "teriak",
+      "root_cn": "喊叫",
+      "formation": "ber- + teriak → berteriak（不及物，后面不直接接宾语）。重叠 berteriak-teriak（一直喊）；及物 meneriakkan（喊出口号、名字）；名词 teriakan（喊声）。常见搭配：berteriak minta tolong（喊救命）、berteriak kegirangan（高兴得大叫）。",
+      "example": "Anak-anak berteriak-teriak waktu main perang-perangan di halaman.",
+      "example_cn": "孩子们在院子里玩打仗游戏，一直大喊大叫。",
+      "synonym_note": "berteriak 是提高嗓门喊；memanggil 是“叫某人”（声音不一定大）；bersorak 是一群人欢呼、喝彩。口语说法：teriak（= berteriak）：Jangan teriak-teriak, Nenek lagi tidur.",
+      "usage_note": "惊喜派对上大家一起喊“Kejutan!”就用 berteriak；对人发火吼叫也是 berteriak（Dia berteriak pada anaknya.）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "melainkan",
+      "display": "melainkan",
+      "audio_text": "melainkan",
+      "cn": "而是（用在否定之后）",
+      "en": "but rather",
+      "root": "lain",
+      "root_cn": "其他；不同",
+      "formation": "meN- + lain + -kan → melainkan（l 开头，meN- 写作 me-），用于 bukan / tidak … melainkan …，先否定前面的说法，再给出正确的那一个：Bukan saya, melainkan dia.",
+      "example": "Menurut saya, anak yang sering terlambat tidak butuh hukuman, melainkan bantuan untuk mengatur waktunya.",
+      "example_cn": "我觉得经常迟到的孩子需要的不是惩罚，而是帮他安排好时间。",
+      "synonym_note": "melainkan 只用在否定词后面，表示“不是这个，而是那个”；tetapi 适用范围更广，可以表转折（Mahal, tetapi bagus.）。bukan … tetapi … 在日常说话里也很常见，两者都可以；书面纠正时 melainkan 更清楚。“不仅……而且……”说 bukan hanya … tetapi juga …，不用 melainkan。口语说法：说话时多说 tapi：Bukan aku, tapi dia.",
+      "usage_note": "正式说明、写作、致辞里常用；朋友聊天一般说 tapi。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "iklan",
+      "display": "iklan",
+      "audio_text": "iklan",
+      "cn": "广告",
+      "en": "advertisement",
+      "root": "iklan",
+      "root_cn": "广告",
+      "formation": "名词，可派生 beriklan（打广告）、mengiklankan（给……做广告）。常见搭配：iklan di Instagram、pasang iklan（登广告）、iklan lowongan kerja（招聘广告）。今天08:00新学。",
+      "example": "Gara-gara lihat iklan di Instagram, aku jadi pengin coba kafe baru itu.",
+      "example_cn": "因为在 Instagram 上看到广告，我就想去试试那家新咖啡馆。（pengin = ingin）",
+      "synonym_note": "iklan 是具体的一则广告；promosi 是促销、宣传活动（lagi ada promosi）。口语说法：日常就说 iklan；“登广告”最常说 pasang iklan。",
+      "usage_note": "今天08:00新学：早课是看到旅游团的广告去报名，今晚用来说在网上看到的二手家具广告和咖啡馆广告。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "antik",
+      "display": "antik",
+      "audio_text": "antik",
+      "cn": "古董的；古色古香的",
+      "en": "antique",
+      "root": "antik",
+      "root_cn": "古董的",
+      "formation": "形容词，放在名词后面：barang antik（古董）、kursi antik（古董椅子）、toko barang antik（古董店）。今天08:00新学。",
+      "example": "Renovasi rumah antik itu belum tuntas, jadi pengunjung belum boleh masuk.",
+      "example_cn": "那座古宅还没修缮完，所以游客还不能进去。",
+      "synonym_note": "antik 一般是褒义，带“有年代感、有收藏价值”的味道；kuno 指年代久远，也能批评人观念过时（pikirannya kuno）。口语说法：老派、旧时代的东西常说 jadul（= zaman dulu），但 jadul 不一定值钱。",
+      "usage_note": "今天08:00新学：早课在老城看古宅，今晚换成布置派对的咖啡馆和网上卖的旧椅子。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sabtu lalu, Rina berulang tahun ke-30. Dua sahabatnya sejak SMA, Sinta dan Dewi, menyiapkan pesta kejutan bertema tahun 80-an. Dewi menemukan kafe lewat iklan di Instagram. Kafe itu penuh perabot antik, jadi cocok dengan temanya. Sinta tidak punya baju gaya lama, tetapi ia ingat gaun ungu milik ibunya. Ternyata gaun lama itu berguna juga, dan ia memakai anting perak besar. Masalahnya, dua hari sebelumnya Dewi salah mengirim pesan tentang rencana itu ke grup kantor, padahal Rina anggota grup itu. Untung cepat dihapus. Malam itu, ketika Rina masuk, semua orang berteriak, \"Kejutan!\" Lalu Dewi menunjukkan video berisi foto-foto mereka sejak sekolah. Rina terharu. Katanya, malam itu bukan sekadar pesta ulang tahun, melainkan perayaan persahabatan mereka.",
+    "cn": "上周六是 Rina 的三十岁生日。她从高中起的两个好朋友 Sinta 和 Dewi 为她准备了一场 80 年代主题的惊喜派对。Dewi 通过 Instagram 上的广告找到了一家咖啡馆。那家咖啡馆摆满了古董家具，正好配这个主题。Sinta 没有老式风格的衣服，但她想起了妈妈的那条紫色连衣裙。没想到那条旧裙子还真派上了用场，她还戴了一对大大的银耳环。问题是，两天前 Dewi 把关于这个计划的消息错发到了公司群里，可 Rina 就在那个群里。幸好很快就删掉了。那天晚上，Rina 一进门，所有人都大喊：“惊喜！”接着 Dewi 放了一段视频，里面是她们从上学时到现在的照片。Rina 很感动。她说，那晚不只是一场生日派对，而是在庆祝她们的友谊。"
+  },
+  "dialogue": {
+    "title": "派对开始前：最后一次确认",
+    "lines": [
+      {
+        "speaker": "Dewi",
+        "id": "Sin, kamu udah di mana? Rina dateng jam tujuh, tapi kumpulnya kita majuin aja jadi setengah tujuh, biar nggak buru-buru.",
+        "cn": "Sin，你到哪儿了？Rina 七点到，不过我们集合时间提前到六点半吧，免得手忙脚乱。（udah = sudah，dateng = datang，majuin = memajukan，nggak = tidak）"
+      },
+      {
+        "speaker": "Sinta",
+        "id": "Oke, aku lagi di jalan. Eh, aku jadi pakai gaun ungu punya Mama. Ternyata kepake juga, ya, padahal udah lama banget di lemari.",
+        "cn": "好，我在路上了。哎，我最后穿了妈妈那条紫色连衣裙。没想到还真派上用场了，明明在衣柜里放了好久。（pakai = memakai，punya Mama = milik Mama，kepake = terpakai）"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Wah, cocok banget sama temanya! Dekorasi kafenya juga perpaduan barang antik sama lampu neon. Rina pasti suka.",
+        "cn": "哇，跟主题太配了！咖啡馆的布置也是古董摆件配霓虹灯。Rina 一定会喜欢。（sama = dengan）"
+      },
+      {
+        "speaker": "Sinta",
+        "id": "Tapi kamu jangan ngaret, ya. Dua hari lalu kamu hampir bikin semuanya ketahuan gara-gara salah kirim pesan.",
+        "cn": "不过你可别迟到啊。两天前你差点因为发错消息让一切都露馅。（ngaret = 拖拉、迟到，bikin = membuat，gara-gara = karena）"
+      },
+      {
+        "speaker": "Dewi",
+        "id": "Iya, iya, maaf. Untung langsung kuhapus. Nanti waktu dia masuk, kita teriak \"Kejutan!\" bareng, ya.",
+        "cn": "好啦好啦，对不起。幸好我马上删了。等会儿她进门的时候，我们一起喊“惊喜！”哦。（teriak = berteriak，bareng = bersama）"
+      },
+      {
+        "speaker": "Sinta",
+        "id": "Siap. Habis itu kamu tunjukin videonya. Aduh, antingku nyangkut di rambut, bentar ya!",
+        "cn": "没问题。然后你放视频给她看。哎呀，我的耳环勾到头发了，等一下！（habis itu = setelah itu，tunjukin = tunjukkan，nyangkut = tersangkut，bentar = sebentar）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：好朋友邀请你参加她这周的生日派对，主题是“海滩”。回复她：祝贺她，确认主题，说你准备穿什么、戴什么。用 berulang tahun、bertema、gaun、anting，2–3 句，不照抄阅读。",
+      "reference_answer": "Wah, kamu berulang tahun hari Jumat, ya? Pestanya bertema pantai, kan? Aku mau pakai gaun putih yang ringan dan anting berbentuk kerang. Sampai ketemu hari Jumat!",
+      "reference_cn": "哇，你星期五过生日对吧？派对是海滩主题，对吗？我打算穿一条轻薄的白色连衣裙，戴贝壳形的耳环。星期五见！（pakai = memakai，ketemu = bertemu）"
+    },
+    {
+      "task": "最近常错的词造句：开会时同事以为你在批评他的方案，其实你是在提建议。用 melainkan、menunjukkan 说明你的意思，并根据数据提出一条建议，2–3 句。",
+      "reference_answer": "Maaf, maksud saya bukan mengkritik, melainkan memberi saran. Data bulan ini menunjukkan bahwa kebanyakan pelanggan memesan lewat aplikasi pada malam hari. Jadi, menurut saya kita perlu aturan yang tegas soal jam pengiriman malam.",
+      "reference_cn": "不好意思，我的意思不是批评，而是提个建议。这个月的数据显示，大多数顾客都是晚上通过应用下单的。所以我觉得，我们需要对晚间配送时间定一个明确的规定。"
+    },
+    {
+      "task": "今天08:00新学的词换场景：你在网上看到一则卖旧椅子的广告，去看了以后没买。跟朋友讲讲经过。用 iklan、antik，2–3 句（不说旅游、老城）。",
+      "reference_answer": "Kemarin aku lihat iklan kursi antik di marketplace. Kata penjualnya, kursinya masih kuat, tapi waktu aku duduk, kakinya goyang. Akhirnya aku bilang, \"Maaf, Pak, saya pamit dulu,\" dan nggak jadi beli.",
+      "reference_cn": "昨天我在网购平台上看到一则古董椅子的广告。卖家说椅子还很结实，可我一坐上去，椅子腿就晃。最后我说了句“不好意思，先生，我先走了”，就没买。（nggak jadi = 最后没……）"
+    },
+    {
+      "task": "场景回应：室友嫌你留的旧纸箱太占地方，想扔掉。用 kepake、perpaduan 回她 2–3 句：说明为什么先别扔，再自嘲一下你的房间。",
+      "reference_answer": "Jangan dibuang dulu! Kardus-kardus ini pasti kepake waktu aku pindah kos bulan depan. Aku tahu kamarku sekarang kayak perpaduan gudang dan kantor, tapi sabar sebulan lagi, ya.",
+      "reference_cn": "先别扔！下个月我搬宿舍的时候，这些纸箱肯定用得上。我知道我的房间现在像仓库加办公室的混合体，不过再忍一个月吧。（kayak = seperti）"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "公司例会上，经理看着报告说：“Hasil survei ____ bahwa kebanyakan karyawan ingin kerja dari rumah dua hari seminggu.” 哪项放进句中最自然？",
+        "options": [
+          "menunjuk",
+          "memperlihatkan",
+          "ditunjukkan",
+          "menunjukkan"
+        ],
+        "answer_index": 3,
+        "answer": "menunjukkan",
+        "explain": "“调查结果表明……”是 hasil survei menunjukkan bahwa …。menunjuk 是用手指着或指定某人（menunjuk gedung itu、ditunjuk jadi ketua）；memperlihatkan 是把看得见的东西拿给人看（memperlihatkan foto），一般不接 bahwa 从句；ditunjukkan 是被动，主语应该是被展示的东西。"
+      },
+      {
+        "type": "choice",
+        "prompt": "早上 A 笑 B：“Ngapain bawa payung? Cerah begini.” 傍晚突然下起大雨，B 打开伞说：“Tuh kan, akhirnya ____ juga!” 哪项最自然？",
+        "options": [
+          "kepake",
+          "pakaian",
+          "pemakai",
+          "memakai"
+        ],
+        "answer_index": 0,
+        "answer": "kepake",
+        "explain": "伞是“被用上”的东西，口语说 kepake juga（规范形 terpakai juga）。pakaian 是衣服；pemakai 是使用者；memakai 是主动“用、穿”，后面要接宾语，主语是人（Aku memakai payung）。"
+      },
+      {
+        "type": "choice",
+        "prompt": "朋友以为你迟到是因为睡过头，你纠正他：“Aku telat bukan karena bangun kesiangan, ____ karena motorku mogok.” 哪项放进句中最自然？",
+        "options": [
+          "padahal",
+          "melainkan",
+          "sedangkan",
+          "apalagi"
+        ],
+        "answer_index": 1,
+        "answer": "melainkan",
+        "explain": "bukan … melainkan … 先否定一个原因，再给出真正的原因（口语里说 bukan …, tapi … 也可以）。padahal 是“可是实际上、明明”；sedangkan 用来对比两件不同的事；apalagi 是“更何况”，都不能接在 bukan 后面纠正。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Teman sekantorku ____ ke-25 hari ini, jadi kami membelikan kue untuknya.（过生日）",
+        "answer": "berulang tahun",
+        "explain": "“过……岁生日”用 berulang tahun ke- + 数字。也可以说 Hari ini ulang tahunnya yang ke-25。口语常说 ultah。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Waktu Rina masuk, semua orang ____, \"Kejutan!\"（大声喊）",
+        "answer": "berteriak",
+        "explain": "大家一起大声喊用 berteriak（口语 teriak）。memanggil 是叫某人，声音不一定大；bersorak 是一群人欢呼喝彩，多用于观众、球迷。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我们的友谊已经十年了。",
+        "tokens": [
+          "Persahabatan",
+          "kami",
+          "sudah",
+          "berjalan",
+          "sepuluh",
+          "tahun."
+        ],
+        "answer": "Persahabatan kami sudah berjalan sepuluh tahun.",
+        "answer_cn": "我们的友谊已经十年了。",
+        "explain": "“友谊持续了多久”常说 persahabatan … sudah berjalan + 时间。kami 不包括听话人；如果对朋友本人说“我们的友谊”，用 persahabatan kita。"
+      }
+    ],
+    "self_check": [
+      "不看中文，berulang tahun、bertema、persahabatan、gaun、anting 这 5 个新词里，有没有哪个我 3 秒内说不出意思？",
+      "menunjukkan 和 menunjuk、memperlihatkan，我分得清各自什么时候用吗？",
+      "kepake、perpaduan、berteriak 这三个词，我能不看词卡马上说出中文意思吗？",
+      "看到 melainkan，我知道它只能接在 bukan / tidak 后面用吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "易混词各说一句：用 menunjukkan bahwa … 说一个你最近注意到的变化，用 menunjuk 说你指着什么东西，再用 memperlihatkan 说你给别人看了什么。然后用 bukan … melainkan … 纠正一个别人对你的误会。",
+      "30 秒复述 Rina 的惊喜派对：用 bertema、gaun、anting、berteriak、persahabatan，说说派对是什么主题、Sinta 穿戴了什么、出了什么差错、最后怎样。",
+      "联系自己：用今天08:00新学的 iklan、antik 说一则你最近看到的广告或一件家里的老东西；再用 ternyata … kepake juga 说一件你以为没用、后来却派上用场的东西。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "menunjukkan",
+      "melainkan",
+      "kepake"
+    ],
+    "patterns": [
+      {
+        "pattern": "Maksud saya bukan …, melainkan …",
+        "cn": "我的意思不是……，而是……",
+        "example": "Maaf, maksud saya bukan mengkritik, melainkan memberi saran.",
+        "example_cn": "不好意思，我的意思不是批评，而是提个建议。"
+      },
+      {
+        "pattern": "Ternyata … kepake juga, padahal …",
+        "cn": "没想到……还真派上用场了，明明……",
+        "example": "Ternyata kepake juga, ya, padahal udah lama banget di lemari.",
+        "example_cn": "没想到还真派上用场了，明明在衣柜里放了好久。"
+      }
+    ]
+  }
+}
