@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-12T10:11:27.486Z",
+  "updated_at": "2026-11-12T11:41:46.343Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2319,19 +2319,23 @@
     "menunjukkan": {
       "word": "menunjukkan",
       "status": "active",
-      "updated_at": "2026-11-08T07:34:19.043Z",
+      "updated_at": "2026-11-12T11:36:24.733Z",
       "display": "menunjukkan",
-      "cn": "指出",
+      "cn": "显示；表明；指给……看",
       "root": "tunjuk",
       "root_cn": "指；指出",
-      "last_wrong": "2026-09-27T13:58:43.322Z",
-      "last_review": "2026-11-08T07:34:18.987Z",
+      "last_wrong": "2026-11-12T11:36:24.614Z",
+      "last_review": "2026-11-12T11:36:24.614Z",
+      "source": "课程小测",
+      "source_date": "2026-11-12",
+      "session": "18:00",
       "reasons": [
         "memory_dont",
-        "automation_fail"
+        "automation_fail",
+        "lesson_wrong"
       ],
-      "wrong_count": 4,
-      "right_streak": 4
+      "wrong_count": 5,
+      "right_streak": 0
     },
     "kehidupan": {
       "word": "kehidupan",
@@ -3131,15 +3135,22 @@
     "melainkan": {
       "word": "melainkan",
       "status": "active",
-      "updated_at": "2026-10-15T13:47:00.605Z",
+      "updated_at": "2026-11-12T11:37:14.109Z",
       "display": "melainkan",
-      "cn": "而是",
-      "last_review": "2026-10-15T13:47:00.581Z",
+      "cn": "而是（用在否定之后）",
+      "root": "lain",
+      "root_cn": "其他；不同",
+      "last_wrong": "2026-11-12T11:37:14.032Z",
+      "last_review": "2026-11-12T11:37:14.032Z",
+      "source": "课程小测",
+      "source_date": "2026-11-12",
+      "session": "18:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 4
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "lahir": {
       "word": "lahir",
@@ -6197,21 +6208,21 @@
     "berteriak": {
       "word": "berteriak",
       "status": "active",
-      "updated_at": "2026-11-12T02:56:59.266Z",
+      "updated_at": "2026-11-12T11:37:40.257Z",
       "display": "berteriak",
-      "cn": "喊叫；大声喊",
+      "cn": "大声喊；喊叫",
       "root": "teriak",
       "root_cn": "喊叫",
-      "last_wrong": "2026-11-12T02:56:59.183Z",
-      "last_review": "2026-11-12T02:56:59.183Z",
+      "last_wrong": "2026-11-12T11:37:40.192Z",
+      "last_review": "2026-11-12T11:37:40.192Z",
       "source": "课程小测",
-      "source_date": "2026-11-11",
+      "source_date": "2026-11-12",
       "session": "18:00",
       "reasons": [
         "memory_dont",
         "lesson_wrong"
       ],
-      "wrong_count": 2,
+      "wrong_count": 3,
       "right_streak": 0
     },
     "menyentuh": {
@@ -25555,17 +25566,18 @@
     "berulang tahun": {
       "word": "berulang tahun",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:20.374Z",
+      "updated_at": "2026-11-12T11:41:31.296Z",
       "display": "berulang tahun",
       "cn": "过生日",
       "root": "ulang",
+      "last_review": "2026-11-12T11:41:31.244Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nol": {
       "word": "nol",
@@ -26567,16 +26579,17 @@
     "anting": {
       "word": "anting",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:23.070Z",
+      "updated_at": "2026-11-12T11:41:25.403Z",
       "display": "anting",
       "cn": "耳环",
+      "last_review": "2026-11-12T11:41:25.341Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "gelang": {
       "word": "gelang",
@@ -26661,16 +26674,17 @@
     "gaun": {
       "word": "gaun",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:23.319Z",
+      "updated_at": "2026-11-12T11:41:33.261Z",
       "display": "gaun",
       "cn": "连衣裙/礼服",
+      "last_review": "2026-11-12T11:41:33.210Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "blus": {
       "word": "blus",
@@ -28702,32 +28716,34 @@
     "bertema": {
       "word": "bertema",
       "status": "active",
-      "updated_at": "2026-10-14T07:02:40.982Z",
+      "updated_at": "2026-11-12T11:41:28.208Z",
       "display": "bertema",
       "cn": "以……为主题",
       "root": "tema",
+      "last_review": "2026-11-12T11:41:28.153Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "persahabatan": {
       "word": "persahabatan",
       "status": "active",
-      "updated_at": "2026-10-14T07:02:41.012Z",
+      "updated_at": "2026-11-12T11:41:34.869Z",
       "display": "persahabatan",
       "cn": "友谊",
       "root": "sahabat",
+      "last_review": "2026-11-12T11:41:34.817Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pesan cerita": {
       "word": "pesan cerita",
@@ -28997,23 +29013,23 @@
     "perpaduan": {
       "word": "perpaduan",
       "status": "active",
-      "updated_at": "2026-11-03T09:40:05.691Z",
+      "updated_at": "2026-11-12T11:38:25.904Z",
       "display": "perpaduan",
       "cn": "融合；结合；搭配",
       "root": "padu",
       "root_cn": "协调；融合",
-      "last_wrong": "2026-10-24T15:35:27.721Z",
-      "last_review": "2026-11-03T09:40:05.553Z",
-      "source": "课程小测",
-      "source_date": "2026-10-24",
+      "last_wrong": "2026-11-12T11:38:25.836Z",
+      "last_review": "2026-11-12T11:38:25.836Z",
+      "source": "课程自检",
+      "source_date": "2026-11-12",
       "session": "18:00",
       "reasons": [
         "bipa_secondary_dont",
         "memory_fuzzy",
         "lesson_wrong"
       ],
-      "wrong_count": 2,
-      "right_streak": 3
+      "wrong_count": 3,
+      "right_streak": 0
     },
     "usaha mikro": {
       "word": "usaha mikro",
