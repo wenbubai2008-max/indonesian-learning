@@ -4,15 +4,15 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1041,
-   "recognize": 116,
-   "unsure": 23,
+   "use": 1046,
+   "recognize": 115,
+   "unsure": 24,
    "fast": 137
   },
   "active": {
-   "use": 707,
-   "recognize": 100,
-   "unsure": 21,
+   "use": 712,
+   "recognize": 99,
+   "unsure": 22,
    "fast": 57
   }
  },
@@ -4446,11 +4446,12 @@
    ]
   },
   "melainkan": {
-   "goal": "recognize",
+   "goal": "unsure",
    "fast": false,
-   "by": "review",
+   "by": "review+history",
    "status": "active",
    "why": [
+    "答错较多，不建议只要求认识",
     "书面或描写用语：读懂即可，口语有更常用的说法",
     "977 主库第 128 位"
    ]
@@ -10854,6 +10855,51 @@
    "status": "active",
    "why": [
     "第二词库 B2 / S"
+   ]
+  },
+  "berulang tahun": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "bertema": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "persahabatan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "gaun": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "anting": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
    ]
   }
  }
