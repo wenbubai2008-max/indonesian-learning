@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-12T02:57:09.908Z",
+  "updated_at": "2026-11-12T03:53:04.666Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -7527,8 +7527,11 @@
     "sungguh": {
       "word": "sungguh",
       "status": "active",
-      "updated_at": "2026-11-10T15:10:33.108Z",
+      "updated_at": "2026-11-12T03:52:54.040Z",
       "display": "sungguh",
+      "cn": "真的；实在；确实",
+      "root": "sungguh",
+      "root_cn": "真的；确实",
       "last_review": "2026-11-10T15:10:33.051Z",
       "reasons": [
         "memory_fuzzy"
