@@ -14813,17 +14813,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-26 08:00",
-    "last_seen": "2026-09-26 08:00",
+    "last_seen": "2026-11-12 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-26"
+      "2026-09-26",
+      "2026-11-12"
     ],
     "lesson_occurrences": [
-      "2026-09-26 08:00"
+      "2026-09-26 08:00",
+      "2026-11-12 08:00"
     ]
   },
   {
@@ -14838,17 +14840,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-26 08:00",
-    "last_seen": "2026-09-26 08:00",
+    "last_seen": "2026-11-12 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-26"
+      "2026-09-26",
+      "2026-11-12"
     ],
     "lesson_occurrences": [
-      "2026-09-26 08:00"
+      "2026-09-26 08:00",
+      "2026-11-12 08:00"
     ]
   },
   {
@@ -14864,19 +14868,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-26 08:00",
-    "last_seen": "2026-09-26 18:00",
+    "last_seen": "2026-11-12 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-26"
+      "2026-09-26",
+      "2026-11-12"
     ],
     "lesson_occurrences": [
       "2026-09-26 08:00",
-      "2026-09-26 18:00"
+      "2026-09-26 18:00",
+      "2026-11-12 08:00"
     ]
   },
   {
@@ -14891,17 +14897,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-26 08:00",
-    "last_seen": "2026-09-26 08:00",
+    "last_seen": "2026-11-12 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-26"
+      "2026-09-26",
+      "2026-11-12"
     ],
     "lesson_occurrences": [
-      "2026-09-26 08:00"
+      "2026-09-26 08:00",
+      "2026-11-12 08:00"
     ]
   },
   {
@@ -17703,17 +17711,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-03 08:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-11-12 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-12"
     ],
     "lesson_occurrences": [
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-11-12 08:00"
     ]
   },
   {
@@ -31683,6 +31693,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-11 18:00"
+    ]
+  },
+  {
+    "word": "becak",
+    "cn": "人力三轮车",
+    "en": "pedicab",
+    "root": "becak",
+    "root_cn": "三轮车",
+    "example": "Letak hotelnya tidak jauh dari stasiun, jadi kami naik becak saja.",
+    "example_cn": "酒店离车站不远，所以我们坐三轮车就行了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 08:00"
+    ]
+  },
+  {
+    "word": "delman",
+    "cn": "（载客的）马车",
+    "en": "horse-drawn carriage",
+    "root": "delman",
+    "root_cn": "马车",
+    "example": "Naik delman keliling alun-alun termasuk pengalaman khas Yogyakarta.",
+    "example_cn": "坐马车绕广场一圈，算是日惹特有的体验。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 08:00"
+    ]
+  },
+  {
+    "word": "antik",
+    "cn": "古董的；古色古香的",
+    "en": "antique",
+    "root": "antik",
+    "root_cn": "古董的",
+    "example": "Lemari antik di rumah nenek merupakan perpaduan gaya Jawa dan Belanda.",
+    "example_cn": "奶奶家的那个古董柜子融合了爪哇和荷兰的风格。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 08:00"
+    ]
+  },
+  {
+    "word": "perak",
+    "cn": "银；银色",
+    "en": "silver",
+    "root": "perak",
+    "root_cn": "银",
+    "example": "Pendapatan para perajin perak di kampung ini biasanya naik saat musim liburan.",
+    "example_cn": "这个村子银匠们的收入通常在假期旺季会增加。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 08:00"
+    ]
+  },
+  {
+    "word": "angker",
+    "cn": "阴森的；（传说）闹鬼的",
+    "en": "haunted; eerie",
+    "root": "angker",
+    "root_cn": "阴森",
+    "example": "Banyak orang bilang jembatan tua itu angker, jadi mereka tidak berani lewat malam-malam.",
+    "example_cn": "很多人说那座旧桥闹鬼，所以他们不敢晚上从那儿过。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 08:00"
+    ]
+  },
+  {
+    "word": "keramat",
+    "cn": "神圣的；（被认为）有灵力的",
+    "en": "sacred; believed to have spiritual power",
+    "root": "keramat",
+    "root_cn": "神圣、灵验",
+    "example": "Pihak pengelola membatasi jumlah pengunjung makam keramat itu pada hari Jumat.",
+    "example_cn": "管理方在星期五限制那座圣墓的参观人数。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 08:00"
+    ]
+  },
+  {
+    "word": "menakjubkan",
+    "cn": "令人惊叹的；了不起的",
+    "en": "amazing; astonishing",
+    "root": "takjub",
+    "root_cn": "惊叹",
+    "example": "Untuk mencapai puncak candi, kami harus naik banyak tangga, tapi pemandangannya menakjubkan.",
+    "example_cn": "为了到达寺庙顶端，我们得爬很多台阶，不过风景令人惊叹。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 08:00"
+    ]
+  },
+  {
+    "word": "menegangkan",
+    "cn": "令人紧张的；惊险刺激的",
+    "en": "tense; nerve-racking; thrilling",
+    "root": "tegang",
+    "root_cn": "紧张；绷紧",
+    "example": "Film horor itu menegangkan dari awal sampai akhir.",
+    "example_cn": "那部恐怖片从头到尾都让人紧张。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 08:00"
+    ]
+  },
+  {
+    "word": "samping",
+    "cn": "旁边；侧面",
+    "en": "side; beside",
+    "root": "samping",
+    "root_cn": "旁边",
+    "example": "Ada warung gudeg yang enak di samping penginapan kami.",
+    "example_cn": "我们住的旅馆旁边有一家好吃的菠萝蜜饭小店。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 08:00"
+    ]
+  },
+  {
+    "word": "iklan",
+    "cn": "广告",
+    "en": "advertisement",
+    "root": "iklan",
+    "root_cn": "广告",
+    "example": "Setelah iklannya viral, toko kue itu sampai kewalahan melayani pesanan.",
+    "example_cn": "广告火了以后，那家蛋糕店忙得接不过来订单。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 08:00"
     ]
   }
 ];
