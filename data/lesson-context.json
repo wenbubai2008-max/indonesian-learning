@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-12",
-    "session": "pm",
-    "time": "18:00",
-    "day": 83
+    "date": "2026-11-13",
+    "session": "am",
+    "time": "08:00",
+    "day": 84
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-12T10:16:06.817Z",
-    "lesson_watermark": "2026-11-12 08:00",
+    "runtime_generated_at": "2026-11-12T10:51:56.305Z",
+    "lesson_watermark": "2026-11-12 18:00",
     "index_updated": "2026-11-12",
-    "runtime_hash": "7aef7697a495107835e39e9152b2d604a2a3512f0da375c1956572de5be9bb3c",
-    "index_hash": "7d722cc00e6ce57eaccdd0914e3611dbc42c581e8dde973bcdb09a6aa8eb70af",
+    "runtime_hash": "12ba343c3b06445de43d0332d57951ae32a56023be09bab135e2a8013010b0c9",
+    "index_hash": "f8f9dfc6bf03bfbf4cf9967852da2da98d1463b1fcf53c66667c9f6f0bd3586c",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -95,10 +95,6 @@
         "教师/讲师"
       ],
       [
-        "berulang tahun",
-        "过生日"
-      ],
-      [
         "harimau",
         "老虎"
       ],
@@ -139,16 +135,8 @@
         "女式衬衫"
       ],
       [
-        "gaun",
-        "连衣裙/礼服"
-      ],
-      [
         "rok",
         "裙子"
-      ],
-      [
-        "anting",
-        "耳环"
       ],
       [
         "kaos kaki",
@@ -173,14 +161,6 @@
       [
         "pengaturan",
         "设置；安排"
-      ],
-      [
-        "bertema",
-        "以……为主题"
-      ],
-      [
-        "persahabatan",
-        "友谊"
       ],
       [
         "meloloskan diri",
@@ -1325,16 +1305,6 @@
         "尺寸，测量",
         "ukur",
         "测量"
-      ],
-      [
-        "melainkan",
-        2,
-        0,
-        "",
-        "2026-10-15T13:47:00.581Z",
-        "而是",
-        "lain",
-        "其他；不同"
       ],
       [
         "menabrak",
@@ -2557,104 +2527,14 @@
         "做；制作；为了"
       ],
       [
-        "becak",
+        "kesiangan",
         3,
-        0,
-        "",
-        "2026-11-12T04:07:45.140Z",
-        "人力三轮车",
-        "becak",
-        "三轮车"
-      ],
-      [
-        "delman",
-        3,
-        0,
-        "",
-        "2026-11-12T04:07:48.185Z",
-        "（载客的）马车",
-        "delman",
-        "马车"
-      ],
-      [
-        "antik",
-        3,
-        0,
-        "",
-        "2026-11-12T04:07:39.596Z",
-        "古董的；古色古香的",
-        "antik",
-        "古董的"
-      ],
-      [
-        "perak",
-        3,
-        0,
-        "",
-        "2026-11-12T04:08:14.476Z",
-        "银；银色",
-        "perak",
-        "银"
-      ],
-      [
-        "angker",
-        3,
-        0,
-        "",
-        "2026-11-12T04:07:37.183Z",
-        "阴森的；（传说）闹鬼的",
-        "angker",
-        "阴森"
-      ],
-      [
-        "keramat",
-        3,
-        0,
-        "",
-        "2026-11-12T04:07:54.465Z",
-        "神圣的；（被认为）有灵力的",
-        "keramat",
-        "神圣、灵验"
-      ],
-      [
-        "menakjubkan",
-        3,
-        0,
-        "",
-        "2026-11-12T04:08:00.572Z",
-        "令人惊叹的；了不起的",
-        "takjub",
-        "惊叹"
-      ],
-      [
-        "menegangkan",
-        3,
-        0,
-        "",
-        "2026-11-12T04:08:09.162Z",
-        "令人紧张的；惊险刺激的",
-        "tegang",
-        "紧张；绷紧"
-      ],
-      [
-        "samping",
-        3,
-        0,
-        "",
-        "2026-11-12T04:08:17.924Z",
-        "旁边；侧面",
-        "samping",
-        "旁边"
-      ],
-      [
-        "iklan",
-        3,
-        0,
-        "",
-        "2026-11-12T04:07:50.123Z",
-        "广告",
-        "iklan",
-        "广告"
+        1,
+        "2026-09-30T14:03:25.972Z",
+        "2026-10-13T15:11:20.206Z",
+        "起晚了；早上的事情拖到太晚（口语）",
+        "siang",
+        "白天；中午"
       ]
     ],
     "focus": [
@@ -2918,47 +2798,6 @@
     "oral": []
   },
   "history_7d": [
-    {
-      "date": "2026-11-05",
-      "session": "am",
-      "review_core": [
-        "penyebab",
-        "sebab",
-        "berangkat",
-        "berbicara",
-        "kehidupan"
-      ],
-      "new_words": [
-        "panik",
-        "nagih",
-        "dampak",
-        "merayu",
-        "kencang",
-        "menaruh",
-        "kemasan",
-        "menghela",
-        "curiga",
-        "nyenyak"
-      ]
-    },
-    {
-      "date": "2026-11-05",
-      "session": "pm",
-      "review_core": [
-        "jomblo",
-        "kabur",
-        "penuh",
-        "sepenuhnya",
-        "menderita"
-      ],
-      "new_words": [
-        "senam",
-        "peserta",
-        "licin",
-        "kaos",
-        "pendinginan"
-      ]
-    },
     {
       "date": "2026-11-06",
       "session": "am",
@@ -3227,107 +3066,44 @@
         "samping",
         "iklan"
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "session": "pm",
+      "review_core": [
+        "menunjukkan",
+        "perpaduan",
+        "kepake",
+        "berteriak",
+        "melainkan"
+      ],
+      "new_words": [
+        "berulang tahun",
+        "bertema",
+        "persahabatan",
+        "gaun",
+        "anting"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "new_words": [
-      "setrika",
-      "kain pel",
-      "penyedot debu",
-      "seprai",
-      "guling"
+      "berulang tahun",
+      "bertema",
+      "persahabatan",
+      "gaun",
+      "anting"
     ],
     "review_core": [
-      "perkirakan",
-      "mengeluh",
+      "menunjukkan",
+      "perpaduan",
+      "kepake",
       "berteriak",
-      "manfaat",
-      "mantap"
+      "melainkan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-12",
-    "vocab": [
-      [
-        "becak",
-        "人力三轮车",
-        "pedicab",
-        "becak",
-        "三轮车"
-      ],
-      [
-        "delman",
-        "（载客的）马车",
-        "horse-drawn carriage",
-        "delman",
-        "马车"
-      ],
-      [
-        "antik",
-        "古董的；古色古香的",
-        "antique",
-        "antik",
-        "古董的"
-      ],
-      [
-        "perak",
-        "银；银色",
-        "silver",
-        "perak",
-        "银"
-      ],
-      [
-        "angker",
-        "阴森的；（传说）闹鬼的",
-        "haunted; eerie",
-        "angker",
-        "阴森"
-      ],
-      [
-        "keramat",
-        "神圣的；（被认为）有灵力的",
-        "sacred; believed to have spiritual power",
-        "keramat",
-        "神圣、灵验"
-      ],
-      [
-        "menakjubkan",
-        "令人惊叹的；了不起的",
-        "amazing; astonishing",
-        "takjub",
-        "惊叹"
-      ],
-      [
-        "menegangkan",
-        "令人紧张的；惊险刺激的",
-        "tense; nerve-racking; thrilling",
-        "tegang",
-        "紧张；绷紧"
-      ],
-      [
-        "samping",
-        "旁边；侧面",
-        "side; beside",
-        "samping",
-        "旁边"
-      ],
-      [
-        "iklan",
-        "广告",
-        "advertisement",
-        "iklan",
-        "广告"
-      ]
-    ],
-    "review_vocab": [
-      "seluruh",
-      "jabatan",
-      "keahlian",
-      "lamaran",
-      "lowongan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

@@ -6409,17 +6409,17 @@ window.DAILY_VOCAB_DB = [
     "cn": "用得上；派得上用场",
     "en": "get used; come in handy",
     "root": "pakai",
-    "example": "Payung kecil ini ternyata kepake waktu hujan tiba-tiba turun.",
-    "example_cn": "这把小伞，下雨时突然派上了用场。",
+    "example": "Kabel cadangan yang kubawa ternyata kepake juga waktu charger temanku rusak.",
+    "example_cn": "我带的备用数据线果然用上了——朋友的充电器坏了。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-10-04 18:00",
+    "last_seen": "2026-11-12 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -6428,13 +6428,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-04",
       "2026-09-06",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-12"
     ],
     "root_cn": "使用；穿戴",
     "lesson_occurrences": [
       "2026-09-04 08:00",
       "2026-09-06 19:00",
-      "2026-10-04 18:00"
+      "2026-10-04 18:00",
+      "2026-11-12 18:00"
     ]
   },
   {
@@ -11359,16 +11361,16 @@ window.DAILY_VOCAB_DB = [
     "en": "show; indicate",
     "root": "tunjuk",
     "root_cn": "指；指出",
-    "example": "Panitia menunjukkan peta baru kepada Dewi seraya menjelaskan jalur masuk yang benar. Dewi sempat terkejut karena pintu masuknya berubah.",
-    "example_cn": "主办人员一边向德维出示新地图，一边解释正确的入场路线。德维起初有些惊讶，因为入口变了。",
+    "example": "Sikapnya menunjukkan bahwa dia belum siap bergabung dengan tim baru.",
+    "example_cn": "他的态度表明，他还没准备好加入新团队。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 11,
+    "times_seen": 12,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-10-21 18:00",
+    "last_seen": "2026-11-12 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -11383,7 +11385,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-30",
       "2026-10-01",
       "2026-10-05",
-      "2026-10-21"
+      "2026-10-21",
+      "2026-11-12"
     ],
     "lesson_occurrences": [
       "2026-09-17 08:00",
@@ -11396,7 +11399,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-30 08:00",
       "2026-10-01 18:00",
       "2026-10-05 08:00",
-      "2026-10-21 18:00"
+      "2026-10-21 18:00",
+      "2026-11-12 18:00"
     ]
   },
   {
@@ -13646,28 +13650,30 @@ window.DAILY_VOCAB_DB = [
     "en": "shout; scream",
     "root": "teriak",
     "root_cn": "喊叫",
-    "example": "Waktu melihat ada orang mau mengambil motornya, Pak Joko langsung berteriak, \"Maling!\"",
-    "example_cn": "看到有人要偷走他的摩托车，Pak Joko 立刻大喊：“有贼！”",
+    "example": "Anak-anak berteriak-teriak waktu main perang-perangan di halaman.",
+    "example_cn": "孩子们在院子里玩打仗游戏，一直大喊大叫。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-11-11 18:00",
+    "last_seen": "2026-11-12 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-24",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "lesson_occurrences": [
       "2026-09-24 08:00",
       "2026-11-11 08:00",
-      "2026-11-11 18:00"
+      "2026-11-11 18:00",
+      "2026-11-12 18:00"
     ]
   },
   {
@@ -13848,23 +13854,25 @@ window.DAILY_VOCAB_DB = [
     "en": "but rather",
     "root": "lain",
     "root_cn": "其他；不同",
-    "example": "Masalahnya bukan ukuran, melainkan informasi yang belum jelas.",
-    "example_cn": "问题不是尺寸，而是信息还不清楚。",
+    "example": "Menurut saya, anak yang sering terlambat tidak butuh hukuman, melainkan bantuan untuk mengatur waktunya.",
+    "example_cn": "我觉得经常迟到的孩子需要的不是惩罚，而是帮他安排好时间。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-21 18:00",
-    "last_seen": "2026-09-21 18:00",
+    "last_seen": "2026-11-12 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-21"
+      "2026-09-21",
+      "2026-11-12"
     ],
     "lesson_occurrences": [
-      "2026-09-21 18:00"
+      "2026-09-21 18:00",
+      "2026-11-12 18:00"
     ]
   },
   {
@@ -23898,16 +23906,16 @@ window.DAILY_VOCAB_DB = [
     "en": "combination; blend",
     "root": "padu",
     "root_cn": "协调；融合",
-    "example": "Kopi susu di kafe itu enak karena perpaduan gula aren dan susunya pas.",
-    "example_cn": "那家咖啡店的奶咖好喝，因为椰糖和牛奶搭配得刚刚好。",
+    "example": "Pedagang di pasar itu menjual kain yang motifnya perpaduan batik dan tenun.",
+    "example_cn": "那个市场里的商贩卖一种布，图案融合了蜡染和手织布的风格。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-10-28 18:00",
+    "last_seen": "2026-11-12 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -23915,12 +23923,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-10-21",
       "2026-10-24",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-11-12"
     ],
     "lesson_occurrences": [
       "2026-10-21 08:00",
       "2026-10-24 18:00",
-      "2026-10-28 18:00"
+      "2026-10-28 18:00",
+      "2026-11-12 18:00"
     ]
   },
   {
@@ -31751,23 +31761,26 @@ window.DAILY_VOCAB_DB = [
     "en": "antique",
     "root": "antik",
     "root_cn": "古董的",
-    "example": "Lemari antik di rumah nenek merupakan perpaduan gaya Jawa dan Belanda.",
-    "example_cn": "奶奶家的那个古董柜子融合了爪哇和荷兰的风格。",
+    "example": "Renovasi rumah antik itu belum tuntas, jadi pengunjung belum boleh masuk.",
+    "example_cn": "那座古宅还没修缮完，所以游客还不能进去。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-12 08:00",
-    "last_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-12"
     ],
     "lesson_occurrences": [
-      "2026-11-12 08:00"
+      "2026-11-12 08:00",
+      "2026-11-12 18:00"
     ]
   },
   {
@@ -31926,23 +31939,151 @@ window.DAILY_VOCAB_DB = [
     "en": "advertisement",
     "root": "iklan",
     "root_cn": "广告",
-    "example": "Setelah iklannya viral, toko kue itu sampai kewalahan melayani pesanan.",
-    "example_cn": "广告火了以后，那家蛋糕店忙得接不过来订单。",
+    "example": "Gara-gara lihat iklan di Instagram, aku jadi pengin coba kafe baru itu.",
+    "example_cn": "因为在 Instagram 上看到广告，我就想去试试那家新咖啡馆。（pengin = ingin）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-12 08:00",
-    "last_seen": "2026-11-12 08:00",
+    "last_seen": "2026-11-12 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-12"
     ],
     "lesson_occurrences": [
-      "2026-11-12 08:00"
+      "2026-11-12 08:00",
+      "2026-11-12 18:00"
+    ]
+  },
+  {
+    "word": "berulang tahun",
+    "cn": "过生日",
+    "en": "to have a birthday",
+    "root": "ulang tahun",
+    "root_cn": "生日（ulang 重复 + tahun 年）",
+    "example": "Adikku berulang tahun minggu depan, jadi aku mau beli kartu ucapan dan sesuatu yang praktis buat kamar kosnya.",
+    "example_cn": "我妹妹下周过生日，所以我想买张贺卡，再买点实用的东西给她的出租屋用。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 18:00",
+    "last_seen": "2026-11-12 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 18:00"
+    ]
+  },
+  {
+    "word": "bertema",
+    "cn": "以……为主题的",
+    "en": "themed; with the theme of",
+    "root": "tema",
+    "root_cn": "主题",
+    "example": "Bulan ini kantor kami mengadakan lomba foto bertema kerja sama tim, dan siapa pun boleh ikut.",
+    "example_cn": "这个月我们公司办了一个以团队合作为主题的摄影比赛，谁都可以参加。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 18:00",
+    "last_seen": "2026-11-12 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 18:00"
+    ]
+  },
+  {
+    "word": "persahabatan",
+    "cn": "友谊；友情",
+    "en": "friendship",
+    "root": "sahabat",
+    "root_cn": "挚友；好朋友",
+    "example": "Persahabatan kami tetap awet walaupun kami sering beda pendapat dan sama-sama keras kepala.",
+    "example_cn": "虽然我们常常意见不合，两个人又都很倔，可我们的友谊一直很长久。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 18:00",
+    "last_seen": "2026-11-12 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 18:00"
+    ]
+  },
+  {
+    "word": "gaun",
+    "cn": "连衣裙；（女式）礼服",
+    "en": "dress; gown",
+    "root": "gaun",
+    "root_cn": "连衣裙；礼服",
+    "example": "Gaun pengantin itu cantik, tapi kekurangannya cuma satu: harganya mahal banget.",
+    "example_cn": "那件婚纱很漂亮，可缺点只有一个：价格太贵了。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 18:00",
+    "last_seen": "2026-11-12 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 18:00"
+    ]
+  },
+  {
+    "word": "anting",
+    "cn": "耳环",
+    "en": "earring",
+    "root": "anting",
+    "root_cn": "耳环",
+    "example": "Antingku ketuker sama punya adikku, soalnya modelnya mirip banget.",
+    "example_cn": "我的耳环和我妹妹的拿混了，因为款式太像了。（ketuker = tertukar，soalnya = karena）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-12 18:00",
+    "last_seen": "2026-11-12 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-12"
+    ],
+    "lesson_occurrences": [
+      "2026-11-12 18:00"
     ]
   }
 ];
