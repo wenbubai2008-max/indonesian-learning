@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-12T09:53:20.532Z",
+  "updated_at": "2026-11-12T10:09:15.884Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -15099,8 +15099,9 @@
     "perdagangan": {
       "word": "perdagangan",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:58.223Z",
+      "updated_at": "2026-11-12T10:08:55.269Z",
       "display": "perdagangan",
+      "cn": "贸易",
       "reasons": [
         "memory_dont"
       ],
