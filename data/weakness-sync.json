@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-12T10:09:15.884Z",
+  "updated_at": "2026-11-12T10:11:27.486Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -6232,8 +6232,11 @@
     "mengumpulkan": {
       "word": "mengumpulkan",
       "status": "active",
-      "updated_at": "2026-10-23T23:29:31.951Z",
+      "updated_at": "2026-11-12T10:11:17.050Z",
       "display": "mengumpulkan",
+      "cn": "交（作业、报告）；收集；把……聚到一起",
+      "root": "kumpul",
+      "root_cn": "聚集；聚在一起",
       "last_review": "2026-10-23T23:29:31.889Z",
       "reasons": [
         "memory_fuzzy"
