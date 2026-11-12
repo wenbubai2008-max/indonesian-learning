@@ -1,0 +1,375 @@
+{
+  "date": "2026-11-12",
+  "session": "am",
+  "time": "08:00",
+  "day": 83,
+  "title": "08:00 早课｜Naik Becak Keliling Kotagede · 坐三轮车逛日惹老城哥打格德",
+  "vocab": [
+    {
+      "word": "becak",
+      "display": "becak",
+      "audio_text": "becak",
+      "cn": "人力三轮车",
+      "en": "pedicab",
+      "root": "becak",
+      "root_cn": "三轮车",
+      "formation": "名词，本身就是词根，不拆词缀。常见搭配：naik becak（坐三轮车）、tukang becak（三轮车夫）、becak motor（机动三轮车，简称 bentor）。坐之前通常先问价：Ke pasar berapa, Pak?",
+      "example": "Letak hotelnya tidak jauh dari stasiun, jadi kami naik becak saja.",
+      "example_cn": "酒店离车站不远，所以我们坐三轮车就行了。",
+      "synonym_note": "和 ojek 区别：ojek 是摩托车载客，坐在司机后座；becak 是人力蹬的三轮车，在日惹多为乘客坐在前面、车夫在后面蹬。becak 慢，适合短距离和窄巷子。",
+      "is_oral_new": false
+    },
+    {
+      "word": "delman",
+      "display": "delman",
+      "audio_text": "delman",
+      "cn": "（载客的）马车",
+      "en": "horse-drawn carriage",
+      "root": "delman",
+      "root_cn": "马车",
+      "formation": "名词，不拆词缀。一般认为来自发明者、荷兰工程师 Deeleman 的名字。常见搭配：naik delman（坐马车）、kusir delman（马车夫）、delman wisata（观光马车）。",
+      "example": "Naik delman keliling alun-alun termasuk pengalaman khas Yogyakarta.",
+      "example_cn": "坐马车绕广场一圈，算是日惹特有的体验。",
+      "synonym_note": "在日惹，四轮的观光马车当地人多叫 andong，两轮的才严格叫 delman；不过外地人和游客常把载客马车统称 delman，大家都听得懂。",
+      "is_oral_new": false
+    },
+    {
+      "word": "antik",
+      "display": "antik",
+      "audio_text": "antik",
+      "cn": "古董的；古色古香的",
+      "en": "antique",
+      "root": "antik",
+      "root_cn": "古董的",
+      "formation": "形容词，常放在名词后面修饰，来自荷兰语 antiek。常见搭配：barang antik（古董）、toko barang antik（古董店）、rumah antik（老式的古宅）、lemari antik（古董柜子）。",
+      "example": "Lemari antik di rumah nenek merupakan perpaduan gaya Jawa dan Belanda.",
+      "example_cn": "奶奶家的那个古董柜子融合了爪哇和荷兰的风格。",
+      "synonym_note": "和 kuno 区别：kuno 指年代久远（bangunan kuno 古建筑），也常用来批评人观念过时（pikirannya kuno）；antik 一般是褒义，带“有年代感、有收藏价值”的味道。口语说法：老派、旧时代的东西常说 jadul（= zaman dulu），比如 HP jadul，但 jadul 不一定值钱。",
+      "is_oral_new": false
+    },
+    {
+      "word": "perak",
+      "display": "perak",
+      "audio_text": "perak",
+      "cn": "银；银色",
+      "en": "silver",
+      "root": "perak",
+      "root_cn": "银",
+      "formation": "名词，也可作颜色。常见搭配：cincin perak（银戒指）、kerajinan perak（银饰工艺）、perajin perak（银匠）、warna perak（银色）。",
+      "example": "Pendapatan para perajin perak di kampung ini biasanya naik saat musim liburan.",
+      "example_cn": "这个村子银匠们的收入通常在假期旺季会增加。",
+      "synonym_note": "补充一个常见用法：口语里 perak 还可以放在钱数后面表示“……块钱（盾）”，例如 seribu perak（一千盾），常带“只有这么点钱”的语气：Parkirnya cuma dua ribu perak.（停车才两千盾。）",
+      "is_oral_new": false
+    },
+    {
+      "word": "angker",
+      "display": "angker",
+      "audio_text": "angker",
+      "cn": "阴森的；（传说）闹鬼的",
+      "en": "haunted; eerie",
+      "root": "angker",
+      "root_cn": "阴森",
+      "formation": "形容词，不拆词缀。常见搭配：rumah angker（凶宅、闹鬼的房子）、tempat angker（阴森的地方）、terkenal angker（出了名的闹鬼）、katanya angker（听说闹鬼）。",
+      "example": "Banyak orang bilang jembatan tua itu angker, jadi mereka tidak berani lewat malam-malam.",
+      "example_cn": "很多人说那座旧桥闹鬼，所以他们不敢晚上从那儿过。",
+      "synonym_note": "和 keramat 区别：angker 侧重“阴森吓人、可能有鬼”，让人害怕、想躲开；keramat 侧重“神圣、有灵力”，让人敬畏、要守规矩。同一座古墓，有人觉得 keramat（尊敬），也有人觉得 angker（害怕）。口语里常和 serem（吓人）一起说：Rumahnya serem, katanya angker.",
+      "is_oral_new": false
+    },
+    {
+      "word": "keramat",
+      "display": "keramat",
+      "audio_text": "keramat",
+      "cn": "神圣的；（被认为）有灵力的",
+      "en": "sacred; believed to have spiritual power",
+      "root": "keramat",
+      "root_cn": "神圣、灵验",
+      "formation": "形容词，来自阿拉伯语 karāmah（神迹、圣恩），不拆印尼语词缀。常见搭配：makam keramat（圣墓）、tempat keramat（圣地）、dianggap keramat（被视为神圣）、pusaka keramat（有灵力的传家宝）。",
+      "example": "Pihak pengelola membatasi jumlah pengunjung makam keramat itu pada hari Jumat.",
+      "example_cn": "管理方在星期五限制那座圣墓的参观人数。",
+      "synonym_note": "keramat 常用来说当地人尊敬、有禁忌的地方或物品，进入时要守规矩（穿着、说话小声）。和 angker 的区别见 angker 词卡：keramat 是敬畏，angker 是害怕。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menakjubkan",
+      "display": "menakjubkan",
+      "audio_text": "menakjubkan",
+      "cn": "令人惊叹的；了不起的",
+      "en": "amazing; astonishing",
+      "root": "takjub",
+      "root_cn": "惊叹",
+      "formation": "meN- + takjub + -kan（t 脱落，变成 menakjubkan），意思是“让人惊叹的”。同词根：takjub（感到惊叹：Saya takjub melihatnya）、ketakjuban（惊叹之情）。常见搭配：pemandangan yang menakjubkan（令人惊叹的风景）、hasilnya menakjubkan。",
+      "example": "Untuk mencapai puncak candi, kami harus naik banyak tangga, tapi pemandangannya menakjubkan.",
+      "example_cn": "为了到达寺庙顶端，我们得爬很多台阶，不过风景令人惊叹。",
+      "synonym_note": "takjub 说人的感受（Kami takjub），menakjubkan 说让人惊叹的东西（Pemandangannya menakjubkan）。luar biasa 更日常、用途更广；menakjubkan 多用于描写风景、作品、表演。口语说法：聊天时夸东西常说 keren banget / bagus banget。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menegangkan",
+      "display": "menegangkan",
+      "audio_text": "menegangkan",
+      "cn": "令人紧张的；惊险刺激的",
+      "en": "tense; nerve-racking; thrilling",
+      "root": "tegang",
+      "root_cn": "紧张；绷紧",
+      "formation": "meN- + tegang + -kan（t 脱落，变成 menegangkan），意思是“让人紧张的”。同词根：tegang（紧张）、ketegangan（紧张局势、紧张感）。常见搭配：pertandingan yang menegangkan（扣人心弦的比赛）、film yang menegangkan、suasananya menegangkan。",
+      "example": "Film horor itu menegangkan dari awal sampai akhir.",
+      "example_cn": "那部恐怖片从头到尾都让人紧张。",
+      "synonym_note": "tegang 说人自己的状态（Saya tegang sebelum wawancara），menegangkan 说让人紧张的事（Wawancaranya menegangkan）；不说 perjalanannya tegang。口语说法：常说 bikin deg-degan（让人心怦怦跳），例如 Naik becaknya bikin deg-degan!",
+      "is_oral_new": false
+    },
+    {
+      "word": "samping",
+      "display": "samping",
+      "audio_text": "samping",
+      "cn": "旁边；侧面",
+      "en": "side; beside",
+      "root": "samping",
+      "root_cn": "旁边",
+      "formation": "名词，表示方位，常和介词连用：di samping（在……旁边）、ke samping（往旁边）、samping kiri / samping kanan（左边/右边）。固定说法：di samping itu（除此之外）。",
+      "example": "Ada warung gudeg yang enak di samping penginapan kami.",
+      "example_cn": "我们住的旅馆旁边有一家好吃的菠萝蜜饭小店。",
+      "synonym_note": "和 sebelah 区别：说位置时 di samping rumah / di sebelah rumah 大多可以互换；“隔壁邻居”习惯说 tetangga sebelah；表示“此外”的 di samping itu 不能换成 sebelah。",
+      "is_oral_new": false
+    },
+    {
+      "word": "iklan",
+      "display": "iklan",
+      "audio_text": "iklan",
+      "cn": "广告",
+      "en": "advertisement",
+      "root": "iklan",
+      "root_cn": "广告",
+      "formation": "名词，可派生：beriklan（打广告）、mengiklankan（给……做广告）、periklanan（广告业）。常见搭配：iklan lowongan kerja（招聘广告）、pasang iklan（登广告）、iklan di TV / di Instagram。",
+      "example": "Setelah iklannya viral, toko kue itu sampai kewalahan melayani pesanan.",
+      "example_cn": "广告火了以后，那家蛋糕店忙得接不过来订单。",
+      "synonym_note": "和 promosi 区别：iklan 是具体的一则广告；promosi 是促销、宣传活动，范围更宽（lagi ada promosi 正在搞活动）。口语里“登广告”最常说 pasang iklan。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "seluruh",
+    "jabatan",
+    "keahlian",
+    "lamaran",
+    "lowongan"
+  ],
+  "sentences": [
+    {
+      "text": "Saya lihat iklan lowongan kerja di sebuah toko perak: mereka mencari perajin yang punya keahlian membuat perhiasan.",
+      "cn": "我看到一家银器店的招聘广告：他们在找有制作首饰手艺的工匠。"
+    },
+    {
+      "text": "Kakak saya mengirim lamaran ke hotel itu untuk jabatan manajer, tapi belum ada kabar dari pihak hotel.",
+      "cn": "我姐姐给那家酒店投了经理职位的求职申请，但酒店方面还没有消息。"
+    },
+    {
+      "text": "Udah, nggak usah lewat gang itu malam-malam. Katanya angker, serem banget!",
+      "cn": "算了，晚上别走那条巷子。听说那儿闹鬼，特别吓人！（udah = sudah，nggak = tidak，serem = seram，banget = sekali）"
+    },
+    {
+      "text": "Seluruh kampung itu terkenal dengan kerajinan perak, dan banyak perajin menguasai tekniknya dari orang tua mereka.",
+      "cn": "整个村子都以银饰工艺出名，很多工匠的手艺是跟父母学会的。"
+    },
+    {
+      "text": "Naik becak di jalan yang ramai memang agak menegangkan, tapi tukang becaknya sangat berhati-hati.",
+      "cn": "在热闹的路上坐三轮车确实有点让人紧张，不过三轮车夫非常小心。"
+    }
+  ],
+  "reading": {
+    "text": "Minggu lalu, Mei dan Dina berlibur ke Yogyakarta. Mereka melihat iklan tur Kotagede di Instagram, lalu langsung mendaftar. Dari hotel, mereka naik delman sampai ke pasar. Setelah itu mereka pindah ke becak, karena gang di Kotagede sempit. Perjalanannya agak menegangkan karena tukang becak melaju cepat di jalan menurun, dan banyak motor lewat di samping mereka. Di toko perak, mereka melihat perajin membuat cincin dengan keahlian tinggi. Tidak jauh dari toko itu ada rumah tua yang kosong. Kata pemandu, warga menganggap rumah itu angker. Mereka juga mengunjungi makam raja-raja Mataram yang dianggap keramat. Untuk masuk, pengunjung harus memakai pakaian adat Jawa. Ukiran kayu di rumah-rumah antik sepanjang gang itu sungguh menakjubkan.",
+    "cn": "上周，梅和蒂娜去日惹度假。她们在 Instagram 上看到哥打格德一日游的广告，马上就报了名。她们从酒店坐马车到市场。之后换坐三轮车，因为哥打格德的巷子很窄。这段路有点让人紧张，因为三轮车夫在下坡路上骑得很快，还有很多摩托车从她们旁边开过。在银器店里，她们看到工匠用高超的手艺做戒指。离那家店不远有一座空着的老房子。导游说，当地人认为那座房子闹鬼。她们还参观了被视为神圣的马打兰王陵。要进去，参观者必须穿爪哇传统服装。巷子两边古宅上的木雕真是令人惊叹。"
+  },
+  "quiz": [
+    {
+      "question": "Di depan toko perak ada kertas: \"Dicari: dua perajin. Kirim CV lewat WA ke nomor di bawah.\" Kertas itu adalah iklan ____ kerja.",
+      "options": [
+        "jabatan",
+        "keahlian",
+        "lowongan",
+        "lamaran"
+      ],
+      "answer_index": 2,
+      "answer": "lowongan",
+      "explain": "店家在招人，贴出来的是 iklan lowongan kerja（招聘广告），lowongan 是“空缺职位”。lamaran kerja 是求职者递交的申请，方向正好相反；jabatan 是职位、头衔（jabatan manajer）；keahlian 是技能、手艺，都不和 iklan … kerja 搭配。"
+    },
+    {
+      "question": "Mei naik becak di gang sempit. Tukang becaknya melaju cepat di jalan menurun, dan motor lewat dekat sekali. Mei memegang tasnya erat-erat. Bagi Mei, perjalanan itu ____.",
+      "options": [
+        "menegangkan",
+        "tegang",
+        "menakjubkan",
+        "angker"
+      ],
+      "answer_index": 0,
+      "answer": "menegangkan",
+      "explain": "让人紧张的事用 menegangkan：perjalanan itu menegangkan。tegang 说人自己的状态，应该说 Mei tegang，不说 perjalanannya tegang；menakjubkan 是“令人惊叹”，和抓紧包的害怕不符；angker 用来说闹鬼的地方，不说一段路程。"
+    },
+    {
+      "question": "Warga selalu datang dengan pakaian sopan, berbicara pelan, dan berdoa di makam raja itu. Mereka menganggap makam itu ____.",
+      "options": [
+        "angker",
+        "keramat",
+        "antik",
+        "sempit"
+      ],
+      "answer_index": 1,
+      "answer": "keramat",
+      "explain": "穿着端正、小声说话、去祈祷，表达的是敬畏，所以是 keramat（神圣、有灵力）。angker 是“阴森、闹鬼”，人们会害怕躲开，而不是去祈祷；antik 说古董或古色古香的东西；sempit 是“窄”，和这些行为无关。"
+    }
+  ],
+  "output": {
+    "task": "你上周末去了一个老城区玩。给同事发一条 WhatsApp（3–5 句）：说你怎么逛的、最让你印象深刻的一段经历（令人惊叹或让人紧张），再给他一个实用建议。至少用 becak / delman、menakjubkan / menegangkan、keramat / angker 中的两个。",
+    "reference_answer": "Kemarin saya jalan-jalan ke Kotagede. Mengingat gangnya sempit, saya naik becak dari pasar. Rasanya agak menegangkan, karena banyak motor lewat di samping becak. Tapi ukiran kayu di rumah-rumah antiknya menakjubkan. Kalau mau masuk ke makam keramat di sana, pakai pakaian adat Jawa, ya. Pakaiannya bisa disewa di sana, jadi tidak repot.",
+    "reference_cn": "昨天我去哥打格德逛了逛。考虑到巷子很窄，我从市场坐三轮车走。感觉有点紧张，因为很多摩托车从三轮车旁边开过。不过古宅上的木雕令人惊叹。如果你想进那里的圣墓，要穿爪哇传统服装哦。衣服在那边可以租，所以不麻烦。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出人力三轮车、马车、古董的、银、闹鬼的、神圣的、令人惊叹的、令人紧张的、旁边、广告；再说出招聘空缺、求职申请、职位、技能、整个。卡住的词回看词卡再说一遍。",
+    "易混词和搭配：angker（阴森闹鬼，让人怕）≠ keramat（神圣灵验，让人敬）；tegang 说人（Saya tegang），menegangkan 说事（Perjalanannya menegangkan），takjub / menakjubkan 同理；di samping rumah ≈ di sebelah rumah，但 di samping itu 是“此外”；barang antik 是褒义的古董，kuno 也可以批评人老派。各说一句，例如 Kata pemandu, rumah itu angker, tapi makam raja dianggap keramat。",
+    "复习词应用：用一句话把招聘流程串起来——perusahaan pasang iklan lowongan → saya kirim lamaran untuk jabatan … → mereka cek keahlian saya；再用 seluruh 说一句“整个……都……”，例如 Seluruh kampung itu terkenal dengan kerajinan perak。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "menegangkan",
+      "menakjubkan",
+      "angker"
+    ],
+    "patterns": [
+      {
+        "pattern": "… agak menegangkan karena …",
+        "cn": "……有点让人紧张，因为……",
+        "example": "Perjalanannya agak menegangkan karena tukang becak melaju cepat di jalan menurun, dan banyak motor lewat di samping mereka.",
+        "example_cn": "这段路有点让人紧张，因为三轮车夫在下坡路上骑得很快，还有很多摩托车从她们旁边开过。"
+      },
+      {
+        "pattern": "Kata …, warga menganggap … angker.",
+        "cn": "据……说，当地人认为……闹鬼。",
+        "example": "Kata pemandu, warga menganggap rumah itu angker.",
+        "example_cn": "导游说，当地人认为那座房子闹鬼。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "人力三轮车",
+        "id": "becak"
+      },
+      {
+        "cn": "（载客的）马车",
+        "id": "delman"
+      },
+      {
+        "cn": "古董的；古色古香的",
+        "id": "antik"
+      },
+      {
+        "cn": "银；银色",
+        "id": "perak"
+      },
+      {
+        "cn": "阴森的；闹鬼的",
+        "id": "angker"
+      },
+      {
+        "cn": "神圣的；有灵力的",
+        "id": "keramat"
+      },
+      {
+        "cn": "令人惊叹的",
+        "id": "menakjubkan"
+      },
+      {
+        "cn": "令人紧张的",
+        "id": "menegangkan"
+      },
+      {
+        "cn": "旁边",
+        "id": "samping"
+      },
+      {
+        "cn": "广告",
+        "id": "iklan"
+      },
+      {
+        "cn": "职位空缺",
+        "id": "lowongan"
+      },
+      {
+        "cn": "求职申请",
+        "id": "lamaran"
+      }
+    ],
+    "frames": [
+      "… agak menegangkan karena …",
+      "Kata pemandu, warga menganggap … angker.",
+      "Ada … di samping …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "angker",
+            "cn": "阴森、闹鬼（让人怕）"
+          },
+          {
+            "id": "keramat",
+            "cn": "神圣、灵验（让人敬）"
+          }
+        ],
+        "note": "angker 让人想躲开；keramat 让人守规矩、表示尊敬。"
+      },
+      {
+        "items": [
+          {
+            "id": "tegang",
+            "cn": "（人）紧张"
+          },
+          {
+            "id": "menegangkan",
+            "cn": "（事）让人紧张"
+          }
+        ],
+        "note": "Saya tegang；Perjalanannya menegangkan。takjub / menakjubkan 同理。"
+      },
+      {
+        "items": [
+          {
+            "id": "lowongan",
+            "cn": "公司的空缺职位"
+          },
+          {
+            "id": "lamaran",
+            "cn": "求职者的申请"
+          },
+          {
+            "id": "jabatan",
+            "cn": "职位、头衔"
+          }
+        ],
+        "note": "公司发 iklan lowongan，求职者寄 lamaran，录用后得到一个 jabatan。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "lowongan",
+        "usage": "招聘广告固定说 iklan lowongan kerja。",
+        "examples": [
+          {
+            "id": "Saya lihat iklan lowongan kerja di sebuah toko perak: mereka mencari perajin yang punya keahlian membuat perhiasan.",
+            "cn": "我看到一家银器店的招聘广告：他们在找有制作首饰手艺的工匠。"
+          }
+        ]
+      },
+      {
+        "word": "seluruh",
+        "usage": "seluruh + 名词 = 整个……、全部……",
+        "examples": [
+          {
+            "id": "Seluruh kampung itu terkenal dengan kerajinan perak, dan banyak perajin menguasai tekniknya dari orang tua mereka.",
+            "cn": "整个村子都以银饰工艺出名，很多工匠的手艺是跟父母学会的。"
+          }
+        ]
+      }
+    ]
+  }
+}
