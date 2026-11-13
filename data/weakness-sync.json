@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-13T08:01:07.370Z",
+  "updated_at": "2026-11-13T13:35:57.913Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -8450,9 +8450,10 @@
     "peran": {
       "word": "peran",
       "status": "active",
-      "updated_at": "2026-10-14T07:00:48.969Z",
+      "updated_at": "2026-11-13T13:35:46.763Z",
       "display": "peran",
       "cn": "角色；作用",
+      "last_review": "2026-11-13T13:35:46.710Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -8460,7 +8461,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menceritakan": {
       "word": "menceritakan",
@@ -17371,9 +17372,10 @@
     "aspek": {
       "word": "aspek",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:01.809Z",
+      "updated_at": "2026-11-13T13:35:32.602Z",
       "display": "aspek",
       "cn": "方面",
+      "last_review": "2026-11-13T13:35:32.535Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -17381,7 +17383,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "teori": {
       "word": "teori",
@@ -25445,17 +25447,18 @@
     "pengajar": {
       "word": "pengajar",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:20.100Z",
+      "updated_at": "2026-11-13T13:35:43.279Z",
       "display": "pengajar",
       "cn": "教师/讲师",
       "root": "ajar",
+      "last_review": "2026-11-13T13:35:43.225Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "berasal dari": {
       "word": "berasal dari",
@@ -30275,32 +30278,34 @@
     "diakui": {
       "word": "diakui",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:24.349Z",
+      "updated_at": "2026-11-13T13:35:34.011Z",
       "display": "diakui",
       "cn": "被承认；被认可",
       "root": "aku",
+      "last_review": "2026-11-13T13:35:33.955Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "dididik": {
       "word": "dididik",
       "status": "active",
-      "updated_at": "2026-09-17T07:26:24.404Z",
+      "updated_at": "2026-11-13T13:35:37.295Z",
       "display": "dididik",
       "cn": "被教育；受培养",
       "root": "didik",
+      "last_review": "2026-11-13T13:35:37.237Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "syarat": {
       "word": "syarat",
