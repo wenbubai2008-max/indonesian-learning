@@ -583,17 +583,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "palang kereta api",
-    "cn": "铁路道口栏杆",
-    "en": "railway crossing barrier",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "sering",
     "cn": "经常",
     "en": "often",
@@ -770,17 +759,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "jingga",
-    "cn": "橙色",
-    "en": "orange",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "oranye",
     "cn": "橙色",
     "en": "orange",
@@ -789,28 +767,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "",
     "bipa_level": "A1",
     "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "persegi panjang",
-    "cn": "长方形",
-    "en": "rectangle",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "persegi",
-    "cn": "正方形",
-    "en": "square",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
     "selection": "fuzzy"
   },
   {
@@ -828,17 +784,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "word": "lonjong",
     "cn": "椭圆/长圆",
     "en": "oval",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "wajik",
-    "cn": "菱形",
-    "en": "diamond shape",
     "root": "",
     "root_cn": "",
     "formation": "",
@@ -1353,17 +1298,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "gerakan statis",
-    "cn": "静态动作",
-    "en": "static movement",
-    "root": "gerak",
-    "root_cn": "",
-    "formation": "固定短语",
-    "bipa_level": "A2",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "tahan",
     "cn": "保持/憋住",
     "en": "hold",
@@ -1683,17 +1617,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "kelangsungan",
-    "cn": "持续；延续",
-    "en": "continuity",
-    "root": "langsung",
-    "root_cn": "",
-    "formation": "ke- + langsung + -an",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "bencana alam",
     "cn": "自然灾害",
     "en": "natural disaster",
@@ -1703,17 +1626,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B1",
     "sab": "A",
     "selection": "dont"
-  },
-  {
-    "word": "kesuburan",
-    "cn": "肥沃；生育力",
-    "en": "fertility; richness",
-    "root": "subur",
-    "root_cn": "",
-    "formation": "ke- + subur + -an",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
   },
   {
     "word": "bertujuan",
@@ -1738,17 +1650,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "erosi",
-    "cn": "侵蚀；水土流失",
-    "en": "erosion",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "longsor",
     "cn": "山体滑坡；塌方",
     "en": "landslide",
@@ -1758,17 +1659,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B1",
     "sab": "A",
     "selection": "dont"
-  },
-  {
-    "word": "penyerapan",
-    "cn": "吸收",
-    "en": "absorption",
-    "root": "serap",
-    "root_cn": "",
-    "formation": "peN- + serap + -an",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
   },
   {
     "word": "dimaksudkan",
@@ -1802,17 +1692,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B1",
     "sab": "B",
     "selection": "dont"
-  },
-  {
-    "word": "humus",
-    "cn": "腐殖质",
-    "en": "humus",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
   },
   {
     "word": "gejala",
@@ -1969,17 +1848,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "pesan cerita",
-    "cn": "故事寓意；故事传达的信息",
-    "en": "message of a story",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "alur",
     "cn": "情节；流程",
     "en": "plot; flow",
@@ -1989,17 +1857,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B1",
     "sab": "A",
     "selection": "dont"
-  },
-  {
-    "word": "alunan",
-    "cn": "旋律；流动的声调",
-    "en": "melody; strains",
-    "root": "alun",
-    "root_cn": "",
-    "formation": "alun + -an",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
   },
   {
     "word": "mengabaikan",
@@ -2021,17 +1878,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "ber- + goyang-goyang",
     "bipa_level": "B1",
     "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "tunggang langgang",
-    "cn": "狼狈逃窜；四散奔逃",
-    "en": "run helter-skelter",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定表达",
-    "bipa_level": "B1",
-    "sab": "B",
     "selection": "fuzzy"
   },
   {
@@ -2189,17 +2035,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "mengintai",
-    "cn": "窥伺；潜伏盯着",
-    "en": "stalk; lurk",
-    "root": "intai",
-    "root_cn": "",
-    "formation": "meN- + intai",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "saking",
     "cn": "太……以至于；由于太……",
     "en": "so ... that; because of being so",
@@ -2208,17 +2043,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "",
     "bipa_level": "B1",
     "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "menyergap",
-    "cn": "突袭；扑住",
-    "en": "ambush; pounce on",
-    "root": "sergap",
-    "root_cn": "",
-    "formation": "meN- + sergap",
-    "bipa_level": "B1",
-    "sab": "B",
     "selection": "fuzzy"
   },
   {
@@ -2264,28 +2088,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B1",
     "sab": "A",
     "selection": "dont"
-  },
-  {
-    "word": "meronta",
-    "cn": "挣扎",
-    "en": "struggle; writhe",
-    "root": "ronta",
-    "root_cn": "",
-    "formation": "meN- + ronta",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "meloloskan diri",
-    "cn": "逃脱",
-    "en": "escape",
-    "root": "lolos",
-    "root_cn": "",
-    "formation": "meN- + lolos + -kan + diri",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "berbaris",
@@ -2453,17 +2255,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "usaha mikro",
-    "cn": "微型企业",
-    "en": "microenterprise",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "perpaduan",
     "cn": "融合；结合",
     "en": "blend; combination",
@@ -2516,17 +2307,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "peN- + tonton",
     "bipa_level": "B1",
     "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "penggebuk",
-    "cn": "敲击者；鼓手",
-    "en": "beater; drummer",
-    "root": "gebuk",
-    "root_cn": "",
-    "formation": "peN- + gebuk",
-    "bipa_level": "B1",
-    "sab": "B",
     "selection": "fuzzy"
   },
   {

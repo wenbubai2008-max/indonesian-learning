@@ -4,15 +4,15 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1046,
-   "recognize": 115,
-   "unsure": 24,
+   "use": 1049,
+   "recognize": 121,
+   "unsure": 25,
    "fast": 137
   },
   "active": {
-   "use": 712,
-   "recognize": 99,
-   "unsure": 22,
+   "use": 715,
+   "recognize": 105,
+   "unsure": 23,
    "fast": 57
   }
  },
@@ -10900,6 +10900,97 @@
    "status": "active",
    "why": [
     "第二词库 A1 / A"
+   ]
+  },
+  "mendaki": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "bot": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "kaos kaki": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "tenggara": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "penjelajahan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "alangkah": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（B1 / B）"
+   ]
+  },
+  "santap": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（B1 / B）"
+   ]
+  },
+  "dahaga": {
+   "goal": "unsure",
+   "fast": false,
+   "by": "rule+history",
+   "status": "active",
+   "why": [
+    "答错较多，不建议只要求认识",
+    "第二词库低重要度（B1 / B）"
+   ]
+  },
+  "pengaturan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "fungsi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
    ]
   }
  }

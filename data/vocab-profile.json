@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-13T00:33:22.229Z",
-  "source_updated_at": "2026-11-12T11:41:46.343Z",
+  "generated_at": "2026-11-13T02:52:52.176Z",
+  "source_updated_at": "2026-11-13T02:52:27.676Z",
   "taught_total": 1195,
   "confirmed_mastered": 254,
   "needs_reinforcement": 843,
@@ -13,10 +13,23 @@
   "primary_unlearned_total": 330,
   "primary_coverage_percent": 66.2,
   "primary_eligible_new_total": 0,
-  "secondary_eligible_new_total": 61,
+  "secondary_eligible_new_total": 41,
   "active_master_pool": "secondary_bipa",
   "focus_total": 840,
   "focus_words": [
+    {
+      "word": "menunjukkan",
+      "score": 126,
+      "signals": [
+        "automation_fail",
+        "lesson_wrong",
+        "dont"
+      ],
+      "wrong_count": 6,
+      "last_wrong": "2026-11-13T02:22:53.157Z",
+      "last_review": "2026-11-13T02:22:53.157Z",
+      "cn": "指出"
+    },
     {
       "word": "dimaksudkan",
       "score": 126,
@@ -30,19 +43,6 @@
       "last_wrong": "2026-11-09T06:53:31.350Z",
       "last_review": "2026-11-12T08:40:54.689Z",
       "cn": "意在；旨在；（被）打算用来……"
-    },
-    {
-      "word": "menunjukkan",
-      "score": 124,
-      "signals": [
-        "automation_fail",
-        "lesson_wrong",
-        "dont"
-      ],
-      "wrong_count": 5,
-      "last_wrong": "2026-11-12T11:36:24.614Z",
-      "last_review": "2026-11-12T11:36:24.614Z",
-      "cn": "指出"
     },
     {
       "word": "nggak kepegang",
