@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-13T02:59:07.890Z",
+  "updated_at": "2026-11-13T02:59:37.171Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1877,24 +1877,21 @@
     },
     "selera": {
       "word": "selera",
-      "status": "active",
-      "updated_at": "2026-11-06T13:22:51.322Z",
+      "status": "mastered",
+      "updated_at": "2026-11-13T02:59:17.165Z",
       "display": "selera",
       "cn": "胃口；口味；喜好",
       "root": "selera",
       "root_cn": "胃口；喜好",
       "last_wrong": "2026-11-03T13:33:47.250Z",
-      "last_review": "2026-11-06T13:22:51.261Z",
+      "last_review": "2026-11-13T02:59:16.894Z",
+      "last_mastered": "2026-11-13T02:59:16.894Z",
       "source": "课程小测",
       "source_date": "2026-11-03",
       "session": "18:00",
-      "reasons": [
-        "memory_dont",
-        "quick_wrong",
-        "lesson_wrong"
-      ],
+      "reasons": [],
       "wrong_count": 3,
-      "right_streak": 2
+      "right_streak": 3
     },
     "usaha": {
       "word": "usaha",
@@ -15841,20 +15838,18 @@
     },
     "kencang": {
       "word": "kencang",
-      "status": "active",
-      "updated_at": "2026-11-07T03:41:31.217Z",
+      "status": "mastered",
+      "updated_at": "2026-11-13T02:59:21.382Z",
       "display": "kencang",
       "cn": "紧的",
-      "last_review": "2026-11-07T03:41:31.157Z",
+      "last_review": "2026-11-13T02:59:21.139Z",
+      "last_mastered": "2026-11-13T02:59:21.139Z",
       "source": "每日学习阅读",
       "source_date": "2026-10-28",
       "session": "08:00",
-      "reasons": [
-        "memory_fuzzy",
-        "manual_unknown"
-      ],
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "sejuk": {
       "word": "sejuk",
@@ -30916,22 +30911,20 @@
     },
     "kemasan": {
       "word": "kemasan",
-      "status": "active",
-      "updated_at": "2026-11-10T09:03:46.789Z",
+      "status": "mastered",
+      "updated_at": "2026-11-13T02:59:28.153Z",
       "display": "kemasan",
       "cn": "包装",
       "root": "kemas",
       "root_cn": "打包；整理",
-      "last_review": "2026-11-07T03:41:36.882Z",
+      "last_review": "2026-11-13T02:59:27.877Z",
+      "last_mastered": "2026-11-13T02:59:27.877Z",
       "source": "每日学习阅读",
       "source_date": "2026-10-03",
       "session": "19:00",
-      "reasons": [
-        "manual_unknown",
-        "memory_fuzzy"
-      ],
+      "reasons": [],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "kepending": {
       "word": "kepending",
