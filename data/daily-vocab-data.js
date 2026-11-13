@@ -11368,9 +11368,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 12,
+    "times_seen": 13,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-11-12 18:00",
+    "last_seen": "2026-11-13 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -11386,7 +11386,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-01",
       "2026-10-05",
       "2026-10-21",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "lesson_occurrences": [
       "2026-09-17 08:00",
@@ -11400,7 +11401,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-01 18:00",
       "2026-10-05 08:00",
       "2026-10-21 18:00",
-      "2026-11-12 18:00"
+      "2026-11-12 18:00",
+      "2026-11-13 08:00"
     ]
   },
   {
@@ -15149,19 +15151,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 18:00",
+    "last_seen": "2026-11-13 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-11-13"
     ],
     "lesson_occurrences": [
       "2026-09-27 08:00",
-      "2026-09-27 18:00"
+      "2026-09-27 18:00",
+      "2026-11-13 08:00"
     ]
   },
   {
@@ -17569,17 +17573,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-03 08:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-11-13 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-13"
     ],
     "lesson_occurrences": [
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-11-13 08:00"
     ]
   },
   {
@@ -18178,19 +18184,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-04 18:00",
-    "last_seen": "2026-10-04 18:00",
+    "last_seen": "2026-11-13 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-13"
     ],
     "lesson_occurrences": [
-      "2026-10-04 18:00"
+      "2026-10-04 18:00",
+      "2026-11-13 08:00"
     ]
   },
   {
@@ -23913,9 +23923,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-11-12 18:00",
+    "last_seen": "2026-11-13 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -23924,13 +23934,15 @@ window.DAILY_VOCAB_DB = [
       "2026-10-21",
       "2026-10-24",
       "2026-10-28",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "lesson_occurrences": [
       "2026-10-21 08:00",
       "2026-10-24 18:00",
       "2026-10-28 18:00",
-      "2026-11-12 18:00"
+      "2026-11-12 18:00",
+      "2026-11-13 08:00"
     ]
   },
   {
@@ -32084,6 +32096,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-12 18:00"
+    ]
+  },
+  {
+    "word": "mendaki",
+    "cn": "登山；爬（山、坡）",
+    "en": "to climb (a mountain or slope)",
+    "root": "daki",
+    "root_cn": "攀登",
+    "example": "Kami benar-benar berjuang waktu mendaki tanjakan terakhir menuju puncak.",
+    "example_cn": "爬最后一段通往山顶的陡坡时，我们真的是拼了命。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 08:00"
+    ]
+  },
+  {
+    "word": "bot",
+    "cn": "靴子（多说 sepatu bot）",
+    "en": "boots",
+    "root": "bot",
+    "root_cn": "靴子",
+    "example": "Untung aku pakai sepatu bot, jadi waktu kakiku kebentur batu, nggak terlalu sakit.",
+    "example_cn": "幸好我穿了靴子，所以脚撞到石头的时候，没那么疼。（kebentur = terbentur，nggak = tidak）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 08:00"
+    ]
+  },
+  {
+    "word": "kaos kaki",
+    "cn": "袜子",
+    "en": "socks",
+    "root": "kaki",
+    "root_cn": "脚",
+    "example": "Keluhan paling sering setelah mendaki adalah kaki lecet karena kaos kaki terlalu tipis.",
+    "example_cn": "爬山后最常见的抱怨是因为袜子太薄，脚磨破了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 08:00"
+    ]
+  },
+  {
+    "word": "tenggara",
+    "cn": "东南（方）",
+    "en": "southeast",
+    "root": "tenggara",
+    "root_cn": "东南",
+    "example": "Pembangunan jalan tol di sebelah tenggara kota ini baru selesai bulan lalu.",
+    "example_cn": "这座城市东南边的高速公路上个月才建好。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 08:00"
+    ]
+  },
+  {
+    "word": "penjelajahan",
+    "cn": "探险；探索（的活动）",
+    "en": "exploration",
+    "root": "jelajah",
+    "root_cn": "探索；游历",
+    "example": "Penjelajahan bangsa Portugis ke Maluku dimulai pada abad ke-16.",
+    "example_cn": "葡萄牙人对马鲁古的探险始于16世纪。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 08:00"
+    ]
+  },
+  {
+    "word": "alangkah",
+    "cn": "多么……啊（感叹）",
+    "en": "how … ! (exclamation)",
+    "root": "alangkah",
+    "root_cn": "多么",
+    "example": "Alangkah kejamnya orang yang membuang anak kucing di pinggir jalan!",
+    "example_cn": "把小猫扔在路边的人多么狠心啊！",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 08:00"
+    ]
+  },
+  {
+    "word": "santap",
+    "cn": "吃；用餐（较文雅）",
+    "en": "to eat, to dine (formal)",
+    "root": "santap",
+    "root_cn": "吃；用餐",
+    "example": "Untuk merayakan promosi Pak Budi, kantor mengadakan santap malam bersama di restoran Sunda.",
+    "example_cn": "为了庆祝布迪先生升职，公司在一家巽他餐厅办了一场晚宴。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 08:00"
+    ]
+  },
+  {
+    "word": "dahaga",
+    "cn": "口渴（较书面）",
+    "en": "thirst",
+    "root": "dahaga",
+    "root_cn": "口渴",
+    "example": "Es kelapa muda paling cocok untuk melepas dahaga di siang yang panas.",
+    "example_cn": "炎热的中午，冰椰子水最适合解渴了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 08:00"
+    ]
+  },
+  {
+    "word": "pengaturan",
+    "cn": "设置；安排；管理",
+    "en": "settings; arrangement; regulation",
+    "root": "atur",
+    "root_cn": "安排；整理",
+    "example": "Kalau notifikasinya terus muncul, matikan saja lewat pengaturan HP.",
+    "example_cn": "如果通知一直弹出来，就在手机设置里关掉吧。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 08:00"
+    ]
+  },
+  {
+    "word": "fungsi",
+    "cn": "功能；作用；用途",
+    "en": "function; purpose",
+    "root": "fungsi",
+    "root_cn": "功能",
+    "example": "Saya belum paham fungsi tombol merah di mesin fotokopi itu.",
+    "example_cn": "我还没搞懂那台复印机上红色按钮是干什么用的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 08:00"
     ]
   }
 ];
