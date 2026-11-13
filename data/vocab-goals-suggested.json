@@ -10,7 +10,7 @@
    "fast": 137
   },
   "active": {
-   "use": 699,
+   "use": 696,
    "recognize": 99,
    "unsure": 22,
    "fast": 57
@@ -5283,7 +5283,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 337 位"
    ]
@@ -9859,7 +9859,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "课程里出现的派生词或常用表达"
    ]
@@ -9877,7 +9877,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "课程里出现的派生词或常用表达"
    ]
