@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261111-pelatihan-kerja-kediri","date":"2026-11-11","title":"Pelatihan Kerja di Kediri: Bekal untuk Mencari Peluang","title_cn":"谏义里职业培训：为寻找机会练好本领","path":"data/extensive-reading-history/2026-11-11.js"},
 {"id":"er-20261109-lift-dukuh-atas","date":"2026-11-09","title":"Lift Baru untuk Dukuh Atas, Penumpang Perlu Tetap Hati-Hati","title_cn":"杜库阿塔斯站将增设电梯，乘客通行仍需留意","path":"data/extensive-reading-history/2026-11-09.js"},
 {"id":"er-20261107-buka-buku-bandar-lampung","date":"2026-11-07","title":"Buka Buku, Membaca lewat Ponsel di Bandar Lampung","title_cn":"Buka Buku：在班达楠榜用手机阅读","path":"data/extensive-reading-history/2026-11-07.js"},
 {"id":"er-20261105-agenda-budaya-jawa-barat","date":"2026-11-05","title":"Akhir Pekan di Jawa Barat: Pilih Musik atau Festival Budaya?","title_cn":"西爪哇周末：听音乐，还是逛文化节？","path":"data/extensive-reading-history/2026-11-05.js"},
