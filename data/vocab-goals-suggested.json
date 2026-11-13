@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1056,
+   "use": 1061,
    "recognize": 115,
    "unsure": 24,
    "fast": 137
   },
   "active": {
-   "use": 696,
+   "use": 701,
    "recognize": 99,
    "unsure": 22,
    "fast": 57
@@ -10990,6 +10990,51 @@
    "status": "active",
    "why": [
     "第二词库 B1 / A"
+   ]
+  },
+  "pengajar": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "peran": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "dididik": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "diakui": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "aspek": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
    ]
   }
  }
