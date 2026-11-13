@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-13",
-    "session": "pm",
-    "time": "18:00",
-    "day": 84
+    "date": "2026-11-14",
+    "session": "am",
+    "time": "08:00",
+    "day": 85
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-13T09:41:01.962Z",
-    "lesson_watermark": "2026-11-13 08:00",
+    "runtime_generated_at": "2026-11-13T10:52:35.129Z",
+    "lesson_watermark": "2026-11-13 18:00",
     "index_updated": "2026-11-13",
-    "runtime_hash": "94d5d5e97cf2d77eb40cee2a32419d0a871c41abf6658d33f5b816629089c412",
-    "index_hash": "d87a3bfa4684b9504237d8180486a062442ad6826df053fe6bb29dd826bd7773",
+    "runtime_hash": "ae9f3041d30b34d94e0492e53eb70cd4ccb9a41281d4b12f31818f98359f8f5b",
+    "index_hash": "4f1d5506657f0c999449d3adbf91ffb13e9426f0472358d1aa92c1fb591e5523",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -59,28 +59,12 @@
         "状态；身份"
       ],
       [
-        "peran",
-        "角色；作用"
-      ],
-      [
         "gelombang",
         "波浪；浪潮"
       ],
       [
-        "aspek",
-        "方面"
-      ],
-      [
         "menyerang",
         "攻击；侵袭"
-      ],
-      [
-        "diakui",
-        "被承认；被认可"
-      ],
-      [
-        "dididik",
-        "被教育；受培养"
       ],
       [
         "pembantu",
@@ -89,10 +73,6 @@
       [
         "natal",
         "圣诞节"
-      ],
-      [
-        "pengajar",
-        "教师/讲师"
       ],
       [
         "harimau",
@@ -1497,16 +1477,6 @@
         "秘密"
       ],
       [
-        "gelisah",
-        2,
-        0,
-        "",
-        "2026-10-21T01:43:01.297Z",
-        "焦躁不安；心神不宁",
-        "gelisah",
-        "不安"
-      ],
-      [
         "membandingkan",
         2,
         0,
@@ -1515,16 +1485,6 @@
         "比较；进行对比",
         "banding",
         "比较"
-      ],
-      [
-        "kesel",
-        3,
-        0,
-        "",
-        "2026-10-15T13:47:33.001Z",
-        "烦；心里不爽",
-        "kesel",
-        "心烦；烦躁"
       ],
       [
         "malu-malu",
@@ -2417,54 +2377,24 @@
         "送"
       ],
       [
-        "mendaki",
-        3,
+        "pencuri",
+        2,
         0,
         "",
-        "2026-11-13T02:30:42.955Z",
-        "登山；爬（山、坡）",
-        "daki",
-        "攀登"
+        "2026-10-23T23:33:55.845Z",
+        "小偷；偷东西的人",
+        "curi",
+        "偷"
       ],
       [
-        "tenggara",
-        3,
+        "rugi",
+        2,
         0,
         "",
-        "2026-11-13T02:31:01.759Z",
-        "东南（方）",
-        "tenggara",
-        "东南"
-      ],
-      [
-        "penjelajahan",
-        3,
-        0,
-        "",
-        "2026-11-13T02:30:50.452Z",
-        "探险；探索（的活动）",
-        "jelajah",
-        "探索；游历"
-      ],
-      [
-        "alangkah",
-        3,
-        0,
-        "",
-        "2026-11-13T02:30:28.240Z",
-        "多么……啊（感叹）",
-        "alangkah",
-        "多么"
-      ],
-      [
-        "fungsi",
-        3,
-        0,
-        "",
-        "2026-11-13T02:30:35.398Z",
-        "功能；作用；用途",
-        "fungsi",
-        "功能"
+        "2026-10-23T23:35:28.461Z",
+        "亏；吃亏；划不来",
+        "rugi",
+        "亏损"
       ]
     ],
     "focus": [
@@ -2729,47 +2659,6 @@
     "oral": []
   },
   "history_7d": [
-    {
-      "date": "2026-11-06",
-      "session": "am",
-      "review_core": [
-        "licin",
-        "peserta",
-        "amat",
-        "berbahaya",
-        "gampang"
-      ],
-      "new_words": [
-        "pinggir",
-        "laku",
-        "menata",
-        "ujung",
-        "pudar",
-        "kuah",
-        "patung",
-        "bekal",
-        "tikar",
-        "saling"
-      ]
-    },
-    {
-      "date": "2026-11-06",
-      "session": "pm",
-      "review_core": [
-        "layak",
-        "mengabaikan",
-        "siapin",
-        "siapkan",
-        "licin"
-      ],
-      "new_words": [
-        "hiburan",
-        "minat",
-        "mahir",
-        "animasi",
-        "tepuk tangan"
-      ]
-    },
     {
       "date": "2026-11-07",
       "session": "am",
@@ -3038,107 +2927,44 @@
         "pengaturan",
         "fungsi"
       ]
+    },
+    {
+      "date": "2026-11-13",
+      "session": "pm",
+      "review_core": [
+        "menunjukkan",
+        "pembangunan",
+        "melainkan",
+        "gelisah",
+        "kesel"
+      ],
+      "new_words": [
+        "pengajar",
+        "peran",
+        "dididik",
+        "diakui",
+        "aspek"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "new_words": [
-      "berulang tahun",
-      "bertema",
-      "persahabatan",
-      "gaun",
-      "anting"
+      "pengajar",
+      "peran",
+      "dididik",
+      "diakui",
+      "aspek"
     ],
     "review_core": [
       "menunjukkan",
-      "perpaduan",
-      "kepake",
-      "berteriak",
-      "melainkan"
+      "pembangunan",
+      "melainkan",
+      "gelisah",
+      "kesel"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-13",
-    "vocab": [
-      [
-        "mendaki",
-        "登山；爬（山、坡）",
-        "to climb (a mountain or slope)",
-        "daki",
-        "攀登"
-      ],
-      [
-        "bot",
-        "靴子（多说 sepatu bot）",
-        "boots",
-        "bot",
-        "靴子"
-      ],
-      [
-        "kaos kaki",
-        "袜子",
-        "socks",
-        "kaki",
-        "脚"
-      ],
-      [
-        "tenggara",
-        "东南（方）",
-        "southeast",
-        "tenggara",
-        "东南"
-      ],
-      [
-        "penjelajahan",
-        "探险；探索（的活动）",
-        "exploration",
-        "jelajah",
-        "探索；游历"
-      ],
-      [
-        "alangkah",
-        "多么……啊（感叹）",
-        "how … ! (exclamation)",
-        "alangkah",
-        "多么"
-      ],
-      [
-        "santap",
-        "吃；用餐（较文雅）",
-        "to eat, to dine (formal)",
-        "santap",
-        "吃；用餐"
-      ],
-      [
-        "dahaga",
-        "口渴（较书面）",
-        "thirst",
-        "dahaga",
-        "口渴"
-      ],
-      [
-        "pengaturan",
-        "设置；安排；管理",
-        "settings; arrangement; regulation",
-        "atur",
-        "安排；整理"
-      ],
-      [
-        "fungsi",
-        "功能；作用；用途",
-        "function; purpose",
-        "fungsi",
-        "功能"
-      ]
-    ],
-    "review_vocab": [
-      "terbuat",
-      "buat",
-      "menunjukkan",
-      "perpaduan",
-      "asalkan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

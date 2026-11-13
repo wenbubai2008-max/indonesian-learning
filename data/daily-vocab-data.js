@@ -11361,16 +11361,16 @@ window.DAILY_VOCAB_DB = [
     "en": "show; indicate",
     "root": "tunjuk",
     "root_cn": "指；指出",
-    "example": "Sikapnya menunjukkan bahwa dia belum siap bergabung dengan tim baru.",
-    "example_cn": "他的态度表明，他还没准备好加入新团队。",
+    "example": "Kejadian minggu lalu menunjukkan bahwa kita perlu aturan parkir yang lebih jelas di kompleks ini.",
+    "example_cn": "上周发生的事表明，我们小区需要更明确的停车规定。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 13,
+    "times_seen": 14,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -11402,7 +11402,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-05 08:00",
       "2026-10-21 18:00",
       "2026-11-12 18:00",
-      "2026-11-13 08:00"
+      "2026-11-13 08:00",
+      "2026-11-13 18:00"
     ]
   },
   {
@@ -11998,16 +11999,16 @@ window.DAILY_VOCAB_DB = [
     "en": "development; construction",
     "root": "bangun",
     "root_cn": "建；起；醒",
-    "example": "Pembangunan jembatan baru itu membuat jalan di depan sekolah macet setiap pagi.",
-    "example_cn": "那座新桥的施工让学校门前的路每天早上都堵车。",
+    "example": "Pemerintah daerah ingin mengembangkan pariwisata, jadi pembangunan jalan ke pantai itu dipercepat.",
+    "example_cn": "地方政府想发展旅游业，所以通往那片海滩的道路建设加快了。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-10-29 08:00",
+    "last_seen": "2026-11-13 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -12018,7 +12019,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-06",
       "2026-10-23",
       "2026-10-28",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-11-13"
     ],
     "lesson_occurrences": [
       "2026-09-18 18:00",
@@ -12026,7 +12028,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-06 08:00",
       "2026-10-23 18:00",
       "2026-10-28 18:00",
-      "2026-10-29 08:00"
+      "2026-10-29 08:00",
+      "2026-11-13 18:00"
     ]
   },
   {
@@ -13856,25 +13859,27 @@ window.DAILY_VOCAB_DB = [
     "en": "but rather",
     "root": "lain",
     "root_cn": "其他；不同",
-    "example": "Menurut saya, anak yang sering terlambat tidak butuh hukuman, melainkan bantuan untuk mengatur waktunya.",
-    "example_cn": "我觉得经常迟到的孩子需要的不是惩罚，而是帮他安排好时间。",
+    "example": "Rudi tidak dipecat, melainkan resign sendiri karena ingin membuka usaha.",
+    "example_cn": "Rudi 不是被开除的，而是自己辞职的，因为他想自己创业。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-21 18:00",
-    "last_seen": "2026-11-12 18:00",
+    "last_seen": "2026-11-13 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
       "2026-09-21",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "lesson_occurrences": [
       "2026-09-21 18:00",
-      "2026-11-12 18:00"
+      "2026-11-12 18:00",
+      "2026-11-13 18:00"
     ]
   },
   {
@@ -15287,26 +15292,28 @@ window.DAILY_VOCAB_DB = [
     "en": "restless; uneasy",
     "root": "gelisah",
     "root_cn": "不安",
-    "example": "Dia terlihat gelisah sebelum rapat dimulai.",
-    "example_cn": "开会前他看上去有些不安。",
+    "example": "Di bus, Dina gelisah terus karena takut kelewat haltenya.",
+    "example_cn": "在公交车上，Dina 一直坐立不安，怕坐过站。（kelewat = terlewat）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 18:00",
+    "last_seen": "2026-11-13 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-11-13"
     ],
     "lesson_occurrences": [
       "2026-09-27 08:00",
-      "2026-09-27 18:00"
+      "2026-09-27 18:00",
+      "2026-11-13 18:00"
     ]
   },
   {
@@ -15367,23 +15374,25 @@ window.DAILY_VOCAB_DB = [
     "en": "annoyed; fed up",
     "root": "kesel",
     "root_cn": "心烦；烦躁",
-    "example": "Aku kesel karena berkasnya belum bisa dibuka.",
-    "example_cn": "文件还是打不开，我有点烦。",
+    "example": "Aku kesel banget sama dia, soalnya dia sengaja ngulur waktu biar nggak usah ikut beres-beres.",
+    "example_cn": "我真的很烦他，因为他故意拖时间，好不用一起收拾。（soalnya = karena，nggak = tidak）",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 18:00",
-    "last_seen": "2026-09-27 18:00",
+    "last_seen": "2026-11-13 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-11-13"
     ],
     "lesson_occurrences": [
-      "2026-09-27 18:00"
+      "2026-09-27 18:00",
+      "2026-11-13 18:00"
     ]
   },
   {
@@ -32304,23 +32313,26 @@ window.DAILY_VOCAB_DB = [
     "en": "settings; arrangement; regulation",
     "root": "atur",
     "root_cn": "安排；整理",
-    "example": "Kalau notifikasinya terus muncul, matikan saja lewat pengaturan HP.",
-    "example_cn": "如果通知一直弹出来，就在手机设置里关掉吧。",
+    "example": "Setelah warga patungan membeli dua meja panjang, pengaturan tempat duduk di kelas jadi lebih rapi.",
+    "example_cn": "居民们凑钱买了两张长桌之后，教室里的座位安排就整齐多了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-13 08:00",
-    "last_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-13"
     ],
     "lesson_occurrences": [
-      "2026-11-13 08:00"
+      "2026-11-13 08:00",
+      "2026-11-13 18:00"
     ]
   },
   {
@@ -32329,23 +32341,151 @@ window.DAILY_VOCAB_DB = [
     "en": "function; purpose",
     "root": "fungsi",
     "root_cn": "功能",
-    "example": "Saya belum paham fungsi tombol merah di mesin fotokopi itu.",
-    "example_cn": "我还没搞懂那台复印机上红色按钮是干什么用的。",
+    "example": "Selama balai warga dibangun, garasi Pak RT punya fungsi baru sebagai ruang kelas.",
+    "example_cn": "社区会堂施工期间，Pak RT 的车库有了新用途——当教室。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-13 08:00",
-    "last_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-13 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-13"
     ],
     "lesson_occurrences": [
-      "2026-11-13 08:00"
+      "2026-11-13 08:00",
+      "2026-11-13 18:00"
+    ]
+  },
+  {
+    "word": "pengajar",
+    "cn": "教师；讲师；教课的人",
+    "en": "teacher; instructor",
+    "root": "ajar",
+    "root_cn": "教；教导",
+    "example": "Kakakku jadi pengajar les matematika setiap Sabtu, dan murid-muridnya bilang dia guru yang sabar dan penyayang.",
+    "example_cn": "我姐姐每周六当数学补习老师，她的学生都说她是个耐心又有爱心的老师。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 18:00",
+    "last_seen": "2026-11-13 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 18:00"
+    ]
+  },
+  {
+    "word": "peran",
+    "cn": "角色；作用",
+    "en": "role",
+    "root": "peran",
+    "root_cn": "角色",
+    "example": "Peran orang tua sangat penting waktu anak baru masuk sekolah, mulai dari mengantar sampai menemani dia belajar.",
+    "example_cn": "孩子刚上学时，父母的作用非常重要，从接送到陪他学习都是。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 18:00",
+    "last_seen": "2026-11-13 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 18:00"
+    ]
+  },
+  {
+    "word": "dididik",
+    "cn": "被教育；被培养（品格、习惯）",
+    "en": "to be educated; to be brought up",
+    "root": "didik",
+    "root_cn": "教育；培养",
+    "example": "Sejak kecil dia dididik untuk mandiri, jadi waktu kuliah di luar kota dia tidak canggung tinggal sendiri.",
+    "example_cn": "他从小就被培养得很独立，所以去外地上大学时，一个人住也不会手足无措。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 18:00",
+    "last_seen": "2026-11-13 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 18:00"
+    ]
+  },
+  {
+    "word": "diakui",
+    "cn": "被承认；被认可",
+    "en": "to be acknowledged; to be recognized",
+    "root": "aku",
+    "root_cn": "承认（此义；与代词 aku“我”同形）",
+    "example": "Bakatnya baru diakui banyak orang setelah lukisannya dipamerkan di sebuah galeri di Jakarta.",
+    "example_cn": "直到他的画在雅加达一家画廊展出之后，他的才华才被很多人认可。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 18:00",
+    "last_seen": "2026-11-13 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 18:00"
+    ]
+  },
+  {
+    "word": "aspek",
+    "cn": "方面",
+    "en": "aspect",
+    "root": "aspek",
+    "root_cn": "方面",
+    "example": "Sebelum tanda tangan kontrak, coba pikirkan semua aspek, termasuk gaji, jam kerja, dan jarak ke kantor.",
+    "example_cn": "签合同之前，先把各方面都想清楚，包括工资、工作时间和到公司的距离。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-13 18:00",
+    "last_seen": "2026-11-13 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-13"
+    ],
+    "lesson_occurrences": [
+      "2026-11-13 18:00"
     ]
   }
 ];
