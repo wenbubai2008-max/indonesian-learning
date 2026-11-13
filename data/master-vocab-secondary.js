@@ -44,17 +44,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "jenis kelamin",
-    "cn": "性别",
-    "en": "sex/gender",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "golongan darah",
     "cn": "血型",
     "en": "blood type",
@@ -64,28 +53,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "B",
     "selection": "dont"
-  },
-  {
-    "word": "status pernikahan",
-    "cn": "婚姻状况",
-    "en": "marital status",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "kewarganegaraan",
-    "cn": "国籍",
-    "en": "nationality/citizenship",
-    "root": "warga negara",
-    "root_cn": "",
-    "formation": "ke- + warga negara + -an",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "berlaku sampai",
@@ -119,39 +86,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "B",
     "selection": "dont"
-  },
-  {
-    "word": "berulang tahun",
-    "cn": "过生日",
-    "en": "have a birthday",
-    "root": "ulang",
-    "root_cn": "",
-    "formation": "ber- + ulang；固定搭配",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "nol",
-    "cn": "零",
-    "en": "zero",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "seperempat",
-    "cn": "四分之一；一刻钟",
-    "en": "quarter",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "tepat",
@@ -550,17 +484,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "samping",
-    "cn": "旁边",
-    "en": "beside",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "anak panah",
     "cn": "箭头",
     "en": "arrow",
@@ -616,28 +539,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "kain pel",
-    "cn": "拖布",
-    "en": "mop cloth",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "penyedot debu",
-    "cn": "吸尘器",
-    "en": "vacuum cleaner",
-    "root": "sedot",
-    "root_cn": "",
-    "formation": "peN- + sedot；词组",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "ulek",
     "cn": "研杵",
     "en": "pestle",
@@ -646,17 +547,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "",
     "bipa_level": "A1",
     "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "guling",
-    "cn": "长抱枕",
-    "en": "bolster",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
     "selection": "fuzzy"
   },
   {
@@ -679,17 +569,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "",
     "bipa_level": "A1",
     "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "bermain bulu tangkis",
-    "cn": "打羽毛球",
-    "en": "play badminton",
-    "root": "main",
-    "root_cn": "",
-    "formation": "ber- + main；词组",
-    "bipa_level": "A1",
-    "sab": "A",
     "selection": "fuzzy"
   },
   {
@@ -1034,17 +913,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "anting",
-    "cn": "耳环",
-    "en": "earrings",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "kalung",
     "cn": "项链",
     "en": "necklace",
@@ -1059,28 +927,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "word": "ikat pinggang",
     "cn": "腰带",
     "en": "belt",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "bot",
-    "cn": "靴子",
-    "en": "boots",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "kaos kaki",
-    "cn": "袜子",
-    "en": "socks",
     "root": "",
     "root_cn": "",
     "formation": "固定词组/表达",
@@ -1364,17 +1210,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "delman",
-    "cn": "马车",
-    "en": "horse-drawn carriage",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "struk",
     "cn": "小票/收据",
     "en": "receipt",
@@ -1395,17 +1230,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A2",
     "sab": "S",
     "selection": "dont"
-  },
-  {
-    "word": "antik",
-    "cn": "古董般的/古老有特色",
-    "en": "antique",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "B",
-    "selection": "fuzzy"
   },
   {
     "word": "suci",
@@ -1444,17 +1268,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "word": "megah",
     "cn": "宏伟",
     "en": "grand / magnificent",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "kokoh",
-    "cn": "坚固",
-    "en": "sturdy / solid",
     "root": "",
     "root_cn": "",
     "formation": "",
@@ -1870,17 +1683,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "bergoyang-goyang",
-    "cn": "摇来摇去；晃动",
-    "en": "sway; shake",
-    "root": "goyang",
-    "root_cn": "",
-    "formation": "ber- + goyang-goyang",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "menyusul",
     "cn": "追上；随后跟上",
     "en": "follow; catch up",
@@ -2002,17 +1804,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "memperbaikinya",
-    "cn": "把它修好",
-    "en": "repair it",
-    "root": "baik",
-    "root_cn": "",
-    "formation": "memper- + baik + -i + -nya",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "menancap",
     "cn": "扎入；插入",
     "en": "stick into; pierce",
@@ -2021,17 +1812,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "formation": "meN- + tancap",
     "bipa_level": "B1",
     "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "dahaga",
-    "cn": "口渴；渴",
-    "en": "thirst",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B1",
-    "sab": "B",
     "selection": "fuzzy"
   },
   {
@@ -2055,17 +1835,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B1",
     "sab": "A",
     "selection": "dont"
-  },
-  {
-    "word": "santap",
-    "cn": "吃；享用（较文雅）",
-    "en": "eat; consume",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B1",
-    "sab": "B",
-    "selection": "fuzzy"
   },
   {
     "word": "alangkah",
@@ -2151,17 +1920,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "root": "terang",
     "root_cn": "",
     "formation": "ke- + terang + -an",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "ketersediaannya",
-    "cn": "它的可用情况；库存情况",
-    "en": "its availability",
-    "root": "sedia",
-    "root_cn": "",
-    "formation": "ke- + tersedia + -an + -nya",
     "bipa_level": "B1",
     "sab": "A",
     "selection": "fuzzy"
@@ -2591,17 +2349,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "root": "gabung",
     "root_cn": "",
     "formation": "ber- + gabung",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "berasal",
-    "cn": "来自；起源于",
-    "en": "come from; originate",
-    "root": "asal",
-    "root_cn": "",
-    "formation": "ber- + asal",
     "bipa_level": "B2",
     "sab": "S",
     "selection": "fuzzy"

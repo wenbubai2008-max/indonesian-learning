@@ -4,15 +4,15 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1049,
-   "recognize": 121,
-   "unsure": 25,
+   "use": 1056,
+   "recognize": 115,
+   "unsure": 24,
    "fast": 137
   },
   "active": {
-   "use": 715,
-   "recognize": 105,
-   "unsure": 23,
+   "use": 699,
+   "recognize": 99,
+   "unsure": 22,
    "fast": 57
   }
  },
@@ -10591,9 +10591,9 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 B1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "menimpa": {
@@ -10606,30 +10606,30 @@
    ]
   },
   "kokoh": {
-   "goal": "recognize",
+   "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库低重要度（A2 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "memperbaikinya": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 B1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "ketersediaannya": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 B1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "bahu": {
@@ -10645,9 +10645,9 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "berkaitan": {
@@ -10672,54 +10672,54 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "status pernikahan": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "kewarganegaraan": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "berasal": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 B2 / S"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "nol": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "seperempat": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "setrika": {
@@ -10735,18 +10735,18 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "penyedot debu": {
-   "goal": "recognize",
+   "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库低重要度（A1 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "seprai": {
@@ -10762,9 +10762,9 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "becak": {
@@ -10777,21 +10777,21 @@
    ]
   },
   "delman": {
-   "goal": "recognize",
+   "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库低重要度（A2 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "antik": {
-   "goal": "recognize",
+   "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库低重要度（A2 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "perak": {
@@ -10843,9 +10843,9 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / S"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "iklan": {
@@ -10861,9 +10861,9 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "bertema": {
@@ -10897,9 +10897,9 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "mendaki": {
@@ -10912,21 +10912,21 @@
    ]
   },
   "bot": {
-   "goal": "recognize",
+   "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库低重要度（A1 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "kaos kaki": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "tenggara": {
@@ -10957,22 +10957,21 @@
    ]
   },
   "santap": {
-   "goal": "recognize",
+   "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库低重要度（B1 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "dahaga": {
-   "goal": "unsure",
+   "goal": "use",
    "fast": false,
-   "by": "rule+history",
-   "status": "active",
+   "by": "rule",
+   "status": "mastered",
    "why": [
-    "答错较多，不建议只要求认识",
-    "第二词库低重要度（B1 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "pengaturan": {
