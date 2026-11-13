@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-13T02:59:38.371Z",
+  "updated_at": "2026-11-13T08:01:07.370Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -8124,14 +8124,14 @@
     "pers": {
       "word": "pers",
       "status": "active",
-      "updated_at": "2026-11-06T05:54:28.945Z",
+      "updated_at": "2026-11-13T06:25:08.099Z",
       "display": "pers",
-      "last_review": "2026-11-06T05:54:28.888Z",
+      "last_review": "2026-11-13T06:25:08.036Z",
       "reasons": [
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "ramah": {
       "word": "ramah",
@@ -13555,11 +13555,11 @@
     "menyapu": {
       "word": "menyapu",
       "status": "active",
-      "updated_at": "2026-11-06T05:54:17.625Z",
+      "updated_at": "2026-11-13T06:24:55.236Z",
       "display": "menyapu",
       "cn": "扫地",
       "root": "sapu",
-      "last_review": "2026-11-06T05:54:17.569Z",
+      "last_review": "2026-11-13T06:24:55.173Z",
       "last_mastered": "2026-09-12T14:13:56.300Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
@@ -13567,7 +13567,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 5
+      "right_streak": 6
     },
     "bernapas": {
       "word": "bernapas",
@@ -14275,8 +14275,9 @@
     "luka": {
       "word": "luka",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:56.895Z",
+      "updated_at": "2026-11-13T08:00:56.850Z",
       "display": "luka",
+      "cn": "伤口、创伤",
       "last_review": "2026-09-12T14:13:57.469Z",
       "last_mastered": "2026-09-12T14:13:57.469Z",
       "reasons": [],
@@ -17766,10 +17767,10 @@
     "bahu": {
       "word": "bahu",
       "status": "active",
-      "updated_at": "2026-11-11T03:23:41.301Z",
+      "updated_at": "2026-11-13T06:25:09.425Z",
       "display": "bahu",
       "cn": "肩",
-      "last_review": "2026-11-11T03:23:41.238Z",
+      "last_review": "2026-11-13T06:25:09.362Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -17777,7 +17778,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "ras": {
       "word": "ras",
@@ -25346,12 +25347,12 @@
     "tempat lahir": {
       "word": "tempat lahir",
       "status": "active",
-      "updated_at": "2026-11-13T02:55:46.516Z",
+      "updated_at": "2026-11-13T06:24:43.085Z",
       "display": "tempat lahir",
       "cn": "出生地",
       "root": "lahir",
       "root_cn": "出生",
-      "last_review": "2026-11-11T03:24:22.469Z",
+      "last_review": "2026-11-13T06:24:43.023Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -25359,7 +25360,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "jenis kelamin": {
       "word": "jenis kelamin",
@@ -28188,12 +28189,12 @@
     "mengecewakan": {
       "word": "mengecewakan",
       "status": "active",
-      "updated_at": "2026-11-10T09:08:45.254Z",
+      "updated_at": "2026-11-13T06:24:52.990Z",
       "display": "mengecewakan",
       "cn": "令人失望；使人失望",
       "root": "kecewa",
       "root_cn": "失望",
-      "last_review": "2026-11-06T05:54:07.869Z",
+      "last_review": "2026-11-13T06:24:52.927Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28201,7 +28202,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "menegangkan": {
       "word": "menegangkan",
@@ -28263,12 +28264,12 @@
     "menyebalkan": {
       "word": "menyebalkan",
       "status": "active",
-      "updated_at": "2026-11-10T09:02:56.962Z",
+      "updated_at": "2026-11-13T06:25:04.040Z",
       "display": "menyebalkan",
       "cn": "令人烦恼的；让人恼火的",
       "root": "sebal",
       "root_cn": "烦；恼火",
-      "last_review": "2026-11-06T05:54:24.682Z",
+      "last_review": "2026-11-13T06:25:03.968Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28276,7 +28277,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "mencegah": {
       "word": "mencegah",
@@ -29538,13 +29539,13 @@
     "saking": {
       "word": "saking",
       "status": "active",
-      "updated_at": "2026-11-10T09:02:52.366Z",
+      "updated_at": "2026-11-13T06:24:49.239Z",
       "display": "saking",
       "cn": "太……以至于；由于非常……",
       "root": "saking",
       "root_cn": "由于太……",
       "last_wrong": "2026-11-04T02:49:48.160Z",
-      "last_review": "2026-11-06T05:53:50.637Z",
+      "last_review": "2026-11-13T06:24:49.177Z",
       "source": "课程小测",
       "source_date": "2026-11-04",
       "session": "08:00",
@@ -29554,7 +29555,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 1,
-      "right_streak": 2
+      "right_streak": 3
     },
     "mengintai": {
       "word": "mengintai",
@@ -30169,12 +30170,12 @@
     "berkaitan": {
       "word": "berkaitan",
       "status": "active",
-      "updated_at": "2026-11-13T02:55:41.914Z",
+      "updated_at": "2026-11-13T06:24:39.909Z",
       "display": "berkaitan",
       "cn": "相关；有关联（与……）",
       "root": "kait",
       "root_cn": "钩；挂住",
-      "last_review": "2026-11-11T03:23:55.528Z",
+      "last_review": "2026-11-13T06:24:39.849Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -30182,7 +30183,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "menyerang": {
       "word": "menyerang",
@@ -30446,19 +30447,19 @@
     "kepake": {
       "word": "kepake",
       "status": "active",
-      "updated_at": "2026-11-12T04:08:24.323Z",
+      "updated_at": "2026-11-13T06:24:32.891Z",
       "display": "kepake",
       "cn": "用得上；派得上用场",
       "root": "pakai",
       "root_cn": "使用；穿戴",
       "last_wrong": "2026-11-12T04:08:24.260Z",
-      "last_review": "2026-11-12T04:08:24.260Z",
+      "last_review": "2026-11-13T06:24:32.796Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "ngirit": {
       "word": "ngirit",
