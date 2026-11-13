@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-13",
+  "session": "am",
+  "time": "08:00",
+  "day": 84,
+  "title": "08:00 早课｜Mendaki Gunung Papandayan Bersama Teman Sekantor · 和同事一起爬帕潘达扬山",
+  "vocab": [
+    {
+      "word": "mendaki",
+      "display": "mendaki",
+      "audio_text": "mendaki",
+      "cn": "登山；爬（山、坡）",
+      "en": "to climb (a mountain or slope)",
+      "root": "daki",
+      "root_cn": "攀登",
+      "formation": "meN- + daki（d 前 meN- 变 men-）→ mendaki。常见搭配：mendaki gunung（爬山）、mendaki bukit（爬小山）、mendaki tanjakan（爬陡坡）。同词根：pendaki（登山者）、pendakian（登山活动；登山路线），例如 jalur pendakian（登山步道）。",
+      "example": "Kami benar-benar berjuang waktu mendaki tanjakan terakhir menuju puncak.",
+      "example_cn": "爬最后一段通往山顶的陡坡时，我们真的是拼了命。",
+      "synonym_note": "naik gunung 也是“爬山”，更口语、更常用；mendaki 更突出“一步步往上爬”的过程，也用于新闻和公告（Pendaki dilarang mendaki saat cuaca buruk）。口语说法：naik gunung，年轻人也常说 hiking。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bot",
+      "display": "bot",
+      "audio_text": "bot",
+      "cn": "靴子（多说 sepatu bot）",
+      "en": "boots",
+      "root": "bot",
+      "root_cn": "靴子",
+      "formation": "名词，外来词（荷兰语 boot），不拆词缀。常说 sepatu bot：sepatu bot karet（胶靴、雨靴）、sepatu bot kulit（皮靴）。日常写法有时也见 boot / sepatu boots。",
+      "example": "Untung aku pakai sepatu bot, jadi waktu kakiku kebentur batu, nggak terlalu sakit.",
+      "example_cn": "幸好我穿了靴子，所以脚撞到石头的时候，没那么疼。（kebentur = terbentur，nggak = tidak）",
+      "synonym_note": "sepatu 是一般的鞋，sepatu bot 指包住脚踝或更高的靴子；登山专用鞋也常叫 sepatu gunung 或 sepatu hiking。单说 bot 也能懂，但说 sepatu bot 最自然。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kaos kaki",
+      "display": "kaos kaki",
+      "audio_text": "kaos kaki",
+      "cn": "袜子",
+      "en": "socks",
+      "root": "kaki",
+      "root_cn": "脚",
+      "formation": "复合名词：kaos / kaus（针织衣物，单用常指T恤）+ kaki（脚）→ 穿在脚上的针织物。量词常用 pasang：dua pasang kaos kaki（两双袜子）。常见搭配：kaos kaki cadangan（备用袜子）、ganti kaos kaki（换袜子）。",
+      "example": "Keluhan paling sering setelah mendaki adalah kaki lecet karena kaos kaki terlalu tipis.",
+      "example_cn": "爬山后最常见的抱怨是因为袜子太薄，脚磨破了。",
+      "synonym_note": "规范拼写是 kaus kaki，日常（包括商店招牌）更常见 kaos kaki，两种都对。单说 kaos 一般指T恤；手套说 sarung tangan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tenggara",
+      "display": "tenggara",
+      "audio_text": "tenggara",
+      "cn": "东南（方）",
+      "en": "southeast",
+      "root": "tenggara",
+      "root_cn": "东南",
+      "formation": "方位名词，不拆词缀。四个斜方位：timur laut（东北）、barat laut（西北）、barat daya（西南）、tenggara（东南）。常见搭配：di sebelah tenggara …（在……的东南边）、Asia Tenggara（东南亚）、angin tenggara（东南风）。",
+      "example": "Pembangunan jalan tol di sebelah tenggara kota ini baru selesai bulan lalu.",
+      "example_cn": "这座城市东南边的高速公路上个月才建好。",
+      "synonym_note": "只有 tenggara 是一个独立的词，其他三个斜方位都是两个词组合（timur laut、barat laut、barat daya），记的时候放在一起记。",
+      "is_oral_new": false
+    },
+    {
+      "word": "penjelajahan",
+      "display": "penjelajahan",
+      "audio_text": "penjelajahan",
+      "cn": "探险；探索（的活动）",
+      "en": "exploration",
+      "root": "jelajah",
+      "root_cn": "探索；游历",
+      "formation": "peN-an + jelajah（j 前 peN- 变 pen-）→ penjelajahan，表示“探索这件事、探险活动”。同词根：menjelajahi（探索、走遍某地，带宾语：menjelajahi hutan）、penjelajah（探险者）。常见搭配：penjelajahan alam（户外探险）、penjelajahan gua（洞穴探险）、penjelajahan luar angkasa（太空探索）。",
+      "example": "Penjelajahan bangsa Portugis ke Maluku dimulai pada abad ke-16.",
+      "example_cn": "葡萄牙人对马鲁古的探险始于16世纪。",
+      "synonym_note": "penjelajahan 偏正式、偏“探索未知的地方”；只是去玩、去旅行说 jalan-jalan 或 perjalanan。日常说“去探险”更常用动词：menjelajahi hutan / keliling…。",
+      "is_oral_new": false
+    },
+    {
+      "word": "alangkah",
+      "display": "alangkah",
+      "audio_text": "alangkah",
+      "cn": "多么……啊（感叹）",
+      "en": "how … ! (exclamation)",
+      "root": "alangkah",
+      "root_cn": "多么",
+      "formation": "感叹副词，不拆词缀。固定结构：Alangkah + 形容词-nya + （名词）！例如 Alangkah indahnya!（多美啊！）、Alangkah senangnya kalau …（要是……该多好啊）。形容词后面一般要加 -nya。",
+      "example": "Alangkah kejamnya orang yang membuang anak kucing di pinggir jalan!",
+      "example_cn": "把小猫扔在路边的人多么狠心啊！",
+      "synonym_note": "近义词 betapa（Betapa indahnya!），两者都偏书面、演讲、文章和歌词。口语说法：直接说 Indah banget! / Cantik banget!，日常聊天很少用 alangkah。",
+      "is_oral_new": false
+    },
+    {
+      "word": "santap",
+      "display": "santap",
+      "audio_text": "santap",
+      "cn": "吃；用餐（较文雅）",
+      "en": "to eat, to dine (formal)",
+      "root": "santap",
+      "root_cn": "吃；用餐",
+      "formation": "词根本身可用在固定搭配里：santap siang（午餐）、santap malam（晚宴、晚餐）。派生：bersantap（用餐，不带宾语：bersantap siang bersama）、menyantap（吃掉某物，带宾语：menyantap nasi liwet）、santapan（食物、菜肴，也有 santapan rohani “精神食粮”）。",
+      "example": "Untuk merayakan promosi Pak Budi, kantor mengadakan santap malam bersama di restoran Sunda.",
+      "example_cn": "为了庆祝布迪先生升职，公司在一家巽他餐厅办了一场晚宴。",
+      "synonym_note": "santap 用在邀请函、新闻、活动安排里，显得礼貌、正式（Para tamu dipersilakan bersantap）。口语说法：makan（makan siang / makan malam），朋友之间说 makan 就行。",
+      "is_oral_new": false
+    },
+    {
+      "word": "dahaga",
+      "display": "dahaga",
+      "audio_text": "dahaga",
+      "cn": "口渴（较书面）",
+      "en": "thirst",
+      "root": "dahaga",
+      "root_cn": "口渴",
+      "formation": "名词/形容词，不拆词缀。最常见的固定搭配：melepas dahaga / menghilangkan dahaga（解渴），饮料广告里很常见。也可比喻“渴望”：dahaga akan ilmu（求知若渴）。",
+      "example": "Es kelapa muda paling cocok untuk melepas dahaga di siang yang panas.",
+      "example_cn": "炎热的中午，冰椰子水最适合解渴了。",
+      "synonym_note": "haus 是日常说的“渴”（Aku haus banget），dahaga 偏书面、广告和文学。口语说法：haus。注意说“我渴了”用 Saya haus，一般不说 Saya dahaga。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pengaturan",
+      "display": "pengaturan",
+      "audio_text": "pengaturan",
+      "cn": "设置；安排；管理",
+      "en": "settings; arrangement; regulation",
+      "root": "atur",
+      "root_cn": "安排；整理",
+      "formation": "peN-an + atur（元音前 peN- 变 peng-）→ pengaturan，表示“安排、调整这件事”。手机、电脑上的“设置”菜单就叫 Pengaturan。同词根：mengatur（安排、调整）、aturan（规定、规则）、teratur（有规律的、整齐的）。常见搭配：pengaturan HP（手机设置）、pengaturan lalu lintas（交通管理）。",
+      "example": "Kalau notifikasinya terus muncul, matikan saja lewat pengaturan HP.",
+      "example_cn": "如果通知一直弹出来，就在手机设置里关掉吧。",
+      "synonym_note": "aturan 是“规定”（aturan kantor），pengaturan 是“调整、安排的方式或菜单”。口语说法：说手机设置时，很多人直接说 setting（Coba cek setting-nya）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "fungsi",
+      "display": "fungsi",
+      "audio_text": "fungsi",
+      "cn": "功能；作用；用途",
+      "en": "function; purpose",
+      "root": "fungsi",
+      "root_cn": "功能",
+      "formation": "名词，外来词（荷兰语 functie），不拆词缀。派生：berfungsi（起作用、能正常工作），常见 tidak berfungsi（坏了、不起作用）。常见搭配：fungsi utama（主要功能）、Fungsinya apa?（这是干什么用的？）。",
+      "example": "Saya belum paham fungsi tombol merah di mesin fotokopi itu.",
+      "example_cn": "我还没搞懂那台复印机上红色按钮是干什么用的。",
+      "synonym_note": "kegunaan 也是“用处”，偏日常；fungsi 更像“设计出来的功能”，说机器、器官、部门时常用。问东西是干嘛的，口语常说 Ini buat apa? 或 Fungsinya apa?",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "terbuat",
+    "buat",
+    "menunjukkan",
+    "perpaduan",
+    "asalkan"
+  ],
+  "sentences": [
+    {
+      "text": "Jujur aku mager banget, tapi udah janji mau mendaki bareng anak-anak divisi besok pagi.",
+      "cn": "说实话我超级懒得动，可是已经答应明天早上要和部门的同事一起去爬山了。（udah = sudah，bareng = bersama）"
+    },
+    {
+      "text": "Sepatu bot ini terbuat dari karet; fungsinya bukan buat gaya, tapi supaya kaki tetap kering di jalur yang becek.",
+      "cn": "这双靴子是橡胶做的；它的作用不是为了好看，而是让脚在泥泞的山路上保持干燥。"
+    },
+    {
+      "text": "Pemandu menunjukkan sebuah gua kecil di dekat jalur, tapi kami dilarang masuk karena pernah terjadi kecelakaan di dalamnya.",
+      "cn": "向导给我们指了步道旁边的一个小山洞，但我们不能进去，因为里面曾经发生过事故。"
+    },
+    {
+      "text": "Alangkah indahnya pemandangan dari puncak: perpaduan kabut putih dan hutan yang hijau.",
+      "cn": "从山顶看到的风景多美啊：白色的雾和绿色的森林交融在一起。"
+    },
+    {
+      "text": "Kamu boleh ikut penjelajahan gua minggu depan, asalkan sudah biasa mendaki dan tidak mudah panik.",
+      "cn": "下周的洞穴探险你可以参加，只要你已经习惯爬山、而且不容易慌。"
+    }
+  ],
+  "reading": {
+    "text": "Sabtu lalu, divisi Rina mendaki Gunung Papandayan di Garut, sebelah tenggara Bandung. Biaya perjalanan ini diambil dari anggaran kantor. Sebelum berangkat, pemandu memeriksa sepatu bot dan kaos kaki semua peserta, karena jalurnya berbatu dan licin. Ia juga meminta semua orang menyalakan GPS lewat pengaturan HP, supaya tidak mudah tersesat. Langit masih gelap waktu mereka mulai berjalan. Dua jam kemudian, hari sudah terang dan kawah gunung terlihat jelas. \"Alangkah indahnya!\" kata Rina. Siangnya, di sebuah warung dekat kawah, mereka melepas dahaga dengan teh manis hangat, lalu bersantap siang bersama. Bagi Rina, penjelajahan alam pertamanya ini sangat menyenangkan, walaupun kakinya pegal.",
+    "cn": "上周六，莉娜的部门去爬了加鲁特的帕潘达扬山，加鲁特在万隆的东南边。这次出行的费用从公司预算里出。出发前，向导检查了所有参加者的靴子和袜子，因为山路多石又湿滑。他还让大家在手机设置里打开 GPS，这样不容易迷路。他们开始走的时候，天还是黑的。两个小时后，天已经亮了，火山口看得清清楚楚。“多美啊！”莉娜说。中午，他们在火山口附近的一家小摊喝热甜茶解渴，然后一起吃午饭。对莉娜来说，这第一次户外探险非常开心，虽然她的腿酸了。"
+  },
+  "quiz": [
+    {
+      "question": "Di persimpangan jalur, Rina ragu harus ke kiri atau ke kanan. Seorang petani lalu berkata, \"Ke kawah lewat kiri, Neng,\" sambil mengarahkan tangannya ke kiri. Petani itu ____ jalan ke kawah kepada Rina.",
+      "options": [
+        "menunjuk",
+        "menunjukkan",
+        "ditunjukkan",
+        "petunjuk"
+      ],
+      "answer_index": 1,
+      "answer": "menunjukkan",
+      "explain": "“给某人指路”的固定说法是 menunjukkan jalan kepada …（也可用于出示：menunjukkan KTP）。menunjuk 重在“用手指着”，常说 menunjuk ke kiri / menunjuk gambar itu，后面接“路 + kepada 某人”不自然；ditunjukkan 是被动，主语得是路（Jalan itu ditunjukkan oleh petani）；petunjuk 是名词“指示、提示”（petunjuk jalan 路标），不能当动词用。"
+    },
+    {
+      "question": "Setelah dua jam berjalan di bawah matahari, Dodi membeli es teh di warung. Satu gelas langsung habis untuk ____ dahaganya.",
+      "options": [
+        "melepas",
+        "membuang",
+        "menurunkan",
+        "meminum"
+      ],
+      "answer_index": 0,
+      "answer": "melepas",
+      "explain": "“解渴”的固定搭配是 melepas dahaga（也说 menghilangkan dahaga）。membuang 是“扔掉”，不和 dahaga 搭配；menurunkan 是“降低”，说 menurunkan demam / berat badan；meminum 的宾语是饮料本身（meminum es teh），不能“喝口渴”。"
+    },
+    {
+      "question": "HP Sinta tidak bisa menemukan lokasinya di peta. Temannya bilang, \"Coba buka ____ dulu, terus nyalakan GPS-nya.\"",
+      "options": [
+        "fungsi",
+        "aturan",
+        "pengaturan",
+        "pengatur"
+      ],
+      "answer_index": 2,
+      "answer": "pengaturan",
+      "explain": "手机里调 GPS、通知、亮度的菜单叫 pengaturan（设置）。fungsi 是“功能、用途”，不是一个能打开的菜单；aturan 是“规定、规则”（aturan kantor）；pengatur 指“调节的人或装置”（pengatur suhu 温控器），也不对。"
+    }
+  ],
+  "output": {
+    "task": "你约朋友下周末去爬山。给他发一条 WhatsApp（3–5 句）：说去哪儿、那里的风景怎么样、要准备什么，再提一个条件。至少用 mendaki、sepatu bot / kaos kaki、perpaduan、asalkan 中的两个。",
+    "reference_answer": "Minggu depan kita jadi mendaki Papandayan, ya! Lokasinya di Garut, sebelah tenggara Bandung, jadi kita berangkat dari Jakarta jam satu pagi. Pemandangannya perpaduan kawah dan padang edelweis, keren banget. Jangan lupa pakai sepatu bot dan bawa kaos kaki cadangan, soalnya jalurnya suka becek. Adikmu boleh ikut, asalkan dia kuat jalan tiga jam.",
+    "reference_cn": "下周我们就去爬帕潘达扬山啦！地点在万隆东南边的加鲁特，所以我们凌晨一点从雅加达出发。那里的风景是火山口和雪绒花草甸的结合，特别酷。别忘了穿靴子、带备用袜子，因为那条路常常很泥泞。你弟弟妹妹也可以一起来，只要他能走三个小时。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出登山、靴子、袜子、东南、探险、多么……啊、用餐（文雅）、口渴（书面）、设置、功能；再说出由……制成、为了/做、指给……看、结合交融、只要。卡住的词回看词卡再说一遍。",
+    "易混词和搭配：menunjuk ke kiri（用手指着）≠ menunjukkan jalan kepada Rina（给人指路、出示）；Saya haus（我渴了）vs melepas dahaga（解渴，书面/广告）；pengaturan HP（设置菜单）vs aturan kantor（规定）vs fungsi tombol（功能）。各说一句，例如 Petani itu menunjukkan jalan ke kawah。",
+    "复习词应用：perpaduan 是名词“A 和 B 的结合”，常说 perpaduan antara A dan B（同词根 memadukan “把……结合起来”）；用它说一句风景或菜，例如 Rasanya perpaduan manis dan pedas。再用 asalkan 提一个条件，用 terbuat dari 说一样东西的材料，用 buat 说“为了……”：Sepatu ini terbuat dari karet, buat jalan di tanah becek。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "mendaki",
+      "pengaturan",
+      "fungsi"
+    ],
+    "patterns": [
+      {
+        "pattern": "Alangkah …-nya …!",
+        "cn": "……多么……啊！",
+        "example": "Alangkah indahnya pemandangan dari puncak",
+        "example_cn": "从山顶看到的风景多美啊"
+      },
+      {
+        "pattern": "Kamu boleh …, asalkan …",
+        "cn": "你可以……，只要……",
+        "example": "Kamu boleh ikut penjelajahan gua minggu depan, asalkan sudah biasa mendaki dan tidak mudah panik.",
+        "example_cn": "下周的洞穴探险你可以参加，只要你已经习惯爬山、而且不容易慌。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "登山；爬（山）",
+        "id": "mendaki"
+      },
+      {
+        "cn": "靴子",
+        "id": "bot"
+      },
+      {
+        "cn": "袜子",
+        "id": "kaos kaki"
+      },
+      {
+        "cn": "东南",
+        "id": "tenggara"
+      },
+      {
+        "cn": "探险；探索",
+        "id": "penjelajahan"
+      },
+      {
+        "cn": "多么……啊",
+        "id": "alangkah"
+      },
+      {
+        "cn": "用餐（文雅）",
+        "id": "santap"
+      },
+      {
+        "cn": "口渴（书面）",
+        "id": "dahaga"
+      },
+      {
+        "cn": "设置；安排",
+        "id": "pengaturan"
+      },
+      {
+        "cn": "功能；作用",
+        "id": "fungsi"
+      },
+      {
+        "cn": "指给……看；出示",
+        "id": "menunjukkan"
+      },
+      {
+        "cn": "结合；交融",
+        "id": "perpaduan"
+      }
+    ],
+    "frames": [
+      "Alangkah …-nya …!",
+      "Kamu boleh …, asalkan …",
+      "… terbuat dari …",
+      "Coba buka pengaturan, terus …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "menunjuk",
+            "cn": "用手指着"
+          },
+          {
+            "id": "menunjukkan",
+            "cn": "给人指路；出示"
+          }
+        ],
+        "note": "menunjuk ke kiri；menunjukkan jalan kepada Rina。"
+      },
+      {
+        "items": [
+          {
+            "id": "haus",
+            "cn": "渴（日常）"
+          },
+          {
+            "id": "dahaga",
+            "cn": "口渴（书面、广告）"
+          }
+        ],
+        "note": "我渴了说 Saya haus；“解渴”说 melepas dahaga。"
+      },
+      {
+        "items": [
+          {
+            "id": "pengaturan",
+            "cn": "设置；安排"
+          },
+          {
+            "id": "aturan",
+            "cn": "规定"
+          },
+          {
+            "id": "fungsi",
+            "cn": "功能"
+          }
+        ],
+        "note": "打开 pengaturan HP，遵守 aturan kantor，问 fungsi tombol。"
+      },
+      {
+        "items": [
+          {
+            "id": "buat",
+            "cn": "做；为了"
+          },
+          {
+            "id": "terbuat",
+            "cn": "由……制成"
+          }
+        ],
+        "note": "同词根：Sepatu ini terbuat dari karet, buat jalan di tanah becek。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "perpaduan",
+        "usage": "名词，说 A 和 B 结合在一起，常接 antara A dan B。",
+        "examples": [
+          {
+            "id": "Pemandangannya perpaduan kawah dan padang edelweis.",
+            "cn": "那里的风景是火山口和雪绒花草甸的结合。"
+          },
+          {
+            "id": "Rasanya perpaduan manis dan pedas.",
+            "cn": "味道是甜和辣的结合。"
+          }
+        ]
+      },
+      {
+        "word": "asalkan",
+        "usage": "放在条件前面，表示“只要……（就可以）”。",
+        "examples": [
+          {
+            "id": "Adikmu boleh ikut, asalkan dia kuat jalan tiga jam.",
+            "cn": "你弟弟妹妹可以一起来，只要他能走三个小时。"
+          }
+        ]
+      }
+    ]
+  }
+}
