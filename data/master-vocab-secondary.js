@@ -440,17 +440,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "gantungan baju",
-    "cn": "衣架",
-    "en": "clothes hanger",
-    "root": "",
-    "root_cn": "",
-    "formation": "固定词组/表达",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "seberang",
     "cn": "对面",
     "en": "across/opposite",
@@ -581,17 +570,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "B",
     "selection": "dont"
-  },
-  {
-    "word": "emas",
-    "cn": "金色",
-    "en": "gold",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "perak",
@@ -814,17 +792,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "blus",
-    "cn": "女式衬衫",
-    "en": "blouse",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "gaun",
     "cn": "连衣裙/礼服",
     "en": "dress/gown",
@@ -839,17 +806,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "word": "jas",
     "cn": "西装/外套",
     "en": "suit/jacket",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "rok",
-    "cn": "裙子",
-    "en": "skirt",
     "root": "",
     "root_cn": "",
     "formation": "",
@@ -1397,17 +1353,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "bertujuan",
-    "cn": "旨在；以……为目的",
-    "en": "aim; be intended",
-    "root": "tujuan",
-    "root_cn": "",
-    "formation": "ber- + tujuan",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "mencegah",
     "cn": "防止；预防",
     "en": "prevent",
@@ -1549,17 +1494,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B1",
     "sab": "A",
     "selection": "dont"
-  },
-  {
-    "word": "menekan-nekan",
-    "cn": "反复按；乱按",
-    "en": "press repeatedly",
-    "root": "tekan",
-    "root_cn": "",
-    "formation": "meN- + tekan（重叠）",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "pengaturan",
@@ -2013,28 +1947,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "penonton",
-    "cn": "观众",
-    "en": "audience; viewer",
-    "root": "tonton",
-    "root_cn": "",
-    "formation": "peN- + tonton",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "personil",
-    "cn": "人员；乐队成员",
-    "en": "personnel; band member",
-    "root": "",
-    "root_cn": "",
-    "formation": "教材拼作 personil；规范常见 personel",
-    "bipa_level": "B1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "peralatan",
     "cn": "设备；工具用品",
     "en": "equipment; tools",
@@ -2299,17 +2211,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "diakui",
-    "cn": "被承认；被认可",
-    "en": "recognized; acknowledged",
-    "root": "aku",
-    "root_cn": "",
-    "formation": "di- + aku + -i",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "berjuang",
     "cn": "奋斗；斗争",
     "en": "struggle; fight",
@@ -2319,16 +2220,5 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "B2",
     "sab": "S",
     "selection": "dont"
-  },
-  {
-    "word": "dididik",
-    "cn": "被教育；受培养",
-    "en": "educated; trained",
-    "root": "didik",
-    "root_cn": "",
-    "formation": "di- + didik",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
   }
 ];

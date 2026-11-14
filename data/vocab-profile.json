@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generated_at": "2026-11-14T08:27:38.905Z",
-  "source_updated_at": "2026-11-14T08:27:12.245Z",
+  "generated_at": "2026-11-14T09:41:05.378Z",
+  "source_updated_at": "2026-11-14T08:33:15.398Z",
   "taught_total": 1210,
-  "confirmed_mastered": 277,
-  "needs_reinforcement": 832,
-  "excluded_from_training": 101,
+  "confirmed_mastered": 286,
+  "needs_reinforcement": 822,
+  "excluded_from_training": 102,
   "unverified": 0,
-  "mastery_percent": 22.9,
+  "mastery_percent": 23.6,
   "primary_master_total": 977,
   "primary_taught_unique": 647,
   "primary_unlearned_total": 330,
@@ -15,7 +15,7 @@
   "primary_eligible_new_total": 0,
   "secondary_eligible_new_total": 20,
   "active_master_pool": "secondary_bipa",
-  "focus_total": 829,
+  "focus_total": 819,
   "focus_words": [
     {
       "word": "menunjukkan",
