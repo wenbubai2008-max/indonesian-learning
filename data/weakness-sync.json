@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-14T08:33:15.398Z",
+  "updated_at": "2026-11-14T11:35:03.434Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -4543,8 +4543,11 @@
     "menabrak": {
       "word": "menabrak",
       "status": "active",
-      "updated_at": "2026-10-19T05:52:59.662Z",
+      "updated_at": "2026-11-14T11:22:29.000Z",
       "display": "menabrak",
+      "cn": "撞；撞上",
+      "root": "tabrak",
+      "root_cn": "撞；碰撞",
       "last_review": "2026-10-19T05:52:59.597Z",
       "reasons": [
         "memory_dont"
@@ -17136,9 +17139,10 @@
     "gelombang": {
       "word": "gelombang",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:01.426Z",
+      "updated_at": "2026-11-14T11:34:43.846Z",
       "display": "gelombang",
       "cn": "波浪；浪潮",
+      "last_review": "2026-11-14T11:34:43.786Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -17146,7 +17150,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "subuh": {
       "word": "subuh",
@@ -19454,8 +19458,9 @@
     "dibersihkan": {
       "word": "dibersihkan",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:01:05.395Z",
+      "updated_at": "2026-11-14T11:21:10.280Z",
       "display": "dibersihkan",
+      "cn": "清洁过的",
       "last_review": "2026-09-12T15:23:53.100Z",
       "last_mastered": "2026-09-12T15:23:53.100Z",
       "reasons": [],
@@ -25860,30 +25865,32 @@
     "kura-kura": {
       "word": "kura-kura",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:21.257Z",
+      "updated_at": "2026-11-14T11:34:45.930Z",
       "display": "kura-kura",
       "cn": "乌龟",
+      "last_review": "2026-11-14T11:34:45.872Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "lumba-lumba": {
       "word": "lumba-lumba",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:21.299Z",
+      "updated_at": "2026-11-14T11:34:47.747Z",
       "display": "lumba-lumba",
       "cn": "海豚",
+      "last_review": "2026-11-14T11:34:47.693Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "cendrawasih": {
       "word": "cendrawasih",
@@ -27760,16 +27767,17 @@
     "resepsionis hotel": {
       "word": "resepsionis hotel",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:26.064Z",
+      "updated_at": "2026-11-14T11:34:52.837Z",
       "display": "resepsionis hotel",
       "cn": "酒店前台",
+      "last_review": "2026-11-14T11:34:52.784Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "catur": {
       "word": "catur",
@@ -29399,16 +29407,17 @@
     "cerdik": {
       "word": "cerdik",
       "status": "active",
-      "updated_at": "2026-10-14T07:02:41.898Z",
+      "updated_at": "2026-11-14T11:34:41.193Z",
       "display": "cerdik",
       "cn": "机灵；狡黠",
+      "last_review": "2026-11-14T11:34:41.134Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "berbaris": {
       "word": "berbaris",
@@ -30223,23 +30232,23 @@
     "penanganan": {
       "word": "penanganan",
       "status": "active",
-      "updated_at": "2026-11-06T01:57:09.783Z",
+      "updated_at": "2026-11-14T11:31:23.725Z",
       "display": "penanganan",
-      "cn": "处理；应对（过程）",
+      "cn": "处理；应对（的过程或方式）",
       "root": "tangan",
       "root_cn": "手",
-      "last_wrong": "2026-10-26T13:19:57.977Z",
-      "last_review": "2026-11-06T01:57:09.654Z",
+      "last_wrong": "2026-11-14T11:31:23.658Z",
+      "last_review": "2026-11-14T11:31:23.658Z",
       "source": "课程小测",
-      "source_date": "2026-10-26",
+      "source_date": "2026-11-14",
       "session": "18:00",
       "reasons": [
         "bipa_secondary_dont",
         "memory_fuzzy",
         "lesson_wrong"
       ],
-      "wrong_count": 2,
-      "right_streak": 3
+      "wrong_count": 3,
+      "right_streak": 0
     },
     "tuntas": {
       "word": "tuntas",
@@ -32021,22 +32030,22 @@
     "kepepet": {
       "word": "kepepet",
       "status": "active",
-      "updated_at": "2026-11-14T08:25:55.101Z",
+      "updated_at": "2026-11-14T11:30:50.403Z",
       "display": "kepepet",
-      "cn": "被逼到很紧；没什么余地",
+      "cn": "被逼到没退路；（时间、钱）很紧，迫不得已",
       "root": "pepet",
-      "root_cn": "逼近；紧逼",
-      "last_wrong": "2026-11-14T08:25:55.040Z",
-      "last_review": "2026-11-14T08:25:55.040Z",
-      "source": "课程自检",
-      "source_date": "2026-10-25",
+      "root_cn": "逼近；挤紧",
+      "last_wrong": "2026-11-14T11:30:50.316Z",
+      "last_review": "2026-11-14T11:30:50.316Z",
+      "source": "课程小测",
+      "source_date": "2026-11-14",
       "session": "18:00",
       "reasons": [
         "memory_dont",
         "lesson_wrong",
         "quick_wrong"
       ],
-      "wrong_count": 3,
+      "wrong_count": 4,
       "right_streak": 0
     },
     "keduluan": {
