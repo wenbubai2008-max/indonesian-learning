@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-14",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 85
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-13T14:01:08.804Z",
-    "lesson_watermark": "2026-11-13 18:00",
-    "index_updated": "2026-11-13",
-    "runtime_hash": "59cfe64ba158dad90d56e90d5219d00c7e2699aa6e2f5706ab5f988ffbe2961e",
-    "index_hash": "4f1d5506657f0c999449d3adbf91ffb13e9426f0472358d1aa92c1fb591e5523",
+    "runtime_generated_at": "2026-11-14T00:32:03.780Z",
+    "lesson_watermark": "2026-11-14 08:00",
+    "index_updated": "2026-11-14",
+    "runtime_hash": "98cf368568fc5591341d61d4822fa3ec3d74506382ccdde5721be6a2b5785e0c",
+    "index_hash": "29d8ad549eaee507aacb63e8fbedd9a4c55634bf1232bd4676626c0f13c8cc58",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -71,10 +71,6 @@
         "助手；帮佣"
       ],
       [
-        "natal",
-        "圣诞节"
-      ],
-      [
         "harimau",
         "老虎"
       ],
@@ -87,14 +83,6 @@
         "海豚"
       ],
       [
-        "gantungan baju",
-        "衣架"
-      ],
-      [
-        "emas",
-        "金色"
-      ],
-      [
         "oranye",
         "橙色"
       ],
@@ -103,40 +91,12 @@
         "毛/羽毛"
       ],
       [
-        "ikal",
-        "波浪卷"
-      ],
-      [
         "botak",
         "秃头"
       ],
       [
-        "blus",
-        "女式衬衫"
-      ],
-      [
-        "rok",
-        "裙子"
-      ],
-      [
         "bungkuk",
         "弯腰"
-      ],
-      [
-        "bertujuan",
-        "旨在；以……为目的"
-      ],
-      [
-        "menekan-nekan",
-        "反复按；乱按"
-      ],
-      [
-        "penonton",
-        "观众"
-      ],
-      [
-        "personil",
-        "人员；乐队成员"
       ],
       [
         "berangkat kuliah",
@@ -1477,26 +1437,6 @@
         "秘密"
       ],
       [
-        "membandingkan",
-        2,
-        0,
-        "",
-        "2026-10-22T15:34:57.946Z",
-        "比较；进行对比",
-        "banding",
-        "比较"
-      ],
-      [
-        "malu-malu",
-        3,
-        0,
-        "",
-        "2026-10-15T13:47:26.384Z",
-        "有点害羞；不好意思表达",
-        "malu",
-        "害羞；难为情"
-      ],
-      [
         "ribut",
         2,
         0,
@@ -1545,16 +1485,6 @@
         "香的；香味好闻",
         "wangi",
         "香"
-      ],
-      [
-        "curhat",
-        2,
-        0,
-        "",
-        "2026-10-19T13:16:11.211Z",
-        "倾诉；诉苦；聊心事",
-        "curhat",
-        "倾诉（curahan hati的口语缩略）"
       ],
       [
         "rekan kerja",
@@ -1845,16 +1775,6 @@
         "在……之后",
         "sudah",
         "已经"
-      ],
-      [
-        "becek",
-        2,
-        0,
-        "",
-        "2026-10-19T13:14:33.178Z",
-        "泥泞的；湿漉漉的",
-        "becek",
-        "泥泞"
       ],
       [
         "cemas",
@@ -2395,6 +2315,146 @@
         "亏；吃亏；划不来",
         "rugi",
         "亏损"
+      ],
+      [
+        "teriak",
+        2,
+        0,
+        "",
+        "2026-10-23T23:38:22.391Z",
+        "大喊；喊叫",
+        "teriak",
+        "喊叫"
+      ],
+      [
+        "terpeleset",
+        2,
+        0,
+        "",
+        "2026-10-24T02:32:52.451Z",
+        "滑倒；脚下一滑",
+        "peleset",
+        "滑；偏离"
+      ],
+      [
+        "bengkak",
+        2,
+        0,
+        "",
+        "2026-10-19T13:14:42.417Z",
+        "肿；肿胀",
+        "bengkak",
+        "肿"
+      ],
+      [
+        "bongkar",
+        2,
+        0,
+        "",
+        "2026-10-19T13:15:34.929Z",
+        "拆开；卸下；翻出来",
+        "bongkar",
+        "拆开；卸下；翻出"
+      ],
+      [
+        "Natal",
+        3,
+        0,
+        "",
+        "",
+        "圣诞节",
+        "Natal",
+        "圣诞（节）"
+      ],
+      [
+        "bertujuan",
+        3,
+        0,
+        "",
+        "",
+        "旨在；以……为目的",
+        "tuju",
+        "朝向；目标"
+      ],
+      [
+        "personil",
+        3,
+        0,
+        "",
+        "",
+        "（乐队等的）成员；人员",
+        "personil",
+        "人员"
+      ],
+      [
+        "penonton",
+        3,
+        0,
+        "",
+        "",
+        "观众",
+        "tonton",
+        "观看"
+      ],
+      [
+        "blus",
+        3,
+        0,
+        "",
+        "",
+        "女式衬衫；女士上衣",
+        "blus",
+        "女式衬衫"
+      ],
+      [
+        "rok",
+        3,
+        0,
+        "",
+        "",
+        "（半身）裙子",
+        "rok",
+        "裙子"
+      ],
+      [
+        "emas",
+        3,
+        0,
+        "",
+        "",
+        "金子；金色",
+        "emas",
+        "金"
+      ],
+      [
+        "ikal",
+        3,
+        0,
+        "",
+        "",
+        "（头发）波浪卷的",
+        "ikal",
+        "卷；波浪卷"
+      ],
+      [
+        "gantungan baju",
+        3,
+        0,
+        "",
+        "",
+        "衣架",
+        "gantung",
+        "挂"
+      ],
+      [
+        "menekan-nekan",
+        3,
+        0,
+        "",
+        "",
+        "反复按；一直按",
+        "tekan",
+        "按；压"
       ]
     ],
     "focus": [
@@ -2945,6 +3005,29 @@
         "diakui",
         "aspek"
       ]
+    },
+    {
+      "date": "2026-11-14",
+      "session": "am",
+      "review_core": [
+        "berteriak",
+        "becek",
+        "curhat",
+        "malu-malu",
+        "membandingkan"
+      ],
+      "new_words": [
+        "natal",
+        "bertujuan",
+        "personil",
+        "penonton",
+        "blus",
+        "rok",
+        "emas",
+        "ikal",
+        "gantungan baju",
+        "menekan-nekan"
+      ]
     }
   ],
   "previous_pm": {
@@ -2964,7 +3047,88 @@
       "kesel"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-14",
+    "vocab": [
+      [
+        "Natal",
+        "圣诞节",
+        "Christmas",
+        "Natal",
+        "圣诞（节）"
+      ],
+      [
+        "bertujuan",
+        "旨在；以……为目的",
+        "to aim to; to be intended to",
+        "tuju",
+        "朝向；目标"
+      ],
+      [
+        "personil",
+        "（乐队等的）成员；人员",
+        "band member; personnel",
+        "personil",
+        "人员"
+      ],
+      [
+        "penonton",
+        "观众",
+        "audience; spectator",
+        "tonton",
+        "观看"
+      ],
+      [
+        "blus",
+        "女式衬衫；女士上衣",
+        "blouse",
+        "blus",
+        "女式衬衫"
+      ],
+      [
+        "rok",
+        "（半身）裙子",
+        "skirt",
+        "rok",
+        "裙子"
+      ],
+      [
+        "emas",
+        "金子；金色",
+        "gold; golden",
+        "emas",
+        "金"
+      ],
+      [
+        "ikal",
+        "（头发）波浪卷的",
+        "wavy (hair)",
+        "ikal",
+        "卷；波浪卷"
+      ],
+      [
+        "gantungan baju",
+        "衣架",
+        "clothes hanger",
+        "gantung",
+        "挂"
+      ],
+      [
+        "menekan-nekan",
+        "反复按；一直按",
+        "to press repeatedly",
+        "tekan",
+        "按；压"
+      ]
+    ],
+    "review_vocab": [
+      "berteriak",
+      "becek",
+      "curhat",
+      "malu-malu",
+      "membandingkan"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

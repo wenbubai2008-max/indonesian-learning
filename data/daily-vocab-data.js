@@ -13662,9 +13662,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-11-12 18:00",
+    "last_seen": "2026-11-14 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13672,13 +13672,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-24",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-14"
     ],
     "lesson_occurrences": [
       "2026-09-24 08:00",
       "2026-11-11 08:00",
       "2026-11-11 18:00",
-      "2026-11-12 18:00"
+      "2026-11-12 18:00",
+      "2026-11-14 08:00"
     ]
   },
   {
@@ -15186,19 +15188,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 18:00",
+    "last_seen": "2026-11-14 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-11-14"
     ],
     "lesson_occurrences": [
       "2026-09-27 08:00",
-      "2026-09-27 18:00"
+      "2026-09-27 18:00",
+      "2026-11-14 08:00"
     ]
   },
   {
@@ -15405,19 +15409,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "新同事说话还有些害羞。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 18:00",
-    "last_seen": "2026-09-27 18:00",
+    "last_seen": "2026-11-14 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-11-14"
     ],
     "lesson_occurrences": [
-      "2026-09-27 18:00"
+      "2026-09-27 18:00",
+      "2026-11-14 08:00"
     ]
   },
   {
@@ -15491,21 +15499,23 @@ window.DAILY_VOCAB_DB = [
       "口语",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-14 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-28",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-14"
     ],
     "lesson_occurrences": [
       "2026-09-28 08:00",
       "2026-09-28 18:00",
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-11-14 08:00"
     ]
   },
   {
@@ -15731,19 +15741,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-09-28 18:00",
+    "last_seen": "2026-11-14 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-28"
+      "2026-09-28",
+      "2026-11-14"
     ],
     "lesson_occurrences": [
       "2026-09-28 08:00",
-      "2026-09-28 18:00"
+      "2026-09-28 18:00",
+      "2026-11-14 08:00"
     ]
   },
   {
@@ -32486,6 +32498,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-13 18:00"
+    ]
+  },
+  {
+    "word": "Natal",
+    "cn": "圣诞节",
+    "en": "Christmas",
+    "root": "Natal",
+    "root_cn": "圣诞（节）",
+    "example": "Setiap Natal, keluarga Maria berkumpul di rumah nenek dan makan masakan tradisional Manado.",
+    "example_cn": "每年圣诞节，玛丽亚一家都会聚在奶奶家，吃万鸦老的传统菜。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 08:00"
+    ]
+  },
+  {
+    "word": "bertujuan",
+    "cn": "旨在；以……为目的",
+    "en": "to aim to; to be intended to",
+    "root": "tuju",
+    "root_cn": "朝向；目标",
+    "example": "Aturan baru ini bertujuan agar karyawan tidak boros memakai kertas.",
+    "example_cn": "这条新规定的目的是让员工不浪费纸张。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 08:00"
+    ]
+  },
+  {
+    "word": "personil",
+    "cn": "（乐队等的）成员；人员",
+    "en": "band member; personnel",
+    "root": "personil",
+    "root_cn": "人员",
+    "example": "Band itu sekarang tinggal tiga personil karena gitarisnya diterima kerja di Singapura.",
+    "example_cn": "那支乐队现在只剩三个成员了，因为吉他手被新加坡的一家公司录用了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 08:00"
+    ]
+  },
+  {
+    "word": "penonton",
+    "cn": "观众",
+    "en": "audience; spectator",
+    "root": "tonton",
+    "root_cn": "观看",
+    "example": "Penontonnya beragam, dari anak kecil sampai kakek-nenek.",
+    "example_cn": "观众各种各样，从小孩到爷爷奶奶都有。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 08:00"
+    ]
+  },
+  {
+    "word": "blus",
+    "cn": "女式衬衫；女士上衣",
+    "en": "blouse",
+    "root": "blus",
+    "root_cn": "女式衬衫",
+    "example": "Seandainya blus ini ada ukuran M-nya, saya pasti langsung beli.",
+    "example_cn": "要是这件女衬衫有 M 码，我肯定马上就买了。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 08:00"
+    ]
+  },
+  {
+    "word": "rok",
+    "cn": "（半身）裙子",
+    "en": "skirt",
+    "root": "rok",
+    "root_cn": "裙子",
+    "example": "Seragam SD untuk murid perempuan di Indonesia biasanya kemeja putih dan rok merah.",
+    "example_cn": "印尼小学女生的校服一般是白衬衫配红裙子。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 08:00"
+    ]
+  },
+  {
+    "word": "emas",
+    "cn": "金子；金色",
+    "en": "gold; golden",
+    "root": "emas",
+    "root_cn": "金",
+    "example": "Ibu menyimpan kalung emas pemberian nenek di lemari dan hanya memakainya di acara keluarga.",
+    "example_cn": "妈妈把奶奶送的金项链收在柜子里，只在家庭聚会时戴。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 08:00"
+    ]
+  },
+  {
+    "word": "ikal",
+    "cn": "（头发）波浪卷的",
+    "en": "wavy (hair)",
+    "root": "ikal",
+    "root_cn": "卷；波浪卷",
+    "example": "Rambutku ikal, jadi habis bangun tidur harus aku rapihin dulu.",
+    "example_cn": "我头发是卷的，所以起床后得先打理一下。（habis = setelah，rapihin = rapikan）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 08:00"
+    ]
+  },
+  {
+    "word": "gantungan baju",
+    "cn": "衣架",
+    "en": "clothes hanger",
+    "root": "gantung",
+    "root_cn": "挂",
+    "example": "Habis disetrika, kemejanya langsung aku gantung di gantungan baju biar nggak kusut.",
+    "example_cn": "衬衫熨好后，我马上挂到衣架上，免得又皱了。（biar = supaya，nggak = tidak）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 08:00"
+    ]
+  },
+  {
+    "word": "menekan-nekan",
+    "cn": "反复按；一直按",
+    "en": "to press repeatedly",
+    "root": "tekan",
+    "root_cn": "按；压",
+    "example": "Jangan menekan-nekan tombol lift; pintunya tidak akan terbuka lebih cepat.",
+    "example_cn": "别一直按电梯按钮，门也不会开得更快。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 08:00"
     ]
   }
 ];
