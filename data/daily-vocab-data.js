@@ -7828,17 +7828,17 @@ window.DAILY_VOCAB_DB = [
     "en": "be pressed; be in a tight spot",
     "root": "pepet",
     "root_cn": "逼近；紧逼",
-    "example": "Kalau udah kepepet waktu, aku terpaksa naik ojek. Udah mahal, macet pula.",
-    "example_cn": "要是时间实在来不及，我只好坐摩的。又贵，路上还堵。（udah = sudah）",
+    "example": "Akhir bulan aku lagi kepepet, jadi semua pengeluaran yang nggak penting aku tunda dulu.",
+    "example_cn": "月底我手头很紧，所以不重要的开销我都先往后推。（nggak = tidak）",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-10-25 18:00",
+    "last_seen": "2026-11-14 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -7846,12 +7846,14 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-08",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-11-14"
     ],
     "lesson_occurrences": [
       "2026-09-08 08:00",
       "2026-09-08 19:00",
-      "2026-10-25 18:00"
+      "2026-10-25 18:00",
+      "2026-11-14 18:00"
     ]
   },
   {
@@ -8261,17 +8263,17 @@ window.DAILY_VOCAB_DB = [
     "en": "unexpectedly get saddled with",
     "root": "tiban",
     "root_cn": "落到；压到",
-    "example": "Gara-gara jadi satu-satunya jomblo di tim, aku yang ketiban tugas lembur malam Minggu.",
-    "example_cn": "因为我是组里唯一的单身，周六晚上加班的任务就落到我头上了。（gara-gara = karena）",
+    "example": "Teman sekantorku tiba-tiba sakit, jadi aku yang ketiban tugas presentasi di depan klien.",
+    "example_cn": "我同事突然病了，所以给客户做汇报的任务落到了我头上。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-10-26 18:00",
+    "last_seen": "2026-11-14 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -8279,12 +8281,14 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-09",
-      "2026-10-26"
+      "2026-10-26",
+      "2026-11-14"
     ],
     "lesson_occurrences": [
       "2026-09-09 08:00",
       "2026-09-09 19:00",
-      "2026-10-26 18:00"
+      "2026-10-26 18:00",
+      "2026-11-14 18:00"
     ]
   },
   {
@@ -13349,23 +13353,27 @@ window.DAILY_VOCAB_DB = [
     "en": "add",
     "root": "tambah",
     "root_cn": "增加；添加",
-    "example": "Saya menambahkan satu catatan agar informasinya lebih jelas.",
-    "example_cn": "我加了一条备注，让信息更清楚。",
+    "example": "Penjual gorengan itu menambahkan sedikit tepung beras supaya adonannya lebih renyah.",
+    "example_cn": "那个卖炸物的小贩加了一点米粉，好让面糊炸出来更酥脆。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-23 08:00",
+    "last_seen": "2026-11-14 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-23"
+      "2026-09-23",
+      "2026-11-14"
     ],
     "lesson_occurrences": [
-      "2026-09-23 08:00"
+      "2026-09-23 08:00",
+      "2026-11-14 18:00"
     ]
   },
   {
@@ -13890,23 +13898,25 @@ window.DAILY_VOCAB_DB = [
     "en": "hit; crash into",
     "root": "tabrak",
     "root_cn": "撞；碰撞",
-    "example": "Mobil itu hampir menabrak motor di depan kantor.",
-    "example_cn": "那辆汽车差点撞到办公室前面的摩托车。",
+    "example": "Sesudah menyetir delapan jam, sopir itu mengantuk, dan mobilnya hampir menabrak pembatas jalan.",
+    "example_cn": "开了八个小时车之后，司机犯困了，车差点撞上道路护栏。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-21 18:00",
-    "last_seen": "2026-09-21 18:00",
+    "last_seen": "2026-11-14 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-21"
+      "2026-09-21",
+      "2026-11-14"
     ],
     "lesson_occurrences": [
-      "2026-09-21 18:00"
+      "2026-09-21 18:00",
+      "2026-11-14 18:00"
     ]
   },
   {
@@ -21816,16 +21826,16 @@ window.DAILY_VOCAB_DB = [
     "en": "handling; treatment",
     "root": "tangan",
     "root_cn": "手",
-    "example": "Tim kami bertanggung jawab atas penanganan keluhan pelanggan.",
-    "example_cn": "我们团队负责处理客户投诉。",
+    "example": "Pihak hotel menyatakan bahwa penanganan keluhan tamu akan dipercepat mulai bulan depan.",
+    "example_cn": "酒店方面表示，从下个月起会加快处理客人的投诉。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-10-29 18:00",
+    "last_seen": "2026-11-14 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -21833,12 +21843,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-10-15",
       "2026-10-26",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-11-14"
     ],
     "lesson_occurrences": [
       "2026-10-15 08:00",
       "2026-10-26 18:00",
-      "2026-10-29 18:00"
+      "2026-10-29 18:00",
+      "2026-11-14 18:00"
     ]
   },
   {
@@ -32506,23 +32518,26 @@ window.DAILY_VOCAB_DB = [
     "en": "Christmas",
     "root": "Natal",
     "root_cn": "圣诞（节）",
-    "example": "Setiap Natal, keluarga Maria berkumpul di rumah nenek dan makan masakan tradisional Manado.",
-    "example_cn": "每年圣诞节，玛丽亚一家都会聚在奶奶家，吃万鸦老的传统菜。",
+    "example": "Waktu tinggal di Manado, aku mulai mengenal tradisi Natal yang meriah; hampir setiap rumah memasang lampu warna-warni.",
+    "example_cn": "住在万鸦老的时候，我开始了解那里热闹的圣诞传统：几乎每家每户都挂上彩灯。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-14 08:00",
-    "last_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-14"
     ],
     "lesson_occurrences": [
-      "2026-11-14 08:00"
+      "2026-11-14 08:00",
+      "2026-11-14 18:00"
     ]
   },
   {
@@ -32681,23 +32696,26 @@ window.DAILY_VOCAB_DB = [
     "en": "wavy (hair)",
     "root": "ikal",
     "root_cn": "卷；波浪卷",
-    "example": "Rambutku ikal, jadi habis bangun tidur harus aku rapihin dulu.",
-    "example_cn": "我头发是卷的，所以起床后得先打理一下。（habis = setelah，rapihin = rapikan）",
+    "example": "Kena angin laut seharian, rambut ikal Sinta jadi kusut dan susah disisir.",
+    "example_cn": "吹了一整天海风，Sinta 的卷发变得乱糟糟的，很难梳开。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-14 08:00",
-    "last_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-14 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-14"
     ],
     "lesson_occurrences": [
-      "2026-11-14 08:00"
+      "2026-11-14 08:00",
+      "2026-11-14 18:00"
     ]
   },
   {
@@ -32748,6 +32766,131 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-14 08:00"
+    ]
+  },
+  {
+    "word": "resepsionis hotel",
+    "cn": "酒店前台（接待员）",
+    "en": "hotel receptionist",
+    "root": "resepsionis",
+    "root_cn": "前台接待员（来自英语 receptionist）",
+    "example": "Resepsionis hotel itu sangat ramah; dia langsung menelepon teknisi waktu AC kamar kami mati.",
+    "example_cn": "那位酒店前台非常友善，我们房间空调坏了，她马上就给维修师傅打了电话。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 18:00",
+    "last_seen": "2026-11-14 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 18:00"
+    ]
+  },
+  {
+    "word": "gelombang",
+    "cn": "波浪；（一）波、批次",
+    "en": "wave; batch (of registration)",
+    "root": "gelombang",
+    "root_cn": "波浪",
+    "example": "Waktu air laut pasang, gelombang di pantai ini bisa tinggi sekali, jadi pengunjung dilarang berenang.",
+    "example_cn": "涨潮的时候，这片海滩的浪可能会很大，所以游客禁止下水游泳。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 18:00",
+    "last_seen": "2026-11-14 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 18:00"
+    ]
+  },
+  {
+    "word": "lumba-lumba",
+    "cn": "海豚",
+    "en": "dolphin",
+    "root": "lumba-lumba",
+    "root_cn": "只以重叠形式使用（lumba 单独不成词）",
+    "example": "Keberadaan lumba-lumba di perairan Lovina membuat desa nelayan itu ramai dikunjungi wisatawan.",
+    "example_cn": "罗威纳海域有海豚，这让那个渔村吸引了很多游客。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 18:00",
+    "last_seen": "2026-11-14 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 18:00"
+    ]
+  },
+  {
+    "word": "kura-kura",
+    "cn": "乌龟（陆龟、淡水龟）",
+    "en": "tortoise; turtle",
+    "root": "kura-kura",
+    "root_cn": "只以重叠形式使用（kura 单独不成词）",
+    "example": "Di kolam dekat lobi hotel ada dua macam kura-kura; anak-anak suka memberi mereka makan sayur.",
+    "example_cn": "酒店大堂旁的水池里有两种乌龟，孩子们喜欢喂它们吃菜。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 18:00",
+    "last_seen": "2026-11-14 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 18:00"
+    ]
+  },
+  {
+    "word": "cerdik",
+    "cn": "机灵；会想巧办法（有时带点狡黠）",
+    "en": "clever; shrewd; resourceful",
+    "root": "cerdik",
+    "root_cn": "机灵，有计谋",
+    "example": "Dalam dongeng, si Kancil itu cerdik: dia berhasil menipu buaya supaya bisa menyeberang sungai.",
+    "example_cn": "在童话里，小鼷鹿很机灵：它成功骗过了鳄鱼，好过河。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-14 18:00",
+    "last_seen": "2026-11-14 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-14"
+    ],
+    "lesson_occurrences": [
+      "2026-11-14 18:00"
     ]
   }
 ];

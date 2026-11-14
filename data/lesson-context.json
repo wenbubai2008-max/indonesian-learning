@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-14",
-    "session": "pm",
-    "time": "18:00",
-    "day": 85
+    "date": "2026-11-15",
+    "session": "am",
+    "time": "08:00",
+    "day": 86
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-14T09:41:05.238Z",
-    "lesson_watermark": "2026-11-14 08:00",
+    "runtime_generated_at": "2026-11-14T10:52:10.416Z",
+    "lesson_watermark": "2026-11-14 18:00",
     "index_updated": "2026-11-14",
-    "runtime_hash": "1eef6cc7738f7d68d1e3b6b74abf7b1efa88edafd3157ef98b0996bb57e3dd91",
-    "index_hash": "29d8ad549eaee507aacb63e8fbedd9a4c55634bf1232bd4676626c0f13c8cc58",
+    "runtime_hash": "5e64e329feab1f5328337d9b09e27b020465ee68b113618cedb4c54098e0a2cc",
+    "index_hash": "796e4347bb9e9cc15485acd1822bed9fd12eba1252c35e1eba96a11ace4931d6",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -55,24 +55,12 @@
         "有趣、让人沉浸"
       ],
       [
-        "gelombang",
-        "波浪；浪潮"
-      ],
-      [
         "menyerang",
         "攻击；侵袭"
       ],
       [
         "harimau",
         "老虎"
-      ],
-      [
-        "kura-kura",
-        "乌龟"
-      ],
-      [
-        "lumba-lumba",
-        "海豚"
       ],
       [
         "bulu",
@@ -107,10 +95,6 @@
         "马尾/辫子"
       ],
       [
-        "resepsionis hotel",
-        "酒店前台"
-      ],
-      [
         "catur",
         "国际象棋"
       ],
@@ -125,10 +109,6 @@
       [
         "suci",
         "神圣的"
-      ],
-      [
-        "cerdik",
-        "机灵；狡黠"
       ]
     ],
     "review": [
@@ -1103,16 +1083,6 @@
         "测量"
       ],
       [
-        "menabrak",
-        2,
-        0,
-        "",
-        "2026-10-19T05:52:59.597Z",
-        "撞；撞上",
-        "tabrak",
-        "撞；碰撞"
-      ],
-      [
         "menghapus",
         3,
         0,
@@ -1181,16 +1151,6 @@
         "惊讶；震惊",
         "kejut",
         "惊；使吃惊"
-      ],
-      [
-        "menambahkan",
-        3,
-        0,
-        "",
-        "2026-10-19T05:53:54.363Z",
-        "增加",
-        "tambah",
-        "增加；添加"
       ],
       [
         "nyampe",
@@ -2333,24 +2293,24 @@
         "拆开；卸下；翻出"
       ],
       [
-        "Natal",
-        3,
+        "retur",
+        2,
         0,
         "",
-        "2026-11-14T03:09:20.661Z",
-        "圣诞节",
-        "Natal",
-        "圣诞（节）"
+        "2026-10-23T23:35:22.737Z",
+        "退货；退回",
+        "retur",
+        "退回；退货（外来词，本身就是词根）"
       ],
       [
-        "ikal",
+        "pastikan",
         3,
         0,
         "",
-        "2026-11-14T03:09:17.316Z",
-        "（头发）波浪卷的",
-        "ikal",
-        "卷；波浪卷"
+        "2026-10-23T23:33:36.933Z",
+        "确保；弄清楚",
+        "pasti",
+        "确定；一定"
       ]
     ],
     "focus": [
@@ -2615,47 +2575,6 @@
     "oral": []
   },
   "history_7d": [
-    {
-      "date": "2026-11-07",
-      "session": "am",
-      "review_core": [
-        "penyebab",
-        "sebab",
-        "hiburan",
-        "mahir",
-        "ancaman"
-      ],
-      "new_words": [
-        "bakti",
-        "di samping",
-        "sering",
-        "merek",
-        "melewati",
-        "lompat",
-        "pinggang",
-        "pundak",
-        "menggunakan",
-        "menikmati"
-      ]
-    },
-    {
-      "date": "2026-11-07",
-      "session": "pm",
-      "review_core": [
-        "nangkep",
-        "nggak kepegang",
-        "minat",
-        "pertimbangan",
-        "bidang"
-      ],
-      "new_words": [
-        "lowongan kerja",
-        "profesi",
-        "syarat",
-        "identitas",
-        "mandiri"
-      ]
-    },
     {
       "date": "2026-11-08",
       "session": "am",
@@ -2924,107 +2843,44 @@
         "gantungan baju",
         "menekan-nekan"
       ]
+    },
+    {
+      "date": "2026-11-14",
+      "session": "pm",
+      "review_core": [
+        "kepepet",
+        "penanganan",
+        "ketiban",
+        "menabrak",
+        "menambahkan"
+      ],
+      "new_words": [
+        "resepsionis hotel",
+        "gelombang",
+        "lumba-lumba",
+        "kura-kura",
+        "cerdik"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "new_words": [
-      "pengajar",
-      "peran",
-      "dididik",
-      "diakui",
-      "aspek"
+      "resepsionis hotel",
+      "gelombang",
+      "lumba-lumba",
+      "kura-kura",
+      "cerdik"
     ],
     "review_core": [
-      "menunjukkan",
-      "pembangunan",
-      "melainkan",
-      "gelisah",
-      "kesel"
+      "kepepet",
+      "penanganan",
+      "ketiban",
+      "menabrak",
+      "menambahkan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-14",
-    "vocab": [
-      [
-        "Natal",
-        "圣诞节",
-        "Christmas",
-        "Natal",
-        "圣诞（节）"
-      ],
-      [
-        "bertujuan",
-        "旨在；以……为目的",
-        "to aim to; to be intended to",
-        "tuju",
-        "朝向；目标"
-      ],
-      [
-        "personil",
-        "（乐队等的）成员；人员",
-        "band member; personnel",
-        "personil",
-        "人员"
-      ],
-      [
-        "penonton",
-        "观众",
-        "audience; spectator",
-        "tonton",
-        "观看"
-      ],
-      [
-        "blus",
-        "女式衬衫；女士上衣",
-        "blouse",
-        "blus",
-        "女式衬衫"
-      ],
-      [
-        "rok",
-        "（半身）裙子",
-        "skirt",
-        "rok",
-        "裙子"
-      ],
-      [
-        "emas",
-        "金子；金色",
-        "gold; golden",
-        "emas",
-        "金"
-      ],
-      [
-        "ikal",
-        "（头发）波浪卷的",
-        "wavy (hair)",
-        "ikal",
-        "卷；波浪卷"
-      ],
-      [
-        "gantungan baju",
-        "衣架",
-        "clothes hanger",
-        "gantung",
-        "挂"
-      ],
-      [
-        "menekan-nekan",
-        "反复按；一直按",
-        "to press repeatedly",
-        "tekan",
-        "按；压"
-      ]
-    ],
-    "review_vocab": [
-      "berteriak",
-      "becek",
-      "curhat",
-      "malu-malu",
-      "membandingkan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
