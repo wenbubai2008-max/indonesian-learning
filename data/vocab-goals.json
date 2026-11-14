@@ -1,0 +1,4848 @@
+{
+ "version": 1,
+ "observation_only": false,
+ "confirmed_at": "2026-11-14",
+ "note": "2026-11-14 用户确认：全部按 vocab-goals-suggested.json 的建议，unsure 一律定为 use。复习阶段打开时由 review-phase.js 读取。",
+ "words": {
+  "tingkat": {
+   "goal": "use",
+   "fast": false
+  },
+  "meningkat": {
+   "goal": "use",
+   "fast": false
+  },
+  "meningkatkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "peningkatan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ganggu": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengganggu": {
+   "goal": "use",
+   "fast": false
+  },
+  "pilih": {
+   "goal": "use",
+   "fast": false
+  },
+  "pilihan": {
+   "goal": "use",
+   "fast": false
+  },
+  "untung": {
+   "goal": "use",
+   "fast": false
+  },
+  "keuntungan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menghadapi": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengurangi": {
+   "goal": "use",
+   "fast": false
+  },
+  "memilih": {
+   "goal": "use",
+   "fast": false
+  },
+  "kesalahan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyadari": {
+   "goal": "use",
+   "fast": false
+  },
+  "berkembang": {
+   "goal": "use",
+   "fast": false
+  },
+  "kemampuan": {
+   "goal": "use",
+   "fast": false
+  },
+  "berbeda": {
+   "goal": "use",
+   "fast": false
+  },
+  "mencapai": {
+   "goal": "use",
+   "fast": false
+  },
+  "mendukung": {
+   "goal": "use",
+   "fast": false
+  },
+  "menghindari": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyelesaikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mempertimbangkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "memastikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menerima": {
+   "goal": "use",
+   "fast": false
+  },
+  "menolak": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyesuaikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebiasaan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menunggu": {
+   "goal": "use",
+   "fast": false
+  },
+  "menghubungi": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengirimkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "meminta": {
+   "goal": "use",
+   "fast": false
+  },
+  "memberikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menjelaskan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyampaikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengingatkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "terlambat": {
+   "goal": "use",
+   "fast": false
+  },
+  "tersedia": {
+   "goal": "use",
+   "fast": false
+  },
+  "kayak": {
+   "goal": "use",
+   "fast": false
+  },
+  "soalnya": {
+   "goal": "use",
+   "fast": true
+  },
+  "makanya": {
+   "goal": "use",
+   "fast": true
+  },
+  "sempat": {
+   "goal": "use",
+   "fast": true
+  },
+  "keburu": {
+   "goal": "use",
+   "fast": true
+  },
+  "mending": {
+   "goal": "use",
+   "fast": true
+  },
+  "ribet": {
+   "goal": "use",
+   "fast": true
+  },
+  "nyebelin": {
+   "goal": "use",
+   "fast": false
+  },
+  "terserah": {
+   "goal": "use",
+   "fast": true
+  },
+  "nggak apa-apa": {
+   "goal": "use",
+   "fast": true
+  },
+  "bentar": {
+   "goal": "use",
+   "fast": true
+  },
+  "lumayan": {
+   "goal": "use",
+   "fast": true
+  },
+  "ternyata": {
+   "goal": "use",
+   "fast": true
+  },
+  "malah": {
+   "goal": "use",
+   "fast": true
+  },
+  "padahal": {
+   "goal": "use",
+   "fast": true
+  },
+  "cuma": {
+   "goal": "use",
+   "fast": true
+  },
+  "langsung": {
+   "goal": "use",
+   "fast": true
+  },
+  "ngobrol": {
+   "goal": "use",
+   "fast": true
+  },
+  "ngerepotin": {
+   "goal": "use",
+   "fast": true
+  },
+  "ketinggalan": {
+   "goal": "use",
+   "fast": true
+  },
+  "kabarin": {
+   "goal": "use",
+   "fast": true
+  },
+  "ketemu": {
+   "goal": "use",
+   "fast": true
+  },
+  "mampir": {
+   "goal": "use",
+   "fast": true
+  },
+  "buru-buru": {
+   "goal": "use",
+   "fast": true
+  },
+  "sengaja": {
+   "goal": "use",
+   "fast": true
+  },
+  "sekalian": {
+   "goal": "use",
+   "fast": true
+  },
+  "kebetulan": {
+   "goal": "use",
+   "fast": true
+  },
+  "nyari": {
+   "goal": "use",
+   "fast": true
+  },
+  "cocok": {
+   "goal": "use",
+   "fast": false
+  },
+  "bawain": {
+   "goal": "use",
+   "fast": false
+  },
+  "kepikiran": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngerasa": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyangka": {
+   "goal": "use",
+   "fast": false
+  },
+  "beres": {
+   "goal": "use",
+   "fast": true
+  },
+  "telanjur": {
+   "goal": "use",
+   "fast": false
+  },
+  "bakal": {
+   "goal": "use",
+   "fast": false
+  },
+  "giliran": {
+   "goal": "use",
+   "fast": false
+  },
+  "janjian": {
+   "goal": "use",
+   "fast": false
+  },
+  "nongkrong": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyusul": {
+   "goal": "use",
+   "fast": false
+  },
+  "pantes": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebagian": {
+   "goal": "use",
+   "fast": false
+  },
+  "kehabisan": {
+   "goal": "use",
+   "fast": true
+  },
+  "ketiduran": {
+   "goal": "use",
+   "fast": true
+  },
+  "ngantuk": {
+   "goal": "use",
+   "fast": true
+  },
+  "penasaran": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngaret": {
+   "goal": "use",
+   "fast": false
+  },
+  "mager": {
+   "goal": "use",
+   "fast": false
+  },
+  "bingung": {
+   "goal": "use",
+   "fast": true
+  },
+  "kebanyakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "terjadi": {
+   "goal": "use",
+   "fast": false
+  },
+  "berubah": {
+   "goal": "use",
+   "fast": false
+  },
+  "memutuskan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengalami": {
+   "goal": "use",
+   "fast": false
+  },
+  "mencoba": {
+   "goal": "use",
+   "fast": false
+  },
+  "menurut": {
+   "goal": "use",
+   "fast": false
+  },
+  "walaupun": {
+   "goal": "use",
+   "fast": true
+  },
+  "mengubah": {
+   "goal": "use",
+   "fast": false
+  },
+  "perubahan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengatasi": {
+   "goal": "use",
+   "fast": false
+  },
+  "berusaha": {
+   "goal": "use",
+   "fast": false
+  },
+  "berencana": {
+   "goal": "use",
+   "fast": false
+  },
+  "terbiasa": {
+   "goal": "use",
+   "fast": false
+  },
+  "terutama": {
+   "goal": "use",
+   "fast": true
+  },
+  "sementara": {
+   "goal": "use",
+   "fast": true
+  },
+  "setidaknya": {
+   "goal": "use",
+   "fast": false
+  },
+  "selesai": {
+   "goal": "use",
+   "fast": false
+  },
+  "memerlukan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyiapkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengirim": {
+   "goal": "use",
+   "fast": false
+  },
+  "memeriksa": {
+   "goal": "use",
+   "fast": false
+  },
+  "melanjutkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "segera": {
+   "goal": "use",
+   "fast": false
+  },
+  "proses": {
+   "goal": "use",
+   "fast": false
+  },
+  "kayaknya": {
+   "goal": "use",
+   "fast": true
+  },
+  "nggak jadi": {
+   "goal": "use",
+   "fast": true
+  },
+  "mendadak": {
+   "goal": "use",
+   "fast": false
+  },
+  "ada urusan": {
+   "goal": "use",
+   "fast": true
+  },
+  "nggak sempat": {
+   "goal": "use",
+   "fast": true
+  },
+  "telat": {
+   "goal": "use",
+   "fast": true
+  },
+  "gimana kalau": {
+   "goal": "use",
+   "fast": true
+  },
+  "kabari aja": {
+   "goal": "use",
+   "fast": true
+  },
+  "jadi": {
+   "goal": "use",
+   "fast": true
+  },
+  "aja": {
+   "goal": "use",
+   "fast": true
+  },
+  "kan": {
+   "goal": "use",
+   "fast": true
+  },
+  "sih": {
+   "goal": "use",
+   "fast": true
+  },
+  "kok": {
+   "goal": "use",
+   "fast": true
+  },
+  "dong": {
+   "goal": "use",
+   "fast": true
+  },
+  "nih": {
+   "goal": "use",
+   "fast": true
+  },
+  "deh": {
+   "goal": "use",
+   "fast": true
+  },
+  "emang": {
+   "goal": "use",
+   "fast": true
+  },
+  "terus": {
+   "goal": "use",
+   "fast": true
+  },
+  "biar": {
+   "goal": "use",
+   "fast": true
+  },
+  "tolong": {
+   "goal": "use",
+   "fast": true
+  },
+  "minta": {
+   "goal": "use",
+   "fast": true
+  },
+  "tanyain": {
+   "goal": "use",
+   "fast": false
+  },
+  "cek": {
+   "goal": "use",
+   "fast": true
+  },
+  "ingetin": {
+   "goal": "use",
+   "fast": true
+  },
+  "nunggu": {
+   "goal": "use",
+   "fast": true
+  },
+  "belum sempat": {
+   "goal": "use",
+   "fast": true
+  },
+  "sebentar / bentar": {
+   "goal": "use",
+   "fast": false
+  },
+  "nanti dulu": {
+   "goal": "use",
+   "fast": false
+  },
+  "nggak usah": {
+   "goal": "use",
+   "fast": true
+  },
+  "heran": {
+   "goal": "use",
+   "fast": true
+  },
+  "harusnya": {
+   "goal": "use",
+   "fast": true
+  },
+  "nyaris": {
+   "goal": "use",
+   "fast": false
+  },
+  "terpaksa": {
+   "goal": "use",
+   "fast": false
+  },
+  "menentukan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menangani": {
+   "goal": "use",
+   "fast": false
+  },
+  "tergantung": {
+   "goal": "use",
+   "fast": false
+  },
+  "seharusnya": {
+   "goal": "use",
+   "fast": true
+  },
+  "terlanjur": {
+   "goal": "use",
+   "fast": true
+  },
+  "macet": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyasar": {
+   "goal": "use",
+   "fast": true
+  },
+  "nganter": {
+   "goal": "use",
+   "fast": false
+  },
+  "jemput": {
+   "goal": "use",
+   "fast": false
+  },
+  "parkir": {
+   "goal": "use",
+   "fast": false
+  },
+  "saldo": {
+   "goal": "use",
+   "fast": false
+  },
+  "rekening": {
+   "goal": "use",
+   "fast": false
+  },
+  "tagihan": {
+   "goal": "use",
+   "fast": false
+  },
+  "hemat": {
+   "goal": "use",
+   "fast": false
+  },
+  "boros": {
+   "goal": "use",
+   "fast": false
+  },
+  "pengeluaran": {
+   "goal": "use",
+   "fast": false
+  },
+  "pemasukan": {
+   "goal": "use",
+   "fast": false
+  },
+  "anggaran": {
+   "goal": "use",
+   "fast": false
+  },
+  "biaya": {
+   "goal": "use",
+   "fast": false
+  },
+  "cicilan": {
+   "goal": "use",
+   "fast": false
+  },
+  "prioritas": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengatur": {
+   "goal": "use",
+   "fast": false
+  },
+  "membatasi": {
+   "goal": "use",
+   "fast": false
+  },
+  "menunda": {
+   "goal": "use",
+   "fast": false
+  },
+  "memperkirakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "keperluan": {
+   "goal": "use",
+   "fast": false
+  },
+  "cadangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kendaraan": {
+   "goal": "use",
+   "fast": false
+  },
+  "belok": {
+   "goal": "use",
+   "fast": false
+  },
+  "lurus": {
+   "goal": "use",
+   "fast": false
+  },
+  "putar balik": {
+   "goal": "use",
+   "fast": false
+  },
+  "tunai": {
+   "goal": "use",
+   "fast": false
+  },
+  "kembalian": {
+   "goal": "use",
+   "fast": false
+  },
+  "transfer": {
+   "goal": "use",
+   "fast": false
+  },
+  "utang": {
+   "goal": "use",
+   "fast": false
+  },
+  "pinjam": {
+   "goal": "use",
+   "fast": false
+  },
+  "stok": {
+   "goal": "use",
+   "fast": false
+  },
+  "akhirnya": {
+   "goal": "use",
+   "fast": true
+  },
+  "sebenarnya": {
+   "goal": "use",
+   "fast": true
+  },
+  "justru": {
+   "goal": "use",
+   "fast": true
+  },
+  "meskipun": {
+   "goal": "use",
+   "fast": true
+  },
+  "tetap": {
+   "goal": "use",
+   "fast": true
+  },
+  "bahkan": {
+   "goal": "use",
+   "fast": true
+  },
+  "berarti": {
+   "goal": "use",
+   "fast": true
+  },
+  "termasuk": {
+   "goal": "use",
+   "fast": false
+  },
+  "menganggap": {
+   "goal": "use",
+   "fast": false
+  },
+  "memahami": {
+   "goal": "use",
+   "fast": false
+  },
+  "menjaga": {
+   "goal": "use",
+   "fast": false
+  },
+  "kemungkinan": {
+   "goal": "use",
+   "fast": false
+  },
+  "jadwal": {
+   "goal": "use",
+   "fast": false
+  },
+  "batal": {
+   "goal": "use",
+   "fast": true
+  },
+  "lanjut": {
+   "goal": "use",
+   "fast": false
+  },
+  "izin": {
+   "goal": "use",
+   "fast": false
+  },
+  "cuti": {
+   "goal": "use",
+   "fast": false
+  },
+  "lembur": {
+   "goal": "use",
+   "fast": false
+  },
+  "urusan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngurus": {
+   "goal": "use",
+   "fast": true
+  },
+  "ngejar": {
+   "goal": "use",
+   "fast": false
+  },
+  "dadakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebuang": {
+   "goal": "use",
+   "fast": false
+  },
+  "beresin": {
+   "goal": "use",
+   "fast": true
+  },
+  "ngabarin": {
+   "goal": "use",
+   "fast": false
+  },
+  "sempetin": {
+   "goal": "use",
+   "fast": false
+  },
+  "keteteran": {
+   "goal": "use",
+   "fast": false
+  },
+  "kepending": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngejar deadline": {
+   "goal": "use",
+   "fast": false
+  },
+  "urusan dadakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "tunda": {
+   "goal": "use",
+   "fast": false
+  },
+  "kerjaan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngerjain": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyatet": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyiapin": {
+   "goal": "use",
+   "fast": false
+  },
+  "fokus": {
+   "goal": "use",
+   "fast": false
+  },
+  "setuju": {
+   "goal": "use",
+   "fast": true
+  },
+  "ngeluh": {
+   "goal": "use",
+   "fast": false
+  },
+  "masukan": {
+   "goal": "use",
+   "fast": false
+  },
+  "rapihin": {
+   "goal": "use",
+   "fast": false
+  },
+  "masuk akal": {
+   "goal": "use",
+   "fast": true
+  },
+  "keberatan": {
+   "goal": "use",
+   "fast": false
+  },
+  "sepakat": {
+   "goal": "use",
+   "fast": false
+  },
+  "tergantung situasinya": {
+   "goal": "use",
+   "fast": false
+  },
+  "kurang cocok": {
+   "goal": "use",
+   "fast": false
+  },
+  "nggak masalah": {
+   "goal": "use",
+   "fast": true
+  },
+  "mepet": {
+   "goal": "use",
+   "fast": true
+  },
+  "kelewatan": {
+   "goal": "use",
+   "fast": true
+  },
+  "nyambung": {
+   "goal": "use",
+   "fast": false
+  },
+  "kepake": {
+   "goal": "use",
+   "fast": false
+  },
+  "ketukar": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebaca": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebayang": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngikutin": {
+   "goal": "use",
+   "fast": false
+  },
+  "berantakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "beneran": {
+   "goal": "use",
+   "fast": true
+  },
+  "kerjaan numpuk": {
+   "goal": "use",
+   "fast": false
+  },
+  "cobain": {
+   "goal": "use",
+   "fast": true
+  },
+  "cukup": {
+   "goal": "use",
+   "fast": true
+  },
+  "kurang": {
+   "goal": "use",
+   "fast": true
+  },
+  "hampir": {
+   "goal": "use",
+   "fast": true
+  },
+  "sekitar": {
+   "goal": "use",
+   "fast": true
+  },
+  "habis": {
+   "goal": "use",
+   "fast": true
+  },
+  "pesan": {
+   "goal": "use",
+   "fast": false
+  },
+  "tambah": {
+   "goal": "use",
+   "fast": false
+  },
+  "diskon": {
+   "goal": "use",
+   "fast": false
+  },
+  "promo": {
+   "goal": "use",
+   "fast": false
+  },
+  "nggak sengaja": {
+   "goal": "use",
+   "fast": true
+  },
+  "nggak heran": {
+   "goal": "use",
+   "fast": true
+  },
+  "bayar": {
+   "goal": "use",
+   "fast": false
+  },
+  "murah": {
+   "goal": "use",
+   "fast": false
+  },
+  "mahal": {
+   "goal": "use",
+   "fast": false
+  },
+  "tawar": {
+   "goal": "use",
+   "fast": false
+  },
+  "bungkus": {
+   "goal": "use",
+   "fast": false
+  },
+  "porsi": {
+   "goal": "use",
+   "fast": false
+  },
+  "rasa": {
+   "goal": "use",
+   "fast": false
+  },
+  "naik": {
+   "goal": "use",
+   "fast": false
+  },
+  "turun": {
+   "goal": "use",
+   "fast": false
+  },
+  "sampai": {
+   "goal": "use",
+   "fast": true
+  },
+  "daripada": {
+   "goal": "use",
+   "fast": false
+  },
+  "ujung-ujungnya": {
+   "goal": "use",
+   "fast": false
+  },
+  "nggak worth it": {
+   "goal": "use",
+   "fast": false
+  },
+  "seenggaknya": {
+   "goal": "use",
+   "fast": false
+  },
+  "sekadar": {
+   "goal": "use",
+   "fast": false
+  },
+  "sayang kalau": {
+   "goal": "use",
+   "fast": false
+  },
+  "patungan": {
+   "goal": "use",
+   "fast": false
+  },
+  "nombok": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngirit": {
+   "goal": "use",
+   "fast": false
+  },
+  "kemahalan": {
+   "goal": "use",
+   "fast": true
+  },
+  "kewalahan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngulur": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngandelin": {
+   "goal": "use",
+   "fast": false
+  },
+  "nggak enakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "nanggung": {
+   "goal": "use",
+   "fast": false
+  },
+  "nggak tega": {
+   "goal": "use",
+   "fast": false
+  },
+  "kepotong": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngingetin": {
+   "goal": "use",
+   "fast": false
+  },
+  "asal jangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ketahuan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kepepet": {
+   "goal": "use",
+   "fast": false
+  },
+  "keduluan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kecolongan": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyangkut": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyicil": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyelip": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngebut": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngurusin": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebawa": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngerembet": {
+   "goal": "use",
+   "fast": false
+  },
+  "ketutup": {
+   "goal": "use",
+   "fast": false
+  },
+  "nahan dulu": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngelarin": {
+   "goal": "use",
+   "fast": false
+  },
+  "ketumpuk": {
+   "goal": "use",
+   "fast": false
+  },
+  "ketiban": {
+   "goal": "use",
+   "fast": false
+  },
+  "kecipratan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngilang": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngedrop": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyusahin": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngeribetin": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebablasan": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyantai": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebentur": {
+   "goal": "use",
+   "fast": false
+  },
+  "keganggu": {
+   "goal": "use",
+   "fast": false
+  },
+  "serba salah": {
+   "goal": "use",
+   "fast": false
+  },
+  "kejebak": {
+   "goal": "use",
+   "fast": false
+  },
+  "molor": {
+   "goal": "use",
+   "fast": false
+  },
+  "nentuin": {
+   "goal": "use",
+   "fast": false
+  },
+  "ketuker": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngepasin": {
+   "goal": "use",
+   "fast": false
+  },
+  "bentrok": {
+   "goal": "use",
+   "fast": false
+  },
+  "mundurin": {
+   "goal": "use",
+   "fast": false
+  },
+  "majuin": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyempetin": {
+   "goal": "use",
+   "fast": false
+  },
+  "kesiangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ketunda": {
+   "goal": "use",
+   "fast": false
+  },
+  "nggak kepegang": {
+   "goal": "use",
+   "fast": false
+  },
+  "kelabakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngejar waktu": {
+   "goal": "use",
+   "fast": false
+  },
+  "kecapean": {
+   "goal": "use",
+   "fast": false
+  },
+  "nangkep": {
+   "goal": "use",
+   "fast": false
+  },
+  "kelewat": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngobrolin": {
+   "goal": "use",
+   "fast": false
+  },
+  "kelepasan": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyelipin": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngeduluin": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngeh": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyimak": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyeletuk": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngegas": {
+   "goal": "use",
+   "fast": false
+  },
+  "sungkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ceplas-ceplos": {
+   "goal": "use",
+   "fast": false
+  },
+  "salah tingkah": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngotot": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngeles": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyindir": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyinggung": {
+   "goal": "use",
+   "fast": false
+  },
+  "nimpalin": {
+   "goal": "use",
+   "fast": false
+  },
+  "kepancing": {
+   "goal": "use",
+   "fast": false
+  },
+  "canggung": {
+   "goal": "use",
+   "fast": false
+  },
+  "ganjel": {
+   "goal": "use",
+   "fast": false
+  },
+  "salah paham": {
+   "goal": "use",
+   "fast": false
+  },
+  "baper": {
+   "goal": "use",
+   "fast": false
+  },
+  "keputusan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kesempatan": {
+   "goal": "use",
+   "fast": false
+  },
+  "sikap": {
+   "goal": "use",
+   "fast": false
+  },
+  "layak": {
+   "goal": "use",
+   "fast": false
+  },
+  "niat": {
+   "goal": "use",
+   "fast": false
+  },
+  "lengkap": {
+   "goal": "use",
+   "fast": false
+  },
+  "mampu": {
+   "goal": "use",
+   "fast": false
+  },
+  "khawatir": {
+   "goal": "use",
+   "fast": true
+  },
+  "berani": {
+   "goal": "use",
+   "fast": false
+  },
+  "tertentu": {
+   "goal": "use",
+   "fast": false
+  },
+  "intinya": {
+   "goal": "use",
+   "fast": true
+  },
+  "pokoknya": {
+   "goal": "use",
+   "fast": true
+  },
+  "bertanggung jawab": {
+   "goal": "use",
+   "fast": false
+  },
+  "hasil": {
+   "goal": "use",
+   "fast": false
+  },
+  "alasan": {
+   "goal": "use",
+   "fast": false
+  },
+  "bukti": {
+   "goal": "use",
+   "fast": false
+  },
+  "sebelumnya": {
+   "goal": "use",
+   "fast": false
+  },
+  "berbagai": {
+   "goal": "use",
+   "fast": false
+  },
+  "kegiatan": {
+   "goal": "use",
+   "fast": false
+  },
+  "yakin": {
+   "goal": "use",
+   "fast": true
+  },
+  "khusus": {
+   "goal": "use",
+   "fast": false
+  },
+  "pribadi": {
+   "goal": "use",
+   "fast": false
+  },
+  "anggota": {
+   "goal": "use",
+   "fast": false
+  },
+  "selanjutnya": {
+   "goal": "use",
+   "fast": false
+  },
+  "pihak": {
+   "goal": "use",
+   "fast": false
+  },
+  "mantap": {
+   "goal": "use",
+   "fast": true
+  },
+  "susah": {
+   "goal": "use",
+   "fast": true
+  },
+  "sesuai": {
+   "goal": "use",
+   "fast": false
+  },
+  "solusi": {
+   "goal": "use",
+   "fast": false
+  },
+  "misalnya": {
+   "goal": "use",
+   "fast": true
+  },
+  "antar": {
+   "goal": "use",
+   "fast": true
+  },
+  "menarik": {
+   "goal": "use",
+   "fast": false
+  },
+  "umum": {
+   "goal": "use",
+   "fast": false
+  },
+  "muncul": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyata": {
+   "goal": "use",
+   "fast": false
+  },
+  "sebaiknya": {
+   "goal": "use",
+   "fast": true
+  },
+  "tanah": {
+   "goal": "use",
+   "fast": false
+  },
+  "arah": {
+   "goal": "use",
+   "fast": false
+  },
+  "butuh": {
+   "goal": "use",
+   "fast": true
+  },
+  "barusan": {
+   "goal": "use",
+   "fast": true
+  },
+  "ketua": {
+   "goal": "use",
+   "fast": false
+  },
+  "perjalanan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mendapatkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "jenis": {
+   "goal": "use",
+   "fast": false
+  },
+  "acara": {
+   "goal": "use",
+   "fast": false
+  },
+  "pengalaman": {
+   "goal": "use",
+   "fast": false
+  },
+  "menemukan": {
+   "goal": "use",
+   "fast": false
+  },
+  "membutuhkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kadang": {
+   "goal": "use",
+   "fast": true
+  },
+  "benerin": {
+   "goal": "use",
+   "fast": true
+  },
+  "pusat": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengaku": {
+   "goal": "use",
+   "fast": false
+  },
+  "penuh": {
+   "goal": "use",
+   "fast": false
+  },
+  "colok": {
+   "goal": "use",
+   "fast": false
+  },
+  "mudah": {
+   "goal": "use",
+   "fast": false
+  },
+  "sedangkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "akibat": {
+   "goal": "use",
+   "fast": false
+  },
+  "menunjukkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "perasaan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menawarkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengenal": {
+   "goal": "use",
+   "fast": false
+  },
+  "walau": {
+   "goal": "use",
+   "fast": false
+  },
+  "cas": {
+   "goal": "use",
+   "fast": true
+  },
+  "lemot": {
+   "goal": "use",
+   "fast": false
+  },
+  "begini": {
+   "goal": "use",
+   "fast": false
+  },
+  "lakukan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kaget": {
+   "goal": "use",
+   "fast": true
+  },
+  "alam": {
+   "goal": "use",
+   "fast": false
+  },
+  "persen": {
+   "goal": "use",
+   "fast": false
+  },
+  "calon": {
+   "goal": "use",
+   "fast": false
+  },
+  "bangun": {
+   "goal": "use",
+   "fast": false
+  },
+  "sejarah": {
+   "goal": "use",
+   "fast": false
+  },
+  "bebas": {
+   "goal": "use",
+   "fast": true
+  },
+  "pikiran": {
+   "goal": "use",
+   "fast": false
+  },
+  "tenang": {
+   "goal": "use",
+   "fast": false
+  },
+  "kenalan": {
+   "goal": "use",
+   "fast": true
+  },
+  "pas": {
+   "goal": "use",
+   "fast": true
+  },
+  "usah": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "sejumlah": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "pembangunan": {
+   "goal": "use",
+   "fast": false
+  },
+  "jomblo": {
+   "goal": "use",
+   "fast": false
+  },
+  "ramai": {
+   "goal": "use",
+   "fast": false
+  },
+  "ringan": {
+   "goal": "use",
+   "fast": false
+  },
+  "berbicara": {
+   "goal": "use",
+   "fast": false
+  },
+  "berangkat": {
+   "goal": "use",
+   "fast": false
+  },
+  "saran": {
+   "goal": "use",
+   "fast": false
+  },
+  "tegas": {
+   "goal": "use",
+   "fast": false
+  },
+  "kehidupan": {
+   "goal": "use",
+   "fast": false
+  },
+  "sabar": {
+   "goal": "use",
+   "fast": false
+  },
+  "sebel": {
+   "goal": "use",
+   "fast": true
+  },
+  "cerewet": {
+   "goal": "use",
+   "fast": false
+  },
+  "menegaskan": {
+   "goal": "use",
+   "fast": false
+  },
+  "luas": {
+   "goal": "use",
+   "fast": false
+  },
+  "masa sih": {
+   "goal": "use",
+   "fast": true
+  },
+  "kereta": {
+   "goal": "use",
+   "fast": false
+  },
+  "melawan": {
+   "goal": "use",
+   "fast": false
+  },
+  "tumbuh": {
+   "goal": "use",
+   "fast": false
+  },
+  "berbahaya": {
+   "goal": "use",
+   "fast": false
+  },
+  "berkat": {
+   "goal": "use",
+   "fast": false
+  },
+  "kenyang": {
+   "goal": "use",
+   "fast": false
+  },
+  "memanggil": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengizinkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "resign": {
+   "goal": "use",
+   "fast": false
+  },
+  "gampang": {
+   "goal": "use",
+   "fast": true
+  },
+  "raya": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "amat": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "langit": {
+   "goal": "use",
+   "fast": false
+  },
+  "komplain": {
+   "goal": "use",
+   "fast": false
+  },
+  "berhenti": {
+   "goal": "use",
+   "fast": false
+  },
+  "budaya": {
+   "goal": "use",
+   "fast": false
+  },
+  "bidang": {
+   "goal": "use",
+   "fast": false
+  },
+  "pemimpin": {
+   "goal": "use",
+   "fast": false
+  },
+  "upaya": {
+   "goal": "use",
+   "fast": false
+  },
+  "berisi": {
+   "goal": "use",
+   "fast": false
+  },
+  "ukuran": {
+   "goal": "use",
+   "fast": false
+  },
+  "ancaman": {
+   "goal": "use",
+   "fast": false
+  },
+  "percuma": {
+   "goal": "use",
+   "fast": true
+  },
+  "ngatur": {
+   "goal": "use",
+   "fast": true
+  },
+  "menangis": {
+   "goal": "use",
+   "fast": false
+  },
+  "bercerai": {
+   "goal": "use",
+   "fast": false
+  },
+  "ceria": {
+   "goal": "use",
+   "fast": false
+  },
+  "siapin": {
+   "goal": "use",
+   "fast": true
+  },
+  "menyalin": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengarahkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengetuk": {
+   "goal": "use",
+   "fast": false
+  },
+  "menambahkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kehilangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "terkejut": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengeluh": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyimpan": {
+   "goal": "use",
+   "fast": false
+  },
+  "antri": {
+   "goal": "use",
+   "fast": true
+  },
+  "nyampe": {
+   "goal": "use",
+   "fast": true
+  },
+  "melepaskan": {
+   "goal": "use",
+   "fast": false
+  },
+  "memisahkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "tajam": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengangkat": {
+   "goal": "use",
+   "fast": false
+  },
+  "berteriak": {
+   "goal": "use",
+   "fast": false
+  },
+  "merayakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "batuk": {
+   "goal": "use",
+   "fast": false
+  },
+  "berkunjung": {
+   "goal": "use",
+   "fast": false
+  },
+  "balik": {
+   "goal": "use",
+   "fast": true
+  },
+  "isi bensin": {
+   "goal": "use",
+   "fast": false
+  },
+  "semacam": {
+   "goal": "use",
+   "fast": false
+  },
+  "melainkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menabrak": {
+   "goal": "use",
+   "fast": false
+  },
+  "nanya": {
+   "goal": "use",
+   "fast": true
+  },
+  "mendengarkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "gagal": {
+   "goal": "use",
+   "fast": false
+  },
+  "puas": {
+   "goal": "use",
+   "fast": false
+  },
+  "menghapus": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengunci": {
+   "goal": "use",
+   "fast": false
+  },
+  "meninggalkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "sok": {
+   "goal": "use",
+   "fast": false
+  },
+  "seraya": {
+   "goal": "use",
+   "fast": false
+  },
+  "bolak-balik": {
+   "goal": "use",
+   "fast": false
+  },
+  "ban bocor": {
+   "goal": "use",
+   "fast": false
+  },
+  "wawancara": {
+   "goal": "use",
+   "fast": false
+  },
+  "peluang": {
+   "goal": "use",
+   "fast": false
+  },
+  "tepat waktu": {
+   "goal": "use",
+   "fast": true
+  },
+  "berantem": {
+   "goal": "use",
+   "fast": false
+  },
+  "kabur": {
+   "goal": "use",
+   "fast": false
+  },
+  "pantas": {
+   "goal": "use",
+   "fast": false
+  },
+  "kesepakatan": {
+   "goal": "use",
+   "fast": false
+  },
+  "wilayah": {
+   "goal": "use",
+   "fast": false
+  },
+  "manfaat": {
+   "goal": "use",
+   "fast": false
+  },
+  "metode": {
+   "goal": "use",
+   "fast": false
+  },
+  "sejak": {
+   "goal": "use",
+   "fast": true
+  },
+  "menuju": {
+   "goal": "use",
+   "fast": false
+  },
+  "usaha": {
+   "goal": "use",
+   "fast": false
+  },
+  "ketika": {
+   "goal": "use",
+   "fast": true
+  },
+  "rapat": {
+   "goal": "use",
+   "fast": false
+  },
+  "keluhan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pemasok": {
+   "goal": "use",
+   "fast": false
+  },
+  "atasan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pelanggan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kendala": {
+   "goal": "use",
+   "fast": false
+  },
+  "usahakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "keahlian": {
+   "goal": "use",
+   "fast": false
+  },
+  "lamaran": {
+   "goal": "use",
+   "fast": false
+  },
+  "lowongan": {
+   "goal": "use",
+   "fast": false
+  },
+  "jabatan": {
+   "goal": "use",
+   "fast": false
+  },
+  "omzet": {
+   "goal": "use",
+   "fast": false
+  },
+  "pendapatan": {
+   "goal": "use",
+   "fast": false
+  },
+  "periksa": {
+   "goal": "use",
+   "fast": false
+  },
+  "suasana": {
+   "goal": "use",
+   "fast": false
+  },
+  "atur": {
+   "goal": "use",
+   "fast": false
+  },
+  "pesanan": {
+   "goal": "use",
+   "fast": false
+  },
+  "perbaiki": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyalakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "asalkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "membandingkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pernyataan": {
+   "goal": "use",
+   "fast": false
+  },
+  "rahasia": {
+   "goal": "use",
+   "fast": false
+  },
+  "seolah-olah": {
+   "goal": "use",
+   "fast": false
+  },
+  "gelisah": {
+   "goal": "use",
+   "fast": false
+  },
+  "melayani": {
+   "goal": "use",
+   "fast": false
+  },
+  "ngambek": {
+   "goal": "use",
+   "fast": false
+  },
+  "kesel": {
+   "goal": "use",
+   "fast": false
+  },
+  "malu-malu": {
+   "goal": "use",
+   "fast": false
+  },
+  "maksa": {
+   "goal": "use",
+   "fast": false
+  },
+  "unduh": {
+   "goal": "use",
+   "fast": false
+  },
+  "becek": {
+   "goal": "use",
+   "fast": false
+  },
+  "unggah": {
+   "goal": "use",
+   "fast": false
+  },
+  "pelayanan": {
+   "goal": "use",
+   "fast": false
+  },
+  "sia-sia": {
+   "goal": "use",
+   "fast": false
+  },
+  "ribut": {
+   "goal": "use",
+   "fast": false
+  },
+  "sombong": {
+   "goal": "use",
+   "fast": false
+  },
+  "wangi": {
+   "goal": "use",
+   "fast": false
+  },
+  "pingsan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mikir": {
+   "goal": "use",
+   "fast": false
+  },
+  "curhat": {
+   "goal": "use",
+   "fast": false
+  },
+  "rekan kerja": {
+   "goal": "use",
+   "fast": false
+  },
+  "terus-menerus": {
+   "goal": "use",
+   "fast": false
+  },
+  "dengan demikian": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "sial": {
+   "goal": "use",
+   "fast": false
+  },
+  "nempel": {
+   "goal": "use",
+   "fast": false
+  },
+  "tenggelam": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "instan": {
+   "goal": "use",
+   "fast": false
+  },
+  "nikmat": {
+   "goal": "use",
+   "fast": false
+  },
+  "penduduk": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "aliran": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "sempurna": {
+   "goal": "use",
+   "fast": false
+  },
+  "karakter": {
+   "goal": "use",
+   "fast": false
+  },
+  "namun": {
+   "goal": "use",
+   "fast": false
+  },
+  "guna": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "menanggung": {
+   "goal": "use",
+   "fast": false
+  },
+  "wajib": {
+   "goal": "use",
+   "fast": false
+  },
+  "sebab": {
+   "goal": "use",
+   "fast": false
+  },
+  "cuek": {
+   "goal": "use",
+   "fast": false
+  },
+  "sudut": {
+   "goal": "use",
+   "fast": false
+  },
+  "kalah": {
+   "goal": "use",
+   "fast": false
+  },
+  "pula": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "selera": {
+   "goal": "use",
+   "fast": false
+  },
+  "demikian": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "bangsa": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "beliau": {
+   "goal": "use",
+   "fast": false
+  },
+  "pendidikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "bangunan": {
+   "goal": "use",
+   "fast": false
+  },
+  "membangun": {
+   "goal": "use",
+   "fast": false
+  },
+  "mencret": {
+   "goal": "use",
+   "fast": false
+  },
+  "kata sandi": {
+   "goal": "use",
+   "fast": false
+  },
+  "agar": {
+   "goal": "use",
+   "fast": false
+  },
+  "lezat": {
+   "goal": "use",
+   "fast": false
+  },
+  "mundur": {
+   "goal": "use",
+   "fast": false
+  },
+  "biarpun": {
+   "goal": "use",
+   "fast": false
+  },
+  "haus": {
+   "goal": "use",
+   "fast": false
+  },
+  "meledak": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "meletakkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "memeluk": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengunduh": {
+   "goal": "use",
+   "fast": false
+  },
+  "menuduh": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyembuhkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "seandainya": {
+   "goal": "use",
+   "fast": false
+  },
+  "sesudah": {
+   "goal": "use",
+   "fast": true
+  },
+  "awan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "membunuh": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "mengalir": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "sepenuhnya": {
+   "goal": "use",
+   "fast": false
+  },
+  "sembuh": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyentuh": {
+   "goal": "use",
+   "fast": false
+  },
+  "bersinar": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "tindakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kisah": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "ditemukan": {
+   "goal": "use",
+   "fast": false
+  },
+  "sebelah": {
+   "goal": "use",
+   "fast": false
+  },
+  "peristiwa": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "daya": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "taruh": {
+   "goal": "use",
+   "fast": false
+  },
+  "cemas": {
+   "goal": "use",
+   "fast": false
+  },
+  "lega": {
+   "goal": "use",
+   "fast": true
+  },
+  "semoga": {
+   "goal": "use",
+   "fast": true
+  },
+  "repot": {
+   "goal": "use",
+   "fast": true
+  },
+  "urus": {
+   "goal": "use",
+   "fast": false
+  },
+  "pasang": {
+   "goal": "use",
+   "fast": false
+  },
+  "lepas": {
+   "goal": "use",
+   "fast": false
+  },
+  "demam": {
+   "goal": "use",
+   "fast": false
+  },
+  "gatal": {
+   "goal": "use",
+   "fast": false
+  },
+  "siapkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mencetak": {
+   "goal": "use",
+   "fast": false
+  },
+  "jarak": {
+   "goal": "use",
+   "fast": false
+  },
+  "terbuat": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "mewah": {
+   "goal": "use",
+   "fast": false
+  },
+  "istimewa": {
+   "goal": "use",
+   "fast": false
+  },
+  "menghasilkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "gelar": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "yaitu": {
+   "goal": "use",
+   "fast": false
+  },
+  "seluruh": {
+   "goal": "use",
+   "fast": false
+  },
+  "bentuk": {
+   "goal": "use",
+   "fast": false
+  },
+  "demi": {
+   "goal": "use",
+   "fast": false
+  },
+  "berat": {
+   "goal": "use",
+   "fast": false
+  },
+  "antre": {
+   "goal": "use",
+   "fast": false
+  },
+  "berfungsi": {
+   "goal": "use",
+   "fast": false
+  },
+  "tukar": {
+   "goal": "use",
+   "fast": false
+  },
+  "kwitansi": {
+   "goal": "use",
+   "fast": false
+  },
+  "kelompok": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengenai": {
+   "goal": "use",
+   "fast": false
+  },
+  "langkah": {
+   "goal": "use",
+   "fast": false
+  },
+  "meninggal": {
+   "goal": "use",
+   "fast": false
+  },
+  "hak": {
+   "goal": "use",
+   "fast": false
+  },
+  "menatap": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "parah": {
+   "goal": "use",
+   "fast": false
+  },
+  "kekuatan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "memenuhi": {
+   "goal": "use",
+   "fast": false
+  },
+  "rupanya": {
+   "goal": "use",
+   "fast": false
+  },
+  "buat": {
+   "goal": "use",
+   "fast": false
+  },
+  "belanja": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengajak": {
+   "goal": "use",
+   "fast": false
+  },
+  "pencuri": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "teriak": {
+   "goal": "use",
+   "fast": false
+  },
+  "kejar": {
+   "goal": "use",
+   "fast": false
+  },
+  "terpeleset": {
+   "goal": "use",
+   "fast": false
+  },
+  "bengkak": {
+   "goal": "use",
+   "fast": false
+  },
+  "darurat": {
+   "goal": "use",
+   "fast": false
+  },
+  "rugi": {
+   "goal": "use",
+   "fast": true
+  },
+  "mengantar": {
+   "goal": "use",
+   "fast": false
+  },
+  "peduli": {
+   "goal": "use",
+   "fast": false
+  },
+  "hukuman": {
+   "goal": "use",
+   "fast": false
+  },
+  "paket": {
+   "goal": "use",
+   "fast": false
+  },
+  "pastikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "retur": {
+   "goal": "use",
+   "fast": false
+  },
+  "bongkar": {
+   "goal": "use",
+   "fast": false
+  },
+  "berkencan": {
+   "goal": "use",
+   "fast": false
+  },
+  "cemburu": {
+   "goal": "use",
+   "fast": false
+  },
+  "gengsi": {
+   "goal": "use",
+   "fast": false
+  },
+  "kepo": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengunggah": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyembunyikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "setia": {
+   "goal": "use",
+   "fast": false
+  },
+  "kecewa": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyesel": {
+   "goal": "use",
+   "fast": false
+  },
+  "selamanya": {
+   "goal": "use",
+   "fast": false
+  },
+  "bahas": {
+   "goal": "use",
+   "fast": false
+  },
+  "catat": {
+   "goal": "use",
+   "fast": false
+  },
+  "kerugian": {
+   "goal": "use",
+   "fast": false
+  },
+  "mogok": {
+   "goal": "use",
+   "fast": false
+  },
+  "putaran": {
+   "goal": "use",
+   "fast": false
+  },
+  "kecelakaan": {
+   "goal": "use",
+   "fast": false
+  },
+  "tabrak": {
+   "goal": "use",
+   "fast": false
+  },
+  "muat": {
+   "goal": "use",
+   "fast": false
+  },
+  "memindahkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "invoice": {
+   "goal": "use",
+   "fast": false
+  },
+  "praktis": {
+   "goal": "use",
+   "fast": false
+  },
+  "berikutnya": {
+   "goal": "use",
+   "fast": false
+  },
+  "hafal": {
+   "goal": "use",
+   "fast": false
+  },
+  "meminjam": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengumpulkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengetik": {
+   "goal": "use",
+   "fast": false
+  },
+  "melempar": {
+   "goal": "use",
+   "fast": false
+  },
+  "mematuhi": {
+   "goal": "use",
+   "fast": false
+  },
+  "membela": {
+   "goal": "use",
+   "fast": false
+  },
+  "mencuri": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "kejam": {
+   "goal": "use",
+   "fast": false
+  },
+  "dilarang": {
+   "goal": "use",
+   "fast": false
+  },
+  "penjara": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "berpartisipasi": {
+   "goal": "use",
+   "fast": false
+  },
+  "cenderung": {
+   "goal": "use",
+   "fast": false
+  },
+  "tepat": {
+   "goal": "use",
+   "fast": false
+  },
+  "tidak sabar": {
+   "goal": "use",
+   "fast": false
+  },
+  "kontrak": {
+   "goal": "use",
+   "fast": false
+  },
+  "diterima": {
+   "goal": "use",
+   "fast": false
+  },
+  "bandingkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menggosok": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyalakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "negatif": {
+   "goal": "use",
+   "fast": false
+  },
+  "kuno": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengembangkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menguasai": {
+   "goal": "use",
+   "fast": false
+  },
+  "kenal": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebutuhan": {
+   "goal": "use",
+   "fast": false
+  },
+  "apabila": {
+   "goal": "use",
+   "fast": false
+  },
+  "terletak": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "menghabiskan": {
+   "goal": "use",
+   "fast": false
+  },
+  "sampah": {
+   "goal": "use",
+   "fast": false
+  },
+  "rapi": {
+   "goal": "use",
+   "fast": false
+  },
+  "lapangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kekerasan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "berlaku": {
+   "goal": "use",
+   "fast": false
+  },
+  "bergerak": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyediakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "keberadaan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "penelitian": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "cerai": {
+   "goal": "use",
+   "fast": false
+  },
+  "keras kepala": {
+   "goal": "use",
+   "fast": false
+  },
+  "luar biasa": {
+   "goal": "use",
+   "fast": false
+  },
+  "tubuh": {
+   "goal": "use",
+   "fast": false
+  },
+  "santai": {
+   "goal": "use",
+   "fast": false
+  },
+  "anjuran": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "peregangan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "sambil": {
+   "goal": "use",
+   "fast": true
+  },
+  "seberapa": {
+   "goal": "use",
+   "fast": true
+  },
+  "bawahan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pecat": {
+   "goal": "use",
+   "fast": false
+  },
+  "berguna": {
+   "goal": "use",
+   "fast": false
+  },
+  "ucapan": {
+   "goal": "use",
+   "fast": false
+  },
+  "curi": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "asyik": {
+   "goal": "use",
+   "fast": true
+  },
+  "berjalan-jalan": {
+   "goal": "use",
+   "fast": false
+  },
+  "gosok gigi": {
+   "goal": "use",
+   "fast": false
+  },
+  "tetangga": {
+   "goal": "use",
+   "fast": false
+  },
+  "berjanji": {
+   "goal": "use",
+   "fast": false
+  },
+  "bocor": {
+   "goal": "use",
+   "fast": false
+  },
+  "komedi": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "gerakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "tahan": {
+   "goal": "use",
+   "fast": false
+  },
+  "jongkok": {
+   "goal": "use",
+   "fast": false
+  },
+  "sejuk": {
+   "goal": "use",
+   "fast": false
+  },
+  "melelahkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengesankan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mencegah": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyarankan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyala": {
+   "goal": "use",
+   "fast": false
+  },
+  "menghitung": {
+   "goal": "use",
+   "fast": false
+  },
+  "lembut": {
+   "goal": "use",
+   "fast": false
+  },
+  "teratur": {
+   "goal": "use",
+   "fast": false
+  },
+  "tantangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "angkot": {
+   "goal": "use",
+   "fast": false
+  },
+  "persimpangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "bundaran": {
+   "goal": "use",
+   "fast": false
+  },
+  "seberang": {
+   "goal": "use",
+   "fast": false
+  },
+  "letak": {
+   "goal": "use",
+   "fast": false
+  },
+  "deras": {
+   "goal": "use",
+   "fast": false
+  },
+  "perpustakaan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pengumuman": {
+   "goal": "use",
+   "fast": false
+  },
+  "lampiran": {
+   "goal": "use",
+   "fast": false
+  },
+  "lamaran kerja": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengingat": {
+   "goal": "use",
+   "fast": false
+  },
+  "kecuali": {
+   "goal": "use",
+   "fast": false
+  },
+  "tuntas": {
+   "goal": "use",
+   "fast": false
+  },
+  "kemudian": {
+   "goal": "use",
+   "fast": false
+  },
+  "motif": {
+   "goal": "use",
+   "fast": false
+  },
+  "peralatan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pedagang": {
+   "goal": "use",
+   "fast": false
+  },
+  "menerapkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "suhu": {
+   "goal": "use",
+   "fast": false
+  },
+  "strategis": {
+   "goal": "use",
+   "fast": false
+  },
+  "entahlah": {
+   "goal": "use",
+   "fast": false
+  },
+  "kawasan": {
+   "goal": "use",
+   "fast": false
+  },
+  "khas": {
+   "goal": "use",
+   "fast": false
+  },
+  "balas": {
+   "goal": "use",
+   "fast": false
+  },
+  "komentar": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengabaikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "diberikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "aset": {
+   "goal": "use",
+   "fast": false
+  },
+  "penanganan": {
+   "goal": "use",
+   "fast": false
+  },
+  "bergabung": {
+   "goal": "use",
+   "fast": false
+  },
+  "berjuang": {
+   "goal": "use",
+   "fast": false
+  },
+  "saya pamit": {
+   "goal": "use",
+   "fast": true
+  },
+  "anak tunggal": {
+   "goal": "use",
+   "fast": false
+  },
+  "anak sulung": {
+   "goal": "use",
+   "fast": false
+  },
+  "anak bungsu": {
+   "goal": "use",
+   "fast": false
+  },
+  "rusa": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "angsuran": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "kekurangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengeluarkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "meja rias": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "jemuran": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "lukisan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "berbentuk": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "berkeliling": {
+   "goal": "use",
+   "fast": false
+  },
+  "berjabat tangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "manja": {
+   "goal": "use",
+   "fast": false
+  },
+  "penyayang": {
+   "goal": "use",
+   "fast": false
+  },
+  "tekstur": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "gurih": {
+   "goal": "use",
+   "fast": false
+  },
+  "membayangkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengenali": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyusul": {
+   "goal": "use",
+   "fast": false
+  },
+  "renyah": {
+   "goal": "use",
+   "fast": false
+  },
+  "kenyal": {
+   "goal": "use",
+   "fast": false
+  },
+  "tepung": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "pena": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "berkebun": {
+   "goal": "use",
+   "fast": false
+  },
+  "berkemah": {
+   "goal": "use",
+   "fast": false
+  },
+  "bulat": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "tumpul": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "lebat": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "kumis": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "melindungi": {
+   "goal": "use",
+   "fast": false
+  },
+  "membingungkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "longsor": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "ramping": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "keriting": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "uban": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "jenggot": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "kanak-kanak": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "remaja": {
+   "goal": "use",
+   "fast": false
+  },
+  "sandal jepit": {
+   "goal": "use",
+   "fast": false
+  },
+  "piyama": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "gelang": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "kalung": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "gang": {
+   "goal": "use",
+   "fast": false
+  },
+  "memperhatikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ditipu": {
+   "goal": "use",
+   "fast": false
+  },
+  "menoleh": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "mengangsur": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "laga": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "misteri": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "fantasi": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "skripsi": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "kinerja": {
+   "goal": "use",
+   "fast": false
+  },
+  "bencana alam": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "dimaksudkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menghirup": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "gejala": {
+   "goal": "use",
+   "fast": false
+  },
+  "mual": {
+   "goal": "use",
+   "fast": false
+  },
+  "udara": {
+   "goal": "use",
+   "fast": false
+  },
+  "berendam": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "penyebab": {
+   "goal": "use",
+   "fast": false
+  },
+  "pola": {
+   "goal": "use",
+   "fast": false
+  },
+  "menekan": {
+   "goal": "use",
+   "fast": false
+  },
+  "paksa": {
+   "goal": "use",
+   "fast": false
+  },
+  "alur": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "roboh": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "berjarak": {
+   "goal": "use",
+   "fast": false
+  },
+  "merupakan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "menyelam": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "jarak tempuh": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "diam-diam": {
+   "goal": "use",
+   "fast": false
+  },
+  "keadaan": {
+   "goal": "use",
+   "fast": false
+  },
+  "memilah": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyegarkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "paku": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "empuk": {
+   "goal": "use",
+   "fast": false
+  },
+  "perkirakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "perpaduan": {
+   "goal": "use",
+   "fast": false
+  },
+  "nuansa": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "menyaksikan": {
+   "goal": "use",
+   "fast": false
+  },
+  "penampilan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "panggung": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "konser": {
+   "goal": "use",
+   "fast": false
+  },
+  "memaksa": {
+   "goal": "use",
+   "fast": false
+  },
+  "menempel": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengetahui": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengincar": {
+   "goal": "use",
+   "fast": false
+  },
+  "lolos": {
+   "goal": "use",
+   "fast": false
+  },
+  "hadiah utama": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "golongan darah": {
+   "goal": "use",
+   "fast": false
+  },
+  "berlaku sampai": {
+   "goal": "use",
+   "fast": false
+  },
+  "silsilah keluarga": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "jerapah": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "kijang": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "macan kumbang": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "kangguru": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "trailer": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "fiksi ilmiah": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "judul": {
+   "goal": "use",
+   "fast": false
+  },
+  "tidak adil": {
+   "goal": "use",
+   "fast": false
+  },
+  "unta": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "tapir": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "lemari pajangan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "pot bunga": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "lincah": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "perfeksionis": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "berserat": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "berjemur": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "jantan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "betina": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "separuh baya": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "listrik": {
+   "goal": "use",
+   "fast": false
+  },
+  "menutupi": {
+   "goal": "use",
+   "fast": false
+  },
+  "anak panah": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "sawo matang": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "lesung pipit": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "pantalon": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "perang": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "tentara": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "terurai": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "saudara": {
+   "goal": "use",
+   "fast": false
+  },
+  "berkelahi": {
+   "goal": "use",
+   "fast": false
+  },
+  "lahir": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengukur": {
+   "goal": "use",
+   "fast": false
+  },
+  "sempit": {
+   "goal": "use",
+   "fast": false
+  },
+  "kotak": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "mendorong": {
+   "goal": "use",
+   "fast": false
+  },
+  "dompet": {
+   "goal": "use",
+   "fast": false
+  },
+  "lapor": {
+   "goal": "use",
+   "fast": false
+  },
+  "kejadian": {
+   "goal": "use",
+   "fast": false
+  },
+  "petugas": {
+   "goal": "use",
+   "fast": false
+  },
+  "penumpang": {
+   "goal": "use",
+   "fast": false
+  },
+  "menangkap": {
+   "goal": "use",
+   "fast": false
+  },
+  "malahan": {
+   "goal": "use",
+   "fast": false
+  },
+  "ramah": {
+   "goal": "use",
+   "fast": false
+  },
+  "berhasil": {
+   "goal": "use",
+   "fast": false
+  },
+  "terakhir": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebijakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengakhiri": {
+   "goal": "use",
+   "fast": false
+  },
+  "angka": {
+   "goal": "use",
+   "fast": false
+  },
+  "mendung": {
+   "goal": "use",
+   "fast": false
+  },
+  "berawan": {
+   "goal": "use",
+   "fast": false
+  },
+  "cerah": {
+   "goal": "use",
+   "fast": false
+  },
+  "pilek": {
+   "goal": "use",
+   "fast": false
+  },
+  "alergi": {
+   "goal": "use",
+   "fast": false
+  },
+  "membaik": {
+   "goal": "use",
+   "fast": false
+  },
+  "muntah": {
+   "goal": "use",
+   "fast": false
+  },
+  "melompat": {
+   "goal": "use",
+   "fast": false
+  },
+  "basah": {
+   "goal": "use",
+   "fast": false
+  },
+  "lusa": {
+   "goal": "use",
+   "fast": true
+  },
+  "penerbangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "baterai": {
+   "goal": "use",
+   "fast": false
+  },
+  "jaringan": {
+   "goal": "use",
+   "fast": false
+  },
+  "hadir": {
+   "goal": "use",
+   "fast": false
+  },
+  "mencampur": {
+   "goal": "use",
+   "fast": false
+  },
+  "penulis": {
+   "goal": "use",
+   "fast": false
+  },
+  "usia": {
+   "goal": "use",
+   "fast": false
+  },
+  "alami": {
+   "goal": "use",
+   "fast": false
+  },
+  "terkadang": {
+   "goal": "use",
+   "fast": false
+  },
+  "antara": {
+   "goal": "use",
+   "fast": false
+  },
+  "hukum": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "melalui": {
+   "goal": "use",
+   "fast": false
+  },
+  "gua": {
+   "goal": "use",
+   "fast": false
+  },
+  "terdapat": {
+   "goal": "use",
+   "fast": false
+  },
+  "kurir": {
+   "goal": "use",
+   "fast": false
+  },
+  "lancar": {
+   "goal": "use",
+   "fast": false
+  },
+  "tanggung jawab": {
+   "goal": "use",
+   "fast": false
+  },
+  "selasa": {
+   "goal": "use",
+   "fast": false
+  },
+  "berita": {
+   "goal": "use",
+   "fast": false
+  },
+  "keras": {
+   "goal": "use",
+   "fast": false
+  },
+  "sesuatu": {
+   "goal": "use",
+   "fast": false
+  },
+  "pukul": {
+   "goal": "use",
+   "fast": false
+  },
+  "macam": {
+   "goal": "use",
+   "fast": false
+  },
+  "jarang": {
+   "goal": "use",
+   "fast": true
+  },
+  "menyatakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pohon": {
+   "goal": "use",
+   "fast": false
+  },
+  "terang": {
+   "goal": "use",
+   "fast": false
+  },
+  "karyawan": {
+   "goal": "use",
+   "fast": false
+  },
+  "promosi": {
+   "goal": "use",
+   "fast": false
+  },
+  "divisi": {
+   "goal": "use",
+   "fast": false
+  },
+  "bepergian": {
+   "goal": "use",
+   "fast": false
+  },
+  "pasangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pengunjung": {
+   "goal": "use",
+   "fast": false
+  },
+  "tradisional": {
+   "goal": "use",
+   "fast": false
+  },
+  "beragam": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyenangkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "momen": {
+   "goal": "use",
+   "fast": false
+  },
+  "sepanjang": {
+   "goal": "use",
+   "fast": false
+  },
+  "menjelang": {
+   "goal": "use",
+   "fast": false
+  },
+  "tersenyum": {
+   "goal": "use",
+   "fast": false
+  },
+  "hapus": {
+   "goal": "use",
+   "fast": false
+  },
+  "angkat": {
+   "goal": "use",
+   "fast": false
+  },
+  "batas": {
+   "goal": "use",
+   "fast": false
+  },
+  "memotong": {
+   "goal": "use",
+   "fast": false
+  },
+  "daun": {
+   "goal": "use",
+   "fast": false
+  },
+  "sendok": {
+   "goal": "use",
+   "fast": false
+  },
+  "asam": {
+   "goal": "use",
+   "fast": false
+  },
+  "tipis": {
+   "goal": "use",
+   "fast": false
+  },
+  "buang": {
+   "goal": "use",
+   "fast": false
+  },
+  "mirip": {
+   "goal": "use",
+   "fast": false
+  },
+  "kurangi": {
+   "goal": "use",
+   "fast": false
+  },
+  "halus": {
+   "goal": "use",
+   "fast": false
+  },
+  "ukur": {
+   "goal": "use",
+   "fast": false
+  },
+  "kemungkinan besar": {
+   "goal": "use",
+   "fast": false
+  },
+  "tanda": {
+   "goal": "use",
+   "fast": false
+  },
+  "rendah": {
+   "goal": "use",
+   "fast": false
+  },
+  "pegawai": {
+   "goal": "use",
+   "fast": false
+  },
+  "kertas": {
+   "goal": "use",
+   "fast": false
+  },
+  "khususnya": {
+   "goal": "use",
+   "fast": false
+  },
+  "terbuka": {
+   "goal": "use",
+   "fast": false
+  },
+  "buruk": {
+   "goal": "use",
+   "fast": false
+  },
+  "ubah": {
+   "goal": "use",
+   "fast": false
+  },
+  "kalimat": {
+   "goal": "use",
+   "fast": false
+  },
+  "arti": {
+   "goal": "use",
+   "fast": false
+  },
+  "sebut": {
+   "goal": "use",
+   "fast": false
+  },
+  "saat": {
+   "goal": "use",
+   "fast": true
+  },
+  "detik": {
+   "goal": "use",
+   "fast": true
+  },
+  "tampak": {
+   "goal": "use",
+   "fast": false
+  },
+  "adil": {
+   "goal": "use",
+   "fast": false
+  },
+  "bijak": {
+   "goal": "use",
+   "fast": false
+  },
+  "memukul": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengapung": {
+   "goal": "use",
+   "fast": false
+  },
+  "sungguh": {
+   "goal": "use",
+   "fast": false
+  },
+  "gaya": {
+   "goal": "use",
+   "fast": false
+  },
+  "badan": {
+   "goal": "use",
+   "fast": false
+  },
+  "lemah": {
+   "goal": "use",
+   "fast": false
+  },
+  "perintah": {
+   "goal": "use",
+   "fast": false
+  },
+  "terbang": {
+   "goal": "use",
+   "fast": false
+  },
+  "positif": {
+   "goal": "use",
+   "fast": false
+  },
+  "maupun": {
+   "goal": "use",
+   "fast": false
+  },
+  "subuh": {
+   "goal": "use",
+   "fast": true
+  },
+  "bergetar": {
+   "goal": "use",
+   "fast": false
+  },
+  "titik": {
+   "goal": "use",
+   "fast": false
+  },
+  "angkatan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kehadiran": {
+   "goal": "use",
+   "fast": false
+  },
+  "pendiam": {
+   "goal": "use",
+   "fast": false
+  },
+  "nilai": {
+   "goal": "use",
+   "fast": false
+  },
+  "ilmu": {
+   "goal": "use",
+   "fast": false
+  },
+  "benci": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyukai": {
+   "goal": "use",
+   "fast": false
+  },
+  "fakta": {
+   "goal": "use",
+   "fast": false
+  },
+  "putuskan": {
+   "goal": "use",
+   "fast": false
+  },
+  "diperlukan": {
+   "goal": "use",
+   "fast": false
+  },
+  "tangkap": {
+   "goal": "use",
+   "fast": false
+  },
+  "akal": {
+   "goal": "use",
+   "fast": false
+  },
+  "sebutan": {
+   "goal": "use",
+   "fast": false
+  },
+  "periode": {
+   "goal": "use",
+   "fast": false
+  },
+  "penggunaan": {
+   "goal": "use",
+   "fast": false
+  },
+  "nasib": {
+   "goal": "use",
+   "fast": false
+  },
+  "rabu": {
+   "goal": "use",
+   "fast": false
+  },
+  "menderita": {
+   "goal": "use",
+   "fast": false
+  },
+  "datar": {
+   "goal": "use",
+   "fast": false
+  },
+  "modal": {
+   "goal": "use",
+   "fast": false
+  },
+  "artikel": {
+   "goal": "use",
+   "fast": false
+  },
+  "ucap": {
+   "goal": "use",
+   "fast": false
+  },
+  "negara": {
+   "goal": "use",
+   "fast": false
+  },
+  "kasur": {
+   "goal": "use",
+   "fast": false
+  },
+  "berbincang-bincang": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengecewakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pers": {
+   "goal": "use",
+   "fast": false
+  },
+  "berasal dari": {
+   "goal": "use",
+   "fast": false
+  },
+  "berbelanja": {
+   "goal": "use",
+   "fast": false
+  },
+  "suka menolong": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyapu": {
+   "goal": "use",
+   "fast": false
+  },
+  "sapu": {
+   "goal": "use",
+   "fast": false
+  },
+  "ember": {
+   "goal": "use",
+   "fast": false
+  },
+  "saking": {
+   "goal": "use",
+   "fast": true
+  },
+  "menyebalkan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "kemeja": {
+   "goal": "use",
+   "fast": false
+  },
+  "menanyakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "berkas": {
+   "goal": "use",
+   "fast": false
+  },
+  "tanda tangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyerahkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pertimbangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "panik": {
+   "goal": "use",
+   "fast": false
+  },
+  "nagih": {
+   "goal": "use",
+   "fast": false
+  },
+  "dampak": {
+   "goal": "use",
+   "fast": false
+  },
+  "merayu": {
+   "goal": "use",
+   "fast": false
+  },
+  "kencang": {
+   "goal": "use",
+   "fast": false
+  },
+  "menaruh": {
+   "goal": "use",
+   "fast": false
+  },
+  "kemasan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menghela": {
+   "goal": "use",
+   "fast": false
+  },
+  "curiga": {
+   "goal": "use",
+   "fast": false
+  },
+  "nyenyak": {
+   "goal": "use",
+   "fast": false
+  },
+  "senam": {
+   "goal": "use",
+   "fast": false
+  },
+  "peserta": {
+   "goal": "use",
+   "fast": false
+  },
+  "licin": {
+   "goal": "use",
+   "fast": false
+  },
+  "kaos": {
+   "goal": "use",
+   "fast": false
+  },
+  "pendinginan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pinggir": {
+   "goal": "use",
+   "fast": false
+  },
+  "laku": {
+   "goal": "use",
+   "fast": false
+  },
+  "menata": {
+   "goal": "use",
+   "fast": false
+  },
+  "ujung": {
+   "goal": "use",
+   "fast": false
+  },
+  "pudar": {
+   "goal": "use",
+   "fast": false
+  },
+  "kuah": {
+   "goal": "use",
+   "fast": false
+  },
+  "patung": {
+   "goal": "use",
+   "fast": false
+  },
+  "bekal": {
+   "goal": "use",
+   "fast": false
+  },
+  "tikar": {
+   "goal": "use",
+   "fast": false
+  },
+  "saling": {
+   "goal": "use",
+   "fast": false
+  },
+  "hiburan": {
+   "goal": "use",
+   "fast": false
+  },
+  "minat": {
+   "goal": "use",
+   "fast": false
+  },
+  "mahir": {
+   "goal": "use",
+   "fast": false
+  },
+  "animasi": {
+   "goal": "use",
+   "fast": false
+  },
+  "tepuk tangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "bakti": {
+   "goal": "use",
+   "fast": false
+  },
+  "di samping": {
+   "goal": "use",
+   "fast": false
+  },
+  "sering": {
+   "goal": "use",
+   "fast": true
+  },
+  "merek": {
+   "goal": "use",
+   "fast": false
+  },
+  "melewati": {
+   "goal": "use",
+   "fast": false
+  },
+  "lompat": {
+   "goal": "use",
+   "fast": false
+  },
+  "pinggang": {
+   "goal": "use",
+   "fast": false
+  },
+  "pundak": {
+   "goal": "use",
+   "fast": false
+  },
+  "menggunakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menikmati": {
+   "goal": "use",
+   "fast": false
+  },
+  "lowongan kerja": {
+   "goal": "use",
+   "fast": false
+  },
+  "profesi": {
+   "goal": "use",
+   "fast": false
+  },
+  "syarat": {
+   "goal": "use",
+   "fast": false
+  },
+  "identitas": {
+   "goal": "use",
+   "fast": false
+  },
+  "mandiri": {
+   "goal": "use",
+   "fast": false
+  },
+  "resep": {
+   "goal": "use",
+   "fast": false
+  },
+  "peralatan masak": {
+   "goal": "use",
+   "fast": false
+  },
+  "rempah-rempah": {
+   "goal": "use",
+   "fast": false
+  },
+  "cobek": {
+   "goal": "use",
+   "fast": false
+  },
+  "parutan": {
+   "goal": "use",
+   "fast": false
+  },
+  "spatula": {
+   "goal": "use",
+   "fast": false
+  },
+  "centong": {
+   "goal": "use",
+   "fast": false
+  },
+  "baskom": {
+   "goal": "use",
+   "fast": false
+  },
+  "lap": {
+   "goal": "use",
+   "fast": false
+  },
+  "bak cuci piring": {
+   "goal": "use",
+   "fast": false
+  },
+  "daya tahan": {
+   "goal": "use",
+   "fast": false
+  },
+  "pemulihan": {
+   "goal": "use",
+   "fast": false
+  },
+  "waspada": {
+   "goal": "use",
+   "fast": false
+  },
+  "menyebar": {
+   "goal": "use",
+   "fast": false
+  },
+  "berangsur": {
+   "goal": "use",
+   "fast": false
+  },
+  "label": {
+   "goal": "use",
+   "fast": false
+  },
+  "tercantum": {
+   "goal": "use",
+   "fast": false
+  },
+  "layak jual": {
+   "goal": "use",
+   "fast": false
+  },
+  "keterangan": {
+   "goal": "use",
+   "fast": false
+  },
+  "lemari pendingin": {
+   "goal": "use",
+   "fast": false
+  },
+  "penyimpanan": {
+   "goal": "use",
+   "fast": false
+  },
+  "struk": {
+   "goal": "use",
+   "fast": false
+  },
+  "brosur": {
+   "goal": "use",
+   "fast": false
+  },
+  "dipatok": {
+   "goal": "use",
+   "fast": false
+  },
+  "tawar-menawar": {
+   "goal": "use",
+   "fast": false
+  },
+  "berkendara": {
+   "goal": "use",
+   "fast": false
+  },
+  "pertigaan": {
+   "goal": "use",
+   "fast": false
+  },
+  "menancap": {
+   "goal": "use",
+   "fast": false
+  },
+  "menambalnya": {
+   "goal": "use",
+   "fast": false
+  },
+  "kerusakan": {
+   "goal": "use",
+   "fast": false
+  },
+  "wisuda": {
+   "goal": "use",
+   "fast": false
+  },
+  "kebaya": {
+   "goal": "use",
+   "fast": false
+  },
+  "jas": {
+   "goal": "use",
+   "fast": false
+  },
+  "sanggul": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "berbaris": {
+   "goal": "use",
+   "fast": false
+  },
+  "mengharukan": {
+   "goal": "use",
+   "fast": false
+  },
+  "album foto": {
+   "goal": "use",
+   "fast": false
+  },
+  "anggota keluarga": {
+   "goal": "use",
+   "fast": false
+  },
+  "megah": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "ikat pinggang": {
+   "goal": "use",
+   "fast": false
+  },
+  "bergoyang-goyang": {
+   "goal": "use",
+   "fast": false
+  },
+  "menimpa": {
+   "goal": "use",
+   "fast": false
+  },
+  "kokoh": {
+   "goal": "use",
+   "fast": false
+  },
+  "memperbaikinya": {
+   "goal": "use",
+   "fast": false
+  },
+  "ketersediaannya": {
+   "goal": "use",
+   "fast": false
+  },
+  "bahu": {
+   "goal": "use",
+   "fast": false
+  },
+  "bermain bulu tangkis": {
+   "goal": "use",
+   "fast": false
+  },
+  "berkaitan": {
+   "goal": "use",
+   "fast": false
+  },
+  "tempat lahir": {
+   "goal": "use",
+   "fast": false
+  },
+  "jenis kelamin": {
+   "goal": "use",
+   "fast": false
+  },
+  "status pernikahan": {
+   "goal": "use",
+   "fast": false
+  },
+  "kewarganegaraan": {
+   "goal": "use",
+   "fast": false
+  },
+  "berasal": {
+   "goal": "use",
+   "fast": false
+  },
+  "nol": {
+   "goal": "use",
+   "fast": false
+  },
+  "seperempat": {
+   "goal": "use",
+   "fast": false
+  },
+  "setrika": {
+   "goal": "use",
+   "fast": false
+  },
+  "kain pel": {
+   "goal": "use",
+   "fast": false
+  },
+  "penyedot debu": {
+   "goal": "use",
+   "fast": false
+  },
+  "seprai": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "guling": {
+   "goal": "use",
+   "fast": false
+  },
+  "becak": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "delman": {
+   "goal": "use",
+   "fast": false
+  },
+  "antik": {
+   "goal": "use",
+   "fast": false
+  },
+  "perak": {
+   "goal": "use",
+   "fast": false
+  },
+  "angker": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "keramat": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "menakjubkan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "menegangkan": {
+   "goal": "use",
+   "fast": false
+  },
+  "samping": {
+   "goal": "use",
+   "fast": false
+  },
+  "iklan": {
+   "goal": "use",
+   "fast": false
+  },
+  "berulang tahun": {
+   "goal": "use",
+   "fast": false
+  },
+  "bertema": {
+   "goal": "use",
+   "fast": false
+  },
+  "persahabatan": {
+   "goal": "use",
+   "fast": false
+  },
+  "gaun": {
+   "goal": "use",
+   "fast": false
+  },
+  "anting": {
+   "goal": "use",
+   "fast": false
+  },
+  "mendaki": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "bot": {
+   "goal": "use",
+   "fast": false
+  },
+  "kaos kaki": {
+   "goal": "use",
+   "fast": false
+  },
+  "tenggara": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "penjelajahan": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "alangkah": {
+   "goal": "recognize",
+   "fast": false
+  },
+  "santap": {
+   "goal": "use",
+   "fast": false
+  },
+  "dahaga": {
+   "goal": "use",
+   "fast": false
+  },
+  "pengaturan": {
+   "goal": "use",
+   "fast": false
+  },
+  "fungsi": {
+   "goal": "use",
+   "fast": false
+  },
+  "pengajar": {
+   "goal": "use",
+   "fast": false
+  },
+  "peran": {
+   "goal": "use",
+   "fast": false
+  },
+  "dididik": {
+   "goal": "use",
+   "fast": false
+  },
+  "diakui": {
+   "goal": "use",
+   "fast": false
+  },
+  "aspek": {
+   "goal": "use",
+   "fast": false
+  },
+  "Natal": {
+   "goal": "use",
+   "fast": false
+  },
+  "bertujuan": {
+   "goal": "use",
+   "fast": false
+  },
+  "personil": {
+   "goal": "use",
+   "fast": false
+  },
+  "penonton": {
+   "goal": "use",
+   "fast": false
+  },
+  "blus": {
+   "goal": "use",
+   "fast": false
+  },
+  "rok": {
+   "goal": "use",
+   "fast": false
+  },
+  "emas": {
+   "goal": "use",
+   "fast": false
+  },
+  "ikal": {
+   "goal": "use",
+   "fast": false
+  },
+  "gantungan baju": {
+   "goal": "use",
+   "fast": false
+  },
+  "menekan-nekan": {
+   "goal": "use",
+   "fast": false
+  }
+ }
+}
