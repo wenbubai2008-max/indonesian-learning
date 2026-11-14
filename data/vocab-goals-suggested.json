@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1061,
+   "use": 1071,
    "recognize": 115,
    "unsure": 24,
    "fast": 137
   },
   "active": {
-   "use": 701,
+   "use": 711,
    "recognize": 99,
    "unsure": 22,
    "fast": 57
@@ -11035,6 +11035,96 @@
    "status": "active",
    "why": [
     "第二词库 B2 / S"
+   ]
+  },
+  "Natal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "bertujuan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "personil": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "penonton": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
+   ]
+  },
+  "blus": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "rok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "emas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "ikal": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "gantungan baju": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "menekan-nekan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B1 / A"
    ]
   }
  }
