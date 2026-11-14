@@ -1,0 +1,375 @@
+{
+ "date": "2026-11-14",
+ "session": "am",
+ "time": "08:00",
+ "day": 85,
+ "title": "08:00 早课｜Konser Amal Natal di Aula Gereja · 教堂礼堂里的圣诞慈善音乐会",
+ "vocab": [
+  {
+   "display": "Natal",
+   "audio_text": "Natal",
+   "is_oral_new": false,
+   "word": "Natal",
+   "cn": "圣诞节",
+   "en": "Christmas",
+   "root": "Natal",
+   "root_cn": "圣诞（节）",
+   "formation": "专有名词，首字母大写，来自葡萄牙语 natal（诞生）。常见搭配：Hari Natal（圣诞节）、malam Natal（平安夜）、pohon Natal（圣诞树）、merayakan Natal（过圣诞）、menjelang Natal（临近圣诞）、Selamat Natal（圣诞快乐）。",
+   "example": "Setiap Natal, keluarga Maria berkumpul di rumah nenek dan makan masakan tradisional Manado.",
+   "example_cn": "每年圣诞节，玛丽亚一家都会聚在奶奶家，吃万鸦老的传统菜。",
+   "synonym_note": "印尼的节日一般叫 hari raya：Natal（圣诞）、Lebaran（开斋节）、Imlek（春节）。祝福常连在一起说：Selamat Natal dan Tahun Baru（圣诞快乐、新年快乐）。"
+  },
+  {
+   "display": "bertujuan",
+   "audio_text": "bertujuan",
+   "is_oral_new": false,
+   "word": "bertujuan",
+   "cn": "旨在；以……为目的",
+   "en": "to aim to; to be intended to",
+   "root": "tuju",
+   "root_cn": "朝向；目标",
+   "formation": "ber- + tujuan（目的）→ bertujuan，“带着……的目的”。后面直接接动词，或接 untuk / agar：bertujuan (untuk) membantu …、bertujuan agar …。同词根：tujuan（目的；目的地）、menuju（前往）。",
+   "example": "Aturan baru ini bertujuan agar karyawan tidak boros memakai kertas.",
+   "example_cn": "这条新规定的目的是让员工不浪费纸张。",
+   "synonym_note": "bertujuan 偏正式，多用在介绍活动、项目、规定（Program ini bertujuan …）。日常聊天更常说 Tujuannya supaya … 或 Tujuannya biar …（biar = supaya）。"
+  },
+  {
+   "display": "personil",
+   "audio_text": "personil",
+   "is_oral_new": false,
+   "word": "personil",
+   "cn": "（乐队等的）成员；人员",
+   "en": "band member; personnel",
+   "root": "personil",
+   "root_cn": "人员",
+   "formation": "外来词（荷兰语 personeel），名词，不拆词缀。规范拼写是 personel，日常和媒体也常写 personil，两种都看得到。常见搭配：personil band（乐队成员）、band dengan empat personil（四人乐队）、kekurangan personil（人手不够）。",
+   "example": "Band itu sekarang tinggal tiga personil karena gitarisnya diterima kerja di Singapura.",
+   "example_cn": "那支乐队现在只剩三个成员了，因为吉他手被新加坡的一家公司录用了。",
+   "synonym_note": "anggota 是最通用的“成员”（anggota keluarga、anggota tim）；personil / personel 多用于乐队、警察军队、机构的人员，常带“人手”的意思（personel polisi）。说家人、班级成员时用 anggota，不用 personil。"
+  },
+  {
+   "display": "penonton",
+   "audio_text": "penonton",
+   "is_oral_new": false,
+   "word": "penonton",
+   "cn": "观众",
+   "en": "audience; spectator",
+   "root": "tonton",
+   "root_cn": "观看",
+   "formation": "peN- + tonton（t 开头，t 脱落，peN- 变 pen-）→ penonton，“看的人”。同词根：menonton（看演出、电影、比赛）、tontonan（节目；可看的东西）。常见搭配：penonton konser、kursi penonton（观众席）、penonton bertepuk tangan（观众鼓掌）。",
+   "example": "Penontonnya beragam, dari anak kecil sampai kakek-nenek.",
+   "example_cn": "观众各种各样，从小孩到爷爷奶奶都有。",
+   "synonym_note": "penonton 是看演出、比赛、电视的人；pendengar 是听众（广播、讲座）；pengunjung 是来访的人（商场、博物馆）。口语说法：动词 menonton 口语说 nonton（Mau nonton konser?）。"
+  },
+  {
+   "display": "blus",
+   "audio_text": "blus",
+   "is_oral_new": false,
+   "word": "blus",
+   "cn": "女式衬衫；女士上衣",
+   "en": "blouse",
+   "root": "blus",
+   "root_cn": "女式衬衫",
+   "formation": "外来词（荷兰语 blouse），名词，不拆词缀。常见搭配：blus putih、blus lengan panjang（长袖女衬衫）、blus batik、blus kerja（上班穿的女衬衫）。",
+   "example": "Seandainya blus ini ada ukuran M-nya, saya pasti langsung beli.",
+   "example_cn": "要是这件女衬衫有 M 码，我肯定马上就买了。",
+   "synonym_note": "kemeja 是有领子、有扣子的衬衫，男女都能穿；blus 只说女士上衣，款式更多，可以没有领子或扣子。"
+  },
+  {
+   "display": "rok",
+   "audio_text": "rok",
+   "is_oral_new": false,
+   "word": "rok",
+   "cn": "（半身）裙子",
+   "en": "skirt",
+   "root": "rok",
+   "root_cn": "裙子",
+   "formation": "外来词（荷兰语 rok），名词，不拆词缀。常见搭配：rok panjang（长裙）、rok pendek（短裙）、rok span（直筒裙）、rok plisket（百褶裙）、pakai rok（穿裙子）。",
+   "example": "Seragam SD untuk murid perempuan di Indonesia biasanya kemeja putih dan rok merah.",
+   "example_cn": "印尼小学女生的校服一般是白衬衫配红裙子。",
+   "synonym_note": "rok 是半身裙；连衣裙说 gaun 或 dress，正式的晚礼服说 gaun malam。穿裙子说 pakai rok / memakai rok。"
+  },
+  {
+   "display": "emas",
+   "audio_text": "emas",
+   "is_oral_new": false,
+   "word": "emas",
+   "cn": "金子；金色",
+   "en": "gold; golden",
+   "root": "emas",
+   "root_cn": "金",
+   "formation": "名词，不拆词缀。指金子：cincin emas（金戒指）、kalung emas（金项链）、harga emas（金价）；作颜色：warna emas、berwarna emas（金色的）。比喻：kesempatan emas（黄金机会）、medali emas（金牌）。",
+   "example": "Ibu menyimpan kalung emas pemberian nenek di lemari dan hanya memakainya di acara keluarga.",
+   "example_cn": "妈妈把奶奶送的金项链收在柜子里，只在家庭聚会时戴。",
+   "synonym_note": "说颜色时常说 warna emas 或 berwarna emas；描写阳光、稻田时还有 keemasan（金黄色的），偏书面。银色是 perak（warna perak）。"
+  },
+  {
+   "display": "ikal",
+   "audio_text": "ikal",
+   "is_oral_new": false,
+   "word": "ikal",
+   "cn": "（头发）波浪卷的",
+   "en": "wavy (hair)",
+   "root": "ikal",
+   "root_cn": "卷；波浪卷",
+   "formation": "形容词，不拆词缀，主要描写头发：rambut ikal（波浪卷发）、rambutnya ikal（他/她头发是卷的）、berambut ikal（长着卷发的）。",
+   "example": "Rambutku ikal, jadi habis bangun tidur harus aku rapihin dulu.",
+   "example_cn": "我头发是卷的，所以起床后得先打理一下。（habis = setelah，rapihin = rapikan）",
+   "synonym_note": "ikal 是比较松的大波浪；keriting 是很密的小卷（rambut keriting）；直发是 lurus。天生的卷发两种都可能，看卷的程度。"
+  },
+  {
+   "display": "gantungan baju",
+   "audio_text": "gantungan baju",
+   "is_oral_new": false,
+   "word": "gantungan baju",
+   "cn": "衣架",
+   "en": "clothes hanger",
+   "root": "gantung",
+   "root_cn": "挂",
+   "formation": "gantung（挂）+ -an → gantungan（挂东西的工具、挂钩），再加 baju → 挂衣服的架子。同词根：menggantung（挂）、tergantung（挂着；取决于：Tergantung cuacanya）。gantungan 单说还可指别的挂件：gantungan kunci（钥匙扣）。",
+   "example": "Habis disetrika, kemejanya langsung aku gantung di gantungan baju biar nggak kusut.",
+   "example_cn": "衬衫熨好后，我马上挂到衣架上，免得又皱了。（biar = supaya，nggak = tidak）",
+   "synonym_note": "口语说法：很多人直接说 hanger（Ada hanger nggak?）；买东西、写清单时用 gantungan baju 最清楚。"
+  },
+  {
+   "display": "menekan-nekan",
+   "audio_text": "menekan-nekan",
+   "is_oral_new": false,
+   "word": "menekan-nekan",
+   "cn": "反复按；一直按",
+   "en": "to press repeatedly",
+   "root": "tekan",
+   "root_cn": "按；压",
+   "formation": "meN- + tekan（t 脱落，meN- 变 men-）→ menekan（按、压），重叠成 menekan-nekan，表示一下一下反复地按。同词根：tekanan（压力）、tertekan（感到有压力；被压住）。注意 menekankan 是“强调”，意思不同。",
+   "example": "Jangan menekan-nekan tombol lift; pintunya tidak akan terbuka lebih cepat.",
+   "example_cn": "别一直按电梯按钮，门也不会开得更快。",
+   "synonym_note": "menekan 是按一下或用力压；menekan-nekan 是反复按，常带着急、不耐烦的感觉。口语说法：pencet-pencet（Jangan dipencet-pencet!），写作和正式场合用 menekan-nekan。"
+  }
+ ],
+ "review_vocab": [
+  "berteriak",
+  "becek",
+  "curhat",
+  "malu-malu",
+  "membandingkan"
+ ],
+ "sentences": [
+  {
+   "text": "Jangan membandingkan dirimu sama penyanyi lain terus, dong. Seenggaknya kamu udah latihan tiap hari.",
+   "cn": "别老拿自己跟别的歌手比啦。至少你每天都练习了。（sama = dengan，seenggaknya = setidaknya，udah = sudah，tiap = setiap）"
+  },
+  {
+   "text": "Maria mengambil blus putih dan rok panjangnya dari gantungan baju, lalu bercermin sebentar.",
+   "cn": "玛丽亚从衣架上取下白色女衬衫和长裙，然后照了一会儿镜子。"
+  },
+  {
+   "text": "Konser amal ini bertujuan mengumpulkan dana untuk anak-anak panti asuhan menjelang Natal.",
+   "cn": "这场慈善音乐会的目的是在圣诞节前为孤儿院的孩子们筹款。"
+  },
+  {
+   "text": "Hujan deras sore itu membuat halaman parkir gereja becek, jadi banyak penonton datang dengan sepatu kotor.",
+   "cn": "那天下午的大雨让教堂停车场一片泥泞，所以很多观众来的时候鞋都脏了。"
+  },
+  {
+   "text": "Di lagu terakhir, keponakan Maria maju ke depan dengan malu-malu; itu momen paling manis malam itu.",
+   "cn": "最后一首歌时，玛丽亚的外甥害羞地走到前面；那是那天晚上最温馨的时刻。"
+  }
+ ],
+ "reading": {
+  "text": "Menjelang Natal, gereja di dekat rumah Maria mengadakan konser amal di aulanya. Konser ini bertujuan mengumpulkan dana untuk panti asuhan di kota itu. Maria bernyanyi diiringi sebuah band kecil dengan empat personil. Sore itu hujan deras, tetapi aula tetap dipenuhi penonton. Maria tampil dengan rok panjang berwarna emas, dan rambut ikalnya dibiarkan terurai. Di tengah lagu kedua, mikrofonnya tiba-tiba mati. Maria panik dan menekan-nekan tombolnya, tetapi tetap tidak ada suara. Seorang teknisi segera mengganti mikrofon itu, dan Maria mulai lagi dari awal. Penonton malah bertepuk tangan lebih keras untuk menyemangatinya. Setelah acara, pendeta berjabat tangan dengan semua penyanyi. Dari konser itu, panitia mendapatkan dana hampir dua puluh juta rupiah.",
+  "cn": "临近圣诞节，玛丽亚家附近的教堂在礼堂里办了一场慈善音乐会。这场音乐会的目的是为城里的孤儿院筹款。玛丽亚唱歌，由一支四人小乐队伴奏。那天下午下着大雨，可礼堂还是坐满了观众。玛丽亚穿着金色长裙登台，一头波浪卷发披散着。唱到第二首歌中间，她的麦克风突然没声了。玛丽亚慌了，一直按麦克风上的按钮，可还是没有声音。一位技术人员马上换了一支麦克风，玛丽亚从头再唱。观众反而更用力地鼓掌，为她加油。活动结束后，牧师和每位歌手都握了手。这场音乐会，主办方筹到了将近两千万印尼盾。"
+ },
+ "quiz": [
+  {
+   "question": "Konser sudah selesai dan halaman parkir gereja ramai sekali. Seorang ibu tiba-tiba tidak melihat anaknya. Dengan panik, dia ____ memanggil nama anaknya: \"Dodi! Dodi!\"",
+   "options": [
+    "bersorak",
+    "berteriak",
+    "berbisik",
+    "bercerita"
+   ],
+   "answer_index": 1,
+   "answer": "berteriak",
+   "explain": "着急找人、大声叫名字，典型说法是 berteriak memanggil …（也常说 berteriak minta tolong）。bersorak 是高兴地欢呼（Penonton bersorak），不用在慌张找孩子的场合；berbisik 是小声说话，正好相反；bercerita 是讲事情、讲故事，后面不接 memanggil nama。"
+  },
+  {
+   "question": "Lift di gedung itu lama sekali tidak datang. Seorang anak yang mulai kesal terus ____ tombolnya sampai ditegur ibunya.",
+   "options": [
+    "menekankan",
+    "ditekan",
+    "menekan-nekan",
+    "tertekan"
+   ],
+   "answer_index": 2,
+   "answer": "menekan-nekan",
+   "explain": "孩子不耐烦、一下一下地按电梯按钮，用 menekan-nekan（口语 pencet-pencet）。menekankan 是“强调”（menekankan pentingnya disiplin）；ditekan 是被动，主语应该是按钮（Tombolnya ditekan）；tertekan 是“感到压力”或“被压住”，后面不接 tombolnya。"
+  },
+  {
+   "question": "Di awal acara, ketua panitia berkata, \"Konser malam ini ____ membantu anak-anak panti asuhan. Terima kasih sudah datang.\"",
+   "options": [
+    "bertujuan",
+    "tujuan",
+    "menuju",
+    "tertuju"
+   ],
+   "answer_index": 0,
+   "answer": "bertujuan",
+   "explain": "“这场音乐会旨在帮助……”，动词位置后面直接接动词 membantu，要用 bertujuan。tujuan 是名词，要说 Tujuan konser ini adalah membantu …；menuju 是“前往（某地）”；tertuju 是“（目光、注意力）集中在……”，都不接 membantu。"
+  }
+ ],
+ "output": {
+  "task": "朋友没去成昨晚的圣诞慈善音乐会，问你怎么样。给她发一条 WhatsApp（3–5 句）：说活动的目的、现场观众怎么样、发生了什么小意外。至少用 bertujuan、penonton、personil、menekan-nekan 中的两个，再用一个复习词（becek / curhat / membandingkan）。",
+  "reference_answer": "Konsernya semalam seru banget! Acaranya bertujuan mengumpulkan dana untuk panti asuhan, dan penontonnya banyak banget, sampai ada yang berdiri di belakang. Di tengah lagu kedua, mic Maria mati, terus dia menekan-nekan tombolnya sambil panik. Untung teknisinya cepat ganti mic. Parkirannya becek gara-gara hujan, dan habis acara aku nganter Maria pulang.",
+  "reference_cn": "昨晚的音乐会特别精彩！活动的目的是为孤儿院筹款，观众多得不得了，后面都有人站着。第二首歌唱到一半，玛丽亚的麦克风没声了，她慌得一直按按钮。还好技术人员很快换了麦克风。因为下雨，停车场一片泥泞，活动结束后我送玛丽亚回了家。"
+ },
+ "review": [
+  "3秒主动提取：看中文说出圣诞节、旨在、乐队成员、观众、女式衬衫、半身裙、金色、波浪卷、衣架、反复按；再说出大声喊、泥泞、倾诉心事、害羞地、比较。卡住的词回看词卡再说一遍。",
+  "易混词和搭配：berteriak（大声喊：berteriak memanggil nama、berteriak minta tolong）≠ bersorak（欢呼）；menekan（按一下）vs menekan-nekan（反复按）vs menekankan（强调）；rambut ikal（大波浪）vs keriting（小密卷）；penonton（观众）vs pendengar（听众）。各说一句，例如 Ibu itu berteriak memanggil anaknya。",
+  "复习词应用：curhat 是口语“倾诉心事”，常说 curhat ke / sama 某人；membandingkan A dengan B 是“拿 A 和 B 比较”；jalan / halaman becek 说下雨后泥泞；malu-malu 说人害羞、扭扭捏捏。用 curhat 和 membandingkan 说一句自己的事，例如 Kemarin aku curhat ke kakakku karena capek terus membandingkan diri dengan teman."
+ ],
+ "lesson_focus": {
+  "words": [
+   "bertujuan",
+   "penonton",
+   "menekan-nekan"
+  ],
+  "patterns": [
+   {
+    "pattern": "… ini bertujuan …",
+    "cn": "这个……的目的是……",
+    "example": "Konser amal ini bertujuan mengumpulkan dana untuk anak-anak panti asuhan menjelang Natal.",
+    "example_cn": "这场慈善音乐会的目的是在圣诞节前为孤儿院的孩子们筹款。"
+   },
+   {
+    "pattern": "Jangan … terus, dong.",
+    "cn": "别老……啦。",
+    "example": "Jangan membandingkan dirimu sama penyanyi lain terus, dong.",
+    "example_cn": "别老拿自己跟别的歌手比啦。"
+   }
+  ]
+ },
+ "review_cards": {
+  "recall": [
+   {
+    "cn": "圣诞节",
+    "id": "Natal"
+   },
+   {
+    "cn": "旨在；以……为目的",
+    "id": "bertujuan"
+   },
+   {
+    "cn": "乐队成员；人员",
+    "id": "personil"
+   },
+   {
+    "cn": "观众",
+    "id": "penonton"
+   },
+   {
+    "cn": "女式衬衫",
+    "id": "blus"
+   },
+   {
+    "cn": "半身裙",
+    "id": "rok"
+   },
+   {
+    "cn": "金子；金色",
+    "id": "emas"
+   },
+   {
+    "cn": "波浪卷的",
+    "id": "ikal"
+   },
+   {
+    "cn": "衣架",
+    "id": "gantungan baju"
+   },
+   {
+    "cn": "反复按",
+    "id": "menekan-nekan"
+   },
+   {
+    "cn": "大声喊",
+    "id": "berteriak"
+   },
+   {
+    "cn": "倾诉心事",
+    "id": "curhat"
+   }
+  ],
+  "frames": [
+   "… ini bertujuan …",
+   "Jangan … terus, dong.",
+   "Dia berteriak memanggil …"
+  ],
+  "contrasts": [
+   {
+    "items": [
+     {
+      "id": "berteriak",
+      "cn": "大声喊"
+     },
+     {
+      "id": "bersorak",
+      "cn": "欢呼"
+     }
+    ],
+    "note": "着急叫人用 berteriak memanggil；高兴欢呼用 bersorak。"
+   },
+   {
+    "items": [
+     {
+      "id": "menekan",
+      "cn": "按一下；压"
+     },
+     {
+      "id": "menekan-nekan",
+      "cn": "反复按"
+     },
+     {
+      "id": "menekankan",
+      "cn": "强调"
+     }
+    ],
+    "note": "menekan-nekan tombol 是一直按；menekankan 是强调某一点。"
+   },
+   {
+    "items": [
+     {
+      "id": "ikal",
+      "cn": "大波浪卷"
+     },
+     {
+      "id": "keriting",
+      "cn": "小密卷"
+     }
+    ],
+    "note": "卷得松说 ikal，卷得密说 keriting。"
+   }
+  ],
+  "apply": [
+   {
+    "word": "curhat",
+    "usage": "口语，“倾诉心事”，常说 curhat ke / sama 某人。",
+    "examples": [
+     {
+      "id": "Kemarin aku curhat ke kakakku.",
+      "cn": "昨天我跟姐姐倾诉了心事。"
+     }
+    ]
+   },
+   {
+    "word": "membandingkan",
+    "usage": "拿两样东西或两个人比较，常说 membandingkan A dengan B。",
+    "examples": [
+     {
+      "id": "Jangan membandingkan dirimu sama penyanyi lain terus, dong.",
+      "cn": "别老拿自己跟别的歌手比啦。"
+     }
+    ]
+   }
+  ]
+ }
+}
