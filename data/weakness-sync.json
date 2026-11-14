@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-13T13:35:57.913Z",
+  "updated_at": "2026-11-14T03:09:40.395Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -16601,9 +16601,10 @@
     "natal": {
       "word": "Natal",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:00.537Z",
+      "updated_at": "2026-11-14T03:09:20.725Z",
       "display": "Natal",
       "cn": "圣诞节",
+      "last_review": "2026-11-14T03:09:20.661Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -16611,7 +16612,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "lurus": {
       "word": "lurus",
@@ -26389,16 +26390,17 @@
     "gantungan baju": {
       "word": "gantungan baju",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:22.579Z",
+      "updated_at": "2026-11-14T03:09:07.964Z",
       "display": "gantungan baju",
       "cn": "衣架",
+      "last_review": "2026-11-14T03:09:07.903Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "persimpangan": {
       "word": "persimpangan",
@@ -26610,16 +26612,17 @@
     "rok": {
       "word": "rok",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:23.152Z",
+      "updated_at": "2026-11-14T03:09:30.086Z",
       "display": "rok",
       "cn": "裙子",
+      "last_review": "2026-11-14T03:09:30.026Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pantalon": {
       "word": "pantalon",
@@ -26692,16 +26695,17 @@
     "blus": {
       "word": "blus",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:23.357Z",
+      "updated_at": "2026-11-14T03:09:03.987Z",
       "display": "blus",
       "cn": "女式衬衫",
+      "last_review": "2026-11-14T03:09:03.921Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kaos": {
       "word": "kaos",
@@ -26876,16 +26880,17 @@
     "ikal": {
       "word": "ikal",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:23.820Z",
+      "updated_at": "2026-11-14T03:09:17.377Z",
       "display": "ikal",
       "cn": "波浪卷",
+      "last_review": "2026-11-14T03:09:17.316Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "sanggul": {
       "word": "sanggul",
@@ -27150,16 +27155,17 @@
     "emas": {
       "word": "emas",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:24.463Z",
+      "updated_at": "2026-11-14T03:09:06.536Z",
       "display": "emas",
       "cn": "金色",
+      "last_review": "2026-11-14T03:09:06.469Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "berjemur": {
       "word": "berjemur",
@@ -28303,12 +28309,12 @@
     "menanyakan": {
       "word": "menanyakan",
       "status": "active",
-      "updated_at": "2026-11-10T09:03:12.318Z",
+      "updated_at": "2026-11-14T03:08:30.704Z",
       "display": "menanyakan",
       "cn": "询问；问及某事",
       "root": "tanya",
       "root_cn": "问",
-      "last_review": "2026-11-06T15:13:46.289Z",
+      "last_review": "2026-11-14T03:08:30.631Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28316,7 +28322,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "menikmati": {
       "word": "menikmati",
@@ -28481,17 +28487,18 @@
     "bertujuan": {
       "word": "bertujuan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:27.825Z",
+      "updated_at": "2026-11-14T03:09:01.256Z",
       "display": "bertujuan",
       "cn": "旨在；以……为目的",
       "root": "tujuan",
+      "last_review": "2026-11-14T03:09:01.190Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "erosi": {
       "word": "erosi",
@@ -28737,17 +28744,18 @@
     "menekan-nekan": {
       "word": "menekan-nekan",
       "status": "active",
-      "updated_at": "2026-10-14T07:02:40.879Z",
+      "updated_at": "2026-11-14T03:09:19.163Z",
       "display": "menekan-nekan",
       "cn": "反复按；乱按",
       "root": "tekan",
+      "last_review": "2026-11-14T03:09:19.102Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "paksa": {
       "word": "paksa",
@@ -28990,16 +28998,17 @@
     "personil": {
       "word": "personil",
       "status": "active",
-      "updated_at": "2026-10-14T07:02:41.349Z",
+      "updated_at": "2026-11-14T03:09:27.656Z",
       "display": "personil",
       "cn": "人员；乐队成员",
+      "last_review": "2026-11-14T03:09:27.594Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "penggebuk": {
       "word": "penggebuk",
@@ -29023,17 +29032,18 @@
     "penonton": {
       "word": "penonton",
       "status": "active",
-      "updated_at": "2026-10-14T07:02:41.441Z",
+      "updated_at": "2026-11-14T03:09:24.887Z",
       "display": "penonton",
       "cn": "观众",
       "root": "tonton",
+      "last_review": "2026-11-14T03:09:24.822Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "panggung": {
       "word": "panggung",
@@ -29967,12 +29977,12 @@
     "berkas": {
       "word": "berkas",
       "status": "active",
-      "updated_at": "2026-11-10T09:03:16.613Z",
+      "updated_at": "2026-11-14T03:08:35.174Z",
       "display": "berkas",
       "cn": "文件；材料；档案包",
       "root": "berkas",
       "root_cn": "一束；成套材料",
-      "last_review": "2026-11-06T15:13:42.486Z",
+      "last_review": "2026-11-14T03:08:35.109Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -29980,7 +29990,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "pertimbangan": {
       "word": "pertimbangan",
@@ -30053,12 +30063,12 @@
     "menyerahkan": {
       "word": "menyerahkan",
       "status": "active",
-      "updated_at": "2026-11-10T09:03:29.794Z",
+      "updated_at": "2026-11-14T03:08:56.097Z",
       "display": "menyerahkan",
       "cn": "交给；提交；移交",
       "root": "serah",
       "root_cn": "交；移交",
-      "last_review": "2026-11-06T15:13:59.901Z",
+      "last_review": "2026-11-14T03:08:56.028Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -30066,7 +30076,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "strategis": {
       "word": "strategis",
