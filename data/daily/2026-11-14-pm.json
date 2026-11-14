@@ -1,0 +1,409 @@
+{
+  "date": "2026-11-14",
+  "session": "pm",
+  "time": "18:00",
+  "day": 85,
+  "title": "18:00 晚课｜Libur Natal di Lovina: Kamar Belum Siap, Lumba-lumba Datang · 罗威纳的圣诞假期：房间没准备好，海豚却来了",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "resepsionis hotel",
+    "gelombang",
+    "lumba-lumba",
+    "kura-kura",
+    "cerdik"
+  ],
+  "vocab": [
+    {
+      "word": "resepsionis hotel",
+      "display": "resepsionis hotel",
+      "audio_text": "resepsionis hotel",
+      "cn": "酒店前台（接待员）",
+      "en": "hotel receptionist",
+      "root": "resepsionis",
+      "root_cn": "前台接待员（来自英语 receptionist）",
+      "formation": "名词词组：resepsionis（← 英语 receptionist）+ hotel。印尼语修饰成分放在后面，resepsionis hotel 就是“酒店的前台”。相关词：resepsi（招待会；也常指婚宴 resepsi pernikahan）。常见搭配：bertanya ke resepsionis hotel（问酒店前台）、melapor ke resepsionis（向前台反映）、resepsionis hotel yang ramah（友善的前台）。",
+      "example": "Resepsionis hotel itu sangat ramah; dia langsung menelepon teknisi waktu AC kamar kami mati.",
+      "example_cn": "那位酒店前台非常友善，我们房间空调坏了，她马上就给维修师傅打了电话。",
+      "synonym_note": "resepsionis 既指前台这个人，也常指前台这个位置（Kuncinya ditinggal di resepsionis.）；petugas hotel 泛指酒店的任何工作人员；resepsi 主要是“招待会、婚宴”，别和 resepsionis 混。称呼前台本人用 Mas / Mbak，不说 Pak Resepsionis。口语说法：日常就说 resepsionis，酒店业内也常说 FO（front office）。",
+      "usage_note": "打电话到前台的开场：Halo, resepsionis? Saya dari kamar 205.（喂，是前台吗？我是 205 房间的。）在酒店以外的地方（诊所、公司）也有 resepsionis，所以说酒店前台时把 hotel 带上更清楚。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "gelombang",
+      "display": "gelombang",
+      "audio_text": "gelombang",
+      "cn": "波浪；（一）波、批次",
+      "en": "wave; batch (of registration)",
+      "root": "gelombang",
+      "root_cn": "波浪",
+      "formation": "基础名词，不拆词缀。派生：bergelombang（起伏的、波浪状的：jalan bergelombang 坑洼起伏的路、rambut bergelombang 波浪发）。常见搭配：gelombang tinggi（大浪）、gelombang panas（热浪）、gelombang radio（无线电波）、pendaftaran gelombang kedua（第二批报名）。",
+      "example": "Waktu air laut pasang, gelombang di pantai ini bisa tinggi sekali, jadi pengunjung dilarang berenang.",
+      "example_cn": "涨潮的时候，这片海滩的浪可能会很大，所以游客禁止下水游泳。",
+      "synonym_note": "说海浪，日常最常用 ombak（ombaknya besar、main ombak）；gelombang 更正式，常见于天气预报（gelombang tinggi 2 meter）、物理里的“波”（gelombang radio），以及“一批、一波”（gelombang pertama pendaftaran）。说海浪两者都可以，聊天时 ombak 更口语。",
+      "usage_note": "新闻和海边告示常见：Waspada gelombang tinggi!（注意大浪！）报名、招聘分批时也用：Pendaftaran gelombang kedua dibuka minggu depan.（第二批报名下周开放。）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "lumba-lumba",
+      "display": "lumba-lumba",
+      "audio_text": "lumba-lumba",
+      "cn": "海豚",
+      "en": "dolphin",
+      "root": "lumba-lumba",
+      "root_cn": "只以重叠形式使用（lumba 单独不成词）",
+      "formation": "重叠名词（和 kura-kura、kupu-kupu 一样），这里的重叠不表示复数：一只海豚也是 seekor lumba-lumba。“一群海豚”说 sekelompok lumba-lumba。常见搭配：melihat lumba-lumba（看海豚）、lumba-lumba melompat（海豚跃出水面）、pertunjukan lumba-lumba（海豚表演）。",
+      "example": "Keberadaan lumba-lumba di perairan Lovina membuat desa nelayan itu ramai dikunjungi wisatawan.",
+      "example_cn": "罗威纳海域有海豚，这让那个渔村吸引了很多游客。",
+      "synonym_note": "lumba-lumba（海豚）、ikan paus 或 paus（鲸）、hiu（鲨鱼）是三种常被混说的大型海洋动物；lumba-lumba 一般不加 ikan；鲸常说 ikan paus，也可以只说 paus。量词用 seekor。",
+      "usage_note": "去看海豚的出海项目常说 lihat lumba-lumba（看海豚），罗威纳和基里蒙贾瓦等地都有清晨出海看海豚的行程。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kura-kura",
+      "display": "kura-kura",
+      "audio_text": "kura-kura",
+      "cn": "乌龟（陆龟、淡水龟）",
+      "en": "tortoise; turtle",
+      "root": "kura-kura",
+      "root_cn": "只以重叠形式使用（kura 单独不成词）",
+      "formation": "重叠名词，重叠不表示复数：seekor kura-kura（一只乌龟）。常见搭配：memelihara kura-kura（养乌龟）、cangkang kura-kura（龟壳）、jalannya pelan kayak kura-kura（走得像乌龟一样慢）。",
+      "example": "Di kolam dekat lobi hotel ada dua macam kura-kura; anak-anak suka memberi mereka makan sayur.",
+      "example_cn": "酒店大堂旁的水池里有两种乌龟，孩子们喜欢喂它们吃菜。",
+      "synonym_note": "海里的海龟一般说 penyu（penyu bertelur di pantai 海龟在海滩产卵）；kura-kura 多指池塘、陆地上的龟，日常和童话里也可以泛指龟。所以在海上看到的海龟，最准确的说法是 penyu。",
+      "usage_note": "比喻慢：Jalannya kayak kura-kura!（他走得跟乌龟一样慢！kayak = seperti）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "cerdik",
+      "display": "cerdik",
+      "audio_text": "cerdik",
+      "cn": "机灵；会想巧办法（有时带点狡黠）",
+      "en": "clever; shrewd; resourceful",
+      "root": "cerdik",
+      "root_cn": "机灵，有计谋",
+      "formation": "形容词，不拆词缀。派生：kecerdikan（机灵、计谋：berkat kecerdikannya 多亏他机灵）。常见搭配：anak yang cerdik（机灵的孩子）、cara yang cerdik（巧妙的办法）、cerdik mencari jalan keluar（会找出路）、si Kancil yang cerdik（聪明的小鼷鹿）。",
+      "example": "Dalam dongeng, si Kancil itu cerdik: dia berhasil menipu buaya supaya bisa menyeberang sungai.",
+      "example_cn": "在童话里，小鼷鹿很机灵：它成功骗过了鳄鱼，好过河。",
+      "synonym_note": "pintar 是最通用的“聪明”（pintar matematika）；cerdas 偏智力高，较正式（anak yang cerdas）；cerdik 偏“遇到问题会想巧办法”，可以是纯夸奖（tukang perahu yang cerdik），在骗人的语境里带“狡黠”味；licik 才是明确贬义的“狡猾、耍诈”。口语说法：夸人聪明常说 pinter（= pintar）。",
+      "usage_note": "夸别人临场想办法：Wah, cerdik juga kamu!（哇，你还挺机灵的！）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kepepet",
+      "display": "kepepet",
+      "audio_text": "kepepet",
+      "cn": "被逼到没退路；（时间、钱）很紧，迫不得已",
+      "en": "cornered; in a pinch; pressed",
+      "root": "pepet",
+      "root_cn": "逼近；挤紧",
+      "formation": "ke- + pepet。雅加达口语里 ke- 可表示“遭受、被……”（ketabrak = tertabrak 被撞，kecopet 被扒），kepepet 就是“被挤到墙角”。标准语对应 terdesak / terjepit。常见搭配：kalau kepepet（万不得已的话）、kepepet waktu（时间紧）、kepepet uang / duit（缺钱）、lagi kepepet（正手头紧／正赶时间）、namanya juga kepepet（谁让情况紧急呢）。",
+      "example": "Akhir bulan aku lagi kepepet, jadi semua pengeluaran yang nggak penting aku tunda dulu.",
+      "example_cn": "月底我手头很紧，所以不重要的开销我都先往后推。（nggak = tidak）",
+      "synonym_note": "kepepet 是“处境紧、被逼到不得不”；terpaksa 是“被迫去做”某个动作；mepet 是时间或距离“挨得很近”（waktunya mepet、parkirnya mepet）。三者常连用：Karena kepepet, aku terpaksa pinjam uang.（因为实在没办法，我只好借钱。）口语说法：kepepet 本身就是口语，正式场合用 terdesak（dalam keadaan terdesak）。",
+      "usage_note": "最近常错的词：注意它说的是“处境”，不是“动作”。典型句：Kalau kepepet, naik ojek aja.（实在来不及，就坐摩的吧。）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "penanganan",
+      "display": "penanganan",
+      "audio_text": "penanganan",
+      "cn": "处理；应对（的过程或方式）",
+      "en": "handling; treatment",
+      "root": "tangan",
+      "root_cn": "手",
+      "formation": "peN-an + tangan → penanganan（t 遇 peN- 脱落，peN- 变 pen-）。同词根动词：menangani（处理、应对）、ditangani（被处理）。常见搭配：penanganan keluhan（投诉处理）、penanganan cepat（迅速处理）、penanganan pasien（病人救治）、penanganan banjir（防洪应对）。",
+      "example": "Pihak hotel menyatakan bahwa penanganan keluhan tamu akan dipercepat mulai bulan depan.",
+      "example_cn": "酒店方面表示，从下个月起会加快处理客人的投诉。",
+      "synonym_note": "penanganan 是名词“处理的过程、方式”（Penanganannya cepat.）；menangani 是动作“处理”（Siapa yang menangani masalah ini?）；penyelesaian 偏“解决、了结”的结果。口语说法：日常多用 ngurus / ngurusin（= mengurus / mengurusi）：Siapa yang ngurusin keluhannya?",
+      "usage_note": "常见于服务、医疗、新闻：Penanganannya lambat banget.（处理得太慢了。）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ketiban",
+      "display": "ketiban",
+      "audio_text": "ketiban",
+      "cn": "突然摊上（好事或坏事）；落到自己头上",
+      "en": "to get hit with (luck, a task); to land on one",
+      "root": "tiban",
+      "root_cn": "落下、砸到（爪哇语来源）",
+      "formation": "ke- + tiban，口语的“遭受式”，表示没预料到的事“落到自己头上”。标准语对应 kejatuhan / tertimpa。常见搭配：ketiban rezeki（天降好运）、ketiban sial（倒霉事落到头上）、ketiban tugas / kerjaan（被摊上任务）、ketiban durian runtuh（天上掉馅饼）。",
+      "example": "Teman sekantorku tiba-tiba sakit, jadi aku yang ketiban tugas presentasi di depan klien.",
+      "example_cn": "我同事突然病了，所以给客户做汇报的任务落到了我头上。",
+      "synonym_note": "ketiban 强调“突然、没预料、落到自己身上”，好事坏事都行；kena 多用于不好的事（kena macet、kena marah）；dapat 是中性的“得到”。口语说法：ketiban 本身是口语，正式场合说 tertimpa（tertimpa musibah 遭遇不幸）或 mendapat。",
+      "usage_note": "最近常错的词。和 kepepet 对比：kepepet 是自己被逼到处境很紧，ketiban 是某件事突然落到你身上。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menabrak",
+      "display": "menabrak",
+      "audio_text": "menabrak",
+      "cn": "撞；撞上",
+      "en": "to crash into; to hit",
+      "root": "tabrak",
+      "root_cn": "撞；碰撞",
+      "formation": "meN- + tabrak → menabrak（t 脱落）。同词根：ditabrak（被撞，常指故意或对方开车撞）、tertabrak / ketabrak（不小心被撞上）、bertabrakan（互相撞）、tabrakan（撞车事故）。常见搭配：menabrak pohon（撞树）、menabrak pagar（撞围栏）、hampir menabrak（差点撞上）。",
+      "example": "Sesudah menyetir delapan jam, sopir itu mengantuk, dan mobilnya hampir menabrak pembatas jalan.",
+      "example_cn": "开了八个小时车之后，司机犯困了，车差点撞上道路护栏。",
+      "synonym_note": "menabrak 的主语是“撞上去的一方”（Motor itu menabrak tiang.）；bertabrakan 是双方互撞（Dua motor bertabrakan.）；tertabrak / ketabrak 是被撞的一方（Kucingnya ketabrak motor.）。口语说法：nabrak（= menabrak）：Hampir nabrak, tuh!",
+      "usage_note": "说交通、船只、走路撞到东西都可用：Perahu itu hampir menabrak perahu kami.（那条船差点撞上我们的船。）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menambahkan",
+      "display": "menambahkan",
+      "audio_text": "menambahkan",
+      "cn": "加上；添加（把东西加进去）；补充（说）",
+      "en": "to add (something to); to add (in speech)",
+      "root": "tambah",
+      "root_cn": "增加；添加",
+      "formation": "meN- + tambah + -kan。同词根：menambah（使数量增加）、bertambah（变多）、tambahan（额外的、追加的）。常见搭配：menambahkan gula / garam（加糖／盐）、menambahkan nama ke daftar（把名字加进名单）、Saya mau menambahkan satu hal（我想补充一点）。",
+      "example": "Penjual gorengan itu menambahkan sedikit tepung beras supaya adonannya lebih renyah.",
+      "example_cn": "那个卖炸物的小贩加了一点米粉，好让面糊炸出来更酥脆。",
+      "synonym_note": "menambah 是“让数量变多”，后面接被增加的东西（menambah uang saku 增加零花钱、menambah berat badan 体重增加）；menambahkan 是“把某物加到别处去”或“补充说一句”（menambahkan garam ke sup、“Boleh saya menambahkan?”）。口语说法：tambahin / nambahin：Tambahin gulanya dikit, dong.（糖再加一点嘛。）",
+      "usage_note": "开会、投诉时很实用：Saya juga mau menambahkan satu hal: …（我还想补充一点：……）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "ikal",
+      "display": "ikal",
+      "audio_text": "ikal",
+      "cn": "（头发）波浪卷的",
+      "en": "wavy (hair)",
+      "root": "ikal",
+      "root_cn": "卷；波浪卷",
+      "formation": "形容词，不拆词缀，主要描写头发：rambut ikal（波浪卷发）、rambutnya ikal（他/她的头发是卷的）、berambut ikal（长着卷发的）。今天08:00新学。",
+      "example": "Kena angin laut seharian, rambut ikal Sinta jadi kusut dan susah disisir.",
+      "example_cn": "吹了一整天海风，Sinta 的卷发变得乱糟糟的，很难梳开。",
+      "synonym_note": "ikal 是比较松的大波浪，和今晚新学的 gelombang 有关的 rambut bergelombang 意思接近；keriting 是很密的小卷；直发是 lurus。天生的卷发两种说法都可能，看卷的程度。",
+      "usage_note": "今天08:00新学：早课是在教堂音乐会上形容 Maria 的发型，今晚换到海边出游，用来说头发被海风吹乱。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "Natal",
+      "display": "Natal",
+      "audio_text": "Natal",
+      "cn": "圣诞节",
+      "en": "Christmas",
+      "root": "Natal",
+      "root_cn": "圣诞（节）",
+      "formation": "专有名词，首字母大写，来自葡萄牙语 natal（诞生）。常见搭配：libur Natal（圣诞假期）、malam Natal（平安夜）、pohon Natal（圣诞树）、merayakan Natal（过圣诞）、Selamat Natal（圣诞快乐）。今天08:00新学。",
+      "example": "Waktu tinggal di Manado, aku mulai mengenal tradisi Natal yang meriah; hampir setiap rumah memasang lampu warna-warni.",
+      "example_cn": "住在万鸦老的时候，我开始了解那里热闹的圣诞传统：几乎每家每户都挂上彩灯。",
+      "synonym_note": "libur Natal 是“圣诞假期”（印尼的圣诞节是法定假日，常和年末假期连在一起，叫 libur Natal dan Tahun Baru，简称 libur Nataru）；Hari Natal 是圣诞节当天；malam Natal 是平安夜。口语说法：Natalan（过圣诞）：Natalan di mana tahun ini?（今年在哪儿过圣诞？）",
+      "usage_note": "今天08:00新学：早课是教堂里的圣诞慈善音乐会，今晚换成“圣诞假期出去旅行”：Libur Natal tahun ini kami ke Bali.",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Libur Natal tahun ini, Dita dan Sinta bepergian ke Lovina, Bali utara. Karena kepepet waktu, mereka baru memesan hotel dua hari sebelumnya. Sesampainya di sana, resepsionis hotel meminta maaf karena kamar mereka belum siap akibat kesalahan sistem. Penanganannya cepat: mereka dipindahkan ke kamar yang menghadap laut, dan resepsionis itu menambahkan sarapan gratis untuk mereka berdua. Sambil menunggu kamar itu dibersihkan, mereka melihat kura-kura di kolam kecil dekat lobi. Besok paginya, mereka naik perahu untuk melihat lumba-lumba. Gelombang cukup tinggi, dan puluhan perahu berebut mendekat. Sebuah perahu bahkan hampir menabrak perahu mereka. Untungnya, Pak Made, tukang perahu yang cerdik, membawa perahu mereka sedikit menjauh. Tidak lama kemudian, sekelompok lumba-lumba melompat tepat di depan mereka.",
+    "cn": "今年圣诞假期，Dita 和 Sinta 去了巴厘岛北部的罗威纳。因为时间太紧，她们出发前两天才订酒店。到了那里，酒店前台向她们道歉，说由于系统出错，她们的房间还没准备好。不过处理得很快：她们被换到了海景房，前台还给她们两人加了免费早餐。在等房间打扫的时候，她们看了看大堂旁小水池里的乌龟。第二天一早，她们坐船出海看海豚。浪挺大的，几十条船抢着往前靠。有一条船甚至差点撞上她们的船。幸好船夫 Made 大叔很机灵，把她们的船往旁边开远了一点。没过多久，一群海豚就在她们正前方跃出了水面。"
+  },
+  "dialogue": {
+    "title": "假期回来，Dita 跟同事聊罗威纳之行",
+    "lines": [
+      {
+        "speaker": "Rina",
+        "id": "Dit, gimana liburan Natal kemarin? Jadi ke Lovina?",
+        "cn": "Dit，圣诞假期过得怎么样？最后去成罗威纳了吗？（gimana = bagaimana）"
+      },
+      {
+        "speaker": "Dita",
+        "id": "Jadi dong! Tapi hampir batal. Kerjaan kantor numpuk, jadi kita kepepet banget, baru booking hotel dua hari sebelumnya.",
+        "cn": "去成了！不过差点去不了。公司的活儿堆成山，我们时间特别紧，出发前两天才订的酒店。（kerjaan = pekerjaan，numpuk = menumpuk，booking = memesan）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Terus dapet kamar nggak?",
+        "cn": "那订到房间了吗？（dapet = dapat，nggak = tidak）"
+      },
+      {
+        "speaker": "Dita",
+        "id": "Awalnya kamarnya belum siap. Eh, kita malah ketiban rezeki: dipindahin ke kamar yang ngadep laut, gratis!",
+        "cn": "一开始房间还没准备好。结果我们反而天降好运：被换到了海景房，还不加钱！（dipindahin = dipindahkan，ngadep = menghadap）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Wih, enak banget! Terus lumba-lumbanya keliatan?",
+        "cn": "哇，太爽了！那海豚看到了吗？（keliatan = kelihatan）"
+      },
+      {
+        "speaker": "Dita",
+        "id": "Keliatan, tapi gelombangnya lumayan tinggi. Rambut ikal Sinta sampai kusut banget kena angin laut, haha.",
+        "cn": "看到了，不过浪挺大的。Sinta 的卷发被海风吹得乱成一团，哈哈。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Katanya di sana perahunya rame banget, ya?",
+        "cn": "听说那边看海豚的船特别多，是吗？（rame = ramai）"
+      },
+      {
+        "speaker": "Dita",
+        "id": "Iya, ada perahu yang hampir nabrak kita. Untung Pak Made cerdik, dia bawa perahunya agak jauh dari rombongan. Eh, lumba-lumbanya malah muncul di depan kita!",
+        "cn": "是啊，有条船差点撞上我们。幸好 Made 大叔机灵，把船开得离船群远一点。结果海豚反而就在我们面前冒出来了！（nabrak = menabrak，bawa = membawa）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Seru banget! Kirimin videonya dong, jangan hapus dulu, ya.",
+        "cn": "太好玩了！把视频发给我嘛，先别删哦。（kirimin = kirimkan）"
+      },
+      {
+        "speaker": "Dita",
+        "id": "Udah aku kirim ke grup. Pokoknya tahun depan kita booking lebih awal!",
+        "cn": "已经发到群里了。反正明年我们一定早点订！（udah = sudah）"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：讲一次你在海边或坐船的经历：海浪怎么样、谁想了个好办法、结果如何。用 gelombang、cerdik，2–3 句，不照抄阅读。",
+      "reference_answer": "Waktu ke Kepulauan Seribu tahun lalu, gelombangnya tinggi sekali, jadi banyak penumpang mabuk laut. Untung nakhoda kapalnya cerdik: dia memilih jalur di dekat pulau-pulau kecil, jadi kapalnya tidak terlalu terguncang. Intinya, kami sampai dengan selamat dan masih sempat berkeliling pulau sebelum sore.",
+      "reference_cn": "去年去千岛群岛的时候，浪特别大，很多乘客都晕船了。幸好船长很机灵，选了一条靠近小岛的航线，船就没那么颠了。总之，我们平安到达，傍晚前还来得及环岛转了一圈。"
+    },
+    {
+      "task": "弱词应用：说一次你时间或钱很紧、偏偏又突然被摊上额外任务的经历，最后怎么解决的。用 kepepet、ketiban，2–3 句。",
+      "reference_answer": "Bulan lalu saya lagi kepepet karena harus bayar angsuran motor, padahal gaji belum masuk. Minggu itu juga, saya malah ketiban tugas mengurus acara kantor karena teman saya cuti. Saya sempat serba salah, tapi akhirnya semuanya bisa selesai tepat waktu.",
+      "reference_cn": "上个月我手头很紧，要还摩托车的分期款，可工资还没到账。偏偏就在那一周，同事休假，筹办公司活动的任务又落到了我头上。我一度左右为难，不过最后所有事都按时完成了。"
+    },
+    {
+      "task": "今天08:00新学词迁移：说说你今年圣诞／年末假期想去哪儿、跟谁去，并描述同行那个人的头发。用 Natal、ikal，2–3 句，场景不要用音乐会。",
+      "reference_answer": "Libur Natal nanti, aku mau bepergian ke Yogyakarta sama adikku. Rambut adikku ikal dan gampang kusut, jadi dia selalu bawa topi kalau jalan-jalan. Sayang kalau liburan cuma dihabiskan di rumah.",
+      "reference_cn": "这次圣诞假期，我想和妹妹一起去日惹。我妹妹是卷发，很容易乱，所以她出门玩总会带顶帽子。假期要是只待在家里就太可惜了。"
+    },
+    {
+      "task": "场景回应：你住的酒店房间空调坏了，前台电话一直没人接，终于打通后向前台投诉，并补充另一个问题。用 penanganan、menambahkan，2–3 句，用礼貌的 saya。",
+      "reference_answer": "Selamat malam, Mbak. Tadi saya sudah telepon dua kali, tapi tidak ada yang angkat. AC di kamar 205 mati sejak sore, jadi saya harap penanganannya bisa cepat. Saya juga mau menambahkan satu hal: air panas di kamar mandi tidak keluar.",
+      "reference_cn": "晚上好。我刚才已经打了两次电话，可是没人接。205 房间的空调从傍晚就坏了，希望能尽快处理。我还想补充一点：浴室里没有热水。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "早上 8:40 Andi 才醒，九点就要开会，公司又很远。他只好叫了一辆贵两倍的摩的。同事听了笑着说：“Ya udah, namanya juga ____.” 哪项放进句中最自然？",
+        "options": [
+          "ketiban",
+          "kebelet",
+          "kepepet",
+          "kelewatan"
+        ],
+        "answer_index": 2,
+        "answer": "kepepet",
+        "explain": "Andi 被时间逼到没别的办法，只能多花钱，这是 kepepet（namanya juga kepepet = 谁让情况紧急呢）。ketiban 是某件事突然落到自己头上（ketiban sial、ketiban tugas），这里强调的不是“摊上”，而是“被逼得只能这样”；kebelet 是急着上厕所之类的生理急迫；kelewatan 是“太过分”或“坐过站”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "一位客人在酒店点评里写：“Kamarnya bersih, dan ____ keluhan tamu di hotel ini cepat sekali.” 哪项放进句中最自然？",
+        "options": [
+          "menangani",
+          "penanganan",
+          "ditangani",
+          "tangani"
+        ],
+        "answer_index": 1,
+        "answer": "penanganan",
+        "explain": "空格是句子后半的主语，后面跟 keluhan tamu 和 cepat sekali，需要名词“处理（的过程）”：penanganan keluhan tamu。menangani 是主动动词，要有人做主语（Mereka menangani keluhan dengan cepat）；ditangani 是被动，语序应为 keluhan tamu ditangani dengan cepat；tangani 是词根形式，只用在命令句或口语被动结构里。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Dita 订的是普通房。因为原来的房间没准备好，酒店把她免费换到了海景房。她给朋友发消息：“Wah, aku ____ rezeki nih!” 哪项最自然？",
+        "options": [
+          "kena",
+          "kehilangan",
+          "ketinggalan",
+          "ketiban"
+        ],
+        "answer_index": 3,
+        "answer": "ketiban",
+        "explain": "没预料到的好事落到自己头上，口语常说 ketiban rezeki。kena 多用于不好的事（kena macet、kena tilang），一般不说 kena rezeki；kehilangan 是“失去”，ketinggalan 是“落下、没赶上”，意思都相反。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Hati-hati, jangan sampai mobilmu ____ pagar rumah orang.（撞上）",
+        "answer": "menabrak",
+        "explain": "主语 mobilmu 是撞上去的一方，用主动 menabrak + 被撞的东西。bertabrakan 是两方互撞，后面不直接接宾语；tertabrak 是“被撞”。口语也可以说 nabrak。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kalau kopinya terlalu pahit, kamu bisa ____ sedikit gula.（加进去）",
+        "answer": "menambahkan",
+        "explain": "把糖“加进”咖啡里，用 menambahkan + 被加进去的东西。menambah 是“让数量变多”（menambah uang saku），说把调料加进去多用 menambahkan；口语常说 tambahin gula。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：海豚突然出现在我们的船前面。",
+        "tokens": [
+          "Lumba-lumba",
+          "tiba-tiba",
+          "muncul",
+          "di",
+          "depan",
+          "perahu",
+          "kami."
+        ],
+        "answer": "Lumba-lumba tiba-tiba muncul di depan perahu kami.",
+        "answer_cn": "海豚突然出现在我们的船前面。",
+        "explain": "主语 lumba-lumba（一只或一群都不用再变形）+ 副词 tiba-tiba + 动词 muncul + 地点 di depan perahu kami。印尼语的“我们的船”是 perahu kami，所属者放在后面。"
+      }
+    ],
+    "self_check": [
+      "不看中文，resepsionis hotel、gelombang、lumba-lumba、kura-kura、cerdik 这 5 个新词里，有没有哪个我 3 秒内说不出意思？",
+      "kepepet 和 ketiban，我能马上分清哪个是“被逼得没退路”、哪个是“突然摊上”吗？",
+      "看到 penanganan、menabrak，我能不看词卡马上说出中文意思吗？",
+      "menambah 和 menambahkan，我分得清“让数量变多”和“把东西加进去”各用哪个吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "易混词各说一句：用 Kalau kepepet, … 说一次你时间或钱很紧时的办法；用 ketiban rezeki 或 ketiban tugas 说一件突然落到你头上的事；再用 Saya mau menambahkan satu hal: … 在讨论里补充一句。",
+      "30 秒复述 Dita 和 Sinta 的罗威纳之行：用 resepsionis hotel、penanganan、kura-kura、gelombang、menabrak、cerdik、lumba-lumba，说说房间出了什么问题、怎么处理的、出海时发生了什么。",
+      "联系自己：用今天08:00新学的 Natal 和 ikal，说说你今年年末想去哪里玩、和谁去，再描述一个头发是卷的朋友。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "kepepet",
+      "ketiban",
+      "gelombang"
+    ],
+    "patterns": [
+      {
+        "pattern": "Karena kepepet …, …",
+        "cn": "因为（时间、钱）太紧，……",
+        "example": "Karena kepepet waktu, mereka baru memesan hotel dua hari sebelumnya.",
+        "example_cn": "因为时间太紧，她们出发前两天才订酒店。"
+      },
+      {
+        "pattern": "Untung …, …",
+        "cn": "幸好……，……",
+        "example": "Untung Pak Made cerdik, dia bawa perahunya agak jauh dari rombongan.",
+        "example_cn": "幸好 Made 大叔机灵，把船开得离船群远一点。"
+      }
+    ]
+  }
+}
