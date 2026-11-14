@@ -99,17 +99,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "berangkat kuliah",
-    "cn": "去上大学/去上课",
-    "en": "leave for college",
-    "root": "angkat",
-    "root_cn": "",
-    "formation": "ber- + angkat；词组",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "badak",
     "cn": "犀牛",
     "en": "rhinoceros",
@@ -539,31 +528,9 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "ulek",
-    "cn": "研杵",
-    "en": "pestle",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "seprai",
     "cn": "床单",
     "en": "bed sheet",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "gantungan",
-    "cn": "挂钩/衣架",
-    "en": "hanger",
     "root": "",
     "root_cn": "",
     "formation": "",
@@ -630,17 +597,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "word": "perak",
     "cn": "银色",
     "en": "silver",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "oranye",
-    "cn": "橙色",
-    "en": "orange",
     "root": "",
     "root_cn": "",
     "formation": "",
@@ -2211,17 +2167,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "status",
-    "cn": "状态；身份",
-    "en": "status",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
     "word": "menyerahkan",
     "cn": "交给；提交",
     "en": "hand over; submit",
@@ -2382,17 +2327,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "root": "didik",
     "root_cn": "",
     "formation": "di- + didik",
-    "bipa_level": "B2",
-    "sab": "S",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "pembantu",
-    "cn": "助手；帮佣",
-    "en": "helper; assistant",
-    "root": "bantu",
-    "root_cn": "",
-    "formation": "peN- + bantu",
     "bipa_level": "B2",
     "sab": "S",
     "selection": "fuzzy"

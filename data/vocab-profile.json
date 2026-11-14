@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-14T03:41:07.167Z",
-  "source_updated_at": "2026-11-14T03:09:40.395Z",
+  "generated_at": "2026-11-14T08:27:38.905Z",
+  "source_updated_at": "2026-11-14T08:27:12.245Z",
   "taught_total": 1210,
   "confirmed_mastered": 277,
   "needs_reinforcement": 832,
@@ -13,7 +13,7 @@
   "primary_unlearned_total": 330,
   "primary_coverage_percent": 66.2,
   "primary_eligible_new_total": 0,
-  "secondary_eligible_new_total": 26,
+  "secondary_eligible_new_total": 20,
   "active_master_pool": "secondary_bipa",
   "focus_total": 829,
   "focus_words": [
@@ -71,6 +71,19 @@
       "cn": "建设；发展；建造过程"
     },
     {
+      "word": "kepepet",
+      "score": 106,
+      "signals": [
+        "quick_wrong",
+        "lesson_wrong",
+        "dont"
+      ],
+      "wrong_count": 3,
+      "last_wrong": "2026-11-14T08:25:55.040Z",
+      "last_review": "2026-11-14T08:25:55.040Z",
+      "cn": "被逼到很紧；没什么余地"
+    },
+    {
       "word": "berlaku sampai",
       "score": 98,
       "signals": [
@@ -108,19 +121,6 @@
       "last_wrong": "2026-10-26T13:19:57.977Z",
       "last_review": "2026-11-06T01:57:09.654Z",
       "cn": "处理；应对（过程）"
-    },
-    {
-      "word": "mengabaikan",
-      "score": 88,
-      "signals": [
-        "lesson_wrong",
-        "dont",
-        "fuzzy"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-10-15T03:20:48.795Z",
-      "last_review": "2026-10-26T07:54:40.387Z",
-      "cn": "忽视；不理会"
     }
   ],
   "definitions": {
