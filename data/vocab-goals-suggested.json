@@ -4,14 +4,14 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1071,
-   "recognize": 115,
+   "use": 1074,
+   "recognize": 117,
    "unsure": 24,
    "fast": 137
   },
   "active": {
-   "use": 701,
-   "recognize": 99,
+   "use": 704,
+   "recognize": 101,
    "unsure": 22,
    "fast": 57
   }
@@ -11125,6 +11125,51 @@
    "status": "mastered",
    "why": [
     "课程里出现的派生词或常用表达"
+   ]
+  },
+  "resepsionis hotel": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "gelombang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "lumba-lumba": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "kura-kura": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "cerdik": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（B1 / B）"
    ]
   }
  }

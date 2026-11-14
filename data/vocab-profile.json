@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-14T10:52:15.315Z",
-  "source_updated_at": "2026-11-14T08:33:15.398Z",
+  "generated_at": "2026-11-14T14:01:09.450Z",
+  "source_updated_at": "2026-11-14T11:35:03.434Z",
   "taught_total": 1215,
   "confirmed_mastered": 286,
   "needs_reinforcement": 827,
@@ -72,15 +72,15 @@
     },
     {
       "word": "kepepet",
-      "score": 106,
+      "score": 108,
       "signals": [
         "quick_wrong",
         "lesson_wrong",
         "dont"
       ],
-      "wrong_count": 3,
-      "last_wrong": "2026-11-14T08:25:55.040Z",
-      "last_review": "2026-11-14T08:25:55.040Z",
+      "wrong_count": 4,
+      "last_wrong": "2026-11-14T11:30:50.316Z",
+      "last_review": "2026-11-14T11:30:50.316Z",
       "cn": "被逼到很紧；没什么余地"
     },
     {
@@ -97,6 +97,19 @@
       "cn": "有效期至"
     },
     {
+      "word": "penanganan",
+      "score": 90,
+      "signals": [
+        "lesson_wrong",
+        "dont",
+        "fuzzy"
+      ],
+      "wrong_count": 3,
+      "last_wrong": "2026-11-14T11:31:23.658Z",
+      "last_review": "2026-11-14T11:31:23.658Z",
+      "cn": "处理；应对（过程）"
+    },
+    {
       "word": "perpaduan",
       "score": 90,
       "signals": [
@@ -108,19 +121,6 @@
       "last_wrong": "2026-11-12T11:38:25.836Z",
       "last_review": "2026-11-12T11:38:25.836Z",
       "cn": "融合；结合；搭配"
-    },
-    {
-      "word": "penanganan",
-      "score": 88,
-      "signals": [
-        "lesson_wrong",
-        "dont",
-        "fuzzy"
-      ],
-      "wrong_count": 2,
-      "last_wrong": "2026-10-26T13:19:57.977Z",
-      "last_review": "2026-11-06T01:57:09.654Z",
-      "cn": "处理；应对（过程）"
     }
   ],
   "definitions": {

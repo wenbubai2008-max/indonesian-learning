@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-14T10:52:10.416Z",
+    "runtime_generated_at": "2026-11-14T14:01:09.297Z",
     "lesson_watermark": "2026-11-14 18:00",
     "index_updated": "2026-11-14",
-    "runtime_hash": "5e64e329feab1f5328337d9b09e27b020465ee68b113618cedb4c54098e0a2cc",
+    "runtime_hash": "f1442e3b878cd8c7a975584915b32ae6d91ba36ec57684df02f185bdfa6b8d43",
     "index_hash": "796e4347bb9e9cc15485acd1822bed9fd12eba1252c35e1eba96a11ace4931d6",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
@@ -155,9 +155,9 @@
       [
         "kepepet",
         1,
-        3,
-        "2026-11-14T08:25:55.040Z",
-        "2026-11-14T08:25:55.040Z",
+        4,
+        "2026-11-14T11:30:50.316Z",
+        "2026-11-14T11:30:50.316Z",
         "被逼到很紧；没什么余地",
         "pepet",
         "逼近；紧逼"
@@ -173,6 +173,16 @@
         "有效；畅销"
       ],
       [
+        "penanganan",
+        1,
+        3,
+        "2026-11-14T11:31:23.658Z",
+        "2026-11-14T11:31:23.658Z",
+        "处理；应对（过程）",
+        "tangan",
+        "手"
+      ],
+      [
         "perpaduan",
         1,
         3,
@@ -181,16 +191,6 @@
         "融合；结合；搭配",
         "padu",
         "协调；融合"
-      ],
-      [
-        "penanganan",
-        1,
-        2,
-        "2026-10-26T13:19:57.977Z",
-        "2026-11-06T01:57:09.654Z",
-        "处理；应对（过程）",
-        "tangan",
-        "手"
       ],
       [
         "mengabaikan",
@@ -2353,7 +2353,7 @@
       ],
       [
         "kepepet",
-        106,
+        108,
         [
           "quick_wrong",
           "lesson_wrong",
@@ -2370,7 +2370,7 @@
         ]
       ],
       [
-        "perpaduan",
+        "penanganan",
         90,
         [
           "lesson_wrong",
@@ -2379,8 +2379,8 @@
         ]
       ],
       [
-        "penanganan",
-        88,
+        "perpaduan",
+        90,
         [
           "lesson_wrong",
           "dont",
