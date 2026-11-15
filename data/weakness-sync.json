@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T06:38:52.305Z",
+  "updated_at": "2026-11-15T13:27:10.274Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -15384,8 +15384,9 @@
     "uji": {
       "word": "uji",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:58.602Z",
+      "updated_at": "2026-11-15T11:00:31.481Z",
       "display": "uji",
+      "cn": "测试",
       "last_review": "2026-09-12T14:43:34.402Z",
       "last_mastered": "2026-09-12T14:43:34.402Z",
       "reasons": [],
@@ -27793,44 +27794,47 @@
     "catur": {
       "word": "catur",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:26.099Z",
+      "updated_at": "2026-11-15T13:26:42.219Z",
       "display": "catur",
       "cn": "国际象棋",
+      "last_review": "2026-11-15T13:26:42.168Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "gulat": {
       "word": "gulat",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:26.135Z",
+      "updated_at": "2026-11-15T13:26:44.734Z",
       "display": "gulat",
       "cn": "摔跤",
+      "last_review": "2026-11-15T13:26:44.671Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "panahan": {
       "word": "panahan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:26.172Z",
+      "updated_at": "2026-11-15T13:26:46.623Z",
       "display": "panahan",
       "cn": "射箭",
+      "last_review": "2026-11-15T13:26:46.567Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "pendinginan": {
       "word": "pendinginan",
@@ -28087,16 +28091,17 @@
     "suci": {
       "word": "suci",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:26.833Z",
+      "updated_at": "2026-11-15T13:26:59.951Z",
       "display": "suci",
       "cn": "神圣的",
+      "last_review": "2026-11-15T13:26:59.896Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 0
+      "right_streak": 1
     },
     "keramat": {
       "word": "keramat",
@@ -28279,13 +28284,13 @@
     "menakjubkan": {
       "word": "menakjubkan",
       "status": "active",
-      "updated_at": "2026-11-14T08:06:50.887Z",
+      "updated_at": "2026-11-15T11:17:38.877Z",
       "display": "menakjubkan",
       "cn": "令人惊叹的；了不起的",
       "root": "takjub",
       "root_cn": "惊叹",
       "last_wrong": "2026-11-14T08:06:50.825Z",
-      "last_review": "2026-11-14T08:06:50.825Z",
+      "last_review": "2026-11-15T11:17:38.819Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28294,7 +28299,7 @@
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "menyebalkan": {
       "word": "menyebalkan",
@@ -30245,22 +30250,22 @@
     "penanganan": {
       "word": "penanganan",
       "status": "active",
-      "updated_at": "2026-11-14T11:31:23.725Z",
+      "updated_at": "2026-11-15T11:13:51.760Z",
       "display": "penanganan",
-      "cn": "处理；应对（的过程或方式）",
+      "cn": "处理；应对（的过程）",
       "root": "tangan",
       "root_cn": "手",
-      "last_wrong": "2026-11-14T11:31:23.658Z",
-      "last_review": "2026-11-14T11:31:23.658Z",
+      "last_wrong": "2026-11-15T11:13:51.680Z",
+      "last_review": "2026-11-15T11:13:51.680Z",
       "source": "课程小测",
-      "source_date": "2026-11-14",
+      "source_date": "2026-11-15",
       "session": "18:00",
       "reasons": [
         "bipa_secondary_dont",
         "memory_fuzzy",
         "lesson_wrong"
       ],
-      "wrong_count": 3,
+      "wrong_count": 4,
       "right_streak": 0
     },
     "tuntas": {
@@ -31964,19 +31969,19 @@
     "patungan": {
       "word": "patungan",
       "status": "active",
-      "updated_at": "2026-11-14T08:24:34.798Z",
+      "updated_at": "2026-11-15T11:17:48.588Z",
       "display": "patungan",
       "cn": "一起分摊；凑钱；AA出钱（口语）",
       "root": "patungan",
       "root_cn": "共同凑钱；分摊费用",
       "last_wrong": "2026-11-14T08:24:34.736Z",
-      "last_review": "2026-11-14T08:24:34.736Z",
+      "last_review": "2026-11-15T11:17:48.528Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kemahalan": {
       "word": "kemahalan",
@@ -32044,13 +32049,13 @@
     "kepepet": {
       "word": "kepepet",
       "status": "active",
-      "updated_at": "2026-11-14T11:30:50.403Z",
+      "updated_at": "2026-11-15T11:18:00.988Z",
       "display": "kepepet",
       "cn": "被逼到很紧；没什么余地",
       "root": "pepet",
       "root_cn": "逼近；紧逼",
       "last_wrong": "2026-11-14T11:30:50.316Z",
-      "last_review": "2026-11-14T11:30:50.316Z",
+      "last_review": "2026-11-15T11:18:00.931Z",
       "source": "课程小测",
       "source_date": "2026-11-14",
       "session": "18:00",
@@ -32060,7 +32065,7 @@
         "quick_wrong"
       ],
       "wrong_count": 4,
-      "right_streak": 0
+      "right_streak": 1
     },
     "keduluan": {
       "word": "keduluan",
@@ -32173,18 +32178,18 @@
     "ketiban": {
       "word": "ketiban",
       "status": "active",
-      "updated_at": "2026-11-14T08:26:13.333Z",
+      "updated_at": "2026-11-15T11:18:13.060Z",
       "display": "ketiban",
       "cn": "突然摊上；意外落到自己头上",
       "root": "tiban",
       "root_cn": "落到；压到",
-      "last_wrong": "2026-11-14T08:26:13.273Z",
-      "last_review": "2026-11-14T08:26:13.273Z",
+      "last_wrong": "2026-11-15T11:18:12.999Z",
+      "last_review": "2026-11-15T11:18:12.999Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "kecipratan": {
@@ -32452,19 +32457,19 @@
     "ngeles": {
       "word": "ngeles",
       "status": "active",
-      "updated_at": "2026-11-14T08:25:43.729Z",
+      "updated_at": "2026-11-15T11:17:52.982Z",
       "display": "ngeles",
       "cn": "找借口；绕着说；回避真正问题（口语）",
       "root": "ngeles",
       "root_cn": "找借口；回避重点",
       "last_wrong": "2026-11-14T08:25:43.657Z",
-      "last_review": "2026-11-14T08:25:43.657Z",
+      "last_review": "2026-11-15T11:17:52.921Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "nimpalin": {
       "word": "nimpalin",
