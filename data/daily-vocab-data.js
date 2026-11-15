@@ -7395,20 +7395,22 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-10-29 18:00",
+    "last_seen": "2026-11-15 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-11-15"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
-      "2026-10-29 18:00"
+      "2026-10-29 18:00",
+      "2026-11-15 08:00"
     ]
   },
   {
@@ -9469,19 +9471,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-29 08:00",
+    "last_seen": "2026-11-15 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-12",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-11-15"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
-      "2026-10-29 08:00"
+      "2026-10-29 08:00",
+      "2026-11-15 08:00"
     ]
   },
   {
@@ -16127,19 +16131,21 @@ window.DAILY_VOCAB_DB = [
       "口语",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-29 08:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-11-15 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-29"
+      "2026-09-29",
+      "2026-11-15"
     ],
     "lesson_occurrences": [
       "2026-09-29 08:00",
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-11-15 08:00"
     ]
   },
   {
@@ -21039,9 +21045,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-10-12 18:00",
-    "last_seen": "2026-11-01 18:00",
+    "last_seen": "2026-11-15 08:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -21049,13 +21055,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-10-12",
       "2026-10-27",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-15"
     ],
     "lesson_occurrences": [
       "2026-10-12 18:00",
       "2026-10-27 18:00",
       "2026-11-01 08:00",
-      "2026-11-01 18:00"
+      "2026-11-01 18:00",
+      "2026-11-15 08:00"
     ]
   },
   {
@@ -32344,19 +32352,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-13 08:00",
-    "last_seen": "2026-11-13 18:00",
+    "last_seen": "2026-11-15 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-15"
     ],
     "lesson_occurrences": [
       "2026-11-13 08:00",
-      "2026-11-13 18:00"
+      "2026-11-13 18:00",
+      "2026-11-15 08:00"
     ]
   },
   {
@@ -32891,6 +32901,256 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-14 18:00"
+    ]
+  },
+  {
+    "word": "harimau",
+    "cn": "老虎",
+    "en": "tiger",
+    "root": "harimau",
+    "root_cn": "老虎",
+    "example": "Kalau suhu siang tinggi, harimau lebih suka tidur di bawah pohon.",
+    "example_cn": "中午气温高的时候，老虎更喜欢在树下睡觉。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 08:00"
+    ]
+  },
+  {
+    "word": "beruang",
+    "cn": "熊",
+    "en": "bear",
+    "root": "beruang",
+    "root_cn": "熊",
+    "example": "Beruang madu suka sekali madu, jadi petugas menaruh sejumlah madu di dalam batang kayu.",
+    "example_cn": "马来熊特别爱吃蜂蜜，所以工作人员往木头里放了一些蜂蜜。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 08:00"
+    ]
+  },
+  {
+    "word": "badak",
+    "cn": "犀牛",
+    "en": "rhinoceros",
+    "root": "badak",
+    "root_cn": "犀牛",
+    "example": "Badak Jawa adalah aset berharga bagi Indonesia; sekarang badak ini hanya tersisa di Ujung Kulon.",
+    "example_cn": "爪哇犀是印尼的宝贵财富；现在这种犀牛只剩下乌戎库隆还有。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 08:00"
+    ]
+  },
+  {
+    "word": "bulu",
+    "cn": "（动物的）毛；羽毛；体毛",
+    "en": "fur; feather; body hair",
+    "root": "bulu",
+    "root_cn": "毛；羽毛",
+    "example": "Bulu kucingku lagi rontok, sampai baju di jemuran pun penuh bulu kucing.",
+    "example_cn": "我家猫这阵子在掉毛，连晾着的衣服上都沾满了猫毛。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 08:00"
+    ]
+  },
+  {
+    "word": "menyerang",
+    "cn": "攻击；袭击；（疾病）侵袭",
+    "en": "to attack",
+    "root": "serang",
+    "root_cn": "攻击",
+    "example": "Harimau biasanya menyerang mangsanya dari belakang secara diam-diam.",
+    "example_cn": "老虎通常悄悄地从背后攻击猎物。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 08:00"
+    ]
+  },
+  {
+    "word": "cimol",
+    "cn": "炸木薯粉丸子（西爪哇小吃）",
+    "en": "cimol, fried tapioca balls",
+    "root": "cimol",
+    "root_cn": "炸木薯粉丸子",
+    "example": "Cimol yang baru digoreng teksturnya kenyal dan rasanya gurih.",
+    "example_cn": "刚炸好的 cimol 口感有嚼劲，味道咸香。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 08:00"
+    ]
+  },
+  {
+    "word": "botak",
+    "cn": "秃头的；光头的",
+    "en": "bald",
+    "root": "botak",
+    "root_cn": "秃",
+    "example": "Pemimpin rombongan kami botak, jadi gampang dicari di tengah keramaian.",
+    "example_cn": "我们团的领队是光头，所以在人群里很好找。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 08:00"
+    ]
+  },
+  {
+    "word": "bungkuk",
+    "cn": "驼背的；弯着腰的",
+    "en": "hunched; stooped",
+    "root": "bungkuk",
+    "root_cn": "弯曲；驼背",
+    "example": "Kakek jalannya agak bungkuk dan pelan, jadi dia bilang, \"Kalian duluan saja, nanti Kakek menyusul.\"",
+    "example_cn": "爷爷走路有点弯腰，也走得慢，所以他说：“你们先走吧，爷爷随后就来。”",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 08:00"
+    ]
+  },
+  {
+    "word": "kucir",
+    "cn": "扎起来的辫子；把头发扎起来",
+    "en": "ponytail; to tie hair up",
+    "root": "kucir",
+    "root_cn": "扎辫子",
+    "example": "Nisa duduk di depan meja rias, lalu Ibu mengucir rambutnya jadi dua.",
+    "example_cn": "妮莎坐在梳妆台前，妈妈给她扎了两个辫子。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 08:00"
+    ]
+  },
+  {
+    "word": "lonjong",
+    "cn": "椭圆的；长圆形的",
+    "en": "oval",
+    "root": "lonjong",
+    "root_cn": "椭圆",
+    "example": "Meja makan yang kami beli bentuknya lonjong; sebelum beli, kami ukur dulu ruangannya.",
+    "example_cn": "我们买的餐桌是椭圆形的；买之前，我们先量了房间。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 08:00"
     ]
   }
 ];

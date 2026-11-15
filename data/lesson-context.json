@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-15",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 86
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-14T14:01:09.297Z",
-    "lesson_watermark": "2026-11-14 18:00",
-    "index_updated": "2026-11-14",
-    "runtime_hash": "f1442e3b878cd8c7a975584915b32ae6d91ba36ec57684df02f185bdfa6b8d43",
-    "index_hash": "796e4347bb9e9cc15485acd1822bed9fd12eba1252c35e1eba96a11ace4931d6",
+    "runtime_generated_at": "2026-11-15T00:30:22.741Z",
+    "lesson_watermark": "2026-11-15 08:00",
+    "index_updated": "2026-11-15",
+    "runtime_hash": "e2708b5d80cf938ab92f77295a5c8f390965368a4c5e0ad4d976be7da86c08b1",
+    "index_hash": "798d21142cfbf4434fa7226c0d9589c095118cc3b215cbe369560a290f826c5c",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -53,46 +53,6 @@
       [
         "mengasyikan",
         "有趣、让人沉浸"
-      ],
-      [
-        "menyerang",
-        "攻击；侵袭"
-      ],
-      [
-        "harimau",
-        "老虎"
-      ],
-      [
-        "bulu",
-        "毛/羽毛"
-      ],
-      [
-        "botak",
-        "秃头"
-      ],
-      [
-        "bungkuk",
-        "弯腰"
-      ],
-      [
-        "badak",
-        "犀牛"
-      ],
-      [
-        "beruang",
-        "熊"
-      ],
-      [
-        "cimol",
-        "西爪哇木薯粉小吃"
-      ],
-      [
-        "lonjong",
-        "椭圆/长圆"
-      ],
-      [
-        "kucir",
-        "马尾/辫子"
       ],
       [
         "catur",
@@ -1493,16 +1453,6 @@
         "沉没；淹没"
       ],
       [
-        "guna",
-        2,
-        0,
-        "",
-        "2026-10-21T01:43:07.889Z",
-        "用途；作用；使用",
-        "guna",
-        "用途；作用"
-      ],
-      [
         "instan",
         2,
         0,
@@ -2311,6 +2261,116 @@
         "确保；弄清楚",
         "pasti",
         "确定；一定"
+      ],
+      [
+        "sungkan",
+        3,
+        1,
+        "2026-09-30T14:00:55.827Z",
+        "2026-11-13T02:31:21.053Z",
+        "因为礼貌或尊重而不好意思开口",
+        "sungkan",
+        "客气拘谨；不好意思开口"
+      ],
+      [
+        "harimau",
+        3,
+        0,
+        "",
+        "",
+        "老虎",
+        "harimau",
+        "老虎"
+      ],
+      [
+        "beruang",
+        3,
+        0,
+        "",
+        "",
+        "熊",
+        "beruang",
+        "熊"
+      ],
+      [
+        "badak",
+        3,
+        0,
+        "",
+        "",
+        "犀牛",
+        "badak",
+        "犀牛"
+      ],
+      [
+        "bulu",
+        3,
+        0,
+        "",
+        "",
+        "（动物的）毛；羽毛；体毛",
+        "bulu",
+        "毛；羽毛"
+      ],
+      [
+        "menyerang",
+        3,
+        0,
+        "",
+        "",
+        "攻击；袭击；（疾病）侵袭",
+        "serang",
+        "攻击"
+      ],
+      [
+        "cimol",
+        3,
+        0,
+        "",
+        "",
+        "炸木薯粉丸子（西爪哇小吃）",
+        "cimol",
+        "炸木薯粉丸子"
+      ],
+      [
+        "botak",
+        3,
+        0,
+        "",
+        "",
+        "秃头的；光头的",
+        "botak",
+        "秃"
+      ],
+      [
+        "bungkuk",
+        3,
+        0,
+        "",
+        "",
+        "驼背的；弯着腰的",
+        "bungkuk",
+        "弯曲；驼背"
+      ],
+      [
+        "kucir",
+        3,
+        0,
+        "",
+        "",
+        "扎起来的辫子；把头发扎起来",
+        "kucir",
+        "扎辫子"
+      ],
+      [
+        "lonjong",
+        3,
+        0,
+        "",
+        "",
+        "椭圆的；长圆形的",
+        "lonjong",
+        "椭圆"
       ]
     ],
     "focus": [
@@ -2861,6 +2921,29 @@
         "kura-kura",
         "cerdik"
       ]
+    },
+    {
+      "date": "2026-11-15",
+      "session": "am",
+      "review_core": [
+        "teratur",
+        "pengaturan",
+        "ngeles",
+        "patungan",
+        "guna"
+      ],
+      "new_words": [
+        "harimau",
+        "beruang",
+        "badak",
+        "bulu",
+        "menyerang",
+        "cimol",
+        "botak",
+        "bungkuk",
+        "kucir",
+        "lonjong"
+      ]
     }
   ],
   "previous_pm": {
@@ -2880,7 +2963,88 @@
       "menambahkan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-15",
+    "vocab": [
+      [
+        "harimau",
+        "老虎",
+        "tiger",
+        "harimau",
+        "老虎"
+      ],
+      [
+        "beruang",
+        "熊",
+        "bear",
+        "beruang",
+        "熊"
+      ],
+      [
+        "badak",
+        "犀牛",
+        "rhinoceros",
+        "badak",
+        "犀牛"
+      ],
+      [
+        "bulu",
+        "（动物的）毛；羽毛；体毛",
+        "fur; feather; body hair",
+        "bulu",
+        "毛；羽毛"
+      ],
+      [
+        "menyerang",
+        "攻击；袭击；（疾病）侵袭",
+        "to attack",
+        "serang",
+        "攻击"
+      ],
+      [
+        "cimol",
+        "炸木薯粉丸子（西爪哇小吃）",
+        "cimol, fried tapioca balls",
+        "cimol",
+        "炸木薯粉丸子"
+      ],
+      [
+        "botak",
+        "秃头的；光头的",
+        "bald",
+        "botak",
+        "秃"
+      ],
+      [
+        "bungkuk",
+        "驼背的；弯着腰的",
+        "hunched; stooped",
+        "bungkuk",
+        "弯曲；驼背"
+      ],
+      [
+        "kucir",
+        "扎起来的辫子；把头发扎起来",
+        "ponytail; to tie hair up",
+        "kucir",
+        "扎辫子"
+      ],
+      [
+        "lonjong",
+        "椭圆的；长圆形的",
+        "oval",
+        "lonjong",
+        "椭圆"
+      ]
+    ],
+    "review_vocab": [
+      "teratur",
+      "pengaturan",
+      "ngeles",
+      "patungan",
+      "guna"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
