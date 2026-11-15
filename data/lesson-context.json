@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-15",
-    "session": "pm",
-    "time": "18:00",
-    "day": 86
+    "date": "2026-11-16",
+    "session": "am",
+    "time": "08:00",
+    "day": 87
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-15T09:41:18.774Z",
-    "lesson_watermark": "2026-11-15 08:00",
+    "runtime_generated_at": "2026-11-15T10:51:46.051Z",
+    "lesson_watermark": "2026-11-15 18:00",
     "index_updated": "2026-11-15",
-    "runtime_hash": "709bb12cc8f89c3958c34025f32a68124b11215b293db0b4d566dff49272ee05",
-    "index_hash": "798d21142cfbf4434fa7226c0d9589c095118cc3b215cbe369560a290f826c5c",
+    "runtime_hash": "155ee2d10d2209787fccbe92aa12cffe275267f845bb567b5a38de3f3fb171b9",
+    "index_hash": "7ffff13c2498c5e1b2b908425262425815256f037c0b903a1a632099822763c1",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -49,24 +49,7 @@
   },
   "candidates": {
     "new_dont": [],
-    "new_fuzzy": [
-      [
-        "catur",
-        "国际象棋"
-      ],
-      [
-        "gulat",
-        "摔跤"
-      ],
-      [
-        "panahan",
-        "射箭"
-      ],
-      [
-        "suci",
-        "神圣的"
-      ]
-    ],
+    "new_fuzzy": [],
     "review": [
       [
         "menunjukkan",
@@ -1449,26 +1432,6 @@
         "沉没；淹没"
       ],
       [
-        "instan",
-        2,
-        0,
-        "",
-        "2026-10-21T01:43:48.715Z",
-        "即时的；速成的；方便即食的",
-        "instan",
-        "即时；速成"
-      ],
-      [
-        "karakter",
-        2,
-        0,
-        "",
-        "2026-10-21T01:44:25.063Z",
-        "性格；特征；角色",
-        "karakter",
-        "性格；角色"
-      ],
-      [
         "wajib",
         3,
         0,
@@ -2269,104 +2232,24 @@
         "客气拘谨；不好意思开口"
       ],
       [
-        "harimau",
-        3,
+        "berkencan",
+        2,
         0,
         "",
-        "2026-11-15T03:28:11.973Z",
-        "老虎",
-        "harimau",
-        "老虎"
+        "2026-10-19T13:15:18.383Z",
+        "约会；谈恋爱（交往）",
+        "kencan",
+        "约会"
       ],
       [
-        "beruang",
-        3,
+        "cemburu",
+        2,
         0,
         "",
-        "2026-11-15T03:27:59.944Z",
-        "熊",
-        "beruang",
-        "熊"
-      ],
-      [
-        "badak",
-        3,
-        0,
-        "",
-        "2026-11-15T03:27:57.645Z",
-        "犀牛",
-        "badak",
-        "犀牛"
-      ],
-      [
-        "bulu",
-        3,
-        0,
-        "",
-        "2026-11-15T03:28:04.440Z",
-        "（动物的）毛；羽毛；体毛",
-        "bulu",
-        "毛；羽毛"
-      ],
-      [
-        "menyerang",
-        3,
-        0,
-        "",
-        "2026-11-15T03:28:44.221Z",
-        "攻击；袭击；（疾病）侵袭",
-        "serang",
-        "攻击"
-      ],
-      [
-        "cimol",
-        3,
-        0,
-        "",
-        "2026-11-15T03:28:09.703Z",
-        "炸木薯粉丸子（西爪哇小吃）",
-        "cimol",
-        "炸木薯粉丸子"
-      ],
-      [
-        "botak",
-        3,
-        0,
-        "",
-        "2026-11-15T03:28:02.602Z",
-        "秃头的；光头的",
-        "botak",
-        "秃"
-      ],
-      [
-        "bungkuk",
-        3,
-        0,
-        "",
-        "2026-11-15T03:28:07.717Z",
-        "驼背的；弯着腰的",
-        "bungkuk",
-        "弯曲；驼背"
-      ],
-      [
-        "kucir",
-        3,
-        0,
-        "",
-        "2026-11-15T03:28:21.300Z",
-        "扎起来的辫子；把头发扎起来",
-        "kucir",
-        "扎辫子"
-      ],
-      [
-        "lonjong",
-        3,
-        0,
-        "",
-        "2026-11-15T03:28:23.518Z",
-        "椭圆的；长圆形的",
-        "lonjong",
-        "椭圆"
+        "2026-10-19T13:15:51.428Z",
+        "吃醋；嫉妒（多指感情）",
+        "cemburu",
+        "吃醋"
       ]
     ],
     "focus": [
@@ -2631,47 +2514,6 @@
     "oral": []
   },
   "history_7d": [
-    {
-      "date": "2026-11-08",
-      "session": "am",
-      "review_core": [
-        "tepuk tangan",
-        "nggak kepegang",
-        "bolak-balik",
-        "budaya",
-        "gagal"
-      ],
-      "new_words": [
-        "resep",
-        "peralatan masak",
-        "rempah-rempah",
-        "cobek",
-        "parutan",
-        "spatula",
-        "centong",
-        "baskom",
-        "lap",
-        "bak cuci piring"
-      ]
-    },
-    {
-      "date": "2026-11-08",
-      "session": "pm",
-      "review_core": [
-        "nanggung",
-        "apabila",
-        "menata",
-        "kenyang",
-        "komplain"
-      ],
-      "new_words": [
-        "daya tahan",
-        "pemulihan",
-        "waspada",
-        "menyebar",
-        "berangsur"
-      ]
-    },
     {
       "date": "2026-11-09",
       "session": "am",
@@ -2940,107 +2782,40 @@
         "kucir",
         "lonjong"
       ]
+    },
+    {
+      "date": "2026-11-15",
+      "session": "pm",
+      "review_core": [
+        "kepepet",
+        "penanganan",
+        "instan",
+        "karakter"
+      ],
+      "new_words": [
+        "catur",
+        "gulat",
+        "panahan",
+        "suci"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "new_words": [
-      "resepsionis hotel",
-      "gelombang",
-      "lumba-lumba",
-      "kura-kura",
-      "cerdik"
+      "catur",
+      "gulat",
+      "panahan",
+      "suci"
     ],
     "review_core": [
       "kepepet",
       "penanganan",
-      "ketiban",
-      "menabrak",
-      "menambahkan"
+      "instan",
+      "karakter"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-15",
-    "vocab": [
-      [
-        "harimau",
-        "老虎",
-        "tiger",
-        "harimau",
-        "老虎"
-      ],
-      [
-        "beruang",
-        "熊",
-        "bear",
-        "beruang",
-        "熊"
-      ],
-      [
-        "badak",
-        "犀牛",
-        "rhinoceros",
-        "badak",
-        "犀牛"
-      ],
-      [
-        "bulu",
-        "（动物的）毛；羽毛；体毛",
-        "fur; feather; body hair",
-        "bulu",
-        "毛；羽毛"
-      ],
-      [
-        "menyerang",
-        "攻击；袭击；（疾病）侵袭",
-        "to attack",
-        "serang",
-        "攻击"
-      ],
-      [
-        "cimol",
-        "炸木薯粉丸子（西爪哇小吃）",
-        "cimol, fried tapioca balls",
-        "cimol",
-        "炸木薯粉丸子"
-      ],
-      [
-        "botak",
-        "秃头的；光头的",
-        "bald",
-        "botak",
-        "秃"
-      ],
-      [
-        "bungkuk",
-        "驼背的；弯着腰的",
-        "hunched; stooped",
-        "bungkuk",
-        "弯曲；驼背"
-      ],
-      [
-        "kucir",
-        "扎起来的辫子；把头发扎起来",
-        "ponytail; to tie hair up",
-        "kucir",
-        "扎辫子"
-      ],
-      [
-        "lonjong",
-        "椭圆的；长圆形的",
-        "oval",
-        "lonjong",
-        "椭圆"
-      ]
-    ],
-    "review_vocab": [
-      "teratur",
-      "pengaturan",
-      "ngeles",
-      "patungan",
-      "guna"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

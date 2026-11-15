@@ -7830,17 +7830,17 @@ window.DAILY_VOCAB_DB = [
     "en": "be pressed; be in a tight spot",
     "root": "pepet",
     "root_cn": "逼近；紧逼",
-    "example": "Akhir bulan aku lagi kepepet, jadi semua pengeluaran yang nggak penting aku tunda dulu.",
-    "example_cn": "月底我手头很紧，所以不重要的开销我都先往后推。（nggak = tidak）",
+    "example": "Kalau kepepet, kamu boleh tukar jadwal piket sama aku, asal bilang dulu sehari sebelumnya.",
+    "example_cn": "要是实在没办法，你可以跟我换值日，只要提前一天说一声就行。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-11-14 18:00",
+    "last_seen": "2026-11-15 18:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -7849,13 +7849,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-08",
       "2026-10-25",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
     "lesson_occurrences": [
       "2026-09-08 08:00",
       "2026-09-08 19:00",
       "2026-10-25 18:00",
-      "2026-11-14 18:00"
+      "2026-11-14 18:00",
+      "2026-11-15 18:00"
     ]
   },
   {
@@ -15935,26 +15937,28 @@ window.DAILY_VOCAB_DB = [
     "en": "instant; quick",
     "root": "instan",
     "root_cn": "即时；速成",
-    "example": "Tidak semua masalah punya solusi instan.",
-    "example_cn": "不是所有问题都有立刻见效的解决办法。",
+    "example": "Belajar bahasa itu tidak ada cara instan; percuma beli kursus mahal kalau tidak latihan setiap hari.",
+    "example_cn": "学语言没有速成的办法；如果不每天练习，买再贵的课程也是白搭。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-29 08:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-11-15 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-29"
+      "2026-09-29",
+      "2026-11-15"
     ],
     "lesson_occurrences": [
       "2026-09-29 08:00",
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-11-15 18:00"
     ]
   },
   {
@@ -16069,26 +16073,28 @@ window.DAILY_VOCAB_DB = [
     "en": "character; trait",
     "root": "karakter",
     "root_cn": "性格；角色",
-    "example": "Karakter rekan kerja yang baik terlihat saat ada masalah.",
-    "example_cn": "好同事的品格会在出问题时体现出来。",
+    "example": "Menurut guru BK, kegiatan pramuka ikut membentuk karakter anak, misalnya belajar bertanggung jawab dan berkemah tanpa orang tua.",
+    "example_cn": "辅导老师说，童子军活动也能塑造孩子的性格，比如学会负责任、在没有父母陪同的情况下露营。（guru BK = 学校心理辅导老师）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-29 08:00",
-    "last_seen": "2026-09-29 18:00",
+    "last_seen": "2026-11-15 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-09-29"
+      "2026-09-29",
+      "2026-11-15"
     ],
     "lesson_occurrences": [
       "2026-09-29 08:00",
-      "2026-09-29 18:00"
+      "2026-09-29 18:00",
+      "2026-11-15 18:00"
     ]
   },
   {
@@ -21834,16 +21840,16 @@ window.DAILY_VOCAB_DB = [
     "en": "handling; treatment",
     "root": "tangan",
     "root_cn": "手",
-    "example": "Pihak hotel menyatakan bahwa penanganan keluhan tamu akan dipercepat mulai bulan depan.",
-    "example_cn": "酒店方面表示，从下个月起会加快处理客人的投诉。",
+    "example": "Penanganan longsor di jalan menuju desa itu cukup cepat; dalam sehari jalannya sudah bisa dilewati motor.",
+    "example_cn": "通往那个村子的路上发生塌方，处理得挺快；一天之内摩托车就能通过了。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-11-14 18:00",
+    "last_seen": "2026-11-15 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -21852,13 +21858,15 @@ window.DAILY_VOCAB_DB = [
       "2026-10-15",
       "2026-10-26",
       "2026-10-29",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
     "lesson_occurrences": [
       "2026-10-15 08:00",
       "2026-10-26 18:00",
       "2026-10-29 18:00",
-      "2026-11-14 18:00"
+      "2026-11-14 18:00",
+      "2026-11-15 18:00"
     ]
   },
   {
@@ -32934,23 +32942,26 @@ window.DAILY_VOCAB_DB = [
     "en": "bear",
     "root": "beruang",
     "root_cn": "熊",
-    "example": "Beruang madu suka sekali madu, jadi petugas menaruh sejumlah madu di dalam batang kayu.",
-    "example_cn": "马来熊特别爱吃蜂蜜，所以工作人员往木头里放了一些蜂蜜。",
+    "example": "Saya tidak bisa membayangkan bertemu beruang liar di hutan; pasti saya langsung lari.",
+    "example_cn": "我无法想象在森林里遇到一头野熊，我肯定马上就跑。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-15 08:00",
-    "last_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-15"
     ],
     "lesson_occurrences": [
-      "2026-11-15 08:00"
+      "2026-11-15 08:00",
+      "2026-11-15 18:00"
     ]
   },
   {
@@ -33059,23 +33070,26 @@ window.DAILY_VOCAB_DB = [
     "en": "bald",
     "root": "botak",
     "root_cn": "秃",
-    "example": "Pemimpin rombongan kami botak, jadi gampang dicari di tengah keramaian.",
-    "example_cn": "我们团的领队是光头，所以在人群里很好找。",
+    "example": "Adikku minta dicukur botak karena udara Jakarta lagi panas banget.",
+    "example_cn": "我弟弟要求剃个光头，因为雅加达最近天气太热了。（lagi = sedang，banget = sekali）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-15 08:00",
-    "last_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-15"
     ],
     "lesson_occurrences": [
-      "2026-11-15 08:00"
+      "2026-11-15 08:00",
+      "2026-11-15 18:00"
     ]
   },
   {
@@ -33084,23 +33098,26 @@ window.DAILY_VOCAB_DB = [
     "en": "hunched; stooped",
     "root": "bungkuk",
     "root_cn": "弯曲；驼背",
-    "example": "Kakek jalannya agak bungkuk dan pelan, jadi dia bilang, \"Kalian duluan saja, nanti Kakek menyusul.\"",
-    "example_cn": "爷爷走路有点弯腰，也走得慢，所以他说：“你们先走吧，爷爷随后就来。”",
+    "example": "Kalau duduk bungkuk terlalu lama di depan laptop, punggung bisa sakit; usahakan berdiri setiap satu jam.",
+    "example_cn": "在电脑前驼着背坐太久，背会疼；尽量每隔一小时站起来一次。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-15 08:00",
-    "last_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-15 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-15"
     ],
     "lesson_occurrences": [
-      "2026-11-15 08:00"
+      "2026-11-15 08:00",
+      "2026-11-15 18:00"
     ]
   },
   {
@@ -33151,6 +33168,106 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-15 08:00"
+    ]
+  },
+  {
+    "word": "catur",
+    "cn": "国际象棋",
+    "en": "chess",
+    "root": "catur",
+    "root_cn": "国际象棋（源自梵语，本义“四”，指古代棋里的四个兵种）",
+    "example": "Kalau main catur sama Kakek, jangan harap cepat selesai; dia bakal mikir lama di setiap langkah.",
+    "example_cn": "要是跟爷爷下国际象棋，别指望很快下完；他每一步都会想很久。（mikir = berpikir）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 18:00",
+    "last_seen": "2026-11-15 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 18:00"
+    ]
+  },
+  {
+    "word": "gulat",
+    "cn": "摔跤（运动）；扭打",
+    "en": "wrestling",
+    "root": "gulat",
+    "root_cn": "摔跤；扭打",
+    "example": "Gulat itu olahraga, bukan kekerasan: ada aturan, ada wasit, dan kedua atlet harus saling menghormati.",
+    "example_cn": "摔跤是体育运动，不是暴力：有规则，有裁判，两位运动员还要互相尊重。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 18:00",
+    "last_seen": "2026-11-15 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 18:00"
+    ]
+  },
+  {
+    "word": "panahan",
+    "cn": "射箭（运动项目）",
+    "en": "archery",
+    "root": "panah",
+    "root_cn": "弓箭；箭",
+    "example": "Untuk pemula, klub panahan itu memakai anak panah dengan ujung tumpul supaya lebih aman.",
+    "example_cn": "对初学者，那家射箭俱乐部用的是钝头的箭，这样更安全。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 18:00",
+    "last_seen": "2026-11-15 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 18:00"
+    ]
+  },
+  {
+    "word": "suci",
+    "cn": "神圣的；（心意）纯洁的",
+    "en": "holy; sacred; pure (intention)",
+    "root": "suci",
+    "root_cn": "神圣；洁净",
+    "example": "Pura Besakih adalah tempat suci bagi umat Hindu di Bali, jadi pengunjung wajib memakai kain dan bersikap sopan.",
+    "example_cn": "百沙基寺是巴厘岛印度教徒的圣地，所以游客必须围上纱笼布，举止要得体。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-15 18:00",
+    "last_seen": "2026-11-15 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-15"
+    ],
+    "lesson_occurrences": [
+      "2026-11-15 18:00"
     ]
   }
 ];
