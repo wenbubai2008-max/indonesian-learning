@@ -4,14 +4,14 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1074,
-   "recognize": 117,
+   "use": 1079,
+   "recognize": 122,
    "unsure": 24,
    "fast": 137
   },
   "active": {
-   "use": 704,
-   "recognize": 101,
+   "use": 709,
+   "recognize": 106,
    "unsure": 22,
    "fast": 57
   }
@@ -11170,6 +11170,96 @@
    "status": "active",
    "why": [
     "第二词库低重要度（B1 / B）"
+   ]
+  },
+  "harimau": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "beruang": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "badak": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "bulu": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "menyerang": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 B2 / S"
+   ]
+  },
+  "cimol": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "botak": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A1 / A"
+   ]
+  },
+  "bungkuk": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库 A2 / A"
+   ]
+  },
+  "kucir": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "lonjong": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A1 / B）"
    ]
   }
  }

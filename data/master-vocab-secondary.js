@@ -1188,7 +1188,7 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "mengasyikan",
+    "word": "mengasyikkan",
     "cn": "有趣、让人沉浸",
     "en": "exciting / enjoyable",
     "root": "asyik",
