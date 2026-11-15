@@ -5,13 +5,13 @@
  "counts": {
   "all": {
    "use": 1079,
-   "recognize": 122,
+   "recognize": 126,
    "unsure": 24,
    "fast": 137
   },
   "active": {
    "use": 709,
-   "recognize": 106,
+   "recognize": 110,
    "unsure": 22,
    "fast": 57
   }
@@ -11260,6 +11260,42 @@
    "status": "active",
    "why": [
     "第二词库低重要度（A1 / B）"
+   ]
+  },
+  "catur": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "gulat": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "panahan": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
+   ]
+  },
+  "suci": {
+   "goal": "recognize",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "第二词库低重要度（A2 / B）"
    ]
   }
  }

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-15T10:51:49.934Z",
-  "source_updated_at": "2026-11-15T06:38:52.305Z",
+  "generated_at": "2026-11-15T14:01:20.911Z",
+  "source_updated_at": "2026-11-15T13:27:10.274Z",
   "taught_total": 1229,
   "confirmed_mastered": 286,
   "needs_reinforcement": 841,
@@ -80,7 +80,7 @@
       ],
       "wrong_count": 4,
       "last_wrong": "2026-11-14T11:30:50.316Z",
-      "last_review": "2026-11-14T11:30:50.316Z",
+      "last_review": "2026-11-15T11:18:00.931Z",
       "cn": "被逼到很紧；没什么余地"
     },
     {
@@ -98,15 +98,15 @@
     },
     {
       "word": "penanganan",
-      "score": 90,
+      "score": 92,
       "signals": [
         "lesson_wrong",
         "dont",
         "fuzzy"
       ],
-      "wrong_count": 3,
-      "last_wrong": "2026-11-14T11:31:23.658Z",
-      "last_review": "2026-11-14T11:31:23.658Z",
+      "wrong_count": 4,
+      "last_wrong": "2026-11-15T11:13:51.680Z",
+      "last_review": "2026-11-15T11:13:51.680Z",
       "cn": "处理；应对（过程）"
     },
     {
