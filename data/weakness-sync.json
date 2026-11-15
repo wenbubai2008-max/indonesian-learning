@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T13:27:10.274Z",
+  "updated_at": "2026-11-15T14:29:34.451Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -8453,10 +8453,10 @@
     "peran": {
       "word": "peran",
       "status": "active",
-      "updated_at": "2026-11-13T13:35:46.763Z",
+      "updated_at": "2026-11-15T14:29:23.143Z",
       "display": "peran",
       "cn": "角色；作用",
-      "last_review": "2026-11-13T13:35:46.710Z",
+      "last_review": "2026-11-15T14:29:23.079Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -8464,7 +8464,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "menceritakan": {
       "word": "menceritakan",
@@ -17378,10 +17378,10 @@
     "aspek": {
       "word": "aspek",
       "status": "active",
-      "updated_at": "2026-11-13T13:35:32.602Z",
+      "updated_at": "2026-11-15T14:29:16.899Z",
       "display": "aspek",
       "cn": "方面",
-      "last_review": "2026-11-13T13:35:32.535Z",
+      "last_review": "2026-11-15T14:29:16.828Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -17389,7 +17389,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "teori": {
       "word": "teori",
@@ -25456,12 +25456,12 @@
     "pengajar": {
       "word": "pengajar",
       "status": "active",
-      "updated_at": "2026-11-14T08:32:24.205Z",
+      "updated_at": "2026-11-15T14:29:20.770Z",
       "display": "pengajar",
       "cn": "教师；讲师；教课的人",
       "root": "ajar",
       "root_cn": "教；教导",
-      "last_review": "2026-11-13T13:35:43.225Z",
+      "last_review": "2026-11-15T14:29:20.700Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -25469,7 +25469,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "berasal dari": {
       "word": "berasal dari",
