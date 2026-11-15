@@ -28157,8 +28157,24 @@
     "mengasyikan": {
       "word": "mengasyikan",
       "status": "active",
-      "updated_at": "2026-10-14T07:01:27.027Z",
+      "updated_at": "2026-11-15T02:41:46.000Z",
       "display": "mengasyikan",
+      "cn": "有趣、让人沉浸",
+      "root": "asyik",
+      "source": "BIPA secondary selection",
+      "source_date": "2026-09-17",
+      "reasons": [
+        "training_excluded",
+        "bipa_secondary_fuzzy"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "mengasyikkan": {
+      "word": "mengasyikkan",
+      "status": "active",
+      "updated_at": "2026-11-15T02:41:46.000Z",
+      "display": "mengasyikkan",
       "cn": "有趣、让人沉浸",
       "root": "asyik",
       "source": "BIPA secondary selection",
