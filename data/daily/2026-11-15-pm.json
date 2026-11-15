@@ -1,0 +1,390 @@
+{
+  "date": "2026-11-15",
+  "session": "pm",
+  "time": "18:00",
+  "day": 86,
+  "title": "18:00 晚课｜Hari Uji Coba Ekskul: Fajar Pilih Panahan · 课外班体验日：Fajar 选了射箭",
+  "write_status": "lesson_complete",
+  "new_words": [
+    "catur",
+    "gulat",
+    "panahan",
+    "suci"
+  ],
+  "vocab": [
+    {
+      "word": "catur",
+      "display": "catur",
+      "audio_text": "catur",
+      "cn": "国际象棋",
+      "en": "chess",
+      "root": "catur",
+      "root_cn": "国际象棋（源自梵语，本义“四”，指古代棋里的四个兵种）",
+      "formation": "基础名词，不拆词缀。派生：pecatur（棋手，pe- + catur，新闻里常见；日常多说 pemain catur）。常见搭配：main catur（下国际象棋）、papan catur（棋盘）、bidak catur（棋子）、klub catur（国际象棋社）、langkah（一步棋）。",
+      "example": "Kalau main catur sama Kakek, jangan harap cepat selesai; dia bakal mikir lama di setiap langkah.",
+      "example_cn": "要是跟爷爷下国际象棋，别指望很快下完；他每一步都会想很久。（mikir = berpikir）",
+      "synonym_note": "catur 指国际象棋；跳棋一般说 halma 或 dam（西洋跳棋），它们都不叫 catur。比喻用法：catur politik（政治博弈），意思是像下棋一样一步步算计。",
+      "usage_note": "下棋时常听到：Skak!（将军！）、Skakmat!（将死了！）。问人会不会下：Kamu bisa main catur?",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "gulat",
+      "display": "gulat",
+      "audio_text": "gulat",
+      "cn": "摔跤（运动）；扭打",
+      "en": "wrestling",
+      "root": "gulat",
+      "root_cn": "摔跤；扭打",
+      "formation": "基础名词。派生：bergulat（ber- + gulat，摔跤；比喻“和……苦苦搏斗”：bergulat dengan masalah / waktu）、pegulat（摔跤手，pe- + gulat）。常见搭配：pertandingan gulat（摔跤比赛）、atlet gulat（摔跤运动员）、matras gulat（摔跤垫）、gulat bebas（自由式摔跤）。",
+      "example": "Gulat itu olahraga, bukan kekerasan: ada aturan, ada wasit, dan kedua atlet harus saling menghormati.",
+      "example_cn": "摔跤是体育运动，不是暴力：有规则，有裁判，两位运动员还要互相尊重。",
+      "synonym_note": "gulat 是有规则的摔跤运动；berkelahi 是打架；adu panco 是掰手腕；pencak silat 是印尼传统武术，有踢打招式，和 gulat 不是一回事。bergulat 除了“摔跤”，更常见的是比喻义：Dia masih bergulat dengan utang.（他还在和债务苦苦搏斗。）",
+      "usage_note": "说孩子参加的项目：Anakku ikut ekskul gulat.（我孩子参加了摔跤课外班。ekskul = ekstrakurikuler）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "panahan",
+      "display": "panahan",
+      "audio_text": "panahan",
+      "cn": "射箭（运动项目）",
+      "en": "archery",
+      "root": "panah",
+      "root_cn": "弓箭；箭",
+      "formation": "panah + -an → panahan，指射箭这项运动。同词根：memanah（射箭这个动作，meN- + panah，p 脱落）、pemanah（射手，peN- + panah）、anak panah（箭）。弓叫 busur（busur panah）。常见搭配：klub panahan（射箭俱乐部）、lomba panahan（射箭比赛）、lapangan panahan（射箭场）、latihan panahan（射箭训练）。",
+      "example": "Untuk pemula, klub panahan itu memakai anak panah dengan ujung tumpul supaya lebih aman.",
+      "example_cn": "对初学者，那家射箭俱乐部用的是钝头的箭，这样更安全。",
+      "synonym_note": "panahan 是运动项目名（ikut panahan、atlet panahan）；memanah 是“射箭”这个动作（Dia sedang memanah.）；panah 单说可以指弓箭，也可以指箭。说“射中靶子”用 kena sasaran 或 mengenai sasaran。",
+      "usage_note": "报名时会说：Saya mau daftar kelas panahan untuk anak saya.（我想给孩子报射箭班。）",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "suci",
+      "display": "suci",
+      "audio_text": "suci",
+      "cn": "神圣的；（心意）纯洁的",
+      "en": "holy; sacred; pure (intention)",
+      "root": "suci",
+      "root_cn": "神圣；洁净",
+      "formation": "形容词，不拆词缀。派生：kesucian（ke-an + suci，神圣性、纯洁）、menyucikan（使洁净、圣化，meN- + suci + -kan）。常见搭配：tempat suci（圣地、宗教场所）、kitab suci（经书）、bulan suci Ramadan（神圣的斋月）、air suci（圣水）、niat suci（纯洁的用心）。",
+      "example": "Pura Besakih adalah tempat suci bagi umat Hindu di Bali, jadi pengunjung wajib memakai kain dan bersikap sopan.",
+      "example_cn": "百沙基寺是巴厘岛印度教徒的圣地，所以游客必须围上纱笼布，举止要得体。",
+      "synonym_note": "suci 偏宗教意义上的“神圣、洁净”，也可以说心意“纯洁”；sakral 多形容仪式和物品神圣（upacara sakral），bulan Ramadan 一般说 bulan suci，不说 bulan sakral；murni 是“纯的、不掺杂”（emas murni、susu murni）；bersih 是一般的“干净”。",
+      "usage_note": "生活里常半开玩笑说 niat suci：Niatku suci, kok!（我动机很单纯啦！）对方回一句 Niat suci sih niat suci, tapi …（用心是好的，可是……）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kepepet",
+      "display": "kepepet",
+      "audio_text": "kepepet",
+      "cn": "被逼到没办法；（时间、钱）很紧，不得不",
+      "en": "cornered; in a pinch; pressed",
+      "root": "pepet",
+      "root_cn": "挤紧；逼近",
+      "formation": "ke- + pepet。雅加达口语里 ke- 常表示“遭受、陷入”（ketabrak = tertabrak 被撞），kepepet 就是“被挤到墙角”。常见搭配：kalau kepepet（万不得已时）、kepepet waktu（时间紧）、kepepet duit（缺钱）、lagi kepepet（正处在紧要关头）、namanya juga kepepet（谁让情况紧急呢）。",
+      "example": "Kalau kepepet, kamu boleh tukar jadwal piket sama aku, asal bilang dulu sehari sebelumnya.",
+      "example_cn": "要是实在没办法，你可以跟我换值日，只要提前一天说一声就行。",
+      "synonym_note": "kepepet 说的是“处境”很紧；terpaksa 是“被迫去做”某件事；mepet 是时间、距离“挨得很近”（waktunya mepet）。三者常连在一起：Karena kepepet, aku terpaksa naik taksi.（因为实在来不及，我只好打车。）口语说法：kepepet 本身就是口语，正式场合说 terdesak（dalam keadaan terdesak）。",
+      "usage_note": "最近常错的词：今晚换成自己造句和填空来练。记住它后面一般不接宾语，接的是 waktu / duit 这类“紧缺的东西”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "penanganan",
+      "display": "penanganan",
+      "audio_text": "penanganan",
+      "cn": "处理；应对（的过程）",
+      "en": "handling; treatment (of a problem, patient, case)",
+      "root": "tangan",
+      "root_cn": "手",
+      "formation": "peN- + tangan + -an → penanganan（t 脱落，peN- 变 pen-）。同词根动词：menangani（meN- + tangan + -i，处理、应对）、ditangani（被处理）。常见搭配：penanganan pasien（对病人的处置）、penanganan cedera（伤病处理）、penanganan keluhan（投诉处理）、penanganan banjir / longsor（洪水、滑坡的应对）、penanganannya cepat / lambat（处理得快 / 慢）。",
+      "example": "Penanganan longsor di jalan menuju desa itu cukup cepat; dalam sehari jalannya sudah bisa dilewati motor.",
+      "example_cn": "通往那个村子的路上发生塌方，处理得挺快；一天之内摩托车就能通过了。",
+      "synonym_note": "penanganan 是名词，说“处理这件事的方式和过程”；menangani 是动词，要有人做主语（Dokter menangani pasien itu.）；pertolongan pertama 专指“急救、初步救护”。说受伤后“处理得快”，penanganannya cepat 和 pertolongan pertamanya cepat 都可以，前者范围更广。",
+      "usage_note": "最近常错的词：今晚放在词形选择题里，和 menangani / ditangani 一起区分。评价服务很好用：Penanganannya cepat, saya puas.",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "instan",
+      "display": "instan",
+      "audio_text": "instan",
+      "cn": "速成的；即食的；一下子就有的",
+      "en": "instant",
+      "root": "instan",
+      "root_cn": "即时（来自英语 instant）",
+      "formation": "外来形容词，不拆词缀。常见搭配：mi instan（方便面）、kopi instan（速溶咖啡）、hasil instan（立竿见影的结果）、cara instan（速成的办法）、serba instan（什么都图快）。",
+      "example": "Belajar bahasa itu tidak ada cara instan; percuma beli kursus mahal kalau tidak latihan setiap hari.",
+      "example_cn": "学语言没有速成的办法；如果不每天练习，买再贵的课程也是白搭。",
+      "synonym_note": "cepat 是一般的“快”；praktis 是“方便、省事”；instan 强调“不用过程、一下子就成”，说结果和方法时常带“图省事、没下功夫”的批评味（generasi serba instan）。说食品时只是中性的“即食”（mi instan）。",
+      "usage_note": "劝人别急于求成：Nggak ada hasil yang instan.（没有立竿见影的结果。nggak = tidak）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "karakter",
+      "display": "karakter",
+      "audio_text": "karakter",
+      "cn": "性格；品格；（作品中的）角色",
+      "en": "character; personality",
+      "root": "karakter",
+      "root_cn": "性格；特征（来自英语 character）",
+      "formation": "外来名词，不拆词缀。派生：berkarakter（有个性、有品格的：pemimpin yang berkarakter）。常见搭配：membentuk karakter（塑造性格）、pendidikan karakter（品格教育）、karakternya keras / kalem（性格强硬 / 安静）、karakter kartun（卡通角色）。",
+      "example": "Menurut guru BK, kegiatan pramuka ikut membentuk karakter anak, misalnya belajar bertanggung jawab dan berkemah tanpa orang tua.",
+      "example_cn": "辅导老师说，童子军活动也能塑造孩子的性格，比如学会负责任、在没有父母陪同的情况下露营。（guru BK = 学校心理辅导老师）",
+      "synonym_note": "sifat 是日常最常用的“性格特点”（sifatnya pemalu）；watak 偏“禀性”，较书面；karakter 常用于教育、评价人的品格（membentuk karakter），也可指电影、游戏里的“角色”。但说故事里的“人物”，更常用 tokoh（tokoh utama 主角）；peran 是演员演的“角色、作用”。",
+      "usage_note": "学校和家长最常说的一句：Yang penting karakternya dulu, nilai belakangan.（先看品格，分数是其次。）",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "botak",
+      "display": "botak",
+      "audio_text": "botak",
+      "cn": "秃头的；光头的",
+      "en": "bald",
+      "root": "botak",
+      "root_cn": "秃",
+      "formation": "形容词，不拆词缀。相关形式：kebotakan（秃头、脱发问题）、dicukur botak（被剃成光头）；口语常说 dibotakin（剃成光头）。常见搭配：kepala botak（光头）、mulai botak（开始秃了）、cukur botak（剃光头）。",
+      "example": "Adikku minta dicukur botak karena udara Jakarta lagi panas banget.",
+      "example_cn": "我弟弟要求剃个光头，因为雅加达最近天气太热了。（lagi = sedang，banget = sekali）",
+      "synonym_note": "botak 既可以是自然秃顶，也可以是剃光；gundul 多指“剃光的”（kepala gundul），还能形容山林光秃秃（hutan gundul）；plontos 指剃得精光，常说新生、新兵。口语说法：dibotakin = dicukur botak。",
+      "usage_note": "今天08:00新学，今晚应用复现：从动物园的工作人员换成描述身边的人。当面说别人 botak 不太礼貌，可以说 rambutnya tipis（头发少）。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "beruang",
+      "display": "beruang",
+      "audio_text": "beruang",
+      "cn": "熊",
+      "en": "bear",
+      "root": "beruang",
+      "root_cn": "熊",
+      "formation": "单纯名词，不能拆成 ber- + uang 来理解“熊”；但同形的 beruang（ber- + uang）意思是“有钱的”，要靠语境区分。常见搭配：beruang madu（马来熊）、beruang kutub（北极熊）、seekor beruang（一头熊）、badannya besar kayak beruang（身材壮得像头熊）。",
+      "example": "Saya tidak bisa membayangkan bertemu beruang liar di hutan; pasti saya langsung lari.",
+      "example_cn": "我无法想象在森林里遇到一头野熊，我肯定马上就跑。",
+      "synonym_note": "beruang（熊）和 beruang（有钱的，ber- + uang）同形；后者口语少用，说“有钱”一般说 punya uang 或 kaya。形容人身材魁梧，口语常说 badannya kayak beruang（kayak = seperti），带点亲切的玩笑味。",
+      "usage_note": "今天08:00新学，今晚应用复现：从看动物换成“打比方”形容人的身材：Pelatihnya bertubuh besar seperti beruang.",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bungkuk",
+      "display": "bungkuk",
+      "audio_text": "bungkuk",
+      "cn": "驼背的；弯着腰的",
+      "en": "hunched; stooped",
+      "root": "bungkuk",
+      "root_cn": "弯曲；驼背",
+      "formation": "形容词，不拆词缀。派生：membungkuk（meN- + bungkuk，弯腰、鞠躬）、terbungkuk-bungkuk（一个劲儿地弯腰）。常见搭配：duduk bungkuk（驼着背坐）、jalannya bungkuk（走路弯着腰）、punggung bungkuk（驼背）、membungkuk memberi hormat（鞠躬致意）。",
+      "example": "Kalau duduk bungkuk terlalu lama di depan laptop, punggung bisa sakit; usahakan berdiri setiap satu jam.",
+      "example_cn": "在电脑前驼着背坐太久，背会疼；尽量每隔一小时站起来一次。",
+      "synonym_note": "bungkuk 是状态（驼背的样子）；membungkuk 是动作（弯下腰、鞠躬）。纠正姿势常说 Jangan bungkuk!（别驼背！）或 Duduk tegak!（坐直！）。",
+      "usage_note": "今天08:00新学，今晚应用复现：从描述老人走路，换成运动和办公时的姿势提醒。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sabtu pagi, Pak Hendra mengantar Fajar ke hari uji coba ekstrakurikuler di sekolahnya. Ada tiga pilihan: catur, gulat, dan panahan. Fajar langsung mencoba gulat karena kelihatannya keren, tetapi dia jatuh dan lututnya lecet. Pak Joko, pelatih gulat yang botak dan bertubuh besar seperti beruang, segera menolongnya. Penanganannya cepat: lukanya langsung dibersihkan dan diperban. Karena masih kaget, Fajar memilih mencoba panahan. Pelatihnya mengingatkan, \"Punggungnya jangan bungkuk.\" Anak panah pertamanya meleset jauh, tetapi Fajar terus mencoba. Pak Hendra bertanya kapan Fajar bisa ikut lomba. Pelatih tersenyum, \"Di panahan tidak ada hasil yang instan, Pak. Yang pertama dilatih adalah karakter: sabar dan fokus.\" Anak panah terakhir Fajar akhirnya kena sasaran. Dia menoleh ke ayahnya dan tersenyum lebar.",
+    "cn": "周六早上，Hendra 先生送 Fajar 去学校参加课外活动体验日。一共有三个选项：国际象棋、摔跤和射箭。Fajar 觉得摔跤看起来很酷，马上就去试了，结果摔了一跤，膝盖擦破了皮。摔跤教练 Joko 先生是个光头，身材壮得像头熊，他马上过来帮忙。处理得很快：伤口立刻被清理干净，包上了纱布。因为还有点受惊，Fajar 选择去试射箭。教练提醒他：“背别驼着。”他射出的第一支箭偏得很远，但 Fajar 一直在试。Hendra 先生问教练，Fajar 什么时候能参加比赛。教练笑着说：“射箭没有立竿见影的成绩，先生。首先要练的是性格：耐心和专注。”Fajar 的最后一支箭终于射中了靶子。他转头看向爸爸，笑得合不拢嘴。"
+  },
+  "dialogue": {
+    "title": "晚上，Hendra 和妻子 Ani 聊孩子的体验日",
+    "lines": [
+      {
+        "speaker": "Ani",
+        "id": "Gimana uji cobanya tadi? Jadi daftar?",
+        "cn": "今天的体验课怎么样？报上名了吗？（gimana = bagaimana）"
+      },
+      {
+        "speaker": "Hendra",
+        "id": "Jadi, tapi kepepet banget. Pas kita nyampe, meja pendaftarannya udah mau tutup.",
+        "cn": "报上了，不过时间特别紧。我们到的时候，报名台都快收了。（banget = sekali，pas = saat，nyampe = sampai，udah = sudah）"
+      },
+      {
+        "speaker": "Ani",
+        "id": "Terus kok lutut Fajar diperban?",
+        "cn": "那 Fajar 的膝盖怎么包着纱布？"
+      },
+      {
+        "speaker": "Hendra",
+        "id": "Dia nyoba gulat dulu, terus jatoh. Tapi penanganannya cepet kok, pelatihnya langsung bersihin lukanya.",
+        "cn": "他先试了摔跤，然后摔倒了。不过处理得很快，教练马上就把伤口清理好了。（nyoba = mencoba，jatoh = jatuh，cepet = cepat，bersihin = membersihkan）"
+      },
+      {
+        "speaker": "Ani",
+        "id": "Ya ampun. Kamu sih, dari minggu lalu nyuruh dia ikut gulat.",
+        "cn": "天哪。都怪你，从上周就一直让他去学摔跤。（nyuruh = menyuruh）"
+      },
+      {
+        "speaker": "Hendra",
+        "id": "Niatku suci, lho. Aku cuma pengin dia lebih pede.",
+        "cn": "我的用心可是很单纯的。我只是想让他更有自信。（pengin = ingin，pede = percaya diri）"
+      },
+      {
+        "speaker": "Ani",
+        "id": "Niat suci sih niat suci, tapi jangan maksa. Karakter Fajar kan kalem, bukan tipe yang suka adu fisik.",
+        "cn": "用心是好的，可是别勉强他。Fajar 的性格本来就安静，不是喜欢身体对抗的那种孩子。（maksa = memaksa，kalem = tenang）"
+      },
+      {
+        "speaker": "Hendra",
+        "id": "Iya, makanya akhirnya dia pilih panahan. Kata pelatihnya, nggak ada hasil yang instan.",
+        "cn": "是啊，所以他最后选了射箭。教练说，没有立竿见影的成绩。（pilih = memilih，nggak = tidak）"
+      },
+      {
+        "speaker": "Ani",
+        "id": "Bener. Aku kira dia malah bakal pilih catur, lho.",
+        "cn": "没错。我还以为他会选国际象棋呢。（bener = benar）"
+      },
+      {
+        "speaker": "Hendra",
+        "id": "Hampir! Tapi tadi dia sendiri yang nggak mau pulang sebelum anak panahnya kena sasaran.",
+        "cn": "差一点！不过今天是他自己说，箭没射中靶子之前不肯回家。"
+      }
+    ]
+  },
+  "rewrite": [
+    {
+      "task": "新词主动提取：说说你小时候学过或现在想学的一项运动或爱好，从 catur、gulat、panahan 里选两个比较，说明哪个更适合你、为什么。2–3 句，用 saya。",
+      "reference_answer": "Waktu SD, saya pernah ikut klub catur, tapi sebenarnya saya lebih suka olahraga yang banyak bergerak. Kalau sekarang harus memilih, saya mau coba panahan daripada gulat, karena saya kurang suka kontak badan. Kebetulan teman kantor saya kenal seorang pelatih panahan di dekat rumah.",
+      "reference_cn": "上小学时我参加过国际象棋社，不过其实我更喜欢多动的运动。如果现在要选，比起摔跤我更想试试射箭，因为我不太喜欢身体接触。正好我一位同事认识我家附近的一位射箭教练。"
+    },
+    {
+      "task": "弱词造句（最近常错的词）：讲一次你时间被逼得很紧、却碰到别人处理得好（或不好）的经历。用 kepepet、penanganan，2–3 句，用 saya。",
+      "reference_answer": "Minggu lalu saya kepepet waktu karena laporan harus dikirim jam lima, padahal laptop saya tiba-tiba mati. Untung penanganan dari tim IT cepat: dalam setengah jam, file saya sudah bisa diselamatkan. Sekarang saya selalu menyimpan salinan file di Google Drive.",
+      "reference_cn": "上周我时间特别紧，报告五点必须发出去，可我的笔记本电脑突然死机了。幸好 IT 团队处理得很快：半小时内我的文件就救回来了。现在我总会在 Google Drive 里存一份文件副本。"
+    },
+    {
+      "task": "今天08:00新学词迁移：描述一位你认识的老师或长辈的样子和一个习惯，换成和动物园无关的场景。用 botak、bungkuk，可以加 beruang 打比方。2–3 句，用 saya。",
+      "reference_answer": "Guru olahraga saya waktu SMP botak dan badannya besar seperti beruang, tapi suaranya lembut sekali. Kalau ada murid yang duduk bungkuk, dia akan menepuk punggung murid itu pelan-pelan dan bilang, \"Duduk tegak, ya.\" Awalnya kami takut, tapi lama-lama semua murid sayang sama beliau.",
+      "reference_cn": "我初中的体育老师是光头，身材壮得像头熊，可说话声音特别温柔。要是有学生驼着背坐，他会轻轻拍拍那个学生的背说：“坐直哦。”一开始我们都怕他，可时间久了，所有学生都很喜欢他。"
+    },
+    {
+      "task": "场景回应：朋友说想让孩子“三个月就拿奖牌”，天天逼孩子练。你用朋友间的口语劝他。用 instan、karakter、suci，2–3 句，用 aku / kamu。",
+      "reference_answer": "Aku ngerti niatmu suci, tapi di olahraga nggak ada hasil yang instan. Kalau dipaksa terus, anakmu malah bisa capek terus berhenti di tengah jalan. Mending bangun karakternya dulu: sabar, disiplin, dan nggak gampang nyerah.",
+      "reference_cn": "我懂你的用心是好的，可是运动没有立竿见影的成绩。要是一直逼他，你孩子反而可能累了，半途而废。不如先培养他的性格：耐心、自律、不轻易放弃。（ngerti = mengerti，nggak = tidak，mending = lebih baik，nyerah = menyerah）"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "小区群里有人发消息：“Jalan ke arah pasar ditutup karena pohon tumbang. ____ dari petugas kelurahan lumayan cepat, sore ini katanya sudah bisa dilewati.” 哪项放进句首最自然？",
+        "options": [
+          "Menangani",
+          "Tangani",
+          "Ditangani",
+          "Penanganan"
+        ],
+        "answer_index": 3,
+        "answer": "Penanganan",
+        "explain": "空格是句子的主语，后面接 dari petugas kelurahan（来自村公所人员的）和 lumayan cepat（挺快），需要名词“处理（的过程）”：Penanganan dari petugas … cepat。Menangani 是主动动词，要说“谁处理什么”（Petugas menangani pohon tumbang itu）；Ditangani 是被动，语序应为 Pohonnya sudah ditangani petugas；Tangani 是词根形式，只用在命令句或口语被动结构里。"
+      },
+      {
+        "type": "choice",
+        "prompt": "新闻播报：“Selama bulan ____ Ramadan, jam kerja kantor pemerintah dikurangi satu jam.” 哪项最自然？",
+        "options": [
+          "bersih",
+          "murni",
+          "suci",
+          "sakral"
+        ],
+        "answer_index": 2,
+        "answer": "suci",
+        "explain": "bulan suci Ramadan（神圣的斋月）是固定说法。sakral 也有“神圣”的意思，但多用来形容仪式、物品（upacara sakral），不和 bulan Ramadan 搭配；murni 是“纯的、不掺杂”（susu murni）；bersih 是一般的“干净”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "家长会上，班主任说：“Nilai Dimas memang belum tinggi, tapi ____-nya bagus: jujur, sopan, dan mau mengakui kesalahan.” 哪项最自然？",
+        "options": [
+          "karakter",
+          "tokoh",
+          "peran",
+          "bakat"
+        ],
+        "answer_index": 0,
+        "answer": "karakter",
+        "explain": "后面列举的是诚实、礼貌、肯认错这些品格，用 karakter（karakternya bagus）。tokoh 是故事里的人物或重要人物（tokoh utama 主角）；peran 是角色、作用（peran orang tua）；bakat 是天赋（bakat musik），诚实和礼貌不是天赋。这里换成 sifat 也说得通，但选项里没有。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kalau lagi ____, minta tolong aja ke tetangga, jangan dipendam sendiri.（被逼到没办法、处境很紧）",
+        "answer": "kepepet",
+        "explain": "lagi kepepet = 正处在很紧、没办法的处境。注意它描述的是处境，不是动作；“被迫去做某事”才用 terpaksa。正式场合可以说 sedang terdesak。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Dalam pertandingan ____, kedua atlet berusaha menjatuhkan lawan ke matras.（摔跤）",
+        "answer": "gulat",
+        "explain": "pertandingan gulat = 摔跤比赛，运动员叫 pegulat 或 atlet gulat。不要和 berkelahi（打架）、pencak silat（印尼传统武术）混淆。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：教练说射箭能塑造孩子的性格。",
+        "tokens": [
+          "Pelatih",
+          "bilang",
+          "panahan",
+          "membentuk",
+          "karakter",
+          "anak."
+        ],
+        "answer": "Pelatih bilang panahan membentuk karakter anak.",
+        "answer_cn": "教练说射箭能塑造孩子的性格。",
+        "explain": "主语 Pelatih + 口语里常用的 bilang（说）+ 宾语从句 panahan membentuk karakter anak。membentuk karakter（塑造性格）是固定搭配；karakter anak 的所属者 anak 放在后面。"
+      }
+    ],
+    "self_check": [
+      "不看中文，catur、gulat、panahan、suci 这 4 个新词里，有没有哪个我 3 秒内说不出意思？",
+      "看到 kepepet，我能马上说出中文，并且分清它和 terpaksa 哪个是“处境”、哪个是“被迫去做”吗？",
+      "penanganan、menangani、ditangani 这三个词形，我能马上分清哪个是名词吗？",
+      "karakter 和 tokoh 我分得清吗？看到 instan，我能马上想起一个常见搭配吗？"
+    ]
+  },
+  "review": {
+    "title": "最后5分钟复盘",
+    "steps": [
+      "只把自检里卡住的词，看中文说出印尼语；答不出的回看词卡，再合上词卡说一遍。",
+      "易混词各说一句：用 Kalau kepepet, … 说一个你的应急办法；用 Penanganannya cepat / lambat … 评价一次你遇到过的服务；再用 karakter 说一句某位朋友的性格（不要用 tokoh）。",
+      "30 秒复述 Fajar 的体验日：用 catur、gulat、panahan、penanganan、instan、karakter，说说他先试了什么、发生了什么、最后为什么选了射箭。最后用 Niat … suci sih, tapi … 学 Ani 劝人一句。",
+      "联系自己：用今天08:00新学的 botak、beruang、bungkuk，描述一位你身边的人的样子或坐姿，场景和动物园无关。"
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "penanganan",
+      "karakter",
+      "panahan"
+    ],
+    "patterns": [
+      {
+        "pattern": "Di … tidak ada hasil yang instan.",
+        "cn": "在……方面没有立竿见影的结果。",
+        "example": "Di panahan tidak ada hasil yang instan, Pak.",
+        "example_cn": "射箭没有立竿见影的成绩，先生。"
+      },
+      {
+        "pattern": "… sih …, tapi jangan …",
+        "cn": "……是……，可是别……（先认可，再劝阻）",
+        "example": "Niat suci sih niat suci, tapi jangan maksa.",
+        "example_cn": "用心是好的，可是别勉强他。"
+      }
+    ]
+  }
+}
