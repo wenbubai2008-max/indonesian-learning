@@ -1,0 +1,394 @@
+{
+  "date": "2026-11-15",
+  "session": "am",
+  "time": "08:00",
+  "day": 86,
+  "title": "08:00 早课｜Sebentar Terpisah di Taman Safari · 在野生动物园走散了一会儿",
+  "vocab": [
+    {
+      "word": "harimau",
+      "display": "harimau",
+      "audio_text": "harimau",
+      "cn": "老虎",
+      "en": "tiger",
+      "root": "harimau",
+      "root_cn": "老虎",
+      "formation": "名词，本身就是词根。常见搭配：harimau Sumatra（苏门答腊虎）、anak harimau（小老虎）、kandang harimau（老虎笼舍）、area harimau（老虎区）、harimau mengaum（老虎吼叫）。量词用 seekor：seekor harimau。",
+      "example": "Kalau suhu siang tinggi, harimau lebih suka tidur di bawah pohon.",
+      "example_cn": "中午气温高的时候，老虎更喜欢在树下睡觉。",
+      "synonym_note": "macan 也常指老虎，口语和日常说话里很常用（Ada macan!）；macan tutul 是豹子。说具体品种、写介绍牌时多用 harimau：harimau Sumatra。口语说法：macan（日常聊天），正式场合用 harimau。",
+      "is_oral_new": false
+    },
+    {
+      "word": "beruang",
+      "display": "beruang",
+      "audio_text": "beruang",
+      "cn": "熊",
+      "en": "bear",
+      "root": "beruang",
+      "root_cn": "熊",
+      "formation": "名词，是一个完整的词，不是 ber- + uang。常见搭配：beruang madu（马来熊，印尼本地的熊）、beruang kutub（北极熊）、seekor beruang。注意同形词：ber- + uang（有钱）也拼成 beruang，靠语境区分；说“有钱”日常一般用 kaya。",
+      "example": "Beruang madu suka sekali madu, jadi petugas menaruh sejumlah madu di dalam batang kayu.",
+      "example_cn": "马来熊特别爱吃蜂蜜，所以工作人员往木头里放了一些蜂蜜。",
+      "synonym_note": "beruang madu 直译“蜂蜜熊”，就是马来熊，个子是熊里最小的，胸口有一块浅色的毛。看动物时说 beruang；说人有钱用 kaya，不用 beruang。",
+      "is_oral_new": false
+    },
+    {
+      "word": "badak",
+      "display": "badak",
+      "audio_text": "badak",
+      "cn": "犀牛",
+      "en": "rhinoceros",
+      "root": "badak",
+      "root_cn": "犀牛",
+      "formation": "名词。常见搭配：badak Jawa（爪哇犀）、badak Sumatra（苏门答腊犀）、cula badak（犀牛角，犀牛的角专门叫 cula，不叫 tanduk）、badak bercula satu（独角犀）。",
+      "example": "Badak Jawa adalah aset berharga bagi Indonesia; sekarang badak ini hanya tersisa di Ujung Kulon.",
+      "example_cn": "爪哇犀是印尼的宝贵财富；现在这种犀牛只剩下乌戎库隆还有。",
+      "synonym_note": "犀牛角说 cula；牛、羊、鹿的角才说 tanduk。说一只犀牛用 seekor badak。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bulu",
+      "display": "bulu",
+      "audio_text": "bulu",
+      "cn": "（动物的）毛；羽毛；体毛",
+      "en": "fur; feather; body hair",
+      "root": "bulu",
+      "root_cn": "毛；羽毛",
+      "formation": "名词。常见搭配：bulu kucing（猫毛）、bulu burung（鸟的羽毛）、bulu mata（睫毛）、bulu tebal（毛很厚）；ber- + bulu → berbulu（有毛的）：hewan berbulu。bulu tangkis 是羽毛球（运动）。",
+      "example": "Bulu kucingku lagi rontok, sampai baju di jemuran pun penuh bulu kucing.",
+      "example_cn": "我家猫这阵子在掉毛，连晾着的衣服上都沾满了猫毛。",
+      "synonym_note": "头发说 rambut，不说 bulu；bulu 指动物的毛、鸟的羽毛和人身上的体毛、睫毛。lagi = sedang 是口语。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyerang",
+      "display": "menyerang",
+      "audio_text": "menyerang",
+      "cn": "攻击；袭击；（疾病）侵袭",
+      "en": "to attack",
+      "root": "serang",
+      "root_cn": "攻击",
+      "formation": "meN- + serang → menyerang（s 脱落，变成 ny）。被动 diserang（被攻击；diserang flu 被流感击倒）；serangan（攻击；serangan jantung 心脏病发作）；penyerang（攻击者；足球里的前锋）。常见搭配：menyerang mangsa（攻击猎物）、menyerang manusia。",
+      "example": "Harimau biasanya menyerang mangsanya dari belakang secara diam-diam.",
+      "example_cn": "老虎通常悄悄地从背后攻击猎物。",
+      "synonym_note": "menyerang 是一般的“攻击”；menyerbu 多指一大群人或动物蜂拥冲上去（Pembeli menyerbu toko yang lagi diskon）。说生病时常用被动：Aku diserang flu。口语说法：nyerang（Jangan nyerang orang di medsos）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "cimol",
+      "display": "cimol",
+      "audio_text": "cimol",
+      "cn": "炸木薯粉丸子（西爪哇小吃）",
+      "en": "cimol, fried tapioca balls",
+      "root": "cimol",
+      "root_cn": "炸木薯粉丸子",
+      "formation": "来自巽他语 aci digemol（把木薯粉揉成团）的缩写。常见搭配：jajan cimol（买 cimol 吃）、cimol bumbu balado（撒辣椒粉的 cimol）、cimol keju（奶酪味）、sebungkus cimol（一袋 cimol）。",
+      "example": "Cimol yang baru digoreng teksturnya kenyal dan rasanya gurih.",
+      "example_cn": "刚炸好的 cimol 口感有嚼劲，味道咸香。",
+      "synonym_note": "同一类“aci 小吃”名字都是缩写：cimol（炸的小圆球，撒调味粉）、cireng（aci digoreng，炸成扁块，蘸酱吃）、cilok（aci dicolok，煮熟后用竹签串着吃）。万隆、茂物一带特别常见。",
+      "is_oral_new": false
+    },
+    {
+      "word": "botak",
+      "display": "botak",
+      "audio_text": "botak",
+      "cn": "秃头的；光头的",
+      "en": "bald",
+      "root": "botak",
+      "root_cn": "秃",
+      "formation": "形容词。常见搭配：kepala botak（秃头）、mulai botak（开始秃）。口语动词 dibotakin（被剃成光头）、botakin（剃光头）。",
+      "example": "Pemimpin rombongan kami botak, jadi gampang dicari di tengah keramaian.",
+      "example_cn": "我们团的领队是光头，所以在人群里很好找。",
+      "synonym_note": "botak 可以是自然秃，也可以是剃的光头；gundul 多指剃得精光的光头，还能说山林光秃秃（hutan gundul）；plontos 也是剃光头，更口语。描述人外貌时 botak 最常用。",
+      "is_oral_new": false
+    },
+    {
+      "word": "bungkuk",
+      "display": "bungkuk",
+      "audio_text": "bungkuk",
+      "cn": "驼背的；弯着腰的",
+      "en": "hunched; stooped",
+      "root": "bungkuk",
+      "root_cn": "弯曲；驼背",
+      "formation": "形容词。常见搭配：badan bungkuk（身体驼背）、jalannya bungkuk（走路弯着腰）。meN- + bungkuk → membungkuk（弯下腰，动作）：membungkuk mengambil koin；membungkukkan badan（把身子弯下去，常指鞠躬）。",
+      "example": "Kakek jalannya agak bungkuk dan pelan, jadi dia bilang, \"Kalian duluan saja, nanti Kakek menyusul.\"",
+      "example_cn": "爷爷走路有点弯腰，也走得慢，所以他说：“你们先走吧，爷爷随后就来。”",
+      "synonym_note": "bungkuk 说的是状态（他背驼）；membungkuk 说的是动作（他弯下腰去捡东西）。membungkukkan 后面要接宾语：membungkukkan badan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kucir",
+      "display": "kucir",
+      "audio_text": "kucir",
+      "cn": "扎起来的辫子；把头发扎起来",
+      "en": "ponytail; to tie hair up",
+      "root": "kucir",
+      "root_cn": "扎辫子",
+      "formation": "名词，也常作动词用。常见搭配：rambutnya dikucir（头发扎起来了）、dikucir dua（扎两个辫子）、kucir kuda（马尾辫）、mengucir rambut（扎头发）。日常也常说成 kuncir / dikuncir，意思相同。",
+      "example": "Nisa duduk di depan meja rias, lalu Ibu mengucir rambutnya jadi dua.",
+      "example_cn": "妮莎坐在梳妆台前，妈妈给她扎了两个辫子。",
+      "synonym_note": "kucir 只是把头发扎成一束，不编；kepang 是编起来的辫子（麻花辫）。发圈叫 ikat rambut。口语说法：kuncir / dikuncir（雅加达口语更常听到）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "lonjong",
+      "display": "lonjong",
+      "audio_text": "lonjong",
+      "cn": "椭圆的；长圆形的",
+      "en": "oval",
+      "root": "lonjong",
+      "root_cn": "椭圆",
+      "formation": "形容词。常见搭配：bentuknya lonjong（形状是椭圆的）、wajah lonjong（长圆脸、鹅蛋脸）、meja lonjong（椭圆桌）、telur yang lonjong。",
+      "example": "Meja makan yang kami beli bentuknya lonjong; sebelum beli, kami ukur dulu ruangannya.",
+      "example_cn": "我们买的餐桌是椭圆形的；买之前，我们先量了房间。",
+      "synonym_note": "bulat 是圆的，lonjong 是拉长了的圆（像鸡蛋）；也可以说 oval。描述脸型：wajah bulat（圆脸）、wajah lonjong（长圆脸）。",
+      "is_oral_new": false
+    }
+  ],
+  "review_vocab": [
+    "teratur",
+    "pengaturan",
+    "ngeles",
+    "patungan",
+    "guna"
+  ],
+  "sentences": [
+    {
+      "text": "Tiketnya lumayan mahal, kita patungan aja, ya? Nanti malam aku transfer ke kamu.",
+      "cn": "门票挺贵的，我们凑钱买吧？我今晚转给你。（aja = saja）"
+    },
+    {
+      "text": "Menurut petugas, pengaturan jadwal makannya ketat, jadi harimau di sini makan secara teratur: sekali sehari, selalu jam empat sore.",
+      "cn": "据工作人员说，这里的喂食时间安排得很严格，所以老虎吃饭很有规律：一天一次，总是下午四点。"
+    },
+    {
+      "text": "Bulu beruang kutub tebal sekali; gunanya untuk menahan dingin.",
+      "cn": "北极熊的毛特别厚，用处是抵御寒冷。"
+    },
+    {
+      "text": "Kalau memang kamu yang menghapus fotonya, mengaku aja, jangan ngeles terus.",
+      "cn": "如果照片真是你删的，就承认吧，别一直找借口。（aja = saja）"
+    },
+    {
+      "text": "Kakek suka hidup teratur: bangun pagi, berkebun sebentar, lalu sarapan.",
+      "cn": "爷爷喜欢过有规律的生活：早起，种一会儿菜，然后吃早饭。"
+    }
+  ],
+  "reading": {
+    "text": "Hari Minggu, keluarga Raka pergi ke Taman Safari Bogor. Di area harimau, semua jendela mobil harus ditutup karena harimau bisa menyerang. Di jalur berikutnya, rusa-rusa mendekat minta wortel, dan seekor badak lewat pelan-pelan. Setelah itu mereka turun di area bermain. Kakek berjalan agak bungkuk, jadi Raka menemaninya pelan-pelan. Saat Ibu membeli cimol, Nisa, adik Raka, tiba-tiba tidak terlihat. Ibu langsung melapor ke petugas, seorang bapak botak yang sangat tenang. \"Rambutnya dikucir dua, wajahnya agak lonjong, bajunya kuning,\" kata Ibu. Sepuluh menit kemudian, Nisa ditemukan di depan kandang beruang. Dia sedang asyik melihat beruang madu memanjat pohon. \"Maaf, Bu, aku cuma mau lihat bulunya dari dekat,\" katanya. Semua lega.",
+    "cn": "星期天，拉卡一家去了茂物野生动物园。在老虎区，所有车窗都必须关上，因为老虎可能会攻击人。到了下一段路，一群鹿凑过来要胡萝卜，还有一头犀牛慢慢走过。之后他们在游乐区下了车。爷爷走路有点弯腰，所以拉卡慢慢地陪着他。妈妈买 cimol 的时候，拉卡的妹妹妮莎突然不见了。妈妈立刻去找工作人员报告，那是一位很冷静的光头大叔。“她头发扎了两个辫子，脸有点长圆，穿黄色衣服。”妈妈说。十分钟后，有人在熊舍前找到了妮莎。她正看马来熊爬树看得入迷。“对不起，妈妈，我只是想近一点看看它的毛。”她说。大家都松了一口气。"
+  },
+  "quiz": [
+    {
+      "question": "Raka lupa memesan tiket, tapi dia bilang, \"Bukan salahku, aplikasinya error!\" Padahal aplikasinya baik-baik saja. Ibu menjawab, \"Raka, jangan ____ terus. Bilang saja kamu lupa.\"",
+      "options": [
+        "ngambek",
+        "ngomel",
+        "ngeles",
+        "ngeyel"
+      ],
+      "answer_index": 2,
+      "answer": "ngeles",
+      "explain": "明明是自己忘了，却推说 App 出错——这是找借口、狡辩，口语说 ngeles。ngambek 是赌气、闹别扭（不说话、不理人）；ngomel 是唠叨、抱怨个不停；ngeyel 是固执、硬顶嘴不听劝。这里妈妈要拉卡别再“推托找借口”，所以是 ngeles。"
+    },
+    {
+      "question": "Kacamata Kakek jatuh ke lantai. Dia ____ pelan-pelan untuk mengambilnya karena punggungnya sakit.",
+      "options": [
+        "membungkuk",
+        "bungkuk",
+        "dibungkukkan",
+        "membungkukkan"
+      ],
+      "answer_index": 0,
+      "answer": "membungkuk",
+      "explain": "这里要的是“弯下腰”这个动作，用动词 membungkuk。bungkuk 是形容词，描述状态（badannya bungkuk 他驼背），不能直接当“弯腰去捡”的动作；membungkukkan 后面必须接宾语（membungkukkan badan）；dibungkukkan 是被动，说不通。"
+    },
+    {
+      "question": "Telur ayam bentuknya tidak bulat sempurna. Kalau dilihat dari samping, bentuknya agak ____.",
+      "options": [
+        "bulat",
+        "lonjong",
+        "pipih",
+        "runcing"
+      ],
+      "answer_index": 1,
+      "answer": "lonjong",
+      "explain": "鸡蛋不是正圆，而是拉长的圆，就是 lonjong（椭圆）。前面已经说了 tidak bulat，所以 bulat 自相矛盾；pipih 是扁平的（像饼干）；runcing 是尖的（像针尖、铅笔尖），都不符合鸡蛋的形状。"
+    }
+  ],
+  "output": {
+    "task": "周末你去了野生动物园或动物园。给朋友发一条 WhatsApp（3–5 句）：说看到了什么动物、发生了什么、买了什么吃的。至少用 harimau、beruang、badak、bulu、menyerang 中的两个，再用一个复习词（patungan / teratur）。",
+    "reference_answer": "Kemarin aku ke Taman Safari sama keluarga. Kami patungan beli tiket, jadi lebih hemat. Yang paling seru, ada badak lewat dekat banget sama mobil kami! Di area harimau kami harus tutup jendela, soalnya harimau bisa menyerang kalau kaget. Pulangnya kami jajan cimol, gurih banget.",
+    "reference_cn": "昨天我和家人去了野生动物园。我们凑钱买的票，省了一些。最精彩的是，有头犀牛从我们车旁边很近的地方走过！在老虎区我们得关上车窗，因为老虎受惊时可能会攻击人。回家路上我们买了 cimol 吃，特别香。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出老虎、熊、犀牛、（动物的）毛、攻击、炸木薯粉丸子、光头的、驼背的、扎辫子、椭圆的；再说出有规律的、安排/设置、找借口、凑钱、用处。卡住的词回看词卡再说一遍。",
+    "易混词和搭配：bungkuk（驼背，状态：badannya bungkuk）vs membungkuk（弯腰，动作：membungkuk mengambil kacamata）；bulu（动物毛、羽毛）≠ rambut（头发）；lonjong（椭圆）vs bulat（圆）；kucir（扎起来）vs kepang（编辫子）；同词根 atur：teratur（有规律的：hidup teratur）、pengaturan（安排；设置：pengaturan jadwal、pengaturan HP）。各说一句。",
+    "复习词应用：ngeles 是口语“找借口、推托”，常说 jangan ngeles；patungan 是几个人凑钱买东西，常说 patungan beli …；guna 是“用处”，常说 gunanya untuk …、apa gunanya …？用 patungan 和 ngeles 各说一句自己的事，例如 Kami patungan beli kado buat Ibu。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "menyerang",
+      "bungkuk",
+      "lonjong"
+    ],
+    "patterns": [
+      {
+        "pattern": "… harus …, karena … bisa …",
+        "cn": "……必须……，因为……可能会……",
+        "example": "Di area harimau, semua jendela mobil harus ditutup karena harimau bisa menyerang.",
+        "example_cn": "在老虎区，所有车窗都必须关上，因为老虎可能会攻击人。"
+      },
+      {
+        "pattern": "Kalian duluan saja, nanti … menyusul.",
+        "cn": "你们先走吧，……随后就来。",
+        "example": "Kakek jalannya agak bungkuk dan pelan, jadi dia bilang, \"Kalian duluan saja, nanti Kakek menyusul.\"",
+        "example_cn": "爷爷走路有点弯腰，也走得慢，所以他说：“你们先走吧，爷爷随后就来。”"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "老虎",
+        "id": "harimau"
+      },
+      {
+        "cn": "熊",
+        "id": "beruang"
+      },
+      {
+        "cn": "犀牛",
+        "id": "badak"
+      },
+      {
+        "cn": "（动物的）毛",
+        "id": "bulu"
+      },
+      {
+        "cn": "攻击",
+        "id": "menyerang"
+      },
+      {
+        "cn": "炸木薯粉丸子",
+        "id": "cimol"
+      },
+      {
+        "cn": "光头的",
+        "id": "botak"
+      },
+      {
+        "cn": "驼背的",
+        "id": "bungkuk"
+      },
+      {
+        "cn": "扎辫子",
+        "id": "kucir"
+      },
+      {
+        "cn": "椭圆的",
+        "id": "lonjong"
+      },
+      {
+        "cn": "找借口",
+        "id": "ngeles"
+      },
+      {
+        "cn": "凑钱",
+        "id": "patungan"
+      }
+    ],
+    "frames": [
+      "Kalian duluan saja, nanti … menyusul.",
+      "Rambutnya dikucir …",
+      "Jangan ngeles terus, …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "bungkuk",
+            "cn": "驼背（状态）"
+          },
+          {
+            "id": "membungkuk",
+            "cn": "弯腰（动作）"
+          }
+        ],
+        "note": "badannya bungkuk 说状态；membungkuk mengambil … 说动作。"
+      },
+      {
+        "items": [
+          {
+            "id": "bulu",
+            "cn": "动物毛、羽毛"
+          },
+          {
+            "id": "rambut",
+            "cn": "头发"
+          }
+        ],
+        "note": "人的头发说 rambut，bulu 指动物毛、羽毛和体毛。"
+      },
+      {
+        "items": [
+          {
+            "id": "teratur",
+            "cn": "有规律的"
+          },
+          {
+            "id": "pengaturan",
+            "cn": "安排；设置"
+          }
+        ],
+        "note": "同词根 atur：hidup teratur（生活有规律）；pengaturan jadwal（时间安排）。"
+      },
+      {
+        "items": [
+          {
+            "id": "lonjong",
+            "cn": "椭圆的"
+          },
+          {
+            "id": "bulat",
+            "cn": "圆的"
+          }
+        ],
+        "note": "像鸡蛋一样拉长的圆说 lonjong。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "patungan",
+        "usage": "口语，几个人凑钱买东西，常说 patungan beli …。",
+        "examples": [
+          {
+            "id": "Tiketnya lumayan mahal, kita patungan aja, ya?",
+            "cn": "门票挺贵的，我们凑钱买吧？"
+          }
+        ]
+      },
+      {
+        "word": "ngeles",
+        "usage": "口语，找借口、推托，常说 jangan ngeles。",
+        "examples": [
+          {
+            "id": "Kalau memang kamu yang menghapus fotonya, mengaku aja, jangan ngeles terus.",
+            "cn": "如果照片真是你删的，就承认吧，别一直找借口。"
+          }
+        ]
+      },
+      {
+        "word": "guna",
+        "usage": "“用处”，常说 gunanya untuk …。",
+        "examples": [
+          {
+            "id": "Bulu beruang kutub tebal sekali; gunanya untuk menahan dingin.",
+            "cn": "北极熊的毛特别厚，用处是抵御寒冷。"
+          }
+        ]
+      }
+    ]
+  }
+}
