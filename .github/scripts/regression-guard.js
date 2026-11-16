@@ -476,14 +476,9 @@ try {
   ok(scheduleCrons.length===2 && scheduleCrons[0]==="- cron: '30 1 * * *'" &&
     scheduleCrons[1]==="- cron: '5 11 * * *'",
     'sync workflow has only the existing two daily checks, now at 08:30/18:05 Jakarta');
-  // V4 backup-lesson generation is TEMPORARILY DISABLED (user instruction 2026-10-03). Claude is the
-  // only automatic lesson generator. Re-enable ONLY on the user's explicit instruction, and update
-  // this guard in the same change.
-  // The PR preflight also runs THIS guard against the pinned pre-change main tree (GUARD_BASELINE_TREE=1)
-  // to check data regressions only. That old tree predates the pause, so workflow-shape assertions
-  // are skipped there; the full strict run on the proposed tree always executes them.
-  const pausedOk=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
-  const syncLines=sync.split('\n');
+  // The backup generator was permanently removed on 2026-11-16.
+  // Pre-change baseline trees may still have the old workflow, so check the proposed tree only.
+  const removedOk=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
   const stepBody=(name)=>{const a=sync.indexOf('      - name: '+name);if(a<0)return '';
     const b=sync.indexOf('\n      - name: ',a+10),c=sync.indexOf('\n  extensive_reading_release:',a+10);
     return sync.slice(a,[b,c].filter(x=>x>0).sort((x,y)=>x-y)[0]||sync.length)};
@@ -515,21 +510,31 @@ try {
     noiseCleanup.includes('.triggering_actor.login == \\"github-actions[bot]\\"') && noiseCleanup.includes('[ "$jobs" = 0 ] || continue') &&
     noiseCleanup.includes('select(.id != $GITHUB_RUN_ID') && noiseCleanup.includes('^lesson-release-') && !/--method DELETE[^\n]*\/git\//.test(noiseCleanup),
     'bot-noise cleanup only deletes zero-job github-actions[bot] runs on the release branch, after success, without failing the release');
-  pausedOk(!/^  create:\s*$/m.test(sync), 'V4 paused: branch-create watcher is not an active workflow trigger');
-  pausedOk(/^    if: \$\{\{ false \}\}\s*$/m.test(sync), 'V4 paused: dormant release-scaffold watcher job is hard-disabled');
   const failedPrStep=stepBody('Recover immediately after an eligible lesson release fails');
-  pausedOk(failedPrStep.includes('LESSON_RECOVERY_V4_DISABLED') && !failedPrStep.includes('inputs[recover_date]=$date') &&
-    !failedPrStep.includes('inputs[recover_session]=$session'),
-    'V4 paused: a failed lesson release PR never dispatches a backup generator');
-  const generatorStep=stepBody('Generate missing lesson with V2 and commit the two-file transaction');
-  pausedOk(generatorStep.includes('"status":"v4_disabled"') && generatorStep.includes('LESSON_V4_FALLBACK_DISABLED') &&
-    !/LESSON_V4_FALLBACK\s*[:=]/.test(generatorStep),
-    'V4 paused: scheduled/dispatch recovery only resumes the same saved original draft');
+  const originalStep=stepBody('Recover saved original lesson and commit the two-file transaction');
   const recoverSource=read('.github/scripts/recover-missing-lesson.js');
-  pausedOk(/process\.env\.LESSON_V4_FALLBACK==='1'/.test(recoverSource) && recoverSource.includes("status:'v4_disabled'"),
-    'V4 paused: recover-missing-lesson.js generates nothing unless LESSON_V4_FALLBACK=1');
-  pausedOk(syncLines.filter(x=>/LESSON_V4_FALLBACK=1 node /.test(x)).length===2 && !/LESSON_V4_FALLBACK/.test(build),
-    'V4 paused: only the two isolated PR-preflight rehearsals may enable the V4 switch');
+  removedOk(!/^  create:\s*$/m.test(sync)&&!sync.includes('watch_release_scaffold:')&&
+    !sync.includes('LESSON_V4_FALLBACK')&&!sync.includes('prototype/lesson-engine'),
+    'backup generator removed: no create watcher, V4 override or prototype engine in workflow');
+  removedOk(failedPrStep.includes('LESSON_RECOVERY_ORIGINAL_ONLY')&&
+    !failedPrStep.includes('inputs[recover_date]=$date')&&
+    !failedPrStep.includes('inputs[recover_session]=$session'),
+    'failed release keeps the original and never dispatches a replacement');
+  removedOk(originalStep.includes('ORIGINAL_STAGED_FOUND')&&
+    originalStep.includes('ORIGINAL_RECOVERY_NOT_AVAILABLE')&&
+    originalStep.includes("no_original|original_invalid")&&
+    originalStep.includes("node .github/scripts/recover-missing-lesson.js")&&
+    !originalStep.includes('LESSON_V4_FALLBACK'),
+    'scheduled recovery only resumes an existing draft; missing/invalid originals fail closed');
+  removedOk(recoverSource.includes("status:'no_original'")&&
+    recoverSource.includes("status:'original_invalid'")&&
+    recoverSource.includes("source:'original_staged'")&&
+    !/generate-prototype|engine\.generate|v4FallbackEnabled|LESSON_V4_FALLBACK/.test(recoverSource),
+    'original recovery script has no generator, fallback switch or replacement candidate');
+  removedOk(!sync.includes('Rehearse actual V2 lesson')&&
+    !sync.includes('compare-quality.js')&&
+    !sync.includes('LESSON_V4_FALLBACK=1'),
+    'V4 test rehearsals and switches have been removed from CI');
   ok(/scheduled_health_check/.test(sync) &&
     /Scheduled check: lesson, index, runtime, context, vocabulary and regression guard healthy; no rebuild or commit/.test(sync) &&
     sync.includes('node .github/scripts/build-lesson-context.js --check > /dev/null; then') &&
