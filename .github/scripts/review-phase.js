@@ -95,6 +95,12 @@ function storyPlan(phase,date,ams){
   return {...r,week_start:ws,episode:prior.length+1,series:last?String(last.story.series||''):null,
     previous:prior.map(l=>({date:l.date,episode:l.story.episode,title:(l.reading&&l.reading.title)||'',next_cn:l.story.next_cn||''}))};
 }
+/**
+ * 2026-11-16 (user decision, REVIEW-PHASE.md 3.1): from `pm_slim.from` on, the review-phase 18:00 back half is slimmer:
+ * one rewrite (the twist, with a fill-in sentence frame; Sunday adds the challenge), no daily_test.self_check, and a single
+ * optional 30-second retell with a reference retell. The dialogue's "藏台词" practice replaces the other rewrites (page only).
+ */
+function pmSlim(phase,date){const s=phase&&phase.pm_slim;return !!(on(phase,date)&&s&&typeof s==='object'&&validDate(s.from)&&String(date)>=s.from)}
 function describe(date,session,root=REPO){
   const phase=load(root),active=on(phase,date);
   if(!active)return {date,session:session||null,active:false,note:'复习阶段未启用：按现在的说明书和规则出课，忽略 docs/tasks/REVIEW-PHASE.md。'};
@@ -102,6 +108,7 @@ function describe(date,session,root=REPO){
   return {date,session:session||null,active:true,activated_at:phase.activated_at,counts:counts(phase,date),plan,
     recurrence_min:session?recurrenceMin(phase,date,session):phase.recurrence_min||null,
     ...(session==='am'?{story:storyPlan(phase,date,weekAms(phase,date,root))}:{}),
+    ...(session==='pm'?{pm_slim:pmSlim(phase,date)}:{}),
     note:'复习阶段已启用：按 docs/tasks/REVIEW-PHASE.md 出课（数量、结构以本输出为准）。'};
 }
 if(require.main===module){
@@ -109,4 +116,4 @@ if(require.main===module){
   if(!validDate(a.date)){console.error('--date YYYY-MM-DD required');process.exit(2)}
   console.log(JSON.stringify(describe(a.date,a.session),null,2));
 }
-module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,storyRule,weekStart,weekAms,storyPlan,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};
+module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,storyRule,weekStart,weekAms,storyPlan,pmSlim,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};

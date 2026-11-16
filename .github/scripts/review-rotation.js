@@ -347,6 +347,7 @@ function recurrenceText(L){
  const t=[lessonText(L)];
  if(L&&L.output&&L.output.reference_answer)t.push(String(L.output.reference_answer));
  for(const r of (L&&L.rewrite)||[])t.push(String((r&&r.reference_answer)||''));
+ if(L&&L.review&&!Array.isArray(L.review)&&L.review.retell_reference)t.push(String(L.review.retell_reference)); // 2026-11-16 slim PM retell (REVIEW-PHASE.md 3.1)
  return t.join(' \n ').toLowerCase();
 }
 const reEsc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');

@@ -188,6 +188,28 @@ t('on PM: missing twist, twist on line 0, no twist rewrite, 7-line dialogue, 10 
   const d=phasePm();d.dialogue.lines.pop();assert.ok(runPm(d).has('PM_DIALOGUE_INVALID'));
   assert.ok(runPm(clone(pm14)).has('PM_CORE_COUNT'));
 });
+// ---------- on: slim 18:00 back half (2026-11-16 user decision, REVIEW-PHASE.md 3.1) ----------
+const ONP={...ON,pm_slim:{from:'2026-10-13'}};
+function slimPm(){const L=phasePm();L.rewrite=[{...L.rewrite[0],kind:'twist',frame:'Mohon maaf, Kak, …… . Kakak bebas pilih: …… atau …… .'}];
+  delete L.daily_test.self_check;
+  L.review={title:'可选 · 30 秒复述',steps:['用今天的 3 个词，30 秒说说这件事怎么解决的。'],retell_reference:'Pembeli mau tukar ukuran, tapi ukurannya kosong. Admin minta maaf dan kasih dua pilihan.',retell_reference_cn:'买家想换尺码，但尺码断货了。客服道歉并给了两个选择。'};return L}
+const SLIM=['PM_REWRITE_INVALID','PHASE_PM_SLIM_REWRITE','PM_SELF_CHECK_INVALID','PHASE_PM_SLIM_REVIEW','PM_FINAL_REVIEW_INVALID','PHASE_PM_TWIST'];
+t('slim PM: one twist rewrite with a frame, no self_check, one retell step with a reference',()=>{
+  const ok=runPm(slimPm(),ONP);for(const k of SLIM)assert.ok(!ok.has(k),k);
+  const a=slimPm();delete a.rewrite[0].frame;assert.ok(runPm(a,ONP).has('PHASE_PM_SLIM_REWRITE'),'frame required');
+  const b=slimPm();b.rewrite[0].frame='Mohon maaf, Kak.';assert.ok(runPm(b,ONP).has('PHASE_PM_SLIM_REWRITE'),'frame needs blanks');
+  const c=slimPm();c.rewrite.push({...pm14.rewrite[1]});assert.ok(runPm(c,ONP).has('PHASE_PM_SLIM_REWRITE'),'a second ordinary rewrite');
+  const d=slimPm();d.rewrite.push({...pm14.rewrite[1],kind:'challenge'});assert.ok(!runPm(d,ONP).has('PHASE_PM_SLIM_REWRITE'),'Sunday challenge allowed');
+  const e=slimPm();e.daily_test.self_check=['x'];assert.ok(runPm(e,ONP).has('PM_SELF_CHECK_INVALID'),'self_check removed');
+  const f=slimPm();delete f.review.retell_reference;assert.ok(runPm(f,ONP).has('PHASE_PM_SLIM_REVIEW'),'reference retell');
+  const g=slimPm();g.review.steps.push('另一步');assert.ok(runPm(g,ONP).has('PHASE_PM_SLIM_REVIEW'),'one step only');
+});
+t('slim PM: off, before pm_slim.from or without the config, the old 3-4 rewrite contract still applies',()=>{
+  for(const ph of [ON,{...ONP,pm_slim:{from:'2026-10-15'}}]){const c=runPm(slimPm(),ph);assert.ok(c.has('PM_REWRITE_INVALID')&&c.has('PM_SELF_CHECK_INVALID'),JSON.stringify(ph.pm_slim||null));
+    const old=runPm(phasePm(),ph);for(const k of SLIM)assert.ok(!old.has(k),k);}
+  assert.equal(RP.pmSlim({...ONP,active:false},'2026-10-14'),false);assert.equal(RP.pmSlim(ONP,'2026-10-14'),true);
+  assert.equal(RP.load().pm_slim.from,'2026-11-17');
+});
 t('on PM: the 6-card morning counts as the published same-day AM; off it would not',()=>{
   // AM_PREREQUISITE_MISSING also needs index am=true for 2026-10-14, which the real index has.
   assert.ok(!runPm(phasePm()).has('AM_PREREQUISITE_MISSING'));

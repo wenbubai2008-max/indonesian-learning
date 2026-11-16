@@ -20,6 +20,10 @@
   "reading": [110, 160],
   "note": "2026-11-16 用户决定：复习阶段的早课阅读改成每周连载的一集（docs/tasks/REVIEW-PHASE.md 2.1）。"
  },
+ "pm_slim": {
+  "from": "2026-11-17",
+  "note": "2026-11-16 用户决定：复习阶段晚课后半部分精简——改写只留带句子骨架的转折题，去掉自检，复盘只留可选的 30 秒复述并附参考（docs/tasks/REVIEW-PHASE.md 3.1）。"
+ },
  "recurrence_min": {
   "am": 6,
   "pm": 8
