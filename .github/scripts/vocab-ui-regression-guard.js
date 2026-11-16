@@ -191,10 +191,11 @@ try{
 
   ok(!controller.includes("['top1000','Top1000'"),'retired Top1000 option must not reappear');
   ok(!controller.includes("['pending-primary','主词库·待学习',libraryCount('pending-primary')]")&&
-    controller.includes("['pending-secondary','第二词库·待学习',libraryCount('pending-secondary')]"),
-    'the exhausted primary pending bank must not appear in selector; secondary pending remains selectable');
-  ok(controller.includes("if(s==='pending-primary')return 'pending-secondary'"),
-    'previously selected primary pending bank must migrate to secondary on refresh');
+    !controller.includes("['pending-secondary','第二词库·待学习',libraryCount('pending-secondary')]")&&
+    controller.includes("const NORMAL_KEYS=['master','daily','unknown']"),
+    'both exhausted pending banks must be absent from the vocabulary selector');
+  ok(controller.includes("if(s==='pending-primary'||s==='pending-secondary')return 'master'"),
+    'older pending-bank selections must migrate to the visible master library');
   ok(controller.includes("if(key==='unknown'&&$('mode'))$('mode').value='flash'")&&
     controller.includes("activeKey==='unknown'?labelFor()")&&
     controller.includes('点击「翻卡」看中文'),
