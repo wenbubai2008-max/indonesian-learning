@@ -1,0 +1,358 @@
+{
+  "date": "2026-11-16",
+  "session": "am",
+  "time": "08:00",
+  "day": 87,
+  "title": "08:00 早课｜Tanya Level Pedas Sebelum Pesan Keripik · 下单前先问清薯片辣度",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "core"
+  },
+  "vocab": [
+    {
+      "word": "seharusnya",
+      "display": "seharusnya",
+      "audio_text": "seharusnya",
+      "cn": "本应该；按理说",
+      "en": "should (have); supposedly",
+      "root": "harus",
+      "root_cn": "必须",
+      "formation": "se- + harus + -nya → seharusnya，表示“按规定、按计划或按道理应该这样”。常见搭配：Menurut …, … seharusnya …（按……，……本该……）；seharusnya sudah …（本该已经……）；tidak seharusnya …（不该……）。说话人常用它点出“预期”和“实际”的差距。",
+      "example": "Menurut keterangan di foto, satu bungkus seharusnya berisi 250 gram, bukan 200 gram.",
+      "example_cn": "按照照片上的说明，一包本该装 250 克，而不是 200 克。",
+      "synonym_note": "harus 是“必须”（要求、义务）：Kamu harus bayar sebelum jam tiga。seharusnya 是“按理应该”（预期、规范），常暗示实际没做到。sebaiknya 是“最好”（提建议）。口语说法：harusnya（去掉 se-），朋友聊天、和客服打字都常用；写正式邮件、投诉信用 seharusnya。",
+      "usage_note": "复习词：先遮住中文回想意思，再看今天网店场景里“按说明本该……”的用法。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tingkat",
+      "display": "tingkat",
+      "audio_text": "tingkat",
+      "cn": "等级；层次；程度",
+      "en": "level; degree",
+      "root": "tingkat",
+      "root_cn": "等级；层",
+      "formation": "名词，本身就是词根。常见搭配：tingkat kepedasan（辣度等级）、tingkat kesulitan（难度）、tingkat pendidikan（教育程度）。同族词：meningkat（上升、提高，不及物）、meningkatkan（提高……，及物）、tingkatan（等级划分）、bertingkat（多层的：rumah bertingkat）。",
+      "example": "Sebelum memesan untuk acara keluarga, khususnya kalau ada anak-anak, cek dulu tingkat kepedasannya.",
+      "example_cn": "给家庭聚会下单之前，特别是有小孩的时候，先查一下辣度等级。",
+      "synonym_note": "tingkat 偏指可以比较高低的等级或程度；tingkatan 偏指分出来的层级本身（tingkatan kelas）。说楼层时 rumah dua tingkat（两层的房子）也很常见。口语说法：网店和聊天里常直接说 level（level 2、level paling pedas），写说明、介绍时多用 tingkat。",
+      "usage_note": "复习词：先回想意思，再记住今天的新搭配 tingkat kepedasan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tetap",
+      "display": "tetap",
+      "audio_text": "tetap",
+      "cn": "仍然；照样；保持不变",
+      "en": "still; remain (the same)",
+      "root": "tetap",
+      "root_cn": "固定；不变",
+      "formation": "基础词，本身就是词根。常见用法：tetap + 形容词/动词（tetap gratis 照样免费、tetap datang 照样来）。同族词：menetapkan（规定、确定）、ketetapan（决定、规定）；harga tetap（固定价格）、pekerjaan tetap（固定工作）。",
+      "example": "Harga cabai sedang naik, tapi Bu Narti tetap menjual keripiknya dengan harga lama.",
+      "example_cn": "辣椒价格正在上涨，但娜尔蒂阿姨照样按原价卖她的薯片。",
+      "synonym_note": "tetap 强调“不管条件怎样都不变、照样”：Hujan deras, tapi kurirnya tetap datang。masih 强调“状态持续到现在（以后可能变）”：Paketnya masih di jalan。两者有时都能用，但前面有“虽然、即使”这类转折时，多用 tetap。",
+      "usage_note": "复习词：先回想意思，再体会今天“虽然……也照样……”的用法。",
+      "is_oral_new": false
+    },
+    {
+      "word": "perpaduan",
+      "display": "perpaduan",
+      "audio_text": "perpaduan",
+      "cn": "融合；结合；搭配",
+      "en": "blend; combination",
+      "root": "padu",
+      "root_cn": "协调；融合",
+      "formation": "per- + padu + -an → perpaduan，指两种以上的东西结合在一起、而且搭配得协调的结果。常见搭配：perpaduan warna（配色）、perpaduan rasa（口味搭配）、perpaduan antara A dan B。同族词：berpadu（相互融合）、memadukan（把……结合起来）、terpadu（综合的、一体化的）。",
+      "example": "Kemasannya menarik; perpaduan warna merah dan kuning membuat keripiknya terlihat pedas dan gurih.",
+      "example_cn": "包装很吸引人；红色和黄色的配色让薯片看起来又辣又香。",
+      "synonym_note": "campuran 偏指东西掺在一起（campuran tepung dan air 面粉和水的混合物），不一定好；perpaduan 强调搭配得协调、效果好。说口味时两者都能用，夸搭配得好多说 perpaduan。",
+      "usage_note": "复习词：先回想意思，再看今天的新搭配 perpaduan warna。",
+      "is_oral_new": false
+    },
+    {
+      "word": "dimaksudkan",
+      "display": "dimaksudkan",
+      "audio_text": "dimaksudkan",
+      "cn": "意在；旨在；（被）打算用来……",
+      "en": "to be intended (for)",
+      "root": "maksud",
+      "root_cn": "意思；目的",
+      "formation": "di- + maksud + -kan → dimaksudkan（被动形），说某个东西、安排或设计“本来的用意”。常见句型：X dimaksudkan untuk …（X 是用来……的）、X dimaksudkan agar …（X 的用意是让……）、X dimaksudkan sebagai …（X 本意是作为……）。主动形 memaksudkan 很少用。",
+      "example": "Kolom catatan di halaman pembayaran dimaksudkan untuk permintaan khusus, misalnya jam pengiriman atau warna kemasan.",
+      "example_cn": "付款页面上的备注栏是用来写特别要求的，比如送货时间或包装颜色。",
+      "synonym_note": "bermaksud 是人“打算、有意”：Saya bermaksud pesan 30 bungkus。dimaksudkan 说的是东西或安排的用意，主语多是物。yang dimaksud 是“所说的那个”。聊天时常换成更简单的说法：Level 5 itu emang buat yang doyan pedas（emang = memang）。",
+      "usage_note": "复习词：先回想意思，再看今天网店页面上“这个栏是用来……的”的用法。",
+      "is_oral_new": false
+    },
+    {
+      "word": "penanganan",
+      "display": "penanganan",
+      "audio_text": "penanganan",
+      "cn": "处理；应对（的过程）",
+      "en": "handling",
+      "root": "tangan",
+      "root_cn": "手",
+      "formation": "peN- + tangan + -an → penanganan（t 脱落，peN- 变 pen-），名词，指对问题、情况的处理。同词根动词：menangani（meN- + tangan + -i，处理）、ditangani（被处理）。今天的新搭配：penanganan paket yang rusak（损坏包裹的处理）、penanganannya cepat（处理得快）。",
+      "example": "Penanganan paket yang rusak lebih cepat kalau pembeli punya video saat membuka paket.",
+      "example_cn": "如果买家有拆包裹时录的视频，损坏包裹的处理会更快。",
+      "synonym_note": "penanganan 说“处理问题、情况”（penanganan paket rusak、penanganan banjir）；pengurusan 偏“办手续”（pengurusan paspor）。口语里很少说 penanganan，常用动词：Nanti langsung kami urus / langsung ditangani, Kak。",
+      "usage_note": "复习词：先回想意思，再看今天网店售后里的新搭配。",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "seharusnya",
+    "tingkat",
+    "tetap",
+    "perpaduan",
+    "dimaksudkan",
+    "penanganan"
+  ],
+  "review_vocab": [
+    "benerin",
+    "ketiban",
+    "misalnya",
+    "nanya",
+    "nyampe"
+  ],
+  "sentences": [
+    {
+      "text": "Kak, aku mau nanya dulu: level 3 itu pedasnya kayak gimana, misalnya dibanding sambal biasa?",
+      "cn": "姐，我想先问一下：3 级辣大概有多辣？比如跟普通的辣椒酱比呢？（nanya = bertanya，kayak gimana = seperti apa）"
+    },
+    {
+      "text": "Kalau mau, kami bisa kurangi cabainya, jadi rasanya tetap gurih tapi tidak terlalu pedas.",
+      "cn": "如果您愿意，我们可以少放点辣椒，这样味道照样香，但不会太辣。"
+    },
+    {
+      "text": "Alamatnya tadi salah ketik, Kak. Udah aku benerin di aplikasi, ya.",
+      "cn": "姐，刚才地址打错了。我已经在 App 里改好了哦。（udah = sudah，benerin = membetulkan）"
+    },
+    {
+      "text": "Minggu ini toko kami lagi ketiban rezeki, Kak: tiga kantor pesan sekaligus, omzet langsung naik.",
+      "cn": "姐，这周我们店好运从天而降：三家公司同时下单，营业额一下子涨了。（lagi = sedang）"
+    },
+    {
+      "text": "Kalau aku bayar sekarang, kira-kira kapan nyampe ke Bekasi?",
+      "cn": "如果我现在付款，大概什么时候能到勿加泗？（nyampe = sampai）"
+    }
+  ],
+  "reading": {
+    "text": "Dika ingin memesan keripik singkong untuk acara kantor hari Jumat. Di aplikasi, toko Bu Narti menyediakan lima tingkat kepedasan, tetapi tidak ada penjelasan untuk setiap level, jadi pilihannya membingungkan. Admin toko menjelaskan bahwa level 5 dimaksudkan untuk pembeli yang sangat suka pedas, sedangkan level 1 paling rendah. Karena banyak teman kantornya tidak tahan pedas, Dika memilih level 2 dengan rasa perpaduan balado dan keju. Menurut admin, kalau dibayar sebelum jam tiga, paketnya seharusnya sampai hari Rabu, dan ongkirnya tetap gratis. Kalau ada keripik yang hancur di jalan, pembeli cukup mengirim video saat membuka paket. Penanganannya paling lama satu hari.",
+    "cn": "迪卡想为周五的公司活动订木薯片。在 App 上，娜尔蒂阿姨的店提供五个辣度等级，但没有每个等级的说明，所以这些选项让人看得一头雾水。店里的客服解释说，5 级是给特别爱吃辣的买家准备的，而 1 级最低。因为很多同事不能吃辣，迪卡选了 2 级，口味是巴拉多辣酱和芝士的搭配。客服说，如果三点前付款，包裹按理周三就能到，而且照样包邮。如果有薯片在路上碎了，买家只要发一段拆包裹时录的视频就行，最多一天就会处理好。"
+  },
+  "quiz": [
+    {
+      "question": "Bu Narti bercerita, \"Kemarin ada kantor yang tiba-tiba pesan 300 bungkus. Saya benar-benar ____ rezeki!\"",
+      "options": [
+        "kehilangan",
+        "kebanyakan",
+        "ketinggalan",
+        "ketiban"
+      ],
+      "answer_index": 3,
+      "answer": "ketiban",
+      "explain": "ketiban rezeki 是固定说法：好事（多半是意外的生意、收入）突然落到自己头上；坏事则说 ketiban sial。kehilangan rezeki 是“丢了财路”，和“突然来了 300 包订单”意思相反；kebanyakan 是“太多了”，不和 rezeki 搭配成这个意思；ketinggalan 是“落下、错过”，放在这里说不通。"
+    },
+    {
+      "question": "Pembeli menulis ke admin: \"Menurut jadwal di aplikasi, paket saya ____ sampai kemarin, tapi sampai sekarang belum datang.\"",
+      "options": [
+        "sebaiknya",
+        "sepertinya",
+        "seharusnya",
+        "sebenarnya"
+      ],
+      "answer_index": 2,
+      "answer": "seharusnya",
+      "explain": "前面有“按 App 上的日程”，后面又说“到现在还没到”，这正是“按理本该……（实际没做到）”，用 seharusnya。sebaiknya 是“最好”，用来提建议；sepertinya 是“好像”，是推测，不和“按日程”搭配；sebenarnya 是“其实”，会变成“其实昨天到了”，和后半句矛盾。"
+    },
+    {
+      "question": "Di halaman toko tertulis: \"Video saat membuka paket ____ untuk membantu pembeli kalau barangnya rusak di jalan.\"",
+      "options": [
+        "bermaksud",
+        "dimaksudkan",
+        "maksudnya",
+        "yang dimaksud"
+      ],
+      "answer_index": 1,
+      "answer": "dimaksudkan",
+      "explain": "主语是“拆包裹的视频”（物），说它的用意要用被动形 dimaksudkan untuk …。bermaksud 的主语是人（Saya bermaksud …）；maksudnya 是“意思是”，后面不接 untuk 说用途；yang dimaksud 是“所说的那个”，放进去句子就没有谓语了。"
+    }
+  ],
+  "output": {
+    "task": "你第一次在一家网店买零食，准备给公司同事订一批。给客服发一条消息（3–4 句）：先问辣度或口味，说明你的需求，再确认什么时候到。至少用 tingkat、seharusnya、tetap、perpaduan 中的两个，再用一个复习词（nanya / misalnya / nyampe）。",
+    "reference_answer": "Halo, Kak. Saya mau nanya dulu soal tingkat kepedasan. Saya pesan untuk 30 pegawai di kantor saya, dan beberapa orang tidak tahan pedas, jadi saya pilih level 2 saja, rasa perpaduan balado dan keju. Kalau saya bayar sebelum batas waktu jam tiga, paketnya seharusnya sampai hari Rabu, kan? Ini pertama kali saya belanja di sini dan saya pernah ditipu toko online, jadi tolong kirim foto keripiknya dulu, ya.",
+    "reference_cn": "你好，姐。我想先问一下辣度等级。我是给我公司的 30 名员工订的，有几个人不能吃辣，所以我就选 2 级，口味要巴拉多辣酱和芝士搭配的。如果我在三点截止时间前付款，包裹按理周三就能到，对吧？这是我第一次在这里买东西，我以前被网店骗过，所以麻烦先发一下薯片的照片哦。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 本应该/按理说、等级、照样/仍然、融合/搭配、意在/旨在、处理（的过程）；再说出 改好/修好、（好事坏事）突然落到头上、比如、问（口语）、到达（口语）。卡住的词回看词卡再说一遍。",
+    "易混词和搭配：seharusnya（按理应该，常带“实际没做到”：seharusnya sampai kemarin）vs sebaiknya（最好，提建议）vs harus（必须）；tetap（不管条件怎样都照样：ongkirnya tetap gratis）vs masih（状态还在持续：paketnya masih di jalan）；dimaksudkan（物的用意：dimaksudkan untuk …）vs bermaksud（人打算：Saya bermaksud …）。各说一句。",
+    "复习词应用：ketiban 常说 ketiban rezeki（意外来了好事）、ketiban sial（倒霉事落到头上）；benerin 是口语“改好、修好”，常说 benerin alamat；nanya、nyampe 是 bertanya、sampai 的口语说法，和客服聊天时常说 Mau nanya dulu, Kak 和 Kira-kira kapan nyampe?。用 ketiban 和 nyampe 各说一句自己网购的事。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "seharusnya",
+      "dimaksudkan",
+      "perpaduan"
+    ],
+    "patterns": [
+      {
+        "pattern": "Menurut …, … seharusnya …",
+        "cn": "按……，……本该……",
+        "function": "state-problem",
+        "example": "Menurut keterangan di foto, satu bungkus seharusnya berisi 250 gram, bukan 200 gram.",
+        "example_cn": "按照照片上的说明，一包本该装 250 克，而不是 200 克。"
+      },
+      {
+        "pattern": "Kalau …, kami bisa …",
+        "cn": "如果……，我们可以……",
+        "function": "offer-solution",
+        "example": "Kalau mau, kami bisa kurangi cabainya, jadi rasanya tetap gurih tapi tidak terlalu pedas.",
+        "example_cn": "如果您愿意，我们可以少放点辣椒，这样味道照样香，但不会太辣。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "本应该；按理说",
+        "id": "seharusnya"
+      },
+      {
+        "cn": "等级；程度",
+        "id": "tingkat"
+      },
+      {
+        "cn": "照样；仍然",
+        "id": "tetap"
+      },
+      {
+        "cn": "融合；搭配",
+        "id": "perpaduan"
+      },
+      {
+        "cn": "意在；用来……",
+        "id": "dimaksudkan"
+      },
+      {
+        "cn": "处理（的过程）",
+        "id": "penanganan"
+      },
+      {
+        "cn": "改好；修好（口语）",
+        "id": "benerin"
+      },
+      {
+        "cn": "（好事坏事）突然落到头上",
+        "id": "ketiban"
+      },
+      {
+        "cn": "比如",
+        "id": "misalnya"
+      },
+      {
+        "cn": "问（口语）",
+        "id": "nanya"
+      },
+      {
+        "cn": "到达（口语）",
+        "id": "nyampe"
+      }
+    ],
+    "frames": [
+      "Menurut …, … seharusnya …",
+      "Kalau …, kami bisa …",
+      "Mau nanya dulu, Kak: …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "seharusnya",
+            "cn": "按理本该"
+          },
+          {
+            "id": "sebaiknya",
+            "cn": "最好"
+          },
+          {
+            "id": "harus",
+            "cn": "必须"
+          }
+        ],
+        "note": "seharusnya 说预期（常是没做到），sebaiknya 提建议，harus 是要求或义务。"
+      },
+      {
+        "items": [
+          {
+            "id": "tetap",
+            "cn": "照样；不变"
+          },
+          {
+            "id": "masih",
+            "cn": "还；仍在"
+          }
+        ],
+        "note": "有“虽然、即使”转折时多用 tetap（tetap gratis）；说状态持续到现在用 masih（masih di jalan）。"
+      },
+      {
+        "items": [
+          {
+            "id": "dimaksudkan",
+            "cn": "（物）用意是"
+          },
+          {
+            "id": "bermaksud",
+            "cn": "（人）打算"
+          }
+        ],
+        "note": "主语是东西、安排时用 dimaksudkan untuk …；主语是人时用 bermaksud …。"
+      },
+      {
+        "items": [
+          {
+            "id": "perpaduan",
+            "cn": "协调的搭配"
+          },
+          {
+            "id": "campuran",
+            "cn": "混合物"
+          }
+        ],
+        "note": "说口味两者都能用；夸搭配得好多用 perpaduan，说东西掺在一起用 campuran。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "ketiban",
+        "usage": "好事或坏事意外落到自己头上，常说 ketiban rezeki、ketiban sial。",
+        "examples": [
+          {
+            "id": "Minggu ini toko kami lagi ketiban rezeki, Kak: tiga kantor pesan sekaligus, omzet langsung naik.",
+            "cn": "姐，这周我们店好运从天而降：三家公司同时下单，营业额一下子涨了。"
+          }
+        ]
+      },
+      {
+        "word": "benerin",
+        "usage": "口语“改好、修好”，常说 benerin alamat、benerin HP。",
+        "examples": [
+          {
+            "id": "Alamatnya tadi salah ketik, Kak. Udah aku benerin di aplikasi, ya.",
+            "cn": "姐，刚才地址打错了。我已经在 App 里改好了哦。"
+          }
+        ]
+      },
+      {
+        "word": "nyampe",
+        "usage": "sampai 的口语说法，问到货时间常说 kapan nyampe?",
+        "examples": [
+          {
+            "id": "Kalau aku bayar sekarang, kira-kira kapan nyampe ke Bekasi?",
+            "cn": "如果我现在付款，大概什么时候能到勿加泗？"
+          }
+        ]
+      }
+    ]
+  }
+}
