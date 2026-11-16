@@ -83,15 +83,21 @@
   }
   const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function card(v,label,note){return '<div><b>'+esc(v)+'</b><span>'+esc(label)+'</span>'+(note?'<small style="display:block;color:#667085">'+esc(note)+'</small>':'')+'</div>';}
-  function html(now=Date.now()){
+  // 2026-11-16 (user decision): once the review phase is on, the confirmed goals are in force (recognize words leave the
+  // core review cards, fast words are ranked first), so the panel shows those counts from the profile snapshot instead of
+  // calling them suggestions. `profile` is data/vocab-profile.json; without an active review_phase nothing changes.
+  function phaseGoals(profile){const p=profile&&profile.review_phase;return p&&p.active===true&&p.goals?p.goals:null;}
+  function phaseGoalsLine(g){return '<p class="vpCoverageNote" data-goals-active>复习目标已生效（2026-11-14 确认）：待强化的词里“会用” '+g.use+' 个（其中“要快” '+g.fast+' 个，复习时优先）、“会认” '+g.recognize+' 个（不再进核心复习卡，课文里仍会出现）'+(g.none?'、还没定目标 '+g.none+' 个（按正常复习）':'')+'。</p>';}
+  function html(now=Date.now(),profile=null){
     let r=null;try{r=compute(now);}catch(e){}
     if(!r)return '<div class="vpSection"><div class="vpEmpty">复习负担与能力指标暂时无法计算。</div></div>';
     const a=r.abilities,src='<p class="vpCoverageNote" style="margin-top:0">数据来源：'+esc(r.source.label)+(r.source.last_pull?'，最近一次拉取 '+esc(new Date(r.source.last_pull).toLocaleString('zh-CN',{timeZone:'Asia/Jakarta',hour12:false})):'')+'。</p>';
     const names={quick:'快速',listen:'听词',auto:'自动'};
     const loadRows=Object.keys(names).map(m=>{const x=r.load[m];return '<tr><td>'+names[m]+'</td><td>'+x.due+'</td><td>'+x.buckets.today+'</td><td>'+x.buckets.d1_3+'</td><td>'+x.buckets.d4_7+'</td><td>'+x.buckets.d8+'</td><td>'+x.never+'</td></tr>';}).join('');
-    let goalsBlock='<p class="vpCoverageNote" data-goals-pending>词汇目标建议加载中…</p>';
-    if(goals&&goals.counts){const c=goals.counts.active;goalsBlock='<p class="vpCoverageNote">待强化的词：建议“会用” '+c.use+' 个（其中“要快” '+c.fast+' 个）、“会认” '+c.recognize+' 个、待确认 '+c.unsure+' 个。只是建议，不影响选词和复习。</p>';}
-    return '<div class="vpSection" data-ability-observation><h3>复习负担与能力指标（观察中，不影响学习）</h3>'+src+
+    const pg=phaseGoals(profile);
+    let goalsBlock=pg?phaseGoalsLine(pg):'<p class="vpCoverageNote" data-goals-pending>词汇目标建议加载中…</p>';
+    if(!pg&&goals&&goals.counts){const c=goals.counts.active;goalsBlock='<p class="vpCoverageNote">待强化的词：建议“会用” '+c.use+' 个（其中“要快” '+c.fast+' 个）、“会认” '+c.recognize+' 个、待确认 '+c.unsure+' 个。只是建议，不影响选词和复习。</p>';}
+    return '<div class="vpSection" data-ability-observation><h3>'+(pg?'复习负担与能力指标':'复习负担与能力指标（观察中，不影响学习）')+'</h3>'+src+
       '<div class="vpMiniStats">'+card(a.confirmed,'确认掌握','原定义不变')+card(a.active,'主动掌握','自动训练三次跨日验证')+card(a.recognition,'识别达标','快速练习跨日第 3 次通过')+card(a.listening,'听觉识别达标','连续 3 次第一遍 3 秒内听懂')+'</div>'+
       '<p class="vpCoverageNote">三个数可以重叠，不相加。确认掌握的 '+a.confirmed+' 个里，有主动掌握证据的 '+a.active_and_confirmed+' 个，没有的 '+a.confirmed_without_active+' 个；主动掌握但还没算确认掌握的 '+a.active_not_confirmed+' 个。自动训练第一关 5 秒内想出：'+a.fast+'/'+a.fast_measured+' 个。</p>'+
       '<div style="overflow-x:auto"><table class="vpLoadTable" style="width:100%;border-collapse:collapse;font-size:13px;text-align:center"><thead><tr><th style="text-align:left">训练</th><th>到期</th><th>当天</th><th>超1–3天</th><th>超4–7天</th><th>超8天+</th><th>未练过</th></tr></thead><tbody>'+loadRows+'</tbody></table></div><p class="vpCoverageNote">到期 = 现在就该复习、已经练过的词，按超过到期日几天分档；“未练过”是在这个训练里还没做过的已学词，不算积压。快速 = 快速练习，自动 = 自动训练。</p>'+
@@ -99,6 +105,7 @@
       goalsBlock+'</div>';
   }
   function refreshGoals(){
+    if(!(root.document&&root.document.querySelector('[data-ability-observation] [data-goals-pending]')))return;
     const p=loadGoals();if(!p)return;
     p.then(()=>{const el=root.document&&root.document.querySelector('[data-ability-observation] [data-goals-pending]');if(el&&goals&&goals.counts){const c=goals.counts.active;el.removeAttribute('data-goals-pending');el.textContent='待强化的词：建议“会用” '+c.use+' 个（其中“要快” '+c.fast+' 个）、“会认” '+c.recognize+' 个、待确认 '+c.unsure+' 个。只是建议，不影响选词和复习。';}});
   }

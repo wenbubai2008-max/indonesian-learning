@@ -39,4 +39,15 @@ const db=[w('n0','2026-10-16'),w('n1','2026-10-15'),w('n2','2026-10-14'),w('n6',
   const ev=Array.from({length:12},(_,i)=>({word:'old'+i,source:'auto',result:i<9?'right':'fail',stage:4,at:iso(2)}));
   const {r}=run({db,ev});assert.equal(r.retention.enough,true);assert.equal(r.retention.rate,75);
 }
+{
+  // 2026-11-16 review phase: words from earlier lessons that came back this week, their recall, accuracy on 7+ day words.
+  const rw=(word,first,occ)=>({word,cn:'cn-'+word,first_seen:first+' 08:00',lesson_occurrences:[first+' 08:00',...occ]});
+  const rdb=[rw('a','2026-09-01',['2026-10-15 08:00','2026-10-16 18:00']),rw('b','2026-09-02',['2026-10-01 08:00']),rw('c','2026-10-14',['2026-10-15 18:00']),rw('d','2026-10-16',[])];
+  const ev=[...Array.from({length:10},(_,i)=>({word:i<8?'a':'b',source:i%2?'quick':'auto',result:i<7?'right':(i%2?'wrong':'fail'),at:iso(i%5)})),{word:'c',source:'quick',result:'right',at:iso(0)}];
+  const {r,writes}=run({db:rdb,ev,store:{indo_lesson_recall_v1:{version:1,words:{a:{day:'2026-10-16',result:'slow',hist:[{day:'2026-10-16',result:'slow'}]},b:{day:'2026-10-16',result:'fail'}}}}});
+  assert.equal(r.reviewed.words,2,'a and c came back this week; b only in an older lesson; d is new');
+  assert.equal(r.reviewed.times,3);assert.equal(r.reviewed.recall.covered,1);assert.equal(r.reviewed.recall.split.slow,1);
+  assert.equal(r.reviewed.retention.n,10,'c is too young; first answer per word per day per trainer');assert.equal(r.reviewed.retention.enough,true);
+  assert.equal(writes.length,0);
+}
 console.log('Weekly memory report tests passed: counts, recall kept apart, retention sample guard, repeated forgetting, 14-day strip, read-only.');

@@ -28,8 +28,27 @@ if(!primaryMasterTotal||primaryTaughtUnique<0||primaryUnlearnedTotal<0||primaryT
 const primaryCoveragePercent=Math.round(primaryTaughtUnique/primaryMasterTotal*1000)/10;
 if(active!==Number(runtime.stats&&runtime.stats.review_pool_total_full||0))throw new Error(`Profile active mismatch: ${active} != runtime review ${runtime.stats&&runtime.stats.review_pool_total_full}`);
 if(total!==Number(runtime.stats&&runtime.stats.daily_taught_unique||0))throw new Error(`Profile taught mismatch: ${total} != runtime taught ${runtime.stats&&runtime.stats.daily_taught_unique}`);
+// 2026-11-16 (user decision): display-only review-phase state for the profile — whether the phase is on today
+// (Jakarta) and how the confirmed goals (data/vocab-goals.json) split the words still needing reinforcement.
+// Nothing here feeds word selection, scheduling or mastery; those keep reading review-phase.js themselves.
+const reviewPhase=require('./review-phase.js');
+const jktToday=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+const phaseDoc=reviewPhase.load(),phaseOn=reviewPhase.on(phaseDoc,jktToday);
+let phaseGoals=null;
+if(phaseOn){
+  const gDoc=fs.existsSync('data/vocab-goals.json')?JSON.parse(fs.readFileSync('data/vocab-goals.json','utf8')):null;
+  const gw={};if(gDoc&&gDoc.words)for(const [w,x] of Object.entries(gDoc.words))gw[key(w)]=x;
+  phaseGoals={use:0,fast:0,recognize:0,none:0};
+  for(const k of taught.keys()){
+    const s=weak[k];if(!s||s.status!=='active'||(Array.isArray(s.reasons)&&s.reasons.includes('training_excluded')))continue;
+    const g=gw[k];
+    if(g&&g.goal==='recognize')phaseGoals.recognize++;
+    else if(g&&(g.goal==='use'||g.goal==='unsure')){phaseGoals.use++;if(g.fast===true)phaseGoals.fast++;}
+    else phaseGoals.none++;
+  }
+}
 const focus=(Array.isArray(runtime.focus_pool)?runtime.focus_pool:[]).slice(0,8).map(x=>({word:String(x[0]||''),score:Number(x[1]||0),signals:Array.isArray(x[2])?x[2]:[],wrong_count:Math.max(0,Number(x[3]||0)),last_wrong:String(x[4]||''),last_review:String(x[5]||''),cn:String(x[6]||'')}));
-const out={version:1,generated_at:new Date().toISOString(),source_updated_at:weakDoc.updated_at||'',taught_total:total,confirmed_mastered:mastered,needs_reinforcement:active,excluded_from_training:excluded,unverified,mastery_percent:total?Math.round(mastered/total*1000)/10:0,primary_master_total:primaryMasterTotal,primary_taught_unique:primaryTaughtUnique,primary_unlearned_total:primaryUnlearnedTotal,primary_coverage_percent:primaryCoveragePercent,primary_eligible_new_total:primaryEligibleNewTotal,secondary_eligible_new_total:secondaryEligibleNewTotal,active_master_pool:activeMasterPool,focus_total:Number(runtime.stats&&runtime.stats.focus_pool_total_full||0),focus_words:focus,definitions:{taught_total:'已正式进入每日学习词库的去重词数',confirmed_mastered:'已正式学习且统一状态为mastered',needs_reinforcement:'已正式学习且统一状态仍为active',excluded_from_training:'主动退出所有训练，不属于真实掌握',unverified:'已正式学习但尚无足够统一状态证据',mastery_percent:'confirmed_mastered / taught_total；仅表示已学词中的确认掌握比例',primary_taught_unique:'977主词库中已经正式进入每日学习的去重词数',primary_unlearned_total:'977主词库中尚未正式进入每日学习的词数',primary_coverage_percent:'primary_taught_unique / primary_master_total',primary_eligible_new_total:'977主词库尚未学习词中，当前同时满足新词资格规则的数量',secondary_eligible_new_total:'第二词库中当前符合新词资格且尚未正式学习的数量',active_master_pool:'当前教学使用的词库；secondary_bipa 表示已切换至第二词库'}};
+const out={version:1,generated_at:new Date().toISOString(),source_updated_at:weakDoc.updated_at||'',taught_total:total,confirmed_mastered:mastered,needs_reinforcement:active,excluded_from_training:excluded,unverified,mastery_percent:total?Math.round(mastered/total*1000)/10:0,primary_master_total:primaryMasterTotal,primary_taught_unique:primaryTaughtUnique,primary_unlearned_total:primaryUnlearnedTotal,primary_coverage_percent:primaryCoveragePercent,primary_eligible_new_total:primaryEligibleNewTotal,secondary_eligible_new_total:secondaryEligibleNewTotal,active_master_pool:activeMasterPool,review_phase:{active:phaseOn,activated_at:phaseOn?String(phaseDoc.activated_at):'',goals:phaseGoals},focus_total:Number(runtime.stats&&runtime.stats.focus_pool_total_full||0),focus_words:focus,definitions:{taught_total:'已正式进入每日学习词库的去重词数',confirmed_mastered:'已正式学习且统一状态为mastered',needs_reinforcement:'已正式学习且统一状态仍为active',excluded_from_training:'主动退出所有训练，不属于真实掌握',unverified:'已正式学习但尚无足够统一状态证据',mastery_percent:'confirmed_mastered / taught_total；仅表示已学词中的确认掌握比例',primary_taught_unique:'977主词库中已经正式进入每日学习的去重词数',primary_unlearned_total:'977主词库中尚未正式进入每日学习的词数',primary_coverage_percent:'primary_taught_unique / primary_master_total',primary_eligible_new_total:'977主词库尚未学习词中，当前同时满足新词资格规则的数量',secondary_eligible_new_total:'第二词库中当前符合新词资格且尚未正式学习的数量',active_master_pool:'当前教学使用的词库；secondary_bipa 表示已切换至第二词库，exhausted 表示新词已学完',review_phase:'复习阶段是否已生效（data/review-phase.json），以及待强化词按已确认目标（data/vocab-goals.json）的分布；只用于显示'}};
 if(mastered+active+excluded+unverified!==total)throw new Error('Profile partition mismatch');
 // The profile is a derived view; a recovery check alone must not invalidate site caches.
 const oldProfilePath='data/vocab-profile.json';
