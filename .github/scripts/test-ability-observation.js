@@ -52,6 +52,12 @@ t('read-only: computing and rendering write nothing; the panel says it does not 
   const e=env({store:states});e.api.compute(NOW);const h=e.api.html(NOW);
   assert.equal(e.writes.length,0);assert.match(h,/观察中，不影响学习/);assert.match(h,/可以重叠，不相加/);assert.match(h,/数据来源/);
 });
+t('review phase on: confirmed goals shown as in force, no observation wording, nothing written',()=>{
+  const e=env({store:states});const h=e.api.html(NOW,{review_phase:{active:true,activated_at:'2026-11-16',goals:{use:10,fast:3,recognize:4,none:2}}});
+  assert.equal(e.writes.length,0);assert.doesNotMatch(h,/观察中|只是建议|加载中/);assert.match(h,/复习目标已生效/);
+  assert.match(h,/“会用” 10 个（其中“要快” 3 个/);assert.match(h,/“会认” 4 个（不再进核心复习卡/);assert.match(h,/还没定目标 2 个/);
+  const off=env({store:states}).api.html(NOW,{review_phase:{active:false,goals:null}});assert.match(off,/观察中，不影响学习/);
+});
 t('goal suggestions: review overrides rules; heavy errors keep a word out of recognize-only; fast only on use',()=>{
   const {build}=require('./suggest-vocab-goals.js');
   const src={taught:[{word:'jerapah'},{word:'seraya'},{word:'ternyata'},{word:'namun'}],rank:new Map(),primary:new Map([['namun',{stage:'C 扩展',topic:'连接词'}]]),secondary:new Map(),oral:new Map(),

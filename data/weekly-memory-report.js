@@ -38,6 +38,20 @@
       const age=diff(it.first,d);if(age<7||age>30)return;const id=e.source+'|'+k+'|'+d;if(seen.has(id))return;seen.add(id);
       if((CORRECT[e.source]||[]).includes(e.result)){n++;right++;}else if((FAIL[e.source]||[]).includes(e.result)||e.result==='hinted')n++;});
     const retention={n,right,enough:n>=MIN_SAMPLE,rate:n?Math.round(right*100/n):null,min:MIN_SAMPLE};
+    // 2026-11-16 (user decision, review phase): words taught in earlier lessons that came back in this week's lessons
+    // (DAILY_VOCAB_DB lesson_occurrences after first_seen), the lesson-end recall on them, and accuracy on every word
+    // taught at least 7 days before the answer (no 30-day cap, because no new words arrive any more).
+    const firstAt=new Map();(root.DAILY_VOCAB_DB||[]).forEach(x=>{const k=norm(x&&x.word);if(k&&!firstAt.has(k))firstAt.set(k,{f:String(x.first_seen||'').slice(0,16),occ:Array.isArray(x.lesson_occurrences)?x.lesson_occurrences:[]});});
+    const reviewedKeys=[];let reviewTimes=0;
+    firstAt.forEach((x,k)=>{if(!items.has(k))return;const hits=x.occ.map(String).filter(o=>o>x.f&&o.slice(0,10)>=weekStart&&o.slice(0,10)<=today);if(hits.length){reviewedKeys.push(k);reviewTimes+=hits.length;}});
+    const rSplit={fast:0,slow:0,fail:0};let rRecalled=0;
+    reviewedKeys.forEach(k=>{const r=recall[k];const h=r&&(Array.isArray(r.hist)&&r.hist.length?r.hist:[r]).filter(x=>x&&x.day&&x.day>=weekStart)[0];if(h&&rSplit[h.result]!=null){rRecalled++;rSplit[h.result]++;}});
+    const seenAll=new Set();let an=0,aright=0;
+    ev.slice().sort((a,b)=>ts(a.at)-ts(b.at)).forEach(e=>{const k=norm(e.word),it=items.get(k);if(!it)return;const d=jkt(ts(e.at));if(d<weekStart||d>today)return;
+      if(diff(it.first,d)<7)return;const id=e.source+'|'+k+'|'+d;if(seenAll.has(id))return;seenAll.add(id);
+      if((CORRECT[e.source]||[]).includes(e.result)){an++;aright++;}else if((FAIL[e.source]||[]).includes(e.result)||e.result==='hinted')an++;});
+    const reviewed={words:reviewedKeys.length,times:reviewTimes,recall:{covered:rRecalled,split:rSplit},
+      retention:{n:an,right:aright,enough:an>=MIN_SAMPLE,rate:an?Math.round(aright*100/an):null,min:MIN_SAMPLE}};
     // 6. Repeatedly forgotten (last 14 days): failures on at least 2 different days, formal or self-report.
     const fails=new Map();const addFail=(k,d,src)=>{if(!items.has(k)||d<d14||d>today)return;const s=fails.get(k)||new Set();s.add(d);fails.set(k,s);};
     ev.forEach(e=>{if((FAIL[e.source]||[]).includes(e.result))addFail(norm(e.word),jkt(ts(e.at)),e.source);});
@@ -48,7 +62,7 @@
     const idx=Object.fromEntries(days.map((x,i)=>[x.day,i]));
     ev.forEach(e=>{const i=idx[jkt(ts(e.at))];if(i!=null)days[i].formal++;});
     Object.keys(recall).forEach(k=>{const r=recall[k];(Array.isArray(r&&r.hist)?r.hist:[r]).forEach(h=>{const i=h&&idx[h.day];if(i!=null)days[i].recall++;});});
-    return {today,weekStart,newThisWeek,mastered,recentTotal:recent.length,recall:{covered:recalled,split},verified,retention,forgotten,days,
+    return {today,weekStart,newThisWeek,mastered,recentTotal:recent.length,recall:{covered:recalled,split},verified,retention,reviewed,forgotten,days,
       activeDays:days.filter(x=>x.formal>0).length,formalTotal:days.reduce((a,x)=>a+x.formal,0)};
   }
   root.WeeklyMemoryReport={compute,MIN_SAMPLE};

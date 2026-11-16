@@ -707,3 +707,11 @@
 - **原因**：§51 已把 `pending-secondary` 从 `data/vocab-controller-20260917.js` 的选项源移除，但动态加载器 `data/vocab-memory-feedback.js` 仍引用旧 URL 版本号 `v=20261104-unknown-course1`；浏览器可继续使用缓存里的旧控制脚本，因此下拉框仍显示“第二词库·待学习（0）”。
 - **修复**：动态加载器引用更新为控制脚本 Git blob SHA 的前 12 位；首页同步更新加载器自身的 URL 缓存版本。既不删第二库数据也不改学习逻辑。
 - **防再发**：`vocab-ui-regression-guard.js` 使用 Node `crypto` 计算控制脚本的 Git blob SHA 并验证加载器使用匹配版本；以后只改控制器、忘记更新加载地址会在回归检查中失败。首页加载器 URL 继续由现有 `build-learning-runtime.yml` 按脚本 SHA-256 自动更新。
+
+## 53. 2026-11-16 个人画像改为复习阶段口径（用户决定，只改显示）
+
+- **原因**：新词已全部学完（runtime `active_master_pool=exhausted`），复习阶段 2026-11-16 起生效，画像仍按“学新词”显示：“主词库当前待学习 0”、本周“新学 / 近 7 天新词已正式验证”、“新词数量先不自动调整”、“观察中，不影响学习 / 只是建议”都已不准确（11-14 确认的目标已在影响选词）。
+- **快照**：`build-vocab-profile.js` 在 `data/vocab-profile.json` 增加 `review_phase {active, activated_at, goals}`：`active` = `review-phase.js` 的 `on()`（雅加达当天）；`goals` 只在生效时计算，是待强化词（active、未退出训练）按 `data/vocab-goals.json` 的分布 `use / fast / recognize / none`（`unsure` 按会用算），`use+recognize+none = needs_reinforcement`。只用于显示，不进入选词、排程、掌握判定。
+- **显示**：`active_master_pool=exhausted` 时“当前待学习”显示“已学完 · 新词（现在是复习阶段）”。复习阶段生效时「本周」改为：本周课程复习到的词（`DAILY_VOCAB_DB.lesson_occurrences` 中晚于 `first_seen` 的本周出现）、本周新增确认掌握、待强化近 7 天变化、学过 7 天以上的词的正式测试正确率；课末回想按本周复习到的词统计；反复遗忘和 14 天练习不变。结论句同步；不再显示“新词数量先不自动调整”。能力面板标题去掉“观察中”，折叠标题改为“能力指标与复习目标”，目标一行改为“复习目标已生效”的确认数量，不再加载建议文件。
+- **不变**：复习阶段关闭时一切照旧（原测试保留）；首页三层诊断卡、选词、复习规则、掌握判定、存储与同步。`weekly-memory-report.js` 原有字段不变，只新增 `reviewed`。
+- **测试/守卫**：`test-weekly-memory-report.js`（复习到的词、次数、回想、7 天以上正确率）、`test-ability-observation.js`（生效时的目标文字、关闭时保持观察口径）、`vocab-ui-regression-guard.js`（exhausted 显示、快照目标总数 = 待强化）、`regression-guard.js` §53。

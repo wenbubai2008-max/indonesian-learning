@@ -124,6 +124,8 @@ try{
       ok(first.label==='主词库当前待学习'&&first.count===9,'profile primary display uses primary remainder');
       ok(second.label==='第二词库当前待学习'&&second.count===167,'profile after handoff uses secondary remainder');
       ok(exhausted.count===0,'secondary bank exhaustion still displays accurate zero');
+      const done=pending({active_master_pool:'exhausted',primary_eligible_new_total:0,secondary_eligible_new_total:0});
+      ok(done.count==='已学完'&&/复习阶段/.test(done.label),'both banks used up: profile says the new words are finished (2026-11-16)');
     }catch(e){ok(false,'profile active-bank display contract: '+e.message)}
   }
   const profile=JSON.parse(read('data/vocab-profile.json')),runtime=JSON.parse(read('data/learning-runtime.json'));
@@ -131,9 +133,11 @@ try{
     profile.primary_eligible_new_total===runtime.stats.primary_new_pool_total_full &&
     profile.secondary_eligible_new_total===runtime.stats.secondary_new_pool_total_full,
     'built profile must copy active pool and both complete eligible new-word counts directly from runtime');
+  ok(profile.review_phase&&typeof profile.review_phase.active==='boolean'&&(!profile.review_phase.active||(profile.review_phase.goals&&profile.review_phase.goals.use+profile.review_phase.goals.recognize+profile.review_phase.goals.none===profile.needs_reinforcement)),
+    'built profile review_phase goals split exactly the words needing reinforcement');
   // 2026-10-16 (user decision): seven tabs merged into 今天 / 本周 / 查词; the old names still open the tab that holds their content.
   ok(profileUi.includes("page.id='vocabProfileDetail'")&&profileUi.includes("[['today','今天'],['week','本周'],['words','查词']]")&&/TAB_ALIAS=\{today:'today',overview:'week',trend:'week',weekly:'week',advice:'week',week:'week',words:'words',weak:'words'\}/.test(profileUi),'profile detail page has the three tabs and maps old tab names');
-  ok(profileUi.includes('function weekHTML(')&&profileUi.includes('本机验证的主动词汇')&&profileUi.includes('本机稳定识别词汇')&&profileUi.includes('trendHTML(data)')&&profileUi.includes('weeklyHTML()'),'本周 keeps the long-term ability numbers, weekly report and trend');
+  ok(profileUi.includes('function weekHTML(')&&profileUi.includes('本机验证的主动词汇')&&profileUi.includes('本机稳定识别词汇')&&profileUi.includes('trendHTML(data)')&&profileUi.includes('weeklyHTML(data)'),'本周 keeps the long-term ability numbers, weekly report and trend');
   ok(profileUi.includes("[['weak','弱词'],['due','到期'],['recent','最近练过']]"),'查词 offers weak / due / recent filters');
   ok(profileUi.includes('data-vp-action="automation"')&&profileUi.includes('data-vp-action="quick"'),'weak-word detail keeps direct training actions');
   ok(!externalScripts.some(x=>x.includes('library-switcher.js')),'legacy library-switcher must not be loaded by index.html');
