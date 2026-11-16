@@ -718,13 +718,15 @@ try {
     const vl=read('.github/scripts/validate-lesson-candidate.js'),hv=read('data/history-v2.js'),rp=JSON.parse(read('data/review-phase.json'));
     okNew(vl.includes('"PHASE_AM_STORY_EPISODE"')&&vl.includes('"PHASE_AM_STORY_SERIES"')&&vl.includes('const rd=SP?SP.reading:'),'validator checks the weekly story episode, series and episode length');
     okNew(rp.story&&rp.story.from==='2026-11-17'&&Array.isArray(rp.story.reading),'review phase carries the weekly story rule from 2026-11-17');
-    okNew(/function storyOf\(x\)/.test(hv)&&hv.includes("if(x.reading&&!st)h+=sec(")&&hv.includes('const sentSay=')&&hv.includes('data-vc-known=')&&hv.includes("wp.markMastered(w,'lesson_known')"),'page: story first only for story lessons, 🔊 on every 高频句子 line, 会了 on review-cycle cards');
+    okNew(/function storyOf\(x\)/.test(hv)&&hv.includes("if(x.reading&&!st)h+=sec(")&&hv.includes('const sentSay=')&&hv.includes('data-vc-known=')&&hv.includes("wp.markMastered(w,'lesson_known')")&&hv.includes('VC_KNOWN=new Set((x.phase?[]:Array.isArray(x.cycle_vocab)?x.cycle_vocab:[]).map(lfNorm));'),'page: story first, sentence audio, historical 会了 retained but hidden in review-phase cards');
   }
 
   // 2026-11-16 (REGRESSION-GUARD §51): recall-first review lessons (display only), own localStorage key.
   {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;const hv=read('data/history-v2.js');
-    okNew(hv.includes("RC_STORE='indo_recall_first_v1'")&&!/RC_STORE='indo_lesson_recall_v1'/.test(hv)&&hv.includes('vcRecall')&&hv.includes('data-rc-rate')&&hv.includes('wp.recordLessonWrong(w,item)')&&hv.includes("if(!x||!x.phase||!Array.isArray(x.vocab))return [];"),'review lessons: recall-first cards and folded reading only with x.phase, own storage key, lesson-error signal once per word');
+    const peekBranch=hv.split("const pk=T.closest('[data-rc-peek]')")[1]?.split("const tg=T.closest")[0]||'';
+    const rateBranch=hv.split("const rate=T.closest('[data-rc-rate],[data-rc-redo]')")[1]?.split("const pk=T.closest")[0]||'';
+    okNew(hv.includes("RC_STORE='indo_recall_first_v1'")&&!/RC_STORE='indo_lesson_recall_v1'/.test(hv)&&hv.includes('vcRecall')&&hv.includes('data-rc-rate')&&hv.includes('wp.recordLessonWrong(w,item)')&&hv.includes("if(!x||!x.phase||!Array.isArray(x.vocab))return [];")&&peekBranch.includes('st.p.push(k)')&&!/rcSignal\s*\(|recordLessonWrong\s*\(/.test(peekBranch)&&rateBranch.includes("if(r==='bad')rcSignal("),'review lessons: peeking only stores local observation, explicit 忘了 alone records lesson error');
   }
 
   // 2026-10-18 (REGRESSION-GUARD §33): 带学模式 — a view over the lesson's own content; own progress key only.
