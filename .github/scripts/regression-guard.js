@@ -721,6 +721,12 @@ try {
     okNew(/function storyOf\(x\)/.test(hv)&&hv.includes("if(x.reading&&!st)h+=sec(")&&hv.includes('const sentSay=')&&hv.includes('data-vc-known=')&&hv.includes("wp.markMastered(w,'lesson_known')"),'page: story first only for story lessons, 🔊 on every 高频句子 line, 会了 on review-cycle cards');
   }
 
+  // 2026-11-16 (REGRESSION-GUARD §51): recall-first review lessons (display only), own localStorage key.
+  {
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;const hv=read('data/history-v2.js');
+    okNew(hv.includes("RC_STORE='indo_recall_first_v1'")&&!/RC_STORE='indo_lesson_recall_v1'/.test(hv)&&hv.includes('vcRecall')&&hv.includes('data-rc-rate')&&hv.includes('wp.recordLessonWrong(w,item)')&&hv.includes("if(!x||!x.phase||!Array.isArray(x.vocab))return [];"),'review lessons: recall-first cards and folded reading only with x.phase, own storage key, lesson-error signal once per word');
+  }
+
   // 2026-10-18 (REGRESSION-GUARD §33): 带学模式 — a view over the lesson's own content; own progress key only.
   {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
