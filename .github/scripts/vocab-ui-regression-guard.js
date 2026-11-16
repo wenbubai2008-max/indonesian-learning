@@ -189,6 +189,11 @@ try{
     ok(meta&&meta.sha256===hash,'manifest hash mismatch for '+lv);
   }
 
+  // A controller change must bump its URL in the lazy loader; otherwise browser cache can
+  // keep an obsolete selector despite a correctly merged UI commit.
+  const controllerBlob=crypto.createHash('sha1').update('blob '+Buffer.byteLength(controller)+'\0'+controller).digest('hex').slice(0,12);
+  ok(loader.includes('data/vocab-controller-20260917.js?v='+controllerBlob),
+    'vocabulary controller URL version must match the controller Git blob');
   ok(!controller.includes("['top1000','Top1000'"),'retired Top1000 option must not reappear');
   ok(!controller.includes("['pending-primary','主词库·待学习',libraryCount('pending-primary')]")&&
     !controller.includes("['pending-secondary','第二词库·待学习',libraryCount('pending-secondary')]")&&
