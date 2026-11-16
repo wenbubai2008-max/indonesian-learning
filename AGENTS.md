@@ -28,7 +28,7 @@ Then follow this mandatory sequence:
 - Do not change historical PM display semantics when changing the current schedule. PM switched from 19:00 to 18:00 starting `2026-09-16`; older history remains 19:00.
 - Do not trust a generated lesson merely because it says `write_status="lesson_complete"`; validate the actual question/review schema before treating it as complete.
 - Do not re-enable the disabled 20:00 fallback unless the user explicitly asks.
-- Do not re-enable V4 backup-lesson generation (create watcher, failed-PR dispatch, `LESSON_V4_FALLBACK`) unless the user explicitly asks. It was paused on 2026-10-03; Claude is the only automatic lesson generator, and a failed original release must be reported, never replaced by a second lesson.
+- V4 automatic backup-lesson generation has been permanently removed (2026-11-16). Do not reintroduce a create watcher, failed-PR backup dispatch, `LESSON_V4_FALLBACK` switch or another lesson generator. A failed original release must be reported and its saved original can be resumed, never replaced by a second lesson.
 
 Scheduled-task behavior (08:00 / 12:00 / 18:00) is defined by the runbooks in `docs/tasks/`; the task prompts only bootstrap. Change task behavior there through a PR, never by editing the scheduled-task prompts.
 
