@@ -701,3 +701,9 @@
 - **旧选择兼容**：本机 `selected_vocab_library` 若保存了 `pending-primary` 或 `pending-secondary`，下一次进入词汇学习时自动回到可见的 `master`，避免出现空白选择器和“已清零”页面。
 - **严格范围**：仅隐藏空词库的 UI 入口，不删除第二词库底层数据 `data/master-vocab-secondary.js`、`data/pending-vocab.json`，不更改 weakness、mastered、daily-vocab、977 主库、BIPA 词库、课程新词与复习池、自动任务及历史。
 - **回归**：`vocab-ui-regression-guard.js` 必须断言两项待学习入口均不在下拉框，旧选择迁移到主学习词库；§47 中“第二词库仍可选”的旧决定由本节取代。
+
+## 52. 2026-11-16 第二词库入口的浏览器缓存修复
+
+- **原因**：§51 已把 `pending-secondary` 从 `data/vocab-controller-20260917.js` 的选项源移除，但动态加载器 `data/vocab-memory-feedback.js` 仍引用旧 URL 版本号 `v=20261104-unknown-course1`；浏览器可继续使用缓存里的旧控制脚本，因此下拉框仍显示“第二词库·待学习（0）”。
+- **修复**：动态加载器引用更新为控制脚本 Git blob SHA 的前 12 位；首页同步更新加载器自身的 URL 缓存版本。既不删第二库数据也不改学习逻辑。
+- **防再发**：`vocab-ui-regression-guard.js` 使用 Node `crypto` 计算控制脚本的 Git blob SHA 并验证加载器使用匹配版本；以后只改控制器、忘记更新加载地址会在回归检查中失败。首页加载器 URL 继续由现有 `build-learning-runtime.yml` 按脚本 SHA-256 自动更新。
