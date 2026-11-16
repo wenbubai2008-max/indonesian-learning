@@ -10106,27 +10106,29 @@ window.DAILY_VOCAB_DB = [
     "en": "anyway; basically; the main thing is",
     "root": "pokok",
     "root_cn": "要点；主要部分",
-    "example": "Pokoknya, semua dokumen harus selesai hari ini.",
-    "example_cn": "总之，所有文件今天必须完成。",
+    "example": "Mau naik ojek atau taksi, terserah kamu. Pokoknya jam tujuh kamu harus udah sampai di stasiun.",
+    "example_cn": "坐摩的还是打车随你。反正七点你得到车站。（udah = sudah）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-10-02 18:00",
+    "last_seen": "2026-11-16 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-13",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
-      "2026-10-02 18:00"
+      "2026-10-02 18:00",
+      "2026-11-16 18:00"
     ]
   },
   {
@@ -12385,16 +12387,16 @@ window.DAILY_VOCAB_DB = [
     "en": "emphasize; affirm; clarify",
     "root": "tegas",
     "root_cn": "明确；坚定",
-    "example": "Ibu menegaskan bahwa kita harus berangkat jam enam.",
-    "example_cn": "妈妈明确说了我们必须六点出发。",
+    "example": "Dosen menegaskan sekali lagi bahwa tugas yang dikirim lewat pukul 24.00 tidak akan dinilai, walaupun hanya terlambat beberapa detik.",
+    "example_cn": "老师再次明确表示，晚上 12 点以后交的作业不会给分，哪怕只晚了几秒。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-19 18:00",
-    "last_seen": "2026-10-21 08:00",
+    "last_seen": "2026-11-16 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -12405,7 +12407,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28",
       "2026-09-30",
       "2026-10-05",
-      "2026-10-21"
+      "2026-10-21",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
       "2026-09-19 18:00",
@@ -12413,7 +12416,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28 08:00",
       "2026-09-30 18:00",
       "2026-10-05 18:00",
-      "2026-10-21 08:00"
+      "2026-10-21 08:00",
+      "2026-11-16 18:00"
     ]
   },
   {
@@ -13112,24 +13116,28 @@ window.DAILY_VOCAB_DB = [
     "en": "useless; in vain",
     "root": "percuma",
     "root_cn": "白费；没用",
-    "example": "Percuma marah kalau masalahnya tidak kita selesaikan.",
-    "example_cn": "如果问题不解决，光生气也没用。",
+    "example": "Percuma kamu membela dia di depan atasan kalau dia sendiri tidak mau mengakui kesalahannya.",
+    "example_cn": "如果他自己都不肯认错，你在上司面前替他说话也是白费。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-21 08:00",
-    "last_seen": "2026-09-21 08:00",
+    "last_seen": "2026-11-16 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-21"
+      "2026-09-21",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
-      "2026-09-21 08:00"
+      "2026-09-21 08:00",
+      "2026-11-16 18:00"
     ]
   },
   {
@@ -14558,23 +14566,27 @@ window.DAILY_VOCAB_DB = [
     "en": "since",
     "root": "sejak",
     "root_cn": "自从",
-    "example": "Saya tinggal di Indonesia sejak empat tahun lalu.",
-    "example_cn": "我从四年前开始住在印度尼西亚。",
+    "example": "Sejak jadi korban tabrak lari bulan lalu, Pak Budi lebih memilih naik bus ke kantor.",
+    "example_cn": "自从上个月被车撞、肇事者逃逸以后，布迪先生宁愿坐公交上班。（tabrak lari = 撞人后逃逸）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-09-25 08:00",
+    "last_seen": "2026-11-16 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-25"
+      "2026-09-25",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
-      "2026-09-25 08:00"
+      "2026-09-25 08:00",
+      "2026-11-16 18:00"
     ]
   },
   {
@@ -15565,24 +15577,28 @@ window.DAILY_VOCAB_DB = [
     "en": "upload",
     "root": "unggah",
     "root_cn": "上传",
-    "example": "Tolong unggah file ini ke sistem.",
-    "example_cn": "请把这个文件上传到系统。",
+    "example": "Sebelum jam lima, unggah dulu file presentasinya ke grup, ya, biar yang lain bisa unduh dan baca duluan.",
+    "example_cn": "五点前先把演示文件传到群里吧，好让其他人能先下载看看。（biar = supaya）",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-11-16 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-28"
+      "2026-09-28",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-11-16 18:00"
     ]
   },
   {
@@ -18788,23 +18804,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to upload; to post online",
     "root": "unggah",
     "root_cn": "上传",
-    "example": "Aku baru mengunggah foto liburan ke Instagram.",
-    "example_cn": "我刚把度假照片上传到 Instagram 了。",
+    "example": "Karyawan baru itu mengunggah foto ruang rapat ke media sosial tanpa memperhatikan papan tulis di belakangnya, yang berisi rencana proyek rahasia.",
+    "example_cn": "那位新员工把会议室的照片发到了社交媒体上，却没注意到后面的白板上写着保密的项目计划。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-06 08:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-11-16 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-11-16 18:00"
     ]
   },
   {
@@ -24341,26 +24361,28 @@ window.DAILY_VOCAB_DB = [
     "en": "valid until",
     "root": "laku",
     "root_cn": "有效；畅销",
-    "example": "Voucher bioskop dari kantor ini berlaku sampai hari Minggu, karena itu kami harus menonton akhir pekan ini.",
-    "example_cn": "公司发的这张电影券有效期到周日，所以我们这个周末就得去看。",
+    "example": "Tiketnya berlaku sampai jam sembilan malam. Kamu nggak perlu mencetak tiketnya, cukup tunjukin kode QR di HP.",
+    "example_cn": "这张票晚上九点前有效。你不用打印票，在手机上出示二维码就行。（nggak = tidak，tunjukin = tunjukkan）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-22 08:00",
-    "last_seen": "2026-10-22 18:00",
+    "last_seen": "2026-11-16 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-10-22"
+      "2026-10-22",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
       "2026-10-22 08:00",
-      "2026-10-22 18:00"
+      "2026-10-22 18:00",
+      "2026-11-16 18:00"
     ]
   },
   {

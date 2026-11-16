@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-16",
-    "session": "pm",
-    "time": "18:00",
-    "day": 87
+    "date": "2026-11-17",
+    "session": "am",
+    "time": "08:00",
+    "day": 88
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-16T03:55:59.190Z",
-    "lesson_watermark": "2026-11-16 08:00",
+    "runtime_generated_at": "2026-11-16T10:51:10.458Z",
+    "lesson_watermark": "2026-11-16 18:00",
     "index_updated": "2026-11-16",
-    "runtime_hash": "6f61f645fce20d8b507ced676884b65c85760f57b7ecbde70c07589e563e9c11",
-    "index_hash": "ba63f3fc9e488fd9ac6a7260a9ee89f3cd6785fef0efb83d4d689a20770f0043",
+    "runtime_hash": "591709461332a77fcfbd76f44331303af9b9e66d4bc13364cb79a60e1f0a04a9",
+    "index_hash": "9c6290b9b08f8ede8b0d76066811b98efab226f0a5deb40bc12a7d4da256214e",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -962,16 +962,6 @@
         "领导；带领"
       ],
       [
-        "percuma",
-        2,
-        0,
-        "",
-        "2026-11-14T08:24:53.856Z",
-        "白费；没用",
-        "percuma",
-        "白费；没用"
-      ],
-      [
         "ukuran",
         3,
         0,
@@ -1122,16 +1112,6 @@
         "方法"
       ],
       [
-        "sejak",
-        2,
-        0,
-        "",
-        "2026-11-15T03:36:37.546Z",
-        "自从；从……起",
-        "sejak",
-        "自从"
-      ],
-      [
         "wilayah",
         2,
         0,
@@ -1280,16 +1260,6 @@
         "傲慢的；自大的",
         "sombong",
         "傲慢"
-      ],
-      [
-        "unggah",
-        2,
-        0,
-        "",
-        "2026-10-24T02:33:38.053Z",
-        "上传",
-        "unggah",
-        "上传"
       ],
       [
         "wangi",
@@ -1740,16 +1710,6 @@
         "距离；间隔",
         "jarak",
         "距离；间隔"
-      ],
-      [
-        "pokoknya",
-        2,
-        1,
-        "2026-09-30T14:05:45.976Z",
-        "2026-11-13T02:31:36.934Z",
-        "总之；反正；不管怎样",
-        "pokok",
-        "要点；主要部分"
       ],
       [
         "mencetak",
@@ -2222,16 +2182,6 @@
         "爱打听（口语）"
       ],
       [
-        "mengunggah",
-        2,
-        0,
-        "",
-        "2026-10-23T23:29:47.064Z",
-        "上传；发布（到网上）",
-        "unggah",
-        "上传"
-      ],
-      [
         "nyesel",
         2,
         1,
@@ -2252,34 +2202,54 @@
         "久；长"
       ],
       [
-        "seharusnya",
-        3,
+        "setia",
+        2,
         0,
         "",
-        "2026-10-19T05:53:09.301Z",
-        "本应该、按理说",
-        "harus",
-        "必须"
+        "2026-10-23T23:37:03.457Z",
+        "忠诚的；专一的",
+        "setia",
+        "忠诚"
       ],
       [
-        "tingkat",
-        3,
+        "kerugian",
+        2,
         0,
         "",
-        "2026-10-26T07:54:51.240Z",
-        "等级、层次",
-        "tingkat",
-        "等级；层"
+        "2026-10-21T01:45:16.672Z",
+        "损失；亏损（名词）",
+        "rugi",
+        "亏；吃亏；不划算"
       ],
       [
-        "tetap",
+        "bahas",
         3,
         0,
         "",
-        "2026-11-14T08:24:24.484Z",
-        "仍然；还是；保持",
-        "tetap",
-        "固定；不变"
+        "2026-10-19T13:14:19.968Z",
+        "讨论；剖析（口语常直接用词根，正式用 membahas）",
+        "bahas",
+        "讨论；剖析"
+      ],
+      [
+        "catat",
+        3,
+        0,
+        "",
+        "2026-10-19T13:15:41.996Z",
+        "记下；记录（口语常直接用词根，正式用 mencatat）",
+        "catat",
+        "记下；记录"
+      ],
+      [
+        "keteteran",
+        3,
+        1,
+        "2026-10-06T10:00:19.353Z",
+        "2026-10-19T05:48:43.806Z",
+        "忙不过来；跟不上；应付不过来",
+        "keteteran",
+        "忙不过来；跟不上"
       ]
     ],
     "focus": [
@@ -2545,47 +2515,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-09",
-      "session": "am",
-      "review_core": [
-        "berangsur",
-        "menyebar",
-        "bercerai",
-        "kehilangan",
-        "langit"
-      ],
-      "new_words": [
-        "label",
-        "tercantum",
-        "layak jual",
-        "keterangan",
-        "lemari pendingin",
-        "penyimpanan",
-        "struk",
-        "brosur",
-        "dipatok",
-        "tawar-menawar"
-      ]
-    },
-    {
-      "date": "2026-11-09",
-      "session": "pm",
-      "review_core": [
-        "dimaksudkan",
-        "ngotot",
-        "pemulihan",
-        "lemot",
-        "luas"
-      ],
-      "new_words": [
-        "berkendara",
-        "pertigaan",
-        "menancap",
-        "menambalnya",
-        "kerusakan"
-      ]
-    },
-    {
       "date": "2026-11-10",
       "session": "am",
       "review_core": [
@@ -2840,77 +2769,32 @@
         "nyampe"
       ],
       "new_words": []
+    },
+    {
+      "date": "2026-11-16",
+      "session": "pm",
+      "review_core": [
+        "menegaskan",
+        "berlaku sampai",
+        "unggah",
+        "mengunggah",
+        "percuma"
+      ],
+      "new_words": []
     }
   ],
   "previous_pm": {
-    "date": "2026-11-15",
-    "new_words": [
-      "catur",
-      "gulat",
-      "panahan",
-      "suci"
-    ],
-    "review_core": [
-      "kepepet",
-      "penanganan",
-      "instan",
-      "karakter"
-    ]
-  },
-  "same_day_am": {
     "date": "2026-11-16",
-    "vocab": [
-      [
-        "seharusnya",
-        "本应该；按理说",
-        "should (have); supposedly",
-        "harus",
-        "必须"
-      ],
-      [
-        "tingkat",
-        "等级；层次；程度",
-        "level; degree",
-        "tingkat",
-        "等级；层"
-      ],
-      [
-        "tetap",
-        "仍然；照样；保持不变",
-        "still; remain (the same)",
-        "tetap",
-        "固定；不变"
-      ],
-      [
-        "perpaduan",
-        "融合；结合；搭配",
-        "blend; combination",
-        "padu",
-        "协调；融合"
-      ],
-      [
-        "dimaksudkan",
-        "意在；旨在；（被）打算用来……",
-        "to be intended (for)",
-        "maksud",
-        "意思；目的"
-      ],
-      [
-        "penanganan",
-        "处理；应对（的过程）",
-        "handling",
-        "tangan",
-        "手"
-      ]
-    ],
-    "review_vocab": [
-      "benerin",
-      "ketiban",
-      "misalnya",
-      "nanya",
-      "nyampe"
+    "new_words": [],
+    "review_core": [
+      "menegaskan",
+      "berlaku sampai",
+      "unggah",
+      "mengunggah",
+      "percuma"
     ]
   },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
