@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-16T10:51:10.458Z",
+    "runtime_generated_at": "2026-11-16T14:01:04.375Z",
     "lesson_watermark": "2026-11-16 18:00",
     "index_updated": "2026-11-16",
-    "runtime_hash": "591709461332a77fcfbd76f44331303af9b9e66d4bc13364cb79a60e1f0a04a9",
+    "runtime_hash": "83f68c005064b7b95147110bc0eb1b76712262eb8065b656230a48f1808caa3a",
     "index_hash": "9c6290b9b08f8ede8b0d76066811b98efab226f0a5deb40bc12a7d4da256214e",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
@@ -52,6 +52,16 @@
     "new_fuzzy": [],
     "review": [
       [
+        "berlaku sampai",
+        1,
+        1,
+        "2026-11-16T13:36:25.155Z",
+        "2026-11-16T13:36:25.155Z",
+        "有效期至",
+        "laku",
+        "有效；畅销"
+      ],
+      [
         "menunjukkan",
         1,
         6,
@@ -70,6 +80,16 @@
         "意在；旨在；（被）打算用来……",
         "maksud",
         "意思；目的"
+      ],
+      [
+        "menegaskan",
+        1,
+        2,
+        "2026-11-16T13:26:43.485Z",
+        "2026-11-16T13:26:43.485Z",
+        "强调；明确说明；确认",
+        "tegas",
+        "明确；坚定"
       ],
       [
         "nggak kepegang",
@@ -100,16 +120,6 @@
         "被逼到很紧；没什么余地",
         "pepet",
         "逼近；紧逼"
-      ],
-      [
-        "berlaku sampai",
-        2,
-        0,
-        "",
-        "2026-11-02T08:32:20.878Z",
-        "有效期至",
-        "laku",
-        "有效；畅销"
       ],
       [
         "penanganan",
@@ -260,16 +270,6 @@
         "逃跑；溜走",
         "kabur",
         "逃跑；溜走"
-      ],
-      [
-        "menegaskan",
-        2,
-        1,
-        "2026-09-25T14:59:12.780Z",
-        "2026-11-08T07:34:02.564Z",
-        "强调；明确说明；确认",
-        "tegas",
-        "明确；坚定"
       ],
       [
         "melawan",
@@ -436,7 +436,7 @@
         1,
         2,
         "2026-11-15T11:18:12.999Z",
-        "2026-11-15T11:18:12.999Z",
+        "2026-11-16T13:39:13.166Z",
         "突然摊上；意外落到自己头上",
         "tiban",
         "落到；压到"
@@ -530,6 +530,16 @@
         "只是；仅仅；不过是",
         "kadar",
         "程度；分量"
+      ],
+      [
+        "unggah",
+        1,
+        1,
+        "2026-11-16T13:35:40.237Z",
+        "2026-11-16T13:35:40.237Z",
+        "上传",
+        "unggah",
+        "上传"
       ],
       [
         "benerin",
@@ -640,16 +650,6 @@
         "恢复；康复期",
         "pulih",
         "恢复（到原来的状态）"
-      ],
-      [
-        "berangsur",
-        1,
-        1,
-        "2026-11-08T15:32:53.743Z",
-        "2026-11-11T03:23:27.929Z",
-        "逐渐（好转或变化）",
-        "angsur",
-        "一点一点地推进"
       ],
       [
         "nyangka",
@@ -2254,6 +2254,16 @@
     ],
     "focus": [
       [
+        "berlaku sampai",
+        136,
+        [
+          "automation_fail",
+          "lesson_wrong",
+          "dont",
+          "fuzzy"
+        ]
+      ],
+      [
         "menunjukkan",
         126,
         [
@@ -2270,6 +2280,15 @@
           "lesson_wrong",
           "dont",
           "fuzzy"
+        ]
+      ],
+      [
+        "menegaskan",
+        118,
+        [
+          "automation_fail",
+          "lesson_wrong",
+          "dont"
         ]
       ],
       [
@@ -2297,15 +2316,6 @@
           "quick_wrong",
           "lesson_wrong",
           "dont"
-        ]
-      ],
-      [
-        "berlaku sampai",
-        98,
-        [
-          "automation_fail",
-          "dont",
-          "fuzzy"
         ]
       ],
       [
@@ -2431,14 +2441,6 @@
       ],
       [
         "kabur",
-        80,
-        [
-          "automation_fail",
-          "dont"
-        ]
-      ],
-      [
-        "menegaskan",
         80,
         [
           "automation_fail",

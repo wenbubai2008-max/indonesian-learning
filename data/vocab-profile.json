@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-16T04:13:24.774Z",
-  "source_updated_at": "2026-11-16T03:53:54.530Z",
+  "generated_at": "2026-11-16T14:01:04.559Z",
+  "source_updated_at": "2026-11-16T13:39:55.193Z",
   "taught_total": 1229,
   "confirmed_mastered": 286,
   "needs_reinforcement": 841,
@@ -28,6 +28,20 @@
   "focus_total": 838,
   "focus_words": [
     {
+      "word": "berlaku sampai",
+      "score": 136,
+      "signals": [
+        "automation_fail",
+        "lesson_wrong",
+        "dont",
+        "fuzzy"
+      ],
+      "wrong_count": 1,
+      "last_wrong": "2026-11-16T13:36:25.155Z",
+      "last_review": "2026-11-16T13:36:25.155Z",
+      "cn": "有效期至"
+    },
+    {
       "word": "menunjukkan",
       "score": 126,
       "signals": [
@@ -53,6 +67,19 @@
       "last_wrong": "2026-11-09T06:53:31.350Z",
       "last_review": "2026-11-12T08:40:54.689Z",
       "cn": "意在；旨在；（被）打算用来……"
+    },
+    {
+      "word": "menegaskan",
+      "score": 118,
+      "signals": [
+        "automation_fail",
+        "lesson_wrong",
+        "dont"
+      ],
+      "wrong_count": 2,
+      "last_wrong": "2026-11-16T13:26:43.485Z",
+      "last_review": "2026-11-16T13:26:43.485Z",
+      "cn": "强调；明确说明；确认"
     },
     {
       "word": "nggak kepegang",
@@ -94,19 +121,6 @@
       "cn": "被逼到很紧；没什么余地"
     },
     {
-      "word": "berlaku sampai",
-      "score": 98,
-      "signals": [
-        "automation_fail",
-        "dont",
-        "fuzzy"
-      ],
-      "wrong_count": 0,
-      "last_wrong": "",
-      "last_review": "2026-11-02T08:32:20.878Z",
-      "cn": "有效期至"
-    },
-    {
       "word": "penanganan",
       "score": 92,
       "signals": [
@@ -118,19 +132,6 @@
       "last_wrong": "2026-11-15T11:13:51.680Z",
       "last_review": "2026-11-15T11:13:51.680Z",
       "cn": "处理；应对（过程）"
-    },
-    {
-      "word": "perpaduan",
-      "score": 90,
-      "signals": [
-        "lesson_wrong",
-        "dont",
-        "fuzzy"
-      ],
-      "wrong_count": 3,
-      "last_wrong": "2026-11-12T11:38:25.836Z",
-      "last_review": "2026-11-12T11:38:25.836Z",
-      "cn": "融合；结合；搭配"
     }
   ],
   "definitions": {
