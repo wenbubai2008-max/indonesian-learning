@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-16T03:55:59.330Z",
+  "generated_at": "2026-11-16T04:13:24.774Z",
   "source_updated_at": "2026-11-16T03:53:54.530Z",
   "taught_total": 1229,
   "confirmed_mastered": 286,
@@ -15,6 +15,16 @@
   "primary_eligible_new_total": 0,
   "secondary_eligible_new_total": 0,
   "active_master_pool": "exhausted",
+  "review_phase": {
+    "active": true,
+    "activated_at": "2026-11-16",
+    "goals": {
+      "use": 723,
+      "fast": 57,
+      "recognize": 99,
+      "none": 19
+    }
+  },
   "focus_total": 838,
   "focus_words": [
     {
@@ -135,6 +145,7 @@
     "primary_coverage_percent": "primary_taught_unique / primary_master_total",
     "primary_eligible_new_total": "977主词库尚未学习词中，当前同时满足新词资格规则的数量",
     "secondary_eligible_new_total": "第二词库中当前符合新词资格且尚未正式学习的数量",
-    "active_master_pool": "当前教学使用的词库；secondary_bipa 表示已切换至第二词库"
+    "active_master_pool": "当前教学使用的词库；secondary_bipa 表示已切换至第二词库，exhausted 表示新词已学完",
+    "review_phase": "复习阶段是否已生效（data/review-phase.json），以及待强化词按已确认目标（data/vocab-goals.json）的分布；只用于显示"
   }
 }
