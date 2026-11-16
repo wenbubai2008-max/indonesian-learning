@@ -691,7 +691,7 @@
 - **每周连载**：复习阶段从 2026-11-17 早课起，阅读是本周连载的一集（`data/review-phase.json` 的 `story`：`from`、`reading` 110–160 词）。课程根字段 `story {series, episode, previously_cn, next_cn?}`；`episode` = 本主题周已发布连载集数 + 1，`series` 整周不变，第 2 集起必须有上集回顾。规则在 `docs/tasks/REVIEW-PHASE.md` 2.1，校验码 `PHASE_AM_STORY_*`，`review-phase.js --session am` 输出 `story`（第几集、连载名、前几集）。开关关闭、2026-11-17 之前、晚课：一切不变。
 - **页面**：带 `story` 的早课先显示本集（上集回顾 → 正文 → 下集预告），再显示「本集词汇」，其余顺序不变；没有 `story` 的课程（包括所有历史课）显示和以前完全一样。
 - **高频句子朗读**：每句一个 🔊，用复习卡已有的 `[data-rc-say]` 委托点击，调用 `window.speak`。
-- **复习词卡「会了」**：只出现在本课 `cycle_vocab` 的词卡上；点一下 `WeaknessPool.markMastered(word,'lesson_known')`，再点 `reactivate` 撤回，跟词库页的「会了」走同一个接口，照常同步。不改选词、掌握判定和其他训练。
+- **复习词卡「会了」历史决定（已修订）**：原本在 `cycle_vocab` 词卡上提供确认掌握/撤回，沿用 `markMastered` / `reactivate`。2026-11-16 晚间修订后，**带 `phase` 的复习课隐藏「会了」**，只保留「记得 / 模糊 / 忘了」；历史课程原有按钮不改。正式确认掌握仍可在词库页进行。
 - **修正**：`test-review-phase.js` 的“开关关闭不影响真实课程”测试，原来拿默认开关（2026-11-16 已启用）当基准，今天早课一发布就失败；改为固定拿“关闭”当基准，并确认启用日之前的课程不受实际开关影响。
 - **守卫**：校验器含 `PHASE_AM_STORY_EPISODE` / `PHASE_AM_STORY_SERIES`；`history-v2.js` 含 `storyOf`、`sentSay`、`data-vc-known`；`review-phase.json` 的 `story.from` 为 2026-11-17。
 
@@ -719,10 +719,10 @@
 ## 51. 2026-11-16 复习课“先想，后看”（用户决定，只改网页显示）
 
 - **范围**：只对带 `phase` 的复习阶段课程（2026-11-16 起的早晚课）生效；没有 `phase` 的课程（包括所有历史课）显示和以前完全一样。课程 JSON、选词规则、掌握判定、其他训练都不改。
-- **词卡**：学过的词（早课 `cycle_vocab`；晚课 `vocab` 里不在 `new_words` 的词）先只显示印尼语和 🔊，点「看答案」才显示意思、例句、词根、展开项，然后点 记得 / 模糊 / 忘了（可以重选）。「会了」按钮也扩到晚课的学过词。
+- **词卡**：学过的词（早课 `cycle_vocab`；晚课 `vocab` 里不在 `new_words` 的词）先只显示印尼语和 🔊，点「看答案」才显示意思、例句、词根、展开项，然后点 记得 / 模糊 / 忘了（可以重选）。复习阶段的这些卡片**不再显示「会了」**，历史课程保留原样；词库页仍可单独确认掌握。
 - **阅读**：中文默认折起来（「看整段中文」展开）；本课学过的词（加早课 `review_vocab`）带虚线可点，点开在正文下面显示意思并标橙。
-- **信号**：「忘了」和阅读里点开的词，各调用一次 `WeaknessPool.recordLessonWrong`（同一课同一个词只记一次，来源写“课程回想”/“阅读点开”），沿用现有“课程中答错或卡住”的优先复习。记得 / 模糊只记在本机。
+- **信号（2026-11-16 晚间纠偏）**：阅读里点开词义**只在本机记录“查看过释义”**，绝不调用 `recordLessonWrong`、不增加答错次数，也不改变掌握状态；暂不接入正式选词排序。只有显式点「忘了」才调用一次 `WeaknessPool.recordLessonWrong`（同一课同一个词最多一次，来源“课程回想”），按现有错词优先复习。记得 / 模糊只记在本机。
 - **本机记录**：`localStorage` 键 `indo_recall_first_v1`（按课保存评分、点开过的词、已发信号，保留最近 40 课）。**不能用 `indo_lesson_recall_v1`**：那是课末回忆的数据，会同步、进周报和诊断。
 - **CI 修正（用户同意）**：`sync-daily-vocab.yml` 的 preflight 会在 CI 里只读演练已停用的 V4 备用课程，它的早课需要 10 个新词；11-16 新词用完后，目标是早课时这项演练只会失败（main 上同样失败），所有维护 PR 都会变红。复习阶段开启时跳过这项 AM 演练，包括只读演练和“写到临时目录”的演练两步（与已有的 PM 跳过同理）；正式环境 V4 仍停用，其他检查照常跑。课程发布 PR（`lesson-release-*`）本来就不跑 preflight。
-- **守卫**：`history-v2.js` 含 `vcRecall`、`data-rc-rate`、`recordLessonWrong`、`indo_recall_first_v1`，且 `RC_STORE` 不是 `indo_lesson_recall_v1`。
+- **守卫**：`history-v2.js` 含 `vcRecall`、`data-rc-rate`、`recordLessonWrong`、`indo_recall_first_v1`，且 `RC_STORE` 不是 `indo_lesson_recall_v1`。`regression-guard.js` 还要验证：阅读点击分支不再调用错词接口；「忘了」仍能记错词；复习阶段的 `VC_KNOWN` 为空，历史课程逻辑保持原状。
 
