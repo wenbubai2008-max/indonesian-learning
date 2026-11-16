@@ -695,3 +695,9 @@
 - **修正**：`test-review-phase.js` 的“开关关闭不影响真实课程”测试，原来拿默认开关（2026-11-16 已启用）当基准，今天早课一发布就失败；改为固定拿“关闭”当基准，并确认启用日之前的课程不受实际开关影响。
 - **守卫**：校验器含 `PHASE_AM_STORY_EPISODE` / `PHASE_AM_STORY_SERIES`；`history-v2.js` 含 `storyOf`、`sentSay`、`data-vc-known`；`review-phase.json` 的 `story.from` 为 2026-11-17。
 
+## 51. 2026-11-16 已学完第二词库，移除空的待学习入口（用户决定）
+
+- **用户决定**：在“词汇学习”页面的词库选择器中移除“第二词库·待学习（0）”；此前“主词库·待学习（0）”已移除。保留“主学习词库”、每日学习词汇、陌生词汇及 BIPA A1/A2/B1/B2。
+- **旧选择兼容**：本机 `selected_vocab_library` 若保存了 `pending-primary` 或 `pending-secondary`，下一次进入词汇学习时自动回到可见的 `master`，避免出现空白选择器和“已清零”页面。
+- **严格范围**：仅隐藏空词库的 UI 入口，不删除第二词库底层数据 `data/master-vocab-secondary.js`、`data/pending-vocab.json`，不更改 weakness、mastered、daily-vocab、977 主库、BIPA 词库、课程新词与复习池、自动任务及历史。
+- **回归**：`vocab-ui-regression-guard.js` 必须断言两项待学习入口均不在下拉框，旧选择迁移到主学习词库；§47 中“第二词库仍可选”的旧决定由本节取代。
