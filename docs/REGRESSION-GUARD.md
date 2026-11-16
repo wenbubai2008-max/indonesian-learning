@@ -685,3 +685,13 @@
 - **改动范围**：只改任务说明书：`docs/tasks/DEEP-TEACH.md` 开头加取消声明，正文只作历史格式记录；`COMMON.md` 的表格和 §2 例外、`AM-LESSON.md` 八-B、`PM-LESSON.md` 8-B 及两份汇报要求同步改为“不写深讲”。定时任务提示词不改。
 - **不改变**：`teach_release` job、`check-teach.js` / `validate-teach.js` / `deep-teach.js`、网页按钮逻辑（没有深讲数据的课程本来就不显示「开始带学」）、已发布的历史深讲文件（含 2026-11-10 晚课那一份）、课程合同和其他任务。
 - **守卫**：§36 的说明书检查保留；新增一项：DEEP-TEACH、COMMON、AM-LESSON、PM-LESSON 都写明 2026-11-10 深讲已取消。
+
+## 50. 2026-11-16 早课每周连载、高频句子朗读、复习词卡「会了」（用户决定）
+
+- **每周连载**：复习阶段从 2026-11-17 早课起，阅读是本周连载的一集（`data/review-phase.json` 的 `story`：`from`、`reading` 110–160 词）。课程根字段 `story {series, episode, previously_cn, next_cn?}`；`episode` = 本主题周已发布连载集数 + 1，`series` 整周不变，第 2 集起必须有上集回顾。规则在 `docs/tasks/REVIEW-PHASE.md` 2.1，校验码 `PHASE_AM_STORY_*`，`review-phase.js --session am` 输出 `story`（第几集、连载名、前几集）。开关关闭、2026-11-17 之前、晚课：一切不变。
+- **页面**：带 `story` 的早课先显示本集（上集回顾 → 正文 → 下集预告），再显示「本集词汇」，其余顺序不变；没有 `story` 的课程（包括所有历史课）显示和以前完全一样。
+- **高频句子朗读**：每句一个 🔊，用复习卡已有的 `[data-rc-say]` 委托点击，调用 `window.speak`。
+- **复习词卡「会了」**：只出现在本课 `cycle_vocab` 的词卡上；点一下 `WeaknessPool.markMastered(word,'lesson_known')`，再点 `reactivate` 撤回，跟词库页的「会了」走同一个接口，照常同步。不改选词、掌握判定和其他训练。
+- **修正**：`test-review-phase.js` 的“开关关闭不影响真实课程”测试，原来拿默认开关（2026-11-16 已启用）当基准，今天早课一发布就失败；改为固定拿“关闭”当基准，并确认启用日之前的课程不受实际开关影响。
+- **守卫**：校验器含 `PHASE_AM_STORY_EPISODE` / `PHASE_AM_STORY_SERIES`；`history-v2.js` 含 `storyOf`、`sentSay`、`data-vc-known`；`review-phase.json` 的 `story.from` 为 2026-11-17。
+

@@ -709,6 +709,15 @@ try {
     ok(/\['week','本周'\]/.test(ui)&&ui.includes('weeklyHTML()'),'profile 本周 tab shows the weekly report');
   }
 
+  // 2026-11-16 (REGRESSION-GUARD §50): weekly serial story in review-phase AM, sentence audio, 会了 on review-cycle cards.
+  {
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const vl=read('.github/scripts/validate-lesson-candidate.js'),hv=read('data/history-v2.js'),rp=JSON.parse(read('data/review-phase.json'));
+    okNew(vl.includes('"PHASE_AM_STORY_EPISODE"')&&vl.includes('"PHASE_AM_STORY_SERIES"')&&vl.includes('const rd=SP?SP.reading:'),'validator checks the weekly story episode, series and episode length');
+    okNew(rp.story&&rp.story.from==='2026-11-17'&&Array.isArray(rp.story.reading),'review phase carries the weekly story rule from 2026-11-17');
+    okNew(/function storyOf\(x\)/.test(hv)&&hv.includes("if(x.reading&&!st)h+=sec(")&&hv.includes('const sentSay=')&&hv.includes('data-vc-known=')&&hv.includes("wp.markMastered(w,'lesson_known')"),'page: story first only for story lessons, 🔊 on every 高频句子 line, 会了 on review-cycle cards');
+  }
+
   // 2026-10-18 (REGRESSION-GUARD §33): 带学模式 — a view over the lesson's own content; own progress key only.
   {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;

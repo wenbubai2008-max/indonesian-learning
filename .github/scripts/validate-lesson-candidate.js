@@ -34,7 +34,7 @@ const FOCUS_REQUIRED_FROM="2026-10-18 18:00"; // first required lesson (that mor
 const JARGON_FROM="2026-10-23";
 const JARGON=/runtime|\b[a-z]+_pool\b|source_group|is_oral_new|\bis_new\b|exposure_ledger|natural_recurrence|review_cycle|cycle_vocab|review_vocab|lesson_focus|validator|（hard）|\(hard\)|hard\s*词|hard=|\bapplication\b/i;
 const JARGON_SKIP=new Set(["en","source_group","session","write_status","date","time","day","group"]);
-const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm,reviewHistory,focusRequiredFrom,jargonFrom,reviewPhase,themes}) {
+const validate=function validate({lesson,index,runtime,rules,expectedDate,expectedSession,sameDayAm,previousPm,reviewHistory,focusRequiredFrom,jargonFrom,reviewPhase,themes,weekAms}) {
   const errors=[], add=(code,detail)=>errors.push({code,detail});
   const check=(c,code,detail)=>{if(!c)add(code,detail);return !!c};
   const has=(o,k)=>Object.prototype.hasOwnProperty.call(o||{},k);
@@ -52,6 +52,10 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
   // Review phase (2026-10-25, dormant until the learner switches data/review-phase.json on): P=false keeps every
   // count and rule below exactly as before; C then equals the old hard-coded numbers.
   const phase=reviewPhase===undefined?RP.load():reviewPhase,P=RP.on(phase,date),C=RP.counts(phase,date);
+  // Weekly serial story (2026-11-16 user decision, REVIEW-PHASE.md 2.1): from story.from on, a review-phase 08:00 lesson's
+  // reading is one episode of this week's story. SP=null (off, before story.from, or 18:00) keeps every rule below unchanged.
+  // weekAms = this theme week's earlier AM lessons; when the caller does not pass them they are read from data/daily.
+  const SP=session==="am"&&RP.storyRule(phase,date)?RP.storyPlan(phase,date,weekAms===undefined?RP.weekAms(phase,date):weekAms):null;
   check(rules.version===4&&runtime.version===4&&runtime.rules_version===4&&runtime.stats?.master_unique===977,"RULE_RUNTIME_MISMATCH","Rules/runtime v4, 977 primary master required");
   check(Number.isFinite(Date.parse(runtime.generated_at||"")),"RUNTIME_INVALID","Runtime generated_at invalid");
   const seen=new Set(),stamps=[];
@@ -82,7 +86,7 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     if(str(v?.root))check(str(v.root_cn),"ROOT_CN_MISSING","vocab["+i+"] root_cn");
     check(typeof v?.is_oral_new==="boolean","VOCAB_ORAL_FLAG","vocab["+i+"] flag");
   });
-  {const rd=session==="am"?C.am_reading:RP.LEGACY.am_reading;
+  {const rd=SP?SP.reading:session==="am"?C.am_reading:RP.LEGACY.am_reading;
   check(range(count(lesson.reading?.text),rd[0],rd[1])&&str(lesson.reading?.cn),"READING_INVALID",rd[0]+"-"+rd[1]+" Indonesian words plus Chinese required");}
   const choice=(q,i,label)=>{
     const opts=Array.isArray(q?.options)?q.options:[],a=q?.answer_index;
@@ -149,6 +153,13 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     // one of today's words, so the page never shows an answer that was not taught. On failure the generator removes it.
     // Review phase AM = 表达难点课: the easily confused words are shown as contrast cards (review_cards.contrasts).
     if(P)check(lesson.review_cards!==undefined,"PHASE_AM_CONTRAST_MISSING","Review phase: review_cards with contrasts (1-6 groups) required");
+    if(SP){const s=lesson.story,obj=s&&typeof s==="object"&&!Array.isArray(s);
+      check(obj,"PHASE_AM_STORY_MISSING","Review phase from "+SP.from+": root story {series, episode, previously_cn, next_cn?} required (this week's serial)");
+      if(obj){
+        check(str(s.series)&&Number.isInteger(s.episode)&&s.episode>=1&&(s.episode===1||str(s.previously_cn))&&(s.previously_cn===undefined||typeof s.previously_cn==="string")&&(s.next_cn===undefined||str(s.next_cn))&&str(lesson.reading?.title),"PHASE_AM_STORY_INVALID","story: series, integer episode, previously_cn (from episode 2), optional next_cn; reading.title is the episode title");
+        check(s.episode===SP.episode,"PHASE_AM_STORY_EPISODE","Expected episode "+SP.episode+" (this week's published episodes + 1)");
+        if(SP.series)check(norm(s.series)===norm(SP.series),"PHASE_AM_STORY_SERIES","The series stays the same all week: "+SP.series);
+      }}
     if(lesson.review_cards!==undefined){
       const rc=lesson.review_cards,pair=x=>x&&str(x.id)&&str(x.cn),today=new Set(vocab.map(word).concat(rw,(Array.isArray(lesson.cycle_vocab)?lesson.cycle_vocab:[]).map(norm)));
       const recall=rc&&rc.recall,contrasts=rc&&rc.contrasts,apply=rc&&rc.apply,frames=rc&&rc.frames;

@@ -63,8 +63,11 @@ t('off: validator results on the last 14 days of real lessons are identical with
     const prev=new Date(Date.parse(d+'T00:00:00Z')-86400000).toISOString().slice(0,10);
     const opt=p=>fs.existsSync(path.join(repo,p))?read(p):null;
     const args={lesson:read(f),index,runtime:baseRuntime,rules,expectedDate:d,expectedSession:s,sameDayAm:opt('data/daily/'+d+'-am.json'),previousPm:opt('data/daily/'+prev+'-pm.json'),reviewHistory:collectReviewHistory(index,d,s,read)};
-    const base=JSON.stringify(validate(args));
-    for(const reviewPhase of [{active:false},{...ON,active:false},{...ON,activated_at:'2099-01-05'},null])
+    // Off is pinned explicitly: lessons on or after the real activation day (2026-11-16) follow the phase rules by
+    // default; before it, the committed switch must still give exactly the off result.
+    const base=JSON.stringify(validate({...args,reviewPhase:{active:false}}));
+    if(d<RP.load().activated_at)assert.equal(JSON.stringify(validate(args)),base,f+' changed by the committed switch before its activation day');
+    for(const reviewPhase of [{...ON,active:false},{...ON,activated_at:'2099-01-05'},null])
       assert.equal(JSON.stringify(validate({...args,reviewPhase})),base,f+' changed with '+JSON.stringify(reviewPhase&&{active:reviewPhase.active,at:reviewPhase.activated_at}));
     compared++;
   }
@@ -129,6 +132,38 @@ t('on: weekly function frames: one focus pattern must be a frame of this week, t
   assert.ok(!runAm(phaseAm(),{active:false}).has('PHASE_FUNCTION_MISSING'),'off: no function rule');
   const plan=RP.dayPlan(ON,'2026-10-19',themes);assert.equal(plan.theme_id,'logistics');assert.ok(plan.functions.length>=2);
   for(const th of themes.themes){assert.ok(th.functions.length>=2&&th.functions.length<=3,th.id);for(const f of th.functions)assert.ok(f.frames.length>=2&&f.frames.every(x=>x.id.includes('…')&&x.cn),th.id+'/'+f.id)}
+});
+
+// ---------- on: 08:00 weekly serial story (2026-11-16 user decision, REVIEW-PHASE.md 2.1) ----------
+const ONS={...ON,story:{from:'2026-10-13',reading:[110,160]}};
+function storyAm(ep,extra={}){const L=phaseAm(),words=am14.reading.text.split(/\s+/);let a=[];while(a.length<120)a=a.concat(words);
+  L.reading.text=a.slice(0,120).join(' ');L.reading.title='Paket yang Tersesat · 迷路的包裹';
+  L.story={series:'Toko Bu Narti · 纳尔蒂太太的网店',episode:ep,...(ep>1?{previously_cn:'上集：顾客催单。'}:{}),...extra};return L}
+const ep=(d,n,series='Toko Bu Narti · 纳尔蒂太太的网店')=>({date:d,session:'am',story:{series,episode:n},reading:{title:'第'+n+'集'}});
+const runS=(L,weekAms,reviewPhase=ONS)=>codes(validate({lesson:L,index,runtime:rtAm,rules,expectedDate:'2026-10-14',expectedSession:'am',sameDayAm:null,previousPm:null,reviewHistory:[],reviewPhase,themes,weekAms}));
+const STORY=['PHASE_AM_STORY_MISSING','PHASE_AM_STORY_INVALID','PHASE_AM_STORY_EPISODE','PHASE_AM_STORY_SERIES','READING_INVALID'];
+t('story: from story.from every review-phase AM is an episode of this week\'s serial, 110-160 reading words',()=>{
+  const ok=runS(storyAm(1),[]);for(const k of [...STORY,...PHASE_CODES])assert.ok(!ok.has(k),k);
+  const a=runS(phaseAm(),[]);assert.ok(a.has('PHASE_AM_STORY_MISSING')&&a.has('READING_INVALID'),'no story, 70-word reading');
+  const b=storyAm(1);b.reading.title='';assert.ok(runS(b,[]).has('PHASE_AM_STORY_INVALID'),'episode title required');
+  const c=storyAm(1,{next_cn:''});assert.ok(runS(c,[]).has('PHASE_AM_STORY_INVALID'),'empty next_cn');
+});
+t('story: episode continues this week\'s published episodes, same series, recap from episode 2',()=>{
+  const week=[ep('2026-10-13',1)];
+  for(const k of STORY)assert.ok(!runS(storyAm(2),week).has(k),k);
+  assert.ok(runS(storyAm(1),week).has('PHASE_AM_STORY_EPISODE'),'episode must be 2');
+  const n=storyAm(2);delete n.story.previously_cn;assert.ok(runS(n,week).has('PHASE_AM_STORY_INVALID'),'recap required');
+  const s=storyAm(2);s.story.series='Cerita Lain · 另一个故事';assert.ok(runS(s,week).has('PHASE_AM_STORY_SERIES'),'series fixed all week');
+  assert.ok(!runS(storyAm(1),[ep('2026-10-11',6)]).has('PHASE_AM_STORY_EPISODE'),'last week\'s episodes do not count');
+  assert.ok(!runS(storyAm(1),[{date:'2026-10-13',session:'am'}]).has('PHASE_AM_STORY_EPISODE'),'a lesson without story is not an episode');
+  const p=RP.storyPlan(ONS,'2026-10-14',[ep('2026-10-13',1),ep('2026-10-14',2)]);assert.equal(p.episode,2,'the lesson itself is not counted');
+  assert.equal(p.week_start,'2026-10-12');assert.equal(p.series,'Toko Bu Narti · 纳尔蒂太太的网店');
+});
+t('story: off, before story.from or without story config, nothing changes',()=>{
+  for(const ph of [{...ONS,active:false},ON,{...ONS,story:{from:'2026-10-15'}}]){const c=runS(phaseAm(),[],ph);assert.ok(!c.has('PHASE_AM_STORY_MISSING'),JSON.stringify(ph.story||null));}
+  assert.equal(RP.storyRule({...ONS,active:false},'2026-10-14'),null);assert.equal(RP.storyRule(ONS,'2026-10-12'),null);
+  assert.deepEqual(RP.storyRule({...ONS,story:{from:'2026-10-13'}},'2026-10-14').reading,[110,160],'default length');
+  const committed=RP.load();assert.equal(committed.story.from,'2026-11-17');assert.deepEqual(committed.story.reading,[110,160]);
 });
 
 // ---------- on: 18:00 任务课 ----------

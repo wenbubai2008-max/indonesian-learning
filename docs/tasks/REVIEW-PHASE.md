@@ -21,11 +21,29 @@ node .github/scripts/review-phase.js --date D --session am|pm
 | 词卡 `vocab` | 5–7 张。还有合法新词时先教新词，其余是复习循环词（排序输出 `review_cycle.cycle_words`，数量已按 `counts.am_target` 算好），根字段 `cycle_vocab` 恰好列出不是新词的那些。规则同 4.5。 |
 | `review_vocab` | 4–6 个，不变（句子、小测用）。 |
 | 表达难点 `review_cards` | **必填**。`contrasts` 1–6 组：每组 2–3 个容易混的词或说法，`note` 一句话说清区别和各自的场合；能互换的不要写成“只能用 A”（`LESSON-QUALITY.md` 第 2 节）。`recall` 4–12 个、`apply` 1–4 个，格式同原规则。 |
-| 阅读 `reading` | 60–100 词，放在本周主题的场景里。 |
+| 阅读 `reading` | **2026-11-17 起是本周连载的一集，110–160 词，见 2.1**（`review-phase.js` 输出的 `story.reading`）。之前：60–100 词，放在本周主题的场景里。 |
 | 自然复现 | 至少 `recurrence_min`（默认 6）个名单词，`check-recurrence.js` 检查。 |
 | `phase` 根字段 | `{"theme_id": "...", "day_role": "..."}`，照抄 `review-phase.js` 输出的 `plan`。 |
 
 `sentences` 5 句、`quiz` 3 题、`output`、`review` 3 条、`lesson_focus`（3 词 + 2 句型）都不变。
+
+### 2.1 每周连载（2026-11-16 用户决定，2026-11-17 早课起）
+
+为什么：学过的词要在不同的文章里碰到很多次才记得住；有情节的故事读起来不枯燥，会想知道后面发生什么。所以早课的阅读不再是一篇孤立的短文，而是**一周一个故事，每天一集**。
+
+- **一周一个故事**：跟本周主题走（`plan.theme_id` / `plan.scenes`），周一到周日同一批人物、同一个地方。给人物起好记的印尼名字，身份写清楚（店主、客服、快递员、顾客……）。
+- **先读前几集再写**：运行 `review-phase.js --date D --session am`，输出里的 `story` 给出本周第几集（`episode`）、连载名（`series`，第 1 集由你起名，之后整周照抄）和前几集的日期、标题。打开这些日期的 `data/daily/<日期>-am.json`，读它们的 `story` 和 `reading`，**接着写下一集**：人名、身份、地点、已经发生的事前后一致，不重复上一集的情节，也不把上一集重讲一遍。
+- **每集一件完整的小事**：有起因、有麻烦、有结果；结尾留一个小悬念或下一步（写进 `next_cn`）。可以有一点幽默或紧张，贴近成年人的工作和日常生活，不说教，不写成课文腔。人物之间的对话用引号，口语照 `LESSON-QUALITY.md`。
+- **词放进情节里**：本课词卡词和 `review_vocab` 在情节里自然出现（复现数照 `recurrence_min`）；本周前几集出现过的复习词可以再出现，这正是连载的用处。不为塞词写别扭的句子。
+- **长度**：110–160 个印尼语词，`reading.cn` 逐段对应。`reading.title` = 本集标题，`印尼语 · 中文`。
+- **根字段 `story`**：
+  ```json
+  "story": {"series": "Toko Bu Narti · 纳尔蒂太太的网店", "episode": 2, "previously_cn": "上集：……（中文 1–2 句）", "next_cn": "下集：……（中文一句，可选）"}
+  ```
+  `episode` 必须等于输出的 `story.episode`（本周已发布的连载集数 + 1；某天没发出来就顺延，不跳号）。第 2 集起 `previously_cn` 必填，让没看上一集的人也接得上。
+- **其余部分不变**：`sentences` 5 句（可以取自本集，也可以是同场景的常用句；网页每句都有朗读按钮）、`quiz`、`output`、`review_cards`、`lesson_focus` 照旧（深讲 2026-11-10 起已取消，不写）。小测里至少 1 题要靠读懂本集才能答对。
+- **页面**：带 `story` 的早课先显示本集（上集回顾 → 正文 → 下集预告），再显示词卡和其余部分。
+- 校验码：`PHASE_AM_STORY_MISSING`（缺 story）、`PHASE_AM_STORY_INVALID`（字段不全、缺本集标题或第 2 集起缺上集回顾）、`PHASE_AM_STORY_EPISODE`（集数不对）、`PHASE_AM_STORY_SERIES`（连载名和本周前几集不同）、`READING_INVALID`（不在 110–160 词）。
 
 ## 三、18:00 晚课：任务课
 
