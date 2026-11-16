@@ -8,7 +8,7 @@
   const MASTER_SCRIPTS=['data/master-vocab-data.js?v=20260917-controller1','data/master-vocab-data-2.js?v=20260917-controller1','data/master-vocab-data-3.js?v=20260917-controller1'];
   const EXPECTED_MASTER_COUNT=977;
   const EXPECTED_BIPA_COUNTS={A1:515,A2:290,B1:204,B2:274};
-  const NORMAL_KEYS=['master','pending-primary','pending-secondary','daily','unknown'];
+  const NORMAL_KEYS=['master','daily','unknown'];
   const BIPA_KEYS=['bipa-a1','bipa-a2','bipa-b1','bipa-b2'];
   const ALL_KEYS=[...NORMAL_KEYS,...BIPA_KEYS];
   let activeKey='master';
@@ -163,9 +163,9 @@
   }
   function canonicalKey(v){
     const s=String(v||'').trim().toLowerCase();
-    // The exhausted primary pending list has been removed from the selector.
-    // Restore an older saved selection into the current secondary pending list.
-    if(s==='pending-primary')return 'pending-secondary';
+    // Both completed pending lists are retired from the selector.
+    // Redirect older saved selections to a visible library.
+    if(s==='pending-primary'||s==='pending-secondary')return 'master';
     if(ALL_KEYS.includes(s))return s;
     if(s.includes('bipa')){for(const lv of ['a1','a2','b1','b2'])if(s.includes(lv))return 'bipa-'+lv;}
     return NORMAL_KEYS.includes(s)?s:'master';
@@ -195,7 +195,6 @@
     const cur=canonicalKey(select.value||localStorage.getItem('selected_vocab_library')||activeKey);
     const opts=[
       ['master','主学习词库',libraryCount('master')],
-      ['pending-secondary','第二词库·待学习',libraryCount('pending-secondary')],
       ['daily','每日学习词汇',libraryCount('daily')],['unknown','陌生词汇',libraryCount('unknown')],
       ...['A1','A2','B1','B2'].map(lv=>['bipa-'+lv.toLowerCase(),'BIPA（'+lv+'）',libraryCount('bipa-'+lv.toLowerCase())])
     ];
