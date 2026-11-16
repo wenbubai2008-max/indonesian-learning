@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-16T03:53:54.530Z",
+  "updated_at": "2026-11-16T13:39:55.193Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -1972,8 +1972,11 @@
     "rabu": {
       "word": "rabu",
       "status": "active",
-      "updated_at": "2026-11-12T04:06:49.565Z",
+      "updated_at": "2026-11-16T13:24:46.700Z",
       "display": "rabu",
+      "cn": "星期三",
+      "root": "rabu",
+      "root_cn": "星期三",
       "last_review": "2026-11-12T04:06:49.503Z",
       "reasons": [
         "memory_fuzzy"
@@ -2640,19 +2643,23 @@
     "menegaskan": {
       "word": "menegaskan",
       "status": "active",
-      "updated_at": "2026-11-08T07:34:02.641Z",
+      "updated_at": "2026-11-16T13:26:43.576Z",
       "display": "menegaskan",
-      "cn": "强调；明确说明；确认",
+      "cn": "强调；明确表示；重申",
       "root": "tegas",
       "root_cn": "明确；坚定",
-      "last_wrong": "2026-09-25T14:59:12.780Z",
-      "last_review": "2026-11-08T07:34:02.564Z",
+      "last_wrong": "2026-11-16T13:26:43.485Z",
+      "last_review": "2026-11-16T13:26:43.485Z",
+      "source": "阅读点开",
+      "source_date": "2026-11-16",
+      "session": "18:00",
       "reasons": [
         "memory_dont",
-        "automation_fail"
+        "automation_fail",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
-      "right_streak": 4
+      "wrong_count": 2,
+      "right_streak": 0
     },
     "buruk": {
       "word": "buruk",
@@ -10851,8 +10858,9 @@
     "senin": {
       "word": "senin",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:51.638Z",
+      "updated_at": "2026-11-16T13:24:42.755Z",
       "display": "senin",
+      "cn": "星期一",
       "last_review": "2026-09-12T14:13:52.200Z",
       "last_mastered": "2026-09-12T14:13:52.200Z",
       "reasons": [],
@@ -17140,10 +17148,10 @@
     "gelombang": {
       "word": "gelombang",
       "status": "active",
-      "updated_at": "2026-11-14T11:34:43.846Z",
+      "updated_at": "2026-11-16T13:39:43.244Z",
       "display": "gelombang",
       "cn": "波浪；浪潮",
-      "last_review": "2026-11-14T11:34:43.786Z",
+      "last_review": "2026-11-16T13:39:43.187Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -17151,7 +17159,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "subuh": {
       "word": "subuh",
@@ -20270,10 +20278,10 @@
     "sering": {
       "word": "sering",
       "status": "active",
-      "updated_at": "2026-11-09T06:55:31.480Z",
+      "updated_at": "2026-11-16T13:39:41.662Z",
       "display": "sering",
       "cn": "经常",
-      "last_review": "2026-11-09T06:55:31.422Z",
+      "last_review": "2026-11-16T13:39:41.604Z",
       "last_mastered": "2026-09-12T16:53:06.764Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
@@ -20281,7 +20289,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 5
+      "right_streak": 6
     },
     "kadang": {
       "word": "kadang",
@@ -20768,16 +20776,22 @@
     "unggah": {
       "word": "unggah",
       "status": "active",
-      "updated_at": "2026-10-24T02:33:38.117Z",
+      "updated_at": "2026-11-16T13:35:40.324Z",
       "display": "unggah",
-      "cn": "上传",
+      "cn": "上传（词根形式，用在命令句和“宾语在前”的句子里）",
       "root": "unggah",
-      "last_review": "2026-10-24T02:33:38.053Z",
+      "root_cn": "上传",
+      "last_wrong": "2026-11-16T13:35:40.237Z",
+      "last_review": "2026-11-16T13:35:40.237Z",
+      "source": "课程小测",
+      "source_date": "2026-11-16",
+      "session": "18:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 3
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "hapus": {
       "word": "hapus",
@@ -25437,21 +25451,24 @@
     "berlaku sampai": {
       "word": "berlaku sampai",
       "status": "active",
-      "updated_at": "2026-11-02T08:32:20.933Z",
+      "updated_at": "2026-11-16T13:36:25.232Z",
       "display": "berlaku sampai",
-      "cn": "有效期至",
+      "cn": "有效期至；在……之前有效",
       "root": "laku",
-      "root_cn": "有效；畅销",
-      "last_review": "2026-11-02T08:32:20.878Z",
-      "source": "BIPA secondary selection",
-      "source_date": "2026-09-17",
+      "root_cn": "有效；（货物）好卖",
+      "last_wrong": "2026-11-16T13:36:25.155Z",
+      "last_review": "2026-11-16T13:36:25.155Z",
+      "source": "课程小测",
+      "source_date": "2026-11-16",
+      "session": "18:00",
       "reasons": [
         "bipa_secondary_dont",
         "memory_fuzzy",
-        "automation_fail"
+        "automation_fail",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 3
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "pengajar": {
       "word": "pengajar",
@@ -25872,32 +25889,32 @@
     "kura-kura": {
       "word": "kura-kura",
       "status": "active",
-      "updated_at": "2026-11-14T11:34:45.930Z",
+      "updated_at": "2026-11-16T13:39:44.942Z",
       "display": "kura-kura",
       "cn": "乌龟",
-      "last_review": "2026-11-14T11:34:45.872Z",
+      "last_review": "2026-11-16T13:39:44.884Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "lumba-lumba": {
       "word": "lumba-lumba",
       "status": "active",
-      "updated_at": "2026-11-14T11:34:47.747Z",
+      "updated_at": "2026-11-16T13:39:17.451Z",
       "display": "lumba-lumba",
       "cn": "海豚",
-      "last_review": "2026-11-14T11:34:47.693Z",
+      "last_review": "2026-11-16T13:39:17.393Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "cendrawasih": {
       "word": "cendrawasih",
@@ -27779,17 +27796,17 @@
     "resepsionis hotel": {
       "word": "resepsionis hotel",
       "status": "active",
-      "updated_at": "2026-11-14T11:34:52.837Z",
+      "updated_at": "2026-11-16T13:39:19.391Z",
       "display": "resepsionis hotel",
       "cn": "酒店前台",
-      "last_review": "2026-11-14T11:34:52.784Z",
+      "last_review": "2026-11-16T13:39:19.334Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "catur": {
       "word": "catur",
@@ -29424,17 +29441,17 @@
     "cerdik": {
       "word": "cerdik",
       "status": "active",
-      "updated_at": "2026-11-14T11:34:41.193Z",
+      "updated_at": "2026-11-16T13:39:15.456Z",
       "display": "cerdik",
       "cn": "机灵；狡黠",
-      "last_review": "2026-11-14T11:34:41.134Z",
+      "last_review": "2026-11-16T13:39:15.400Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "berbaris": {
       "word": "berbaris",
@@ -32178,19 +32195,19 @@
     "ketiban": {
       "word": "ketiban",
       "status": "active",
-      "updated_at": "2026-11-15T11:18:13.060Z",
+      "updated_at": "2026-11-16T13:39:13.222Z",
       "display": "ketiban",
       "cn": "突然摊上；意外落到自己头上",
       "root": "tiban",
       "root_cn": "落到；压到",
       "last_wrong": "2026-11-15T11:18:12.999Z",
-      "last_review": "2026-11-15T11:18:12.999Z",
+      "last_review": "2026-11-16T13:39:13.166Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 0
+      "right_streak": 1
     },
     "kecipratan": {
       "word": "kecipratan",
@@ -32576,12 +32593,12 @@
     "bakti": {
       "word": "bakti",
       "status": "active",
-      "updated_at": "2026-11-10T09:05:25.877Z",
+      "updated_at": "2026-11-16T13:39:30.269Z",
       "display": "bakti",
       "cn": "奉献精神",
       "root": "bakti",
       "root_cn": "奉献；尽心服务",
-      "last_review": "2026-11-09T06:55:22.958Z",
+      "last_review": "2026-11-16T13:39:30.209Z",
       "source": "每日学习阅读",
       "source_date": "2026-10-31",
       "session": "19:00",
@@ -32590,7 +32607,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "hiburan": {
       "word": "hiburan",
