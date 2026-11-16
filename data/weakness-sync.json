@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-16T03:02:15.098Z",
+  "updated_at": "2026-11-16T03:53:54.530Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -16605,10 +16605,10 @@
     "natal": {
       "word": "Natal",
       "status": "active",
-      "updated_at": "2026-11-14T03:09:20.725Z",
+      "updated_at": "2026-11-16T03:53:44.016Z",
       "display": "Natal",
       "cn": "圣诞节",
-      "last_review": "2026-11-14T03:09:20.661Z",
+      "last_review": "2026-11-16T03:53:43.952Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -16616,7 +16616,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "lurus": {
       "word": "lurus",
@@ -20448,19 +20448,19 @@
     "benerin": {
       "word": "benerin",
       "status": "active",
-      "updated_at": "2026-11-15T03:35:10.146Z",
+      "updated_at": "2026-11-16T03:53:38.681Z",
       "display": "benerin",
       "cn": "修好；弄对",
       "root": "benar",
       "root_cn": "正确",
       "last_wrong": "2026-11-15T03:35:10.082Z",
-      "last_review": "2026-11-15T03:35:10.082Z",
+      "last_review": "2026-11-16T03:53:38.613Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 0
+      "right_streak": 1
     },
     "hilang": {
       "word": "hilang",
@@ -26894,12 +26894,12 @@
     "ikal": {
       "word": "ikal",
       "status": "active",
-      "updated_at": "2026-11-14T08:32:57.253Z",
+      "updated_at": "2026-11-16T03:53:41.514Z",
       "display": "ikal",
       "cn": "（头发）波浪卷的",
       "root": "ikal",
       "root_cn": "卷；波浪卷",
-      "last_review": "2026-11-14T03:09:17.316Z",
+      "last_review": "2026-11-16T03:53:41.449Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -26907,7 +26907,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "sanggul": {
       "word": "sanggul",
