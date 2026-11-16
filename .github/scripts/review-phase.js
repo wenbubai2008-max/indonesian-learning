@@ -65,12 +65,43 @@ function goals(phase,date,root=REPO){
   for(const [w,x] of Object.entries(g.words)){const k=String(w).trim().toLowerCase();if(!x)continue;if(x.goal===skipGoal)out.skip.add(k);if(x.fast===true&&x.goal==='use')out.fast.add(k);}
   return out;
 }
+/**
+ * 2026-11-16 (user decision, REVIEW-PHASE.md 2.1): from `story.from` on, the reading of every review-phase 08:00 lesson
+ * is one episode of a weekly serial story (same cast and place Monday to Sunday). Episode = this theme week's earlier
+ * published AM lessons that carry `story`, plus one; the series name stays the same all week. Off / before `from` → null.
+ */
+function storyRule(phase,date){
+  const s=phase&&phase.story;if(!on(phase,date)||!s||typeof s!=='object'||!validDate(s.from)||String(date)<s.from)return null;
+  return {from:s.from,reading:pair(s.reading)?s.reading.slice():[110,160]};
+}
+function weekStart(phase,date){
+  if(!on(phase,date)||!validDate(phase.theme_start_date)||!validDate(date))return null;
+  const start=Date.parse(phase.theme_start_date+'T00:00:00Z'),at=Date.parse(date+'T00:00:00Z');if(at<start)return null;
+  return new Date(at-(Math.round((at-start)/DAY)%7)*DAY).toISOString().slice(0,10);
+}
+function weekAms(phase,date,root=REPO){
+  const ws=weekStart(phase,date),out=[];if(!ws)return out;
+  for(let t=Date.parse(ws+'T00:00:00Z');t<Date.parse(date+'T00:00:00Z');t+=DAY){
+    const f=path.join(root,'data','daily',new Date(t).toISOString().slice(0,10)+'-am.json');
+    if(fs.existsSync(f)){try{out.push(JSON.parse(fs.readFileSync(f,'utf8')))}catch(e){}}
+  }
+  return out;
+}
+function storyPlan(phase,date,ams){
+  const r=storyRule(phase,date);if(!r)return null;const ws=weekStart(phase,date);
+  const prior=(Array.isArray(ams)?ams:[]).filter(l=>l&&l.story&&typeof l.story==='object'&&!Array.isArray(l.story)&&String(l.date)<String(date)&&(!ws||String(l.date)>=ws))
+    .sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+  const last=prior[prior.length-1];
+  return {...r,week_start:ws,episode:prior.length+1,series:last?String(last.story.series||''):null,
+    previous:prior.map(l=>({date:l.date,episode:l.story.episode,title:(l.reading&&l.reading.title)||'',next_cn:l.story.next_cn||''}))};
+}
 function describe(date,session,root=REPO){
   const phase=load(root),active=on(phase,date);
   if(!active)return {date,session:session||null,active:false,note:'复习阶段未启用：按现在的说明书和规则出课，忽略 docs/tasks/REVIEW-PHASE.md。'};
   const plan=dayPlan(phase,date,loadThemes(root));
   return {date,session:session||null,active:true,activated_at:phase.activated_at,counts:counts(phase,date),plan,
     recurrence_min:session?recurrenceMin(phase,date,session):phase.recurrence_min||null,
+    ...(session==='am'?{story:storyPlan(phase,date,weekAms(phase,date,root))}:{}),
     note:'复习阶段已启用：按 docs/tasks/REVIEW-PHASE.md 出课（数量、结构以本输出为准）。'};
 }
 if(require.main===module){
@@ -78,4 +109,4 @@ if(require.main===module){
   if(!validDate(a.date)){console.error('--date YYYY-MM-DD required');process.exit(2)}
   console.log(JSON.stringify(describe(a.date,a.session),null,2));
 }
-module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};
+module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,storyRule,weekStart,weekAms,storyPlan,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};

@@ -15,6 +15,11 @@
   "pm_application": [1, 3],
   "pm_dialogue": [8, 12]
  },
+ "story": {
+  "from": "2026-11-17",
+  "reading": [110, 160],
+  "note": "2026-11-16 用户决定：复习阶段的早课阅读改成每周连载的一集（docs/tasks/REVIEW-PHASE.md 2.1）。"
+ },
  "recurrence_min": {
   "am": 6,
   "pm": 8
