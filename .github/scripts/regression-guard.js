@@ -729,6 +729,15 @@ try {
     okNew(hv.includes("RC_STORE='indo_recall_first_v1'")&&!/RC_STORE='indo_lesson_recall_v1'/.test(hv)&&hv.includes('vcRecall')&&hv.includes('data-rc-rate')&&hv.includes('wp.recordLessonWrong(w,item)')&&hv.includes("if(!x||!x.phase||!Array.isArray(x.vocab))return [];")&&peekBranch.includes('st.p.push(k)')&&!/rcSignal\s*\(|recordLessonWrong\s*\(/.test(peekBranch)&&rateBranch.includes("if(r==='bad')rcSignal("),'review lessons: peeking only stores local observation, explicit 忘了 alone records lesson error');
   }
 
+  // 2026-11-16 (REGRESSION-GUARD §52): slim review-phase PM back half + dialogue "藏台词" practice.
+  {
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const vl=read('.github/scripts/validate-lesson-candidate.js'),hv=read('data/history-v2.js'),lt=read('data/daily-light-test.js'),rp=JSON.parse(read('data/review-phase.json'));
+    okNew(vl.includes('"PHASE_PM_SLIM_REWRITE"')&&vl.includes('"PHASE_PM_SLIM_REVIEW"')&&vl.includes('const SL=session==="pm"&&RP.pmSlim(phase,date);'),'validator: slim review-phase PM (one framed twist rewrite, no self_check, one retell with reference)');
+    okNew(rp.pm_slim&&rp.pm_slim.from==='2026-11-17','review phase carries the slim PM rule from 2026-11-17');
+    okNew(/function dlgPractice\(x\)/.test(hv)&&hv.includes("</div></div>`).join('')+dlgPractice(x));")&&lt.includes('dailyLightFrame')&&lt.includes('x.review.retell_reference'),'page: 藏台词 under review-phase dialogues, sentence frame and folded reference retell');
+  }
+
   // 2026-10-18 (REGRESSION-GUARD §33): 带学模式 — a view over the lesson's own content; own progress key only.
   {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;

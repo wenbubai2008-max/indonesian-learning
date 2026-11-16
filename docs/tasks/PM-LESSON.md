@@ -170,12 +170,12 @@ PM 专用的运行要求：
 - vocab 正常为 11–14 张词卡（当晚新词不足 5 个的复习循环仍为 10–12 张），每张含：word, display, audio_text, cn, en, root, root_cn, formation, example, example_cn, synonym_note, usage_note, source_group, is_new, is_oral_new。source_group 只能是 new、review、application。is_new 只能在 source_group=new 时为 true。根字段 new_words 必须恰好列出所有 new 组词汇，不能混入 review 或 application。2026-11-04 起正常时 new 恰好 5、review 4–6、application 2–3；复习循环时 new=全部剩余新词（0–4）、review 4–9、application 2–3。2026-11-03 及以前的历史晚课仍按 3–4 个新词校验。
 - reading 使用 {text,cn}。
 - dialogue 必须是 {title,lines:[{speaker,id,cn},...]}，其中 id 存放印尼语台词，不是数字编号。
-- rewrite 必须为 3–4 个：{task,reference_answer,reference_cn}。
+- rewrite 必须为 3–4 个：{task,reference_answer,reference_cn}。（复习阶段 2026-11-17 起：只 1 个带 `frame` 的转折题，周日加挑战题，见 `REVIEW-PHASE.md` 3.1。）
 - daily_test 必须使用 questions，禁止使用 items：
   - choice：{type:"choice",prompt,options,answer_index,answer,explain}
   - fill：{type:"fill",prompt,answer,explain}
   - order：{type:"order",prompt,tokens,answer,answer_cn,explain}
-- daily_test 还必须包含非空字符串数组 self_check（3–4 条诊断问题，按第 5 节“自检与复盘分工”写）。
+- daily_test 还必须包含非空字符串数组 self_check（3–4 条诊断问题，按第 5 节“自检与复盘分工”写）。（复习阶段 2026-11-17 起：不写 self_check，复盘只留一项可选 30 秒复述并附 `retell_reference` / `retell_reference_cn`，见 `REVIEW-PHASE.md` 3.1。）
 - review 必须使用 {title,steps:[...]}，不能把 steps 误写成 items。
 - lesson_focus（今天的重点，2026-10-18 用户决定；**2026-10-18 晚课起每节必填**）：**不新增任何词或任务**，只是从本课已有内容里标出最值得掌握的部分（不是多学五项）。格式 `{"words":[3 个词],"patterns":[2 个 {pattern, cn, example, example_cn}]}`：
   - words：恰好 3 个，必须是本课的词（vocab 里任一组的词），优先选实用、容易忘、值得主动说出口的词。

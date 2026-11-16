@@ -7,7 +7,7 @@
   if(!document.getElementById('dailyLightPatchStyle')){
     const st=document.createElement('style');
     st.id='dailyLightPatchStyle';
-    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.dailyLightExtra .dailyFixAnswer{margin-top:8px}.dailyLightSelf{margin-top:12px;padding:10px 12px;background:#f8faff;border-radius:10px}.dailyLightSelf ul{margin:7px 0 0;padding-left:20px}.dailyLightSelf li{margin:4px 0}.dailyLightStuck{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:5px 0 2px;font-size:12px;color:#667085}.dailyLightStuck button{border:1px solid #dce3ef;background:#fff;border-radius:999px;padding:3px 10px;font-size:12px;color:#3b465b;cursor:pointer}.dailyLightStuck button.done{background:#fff4e5;border-color:#f5c27a;color:#7a4b00}';
+    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.dailyLightExtra .dailyFixAnswer{margin-top:8px}.dailyLightSelf{margin-top:12px;padding:10px 12px;background:#f8faff;border-radius:10px}.dailyLightFrame{margin:9px 0 4px;padding:9px 12px;background:#f6f8fc;border:1px dashed #c9d4e6;border-radius:10px;color:#1e3a8a;font-weight:600;line-height:1.7}.dailyLightFrame span{display:block;font-size:12.5px;font-weight:500;color:#667085;margin-bottom:2px}.dailyLightSelf ul{margin:7px 0 0;padding-left:20px}.dailyLightSelf li{margin:4px 0}.dailyLightStuck{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:5px 0 2px;font-size:12px;color:#667085}.dailyLightStuck button{border:1px solid #dce3ef;background:#fff;border-radius:999px;padding:3px 10px;font-size:12px;color:#3b465b;cursor:pointer}.dailyLightStuck button.done{background:#fff4e5;border-color:#f5c27a;color:#7a4b00}';
     document.head.appendChild(st);
   }
 
@@ -89,7 +89,9 @@
     const task=it.task||it.prompt||'';
     const ans=it.reference_answer||it.answer||'';
     const cn=it.reference_cn||it.answer_cn||'';
-    return `<div class="dailyFixItem"><b>${i+1}. ${esc(task)}</b>${ans?`<br><button class="dailyFixToggle" onclick="this.parentElement.classList.toggle('dailyFixOpen')">参考答案</button><div class="dailyFixAnswer"><div class="dailyFixId">${esc(ans)}</div>${cn?`<div class="dailyFixCnLine">${esc(cn)}</div>`:''}</div>`:''}</div>`;
+    // 2026-11-16 (REVIEW-PHASE.md 3.1): a slim review-phase twist task carries a sentence frame to fill in before the answer.
+    const frame=it.frame?`<div class="dailyLightFrame"><span>句子骨架 · 把 …… 换成你的话，说出来或写下来</span>${esc(it.frame)}</div>`:'';
+    return `<div class="dailyFixItem"><b>${i+1}. ${esc(task)}</b>${frame}${ans?`<br><button class="dailyFixToggle" onclick="this.parentElement.classList.toggle('dailyFixOpen')">参考答案</button><div class="dailyFixAnswer"><div class="dailyFixId">${esc(ans)}</div>${cn?`<div class="dailyFixCnLine">${esc(cn)}</div>`:''}</div>`:''}</div>`;
   }
   function rewriteHtml(x){
     if(!Array.isArray(x.rewrite)||!x.rewrite.length)return '';
@@ -98,7 +100,9 @@
   function finalReviewHtml(x){
     if(!x.review||Array.isArray(x.review))return '';
     const steps=Array.isArray(x.review.steps)?x.review.steps:(Array.isArray(x.review.items)?x.review.items:[]);if(!steps.length)return '';
-    return sec(x.review.title||'最后 5 分钟复盘',steps.map(s=>{const t=typeof s==='string'?s:(s.text||'');return typeof window.reviewReadableHtml==='function'?window.reviewReadableHtml(t,x.vocab):`<div class="dailyFixItem">${esc(t)}</div>`}).join(''),'dailyLightExtra dailyReviewPatch');
+    // 2026-11-16 (REVIEW-PHASE.md 3.1): a slim review-phase retell carries a reference retell, folded like other answers.
+    const ref=x.review.retell_reference?`<div class="dailyFixItem"><button class="dailyFixToggle" onclick="this.parentElement.classList.toggle('dailyFixOpen')">参考复述</button><div class="dailyFixAnswer"><div class="dailyFixId">${esc(x.review.retell_reference)}</div>${x.review.retell_reference_cn?`<div class="dailyFixCnLine">${esc(x.review.retell_reference_cn)}</div>`:''}</div></div>`:'';
+    return sec(x.review.title||'最后 5 分钟复盘',steps.map(s=>{const t=typeof s==='string'?s:(s.text||'');return typeof window.reviewReadableHtml==='function'?window.reviewReadableHtml(t,x.vocab):`<div class="dailyFixItem">${esc(t)}</div>`}).join('')+ref,'dailyLightExtra dailyReviewPatch');
   }
 
   async function markSameDayAm(x,date,s){

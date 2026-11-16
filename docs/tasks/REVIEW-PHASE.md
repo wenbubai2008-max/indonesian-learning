@@ -53,12 +53,31 @@ node .github/scripts/review-phase.js --date D --session am|pm
 |---|---|
 | 词卡 `vocab` | 6–8 张：新词 = 剩余合法新词全部（最多 3 个），复习 4–6 个（数量用排序输出的 `review_cycle.review_target`），application 1–3 个。 |
 | 对话 `dialogue` | 8–12 行，围绕一件要办成的事（退货、改约、报修……）。中途有一处**转折**：对方不配合、出了问题或改了主意。`dialogue.twist` = 转折那一行的下标（从 0 数，不能是第 0 行）。 |
-| `rewrite` | 3–4 个，至少 1 个带 `"kind": "twist"`：让学习者自己应对这个转折（换个说法拒绝、提出替代方案、道歉补救）。 |
+| `rewrite` | **2026-11-17 起见 3.1：只写 1 个**（`kind: "twist"`，带句子骨架 `frame`；周日另加挑战题）。之前：3–4 个，至少 1 个带 `"kind": "twist"`：让学习者自己应对这个转折（换个说法拒绝、提出替代方案、道歉补救）。 |
 | 场景 | 同一主题，但换成和早课不同的小场景（`themes.json` 的 `scenes`）；`LESSON-QUALITY.md` 7c 晚课换场景照样适用。 |
 | 自然复现 | 至少 `recurrence_min`（默认 8）个名单词。 |
 | `phase` 根字段 | 同早课。 |
 
 `daily_test` 结构不变（3 选择 + 2 填空 + 1 排序），周日见第四节。
+
+### 3.1 晚课后半部分精简（2026-11-16 用户决定，2026-11-17 晚课起）
+
+为什么：后半部分原来有 3–4 道改写、自检、4 步复盘，再加网页上的课末回想，同一件事重复做、凭空写句子容易卡住、复盘只有题目没有答案，最容易被跳过。改成三步，每步都有提示和答案：
+
+1. **对话「藏台词」**（网页自动做，不用写字段）：读完对话，网页可以把学习者选的那个角色的台词藏起来，只显示中文，先说再对照。所以对话里两个角色都要有足够的、能用上本课词的台词。
+2. **`rewrite` 只写 1 个转折应对题**：`{"kind":"twist","task":"……","frame":"……","reference_answer":"……","reference_cn":"……"}`。
+   - `frame` = 参考答案的**句子骨架**：保留开头、连接词和本周句型，把关键内容换成 `……`（2–4 处），让学习者只填关键部分。例：`Mohon maaf, Kak, …… . Saya mau menegaskan bahwa …… . Kakak bebas pilih: …… atau …… .`
+   - `reference_answer` 是填好的完整版，和 `frame` 一一对应。
+   - 周日（`day_role` = `weekly_test`）另加第四节的挑战题（`kind: "challenge"`），共 2 个。不写别的改写题。
+3. **小测保留，自检去掉**：`daily_test` 照旧（3 选择 + 2 填空 + 1 排序，周日见第四节），但**不写 `self_check`**（网页的课末回想和词卡的「记得 / 模糊 / 忘了」已经覆盖）。
+4. **复盘只留一项可选的 30 秒复述，并给参考**：
+   ```json
+   "review": {"title": "可选 · 30 秒复述", "steps": ["用 A、B、C 说说……（一句中文提示，点名 2–4 个本课词）"], "retell_reference": "3–5 句印尼语参考复述，用上点名的词", "retell_reference_cn": "对应中文"}
+   ```
+   `steps` 只有 1 条。PM-LESSON.md 第 5 节“自检与复盘分工”和 LESSON-QUALITY.md §7 关于 self_check / 复盘第一步的要求，在复习阶段由本节代替。
+
+- 自然复现照算：对话、阅读、改写参考答案和 `retell_reference` 里的词都算。改写少了 2–3 题，复现词要主动放进对话（两个角色都要有）、阅读和参考复述里，不要只靠改写凑数。
+- 校验码：`PM_REWRITE_INVALID`（不是 1–2 个）、`PHASE_PM_SLIM_REWRITE`（缺 twist、缺带 `……` 的 `frame`，或有挑战题以外的改写）、`PM_SELF_CHECK_INVALID`（还写了 self_check）、`PHASE_PM_SLIM_REVIEW`（复盘不是 1 步，或缺参考复述）。
 
 ## 四、主题周
 

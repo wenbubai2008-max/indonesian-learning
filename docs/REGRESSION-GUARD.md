@@ -726,3 +726,9 @@
 - **CI 修正（用户同意）**：`sync-daily-vocab.yml` 的 preflight 会在 CI 里只读演练已停用的 V4 备用课程，它的早课需要 10 个新词；11-16 新词用完后，目标是早课时这项演练只会失败（main 上同样失败），所有维护 PR 都会变红。复习阶段开启时跳过这项 AM 演练，包括只读演练和“写到临时目录”的演练两步（与已有的 PM 跳过同理）；正式环境 V4 仍停用，其他检查照常跑。课程发布 PR（`lesson-release-*`）本来就不跑 preflight。
 - **守卫**：`history-v2.js` 含 `vcRecall`、`data-rc-rate`、`recordLessonWrong`、`indo_recall_first_v1`，且 `RC_STORE` 不是 `indo_lesson_recall_v1`。`regression-guard.js` 还要验证：阅读点击分支不再调用错词接口；「忘了」仍能记错词；复习阶段的 `VC_KNOWN` 为空，历史课程逻辑保持原状。
 
+## 52. 2026-11-16 晚课后半部分精简 + 对话「藏台词」（用户决定）
+
+- **规则**（复习阶段，`data/review-phase.json` 的 `pm_slim.from` = 2026-11-17 起的晚课；之前、开关关闭、早课都不变）：`rewrite` 只 1 个 `kind: "twist"` 且带句子骨架 `frame`（含 `……` 或 `___`），周日另加 `challenge`；`daily_test` 不写 `self_check`；`review` 只 1 步可选 30 秒复述并附 `retell_reference` / `retell_reference_cn`。说明在 `docs/tasks/REVIEW-PHASE.md` 3.1；校验码 `PHASE_PM_SLIM_REWRITE`、`PHASE_PM_SLIM_REVIEW`，`PM_REWRITE_INVALID`（1–2 个）、`PM_SELF_CHECK_INVALID`（不能有）。`review-rotation.js` 的课文文本也算上 `retell_reference`（只有新课程有这个字段）。
+- **页面**：`daily-light-test.js` 显示 `frame`（「句子骨架」框，在参考答案前）和折叠的「参考复述」；没有这两个字段的课程显示不变，没有 `self_check` 时本来就不显示自检。`history-v2.js` 在带 `phase` 的课程对话下面加「🙈 藏台词」：选一个角色，该角色台词只显示中文，「提示」给开头两个词，「看原句」显示原句和 🔊；只是显示，不记录任何数据。
+- **守卫**：校验器含 `PHASE_PM_SLIM_REWRITE` / `PHASE_PM_SLIM_REVIEW`；`review-phase.json` 的 `pm_slim.from` 为 2026-11-17；`history-v2.js` 含 `function dlgPractice(x)` 且对话段落调用它；`daily-light-test.js` 含 `dailyLightFrame` 和 `retell_reference`。
+

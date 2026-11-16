@@ -55,6 +55,8 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
   // Weekly serial story (2026-11-16 user decision, REVIEW-PHASE.md 2.1): from story.from on, a review-phase 08:00 lesson's
   // reading is one episode of this week's story. SP=null (off, before story.from, or 18:00) keeps every rule below unchanged.
   // weekAms = this theme week's earlier AM lessons; when the caller does not pass them they are read from data/daily.
+  // Slim 18:00 back half (2026-11-16 user decision, REVIEW-PHASE.md 3.1). SL=false keeps the old PM contract unchanged.
+  const SL=session==="pm"&&RP.pmSlim(phase,date);
   const SP=session==="am"&&RP.storyRule(phase,date)?RP.storyPlan(phase,date,weekAms===undefined?RP.weekAms(phase,date):weekAms):null;
   check(rules.version===4&&runtime.version===4&&runtime.rules_version===4&&runtime.stats?.master_unique===977,"RULE_RUNTIME_MISMATCH","Rules/runtime v4, 977 primary master required");
   check(Number.isFinite(Date.parse(runtime.generated_at||"")),"RUNTIME_INVALID","Runtime generated_at invalid");
@@ -226,7 +228,9 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
       check(Number.isInteger(tw)&&tw>=1&&tw<L,"PHASE_PM_TWIST","Review phase: dialogue.twist must be the index (1.."+(L-1)+") of the line where the situation changes");
       check(Array.isArray(lesson.rewrite)&&lesson.rewrite.some(x=>x&&x.kind==="twist"),"PHASE_PM_TWIST","Review phase: one rewrite task with kind \"twist\" (respond to the change)");}
     check(!has(lesson,"rewrite_application"),"PM_LEGACY_REWRITE","Use root rewrite");
-    check(Array.isArray(lesson.rewrite)&&range(lesson.rewrite.length,3,4)&&lesson.rewrite.every(x=>["task","reference_answer","reference_cn"].every(k=>str(x?.[k]))),"PM_REWRITE_INVALID","3-4 bilingual rewrite tasks required");
+    check(Array.isArray(lesson.rewrite)&&range(lesson.rewrite.length,SL?1:3,SL?2:4)&&lesson.rewrite.every(x=>["task","reference_answer","reference_cn"].every(k=>str(x?.[k]))),"PM_REWRITE_INVALID",SL?"Review phase: 1 rewrite (the twist; Sunday also the challenge), each bilingual":"3-4 bilingual rewrite tasks required");
+    if(SL){const rw=Array.isArray(lesson.rewrite)?lesson.rewrite:[],tw=rw.filter(x=>x&&x.kind==="twist");
+      check(tw.length===1&&str(tw[0].frame)&&/……|___/.test(tw[0].frame)&&rw.every(x=>x&&(x.kind==="twist"||x.kind==="challenge")),"PHASE_PM_SLIM_REWRITE","Review phase: exactly one rewrite with kind \"twist\" and a fill-in frame (blanks as …… or ___); any other rewrite must be the Sunday challenge");}
     const test=lesson.daily_test,qs=Array.isArray(test?.questions)?test.questions:[];
     check(!has(test,"items")&&qs.length===6&&qs.filter(q=>q?.type==="choice").length===3&&qs.filter(q=>q?.type==="fill").length===2&&qs.filter(q=>q?.type==="order").length===1,"PM_TEST_SCHEMA","Only 3 choice + 2 fill + 1 order in questions");
     qs.filter(q=>q?.type==="choice").forEach((q,i)=>choice(q,i,"prompt"));
@@ -235,8 +239,10 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
       check(/按照中文|根据中文/.test(q.prompt||"")&&range(q.tokens?.length,5,8)&&q.tokens.every(str)&&str(q.answer)&&str(q.answer_cn)&&str(q.explain),"PM_ORDER_INVALID","Order structure");
       if(Array.isArray(q.tokens)&&str(q.answer))check(norm(q.tokens.join(" "))===norm(q.answer),"PM_ORDER_ANSWER_MISMATCH","Reconstruction from tokens");
     });
-    check(Array.isArray(test?.self_check)&&test.self_check.length>0&&test.self_check.every(str),"PM_SELF_CHECK_INVALID","Nonempty self_check");
+    if(SL)check(test?.self_check===undefined,"PM_SELF_CHECK_INVALID","Review phase: no self_check (the lesson-end recall and the card ratings cover it)");
+    else check(Array.isArray(test?.self_check)&&test.self_check.length>0&&test.self_check.every(str),"PM_SELF_CHECK_INVALID","Nonempty self_check");
     check(lesson.review&&!Array.isArray(lesson.review)&&str(lesson.review.title)&&Array.isArray(lesson.review.steps)&&lesson.review.steps.length>0&&lesson.review.steps.every(str),"PM_FINAL_REVIEW_INVALID","Review {title,steps[]}");
+    if(SL)check(lesson.review&&Array.isArray(lesson.review.steps)&&lesson.review.steps.length===1&&str(lesson.review.retell_reference)&&str(lesson.review.retell_reference_cn),"PHASE_PM_SLIM_REVIEW","Review phase: review = one optional 30-second retell step + retell_reference (Indonesian) + retell_reference_cn");
   }
 
   // Review phase: every lesson names its theme and day role, which must match data/themes.json for this date.
@@ -284,7 +290,7 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
       const own=new Set(session==="am"?[...vocab.map(word),...ws(lesson.review_vocab),...ws(lesson.cycle_vocab)]:vocab.map(word));
       const texts=[...(session==="am"?(Array.isArray(lesson.sentences)?lesson.sentences.map(x=>x&&x.text):[]):[]),lesson.reading&&lesson.reading.text,
         ...vocab.map(v=>v&&v.example),...(session==="am"?[lesson.output&&lesson.output.reference_answer]:[]),
-        ...(session==="pm"?[...(lesson.dialogue&&Array.isArray(lesson.dialogue.lines)?lesson.dialogue.lines.map(l=>l&&l.id):[]),...(Array.isArray(lesson.rewrite)?lesson.rewrite.map(r=>r&&r.reference_answer):[])]:[])]
+        ...(session==="pm"?[...(lesson.dialogue&&Array.isArray(lesson.dialogue.lines)?lesson.dialogue.lines.map(l=>l&&l.id):[]),...(Array.isArray(lesson.rewrite)?lesson.rewrite.map(r=>r&&r.reference_answer):[]),...(lesson.review&&lesson.review.retell_reference?[lesson.review.retell_reference]:[])]:[])]
         .filter(str).map(norm).join(" | ");
       const fw=lf&&Array.isArray(lf.words)?lf.words:[],fp=lf&&Array.isArray(lf.patterns)?lf.patterns:[];
       check(lf&&typeof lf==="object"&&!Array.isArray(lf)&&fw.length===3&&fw.every(str)&&new Set(fw.map(norm)).size===3,"LESSON_FOCUS_INVALID","lesson_focus.words: exactly 3 distinct words");
