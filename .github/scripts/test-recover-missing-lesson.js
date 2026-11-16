@@ -142,8 +142,8 @@ test('workflow contains original recovery but no backup-generator path',()=>{
   assert(!/generate-prototype|engine\.generate|v4FallbackEnabled|LESSON_V4_FALLBACK/.test(recovery));
   assert(wf.includes("      - name: Recover saved original lesson and commit the two-file transaction"));
   assert(wf.includes("node .github/scripts/recover-missing-lesson.js"));
-  assert(wf.includes('"status":"no_original"'));
-  assert(wf.includes('"status":"original_invalid"'));
+  assert(wf.includes('(no_original|already_published)'));
+  assert(wf.includes('(no_original|original_invalid)'));
   assert(wf.includes('ORIGINAL_STAGED_FOUND'));
   assert(wf.includes('NORMAL_RELEASE_ACTIVE'));
   assert(wf.includes('ORIGINAL_RECOVERY_SOURCE'));
