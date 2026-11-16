@@ -163,9 +163,9 @@
       (v.example?`<div class="vcEx"><div class="vcExId">${esc2(displayText(v.example,list))} ${say(v.example)}</div>${v.example_cn?`<div class="vcExCn">${esc2(v.example_cn)}</div>`:''}</div>`:'')+root+
       (detail?`<button type="button" class="vcMore" data-vc-more>展开 搭配 · 同词根 · 辨析 · 用法 ▼</button><div class="vcDetail" hidden>${detail}</div>`:'')+vcRcRate(v)+`</div>`;
   }
-  // 2026-11-16 (user-approved): review-cycle cards (old words) carry a 会了 toggle, so a word the learner already knows
-  // can leave review straight from the lesson. Same pool API as the vocabulary page (markMastered / reactivate);
-  // set only while content() renders the word cards of a lesson with cycle_vocab.
+  // Historical courses can retain their original 会了 toggle (markMastered / reactivate).
+  // Review-phase lessons use 记得 / 模糊 / 忘了 self-ratings instead, and never show 会了
+  // on the same card. The vocabulary library remains the place to confirm mastery.
   let VC_KNOWN=null;
   const attr=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
   function vcKnownBtn(w){
@@ -181,8 +181,9 @@
     });}
   // 2026-11-16 (user-approved, REGRESSION-GUARD §51) "先想，后看": in review-phase lessons (x.phase), old-word cards show only
   // the Indonesian word until 看答案, then 记得 / 模糊 / 忘了; the reading's Chinese is folded and the lesson's old words are
-  // tappable. 忘了 and a tapped word go into the existing lesson-error signal (WeaknessPool.recordLessonWrong, once per
-  // lesson and word), which the next lessons already rank first. Ratings are kept per lesson in this browser.
+  // tappable. Reading lookups are observation only (local "peeked" set); only an explicit 忘了
+  // sends the existing lesson-error signal (WeaknessPool.recordLessonWrong, once per lesson/word).
+  // Ratings and reading lookups are kept per lesson in this browser.
   // Display only: lesson JSON, selection rules and mastery are unchanged; lessons without x.phase render as before.
   let VC_RECALL=null;
   const RC_STORE='indo_recall_first_v1',RC_LABEL={ok:'记得',mid:'模糊',bad:'忘了'},RC_NEXT={ok:'',mid:'',bad:'会优先排进后面的课'};
@@ -228,7 +229,7 @@
         box.querySelectorAll('[data-rc-peek]').forEach(b=>{if(lfNorm(b.dataset.rcPeek)===k)b.classList.add('on')});
         const list=box.querySelector('[data-rc-box]');if(list&&!st.p.includes(k))list.insertAdjacentHTML('afterbegin',rcPeekRow(w,pk.dataset.rcCn));
         if(!st.p.includes(k)){st.p.push(k);rcPut(key,st)}
-        rcSignal(key,w,{word:w,cn:pk.dataset.rcCn||'',source:'阅读点开',source_date:box.dataset.rcDate||'',session:box.dataset.rcSession||''});return}
+        return}
       const tg=T.closest('[data-rc-cn-toggle]');if(tg){const tr=tg.closest('.rcRead')&&tg.closest('.rcRead').querySelector('.dailyFixTranslation');if(!tr)return;const on=tr.classList.toggle('rcFold');tg.textContent=on?'看整段中文 ▼':'收起中文 ▲';return}
     });}
   function vcEvenRows(){const grids=document.querySelectorAll('#dailyBody .vcGrid');grids.forEach(g=>{const cards=[...g.children];cards.forEach(c=>c.style.minHeight='');const rows={};cards.forEach(c=>{(rows[c.offsetTop]=rows[c.offsetTop]||[]).push(c)});
@@ -246,12 +247,12 @@
   function readingBody(x,f){const R=rcSetup(x);
     if(!R)return `<div class="dailyFixReading">${lfMarkText(esc2(displayText(x.reading.text||'',x.vocab)),f,x).replace(/\n/g,'<br>')}</div><div class="dailyFixActions"><button class="secondary" onclick='speak(${JSON.stringify(x.reading.text||'')})'>🔊 朗读全文</button></div><div class="dailyFixTranslation">${esc2(x.reading.cn||'').replace(/\n/g,'<br>')}</div>`;
     const seen=R.st.p.map(k=>R.peek.get(k)).filter(Boolean);
-    return `<div class="rcRead" data-rc-key="${attr(R.key)}" data-rc-date="${attr(R.date)}" data-rc-session="${attr(R.session)}"><div class="rcHint"><b>先直接读印尼语。</b>带虚线的是学过的词，读得懂就接着读，<b>想不起来再点</b>；点过的词会排进后面的复习。中文先折起来，读完再看。</div><div class="dailyFixReading">${rcReading(lfMarkText(esc2(displayText(x.reading.text||'',x.vocab)),f,x),R).replace(/\n/g,'<br>')}</div><div class="rcPeekBox" data-rc-box>${seen.reverse().map(o=>rcPeekRow(o.w,o.cn)).join('')}</div><div class="dailyFixActions"><button class="secondary" onclick='speak(${JSON.stringify(x.reading.text||'')})'>🔊 朗读全文</button><button class="secondary" type="button" data-rc-cn-toggle>看整段中文 ▼</button></div><div class="dailyFixTranslation rcFold">${esc2(x.reading.cn||'').replace(/\n/g,'<br>')}</div></div>`}
+    return `<div class="rcRead" data-rc-key="${attr(R.key)}" data-rc-date="${attr(R.date)}" data-rc-session="${attr(R.session)}"><div class="rcHint"><b>先直接读印尼语。</b>带虚线的是学过的词，读得懂就接着读，<b>想不起来再点</b>；点开只记录「看过释义」，不算答错。中文先折起来，读完再看。</div><div class="dailyFixReading">${rcReading(lfMarkText(esc2(displayText(x.reading.text||'',x.vocab)),f,x),R).replace(/\n/g,'<br>')}</div><div class="rcPeekBox" data-rc-box>${seen.reverse().map(o=>rcPeekRow(o.w,o.cn)).join('')}</div><div class="dailyFixActions"><button class="secondary" onclick='speak(${JSON.stringify(x.reading.text||'')})'>🔊 朗读全文</button><button class="secondary" type="button" data-rc-cn-toggle>看整段中文 ▼</button></div><div class="dailyFixTranslation rcFold">${esc2(x.reading.cn||'').replace(/\n/g,'<br>')}</div></div>`}
   // 2026-11-16 (user decision, REVIEW-PHASE.md 2.1): a review-phase 08:00 lesson with `story` is one episode of this week's
   // serial. The episode comes first (recap → text → next), then the word cards; everything else keeps its order.
   function storyOf(x){const s=x&&x.session==='am'&&x.reading&&x.story;return s&&typeof s==='object'&&!Array.isArray(s)&&Number.isInteger(s.episode)?s:null}
   function storyBody(x,f,s){return (s.series?`<div class="stSeries">${esc2(s.series)}</div>`:'')+(s.previously_cn?`<div class="stPrev"><b>上集回顾</b>${esc2(s.previously_cn)}</div>`:'')+readingBody(x,f)+(s.next_cn?`<div class="stNext"><b>下集预告</b>${esc2(s.next_cn)}</div>`:'')}
-  function content(x){let no=1,h='';const f=focusData(x);if(f){h+=focusCardHtml(x,f);rememberFocus(x,f);}const st=storyOf(x);if(st)h+=sec(no++,'本周连载 · 第'+st.episode+'集'+(x.reading.title?' · '+x.reading.title:''),storyBody(x,f,st));VC_KNOWN=new Set((x.phase?rcOldWords(x):Array.isArray(x.cycle_vocab)?x.cycle_vocab:[]).map(lfNorm));VC_RECALL=rcSetup(x);if(x.vocab?.length)h+=sec(no++,st?'本集词汇':'今日词汇',(VC_RECALL?'<div class="rcHint"><b>学过的词先只显示印尼语</b>：心里说出意思，再点「看答案」，然后照实点 记得 / 模糊 / 忘了。</div>':'')+vocabHtml(x.vocab,f));VC_KNOWN=null;VC_RECALL=null;if(x.sentences?.length)h+=sec(no++,'高频句子',x.sentences.map(v=>`<div class="dailyFixItem${lfHit(f,v.id||v.text)?' lfLine':''}"><div class="dailyFixId">${esc2(displayText(v.id||v.text||'',x.vocab))}${sentSay(v.id||v.text||'')}</div><div class="dailyFixCnLine">${esc2(v.cn||'')}</div></div>`).join(''));if(x.reading&&!st)h+=sec(no++,'阅读'+(x.reading.title?' · '+x.reading.title:''),readingBody(x,f));if(x.quiz?.length)h+=sec(no++,'小测',x.quiz.map((q,i)=>quizHtml(q,i,x.vocab)).join(''));if(x.output)h+=sec(no++,'主动输出',outputHtml(x.output,x.vocab));{const rc=reviewCardsHtml(x.review_cards,x.vocab);if(rc)h+=sec(no++,'复习',rc);else if(x.review?.length)h+=sec(no++,'复习',x.review.map(r=>window.reviewReadableHtml(typeof r==='string'?r:(r.text||''),x.vocab)).join(''));}if(x.dialogue?.lines)h+=sec(no++,x.dialogue.title||'情景对话',x.dialogue.lines.map(l=>`<div class="dailyFixItem${lfHit(f,l.id)?' lfLine':''}"><div class="dailyFixId"><b>${esc2(l.speaker||'')}</b>${l.speaker?': ':''}${esc2(displayText(l.id||'',x.vocab))}</div><div class="dailyFixCnLine">${esc2(l.cn||'')}</div></div>`).join(''));return h}
+  function content(x){let no=1,h='';const f=focusData(x);if(f){h+=focusCardHtml(x,f);rememberFocus(x,f);}const st=storyOf(x);if(st)h+=sec(no++,'本周连载 · 第'+st.episode+'集'+(x.reading.title?' · '+x.reading.title:''),storyBody(x,f,st));VC_KNOWN=new Set((x.phase?[]:Array.isArray(x.cycle_vocab)?x.cycle_vocab:[]).map(lfNorm));VC_RECALL=rcSetup(x);if(x.vocab?.length)h+=sec(no++,st?'本集词汇':'今日词汇',(VC_RECALL?'<div class="rcHint"><b>学过的词先只显示印尼语</b>：心里说出意思，再点「看答案」，然后照实点 记得 / 模糊 / 忘了。</div>':'')+vocabHtml(x.vocab,f));VC_KNOWN=null;VC_RECALL=null;if(x.sentences?.length)h+=sec(no++,'高频句子',x.sentences.map(v=>`<div class="dailyFixItem${lfHit(f,v.id||v.text)?' lfLine':''}"><div class="dailyFixId">${esc2(displayText(v.id||v.text||'',x.vocab))}${sentSay(v.id||v.text||'')}</div><div class="dailyFixCnLine">${esc2(v.cn||'')}</div></div>`).join(''));if(x.reading&&!st)h+=sec(no++,'阅读'+(x.reading.title?' · '+x.reading.title:''),readingBody(x,f));if(x.quiz?.length)h+=sec(no++,'小测',x.quiz.map((q,i)=>quizHtml(q,i,x.vocab)).join(''));if(x.output)h+=sec(no++,'主动输出',outputHtml(x.output,x.vocab));{const rc=reviewCardsHtml(x.review_cards,x.vocab);if(rc)h+=sec(no++,'复习',rc);else if(x.review?.length)h+=sec(no++,'复习',x.review.map(r=>window.reviewReadableHtml(typeof r==='string'?r:(r.text||''),x.vocab)).join(''));}if(x.dialogue?.lines)h+=sec(no++,x.dialogue.title||'情景对话',x.dialogue.lines.map(l=>`<div class="dailyFixItem${lfHit(f,l.id)?' lfLine':''}"><div class="dailyFixId"><b>${esc2(l.speaker||'')}</b>${l.speaker?': ':''}${esc2(displayText(l.id||'',x.vocab))}</div><div class="dailyFixCnLine">${esc2(l.cn||'')}</div></div>`).join(''));return h}
   // One-day side-by-side classroom. The official AM stays the single index/runtime source.
   const COMPARE_DATE='2026-10-02';
   const COMPARE_FILE='data/comparison/2026-10-02-am-chatgpt.json';
