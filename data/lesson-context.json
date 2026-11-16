@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-16",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 87
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-15T23:40:55.740Z",
-    "lesson_watermark": "2026-11-15 18:00",
-    "index_updated": "2026-11-15",
-    "runtime_hash": "a6285628a9ab2c09bcbddff053188daddf8369d4a82f817bbf5b5c92da9f36fd",
-    "index_hash": "7ffff13c2498c5e1b2b908425262425815256f037c0b903a1a632099822763c1",
+    "runtime_generated_at": "2026-11-16T00:31:34.873Z",
+    "lesson_watermark": "2026-11-16 08:00",
+    "index_updated": "2026-11-16",
+    "runtime_hash": "325ffa2c6a3009f945c04e603a33ceb2d5eda3ff65e8cb61477fb990ebe16617",
+    "index_hash": "ba63f3fc9e488fd9ac6a7260a9ee89f3cd6785fef0efb83d4d689a20770f0043",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -652,16 +652,6 @@
         "一点一点地推进"
       ],
       [
-        "tingkat",
-        3,
-        0,
-        "",
-        "2026-10-26T07:54:51.240Z",
-        "等级、层次",
-        "tingkat",
-        ""
-      ],
-      [
         "nyangka",
         3,
         0,
@@ -672,16 +662,6 @@
         ""
       ],
       [
-        "seharusnya",
-        3,
-        0,
-        "",
-        "2026-10-19T05:53:09.301Z",
-        "本应该、按理说",
-        "harus",
-        ""
-      ],
-      [
         "putar balik",
         3,
         0,
@@ -689,16 +669,6 @@
         "2026-11-15T03:34:06.472Z",
         "掉头；调头",
         "putar + balik",
-        ""
-      ],
-      [
-        "tetap",
-        3,
-        0,
-        "",
-        "2026-11-14T08:24:24.484Z",
-        "仍然；还是；保持",
-        "tetap",
         ""
       ],
       [
@@ -800,16 +770,6 @@
         "确信；确定；有把握",
         "yakin",
         "确信；相信"
-      ],
-      [
-        "misalnya",
-        2,
-        0,
-        "",
-        "2026-10-19T05:53:28.439Z",
-        "例如；比如说",
-        "misal",
-        "例子；假设"
       ],
       [
         "pihak",
@@ -1042,16 +1002,6 @@
         "钥匙；锁"
       ],
       [
-        "nanya",
-        3,
-        0,
-        "",
-        "2026-11-15T03:31:16.595Z",
-        "问；询问（口语）",
-        "tanya",
-        "问；询问"
-      ],
-      [
         "mendengarkan",
         3,
         0,
@@ -1090,16 +1040,6 @@
         "惊讶；震惊",
         "kejut",
         "惊；使吃惊"
-      ],
-      [
-        "nyampe",
-        3,
-        0,
-        "",
-        "2026-11-15T03:33:52.883Z",
-        "到达",
-        "sampai",
-        "到达；直到"
       ],
       [
         "menangis",
@@ -2250,6 +2190,96 @@
         "吃醋；嫉妒（多指感情）",
         "cemburu",
         "吃醋"
+      ],
+      [
+        "gengsi",
+        2,
+        0,
+        "",
+        "2026-10-21T01:43:05.473Z",
+        "爱面子；拉不下脸",
+        "gengsi",
+        "面子；体面"
+      ],
+      [
+        "kecewa",
+        2,
+        0,
+        "",
+        "2026-10-21T01:44:38.608Z",
+        "失望",
+        "kecewa",
+        "失望"
+      ],
+      [
+        "kepo",
+        2,
+        0,
+        "",
+        "2026-10-21T01:45:12.804Z",
+        "爱打听；好奇想探究别人的事（口语）",
+        "kepo",
+        "爱打听（口语）"
+      ],
+      [
+        "mengunggah",
+        2,
+        0,
+        "",
+        "2026-10-23T23:29:47.064Z",
+        "上传；发布（到网上）",
+        "unggah",
+        "上传"
+      ],
+      [
+        "nyesel",
+        2,
+        1,
+        "2026-10-15T07:43:08.156Z",
+        "2026-10-27T07:31:10.456Z",
+        "后悔（口语）",
+        "sesal",
+        "懊悔"
+      ],
+      [
+        "selamanya",
+        2,
+        0,
+        "",
+        "2026-10-23T23:35:54.101Z",
+        "永远；一辈子",
+        "lama",
+        "久；长"
+      ],
+      [
+        "seharusnya",
+        3,
+        0,
+        "",
+        "2026-10-19T05:53:09.301Z",
+        "本应该、按理说",
+        "harus",
+        "必须"
+      ],
+      [
+        "tingkat",
+        3,
+        0,
+        "",
+        "2026-10-26T07:54:51.240Z",
+        "等级、层次",
+        "tingkat",
+        "等级；层"
+      ],
+      [
+        "tetap",
+        3,
+        0,
+        "",
+        "2026-11-14T08:24:24.484Z",
+        "仍然；还是；保持",
+        "tetap",
+        "固定；不变"
       ]
     ],
     "focus": [
@@ -2798,6 +2828,18 @@
         "panahan",
         "suci"
       ]
+    },
+    {
+      "date": "2026-11-16",
+      "session": "am",
+      "review_core": [
+        "benerin",
+        "ketiban",
+        "misalnya",
+        "nanya",
+        "nyampe"
+      ],
+      "new_words": []
     }
   ],
   "previous_pm": {
@@ -2815,7 +2857,60 @@
       "karakter"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-16",
+    "vocab": [
+      [
+        "seharusnya",
+        "本应该；按理说",
+        "should (have); supposedly",
+        "harus",
+        "必须"
+      ],
+      [
+        "tingkat",
+        "等级；层次；程度",
+        "level; degree",
+        "tingkat",
+        "等级；层"
+      ],
+      [
+        "tetap",
+        "仍然；照样；保持不变",
+        "still; remain (the same)",
+        "tetap",
+        "固定；不变"
+      ],
+      [
+        "perpaduan",
+        "融合；结合；搭配",
+        "blend; combination",
+        "padu",
+        "协调；融合"
+      ],
+      [
+        "dimaksudkan",
+        "意在；旨在；（被）打算用来……",
+        "to be intended (for)",
+        "maksud",
+        "意思；目的"
+      ],
+      [
+        "penanganan",
+        "处理；应对（的过程）",
+        "handling",
+        "tangan",
+        "手"
+      ]
+    ],
+    "review_vocab": [
+      "benerin",
+      "ketiban",
+      "misalnya",
+      "nanya",
+      "nyampe"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

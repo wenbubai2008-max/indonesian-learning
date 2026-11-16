@@ -9,20 +9,23 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "原始课程"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-22 08:00",
-    "last_seen": "2026-08-22 08:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-08-22"
+      "2026-08-22",
+      "2026-11-16"
     ],
-    "example": "Tingkat bahasa Indonesia saya masih A2.",
-    "example_cn": "我的印尼语水平还在 A2。",
+    "example": "Sebelum memesan untuk acara keluarga, khususnya kalau ada anak-anak, cek dulu tingkat kepedasannya.",
+    "example_cn": "给家庭聚会下单之前，特别是有小孩的时候，先查一下辣度等级。",
     "lesson_occurrences": [
-      "2026-08-22 08:00"
-    ]
+      "2026-08-22 08:00",
+      "2026-11-16 08:00"
+    ],
+    "root_cn": "等级；层"
   },
   {
     "word": "meningkat",
@@ -4173,27 +4176,32 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "seharusnya",
     "cn": "本应该、按理说",
-    "en": "",
+    "en": "should (have); supposedly",
     "root": "harus",
     "categories": [
       "每日学习",
       "19:00",
-      "原始课程"
+      "原始课程",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-08-30 19:00",
-    "last_seen": "2026-08-30 19:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-08-30"
+      "2026-08-30",
+      "2026-11-16"
     ],
-    "example": "Seharusnya hari ini udah selesai.",
-    "example_cn": "按理今天应该好了。",
+    "example": "Menurut keterangan di foto, satu bungkus seharusnya berisi 250 gram, bukan 200 gram.",
+    "example_cn": "按照照片上的说明，一包本该装 250 克，而不是 200 克。",
     "lesson_occurrences": [
-      "2026-08-30 19:00"
-    ]
+      "2026-08-30 19:00",
+      "2026-11-16 08:00"
+    ],
+    "root_cn": "必须"
   },
   {
     "word": "terlanjur",
@@ -5156,22 +5164,27 @@ window.DAILY_VOCAB_DB = [
     "root": "tetap",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-01 19:00",
-    "last_seen": "2026-09-01 19:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-01"
+      "2026-09-01",
+      "2026-11-16"
     ],
-    "example": "Tetap kabarin aku kalau ada perubahan.",
-    "example_cn": "如果有变化还是告诉我一声。",
+    "example": "Harga cabai sedang naik, tapi Bu Narti tetap menjual keripiknya dengan harga lama.",
+    "example_cn": "辣椒价格正在上涨，但娜尔蒂阿姨照样按原价卖她的薯片。",
     "lesson_occurrences": [
-      "2026-09-01 19:00"
-    ]
+      "2026-09-01 19:00",
+      "2026-11-16 08:00"
+    ],
+    "root_cn": "固定；不变"
   },
   {
     "word": "bahkan",
@@ -8275,9 +8288,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-11-14 18:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -8286,13 +8299,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-09",
       "2026-10-26",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
       "2026-09-09 08:00",
       "2026-09-09 19:00",
       "2026-10-26 18:00",
-      "2026-11-14 18:00"
+      "2026-11-14 18:00",
+      "2026-11-16 08:00"
     ]
   },
   {
@@ -10585,19 +10600,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "比如下雨的话，我们可以换到室内的地方。",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 19:00",
-    "last_seen": "2026-09-14 19:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
-      "2026-09-14 19:00"
+      "2026-09-14 19:00",
+      "2026-11-16 08:00"
     ]
   },
   {
@@ -11153,19 +11172,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-11-02 08:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-16",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
       "2026-09-16 08:00",
-      "2026-11-02 08:00"
+      "2026-11-02 08:00",
+      "2026-11-16 08:00"
     ]
   },
   {
@@ -13538,17 +13559,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-23 08:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-23"
+      "2026-09-23",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
-      "2026-09-23 08:00"
+      "2026-09-23 08:00",
+      "2026-11-16 08:00"
     ]
   },
   {
@@ -13939,20 +13962,22 @@ window.DAILY_VOCAB_DB = [
       "口语",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-21 18:00",
-    "last_seen": "2026-09-22 08:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-09-21",
-      "2026-09-22"
+      "2026-09-22",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
       "2026-09-21 18:00",
-      "2026-09-22 08:00"
+      "2026-09-22 08:00",
+      "2026-11-16 08:00"
     ]
   },
   {
@@ -21840,16 +21865,16 @@ window.DAILY_VOCAB_DB = [
     "en": "handling; treatment",
     "root": "tangan",
     "root_cn": "手",
-    "example": "Penanganan longsor di jalan menuju desa itu cukup cepat; dalam sehari jalannya sudah bisa dilewati motor.",
-    "example_cn": "通往那个村子的路上发生塌方，处理得挺快；一天之内摩托车就能通过了。",
+    "example": "Penanganan paket yang rusak lebih cepat kalau pembeli punya video saat membuka paket.",
+    "example_cn": "如果买家有拆包裹时录的视频，损坏包裹的处理会更快。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-11-15 18:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -21859,14 +21884,16 @@ window.DAILY_VOCAB_DB = [
       "2026-10-26",
       "2026-10-29",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
       "2026-10-15 08:00",
       "2026-10-26 18:00",
       "2026-10-29 18:00",
       "2026-11-14 18:00",
-      "2026-11-15 18:00"
+      "2026-11-15 18:00",
+      "2026-11-16 08:00"
     ]
   },
   {
@@ -23347,16 +23374,16 @@ window.DAILY_VOCAB_DB = [
     "en": "to be intended (to / for)",
     "root": "maksud",
     "root_cn": "意思；目的",
-    "example": "Polisi tidur di depan sekolah itu dimaksudkan supaya pengendara memperlambat motornya.",
-    "example_cn": "学校门口的减速带，本意是让骑车的人放慢速度。",
+    "example": "Kolom catatan di halaman pembayaran dimaksudkan untuk permintaan khusus, misalnya jam pengiriman atau warna kemasan.",
+    "example_cn": "付款页面上的备注栏是用来写特别要求的，比如送货时间或包装颜色。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-10-19 08:00",
-    "last_seen": "2026-11-09 18:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -23365,13 +23392,15 @@ window.DAILY_VOCAB_DB = [
       "2026-10-19",
       "2026-10-29",
       "2026-10-31",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
       "2026-10-19 08:00",
       "2026-10-29 18:00",
       "2026-10-31 18:00",
-      "2026-11-09 18:00"
+      "2026-11-09 18:00",
+      "2026-11-16 08:00"
     ]
   },
   {
@@ -23965,16 +23994,16 @@ window.DAILY_VOCAB_DB = [
     "en": "combination; blend",
     "root": "padu",
     "root_cn": "协调；融合",
-    "example": "Pedagang di pasar itu menjual kain yang motifnya perpaduan batik dan tenun.",
-    "example_cn": "那个市场里的商贩卖一种布，图案融合了蜡染和手织布的风格。",
+    "example": "Kemasannya menarik; perpaduan warna merah dan kuning membuat keripiknya terlihat pedas dan gurih.",
+    "example_cn": "包装很吸引人；红色和黄色的配色让薯片看起来又辣又香。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-11-13 08:00",
+    "last_seen": "2026-11-16 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -23984,14 +24013,16 @@ window.DAILY_VOCAB_DB = [
       "2026-10-24",
       "2026-10-28",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "lesson_occurrences": [
       "2026-10-21 08:00",
       "2026-10-24 18:00",
       "2026-10-28 18:00",
       "2026-11-12 18:00",
-      "2026-11-13 08:00"
+      "2026-11-13 08:00",
+      "2026-11-16 08:00"
     ]
   },
   {
