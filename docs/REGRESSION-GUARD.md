@@ -723,6 +723,6 @@
 - **阅读**：中文默认折起来（「看整段中文」展开）；本课学过的词（加早课 `review_vocab`）带虚线可点，点开在正文下面显示意思并标橙。
 - **信号**：「忘了」和阅读里点开的词，各调用一次 `WeaknessPool.recordLessonWrong`（同一课同一个词只记一次，来源写“课程回想”/“阅读点开”），沿用现有“课程中答错或卡住”的优先复习。记得 / 模糊只记在本机。
 - **本机记录**：`localStorage` 键 `indo_recall_first_v1`（按课保存评分、点开过的词、已发信号，保留最近 40 课）。**不能用 `indo_lesson_recall_v1`**：那是课末回忆的数据，会同步、进周报和诊断。
-- **CI 修正（用户同意）**：`sync-daily-vocab.yml` 的 preflight 会在 CI 里只读演练已停用的 V4 备用课程，它的早课需要 10 个新词；11-16 新词用完后，目标是早课时这项演练只会失败（main 上同样失败），所有维护 PR 都会变红。复习阶段开启时跳过这项 AM 演练（与已有的 PM 跳过同理）；正式环境 V4 仍停用，其他检查照常跑。课程发布 PR（`lesson-release-*`）本来就不跑 preflight。
+- **CI 修正（用户同意）**：`sync-daily-vocab.yml` 的 preflight 会在 CI 里只读演练已停用的 V4 备用课程，它的早课需要 10 个新词；11-16 新词用完后，目标是早课时这项演练只会失败（main 上同样失败），所有维护 PR 都会变红。复习阶段开启时跳过这项 AM 演练，包括只读演练和“写到临时目录”的演练两步（与已有的 PM 跳过同理）；正式环境 V4 仍停用，其他检查照常跑。课程发布 PR（`lesson-release-*`）本来就不跑 preflight。
 - **守卫**：`history-v2.js` 含 `vcRecall`、`data-rc-rate`、`recordLessonWrong`、`indo_recall_first_v1`，且 `RC_STORE` 不是 `indo_lesson_recall_v1`。
 

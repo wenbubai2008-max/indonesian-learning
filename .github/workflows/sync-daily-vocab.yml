@@ -301,6 +301,11 @@ jobs:
             echo 'Skipping CI-only dormant V4 PM write rehearsal for modern 5-new contract.'
             exit 0
           fi
+          # 2026-11-16 (user-approved, REGRESSION-GUARD §51): review phase, no new words for the 10-new-word V4 AM engine.
+          if [[ "$(node -p "const RP=require('./.github/scripts/review-phase.js');RP.on(RP.load(),'$day')")" == "true" ]]; then
+            echo 'Skipping CI-only dormant V4 AM write rehearsal: review phase, no new words.'
+            exit 0
+          fi
           (
             cd "$tmp"
             # CI-ONLY rehearsal in a temp copy of data/; never touches the repository or production.
