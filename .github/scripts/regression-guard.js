@@ -707,7 +707,7 @@ try {
     ok(!/setItem|removeItem|recordLessonWrong|markMastered/.test(wr),'weekly report never writes');
     ok(/MIN_SAMPLE=10/.test(wr)&&/样本不足/.test(ui)&&/age<7\|\|age>30/.test(wr),'retention uses formal answers on words 7-30 days after first teaching, with a 10-answer minimum');
     ok(/\['week','本周'\]/.test(ui)&&/weeklyHTML\((data)?\)/.test(ui),'profile 本周 tab shows the weekly report');
-    // §51 (2026-11-16, user decision): in the review phase the profile reports review, not new words.
+    // §52 (2026-11-16, user decision): in the review phase the profile reports review, not new words.
     const okNew51=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
     okNew51(ui.includes('function reviewWeeklyHTML(r)')&&ui.includes('本周课程复习到的词')&&ui.includes("data.active_master_pool==='exhausted'")&&ui.includes('if(!reviewOn(data))out.push([\'新词数量先不自动调整\'')&&read('data/ability-observation.js').includes('复习目标已生效')&&read('.github/scripts/build-vocab-profile.js').includes('review_phase:{active:phaseOn'),'profile switches to review-phase wording: new words finished, weekly review numbers, goals in force');
   }
