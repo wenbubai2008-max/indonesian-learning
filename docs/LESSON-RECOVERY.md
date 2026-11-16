@@ -44,16 +44,16 @@ Always preserve phase, ref/path, pinned main SHA, candidate/hash if available, r
 
 Status examples: CONTEXT_STALE, FAILED_UNSTAGED_DRAFT, RELEASE_PARTIAL, PREFLIGHT_BLOCKED, RELEASE_PENDING_MERGE, PUBLISHED_PENDING_SYNC, SYNC_FAILED, PAGES_FAILED, VERIFIED_COMPLETE. Leave both daily automation tasks enabled on any failure.
 
-## V4 backup generation is paused (2026-10-03, user instruction)
+## Backup lesson generator permanently removed (2026-11-16, user instruction)
 
-Claude is the only automatic lesson generator (AM generation starts about 07:24, PM 17:30; task runbooks in `docs/tasks/`). All automatic V4 entry points are off, while the V4 source stays in the repository and every official-lesson path is unchanged:
+Only the scheduled AM/PM lesson tasks generate new lessons. No production workflow or environment override can run an independent V4 backup generator; the old branch-create watcher, failed-release backup dispatch, and isolated CI generation rehearsals were removed.
 
-- `create:` branch-watcher trigger disabled and its job hard-disabled (`if: ${{ false }}`).
-- A failed lesson-release PR dispatches Sync only if the lesson is already published; otherwise it logs `LESSON_RECOVERY_V4_DISABLED` and dispatches nothing. The original lesson, branch, PR and error evidence stay untouched and the run is reported as failed.
-- `recover-missing-lesson.js` returns `v4_disabled` and builds no context unless `LESSON_V4_FALLBACK=1`. No production step sets that variable; only the two isolated PR-preflight rehearsals do, to keep the dormant source tested.
-- The two crons (08:30/18:05) still run the health check and Sync, and may resume the SAME saved original draft. They never generate a second lesson; a missing lesson is reported as a failed health check.
+- The two scheduled 08:30 / 18:05 Jakarta checks continue to verify Sync and completion. If an original lesson JSON has already been saved on its exact release branch, the existing recovery script may revalidate the **same unchanged original** through the canonical planner and publish that original with its index.
+- If no saved original exists, the recovery script returns `no_original` without generating or writing any course data. If the original is invalid, it returns `original_invalid` and exposes its rejection details. Neither result can create a replacement.
+- After a lesson PR fails, Sync is only dispatched when the original lesson is already published. Otherwise the failed PR, branch, draft, log and error evidence are preserved; no alternate lesson is dispatched.
+- The original publishing contract, single Sync writer, data/daily index barrier, two cron times, and 977-word master remain unchanged.
+- The historical `prototype/lesson-engine/` material is an independent development prototype, not referenced by the production recovery code, workflow or its CI; it is not a live fallback generator.
 
-Re-enable only on the user's explicit instruction (restore `create:`, the watcher condition and failed-PR dispatch, and update `regression-guard.js` in the same change).
 
 ## Migration boundary
 The historical `lesson-staging-v1`, `check-staged-drafts.js`, `publish-staged-lesson.js` and `github-publish-adapter.js` document the 2026-09-27/29 incidents but are no longer on the active automated ChatGPT lesson path. Their existence is not an instruction to stage twice. Do not remove historical lesson files, disable tasks, or weaken the old validator. Test the new path on an isolated code PR and with synthetic interruption/duplicate/conflict cases before switching the two task prompts. Real subsequent AM and PM releases are the final operational acceptance.

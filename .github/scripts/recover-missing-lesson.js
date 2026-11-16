@@ -9,10 +9,7 @@
 const fs=require('node:fs');
 const path=require('node:path');
 const {plan}=require('./plan-lesson-publication');
-const {buildLessonContext}=require('./build-lesson-context');
 const {collectReviewHistory}=require('./validate-lesson-candidate');
-const engine=require('../../prototype/lesson-engine/engine/generate-prototype');
-const {auditLesson}=require('../../prototype/lesson-engine/engine/quality');
 
 const validDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s||'')&&
   !Number.isNaN(Date.parse(s+'T00:00:00Z'))&&
@@ -23,17 +20,12 @@ const fileFor=(date,session)=>'data/daily/'+date+'-'+session+'.json';
 const previousDate=date=>new Date(Date.parse(date+'T00:00:00Z')-86400000).toISOString().slice(0,10);
 const json=(x)=>JSON.stringify(x,null,2)+'\n';
 
-// V4 backup-lesson generation is TEMPORARILY DISABLED by explicit user instruction (2026-10-03).
-// Claude is the only automatic lesson generator. This master switch is off unless the process
-// environment sets LESSON_V4_FALLBACK=1, and no production workflow step sets it. The V4 engine
-// source stays in the repository; re-enable ONLY on the user's explicit instruction.
-// Resuming the SAME saved original draft (originalCandidate) is unaffected by this switch.
-const v4FallbackEnabled=()=>process.env.LESSON_V4_FALLBACK==='1';
+// Only the already-saved original draft may be recovered. There is no backup generator,
+// environment override, or second candidate. A missing/invalid draft fails closed.
 
 function recover({
   date,session,mainHead,index,runtime,rules,read,originalCandidate,
-  contextBuilder=buildLessonContext,generate=engine.generate,planner=plan,
-  historyBuilder=collectReviewHistory,v4Enabled=v4FallbackEnabled()
+  planner=plan,historyBuilder=collectReviewHistory
 }){
   requireIt(validDate(date)&&['am','pm'].includes(session),'TARGET_INVALID','Expected real YYYY-MM-DD and am|pm');
   requireIt(/^[a-f0-9]{40}$/i.test(mainHead||''),'HEAD_INVALID','A pinned 40-character main SHA is required');
@@ -52,12 +44,15 @@ function recover({
   // Never overwrite an orphan lesson or silently paper over a true flag with a missing file.
   requireIt(!flag&&!official,'PARTIAL_PUBLICATION','Lesson/index disagree; manual integrity repair required');
 
+  // No original means no candidate: do not read context, build one, or generate.
+  if(originalCandidate===undefined)
+    return {status:'no_original',target,files:[],variant:null,originalRejection:null};
+
   const previousPm=read(fileFor(previousDate(date),'pm'),true);
   const sameDayAm=session==='pm'?read(fileFor(date,'am'),true):undefined;
   const reviewHistory=historyBuilder(index,date,session,p=>read(p));
 
-  // A same-slot original ChatGPT draft takes priority if it passes the SAME formal
-  // planner as an ordinary lesson PR. Do not apply V4-specific stylistic gates to it.
+  // A saved original draft must pass the SAME canonical planner as an ordinary lesson PR.
   // The caller must supply an exact, trusted release-branch snapshot (never arbitrary
   // remote content); an invalid draft cannot weaken the canonical eligibility rules.
   let originalRejection=null;
@@ -79,46 +74,9 @@ function recover({
     }
   }
 
-  // V4 is disabled: never build a context or generate a second/backup lesson. Report the state
-  // (with any original rejection as evidence) and let the caller fail visibly instead.
-  if(!v4Enabled){
-    return {status:'v4_disabled',target,files:[],variant:null,originalRejection};
-  }
+  // Invalid originals are rejected with their formal errors; never substitute another lesson.
+  return {status:'original_invalid',target,files:[],variant:null,originalRejection};
 
-  // Only a missing or formally rejected original may invoke the existing V4 engine.
-  const ctx=contextBuilder({index,runtime,rules,load:p=>read(p),sourceSha:mainHead});
-  requireIt(ctx?.target?.date===date&&ctx?.target?.session===session,
-    'TARGET_NOT_READY','Latest legal next lesson is '+JSON.stringify(ctx?.target));
-  requireIt(ctx.source?.runtime_generated_at===runtime.generated_at&&
-    ctx.source?.lesson_watermark===runtime.lesson_watermark,'CONTEXT_STALE','Context and runtime are inconsistent');
-  const rejected=[];
-  for(let variant=0;variant<6;variant++){
-    let lesson;
-    try{
-      lesson=generate(ctx,{variant});
-      const quality=auditLesson(lesson);
-      if(!quality.ok){
-        rejected.push({variant,errors:quality.errors});
-        continue;
-      }
-      const result=planner({
-        lesson,index,runtime,rules,expectedDate:date,expectedSession:session,mainHead,
-        sameDayAm,previousPm,reviewHistory
-      });
-      if(result.ok&&result.status==='ready'&&result.files?.length===2&&
-        result.files[0].path===target&&result.files[1].path==='data/daily/index.json'){
-        return {
-          status:'ready',target,source:'v4_generated',variant,files:result.files,
-          candidateHash:result.candidateHash,baselineFingerprint:result.baselineFingerprint,
-          originalRejection
-        };
-      }
-      rejected.push({variant,errors:result.errors||[{code:'UNEXPECTED_PLAN',detail:result.status}]});
-    }catch(e){
-      rejected.push({variant,errors:[{code:e.code||'GENERATION_FAILED',detail:String(e.message||e).slice(0,220)}]});
-    }
-  }
-  error('NO_VALID_VARIANT','All 6 V2 candidates failed the original planner: '+JSON.stringify({originalRejection,rejected}));
 }
 
 function parseArgs(args){
@@ -140,7 +98,7 @@ function run(args,root=process.cwd()){
   };
   let originalCandidate,originalParseError=null;
   if(a['original-candidate']){
-    // Read errors fail closed; only invalid draft JSON falls back to V4.
+    // Invalid JSON is recorded as rejection; it cannot trigger another candidate.
     const raw=fs.readFileSync(path.resolve(root,a['original-candidate']),'utf8');
     try{originalCandidate=JSON.parse(raw)}
     catch(e){
@@ -161,13 +119,13 @@ function run(args,root=process.cwd()){
     fs.writeFileSync(resolve('data/daily/index.json'),outcome.files[1].content);
   }
   return {ok:true,status:outcome.status,date:a.date,session:a.session,
-    source:outcome.source||(outcome.status==='v4_disabled'?'v4_disabled':'already_published'),variant:outcome.variant,
+    source:outcome.source||outcome.status,variant:outcome.variant,
     originalRejection:originalParseError?[{code:originalParseError}]:outcome.originalRejection||null,
     paths:outcome.files.map(x=>x.path),
     candidateHash:outcome.candidateHash||null,write:a.write};
 }
 if(require.main===module){
-  try{console.log('FALLBACK_LESSON '+JSON.stringify(run(process.argv.slice(2))))}
-  catch(e){console.error('FALLBACK_LESSON '+JSON.stringify({ok:false,code:e.code||'RECOVERY_ERROR',detail:String(e.message||e).slice(0,1500)}));process.exitCode=1}
+  try{console.log('ORIGINAL_RECOVERY '+JSON.stringify(run(process.argv.slice(2))))}
+  catch(e){console.error('ORIGINAL_RECOVERY '+JSON.stringify({ok:false,code:e.code||'RECOVERY_ERROR',detail:String(e.message||e).slice(0,1500)}));process.exitCode=1}
 }
-module.exports={recover,run,parseArgs,validDate,v4FallbackEnabled};
+module.exports={recover,run,parseArgs,validDate};

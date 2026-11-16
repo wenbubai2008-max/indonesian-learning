@@ -1,10 +1,5 @@
 name: Sync daily vocab
 on:
-  # V4 backup-lesson generation is TEMPORARILY DISABLED (user instruction 2026-10-03):
-  # Claude is the only automatic lesson generator. The branch-create watcher trigger below is
-  # switched off so no release scaffold can wake a backup generator. Re-enable (uncomment
-  # `create:` and the watcher job `if`) ONLY on the user's explicit instruction.
-  # create:
   push:
     branches: [main]
     paths:
@@ -23,13 +18,6 @@ on:
       - '.github/scripts/recover-missing-lesson.js'
       - '.github/scripts/normal-release-priority.jq'
       - '.github/scripts/test-recover-missing-lesson.js'
-      - 'prototype/lesson-engine/engine/core.js'
-      - 'prototype/lesson-engine/engine/quality.js'
-      - 'prototype/lesson-engine/engine/test-prototype.js'
-      - 'prototype/lesson-engine/engine/compare-quality.js'
-      - 'prototype/lesson-engine/materials/materials-bundle.json'
-      - 'prototype/lesson-engine/materials/microcontent.json'
-      - 'prototype/lesson-engine/materials/micro-scenes.json'
       - '.github/scripts/test-real-published-lesson.js'
       - '.github/scripts/check-release-pr.js'
       - '.github/scripts/test-release-pr.js'
@@ -57,13 +45,6 @@ on:
       - '.github/scripts/recover-missing-lesson.js'
       - '.github/scripts/normal-release-priority.jq'
       - '.github/scripts/test-recover-missing-lesson.js'
-      - 'prototype/lesson-engine/engine/core.js'
-      - 'prototype/lesson-engine/engine/quality.js'
-      - 'prototype/lesson-engine/engine/test-prototype.js'
-      - 'prototype/lesson-engine/engine/compare-quality.js'
-      - 'prototype/lesson-engine/materials/materials-bundle.json'
-      - 'prototype/lesson-engine/materials/microcontent.json'
-      - 'prototype/lesson-engine/materials/micro-scenes.json'
       - '.github/scripts/review-rotation.js'
       - '.github/scripts/rank-review-candidates.js'
       - '.github/scripts/check-recurrence.js'
@@ -84,8 +65,7 @@ on:
   schedule:
     # The existing two daily checks run at 08:30 and 18:05 in Jakarta.
     # AM waits 30 minutes so the Claude 08:00 lesson (started 07:30) has time to publish.
-    # While V4 is disabled these only run the health check/Sync and may resume the SAME saved
-    # original draft; they never generate a backup lesson. Actions may start late.
+    # These checks may resume an already-saved original draft but never generate a replacement.
     - cron: '30 1 * * *'
     - cron: '5 11 * * *'
   workflow_dispatch:
@@ -105,101 +85,10 @@ permissions:
   actions: read
   pull-requests: read
 concurrency:
-  # A new-branch watcher must never hold the main write lock while waiting for 08:30/18:05.
-  group: ${{ github.event_name == 'pull_request' && format('lesson-pr-{0}', github.event.pull_request.number) || github.event_name == 'create' && format('lesson-watch-{0}', github.event.ref) || 'learning-data-write' }}
+  # Read-only PR checks use a separate group from main writes.
+  group: ${{ github.event_name == 'pull_request' && format('lesson-pr-{0}', github.event.pull_request.number) || 'learning-data-write' }}
   cancel-in-progress: false
 jobs:
-  watch_release_scaffold:
-    # DISABLED (V4 fallback paused by user instruction 2026-10-03): `create:` is not a trigger and
-    # this job can never run. Restore the original condition below to re-enable:
-    #   if: github.event_name == 'create' && github.event.ref_type == 'branch'
-    # The create event is delivered for an external GitHub App/user branch creation.
-    # This job must not checkout or write the newly created (possibly empty) release branch.
-    if: ${{ false }}
-    runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      contents: read
-    steps:
-      - name: Check a newly created release scaffold without holding the main write lock
-        shell: bash
-        env:
-          CREATED_REF: ${{ github.event.ref }}
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -Eeuo pipefail
-          echo "LESSON_CREATE_EVENT_RECEIVED ref=$CREATED_REF"
-          # Non-release branches are test probes or normal development: never dispatch.
-          if [[ ! "$CREATED_REF" =~ ^lesson-release-([0-9]{4}-[0-9]{2}-[0-9]{2})-(am|pm)$ ]]; then
-            echo 'LESSON_CREATE_IGNORED branch does not match an official lesson release.'
-            exit 0
-          fi
-          target_date="${BASH_REMATCH[1]}"
-          target_session="${BASH_REMATCH[2]}"
-          local_date="$(TZ=Asia/Jakarta date +%Y-%m-%d)"
-          if [ "$target_date" != "$local_date" ]; then
-            echo "LESSON_CREATE_IGNORED stale or future release date $target_date (today $local_date)."
-            exit 0
-          fi
-          # AM grace is 30 minutes (V2 not before 08:30); PM grace stays 5 minutes (18:05).
-          if [ "$target_session" = am ]; then target_time=08:00; grace_seconds=1800; else target_time=18:00; grace_seconds=300; fi
-          slot_epoch="$(TZ=Asia/Jakarta date -d "$target_date $target_time:00" +%s)"
-          # A release branch can wake this watcher early, but V2 must not be requested
-          # until the session grace (08:30 AM / 18:05 PM) after the official lesson start.
-          # For a late-created branch, preserve a 60-second normal upload window.
-          # Anchor the latter to GitHub's event creation time, never runner start.
-          created_at="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" --jq '.created_at')"
-          created_epoch="$(date -u -d "$created_at" +%s)"
-          due_epoch=$((slot_epoch + grace_seconds))
-          event_grace=$((created_epoch + 60))
-          if [ "$event_grace" -gt "$due_epoch" ]; then due_epoch="$event_grace"; fi
-          now_epoch="$(date +%s)"
-          wait_seconds=$((due_epoch - now_epoch))
-          # Only observe near-slot scaffolds (created at most 25 minutes before the slot).
-          if [ "$wait_seconds" -gt $((grace_seconds + 1500)) ]; then
-            echo "LESSON_CREATE_IGNORED branch created too early ($wait_seconds s until slot/grace)."
-            exit 0
-          fi
-          if [ "$target_session" = am ] && [ "$(TZ=Asia/Jakarta date +%H)" -ge 18 ]; then
-            echo 'LESSON_CREATE_IGNORED morning release event arrived after evening.'
-            exit 0
-          fi
-          if [ "$wait_seconds" -gt 0 ]; then
-            echo "LESSON_CREATE_WAIT seconds=$wait_seconds (never before 08:30/18:05; late branches retain 60-second upload grace)."
-            sleep "$wait_seconds"
-          fi
-          # Check the official lesson/index barrier on CURRENT main, not the empty scaffold.
-          official="data/daily/$target_date-$target_session.json"
-          already_published() {
-            local index_json flag
-            index_json="$(gh api "repos/$GITHUB_REPOSITORY/contents/data/daily/index.json?ref=main" \
-              --jq '.content' | base64 --decode)"
-            flag="$(jq -r --arg d "$target_date" --arg s "$target_session" \
-              '([.dates[]? | select(.date==$d)][0][$s]) // false' <<<"$index_json")"
-            [ "$flag" = true ] &&
-              gh api "repos/$GITHUB_REPOSITORY/contents/$official?ref=main" >/dev/null 2>&1
-          }
-          if already_published; then
-            echo "LESSON_CREATE_ALREADY_PUBLISHED $target_date $target_session; do not run V2."
-            exit 0
-          fi
-          # Empty scaffold after the session grace gate: request V2 only if unpublished.
-          # If the original lesson is staged, give its PR a bounded extra release window.
-          # An explicit PR failure is also subject to the same session grace gate.
-          if gh api "repos/$GITHUB_REPOSITORY/contents/$official?ref=$CREATED_REF" >/dev/null 2>&1; then
-            echo 'LESSON_CREATE_DRAFT_STAGED waiting up to 120 more seconds for normal release.'
-            sleep 120
-            if already_published; then
-              echo "LESSON_CREATE_ALREADY_PUBLISHED $target_date $target_session after normal release."
-              exit 0
-            fi
-          fi
-          # Only the existing shared-lock Sync can generate/publish; no alternate writer.
-          gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/sync-daily-vocab.yml/dispatches" \
-            -f ref=main -f "inputs[recover_date]=$target_date" \
-            -f "inputs[recover_session]=$target_session"
-          echo "LESSON_CREATE_FALLBACK_DISPATCHED date=$target_date session=$target_session"
-
   # Read-only PR gate: complete lesson+index, exact head SHA, same authoritative validator.
   preflight:
     if: github.event_name == 'pull_request' && !startsWith(github.head_ref, 'extensive-reading-') && !startsWith(github.head_ref, 'lesson-release-') && !startsWith(github.head_ref, 'teach-')
@@ -220,41 +109,16 @@ jobs:
           node --check .github/scripts/validate-lesson-candidate.js
           node --check .github/scripts/plan-lesson-publication.js
           node --check .github/scripts/recover-missing-lesson.js
-          node --check prototype/lesson-engine/engine/core.js
-          node --check prototype/lesson-engine/engine/quality.js
-          node --check prototype/lesson-engine/engine/test-prototype.js
-          node prototype/lesson-engine/engine/test-prototype.js
-          node --check prototype/lesson-engine/engine/compare-quality.js
-          git fetch --no-tags origin main
-          node prototype/lesson-engine/engine/compare-quality.js origin/main
           node --check .github/scripts/test-recover-missing-lesson.js
           node .github/scripts/test-recover-missing-lesson.js
-          # Live baseline rehearsal without --write; no official lesson or index is changed.
+          # Read-only safety smoke: no saved original must create no new lesson.
           smoke_date="$(node -p "require('./data/lesson-context.json').target.date")"
           smoke_session="$(node -p "require('./data/lesson-context.json').target.session")"
-          # Production default: V4 is disabled, so an unpublished target must NOT generate anything.
           node .github/scripts/recover-missing-lesson.js \
             --date "$smoke_date" --session "$smoke_session" --main-head "$(git rev-parse HEAD)" \
-            > "$RUNNER_TEMP/fallback-disabled-smoke.txt"
-          cat "$RUNNER_TEMP/fallback-disabled-smoke.txt"
-          grep -Eq '"status":"(v4_disabled|already_published)"' "$RUNNER_TEMP/fallback-disabled-smoke.txt"
-          # CI-ONLY rehearsal of dormant V4. Its PM generator still models the historic 3-4
-          # new words; since 2026-11-04 PM needs 5. Do not run an obsolete simulator against
-          # a modern PM target (production V4 remains disabled). All other gates still run.
-          # 2026-11-16 (user-approved): in the review phase there are no new words left, and the dormant V4 AM engine
-          # needs 10, so its rehearsal can only fail (REGRESSION-GUARD §51). Production V4 stays disabled; all other gates run.
-          smoke_review_phase="$(node -p "const RP=require('./.github/scripts/review-phase.js');RP.on(RP.load(),'$smoke_date')")"
-          if [[ "$smoke_session" == "pm" && "$smoke_date" > "2026-11-03" ]]; then
-            echo 'Skipping dormant V4 PM read-only simulation: historical 3-4-new engine vs current 5-new PM contract.'
-          elif [[ "$smoke_review_phase" == "true" ]]; then
-            echo 'Skipping dormant V4 AM read-only simulation: review phase, no new words for the 10-new-word engine.'
-          else
-            LESSON_V4_FALLBACK=1 node .github/scripts/recover-missing-lesson.js \
-              --date "$smoke_date" --session "$smoke_session" --main-head "$(git rev-parse HEAD)" \
-              > "$RUNNER_TEMP/fallback-smoke.txt"
-            cat "$RUNNER_TEMP/fallback-smoke.txt"
-            grep -Eq '"status":"(ready|already_published)"' "$RUNNER_TEMP/fallback-smoke.txt"
-          fi
+            > "$RUNNER_TEMP/original-only-smoke.txt"
+          cat "$RUNNER_TEMP/original-only-smoke.txt"
+          grep -Eq '"status":"(no_original|already_published)"' "$RUNNER_TEMP/original-only-smoke.txt"
           git diff --exit-code -- data/daily/index.json
           node --check .github/scripts/check-release-pr.js
           node --check .github/scripts/test-release-pr.js
@@ -279,69 +143,9 @@ jobs:
           # Apply the proposed guard logic to pinned baseline data. The old main guard
           # still checks the obsolete cron and must not veto its own repair PR.
           cp .github/scripts/regression-guard.js "$baseline_guard_dir/.github/scripts/regression-guard.js"
-          # Baseline tree predates the V4 pause: skip only the workflow-shape assertions there.
+          # New removed-feature checks are proposed-tree only.
           (cd "$baseline_guard_dir" && GUARD_BASELINE_TREE=1 node .github/scripts/regression-guard.js)
           git worktree remove --force "$baseline_guard_dir"
-      - name: Rehearse actual V2 lesson and index write outside the repository
-        shell: bash
-        run: |
-          set -Eeuo pipefail
-          tmp="$RUNNER_TEMP/fallback-write-rehearsal"
-          mkdir -p "$tmp"
-          cp -a data "$tmp/data"
-          day="$(node -p "require('./data/lesson-context.json').target.date")"
-          slot="$(node -p "require('./data/lesson-context.json').target.session")"
-          if [ -e "data/daily/$day-$slot.json" ]; then
-            echo 'Target was already published in this PR snapshot; fixture tests cover write path.'
-            exit 0
-          fi
-          # Only the dormant V4 write simulation is incompatible with the current PM quota;
-          # avoid writing stale 3-4-new PM samples. Production fallback stays disabled.
-          if [[ "$slot" == "pm" && "$day" > "2026-11-03" ]]; then
-            echo 'Skipping CI-only dormant V4 PM write rehearsal for modern 5-new contract.'
-            exit 0
-          fi
-          # 2026-11-16 (user-approved, REGRESSION-GUARD §51): review phase, no new words for the 10-new-word V4 AM engine.
-          if [[ "$(node -p "const RP=require('./.github/scripts/review-phase.js');RP.on(RP.load(),'$day')")" == "true" ]]; then
-            echo 'Skipping CI-only dormant V4 AM write rehearsal: review phase, no new words.'
-            exit 0
-          fi
-          (
-            cd "$tmp"
-            # CI-ONLY rehearsal in a temp copy of data/; never touches the repository or production.
-            LESSON_V4_FALLBACK=1 node "$GITHUB_WORKSPACE/.github/scripts/recover-missing-lesson.js" \
-              --date "$day" --session "$slot" --main-head "$(git -C "$GITHUB_WORKSPACE" rev-parse HEAD)" --write
-          ) > "$RUNNER_TEMP/fallback-write-result.txt"
-          cat "$RUNNER_TEMP/fallback-write-result.txt"
-          grep -Fq '"status":"ready"' "$RUNNER_TEMP/fallback-write-result.txt"
-          test -s "$tmp/data/daily/$day-$slot.json"
-          (
-            cd "$tmp"
-            node "$GITHUB_WORKSPACE/.github/scripts/recover-missing-lesson.js" \
-              --date "$day" --session "$slot" --main-head "$(git -C "$GITHUB_WORKSPACE" rev-parse HEAD)"
-          ) > "$RUNNER_TEMP/fallback-repeat-result.txt"
-          cat "$RUNNER_TEMP/fallback-repeat-result.txt"
-          grep -Fq '"status":"already_published"' "$RUNNER_TEMP/fallback-repeat-result.txt"
-          FALLBACK_DATE="$day" FALLBACK_SESSION="$slot" FALLBACK_CLONE="$tmp/data" node <<'VERIFY'
-          const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
-          const a=path.join(process.env.GITHUB_WORKSPACE,'data'),b=process.env.FALLBACK_CLONE;
-          const walk=(root)=>{
-            const out=new Map(),visit=(p)=>{
-              for(const e of fs.readdirSync(p,{withFileTypes:true})){
-                const x=path.join(p,e.name);
-                if(e.isDirectory())visit(x);
-                else if(e.isFile())out.set(path.relative(root,x).replace(/\\/g,'/'),fs.readFileSync(x));
-              }
-            };visit(root);return out;
-          };
-          const before=walk(a),after=walk(b),delta=[];
-          for(const key of new Set([...before.keys(),...after.keys()]))
-            if(!before.has(key)||!after.has(key)||!before.get(key).equals(after.get(key)))delta.push(key);
-          assert.deepEqual(delta.sort(),
-            ['daily/index.json','daily/'+process.env.FALLBACK_DATE+'-'+process.env.FALLBACK_SESSION+'.json'].sort());
-          console.log('FALLBACK_ISOLATED_TWO_FILE_WRITE_OK '+JSON.stringify(delta));
-          VERIFY
-          git diff --exit-code -- data/daily/index.json
       - name: Reject lesson data outside a named release branch
         shell: bash
         env:
@@ -693,7 +497,7 @@ jobs:
           fi
           date="$(echo "$RELEASE_BRANCH" | cut -c 16-25)"
           session="$(echo "$RELEASE_BRANCH" | sed -E "s/.*-(am|pm)$/\1/")"
-          # A normally/manual-published slot may need Sync, but must never request V2.
+          # An already-published lesson may need Sync, never a replacement lesson.
           if index_b64="$(gh api "repos/$GITHUB_REPOSITORY/contents/data/daily/index.json?ref=main" --jq '.content' 2>/dev/null)"; then
             flag="$(printf '%s' "$index_b64" | base64 --decode |
               jq -r --arg d "$date" --arg s "$session" '([.dates[]? | select(.date==$d)][0][$s]) // false')"
@@ -704,13 +508,9 @@ jobs:
               exit 0
             fi
           fi
-          # V4 backup-lesson generation is TEMPORARILY DISABLED (user instruction 2026-10-03).
-          # A failed release PR must never dispatch a backup generator or create a second lesson.
-          # The original lesson file, release branch, PR and this run's error evidence are preserved;
-          # the failure is reported as a failed run. The next Claude run resumes the same draft.
-          # To re-enable, restore the grace-time check and the recover_date/recover_session
-          # workflow_dispatch here ONLY on the user's explicit instruction.
-          echo "LESSON_RECOVERY_V4_DISABLED date=$date session=$session: no backup lesson dispatched; original draft, branch and PR preserved. Release failure is reported, not papered over."
+          # Preserve the original failed PR, its saved draft and error evidence.
+          # The original release must be resumed, not replaced by another lesson.
+          echo "LESSON_RECOVERY_ORIGINAL_ONLY date=$date session=$session: no replacement generated."
 
       # Cosmetic only (user request 2026-10-14). Pushing the generated index with GITHUB_TOKEN makes GitHub
       # create a pull_request run that it never starts without approval: 0 jobs, shown as a ~4 s failure.
@@ -1033,8 +833,7 @@ jobs:
           echo "DEEP_TEACH_PUBLISHED id=$id pr=$PR_NUMBER head=$PR_HEAD_SHA merge=$(jq -r '.sha' <<<"$response")"
 
   sync:
-    # create event's default-branch ref may also be main; never reconcile on a watcher event.
-    if: github.ref == 'refs/heads/main' && github.event_name != 'create'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -1043,9 +842,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
-      # V4 generation is disabled inside recover-missing-lesson.js (no LESSON_V4_FALLBACK here, by
-      # design). This step now only resumes the SAME saved original draft; it never generates one.
-      - name: Generate missing lesson with V2 and commit the two-file transaction
+      # Scheduled checks may republish only the saved original draft.
+      - name: Recover saved original lesson and commit the two-file transaction
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.recover_date != '' && inputs.recover_session != '')
         shell: bash
         env:
@@ -1076,16 +874,16 @@ jobs:
             echo "::warning title=Stale or premature fallback::No publication for $date $session at $local_date $local_hour Jakarta."
             exit 0
           fi
-          # AUTHORITATIVE V2 TIME GATE: it applies to schedule, workflow_dispatch,
-          # branch-watcher dispatch and failed-PR dispatch alike. A request received
+          # ORIGINAL RECOVERY TIME GATE: it applies to schedule, workflow_dispatch,
+          # an existing validated original draft only. A request received
           # before the session grace cutoff (08:30 AM / 18:05 PM) exits without writing
-          # or holding the lock through the grace window. The branch watcher/Cron can request it later.
+          # or holding the lock through the grace window. The schedule can request it later.
           if [ "$session" = am ]; then target_time=08:00; grace_seconds=1800; else target_time=18:00; grace_seconds=300; fi
           slot_epoch="$(TZ=Asia/Jakarta date -d "$date $target_time:00" +%s)"
           earliest_epoch=$((slot_epoch + grace_seconds))
           now_epoch="$(date +%s)"
           if [ "$now_epoch" -lt "$earliest_epoch" ]; then
-            echo "FALLBACK_GRACE_ACTIVE date=$date session=$session remaining=$((earliest_epoch - now_epoch))s; V2 is disabled until 08:30/18:05 Jakarta."
+            echo "FALLBACK_GRACE_ACTIVE date=$date session=$session remaining=$((earliest_epoch - now_epoch))s; recovery waits until 08:30/18:05 Jakarta."
             exit 0
           fi
           echo "FALLBACK_TIME_GATE_OPEN date=$date session=$session (session grace after lesson start has passed)."
@@ -1098,7 +896,7 @@ jobs:
             base="$(git rev-parse HEAD)"
             # An active original PR takes precedence. If its PR never got created but
             # the original JSON reached its exact release branch, reuse that draft
-            # through the same canonical planner before generating anything with V4.
+            # through the canonical planner; no new lesson is generated.
             staged_candidate="$RUNNER_TEMP/original-staged-${attempt}.json"
             staged_head=''
             rm -f "$staged_candidate"
@@ -1118,7 +916,7 @@ jobs:
                 jq -e --arg branch "$original_branch" --argjson number "$normal_pr" \
                   -f .github/scripts/normal-release-priority.jq "$RUNNER_TEMP/fallback-normal-runs.json" >/dev/null || priority_rc=$?
                 if [ "$priority_rc" -eq 0 ]; then
-                  echo "NORMAL_RELEASE_ACTIVE PR=$normal_pr $date $session; defer V2 to the original release. Its failure hook recovers if needed."
+                  echo "NORMAL_RELEASE_ACTIVE PR=$normal_pr $date $session; defer to the original release."
                   exit 0
                 elif [ "$priority_rc" -ne 1 ]; then
                   echo "::error title=Original release priority check failed::Do not race the normal lesson when PR status cannot be verified."
@@ -1145,7 +943,7 @@ jobs:
                 else
                   # Keep the observed head even when the candidate is invalid: the
                   # before-push race check must compare against this exact snapshot.
-                  echo "::warning title=Original draft not reusable::Release branch is empty or has unexpected changed paths; only the authorized V4 fallback remains eligible."
+                  echo "::warning title=Original draft not reusable::Release branch is empty or has unexpected changed paths; no second lesson is allowed."
                 fi
               fi
             fi
@@ -1159,17 +957,16 @@ jobs:
               echo 'Official lesson already exists: fallback is idempotent and stops here.'
               exit 0
             fi
-            # V4 is TEMPORARILY DISABLED (user instruction 2026-10-03): only a valid saved ORIGINAL
-            # draft may be resumed above. No original -> nothing is generated or written here; the
-            # scheduled health check in the next step reports the missing lesson as a failure.
-            if grep -Fq '"status":"v4_disabled"' "$RUNNER_TEMP/fallback-result.txt"; then
-              echo "LESSON_V4_FALLBACK_DISABLED date=$date session=$session: no backup lesson generated and nothing written; original draft/PR/error evidence preserved."
+            # Without a valid saved original, do not publish anything. The scheduled
+            # health check will report the missing lesson as a failure.
+            if grep -Eq '"status":"(no_original|original_invalid)"' "$RUNNER_TEMP/fallback-result.txt"; then
+              echo "ORIGINAL_RECOVERY_NOT_AVAILABLE date=$date session=$session: no replacement generated."
               exit 0
             fi
             grep -Fq '"status":"ready"' "$RUNNER_TEMP/fallback-result.txt" ||
-              { echo '::error title=Fallback candidate not approved::No publication.'; exit 1; }
-            publication_source="$(sed -n 's/^FALLBACK_LESSON //p' "$RUNNER_TEMP/fallback-result.txt" | jq -er '.source')"
-            echo "LESSON_RECOVERY_SOURCE $publication_source"
+              { echo '::error title=Original draft not approved::No publication.'; exit 1; }
+            publication_source="$(sed -n 's/^ORIGINAL_RECOVERY //p' "$RUNNER_TEMP/fallback-result.txt" | jq -er '.source')"
+            echo "ORIGINAL_RECOVERY_SOURCE $publication_source"
             cp "$candidate" "$RUNNER_TEMP/fallback-candidate.json"
             git add -- "$candidate" data/daily/index.json
             paths="$(git diff --cached --name-only)"
@@ -1566,7 +1363,7 @@ jobs:
           done
           echo '::error title=Sync push failed::Two safe attempts failed; no force push, no stale rebase. Inspect original git push errors.'
           exit 1
-      - name: Request Pages build after GitHub Actions fallback publication
+      - name: Request Pages build after original-draft recovery
         if: success()
         shell: bash
         env:
@@ -1574,13 +1371,13 @@ jobs:
         run: |
           set -Eeuo pipefail
           if [ ! -s "$RUNNER_TEMP/fallback-published.txt" ]; then
-            echo 'No V2 publication by this run; leave existing Pages path unchanged.'
+            echo 'No original-draft recovery by this run; leave existing Pages path unchanged.'
             exit 0
           fi
           # GITHUB_TOKEN commits do not recursively trigger the ordinary Pages build.
           # Request it only after the existing Sync step has finished successfully.
           gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" > "$RUNNER_TEMP/fallback-pages-response.json"
-          echo 'FALLBACK_PAGES_BUILD_REQUESTED'
+          echo 'ORIGINAL_RECOVERY_PAGES_BUILD_REQUESTED'
           cat "$RUNNER_TEMP/fallback-pages-response.json"
       - name: Record failure as a durable GitHub issue
         if: failure()
