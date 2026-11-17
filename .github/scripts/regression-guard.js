@@ -10,6 +10,9 @@ let RPH = null; try { RPH = require('./review-phase'); } catch (e) { RPH = null;
 const PHASE = RPH ? RPH.load(ROOT) : { active: false };
 const OLD_COUNTS = { am_cards:[10,10], am_reading:[80,120], pm_core:[10,12], pm_new:[3,4], pm_review:[4,6], pm_review_cycle:[4,9], pm_application:[2,3], pm_dialogue:[4,1e9] };
 const PC = d => RPH ? RPH.counts(PHASE, d) : JSON.parse(JSON.stringify(OLD_COUNTS)), PON = d => !!RPH && RPH.on(PHASE, d);
+// Dated review-phase rules (REGRESSION-GUARD §50/§52/§53): the real-lesson checks below follow the rule in force on each date.
+const STORY = d => (RPH && typeof RPH.storyRule === 'function') ? RPH.storyRule(PHASE, d) : null;
+const PSLIM = d => !!(RPH && typeof RPH.pmSlim === 'function' && RPH.pmSlim(PHASE, d));
 const failures = [];
 const warnings = [];
 const passes = [];
@@ -124,7 +127,7 @@ function validateRecentDailyWindow(){
         const cycle=!PON(d)&&newCount<count.pm_new[0],pmCore=cycle?[10,12]:count.pm_core;
         ok(inRange(v.length,pmCore[0],pmCore[1])&&recentPmWords.length===v.length&&unique(recentPmWords),`recent PM ${d}: ${pmCore.join('-')} unique vocab`);
         ok(x.dialogue&&Array.isArray(x.dialogue.lines)&&x.dialogue.lines.length>=PC(d).pm_dialogue[0]&&x.dialogue.lines.length<=PC(d).pm_dialogue[1],`recent PM ${d}: dialogue canonical`);
-        ok(Array.isArray(x.rewrite)&&inRange(x.rewrite.length,3,4),`recent PM ${d}: rewrite canonical`);
+        ok(Array.isArray(x.rewrite)&&inRange(x.rewrite.length,PSLIM(d)?1:3,PSLIM(d)?2:4),`recent PM ${d}: rewrite canonical`);
         const recentQuestions=Array.isArray(test.questions)?test.questions:[];
         const recentChoice=recentQuestions.filter(q=>q&&q.type==='choice').length;
         const recentFill=recentQuestions.filter(q=>q&&q.type==='fill').length;
@@ -189,7 +192,8 @@ function validateLatestAm(){
 
   const reading = am.reading || {};
   const wc = wordCount(reading.text);
-  ok(inRange(wc,amC.am_reading[0],amC.am_reading[1]), `latest AM ${date}: reading is ${amC.am_reading.join('-')} words (${wc})`);
+  const amRd = STORY(date) ? STORY(date).reading : amC.am_reading;
+  ok(inRange(wc,amRd[0],amRd[1]), `latest AM ${date}: reading is ${amRd.join('-')} words (${wc})`);
   ok(Boolean(String(reading.cn || '').trim()), `latest AM ${date}: reading Chinese translation exists`);
 
   const quiz = Array.isArray(am.quiz) ? am.quiz : [];
@@ -322,7 +326,7 @@ function validateLatestPm(){
   ok(lines.length > 0 && lines.every(x => String(x && x.id || '').trim() && String(x && x.cn || '').trim()), `latest PM ${date}: dialogue lines have Indonesian and Chinese`);
 
   const rewrite = Array.isArray(pm.rewrite) ? pm.rewrite : [];
-  ok(inRange(rewrite.length,3,4), `latest PM ${date}: rewrite/application has 3-4 tasks`);
+  ok(PSLIM(date) ? inRange(rewrite.length,1,2) : inRange(rewrite.length,3,4), PSLIM(date) ? `latest PM ${date}: slim rewrite has 1-2 tasks` : `latest PM ${date}: rewrite/application has 3-4 tasks`);
   ok(rewrite.length > 0 && rewrite.every(x => String(x && x.task || '').trim() && String(x && x.reference_answer || '').trim() && String(x && x.reference_cn || '').trim()), `latest PM ${date}: rewrite tasks have answer + Chinese`);
 
   const test = pm.daily_test || {};
@@ -353,7 +357,8 @@ function validateLatestPm(){
   }
 
   const selfCheck = Array.isArray(test.self_check) ? test.self_check : [];
-  ok(selfCheck.length > 0 && selfCheck.every(x => typeof x === 'string' && x.trim()), `latest PM ${date}: self_check is non-empty string array`);
+  if (PSLIM(date)) ok(test.self_check === undefined, `latest PM ${date}: slim PM has no self_check`);
+  else ok(selfCheck.length > 0 && selfCheck.every(x => typeof x === 'string' && x.trim()), `latest PM ${date}: self_check is non-empty string array`);
   const review = pm.review;
   ok(review && !Array.isArray(review) && String(review.title || '').trim() && Array.isArray(review.steps) && review.steps.length > 0 && review.steps.every(x => typeof x === 'string' && x.trim()), `latest PM ${date}: final review uses {title, steps[]}`);
 
