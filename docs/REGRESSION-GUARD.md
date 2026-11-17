@@ -753,3 +753,10 @@
 - **按 §53 的教训**：守卫的“最新 / 最近早课”检查里没有写死 recall / frames / apply 的数量，这次不用改；以后改规则仍要先搜一遍。
 - **守卫**：校验器含 `PHASE_AM_SLIM_OUTPUT` / `PHASE_AM_SLIM_REVIEW_CARDS`；`review-phase.json` 的 `am_slim.from` 为 2026-11-18；`history-v2.js` 的 `outputHtml` 显示 `o.frame`。
 
+## 55. 2026-11-17 复习阶段的首页加练卡和词汇学习页（用户决定，只改显示）
+
+- **首页加练卡**（`#vocabCoachHome`，`vocab-profile-ui.js` 和 `index.html` 首屏占位）：标题由「今天最该练什么」改为「可选加练」，说明改为「必做是早晚课 · 建议加练 N 个」，按钮「开始加练 →」「查看全部加练 →」，完成提示改为“建议的加练都做过了”。意思是：早课和晚课就是每天的全部任务，三种训练是可选加练，不再显示成未完成的任务。**元素、顺序和首屏预留高度都不变**；调度、到期和记录逻辑不变。`vocab-ui-regression-guard.js` 的对应字符串一起更新。
+- **词汇学习页**：「每日学习词汇」（`daily`）默认打开「待掌握」（模糊 / 不会）；其他词库照旧打开「未判断」。统计栏第一格由「词库」（总数，状态栏里本来就有）改为可点的「未判断」，三格仍是 3 列：未判断 / 已掌握 / 待掌握。
+- **英文释义默认隐藏**：`index.html` 早期 CSS `#vocab:not(.showEn) .vocabUnifiedEn{display:none!important}`（比翻卡脚本的 `!important` 更具体）；工具栏「显示英文 / 隐藏英文」切换，不记住选择。选择题选项仍按“中文优先、没有中文才用英文”。
+- **守卫**：首页卡和占位使用「可选加练」；`vocab-controller` 含 `DEFAULT_VIEW={daily:'review'}` 和 `showUncheckedWords`；`index.html` 含英文隐藏规则和切换按钮。
+

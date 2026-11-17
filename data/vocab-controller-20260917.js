@@ -15,6 +15,9 @@
   let batchOpen=false,batchFilter='all',batchQuery='',batchPage=0;
   const batchSelected=new Set(),BATCH_PAGE_SIZE=60;
   let activeView='';
+  // 2026-11-17 (review phase, REGRESSION-GUARD §55): the daily-learned library opens on 待掌握 (fuzzy / don't-know words);
+  // 未判断 stays one tap away in the stats bar. Other libraries keep opening on 未判断.
+  const DEFAULT_VIEW={daily:'review'},defaultViewFor=k=>DEFAULT_VIEW[k]||'';
   let installed=false;
   let initPromise=null;
   let dataReady=false;
@@ -226,8 +229,8 @@
   }
   function updateStats(src=sourceFor(),mem=memoryFor(),excludedKeys){
     const s=computeStats(src,mem,excludedKeys);
-    if($('vocabCount'))$('vocabCount').textContent=s.total;if($('knownCount'))$('knownCount').textContent=s.known;if($('reviewCount'))$('reviewCount').textContent=s.review;
-    let suffix='';if(activeView==='known')suffix=' · 查看已掌握';else if(activeView==='review')suffix=' · 查看待掌握';
+    if($('vocabCount'))$('vocabCount').textContent=s.unchecked;if($('knownCount'))$('knownCount').textContent=s.known;if($('reviewCount'))$('reviewCount').textContent=s.review;
+    let suffix='';if(activeView==='known')suffix=' · 查看已掌握';else if(activeView==='review')suffix=' · 查看待掌握';else if(!isPendingKey()&&activeKey!=='unknown')suffix=' · 查看未判断';
     if($('dbStatus'))$('dbStatus').textContent=isPendingKey()?labelFor()+' · '+s.total+' 个合法待学词 · 会了即可移出（同步后下次课程排除）':activeKey==='unknown'?labelFor()+' · '+s.total+' 个词 · 点击「翻卡」看中文、听发音，再标记会了／模糊／不会':labelFor()+' · '+s.unchecked+' 未判断 · '+s.review+' 待掌握 · '+s.known+' 已掌握 · '+s.excluded+' 已排除 · '+s.total+' 总词'+suffix;
     if($('vocabTag'))$('vocabTag').textContent=labelFor()+' '+s.total+' 词';return s;
   }
@@ -306,7 +309,7 @@
       }
       if(mySeq!==switchSeq)return [];
     }
-    saveProgress();activeKey=key;batchSelected.clear();batchPage=0;if(!isPendingKey(key))pendingUndo=null;activeView='';localStorage.removeItem('vocab_view_mode');
+    saveProgress();activeKey=key;batchSelected.clear();batchPage=0;if(!isPendingKey(key))pendingUndo=null;activeView=defaultViewFor(key);localStorage.removeItem('vocab_view_mode');
     const select=$('librarySelect');if(select&&select.value!==key)select.value=key;localStorage.setItem('selected_vocab_library',key);
     if($('search'))$('search').value='';
     // The unfamiliar library is a dedicated vocabulary-card practice entry.
@@ -314,7 +317,7 @@
     syncUiMode();rebuildCategories();if($('cat'))$('cat').value='';if($('sabFilterStable'))$('sabFilterStable').value='';
     const src=sourceFor(),mem=memoryFor(),excludedKeys=new Set((window.WeaknessPool?.listExcluded?.()||[]).map(x=>norm(x.word)));
     try{DB=src.slice()}catch(e){}
-    const out=src.filter(x=>!excludedKeys.has(norm(x.word))&&(isPendingKey(key)||!statusFromMemory(x.word,activeKey,mem))&&!(x.categories||[]).includes('粗口/俚语'));
+    const out=activeView?src.filter(x=>currentFilterPredicate(x,mem,excludedKeys)):src.filter(x=>!excludedKeys.has(norm(x.word))&&(isPendingKey(key)||!statusFromMemory(x.word,activeKey,mem))&&!(x.categories||[]).includes('粗口/俚语')); // a default view (daily → 待掌握) opens on its own filter
     try{FILTER=out;idx=opts.restore===false?0:restoreIndex(out)}catch(e){}
     updateStats(src,mem,excludedKeys);renderCurrent();renderBatch();window.dispatchEvent(new CustomEvent('vocab-library-ready',{detail:{key,total:src.length}}));return out;
   }
@@ -439,15 +442,15 @@
     window.loadDB=()=>setLibrary(activeKey,{restore:true});try{loadDB=window.loadDB}catch(e){}
     window.applyFilter=()=>rebuild(true);try{applyFilter=window.applyFilter}catch(e){}
     window.showKnownWords=()=>setView('known');try{showKnownWords=window.showKnownWords}catch(e){}
-    window.showReviewWords=()=>setView('review');window.mark=mark;try{mark=window.mark}catch(e){}
+    window.showReviewWords=()=>setView('review');window.showUncheckedWords=()=>setView('');window.mark=mark;try{mark=window.mark}catch(e){}
     window.nextWord=()=>move(1);try{nextWord=window.nextWord}catch(e){}
     window.switchVocabLibrary=setLibrary;window.openMasterVocabulary=()=>setLibrary('master');window.refreshMasterVocabulary=()=>setLibrary('master');
     window.getUnfamiliarVocabulary=unknownWords;window.refreshUnknownLibrary=()=>{sourceCache.delete('unknown');populateLibraryOptions();if(activeKey==='unknown')setLibrary('unknown')};
     window.speak=speak;try{speak=window.speak}catch(e){}
   }
   function prepareHiddenLibrary(stored){
-    activeKey=stored;const select=$('librarySelect');if(select)select.value=stored;syncUiMode();
-    const count=libraryCount(stored);if($('vocabTag'))$('vocabTag').textContent=labelFor(stored)+' '+count+' 词';if($('vocabCount'))$('vocabCount').textContent=count;
+    activeKey=stored;activeView=defaultViewFor(stored);const select=$('librarySelect');if(select)select.value=stored;syncUiMode();
+    const count=libraryCount(stored);if($('vocabTag'))$('vocabTag').textContent=labelFor(stored)+' '+count+' 词';
     const sec=$('vocab');if(!sec)return;
     const open=()=>{if(!sec.classList.contains('active'))return;vocabOpenObserver&&vocabOpenObserver.disconnect();vocabOpenObserver=null;void setLibrary(stored,{restore:true})};
     if(sec.classList.contains('active'))open();else{vocabOpenObserver=new MutationObserver(open);vocabOpenObserver.observe(sec,{attributes:true,attributeFilter:['class']})}
