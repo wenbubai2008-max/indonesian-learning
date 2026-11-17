@@ -140,7 +140,7 @@
     write(PLAN_KEY,plan);return plan;
   }
   function savePlan(plan){write(PLAN_KEY,plan);}
-  function stageName(n){return n===1?'快速主动提取':n===2?'语境补词':n===3?'主动表达':'延迟验证';}
+  function stageName(n){return n===1?'看中文选词':n===2?'句子选词':n===3?'主动表达':'延迟验证';}
   function reasonText(list){return (list||[]).slice(0,2).join(' · ');}
   // 2026-10-16 (PR 3, display only): per-word progress = stage x/4, cross-day verifications x/3 (stage-4 passes at least
   // 2 days apart; 3 → stable), next verification time in Jakarta. Reads the state, never changes it.
@@ -285,14 +285,14 @@
     const wrong=norm(wrongAnswer);
     if(wrong&&wrong!==norm(word)){
       const other=wordMap()[wrong];
-      if(other&&other.cn)parts.push('<div class="autoRescueCompare"><span>你刚写的</span><b>'+esc(wrongAnswer)+'</b> = '+esc(other.cn)+'<br><span>目标词</span><b>'+esc(word)+'</b> = '+esc(item&&item.cn||'')+'</div>');
+      if(other&&other.cn)parts.push('<div class="autoRescueCompare"><span>你答的</span><b>'+esc(wrongAnswer)+'</b> = '+esc(other.cn)+'<br><span>目标词</span><b>'+esc(word)+'</b> = '+esc(item&&item.cn||'')+'</div>');
     }
     if(item&&item.example)parts.push('<div class="autoRescueExample"><span>例句</span>'+esc(item.example)+(item.example_cn?'<small>'+esc(item.example_cn)+'</small>':'')+'</div>');
     if(streak===2)parts.push('<div class="autoRescueNote">这个词已经连续 2 次没提取出来。先看清“意思 + 用法”，下次不要只认答案。</div>');
     else if(streak>=3)parts.push('<div class="autoRescueNote strong">顽固词 · 连续 '+streak+' 次没提取出来。系统会缩短再次训练的间隔。</div>');
     box.innerHTML=parts.join('');
   }
-  function renderStage1(card,word,item,state){
+  function renderStage1Typing(card,word,item,state){
     let start=0,firstInputAt=0;
     card.innerHTML+='<div class="autoRecallBox"><div class="autoRecallWord">'+esc(item.cn||'看中文，想印尼语')+'</div><div class="autoRecallTip">尽量在 3–5 秒内想起答案；输入长短不作为主要判断。</div></div><div class="autoInputRow"><input class="autoAnswer" autocomplete="off" placeholder="输入印尼语"><button class="primary autoSubmit" type="button">确认</button><button class="secondary autoGiveUp" type="button">想不出</button></div><div class="autoResult"></div><div class="autoRescue"></div>';
     const input=card.querySelector('.autoAnswer');
@@ -309,7 +309,7 @@
     card.querySelector('.autoSubmit').onclick=submit;
     card.querySelector('.autoGiveUp').onclick=function(){if(card.dataset.done)return;begin();if(norm(input.value)===norm(word)){finishCorrect();return;}const wrong=input.value.trim(),newState=finishCard(card,word,1,{ok:false,kind:'fail'},item,'');failureHelp(card,word,item,newState,wrong);};
   }
-  function renderStage2(card,word,item,state){
+  function renderStage2Typing(card,word,item,state){
     const ctx=contextFor(word,item,state);
     const sentence=ctx.text||'请用 ______ 表达：「'+(item.cn||'这个意思')+'」';
     card.innerHTML+='<div class="autoPrompt"><b>'+esc(sentence)+'</b><small>中文提示：'+esc(item.cn||'')+'。没有选项，先自己提取；需要时再逐级看提示。</small></div><div class="autoHintLine" data-level="0"></div><div class="autoInputRow"><input class="autoAnswer" autocomplete="off" placeholder="填入目标词"><button class="primary autoSubmit" type="button">确认</button><button class="secondary autoHint" type="button">提示</button></div><div class="autoResult"></div>';
@@ -318,6 +318,89 @@
     function submit(){if(card.dataset.done)return;const good=norm(input.value)===norm(word);if(!good){resultBox(card,'还不对，可以继续想或点“提示”。',false);return;}const hints=Number(hint.dataset.level||0);finishCard(card,word,2,{ok:true,kind:hints?'hinted':'right',hints:hints},item,hints?'✓ 借助提示答出，暂时不升级，隔一段时间再测':'✓ 无提示完成，下一次进入主动表达');}
     input.addEventListener('input',function(){clearResult(card);});
     card.querySelector('.autoSubmit').onclick=submit;
+  }
+  // 2026-11-17: stages 1 and 2 are four-option choices (typing felt like a chore). Distractors are deliberately
+  // confusable — same root, look-alike spelling, overlapping meaning — so choosing still trains discrimination.
+  // Stage 4 (delayed verification) stays typed: it is the proof that a word can be produced, not just recognised.
+  function cnParts(s){return String(s||'').replace(/[（(][^）)]*[）)]/g,'').split(/[；;，,、\/／]+/).map(function(x){return x.trim();}).filter(Boolean);}
+  const CN_STOP=new Set('的了地得是在把被一个；，、（）()…/／ 和或等让使有'.split(''));
+  function cnChars(s){const out=new Set();String(s||'').replace(/[（(][^）)]*[）)]/g,'').split('').forEach(function(c){if(/[一-鿿]/.test(c)&&!CN_STOP.has(c))out.add(c);});return out;}
+  function lev(a,b){
+    if(a===b)return 0;const m=a.length,n=b.length;if(!m||!n)return Math.max(m,n);
+    let prev=new Array(n+1);for(let j=0;j<=n;j++)prev[j]=j;
+    for(let i=1;i<=m;i++){const cur=[i];for(let j=1;j<=n;j++)cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));prev=cur;}
+    return prev[n];
+  }
+  function pickDistractors(word,item,n){
+    const k=norm(word),map=wordMap(),taught=new Set(dailyWords().map(function(x){return norm(x.word);}));
+    const tParts=new Set(cnParts(item&&item.cn)),tChars=cnChars(item&&item.cn),tRoot=norm(item&&item.root),tCount=k.split(/\s+/).length;
+    function usable(x){
+      if(!x||!x.word||!x.cn)return false;const w=norm(x.word);
+      if(!w||w===k||norm(x.cn)===norm(item&&item.cn))return false;
+      if(cnParts(x.cn).some(function(p){return tParts.has(p);}))return false; // would also be a correct answer
+      return true;
+    }
+    let pool=Object.values(map).filter(usable);
+    const taughtPool=pool.filter(function(x){return taught.has(norm(x.word));});
+    if(taughtPool.length>=20)pool=taughtPool;
+    const scored=pool.map(function(x){
+      const w=norm(x.word),r=norm(x.root);let sc=0;
+      if(tRoot&&(r===tRoot||w===tRoot||r===k))sc+=6;
+      const d=lev(w,k),ml=Math.max(w.length,k.length);
+      if(d<=2)sc+=5;else if(d<=3)sc+=3;else if(d/ml<=0.45)sc+=2;
+      if(w.slice(0,3)===k.slice(0,3))sc+=2;if(w.slice(-3)===k.slice(-3))sc+=1;
+      let shared=0;cnChars(x.cn).forEach(function(c){if(tChars.has(c))shared++;});sc+=Math.min(3,shared)*1.5;
+      if(w.split(/\s+/).length===tCount)sc+=2;if(Math.abs(w.length-k.length)<=3)sc+=1;
+      sc+=Math.random()*1.5;
+      return {word:x.word,cn:x.cn,score:sc};
+    }).sort(function(a,b){return b.score-a.score;});
+    const out=[],seenCn=new Set();
+    for(let i=0;i<scored.length&&out.length<n;i++){
+      const x=scored[i],c=norm(x.cn);if(seenCn.has(c)||out.some(function(o){return norm(o.word)===norm(x.word);}))continue;
+      seenCn.add(c);out.push(x);
+    }
+    return out;
+  }
+  function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t;}return a;}
+  function choicesHtml(word,item){
+    const ds=pickDistractors(word,item,3);if(ds.length<2)return '';
+    const opts=shuffle([word].concat(ds.map(function(x){return x.word;})));
+    return '<div class="autoChoices">'+opts.map(function(w){return '<button type="button" class="autoChoice" data-w="'+esc(w)+'">'+esc(w)+'</button>';}).join('')+'</div><div class="autoChoiceFoot"><button class="secondary autoGiveUp" type="button">不知道</button></div><div class="autoResult"></div><div class="autoRescue"></div>';
+  }
+  function wireChoices(card,word,item,onRight,onWrong){
+    card.querySelectorAll('.autoChoice').forEach(function(btn){
+      btn.onclick=function(){
+        if(card.dataset.done)return;const picked=btn.dataset.w,good=norm(picked)===norm(word);
+        card.querySelectorAll('.autoChoice').forEach(function(b){if(norm(b.dataset.w)===norm(word))b.classList.add('right');});
+        if(good)onRight();else{btn.classList.add('wrong');onWrong(picked);}
+      };
+    });
+    card.querySelector('.autoGiveUp').onclick=function(){
+      if(card.dataset.done)return;
+      card.querySelectorAll('.autoChoice').forEach(function(b){if(norm(b.dataset.w)===norm(word))b.classList.add('right');});
+      onWrong('');
+    };
+  }
+  function renderStage1(card,word,item,state){
+    const opts=choicesHtml(word,item);if(!opts)return renderStage1Typing(card,word,item,state);
+    card.innerHTML+='<div class="autoRecallBox"><div class="autoRecallWord">'+esc(item.cn||'看中文，想印尼语')+'</div><div class="autoRecallTip">先在心里说出印尼语，再点选项；5 秒内选对算“秒答”。</div></div>'+opts;
+    let start=0;const host=card.closest('.autoCard')||card;
+    function begin(){if(!start)start=Date.now();}
+    if('IntersectionObserver' in window){const io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){begin();io.disconnect();}});},{threshold:0.6});io.observe(host);}else begin();
+    host.addEventListener('pointerenter',begin,{once:true});
+    wireChoices(card,word,item,function(){
+      const ms=start?Math.max(0,Date.now()-start):0,kind=ms>0&&ms<=5000?'direct':'slow';
+      finishCard(card,word,1,{ok:true,kind:kind,recall_ms:ms},item,kind==='direct'?'✓ 秒答正确，下次到期进入句子选词':'✓ 选对了，稍慢一点；下次到期进入句子选词');
+    },function(picked){const newState=finishCard(card,word,1,{ok:false,kind:'fail'},item,'');failureHelp(card,word,item,newState,picked);});
+  }
+  function renderStage2(card,word,item,state){
+    const ctx=contextFor(word,item,state);
+    const opts=choicesHtml(word,item);if(!opts)return renderStage2Typing(card,word,item,state);
+    const sentence=ctx.text||'请用 ______ 表达：「'+(item.cn||'这个意思')+'」';
+    card.innerHTML+='<div class="autoPrompt"><b>'+esc(sentence)+'</b><small>中文提示：'+esc(item.cn||'')+'。从下面选一个放进空格。</small></div>'+opts;
+    wireChoices(card,word,item,function(){
+      finishCard(card,word,2,{ok:true,kind:'right',hints:0},item,'✓ 选对了，下一次进入主动表达');
+    },function(picked){const newState=finishCard(card,word,2,{ok:false,kind:'fail'},item,'');failureHelp(card,word,item,newState,picked);});
   }
   function renderStage3(card,word,item,state){
     const sample=examplesFor(item)[0]||'';
@@ -353,8 +436,8 @@
     const plan=buildPlan(false),map=wordMap(),states=stateMap();if(!window.VocabStudyCoach)releaseDueRetries(plan,states);
     const done=plan.results||{};
     refreshMeta();
-    let html='<div class="autoIntro"><b>按主动提取能力逐词训练。</b><span>保留四阶段、跨日验证与独立到期时间；每轮最多8词，完成后可继续下一组，不与视觉和听觉训练争抢词。</span><button class="secondary" type="button" id="autoRebuildPlan">继续到期训练 →</button></div>';
-    html+='<div class="autoStages"><span>1 快速主动提取</span><span>2 语境补词</span><span>3 主动表达</span><span>4 延迟验证</span></div>';
+    let html='<div class="autoIntro"><b>按主动提取能力逐词训练。</b><span>每轮最多 8 词。第 1、2 关是四选一，第 3 关自己造句，第 4 关隔几天再自己打一次字，确认真的说得出来。</span><button class="secondary" type="button" id="autoRebuildPlan">继续到期训练 →</button></div>';
+    html+='<div class="autoStages"><span>1 看中文选词</span><span>2 句子选词</span><span>3 主动表达</span><span>4 延迟验证</span></div>';
     if(!plan.words.length){html+='<div class="empty"><b>当前没有可练的主动词。</b><div style="margin-top:8px">所有当前到期的主动训练已完成；未到期词仍保留原定验证日期。</div></div>';body.innerHTML=html;body.querySelector('#autoRebuildPlan').onclick=rebuildPlan;return;}
     html+='<div class="autoList">';
     plan.words.forEach(function(p,i){const item=map[norm(p.word)]||{word:p.word,cn:''};html+='<div class="autoCard" data-word="'+esc(p.word)+'" data-stage="'+p.stage+'"><div class="autoHead"><div><span class="autoNo">'+(i+1)+'</span><b>'+esc(stageName(p.stage))+'</b></div><small>'+esc(reasonText(p.reasons))+'</small></div><div class="autoProgress">'+esc(progressText(states[norm(p.word)],Date.now(),!!done[norm(p.word)]))+'</div><div class="autoTask"></div></div>';});
@@ -394,7 +477,7 @@
   function rebuildPlan(){buildPlan(true);render();refreshTag();}
   function style(){
     if(document.getElementById('automationTrainingStyle'))return;
-    const s=document.createElement('style');s.id='automationTrainingStyle';s.textContent='.autoProgress{margin:-4px 0 10px;font-size:13px;color:#5b6475;background:#f6f7fb;border-radius:8px;padding:5px 9px;display:inline-block}.autoProgress.after{background:#eef6ff;color:#1e4f9a}.autoIntro{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center;background:#f8f6ff;border:1px solid #e4def5;border-radius:14px;padding:14px 15px}.autoIntro>b{font-size:16px}.autoIntro>span{grid-column:1/2;color:#667085;font-size:13px;line-height:1.6}.autoIntro>button{grid-column:2;grid-row:1/3}.autoStages{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:13px 0}.autoStages span{background:#fff;border:1px solid #e2e6ee;border-radius:10px;padding:9px 8px;text-align:center;font-size:12px;font-weight:800;color:#596579}.autoList{display:grid;gap:11px}.autoCard{border:1px solid #e1e6ef;border-radius:15px;background:#fff;padding:14px}.autoHead{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:11px}.autoHead>div{display:flex;align-items:center;gap:8px}.autoNo{display:inline-flex;width:25px;height:25px;border-radius:8px;background:#eee9ff;color:#6549a3;align-items:center;justify-content:center;font-size:12px;font-weight:900}.autoHead small{color:#7a8493;text-align:right}.autoPrompt{background:#f8faff;border-radius:12px;padding:13px 14px;line-height:1.65}.autoPrompt b{display:block;font-size:17px}.autoPrompt small{display:block;color:#667085;margin-top:4px}.autoRecallBox{padding:4px 0 2px}.autoRecallWord{display:inline-block;background:#fff4cf;border:1px solid #f2df96;border-radius:12px;padding:10px 14px;font-size:22px;line-height:1.35;font-weight:900;color:#1f2937;letter-spacing:.01em}.autoRecallTip{margin-top:8px;color:#98a2b3;font-size:12px;line-height:1.45}.autoCard[data-stage="1"] .autoHead b{font-size:15px;font-weight:800;color:#667085}.autoCard[data-stage="1"] .autoHead{margin-bottom:8px}.autoInputRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.autoInputRow input,.autoSentence{border:1px solid #dfe4ec;border-radius:10px;padding:10px 11px;background:#fff}.autoInputRow input{flex:1;min-width:180px}.autoSentence{width:100%;resize:vertical}.autoHintLine{min-height:23px;color:#6b4fa4;font-weight:800;font-size:13px;margin-top:8px}.autoResult{min-height:22px;font-size:13px;margin-top:8px;color:#64748b}.autoResult.ok{color:#17652d}.autoResult.bad{color:#9d2f28}.autoRescue{margin-top:10px}.autoRescue:empty{display:none}.autoRescueTop{display:flex;align-items:center;gap:10px;background:#fff8df;border:1px solid #f1df9b;border-radius:12px;padding:10px 12px}.autoRescueTop span,.autoRescueRow span,.autoRescueExample>span,.autoRescueCompare span{font-size:11px;font-weight:800;color:#8a6d1d;margin-right:8px}.autoRescueTop b{font-size:20px;color:#1f2937}.autoRescueRow{padding:8px 12px 0;font-size:13px;color:#475467}.autoRescueRow strong{color:#1f2937}.autoRescueExample{margin-top:8px;background:#f8faff;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.55;color:#344054}.autoRescueExample small{display:block;margin-top:3px;color:#7a8493}.autoRescueCompare{margin-top:8px;border-left:3px solid #d8cdf8;background:#faf8ff;border-radius:8px;padding:9px 11px;font-size:13px;line-height:1.6;color:#475467}.autoRescueCompare b{color:#2d3748}.autoRescueNote{margin-top:8px;font-size:12px;color:#667085;padding:7px 10px;background:#f7f8fa;border-radius:8px}.autoRescueNote.strong{color:#7a4b00;background:#fff4e5}.autoDone{background:#f3faf5;color:#287341;border-radius:10px;padding:11px 12px;font-size:13px}.autoSample{font-size:13px;color:#667085;margin-top:8px}.autoCard[data-done="1"]{opacity:.72}#automationTraining .sectionHead{flex-wrap:wrap;gap:8px}#automationTrainingMeta{white-space:nowrap}@media(max-width:700px){.autoIntro{grid-template-columns:1fr}.autoIntro>span,.autoIntro>button{grid-column:1;grid-row:auto}.autoStages{grid-template-columns:repeat(2,1fr)}.autoHead{align-items:flex-start;flex-direction:column}.autoHead small{text-align:left}}';document.head.appendChild(s);
+    const s=document.createElement('style');s.id='automationTrainingStyle';s.textContent='.autoChoices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px}.autoChoice{border:1px solid #d9dfea;background:#fff;border-radius:12px;padding:13px 12px;font-size:17px;font-weight:700;color:#1f2937;cursor:pointer;text-align:center;transition:background .15s,border-color .15s}.autoChoice:hover:not(:disabled){border-color:#3a5bd9;background:#f3f6ff}.autoChoice.right{background:#e8f6ec;border-color:#3b9b5a;color:#17652d}.autoChoice.wrong{background:#fdecea;border-color:#d0574c;color:#9d2f28}.autoChoice:disabled{cursor:default;opacity:1}.autoChoiceFoot{display:flex;justify-content:flex-end;margin-top:9px}@media(max-width:520px){.autoChoices{grid-template-columns:1fr}}.autoProgress{margin:-4px 0 10px;font-size:13px;color:#5b6475;background:#f6f7fb;border-radius:8px;padding:5px 9px;display:inline-block}.autoProgress.after{background:#eef6ff;color:#1e4f9a}.autoIntro{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center;background:#f8f6ff;border:1px solid #e4def5;border-radius:14px;padding:14px 15px}.autoIntro>b{font-size:16px}.autoIntro>span{grid-column:1/2;color:#667085;font-size:13px;line-height:1.6}.autoIntro>button{grid-column:2;grid-row:1/3}.autoStages{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:13px 0}.autoStages span{background:#fff;border:1px solid #e2e6ee;border-radius:10px;padding:9px 8px;text-align:center;font-size:12px;font-weight:800;color:#596579}.autoList{display:grid;gap:11px}.autoCard{border:1px solid #e1e6ef;border-radius:15px;background:#fff;padding:14px}.autoHead{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:11px}.autoHead>div{display:flex;align-items:center;gap:8px}.autoNo{display:inline-flex;width:25px;height:25px;border-radius:8px;background:#eee9ff;color:#6549a3;align-items:center;justify-content:center;font-size:12px;font-weight:900}.autoHead small{color:#7a8493;text-align:right}.autoPrompt{background:#f8faff;border-radius:12px;padding:13px 14px;line-height:1.65}.autoPrompt b{display:block;font-size:17px}.autoPrompt small{display:block;color:#667085;margin-top:4px}.autoRecallBox{padding:4px 0 2px}.autoRecallWord{display:inline-block;background:#fff4cf;border:1px solid #f2df96;border-radius:12px;padding:10px 14px;font-size:22px;line-height:1.35;font-weight:900;color:#1f2937;letter-spacing:.01em}.autoRecallTip{margin-top:8px;color:#98a2b3;font-size:12px;line-height:1.45}.autoCard[data-stage="1"] .autoHead b{font-size:15px;font-weight:800;color:#667085}.autoCard[data-stage="1"] .autoHead{margin-bottom:8px}.autoInputRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.autoInputRow input,.autoSentence{border:1px solid #dfe4ec;border-radius:10px;padding:10px 11px;background:#fff}.autoInputRow input{flex:1;min-width:180px}.autoSentence{width:100%;resize:vertical}.autoHintLine{min-height:23px;color:#6b4fa4;font-weight:800;font-size:13px;margin-top:8px}.autoResult{min-height:22px;font-size:13px;margin-top:8px;color:#64748b}.autoResult.ok{color:#17652d}.autoResult.bad{color:#9d2f28}.autoRescue{margin-top:10px}.autoRescue:empty{display:none}.autoRescueTop{display:flex;align-items:center;gap:10px;background:#fff8df;border:1px solid #f1df9b;border-radius:12px;padding:10px 12px}.autoRescueTop span,.autoRescueRow span,.autoRescueExample>span,.autoRescueCompare span{font-size:11px;font-weight:800;color:#8a6d1d;margin-right:8px}.autoRescueTop b{font-size:20px;color:#1f2937}.autoRescueRow{padding:8px 12px 0;font-size:13px;color:#475467}.autoRescueRow strong{color:#1f2937}.autoRescueExample{margin-top:8px;background:#f8faff;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.55;color:#344054}.autoRescueExample small{display:block;margin-top:3px;color:#7a8493}.autoRescueCompare{margin-top:8px;border-left:3px solid #d8cdf8;background:#faf8ff;border-radius:8px;padding:9px 11px;font-size:13px;line-height:1.6;color:#475467}.autoRescueCompare b{color:#2d3748}.autoRescueNote{margin-top:8px;font-size:12px;color:#667085;padding:7px 10px;background:#f7f8fa;border-radius:8px}.autoRescueNote.strong{color:#7a4b00;background:#fff4e5}.autoDone{background:#f3faf5;color:#287341;border-radius:10px;padding:11px 12px;font-size:13px}.autoSample{font-size:13px;color:#667085;margin-top:8px}.autoCard[data-done="1"]{opacity:.72}#automationTraining .sectionHead{flex-wrap:wrap;gap:8px}#automationTrainingMeta{white-space:nowrap}@media(max-width:700px){.autoIntro{grid-template-columns:1fr}.autoIntro>span,.autoIntro>button{grid-column:1;grid-row:auto}.autoStages{grid-template-columns:repeat(2,1fr)}.autoHead{align-items:flex-start;flex-direction:column}.autoHead small{text-align:left}}';document.head.appendChild(s);
   }
   window.openAutomationTraining=open;
   window.AutomationTraining={open:open,openWord:openWord,render:render,rebuildPlan:rebuildPlan,refreshTag:refreshTag,candidates:candidateList,progressText:progressText};
