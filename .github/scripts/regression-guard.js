@@ -13,6 +13,8 @@ const PC = d => RPH ? RPH.counts(PHASE, d) : JSON.parse(JSON.stringify(OLD_COUNT
 // Dated review-phase rules (REGRESSION-GUARD §50/§52/§53): the real-lesson checks below follow the rule in force on each date.
 const STORY = d => (RPH && typeof RPH.storyRule === 'function') ? RPH.storyRule(PHASE, d) : null;
 const PSLIM = d => !!(RPH && typeof RPH.pmSlim === 'function' && RPH.pmSlim(PHASE, d));
+// 2026-11-17 (§57): from am_zh2id.from a review-phase AM's review-quiz item may be a 中文→选印尼语 item whose target is review_vocab.
+const AZH = d => !!(RPH && typeof RPH.amZh2id === 'function' && RPH.amZh2id(PHASE, d));
 const failures = [];
 const warnings = [];
 const passes = [];
@@ -95,7 +97,7 @@ function validateRecentDailyWindow(){
           const realReviewQuiz=x.quiz.some(q=>{
             const opts=Array.isArray(q&&q.options)?q.options:[];
             const ai=q&&q.answer_index;
-            return Number.isInteger(ai)&&ai>=0&&ai<opts.length&&recentReviewSet.has(norm(opts[ai]));
+            return (Number.isInteger(ai)&&ai>=0&&ai<opts.length&&recentReviewSet.has(norm(opts[ai])))||(AZH(d)&&q&&q.kind==='zh2id'&&recentReviewSet.has(norm(q.target)));
           });
           ok(realReviewQuiz,`recent AM ${d}: at least one quiz answer is truly in review_vocab`);
         }
@@ -209,7 +211,7 @@ function validateLatestAm(){
     ok(valid, `latest AM ${date}: quiz ${i+1} canonical schema valid`);
     if(valid){
       const answer = String(options[ai] || '').trim();
-      if(reviewSet.has(norm(answer))) reviewQuizCount++;
+      if(reviewSet.has(norm(answer)) || (AZH(date) && q.kind === 'zh2id' && reviewSet.has(norm(q.target)))) reviewQuizCount++;
       const recognition = /词义|意思|含义|形式|哪一个词|哪个词|哪种形式|正确形式|识别/.test(question);
       const leaked = Boolean(answer && question.toLowerCase().includes(answer.toLowerCase()));
       ok(!leaked || recognition, `latest AM ${date}: quiz ${i+1} does not leak the answer`);
@@ -717,6 +719,9 @@ try {
     ok(!/setItem|removeItem|recordLessonWrong|markMastered/.test(wr),'weekly report never writes');
     ok(/MIN_SAMPLE=10/.test(wr)&&/样本不足/.test(ui)&&/age<7\|\|age>30/.test(wr),'retention uses formal answers on words 7-30 days after first teaching, with a 10-answer minimum');
     ok(/\['week','本周'\]/.test(ui)&&/weeklyHTML\((data)?\)/.test(ui),'profile 本周 tab shows the weekly report');
+    // §57 (2026-11-17, user decision): 中文 → 选印尼语 sentence items in the review-phase AM quiz from am_zh2id.from.
+    {const okNew57=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;const vl57=read('.github/scripts/validate-lesson-candidate.js'),hv57=read('data/history-v2.js'),rp57=JSON.parse(read('data/review-phase.json'));
+    okNew57(rp57.am_zh2id&&rp57.am_zh2id.from==='2026-11-18'&&['PHASE_AM_ZH2ID_COUNT','PHASE_AM_ZH2ID_INVALID','PHASE_AM_ZH2ID_EASY'].every(c=>vl57.includes(c))&&hv57.includes('function zhQuizHtml(')&&hv57.includes('window.zqAfter=')&&hv57.includes("q.kind==='zh2id'"),'AM quiz 中文→选印尼语 items: dated rule, validator codes and recall-first rendering');}
     // §53 (2026-11-16, user decision): in the review phase the profile reports review, not new words.
     const okNew51=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
     okNew51(ui.includes('function reviewWeeklyHTML(r)')&&ui.includes('本周课程复习到的词')&&ui.includes("data.active_master_pool==='exhausted'")&&ui.includes('if(!reviewOn(data))out.push([\'新词数量先不自动调整\'')&&read('data/ability-observation.js').includes('复习目标已生效')&&read('.github/scripts/build-vocab-profile.js').includes('review_phase:{active:phaseOn'),'profile switches to review-phase wording: new words finished, weekly review numbers, goals in force');

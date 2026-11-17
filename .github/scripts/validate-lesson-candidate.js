@@ -61,6 +61,8 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
   const SL=session==="pm"&&RP.pmSlim(phase,date);
   // Slim 08:00 back half (2026-11-17 user decision, REVIEW-PHASE.md 2.2). AS=false keeps the old AM contract unchanged.
   const AS=session==="am"&&RP.amSlim(phase,date);
+  // 中文 → 选印尼语 sentence quiz items (2026-11-17 user decision, REVIEW-PHASE.md 2.5). AZ=false keeps the old AM quiz contract.
+  const AZ=session==="am"&&typeof RP.amZh2id==="function"&&RP.amZh2id(phase,date);
   const SP=session==="am"&&RP.storyRule(phase,date)?RP.storyPlan(phase,date,weekAms===undefined?RP.weekAms(phase,date):weekAms):null;
   check(rules.version===4&&runtime.version===4&&runtime.rules_version===4&&runtime.stats?.master_unique===977,"RULE_RUNTIME_MISMATCH","Rules/runtime v4, 977 primary master required");
   check(Number.isFinite(Date.parse(runtime.generated_at||"")),"RUNTIME_INVALID","Runtime generated_at invalid");
@@ -150,7 +152,17 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     const quiz=Array.isArray(lesson.quiz)?lesson.quiz:[];
     check(quiz.length===3,"AM_QUIZ_COUNT","3 AM quiz questions required");
     const ans=quiz.map((q,i)=>choice(q,i,"question"));
-    check(ans.some(a=>rw.includes(a)),"AM_REVIEW_QUIZ_MISSING","One correct answer must be review_vocab");
+    const zq=quiz.filter(q=>q&&q.kind==="zh2id");
+    check(ans.some(a=>rw.includes(a))||(AZ&&zq.some(q=>rw.includes(norm(q.target)))),"AM_REVIEW_QUIZ_MISSING","One correct answer (or, with 中文→选印尼语 items, one item's target) must be review_vocab");
+    if(AZ){
+      const CJK=/[\u3400-\u9fff]/,toks=t=>new Set(norm(t).split(" ").filter(Boolean)),sim=(a,b)=>{const A=toks(a),B=toks(b);let n=0;A.forEach(x=>{if(B.has(x))n++});const u=A.size+B.size-n;return u?n/u:0};
+      const taught=new Set([...rw,...vw]),targets=zq.map(q=>norm(q.target));
+      check(zq.length===2&&new Set(targets).size===2,"PHASE_AM_ZH2ID_COUNT","Review phase: exactly 2 of the 3 quiz items are kind \"zh2id\" (中文 → 选印尼语) with different targets");
+      zq.forEach((q,j)=>{const opts=Array.isArray(q.options)?q.options:[],a=q.answer_index,ok=opts.length===4&&Number.isInteger(a)&&a>=0&&a<4,ansText=ok?String(opts[a]):"";
+        check(ok&&str(q.question)&&CJK.test(q.question)&&!q.question.toLowerCase().includes(norm(ansText))&&opts.every(o=>str(o)&&!CJK.test(o)&&toks(o).size>=3)&&str(q.target)&&taught.has(norm(q.target))&&(" "+norm(ansText)+" ").includes(" "+norm(q.target)+" ")&&str(q.point)&&str(q.explain)&&CJK.test(q.explain),
+          "PHASE_AM_ZH2ID_INVALID","zh2id item "+(j+1)+": Chinese question, 4 Indonesian sentence options (3+ words, no Chinese), target = a card or review_vocab word inside the correct sentence, point and Chinese explain");
+        if(ok)check(opts.every((o,k)=>k===a||sim(o,ansText)>=0.4),"PHASE_AM_ZH2ID_EASY","zh2id item "+(j+1)+": every wrong option must stay close to the correct sentence (differ in one point), not be guessable by meaning");});
+    }
     quiz.forEach((q,i)=>{const recognition=/词义|意思|含义|形式|哪一个词|哪个词|哪种形式|正确形式|识别/.test(q?.question||"");if(ans[i])check(!String(q.question||"").toLowerCase().includes(ans[i])||recognition,"AM_QUIZ_ANSWER_LEAK","Question "+(i+1)+" leaks answer")});
     check(["task","reference_answer","reference_cn"].every(k=>str(lesson.output?.[k])),"AM_OUTPUT_INVALID","Active output incomplete");
     if(AS)check(str(lesson.output?.frame)&&/……|___/.test(lesson.output.frame),"PHASE_AM_SLIM_OUTPUT","Review phase: output.frame = the reference answer's sentence skeleton with …… blanks");
