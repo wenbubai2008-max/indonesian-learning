@@ -70,6 +70,27 @@ node .github/scripts/review-phase.js --date D --session am|pm
 
 早晚课都执行 `LESSON-QUALITY.md` 7e：对话、阅读、例句用印尼人日常真正说的词，正式词首次出现放括号；词卡可写 `everyday`。
 
+### 2.5 小测里的「中文 → 选印尼语」（2026-11-17 用户决定，2026-11-18 早课起）
+
+为什么：复习阶段的目标是能用印尼语说出来。只看印尼语选中文，练的是认得；先看中文、在心里说出印尼语、再从相近的句子里挑对，更接近真正开口，又不会多数题都答不上来。
+
+- **开关**：`review-phase.js` 输出 `am_zh2id: true` 时执行（`data/review-phase.json` 的 `am_zh2id.from` = 2026-11-18）。
+- **`quiz` 仍是 3 题**：1 题照旧考读懂本集；**另外 2 题写成 `kind: "zh2id"`**：
+  ```json
+  {"kind": "zh2id", "question": "我已经习惯住在这里了。", "target": "terbiasa", "target_cn": "习惯了",
+   "options": ["Aku sudah terbiasa tinggal di sini.", "Aku pernah terbiasa tinggal di sini.", "Aku sudah membiasakan tinggal di sini.", "Aku belum terbiasa tinggal di sini."],
+   "answer_index": 0, "answer": "Aku sudah terbiasa tinggal di sini.", "point": "sudah / pernah / belum，terbiasa 的词缀",
+   "explain": "中文说明：为什么 A 对、每个错项错在哪；口语里能说的变体也要提一句（例如 sudah biasa 也常说）。"}
+  ```
+- **`question`** 是一句自然的中文（日常或工作里真会说的话，最好接本集故事或本周主题），不写印尼语，不写提示。
+- **`target`** 是本课词卡词或 `review_vocab` 里的词，原样出现在正确句子里；2 题的 `target` 不同，**至少 1 题的 `target` 在 `review_vocab` 里**（这样就满足“至少一题考复习词”）。`target_cn` 可选，写这个词的中文。
+- **4 个选项都是完整的印尼语句子**（3 个词以上），**错项只能和正确句子差一个点**：`sudah / belum / pernah / masih`、`bisa / boleh / sempat`、`karena / supaya / sehingga`、词缀（`ter- / me- / di-`、`-kan / -i`）、语序、搭配的介词。不要用意思完全不同、一眼就能排除的句子。校验要求每个错项和正确句子至少有 40% 的词相同。
+- 错项必须真的错（或在这个意思下不对）。口语里也能说的说法不要当错项；如果不得不提，就在 `explain` 里讲清。
+- **`point`** 一句话写考点；**`explain`** 用中文讲为什么对、错项错在哪。
+- **页面**：先显示中文和「先在心里用印尼语说一遍」，点「看选项」才出现 4 个选项；答完显示考点和 🔊。答错时，对 `target` 记一次课程错词（同一课同一个词最多一次，和「忘了」一样），不改掌握状态；答对不记录。
+- 校验码：`PHASE_AM_ZH2ID_COUNT`（不是恰好 2 题，或 2 题 target 相同）、`PHASE_AM_ZH2ID_INVALID`（字段不全、题干不是中文、选项不是印尼语句子、target 不在本课词里或不在正确句子里）、`PHASE_AM_ZH2ID_EASY`（错项和正确句子差太多）。
+- 汇报里写出 2 题各考什么。
+
 ## 三、18:00 晚课：任务课
 
 目标：在一个要办成的事里把旧词用出来，遇到变化也能接着说。

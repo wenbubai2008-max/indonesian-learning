@@ -101,7 +101,7 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
 - **vocab**：恰好 10 张。每张有 word、display、audio_text（通常同 word，非空）、cn、en、root、root_cn（root 非空时必填）、formation（优先写构词关系、真实搭配和使用场景，不写空洞语法描述）、example、example_cn、synonym_note（实用辨析）、is_oral_new（布尔值）。
 - **sentences**：恰好 5 句 `{"text","cn"}`，尽量复现当天核心词，围绕真实情境（日常沟通、购物交通、办公室、朋友、家庭等），不要 5 句互不相关的字典例句。至少 1 句是自然口语（`docs/LESSON-QUALITY.md` §7b）。
 - **reading**：`{"text","cn"}`，印尼语 80–120 词（按空白分词实际统计，建议 90–105），有明确场景和连贯性，自然复现核心词和若干复习词，中文完整对应。
-- **quiz**：恰好 3 题，每题 question、options（建议 4 个）、answer_index（从 0 开始）、answer（必须等于 options[answer_index]）、explain。至少一题的正确答案是真实的 review_vocab 词（题干写“复习”两字不算）；题干不得泄露答案；不得照搬 PM 的 prompt/fill/order 结构。
+- **quiz**：恰好 3 题（复习阶段 2026-11-18 起其中 2 题是「中文 → 选印尼语」，见 `REVIEW-PHASE.md` 2.5），每题 question、options（建议 4 个）、answer_index（从 0 开始）、answer（必须等于 options[answer_index]）、explain。至少一题的正确答案是真实的 review_vocab 词（题干写“复习”两字不算）；题干不得泄露答案；不得照搬 PM 的 prompt/fill/order 结构。
 - **output**：task、reference_answer、reference_cn，用至少 2 个本课重点词的真实交流任务。
 - **review**：恰好 3 个非空字符串（3 秒主动提取、易混词或搭配、重点复习词的实际应用），不是晚课的 `{title, steps}`。
 - **lesson_focus**（今天的重点，2026-10-18 用户决定；**2026-10-18 晚课起每节必填**）：**不新增任何词或任务**，只是从本课已有内容里标出最值得掌握的部分（不是多学五项）。格式 `{"words":[3 个词],"patterns":[2 个 {pattern, cn, example, example_cn}]}`：

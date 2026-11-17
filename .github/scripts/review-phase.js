@@ -110,13 +110,16 @@ function amSlim(phase,date){const s=phase&&phase.am_slim;return !!(on(phase,date
 /** 2026-11-17 (user decision, REVIEW-PHASE.md 3.1 item 5): from `pm_practice.from` on, the review-phase 18:00 dialogue
  *  carries `dialogue.practice` — a short reworded version for the 藏台词 practice instead of the full dialogue. */
 function pmPractice(phase,date){const s=phase&&phase.pm_practice;return !!(on(phase,date)&&s&&typeof s==='object'&&validDate(s.from)&&String(date)>=s.from)}
+/** 2026-11-17 (user decision, REVIEW-PHASE.md 2.5): from `am_zh2id.from` on, 2 of the review-phase 08:00 quiz's 3
+ *  questions are 中文 → 选印尼语 sentence items (`kind: "zh2id"`): Chinese sentence, four near-miss Indonesian sentences. */
+function amZh2id(phase,date){const s=phase&&phase.am_zh2id;return !!(on(phase,date)&&s&&typeof s==='object'&&validDate(s.from)&&String(date)>=s.from)}
 function describe(date,session,root=REPO){
   const phase=load(root),active=on(phase,date);
   if(!active)return {date,session:session||null,active:false,note:'复习阶段未启用：按现在的说明书和规则出课，忽略 docs/tasks/REVIEW-PHASE.md。'};
   const plan=dayPlan(phase,date,loadThemes(root));
   return {date,session:session||null,active:true,activated_at:phase.activated_at,counts:counts(phase,date),plan,
     recurrence_min:session?recurrenceMin(phase,date,session):phase.recurrence_min||null,
-    ...(session==='am'?{story:storyPlan(phase,date,weekAms(phase,date,root)),am_slim:amSlim(phase,date)}:{}),
+    ...(session==='am'?{story:storyPlan(phase,date,weekAms(phase,date,root)),am_slim:amSlim(phase,date),am_zh2id:amZh2id(phase,date)}:{}),
     ...(session==='pm'?{pm_slim:pmSlim(phase,date),pm_practice:pmPractice(phase,date)}:{}),
     note:'复习阶段已启用：按 docs/tasks/REVIEW-PHASE.md 出课（数量、结构以本输出为准）。'};
 }
@@ -125,4 +128,4 @@ if(require.main===module){
   if(!validDate(a.date)){console.error('--date YYYY-MM-DD required');process.exit(2)}
   console.log(JSON.stringify(describe(a.date,a.session),null,2));
 }
-module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,storyRule,weekStart,weekAms,storyPlan,pmSlim,amSlim,pmPractice,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};
+module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,storyRule,weekStart,weekAms,storyPlan,pmSlim,amSlim,amZh2id,pmPractice,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};

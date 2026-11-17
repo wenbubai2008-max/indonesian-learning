@@ -189,6 +189,29 @@ t('slim AM: off, before am_slim.from or without the config, the old review_cards
   assert.equal(RP.load().am_slim.from,'2026-11-18');
 });
 
+// ---------- on: 中文 → 选印尼语 sentence quiz (2026-11-17 user decision, REVIEW-PHASE.md 2.5) ----------
+const ONZ={...ONA,am_zh2id:{from:'2026-10-13'}};
+function zq(target,cn){const t=String(target);return {kind:'zh2id',question:cn,target:t,point:'sudah / pernah',
+  options:['Aku sudah '+t+' di sini.','Aku pernah '+t+' di sini.','Aku belum '+t+' di sini.','Aku masih '+t+' di sini.'],
+  answer_index:0,answer:'Aku sudah '+t+' di sini.',explain:'sudah 表示已经，pernah 是曾经。'}}
+function zhAm(){const L=slimAm();const rv=L.review_vocab,w=L.vocab[0].word;L.quiz=[L.quiz[0],zq(rv[0],'我已经在这里了。'),zq(w,'我已经在这儿做了。')];return L}
+const ZH=['PHASE_AM_ZH2ID_COUNT','PHASE_AM_ZH2ID_INVALID','PHASE_AM_ZH2ID_EASY','AM_REVIEW_QUIZ_MISSING','QUESTION_INVALID','ANSWER_MISMATCH','AM_QUIZ_ANSWER_LEAK'];
+t('zh2id AM: 2 sentence items with near-miss options; a review_vocab target satisfies the review-quiz rule',()=>{
+  const ok=runA(zhAm(),ONZ);for(const k of ZH)assert.ok(!ok.has(k),k);
+  const a=zhAm();a.quiz[2]={...a.quiz[0]};assert.ok(runA(a,ONZ).has('PHASE_AM_ZH2ID_COUNT'),'two items required');
+  const b=zhAm();b.quiz[1].options[3]='Saya mau pulang ke rumah ibu sekarang juga.';assert.ok(runA(b,ONZ).has('PHASE_AM_ZH2ID_EASY'),'unrelated distractor');
+  const c=zhAm();c.quiz[1].target='tidakada';assert.ok(runA(c,ONZ).has('PHASE_AM_ZH2ID_INVALID'),'target must be taught');
+  const d=zhAm();d.quiz[1].question='Aku sudah di sini.';assert.ok(runA(d,ONZ).has('PHASE_AM_ZH2ID_INVALID'),'question must be Chinese');
+  const e=zhAm();e.quiz[1].options[1]='我曾经在这里。';assert.ok(runA(e,ONZ).has('PHASE_AM_ZH2ID_INVALID'),'options are Indonesian');
+  const f=zhAm();delete f.quiz[1].point;assert.ok(runA(f,ONZ).has('PHASE_AM_ZH2ID_INVALID'),'point required');
+  const g=zhAm();g.quiz[2].target=g.quiz[1].target;g.quiz[2]=zq(g.quiz[1].target,'我还在这里。');assert.ok(runA(g,ONZ).has('PHASE_AM_ZH2ID_COUNT'),'different targets');
+});
+t('zh2id AM: off, or before am_zh2id.from, the old quiz contract still applies',()=>{
+  for(const ph of [ONA,{...ONZ,am_zh2id:{from:'2026-10-15'}}]){const c=runA(slimAm(),ph);for(const k of ZH)assert.ok(!c.has(k),k);}
+  assert.equal(RP.amZh2id({...ONZ,active:false},'2026-10-14'),false);assert.equal(RP.amZh2id(ONZ,'2026-10-14'),true);
+  assert.equal(RP.load().am_zh2id.from,'2026-11-18');
+});
+
 // ---------- on: 18:00 任务课 ----------
 const pm14=read('data/daily/2026-10-14-pm.json');
 function phasePm(){

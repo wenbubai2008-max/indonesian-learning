@@ -768,3 +768,10 @@
 - **按 §53 搜过写死的数字**：守卫的“最新晚课对话”只检查 `dialogue.lines`，新字段不影响。
 - **守卫**：`review-rotation.js` 输出 `groups:groupsOut`；校验器含 `PHASE_PM_PRACTICE` / `VOCAB_EVERYDAY_INVALID`；`review-phase.json` 的 `pm_practice.from` 为 2026-11-18；`history-v2.js` 含 `x.dialogue.practice` 和 `vcEveryday`。
 
+
+## 57. 2026-11-17 早课小测「中文 → 选印尼语」（用户决定，2026-11-18 早课起）
+
+- **规则**（复习阶段，`data/review-phase.json` 的 `am_zh2id.from` = 2026-11-18 起的早课；之前、开关关闭、晚课都不变）：`quiz` 仍 3 题，其中恰好 2 题 `kind: "zh2id"`：中文 `question`、4 个印尼语整句选项（每个错项与正确句子词重合 ≥40%，只差一个点）、`target`（本课词卡词或 `review_vocab`，原样出现在正确句子里，2 题不同）、`point`、中文 `explain`。说明在 `docs/tasks/REVIEW-PHASE.md` 2.5；校验码 `PHASE_AM_ZH2ID_COUNT`、`PHASE_AM_ZH2ID_INVALID`、`PHASE_AM_ZH2ID_EASY`。
+- **“至少一题考复习词”**：开关开启时，`target` 在 `review_vocab` 里的 zh2id 题也算（校验器 `AM_REVIEW_QUIZ_MISSING`，守卫“最近 / 最新早课”两处检查用 `AZH(d)` 按日期套用——按 §53 的教训一起改）。其他日期的检查不变。
+- **页面**（`history-v2.js` 的 `zhQuizHtml`）：先显示中文和提示，点「看选项」才出现选项；答完显示考点和 🔊。答错时 `rcSignal` 对 `target` 记一次课程错词（同一课同一个词最多一次，存 `indo_recall_first_v1` 的 `sig`，来源“课程小测”），不改掌握；答对不记录。没有 `kind` 的小测题显示和以前完全一样。
+- **守卫**：`review-phase.json` 的 `am_zh2id.from` 为 2026-11-18；校验器含三个校验码；`history-v2.js` 含 `function zhQuizHtml` 和 `window.zqAfter`，且 `quizHtml` 遇到 `kind==='zh2id'` 才走新渲染。
