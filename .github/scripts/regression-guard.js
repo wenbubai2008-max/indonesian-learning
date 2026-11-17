@@ -31,6 +31,26 @@ function norm(s){ return String(s == null ? '' : s).trim().toLowerCase().replace
 function wordCount(s){ return String(s || '').trim().split(/\s+/).filter(Boolean).length; }
 function inRange(n,a,b){ return Number.isInteger(n) && n >= a && n <= b; }
 function unique(arr){ return new Set(arr).size === arr.length; }
+function cacheKeyBumpCheck(indexHtml){
+  const { execFileSync } = require('child_process');
+  const EXEMPT = new Set(['data/daily-vocab-data.js','data/extensive-reading-data.js','data/extensive-reading-history.js','data/vocab-profile-ui.js']);
+  const git = (args, opts) => execFileSync('git', args, Object.assign({ cwd: ROOT, encoding: 'utf8', stdio: ['ignore','pipe','ignore'] }, opts||{}));
+  let baseSha = '', baseIndex = '';
+  try { baseSha = git(['rev-parse','--verify','--quiet',(process.env.GUARD_CACHE_BASE||'HEAD^')+'^{commit}']).trim(); baseIndex = git(['show', baseSha+':index.html']); }
+  catch (e) { console.log('  SKIP  cache-key bump check (no git base commit available)'); return; }
+  const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const stale = [];
+  for (const m of indexHtml.matchAll(/(?:src|href)="(data\/[^"?]+\.(?:js|css))\?v=([^"]+)"/g)) {
+    const file = m[1], key = m[2];
+    if (EXEMPT.has(file)) continue;
+    const b = baseIndex.match(new RegExp('(?:src|href)="' + esc(file) + '\\?v=([^"]+)"'));
+    if (!b || b[1] !== key) continue; // new reference or key already bumped
+    let changed = false;
+    try { git(['diff','--quiet',baseSha,'--',file]); } catch (e) { changed = e.status === 1; }
+    if (changed) stale.push(file);
+  }
+  ok(!stale.length, 'changed homepage JS/CSS files bump their ?v= cache key' + (stale.length ? ' (not bumped: ' + stale.join(', ') + ')' : ''));
+}
 function fileHash12(p){ return crypto.createHash('sha256').update(read(p)).digest('hex').slice(0,12); }
 function completedStamp(row,session){
   const d=String(row&&row.date||'');
@@ -600,7 +620,11 @@ try {
     }
   }
   ok(rootPage.includes("fetch('roots.json'") && rootPage.includes('id="cards"') && rootPage.includes('id="detail"'), 'root family library loads independent expandable JSON');
-  ok(indexHtml.includes('data/daily-width-fix.css?v=20261014-single1') && indexHtml.includes('data/home-modules-layout.js?v=20261117-choice1'),'homepage css and module JS cache keys are updated');
+  ok(/data\/daily-width-fix\.css\?v=[^"]+"/.test(indexHtml) && /data\/home-modules-layout\.js\?v=[^"]+"/.test(indexHtml),'homepage css and module JS load with a cache key');
+  // 2026-11-17: the old assertion pinned exact ?v= strings, so a correct bump failed and a forgotten bump passed.
+  // Now: every homepage JS/CSS file that changed since the base commit must carry a different ?v= than the base.
+  // Data files rewritten by the lesson/reading bots and the hash-injected profile UI manage their own loading.
+  (process.env.GUARD_BASELINE_TREE==='1'?function(){}:cacheKeyBumpCheck)(indexHtml);
   ok(!/<div class="modules"[^>]*>\s*<button/s.test(indexHtml), 'index does not hard-code homepage cards');
   if(fs.existsSync(rel('data/home-modules-stability.js'))){
     const stability = read('data/home-modules-stability.js');
