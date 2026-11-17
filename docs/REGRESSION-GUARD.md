@@ -746,3 +746,10 @@
 - **修正**：守卫新增 `STORY(d)`（`review-phase.js` 的 `storyRule`）和 `PSLIM(d)`（`pmSlim`）。最新早课阅读长度按当天规则（连载日用 `story.reading`）；最近 / 最新晚课改写数在精简日为 1–2；精简日要求没有 `self_check`。其他日期的检查不变。
 - **以后**：改课程规则时，除了校验器，还要搜 `regression-guard.js` 里对“最新 / 最近课程”的写死数字。
 
+## 54. 2026-11-17 早课后半部分精简（用户决定）
+
+- **规则**（复习阶段，`data/review-phase.json` 的 `am_slim.from` = 2026-11-18 起的早课；之前、开关关闭、晚课都不变）：`output` 必须有带 `……` 的句子骨架 `frame`；`review_cards.recall` 只放 2–6 个 `review_vocab` 里、又不是本课词卡的词；不写 `review_cards.frames` / `apply`；`contrasts` 1–3 组。说明在 `docs/tasks/REVIEW-PHASE.md` 2.2；校验码 `PHASE_AM_SLIM_OUTPUT`、`PHASE_AM_SLIM_REVIEW_CARDS`。`review` 3 条仍必填（作退回内容）。
+- **页面**：`history-v2.js` 的主动输出显示「句子骨架」框（在参考答案前）；没有 `frame` 的课程显示不变。复习卡渲染本来就允许缺 frames / apply。
+- **按 §53 的教训**：守卫的“最新 / 最近早课”检查里没有写死 recall / frames / apply 的数量，这次不用改；以后改规则仍要先搜一遍。
+- **守卫**：校验器含 `PHASE_AM_SLIM_OUTPUT` / `PHASE_AM_SLIM_REVIEW_CARDS`；`review-phase.json` 的 `am_slim.from` 为 2026-11-18；`history-v2.js` 的 `outputHtml` 显示 `o.frame`。
+

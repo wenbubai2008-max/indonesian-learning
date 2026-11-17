@@ -748,6 +748,15 @@ try {
     okNew(/function dlgPractice\(x\)/.test(hv)&&hv.includes("</div></div>`).join('')+dlgPractice(x));")&&lt.includes('dailyLightFrame')&&lt.includes('x.review.retell_reference'),'page: 藏台词 under review-phase dialogues, sentence frame and folded reference retell');
   }
 
+  // 2026-11-17 (REGRESSION-GUARD §54): slim review-phase AM back half.
+  {
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const vl=read('.github/scripts/validate-lesson-candidate.js'),hv=read('data/history-v2.js'),rp=JSON.parse(read('data/review-phase.json'));
+    okNew(vl.includes('"PHASE_AM_SLIM_OUTPUT"')&&vl.includes('"PHASE_AM_SLIM_REVIEW_CARDS"')&&vl.includes('const AS=session==="am"&&RP.amSlim(phase,date);'),'validator: slim review-phase AM (framed output, recall only non-card review words, no frames/apply, 1-3 contrasts)');
+    okNew(rp.am_slim&&rp.am_slim.from==='2026-11-18','review phase carries the slim AM rule from 2026-11-18');
+    okNew(hv.includes('${o.frame?`<div class="outFrame">'),'AM page shows the output sentence frame');
+  }
+
   // 2026-10-18 (REGRESSION-GUARD §33): 带学模式 — a view over the lesson's own content; own progress key only.
   {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;

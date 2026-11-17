@@ -113,7 +113,7 @@ runtime 尚未同步时，不得用过期词池生成新课；先确认现有 Sy
   - 校验器检查：`LESSON_FOCUS_MISSING`（缺字段）、`LESSON_FOCUS_INVALID`（数量或字段不对）、`LESSON_FOCUS_WORD`（词不是本课的）、`LESSON_FOCUS_PATTERN`（例句不在本课里）。按报错改正，不得为此改动选词、题目或其他内容。
 - **review_cards**（2026-10-16 用户决定；可选但每节都要写）：上面 3 段复习的结构化版本，网页据此显示可点开的提取卡片、对比块和例句。**内容与 review 三段一致，不新增词、不加量**；review 三段照常写。格式：
   - `recall`：4–12 个 `{cn, id}`——cn 是中文提示，id 是印尼语答案，**必须是本课 vocab / review_vocab / cycle_vocab 里的词**（校验器检查）。
-  - `frames`（可选）：最多 6 个补半句的印尼语字符串，例如 `"Masukin …, mau hujan!"`。
+  - `frames`（可选）：最多 6 个补半句的印尼语字符串，例如 `"Masukin …, mau hujan!"`。（复习阶段 2026-11-18 起不写 frames 和 apply，recall 只放词卡以外的复习词，output 加句子骨架 frame，见 `REVIEW-PHASE.md` 2.2。）
   - `contrasts`：1–6 组 `{items:[{id, cn}] 2–3 个, note: 一句话区别}`，同词根一组也写在这里。
   - `apply`：1–4 个 `{word, usage: 一句话用法, examples:[{id, cn}] 1–3 句}`。
   - 预检报 `AM_REVIEW_CARDS_INVALID` / `AM_REVIEW_CARDS_ANSWER` 时，按报错改一次；仍不通过就**删掉整个 review_cards**（课程照样有效，网页退回显示 3 段文字），不得为此改动 review 或其他内容。

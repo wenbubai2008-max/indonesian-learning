@@ -166,6 +166,29 @@ t('story: off, before story.from or without story config, nothing changes',()=>{
   const committed=RP.load();assert.equal(committed.story.from,'2026-11-17');assert.deepEqual(committed.story.reading,[110,160]);
 });
 
+// ---------- on: slim 08:00 back half (2026-11-17 user decision, REVIEW-PHASE.md 2.2) ----------
+const ONA={...ON,am_slim:{from:'2026-10-13'}};
+function slimAm(){const L=phaseAm(),rv=(L.review_vocab||[]).slice(0,4);
+  L.output={...L.output,frame:'Mohon maaf, Kak, …… . Paketnya …… , jadi …… .'};
+  L.review_cards={recall:rv.map(x=>({cn:'提示',id:x})),contrasts:L.review_cards.contrasts.slice(0,1)};return L}
+const runA=(L,ph)=>codes(validate({lesson:L,index,runtime:rtAm,rules,expectedDate:'2026-10-14',expectedSession:'am',sameDayAm:null,previousPm:null,reviewHistory:[],reviewPhase:ph,themes}));
+const ASLIM=['PHASE_AM_SLIM_OUTPUT','PHASE_AM_SLIM_REVIEW_CARDS','AM_REVIEW_CARDS_INVALID','AM_REVIEW_CARDS_ANSWER','AM_OUTPUT_INVALID'];
+t('slim AM: framed output, recall only non-card review words, no frames/apply, 1-3 contrasts',()=>{
+  const ok=runA(slimAm(),ONA);for(const k of ASLIM)assert.ok(!ok.has(k),k);
+  const a=slimAm();delete a.output.frame;assert.ok(runA(a,ONA).has('PHASE_AM_SLIM_OUTPUT'),'frame required');
+  const b=slimAm();b.output.frame='Mohon maaf.';assert.ok(runA(b,ONA).has('PHASE_AM_SLIM_OUTPUT'),'frame needs blanks');
+  const c=slimAm();c.review_cards.recall.push({cn:'卡片词',id:c.vocab[0].word});assert.ok(runA(c,ONA).has('PHASE_AM_SLIM_REVIEW_CARDS'),'a word card in recall');
+  const d=slimAm();d.review_cards.apply=[{word:'x',usage:'u',examples:[{id:'contoh',cn:'例'}]}];assert.ok(runA(d,ONA).has('PHASE_AM_SLIM_REVIEW_CARDS'),'apply removed');
+  const e=slimAm();e.review_cards.frames=['Ternyata …'];assert.ok(runA(e,ONA).has('PHASE_AM_SLIM_REVIEW_CARDS'),'frames removed');
+  const g=slimAm();const c0=g.review_cards.contrasts[0];g.review_cards.contrasts=[c0,c0,c0,c0];assert.ok(runA(g,ONA).has('PHASE_AM_SLIM_REVIEW_CARDS'),'at most 3 contrasts');
+});
+t('slim AM: off, before am_slim.from or without the config, the old review_cards contract still applies',()=>{
+  for(const ph of [ON,{...ONA,am_slim:{from:'2026-10-15'}}]){assert.ok(runA(slimAm(),ph).has('AM_REVIEW_CARDS_INVALID'),JSON.stringify(ph.am_slim||null)+': apply still required');
+    const old=runA(phaseAm(),ph);for(const k of ASLIM)assert.ok(!old.has(k),k);}
+  assert.equal(RP.amSlim({...ONA,active:false},'2026-10-14'),false);assert.equal(RP.amSlim(ONA,'2026-10-14'),true);
+  assert.equal(RP.load().am_slim.from,'2026-11-18');
+});
+
 // ---------- on: 18:00 任务课 ----------
 const pm14=read('data/daily/2026-10-14-pm.json');
 function phasePm(){
