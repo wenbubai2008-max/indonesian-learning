@@ -55,6 +55,8 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
   // Weekly serial story (2026-11-16 user decision, REVIEW-PHASE.md 2.1): from story.from on, a review-phase 08:00 lesson's
   // reading is one episode of this week's story. SP=null (off, before story.from, or 18:00) keeps every rule below unchanged.
   // weekAms = this theme week's earlier AM lessons; when the caller does not pass them they are read from data/daily.
+  // Optional card field everyday (2026-11-17, LESSON-QUALITY.md 7e): how Indonesians usually say it day to day.
+  check((Array.isArray(lesson.vocab)?lesson.vocab:[]).every(v=>!v||v.everyday===undefined||str(v.everyday)),"VOCAB_EVERYDAY_INVALID","vocab[].everyday, when present, is a non-empty string");
   // Slim 18:00 back half (2026-11-16 user decision, REVIEW-PHASE.md 3.1). SL=false keeps the old PM contract unchanged.
   const SL=session==="pm"&&RP.pmSlim(phase,date);
   // Slim 08:00 back half (2026-11-17 user decision, REVIEW-PHASE.md 2.2). AS=false keeps the old AM contract unchanged.
@@ -229,6 +231,10 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     check(lesson.dialogue&&!Array.isArray(lesson.dialogue)&&str(lesson.dialogue.title)&&Array.isArray(lesson.dialogue.lines)&&range(lesson.dialogue.lines.length,C.pm_dialogue[0],C.pm_dialogue[1])&&lesson.dialogue.lines.every(x=>str(x?.speaker)&&str(x?.id)&&str(x?.cn)),"PM_DIALOGUE_INVALID",P?"Review phase: dialogue with "+C.pm_dialogue.join("-")+" bilingual lines":"Dialogue object with 4+ bilingual lines");
     // Review phase PM = 任务课: the dialogue has one turn where the situation changes (dialogue.twist = its line index),
     // and at least one rewrite task (kind "twist") asks the learner to handle that change.
+    // 藏台词 practice (2026-11-17 user decision, REVIEW-PHASE.md 3.1 item 5): a short reworded version of the dialogue.
+    if(session==="pm"&&RP.pmPractice(phase,date)){const dl=Array.isArray(lesson.dialogue?.lines)?lesson.dialogue.lines:[],sp=new Set(dl.map(l=>l&&String(l.speaker))),pr=lesson.dialogue?.practice,pl=Array.isArray(pr?.lines)?pr.lines:[];
+      const same=new Set(dl.map(l=>norm(l&&l.id).replace(/[.,!?…"“”]/g,"").trim())),verbatim=pl.filter(l=>same.has(norm(l&&l.id).replace(/[.,!?…"“”]/g,"").trim())).length;
+      check(pr&&!Array.isArray(pr)&&sp.has(String(pr.role))&&range(pl.length,4,6)&&pl.every(l=>l&&sp.has(String(l.speaker))&&str(l.id)&&str(l.cn)&&String(l.id).trim().split(/\s+/).length<=12)&&pl.filter(l=>String(l.speaker)===String(pr.role)).length>=2&&verbatim<=Math.floor(pl.length/2),"PHASE_PM_PRACTICE","Review phase: dialogue.practice {role (a dialogue speaker), lines: 4-6 {speaker,id,cn}, each id ≤12 words, role ≥2 lines, at most half copied verbatim from the dialogue}");}
     if(P){const L=Array.isArray(lesson.dialogue?.lines)?lesson.dialogue.lines.length:0,tw=lesson.dialogue?.twist;
       check(Number.isInteger(tw)&&tw>=1&&tw<L,"PHASE_PM_TWIST","Review phase: dialogue.twist must be the index (1.."+(L-1)+") of the line where the situation changes");
       check(Array.isArray(lesson.rewrite)&&lesson.rewrite.some(x=>x&&x.kind==="twist"),"PHASE_PM_TWIST","Review phase: one rewrite task with kind \"twist\" (respond to the change)");}

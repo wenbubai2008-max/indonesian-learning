@@ -760,3 +760,11 @@
 - **英文释义默认隐藏**：`index.html` 早期 CSS `#vocab:not(.showEn) .vocabUnifiedEn{display:none!important}`（比翻卡脚本的 `!important` 更具体）；工具栏「显示英文 / 隐藏英文」切换，不记住选择。选择题选项仍按“中文优先、没有中文才用英文”。
 - **守卫**：首页卡和占位使用「可选加练」；`vocab-controller` 含 `DEFAULT_VIEW={daily:'review'}` 和 `showUncheckedWords`；`index.html` 含英文隐藏规则和切换按钮。
 
+## 56. 2026-11-17 复习词卡成组、日常说法、藏台词精简版（用户决定）
+
+- **词卡成组**（早课复习循环，`review-rotation.js`）：`review_cycle.groups` 最多 2 组（同词根 `same_root` 优先，再到形近 `look_alike`：字母相同顺序不同，或 5 个字母以上只差一个字母；多词短语不算）。只拿 `stale` 填充词换搭档，**`weak` 词从不被换掉**；组员在 `cycle_words` 里相邻；新增 `group` 标签。近义 / 反义由生成时补 1 对（`REVIEW-PHASE.md` 2.3），每组在辨析里讲清。修过的坑：遍历快照时已被换掉的词不能再当锚点，一个词不能和自己成组（`kindOf` 对相同词返回 null）。
+- **日常说法**（`LESSON-QUALITY.md` 7e，早晚课）：课文用印尼人日常说法、正式词首次出现放括号（`di-upload (diunggah)`）；词卡可选 `everyday`，网页显示「日常常说」，复习卡盖住时一起隐藏；校验 `VOCAB_EVERYDAY_INVALID`。
+- **藏台词精简版**（晚课，`pm_practice.from` = 2026-11-18）：`dialogue.practice {role, lines}`，4–6 句、每句 ≤12 词、角色 ≥2 句、照抄原句不超过一半；校验 `PHASE_PM_PRACTICE`。网页有精简版就只用它（只给该角色一个按钮）；旧课程退回原对话，但每个角色最多 5 句、每句只带前一句作上下文。
+- **按 §53 搜过写死的数字**：守卫的“最新晚课对话”只检查 `dialogue.lines`，新字段不影响。
+- **守卫**：`review-rotation.js` 输出 `groups:groupsOut`；校验器含 `PHASE_PM_PRACTICE` / `VOCAB_EVERYDAY_INVALID`；`review-phase.json` 的 `pm_practice.from` 为 2026-11-18；`history-v2.js` 含 `x.dialogue.practice` 和 `vcEveryday`。
+

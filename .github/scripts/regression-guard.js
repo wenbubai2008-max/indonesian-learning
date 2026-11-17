@@ -766,6 +766,15 @@ try {
     okNew(index.includes('#vocab:not(.showEn) .vocabUnifiedEn{display:none!important}')&&index.includes('id="vocabEnToggle"'),'vocab cards hide English by default with a toggle');
   }
 
+  // 2026-11-17 (REGRESSION-GUARD §56): grouped review-cycle cards, everyday usage, short 藏台词 practice dialogue.
+  {
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const rr=read('.github/scripts/review-rotation.js'),vl=read('.github/scripts/validate-lesson-candidate.js'),hv=read('data/history-v2.js'),rp=JSON.parse(read('data/review-phase.json'));
+    okNew(rr.includes('groups:groupsOut')&&rr.includes("chosen[i].tag==='stale'")&&rr.includes("const kindOf=(a,b)=>a===b?null:"),'review cycle groups: same root / look-alike, only stale fillers swapped, never a word with itself');
+    okNew(vl.includes('"PHASE_PM_PRACTICE"')&&vl.includes('"VOCAB_EVERYDAY_INVALID"')&&rp.pm_practice&&rp.pm_practice.from==='2026-11-18','validator: PM practice dialogue from 2026-11-18 and the everyday card field');
+    okNew(hv.includes('x.dialogue.practice')&&hv.includes('class="vcEveryday"')&&hv.includes('.vcRecall:not(.vcOpen) .vcEveryday'),'page: 藏台词 uses the practice dialogue; 日常常说 on cards, hidden while covered');
+  }
+
   // 2026-10-18 (REGRESSION-GUARD §33): 带学模式 — a view over the lesson's own content; own progress key only.
   {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;

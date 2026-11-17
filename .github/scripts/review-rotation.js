@@ -312,7 +312,30 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
   const nWeak=Math.ceil(cycleCount/2);
   grab(weak,nWeak,'weak');grab(stale,cycleCount-chosen.length,'stale');
   if(chosen.length<cycleCount)grab(weak,cycleCount-chosen.filter(c=>c.tag==='stale').length,'weak');
-  cycle={active:true,cycle_count:cycleCount,cycle_words:chosen.map(c=>c.word),weak:chosen.filter(c=>c.tag==='weak').map(c=>c.word),stale:chosen.filter(c=>c.tag==='stale').map(c=>c.word),detail:chosen};
+  // Card groups (2026-11-17, user decision, REVIEW-PHASE.md 2.3): words that belong together are learned together. Up to
+  // two groups of 2-3: same root first, then look-alike spellings (anagram, or one letter apart at 5+ letters). A group
+  // is formed from words already chosen, or by swapping a 'stale' filler for a partner from the same eligible pool;
+  // 'weak' picks (errors, weakest words) are never swapped out. Group members are listed next to each other.
+  const groupsOut=[],inGroup=w=>groupsOut.some(g=>g.words.includes(w));
+  const lev=(a,b)=>{const m=a.length,n=b.length,d=Array.from({length:m+1},(_,i)=>[i]);for(let j=1;j<=n;j++)d[0][j]=j;for(let i=1;i<=m;i++)for(let j=1;j<=n;j++)d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));return d[m][n]};
+  const sameRoot=(a,b)=>!!rootOf.get(a)&&rootOf.get(a)===rootOf.get(b);
+  const lookAlike=(a,b)=>{if(a===b||/\s/.test(a+b)||a[0]!==b[0]||sameRoot(a,b)||Math.min(a.length,b.length)<4)return false;
+   if(a.length===b.length&&[...a].sort().join('')===[...b].sort().join(''))return true;return Math.min(a.length,b.length)>=5&&lev(a,b)===1};
+  const kindOf=(a,b)=>a===b?null:sameRoot(a,b)?'same_root':lookAlike(a,b)?'look_alike':null;
+  if(chosen.length>=2)for(const anchor of chosen.slice()){
+   if(groupsOut.length>=2)break;if(!chosen.includes(anchor)||inGroup(anchor.word))continue;
+   const mates=chosen.filter(c=>c!==anchor&&!inGroup(c.word)&&kindOf(anchor.word,c.word));
+   if(mates.length){const g=[anchor,...mates].slice(0,3);groupsOut.push({kind:kindOf(anchor.word,mates[0].word),key:rootOf.get(anchor.word)||anchor.word,words:g.map(c=>c.word)});continue}
+   const partner=rest.find(x=>!taken.has(x.word)&&kindOf(anchor.word,x.word)&&!(x.count>=3&&heavy>=1));if(!partner)continue;
+   let slot=-1;for(let i=chosen.length-1;i>=0;i--)if(chosen[i].tag==='stale'&&chosen[i]!==anchor&&!inGroup(chosen[i].word)){slot=i;break}
+   if(slot<0)continue;
+   taken.delete(chosen[slot].word);taken.add(partner.word);if(partner.count>=3)heavy++;
+   chosen[slot]={word:partner.word,tag:'group',group_with:anchor.word,weak_score:weakScore(partner),stale_days:partner.stale_days};
+   groupsOut.push({kind:kindOf(anchor.word,partner.word),key:rootOf.get(anchor.word)||anchor.word,words:[anchor.word,partner.word]});
+  }
+  if(groupsOut.length){const order=[];for(const c of chosen){if(order.includes(c))continue;const g=groupsOut.find(g=>g.words.includes(c.word));
+   if(g)g.words.forEach(w=>{const m=chosen.find(x=>x.word===w);if(m&&!order.includes(m))order.push(m)});else order.push(c)}chosen.splice(0,chosen.length,...order)}
+  cycle={active:true,cycle_count:cycleCount,cycle_words:chosen.map(c=>c.word),weak:chosen.filter(c=>c.tag==='weak').map(c=>c.word),stale:chosen.filter(c=>c.tag==='stale').map(c=>c.word),group:chosen.filter(c=>c.tag==='group').map(c=>c.word),groups:groupsOut,detail:chosen};
   if(chosen.length<cycleCount)notes.push('review_cycle_short:'+chosen.length+'/'+cycleCount);
   chosen.forEach(c=>used.add(c.word));
  }
