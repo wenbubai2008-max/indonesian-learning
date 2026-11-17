@@ -56,6 +56,20 @@ node .github/scripts/review-phase.js --date D --session am|pm
 - **不变**：`sentences` 5 句、`quiz` 3 题（至少 1 题考读懂本集）、`review` 3 条（网页有复习卡时不显示，但仍要写，作退回内容）、`lesson_focus`。
 - 校验码：`PHASE_AM_SLIM_OUTPUT`（缺带 `……` 的 `frame`）、`PHASE_AM_SLIM_REVIEW_CARDS`（recall 不是 2–6 个词卡以外的复习词、写了 frames / apply、辨析超过 3 组）。
 
+### 2.3 复习词卡成组（2026-11-17 用户决定，2026-11-18 早课起）
+
+为什么：近义词、反义词、长得像的词放在一起学，更容易分清，也记得牢。
+
+- **排序输出的 `review_cycle.groups`**：选词脚本最多给 2 组（每组 2–3 个）：先找同词根（`same_root`），再找长得像的（`look_alike`：字母相同只是顺序不同，或 5 个字母以上只差一个字母，例如 `mengenali / mengenai`）。脚本只拿“最久没见”的填充词去换搭档，**最弱的词和答错的词从不被换掉**；组员在 `cycle_words` 里已经排在一起。直接照用 `cycle_words`，词卡按这个顺序排，组员相邻。
+- **脚本给的组不到 2 组时，自己补 1 对近义词或反义词**：从本课词卡词里挑一个，再从 `runtime.review_pool` 里找它真正常见的近义 / 反义搭档（例如 `seenggaknya ↔ paling tidak`、`ramai ↔ sepi`），用它替换 1 个 `stale` 词（不换 `weak` 词），同样写进 `cycle_vocab`，词卡相邻。没有合适的就不补，不硬凑。
+- **每组都要在 `review_cards.contrasts` 里讲清区别**（意思、用法或拼写差在哪），算进 2.2 的 1–3 组辨析里；`lesson_focus` 的 3 个词尽量包含一组。
+- 本集连载里，同组的词尽量出现在同一个情节里。
+- 汇报里列出用了哪几组、各是什么关系。
+
+### 2.4 日常说法
+
+早晚课都执行 `LESSON-QUALITY.md` 7e：对话、阅读、例句用印尼人日常真正说的词，正式词首次出现放括号；词卡可写 `everyday`。
+
 ## 三、18:00 晚课：任务课
 
 目标：在一个要办成的事里把旧词用出来，遇到变化也能接着说。
@@ -86,6 +100,15 @@ node .github/scripts/review-phase.js --date D --session am|pm
    "review": {"title": "可选 · 30 秒复述", "steps": ["用 A、B、C 说说……（一句中文提示，点名 2–4 个本课词）"], "retell_reference": "3–5 句印尼语参考复述，用上点名的词", "retell_reference_cn": "对应中文"}
    ```
    `steps` 只有 1 条。PM-LESSON.md 第 5 节“自检与复盘分工”和 LESSON-QUALITY.md §7 关于 self_check / 复盘第一步的要求，在复习阶段由本节代替。
+5. **藏台词用精简版对话 `dialogue.practice`**（2026-11-17 用户决定，2026-11-18 晚课起）：网页的「藏台词」不再整段照搬原对话，而是用这一段。
+   ```json
+   "practice": {"role": "学习者要说的角色（必须是对话里的一个 speaker）", "lines": [{"speaker": "……", "id": "……", "cn": "……"}]}
+   ```
+   - 放在 `dialogue` 里面；4–6 句，按原对话的顺序把事情精简地走一遍，`role` 至少 2 句。
+   - 每句不超过 12 个印尼语词，挑最值得开口练的说法（本课词、本周句型、口语反应）。
+   - **不照抄原句**：至少一半的句子是改写过的短句（换个说法、缩短、合并），不是原对话里一模一样的句子。
+   - `cn` 是自然中文，学习者看着它说印尼语；不在中文里透露印尼语答案。
+   - 校验码 `PHASE_PM_PRACTICE`。
 
 - 自然复现照算：对话、阅读、改写参考答案和 `retell_reference` 里的词都算。改写少了 2–3 题，复现词要主动放进对话（两个角色都要有）、阅读和参考复述里，不要只靠改写凑数。
 - 校验码：`PM_REWRITE_INVALID`（不是 1–2 个）、`PHASE_PM_SLIM_REWRITE`（缺 twist、缺带 `……` 的 `frame`，或有挑战题以外的改写）、`PM_SELF_CHECK_INVALID`（还写了 self_check）、`PHASE_PM_SLIM_REVIEW`（复盘不是 1 步，或缺参考复述）。

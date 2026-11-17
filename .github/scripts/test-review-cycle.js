@@ -122,4 +122,29 @@ t('R2 ranking fills cycle slots half weakest, half longest unseen, disjoint from
  assert.equal(none.review_cycle,null,'no cycle in normal mode');
  assert.deepEqual(none.recommended_review,out.recommended_review,'review_vocab picks unchanged by the cycle');
 });
+// 2026-11-17 (user decision, REVIEW-PHASE.md 2.3): cycle cards come in groups — same root, then look-alike spellings.
+t('cycle groups: a same-root partner replaces a stale filler, weak picks stay, members sit together',()=>{
+ const R=o=>rank({date:'2026-10-15',session:'am',runtime:o,rotation:rules.review_rotation,reviewHistory:[],longHistory:[],reviewCount:5,cycleCount:6}).review_cycle;
+ const base=R(clone(baseRuntime)),A=base.weak[0];assert.ok(A&&base.stale.length,'fixture has weak and stale picks');
+ const rt=clone(baseRuntime);const rA=rt.review_pool.find(r=>String(r[0]).toLowerCase()===A);rA[6]='zzroot';
+ rt.review_pool.push(['zzpartner',2,0,'','','','zzroot','']);
+ const c=R(rt);
+ assert.ok(c.cycle_words.includes('zzpartner'),'partner pulled in');assert.deepEqual(c.weak,base.weak,'weak picks unchanged');
+ assert.equal(c.cycle_words.length,6);assert.ok(c.group.includes('zzpartner'));assert.ok(c.groups.length<=2);
+ assert.deepEqual(c.groups[0],{kind:'same_root',key:'zzroot',words:[A,'zzpartner']});
+ for(const g of c.groups){const ix=g.words.map(w=>c.cycle_words.indexOf(w)).sort((a,b)=>a-b);assert.ok(ix[0]>=0&&ix[ix.length-1]-ix[0]===ix.length-1,'group members adjacent: '+g.words)}
+ assert.ok(c.stale.length<base.stale.length,'stale fillers were swapped, never weak picks');
+});
+t('cycle groups: look-alike spellings pair up; unrelated words and multi-word phrases do not',()=>{
+ const R=o=>rank({date:'2026-10-15',session:'am',runtime:o,rotation:rules.review_rotation,reviewHistory:[],longHistory:[],reviewCount:5,cycleCount:6}).review_cycle;
+ const base=R(clone(baseRuntime)),A=base.weak[0];
+ const rt=clone(baseRuntime);rt.review_pool.find(r=>String(r[0]).toLowerCase()===A)[6]='';
+ const one=A.slice(0,-1)+(A.endsWith('z')?'y':'z'),two=A.slice(0,-2)+'zy';   // one letter apart vs two letters apart
+ rt.review_pool.push([two,2,0,'','','','','']);rt.review_pool.push([one,2,0,'','','','','']);rt.review_pool.push(['zz phrase',2,0,'','','','','']);
+ const c=R(rt);const g=c.groups.find(g=>g.kind==='look_alike');
+ assert.ok(g&&g.words[0]===A&&g.words.includes(one),JSON.stringify(c.groups));
+ assert.ok(!c.groups.some(g=>g.words.includes(two)||g.words.includes('zz phrase')),'two letters apart / phrases are not look-alike');
+ const {rank:_r}=require('./review-rotation');
+});
+
 console.log('Review cycle tests passed: '+n+' checks (AM 4+6 cycle, cycle_vocab required, remaining new first, review_pool only, normal mode unchanged, PM 0-new growth, 08:00 old-review marker, ledger, ranking split).');

@@ -227,6 +227,28 @@ t('slim PM: one twist rewrite with a frame, no self_check, one retell step with 
   const f=slimPm();delete f.review.retell_reference;assert.ok(runPm(f,ONP).has('PHASE_PM_SLIM_REVIEW'),'reference retell');
   const g=slimPm();g.review.steps.push('另一步');assert.ok(runPm(g,ONP).has('PHASE_PM_SLIM_REVIEW'),'one step only');
 });
+// ---------- 藏台词 practice dialogue (2026-11-17 user decision, REVIEW-PHASE.md 3.1 item 5) ----------
+const ONQ={...ONP,pm_practice:{from:'2026-10-13'}};
+function practicePm(){const L=slimPm(),dl=L.dialogue.lines,sp=[...new Set(dl.map(l=>l.speaker))];
+  L.dialogue.practice={role:sp[1]||sp[0],lines:[
+    {speaker:sp[0],id:'Halo, ada yang bisa dibantu?',cn:'你好，有什么能帮你？'},
+    {speaker:sp[1]||sp[0],id:'Saya mau tanya soal pesanan.',cn:'我想问一下订单。'},
+    {speaker:sp[0],id:dl[2].id.split(/\s+/).slice(0,8).join(' '),cn:'好的。'},
+    {speaker:sp[1]||sp[0],id:'Oke, makasih ya.',cn:'好，谢谢。'}]};return L}
+t('practice PM: a short reworded practice version of the dialogue is required from pm_practice.from',()=>{
+  assert.ok(!runPm(practicePm(),ONQ).has('PHASE_PM_PRACTICE'),'valid practice');
+  assert.ok(runPm(slimPm(),ONQ).has('PHASE_PM_PRACTICE'),'missing practice');
+  const a=practicePm();a.dialogue.practice.role='Nobody';assert.ok(runPm(a,ONQ).has('PHASE_PM_PRACTICE'),'role must be a speaker');
+  const b=practicePm();b.dialogue.practice.lines[1].id='satu dua tiga empat lima enam tujuh delapan sembilan sepuluh sebelas dua belas';assert.ok(runPm(b,ONQ).has('PHASE_PM_PRACTICE'),'≤12 words');
+  const c=practicePm();c.dialogue.practice.lines=c.dialogue.lines.slice(0,4).map(l=>({speaker:l.speaker,id:l.id,cn:l.cn}));assert.ok(runPm(c,ONQ).has('PHASE_PM_PRACTICE'),'copied verbatim');
+  const d=practicePm();d.dialogue.practice.lines=d.dialogue.practice.lines.slice(0,3);assert.ok(runPm(d,ONQ).has('PHASE_PM_PRACTICE'),'4-6 lines');
+  assert.ok(!runPm(slimPm(),ONP).has('PHASE_PM_PRACTICE'),'off before pm_practice.from');
+  assert.equal(RP.load().pm_practice.from,'2026-11-18');
+});
+t('everyday: optional card field, must be a non-empty string when present',()=>{
+  const a=slimPm();a.vocab[0].everyday='日常多说 upload / di-upload';assert.ok(!runPm(a,ONP).has('VOCAB_EVERYDAY_INVALID'));
+  const b=slimPm();b.vocab[0].everyday='';assert.ok(runPm(b,ONP).has('VOCAB_EVERYDAY_INVALID'));
+});
 t('slim PM: off, before pm_slim.from or without the config, the old 3-4 rewrite contract still applies',()=>{
   for(const ph of [ON,{...ONP,pm_slim:{from:'2026-10-15'}}]){const c=runPm(slimPm(),ph);assert.ok(c.has('PM_REWRITE_INVALID')&&c.has('PM_SELF_CHECK_INVALID'),JSON.stringify(ph.pm_slim||null));
     const old=runPm(phasePm(),ph);for(const k of SLIM)assert.ok(!old.has(k),k);}
