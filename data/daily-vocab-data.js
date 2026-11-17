@@ -4891,20 +4891,23 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-01 08:00",
-    "last_seen": "2026-09-01 08:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-01"
+      "2026-09-01",
+      "2026-11-17"
     ],
-    "example": "Kita kelewatan, mending putar balik di depan.",
-    "example_cn": "我们开过头了，最好在前面掉头。",
+    "example": "Jalan di depan pasar ditutup, jadi kurirnya harus putar balik, dan setengah jam perjalanannya jadi sia-sia.",
+    "example_cn": "市场前面的路封了，所以快递员只好掉头，半个小时的路白跑了。",
     "lesson_occurrences": [
-      "2026-09-01 08:00"
-    ]
+      "2026-09-01 08:00",
+      "2026-11-17 08:00"
+    ],
+    "root_cn": "转 + 回"
   },
   {
     "word": "tunai",
@@ -5228,9 +5231,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-01 19:00",
-    "last_seen": "2026-10-03 18:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
       "19:00",
       "08:00",
@@ -5239,14 +5242,16 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-01",
       "2026-09-30",
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-17"
     ],
     "example": "Stok barunya baru datang minggu depan, berarti kita harus menunggu beberapa hari lagi.",
     "example_cn": "新库存下周才到，也就是说我们还得再等几天。",
     "lesson_occurrences": [
       "2026-09-01 19:00",
       "2026-09-30 08:00",
-      "2026-10-03 18:00"
+      "2026-10-03 18:00",
+      "2026-11-17 08:00"
     ],
     "root_cn": "意思；含义"
   },
@@ -6147,20 +6152,23 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-03 08:00",
-    "last_seen": "2026-09-03 08:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-03"
+      "2026-09-03",
+      "2026-11-17"
     ],
-    "example": "Sebelum meeting, aku mau rapihin file ini dulu.",
-    "example_cn": "开会前，我想先把这个文件整理好。",
+    "example": "Sebelum kurir datang, rapihin dulu paketnya sesuai nama pembeli, biar nggak ketuker.",
+    "example_cn": "快递员来之前，先把包裹按买家名字码好，免得弄混。（nggak = tidak，ketuker = tertukar）",
     "lesson_occurrences": [
-      "2026-09-03 08:00"
-    ]
+      "2026-09-03 08:00",
+      "2026-11-17 08:00"
+    ],
+    "root_cn": "整齐"
   },
   {
     "word": "masuk akal",
@@ -7378,21 +7386,25 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "可惜；珍惜；亲爱的",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-06 19:00",
-    "last_seen": "2026-09-06 19:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-06"
+      "2026-09-06",
+      "2026-11-17"
     ],
-    "example": "Sayang kalau beli mahal tapi akhirnya jarang kepake.",
-    "example_cn": "如果买得很贵，结果却很少用，那就可惜了。",
+    "example": "Sayang kalau keripiknya hancur di jalan; tambahkan bubble wrap saja, ya.",
+    "example_cn": "薯片要是在路上碎了就可惜了；多加点气泡膜吧。",
     "lesson_occurrences": [
-      "2026-09-06 19:00"
+      "2026-09-06 19:00",
+      "2026-11-17 08:00"
     ]
   },
   {
@@ -7843,17 +7855,17 @@ window.DAILY_VOCAB_DB = [
     "en": "be pressed; be in a tight spot",
     "root": "pepet",
     "root_cn": "逼近；紧逼",
-    "example": "Kalau kepepet, kamu boleh tukar jadwal piket sama aku, asal bilang dulu sehari sebelumnya.",
-    "example_cn": "要是实在没办法，你可以跟我换值日，只要提前一天说一声就行。",
+    "example": "Kalau kepepet waktu, pakai kurir instan aja; kurir reguler mungkin baru sampai besok.",
+    "example_cn": "如果时间很赶，就用即时快递吧；普通快递可能明天才到。（aja = saja）",
     "categories": [
       "每日学习",
       "08:00",
       "19:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-08 08:00",
-    "last_seen": "2026-11-15 18:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -7863,14 +7875,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-08",
       "2026-10-25",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
       "2026-09-08 08:00",
       "2026-09-08 19:00",
       "2026-10-25 18:00",
       "2026-11-14 18:00",
-      "2026-11-15 18:00"
+      "2026-11-15 18:00",
+      "2026-11-17 08:00"
     ]
   },
   {
@@ -12394,9 +12408,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-19 18:00",
-    "last_seen": "2026-11-16 18:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -12408,7 +12422,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-30",
       "2026-10-05",
       "2026-10-21",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
       "2026-09-19 18:00",
@@ -12417,7 +12432,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-30 18:00",
       "2026-10-05 18:00",
       "2026-10-21 08:00",
-      "2026-11-16 18:00"
+      "2026-11-16 18:00",
+      "2026-11-17 08:00"
     ]
   },
   {
@@ -15577,28 +15593,30 @@ window.DAILY_VOCAB_DB = [
     "en": "upload",
     "root": "unggah",
     "root_cn": "上传",
-    "example": "Sebelum jam lima, unggah dulu file presentasinya ke grup, ya, biar yang lain bisa unduh dan baca duluan.",
-    "example_cn": "五点前先把演示文件传到群里吧，好让其他人能先下载看看。（biar = supaya）",
+    "example": "Kalau metode pembayarannya transfer bank, unggah bukti transfernya di kolom ini, ya, Kak.",
+    "example_cn": "如果付款方式是银行转账，请在这一栏上传转账凭证哦，姐。",
     "categories": [
       "每日学习",
       "08:00",
       "口语",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-11-16 18:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-28",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
       "2026-09-28 08:00",
-      "2026-11-16 18:00"
+      "2026-11-16 18:00",
+      "2026-11-17 08:00"
     ]
   },
   {
@@ -18506,17 +18524,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-05 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-11-17 08:00"
     ]
   },
   {
@@ -19014,19 +19034,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "如果货发错了，店里得承担运费上的损失。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-06 18:00",
-    "last_seen": "2026-10-06 18:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
-      "2026-10-06 18:00"
+      "2026-10-06 18:00",
+      "2026-11-17 08:00"
     ]
   },
   {
@@ -21803,27 +21827,31 @@ window.DAILY_VOCAB_DB = [
     "en": "to ignore; to neglect",
     "root": "abai",
     "root_cn": "疏忽；不在意",
-    "example": "Jangan mengabaikan aturan ruangan. Semua orang perlu mematuhi petunjuk sebelum acara dimulai.",
-    "example_cn": "不要忽视场地规定。活动开始前，大家都需要遵守指引。",
+    "example": "Jangan mengabaikan keluhan kecil; balas dengan bahasa yang halus supaya pembeli tidak makin kesal.",
+    "example_cn": "别忽视小小的抱怨；用委婉的话回复，免得买家更生气。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-14 18:00",
-    "last_seen": "2026-11-06 18:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-10-14",
       "2026-10-17",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
       "2026-10-14 18:00",
       "2026-10-17 18:00",
-      "2026-11-06 18:00"
+      "2026-11-06 18:00",
+      "2026-11-17 08:00"
     ]
   },
   {
@@ -24368,21 +24396,23 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-22 08:00",
-    "last_seen": "2026-11-16 18:00",
+    "last_seen": "2026-11-17 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-10-22",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
       "2026-10-22 08:00",
       "2026-10-22 18:00",
-      "2026-11-16 18:00"
+      "2026-11-16 18:00",
+      "2026-11-17 08:00"
     ]
   },
   {
