@@ -739,3 +739,10 @@
 - **仍保留**：08:30/18:05 的既有检查与 Sync、原稿所在 `lesson-release-D-am|pm` 分支检测、同一份原稿的正式 planner 校验与精确两文件补发、常规 lesson_release、失败问题记录和 Pages 触发。无合法原稿时状态 `no_original`；原稿不合法时 `original_invalid`，均不能生成或写入新课。
 - **验证**：新的 `test-recover-missing-lesson.js` 覆盖 AM/PM 合法原稿、缺稿、坏稿、原稿错误、已发布、部分发布、双写与脚本 Bash 语法；`regression-guard.js` 在提议代码树禁止 V4 入口、引擎引用和演练恢复。`prototype/lesson-engine/` 的独立历史实验源码不是正式自动发布入口，保留作历史材料。
 - **数据不变**：历史课程、课程生成合同、词库、训练状态、弱项池、唯一 daily-vocab writer 与两条既有定时触发时间均不改。本节覆盖此前仅“暂停 V4”、仍为 V4 跑 CI 演练的旧说明。
+
+## 53. 2026-11-17 守卫里的“最新课程”检查按日期套用复习阶段规则（修正 §50 / §52 漏改）
+
+- **事故**：2026-11-17 早课（连载第 1 集，153 词）发布后，Sync daily vocab 失败：`regression-guard.js` 的“最新早课阅读 60–100 词”还是写死的复习阶段长度，没跟 §50 的连载 110–160 词一起改，导致学习池没重建（`runtime lesson_watermark` 停在 11-16 晚课）。同一文件里“最近晚课改写 3–4 个”“最新晚课改写 3–4 个”“self_check 非空”也会让 11-17 晚课（§52 精简版）发布后再次失败。
+- **修正**：守卫新增 `STORY(d)`（`review-phase.js` 的 `storyRule`）和 `PSLIM(d)`（`pmSlim`）。最新早课阅读长度按当天规则（连载日用 `story.reading`）；最近 / 最新晚课改写数在精简日为 1–2；精简日要求没有 `self_check`。其他日期的检查不变。
+- **以后**：改课程规则时，除了校验器，还要搜 `regression-guard.js` 里对“最新 / 最近课程”的写死数字。
+
