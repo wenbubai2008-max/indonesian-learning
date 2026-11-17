@@ -598,7 +598,7 @@ try {
     }
   }
   ok(rootPage.includes("fetch('roots.json'") && rootPage.includes('id="cards"') && rootPage.includes('id="detail"'), 'root family library loads independent expandable JSON');
-  ok(indexHtml.includes('data/daily-width-fix.css?v=20261014-single1') && indexHtml.includes('data/home-modules-layout.js?v=20261014-lazy1'),'homepage css and module JS cache keys are updated');
+  ok(indexHtml.includes('data/daily-width-fix.css?v=20261014-single1') && indexHtml.includes('data/home-modules-layout.js?v=20261117-choice1'),'homepage css and module JS cache keys are updated');
   ok(!/<div class="modules"[^>]*>\s*<button/s.test(indexHtml), 'index does not hard-code homepage cards');
   if(fs.existsSync(rel('data/home-modules-stability.js'))){
     const stability = read('data/home-modules-stability.js');
