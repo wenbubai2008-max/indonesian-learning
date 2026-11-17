@@ -57,6 +57,8 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
   // weekAms = this theme week's earlier AM lessons; when the caller does not pass them they are read from data/daily.
   // Slim 18:00 back half (2026-11-16 user decision, REVIEW-PHASE.md 3.1). SL=false keeps the old PM contract unchanged.
   const SL=session==="pm"&&RP.pmSlim(phase,date);
+  // Slim 08:00 back half (2026-11-17 user decision, REVIEW-PHASE.md 2.2). AS=false keeps the old AM contract unchanged.
+  const AS=session==="am"&&RP.amSlim(phase,date);
   const SP=session==="am"&&RP.storyRule(phase,date)?RP.storyPlan(phase,date,weekAms===undefined?RP.weekAms(phase,date):weekAms):null;
   check(rules.version===4&&runtime.version===4&&runtime.rules_version===4&&runtime.stats?.master_unique===977,"RULE_RUNTIME_MISMATCH","Rules/runtime v4, 977 primary master required");
   check(Number.isFinite(Date.parse(runtime.generated_at||"")),"RUNTIME_INVALID","Runtime generated_at invalid");
@@ -149,6 +151,7 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     check(ans.some(a=>rw.includes(a)),"AM_REVIEW_QUIZ_MISSING","One correct answer must be review_vocab");
     quiz.forEach((q,i)=>{const recognition=/词义|意思|含义|形式|哪一个词|哪个词|哪种形式|正确形式|识别/.test(q?.question||"");if(ans[i])check(!String(q.question||"").toLowerCase().includes(ans[i])||recognition,"AM_QUIZ_ANSWER_LEAK","Question "+(i+1)+" leaks answer")});
     check(["task","reference_answer","reference_cn"].every(k=>str(lesson.output?.[k])),"AM_OUTPUT_INVALID","Active output incomplete");
+    if(AS)check(str(lesson.output?.frame)&&/……|___/.test(lesson.output.frame),"PHASE_AM_SLIM_OUTPUT","Review phase: output.frame = the reference answer's sentence skeleton with …… blanks");
     check(Array.isArray(lesson.review)&&lesson.review.length===3&&lesson.review.every(str),"AM_FINAL_REVIEW_INVALID","Three final review points required");
     // 2026-10-16 (user decision): optional structured copy of the same three review points, for the review cards on the
     // page. Absent = fine (the page shows the three strings). Present = must be well formed; every recall answer must be
@@ -170,7 +173,9 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
       if(Array.isArray(recall))recall.filter(pair).forEach(x=>check(today.has(norm(x.id)),"AM_REVIEW_CARDS_ANSWER","recall answer is not one of today's words: "+x.id));
       check(frames===undefined||(Array.isArray(frames)&&frames.length<=6&&frames.every(str)),"AM_REVIEW_CARDS_INVALID","review_cards.frames: up to 6 strings");
       check(Array.isArray(contrasts)&&range(contrasts.length,1,6)&&contrasts.every(g=>g&&Array.isArray(g.items)&&range(g.items.length,2,3)&&g.items.every(pair)&&str(g.note)),"AM_REVIEW_CARDS_INVALID","review_cards.contrasts: 1-6 groups of 2-3 {id,cn} with a note");
-      check(Array.isArray(apply)&&range(apply.length,1,4)&&apply.every(a=>a&&str(a.word)&&str(a.usage)&&Array.isArray(a.examples)&&range(a.examples.length,1,3)&&a.examples.every(pair)),"AM_REVIEW_CARDS_INVALID","review_cards.apply: 1-4 {word,usage,examples:[{id,cn}]}");
+      if(AS){const rv=new Set(rw),cards=new Set(vocab.map(word));
+        check(Array.isArray(recall)&&range(recall.length,2,6)&&recall.every(x=>pair(x)&&rv.has(norm(x.id))&&!cards.has(norm(x.id)))&&frames===undefined&&apply===undefined&&Array.isArray(contrasts)&&range(contrasts.length,1,3),"PHASE_AM_SLIM_REVIEW_CARDS","Review phase: recall 2-6 review_vocab words that are not word cards; no frames, no apply; contrasts 1-3 groups");}
+      else check(Array.isArray(apply)&&range(apply.length,1,4)&&apply.every(a=>a&&str(a.word)&&str(a.usage)&&Array.isArray(a.examples)&&range(a.examples.length,1,3)&&a.examples.every(pair)),"AM_REVIEW_CARDS_INVALID","review_cards.apply: 1-4 {word,usage,examples:[{id,cn}]}");
     }
   } else {
     check(lesson.write_status==="lesson_complete","PM_STATUS_INVALID","PM status incomplete");

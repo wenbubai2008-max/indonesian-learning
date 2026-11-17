@@ -45,6 +45,17 @@ node .github/scripts/review-phase.js --date D --session am|pm
 - **页面**：带 `story` 的早课先显示本集（上集回顾 → 正文 → 下集预告），再显示词卡和其余部分。
 - 校验码：`PHASE_AM_STORY_MISSING`（缺 story）、`PHASE_AM_STORY_INVALID`（字段不全、缺本集标题或第 2 集起缺上集回顾）、`PHASE_AM_STORY_EPISODE`（集数不对）、`PHASE_AM_STORY_SERIES`（连载名和本周前几集不同）、`READING_INVALID`（不在 110–160 词）。
 
+### 2.2 早课后半部分精简（2026-11-17 用户决定，2026-11-18 早课起）
+
+为什么：词卡已经先盖住答案回想过一遍（网页的「先想，后看」），后面 3 秒提取又把同样的词考一遍，课末回想再来一遍；“再各补半句”没有答案，“复习词应用”和高频句子重复；主动输出凭空写 3–4 句最容易卡住。
+
+- **`output` 加句子骨架 `frame`**：参考答案的骨架，保留开头、连接词和本周句型，把关键内容换成 `……`（2–4 处），学习者只填关键部分。`reference_answer` 是填好的完整版，和 `frame` 一一对应。情境接本集故事。
+- **`review_cards.recall` 只放词卡以外的复习词**：2–6 个，答案必须来自 `review_vocab`，且不是本课词卡（`vocab`）里的词。
+- **`review_cards` 不写 `frames`，也不写 `apply`。**
+- **`review_cards.contrasts` 1–3 组**（挑最容易混的）。
+- **不变**：`sentences` 5 句、`quiz` 3 题（至少 1 题考读懂本集）、`review` 3 条（网页有复习卡时不显示，但仍要写，作退回内容）、`lesson_focus`。
+- 校验码：`PHASE_AM_SLIM_OUTPUT`（缺带 `……` 的 `frame`）、`PHASE_AM_SLIM_REVIEW_CARDS`（recall 不是 2–6 个词卡以外的复习词、写了 frames / apply、辨析超过 3 组）。
+
 ## 三、18:00 晚课：任务课
 
 目标：在一个要办成的事里把旧词用出来，遇到变化也能接着说。

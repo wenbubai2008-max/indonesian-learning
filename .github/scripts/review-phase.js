@@ -101,13 +101,19 @@ function storyPlan(phase,date,ams){
  * optional 30-second retell with a reference retell. The dialogue's "藏台词" practice replaces the other rewrites (page only).
  */
 function pmSlim(phase,date){const s=phase&&phase.pm_slim;return !!(on(phase,date)&&s&&typeof s==='object'&&validDate(s.from)&&String(date)>=s.from)}
+/**
+ * 2026-11-17 (user decision, REVIEW-PHASE.md 2.2): from `am_slim.from` on, the review-phase 08:00 back half is slimmer:
+ * the active output carries a fill-in sentence frame, review_cards.recall holds only review_vocab words that are not word
+ * cards (the cards were just recalled), no review_cards.frames / apply, at most 3 contrast groups.
+ */
+function amSlim(phase,date){const s=phase&&phase.am_slim;return !!(on(phase,date)&&s&&typeof s==='object'&&validDate(s.from)&&String(date)>=s.from)}
 function describe(date,session,root=REPO){
   const phase=load(root),active=on(phase,date);
   if(!active)return {date,session:session||null,active:false,note:'复习阶段未启用：按现在的说明书和规则出课，忽略 docs/tasks/REVIEW-PHASE.md。'};
   const plan=dayPlan(phase,date,loadThemes(root));
   return {date,session:session||null,active:true,activated_at:phase.activated_at,counts:counts(phase,date),plan,
     recurrence_min:session?recurrenceMin(phase,date,session):phase.recurrence_min||null,
-    ...(session==='am'?{story:storyPlan(phase,date,weekAms(phase,date,root))}:{}),
+    ...(session==='am'?{story:storyPlan(phase,date,weekAms(phase,date,root)),am_slim:amSlim(phase,date)}:{}),
     ...(session==='pm'?{pm_slim:pmSlim(phase,date)}:{}),
     note:'复习阶段已启用：按 docs/tasks/REVIEW-PHASE.md 出课（数量、结构以本输出为准）。'};
 }
@@ -116,4 +122,4 @@ if(require.main===module){
   if(!validDate(a.date)){console.error('--date YYYY-MM-DD required');process.exit(2)}
   console.log(JSON.stringify(describe(a.date,a.session),null,2));
 }
-module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,storyRule,weekStart,weekAms,storyPlan,pmSlim,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};
+module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,storyRule,weekStart,weekAms,storyPlan,pmSlim,amSlim,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};
