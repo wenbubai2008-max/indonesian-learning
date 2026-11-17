@@ -89,8 +89,8 @@ try{
   ok(quick.includes("coach.round('quick'")&&quick.includes('继续下一组')&&quick.includes("coach.markAnswer('quick'"),'quick can continue ten-word rounds and records independent visual results');
   ok(automation.includes('old.words.length&&(!force||old.words.some')&&automation.includes('今天已记录')&&automation.includes("coach.eligible(word,Date.now(),'auto')"),'automation persists unanswered cards and honors active-only cooldown');
   ok(listenUi.includes('state.queue=coach.round')&&listenUi.includes('查看今日剩余听词')&&listenUi.includes("VocabStudyCoach.markAnswer('listen'"),'listening uses stable per-mode batches and records first-hear quality');
-  ok(profileUi.includes('今天最该练什么')&&profileUi.includes('逐词能力档案')&&profileUi.includes('data-coach-start')&&profileUi.includes('网站快照＋本机训练'),'profile must distinguish remote mastery from local skill progress');
-  ok(profileUi.includes('vpHomeNext')&&profileUi.includes('vpHomeNumbers')&&profileUi.includes('查看全部任务 →'),'homepage must show only next recommended word and compact metrics while keeping the complete detail page');
+  ok(profileUi.includes('可选加练')&&profileUi.includes('必做是早晚课')&&profileUi.includes('逐词能力档案')&&profileUi.includes('data-coach-start')&&profileUi.includes('网站快照＋本机训练'),'profile must distinguish remote mastery from local skill progress');
+  ok(profileUi.includes('vpHomeNext')&&profileUi.includes('vpHomeNumbers')&&profileUi.includes('查看全部加练 →'),'homepage must show only next recommended word and compact metrics while keeping the complete detail page');
   ok(automation.includes('openAutomationTrainingWord')&&automation.includes('autoSelfCheck'),'automation must directly train selected words and require expression self-confirmation');
 
   ok(studyCoach.includes('overdue')&&studyCoach.includes('category(a)')&&studyCoach.includes('statistics(mode'),'due backlog, unverified and low-frequency review must be globally visible');

@@ -757,6 +757,15 @@ try {
     okNew(hv.includes('${o.frame?`<div class="outFrame">'),'AM page shows the output sentence frame');
   }
 
+  // 2026-11-17 (REGRESSION-GUARD §55): review-phase homepage extra-practice card and vocabulary page defaults.
+  {
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const vc=read('data/vocab-controller-20260917.js'),pu=read('data/vocab-profile-ui.js');
+    okNew(pu.includes('<h3>可选加练</h3>')&&index.includes('aria-label="可选加练"><div class="vpCoachTop"><div><h3>可选加练</h3>'),'homepage coach card reads as optional extra practice (script and first-paint placeholder)');
+    okNew(vc.includes("const DEFAULT_VIEW={daily:'review'}")&&vc.includes("window.showUncheckedWords=()=>setView('')")&&index.includes('onclick="showUncheckedWords()"'),'daily library opens on 待掌握; 未判断 stays one tap away');
+    okNew(index.includes('#vocab:not(.showEn) .vocabUnifiedEn{display:none!important}')&&index.includes('id="vocabEnToggle"'),'vocab cards hide English by default with a toggle');
+  }
+
   // 2026-10-18 (REGRESSION-GUARD §33): 带学模式 — a view over the lesson's own content; own progress key only.
   {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
