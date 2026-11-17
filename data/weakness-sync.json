@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-17T09:22:38.090Z",
+  "updated_at": "2026-11-17T11:26:34.857Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -20381,16 +20381,22 @@
     "tepat waktu": {
       "word": "tepat waktu",
       "status": "active",
-      "updated_at": "2026-10-23T23:38:17.429Z",
+      "updated_at": "2026-11-17T11:19:59.456Z",
       "display": "tepat waktu",
       "cn": "准时",
-      "root": "tepat waktu",
-      "last_review": "2026-10-23T23:38:17.366Z",
+      "root": "tepat",
+      "root_cn": "准确；正好",
+      "last_wrong": "2026-11-17T11:19:59.373Z",
+      "last_review": "2026-11-17T11:19:59.373Z",
+      "source": "课程小测",
+      "source_date": "2026-11-17",
+      "session": "18:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 3
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "capek": {
       "word": "capek",
@@ -28321,13 +28327,13 @@
     "menakjubkan": {
       "word": "menakjubkan",
       "status": "active",
-      "updated_at": "2026-11-15T11:17:38.877Z",
+      "updated_at": "2026-11-17T11:26:05.193Z",
       "display": "menakjubkan",
       "cn": "令人惊叹的；了不起的",
       "root": "takjub",
       "root_cn": "惊叹",
-      "last_wrong": "2026-11-14T08:06:50.825Z",
-      "last_review": "2026-11-15T11:17:38.819Z",
+      "last_wrong": "2026-11-17T11:26:05.122Z",
+      "last_review": "2026-11-17T11:26:05.122Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28335,8 +28341,8 @@
         "memory_fuzzy",
         "quick_wrong"
       ],
-      "wrong_count": 1,
-      "right_streak": 1
+      "wrong_count": 2,
+      "right_streak": 0
     },
     "menyebalkan": {
       "word": "menyebalkan",
@@ -28840,23 +28846,23 @@
     "pengaturan": {
       "word": "pengaturan",
       "status": "active",
-      "updated_at": "2026-11-15T03:26:54.693Z",
+      "updated_at": "2026-11-17T11:18:10.254Z",
       "display": "pengaturan",
-      "cn": "设置；安排；管理",
+      "cn": "设置（手机、App 里的设定）；安排；调配",
       "root": "atur",
-      "root_cn": "安排；整理",
-      "last_wrong": "2026-11-13T02:24:38.296Z",
-      "last_review": "2026-11-15T03:26:54.632Z",
+      "root_cn": "安排；整理；调整",
+      "last_wrong": "2026-11-17T11:18:10.164Z",
+      "last_review": "2026-11-17T11:18:10.164Z",
       "source": "课程小测",
-      "source_date": "2026-11-13",
-      "session": "08:00",
+      "source_date": "2026-11-17",
+      "session": "18:00",
       "reasons": [
         "bipa_secondary_fuzzy",
         "lesson_wrong",
         "memory_fuzzy"
       ],
-      "wrong_count": 1,
-      "right_streak": 2
+      "wrong_count": 2,
+      "right_streak": 0
     },
     "bertema": {
       "word": "bertema",
@@ -32006,19 +32012,19 @@
     "patungan": {
       "word": "patungan",
       "status": "active",
-      "updated_at": "2026-11-15T11:17:48.588Z",
+      "updated_at": "2026-11-17T11:26:15.857Z",
       "display": "patungan",
       "cn": "一起分摊；凑钱；AA出钱（口语）",
       "root": "patungan",
       "root_cn": "共同凑钱；分摊费用",
       "last_wrong": "2026-11-14T08:24:34.736Z",
-      "last_review": "2026-11-15T11:17:48.528Z",
+      "last_review": "2026-11-17T11:26:15.789Z",
       "reasons": [
         "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "kemahalan": {
       "word": "kemahalan",
@@ -32086,13 +32092,13 @@
     "kepepet": {
       "word": "kepepet",
       "status": "active",
-      "updated_at": "2026-11-15T11:18:00.988Z",
+      "updated_at": "2026-11-17T11:26:24.568Z",
       "display": "kepepet",
       "cn": "被逼到很紧；没什么余地",
       "root": "pepet",
       "root_cn": "逼近；紧逼",
       "last_wrong": "2026-11-14T11:30:50.316Z",
-      "last_review": "2026-11-15T11:18:00.931Z",
+      "last_review": "2026-11-17T11:26:24.502Z",
       "source": "课程小测",
       "source_date": "2026-11-14",
       "session": "18:00",
@@ -32102,7 +32108,7 @@
         "quick_wrong"
       ],
       "wrong_count": 4,
-      "right_streak": 1
+      "right_streak": 2
     },
     "keduluan": {
       "word": "keduluan",
@@ -32494,19 +32500,19 @@
     "ngeles": {
       "word": "ngeles",
       "status": "active",
-      "updated_at": "2026-11-15T11:17:52.982Z",
+      "updated_at": "2026-11-17T11:26:20.768Z",
       "display": "ngeles",
       "cn": "找借口；绕着说；回避真正问题（口语）",
       "root": "ngeles",
       "root_cn": "找借口；回避重点",
       "last_wrong": "2026-11-14T08:25:43.657Z",
-      "last_review": "2026-11-15T11:17:52.921Z",
+      "last_review": "2026-11-17T11:26:20.698Z",
       "reasons": [
         "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "nimpalin": {
       "word": "nimpalin",
