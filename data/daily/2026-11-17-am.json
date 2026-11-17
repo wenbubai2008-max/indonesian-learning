@@ -1,0 +1,365 @@
+{
+  "date": "2026-11-17",
+  "session": "am",
+  "time": "08:00",
+  "day": 88,
+  "title": "08:00 早课｜Paket yang Harus Putar Balik · 必须掉头的包裹",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "core"
+  },
+  "story": {
+    "series": "Toko Keripik Bu Narti · 纳尔蒂阿姨的薯片网店",
+    "episode": 1,
+    "next_cn": "下集：包裹送到了，打开却是香蕉片，不是木薯片——到底是谁装错了？"
+  },
+  "vocab": [
+    {
+      "word": "unggah",
+      "display": "unggah",
+      "audio_text": "unggah",
+      "cn": "上传",
+      "en": "to upload",
+      "root": "unggah",
+      "root_cn": "上传",
+      "formation": "unggah 本身就是词根。mengunggah（meN- + unggah，主动“上传”）、diunggah（被上传）、unggahan（上传的内容、帖子）。对应的“下载”是 unduh / mengunduh。网店常见搭配：unggah bukti transfer（上传转账凭证）、unggah foto produk（上传商品照片）。在 App 的按钮和提示里常直接写 Unggah，口头让人上传时也可以只说 unggah。",
+      "example": "Kalau metode pembayarannya transfer bank, unggah bukti transfernya di kolom ini, ya, Kak.",
+      "example_cn": "如果付款方式是银行转账，请在这一栏上传转账凭证哦，姐。",
+      "synonym_note": "unggah / mengunggah 是“上传”，unduh / mengunduh 是“下载”，方向相反，别弄混。完整句子里多用 mengunggah（Raka mengunggah foto paket），按钮、指示里常用 unggah。口语说法：upload（Udah aku upload, Kak），和朋友、客服聊天都常说；写说明、正式通知用 unggah / mengunggah。",
+      "usage_note": "复习词：先遮住中文回想意思，再看今天网店里“上传转账凭证、上传包裹照片”的用法。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kepepet",
+      "display": "kepepet",
+      "audio_text": "kepepet",
+      "cn": "被逼到很紧；没什么余地",
+      "en": "to be in a tight spot; pressed (for time or money)",
+      "root": "pepet",
+      "root_cn": "逼近；紧逼",
+      "formation": "kepepet 是口语词，pepet 是“挤、逼近”（比如车子 dipepet 被别的车逼到路边），kepepet 就是“被逼到没有余地”的处境。常见搭配：lagi kepepet（正被逼得很急）、kepepet waktu（时间很赶）、kepepet duit（手头很紧）、kalau kepepet（实在没办法的时候）。",
+      "example": "Kalau kepepet waktu, pakai kurir instan aja; kurir reguler mungkin baru sampai besok.",
+      "example_cn": "如果时间很赶，就用即时快递吧；普通快递可能明天才到。（aja = saja）",
+      "synonym_note": "kepepet 本身就是口语，常和 aja、banget、lagi 一起用。比较正式的说法是 terdesak（terdesak waktu 时间紧迫）或 dalam keadaan mendesak；写邮件、正式投诉时用这些。mepet 也常用，但多说时间本身“很紧”（waktunya mepet），kepepet 多说人“被逼得没办法”。",
+      "usage_note": "复习词：先回想意思，再看今天顾客“时间很赶”的用法。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengabaikan",
+      "display": "mengabaikan",
+      "audio_text": "mengabaikan",
+      "cn": "忽视；不理会",
+      "en": "to ignore; to neglect",
+      "root": "abai",
+      "root_cn": "疏忽；不在意",
+      "formation": "meN- + abai + -kan → mengabaikan（元音开头的词根，meN- 变 meng-）。被动：diabaikan（被忽视）；书面名词：pengabaian。常见搭配：mengabaikan pesan（不理消息）、mengabaikan peringatan（无视警告）、mengabaikan saran（不听建议）。被动“我们没理的消息”常说 pesan yang kita abaikan。",
+      "example": "Jangan mengabaikan keluhan kecil; balas dengan bahasa yang halus supaya pembeli tidak makin kesal.",
+      "example_cn": "别忽视小小的抱怨；用委婉的话回复，免得买家更生气。",
+      "synonym_note": "mengabaikan 偏“该理却没理”（消息、警告、规则），多少带点不该这样做的意思；melupakan 是“忘记”，不一定是故意的。口语说法：nyuekin / dicuekin（Chat aku dicuekin dari kemarin），和朋友抱怨时说；写回复、道歉信、正式场合用 mengabaikan。",
+      "usage_note": "复习词：先回想意思，再看今天客服“没理消息”惹出的麻烦。",
+      "is_oral_new": false
+    },
+    {
+      "word": "putar balik",
+      "display": "putar balik",
+      "audio_text": "putar balik",
+      "cn": "掉头；调头往回走",
+      "en": "to make a U-turn; to turn back",
+      "root": "putar + balik",
+      "root_cn": "转 + 回",
+      "formation": "两个词组成的固定说法：putar（转）+ balik（回）。常见搭配：putar balik di depan（在前面掉头）、harus putar balik（只好掉头）、cari putaran buat putar balik（找掉头口；putaran 是马路上的掉头口）。多用于车辆、司机、快递员往回开。",
+      "example": "Jalan di depan pasar ditutup, jadi kurirnya harus putar balik, dan setengah jam perjalanannya jadi sia-sia.",
+      "example_cn": "市场前面的路封了，所以快递员只好掉头，半个小时的路白跑了。",
+      "synonym_note": "putar balik 是车辆、人“掉头往回走”。不要和 memutarbalikkan 混：memutarbalikkan fakta 是“颠倒黑白、歪曲事实”。kembali 只是“回去”，不强调掉头这个动作。口语说法：puter balik / muter balik（Mas, puter balik aja di depan），叫车、跟司机说话时常用；新闻、交通告示用 putar balik。",
+      "usage_note": "复习词：先回想意思，再看今天快递员为改地址掉头的用法。",
+      "is_oral_new": false
+    },
+    {
+      "word": "rapihin",
+      "display": "rapihin",
+      "audio_text": "rapihin",
+      "cn": "整理好；收拾整齐；把……弄顺（口语）",
+      "en": "to tidy up; to sort out (colloquial)",
+      "root": "rapi",
+      "root_cn": "整齐",
+      "formation": "rapi（整齐）→ 口语常读写成 rapih，加口语后缀 -in（相当于标准语的 -kan）→ rapihin，对应标准形 merapikan。常见搭配：rapihin kamar（收拾房间）、rapihin paket（把包裹码整齐）、rapihin data / jadwal（把资料、日程理顺）。",
+      "example": "Sebelum kurir datang, rapihin dulu paketnya sesuai nama pembeli, biar nggak ketuker.",
+      "example_cn": "快递员来之前，先把包裹按买家名字码好，免得弄混。（nggak = tidak，ketuker = tertukar）",
+      "synonym_note": "rapihin 只用在朋友、家人、同事之间说话；写说明、正式通知用标准形 merapikan（Raka merapikan daftar pesanan）。除了“收拾东西”，也能说“把事情理顺”：rapihin jadwal。membereskan / beresin 偏“收拾完、处理掉”，rapihin 偏“弄整齐”。",
+      "usage_note": "复习词：先回想意思，再比较今天课文里的标准形 merapikan。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sayang kalau",
+      "display": "sayang kalau",
+      "audio_text": "sayang kalau",
+      "cn": "如果……就可惜了",
+      "en": "it would be a pity if …",
+      "root": "sayang",
+      "root_cn": "可惜；珍惜；亲爱的",
+      "formation": "sayang（可惜）+ kalau（如果）组成的句型：Sayang kalau + 不希望发生的事。常见说法：Sayang kalau dibuang（扔了可惜）、Sayang banget kalau …（……就太可惜了）。常用来劝人别错过、别浪费。",
+      "example": "Sayang kalau keripiknya hancur di jalan; tambahkan bubble wrap saja, ya.",
+      "example_cn": "薯片要是在路上碎了就可惜了；多加点气泡膜吧。",
+      "synonym_note": "sayang kalau 说的是还没发生、想避免的损失；sayangnya 是“可惜的是”，说已经发生的事：Sayangnya, stoknya sudah habis。口语说法：Sayang banget kalau …（聊天时常加 banget）；正式一点可说 Sangat disayangkan kalau …。",
+      "usage_note": "复习词：先回想意思，再看今天老板娘为什么宁可吃点亏。",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "unggah",
+    "kepepet",
+    "mengabaikan",
+    "putar balik",
+    "rapihin",
+    "sayang kalau"
+  ],
+  "review_vocab": [
+    "rugi",
+    "kerugian",
+    "menegaskan",
+    "berlaku sampai",
+    "berarti"
+  ],
+  "sentences": [
+    {
+      "text": "Mas, pesanan saya belum dikirim, padahal sudah saya bayar dari kemarin pagi.",
+      "cn": "小哥，我的订单还没发货，可我从昨天早上就已经付款了。"
+    },
+    {
+      "text": "Fotonya udah aku unggah di chat, ya, Kak. Tolong dicek dulu sebelum paketnya jalan.",
+      "cn": "姐，照片我已经传到聊天里了哦。包裹发出之前请先核对一下。（udah = sudah）"
+    },
+    {
+      "text": "Sayang kalau pelanggan baru pergi cuma karena pesannya kita abaikan.",
+      "cn": "新顾客要是只因为我们没理他的消息就走了，那就太可惜了。"
+    },
+    {
+      "text": "Promo gratis ongkir berlaku sampai hari Minggu, berarti pesanan hari Senin kena ongkir normal.",
+      "cn": "包邮优惠有效期到周日，也就是说周一的订单要付正常运费。"
+    },
+    {
+      "text": "Sial, aku lagi kepepet banget: tamunya datang jam sepuluh, keripiknya belum nyampe.",
+      "cn": "真倒霉，我现在急死了：客人十点就到，薯片还没送到。（lagi = sedang，nyampe = sampai）"
+    }
+  ],
+  "reading": {
+    "title": "Paket yang Harus Putar Balik · 必须掉头的包裹",
+    "text": "Raka baru seminggu menjadi admin toko keripik online milik tantenya, Bu Narti. Pagi itu dia membaca tiga pesan dari Mbak Wulan yang masuk tengah malam. Semalam Raka sempat melihat notifikasinya, tetapi mengabaikannya karena mengira isinya cuma ucapan terima kasih. Ternyata pesta kantornya dipindah ke rumah atasannya, jadi dia minta alamat pengiriman diganti. Masalahnya, paket 50 bungkus itu sudah diambil Pak Yos, kurir langganan toko, jam tujuh tadi. \"Aduh, saya kepepet, Mas. Tamunya datang jam sepuluh,\" tulis Mbak Wulan. Raka langsung menelepon Pak Yos. \"Saya sudah dekat alamat lama,\" kata Pak Yos, \"tapi oke, saya putar balik.\" Untung jalanan pagi itu lancar. Bu Narti menghitung ongkir tambahan. \"Kita rugi sedikit, tapi sayang kalau pelanggan baru kecewa,\" katanya. Lalu dia menegaskan, \"Mulai sekarang, semua pesan dibaca sebelum paket dikirim.\" Raka merapikan daftar pesanan dan mengunggah foto paket ke chat. Jam sembilan lewat, Mbak Wulan membalas: \"Paketnya sudah sampai, terima kasih! Tapi kok isinya keripik pisang?\"",
+    "cn": "拉卡给姑姑纳尔蒂阿姨的网上薯片店当客服才一个星期。那天早上，他看到了沃兰小姐半夜发来的三条消息。昨晚拉卡其实看到了通知，但没理，因为他以为内容只是道谢。原来她公司的聚会改到了上司家里，所以她要求更改收货地址。问题是，那 50 包的包裹今早七点已经被店里的老搭档快递员约斯师傅取走了。“哎呀，我时间好赶啊，小哥。客人十点就到了。”沃兰小姐写道。拉卡马上给约斯师傅打电话。“我已经快到旧地址了，”约斯师傅说，“不过好吧，我掉头。”幸好那天早上路上很顺。纳尔蒂阿姨算了算多出来的运费。“我们亏一点，但要是让新顾客失望就可惜了。”她说。接着她强调：“从现在起，所有消息都要在包裹发出前看过。”拉卡把订单清单整理好，把包裹照片上传到聊天里。九点多，沃兰小姐回复：“包裹到了，谢谢！可是怎么里面是香蕉片？”"
+  },
+  "quiz": [
+    {
+      "question": "Menurut cerita hari ini, kenapa Raka tidak langsung membalas pesan Mbak Wulan semalam?",
+      "options": [
+        "Dia sedang ikut Pak Yos mengantar paket.",
+        "Bu Narti melarangnya membuka aplikasi malam-malam.",
+        "Dia mengira pesannya cuma ucapan terima kasih.",
+        "Pesannya baru masuk jam sembilan pagi."
+      ],
+      "answer_index": 2,
+      "answer": "Dia mengira pesannya cuma ucapan terima kasih.",
+      "explain": "课文写的是 Raka 看到了通知，但 mengabaikannya karena mengira isinya cuma ucapan terima kasih——以为只是道谢，所以没理。他没跟快递员出门；课文没说老板娘禁止他晚上看 App；消息是半夜（tengah malam）进来的，九点多是 Mbak Wulan 回复“包裹到了”的时间。"
+    },
+    {
+      "question": "Bu Narti melihat hitungan ongkir tambahan dan berkata, \"Tidak apa-apa, ____ kecil seperti ini masih bisa kita tanggung.\"",
+      "options": [
+        "rugi",
+        "kerugian",
+        "merugikan",
+        "keuntungan"
+      ],
+      "answer_index": 1,
+      "answer": "kerugian",
+      "explain": "空格后面是 kecil seperti ini，前面需要一个名词“损失”，所以用 kerugian（ke- + rugi + -an）。rugi 是“亏、吃亏”，多作谓语：Kita rugi sedikit；merugikan 是“使……受损”，是动词，后面要接对象（merugikan pembeli）；keuntungan 是“利润”，“能承担的利润”说不通。"
+    },
+    {
+      "question": "Pak Yos menelepon: \"Wah, rumahnya kelewatan, Mas. Saya ____ di depan, ya, nanti saya cari nomor 12.\"",
+      "options": [
+        "putar balik",
+        "balik nama",
+        "memutarbalikkan",
+        "berputar-putar"
+      ],
+      "answer_index": 0,
+      "answer": "putar balik",
+      "explain": "开过头了，在前面掉头回去找门牌，用 putar balik。balik nama 是“过户”（房产、车辆改名字）；memutarbalikkan 是“颠倒、歪曲”，常说 memutarbalikkan fakta；berputar-putar 是“绕来绕去、兜圈子”，不是有目的地掉头。"
+    }
+  ],
+  "output": {
+    "task": "你是网店客服。一位顾客半夜发消息要改收货地址，你早上才看到，包裹已经在快递员手上。给顾客回一条消息（3–4 句）：先道歉，说明现在的情况，再提出办法。至少用 mengabaikan、putar balik、sayang kalau 中的两个，再用一个复习词（berarti / menegaskan / rugi）。",
+    "reference_answer": "Mohon maaf, Kak, pesan Kakak semalam terlewat; kami sama sekali tidak bermaksud mengabaikannya. Paketnya sudah dibawa kurir, tapi kurirnya sudah kami minta putar balik dan mengantarnya ke alamat baru. Jalanan sekarang lancar, berarti paketnya bisa sampai sekitar jam sembilan. Sayang kalau camilan untuk tamu Kakak datang terlambat, jadi kami terus pantau perjalanannya. Kalau ada kendala, sebut saja nomor pesanannya; kami bisa kirim ulang lewat kurir instan tanpa biaya tambahan.",
+    "reference_cn": "非常抱歉，姐，您昨晚的消息我们漏看了；我们绝对不是故意不理。包裹已经被快递员带走了，但我们已经请快递员掉头，改送到新地址。现在路上很顺，也就是说包裹大约九点能到。要是给您客人的零食迟到就可惜了，所以我们会一直盯着配送进度。如果有问题，报一下订单号就行；我们可以用即时快递免费重发。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 上传、被逼得很紧/没余地（口语）、忽视/不理会、掉头、整理好（口语）、如果……就可惜了；再说出 亏/吃亏、损失、强调/明确说明、有效期至、也就是说。卡住的词回看词卡再说一遍。",
+    "易混词和搭配：rugi（亏，作谓语：Kita rugi sedikit）vs kerugian（损失，名词：kerugian kecil）vs merugikan（使……受损：merugikan pembeli）；putar balik（车辆掉头）vs memutarbalikkan fakta（颠倒黑白）；sayang kalau（还没发生，想避免）vs sayangnya（已经发生，可惜的是）。各说一句。",
+    "复习词应用：menegaskan 常用在“明确说清规矩”：Bu Narti menegaskan bahwa semua pesan harus dibaca dulu；berlaku sampai 说有效期：Promonya berlaku sampai hari Minggu；berarti 用来推出结论：…, berarti pesanan hari Senin kena ongkir normal。用 berlaku sampai 和 berarti 说一句你最近看到的优惠。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "mengabaikan",
+      "putar balik",
+      "sayang kalau"
+    ],
+    "patterns": [
+      {
+        "pattern": "Ternyata …",
+        "cn": "原来……",
+        "function": "explain-cause",
+        "example": "Ternyata pesta kantornya dipindah ke rumah atasannya, jadi dia minta alamat pengiriman diganti.",
+        "example_cn": "原来她公司的聚会改到了上司家里，所以她要求更改收货地址。"
+      },
+      {
+        "pattern": "… belum …, padahal …",
+        "cn": "……还没……，可是……",
+        "function": "state-problem",
+        "example": "Mas, pesanan saya belum dikirim, padahal sudah saya bayar dari kemarin pagi.",
+        "example_cn": "小哥，我的订单还没发货，可我从昨天早上就已经付款了。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "上传",
+        "id": "unggah"
+      },
+      {
+        "cn": "被逼得很紧；没余地（口语）",
+        "id": "kepepet"
+      },
+      {
+        "cn": "忽视；不理会",
+        "id": "mengabaikan"
+      },
+      {
+        "cn": "掉头",
+        "id": "putar balik"
+      },
+      {
+        "cn": "整理好；收拾整齐（口语）",
+        "id": "rapihin"
+      },
+      {
+        "cn": "如果……就可惜了",
+        "id": "sayang kalau"
+      },
+      {
+        "cn": "亏；吃亏",
+        "id": "rugi"
+      },
+      {
+        "cn": "损失（名词）",
+        "id": "kerugian"
+      },
+      {
+        "cn": "强调；明确说明",
+        "id": "menegaskan"
+      },
+      {
+        "cn": "有效期至",
+        "id": "berlaku sampai"
+      },
+      {
+        "cn": "也就是说；意味着",
+        "id": "berarti"
+      }
+    ],
+    "frames": [
+      "Ternyata …",
+      "… belum …, padahal …",
+      "Sayang kalau …",
+      "Promonya berlaku sampai …, berarti …"
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "rugi",
+            "cn": "亏（作谓语）"
+          },
+          {
+            "id": "kerugian",
+            "cn": "损失（名词）"
+          },
+          {
+            "id": "merugikan",
+            "cn": "使……受损"
+          }
+        ],
+        "note": "Kita rugi sedikit 用 rugi；“小损失”是 kerugian kecil；后面接受损的人或事用 merugikan（merugikan pembeli）。"
+      },
+      {
+        "items": [
+          {
+            "id": "sayang kalau",
+            "cn": "如果……就可惜了"
+          },
+          {
+            "id": "sayangnya",
+            "cn": "可惜的是"
+          }
+        ],
+        "note": "还没发生、想避免的事用 sayang kalau；已经发生的遗憾用 sayangnya。"
+      },
+      {
+        "items": [
+          {
+            "id": "putar balik",
+            "cn": "掉头"
+          },
+          {
+            "id": "memutarbalikkan",
+            "cn": "颠倒；歪曲"
+          }
+        ],
+        "note": "车辆、人往回开用 putar balik；memutarbalikkan 多说 memutarbalikkan fakta（颠倒黑白）。"
+      },
+      {
+        "items": [
+          {
+            "id": "mengabaikan",
+            "cn": "（该理却）不理"
+          },
+          {
+            "id": "melupakan",
+            "cn": "忘记"
+          }
+        ],
+        "note": "看到了却不理用 mengabaikan；忘了、不是故意的用 melupakan。"
+      }
+    ],
+    "apply": [
+      {
+        "word": "menegaskan",
+        "usage": "把规矩、立场说清楚，常接 bahwa …。",
+        "examples": [
+          {
+            "id": "Lalu dia menegaskan, \"Mulai sekarang, semua pesan dibaca sebelum paket dikirim.\"",
+            "cn": "接着她强调：“从现在起，所有消息都要在包裹发出前看过。”"
+          }
+        ]
+      },
+      {
+        "word": "berlaku sampai",
+        "usage": "说优惠、规定、证件的有效期，后面接日期。",
+        "examples": [
+          {
+            "id": "Promo gratis ongkir berlaku sampai hari Minggu, berarti pesanan hari Senin kena ongkir normal.",
+            "cn": "包邮优惠有效期到周日，也就是说周一的订单要付正常运费。"
+          }
+        ]
+      },
+      {
+        "word": "berarti",
+        "usage": "从前面的事实推出结论，常放在逗号后面。",
+        "examples": [
+          {
+            "id": "Jalanan sekarang lancar, berarti paketnya bisa sampai sekitar jam sembilan.",
+            "cn": "现在路上很顺，也就是说包裹大约九点能到。"
+          }
+        ]
+      }
+    ]
+  }
+}
