@@ -4,16 +4,16 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1079,
-   "recognize": 126,
-   "unsure": 24,
+   "use": 1083,
+   "recognize": 121,
+   "unsure": 25,
    "fast": 137
   },
   "active": {
-   "use": 709,
-   "recognize": 110,
-   "unsure": 22,
-   "fast": 57
+   "use": 686,
+   "recognize": 105,
+   "unsure": 23,
+   "fast": 51
   }
  },
  "words": {
@@ -48,7 +48,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "课程里出现的派生词或常用表达"
    ]
@@ -824,7 +824,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "课程里出现的派生词或常用表达"
    ]
@@ -888,7 +888,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 702 位"
    ]
@@ -1023,7 +1023,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 16 位"
    ]
@@ -1207,7 +1207,7 @@
    "goal": "use",
    "fast": true,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "日常高频表达（口语）",
     "977 主库第 848 位"
@@ -1556,7 +1556,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "课程里出现的派生词或常用表达"
    ]
@@ -1608,7 +1608,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 804 位"
    ]
@@ -1713,7 +1713,7 @@
    "goal": "use",
    "fast": true,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "日常高频表达（连接词）",
     "977 主库第 854 位"
@@ -2410,7 +2410,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "课程里出现的派生词或常用表达"
    ]
@@ -3233,7 +3233,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 284 位"
    ]
@@ -3342,7 +3342,7 @@
    "goal": "use",
    "fast": true,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "日常高频表达（口语）",
     "977 主库第 574 位"
@@ -3455,7 +3455,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 25 位"
    ]
@@ -3464,7 +3464,7 @@
    "goal": "use",
    "fast": true,
    "by": "review",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "日常高频表达：要能 3 秒内说出",
     "977 主库第 65 位"
@@ -3484,7 +3484,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 9 位"
    ]
@@ -3686,7 +3686,7 @@
    "goal": "use",
    "fast": true,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "日常高频表达（口语）",
     "977 主库第 824 位"
@@ -4419,7 +4419,7 @@
    "goal": "use",
    "fast": true,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "日常高频表达（口语）",
     "977 主库第 563 位"
@@ -4506,7 +4506,7 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
     "977 主库第 167 位"
    ]
@@ -7668,11 +7668,12 @@
    ]
   },
   "kalung": {
-   "goal": "recognize",
+   "goal": "unsure",
    "fast": false,
-   "by": "review",
+   "by": "review+history",
    "status": "active",
    "why": [
+    "答错较多，不建议只要求认识",
     "具体物品名：见到认得即可",
     "第二词库 A1 / A"
    ]
@@ -11149,18 +11150,18 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "kura-kura": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "cerdik": {
@@ -11176,36 +11177,36 @@
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "beruang": {
-   "goal": "recognize",
+   "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库低重要度（A1 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "badak": {
-   "goal": "recognize",
+   "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库低重要度（A1 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "bulu": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "menyerang": {
@@ -11218,30 +11219,30 @@
    ]
   },
   "cimol": {
-   "goal": "recognize",
+   "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库低重要度（A1 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "botak": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A1 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "bungkuk": {
    "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库 A2 / A"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "kucir": {
@@ -11281,12 +11282,12 @@
    ]
   },
   "panahan": {
-   "goal": "recognize",
+   "goal": "use",
    "fast": false,
    "by": "rule",
-   "status": "active",
+   "status": "mastered",
    "why": [
-    "第二词库低重要度（A2 / B）"
+    "课程里出现的派生词或常用表达"
    ]
   },
   "suci": {

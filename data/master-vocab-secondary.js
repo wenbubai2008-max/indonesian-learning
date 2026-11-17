@@ -99,17 +99,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "badak",
-    "cn": "犀牛",
-    "en": "rhinoceros",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "jerapah",
     "cn": "长颈鹿",
     "en": "giraffe",
@@ -143,28 +132,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "beruang",
-    "cn": "熊",
-    "en": "bear",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "harimau",
-    "cn": "老虎",
-    "en": "tiger",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "rusa",
     "cn": "鹿",
     "en": "deer",
@@ -174,28 +141,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "A",
     "selection": "dont"
-  },
-  {
-    "word": "kura-kura",
-    "cn": "乌龟",
-    "en": "turtle",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
-    "word": "lumba-lumba",
-    "cn": "海豚",
-    "en": "dolphin",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "meja rias",
@@ -407,17 +352,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "dont"
   },
   {
-    "word": "cimol",
-    "cn": "西爪哇木薯粉小吃",
-    "en": "cimol snack",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "tepung",
     "cn": "面粉/粉",
     "en": "flour",
@@ -605,17 +539,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "bulu",
-    "cn": "毛/羽毛",
-    "en": "fur/feather",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
-  },
-  {
     "word": "jantan",
     "cn": "雄性",
     "en": "male animal",
@@ -724,17 +647,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A1",
     "sab": "A",
     "selection": "dont"
-  },
-  {
-    "word": "botak",
-    "cn": "秃头",
-    "en": "bald",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A1",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "uban",
@@ -1012,17 +924,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "selection": "fuzzy"
   },
   {
-    "word": "panahan",
-    "cn": "射箭",
-    "en": "archery",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "B",
-    "selection": "fuzzy"
-  },
-  {
     "word": "gerakan",
     "cn": "动作",
     "en": "movement",
@@ -1087,17 +988,6 @@ window.SECONDARY_MASTER_VOCAB_DB = [
     "bipa_level": "A2",
     "sab": "S",
     "selection": "dont"
-  },
-  {
-    "word": "bungkuk",
-    "cn": "弯腰",
-    "en": "bend over",
-    "root": "",
-    "root_cn": "",
-    "formation": "",
-    "bipa_level": "A2",
-    "sab": "A",
-    "selection": "fuzzy"
   },
   {
     "word": "bahu",

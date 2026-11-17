@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generated_at": "2026-11-17T14:00:58.456Z",
-  "source_updated_at": "2026-11-17T11:26:34.857Z",
+  "generated_at": "2026-11-17T23:41:02.466Z",
+  "source_updated_at": "2026-11-17T15:08:21.199Z",
   "taught_total": 1229,
-  "confirmed_mastered": 286,
-  "needs_reinforcement": 841,
+  "confirmed_mastered": 313,
+  "needs_reinforcement": 814,
   "excluded_from_training": 102,
   "unverified": 0,
-  "mastery_percent": 23.3,
+  "mastery_percent": 25.5,
   "primary_master_total": 977,
   "primary_taught_unique": 647,
   "primary_unlearned_total": 330,
@@ -19,13 +19,13 @@
     "active": true,
     "activated_at": "2026-11-16",
     "goals": {
-      "use": 723,
-      "fast": 57,
+      "use": 706,
+      "fast": 51,
       "recognize": 99,
-      "none": 19
+      "none": 9
     }
   },
-  "focus_total": 838,
+  "focus_total": 811,
   "focus_words": [
     {
       "word": "berlaku sampai",
@@ -121,17 +121,17 @@
       "cn": "被逼到很紧；没什么余地"
     },
     {
-      "word": "penanganan",
-      "score": 92,
+      "word": "menimpa",
+      "score": 108,
       "signals": [
+        "automation_fail",
         "lesson_wrong",
-        "dont",
         "fuzzy"
       ],
-      "wrong_count": 4,
-      "last_wrong": "2026-11-15T11:13:51.680Z",
-      "last_review": "2026-11-15T11:13:51.680Z",
-      "cn": "处理；应对（过程）"
+      "wrong_count": 1,
+      "last_wrong": "2026-11-10T15:08:23.671Z",
+      "last_review": "2026-11-13T02:30:17.193Z",
+      "cn": "砸到；压到（掉下来落在……上）；（灾祸）降临到"
     }
   ],
   "definitions": {
