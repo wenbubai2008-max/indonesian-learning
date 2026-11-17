@@ -10343,23 +10343,27 @@ window.DAILY_VOCAB_DB = [
     "en": "sure; certain; confident",
     "root": "yakin",
     "root_cn": "确信；相信",
-    "example": "Aku belum yakin semua anggota bisa ikut hari Sabtu.",
-    "example_cn": "我还不确定所有成员星期六都能参加。",
+    "example": "Kamu yakin titik jemputnya di sini? Dari tadi ojeknya muter-muter terus.",
+    "example_cn": "你确定接人点在这儿？摩的司机一直在附近绕来绕去。（muter-muter = berputar-putar）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 08:00",
+    "last_seen": "2026-11-17 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
-      "2026-09-14 08:00"
+      "2026-09-14 08:00",
+      "2026-11-17 18:00"
     ]
   },
   {
@@ -11848,16 +11852,16 @@ window.DAILY_VOCAB_DB = [
     "en": "free / unrestricted",
     "root": "bebas",
     "root_cn": "自由；免于",
-    "example": "Kamu bebas memilih kegiatan. Aku tidak akan memaksa kamu menyelam kalau kamu masih takut.",
-    "example_cn": "你可以自由选择活动。你还害怕的话，我不会强迫你潜水。",
+    "example": "Di acara itu, peserta bebas memilih hadiah sendiri: pena, gelang, atau tumbler.",
+    "example_cn": "在那个活动上，参加者可以自己随便挑礼物：笔、手链或保温杯。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-11-03 18:00",
+    "last_seen": "2026-11-17 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -11867,14 +11871,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-29",
       "2026-10-01",
       "2026-10-05",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
       "2026-09-18 08:00",
       "2026-09-29 08:00",
       "2026-10-01 08:00",
       "2026-10-05 18:00",
-      "2026-11-03 18:00"
+      "2026-11-03 18:00",
+      "2026-11-17 18:00"
     ]
   },
   {
@@ -12333,17 +12339,17 @@ window.DAILY_VOCAB_DB = [
     "en": "annoyed / irritated",
     "root": "sebel",
     "root_cn": "烦；恼火",
-    "example": "Aku sebel sama tetangga yang suka ribut tengah malam.",
-    "example_cn": "我烦那个总在半夜吵吵闹闹的邻居。",
+    "example": "Aku sebel banget sama adikku. Udah aku minta bawain payung, eh dia lupa juga.",
+    "example_cn": "我真烦我弟弟。都让他帮我带把伞了，他还是忘了。（udah = sudah，bawain = bawakan）",
     "categories": [
       "每日学习",
       "08:00",
       "口语",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-11-02 18:00",
+    "last_seen": "2026-11-17 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -12352,13 +12358,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-19",
       "2026-09-29",
       "2026-10-03",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
       "2026-09-19 08:00",
       "2026-09-29 08:00",
       "2026-10-03 18:00",
-      "2026-11-02 18:00"
+      "2026-11-02 18:00",
+      "2026-11-17 18:00"
     ]
   },
   {
@@ -14349,23 +14357,25 @@ window.DAILY_VOCAB_DB = [
     "en": "on time; punctual",
     "root": "tepat waktu",
     "root_cn": "准时",
-    "example": "Untuk wawancara kerja, sebaiknya kita datang tepat waktu.",
-    "example_cn": "参加工作面试最好准时到达。",
+    "example": "Buat Pak Hasan, datang tepat waktu artinya menghargai waktu orang lain.",
+    "example_cn": "对哈山先生来说，准时到就意味着尊重别人的时间。（buat = bagi）",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-24 18:00",
-    "last_seen": "2026-09-24 18:00",
+    "last_seen": "2026-11-17 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-24"
+      "2026-09-24",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
-      "2026-09-24 18:00"
+      "2026-09-24 18:00",
+      "2026-11-17 18:00"
     ]
   },
   {
@@ -19030,16 +19040,16 @@ window.DAILY_VOCAB_DB = [
     "en": "loss; damage (noun)",
     "root": "rugi",
     "root_cn": "亏；吃亏；不划算",
-    "example": "Kalau barangnya salah kirim, toko harus menanggung kerugian ongkos kirim.",
-    "example_cn": "如果货发错了，店里得承担运费上的损失。",
+    "example": "Kebakaran gudang itu menimbulkan kerugian terbesar sepanjang sejarah toko mereka.",
+    "example_cn": "那场仓库火灾造成了他们店有史以来最大的损失。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-06 18:00",
-    "last_seen": "2026-11-17 08:00",
+    "last_seen": "2026-11-17 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -19050,7 +19060,8 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-10-06 18:00",
-      "2026-11-17 08:00"
+      "2026-11-17 08:00",
+      "2026-11-17 18:00"
     ]
   },
   {
@@ -21113,16 +21124,16 @@ window.DAILY_VOCAB_DB = [
     "en": "regular; orderly",
     "root": "atur",
     "root_cn": "安排、整理",
-    "example": "Sejak minum obat dengan teratur, gejala alerginya jauh berkurang.",
-    "example_cn": "自从按时吃药以后，他的过敏症状减轻了很多。",
+    "example": "Sejak olahraga teratur tiga kali seminggu, Pak Hasan tidak lagi cepat capek waktu naik tangga.",
+    "example_cn": "自从每周有规律地运动三次，哈山先生爬楼梯时不再那么快就累了。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-10-12 18:00",
-    "last_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-17 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -21131,14 +21142,16 @@ window.DAILY_VOCAB_DB = [
       "2026-10-12",
       "2026-10-27",
       "2026-11-01",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
       "2026-10-12 18:00",
       "2026-10-27 18:00",
       "2026-11-01 08:00",
       "2026-11-01 18:00",
-      "2026-11-15 08:00"
+      "2026-11-15 08:00",
+      "2026-11-17 18:00"
     ]
   },
   {
@@ -32436,28 +32449,30 @@ window.DAILY_VOCAB_DB = [
     "en": "settings; arrangement; regulation",
     "root": "atur",
     "root_cn": "安排；整理",
-    "example": "Setelah warga patungan membeli dua meja panjang, pengaturan tempat duduk di kelas jadi lebih rapi.",
-    "example_cn": "居民们凑钱买了两张长桌之后，教室里的座位安排就整齐多了。",
+    "example": "Kalau notifikasinya mengganggu, atur saja di menu Pengaturan HP-mu, bagian Notifikasi.",
+    "example_cn": "如果通知太烦，就到你手机“设置”菜单里的“通知”那一栏调一下。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-11-13 08:00",
-    "last_seen": "2026-11-15 08:00",
+    "last_seen": "2026-11-17 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-11-13",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-17"
     ],
     "lesson_occurrences": [
       "2026-11-13 08:00",
       "2026-11-13 18:00",
-      "2026-11-15 08:00"
+      "2026-11-15 08:00",
+      "2026-11-17 18:00"
     ]
   },
   {

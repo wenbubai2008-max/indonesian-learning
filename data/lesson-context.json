@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-17",
-    "session": "pm",
-    "time": "18:00",
-    "day": 88
+    "date": "2026-11-18",
+    "session": "am",
+    "time": "08:00",
+    "day": 89
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-17T09:41:00.246Z",
-    "lesson_watermark": "2026-11-17 08:00",
+    "runtime_generated_at": "2026-11-17T10:51:43.241Z",
+    "lesson_watermark": "2026-11-17 18:00",
     "index_updated": "2026-11-17",
-    "runtime_hash": "41f4c247db2f8b05588c5b701a3b689ae9c073d9e5b67b2d694d8d9f0d167743",
-    "index_hash": "cbdb4783ef558737acfca03a75e3fe69e94e649530438b6beb98b9da1e846136",
+    "runtime_hash": "bda28ebf471cfd284d1b0537ad83fb5d1aac1a8af51f450fc809199535032464",
+    "index_hash": "2467986b0fa9658317926b463bf698eaa44b87afc1c1ac039cbfafb7fbe08c52",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -732,16 +732,6 @@
         "继续；后续"
       ],
       [
-        "yakin",
-        3,
-        0,
-        "",
-        "2026-11-15T03:29:53.222Z",
-        "确信；确定；有把握",
-        "yakin",
-        "确信；相信"
-      ],
-      [
         "pihak",
         2,
         0,
@@ -1040,16 +1030,6 @@
         "机会；可能性",
         "peluang",
         "机会；可能性"
-      ],
-      [
-        "tepat waktu",
-        2,
-        0,
-        "",
-        "2026-10-23T23:38:17.366Z",
-        "准时",
-        "tepat waktu",
-        "准时"
       ],
       [
         "wawancara",
@@ -2252,34 +2232,24 @@
         "抛锚；罢工"
       ],
       [
-        "putar balik",
-        3,
+        "muat",
+        2,
         0,
         "",
-        "2026-11-15T03:34:06.472Z",
-        "掉头；调头",
-        "putar + balik",
-        "转 + 回"
+        "2026-10-23T23:32:14.605Z",
+        "装得下；容纳；装载",
+        "muat",
+        "容纳；装载"
       ],
       [
-        "rapihin",
-        3,
-        0,
+        "nyaris",
+        2,
+        1,
         "",
-        "2026-11-14T08:24:16.261Z",
-        "整理好；收拾整齐；把……弄顺（口语）",
-        "rapi",
-        "整齐"
-      ],
-      [
-        "sayang kalau",
-        3,
-        0,
+        "2026-11-08T07:35:02.091Z",
+        "差点、几乎",
         "",
-        "2026-11-14T08:24:29.160Z",
-        "如果……就可惜了",
-        "sayang",
-        "可惜；珍惜；亲爱的"
+        ""
       ]
     ],
     "focus": [
@@ -2547,47 +2517,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-10",
-      "session": "am",
-      "review_core": [
-        "kerusakan",
-        "menambalnya",
-        "sekadar",
-        "balik",
-        "ban bocor"
-      ],
-      "new_words": [
-        "wisuda",
-        "kebaya",
-        "jas",
-        "sanggul",
-        "berbaris",
-        "mengharukan",
-        "album foto",
-        "anggota keluarga",
-        "megah",
-        "ikat pinggang"
-      ]
-    },
-    {
-      "date": "2026-11-10",
-      "session": "pm",
-      "review_core": [
-        "lebat",
-        "melawan",
-        "menyebar",
-        "batuk",
-        "berkunjung"
-      ],
-      "new_words": [
-        "bergoyang-goyang",
-        "menimpa",
-        "kokoh",
-        "memperbaikinya",
-        "ketersediaannya"
-      ]
-    },
-    {
       "date": "2026-11-11",
       "session": "am",
       "review_core": [
@@ -2825,73 +2754,32 @@
         "berarti"
       ],
       "new_words": []
+    },
+    {
+      "date": "2026-11-17",
+      "session": "pm",
+      "review_core": [
+        "sebel",
+        "bebas",
+        "teratur",
+        "pengaturan",
+        "kerugian"
+      ],
+      "new_words": []
     }
   ],
   "previous_pm": {
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "new_words": [],
     "review_core": [
-      "menegaskan",
-      "berlaku sampai",
-      "unggah",
-      "mengunggah",
-      "percuma"
+      "sebel",
+      "bebas",
+      "teratur",
+      "pengaturan",
+      "kerugian"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-17",
-    "vocab": [
-      [
-        "unggah",
-        "上传",
-        "to upload",
-        "unggah",
-        "上传"
-      ],
-      [
-        "kepepet",
-        "被逼到很紧；没什么余地",
-        "to be in a tight spot; pressed (for time or money)",
-        "pepet",
-        "逼近；紧逼"
-      ],
-      [
-        "mengabaikan",
-        "忽视；不理会",
-        "to ignore; to neglect",
-        "abai",
-        "疏忽；不在意"
-      ],
-      [
-        "putar balik",
-        "掉头；调头往回走",
-        "to make a U-turn; to turn back",
-        "putar + balik",
-        "转 + 回"
-      ],
-      [
-        "rapihin",
-        "整理好；收拾整齐；把……弄顺（口语）",
-        "to tidy up; to sort out (colloquial)",
-        "rapi",
-        "整齐"
-      ],
-      [
-        "sayang kalau",
-        "如果……就可惜了",
-        "it would be a pity if …",
-        "sayang",
-        "可惜；珍惜；亲爱的"
-      ]
-    ],
-    "review_vocab": [
-      "rugi",
-      "kerugian",
-      "menegaskan",
-      "berlaku sampai",
-      "berarti"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
