@@ -256,7 +256,39 @@
       "enabled": true,
       "effective_date": "2026-10-08",
       "generator": "12:00 泛读由 Claude 定时任务生成（约 11:24 开始），取代原 ChatGPT 任务；发布仍走 sync-daily-vocab.yml 的 extensive_reading_release，一天只发一篇。",
-      "rule": "先选一条 0–3 天内的真实新闻，再用 node .github/scripts/reading-review.js --date D 取复习词名单（focus_pool > review_pool > 旧词 > recurrence_pool，按距上次在课程或泛读出现的天数排序；最近 2 天泛读刚用过的词降权；3–10 天前只在一篇泛读里出现过的词加分，让同一个弱词隔几天换场景再出现），从中挑 12–16 个能自然放进这条新闻的词（2026-10-15 起，原 8–12），至少 4 个 focus_pool 词（原 3）；写进正文或文末 4–8 行口语小对话（两个普通人聊这条新闻，口语弱词放这里），并在 review_words 中列出。",
+      "topic_selection": {
+        "enabled": true,
+        "effective_date": "2026-11-19",
+        "shortlist_min": 4,
+        "shortlist_max": 6,
+        "min_shortlist_main_categories": 3,
+        "avoid_same_main_category_last_articles": 3,
+        "target_distinct_main_categories_last_articles": {
+          "articles": 6,
+          "categories": 4
+        },
+        "broad_categories": [
+          "娱乐与人物",
+          "经济与商业",
+          "社会热点",
+          "科技与互联网",
+          "体育与赛事",
+          "趣闻与奇事",
+          "日常生活",
+          "消费与物价",
+          "饮食",
+          "健康",
+          "交通出行",
+          "公共服务",
+          "工作与职场",
+          "教育",
+          "社区与社会",
+          "环境与天气",
+          "文化与休闲"
+        ],
+        "rule": "跨至少3个主类初选4–6条0–3天内真实印尼新闻；娱乐、经济、社会、科技、体育、趣闻与原有生活新闻同等可选。优先近期没出现的主类；避免连续公共服务、政府公告、设施建设或交通新闻。轻松搞笑或严肃社会经济新闻均可；保留事实核验、对人物的尊重和A2+→B1的表达。多样性目标为软约束，不得为了轮换类别而编造事实、勉强塞入复习词或错过重大新闻。"
+      },
+      "rule": "先按 topic_selection 跨主类挑选4–6条0–3天内的真实新闻，再用 node .github/scripts/reading-review.js --date D 取复习词名单（focus_pool > review_pool > 旧词 > recurrence_pool，按距上次在课程或泛读出现的天数排序；最近 2 天泛读刚用过的词降权；3–10 天前只在一篇泛读里出现过的词加分，让同一个弱词隔几天换场景再出现），从中挑 12–16 个能自然放进这条新闻的词（2026-10-15 起，原 8–12），至少 4 个 focus_pool 词（原 3）；写进正文或文末 4–8 行口语小对话（两个普通人聊这条新闻，口语弱词放这里），并在 review_words 中列出。",
       "not_counted": "泛读复现只算被动接触：不计入核心复习次数，不改变复习资格、冷却、轮换、配额和 mastered；不得为了塞词歪曲新闻事实或牺牲自然度。",
       "schema": "可选字段 review_words=[{word, cn}]（1–20 个，每个必须真的出现在正文或对话中，可带 -nya/-lah/-kah/-pun/-ku/-mu）；dialogue={title?, lines:[{speaker, text, cn}]}（4–8 行，每行不超过 30 词）。旧文章没有这两个字段，照常显示。",
       "validator": "publish-extensive-reading-candidate.js：结构错误、提示词 term 不在原文（2026-10-07 曾漏显示 2 个提示）、同一天已发布过泛读，均阻止发布；check 模式另外报告复习词覆盖率（不足 8 个、focus 不足 3 个、没有对话只警告），复习词不在已学未掌握词池里则报错。"
