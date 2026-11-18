@@ -1,0 +1,365 @@
+{
+  "date": "2026-11-18",
+  "session": "pm",
+  "time": "18:00",
+  "day": 89,
+  "title": "18:00 晚课｜Kardus Basah, Kaos Polos Berantakan · 纸箱淋湿了，素色T恤乱成一团",
+  "write_status": "lesson_complete",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "core"
+  },
+  "new_words": [
+    "polos",
+    "kardus",
+    "keripik"
+  ],
+  "vocab": [
+    {
+      "word": "polos",
+      "display": "polos",
+      "audio_text": "polos",
+      "cn": "素色的、没有图案的；（人）单纯、天真",
+      "en": "plain, unpatterned; innocent",
+      "root": "polos",
+      "root_cn": "素；单纯",
+      "formation": "基础形容词，不拆词缀。派生：kepolosan（单纯、天真，名词）。常见搭配：kaos polos（素色T恤）、kain polos（素色布）、warna polos、wajah polos（一脸天真）、jawaban polos（天真的回答）。",
+      "example": "Untuk seragam panitia, kami pilih kaos polos warna hitam, nanti logonya disablon sendiri.",
+      "example_cn": "panitia 的统一服装，我们选了黑色素色T恤，回头自己印上标志。（disablon = 丝网印刷）",
+      "synonym_note": "说衣服、布料“素色、没图案”用 polos；sederhana 是“简单、朴素”（hidup sederhana），不用来说“素色T恤”。说人时 polos 是“单纯、天真”，有时带点不懂人情世故；lugu 也是“老实、天真”，更偏“没见过世面”。",
+      "usage_note": "网购里最常见的是 kaos polos：没印字、没图案的T恤，常买来自己印字（disablon）。今晚 Pak Yusuf 订的就是 40 件白色 kaos polos。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "kardus",
+      "display": "kardus",
+      "audio_text": "kardus",
+      "cn": "纸箱；硬纸板箱",
+      "en": "cardboard box",
+      "root": "kardus",
+      "root_cn": "纸箱",
+      "formation": "日常基础名词，不拆词缀。常见搭配：kardus bekas（旧纸箱）、kardus mi（方便面箱）、kardusnya penyok（纸箱压扁了）、kardus basah、dikemas pakai kardus（用纸箱包装）。",
+      "example": "Kucing kami yang manja selalu tidur di dalam kardus bekas, padahal sudah dibelikan kasur.",
+      "example_cn": "我们家那只爱撒娇的猫总睡在旧纸箱里，明明已经给它买了猫窝。",
+      "synonym_note": "karton 多指“硬纸板”这种材料（kotak karton），包装说明、书面里常见；日常说“纸箱”多用 kardus。kotak 是“盒子”，泛指，不一定是纸做的。口语说法：数量上常简说 dus：satu dus air mineral（一箱矿泉水）。",
+      "usage_note": "网购退换货时卖家常提醒“kardusnya jangan dibuang dulu”（纸箱先别扔）。今晚 Pak Yusuf 的包裹纸箱被雨淋湿、压扁了（basah dan penyok）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "keripik",
+      "display": "keripik",
+      "audio_text": "keripik",
+      "cn": "脆片；薯片（切薄炸脆的零食）",
+      "en": "chips; crisps",
+      "root": "keripik",
+      "root_cn": "脆片零食",
+      "formation": "基础名词，不拆词缀。常见搭配：keripik singkong（木薯片）、keripik kentang（土豆片）、keripik pisang（香蕉片）、keripik tempe、keripik pedas、sebungkus keripik（一包脆片）。",
+      "example": "Kalau lagi kepikiran kerjaan, aku suka ngemil keripik sampai sebungkus habis.",
+      "example_cn": "我一想着工作上的事，就爱吃脆片，一吃就是一整包。（ngemil = mengemil）",
+      "synonym_note": "kerupuk 是用淀粉（常加虾、鱼）做成再炸的膨化脆饼，常配饭吃（makan pakai kerupuk）；keripik 是把木薯、香蕉、天贝等直接切薄炸脆，多当零食。包装上也常见英语 chips。口语说法：“吃零食”口语说 ngemil（标准形 mengemil）。",
+      "usage_note": "印尼各地的特产常是各种 keripik，送礼当 oleh-oleh 很常见；网店有时还会在包裹里塞一包 keripik 当赠品（bonus）。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "berangsur",
+      "display": "berangsur",
+      "audio_text": "berangsur",
+      "cn": "逐渐地（一点一点变化）",
+      "en": "gradually",
+      "root": "angsur",
+      "root_cn": "一点一点地推进；分期",
+      "formation": "ber- + angsur → berangsur，常重叠成 berangsur-angsur，意思相同。同词根：angsuran（分期付款的每一期）、mengangsur（分期付）。常见搭配：berangsur pulih / membaik / reda / turun / normal。",
+      "example": "Setelah minum obat dan banyak istirahat, gejala flunya berangsur hilang.",
+      "example_cn": "吃了药、多休息以后，他的感冒症状逐渐消失了。",
+      "synonym_note": "pelan-pelan / perlahan-lahan 是“慢慢地”，偏动作做得慢；berangsur 强调状态一步步变化（病情、天气、价格、交通）。lama-lama 是口语“时间久了、渐渐地”（Lama-lama aku terbiasa）。口语说法：日常聊天更常说 pelan-pelan 或 lama-lama；berangsur 多见于新闻和正式说明，说天气、病情时口头也能用。",
+      "usage_note": "最近又答错过，今晚继续练。berangsur 后面接表示变化结果的词：hujan berangsur reda、harga berangsur turun。今晚阅读里，大雨到傍晚才 berangsur reda。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "peserta",
+      "display": "peserta",
+      "audio_text": "peserta",
+      "cn": "参加者；参与者",
+      "en": "participant",
+      "root": "serta",
+      "root_cn": "一起；参与",
+      "formation": "serta（一起、参与）→ peserta（参加活动的人）。同词根：ikut serta（参加）、beserta（连同）、menyertai（陪同；附带）。常见搭配：peserta lomba、peserta pelatihan、jumlah peserta、para peserta、semua peserta。",
+      "example": "Panitia mendorong semua peserta untuk membawa botol minum sendiri.",
+      "example_cn": "主办方鼓励所有参加者自带水瓶。",
+      "synonym_note": "anggota 是“成员”，长期属于某个组织（anggota klub）；peserta 是某一次活动、比赛、课程的参加者。penonton 是观众，只看不参加。",
+      "usage_note": "最近答错过；今天08:00早课也复习过（培训学员 peserta pelatihan），今晚换到小区跑步活动里用：40 peserta lari santai。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nggak heran",
+      "display": "nggak heran",
+      "audio_text": "nggak heran",
+      "cn": "难怪；不奇怪",
+      "en": "no wonder",
+      "root": "heran",
+      "root_cn": "惊讶；觉得奇怪",
+      "formation": "nggak（= tidak）+ heran（惊讶、觉得奇怪），标准形 tidak heran。同词根：mengherankan（令人奇怪的）、keheranan（惊讶）。常见句型：Nggak heran (kalau) + 结果。",
+      "example": "Dia begadang ngerjain skripsi tiap malam. Nggak heran matanya merah terus.",
+      "example_cn": "他每晚熬夜写毕业论文。难怪眼睛老是红的。（ngerjain = mengerjakan，tiap = setiap）",
+      "synonym_note": "pantas / pantesan 也是“难怪”，口语里 Pantesan! 可以单独说；nggak heran 后面常接一整句结果。heran 单用是“纳闷、奇怪”：Aku heran kenapa dia diam aja。口语说法：nggak heran 本身就是口语形，正式文本写 tidak heran / tak heran。",
+      "usage_note": "先知道原因，再用 nggak heran 引出结果。今晚对话里 Pak Yusuf 知道纸箱里没包塑料后说：Nggak heran kaosnya basah semua。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bakal",
+      "display": "bakal",
+      "audio_text": "bakal",
+      "cn": "将会；要（口语）",
+      "en": "will; going to",
+      "root": "bakal",
+      "root_cn": "将会；（名词）雏形、原料",
+      "formation": "基础词，不拆词缀。作名词时另有“雏形、原料”义（bakal calon = 预备人选），日常最常用的是表示将来的 bakal。常见用法：bakal + 动词（bakal datang、bakal dipakai）、bakal ada …。",
+      "example": "Katanya harga beras bakal naik lagi, jadi banyak penduduk desa mulai menyimpan stok.",
+      "example_cn": "听说米价还会再涨，所以很多村民开始囤货。",
+      "synonym_note": "akan 是标准形“将会”；bakal 更口语，常带“估计会、预计会”的语气。mau 也能表示将来，但常带意愿（Dia mau datang = 他要来/想来）。口语说法：日常聊天多说 bakal，正式文本、新闻用 akan。",
+      "usage_note": "今晚的T恤 bakal dipakai peserta hari Minggu：说接下来要发生的事。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berantakan",
+      "display": "berantakan",
+      "audio_text": "berantakan",
+      "cn": "乱七八糟；凌乱；（计划）全乱了",
+      "en": "messy; in a mess",
+      "root": "berantak",
+      "root_cn": "乱；散乱",
+      "formation": "通常整体记作一个词。常见搭配：kamar berantakan、rambut berantakan、isinya berantakan（里面乱成一团）、rencananya berantakan（计划全被打乱）。口语“弄乱”说 ngeberantakin。",
+      "example": "Rambut keritingnya jadi berantakan kena angin waktu naik motor.",
+      "example_cn": "她的卷发骑摩托时被风吹得乱七八糟。（kena = terkena）",
+      "synonym_note": "kacau 偏“混乱、失控”，多说局面、交通（lalu lintas kacau）；berantakan 多说东西摆放乱，或计划被打乱。tidak rapi 是“不整齐”，程度轻。",
+      "usage_note": "今晚应用复现：从房间、头发迁移到网购包裹：Isinya berantakan（里面的东西乱成一团）。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Pak Yusuf adalah ketua panitia lari santai di kompleks perumahannya. Sebagian besar pesertanya remaja dan orang tua dari kompleks itu. Untuk acara hari Minggu, dia memesan 40 kaos polos putih secara online dari toko yang ulasannya positif. Kaos itu bakal disablon pada hari Sabtu, lalu dibagikan kepada para peserta. Rabu sore paketnya datang. Tidak ada orang di rumah, dan istrinya sudah mengunci pagar, jadi kurir meletakkan paket di depan pagar. Hujan deras baru berangsur reda menjelang magrib. Air dari jalan mengalir ke depan rumah, dan kardusnya basah serta penyok. Waktu dibuka, isinya berantakan. Enam kaos kotor terkena air, dan sebungkus keripik bonus dari toko sudah hancur. Pak Yusuf memotret kardus itu, lalu menghubungi toko lewat chat.",
+    "cn": "Pak Yusuf 是他们小区休闲跑活动的主办负责人。参加者大多是小区里的青少年和长辈。为了周日的活动，他在网上一家评价很好的店订了 40 件白色素色T恤。这些T恤要在周六印上图案，然后发给参加者。周三下午包裹到了。家里没人，妻子出门前已经把院门锁上了，所以快递员把包裹放在了院门外。大雨到傍晚昏礼时分才渐渐停下。路上的水流到了家门前，纸箱被淋湿、压扁了。打开一看，里面乱七八糟。六件T恤被水弄脏了，店家送的一包赠品脆片也碎了。Pak Yusuf 给纸箱拍了照，然后在聊天里联系店家。"
+  },
+  "dialogue": {
+    "title": "Pak Yusuf 在网店聊天里投诉湿掉的包裹",
+    "twist": 5,
+    "lines": [
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Malam, Kak. Paket kaos polos saya udah sampai, tapi kardusnya penyok dan basah kena hujan.",
+        "cn": "晚上好。我的素色T恤包裹到了，可是纸箱压扁了，还被雨淋湿了。（udah = sudah，kena = terkena）"
+      },
+      {
+        "speaker": "Admin Sari",
+        "id": "Aduh, mohon maaf, Pak. Isinya gimana? Ada yang rusak?",
+        "cn": "哎呀，非常抱歉。里面的东西怎么样？有坏的吗？（gimana = bagaimana）"
+      },
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Di dalam berantakan semua. Enam kaos kena air kotor, nggak bisa dipakai. Keripik bonusnya juga hancur, tapi itu sih nggak apa-apa.",
+        "cn": "里面全乱了。六件T恤沾了脏水，没法穿了。赠品脆片也碎了，不过那个倒没关系。（nggak = tidak）"
+      },
+      {
+        "speaker": "Admin Sari",
+        "id": "Waduh. Kaosnya bakal dipakai buat acara, Pak?",
+        "cn": "哎呀。这些T恤是要在活动上穿的吗？（buat = untuk）"
+      },
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Iya, buat 40 peserta lari santai hari Minggu. Sabtu pagi udah harus disablon.",
+        "cn": "对，给周日休闲跑的 40 个参加者穿的。周六上午就得拿去印图案。"
+      },
+      {
+        "speaker": "Admin Sari",
+        "id": "Baik, Pak. Tapi maaf, sesuai aturan toko, klaim retur cuma bisa diproses kalau ada video unboxing.",
+        "cn": "好的。不过抱歉，按店里的规定，退换申请只有附上开箱视频才能处理。（cuma = hanya）"
+      },
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Lho, saya nggak kepikiran ngerekam, Kak. Paketnya ditaruh kurir di depan pagar, soalnya rumah lagi kosong.",
+        "cn": "啊？我根本没想到要录视频。快递员把包裹放在院门外，因为当时家里没人。（ngerekam = merekam，ditaruh = diletakkan，lagi = sedang）"
+      },
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Menurut deskripsi toko, setiap kaos seharusnya dibungkus plastik dulu. Ini nggak ada plastiknya sama sekali, Kak.",
+        "cn": "按你们店的商品说明，每件T恤本该先用塑料袋包好。可这里面一个塑料袋都没有。"
+      },
+      {
+        "speaker": "Admin Sari",
+        "id": "Sebentar, Pak, saya cek dulu. Ternyata minggu ini bagian packing ada karyawan baru, dan plastiknya kelewat.",
+        "cn": "请稍等，我查一下。原来这周打包的是新员工，漏了套塑料袋这一步。（kelewat = terlewat）"
+      },
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Nggak heran kaosnya basah semua. Kardus doang mana kuat nahan hujan deras.",
+        "cn": "难怪T恤全湿了。光一个纸箱哪挡得住大雨。（doang = saja，nahan = menahan）"
+      },
+      {
+        "speaker": "Admin Sari",
+        "id": "Mohon maaf banget, Pak. Kalau Bapak kirim foto kardus dan nomor resinya, kami bisa kirim enam kaos pengganti besok pagi, tanpa video.",
+        "cn": "真的非常抱歉。如果您发来纸箱的照片和运单号，我们明天上午就能补寄六件T恤，不需要视频。（banget = sekali）"
+      },
+      {
+        "speaker": "Pak Yusuf",
+        "id": "Oke, Kak. Fotonya saya kirim sekarang. Asal hari Jumat udah sampai, ya.",
+        "cn": "好的。照片我现在就发。只要周五前能到就行。"
+      }
+    ],
+    "practice": {
+      "role": "Pak Yusuf",
+      "lines": [
+        {
+          "speaker": "Pak Yusuf",
+          "id": "Kak, kardus kaos polos saya penyok dan basah.",
+          "cn": "我的素色T恤纸箱被压扁了，还湿了。"
+        },
+        {
+          "speaker": "Admin Sari",
+          "id": "Maaf, Pak. Retur cuma bisa kalau ada video unboxing.",
+          "cn": "抱歉，退换得有开箱视频才行。"
+        },
+        {
+          "speaker": "Pak Yusuf",
+          "id": "Saya nggak ngerekam. Menurut deskripsi, kaosnya seharusnya dibungkus plastik.",
+          "cn": "我没录。按商品说明，T恤本该用塑料袋包好的。"
+        },
+        {
+          "speaker": "Admin Sari",
+          "id": "Ternyata plastiknya kelewat. Kami kirim enam kaos pengganti besok.",
+          "cn": "原来是漏套塑料袋了。我们明天补寄六件T恤。"
+        },
+        {
+          "speaker": "Pak Yusuf",
+          "id": "Oke. Asal sampai Jumat, buat peserta hari Minggu.",
+          "cn": "好的。只要周五能到就行，周日参加者要穿。"
+        }
+      ]
+    }
+  },
+  "rewrite": [
+    {
+      "kind": "twist",
+      "task": "转折应对：你是网店客服 Admin Sari。另一位顾客 Kak Nita 收到的素色T恤纸箱湿了、里面乱成一团，可她没有开箱视频。先道歉并说明情况（用 kardus 和 berantakan），再用 Ternyata 说明原因，最后用本周句型 Kalau …, kami bisa … 提出办法。按句子骨架填空，用 kami / Kakak。",
+      "frame": "Mohon maaf, Kak, …… . Ternyata …… . Kalau Kakak kirim …… , kami bisa …… .",
+      "reference_answer": "Mohon maaf, Kak, kardusnya sampai basah dan isinya jadi berantakan. Ternyata paket Kakak lupa kami bungkus plastik dulu. Kalau Kakak kirim foto kardus dan nomor resinya, kami bisa kirim kaos polos pengganti besok tanpa video unboxing.",
+      "reference_cn": "非常抱歉，纸箱都湿了，里面的东西也乱成一团。原来是我们忘了先给您的包裹套塑料袋。如果您发来纸箱的照片和运单号，我们明天就能补寄素色T恤，不需要开箱视频。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "包裹被雨淋了。客服问：“Isinya gimana, Pak?” 顾客回答：“Wah, di dalam ____ semua, kaosnya campur sama keripik.” 哪项最自然？",
+        "options": [
+          "berantakan",
+          "berangsur",
+          "penyok",
+          "polos"
+        ],
+        "answer_index": 0,
+        "answer": "berantakan",
+        "explain": "berantakan 说东西摆得乱七八糟，正好接“T恤和脆片混在一起”。penyok 是“（被压得）凹陷、变形”，说纸箱可以（kardusnya penyok），说“里面全都……”接不上后面的“混在一起”；berangsur 是“逐渐地”，后面要接变化（berangsur reda）；polos 是“素色的”，与情境无关。"
+      },
+      {
+        "type": "choice",
+        "prompt": "同事说：“Kemarin Dimas begadang sampai jam tiga pagi.” 你看到 Dimas 在开会时直打哈欠，哪句回应最自然？",
+        "options": [
+          "Heran, dia ngantuk banget hari ini.",
+          "Nggak heran dia ngantuk banget hari ini.",
+          "Nggak heran dia segar banget hari ini.",
+          "Bakal heran dia ngantuk banget hari ini."
+        ],
+        "answer_index": 1,
+        "answer": "Nggak heran dia ngantuk banget hari ini.",
+        "explain": "已经知道原因（熬夜到三点），再看到结果（犯困），就说 Nggak heran …（难怪……）。Heran, … 是“奇怪，……”，原因明明知道，不该觉得奇怪；segar（精神）和熬夜的结果相反；bakal heran 是“将会惊讶”，不成说法。"
+      },
+      {
+        "type": "choice",
+        "prompt": "新闻里说：“Hujan sudah berhenti sejak jam lima, dan sekarang air di jalan ____ surut.” 哪项放进空格最自然？",
+        "options": [
+          "bakal",
+          "sempat",
+          "masih",
+          "berangsur"
+        ],
+        "answer_index": 3,
+        "answer": "berangsur",
+        "explain": "雨停了，积水正一点点退，用 berangsur surut（逐渐退去）。bakal 表示将来，和 sekarang（现在）冲突；sempat surut 是“曾经退过一阵”，不符合“现在正在退”；masih surut 不通，masih 后面一般接还在持续的状态（masih tergenang = 还积着水）。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kaos ini ____ dipakai peserta hari Minggu.（将会，口语）",
+        "answer": "bakal",
+        "explain": "bakal + 被动动词 dipakai = 将会被穿。正式文本写 akan dipakai，聊天里多说 bakal。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Tolong jangan buang ____ ini dulu, masih dipakai buat retur.（纸箱）",
+        "answer": "kardus",
+        "explain": "kardus = 纸箱。退换货常要连纸箱一起寄回或拍照，所以卖家会说 kardusnya jangan dibuang dulu。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：所有参加者都会拿到一件素色T恤。",
+        "tokens": [
+          "Semua",
+          "peserta",
+          "bakal",
+          "dapat",
+          "kaos",
+          "polos."
+        ],
+        "answer": "Semua peserta bakal dapat kaos polos.",
+        "answer_cn": "所有参加者都会拿到一件素色T恤。",
+        "explain": "Semua peserta（所有参加者）作主语，bakal 放在动词 dapat 前表示将来，宾语 kaos polos：形容词 polos 放在名词 kaos 后面。"
+      }
+    ]
+  },
+  "review": {
+    "title": "可选 · 30 秒复述",
+    "steps": [
+      "用 kardus、berantakan、nggak heran、peserta 说说 Pak Yusuf 的包裹出了什么事、为什么会这样、最后怎么解决的。"
+    ],
+    "retell_reference": "Pak Yusuf memesan 40 kaos polos untuk peserta lari santai. Kurir meletakkan paketnya di depan pagar waktu hujan, jadi kardusnya basah dan isinya berantakan. Ternyata toko lupa membungkus kaosnya dengan plastik. Nggak heran enam kaos jadi kotor. Akhirnya toko bakal mengirim enam kaos pengganti tanpa video unboxing.",
+    "retell_reference_cn": "Pak Yusuf 为休闲跑的参加者订了 40 件素色T恤。下雨时快递员把包裹放在院门外，所以纸箱湿了，里面乱成一团。原来店家忘了给T恤套塑料袋。难怪六件T恤都脏了。最后店家会补寄六件T恤，不需要开箱视频。"
+  },
+  "lesson_focus": {
+    "words": [
+      "berangsur",
+      "peserta",
+      "kardus"
+    ],
+    "patterns": [
+      {
+        "pattern": "Menurut …, … seharusnya …",
+        "cn": "按……，……本该……",
+        "function": "state-problem",
+        "example": "Menurut deskripsi toko, setiap kaos seharusnya dibungkus plastik dulu.",
+        "example_cn": "按你们店的商品说明，每件T恤本该先用塑料袋包好。"
+      },
+      {
+        "pattern": "Kalau …, kami bisa …",
+        "cn": "如果……，我们可以……",
+        "function": "offer-solution",
+        "example": "Kalau Bapak kirim foto kardus dan nomor resinya, kami bisa kirim enam kaos pengganti besok pagi, tanpa video.",
+        "example_cn": "如果您发来纸箱的照片和运单号，我们明天上午就能补寄六件T恤，不需要视频。"
+      }
+    ]
+  }
+}
