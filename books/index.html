@@ -38,8 +38,8 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
   <nav class="crumb" aria-label="位置"><a href="../index.html#home">⌂ 印尼语学习</a><span>/</span><a href="#shelf">双语书籍</a><span id="where" hidden>/ 第1章</span></nav>
   <section id="shelfPage">
     <div class="head"><div><h1>📖 双语书籍</h1><p class="sub">像读书一样学印尼语 · 原文与中文逐段对照 · 记录阅读进度</p></div><span class="pill">每行 4 本 · 自适应布局</span></div>
-    <div class="note">书架先展示 1 本正在制作的双语读物，另外 3 本是已核实的原创小说／短篇来源链接，尚未导入正文。未导入的不标记为可读。</div>
-    <div class="tabs"><button class="btn on" type="button">全部书籍 · 4</button><span class="pill">双语试读 · 1</span><span class="pill">待导入 · 3</span></div>
+    <div class="note">当前仅显示已经有阅读内容的书籍，其余作品待导入正文后再上架。</div>
+    <div class="tabs"><button class="btn on" type="button">全部书籍 · 1</button><span class="pill">双语试读 · 1</span></div>
     <div class="bookGrid" id="bookGrid"></div>
   </section>
   <section id="readerPage" hidden>
@@ -80,10 +80,7 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 const bookId='seporsi-mie-ayam-sebelum-mati';
 const chapters=['SCBD Parking Lot 17','Am I Living or Just Passing Time?','24 Jam Sebelum Mati','Seporsi Mie Ayam Sebelum Mati','Sekolah Parcok','Ale, Sang Sarung Beceng','Gurita Mami Louisse','Seloyang Kue Pandan Hijau','500 Perak Bolu Kukus','Bandring','Kerupuk Bangka Orang Buta','Seporsi Mie Ayam yang Terakhir'];
 const books=[
-  {title:'Seporsi Mie Ayam Sebelum Mati',author:'Brian Khrisna',desc:'12章 · 第1章双语阅读试用 · 其余章节尚未导入',icon:'🍜',cls:'',ready:true},
-  {title:'A Hui dan Meily',author:'R. Ananta Kusuma Wibawa',desc:'印尼原创连载 · 了解华人家庭和情感',icon:'💌',cls:'c2',url:'https://id.wikibooks.org/wiki/A_Hui_dan_Meily'},
-  {title:'Makan Siang Favorit',author:'Ariska Fisabilillah',desc:'短篇 · 日常对话与餐饮生活',icon:'🍚',cls:'c3',url:'https://id.wikibooks.org/wiki/Makan_Siang_Favorit'},
-  {title:'Kain dari Rumput',author:'Fransisca Emilia',desc:'短篇 · 乡村文化与成长',icon:'🌿',cls:'c4',url:'https://id.wikibooks.org/wiki/Kain_dari_Rumput'}
+  {title:'Seporsi Mie Ayam Sebelum Mati',author:'Brian Khrisna',desc:'12章 · 第1章双语阅读试用 · 其余章节尚未导入',icon:'🍜',cls:'',ready:true}
 ];
 const sample=[
   {idn:'Setelah semesta menghancurkan hidupmu berkali-kali meski kau sudah memohon dengan teramat sangat, rasa perih itu tak kunjung juga berhenti. Terkadang, tak percaya lagi pada kekuatan doa menjadi hal yang rasanya wajar sekali.',zh:'即使你一次又一次地苦苦祈求，命运仍不断摧毁你的生活，那种痛楚也始终没有停止。有时，连祈祷的力量都不再相信，似乎也是再正常不过的事。'},
