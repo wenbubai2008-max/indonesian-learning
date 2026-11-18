@@ -31,6 +31,40 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 [hidden]{display:none!important}
 @media(max-width:900px){.bookGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.layout{grid-template-columns:1fr}.side{order:2}}
 @media(max-width:560px){.wrap{padding:14px 11px 65px}.head h1{font-size:24px}.bookGrid{grid-template-columns:1fr}.bookCard{min-height:235px}.readerHero{padding:12px;gap:12px}.readerHero h1{font-size:19px}.readerHero .cover{flex-basis:65px;height:93px}.paper,.side{padding:16px}.idText{font-size:17px}.chapterList{grid-template-columns:1fr}}
+
+/* 2026-11-18: book-first typography; keep study tools visually secondary. */
+:root{--reader-font:19px}
+#readerPage .paper{padding:34px 38px;background:#fffefa;border-color:#e7e1d8;box-shadow:0 4px 24px rgba(73,57,33,.035)}
+#readerPage .paper h2{font-size:23px;line-height:1.45;letter-spacing:.01em}
+#readerPage .paper .source{margin-bottom:26px}
+#readerPage .para{margin-bottom:22px;padding-bottom:22px;border-bottom-color:#ede9e2}
+#readerPage .idText{font-size:var(--reader-font);color:#252b36;font-weight:450;line-height:2.05;letter-spacing:.006em;word-break:normal;overflow-wrap:break-word}
+#readerPage .zhText{font-size:calc(var(--reader-font) - 2px);font-weight:400;color:#5b677a;background:#f4f6fa;border-left-color:#9baccd;line-height:1.95;padding:11px 15px;margin-top:11px}
+#readerPage .side{position:sticky;top:18px}
+#readerPage .readerHero{background:#fdfefe}
+#readerPage .readingStat{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 0;align-items:center}
+#readerPage .readerProgress{width:160px;max-width:100%;height:7px;background:#e4e8f1;border-radius:99px;overflow:hidden}
+#readerPage .readerProgress>span{display:block;height:100%;background:#7eb48a;width:0%;border-radius:99px;transition:width .2s}
+#readerPage .readerControls{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+#readerPage .readerControls label{font-size:13px;color:#526076;font-weight:700}
+#readerPage #chapterSelect{border:1px solid #d8dfed;padding:8px 12px;max-width:100%;border-radius:10px;color:#2d3b57;background:white}
+#readerPage .hint strong{color:#3157d5}
+#readerPage .machineNote{display:inline-block;font-size:11px;color:#96754b;background:#fff2dc;border:1px solid #f2dcb1;border-radius:99px;padding:2px 7px;vertical-align:middle;margin:0 4px}
+#readerPage .editBox{width:100%;min-height:85px;resize:vertical;display:block;margin-top:11px;padding:10px 12px;border:1px solid #8fa9da;border-radius:10px;background:#fff;color:#2e3a50;line-height:1.7;font-size:16px}
+#readerPage #translateState{width:100%;min-height:20px}
+
+#readerPage .importBar{margin-top:18px;padding:16px;align-items:stretch}
+#readerPage .chapterList{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+#readerPage .chapterBtn{min-height:58px;line-height:1.5}
+#readerPage .chapterBtn.current{border:2px solid #7192de;background:#f2f6ff;font-weight:800}
+#readerPage .chapterBtn.completed:before{content:'✓ ';color:#257e4d;font-weight:800}
+body.readerWarm{background:#fbf7ef}
+body.readerWarm #readerPage .paper{background:#fffaf0}
+body.readerWarm #readerPage .zhText{background:#f8f2e6;color:#746a57;border-left-color:#c7ae8b}
+body.readerWarm #readerPage .idText{color:#393126}
+@media(max-width:900px){#readerPage .side{position:static}#readerPage .chapterList{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){#readerPage .paper{padding:20px 16px}#readerPage .idText{line-height:1.94}#readerPage .zhText{padding:10px 11px;line-height:1.85}#readerPage .para{margin-bottom:18px;padding-bottom:18px}#readerPage .chapterList{grid-template-columns:1fr}#readerPage .tools{gap:13px}#readerPage .readerControls{width:100%}}
+
 </style>
 </head>
 <body>
@@ -38,16 +72,17 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
   <nav class="crumb" aria-label="位置"><a href="../index.html#home">⌂ 印尼语学习</a><span>/</span><a href="#shelf">双语书籍</a><span id="where" hidden>/ 第1章</span></nav>
   <section id="shelfPage">
     <div class="head"><div><h1>📖 双语书籍</h1><p class="sub">像读书一样学印尼语 · 原文与中文逐段对照 · 记录阅读进度</p></div><span class="pill">每行 4 本 · 自适应布局</span></div>
-    <div class="note">当前仅显示已经有阅读内容的书籍，其余作品待导入正文后再上架。</div>
+    <div class="note">目前只保留这一本书。12章原文及已完成的中文翻译可通过本地书库文件一次导入，阅读数据不会上传到公开网站。</div>
     <div class="tabs"><button class="btn on" type="button">全部书籍 · 1</button><span class="pill">双语试读 · 1</span></div>
     <div class="bookGrid" id="bookGrid"></div>
   </section>
   <section id="readerPage" hidden>
     <div class="readerHero">
       <div class="cover"><small>🍜</small><strong>Seporsi Mie Ayam Sebelum Mati</strong></div>
-      <div><h1>Seporsi Mie Ayam Sebelum Mati</h1><p>Brian Khrisna · 成人现实小说</p><span class="pill" id="chapterTag">第1章 / 共12章</span></div>
+      <div><h1>Seporsi Mie Ayam Sebelum Mati</h1><p>Brian Khrisna · 成人现实小说</p><span class="pill" id="chapterTag">第1章 / 共12章</span><div class="readingStat"><div class="readerProgress" aria-label="已完成章节进度"><span id="readerProgressFill"></span></div><small id="readerProgressLabel">已读完 0/12 章</small></div></div>
     </div>
-    <div class="note" id="readingNote">公开页面仅显示短节选。完整第一章的印尼语原文与中文对照可以通过下方本地 JSON 文件导入，内容只保存在你自己的浏览器中，不上传到网站。</div>
+    <div class="note" id="readingNote">公开页面仅展示短节选。导入个人书库后可阅读全部12章，已完成的直译会自动显示。</div>
+    <div class="tools"><div class="readerControls"><label for="chapterSelect">选择章节</label><select id="chapterSelect" aria-label="选择章节"></select><button type="button" class="btn" id="prevChapter">← 上一章</button><button type="button" class="btn" id="nextChapter">下一章 →</button></div></div>
     <div class="tools">
       <div class="group" aria-label="阅读模式">
         <button type="button" class="btn on" data-mode="both">印中对照</button>
@@ -55,126 +90,307 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
         <button type="button" class="btn" data-mode="reveal">先读后译</button>
       </div>
       <div class="group">
-        <button id="favButton" class="btn" type="button">☆ 收藏</button>
+        <button class="btn" type="button" id="fontMinus" title="缩小阅读文字">A−</button><button class="btn" type="button" id="fontPlus" title="放大阅读文字">A＋</button><button class="btn" type="button" id="warmToggle">护眼背景</button><button id="favButton" class="btn" type="button">☆ 收藏</button>
         <button id="copyButton" class="btn" type="button">复制本章</button>
         <button id="doneButton" class="btn" type="button">标记读完</button>
       </div>
     </div>
     <div class="layout">
-      <article class="paper" aria-label="双语正文"><h2>第1章 · SCBD Parking Lot 17</h2><p class="source" id="readerStatus">真实原著短节选 · 个人完整章节可导入</p><div id="paragraphs"></div></article>
-      <aside class="side"><h3>🌱 本章词汇</h3><div id="wordList"></div><div id="wordDetail" class="vocabExtra" aria-live="polite">点击词汇查看词义。</div></aside>
+      <article class="paper" aria-label="双语正文"><h2 id="readerChapterTitle">第1章 · SCBD Parking Lot 17</h2><p class="source" id="readerStatus">真实原著短节选 · 个人完整章节可导入</p><div id="paragraphs"></div></article>
+      <aside class="side"><h3>🌱 阅读辅助</h3><div id="wordList"></div><div id="wordDetail" class="vocabExtra" aria-live="polite">点击词汇查看词义。</div></aside>
     </div>
     <div class="importBar">
-      <label for="fileInput"><strong>导入自己的第一章双语 JSON：</strong></label>
+      <div style="width:100%;display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        <button type="button" class="btn primary" id="translateChapter">翻译当前章（设备端初译）</button>
+        <button type="button" class="btn" id="translateAll">连续初译12章</button>
+        <button type="button" class="btn" id="cancelTranslate" hidden>停止翻译</button>
+        <button type="button" class="btn" id="exportBook">导出已翻译书库</button>
+      </div>
+      <div id="translateState" class="hint" aria-live="polite">Chrome 桌面浏览器支持时可在本机逐段翻译；机器初译未经人工校对，可逐段修改。首次使用可能需要下载语言包。先导入个人12章书库。</div>
+      <label for="fileInput"><strong>导入个人12章书库 JSON：</strong></label>
       <input type="file" id="fileInput" accept=".json,application/json">
       <button type="button" class="btn" id="clearButton">清除本地导入</button>
-      <div class="hint">文件只在此浏览器内读取并保存；刷新后保留。原文 TXT 暂不支持自动生成中文翻译。</div>
+      <div class="hint">支持「12章整本 JSON」和以前的「第一章 JSON」。仅保存在本浏览器中，<strong>不会上传原文</strong>。未翻译的段落保持原文，不生成虚假中文。</div>
       <div id="message" role="status" aria-live="polite"></div>
     </div>
-    <h3 style="margin:25px 0 0">章节目录</h3><div class="chapterList" id="chapterList"></div>
+    <h3 style="margin:25px 0 0">全部章节 · 12章</h3><div class="chapterList" id="chapterList"></div>
   </section>
 </main>
 <script>
+
 (function(){
 'use strict';
 const bookId='seporsi-mie-ayam-sebelum-mati';
-const chapters=['SCBD Parking Lot 17','Am I Living or Just Passing Time?','24 Jam Sebelum Mati','Seporsi Mie Ayam Sebelum Mati','Sekolah Parcok','Ale, Sang Sarung Beceng','Gurita Mami Louisse','Seloyang Kue Pandan Hijau','500 Perak Bolu Kukus','Bandring','Kerupuk Bangka Orang Buta','Seporsi Mie Ayam yang Terakhir'];
-const books=[
-  {title:'Seporsi Mie Ayam Sebelum Mati',author:'Brian Khrisna',desc:'12章 · 第1章双语阅读试用 · 其余章节尚未导入',icon:'🍜',cls:'',ready:true}
-];
+const titles=['SCBD Parking Lot 17','Am I Living or Just Passing Time?','24 Jam Sebelum Mati','Seporsi Mie Ayam Sebelum Mati','Sekolah Parcok','Ale, Sang Sarung Beceng','Gurita Mami Louisse','Seloyang Kue Pandan Hijau','500 Perak Bolu Kukus','Bandring','Kerupuk Bangka Orang Buta','Seporsi Mie Ayam yang Terakhir'];
 const sample=[
-  {idn:'Setelah semesta menghancurkan hidupmu berkali-kali meski kau sudah memohon dengan teramat sangat, rasa perih itu tak kunjung juga berhenti. Terkadang, tak percaya lagi pada kekuatan doa menjadi hal yang rasanya wajar sekali.',zh:'即使你一次又一次地苦苦祈求，命运仍不断摧毁你的生活，那种痛楚也始终没有停止。有时，连祈祷的力量都不再相信，似乎也是再正常不过的事。'},
-  {idn:'Seperti malam-malam lain, aku pulang selepas lembur. Orang-orang di kantor yang sudah menikah, mereka akan pulang ke keluarganya masing-masing. Sementara aku yang tidak punya siapa-siapa ini, sekarang masih duduk sendirian di parkiran mobil yang sudah lengang, bersama sebotol bir, rokok murah, dan sepotong kue ulang tahunku sendiri yang kubeli dari toko manisan dekat kantor.',zh:'像往常的夜晚一样，我加班后才回家。办公室里已婚的同事都各自回到家人身边。而一无所有、无人相伴的我，此刻还独自坐在逐渐空荡的停车场里，身边只有一瓶啤酒、廉价香烟，以及我从公司附近糖果店买给自己的生日蛋糕。'}
+{idn:'Setelah semesta menghancurkan hidupmu berkali-kali meski kau sudah memohon dengan teramat sangat, rasa perih itu tak kunjung juga berhenti. Terkadang, tak percaya lagi pada kekuatan doa menjadi hal yang rasanya wajar sekali.',zh:'即使你已经非常恳切地祈求，世界还是一次又一次地摧毁你的生活，那种痛苦也一直没有停止。有时候，不再相信祈祷的力量，也是一件很正常的事。'},
+{idn:'Seperti malam-malam lain, aku pulang selepas lembur. Orang-orang di kantor yang sudah menikah, mereka akan pulang ke keluarganya masing-masing. Sementara aku yang tidak punya siapa-siapa ini, sekarang masih duduk sendirian di parkiran mobil yang sudah lengang, bersama sebotol bir, rokok murah, dan sepotong kue ulang tahunku sendiri yang kubeli dari toko manisan dekat kantor.',zh:'和其他夜晚一样，我加完班回去。办公室里那些已经结婚的人，会各自回到自己的家人身边。而像我这样没有任何人陪伴的人，现在还独自坐在已经空荡的停车场里，身边有一瓶啤酒、便宜的香烟，还有一块我在办公室附近的甜品店给自己买的生日蛋糕。'}
 ];
 const vocab=[
-  ['lembur','加班','pulang selepas lembur：加班后回家'],
-  ['kesepian','孤独','sepi（冷清）→ kesepian（孤独）'],
-  ['sendirian','一个人、独自','sendiri（自己、独自）→ sendirian'],
-  ['lengang','空荡、冷清','parkiran yang sudah lengang：空荡的停车场'],
-  ['berkali-kali','一次又一次','重复的 kali 表示多次'],
-  ['tak kunjung','迟迟不、始终没有','tak kunjung berhenti：一直没有停止']
+ ['lembur','加班','pulang selepas lembur：加班后回家'],
+ ['kesepian','孤独','sepi（冷清）→ kesepian（孤独）'],
+ ['sendirian','独自一个人','sendiri（自己、单独）→ sendirian'],
+ ['lengang','空荡、冷清','parkiran yang sudah lengang：已经空荡的停车场'],
+ ['berkali-kali','一次又一次','kali 表示“次”，重复表多次'],
+ ['tak kunjung','迟迟没有、一直不','tak kunjung berhenti：一直没有停止']
 ];
-const storageKey='indo-books-private-chapter-v1';
-const doneKey='indo-books-chapter-done-v1',favKey='indo-books-fav-v1';
-let mode='both',chapter=null,done=false,fav=false;
+const legacyKey='indo-books-private-chapter-v1', allKey='indo-books-private-fullbook-v1';
+const doneKey='indo-books-chapter-done-v2', oldDoneKey='indo-books-chapter-done-v1';
+const favKey='indo-books-fav-v1',fontKey='indo-books-reader-font-v1',warmKey='indo-books-reader-warm-v1';
+let mode='both',active=1,whole=null,legacy=null,done={},fav=false,fontSize=19,warm=false,translationBusy=false,stopTranslation=false,translatorInstance=null;
 const $=id=>document.getElementById(id);
-function store(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(e){notice('浏览器无法保存本地数据，请检查隐私模式或存储空间。',true);return false;}}
+function store(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){msg('浏览器无法保存本地文件，请检查存储空间或隐私模式。',true);return false}}
 function read(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
-function notice(msg,error){const el=$('message');el.textContent=msg;el.classList.toggle('error',!!error);}
-function valid(doc){return !!(doc && doc.schema==='indo-bilingual-chapter-v1' && doc.bookId===bookId && doc.chapter===1 && Array.isArray(doc.paragraphs) && doc.paragraphs.length>0 && doc.paragraphs.length<250 && doc.paragraphs.every(p=>typeof p.idn==='string' && typeof p.zh==='string' && p.idn.length<10000 && p.zh.length<10000));}
-function cover(book){const el=document.createElement('div');el.className='cover '+book.cls;const symbol=document.createElement('small');symbol.textContent=book.icon;const title=document.createElement('strong');title.textContent=book.title;el.append(symbol,title);return el;}
+function msg(t,error){$('message').textContent=t;$('message').classList.toggle('error',!!error)}
+function safeParagraphs(arr){return Array.isArray(arr)&&arr.length<350&&arr.every(p=>p&&typeof p.idn==='string'&&p.idn.length>0&&p.idn.length<12000&&typeof p.zh==='string'&&p.zh.length<12000)}
+function validSingle(d){return !!(d&&d.schema==='indo-bilingual-chapter-v1'&&d.bookId===bookId&&d.chapter===1&&safeParagraphs(d.paragraphs))}
+function validBook(d){return !!(d&&d.schema==='indo-bilingual-book-v1'&&d.bookId===bookId&&Array.isArray(d.chapters)&&d.chapters.length===12&&d.chapters.every((c,i)=>c&&c.chapter===i+1&&typeof c.title==='string'&&safeParagraphs(c.paragraphs)))}
+function cover(){const el=document.createElement('div');el.className='cover';el.innerHTML='<small>🍜</small><strong>Seporsi Mie Ayam Sebelum Mati</strong>';return el}
 function shelf(){
-  const host=$('bookGrid');host.replaceChildren();
-  books.forEach(function(b,i){
-    const card=document.createElement('article');card.className='bookCard'+(b.ready?' ready':'');
-    const top=document.createElement('div');top.className='bookTop';top.appendChild(cover(b));
-    const info=document.createElement('div');const title=document.createElement('h2');title.className='bookTitle';title.textContent=b.title;
-    const by=document.createElement('p');by.className='byline';by.textContent='作者：'+b.author;info.append(title,by);top.appendChild(info);
-    const desc=document.createElement('p');desc.className='bookDesc';desc.textContent=b.desc;
-    const bottom=document.createElement('div');bottom.className='bookBottom';
-    const tag=document.createElement('span');tag.className='pill';tag.textContent=b.ready?'第1章可读':'未导入正文';
-    const a=document.createElement('a');a.className='btn';a.textContent=b.ready?'开始阅读':'查看原文来源';a.href=b.ready?'#chapter-1':b.url;
-    if(!b.ready){a.target='_blank';a.rel='noopener noreferrer';}
-    bottom.append(tag,a);card.append(top,desc,bottom);host.appendChild(card);
-  });
+ const host=$('bookGrid');host.replaceChildren();
+ const card=document.createElement('article');card.className='bookCard ready';
+ const top=document.createElement('div');top.className='bookTop';top.appendChild(cover());
+ const info=document.createElement('div'),title=document.createElement('h2');title.className='bookTitle';title.textContent='Seporsi Mie Ayam Sebelum Mati';
+ const by=document.createElement('p');by.className='byline';by.textContent='作者：Brian Khrisna';info.append(title,by);top.append(info);
+ const desc=document.createElement('p');desc.className='bookDesc';desc.textContent=whole?'12章原文已导入 · 第一章有直译，其余按文件翻译情况显示':'第一章短节选可读 · 12章原文可一次导入';
+ const bottom=document.createElement('div');bottom.className='bookBottom';
+ const status=document.createElement('span');status.className='pill';status.textContent=whole?'已导入12章':'第一章试读';
+ const link=document.createElement('a');link.href='#chapter-1';link.className='btn';link.textContent=whole?'继续阅读':'开始阅读';
+ bottom.append(status,link);card.append(top,desc,bottom);host.appendChild(card);
+}
+function dataFor(n){
+ if(whole) return whole.chapters[n-1];
+ if(n===1&&legacy) return {chapter:1,title:titles[0],paragraphs:legacy.paragraphs};
+ if(n===1) return {chapter:1,title:titles[0],paragraphs:sample,preview:true};
+ return null;
+}
+function summary(n){
+ const data=dataFor(n);
+ const total=data?data.paragraphs.length:0;
+ const translated=data?data.paragraphs.filter(x=>x.zh.trim().length>0).length:0;
+ return {total,translated,original:!!whole,preview:!!(data&&data.preview)};
 }
 function renderWords(){
-  const host=$('wordList');host.replaceChildren();vocab.forEach(function(w){
-    const b=document.createElement('button');b.className='word';b.type='button';
-    const name=document.createElement('b');name.textContent=w[0];const meaning=document.createElement('span');meaning.textContent=w[1];b.append(name,meaning);
-    b.addEventListener('click',()=>{$('wordDetail').textContent=w[2];});host.appendChild(b);
-  });
+ const host=$('wordList');host.replaceChildren();
+ if(active!==1){
+  const p=document.createElement('p');p.className='sub';p.textContent='当前章节暂无已校对词表。可以选中文本复制查词；之后再按章节完善解释。';host.append(p);
+  $('wordDetail').textContent='阅读时先理解上下文，不必每个生词都停下来。';return;
+ }
+ vocab.forEach(w=>{
+  const b=document.createElement('button');b.className='word';b.type='button';
+  const k=document.createElement('b');k.textContent=w[0];const zh=document.createElement('span');zh.textContent=w[1];b.append(k,zh);b.addEventListener('click',()=>{$('wordDetail').textContent=w[2]});host.append(b);
+ });
+ $('wordDetail').textContent='点击词汇查看词义、构词和用法。';
 }
 function speakText(text){
-  if(!('speechSynthesis' in window)){notice('浏览器没有朗读功能。',true);return;}
-  try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='id-ID';u.rate=.87;const voice=(speechSynthesis.getVoices()||[]).find(v=>/^id([-_]|$)/i.test(v.lang||''));if(voice)u.voice=voice;speechSynthesis.speak(u);}catch(e){notice('朗读启动失败，请检查浏览器语音设置。',true);}
+ if(!('speechSynthesis' in window)){msg('当前浏览器不支持朗读。',true);return;}
+ try{speechSynthesis.cancel();const ut=new SpeechSynthesisUtterance(text);ut.lang='id-ID';ut.rate=.88;const voice=(speechSynthesis.getVoices()||[]).find(v=>/^id([-_]|$)/i.test(v.lang||''));if(voice)ut.voice=voice;speechSynthesis.speak(ut);}catch(e){msg('朗读失败，请检查浏览器语音设置。',true)}
 }
 function renderParagraphs(){
-  const list=chapter?chapter.paragraphs:sample;
-  const host=$('paragraphs');host.replaceChildren();
-  list.forEach(function(p,i){
-    const div=document.createElement('section');div.className='para';
-    const id=document.createElement('p');id.className='idText';id.lang='id';id.textContent=p.idn;
-    const trans=document.createElement('p');trans.className='zhText';trans.textContent=p.zh;
-    const tools=document.createElement('div');tools.className='paraActions';
-    const audio=document.createElement('button');audio.className='tiny';audio.textContent='🔊 朗读本段';audio.type='button';audio.addEventListener('click',()=>speakText(p.idn));tools.appendChild(audio);
-    if(mode==='id')trans.hidden=true;
-    if(mode==='reveal'){trans.hidden=true;const toggle=document.createElement('button');toggle.className='tiny';toggle.type='button';toggle.textContent='显示中文';toggle.addEventListener('click',()=>{trans.hidden=!trans.hidden;toggle.textContent=trans.hidden?'显示中文':'隐藏中文';});tools.appendChild(toggle);}
-    div.append(id,trans,tools);host.appendChild(div);
-  });
-  $('readerStatus').textContent=chapter?'已导入第一章全文 · '+list.length+' 段 · 数据仅保存于此浏览器':'真实原著短节选（2段）· 导入个人文件后显示第一章全文';
-  $('readingNote').textContent=chapter?'当前为你在此浏览器中导入的第一章印中对照；本地导入不会上传到服务器，也不会进入公开 GitHub 仓库。':'公开页面仅显示开头短节选。要阅读完整第一章的印中对照，请在本页下方导入你自己的 JSON 文件（数据仅在当前浏览器保存）。';
+ const host=$('paragraphs');host.replaceChildren();
+ const data=dataFor(active),stats=summary(active);
+ $('readerChapterTitle').textContent='第'+active+'章 · '+titles[active-1];
+ $('chapterTag').textContent='第'+active+'章 / 共12章';
+ const status=$('readerStatus');
+ if(!data){
+  status.textContent='本章尚未导入正文';
+  const p=document.createElement('div');p.className='note';p.textContent='请在下面一次导入12章个人书库 JSON。原文和已完成的翻译都在你的浏览器中使用，不会上传网站。';host.append(p);return;
+ }
+ status.textContent=(stats.preview?'真实原著短节选（2段）':'本章原文 '+stats.total+' 段')+' · 已翻译 '+stats.translated+'/'+stats.total+' 段';
+ if(stats.translated<stats.total){
+  const hint=document.createElement('div');hint.className='note';
+  hint.textContent=stats.preview?'这是公开的前两段试读。导入个人书库可阅读12章。':'本章中文尚未全部翻译。没有中文的段落只显示印尼语原文，不会填入机器猜测的译文。';host.append(hint);
+ }
+ data.paragraphs.forEach((p,i)=>{
+  const section=document.createElement('section');section.className='para';
+  const id=document.createElement('p');id.className='idText';id.lang='id';id.textContent=p.idn;
+  const trans=document.createElement('p');trans.className='zhText';trans.lang='zh-CN';trans.textContent=p.zh;
+  const buttons=document.createElement('div');buttons.className='paraActions';
+  const speak=document.createElement('button');speak.className='tiny';speak.type='button';speak.textContent='🔊 朗读';speak.addEventListener('click',()=>speakText(p.idn));buttons.append(speak);
+  if(mode==='id'||!p.zh)trans.hidden=true;
+  if(p.zh&&p.machine&&mode!=='id'){
+    const mark=document.createElement('span');mark.className='machineNote';mark.textContent='机器初译';buttons.append(mark);
+  }
+  if(whole||legacy){
+    const edit=document.createElement('button');edit.className='tiny';edit.type='button';edit.textContent='修改中文';
+    edit.addEventListener('click',()=>{
+      const editor=document.createElement('textarea');editor.className='editBox';editor.value=p.zh||'';editor.setAttribute('aria-label','编辑第'+(i+1)+'段中文翻译');
+      const save=document.createElement('button');save.className='btn primary';save.type='button';save.textContent='保存译文';
+      const cancel=document.createElement('button');cancel.className='btn';cancel.type='button';cancel.textContent='取消';
+      const wrap=document.createElement('div');wrap.className='paraActions';wrap.append(save,cancel);
+      trans.hidden=true;section.append(editor,wrap);edit.disabled=true;editor.focus();
+      save.addEventListener('click',()=>{
+        p.zh=editor.value.trim();if(p.zh)p.machine=false;
+        if(whole)store(allKey,whole);else if(legacy)store(legacyKey,legacy);
+        renderParagraphs();renderChapters();msg('译文已保存在本浏览器；可导出整本书库备份。');
+      });
+      cancel.addEventListener('click',()=>{editor.remove();wrap.remove();edit.disabled=false;if(mode==='both'&&p.zh)trans.hidden=false});
+    });buttons.append(edit);
+  }
+  if(mode==='reveal'&&p.zh){
+   trans.hidden=true;const toggle=document.createElement('button');toggle.className='tiny';toggle.type='button';toggle.textContent='查看中文';toggle.addEventListener('click',()=>{trans.hidden=!trans.hidden;toggle.textContent=trans.hidden?'查看中文':'隐藏中文'});buttons.append(toggle);
+  }
+  section.append(id,trans,buttons);host.append(section);
+ });
 }
 function renderChapters(){
  const host=$('chapterList');host.replaceChildren();
- chapters.forEach(function(name,i){const b=document.createElement('button');b.type='button';b.className='chapterBtn'+(i===0?' current':'');b.textContent=String(i+1).padStart(2,'0')+' · '+name+(i===0?'（可读）':'（待导入）');b.disabled=i!==0;if(i===0)b.addEventListener('click',()=>{location.hash='chapter-1';window.scrollTo(0,0);});host.appendChild(b);});
+ const select=$('chapterSelect');select.replaceChildren();
+ titles.forEach((title,i)=>{
+  const n=i+1,stats=summary(n),label=String(n).padStart(2,'0')+' · '+title;
+  const option=document.createElement('option');option.value=String(n);option.textContent=label;select.append(option);
+  const b=document.createElement('button');b.type='button';b.className='chapterBtn'+(n===active?' current':'')+(done[n]?' completed':'');
+  const meta=stats.total?' · 中译 '+stats.translated+'/'+stats.total:' · 需导入';
+  b.textContent=label+meta;b.addEventListener('click',()=>{location.hash='chapter-'+n});host.append(b);
+ });
+ select.value=String(active);
+ $('prevChapter').disabled=active<=1;$('nextChapter').disabled=active>=12;
+ const count=Object.values(done).filter(Boolean).length;
+ $('readerProgressFill').style.width=(count/12*100)+'%';
+ $('readerProgressLabel').textContent='已读完 '+count+'/12 章';
 }
 function renderButtons(){
- document.querySelectorAll('[data-mode]').forEach(el=>{const selected=el.dataset.mode===mode;el.classList.toggle('on',selected);el.setAttribute('aria-pressed',String(selected));});
- $('doneButton').textContent=done?'✓ 已读完第1章':'标记读完';$('doneButton').classList.toggle('on',done);
+ document.querySelectorAll('[data-mode]').forEach(b=>{const on=b.dataset.mode===mode;b.classList.toggle('on',on);b.setAttribute('aria-pressed',String(on))});
+ $('doneButton').textContent=done[active]?'✓ 本章已读完':'标记本章读完';$('doneButton').classList.toggle('on',!!done[active]);
  $('favButton').textContent=fav?'★ 已收藏':'☆ 收藏';$('favButton').classList.toggle('on',fav);
+ $('warmToggle').classList.toggle('on',warm);
+ document.documentElement.style.setProperty('--reader-font',fontSize+'px');document.body.classList.toggle('readerWarm',warm);
 }
 function route(){
- const isReader=location.hash==='#chapter-1';$('readerPage').hidden=!isReader;$('shelfPage').hidden=isReader;$('where').hidden=!isReader;
- if(isReader){renderParagraphs();renderChapters();renderButtons();}window.scrollTo(0,0);
+ const match=(location.hash||'').match(/^#chapter-(1[0-2]|[1-9])$/);
+ const isReader=!!match;
+ if(match)active=Number(match[1]);
+ $('readerPage').hidden=!isReader;$('shelfPage').hidden=isReader;$('where').hidden=!isReader;
+ if(isReader){
+  const st=summary(active);
+  $('readingNote').textContent=whole?'个人12章原文已在本浏览器导入。第'+active+'章中译 '+st.translated+'/'+st.total+' 段；中文遵循原文含义与语序，未翻译的段落保留空白。': '当前网站只公开短节选。请在阅读页下方导入自己持有的整本书库 JSON，之后可切换阅读12章。';
+  renderWords();renderParagraphs();renderChapters();renderButtons();
+ }
+ window.scrollTo(0,0);
 }
-document.querySelectorAll('[data-mode]').forEach(el=>el.addEventListener('click',()=>{mode=el.dataset.mode;renderButtons();renderParagraphs();}));
-$('fileInput').addEventListener('change',async function(){
+
+function setTranslationState(t){$('translateState').textContent=t}
+function savePrivateBook(){if(whole)return store(allKey,whole);return false}
+function checkTranslator(){
+ if(!('Translator' in self)||typeof Translator.availability!=='function'||typeof Translator.create!=='function'){
+   setTranslationState('当前浏览器没有设备端翻译接口。请使用支持该功能的新版 Chrome 桌面浏览器；不会自动改用上传文本到云端的翻译服务。');return false;
+ }
+ return true;
+}
+async function getTranslator(){
+ if(translatorInstance)return translatorInstance;
+ if(!checkTranslator())throw Error('当前浏览器暂不支持设备端翻译');
+ const opts={sourceLanguage:'id',targetLanguage:'zh'};
+ const availability=await Translator.availability(opts);
+ if(availability==='unavailable')throw Error('当前设备尚不支持印尼语→中文语言包');
+ setTranslationState('正在准备印尼语→中文语言包；首次使用可能需要下载安装。');
+ translatorInstance=await Translator.create({
+  ...opts,
+  monitor(m){m.addEventListener('downloadprogress',e=>setTranslationState('正在下载本机语言包 '+Math.round(e.loaded*100)+'%'))}
+ });
+ return translatorInstance;
+}
+async function translateChapter(n,translator){
+ const chapter=whole.chapters[n-1],parts=chapter.paragraphs;
+ let count=0;
+ for(let i=0;i<parts.length;i++){
+  if(stopTranslation)break;
+  const p=parts[i];if(p.zh.trim())continue;
+  try{
+   const zh=await translator.translate(p.idn);
+   if(typeof zh!=='string'||!zh.trim())throw Error('译文为空');
+   p.zh=zh.trim();p.machine=true;count++;
+   if(count%5===0)savePrivateBook();
+   setTranslationState('正在初译第'+n+'章：'+(i+1)+'/'+parts.length+' 段（已完成 '+count+' 段）');
+   if(active===n && (i%5===0 || i===parts.length-1)){
+      renderParagraphs();renderChapters();
+   }
+  }catch(e){
+   setTranslationState('第'+n+'章第'+(i+1)+'段翻译出错：'+e.message+'；已完成部分会保留。');
+   savePrivateBook();
+   throw e;
+  }
+ }
+ savePrivateBook();
+ return count;
+}
+async function runTranslate(all){
+ if(translationBusy)return;
+ if(!whole){setTranslationState('先导入12章原文书库 JSON，再开始设备端翻译。');return}
+ // User click triggers language-pack download; never send the novel to a remote endpoint.
+ translationBusy=true;stopTranslation=false;
+ $('translateChapter').disabled=true;$('translateAll').disabled=true;$('cancelTranslate').hidden=false;
+ const first=active,total=all?12:active;
+ try{
+  const translator=await getTranslator();
+  let newly=0;
+  for(let n=first;n<=total;n++){
+   if(stopTranslation)break;
+   newly+=await translateChapter(n,translator);
+  }
+  renderChapters();renderParagraphs();renderButtons();shelf();
+  setTranslationState((stopTranslation?'已停止。':'本次初译完成。')+'新增 '+newly+' 段机器初译。已保存于当前浏览器；建议逐段核对，完成后点击「导出已翻译书库」备份。');
+ }catch(e){
+  setTranslationState('翻译未能全部完成：'+e.message+'。已成功翻译的段落会保留。可再次点击继续。');
+ }finally{
+  translationBusy=false;$('translateChapter').disabled=false;$('translateAll').disabled=false;$('cancelTranslate').hidden=true;
+ }
+}
+function exportBook(){
+ if(!whole){setTranslationState('目前未导入完整书库，无法导出。');return}
+ const text=JSON.stringify(whole,null,1),blob=new Blob([text],{type:'application/json;charset=utf-8'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='Seporsi_Mie_Ayam_12章_个人双语书库.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);
+ setTranslationState('个人书库 JSON 已导出到浏览器下载目录。请妥善保管；不要上传到公开 GitHub 仓库。');
+}
+function installInputs(){
+ $('translateChapter').addEventListener('click',()=>runTranslate(false));
+ $('translateAll').addEventListener('click',()=>{active=1;location.hash='chapter-1';runTranslate(true)});
+ $('cancelTranslate').addEventListener('click',()=>{stopTranslation=true;setTranslationState('已请求停止；会在当前段翻译完成后停下。')});
+ $('exportBook').addEventListener('click',exportBook);
+ $('chapterSelect').addEventListener('change',e=>{location.hash='chapter-'+e.target.value});
+ $('prevChapter').addEventListener('click',()=>{if(active>1)location.hash='chapter-'+(active-1)});
+ $('nextChapter').addEventListener('click',()=>{if(active<12)location.hash='chapter-'+(active+1)});
+ document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;renderButtons();renderParagraphs()}));
+ $('fileInput').addEventListener('change',async function(){
   const file=this.files&&this.files[0];if(!file)return;
-  if(file.size>2*1024*1024){notice('导入文件过大（最多 2 MB）。',true);return;}
-  try{const doc=JSON.parse(await file.text());if(!valid(doc))throw Error('格式不符合第一章双语 JSON 规范。');chapter=doc;if(store(storageKey,doc)){notice('第一章已导入：'+doc.paragraphs.length+' 段，含中文翻译。');renderParagraphs();}}catch(e){notice('导入失败：'+e.message,true);}finally{this.value='';}
-});
-$('clearButton').addEventListener('click',function(){chapter=null;try{localStorage.removeItem(storageKey);}catch(e){}renderParagraphs();notice('已清除本浏览器的导入正文。');});
-$('copyButton').addEventListener('click',async function(){
- const text=(chapter?chapter.paragraphs:sample).map(p=>p.idn+'\n'+(mode==='id'?'':p.zh)).join('\n\n');
- try{await navigator.clipboard.writeText('SCBD Parking Lot 17\n\n'+text);notice('已复制当前显示的本章内容。');}catch(e){notice('复制失败：浏览器可能要求 HTTPS 或复制权限。',true);}
-});
-$('doneButton').addEventListener('click',function(){done=!done;store(doneKey,done);renderButtons();});
-$('favButton').addEventListener('click',function(){fav=!fav;store(favKey,fav);renderButtons();});
-window.addEventListener('hashchange',route);
-const saved=read(storageKey);if(valid(saved))chapter=saved;done=read(doneKey)===true;fav=read(favKey)===true;
-shelf();renderWords();route();
+  if(file.size>3*1024*1024){msg('文件不能大于3MB。',true);return}
+  try{
+   const doc=JSON.parse(await file.text());
+   if(validBook(doc)){
+    if(!store(allKey,doc))return;
+    whole=doc;legacy=null;active=1;msg('整本12章原文导入成功，已完成的中文翻译会在对应段落显示。');
+   }else if(validSingle(doc)){
+    if(!store(legacyKey,doc))return;
+    legacy=doc;msg('第一章译文导入成功；如要切换全部12章，请导入整本书库 JSON。');
+   }else{throw Error('文件格式不符合本站的12章或第一章 JSON规范');}
+   shelf();renderChapters();renderParagraphs();route();
+  }catch(e){msg('导入失败：'+e.message,true)}finally{this.value=''}
+ });
+ $('clearButton').addEventListener('click',()=>{
+  whole=null;legacy=null;
+  try{localStorage.removeItem(allKey);localStorage.removeItem(legacyKey)}catch(e){}
+  shelf();renderChapters();renderParagraphs();route();msg('本浏览器已清除导入的私人原文和译文。');
+ });
+ $('copyButton').addEventListener('click',async()=>{
+  const data=dataFor(active);if(!data){msg('本章没有可复制内容，请先导入。',true);return}
+  const text=data.paragraphs.map(p=>p.idn+(mode==='id'||!p.zh?'':'\n'+p.zh)).join('\n\n');
+  try{await navigator.clipboard.writeText('第'+active+'章 · '+titles[active-1]+'\n\n'+text);msg('已复制本章当前语言模式的文字。')}catch(e){msg('复制失败：请允许浏览器的剪贴板权限。',true)}
+ });
+ $('doneButton').addEventListener('click',()=>{done[active]=!done[active];store(doneKey,done);renderChapters();renderButtons()});
+ $('favButton').addEventListener('click',()=>{fav=!fav;store(favKey,fav);renderButtons()});
+ $('fontMinus').addEventListener('click',()=>{fontSize=Math.max(15,fontSize-1);store(fontKey,fontSize);renderButtons()});
+ $('fontPlus').addEventListener('click',()=>{fontSize=Math.min(25,fontSize+1);store(fontKey,fontSize);renderButtons()});
+ $('warmToggle').addEventListener('click',()=>{warm=!warm;store(warmKey,warm);renderButtons()});
+}
+const saved=read(allKey);if(validBook(saved))whole=saved;
+const old=read(legacyKey);if(validSingle(old))legacy=old;
+const progress=read(doneKey);done=progress&&typeof progress==='object'&&!Array.isArray(progress)?progress:{};
+if(read(oldDoneKey)===true&&!Object.hasOwn(done,1))done[1]=true;
+fav=read(favKey)===true;const f=read(fontKey);if(Number.isInteger(f)&&f>=15&&f<=25)fontSize=f;warm=read(warmKey)===true;
+installInputs();shelf();route();window.addEventListener('hashchange',route);
 })();
+
 </script>
 </body>
 </html>
