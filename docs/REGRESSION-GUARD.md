@@ -81,8 +81,9 @@
 3. 词根家族
 4. 弱项强化
 5. 难点解释
+6. 双语书籍
 
-五张工具卡同宽同高。桌面端五列，中等屏三列，手机端两列，窄屏一列。`daily-width-fix.css` 的首屏样式与 `home-modules-layout.js` 的 DOM 顺序必须保持一致；不得在加载后重新排卡。
+2026-11-18 新增第六张「双语书籍」，可见顺序为：泛读、词汇学习、词根家族、弱项强化、难点解释、双语书籍。六张工具卡同宽同高。桌面端六列，中等屏三列，手机端两列，窄屏一列。`daily-width-fix.css` 的首屏样式与 `home-modules-layout.js` 的 DOM 顺序必须保持一致；不得在加载后重新排卡。
 
 ### G. 改时间牵连布局/逻辑
 发生过：用户只要求 19→18，却通过运行后 DOM patch 带来卡顿、闪烁和卡片变化。
@@ -775,3 +776,10 @@
 - **“至少一题考复习词”**：开关开启时，`target` 在 `review_vocab` 里的 zh2id 题也算（校验器 `AM_REVIEW_QUIZ_MISSING`，守卫“最近 / 最新早课”两处检查用 `AZH(d)` 按日期套用——按 §53 的教训一起改）。其他日期的检查不变。
 - **页面**（`history-v2.js` 的 `zhQuizHtml`）：先显示中文和提示，点「看选项」才出现选项；答完显示考点和 🔊。答错时 `rcSignal` 对 `target` 记一次课程错词（同一课同一个词最多一次，存 `indo_recall_first_v1` 的 `sig`，来源“课程小测”），不改掌握；答对不记录。没有 `kind` 的小测题显示和以前完全一样。
 - **守卫**：`review-phase.json` 的 `am_zh2id.from` 为 2026-11-18；校验器含三个校验码；`history-v2.js` 含 `function zhQuizHtml` 和 `window.zqAfter`，且 `quizHtml` 遇到 `kind==='zh2id'` 才走新渲染。
+
+## 2026-11-18：双语书籍（新增模块）
+
+- 「其他学习工具」新增第 6 张「双语书籍」，静态首屏布局仍由 `data/daily-width-fix.css` 负责，JS 顺序与其一致，不影响原有五张工具卡与训练快捷入口。
+- 新书架入口是 `books/index.html`；桌面端每行 4 本，中屏 2 本，手机 1 本，只有已经导入内容的书才可标为可读。
+- 《Seporsi Mie Ayam Sebelum Mati》是受版权保护的现代小说。公开页面只展示开头短节选，不能把用户的完整 PDF、全章或全书作为 GitHub Pages 公共静态资源。完整版第一章的双语 JSON 由用户在浏览器本地选择导入（只保存于 localStorage），不上传到服务器。
+- 不修改 AM/PM 课程、泛读、词库和弱项同步逻辑。
