@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-18T08:09:02.632Z",
+  "updated_at": "2026-11-18T13:58:31.064Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2859,8 +2859,11 @@
     "positif": {
       "word": "positif",
       "status": "active",
-      "updated_at": "2026-11-10T15:10:28.989Z",
+      "updated_at": "2026-11-18T13:54:48.507Z",
       "display": "positif",
+      "cn": "积极的；正面的；（检测）阳性",
+      "root": "positif",
+      "root_cn": "积极的；阳性的",
       "last_review": "2026-11-10T15:10:28.937Z",
       "reasons": [
         "memory_fuzzy"
@@ -6053,8 +6056,11 @@
     "mengalir": {
       "word": "mengalir",
       "status": "active",
-      "updated_at": "2026-10-23T23:27:18.717Z",
+      "updated_at": "2026-11-18T13:56:59.845Z",
       "display": "mengalir",
+      "cn": "流动",
+      "root": "alir",
+      "root_cn": "流；流动",
       "last_review": "2026-10-23T23:27:18.650Z",
       "reasons": [
         "memory_dont"
@@ -20448,18 +20454,22 @@
     "berantakan": {
       "word": "berantakan",
       "status": "active",
-      "updated_at": "2026-11-13T02:32:01.384Z",
+      "updated_at": "2026-11-18T13:52:39.822Z",
       "display": "berantakan",
-      "cn": "乱七八糟",
+      "cn": "乱七八糟；凌乱；（计划）全乱了",
       "root": "berantak",
       "root_cn": "乱；散乱",
-      "last_wrong": "2026-09-30T14:06:45.377Z",
-      "last_review": "2026-11-13T02:32:01.319Z",
+      "last_wrong": "2026-11-18T13:52:39.732Z",
+      "last_review": "2026-11-18T13:52:39.732Z",
+      "source": "课程回想",
+      "source_date": "2026-11-18",
+      "session": "18:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
-      "right_streak": 4
+      "wrong_count": 2,
+      "right_streak": 0
     },
     "perbaiki": {
       "word": "perbaiki",
@@ -31244,9 +31254,9 @@
     "peserta": {
       "word": "peserta",
       "status": "active",
-      "updated_at": "2026-11-18T02:04:11.090Z",
+      "updated_at": "2026-11-18T13:54:11.943Z",
       "display": "peserta",
-      "cn": "参与者",
+      "cn": "参与者；参加活动的人",
       "root": "serta",
       "root_cn": "共同；参与",
       "last_wrong": "2026-11-18T02:04:10.991Z",
@@ -32731,6 +32741,21 @@
       "source": "每日学习阅读",
       "source_date": "2026-11-18",
       "session": "08:00",
+      "reasons": [
+        "manual_unknown"
+      ],
+      "wrong_count": 0,
+      "right_streak": 0
+    },
+    "hancur": {
+      "word": "hancur",
+      "status": "active",
+      "updated_at": "2026-11-18T13:58:20.134Z",
+      "display": "hancur",
+      "cn": "被摧毁",
+      "source": "每日学习阅读",
+      "source_date": "2026-11-18",
+      "session": "19:00",
       "reasons": [
         "manual_unknown"
       ],
