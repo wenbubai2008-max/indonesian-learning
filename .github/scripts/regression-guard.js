@@ -866,6 +866,19 @@ try {
     need('AM',doc('docs/tasks/AM-LESSON.md'),['lesson_focus','2026-10-18 晚课起每节必填','逐字取自本课','LESSON_FOCUS_PATTERN','标题双语','印尼语标题 · 中文标题','review_cards','AM_REVIEW_CARDS_INVALID','删掉整个 review_cards','docs/tasks/COMMON.md','lesson-release-D-am','data/daily/D-am.json','AUTO_PUBLISH_LESSON=1','rank-review-candidates.js --date D --session am','validate-lesson-candidate.js','plan-lesson-publication.js','regression-guard.js','check-collocations.js','docs/LESSON-QUALITY.md','docs/LESSON-JSON-SCHEMA.md','docs/LESSON-RECOVERY.md','dont-first','恰好 10 张','review_vocab','cycle_vocab','exposure_ledger','natural_recurrence','check-recurrence.js --candidate data/daily/D-am.json','至少 10 个','review_groups','RELEASE_PREFLIGHT','LESSON_RELEASE_PUBLISHED','VERIFIED_COMPLETE','全课跨句逻辑检查']);
     need('PM',doc('docs/tasks/PM-LESSON.md'),['lesson_focus','2026-10-18 晚课起每节必填','逐字取自本课','LESSON_FOCUS_PATTERN','标题双语','印尼语标题 · 中文标题','docs/tasks/COMMON.md','lesson-release-YYYY-MM-DD-pm','data/daily/D-pm.json','AUTO_PUBLISH_LESSON=1','rank-review-candidates.js --date YYYY-MM-DD --session pm','validate-lesson-candidate.js','plan-lesson-publication.js','regression-guard.js','check-collocations.js','docs/LESSON-QUALITY.md','docs/LESSON-JSON-SCHEMA.md','docs/LESSON-RECOVERY.md','10–12','3 道 choice + 2 道 fill + 1 道 order','self_check','review.steps','今天08:00新学','今天08:00复习过的老词','exposure_ledger','natural_recurrence','check-recurrence.js --candidate data/daily/D-pm.json','至少 15 个','review_groups','RELEASE_PREFLIGHT','LESSON_RELEASE_PUBLISHED','VERIFIED_COMPLETE','全课跨句逻辑检查']);
     need('EXTENSIVE-READING',doc('docs/tasks/EXTENSIVE-READING.md'),['docs/tasks/COMMON.md','extensive-reading-D','data/extensive-reading-candidate.json','AUTO_PUBLISH_EXTENSIVE_READING=1','reading-review.js --date D','publish-extensive-reading-candidate.js check','regression-guard.js','check-collocations.js','160–220','0–3 天','12–16','至少 4 个 tier=focus','term 必须逐字出现','不得生成第二篇']);
+    // 2026-11-18: the next extensive-reading task must consider genuinely varied news topics.
+    // Editorial diversity is a generator-side instruction, not a runtime writer or a rigid validator.
+    const er=(rules.review_rotation&&rules.review_rotation.extensive_reading_recurrence)||{};
+    const topics=er.topic_selection||{},readingDoc=doc('docs/tasks/EXTENSIVE-READING.md');
+    const requiredGenres=['娱乐与人物','经济与商业','社会热点','科技与互联网','体育与赛事','趣闻与奇事'];
+    taskOk(topics.enabled===true&&topics.effective_date==='2026-11-19'&&
+      topics.shortlist_min>=4&&topics.shortlist_max>=topics.shortlist_min&&
+      topics.min_shortlist_main_categories>=3&&
+      topics.avoid_same_main_category_last_articles>=3&&
+      requiredGenres.every(x=>(topics.broad_categories||[]).includes(x)&&readingDoc.includes(x))&&
+      readingDoc.includes('最近 3 篇')&&readingDoc.includes('严肃新闻也可以写')&&
+      readingDoc.includes('0–3 天')&&readingDoc.includes('12–16'),
+      'extensive reading rotates verified entertainment/economy/society/technology/sports/human-interest news without weakening source freshness or vocabulary coverage');
     // 2026-10-15: the natural-recurrence minimum is a generator-side gate; it must not be loosened silently.
     const nrc=(rules.review_rotation&&rules.review_rotation.natural_recurrence)||{};
     taskOk(Number(nrc.min_per_lesson&&nrc.min_per_lesson.am)>=10&&Number(nrc.min_per_lesson&&nrc.min_per_lesson.pm)>=15&&Number(nrc.list_size)>=30&&fs.existsSync(rel('.github/scripts/check-recurrence.js')),
