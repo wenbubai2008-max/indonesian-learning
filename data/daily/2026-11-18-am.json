@@ -1,0 +1,300 @@
+{
+  "date": "2026-11-18",
+  "session": "am",
+  "time": "08:00",
+  "day": 89,
+  "title": "08:00 早课｜Label yang Tertukar · 贴错的标签",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "core"
+  },
+  "story": {
+    "series": "Toko Keripik Bu Narti · 纳尔蒂阿姨的薯片网店",
+    "episode": 2,
+    "previously_cn": "上集：沃兰小姐半夜要求改收货地址，拉卡没理消息，快递员约斯师傅只好掉头送到新地址。包裹送到了，打开却是香蕉片。",
+    "next_cn": "下集：特辣木薯片辣得培训学员直喝水，黛薇女士是要退款，还是另有打算？"
+  },
+  "vocab": [
+    {
+      "word": "nggak kepegang",
+      "display": "nggak kepegang",
+      "audio_text": "nggak kepegang",
+      "cn": "顾不过来；管不过来（口语）",
+      "en": "too much to handle; can't keep on top of (colloquial)",
+      "root": "pegang",
+      "root_cn": "拿；握；掌握",
+      "formation": "nggak（= tidak）+ kepegang。pegang 是“拿、握、掌握”；口语里 ke- 加动词词根常表示“能被……到 / 不由自主被……”（kepegang ≈ terpegang，能被抓住、顾到）。nggak kepegang 字面是“抓不住”，实际多说事情、消息、订单多到“顾不过来”。常见搭配：kerjaan nggak kepegang（工作顾不过来）、chat pembeli nggak kepegang（买家消息回不过来）、sampai nggak kepegang（多到顾不过来）。",
+      "example": "Harusnya kita tambah satu admin; pas promo tengah malam, chat pembeli sampai nggak kepegang.",
+      "example_cn": "本来我们应该再加一个客服；半夜促销的时候，买家的消息多到根本顾不过来。（harusnya = seharusnya，pas = saat，nggak = tidak）",
+      "synonym_note": "nggak kepegang 的主语多是事情（kerjaan、chat、pesanan），说“这些事顾不过来”；keteteran 的主语多是人（aku keteteran），说“人跟不上、忙不过来”。描述同一阵忙乱时，两个词常一起出现。本身就是口语；正式场合说 tidak tertangani（没能处理）或 kewalahan（应付不过来），写道歉邮件、报告时用。",
+      "usage_note": "复习词：先遮住中文回想意思，再看今天拉卡为什么把标签贴错。",
+      "is_oral_new": false
+    },
+    {
+      "word": "keteteran",
+      "display": "keteteran",
+      "audio_text": "keteteran",
+      "cn": "忙不过来；跟不上（口语）",
+      "en": "overwhelmed; falling behind (colloquial)",
+      "root": "keteteran",
+      "root_cn": "忙不过来；跟不上（整词记忆）",
+      "formation": "口语整词，不必硬拆词根。形式上和 ke-…-an 一类“陷入某种状态”的词相似（同类：kelabakan 手忙脚乱、kewalahan 招架不住）。常见搭配：mulai keteteran（开始应付不来）、keteteran ngurusin pesanan（忙不过来处理订单）、jadi keteteran / nanti keteteran（结果会忙不过来）。",
+      "example": "Kalau semua pesanan kamu bungkus sendiri, nanti kamu keteteran; minta tolong sepupumu, ya.",
+      "example_cn": "如果所有订单都你一个人包，到时候会忙不过来；叫你表弟表妹来帮忙吧。",
+      "synonym_note": "keteteran 说人跟不上节奏、事情越堆越多；kelabakan 更强调事情突然来、一下子慌了手脚（Tamunya datang mendadak, aku kelabakan）；kewalahan 偏“招架不住”，口语书面都能用。和 nggak kepegang 的区别见上一张卡。本身就是口语；正式场合说 kewalahan。",
+      "usage_note": "复习词：和上一张 nggak kepegang 一起记，注意谁做主语。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pembangunan",
+      "display": "pembangunan",
+      "audio_text": "pembangunan",
+      "cn": "建设；修建（的过程）",
+      "en": "construction; development",
+      "root": "bangun",
+      "root_cn": "建；起；醒",
+      "formation": "peN- + bangun + -an → pembangunan（b 前 peN- 变 pem-，b 保留）。来自动词 membangun（建造）。同词根：bangunan（建筑物）、dibangun（被建造）。常见搭配：pembangunan gudang / jalan（修仓库、修路）、proyek pembangunan（建设项目）、masih dalam pembangunan（还在施工中）。",
+      "example": "Penyebab utama label tertukar adalah pembangunan gudang: semua kardus jadi ditumpuk di satu ruangan.",
+      "example_cn": "标签贴错的主要原因是仓库在施工：所有箱子都只能堆在一个房间里。",
+      "synonym_note": "pembangunan 指“建的过程、工程”；bangunan 指建好的“建筑物”（Bangunannya sudah jadi）。说经济、地区的“发展”也用 pembangunan（pembangunan daerah）。",
+      "everyday": "日常多直接说 lagi dibangun（Gudangnya lagi dibangun）；pembangunan 偏书面，新闻、公告、工地牌子上常见",
+      "usage_note": "复习词：先回想意思，再看今天仓库施工惹出的连锁麻烦。",
+      "is_oral_new": false
+    },
+    {
+      "word": "peserta",
+      "display": "peserta",
+      "audio_text": "peserta",
+      "cn": "参加者；学员；参赛者",
+      "en": "participant",
+      "root": "serta",
+      "root_cn": "一起；参与",
+      "formation": "peserta 是固定名词，和 serta（一起）、ikut serta（参加）同一来源，不按规则硬拆。常见搭配：peserta pelatihan（培训学员）、peserta lomba（参赛者）、daftar peserta（参加人员名单）、jumlah peserta（参加人数）。",
+      "example": "Panitia minta keripiknya dibungkus kecil-kecil, soalnya ada peserta yang alergi kacang.",
+      "example_cn": "主办方要求薯片分成小包装，因为有学员对花生过敏。",
+      "synonym_note": "peserta 是活动、培训、比赛的“参加者”；penonton 是“观众”，tamu 是“客人”，anggota 是组织的“成员”。培训里的“学员”也常说 peserta pelatihan。",
+      "usage_note": "复习词：先回想意思，再看今天培训学员收到了什么。",
+      "is_oral_new": false
+    },
+    {
+      "word": "seenggaknya",
+      "display": "seenggaknya",
+      "audio_text": "seenggaknya",
+      "cn": "至少；起码；好在（口语）",
+      "en": "at least (colloquial)",
+      "root": "enggak",
+      "root_cn": "不；不是",
+      "formation": "se- + enggak + -nya → seenggaknya，是 setidaknya（se- + tidak + -nya）的口语形式，意思一样。常放句首或动词前：Seenggaknya kabari dulu（至少先说一声）、seenggaknya dua hari（至少两天）。也能表示“好在、起码还……”：Seenggaknya mejanya nggak kosong。",
+      "example": "Kalau paketnya telat, seenggaknya kabari pembeli dulu, biar masalahnya nggak ngerembet ke mana-mana.",
+      "example_cn": "如果包裹晚了，至少先通知买家一声，免得问题牵连到别处去。（biar = agar，nggak = tidak）",
+      "synonym_note": "seenggaknya、setidaknya、paling tidak 都是“至少”。seenggaknya 用在聊天里；setidaknya 用在书面、正式回复里；paling tidak 口语书面都常说。正式场合用 setidaknya。",
+      "usage_note": "复习词：先回想意思，再看今天顾客怎么用它打圆场。",
+      "is_oral_new": false
+    },
+    {
+      "word": "serba salah",
+      "display": "serba salah",
+      "audio_text": "serba salah",
+      "cn": "左右为难；怎么做都不对",
+      "en": "in a no-win situation; damned if you do, damned if you don't",
+      "root": "salah",
+      "root_cn": "错；不对",
+      "formation": "serba（样样、各方面都）+ salah（错）→ 怎么做都像是错的。serba 的其他常见说法：serba ada（样样都有）、serba cepat（什么都快）。常见用法：jadi serba salah（变得左右为难）、Serba salah, deh.（真难办啊）。",
+      "example": "Mau tolak pesanan, takut pelanggan kecewa; mau terima, takut nggak keburu. Serba salah, deh.",
+      "example_cn": "想拒单，怕顾客失望；想接，又怕来不及。真是左右为难。（tolak = menolak，nggak = tidak，keburu = sempat）",
+      "synonym_note": "serba salah 说的是处境：两边都不好选；salah tingkah 说的是人紧张尴尬、手足无措的样子（Ditanya soal itu, dia jadi salah tingkah）。serba salah 口语书面都能用；正式一点也可说 berada dalam posisi sulit。",
+      "usage_note": "复习词：先回想意思，再和今天的复习词 salah tingkah 对比。",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "nggak kepegang",
+    "keteteran",
+    "pembangunan",
+    "peserta",
+    "seenggaknya",
+    "serba salah"
+  ],
+  "review_vocab": [
+    "tepat waktu",
+    "pengaturan",
+    "sesudah",
+    "salah tingkah",
+    "agar"
+  ],
+  "sentences": [
+    {
+      "text": "Sesudah semua kardus dilabeli, cek sekali lagi agar tidak ada yang tertukar.",
+      "cn": "所有箱子贴好标签以后，再检查一遍，以免有装错的。"
+    },
+    {
+      "text": "Coba buka pengaturan notifikasi, biar HP-mu bergetar setiap ada pesanan masuk.",
+      "cn": "打开通知设置看看，这样每次有订单进来手机都会震动。（biar = agar）"
+    },
+    {
+      "text": "Ditanya pembeli soal label yang ketuker, Raka malah salah tingkah. Bingung mau ngomong apa.",
+      "cn": "被买家问到贴错标签的事，拉卡反而紧张得不知所措，不知道该说什么。（ketuker = tertukar，ngomong = berbicara）"
+    },
+    {
+      "text": "Kesalahan ini tanggung jawab kita, jadi ongkir kirim ulangnya kita yang bayar.",
+      "cn": "这个错误是我们的责任，所以重新发货的运费由我们出。"
+    },
+    {
+      "text": "Tenang aja, kesalahan kayak gini nggak bikin kinerjamu jelek, kok.",
+      "cn": "别担心，这种错不会让你的工作表现变差的啦。（aja = saja，kayak gini = seperti ini，nggak = tidak，bikin = membuat）"
+    }
+  ],
+  "reading": {
+    "title": "Label yang Tertukar · 贴错的标签",
+    "text": "Begitu membaca pesan Mbak Wulan, Raka langsung membuka daftar pesanan. Ternyata pagi itu ada dua pesanan 50 bungkus: keripik singkong pedas untuk Mbak Wulan dan keripik pisang untuk Bu Dewi, panitia pelatihan di kantor kecamatan. Sejak minggu lalu ada pembangunan gudang baru di belakang rumah, jadi semua kardus ditumpuk di ruang tamu. Kardus keripik singkong maupun keripik pisang sama-sama cokelat polos. Pesanan masuk terus, dan Raka mulai keteteran. Waktu menempel label, dia tidak sadar labelnya tertukar. \"Maaf, Tante, tadi pagi pesanannya benar-benar nggak kepegang,\" katanya kepada Bu Narti. Raka serba salah: kalau jujur, pelanggan bisa marah; kalau diam, masalahnya bisa makin besar. Akhirnya dia menelepon Mbak Wulan dan minta maaf. Mbak Wulan malah tertawa. \"Tenang, Mas. Tamu-tamu saya suka keripik pisang. Seenggaknya meja tamu nggak kosong.\" Raka lega. Tapi sepuluh menit kemudian, HP-nya bergetar lagi. Bu Dewi menulis: \"Mas, kenapa keripiknya pedas sekali? Peserta pelatihan sampai minta air terus!\"",
+    "cn": "一看到沃兰小姐的消息，拉卡马上打开订单清单。原来那天早上有两笔 50 包的订单：给沃兰小姐的辣味木薯片，和给黛薇女士的香蕉片——她是区公所培训班的主办人。从上周起，屋后在盖新仓库，所以所有箱子都堆在客厅里。木薯片和香蕉片的箱子都是一样的素色牛皮纸箱。订单一直进来，拉卡开始忙不过来。贴标签的时候，他没发现标签贴反了。“对不起，姑姑，今天早上订单真的多到顾不过来。”他对纳尔蒂阿姨说。拉卡左右为难：说实话，顾客可能会生气；不说，问题可能会越闹越大。最后他还是给沃兰小姐打电话道歉。没想到沃兰小姐笑了。“别担心，小哥。我的客人们都爱吃香蕉片。起码客人的桌上没空着。”拉卡松了口气。可十分钟后，他的手机又震了。黛薇女士写道：“小哥，薯片怎么这么辣？培训学员一直在要水喝！”"
+  },
+  "quiz": [
+    {
+      "question": "Menurut cerita hari ini, kenapa label paket Mbak Wulan dan Bu Dewi bisa tertukar?",
+      "options": [
+        "Pak Yos salah mengambil kardus dari gudang baru.",
+        "Bu Narti lupa mencatat pesanan Bu Dewi.",
+        "Kardusnya mirip, dan Raka kewalahan karena pesanan masuk terus.",
+        "Mbak Wulan mengganti pesanannya menjadi keripik pisang."
+      ],
+      "answer_index": 2,
+      "answer": "Kardusnya mirip, dan Raka kewalahan karena pesanan masuk terus.",
+      "explain": "课文说两种薯片的箱子都是素色牛皮纸箱（sama-sama cokelat polos），订单一直进来，拉卡 mulai keteteran，贴标签时没发现贴反了。选项里的 kewalahan 就是 keteteran 的正式说法。新仓库还在盖（pembangunan gudang），箱子堆在客厅，不是快递员从仓库拿错；课文没说纳尔蒂阿姨漏记订单；沃兰小姐也没改订单，她只改过地址（上集）。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "这次包裹一定要准时送到。",
+      "target": "tepat waktu",
+      "target_cn": "准时",
+      "options": [
+        "Kali ini paketnya harus sampai tepat waktu.",
+        "Kali ini paketnya harus sampai waktu tepat.",
+        "Kali ini paketnya sudah sampai tepat waktu.",
+        "Kali ini paketnya harus sampai tepat sasaran."
+      ],
+      "answer_index": 0,
+      "answer": "Kali ini paketnya harus sampai tepat waktu.",
+      "point": "tepat waktu 的固定语序；harus（一定要）和 sudah（已经）",
+      "explain": "“准时”是固定说法 tepat waktu，tepat 在前、waktu 在后，所以 A 对；B 把语序颠倒成 waktu tepat，不是“准时”的说法。C 用 sudah，意思变成“这次包裹已经准时到了”，不是“一定要”。D 的 tepat sasaran 是“命中目标、对准对象”（Bantuannya tepat sasaran），不是时间上的准时。口语里也常说 sampai on time 或 jangan sampai telat，意思接近。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "订单一下子全涌进来，就我一个人，忙不过来了。",
+      "target": "keteteran",
+      "target_cn": "忙不过来",
+      "options": [
+        "Pesanannya masuk barengan, aku sendirian jadi ketiduran.",
+        "Pesanannya masuk barengan, aku sendirian jadi kesiangan.",
+        "Pesanannya belum masuk, aku sendirian jadi keteteran.",
+        "Pesanannya masuk barengan, aku sendirian jadi keteteran."
+      ],
+      "answer_index": 3,
+      "answer": "Pesanannya masuk barengan, aku sendirian jadi keteteran.",
+      "point": "keteteran（忙不过来）和长得像的 ke-…-an 词；masuk barengan（同时涌进来） vs belum masuk",
+      "explain": "“忙不过来”是 keteteran，D 对。A 的 ketiduran 是“不小心睡着了”，B 的 kesiangan 是“起晚了”，都是 ke-…-an 结构，但意思完全不同。C 用 belum masuk（还没进来），和“一下子全涌进来”矛盾。也可以换个主语说成 Pesanannya masuk barengan, sampai nggak kepegang，意思一样：nggak kepegang 说事情顾不过来，keteteran 说人忙不过来。"
+    }
+  ],
+  "output": {
+    "task": "你是拉卡。黛薇女士收到的是特辣木薯片，培训学员辣得一直要水。给她回一条消息（3 句）：先道歉并用 soalnya 说明原因，再给她两个办法让她选，最后保证准时。按骨架填空，至少用 keteteran 或 nggak kepegang 中的一个，再用复习词 tepat waktu。",
+    "frame": "Mohon maaf, Bu, keripiknya ……, soalnya tadi pagi kami …… . Ini tanggung jawab kami, jadi Ibu bebas pilih: …… atau …… . Kalau dikirim ulang, kami pastikan sampai …… .",
+    "reference_answer": "Mohon maaf, Bu, keripiknya tertukar dengan pesanan lain, soalnya tadi pagi kami keteteran waktu menempel label. Ini tanggung jawab kami, jadi Ibu bebas pilih: keripik pisangnya kami kirim ulang sekarang atau uangnya kami kembalikan penuh. Kalau dikirim ulang, kami pastikan sampai tepat waktu, sebelum jam istirahat siang.",
+    "reference_cn": "非常抱歉，女士，薯片和别的订单弄混了，因为今天早上我们贴标签的时候忙不过来。这是我们的责任，所以您可以随便选：我们现在重新发香蕉片，或者全额退款。如果重新发货，我们保证准时送到，在午休之前。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 顾不过来（口语）、忙不过来/跟不上（口语）、建设/修建、参加者、至少（口语）、左右为难；再说出 准时、设置/安排、在……之后、紧张得不知所措、为了/以便。卡住的词回看词卡再说一遍。",
+    "易混词：nggak kepegang（事情顾不过来：chat-nya nggak kepegang）vs keteteran（人忙不过来：aku keteteran）；serba salah（处境两难）vs salah tingkah（紧张得手足无措）；seenggaknya（口语）/ setidaknya（书面）/ paling tidak（都常用）。各说一句。",
+    "复习词应用：sesudah 和 agar 常用来说检查步骤：Sesudah semua kardus dilabeli, cek sekali lagi agar tidak ada yang tertukar；pengaturan 常说 buka pengaturan notifikasi；tepat waktu 常说 sampai tepat waktu。用 sesudah 和 agar 说一句你工作里的检查步骤。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "nggak kepegang",
+      "keteteran",
+      "serba salah"
+    ],
+    "patterns": [
+      {
+        "pattern": "… soalnya …",
+        "cn": "……，因为……（口语）",
+        "function": "explain-cause",
+        "example": "Mohon maaf, Bu, keripiknya tertukar dengan pesanan lain, soalnya tadi pagi kami keteteran waktu menempel label.",
+        "example_cn": "非常抱歉，女士，薯片和别的订单弄混了，因为今天早上我们贴标签的时候忙不过来。"
+      },
+      {
+        "pattern": "Kalau …, seenggaknya …",
+        "cn": "如果……，至少……",
+        "example": "Kalau paketnya telat, seenggaknya kabari pembeli dulu, biar masalahnya nggak ngerembet ke mana-mana.",
+        "example_cn": "如果包裹晚了，至少先通知买家一声，免得问题牵连到别处去。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "准时",
+        "id": "tepat waktu"
+      },
+      {
+        "cn": "设置；安排",
+        "id": "pengaturan"
+      },
+      {
+        "cn": "在……之后",
+        "id": "sesudah"
+      },
+      {
+        "cn": "紧张尴尬得不知所措",
+        "id": "salah tingkah"
+      },
+      {
+        "cn": "为了；以便（书面）",
+        "id": "agar"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "nggak kepegang",
+            "cn": "（事情）顾不过来"
+          },
+          {
+            "id": "keteteran",
+            "cn": "（人）忙不过来、跟不上"
+          }
+        ],
+        "note": "nggak kepegang 的主语多是事情（chat-nya nggak kepegang）；keteteran 的主语多是人（aku keteteran）。说同一阵忙乱时常一起用，正式说法都可以换成 kewalahan。"
+      },
+      {
+        "items": [
+          {
+            "id": "serba salah",
+            "cn": "左右为难（处境）"
+          },
+          {
+            "id": "salah tingkah",
+            "cn": "紧张得手足无措（举止）"
+          }
+        ],
+        "note": "两边都不好选、怎么做都不对，用 serba salah；被问住、害羞或尴尬得不知道手脚往哪放，用 salah tingkah。"
+      },
+      {
+        "items": [
+          {
+            "id": "seenggaknya",
+            "cn": "至少（口语）"
+          },
+          {
+            "id": "setidaknya",
+            "cn": "至少（书面）"
+          },
+          {
+            "id": "paling tidak",
+            "cn": "至少（都常用）"
+          }
+        ],
+        "note": "意思一样，差在场合：聊天说 seenggaknya，正式回复写 setidaknya，paling tidak 两种场合都行。"
+      }
+    ]
+  }
+}
