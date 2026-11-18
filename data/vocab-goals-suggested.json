@@ -5,14 +5,14 @@
  "counts": {
   "all": {
    "use": 1083,
-   "recognize": 121,
-   "unsure": 25,
+   "recognize": 120,
+   "unsure": 26,
    "fast": 137
   },
   "active": {
    "use": 686,
-   "recognize": 105,
-   "unsure": 23,
+   "recognize": 104,
+   "unsure": 24,
    "fast": 51
   }
  },
@@ -7716,11 +7716,12 @@
    ]
   },
   "mengangsur": {
-   "goal": "recognize",
+   "goal": "unsure",
    "fast": false,
-   "by": "review",
+   "by": "review+history",
    "status": "active",
    "why": [
+    "答错较多，不建议只要求认识",
     "使用面窄：认得即可",
     "第二词库 A2 / A"
    ]
