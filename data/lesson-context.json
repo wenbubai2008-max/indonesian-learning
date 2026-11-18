@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-18T11:31:49.766Z",
+    "runtime_generated_at": "2026-11-18T14:00:58.787Z",
     "lesson_watermark": "2026-11-18 18:00",
     "index_updated": "2026-11-18",
-    "runtime_hash": "1b8b800d60b084a5c76e97fdb1fe019b64a1ae3e5d271bf247ce3a11f3f16d3c",
+    "runtime_hash": "9a365a9c355e4621c4cabab43da9b1f0a929744484788541a55bf09d172a8aab",
     "index_hash": "54d50963f3be7f246a2edd7c919bb6cdb16524c0c3e6c26f0512485bf84581be",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
@@ -48,7 +48,12 @@
     ]
   },
   "candidates": {
-    "new_dont": [],
+    "new_dont": [
+      [
+        "hancur",
+        "被摧毁"
+      ]
+    ],
     "new_fuzzy": [],
     "review": [
       [
@@ -432,6 +437,16 @@
         "垫住；卡住；妨碍"
       ],
       [
+        "berantakan",
+        1,
+        2,
+        "2026-11-18T13:52:39.732Z",
+        "2026-11-18T13:52:39.732Z",
+        "乱七八糟；一团乱；很凌乱",
+        "berantak",
+        "乱；散乱"
+      ],
+      [
         "menakjubkan",
         1,
         2,
@@ -640,16 +655,6 @@
         "写明的；被列在（文件、标签、合同等）上的",
         "cantum",
         "载明；列入"
-      ],
-      [
-        "pemulihan",
-        1,
-        1,
-        "2026-11-08T15:34:13.365Z",
-        "2026-11-18T07:06:22.704Z",
-        "恢复；康复期",
-        "pulih",
-        "恢复（到原来的状态）"
       ],
       [
         "nyangka",
