@@ -783,3 +783,7 @@
 - 新书架入口是 `books/index.html`；桌面端每行 4 本，中屏 2 本，手机 1 本，只有已经导入内容的书才可标为可读。
 - 《Seporsi Mie Ayam Sebelum Mati》是受版权保护的现代小说。公开页面只展示开头短节选，不能把用户的完整 PDF、全章或全书作为 GitHub Pages 公共静态资源。完整版第一章的双语 JSON 由用户在浏览器本地选择导入（只保存于 localStorage），不上传到服务器。
 - 不修改 AM/PM 课程、泛读、词库和弱项同步逻辑。
+
+- 2026-11-18 升级：书架仅显示已接入的《Seporsi Mie Ayam Sebelum Mati》。支持用户本地导入 `indo-bilingual-book-v1`（12 个 chapter，按原文段落保存 `idn` 与 `zh`）；旧版 `indo-bilingual-chapter-v1` 第一章继续兼容。章节跳转、阅读状态、字号、护眼色只作用于书籍模块。
+- Chrome 桌面端可在明确点击后调用内置 `Translator`（id → zh）制作**本机机器初译**。不得把机器初译标为人工校对或修改原著印尼语。浏览器不支持时显示提示，不回退到外部服务上传完整小说。
+- 个人整本书库和后续机器初译保存在用户浏览器 localStorage 中，支持导出个人 JSON；GitHub 公共仓库只提供可读页面与很短的试读节选，不提交整本书原文及译文。
