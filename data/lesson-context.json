@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-18T00:32:34.976Z",
+    "runtime_generated_at": "2026-11-18T03:40:56.634Z",
     "lesson_watermark": "2026-11-18 08:00",
     "index_updated": "2026-11-18",
-    "runtime_hash": "d364586edeade34fff4ee00a278549707cf48ffbb6cb18e5d184e07c63da6c8b",
+    "runtime_hash": "b695c024d3b69261e0d6ef4cd80b4469082d2edef1501da4350dc486213c7e75",
     "index_hash": "0073ccaeb00dfba54abac1c0d7186dd3713fbbdf28a4d0d729c481ba654a6578",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
@@ -48,7 +48,20 @@
     ]
   },
   "candidates": {
-    "new_dont": [],
+    "new_dont": [
+      [
+        "polos",
+        "朴素"
+      ],
+      [
+        "kardus",
+        "纸板箱"
+      ],
+      [
+        "keripik",
+        "筹码"
+      ]
+    ],
     "new_fuzzy": [],
     "review": [
       [
@@ -182,6 +195,16 @@
         "协调；融合"
       ],
       [
+        "peserta",
+        1,
+        2,
+        "2026-11-18T02:04:10.991Z",
+        "2026-11-18T02:04:10.991Z",
+        "参与者；参加活动的人",
+        "serta",
+        "共同；参与"
+      ],
+      [
         "mengabaikan",
         1,
         2,
@@ -230,16 +253,6 @@
         "熟练的；精于某项技能的",
         "mahir",
         "熟练；精于"
-      ],
-      [
-        "peserta",
-        1,
-        1,
-        "2026-11-05T13:52:00.851Z",
-        "2026-11-15T03:27:23.740Z",
-        "参与者；参加活动的人",
-        "serta",
-        "共同；参与"
       ],
       [
         "perkirakan",
@@ -2403,6 +2416,15 @@
         ]
       ],
       [
+        "peserta",
+        90,
+        [
+          "lesson_wrong",
+          "unknown",
+          "fuzzy"
+        ]
+      ],
+      [
         "mengabaikan",
         88,
         [
@@ -2440,15 +2462,6 @@
       ],
       [
         "mahir",
-        88,
-        [
-          "lesson_wrong",
-          "unknown",
-          "fuzzy"
-        ]
-      ],
-      [
-        "peserta",
         88,
         [
           "lesson_wrong",
