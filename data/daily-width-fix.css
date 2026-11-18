@@ -9,7 +9,7 @@
 
 /* Critical homepage module layout: render the final compact shape on the first paint,
    before home-modules-layout.js runs. This prevents the old 2-column/long-card FOUC. */
-#home .modules{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:10px!important;align-items:stretch!important}
+#home .modules{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:10px!important;align-items:stretch!important}
 #home .modules>.module{min-width:0!important;grid-column:auto!important;border-radius:16px!important;padding:14px 13px!important;min-height:139px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;box-shadow:0 2px 8px rgba(23,32,51,.035)!important;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease!important}
 #home .modules>.module:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(23,32,51,.08)!important}
 #home .modules>.module>div:first-child{font-size:20px!important;line-height:1!important;margin-bottom:3px!important}
@@ -24,8 +24,9 @@
 #home .modules>.module[data-home-module="roots"]{order:3;background:#faf8ff!important;border-color:#e5ddf4!important;border-top:3px solid #a48ad4!important}
 #home .modules>.module[data-home-module="weak"]{order:4;background:#fff8f8!important;border-color:#f0dcdc!important;border-top:3px solid #d98b8b!important}
 #home .modules>.module[data-home-module="difficulty"]{order:5;background:#f7fbff!important;border-color:#d8e8f5!important;border-top:3px solid #63a6cf!important}
-#home .modules>.module[data-home-module="quick"]{order:6}
-#home .modules>.module[data-home-module="automation"]{order:7}
+#home .modules>.module[data-home-module="books"]{order:6;background:#faf8ff!important;border-color:#ded9f3!important;border-top:3px solid #9a81d9!important}
+#home .modules>.module[data-home-module="quick"]{order:7}
+#home .modules>.module[data-home-module="automation"]{order:8}
 
 @media (min-width:1400px){
   .app.learningMode{max-width:1080px!important;padding-left:20px!important;padding-right:20px!important}
