@@ -585,11 +585,11 @@ try {
   ok(profileBuilderSource.includes('isDeepStrictEqual(withoutGenerationTime(previousProfile),withoutGenerationTime(out))'), 'profile builder preserves generated_at on no-op recovery');
 
   const css = read('data/daily-width-fix.css');
-  ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))'), 'first-paint desktop remaining-tool layout is 5 equal columns');
+  ok(css.includes('#home .modules{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))'), 'first-paint desktop remaining-tool layout is 6 equal columns');
   ok(css.includes('@media (max-width:1050px)') && css.includes('repeat(3,minmax(0,1fr))'), 'first-paint medium layout keeps 3 columns');
   ok(css.includes('@media (max-width:700px)') && css.includes('repeat(2,minmax(0,1fr))'), 'first-paint mobile layout keeps 2 columns');
   ok(css.includes('@media (max-width:430px)') && css.includes('grid-template-columns:1fr'), 'first-paint narrow layout keeps 1 column');
-  ok(css.includes('[data-home-module="reading"]{order:1') && css.includes('[data-home-module="vocab"]{order:2') && css.includes('[data-home-module="roots"]{order:3') && css.includes('[data-home-module="weak"]{order:4') && css.includes('[data-home-module="difficulty"]{order:5'), 'visible 5-card CSS order matches the single module renderer');
+  ok(css.includes('[data-home-module="reading"]{order:1') && css.includes('[data-home-module="vocab"]{order:2') && css.includes('[data-home-module="roots"]{order:3') && css.includes('[data-home-module="weak"]{order:4') && css.includes('[data-home-module="difficulty"]{order:5') && css.includes('[data-home-module="books"]{order:6'), 'visible 6-card CSS order matches the single module renderer');
 
   const homeKeys=(layout0=>{const m=layout0.match(/const HOME_MODULES=\[([\s\S]*?)\n  \];/);return m?[...m[1].matchAll(/\{key:'(\w+)'/g)].map(x=>x[1]).join(','):'';});
   const layout = read('data/home-modules-layout.js');
@@ -597,7 +597,10 @@ try {
   ok(!/homeModulesCompact|homeMod(?:Vocab|Reading|Quick|Weak|Automation|Difficulty)/.test(layout), '2026-10-14: home-modules-layout.js must not restyle/reorder the tool cards after load (daily-width-fix.css is the single source of the card grid, colours, sizes and order)');
   ok(css.includes('min-height:139px!important') && css.includes('#home .modules>.module:hover{transform:translateY(-2px)'), 'first-paint card CSS owns final card height and hover effect');
   const indexHtml = read('index.html');
-  ok(homeKeys(layout).startsWith('reading,vocab,roots,weak,difficulty'), 'JS card order matches the protected order (HOME_MODULES: reading, vocab, roots, weak, difficulty; quick/automation stay hidden after them)');
+  ok(homeKeys(layout).startsWith('reading,vocab,roots,weak,difficulty,books'), 'JS card order matches the protected order (HOME_MODULES: reading, vocab, roots, weak, difficulty, books; quick/automation stay hidden after them)');
+  ok(layout.includes("key:'books'") && layout.includes("books/index.html"), 'bilingual bookshelf homepage shortcut exists');
+  const bookPage = read('books/index.html');
+  ok(bookPage.includes('id="bookGrid"') && bookPage.includes('id="readerPage"') && bookPage.includes('indo-bilingual-chapter-v1'), 'bookshelf has a local-file bilingual reader and no public full-text dependency');
   // 2026-10-14: the 7 difficulty lessons (~145KB incl. their CSS) load only when the learner opens 难点解释.
   const diffLessons = read('data/difficulty-lessons.js');
   ok(!layout.includes('class="difficultyLesson"') && !layout.includes('difficulty01') && layout.length < 30000, 'home-modules-layout.js must not carry the difficulty lesson content (keeps every homepage load small)');
