@@ -49,6 +49,10 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 #readerPage .readerControls label{font-size:13px;color:#526076;font-weight:700}
 #readerPage #chapterSelect{border:1px solid #d8dfed;padding:8px 12px;max-width:100%;border-radius:10px;color:#2d3b57;background:white}
 #readerPage .hint strong{color:#3157d5}
+#readerPage .machineNote{display:inline-block;font-size:11px;color:#96754b;background:#fff2dc;border:1px solid #f2dcb1;border-radius:99px;padding:2px 7px;vertical-align:middle;margin:0 4px}
+#readerPage .editBox{width:100%;min-height:85px;resize:vertical;display:block;margin-top:11px;padding:10px 12px;border:1px solid #8fa9da;border-radius:10px;background:#fff;color:#2e3a50;line-height:1.7;font-size:16px}
+#readerPage #translateState{width:100%;min-height:20px}
+
 #readerPage .importBar{margin-top:18px;padding:16px;align-items:stretch}
 #readerPage .chapterList{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
 #readerPage .chapterBtn{min-height:58px;line-height:1.5}
@@ -96,6 +100,13 @@ body.readerWarm #readerPage .idText{color:#393126}
       <aside class="side"><h3>🌱 阅读辅助</h3><div id="wordList"></div><div id="wordDetail" class="vocabExtra" aria-live="polite">点击词汇查看词义。</div></aside>
     </div>
     <div class="importBar">
+      <div style="width:100%;display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        <button type="button" class="btn primary" id="translateChapter">翻译当前章（设备端初译）</button>
+        <button type="button" class="btn" id="translateAll">连续初译12章</button>
+        <button type="button" class="btn" id="cancelTranslate" hidden>停止翻译</button>
+        <button type="button" class="btn" id="exportBook">导出已翻译书库</button>
+      </div>
+      <div id="translateState" class="hint" aria-live="polite">Chrome 桌面浏览器支持时可在本机逐段翻译；机器初译未经人工校对，可逐段修改。首次使用可能需要下载语言包。先导入个人12章书库。</div>
       <label for="fileInput"><strong>导入个人12章书库 JSON：</strong></label>
       <input type="file" id="fileInput" accept=".json,application/json">
       <button type="button" class="btn" id="clearButton">清除本地导入</button>
@@ -126,7 +137,7 @@ const vocab=[
 const legacyKey='indo-books-private-chapter-v1', allKey='indo-books-private-fullbook-v1';
 const doneKey='indo-books-chapter-done-v2', oldDoneKey='indo-books-chapter-done-v1';
 const favKey='indo-books-fav-v1',fontKey='indo-books-reader-font-v1',warmKey='indo-books-reader-warm-v1';
-let mode='both',active=1,whole=null,legacy=null,done={},fav=false,fontSize=19,warm=false;
+let mode='both',active=1,whole=null,legacy=null,done={},fav=false,fontSize=19,warm=false,translationBusy=false,stopTranslation=false,translatorInstance=null;
 const $=id=>document.getElementById(id);
 function store(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){msg('浏览器无法保存本地文件，请检查存储空间或隐私模式。',true);return false}}
 function read(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
@@ -197,6 +208,25 @@ function renderParagraphs(){
   const buttons=document.createElement('div');buttons.className='paraActions';
   const speak=document.createElement('button');speak.className='tiny';speak.type='button';speak.textContent='🔊 朗读';speak.addEventListener('click',()=>speakText(p.idn));buttons.append(speak);
   if(mode==='id'||!p.zh)trans.hidden=true;
+  if(p.zh&&p.machine&&mode!=='id'){
+    const mark=document.createElement('span');mark.className='machineNote';mark.textContent='机器初译';buttons.append(mark);
+  }
+  if(whole||legacy){
+    const edit=document.createElement('button');edit.className='tiny';edit.type='button';edit.textContent='修改中文';
+    edit.addEventListener('click',()=>{
+      const editor=document.createElement('textarea');editor.className='editBox';editor.value=p.zh||'';editor.setAttribute('aria-label','编辑第'+(i+1)+'段中文翻译');
+      const save=document.createElement('button');save.className='btn primary';save.type='button';save.textContent='保存译文';
+      const cancel=document.createElement('button');cancel.className='btn';cancel.type='button';cancel.textContent='取消';
+      const wrap=document.createElement('div');wrap.className='paraActions';wrap.append(save,cancel);
+      trans.hidden=true;section.append(editor,wrap);edit.disabled=true;editor.focus();
+      save.addEventListener('click',()=>{
+        p.zh=editor.value.trim();if(p.zh)p.machine=false;
+        if(whole)store(allKey,whole);else if(legacy)store(legacyKey,legacy);
+        renderParagraphs();renderChapters();msg('译文已保存在本浏览器；可导出整本书库备份。');
+      });
+      cancel.addEventListener('click',()=>{editor.remove();wrap.remove();edit.disabled=false;if(mode==='both'&&p.zh)trans.hidden=false});
+    });buttons.append(edit);
+  }
   if(mode==='reveal'&&p.zh){
    trans.hidden=true;const toggle=document.createElement('button');toggle.className='tiny';toggle.type='button';toggle.textContent='查看中文';toggle.addEventListener('click',()=>{trans.hidden=!trans.hidden;toggle.textContent=trans.hidden?'查看中文':'隐藏中文'});buttons.append(toggle);
   }
@@ -238,7 +268,86 @@ function route(){
  }
  window.scrollTo(0,0);
 }
+
+function setTranslationState(t){$('translateState').textContent=t}
+function savePrivateBook(){if(whole)return store(allKey,whole);return false}
+function checkTranslator(){
+ if(!('Translator' in self)||typeof Translator.availability!=='function'||typeof Translator.create!=='function'){
+   setTranslationState('当前浏览器没有设备端翻译接口。请使用支持该功能的新版 Chrome 桌面浏览器；不会自动改用上传文本到云端的翻译服务。');return false;
+ }
+ return true;
+}
+async function getTranslator(){
+ if(translatorInstance)return translatorInstance;
+ if(!checkTranslator())throw Error('当前浏览器暂不支持设备端翻译');
+ const opts={sourceLanguage:'id',targetLanguage:'zh'};
+ const availability=await Translator.availability(opts);
+ if(availability==='unavailable')throw Error('当前设备尚不支持印尼语→中文语言包');
+ setTranslationState('正在准备印尼语→中文语言包；首次使用可能需要下载安装。');
+ translatorInstance=await Translator.create({
+  ...opts,
+  monitor(m){m.addEventListener('downloadprogress',e=>setTranslationState('正在下载本机语言包 '+Math.round(e.loaded*100)+'%'))}
+ });
+ return translatorInstance;
+}
+async function translateChapter(n,translator){
+ const chapter=whole.chapters[n-1],parts=chapter.paragraphs;
+ let count=0;
+ for(let i=0;i<parts.length;i++){
+  if(stopTranslation)break;
+  const p=parts[i];if(p.zh.trim())continue;
+  try{
+   const zh=await translator.translate(p.idn);
+   if(typeof zh!=='string'||!zh.trim())throw Error('译文为空');
+   p.zh=zh.trim();p.machine=true;count++;
+   if(count%5===0)savePrivateBook();
+   setTranslationState('正在初译第'+n+'章：'+(i+1)+'/'+parts.length+' 段（已完成 '+count+' 段）');
+   if(active===n && (i%5===0 || i===parts.length-1)){
+      renderParagraphs();renderChapters();
+   }
+  }catch(e){
+   setTranslationState('第'+n+'章第'+(i+1)+'段翻译出错：'+e.message+'；已完成部分会保留。');
+   savePrivateBook();
+   throw e;
+  }
+ }
+ savePrivateBook();
+ return count;
+}
+async function runTranslate(all){
+ if(translationBusy)return;
+ if(!whole){setTranslationState('先导入12章原文书库 JSON，再开始设备端翻译。');return}
+ // User click triggers language-pack download; never send the novel to a remote endpoint.
+ translationBusy=true;stopTranslation=false;
+ $('translateChapter').disabled=true;$('translateAll').disabled=true;$('cancelTranslate').hidden=false;
+ const first=active,total=all?12:active;
+ try{
+  const translator=await getTranslator();
+  let newly=0;
+  for(let n=first;n<=total;n++){
+   if(stopTranslation)break;
+   newly+=await translateChapter(n,translator);
+  }
+  renderChapters();renderParagraphs();renderButtons();shelf();
+  setTranslationState((stopTranslation?'已停止。':'本次初译完成。')+'新增 '+newly+' 段机器初译。已保存于当前浏览器；建议逐段核对，完成后点击「导出已翻译书库」备份。');
+ }catch(e){
+  setTranslationState('翻译未能全部完成：'+e.message+'。已成功翻译的段落会保留。可再次点击继续。');
+ }finally{
+  translationBusy=false;$('translateChapter').disabled=false;$('translateAll').disabled=false;$('cancelTranslate').hidden=true;
+ }
+}
+function exportBook(){
+ if(!whole){setTranslationState('目前未导入完整书库，无法导出。');return}
+ const text=JSON.stringify(whole,null,1),blob=new Blob([text],{type:'application/json;charset=utf-8'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='Seporsi_Mie_Ayam_12章_个人双语书库.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);
+ setTranslationState('个人书库 JSON 已导出到浏览器下载目录。请妥善保管；不要上传到公开 GitHub 仓库。');
+}
 function installInputs(){
+ $('translateChapter').addEventListener('click',()=>runTranslate(false));
+ $('translateAll').addEventListener('click',()=>{active=1;location.hash='chapter-1';runTranslate(true)});
+ $('cancelTranslate').addEventListener('click',()=>{stopTranslation=true;setTranslationState('已请求停止；会在当前段翻译完成后停下。')});
+ $('exportBook').addEventListener('click',exportBook);
  $('chapterSelect').addEventListener('change',e=>{location.hash='chapter-'+e.target.value});
  $('prevChapter').addEventListener('click',()=>{if(active>1)location.hash='chapter-'+(active-1)});
  $('nextChapter').addEventListener('click',()=>{if(active<12)location.hash='chapter-'+(active+1)});
