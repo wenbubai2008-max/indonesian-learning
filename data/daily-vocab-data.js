@@ -2078,20 +2078,22 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-03 18:00",
-    "last_seen": "2026-10-03 18:00",
+    "last_seen": "2026-11-18 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-18"
     ],
     "root_cn": "将会；预感会发生",
-    "example": "Kalau tidak segera diperbaiki, ponsel ini bakal mati total.",
-    "example_cn": "如果不赶快修，这部手机就会彻底坏掉。",
+    "example": "Katanya harga beras bakal naik lagi, jadi banyak penduduk desa mulai menyimpan stok.",
+    "example_cn": "听说米价还会再涨，所以很多村民开始囤货。",
     "lesson_occurrences": [
-      "2026-10-03 18:00"
+      "2026-10-03 18:00",
+      "2026-11-18 18:00"
     ]
   },
   {
@@ -6581,16 +6583,16 @@ window.DAILY_VOCAB_DB = [
     "cn": "乱七八糟；一团乱；很凌乱",
     "en": "messy; chaotic; in a mess",
     "root": "berantak",
-    "example": "Meja saya berantakan karena banyak dokumen belum dipisahkan.",
-    "example_cn": "我的桌子很乱，因为很多文件还没分开。",
+    "example": "Rambut keritingnya jadi berantakan kena angin waktu naik motor.",
+    "example_cn": "她的卷发骑摩托时被风吹得乱七八糟。（kena = terkena）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-11-18 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -6598,13 +6600,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-04",
       "2026-10-02",
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-18"
     ],
     "root_cn": "乱；散乱",
     "lesson_occurrences": [
       "2026-09-04 08:00",
       "2026-10-02 18:00",
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-11-18 18:00"
     ]
   },
   {
@@ -6953,9 +6957,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-05 19:00",
-    "last_seen": "2026-10-07 18:00",
+    "last_seen": "2026-11-18 18:00",
     "sessions": [
       "19:00",
       "18:00"
@@ -6965,16 +6969,18 @@ window.DAILY_VOCAB_DB = [
       "2026-10-04",
       "2026-10-05",
       "2026-10-06",
-      "2026-10-07"
+      "2026-10-07",
+      "2026-11-18"
     ],
-    "example": "Dia lembur tiap hari, nggak heran dia kelihatan capek.",
-    "example_cn": "他每天加班，难怪看起来很累。",
+    "example": "Dia begadang ngerjain skripsi tiap malam. Nggak heran matanya merah terus.",
+    "example_cn": "他每晚熬夜写毕业论文。难怪眼睛老是红的。（ngerjain = mengerjakan，tiap = setiap）",
     "lesson_occurrences": [
       "2026-09-05 19:00",
       "2026-10-04 18:00",
       "2026-10-05 18:00",
       "2026-10-06 18:00",
-      "2026-10-07 18:00"
+      "2026-10-07 18:00",
+      "2026-11-18 18:00"
     ]
   },
   {
@@ -29458,16 +29464,16 @@ window.DAILY_VOCAB_DB = [
     "en": "participant",
     "root": "serta",
     "root_cn": "共同；参与",
-    "example": "Panitia minta keripiknya dibungkus kecil-kecil, soalnya ada peserta yang alergi kacang.",
-    "example_cn": "主办方要求薯片分成小包装，因为有学员对花生过敏。",
+    "example": "Panitia mendorong semua peserta untuk membawa botol minum sendiri.",
+    "example_cn": "主办方鼓励所有参加者自带水瓶。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-11-05 18:00",
-    "last_seen": "2026-11-18 08:00",
+    "last_seen": "2026-11-18 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -29480,7 +29486,8 @@ window.DAILY_VOCAB_DB = [
     "lesson_occurrences": [
       "2026-11-05 18:00",
       "2026-11-06 08:00",
-      "2026-11-18 08:00"
+      "2026-11-18 08:00",
+      "2026-11-18 18:00"
     ]
   },
   {
@@ -30711,27 +30718,29 @@ window.DAILY_VOCAB_DB = [
     "en": "gradually",
     "root": "angsur",
     "root_cn": "一点一点地推进",
-    "example": "Setelah minum obat dan istirahat, batuknya berangsur hilang.",
-    "example_cn": "吃了药、休息之后，他的咳嗽慢慢好了。",
+    "example": "Setelah minum obat dan banyak istirahat, gejala flunya berangsur hilang.",
+    "example_cn": "吃了药、多休息以后，他的感冒症状逐渐消失了。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-08 18:00",
-    "last_seen": "2026-11-09 08:00",
+    "last_seen": "2026-11-18 18:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-11-08",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-18"
     ],
     "lesson_occurrences": [
       "2026-11-08 18:00",
-      "2026-11-09 08:00"
+      "2026-11-09 08:00",
+      "2026-11-18 18:00"
     ]
   },
   {
@@ -33398,6 +33407,81 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-15 18:00"
+    ]
+  },
+  {
+    "word": "polos",
+    "cn": "素色的、没有图案的；（人）单纯、天真",
+    "en": "plain, unpatterned; innocent",
+    "root": "polos",
+    "root_cn": "素；单纯",
+    "example": "Untuk seragam panitia, kami pilih kaos polos warna hitam, nanti logonya disablon sendiri.",
+    "example_cn": "panitia 的统一服装，我们选了黑色素色T恤，回头自己印上标志。（disablon = 丝网印刷）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-18 18:00",
+    "last_seen": "2026-11-18 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-18"
+    ],
+    "lesson_occurrences": [
+      "2026-11-18 18:00"
+    ]
+  },
+  {
+    "word": "kardus",
+    "cn": "纸箱；硬纸板箱",
+    "en": "cardboard box",
+    "root": "kardus",
+    "root_cn": "纸箱",
+    "example": "Kucing kami yang manja selalu tidur di dalam kardus bekas, padahal sudah dibelikan kasur.",
+    "example_cn": "我们家那只爱撒娇的猫总睡在旧纸箱里，明明已经给它买了猫窝。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-18 18:00",
+    "last_seen": "2026-11-18 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-18"
+    ],
+    "lesson_occurrences": [
+      "2026-11-18 18:00"
+    ]
+  },
+  {
+    "word": "keripik",
+    "cn": "脆片；薯片（切薄炸脆的零食）",
+    "en": "chips; crisps",
+    "root": "keripik",
+    "root_cn": "脆片零食",
+    "example": "Kalau lagi kepikiran kerjaan, aku suka ngemil keripik sampai sebungkus habis.",
+    "example_cn": "我一想着工作上的事，就爱吃脆片，一吃就是一整包。（ngemil = mengemil）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-18 18:00",
+    "last_seen": "2026-11-18 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-18"
+    ],
+    "lesson_occurrences": [
+      "2026-11-18 18:00"
     ]
   }
 ];

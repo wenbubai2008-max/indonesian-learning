@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-18",
-    "session": "pm",
-    "time": "18:00",
-    "day": 89
+    "date": "2026-11-19",
+    "session": "am",
+    "time": "08:00",
+    "day": 90
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-18T09:41:01.217Z",
-    "lesson_watermark": "2026-11-18 08:00",
+    "runtime_generated_at": "2026-11-18T11:31:49.766Z",
+    "lesson_watermark": "2026-11-18 18:00",
     "index_updated": "2026-11-18",
-    "runtime_hash": "052a0e7a866ea1ba3d542056572a0064e6079f3feea0377244f42d1fcb4d513d",
-    "index_hash": "0073ccaeb00dfba54abac1c0d7186dd3713fbbdf28a4d0d729c481ba654a6578",
+    "runtime_hash": "1b8b800d60b084a5c76e97fdb1fe019b64a1ae3e5d271bf247ce3a11f3f16d3c",
+    "index_hash": "54d50963f3be7f246a2edd7c919bb6cdb16524c0c3e6c26f0512485bf84581be",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -48,20 +48,7 @@
     ]
   },
   "candidates": {
-    "new_dont": [
-      [
-        "polos",
-        "朴素"
-      ],
-      [
-        "kardus",
-        "纸板箱"
-      ],
-      [
-        "keripik",
-        "筹码"
-      ]
-    ],
+    "new_dont": [],
     "new_fuzzy": [],
     "review": [
       [
@@ -1625,16 +1612,6 @@
         "印；打印"
       ],
       [
-        "berantakan",
-        2,
-        1,
-        "2026-09-30T14:06:45.377Z",
-        "2026-11-13T02:32:01.319Z",
-        "乱七八糟；一团乱；很凌乱",
-        "berantak",
-        "乱；散乱"
-      ],
-      [
         "berat",
         2,
         0,
@@ -1733,16 +1710,6 @@
         "更换；交换",
         "tukar",
         "交换；兑换"
-      ],
-      [
-        "bakal",
-        3,
-        1,
-        "2026-09-29T07:59:14.910Z",
-        "2026-11-11T03:24:39.506Z",
-        "将会、要",
-        "bakal",
-        "将会；预感会发生"
       ],
       [
         "berfungsi",
@@ -2235,16 +2202,6 @@
         "聚集；聚在一起"
       ],
       [
-        "nggak heran",
-        3,
-        1,
-        "2026-09-29T10:47:12.970Z",
-        "2026-11-12T04:08:36.951Z",
-        "难怪；不奇怪",
-        "heran",
-        "惊讶；觉得奇怪"
-      ],
-      [
         "nyempetin",
         3,
         1,
@@ -2265,34 +2222,34 @@
         "参与"
       ],
       [
-        "keteteran",
-        3,
-        1,
-        "2026-10-06T10:00:19.353Z",
-        "2026-11-18T07:06:27.300Z",
-        "忙不过来；跟不上；应付不过来",
-        "keteteran",
-        "忙不过来；跟不上"
-      ],
-      [
-        "seenggaknya",
-        3,
+        "cenderung",
+        2,
         0,
         "",
-        "",
-        "至少；起码",
-        "enggak",
-        "不；不是"
+        "2026-10-19T13:16:02.058Z",
+        "倾向于；容易（做某事）",
+        "cenderung",
+        "倾向"
       ],
       [
-        "serba salah",
-        3,
+        "kejam",
+        2,
         0,
         "",
-        "2026-11-15T03:29:32.532Z",
-        "左右为难；怎么做都不对",
-        "salah",
-        "错；不对"
+        "2026-10-21T01:44:43.852Z",
+        "残忍；狠心；过分",
+        "kejam",
+        "残忍"
+      ],
+      [
+        "mencuri",
+        2,
+        0,
+        "",
+        "2026-10-22T15:36:11.943Z",
+        "偷；盗窃",
+        "curi",
+        "偷"
       ]
     ],
     "focus": [
@@ -2564,47 +2521,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-11",
-      "session": "am",
-      "review_core": [
-        "menimpa",
-        "berantem",
-        "berteriak",
-        "isi bensin",
-        "ketika"
-      ],
-      "new_words": [
-        "bahu",
-        "bermain bulu tangkis",
-        "berkaitan",
-        "tempat lahir",
-        "jenis kelamin",
-        "status pernikahan",
-        "kewarganegaraan",
-        "berasal",
-        "nol",
-        "seperempat"
-      ]
-    },
-    {
-      "date": "2026-11-11",
-      "session": "pm",
-      "review_core": [
-        "perkirakan",
-        "mengeluh",
-        "berteriak",
-        "manfaat",
-        "mantap"
-      ],
-      "new_words": [
-        "setrika",
-        "kain pel",
-        "penyedot debu",
-        "seprai",
-        "guling"
-      ]
-    },
-    {
       "date": "2026-11-12",
       "session": "am",
       "review_core": [
@@ -2825,73 +2741,38 @@
         "agar"
       ],
       "new_words": []
+    },
+    {
+      "date": "2026-11-18",
+      "session": "pm",
+      "review_core": [
+        "berangsur",
+        "peserta",
+        "nggak heran",
+        "bakal"
+      ],
+      "new_words": [
+        "polos",
+        "kardus",
+        "keripik"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-17",
-    "new_words": [],
-    "review_core": [
-      "sebel",
-      "bebas",
-      "teratur",
-      "pengaturan",
-      "kerugian"
-    ]
-  },
-  "same_day_am": {
     "date": "2026-11-18",
-    "vocab": [
-      [
-        "nggak kepegang",
-        "顾不过来；管不过来（口语）",
-        "too much to handle; can't keep on top of (colloquial)",
-        "pegang",
-        "拿；握；掌握"
-      ],
-      [
-        "keteteran",
-        "忙不过来；跟不上（口语）",
-        "overwhelmed; falling behind (colloquial)",
-        "keteteran",
-        "忙不过来；跟不上（整词记忆）"
-      ],
-      [
-        "pembangunan",
-        "建设；修建（的过程）",
-        "construction; development",
-        "bangun",
-        "建；起；醒"
-      ],
-      [
-        "peserta",
-        "参加者；学员；参赛者",
-        "participant",
-        "serta",
-        "一起；参与"
-      ],
-      [
-        "seenggaknya",
-        "至少；起码；好在（口语）",
-        "at least (colloquial)",
-        "enggak",
-        "不；不是"
-      ],
-      [
-        "serba salah",
-        "左右为难；怎么做都不对",
-        "in a no-win situation; damned if you do, damned if you don't",
-        "salah",
-        "错；不对"
-      ]
+    "new_words": [
+      "polos",
+      "kardus",
+      "keripik"
     ],
-    "review_vocab": [
-      "tepat waktu",
-      "pengaturan",
-      "sesudah",
-      "salah tingkah",
-      "agar"
+    "review_core": [
+      "berangsur",
+      "peserta",
+      "nggak heran",
+      "bakal"
     ]
   },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
