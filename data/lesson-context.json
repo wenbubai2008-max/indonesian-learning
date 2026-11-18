@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-18",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 89
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-17T23:41:02.334Z",
-    "lesson_watermark": "2026-11-17 18:00",
-    "index_updated": "2026-11-17",
-    "runtime_hash": "922a6599eade837a507c0cda94a1446f52a960a1b264b65f54565bdedfaaee3e",
-    "index_hash": "2467986b0fa9658317926b463bf698eaa44b87afc1c1ac039cbfafb7fbe08c52",
+    "runtime_generated_at": "2026-11-18T00:32:34.976Z",
+    "lesson_watermark": "2026-11-18 08:00",
+    "index_updated": "2026-11-18",
+    "runtime_hash": "d364586edeade34fff4ee00a278549707cf48ffbb6cb18e5d184e07c63da6c8b",
+    "index_hash": "0073ccaeb00dfba54abac1c0d7186dd3713fbbdf28a4d0d729c481ba654a6578",
     "rules_hash": "8f66527f612e8211fca8181a300710b9d7e00fcd914989b25419314f54f77085"
   },
   "schema": {
@@ -662,16 +662,6 @@
         ""
       ],
       [
-        "seenggaknya",
-        3,
-        0,
-        "",
-        "",
-        "至少；起码",
-        "enggak",
-        "不；不是"
-      ],
-      [
         "ngegas",
         2,
         0,
@@ -690,16 +680,6 @@
         "突然插一句；随口冒出一句（口语）",
         "celetuk",
         "随口插话；突然说一句"
-      ],
-      [
-        "serba salah",
-        3,
-        0,
-        "",
-        "2026-11-15T03:29:32.532Z",
-        "左右为难；怎么做都不对",
-        "salah",
-        "错；不对"
       ],
       [
         "sikap",
@@ -1332,16 +1312,6 @@
         "美味"
       ],
       [
-        "agar",
-        3,
-        0,
-        "",
-        "2026-10-19T13:14:07.817Z",
-        "为了；以便",
-        "agar",
-        "为了；以便"
-      ],
-      [
         "kata sandi",
         3,
         0,
@@ -1450,16 +1420,6 @@
         "云",
         "awan",
         "云"
-      ],
-      [
-        "sesudah",
-        3,
-        0,
-        "",
-        "2026-10-23T23:37:01.397Z",
-        "在……之后",
-        "sudah",
-        "已经"
       ],
       [
         "cemas",
@@ -1730,16 +1690,6 @@
         "即；就是；也就是",
         "yaitu",
         "即"
-      ],
-      [
-        "salah tingkah",
-        3,
-        2,
-        "2026-10-01T12:32:10.275Z",
-        "2026-11-13T02:32:23.904Z",
-        "紧张尴尬到不知所措",
-        "tingkah",
-        "举止；行为"
       ],
       [
         "bentuk",
@@ -2132,16 +2082,6 @@
         "记下；记录"
       ],
       [
-        "keteteran",
-        3,
-        1,
-        "2026-10-06T10:00:19.353Z",
-        "2026-10-19T05:48:43.806Z",
-        "忙不过来；跟不上；应付不过来",
-        "keteteran",
-        "忙不过来；跟不上"
-      ],
-      [
         "berikutnya",
         2,
         0,
@@ -2250,6 +2190,96 @@
         "努力、尝试",
         "upaya",
         "努力；办法"
+      ],
+      [
+        "mengetik",
+        2,
+        1,
+        "2026-10-23T23:28:35.532Z",
+        "2026-11-03T09:40:13.572Z",
+        "打字；用键盘输入",
+        "ketik",
+        "打字；键入"
+      ],
+      [
+        "meminjam",
+        3,
+        0,
+        "",
+        "2026-10-22T15:35:43.659Z",
+        "借入；向别人借（东西）",
+        "pinjam",
+        "借"
+      ],
+      [
+        "mengumpulkan",
+        3,
+        0,
+        "",
+        "2026-10-23T23:29:31.889Z",
+        "交（作业、报告）；收集；把……聚到一起",
+        "kumpul",
+        "聚集；聚在一起"
+      ],
+      [
+        "nggak heran",
+        3,
+        1,
+        "2026-09-29T10:47:12.970Z",
+        "2026-11-12T04:08:36.951Z",
+        "难怪；不奇怪",
+        "heran",
+        "惊讶；觉得奇怪"
+      ],
+      [
+        "nyempetin",
+        3,
+        1,
+        "2026-09-30T14:03:19.964Z",
+        "2026-11-13T02:31:28.031Z",
+        "特意挤出时间做某事（口语）",
+        "sempat",
+        "有空；来得及"
+      ],
+      [
+        "berpartisipasi",
+        2,
+        0,
+        "",
+        "2026-10-19T13:15:26.677Z",
+        "参与；参加（活动、讨论）",
+        "partisipasi",
+        "参与"
+      ],
+      [
+        "keteteran",
+        3,
+        1,
+        "2026-10-06T10:00:19.353Z",
+        "2026-10-19T05:48:43.806Z",
+        "忙不过来；跟不上；应付不过来",
+        "keteteran",
+        "忙不过来；跟不上"
+      ],
+      [
+        "seenggaknya",
+        3,
+        0,
+        "",
+        "",
+        "至少；起码",
+        "enggak",
+        "不；不是"
+      ],
+      [
+        "serba salah",
+        3,
+        0,
+        "",
+        "2026-11-15T03:29:32.532Z",
+        "左右为难；怎么做都不对",
+        "salah",
+        "错；不对"
       ]
     ],
     "focus": [
@@ -2769,6 +2799,18 @@
         "kerugian"
       ],
       "new_words": []
+    },
+    {
+      "date": "2026-11-18",
+      "session": "am",
+      "review_core": [
+        "tepat waktu",
+        "pengaturan",
+        "sesudah",
+        "salah tingkah",
+        "agar"
+      ],
+      "new_words": []
     }
   ],
   "previous_pm": {
@@ -2782,7 +2824,60 @@
       "kerugian"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-18",
+    "vocab": [
+      [
+        "nggak kepegang",
+        "顾不过来；管不过来（口语）",
+        "too much to handle; can't keep on top of (colloquial)",
+        "pegang",
+        "拿；握；掌握"
+      ],
+      [
+        "keteteran",
+        "忙不过来；跟不上（口语）",
+        "overwhelmed; falling behind (colloquial)",
+        "keteteran",
+        "忙不过来；跟不上（整词记忆）"
+      ],
+      [
+        "pembangunan",
+        "建设；修建（的过程）",
+        "construction; development",
+        "bangun",
+        "建；起；醒"
+      ],
+      [
+        "peserta",
+        "参加者；学员；参赛者",
+        "participant",
+        "serta",
+        "一起；参与"
+      ],
+      [
+        "seenggaknya",
+        "至少；起码；好在（口语）",
+        "at least (colloquial)",
+        "enggak",
+        "不；不是"
+      ],
+      [
+        "serba salah",
+        "左右为难；怎么做都不对",
+        "in a no-win situation; damned if you do, damned if you don't",
+        "salah",
+        "错；不对"
+      ]
+    ],
+    "review_vocab": [
+      "tepat waktu",
+      "pengaturan",
+      "sesudah",
+      "salah tingkah",
+      "agar"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

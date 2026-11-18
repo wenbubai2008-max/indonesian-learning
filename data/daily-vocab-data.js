@@ -5800,25 +5800,28 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-02 19:00",
-    "last_seen": "2026-10-06 18:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-02",
       "2026-09-04",
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-18"
     ],
-    "example": "Sejak tim berkurang, aku mulai keteteran ngurusin pesanan.",
-    "example_cn": "团队人手少了之后，我开始忙不过来处理订单了。",
+    "example": "Kalau semua pesanan kamu bungkus sendiri, nanti kamu keteteran; minta tolong sepupumu, ya.",
+    "example_cn": "如果所有订单都你一个人包，到时候会忙不过来；叫你表弟表妹来帮忙吧。",
     "root_cn": "忙不过来；跟不上",
     "lesson_occurrences": [
       "2026-09-02 19:00",
       "2026-09-04 19:00",
-      "2026-10-06 18:00"
+      "2026-10-06 18:00",
+      "2026-11-18 08:00"
     ]
   },
   {
@@ -7326,21 +7329,25 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "不；不是",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-06 19:00",
-    "last_seen": "2026-09-06 19:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-06"
+      "2026-09-06",
+      "2026-11-18"
     ],
-    "example": "Kalau belum yakin, seenggaknya bandingin dua tempat dulu.",
-    "example_cn": "如果还不确定，至少先比较两家。",
+    "example": "Kalau paketnya telat, seenggaknya kabari pembeli dulu, biar masalahnya nggak ngerembet ke mana-mana.",
+    "example_cn": "如果包裹晚了，至少先通知买家一声，免得问题牵连到别处去。（biar = agar，nggak = tidak）",
     "lesson_occurrences": [
-      "2026-09-06 19:00"
+      "2026-09-06 19:00",
+      "2026-11-18 08:00"
     ]
   },
   {
@@ -8593,21 +8600,24 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-09 19:00",
-    "last_seen": "2026-09-11 19:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-09",
-      "2026-09-11"
+      "2026-09-11",
+      "2026-11-18"
     ],
-    "example": "Kalau ngomong takut bikin dia nggak enak, tapi kalau diam juga serba salah.",
-    "example_cn": "说了怕让他不舒服，但不说又觉得左右为难。",
+    "example": "Mau tolak pesanan, takut pelanggan kecewa; mau terima, takut nggak keburu. Serba salah, deh.",
+    "example_cn": "想拒单，怕顾客失望；想接，又怕来不及。真是左右为难。（tolak = menolak，nggak = tidak，keburu = sempat）",
     "lesson_occurrences": [
       "2026-09-09 19:00",
-      "2026-09-11 19:00"
+      "2026-09-11 19:00",
+      "2026-11-18 08:00"
     ]
   },
   {
@@ -8949,9 +8959,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-11-08 08:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -8963,17 +8973,19 @@ window.DAILY_VOCAB_DB = [
       "2026-09-16",
       "2026-10-08",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-18"
     ],
-    "example": "Pesanan mendadak meledak, jadi beberapa pesan pelanggan nggak kepegang. Aku keteteran dan perlu bantuan.",
-    "example_cn": "订单突然暴增，所以有些客户消息顾不过来。我忙得应付不过来，需要帮忙。",
+    "example": "Harusnya kita tambah satu admin; pas promo tengah malam, chat pembeli sampai nggak kepegang.",
+    "example_cn": "本来我们应该再加一个客服；半夜促销的时候，买家的消息多到根本顾不过来。（harusnya = seharusnya，pas = saat，nggak = tidak）",
     "lesson_occurrences": [
       "2026-09-10 19:00",
       "2026-09-11 19:00",
       "2026-09-16 18:00",
       "2026-10-08 08:00",
       "2026-11-07 18:00",
-      "2026-11-08 08:00"
+      "2026-11-08 08:00",
+      "2026-11-18 08:00"
     ]
   },
   {
@@ -9430,9 +9442,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -9441,13 +9453,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-11",
       "2026-09-24",
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-18"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
       "2026-09-11 19:00",
       "2026-09-24 18:00",
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-11-18 08:00"
     ]
   },
   {
@@ -12052,16 +12066,16 @@ window.DAILY_VOCAB_DB = [
     "en": "development; construction",
     "root": "bangun",
     "root_cn": "建；起；醒",
-    "example": "Pemerintah daerah ingin mengembangkan pariwisata, jadi pembangunan jalan ke pantai itu dipercepat.",
-    "example_cn": "地方政府想发展旅游业，所以通往那片海滩的道路建设加快了。",
+    "example": "Penyebab utama label tertukar adalah pembangunan gudang: semua kardus jadi ditumpuk di satu ruangan.",
+    "example_cn": "标签贴错的主要原因是仓库在施工：所有箱子都只能堆在一个房间里。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-11-13 18:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -12073,7 +12087,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-23",
       "2026-10-28",
       "2026-10-29",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-18"
     ],
     "lesson_occurrences": [
       "2026-09-18 18:00",
@@ -12082,7 +12097,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-23 18:00",
       "2026-10-28 18:00",
       "2026-10-29 08:00",
-      "2026-11-13 18:00"
+      "2026-11-13 18:00",
+      "2026-11-18 08:00"
     ]
   },
   {
@@ -14361,21 +14377,25 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "对哈山先生来说，准时到就意味着尊重别人的时间。（buat = bagi）",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-24 18:00",
-    "last_seen": "2026-11-17 18:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-09-24",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "lesson_occurrences": [
       "2026-09-24 18:00",
-      "2026-11-17 18:00"
+      "2026-11-17 18:00",
+      "2026-11-18 08:00"
     ]
   },
   {
@@ -16680,19 +16700,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "把这个号码存下来，以便你方便联系我。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-30 18:00",
-    "last_seen": "2026-09-30 18:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-30"
+      "2026-09-30",
+      "2026-11-18"
     ],
     "lesson_occurrences": [
-      "2026-09-30 18:00"
+      "2026-09-30 18:00",
+      "2026-11-18 08:00"
     ]
   },
   {
@@ -16994,19 +17018,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-01 18:00",
-    "last_seen": "2026-10-01 18:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-01"
+      "2026-10-01",
+      "2026-11-18"
     ],
     "lesson_occurrences": [
-      "2026-10-01 18:00"
+      "2026-10-01 18:00",
+      "2026-11-18 08:00"
     ]
   },
   {
@@ -29430,27 +29458,29 @@ window.DAILY_VOCAB_DB = [
     "en": "participant",
     "root": "serta",
     "root_cn": "共同；参与",
-    "example": "Peserta boleh mengeluarkan kartu dari dompet untuk diperiksa. Kartu itu berlaku sampai akhir bulan.",
-    "example_cn": "参与者可以从钱包里取出卡片供检查。这张卡有效期至月底。",
+    "example": "Panitia minta keripiknya dibungkus kecil-kecil, soalnya ada peserta yang alergi kacang.",
+    "example_cn": "主办方要求薯片分成小包装，因为有学员对花生过敏。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-05 18:00",
-    "last_seen": "2026-11-06 08:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-18"
     ],
     "lesson_occurrences": [
       "2026-11-05 18:00",
-      "2026-11-06 08:00"
+      "2026-11-06 08:00",
+      "2026-11-18 08:00"
     ]
   },
   {
@@ -32456,9 +32486,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-11-13 08:00",
-    "last_seen": "2026-11-17 18:00",
+    "last_seen": "2026-11-18 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -32466,13 +32496,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-11-13",
       "2026-11-15",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "lesson_occurrences": [
       "2026-11-13 08:00",
       "2026-11-13 18:00",
       "2026-11-15 08:00",
-      "2026-11-17 18:00"
+      "2026-11-17 18:00",
+      "2026-11-18 08:00"
     ]
   },
   {
