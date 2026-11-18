@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>双语书籍 · 印尼语学习</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#69758a;--line:#e0e6f1;--accent:#3157d5;--soft:#eef3ff;--success:#217348}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.55}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1150px;margin:auto;padding:23px 20px 80px}.crumb{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:20px;flex-wrap:wrap}.crumb a{font-weight:700}.crumb b{color:var(--ink)}
+.head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:20px}.head h1{font-size:28px;margin:0 0 5px}.sub{color:var(--muted);font-size:14px;line-height:1.6;margin:0}
+.note{border:1px solid #e2defa;background:#f9f7ff;border-radius:13px;padding:12px 15px;color:#595c7c;font-size:13px;line-height:1.7;margin:0 0 16px}
+.tabs{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:15px}.pill{background:#eff2fc;color:#3157d5;padding:5px 10px;border-radius:999px;font-size:12px;font-weight:700}
+.btn{background:white;border:1px solid #d8dfed;color:#31405f;padding:9px 13px;border-radius:11px;font-weight:700}.btn:hover{border-color:#8ca9ef;background:#f8faff}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn.on{background:#eaf5ee;border-color:#abd7b9;color:#18633a}
+.bookGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.bookCard{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;padding:15px;display:flex;flex-direction:column;gap:11px;min-height:315px;box-shadow:0 4px 14px rgba(18,34,65,.04)}
+.bookCard.ready{border-color:#bccaf9;background:linear-gradient(#fff,#f9faff)}.bookTop{display:flex;gap:12px;align-items:flex-start}
+.cover{flex:0 0 93px;height:132px;border-radius:10px;box-shadow:3px 5px 9px #19223a22;display:flex;flex-direction:column;justify-content:space-between;padding:11px;color:#fff;background:linear-gradient(150deg,#813c32,#d99166);overflow:hidden}
+.cover.c2{background:linear-gradient(145deg,#546c9e,#b7a5bc)}.cover.c3{background:linear-gradient(145deg,#397e6a,#b9ac77)}.cover.c4{background:linear-gradient(145deg,#3a7050,#a9bd74)}.cover small{font-size:25px}.cover strong{font-size:12px;line-height:1.3;overflow-wrap:anywhere}.bookTitle{margin:0;font-size:16px;line-height:1.4;overflow-wrap:anywhere}.byline{font-size:12px;color:var(--muted);margin:6px 0 0}.bookDesc{color:var(--muted);font-size:13px;line-height:1.6;margin:0;flex:1}.bookBottom{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.readerHero{display:flex;gap:20px;align-items:center;background:#fff;border:1px solid var(--line);padding:18px;border-radius:18px;margin-bottom:14px}.readerHero .cover{flex-basis:82px;height:112px}.readerHero h1{font-size:23px;margin:0 0 5px}.readerHero p{margin:0;color:var(--muted);font-size:13px}.readerHero .pill{display:inline-block;margin-top:9px}
+.tools{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;margin:14px 0}.tools .group{display:flex;gap:7px;flex-wrap:wrap}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:16px;align-items:start}
+.paper,.side{border:1px solid var(--line);background:white;border-radius:18px;padding:25px}.paper h2{font-size:21px;margin:0 0 6px}.paper .source{color:var(--muted);font-size:12px;margin:0 0 20px}
+.para{padding:0 0 19px;margin:0 0 19px;border-bottom:1px solid #eef0f5}.para:last-child{border:0}.idText{font-size:18px;line-height:2.05;white-space:pre-wrap;margin:0 0 8px;user-select:text}.zhText{font-size:15px;line-height:1.95;white-space:pre-wrap;color:#596882;background:#f6f8fe;border-left:3px solid #9dafe0;border-radius:8px;padding:10px 13px;margin:0}.paraActions{display:flex;gap:8px;justify-content:flex-end;align-items:center;margin-top:8px}.tiny{border:0;color:#4362ba;background:transparent;padding:4px 7px;font-size:12px}.tiny:hover{text-decoration:underline}
+.side h3{font-size:16px;margin:0 0 15px}.word{display:block;width:100%;text-align:left;border:0;background:#f8faff;border-radius:10px;padding:10px;margin-bottom:7px;font-size:13px}.word b{display:block;margin-bottom:4px}.word span{color:var(--muted)}.vocabExtra{font-size:13px;line-height:1.65;color:#47546d;background:#f8faff;padding:10px;border-radius:10px;margin-top:10px}
+.chapterList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:16px}.chapterBtn{border:1px solid #e0e6f1;background:white;border-radius:11px;padding:11px;text-align:left;font-size:13px}.chapterBtn.current{border-color:#8fa6e8;background:#f5f8ff}
+.importBar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:13px;margin-top:14px}.importBar input{font-size:13px;max-width:250px}.importBar .hint{color:var(--muted);font-size:12px;line-height:1.5}
+#message{font-size:13px;color:#176b3c;line-height:1.7}#message.error{color:#b42318}
+[hidden]{display:none!important}
+@media(max-width:900px){.bookGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.layout{grid-template-columns:1fr}.side{order:2}}
+@media(max-width:560px){.wrap{padding:14px 11px 65px}.head h1{font-size:24px}.bookGrid{grid-template-columns:1fr}.bookCard{min-height:235px}.readerHero{padding:12px;gap:12px}.readerHero h1{font-size:19px}.readerHero .cover{flex-basis:65px;height:93px}.paper,.side{padding:16px}.idText{font-size:17px}.chapterList{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <nav class="crumb" aria-label="位置"><a href="../index.html#home">⌂ 印尼语学习</a><span>/</span><a href="#shelf">双语书籍</a><span id="where" hidden>/ 第1章</span></nav>
+  <section id="shelfPage">
+    <div class="head"><div><h1>📖 双语书籍</h1><p class="sub">像读书一样学印尼语 · 原文与中文逐段对照 · 记录阅读进度</p></div><span class="pill">每行 4 本 · 自适应布局</span></div>
+    <div class="note">书架先展示 1 本正在制作的双语读物，另外 3 本是已核实的原创小说／短篇来源链接，尚未导入正文。未导入的不标记为可读。</div>
+    <div class="tabs"><button class="btn on" type="button">全部书籍 · 4</button><span class="pill">双语试读 · 1</span><span class="pill">待导入 · 3</span></div>
+    <div class="bookGrid" id="bookGrid"></div>
+  </section>
+  <section id="readerPage" hidden>
+    <div class="readerHero">
+      <div class="cover"><small>🍜</small><strong>Seporsi Mie Ayam Sebelum Mati</strong></div>
+      <div><h1>Seporsi Mie Ayam Sebelum Mati</h1><p>Brian Khrisna · 成人现实小说</p><span class="pill" id="chapterTag">第1章 / 共12章</span></div>
+    </div>
+    <div class="note" id="readingNote">公开页面仅显示短节选。完整第一章的印尼语原文与中文对照可以通过下方本地 JSON 文件导入，内容只保存在你自己的浏览器中，不上传到网站。</div>
+    <div class="tools">
+      <div class="group" aria-label="阅读模式">
+        <button type="button" class="btn on" data-mode="both">印中对照</button>
+        <button type="button" class="btn" data-mode="id">纯印尼语</button>
+        <button type="button" class="btn" data-mode="reveal">先读后译</button>
+      </div>
+      <div class="group">
+        <button id="favButton" class="btn" type="button">☆ 收藏</button>
+        <button id="copyButton" class="btn" type="button">复制本章</button>
+        <button id="doneButton" class="btn" type="button">标记读完</button>
+      </div>
+    </div>
+    <div class="layout">
+      <article class="paper" aria-label="双语正文"><h2>第1章 · SCBD Parking Lot 17</h2><p class="source" id="readerStatus">真实原著短节选 · 个人完整章节可导入</p><div id="paragraphs"></div></article>
+      <aside class="side"><h3>🌱 本章词汇</h3><div id="wordList"></div><div id="wordDetail" class="vocabExtra" aria-live="polite">点击词汇查看词义。</div></aside>
+    </div>
+    <div class="importBar">
+      <label for="fileInput"><strong>导入自己的第一章双语 JSON：</strong></label>
+      <input type="file" id="fileInput" accept=".json,application/json">
+      <button type="button" class="btn" id="clearButton">清除本地导入</button>
+      <div class="hint">文件只在此浏览器内读取并保存；刷新后保留。原文 TXT 暂不支持自动生成中文翻译。</div>
+      <div id="message" role="status" aria-live="polite"></div>
+    </div>
+    <h3 style="margin:25px 0 0">章节目录</h3><div class="chapterList" id="chapterList"></div>
+  </section>
+</main>
+<script>
+(function(){
+'use strict';
+const bookId='seporsi-mie-ayam-sebelum-mati';
+const chapters=['SCBD Parking Lot 17','Am I Living or Just Passing Time?','24 Jam Sebelum Mati','Seporsi Mie Ayam Sebelum Mati','Sekolah Parcok','Ale, Sang Sarung Beceng','Gurita Mami Louisse','Seloyang Kue Pandan Hijau','500 Perak Bolu Kukus','Bandring','Kerupuk Bangka Orang Buta','Seporsi Mie Ayam yang Terakhir'];
+const books=[
+  {title:'Seporsi Mie Ayam Sebelum Mati',author:'Brian Khrisna',desc:'12章 · 第1章双语阅读试用 · 其余章节尚未导入',icon:'🍜',cls:'',ready:true},
+  {title:'A Hui dan Meily',author:'R. Ananta Kusuma Wibawa',desc:'印尼原创连载 · 了解华人家庭和情感',icon:'💌',cls:'c2',url:'https://id.wikibooks.org/wiki/A_Hui_dan_Meily'},
+  {title:'Makan Siang Favorit',author:'Ariska Fisabilillah',desc:'短篇 · 日常对话与餐饮生活',icon:'🍚',cls:'c3',url:'https://id.wikibooks.org/wiki/Makan_Siang_Favorit'},
+  {title:'Kain dari Rumput',author:'Fransisca Emilia',desc:'短篇 · 乡村文化与成长',icon:'🌿',cls:'c4',url:'https://id.wikibooks.org/wiki/Kain_dari_Rumput'}
+];
+const sample=[
+  {idn:'Setelah semesta menghancurkan hidupmu berkali-kali meski kau sudah memohon dengan teramat sangat, rasa perih itu tak kunjung juga berhenti. Terkadang, tak percaya lagi pada kekuatan doa menjadi hal yang rasanya wajar sekali.',zh:'即使你一次又一次地苦苦祈求，命运仍不断摧毁你的生活，那种痛楚也始终没有停止。有时，连祈祷的力量都不再相信，似乎也是再正常不过的事。'},
+  {idn:'Seperti malam-malam lain, aku pulang selepas lembur. Orang-orang di kantor yang sudah menikah, mereka akan pulang ke keluarganya masing-masing. Sementara aku yang tidak punya siapa-siapa ini, sekarang masih duduk sendirian di parkiran mobil yang sudah lengang, bersama sebotol bir, rokok murah, dan sepotong kue ulang tahunku sendiri yang kubeli dari toko manisan dekat kantor.',zh:'像往常的夜晚一样，我加班后才回家。办公室里已婚的同事都各自回到家人身边。而一无所有、无人相伴的我，此刻还独自坐在逐渐空荡的停车场里，身边只有一瓶啤酒、廉价香烟，以及我从公司附近糖果店买给自己的生日蛋糕。'}
+];
+const vocab=[
+  ['lembur','加班','pulang selepas lembur：加班后回家'],
+  ['kesepian','孤独','sepi（冷清）→ kesepian（孤独）'],
+  ['sendirian','一个人、独自','sendiri（自己、独自）→ sendirian'],
+  ['lengang','空荡、冷清','parkiran yang sudah lengang：空荡的停车场'],
+  ['berkali-kali','一次又一次','重复的 kali 表示多次'],
+  ['tak kunjung','迟迟不、始终没有','tak kunjung berhenti：一直没有停止']
+];
+const storageKey='indo-books-private-chapter-v1';
+const doneKey='indo-books-chapter-done-v1',favKey='indo-books-fav-v1';
+let mode='both',chapter=null,done=false,fav=false;
+const $=id=>document.getElementById(id);
+function store(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(e){notice('浏览器无法保存本地数据，请检查隐私模式或存储空间。',true);return false;}}
+function read(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
+function notice(msg,error){const el=$('message');el.textContent=msg;el.classList.toggle('error',!!error);}
+function valid(doc){return !!(doc && doc.schema==='indo-bilingual-chapter-v1' && doc.bookId===bookId && doc.chapter===1 && Array.isArray(doc.paragraphs) && doc.paragraphs.length>0 && doc.paragraphs.length<250 && doc.paragraphs.every(p=>typeof p.idn==='string' && typeof p.zh==='string' && p.idn.length<10000 && p.zh.length<10000));}
+function cover(book){const el=document.createElement('div');el.className='cover '+book.cls;const symbol=document.createElement('small');symbol.textContent=book.icon;const title=document.createElement('strong');title.textContent=book.title;el.append(symbol,title);return el;}
+function shelf(){
+  const host=$('bookGrid');host.replaceChildren();
+  books.forEach(function(b,i){
+    const card=document.createElement('article');card.className='bookCard'+(b.ready?' ready':'');
+    const top=document.createElement('div');top.className='bookTop';top.appendChild(cover(b));
+    const info=document.createElement('div');const title=document.createElement('h2');title.className='bookTitle';title.textContent=b.title;
+    const by=document.createElement('p');by.className='byline';by.textContent='作者：'+b.author;info.append(title,by);top.appendChild(info);
+    const desc=document.createElement('p');desc.className='bookDesc';desc.textContent=b.desc;
+    const bottom=document.createElement('div');bottom.className='bookBottom';
+    const tag=document.createElement('span');tag.className='pill';tag.textContent=b.ready?'第1章可读':'未导入正文';
+    const a=document.createElement('a');a.className='btn';a.textContent=b.ready?'开始阅读':'查看原文来源';a.href=b.ready?'#chapter-1':b.url;
+    if(!b.ready){a.target='_blank';a.rel='noopener noreferrer';}
+    bottom.append(tag,a);card.append(top,desc,bottom);host.appendChild(card);
+  });
+}
+function renderWords(){
+  const host=$('wordList');host.replaceChildren();vocab.forEach(function(w){
+    const b=document.createElement('button');b.className='word';b.type='button';
+    const name=document.createElement('b');name.textContent=w[0];const meaning=document.createElement('span');meaning.textContent=w[1];b.append(name,meaning);
+    b.addEventListener('click',()=>{$('wordDetail').textContent=w[2];});host.appendChild(b);
+  });
+}
+function speakText(text){
+  if(!('speechSynthesis' in window)){notice('浏览器没有朗读功能。',true);return;}
+  try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='id-ID';u.rate=.87;const voice=(speechSynthesis.getVoices()||[]).find(v=>/^id([-_]|$)/i.test(v.lang||''));if(voice)u.voice=voice;speechSynthesis.speak(u);}catch(e){notice('朗读启动失败，请检查浏览器语音设置。',true);}
+}
+function renderParagraphs(){
+  const list=chapter?chapter.paragraphs:sample;
+  const host=$('paragraphs');host.replaceChildren();
+  list.forEach(function(p,i){
+    const div=document.createElement('section');div.className='para';
+    const id=document.createElement('p');id.className='idText';id.lang='id';id.textContent=p.idn;
+    const trans=document.createElement('p');trans.className='zhText';trans.textContent=p.zh;
+    const tools=document.createElement('div');tools.className='paraActions';
+    const audio=document.createElement('button');audio.className='tiny';audio.textContent='🔊 朗读本段';audio.type='button';audio.addEventListener('click',()=>speakText(p.idn));tools.appendChild(audio);
+    if(mode==='id')trans.hidden=true;
+    if(mode==='reveal'){trans.hidden=true;const toggle=document.createElement('button');toggle.className='tiny';toggle.type='button';toggle.textContent='显示中文';toggle.addEventListener('click',()=>{trans.hidden=!trans.hidden;toggle.textContent=trans.hidden?'显示中文':'隐藏中文';});tools.appendChild(toggle);}
+    div.append(id,trans,tools);host.appendChild(div);
+  });
+  $('readerStatus').textContent=chapter?'已导入第一章全文 · '+list.length+' 段 · 数据仅保存于此浏览器':'真实原著短节选（2段）· 导入个人文件后显示第一章全文';
+  $('readingNote').textContent=chapter?'当前为你在此浏览器中导入的第一章印中对照；本地导入不会上传到服务器，也不会进入公开 GitHub 仓库。':'公开页面仅显示开头短节选。要阅读完整第一章的印中对照，请在本页下方导入你自己的 JSON 文件（数据仅在当前浏览器保存）。';
+}
+function renderChapters(){
+ const host=$('chapterList');host.replaceChildren();
+ chapters.forEach(function(name,i){const b=document.createElement('button');b.type='button';b.className='chapterBtn'+(i===0?' current':'');b.textContent=String(i+1).padStart(2,'0')+' · '+name+(i===0?'（可读）':'（待导入）');b.disabled=i!==0;if(i===0)b.addEventListener('click',()=>{location.hash='chapter-1';window.scrollTo(0,0);});host.appendChild(b);});
+}
+function renderButtons(){
+ document.querySelectorAll('[data-mode]').forEach(el=>{const selected=el.dataset.mode===mode;el.classList.toggle('on',selected);el.setAttribute('aria-pressed',String(selected));});
+ $('doneButton').textContent=done?'✓ 已读完第1章':'标记读完';$('doneButton').classList.toggle('on',done);
+ $('favButton').textContent=fav?'★ 已收藏':'☆ 收藏';$('favButton').classList.toggle('on',fav);
+}
+function route(){
+ const isReader=location.hash==='#chapter-1';$('readerPage').hidden=!isReader;$('shelfPage').hidden=isReader;$('where').hidden=!isReader;
+ if(isReader){renderParagraphs();renderChapters();renderButtons();}window.scrollTo(0,0);
+}
+document.querySelectorAll('[data-mode]').forEach(el=>el.addEventListener('click',()=>{mode=el.dataset.mode;renderButtons();renderParagraphs();}));
+$('fileInput').addEventListener('change',async function(){
+  const file=this.files&&this.files[0];if(!file)return;
+  if(file.size>2*1024*1024){notice('导入文件过大（最多 2 MB）。',true);return;}
+  try{const doc=JSON.parse(await file.text());if(!valid(doc))throw Error('格式不符合第一章双语 JSON 规范。');chapter=doc;if(store(storageKey,doc)){notice('第一章已导入：'+doc.paragraphs.length+' 段，含中文翻译。');renderParagraphs();}}catch(e){notice('导入失败：'+e.message,true);}finally{this.value='';}
+});
+$('clearButton').addEventListener('click',function(){chapter=null;try{localStorage.removeItem(storageKey);}catch(e){}renderParagraphs();notice('已清除本浏览器的导入正文。');});
+$('copyButton').addEventListener('click',async function(){
+ const text=(chapter?chapter.paragraphs:sample).map(p=>p.idn+'\n'+(mode==='id'?'':p.zh)).join('\n\n');
+ try{await navigator.clipboard.writeText('SCBD Parking Lot 17\n\n'+text);notice('已复制当前显示的本章内容。');}catch(e){notice('复制失败：浏览器可能要求 HTTPS 或复制权限。',true);}
+});
+$('doneButton').addEventListener('click',function(){done=!done;store(doneKey,done);renderButtons();});
+$('favButton').addEventListener('click',function(){fav=!fav;store(favKey,fav);renderButtons();});
+window.addEventListener('hashchange',route);
+const saved=read(storageKey);if(valid(saved))chapter=saved;done=read(doneKey)===true;fav=read(favKey)===true;
+shelf();renderWords();route();
+})();
+</script>
+</body>
+</html>
