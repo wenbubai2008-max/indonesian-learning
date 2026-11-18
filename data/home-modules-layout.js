@@ -5,6 +5,7 @@
     {key:'roots',title:'词根家族',icon:'🌱',desc:'从一个词根，理解同根表达与口语变体。',tag:'词根资料库',tagId:'rootFamilyTag',open:function(){window.location.href='root-families/index.html';}},
     {key:'weak',title:'弱项强化',icon:'🎯',desc:'只看快练错题与阅读陌生词；掌握另需验证。',tag:'专项错词',open:function(){if(typeof window.openWeaknessV2==='function')window.openWeaknessV2();}},
     {key:'difficulty',title:'难点解释',icon:'💡',desc:'辨析易混词，理解构词和真实用法。',tag:'7 个难点',id:'difficultyModule',open:function(){showDifficultyList();if(typeof window.go==='function')window.go('difficulty');}},
+    {key:'books',title:'双语书籍',icon:'📖',desc:'现代小说 · 逐段印中对照 · 书架阅读。',tag:'进入书架',open:function(){window.location.href='books/index.html';}},
     {key:'quick',title:'快速练习',icon:'⚡',desc:'短时练习到期词和容易答错的词。',tag:'间隔复现',open:function(){if(typeof window.openQuickPracticeV2==='function')window.openQuickPracticeV2();}},
     {key:'automation',title:'自动训练',icon:'⚙️',desc:'看中文选词 · 句子选词 · 延迟验证。',tag:'计算中',tagId:'automationTag',open:function(){if(typeof window.openAutomationTraining==='function')window.openAutomationTraining();}},
 
