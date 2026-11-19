@@ -1,0 +1,370 @@
+{
+  "date": "2026-11-19",
+  "session": "pm",
+  "time": "18:00",
+  "day": 90,
+  "title": "18:00 晚课｜Kado Ibu Masih Menuju Alamat Lama · 给妈妈的生日礼物还在往旧地址送",
+  "write_status": "lesson_complete",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "variation"
+  },
+  "new_words": [
+    "semakin",
+    "rumit",
+    "pintas"
+  ],
+  "vocab": [
+    {
+      "word": "semakin",
+      "display": "semakin",
+      "audio_text": "semakin",
+      "cn": "越来越；越……越……",
+      "en": "increasingly; the more … the more …",
+      "root": "makin",
+      "root_cn": "越发；愈加",
+      "formation": "se- + makin → semakin，和 makin 意思相同。常见结构：semakin + 形容词（semakin mahal、semakin ramai）；Semakin A, semakin B（越A越B）；semakin lama semakin …（越来越……）；semakin hari semakin …（一天比一天……）。",
+      "example": "Semakin lama dia jualan di pasar, semakin banyak kenalannya di sana.",
+      "example_cn": "他在市场摆摊越久，在那儿认识的人就越多。（jualan = berjualan）",
+      "synonym_note": "lebih 是比较“更……”，通常有比较对象（lebih mahal daripada kemarin）；semakin 强调随着时间或条件变化“越来越……”，不需要比较对象。kian 意思相同，多见于新闻和书面（kian parah）。口语说法：日常更常说 makin（Makin sore makin macet）；书面和正式讲话里多写 semakin。",
+      "usage_note": "今晚新词。对话里 Mas Andi 说 Semakin sore, jalanan semakin macet：前后两个 semakin 构成“越……越……”，前半句是条件，后半句是结果。",
+      "everyday": "日常聊天多说 makin；semakin 在书面、新闻和比较正式的场合更常见，口头说也完全可以",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "rumit",
+      "display": "rumit",
+      "audio_text": "rumit",
+      "cn": "复杂的；头绪多、难办的",
+      "en": "complicated; intricate",
+      "root": "rumit",
+      "root_cn": "复杂",
+      "formation": "基础形容词，不拆词缀。派生：kerumitan（复杂之处、复杂性）。常见搭配：prosesnya rumit（手续复杂）、masalah yang rumit、urusan rumit、cukup rumit、rumit banget。",
+      "example": "Alur film misteri itu terlalu rumit, aku sampai bingung siapa pelakunya.",
+      "example_cn": "那部悬疑片的情节太复杂了，我都搞不清凶手是谁。",
+      "synonym_note": "sulit / susah 是“难”，侧重做起来费劲（soalnya susah）；rumit 侧重环节多、头绪多、缠在一起（prosedur rumit、hubungan yang rumit）。ribet 是口语“麻烦、繁琐”，常带抱怨语气；说手续繁琐时 rumit 和 ribet 都能用，ribet 更随意。口语说法：抱怨手续麻烦时日常多说 ribet（Ribet banget sih!）；说问题、情节本身复杂用 rumit。",
+      "usage_note": "今晚新词。包裹已经交给快递员后再改地址 cukup rumit：系统里改不了，要等包裹退回仓库再重新寄。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "pintas",
+      "display": "pintas",
+      "audio_text": "pintas",
+      "cn": "抄近的；近路（最常用 jalan pintas）",
+      "en": "short cut (jalan pintas = shortcut)",
+      "root": "pintas",
+      "root_cn": "横穿；抄近",
+      "formation": "基础词，最常见于 jalan pintas（近路；比喻“捷径”）。同词根：pintasan（近道；电脑上的快捷方式）。常见搭配：lewat jalan pintas、tahu jalan pintas、ambil jalan pintas、cari jalan pintas（比喻：走捷径、投机取巧）。",
+      "example": "Sopir ojek itu lewat jalan pintas di gang kecil, tapi malah nyasar.",
+      "example_cn": "那个摩的司机走小巷里的近路，结果反倒迷路了。（nyasar = tersesat）",
+      "synonym_note": "jalan pintas 是“近路”，一定比原路近；jalan tikus 是口语“小巷小路”，常用来躲堵车，不一定更近。比喻义要分清：Jangan cari jalan pintas 常指“别投机取巧”，带批评意味。口语说法：日常也常说 potong jalan（抄近道：Kita potong jalan lewat sini aja）。",
+      "usage_note": "今晚新词。快递员 tahu jalan pintas lewat gang，三公里的路能很快绕过去，所以才能当天改送到新地址。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "berteriak",
+      "display": "berteriak",
+      "audio_text": "berteriak",
+      "cn": "喊叫；大声喊",
+      "en": "to shout; to yell",
+      "root": "teriak",
+      "root_cn": "喊",
+      "formation": "ber- + teriak → berteriak。同词根：teriakan（喊声）、meneriaki（冲着某人喊：meneriaki pencuri）、meneriakkan（喊出某内容：meneriakkan nama tim）。常见搭配：berteriak minta tolong、berteriak marah、berteriak kegirangan（高兴得大叫）、hampir berteriak。",
+      "example": "Penonton berteriak kegirangan waktu gol kemenangan dicetak di menit terakhir laga final.",
+      "example_cn": "决赛最后一分钟打进制胜球时，观众高兴得大叫起来。",
+      "synonym_note": "menjerit 是尖叫，多因为害怕、疼痛；memanggil 是“叫（人）”，不一定大声；berteriak 是一般的大声喊。berteriak 后面不直接接人：说“冲着某人喊”要用 berteriak kepada … 或 meneriaki …。口语说法：日常常说 teriak 或 teriak-teriak（Jangan teriak-teriak, udah malam!），正式叙述用 berteriak。",
+      "usage_note": "最近又答错了，今晚放进选择题和复述里练。今天08:00早课也复习过它（Raka 担心 Bu Dewi 会 berteriak marah），今晚换成打电话时急得 hampir berteriak。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kelabakan",
+      "display": "kelabakan",
+      "audio_text": "kelabakan",
+      "cn": "手忙脚乱；慌了神",
+      "en": "flustered; in a panic",
+      "root": "kelabakan",
+      "root_cn": "手忙脚乱；慌着应付",
+      "formation": "整体记作一个词，不拆词缀。常见搭配：langsung kelabakan、kelabakan mencari …（慌着找……）、bikin kelabakan（让人手忙脚乱）、kelabakan menjawab（被问得慌了）。",
+      "example": "Waktu bosnya tiba-tiba minta data penelitian itu, Dina kelabakan mencari file-nya.",
+      "example_cn": "老板突然要那份研究数据，迪娜手忙脚乱地找文件。",
+      "synonym_note": "panik 是心里“慌”；kelabakan 侧重慌得手忙脚乱、应付不过来，常接动作（kelabakan mencari kunci）。keteteran 是事情太多“跟不上、顾不过来”，不一定慌。口语说法：kelabakan 本身日常就常说，书面也能用。",
+      "usage_note": "此前学过的弱项词，今晚复习。Rini 一看到收货地址还是旧的，就 langsung kelabakan。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kepancing",
+      "display": "kepancing",
+      "audio_text": "kepancing",
+      "cn": "被激到；忍不住上钩、跟着起反应（口语）",
+      "en": "provoked; to take the bait",
+      "root": "pancing",
+      "root_cn": "钓；引诱；诱出反应",
+      "formation": "ke- + pancing → kepancing，口语形，相当于标准形 terpancing。同词根：memancing（钓鱼；挑起、引出）、pancingan（鱼饵；诱导的话）。常见搭配：kepancing emosi（被激得发火）、gampang kepancing、jangan kepancing、ikut kepancing。",
+      "example": "Jangan gampang kepancing kalau ada yang nyinggung soal gaji di grup kantor.",
+      "example_cn": "要是公司群里有人提工资的事，别轻易被激到。（nyinggung = menyinggung）",
+      "synonym_note": "kepancing / terpancing 是自己“被激起反应、上钩”；memancing 是主动“挑起、引出”：memancing emosi orang（故意激怒别人）。tersinggung 是“被冒犯、不高兴”，侧重心里受伤，不一定做出反应。口语说法：kepancing 就是口语形，正式文本写 terpancing（tidak terpancing emosi）。",
+      "usage_note": "此前学过的弱项词，今晚复习。对话最后 Rini 说 Untung Mas nggak ikut kepancing emosi：她刚才很急，客服却没跟着上火。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berat",
+      "display": "berat",
+      "audio_text": "berat",
+      "cn": "重的；沉重的；吃力的",
+      "en": "heavy; hard",
+      "root": "berat",
+      "root_cn": "重",
+      "formation": "基础形容词。派生：keberatan（介意、反对；超重）、memberatkan（加重负担）。常见搭配：paketnya berat、berat badan（体重）、tugas berat、berat hati（舍不得、不情愿）、kalau nggak keberatan（如果你不介意）。",
+      "example": "Badanku masih lemah habis sakit, jadi belum kuat angkat barang berat.",
+      "example_cn": "我病刚好，身子还虚，还搬不动重东西。（habis = setelah，angkat = mengangkat）",
+      "synonym_note": "反义词 ringan（轻）。berat 除了“重”，也说事情“吃力、沉重”（pekerjaan berat），和 susah（难）不同：soal ini susah 是题难，tugas ini berat 是担子重、费力。keberatan 是“介意、反对”：Kalau Kakak nggak keberatan, …。口语说法：berat 本身就常用；“很重”口语说 berat banget。",
+      "usage_note": "此前学过的词，今晚复习。阅读里 Paketnya cukup berat：一套六个陶瓷杯，所以运费也不便宜。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "hancur",
+      "display": "hancur",
+      "audio_text": "hancur",
+      "cn": "碎了；毁了；（计划、心情）全完了",
+      "en": "smashed; ruined",
+      "root": "hancur",
+      "root_cn": "碎；毁",
+      "formation": "hancur 本身就是词根。派生：menghancurkan（毁掉）、kehancuran（毁灭、崩溃）。常见搭配：hancur berkeping-keping（碎成一片片）、hatinya hancur（心碎）、rencananya hancur（计划全毁了）、nama baiknya hancur（名声毁了）。",
+      "example": "Hatinya hancur waktu tahu pacarnya diam-diam berkencan dengan orang lain.",
+      "example_cn": "她得知男朋友偷偷和别人约会，心都碎了。",
+      "synonym_note": "rusak 是坏了、出毛病，常常还能修；hancur 是碎掉、毁到没法挽回。说计划“泡汤”也可以说 batal（取消了），hancur 语气更重，带“全完了”的感觉。口语说法：日常也常说 ancur（Rencanaku ancur semua）。",
+      "usage_note": "今天08:00新学。早上说的是薯片被压碎，今晚迁移到“计划毁了”：Kalau kadonya telat, rencana kejutan buat ibu saya hancur。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Hari Senin, Rini memesan satu set cangkir keramik di sebuah toko online. Cangkir itu kado untuk ulang tahun ibunya hari Sabtu. Paketnya cukup berat, jadi ongkos kirimnya juga lumayan mahal. Kamis sore, paket itu belum juga sampai. Waktu Rini mengecek nomor resi, dia langsung kelabakan. Alamat tujuannya masih alamat kos lamanya di Tebet, bukan rumah ibunya di Kalibata. Ternyata aplikasi belanjanya masih menyimpan alamat lama sebagai alamat utama. Rini semakin panik karena paket itu sudah dibawa kurir. Dia menelepon toko dan hampir berteriak. Admin toko, Mas Andi, tetap sopan dan sabar. Dia menjelaskan bahwa mengubah alamat paket yang sudah di jalan cukup rumit. Lalu dia mencoba menghubungi kurirnya langsung.",
+    "cn": "周一，Rini 在一家网店订了一套陶瓷杯。这套杯子是送给妈妈周六过生日的礼物。包裹挺重，所以运费也不便宜。到了周四下午，包裹还是没到。Rini 一查运单号，立刻慌了手脚：收货地址还是她以前在 Tebet 租的宿舍，而不是妈妈在 Kalibata 的家。原来她的购物应用还把旧地址存成默认地址。包裹已经被快递员带走了，Rini 越想越慌。她给店里打电话，急得差点喊起来。店里的客服 Mas Andi 一直很有礼貌、很耐心。他解释说，包裹已经在路上了，再改地址挺麻烦的。接着他试着直接联系快递员。"
+  },
+  "dialogue": {
+    "title": "Rini 打电话催单、要改收货地址",
+    "twist": 5,
+    "lines": [
+      {
+        "speaker": "Rini",
+        "id": "Halo, Mas. Saya Rini, yang pesan set cangkir keramik hari Senin. Paketnya belum sampai, padahal katanya dua hari.",
+        "cn": "你好。我是 Rini，就是周一订了一套陶瓷杯的那个。包裹还没到，可当时说两天就能到。（pesan = memesan）"
+      },
+      {
+        "speaker": "Mas Andi",
+        "id": "Halo, Kak Rini. Sebentar ya, saya cek resinya dulu.",
+        "cn": "你好，Rini。请稍等，我先查一下运单。"
+      },
+      {
+        "speaker": "Rini",
+        "id": "Saya udah cek, Mas. Alamatnya masih kos lama saya di Tebet! Aduh, saya jadi kelabakan nih.",
+        "cn": "我已经查了。地址还是我在 Tebet 的旧宿舍！哎呀，我都慌了。（udah = sudah）"
+      },
+      {
+        "speaker": "Mas Andi",
+        "id": "Oh iya, Kak. Ternyata alamat utama di akun Kakak masih yang lama. Mau dipindah ke mana?",
+        "cn": "哦，对。原来您账号里的默认地址还是旧的。要改到哪里？"
+      },
+      {
+        "speaker": "Rini",
+        "id": "Ke rumah ibu saya di Kalibata. Itu kado ulang tahun, hari Sabtu harus udah sampai.",
+        "cn": "改到我妈妈在 Kalibata 的家。那是生日礼物，周六之前必须送到。"
+      },
+      {
+        "speaker": "Mas Andi",
+        "id": "Waduh, maaf, Kak. Paketnya udah dibawa kurir, jadi alamatnya nggak bisa diubah di sistem. Harus nunggu paketnya balik ke gudang dulu, baru dikirim ulang.",
+        "cn": "哎呀，抱歉。包裹已经被快递员带走了，系统里改不了地址。得等包裹先退回仓库，再重新寄出。（nggak = tidak，nunggu = menunggu）"
+      },
+      {
+        "speaker": "Rini",
+        "id": "Hah? Bisa seminggu dong, Mas. Kok rumit banget sih? Kalau kadonya telat, rencana kejutan buat ibu saya hancur.",
+        "cn": "啊？那得一个星期吧。怎么这么复杂啊？礼物要是晚到，我给妈妈准备的惊喜就全泡汤了。（buat = untuk）"
+      },
+      {
+        "speaker": "Mas Andi",
+        "id": "Saya ngerti, Kak. Sebentar, saya cari akal dulu. Saya coba telepon kurirnya langsung.",
+        "cn": "我明白。稍等，我想想办法。我试着直接给快递员打电话。（ngerti = mengerti）"
+      },
+      {
+        "speaker": "Mas Andi",
+        "id": "Kak, ternyata kurirnya masih di Tebet. Kalau Kakak setuju, kami bisa minta dia antar ke Kalibata hari ini. Paketnya memang berat, tapi jaraknya cuma tiga kilo, dan dia tahu jalan pintas lewat gang.",
+        "cn": "Rini，原来快递员还在 Tebet。如果您同意，我们可以请他今天就送到 Kalibata。包裹是挺重，不过距离只有三公里，而且他知道穿小巷的近路。（antar = mengantar，cuma = hanya）"
+      },
+      {
+        "speaker": "Rini",
+        "id": "Serius, Mas? Setuju banget! Maaf ya, tadi saya hampir teriak-teriak.",
+        "cn": "真的吗？太同意了！对不起啊，刚才我差点嚷起来。（banget = sekali）"
+      },
+      {
+        "speaker": "Mas Andi",
+        "id": "Nggak apa-apa, Kak. Tolong kirim alamat lengkapnya lewat chat sekarang, ya. Soalnya semakin sore, jalanan semakin macet.",
+        "cn": "没关系。请现在就在聊天里把详细地址发过来。因为越到傍晚，路上越堵。"
+      },
+      {
+        "speaker": "Rini",
+        "id": "Siap, saya kirim sekarang. Makasih banyak, Mas. Untung Mas nggak ikut kepancing emosi tadi.",
+        "cn": "好的，我现在就发。太感谢了。还好你刚才没跟着我一起上火。（makasih = terima kasih）"
+      }
+    ],
+    "practice": {
+      "role": "Rini",
+      "lines": [
+        {
+          "speaker": "Rini",
+          "id": "Mas, paket saya belum sampai, padahal udah tiga hari.",
+          "cn": "我的包裹还没到，可都已经三天了。"
+        },
+        {
+          "speaker": "Mas Andi",
+          "id": "Ternyata alamatnya masih kos lama Kakak di Tebet.",
+          "cn": "原来地址还是您在 Tebet 的旧宿舍。"
+        },
+        {
+          "speaker": "Rini",
+          "id": "Tolong pindah ke rumah ibu saya, Mas. Sabtu harus sampai.",
+          "cn": "请改到我妈妈家吧，周六必须送到。"
+        },
+        {
+          "speaker": "Mas Andi",
+          "id": "Maaf, Kak, paket yang udah di jalan susah diubah alamatnya.",
+          "cn": "抱歉，已经在路上的包裹很难改地址。"
+        },
+        {
+          "speaker": "Rini",
+          "id": "Kok rumit banget? Kalau telat, kejutan buat ibu saya hancur.",
+          "cn": "怎么这么复杂？要是晚了，给妈妈的惊喜就泡汤了。"
+        },
+        {
+          "speaker": "Mas Andi",
+          "id": "Kalau Kakak setuju, kurirnya bisa lewat jalan pintas hari ini.",
+          "cn": "如果您同意，快递员今天可以走近路送过去。"
+        }
+      ]
+    }
+  },
+  "rewrite": [
+    {
+      "kind": "twist",
+      "task": "转折应对：你是网店客服 Mas Andi。另一位顾客 Pak Budi 打来电话，说包裹寄错了地址，要改到他在 Cawang 的办公室，可包裹已经在快递员手上。先道歉并说明为什么不好改（用 rumit），再用 Ternyata 说明你查到的情况，最后用本周句型 Kalau …, kami bisa … 提出办法（用 jalan pintas）。按句子骨架填空，用 kami / Bapak。",
+      "frame": "Mohon maaf, Pak, paketnya …… , jadi …… . Ternyata kurirnya …… . Kalau Bapak setuju, kami bisa …… .",
+      "reference_answer": "Mohon maaf, Pak, paketnya sudah dibawa kurir, jadi mengubah alamatnya agak rumit. Ternyata kurirnya masih di dekat Cawang. Kalau Bapak setuju, kami bisa minta dia antar ke kantor Bapak sore ini lewat jalan pintas, supaya paketnya nggak nyasar.",
+      "reference_cn": "非常抱歉，包裹已经被快递员带走了，所以改地址有点复杂。原来快递员还在 Cawang 附近。如果您同意，我们可以请他今天下午走近路送到您办公室，免得包裹送错地方。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "顾客在电话里越说越急，可客服一直慢慢解释，没有跟着发火。同事听完说：“Hebat, Andi sama sekali nggak ____ emosi.” 哪项最自然？",
+        "options": [
+          "memancing",
+          "kepancing",
+          "pancingan",
+          "menahan"
+        ],
+        "answer_index": 1,
+        "answer": "kepancing",
+        "explain": "kepancing emosi = 被激得发火（自己上钩），nggak kepancing emosi 就是“没被激到”，正好说客服没跟着发火。memancing emosi 是主动“挑起别人的火气”，nggak memancing emosi 意思变成“他没去激怒别人”，和情境的重点不对；pancingan 是名词“诱饵、引子”，不能放在 nggak 后面当谓语；nggak menahan emosi 是“没忍住情绪”，意思正好相反。标准形 terpancing 也对，但不在选项里。"
+      },
+      {
+        "type": "choice",
+        "prompt": "晚上在停车场，有人想偷一顶头盔。管停车的大叔看见了，马上 ____ “Maling!”，那人吓得跑了。哪项最自然？",
+        "options": [
+          "berbisik",
+          "mengeluh",
+          "berteriak",
+          "bergumam"
+        ],
+        "answer_index": 2,
+        "answer": "berteriak",
+        "explain": "喊“抓小偷！”要大声，用 berteriak。berbisik 是“小声说、耳语”，bergumam 是“嘟囔”，声音都太小，赶不走小偷；mengeluh 是“抱怨、诉苦”，和喊“Maling!”对不上。口语里也常说 teriak “Maling!”。如果要说“冲着那个人喊”，用 meneriaki orang itu，不说 berteriak orang itu。"
+      },
+      {
+        "type": "choice",
+        "prompt": "客服提醒顾客赶快发地址：“Kirim sekarang aja, Kak. Semakin sore, jalan ke Kalibata ____ macet.” 哪项放进空格最自然？",
+        "options": [
+          "semakin",
+          "lebih",
+          "paling",
+          "terlalu"
+        ],
+        "answer_index": 0,
+        "answer": "semakin",
+        "explain": "前面已经有 Semakin sore，后面要接 semakin 才构成“越……越……”（口语可说 Makin sore makin macet）。lebih macet 是“更堵”，要有比较对象（lebih macet daripada pagi），不能和前面的 semakin 配对；paling macet 是“最堵”；terlalu macet 是“太堵了”，都不是“随时间越来越……”的意思。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Mengubah alamat paket yang sudah dibawa kurir ternyata cukup ____.（复杂、难办）",
+        "answer": "rumit",
+        "explain": "rumit = 环节多、头绪多、复杂。这里要等包裹退回仓库再重寄，手续多，所以说 cukup rumit。口语抱怨时也常说 ribet。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Begitu sadar alamatnya salah, Rini langsung ____.（慌得手忙脚乱）",
+        "answer": "kelabakan",
+        "explain": "kelabakan = 慌得手忙脚乱、应付不过来。只说心里慌可以用 panik；这里是一发现地址错了就手忙脚乱，用 langsung kelabakan 最自然。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：快递员知道一条穿过小巷的近路。",
+        "tokens": [
+          "Kurirnya",
+          "tahu",
+          "jalan",
+          "pintas",
+          "lewat",
+          "gang."
+        ],
+        "answer": "Kurirnya tahu jalan pintas lewat gang.",
+        "answer_cn": "快递员知道一条穿过小巷的近路。",
+        "explain": "Kurirnya（那个快递员）作主语，tahu 后面接宾语 jalan pintas（近路），lewat gang（经过小巷）说明近路走哪儿。pintas 几乎总跟在 jalan 后面一起用。"
+      }
+    ]
+  },
+  "review": {
+    "title": "可选 · 30 秒复述",
+    "steps": [
+      "用 kelabakan、rumit、jalan pintas、kepancing 说说 Rini 的包裹出了什么问题、为什么不好办、最后怎么解决的。"
+    ],
+    "retell_reference": "Rini memesan satu set cangkir keramik untuk ulang tahun ibunya, tapi alamatnya masih alamat kos lama. Dia langsung kelabakan dan hampir berteriak di telepon. Mengubah alamat paket yang sudah dibawa kurir ternyata rumit. Untung Mas Andi nggak kepancing emosi. Dia menelepon kurirnya, dan kurir itu mau mengantar paket yang berat itu ke Kalibata lewat jalan pintas.",
+    "retell_reference_cn": "Rini 给妈妈订了一套陶瓷杯当生日礼物，可地址还是旧宿舍。她立刻慌了，打电话时差点喊起来。包裹已经被快递员带走，再改地址原来很麻烦。还好 Mas Andi 没被激得发火。他给快递员打了电话，快递员愿意走小巷近路，把那个很重的包裹送到 Kalibata。"
+  },
+  "lesson_focus": {
+    "words": [
+      "berteriak",
+      "kelabakan",
+      "semakin"
+    ],
+    "patterns": [
+      {
+        "pattern": "… belum …, padahal …",
+        "cn": "……还没……，可是……",
+        "function": "state-problem",
+        "example": "Paketnya belum sampai, padahal katanya dua hari.",
+        "example_cn": "包裹还没到，可当时说两天就能到。"
+      },
+      {
+        "pattern": "Semakin …, … semakin …",
+        "cn": "越……，……越……",
+        "example": "Soalnya semakin sore, jalanan semakin macet.",
+        "example_cn": "因为越到傍晚，路上越堵。"
+      }
+    ]
+  }
+}
