@@ -838,6 +838,14 @@ try {
     okNew(hv.includes('x.dialogue.practice')&&hv.includes('class="vcEveryday"')&&hv.includes('.vcRecall:not(.vcOpen) .vcEveryday'),'page: 藏台词 uses the practice dialogue; 日常常说 on cards, hidden while covered');
   }
 
+  // 2026-11-19 (REGRESSION-GUARD §58): select-to-translate + 加入陌生词 on AM 高频句子 and PM 情景对话 lines.
+  {
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const lk=read('data/reading-word-lookup.js'),hv=read('data/history-v2.js');
+    okNew(lk.includes("const LOOKUP_SCOPE='.rl-text,.dailyFixReading,#daily .reading,#daily .dfSentId'")&&(lk.match(/node\.closest\(LOOKUP_SCOPE\)/g)||[]).length===2&&lk.includes("replace(/🔊/g,' ')"),'lookup: one scope list (reading + .dfSentId) for the gate and the example sentence; 🔊 kept out of the example');
+    okNew((hv.match(/class="dailyFixId dfSentId"/g)||[]).length===2&&indexHtml.includes('data/reading-word-lookup.js?v=20261119-sentences1'),'page: 高频句子 and 情景对话 lines carry .dfSentId; lookup script cache-busted');
+  }
+
   // 2026-10-18 (REGRESSION-GUARD §33): 带学模式 — a view over the lesson's own content; own progress key only.
   {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;

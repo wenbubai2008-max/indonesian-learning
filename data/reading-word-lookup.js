@@ -12,6 +12,8 @@
   const translateQueue=[];
   let activeTranslations=0,weakWorkerBusy=false,weakWorkerTimer=null;
 
+  // 2026-11-19 (user request): select-to-translate and 加入陌生词 also work on the AM 高频句子 lines and the PM 情景对话 lines (.dfSentId).
+  const LOOKUP_SCOPE='.rl-text,.dailyFixReading,#daily .reading,#daily .dfSentId';
   function ensureStyle(){
     if(document.getElementById('readingWordLookupStyle'))return;
     const st=document.createElement('style');
@@ -175,7 +177,7 @@
 
   function escapeHtml(s){return String(s==null?'':s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
   function sentenceFrom(node,raw){
-    const box=node.closest('.rl-text,.dailyFixReading,#daily .reading');const text=(box&&(box.innerText||box.textContent)||'').replace(/\s+/g,' ').trim();if(!text)return '';
+    const box=node.closest(LOOKUP_SCOPE);const text=(box&&(box.innerText||box.textContent)||'').replace(/🔊/g,' ').replace(/\s+/g,' ').trim();if(!text)return '';
     const p=text.toLowerCase().indexOf(String(raw).toLowerCase());if(p<0)return text.slice(0,220);
     let a=Math.max(0,p-120),b=Math.min(text.length,p+String(raw).length+120);
     const left=text.slice(0,p).search(/[.!?。！？][^.!?。！？]*$/);if(left>=0)a=left+1;
@@ -184,7 +186,7 @@
   }
   function sourceInfo(node){
     const daily=node.closest('#daily');
-    if(daily){const date=(document.getElementById('dailyMeta')&&document.getElementById('dailyMeta').textContent||'').trim();const nav=daily.querySelector('.dailyFixMid span');const title=document.getElementById('dailyTitle');const label=String((nav&&nav.textContent)||(title&&title.textContent)||'');const session=/19:00|晚间/.test(label)?'19:00':(/08:00|早间/.test(label)?'08:00':'');return {date:date,session:session,source:'每日学习阅读'};}
+    if(daily){const date=(document.getElementById('dailyMeta')&&document.getElementById('dailyMeta').textContent||'').trim();const nav=daily.querySelector('.dailyFixMid span');const title=document.getElementById('dailyTitle');const label=String((nav&&nav.textContent)||(title&&title.textContent)||'');const session=/19:00|晚间/.test(label)?'19:00':(/08:00|早间/.test(label)?'08:00':'');return {date:date,session:session,source:node.closest('.dfSentId')?(node.closest('.dfSentId').querySelector('b')?'每日学习对话':'每日学习高频句子'):'每日学习阅读'};}
     const readingPage=node.closest('#readingPage');if(readingPage){const meta=String(document.getElementById('readingMeta')&&document.getElementById('readingMeta').textContent||'');const dm=meta.match(/\b(20\d{2}-\d{2}-\d{2})\b/),tm=meta.match(/\b(08:00|19:00)\b/);return {date:dm?dm[1]:'',session:tm?tm[1]:'',source:'每日阅读库'};}
     const extensive=node.closest('#extensive');if(extensive)return {date:(document.getElementById('extensiveMeta')&&document.getElementById('extensiveMeta').textContent||'').split('·')[0].trim(),session:'',source:'泛读'};
     return {date:'',session:'',source:'阅读短文'};
@@ -240,7 +242,7 @@
     const sel=window.getSelection&&window.getSelection();if(!sel||sel.rangeCount===0||sel.isCollapsed)return;
     const txt=sel.toString().trim();if(!txt||txt.length>40||/\s/.test(txt))return;
     const range=sel.getRangeAt(0),node=range.commonAncestorContainer.nodeType===1?range.commonAncestorContainer:range.commonAncestorContainer.parentElement;
-    if(!node||!node.closest||!node.closest('.rl-text,.dailyFixReading,#daily .reading'))return;
+    if(!node||!node.closest||!node.closest(LOOKUP_SCOPE))return;
     const rect=range.getBoundingClientRect();if(!rect||(!rect.width&&!rect.height))return;
     const sig=norm(txt)+'|'+Math.round(rect.left)+'|'+Math.round(rect.top),now=Date.now();if(sig===lastSelection&&now-lastSelectionAt<350)return;lastSelection=sig;lastSelectionAt=now;show(txt,rect,node);
   }
