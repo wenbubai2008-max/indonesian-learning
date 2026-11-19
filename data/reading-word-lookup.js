@@ -251,6 +251,33 @@
   else{document.addEventListener('mouseup',()=>setTimeout(handleSelection,0));document.addEventListener('touchend',()=>setTimeout(handleSelection,80));}
   document.addEventListener('mousedown',e=>{if(!e.target.closest('.rw-popup'))hide();});document.addEventListener('scroll',hide,true);
   window.addEventListener('online',()=>scheduleWeakWorker(500));
-  function boot(){ensureStyle();seedOldMissingOnce();scheduleWeakWorker(800);}
+  // 2026-11-19 (user report: keripik showed 筹码): a word saved from select-to-translate before any lesson taught it keeps the
+  // machine translation of the bare word, which can be badly wrong. Once a lesson (DAILY_VOCAB_DB) or the master list has a
+  // curated meaning for that exact word, the curated meaning replaces the machine one — only for 加入陌生词 records
+  // (reason manual_unknown), only cn/en/root fields, idempotent. Runs on every device, so each one repairs its own pool.
+  function curatedMeaning(k){
+    let best=null;
+    [].concat(Array.isArray(window.DAILY_VOCAB_DB)?window.DAILY_VOCAB_DB:[],Array.isArray(window.MASTER_VOCAB_OBJECTS)?window.MASTER_VOCAB_OBJECTS:[]).forEach(function(x){
+      if(!x||!x.cn||String(x.cn).trim()===''||norm(x.word)!==k)return;
+      if(!best||String(x.last_seen||x.date||'')>String(best.last_seen||best.date||''))best=x;
+    });
+    return best;
+  }
+  function repairMachineMeanings(){
+    const p=weakPool();if(!p||typeof p.all!=='function'||typeof p.enrich!=='function')return 0;
+    let n=0;const um=unknownMap();let umChanged=false;
+    p.all().forEach(function(r){
+      if(!r||!r.word||![].concat(r.reasons||[],r.reason_history||[]).includes('manual_unknown'))return;
+      const k=norm(r.word),c=curatedMeaning(k);if(!c)return;
+      if(String(r.cn||'').trim()===String(c.cn).trim())return;
+      p.enrich(k,{cn:c.cn,en:c.en||'',root:c.root||'',root_cn:c.root_cn||''});n++;
+      if(um[k]&&String(um[k].cn||'').trim()!==String(c.cn).trim()){um[k].cn=c.cn;umChanged=true;}
+    });
+    if(umChanged){saveStore('indo_unknown_words',um);}
+    if(n||umChanged)window.dispatchEvent(new CustomEvent('unknown-vocab-changed'));
+    return n;
+  }
+  window.ReadingLookupRepair=repairMachineMeanings;
+  function boot(){ensureStyle();seedOldMissingOnce();scheduleWeakWorker(800);setTimeout(repairMachineMeanings,1500);window.addEventListener('load',function(){setTimeout(repairMachineMeanings,800);},{once:true});}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 })();
