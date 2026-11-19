@@ -336,7 +336,15 @@
         "max": 3,
         "min_due": 3
       },
-      "fresh_error_rule": "真实新错优先回到下一节课，但每节最多min(3,max(2,复习数-3))个，其余名额留给到期词；没排上的新错保持“新错”身份，下一节继续优先（fresh_errors_deferred）。7天内没有任何主动曝光、但7天内答错过的词也算新错。只在排序中执行，不进入校验器",
+      "fresh_error_rule": "真实新错优先回到下一节课，但每节最多min(3,max(2,复习数-3))个，其余名额留给到期词（2026-11-20 起另受 fresh_error_spacing 的间隔与7天上限约束）；没排上的新错保持“新错”身份，下一节继续优先（fresh_errors_deferred）。7天内没有任何主动曝光、但7天内答错过的词也算新错。只在排序中执行，不进入校验器",
+      "fresh_error_spacing": {
+        "enabled": true,
+        "effective_date": "2026-11-20",
+        "gap_lessons": 1,
+        "max_active_7d": 3,
+        "why": "2026-11-19 用户反馈“早晚课复习词经常重复”：答错一次就算真实新错，直接解除全部冷却，下一节课马上又排进来；课程小测本身答错也算，于是“刚复习→当节答错→下一节又出现”反复循环。11-09 至 11-19 共 22 节课里 berteriak 6 次、pengaturan 5 次当核心词，peserta、kerugian 早课复习后当晚又进重点复习，berantakan 前一晚应用后次日早课又进循环。",
+        "rule": "真实新错仍然优先回来，但：①上一节已完成课程（gap_lessons=1）里刚有过主动曝光的词，至少隔一节课再进 review/cycle/application 核心名额；②最近7天已有 max_active_7d=3 次主动曝光的词，新错不再解除冷却，留给快速练习、自动训练和听词训练去练。被挡住的新错保持“新错”身份，间隔满足后照常 +100 优先。只在合法替代充足时由校验器报错（PM_EXPOSURE_COOLDOWN / AM_EXPOSURE_COOLDOWN），不卡发布；课文里的自然出现不受影响。"
+      },
       "hard_word_wrong_count": 3,
       "hard_word_rule": "累计答错≥3次的词标为hard_word：复习时换题型（造句/中译印/辨析），并加一句近义辨析或典型搭配讲解，不只重复词卡。软规则",
       "validator": "AM_EXPOSURE_COOLDOWN / PM_EXPOSURE_COOLDOWN / PM_APPLICATION_EXPOSURE_COOLDOWN：只在合法替代充足时报错，不卡发布；当天AM新词进application不受限",

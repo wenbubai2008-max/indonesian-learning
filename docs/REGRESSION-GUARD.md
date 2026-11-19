@@ -362,6 +362,7 @@
   4. **被动出现不推进复习间隔**，只用于冷却判断；仍在冷却中的词列在排序输出 `avoid_in_text`，生成时不写进阅读/对话/例句，`natural_recurrence` 自动排除它们。
   5. **错词配额**：真实新错每节最多 `min(3, max(2, 复习数-3))` 个，其余名额给到期词；没排上的新错保持新错身份，下一节继续优先（`fresh_errors_deferred`）。7 天内没有任何主动曝光、但 7 天内答错过的词也算新错。只在排序中执行。
   6. **难词**：累计答错 ≥3 次标 `hard`，复习时换题型并加辨析/搭配讲解（软规则）。
+  7. **新错间隔**（2026-11-20 起，`fresh_error_spacing`）：用户 11-19 反馈“早晚课复习词经常重复”。原因：答错一次（包括当节课小测）就解除全部冷却，词在紧接着的下一节又出现（11-09 至 11-19 共 22 节，berteriak 6 次、pengaturan 5 次当核心词；peserta、kerugian 早课复习后当晚又进重点复习）。现在：上一节刚有主动曝光的词，新错也至少隔一节课（`fresh_gap_1_lesson`）；7 天内已有 3 次主动曝光的词，新错不再解除冷却（`fresh_max_3_in_7d`）。被挡住的词保持新错身份，间隔满足后照常 +100 优先，不进 `avoid_in_text`。校验器沿用 `*_EXPOSURE_COOLDOWN`（只在合法替代充足时报错，不卡发布）；缺少该配置或早于生效日时行为不变。测试 L12。
 - 以上 1–3 由校验器执行：`AM_EXPOSURE_COOLDOWN` / `PM_EXPOSURE_COOLDOWN` / `PM_APPLICATION_EXPOSURE_COOLDOWN`，只在合法替代充足时报错，真实新错例外，不卡发布。
 - **生成端**：07:30 早课与 17:30 晚课都先运行 `node .github/scripts/rank-review-candidates.js --date D --session am|pm`，再锁定复习词。
 - **不变**：新词/复习公式、mastered 判定、课程合同、AM/PM 题型与数量；`exposure_ledger` 缺失或日期早于生效日时行为与旧版完全一致。
