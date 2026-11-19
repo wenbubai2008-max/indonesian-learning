@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generated_at": "2026-11-19T09:41:16.671Z",
+  "generated_at": "2026-11-19T10:52:40.513Z",
   "source_updated_at": "2026-11-19T05:19:50.525Z",
-  "taught_total": 1233,
+  "taught_total": 1236,
   "confirmed_mastered": 313,
-  "needs_reinforcement": 818,
+  "needs_reinforcement": 821,
   "excluded_from_training": 102,
   "unverified": 0,
-  "mastery_percent": 25.4,
+  "mastery_percent": 25.3,
   "primary_master_total": 977,
   "primary_taught_unique": 647,
   "primary_unlearned_total": 330,
@@ -22,10 +22,10 @@
       "use": 706,
       "fast": 51,
       "recognize": 99,
-      "none": 13
+      "none": 16
     }
   },
-  "focus_total": 815,
+  "focus_total": 818,
   "focus_words": [
     {
       "word": "berlaku sampai",

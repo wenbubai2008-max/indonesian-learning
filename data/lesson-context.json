@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-19",
-    "session": "pm",
-    "time": "18:00",
-    "day": 90
+    "date": "2026-11-20",
+    "session": "am",
+    "time": "08:00",
+    "day": 91
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-19T09:41:16.529Z",
-    "lesson_watermark": "2026-11-19 08:00",
+    "runtime_generated_at": "2026-11-19T10:52:35.007Z",
+    "lesson_watermark": "2026-11-19 18:00",
     "index_updated": "2026-11-19",
-    "runtime_hash": "5f5f87bcb66c6c4ee0acb8620368fc780ee47a2d0e00d347cbf25c242a77fc1e",
-    "index_hash": "9ef95ac555aa2436b6b67c209168cccfc1fa421e8f9bd528e635e27f7d6d7470",
+    "runtime_hash": "c172503ce1ebdabd3a9adf3f06817c6c529e40fc7978fd91a3fd6d6fbe432309",
+    "index_hash": "7ae506b6b40e85eef035d0b812fe0b4a69e8d128668e5733f719e83fb73bba6e",
     "rules_hash": "a476188058123c601a76db88793788743ba1dabed101a0ce68c47696582ae96c"
   },
   "schema": {
@@ -52,18 +52,6 @@
       [
         "bunyi",
         "声音"
-      ],
-      [
-        "pintas",
-        "捷径"
-      ],
-      [
-        "rumit",
-        "复杂的"
-      ],
-      [
-        "semakin",
-        "越多"
       ],
       [
         "judi",
@@ -1613,16 +1601,6 @@
         "印；打印"
       ],
       [
-        "berat",
-        2,
-        0,
-        "",
-        "2026-11-18T14:20:08.943Z",
-        "重的；沉重的；吃力的",
-        "berat",
-        "重"
-      ],
-      [
         "demi",
         2,
         0,
@@ -2273,34 +2251,14 @@
         "节省；省着用"
       ],
       [
-        "hancur",
+        "nyantai",
+        2,
         1,
-        0,
-        "",
-        "2026-11-19T05:11:06.476Z",
-        "碎了；毁了；彻底坏掉",
-        "hancur",
-        "碎；毁"
-      ],
-      [
-        "sikap",
-        2,
-        0,
-        "",
-        "2026-11-15T03:30:22.962Z",
-        "态度；立场；举止",
-        "sikap",
-        "态度；立场"
-      ],
-      [
-        "pihak",
-        2,
-        0,
-        "",
-        "2026-11-15T03:31:04.158Z",
-        "一方；方面；相关方",
-        "pihak",
-        "一方；方面"
+        "2026-10-01T12:34:16.756Z",
+        "2026-11-13T02:32:27.070Z",
+        "放松一点；悠着来；轻松待着（口语）",
+        "santai",
+        "轻松；悠闲"
       ]
     ],
     "focus": [
@@ -2573,47 +2531,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-12",
-      "session": "am",
-      "review_core": [
-        "seluruh",
-        "jabatan",
-        "keahlian",
-        "lamaran",
-        "lowongan"
-      ],
-      "new_words": [
-        "becak",
-        "delman",
-        "antik",
-        "perak",
-        "angker",
-        "keramat",
-        "menakjubkan",
-        "menegangkan",
-        "samping",
-        "iklan"
-      ]
-    },
-    {
-      "date": "2026-11-12",
-      "session": "pm",
-      "review_core": [
-        "menunjukkan",
-        "perpaduan",
-        "kepake",
-        "berteriak",
-        "melainkan"
-      ],
-      "new_words": [
-        "berulang tahun",
-        "bertema",
-        "persahabatan",
-        "gaun",
-        "anting"
-      ]
-    },
-    {
       "date": "2026-11-13",
       "session": "am",
       "review_core": [
@@ -2822,76 +2739,38 @@
       "new_words": [
         "hancur"
       ]
+    },
+    {
+      "date": "2026-11-19",
+      "session": "pm",
+      "review_core": [
+        "berteriak",
+        "kelabakan",
+        "kepancing",
+        "berat"
+      ],
+      "new_words": [
+        "semakin",
+        "rumit",
+        "pintas"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "new_words": [
-      "polos",
-      "kardus",
-      "keripik"
+      "semakin",
+      "rumit",
+      "pintas"
     ],
     "review_core": [
-      "berangsur",
-      "peserta",
-      "nggak heran",
-      "bakal"
-    ]
-  },
-  "same_day_am": {
-    "date": "2026-11-19",
-    "vocab": [
-      [
-        "hancur",
-        "碎了；毁了；彻底坏掉",
-        "crushed; smashed; ruined",
-        "hancur",
-        "碎；毁"
-      ],
-      [
-        "berantakan",
-        "乱七八糟；一团乱；（计划）被打乱",
-        "messy; in disarray",
-        "berantak",
-        "乱；散乱"
-      ],
-      [
-        "dimaksudkan",
-        "意在；用意是；（被）打算用来……",
-        "intended (as / for)",
-        "maksud",
-        "意思；目的"
-      ],
-      [
-        "mengabaikan",
-        "忽视；不理会；不当回事",
-        "to ignore; to neglect",
-        "abai",
-        "疏忽；不在意"
-      ],
-      [
-        "sikap",
-        "态度；立场；举止",
-        "attitude; stance",
-        "sikap",
-        "态度；立场"
-      ],
-      [
-        "pihak",
-        "一方；（某单位）那边；相关方",
-        "party; side",
-        "pihak",
-        "一方；方面"
-      ]
-    ],
-    "review_vocab": [
-      "teriak",
       "berteriak",
-      "bongkar",
-      "dipatok",
-      "bentuk"
+      "kelabakan",
+      "kepancing",
+      "berat"
     ]
   },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

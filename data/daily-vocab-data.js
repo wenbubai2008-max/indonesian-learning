@@ -9008,9 +9008,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-10-08 18:00",
+    "last_seen": "2026-11-19 18:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -9022,17 +9022,19 @@ window.DAILY_VOCAB_DB = [
       "2026-09-18",
       "2026-09-28",
       "2026-10-01",
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-19"
     ],
-    "example": "Pelanggan datang bersamaan, jadi kasirnya kelabakan.",
-    "example_cn": "顾客同时涌来，收银员手忙脚乱。",
+    "example": "Waktu bosnya tiba-tiba minta data penelitian itu, Dina kelabakan mencari file-nya.",
+    "example_cn": "老板突然要那份研究数据，迪娜手忙脚乱地找文件。",
     "lesson_occurrences": [
       "2026-09-10 19:00",
       "2026-09-17 18:00",
       "2026-09-18 08:00",
       "2026-09-28 08:00",
       "2026-10-01 18:00",
-      "2026-10-08 18:00"
+      "2026-10-08 18:00",
+      "2026-11-19 18:00"
     ]
   },
   {
@@ -9652,16 +9654,16 @@ window.DAILY_VOCAB_DB = [
     "en": "get provoked; take the bait; be drawn into reacting",
     "root": "pancing",
     "root_cn": "钓；引诱；诱出反应",
-    "example": "Aku nggak mau kepancing omongan dia lagi.",
-    "example_cn": "我不想再被他的话激到了。",
+    "example": "Jangan gampang kepancing kalau ada yang nyinggung soal gaji di grup kantor.",
+    "example_cn": "要是公司群里有人提工资的事，别轻易被激到。（nyinggung = menyinggung）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-04 18:00",
+    "last_seen": "2026-11-19 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9671,7 +9673,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-20",
       "2026-09-21",
       "2026-09-22",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-19"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
@@ -9679,7 +9682,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-21 08:00",
       "2026-09-21 18:00",
       "2026-09-22 08:00",
-      "2026-10-04 18:00"
+      "2026-10-04 18:00",
+      "2026-11-19 18:00"
     ]
   },
   {
@@ -13754,16 +13758,16 @@ window.DAILY_VOCAB_DB = [
     "en": "shout; scream",
     "root": "teriak",
     "root_cn": "喊叫",
-    "example": "Anak-anak berteriak-teriak waktu main perang-perangan di halaman.",
-    "example_cn": "孩子们在院子里玩打仗游戏，一直大喊大叫。",
+    "example": "Penonton berteriak kegirangan waktu gol kemenangan dicetak di menit terakhir laga final.",
+    "example_cn": "决赛最后一分钟打进制胜球时，观众高兴得大叫起来。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-11-19 08:00",
+    "last_seen": "2026-11-19 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13781,7 +13785,8 @@ window.DAILY_VOCAB_DB = [
       "2026-11-11 18:00",
       "2026-11-12 18:00",
       "2026-11-14 08:00",
-      "2026-11-19 08:00"
+      "2026-11-19 08:00",
+      "2026-11-19 18:00"
     ]
   },
   {
@@ -17957,23 +17962,27 @@ window.DAILY_VOCAB_DB = [
     "en": "heavy; hard",
     "root": "berat",
     "root_cn": "重",
-    "example": "Kopernya berat sekali, tolong bantu masukkan ke mobil.",
-    "example_cn": "行李箱很重，请帮忙放进车里。",
+    "example": "Badanku masih lemah habis sakit, jadi belum kuat angkat barang berat.",
+    "example_cn": "我病刚好，身子还虚，还搬不动重东西。（habis = setelah，angkat = mengangkat）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-03 08:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-11-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-19"
     ],
     "lesson_occurrences": [
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-11-19 18:00"
     ]
   },
   {
@@ -33514,23 +33523,101 @@ window.DAILY_VOCAB_DB = [
     "en": "crushed; smashed; ruined",
     "root": "hancur",
     "root_cn": "碎；毁",
-    "example": "Jangan taruh kardus berat di atasnya, nanti keripik yang di bawah hancur semua.",
-    "example_cn": "别把重箱子放在上面，不然下面的薯片会全碎了。（taruh = letakkan）",
+    "example": "Hatinya hancur waktu tahu pacarnya diam-diam berkencan dengan orang lain.",
+    "example_cn": "她得知男朋友偷偷和别人约会，心都碎了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-19 08:00",
-    "last_seen": "2026-11-19 08:00",
+    "last_seen": "2026-11-19 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-11-19"
     ],
     "lesson_occurrences": [
-      "2026-11-19 08:00"
+      "2026-11-19 08:00",
+      "2026-11-19 18:00"
+    ]
+  },
+  {
+    "word": "semakin",
+    "cn": "越来越；越……越……",
+    "en": "increasingly; the more … the more …",
+    "root": "makin",
+    "root_cn": "越发；愈加",
+    "example": "Semakin lama dia jualan di pasar, semakin banyak kenalannya di sana.",
+    "example_cn": "他在市场摆摊越久，在那儿认识的人就越多。（jualan = berjualan）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-19 18:00",
+    "last_seen": "2026-11-19 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-19"
+    ],
+    "lesson_occurrences": [
+      "2026-11-19 18:00"
+    ]
+  },
+  {
+    "word": "rumit",
+    "cn": "复杂的；头绪多、难办的",
+    "en": "complicated; intricate",
+    "root": "rumit",
+    "root_cn": "复杂",
+    "example": "Alur film misteri itu terlalu rumit, aku sampai bingung siapa pelakunya.",
+    "example_cn": "那部悬疑片的情节太复杂了，我都搞不清凶手是谁。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-19 18:00",
+    "last_seen": "2026-11-19 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-19"
+    ],
+    "lesson_occurrences": [
+      "2026-11-19 18:00"
+    ]
+  },
+  {
+    "word": "pintas",
+    "cn": "抄近的；近路（最常用 jalan pintas）",
+    "en": "short cut (jalan pintas = shortcut)",
+    "root": "pintas",
+    "root_cn": "横穿；抄近",
+    "example": "Sopir ojek itu lewat jalan pintas di gang kecil, tapi malah nyasar.",
+    "example_cn": "那个摩的司机走小巷里的近路，结果反倒迷路了。（nyasar = tersesat）",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-19 18:00",
+    "last_seen": "2026-11-19 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-19"
+    ],
+    "lesson_occurrences": [
+      "2026-11-19 18:00"
     ]
   }
 ];
