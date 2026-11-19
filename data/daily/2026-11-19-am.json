@@ -1,0 +1,282 @@
+{
+  "date": "2026-11-19",
+  "session": "am",
+  "time": "08:00",
+  "day": 90,
+  "title": "08:00 早课｜Bu Dewi Tidak Minta Uang Kembali · 黛薇女士不要退款",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "variation"
+  },
+  "story": {
+    "series": "Toko Keripik Bu Narti · 纳尔蒂阿姨的薯片网店",
+    "episode": 3,
+    "previously_cn": "上集：拉卡订单多到忙不过来，把两笔订单的标签贴反了。沃兰小姐收到香蕉片反而笑了，可黛薇女士那边培训班的阿姨们被特辣木薯片辣得直要水。",
+    "next_cn": "下集：约斯师傅的摩托车半路抛锚，香蕉片还赶得上两点的下午场吗？"
+  },
+  "vocab": [
+    {
+      "word": "hancur",
+      "display": "hancur",
+      "audio_text": "hancur",
+      "cn": "碎了；毁了；彻底坏掉",
+      "en": "crushed; smashed; ruined",
+      "root": "hancur",
+      "root_cn": "碎；毁",
+      "formation": "hancur 本身就是词根，表示东西碎成小块、毁到不能用，也能说名声、计划、心情“毁了”。派生：menghancurkan（把……打碎、毁掉）、dihancurkan（被摧毁）、kehancuran（毁灭、崩溃）。常见搭配：keripiknya hancur（薯片碎了）、hancur berkeping-keping（碎成一片一片）、nama baiknya hancur（名声毁了）、hatiku hancur（心碎了）。",
+      "example": "Jangan taruh kardus berat di atasnya, nanti keripik yang di bawah hancur semua.",
+      "example_cn": "别把重箱子放在上面，不然下面的薯片会全碎了。（taruh = letakkan）",
+      "synonym_note": "hancur 是碎掉、毁到不成样子；rusak 是坏了、出毛病，常常还能修（HP-nya rusak）；pecah 多说玻璃、碗、蛋这类硬东西裂开或碎开（gelasnya pecah）；berantakan 是乱成一团，东西本身不一定坏（见下一张卡）。说名声、计划、心情毁了，用 hancur。日常说东西被压得稀碎，也常说 remuk。",
+      "usage_note": "新词：记住“东西碎了”和“名声、计划毁了”两种用法，再看纳尔蒂阿姨担心的是什么。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berantakan",
+      "display": "berantakan",
+      "audio_text": "berantakan",
+      "cn": "乱七八糟；一团乱；（计划）被打乱",
+      "en": "messy; in disarray",
+      "root": "berantak",
+      "root_cn": "乱；散乱",
+      "formation": "按词根 berantak（散乱）来记，berantakan 整词当形容词用，说东西摆得乱、散得到处都是，也说计划、局面被打乱。常见搭配：kamarnya berantakan（房间很乱）、isi kardusnya berantakan（箱子里乱成一团）、rencananya jadi berantakan（计划全被打乱）、rambutnya berantakan（头发乱了）。",
+      "example": "Kardusnya penyok dan isinya berantakan, tapi untung keripiknya nggak ada yang hancur.",
+      "example_cn": "箱子压瘪了，里面乱成一团，不过好在薯片一包都没碎。（nggak = tidak）",
+      "synonym_note": "berantakan 是乱、不整齐，东西不一定坏，收拾一下就好；hancur 是东西本身碎了、毁了。同一个箱子可以 isinya berantakan，但 keripiknya masih utuh（还完好）。tidak rapi 程度轻，只是“不太整齐”；kacau 多说局面、交通失控。口语里也说 acak-acakan（乱糟糟），聊天时常用。",
+      "usage_note": "复习词：先遮住中文回想意思，再和上一张 hancur 对比。",
+      "is_oral_new": false
+    },
+    {
+      "word": "dimaksudkan",
+      "display": "dimaksudkan",
+      "audio_text": "dimaksudkan",
+      "cn": "意在；用意是；（被）打算用来……",
+      "en": "intended (as / for)",
+      "root": "maksud",
+      "root_cn": "意思；目的",
+      "formation": "di- + maksud + -kan → dimaksudkan，是 memaksudkan 的被动式，主语多是东西、规定、安排，说它“本来的用意”。常见搭配：dimaksudkan untuk …（用来……）、dimaksudkan agar / supaya …（目的是让……）、dimaksudkan sebagai …（当作……）。",
+      "example": "Stiker 'Jangan Dibanting' di kardus itu dimaksudkan agar orang yang mengangkatnya lebih hati-hati.",
+      "example_cn": "箱子上那张“请勿摔扔”的贴纸，是为了让搬箱子的人更小心。",
+      "synonym_note": "dimaksudkan 说东西、安排的用意（Voucher ini dimaksudkan sebagai …）；bermaksud 的主语是人，“打算、有意”（Saya bermaksud minta maaf）；yang dimaksud 是“所说的那个”。dimaksudkan 偏书面，聊天时常说 maksudnya biar …（Maksudnya biar kurirnya hati-hati）；通知、说明、客服的正式回复里用 dimaksudkan。",
+      "usage_note": "复习词：先回想意思，再看纳尔蒂阿姨怎么解释那张代金券。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengabaikan",
+      "display": "mengabaikan",
+      "audio_text": "mengabaikan",
+      "cn": "忽视；不理会；不当回事",
+      "en": "to ignore; to neglect",
+      "root": "abai",
+      "root_cn": "疏忽；不在意",
+      "formation": "meN- + abai + -kan → mengabaikan（元音开头，meN- 变 meng-）。被动：diabaikan；名词：pengabaian。常见搭配：mengabaikan pesan / keluhan / peringatan（不理消息、投诉、警告）、jangan mengabaikan …（别不把……当回事）、merasa diabaikan（觉得被冷落）。",
+      "example": "Admin baru itu ditegur karena mengabaikan perintah untuk cek alamat sebelum paket dikirim.",
+      "example_cn": "那个新客服被批评了，因为他没理会“发货前先核对地址”的指示。",
+      "synonym_note": "mengabaikan 是“该理却没理”，多少有“不该这样”的意思；lupa 只是忘了，不一定是故意的；tidak membalas 只是没回复。口语说法：nyuekin / dicuekin（Chat aku dicuekin），和朋友抱怨时说；写道歉、正式回复时用 mengabaikan。",
+      "usage_note": "复习词：上集拉卡没理消息惹了麻烦；先回想意思，再看这次纳尔蒂阿姨怎么用它。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sikap",
+      "display": "sikap",
+      "audio_text": "sikap",
+      "cn": "态度；立场；举止",
+      "en": "attitude; stance",
+      "root": "sikap",
+      "root_cn": "态度；立场",
+      "formation": "sikap 是词根名词。派生：bersikap（表现出某种态度：bersikap tenang / ramah）、menyikapi（对待、应对某件事：menyikapi keluhan pembeli）。常见搭配：sikapnya ramah（态度友好）、sikap yang tenang（冷静的态度）、ubah sikap（改变态度）。",
+      "example": "Sikap admin yang sabar bikin pembeli yang tadinya kesal jadi mau menunggu.",
+      "example_cn": "客服耐心的态度，让本来很生气的买家愿意等一等了。（bikin = membuat）",
+      "synonym_note": "sikap 是对人对事的态度和表现出来的样子；perilaku 是具体的行为（做了什么）；pendapat 是看法（怎么想）。说某人“态度不好、脸很冷”，聊天里常说 jutek（Admin-nya jutek banget）；正式评价、书面里用 sikap。",
+      "usage_note": "复习词：先回想意思，再看黛薇女士接电话时是什么态度。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pihak",
+      "display": "pihak",
+      "audio_text": "pihak",
+      "cn": "一方；（某单位）那边；相关方",
+      "en": "party; side",
+      "root": "pihak",
+      "root_cn": "一方；方面",
+      "formation": "pihak 是词根名词，常放在机构、单位名称前面，指一件事里的“某一方”。常见搭配：pihak toko（店方）、pihak kecamatan（区公所那边）、pihak ekspedisi（物流公司那边）、pihak ketiga（第三方）、kedua belah pihak（双方）、dari pihak kami（从我们这边）。",
+      "example": "Kalau paketnya hilang, pihak toko akan menghubungi pihak ekspedisi dulu.",
+      "example_cn": "如果包裹丢了，店方会先联系物流公司那边。",
+      "synonym_note": "pihak 是一件事里的“一方、某个单位”；bagian 是部门或一部分（bagian gudang 仓库部）；sisi 是“一面、一侧”（sisi kiri、dari sisi lain）。pihak 偏正式，客服回复、新闻里常见；聊天时常直接说 tokonya、kecamatannya。",
+      "everyday": "聊天常直接说 tokonya / kecamatannya / kurirnya；pihak toko、pihak kecamatan 多用在客服回复、公告和新闻里",
+      "usage_note": "复习词：先回想意思，再看这次问题出在哪一方。",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "berantakan",
+    "dimaksudkan",
+    "mengabaikan",
+    "sikap",
+    "pihak"
+  ],
+  "review_vocab": [
+    "teriak",
+    "berteriak",
+    "bongkar",
+    "dipatok",
+    "bentuk"
+  ],
+  "sentences": [
+    {
+      "text": "Kardusnya jangan dibongkar dulu, Bu. Direkam dulu video unboxing-nya, biar klaimnya gampang.",
+      "cn": "箱子先别拆，女士。先把开箱视频录下来，这样索赔比较容易。（biar = agar，gampang = mudah）"
+    },
+    {
+      "text": "Ongkir ke kawasan industri sudah dipatok Rp20 ribu, jadi tidak bisa ditawar lagi.",
+      "cn": "送到工业区的运费已经定死是两万印尼盾，所以不能再讲价了。"
+    },
+    {
+      "text": "Kompensasinya bisa dalam bentuk voucher ongkir atau potongan harga untuk belanja berikutnya.",
+      "cn": "补偿可以是运费代金券，也可以是下次购物的折扣。"
+    },
+    {
+      "text": "HP-ku bunyi terus-menerus dari pagi. Pas kuangkat, pembelinya langsung teriak, \"Paketku mana?\"",
+      "cn": "我的手机从早上起就响个不停。我一接，买家就直接喊：“我的包裹呢？”（pas = saat，kuangkat = aku angkat）"
+    },
+    {
+      "text": "Kalau dilihat polanya, komplain paling banyak masuk hari Senin, sesudah promo akhir pekan.",
+      "cn": "从规律来看，投诉最多的是星期一，就在周末促销之后。"
+    }
+  ],
+  "reading": {
+    "title": "Bu Dewi Tidak Minta Uang Kembali · 黛薇女士不要退款",
+    "text": "Raka menelepon Bu Dewi dengan perasaan tidak enak. Dia membayangkan Bu Dewi akan berteriak marah. Ternyata suara Bu Dewi tenang, dan sikapnya ramah sekali. \"Tadi memang heboh, Mas,\" katanya sambil tertawa. \"Begitu kardusnya dibongkar, ibu-ibu langsung nyobain. Ada yang sampai teriak, 'Air, air!' Ruangannya jadi berantakan, gelas di mana-mana. Tapi rupanya banyak yang menyukainya.\" Masalahnya ada di pihak kecamatan. Anggaran camilan pelatihan sudah dipatok, dan laporannya harus sesuai yang dipesan, yaitu keripik pisang. Jadi Bu Dewi tidak minta uang kembali. Dia minta keripik pisang dikirim sebelum sesi siang jam dua. Keripik pedasnya akan dibayar sendiri oleh ibu-ibu yang mau membawanya pulang. Raka lega, tetapi Bu Narti tetap serius. \"Biarpun Bu Dewi baik, kita jangan mengabaikan kesalahan ini. Satu ulasan buruk bisa bikin nama toko hancur,\" katanya. Dia menyelipkan voucher ongkir ke dalam kardus keripik pisang. \"Voucher ini dimaksudkan sebagai permintaan maaf, bukan sekadar bonus.\" Jam satu, HP Raka berbunyi. Pak Yos menelepon: \"Mas, motor saya mogok!\"",
+    "cn": "拉卡心里很过意不去地给黛薇女士打电话。他想象着黛薇女士会生气地大喊。没想到黛薇女士的声音很平静，态度也非常客气。“刚才确实闹腾了一阵，小哥，”她笑着说，“箱子一拆开，阿姨们马上就尝。有人辣得直喊：‘水，水！’屋里弄得乱七八糟，到处都是杯子。不过原来很多人都很喜欢。”问题出在区公所那边。培训的点心预算已经定死了，报账也必须和订的东西一致，也就是香蕉片。所以黛薇女士不要退款。她要求下午两点那场开始前把香蕉片送到。辣木薯片则由想带回家的阿姨们自己付钱。拉卡松了口气，可纳尔蒂阿姨还是很严肃。“即使黛薇女士人好，我们也不能不把这个错误当回事。一条差评就能让店的名声毁掉。”她说。她把一张运费代金券塞进箱子里。“这张代金券是用来道歉的，不只是个赠品。”一点钟，拉卡的手机响了。约斯师傅打来电话：“小哥，我的摩托车抛锚了！”"
+  },
+  "quiz": [
+    {
+      "question": "Menurut cerita hari ini, apa yang diminta Bu Dewi dari toko Bu Narti?",
+      "options": [
+        "Uangnya dikembalikan penuh karena keripiknya terlalu pedas.",
+        "Keripik pisang dikirim sebelum jam dua, dan keripik pedasnya dibayar oleh ibu-ibu yang mau membawanya pulang.",
+        "Toko memberi voucher ongkir gratis sebagai ganti keripik pisang.",
+        "Pak Yos datang lagi dan mengambil semua keripik pedas."
+      ],
+      "answer_index": 1,
+      "answer": "Keripik pisang dikirim sebelum jam dua, dan keripik pedasnya dibayar oleh ibu-ibu yang mau membawanya pulang.",
+      "explain": "课文说黛薇女士不要退款（tidak minta uang kembali），因为区公所那边预算定死了、报账必须是香蕉片，所以她要香蕉片在下午两点那场之前送到；辣木薯片由想带回家的阿姨们自己付钱。代金券是纳尔蒂阿姨主动塞进箱子道歉用的，不是黛薇女士要的，也不是用来代替香蕉片；课文没有说约斯师傅回去取辣木薯片，他最后是摩托车抛锚了。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "有个阿姨辣得直喊着要水。",
+      "target": "berteriak",
+      "target_cn": "喊叫",
+      "options": [
+        "Ada ibu yang diteriaki minta air karena kepedasan.",
+        "Ada ibu yang meneriaki minta air karena kepedasan.",
+        "Ada ibu yang berteriak minta air supaya kepedasan.",
+        "Ada ibu yang berteriak minta air karena kepedasan."
+      ],
+      "answer_index": 3,
+      "answer": "Ada ibu yang berteriak minta air karena kepedasan.",
+      "point": "berteriak / meneriaki / diteriaki 的词缀；karena（因为）和 supaya（为了）",
+      "explain": "“自己大喊”用 berteriak，后面可以直接接 minta air，所以 D 对。A 的 diteriaki 是“被人冲着喊”，意思变成阿姨挨了别人的喊；B 的 meneriaki 是“冲着某人喊”，后面要接被喊的人（meneriaki kurir），不能直接接 minta air；C 把 karena 换成 supaya，变成“为了辣到而喊”，不合逻辑。聊天里也常说 teriak minta air（不带 ber-），意思一样，是口语说法。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "要是一条差评传开了，店的名声可能就毁了。",
+      "target": "hancur",
+      "target_cn": "毁了",
+      "options": [
+        "Kalau satu ulasan buruk menyebar, nama toko bisa hancur.",
+        "Kalau satu ulasan buruk menyebar, nama toko sudah hancur.",
+        "Kalau satu ulasan buruk menyebar, nama toko bisa berantakan.",
+        "Kalau satu ulasan buruk menyebar, nama toko bisa pecah."
+      ],
+      "answer_index": 0,
+      "answer": "Kalau satu ulasan buruk menyebar, nama toko bisa hancur.",
+      "point": "名声“毁了”用 hancur，不用 berantakan / pecah；bisa（可能）和 sudah（已经）",
+      "explain": "名声、计划“毁了”用 hancur，A 对。B 用 sudah，变成“名声已经毁了”，和“可能”不符；C 的 berantakan 是乱成一团，说房间、箱子、计划被打乱，不说名声；D 的 pecah 是玻璃、碗这类硬东西碎开，也不说名声。说 nama baik toko bisa hancur 也很常见，意思一样。"
+    }
+  ],
+  "output": {
+    "task": "你是拉卡。约斯师傅的摩托车半路抛锚了，香蕉片可能赶不上两点。给黛薇女士发一条消息（3 句）：先说明出了什么事、香蕉片有没有碎；再用 Kalau …, kami bisa … 提出办法；最后说明箱子里那张代金券的用意。按骨架填空，用上 hancur 和 dimaksudkan。",
+    "frame": "Mohon maaf, Bu, motor Pak Yos …… di jalan, tapi keripiknya masih utuh, tidak ada yang …… . Kalau Ibu setuju, kami bisa …… supaya sampai sebelum jam dua. Voucher di dalam kardus dimaksudkan sebagai …… .",
+    "reference_answer": "Mohon maaf, Bu, motor Pak Yos mogok di jalan, tapi keripiknya masih utuh, tidak ada yang hancur. Kalau Ibu setuju, kami bisa kirim lewat ojek online supaya sampai sebelum jam dua. Voucher di dalam kardus dimaksudkan sebagai permintaan maaf dari kami.",
+    "reference_cn": "非常抱歉，女士，约斯师傅的摩托车在路上抛锚了，不过薯片都还完好，一包都没碎。如果您同意，我们可以改用网约摩的送，保证两点前送到。箱子里的代金券是我们的一点歉意。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 碎了/毁了、乱七八糟、意在/用意是、忽视/不理会、态度、一方/相关方；再说出 喊（口语常用）、喊叫、拆开/翻出来、（价格）被定死、形式。卡住的词回看词卡再说一遍。",
+    "易混词：hancur（东西碎了、名声毁了：keripiknya hancur）vs berantakan（乱成一团，东西不一定坏：isinya berantakan）；teriak（口语直接用：langsung teriak）vs berteriak（叙述里常用：berteriak minta air），要“冲着某人喊”说 meneriaki orang，“被人喊”说 diteriaki。各说一句。",
+    "复习词应用：dipatok 常说 harganya / anggarannya sudah dipatok（定死了，不能改）；bongkar 常说 bongkar kardus / bongkar barang；bentuk 常说 dalam bentuk voucher（以代金券的形式）。用 dalam bentuk 说一句你会给顾客的补偿。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "hancur",
+      "berantakan",
+      "sikap"
+    ],
+    "patterns": [
+      {
+        "pattern": "Kalau …, kami bisa …",
+        "cn": "如果……，我们可以……",
+        "function": "offer-solution",
+        "example": "Kalau Ibu setuju, kami bisa kirim lewat ojek online supaya sampai sebelum jam dua.",
+        "example_cn": "如果您同意，我们可以改用网约摩的送，保证两点前送到。"
+      },
+      {
+        "pattern": "Biarpun …, kita jangan …",
+        "cn": "即使……，我们也不能……",
+        "example": "Biarpun Bu Dewi baik, kita jangan mengabaikan kesalahan ini.",
+        "example_cn": "即使黛薇女士人好，我们也不能不把这个错误当回事。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "喊（口语常用）",
+        "id": "teriak"
+      },
+      {
+        "cn": "喊叫",
+        "id": "berteriak"
+      },
+      {
+        "cn": "拆开；翻出来",
+        "id": "bongkar"
+      },
+      {
+        "cn": "（价格、预算）被定死",
+        "id": "dipatok"
+      },
+      {
+        "cn": "形式；形状",
+        "id": "bentuk"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "hancur",
+            "cn": "碎了；毁了"
+          },
+          {
+            "id": "berantakan",
+            "cn": "乱成一团"
+          }
+        ],
+        "note": "东西本身碎了、名声计划毁了用 hancur；东西摆得乱、散了一地但没坏用 berantakan。同一个箱子可以 isinya berantakan，keripiknya tidak hancur。"
+      },
+      {
+        "items": [
+          {
+            "id": "teriak",
+            "cn": "喊（口语）"
+          },
+          {
+            "id": "berteriak",
+            "cn": "喊叫"
+          }
+        ],
+        "note": "意思一样：聊天里常直接说 teriak，叙述、书面多用 berteriak；要说“冲着某人喊”用 meneriaki，“被人冲着喊”用 diteriaki。"
+      }
+    ]
+  }
+}
