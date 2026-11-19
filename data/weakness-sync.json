@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-18T14:21:47.457Z",
+  "updated_at": "2026-11-19T03:28:40.964Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -2659,8 +2659,11 @@
     "buruk": {
       "word": "buruk",
       "status": "active",
-      "updated_at": "2026-11-09T06:54:57.202Z",
+      "updated_at": "2026-11-19T02:59:08.717Z",
       "display": "buruk",
+      "cn": "坏的；差的；糟糕的",
+      "root": "buruk",
+      "root_cn": "坏的；差的",
       "last_review": "2026-11-09T06:54:57.142Z",
       "reasons": [
         "memory_fuzzy"
@@ -6043,8 +6046,11 @@
     "menyukai": {
       "word": "menyukai",
       "status": "active",
-      "updated_at": "2026-11-11T10:37:04.489Z",
+      "updated_at": "2026-11-19T02:44:40.270Z",
       "display": "menyukai",
+      "cn": "喜欢",
+      "root": "suka",
+      "root_cn": "喜欢",
       "last_review": "2026-11-11T10:37:04.426Z",
       "reasons": [
         "memory_fuzzy"
@@ -6214,22 +6220,22 @@
     "berteriak": {
       "word": "berteriak",
       "status": "active",
-      "updated_at": "2026-11-18T07:07:49.902Z",
+      "updated_at": "2026-11-19T03:28:30.113Z",
       "display": "berteriak",
-      "cn": "大声喊；喊叫",
+      "cn": "喊叫",
       "root": "teriak",
       "root_cn": "喊叫",
-      "last_wrong": "2026-11-12T11:37:40.192Z",
-      "last_review": "2026-11-18T07:07:49.849Z",
+      "last_wrong": "2026-11-19T03:28:30.040Z",
+      "last_review": "2026-11-19T03:28:30.040Z",
       "source": "课程小测",
-      "source_date": "2026-11-12",
-      "session": "18:00",
+      "source_date": "2026-11-19",
+      "session": "08:00",
       "reasons": [
         "memory_dont",
         "lesson_wrong"
       ],
-      "wrong_count": 3,
-      "right_streak": 1
+      "wrong_count": 5,
+      "right_streak": 0
     },
     "menyentuh": {
       "word": "menyentuh",
@@ -11690,8 +11696,9 @@
     "gelas": {
       "word": "gelas",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:52.836Z",
+      "updated_at": "2026-11-19T02:44:27.802Z",
       "display": "gelas",
+      "cn": "玻璃杯",
       "last_review": "2026-09-12T14:13:53.306Z",
       "last_mastered": "2026-09-12T14:13:53.306Z",
       "reasons": [],
@@ -22284,8 +22291,10 @@
     "laporan": {
       "word": "laporan",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:01:11.907Z",
+      "updated_at": "2026-11-19T03:18:26.441Z",
       "display": "laporan",
+      "cn": "报告",
+      "root": "lapor",
       "last_review": "2026-09-12T17:00:36.757Z",
       "last_mastered": "2026-09-12T17:00:36.757Z",
       "reasons": [],
@@ -22927,7 +22936,7 @@
       "status": "active",
       "updated_at": "2026-11-18T14:21:00.498Z",
       "display": "bongkar",
-      "cn": "拆开；卸下；翻出来",
+      "cn": "卸货；拆卸",
       "root": "bongkar",
       "root_cn": "拆开；卸下；翻出",
       "last_wrong": "2026-11-18T14:21:00.441Z",
@@ -31261,7 +31270,7 @@
       "status": "active",
       "updated_at": "2026-11-18T13:54:11.943Z",
       "display": "peserta",
-      "cn": "参与者；参加活动的人",
+      "cn": "参与者",
       "root": "serta",
       "root_cn": "共同；参与",
       "last_wrong": "2026-11-18T02:04:10.991Z",
@@ -31319,7 +31328,7 @@
       "status": "active",
       "updated_at": "2026-11-18T14:18:02.521Z",
       "display": "menata",
-      "cn": "整理摆放；布置；安排",
+      "cn": "组织",
       "root": "tata",
       "root_cn": "秩序；安排",
       "last_wrong": "2026-11-08T03:19:40.444Z",
