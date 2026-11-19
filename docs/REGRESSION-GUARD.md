@@ -847,3 +847,11 @@
 - **修复**：`reading-word-lookup.js` 的 `repairMachineMeanings()` 在每台设备启动时运行：凡是 `manual_unknown`（含已归档的 reason_history）的记录，只要课程词库 `DAILY_VOCAB_DB` 或主词库 `MASTER_VOCAB_OBJECTS` 有同一个词的人工释义且不同，就用人工释义（cn / en / root / root_cn）替换，同时更新 `indo_unknown_words`。幂等；不碰其他来源的记录；不用 `UNFAMILIAR_VOCAB_DB`（它可能就是弱项池的镜像）。
 - 当时同步快照里 29 个划词陌生词中有 27 个会被替换，明显错的有 keripik（筹码）、bekal（规定）、merayu（勾引）、laku（需求旺盛）、senam（锻炼）。
 
+
+## 2026-11-19：书籍划词弹窗精简（用户决定）
+
+- 仅精简 `books/selection-translate.js` 的弹窗，不修改早晚课词汇工具、小说正文、校注、私人加密内容、学习状态和课程。
+- 默认只显示选中的印尼语、中文释义、简短来源（「词库释义」或「Google 机译」）、朗读、复制和关闭；取消冗长的标题、数据传送说明、专门的“本机翻译”及“Google 在线翻译”按钮。
+- 保留词库优先与找不到时自动 Google 查询，仍然只发送当前选中文字、不发送整章及密钥。自动翻译失败时才显示「重试翻译」按钮，不主动弹出错误堆栈或隐私长说明；机器翻译结果仍须标示来源。
+- `sepotong` 新增本地多义项「一块；一片；一段」，举例说明 `sepotong kue`；不需要为普通词硬套单一中文义。
+- 手机宽度自适应，弹窗缩窄并降低信息密度。脚本地址版本由 `select3` 提到 `select4` 避免浏览器缓存；正常回归必须检查精简元素和失败重试，旧 main 基线模拟保持跳过新断言。
