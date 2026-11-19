@@ -89,6 +89,19 @@ body.readerWarm #readerPage .idText{color:#393126}
 #readerPage .para.focused{border-radius:10px;background:#fffcef;outline:2px solid #e9dca6;outline-offset:5px}
 #readerPage .side{max-height:calc(100dvh - 36px);overflow-y:auto;scrollbar-width:thin}
 @media(max-width:900px){#readerPage .side{max-height:none;overflow:visible}}
+
+/* Local, per-paragraph book markers; never persist book text or decrypt keys. */
+.bookmarkBar{display:flex;gap:9px 14px;align-items:center;flex-wrap:wrap;background:#f2f6fd;border:1px solid #d9e4f6;border-radius:12px;padding:11px 13px;margin:0 0 14px;font-size:13px;color:#455573}
+.bookmarkBar .bookmarkInfo{font-weight:600;color:#334560}
+.bookmarkBar .btn{padding:6px 10px;font-size:12px}
+.bookmarkBar .bookmarkBreak{flex-basis:100%;height:0}
+.bookCard .lastRead{color:#52668b;font-size:12px;font-weight:600;line-height:1.5;margin:1px 0 0}
+#readerPage .para.bookmarked{border-left:3px solid #dcad53;padding-left:11px;border-radius:4px}
+#readerPage .tiny.bookmarkAction{color:#866018}
+#readerPage .tiny.bookmarkAction.isSaved{color:#965f07;font-weight:800}
+#readerPage .para.bookmarkFocus{outline:2px solid #d7a53d;outline-offset:5px;border-radius:7px}
+@media(max-width:560px){.bookmarkBar{gap:7px 10px;padding:10px}.bookmarkBar .btn{padding:7px 9px}}
+
 </style>
 </head>
 <body>
@@ -104,6 +117,12 @@ body.readerWarm #readerPage .idText{color:#393126}
     <div class="readerHero">
       <div class="cover"><small>🍜</small><strong>Seporsi Mie Ayam Sebelum Mati</strong></div>
       <div><h1>Seporsi Mie Ayam Sebelum Mati</h1><p>Brian Khrisna · 成人现实小说</p><span class="pill" id="chapterTag">第1章 / 共12章</span><div class="readingStat"><div class="readerProgress" aria-label="已完成章节进度"><span id="readerProgressFill"></span></div><small id="readerProgressLabel">已读完 0/12 章</small></div></div>
+    </div>
+    <div id="bookmarkBar" class="bookmarkBar" hidden aria-live="polite">
+      <span id="lastReadLabel" class="bookmarkInfo" hidden></span>
+      <button type="button" class="btn" id="resumeReading" hidden>继续上次阅读</button>
+      <span id="manualBookmarkLabel" class="bookmarkInfo" hidden></span>
+      <button type="button" class="btn" id="jumpBookmark" hidden>跳转书签</button>
     </div>
     <div class="note" id="readingNote">12章 Claude 校对版已加密保存。解锁后可直接阅读全部原文和中文；标有“原文提取错误”的地方请结合原书判断。</div>
     <section id="unlockPanel" aria-label="解锁私人双语书库">
@@ -129,7 +148,7 @@ body.readerWarm #readerPage .idText{color:#393126}
         <button id="doneButton" class="btn" type="button">标记读完</button>
       </div>
     </div>
-    <p class="sub" style="font-size:12px;margin:5px 0 12px">💡 鼠标划选或手机长按印尼语文字，即可查中文词义、翻译短语并朗读；在线翻译需主动点击。</p>
+    <p class="sub" style="font-size:12px;margin:5px 0 12px">💡 滚动自动记录阅读位置；可在段落右下角设 🔖 书签。划词可直接查中文，词库未收录时自动翻译。</p>
     <div class="layout">
       <article class="paper" aria-label="双语正文"><h2 id="readerChapterTitle">第1章 · SCBD Parking Lot 17</h2><p class="source" id="readerStatus">真实原著短节选 · 个人完整章节可导入</p><div id="paragraphs"></div></article>
       <aside class="side"><h3>🌱 本章阅读辅助</h3><p id="aidCounter" class="sub" style="font-size:12px;margin:-5px 0 10px">精选词汇</p><div id="wordDetail" class="vocabExtra" aria-live="polite">点击词汇查看解释并定位到原文。</div><div id="wordList"></div></aside>
@@ -162,8 +181,10 @@ window.__bookReadingAids=READING_AIDS;
 const privateURL='./private/seporsi-claude-v1.enc.json';
 const allKey='indo-books-private-fullbook-v1';
 const passKey='indo-books-seporsi-claude-key-v1',editKey='indo-books-seporsi-claude-edits-v1';
+const lastReadKey='indo-books-seporsi-last-read-v1',bookmarkKey='indo-books-seporsi-bookmark-v1';
 const doneKey='indo-books-chapter-done-v2',oldDoneKey='indo-books-chapter-done-v1',favKey='indo-books-fav-v1',fontKey='indo-books-reader-font-v1',warmKey='indo-books-reader-warm-v1';
 let mode='both',active=1,whole=null,done={},fav=false,fontSize=19,warm=false,opening=false;
+let lastRead=null,manualBookmark=null,pendingJump=null,readingScrollArmed=false,readingScrollTimer=null,bookmarkHighlightTimer=null;
 const $=id=>document.getElementById(id);
 function store(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){msg('浏览器无法保存本机修改。',true);return false}}
 function read(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
@@ -171,6 +192,101 @@ function msg(t,error){const el=$('message');el.textContent=t;el.classList.toggle
 function unlockMsg(t,error){const el=$('unlockStatus');el.textContent=t;el.classList.toggle('error',!!error)}
 function safeParagraphs(arr){return Array.isArray(arr)&&arr.length>0&&arr.length<350&&arr.every(p=>p&&typeof p.idn==='string'&&p.idn.length>0&&p.idn.length<12000&&typeof p.zh==='string'&&p.zh.length<12000)}
 function validBook(d){return !!(d&&d.schema==='indo-bilingual-book-v1'&&d.bookId===bookId&&Array.isArray(d.chapters)&&d.chapters.length===12&&d.chapters.every((c,i)=>c&&c.chapter===i+1&&typeof c.title==='string'&&safeParagraphs(c.paragraphs))&&d.chapters.reduce((n,c)=>n+c.paragraphs.length,0)===1407)}
+
+function validPosition(pos){
+ if(!pos||!Number.isInteger(pos.chapter)||pos.chapter<1||pos.chapter>12||!Number.isInteger(pos.index)||pos.index<0||pos.index>400)return null;
+ const ref=typeof pos.ref==='string'&&/^\d{2}-\d{3}$/.test(pos.ref)?pos.ref:'';
+ return {chapter:pos.chapter,index:pos.index,ref};
+}
+function positionLabel(pos){return '第'+pos.chapter+'章 · 第'+(pos.index+1)+'段';}
+function positionEquals(a,b){return !!a&&!!b&&a.chapter===b.chapter&&a.index===b.index}
+function readPosition(key){return validPosition(read(key));}
+function positionAt(chapter,index){
+ const data=dataFor(chapter),p=data&&data.paragraphs[index];
+ if(!whole||!p)return null;
+ return {chapter,index,ref:typeof p.ref==='string'?p.ref:''};
+}
+function saveReadingPosition(pos){
+ const valid=validPosition(pos);
+ if(!valid||positionEquals(valid,lastRead))return;
+ lastRead=valid;store(lastReadKey,valid);renderBookmarkBar();
+}
+function markManualBookmark(chapter,index){
+ const next=positionAt(chapter,index);
+ if(!next)return;
+ if(positionEquals(manualBookmark,next)){manualBookmark=null;try{localStorage.removeItem(bookmarkKey)}catch(e){}}
+ else{manualBookmark=next;store(bookmarkKey,next);saveReadingPosition(next)}
+ renderBookmarkButtons();renderBookmarkBar();
+}
+function renderBookmarkButtons(){
+ const host=$('paragraphs');
+ Array.from(host.querySelectorAll('.para')).forEach((section,i)=>{
+  const saved=positionEquals(manualBookmark,{chapter:active,index:i});
+  const button=section.querySelector('.bookmarkAction');
+  section.classList.toggle('bookmarked',saved);
+  if(button){button.classList.toggle('isSaved',saved);button.textContent=saved?'🔖 已标记':'🔖 书签';button.setAttribute('aria-pressed',String(saved))}
+ });
+}
+function renderBookmarkBar(){
+ const haveLast=!!lastRead,haveManual=!!manualBookmark;
+ $('bookmarkBar').hidden=!(haveLast||haveManual);
+ $('lastReadLabel').hidden=!haveLast;$('resumeReading').hidden=!haveLast;
+ $('manualBookmarkLabel').hidden=!haveManual;$('jumpBookmark').hidden=!haveManual;
+ if(haveLast)$('lastReadLabel').textContent='上次阅读：'+positionLabel(lastRead);
+ if(haveManual)$('manualBookmarkLabel').textContent='🔖 书签：'+positionLabel(manualBookmark);
+}
+function schedulePendingJump(){
+ if(!pendingJump||!whole||active!==pendingJump.chapter)return;
+ const targetPos=pendingJump;
+ pendingJump=null;
+ requestAnimationFrame(()=>{
+  const saved=positionAt(targetPos.chapter,targetPos.index);
+  if(!saved)return;
+  let section=saved.ref?document.getElementById('para-'+saved.ref):null;
+  if(!section)section=$('paragraphs').querySelectorAll('.para')[targetPos.index];
+  if(!section)return;
+  readingScrollArmed=false;
+  section.scrollIntoView({behavior:'auto',block:'start'});
+  section.classList.add('bookmarkFocus');
+  if(bookmarkHighlightTimer)clearTimeout(bookmarkHighlightTimer);
+  bookmarkHighlightTimer=setTimeout(()=>section.classList.remove('bookmarkFocus'),2200);
+ });
+}
+function jumpToPosition(pos){
+ const valid=validPosition(pos);
+ if(!valid)return;
+ pendingJump=valid;
+ if(location.hash!=='#chapter-'+valid.chapter)location.hash='#chapter-'+valid.chapter;
+ else schedulePendingJump();
+}
+function trackReadingScroll(){
+ if(!readingScrollArmed||!whole||$('readerPage').hidden)return;
+ const sections=$('paragraphs').querySelectorAll('.para');
+ const threshold=Math.min(window.innerHeight*.33,270);
+ for(let i=0;i<sections.length;i++){
+  const rect=sections[i].getBoundingClientRect();
+  if(rect.bottom>=threshold&&rect.top<window.innerHeight*.88){
+    const pos=positionAt(active,i);
+    if(pos)saveReadingPosition(pos);
+    break;
+  }
+ }
+}
+function initReadingPositionTracking(){
+ const arm=()=>{if(whole&&!$('readerPage').hidden)readingScrollArmed=true};
+ window.addEventListener('wheel',arm,{passive:true});
+ window.addEventListener('touchmove',arm,{passive:true});
+ window.addEventListener('keydown',e=>{
+  if(['ArrowDown','ArrowUp','PageDown','PageUp',' ','End','Home'].includes(e.key)
+    &&!(e.target&&e.target.closest&&e.target.closest('input,textarea,select,button')))arm();
+ });
+ window.addEventListener('scroll',()=>{
+  if(!readingScrollArmed||!whole||$('readerPage').hidden)return;
+  clearTimeout(readingScrollTimer);
+  readingScrollTimer=setTimeout(trackReadingScroll,240);
+ },{passive:true});
+}
+
 function cover(){const el=document.createElement('div');el.className='cover';const emoji=document.createElement('small');emoji.textContent='🍜';const title=document.createElement('strong');title.textContent='Seporsi Mie Ayam Sebelum Mati';el.append(emoji,title);return el}
 function shelf(){
  const host=$('bookGrid');host.replaceChildren();
@@ -179,10 +295,13 @@ function shelf(){
  const info=document.createElement('div'),title=document.createElement('h2');title.className='bookTitle';title.textContent='Seporsi Mie Ayam Sebelum Mati';
  const by=document.createElement('p');by.className='byline';by.textContent='作者：Brian Khrisna';info.append(title,by);top.append(info);
  const desc=document.createElement('p');desc.className='bookDesc';desc.textContent=whole?'12章全本 · 1,407段已解锁 · 中文已校对、疑似OCR错误附校注':'12章原文＋中文校对稿 · 私人解锁阅读，无需导入文件';
+ const progress=lastRead?document.createElement('p'):null;
+ if(progress){progress.className='lastRead';progress.textContent='上次阅读：'+positionLabel(lastRead)}
  const bottom=document.createElement('div');bottom.className='bookBottom';
  const tag=document.createElement('span');tag.className='pill';tag.textContent=whole?'已解锁 · 12章':'私人校对版 · 12章';
- const a=document.createElement('a');a.href='#chapter-1';a.className='btn';a.textContent=whole?'继续阅读':'打开书籍';
- bottom.append(tag,a);card.append(top,desc,bottom);host.append(card);
+ const a=document.createElement('a');a.href='#chapter-'+(lastRead?lastRead.chapter:1);a.className='btn';a.textContent=lastRead?'继续阅读':'打开书籍';
+ a.addEventListener('click',()=>{if(lastRead){pendingJump={...lastRead};if(location.hash===a.getAttribute('href'))schedulePendingJump()}});
+ bottom.append(tag,a);card.append(top,desc);if(progress)card.append(progress);card.append(bottom);host.append(card);
 }
 function dataFor(n){return whole?whole.chapters[n-1]:(n===1?{paragraphs:sample,preview:true}:null)}
 function summary(n){const data=dataFor(n),total=data?data.paragraphs.length:0;return {total,translated:data?data.paragraphs.filter(x=>x.zh.trim()).length:0,preview:!!(data&&data.preview)}}
@@ -231,6 +350,7 @@ function speakText(text){
 function saveEdits(){const edits=read(editKey)||{};const data=dataFor(active);if(!data)return;for(const p of data.paragraphs){if(p._edited){edits[p.ref]=p.zh;delete p._edited}}store(editKey,edits)}
 function applyEdits(){const edits=read(editKey)||{};if(!whole)return;for(const c of whole.chapters){for(const p of c.paragraphs){if(Object.prototype.hasOwnProperty.call(edits,p.ref)&&typeof edits[p.ref]==='string')p.zh=edits[p.ref]}}}
 function renderParagraphs(){
+ readingScrollArmed=false;
  const host=$('paragraphs');host.replaceChildren();
  $('readerChapterTitle').textContent='第'+active+'章 · '+titles[active-1];$('chapterTag').textContent='第'+active+'章 / 共12章';
  const data=dataFor(active),st=summary(active);
@@ -244,6 +364,12 @@ function renderParagraphs(){
   const zh=document.createElement('p');zh.className='zhText';zh.lang='zh-CN';zh.textContent=p.zh;
   const actions=document.createElement('div');actions.className='paraActions';
   const speak=document.createElement('button');speak.className='tiny';speak.type='button';speak.textContent='🔊 朗读本段';speak.addEventListener('click',()=>speakText(p.idn));actions.append(speak);
+  if(whole){
+   const bookmarkButton=document.createElement('button');
+   bookmarkButton.className='tiny bookmarkAction';bookmarkButton.type='button';
+   bookmarkButton.addEventListener('click',()=>markManualBookmark(active,i));
+   actions.append(bookmarkButton);
+  }
   zh.hidden=mode==='id'||mode==='reveal'||!p.zh;
   if(mode==='reveal'&&p.zh){const toggle=document.createElement('button');toggle.className='tiny';toggle.type='button';toggle.textContent='查看中文';toggle.addEventListener('click',()=>{zh.hidden=!zh.hidden;toggle.textContent=zh.hidden?'查看中文':'隐藏中文'});actions.append(toggle)}
   if(whole){
@@ -268,6 +394,7 @@ function renderParagraphs(){
   }
   host.append(section);
  }
+ renderBookmarkButtons();
 }
 function renderChapters(){
  const host=$('chapterList'),select=$('chapterSelect');host.replaceChildren();select.replaceChildren();
@@ -293,14 +420,16 @@ function renderButtons(){
  $('exportBook').disabled=!whole;
 }
 function route(){
+ readingScrollArmed=false;clearTimeout(readingScrollTimer);
  const match=(location.hash||'').match(/^#chapter-(1[0-2]|[1-9])$/),isReader=!!match;
  if(match)active=Number(match[1]);
  $('readerPage').hidden=!isReader;$('shelfPage').hidden=isReader;$('where').hidden=!isReader;
  if(isReader){
   $('readingNote').textContent=whole?'已解锁私人12章校对版：1,407段印中对照，700段带校注；其中213段标出原文提取问题，未宣称逐字校对原书。':'请先在下面输入私人密钥。完整12章内容已加密存放；无需上传文件、无需调用机器翻译。';
-  renderWords();renderParagraphs();renderChapters();renderButtons();
- }
+  renderWords();renderParagraphs();renderChapters();renderButtons();renderBookmarkBar();
+ }else{shelf()}
  window.scrollTo(0,0);
+ if(isReader)schedulePendingJump();
 }
 function b64bytes(s){const raw=atob(s),bytes=new Uint8Array(raw.length);for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);return bytes}
 async function decryptPrivate(password){
@@ -343,6 +472,9 @@ function exportBook(){
  msg('已导出个人校对版。请勿公开分享版权作品。');
 }
 function init(){
+ $('resumeReading').addEventListener('click',()=>jumpToPosition(lastRead));
+ $('jumpBookmark').addEventListener('click',()=>jumpToPosition(manualBookmark));
+ initReadingPositionTracking();
  $('unlockForm').addEventListener('submit',e=>{e.preventDefault();const key=$('privatePassword').value.trim();if(key)unlock(key,$('rememberKey').checked)});
  $('exportBook').addEventListener('click',exportBook);
  $('clearKey').addEventListener('click',()=>{
@@ -365,6 +497,7 @@ function init(){
  $('fontPlus').addEventListener('click',()=>{fontSize=Math.min(25,fontSize+1);store(fontKey,fontSize);renderButtons()});
  $('warmToggle').addEventListener('click',()=>{warm=!warm;store(warmKey,warm);renderButtons()});
 }
+lastRead=readPosition(lastReadKey);manualBookmark=readPosition(bookmarkKey);
 const progress=read(doneKey);done=progress&&typeof progress==='object'&&!Array.isArray(progress)?progress:{};
 if(read(oldDoneKey)===true&&!Object.hasOwn(done,1))done[1]=true;
 fav=read(favKey)===true;const f=read(fontKey);if(Number.isInteger(f)&&f>=15&&f<=25)fontSize=f;warm=read(warmKey)===true;
