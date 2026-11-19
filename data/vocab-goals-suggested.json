@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1086,
+   "use": 1087,
    "recognize": 120,
    "unsure": 26,
    "fast": 137
   },
   "active": {
-   "use": 689,
+   "use": 690,
    "recognize": 104,
    "unsure": 24,
    "fast": 51
@@ -11319,6 +11319,15 @@
    ]
   },
   "keripik": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "hancur": {
    "goal": "use",
    "fast": false,
    "by": "rule",
