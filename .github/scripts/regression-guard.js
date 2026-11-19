@@ -624,16 +624,18 @@ try {
           ok(parses,'selection translation script parses as JavaScript');
           ok(bookPage.includes('selection-translate.js?v=') && bookPage.includes('window.__bookReadingAids=READING_AIDS;'), 'book reader loads selection tool and supplies chapter-specific glossary');
           ok(lookupJs.includes('#readerPage #paragraphs .idText') && lookupJs.includes("addEventListener('selectionchange'") && lookupJs.includes("addEventListener('touchend'"), 'selection translator works only in Indonesian paragraphs and supports mouse/touch');
-          ok(lookupJs.includes("sourceLanguage:'id'") && lookupJs.includes("targetLanguage:'zh'") && lookupJs.includes('translate.googleapis.com/translate_a/single?client=gtx&sl=id&tl=zh-CN') && lookupJs.includes("querySelector('.bsel-online').addEventListener('click'"), 'selection translator uses on-device or explicitly clicked Google Indonesian-to-Chinese translation');
+          ok(lookupJs.includes('translate.googleapis.com/translate_a/single?client=gtx&sl=id&tl=zh-CN') && lookupJs.includes('void onlineTranslation(info.text,localSeq,box);'), 'selection translator auto-translates Indonesian selections only after dictionary miss');
           ok(!lookupJs.includes('api.mymemory.translated.net') && !lookupJs.includes("发送给 MyMemory") && !lookupJs.includes('MyMemory 在线机器翻译'), 'selection translator does not use erroneous MyMemory translations');
           const glossaryLine=lookupJs.split('\n').find(x=>x.trim().startsWith('const COMMON_ID_ZH='));
           let fixed=null;
           try{fixed=glossaryLine&&JSON.parse(glossaryLine.trim().slice('const COMMON_ID_ZH='.length,-1));}catch(e){}
           ok(!!fixed && Array.isArray(fixed.seperti) && fixed.seperti[0].includes('像') && fixed.seperti[0].includes('如同') && fixed.sepertinya[0].includes('似乎') && fixed.nggak[0].includes('不'), 'common-word glossary fixes seperti and other Indonesian function words');
-          ok(bookPage.includes('selection-translate.js?v=20261119-select3'), 'bookshelf cache-buster delivers automatic selection translator');
+          ok(bookPage.includes('selection-translate.js?v=20261119-select4'), 'bookshelf cache-buster delivers compact popup');
           ok(lookupJs.includes('void onlineTranslation(info.text,localSeq,box);') && lookupJs.includes('if(!changed())return;') && lookupJs.includes('const exact=glossaryHit(info.text);'), 'book lookup checks local dictionaries first, then auto-translates only active selection on miss');
           ok(!!fixed && fixed.sesuatu && fixed.sesuatu[0].includes('某件事') && fixed.sesuatu[0].includes('某个东西'), 'sesuatu has a contextual Chinese local definition');
-          ok(lookupJs.includes('自动翻译失败：') && lookupJs.includes('Google 在线翻译') && !lookupJs.includes('点击“Google 在线翻译”才会把选中文字发送'), 'auto translation has clear failure/retry UI and updated privacy note');
+          ok(lookupJs.includes('翻译失败，请重试') && lookupJs.includes("querySelector('.bsel-retry').addEventListener('click'") && lookupJs.includes('retry.hidden=!!local'), 'minimal popup only shows retry after machine translation failure');
+          ok(lookupJs.includes('class="bsel-selected"') && lookupJs.includes('class="bsel-meaning"') && lookupJs.includes('bsel-speak') && lookupJs.includes('bsel-copy') && !lookupJs.includes('bsel-note') && !lookupJs.includes('bsel-device') && !lookupJs.includes('bsel-online'), 'minimal popup removes long labels, instructions, and unnecessary translation buttons');
+          ok(!!fixed && Array.isArray(fixed.sepotong) && fixed.sepotong[0].includes('一块') && fixed.sepotong[0].includes('一片'), 'sepotong offers useful piece/slice senses');
           ok(!lookupJs.includes('seporsi-claude-v1.enc.json') && !lookupJs.includes('localStorage.setItem(passKey'), 'selection translator cannot access book ciphertext or unlock secret');
         }
       }
