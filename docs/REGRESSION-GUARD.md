@@ -840,3 +840,10 @@
 - 手动 Google 按钮作为人工重试/主动额外对照选项继续保留；自动网络失败显示明确错误和可重试提示，不伪装成已校对的中文翻译。
 - 选词变化、弹窗关闭或旧查询完成后，过时的回调不得更新新弹窗或发起过时查询；沿用 `seq` / `changed()` 检查。
 - 新增 `sesuatu` 常用词释义“某件事、某个东西、某种事物”，附语境示例。阅读器版本号更新以清除旧浏览器缓存。只改书籍翻译，不改 AM/PM 查词及弱项存储。
+
+## 59. 2026-11-19 划词「加入陌生词」的机器释义被课程释义替换（用户报告 keripik = 筹码）
+
+- **原因**：11-18 早课阅读里划词把 keripik 加入陌生词时，课程还没教过这个词，只能用单词机翻（Google 把 keripik→chips→筹码）。晚课正式教了「脆片；薯片」，但弱项池记录仍保留机翻，自动训练优先用弱项池的 cn。
+- **修复**：`reading-word-lookup.js` 的 `repairMachineMeanings()` 在每台设备启动时运行：凡是 `manual_unknown`（含已归档的 reason_history）的记录，只要课程词库 `DAILY_VOCAB_DB` 或主词库 `MASTER_VOCAB_OBJECTS` 有同一个词的人工释义且不同，就用人工释义（cn / en / root / root_cn）替换，同时更新 `indo_unknown_words`。幂等；不碰其他来源的记录；不用 `UNFAMILIAR_VOCAB_DB`（它可能就是弱项池的镜像）。
+- 当时同步快照里 29 个划词陌生词中有 27 个会被替换，明显错的有 keripik（筹码）、bekal（规定）、merayu（勾引）、laku（需求旺盛）、senam（锻炼）。
+

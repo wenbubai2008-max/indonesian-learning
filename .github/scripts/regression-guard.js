@@ -852,7 +852,14 @@ try {
     const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
     const lk=read('data/reading-word-lookup.js'),hv=read('data/history-v2.js');
     okNew(lk.includes("const LOOKUP_SCOPE='.rl-text,.dailyFixReading,#daily .reading,#daily .dfSentId'")&&(lk.match(/node\.closest\(LOOKUP_SCOPE\)/g)||[]).length===2&&lk.includes("replace(/🔊/g,' ')"),'lookup: one scope list (reading + .dfSentId) for the gate and the example sentence; 🔊 kept out of the example');
-    okNew((hv.match(/class="dailyFixId dfSentId"/g)||[]).length===2&&indexHtml.includes('data/reading-word-lookup.js?v=20261119-sentences1'),'page: 高频句子 and 情景对话 lines carry .dfSentId; lookup script cache-busted');
+    okNew((hv.match(/class="dailyFixId dfSentId"/g)||[]).length===2&&indexHtml.includes('data/reading-word-lookup.js?v=20261119-mtfix1'),'page: 高频句子 and 情景对话 lines carry .dfSentId; lookup script cache-busted');
+  }
+
+  // 2026-11-19 (REGRESSION-GUARD §59): 加入陌生词 records with a machine meaning take the curated lesson/master meaning.
+  {
+    const okNew=process.env.GUARD_BASELINE_TREE==='1'?()=>{}:ok;
+    const lk=read('data/reading-word-lookup.js');
+    okNew(lk.includes('function repairMachineMeanings()')&&lk.includes("includes('manual_unknown')")&&/function curatedMeaning\(k\)[\s\S]{0,200}DAILY_VOCAB_DB[\s\S]{0,120}MASTER_VOCAB_OBJECTS/.test(lk)&&!/function curatedMeaning\(k\)[\s\S]{0,300}UNFAMILIAR_VOCAB_DB/.test(lk)&&lk.includes('setTimeout(repairMachineMeanings,1500)'),'lookup: curated meanings (lesson + master only) replace machine meanings on 加入陌生词 records at boot');
   }
 
   // 2026-10-18 (REGRESSION-GUARD §33): 带学模式 — a view over the lesson's own content; own progress key only.
