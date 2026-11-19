@@ -630,7 +630,10 @@ try {
           let fixed=null;
           try{fixed=glossaryLine&&JSON.parse(glossaryLine.trim().slice('const COMMON_ID_ZH='.length,-1));}catch(e){}
           ok(!!fixed && Array.isArray(fixed.seperti) && fixed.seperti[0].includes('像') && fixed.seperti[0].includes('如同') && fixed.sepertinya[0].includes('似乎') && fixed.nggak[0].includes('不'), 'common-word glossary fixes seperti and other Indonesian function words');
-          ok(bookPage.includes('selection-translate.js?v=20261119-select2'), 'bookshelf cache-buster delivers corrected selection translator');
+          ok(bookPage.includes('selection-translate.js?v=20261119-select3'), 'bookshelf cache-buster delivers automatic selection translator');
+          ok(lookupJs.includes('void onlineTranslation(info.text,localSeq,box);') && lookupJs.includes('if(!changed())return;') && lookupJs.includes('const exact=glossaryHit(info.text);'), 'book lookup checks local dictionaries first, then auto-translates only active selection on miss');
+          ok(!!fixed && fixed.sesuatu && fixed.sesuatu[0].includes('某件事') && fixed.sesuatu[0].includes('某个东西'), 'sesuatu has a contextual Chinese local definition');
+          ok(lookupJs.includes('自动翻译失败：') && lookupJs.includes('Google 在线翻译') && !lookupJs.includes('点击“Google 在线翻译”才会把选中文字发送'), 'auto translation has clear failure/retry UI and updated privacy note');
           ok(!lookupJs.includes('seporsi-claude-v1.enc.json') && !lookupJs.includes('localStorage.setItem(passKey'), 'selection translator cannot access book ciphertext or unlock secret');
         }
       }
