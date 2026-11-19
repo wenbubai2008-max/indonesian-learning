@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-19T10:52:40.513Z",
-  "source_updated_at": "2026-11-19T05:19:50.525Z",
+  "generated_at": "2026-11-19T14:01:09.296Z",
+  "source_updated_at": "2026-11-19T13:43:04.797Z",
   "taught_total": 1236,
   "confirmed_mastered": 313,
   "needs_reinforcement": 821,
@@ -55,18 +55,17 @@
       "cn": "指出"
     },
     {
-      "word": "dimaksudkan",
-      "score": 126,
+      "word": "kelabakan",
+      "score": 120,
       "signals": [
-        "quick_wrong",
+        "automation_fail",
         "lesson_wrong",
-        "dont",
-        "fuzzy"
+        "dont"
       ],
       "wrong_count": 3,
-      "last_wrong": "2026-11-09T06:53:31.350Z",
-      "last_review": "2026-11-12T08:40:54.689Z",
-      "cn": "意在；旨在；（被）打算用来……"
+      "last_wrong": "2026-11-19T13:31:44.328Z",
+      "last_review": "2026-11-19T13:31:44.328Z",
+      "cn": "忙乱；手忙脚乱"
     },
     {
       "word": "menegaskan",

@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1087,
+   "use": 1090,
    "recognize": 117,
    "unsure": 29,
    "fast": 137
   },
   "active": {
-   "use": 690,
+   "use": 693,
    "recognize": 101,
    "unsure": 27,
    "fast": 51
@@ -11331,6 +11331,33 @@
    ]
   },
   "hancur": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "semakin": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "rumit": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "pintas": {
    "goal": "use",
    "fast": false,
    "by": "rule",
