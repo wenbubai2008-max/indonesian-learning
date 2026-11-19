@@ -637,6 +637,12 @@ try {
           ok(lookupJs.includes('class="bsel-selected"') && lookupJs.includes('class="bsel-meaning"') && lookupJs.includes('bsel-speak') && lookupJs.includes('bsel-copy') && !lookupJs.includes('bsel-note') && !lookupJs.includes('bsel-device') && !lookupJs.includes('bsel-online'), 'minimal popup removes long labels, instructions, and unnecessary translation buttons');
           ok(!!fixed && Array.isArray(fixed.sepotong) && fixed.sepotong[0].includes('一块') && fixed.sepotong[0].includes('一片'), 'sepotong offers useful piece/slice senses');
           ok(!lookupJs.includes('seporsi-claude-v1.enc.json') && !lookupJs.includes('localStorage.setItem(passKey'), 'selection translator cannot access book ciphertext or unlock secret');
+          ok(bookPage.includes('indo-books-seporsi-last-read-v1') && bookPage.includes('indo-books-seporsi-bookmark-v1'), 'book remembers last-read position and manual bookmark using isolated browser storage');
+          ok(bookPage.includes('id="resumeReading"') && bookPage.includes('id="jumpBookmark"') && bookPage.includes("function schedulePendingJump()") && bookPage.includes("function markManualBookmark("), 'book offers jump back to last paragraph and manual bookmark');
+          ok(bookPage.includes("function trackReadingScroll()") && bookPage.includes("function initReadingPositionTracking()") && bookPage.includes("readingScrollArmed=false"), 'book only saves reading position after deliberate scrolling, not first paint or route reset');
+          ok(bookPage.includes("className='tiny bookmarkAction'") && bookPage.includes("section.scrollIntoView({behavior:'auto',block:'start'})"), 'book can mark an exact paragraph and return directly to it');
+          ok(!bookPage.includes('MutationObserver') && bookPage.includes('selection-translate.js?v=20261119-select4'), 'book bookmark implementation preserves existing reader and selection script');
+
         }
       }
     } else {
