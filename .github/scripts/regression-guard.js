@@ -624,7 +624,13 @@ try {
           ok(parses,'selection translation script parses as JavaScript');
           ok(bookPage.includes('selection-translate.js?v=') && bookPage.includes('window.__bookReadingAids=READING_AIDS;'), 'book reader loads selection tool and supplies chapter-specific glossary');
           ok(lookupJs.includes('#readerPage #paragraphs .idText') && lookupJs.includes("addEventListener('selectionchange'") && lookupJs.includes("addEventListener('touchend'"), 'selection translator works only in Indonesian paragraphs and supports mouse/touch');
-          ok(lookupJs.includes("sourceLanguage:'id'") && lookupJs.includes("targetLanguage:'zh'") && lookupJs.includes('api.mymemory.translated.net/get?q=') && lookupJs.includes("querySelector('.bsel-online').addEventListener('click'"), 'selection translator provides on-device and explicitly clicked online translation');
+          ok(lookupJs.includes("sourceLanguage:'id'") && lookupJs.includes("targetLanguage:'zh'") && lookupJs.includes('translate.googleapis.com/translate_a/single?client=gtx&sl=id&tl=zh-CN') && lookupJs.includes("querySelector('.bsel-online').addEventListener('click'"), 'selection translator uses on-device or explicitly clicked Google Indonesian-to-Chinese translation');
+          ok(!lookupJs.includes('api.mymemory.translated.net') && !lookupJs.includes("发送给 MyMemory") && !lookupJs.includes('MyMemory 在线机器翻译'), 'selection translator does not use erroneous MyMemory translations');
+          const glossaryLine=lookupJs.split('\n').find(x=>x.trim().startsWith('const COMMON_ID_ZH='));
+          let fixed=null;
+          try{fixed=glossaryLine&&JSON.parse(glossaryLine.trim().slice('const COMMON_ID_ZH='.length,-1));}catch(e){}
+          ok(!!fixed && Array.isArray(fixed.seperti) && fixed.seperti[0].includes('像') && fixed.seperti[0].includes('如同') && fixed.sepertinya[0].includes('似乎') && fixed.nggak[0].includes('不'), 'common-word glossary fixes seperti and other Indonesian function words');
+          ok(bookPage.includes('selection-translate.js?v=20261119-select2'), 'bookshelf cache-buster delivers corrected selection translator');
           ok(!lookupJs.includes('seporsi-claude-v1.enc.json') && !lookupJs.includes('localStorage.setItem(passKey'), 'selection translator cannot access book ciphertext or unlock secret');
         }
       }
