@@ -148,7 +148,7 @@ body.readerWarm #readerPage .idText{color:#393126}
         <button id="doneButton" class="btn" type="button">标记读完</button>
       </div>
     </div>
-    <p class="sub" style="font-size:12px;margin:5px 0 12px">💡 鼠标划选或手机长按印尼语文字，即可查中文词义、翻译短语并朗读；在线翻译需主动点击。</p>
+    <p class="sub" style="font-size:12px;margin:5px 0 12px">💡 滚动自动记录阅读位置；可在段落右下角设 🔖 书签。划词可直接查中文，词库未收录时自动翻译。</p>
     <div class="layout">
       <article class="paper" aria-label="双语正文"><h2 id="readerChapterTitle">第1章 · SCBD Parking Lot 17</h2><p class="source" id="readerStatus">真实原著短节选 · 个人完整章节可导入</p><div id="paragraphs"></div></article>
       <aside class="side"><h3>🌱 本章阅读辅助</h3><p id="aidCounter" class="sub" style="font-size:12px;margin:-5px 0 10px">精选词汇</p><div id="wordDetail" class="vocabExtra" aria-live="polite">点击词汇查看解释并定位到原文。</div><div id="wordList"></div></aside>
@@ -295,12 +295,13 @@ function shelf(){
  const info=document.createElement('div'),title=document.createElement('h2');title.className='bookTitle';title.textContent='Seporsi Mie Ayam Sebelum Mati';
  const by=document.createElement('p');by.className='byline';by.textContent='作者：Brian Khrisna';info.append(title,by);top.append(info);
  const desc=document.createElement('p');desc.className='bookDesc';desc.textContent=whole?'12章全本 · 1,407段已解锁 · 中文已校对、疑似OCR错误附校注':'12章原文＋中文校对稿 · 私人解锁阅读，无需导入文件';
- if(lastRead){const progress=document.createElement('p');progress.className='lastRead';progress.textContent='上次阅读：'+positionLabel(lastRead);card.appendChild(progress)}
+ const progress=lastRead?document.createElement('p'):null;
+ if(progress){progress.className='lastRead';progress.textContent='上次阅读：'+positionLabel(lastRead)}
  const bottom=document.createElement('div');bottom.className='bookBottom';
  const tag=document.createElement('span');tag.className='pill';tag.textContent=whole?'已解锁 · 12章':'私人校对版 · 12章';
  const a=document.createElement('a');a.href='#chapter-'+(lastRead?lastRead.chapter:1);a.className='btn';a.textContent=lastRead?'继续阅读':'打开书籍';
  a.addEventListener('click',()=>{if(lastRead){pendingJump={...lastRead};if(location.hash===a.getAttribute('href'))schedulePendingJump()}});
- bottom.append(tag,a);card.append(top,desc,bottom);host.append(card);
+ bottom.append(tag,a);card.append(top,desc);if(progress)card.append(progress);card.append(bottom);host.append(card);
 }
 function dataFor(n){return whole?whole.chapters[n-1]:(n===1?{paragraphs:sample,preview:true}:null)}
 function summary(n){const data=dataFor(n),total=data?data.paragraphs.length:0;return {total,translated:data?data.paragraphs.filter(x=>x.zh.trim()).length:0,preview:!!(data&&data.preview)}}
@@ -349,6 +350,7 @@ function speakText(text){
 function saveEdits(){const edits=read(editKey)||{};const data=dataFor(active);if(!data)return;for(const p of data.paragraphs){if(p._edited){edits[p.ref]=p.zh;delete p._edited}}store(editKey,edits)}
 function applyEdits(){const edits=read(editKey)||{};if(!whole)return;for(const c of whole.chapters){for(const p of c.paragraphs){if(Object.prototype.hasOwnProperty.call(edits,p.ref)&&typeof edits[p.ref]==='string')p.zh=edits[p.ref]}}}
 function renderParagraphs(){
+ readingScrollArmed=false;
  const host=$('paragraphs');host.replaceChildren();
  $('readerChapterTitle').textContent='第'+active+'章 · '+titles[active-1];$('chapterTag').textContent='第'+active+'章 / 共12章';
  const data=dataFor(active),st=summary(active);
