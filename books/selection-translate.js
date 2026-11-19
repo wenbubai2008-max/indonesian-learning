@@ -10,7 +10,7 @@
   const cache=new Map();
   const MAX_SELECTION=400;
   let popup=null,selected=null,seq=0,selectTimer=0,selecting=false;
-  let glossaryPromise=null,deviceTranslator=null,deviceCreate=null,deviceAvailability=null;
+  let glossaryPromise=null,deviceTranslator=null,deviceCreate=null;
   const $=id=>document.getElementById(id);
   const css=String.raw`
     .bsel-popup{position:fixed;z-index:100000;width:min(360px,calc(100vw - 20px));max-height:min(420px,calc(100dvh - 20px));overflow:auto;background:#fff;color:#243149;border:1px solid #d7e0ee;border-radius:14px;box-shadow:0 12px 38px rgba(20,35,67,.22);padding:14px;font:14px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}
@@ -21,7 +21,7 @@
     .bsel-meaning{border-left:3px solid #91addb;padding:9px 11px;margin:10px 0;background:#f4f7fe;border-radius:7px;white-space:pre-wrap;color:#33435d}
     .bsel-source{font-size:11px;color:#68768b;line-height:1.5}
     .bsel-actions{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 2px}
-    .bsel-action{border:1px solid #d7e0f0;background:#fff;color:#345092;border-radius:9px;font:700 12px/1.4 inherit;padding:8px 10px;cursor:pointer}
+    .bsel-action{border:1px solid #d7e0f0;background:#fff;color:#345092;border-radius:9px;font-family:inherit;font-size:12px;font-weight:700;line-height:1.4;padding:8px 10px;cursor:pointer}
     .bsel-action.primary{border-color:#3157d5;background:#3157d5;color:#fff}
     .bsel-action:disabled{opacity:.55;cursor:default}
     .bsel-note{font-size:11px;color:#78859a;line-height:1.5;margin-top:9px}
@@ -122,7 +122,7 @@
     const box=popup;document.body.append(box);align(box,info.rect);
     const changed=()=>seq===localSeq&&popup===box;
     box.querySelector('.bsel-close').addEventListener('click',hide);
-    box.querySelector('.bsel-speak').addEventListener('click',()=>{const u=new SpeechSynthesisUtterance(info.text);u.lang='id-ID';u.rate=.85;try{speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){if(changed())popupMessage('朗读不可用，请检查浏览器语音设置。','浏览器语音合成');}});
+    box.querySelector('.bsel-speak').addEventListener('click',()=>{try{const u=new SpeechSynthesisUtterance(info.text);u.lang='id-ID';u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){if(changed())popupMessage('朗读不可用，请检查浏览器语音设置。','浏览器语音合成');}});
     box.querySelector('.bsel-copy').addEventListener('click',async()=>{
       try{await navigator.clipboard.writeText(info.text);if(changed())box.querySelector('.bsel-copy').textContent='✓ 已复制';}
       catch(e){if(changed())popupMessage('无法复制，请检查浏览器剪贴板权限。','');}
@@ -152,7 +152,6 @@
     deviceCreate=(async()=>{
       if(typeof window.Translator.availability==='function'){
         const status=await window.Translator.availability({sourceLanguage:'id',targetLanguage:'zh'});
-        deviceAvailability=status;
         if(status==='unavailable')throw Error('设备不支持印尼语→中文的本机翻译；可选择在线翻译。');
       }
       const t=await window.Translator.create({sourceLanguage:'id',targetLanguage:'zh'});
