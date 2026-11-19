@@ -614,6 +614,20 @@ try {
         ok(bookPage.includes('const READING_AIDS=') && bookPage.includes('const READING_HINTS=') && bookPage.includes('id="aidCounter"') && bookPage.includes("section.id='para-'+p.ref") && !bookPage.includes('当前章节暂无已校对词表'), 'all 12 chapters provide contextual reading aids and paragraph jump links');
       }
       ok(pack.version===1 && pack.alg==='AES-GCM' && pack.kdf==='PBKDF2-SHA256' && pack.compression==='gzip' && typeof pack.ciphertext==='string' && pack.ciphertext.length>100000 && !JSON.stringify(pack).includes('印尼语：') && !JSON.stringify(pack).includes('中文：'), 'private book content is encrypted; no plain novel text in public GitHub');
+      if(process.env.GUARD_BASELINE_TREE!=='1'){
+        const lookupPath='books/selection-translate.js';
+        ok(fs.existsSync(rel(lookupPath)), 'bookshelf standalone selection translation module exists');
+        if(fs.existsSync(rel(lookupPath))){
+          const lookupJs=read(lookupPath);
+          let parses=true;
+          try{new (require('vm').Script)(lookupJs);}catch(e){parses=false;}
+          ok(parses,'selection translation script parses as JavaScript');
+          ok(bookPage.includes('selection-translate.js?v=') && bookPage.includes('window.__bookReadingAids=READING_AIDS;'), 'book reader loads selection tool and supplies chapter-specific glossary');
+          ok(lookupJs.includes('#readerPage #paragraphs .idText') && lookupJs.includes("addEventListener('selectionchange'") && lookupJs.includes("addEventListener('touchend'"), 'selection translator works only in Indonesian paragraphs and supports mouse/touch');
+          ok(lookupJs.includes("sourceLanguage:'id'") && lookupJs.includes("targetLanguage:'zh'") && lookupJs.includes('api.mymemory.translated.net/get?q=') && lookupJs.includes("querySelector('.bsel-online').addEventListener('click'"), 'selection translator provides on-device and explicitly clicked online translation');
+          ok(!lookupJs.includes('seporsi-claude-v1.enc.json') && !lookupJs.includes('localStorage.setItem(passKey'), 'selection translator cannot access book ciphertext or unlock secret');
+        }
+      }
     } else {
       ok(bookPage.includes('indo-bilingual-chapter-v1'), 'legacy bookshelf has a local-file bilingual reader');
     }
