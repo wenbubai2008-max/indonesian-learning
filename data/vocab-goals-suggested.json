@@ -5,14 +5,14 @@
  "counts": {
   "all": {
    "use": 1087,
-   "recognize": 120,
-   "unsure": 26,
+   "recognize": 117,
+   "unsure": 29,
    "fast": 137
   },
   "active": {
    "use": 690,
-   "recognize": 104,
-   "unsure": 24,
+   "recognize": 101,
+   "unsure": 27,
    "fast": 51
   }
  },
@@ -7931,11 +7931,12 @@
    ]
   },
   "jarak tempuh": {
-   "goal": "recognize",
+   "goal": "unsure",
    "fast": false,
-   "by": "review",
+   "by": "review+history",
    "status": "active",
    "why": [
+    "答错较多，不建议只要求认识",
     "使用面窄：认得即可",
     "第二词库 B1 / A"
    ]
@@ -10824,11 +10825,12 @@
    ]
   },
   "menakjubkan": {
-   "goal": "recognize",
+   "goal": "unsure",
    "fast": false,
-   "by": "rule",
+   "by": "rule+history",
    "status": "active",
    "why": [
+    "答错较多，不建议只要求认识",
     "第二词库低重要度（A2 / B）"
    ]
   },
@@ -10950,11 +10952,12 @@
    ]
   },
   "alangkah": {
-   "goal": "recognize",
+   "goal": "unsure",
    "fast": false,
-   "by": "rule",
+   "by": "rule+history",
    "status": "active",
    "why": [
+    "答错较多，不建议只要求认识",
     "第二词库低重要度（B1 / B）"
    ]
   },
