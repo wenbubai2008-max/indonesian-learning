@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261117-perpustakaan-maramis","date":"2026-11-17","title":"Gedung Lama, Ruang Baca Baru: Perpustakaan Kemenkeu Bersiap untuk Publik","title_cn":"老建筑，新阅读空间：财政部图书馆筹备向公众开放","path":"data/extensive-reading-history/2026-11-17.js"},
 {"id":"er-20261115-pasar-murah-aceh-jaya","date":"2026-11-15","title":"Pasar Murah di Aceh Jaya: Bandingkan Harga dan Cek Tanggalnya","title_cn":"亚齐查亚平价市场：比较价格，也要看清日期","path":"data/extensive-reading-history/2026-11-15.js"},
 {"id":"er-20261113-plastik-bekas-jadi-seni","date":"2026-11-13","title":"Dari Plastik Bekas Menjadi Karya Seni di Jakarta","title_cn":"雅加达再生艺术展：废塑料也能讲故事","path":"data/extensive-reading-history/2026-11-13.js"},
 {"id":"er-20261111-pelatihan-kerja-kediri","date":"2026-11-11","title":"Pelatihan Kerja di Kediri: Bekal untuk Mencari Peluang","title_cn":"谏义里职业培训：为寻找机会练好本领","path":"data/extensive-reading-history/2026-11-11.js"},
