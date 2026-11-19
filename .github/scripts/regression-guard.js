@@ -610,6 +610,7 @@ try {
     if(fs.existsSync(rel(encryptedBook))){
       const pack = readJSON(encryptedBook);
       ok(bookPage.includes('id="unlockPanel"') && bookPage.includes('indo-bilingual-book-v1') && bookPage.includes('seporsi-claude-v1.enc.json'), 'private 12-chapter reader supports local unlock');
+      ok(bookPage.includes('const READING_AIDS=') && bookPage.includes('const READING_HINTS=') && bookPage.includes('id="aidCounter"') && bookPage.includes("section.id='para-'+p.ref") && !bookPage.includes('当前章节暂无已校对词表'), 'all 12 chapters provide contextual reading aids and paragraph jump links');
       ok(pack.version===1 && pack.alg==='AES-GCM' && pack.kdf==='PBKDF2-SHA256' && pack.compression==='gzip' && typeof pack.ciphertext==='string' && pack.ciphertext.length>100000 && !JSON.stringify(pack).includes('印尼语：') && !JSON.stringify(pack).includes('中文：'), 'private book content is encrypted; no plain novel text in public GitHub');
     } else {
       ok(bookPage.includes('indo-bilingual-chapter-v1'), 'legacy bookshelf has a local-file bilingual reader');
