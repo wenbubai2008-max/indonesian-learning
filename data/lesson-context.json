@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-19T00:32:13.576Z",
+    "runtime_generated_at": "2026-11-19T03:41:09.815Z",
     "lesson_watermark": "2026-11-19 08:00",
     "index_updated": "2026-11-19",
-    "runtime_hash": "97bac597f8f18ed9c2f31cdac272ff160d02d8bccbd5305bcb824b1059f0b673",
+    "runtime_hash": "260c0dbf20b67f809fcf0d99b9960e92b85226002ff4d720e7c1fff4a6ff613d",
     "index_hash": "9ef95ac555aa2436b6b67c209168cccfc1fa421e8f9bd528e635e27f7d6d7470",
     "rules_hash": "a476188058123c601a76db88793788743ba1dabed101a0ce68c47696582ae96c"
   },
@@ -354,9 +354,9 @@
       [
         "berteriak",
         1,
-        3,
-        "2026-11-12T11:37:40.192Z",
-        "2026-11-18T07:07:49.849Z",
+        5,
+        "2026-11-19T03:28:30.040Z",
+        "2026-11-19T03:28:30.040Z",
         "喊叫",
         "teriak",
         "喊叫"
