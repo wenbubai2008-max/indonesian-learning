@@ -6583,16 +6583,16 @@ window.DAILY_VOCAB_DB = [
     "cn": "乱七八糟；一团乱；很凌乱",
     "en": "messy; chaotic; in a mess",
     "root": "berantak",
-    "example": "Rambut keritingnya jadi berantakan kena angin waktu naik motor.",
-    "example_cn": "她的卷发骑摩托时被风吹得乱七八糟。（kena = terkena）",
+    "example": "Kardusnya penyok dan isinya berantakan, tapi untung keripiknya nggak ada yang hancur.",
+    "example_cn": "箱子压瘪了，里面乱成一团，不过好在薯片一包都没碎。（nggak = tidak）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-11-18 18:00",
+    "last_seen": "2026-11-19 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -6601,14 +6601,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04",
       "2026-10-02",
       "2026-10-03",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "root_cn": "乱；散乱",
     "lesson_occurrences": [
       "2026-09-04 08:00",
       "2026-10-02 18:00",
       "2026-10-03 08:00",
-      "2026-11-18 18:00"
+      "2026-11-18 18:00",
+      "2026-11-19 08:00"
     ]
   },
   {
@@ -9862,21 +9864,25 @@ window.DAILY_VOCAB_DB = [
     "root_cn": "态度；立场",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-12 19:00",
-    "last_seen": "2026-09-12 19:00",
+    "last_seen": "2026-11-19 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-12"
+      "2026-09-12",
+      "2026-11-19"
     ],
-    "example": "Walaupun beda pendapat, sikap kita tetap harus tenang.",
-    "example_cn": "即使意见不同，我们的态度还是要冷静。",
+    "example": "Sikap admin yang sabar bikin pembeli yang tadinya kesal jadi mau menunggu.",
+    "example_cn": "客服耐心的态度，让本来很生气的买家愿意等一等了。（bikin = membuat）",
     "lesson_occurrences": [
-      "2026-09-12 19:00"
+      "2026-09-12 19:00",
+      "2026-11-19 08:00"
     ]
   },
   {
@@ -10499,26 +10505,28 @@ window.DAILY_VOCAB_DB = [
     "en": "party; side; party involved",
     "root": "pihak",
     "root_cn": "一方；方面",
-    "example": "Kedua pihak sebenarnya setuju, cuma detail waktunya belum beres.",
-    "example_cn": "双方其实都同意，只是时间细节还没处理好。",
+    "example": "Kalau paketnya hilang, pihak toko akan menghubungi pihak ekspedisi dulu.",
+    "example_cn": "如果包裹丢了，店方会先联系物流公司那边。",
     "categories": [
       "每日学习",
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 19:00",
+    "last_seen": "2026-11-19 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-11-19"
     ],
     "lesson_occurrences": [
       "2026-09-14 08:00",
-      "2026-09-14 19:00"
+      "2026-09-14 19:00",
+      "2026-11-19 08:00"
     ]
   },
   {
@@ -13753,9 +13761,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-11-14 08:00",
+    "last_seen": "2026-11-19 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13764,14 +13772,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-24",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-19"
     ],
     "lesson_occurrences": [
       "2026-09-24 08:00",
       "2026-11-11 08:00",
       "2026-11-11 18:00",
       "2026-11-12 18:00",
-      "2026-11-14 08:00"
+      "2026-11-14 08:00",
+      "2026-11-19 08:00"
     ]
   },
   {
@@ -17899,19 +17909,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-03 08:00",
-    "last_seen": "2026-10-03 18:00",
+    "last_seen": "2026-11-19 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-19"
     ],
     "lesson_occurrences": [
       "2026-10-03 08:00",
-      "2026-10-03 18:00"
+      "2026-10-03 18:00",
+      "2026-11-19 08:00"
     ]
   },
   {
@@ -18436,17 +18448,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-05 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-11-19 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-19"
     ],
     "lesson_occurrences": [
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-11-19 08:00"
     ]
   },
   {
@@ -18747,19 +18761,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "包裹一到，我就马上拆开并试了鞋子。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-05 18:00",
-    "last_seen": "2026-10-05 18:00",
+    "last_seen": "2026-11-19 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-19"
     ],
     "lesson_occurrences": [
-      "2026-10-05 18:00"
+      "2026-10-05 18:00",
+      "2026-11-19 08:00"
     ]
   },
   {
@@ -21874,16 +21892,16 @@ window.DAILY_VOCAB_DB = [
     "en": "to ignore; to neglect",
     "root": "abai",
     "root_cn": "疏忽；不在意",
-    "example": "Jangan mengabaikan keluhan kecil; balas dengan bahasa yang halus supaya pembeli tidak makin kesal.",
-    "example_cn": "别忽视小小的抱怨；用委婉的话回复，免得买家更生气。",
+    "example": "Admin baru itu ditegur karena mengabaikan perintah untuk cek alamat sebelum paket dikirim.",
+    "example_cn": "那个新客服被批评了，因为他没理会“发货前先核对地址”的指示。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-10-14 18:00",
-    "last_seen": "2026-11-17 08:00",
+    "last_seen": "2026-11-19 08:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -21892,13 +21910,15 @@ window.DAILY_VOCAB_DB = [
       "2026-10-14",
       "2026-10-17",
       "2026-11-06",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-19"
     ],
     "lesson_occurrences": [
       "2026-10-14 18:00",
       "2026-10-17 18:00",
       "2026-11-06 18:00",
-      "2026-11-17 08:00"
+      "2026-11-17 08:00",
+      "2026-11-19 08:00"
     ]
   },
   {
@@ -23469,16 +23489,16 @@ window.DAILY_VOCAB_DB = [
     "en": "to be intended (to / for)",
     "root": "maksud",
     "root_cn": "意思；目的",
-    "example": "Kolom catatan di halaman pembayaran dimaksudkan untuk permintaan khusus, misalnya jam pengiriman atau warna kemasan.",
-    "example_cn": "付款页面上的备注栏是用来写特别要求的，比如送货时间或包装颜色。",
+    "example": "Stiker 'Jangan Dibanting' di kardus itu dimaksudkan agar orang yang mengangkatnya lebih hati-hati.",
+    "example_cn": "箱子上那张“请勿摔扔”的贴纸，是为了让搬箱子的人更小心。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-10-19 08:00",
-    "last_seen": "2026-11-16 08:00",
+    "last_seen": "2026-11-19 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -23488,14 +23508,16 @@ window.DAILY_VOCAB_DB = [
       "2026-10-29",
       "2026-10-31",
       "2026-11-09",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-19"
     ],
     "lesson_occurrences": [
       "2026-10-19 08:00",
       "2026-10-29 18:00",
       "2026-10-31 18:00",
       "2026-11-09 18:00",
-      "2026-11-16 08:00"
+      "2026-11-16 08:00",
+      "2026-11-19 08:00"
     ]
   },
   {
@@ -30959,19 +30981,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-09 08:00",
-    "last_seen": "2026-11-09 18:00",
+    "last_seen": "2026-11-19 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-19"
     ],
     "lesson_occurrences": [
       "2026-11-09 08:00",
-      "2026-11-09 18:00"
+      "2026-11-09 18:00",
+      "2026-11-19 08:00"
     ]
   },
   {
@@ -33482,6 +33506,31 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-18 18:00"
+    ]
+  },
+  {
+    "word": "hancur",
+    "cn": "碎了；毁了；彻底坏掉",
+    "en": "crushed; smashed; ruined",
+    "root": "hancur",
+    "root_cn": "碎；毁",
+    "example": "Jangan taruh kardus berat di atasnya, nanti keripik yang di bawah hancur semua.",
+    "example_cn": "别把重箱子放在上面，不然下面的薯片会全碎了。（taruh = letakkan）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-19 08:00",
+    "last_seen": "2026-11-19 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-19"
+    ],
+    "lesson_occurrences": [
+      "2026-11-19 08:00"
     ]
   }
 ];

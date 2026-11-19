@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-19",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 90
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-18T23:41:05.277Z",
-    "lesson_watermark": "2026-11-18 18:00",
-    "index_updated": "2026-11-18",
-    "runtime_hash": "ea7ae0b5e7f3fda5c0a8833ef809eb2c8a3e97af9a5366282b0d016719c4c8c9",
-    "index_hash": "54d50963f3be7f246a2edd7c919bb6cdb16524c0c3e6c26f0512485bf84581be",
+    "runtime_generated_at": "2026-11-19T00:32:13.576Z",
+    "lesson_watermark": "2026-11-19 08:00",
+    "index_updated": "2026-11-19",
+    "runtime_hash": "97bac597f8f18ed9c2f31cdac272ff160d02d8bccbd5305bcb824b1059f0b673",
+    "index_hash": "9ef95ac555aa2436b6b67c209168cccfc1fa421e8f9bd528e635e27f7d6d7470",
     "rules_hash": "a476188058123c601a76db88793788743ba1dabed101a0ce68c47696582ae96c"
   },
   "schema": {
@@ -48,12 +48,7 @@
     ]
   },
   "candidates": {
-    "new_dont": [
-      [
-        "hancur",
-        "被摧毁"
-      ]
-    ],
+    "new_dont": [],
     "new_fuzzy": [],
     "review": [
       [
@@ -687,16 +682,6 @@
         "随口插话；突然说一句"
       ],
       [
-        "sikap",
-        2,
-        0,
-        "",
-        "2026-11-15T03:30:22.962Z",
-        "态度；立场；举止",
-        "sikap",
-        "态度；立场"
-      ],
-      [
         "pribadi",
         3,
         0,
@@ -715,16 +700,6 @@
         "接下来；下一步；之后的",
         "lanjut",
         "继续；后续"
-      ],
-      [
-        "pihak",
-        2,
-        0,
-        "",
-        "2026-11-15T03:31:04.158Z",
-        "一方；方面；相关方",
-        "pihak",
-        "一方；方面"
       ],
       [
         "sesuai",
@@ -1687,16 +1662,6 @@
         "即"
       ],
       [
-        "bentuk",
-        2,
-        0,
-        "",
-        "2026-11-18T14:19:58.974Z",
-        "形状；形式",
-        "bentuk",
-        "形状；形式"
-      ],
-      [
         "kwitansi",
         2,
         0,
@@ -1895,16 +1860,6 @@
         "小偷；偷东西的人",
         "curi",
         "偷"
-      ],
-      [
-        "teriak",
-        2,
-        0,
-        "",
-        "2026-10-23T23:38:22.391Z",
-        "大喊；喊叫",
-        "teriak",
-        "喊叫"
       ],
       [
         "terpeleset",
@@ -2255,6 +2210,76 @@
         "监狱；牢房",
         "penjara",
         "监狱"
+      ],
+      [
+        "nyimak",
+        3,
+        1,
+        "2026-09-11T15:04:23.880Z",
+        "2026-11-08T07:35:37.271Z",
+        "认真听；跟着听懂内容（口语）",
+        "simak",
+        "仔细听；留意"
+      ],
+      [
+        "bandingkan",
+        2,
+        0,
+        "",
+        "2026-10-21T01:42:22.638Z",
+        "比较（请你比较）",
+        "banding",
+        "比较；对比"
+      ],
+      [
+        "diterima",
+        2,
+        0,
+        "",
+        "2026-10-21T01:42:47.630Z",
+        "被接受；被录用",
+        "terima",
+        "接受；收到"
+      ],
+      [
+        "ngirit",
+        2,
+        2,
+        "2026-09-30T13:59:09.485Z",
+        "2026-11-13T02:31:06.457Z",
+        "省着花；节省开支（口语）",
+        "irit",
+        "节省；省着用"
+      ],
+      [
+        "hancur",
+        1,
+        0,
+        "",
+        "",
+        "碎了；毁了；彻底坏掉",
+        "hancur",
+        "碎；毁"
+      ],
+      [
+        "sikap",
+        2,
+        0,
+        "",
+        "2026-11-15T03:30:22.962Z",
+        "态度；立场；举止",
+        "sikap",
+        "态度；立场"
+      ],
+      [
+        "pihak",
+        2,
+        0,
+        "",
+        "2026-11-15T03:31:04.158Z",
+        "一方；方面；相关方",
+        "pihak",
+        "一方；方面"
       ]
     ],
     "focus": [
@@ -2760,6 +2785,20 @@
         "kardus",
         "keripik"
       ]
+    },
+    {
+      "date": "2026-11-19",
+      "session": "am",
+      "review_core": [
+        "teriak",
+        "berteriak",
+        "bongkar",
+        "dipatok",
+        "bentuk"
+      ],
+      "new_words": [
+        "hancur"
+      ]
     }
   ],
   "previous_pm": {
@@ -2776,7 +2815,60 @@
       "bakal"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-19",
+    "vocab": [
+      [
+        "hancur",
+        "碎了；毁了；彻底坏掉",
+        "crushed; smashed; ruined",
+        "hancur",
+        "碎；毁"
+      ],
+      [
+        "berantakan",
+        "乱七八糟；一团乱；（计划）被打乱",
+        "messy; in disarray",
+        "berantak",
+        "乱；散乱"
+      ],
+      [
+        "dimaksudkan",
+        "意在；用意是；（被）打算用来……",
+        "intended (as / for)",
+        "maksud",
+        "意思；目的"
+      ],
+      [
+        "mengabaikan",
+        "忽视；不理会；不当回事",
+        "to ignore; to neglect",
+        "abai",
+        "疏忽；不在意"
+      ],
+      [
+        "sikap",
+        "态度；立场；举止",
+        "attitude; stance",
+        "sikap",
+        "态度；立场"
+      ],
+      [
+        "pihak",
+        "一方；（某单位）那边；相关方",
+        "party; side",
+        "pihak",
+        "一方；方面"
+      ]
+    ],
+    "review_vocab": [
+      "teriak",
+      "berteriak",
+      "bongkar",
+      "dipatok",
+      "bentuk"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
