@@ -17,7 +17,8 @@ function config(rotation,date){
   recent:on(r.recent_core,'2026-10-04')?{days:Number(r.recent_core.window_days)||4,max:Number.isInteger(r.recent_core.max_per_pm)?r.recent_core.max_per_pm:2}:null,
   focus:on(r.focus_quota,'2026-10-04')?{min:Number.isInteger(r.focus_quota.min)?r.focus_quota.min:2,max:Number.isInteger(r.focus_quota.max)?r.focus_quota.max:3}:null,
   appAm:on(r.application_am_review,'2026-10-04'),
-  ledger:ledgerConfig(r,date)
+  ledger:ledgerConfig(r,date),
+  sweep:on(r.review_sweep,'9999-12-31')?{passDays:Number.isInteger(r.review_sweep.pass_days)&&r.review_sweep.pass_days>0?r.review_sweep.pass_days:30}:null
  };
 }
 
@@ -251,7 +252,33 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
   return {word:w,score,stale_days:staleDays,priority:i.priority,wrong_count:i.wrongCount,legacy:i.priority===5,count:i.count,days_ago:i.daysAgo,fresh:i.fresh,hard,focus:i.focus,recent4:recent,blocked,blocked_by:why,am_core:am.has(w),reasons};
  }).sort((a,b)=>b.score-a.score||a.word.localeCompare(b.word));
  const amNew=new Set(amVocab.map(norm)); // today's 08:00 new words are PM application material, never PM core review
- const usable=items.filter(x=>!x.blocked&&(x.count<3||x.fresh)&&!(pmRules&&amNew.has(x.word)));
+ // Review sweep (2026-11-20, user decision): go through the review words in order, and a word that came through its
+ // last review (active exposure: AM review/cycle, PM review/application) without a wrong answer since is "passed":
+ // it waits pass_days before it may take a core slot again, so the weakest words stop recycling while the rest of the
+ // pool waits. Words answered wrong after their last review stay in (spacing rules above still apply). Ranking only;
+ // the validator and the mastered definition are unchanged. When too few unpassed words remain, the passed words
+ // that were reviewed longest ago fill in, so a lesson is never short.
+ const SW=cfg.sweep&&longHistory?cfg.sweep:null,sweepInfo=SW?{active:true,pass_days:SW.passDays,passed:[]}:null;
+ if(SW){
+  const at=Date.parse(date+'T00:00:00Z'),lastAct=new Map();
+  const lessons=[...(longHistory||[]),...(reviewHistory||[])].filter(h=>h&&['am','pm'].includes(h.session)&&h.date<=date&&!(h.date===date&&(session==='am'||h.session==='pm')));
+  for(const h of lessons){const t=lessonTime(h);for(const w of activeWords(h,true)){if(!(lastAct.get(w)>=t))lastAct.set(w,t)}}
+  const rows=new Map((runtime.review_pool||[]).map(v=>[word(v),v]));
+  for(const x of items){
+   const t=lastAct.get(x.word);if(!t)continue;
+   const row=rows.get(x.word),wrong=Array.isArray(row)?Date.parse(row[3]||''):NaN;
+   const days=(at-t)/DAY;
+   if(days<SW.passDays&&!(Number.isFinite(wrong)&&wrong>t)){x.passed=true;x.passed_days=Math.max(0,Math.round(days));x.reasons.push('sweep_passed_'+x.passed_days+'d')}
+  }
+  sweepInfo.passed=items.filter(x=>x.passed).map(x=>x.word);
+ }
+ const usableAll=items.filter(x=>!x.blocked&&(x.count<3||x.fresh)&&!(pmRules&&amNew.has(x.word)));
+ let usable=usableAll;
+ if(SW){
+  const open=usableAll.filter(x=>!x.passed),need=reviewCount+cycleCount+(pmRules?3:0)+2;
+  const fill=open.length<need?usableAll.filter(x=>x.passed).sort((a,b)=>b.passed_days-a.passed_days||b.score-a.score||a.word.localeCompare(b.word)).slice(0,need-open.length):[];
+  usable=[...open,...fill];sweepInfo.open=open.length;sweepInfo.refilled=fill.map(x=>x.word);
+ }
  // Fresh-error quota: errors come back next lesson, but never crowd out the due words (ledger only).
  const errCap=L?Math.min(L.capMax,Math.max(L.capMin,reviewCount-L.minDue)):Infinity;
  // Selection is a function so a same-root group can be tried as a seed (2026-10-15) and compared with the plain pick.
@@ -313,8 +340,8 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
   const rest=usable.filter(x=>!used.has(x.word)&&!x.legacy);
   const weakScore=x=>(x.fresh?100:0)+(x.focus?30:0)+({1:20,2:12,3:6}[x.priority]||0)+Math.min(x.wrong_count||0,5)*3;
   const staleOf=x=>x.stale_days==null?60:x.stale_days; // never seen in the long history = treat as very stale
-  const weak=rest.slice().sort((a,b)=>weakScore(b)-weakScore(a)||b.score-a.score||a.word.localeCompare(b.word));
-  const stale=rest.slice().sort((a,b)=>staleOf(b)-staleOf(a)||b.score-a.score||a.word.localeCompare(b.word));
+  const weak=rest.slice().sort((a,b)=>(!!a.passed-!!b.passed)||weakScore(b)-weakScore(a)||b.score-a.score||a.word.localeCompare(b.word));
+  const stale=rest.slice().sort((a,b)=>(!!a.passed-!!b.passed)||staleOf(b)-staleOf(a)||b.score-a.score||a.word.localeCompare(b.word));
   const chosen=[],taken=new Set();let heavy=pick.filter(x=>x.count>=3).length;
   const grab=(list,n,tag)=>{for(const x of list){if(chosen.filter(c=>c.tag===tag).length>=n)break;if(taken.has(x.word))continue;if(x.count>=3&&heavy>=1)continue;if(x.count>=3)heavy++;taken.add(x.word);chosen.push({word:x.word,tag,weak_score:weakScore(x),stale_days:x.stale_days})}};
   const nWeak=Math.ceil(cycleCount/2);
@@ -350,11 +377,11 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
  const deferred=usable.filter(x=>x.fresh&&!used.has(x.word)).map(x=>x.word);
  if(deferred.length)notes.push('fresh_errors_deferred_to_next_lesson:'+deferred.join(','));
  const amSet=new Set(amVocab.map(norm));
- const apps=pmRules?items.filter(x=>!used.has(x.word)&&!x.am_core&&!x.legacy&&!(L&&x.blocked&&!amSet.has(x.word))).sort((a,b)=>(amSet.has(b.word)-amSet.has(a.word))||b.score-a.score||a.word.localeCompare(b.word))
+ const apps=pmRules?items.filter(x=>!used.has(x.word)&&!x.am_core&&!x.legacy&&!(L&&x.blocked&&!amSet.has(x.word))).sort((a,b)=>(amSet.has(b.word)-amSet.has(a.word))||(!!a.passed-!!b.passed)||b.score-a.score||a.word.localeCompare(b.word))
   .slice(0,6).map(x=>({word:x.word,from_today_am_vocab:amSet.has(x.word),fresh:x.fresh,hard:x.hard})):[];
  // Words actively used very recently (or on a streak): keep them out of tonight's reading/dialogue/examples too.
  const avoid=L?items.filter(x=>!used.has(x.word)&&!amSet.has(x.word)&&x.blocked_by.some(r=>r.startsWith('active_')||r.startsWith('streak_'))).map(x=>x.word).sort():[];
- return {date,session,review_cycle:cycle,review_pool_size:items.length,recent_window_days:recentCfg?recentCfg.days:null,
+ return {date,session,review_cycle:cycle,review_sweep:sweepInfo?{...sweepInfo,passed_count:sweepInfo.passed.length,passed:sweepInfo.passed.slice(0,40)}:null,review_pool_size:items.length,recent_window_days:recentCfg?recentCfg.days:null,
   recommended_review:pick.map(x=>x.word),recommended_detail:pick,
   counts:{recent4:recentUsed,focus:focusUsed,heavy_3plus:heavyUsed,fresh_errors:freshUsed,fresh_error_cap:Number.isFinite(errCap)?errCap:null},
   fresh_errors_deferred:deferred,application_candidates:apps,avoid_in_text:avoid,notes,ranking_top:items.filter(x=>!x.blocked).slice(0,25),

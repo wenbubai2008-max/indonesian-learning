@@ -350,6 +350,13 @@
       "validator": "AM_EXPOSURE_COOLDOWN / PM_EXPOSURE_COOLDOWN / PM_APPLICATION_EXPOSURE_COOLDOWN：只在合法替代充足时报错，不卡发布；当天AM新词进application不受限",
       "ranking": "node .github/scripts/rank-review-candidates.js --date D --session am|pm；输出recommended_review、application_candidates、avoid_in_text、fresh_errors_deferred、natural_recurrence"
     },
+    "review_sweep": {
+      "enabled": true,
+      "effective_date": "2026-11-20",
+      "pass_days": 30,
+      "why": "2026-11-20 用户决定：“尽量让更多的词按顺序复习，中间会的就不再复习了，这样不断筛选最后会越来越少，剩下不会的也逐渐会了。”此前复习循环一半名额固定给“最弱、答错最多”的词，即使上次复习后已经答对，也每隔几天回来一次（如 menunjukkan 11-12、11-13、11-20，perpaduan 11-12、11-13、11-16、11-20），其余几百个词排队很久才轮到。",
+      "rule": "按顺序轮：复习词按“离上次上词卡最久”的顺序排队（从没复习过的最先）。上次主动复习（早课复习词/循环词、晚课重点复习/应用词）之后没有再答错（含小测答错、点“卡住了/忘了”、快速练习、听词、自动训练答错）的词算“这一轮已过”，pass_days=30 天内不再占核心名额；之后又答错的词照常回来（受 fresh_error_spacing 间隔约束）。没过的词越来越少，复习名额就越来越多地给到队伍里久未复习的词。未过的词不足时，用最早复习过的“已过”词补位，课程不会缺词。只在排序脚本中执行，不进入校验器；确认掌握（mastered）的定义不变，仍由自动训练三次跨日验证决定。"
+    },
     "review_pool_rotation": {
       "enabled": true,
       "effective_date": "2026-10-09",

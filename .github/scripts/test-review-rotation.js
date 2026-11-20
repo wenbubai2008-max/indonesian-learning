@@ -309,6 +309,30 @@ t('L12 fresh-error spacing: skip one lesson after an active exposure; no overrid
  const early=rankL({date:'2026-10-08',runtime:rtL({a6:{wrong:'2026-10-08T03:00:00.000Z',wrongs:5}}),rotation:rotS,reviewHistory:h3.slice(0,5),reviewCount:4});
  assert.ok(early.recommended_review.includes('a6'),'before effective_date nothing changes');
 });
+// L13 review sweep (2026-11-20, user decision): a word that came through its last review without a new wrong answer
+// is "passed" for pass_days; words answered wrong since stay in; passed words only refill a short pool.
+t('L13 review sweep: passed words wait, wrong-since words stay, the oldest passed refill a short pool',()=>{
+ const rotW={...rotation,exposure_ledger:LEDGER,review_sweep:{enabled:true,effective_date:'2026-10-01',pass_days:30}};
+ // a1 reviewed 09-20 and never wrong since (passed); a2 reviewed 09-20, wrong 09-25 (stays); a3 reviewed 08-20 (>30 days: open)
+ const long=[amL('2026-08-20',['a3']),amL('2026-09-20',['a1','a2'])];
+ const rt=rtL({a1:{wrong:'2026-09-10T03:00:00.000Z',wrongs:6},a2:{wrong:'2026-09-25T03:00:00.000Z',wrongs:2},a3:{wrong:'2026-08-10T03:00:00.000Z',wrongs:4}});
+ const hist=[amL('2026-10-08'),pmL('2026-10-08'),amL('2026-10-09')];
+ const out=rankL({date:'2026-10-09',runtime:rt,rotation:rotW,reviewHistory:hist,longHistory:long,reviewCount:4});
+ assert.ok(out.review_sweep&&out.review_sweep.passed.includes('a1')&&!out.review_sweep.passed.includes('a2')&&!out.review_sweep.passed.includes('a3'));
+ assert.ok(!out.recommended_review.includes('a1'),'passed word waits even though it has the most wrongs');
+ assert.ok(out.recommended_review.includes('a2'),'wrong after its last review => still in the queue');
+ assert.ok(!out.application_candidates.slice(0,3).some(x=>x.word==='a1'),'passed words are not application picks while others exist');
+ const old=rankL({date:'2026-10-09',runtime:rt,rotation:{...rotation,exposure_ledger:LEDGER},reviewHistory:hist,longHistory:long,reviewCount:4});
+ assert.equal(old.review_sweep,null,'off without the review_sweep block');
+ // AM cycle: weak half no longer re-picks a passed word
+ const am=rankL({date:'2026-10-09',session:'am',runtime:rt,rotation:rotW,reviewHistory:hist.slice(0,2),longHistory:long,reviewCount:4,cycleCount:4});
+ assert.ok(!am.review_cycle.cycle_words.includes('a1')&&!am.recommended_review.includes('a1'));
+ // tiny pool: passed words refill (oldest review first) so a lesson is never short
+ const small={generated_at:'2026-10-10T10:00:00.000Z',review_pool:['p1','p2','p3','o1'].map(w=>[w,1,1,'2026-09-01T03:00:00.000Z','','中','','']),focus_pool:[]};
+ const sl=[amL('2026-09-15',['p1']),amL('2026-09-25',['p2','p3'])];
+ const s2=rankL({date:'2026-10-09',runtime:small,rotation:rotW,reviewHistory:hist,longHistory:sl,reviewCount:4});
+ assert.equal(s2.recommended_review.length,4);assert.equal(s2.review_sweep.refilled[0],'p1');
+});
 }
 
 // Integration through the real validator() using the shared PM fixture of test-lesson-candidate.js.
