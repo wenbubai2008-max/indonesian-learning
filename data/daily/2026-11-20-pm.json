@@ -1,0 +1,364 @@
+{
+  "date": "2026-11-20",
+  "session": "pm",
+  "time": "18:00",
+  "day": 91,
+  "title": "18:00 晚课｜Mikrofon Mati, Wawancara Tinggal Tiga Hari · 麦克风没声音，离面试只剩三天",
+  "write_status": "lesson_complete",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "variation"
+  },
+  "new_words": [],
+  "vocab": [
+    {
+      "word": "remaja",
+      "display": "remaja",
+      "audio_text": "remaja",
+      "cn": "青少年；十几岁的少年（约 12–18 岁）",
+      "en": "teenager; adolescent",
+      "root": "remaja",
+      "root_cn": "青少年",
+      "formation": "基础名词，不拆词缀。常见搭配：anak remaja（十几岁的孩子）、masa remaja（青春期、少年时代）、remaja putri / remaja putra（少女 / 少年）、kenakalan remaja（青少年问题行为）、usia remaja。",
+      "example": "Anak saya yang remaja itu pendiam, jarang cerita soal sekolah.",
+      "example_cn": "我那个十几岁的孩子不爱说话，很少讲学校的事。",
+      "synonym_note": "anak muda 是“年轻人”，范围更宽，二三十岁也算；pemuda 偏“青年”，多见于正式场合和组织名（Sumpah Pemuda）；remaja 专指十几岁、还在上中学的年纪。口语说法：日常也常说 ABG（anak baru gede，刚长大的孩子，带一点调侃）。",
+      "usage_note": "此前学过的词，今晚复习。Bu Wulan 给还在上高中的儿子 Bima 买耳机，Bima 就是 anak remaja。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "beliau",
+      "display": "beliau",
+      "audio_text": "beliau",
+      "cn": "他；她（敬称，用于长辈、老师、上司等）",
+      "en": "he; she (respectful)",
+      "root": "beliau",
+      "root_cn": "他/她（敬称）",
+      "formation": "基础代词，不拆词缀。常用位置：作主语（Beliau sedang rapat）、作宾语或在介词后（saya sudah bicara dengan beliau）、表示所属（rumah beliau）。",
+      "example": "Kakek sudah penuh uban, tapi beliau masih rajin jalan pagi setiap hari.",
+      "example_cn": "爷爷已经满头白发了，可他还是每天坚持早上散步。",
+      "synonym_note": "dia / ia 是一般的“他、她”；beliau 表示尊敬，用来说长辈、老师、领导、客户方的负责人。beliau 只用来指不在对话中的第三人，不能当面称呼对方（当面要用 Bapak / Ibu）。说同龄朋友或晚辈用 dia；对尊敬的人用 dia 不算错，但显得随便。口语说法：beliau 日常也照样说，没有别的口语形。",
+      "usage_note": "此前学过的词，今晚复习。客服 Mbak Sari 跟顾客提到老板 Pak Hendra 时说 Beliau udah putuskan …，表示对老板的尊重。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berfungsi",
+      "display": "berfungsi",
+      "audio_text": "berfungsi",
+      "cn": "起作用；能正常运作；用作（berfungsi sebagai …）",
+      "en": "to function; to work",
+      "root": "fungsi",
+      "root_cn": "功能；作用",
+      "formation": "ber- + fungsi → berfungsi。同词根：fungsi（功能）、memfungsikan（使发挥作用）、difungsikan（被用作）。常见搭配：tidak berfungsi（坏了、不能用）、berfungsi dengan baik（运转正常）、berfungsi lagi、berfungsi sebagai …（起……的作用：Ruang tamu ini juga berfungsi sebagai kantor）。",
+      "example": "AC di ruang rapat nggak berfungsi, jadi masalah anggarannya kita bahas di kafe sebelah aja.",
+      "example_cn": "会议室的空调坏了，所以预算的问题我们去隔壁咖啡馆谈吧。（nggak = tidak，aja = saja）",
+      "synonym_note": "rusak 是“坏了”，说东西本身的状态；tidak berfungsi 说“某个功能不起作用”，常用在投诉、报修里，听起来更客观（mikrofonnya tidak berfungsi）。bekerja 也能说机器“运转”，偏书面。口语说法：日常常说 nggak jalan、nggak nyala（灯、屏幕不亮）、mati（Mikrofonnya mati）；写投诉、跟客服说明时用 tidak berfungsi 更清楚。",
+      "usage_note": "此前学过的词，今晚复习。耳机通了电，可 mikrofonnya tidak berfungsi sama sekali：说话对方完全听不见。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常聊天多说 mati / nggak jalan / nggak nyala；写投诉、填报修单时常用 tidak berfungsi"
+    },
+    {
+      "word": "biarpun",
+      "display": "biarpun",
+      "audio_text": "biarpun",
+      "cn": "即使；尽管（偏口语）",
+      "en": "even though; even if",
+      "root": "biar",
+      "root_cn": "让；随它",
+      "formation": "biar + -pun → biarpun。-pun 有“即使、也”的意思，同类：meskipun、walaupun。常见用法：Biarpun …, …（尽管……，还是……）、biarpun begitu（尽管如此）、biarpun cuma sebentar（哪怕只是一会儿）。",
+      "example": "Biarpun gengsi, akhirnya dia minta maaf duluan.",
+      "example_cn": "尽管拉不下面子，最后他还是先道了歉。",
+      "synonym_note": "biarpun、meskipun、walaupun 意思基本一样，都是“尽管、即使”，大多数句子可以互换；meskipun / walaupun 更中性，书面和口头都常用，biarpun 口语感更强。别和 biar 混：单独的 biar 是“为了、好让”（Biar cepat, kita naik ojek）或“随他去”（Biarin aja），不表示让步。口语说法：日常也常说 walau、biar … juga（Biar mahal juga tetap kubeli）。",
+      "usage_note": "此前学过的词，今晚复习。阅读里 Biarpun Bima sudah mencoba …, suaranya tetap tidak terdengar：试了也没用，用 biarpun 引出“即使这样”。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "demi",
+      "display": "demi",
+      "audio_text": "demi",
+      "cn": "为了（某个重要的人或目标，常带“值得付出”的分量）",
+      "en": "for the sake of",
+      "root": "demi",
+      "root_cn": "为了",
+      "formation": "基础介词，不拆词缀，后面接名词或名词短语。常见搭配：demi keamanan（为了安全）、demi kenyamanan pelanggan（为了顾客方便）、demi anak（为了孩子）、demi masa depan、demi kebaikan bersama。",
+      "example": "Dia rela begadang semalaman demi wawancara kerja besok pagi.",
+      "example_cn": "为了明早的工作面试，他宁愿熬一整夜。",
+      "synonym_note": "untuk 是一般的“为了、给”，最常用（beli untuk anak）；demi 语气更重，表示为了它值得付出、牺牲，常和 rela（甘愿）连用。supaya / agar 后面接一个句子（supaya anaknya bisa ikut wawancara），demi 后面接名词。公告里常见 Demi keamanan, …（为了安全……）。口语说法：demi 本身日常就常说，没有别的口语形；随口说“为了”多用 buat（beli buat anak）。",
+      "usage_note": "此前学过的词，今晚复习。Bu Wulan 着急换货，说 ini demi masa depan anak saya，强调这件事对孩子很重要。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "jarak tempuh",
+      "display": "jarak tempuh",
+      "audio_text": "jarak tempuh",
+      "cn": "行程距离；实际要走的路程",
+      "en": "travel distance",
+      "root": "jarak / tempuh",
+      "root_cn": "距离 / 走过（一段路）",
+      "formation": "jarak（距离）+ tempuh（走过、跨越，动词 menempuh）组成的固定说法。同词根：menempuh（走完一段路；经历：menempuh perjalanan jauh）、waktu tempuh（路上要花的时间）。常见搭配：jarak tempuhnya sekitar … kilometer、jarak tempuh dekat / jauh、jarak tempuh dan waktu tempuh。",
+      "example": "Jarak tempuh dari rumah ke kantor cuma sepuluh kilo, tapi kalau macet bisa satu jam.",
+      "example_cn": "从家到公司路程只有十公里，可要是堵车，能走一个小时。（cuma = hanya，kilo = kilometer）",
+      "synonym_note": "jarak 是两点之间的距离，直线距离也算（jarak antara dua kota）；jarak tempuh 是实际要走、要开的路程；waktu tempuh 是路上要花的时间。口语说法：日常常直接说 jaraknya（Jaraknya cuma lima kilo）或 deket / jauh；导航、物流和新闻里常写 jarak tempuh。",
+      "usage_note": "此前学过的词，今晚复习。客服说替换的耳机从仓库出发，jarak tempuh 只有八公里左右，所以当天晚上就能送到。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常多直接说 jaraknya 或 deket / jauh；jarak tempuh 常见于导航、物流、新闻"
+    },
+    {
+      "word": "ditemukan",
+      "display": "ditemukan",
+      "audio_text": "ditemukan",
+      "cn": "被发现；被找到",
+      "en": "to be found; discovered",
+      "root": "temu",
+      "root_cn": "相遇；找到",
+      "formation": "di- + temu + -kan → ditemukan（menemukan 的被动形）。同词根：menemukan（找到、发现）、bertemu（见面）、pertemuan（会面、会议）、penemuan（发现、发明）。常见搭配：ditemukan kerusakan / masalah（发现故障、问题）、tidak ditemukan（没找到）、akhirnya ditemukan、ditemukan di …（在……被找到）。",
+      "example": "Sendok perak peninggalan nenek akhirnya ditemukan di bawah lemari dapur.",
+      "example_cn": "奶奶留下的银勺子终于在厨房柜子底下找到了。",
+      "synonym_note": "ditemukan 是被“找到、发现”某个东西或问题；diketahui 是被“知道、得知”某个信息（belum diketahui penyebabnya）。说检查后发现故障，用 ditemukan kerusakan；说原因还不清楚，用 belum diketahui。口语说法：日常常说 ketemu（Kuncinya udah ketemu! 钥匙找到了），正式报告、新闻和客服说明里用 ditemukan。",
+      "usage_note": "此前学过的词，今晚换到退货投诉里用：客服看了视频，说 ditemukan masalah di mikrofon。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常多说 ketemu（东西找到了）；ditemukan 常见于客服说明、检查报告和新闻"
+    },
+    {
+      "word": "hak",
+      "display": "hak",
+      "audio_text": "hak",
+      "cn": "权利",
+      "en": "right (legal or moral)",
+      "root": "hak",
+      "root_cn": "权利",
+      "formation": "基础名词。派生：berhak（有权：berhak menukar barang）、hak-hak（各项权利）。常见搭配：punya hak untuk …（有权……）、hak konsumen / hak pembeli（消费者 / 买家权利）、hak cuti（休假的权利）、hak pilih（选举权）、menuntut hak（争取权利）。",
+      "example": "Semua anak punya hak untuk sekolah dan menuntut ilmu.",
+      "example_cn": "所有孩子都有上学和求学的权利。",
+      "synonym_note": "hak 是“权利”，反义是 kewajiban（义务）：hak dan kewajiban。wewenang 是“职权”，指职位带来的权力（wewenang manajer）。说“有权做……”可以说 punya hak untuk … 或 berhak …，两者都常用，berhak 更简洁。口语说法：hak 本身日常就说，没有别的口语形。",
+      "usage_note": "此前学过的词，今晚换到网购退货里用：商品有出厂缺陷，买家 punya hak untuk menukar barang。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Bu Wulan membeli headset di sebuah toko online untuk Bima, anaknya yang masih remaja. Hari Senin pagi, Bima ada wawancara beasiswa lewat video call. Anak itu agak pendiam, jadi Bu Wulan ingin suaranya terdengar jelas. Paketnya sampai hari Jumat siang. Waktu dicoba, Bu Wulan terkejut. Headset itu masih baru, tapi mikrofonnya tidak berfungsi sama sekali. Biarpun Bima sudah mencoba di laptop dan HP, suaranya tetap tidak terdengar. Bu Wulan langsung mengirim komplain lewat chat. Dia tahu pembeli punya hak untuk menukar barang yang cacat. Tapi dia khawatir proses penukarannya lama. Kemungkinan besar headset baru tidak akan sampai sebelum hari Senin.",
+    "cn": "Bu Wulan 在一家网店给还在上中学的儿子 Bima 买了一副耳机。周一早上，Bima 要通过视频通话参加奖学金面试。这孩子有点不爱说话，所以 Bu Wulan 希望他的声音能听得清清楚楚。包裹周五中午到了。一试，Bu Wulan 吃了一惊：耳机是新的，可麦克风完全不能用。尽管 Bima 已经在笔记本和手机上都试过，声音还是传不出去。Bu Wulan 马上在聊天里发了投诉。她知道买家有权更换有缺陷的商品，可她担心换货流程很慢。新耳机很可能在周一之前到不了。"
+  },
+  "dialogue": {
+    "title": "Bu Wulan 投诉耳机麦克风坏了、要赶在面试前换货",
+    "twist": 5,
+    "lines": [
+      {
+        "speaker": "Bu Wulan",
+        "id": "Mbak, saya mau komplain. Headset yang saya pesan baru sampai tadi siang, tapi mikrofonnya nggak berfungsi.",
+        "cn": "你好，我要投诉。我订的耳机今天中午刚到，可麦克风不能用。（nggak = tidak，pesan = memesan）"
+      },
+      {
+        "speaker": "Mbak Sari",
+        "id": "Mohon maaf, Bu. Boleh kirim video waktu headset-nya dicoba? Biar bisa kami cek dulu.",
+        "cn": "非常抱歉。能发一段试耳机时的视频吗？好让我们先查一下。（biar = supaya）"
+      },
+      {
+        "speaker": "Bu Wulan",
+        "id": "Udah saya kirim barusan. Menurut deskripsi di toko, mikrofonnya seharusnya bisa langsung dipakai di HP dan laptop.",
+        "cn": "我刚刚已经发过去了。按店里的商品描述，麦克风本该在手机和笔记本上都能直接用。（udah = sudah）"
+      },
+      {
+        "speaker": "Mbak Sari",
+        "id": "Iya, Bu, dari videonya ditemukan masalah di mikrofon. Ini cacat pabrik, jadi Ibu punya hak untuk tukar dengan barang baru.",
+        "cn": "是的，从视频里看出麦克风有问题。这是出厂缺陷，所以您有权换一副新的。（tukar = menukar）"
+      },
+      {
+        "speaker": "Bu Wulan",
+        "id": "Bagus. Bisa dikirim hari ini? Senin pagi anak saya ada wawancara beasiswa online.",
+        "cn": "好。今天能寄出吗？我儿子周一早上有个线上奖学金面试。"
+      },
+      {
+        "speaker": "Mbak Sari",
+        "id": "Waduh, maaf, Bu. Sesuai aturan, barangnya harus dikirim balik ke gudang dulu dan dicek teknisi. Biasanya prosesnya tujuh hari.",
+        "cn": "哎呀，抱歉。按规定，商品要先寄回仓库，由技术人员检查。一般流程要七天。"
+      },
+      {
+        "speaker": "Bu Wulan",
+        "id": "Tujuh hari? Mbak, saya nggak mau memaksa, tapi ini demi masa depan anak saya. Masa harus nunggu seminggu?",
+        "cn": "七天？我不想强人所难，可这关系到我孩子的前途。难道要等一个星期吗？（nunggu = menunggu）"
+      },
+      {
+        "speaker": "Mbak Sari",
+        "id": "Saya ngerti, Bu. Sebentar, saya bahas dulu sama pemilik toko, Pak Hendra.",
+        "cn": "我明白。请稍等，我先跟店主 Pak Hendra 商量一下。（ngerti = mengerti，sama = dengan）"
+      },
+      {
+        "speaker": "Mbak Sari",
+        "id": "Bu, saya udah ngobrol sama Pak Hendra. Beliau udah putuskan barang penggantinya dikirim duluan hari ini pakai pengiriman instan. Jarak tempuh dari gudang ke rumah Ibu cuma sekitar delapan kilo, jadi nanti malam udah sampai. Headset yang rusak Ibu kirim balik minggu depan aja.",
+        "cn": "我已经跟 Pak Hendra 谈过了。他决定今天先用即时配送把替换的耳机寄出。从仓库到您家路程只有八公里左右，今晚就能到。坏的那副您下周再寄回来就行。（cuma = hanya）（ngobrol = mengobrol，aja = saja）"
+      },
+      {
+        "speaker": "Bu Wulan",
+        "id": "Wah, serius, Mbak? Biarpun tadi saya agak kesel, ternyata pelayanannya cepat banget. Makasih, ya.",
+        "cn": "哇，真的吗？虽然刚才我有点生气，没想到服务这么快。谢谢啊。（kesel = kesal，banget = sekali，makasih = terima kasih）"
+      },
+      {
+        "speaker": "Mbak Sari",
+        "id": "Sama-sama, Bu. Semoga wawancara Bima lancar. Kalau masih ada yang ganjel, langsung chat saya aja.",
+        "cn": "不客气。祝 Bima 面试顺利。要是还有哪里觉得不对劲，直接在聊天里找我就行。"
+      }
+    ],
+    "practice": {
+      "role": "Bu Wulan",
+      "lines": [
+        {
+          "speaker": "Bu Wulan",
+          "id": "Mbak, mikrofon headset saya nggak berfungsi.",
+          "cn": "你好，我耳机的麦克风不能用。"
+        },
+        {
+          "speaker": "Mbak Sari",
+          "id": "Maaf, Bu. Ibu berhak tukar dengan barang baru.",
+          "cn": "抱歉。您有权换一副新的。"
+        },
+        {
+          "speaker": "Bu Wulan",
+          "id": "Bisa dikirim hari ini? Senin anak saya wawancara.",
+          "cn": "今天能寄吗？我儿子周一要面试。"
+        },
+        {
+          "speaker": "Mbak Sari",
+          "id": "Barangnya harus dicek di gudang dulu, Bu.",
+          "cn": "商品得先在仓库检查。"
+        },
+        {
+          "speaker": "Bu Wulan",
+          "id": "Tolong, Mbak. Ini demi masa depan anak saya.",
+          "cn": "拜托了。这关系到我孩子的前途。"
+        },
+        {
+          "speaker": "Mbak Sari",
+          "id": "Baik, Bu. Penggantinya kami kirim duluan hari ini.",
+          "cn": "好的。我们今天先把替换的寄出。"
+        }
+      ]
+    }
+  },
+  "rewrite": [
+    {
+      "kind": "twist",
+      "task": "转折应对：你是客服 Mbak Sari。另一位顾客 Pak Rudi 说，他买的蓝牙音箱完全不能用，女儿周六学校活动要用。按规定要先寄回仓库检查七天，你想帮他赶上。先道歉并说明查到的情况（用 Ternyata 和 berfungsi），再告诉他享有的权利（用 hak），最后用本周句型 Kalau …, kami bisa … 提出办法。按句子骨架填空，用 kami / Bapak。",
+      "frame": "Mohon maaf, Pak, ternyata speaker-nya …… . Bapak tetap punya hak untuk …… . Kalau Bapak setuju, kami bisa …… , jadi …… .",
+      "reference_answer": "Mohon maaf, Pak, ternyata speaker-nya memang tidak berfungsi karena cacat pabrik. Bapak tetap punya hak untuk tukar dengan barang baru. Kalau Bapak setuju, kami bisa kirim penggantinya duluan hari ini, jadi speaker-nya sampai sebelum acara hari Sabtu.",
+      "reference_cn": "非常抱歉，原来音箱确实因为出厂缺陷不能用。您仍然有权换一台新的。如果您同意，我们可以今天先把替换的寄出，这样音箱能在周六活动之前送到。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "顾客发来视频：耳机接上了，指示灯也亮，可对着麦克风说话，对方什么都听不见。客服回复：“Betul, Bu, mikrofonnya memang tidak ____.” 哪项最自然？",
+        "options": [
+          "berfungsi",
+          "difungsikan",
+          "memfungsikan",
+          "fungsinya"
+        ],
+        "answer_index": 0,
+        "answer": "berfungsi",
+        "explain": "tidak berfungsi = 不起作用、不能用，说的是麦克风自己的状态。difungsikan 是被动“被用作……”，tidak difungsikan 意思变成“没被拿来用”；memfungsikan 是“使……发挥作用”，后面要接宾语，主语也应该是人；fungsinya 是名词“它的功能”，放在 tidak 后面不成句。口语里也常说 mikrofonnya mati。"
+      },
+      {
+        "type": "choice",
+        "prompt": "面试前一晚，Bima 还是很紧张，可他已经把自我介绍练了好几遍。妈妈对他说：“____ gugup, kamu udah siap banget, kok.” 哪项最自然？",
+        "options": [
+          "Karena",
+          "Biarpun",
+          "Supaya",
+          "Sehingga"
+        ],
+        "answer_index": 1,
+        "answer": "Biarpun",
+        "explain": "前半句“紧张”和后半句“已经准备得很好”是让步关系，用 Biarpun（尽管），meskipun / walaupun 也对，但不在选项里。Karena gugup 是“因为紧张”，因果对不上；Supaya gugup 是“为了紧张”，说不通；sehingga 表示结果，不能放在句首引出前提。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Pak Hendra 在店铺公告里写：“Barang pengganti kami kirim duluan ____ kenyamanan pelanggan.” 哪项最自然？",
+        "options": [
+          "supaya",
+          "sehingga",
+          "biarpun",
+          "demi"
+        ],
+        "answer_index": 3,
+        "answer": "demi",
+        "explain": "kenyamanan pelanggan 是名词短语，前面要用介词，demi kenyamanan pelanggan = 为了顾客方便，是公告里的常见说法；untuk kenyamanan pelanggan 也可以，但不在选项里。supaya 后面要接句子（supaya pelanggan nyaman）；sehingga 表示结果，也接句子；biarpun 是“尽管”，意思不对。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Teknisi bilang, kerusakan ____ di kabel mikrofon.（被发现）",
+        "answer": "ditemukan",
+        "explain": "kerusakan ditemukan di … = 在……发现了故障，被动形，主语是 kerusakan。主动说法是 Teknisi menemukan kerusakan di kabel mikrofon。日常说东西找到了常用 ketemu。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Pembeli punya ____ untuk menukar barang yang cacat.（权利）",
+        "answer": "hak",
+        "explain": "punya hak untuk … = 有权……。也可以说 Pembeli berhak menukar barang yang cacat。hak 的反义是 kewajiban（义务）。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我孩子还在上中学，有点不爱说话。",
+        "tokens": [
+          "Anak",
+          "saya",
+          "masih",
+          "remaja",
+          "dan",
+          "agak",
+          "pendiam."
+        ],
+        "answer": "Anak saya masih remaja dan agak pendiam.",
+        "answer_cn": "我孩子还在上中学，有点不爱说话。",
+        "explain": "Anak saya 作主语；masih remaja = 还是十几岁的少年（还在上中学的年纪）；dan 连接第二个特点 agak pendiam（有点沉默寡言）。agak 放在形容词前表示“有点”。"
+      }
+    ]
+  },
+  "review": {
+    "title": "可选 · 30 秒复述",
+    "steps": [
+      "用 berfungsi、hak、demi、beliau 说说 Bu Wulan 买的耳机出了什么问题、店里本来要怎么处理、最后怎么解决的。"
+    ],
+    "retell_reference": "Bu Wulan membeli headset untuk anaknya yang masih remaja, tapi mikrofonnya tidak berfungsi. Sebagai pembeli, dia punya hak untuk menukar barang. Masalahnya, menurut aturan toko, barangnya harus dicek di gudang dulu selama tujuh hari. Demi wawancara Bima hari Senin, Bu Wulan minta tolong. Pemilik toko, Pak Hendra, akhirnya mengirim barang pengganti duluan. Beliau bilang headset yang rusak boleh dikirim balik minggu depan.",
+    "retell_reference_cn": "Bu Wulan 给还在上中学的儿子买了一副耳机，可麦克风不能用。作为买家，她有权换货。问题是，按店里的规定，商品得先在仓库检查七天。为了 Bima 周一的面试，Bu Wulan 请店里帮忙。店主 Pak Hendra 最后先把替换的耳机寄了出去。他说坏的那副下周寄回来就行。"
+  },
+  "lesson_focus": {
+    "words": [
+      "berfungsi",
+      "hak",
+      "demi"
+    ],
+    "patterns": [
+      {
+        "pattern": "Menurut …, … seharusnya …",
+        "cn": "按……，……本该……",
+        "function": "state-problem",
+        "example": "Menurut deskripsi di toko, mikrofonnya seharusnya bisa langsung dipakai di HP dan laptop.",
+        "example_cn": "按店里的商品描述，麦克风本该在手机和笔记本上都能直接用。"
+      },
+      {
+        "pattern": "Biarpun …, …",
+        "cn": "尽管……，还是……",
+        "example": "Biarpun Bima sudah mencoba di laptop dan HP, suaranya tetap tidak terdengar.",
+        "example_cn": "尽管 Bima 已经在笔记本和手机上都试过，声音还是传不出去。"
+      }
+    ]
+  }
+}
