@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-20",
-    "session": "pm",
-    "time": "18:00",
-    "day": 91
+    "date": "2026-11-21",
+    "session": "am",
+    "time": "08:00",
+    "day": 92
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-20T09:40:53.937Z",
-    "lesson_watermark": "2026-11-20 08:00",
+    "runtime_generated_at": "2026-11-20T10:52:42.122Z",
+    "lesson_watermark": "2026-11-20 18:00",
     "index_updated": "2026-11-20",
-    "runtime_hash": "44629b198b113d7a11d8b0c0cf37a17ae95758ceb0d044dfac511ef177a00b4b",
-    "index_hash": "e28fc1364bcf23a900fb142c1c7e3c21d437aa20a16ec6e64d3b8c41f8f5e2d2",
+    "runtime_hash": "36d5fe46a20fbb047a615baacd29f51766d5f14c4a0e16f651f12ec7c2fbb957",
+    "index_hash": "03459110660434e3d34b8a0d0b652a084531ae7a4b0d60e0e797eff674dfe7e0",
     "rules_hash": "db9a0916d8e2a5dee9a79e63e897368250659303cb1e92d0db5024bd1128dfd2"
   },
   "schema": {
@@ -158,8 +158,8 @@
         "",
         "2026-10-30T01:55:31.620Z",
         "行程距离；路程（常用公里或所需时间表示）",
-        "",
-        ""
+        "jarak / tempuh",
+        "距离 / 走过（一段路）"
       ],
       [
         "remaja",
@@ -168,8 +168,8 @@
         "",
         "2026-10-29T03:56:13.285Z",
         "青少年；少年时期（十几岁）",
-        "",
-        ""
+        "remaja",
+        "青少年"
       ],
       [
         "kalung",
@@ -1362,16 +1362,6 @@
         "后退；倒退"
       ],
       [
-        "biarpun",
-        2,
-        0,
-        "",
-        "2026-11-18T14:20:51.127Z",
-        "即使；尽管",
-        "biar",
-        "让；即便"
-      ],
-      [
         "membunuh",
         2,
         0,
@@ -1420,16 +1410,6 @@
         "发烧",
         "demam",
         "发烧"
-      ],
-      [
-        "ditemukan",
-        2,
-        0,
-        "",
-        "2026-11-20T05:13:56.158Z",
-        "被发现；被找到",
-        "temu",
-        "见；找到"
       ],
       [
         "gatal",
@@ -1582,16 +1562,6 @@
         "印；打印"
       ],
       [
-        "demi",
-        2,
-        0,
-        "",
-        "2026-11-20T05:13:41.775Z",
-        "为了（甘愿付出）",
-        "demi",
-        "为了"
-      ],
-      [
         "gelar",
         2,
         0,
@@ -1660,36 +1630,6 @@
         "更换；交换",
         "tukar",
         "交换；兑换"
-      ],
-      [
-        "berfungsi",
-        3,
-        0,
-        "",
-        "2026-11-18T14:20:23.124Z",
-        "运作；起作用",
-        "fungsi",
-        "功能；作用"
-      ],
-      [
-        "beliau",
-        2,
-        0,
-        "",
-        "2026-11-18T14:19:51.627Z",
-        "他／她（尊称）",
-        "beliau",
-        "尊称他／她"
-      ],
-      [
-        "hak",
-        2,
-        0,
-        "",
-        "2026-11-20T05:14:26.023Z",
-        "权利；应得的权益",
-        "hak",
-        "权利"
       ],
       [
         "kekuatan",
@@ -2252,34 +2192,64 @@
         "古老的；陈旧的"
       ],
       [
-        "judi",
-        1,
-        0,
-        "",
-        "2026-11-20T05:13:25.279Z",
-        "赌博",
-        "judi",
-        "赌博"
-      ],
-      [
-        "selanjutnya",
-        3,
-        0,
-        "",
-        "2026-11-15T03:30:45.584Z",
-        "接下来；下一步；之后的",
-        "lanjut",
-        "继续；后续"
-      ],
-      [
-        "berikutnya",
+        "mengembangkan",
         2,
         0,
         "",
-        "2026-11-18T14:20:29.025Z",
-        "下一个；接下来的",
-        "ikut",
-        "跟随；参加"
+        "2026-10-23T23:28:20.403Z",
+        "发展；开发；扩大",
+        "kembang",
+        "花；绽放；发展"
+      ],
+      [
+        "mengganggu",
+        2,
+        0,
+        "",
+        "2026-11-15T03:30:12.304Z",
+        "打扰、干扰",
+        "ganggu",
+        ""
+      ],
+      [
+        "menguasai",
+        2,
+        0,
+        "",
+        "2026-10-23T23:29:23.775Z",
+        "掌握；精通；控制",
+        "kuasa",
+        "权力；能力"
+      ],
+      [
+        "menyalakan",
+        2,
+        0,
+        "",
+        "2026-10-23T23:30:56.962Z",
+        "打开（灯、电器）；点燃",
+        "nyala",
+        "亮；着火"
+      ],
+      [
+        "negatif",
+        2,
+        1,
+        "2026-10-23T23:32:45.582Z",
+        "2026-11-03T09:40:16.434Z",
+        "消极的；负面的；阴性的",
+        "negatif",
+        "消极的；负面的"
+      ],
+      [
+        "terletak",
+        2,
+        0,
+        "",
+        "2026-10-24T02:32:39.299Z",
+        "位于；坐落在",
+        "letak",
+        "位置"
       ]
     ],
     "focus": [
@@ -2552,47 +2522,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-13",
-      "session": "am",
-      "review_core": [
-        "terbuat",
-        "buat",
-        "menunjukkan",
-        "perpaduan",
-        "asalkan"
-      ],
-      "new_words": [
-        "mendaki",
-        "bot",
-        "kaos kaki",
-        "tenggara",
-        "penjelajahan",
-        "alangkah",
-        "santap",
-        "dahaga",
-        "pengaturan",
-        "fungsi"
-      ]
-    },
-    {
-      "date": "2026-11-13",
-      "session": "pm",
-      "review_core": [
-        "menunjukkan",
-        "pembangunan",
-        "melainkan",
-        "gelisah",
-        "kesel"
-      ],
-      "new_words": [
-        "pengajar",
-        "peran",
-        "dididik",
-        "diakui",
-        "aspek"
-      ]
-    },
-    {
       "date": "2026-11-14",
       "session": "am",
       "review_core": [
@@ -2790,76 +2719,34 @@
         "bunyi",
         "judi"
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "session": "pm",
+      "review_core": [
+        "remaja",
+        "beliau",
+        "berfungsi",
+        "biarpun",
+        "demi",
+        "jarak tempuh"
+      ],
+      "new_words": []
     }
   ],
   "previous_pm": {
-    "date": "2026-11-19",
-    "new_words": [
-      "semakin",
-      "rumit",
-      "pintas"
-    ],
-    "review_core": [
-      "berteriak",
-      "kelabakan",
-      "kepancing",
-      "berat"
-    ]
-  },
-  "same_day_am": {
     "date": "2026-11-20",
-    "vocab": [
-      [
-        "bunyi",
-        "声音；响声；（文字的）原话、内容",
-        "sound; noise; wording",
-        "bunyi",
-        "声音；响"
-      ],
-      [
-        "judi",
-        "赌博",
-        "gambling",
-        "judi",
-        "赌博"
-      ],
-      [
-        "menunjukkan",
-        "显示；出示；指给……看",
-        "to show; to indicate",
-        "tunjuk",
-        "指；指出"
-      ],
-      [
-        "perpaduan",
-        "结合；搭配；融合",
-        "blend; combination",
-        "padu",
-        "结合；融为一体"
-      ],
-      [
-        "selanjutnya",
-        "接下来；然后；下一个（的）",
-        "next; then; subsequently",
-        "lanjut",
-        "继续；接着"
-      ],
-      [
-        "berikutnya",
-        "下一个；随后的；接下来的",
-        "next; following",
-        "ikut",
-        "跟随"
-      ]
-    ],
-    "review_vocab": [
-      "pintas",
-      "kelabakan",
-      "kesiangan",
-      "memisahkan",
-      "belanja"
+    "new_words": [],
+    "review_core": [
+      "remaja",
+      "beliau",
+      "berfungsi",
+      "biarpun",
+      "demi",
+      "jarak tempuh"
     ]
   },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

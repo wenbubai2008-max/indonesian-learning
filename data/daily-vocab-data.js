@@ -16561,28 +16561,30 @@ window.DAILY_VOCAB_DB = [
     "en": "he/she (respectful)",
     "root": "beliau",
     "root_cn": "尊称他／她",
-    "example": "Beliau meminta kami menyiapkan laporan sebelum rapat.",
-    "example_cn": "他／她（尊称）要求我们在会议前准备好报告。",
+    "example": "Kakek sudah penuh uban, tapi beliau masih rajin jalan pagi setiap hari.",
+    "example_cn": "爷爷已经满头白发了，可他还是每天坚持早上散步。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-10-04 08:00",
+    "last_seen": "2026-11-20 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-30",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
       "2026-09-30 08:00",
       "2026-09-30 18:00",
-      "2026-10-04 08:00"
+      "2026-10-04 08:00",
+      "2026-11-20 18:00"
     ]
   },
   {
@@ -16806,26 +16808,28 @@ window.DAILY_VOCAB_DB = [
     "en": "even though; although",
     "root": "biar",
     "root_cn": "让；即便",
-    "example": "Biarpun hujan, saya tetap pergi ke kantor.",
-    "example_cn": "即使下雨，我还是去办公室。",
+    "example": "Biarpun gengsi, akhirnya dia minta maaf duluan.",
+    "example_cn": "尽管拉不下面子，最后他还是先道了歉。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-01 08:00",
-    "last_seen": "2026-10-01 18:00",
+    "last_seen": "2026-11-20 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-10-01"
+      "2026-10-01",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
       "2026-10-01 08:00",
-      "2026-10-01 18:00"
+      "2026-10-01 18:00",
+      "2026-11-20 18:00"
     ]
   },
   {
@@ -17308,23 +17312,27 @@ window.DAILY_VOCAB_DB = [
     "en": "be found; be discovered",
     "root": "temu",
     "root_cn": "见；找到",
-    "example": "Dompet yang hilang akhirnya ditemukan di dekat pintu masuk.",
-    "example_cn": "丢失的钱包最后在入口附近被找到了。",
+    "example": "Sendok perak peninggalan nenek akhirnya ditemukan di bawah lemari dapur.",
+    "example_cn": "奶奶留下的银勺子终于在厨房柜子底下找到了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-02 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-20 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-11-20 18:00"
     ]
   },
   {
@@ -17947,23 +17955,27 @@ window.DAILY_VOCAB_DB = [
     "en": "for the sake of",
     "root": "demi",
     "root_cn": "为了",
-    "example": "Dia kerja lembur demi membayar kuliah adiknya.",
-    "example_cn": "他为了给弟弟付学费而加班。",
+    "example": "Dia rela begadang semalaman demi wawancara kerja besok pagi.",
+    "example_cn": "为了明早的工作面试，他宁愿熬一整夜。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-03 08:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-11-20 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-11-20 18:00"
     ]
   },
   {
@@ -18027,23 +18039,25 @@ window.DAILY_VOCAB_DB = [
     "en": "to function; to work (of a device)",
     "root": "fungsi",
     "root_cn": "功能；作用",
-    "example": "Blender ini baru seminggu, tapi sudah tidak berfungsi.",
-    "example_cn": "这台搅拌机才买一个星期，就已经不能用了。",
+    "example": "AC di ruang rapat nggak berfungsi, jadi masalah anggarannya kita bahas di kafe sebelah aja.",
+    "example_cn": "会议室的空调坏了，所以预算的问题我们去隔壁咖啡馆谈吧。（nggak = tidak，aja = saja）",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-03 18:00",
-    "last_seen": "2026-10-03 18:00",
+    "last_seen": "2026-11-20 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
-      "2026-10-03 18:00"
+      "2026-10-03 18:00",
+      "2026-11-20 18:00"
     ]
   },
   {
@@ -18202,23 +18216,27 @@ window.DAILY_VOCAB_DB = [
     "en": "right; entitlement",
     "root": "hak",
     "root_cn": "权利",
-    "example": "Setiap pekerja punya hak atas cuti tahunan.",
-    "example_cn": "每位员工都享有年假的权利。",
+    "example": "Semua anak punya hak untuk sekolah dan menuntut ilmu.",
+    "example_cn": "所有孩子都有上学和求学的权利。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-04 08:00",
-    "last_seen": "2026-10-04 08:00",
+    "last_seen": "2026-11-20 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
-      "2026-10-04 08:00"
+      "2026-10-04 08:00",
+      "2026-11-20 18:00"
     ]
   },
   {
@@ -23102,25 +23120,29 @@ window.DAILY_VOCAB_DB = [
     "word": "remaja",
     "cn": "青少年；少年时期（十几岁）",
     "en": "teenager; adolescent",
-    "root": "",
-    "root_cn": "",
-    "example": "Kehidupan remaja sekarang sangat berbeda dengan zaman orang tua kita dulu.",
-    "example_cn": "现在青少年的生活和我们父母那个年代很不一样。",
+    "root": "remaja",
+    "root_cn": "青少年",
+    "example": "Anak saya yang remaja itu pendiam, jarang cerita soal sekolah.",
+    "example_cn": "我那个十几岁的孩子不爱说话，很少讲学校的事。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-18 08:00",
-    "last_seen": "2026-10-18 08:00",
+    "last_seen": "2026-11-20 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-18"
+      "2026-10-18",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
-      "2026-10-18 08:00"
+      "2026-10-18 08:00",
+      "2026-11-20 18:00"
     ]
   },
   {
@@ -23923,25 +23945,29 @@ window.DAILY_VOCAB_DB = [
     "word": "jarak tempuh",
     "cn": "行程距离；路程（常用公里或所需时间表示）",
     "en": "travel distance",
-    "root": "",
-    "root_cn": "",
-    "example": "Jarak tempuh dari rumahku ke kantor sekitar empat puluh menit naik motor, kalau jalanan tidak macet.",
-    "example_cn": "如果路上不堵，从我家骑摩托到公司路程大约四十分钟。",
+    "root": "jarak / tempuh",
+    "root_cn": "距离 / 走过（一段路）",
+    "example": "Jarak tempuh dari rumah ke kantor cuma sepuluh kilo, tapi kalau macet bisa satu jam.",
+    "example_cn": "从家到公司路程只有十公里，可要是堵车，能走一个小时。（cuma = hanya，kilo = kilometer）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-20 08:00",
-    "last_seen": "2026-10-20 08:00",
+    "last_seen": "2026-11-20 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-20"
+      "2026-10-20",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
-      "2026-10-20 08:00"
+      "2026-10-20 08:00",
+      "2026-11-20 18:00"
     ]
   },
   {
