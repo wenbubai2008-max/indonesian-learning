@@ -1,0 +1,294 @@
+{
+  "date": "2026-11-20",
+  "session": "am",
+  "time": "08:00",
+  "day": 91,
+  "title": "08:00 早课｜Lewat Jalan Pintas · 抄近路",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "variation"
+  },
+  "story": {
+    "series": "Toko Keripik Bu Narti · 纳尔蒂阿姨的薯片网店",
+    "episode": 4,
+    "previously_cn": "上集：黛薇女士没有要退款，只要香蕉片在下午两点那场之前送到；纳尔蒂阿姨还塞了一张运费代金券表示歉意。下午一点，约斯师傅打来电话：摩托车抛锚了。",
+    "next_cn": "下集：店铺评论区被网赌广告刷屏了，还有顾客以为是店铺自己发的——拉卡和纳尔蒂阿姨要怎么处理？"
+  },
+  "vocab": [
+    {
+      "word": "bunyi",
+      "display": "bunyi",
+      "audio_text": "bunyi",
+      "cn": "声音；响声；（文字的）原话、内容",
+      "en": "sound; noise; wording",
+      "root": "bunyi",
+      "root_cn": "声音；响",
+      "formation": "bunyi 是词根，名词“（东西、机器、铃发出的）响声”，口语里也直接当动词“响”（HP-nya bunyi）。派生：berbunyi（发出声响；（文字）写着）、membunyikan（使……响：membunyikan klakson 按喇叭、membunyikan bel 按铃）。常见搭配：bunyi aneh（怪声）、bunyi mesin（发动机声）、bunyi alarm、bunyi notifikasi，以及 bunyi pesannya begini（消息原话是这样的）。",
+      "example": "Kalau rem motor bunyi terus, mending langsung dicek di bengkel.",
+      "example_cn": "要是摩托车刹车一直响，最好马上去修车铺看看。（mending = lebih baik）",
+      "synonym_note": "bunyi 多说东西、机器、铃、手机发出的响声，也用来说文字“写着什么”（bunyi pesannya…）；suara 是声音的总称，人说话、唱歌用 suara（suaranya bagus），机器的声音 suara mesin 和 bunyi mesin 都可以说。口语说法：HP-nya bunyi（= HP-nya berbunyi），聊天时直接说；叙述、书面多用 berbunyi。",
+      "usage_note": "今天新学：先记“机器、手机发出的响声”，再看约斯师傅的摩托车出了什么声。",
+      "is_oral_new": false
+    },
+    {
+      "word": "judi",
+      "display": "judi",
+      "audio_text": "judi",
+      "cn": "赌博",
+      "en": "gambling",
+      "root": "judi",
+      "root_cn": "赌博",
+      "formation": "judi 是词根名词。派生：berjudi（去赌、赌博，动词）、penjudi（赌徒）、perjudian（赌博活动，多见于新闻、法律文件）。常见搭配：judi online（网络赌博）、main judi（赌博，口语）、situs judi（赌博网站）、promosi judi online（网赌广告）、kecanduan judi（赌博成瘾）。",
+      "example": "Aku paling benci kalau kolom komentar toko penuh promosi judi online.",
+      "example_cn": "我最讨厌店铺评论区里全是网赌广告。（aku = saya）",
+      "synonym_note": "judi 是“赌博”这件事（名词）；berjudi 是动词“去赌”（Dia sering berjudi）；taruhan 是“打赌、赌注”，朋友之间赌一顿饭也说 taruhan，不一定是 judi。口语说法：main judi（= berjudi）。",
+      "everyday": "日常、新闻都说 judi online，网上和新闻标题常缩写成 judol；perjudian 多用在新闻和法律条文里",
+      "usage_note": "今天新学：先记 judi online 这个最常见的搭配，再看拉卡在店铺评论区看到了什么。",
+      "is_oral_new": false
+    },
+    {
+      "word": "menunjukkan",
+      "display": "menunjukkan",
+      "audio_text": "menunjukkan",
+      "cn": "显示；出示；指给……看",
+      "en": "to show; to indicate",
+      "root": "tunjuk",
+      "root_cn": "指；指出",
+      "formation": "meN- + tunjuk + -kan → menunjukkan（t 脱落）。被动：ditunjukkan；同词根：menunjuk（用手指着；指派）、petunjuk（指示、提示）。常见搭配：peta / aplikasi menunjukkan …（地图、应用显示……）、menunjukkan KTP（出示身份证）、menunjukkan jalan kepada …（给……指路）、data menunjukkan bahwa …（数据显示……）。",
+      "example": "Alasannya masuk akal: aplikasinya menunjukkan drivernya masih kena macet di dekat pasar.",
+      "example_cn": "他的理由说得通：应用上显示司机还堵在市场附近。",
+      "synonym_note": "menunjukkan 是“给人看、显示、指出”，屏幕、地图、数据、证件都能用；menunjuk 是用手指着某处（menunjuk ke kiri）或指派某人（Dia ditunjuk jadi ketua）；memperlihatkan 也是“给……看”，多说把东西拿出来让人看，说数据、结果“显示”时多用 menunjukkan。口语说法：nunjukin（Coba tunjukin lokasinya），朋友之间说。",
+      "usage_note": "复习词：先遮住中文回想意思，再看拉卡手机上的地图显示了什么。",
+      "is_oral_new": false
+    },
+    {
+      "word": "perpaduan",
+      "display": "perpaduan",
+      "audio_text": "perpaduan",
+      "cn": "结合；搭配；融合",
+      "en": "blend; combination",
+      "root": "padu",
+      "root_cn": "结合；融为一体",
+      "formation": "per-an + padu → perpaduan（名词：A 和 B 搭在一起的结果）。同词根：memadukan（把……搭配在一起）、terpadu（综合的、一体化的）。常见搭配：perpaduan antara A dan B、perpaduan rasa manis dan pedas（甜辣结合）、perpaduan warna（配色）。",
+      "example": "Paket campur ini perpaduan keripik pisang yang manis dan keripik singkong yang pedas.",
+      "example_cn": "这个混合装是甜香蕉片和辣木薯片的搭配。",
+      "synonym_note": "perpaduan 多带“搭在一起效果好”的意思，常用来夸味道、颜色、风格；campuran 是“混合物、掺在一起的东西”，比较中性（campuran air dan gula）；kombinasi 意思和 perpaduan 接近，日常也常说。聊天夸味道时也常直接说 manis-pedasnya pas banget。",
+      "usage_note": "复习词：先回想意思，再看培训班的阿姨们夸的是什么。",
+      "is_oral_new": false
+    },
+    {
+      "word": "selanjutnya",
+      "display": "selanjutnya",
+      "audio_text": "selanjutnya",
+      "cn": "接下来；然后；下一个（的）",
+      "en": "next; then; subsequently",
+      "root": "lanjut",
+      "root_cn": "继续；接着",
+      "formation": "se- + lanjut + -nya → selanjutnya。同词根：melanjutkan（继续做）、lanjutan（后续、续集）、berlanjut（持续下去）。两种常见位置：放句首当连接词 Selanjutnya, …（接下来……）；放名词后 langkah selanjutnya（下一步）、informasi selanjutnya（后续消息）。",
+      "example": "Pertama cek alamatnya, selanjutnya foto paketnya sebelum dikirim.",
+      "example_cn": "先核对地址，接下来在发货前给包裹拍照。",
+      "synonym_note": "和下一张 berikutnya 都能放在名词后表示“下一个”（langkah selanjutnya / langkah berikutnya 都可以）；讲步骤、布置任务时，句首“接下来”多用 selanjutnya。口语说法：聊天里“然后”常说 terus 或 abis itu（Abis itu foto paketnya）；讲步骤、开会、写说明时用 selanjutnya。",
+      "usage_note": "复习词：先回想意思，再和下一张 berikutnya 对比。",
+      "is_oral_new": false
+    },
+    {
+      "word": "berikutnya",
+      "display": "berikutnya",
+      "audio_text": "berikutnya",
+      "cn": "下一个；随后的；接下来的",
+      "en": "next; following",
+      "root": "ikut",
+      "root_cn": "跟随",
+      "formation": "按 berikut（跟在后面的、如下）+ -nya 来记：放名词后表示“排在后面的下一个”。常见搭配：pesanan berikutnya（下一笔订单）、giliran berikutnya（下一个轮到的）、pelatihan berikutnya（下一次培训）；berikut 不带 -nya 常说“如下”：sebagai berikut、berikut ini daftarnya。",
+      "example": "Maaf, Kak, stoknya habis. Untuk pengiriman berikutnya kami kabari lagi, ya.",
+      "example_cn": "抱歉，亲，库存没了。下一批发货我们再通知您哦。",
+      "synonym_note": "berikutnya 偏“排在后面的下一个”（pesanan berikutnya、giliran berikutnya），和 selanjutnya 放名词后时大多可以互换；但句首说“接下来我们……”多用 selanjutnya。说“从今天算的下周”日常用 minggu depan；minggu berikutnya 多指“某个时间之后的那一周”。",
+      "usage_note": "复习词：先回想意思，再看黛薇女士说下次要订什么。",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "menunjukkan",
+    "perpaduan",
+    "selanjutnya",
+    "berikutnya"
+  ],
+  "review_vocab": [
+    "pintas",
+    "kelabakan",
+    "kesiangan",
+    "memisahkan",
+    "belanja"
+  ],
+  "sentences": [
+    {
+      "text": "Belajar dari label yang tertukar tadi pagi, Raka sekarang memisahkan stok keripik pedas dan keripik pisang di rak yang berbeda.",
+      "cn": "吸取了今天早上标签贴反的教训，拉卡现在把辣木薯片和香蕉片的库存分开放在不同的货架上。"
+    },
+    {
+      "text": "Maaf banget, Kak, tadi aku kesiangan, jadi paketnya baru dikirim jam sebelas.",
+      "cn": "真的很抱歉，亲，今天早上我起晚了，所以包裹十一点才发出去。（banget = sekali，aku = saya）"
+    },
+    {
+      "text": "Kalau belanja di atas Rp100 ribu, ongkirnya gratis, kecuali untuk pengiriman ke luar pulau.",
+      "cn": "购物满十万印尼盾免运费，寄到外岛的除外。"
+    },
+    {
+      "text": "Promosi judi online bukan cuma mengganggu. Faktanya, orang yang menyebarkannya bisa masuk penjara.",
+      "cn": "网赌广告不只是烦人。事实上，散布这种广告的人可能要坐牢。"
+    },
+    {
+      "text": "Dari bunyinya saja, montir itu langsung tahu motor Pak Yos mengalami masalah di bagian mesin.",
+      "cn": "光听声音，那个修车师傅马上就知道约斯师傅的摩托车是发动机出了问题。"
+    }
+  ],
+  "reading": {
+    "title": "Lewat Jalan Pintas · 抄近路",
+    "text": "Jam satu siang, Pak Yos menelepon dari pinggir jalan. \"Mas, motor saya mogok. Dari pagi mesinnya mengeluarkan bunyi aneh, tapi saya kira masih kuat.\" Raka langsung kelabakan. Keripik pisang untuk Bu Dewi belum sampai, padahal sesi siang mulai jam dua. Bu Narti cepat mengambil keputusan. \"Daripada nunggu motornya dibenerin, mending kirim pakai ojek online.\" Pak Yos membagikan lokasinya. Peta di HP Raka menunjukkan dia berhenti di dekat pasar. Tujuh menit kemudian, Mas Dimas, pengemudi ojek, sudah mengambil paket dari Pak Yos. Jalan utama macet, jadi dia lewat jalan pintas di belakang pasar. Jam dua kurang sepuluh, Mas Dimas mengirim foto: paketnya sudah diterima Bu Dewi. Lalu Bu Dewi menulis, \"Kata ibu-ibu, perpaduan keripik manis dan pedas itu enak banget. Untuk pelatihan berikutnya, kami mau pesan dua-duanya!\" \"Selanjutnya, tolong posting foto testimoni ini di Instagram, ya,\" kata Bu Narti. Raka membuka akun toko, lalu terdiam. Di bawah foto paket tadi pagi, komentar pelanggan tenggelam di antara puluhan promosi judi online.",
+    "cn": "下午一点，约斯师傅在路边打来电话：“小哥，我的摩托车抛锚了。从早上起发动机就有怪声，可我以为还能撑得住。”拉卡一下子慌了手脚。给黛薇女士的香蕉片还没送到，可下午那场两点就开始了。纳尔蒂阿姨很快拿定了主意：“与其等摩托车修好，不如叫网约摩的送过去。”约斯师傅发来了位置。拉卡手机上的地图显示，他停在市场附近。七分钟后，网约摩的司机迪马斯已经从约斯师傅那儿取到了包裹。主路堵车，所以他从市场后面抄近路走。差十分两点，迪马斯发来一张照片：包裹已经交到黛薇女士手上了。接着黛薇女士写道：“阿姨们说，甜的配辣的，这个搭配太好吃了。下次培训我们两种都要订！”“接下来，帮我把这张好评截图发到 Instagram 上吧。”纳尔蒂阿姨说。拉卡打开店铺账号，一下子愣住了。在今天早上那张包裹照片下面，顾客的评论全被淹没在几十条网赌广告里。"
+  },
+  "quiz": [
+    {
+      "question": "Menurut cerita hari ini, kenapa keripik pisang akhirnya tetap sampai sebelum jam dua?",
+      "options": [
+        "Pak Yos memperbaiki motornya sendiri di pinggir jalan, lalu melanjutkan perjalanan.",
+        "Bu Narti mengantar sendiri paketnya ke kantor kecamatan dengan mobil.",
+        "Pengemudi ojek online mengambil paket dari Pak Yos dan lewat jalan pintas di belakang pasar.",
+        "Bu Dewi datang sendiri ke pasar untuk mengambil paketnya."
+      ],
+      "answer_index": 2,
+      "answer": "Pengemudi ojek online mengambil paket dari Pak Yos dan lewat jalan pintas di belakang pasar.",
+      "explain": "课文里纳尔蒂阿姨决定不等修车，改叫网约摩的；司机迪马斯从约斯师傅那儿取了包裹，因为主路堵车，从市场后面抄近路（lewat jalan pintas），差十分两点送到。约斯师傅没有自己修好车，纳尔蒂阿姨没有亲自开车送，黛薇女士也没有自己来取。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "约斯师傅一打电话来，拉卡就慌了手脚。",
+      "target": "kelabakan",
+      "target_cn": "慌了手脚",
+      "options": [
+        "Begitu menelepon Pak Yos, Raka langsung kelabakan.",
+        "Begitu ditelepon Pak Yos, Raka langsung kesiangan.",
+        "Begitu ditelepon Pak Yos, Raka langsung kelabakan.",
+        "Begitu ditelepon Pak Yos, Raka belum kelabakan."
+      ],
+      "answer_index": 2,
+      "answer": "Begitu ditelepon Pak Yos, Raka langsung kelabakan.",
+      "point": "kelabakan（突然出事、手忙脚乱）和 kesiangan（起晚了）；ditelepon（被打电话）和 menelepon（打给别人）",
+      "explain": "“约斯师傅打电话来”是拉卡接到电话，用被动 ditelepon Pak Yos；“一下子慌了手脚”是 langsung kelabakan，所以 C 对。A 的 menelepon Pak Yos 变成拉卡打给约斯师傅，方向反了；B 的 kesiangan 是“起晚了”，和慌乱无关，两个词都是 ke-an 形式，别混；D 的 belum kelabakan 是“还没慌”，意思相反。口语里也常说 Raka langsung panik，意思接近，但 kelabakan 更强调手忙脚乱、不知道先做什么。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "从早上开始，摩托车的发动机就一直发出奇怪的声音。",
+      "target": "bunyi",
+      "target_cn": "响声",
+      "options": [
+        "Dari pagi mesin motornya terus mengeluarkan bunyi aneh.",
+        "Dari pagi mesin motornya terus membunyikan bunyi aneh.",
+        "Dari pagi mesin motornya belum mengeluarkan bunyi aneh.",
+        "Dari pagi mesin motornya pernah mengeluarkan bunyi aneh."
+      ],
+      "answer_index": 0,
+      "answer": "Dari pagi mesin motornya terus mengeluarkan bunyi aneh.",
+      "point": "mengeluarkan bunyi（发出声音）和 membunyikan（使……响）；terus / belum / pernah",
+      "explain": "“发出奇怪的声音”说 mengeluarkan bunyi aneh，“一直”用 terus，所以 A 对。B 的 membunyikan 是“让某个东西响”（membunyikan klakson 按喇叭），后面再接 bunyi 就重复了；C 的 belum 是“还没有”，和“一直发出”相反；D 的 pernah 是“曾经（有过一次）”，和“从早上起一直”对不上。把 bunyi 换成 suara（mengeluarkan suara aneh）也很常见，意思一样。"
+    }
+  ],
+  "output": {
+    "task": "你是拉卡。香蕉片总算准时送到了，黛薇女士说下次培训两种都要订。给她回一条消息（3 句）：先为差点迟到道歉，用 soalnya 说明原因；再提出下次可以准备混合装；最后用 Selanjutnya 告诉她接下来要提供什么信息。按骨架填空，用上 berikutnya、perpaduan 和 selanjutnya。",
+    "frame": "Terima kasih banyak, Bu, maaf tadi keripiknya hampir telat soalnya …… . Untuk pelatihan berikutnya, kami bisa siapkan paket campur, perpaduan …… . Selanjutnya, Ibu tinggal kabari …… , ya.",
+    "reference_answer": "Terima kasih banyak, Bu, maaf tadi keripiknya hampir telat soalnya motor Pak Yos mogok di jalan. Untuk pelatihan berikutnya, kami bisa siapkan paket campur, perpaduan keripik pisang yang manis dan keripik singkong yang pedas. Selanjutnya, Ibu tinggal kabari tanggal pelatihan dan jumlah bungkusnya, ya.",
+    "reference_cn": "非常感谢您，女士，抱歉刚才薯片差点迟到，因为约斯师傅的摩托车在路上抛锚了。下次培训，我们可以准备混合装，甜香蕉片配辣木薯片。接下来您只要告诉我们培训日期和要多少包就行。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 声音/响声、赌博、显示/出示、结合/搭配、接下来、下一个；再说出 近路（jalan …）、慌了手脚、起晚了、分开、购物。卡住的词回看词卡再说一遍。",
+    "易混词：selanjutnya（句首“接下来”：Selanjutnya, tolong posting …）vs berikutnya（排在后面的下一个：pelatihan berikutnya）；放名词后两者大多能互换。bunyi（机器、手机的响声：bunyi aneh）vs suara（声音总称，人声用 suara）。各说一句。",
+    "难点词 kelabakan：突然出事、手忙脚乱，常说 langsung kelabakan、sampai kelabakan；和 panik（心里慌）意思接近，和 kesiangan（起晚了）别混。用 langsung kelabakan 说一句你自己手忙脚乱的经历。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "bunyi",
+      "judi",
+      "selanjutnya"
+    ],
+    "patterns": [
+      {
+        "pattern": "… belum …, padahal …",
+        "cn": "……还没……，可是……",
+        "function": "state-problem",
+        "example": "Keripik pisang untuk Bu Dewi belum sampai, padahal sesi siang mulai jam dua.",
+        "example_cn": "给黛薇女士的香蕉片还没送到，可下午那场两点就开始了。"
+      },
+      {
+        "pattern": "Daripada …, mending …",
+        "cn": "与其……，不如……（口语）",
+        "example": "Daripada nunggu motornya dibenerin, mending kirim pakai ojek online.",
+        "example_cn": "与其等摩托车修好，不如叫网约摩的送过去。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "近路（抄近路：lewat jalan …）",
+        "id": "pintas"
+      },
+      {
+        "cn": "慌了手脚；手忙脚乱",
+        "id": "kelabakan"
+      },
+      {
+        "cn": "起晚了；（时间）太晚了",
+        "id": "kesiangan"
+      },
+      {
+        "cn": "分开；隔开",
+        "id": "memisahkan"
+      },
+      {
+        "cn": "购物；买东西",
+        "id": "belanja"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "selanjutnya",
+            "cn": "接下来；下一个"
+          },
+          {
+            "id": "berikutnya",
+            "cn": "下一个"
+          }
+        ],
+        "note": "放名词后两者大多能互换（langkah selanjutnya / langkah berikutnya）；句首说“接下来……”多用 selanjutnya，说“排在后面的下一个”多用 berikutnya（pesanan berikutnya）。"
+      },
+      {
+        "items": [
+          {
+            "id": "bunyi",
+            "cn": "响声"
+          },
+          {
+            "id": "suara",
+            "cn": "声音"
+          }
+        ],
+        "note": "机器、手机、铃的响声用 bunyi 或 suara 都行（bunyi mesin / suara mesin）；人说话、唱歌用 suara；说文字原话用 bunyi（bunyi pesannya）。"
+      },
+      {
+        "items": [
+          {
+            "id": "kelabakan",
+            "cn": "手忙脚乱"
+          },
+          {
+            "id": "panik",
+            "cn": "慌张"
+          }
+        ],
+        "note": "意思接近：kelabakan 更强调突然出事、手忙脚乱不知道先做什么（langsung kelabakan）；panik 偏心里慌，日常两种都常说。"
+      }
+    ]
+  }
+}
