@@ -8911,20 +8911,22 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-10-04 18:00",
+    "last_seen": "2026-11-20 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-10",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
       "2026-09-10 08:00",
-      "2026-10-04 18:00"
+      "2026-10-04 18:00",
+      "2026-11-20 08:00"
     ]
   },
   {
@@ -9008,9 +9010,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-11-19 18:00",
+    "last_seen": "2026-11-20 08:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -9023,7 +9025,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28",
       "2026-10-01",
       "2026-10-08",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "example": "Waktu bosnya tiba-tiba minta data penelitian itu, Dina kelabakan mencari file-nya.",
     "example_cn": "老板突然要那份研究数据，迪娜手忙脚乱地找文件。",
@@ -9034,7 +9037,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28 08:00",
       "2026-10-01 18:00",
       "2026-10-08 18:00",
-      "2026-11-19 18:00"
+      "2026-11-19 18:00",
+      "2026-11-20 08:00"
     ]
   },
   {
@@ -10484,23 +10488,25 @@ window.DAILY_VOCAB_DB = [
     "en": "next; subsequently; further",
     "root": "lanjut",
     "root_cn": "继续；后续",
-    "example": "Selanjutnya kita cek siapa saja yang benar-benar bisa ikut.",
-    "example_cn": "接下来我们确认一下到底有哪些人能参加。",
+    "example": "Pertama cek alamatnya, selanjutnya foto paketnya sebelum dikirim.",
+    "example_cn": "先核对地址，接下来在发货前给包裹拍照。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 08:00",
+    "last_seen": "2026-11-20 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
-      "2026-09-14 08:00"
+      "2026-09-14 08:00",
+      "2026-11-20 08:00"
     ]
   },
   {
@@ -11444,16 +11450,16 @@ window.DAILY_VOCAB_DB = [
     "en": "show; indicate",
     "root": "tunjuk",
     "root_cn": "指；指出",
-    "example": "Kejadian minggu lalu menunjukkan bahwa kita perlu aturan parkir yang lebih jelas di kompleks ini.",
-    "example_cn": "上周发生的事表明，我们小区需要更明确的停车规定。",
+    "example": "Alasannya masuk akal: aplikasinya menunjukkan drivernya masih kena macet di dekat pasar.",
+    "example_cn": "他的理由说得通：应用上显示司机还堵在市场附近。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 14,
+    "times_seen": 15,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-11-13 18:00",
+    "last_seen": "2026-11-20 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -11470,7 +11476,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-05",
       "2026-10-21",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
       "2026-09-17 08:00",
@@ -11486,7 +11493,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-21 18:00",
       "2026-11-12 18:00",
       "2026-11-13 08:00",
-      "2026-11-13 18:00"
+      "2026-11-13 18:00",
+      "2026-11-20 08:00"
     ]
   },
   {
@@ -13683,9 +13691,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-24 08:00",
-    "last_seen": "2026-10-04 18:00",
+    "last_seen": "2026-11-20 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13693,13 +13701,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-24",
       "2026-10-02",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
       "2026-09-24 08:00",
       "2026-09-24 18:00",
       "2026-10-02 18:00",
-      "2026-10-04 18:00"
+      "2026-10-04 18:00",
+      "2026-11-20 08:00"
     ]
   },
   {
@@ -18380,19 +18390,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "每个星期天早上，妈妈都去市场买菜。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-04 18:00",
-    "last_seen": "2026-10-04 18:00",
+    "last_seen": "2026-11-20 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
-      "2026-10-04 18:00"
+      "2026-10-04 18:00",
+      "2026-11-20 08:00"
     ]
   },
   {
@@ -19333,23 +19347,25 @@ window.DAILY_VOCAB_DB = [
     "en": "next; following",
     "root": "ikut",
     "root_cn": "跟随；参加",
-    "example": "Terima kasih atas pertanyaannya, pertanyaan berikutnya silakan dari Bapak yang di belakang.",
-    "example_cn": "谢谢这个提问，下一个问题请后面那位先生提。",
+    "example": "Maaf, Kak, stoknya habis. Untuk pengiriman berikutnya kami kabari lagi, ya.",
+    "example_cn": "抱歉，亲，库存没了。下一批发货我们再通知您哦。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-07 08:00",
-    "last_seen": "2026-10-07 08:00",
+    "last_seen": "2026-11-20 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-07"
+      "2026-10-07",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
-      "2026-10-07 08:00"
+      "2026-10-07 08:00",
+      "2026-11-20 08:00"
     ]
   },
   {
@@ -24120,16 +24136,16 @@ window.DAILY_VOCAB_DB = [
     "en": "combination; blend",
     "root": "padu",
     "root_cn": "协调；融合",
-    "example": "Kemasannya menarik; perpaduan warna merah dan kuning membuat keripiknya terlihat pedas dan gurih.",
-    "example_cn": "包装很吸引人；红色和黄色的配色让薯片看起来又辣又香。",
+    "example": "Paket campur ini perpaduan keripik pisang yang manis dan keripik singkong yang pedas.",
+    "example_cn": "这个混合装是甜香蕉片和辣木薯片的搭配。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-11-16 08:00",
+    "last_seen": "2026-11-20 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -24140,7 +24156,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-28",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
       "2026-10-21 08:00",
@@ -24148,7 +24165,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-28 18:00",
       "2026-11-12 18:00",
       "2026-11-13 08:00",
-      "2026-11-16 08:00"
+      "2026-11-16 08:00",
+      "2026-11-20 08:00"
     ]
   },
   {
@@ -33605,19 +33623,73 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "那个摩的司机走小巷里的近路，结果反倒迷路了。（nyasar = tersesat）",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-19 18:00",
-    "last_seen": "2026-11-19 18:00",
+    "last_seen": "2026-11-20 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "lesson_occurrences": [
-      "2026-11-19 18:00"
+      "2026-11-19 18:00",
+      "2026-11-20 08:00"
+    ]
+  },
+  {
+    "word": "bunyi",
+    "cn": "声音；响声；（文字的）原话、内容",
+    "en": "sound; noise; wording",
+    "root": "bunyi",
+    "root_cn": "声音；响",
+    "example": "Kalau rem motor bunyi terus, mending langsung dicek di bengkel.",
+    "example_cn": "要是摩托车刹车一直响，最好马上去修车铺看看。（mending = lebih baik）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-20 08:00",
+    "last_seen": "2026-11-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-20"
+    ],
+    "lesson_occurrences": [
+      "2026-11-20 08:00"
+    ]
+  },
+  {
+    "word": "judi",
+    "cn": "赌博",
+    "en": "gambling",
+    "root": "judi",
+    "root_cn": "赌博",
+    "example": "Aku paling benci kalau kolom komentar toko penuh promosi judi online.",
+    "example_cn": "我最讨厌店铺评论区里全是网赌广告。（aku = saya）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-20 08:00",
+    "last_seen": "2026-11-20 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-20"
+    ],
+    "lesson_occurrences": [
+      "2026-11-20 08:00"
     ]
   }
 ];

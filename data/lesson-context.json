@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-20",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 91
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-19T14:01:09.102Z",
-    "lesson_watermark": "2026-11-19 18:00",
-    "index_updated": "2026-11-19",
-    "runtime_hash": "9db44caeea9bb03a7ca65441d9f6f64b607b2af99d265c8298b6fb944e54f9eb",
-    "index_hash": "7ae506b6b40e85eef035d0b812fe0b4a69e8d128668e5733f719e83fb73bba6e",
+    "runtime_generated_at": "2026-11-20T00:33:21.032Z",
+    "lesson_watermark": "2026-11-20 08:00",
+    "index_updated": "2026-11-20",
+    "runtime_hash": "5e81657efda2d87e2b41d8d158bbbe2f86c15a45cf4e04ad2a205afd9cf3f84c",
+    "index_hash": "e28fc1364bcf23a900fb142c1c7e3c21d437aa20a16ec6e64d3b8c41f8f5e2d2",
     "rules_hash": "a476188058123c601a76db88793788743ba1dabed101a0ce68c47696582ae96c"
   },
   "schema": {
@@ -48,16 +48,7 @@
     ]
   },
   "candidates": {
-    "new_dont": [
-      [
-        "bunyi",
-        "声音"
-      ],
-      [
-        "judi",
-        "赌博"
-      ]
-    ],
+    "new_dont": [],
     "new_fuzzy": [],
     "review": [
       [
@@ -699,16 +690,6 @@
         "个人的；私人的；个人",
         "pribadi",
         "个人；私人"
-      ],
-      [
-        "selanjutnya",
-        3,
-        0,
-        "",
-        "2026-11-15T03:30:45.584Z",
-        "接下来；下一步；之后的",
-        "lanjut",
-        "继续；后续"
       ],
       [
         "sesuai",
@@ -1781,16 +1762,6 @@
         "严重"
       ],
       [
-        "memisahkan",
-        2,
-        1,
-        "2026-09-30T14:12:57.994Z",
-        "2026-11-13T02:32:18.812Z",
-        "分离",
-        "pisah",
-        "分开"
-      ],
-      [
         "mengajak",
         2,
         0,
@@ -1799,26 +1770,6 @@
         "邀请；约；招呼（一起做某事）",
         "ajak",
         "邀请；招呼"
-      ],
-      [
-        "belanja",
-        3,
-        0,
-        "",
-        "2026-11-18T14:19:49.640Z",
-        "购物；买东西；采购",
-        "belanja",
-        "购物；采购"
-      ],
-      [
-        "kesiangan",
-        3,
-        1,
-        "2026-09-30T14:03:25.972Z",
-        "2026-11-13T02:31:31.677Z",
-        "起晚了；早上的事情拖到太晚（口语）",
-        "siang",
-        "白天；中午"
       ],
       [
         "hukuman",
@@ -2009,16 +1960,6 @@
         "记下；记录（口语常直接用词根，正式用 mencatat）",
         "catat",
         "记下；记录"
-      ],
-      [
-        "berikutnya",
-        2,
-        0,
-        "",
-        "2026-11-18T14:20:29.025Z",
-        "下一个；接下来的",
-        "ikut",
-        "跟随；参加"
       ],
       [
         "invoice",
@@ -2259,6 +2200,96 @@
         "放松一点；悠着来；轻松待着（口语）",
         "santai",
         "轻松；悠闲"
+      ],
+      [
+        "kontrak",
+        3,
+        0,
+        "",
+        "2026-10-22T15:34:05.739Z",
+        "合同；租约（有期限的约定）",
+        "kontrak",
+        "合同"
+      ],
+      [
+        "ngeh",
+        3,
+        1,
+        "2026-09-22T08:18:40.758Z",
+        "2026-11-08T07:34:56.087Z",
+        "意识到；反应过来",
+        "ngeh",
+        "意识到；注意到"
+      ],
+      [
+        "kenal",
+        2,
+        0,
+        "",
+        "2026-10-21T01:45:10.430Z",
+        "认识；熟悉（人、地方）",
+        "kenal",
+        "认识"
+      ],
+      [
+        "keuntungan",
+        2,
+        0,
+        "",
+        "2026-11-15T03:35:18.292Z",
+        "利润、好处",
+        "untung",
+        ""
+      ],
+      [
+        "kuno",
+        2,
+        0,
+        "",
+        "2026-10-22T15:34:07.518Z",
+        "古老的；老式的；过时的",
+        "kuno",
+        "古老的；陈旧的"
+      ],
+      [
+        "bunyi",
+        1,
+        0,
+        "",
+        "",
+        "声音；响声；（文字的）原话、内容",
+        "bunyi",
+        "声音；响"
+      ],
+      [
+        "judi",
+        1,
+        0,
+        "",
+        "",
+        "赌博",
+        "judi",
+        "赌博"
+      ],
+      [
+        "selanjutnya",
+        3,
+        0,
+        "",
+        "2026-11-15T03:30:45.584Z",
+        "接下来；下一步；之后的",
+        "lanjut",
+        "继续；后续"
+      ],
+      [
+        "berikutnya",
+        2,
+        0,
+        "",
+        "2026-11-18T14:20:29.025Z",
+        "下一个；接下来的",
+        "ikut",
+        "跟随；参加"
       ]
     ],
     "focus": [
@@ -2754,6 +2785,21 @@
         "rumit",
         "pintas"
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "session": "am",
+      "review_core": [
+        "pintas",
+        "kelabakan",
+        "kesiangan",
+        "memisahkan",
+        "belanja"
+      ],
+      "new_words": [
+        "bunyi",
+        "judi"
+      ]
     }
   ],
   "previous_pm": {
@@ -2770,7 +2816,60 @@
       "berat"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-20",
+    "vocab": [
+      [
+        "bunyi",
+        "声音；响声；（文字的）原话、内容",
+        "sound; noise; wording",
+        "bunyi",
+        "声音；响"
+      ],
+      [
+        "judi",
+        "赌博",
+        "gambling",
+        "judi",
+        "赌博"
+      ],
+      [
+        "menunjukkan",
+        "显示；出示；指给……看",
+        "to show; to indicate",
+        "tunjuk",
+        "指；指出"
+      ],
+      [
+        "perpaduan",
+        "结合；搭配；融合",
+        "blend; combination",
+        "padu",
+        "结合；融为一体"
+      ],
+      [
+        "selanjutnya",
+        "接下来；然后；下一个（的）",
+        "next; then; subsequently",
+        "lanjut",
+        "继续；接着"
+      ],
+      [
+        "berikutnya",
+        "下一个；随后的；接下来的",
+        "next; following",
+        "ikut",
+        "跟随"
+      ]
+    ],
+    "review_vocab": [
+      "pintas",
+      "kelabakan",
+      "kesiangan",
+      "memisahkan",
+      "belanja"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

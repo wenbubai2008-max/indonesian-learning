@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "generated_at": "2026-11-19T14:01:09.296Z",
+  "generated_at": "2026-11-20T00:33:25.575Z",
   "source_updated_at": "2026-11-19T13:43:04.797Z",
-  "taught_total": 1236,
+  "taught_total": 1238,
   "confirmed_mastered": 313,
-  "needs_reinforcement": 821,
+  "needs_reinforcement": 823,
   "excluded_from_training": 102,
   "unverified": 0,
   "mastery_percent": 25.3,
@@ -14,7 +14,7 @@
   "primary_coverage_percent": 66.2,
   "primary_eligible_new_total": 0,
   "secondary_eligible_new_total": 0,
-  "active_master_pool": "secondary_bipa",
+  "active_master_pool": "exhausted",
   "review_phase": {
     "active": true,
     "activated_at": "2026-11-16",
@@ -22,10 +22,10 @@
       "use": 706,
       "fast": 51,
       "recognize": 99,
-      "none": 16
+      "none": 18
     }
   },
-  "focus_total": 818,
+  "focus_total": 820,
   "focus_words": [
     {
       "word": "berlaku sampai",
