@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-20T07:52:06.471Z",
+  "updated_at": "2026-11-20T13:31:28.259Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -3676,8 +3676,11 @@
     "biarpun": {
       "word": "biarpun",
       "status": "active",
-      "updated_at": "2026-11-18T14:20:51.183Z",
+      "updated_at": "2026-11-20T13:31:17.556Z",
       "display": "biarpun",
+      "cn": "即使；尽管",
+      "root": "biar",
+      "root_cn": "让；即便",
       "last_review": "2026-11-18T14:20:51.127Z",
       "reasons": [
         "memory_dont"
@@ -32826,13 +32829,13 @@
       "status": "active",
       "updated_at": "2026-11-20T05:13:23.918Z",
       "display": "bunyi",
-      "cn": "响声",
+      "cn": "声音；响声；（文字的）原话、内容",
       "root": "bunyi",
       "root_cn": "声音；响",
       "last_wrong": "2026-11-20T05:08:23.338Z",
       "last_review": "2026-11-20T05:13:23.847Z",
-      "source": "课程小测",
-      "source_date": "2026-11-20",
+      "source": "每日学习高频句子",
+      "source_date": "2026-11-19",
       "session": "08:00",
       "reasons": [
         "manual_unknown",
