@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-20T13:31:28.259Z",
+  "updated_at": "2026-11-20T14:55:11.182Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -18415,12 +18415,12 @@
     "polos": {
       "word": "polos",
       "status": "active",
-      "updated_at": "2026-11-18T14:18:57.103Z",
+      "updated_at": "2026-11-20T14:54:58.118Z",
       "display": "polos",
       "cn": "素色的、没有图案的；（人）单纯、天真",
       "root": "polos",
       "root_cn": "素；单纯",
-      "last_review": "2026-11-18T14:18:57.049Z",
+      "last_review": "2026-11-20T14:54:58.053Z",
       "source": "每日学习阅读",
       "source_date": "2026-11-18",
       "session": "08:00",
@@ -18429,7 +18429,7 @@
         "manual_unknown"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "puisi": {
       "word": "puisi",
@@ -28392,13 +28392,13 @@
     "menakjubkan": {
       "word": "menakjubkan",
       "status": "active",
-      "updated_at": "2026-11-19T05:14:07.035Z",
+      "updated_at": "2026-11-20T14:54:50.224Z",
       "display": "menakjubkan",
       "cn": "令人惊叹的；了不起的",
       "root": "takjub",
       "root_cn": "惊叹",
       "last_wrong": "2026-11-17T11:26:05.122Z",
-      "last_review": "2026-11-18T14:17:54.514Z",
+      "last_review": "2026-11-20T14:54:50.139Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28408,7 +28408,7 @@
         "automation_fail"
       ],
       "wrong_count": 2,
-      "right_streak": 1
+      "right_streak": 2
     },
     "menyebalkan": {
       "word": "menyebalkan",
@@ -32772,12 +32772,12 @@
     "kardus": {
       "word": "kardus",
       "status": "active",
-      "updated_at": "2026-11-18T14:18:52.165Z",
+      "updated_at": "2026-11-20T14:54:54.292Z",
       "display": "Kardus",
       "cn": "纸箱；硬纸板箱",
       "root": "kardus",
       "root_cn": "纸箱",
-      "last_review": "2026-11-18T14:18:52.096Z",
+      "last_review": "2026-11-20T14:54:54.227Z",
       "source": "每日学习阅读",
       "source_date": "2026-11-18",
       "session": "08:00",
@@ -32785,17 +32785,17 @@
         "manual_unknown"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "keripik": {
       "word": "keripik",
       "status": "active",
-      "updated_at": "2026-11-19T05:14:33.840Z",
+      "updated_at": "2026-11-20T14:54:55.817Z",
       "display": "keripik",
       "cn": "脆片；薯片（切薄炸脆的零食）",
       "root": "keripik",
       "root_cn": "脆片零食",
-      "last_review": "2026-11-18T14:18:54.754Z",
+      "last_review": "2026-11-20T14:54:55.752Z",
       "source": "每日学习阅读",
       "source_date": "2026-11-18",
       "session": "08:00",
@@ -32804,7 +32804,7 @@
         "automation_fail"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "hancur": {
       "word": "hancur",
