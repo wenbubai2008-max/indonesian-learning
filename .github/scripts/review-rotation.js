@@ -18,6 +18,7 @@ function config(rotation,date){
   focus:on(r.focus_quota,'2026-10-04')?{min:Number.isInteger(r.focus_quota.min)?r.focus_quota.min:2,max:Number.isInteger(r.focus_quota.max)?r.focus_quota.max:3}:null,
   appAm:on(r.application_am_review,'2026-10-04'),
   ledger:ledgerConfig(r,date),
+  cardWeek:on(r.card_weekly,'9999-12-31')?{days:Number.isInteger(r.card_weekly.days)&&r.card_weekly.days>0?r.card_weekly.days:7}:null,
   sweep:on(r.review_sweep,'9999-12-31')?{passDays:Number.isInteger(r.review_sweep.pass_days)&&r.review_sweep.pass_days>0?r.review_sweep.pass_days:30}:null
  };
 }
@@ -279,6 +280,24 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
   const fill=open.length<need?usableAll.filter(x=>x.passed).sort((a,b)=>b.passed_days-a.passed_days||b.score-a.score||a.word.localeCompare(b.word)).slice(0,need-open.length):[];
   usable=[...open,...fill];sweepInfo.open=open.length;sweepInfo.refilled=fill.map(x=>x.word);
  }
+ // Card once a week (2026-11-20, user decision): a word that was on a vocab card (AM vocab incl. cycle words, any PM
+ // card) in the last `days` days does not get another card now, not even after a new wrong answer; it may still appear
+ // in the AM review_vocab (sentences, quiz, recall), reading, dialogue and examples. Today's 08:00 new words included:
+ // they are no longer tonight's application cards (they recur in the PM text instead). Too few card words -> oldest refill.
+ const CW=cfg.cardWeek&&longHistory?cfg.cardWeek:null,cardInfo=CW?{active:true,days:CW.days,blocked:[],refilled:[]}:null;
+ let cardUsable=usable;
+ if(CW){
+  const at=Date.parse(date+'T00:00:00Z'),lastCard=new Map();
+  const lessons=[...(longHistory||[]),...(reviewHistory||[])].filter(h=>h&&['am','pm'].includes(h.session)&&h.date<=date&&!(h.date===date&&(session==='am'||h.session==='pm')));
+  for(const h of lessons)for(const v of (h.vocab||[])){const w=word(v);if(w&&!(lastCard.get(w)>=h.date))lastCard.set(w,h.date)}
+  for(const x of items){const d=lastCard.get(x.word);if(!d)continue;const days=Math.round((at-Date.parse(d+'T00:00:00Z'))/DAY);
+   if(days<CW.days){x.card_recent=true;x.card_days=days;x.reasons.push('card_'+days+'d_ago')}}
+  cardInfo.blocked=items.filter(x=>x.card_recent).map(x=>x.word);
+  const open=usable.filter(x=>!x.card_recent),need=(pmRules?reviewCount+3:cycleCount)+2;
+  const fill=open.length<need?usable.filter(x=>x.card_recent).sort((a,b)=>b.card_days-a.card_days||b.score-a.score||a.word.localeCompare(b.word)).slice(0,need-open.length):[];
+  cardUsable=[...open,...fill];cardInfo.refilled=fill.map(x=>x.word);
+  if(pmRules)usable=cardUsable; // every PM core word is a card; AM review_vocab is not, so the AM pick keeps `usable`
+ }
  // Fresh-error quota: errors come back next lesson, but never crowd out the due words (ledger only).
  const errCap=L?Math.min(L.capMax,Math.max(L.capMin,reviewCount-L.minDue)):Infinity;
  // Selection is a function so a same-root group can be tried as a seed (2026-10-15) and compared with the plain pick.
@@ -337,7 +356,7 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
  // words, half to the weakest words and half to the words longest unseen in any lesson; either half fills the other's gap.
  let cycle=null;
  if(!pmRules&&cycleCount>0){
-  const rest=usable.filter(x=>!used.has(x.word)&&!x.legacy);
+  const rest=cardUsable.filter(x=>!used.has(x.word)&&!x.legacy);
   const weakScore=x=>(x.fresh?100:0)+(x.focus?30:0)+({1:20,2:12,3:6}[x.priority]||0)+Math.min(x.wrong_count||0,5)*3;
   const staleOf=x=>x.stale_days==null?60:x.stale_days; // never seen in the long history = treat as very stale
   const weak=rest.slice().sort((a,b)=>(!!a.passed-!!b.passed)||weakScore(b)-weakScore(a)||b.score-a.score||a.word.localeCompare(b.word));
@@ -377,11 +396,12 @@ function rank({date,session='pm',runtime,rotation,reviewHistory,longHistory=null
  const deferred=usable.filter(x=>x.fresh&&!used.has(x.word)).map(x=>x.word);
  if(deferred.length)notes.push('fresh_errors_deferred_to_next_lesson:'+deferred.join(','));
  const amSet=new Set(amVocab.map(norm));
- const apps=pmRules?items.filter(x=>!used.has(x.word)&&!x.am_core&&!x.legacy&&!(L&&x.blocked&&!amSet.has(x.word))).sort((a,b)=>(amSet.has(b.word)-amSet.has(a.word))||(!!a.passed-!!b.passed)||b.score-a.score||a.word.localeCompare(b.word))
+ const appBase=items.filter(x=>!used.has(x.word)&&!x.am_core&&!x.legacy&&!(L&&x.blocked&&!amSet.has(x.word))),appOpen=appBase.filter(x=>!x.card_recent);
+ const apps=pmRules?(appOpen.length>=3?appOpen:appBase).sort((a,b)=>(amSet.has(b.word)-amSet.has(a.word))||(!!a.passed-!!b.passed)||b.score-a.score||a.word.localeCompare(b.word))
   .slice(0,6).map(x=>({word:x.word,from_today_am_vocab:amSet.has(x.word),fresh:x.fresh,hard:x.hard})):[];
  // Words actively used very recently (or on a streak): keep them out of tonight's reading/dialogue/examples too.
  const avoid=L?items.filter(x=>!used.has(x.word)&&!amSet.has(x.word)&&x.blocked_by.some(r=>r.startsWith('active_')||r.startsWith('streak_'))).map(x=>x.word).sort():[];
- return {date,session,review_cycle:cycle,review_sweep:sweepInfo?{...sweepInfo,passed_count:sweepInfo.passed.length,passed:sweepInfo.passed.slice(0,40)}:null,review_pool_size:items.length,recent_window_days:recentCfg?recentCfg.days:null,
+ return {date,session,review_cycle:cycle,card_weekly:cardInfo?{...cardInfo,blocked_count:cardInfo.blocked.length,blocked:cardInfo.blocked.slice(0,40)}:null,review_sweep:sweepInfo?{...sweepInfo,passed_count:sweepInfo.passed.length,passed:sweepInfo.passed.slice(0,40)}:null,review_pool_size:items.length,recent_window_days:recentCfg?recentCfg.days:null,
   recommended_review:pick.map(x=>x.word),recommended_detail:pick,
   counts:{recent4:recentUsed,focus:focusUsed,heavy_3plus:heavyUsed,fresh_errors:freshUsed,fresh_error_cap:Number.isFinite(errCap)?errCap:null},
   fresh_errors_deferred:deferred,application_candidates:apps,avoid_in_text:avoid,notes,ranking_top:items.filter(x=>!x.blocked).slice(0,25),
