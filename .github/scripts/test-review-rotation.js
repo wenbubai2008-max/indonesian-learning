@@ -333,6 +333,26 @@ t('L13 review sweep: passed words wait, wrong-since words stay, the oldest passe
  const s2=rankL({date:'2026-10-09',runtime:small,rotation:rotW,reviewHistory:hist,longHistory:sl,reviewCount:4});
  assert.equal(s2.recommended_review.length,4);assert.equal(s2.review_sweep.refilled[0],'p1');
 });
+// L14 card once a week (2026-11-20, user decision): a word carded in the last 7 days gets no card now, even with a new
+// wrong answer; it may still be an AM review_vocab word; today's AM new words are no longer PM application cards.
+t('L14 card once a week: no second card within 7 days (errors included); AM review_vocab and text still allowed',()=>{
+ const rotC={...rotation,exposure_ledger:LEDGER,card_weekly:{enabled:true,effective_date:'2026-10-01',days:7}};
+ // a1 was a PM card 4 days ago and answered wrong since (fresh); a2 was a card 8 days ago
+ const long=[pmL('2026-10-01',{review:['a2']}),pmL('2026-10-05',{review:['a1']})];
+ const hist=[pmL('2026-10-05',{review:['a1']}),amL('2026-10-08'),pmL('2026-10-08'),amL('2026-10-09',[],{vocab:[{word:'am1'},{word:'am2'}]})];
+ const rt=rtL({a1:{wrong:'2026-10-07T03:00:00.000Z',wrongs:4}});
+ const pm=rankL({date:'2026-10-09',runtime:rt,rotation:rotC,reviewHistory:hist,longHistory:[...long,...hist.slice(1)],reviewCount:4,amVocab:['am1','am2']});
+ assert.ok(pm.card_weekly.blocked.includes('a1')&&!pm.card_weekly.blocked.includes('a2'));
+ assert.ok(!pm.recommended_review.includes('a1'),'fresh error does not bring a card back within 7 days');
+ assert.ok(!pm.application_candidates.some(x=>['a1','am1','am2'].includes(x.word)),'no application card for carded words, today\'s AM new words included');
+ assert.ok(!pm.avoid_in_text.includes('a1'),'it may still appear in the text');
+ const off=rankL({date:'2026-10-09',runtime:rt,rotation:{...rotation,exposure_ledger:LEDGER},reviewHistory:hist,longHistory:[...long,...hist.slice(1)],reviewCount:4,amVocab:['am1','am2']});
+ assert.equal(off.card_weekly,null);assert.deepEqual(off.application_candidates.slice(0,2).map(x=>x.word),['am1','am2'],'old behaviour without the block');
+ // AM: carded word can still be review_vocab (not a card) but not a cycle card
+ const am=rankL({date:'2026-10-09',session:'am',runtime:rt,rotation:rotC,reviewHistory:hist.slice(0,3),longHistory:[...long,...hist.slice(1,3)],reviewCount:4,cycleCount:4});
+ assert.ok(!am.review_cycle.cycle_words.includes('a1'));
+ assert.ok(am.recommended_review.includes('a1'),'AM review_vocab is not a card, so the fresh error still gets practised there');
+});
 }
 
 // Integration through the real validator() using the shared PM fixture of test-lesson-candidate.js.
