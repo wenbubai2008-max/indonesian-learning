@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1090,
+   "use": 1092,
    "recognize": 117,
    "unsure": 29,
    "fast": 137
   },
   "active": {
-   "use": 693,
+   "use": 695,
    "recognize": 101,
    "unsure": 27,
    "fast": 51
@@ -11358,6 +11358,24 @@
    ]
   },
   "pintas": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "bunyi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "judi": {
    "goal": "use",
    "fast": false,
    "by": "rule",
