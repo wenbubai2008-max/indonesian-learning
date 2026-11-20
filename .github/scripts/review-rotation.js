@@ -29,8 +29,11 @@ function ledgerConfig(r,date){
  const x=r&&r.exposure_ledger;
  if(!(x&&typeof x==='object'&&x.enabled===true&&date>=(x.effective_date||'2026-10-08')))return null;
  const int=(v,d)=>Number.isInteger(v)&&v>0?v:d,cap=x.fresh_error_cap||{};
+ // Fresh-error spacing (2026-11-20, user decision): a new wrong answer no longer brings a word back in the very next
+ // lesson, and no longer lifts the cooldown of a word that already had max_active_7d active exposures in 7 days.
+ const sp=x.fresh_error_spacing,spacing=sp&&typeof sp==='object'&&sp.enabled===true&&date>=(sp.effective_date||'9999-12-31')?{gap:int(sp.gap_lessons,1),max7d:int(sp.max_active_7d,3)}:null;
  return {lessons:int(x.recent_active_lessons,2),streak:int(x.streak_days,3),
-  capMin:int(cap.min,2),capMax:int(cap.max,3),minDue:int(cap.min_due,3),hard:int(x.hard_word_wrong_count,3)};
+  capMin:int(cap.min,2),capMax:int(cap.max,3),minDue:int(cap.min_due,3),hard:int(x.hard_word_wrong_count,3),spacing};
 }
 const lessonTime=h=>Date.parse(h.date+'T'+(h.session==='am'?'08:00:00':h.date<'2026-09-16'?'19:00:00':'18:00:00')+'+07:00');
 /** Active exposures of one lesson: AM.review_vocab; PM review, plus PM application when the ledger is on. */
@@ -96,7 +99,12 @@ function analyze({date,session,runtime,reviewHistory,ledger=null,passiveTexts=[]
   for(const e of ends){const days=Array.from({length:need},(_,k)=>e+k);if(days.every(d=>seen.has(d))&&days.some(d=>act.has(d))){hit=true;break}}
   streakCache.set(w,hit);return hit;
  };
- const why=w=>{const i=info(w);if(i.fresh)return [];const r=[];if(original(w))r.push('cooldown');if(activeRecent(w))r.push('active_last_'+ledger.lessons+'_lessons');if(streak(w))r.push('streak_'+ledger.streak+'_days');return r};
+ const why=w=>{const i=info(w);
+  if(i.fresh){const sp=ledger&&ledger.spacing,r=[];if(!sp)return r;
+   if(stamps.slice(-sp.gap).some(x=>x.words.has(w)))r.push('fresh_gap_'+sp.gap+'_lesson');
+   if(i.count>=sp.max7d)r.push('fresh_max_'+sp.max7d+'_in_7d');
+   return r;}
+  const r=[];if(original(w))r.push('cooldown');if(activeRecent(w))r.push('active_last_'+ledger.lessons+'_lessons');if(streak(w))r.push('streak_'+ledger.streak+'_days');return r};
  const blocked=w=>why(w).length>0;
  return {info,blocked,why,activeRecent,streak,sameDayAm,exposures,stamps,reviewPool:new Set(rows.keys()),focus,ledger};
 }

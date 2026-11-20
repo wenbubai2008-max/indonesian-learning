@@ -280,6 +280,35 @@ t('L11 today\'s 08:00 new words in review_pool are PM application candidates fir
  const am=rankL({date:'2026-10-09',session:'am',runtime:rtL(),rotation:rotL,reviewHistory:hist,reviewCount:5,amVocab:['am1','am2']});
  assert.equal(am.recommended_review.length,5,'AM ranking unaffected');
 });
+// L12 fresh-error spacing (2026-11-20, user feedback 11-19: "review words keep repeating"). Real case: berteriak was a
+// core word 6 times in 9 days because every new wrong answer (often in that lesson's own quiz) lifted all cooldowns.
+t('L12 fresh-error spacing: skip one lesson after an active exposure; no override at 3 active exposures in 7 days',()=>{
+ const SP={...LEDGER,fresh_error_spacing:{enabled:true,effective_date:'2026-10-09',gap_lessons:1,max_active_7d:3}};
+ const rotS={...rotation,exposure_ledger:SP};
+ const after=rtL({'nggak heran':{wrong:'2026-10-08T12:00:00.000Z'}}); // wrong after its 10-08 18:00 application
+ // previous lesson (10-09 AM) had no exposure, 10-08 PM did: gap of one lesson already kept -> released as before
+ const exS=(sel,hist,rt,date='2026-10-09',session='pm')=>checkExposure({date,session,runtime:rt,rotation:rotS,reviewHistory:hist,review:sel.review||[],application:sel.application||[],newWords:sel.new||[],amVocab:sel.amVocab||[]});
+ assert.deepEqual(exS({review:['nggak heran','a1','a2','a3'],application:['am1','am2']},histApp(),after),[]);
+ // same-day case: reviewed at 08:00, wrong at 10:00 -> not tonight, but back at the next AM with the fresh bonus
+ const hist=[amL('2026-10-08'),pmL('2026-10-08'),amL('2026-10-09',['a5'])];
+ const rt=rtL({a5:{wrong:'2026-10-09T03:00:00.000Z'}});
+ const r=exS({review:['a5','a1','a2','a3'],application:['am1','am2']},hist,rt);
+ assert.deepEqual(codes(r),['PM_EXPOSURE_COOLDOWN']);assert.match(r[0].detail,/a5\(fresh_gap_1_lesson\)/);
+ const pmOut=rankL({date:'2026-10-09',runtime:rt,rotation:rotS,reviewHistory:hist,reviewCount:4});
+ assert.ok(!pmOut.recommended_review.includes('a5')&&!pmOut.application_candidates.some(x=>x.word==='a5'),'not tonight');
+ assert.ok(!pmOut.avoid_in_text.includes('a5'),'may still appear naturally in the text');
+ const nextAm=rankL({date:'2026-10-10',session:'am',runtime:rt,rotation:rotS,reviewHistory:[...hist,pmL('2026-10-09',{review:['a1']})],reviewCount:4});
+ assert.ok(nextAm.recommended_review.includes('a5')&&nextAm.recommended_detail.find(x=>x.word==='a5').fresh,'back one lesson later, still fresh');
+ // three active exposures in 7 days: a new error no longer lifts the cooldown
+ const h3=[amL('2026-10-04',['a6']),pmL('2026-10-05',{review:['a6']}),amL('2026-10-07',['a6']),pmL('2026-10-07'),amL('2026-10-08'),pmL('2026-10-08'),amL('2026-10-09')];
+ const rt3=rtL({a6:{wrong:'2026-10-09T03:00:00.000Z',wrongs:5}});
+ const cap=rankL({date:'2026-10-09',runtime:rt3,rotation:rotS,reviewHistory:h3,reviewCount:4});
+ assert.ok(!cap.recommended_review.includes('a6'));assert.ok(cap.ranking_top.every(x=>x.word!=='a6'));
+ const old=rankL({date:'2026-10-09',runtime:rt3,rotation:rotL,reviewHistory:h3,reviewCount:4});
+ assert.ok(old.recommended_review.includes('a6'),'without the spacing block the old behaviour is kept');
+ const early=rankL({date:'2026-10-08',runtime:rtL({a6:{wrong:'2026-10-08T03:00:00.000Z',wrongs:5}}),rotation:rotS,reviewHistory:h3.slice(0,5),reviewCount:4});
+ assert.ok(early.recommended_review.includes('a6'),'before effective_date nothing changes');
+});
 }
 
 // Integration through the real validator() using the shared PM fixture of test-lesson-candidate.js.
