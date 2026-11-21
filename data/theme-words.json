@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "per_lesson": 2,
+  "note": "主题新词（2026-11-21 用户同意）：每个主题周配一张用户确认过的场景高频词表，只收没学过的词（已教、已掌握、977/BIPA 词库里的词自动跳过）。上周日晚课发布后生效，每节课只放出下 2 个，占原来词卡名额、不加量；教过以后进普通复习。用户划掉的词直接从 words 里删除。见 docs/tasks/REVIEW-PHASE.md 第四节「主题新词」。",
+  "weeks": [
+    {
+      "theme_id": "logistics",
+      "start_date": "2026-11-23",
+      "approved": true,
+      "approved_note": "2026-11-21 用户同意方案；网店客服周的共用词（保修、缺货）并入本周。",
+      "words": [
+        {"word": "resi", "cn": "运单号", "formal": "nomor resi", "note": "口语直接说 resi：Resinya berapa? / cek resi"},
+        {"word": "ongkir", "cn": "运费", "formal": "ongkos kirim", "note": "ongkos kirim 的缩写，网店、快递都这样说：gratis ongkir"},
+        {"word": "ekspedisi", "cn": "快递公司；物流商", "formal": "jasa ekspedisi / jasa pengiriman", "note": "Pakai ekspedisi apa? 用哪家快递？"},
+        {"word": "lacak", "cn": "追踪（包裹）", "formal": "melacak", "note": "口语常说 lacak paket / lacak resi"},
+        {"word": "estimasi", "cn": "预计（时间）；预估", "formal": "perkiraan", "note": "estimasi tiba 预计到达"},
+        {"word": "tertahan", "cn": "滞留；卡住", "formal": "", "note": "Paketnya tertahan di gudang transit. 包裹卡在中转仓"},
+        {"word": "COD", "cn": "货到付款", "formal": "bayar di tempat", "note": "读作 C-O-D（se-o-de）"},
+        {"word": "patokan", "cn": "参照物；地标（报地址用）", "formal": "", "note": "Patokannya dekat masjid. 认路的标志在清真寺旁边"},
+        {"word": "titip", "cn": "寄放；托人代收", "formal": "menitipkan", "note": "Titip ke satpam aja. 交给保安代收就行"},
+        {"word": "penerima", "cn": "收件人", "formal": "", "note": "nama penerima 收件人姓名"},
+        {"word": "pengirim", "cn": "寄件人", "formal": "", "note": "alamat pengirim 寄件人地址"},
+        {"word": "kode pos", "cn": "邮政编码", "formal": "", "note": "填地址时常被问"},
+        {"word": "garansi", "cn": "保修", "formal": "jaminan", "note": "masa garansi 保修期：Garansinya berapa lama?"},
+        {"word": "stok habis", "cn": "缺货；卖完了", "formal": "persediaan habis", "note": "网店常见：Maaf Kak, stoknya habis."},
+        {"word": "penyok", "cn": "压瘪；凹陷", "formal": "", "note": "Kardusnya penyok. 纸箱压瘪了"},
+        {"word": "cabang", "cn": "网点；分店；分公司", "formal": "kantor cabang", "note": "Ambil di cabang terdekat. 去最近的网点取"}
+      ]
+    }
+  ]
+}

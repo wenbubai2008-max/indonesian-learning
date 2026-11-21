@@ -867,3 +867,11 @@
 - 书架卡片显示「上次阅读：第 N 章 · 第 M 段」，点击「继续阅读」后在解锁状态下准确跳到对应原文；未解锁时保留待跳转目标，解锁成功后再执行。阅读页顶部同时提供「继续上次阅读」和「跳转书签」入口。
 - 本地存储只含章节编号、段落序号与已有段落引用，不存小说明文、中文翻译、密码或其他私人数据；不同浏览器 / 无痕模式 / 清除网站数据不会自动跨设备同步书签。
 - 回归守卫仅在现行版本检查书签 DOM、定位逻辑、滚动保护与存储键，历史基线模拟继续保留旧版行为。
+
+## 2026-11-21：主题新词（用户同意）
+
+- 复习阶段新词已全部教完（runtime.new_pool=0）。用户同意按主题周补充场景高频、但没学过的词，如物流周的 resi、ongkir、COD，网店的 garansi（保修）。
+- 唯一来源：`data/theme-words.json`（用户确认过的周词表，`approved: true`；用户划掉的词直接删除）。它是和划词陌生词池同级的**小型补充来源**，不改变 977 主词库、BIPA 第二库的数量，`new_pool_formula` / `review_pool_formula` 文字不变。
+- `theme-word-pool.js`：已教、已 mastered、属于 977/BIPA 的词自动跳过；某周词表在 `lesson_watermark ≥ 开始日前一天 18:00`（上周日晚课发布、Sync 重算后）才生效，所以周日晚课仍按旧 runtime 校验；每次只把下 `per_lesson`=2 个未教词放进 `new_pool` 并归为 dont。早课在复习循环里教这 2 个、其余是循环词；Sync 重算后晚课拿到下 2 个，`new = min(可用, pm_new 上限)` 正好是 2。没教完的词顺延到下周、排在新一周的词前面。
+- 教过、没有 weakness 记录的主题词以 priority 2 追加进 `review_pool`（最多 40 个，最久没出现的在前），同时从 legacy 未验证池里排除，不计入 `review_pool_total_full` 等 A ∩ D 统计（词汇画像校验不变）；有了 weakness 记录后完全按原规则，mastered 不再出现。
+- 构建工作流在 `data/theme-words.json`、`theme-word-pool.js`、`test-theme-word-pool.js` 变化时重算 runtime；回归守卫跑 `test-theme-word-pool.js`。下周词表由每周日上午的定时任务按 `docs/tasks/THEME-WORDS.md` 起草、推送给用户确认，不新增 workflow。

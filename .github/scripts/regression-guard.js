@@ -1024,6 +1024,17 @@ try {
     catch(e){ok(false,'unfamiliar learning eligibility tests: '+e.message)}
   }
 
+  // 2026-11-21: user-approved theme-week words enter new_pool a couple at a time (data/theme-words.json).
+  if(process.env.GUARD_BASELINE_TREE!=='1'){
+    ok(typeof rules.runtime.theme_word_pool==='string'&&rules.runtime.theme_word_pool.includes('theme_new_pool'),
+      'learning rules document the bounded theme new-word pool');
+    const builderT=read('.github/scripts/build-learning-runtime.js');
+    ok(builderT.includes("require('./theme-word-pool')")&&builderT.includes('theme_new_pool:')&&builderT.includes('themeReviewExposed'),
+      'runtime builder releases theme words a few at a time and reviews taught ones');
+    try{require('./test-theme-word-pool').run();ok(true,'theme new-word eligibility tests')}
+    catch(e){ok(false,'theme new-word eligibility tests: '+e.message)}
+  }
+
   // 2026-11-04: the three highlighted lesson_focus words rotate independently of core review.
   // In a pinned old-main baseline tree, the new helper/test does not exist yet.
   if(process.env.GUARD_BASELINE_TREE!=='1'){

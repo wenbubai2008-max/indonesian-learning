@@ -57,7 +57,8 @@
     "focus_pool": "focus_pool是小型跨模块重点弱词窗口，供自动训练、快速练习、18:00复习和泛读自然复现使用；模块不得自行重算完整词库",
     "listening_focus_pool": "听觉弱项覆盖层：只包含已正式教过的词；可包含 status=mastered 的词，但只表示听觉维度需要加强，不改变 mastered。客户端快速练习、弱项强化、自动训练可读取；课程核心复习资格仍以 review_pool/focus_pool 为准。",
     "new_word_split": "learning-runtime额外暴露 new_pool_dont、new_pool_fuzzy、new_pool_unclassified，以及 oral_new_pool_dont、oral_new_pool_fuzzy；new_pool仍保留为兼容用合法总池。课程按时段使用分池，资格仍受M∩A−D与handoff约束。",
-    "unfamiliar_lesson_pool": "第二词库阶段，将已同步到weakness且仍active、标记manual_unknown或seed_unfamiliar、尚未正式教过、不在977或已选BIPA第二库、未排除训练、具有中文释义的阅读陌生词，作为用户优先新词补充来源放到runtime.new_pool/new_pool_dont最前，并用runtime.unfamiliar_new_pool单独列明。不改变977主库和BIPA第二库原始数量，也不改变new/review配额。正式教过立即退出补充新词池、进入A∩D复习池；mastered/排除/未同步的词不进入。"
+    "unfamiliar_lesson_pool": "第二词库阶段，将已同步到weakness且仍active、标记manual_unknown或seed_unfamiliar、尚未正式教过、不在977或已选BIPA第二库、未排除训练、具有中文释义的阅读陌生词，作为用户优先新词补充来源放到runtime.new_pool/new_pool_dont最前，并用runtime.unfamiliar_new_pool单独列明。不改变977主库和BIPA第二库原始数量，也不改变new/review配额。正式教过立即退出补充新词池、进入A∩D复习池；mastered/排除/未同步的词不进入。",
+    "theme_word_pool": "主题新词（2026-11-21用户同意）：data/theme-words.json里用户确认过的主题周词表，只收没学过、不在977/BIPA词库、未掌握的词；上周日18:00晚课发布后（lesson_watermark≥开始日前一天18:00）才生效，每次只把下per_lesson（2）个未教词放进new_pool并归为dont，占原有词卡名额、不加量；runtime.theme_new_pool给出这几个词的cn/正式说法/备注。教过且没有weakness记录的主题词以priority 2追加进review_pool复习，不计入任何A∩D统计；有weakness记录后按原规则；mastered永不再出现。"
   },
   "am_contract": {
     "new_words": "恰好10个真正新词。优先且在数量充足时全部从runtime.new_pool_dont选择；只有在排除跨日重复后合法dont不足10个时，才允许从runtime.new_pool_fuzzy补足。不得主动用fuzzy替代仍可用的dont；不得使用new_pool_unclassified。transition阶段仍遵守977余量优先与第二库补足规则。",

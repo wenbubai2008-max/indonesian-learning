@@ -1,5 +1,6 @@
 const fs=require('fs'),vm=require('vm'),zlib=require('zlib'),path=require('path');
 const {collectUnfamiliar}=require('./unfamiliar-lesson-pool');
+const {collectThemeWords}=require('./theme-word-pool');
 
 const rules=JSON.parse(fs.readFileSync('data/learning-pool-rules.json','utf8'));
 if(Number(rules.master_total)!==977) throw new Error('learning-pool-rules master_total must be 977');
@@ -166,10 +167,23 @@ if(handoff.phase==='secondary'&&unfamiliarNewFull.length){
   newFull=[...unfamiliarNewFull.filter(w=>!existing.has(key(w))),...newFull];
   if(activeMasterPool==='exhausted')activeMasterPool='secondary_bipa';
 }
+// Theme new words (2026-11-21, user decision): the next few untaught words of the user-approved theme-week lists
+// (data/theme-words.json) go first, a couple at a time; see theme-word-pool.js. Not part of the 977/BIPA counts.
+const themeDoc=fs.existsSync('data/theme-words.json')?JSON.parse(fs.readFileSync('data/theme-words.json','utf8')):{weeks:[]};
+const themePool=collectThemeWords({
+  doc:themeDoc,dailySet,weakMap,primarySet,secondarySet:new Set(secondaryMaster.map(x=>key(x.word))),lessonWatermark
+});
+const themeReleaseKeys=new Set(themePool.release.map(x=>key(x.word)));
+const themeMeta=new Map([...themePool.release,...themePool.taughtNoRecord].map(x=>[key(x.word),x]));
+if(themePool.release.length){
+  const existing=new Set(newFull.map(key));
+  newFull=[...themePool.release.map(x=>x.word).filter(w=>!existing.has(key(w))),...newFull];
+}
 
 const newDontFull=[],newFuzzyFull=[],newUnclassifiedFull=[];
 for(const w of newFull){
-  const cls=newMemoryClass(weakMap.get(key(w)));
+  let cls=newMemoryClass(weakMap.get(key(w)));
+  if(cls==='unclassified'&&themeReleaseKeys.has(key(w)))cls='dont'; // approved theme words are new to the user
   if(cls==='dont')newDontFull.push(w);
   else if(cls==='fuzzy')newFuzzyFull.push(w);
   else newUnclassifiedFull.push(w);
@@ -212,7 +226,7 @@ for(const w of [...newFull.slice(0,140),...oralExposed.map(x=>x[0]),...newDontEx
 }
 const secondaryMeta=new Map(secondaryMaster.map(x=>[key(x.word),x]));
 const newMeta=newExposed.map(w=>{
-  const k=key(w),meta=unfamiliarMeta.get(k)||secondaryMeta.get(k)||masterMeta.get(k)||{};
+  const k=key(w),meta=themeMeta.get(k)||unfamiliarMeta.get(k)||secondaryMeta.get(k)||masterMeta.get(k)||{};
   return [w,meta.cn||''];
 });
 
@@ -311,10 +325,20 @@ reviewExposed=[...reviewExposed,...rotationExposed];
 // Expose the stalest few at the lowest priority (5), appended after the normal pool. review_pool_total_full and every
 // A ∩ D count stay untouched (the vocab profile checks them); the ranker allows at most one such word per PM.
 const LEGACY_REVIEW_MAX=10;
-const legacyFull=dailyRaw.filter(x=>{const k=key(x&&x.word);return k&&!weakMap.has(k)})
+const legacyFull=dailyRaw.filter(x=>{const k=key(x&&x.word);return k&&!weakMap.has(k)&&!themeMeta.has(k)})
   .sort((a,b)=>String(a.last_seen||'').localeCompare(String(b.last_seen||''))||(Number(a.times_seen||0)-Number(b.times_seen||0))||String(a.word).localeCompare(String(b.word)));
 const legacyExposed=legacyFull.slice(0,LEGACY_REVIEW_MAX).map(x=>[String(x.word).trim(),5,0,'','',x.cn||'',x.root||'',x.root_cn||'']);
 reviewExposed=[...reviewExposed,...legacyExposed];
+// Theme words (2026-11-21): taught theme words with no weakness record are reviewed like ordinary weak words
+// (priority 2, stalest first). They stay outside every A ∩ D count; a weakness record, once synced, takes over.
+const THEME_REVIEW_MAX=40;
+const themeReviewSeen=new Set(reviewExposed.map(x=>key(x[0])));
+const themeReviewExposed=themePool.taughtNoRecord.filter(x=>!themeReviewSeen.has(key(x.word)))
+  .map(x=>({x,d:dailyMeta.get(key(x.word))||{}}))
+  .sort((a,b)=>String(a.d.last_seen||'').localeCompare(String(b.d.last_seen||''))||a.x.word.localeCompare(b.x.word))
+  .slice(0,THEME_REVIEW_MAX)
+  .map(({x,d})=>[x.word,2,0,'','',d.cn||x.cn,d.root||'',d.root_cn||'']);
+reviewExposed=[...reviewExposed,...themeReviewExposed];
 // Same-day AM words (2026-10-08): the PM contract puts today's 08:00 new words into PM application, but they rank below
 // the 60-word cut (most exposed words are priority-1 quick_wrong words), so since 2026-10-04 no PM could use them.
 // When the watermark is an 08:00 lesson, append that lesson's newly taught A ∩ D words. They are application-only:
@@ -379,6 +403,10 @@ const runtime={
     primary_new_pool_total_full:primaryNewFull.length,
     secondary_new_pool_total_full:secondaryNewFull.length,
     unfamiliar_new_pool_total_full:handoff.phase==='secondary'?unfamiliarNewFull.length:0,
+    theme_new_eligible_total:themePool.eligible.length,
+    theme_new_released:themePool.release.length,
+    theme_taught_no_record:themePool.taughtNoRecord.length,
+    theme_review_exposed:themeReviewExposed.length,
     new_pool_total_full:newFull.length,
     new_pool_secondary_dont_topup:handoff.phase==='primary'?secondaryDontTopup.length:0,
     new_pool_exposed:newExposed.length,
@@ -413,10 +441,12 @@ const runtime={
     review:['word','priority','wrong_count','last_wrong','last_review','cn','root','root_cn'],
     focus:['word','score','signals','wrong_count','last_wrong','last_review','cn','root','root_cn'],
     listening_focus:['word','score','status','signals','cn','root','root_cn'],
-    recurrence:['word','priority','cn']
+    recurrence:['word','priority','cn'],
+    theme_new:['word','cn','formal','note','theme_id']
   },
   new_pool:newExposed,
   unfamiliar_new_pool:handoff.phase==='secondary'?unfamiliarNewFull.slice():[],
+  theme_new_pool:themePool.release.map(x=>[x.word,x.cn,x.formal,x.note,x.theme_id]),
   new_pool_dont:newDontExposed,
   new_pool_fuzzy:newFuzzyExposed,
   new_pool_unclassified:newUnclassifiedExposed,
