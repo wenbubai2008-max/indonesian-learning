@@ -1,0 +1,102 @@
+.lesson { padding: 20rpx 16rpx 40rpx; }
+.lesson-mode { margin-bottom: 16rpx; }
+.meta { margin-top: 8rpx; }
+.lesson-title { margin: 8rpx 0 24rpx; font-size: 48rpx; font-weight: 850; line-height: 1.2; overflow-wrap: break-word; }
+
+.section { width: 100%; max-width: 600rpx; margin: 16rpx auto; padding: 18rpx 12rpx; border-radius: 24rpx; }
+@media (min-width: 521px) {
+  .section { max-width: none; margin: 24rpx auto; padding: 36rpx; border-radius: 36rpx; }
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14rpx;
+  font-size: 38rpx;
+  font-weight: 750;
+  line-height: 1.3;
+  word-break: break-word;
+}
+.section-marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 58rpx;
+  height: 58rpx;
+  border-radius: 18rpx;
+  background: var(--soft);
+  color: var(--blue);
+  font-size: 26rpx;
+}
+.section-subtitle { color: var(--muted); font-size: 26rpx; margin-top: 12rpx; }
+
+.entry {
+  margin-top: 18rpx;
+  padding: 26rpx;
+  border: 2rpx solid var(--line);
+  border-radius: 26rpx;
+  line-height: 1.75;
+}
+.entry-body { color: #284f83; font-weight: 700; }
+.entry-label, .speaker, .entry-group, .root-word { font-weight: 750; }
+.entry-group { margin-top: 24rpx; color: var(--blue); }
+.translation { margin-top: 8rpx; color: #7b6757; }
+.source-label { margin-top: 10rpx; color: var(--blue); font-weight: 750; font-size: 26rpx; }
+
+.focus-section { background: #fffaf1; border-color: #efdcbc; border-radius: 32rpx; padding: 28rpx 32rpx; }
+.focus-section .section-title { justify-content: flex-start; font-size: 34rpx; }
+.focus-section .section-subtitle { color: #7a6a55; margin: 4rpx 0 20rpx; }
+.focus-card { background: var(--card); border: 2rpx solid #f0e2c8; border-radius: 24rpx; padding: 18rpx 20rpx; }
+.focus-card + .focus-card { margin-top: 16rpx; }
+.focus-term { color: #1f2a44; font-weight: 750; }
+.focus-word .focus-term { font-size: 34rpx; }
+.focus-meaning { color: #6b5d4a; font-size: 26rpx; }
+.focus-pattern .focus-meaning { margin-left: 12rpx; font-size: 27rpx; }
+.focus-example { color: #3b4660; font-size: 28rpx; margin-top: 6rpx; }
+.focus-example-cn { color: #8a7a64; font-size: 26rpx; }
+.focus-entry { background: #fffcf6; border-color: #ecd2a6; }
+.focus-tag { margin-left: 8rpx; padding: 2rpx 12rpx; color: var(--warn); background: #fffaf1; border-radius: 12rpx; font-size: 22rpx; }
+.series { margin-top: 10rpx; border: 0; padding: 0; font-size: 26rpx; }
+.series .entry-body { color: var(--muted); font-weight: 400; }
+.story-note { background: #f6f8fc; border-style: dashed; padding: 16rpx 24rpx; }
+.reading-entry { border: 0; padding: 0; }
+.reading-entry .entry-body {
+  background: #f7faff;
+  border-left: 8rpx solid #91ace8;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  line-height: 1.9;
+}
+.reading-translation { background: #f6f8fc; border-radius: 22rpx; padding: 26rpx; }
+
+.vocab-entry { background: #fbfcff; border-radius: 28rpx; padding: 28rpx 24rpx; }
+.vocab-entry.focus-entry { background: #fffcf6; }
+.word-heading { display: flex; gap: 14rpx; align-items: baseline; flex-wrap: wrap; }
+.word-number, .word { color: #172033; font-size: 56rpx; line-height: 1.15; font-weight: 850; overflow-wrap: anywhere; }
+.word-number { color: var(--blue); font-size: 30rpx; }
+.vocab-entry > .translation { color: #26364f; font-weight: 800; font-size: 34rpx; line-height: 1.4; }
+.example, .root, .details, .feedback { margin-top: 12rpx; padding: 16rpx 20rpx; border-radius: 20rpx; background: #f6f8fc; }
+.example { color: #284f83; font-weight: 600; }
+.example .translation { font-weight: 400; }
+.sentence-frame { border: 2rpx dashed #c9d4e6; }
+.detail-action { display: block; width: fit-content; margin: 12rpx 0 0; padding: 12rpx 20rpx; font-size: 26rpx; }
+.detail-row + .detail-row { margin-top: 12rpx; }
+
+.choice {
+  display: block;
+  width: 100%;
+  margin-top: 12rpx;
+  padding: 16rpx 20rpx;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
+  border: 2rpx solid var(--line);
+  border-radius: 22rpx;
+  background: var(--card);
+  color: var(--text);
+}
+.correct { border-color: var(--ok); color: var(--ok); }
+.incorrect { border-color: var(--bad); color: var(--bad); background: #fff1f0; }
+.result-good { color: var(--ok); }
+.site-url { display: block; margin: 8rpx 0; word-break: break-all; }
+.copy { margin: 12rpx auto 0; }

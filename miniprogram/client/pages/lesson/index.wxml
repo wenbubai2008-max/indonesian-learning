@@ -1,0 +1,109 @@
+<view class="lesson container">
+  <view class="notice lesson-mode">练习模式：答题不计入复习</view>
+  <view wx:if="{{model}}" class="lesson-content">
+    <view class="muted meta">{{date}} · {{sessionLabel}}<text wx:if="{{model.time}}"> · {{model.time}}</text></view>
+    <view wx:if="{{model.title}}" class="heading lesson-title">{{model.title}}</view>
+
+    <view wx:for="{{model.sections}}" wx:for-item="section" wx:key="title" class="card section {{section.focus ? 'focus-section' : ''}}">
+      <view class="section-title">
+        <text wx:if="{{section.marker}}" class="section-marker">{{section.marker}}</text>
+        <text>{{section.title}}</text>
+      </view>
+      <view wx:if="{{section.subtitle}}" class="section-subtitle">{{section.subtitle}}</view>
+      <block wx:for="{{section.entries}}" wx:key="key">
+        <view wx:if="{{item.group}}" class="entry-group">{{item.group}}</view>
+        <view wx:if="{{section.focus}}" class="focus-card {{item.example ? 'focus-pattern' : 'focus-word'}}">
+          <view>
+            <text class="focus-term">{{item.body}}</text><text wx:if="{{item.cn && item.example}}" class="focus-meaning">{{item.cn}}</text>
+          </view>
+          <view wx:if="{{item.cn && !item.example}}" class="focus-meaning">{{item.cn}}</view>
+          <view wx:if="{{item.example}}" class="focus-example body-text">{{item.example}}</view>
+          <view wx:if="{{item.exampleCn}}" class="focus-example-cn body-text">{{item.exampleCn}}</view>
+        </view>
+        <view wx:else class="entry {{item.vocabularyNumber ? 'vocab-entry' : ''}} {{item.highlight ? 'focus-entry' : ''}} {{item.series ? 'series' : ''}} {{item.storyNote ? 'story-note' : ''}} {{item.reading ? 'reading-entry' : ''}}">
+          <view wx:if="{{item.vocabularyNumber}}" class="word-heading">
+            <text class="word-number">{{item.vocabularyNumber}}</text>
+            <text class="word">{{item.body}}</text>
+            <text wx:if="{{item.highlight}}" class="focus-tag">重点</text>
+          </view>
+          <view wx:elif="{{item.body}}" class="body-text entry-body"><text wx:if="{{item.label}}" class="speaker">{{item.label}}：</text>{{item.body}}</view>
+          <view wx:elif="{{item.label}}" class="entry-label">{{item.label}}</view>
+
+          <view wx:if="{{item.recallWord && !translations[item.key]}}" class="muted">
+            <view>这个词什么意思？先在心里说出来。</view>
+            <button class="action detail-action" bindtap="toggleTranslation" data-key="{{item.key}}">看答案</button>
+          </view>
+
+          <block wx:if="{{!item.recallWord || translations[item.key]}}">
+            <view wx:if="{{item.source}}" class="source-label">{{item.source}}</view>
+            <view wx:if="{{item.foldTranslation && item.cn}}">
+              <button class="secondary detail-action" bindtap="toggleTranslation" data-key="{{item.key}}">
+                {{translations[item.key] ? '收起中文 ▲' : item.translationLabel}}
+              </button>
+            </view>
+            <view wx:if="{{item.cn && (!item.foldTranslation || translations[item.key])}}" class="body-text translation {{item.reading ? 'reading-translation' : ''}}">{{item.cn}}</view>
+            <view wx:if="{{item.english}}" class="muted">{{item.english}}</view>
+            <view wx:if="{{item.everyday}}" class="muted">日常常说 · {{item.everyday}}</view>
+            <view wx:if="{{item.example}}" class="example {{item.exampleLabel ? 'sentence-frame' : ''}}">
+              <view wx:if="{{item.exampleLabel}}" class="muted">{{item.exampleLabel}}</view>
+              <view class="body-text">{{item.example}}</view>
+              <view wx:if="{{item.exampleCn}}" class="body-text translation">{{item.exampleCn}}</view>
+            </view>
+            <view wx:if="{{item.root}}" class="root muted"><text>词根</text> <text class="root-word">{{item.root}}</text> {{item.rootCn}}</view>
+            <view wx:if="{{item.hint}}" class="body-text muted">{{item.hint}}</view>
+            <view wx:if="{{item.note}}" class="body-text muted">{{item.note}}</view>
+
+            <button wx:if="{{item.details}}" class="secondary detail-action" bindtap="toggleDetails" data-key="{{item.key}}">
+              {{details[item.key] ? '收起 ▲' : '展开 搭配 · 同词根 · 辨析 · 用法 ▼'}}
+            </button>
+            <view wx:if="{{item.details && details[item.key]}}" class="details">
+              <view wx:for="{{item.details}}" wx:for-item="row" wx:key="label" class="detail-row">
+                <view class="muted">{{row.label}}</view>
+                <view wx:if="{{row.body}}" class="body-text">{{row.body}}</view>
+                <view wx:if="{{row.cn}}" class="body-text translation">{{row.cn}}</view>
+              </view>
+            </view>
+
+            <view wx:if="{{item.choices}}" class="choices">
+              <view wx:if="{{item.revealChoices && !details[item.key]}}" class="muted">
+                <view>先在心里用印尼语说一遍，再看选项。</view>
+                <button class="action detail-action" bindtap="toggleDetails" data-key="{{item.key}}">看选项</button>
+              </view>
+              <block wx:else>
+                <button wx:for="{{item.choices}}" wx:for-item="option" wx:for-index="optionIndex" wx:key="*this"
+                  class="choice {{choices[item.key] && item.correct === optionIndex ? 'correct' : ''}} {{choices[item.key] === optionIndex + 1 && item.correct >= 0 && item.correct !== optionIndex ? 'incorrect' : ''}}"
+                  bindtap="selectChoice" data-key="{{item.key}}" data-index="{{optionIndex}}">
+                  {{option}}
+                </button>
+                <view wx:if="{{choices[item.key]}}" class="feedback">
+                  <view wx:if="{{item.correct >= 0}}" class="{{choices[item.key] === item.correct + 1 ? 'result-good' : 'problem'}}">
+                    {{choices[item.key] === item.correct + 1 ? '答对了。' : '答错了。'}}
+                  </view>
+                  <view wx:if="{{item.explanation}}" class="body-text">{{item.explanation}}</view>
+                </view>
+              </block>
+            </view>
+
+            <button wx:if="{{item.answer || item.answerCn}}" class="secondary detail-action" bindtap="toggleAnswer" data-key="{{item.key}}">
+              {{answers[item.key] ? '收起' : item.answerLabel}}
+            </button>
+            <view wx:if="{{answers[item.key]}}" class="feedback">
+              <view wx:if="{{item.answer}}" class="body-text entry-body">{{item.answer}}</view>
+              <view wx:if="{{item.answerCn}}" class="translation body-text">{{item.answerCn}}</view>
+              <view wx:if="{{item.explanation}}" class="body-text">{{item.explanation}}</view>
+            </view>
+          </block>
+        </view>
+      </block>
+    </view>
+    <view wx:if="{{model.otherFields}}" class="status muted">
+      <view>本课还有：{{model.otherFields}}，请在网站查看</view>
+      <text class="site-url" selectable>{{website}}</text>
+      <button class="secondary copy" bindtap="copyWebsite">复制本课地址</button>
+    </view>
+  </view>
+  <view wx:if="{{busy && !model}}" class="status muted">正在读取课程…</view>
+  <view wx:if="{{issue}}" class="status problem">{{issue}}</view>
+  <view wx:if="{{status}}" class="status muted">{{status}}</view>
+  <view wx:if="{{model}}" class="status muted">朗读、藏台词、记得/模糊/忘了评分请在网站使用</view>
+</view>
