@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-20T14:55:11.182Z",
+  "updated_at": "2026-11-21T02:42:09.403Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -23913,8 +23913,10 @@
     "kata": {
       "word": "kata",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:01:15.791Z",
+      "updated_at": "2026-11-21T02:41:58.878Z",
       "display": "kata",
+      "cn": "词；说",
+      "root": "kata",
       "last_review": "2026-09-12T17:08:13.074Z",
       "last_mastered": "2026-09-12T17:08:13.074Z",
       "reasons": [],
