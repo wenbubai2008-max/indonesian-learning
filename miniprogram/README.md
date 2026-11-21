@@ -9,7 +9,6 @@
 CLI=/Applications/wechatwebdevtools.app/Contents/MacOS/cli
 PROJ="$(pwd)/miniprogram"
 "$CLI" open --project "$PROJ"
-"$CLI" preview --project "$PROJ" --qr-format image --qr-output /tmp/mini-preview.png
 ```
 
 课程显示以雅加达日期和 GitHub Pages 的发布索引为准。缓存保留最近 14 个雅加达自然日内加载过的课程。首页「最近 7 天」指今天之前的七天。首页和课程页都可以下拉刷新。课程页的答题记录只保留到本次页面关闭。网站若有其他课程字段，「复制本课地址」会复制网站上对应的原始课程文件地址。
@@ -17,16 +16,15 @@ PROJ="$(pwd)/miniprogram"
 ## 云函数
 
 1. 用户本人从开发者工具的「云开发」开通免费环境，阅读并勾选服务条款。遇到付费、按量付费或其他服务的开通提示时停下。
-2. 把环境 ID 写入 `client/utils/config.js` 的 `cloudEnv`，然后仅部署 `nettest`。免费体验版的云函数执行上限是 3 秒。云函数并行探测三个地址，每个地址最多等 1.8 秒收到 HTTP 响应头，超时只影响该地址的结果。手机直连仍按 10 秒等待。
+2. 把环境 ID 写入 `client/utils/config.js` 的 `cloudEnv`，然后仅部署 `nettest`。免费体验版的云函数执行上限是 3 秒。云函数并行探测三个地址，每个地址最多等 2.5 秒收到 HTTP 响应头，超时只影响该地址的结果。手机直连仍按 10 秒等待。
 
 ```sh
 "$CLI" cloud functions deploy --env <环境ID> --names nettest --project "$PROJ"
-"$CLI" preview --project "$PROJ" --qr-format image --qr-output /tmp/mini-preview.png
 ```
 
 ## 真机测试
 
-1. 在开发者工具顶部点「预览 → 二维码预览」，用手机微信扫码。需要开开发调试时，从小程序右上角「… → 开发调试」进入，按手机提示开启后重新进入。
+1. 让 Mac 微信在前台运行并登录对应开发账号。在微信开发者工具中打开「真机调试 → 自动真机调试 → 启动 Mac 端自动真机调试」，在 Mac 微信内验收课程和网络自检。
 2. 首页点「网络自检」。粘贴 Worker 的 HTTPS 根地址（形如 `https://xxx.workers.dev`），然后点「开始测试」。Worker 的 HTTP 401 表示线路已通，两条路线各自显示状态码、毫秒数和错误信息。
 3. 连续测三天，每天早晚各一次。最后点「复制全部结果」，把记录发回来。截图时尽量包含手机直连和云函数两部分。
 4. 离线验收时先在线打开一节课，再关闭 Wi‑Fi 和移动数据，重新打开小程序，确认首页和重新打开的课程仍可读取缓存，底部显示「离线，显示的是缓存」。

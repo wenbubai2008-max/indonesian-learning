@@ -6,9 +6,9 @@
   ],
   "window": {
     "navigationBarTitleText": "不白的外语学习",
-    "navigationBarBackgroundColor": "#f7f7f1",
+    "navigationBarBackgroundColor": "#f5f7fb",
     "navigationBarTextStyle": "black",
-    "backgroundColor": "#f7f7f1"
+    "backgroundColor": "#f5f7fb"
   },
   "networkTimeout": {
     "request": 10000

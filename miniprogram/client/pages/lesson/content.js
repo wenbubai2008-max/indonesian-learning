@@ -17,43 +17,96 @@ function block(body, cn, extra) {
   return Object.assign({ body: text(body), cn: text(cn) }, extra);
 }
 
-function section(sections, title, items, tags = []) {
-  const entries = items.filter(item => item.body || item.cn || item.details || item.choices || item.answer);
-  if (!entries.length && !tags.length) return;
+function section(sections, title, items, options = {}) {
+  const entries = items.filter(item =>
+    item.body || item.cn || item.details || item.choices || item.answer || item.answerCn);
+  if (!entries.length) return;
+  const index = sections.length;
+  const number = index + 1 - (sections[0] && sections[0].focus ? 1 : 0);
   sections.push({
     title,
-    tags,
-    entries: entries.map((entry, i) => Object.assign({ key: 's' + sections.length + 'i' + i }, entry))
+    marker: options.focus ? '' : options.check ? '✓' : String(number).padStart(2, '0'),
+    focus: !!options.focus,
+    subtitle: options.subtitle || '',
+    entries: entries.map((entry, i) => Object.assign({ key: 's' + index + 'i' + i }, entry))
   });
 }
 
-function focus(sections, lesson) {
-  const data = lesson.lesson_focus || {};
-  section(sections, '本课重点', list(data.patterns).filter(Boolean).map(item =>
-    block(item.pattern, item.cn, { example: text(item.example), exampleCn: text(item.example_cn) })
-  ), list(data.words).map(text).filter(Boolean));
+function normalized(value) {
+  return text(value).toLowerCase().trim().replace(/[.,!?;:，。！？；：“”"'’]/g, '').replace(/\s+/g, ' ');
 }
 
-function vocabulary(sections, lesson) {
-  section(sections, '词卡', list(lesson.vocab).filter(Boolean).map(item => {
+function wordName(item) {
+  return typeof item === 'string' ? item : item && item.word;
+}
+
+function focus(sections, words, patterns, vocab) {
+  const subtitle = '这节课最值得掌握的 ' + words.length + ' 个词和 ' + patterns.length +
+    ' 个句型，都出自本课；其余内容认识即可。';
+  const wordCards = words.map(word => {
+    const matching = vocab.find(item => normalized(wordName(item)) === normalized(word));
+    return block((matching && matching.display) || word, matching && matching.cn);
+  });
+  const patternCards = patterns.map(item => block(item.pattern, item.cn, {
+    example: text(item.example), exampleCn: text(item.example_cn)
+  }));
+  section(sections, '今天的重点', wordCards.concat(patternCards), { focus: true, subtitle });
+}
+
+function wordSources(morning) {
+  const normalizeSource = value => text(wordName(value)).toLowerCase().trim()
+    .replace(/[.,!?;:，。！？；：]/g, '').replace(/\s+/g, ' ');
+  if (!morning) return () => '';
+  const newWords = new Set(list(morning.vocab).map(normalizeSource));
+  const reviewWords = new Set(list(morning.review_vocab).map(normalizeSource));
+  return item => {
+    if (item.source_group !== 'application') return '';
+    const word = normalizeSource(item);
+    if (newWords.has(word)) return '今天 08:00 新学 · 晚课复现';
+    if (reviewWords.has(word)) return '今天 08:00 复习过 · 老词';
+    return '此前已学 · 晚课复现';
+  };
+}
+
+function vocabulary(sections, title, vocab, oldWords, focusWords, source) {
+  section(sections, title, vocab.map((item, i) => {
+    const word = normalized(wordName(item));
     const details = [
-      { label: '词根', body: item.root, cn: item.root_cn },
       { label: '构词', body: item.formation },
-      { label: '例句', body: item.example, cn: item.example_cn },
       { label: '用法', body: item.usage_note },
-      { label: '近义辨析', body: item.synonym_note }
-    ].map(row => block(row.body, row.cn, { label: row.label }))
-      .filter(row => row.body || row.cn);
+      { label: '辨析', body: item.synonym_note }
+    ].map(row => block(row.body, row.cn, { label: row.label })).filter(row => row.body || row.cn);
     return block(item.display || item.word || item.id || text(item), item.cn, {
-      details: details.length ? details : null
+      vocabularyNumber: String(item.order == null ? i + 1 : item.order) + '.',
+      english: text(item.en),
+      everyday: text(item.everyday),
+      example: text(item.example),
+      exampleCn: text(item.example_cn),
+      root: text(item.root),
+      rootCn: text(item.root_cn),
+      details: details.length ? details : null,
+      recallWord: oldWords.has(word),
+      highlight: focusWords.has(word),
+      source: source(item)
     });
   }));
 }
 
-function reading(sections, lesson) {
-  const data = lesson.reading;
-  if (!data) return;
-  section(sections, '阅读', [block(data.text || text(data), data.cn, { label: text(data.title) })]);
+function relatedSentence(body, cn, highlights, label) {
+  const content = normalized(body);
+  return block(body, cn, { label, highlight: highlights.some(example => content.includes(example)) });
+}
+
+function readingBlock(reading, fold) {
+  return block(reading.text || text(reading), reading.cn, {
+    reading: true,
+    foldTranslation: fold,
+    translationLabel: '看整段中文 ▼'
+  });
+}
+
+function readingTitle(reading) {
+  return reading.title ? '阅读 · ' + reading.title : '阅读';
 }
 
 function exercise(item, forceChoice = false) {
@@ -66,9 +119,10 @@ function exercise(item, forceChoice = false) {
       correct = options.indexOf(item.answer);
     }
     return block(body, item.question_cn || item.prompt_cn, {
-      choices: options.map(text),
+      choices: options.map((option, i) => String.fromCharCode(65 + i) + '. ' + text(option)),
       correct,
-      explanation
+      explanation,
+      revealChoices: item.kind === 'zh2id'
     });
   }
   if (item.type === 'fill' || item.type === 'order') {
@@ -85,78 +139,106 @@ function exercise(item, forceChoice = false) {
 }
 
 function reference(item) {
-  return block(item.task || text(item), item.task_cn, {
+  return block(item.task || item.prompt || text(item), item.task_cn, {
     example: text(item.frame),
-    answerLabel: '看参考答案',
+    exampleLabel: '句子骨架 · 把 …… 换成你的话，说出来或写下来',
+    answerLabel: '参考答案',
     answer: text(item.reference_answer || item.reference || item.answer),
     answerCn: text(item.reference_cn || item.reference_answer_cn || item.answer_cn)
   });
 }
 
-function morning(sections, lesson) {
-  const story = lesson.story;
-  if (story) {
-    const caption = [text(story.series), text(story.episode) && '第 ' + story.episode + ' 集']
-      .filter(Boolean).join(' · ');
-    const synopsis = [block(caption)];
-    if (story.previously_cn) synopsis.push(block('', story.previously_cn, { translationLabel: '看上集' }));
-    if (story.next_cn) synopsis.push(block('', story.next_cn, { translationLabel: '看下集预告' }));
-    section(sections, '连载', synopsis);
-  }
-  focus(sections, lesson);
-  vocabulary(sections, lesson);
-  section(sections, '复习词', [], list(lesson.review_vocab).map(text).filter(Boolean));
-  section(sections, '高频句子', list(lesson.sentences).filter(Boolean).map(item =>
-    block(item.text || text(item), item.cn)));
-  reading(sections, lesson);
-  section(sections, '小测', list(lesson.quiz).filter(Boolean).map(item => exercise(item, true)));
-  if (lesson.output) section(sections, '主动输出', [reference(lesson.output)]);
-
-  const cards = lesson.review_cards || {};
-  section(sections, '回想', list(cards.recall).filter(Boolean).map(item =>
-    block(item.cn, '', { answerLabel: '看印尼语', answer: text(item.id) })));
-  section(sections, '辨析', list(cards.contrasts).filter(Boolean).map(group => {
+function reviewCards(cards) {
+  const recall = list(cards.recall).filter(Boolean).map(item =>
+    block(item.cn, '', { answerLabel: '点开看答案', answer: text(item.id) }));
+  const contrasts = list(cards.contrasts).filter(Boolean).map(group => {
     const items = list(group.items || group).filter(Boolean);
-    return block(items.map(item => text(item.id || item.word || item)).filter(Boolean).join('\n'),
-      items.map(item => text(item.cn)).filter(Boolean).join('\n'),
-      { note: text(group.note) });
-  }));
-  section(sections, '复盘', list(lesson.review).map(item => block(item)));
+    const pairs = items.map(item =>
+      [text(item.id || item.word || item), text(item.cn)].filter(Boolean).join(' ')).filter(Boolean);
+    return block(pairs.join(' vs '), '', { note: text(group.note) });
+  });
+  if (recall.length) recall[0].group = '主动回想';
+  if (contrasts.length) contrasts[0].group = '易混词与搭配';
+  return recall.concat(contrasts);
 }
 
-function evening(sections, lesson) {
-  focus(sections, lesson);
-  vocabulary(sections, lesson);
-  reading(sections, lesson);
+function morning(sections, lesson, model) {
+  const { vocab, oldWords, focusWords, highlights } = model;
+  const { story, reading } = lesson;
+  const fold = oldWords.size > 0;
+  const serial = reading && story && Number.isInteger(story.episode);
+  if (serial) {
+    const storyParts = [
+      block(story.series, '', { series: true }),
+      block('', story.previously_cn, { label: '上集回顾', storyNote: true }),
+      readingBlock(reading, fold),
+      block('', story.next_cn, { label: '下集预告', storyNote: true })
+    ];
+    const title = '本周连载 · 第' + story.episode + '集' +
+      (reading.title ? ' · ' + reading.title : '');
+    section(sections, title, storyParts);
+  }
+  vocabulary(sections, serial ? '本集词汇' : '今日词汇', vocab, oldWords, focusWords, () => '');
+  section(sections, '高频句子', list(lesson.sentences).filter(Boolean).map(item =>
+    relatedSentence(item.id || item.text || text(item), item.cn, highlights)));
+  if (reading && !serial) section(sections, readingTitle(reading), [readingBlock(reading, fold)]);
+  section(sections, '小测', list(lesson.quiz).filter(Boolean).map(item => exercise(item, true)));
+  if (lesson.output) section(sections, '主动输出', [reference(lesson.output)]);
+  const cards = reviewCards(lesson.review_cards || {});
+  section(sections, '复习', cards.length ? cards :
+    list(lesson.review).filter(Boolean).map(item => block(item.text || item)));
+}
+
+function evening(sections, lesson, model, sameDayAm) {
+  const { vocab, oldWords, focusWords, highlights } = model;
+  vocabulary(sections, '今日词汇', vocab, oldWords, focusWords, wordSources(sameDayAm));
+  if (lesson.reading) section(sections, readingTitle(lesson.reading),
+    [readingBlock(lesson.reading, oldWords.size > 0)]);
 
   const dialogue = lesson.dialogue || {};
   section(sections, text(dialogue.title) || '情景对话', list(dialogue.lines || dialogue)
-    .filter(Boolean).map(line => block(line.id || line.text || text(line), line.cn, { label: text(line.speaker) })));
-  section(sections, '改写', list(lesson.rewrite).filter(Boolean).map(reference));
+    .filter(Boolean).map(line =>
+      relatedSentence(line.id || line.text || text(line), line.cn, highlights, text(line.speaker))));
+  section(sections, '主动改写 · 应用练习', list(lesson.rewrite).filter(Boolean).map(reference), { check: true });
 
   const test = lesson.daily_test || {};
-  section(sections, text(test.title) || '当日小测',
-    list(test.questions || test.items).filter(Boolean).map(item => exercise(item)));
+  const questions = list(test.items).length ? list(test.items) : list(test.questions);
+  const subtitle = '轻量检测今天刚学的内容，不追求全对，也不用写长句。';
+  section(sections, text(test.title) || '当日小测 · 5–8分钟',
+    questions.filter(Boolean).map(item => exercise(item)), { check: true, subtitle });
   const review = lesson.review || {};
-  const steps = list(review.steps || review).map(item => block(item));
+  const steps = list(review.steps || review.items || review).filter(Boolean).map(item => block(item.text || item));
   if (review.retell_reference || review.retell_reference_cn) {
     steps.push(block('', '', {
-      answerLabel: '看参考',
+      answerLabel: '参考复述',
       answer: text(review.retell_reference),
       answerCn: text(review.retell_reference_cn)
     }));
   }
-  section(sections, text(review.title) || '复盘', steps);
+  section(sections, text(review.title) || '最后 5 分钟复盘', steps, { check: true });
 }
 
-function buildLesson(lesson, session) {
+function buildLesson(lesson, session, sameDayAm) {
   const sections = [];
   const isMorning = session === 'am';
   const handled = commonFields.concat(isMorning ?
     ['story', 'review_vocab', 'sentences', 'quiz', 'output', 'review_cards'] :
     ['dialogue', 'rewrite', 'daily_test']);
-  if (isMorning) morning(sections, lesson);
-  else evening(sections, lesson);
+  const vocab = list(lesson.vocab).filter(Boolean);
+  const lessonFocus = lesson.lesson_focus || {};
+  const words = list(lessonFocus.words).filter(word => typeof word === 'string' && word.trim());
+  const patterns = list(lessonFocus.patterns).filter(item =>
+    item && typeof item.pattern === 'string' && typeof item.example === 'string');
+  const newWords = new Set(list(lesson.new_words).map(word => normalized(wordName(word))));
+  const old = !lesson.phase ? [] : Array.isArray(lesson.cycle_vocab) ? lesson.cycle_vocab :
+    vocab.map(wordName).filter(word => word && !newWords.has(normalized(word)));
+  const model = {
+    vocab, oldWords: new Set(old.map(normalized)), focusWords: new Set(words.map(normalized)),
+    highlights: patterns.map(item => normalized(item.example)).filter(Boolean)
+  };
+  focus(sections, words, patterns, vocab);
+  if (isMorning) morning(sections, lesson, model);
+  else evening(sections, lesson, model, sameDayAm);
   return {
     title: text(lesson.title),
     time: text(lesson.time),

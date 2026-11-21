@@ -5,7 +5,7 @@ const { buildLesson } = require('./content');
 Page({
   data: {
     date: '', sessionLabel: '', model: null, status: '', issue: '', busy: false,
-    showAll: false, translations: {}, details: {}, answers: {}, choices: {}, website: ''
+    translations: {}, details: {}, answers: {}, choices: {}, website: ''
   },
 
   onLoad(options) {
@@ -39,7 +39,8 @@ Page({
     const cachedIndex = snapshot[data.INDEX];
     const cached = cachedIndex && data.isPublished(cachedIndex.data, date, session) ?
       snapshot[data.lessonKey(date, session)] : null;
-    if (cached) this.showLesson(cached);
+    const morningKey = session === 'pm' ? data.lessonKey(date, 'am') : '';
+    if (cached) this.showLesson(cached, snapshot[morningKey]);
     this.setData({ issue: '', busy: true });
 
     try {
@@ -52,7 +53,7 @@ Page({
       }
       const entry = await data.fetchLesson(date, session);
       if (token !== this.loadToken) return;
-      this.showLesson(entry);
+      this.showLesson(entry, morningKey ? data.cacheSnapshot()[morningKey] : null);
       this.setData({ busy: false });
     } catch (error) {
       if (token !== this.loadToken) return;
@@ -64,26 +65,23 @@ Page({
     }
   },
 
-  showLesson(entry) {
+  showLesson(entry, morning) {
     const status = '内容更新于 ' + jakartaTime(entry.updatedAt);
-    const signature = JSON.stringify(entry.data);
+    const morningLesson = morning && morning.data;
+    const signature = JSON.stringify([entry.data, morningLesson]);
     if (signature === this.currentLesson) {
       this.setData({ status });
       return;
     }
     this.currentLesson = signature;
     this.setData({
-      model: buildLesson(entry.data, this.course.session),
+      model: buildLesson(entry.data, this.course.session, morningLesson),
       status,
       translations: {},
       details: {},
       answers: {},
       choices: {}
     });
-  },
-
-  setAll(event) {
-    this.setData({ showAll: event.detail.value });
   },
 
   toggleTranslation(event) {

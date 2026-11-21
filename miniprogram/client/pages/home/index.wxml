@@ -6,7 +6,7 @@
     </view>
     <navigator class="net-link" url="/pages/nettest/index" hover-class="link-pressed">网络自检</navigator>
   </view>
-  <view class="muted mode">练习模式：在小程序里答题不计入复习</view>
+  <view class="notice mode">练习模式：在小程序里答题不计入复习</view>
 
   <view class="today-cards">
     <block wx:for="{{current}}" wx:key="key">

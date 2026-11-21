@@ -1,13 +1,13 @@
 .label, .probe-name { font-weight: 700; }
-.worker-input { min-height: 82rpx; margin: 12rpx 0; padding: 14rpx; border: 1rpx solid #bbcbbf; border-radius: 12rpx; font-size: 27rpx; }
+.worker-input { min-height: 82rpx; margin: 12rpx 0; padding: 14rpx; border: 1rpx solid var(--line); border-radius: 12rpx; font-size: 27rpx; }
 .input-error { font-size: 26rpx; }
 .start { margin-top: 16rpx; }
 .panel { margin-top: 16rpx; }
-.group-title { font-size: 30rpx; font-weight: 700; color: #22543e; margin-bottom: 6rpx; }
+.group-title { font-size: 30rpx; font-weight: 700; color: var(--blue); margin-bottom: 6rpx; }
 .probe-row { padding: 13rpx 0; }
-.probe-row + .probe-row { border-top: 1rpx solid #dfe5db; }
+.probe-row + .probe-row { border-top: 1rpx solid var(--line); }
 .result-head, .history-head { display: flex; align-items: center; justify-content: space-between; gap: 16rpx; }
 .metrics { font-variant-numeric: tabular-nums; }
-.pass { color: #225c43; font-size: 26rpx; }
+.pass { color: var(--ok); font-size: 26rpx; }
 .history-head { margin: 34rpx 0 14rpx; }
 .history-route { font-weight: 700; margin-top: 16rpx; }

@@ -4,7 +4,7 @@ const pages = 'https://wenbubai2008-max.github.io/indonesian-learning/data/daily
 const raw = 'https://raw.githubusercontent.com/wenbubai2008-max/indonesian-learning/main/data/daily/index.json';
 const workerHost = /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+workers\.dev$/;
 // The free CloudBase environment stops the entire invocation after 3 seconds.
-const PROBE_TIMEOUT_MS = 1800;
+const PROBE_TIMEOUT_MS = 2500;
 
 function allowedUrl(value) {
   if (typeof value !== 'string' || value.length > 300) return null;
@@ -33,7 +33,7 @@ function probe(value) {
     let status = null;
     let finished = false;
     const deadline = setTimeout(() => {
-      finish(false, `未在 ${PROBE_TIMEOUT_MS} ms 内收到 HTTP 响应`);
+      finish(false, `超时（${PROBE_TIMEOUT_MS} ms 内未收到 HTTP 响应）`);
       if (request) request.destroy();
     }, PROBE_TIMEOUT_MS);
 
