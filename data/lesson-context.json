@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-21",
-    "session": "pm",
-    "time": "18:00",
-    "day": 92
+    "date": "2026-11-22",
+    "session": "am",
+    "time": "08:00",
+    "day": 93
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-21T09:40:25.823Z",
-    "lesson_watermark": "2026-11-21 08:00",
+    "runtime_generated_at": "2026-11-21T10:53:28.847Z",
+    "lesson_watermark": "2026-11-21 18:00",
     "index_updated": "2026-11-21",
-    "runtime_hash": "cf8460c947e1837a79201af1a2d67e30974532740518a58a2196a77d3f67d148",
-    "index_hash": "7e37fe6f7ff4bbbb3123d01bacc59e133bf4b0ff67b5f5685c7269f9f1dbfa7c",
+    "runtime_hash": "f04af8ef59cfda0e854b533cf4e8e1d45ffb39dbfab5768cce7d9ed9acdfcc4b",
+    "index_hash": "0991359a49515cea0d17b2e8c359be4437e951c97d74d621be27c4e779daa912",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -1272,16 +1272,6 @@
         "拉肚子"
       ],
       [
-        "haus",
-        2,
-        0,
-        "",
-        "2026-11-20T05:14:36.710Z",
-        "口渴",
-        "haus",
-        "口渴"
-      ],
-      [
         "meledak",
         2,
         0,
@@ -1512,16 +1502,6 @@
         "光线"
       ],
       [
-        "jarak",
-        2,
-        0,
-        "",
-        "2026-11-20T05:15:08.103Z",
-        "距离；间隔",
-        "jarak",
-        "距离；间隔"
-      ],
-      [
         "mencetak",
         3,
         0,
@@ -1540,16 +1520,6 @@
         "学位；头衔",
         "gelar",
         "头衔；展开"
-      ],
-      [
-        "istimewa",
-        2,
-        0,
-        "",
-        "2026-11-20T05:15:01.501Z",
-        "特别的；特殊的；出众的",
-        "istimewa",
-        "特别"
       ],
       [
         "menghasilkan",
@@ -1580,16 +1550,6 @@
         "即；就是；也就是",
         "yaitu",
         "即"
-      ],
-      [
-        "kwitansi",
-        2,
-        0,
-        "",
-        "2026-10-22T15:34:16.195Z",
-        "收据",
-        "kwitansi",
-        "收据（外来词）"
       ],
       [
         "tukar",
@@ -1722,16 +1682,6 @@
         "滑；偏离"
       ],
       [
-        "bengkak",
-        2,
-        0,
-        "",
-        "2026-11-18T14:19:55.362Z",
-        "肿；肿胀",
-        "bengkak",
-        "肿"
-      ],
-      [
         "retur",
         2,
         0,
@@ -1860,16 +1810,6 @@
         "事故；意外",
         "celaka",
         "遭殃；出事"
-      ],
-      [
-        "kesepakatan",
-        2,
-        1,
-        "2026-09-30T14:12:20.417Z",
-        "2026-11-13T02:32:10.458Z",
-        "协议；共识",
-        "sepakat",
-        "同意；达成一致"
       ],
       [
         "memindahkan",
@@ -2252,44 +2192,64 @@
         "离婚；分开"
       ],
       [
-        "ngirit",
+        "keberadaan",
         2,
-        2,
-        "2026-09-30T13:59:09.485Z",
-        "2026-11-13T02:31:06.457Z",
-        "省着花；节省开支（口语）",
-        "irit",
-        "节省；省着用"
+        0,
+        "",
+        "2026-10-24T02:34:22.782Z",
+        "存在；所在（的状态）",
+        "ada",
+        "有；在"
       ],
       [
-        "pribadi",
+        "lapangan",
+        2,
+        0,
+        "",
+        "2026-10-24T02:34:37.527Z",
+        "场地；空地；广场",
+        "lapang",
+        "宽敞的；空旷的"
+      ],
+      [
+        "luar biasa",
+        2,
+        0,
+        "",
+        "2026-10-24T02:34:42.697Z",
+        "非凡的；了不起；（程度）极大",
+        "biasa",
+        "平常的；普通的"
+      ],
+      [
+        "menyediakan",
+        2,
+        1,
+        "2026-10-15T08:17:21.463Z",
+        "2026-10-28T03:33:44.841Z",
+        "提供；准备好（供人使用）",
+        "sedia",
+        "准备好的；有的"
+      ],
+      [
+        "penelitian",
+        2,
+        0,
+        "",
+        "2026-10-24T02:35:05.237Z",
+        "研究；调查",
+        "teliti",
+        "仔细的；严谨的"
+      ],
+      [
+        "berusaha",
         3,
         0,
         "",
-        "2026-11-15T03:30:19.943Z",
-        "个人的；私人的；个人",
-        "pribadi",
-        "个人；私人"
-      ],
-      [
-        "tagihan",
-        3,
-        0,
-        "",
-        "2026-11-15T03:35:22.650Z",
-        "账单；应付款",
-        "tagih",
-        "催款；要求付款"
-      ],
-      [
-        "invoice",
-        2,
-        0,
-        "",
-        "2026-11-20T05:14:46.474Z",
-        "发票；账单（商业往来）",
-        "invoice",
-        "发票；账单（英语借词）"
+        "2026-11-14T08:25:15.544Z",
+        "努力、设法",
+        "usaha",
+        ""
       ]
     ],
     "focus": [
@@ -2562,47 +2522,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-14",
-      "session": "am",
-      "review_core": [
-        "berteriak",
-        "becek",
-        "curhat",
-        "malu-malu",
-        "membandingkan"
-      ],
-      "new_words": [
-        "natal",
-        "bertujuan",
-        "personil",
-        "penonton",
-        "blus",
-        "rok",
-        "emas",
-        "ikal",
-        "gantungan baju",
-        "menekan-nekan"
-      ]
-    },
-    {
-      "date": "2026-11-14",
-      "session": "pm",
-      "review_core": [
-        "kepepet",
-        "penanganan",
-        "ketiban",
-        "menabrak",
-        "menambahkan"
-      ],
-      "new_words": [
-        "resepsionis hotel",
-        "gelombang",
-        "lumba-lumba",
-        "kura-kura",
-        "cerdik"
-      ]
-    },
-    {
       "date": "2026-11-15",
       "session": "am",
       "review_core": [
@@ -2784,74 +2703,34 @@
         "sungkan"
       ],
       "new_words": []
+    },
+    {
+      "date": "2026-11-21",
+      "session": "pm",
+      "review_core": [
+        "bengkak",
+        "haus",
+        "istimewa",
+        "jarak",
+        "mengeluh",
+        "perkirakan"
+      ],
+      "new_words": []
     }
   ],
   "previous_pm": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "new_words": [],
     "review_core": [
-      "remaja",
-      "beliau",
-      "berfungsi",
-      "biarpun",
-      "demi",
-      "jarak tempuh"
+      "bengkak",
+      "haus",
+      "istimewa",
+      "jarak",
+      "mengeluh",
+      "perkirakan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-21",
-    "vocab": [
-      [
-        "ganjel",
-        "心里有点卡；觉得哪里不对劲；有件事没说开（口语）",
-        "(colloq.) something feels off; nagging feeling",
-        "ganjal",
-        "垫块；楔子（塞在下面卡住的东西）"
-      ],
-      [
-        "komentar",
-        "评论；留言；意见",
-        "comment",
-        "komentar",
-        "评论（外来词）"
-      ],
-      [
-        "ngirit",
-        "省着花；节省开支（口语）",
-        "(colloq.) to save money; to economize",
-        "irit",
-        "节省的；省（油、钱）"
-      ],
-      [
-        "pribadi",
-        "个人的；私人的；个人",
-        "personal; private",
-        "pribadi",
-        "个人；本人"
-      ],
-      [
-        "tagihan",
-        "账单；应付款",
-        "bill; invoice amount due",
-        "tagih",
-        "催款；要求付款"
-      ],
-      [
-        "invoice",
-        "发票；账单（商业往来）",
-        "invoice",
-        "invoice",
-        "发票；账单（英语借词）"
-      ]
-    ],
-    "review_vocab": [
-      "nyalakan",
-      "menyalakan",
-      "bunyi",
-      "mengantar",
-      "sungkan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

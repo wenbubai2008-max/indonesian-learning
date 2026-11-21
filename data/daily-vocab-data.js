@@ -13545,16 +13545,16 @@ window.DAILY_VOCAB_DB = [
     "en": "complain",
     "root": "keluh",
     "root_cn": "抱怨；叹息",
-    "example": "Tetangga mengeluh karena kami mendengarkan musik terlalu keras sampai tengah malam.",
-    "example_cn": "邻居抱怨，因为我们放音乐放得太大声，一直到半夜。",
+    "example": "Tetangga sebelah mengeluh karena musik kami terlalu keras tadi malam.",
+    "example_cn": "隔壁邻居抱怨昨晚我们的音乐太吵了。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-11-11 18:00",
+    "last_seen": "2026-11-21 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13566,7 +13566,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-01",
       "2026-10-05",
       "2026-10-17",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
       "2026-09-23 08:00",
@@ -13576,7 +13577,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-01 18:00",
       "2026-10-05 08:00",
       "2026-10-17 08:00",
-      "2026-11-11 18:00"
+      "2026-11-11 18:00",
+      "2026-11-21 18:00"
     ]
   },
   {
@@ -14544,27 +14546,31 @@ window.DAILY_VOCAB_DB = [
     "en": "agreement; consensus",
     "root": "sepakat",
     "root_cn": "同意；达成一致",
-    "example": "Kami akhirnya mencapai kesepakatan dengan pemasok.",
-    "example_cn": "我们最终和供应商达成了协议。",
+    "example": "Akhirnya kami mencapai kesepakatan: saya boleh mengangsur uang sewa dua kali.",
+    "example_cn": "最后我们谈妥了：房租我可以分两次付。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-10-07 08:00",
+    "last_seen": "2026-11-21 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-25",
       "2026-10-03",
-      "2026-10-07"
+      "2026-10-07",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00",
       "2026-10-03 08:00",
-      "2026-10-07 08:00"
+      "2026-10-07 08:00",
+      "2026-11-21 18:00"
     ]
   },
   {
@@ -16850,23 +16856,27 @@ window.DAILY_VOCAB_DB = [
     "en": "thirsty",
     "root": "haus",
     "root_cn": "口渴",
-    "example": "Setelah berjalan jauh, saya merasa sangat haus.",
-    "example_cn": "走了很远以后，我觉得非常口渴。",
+    "example": "Siang-siang begini gampang haus. Es kelapa muda ini menyegarkan banget.",
+    "example_cn": "大中午的特别容易渴。这杯冰椰子水真解渴。（banget = sekali）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-01 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-11-21 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-01"
+      "2026-10-01",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-11-21 18:00"
     ]
   },
   {
@@ -17733,23 +17743,25 @@ window.DAILY_VOCAB_DB = [
     "en": "distance; interval",
     "root": "jarak",
     "root_cn": "距离；间隔",
-    "example": "Jarak dari kantor ke gudang tidak terlalu jauh.",
-    "example_cn": "办公室到仓库的距离不算太远。",
+    "example": "Jarak Jakarta ke Bali lumayan jauh, tapi naik pesawat cuma terbang sekitar dua jam.",
+    "example_cn": "雅加达到巴厘岛距离挺远，可坐飞机只要飞两个小时左右。（cuma = hanya）",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-02 18:00",
-    "last_seen": "2026-10-02 18:00",
+    "last_seen": "2026-11-21 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
-      "2026-10-02 18:00"
+      "2026-10-02 18:00",
+      "2026-11-21 18:00"
     ]
   },
   {
@@ -17810,23 +17822,27 @@ window.DAILY_VOCAB_DB = [
     "en": "special; exceptional",
     "root": "istimewa",
     "root_cn": "特别",
-    "example": "Ulang tahun ke-60 ibu adalah hari yang sangat istimewa untuk keluarga kami.",
-    "example_cn": "妈妈的六十岁生日对我们家来说是非常特别的一天。",
+    "example": "Nasi liwet buatan nenek wangi daun salam, rasanya istimewa banget.",
+    "example_cn": "奶奶做的椰香饭有香叶的香味，味道特别好。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-03 08:00",
-    "last_seen": "2026-10-03 08:00",
+    "last_seen": "2026-11-21 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
-      "2026-10-03 08:00"
+      "2026-10-03 08:00",
+      "2026-11-21 18:00"
     ]
   },
   {
@@ -18103,23 +18119,25 @@ window.DAILY_VOCAB_DB = [
     "en": "receipt (proof of payment)",
     "root": "kwitansi",
     "root_cn": "收据（外来词）",
-    "example": "Tanpa kwitansi, toko tidak bisa menukar barang.",
-    "example_cn": "没有收据，商店无法换货。",
+    "example": "Semua pengeluaran kantor saya catat, kwitansinya saya simpan di map.",
+    "example_cn": "办公室的每笔开支我都记下来，收据都放在文件夹里。（catat = mencatat）",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-03 18:00",
-    "last_seen": "2026-10-03 18:00",
+    "last_seen": "2026-11-21 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-03"
+      "2026-10-03",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
-      "2026-10-03 18:00"
+      "2026-10-03 18:00",
+      "2026-11-21 18:00"
     ]
   },
   {
@@ -18572,26 +18590,28 @@ window.DAILY_VOCAB_DB = [
     "en": "swollen",
     "root": "bengkak",
     "root_cn": "肿",
-    "example": "Pipinya bengkak karena sakit gigi.",
-    "example_cn": "他的脸颊因为牙疼肿起来了。",
+    "example": "Kakinya pegal dan agak bengkak habis jalan seharian, jadi malam ini dia berendam air hangat.",
+    "example_cn": "走了一整天，他的脚又酸又有点肿，所以今晚他用热水泡了泡脚。（habis = setelah）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-05 08:00",
-    "last_seen": "2026-10-05 18:00",
+    "last_seen": "2026-11-21 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
       "2026-10-05 08:00",
-      "2026-10-05 18:00"
+      "2026-10-05 18:00",
+      "2026-11-21 18:00"
     ]
   },
   {
@@ -24151,16 +24171,16 @@ window.DAILY_VOCAB_DB = [
     "en": "estimate; predict",
     "root": "kira",
     "root_cn": "猜测；估量",
-    "example": "Sebelum renovasi dapur, coba perkirakan dulu biayanya supaya kita nggak nombok di akhir bulan.",
-    "example_cn": "厨房装修之前，先估计一下费用，免得月底我们还得自己往里贴钱。（nggak = tidak，nombok = 自己垫钱补差额）",
+    "example": "Saya perkirakan renovasi dapurnya selesai dua minggu lagi.",
+    "example_cn": "我估计厨房翻修还要两周才完工。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-21 08:00",
-    "last_seen": "2026-11-11 18:00",
+    "last_seen": "2026-11-21 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -24168,12 +24188,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-10-21",
       "2026-10-22",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
       "2026-10-21 08:00",
       "2026-10-22 18:00",
-      "2026-11-11 18:00"
+      "2026-11-11 18:00",
+      "2026-11-21 18:00"
     ]
   },
   {
