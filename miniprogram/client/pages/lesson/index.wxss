@@ -1,0 +1,24 @@
+.lesson { padding-top: 0; }
+.sticky { position: sticky; top: 0; z-index: 2; padding: 15rpx 0; background: #f7f7f1; border-bottom: 1rpx solid #dfe5db; }
+.translation-switch { display: flex; align-items: center; justify-content: space-between; font-size: 26rpx; margin-top: 6rpx; }
+.translation-switch switch { transform: scale(.82); transform-origin: right center; }
+.meta { margin-top: 22rpx; }
+.lesson-title { margin: 8rpx 0 24rpx; overflow-wrap: break-word; }
+.section { margin: 16rpx 0; }
+.section-title { font-size: 34rpx; font-weight: 700; color: #22543e; word-break: break-word; }
+.entry { margin-top: 16rpx; }
+.entry + .entry { padding-top: 16rpx; border-top: 1rpx solid #dfe5db; }
+.entry-label { font-weight: 700; }
+.example { margin-top: 8rpx; background: #f2f5ef; padding: 12rpx 16rpx; border-radius: 8rpx; }
+.tags { margin: 12rpx 0 0; white-space: nowrap; }
+.tag { display: inline-block; padding: 5rpx 15rpx; margin-right: 10rpx; color: #22543e; background: #edf4ed; border-radius: 999rpx; }
+.detail-action { display: block; width: fit-content; margin: 8rpx 0 0; padding: 10rpx 14rpx; background: #edf4ed; color: #22543e; border-radius: 8rpx; font-size: 25rpx; }
+.translation { margin: 8rpx 0; color: #4d6254; }
+.details, .feedback { margin-top: 12rpx; padding: 16rpx; background: #f2f5ef; border-radius: 10rpx; }
+.detail-row + .detail-row { margin-top: 10rpx; }
+.choice { display: block; width: 100%; text-align: left; margin-top: 10rpx; padding: 15rpx 18rpx; border: 1rpx solid #dfe5db; border-radius: 10rpx; background: #fff; color: #202d25; white-space: normal; overflow-wrap: break-word; }
+.correct { border-color: #408258; background: #e6f3e8; }
+.incorrect { border-color: #a4463b; background: #fcece8; }
+.result-good { color: #225c43; }
+.site-url { display: block; margin: 8rpx 0; word-break: break-all; }
+.copy { margin: 12rpx auto 0; }

@@ -1,0 +1,50 @@
+<template name="results">
+  <view wx:for="{{rows}}" wx:key="label" class="probe-row">
+    <view class="result-head">
+      <text class="probe-name">{{item.label}}</text>
+      <text class="{{item.skipped ? 'muted' : (item.ok ? 'pass' : 'problem')}}">{{item.skipped ? '跳过' : (item.ok ? '成功' : '失败')}}</text>
+    </view>
+    <view class="muted metrics">HTTP {{item.status === null ? '—' : item.status}} · {{item.ms === null ? '—' : item.ms + ' ms'}}</view>
+    <view wx:if="{{item.ok && item.status === 401}}" class="muted">网络通（未授权，正常）</view>
+    <view wx:if="{{item.error}}" class="muted body-text">{{item.error}}</view>
+  </view>
+</template>
+
+<view class="container">
+  <view class="card controls">
+    <view class="label">Worker 地址</view>
+    <input class="worker-input" value="{{workerUrl}}" placeholder="https://xxx.workers.dev" maxlength="250"
+      bindinput="editWorker" bindblur="saveWorker" disabled="{{running}}" aria-label="Worker 地址"/>
+    <view wx:if="{{inputError}}" class="problem input-error">{{inputError}}</view>
+    <button class="action start" bindtap="start" loading="{{running}}" disabled="{{running}}">
+      {{running ? '测试中…' : '开始测试'}}
+    </button>
+  </view>
+
+  <view class="card panel">
+    <view class="group-title">A. 手机直连</view>
+    <template wx:if="{{directRows.length}}" is="results" data="{{rows: directRows}}"/>
+    <view wx:else class="muted">{{running ? '测试中…' : '等待测试'}}</view>
+  </view>
+  <view class="card panel">
+    <view class="group-title">B. 云函数转发</view>
+    <view wx:if="{{cloudError}}" class="body-text problem">云函数不可用 · {{cloudError}}</view>
+    <template wx:elif="{{cloudRows.length}}" is="results" data="{{rows: cloudRows}}"/>
+    <view wx:else class="muted">{{running ? '测试中…' : '等待测试'}}</view>
+  </view>
+
+  <view wx:if="{{localError}}" class="problem status">{{localError}}</view>
+  <view class="history-head">
+    <view class="heading">测试历史</view>
+    <button class="secondary" bindtap="copyAll" disabled="{{!history.length}}">复制全部结果</button>
+  </view>
+  <view wx:if="{{!history.length}}" class="muted">暂无测试记录</view>
+  <view wx:for="{{history}}" wx:for-item="record" wx:key="id" class="card panel">
+    <view class="group-title">{{record.date}} · 雅加达</view>
+    <view class="history-route">A. 手机直连</view>
+    <template is="results" data="{{rows: record.phone}}"/>
+    <view class="history-route">B. 云函数转发</view>
+    <view wx:if="{{record.cloud.error}}" class="problem body-text">云函数不可用 · {{record.cloud.error}}</view>
+    <template wx:else is="results" data="{{rows: record.cloud.rows}}"/>
+  </view>
+</view>
