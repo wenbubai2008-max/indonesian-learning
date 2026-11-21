@@ -1,0 +1,298 @@
+{
+  "date": "2026-11-21",
+  "session": "am",
+  "time": "08:00",
+  "day": 92,
+  "title": "08:00 早课｜Bukan dari Kami · 不是我们发的",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "transfer"
+  },
+  "story": {
+    "series": "Toko Keripik Bu Narti · 纳尔蒂阿姨的薯片网店",
+    "episode": 5,
+    "previously_cn": "上集：约斯师傅的摩托车半路抛锚，网约摩的司机抄近路，香蕉片总算在两点前送到。拉卡打开店铺的 Instagram，却发现顾客评论被几十条网赌广告淹没了。",
+    "next_cn": "下集：一家从没听说过的公司一下要订五百包，还要求先发货、月底再付款——这是大单，还是又一个骗局？"
+  },
+  "vocab": [
+    {
+      "word": "ganjel",
+      "display": "ganjel",
+      "audio_text": "ganjel",
+      "cn": "心里有点卡；觉得哪里不对劲；有件事没说开（口语）",
+      "en": "(colloq.) something feels off; nagging feeling",
+      "root": "ganjal",
+      "root_cn": "垫块；楔子（塞在下面卡住的东西）",
+      "formation": "ganjel 是 ganjal 的雅加达口语读法。标准语动词 mengganjal（meN- + ganjal）：本义“垫住、卡住”（mengganjal pintu 用东西把门抵住），引申为“（心里）有疙瘩、不踏实”。口语常见搭配：ada yang ganjel（有点不对劲）、rasanya ganjel（感觉卡着）、masih ganjel di hati（心里还有疙瘩）。",
+      "example": "Tawarannya kedengarannya sempurna, tapi rasanya masih ada yang ganjel.",
+      "example_cn": "这个报价听起来很完美，可总觉得还有哪里不对劲。",
+      "synonym_note": "ganjel 说的是“心里卡着、说不上来哪里不对”，常用来表达怀疑或心里有疙瘩；aneh 是“奇怪”，说事情本身怪；nggak enak hati 偏“过意不去、不好意思”。口语说法：ada yang ganjel；正式场合、书面说 ada yang mengganjal（Ada hal yang masih mengganjal di hati saya）。",
+      "usage_note": "复习词：先遮住中文回想意思，再看拉卡看到那条“账单”评论时心里为什么卡住。",
+      "is_oral_new": false
+    },
+    {
+      "word": "komentar",
+      "display": "komentar",
+      "audio_text": "komentar",
+      "cn": "评论；留言；意见",
+      "en": "comment",
+      "root": "komentar",
+      "root_cn": "评论（外来词）",
+      "formation": "komentar 是外来词，本身就是词根。派生：berkomentar（发表评论）、mengomentari（评论某事/某人：mengomentari foto itu）、komentator（解说员、评论员）。常见搭配：kolom komentar（评论区）、komentar negatif（差评式留言）、balas komentar（回复评论）、hapus komentar（删除评论）。",
+      "example": "Banyak komentar bilang sambalnya lezat, tapi kemasannya kurang rapi.",
+      "example_cn": "很多评论说辣椒酱好吃，可是包装不够整齐。",
+      "synonym_note": "komentar 指任何留言、评论，社交媒体帖子下面的都叫 komentar；ulasan 是买完东西后写的“商品评价”（ulasan bintang lima 五星好评），网店里常说 review 或 ulasan。日常聊天“komentar bilang …”（评论说……）很常见。",
+      "usage_note": "复习词：先回想意思，再看店铺评论区里出了什么事。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ngirit",
+      "display": "ngirit",
+      "audio_text": "ngirit",
+      "cn": "省着花；节省开支（口语）",
+      "en": "(colloq.) to save money; to economize",
+      "root": "irit",
+      "root_cn": "节省的；省（油、钱）",
+      "formation": "口语形 ngirit 来自 meN- + irit（标准形 mengirit，日常很少说）。irit 是形容词“省”：motor ini irit bensin（这辆摩托省油）。常见说法：lagi ngirit（正在省钱）、ngirit ongkos（省路费/运费）、ngirit buat …（为了……省钱）。",
+      "example": "Bulan ini aku lagi ngirit, jadi makan siang bawa bekal dari rumah.",
+      "example_cn": "这个月我在省钱，所以午饭从家里带便当。（aku = saya，lagi = sedang）",
+      "synonym_note": "ngirit 是口语“省着花”；标准语说 berhemat（Kita harus berhemat），形容东西省说 hemat 或 irit（hemat listrik、irit bensin 都可以）。口语说法：lagi ngirit（= sedang berhemat），朋友、家人之间说；正式通知、文章里用 berhemat。",
+      "everyday": "日常说 lagi ngirit；正式、书面说 berhemat",
+      "usage_note": "复习词：先回想意思，再看纳尔蒂阿姨为什么不花钱请人管账号。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pribadi",
+      "display": "pribadi",
+      "audio_text": "pribadi",
+      "cn": "个人的；私人的；个人",
+      "en": "personal; private",
+      "root": "pribadi",
+      "root_cn": "个人；本人",
+      "formation": "pribadi 是词根，可作形容词放在名词后：data pribadi（个人信息）、urusan pribadi（私事）、pesan pribadi（私信）、mobil pribadi（私家车）。派生：kepribadian（性格、人格）、secara pribadi（以个人身份、私下）。",
+      "example": "Untuk alamat dan nomor HP, kita lanjut lewat pesan pribadi aja, ya, Kak.",
+      "example_cn": "地址和手机号的事，我们私信里接着说吧，亲。（aja = saja）",
+      "synonym_note": "pribadi 强调“属于个人、不公开”（data pribadi）；sendiri 是“自己”（mobil saya sendiri 我自己的车），不说 data sendiri 表示“个人信息”。“私信”日常常说 DM 或 japri（= jalur pribadi）：Japri aja, Kak。",
+      "everyday": "“私信”日常多说 DM 或 japri；pesan pribadi 在客服、通知里常见",
+      "usage_note": "复习词：先回想意思，再看老顾客苏辛塔女士是怎么联系店铺的。",
+      "is_oral_new": false
+    },
+    {
+      "word": "tagihan",
+      "display": "tagihan",
+      "audio_text": "tagihan",
+      "cn": "账单；应付款",
+      "en": "bill; invoice amount due",
+      "root": "tagih",
+      "root_cn": "催款；要求付款",
+      "formation": "tagih + -an → tagihan（被要求付的钱、账单）。同词根：menagih（催款、讨债：menagih utang）、ditagih（被催款）、penagih（催款的人）。常见搭配：tagihan listrik（电费单）、tagihan kartu kredit（信用卡账单）、bayar tagihan（付账单）、tagihan jatuh tempo（账单到期）。",
+      "example": "Tagihan listrik bulan ini naik, soalnya AC nyala terus.",
+      "example_cn": "这个月电费单涨了，因为空调一直开着。（nyala = menyala）",
+      "synonym_note": "tagihan 是“该付的钱、账单”，水电、网费、信用卡都说 tagihan；和下一张 invoice 是一对近义词：invoice 多指商家开给客户的正式付款单。付完钱拿到的“收据”是 kwitansi 或 nota，别混。口语说法：日常也说 bayar tagihan，商家口语常说 nagih（= menagih）：Pemasoknya udah nagih terus。",
+      "usage_note": "复习词：先回想意思，再看那条可疑评论要拉卡付什么。",
+      "is_oral_new": false
+    },
+    {
+      "word": "invoice",
+      "display": "invoice",
+      "audio_text": "invoice",
+      "cn": "发票；账单（商业往来）",
+      "en": "invoice",
+      "root": "invoice",
+      "root_cn": "发票；账单（英语借词）",
+      "formation": "invoice 是英语借词，印尼语里照原样拼写，读音接近 /in-vois/。正式印尼语对应词是 faktur（faktur pajak 增值税发票）。常见搭配：kirim invoice（发送发票）、buat invoice / bikin invoice（开发票）、nomor invoice（发票号）、invoice resmi（正式发票）。",
+      "example": "Setelah pembayaran masuk, kami kirim invoice ke email Bapak supaya Bapak bisa mengetahui rincian biayanya.",
+      "example_cn": "款项到账后，我们会把发票发到您的邮箱，方便您了解费用明细。",
+      "synonym_note": "invoice 是商家开出的正式付款单，写着商品、数量、金额和付款方式；tagihan 意思更广，生活里的账单都叫 tagihan，商业往来里 invoice 也常被叫作 tagihan，两者常可互指。faktur 是正式说法，税务、会计文件里常见。",
+      "everyday": "网店、公司日常都说 invoice；faktur 偏正式，多见于税务、会计文件",
+      "usage_note": "复习词：和上一张 tagihan 一起记，再看纳尔蒂阿姨说正式的发票从哪里来。",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "ganjel",
+    "komentar",
+    "ngirit",
+    "pribadi",
+    "tagihan",
+    "invoice"
+  ],
+  "review_vocab": [
+    "nyalakan",
+    "menyalakan",
+    "bunyi",
+    "mengantar",
+    "sungkan"
+  ],
+  "sentences": [
+    {
+      "text": "Kalau mau pesan dalam jumlah besar, silakan kirim pesan pribadi supaya kami bisa langsung buatkan invoice.",
+      "cn": "如果要大量订购，请发私信给我们，我们好直接开发票。"
+    },
+    {
+      "text": "Jangan lupa nyalakan notifikasi email toko, biar tagihan dari pemasok nggak kelewat.",
+      "cn": "别忘了打开店铺邮箱的通知，免得漏掉供应商的账单。（biar = supaya，nggak = tidak，kelewat = terlewat）"
+    },
+    {
+      "text": "Hari ini Pak Yos mengantar paket pakai motor pinjaman, soalnya motornya masih di bengkel.",
+      "cn": "今天约斯师傅骑借来的摩托车送包裹，因为他自己的车还在修车铺。"
+    },
+    {
+      "text": "Penipu selalu cari peluang, jadi jangan pernah bayar tagihan lewat link di kolom komentar.",
+      "cn": "骗子总在找机会，所以千万别通过评论区里的链接付账单。"
+    },
+    {
+      "text": "Ngirit boleh, asal jangan sampai kebablasan dan bikin pelanggan kecewa.",
+      "cn": "省钱可以，只要别省过头、让顾客失望就行。"
+    }
+  ],
+  "reading": {
+    "title": "Bukan dari Kami · 不是我们发的",
+    "text": "Raka terus menggulir kolom komentar. Ada empat puluh lebih promosi judi online, semuanya dari akun palsu. Belum selesai dia membaca, HP-nya bunyi. Bu Sinta, pelanggan lama, mengirim pesan pribadi: \"Mas, kok tokonya ikut promosi judi? Saya jadi ragu mau pesan lagi.\" Raka bertanya ke Bu Narti apakah perlu bayar jasa admin. \"Nggak usah, kita lagi ngirit,\" jawab Bu Narti. \"Hapus satu-satu, terus nyalakan filter kata.\" Sambil menghapus, Raka melihat satu komentar yang aneh: \"Tagihan iklan toko Anda belum dibayar. Bayar lewat link ini.\" Dia hampir mengekliknya, tapi rasanya ada yang ganjel. Kenapa tagihan dikirim lewat komentar? \"Itu penipuan,\" kata Bu Narti. \"Invoice resmi selalu masuk ke email toko.\" Raka sungkan mengaku bahwa jarinya sudah di atas link itu. Setelah Raka menyalakan filter kata, komentar baru yang berisi \"slot\" tersembunyi. Bu Narti menulis pengumuman bahwa promosi itu bukan dari toko. Bu Sinta membalas dengan stiker jempol. Sorenya masuk pesanan baru: lima ratus bungkus, dari perusahaan yang belum pernah mereka dengar.",
+    "cn": "拉卡一直往下翻评论区。网赌广告有四十多条，全是假账号发的。还没看完，他的手机就响了。老顾客苏辛塔女士发来一条私信：“小哥，怎么你们店也打网赌广告？我都不太敢再下单了。”拉卡问纳尔蒂阿姨，要不要花钱请人来管账号。“不用，我们正在省钱。”纳尔蒂阿姨回答，“一条一条删，然后把关键词过滤打开。”删着删着，拉卡看到一条奇怪的评论：“您店铺的广告账单尚未支付。请通过此链接付款。”他差点就点进去了，可总觉得哪里不对劲。账单怎么会通过评论发过来？“这是诈骗。”纳尔蒂阿姨说，“正式的发票都会发到店铺邮箱。”拉卡不好意思承认，自己的手指刚才已经放在那个链接上了。拉卡打开关键词过滤后，带“slot”的新评论都被隐藏了。纳尔蒂阿姨发了一条公告，说明那些广告不是店铺发的。苏辛塔女士回了一个点赞表情。傍晚，店里来了一笔新订单：五百包，下单的是一家他们从没听说过的公司。"
+  },
+  "quiz": [
+    {
+      "question": "Menurut cerita hari ini, kenapa Raka akhirnya tidak membayar \"tagihan iklan\" di kolom komentar itu?",
+      "options": [
+        "Uang toko tidak cukup, karena Bu Narti sedang ngirit.",
+        "Raka merasa ada yang aneh, lalu Bu Narti bilang invoice resmi selalu masuk ke email toko.",
+        "Bu Sinta memberi tahu Raka lewat pesan pribadi bahwa link itu penipuan.",
+        "Filter kata sudah menghapus komentar itu sebelum Raka sempat membacanya."
+      ],
+      "answer_index": 1,
+      "answer": "Raka merasa ada yang aneh, lalu Bu Narti bilang invoice resmi selalu masuk ke email toko.",
+      "explain": "课文里拉卡差点点链接，但觉得 ada yang ganjel（账单怎么会从评论里来？）；纳尔蒂阿姨确认这是诈骗，并说正式发票都发到店铺邮箱。A 里 ngirit 说的是不请人管账号，和这笔“账单”无关；C 苏辛塔女士的私信是问网赌广告，没提链接；D 过滤是之后才打开的，拉卡已经看到了那条评论。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "我不好意思跟阿姨说，其实我刚才差点就点了那个链接。",
+      "target": "sungkan",
+      "target_cn": "不好意思（开口）",
+      "options": [
+        "Aku sungkan bilang ke Tante kalau tadi aku sudah klik link itu.",
+        "Aku sungkan bilang ke Tante kalau tadi aku hampir klik link itu.",
+        "Aku nggak sungkan bilang ke Tante kalau tadi aku hampir klik link itu.",
+        "Aku sungkan bilang ke Tante supaya tadi aku hampir klik link itu."
+      ],
+      "answer_index": 1,
+      "answer": "Aku sungkan bilang ke Tante kalau tadi aku hampir klik link itu.",
+      "point": "sungkan / nggak sungkan；hampir（差点）和 sudah（已经）；口语里 bilang … kalau …（说……这件事）和 supaya（为了）",
+      "explain": "“不好意思说”是 sungkan bilang，“差点点了”是 hampir klik，所以 B 对。A 的 sudah klik 是“已经点了”，事情就变了；C 的 nggak sungkan 是“不觉得不好意思”，意思相反；D 的 supaya 是“为了”，这里要说的是“说出……这件事”，口语用 kalau（正式用 bahwa）。说“不好意思、难为情”也常说 malu，但 sungkan 更偏“因为对方是长辈、上级而不好开口”，这里对阿姨正合适。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "这个月的账单还没付，可是明天就到期了。",
+      "target": "tagihan",
+      "target_cn": "账单",
+      "options": [
+        "Tagihan bulan ini sudah dibayar, padahal besok sudah jatuh tempo.",
+        "Tagihan bulan ini belum membayar, padahal besok sudah jatuh tempo.",
+        "Tagihan bulan ini belum dibayar, padahal besok sudah jatuh tempo.",
+        "Tagihan bulan ini belum dibayar, karena besok sudah jatuh tempo."
+      ],
+      "answer_index": 2,
+      "answer": "Tagihan bulan ini belum dibayar, padahal besok sudah jatuh tempo.",
+      "point": "belum / sudah；dibayar（被付）和 membayar（去付）；padahal（可是）和 karena（因为）",
+      "explain": "账单是“被付”的东西，用被动 dibayar；“还没”是 belum；“可是明天就到期”表示和前面形成反差，用 padahal，所以 C 对。A 的 sudah dibayar 是“已经付了”，和题意相反；B 的 belum membayar 让“账单”自己去付钱，主动被动用反了；D 的 karena 是“因为”，因果关系说不通。口语里也可以说 Tagihan bulan ini belum dibayar, padahal besok udah jatuh tempo（udah = sudah）。"
+    }
+  ],
+  "output": {
+    "task": "你是拉卡。给老顾客苏辛塔女士回私信（3 句）：先道歉，用 Ternyata 说明网赌广告其实是谁发的；再说店里已经做了什么处理；最后用 Kalau …, kami bisa … 提出一个让她放心的办法。按骨架填空，用上 menyalakan、komentar 和 pribadi。",
+    "frame": "Mohon maaf, Bu Sinta. Ternyata promosi judi itu dikirim oleh …… , bukan dari kami. Tadi kami sudah menghapus semuanya dan menyalakan …… di kolom komentar. Kalau Ibu masih ragu, kami bisa …… lewat pesan pribadi.",
+    "reference_answer": "Mohon maaf, Bu Sinta. Ternyata promosi judi itu dikirim oleh akun-akun palsu, bukan dari kami. Tadi kami sudah menghapus semuanya dan menyalakan filter kata di kolom komentar. Kalau Ibu masih ragu, kami bisa konfirmasi setiap pesanan Ibu langsung lewat pesan pribadi.",
+    "reference_cn": "非常抱歉，苏辛塔女士。原来那些网赌广告是假账号发的，不是我们发的。我们刚才已经全部删掉，并在评论区打开了关键词过滤。如果您还不放心，我们可以通过私信直接和您确认每一笔订单。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 打开（命令：…… lampunya!）、打开（叙述：Raka …… filter kata）、响声、送（包裹）、不好意思开口；再说出 心里卡着、评论、省着花、私人的、账单、发票。卡住的词回看词卡再说一遍。",
+    "易混词：tagihan（该付的钱、账单：tagihan listrik）vs invoice（商家开的正式付款单：kirim invoice），商业往来里常可互指；付完拿到的收据是 kwitansi。nyalakan（命令、口语：Nyalakan filter kata）vs menyalakan（完整动词，叙述用：Raka menyalakan filter kata），同一个词根 nyala。各说一句。",
+    "重点复习词 sungkan：因为对方是长辈、上级而不好意思开口，常说 sungkan bilang、sungkan minta、nggak usah sungkan（别客气）。用 sungkan bilang ke … 说一句你自己不好意思开口的经历。"
+  ],
+  "lesson_focus": {
+    "words": [
+      "ganjel",
+      "tagihan",
+      "invoice"
+    ],
+    "patterns": [
+      {
+        "pattern": "Ternyata …",
+        "cn": "原来……",
+        "function": "explain-cause",
+        "example": "Ternyata promosi judi itu dikirim oleh akun-akun palsu, bukan dari kami.",
+        "example_cn": "原来那些网赌广告是假账号发的，不是我们发的。"
+      },
+      {
+        "pattern": "Jangan lupa …, biar … nggak …",
+        "cn": "别忘了……，免得……（口语）",
+        "example": "Jangan lupa nyalakan notifikasi email toko, biar tagihan dari pemasok nggak kelewat.",
+        "example_cn": "别忘了打开店铺邮箱的通知，免得漏掉供应商的账单。"
+      }
+    ]
+  },
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "打开（命令、口语：…… lampunya!）",
+        "id": "nyalakan"
+      },
+      {
+        "cn": "打开；点燃（完整动词，叙述用）",
+        "id": "menyalakan"
+      },
+      {
+        "cn": "（机器、手机的）响声；响",
+        "id": "bunyi"
+      },
+      {
+        "cn": "送；陪送；送到",
+        "id": "mengantar"
+      },
+      {
+        "cn": "（对长辈、上级）不好意思开口",
+        "id": "sungkan"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "tagihan",
+            "cn": "账单；应付款"
+          },
+          {
+            "id": "invoice",
+            "cn": "发票；正式付款单"
+          }
+        ],
+        "note": "tagihan 是该付的钱，生活里水电、信用卡都说 tagihan；invoice 多指商家开给客户、写明商品和金额的正式付款单；商业往来里两者常可互指。"
+      },
+      {
+        "items": [
+          {
+            "id": "nyalakan",
+            "cn": "打开（命令）"
+          },
+          {
+            "id": "menyalakan",
+            "cn": "打开（叙述）"
+          }
+        ],
+        "note": "同一个词根 nyala（亮着、开着）：叫别人做时常用去掉 me- 的 nyalakan（Nyalakan lampunya!），叙述某人做了什么用 menyalakan（Raka menyalakan filter）；口语还说 nyalain。"
+      },
+      {
+        "items": [
+          {
+            "id": "ngirit",
+            "cn": "省着花（口语）"
+          },
+          {
+            "id": "hemat",
+            "cn": "节省；省"
+          }
+        ],
+        "note": "ngirit 是口语，多说人省钱（lagi ngirit）；hemat / berhemat 是标准说法，正式场合用；说东西省电省油 hemat 和 irit 都可以。"
+      }
+    ]
+  }
+}
