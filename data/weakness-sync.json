@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-21T13:55:19.833Z",
+  "updated_at": "2026-11-21T14:01:22.875Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -8662,8 +8662,11 @@
     "kehadiran": {
       "word": "kehadiran",
       "status": "active",
-      "updated_at": "2026-11-11T10:37:21.894Z",
+      "updated_at": "2026-11-21T14:00:16.302Z",
       "display": "kehadiran",
+      "cn": "出席；到场；在场",
+      "root": "hadir",
+      "root_cn": "出席；到场",
       "last_review": "2026-11-11T10:37:21.835Z",
       "reasons": [
         "memory_fuzzy"
@@ -15823,9 +15826,9 @@
     "kesepakatan": {
       "word": "kesepakatan",
       "status": "active",
-      "updated_at": "2026-11-21T13:55:09.350Z",
+      "updated_at": "2026-11-21T14:01:12.629Z",
       "display": "kesepakatan",
-      "cn": "协议；共识；说好的条件",
+      "cn": "协议；共识",
       "root": "sepakat",
       "root_cn": "同意；达成一致",
       "last_wrong": "2026-11-21T13:55:09.268Z",
