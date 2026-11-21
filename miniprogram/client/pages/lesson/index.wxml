@@ -12,7 +12,15 @@
       <view wx:if="{{section.subtitle}}" class="section-subtitle">{{section.subtitle}}</view>
       <block wx:for="{{section.entries}}" wx:key="key">
         <view wx:if="{{item.group}}" class="entry-group">{{item.group}}</view>
-        <view class="entry {{item.highlight ? 'focus-entry' : ''}} {{item.series ? 'series' : ''}} {{item.storyNote ? 'story-note' : ''}} {{item.reading ? 'reading-entry' : ''}}">
+        <view wx:if="{{section.focus}}" class="focus-card {{item.example ? 'focus-pattern' : 'focus-word'}}">
+          <view>
+            <text class="focus-term">{{item.body}}</text><text wx:if="{{item.cn && item.example}}" class="focus-meaning">{{item.cn}}</text>
+          </view>
+          <view wx:if="{{item.cn && !item.example}}" class="focus-meaning">{{item.cn}}</view>
+          <view wx:if="{{item.example}}" class="focus-example body-text">{{item.example}}</view>
+          <view wx:if="{{item.exampleCn}}" class="focus-example-cn body-text">{{item.exampleCn}}</view>
+        </view>
+        <view wx:else class="entry {{item.vocabularyNumber ? 'vocab-entry' : ''}} {{item.highlight ? 'focus-entry' : ''}} {{item.series ? 'series' : ''}} {{item.storyNote ? 'story-note' : ''}} {{item.reading ? 'reading-entry' : ''}}">
           <view wx:if="{{item.vocabularyNumber}}" class="word-heading">
             <text class="word-number">{{item.vocabularyNumber}}</text>
             <text class="word">{{item.body}}</text>
@@ -36,10 +44,10 @@
             <view wx:if="{{item.cn && (!item.foldTranslation || translations[item.key])}}" class="body-text translation {{item.reading ? 'reading-translation' : ''}}">{{item.cn}}</view>
             <view wx:if="{{item.english}}" class="muted">{{item.english}}</view>
             <view wx:if="{{item.everyday}}" class="muted">日常常说 · {{item.everyday}}</view>
-            <view wx:if="{{item.example}}" class="body-text example {{item.exampleLabel ? 'sentence-frame' : ''}}">
+            <view wx:if="{{item.example}}" class="example {{item.exampleLabel ? 'sentence-frame' : ''}}">
               <view wx:if="{{item.exampleLabel}}" class="muted">{{item.exampleLabel}}</view>
-              {{item.example}}
-              <view wx:if="{{item.exampleCn}}" class="translation">{{item.exampleCn}}</view>
+              <view class="body-text">{{item.example}}</view>
+              <view wx:if="{{item.exampleCn}}" class="body-text translation">{{item.exampleCn}}</view>
             </view>
             <view wx:if="{{item.root}}" class="root muted"><text>词根</text> <text class="root-word">{{item.root}}</text> {{item.rootCn}}</view>
             <view wx:if="{{item.hint}}" class="body-text muted">{{item.hint}}</view>
