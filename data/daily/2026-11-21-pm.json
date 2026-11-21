@@ -1,0 +1,362 @@
+{
+  "date": "2026-11-21",
+  "session": "pm",
+  "time": "18:00",
+  "day": 92,
+  "title": "18:00 晚课｜Air Minum Ketinggalan di Dapur · 矿泉水落在了厨房",
+  "write_status": "lesson_complete",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "transfer"
+  },
+  "new_words": [],
+  "vocab": [
+    {
+      "word": "bengkak",
+      "display": "bengkak",
+      "audio_text": "bengkak",
+      "cn": "肿；肿起来的",
+      "en": "swollen",
+      "root": "bengkak",
+      "root_cn": "肿",
+      "formation": "基础形容词，不拆词缀。同词根：membengkak（肿起来；也比喻费用、人数“膨胀、超出”：biayanya membengkak）、pembengkakan（肿胀；超支）。常见搭配：kaki / mata / pergelangan kaki bengkak（脚 / 眼睛 / 脚踝肿了）、agak bengkak（有点肿）、bengkaknya sudah kempes（消肿了）、dikompres pakai es（用冰敷）。",
+      "example": "Kakinya pegal dan agak bengkak habis jalan seharian, jadi malam ini dia berendam air hangat.",
+      "example_cn": "走了一整天，他的脚又酸又有点肿，所以今晚他用热水泡了泡脚。（habis = setelah）",
+      "synonym_note": "pegal 是“酸、累得发胀”，是感觉，外表看不出来；bengkak 是“肿”，看得见比平时大、鼓起来；memar 是“淤青”，皮下出血发青。扭到脚常常是又 bengkak 又 memar。说费用“超出预算”用 membengkak（Biaya renovasinya membengkak），不用 bengkak。口语说法：bengkak 日常就这么说，没有别的常用口语形。",
+      "usage_note": "此前学过的词，今晚复习。小守门员 Raffi 摔了一跤，脚踝 agak bengkak，Pak Dodi 要买冰块给他冰敷。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "haus",
+      "display": "haus",
+      "audio_text": "haus",
+      "cn": "口渴",
+      "en": "thirsty",
+      "root": "haus",
+      "root_cn": "口渴",
+      "formation": "基础形容词，不拆词缀。同词根：kehausan（渴坏了，强调受渴的状态：Anak-anak kehausan di lapangan）。常见搭配：haus banget（渴死了）、cepat haus / gampang haus（容易渴）、pada haus semua（大家都渴了，口语）、menghilangkan haus（解渴）。比喻用法：haus ilmu（渴求知识）、haus perhatian（渴望关注）。",
+      "example": "Siang-siang begini gampang haus. Es kelapa muda ini menyegarkan banget.",
+      "example_cn": "大中午的特别容易渴。这杯冰椰子水真解渴。（banget = sekali）",
+      "synonym_note": "haus 是一般的“渴”；kehausan 是“渴坏了、因为没水喝而受罪”，语气更重。和 lapar（饿）相对：lapar dan haus。注意别和 aus 混：aus 是“磨损”（ban mobilnya sudah aus）。口语说法：haus 日常就这么说；说一群人都渴了，口语常用 pada：Anak-anak pada haus。",
+      "usage_note": "此前学过的词，今晚复习。孩子们刚踢完第一场，pada haus semua，可水没送到。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "istimewa",
+      "display": "istimewa",
+      "audio_text": "istimewa",
+      "cn": "特别的；特殊的；出众的",
+      "en": "special; exceptional",
+      "root": "istimewa",
+      "root_cn": "特别",
+      "formation": "基础形容词，不拆词缀。同词根：keistimewaan（特色、过人之处；特权）、mengistimewakan（特殊对待、偏爱）。常见搭配：paket istimewa / menu istimewa（特别套餐 / 招牌菜）、tamu istimewa（贵宾）、hari istimewa（特别的日子）、rasanya istimewa（味道特别好）、tidak ada yang istimewa（没什么特别的）。",
+      "example": "Nasi liwet buatan nenek wangi daun salam, rasanya istimewa banget.",
+      "example_cn": "奶奶做的椰香饭有香叶的香味，味道特别好。",
+      "synonym_note": "khusus 是“专门的、特定的”，强调“给某个对象或用途”（harga khusus untuk anggota）；istimewa 强调“比一般的好、出众”。spesial 日常口语很常用，意思接近 istimewa（menu spesial）。口语说法：日常常说 spesial；istimewa 在菜单、套餐名、正式表扬里常见。",
+      "usage_note": "此前学过的词，今晚复习。Pak Dodi 订的午餐叫 Paket Istimewa：米饭、烤鸡、蔬菜和水果。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常常说 spesial（menu spesial、paket spesial）；istimewa 多见于菜单名、套餐名和正式场合"
+    },
+    {
+      "word": "jarak",
+      "display": "jarak",
+      "audio_text": "jarak",
+      "cn": "距离；间隔",
+      "en": "distance; gap",
+      "root": "jarak",
+      "root_cn": "距离；间隔",
+      "formation": "基础名词，不拆词缀。同词根：berjarak（相隔：rumahnya berjarak dua kilo dari sini）、menjaga jarak（保持距离）。常见搭配：jarak dari A ke B、jaraknya sekitar … kilo、jarak dekat / jauh、jarak tempuh（实际路程，上一节晚课复习过）、jarak waktu（时间间隔）。",
+      "example": "Jarak Jakarta ke Bali lumayan jauh, tapi naik pesawat cuma terbang sekitar dua jam.",
+      "example_cn": "雅加达到巴厘岛距离挺远，可坐飞机只要飞两个小时左右。（cuma = hanya）",
+      "synonym_note": "jarak 是两点之间的“距离”，也可以说时间或关系上的“间隔、距离”（jarak umur mereka lima tahun）；jauh / dekat 是形容词“远 / 近”，回答“远不远”；jarak tempuh 专指实际要走的路程。问“多远”可以说 Jaraknya berapa kilo? 或 Jauh nggak?。口语说法：日常常直接说 jaraknya、deket / jauh；kilo = kilometer。",
+      "usage_note": "此前学过的词，今晚复习。快递员已经去送别的单了，从厨房到球场 jaraknya 大约十五公里，补送最快也要一小时。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常多说 jaraknya … kilo，或直接说 deket / jauh"
+    },
+    {
+      "word": "mengeluh",
+      "display": "mengeluh",
+      "audio_text": "mengeluh",
+      "cn": "抱怨；（说自己）不舒服",
+      "en": "to complain",
+      "root": "keluh",
+      "root_cn": "抱怨；叹息",
+      "formation": "meN- + keluh → mengeluh（k 脱落）。同词根：keluhan（抱怨；投诉；症状：keluhan pelanggan、ada keluhan apa?）、ngeluh（口语）。常见搭配：mengeluh soal / tentang …（抱怨……）、mengeluh karena …（因为……而抱怨）、mengeluh sakit kepala（说头疼）、jarang mengeluh（很少抱怨）。",
+      "example": "Tetangga sebelah mengeluh karena musik kami terlalu keras tadi malam.",
+      "example_cn": "隔壁邻居抱怨昨晚我们的音乐太吵了。",
+      "synonym_note": "mengeluh 是把不满或不舒服说出来，可以只是发牢骚，不一定找谁解决（Dia mengeluh capek）；komplain 是向商家、客服正式“投诉、要求处理”（komplain ke toko）；keluhan 是名词，客服说“顾客投诉”常用 keluhan pelanggan。口语说法：日常常说 ngeluh（Jangan ngeluh terus）；新闻、病历、正式说明用 mengeluh。",
+      "usage_note": "此前学过、最近还常错的词，今晚复习。孩子们踢完第一场没水喝，开始 mengeluh 口渴。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常多说 ngeluh；mengeluh 常见于叙述、新闻和看病时说症状"
+    },
+    {
+      "word": "perkirakan",
+      "display": "perkirakan",
+      "audio_text": "perkirakan",
+      "cn": "估计；预计（常用于 saya perkirakan … / 指令 Perkirakan …）",
+      "en": "to estimate",
+      "root": "kira",
+      "root_cn": "猜测；估量",
+      "formation": "per- + kira + -kan → perkirakan，完整的主动形是 memperkirakan（估计、预计），被动是 diperkirakan（预计……：Hujan diperkirakan turun sore ini）。perkirakan 这个形式用在“代词 + 动词”的句子里（Saya perkirakan …、Kami perkirakan …）和指令里（Perkirakan biayanya!）。同词根：kira（以为）、kira-kira（大约）、perkiraan（估计、预测）。",
+      "example": "Saya perkirakan renovasi dapurnya selesai dua minggu lagi.",
+      "example_cn": "我估计厨房翻修还要两周才完工。",
+      "synonym_note": "perkirakan / memperkirakan 是根据情况“估计、预计”一个数量或时间；menduga 是“猜测、怀疑”某件事（Saya menduga dia lupa）；menebak 是“猜”答案（tebak-tebakan）。说“大约”用 kira-kira 或 sekitar。口语说法：日常常说 kira-kira …、kayaknya …（Kayaknya sejam lagi baru sampai）；客服、通知里用 diperkirakan、saya perkirakan 显得更有根据。",
+      "usage_note": "此前学过、最近还常错的词，今晚复习。客服 Mbak Yuni 说补送路程远：saya perkirakan paling cepat sejam lagi baru sampai。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常多说 kira-kira / kayaknya；通知、客服说明里常用 diperkirakan、saya perkirakan"
+    },
+    {
+      "word": "kesepakatan",
+      "display": "kesepakatan",
+      "audio_text": "kesepakatan",
+      "cn": "协议；共识；说好的条件",
+      "en": "agreement; deal",
+      "root": "sepakat",
+      "root_cn": "同意；达成一致",
+      "formation": "ke- + sepakat + -an → kesepakatan。同词根：sepakat（同意、意见一致：Kami sepakat …）、menyepakati（就……达成一致）、disepakati（被商定）。常见搭配：mencapai kesepakatan（达成协议）、menurut / sesuai kesepakatan（按说好的）、melanggar kesepakatan（违约）、kesepakatan bersama（共同商定）。",
+      "example": "Akhirnya kami mencapai kesepakatan: saya boleh mengangsur uang sewa dua kali.",
+      "example_cn": "最后我们谈妥了：房租我可以分两次付。",
+      "synonym_note": "kesepakatan 是双方商量后“说好的条件、共识”，口头说好也算；perjanjian 偏“书面协议、合同”（surat perjanjian sewa）；persetujuan 是“同意、批准”，常指一方点头（minta persetujuan atasan）。sepakat 是动词/形容词“同意”，不能放在 menurut 后面当名词用。口语说法：日常常说 udah deal、sesuai yang dijanjiin；正式说明、投诉时用 kesepakatan。",
+      "usage_note": "此前学过的词，今晚换到订餐投诉里用：Menurut kesepakatan kemarin，矿泉水本该一起送来。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常常说 udah deal / kan udah janji；kesepakatan 多用在说明条件、投诉和谈判里"
+    },
+    {
+      "word": "kwitansi",
+      "display": "kwitansi",
+      "audio_text": "kwitansi",
+      "cn": "收据；收款凭证",
+      "en": "receipt",
+      "root": "kwitansi",
+      "root_cn": "收据（外来词）",
+      "formation": "外来词（来自荷兰语 kwitantie），不拆词缀。规范拼写是 kuitansi，日常和店铺里更常写 kwitansi。常见搭配：minta kwitansi（要收据）、kwitansi pembayaran（付款收据）、foto kwitansinya（收据的照片）、kwitansi untuk reimburse / klaim（报销用的收据）。",
+      "example": "Semua pengeluaran kantor saya catat, kwitansinya saya simpan di map.",
+      "example_cn": "办公室的每笔开支我都记下来，收据都放在文件夹里。（catat = mencatat）",
+      "synonym_note": "kwitansi 是收款方写给付款方的正式收据，常盖章、写金额，报销时用；struk 是收银机打印的小票；nota 是小店手写或打印的单据，也常用来报销。口语说法：日常买东西多说 struk 或 nota；要正式收据时说 minta kwitansi。",
+      "usage_note": "此前学过的词，今晚换到订餐场景里用：Pak Dodi 去小店买水，把 foto kwitansinya 发给餐饮公司，好让对方退钱。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常买东西多说 struk（打印小票）或 nota（店铺单据）；要报销、要盖章收据时说 kwitansi"
+    }
+  ],
+  "reading": {
+    "text": "Hari Sabtu, tim futsal anak-anak yang dilatih Pak Dodi ikut turnamen di Cibubur. Pagi-pagi Pak Dodi mencatat kehadiran. Lima belas anak datang tepat waktu, jadi tidak ada yang kena hukuman lari keliling lapangan. Untuk makan siang, dia sudah memesan Paket Istimewa dari sebuah katering lewat WhatsApp: nasi, ayam bakar, sayur, buah, dan dua dus air mineral. Kesepakatannya, semua diantar pukul sebelas. Nasi kotaknya memang datang pukul sebelas, tapi air minumnya tidak ada. Padahal cuaca sangat panas dan anak-anak sudah haus setelah pertandingan pertama. Beberapa anak mulai mengeluh. Raffi, kiper tim, juga jatuh dan pergelangan kakinya mulai bengkak. Pak Dodi langsung menelepon admin katering itu.",
+    "cn": "周六，Pak Dodi 带的少儿五人制足球队去 Cibubur 参加比赛。一大早，Pak Dodi 先点名。十五个孩子都准时到了，所以没人被罚绕场跑圈。午饭他已经通过 WhatsApp 在一家餐饮公司订了“特别套餐”：米饭、烤鸡、蔬菜、水果，外加两箱矿泉水。说好的是十一点全部送到。盒饭确实十一点送到了，可水没来。偏偏天气特别热，孩子们踢完第一场已经渴了，有几个孩子开始抱怨。球队的守门员 Raffi 还摔了一跤，脚踝开始肿起来。Pak Dodi 马上给那家餐饮公司的客服打了电话。"
+  },
+  "dialogue": {
+    "title": "Pak Dodi 打电话催餐饮公司：说好的矿泉水没送到",
+    "twist": 5,
+    "lines": [
+      {
+        "speaker": "Pak Dodi",
+        "id": "Halo, Mbak Yuni. Nasi kotaknya udah sampai di lapangan, makasih. Tapi air minumnya nggak ada, ya?",
+        "cn": "喂，Yuni 小姐。盒饭已经送到球场了，谢谢。可是水没有送来，对吧？（udah = sudah，makasih = terima kasih，nggak = tidak）"
+      },
+      {
+        "speaker": "Mbak Yuni",
+        "id": "Waduh, masa, Pak? Sebentar, saya cek dulu pesanannya.",
+        "cn": "哎呀，不会吧？请稍等，我先查一下订单。"
+      },
+      {
+        "speaker": "Pak Dodi",
+        "id": "Menurut kesepakatan kemarin, dua dus air mineral seharusnya ikut dikirim. Anak-anak baru ngelarin pertandingan pertama, pada haus semua.",
+        "cn": "按昨天说好的，两箱矿泉水本该一起送来。孩子们刚踢完第一场，全都渴了。（ngelarin = menyelesaikan，pada … semua = 大家都……）"
+      },
+      {
+        "speaker": "Mbak Yuni",
+        "id": "Iya, Pak, ternyata dusnya ketinggalan di dapur. Mohon maaf banget, Pak.",
+        "cn": "是的，原来那两箱水落在厨房了。真的非常抱歉。（banget = sekali）"
+      },
+      {
+        "speaker": "Pak Dodi",
+        "id": "Bisa dianter sekarang? Ada satu anak yang sampai mual karena kepanasan.",
+        "cn": "现在能送过来吗？有个孩子热得都想吐了。（dianter = diantar）"
+      },
+      {
+        "speaker": "Mbak Yuni",
+        "id": "Itu masalahnya, Pak. Kurir kami udah berangkat ke pesanan lain. Jarak dari dapur ke lapangan sekitar lima belas kilo, jadi saya perkirakan paling cepat sejam lagi baru sampai.",
+        "cn": "问题就在这儿。我们的快递员已经去送别的单了。从厨房到球场大约十五公里，所以我估计最快也要一小时以后才能到。（kilo = kilometer，sejam = satu jam）"
+      },
+      {
+        "speaker": "Pak Dodi",
+        "id": "Sejam? Pertandingan berikutnya mulai setengah jam lagi. Maaf kalau saya cerewet, Mbak, tapi saya udah ngandelin katering ini buat semuanya.",
+        "cn": "一小时？下一场半小时后就开始了。不好意思我话多，可我什么都指望你们这家了。（ngandelin = mengandalkan，buat = untuk）"
+      },
+      {
+        "speaker": "Mbak Yuni",
+        "id": "Nggak apa-apa, Pak, ini memang salah kami. Daripada nunggu, mending Bapak beli air di warung dekat lapangan. Kalau Bapak kirim foto kwitansinya, kami bisa ganti uangnya hari ini juga.",
+        "cn": "没关系，这确实是我们的错。与其干等，不如您在球场附近的小店先买水。如果您把收据照片发过来，我们今天就能把钱退给您。（nunggu = menunggu，mending = lebih baik）"
+      },
+      {
+        "speaker": "Pak Dodi",
+        "id": "Oke, saya beli sekarang. Sekalian es batu, ya, buat kaki Raffi yang agak bengkak. Itu juga diganti, kan?",
+        "cn": "好，我现在就去买。顺便买点冰块，给 Raffi 有点肿的脚冰敷。这个也一起报销，对吧？"
+      },
+      {
+        "speaker": "Mbak Yuni",
+        "id": "Iya, Pak, semuanya kami ganti. Udah saya catat juga: pesanan minggu depan kami kasih bonus es teh buat satu tim.",
+        "cn": "是的，全部都给您报。我也已经记下了：下周的订单我们送全队冰茶。（catat = mencatat，kasih = memberi）"
+      }
+    ],
+    "practice": {
+      "role": "Pak Dodi",
+      "lines": [
+        {
+          "speaker": "Pak Dodi",
+          "id": "Mbak, nasinya udah sampai, tapi air minumnya nggak ada.",
+          "cn": "你好，饭已经到了，可是水没有。"
+        },
+        {
+          "speaker": "Mbak Yuni",
+          "id": "Maaf, Pak. Ternyata airnya ketinggalan di dapur.",
+          "cn": "抱歉。原来水落在厨房了。"
+        },
+        {
+          "speaker": "Pak Dodi",
+          "id": "Menurut kesepakatan, airnya seharusnya ikut dikirim. Anak-anak udah haus.",
+          "cn": "按说好的，水本该一起送来。孩子们已经渴了。"
+        },
+        {
+          "speaker": "Mbak Yuni",
+          "id": "Jaraknya jauh, Pak. Paling cepat sejam lagi.",
+          "cn": "路比较远。最快也要一小时。"
+        },
+        {
+          "speaker": "Pak Dodi",
+          "id": "Saya beli di warung dulu, ya. Nanti diganti, kan?",
+          "cn": "那我先去小店买吧。之后会给我报销，对吧？"
+        },
+        {
+          "speaker": "Mbak Yuni",
+          "id": "Boleh, Pak. Kirim aja foto kwitansinya.",
+          "cn": "可以。把收据照片发过来就行。"
+        }
+      ]
+    }
+  },
+  "rewrite": [
+    {
+      "kind": "twist",
+      "task": "转折应对：你是餐饮公司的客服。顾客 Bu Ana 订了三十份盒饭给家里的聚会，盒饭到了，可配的虾片和辣椒酱没送。快递员已经走远，补送要很久。先道歉并用 Ternyata 说明原因，再用 jarak 解释为什么没法马上补送，最后用本周句型 Kalau …, kami bisa … 给出两个办法，其中一个要请她把 kwitansi 的照片发过来。按句子骨架填空，用 kami / Ibu。",
+      "frame": "Mohon maaf, Bu, ternyata …… ketinggalan di dapur. Jarak dari dapur ke rumah Ibu …… , jadi …… . Kalau Ibu mau, kami bisa …… , atau Ibu beli dulu di warung dan kirim foto kwitansinya.",
+      "reference_answer": "Mohon maaf, Bu, ternyata kerupuk dan sambalnya ketinggalan di dapur. Jarak dari dapur ke rumah Ibu sekitar dua puluh kilo, jadi kalau dikirim ulang baru sampai sejam lagi. Kalau Ibu mau, kami bisa potong harga sepuluh persen, atau Ibu beli dulu di warung dan kirim foto kwitansinya.",
+      "reference_cn": "非常抱歉，原来虾片和辣椒酱落在厨房了。从厨房到您家大约二十公里，所以重新送的话要一小时后才能到。如果您愿意，我们可以给您打九折，或者您先在小店买，再把收据照片发给我们。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "盒饭送到了，水却没来。Pak Dodi 在电话里说：“Menurut ____ kemarin, dua dus air mineral seharusnya ikut dikirim.” 哪项最自然？",
+        "options": [
+          "sepakat",
+          "menyepakati",
+          "kesepakatan",
+          "bersepakat"
+        ],
+        "answer_index": 2,
+        "answer": "kesepakatan",
+        "explain": "menurut 是介词，后面要接名词，menurut kesepakatan kemarin = 按昨天说好的。sepakat 是“同意”（Kami sepakat …），不能单独放在 menurut 后面当名词；menyepakati 是及物动词“商定（某事）”，要接宾语；bersepakat 是“彼此达成一致”的动词，偏书面。口语里也可以说 Kan kemarin udah deal …，但不在选项里。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Raffi 摔倒后，一边的脚踝看起来比另一边鼓了一圈。教练说：“Pergelangan kakinya agak ____. Kompres pakai es dulu, ya.” 哪项最自然？",
+        "options": [
+          "bengkak",
+          "pegal",
+          "mual",
+          "haus"
+        ],
+        "answer_index": 0,
+        "answer": "bengkak",
+        "explain": "看得见的“鼓起来、比平时大”是 bengkak，冰敷正是消肿的办法。pegal 是酸、累得发胀，是自己的感觉，外表看不出来；mual 是恶心想吐，不说脚；haus 是口渴，和脚无关。"
+      },
+      {
+        "type": "choice",
+        "prompt": "顾客问补送要多久。客服说：“____ dari dapur ke lapangan sekitar lima belas kilo, jadi paling cepat sejam lagi.” 哪项最自然？",
+        "options": [
+          "Jauh",
+          "Lama",
+          "Panjang",
+          "Jarak"
+        ],
+        "answer_index": 3,
+        "answer": "Jarak",
+        "explain": "“从 A 到 B 有多少公里”要用名词 jarak 作主语：Jarak dari A ke B sekitar … kilo。jauh 是形容词“远”，不能直接接 dari … 再接公里数当主语（口语里说 Jauhnya sekitar lima belas kilo 也行，但要加 -nya）；lama 说的是时间长；panjang 说的是物体的长度，比如 jalan yang panjang。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Saya ____ paketnya sampai sekitar jam tiga sore.（估计）",
+        "answer": "perkirakan",
+        "explain": "代词作施事放在动词前时用不带 meN- 的形式：Saya perkirakan … = 我估计……。换成一般主动句要说 Saya memperkirakan …；通知里常用被动 Paketnya diperkirakan sampai … 。日常聊天也常说 Kira-kira jam tiga sore sampai。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Simpan ____ dari warung, nanti uangnya kami ganti.（收据）",
+        "answer": "kwitansi",
+        "explain": "报销、退钱时要留收据：simpan kwitansinya / minta kwitansi。规范拼写是 kuitansi，日常常写 kwitansi；小店打印的小票也常叫 struk 或 nota。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：特别套餐里有烤鸡和水果。",
+        "tokens": [
+          "Paket",
+          "istimewanya",
+          "ada",
+          "ayam",
+          "bakar",
+          "dan",
+          "buah."
+        ],
+        "answer": "Paket istimewanya ada ayam bakar dan buah.",
+        "answer_cn": "特别套餐里有烤鸡和水果。",
+        "explain": "Paket istimewa（特别套餐）作主题，-nya 指“这家的那个套餐”；口语里常用 ada 表示“里面有”：… ada ayam bakar dan buah。istimewa 放在名词 paket 后面修饰它。"
+      }
+    ]
+  },
+  "review": {
+    "title": "可选 · 30 秒复述",
+    "steps": [
+      "用 kesepakatan、haus、jarak、kwitansi 说说 Pak Dodi 订的午饭出了什么问题、为什么没法马上补送、最后怎么解决的。"
+    ],
+    "retell_reference": "Pak Dodi memesan Paket Istimewa untuk tim futsal anak-anak. Menurut kesepakatan, dua dus air mineral seharusnya ikut dikirim, tapi ternyata ketinggalan di dapur. Anak-anak sudah haus, padahal jarak dari dapur ke lapangan sekitar lima belas kilo. Akhirnya Pak Dodi membeli air dan es batu di warung dekat lapangan. Dia mengirim foto kwitansinya, dan katering mengganti uangnya hari itu juga.",
+    "retell_reference_cn": "Pak Dodi 给少儿足球队订了“特别套餐”。按说好的，两箱矿泉水本该一起送来，结果落在了厨房。孩子们已经渴了，可从厨房到球场大约有十五公里。最后 Pak Dodi 在球场附近的小店买了水和冰块。他把收据照片发了过去，餐饮公司当天就把钱退给了他。"
+  },
+  "lesson_focus": {
+    "words": [
+      "kesepakatan",
+      "jarak",
+      "kwitansi"
+    ],
+    "patterns": [
+      {
+        "pattern": "Menurut …, … seharusnya …",
+        "cn": "按……，……本该……",
+        "function": "state-problem",
+        "example": "Menurut kesepakatan kemarin, dua dus air mineral seharusnya ikut dikirim.",
+        "example_cn": "按昨天说好的，两箱矿泉水本该一起送来。"
+      },
+      {
+        "pattern": "Daripada …, mending …",
+        "cn": "与其……，不如……（口语）",
+        "example": "Daripada nunggu, mending Bapak beli air di warung dekat lapangan.",
+        "example_cn": "与其干等，不如您在球场附近的小店先买水。"
+      }
+    ]
+  }
+}
