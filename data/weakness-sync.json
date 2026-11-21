@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-21T07:07:24.264Z",
+  "updated_at": "2026-11-21T13:55:19.833Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -21,9 +21,9 @@
     "supaya": {
       "word": "supaya",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:41.915Z",
+      "updated_at": "2026-11-21T13:43:05.052Z",
       "display": "supaya",
-      "cn": "为了；以便",
+      "cn": "为了",
       "root": "supaya",
       "last_review": "2026-09-12T14:13:51.898Z",
       "last_mastered": "2026-09-12T14:13:51.898Z",
@@ -72,7 +72,7 @@
     "nagih": {
       "word": "nagih",
       "status": "active",
-      "updated_at": "2026-11-14T08:06:37.617Z",
+      "updated_at": "2026-11-21T13:43:33.837Z",
       "display": "nagih",
       "cn": "催；催款；讨要欠款（口语）",
       "root": "tagih",
@@ -123,9 +123,9 @@
     "sederhana": {
       "word": "sederhana",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:41.971Z",
+      "updated_at": "2026-11-21T13:43:05.202Z",
       "display": "sederhana",
-      "cn": "简单的",
+      "cn": "简单、朴素",
       "last_review": "2026-09-21T15:32:48.825Z",
       "last_mastered": "2026-09-21T15:32:48.825Z",
       "source": "阅读短文",
@@ -15823,18 +15823,22 @@
     "kesepakatan": {
       "word": "kesepakatan",
       "status": "active",
-      "updated_at": "2026-11-13T02:32:10.522Z",
+      "updated_at": "2026-11-21T13:55:09.350Z",
       "display": "kesepakatan",
-      "cn": "协议；共识",
+      "cn": "协议；共识；说好的条件",
       "root": "sepakat",
       "root_cn": "同意；达成一致",
-      "last_wrong": "2026-09-30T14:12:20.417Z",
-      "last_review": "2026-11-13T02:32:10.458Z",
+      "last_wrong": "2026-11-21T13:55:09.268Z",
+      "last_review": "2026-11-21T13:55:09.268Z",
+      "source": "课程回想",
+      "source_date": "2026-11-21",
+      "session": "18:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
-      "right_streak": 4
+      "wrong_count": 2,
+      "right_streak": 0
     },
     "risiko": {
       "word": "risiko",
