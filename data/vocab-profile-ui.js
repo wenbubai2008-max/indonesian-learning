@@ -146,6 +146,7 @@
       .vpReviewProgress{border-top:1px solid #edf0f5;padding-top:14px}.vpReviewProgressHead{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:13px}.vpReviewProgressHead strong{font-size:17px;color:#2258b6}.vpReviewTrack{height:9px;background:#e6ebf3;border-radius:99px;overflow:hidden;margin:9px 0}.vpReviewTrack i{display:block;height:100%;background:#4069d6;border-radius:99px}.vpReviewProgress p{color:#667085;font-size:12px;line-height:1.6;margin:4px 0 0}
       .vpReviewSmall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:15px}.vpReviewSmall>div{padding:10px 12px;border-radius:11px;background:#fbfcff;border:1px solid #edf0f6;display:flex;align-items:baseline;gap:8px}.vpReviewSmall strong{font-size:18px;color:#253a64;font-variant-numeric:tabular-nums}.vpReviewSmall span{font-size:12px;color:#667085}.vpSectionHeading{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.vpSectionHeading h3{margin:0}.vpCountLabel{color:#667085;font-size:12px}.vpReviewWeak .vpCoverageNote{margin:2px 0 12px}
       .vpFold{border:1px solid #e6eaf1;border-radius:16px;background:#fff;margin-top:12px;overflow:hidden}.vpFold>summary{display:flex;justify-content:space-between;align-items:center;gap:12px;cursor:pointer;list-style:none;padding:15px 18px;font-size:15px;font-weight:750;color:#243150}.vpFold>summary::-webkit-details-marker{display:none}.vpFold>summary:after{content:'⌄';color:#7a88a1;margin-left:auto;order:1}.vpFold[open]>summary:after{transform:rotate(180deg)}.vpFold>summary span{font-weight:400;font-size:12px;color:#667085;text-align:right}.vpFold[open]>summary{border-bottom:1px solid #edf0f5}.vpFold>.vpSection{border:0;margin:0;border-radius:0}.vpFoldBody{padding:14px 18px}.vpFoldBody h4{font-size:14px;margin:0 0 5px}.vpFoldBody h4:not(:first-child){margin-top:18px}.vpFoldBody p{font-size:13px;color:#667085;line-height:1.65;margin:0}.vpPracticeStrip{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:3px;align-items:end;height:56px;margin:12px 0 4px}.vpPracticeStrip>div{border-radius:3px}.vpStripAxis{display:flex;justify-content:space-between;font-size:12px;color:#667085}.vpSourceNote{font-size:12px;line-height:1.6;color:#667085;margin:12px 2px 2px}
+      @media(max-width:650px){.vpReviewOverview{padding:14px}.vpReviewTitle{align-items:center}.vpReviewTitle p{font-size:12px}.vpReviewMetric{padding:12px 10px}.vpReviewMetric strong{font-size:23px}.vpFold>summary{padding:14px}}
       @media(max-width:800px){.vpReviewGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.vpReviewSmall{grid-template-columns:1fr;gap:7px}.vpReviewSmall>div{justify-content:space-between}}
       @media(max-width:650px){.vpGrid,.vpMiniStats{grid-template-columns:repeat(2,1fr)}.vpFoot{flex-direction:column;gap:3px}.vpCoverageSummary{align-items:flex-start;flex-direction:column;gap:4px}.vpCoverageSummary span:last-child{white-space:normal}.vpAbility,.vpWeakList,.vpAdviceGrid,.vpWordRows{grid-template-columns:1fr}.vpCoachTop{flex-direction:column}.vpCoachRow{align-items:flex-start}.vpDetailHero{flex-direction:column;gap:8px}}
     `;
@@ -282,10 +283,10 @@
   function reviewWeeklyHTML(r){
     const v=r.reviewed,s=v.recall.split,forgotten=r.forgotten||[];
     const pct=(a,b)=>b?Math.round(a*100/b)+'%':'—';
-    const list=forgotten.length?'<div class="vpWeakList">'+forgotten.slice(0,12).map(x=>'<button type="button" class="vpWeakItem" data-coach-select="'+esc(x.word)+'"><b>'+esc(x.word)+'</b><span>'+esc(x.cn)+' · '+x.days+' 天出错</span></button>').join('')+'</div>':'<div class="vpEmpty">近 14 天没有在两个不同日期出错的词。</div>';
+    const list=forgotten.length?'<div class="vpWeakList">'+forgotten.slice(0,6).map(x=>'<button type="button" class="vpWeakItem" data-coach-select="'+esc(x.word)+'"><b>'+esc(x.word)+'</b><span>'+esc(x.cn)+' · '+x.days+' 天出错</span></button>').join('')+'</div>':'<div class="vpEmpty">近 14 天没有在两个不同日期出错的词。</div>';
     const max=Math.max(1,...r.days.map(x=>x.formal));
     const strip='<div class="vpPracticeStrip">'+r.days.map(x=>'<div title="'+esc(x.day+' 正式作答 '+x.formal+' 次，课末回想 '+x.recall+' 个')+'" style="background:'+(x.formal?'#6d5bd0':'#e6e8ef')+';height:'+(x.formal?Math.max(12,Math.round(x.formal*100/max)):8)+'%"></div>').join('')+'</div><div class="vpStripAxis"><span>'+esc(r.days[0].day.slice(5))+'</span><span>今天</span></div>';
-    return '<div class="vpSection vpReviewWeak"><div class="vpSectionHeading"><h3>优先复习 · 反复遗忘</h3><span class="vpCountLabel">近 14 天 '+forgotten.length+' 个</span></div><p class="vpCoverageNote">至少在两个不同日期出错的词，点选可查看原因和训练入口。</p>'+list+(forgotten.length>12?'<p class="vpCoverageNote">这里只列出前 12 个，更多词可以在「查词」中查看。</p>':'')+'</div>'+
+    return '<div class="vpSection vpReviewWeak"><div class="vpSectionHeading"><h3>优先复习 · 反复遗忘</h3><span class="vpCountLabel">近 14 天 '+forgotten.length+' 个</span></div><p class="vpCoverageNote">至少在两个不同日期出错的词，点选可查看原因和训练入口。</p>'+list+(forgotten.length>6?'<p class="vpCoverageNote">这里只列出前 6 个，更多词可以在「查词」中查看。</p>':'')+'</div>'+
       '<details class="vpFold"><summary>课末回想与近 14 天练习 <span>本机记录</span></summary><div class="vpFoldBody">'+
       '<h4>课末回想（自评）</h4><p>本周课程复习到 '+v.words+' 个词，课末回想过 '+v.recall.covered+' 个（'+pct(v.recall.covered,v.words)+'）。首次回想：马上想到 '+s.fast+' · 想得慢 '+s.slow+' · 没想起来 '+s.fail+'。自评不计入掌握或正式测试正确率。</p>'+
       '<h4>近 14 天练习</h4><p>练了 '+r.activeDays+' 天，正式作答 '+r.formalTotal+' 次（快速练习、听词、自动训练）。</p>'+strip+'</div></details>'+
@@ -302,7 +303,7 @@
     const cards=[
       [confirmed,'确认掌握','网站状态 · 已学词'],
       [needs,'待强化','网站状态 · 已学未掌握'],
-      [weekly?weekly.words:'—','本周课程复习','早晚课去重'+(weekly?' · 出现 '+weekly.times+' 次':'')],
+      [weekly?weekly.words:'—','本周课程复习到的词','早晚课去重'+(weekly?' · 出现 '+weekly.times+' 次':'')],
       [accuracy,'学过 7 天以上 · 正确率',accuracyNote]
     ];
     const sign=n=>(n>0?'+':'')+n;
