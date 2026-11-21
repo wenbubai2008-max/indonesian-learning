@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261119-menang-untuk-kalah","date":"2026-11-19","title":"“Menang untuk Kalah”: Rumah Mewah, Cicilan, dan Jalan Pintas","title_cn":"《Menang untuk Kalah》：豪宅、分期付款与翻身捷径","path":"data/extensive-reading-history/2026-11-19.js"},
 {"id":"er-20261117-perpustakaan-maramis","date":"2026-11-17","title":"Gedung Lama, Ruang Baca Baru: Perpustakaan Kemenkeu Bersiap untuk Publik","title_cn":"老建筑，新阅读空间：财政部图书馆筹备向公众开放","path":"data/extensive-reading-history/2026-11-17.js"},
 {"id":"er-20261115-pasar-murah-aceh-jaya","date":"2026-11-15","title":"Pasar Murah di Aceh Jaya: Bandingkan Harga dan Cek Tanggalnya","title_cn":"亚齐查亚平价市场：比较价格，也要看清日期","path":"data/extensive-reading-history/2026-11-15.js"},
 {"id":"er-20261113-plastik-bekas-jadi-seni","date":"2026-11-13","title":"Dari Plastik Bekas Menjadi Karya Seni di Jakarta","title_cn":"雅加达再生艺术展：废塑料也能讲故事","path":"data/extensive-reading-history/2026-11-13.js"},
