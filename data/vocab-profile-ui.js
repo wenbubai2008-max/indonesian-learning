@@ -273,46 +273,77 @@
   // 2026-11-16 (user decision): review-phase version of 本周 — what came back in lessons, new masteries, the reinforcement
   // backlog change and accuracy on words learned 7+ days ago. Repeated forgetting and the practice strip stay the same.
   function reviewWeeklyHTML(r){
-    const pct=(a,b)=>b?Math.round(a*100/b)+'%':'—',v=r.reviewed,s=v.recall.split,ret=v.retention;
-    const card=(val,label,note)=>'<div><b>'+esc(val)+'</b><span>'+esc(label)+'</span>'+(note?'<small style="display:block;color:#667085">'+esc(note)+'</small>':'')+'</div>';
-    const sign=n=>(n>0?'+':'')+n;
-    const needs=weekDelta?card(sign(weekDelta.needs),'待强化 · 近 '+weekDelta.days+' 天',weekDelta.needs<0?'在减少':weekDelta.needs>0?'在增加':'没有变化'):card('—','待强化变化','趋势数据加载中');
-    const retV=ret.enough?ret.rate+'%':'样本不足',retNote=ret.enough?ret.right+'/'+ret.n+' 次正式作答答对':'只有 '+ret.n+' 次正式作答，至少 '+ret.min+' 次才计算';
+    const v=r.reviewed,s=v.recall.split,forgotten=r.forgotten||[];
+    const pct=(a,b)=>b?Math.round(a*100/b)+'%':'—';
+    const list=forgotten.length?'<div class="vpWeakList">'+forgotten.slice(0,12).map(x=>'<button type="button" class="vpWeakItem" data-coach-select="'+esc(x.word)+'"><b>'+esc(x.word)+'</b><span>'+esc(x.cn)+' · '+x.days+' 天出错</span></button>').join('')+'</div>':'<div class="vpEmpty">近 14 天没有在两个不同日期出错的词。</div>';
     const max=Math.max(1,...r.days.map(x=>x.formal));
-    const strip='<div style="display:grid;grid-template-columns:repeat(14,1fr);gap:3px;align-items:end;height:56px;margin:8px 0 4px">'+r.days.map(x=>'<div title="'+esc(x.day+' 正式作答 '+x.formal+' 次，课末回想 '+x.recall+' 个')+'" style="background:'+(x.formal?'#6d5bd0':'#e6e8ef')+';height:'+(x.formal?Math.max(12,Math.round(x.formal*100/max)):8)+'%;border-radius:3px"></div>').join('')+'</div><div style="display:flex;justify-content:space-between;font-size:12px;color:#7a8396"><span>'+esc(r.days[0].day.slice(5))+'</span><span>今天</span></div>';
-    return '<div class="vpSection"><h3>本周复习（'+esc(r.weekStart.slice(5))+' 至 '+esc(r.today.slice(5))+'）</h3><div class="vpMiniStats">'+
-      card(v.words,'本周课程复习到的词','早课和晚课里共出现 '+v.times+' 次')+
-      card(r.mastered,'本周新增确认掌握','按掌握记录日期，含词卡上点「会了」')+
-      needs+
-      card(retV,'学过 7 天以上的词 · 正式测试正确率',retNote)+
-      '</div></div>'+
-      '<div class="vpSection"><h3>课末回想（自评，单独统计）</h3><p class="vpCoverageNote">本周课程复习到 '+v.words+' 个词，课末回想过 '+v.recall.covered+' 个（'+pct(v.recall.covered,v.words)+'）。本周第一次回想：马上想到 '+s.fast+' · 想得慢 '+s.slow+' · 没想起来 '+s.fail+'。自评不计入上面的正确率，也不计入掌握。</p></div>'+
-      '<div class="vpSection"><h3>反复遗忘的词（近 14 天至少 2 天出错）</h3>'+(r.forgotten.length?'<div class="vpWeakList">'+r.forgotten.slice(0,12).map(x=>'<button type="button" class="vpWeakItem" data-coach-select="'+esc(x.word)+'"><b>'+esc(x.word)+'</b><span>'+esc(x.cn)+' · '+x.days+' 天出错</span></button>').join('')+'</div>':'<div class="vpEmpty">近 14 天没有在两天以上出错的词。</div>')+'</div>'+
-      '<div class="vpSection"><h3>近 14 天练习</h3><p class="vpCoverageNote">练了 '+r.activeDays+' 天，正式作答 '+r.formalTotal+' 次（快速练习、听词、自动训练）。</p>'+strip+'</div>'+
-      '<div class="vpSection"><div class="vpEmpty">“复习到的词”来自已发布的课程记录；其余只统计本机记录。没有测试过的词不算掌握，也不算遗忘；正确率只用正式训练的作答，课末自评单独列出。</div></div>';
+    const strip='<div class="vpPracticeStrip">'+r.days.map(x=>'<div title="'+esc(x.day+' 正式作答 '+x.formal+' 次，课末回想 '+x.recall+' 个')+'" style="background:'+(x.formal?'#6d5bd0':'#e6e8ef')+';height:'+(x.formal?Math.max(12,Math.round(x.formal*100/max)):8)+'%"></div>').join('')+'</div><div class="vpStripAxis"><span>'+esc(r.days[0].day.slice(5))+'</span><span>今天</span></div>';
+    return '<div class="vpSection vpReviewWeak"><div class="vpSectionHeading"><h3>优先复习 · 反复遗忘</h3><span class="vpCountLabel">近 14 天 '+forgotten.length+' 个</span></div><p class="vpCoverageNote">至少在两个不同日期出错的词，点选可查看原因和训练入口。</p>'+list+(forgotten.length>12?'<p class="vpCoverageNote">这里只列出前 12 个，更多词可以在「查词」中查看。</p>':'')+'</div>'+
+      '<details class="vpFold"><summary>课末回想与近 14 天练习 <span>本机记录</span></summary><div class="vpFoldBody">'+
+      '<h4>课末回想（自评）</h4><p>本周课程复习到 '+v.words+' 个词，课末回想过 '+v.recall.covered+' 个（'+pct(v.recall.covered,v.words)+'）。首次回想：马上想到 '+s.fast+' · 想得慢 '+s.slow+' · 没想起来 '+s.fail+'。自评不计入掌握或正式测试正确率。</p>'+
+      '<h4>近 14 天练习</h4><p>练了 '+r.activeDays+' 天，正式作答 '+r.formalTotal+' 次（快速练习、听词、自动训练）。</p>'+strip+'</div></details>'+
+      '<p class="vpSourceNote">课程复习词数来自已发布的早晚课，其余周报数据只来自本机。未测过的词不会被算作掌握或遗忘。</p>';
+  }
+  // Review dashboard: only existing website snapshot and local weekly-report values.
+  function reviewOverviewHTML(data,r){
+    const confirmed=Math.max(0,Number(data.confirmed_mastered)||0),needs=Math.max(0,Number(data.needs_reinforcement)||0);
+    const unverified=Math.max(0,Number(data.unverified)||0),excluded=Math.max(0,Number(data.excluded_from_training)||0);
+    const eligible=confirmed+needs+unverified,percent=eligible?Math.round(confirmed/eligible*1000)/10:0;
+    const weekly=r&&r.reviewed?r.reviewed:null,ret=weekly&&weekly.retention;
+    const accuracy=ret?(ret.enough?ret.rate+'%':'样本不足'):'—';
+    const accuracyNote=ret?(ret.enough?ret.right+'/'+ret.n+' 次正式作答答对':'只有 '+ret.n+' 次有效作答'):'本机报告尚不可用';
+    const cards=[
+      [confirmed,'确认掌握','网站状态 · 已学词'],
+      [needs,'待强化','网站状态 · 已学未掌握'],
+      [weekly?weekly.words:'—','本周课程复习','早晚课去重'+(weekly?' · 出现 '+weekly.times+' 次':'')],
+      [accuracy,'学过 7 天以上 · 正确率',accuracyNote]
+    ];
+    const sign=n=>(n>0?'+':'')+n;
+    const small=[
+      [r&&Number.isFinite(r.mastered)?r.mastered:'—','本周新增确认掌握'],
+      [weekDelta?sign(weekDelta.needs):'—','近 '+(weekDelta?weekDelta.days:7)+' 天待强化变化'],
+      [r&&Array.isArray(r.forgotten)?r.forgotten.length:'—','近 14 天反复遗忘']
+    ];
+    return '<section class="vpSection vpReviewOverview" aria-label="复习总览">'+
+      '<div class="vpReviewTitle"><div><h3>复习总览</h3><p>先看掌握情况，再看本周效果和需要复习的词。</p></div><span class="vpReviewStage">复习阶段</span></div>'+
+      '<div class="vpReviewGrid">'+cards.map(x=>'<div class="vpReviewMetric"><strong>'+esc(x[0])+'</strong><b>'+esc(x[1])+'</b><small>'+esc(x[2])+'</small></div>').join('')+'</div>'+
+      '<div class="vpReviewProgress"><div class="vpReviewProgressHead"><b>参与复习词的确认掌握比例</b><strong>'+percent.toFixed(1)+'%</strong></div><div class="vpReviewTrack" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+percent+'"><i style="width:'+percent+'%"></i></div><p>已记录 '+eligible+' 个可训练的已学词'+(excluded?' · 另有 '+excluded+' 个已退出训练':'')+(unverified?' · 其中 '+unverified+' 个尚待验证':'')+'。确认掌握由学习状态判定，不代表三项能力都已测过。</p></div>'+
+      '<div class="vpReviewSmall">'+small.map(x=>'<div><strong>'+esc(x[0])+'</strong><span>'+esc(x[1])+'</span></div>').join('')+'</div>'+
+      '</section>';
   }
   // 本周: one-sentence conclusion, the long-term numbers (old 能力总览), this week's report, then the snapshot trend.
   function weekHTML(data){
     const ev=evidenceData(),active=ev.attempts?String(ev.active):'待积累',passive=ev.attempts?String(ev.passive):'待积累',pending=pendingPoolStat(data);
     let r=null;try{r=window.WeeklyMemoryReport&&window.WeeklyMemoryReport.compute()}catch(e){}
-    const parts=[];
     const review=reviewOn(data)&&r&&r.reviewed;
-    if(review){const v=r.reviewed;parts.push('本周课程复习了 '+v.words+' 个词');parts.push('新增确认掌握 '+r.mastered+' 个');if(weekDelta)parts.push('待强化近 '+weekDelta.days+' 天 '+(weekDelta.needs>0?'+':'')+weekDelta.needs);parts.push(v.retention.enough?'学过 7 天以上的词正确率 '+v.retention.rate+'%':'正确率样本不足');if(r.forgotten.length)parts.push('反复遗忘 '+r.forgotten.length+' 个');}
-    else if(r){parts.push('本周新学 '+r.newThisWeek+' 个词');if(r.recentTotal)parts.push('近 7 天新词已正式验证 '+r.verified+'/'+r.recentTotal);parts.push(r.retention.enough?'学后 7–30 天正确率 '+r.retention.rate+'%':'正确率样本不足');if(r.forgotten.length)parts.push('反复遗忘 '+r.forgotten.length+' 个');}
+    const parts=[];
+    if(!review&&r){
+      parts.push('本周新学 '+r.newThisWeek+' 个词');
+      if(r.recentTotal)parts.push('近 7 天新词已正式验证 '+r.verified+'/'+r.recentTotal);
+      parts.push(r.retention.enough?'学后 7–30 天正确率 '+r.retention.rate+'%':'正确率样本不足');
+      if(r.forgotten.length)parts.push('反复遗忘 '+r.forgotten.length+' 个');
+    }
     if(weekDelta&&!review)parts.push('确认掌握近 '+weekDelta.days+' 天 '+(weekDelta.mastered>0?'+':'')+weekDelta.mastered);
     const adv=suggestions(data)[0];
     const conclusion='<div class="vpConclusion"><b>本周结论：</b>'+esc(parts.join('，'))+'。'+(adv&&adv[0]!=='继续观察'?'<br><b>'+esc(adv[0])+'：</b>'+esc(adv[1]):'')+'</div>';
     const totals='<div class="vpSection"><h3>总体情况</h3><div class="vpMiniStats"><div><b>'+data.taught_total+'</b><span>正式学习</span></div><div><b>'+data.confirmed_mastered+'</b><span>确认掌握</span></div><div><b>'+data.needs_reinforcement+'</b><span>待强化</span></div><div><b>'+data.unverified+'</b><span>尚待验证</span></div></div><div class="vpMiniStats"><div><b>'+active+'</b><span>本机验证的主动词汇</span></div><div><b>'+passive+'</b><span>本机稳定识别词汇</span></div><div><b>'+pending.count+'</b><span>'+pending.label+'</span></div><div><b>'+(ev.relearned||0)+'/'+(ev.forgotten||0)+'</b><span>再次通过 / 验证后又忘</span></div></div><p class="vpCoverageNote">主动词汇：无提示提取、语境补词、自我表达都完成，并在两个不同日期通过延迟验证。稳定识别：最近一次错误后至少三次正确、覆盖两个日期。两者不重复统计，也不把原有 mastered 自动算入。</p></div>';
-    // 2026-10-25 phase-1 observation panel (read-only, data/ability-observation.js).
+    // Preserve complete evidence and three-layer diagnosis; fold secondary information in review phase.
     const obsRaw=window.AbilityObservation?window.AbilityObservation.html(Date.now(),data):'';
     const obs=obsRaw?'<details class="vpObsFold"><summary>'+(reviewOn(data)?'能力指标与复习目标':'观察数据（两周观察期，不影响学习）')+'</summary>'+obsRaw+'</details>':'';
     const diagnosis=window.WordDiagnosisUI?window.WordDiagnosisUI.detail(data):'';
+    if(reviewOn(data)){
+      return reviewOverviewHTML(data,r)+
+        (review?weeklyHTML(data):'<div class="vpSection"><h3>本周复习</h3><div class="vpEmpty">本机复习报告暂时不可用，网站掌握状态仍可正常查看。</div></div>')+
+        (diagnosis?'<details class="vpFold"><summary>三层能力诊断 <span>认得 · 听得懂 · 说得出来</span></summary>'+diagnosis+'</details>':'')+
+        '<details class="vpFold"><summary>历史趋势 <span>最近 30 天</span></summary><div class="vpFoldBody">'+trendHTML(data)+'</div></details>'+
+        '<details class="vpFold"><summary>全部长期统计 <span>完整数字与统计口径</span></summary>'+totals+'</details>'+obs;
+    }
     return conclusion+diagnosis+totals+weeklyHTML(data)+obs+'<div class="vpSection"><h3>掌握数趋势</h3>'+trendHTML(data)+'</div>';
   }
   function renderDetail(){
     const data=PROFILE,body=document.getElementById('vpDetailBody');if(!body||!data)return;
     activeTab=TAB_ALIAS[activeTab]||'today';
-    body.innerHTML='<div class="vpDetailHero"><div><h2>个人词汇画像</h2><p>把学习结果、训练错误和后续验证汇总成一个持续更新的词汇能力档案。</p></div><span class="pill">网站快照＋本机训练</span></div>'+
+    body.innerHTML='<div class="vpDetailHero"><div><h2>个人词汇画像</h2><p>'+(reviewOn(data)?'复习进度、遗忘词与下一步练习，一眼看清。':'把学习结果、训练错误和后续验证汇总成一个持续更新的词汇能力档案。')+'</p></div><span class="pill">网站快照＋本机训练</span></div>'+
       '<div class="vpTabs">'+[['today','今天'],['week','本周'],['words','查词']].map(x=>'<button class="vpTab '+(activeTab===x[0]?'active':'')+'" data-vp-tab="'+x[0]+'" type="button">'+x[1]+'</button>').join('')+'</div>'+
       '<section class="vpPanel '+(activeTab==='today'?'active':'')+'" data-vp-panel="today">'+(activeTab==='today'?todayHTML():'')+'</section>'+
       '<section class="vpPanel '+(activeTab==='week'?'active':'')+'" data-vp-panel="week">'+(activeTab==='week'?weekHTML(data):'')+'</section>'+
