@@ -4420,23 +4420,25 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-31 08:00",
-    "last_seen": "2026-09-14 19:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
       "2026-08-31",
-      "2026-09-14"
+      "2026-09-14",
+      "2026-11-21"
     ],
     "root_cn": "催款；要求付款",
-    "example": "Sebelum bayar, cek dulu tagihannya sesuai sama harga yang disepakati atau nggak.",
-    "example_cn": "付款前先确认账单是否和商定的价格一致。",
+    "example": "Tagihan listrik bulan ini naik, soalnya AC nyala terus.",
+    "example_cn": "这个月电费单涨了，因为空调一直开着。（nyala = menyala）",
     "lesson_occurrences": [
       "2026-08-31 08:00",
-      "2026-09-14 19:00"
+      "2026-09-14 19:00",
+      "2026-11-21 08:00"
     ]
   },
   {
@@ -7486,16 +7488,16 @@ window.DAILY_VOCAB_DB = [
     "en": "save money; cut spending; be frugal",
     "root": "irit",
     "root_cn": "节省；省着用",
-    "example": "Gajian masih lama, jadi minggu ini aku harus ngirit.",
-    "example_cn": "离发工资还早，所以这周我得省着花。",
+    "example": "Bulan ini aku lagi ngirit, jadi makan siang bawa bekal dari rumah.",
+    "example_cn": "这个月我在省钱，所以午饭从家里带便当。（aku = saya，lagi = sedang）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-10-08 18:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -7504,13 +7506,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-07",
       "2026-09-29",
       "2026-10-01",
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
       "2026-09-29 18:00",
       "2026-10-01 18:00",
-      "2026-10-08 18:00"
+      "2026-10-08 18:00",
+      "2026-11-21 08:00"
     ]
   },
   {
@@ -9394,9 +9398,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-10-05 18:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -9404,12 +9408,14 @@ window.DAILY_VOCAB_DB = [
     ],
     "dates": [
       "2026-09-11",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
       "2026-09-11 19:00",
-      "2026-10-05 18:00"
+      "2026-10-05 18:00",
+      "2026-11-21 08:00"
     ]
   },
   {
@@ -9726,16 +9732,16 @@ window.DAILY_VOCAB_DB = [
     "en": "feel something is off; have something unresolved",
     "root": "ganjal",
     "root_cn": "垫住；卡住；妨碍",
-    "example": "Habis rapat tadi, rasanya masih ada yang ganjel. Kayaknya bos belum puas sama laporanku.",
-    "example_cn": "刚开完会，总觉得还有什么不对劲。老板好像对我的报告还不满意。",
+    "example": "Tawarannya kedengarannya sempurna, tapi rasanya masih ada yang ganjel.",
+    "example_cn": "这个报价听起来很完美，可总觉得还有哪里不对劲。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-10-20 18:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9744,13 +9750,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-12",
       "2026-10-06",
       "2026-10-14",
-      "2026-10-20"
+      "2026-10-20",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
       "2026-10-06 18:00",
       "2026-10-14 18:00",
-      "2026-10-20 18:00"
+      "2026-10-20 18:00",
+      "2026-11-21 08:00"
     ]
   },
   {
@@ -10435,23 +10443,25 @@ window.DAILY_VOCAB_DB = [
     "en": "personal; private; individual",
     "root": "pribadi",
     "root_cn": "个人；私人",
-    "example": "Dia nggak bisa ikut karena ada urusan pribadi.",
-    "example_cn": "他因为有私事不能参加。",
+    "example": "Untuk alamat dan nomor HP, kita lanjut lewat pesan pribadi aja, ya, Kak.",
+    "example_cn": "地址和手机号的事，我们私信里接着说吧，亲。（aja = saja）",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 08:00",
-    "last_seen": "2026-09-14 08:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
-      "2026-09-14 08:00"
+      "2026-09-14 08:00",
+      "2026-11-21 08:00"
     ]
   },
   {
@@ -15262,17 +15272,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-09-27 08:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-27"
+      "2026-09-27",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
-      "2026-09-27 08:00"
+      "2026-09-27 08:00",
+      "2026-11-21 08:00"
     ]
   },
   {
@@ -18650,17 +18662,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-05 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-11-21 08:00"
     ]
   },
   {
@@ -19313,23 +19327,25 @@ window.DAILY_VOCAB_DB = [
     "en": "invoice; bill for payment",
     "root": "invoice",
     "root_cn": "发票；账单（英语借词）",
-    "example": "Bisa tolong kirim invoice-nya ke email saya? Biar bagian keuangan bisa langsung memprosesnya.",
-    "example_cn": "能不能请把账单发到我的邮箱？这样财务部门可以马上处理。",
+    "example": "Setelah pembayaran masuk, kami kirim invoice ke email Bapak supaya Bapak bisa mengetahui rincian biayanya.",
+    "example_cn": "款项到账后，我们会把发票发到您的邮箱，方便您了解费用明细。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-07 08:00",
-    "last_seen": "2026-10-07 08:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-07"
+      "2026-10-07",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
-      "2026-10-07 08:00"
+      "2026-10-07 08:00",
+      "2026-11-21 08:00"
     ]
   },
   {
@@ -19901,17 +19917,19 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-09 08:00",
-    "last_seen": "2026-10-09 08:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-09"
+      "2026-10-09",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
-      "2026-10-09 08:00"
+      "2026-10-09 08:00",
+      "2026-11-21 08:00"
     ]
   },
   {
@@ -21906,27 +21924,29 @@ window.DAILY_VOCAB_DB = [
     "en": "comment",
     "root": "komentar",
     "root_cn": "评论（外来词）",
-    "example": "Banyak teman memberi komentar di foto itu.",
-    "example_cn": "很多朋友在那张照片下留言评论。",
+    "example": "Banyak komentar bilang sambalnya lezat, tapi kemasannya kurang rapi.",
+    "example_cn": "很多评论说辣椒酱好吃，可是包装不够整齐。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-14 18:00",
-    "last_seen": "2026-10-21 08:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-10-14",
-      "2026-10-21"
+      "2026-10-21",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
       "2026-10-14 18:00",
-      "2026-10-21 08:00"
+      "2026-10-21 08:00",
+      "2026-11-21 08:00"
     ]
   },
   {
@@ -33680,17 +33700,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-20 08:00",
-    "last_seen": "2026-11-20 08:00",
+    "last_seen": "2026-11-21 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-21"
     ],
     "lesson_occurrences": [
-      "2026-11-20 08:00"
+      "2026-11-20 08:00",
+      "2026-11-21 08:00"
     ]
   },
   {
