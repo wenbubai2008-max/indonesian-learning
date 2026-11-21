@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-21T14:01:22.875Z",
+  "updated_at": "2026-11-21T15:21:20.455Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -72,7 +72,7 @@
     "nagih": {
       "word": "nagih",
       "status": "active",
-      "updated_at": "2026-11-21T13:43:33.837Z",
+      "updated_at": "2026-11-21T15:21:17.671Z",
       "display": "nagih",
       "cn": "催；催款；讨要欠款（口语）",
       "root": "tagih",
@@ -7044,8 +7044,11 @@
     "hukuman": {
       "word": "hukuman",
       "status": "active",
-      "updated_at": "2026-11-20T05:14:40.078Z",
+      "updated_at": "2026-11-21T14:05:21.335Z",
       "display": "hukuman",
+      "cn": "惩罚；刑罚",
+      "root": "hukum",
+      "root_cn": "法律；规则",
       "last_review": "2026-11-20T05:14:40.014Z",
       "reasons": [
         "memory_dont"
@@ -15763,10 +15766,10 @@
     "iklan": {
       "word": "iklan",
       "status": "active",
-      "updated_at": "2026-11-14T08:07:44.230Z",
+      "updated_at": "2026-11-21T14:20:51.384Z",
       "display": "iklan",
       "cn": "广告",
-      "last_review": "2026-11-14T08:07:44.166Z",
+      "last_review": "2026-11-21T14:20:51.320Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -15774,7 +15777,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "gerbang": {
       "word": "gerbang",
@@ -19260,10 +19263,10 @@
     "perak": {
       "word": "perak",
       "status": "active",
-      "updated_at": "2026-11-14T08:07:39.085Z",
+      "updated_at": "2026-11-21T14:20:49.500Z",
       "display": "perak",
       "cn": "银色",
-      "last_review": "2026-11-14T08:07:39.020Z",
+      "last_review": "2026-11-21T14:20:49.431Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -19271,7 +19274,7 @@
         "bipa_secondary_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "bergantung": {
       "word": "bergantung",
@@ -25490,7 +25493,7 @@
     "golongan darah": {
       "word": "golongan darah",
       "status": "active",
-      "updated_at": "2026-11-02T08:32:05.016Z",
+      "updated_at": "2026-11-21T14:21:42.348Z",
       "display": "golongan darah",
       "cn": "血型",
       "root": "golong",
@@ -25500,7 +25503,8 @@
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_dont",
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "automation_fail"
       ],
       "wrong_count": 0,
       "right_streak": 3
@@ -27409,12 +27413,12 @@
     "seprai": {
       "word": "seprai",
       "status": "active",
-      "updated_at": "2026-11-14T08:07:32.526Z",
+      "updated_at": "2026-11-21T14:20:39.737Z",
       "display": "seprai",
       "cn": "床单",
       "root": "seprai",
       "root_cn": "床单",
-      "last_review": "2026-11-14T08:07:32.462Z",
+      "last_review": "2026-11-21T14:20:39.673Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -27422,7 +27426,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "centong": {
       "word": "centong",
@@ -27620,12 +27624,12 @@
     "setrika": {
       "word": "setrika",
       "status": "active",
-      "updated_at": "2026-11-14T08:07:35.931Z",
+      "updated_at": "2026-11-21T14:20:43.233Z",
       "display": "setrika",
       "cn": "熨斗；熨（衣服）",
       "root": "setrika",
       "root_cn": "熨斗",
-      "last_review": "2026-11-14T08:07:35.869Z",
+      "last_review": "2026-11-21T14:20:43.169Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -27633,7 +27637,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "peralatan masak": {
       "word": "peralatan masak",
@@ -28120,12 +28124,12 @@
     "becak": {
       "word": "becak",
       "status": "active",
-      "updated_at": "2026-11-14T08:06:44.061Z",
+      "updated_at": "2026-11-21T14:20:30.411Z",
       "display": "becak",
       "cn": "人力三轮车",
       "root": "becak",
       "root_cn": "三轮车",
-      "last_review": "2026-11-14T08:06:43.999Z",
+      "last_review": "2026-11-21T14:20:30.346Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28133,7 +28137,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "delman": {
       "word": "delman",
@@ -28221,30 +28225,32 @@
     "keramat": {
       "word": "keramat",
       "status": "active",
-      "updated_at": "2026-11-14T08:06:47.841Z",
+      "updated_at": "2026-11-21T14:20:35.119Z",
       "display": "keramat",
       "cn": "神圣的；（被认为）有灵力的",
       "root": "keramat",
       "root_cn": "神圣、灵验",
-      "last_review": "2026-11-14T08:06:47.780Z",
+      "last_wrong": "2026-11-21T14:20:35.055Z",
+      "last_review": "2026-11-21T14:20:35.055Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
         "bipa_secondary_fuzzy",
-        "memory_fuzzy"
+        "memory_fuzzy",
+        "quick_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 2
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "angker": {
       "word": "angker",
       "status": "active",
-      "updated_at": "2026-11-14T08:06:41.041Z",
+      "updated_at": "2026-11-21T14:20:11.366Z",
       "display": "angker",
       "cn": "阴森的；（传说）闹鬼的",
       "root": "angker",
       "root_cn": "阴森",
-      "last_review": "2026-11-14T08:06:40.981Z",
+      "last_review": "2026-11-21T14:20:11.300Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28252,7 +28258,7 @@
         "memory_fuzzy"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "megah": {
       "word": "megah",
@@ -28360,12 +28366,12 @@
     "menegangkan": {
       "word": "menegangkan",
       "status": "active",
-      "updated_at": "2026-11-19T05:17:25.906Z",
+      "updated_at": "2026-11-21T14:20:17.086Z",
       "display": "menegangkan",
       "cn": "令人紧张的；惊险刺激的",
       "root": "tegang",
       "root_cn": "紧张；绷紧",
-      "last_review": "2026-11-14T08:07:01.007Z",
+      "last_review": "2026-11-21T14:20:17.021Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
       "reasons": [
@@ -28374,7 +28380,7 @@
         "automation_fail"
       ],
       "wrong_count": 0,
-      "right_streak": 2
+      "right_streak": 3
     },
     "mengharukan": {
       "word": "mengharukan",
@@ -29086,13 +29092,13 @@
     "berangsur": {
       "word": "berangsur",
       "status": "active",
-      "updated_at": "2026-11-19T13:41:57.262Z",
+      "updated_at": "2026-11-21T14:20:10.017Z",
       "display": "berangsur",
       "cn": "逐渐（好转或变化）",
       "root": "angsur",
       "root_cn": "一点一点地推进",
       "last_wrong": "2026-11-18T07:06:13.371Z",
-      "last_review": "2026-11-19T13:41:57.193Z",
+      "last_review": "2026-11-21T14:20:09.947Z",
       "source": "课程小测",
       "source_date": "2026-11-08",
       "session": "18:00",
@@ -29103,7 +29109,7 @@
         "quick_wrong"
       ],
       "wrong_count": 2,
-      "right_streak": 1
+      "right_streak": 2
     },
     "roboh": {
       "word": "roboh",
@@ -32856,13 +32862,13 @@
     "pintas": {
       "word": "pintas",
       "status": "active",
-      "updated_at": "2026-11-19T13:42:50.499Z",
+      "updated_at": "2026-11-21T14:20:19.950Z",
       "display": "Pintas",
       "cn": "抄近的；近路（最常用 jalan pintas）",
       "root": "pintas",
       "root_cn": "横穿；抄近",
       "last_wrong": "2026-11-19T13:32:35.402Z",
-      "last_review": "2026-11-19T13:42:50.433Z",
+      "last_review": "2026-11-21T14:20:19.883Z",
       "source": "泛读",
       "source_date": "2026-11-19",
       "session": "18:00",
@@ -32871,41 +32877,41 @@
         "lesson_wrong"
       ],
       "wrong_count": 1,
-      "right_streak": 1
+      "right_streak": 2
     },
     "rumit": {
       "word": "rumit",
       "status": "active",
-      "updated_at": "2026-11-19T13:42:53.230Z",
+      "updated_at": "2026-11-21T14:20:22.524Z",
       "display": "rumit.",
       "cn": "复杂的；头绪多、难办的",
       "root": "rumit",
       "root_cn": "复杂",
-      "last_review": "2026-11-19T13:42:53.164Z",
+      "last_review": "2026-11-21T14:20:22.457Z",
       "source": "泛读",
       "source_date": "2026-11-19",
       "reasons": [
         "manual_unknown"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "semakin": {
       "word": "semakin",
       "status": "active",
-      "updated_at": "2026-11-19T13:42:54.453Z",
+      "updated_at": "2026-11-21T14:20:27.881Z",
       "display": "semakin",
       "cn": "越来越；越……越……",
       "root": "makin",
       "root_cn": "越发；愈加",
-      "last_review": "2026-11-19T13:42:54.388Z",
+      "last_review": "2026-11-21T14:20:27.817Z",
       "source": "泛读",
       "source_date": "2026-11-19",
       "reasons": [
         "manual_unknown"
       ],
       "wrong_count": 0,
-      "right_streak": 1
+      "right_streak": 2
     },
     "judi": {
       "word": "judi",
