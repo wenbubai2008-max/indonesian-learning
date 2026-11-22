@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-22T10:55:45.384Z",
+    "runtime_generated_at": "2026-11-22T14:00:29.411Z",
     "lesson_watermark": "2026-11-22 18:00",
     "index_updated": "2026-11-22",
-    "runtime_hash": "ed3b9a38c30fa3e72e719cb1e2aeccd4fc82736fa1c0b39711a429e538e392c0",
+    "runtime_hash": "0836fb6a3be0f1ab941399860346bffb3be5d13e17246b4207449e8b80efcb43",
     "index_hash": "b15fa0641314c93cf08da80f62e77f697ca86e51a254cab37ee50b4e34ad2b6a",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
@@ -79,6 +79,16 @@
         "指出",
         "tunjuk",
         "指；指出"
+      ],
+      [
+        "nyinggung",
+        1,
+        4,
+        "2026-11-22T13:09:45.996Z",
+        "2026-11-22T13:09:45.996Z",
+        "提到；触及；说到让人不舒服的话题（口语）",
+        "singgung",
+        "触及；提到"
       ],
       [
         "kelabakan",
@@ -309,16 +319,6 @@
         "估计一下；请预计（常见指令用法）",
         "kira",
         "猜测；估量"
-      ],
-      [
-        "nyinggung",
-        2,
-        3,
-        "2026-09-28T14:43:57.046Z",
-        "2026-11-11T03:24:33.085Z",
-        "提到；触及；说到让人不舒服的话题（口语）",
-        "singgung",
-        "触及；提到"
       ],
       [
         "niat",
@@ -571,6 +571,16 @@
         "程度；分量"
       ],
       [
+        "kalah",
+        1,
+        1,
+        "2026-11-22T12:51:31.027Z",
+        "2026-11-22T12:51:31.027Z",
+        "输；失败",
+        "kalah",
+        "输；失败"
+      ],
+      [
         "keramat",
         1,
         1,
@@ -649,16 +659,6 @@
         "修好；弄对",
         "benar",
         "正确"
-      ],
-      [
-        "ngeles",
-        1,
-        1,
-        "2026-11-14T08:25:43.657Z",
-        "2026-11-17T11:26:20.698Z",
-        "找借口；绕着说；回避真正问题（口语）",
-        "ngeles",
-        "找借口；回避重点"
       ],
       [
         "nyangka",
@@ -2282,6 +2282,15 @@
         ]
       ],
       [
+        "nyinggung",
+        122,
+        [
+          "automation_fail",
+          "lesson_wrong",
+          "dont"
+        ]
+      ],
+      [
         "kelabakan",
         120,
         [
@@ -2486,14 +2495,6 @@
           "lesson_wrong",
           "dont",
           "fuzzy"
-        ]
-      ],
-      [
-        "nyinggung",
-        84,
-        [
-          "automation_fail",
-          "dont"
         ]
       ],
       [

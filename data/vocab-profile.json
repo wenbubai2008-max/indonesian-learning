@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-11-22T09:40:27.321Z",
-  "source_updated_at": "2026-11-22T07:52:50.169Z",
+  "generated_at": "2026-11-22T14:00:29.562Z",
+  "source_updated_at": "2026-11-22T13:09:56.917Z",
   "taught_total": 1238,
   "confirmed_mastered": 313,
   "needs_reinforcement": 823,
@@ -53,6 +53,19 @@
       "last_wrong": "2026-11-13T02:22:53.157Z",
       "last_review": "2026-11-13T02:22:53.157Z",
       "cn": "指出"
+    },
+    {
+      "word": "nyinggung",
+      "score": 122,
+      "signals": [
+        "automation_fail",
+        "lesson_wrong",
+        "dont"
+      ],
+      "wrong_count": 4,
+      "last_wrong": "2026-11-22T13:09:45.996Z",
+      "last_review": "2026-11-22T13:09:45.996Z",
+      "cn": "提到；触及；说到让人不舒服的话题（口语）"
     },
     {
       "word": "kelabakan",
@@ -118,19 +131,6 @@
       "last_wrong": "2026-11-17T11:26:05.122Z",
       "last_review": "2026-11-20T14:54:50.139Z",
       "cn": "令人惊叹的；了不起的"
-    },
-    {
-      "word": "kepepet",
-      "score": 108,
-      "signals": [
-        "quick_wrong",
-        "lesson_wrong",
-        "dont"
-      ],
-      "wrong_count": 4,
-      "last_wrong": "2026-11-14T11:30:50.316Z",
-      "last_review": "2026-11-17T11:26:24.502Z",
-      "cn": "被逼到很紧；没什么余地"
     }
   ],
   "definitions": {
