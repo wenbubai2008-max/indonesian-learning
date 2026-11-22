@@ -2656,22 +2656,24 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-23 19:00",
-    "last_seen": "2026-10-10 18:00",
+    "last_seen": "2026-11-22 18:00",
     "sessions": [
       "19:00",
       "18:00"
     ],
     "dates": [
       "2026-08-23",
-      "2026-10-10"
+      "2026-10-10",
+      "2026-11-22"
     ],
-    "example": "Walaupun hujan, mereka tetap berangkat ke pasar.",
-    "example_cn": "虽然下雨，他们还是去市场了。",
+    "example": "Walaupun sudah nyari ke beberapa toko, saya belum nemu charger yang cocok buat laptop lama ini.",
+    "example_cn": "虽然已经找了好几家店，我还是没找到适合这台旧笔记本电脑的充电器。（nyari = mencari，nemu = menemukan，buat = untuk）",
     "lesson_occurrences": [
       "2026-08-23 19:00",
-      "2026-10-10 18:00"
+      "2026-10-10 18:00",
+      "2026-11-22 18:00"
     ],
     "root_cn": "虽然；即使"
   },
@@ -9589,16 +9591,16 @@ window.DAILY_VOCAB_DB = [
     "en": "mention; touch on; offend",
     "root": "singgung",
     "root_cn": "触及；提到",
-    "example": "Tolong jangan nyinggung soal cerai di depan Tante, dia masih sedih.",
-    "example_cn": "拜托别在阿姨面前提离婚的事，她还在难过。",
+    "example": "Aku nggak maksud nyinggung kamu, cuma mau nimpalin candaan teman-teman tadi.",
+    "example_cn": "我不是想冒犯你，只是想接一下刚才朋友们的玩笑。（nggak = tidak）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 10,
+    "times_seen": 11,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-11-02 18:00",
+    "last_seen": "2026-11-22 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9612,7 +9614,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28",
       "2026-10-01",
       "2026-10-05",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
@@ -9624,7 +9627,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-28 08:00",
       "2026-10-01 18:00",
       "2026-10-05 08:00",
-      "2026-11-02 18:00"
+      "2026-11-02 18:00",
+      "2026-11-22 18:00"
     ]
   },
   {
@@ -9952,16 +9956,16 @@ window.DAILY_VOCAB_DB = [
     "en": "intention; intent",
     "root": "niat",
     "root_cn": "打算；意图",
-    "example": "Kalau memang niat bantu, datang aja besok pagi, bantu aku beresin gudang.",
-    "example_cn": "如果真心想帮忙，明天早上就来吧，帮我收拾仓库。",
+    "example": "Niatnya cuma mau nanya harga, eh malah ditawarin paket langganan setahun.",
+    "example_cn": "本来只是想问个价，结果反被推销了一整年的会员套餐。（nanya = bertanya，ditawarin = ditawari）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 9,
+    "times_seen": 10,
     "first_seen": "2026-09-13 08:00",
-    "last_seen": "2026-11-01 18:00",
+    "last_seen": "2026-11-22 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9973,7 +9977,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-01",
       "2026-10-02",
       "2026-10-05",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
       "2026-09-13 08:00",
@@ -9984,7 +9989,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-01 18:00",
       "2026-10-02 08:00",
       "2026-10-05 08:00",
-      "2026-11-01 18:00"
+      "2026-11-01 18:00",
+      "2026-11-22 18:00"
     ]
   },
   {
@@ -11600,23 +11606,27 @@ window.DAILY_VOCAB_DB = [
     "en": "although; even though",
     "root": "walau",
     "root_cn": "虽然；尽管",
-    "example": "Walau ada masalah, kami tetap melanjutkan pekerjaan.",
-    "example_cn": "虽然有问题，我们还是继续工作。",
+    "example": "Walau cuma dua hari di Puncak, kami sempat jalan pagi dan menghirup udara segar.",
+    "example_cn": "虽然在 Puncak 只待了两天，我们还是抽空晨走，呼吸了新鲜空气。（cuma = hanya）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-17 08:00",
+    "last_seen": "2026-11-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-09-17 08:00"
+      "2026-09-17 08:00",
+      "2026-11-22 18:00"
     ]
   },
   {
@@ -16452,23 +16462,27 @@ window.DAILY_VOCAB_DB = [
     "en": "lose; be defeated",
     "root": "kalah",
     "root_cn": "输；失败",
-    "example": "Tim kami kalah, tetapi kami tetap belajar dari kesalahan.",
-    "example_cn": "我们队输了，但还是从错误中学习。",
+    "example": "Kemarin tim kami kalah tipis, cuma beda satu gol.",
+    "example_cn": "昨天我们队惜败，只差一个球。（cuma = hanya）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-09-30 08:00",
+    "last_seen": "2026-11-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-30"
+      "2026-09-30",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-09-30 08:00"
+      "2026-09-30 08:00",
+      "2026-11-22 18:00"
     ]
   },
   {
@@ -19056,23 +19070,27 @@ window.DAILY_VOCAB_DB = [
     "en": "disappointed",
     "root": "kecewa",
     "root_cn": "失望",
-    "example": "Aku kecewa sama hasil ujianku, padahal sudah belajar tiap malam.",
-    "example_cn": "我对考试成绩很失望，明明每天晚上都在复习。",
+    "example": "Penulis itu kecewa karena artikelnya diedit tanpa izin.",
+    "example_cn": "那位作者很失望，因为他的文章没经同意就被改了。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-06 08:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-11-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-11-22 18:00"
     ]
   },
   {
@@ -19617,28 +19635,30 @@ window.DAILY_VOCAB_DB = [
     "en": "to defend; to stand up for",
     "root": "bela",
     "root_cn": "保卫；袒护",
-    "example": "Waktu temannya dituduh bohong, Sari langsung membelanya di depan semua orang.",
-    "example_cn": "朋友被指责说谎时，Sari 立刻当着大家的面替他说话。",
+    "example": "Bukannya minta maaf, pemilik toko itu malah sibuk membela diri waktu dapat ulasan negatif.",
+    "example_cn": "那个店主收到差评后，不道歉，反而忙着为自己辩解。（dapat = mendapat）",
     "categories": [
       "每日学习",
       "08:00",
       "口语",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-08 08:00",
-    "last_seen": "2026-10-13 18:00",
+    "last_seen": "2026-11-22 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-10-08",
-      "2026-10-13"
+      "2026-10-13",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
       "2026-10-08 08:00",
-      "2026-10-13 18:00"
+      "2026-10-13 18:00",
+      "2026-11-22 18:00"
     ]
   },
   {
@@ -20811,24 +20831,28 @@ window.DAILY_VOCAB_DB = [
     "en": "fun; enjoyable; absorbed",
     "root": "asyik",
     "root_cn": "有趣的；入迷的",
-    "example": "Dia asyik ngobrol sampai lupa waktu.",
-    "example_cn": "他聊得太投入，连时间都忘了。",
+    "example": "Kami asyik menyelam di Bunaken sampai lupa waktu, tahu-tahu matahari sudah mau terbenam.",
+    "example_cn": "我们在布纳肯潜水潜得入迷，都忘了时间，一回神太阳都快下山了。",
     "categories": [
       "每日学习",
       "08:00",
-      "口语"
+      "口语",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-11 08:00",
-    "last_seen": "2026-10-11 08:00",
+    "last_seen": "2026-11-22 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-11"
+      "2026-10-11",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-10-11 08:00"
+      "2026-10-11 08:00",
+      "2026-11-22 18:00"
     ]
   },
   {
