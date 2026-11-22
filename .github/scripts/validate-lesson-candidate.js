@@ -255,7 +255,9 @@ const validate=function validate({lesson,index,runtime,rules,expectedDate,expect
     if(SL){const rw=Array.isArray(lesson.rewrite)?lesson.rewrite:[],tw=rw.filter(x=>x&&x.kind==="twist");
       check(tw.length===1&&str(tw[0].frame)&&/……|___/.test(tw[0].frame)&&rw.every(x=>x&&(x.kind==="twist"||x.kind==="challenge")),"PHASE_PM_SLIM_REWRITE","Review phase: exactly one rewrite with kind \"twist\" and a fill-in frame (blanks as …… or ___); any other rewrite must be the Sunday challenge");}
     const test=lesson.daily_test,qs=Array.isArray(test?.questions)?test.questions:[];
-    check(!has(test,"items")&&qs.length===6&&qs.filter(q=>q?.type==="choice").length===3&&qs.filter(q=>q?.type==="fill").length===2&&qs.filter(q=>q?.type==="order").length===1,"PM_TEST_SCHEMA","Only 3 choice + 2 fill + 1 order in questions");
+    // 2026-11-22: the Sunday weekly test is 4 choice + 3 fill + 2 order from weekly_test_size.from; every other PM 3 + 2 + 1.
+    const TS=RP.pmTestShape(phase,date,themes);
+    check(!has(test,"items")&&qs.length===TS.choice+TS.fill+TS.order&&qs.filter(q=>q?.type==="choice").length===TS.choice&&qs.filter(q=>q?.type==="fill").length===TS.fill&&qs.filter(q=>q?.type==="order").length===TS.order,"PM_TEST_SCHEMA","Only "+TS.choice+" choice + "+TS.fill+" fill + "+TS.order+" order in questions");
     qs.filter(q=>q?.type==="choice").forEach((q,i)=>choice(q,i,"prompt"));
     qs.filter(q=>q?.type==="fill").forEach((q,i)=>check(/^填空\s*[：:]/.test(q.prompt||"")&&/[（(][^（）()]+[）)]/.test(q.prompt||"")&&str(q.answer)&&str(q.explain),"PM_FILL_INVALID","Fill "+(i+1)));
     qs.filter(q=>q?.type==="order").forEach(q=>{

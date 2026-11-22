@@ -128,4 +128,14 @@ if(require.main===module){
   if(!validDate(a.date)){console.error('--date YYYY-MM-DD required');process.exit(2)}
   console.log(JSON.stringify(describe(a.date,a.session),null,2));
 }
-module.exports={load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,storyRule,weekStart,weekAms,storyPlan,pmSlim,amSlim,amZh2id,pmPractice,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};
+/** 2026-11-22 (user decision, REVIEW-PHASE.md 第四节): from `weekly_test_size.from` on, the Sunday (weekly_test) 18:00
+ * test is a real weekly quiz of 9 questions (4 choice + 3 fill + 2 order); every other PM keeps 3 + 2 + 1. */
+const PM_TEST_STD={choice:3,fill:2,order:1};
+function pmTestShape(phase,date,themes){
+  const s=phase&&phase.weekly_test_size;
+  if(!(on(phase,date)&&s&&typeof s==='object'&&validDate(s.from)&&String(date)>=s.from))return {...PM_TEST_STD};
+  let plan=null;try{plan=dayPlan(phase,date,themes===undefined?loadThemes():themes)}catch(e){plan=null}
+  if(!plan||plan.day_role!=='weekly_test')return {...PM_TEST_STD};
+  return {choice:s.choice,fill:s.fill,order:s.order};
+}
+module.exports={pmTestShape,load,on,counts,recurrenceMin,loadThemes,dayPlan,goals,storyRule,weekStart,weekAms,storyPlan,pmSlim,amSlim,amZh2id,pmPractice,describe,LEGACY,ROLES,PM_FIVE_FROM,PM_FIVE};
