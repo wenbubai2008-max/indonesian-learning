@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-22",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 93
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-21T23:40:28.706Z",
-    "lesson_watermark": "2026-11-21 18:00",
-    "index_updated": "2026-11-21",
-    "runtime_hash": "ff7c7c00d00b9e4774ad1293569cd475d2f6c6d03b1af59c4aa4f5bc4fd18bae",
-    "index_hash": "0991359a49515cea0d17b2e8c359be4437e951c97d74d621be27c4e779daa912",
+    "runtime_generated_at": "2026-11-22T00:31:59.958Z",
+    "lesson_watermark": "2026-11-22 08:00",
+    "index_updated": "2026-11-22",
+    "runtime_hash": "ad61b31d5c58b5851f7487bdbe3a07d3f158e78522330305314056c064db8283",
+    "index_hash": "9f2328220e06197d6792b248bd6ed86732175118eb79862a4e62adae9eb83f83",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -682,16 +682,6 @@
         "随口插话；突然说一句"
       ],
       [
-        "sesuai",
-        3,
-        0,
-        "",
-        "2026-11-15T03:36:49.720Z",
-        "符合；适合；与……一致",
-        "suai",
-        "匹配；合适"
-      ],
-      [
         "menarik",
         3,
         0,
@@ -870,16 +860,6 @@
         "听",
         "dengar",
         "听；听见"
-      ],
-      [
-        "mengetuk",
-        2,
-        0,
-        "",
-        "2026-10-23T23:28:43.003Z",
-        "敲",
-        "ketuk",
-        "敲；轻击"
       ],
       [
         "menyimpan",
@@ -1592,16 +1572,6 @@
         "步；步子"
       ],
       [
-        "memenuhi",
-        2,
-        0,
-        "",
-        "2026-10-22T15:35:34.705Z",
-        "满足；符合；装满",
-        "penuh",
-        "满"
-      ],
-      [
         "mengenai",
         2,
         0,
@@ -1702,26 +1672,6 @@
         "确定；一定"
       ],
       [
-        "berkencan",
-        2,
-        0,
-        "",
-        "2026-11-18T14:20:34.814Z",
-        "约会；谈恋爱（交往）",
-        "kencan",
-        "约会"
-      ],
-      [
-        "cemburu",
-        2,
-        0,
-        "",
-        "2026-11-18T14:21:25.435Z",
-        "吃醋；嫉妒（多指感情）",
-        "cemburu",
-        "吃醋"
-      ],
-      [
         "gengsi",
         2,
         0,
@@ -1752,16 +1702,6 @@
         "爱打听（口语）"
       ],
       [
-        "nyesel",
-        2,
-        1,
-        "2026-10-15T07:43:08.156Z",
-        "2026-10-27T07:31:10.456Z",
-        "后悔（口语）",
-        "sesal",
-        "懊悔"
-      ],
-      [
         "selamanya",
         2,
         0,
@@ -1780,26 +1720,6 @@
         "忠诚的；专一的",
         "setia",
         "忠诚"
-      ],
-      [
-        "bahas",
-        3,
-        0,
-        "",
-        "2026-11-18T14:19:31.601Z",
-        "讨论；剖析（口语常直接用词根，正式用 membahas）",
-        "bahas",
-        "讨论；剖析"
-      ],
-      [
-        "catat",
-        3,
-        0,
-        "",
-        "2026-11-18T14:21:14.800Z",
-        "记下；记录（口语常直接用词根，正式用 mencatat）",
-        "catat",
-        "记下；记录"
       ],
       [
         "kecelakaan",
@@ -1880,16 +1800,6 @@
         "努力、尝试",
         "upaya",
         "努力；办法"
-      ],
-      [
-        "mengetik",
-        2,
-        1,
-        "2026-10-23T23:28:35.532Z",
-        "2026-11-03T09:40:13.572Z",
-        "打字；用键盘输入",
-        "ketik",
-        "打字；键入"
       ],
       [
         "meminjam",
@@ -2250,6 +2160,136 @@
         "努力、设法",
         "usaha",
         ""
+      ],
+      [
+        "meningkatkan",
+        3,
+        0,
+        "",
+        "2026-10-23T23:30:17.287Z",
+        "提高某事物",
+        "tingkat",
+        ""
+      ],
+      [
+        "menyampaikan",
+        4,
+        1,
+        "2026-10-09T07:56:00.191Z",
+        "2026-10-22T15:26:08.123Z",
+        "传达；表达",
+        "",
+        ""
+      ],
+      [
+        "anjuran",
+        2,
+        0,
+        "",
+        "2026-10-26T07:45:54.349Z",
+        "建议；劝告；医嘱",
+        "anjur",
+        "劝；建议"
+      ],
+      [
+        "bergerak",
+        2,
+        0,
+        "",
+        "2026-10-22T15:33:43.005Z",
+        "移动；行动；活动身体",
+        "gerak",
+        "动；动作"
+      ],
+      [
+        "keras kepala",
+        2,
+        0,
+        "",
+        "2026-10-24T02:34:31.296Z",
+        "固执；倔",
+        "keras",
+        "硬的；强烈的"
+      ],
+      [
+        "peregangan",
+        2,
+        0,
+        "",
+        "2026-10-26T07:50:33.411Z",
+        "拉伸；伸展运动",
+        "regang",
+        "绷紧；伸展"
+      ],
+      [
+        "tubuh",
+        3,
+        0,
+        "",
+        "2026-10-26T07:50:47.650Z",
+        "身体；躯体",
+        "tubuh",
+        "身体"
+      ],
+      [
+        "walaupun",
+        3,
+        0,
+        "",
+        "2026-11-15T03:37:05.968Z",
+        "虽然、即使",
+        "walau",
+        "虽然；即使"
+      ],
+      [
+        "asyik",
+        2,
+        0,
+        "",
+        "2026-10-26T07:50:48.890Z",
+        "有趣；好玩；享受；入迷",
+        "asyik",
+        "有趣的；入迷的"
+      ],
+      [
+        "mengetik",
+        2,
+        1,
+        "2026-10-23T23:28:35.532Z",
+        "2026-11-03T09:40:13.572Z",
+        "打字；用键盘输入",
+        "ketik",
+        "打字；键入"
+      ],
+      [
+        "mengetuk",
+        2,
+        0,
+        "",
+        "2026-10-23T23:28:43.003Z",
+        "敲",
+        "ketuk",
+        "敲；轻击"
+      ],
+      [
+        "sesuai",
+        3,
+        0,
+        "",
+        "2026-11-15T03:36:49.720Z",
+        "符合；适合；与……一致",
+        "suai",
+        "匹配；合适"
+      ],
+      [
+        "memenuhi",
+        2,
+        0,
+        "",
+        "2026-10-22T15:35:34.705Z",
+        "满足；符合；装满",
+        "penuh",
+        "满"
       ]
     ],
     "focus": [
@@ -2717,6 +2757,18 @@
         "perkirakan"
       ],
       "new_words": []
+    },
+    {
+      "date": "2026-11-22",
+      "session": "am",
+      "review_core": [
+        "nyesel",
+        "bahas",
+        "berkencan",
+        "catat",
+        "cemburu"
+      ],
+      "new_words": []
     }
   ],
   "previous_pm": {
@@ -2731,7 +2783,60 @@
       "perkirakan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-22",
+    "vocab": [
+      [
+        "golongan darah",
+        "血型",
+        "blood type",
+        "darah",
+        "血"
+      ],
+      [
+        "seolah-olah",
+        "仿佛；好像（看起来像……，实际上不一定）",
+        "as if; as though",
+        "olah",
+        "样子；举止（古义）"
+      ],
+      [
+        "mengetik",
+        "打字；（用键盘、手机）输入",
+        "to type",
+        "ketik",
+        "打字；敲（键盘）"
+      ],
+      [
+        "mengetuk",
+        "敲（门、窗、桌子）",
+        "to knock; to tap",
+        "ketuk",
+        "敲；叩"
+      ],
+      [
+        "sesuai",
+        "符合；与……一致；适合",
+        "in accordance with; matching; suitable",
+        "suai",
+        "相配；协调"
+      ],
+      [
+        "memenuhi",
+        "满足；达到（要求）；符合；装满",
+        "to meet (requirements); to fulfil; to fill",
+        "penuh",
+        "满的"
+      ]
+    ],
+    "review_vocab": [
+      "nyesel",
+      "bahas",
+      "berkencan",
+      "catat",
+      "cemburu"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

@@ -10614,23 +10614,27 @@ window.DAILY_VOCAB_DB = [
     "en": "suitable; appropriate; in accordance with",
     "root": "suai",
     "root_cn": "匹配；合适",
-    "example": "Kita cari tempat yang sesuai sama kebutuhan semua anggota.",
-    "example_cn": "我们找一个符合所有成员需求的地方。",
+    "example": "Barang yang tidak sesuai dengan foto pasti mengecewakan pembeli.",
+    "example_cn": "和照片对不上的货，肯定会让买家失望。",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-14 19:00",
-    "last_seen": "2026-09-14 19:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-14"
+      "2026-09-14",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-09-14 19:00"
+      "2026-09-14 19:00",
+      "2026-11-22 08:00"
     ]
   },
   {
@@ -13439,23 +13443,25 @@ window.DAILY_VOCAB_DB = [
     "en": "knock; tap",
     "root": "ketuk",
     "root_cn": "敲；轻击",
-    "example": "Dia mengetuk pintu sebelum masuk ke ruang rapat.",
-    "example_cn": "他进入会议室前先敲了门。",
+    "example": "Kurirnya sudah mengetuk pintu tiga kali, tapi nggak ada yang buka.",
+    "example_cn": "快递员已经敲了三次门，可是没人开。（nggak = tidak）",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-23 08:00",
-    "last_seen": "2026-09-23 08:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-23"
+      "2026-09-23",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-09-23 08:00"
+      "2026-09-23 08:00",
+      "2026-11-22 08:00"
     ]
   },
   {
@@ -15413,16 +15419,16 @@ window.DAILY_VOCAB_DB = [
     "en": "as if; as though",
     "root": "olah",
     "root_cn": "处理；操练（词形关联）",
-    "example": "Trailernya dibuat seolah-olah film itu penuh aksi, padahal sebagian besar adegannya hanya percakapan.",
-    "example_cn": "预告片剪得好像那部电影全是动作场面，其实大部分镜头只是对话。",
+    "example": "Dia memukul meja, seolah-olah semua masalah ini salah kami.",
+    "example_cn": "他一拍桌子，好像这些问题全是我们的错似的。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-27 08:00",
-    "last_seen": "2026-10-22 18:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -15430,12 +15436,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-27",
       "2026-10-16",
-      "2026-10-22"
+      "2026-10-22",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
       "2026-09-27 08:00",
       "2026-10-16 18:00",
-      "2026-10-22 18:00"
+      "2026-10-22 18:00",
+      "2026-11-22 08:00"
     ]
   },
   {
@@ -18352,23 +18360,25 @@ window.DAILY_VOCAB_DB = [
     "en": "to fulfil; to meet; to fill",
     "root": "penuh",
     "root_cn": "满",
-    "example": "Pelamar harus memenuhi semua syarat yang tertulis di pengumuman.",
-    "example_cn": "应聘者必须符合公告上写的所有条件。",
+    "example": "Pelamar yang memenuhi syarat akan dihubungi lewat email minggu depan.",
+    "example_cn": "符合条件的应聘者下周会通过邮件联系。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-04 08:00",
-    "last_seen": "2026-10-04 08:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-10-04 08:00"
+      "2026-10-04 08:00",
+      "2026-11-22 08:00"
     ]
   },
   {
@@ -18867,17 +18877,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-06 08:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-11-22 08:00"
     ]
   },
   {
@@ -18892,17 +18904,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-06 08:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-11-22 08:00"
     ]
   },
   {
@@ -19073,17 +19087,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-06 08:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-11-22 08:00"
     ]
   },
   {
@@ -19121,19 +19137,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "我们午饭后再商量周末的计划吧。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-06 18:00",
-    "last_seen": "2026-10-06 18:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-10-06 18:00"
+      "2026-10-06 18:00",
+      "2026-11-22 08:00"
     ]
   },
   {
@@ -19146,19 +19166,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "请先把订单号记下来，这样好查。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-06 18:00",
-    "last_seen": "2026-10-06 18:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-10-06 18:00"
+      "2026-10-06 18:00",
+      "2026-11-22 08:00"
     ]
   },
   {
@@ -19507,24 +19531,28 @@ window.DAILY_VOCAB_DB = [
     "en": "to type; to key in",
     "root": "ketik",
     "root_cn": "打字；键入",
-    "example": "Dia mengetik surat lamaran itu sampai jam sepuluh malam.",
-    "example_cn": "他一直打那封求职信打到晚上十点。",
+    "example": "Ayah bisa menghabiskan sepuluh menit cuma buat mengetik satu pesan, soalnya dia pakai dua jari.",
+    "example_cn": "爸爸打一条消息能花掉十分钟，因为他只用两根手指打字。（cuma = hanya，buat = untuk）",
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-07 18:00",
-    "last_seen": "2026-10-07 18:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-07"
+      "2026-10-07",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-10-07 18:00"
+      "2026-10-07 18:00",
+      "2026-11-22 08:00"
     ]
   },
   {
@@ -24528,23 +24556,25 @@ window.DAILY_VOCAB_DB = [
     "en": "blood type",
     "root": "golong",
     "root_cn": "类；组",
-    "example": "Untuk tugas sekolah, Dimas menanyakan golongan darah setiap anggota keluarga.",
-    "example_cn": "为了学校作业，迪马斯问了家里每个人的血型。",
+    "example": "Sebelum donor darah, petugas PMI menanyakan golongan darahku dan mengecek tekanan darah.",
+    "example_cn": "献血前，红十字会的工作人员问了我的血型，还量了血压。（PMI = 印尼红十字会）",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-22 08:00",
-    "last_seen": "2026-10-22 08:00",
+    "last_seen": "2026-11-22 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-22"
+      "2026-10-22",
+      "2026-11-22"
     ],
     "lesson_occurrences": [
-      "2026-10-22 08:00"
+      "2026-10-22 08:00",
+      "2026-11-22 08:00"
     ]
   },
   {
