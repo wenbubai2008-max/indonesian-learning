@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-22T07:52:50.169Z",
+  "updated_at": "2026-11-22T13:09:56.917Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -72,7 +72,7 @@
     "nagih": {
       "word": "nagih",
       "status": "active",
-      "updated_at": "2026-11-21T15:21:17.671Z",
+      "updated_at": "2026-11-22T12:46:12.725Z",
       "display": "nagih",
       "cn": "催；催款；讨要欠款（口语）",
       "root": "tagih",
@@ -1431,14 +1431,20 @@
     "kalah": {
       "word": "kalah",
       "status": "active",
-      "updated_at": "2026-11-20T05:15:18.137Z",
+      "updated_at": "2026-11-22T12:51:31.105Z",
       "display": "kalah",
-      "last_review": "2026-11-20T05:15:18.073Z",
+      "cn": "输；败；比不过",
+      "last_wrong": "2026-11-22T12:51:31.027Z",
+      "last_review": "2026-11-22T12:51:31.027Z",
+      "source": "课程回想",
+      "source_date": "2026-11-22",
+      "session": "18:00",
       "reasons": [
-        "memory_dont"
+        "memory_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 0,
-      "right_streak": 4
+      "wrong_count": 1,
+      "right_streak": 0
     },
     "persen": {
       "word": "persen",
@@ -3913,8 +3919,11 @@
     "gengsi": {
       "word": "gengsi",
       "status": "active",
-      "updated_at": "2026-11-20T05:14:15.278Z",
+      "updated_at": "2026-11-22T12:52:46.800Z",
       "display": "gengsi",
+      "cn": "爱面子；拉不下脸",
+      "root": "gengsi",
+      "root_cn": "面子；体面",
       "last_review": "2026-11-20T05:14:15.214Z",
       "reasons": [
         "memory_dont"
@@ -8287,8 +8296,11 @@
     "angkatan": {
       "word": "angkatan",
       "status": "active",
-      "updated_at": "2026-11-11T10:37:48.765Z",
+      "updated_at": "2026-11-22T12:56:18.870Z",
       "display": "angkatan",
+      "cn": "（学校的）届、年级；批次",
+      "root": "angkat",
+      "root_cn": "抬；举；任命",
       "last_review": "2026-11-11T10:37:48.705Z",
       "reasons": [
         "memory_fuzzy"
@@ -17842,9 +17854,11 @@
     "bahu": {
       "word": "bahu",
       "status": "active",
-      "updated_at": "2026-11-20T07:51:55.811Z",
+      "updated_at": "2026-11-22T12:54:11.235Z",
       "display": "bahu",
-      "cn": "肩",
+      "cn": "肩；肩膀",
+      "root": "bahu",
+      "root_cn": "肩",
       "last_review": "2026-11-20T07:51:55.706Z",
       "source": "BIPA secondary selection",
       "source_date": "2026-09-17",
@@ -23966,10 +23980,11 @@
     "ucap": {
       "word": "ucap",
       "status": "active",
-      "updated_at": "2026-11-12T04:06:53.390Z",
+      "updated_at": "2026-11-22T12:53:37.939Z",
       "display": "ucap",
-      "cn": "说；表达",
+      "cn": "说；表达（常用于引语）",
       "root": "ucap",
+      "root_cn": "说；表达",
       "last_review": "2026-11-12T04:06:53.331Z",
       "reasons": [
         "memory_fuzzy"
@@ -30505,19 +30520,23 @@
     "nyinggung": {
       "word": "nyinggung",
       "status": "active",
-      "updated_at": "2026-11-11T03:24:33.146Z",
+      "updated_at": "2026-11-22T13:09:46.071Z",
       "display": "nyinggung",
-      "cn": "提到；触及；说到让人不舒服的话题（口语）",
+      "cn": "冒犯；提到、触及（口语）",
       "root": "singgung",
       "root_cn": "触及；提到",
-      "last_wrong": "2026-09-28T14:43:57.046Z",
-      "last_review": "2026-11-11T03:24:33.085Z",
+      "last_wrong": "2026-11-22T13:09:45.996Z",
+      "last_review": "2026-11-22T13:09:45.996Z",
+      "source": "课程小测",
+      "source_date": "2026-11-22",
+      "session": "18:00",
       "reasons": [
         "automation_fail",
-        "memory_dont"
+        "memory_dont",
+        "lesson_wrong"
       ],
-      "wrong_count": 3,
-      "right_streak": 4
+      "wrong_count": 4,
+      "right_streak": 0
     },
     "nangkep": {
       "word": "nangkep",
