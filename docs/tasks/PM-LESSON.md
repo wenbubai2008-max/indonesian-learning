@@ -176,7 +176,7 @@ PM 专用的运行要求：
 - reading 使用 {text,cn}。
 - dialogue 必须是 {title,lines:[{speaker,id,cn},...]}，其中 id 存放印尼语台词，不是数字编号。
 - rewrite 必须为 3–4 个：{task,reference_answer,reference_cn}。（复习阶段 2026-11-17 起：只 1 个带 `frame` 的转折题，周日加挑战题，见 `REVIEW-PHASE.md` 3.1。）
-- daily_test 必须使用 questions，禁止使用 items：
+- daily_test 必须使用 questions，禁止使用 items：（题数：平时 3 选择 + 2 填空 + 1 排序；复习阶段周日本周小测 2026-11-29 起是 4 + 3 + 2，见 `REVIEW-PHASE.md` 第四节）
   - choice：{type:"choice",prompt,options,answer_index,answer,explain}
   - fill：{type:"fill",prompt,answer,explain}
   - order：{type:"order",prompt,tokens,answer,answer_cn,explain}

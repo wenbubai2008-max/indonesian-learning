@@ -7,7 +7,7 @@
   if(!document.getElementById('dailyLightPatchStyle')){
     const st=document.createElement('style');
     st.id='dailyLightPatchStyle';
-    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.dailyLightExtra .dailyFixAnswer{margin-top:8px}.dailyLightSelf{margin-top:12px;padding:10px 12px;background:#f8faff;border-radius:10px}.dailyLightFrame{margin:9px 0 4px;padding:9px 12px;background:#f6f8fc;border:1px dashed #c9d4e6;border-radius:10px;color:#1e3a8a;font-weight:600;line-height:1.7}.dailyLightFrame span{display:block;font-size:12.5px;font-weight:500;color:#667085;margin-bottom:2px}.dailyLightSelf ul{margin:7px 0 0;padding-left:20px}.dailyLightSelf li{margin:4px 0}.dailyLightStuck{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:5px 0 2px;font-size:12px;color:#667085}.dailyLightStuck button{border:1px solid #dce3ef;background:#fff;border-radius:999px;padding:3px 10px;font-size:12px;color:#3b465b;cursor:pointer}.dailyLightStuck button.done{background:#fff4e5;border-color:#f5c27a;color:#7a4b00}';
+    st.textContent='.dailyAmTaught{display:block;margin:0 0 6px;color:#3157d5;font-weight:800}.dailyLightToken{width:auto!important;min-width:72px!important}.dailyLightOrderOut{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.dailyLightExtra .dailyFixAnswer{margin-top:8px}.dailyLightSelf{margin-top:12px;padding:10px 12px;background:#f8faff;border-radius:10px}.dailyLightFrame{margin:9px 0 4px;padding:9px 12px;background:#f6f8fc;border:1px dashed #c9d4e6;border-radius:10px;color:#1e3a8a;font-weight:600;line-height:1.7}.dailyLightFrame span{display:block;font-size:12.5px;font-weight:500;color:#667085;margin-bottom:2px}.dailyLightSelf ul{margin:7px 0 0;padding-left:20px}.dailyLightSelf li{margin:4px 0}.dailyLightStuck{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:5px 0 2px;font-size:12px;color:#667085}.dailyLightStuck button{border:1px solid #dce3ef;background:#fff;border-radius:999px;padding:3px 10px;font-size:12px;color:#3b465b;cursor:pointer}.dailyLightStuck button.done{background:#fff4e5;border-color:#f5c27a;color:#7a4b00}.dailyWeekWords{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}.dailyWeekWords span{padding:3px 10px;border-radius:999px;background:#eef3ff;color:#3157d5;font-weight:700;font-size:14px}.dailyChallengeSteps{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 0 10px;font-weight:700}.dailyChallengeSteps span{padding:3px 10px;border-radius:999px;background:#fff4e5;color:#b45309}.dailyChallengeSteps em{font-style:normal;color:#9ca3af}';
     document.head.appendChild(st);
   }
 
@@ -78,11 +78,15 @@
     const stuck=x=>{const ws=api&&typeof api.mentioned==='function'?api.mentioned(lesson,x):[];return ws.length?`<div class="dailyLightStuck"><span>卡住了就点：</span>${ws.map(v=>`<button type="button" data-word="${esc(v.word)}" data-cn="${esc(v.cn||'')}" data-date="${esc(lesson.date||'')}" onclick="lessonSelfStuck(this)">${esc(v.word)}</button>`).join('')}</div>`:''};
     return `<div class="dailyLightSelf"><b>自检</b><ul>${items.map(x=>`<li>${esc(x)}${stuck(x)}</li>`).join('')}</ul></div>`;
   }
+  // 2026-11-22 (user decision): the review-phase Sunday PM test is the weekly quiz — label it and list the week's words.
+  function isWeeklyTest(t,x){return !!(x&&x.phase&&x.phase.day_role==='weekly_test'&&t&&Array.isArray(t.week_words)&&t.week_words.length)}
   function renderTest(t,x){
-    let h='<div class="dailyFixMeta" style="margin-bottom:10px">轻量检测今天刚学的内容，不追求全对，也不用写长句。</div>';
+    const wk=isWeeklyTest(t,x);
+    let h=wk?`<div class="dailyFixMeta" style="margin-bottom:8px">本周小测：考这一周（周一到今天）课里学过的词，不追求全对，做完对照解析。</div><div class="dailyWeekWords">${t.week_words.map(w=>`<span>${esc(w)}</span>`).join('')}</div>`
+      :'<div class="dailyFixMeta" style="margin-bottom:10px">轻量检测今天刚学的内容，不追求全对，也不用写长句。</div>';
     const questions=(Array.isArray(t.items)&&t.items.length)?t.items:(Array.isArray(t.questions)?t.questions:[]);questions.forEach((it,i)=>{if(it.type==='choice')h+=choice(it,i);else if(it.type==='fill')h+=fill(it,i);else if(it.type==='order')h+=order(it,i)});
     h+=selfCheckHtml(t.self_check,x);
-    return sec(t.title||'当日小测 · 5–8分钟',h,'dailyLightTest');
+    return sec(wk?'📝 本周小测':(t.title||'当日小测 · 5–8分钟'),h,'dailyLightTest');
   }
 
   function taskHtml(it,i){
@@ -94,8 +98,18 @@
     return `<div class="dailyFixItem"><b>${i+1}. ${esc(task)}</b>${frame}${ans?`<br><button class="dailyFixToggle" onclick="this.parentElement.classList.toggle('dailyFixOpen')">参考答案</button><div class="dailyFixAnswer"><div class="dailyFixId">${esc(ans)}</div>${cn?`<div class="dailyFixCnLine">${esc(cn)}</div>`:''}</div>`:''}</div>`;
   }
   function rewriteHtml(x){
-    if(!Array.isArray(x.rewrite)||!x.rewrite.length)return '';
-    return sec('主动改写 · 应用练习',x.rewrite.map(taskHtml).join(''),'dailyLightExtra dailyRewritePatch');
+    const rw=Array.isArray(x.rewrite)?x.rewrite.filter(r=>!(r&&r.kind==='challenge')):[];
+    if(!rw.length)return '';
+    return sec('主动改写 · 应用练习',rw.map(taskHtml).join(''),'dailyLightExtra dailyRewritePatch');
+  }
+  // 2026-11-22 (user decision): the Sunday open-speaking challenge gets its own section with the week's three steps.
+  function challengeHtml(x,fnNames){
+    const ch=Array.isArray(x.rewrite)?x.rewrite.filter(r=>r&&r.kind==='challenge'):[];if(!ch.length)return '';
+    return sec('🎤 开口挑战',ch.map((it,i)=>{
+      const steps=(Array.isArray(it.functions)?it.functions:[]).map(id=>fnNames[id]||'').filter(Boolean);
+      const head=steps.length?`<div class="dailyChallengeSteps">按顺序说：${steps.map((n,j)=>`<span>${j+1}. ${esc(n)}</span>`).join('<em>→</em>')}</div>`:'';
+      return head+taskHtml(it,i).replace('<b>1. ','<b>');
+    }).join(''),'dailyLightExtra dailyChallengePatch');
   }
   function finalReviewHtml(x){
     if(!x.review||Array.isArray(x.review))return '';
@@ -141,6 +155,10 @@
       const done=body.lastElementChild;
       if(Array.isArray(x.rewrite)&&x.rewrite.length&&!body.querySelector('.dailyRewritePatch')){
         const wrap=document.createElement('div');wrap.innerHTML=rewriteHtml(x);const node=wrap.firstElementChild;if(node){if(done)body.insertBefore(node,done);else body.appendChild(node)}
+      }
+      if(Array.isArray(x.rewrite)&&x.rewrite.some(r=>r&&r.kind==='challenge')&&!body.querySelector('.dailyChallengePatch')){
+        let fnNames={};try{const th=await fetchJSON('data/themes.json');(th.themes||[]).forEach(t=>(t.functions||[]).forEach(f=>{if(f&&f.id)fnNames[f.id]=f.cn||''}))}catch(e){}
+        const wrap=document.createElement('div');wrap.innerHTML=challengeHtml(x,fnNames);const node=wrap.firstElementChild;if(node){if(done)body.insertBefore(node,done);else body.appendChild(node)}
       }
       if(x.daily_test&&!body.querySelector('.dailyLightTest')){
         const wrap=document.createElement('div');wrap.innerHTML=renderTest(x.daily_test,x);const node=wrap.firstElementChild;if(node){if(done)body.insertBefore(node,done);else body.appendChild(node)}

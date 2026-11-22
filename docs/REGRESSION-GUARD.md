@@ -875,3 +875,9 @@
 - `theme-word-pool.js`：已教、已 mastered、属于 977/BIPA 的词自动跳过；某周词表在 `lesson_watermark ≥ 开始日前一天 18:00`（上周日晚课发布、Sync 重算后）才生效，所以周日晚课仍按旧 runtime 校验；每次只把下 `per_lesson`=2 个未教词放进 `new_pool` 并归为 dont。早课在复习循环里教这 2 个、其余是循环词；Sync 重算后晚课拿到下 2 个，`new = min(可用, pm_new 上限)` 正好是 2。没教完的词顺延到下周、排在新一周的词前面。
 - 教过、没有 weakness 记录的主题词以 priority 2 追加进 `review_pool`（最多 40 个，最久没出现的在前），同时从 legacy 未验证池里排除，不计入 `review_pool_total_full` 等 A ∩ D 统计（词汇画像校验不变）；有了 weakness 记录后完全按原规则，mastered 不再出现。
 - 构建工作流在 `data/theme-words.json`、`theme-word-pool.js`、`test-theme-word-pool.js` 变化时重算 runtime；回归守卫跑 `test-theme-word-pool.js`。下周词表由每周日上午的定时任务按 `docs/tasks/THEME-WORDS.md` 起草、推送给用户确认，不新增 workflow。
+
+## 2026-11-22：周日「本周小测」标出来 + 加量（用户决定）
+
+- 问题：周日晚课其实已经有本周小测（`daily_test.week_words`）和开口挑战（`rewrite` 里 `kind: "challenge"`），但网页把小测显示成普通的「当日小测」、挑战题混在「主动改写」里，用户看不出当天是测验。
+- **网页**（`daily-light-test.js`）：复习阶段 `phase.day_role = weekly_test` 且有 `week_words` 时，小测标题改为「📝 本周小测」，下面列出本周考的词；`kind: "challenge"` 的题从「主动改写」里拿出来，单独成「🎤 开口挑战」一节，按 `functions` 从 `data/themes.json` 显示三步顺序（如 说明问题 → 解释原因 → 提出办法）。其他晚课显示不变。
+- **题量**：`data/review-phase.json` 的 `weekly_test_size`（from 2026-11-29）：周日晚课小测 4 选择 + 3 填空 + 2 排序 = 9 题；`review-phase.js` 的 `pmTestShape()` 统一给出题型数，校验器 `PM_TEST_SCHEMA`、守卫的历史 / 近期 / 最新晚课检查都改用它。2026-11-22 及之前的周日、其他所有晚课仍是 3 + 2 + 1。

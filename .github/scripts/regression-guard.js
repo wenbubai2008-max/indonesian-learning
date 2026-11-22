@@ -12,6 +12,7 @@ const OLD_COUNTS = { am_cards:[10,10], am_reading:[80,120], pm_core:[10,12], pm_
 const PC = d => RPH ? RPH.counts(PHASE, d) : JSON.parse(JSON.stringify(OLD_COUNTS)), PON = d => !!RPH && RPH.on(PHASE, d);
 // Dated review-phase rules (REGRESSION-GUARD §50/§52/§53): the real-lesson checks below follow the rule in force on each date.
 const STORY = d => (RPH && typeof RPH.storyRule === 'function') ? RPH.storyRule(PHASE, d) : null;
+const PTS = d => (RPH && typeof RPH.pmTestShape === 'function') ? RPH.pmTestShape(PHASE, d) : {choice:3,fill:2,order:1};
 const PSLIM = d => !!(RPH && typeof RPH.pmSlim === 'function' && RPH.pmSlim(PHASE, d));
 // 2026-11-17 (§57): from am_zh2id.from a review-phase AM's review-quiz item may be a 中文→选印尼语 item whose target is review_vocab.
 const AZH = d => !!(RPH && typeof RPH.amZh2id === 'function' && RPH.amZh2id(PHASE, d));
@@ -92,7 +93,8 @@ function validateRecentDailyWindow(){
         const t=x.daily_test||{};
         const questions=Array.isArray(t.questions)?t.questions:[];
         ok(x.write_status==='lesson_complete',`canonical history ${row.date} pm: lesson_complete`);
-        ok(!Object.prototype.hasOwnProperty.call(t,'items')&&questions.length===6&&questions.filter(q=>q&&q.type==='choice').length===3&&questions.filter(q=>q&&q.type==='fill').length===2&&questions.filter(q=>q&&q.type==='order').length===1,`canonical history ${row.date} pm: only standard 3+2+1 questions container`);
+        const ts=PTS(row.date);
+        ok(!Object.prototype.hasOwnProperty.call(t,'items')&&questions.length===ts.choice+ts.fill+ts.order&&questions.filter(q=>q&&q.type==='choice').length===ts.choice&&questions.filter(q=>q&&q.type==='fill').length===ts.fill&&questions.filter(q=>q&&q.type==='order').length===ts.order,`canonical history ${row.date} pm: only standard ${ts.choice}+${ts.fill}+${ts.order} questions container`);
       }
     }
   }
@@ -154,7 +156,8 @@ function validateRecentDailyWindow(){
         const recentChoice=recentQuestions.filter(q=>q&&q.type==='choice').length;
         const recentFill=recentQuestions.filter(q=>q&&q.type==='fill').length;
         const recentOrder=recentQuestions.filter(q=>q&&q.type==='order').length;
-        ok(recentQuestions.length===6&&recentChoice===3&&recentFill===2&&recentOrder===1,`recent PM ${d}: daily_test is 3 choice + 2 fill + 1 order`);
+        const rts=PTS(d);
+        ok(recentQuestions.length===rts.choice+rts.fill+rts.order&&recentChoice===rts.choice&&recentFill===rts.fill&&recentOrder===rts.order,`recent PM ${d}: daily_test is ${rts.choice} choice + ${rts.fill} fill + ${rts.order} order`);
         ok(x.review&&!Array.isArray(x.review)&&Array.isArray(x.review.steps)&&x.review.steps.length>0,`recent PM ${d}: final review canonical`);
         if(d>='2026-09-26'){
           const ap='data/daily/'+d+'-am.json';
@@ -356,7 +359,8 @@ function validateLatestPm(){
   const choices = items.filter(x => x && x.type === 'choice');
   const fills = items.filter(x => x && x.type === 'fill');
   const orders = items.filter(x => x && x.type === 'order');
-  ok(items.length === 6 && choices.length === 3 && fills.length === 2 && orders.length === 1, `latest PM ${date}: daily_test is 3 choice + 2 fill + 1 order`);
+  const lts = PTS(date);
+  ok(items.length === lts.choice + lts.fill + lts.order && choices.length === lts.choice && fills.length === lts.fill && orders.length === lts.order, `latest PM ${date}: daily_test is ${lts.choice} choice + ${lts.fill} fill + ${lts.order} order`);
 
   choices.forEach((x,i) => {
     const opts = Array.isArray(x.options) ? x.options : [];
@@ -1022,6 +1026,17 @@ try {
       'runtime builder exposes explicitly filtered unfamiliar first-learning pool');
     try{require('./test-unfamiliar-lesson-pool').run();ok(true,'unfamiliar learning eligibility tests')}
     catch(e){ok(false,'unfamiliar learning eligibility tests: '+e.message)}
+  }
+
+  // 2026-11-22: the Sunday PM weekly quiz is labelled on the page and grows to 4+3+2 from weekly_test_size.from.
+  if(process.env.GUARD_BASELINE_TREE!=='1'){
+    const lt2=read('data/daily-light-test.js'),rp2=JSON.parse(read('data/review-phase.json')),RPx=require('./review-phase');
+    ok(lt2.includes("'📝 本周小测'")&&lt2.includes('dailyWeekWords')&&lt2.includes("'🎤 开口挑战'")&&lt2.includes('dailyChallengePatch')&&lt2.includes("r.kind==='challenge'"),
+      'lesson page labels the Sunday weekly quiz (week words) and the open-speaking challenge separately');
+    const ws=rp2.weekly_test_size,sh=RPx.pmTestShape(rp2,'2026-11-29'),sh0=RPx.pmTestShape(rp2,'2026-11-22'),sh1=RPx.pmTestShape(rp2,'2026-11-30');
+    ok(ws&&ws.from==='2026-11-29'&&sh.choice===4&&sh.fill===3&&sh.order===2&&sh0.choice===3&&sh0.order===1&&sh1.choice===3&&sh1.fill===2,
+      'weekly test is 4+3+2 only on review-phase Sundays from 2026-11-29; other PMs stay 3+2+1');
+    ok(read('.github/scripts/validate-lesson-candidate.js').includes('const TS=RP.pmTestShape(phase,date,themes);'),'validator uses the Sunday weekly-test shape');
   }
 
   // 2026-11-21: user-approved theme-week words enter new_pool a couple at a time (data/theme-words.json).
