@@ -26,6 +26,30 @@
         {"word": "penyok", "cn": "压瘪；凹陷", "formal": "", "note": "Kardusnya penyok. 纸箱压瘪了"},
         {"word": "cabang", "cn": "网点；分店；分公司", "formal": "kantor cabang", "note": "Ambil di cabang terdekat. 去最近的网点取"}
       ]
+    },
+    {
+      "theme_id": "government",
+      "start_date": "2026-11-30",
+      "approved": true,
+      "approved_note": "2026-11-22 起草，用户可在周一早课前划掉",
+      "words": [
+        {"word": "fotokopi", "cn": "复印件；复印", "formal": "salinan", "note": "Bawa fotokopi KTP dua lembar. 带两张身份证复印件"},
+        {"word": "rangkap", "cn": "（复印/文件）份数", "formal": "", "note": "Fotokopi rangkap tiga. 复印三份"},
+        {"word": "legalisir", "cn": "（复印件）盖章认证", "formal": "legalisasi", "note": "Fotokopi ijazah harus dilegalisir. 毕业证复印件要盖章认证"},
+        {"word": "materai", "cn": "印花税票", "formal": "meterai", "note": "正式写法 meterai：Surat pernyataan pakai materai 10.000. 声明书要贴一万的印花"},
+        {"word": "pas foto", "cn": "证件照", "formal": "", "note": "Pas foto 3x4 latar merah, dua lembar. 3×4 红底证件照两张"},
+        {"word": "KK", "cn": "户口本（家庭卡）", "formal": "Kartu Keluarga", "note": "Bawa KTP dan KK asli. 带身份证和户口本原件"},
+        {"word": "surat pengantar", "cn": "介绍信（RT/RW 开的）", "formal": "", "note": "Minta surat pengantar dari RT dulu. 先找 RT 开介绍信"},
+        {"word": "kelurahan", "cn": "街道办；居委会", "formal": "kantor kelurahan", "note": "Urus surat domisili di kelurahan. 去街道办开居住证明"},
+        {"word": "domisili", "cn": "居住地；住址", "formal": "tempat tinggal", "note": "surat keterangan domisili 居住证明：Domisili Bapak di mana? 您住哪里？"},
+        {"word": "loket", "cn": "（办事）窗口", "formal": "", "note": "Silakan ke loket 3. 请到 3 号窗口"},
+        {"word": "nomor antrean", "cn": "排队号", "formal": "", "note": "口语也写 nomor antrian：Ambil nomor antrean dulu di mesin. 先在机器上取号"},
+        {"word": "formulir", "cn": "表格；申请表", "formal": "", "note": "Isi formulir ini dulu, Pak. 先填这张表"},
+        {"word": "surat kuasa", "cn": "委托书", "formal": "", "note": "Kalau diwakilkan, harus bawa surat kuasa. 找人代办要带委托书"},
+        {"word": "stempel", "cn": "公章；盖章", "formal": "cap", "note": "也常说 cap：Belum ada stempelnya, Bu. 还没盖章"},
+        {"word": "coret", "cn": "涂改；划掉", "formal": "mencoret", "note": "Formulirnya jangan dicoret-coret, nanti ditolak. 表格别涂改，不然会被退"},
+        {"word": "calo", "cn": "黄牛；（非正规）代办中介", "formal": "", "note": "Jangan lewat calo, urus sendiri saja. 别找黄牛，自己办"}
+      ]
     }
   ]
 }
