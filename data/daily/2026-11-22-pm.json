@@ -1,0 +1,388 @@
+{
+  "date": "2026-11-22",
+  "session": "pm",
+  "time": "18:00",
+  "day": 93,
+  "title": "18:00 晚课｜Kemeja Reuni Bernoda, Tanpa Video Unboxing · 聚会穿的衬衫有污渍，偏偏没拍开箱视频",
+  "write_status": "lesson_complete",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "weekly_test"
+  },
+  "new_words": [],
+  "vocab": [
+    {
+      "word": "walaupun",
+      "display": "walaupun",
+      "audio_text": "walaupun",
+      "cn": "虽然；尽管；即使",
+      "en": "although; even though",
+      "root": "walau",
+      "root_cn": "虽然；尽管",
+      "formation": "walau + -pun → walaupun（-pun 加强让步语气）。同组：walau（去掉 -pun 的简短形式，意思一样）。近义：meskipun、biarpun。常见搭配：Walaupun …, … tetap …（虽然……，还是……）、walaupun begitu（尽管如此）、walaupun sedikit（哪怕一点点）；也可以放在后半句：…, walaupun …（……，虽然……）。",
+      "example": "Walaupun sudah nyari ke beberapa toko, saya belum nemu charger yang cocok buat laptop lama ini.",
+      "example_cn": "虽然已经找了好几家店，我还是没找到适合这台旧笔记本电脑的充电器。（nyari = mencari，nemu = menemukan，buat = untuk）",
+      "synonym_note": "walaupun / walau / meskipun / biarpun 都是“虽然、尽管”，大多可以互换。walaupun 口语、书面都最常用；meskipun 稍正式，新闻、作文里多；biarpun 偏口语，常带“就算……也……”的味道；walau 更简短，标题、歌词和 walau begitu 这类说法里常见。规范印尼语里“虽然”和“但是”一般不同时用：说 Walaupun hujan, kami tetap datang；口语里有人说 Walaupun hujan, tapi …，能听懂但不规范。口语说法：日常说话就用 walaupun，也常说 biarpun。",
+      "usage_note": "此前学过的词，今晚复习，和 walau 一起成组（walau + -pun = walaupun）。Arif 对客服说：Walaupun nggak ada video, di foto kelihatan label tokonya masih nempel。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "walau",
+      "display": "walau",
+      "audio_text": "walau",
+      "cn": "虽然；尽管（walaupun 的简短形式）",
+      "en": "although",
+      "root": "walau",
+      "root_cn": "虽然；尽管",
+      "formation": "基础连词，不拆词缀。加 -pun 就是 walaupun（同义，更常用）。常见搭配：walau begitu（尽管如此）、walau sedikit（哪怕一点）、walau hanya …（哪怕只是……）、walau bagaimanapun（无论如何）。",
+      "example": "Walau cuma dua hari di Puncak, kami sempat jalan pagi dan menghirup udara segar.",
+      "example_cn": "虽然在 Puncak 只待了两天，我们还是抽空晨走，呼吸了新鲜空气。（cuma = hanya）",
+      "synonym_note": "walau 和 walaupun 意思一样，句型也一样（Walau …, … / …, walau …），可以互换。walau 更短，听起来稍书面，常见于新闻标题、广告语、歌词和固定说法 walau begitu、walau bagaimanapun；日常聊天更常说 walaupun 或 biarpun。meskipun 同样可以替换。口语说法：日常多说 walaupun / biarpun；说 walau 也对，只是更像书面语。",
+      "usage_note": "此前学过的词，今晚复习，和 walaupun 同一个词根成组。复述 Arif 的事时可以用 Walau begitu …（尽管如此……）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常多说 walaupun 或 biarpun；walau 多见于标题、歌词和 walau begitu 这类固定说法"
+    },
+    {
+      "word": "membela",
+      "display": "membela",
+      "audio_text": "membela",
+      "cn": "维护；为……辩护；替……说话",
+      "en": "to defend; to stand up for",
+      "root": "bela",
+      "root_cn": "保卫；袒护",
+      "formation": "meN- + bela → membela（b 开头，meN- 变成 mem-，b 不脱落）。同词根：pembela（辩护人；捍卫者）、pembelaan（辩护、辩解）、dibela（被维护）、bela diri（防身术）。常见搭配：membela diri（为自己辩解；自卫）、membela teman（替朋友说话）、membela hak konsumen / hak saya（维护消费者权益 / 我的权利）、membela yang benar（站在对的一边）。",
+      "example": "Bukannya minta maaf, pemilik toko itu malah sibuk membela diri waktu dapat ulasan negatif.",
+      "example_cn": "那个店主收到差评后，不道歉，反而忙着为自己辩解。（dapat = mendapat）",
+      "synonym_note": "membela 是站在某人或某事一边，替他说话、维护他（Ibu selalu membela adik）；melindungi 是保护不受伤害（melindungi anak dari bahaya）；menyalahkan 是怪罪，正好和 membela 相反。membela diri 有两个意思：口头上“为自己辩解”，或身体上“自卫”，看上下文。口语说法：日常常说 belain / ngebelain（Kok kamu belain dia terus?）；正式场合和 membela diri、membela hak 这类搭配用 membela。",
+      "usage_note": "此前学过、最近又答错的词，今晚复习。Arif 跟客服说：Saya cuma membela hak saya sebagai pembeli。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常口语常说 belain / ngebelain；membela 用在 membela diri、membela hak 等搭配和正式说法里"
+    },
+    {
+      "word": "asyik",
+      "display": "asyik",
+      "audio_text": "asyik",
+      "cn": "好玩；带劲；（感叹）太好了；正沉浸在……",
+      "en": "fun; enjoyable; absorbed in",
+      "root": "asyik",
+      "root_cn": "有趣的；入迷的",
+      "formation": "基础形容词，不拆词缀。同词根：keasyikan（玩得太投入以至于……：keasyikan ngobrol sampai lupa waktu）。常见搭配：Asyik!（太好了！）、asyik banget（太好玩 / 太舒服了）、lagi asyik + 动词（正……得入迷：lagi asyik main HP）。",
+      "example": "Kami asyik menyelam di Bunaken sampai lupa waktu, tahu-tahu matahari sudah mau terbenam.",
+      "example_cn": "我们在布纳肯潜水潜得入迷，都忘了时间，一回神太阳都快下山了。",
+      "synonym_note": "asyik 强调自己“玩得开心、投入、享受”；seru 强调活动本身“热闹、刺激、有意思”（filmnya seru）；menyenangkan 是“令人愉快”，偏正式。lagi asyik + 动词 有时带“光顾着做这件事”的意味（Dia lagi asyik main HP, nggak dengar dipanggil）。口语说法：日常常写成 asik，感叹时说 Asyik! / Asik!；说活动好玩也常用 seru banget。",
+      "usage_note": "此前学过的词，今晚复习。包裹一到，Arif 脱口而出：Asyik!",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "niat",
+      "display": "niat",
+      "audio_text": "niat",
+      "cn": "打算；意图；有心（认真想做）",
+      "en": "intention; to be serious about doing something",
+      "root": "niat",
+      "root_cn": "打算；意图",
+      "formation": "词根本身是名词（来自阿拉伯语）。派生：berniat（打算，较正式：Saya berniat pindah kerja）、meniatkan（下定心意要……）。常见搭配：niat baik（好意）、niatnya mau …（本来打算……）、nggak ada niat … / nggak niat …（没有……的意思 / 不是存心……）、kalau memang niat（如果真有心）。",
+      "example": "Niatnya cuma mau nanya harga, eh malah ditawarin paket langganan setahun.",
+      "example_cn": "本来只是想问个价，结果反被推销了一整年的会员套餐。（nanya = bertanya，ditawarin = ditawari）",
+      "synonym_note": "niat 是心里真的想做、存心要做；maksud 偏“用意、想表达的意思”（Apa maksudnya?）；tujuan 是“目的、目标”；rencana 是具体的计划安排。道歉时两种说法都常用：Saya nggak ada niat nyinggung = 我绝不是存心冒犯；Saya nggak bermaksud nyinggung = 我不是那个意思，后者语气更客气。口语说法：niat 常当形容词用，Dia niat banget（他很用心）、Kalau nggak niat, mending nggak usah（不上心就别做）；正式场合说 berniat。",
+      "usage_note": "此前学过、最近常错的词，今晚复习，换成在道歉和解释里用。客服 Rina 说：Saya nggak ada niat nyinggung；Arif 也说 Saya nggak niat ngeribetin。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nyinggung",
+      "display": "nyinggung",
+      "audio_text": "nyinggung",
+      "cn": "冒犯；提到、触及（口语）",
+      "en": "to offend; to touch on (colloquial)",
+      "root": "singgung",
+      "root_cn": "触及；提到",
+      "formation": "口语形式，标准形 menyinggung = meN- + singgung（s 脱落，变成 ny-）。同词根：tersinggung（被冒犯、心里不舒服）、singgungan（提及；摩擦）。常见搭配：nyinggung perasaan（伤感情）、nyinggung soal …（提到……的事）、nggak ada niat nyinggung（不是存心冒犯）。",
+      "example": "Aku nggak maksud nyinggung kamu, cuma mau nimpalin candaan teman-teman tadi.",
+      "example_cn": "我不是想冒犯你，只是想接一下刚才朋友们的玩笑。（nggak = tidak）",
+      "synonym_note": "menyinggung / nyinggung 有两层：① 提到、谈到（nyinggung soal gaji 提到工资）；② 冒犯、伤到别人（nyinggung perasaan）。主客别弄反：A nyinggung B → B tersinggung（A 冒犯了 B，B 觉得被冒犯）。menyakiti hati 更重，是“伤透心”。口语说法：日常说 nyinggung；正式场合、书面说 menyinggung。",
+      "usage_note": "此前学过、最近常错的词，今晚复习。客服 Rina 要说一句可能让顾客不舒服的话，先垫一句：Maaf, Kak, saya nggak ada niat nyinggung。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常说 nyinggung；menyinggung 用在书面和正式场合；被冒犯的一方说 tersinggung"
+    },
+    {
+      "word": "kalah",
+      "display": "kalah",
+      "audio_text": "kalah",
+      "cn": "输；败；比不过",
+      "en": "to lose; to be beaten",
+      "root": "kalah",
+      "root_cn": "输；失败",
+      "formation": "基础动词，不拆词缀。同词根：mengalahkan（打败：mengalahkan lawan）、kekalahan（失败、败局）、dikalahkan（被打败）、mengalah（主动让步、让着别人）。常见搭配：kalah cepat（慢了一步、被人抢先）、kalah tipis（惜败）、kalah saing（竞争不过）、kalah dari / sama …（输给……）。",
+      "example": "Kemarin tim kami kalah tipis, cuma beda satu gol.",
+      "example_cn": "昨天我们队惜败，只差一个球。（cuma = hanya）",
+      "synonym_note": "kalah 是在比赛、竞争里“输给对方”，反义是 menang；gagal 是事情“没成功”，不一定有对手（gagal ujian）；mengalah 是“主动让步”，不是真的输。kalah cepat 常用在抢购、抢票：Tiketnya habis, saya kalah cepat。口语说法：日常常说 kalah sama …（Kita kalah sama tim sebelah）；正式说 kalah dari …。",
+      "usage_note": "此前学过的词，今晚换到网店换货里用：这款花色剩得不多，Arif 不想 kalah cepat sama pembeli lain。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kecewa",
+      "display": "kecewa",
+      "audio_text": "kecewa",
+      "cn": "失望",
+      "en": "disappointed",
+      "root": "kecewa",
+      "root_cn": "失望",
+      "formation": "基础形容词，不拆词缀。同词根：mengecewakan（令人失望：pelayanannya mengecewakan）、kekecewaan（失望之情）、dikecewakan（被辜负）。常见搭配：kecewa sama / dengan …（对……失望）、kecewa banget、merasa kecewa（感到失望）、jangan sampai kecewa（别让人失望）。",
+      "example": "Penulis itu kecewa karena artikelnya diedit tanpa izin.",
+      "example_cn": "那位作者很失望，因为他的文章没经同意就被改了。",
+      "synonym_note": "kecewa 是期望落空的“失望”；sedih 是一般的“难过”，不一定有期待落空；kesal / kesel 是“恼火、生气”；mengecewakan 是“令人失望的”，说的是让人失望的事或人：Hasilnya mengecewakan。投诉时说 Saya kecewa dengan pelayanannya，比直接发火更有分寸。口语说法：kecewa 日常就这么说，程度重时说 kecewa berat。",
+      "usage_note": "此前学过的词，今晚换到网店退换货里用：衬衫还没穿就有污渍，Arif 跟客服说 Jujur saya kecewa。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Sabtu ini Arif akan datang ke reuni angkatan SMA. Karena gengsi, dia tidak mau memakai kemeja lama. Saat ada promo, dia membeli kemeja batik bermerek di sebuah toko online. Hari Rabu paketnya datang. \"Asyik!\" ucapnya. Tetapi setelah dibuka, ada noda di lengan kemeja dan jahitan di bahunya lepas. Arif sangat kecewa. Kemeja itu belum dicuci atau dipakai sama sekali, tetapi nodanya sudah ada. Sayangnya, dia tidak merekam video saat membuka paket. Dia langsung mengirim foto ke admin toko, Mbak Rina, tetapi chatnya belum dibalas. Arif hampir menulis ulasan negatif, tetapi istrinya menyarankan agar dia menelepon toko itu dulu.",
+    "cn": "这个星期六，Arif 要去参加高中同届同学聚会。因为爱面子，他不想穿旧衬衫。趁着有促销，他在一家网店买了一件名牌蜡染衬衫。星期三包裹到了。“太好了！”他说。可打开一看，袖子上有一块污渍，肩膀的缝线也开了。Arif 非常失望。这件衬衫还完全没洗过、也没穿过，污渍却已经在上面了。可惜的是，他拆包裹时没有录视频。他马上把照片发给店里的客服 Rina，可消息一直没人回。Arif 差点写一条差评，但他太太建议他先给店里打个电话。"
+  },
+  "dialogue": {
+    "title": "Arif 打电话投诉：没有开箱视频，衬衫还能换吗？",
+    "twist": 5,
+    "lines": [
+      {
+        "speaker": "Arif",
+        "id": "Halo, Kak Rina. Saya Arif, yang tadi kirim foto kemeja batik. Lengannya ada noda, jahitan bahunya juga lepas.",
+        "cn": "喂，Rina 姐。我是 Arif，就是刚才发蜡染衬衫照片的那位。袖子上有污渍，肩膀的缝线也开了。"
+      },
+      {
+        "speaker": "Mbak Rina",
+        "id": "Iya, Kak, fotonya udah saya lihat. Mohon maaf banget, ya. Boleh minta nomor ordernya?",
+        "cn": "是的，照片我已经看过了。真的非常抱歉。可以告诉我订单号吗？（udah = sudah，banget = sekali）"
+      },
+      {
+        "speaker": "Arif",
+        "id": "Nomornya 2211-087. Jujur saya kecewa, Kak. Kemejanya belum saya pakai atau cuci sama sekali, padahal nodanya udah ada.",
+        "cn": "订单号是 2211-087。说实话我挺失望的。衬衫我还完全没穿、也没洗过，可污渍就已经在上面了。"
+      },
+      {
+        "speaker": "Mbak Rina",
+        "id": "Saya ngerti, Kak. Sebelum saya proses, Kakak ada video unboxing-nya?",
+        "cn": "我理解。在处理之前想问一下，您有开箱视频吗？（ngerti = mengerti）"
+      },
+      {
+        "speaker": "Arif",
+        "id": "Nggak ada, Kak. Saya langsung buka aja, soalnya udah nggak sabar.",
+        "cn": "没有。我直接就拆了，因为实在等不及了。（nggak = tidak，aja = saja）"
+      },
+      {
+        "speaker": "Mbak Rina",
+        "id": "Waduh. Maaf, Kak, saya nggak ada niat nyinggung, tapi menurut aturan toko, komplain tanpa video unboxing nggak bisa kami proses. Videonya buat bukti.",
+        "cn": "哎呀。抱歉，我绝不是存心冒犯您，但按店里的规定，没有开箱视频的投诉我们没法处理。视频是要用作凭证的。（nyinggung = menyinggung，buat = untuk）"
+      },
+      {
+        "speaker": "Arif",
+        "id": "Kak, saya nggak niat ngeribetin, cuma membela hak saya sebagai pembeli. Walaupun nggak ada video, di foto kelihatan label tokonya masih nempel.",
+        "cn": "我不是存心找麻烦，只是在维护我作为买家的权利。虽然没有视频，但照片里能看到店里的吊牌还挂着。（ngeribetin = membuat ribet，cuma = hanya，nempel = menempel）"
+      },
+      {
+        "speaker": "Mbak Rina",
+        "id": "Oke, Kak. Fotonya saya teruskan ke bagian gudang dulu, ya. Mohon tunggu sebentar.",
+        "cn": "好的。我先把照片转给仓库那边，请稍等一下。"
+      },
+      {
+        "speaker": "Arif",
+        "id": "Tolong jangan lama-lama, ya, Kak. Kemeja ini buat reuni angkatan hari Sabtu.",
+        "cn": "麻烦别拖太久。这件衬衫是星期六同届聚会要穿的。"
+      },
+      {
+        "speaker": "Mbak Rina",
+        "id": "Kak, ternyata gudang juga nemu masalah yang sama di beberapa kemeja dari batch ini. Jadi Kakak bebas pilih: tukar kemeja baru atau uang kembali.",
+        "cn": "原来仓库在这一批的几件衬衫上也发现了同样的问题。所以您可以随便选：换一件新的，或者退款。（nemu = menemukan）"
+      },
+      {
+        "speaker": "Arif",
+        "id": "Tukar aja, Kak. Motif ini kan tinggal sedikit, saya nggak mau kalah cepat sama pembeli lain.",
+        "cn": "换吧。这个花色不是剩得不多了嘛，我可不想被别的买家抢先。"
+      },
+      {
+        "speaker": "Mbak Rina",
+        "id": "Siap, Kak. Kami kirim hari ini pakai pengiriman kilat, Jumat udah sampai. Ongkos kirimnya kami yang tanggung.",
+        "cn": "好的。我们今天就用特快寄出，星期五就能到。运费由我们承担。"
+      }
+    ],
+    "practice": {
+      "role": "Arif",
+      "lines": [
+        {
+          "speaker": "Arif",
+          "id": "Kak, kemejanya ada noda, jahitannya juga lepas.",
+          "cn": "你好，衬衫上有污渍，缝线也开了。"
+        },
+        {
+          "speaker": "Mbak Rina",
+          "id": "Maaf, Kak. Ada video unboxing-nya?",
+          "cn": "抱歉。您有开箱视频吗？"
+        },
+        {
+          "speaker": "Arif",
+          "id": "Nggak ada. Tapi kemejanya belum saya pakai sama sekali.",
+          "cn": "没有。可是衬衫我一次都还没穿过。"
+        },
+        {
+          "speaker": "Mbak Rina",
+          "id": "Maaf, saya nggak niat nyinggung. Tanpa video, komplain nggak bisa diproses.",
+          "cn": "抱歉，我不是存心冒犯您。没有视频，投诉没法处理。"
+        },
+        {
+          "speaker": "Arif",
+          "id": "Walaupun nggak ada video, fotonya udah jelas, kan?",
+          "cn": "虽然没有视频，照片已经拍得很清楚了吧？"
+        },
+        {
+          "speaker": "Mbak Rina",
+          "id": "Iya, Kak. Kakak bebas pilih: tukar atau uang kembali.",
+          "cn": "好的。您可以随便选：换货或者退款。"
+        }
+      ]
+    }
+  },
+  "rewrite": [
+    {
+      "kind": "twist",
+      "task": "转折应对：你在网店买了一个保温饭盒，到货时盖子是裂的。客服回复：没有开箱视频，投诉没法处理。按句子骨架填空回应：先说你很失望、东西还没用过；再用 Walaupun 说明虽然没有视频，但你有别的证据；然后用 niat 说明你不是存心找麻烦、只是在维护买家的权利；最后用 seenggaknya 提一个最低要求。用 saya / Kak。",
+      "frame": "Kak, jujur saya …… . Walaupun saya nggak punya video unboxing, …… . Saya nggak niat ngeribetin, cuma membela hak saya sebagai pembeli. Kalau nggak bisa tukar, seenggaknya …… .",
+      "reference_answer": "Kak, jujur saya kecewa banget, tutupnya udah retak padahal kotak makannya belum saya pakai. Walaupun saya nggak punya video unboxing, di foto kelihatan segel plastiknya masih utuh. Saya nggak niat ngeribetin, cuma membela hak saya sebagai pembeli. Kalau nggak bisa tukar, seenggaknya kirim tutup yang baru.",
+      "reference_cn": "说实话我非常失望，饭盒我还没用过，盖子就已经裂了。虽然我没有开箱视频，但照片里能看到塑封还完好。我不是存心找麻烦，只是在维护我作为买家的权利。如果不能换货，至少给我寄一个新盖子吧。"
+    },
+    {
+      "kind": "challenge",
+      "functions": [
+        "state-problem",
+        "explain-cause",
+        "offer-solution"
+      ],
+      "task": "本周开口挑战（先别看参考，每一步尽量 3 秒内开口，自己掐时间）：你是网店客服。顾客 Kak Sinta 订的是 M 码衬衫，收到的却是 L 码，她发来照片，语气很失望。分三步回应：① 用 Menurut …, … seharusnya … 说明问题；② 用 Ternyata … 或 … soalnya … 解释原因；③ 用 … bebas pilih: … atau … 或 Kalau …, kami bisa … 提出办法。",
+      "reference_answer": "Mohon maaf, Kak Sinta, kami paham Kakak kecewa. Menurut catatan kami, Kakak seharusnya menerima ukuran M, bukan L. Ternyata bagian gudang salah ambil, soalnya dua ukuran itu disimpan di rak yang sama. Kakak bebas pilih: kami kirim ukuran M hari ini, atau uangnya kami kembalikan penuh. Kalau Kakak pilih tukar, kami bisa ambil kemeja yang L langsung dari rumah Kakak.",
+      "reference_cn": "非常抱歉，Sinta 姐，我们理解您很失望。按我们的记录，您本该收到 M 码，而不是 L 码。原来是仓库拿错了，因为这两个尺码放在同一个货架上。您可以随便选：我们今天就寄 M 码给您，或者全额退款。如果您选择换货，我们可以直接上门把 L 码那件取走。"
+    }
+  ],
+  "daily_test": {
+    "week_words": [
+      "berlaku sampai",
+      "kerugian",
+      "percuma",
+      "seenggaknya",
+      "kesepakatan",
+      "tagihan"
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "换货谈妥后，Rina 补了一张优惠券：“Ini voucher potongan dua puluh ribu, ____ tanggal 30 November, ya, Kak.” 哪项最自然？",
+        "options": [
+          "berakhir sampai",
+          "berlaku sampai",
+          "laku sampai",
+          "habis sampai"
+        ],
+        "answer_index": 1,
+        "answer": "berlaku sampai",
+        "explain": "说优惠券、证件、价格的有效期用 berlaku sampai …（也可以说 berlaku hingga …）。berakhir 是“结束”，要说 berakhir pada tanggal 30，不和 sampai 连用；laku 单用多指“好卖”（barangnya laku）或钱币“还能用”（uang lama masih laku），不说 voucher laku sampai …；habis 可以说 masa berlakunya habis tanggal 30，但没有 habis sampai 这种说法。"
+      },
+      {
+        "type": "choice",
+        "prompt": "客服解释包裹在运输途中被压坏了：“Barangnya rusak di jalan, jadi semua ____ ditanggung pihak ekspedisi.” 哪项最自然？",
+        "options": [
+          "rugi",
+          "merugikan",
+          "dirugikan",
+          "kerugian"
+        ],
+        "answer_index": 3,
+        "answer": "kerugian",
+        "explain": "ditanggung（由……承担）前面要一个名词作主语：semua kerugian ditanggung … = 一切损失由……承担。rugi 是形容词/动词“亏、亏本”（Saya rugi seratus ribu），不放在 semua 后面当名词；merugikan 是“使……受损”（Aturan ini merugikan pembeli）；dirugikan 是“受到损害”，说的是受损的一方（Pembeli merasa dirugikan）。口语里也能听到 ruginya ditanggung ekspedisi，但客服说明里用 kerugian。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Kak Sinta 在群里吐槽：“Udah tiga hari chat admin tokonya, cuma dibaca doang, nggak dibales. ____ deh, mending langsung minta refund lewat aplikasi.” 哪项最自然？",
+        "options": [
+          "Pokoknya",
+          "Sayang",
+          "Percuma",
+          "Seenggaknya"
+        ],
+        "answer_index": 2,
+        "answer": "Percuma",
+        "explain": "前面说聊了三天都没人回，后面说“不如直接在 app 里申请退款”，中间要表达“白费力气、没用”：Percuma deh。pokoknya 是“总之、反正”，用来下结论或坚持要求（Pokoknya saya mau refund），不和后面的 mending 接；sayang 是“可惜”，要说 Sayang banget …，也不引出“不如……”；seenggaknya 是“至少”，后面要接最低要求（Seenggaknya dibales, dong）。（doang = saja，dibales = dibalas，mending = lebih baik）"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Walaupun barangnya nggak bisa ditukar, ____ kasih voucher, dong.（至少）",
+        "answer": "seenggaknya",
+        "explain": "seenggaknya = setidaknya / paling tidak（至少），口语常用，后面接最低要求；也可以说 paling nggak。前半句用 walaupun 让步：东西换不了，那至少给张券。（kasih = memberi）"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Maaf, Kak, saya nggak ada niat ____ Kakak, tapi videonya memang buat bukti.（冒犯，口语）",
+        "answer": "nyinggung",
+        "explain": "冒犯别人的一方用主动的 nyinggung（标准形 menyinggung）：saya nggak ada niat nyinggung Kakak = 我不是存心冒犯您。被冒犯的一方才用 tersinggung：Kakak jangan tersinggung, ya。nggak ada niat … 是道歉时的常用说法，也可以说 nggak bermaksud …。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：按说好的，运费不算进账单。",
+        "tokens": [
+          "Menurut",
+          "kesepakatan,",
+          "ongkos",
+          "kirim",
+          "tidak",
+          "masuk",
+          "tagihan."
+        ],
+        "answer": "Menurut kesepakatan, ongkos kirim tidak masuk tagihan.",
+        "answer_cn": "按说好的，运费不算进账单。",
+        "explain": "menurut 后面接名词 kesepakatan（说好的条件），整个短语放句首；masuk tagihan = 算进账单。sepakat 是“同意”，不能直接放在 menurut 后面。口语里会说 Kan udah deal, ongkirnya nggak masuk tagihan。"
+      }
+    ]
+  },
+  "review": {
+    "title": "可选 · 30 秒复述",
+    "steps": [
+      "用 kecewa、niat、walau、membela 说说 Arif 买的衬衫出了什么问题、客服为什么一开始不受理、最后怎么解决的。"
+    ],
+    "retell_reference": "Karena gengsi, Arif membeli kemeja batik bermerek untuk reuni angkatan. Kemejanya datang dengan noda dan jahitan yang lepas, jadi dia sangat kecewa. Awalnya admin toko bilang dia tidak ada niat menyinggung, tapi komplain tanpa video unboxing tidak bisa diproses. Walau begitu, Arif tetap membela haknya sebagai pembeli dengan foto label toko. Ternyata gudang menemukan masalah yang sama, dan keputusan Arif sudah bulat: dia menukar kemejanya.",
+    "retell_reference_cn": "因为爱面子，Arif 为同届聚会买了一件名牌蜡染衬衫。衬衫到货时有污渍，缝线也开了，他非常失望。起初店里的客服说她不是存心冒犯，但没有开箱视频的投诉没法处理。尽管如此，Arif 还是拿店铺吊牌的照片维护自己作为买家的权利。原来仓库也发现了同样的问题，而 Arif 也已经拿定主意：换一件。"
+  },
+  "lesson_focus": {
+    "words": [
+      "membela",
+      "nyinggung",
+      "walaupun"
+    ],
+    "patterns": [
+      {
+        "pattern": "… belum …, padahal …",
+        "cn": "……还没……，可是……",
+        "function": "state-problem",
+        "example": "Kemejanya belum saya pakai atau cuci sama sekali, padahal nodanya udah ada.",
+        "example_cn": "衬衫我还完全没穿、也没洗过，可污渍就已经在上面了。"
+      },
+      {
+        "pattern": "Walaupun …, …",
+        "cn": "虽然……，（还是 / 但）……",
+        "example": "Walaupun nggak ada video, di foto kelihatan label tokonya masih nempel.",
+        "example_cn": "虽然没有视频，但照片里能看到店里的吊牌还挂着。"
+      }
+    ]
+  }
+}
