@@ -1,0 +1,297 @@
+{
+  "date": "2026-11-22",
+  "session": "am",
+  "time": "08:00",
+  "day": 93,
+  "title": "08:00 早课｜Tanpa DP, Tidak Ada Pengiriman · 不付定金，就不发货",
+  "phase": {
+    "theme_id": "online-shop",
+    "day_role": "weekly_test"
+  },
+  "story": {
+    "series": "Toko Keripik Bu Narti · 纳尔蒂阿姨的薯片网店",
+    "episode": 6,
+    "previously_cn": "上集：店铺评论区被网赌广告刷屏，拉卡差点点开一条假账单链接；傍晚店里来了一笔五百包的大订单，下单的是一家他们从没听说过的公司。"
+  },
+  "vocab": [
+    {
+      "word": "golongan darah",
+      "display": "golongan darah",
+      "audio_text": "golongan darah",
+      "cn": "血型",
+      "en": "blood type",
+      "root": "darah",
+      "root_cn": "血",
+      "formation": "golongan（类别、组别，来自 golong）+ darah（血）→ golongan darah（血的类别，即血型）。常见说法：golongan darah O / A / B / AB、golongan darahmu apa?（你什么血型？）、cek golongan darah（验血型）、donor darah（献血）。",
+      "example": "Sebelum donor darah, petugas PMI menanyakan golongan darahku dan mengecek tekanan darah.",
+      "example_cn": "献血前，红十字会的工作人员问了我的血型，还量了血压。（PMI = 印尼红十字会）",
+      "synonym_note": "golongan 是“类别、组别”，和 darah 连用就是“血型”；表示血型最常说 golongan darah，tipe darah 偶尔能听到，但医院、表格都写 golongan darah。golongan 也单独用：golongan menengah（中产阶层）、golongan umur（年龄段）。口语说法：年轻人聊天常缩成 goldar：Goldarmu apa?",
+      "everyday": "年轻人聊天常缩成 goldar；表格、医院一律写 golongan darah",
+      "usage_note": "复习词：先遮住中文回想意思，再看那张“供应商登记表”为什么会让拉卡笑出来。",
+      "is_oral_new": false
+    },
+    {
+      "word": "seolah-olah",
+      "display": "seolah-olah",
+      "audio_text": "seolah-olah",
+      "cn": "仿佛；好像（看起来像……，实际上不一定）",
+      "en": "as if; as though",
+      "root": "olah",
+      "root_cn": "样子；举止（古义）",
+      "formation": "se- + olah 的重叠形式 → seolah-olah。这里的 olah 是古义“样子、举止”，和现代动词 mengolah（加工、处理）不是同一个意思，记成整体即可。也常说简短的 seolah。常见用法：seolah-olah + 句子（Dia bicara seolah-olah …）、seolah-olah tidak terjadi apa-apa（好像什么都没发生）。",
+      "example": "Dia memukul meja, seolah-olah semua masalah ini salah kami.",
+      "example_cn": "他一拍桌子，好像这些问题全是我们的错似的。",
+      "synonym_note": "seolah-olah 多用来说“看起来像……”，常暗示实际上并不是、或说话人不相信；seakan-akan 意思几乎一样，偏书面；seperti 只是“像”，不带这层怀疑。口语说法：日常多说 kayak（Dia ngomong kayak udah kenal lama），书面、叙述里用 seolah-olah。",
+      "everyday": "日常聊天多说 kayak；seolah-olah 多见于叙述、书面",
+      "usage_note": "复习词：先回想意思，再看那封订单邮件为什么“看起来”像大公司发的。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengetik",
+      "display": "mengetik",
+      "audio_text": "mengetik",
+      "cn": "打字；（用键盘、手机）输入",
+      "en": "to type",
+      "root": "ketik",
+      "root_cn": "打字；敲（键盘）",
+      "formation": "meN- + ketik → mengetik（词首 k 脱落，变成 meng-）。同词根：ketikan（打出来的字）、salah ketik（打错字，口语常说 typo）、juru ketik（打字员）。常见搭配：mengetik pesan（打消息）、mengetik ulang（重新打一遍）、mengetik pakai dua jari（用两根手指打字）。",
+      "example": "Ayah bisa menghabiskan sepuluh menit cuma buat mengetik satu pesan, soalnya dia pakai dua jari.",
+      "example_cn": "爸爸打一条消息能花掉十分钟，因为他只用两根手指打字。（cuma = hanya，buat = untuk）",
+      "synonym_note": "mengetik 是用键盘、手机打字；menulis 是“写”，范围更广，手写、写文章、写邮件都可以说 menulis（menulis email 也很常见）。和下一张 mengetuk（敲门）只差一个字母，别看错。口语说法：ngetik（Lagi ngetik, bentar），叫别人打字常说 ketik（Ketik nomornya di sini）。",
+      "usage_note": "复习词：和下一张 mengetuk 一起记，再看拉卡是怎么回复那家公司的。",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengetuk",
+      "display": "mengetuk",
+      "audio_text": "mengetuk",
+      "cn": "敲（门、窗、桌子）",
+      "en": "to knock; to tap",
+      "root": "ketuk",
+      "root_cn": "敲；叩",
+      "formation": "meN- + ketuk → mengetuk（k 脱落，变成 meng-）。同词根：ketukan（敲击声）、diketuk（被敲）。常见搭配：mengetuk pintu（敲门）、mengetuk jendela（敲窗）、ketuk dulu sebelum masuk（进门前先敲门）；引申：mengetuk hati（打动人心）。",
+      "example": "Kurirnya sudah mengetuk pintu tiga kali, tapi nggak ada yang buka.",
+      "example_cn": "快递员已经敲了三次门，可是没人开。（nggak = tidak）",
+      "synonym_note": "mengetuk 是用指节轻轻地敲，敲门、敲窗最常用；memukul 是“打、击打”，力量大，不用来说礼貌地敲门（memukul meja 是拍桌子）。和上一张 mengetik（打字）只差一个字母：ketik 是打字，ketuk 是敲门。口语说法：ketok / ngetok（Ketok aja pintunya），日常比 mengetuk 更常听到。",
+      "everyday": "日常多说 ketok / ngetok pintu；mengetuk 在叙述、书面里常见",
+      "usage_note": "复习词：和上一张 mengetik 一起记，再看傍晚是谁来敲门、带来了什么消息。",
+      "is_oral_new": false
+    },
+    {
+      "word": "sesuai",
+      "display": "sesuai",
+      "audio_text": "sesuai",
+      "cn": "符合；与……一致；适合",
+      "en": "in accordance with; matching; suitable",
+      "root": "suai",
+      "root_cn": "相配；协调",
+      "formation": "se- + suai → sesuai。同词根：menyesuaikan（使适应、调整：menyesuaikan harga 调整价格）、penyesuaian（调整）、kesesuaian（一致性）。常见搭配：sesuai dengan …（和……一致）、sesuai pesanan（和订单一致）、tidak sesuai（不符）、sesuai jadwal（按计划）。",
+      "example": "Barang yang tidak sesuai dengan foto pasti mengecewakan pembeli.",
+      "example_cn": "和照片对不上的货，肯定会让买家失望。",
+      "synonym_note": "sesuai 说的是“两样东西对得上”（实物和照片、地址和地图、做法和规定）；cocok 更口语，偏“合适、搭配得好”（Warnanya cocok sama kamu）。和下一张 memenuhi 是一对近义词：两者都能译成“符合”，但 memenuhi 说的是“达到”某个要求。口语说法：常说 sesuai sama …（= sesuai dengan …），也常说 pas：Ukurannya pas。",
+      "usage_note": "复习词：先回想意思，再看拉卡在地图上查到的地址和邮件里写的对不对得上。",
+      "is_oral_new": false
+    },
+    {
+      "word": "memenuhi",
+      "display": "memenuhi",
+      "audio_text": "memenuhi",
+      "cn": "满足；达到（要求）；符合；装满",
+      "en": "to meet (requirements); to fulfil; to fill",
+      "root": "penuh",
+      "root_cn": "满的",
+      "formation": "meN- + penuh + -i → memenuhi（词首 p 脱落，变成 mem-）。本义“使……满”：Tamu memenuhi ruangan（客人挤满了房间）。常见搭配：memenuhi syarat（符合条件）、memenuhi kebutuhan（满足需要）、memenuhi janji（兑现承诺）、memenuhi target（完成目标）。同词根：pemenuhan（满足、履行）、terpenuhi（得到满足）。",
+      "example": "Pelamar yang memenuhi syarat akan dihubungi lewat email minggu depan.",
+      "example_cn": "符合条件的应聘者下周会通过邮件联系。",
+      "synonym_note": "memenuhi 是“达到、满足”一个要求或需要（syarat、kebutuhan、target）；sesuai dengan 是“和……一致、对得上”。说规定、标准时两者都能用：memenuhi standar / sesuai standar 都对；但“符合条件”最常说 memenuhi syarat，“和订单一致”只说 sesuai pesanan。",
+      "usage_note": "复习词：和上一张 sesuai 一起记，再看纳尔蒂阿姨给那家公司定了什么条件。",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "golongan darah",
+    "seolah-olah",
+    "mengetik",
+    "mengetuk",
+    "sesuai",
+    "memenuhi"
+  ],
+  "review_vocab": [
+    "nyesel",
+    "bahas",
+    "berkencan",
+    "catat",
+    "cemburu"
+  ],
+  "sentences": [
+    {
+      "text": "Kalau barangnya nggak sesuai sama pesanan, Kakak bebas pilih: tukar barang atau uang kembali.",
+      "cn": "如果货和订单对不上，您可以随便选：换货或者退款。（nggak = tidak，sama = dengan）"
+    },
+    {
+      "text": "Pacarnya cemburu soalnya dia balas chat pelanggan terus, padahal cuma urusan kerja.",
+      "cn": "他女朋友吃醋了，因为他一直在回顾客的消息，其实只是工作上的事。（soalnya = karena，cuma = hanya）"
+    },
+    {
+      "text": "Tolong catat semua pertanyaan pelanggan, nanti kita bahas bareng di rapat besok.",
+      "cn": "请把顾客的问题都记下来，明天开会我们一起讨论。（bareng = bersama）"
+    },
+    {
+      "text": "Saking sibuknya membungkus pesanan, Raka batal berkencan malam Minggu ini.",
+      "cn": "拉卡忙着打包订单忙得不行，这个周六晚上的约会都取消了。"
+    },
+    {
+      "text": "Daripada nyesel, mending modalnya dipakai buat stok yang pasti laku.",
+      "cn": "与其以后后悔，不如把本钱用在肯定卖得掉的货上。（nyesel = menyesal，mending = lebih baik，buat = untuk）"
+    }
+  ],
+  "reading": {
+    "title": "Tanpa DP, Tidak Ada Pengiriman · 不付定金，就不发货",
+    "text": "Pesanan lima ratus bungkus itu masuk lewat email. Ada logo dan stempelnya, seolah-olah dari perusahaan besar. Saking senangnya, Raka menghitung untungnya. \"Kita bahas syaratnya dulu,\" kata Bu Narti. \"Mereka minta barang dikirim sekarang, bayarnya akhir bulan. Modal kita bisa habis buat satu pesanan. Menurut aturan toko, pesanan besar seharusnya pakai DP dulu. Kalau mereka nggak bisa memenuhi syarat itu, ya sudah.\" Raka mengetik balasan yang sopan. Jawabannya cepat: DP akan ditransfer setelah toko mengisi formulir vendor. Isinya nomor rekening, password (kata sandi) m-banking, bahkan golongan darah pemilik toko. \"Buat apa toko keripik ditanya golongan darah?\" Raka tertawa, tapi lalu merinding. Dengan data itu, uang toko bisa dicuri. Dia mengecek alamatnya di peta. Alamatnya tidak sesuai: di sana cuma ada tanah kosong. Sorenya Pak Yos mengetuk pintu. \"Bu, katanya dua toko kue sudah kirim barang ke perusahaan itu, tapi belum dibayar.\" Bu Narti bilang, \"Mending kehilangan satu pesanan daripada nyesel belakangan.\" Raka mencatat aturan baru: tanpa DP, tidak ada pengiriman.",
+    "cn": "那笔五百包的订单是通过邮件来的。邮件里有标志、有公章，看起来就像是大公司发的。拉卡高兴得不得了，已经算起能赚多少了。“先把条件谈清楚。”纳尔蒂阿姨说，“他们要我们现在就发货，月底才付款。光这一笔订单就可能把我们的本钱用光。按店里的规矩，大订单本该先付定金。如果他们满足不了这个条件，那就算了。”拉卡打了一封客客气气的回信。对方回得很快：店铺先填一张供应商登记表，定金就会转过来。表上要填银行账号、手机银行密码，甚至还有店主的血型。“薯片店为什么要被问血型？”拉卡笑了出来，可随后就起了一身鸡皮疙瘩。有了这些资料，店里的钱就可能被偷走。他又在地图上查了那个地址。地址对不上：那里只有一块空地。傍晚，约斯师傅来敲门。“老板娘，听说有两家糕点店已经给那家公司发了货，可还没收到钱。”纳尔蒂阿姨说：“宁可丢掉一笔订单，也别以后后悔。”拉卡记下一条新规矩：不付定金，就不发货。"
+  },
+  "quiz": [
+    {
+      "question": "Menurut cerita hari ini, kenapa Bu Narti tidak mau langsung mengirim lima ratus bungkus itu?",
+      "options": [
+        "Stok keripik di gudang tidak cukup untuk lima ratus bungkus.",
+        "Barang diminta dikirim sekarang, tapi bayarnya baru akhir bulan, jadi modal toko bisa habis.",
+        "Pak Yos tidak bisa mengantar karena motornya masih di bengkel.",
+        "Perusahaan itu minta harga khusus yang terlalu murah."
+      ],
+      "answer_index": 1,
+      "answer": "Barang diminta dikirim sekarang, tapi bayarnya baru akhir bulan, jadi modal toko bisa habis.",
+      "explain": "课文里纳尔蒂阿姨说：对方要现在发货、月底才付款，光这一笔就可能把本钱用光（Modal kita bisa habis），所以按规矩要先付定金（DP）。A 库存不够、C 约斯师傅的摩托车、D 压价，课文里都没有提到。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "刚才有人敲门，可是我开门的时候外面没人。",
+      "target": "mengetuk",
+      "target_cn": "敲（门）",
+      "options": [
+        "Tadi ada yang mengetik pintu, tapi waktu aku buka, di luar nggak ada orang.",
+        "Tadi ada yang diketuk pintu, tapi waktu aku buka, di luar nggak ada orang.",
+        "Tadi ada yang mengetuk pintu, tapi waktu aku buka, di luar nggak ada orang.",
+        "Tadi ada yang mengetuk pintu, jadi waktu aku buka, di luar nggak ada orang."
+      ],
+      "answer_index": 2,
+      "answer": "Tadi ada yang mengetuk pintu, tapi waktu aku buka, di luar nggak ada orang.",
+      "point": "mengetuk（敲）/ mengetik（打字）只差一个字母；有人去敲用主动的 me-，不用 di-；tapi（可是）和 jadi（所以）",
+      "explain": "“有人敲门”是 ada yang mengetuk pintu，“可是没人”用 tapi，所以 C 对。A 的 mengetik 是“打字”，和 mengetuk 只差一个字母，意思完全不对；B 的 diketuk 是被动，“有人”是敲门的人，要用主动 mengetuk（说“门被敲了”才是 pintunya diketuk）；D 的 jadi 是“所以”，敲了门所以没人，因果说不通。日常口语里也常说 Tadi ada yang ngetok pintu（ngetok = mengetuk），这也是对的。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "我可不想以后后悔，所以咱们先把条件谈清楚。",
+      "target": "nyesel",
+      "target_cn": "后悔（口语）",
+      "options": [
+        "Aku nggak mau nyesel nanti, makanya syaratnya kita bahas dulu.",
+        "Aku nggak mau nyesel nanti, padahal syaratnya kita bahas dulu.",
+        "Aku sudah nyesel nanti, makanya syaratnya kita bahas dulu.",
+        "Aku nggak mau nyesel nanti, makanya syaratnya kita bahas belakangan."
+      ],
+      "answer_index": 0,
+      "answer": "Aku nggak mau nyesel nanti, makanya syaratnya kita bahas dulu.",
+      "point": "nggak mau nyesel（不想后悔）/ sudah nyesel；makanya（所以）和 padahal（可是）；dulu（先）和 belakangan（以后再）",
+      "explain": "“不想以后后悔”是 nggak mau nyesel nanti，“所以先谈”用 makanya … dulu，所以 A 对。B 的 padahal 是“可是、其实”，表示反差，这里是因果；C 的 sudah nyesel nanti 自相矛盾（“已经”和“以后”放不到一起）；D 的 belakangan 是“以后再说”，和“先谈清楚”正好相反。nyesel 是口语，正式说 menyesal：Saya tidak mau menyesal nanti，也对；makanya 也可以换成 jadi。"
+    }
+  ],
+  "output": {
+    "task": "你是拉卡。给那家公司回一封邮件（3 句）：先用 Menurut …, … seharusnya … 说明店里的规定；再说他们邮件里的地址和你查到的对不上；最后用 Kalau …, kami bisa … 提出办法。按骨架填空，用上 sesuai 和 memenuhi。",
+    "frame": "Terima kasih atas pesanannya. Menurut aturan toko kami, pesanan besar seharusnya …… . Selain itu, alamat perusahaan di email Bapak/Ibu tidak sesuai dengan …… . Kalau Bapak/Ibu bisa memenuhi …… , kami bisa …… .",
+    "reference_answer": "Terima kasih atas pesanannya. Menurut aturan toko kami, pesanan besar seharusnya pakai DP lima puluh persen dulu. Selain itu, alamat perusahaan di email Bapak/Ibu tidak sesuai dengan lokasi di peta. Kalau Bapak/Ibu bisa memenuhi syarat DP itu dan mengirim alamat yang benar, kami bisa mengirim seratus bungkus pertama minggu ini.",
+    "reference_cn": "感谢您的订单。按我们店的规定，大订单本该先付百分之五十的定金。另外，您邮件里写的公司地址和地图上的位置对不上。如果您能满足定金这个条件，并发来正确的地址，我们这周就可以先发第一批一百包。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 后悔（口语）、讨论、约会、记下、吃醋；再说出 血型、仿佛、打字、敲（门）、符合（和……对得上）、满足（条件）。卡住的词回看词卡再说一遍。",
+    "易混词：mengetik（打字：mengetik pesan）vs mengetuk（敲：mengetuk pintu），只差一个字母，词根 ketik / ketuk；sesuai（和……一致：sesuai dengan foto）vs memenuhi（达到要求：memenuhi syarat），说标准时两者都能用。各说一句。",
+    "重点复习词 nyesel：口语的“后悔”，正式说 menyesal；常用 daripada nyesel（免得后悔）、nanti nyesel lho（以后会后悔的哦）。用 Mending …, daripada nyesel 说一句你自己的选择。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "后悔（口语）",
+        "id": "nyesel"
+      },
+      {
+        "cn": "讨论；谈（口语常用词根）",
+        "id": "bahas"
+      },
+      {
+        "cn": "约会；谈恋爱",
+        "id": "berkencan"
+      },
+      {
+        "cn": "记下；记录（口语常用词根）",
+        "id": "catat"
+      },
+      {
+        "cn": "吃醋；嫉妒",
+        "id": "cemburu"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "mengetik",
+            "cn": "打字"
+          },
+          {
+            "id": "mengetuk",
+            "cn": "敲（门）"
+          }
+        ],
+        "note": "只差一个字母：ketik 是打字（mengetik pesan），ketuk 是用指节敲（mengetuk pintu）；口语分别说 ngetik 和 ketok / ngetok。"
+      },
+      {
+        "items": [
+          {
+            "id": "sesuai",
+            "cn": "和……一致；对得上"
+          },
+          {
+            "id": "memenuhi",
+            "cn": "达到；满足（要求）"
+          }
+        ],
+        "note": "sesuai dengan 说两样东西对得上（地址和地图、货和照片）；memenuhi 说达到一个要求（memenuhi syarat、memenuhi kebutuhan）；说标准时 sesuai standar、memenuhi standar 都可以。"
+      },
+      {
+        "items": [
+          {
+            "id": "seolah-olah",
+            "cn": "仿佛（看起来像，其实不一定）"
+          },
+          {
+            "id": "seperti",
+            "cn": "像"
+          }
+        ],
+        "note": "seperti 只是“像”；seolah-olah 多暗示“看起来像，实际上不是或不可信”；日常聊天两种意思都常说 kayak。"
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "mengetik",
+      "mengetuk",
+      "sesuai"
+    ],
+    "patterns": [
+      {
+        "pattern": "Menurut …, … seharusnya …",
+        "cn": "按……，……本该……",
+        "function": "state-problem",
+        "example": "Menurut aturan toko, pesanan besar seharusnya pakai DP dulu.",
+        "example_cn": "按店里的规矩，大订单本该先付定金。"
+      },
+      {
+        "pattern": "Mending … daripada …",
+        "cn": "宁可……，也别……；……总比……强（口语）",
+        "example": "Mending kehilangan satu pesanan daripada nyesel belakangan.",
+        "example_cn": "宁可丢掉一笔订单，也别以后后悔。"
+      }
+    ]
+  }
+}
