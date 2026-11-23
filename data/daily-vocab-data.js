@@ -4013,9 +4013,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-10-07 08:00",
+    "last_seen": "2026-11-23 08:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -4025,7 +4025,8 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29",
       "2026-09-18",
       "2026-10-03",
-      "2026-10-07"
+      "2026-10-07",
+      "2026-11-23"
     ],
     "example": "Aku nyaris terlambat karena jalan tadi ramai.",
     "example_cn": "因为刚才路上很拥挤，我差点迟到。",
@@ -4033,7 +4034,8 @@ window.DAILY_VOCAB_DB = [
       "2026-08-29 19:00",
       "2026-09-18 18:00",
       "2026-10-03 08:00",
-      "2026-10-07 08:00"
+      "2026-10-07 08:00",
+      "2026-11-23 08:00"
     ]
   },
   {
@@ -8514,16 +8516,16 @@ window.DAILY_VOCAB_DB = [
     "en": "relax; take it easy",
     "root": "santai",
     "root_cn": "轻松；悠闲",
-    "example": "Akhir pekan ini aku cuma mau nyantai di rumah.",
-    "example_cn": "这个周末我只想在家放松。",
+    "example": "Habis antar semua paket, Bang Jali nyantai sebentar di warung kopi.",
+    "example_cn": "送完所有包裹，贾利哥在咖啡摊歇了一会儿。（habis = setelah）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-10-08 18:00",
+    "last_seen": "2026-11-23 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -8531,12 +8533,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-09",
       "2026-10-02",
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
       "2026-09-09 08:00",
       "2026-10-02 18:00",
-      "2026-10-08 18:00"
+      "2026-10-08 18:00",
+      "2026-11-23 08:00"
     ]
   },
   {
@@ -8884,9 +8888,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-10 08:00",
-    "last_seen": "2026-10-07 18:00",
+    "last_seen": "2026-11-23 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -8895,13 +8899,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-10",
       "2026-10-04",
-      "2026-10-07"
+      "2026-10-07",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
       "2026-09-10 08:00",
       "2026-09-10 19:00",
       "2026-10-04 18:00",
-      "2026-10-07 18:00"
+      "2026-10-07 18:00",
+      "2026-11-23 08:00"
     ]
   },
   {
@@ -10810,26 +10816,28 @@ window.DAILY_VOCAB_DB = [
     "en": "real; actual; evident",
     "root": "nyata",
     "root_cn": "真实；明显",
-    "example": "Kita butuh hasil nyata, bukan cuma janji.",
-    "example_cn": "我们需要实际成果，不只是承诺。",
+    "example": "Tantangan nyata buat kurir di musim hujan adalah jalan yang banjir dan paket yang basah.",
+    "example_cn": "雨季里快递员真正的挑战，是被水淹的路和淋湿的包裹。（buat = untuk）",
     "categories": [
       "每日学习",
       "08:00",
       "19:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-15 08:00",
-    "last_seen": "2026-09-15 19:00",
+    "last_seen": "2026-11-23 08:00",
     "sessions": [
       "08:00",
       "19:00"
     ],
     "dates": [
-      "2026-09-15"
+      "2026-09-15",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
       "2026-09-15 08:00",
-      "2026-09-15 19:00"
+      "2026-09-15 19:00",
+      "2026-11-23 08:00"
     ]
   },
   {
@@ -13101,9 +13109,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-21 08:00",
-    "last_seen": "2026-10-07 08:00",
+    "last_seen": "2026-11-23 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -13112,13 +13120,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-21",
       "2026-09-29",
       "2026-10-03",
-      "2026-10-07"
+      "2026-10-07",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
       "2026-09-21 08:00",
       "2026-09-29 18:00",
       "2026-10-03 18:00",
-      "2026-10-07 08:00"
+      "2026-10-07 08:00",
+      "2026-11-23 08:00"
     ]
   },
   {
@@ -14569,9 +14579,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-25 08:00",
-    "last_seen": "2026-11-21 18:00",
+    "last_seen": "2026-11-23 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -14580,13 +14590,15 @@ window.DAILY_VOCAB_DB = [
       "2026-09-25",
       "2026-10-03",
       "2026-10-07",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
       "2026-09-25 08:00",
       "2026-10-03 08:00",
       "2026-10-07 08:00",
-      "2026-11-21 18:00"
+      "2026-11-21 18:00",
+      "2026-11-23 08:00"
     ]
   },
   {
@@ -17568,17 +17580,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-02 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-23 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-11-23 08:00"
     ]
   },
   {
@@ -20006,23 +20020,25 @@ window.DAILY_VOCAB_DB = [
     "en": "negative",
     "root": "negatif",
     "root_cn": "消极的；负面的",
-    "example": "Jangan terlalu sering membaca kata-kata negatif di media sosial.",
-    "example_cn": "别太常看社交媒体上的负面言论。",
+    "example": "Gara-gara paketnya telat seminggu, pembeli itu kasih review negatif.",
+    "example_cn": "因为包裹晚到了一个星期，那个买家给了差评。（gara-gara = karena，kasih = memberi）",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-09 08:00",
-    "last_seen": "2026-10-09 08:00",
+    "last_seen": "2026-11-23 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-09"
+      "2026-10-09",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
-      "2026-10-09 08:00"
+      "2026-10-09 08:00",
+      "2026-11-23 08:00"
     ]
   },
   {
@@ -20659,17 +20675,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-11 08:00",
-    "last_seen": "2026-10-11 08:00",
+    "last_seen": "2026-11-23 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-11"
+      "2026-10-11",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
-      "2026-10-11 08:00"
+      "2026-10-11 08:00",
+      "2026-11-23 08:00"
     ]
   },
   {
@@ -33814,6 +33832,56 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-20 08:00"
+    ]
+  },
+  {
+    "word": "resi",
+    "cn": "运单；运单号（寄件凭证）",
+    "en": "shipping receipt; tracking (waybill) number",
+    "root": "resi",
+    "root_cn": "收据；凭条",
+    "example": "Penjualnya belum kasih resi, jadi aku belum bisa cek paketnya sudah sampai mana.",
+    "example_cn": "卖家还没给运单号，所以我还没法查包裹到哪儿了。（kasih = memberi）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-23 08:00",
+    "last_seen": "2026-11-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-23"
+    ],
+    "lesson_occurrences": [
+      "2026-11-23 08:00"
+    ]
+  },
+  {
+    "word": "ongkir",
+    "cn": "运费（寄东西的费用）",
+    "en": "shipping cost",
+    "root": "kirim",
+    "root_cn": "寄；发送",
+    "example": "Selama periode promo akhir tahun, banyak toko online kasih gratis ongkir.",
+    "example_cn": "年末促销期间，很多网店都包邮。（kasih = memberi）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-23 08:00",
+    "last_seen": "2026-11-23 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-23"
+    ],
+    "lesson_occurrences": [
+      "2026-11-23 08:00"
     ]
   }
 ];

@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-23",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 94
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-22T14:00:29.411Z",
-    "lesson_watermark": "2026-11-22 18:00",
-    "index_updated": "2026-11-22",
-    "runtime_hash": "0836fb6a3be0f1ab941399860346bffb3be5d13e17246b4207449e8b80efcb43",
-    "index_hash": "b15fa0641314c93cf08da80f62e77f697ca86e51a254cab37ee50b4e34ad2b6a",
+    "runtime_generated_at": "2026-11-23T00:31:39.504Z",
+    "lesson_watermark": "2026-11-23 08:00",
+    "index_updated": "2026-11-23",
+    "runtime_hash": "e32ffd720579b8ce422e780057abf88123ddd89bc22bf8058c0d2ce6a3f49e06",
+    "index_hash": "ddfe4f3de783e6891861c7619372e54ee0b3996d32bdc5f04236e235795b9955",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -50,12 +50,12 @@
   "candidates": {
     "new_dont": [
       [
-        "resi",
-        "运单号"
+        "ekspedisi",
+        "快递公司；物流商"
       ],
       [
-        "ongkir",
-        "运费"
+        "lacak",
+        "追踪（包裹）"
       ]
     ],
     "new_fuzzy": [],
@@ -699,16 +699,6 @@
         "有趣的；吸引人的；引人注意的",
         "tarik",
         "拉；吸引"
-      ],
-      [
-        "nyata",
-        2,
-        0,
-        "",
-        "2026-11-15T03:36:46.888Z",
-        "真实的；实际存在的；明显的",
-        "nyata",
-        "真实；明显"
       ],
       [
         "tanah",
@@ -1401,16 +1391,6 @@
         "安装；装上"
       ],
       [
-        "repot",
-        2,
-        0,
-        "",
-        "2026-10-23T23:35:20.434Z",
-        "麻烦；费事；忙乱",
-        "repot",
-        "麻烦；费事"
-      ],
-      [
         "sebelah",
         2,
         0,
@@ -1741,16 +1721,6 @@
         "容纳；装载"
       ],
       [
-        "nyaris",
-        2,
-        1,
-        "",
-        "2026-11-08T07:35:02.091Z",
-        "差点、几乎",
-        "",
-        ""
-      ],
-      [
         "putaran",
         2,
         0,
@@ -1771,16 +1741,6 @@
         "撞"
       ],
       [
-        "upaya",
-        2,
-        1,
-        "2026-09-29T10:47:50.939Z",
-        "2026-11-12T04:08:45.212Z",
-        "努力、尝试",
-        "upaya",
-        "努力；办法"
-      ],
-      [
         "meminjam",
         3,
         0,
@@ -1799,16 +1759,6 @@
         "交（作业、报告）；收集；把……聚到一起",
         "kumpul",
         "聚集；聚在一起"
-      ],
-      [
-        "nyempetin",
-        3,
-        1,
-        "2026-09-30T14:03:19.964Z",
-        "2026-11-13T02:31:28.031Z",
-        "特意挤出时间做某事（口语）",
-        "sempat",
-        "有空；来得及"
       ],
       [
         "berpartisipasi",
@@ -1891,16 +1841,6 @@
         "接受；收到"
       ],
       [
-        "nyantai",
-        2,
-        1,
-        "2026-10-01T12:34:16.756Z",
-        "2026-11-13T02:32:27.070Z",
-        "放松一点；悠着来；轻松待着（口语）",
-        "santai",
-        "轻松；悠闲"
-      ],
-      [
         "kontrak",
         3,
         0,
@@ -1979,16 +1919,6 @@
         "掌握；精通；控制",
         "kuasa",
         "权力；能力"
-      ],
-      [
-        "negatif",
-        2,
-        1,
-        "2026-10-23T23:32:45.582Z",
-        "2026-11-03T09:40:16.434Z",
-        "消极的；负面的；阴性的",
-        "negatif",
-        "消极的；负面的"
       ],
       [
         "terletak",
@@ -2251,14 +2181,144 @@
         "开除；解雇"
       ],
       [
-        "sambil",
+        "seberapa",
         2,
         0,
         "",
-        "2026-10-26T07:50:57.804Z",
-        "一边……一边……；同时",
-        "sambil",
-        "一边……一边……（连词）"
+        "2026-10-26T07:51:05.657Z",
+        "多么；到什么程度",
+        "berapa",
+        "多少"
+      ],
+      [
+        "ucapan",
+        2,
+        0,
+        "",
+        "2026-10-26T07:51:18.594Z",
+        "所说的话；致辞；祝词",
+        "ucap",
+        "说出；讲"
+      ],
+      [
+        "nombok",
+        3,
+        1,
+        "2026-10-09T07:59:15.628Z",
+        "2026-11-22T01:47:21.465Z",
+        "自己垫钱；补差额（口语）",
+        "tombok",
+        "补上差额；贴补"
+      ],
+      [
+        "berjalan-jalan",
+        2,
+        0,
+        "",
+        "2026-10-26T07:51:21.639Z",
+        "散步；逛逛；出去玩",
+        "jalan",
+        "路；走"
+      ],
+      [
+        "bocor",
+        2,
+        0,
+        "",
+        "2026-10-26T07:51:23.870Z",
+        "漏；漏水；破洞漏气",
+        "bocor",
+        "漏"
+      ],
+      [
+        "dengan demikian",
+        2,
+        1,
+        "2026-10-09T07:10:06.857Z",
+        "2026-11-22T01:46:52.546Z",
+        "因此；这样一来",
+        "demikian",
+        "如此；这样"
+      ],
+      [
+        "menyiapkan",
+        2,
+        1,
+        "2026-10-15T13:40:34.757Z",
+        "2026-10-29T03:53:53.751Z",
+        "准备好某物",
+        "siap",
+        "准备好；就绪"
+      ],
+      [
+        "berjanji",
+        3,
+        1,
+        "2026-10-15T08:24:27.694Z",
+        "2026-10-29T03:52:54.539Z",
+        "答应；承诺",
+        "janji",
+        "约定；承诺"
+      ],
+      [
+        "ongkir",
+        2,
+        0,
+        "",
+        "",
+        "运费（寄东西的费用）",
+        "kirim",
+        "寄；发送"
+      ],
+      [
+        "resi",
+        2,
+        0,
+        "",
+        "",
+        "运单；运单号（寄件凭证）",
+        "resi",
+        "收据；凭条"
+      ],
+      [
+        "negatif",
+        2,
+        1,
+        "2026-10-23T23:32:45.582Z",
+        "2026-11-03T09:40:16.434Z",
+        "消极的；负面的；阴性的",
+        "negatif",
+        "消极的；负面的"
+      ],
+      [
+        "nyata",
+        2,
+        0,
+        "",
+        "2026-11-15T03:36:46.888Z",
+        "真实的；实际存在的；明显的",
+        "nyata",
+        "真实；明显"
+      ],
+      [
+        "nyantai",
+        2,
+        1,
+        "2026-10-01T12:34:16.756Z",
+        "2026-11-13T02:32:27.070Z",
+        "放松一点；悠着来；轻松待着（口语）",
+        "santai",
+        "轻松；悠闲"
+      ],
+      [
+        "repot",
+        2,
+        0,
+        "",
+        "2026-10-23T23:35:20.434Z",
+        "麻烦；费事；忙乱",
+        "repot",
+        "麻烦；费事"
       ]
     ],
     "focus": [
@@ -2714,6 +2774,21 @@
         "nyinggung"
       ],
       "new_words": []
+    },
+    {
+      "date": "2026-11-23",
+      "session": "am",
+      "review_core": [
+        "kesepakatan",
+        "sambil",
+        "nyaris",
+        "nyempetin",
+        "upaya"
+      ],
+      "new_words": [
+        "resi",
+        "ongkir"
+      ]
     }
   ],
   "previous_pm": {
@@ -2728,7 +2803,60 @@
       "nyinggung"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-23",
+    "vocab": [
+      [
+        "resi",
+        "运单；运单号（寄件凭证）",
+        "shipping receipt; tracking (waybill) number",
+        "resi",
+        "收据；凭条"
+      ],
+      [
+        "ongkir",
+        "运费（寄东西的费用）",
+        "shipping cost",
+        "kirim",
+        "寄；发送"
+      ],
+      [
+        "negatif",
+        "负面的；消极的；（检测）阴性的",
+        "negative",
+        "negatif",
+        "负面的（外来词）"
+      ],
+      [
+        "nyata",
+        "真实的；实实在在的；明显的",
+        "real; actual; evident",
+        "nyata",
+        "真实；明显"
+      ],
+      [
+        "nyantai",
+        "放松；悠闲地待着（口语）",
+        "to relax; to chill out",
+        "santai",
+        "轻松；悠闲"
+      ],
+      [
+        "repot",
+        "忙乱；麻烦，费事",
+        "busy and hectic; troublesome",
+        "repot",
+        "忙乱；麻烦"
+      ]
+    ],
+    "review_vocab": [
+      "kesepakatan",
+      "sambil",
+      "nyaris",
+      "nyempetin",
+      "upaya"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
