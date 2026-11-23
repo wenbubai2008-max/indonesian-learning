@@ -1,0 +1,296 @@
+{
+  "date": "2026-11-23",
+  "session": "am",
+  "time": "08:00",
+  "day": 94,
+  "title": "08:00 早课｜Ongkirnya Lebih Mahal dari Isinya · 运费比东西还贵",
+  "phase": {
+    "theme_id": "logistics",
+    "day_role": "core"
+  },
+  "story": {
+    "series": "Agen Kilat Mbak Sinta · 辛塔姐的快递代收点",
+    "episode": 1,
+    "next_cn": "下集：刚拿到的运单号怎么查不到？迪马斯开始着急，布罗丝阿姨一早又来找辛塔。"
+  },
+  "vocab": [
+    {
+      "word": "resi",
+      "display": "resi",
+      "audio_text": "resi",
+      "cn": "运单；运单号（寄件凭证）",
+      "en": "shipping receipt; tracking (waybill) number",
+      "root": "resi",
+      "root_cn": "收据；凭条",
+      "formation": "外来词（源自荷兰语 reçu，收据），没有词缀变化。日常说 resi 就指快递的运单或运单号：nomor resi（运单号）、cek resi（查运单）、kasih resi（给运单号）、Resinya berapa?（运单号是多少？）。加 -nya 指“那张运单、那个单号”：Simpan resinya。",
+      "example": "Penjualnya belum kasih resi, jadi aku belum bisa cek paketnya sudah sampai mana.",
+      "example_cn": "卖家还没给运单号，所以我还没法查包裹到哪儿了。（kasih = memberi）",
+      "synonym_note": "resi 是寄件后拿到的运单 / 运单号，用来查件；struk 是商店、超市打出来的小票；kuitansi 是写明金额、可以签字盖章的正式收据。查快递说 resi，不说 struk。口语说法：Resinya berapa, Kak? / Udah ada resinya belum?（udah = sudah）",
+      "everyday": "日常直接说 resi、cek resi；客服、表格里也写 nomor resi",
+      "is_oral_new": false
+    },
+    {
+      "word": "ongkir",
+      "display": "ongkir",
+      "audio_text": "ongkir",
+      "cn": "运费（寄东西的费用）",
+      "en": "shipping cost",
+      "root": "kirim",
+      "root_cn": "寄；发送",
+      "formation": "ongkos（费用）+ kirim（寄）的缩写：ongkos kirim → ongkir。常见搭配：gratis ongkir（包邮，也常说 free ongkir）、ongkir ke Medan berapa?（寄到棉兰运费多少？）、cek ongkir（查运费）、ongkir ditanggung pembeli（运费由买家出）。",
+      "example": "Selama periode promo akhir tahun, banyak toko online kasih gratis ongkir.",
+      "example_cn": "年末促销期间，很多网店都包邮。（kasih = memberi）",
+      "synonym_note": "ongkir 只指寄东西的运费；坐车的车费说 ongkos 或 tarif（ongkos ojek、tarif taksi）。快递按重量收运费，箱子大时会按体积算（berat volume），所以大箱子装轻东西也可能很贵。正式文件、发票上写 ongkos kirim 或 biaya pengiriman。",
+      "everyday": "网店、快递、聊天一律说 ongkir；正式写 ongkos kirim / biaya pengiriman",
+      "is_oral_new": false
+    },
+    {
+      "word": "negatif",
+      "display": "negatif",
+      "audio_text": "negatif",
+      "cn": "负面的；消极的；（检测）阴性的",
+      "en": "negative",
+      "root": "negatif",
+      "root_cn": "负面的（外来词）",
+      "formation": "外来词（来自英语 negative），没有词缀变化。常见搭配：review negatif / ulasan negatif（差评）、berpikir negatif（往坏处想）、dampak negatif（负面影响）、hasil tesnya negatif（检测结果是阴性）。反义词 positif。",
+      "example": "Gara-gara paketnya telat seminggu, pembeli itu kasih review negatif.",
+      "example_cn": "因为包裹晚到了一个星期，那个买家给了差评。（gara-gara = karena，kasih = memberi）",
+      "synonym_note": "negatif 说评价、想法、影响是“负面的”；jelek / buruk 是“差、坏”，说得更直接（Pelayanannya jelek）。注意检测结果 negatif 是“阴性”，通常是好消息。说“差评”日常多说 review negatif 或 kasih bintang satu（给一星），正式写 ulasan negatif。",
+      "usage_note": "复习词：先遮住中文回想意思，再看布罗丝阿姨为什么差点要给差评。",
+      "is_oral_new": false
+    },
+    {
+      "word": "nyata",
+      "display": "nyata",
+      "audio_text": "nyata",
+      "cn": "真实的；实实在在的；明显的",
+      "en": "real; actual; evident",
+      "root": "nyata",
+      "root_cn": "真实；明显",
+      "formation": "词根本身就是形容词。同词根：kenyataan（现实、事实）、ternyata（原来、结果是）、menyatakan（声明、表示）、pernyataan（声明）。常见搭配：bukti nyata（实实在在的证据）、dunia nyata（现实世界）、contoh nyata（真实的例子）、hasil nyata（看得见的成果）。",
+      "example": "Tantangan nyata buat kurir di musim hujan adalah jalan yang banjir dan paket yang basah.",
+      "example_cn": "雨季里快递员真正的挑战，是被水淹的路和淋湿的包裹。（buat = untuk）",
+      "synonym_note": "nyata 偏“实实在在、看得见的”，常放在名词后面（bukti nyata、hasil nyata）；asli 是“真的、不是假的”（barang asli 正品），说正品不用 nyata；benar 是“对的、正确的”。口语说法：问“真的吗？”多说 Beneran?，不说 nyata；但 bukti nyata、dunia nyata 日常也常听到。",
+      "usage_note": "复习词：先回想意思，再看辛塔把什么叫作“实实在在的证据”。",
+      "is_oral_new": false
+    },
+    {
+      "word": "nyantai",
+      "display": "nyantai",
+      "audio_text": "nyantai",
+      "cn": "放松；悠闲地待着（口语）",
+      "en": "to relax; to chill out",
+      "root": "santai",
+      "root_cn": "轻松；悠闲",
+      "formation": "口语前缀 N- + santai → nyantai（词首 s 变成 ny-，和 sapu → nyapu 一样），相当于标准语 bersantai。常见说法：lagi nyantai（正闲着）、nyantai dulu（先歇会儿）、nyantai di rumah（在家放松）、nyantai sambil ngopi（一边喝咖啡一边放松）。",
+      "example": "Habis antar semua paket, Bang Jali nyantai sebentar di warung kopi.",
+      "example_cn": "送完所有包裹，贾利哥在咖啡摊歇了一会儿。（habis = setelah）",
+      "synonym_note": "nyantai 是动作“放松、歇着”（Kita nyantai dulu aja）；劝别人“别急、放轻松”更常说 Santai aja。和下一张 repot 正好相反：一个闲着，一个忙得团团转。正式说法：bersantai（Hari Minggu dia bersantai di rumah），书面、叙述里用。",
+      "usage_note": "复习词：和下一张 repot 一起记，看早上代收点里谁忙、谁闲。",
+      "is_oral_new": false
+    },
+    {
+      "word": "repot",
+      "display": "repot",
+      "audio_text": "repot",
+      "cn": "忙乱；麻烦，费事",
+      "en": "busy and hectic; troublesome",
+      "root": "repot",
+      "root_cn": "忙乱；麻烦",
+      "formation": "词根本身就是形容词。同词根：merepotkan（给人添麻烦：Maaf merepotkan）、kerepotan（忙不过来、手忙脚乱）、repot-repot（特意费事：Nggak usah repot-repot）。常见搭配：repot banget（忙得不行）、lagi repot（正忙着）、repot ngurus …（忙着张罗……）。",
+      "example": "Menjelang akhir tahun, agen ekspedisi repot banget karena kiriman naik dua kali lipat.",
+      "example_cn": "快到年底的时候，快递点忙得不行，因为寄件量翻了一倍。",
+      "synonym_note": "repot 是“事情多、手忙脚乱”或“麻烦、费事”；sibuk 只是“忙”，不带“麻烦”的意思。客气话常用 repot：Maaf merepotkan（不好意思，麻烦你了）、Nggak usah repot-repot（别费事了），这两句不换成 sibuk。和上一张 nyantai 是一对反义词。",
+      "usage_note": "复习词：和上一张 nyantai 一起记，再看辛塔怎么在忙乱中保持冷静。",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "negatif",
+    "nyata",
+    "nyantai",
+    "repot"
+  ],
+  "review_vocab": [
+    "kesepakatan",
+    "sambil",
+    "nyaris",
+    "nyempetin",
+    "upaya"
+  ],
+  "sentences": [
+    {
+      "text": "Mbak, ongkir ke Medan berapa? Kira-kira kapan nyampe kalau pakai yang reguler?",
+      "cn": "姐，寄到棉兰运费多少？用普通件的话，大概什么时候能到？（nyampe = sampai）"
+    },
+    {
+      "text": "Tolong kirim nomor resinya, ya, biar aku bisa cek sendiri paketnya sudah sampai mana.",
+      "cn": "麻烦把运单号发我，我好自己查包裹到哪儿了。（biar = supaya）"
+    },
+    {
+      "text": "Kurir biasanya bertanya dulu: ada barang pecah belah atau benda tajam di dalamnya?",
+      "cn": "快递员一般会先问：里面有没有易碎品或者尖锐的东西？"
+    },
+    {
+      "text": "Pilih layanan pengiriman sesuai kebutuhan: reguler lebih murah, kilat lebih cepat sampai.",
+      "cn": "按需要选寄件服务：普通件便宜些，特快件到得快些。"
+    },
+    {
+      "text": "Jangan sampai kelewatan jam pickup, soalnya kurirnya cuma datang sekali sehari.",
+      "cn": "千万别错过上门取件的时间，因为快递员一天只来一次。（soalnya = karena，cuma = hanya）"
+    }
+  ],
+  "reading": {
+    "title": "Ongkirnya Lebih Mahal dari Isinya · 运费比东西还贵",
+    "text": "Senin pagi, antrean di Agen Kilat sudah panjang. Mbak Sinta repot sekali di meja depan, sementara Bang Jali, kurirnya, masih nyantai sambil ngopi. Bu Ros datang membawa kardus besar. Dia nyempetin mampir sebelum ke pasar. Isinya sambal dan keripik untuk Dimas, anaknya yang kuliah di Medan. Beratnya cuma tiga kilo, tapi karena kardusnya besar, ongkirnya dihitung delapan kilo: dua ratus delapan puluh ribu. \"Ongkirnya lebih mahal dari isinya!\" kata Bu Ros. Dia nyaris pulang dan bilang mau kasih review negatif. Mbak Sinta tetap tenang. \"Kita coba pindahkan ke kardus kecil, ya, Bu.\" Dia mengajak Bang Jali membantu. Botol sambal dibungkus bubble wrap (plastik gelembung), dan upaya itu berhasil: hitungannya jadi empat kilo. \"Jadi ongkirnya seratus empat puluh ribu, betul?\" tanya Bu Ros. Setelah ada kesepakatan, Mbak Sinta mencetak resi. \"Simpan resinya, Bu. Ini bukti nyata kalau paketnya sudah dikirim.\" Bu Ros menyalin nomor resi ke WhatsApp untuk Dimas. Malamnya Dimas membalas: \"Bu, kok resinya nggak bisa dilacak?\"",
+    "cn": "周一早上，闪电快递代收点前已经排起了长队。辛塔姐在前台忙得团团转，快递员贾利哥却还在一边喝咖啡一边悠闲地歇着。布罗丝阿姨抱着一个大纸箱来了。她是去市场之前特意挤时间顺路过来的。箱子里装的是辣椒酱和薯片，要寄给在棉兰上大学的儿子迪马斯。东西只有三公斤，可因为箱子太大，运费按八公斤算：二十八万盾。“运费比里面的东西还贵！”布罗丝阿姨说。她差点转身回家，还说要给差评。辛塔姐依旧很冷静：“阿姨，我们试试换成小箱子吧。”她叫贾利哥过来帮忙。辣椒酱瓶子用气泡膜包好，这个办法果然管用：计费重量变成了四公斤。“所以运费是十四万盾，对吗？”布罗丝阿姨问。谈妥之后，辛塔姐打印了运单。“阿姨，把运单收好。这就是包裹已经寄出的实实在在的证据。”布罗丝阿姨把运单号抄到 WhatsApp 上发给迪马斯。当天晚上，迪马斯回复：“妈，这个运单号怎么查不到啊？”"
+  },
+  "quiz": [
+    {
+      "question": "Dalam cerita hari ini, kenapa ongkir paket Bu Ros awalnya mahal sekali?",
+      "options": [
+        "Karena isinya botol sambal yang harus dibungkus bubble wrap.",
+        "Karena Bu Ros memilih layanan kilat supaya cepat sampai.",
+        "Karena Bang Jali salah menimbang paketnya.",
+        "Karena kardusnya besar, jadi ongkirnya dihitung dari ukuran kardus, bukan dari berat isinya."
+      ],
+      "answer_index": 3,
+      "answer": "Karena kardusnya besar, jadi ongkirnya dihitung dari ukuran kardus, bukan dari berat isinya.",
+      "explain": "课文里说东西只有三公斤，可是箱子太大，运费按八公斤算（karena kardusnya besar, ongkirnya dihitung delapan kilo）；换成小箱子以后就降到四公斤的价钱。A 气泡膜是后来为了保护瓶子才包的；B 课文没提特快件；C 贾利哥没有称错，他是后来帮忙换箱子的。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "我昨天差点把运单扔了。",
+      "target": "nyaris",
+      "target_cn": "差点",
+      "options": [
+        "Kemarin aku sudah membuang resinya.",
+        "Kemarin aku nyaris membuang resinya.",
+        "Kemarin aku belum membuang resinya.",
+        "Kemarin aku nyaris dibuang resinya."
+      ],
+      "answer_index": 1,
+      "answer": "Kemarin aku nyaris membuang resinya.",
+      "point": "nyaris（差点，最后没发生）/ sudah（已经发生了）/ belum（还没）；“我”扔东西用主动 membuang，不用被动 dibuang",
+      "explain": "“差点扔了”就是差一点发生、最后没发生，用 nyaris membuang，所以 B 对。A 的 sudah membuang 是“已经扔了”；C 的 belum membuang 是“还没扔”，没有“差一点”的意思；D 的 dibuang 是被动，主语“我”成了被扔的人，说不通。口语里也常说 Kemarin aku hampir buang resinya（hampir = 差点），也对。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "所以运费是买家出，对吗？",
+      "target": "ongkir",
+      "target_cn": "运费",
+      "options": [
+        "Jadi resi ditanggung pembeli, betul?",
+        "Jadi ongkir menanggung pembeli, betul?",
+        "Jadi ongkir ditanggung pembeli, betul?",
+        "Jadi ongkir ditanggung penjual, betul?"
+      ],
+      "answer_index": 2,
+      "answer": "Jadi ongkir ditanggung pembeli, betul?",
+      "point": "ongkir（运费）/ resi（运单号）；被动 ditanggung（由……承担）/ 主动 menanggung；pembeli（买家）/ penjual（卖家）",
+      "explain": "“运费由买家出”是 ongkir ditanggung pembeli，再用 Jadi …, betul? 确认，所以 C 对。A 的 resi 是运单号，不是钱；B 的 menanggung 是主动，变成“运费承担买家”，说反了；D 的 penjual 是卖家，意思正好相反。口语里也常说 Jadi ongkirnya pembeli yang bayar, ya?，也对。"
+    }
+  ],
+  "output": {
+    "task": "你是布罗丝阿姨。寄完包裹，给儿子迪马斯发一条 WhatsApp（4 句）：说寄了什么；说运费多少、怎么省下来的；用 Jadi …, betul? 确认他的地址；最后让他用运单号自己查件。按骨架填空，用上 ongkir 和 resi。",
+    "frame": "Dim, Ibu sudah kirim …… ke Medan. Ongkirnya …… , untung Mbak Sinta bantu ganti …… . Jadi alamatmu masih …… , betul? Nomor resinya Ibu kirim di bawah, cek sendiri paketnya sudah sampai mana, ya.",
+    "reference_answer": "Dim, Ibu sudah kirim sambal dan keripik ke Medan. Ongkirnya seratus empat puluh ribu, untung Mbak Sinta bantu ganti kardus yang lebih kecil. Jadi alamatmu masih di kos dekat kampus, betul? Nomor resinya Ibu kirim di bawah, cek sendiri paketnya sudah sampai mana, ya.",
+    "reference_cn": "迪马斯，妈妈已经把辣椒酱和薯片寄到棉兰了。运费十四万盾，幸好辛塔姐帮忙换了个小一点的箱子。所以你的地址还是学校附近的那间宿舍，对吧？运单号妈妈发在下面，你自己查查包裹到哪儿了。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 协议（谈妥的结果）、一边……一边……、差点、特意挤时间（口语）、努力（办法）；再说出 运单号、运费、负面的、实实在在的、放松（口语）、忙乱（麻烦）。卡住的词回看词卡再说一遍。",
+    "易混词：nyantai（闲着、放松：lagi nyantai）vs repot（忙乱、麻烦：lagi repot banget）是一对反义词；客气话 Maaf merepotkan、Nggak usah repot-repot 不换成 sibuk。nyaris 和 hampir 都能说“差点”（nyaris / hampir jatuh），说数量多用 hampir（hampir semua）。各说一句。",
+    "重点复习词 nyempetin：口语的“特意挤出时间去做”，正式说 menyempatkan diri；常说 nyempetin mampir、nyempetin telepon。用 Aku nyempetin … sebelum … 说一句你今天挤时间做的事。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "协议；谈妥的结果",
+        "id": "kesepakatan"
+      },
+      {
+        "cn": "一边……一边……",
+        "id": "sambil"
+      },
+      {
+        "cn": "差点；几乎",
+        "id": "nyaris"
+      },
+      {
+        "cn": "特意挤出时间做（口语）",
+        "id": "nyempetin"
+      },
+      {
+        "cn": "努力；办法",
+        "id": "upaya"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "nyantai",
+            "cn": "放松；闲着（口语）"
+          },
+          {
+            "id": "repot",
+            "cn": "忙乱；麻烦"
+          }
+        ],
+        "note": "一对反义词：nyantai 是闲下来歇着，repot 是事情多、手忙脚乱；客气话 Maaf merepotkan、Nggak usah repot-repot 用 repot，不用 sibuk。"
+      },
+      {
+        "items": [
+          {
+            "id": "resi",
+            "cn": "运单；运单号"
+          },
+          {
+            "id": "struk",
+            "cn": "小票"
+          },
+          {
+            "id": "kuitansi",
+            "cn": "正式收据"
+          }
+        ],
+        "note": "查快递用 resi；超市、餐馆打出来的小票是 struk；写明金额、可以签字盖章的正式收据是 kuitansi。"
+      },
+      {
+        "items": [
+          {
+            "id": "nyaris",
+            "cn": "差点"
+          },
+          {
+            "id": "hampir",
+            "cn": "差点；几乎"
+          }
+        ],
+        "note": "说“差点发生”两个都可以（nyaris / hampir ketinggalan）；说数量、时间“几乎、快到”多用 hampir（hampir semua、hampir jam tujuh）。"
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "resi",
+      "ongkir",
+      "repot"
+    ],
+    "patterns": [
+      {
+        "pattern": "Jadi …, betul?",
+        "cn": "所以……，对吗？",
+        "function": "confirm-info",
+        "example": "Jadi ongkirnya seratus empat puluh ribu, betul?",
+        "example_cn": "所以运费是十四万盾，对吗？"
+      },
+      {
+        "pattern": "Jangan sampai …, soalnya …",
+        "cn": "千万别……，因为……（口语）",
+        "example": "Jangan sampai kelewatan jam pickup, soalnya kurirnya cuma datang sekali sehari.",
+        "example_cn": "千万别错过上门取件的时间，因为快递员一天只来一次。"
+      }
+    ]
+  }
+}
