@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-23T04:53:18.888Z",
+  "updated_at": "2026-11-23T12:49:58.895Z",
   "words": {
     "tunda": {
       "word": "tunda",
@@ -5152,18 +5152,22 @@
     "menuduh": {
       "word": "menuduh",
       "status": "active",
-      "updated_at": "2026-11-23T04:34:01.024Z",
+      "updated_at": "2026-11-23T12:49:48.659Z",
       "display": "menuduh",
-      "cn": "指控；指责",
+      "cn": "指控；指责（说某人做了坏事）",
       "root": "tuduh",
       "root_cn": "指控；指责",
-      "last_wrong": "2026-11-23T04:34:00.956Z",
-      "last_review": "2026-11-23T04:34:00.956Z",
+      "last_wrong": "2026-11-23T12:49:48.574Z",
+      "last_review": "2026-11-23T12:49:48.574Z",
+      "source": "课程回想",
+      "source_date": "2026-11-23",
+      "session": "18:00",
       "reasons": [
         "memory_dont",
-        "quick_wrong"
+        "quick_wrong",
+        "lesson_wrong"
       ],
-      "wrong_count": 1,
+      "wrong_count": 2,
       "right_streak": 0
     },
     "menyalakan": {
@@ -8456,8 +8460,11 @@
     "nasib": {
       "word": "nasib",
       "status": "active",
-      "updated_at": "2026-11-12T04:07:22.156Z",
+      "updated_at": "2026-11-23T12:39:32.362Z",
       "display": "nasib",
+      "cn": "命运；处境；运气",
+      "root": "nasib",
+      "root_cn": "命运；处境",
       "last_review": "2026-11-12T04:07:22.095Z",
       "reasons": [
         "memory_fuzzy"
@@ -30436,22 +30443,22 @@
     "penanganan": {
       "word": "penanganan",
       "status": "active",
-      "updated_at": "2026-11-15T11:13:51.760Z",
+      "updated_at": "2026-11-23T12:46:51.609Z",
       "display": "penanganan",
-      "cn": "处理；应对（的过程）",
+      "cn": "处理；应对（的方式、过程）",
       "root": "tangan",
       "root_cn": "手",
-      "last_wrong": "2026-11-15T11:13:51.680Z",
-      "last_review": "2026-11-15T11:13:51.680Z",
+      "last_wrong": "2026-11-23T12:46:51.522Z",
+      "last_review": "2026-11-23T12:46:51.522Z",
       "source": "课程小测",
-      "source_date": "2026-11-15",
+      "source_date": "2026-11-23",
       "session": "18:00",
       "reasons": [
         "bipa_secondary_dont",
         "memory_fuzzy",
         "lesson_wrong"
       ],
-      "wrong_count": 4,
+      "wrong_count": 5,
       "right_streak": 0
     },
     "tuntas": {
@@ -33004,6 +33011,25 @@
         "manual_unknown"
       ],
       "wrong_count": 0,
+      "right_streak": 0
+    },
+    "lacak": {
+      "word": "lacak",
+      "status": "active",
+      "updated_at": "2026-11-23T12:49:09.972Z",
+      "display": "lacak",
+      "cn": "追踪；查（包裹、运单的位置）",
+      "root": "lacak",
+      "root_cn": "踪迹；追踪",
+      "last_wrong": "2026-11-23T12:49:09.886Z",
+      "last_review": "2026-11-23T12:49:09.886Z",
+      "source": "课程小测",
+      "source_date": "2026-11-23",
+      "session": "18:00",
+      "reasons": [
+        "lesson_wrong"
+      ],
+      "wrong_count": 1,
       "right_streak": 0
     }
   }
