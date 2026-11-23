@@ -1,14 +1,13 @@
 {
   "version": 1,
-  "updated_at": "2026-11-23T12:49:58.895Z",
+  "updated_at": "2026-11-23T16:03:34.542Z",
   "words": {
     "tunda": {
       "word": "tunda",
       "status": "mastered",
       "updated_at": "2026-10-19T06:09:37.441Z",
       "display": "tunda",
-      "cn": "推迟；延期",
-      "root": "tunda",
+      "cn": "推迟",
       "last_review": "2026-10-19T06:09:37.372Z",
       "last_mastered": "2026-09-15T04:40:54.860Z",
       "source": "每日学习阅读",
@@ -3448,9 +3447,7 @@
       "last_wrong": "2026-10-03T14:10:41.203Z",
       "last_review": "2026-10-21T06:07:35.301Z",
       "last_mastered": "2026-10-16T09:42:30.616Z",
-      "reasons": [
-        "listening_slow"
-      ],
+      "reasons": [],
       "wrong_count": 3,
       "right_streak": 3
     },
@@ -32170,15 +32167,13 @@
     "patungan": {
       "word": "patungan",
       "status": "active",
-      "updated_at": "2026-11-17T11:26:15.857Z",
+      "updated_at": "2026-11-23T16:03:28.628Z",
       "display": "patungan",
       "cn": "一起分摊；凑钱；AA出钱（口语）",
       "root": "patungan",
       "root_cn": "共同凑钱；分摊费用",
-      "last_wrong": "2026-11-14T08:24:34.736Z",
-      "last_review": "2026-11-17T11:26:15.789Z",
+      "last_wrong": "2026-11-14T08:24:34.705Z",
       "reasons": [
-        "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 1,
@@ -32250,22 +32245,16 @@
     "kepepet": {
       "word": "kepepet",
       "status": "active",
-      "updated_at": "2026-11-17T11:26:24.568Z",
+      "updated_at": "2026-11-23T16:03:28.628Z",
       "display": "kepepet",
       "cn": "被逼到很紧；没什么余地",
       "root": "pepet",
       "root_cn": "逼近；紧逼",
-      "last_wrong": "2026-11-14T11:30:50.316Z",
-      "last_review": "2026-11-17T11:26:24.502Z",
-      "source": "课程小测",
-      "source_date": "2026-11-14",
-      "session": "18:00",
+      "last_wrong": "2026-11-14T08:25:55.004Z",
       "reasons": [
-        "memory_dont",
-        "lesson_wrong",
         "quick_wrong"
       ],
-      "wrong_count": 4,
+      "wrong_count": 1,
       "right_streak": 2
     },
     "keduluan": {
@@ -32379,15 +32368,13 @@
     "ketiban": {
       "word": "ketiban",
       "status": "active",
-      "updated_at": "2026-11-18T14:18:12.600Z",
+      "updated_at": "2026-11-23T16:03:28.628Z",
       "display": "ketiban",
       "cn": "突然摊上；意外落到自己头上",
       "root": "tiban",
       "root_cn": "落到；压到",
-      "last_wrong": "2026-11-15T11:18:12.999Z",
-      "last_review": "2026-11-18T14:18:12.545Z",
+      "last_wrong": "2026-11-15T11:18:12.967Z",
       "reasons": [
-        "memory_dont",
         "quick_wrong"
       ],
       "wrong_count": 2,
@@ -32658,15 +32645,13 @@
     "ngeles": {
       "word": "ngeles",
       "status": "active",
-      "updated_at": "2026-11-17T11:26:20.768Z",
+      "updated_at": "2026-11-23T16:03:28.628Z",
       "display": "ngeles",
       "cn": "找借口；绕着说；回避真正问题（口语）",
       "root": "ngeles",
       "root_cn": "找借口；回避重点",
-      "last_wrong": "2026-11-14T08:25:43.657Z",
-      "last_review": "2026-11-17T11:26:20.698Z",
+      "last_wrong": "2026-11-14T08:25:43.627Z",
       "reasons": [
-        "memory_fuzzy",
         "quick_wrong"
       ],
       "wrong_count": 1,
