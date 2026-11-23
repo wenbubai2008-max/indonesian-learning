@@ -11,10 +11,10 @@
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-23T14:01:23.348Z",
+    "runtime_generated_at": "2026-11-23T23:41:19.541Z",
     "lesson_watermark": "2026-11-23 18:00",
     "index_updated": "2026-11-23",
-    "runtime_hash": "fb75908ea0b4080d1c7aed30569c7c23560e006f3ffaf309532cb4e3a48a67fd",
+    "runtime_hash": "c98263c5a8e44ea04277570e26dbed9b1cae67558365a9c439e22bcfb1cbdf43",
     "index_hash": "ddcf25ff9657694ae22c9a3e3ba6c9beb688191929452a172ca3a7b7b0249631",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
@@ -143,16 +143,6 @@
         "令人惊叹的；了不起的",
         "takjub",
         "惊叹"
-      ],
-      [
-        "kepepet",
-        1,
-        4,
-        "2026-11-14T11:30:50.316Z",
-        "2026-11-17T11:26:24.502Z",
-        "被逼到很紧；没什么余地",
-        "pepet",
-        "逼近；紧逼"
       ],
       [
         "menimpa",
@@ -365,6 +355,16 @@
         "抱怨；叹息"
       ],
       [
+        "seraya",
+        2,
+        1,
+        "2026-09-27T13:59:29.228Z",
+        "2026-11-08T07:35:17.117Z",
+        "同时；一边……一边……",
+        "seraya",
+        "同时；一边……一边……"
+      ],
+      [
         "berteriak",
         1,
         5,
@@ -488,8 +488,8 @@
         "ketiban",
         1,
         2,
-        "2026-11-15T11:18:12.999Z",
-        "2026-11-18T14:18:12.545Z",
+        "2026-11-15T11:18:12.967Z",
+        "",
         "突然摊上；意外落到自己头上",
         "tiban",
         "落到；压到"
@@ -2370,15 +2370,6 @@
         ]
       ],
       [
-        "kepepet",
-        108,
-        [
-          "quick_wrong",
-          "lesson_wrong",
-          "dont"
-        ]
-      ],
-      [
         "menimpa",
         108,
         [
@@ -2560,6 +2551,14 @@
       [
         "mengeluh",
         82,
+        [
+          "automation_fail",
+          "dont"
+        ]
+      ],
+      [
+        "seraya",
+        80,
         [
           "automation_fail",
           "dont"
