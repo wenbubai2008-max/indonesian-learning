@@ -11018,23 +11018,27 @@ window.DAILY_VOCAB_DB = [
     "en": "journey; trip",
     "root": "jalan",
     "root_cn": "走；道路",
-    "example": "Perjalanan ke kantor biasanya sekitar satu jam.",
-    "example_cn": "去办公室的路程通常大约一小时。",
+    "example": "Dari kemarin status paketnya masih \"dalam perjalanan\", belum ada perubahan.",
+    "example_cn": "从昨天起包裹的状态一直是“运送中”，没有任何变化。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-09-16 08:00",
+    "last_seen": "2026-11-23 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
-      "2026-09-16 08:00"
+      "2026-09-16 08:00",
+      "2026-11-23 18:00"
     ]
   },
   {
@@ -17021,23 +17025,27 @@ window.DAILY_VOCAB_DB = [
     "en": "accuse",
     "root": "tuduh",
     "root_cn": "指控；指责",
-    "example": "Jangan menuduh orang lain tanpa bukti yang jelas.",
-    "example_cn": "没有明确证据，不要指控别人。",
+    "example": "Dia dituduh mengambil uang kas, padahal hari itu dia sedang cuti.",
+    "example_cn": "他被指控拿了办公室的备用金，可那天他其实在休假。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-01 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-11-23 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-01"
+      "2026-10-01",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-11-23 18:00"
     ]
   },
   {
@@ -20879,26 +20887,28 @@ window.DAILY_VOCAB_DB = [
     "en": "to take a stroll; to go out for fun",
     "root": "jalan",
     "root_cn": "路；走",
-    "example": "Kalau besok tidak hujan, kita berjalan-jalan di taman kota.",
-    "example_cn": "如果明天不下雨，我们去市里的公园逛逛。",
+    "example": "Waktu berjalan-jalan di Kota Tua, kami menyaksikan pertunjukan ondel-ondel.",
+    "example_cn": "在老城区逛的时候，我们看了一场 ondel-ondel（巨型人偶）表演。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-11 08:00",
-    "last_seen": "2026-10-11 18:00",
+    "last_seen": "2026-11-23 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-10-11"
+      "2026-10-11",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
       "2026-10-11 08:00",
-      "2026-10-11 18:00"
+      "2026-10-11 18:00",
+      "2026-11-23 18:00"
     ]
   },
   {
@@ -22133,16 +22143,16 @@ window.DAILY_VOCAB_DB = [
     "en": "handling; treatment",
     "root": "tangan",
     "root_cn": "手",
-    "example": "Penanganan paket yang rusak lebih cepat kalau pembeli punya video saat membuka paket.",
-    "example_cn": "如果买家有拆包裹时录的视频，损坏包裹的处理会更快。",
+    "example": "Penanganan keluhan di toko itu cepat; dalam satu jam masalah saya sudah beres.",
+    "example_cn": "那家店处理投诉很快，一个小时内我的问题就解决了。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-11-16 08:00",
+    "last_seen": "2026-11-23 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -22153,7 +22163,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-29",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
       "2026-10-15 08:00",
@@ -22161,7 +22172,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-29 18:00",
       "2026-11-14 18:00",
       "2026-11-15 18:00",
-      "2026-11-16 08:00"
+      "2026-11-16 08:00",
+      "2026-11-23 18:00"
     ]
   },
   {
@@ -31610,27 +31622,29 @@ window.DAILY_VOCAB_DB = [
     "en": "to fall on / hit; to befall",
     "root": "timpa",
     "root_cn": "压下；砸落",
-    "example": "Papan reklame yang roboh semalam menimpa dua motor yang diparkir di dekat bundaran.",
-    "example_cn": "昨晚倒下的广告牌砸中了停在环岛附近的两辆摩托车。",
+    "example": "Waktu gempa kemarin, rak buku di kamar saya roboh dan menimpa meja kerja.",
+    "example_cn": "昨天地震的时候，我房间的书架倒了，砸在了办公桌上。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-10 18:00",
-    "last_seen": "2026-11-11 08:00",
+    "last_seen": "2026-11-23 18:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-23"
     ],
     "lesson_occurrences": [
       "2026-11-10 18:00",
-      "2026-11-11 08:00"
+      "2026-11-11 08:00",
+      "2026-11-23 18:00"
     ]
   },
   {
@@ -33882,6 +33896,81 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-23 08:00"
+    ]
+  },
+  {
+    "word": "ekspedisi",
+    "cn": "快递公司；物流公司；（另义）远征、考察",
+    "en": "shipping/courier company; expedition",
+    "root": "ekspedisi",
+    "root_cn": "运送货物；远征（外来词）",
+    "example": "Toko ini kerja sama dengan berbagai ekspedisi, jadi pembeli bisa pilih sendiri.",
+    "example_cn": "这家店和多家快递公司合作，所以买家可以自己选。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-23 18:00",
+    "last_seen": "2026-11-23 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-23"
+    ],
+    "lesson_occurrences": [
+      "2026-11-23 18:00"
+    ]
+  },
+  {
+    "word": "lacak",
+    "cn": "追踪；查（包裹、运单的位置）",
+    "en": "to track (a parcel)",
+    "root": "lacak",
+    "root_cn": "踪迹；追踪",
+    "example": "Coba lacak resinya dulu, siapa tahu paketnya masih di gudang.",
+    "example_cn": "先查一下运单号吧，说不定包裹还在仓库里。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-23 18:00",
+    "last_seen": "2026-11-23 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-23"
+    ],
+    "lesson_occurrences": [
+      "2026-11-23 18:00"
+    ]
+  },
+  {
+    "word": "pecah",
+    "cn": "碎；破裂；裂成几块",
+    "en": "to break / shatter; broken",
+    "root": "pecah",
+    "root_cn": "破碎",
+    "example": "Untuk barang yang mudah pecah, diperlukan kardus tebal dan bubble wrap.",
+    "example_cn": "易碎物品需要用厚纸箱和气泡膜。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-23 18:00",
+    "last_seen": "2026-11-23 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-23"
+    ],
+    "lesson_occurrences": [
+      "2026-11-23 18:00"
     ]
   }
 ];
