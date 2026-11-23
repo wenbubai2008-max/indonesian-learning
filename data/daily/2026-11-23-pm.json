@@ -1,0 +1,373 @@
+{
+  "date": "2026-11-23",
+  "session": "pm",
+  "time": "18:00",
+  "day": 94,
+  "title": "18:00 晚课｜Paket Sampai, Gelasnya Pecah · 包裹到了，杯子却碎了",
+  "write_status": "lesson_complete",
+  "phase": {
+    "theme_id": "logistics",
+    "day_role": "core"
+  },
+  "new_words": [
+    "ekspedisi",
+    "lacak",
+    "pecah"
+  ],
+  "vocab": [
+    {
+      "word": "ekspedisi",
+      "display": "ekspedisi",
+      "audio_text": "ekspedisi",
+      "cn": "快递公司；物流公司；（另义）远征、考察",
+      "en": "shipping/courier company; expedition",
+      "root": "ekspedisi",
+      "root_cn": "运送货物；远征（外来词）",
+      "formation": "外来词（来自荷兰语 expeditie），不拆词缀。常见搭配：pakai ekspedisi apa?（用哪家快递？）、jasa ekspedisi（物流服务）、pihak ekspedisi（快递公司那边）、ekspedisi kargo（货运）、aplikasi ekspedisi（快递公司的 app）。另一个意思是“远征、考察”：ekspedisi ke Gunung Jayawijaya。",
+      "example": "Toko ini kerja sama dengan berbagai ekspedisi, jadi pembeli bisa pilih sendiri.",
+      "example_cn": "这家店和多家快递公司合作，所以买家可以自己选。",
+      "synonym_note": "ekspedisi 指的是“快递公司、物流公司”这家公司；kurir 是上门送件、取件的人；jasa pengiriman 是正式说法“寄送服务”。所以说“快递公司要负责”用 pihak ekspedisi，说“快递员到了”用 kurirnya udah datang。口语说法：问用哪家时常说 Pakai ekspedisi apa?，日常也常直接说快递公司的名字。",
+      "usage_note": "今晚新学（本周物流主题词）。阅读里 Pak Hendra 在 aplikasi ekspedisi 上查包裹，最后给 layanan pelanggan ekspedisi 打电话。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false,
+      "everyday": "问“用哪家快递”日常就说 Pakai ekspedisi apa?；正式说法 jasa pengiriman 多见于网店说明、公告"
+    },
+    {
+      "word": "lacak",
+      "display": "lacak",
+      "audio_text": "lacak",
+      "cn": "追踪；查（包裹、运单的位置）",
+      "en": "to track (a parcel)",
+      "root": "lacak",
+      "root_cn": "踪迹；追踪",
+      "formation": "词根本身口语里就当动词用：lacak paket、lacak resi。正式动词 melacak（meN- + lacak，遇 l 只加 me-）、被动 dilacak / saya lacak（被追踪、我来查）、名词 pelacakan（追踪：fitur pelacakan、nomor pelacakan）。",
+      "example": "Coba lacak resinya dulu, siapa tahu paketnya masih di gudang.",
+      "example_cn": "先查一下运单号吧，说不定包裹还在仓库里。",
+      "synonym_note": "lacak / melacak 和 cek 意思接近：cek resi（查运单号）日常也很常说；melacak 更强调一路追踪位置的变化，也用在追踪手机、追查嫌犯（Polisi melacak lokasi pelaku）。mencari 只是“找”，不说 mencari paket di aplikasi 来表示查物流。口语说法：lacak paket、cek resi；书面、正式说明用 melacak。",
+      "usage_note": "今晚新学（本周物流主题词）。Pak Hendra 三天都在 app 上 melacak 包裹；客服最后说理赔进度也可以 lacak。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false,
+      "everyday": "日常多说 lacak paket / cek resi；melacak 用在新闻、正式说明里"
+    },
+    {
+      "word": "pecah",
+      "display": "pecah",
+      "audio_text": "pecah",
+      "cn": "碎；破裂；裂成几块",
+      "en": "to break / shatter; broken",
+      "root": "pecah",
+      "root_cn": "破碎",
+      "formation": "基础词，本身就能当谓语：Gelasnya pecah（杯子碎了）。派生：memecahkan（打碎；解决：memecahkan masalah）、pecahan（碎片；分数：pecahan kaca）、terpecah（分裂开）。常见搭配：gelas / piring / kaca pecah、ban pecah（爆胎）、pecah jadi dua（裂成两半）、barang mudah pecah（易碎品）。",
+      "example": "Untuk barang yang mudah pecah, diperlukan kardus tebal dan bubble wrap.",
+      "example_cn": "易碎物品需要用厚纸箱和气泡膜。",
+      "synonym_note": "pecah、retak、rusak：pecah 是碎了、裂成几块（玻璃、陶瓷、鸡蛋、爆胎）；retak 是有裂纹、但还没碎开（layar HP-nya retak）；rusak 是一般的“坏了、不能用”，机器、包装、东西坏了都能说。纸箱压瘪用 penyok，不说 pecah。易碎标签写 Mudah Pecah（也常见英文 Fragile）。口语说法：东西自己碎了就说 pecah；“把……打碎”口语常说 mecahin（标准 memecahkan）：Siapa yang mecahin gelas ini?",
+      "usage_note": "今晚新学（你在阅读里标过的陌生词）。阅读里纸箱瘪了，打开一看 dua gelas sudah pecah。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "perjalanan",
+      "display": "perjalanan",
+      "audio_text": "perjalanan",
+      "cn": "旅程；路途；（包裹）运送途中",
+      "en": "journey, trip; in transit",
+      "root": "jalan",
+      "root_cn": "走；路",
+      "formation": "per-an + jalan → perjalanan（名词：路程、旅程）。和 berjalan-jalan 同词根 jalan：berjalan（走；运行）、berjalan-jalan（逛逛、出去玩）、menjalankan（运行、执行）。常见搭配：dalam perjalanan（在路上；运送中）、perjalanan dinas（出差）、perjalanan jauh（长途）、selama perjalanan（一路上）。",
+      "example": "Dari kemarin status paketnya masih \"dalam perjalanan\", belum ada perubahan.",
+      "example_cn": "从昨天起包裹的状态一直是“运送中”，没有任何变化。",
+      "synonym_note": "perjalanan 是名词，说的是“一段路程/旅程”这件事；berjalan-jalan 是动词，说的是“出门逛、溜达”。物流状态 dalam perjalanan = 运送中；人也能说 Saya masih dalam perjalanan（我还在路上）。口语说法：人在路上日常多说 lagi di jalan 或 OTW；物流状态、正式场合用 dalam perjalanan。",
+      "usage_note": "此前学过的词，今晚复习，和 berjalan-jalan 一组（同词根 jalan）。今晚换到物流里：包裹一直 dalam perjalanan，最后是在运送途中坏的。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berjalan-jalan",
+      "display": "berjalan-jalan",
+      "audio_text": "berjalan-jalan",
+      "cn": "逛逛；散步；出去玩",
+      "en": "to go for a stroll; to go out for fun",
+      "root": "jalan",
+      "root_cn": "走；路",
+      "formation": "ber- + jalan 重叠 → berjalan-jalan，表示没有特定目的地地走走、逛逛。和 perjalanan 同词根 jalan。常见搭配：berjalan-jalan ke mal、berjalan-jalan di taman、berjalan-jalan keliling kota、ngajak berjalan-jalan（带……出去玩）。",
+      "example": "Waktu berjalan-jalan di Kota Tua, kami menyaksikan pertunjukan ondel-ondel.",
+      "example_cn": "在老城区逛的时候，我们看了一场 ondel-ondel（巨型人偶）表演。",
+      "synonym_note": "berjalan-jalan 和 berjalan 不一样：berjalan 是“走、步行”，也能说事情、机器“运行”（Rapatnya berjalan lancar）；berjalan-jalan 是出门逛、玩，不强调走路本身，开车出去玩也能说。和 perjalanan 的区别见上一张卡。口语说法：日常几乎都说 jalan-jalan（Kita jalan-jalan, yuk!）；berjalan-jalan 多用在书面叙述。",
+      "usage_note": "此前学过的词，今晚复习，和 perjalanan 一组。阅读里包裹送到时，Pak Hendra 正带孩子们 berjalan-jalan；对话里他说成口语 lagi jalan-jalan。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false,
+      "everyday": "日常多说 jalan-jalan；berjalan-jalan 偏书面叙述"
+    },
+    {
+      "word": "penanganan",
+      "display": "penanganan",
+      "audio_text": "penanganan",
+      "cn": "处理；应对（的方式、过程）",
+      "en": "handling",
+      "root": "tangan",
+      "root_cn": "手",
+      "formation": "peN-an + tangan → penanganan（peN- 遇 t 变 pen-，t 脱落）。来自动词 menangani（meN- + tangan + -i：处理、负责解决），被动 ditangani。常见搭配：penanganan keluhan（投诉处理）、penanganan barang / paket（货物的搬运处理）、penanganan banjir（水灾应对）、penanganan pasien（病人救治）、penanganan yang cepat（处理得快）。",
+      "example": "Penanganan keluhan di toko itu cepat; dalam satu jam masalah saya sudah beres.",
+      "example_cn": "那家店处理投诉很快，一个小时内我的问题就解决了。",
+      "synonym_note": "penanganan、proses、pengurusan：penanganan 说的是“怎么对待、怎么处理”一件事或一样东西，常带好坏评价（penanganan paket yang kurang hati-hati）；proses 是流程本身（Klaimnya sedang diproses）；pengurusan 是去办手续（pengurusan paspor）。别和词根 tangan（手）弄混：penanganan 不是“手”，是“经手处理”。口语说法：日常多用动词 nanganin（标准 menangani）：Klaim saya siapa yang nanganin?",
+      "usage_note": "答错过好几次的词，今晚复习。客服道歉时说 Mohon maaf atas penanganan paket yang kurang hati-hati；小测第 2 题专门辨析 penanganan / menangani / ditangani。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menimpa",
+      "display": "menimpa",
+      "audio_text": "menimpa",
+      "cn": "砸到；压到（从上面掉下来落在……上）；（灾祸）降临到",
+      "en": "to fall on; to befall",
+      "root": "timpa",
+      "root_cn": "压下；砸落",
+      "formation": "meN- + timpa → menimpa（t 脱落）。ditimpa（被砸）、tertimpa（被砸到，口语 ketimpa）。常见搭配：pohon tumbang menimpa …（倒下的树砸到……）、musibah menimpa …（灾祸降临到……）、kardusnya ketimpa barang lain（纸箱被别的货砸了）、俗语 sudah jatuh tertimpa tangga（摔倒了又被梯子砸，祸不单行）。",
+      "example": "Waktu gempa kemarin, rak buku di kamar saya roboh dan menimpa meja kerja.",
+      "example_cn": "昨天地震的时候，我房间的书架倒了，砸在了办公桌上。",
+      "synonym_note": "menimpa 和 menindih：menimpa 是从上面掉下来、一下子砸到（动作突然）；menindih 是一直压在上面（Kardusnya ditindih barang berat）。说灾祸“降临到某人身上”只用 menimpa：Musibah itu menimpa keluarga mereka。口语说法：被砸到日常多说 ketimpa（Kakinya ketimpa kardus）；新闻、叙述用 tertimpa / menimpa。",
+      "usage_note": "此前学过的词，今晚复习。阅读里纸箱像是被重东西砸过（menimpanya）；对话里客服说 kayaknya ketimpa barang lain di truk。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "menuduh",
+      "display": "menuduh",
+      "audio_text": "menuduh",
+      "cn": "指控；指责（说某人做了坏事）",
+      "en": "to accuse",
+      "root": "tuduh",
+      "root_cn": "指控",
+      "formation": "meN- + tuduh → menuduh（t 脱落）。dituduh（被指控）、tuduhan（指控、罪名）、tertuduh（被告）。常见搭配：menuduh seseorang mencuri / berbohong（指控某人偷东西、撒谎）、menuduh tanpa bukti（没凭据就指控）、dituduh … padahal …（被说成……其实……）。",
+      "example": "Dia dituduh mengambil uang kas, padahal hari itu dia sedang cuti.",
+      "example_cn": "他被指控拿了办公室的备用金，可那天他其实在休假。",
+      "synonym_note": "menuduh 和 menyalahkan：menuduh 是说某人“做了某件坏事”（偷、弄坏、撒谎），后面常接这件事：menuduh dia mencuri；menyalahkan 是“怪某人、把责任推给某人”：Jangan menyalahkan diri sendiri。说“我没想怪谁”两个都能用：Saya nggak menuduh siapa-siapa / Saya nggak menyalahkan siapa-siapa。口语说法：nuduh（Jangan nuduh sembarangan, ya!）。",
+      "usage_note": "最近答错过的词，今晚换到签收场景里主动用。阅读里 Pak Hendra 差点 menuduh 保安；对话里他对客服说 saya nggak menuduh siapa-siapa。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "text": "Pak Hendra memesan satu set gelas kaca untuk ulang tahun ibunya. Selama tiga hari, dia rajin melacak paketnya di aplikasi ekspedisi, tetapi statusnya selalu \"dalam perjalanan\". Hari Sabtu, waktu dia sedang berjalan-jalan dengan anak-anaknya di taman kota, statusnya berubah menjadi \"diterima\". Ternyata paket itu dititipkan ke Pak Udin, satpam kompleks. Sore harinya Pak Hendra mengambil kardus itu. Kardusnya tampak penyok di satu sudut, seperti ada barang berat yang jatuh dan menimpanya. Pantas saja, waktu dibuka, dua gelas sudah pecah. Pak Hendra kesal dan hampir menuduh Pak Udin merusak paketnya. Namun Pak Udin mengatakan bahwa dia sama sekali tidak menyentuh isinya, dan kardusnya memang sudah penyok waktu diantar. Pak Hendra lalu menelepon layanan pelanggan ekspedisi.",
+    "cn": "Hendra 先生给母亲的生日订了一套玻璃杯。三天里，他一直勤快地在快递公司的 app 上追踪包裹，可状态始终是“运送中”。星期六，他正带着孩子们在城市公园里玩的时候，状态变成了“已签收”。原来包裹被交给了小区保安 Udin 先生代收。傍晚 Hendra 先生去取那个纸箱。纸箱看上去有一个角瘪了，好像有重东西掉下来砸到过它。难怪打开一看，已经碎了两个杯子。Hendra 先生很恼火，差点指责是 Udin 先生把包裹弄坏的。但 Udin 先生说，他根本没碰过里面的东西，纸箱送来的时候就已经瘪了。于是 Hendra 先生给快递公司的客服打了电话。"
+  },
+  "dialogue": {
+    "title": "Pak Hendra 打电话给快递公司：签收了，还能理赔吗？",
+    "twist": 5,
+    "lines": [
+      {
+        "speaker": "Pak Hendra",
+        "id": "Halo, Mbak. Saya mau komplain mengenai paket saya. Nomor resinya JX2311-0457.",
+        "cn": "喂，你好。我想投诉一下我的包裹。运单号是 JX2311-0457。"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Baik, Pak, saya cek dulu, ya. Paketnya udah diterima hari Sabtu jam tiga sore. Ada masalah apa, Pak?",
+        "cn": "好的，我先查一下。包裹星期六下午三点已经签收了。请问出了什么问题？（udah = sudah）"
+      },
+      {
+        "speaker": "Pak Hendra",
+        "id": "Iya, yang terima satpam kompleks, soalnya saya lagi jalan-jalan sama anak-anak. Pas saya buka, dua gelasnya pecah, Mbak.",
+        "cn": "对，是小区保安签收的，因为我当时正带孩子们出去玩。我一打开，有两个杯子碎了。（soalnya = karena，lagi = sedang，jalan-jalan = berjalan-jalan，sama = dengan，pas = waktu）"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Aduh, mohon maaf, Pak. Boleh saya cek dulu kondisi kardusnya waktu Bapak terima?",
+        "cn": "哎呀，非常抱歉。我能先确认一下您收到时纸箱是什么状况吗？"
+      },
+      {
+        "speaker": "Pak Hendra",
+        "id": "Kardusnya penyok di satu sudut. Kata satpamnya, dari awal udah begitu. Isinya nggak dia sentuh sama sekali.",
+        "cn": "纸箱有一个角瘪了。保安说一送来就是那样，里面的东西他碰都没碰过。（nggak = tidak）"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Hmm, maaf, Pak. Di sistem kami, paket ini udah ditandatangani penerima tanpa catatan kerusakan. Jadi klaimnya nggak bisa kami proses.",
+        "cn": "嗯……抱歉。我们系统里显示，这个包裹收件人已经签字，而且没有注明任何损坏。所以这个理赔我们没办法处理。"
+      },
+      {
+        "speaker": "Pak Hendra",
+        "id": "Lho, Mbak, saya nggak menuduh siapa-siapa. Tapi kalau kardusnya udah penyok dari kurir, masa saya yang nanggung? Terus nasib gelas saya gimana?",
+        "cn": "哎，我可没指责谁。可如果纸箱在快递员手上就已经瘪了，怎么能让我来承担呢？那我的杯子怎么办？（nanggung = menanggung，terus = lalu，gimana = bagaimana）"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Saya ngerti, Pak. Sebentar, ya, saya lihat dulu foto serah terima dari kurir. Oh, ternyata di foto itu sudut kardusnya udah penyok, Pak. Kayaknya ketimpa barang lain di truk.",
+        "cn": "我理解。请稍等，我先看一下快递员交件时拍的照片。哦，原来照片里纸箱的角就已经瘪了。看样子是在车上被别的货砸到了。（ngerti = mengerti，kayaknya = sepertinya，ketimpa = tertimpa）"
+      },
+      {
+        "speaker": "Pak Hendra",
+        "id": "Nah, kan, rusaknya waktu masih di perjalanan. Jadi klaim saya bisa diproses, betul?",
+        "cn": "你看吧，是在运送途中坏的。所以我的理赔可以处理了，对吧？"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Betul, Pak. Mohon maaf atas penanganan paket yang kurang hati-hati. Mohon kirim foto gelas yang pecah sama foto kardusnya lewat WhatsApp, ya. Ganti ruginya cair paling lambat tujuh hari kerja.",
+        "cn": "对的。包裹处理得不够小心，非常抱歉。麻烦您通过 WhatsApp 发一下碎杯子和纸箱的照片。赔偿款最晚七个工作日到账。（sama = dan）"
+      },
+      {
+        "speaker": "Pak Hendra",
+        "id": "Oke, Mbak. Kalau bisa, uangnya cair sebelum hari Kamis, ya. Ulang tahun ibu saya hari Jumat, jadi saya lagi ngejar waktu buat beli yang baru.",
+        "cn": "好的。如果可以的话，钱最好在星期四之前到账。我妈妈星期五过生日，我正赶时间要买一套新的。（lagi = sedang，ngejar = mengejar，buat = untuk）"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Saya usahakan, Pak. Status klaimnya nanti bisa Bapak lacak di aplikasi juga.",
+        "cn": "我尽量。理赔进度之后您也可以在 app 上查。"
+      }
+    ],
+    "practice": {
+      "role": "Pak Hendra",
+      "lines": [
+        {
+          "speaker": "Pak Hendra",
+          "id": "Mbak, saya mau komplain soal paket. Dua gelasnya pecah.",
+          "cn": "你好，我想投诉包裹的事。有两个杯子碎了。"
+        },
+        {
+          "speaker": "Mbak Dewi",
+          "id": "Maaf, Pak. Paketnya udah ditandatangani tanpa catatan kerusakan.",
+          "cn": "抱歉。包裹签收时没有注明任何损坏。"
+        },
+        {
+          "speaker": "Pak Hendra",
+          "id": "Saya nggak menuduh siapa-siapa. Tapi kardusnya udah penyok dari awal.",
+          "cn": "我没有指责谁。可纸箱从一开始就是瘪的。"
+        },
+        {
+          "speaker": "Mbak Dewi",
+          "id": "Oh, di foto kurir, kardusnya memang udah penyok.",
+          "cn": "哦，快递员的照片里，纸箱确实已经瘪了。"
+        },
+        {
+          "speaker": "Pak Hendra",
+          "id": "Jadi klaim saya bisa diproses, betul?",
+          "cn": "所以我的理赔能处理了，对吧？"
+        },
+        {
+          "speaker": "Mbak Dewi",
+          "id": "Betul, Pak. Statusnya bisa dilacak di aplikasi.",
+          "cn": "对的。进度可以在 app 上查。"
+        }
+      ]
+    }
+  },
+  "rewrite": [
+    {
+      "kind": "twist",
+      "task": "转折应对：你网购的陶瓷台灯在你出门时由邻居代收，打开发现底座碎了。快递公司客服说：签收时没注明损坏，不能理赔。按句子骨架填空回应：先用 menuduh 说明你不是在指责谁；再说邻居亲眼看到了什么；然后用 Jadi …, betul? 确认损坏发生在运送途中；最后用 Kalau bisa, … sebelum … 委婉催一下。用 saya / Mbak。",
+      "frame": "Mbak, saya nggak menuduh …… . Tapi tetangga saya menyaksikan sendiri, …… . Jadi kerusakannya terjadi dalam perjalanan, betul? Kalau bisa, …… sebelum …… .",
+      "reference_answer": "Mbak, saya nggak menuduh kurirnya sengaja merusak barang. Tapi tetangga saya menyaksikan sendiri, kardusnya udah penyok waktu diantar. Jadi kerusakannya terjadi dalam perjalanan, betul? Kalau bisa, klaim saya diproses sebelum akhir minggu ini.",
+      "reference_cn": "我不是在指责快递员故意弄坏东西。但我邻居亲眼看到了，纸箱送来的时候就已经瘪了。所以损坏是在运送途中发生的，对吧？如果可以的话，麻烦在这个周末之前处理我的理赔。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "Pak Udin 指着纸箱说：“Saya nggak buka apa-apa, Pak. Kayaknya gelasnya ____ karena kardusnya ketindih barang berat di truk.” 哪项最自然？",
+        "options": [
+          "memecahkan",
+          "pecahan",
+          "pecah",
+          "dipecah"
+        ],
+        "answer_index": 2,
+        "answer": "pecah",
+        "explain": "杯子自己“碎了”，用基础词 pecah 当谓语：Gelasnya pecah。（kayaknya = sepertinya，ketindih = tertindih）memecahkan 是“把……打碎”，要有人做这个动作，后面要接宾语（Siapa yang memecahkan gelas ini?）；pecahan 是名词“碎片”（pecahan kaca）；dipecah 是“被（有意）分开、拆开”，多说 dipecah jadi dua kelompok，不用来说杯子在运输中碎了。"
+      },
+      {
+        "type": "choice",
+        "prompt": "快递公司发来的道歉短信：“Kami mohon maaf atas ____ paket yang kurang hati-hati. Klaim Bapak akan segera kami proses.” 哪项最自然？",
+        "options": [
+          "menangani",
+          "ditangani",
+          "tangan",
+          "penanganan"
+        ],
+        "answer_index": 3,
+        "answer": "penanganan",
+        "explain": "atas（为了……）后面要接名词：mohon maaf atas penanganan … yang kurang hati-hati = 为……处理得不够小心而道歉。menangani 是动词“处理”（Siapa yang menangani klaim ini?）；ditangani 是“被处理”（Klaimnya sedang ditangani），都不能直接放在 atas 后面当名词；tangan 是“手”，词根，不表示“处理”。"
+      },
+      {
+        "type": "choice",
+        "prompt": "第二天客服发来消息：“Selamat siang, Pak Hendra. ____ klaim Bapak kemarin, kami sudah cek foto dari kurir.” 哪项最自然？",
+        "options": [
+          "Mengenali",
+          "Mengenai",
+          "Mengenal",
+          "Kena"
+        ],
+        "answer_index": 1,
+        "answer": "Mengenai",
+        "explain": "客服开头引出话题“关于您昨天的理赔……”，用 Mengenai …（口语也可以说 Soal …，或 Tentang …）。Mengenali 是“认出”（Saya nggak mengenali dia），mengenal 是“认识”，都不能用来引出话题，而且和 mengenai 只差一个 l，最容易看错；kena 单用是“碰上、中招”（kena macet），不能当“关于”。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Saya belum dapat nomor resinya, jadi paketnya belum bisa saya ____.（追踪）",
+        "answer": "lacak",
+        "explain": "“我来查、我来追踪”用 saya + 词根：paketnya belum bisa saya lacak（包裹我还没法追踪）。这里不能用 melacak，因为句子是“包裹被我追踪”的结构（saya + 动词词根）。正式写法可以说 Saya belum bisa melacak paketnya。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kok saya yang ____? Saya sama sekali nggak nyentuh paket Bapak.（被指责）",
+        "answer": "dituduh",
+        "explain": "保安觉得自己被冤枉：Kok saya yang dituduh?（怎么是我被指责？）。dituduh = 被指控、被说成做了坏事；主动形式是 menuduh（Bapak jangan menuduh saya）。nyentuh 是 menyentuh 的口语形式。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：快递公司说包裹是在运送途中弄坏的。",
+        "tokens": [
+          "Pihak",
+          "ekspedisi",
+          "bilang",
+          "paketnya",
+          "rusak",
+          "dalam",
+          "perjalanan."
+        ],
+        "answer": "Pihak ekspedisi bilang paketnya rusak dalam perjalanan.",
+        "answer_cn": "快递公司说包裹是在运送途中弄坏的。",
+        "explain": "pihak ekspedisi = 快递公司那一方（主语）；bilang 后面直接接内容，口语不必加 bahwa；rusak dalam perjalanan = 在运送途中坏了，dalam perjalanan 放在句末说明时间、地点。正式一点可以说 Pihak ekspedisi mengatakan bahwa paketnya rusak dalam perjalanan。"
+      }
+    ]
+  },
+  "review": {
+    "title": "可选 · 30 秒复述",
+    "steps": [
+      "用 lacak、dalam perjalanan、pecah、menuduh 说说 Pak Hendra 这次收包裹的经历：包裹怎么了、他差点做什么、最后怎么解决。"
+    ],
+    "retell_reference": "Pak Hendra melacak paketnya selama tiga hari, tapi statusnya selalu dalam perjalanan. Waktu dia berjalan-jalan dengan anak-anaknya, paketnya diterima satpam. Kardusnya penyok dan dua gelas pecah. Dia hampir menuduh satpam, tapi di foto kurir kardusnya memang sudah penyok. Dengan demikian, klaimnya bisa diproses oleh pihak ekspedisi.",
+    "retell_reference_cn": "Hendra 先生追踪了包裹三天，可状态一直是运送中。他带孩子们出去玩的时候，包裹被保安签收了。纸箱瘪了，碎了两个杯子。他差点指责保安，但快递员的照片里纸箱确实已经瘪了。这样一来，快递公司就可以处理他的理赔了。"
+  },
+  "lesson_focus": {
+    "words": [
+      "lacak",
+      "pecah",
+      "menuduh"
+    ],
+    "patterns": [
+      {
+        "pattern": "Jadi …, betul?",
+        "cn": "所以……，对吗？（确认信息）",
+        "example": "Jadi klaim saya bisa diproses, betul?",
+        "example_cn": "所以我的理赔可以处理了，对吧？",
+        "function": "confirm-info"
+      },
+      {
+        "pattern": "Pantas saja, …",
+        "cn": "难怪……",
+        "example": "Pantas saja, waktu dibuka, dua gelas sudah pecah.",
+        "example_cn": "难怪打开一看，已经碎了两个杯子。"
+      }
+    ]
+  }
+}
