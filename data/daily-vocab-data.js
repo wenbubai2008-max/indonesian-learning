@@ -1241,22 +1241,24 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-27 08:00",
-    "last_seen": "2026-10-12 18:00",
+    "last_seen": "2026-11-24 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-08-27",
-      "2026-10-12"
+      "2026-10-12",
+      "2026-11-24"
     ],
-    "example": "Latihannya nggak ribet, nggak perlu alat apa pun.",
-    "example_cn": "这个训练一点都不麻烦，什么器材都不需要。",
+    "example": "Cara klaim asuransinya ribet banget: harus upload (unggah) foto, video, dan resi.",
+    "example_cn": "保险理赔的手续麻烦死了：要上传照片、视频和运单。（banget = sekali）",
     "lesson_occurrences": [
       "2026-08-27 08:00",
-      "2026-10-12 18:00"
+      "2026-10-12 18:00",
+      "2026-11-24 08:00"
     ],
     "root_cn": "麻烦、复杂"
   },
@@ -4005,7 +4007,7 @@ window.DAILY_VOCAB_DB = [
     "word": "nyaris",
     "cn": "差点、几乎",
     "en": "nearly; almost",
-    "root": "",
+    "root": "nyaris",
     "categories": [
       "每日学习",
       "19:00",
@@ -4013,9 +4015,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 5,
+    "times_seen": 6,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-11-23 08:00",
+    "last_seen": "2026-11-24 08:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -4026,17 +4028,20 @@ window.DAILY_VOCAB_DB = [
       "2026-09-18",
       "2026-10-03",
       "2026-10-07",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
-    "example": "Aku nyaris terlambat karena jalan tadi ramai.",
-    "example_cn": "因为刚才路上很拥挤，我差点迟到。",
+    "example": "Paket itu nyaris dicuri orang waktu ditinggal di depan pagar.",
+    "example_cn": "那个包裹放在大门口的时候，差点被人偷走。",
     "lesson_occurrences": [
       "2026-08-29 19:00",
       "2026-09-18 18:00",
       "2026-10-03 08:00",
       "2026-10-07 08:00",
-      "2026-11-23 08:00"
-    ]
+      "2026-11-23 08:00",
+      "2026-11-24 08:00"
+    ],
+    "root_cn": "差点"
   },
   {
     "word": "terpaksa",
@@ -15793,23 +15798,25 @@ window.DAILY_VOCAB_DB = [
     "en": "noisy; quarrel",
     "root": "ribut",
     "root_cn": "吵闹；争吵",
-    "example": "Mereka ribut soal jadwal kerja.",
-    "example_cn": "他们因为工作安排吵了起来。",
+    "example": "Tetangga sebelah ribut dengan pengantar paket karena kardusnya dilempar ke teras.",
+    "example_cn": "隔壁邻居跟送件的人吵了起来，因为对方把箱子扔到了门廊上。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-28 08:00",
-    "last_seen": "2026-09-28 08:00",
+    "last_seen": "2026-11-24 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-28"
+      "2026-09-28",
+      "2026-11-24"
     ],
     "lesson_occurrences": [
-      "2026-09-28 08:00"
+      "2026-09-28 08:00",
+      "2026-11-24 08:00"
     ]
   },
   {
@@ -17279,17 +17286,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-02 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-24 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-24"
     ],
     "lesson_occurrences": [
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-11-24 08:00"
     ]
   },
   {
@@ -18221,17 +18230,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-04 08:00",
-    "last_seen": "2026-10-04 08:00",
+    "last_seen": "2026-11-24 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-04"
+      "2026-10-04",
+      "2026-11-24"
     ],
     "lesson_occurrences": [
-      "2026-10-04 08:00"
+      "2026-10-04 08:00",
+      "2026-11-24 08:00"
     ]
   },
   {
@@ -20400,19 +20411,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-10 08:00",
-    "last_seen": "2026-10-10 18:00",
+    "last_seen": "2026-11-24 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-10-10"
+      "2026-10-10",
+      "2026-11-24"
     ],
     "lesson_occurrences": [
       "2026-10-10 08:00",
-      "2026-10-10 18:00"
+      "2026-10-10 18:00",
+      "2026-11-24 08:00"
     ]
   },
   {
@@ -20710,17 +20723,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-11 08:00",
-    "last_seen": "2026-10-11 08:00",
+    "last_seen": "2026-11-24 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-11"
+      "2026-10-11",
+      "2026-11-24"
     ],
     "lesson_occurrences": [
-      "2026-10-11 08:00"
+      "2026-10-11 08:00",
+      "2026-11-24 08:00"
     ]
   },
   {
@@ -21050,19 +21065,21 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-12 08:00",
-    "last_seen": "2026-10-12 18:00",
+    "last_seen": "2026-11-24 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-10-12"
+      "2026-10-12",
+      "2026-11-24"
     ],
     "lesson_occurrences": [
       "2026-10-12 08:00",
-      "2026-10-12 18:00"
+      "2026-10-12 18:00",
+      "2026-11-24 08:00"
     ]
   },
   {
@@ -33971,6 +33988,81 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-23 18:00"
+    ]
+  },
+  {
+    "word": "estimasi",
+    "cn": "预计（时间）；预估",
+    "en": "estimate; estimated (time)",
+    "root": "estimasi",
+    "root_cn": "估计（外来词）",
+    "example": "Di aplikasi tertulis estimasi tiba hari Jumat, tapi itu belum pasti.",
+    "example_cn": "应用上写着预计周五到，但这还不是确定的。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-24 08:00",
+    "last_seen": "2026-11-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-24"
+    ],
+    "lesson_occurrences": [
+      "2026-11-24 08:00"
+    ]
+  },
+  {
+    "word": "tertahan",
+    "cn": "滞留；卡住（走不了）",
+    "en": "held up; stuck",
+    "root": "tahan",
+    "root_cn": "忍住；扛得住；拦住",
+    "example": "Paketnya tertahan di pelabuhan karena truknya kejebak antrean kapal.",
+    "example_cn": "包裹滞留在港口，因为卡车被困在等船的长队里。（kejebak = terjebak）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-24 08:00",
+    "last_seen": "2026-11-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-24"
+    ],
+    "lesson_occurrences": [
+      "2026-11-24 08:00"
+    ]
+  },
+  {
+    "word": "belah",
+    "cn": "劈开，切成两半；（成对事物的）一边、一方",
+    "en": "to split, cut in half; side (of a pair)",
+    "root": "belah",
+    "root_cn": "劈开；半边",
+    "example": "Semangka itu dibelah dua: separuh untuk Mbak Sinta, separuh dibawa pulang.",
+    "example_cn": "那个西瓜切成了两半：一半给辛塔姐，一半带回家。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-24 08:00",
+    "last_seen": "2026-11-24 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-24"
+    ],
+    "lesson_occurrences": [
+      "2026-11-24 08:00"
     ]
   }
 ];

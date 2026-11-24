@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-24",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 95
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-23T23:41:19.541Z",
-    "lesson_watermark": "2026-11-23 18:00",
-    "index_updated": "2026-11-23",
-    "runtime_hash": "c98263c5a8e44ea04277570e26dbed9b1cae67558365a9c439e22bcfb1cbdf43",
-    "index_hash": "ddcf25ff9657694ae22c9a3e3ba6c9beb688191929452a172ca3a7b7b0249631",
+    "runtime_generated_at": "2026-11-24T00:30:44.687Z",
+    "lesson_watermark": "2026-11-24 08:00",
+    "index_updated": "2026-11-24",
+    "runtime_hash": "a41a920293ea9f5bcfc29990794e48f191a269fc4ed2bbcb1d33decce37fc885",
+    "index_hash": "9ba06d1d9dc6a63aa447669fc81b0245bb7cd593235547151c6c20b3fc436deb",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -50,16 +50,12 @@
   "candidates": {
     "new_dont": [
       [
-        "estimasi",
-        "预计（时间）；预估"
+        "cod",
+        "货到付款"
       ],
       [
-        "tertahan",
-        "滞留；卡住"
-      ],
-      [
-        "belah",
-        "分裂"
+        "patokan",
+        "参照物；地标（报地址用）"
       ]
     ],
     "new_fuzzy": [],
@@ -281,8 +277,8 @@
         "2026-11-23T04:17:54.472Z",
         "2026-11-23T04:17:54.472Z",
         "差点、几乎",
-        "",
-        ""
+        "nyaris",
+        "差点"
       ],
       [
         "mengabaikan",
@@ -2025,16 +2021,6 @@
         "劝；建议"
       ],
       [
-        "bergerak",
-        2,
-        0,
-        "",
-        "2026-11-22T01:47:30.775Z",
-        "移动；行动；活动身体",
-        "gerak",
-        "动；动作"
-      ],
-      [
         "keras kepala",
         2,
         0,
@@ -2103,16 +2089,6 @@
         "开除；解雇",
         "pecat",
         "开除；解雇"
-      ],
-      [
-        "seberapa",
-        2,
-        0,
-        "",
-        "2026-10-26T07:51:05.657Z",
-        "多么；到什么程度",
-        "berapa",
-        "多少"
       ],
       [
         "ucapan",
@@ -2225,16 +2201,6 @@
         "保持、忍耐、耐受"
       ],
       [
-        "gerakan",
-        2,
-        0,
-        "",
-        "2026-10-26T07:52:33.614Z",
-        "动作；运动（行动）",
-        "gerak",
-        "动、动作"
-      ],
-      [
         "jongkok",
         2,
         0,
@@ -2245,16 +2211,6 @@
         "蹲"
       ],
       [
-        "ribet",
-        2,
-        0,
-        "",
-        "2026-11-14T08:26:51.705Z",
-        "麻烦、复杂",
-        "ribet",
-        "麻烦、复杂"
-      ],
-      [
         "tantangan",
         2,
         1,
@@ -2263,6 +2219,46 @@
         "挑战",
         "tantang",
         "挑战、向……挑战"
+      ],
+      [
+        "lembut",
+        3,
+        0,
+        "",
+        "2026-10-26T07:52:40.697Z",
+        "轻柔的；柔软的；温和的",
+        "lembut",
+        "轻柔、温和"
+      ],
+      [
+        "menghitung",
+        3,
+        0,
+        "",
+        "2026-10-26T07:52:42.284Z",
+        "数；计算",
+        "hitung",
+        "数、算"
+      ],
+      [
+        "angkot",
+        2,
+        0,
+        "",
+        "2026-10-26T07:52:50.403Z",
+        "小公共交通车；城市里的小巴",
+        "angkot",
+        "angkutan kota（城市交通）的缩写，本身当作词根"
+      ],
+      [
+        "bundaran",
+        2,
+        0,
+        "",
+        "2026-10-26T07:52:59.023Z",
+        "环岛；圆形转盘",
+        "bundar",
+        "圆的"
       ],
       [
         "ongkir",
@@ -2293,6 +2289,46 @@
         "快递公司；物流公司；（另义）远征、考察",
         "ekspedisi",
         "运送货物；远征（外来词）"
+      ],
+      [
+        "estimasi",
+        2,
+        0,
+        "",
+        "",
+        "预计（时间）；预估",
+        "estimasi",
+        "估计（外来词）"
+      ],
+      [
+        "tertahan",
+        2,
+        0,
+        "",
+        "",
+        "滞留；卡住（走不了）",
+        "tahan",
+        "忍住；扛得住；拦住"
+      ],
+      [
+        "belah",
+        1,
+        0,
+        "",
+        "",
+        "劈开，切成两半；（成对事物的）一边、一方",
+        "belah",
+        "劈开；半边"
+      ],
+      [
+        "ribet",
+        2,
+        0,
+        "",
+        "2026-11-14T08:26:51.705Z",
+        "麻烦、复杂",
+        "ribet",
+        "麻烦、复杂"
       ]
     ],
     "focus": [
@@ -2755,6 +2791,22 @@
         "lacak",
         "pecah"
       ]
+    },
+    {
+      "date": "2026-11-24",
+      "session": "am",
+      "review_core": [
+        "bergerak",
+        "gerakan",
+        "mengenai",
+        "menyentuh",
+        "seberapa"
+      ],
+      "new_words": [
+        "estimasi",
+        "tertahan",
+        "belah"
+      ]
     }
   ],
   "previous_pm": {
@@ -2771,7 +2823,60 @@
       "menimpa"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-24",
+    "vocab": [
+      [
+        "estimasi",
+        "预计（时间）；预估",
+        "estimate; estimated (time)",
+        "estimasi",
+        "估计（外来词）"
+      ],
+      [
+        "tertahan",
+        "滞留；卡住（走不了）",
+        "held up; stuck",
+        "tahan",
+        "忍住；扛得住；拦住"
+      ],
+      [
+        "belah",
+        "劈开，切成两半；（成对事物的）一边、一方",
+        "to split, cut in half; side (of a pair)",
+        "belah",
+        "劈开；半边"
+      ],
+      [
+        "nyaris",
+        "差点；几乎",
+        "nearly; almost",
+        "nyaris",
+        "差点"
+      ],
+      [
+        "ribut",
+        "吵闹；嚷嚷；争吵",
+        "noisy; to make a fuss; to quarrel",
+        "ribut",
+        "吵闹"
+      ],
+      [
+        "ribet",
+        "麻烦；复杂（口语）",
+        "complicated; a hassle",
+        "ribet",
+        "麻烦"
+      ]
+    ],
+    "review_vocab": [
+      "bergerak",
+      "gerakan",
+      "mengenai",
+      "menyentuh",
+      "seberapa"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
