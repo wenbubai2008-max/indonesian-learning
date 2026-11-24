@@ -1,0 +1,292 @@
+{
+  "date": "2026-11-24",
+  "session": "am",
+  "time": "08:00",
+  "day": 95,
+  "title": "08:00 早课｜Paketnya Tertahan di Gudang Transit · 包裹卡在中转仓",
+  "phase": {
+    "theme_id": "logistics",
+    "day_role": "core"
+  },
+  "story": {
+    "series": "Agen Kilat Mbak Sinta · 辛塔姐的快递代收点",
+    "episode": 2,
+    "previously_cn": "上集：布罗丝阿姨在闪电快递代收点给在棉兰上大学的儿子迪马斯寄辣椒酱和薯片，辛塔姐帮她换了小箱子，运费省下一半；可当天晚上，迪马斯说运单号查不到。",
+    "next_cn": "下集：状态突然变成“收件地址不完整”——迪马斯宿舍的地址到底哪里漏写了？"
+  },
+  "vocab": [
+    {
+      "word": "estimasi",
+      "display": "estimasi",
+      "audio_text": "estimasi",
+      "cn": "预计（时间）；预估",
+      "en": "estimate; estimated (time)",
+      "root": "estimasi",
+      "root_cn": "估计（外来词）",
+      "formation": "外来词（来自英语 estimation / 荷兰语 estimatie），没有词缀变化。物流里最常见：estimasi tiba（预计到达）、estimasi pengiriman 2–3 hari（预计配送 2–3 天）、estimasinya hari Jumat（预计周五）。也说 estimasi biaya（预估费用）。",
+      "example": "Di aplikasi tertulis estimasi tiba hari Jumat, tapi itu belum pasti.",
+      "example_cn": "应用上写着预计周五到，但这还不是确定的。",
+      "synonym_note": "estimasi 是系统或店家给出的“预计、预估”，常和时间、费用连用；perkiraan 是它的正式说法，意思一样，也常用在天气、数字上（perkiraan cuaca 天气预报）。聊天里问“大概”多说 kira-kira：Kira-kira kapan sampai?。口语说法：Estimasinya kapan, Kak?",
+      "everyday": "快递应用、客服、网店都说 estimasi；正式写 perkiraan（waktu tiba）",
+      "is_oral_new": false
+    },
+    {
+      "word": "tertahan",
+      "display": "tertahan",
+      "audio_text": "tertahan",
+      "cn": "滞留；卡住（走不了）",
+      "en": "held up; stuck",
+      "root": "tahan",
+      "root_cn": "忍住；扛得住；拦住",
+      "formation": "ter- + tahan（拦住、扛住）→ tertahan：不是谁故意的，而是“被拦着、走不了”。常见搭配：paket tertahan di gudang transit（包裹滞留在中转仓）、tertahan di Bea Cukai（卡在海关）、tertahan di kantor（被事情拖在公司）。同词根：menahan（拦住；忍住）、ditahan（被人扣下）、tahan lama（耐放）。",
+      "example": "Paketnya tertahan di pelabuhan karena truknya kejebak antrean kapal.",
+      "example_cn": "包裹滞留在港口，因为卡车被困在等船的长队里。（kejebak = terjebak）",
+      "synonym_note": "tertahan 是“被情况卡住”，没说是谁拦的；ditahan 是“被人扣下”，后面常有动作者（Paketnya ditahan Bea Cukai 被海关扣了）。口语说法：Paketnya nyangkut di gudang（nyangkut = 卡住），和朋友聊天很常用；应用和客服通知写 tertahan。",
+      "everyday": "应用、客服通知写 tertahan；聊天常说 nyangkut、ketahan",
+      "is_oral_new": false
+    },
+    {
+      "word": "belah",
+      "display": "belah",
+      "audio_text": "belah",
+      "cn": "劈开，切成两半；（成对事物的）一边、一方",
+      "en": "to split, cut in half; side (of a pair)",
+      "root": "belah",
+      "root_cn": "劈开；半边",
+      "formation": "词根。dibelah dua（被切成两半）、membelah（劈开、剖开）、terbelah（裂开了）、belahan（一半；裂缝）、sebelah（一边；隔壁：rumah sebelah）、kedua belah pihak（双方）。昨天句子里的 pecah belah（易碎品）也带这个词。",
+      "example": "Semangka itu dibelah dua: separuh untuk Mbak Sinta, separuh dibawa pulang.",
+      "example_cn": "那个西瓜切成了两半：一半给辛塔姐，一半带回家。",
+      "synonym_note": "belah 是“从中间劈开、分成两半”，常说 semangka / kelapa dibelah dua；potong 是一般的“切、剪”，切成小块说 dipotong-potong，不说 dibelah。“双方”常说 kedua belah pihak（协议、调解里很常见），也可以说 kedua pihak。口语里“隔壁”说 sebelah：rumah sebelah、meja sebelah。",
+      "is_oral_new": false
+    },
+    {
+      "word": "nyaris",
+      "display": "nyaris",
+      "audio_text": "nyaris",
+      "cn": "差点；几乎",
+      "en": "nearly; almost",
+      "root": "nyaris",
+      "root_cn": "差点",
+      "formation": "本身就是副词，没有常用派生词。放在动词或形容词前：nyaris jatuh（差点摔倒）、nyaris ketinggalan（差点没赶上）、nyaris dicuri（差点被偷）、nyaris sempurna（几乎完美）。",
+      "example": "Paket itu nyaris dicuri orang waktu ditinggal di depan pagar.",
+      "example_cn": "那个包裹放在大门口的时候，差点被人偷走。",
+      "synonym_note": "nyaris 和 hampir 都能说“差点（最后没发生）”：nyaris / hampir ketinggalan；说数量、时间“几乎、快到”多用 hampir（hampir semua、hampir jam tujuh）。nyaris 语气稍强，新闻里也常见（nyaris tenggelam）。口语里两者都说，hampir 更常听到。",
+      "usage_note": "复习词：先遮住中文回想意思，再看布罗丝阿姨差点做了什么。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ribut",
+      "display": "ribut",
+      "audio_text": "ribut",
+      "cn": "吵闹；嚷嚷；争吵",
+      "en": "noisy; to make a fuss; to quarrel",
+      "root": "ribut",
+      "root_cn": "吵闹",
+      "formation": "本身就是形容词 / 动词。常见搭配：jangan ribut（别吵）、ribut-ribut（吵吵嚷嚷）、ribut dengan / sama …（跟……吵架）、ribut soal …（为……争吵）。同词根：keributan（骚乱、吵闹的场面）。",
+      "example": "Tetangga sebelah ribut dengan pengantar paket karena kardusnya dilempar ke teras.",
+      "example_cn": "隔壁邻居跟送件的人吵了起来，因为对方把箱子扔到了门廊上。",
+      "synonym_note": "ribut 是“声音大、乱哄哄”或“吵架”；和下一张 ribet（麻烦、复杂）只差一个字母，意思完全不同：Jangan ribut! 是“别吵”，Jangan ribet! 是“别搞得那么复杂”。吵架也可以说 bertengkar（更正式）、berantem（口语）。",
+      "usage_note": "复习词：和下一张 ribet 一起记，看排队的人为什么嚷嚷起来。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ribet",
+      "display": "ribet",
+      "audio_text": "ribet",
+      "cn": "麻烦；复杂（口语）",
+      "en": "complicated; a hassle",
+      "root": "ribet",
+      "root_cn": "麻烦",
+      "formation": "口语形容词，没有词缀变化。常见搭配：ribet banget（麻烦死了）、nggak usah ribet（别搞复杂）、prosesnya ribet（手续麻烦）。正式场合说 rumit（复杂）或 merepotkan（麻烦人）。",
+      "example": "Cara klaim asuransinya ribet banget: harus upload (unggah) foto, video, dan resi.",
+      "example_cn": "保险理赔的手续麻烦死了：要上传照片、视频和运单。（banget = sekali）",
+      "synonym_note": "ribet 说手续、操作、步骤“麻烦、绕”；repot 说人“忙乱、费事”（Aku lagi repot）。客气话 Maaf merepotkan 不换成 ribet。和上一张 ribut 只差一个字母：ribut 是吵，ribet 是麻烦。正式说法 rumit：masalah yang rumit。",
+      "usage_note": "复习词：和上一张 ribut 一起记，看布罗丝阿姨嫌什么麻烦。",
+      "everyday": "日常聊天很常说 ribet；正式文字用 rumit 或 merepotkan",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "nyaris",
+    "ribut",
+    "ribet"
+  ],
+  "review_vocab": [
+    "bergerak",
+    "gerakan",
+    "mengenai",
+    "menyentuh",
+    "seberapa"
+  ],
+  "sentences": [
+    {
+      "text": "Seberapa sering paket tertahan kayak gini, Mbak? — Lumayan sering kalau musim hujan, Bu.",
+      "cn": "姐，包裹多常这样卡住啊？——雨季的时候挺常见的，阿姨。（kayak gini = seperti ini）"
+    },
+    {
+      "text": "Estimasi pengirimannya dua sampai tiga hari kerja, tapi bisa mundur kalau ada bencana alam.",
+      "cn": "预计配送两到三个工作日，但如果遇上自然灾害，可能会往后推。"
+    },
+    {
+      "text": "Kalau ada pertanyaan mengenai paket Anda, silakan hubungi call center kami dan sebutkan nomor resinya.",
+      "cn": "如果您对包裹有任何疑问，请联系我们的客服热线，并报上运单号。"
+    },
+    {
+      "text": "Waktu menyortir paket, Bang Jali mencontohkan gerakan yang benar: tekuk lutut dulu, baru angkat kardusnya.",
+      "cn": "分拣包裹的时候，贾利哥示范了正确的动作：先弯膝盖，再把箱子抬起来。"
+    },
+    {
+      "text": "Udah, nggak usah ribet. Statusnya memang menyebalkan, tapi besok kita telepon ekspedisinya bareng-bareng.",
+      "cn": "好啦，别想得那么复杂。这个状态确实让人烦，但明天我们一起给快递公司打电话。（udah = sudah，nggak = tidak，bareng-bareng = bersama-sama）"
+    }
+  ],
+  "reading": {
+    "title": "Paketnya Tertahan di Gudang Transit · 包裹卡在中转仓",
+    "text": "Selasa pagi, Bang Jali sedang menyapu lantai agen waktu Bu Ros datang dengan wajah cemas. \"Mbak, kata Dimas resinya nggak bisa dilacak! Aplikasinya ribet, saya nggak ngerti,\" katanya agak keras. Beberapa orang di antrean jadi ikut ribut. \"Boleh saya cek dulu resinya, Bu?\" Ternyata nomornya benar. Semalam resi itu belum bisa dilacak karena paketnya baru di-scan (dipindai) di gudang. Sekarang statusnya sudah bergerak, tapi ada tulisan baru: \"Paket tertahan di gudang transit.\" Menurut berita, ada bencana alam di Sumatra: jalan lintas tertutup longsor dan banyak truk terjebak. Bu Ros nyaris menelepon Dimas lagi. \"Kira-kira kapan paketnya sampai di Medan, Mbak?\" \"Estimasi tibanya hari Jumat, Bu. Saya berjanji akan cek lagi besok pagi.\" Lalu Dimas membalas: \"Nggak apa-apa, Bu. Yang penting sambalnya utuh.\" Pesan itu menyentuh hati Bu Ros. Siangnya dia kembali membawa semangka yang sudah dibelah dua, separuhnya untuk Mbak Sinta. Tapi sore itu status resi berubah lagi: \"Alamat penerima kurang lengkap.\"",
+    "cn": "周二早上，贾利哥正在扫代收点的地，布罗丝阿姨一脸着急地来了。“辛塔，迪马斯说运单号查不到！那个应用太麻烦了，我看不懂。”她说得有点大声。排队的几个人也跟着嚷嚷起来。辛塔姐问：“阿姨，我可以先核对一下运单号吗？”原来单号没错。昨晚查不到，是因为包裹昨晚才在仓库扫描。现在状态已经动了，可出现了一行新字：“包裹滞留在中转仓。”新闻说，苏门答腊发生了自然灾害：跨省公路被山体滑坡（longsor）堵住，很多卡车被困住了。布罗丝阿姨差点又给迪马斯打电话。“大概什么时候能到棉兰啊？”辛塔姐说：“阿姨，预计周五到。我保证明天早上再查一次。”接着迪马斯回消息了：“没关系，妈。辣椒酱没碎就好。”这条消息让布罗丝阿姨心里一暖。中午她又来了，带着一个切成两半的西瓜，一半送给辛塔姐。可是那天下午，运单状态又变了：“收件地址不完整。”"
+  },
+  "quiz": [
+    {
+      "question": "Dalam cerita hari ini, kenapa semalam resi Bu Ros belum bisa dilacak?",
+      "options": [
+        "Karena Mbak Sinta salah menulis nomor resinya.",
+        "Karena paketnya baru di-scan di gudang tadi malam.",
+        "Karena jalan lintas Sumatra tertutup longsor.",
+        "Karena alamat Dimas kurang lengkap."
+      ],
+      "answer_index": 1,
+      "answer": "Karena paketnya baru di-scan di gudang tadi malam.",
+      "explain": "课文说单号没错（Ternyata nomornya benar），昨晚查不到是因为包裹昨晚才在仓库扫描（baru di-scan di gudang）。C 的滑坡是今天包裹滞留在中转仓的原因，不是昨晚查不到的原因；D 的地址问题是下午才出现的新状态；A 课文明确说单号是对的。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "我的包裹已经在中转仓卡了三天了。",
+      "target": "tertahan",
+      "target_cn": "滞留；卡住",
+      "options": [
+        "Paketku sudah tiga hari menahan di gudang transit.",
+        "Paketku pernah tiga hari tertahan di gudang transit.",
+        "Paketku sudah tiga hari tertahan ke gudang transit.",
+        "Paketku sudah tiga hari tertahan di gudang transit."
+      ],
+      "answer_index": 3,
+      "answer": "Paketku sudah tiga hari tertahan di gudang transit.",
+      "point": "tertahan（被卡住）/ menahan（主动拦住）；sudah（到现在已经）/ pernah（以前有过）；在某处用 di，不用 ke",
+      "explain": "“已经卡了三天（现在还卡着）”是 sudah tiga hari tertahan di …，所以 D 对。A 的 menahan 是主动“拦住、忍住”，包裹不会自己去拦；B 的 pernah 是“以前有过一次”，说的是过去的经历，不是现在还卡着；C 表示“在某处”要用 di，ke 是“去往”。口语里也常说 Paketku udah tiga hari nyangkut di gudang transit，也对。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "运单状态从昨天到现在一直没动。",
+      "target": "bergerak",
+      "target_cn": "移动；动",
+      "options": [
+        "Status resinya sudah bergerak dari kemarin.",
+        "Status resinya belum menggerakkan dari kemarin.",
+        "Status resinya belum bergerak dari kemarin.",
+        "Status resinya belum gerakan dari kemarin."
+      ],
+      "answer_index": 2,
+      "answer": "Status resinya belum bergerak dari kemarin.",
+      "point": "belum（还没）/ sudah（已经）；不及物动词 bergerak（动）/ 及物 menggerakkan（使……动）/ 名词 gerakan（动作）",
+      "explain": "“一直没动”用 belum bergerak，所以 C 对。A 的 sudah bergerak 是“已经动了”，意思反了；B 的 menggerakkan 是“让某物动起来”，后面要接宾语，这里不对；D 的 gerakan 是名词“动作”，不能直接当谓语。口语里也常说 Statusnya nggak gerak-gerak dari kemarin，也对。"
+    }
+  ],
+  "output": {
+    "task": "接本集结尾：运单状态变成“收件地址不完整”。你是辛塔姐，给迪马斯发一条 WhatsApp（4 句）：说包裹现在卡在哪、为什么；说预计哪天到；用 Boleh saya cek dulu …? 请他核对地址；最后请他把完整地址发过来。按骨架填空，用上 tertahan 和 estimasi。",
+    "frame": "Dimas, ini Mbak Sinta dari Agen Kilat. Paketmu sekarang tertahan di …… karena …… . Estimasi tibanya …… , tapi di statusnya tertulis alamatmu kurang lengkap. Boleh saya cek dulu alamatmu? Tolong kirim …… , ya.",
+    "reference_answer": "Dimas, ini Mbak Sinta dari Agen Kilat. Paketmu sekarang tertahan di gudang transit karena ada longsor di jalan lintas Sumatra. Estimasi tibanya hari Jumat, tapi di statusnya tertulis alamatmu kurang lengkap. Boleh saya cek dulu alamatmu? Tolong kirim alamat kos lengkap dengan nomor kamarnya, ya.",
+    "reference_cn": "迪马斯，我是闪电快递代收点的辛塔姐。你的包裹现在滞留在中转仓，因为苏门答腊跨省公路发生了山体滑坡。预计周五到，但状态显示你的地址不完整。我可以先核对一下你的地址吗？麻烦把宿舍的完整地址连同房间号发过来。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 动、移动（status belum …）、动作（示范正确的 …）、关于（有 … 包裹的疑问）、触动（… 心里）、多么、多常（… sering）；再说出 预计、滞留、切成两半、差点、吵闹、麻烦（口语）。卡住的词回看词卡再说一遍。",
+    "易混词：ribut（吵：Jangan ribut!）vs ribet（麻烦：Nggak usah ribet）只差一个字母；bergerak 是动词“动”（statusnya belum bergerak），gerakan 是名词“动作”（gerakan yang benar）；tertahan 是被情况卡住，ditahan 是被人扣下。各说一句。",
+    "重点复习词 seberapa：“多么、到什么程度”，后面接形容词或副词：Seberapa sering …?、Seberapa jauh …?。用 Seberapa sering … ? 问一句你关心的事。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "动；移动",
+        "id": "bergerak"
+      },
+      {
+        "cn": "动作",
+        "id": "gerakan"
+      },
+      {
+        "cn": "关于；有关",
+        "id": "mengenai"
+      },
+      {
+        "cn": "触摸；触动（心）",
+        "id": "menyentuh"
+      },
+      {
+        "cn": "多么；到什么程度",
+        "id": "seberapa"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "ribut",
+            "cn": "吵闹；争吵"
+          },
+          {
+            "id": "ribet",
+            "cn": "麻烦；复杂（口语）"
+          }
+        ],
+        "note": "只差一个字母：ribut 是声音大、吵架（Jangan ribut!），ribet 是手续、步骤麻烦（Prosesnya ribet）。"
+      },
+      {
+        "items": [
+          {
+            "id": "bergerak",
+            "cn": "动；移动（动词）"
+          },
+          {
+            "id": "gerakan",
+            "cn": "动作（名词）"
+          }
+        ],
+        "note": "同词根 gerak：说“某物动了”用动词 bergerak（Statusnya sudah bergerak）；说“一个动作”用名词 gerakan（gerakan yang benar）。"
+      },
+      {
+        "items": [
+          {
+            "id": "tertahan",
+            "cn": "被卡住；滞留"
+          },
+          {
+            "id": "ditahan",
+            "cn": "被（人）扣下"
+          }
+        ],
+        "note": "tertahan 只说结果“走不了”，不说是谁；ditahan 强调有人扣，常带动作者：ditahan Bea Cukai。快递通知里的“滞留”写 tertahan。"
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "tertahan",
+      "estimasi",
+      "belah"
+    ],
+    "patterns": [
+      {
+        "pattern": "Kira-kira kapan …?",
+        "cn": "大概什么时候……？",
+        "function": "ask-status",
+        "example": "Kira-kira kapan paketnya sampai di Medan, Mbak?",
+        "example_cn": "大概什么时候能到棉兰啊？"
+      },
+      {
+        "pattern": "Seberapa sering …?",
+        "cn": "……有多常？多常……？",
+        "example": "Seberapa sering paket tertahan kayak gini, Mbak?",
+        "example_cn": "姐，包裹多常这样卡住啊？"
+      }
+    ]
+  }
+}
