@@ -61,26 +61,31 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00",
       "原始课程",
-      "历史记录不完整"
+      "历史记录不完整",
+      "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-08-22 08:00",
-    "last_seen": "2026-10-10 08:00",
+    "last_seen": "2026-11-24 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-22",
       "2026-08-24",
-      "2026-10-10"
+      "2026-10-10",
+      "2026-11-24"
     ],
-    "example": "Saya ingin meningkatkan bahasa Indonesia saya.",
-    "example_cn": "我想提高我的印尼语。",
+    "example": "Penjual itu ikut promo gratis ongkir untuk meningkatkan pemasukan tokonya.",
+    "example_cn": "那个卖家参加了包邮活动，想提高店里的收入。",
     "lesson_occurrences": [
       "2026-08-22 08:00",
       "2026-08-24 08:00",
-      "2026-10-10 08:00"
-    ]
+      "2026-10-10 08:00",
+      "2026-11-24 18:00"
+    ],
+    "root_cn": "层；级别"
   },
   {
     "word": "peningkatan",
@@ -12492,16 +12497,16 @@ window.DAILY_VOCAB_DB = [
     "en": "emphasize; affirm; clarify",
     "root": "tegas",
     "root_cn": "明确；坚定",
-    "example": "Dosen menegaskan sekali lagi bahwa tugas yang dikirim lewat pukul 24.00 tidak akan dinilai, walaupun hanya terlambat beberapa detik.",
-    "example_cn": "老师再次明确表示，晚上 12 点以后交的作业不会给分，哪怕只晚了几秒。",
+    "example": "Dalam petunjuk penggunaan, pabrik menegaskan bahwa panci rice cooker tidak boleh dipakai di atas kompor.",
+    "example_cn": "在使用说明里，厂家明确强调电饭锅的内胆不能放在炉灶上用。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-19 18:00",
-    "last_seen": "2026-11-17 08:00",
+    "last_seen": "2026-11-24 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -12514,7 +12519,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-05",
       "2026-10-21",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-24"
     ],
     "lesson_occurrences": [
       "2026-09-19 18:00",
@@ -12524,7 +12530,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-05 18:00",
       "2026-10-21 08:00",
       "2026-11-16 18:00",
-      "2026-11-17 08:00"
+      "2026-11-17 08:00",
+      "2026-11-24 18:00"
     ]
   },
   {
@@ -14305,16 +14312,16 @@ window.DAILY_VOCAB_DB = [
     "en": "while; at the same time",
     "root": "seraya",
     "root_cn": "同时；一边……一边……",
-    "example": "Ketua mengarahkan peserta ke ruang utama seraya menunjuk peta gedung.",
-    "example_cn": "主席一边指着楼内地图，一边引导参与者去主会场。",
+    "example": "Penjual itu membungkus pesanan seraya mendengarkan radio.",
+    "example_cn": "那个卖家一边打包订单，一边听收音机。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 6,
+    "times_seen": 7,
     "first_seen": "2026-09-22 18:00",
-    "last_seen": "2026-11-04 18:00",
+    "last_seen": "2026-11-24 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -14325,7 +14332,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-30",
       "2026-10-02",
       "2026-10-06",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-24"
     ],
     "lesson_occurrences": [
       "2026-09-22 18:00",
@@ -14333,7 +14341,8 @@ window.DAILY_VOCAB_DB = [
       "2026-09-30 18:00",
       "2026-10-02 08:00",
       "2026-10-06 08:00",
-      "2026-11-04 18:00"
+      "2026-11-04 18:00",
+      "2026-11-24 18:00"
     ]
   },
   {
@@ -18622,23 +18631,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to slip",
     "root": "peleset",
     "root_cn": "滑；偏离",
-    "example": "Hati-hati, lantainya licin, nanti kamu terpeleset.",
-    "example_cn": "小心，地板很滑，你会滑倒的。",
+    "example": "Habis dipel, lantai kamar mandi licin banget; aku hampir terpeleset.",
+    "example_cn": "刚拖完地，浴室地板特别滑，我差点滑倒。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-05 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-11-24 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-24"
     ],
     "lesson_occurrences": [
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-11-24 18:00"
     ]
   },
   {
@@ -19933,23 +19946,25 @@ window.DAILY_VOCAB_DB = [
     "en": "accepted; hired",
     "root": "terima",
     "root_cn": "接受；收到",
-    "example": "Kabar baiknya, aku diterima kerja di toko online itu.",
-    "example_cn": "好消息是，我被那家网店录用了。",
+    "example": "Status paketnya udah \"diterima\", padahal barangnya belum aku pegang.",
+    "example_cn": "包裹状态已经是“已签收”了，可东西我还没拿到手呢。（udah = sudah）",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-08 18:00",
-    "last_seen": "2026-10-08 18:00",
+    "last_seen": "2026-11-24 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-24"
     ],
     "lesson_occurrences": [
-      "2026-10-08 18:00"
+      "2026-10-08 18:00",
+      "2026-11-24 18:00"
     ]
   },
   {
@@ -34063,6 +34078,56 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-24 08:00"
+    ]
+  },
+  {
+    "word": "COD",
+    "cn": "货到付款",
+    "en": "cash on delivery",
+    "root": "COD",
+    "root_cn": "英语 cash on delivery 的缩写",
+    "example": "Banyak calon pembeli baru berani pesan kalau barangnya bisa COD.",
+    "example_cn": "很多潜在买家要能货到付款才敢下单。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-24 18:00",
+    "last_seen": "2026-11-24 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-24"
+    ],
+    "lesson_occurrences": [
+      "2026-11-24 18:00"
+    ]
+  },
+  {
+    "word": "patokan",
+    "cn": "参照物；地标（报地址、认路用）；（另义）标准、参考",
+    "en": "landmark (for directions); benchmark",
+    "root": "patok",
+    "root_cn": "桩子；标桩",
+    "example": "Kalau alamatnya susah dicari, kasih patokan yang jelas, misalnya masjid atau minimarket.",
+    "example_cn": "如果地址不好找，就给个明显的参照物，比如清真寺或者便利店。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-24 18:00",
+    "last_seen": "2026-11-24 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-24"
+    ],
+    "lesson_occurrences": [
+      "2026-11-24 18:00"
     ]
   }
 ];

@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-24",
-    "session": "pm",
-    "time": "18:00",
-    "day": 95
+    "date": "2026-11-25",
+    "session": "am",
+    "time": "08:00",
+    "day": 96
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-24T00:30:44.687Z",
-    "lesson_watermark": "2026-11-24 08:00",
+    "runtime_generated_at": "2026-11-24T10:54:07.406Z",
+    "lesson_watermark": "2026-11-24 18:00",
     "index_updated": "2026-11-24",
-    "runtime_hash": "a41a920293ea9f5bcfc29990794e48f191a269fc4ed2bbcb1d33decce37fc885",
-    "index_hash": "9ba06d1d9dc6a63aa447669fc81b0245bb7cd593235547151c6c20b3fc436deb",
+    "runtime_hash": "00e1fdac5c468a9d80917414d3830b6e854f4df6f094c08a3e6c5f3f3db59d8c",
+    "index_hash": "5b19a6bcc119fbe574f483442caae765318c1d777fffa38fe4841799f43a5b90",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -50,12 +50,12 @@
   "candidates": {
     "new_dont": [
       [
-        "cod",
-        "货到付款"
+        "titip",
+        "寄放；托人代收"
       ],
       [
-        "patokan",
-        "参照物；地标（报地址用）"
+        "penerima",
+        "收件人"
       ]
     ],
     "new_fuzzy": [],
@@ -628,7 +628,7 @@
         "2026-11-23T04:33:43.846Z",
         "提高某事物",
         "tingkat",
-        ""
+        "层；级别"
       ],
       [
         "mengenai",
@@ -1771,16 +1771,6 @@
         "比较；对比"
       ],
       [
-        "diterima",
-        2,
-        0,
-        "",
-        "2026-11-20T05:13:58.832Z",
-        "被接受；被录用",
-        "terima",
-        "接受；收到"
-      ],
-      [
         "kontrak",
         3,
         0,
@@ -2261,6 +2251,16 @@
         "圆的"
       ],
       [
+        "lampiran",
+        2,
+        0,
+        "",
+        "2026-10-26T07:53:07.121Z",
+        "附件；附录",
+        "lampir",
+        "附上；随附"
+      ],
+      [
         "ongkir",
         2,
         0,
@@ -2311,24 +2311,24 @@
         "忍住；扛得住；拦住"
       ],
       [
-        "belah",
-        1,
-        0,
-        "",
-        "",
-        "劈开，切成两半；（成对事物的）一边、一方",
-        "belah",
-        "劈开；半边"
-      ],
-      [
-        "ribet",
+        "COD",
         2,
         0,
         "",
-        "2026-11-14T08:26:51.705Z",
-        "麻烦、复杂",
-        "ribet",
-        "麻烦、复杂"
+        "",
+        "货到付款",
+        "COD",
+        "英语 cash on delivery 的缩写"
+      ],
+      [
+        "patokan",
+        2,
+        0,
+        "",
+        "",
+        "参照物；地标（报地址、认路用）；（另义）标准、参考",
+        "patok",
+        "桩子；标桩"
       ]
     ],
     "focus": [
@@ -2605,30 +2605,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-17",
-      "session": "am",
-      "review_core": [
-        "rugi",
-        "kerugian",
-        "menegaskan",
-        "berlaku sampai",
-        "berarti"
-      ],
-      "new_words": []
-    },
-    {
-      "date": "2026-11-17",
-      "session": "pm",
-      "review_core": [
-        "sebel",
-        "bebas",
-        "teratur",
-        "pengaturan",
-        "kerugian"
-      ],
-      "new_words": []
-    },
-    {
       "date": "2026-11-18",
       "session": "am",
       "review_core": [
@@ -2807,76 +2783,36 @@
         "tertahan",
         "belah"
       ]
+    },
+    {
+      "date": "2026-11-24",
+      "session": "pm",
+      "review_core": [
+        "terpeleset",
+        "meningkatkan",
+        "seraya",
+        "menegaskan"
+      ],
+      "new_words": [
+        "cod",
+        "patokan"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "new_words": [
-      "ekspedisi",
-      "lacak",
-      "pecah"
+      "cod",
+      "patokan"
     ],
     "review_core": [
-      "perjalanan",
-      "berjalan-jalan",
-      "penanganan",
-      "menimpa"
+      "terpeleset",
+      "meningkatkan",
+      "seraya",
+      "menegaskan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-24",
-    "vocab": [
-      [
-        "estimasi",
-        "预计（时间）；预估",
-        "estimate; estimated (time)",
-        "estimasi",
-        "估计（外来词）"
-      ],
-      [
-        "tertahan",
-        "滞留；卡住（走不了）",
-        "held up; stuck",
-        "tahan",
-        "忍住；扛得住；拦住"
-      ],
-      [
-        "belah",
-        "劈开，切成两半；（成对事物的）一边、一方",
-        "to split, cut in half; side (of a pair)",
-        "belah",
-        "劈开；半边"
-      ],
-      [
-        "nyaris",
-        "差点；几乎",
-        "nearly; almost",
-        "nyaris",
-        "差点"
-      ],
-      [
-        "ribut",
-        "吵闹；嚷嚷；争吵",
-        "noisy; to make a fuss; to quarrel",
-        "ribut",
-        "吵闹"
-      ],
-      [
-        "ribet",
-        "麻烦；复杂（口语）",
-        "complicated; a hassle",
-        "ribet",
-        "麻烦"
-      ]
-    ],
-    "review_vocab": [
-      "bergerak",
-      "gerakan",
-      "mengenai",
-      "menyentuh",
-      "seberapa"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
