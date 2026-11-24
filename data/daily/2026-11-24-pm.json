@@ -1,0 +1,355 @@
+{
+ "date": "2026-11-24",
+ "session": "pm",
+ "time": "18:00",
+ "day": 95,
+ "title": "18:00 晚课｜Patokannya Warung Bakso, Paketnya COD · 认路看肉丸摊，包裹货到付款",
+ "write_status": "lesson_complete",
+ "phase": {
+  "theme_id": "logistics",
+  "day_role": "core"
+ },
+ "new_words": [
+  "COD",
+  "patokan"
+ ],
+ "vocab": [
+  {
+   "word": "COD",
+   "display": "COD",
+   "audio_text": "C O D",
+   "cn": "货到付款",
+   "en": "cash on delivery",
+   "root": "COD",
+   "root_cn": "英语 cash on delivery 的缩写",
+   "formation": "英语缩写，读作 C-O-D（se-o-de），不加词缀。常见搭配：bayar COD / pakai COD（用货到付款）、paket COD（到付包裹）、Bisa COD nggak?（能货到付款吗？）、sistem COD（到付方式）、COD tunai（现金到付）。正式说法 bayar di tempat（到付、当场付款）。",
+   "example": "Banyak calon pembeli baru berani pesan kalau barangnya bisa COD.",
+   "example_cn": "很多潜在买家要能货到付款才敢下单。",
+   "synonym_note": "COD 和 transfer dulu：COD 是东西送到了再付钱（可以付现金，有的快递也能当场转账或扫码）；transfer dulu / bayar di muka 是先付款再发货。所以 COD 包裹要有人当场付钱才算签收，一般不能先放在别人那儿等以后再付。口语说法：日常就说 COD（Bisa COD, Kak?）；网店说明、快递单上的正式写法是 bayar di tempat。",
+   "usage_note": "今晚新学（本周物流主题词）。对话里快递员说这是 paket COD，乌兰想让房东代收，快递员说没付钱的 COD 包裹不能代收。",
+   "source_group": "new",
+   "is_new": true,
+   "is_oral_new": false,
+   "everyday": "日常就说 COD（读 se-o-de）；bayar di tempat 多见于网店说明、快递单"
+  },
+  {
+   "word": "patokan",
+   "display": "patokan",
+   "audio_text": "patokan",
+   "cn": "参照物；地标（报地址、认路用）；（另义）标准、参考",
+   "en": "landmark (for directions); benchmark",
+   "root": "patok",
+   "root_cn": "桩子；标桩",
+   "formation": "patok + -an → patokan（原意是做记号的桩子，引申为“认路的参照物”“参考标准”）。动词 mematok（定死、限定：mematok harga 定价）。常见搭配：kasih patokan（给个参照物）、Patokannya apa?（有什么好认的标志？）、patokan rumah（认房子的标志）、patokan harga（价格参考）、jadi patokan（当作参照）。",
+   "example": "Kalau alamatnya susah dicari, kasih patokan yang jelas, misalnya masjid atau minimarket.",
+   "example_cn": "如果地址不好找，就给个明显的参照物，比如清真寺或者便利店。",
+   "synonym_note": "patokan、alamat、titik lokasi：alamat 是正式地址（街名、门牌号）；titik lokasi / share lok 是地图上的定位点；patokan 是附近一眼能认出来的东西（清真寺、肉丸摊、绿色大门），地址和定位不准时最管用。另一个意思“标准、参考”：Harga ini cuma patokan, bisa nego. 口语说法：日常就说 patokan，问路常说 Patokannya apa?",
+   "usage_note": "今晚新学（本周物流主题词）。阅读和对话里地图定位错了，乌兰给快递员的 patokan 是巷口旁的肉丸摊和绿色大门。",
+   "source_group": "new",
+   "is_new": true,
+   "is_oral_new": false
+  },
+  {
+   "word": "terpeleset",
+   "display": "terpeleset",
+   "audio_text": "terpeleset",
+   "cn": "滑倒；脚下一滑",
+   "en": "to slip",
+   "root": "peleset",
+   "root_cn": "滑；偏离",
+   "formation": "ter- + peleset → terpeleset（ter- 表示不由自主、意外发生）。常见搭配：terpeleset di lantai licin（在湿滑的地上滑倒）、hampir terpeleset（差点滑倒）、terpeleset karena menginjak …（因为踩到……滑倒）、jangan sampai terpeleset（可别滑倒）。引申：terpeleset lidah（说漏嘴、口误）。",
+   "example": "Habis dipel, lantai kamar mandi licin banget; aku hampir terpeleset.",
+   "example_cn": "刚拖完地，浴室地板特别滑，我差点滑倒。",
+   "synonym_note": "terpeleset、tersandung、jatuh：terpeleset 是脚下打滑（地湿、地滑）；tersandung 是被东西绊了一下（tersandung batu）；jatuh 是“摔倒、掉下来”，只说结果，不管原因。所以“路滑差点摔”说 hampir terpeleset。口语说法：kepeleset（Awas kepeleset!）；书面叙述、新闻用 terpeleset。",
+   "usage_note": "最近答错过的词，今晚复习。对话里乌兰提醒巷子雨后很滑，昨天有个网约摩的司机在那儿滑倒了；阅读里快递员也差点滑倒。",
+   "source_group": "review",
+   "is_new": false,
+   "is_oral_new": false
+  },
+  {
+   "word": "meningkatkan",
+   "display": "meningkatkan",
+   "audio_text": "meningkatkan",
+   "cn": "提高；提升（某事物）",
+   "en": "to increase, to improve",
+   "root": "tingkat",
+   "root_cn": "层；级别",
+   "formation": "meN- + tingkat + -kan → meningkatkan（t 脱落，“使……升高”，后面要接宾语）。同词根：meningkat（自己上升，不接宾语）、peningkatan（提高、增长，名词）、setingkat（同级）。常见搭配：meningkatkan penjualan / kualitas / kemampuan / keamanan（提高销量 / 质量 / 能力 / 安全）。",
+   "example": "Penjual itu ikut promo gratis ongkir untuk meningkatkan pemasukan tokonya.",
+   "example_cn": "那个卖家参加了包邮活动，想提高店里的收入。",
+   "synonym_note": "meningkatkan 和 meningkat：Penjualan meningkat（销量上升了，自己变化）；Toko itu meningkatkan penjualan（店铺把销量提上去，有人去做）。menaikkan 也是“提高”，多说具体的数：menaikkan harga（涨价）；说质量、能力、安全一般用 meningkatkan。口语说法：偶尔说 ningkatin；涨价口语说 naikin harga。",
+   "usage_note": "最近答错过的词，今晚复习。阅读开头：网店为了提高年底销量，推出免手续费的货到付款。",
+   "source_group": "review",
+   "is_new": false,
+   "is_oral_new": false
+  },
+  {
+   "word": "seraya",
+   "display": "seraya",
+   "audio_text": "seraya",
+   "cn": "一边……一边……；同时（书面）",
+   "en": "while (literary)",
+   "root": "seraya",
+   "root_cn": "同时；一边……一边……",
+   "formation": "连接词，不拆词缀。用法：动作1 + seraya + 动作2，两个动作同一个人同时做，后面一般接动词：seraya tersenyum（一边笑着）、seraya berkata（一边说）、seraya menunggu（一边等着）。",
+   "example": "Penjual itu membungkus pesanan seraya mendengarkan radio.",
+   "example_cn": "那个卖家一边打包订单，一边听收音机。",
+   "synonym_note": "seraya 和 sambil：意思基本一样，都是“一边……一边……”；seraya 偏书面，多见于小说、新闻叙述（kata Bu Yati seraya tersenyum）；sambil 日常口语和书面都常用。聊天时说 seraya 会显得文绉绉。口语说法：一律说 sambil（Aku nunggu sambil main HP）。",
+   "usage_note": "之前答错过、一直没完全稳住的词，今晚复习。阅读里尤蒂太太 seraya tersenyum（笑着）说“签收好了”；自己说话时换成 sambil。",
+   "source_group": "review",
+   "is_new": false,
+   "is_oral_new": false,
+   "everyday": "日常口语说 sambil；seraya 多见于书面叙述"
+  },
+  {
+   "word": "menegaskan",
+   "display": "menegaskan",
+   "audio_text": "menegaskan",
+   "cn": "强调；明确说明；重申",
+   "en": "to emphasize, to state firmly",
+   "root": "tegas",
+   "root_cn": "明确；坚定",
+   "formation": "meN- + tegas + -kan → menegaskan（t 脱落，“使……明确”）。被动 ditegaskan；名词 penegasan（强调、明确表态）；tegas 本身是形容词“坚决、明确”（Bosnya tegas）。常见搭配：menegaskan bahwa …（明确表示……）、menegaskan kembali（重申）、menegaskan sikap（表明立场）。",
+   "example": "Dalam petunjuk penggunaan, pabrik menegaskan bahwa panci rice cooker tidak boleh dipakai di atas kompor.",
+   "example_cn": "在使用说明里，厂家明确强调电饭锅的内胆不能放在炉灶上用。",
+   "synonym_note": "menegaskan、mengatakan、menekankan：mengatakan 只是“说”；menegaskan 是把规则、立场说清楚、说死，不留商量余地（Kurir itu menegaskan bahwa …）；menekankan 是“着重强调”某一点重要（menekankan pentingnya keselamatan）。日常聊天里少说 menegaskan，常说 Saya ulangi, ya 或 bilang dengan jelas；客服、通知、新闻里常用。",
+   "usage_note": "最近答错过的词，今晚复习。阅读里快递员明确说：没付钱的 COD 包裹不能代收——这正是对话里的转折。",
+   "source_group": "review",
+   "is_new": false,
+   "is_oral_new": false
+  },
+  {
+   "word": "diterima",
+   "display": "diterima",
+   "audio_text": "diterima",
+   "cn": "被接受；被录用；（包裹、消息）已收到、已签收",
+   "en": "accepted; received",
+   "root": "terima",
+   "root_cn": "接受；收到",
+   "formation": "di- + terima → diterima（被动）。主动 menerima（接受；收到）、口语 terima；penerima（收件人）、penerimaan（接收；录取）。常见搭配：diterima kerja（被录用）、diterima di universitas（被大学录取）、paket sudah diterima（包裹已签收）、diterima oleh …（由……签收）、pesan diterima（消息已收到）。",
+   "example": "Status paketnya udah \"diterima\", padahal barangnya belum aku pegang.",
+   "example_cn": "包裹状态已经是“已签收”了，可东西我还没拿到手呢。（udah = sudah）",
+   "synonym_note": "diterima 和 sampai：Paketnya sudah sampai 是“送到了”（到了门口或驿站）；Paketnya sudah diterima 是“有人签收了”，快递单上的正式状态。diterima 也有“被接受、被录用”的意思，看上下文：Aku diterima kerja di sana（我被那儿录用了）。口语说法：主动句常说 terima：Yang terima siapa?（谁签收的？）",
+   "usage_note": "此前学过的词（当时学的是“被录用、被接受”），今晚应用复现，换到签收场景：COD 包裹要有人付了钱才算 diterima。",
+   "source_group": "application",
+   "is_new": false,
+   "is_oral_new": false
+  }
+ ],
+ "reading": {
+  "title": "Rice Cooker COD untuk Wulan · 乌兰的到付电饭锅",
+  "text": "Untuk meningkatkan penjualan akhir tahun, sebuah toko online menawarkan COD tanpa biaya tambahan. Wulan langsung memesan rice cooker yang desainnya ramping seharga Rp389.000. Selasa sore, hujan deras turun ketika kurir menelepon. Titik lokasi di peta salah, jadi dia berhenti di depan masjid. Wulan mengarahkannya lewat telepon dan memberi patokan: gang kecil di sebelah warung bakso, lalu rumah berpagar hijau. Masalahnya, sebentar lagi Wulan harus menjemput adiknya. Kurir menegaskan bahwa paket COD tidak bisa dititipkan sebelum dibayar, jadi Wulan meminjam uang tunai Bu Yati, ibu kosnya. Kurir itu hampir terpeleset di gang yang licin, tetapi akhirnya menyerahkan paket kepada Bu Yati. \"Sudah diterima, ya,\" kata Bu Yati seraya tersenyum. Malamnya Wulan mengembalikan uang itu dan menghela napas lega.",
+  "cn": "为了提高年底的销量，一家网店推出了不收手续费的货到付款。乌兰马上下单了一个外形纤细的电饭锅，价格 389,000 盾。星期二下午，快递员打电话来的时候正下着大雨。地图上的定位点错了，所以他停在了清真寺门口。乌兰在电话里给他指路，并给了参照物：肉丸摊旁边的小巷，然后是绿色大门的房子。麻烦的是，乌兰马上就得去接弟弟。快递员明确表示，货到付款的包裹没付钱不能代收，所以乌兰向房东尤蒂太太借了现金。快递员在湿滑的巷子里差点滑倒，但最后还是把包裹交给了尤蒂太太。“签收好了哦。”尤蒂太太笑着说。当天晚上，乌兰把钱还给了她，松了一口气。"
+ },
+ "dialogue": {
+  "title": "快递员找不到门，货到付款还不能代收",
+  "twist": 8,
+  "lines": [
+   {
+    "speaker": "Mas Andi",
+    "id": "Sore, Kak. Dengan Kak Wulan? Saya kurir, mau antar paket COD, rice cooker.",
+    "cn": "下午好，是乌兰小姐吗？我是快递员，要送一个货到付款的包裹，是电饭锅。"
+   },
+   {
+    "speaker": "Wulan",
+    "id": "Iya, betul. Mas sudah sampai mana, ya? Dari tadi saya tunggu.",
+    "cn": "对，是我。您到哪儿了？我一直在等。"
+   },
+   {
+    "speaker": "Mas Andi",
+    "id": "Saya di depan masjid, Kak. Titik di petanya kayaknya salah. Ada patokan nggak?",
+    "cn": "我在清真寺门口。地图上的定位好像错了。有什么好认的标志吗？（kayaknya = sepertinya，nggak = tidak）"
+   },
+   {
+    "speaker": "Wulan",
+    "id": "Ada. Masuk gang kecil di sebelah warung bakso, terus rumah pagar hijau nomor 17.",
+    "cn": "有。从肉丸摊旁边的小巷进来，然后是 17 号、绿色大门那家。（terus = lalu）"
+   },
+   {
+    "speaker": "Mas Andi",
+    "id": "Maaf, Kak, tadi ada motor lewat, saya kurang nyimak. Pagar hijau, ya?",
+    "cn": "不好意思，刚才有摩托车开过去，我没听清楚。是绿色大门对吧？（nyimak = menyimak）"
+   },
+   {
+    "speaker": "Wulan",
+    "id": "Iya, hijau. Hati-hati, gangnya licin habis hujan. Kemarin ada ojol terpeleset di situ.",
+    "cn": "对，绿色的。小心点，下过雨巷子很滑。昨天有个网约摩的司机就在那儿滑倒了。（habis = sehabis，ojol = ojek online）"
+   },
+   {
+    "speaker": "Mas Andi",
+    "id": "Siap, Kak. Sepuluh menit lagi saya sampai. Totalnya Rp389.000, bisa tunai atau transfer di tempat.",
+    "cn": "好的。我十分钟后到。一共 389,000 盾，可以当场付现金或者转账。"
+   },
+   {
+    "speaker": "Wulan",
+    "id": "Aduh, saya baru ngeh, jam lima saya harus jemput adik. Titip ke ibu kos aja, ya?",
+    "cn": "哎呀，我这才反应过来，五点我得去接弟弟。放在房东那儿就行，好吗？（ngeh = sadar，aja = saja）"
+   },
+   {
+    "speaker": "Mas Andi",
+    "id": "Maaf, Kak, paket COD nggak bisa dititip kalau belum dibayar. Kalau nggak ada yang bayar, paketnya saya bawa balik ke gudang.",
+    "cn": "不好意思，货到付款的包裹没付钱是不能代收的。如果没人付钱，我就把包裹带回仓库了。"
+   },
+   {
+    "speaker": "Wulan",
+    "id": "Jadi kalau Bu Yati yang bayar dan tanda tangan, paketnya bisa diterima, betul?",
+    "cn": "所以如果尤蒂太太来付钱、签字，包裹就能签收，对吗？"
+   },
+   {
+    "speaker": "Mas Andi",
+    "id": "Betul, Kak. Yang penting ada yang bayar di tempat.",
+    "cn": "对。只要有人当场付钱就行。"
+   },
+   {
+    "speaker": "Wulan",
+    "id": "Oke, saya minta tolong Bu Yati dulu. Nanti uangnya saya ganti.",
+    "cn": "好，那我先请尤蒂太太帮忙。钱我回头还她。"
+   }
+  ],
+  "practice": {
+   "role": "Wulan",
+   "lines": [
+    {
+     "speaker": "Mas Andi",
+     "id": "Kak, titik di peta salah. Patokannya apa?",
+     "cn": "地图上的定位错了。有什么好认的标志？"
+    },
+    {
+     "speaker": "Wulan",
+     "id": "Warung bakso di mulut gang, terus pagar hijau.",
+     "cn": "巷口的肉丸摊，然后是绿色大门。"
+    },
+    {
+     "speaker": "Mas Andi",
+     "id": "Totalnya Rp389.000, bayar di tempat, ya.",
+     "cn": "一共 389,000 盾，当场付款哦。"
+    },
+    {
+     "speaker": "Wulan",
+     "id": "Aduh, saya harus jemput adik. Bisa titip ke ibu kos?",
+     "cn": "哎呀，我得去接弟弟。能放在房东那儿吗？"
+    },
+    {
+     "speaker": "Mas Andi",
+     "id": "Maaf, paket COD harus dibayar dulu.",
+     "cn": "不好意思，货到付款的包裹得先付钱。"
+    },
+    {
+     "speaker": "Wulan",
+     "id": "Oke, Bu Yati yang bayar. Nanti saya ganti.",
+     "cn": "好，让尤蒂太太付。回头我还她。"
+    }
+   ]
+  }
+ },
+ "rewrite": [
+  {
+   "kind": "twist",
+   "task": "转折应对：你打电话给房东，才知道尤蒂太太也不在家。给快递员回电话：先道歉、说明情况；再用 Jadi …, betul? 确认没人付钱包裹就会被带回仓库；然后用 Kalau bisa, … sebelum … 请他在某个时间前再送一次，并再报一次参照物；最后保证这次能签收。用 saya / Mas，尽量用上 COD、patokan、diterima。",
+   "frame": "Maaf, Mas, ternyata …… . Jadi kalau …… , paketnya dibawa balik ke gudang, betul? Kalau bisa, Mas antar lagi sebelum …… , ya. Patokannya sama: …… . Saya pasti udah di rumah, jadi paketnya bisa langsung diterima.",
+   "reference_answer": "Maaf, Mas, ternyata Bu Yati juga lagi nggak di rumah. Jadi kalau nggak ada yang bayar COD, paketnya dibawa balik ke gudang, betul? Kalau bisa, Mas antar lagi sebelum jam enam, ya. Patokannya sama: warung bakso, terus pagar hijau. Saya pasti udah di rumah, jadi paketnya bisa langsung diterima.",
+   "reference_cn": "不好意思，原来尤蒂太太也不在家。所以如果没人付这个货到付款，包裹就要带回仓库，对吗？如果可以的话，麻烦您六点前再送一次。参照物一样：肉丸摊，然后是绿色大门。那时候我肯定已经在家了，包裹可以直接签收。"
+  }
+ ],
+ "daily_test": {
+  "questions": [
+   {
+    "type": "choice",
+    "prompt": "快递员打来电话：“Kak, titik di petanya salah, rumahnya nggak ketemu.” 下面哪句回答最能帮上忙？",
+    "options": [
+     "Paketnya COD, Mas, nanti saya bayar tunai.",
+     "Status paketnya masih dalam perjalanan.",
+     "Patokannya warung bakso di mulut gang, terus rumah pagar hijau.",
+     "Saya baru ngeh paketnya sudah diterima."
+    ],
+    "answer_index": 2,
+    "answer": "Patokannya warung bakso di mulut gang, terus rumah pagar hijau.",
+    "explain": "快递员找不到房子，最需要的是认路的参照物（patokan）：巷口的肉丸摊、绿色大门。A 说的是付款方式，B 是物流状态，D 说包裹已签收，都没回答“怎么找到你家”。"
+   },
+   {
+    "type": "choice",
+    "prompt": "网店公告：“Toko kami kasih COD tanpa biaya tambahan supaya bisa ____ penjualan akhir tahun.” 哪项最自然？",
+    "options": [
+     "meningkatkan",
+     "meningkat",
+     "peningkatan",
+     "naik"
+    ],
+    "answer_index": 0,
+    "answer": "meningkatkan",
+    "explain": "supaya bisa 后面要接动词，而且是“把销量提上去”，要用带宾语的 meningkatkan + penjualan。meningkat 是“自己上升”，不接宾语（Penjualan meningkat）；peningkatan 是名词（peningkatan penjualan），不能放在 bisa 后面；naik 也是“上升”，不接宾语（Harganya naik）。"
+   },
+   {
+    "type": "choice",
+    "prompt": "Wulan 想让房东代收，快递员在电话里说得很清楚：“Mohon maaf, Kak, saya harus ____ bahwa paket COD nggak bisa dititip sebelum dibayar.” 哪项最自然？",
+    "options": [
+     "menegur",
+     "menebak",
+     "menitipkan",
+     "menegaskan"
+    ],
+    "answer_index": 3,
+    "answer": "menegaskan",
+    "explain": "把规则说清楚、说死，用 menegaskan bahwa …（明确表示……）。menegur 是“责备、提醒（某人做错了）”，要接人：menegur anak；menebak 是“猜”；menitipkan 是“寄放、托人代收”，和句子的意思正好相反。"
+   },
+   {
+    "type": "fill",
+    "prompt": "填空：Barang ini bisa ____, jadi bayarnya nanti waktu paketnya datang.（货到付款）",
+    "answer": "COD",
+    "explain": "货到付款说 COD（读 se-o-de），正式写法 bayar di tempat。Bisa COD = 可以货到付款。"
+   },
+   {
+    "type": "fill",
+    "prompt": "填空：Status di aplikasi sudah \"____\", tapi barangnya belum saya pegang.（已签收）",
+    "answer": "diterima",
+    "explain": "快递单上的“已签收”是 diterima（di- + terima）。sampai 只是“送到了”；diterima 表示已经有人签收。"
+   },
+   {
+    "type": "order",
+    "prompt": "按照中文排列印尼语：地图上的定位点错了，有没有参照物？",
+    "tokens": [
+     "Titik",
+     "di",
+     "petanya",
+     "salah,",
+     "ada",
+     "patokan",
+     "nggak?"
+    ],
+    "answer": "Titik di petanya salah, ada patokan nggak?",
+    "answer_cn": "地图上的定位点错了，有没有参照物？",
+    "explain": "先说问题 Titik di petanya salah（petanya = 这张地图上的），再用口语问句 ada … nggak? 问有没有 patokan。nggak 放句尾表示“有没有”。"
+   }
+  ]
+ },
+ "review": {
+  "title": "可选 · 30 秒复述",
+  "steps": [
+   "用 COD、patokan、terpeleset、diterima 说说乌兰的电饭锅最后是怎么送到的：快递员为什么找不到、谁付的钱、最后谁签收的。"
+  ],
+  "retell_reference": "Wulan pesan rice cooker pakai COD. Titik di peta salah, jadi dia kasih patokan: warung bakso, terus pagar hijau. Gangnya licin, dan kurirnya hampir terpeleset. Karena Wulan harus jemput adiknya, Bu Yati yang bayar dulu. Akhirnya paketnya diterima Bu Yati, dan malamnya Wulan mengembalikan uangnya.",
+  "retell_reference_cn": "乌兰用货到付款买了一个电饭锅。地图定位错了，所以她给了参照物：肉丸摊，然后是绿色大门。巷子很滑，快递员差点滑倒。因为乌兰得去接弟弟，就由尤蒂太太先付钱。最后包裹由尤蒂太太签收，当晚乌兰把钱还给了她。"
+ },
+ "lesson_focus": {
+  "words": [
+   "patokan",
+   "terpeleset",
+   "meningkatkan"
+  ],
+  "patterns": [
+   {
+    "pattern": "… sudah sampai mana, ya?",
+    "cn": "……到哪儿了？（询问进度）",
+    "example": "Mas sudah sampai mana, ya?",
+    "example_cn": "您到哪儿了？",
+    "function": "ask-status"
+   },
+   {
+    "pattern": "Saya baru ngeh, …",
+    "cn": "我这才反应过来，……",
+    "example": "Aduh, saya baru ngeh, jam lima saya harus jemput adik.",
+    "example_cn": "哎呀，我这才反应过来，五点我得去接弟弟。"
+   }
+  ]
+ }
+}
