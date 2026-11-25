@@ -1,4 +1,5 @@
 window.EXTENSIVE_READING_HISTORY_INDEX=[
+{"id":"er-20261123-kritik-tanpa-menyerang-anak","date":"2026-11-23","title":"Kritik Orang Tuanya, Jangan Serang Anaknya","title_cn":"批评父母，不要攻击孩子","path":"data/extensive-reading-history/2026-11-23.js"},
 {"id":"er-20261121-tiwi-fadia-hong-kong","date":"2026-11-21","title":"Tiwi/Fadia Kalahkan Unggulan Pertama, Fokus pada Cara Bermain","title_cn":"Tiwi/Fadia 击败头号种子：先专注怎么打好球","path":"data/extensive-reading-history/2026-11-21.js"},
 {"id":"er-20261119-menang-untuk-kalah","date":"2026-11-19","title":"“Menang untuk Kalah”: Rumah Mewah, Cicilan, dan Jalan Pintas","title_cn":"《Menang untuk Kalah》：豪宅、分期付款与翻身捷径","path":"data/extensive-reading-history/2026-11-19.js"},
 {"id":"er-20261117-perpustakaan-maramis","date":"2026-11-17","title":"Gedung Lama, Ruang Baca Baru: Perpustakaan Kemenkeu Bersiap untuk Publik","title_cn":"老建筑，新阅读空间：财政部图书馆筹备向公众开放","path":"data/extensive-reading-history/2026-11-17.js"},
