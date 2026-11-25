@@ -6511,16 +6511,16 @@ window.DAILY_VOCAB_DB = [
     "cn": "看得清；读得出来；不小心被看到（口语）",
     "en": "readable; can be read; accidentally seen/read",
     "root": "baca",
-    "example": "Tulisan tangan dokter di resep ini nggak kebaca sama sekali. Untung apotekernya nangkep maksudnya.",
-    "example_cn": "这张处方上医生的手写字完全看不清。还好药剂师明白是什么意思。（nggak = tidak，nangkep = menangkap）",
+    "example": "Tulisan di resinya luntur kena hujan, jadi alamatnya nggak kebaca.",
+    "example_cn": "运单上的字被雨淋花了，所以地址看不清。（nggak = tidak）",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-04 08:00",
-    "last_seen": "2026-10-25 18:00",
+    "last_seen": "2026-11-25 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -6529,14 +6529,16 @@ window.DAILY_VOCAB_DB = [
       "2026-09-04",
       "2026-10-16",
       "2026-10-23",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-11-25"
     ],
     "root_cn": "读；阅读",
     "lesson_occurrences": [
       "2026-09-04 08:00",
       "2026-10-16 18:00",
       "2026-10-23 18:00",
-      "2026-10-25 18:00"
+      "2026-10-25 18:00",
+      "2026-11-25 08:00"
     ]
   },
   {
@@ -9309,9 +9311,9 @@ window.DAILY_VOCAB_DB = [
       "19:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-10-08 18:00",
+    "last_seen": "2026-11-25 08:00",
     "sessions": [
       "08:00",
       "19:00",
@@ -9320,13 +9322,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-09-11",
       "2026-09-28",
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
       "2026-09-11 19:00",
       "2026-09-28 18:00",
-      "2026-10-08 18:00"
+      "2026-10-08 18:00",
+      "2026-11-25 08:00"
     ]
   },
   {
@@ -9614,9 +9618,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 11,
+    "times_seen": 12,
     "first_seen": "2026-09-12 08:00",
-    "last_seen": "2026-11-22 18:00",
+    "last_seen": "2026-11-25 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -9631,7 +9635,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-01",
       "2026-10-05",
       "2026-11-02",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
       "2026-09-12 08:00",
@@ -9644,7 +9649,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-01 18:00",
       "2026-10-05 08:00",
       "2026-11-02 18:00",
-      "2026-11-22 18:00"
+      "2026-11-22 18:00",
+      "2026-11-25 08:00"
     ]
   },
   {
@@ -10749,23 +10755,25 @@ window.DAILY_VOCAB_DB = [
     "en": "interesting; attractive",
     "root": "tarik",
     "root_cn": "拉；吸引",
-    "example": "Menurutku, idenya menarik dan layak dicoba.",
-    "example_cn": "我觉得这个想法挺有意思，值得试试。",
+    "example": "Sebelum menelepon CS lagi, Mbak Sinta menarik napas panjang dulu.",
+    "example_cn": "再给客服打电话之前，辛塔姐先深吸了一口气。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-15 08:00",
-    "last_seen": "2026-09-15 08:00",
+    "last_seen": "2026-11-25 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-15"
+      "2026-09-15",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
-      "2026-09-15 08:00"
+      "2026-09-15 08:00",
+      "2026-11-25 08:00"
     ]
   },
   {
@@ -17506,17 +17514,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-02 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-25 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-11-25 08:00"
     ]
   },
   {
@@ -19650,16 +19660,16 @@ window.DAILY_VOCAB_DB = [
     "en": "to obey; to comply with",
     "root": "patuh",
     "root_cn": "顺从；遵守",
-    "example": "Sopir truk itu tidak mematuhi rambu lalu lintas dan menabrak sebuah motor.",
-    "example_cn": "那个卡车司机没有遵守交通标志，撞上了一辆摩托车。",
+    "example": "Semua karyawan agen wajib mematuhi aturan baru: paket harus difoto waktu diserahkan ke penerima.",
+    "example_cn": "代收点的所有员工都必须遵守新规定：包裹交给收件人时要拍照。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-08 08:00",
-    "last_seen": "2026-10-24 18:00",
+    "last_seen": "2026-11-25 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -19667,12 +19677,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-10-08",
       "2026-10-17",
-      "2026-10-24"
+      "2026-10-24",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
       "2026-10-08 08:00",
       "2026-10-17 18:00",
-      "2026-10-24 18:00"
+      "2026-10-24 18:00",
+      "2026-11-25 08:00"
     ]
   },
   {
@@ -21109,17 +21121,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-12 08:00",
-    "last_seen": "2026-10-12 08:00",
+    "last_seen": "2026-11-25 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-12"
+      "2026-10-12",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
-      "2026-10-12 08:00"
+      "2026-10-12 08:00",
+      "2026-11-25 08:00"
     ]
   },
   {
@@ -33965,19 +33979,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "先查一下运单号吧，说不定包裹还在仓库里。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-23 18:00",
-    "last_seen": "2026-11-23 18:00",
+    "last_seen": "2026-11-25 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
-      "2026-11-23 18:00"
+      "2026-11-23 18:00",
+      "2026-11-25 08:00"
     ]
   },
   {
@@ -34042,17 +34060,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-24 08:00",
-    "last_seen": "2026-11-24 08:00",
+    "last_seen": "2026-11-25 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
-      "2026-11-24 08:00"
+      "2026-11-24 08:00",
+      "2026-11-25 08:00"
     ]
   },
   {
@@ -34128,6 +34148,56 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-24 18:00"
+    ]
+  },
+  {
+    "word": "titip",
+    "cn": "寄放；托（人）代收、代办",
+    "en": "to leave (something) in someone's care; to ask someone to take/receive for you",
+    "root": "titip",
+    "root_cn": "寄放；托付",
+    "example": "Kalau aku belum pulang, titip ke satpam kos aja, ya.",
+    "example_cn": "我要是还没回来，就交给宿舍保安代收吧。（aja = saja）",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-25 08:00",
+    "last_seen": "2026-11-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-25"
+    ],
+    "lesson_occurrences": [
+      "2026-11-25 08:00"
+    ]
+  },
+  {
+    "word": "penerima",
+    "cn": "收件人；接收者",
+    "en": "recipient; receiver",
+    "root": "terima",
+    "root_cn": "接受；收到",
+    "example": "Tolong tulis nama dan nomor HP penerima dengan jelas, biar gampang dihubungi.",
+    "example_cn": "请把收件人姓名和手机号写清楚，这样才好联系。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-25 08:00",
+    "last_seen": "2026-11-25 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-25"
+    ],
+    "lesson_occurrences": [
+      "2026-11-25 08:00"
     ]
   }
 ];
