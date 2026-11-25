@@ -1,0 +1,369 @@
+{
+ "date": "2026-11-25",
+ "session": "pm",
+ "time": "18:00",
+ "day": 96,
+ "title": "18:00 晚课｜Kode Posnya Ternyata Kode Pos Lama · 寄生日礼物，邮编竟然是旧家的",
+ "write_status": "lesson_complete",
+ "phase": {
+  "theme_id": "logistics",
+  "day_role": "core"
+ },
+ "new_words": [
+  "pengirim",
+  "kode pos"
+ ],
+ "vocab": [
+  {
+   "word": "pengirim",
+   "cn": "寄件人；发送者",
+   "en": "sender",
+   "root": "kirim",
+   "root_cn": "寄；送",
+   "formation": "peN- + kirim → pengirim（peN- 遇 k，k 脱落，变成 peng-：pengirim），“做寄送这件事的人”。同词根：mengirim（寄）、kiriman（寄来的东西）、pengiriman（寄送、发货）。常见搭配：nama pengirim（寄件人姓名）、data pengirim（寄件人信息）、alamat pengirim（寄件人地址）、retur ke pengirim / dikembalikan ke pengirim（退回寄件人）。",
+   "example": "Jangan lupa tulis nomor HP pengirim, biar petugas bisa menghubungi Bapak kalau ada masalah.",
+   "example_cn": "别忘了写寄件人的手机号，这样有问题时工作人员能联系到您。",
+   "synonym_note": "pengirim、pengiriman、kiriman 别混：pengirim 是“人”（寄件人）；pengiriman 是“寄送这件事、发货流程”（biaya pengiriman 运费、status pengiriman 物流状态）；kiriman 是“寄来的东西”（kiriman dari Ibu 妈妈寄来的东西）。和早上学的 penerima（收件人）正好一对：pengirim 寄、penerima 收。口语说法：日常就说 pengirim，没有别的常用说法。",
+   "usage_note": "今晚新学（本周物流主题词）。柜台工作人员让亨德拉填寄件人信息；早课连载最后一句的“退回寄件人”，说的也是 pengirim。",
+   "source_group": "new",
+   "is_new": true,
+   "is_oral_new": false,
+   "display": "pengirim",
+   "audio_text": "pengirim"
+  },
+  {
+   "word": "kode pos",
+   "cn": "邮政编码；邮编",
+   "en": "postal code; ZIP code",
+   "root": "kode + pos",
+   "root_cn": "kode：代码；pos：邮政",
+   "formation": "复合名词：kode（代码）+ pos（邮政）→ kode pos。印尼的邮编是 5 位数，按 kelurahan / desa（街道、村）划分，所以同一个城市不同片区的邮编不一样。常见搭配：isi kode pos（填邮编）、cek kode pos（查邮编）、kode posnya salah / nggak cocok（邮编错了／对不上）、kode pos rumah（家里的邮编）。",
+   "example": "Kode pos di Indonesia terdiri dari lima angka, jadi coba cek lagi kalau cuma ada empat.",
+   "example_cn": "印尼的邮编是五位数，所以如果只有四位，再查一下。",
+   "synonym_note": "kode pos 和 alamat：alamat 是完整地址（街名、门牌、片区、城市），kode pos 只是其中的五位数字，快递系统常用它来分区、算能不能走某种服务。别和 kode OTP / kode verifikasi（验证码）混：那是手机收到的一次性数字，不是邮编。口语说法：日常就说 kode pos。",
+   "usage_note": "今晚新学（本周物流主题词）。亨德拉抄的是父母旧家的邮编，和新地址对不上，系统就不让走特快。",
+   "source_group": "new",
+   "is_new": true,
+   "is_oral_new": false,
+   "display": "kode pos",
+   "audio_text": "kode pos"
+  },
+  {
+   "word": "meletakkan",
+   "cn": "放；放置（把东西放到某处）",
+   "en": "to put; to place",
+   "root": "letak",
+   "root_cn": "位置",
+   "formation": "meN- + letak + -kan → meletakkan（l 开头，meN- 只写 me-，-kan 表示“使……到某处”）。被动 diletakkan，命令式 letakkan。常见搭配：meletakkan barang di …（把东西放在……）、letakkan di atas meja（放在桌上）、diletakkan di tempat yang datar（放在平的地方）；正式书面还有 meletakkan jabatan（辞职）。",
+   "example": "Tolong letakkan kotak ini di tempat yang datar, isinya kue.",
+   "example_cn": "请把这个盒子放在平的地方，里面是糕点。",
+   "synonym_note": "meletakkan 和 menaruh（口语 taruh / naruh）意思基本一样，都是“放”；meletakkan 更规范，服务人员、说明书、正式场合常用（Silakan letakkan …），朋友家人之间多说 taruh。和同组的 letak 对比：letak 是名词“位置”，meletakkan 是动词“把东西放到某个位置”。口语说法：taruh / naruh（Taruh di situ aja）。",
+   "usage_note": "和 letak 同一个词根，一起复习。阅读里工作人员让亨德拉把包裹放到秤上（meletakkan paketnya di timbangan）。",
+   "source_group": "review",
+   "is_new": false,
+   "is_oral_new": false,
+   "display": "meletakkan",
+   "audio_text": "meletakkan"
+  },
+  {
+   "word": "letak",
+   "cn": "位置；所在的地方",
+   "en": "location; position",
+   "root": "letak",
+   "root_cn": "位置",
+   "formation": "词根本身就是名词。同词根：terletak（位于）、meletakkan（放置）、peletakan（放置；peletakan batu pertama 奠基）。常见搭配：letak rumah（房子的位置）、letaknya di …（位于……）、letak kesalahannya（错在哪儿）、letak masalahnya（问题出在哪儿）。",
+   "example": "Aku belum sepenuhnya hafal letak rumah baru Ibu, soalnya mereka baru pindah tahun lalu.",
+   "example_cn": "我还没完全记住妈妈新家的位置，因为他们去年才搬过去。",
+   "synonym_note": "letak、lokasi、tempat：lokasi 偏地图上的点（share lokasi 发定位）；tempat 是泛指的“地方”（tempat parkir）；letak 强调“在哪个位置、相对于什么”，也能说抽象的“问题出在哪儿”（letak kesalahannya di kode pos）。和同组的 meletakkan 对比：letak 是位置（名词），meletakkan 是放到某个位置（动词）。口语说法：日常问路更常直接说 Rumahnya di mana?，letaknya 也常听到。",
+   "usage_note": "和 meletakkan 同一个词根，一起复习。阅读里亨德拉打电话问妹妹新家的具体位置（letak rumah baru itu）。",
+   "source_group": "review",
+   "is_new": false,
+   "is_oral_new": false,
+   "display": "letak",
+   "audio_text": "letak"
+  },
+  {
+   "word": "berlaku sampai",
+   "cn": "有效期到……；（优惠、证件、规定）有效到……为止",
+   "en": "valid until",
+   "root": "laku",
+   "root_cn": "有效；畅销",
+   "formation": "ber- + laku → berlaku（有效、适用），后面接 sampai（到）说明截止时间。常见搭配：berlaku sampai tanggal …（有效期到……号）、promo berlaku sampai akhir bulan（优惠到月底）、masa berlaku（有效期）、sudah tidak berlaku（已经失效）、berlaku untuk …（适用于……）。",
+   "example": "Voucher diskon ongkir ini berlaku sampai hari Minggu, jadi jangan ditunda-tunda.",
+   "example_cn": "这张运费优惠券有效期到星期天，所以别拖。",
+   "synonym_note": "berlaku sampai 和 kedaluwarsa / expired：berlaku sampai 说的是“有效到哪天”（还在有效期内的说法）；过了期说 sudah tidak berlaku 或 sudah expired（食品过期多说 kedaluwarsa）。别和 laku（卖得好：Bakpia ini laku banget）混。口语说法：日常常问 Berlakunya sampai kapan?（有效期到什么时候？），也常直接说 expired。",
+   "usage_note": "最近常错的词，今晚放进寄件比价的场景：亨德拉手里的运费优惠券今天到期（berlaku sampai hari ini）。",
+   "source_group": "review",
+   "is_new": false,
+   "is_oral_new": false,
+   "display": "berlaku sampai",
+   "audio_text": "berlaku sampai"
+  },
+  {
+   "word": "nggak kepegang",
+   "cn": "顾不过来；管不过来",
+   "en": "can't keep up; too much to handle",
+   "root": "pegang",
+   "root_cn": "拿；握；掌握",
+   "formation": "口语 ke- + pegang → kepegang（拿得住、顾得上，相当于标准 terpegang），前面加 nggak 表示事情太多、顾不过来。常见搭配：kerjaannya nggak kepegang（活儿多得顾不过来）、antreannya nggak kepegang（排队的人多得忙不过来）、kalau dikerjain sendiri, nggak bakal kepegang（一个人干肯定顾不过来）。",
+   "example": "Menjelang Harbolnas, paket yang masuk banyak banget sampai nggak kepegang.",
+   "example_cn": "快到“全国网购节”（12.12）的时候，进来的包裹多得根本顾不过来。",
+   "synonym_note": "nggak kepegang、kewalahan、kelabakan：kewalahan 是标准说法“应付不过来”，正式场合也能用；kelabakan 重在“慌得手忙脚乱”；nggak kepegang 是口语，重在“事情太多、手上顾不过来”。口语说法：本身就是口语；正式场合说 kewalahan 或 tidak tertangani。",
+   "usage_note": "最近常错的词，今晚用在柜台：傍晚排队的人多，工作人员说有时候真顾不过来。",
+   "source_group": "review",
+   "is_new": false,
+   "is_oral_new": false,
+   "display": "nggak kepegang",
+   "audio_text": "nggak kepegang"
+  },
+  {
+   "word": "nyusahin",
+   "cn": "给人添麻烦；让人为难",
+   "en": "to trouble someone; to be a burden",
+   "root": "susah",
+   "root_cn": "难；麻烦；辛苦",
+   "formation": "口语 N- + susah + -in → nyusahin（s 变 ny-，-in 是口语里的 -kan），标准形 menyusahkan（meN- + susah + -kan）。常见搭配：jadi nyusahin（结果给人添麻烦了）、nggak mau nyusahin（不想麻烦别人）、nyusahin orang lain（给别人添麻烦）。",
+   "example": "Jangan merayu petugas biar paketmu diproses duluan, itu nyusahin orang yang antre.",
+   "example_cn": "别去哄工作人员让你的包裹先办，那样会给排队的人添麻烦。",
+   "synonym_note": "nyusahin 和 ngerepotin（标准 merepotkan）都是“给人添麻烦”：ngerepotin 是更常用的客套话（Maaf ngerepotin 麻烦您了），nyusahin 语气重一点，意思是真的让对方多费了劲、为难了，道歉时说 Maaf jadi nyusahin 也很自然。口语说法：nyusahin 本身是口语；正式场合说 menyusahkan / merepotkan。",
+   "usage_note": "此前学过的词，今晚用在道歉里：工作人员为了邮编多查了一遍，亨德拉说 “Maaf jadi nyusahin, Mbak.”",
+   "source_group": "review",
+   "is_new": false,
+   "is_oral_new": false,
+   "display": "nyusahin",
+   "audio_text": "nyusahin"
+  },
+  {
+   "word": "bandingkan",
+   "cn": "比较（一下）；对比",
+   "en": "compare",
+   "root": "banding",
+   "root_cn": "比；对照",
+   "formation": "banding + -kan → bandingkan（命令式、被动句里用的形式），完整主动式 membandingkan，被动 dibandingkan，名词 perbandingan（比较；比例）。常见搭配：bandingkan harga / ongkir（比价、比运费）、coba bandingkan dulu（先比一比）、dibandingkan dengan …（和……相比）。",
+   "example": "Coba bandingkan dulu ongkir reguler dan kilat. Kalau cuma mau ngepasin sampainya hari Sabtu, reguler mungkin sudah cukup.",
+   "example_cn": "先比一比普通件和特快的运费。如果只是想让它刚好星期六到，普通件可能就够了。",
+   "synonym_note": "bandingkan 和 dibandingkan：bandingkan 是“去比一比”（动作）；dibandingkan dengan … 常放在句首，表示“和……相比”（Dibandingkan minggu lalu, ongkirnya lebih murah 和上周比运费便宜了）。口语说法：bandingin（Coba bandingin dulu）；书面、正式场合用 membandingkan。",
+   "usage_note": "此前学过的词，今晚换到寄件比价的场景里用：亨德拉来柜台之前，已经在几个应用里比过特快的运费。",
+   "source_group": "application",
+   "is_new": false,
+   "is_oral_new": false,
+   "display": "bandingkan",
+   "audio_text": "bandingkan"
+  }
+ ],
+ "reading": {
+  "title": "Hadiah untuk Ibu di Surabaya · 寄给泗水妈妈的生日礼物",
+  "text": "Rabu sore, Hendra pergi ke agen pengiriman dekat kantornya. Dia mau mengirim hadiah ulang tahun untuk ibunya di Surabaya: kemeja batik dengan nuansa biru, bakpia yang masih empuk, dan novel fiksi ilmiah untuk ayahnya. Ulang tahun Ibu hari Sabtu, jadi paketnya harus sampai Jumat. Petugas meminta Hendra meletakkan paketnya di timbangan, lalu mengisi data pengirim dan alamat tujuan. Masalahnya, kode pos yang dia salin dari kontak di HP ternyata kode pos rumah lama orang tuanya di Sidoarjo. Karena kode pos dan alamatnya tidak cocok, layanan kilat tidak bisa dipilih. Hendra menelepon adiknya, lalu mendapat kode pos yang sesuai dengan letak rumah baru. Setelah kode posnya diperbaiki, layanan kilat bisa dipakai. Paketnya diperkirakan sampai Jumat siang.",
+  "cn": "星期三下午，亨德拉去了公司附近的快递代办点。他要给住在泗水的妈妈寄生日礼物：一件蓝色调的蜡染衬衫、还松软的 bakpia（日惹绿豆饼），还有一本给爸爸的科幻小说。妈妈的生日在星期六，所以包裹得在星期五送到。工作人员让亨德拉把包裹放到秤上，再填寄件人信息和收件地址。麻烦的是，他从手机联系人里抄的邮编，原来是父母在诗都阿佐的旧家的邮编。因为邮编和地址对不上，特快选不了。亨德拉给妹妹打了电话，问到了和新家位置对应的邮编。邮编改好以后，特快就能用了。包裹预计星期五中午送到。"
+ },
+ "dialogue": {
+  "title": "寄生日礼物：邮编竟然是旧家的",
+  "twist": 5,
+  "lines": [
+   {
+    "speaker": "Mbak Lia",
+    "id": "Sore, Pak. Paketnya mau dikirim ke mana?",
+    "cn": "下午好。包裹要寄到哪儿？"
+   },
+   {
+    "speaker": "Hendra",
+    "id": "Ke Surabaya, Mbak, pakai kilat. Saya sudah bandingkan ongkir di beberapa aplikasi, di sini empat puluh delapan ribu, kan? Saya juga punya voucher diskon sepuluh ribu, berlaku sampai hari ini.",
+    "cn": "寄到泗水，走特快。我已经在几个应用里比过运费了，你们这儿是四万八，对吧？我还有一张减一万的优惠券，今天到期。"
+   },
+   {
+    "speaker": "Mbak Lia",
+    "id": "Betul, Pak, tapi tergantung beratnya. Silakan letakkan paketnya di timbangan dulu, ya.",
+    "cn": "对，不过要看重量。请先把包裹放到秤上。"
+   },
+   {
+    "speaker": "Hendra",
+    "id": "Ini, Mbak. Isinya baju, buku, sama bakpia. Kira-kira kapan sampai, ya?",
+    "cn": "给您。里面是衣服、书和 bakpia。大概什么时候能到？（sama = dan）"
+   },
+   {
+    "speaker": "Mbak Lia",
+    "id": "Kalau kilat, biasanya lusa, hari Jumat. Boleh saya cek dulu alamat dan kode posnya?",
+    "cn": "特快的话一般后天，星期五到。我可以先核对一下地址和邮编吗？"
+   },
+   {
+    "speaker": "Mbak Lia",
+    "id": "Waduh, Pak, kode pos ini nggak cocok sama alamatnya. Di sistem, kilatnya nggak bisa dipilih. Kalau reguler, baru sampai Senin.",
+    "cn": "哎呀，这个邮编和地址对不上。系统里选不了特快。走普通件的话，要到星期一才到。（nggak = tidak）"
+   },
+   {
+    "speaker": "Hendra",
+    "id": "Senin? Ulang tahun ibu saya hari Sabtu, Mbak. Maksudnya belum saya tangkap, kode posnya salah di mana?",
+    "cn": "星期一？我妈妈生日是星期六啊。我还没听明白，邮编错在哪儿了？"
+   },
+   {
+    "speaker": "Mbak Lia",
+    "id": "Kode pos yang depannya 612 ini daerah Sidoarjo, Pak, padahal alamatnya di Surabaya. Mungkin ini kode pos rumah lama?",
+    "cn": "612 开头的这个邮编是诗都阿佐那边的，可地址在泗水。会不会是旧家的邮编？"
+   },
+   {
+    "speaker": "Hendra",
+    "id": "Oh iya! Orang tua saya pindah tahun lalu. Saya telepon adik saya dulu, ya. Maaf jadi nyusahin, Mbak.",
+    "cn": "哦对！我父母去年搬家了。我先给我妹妹打个电话。不好意思，给您添麻烦了。"
+   },
+   {
+    "speaker": "Mbak Lia",
+    "id": "Nggak apa-apa, Pak. Sore begini antreannya panjang, kadang memang nggak kepegang. Tapi kalau bisa, kode posnya dikasih ke saya sebelum jam empat, biar paketnya masih ikut kilat hari ini.",
+    "cn": "没关系。傍晚排队的人多，有时候确实顾不过来。不过可以的话，四点之前把邮编给我，这样包裹还能赶上今天的特快。（nggak = tidak，dikasih = diberikan）"
+   },
+   {
+    "speaker": "Hendra",
+    "id": "Kata adik saya, kode posnya 60293. Tolong perbaiki, ya, Mbak. Data pengirimnya tetap atas nama saya.",
+    "cn": "我妹妹说邮编是 60293。麻烦您改一下。寄件人信息还是用我的名字。"
+   },
+   {
+    "speaker": "Mbak Lia",
+    "id": "Sudah, Pak. Kilat bisa, sampainya Jumat siang. Totalnya tiga puluh delapan ribu, sudah dipotong voucher.",
+    "cn": "改好了。可以走特快，星期五中午到。总共三万八，已经扣了优惠券。"
+   }
+  ],
+  "practice": {
+   "role": "Hendra",
+   "lines": [
+    {
+     "speaker": "Mbak Lia",
+     "id": "Silakan letakkan paketnya di timbangan, Pak.",
+     "cn": "请把包裹放到秤上。"
+    },
+    {
+     "speaker": "Hendra",
+     "id": "Pakai kilat, Mbak. Kira-kira kapan sampai?",
+     "cn": "走特快。大概什么时候到？"
+    },
+    {
+     "speaker": "Mbak Lia",
+     "id": "Maaf, Pak, kode posnya nggak cocok sama alamatnya.",
+     "cn": "不好意思，邮编和地址对不上。"
+    },
+    {
+     "speaker": "Hendra",
+     "id": "Oh, itu kode pos rumah lama. Maaf jadi nyusahin.",
+     "cn": "哦，那是旧家的邮编。不好意思，给您添麻烦了。"
+    },
+    {
+     "speaker": "Mbak Lia",
+     "id": "Kalau bisa, kasih kode pos yang baru sebelum jam empat.",
+     "cn": "可以的话，四点之前给我新的邮编。"
+    },
+    {
+     "speaker": "Hendra",
+     "id": "Kode posnya 60293. Tolong perbaiki, ya, Mbak.",
+     "cn": "邮编是 60293。麻烦您改一下。"
+    }
+   ]
+  }
+ },
+ "rewrite": [
+  {
+   "kind": "twist",
+   "task": "转折应对：假如亨德拉打给妹妹，妹妹一直没接电话，离四点只剩十分钟。你是亨德拉，跟柜台的 Mbak Lia 说：先为又添麻烦道歉、说明妹妹没接电话；再用 Boleh saya cek dulu …? 请求先在地图上查新家片区的邮编；然后用 Jadi …, betul? 确认邮编在四点前改好就还能赶上今天的特快；最后说明寄件人信息不变。尽量用上 kode pos、pengirim、nyusahin、perbaiki。",
+   "frame": "Maaf jadi nyusahin lagi, Mbak. Adik saya …… . Boleh saya cek dulu …… di Google Maps? Jadi kalau kode posnya sudah diperbaiki sebelum …… , paketnya masih bisa ikut kilat hari ini, betul? Data pengirimnya tetap …… , ya.",
+   "reference_answer": "Maaf jadi nyusahin lagi, Mbak. Adik saya belum angkat telepon. Boleh saya cek dulu kode pos kelurahannya di Google Maps? Jadi kalau kode posnya sudah diperbaiki sebelum jam empat, paketnya masih bisa ikut kilat hari ini, betul? Data pengirimnya tetap atas nama saya, ya.",
+   "reference_cn": "不好意思，又给您添麻烦了。我妹妹还没接电话。我可以先在谷歌地图上查一下那个片区的邮编吗？所以如果四点前把邮编改好，包裹还能赶上今天的特快，对吗？寄件人信息还是用我的名字。"
+  }
+ ],
+ "daily_test": {
+  "questions": [
+   {
+    "type": "choice",
+    "prompt": "柜台工作人员要给包裹称重：“Pak, silakan ____ paketnya di atas timbangan dulu, ya.” 哪项最自然？",
+    "options": [
+     "letak",
+     "terletak",
+     "letakkan",
+     "peletakan"
+    ],
+    "answer_index": 2,
+    "answer": "letakkan",
+    "explain": "请对方做一个动作，要用命令式 letakkan（meletakkan 的命令形式），后面接宾语 paketnya。letak 是名词“位置”；terletak 是“位于”，说的是东西本来在哪儿（Rumahnya terletak di Surabaya），不能接宾语；peletakan 是名词“放置（这件事）”。口语里朋友之间也会说 Taruh di situ aja，但服务人员对顾客多说 Silakan letakkan …。"
+   },
+   {
+    "type": "choice",
+    "prompt": "工作人员看了看屏幕说：“Pak, kode pos 612 ini daerah Sidoarjo, padahal alamatnya di Surabaya.” 亨德拉想起父母去年搬了家。他最自然的回答是哪一句？",
+    "options": [
+     "Oh iya, itu kode pos rumah lama orang tua saya.",
+     "Oh iya, itu nama pengirim yang lama.",
+     "Kalau begitu, saya bandingkan dulu beratnya.",
+     "Nggak apa-apa, letaknya di timbangan saja."
+    ],
+    "answer_index": 0,
+    "answer": "Oh iya, itu kode pos rumah lama orang tua saya.",
+    "explain": "对方说的是邮编和地址对不上，亨德拉明白过来：抄的是旧家的邮编，所以 A 对。B 说寄件人名字，和邮编无关；C 的 bandingkan 是“比较”，和这里的问题无关；D 的 letaknya 是“它的位置”，整句也说不通。"
+   },
+   {
+    "type": "choice",
+    "prompt": "工作人员为了邮编又帮亨德拉查了一遍。亨德拉离开柜台前说：“Makasih banyak, Mbak. Maaf ya, jadi ____.” 哪项最自然？",
+    "options": [
+     "nyimak",
+     "nyasar",
+     "nyantai",
+     "nyusahin"
+    ],
+    "answer_index": 3,
+    "answer": "nyusahin",
+    "explain": "道歉“结果给您添麻烦了”说 Maaf jadi nyusahin（标准 menyusahkan），也常说 Maaf ngerepotin。nyimak 是“专心听”；nyasar 是“迷路、送错地方”（paketnya nyasar 包裹送错了）；nyantai 是“放松、悠闲”，放在道歉里意思不通。"
+   },
+   {
+    "type": "fill",
+    "prompt": "填空：Nama dan nomor HP ____ juga harus diisi, Pak.（寄件人）",
+    "answer": "pengirim",
+    "explain": "寄件人是 pengirim（peN- + kirim，k 脱落）。收件人是 penerima；pengiriman 是“寄送、发货”这件事，不是人。"
+   },
+   {
+    "type": "fill",
+    "prompt": "填空：Alamatnya di Surabaya, tapi ____ yang Bapak tulis itu daerah Sidoarjo.（邮政编码）",
+    "answer": "kode pos",
+    "explain": "邮政编码是 kode pos，印尼的邮编是五位数，按片区划分，所以和地址对不上时系统会报错。"
+   },
+   {
+    "type": "order",
+    "prompt": "按照中文排列印尼语：我已经在应用里比过运费了。",
+    "tokens": [
+     "Saya",
+     "sudah",
+     "bandingkan",
+     "ongkir",
+     "di",
+     "aplikasi."
+    ],
+    "answer": "Saya sudah bandingkan ongkir di aplikasi.",
+    "answer_cn": "我已经在应用里比过运费了。",
+    "explain": "主语 Saya + sudah（已经）+ 动词 bandingkan + 宾语 ongkir + 地点 di aplikasi。书面可以说 Saya sudah membandingkan ongkir…，口语常说 Saya udah bandingin ongkir…。"
+   }
+  ]
+ },
+ "review": {
+  "title": "可选 · 30 秒复述",
+  "steps": [
+   "用 meletakkan、pengirim、kode pos、nyusahin 说说亨德拉寄生日礼物时出了什么问题、最后怎么解决的。"
+  ],
+  "retell_reference": "Hendra mau mengirim hadiah ulang tahun untuk ibunya di Surabaya. Petugas minta dia meletakkan paketnya di timbangan dan mengisi data pengirim. Ternyata kode posnya kode pos rumah lama, jadi layanan kilat nggak bisa dipakai. Hendra minta maaf karena jadi nyusahin, lalu menelepon adiknya. Setelah kode posnya diperbaiki, paketnya bisa sampai hari Jumat.",
+  "retell_reference_cn": "亨德拉要给住在泗水的妈妈寄生日礼物。工作人员让他把包裹放到秤上，再填寄件人信息。结果邮编是旧家的，特快用不了。亨德拉为添了麻烦道歉，然后给妹妹打电话。邮编改好以后，包裹星期五就能到。"
+ },
+ "lesson_focus": {
+  "words": [
+   "kode pos",
+   "nyusahin",
+   "meletakkan"
+  ],
+  "patterns": [
+   {
+    "pattern": "Kira-kira kapan …?",
+    "cn": "大概什么时候……？（询问进度）",
+    "example": "Kira-kira kapan sampai, ya?",
+    "example_cn": "大概什么时候能到？",
+    "function": "ask-status"
+   },
+   {
+    "pattern": "Maaf jadi …",
+    "cn": "不好意思，结果（给您）……了",
+    "example": "Maaf jadi nyusahin, Mbak.",
+    "example_cn": "不好意思，给您添麻烦了。"
+   }
+  ]
+ }
+}
