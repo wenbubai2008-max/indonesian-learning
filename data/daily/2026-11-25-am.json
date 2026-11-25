@@ -1,0 +1,291 @@
+{
+  "date": "2026-11-25",
+  "session": "am",
+  "time": "08:00",
+  "day": 96,
+  "title": "08:00 早课｜Nomor Kamarnya Nggak Kebaca · 房间号看不清",
+  "phase": {
+    "theme_id": "logistics",
+    "day_role": "core"
+  },
+  "story": {
+    "series": "Agen Kilat Mbak Sinta · 辛塔姐的快递代收点",
+    "episode": 3,
+    "previously_cn": "上集：布罗丝阿姨寄给儿子迪马斯的包裹因为苏门答腊山体滑坡，滞留在中转仓，预计周五到；可当天下午，运单状态又变成“收件地址不完整”。",
+    "next_cn": "下集：状态竟然变成“正在退回寄件人”——改地址的申请到底有没有生效？"
+  },
+  "vocab": [
+    {
+      "word": "titip",
+      "display": "titip",
+      "audio_text": "titip",
+      "cn": "寄放；托（人）代收、代办",
+      "en": "to leave (something) in someone's care; to ask someone to take/receive for you",
+      "root": "titip",
+      "root_cn": "寄放；托付",
+      "formation": "词根，日常直接当动词用：Titip ke satpam aja（交给保安代收就行）。书面说 menitipkan（menitipkan paket ke satpam）、被动 dititipkan（paketnya dititipkan ke tetangga）。同词根：titipan（托带、寄放的东西：Ini titipan dari Bu Ros）、penitipan（寄存处：penitipan barang 寄存处、penitipan anak 托儿所）。常用搭配：titip salam（代问好）、titip beli（托人顺便买）。",
+      "example": "Kalau aku belum pulang, titip ke satpam kos aja, ya.",
+      "example_cn": "我要是还没回来，就交给宿舍保安代收吧。（aja = saja）",
+      "synonym_note": "titip 是把东西“交给某个人”替你保管或代收，后面多接 ke / sama + 人：titip ke satpam、titip sama tetangga；taruh 只是“放在某个地方”，没有人负责，后面接 di + 地点：taruh di depan pintu。titip salam buat Ibu（替我向你妈妈问好）是固定说法。口语说法：titip 本身就是日常说法；书面通知写 menitipkan / dititipkan。",
+      "everyday": "日常直接说 titip（Titip ke satpam aja）；快递通知、书面写 menitipkan / dititipkan",
+      "is_oral_new": false
+    },
+    {
+      "word": "taruh",
+      "display": "taruh",
+      "audio_text": "taruh",
+      "cn": "放；摆放",
+      "en": "to put; to place",
+      "root": "taruh",
+      "root_cn": "放置",
+      "formation": "词根，日常直接当动词用：Taruh di meja aja。书面说 menaruh（menaruh paket di teras），被动 ditaruh（paketnya ditaruh di depan pintu）。menaruh 还有抽象用法：menaruh harapan（寄予希望）、menaruh curiga（起疑心）。注意 taruhan / bertaruh 是“赌注 / 打赌”，是同一个词根的另一层意思，不是“放的东西”。",
+      "example": "Taruh botol sambalnya di tengah kardus, biar bubble wrap-nya bisa melindungi botol itu.",
+      "example_cn": "把辣椒酱瓶子放在箱子中间，这样气泡膜才能护住瓶子。",
+      "synonym_note": "先回想：上一次见到 taruh，是把东西“放”在哪儿？taruh 只说放的位置（taruh di …）；要把东西交给某个人代管，用 titip（titip ke …）。正式文字常用 meletakkan / menaruh，意思相同：Letakkan paket di meja。口语说法：taruh 本身就是日常说法，也常说 ditaruh aja di situ。",
+      "is_oral_new": false
+    },
+    {
+      "word": "penerima",
+      "display": "penerima",
+      "audio_text": "penerima",
+      "cn": "收件人；接收者",
+      "en": "recipient; receiver",
+      "root": "terima",
+      "root_cn": "接受；收到",
+      "formation": "peN- + terima → penerima（接收的人）：peN- 遇 t 变 pen-，t 脱落，和 menerima 一样。同词根：menerima（收到；接受）、diterima（被接受；已签收）、penerimaan（接收；录取：penerimaan mahasiswa baru）。快递单常见：nama penerima（收件人姓名）、alamat penerima、nomor HP penerima；对应 pengirim（寄件人，peN- + kirim）。",
+      "example": "Tolong tulis nama dan nomor HP penerima dengan jelas, biar gampang dihubungi.",
+      "example_cn": "请把收件人姓名和手机号写清楚，这样才好联系。",
+      "synonym_note": "penerima 是“收的人”，pengirim 是“寄的人”，快递单上两栏分开写。penerima 也用在奖学金、补助：penerima beasiswa（奖学金获得者）、penerima bantuan（受助人）。口语说法：聊天里常说 yang nerima（nerima = menerima）：Yang nerima paketnya siapa?",
+      "everyday": "快递单、应用写 penerima；聊天常说 yang nerima",
+      "is_oral_new": false
+    },
+    {
+      "word": "mematuhi",
+      "display": "mematuhi",
+      "audio_text": "mematuhi",
+      "cn": "遵守；服从",
+      "en": "to obey; to comply with",
+      "root": "patuh",
+      "root_cn": "顺从；守规矩",
+      "formation": "meN- + patuh + -i → mematuhi（p 脱落，像 memukul）。同词根：patuh（形容词：anak yang patuh 听话的孩子）、dipatuhi（被遵守）、kepatuhan（遵守的情况）。常见搭配：mematuhi aturan / peraturan、mematuhi perintah dokter、mematuhi protokol。",
+      "example": "Semua karyawan agen wajib mematuhi aturan baru: paket harus difoto waktu diserahkan ke penerima.",
+      "example_cn": "代收点的所有员工都必须遵守新规定：包裹交给收件人时要拍照。",
+      "synonym_note": "先回想：mematuhi 后面接什么？——接规定、命令（aturan、perintah）。近义 menaati（taat + -i）更书面；日常聊天多说 ikut aturan 或 taat aturan。别和 mematikan（关掉）混：都是 meN- 开头，词根不同（patuh / mati）。口语说法：ikutin aturan（ikutin = mengikuti）。",
+      "everyday": "日常多说 ikut aturan / ikutin aturan；mematuhi 用在规定、通知、新闻里",
+      "is_oral_new": false
+    },
+    {
+      "word": "kebaca",
+      "display": "kebaca",
+      "audio_text": "kebaca",
+      "cn": "看得清、读得出来（口语）",
+      "en": "legible; readable (colloquial)",
+      "root": "baca",
+      "root_cn": "读",
+      "formation": "口语前缀 ke- + baca → kebaca，相当于书面的 terbaca（“能被读出来”）。最常说否定：nggak kebaca（看不清、读不出来）。也能说人的心思“看得出来”：Mukanya gampang kebaca（他的表情一看就懂）。同类口语：kelihatan（看得见）、kedengeran（听得见）。",
+      "example": "Tulisan di resinya luntur kena hujan, jadi alamatnya nggak kebaca.",
+      "example_cn": "运单上的字被雨淋花了，所以地址看不清。（nggak = tidak）",
+      "synonym_note": "先回想：上次学 kebaca 时，是什么“看不清”？kebaca 是口语，书面写 terbaca（Tulisan tidak terbaca）；dibaca 是“被（人）读”，强调读的动作：Pesannya sudah dibaca（消息已读）。口语说法：kebaca 本身就是口语；正式通知、表格里写 tidak terbaca。",
+      "everyday": "日常说 nggak kebaca；书面写 tidak terbaca",
+      "is_oral_new": false
+    },
+    {
+      "word": "menarik",
+      "display": "menarik",
+      "audio_text": "menarik",
+      "cn": "有意思的，吸引人的；拉，抽（回）",
+      "en": "interesting, attractive; to pull, to draw",
+      "root": "tarik",
+      "root_cn": "拉",
+      "formation": "meN- + tarik → menarik（t 脱落）。两种用法：形容词“有意思、吸引人”（cerita yang menarik）；动词“拉、抽、收回”：menarik napas（吸一口气）、menarik uang di ATM（取钱）、menarik kembali ucapannya（收回说过的话）。同词根：tertarik（感兴趣：tertarik sama …）、tarikan（一拉）、penarikan（提取：penarikan tunai）。",
+      "example": "Sebelum menelepon CS lagi, Mbak Sinta menarik napas panjang dulu.",
+      "example_cn": "再给客服打电话之前，辛塔姐先深吸了一口气。",
+      "synonym_note": "先回想：menarik 除了“有意思”，还有什么意思？——“拉、吸（气）”。说事物“有意思”用 menarik（Tawarannya menarik）；说人“感兴趣”用 tertarik（Aku tertarik sama tawarannya），不说 Aku menarik。口语说法：“有意思、好玩”常说 seru；“拉”常说 narik（narik ojek 跑摩的）。",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "taruh",
+    "mematuhi",
+    "kebaca",
+    "menarik"
+  ],
+  "review_vocab": [
+    "tahan",
+    "tertahan",
+    "lacak",
+    "nyinggung",
+    "ngeh"
+  ],
+  "sentences": [
+    {
+      "text": "Dampak longsor masih terasa: paketnya tertahan di gudang transit, tapi statusnya sudah bisa dilacak lagi.",
+      "cn": "山体滑坡的影响还在：包裹滞留在中转仓，不过状态已经又能查到了。"
+    },
+    {
+      "text": "Mohon dibantu update data penerima, ya, Kak. Nomor kamarnya tadi nggak kebaca.",
+      "cn": "麻烦帮忙更新一下收件人信息。刚才房间号看不清。（nggak = tidak）"
+    },
+    {
+      "text": "Aduh, aku udah nggak tahan nunggu paket ini, Bu. Tiap jam aku cek statusnya!",
+      "cn": "哎呀，妈，这个包裹我等得受不了了，每个小时都去看一下状态！（udah = sudah，nggak = tidak，nunggu = menunggu，tiap = setiap）"
+    },
+    {
+      "text": "Tadi CS-nya sempat nyinggung soal biaya tambahan, tapi akhirnya mereka nggak nagih apa-apa.",
+      "cn": "刚才客服提了一句额外费用的事，不过最后什么也没收。"
+    },
+    {
+      "text": "Ternyata paketnya sudah ditaruh di pos satpam dari pagi. Saya baru ngeh sekarang.",
+      "cn": "原来包裹一早就放在保安亭了。我现在才反应过来。"
+    }
+  ],
+  "reading": {
+    "title": "Nomor Kamarnya Nggak Kebaca · 房间号看不清",
+    "text": "Rabu pagi, Mbak Sinta membuka data pengiriman Bu Ros. Alamatnya cuma \"Kos Melati, Jalan Sei Batang Hari, Medan\". Nomor kamar dan HP penerima kosong. Bu Ros datang dan langsung protes, \"Saya sudah tulis lengkap, kok!\" Di formulir aslinya ada noda kopi, persis di atas nomor kamar. \"Maaf, Bu, bukan mau nyinggung, tapi tulisannya nggak kebaca.\" Bang Jali kelepasan ketawa. Dia baru ngeh: hari Senin kopinya tumpah di situ. Bu Ros sempat ngambek, tapi akhirnya menyebutkan nomor kamar dan HP Dimas. Mbak Sinta langsung menelepon CS: \"Mohon dibantu update (perbarui) data penerima, ya.\" Datanya bisa diubah, tapi paketnya masih tertahan di gudang transit. Siangnya Dimas membalas, \"Bu, aku kuliah sampai sore. Titip aja ke Pak Darto, satpam kos. Jangan ditaruh di depan kamar, takut ada yang curi.\" Pak Darto selalu mematuhi aturan pemilik kos: paket hanya boleh dititipkan kalau nama penerima dan nomor kamarnya jelas. Bu Ros menarik napas lega. Tapi malamnya statusnya berubah lagi: \"Paket dalam proses retur ke pengirim.\"",
+    "cn": "周三早上，辛塔姐打开布罗丝阿姨的寄件信息。地址只写着“茉莉宿舍，棉兰 Sei Batang Hari 路”，房间号和收件人手机号都是空的。布罗丝阿姨一来就抗议：“我明明写全了啊！”原始的寄件单上有一块咖啡渍，正好盖在房间号上。“阿姨，不好意思，不是要冒犯您，只是字看不清了。”贾利哥没忍住笑出了声。他这才反应过来：周一他的咖啡就是洒在那儿的。布罗丝阿姨一度有点赌气，不过最后还是报出了迪马斯的房间号和手机号。辛塔姐马上给客服打电话：“麻烦帮忙更新一下收件人信息。”信息可以改，但包裹还滞留在中转仓。中午迪马斯回消息：“妈，我上课到傍晚。交给宿舍保安达尔托叔代收就行。别放在房门口，怕有人偷。”达尔托叔一向遵守房东的规定：只有收件人姓名和房间号写清楚的包裹，才能交给他代收。布罗丝阿姨松了一口气。可到了晚上，状态又变了：“包裹正在退回寄件人。”"
+  },
+  "quiz": [
+    {
+      "kind": "zh2id",
+      "question": "我要是不在家，就交给保安代收吧。",
+      "target": "titip",
+      "target_cn": "托人代收",
+      "options": [
+        "Kalau aku nggak di rumah, taruh ke satpam aja.",
+        "Kalau aku nggak di rumah, titip ke satpam aja.",
+        "Kalau aku masih di rumah, titip ke satpam aja.",
+        "Kalau aku nggak di rumah, titipan ke satpam aja."
+      ],
+      "answer_index": 1,
+      "answer": "Kalau aku nggak di rumah, titip ke satpam aja.",
+      "point": "titip（交给某人代收）/ taruh（放在某处）；nggak（不在）/ masih（还在）；动词 titip / 名词 titipan",
+      "explain": "“交给保安代收”是把东西托付给一个人，用 titip ke + 人，所以 B 对。A 的 taruh 是“放在某个地方”，后面接 di + 地点（taruh di pos satpam），不能 taruh ke satpam；C 的 masih di rumah 是“还在家”，意思反了；D 的 titipan 是名词“托放的东西”，不能当动词用。书面也可以说 Kalau saya tidak di rumah, titipkan saja ke satpam，也对。"
+    },
+    {
+      "question": "Dalam cerita hari ini, kenapa nomor kamar Dimas tidak muncul di data pengiriman?",
+      "options": [
+        "Karena Bu Ros lupa menulis nomor kamarnya.",
+        "Karena admin salah mengetik nomor kamarnya.",
+        "Karena tulisannya kena noda kopi dan tidak terbaca.",
+        "Karena Dimas belum punya nomor kamar di kos."
+      ],
+      "answer_index": 2,
+      "answer": "Karena tulisannya kena noda kopi dan tidak terbaca.",
+      "explain": "课文说寄件单边上有一块咖啡渍，正好盖在房间号上（noda kopi, persis di atas nomor kamar），辛塔姐说 tulisannya nggak kebaca，所以 C 对。A 不对：布罗丝阿姨说她写全了，后来也报出了房间号；B 不对：管理员只是照着看得清的字录入；D 课文没提，而且阿姨知道房间号。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "我到现在才发现，房间号根本没写上。",
+      "target": "ngeh",
+      "target_cn": "意识到；反应过来（口语）",
+      "options": [
+        "Aku sudah ngeh nomor kamarnya nggak ditulis.",
+        "Aku masih ngeh nomor kamarnya nggak ditulis.",
+        "Aku baru ngeh nomor kamarnya nggak menulis.",
+        "Aku baru ngeh nomor kamarnya nggak ditulis."
+      ],
+      "answer_index": 3,
+      "answer": "Aku baru ngeh nomor kamarnya nggak ditulis.",
+      "point": "baru（才、刚）/ sudah（已经）/ masih（还）；被动 ditulis / 主动 menulis",
+      "explain": "“到现在才发现”用 baru ngeh，“房间号没被写上”用被动 nggak ditulis，所以 D 对。A 的 sudah ngeh 是“早就意识到了”，没有“才”的意思；B 的 masih ngeh 不成话；C 的 menulis 是主动“写”，房间号不会自己写，要用 ditulis。口语里也常说 Aku baru sadar …，意思一样，也对。"
+    }
+  ],
+  "output": {
+    "task": "接本集结尾：运单状态变成“正在退回寄件人”。你是辛塔姐，给快递公司客服发一条 WhatsApp（4 句）：说早上已经申请更新收件人信息；用 … sudah sampai mana, ya? 问包裹现在在哪；用 nyinggung 说早上客服提到过包裹还滞留在中转仓；用 Kalau bisa, … sebelum … 委婉请他们在退回之前处理，并交给宿舍保安代收。按骨架填空，用上 penerima、nyinggung 和 titip 的变形。",
+    "frame": "Halo, Kak. Tadi pagi saya sudah minta update data penerima untuk resi …… . Paketnya sekarang sudah sampai mana, ya? Tadi pagi CS-nya sempat nyinggung soal paket yang masih …… , tapi sekarang statusnya malah …… . Kalau bisa, tolong batalkan returnya sebelum …… , lalu paketnya dititipkan ke satpam kos saja.",
+    "reference_answer": "Halo, Kak. Tadi pagi saya sudah minta update data penerima untuk resi atas nama Bu Ros. Paketnya sekarang sudah sampai mana, ya? Tadi pagi CS-nya sempat nyinggung soal paket yang masih tertahan di gudang transit, tapi sekarang statusnya malah dalam proses retur. Kalau bisa, tolong batalkan returnya sebelum paketnya dikirim balik, lalu paketnya dititipkan ke satpam kos saja.",
+    "reference_cn": "你好。今天早上我已经申请更新布罗丝阿姨那张运单的收件人信息。包裹现在到哪儿了？早上客服提到包裹还滞留在中转仓，可现在状态反而变成了正在退回。如果可以的话，请在包裹被寄回来之前取消退回，然后把包裹交给宿舍保安代收就好。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 忍受、扛得住（nggak … nunggu）、滞留（paketnya … di gudang）、追踪查件（resinya bisa di…）、冒犯；提到（bukan mau …）、反应过来（baru …）；再说出 托人代收、放、收件人、遵守、看得清（口语）、拉；吸（气）。卡住的词回看词卡再说一遍。",
+    "易混词：titip 是交给某人代收（titip ke satpam），taruh 是放在某处（taruh di depan kamar）；tahan 是人“忍得住、扛得住”（nggak tahan nunggu），tertahan 是东西“被卡住、走不了”（paketnya tertahan）；penerima 收件人，pengirim 寄件人。各说一句。",
+    "重点复习词 nyinggung（最近常错）有两种用法：①“冒犯、说到让人不舒服的事”：Bukan mau nyinggung, tapi …；②“顺带提到”：CS-nya sempat nyinggung soal biaya tambahan。正式说法是 menyinggung。两种各说一句。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "忍得住；扛得住",
+        "id": "tahan"
+      },
+      {
+        "cn": "滞留；卡住",
+        "id": "tertahan"
+      },
+      {
+        "cn": "追踪；查（物流）",
+        "id": "lacak"
+      },
+      {
+        "cn": "冒犯；提到（口语）",
+        "id": "nyinggung"
+      },
+      {
+        "cn": "意识到；反应过来（口语）",
+        "id": "ngeh"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "titip",
+            "cn": "交给某人代收、代管"
+          },
+          {
+            "id": "taruh",
+            "cn": "放在某个地方"
+          }
+        ],
+        "note": "titip 有人负责，接 ke / sama + 人（titip ke satpam）；taruh 只说位置，接 di + 地点（taruh di depan pintu）。"
+      },
+      {
+        "items": [
+          {
+            "id": "tahan",
+            "cn": "（人）忍得住；（东西）耐用"
+          },
+          {
+            "id": "tertahan",
+            "cn": "（东西）被卡住、走不了"
+          }
+        ],
+        "note": "同词根 tahan：说人受得了用 tahan（nggak tahan nunggu），东西结实也用 tahan（tahan banting）；包裹被情况卡住用 tertahan（tertahan di gudang transit）。"
+      },
+      {
+        "items": [
+          {
+            "id": "penerima",
+            "cn": "收件人"
+          },
+          {
+            "id": "pengirim",
+            "cn": "寄件人"
+          }
+        ],
+        "note": "都是 peN- 加词根：terima → penerima（收的人），kirim → pengirim（寄的人）；快递单两栏分开写。"
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "titip",
+      "penerima",
+      "taruh"
+    ],
+    "patterns": [
+      {
+        "pattern": "Mohon dibantu …, ya.",
+        "cn": "麻烦帮忙……",
+        "function": "urge-politely",
+        "example": "Mohon dibantu update (perbarui) data penerima, ya.",
+        "example_cn": "麻烦帮忙更新一下收件人信息。"
+      },
+      {
+        "pattern": "Bukan mau …, tapi …",
+        "cn": "不是要……，只是……",
+        "example": "Maaf, Bu, bukan mau nyinggung, tapi tulisannya nggak kebaca.",
+        "example_cn": "阿姨，不好意思，不是要冒犯您，只是字看不清了。"
+      }
+    ]
+  }
+}
