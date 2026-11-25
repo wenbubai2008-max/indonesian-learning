@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-25",
-    "session": "pm",
-    "time": "18:00",
-    "day": 96
+    "date": "2026-11-26",
+    "session": "am",
+    "time": "08:00",
+    "day": 97
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-25T00:35:30.498Z",
-    "lesson_watermark": "2026-11-25 08:00",
+    "runtime_generated_at": "2026-11-25T10:55:44.603Z",
+    "lesson_watermark": "2026-11-25 18:00",
     "index_updated": "2026-11-25",
-    "runtime_hash": "ffdfb2d17a8d8674d384ba5882fb32291e93c2288d1309519b8b5959d4046612",
-    "index_hash": "a9b5a6e4f90663f05702c177ce2adc86945cd6a9b5510a3309118560538b10db",
+    "runtime_hash": "8b65bc7e3a848fa69c48a75a91054a2c9a5608f6fbf17a23b69df4b48b110fe9",
+    "index_hash": "358a7bb8183645810cbbfe01130dc30a51f14f2784762bdea89e0f70bccec8ee",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -50,12 +50,12 @@
   "candidates": {
     "new_dont": [
       [
-        "pengirim",
-        "寄件人"
+        "garansi",
+        "保修"
       ],
       [
-        "kode pos",
-        "邮政编码"
+        "stok habis",
+        "缺货；卖完了"
       ]
     ],
     "new_fuzzy": [],
@@ -1211,16 +1211,6 @@
         "爆炸"
       ],
       [
-        "meletakkan",
-        2,
-        0,
-        "",
-        "2026-11-22T01:48:24.240Z",
-        "放置；把……放下",
-        "letak",
-        "位置；放置"
-      ],
-      [
         "memeluk",
         2,
         0,
@@ -1741,16 +1731,6 @@
         "仔细听；留意"
       ],
       [
-        "bandingkan",
-        2,
-        0,
-        "",
-        "2026-11-20T05:13:44.042Z",
-        "比较（请你比较）",
-        "banding",
-        "比较；对比"
-      ],
-      [
         "kontrak",
         3,
         0,
@@ -1839,16 +1819,6 @@
         "决定",
         "putus",
         ""
-      ],
-      [
-        "nyusahin",
-        3,
-        1,
-        "2026-10-08T08:58:24.065Z",
-        "2026-11-18T14:19:05.488Z",
-        "给别人添麻烦；让事情变困难（口语）",
-        "susah",
-        "困难；麻烦"
       ],
       [
         "menggosok",
@@ -2221,16 +2191,6 @@
         "附上；随附"
       ],
       [
-        "letak",
-        2,
-        0,
-        "",
-        "2026-10-26T07:53:11.210Z",
-        "位置；所在地",
-        "letak",
-        "位置"
-      ],
-      [
         "pengumuman",
         2,
         0,
@@ -2259,6 +2219,46 @@
         "对面；彼岸",
         "seberang",
         "对面；另一边"
+      ],
+      [
+        "kebanyakan",
+        3,
+        0,
+        "",
+        "2026-11-15T03:30:02.292Z",
+        "太多；大多数",
+        "banyak",
+        ""
+      ],
+      [
+        "nyari",
+        3,
+        0,
+        "",
+        "2026-11-15T03:30:07.572Z",
+        "找、寻找",
+        "cari",
+        ""
+      ],
+      [
+        "deras",
+        2,
+        0,
+        "",
+        "2026-10-26T07:53:27.844Z",
+        "湍急的；（雨）很大；（水流）很猛",
+        "deras",
+        "急；猛"
+      ],
+      [
+        "lamaran kerja",
+        2,
+        0,
+        "",
+        "2026-10-26T07:53:38.242Z",
+        "求职申请；求职信",
+        "lamar",
+        "申请；求职；求婚"
       ],
       [
         "ongkir",
@@ -2351,24 +2351,24 @@
         "寄放；托付"
       ],
       [
-        "taruh",
+        "kode pos",
         2,
         0,
         "",
-        "2026-11-23T04:50:34.387Z",
-        "放；放置",
-        "taruh",
-        "放；放置"
+        "",
+        "邮政编码；邮编",
+        "kode + pos",
+        "kode：代码；pos：邮政"
       ],
       [
-        "menarik",
-        3,
+        "pengirim",
+        2,
         0,
         "",
-        "2026-11-14T08:26:54.032Z",
-        "有趣的；吸引人的；引人注意的",
-        "tarik",
-        "拉；吸引"
+        "",
+        "寄件人；发送者",
+        "kirim",
+        "寄；送"
       ]
     ],
     "focus": [
@@ -2645,33 +2645,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-18",
-      "session": "am",
-      "review_core": [
-        "tepat waktu",
-        "pengaturan",
-        "sesudah",
-        "salah tingkah",
-        "agar"
-      ],
-      "new_words": []
-    },
-    {
-      "date": "2026-11-18",
-      "session": "pm",
-      "review_core": [
-        "berangsur",
-        "peserta",
-        "nggak heran",
-        "bakal"
-      ],
-      "new_words": [
-        "polos",
-        "kardus",
-        "keripik"
-      ]
-    },
-    {
       "date": "2026-11-19",
       "session": "am",
       "review_core": [
@@ -2852,75 +2825,38 @@
         "titip",
         "penerima"
       ]
+    },
+    {
+      "date": "2026-11-25",
+      "session": "pm",
+      "review_core": [
+        "meletakkan",
+        "letak",
+        "berlaku sampai",
+        "nggak kepegang",
+        "nyusahin"
+      ],
+      "new_words": [
+        "pengirim",
+        "kode pos"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "new_words": [
-      "cod",
-      "patokan"
+      "pengirim",
+      "kode pos"
     ],
     "review_core": [
-      "terpeleset",
-      "meningkatkan",
-      "seraya",
-      "menegaskan"
+      "meletakkan",
+      "letak",
+      "berlaku sampai",
+      "nggak kepegang",
+      "nyusahin"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-25",
-    "vocab": [
-      [
-        "titip",
-        "寄放；托（人）代收、代办",
-        "to leave (something) in someone's care; to ask someone to take/receive for you",
-        "titip",
-        "寄放；托付"
-      ],
-      [
-        "taruh",
-        "放；摆放",
-        "to put; to place",
-        "taruh",
-        "放置"
-      ],
-      [
-        "penerima",
-        "收件人；接收者",
-        "recipient; receiver",
-        "terima",
-        "接受；收到"
-      ],
-      [
-        "mematuhi",
-        "遵守；服从",
-        "to obey; to comply with",
-        "patuh",
-        "顺从；守规矩"
-      ],
-      [
-        "kebaca",
-        "看得清、读得出来（口语）",
-        "legible; readable (colloquial)",
-        "baca",
-        "读"
-      ],
-      [
-        "menarik",
-        "有意思的，吸引人的；拉，抽（回）",
-        "interesting, attractive; to pull, to draw",
-        "tarik",
-        "拉"
-      ]
-    ],
-    "review_vocab": [
-      "tahan",
-      "tertahan",
-      "lacak",
-      "nyinggung",
-      "ngeh"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

@@ -8440,25 +8440,29 @@ window.DAILY_VOCAB_DB = [
     "en": "cause trouble; make things difficult for someone",
     "root": "susah",
     "root_cn": "困难；麻烦",
-    "example": "Kalau bisa selesai sendiri, aku nggak mau nyusahin tim lain.",
-    "example_cn": "如果自己能解决，我不想给其他团队添麻烦。",
+    "example": "Jangan merayu petugas biar paketmu diproses duluan, itu nyusahin orang yang antre.",
+    "example_cn": "别去哄工作人员让你的包裹先办，那样会给排队的人添麻烦。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-09 08:00",
-    "last_seen": "2026-10-09 08:00",
+    "last_seen": "2026-11-25 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-09-09",
-      "2026-10-09"
+      "2026-10-09",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
       "2026-09-09 08:00",
-      "2026-10-09 08:00"
+      "2026-10-09 08:00",
+      "2026-11-25 18:00"
     ]
   },
   {
@@ -8993,9 +8997,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-09-10 19:00",
-    "last_seen": "2026-11-18 08:00",
+    "last_seen": "2026-11-25 18:00",
     "sessions": [
       "19:00",
       "18:00",
@@ -9008,10 +9012,11 @@ window.DAILY_VOCAB_DB = [
       "2026-10-08",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-25"
     ],
-    "example": "Harusnya kita tambah satu admin; pas promo tengah malam, chat pembeli sampai nggak kepegang.",
-    "example_cn": "本来我们应该再加一个客服；半夜促销的时候，买家的消息多到根本顾不过来。（harusnya = seharusnya，pas = saat，nggak = tidak）",
+    "example": "Menjelang Harbolnas, paket yang masuk banyak banget sampai nggak kepegang.",
+    "example_cn": "快到“全国网购节”（12.12）的时候，进来的包裹多得根本顾不过来。",
     "lesson_occurrences": [
       "2026-09-10 19:00",
       "2026-09-11 19:00",
@@ -9019,7 +9024,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-08 08:00",
       "2026-11-07 18:00",
       "2026-11-08 08:00",
-      "2026-11-18 08:00"
+      "2026-11-18 08:00",
+      "2026-11-25 18:00"
     ]
   },
   {
@@ -16972,23 +16978,27 @@ window.DAILY_VOCAB_DB = [
     "en": "put; place",
     "root": "letak",
     "root_cn": "位置；放置",
-    "example": "Saya meletakkan kunci di atas meja.",
-    "example_cn": "我把钥匙放在桌子上。",
+    "example": "Tolong letakkan kotak ini di tempat yang datar, isinya kue.",
+    "example_cn": "请把这个盒子放在平的地方，里面是糕点。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-01 08:00",
-    "last_seen": "2026-10-01 08:00",
+    "last_seen": "2026-11-25 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-01"
+      "2026-10-01",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
-      "2026-10-01 08:00"
+      "2026-10-01 08:00",
+      "2026-11-25 18:00"
     ]
   },
   {
@@ -19985,23 +19995,25 @@ window.DAILY_VOCAB_DB = [
     "en": "compare",
     "root": "banding",
     "root_cn": "比较；对比",
-    "example": "Coba bandingkan harga dua laptop itu sebelum memilih.",
-    "example_cn": "选之前先比较一下那两台笔记本的价格。",
+    "example": "Coba bandingkan dulu ongkir reguler dan kilat. Kalau cuma mau ngepasin sampainya hari Sabtu, reguler mungkin sudah cukup.",
+    "example_cn": "先比一比普通件和特快的运费。如果只是想让它刚好星期六到，普通件可能就够了。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-08 18:00",
-    "last_seen": "2026-10-08 18:00",
+    "last_seen": "2026-11-25 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
-      "2026-10-08 18:00"
+      "2026-10-08 18:00",
+      "2026-11-25 18:00"
     ]
   },
   {
@@ -21544,23 +21556,27 @@ window.DAILY_VOCAB_DB = [
     "en": "location; position",
     "root": "letak",
     "root_cn": "位置",
-    "example": "Letak kantor kami cukup dekat dengan stasiun.",
-    "example_cn": "我们办公室的位置离车站相当近。",
+    "example": "Aku belum sepenuhnya hafal letak rumah baru Ibu, soalnya mereka baru pindah tahun lalu.",
+    "example_cn": "我还没完全记住妈妈新家的位置，因为他们去年才搬过去。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-13 08:00",
-    "last_seen": "2026-10-13 08:00",
+    "last_seen": "2026-11-25 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-13"
+      "2026-10-13",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
-      "2026-10-13 08:00"
+      "2026-10-13 08:00",
+      "2026-11-25 18:00"
     ]
   },
   {
@@ -24683,16 +24699,16 @@ window.DAILY_VOCAB_DB = [
     "en": "valid until",
     "root": "laku",
     "root_cn": "有效；畅销",
-    "example": "Tiketnya berlaku sampai jam sembilan malam. Kamu nggak perlu mencetak tiketnya, cukup tunjukin kode QR di HP.",
-    "example_cn": "这张票晚上九点前有效。你不用打印票，在手机上出示二维码就行。（nggak = tidak，tunjukin = tunjukkan）",
+    "example": "Voucher diskon ongkir ini berlaku sampai hari Minggu, jadi jangan ditunda-tunda.",
+    "example_cn": "这张运费优惠券有效期到星期天，所以别拖。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-10-22 08:00",
-    "last_seen": "2026-11-17 08:00",
+    "last_seen": "2026-11-25 18:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -24700,13 +24716,15 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-10-22",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-25"
     ],
     "lesson_occurrences": [
       "2026-10-22 08:00",
       "2026-10-22 18:00",
       "2026-11-16 18:00",
-      "2026-11-17 08:00"
+      "2026-11-17 08:00",
+      "2026-11-25 18:00"
     ]
   },
   {
@@ -34198,6 +34216,56 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-25 08:00"
+    ]
+  },
+  {
+    "word": "pengirim",
+    "cn": "寄件人；发送者",
+    "en": "sender",
+    "root": "kirim",
+    "root_cn": "寄；送",
+    "example": "Jangan lupa tulis nomor HP pengirim, biar petugas bisa menghubungi Bapak kalau ada masalah.",
+    "example_cn": "别忘了写寄件人的手机号，这样有问题时工作人员能联系到您。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-25 18:00",
+    "last_seen": "2026-11-25 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-25"
+    ],
+    "lesson_occurrences": [
+      "2026-11-25 18:00"
+    ]
+  },
+  {
+    "word": "kode pos",
+    "cn": "邮政编码；邮编",
+    "en": "postal code; ZIP code",
+    "root": "kode + pos",
+    "root_cn": "kode：代码；pos：邮政",
+    "example": "Kode pos di Indonesia terdiri dari lima angka, jadi coba cek lagi kalau cuma ada empat.",
+    "example_cn": "印尼的邮编是五位数，所以如果只有四位，再查一下。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-25 18:00",
+    "last_seen": "2026-11-25 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-25"
+    ],
+    "lesson_occurrences": [
+      "2026-11-25 18:00"
     ]
   }
 ];
