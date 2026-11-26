@@ -1,0 +1,373 @@
+{
+  "date": "2026-11-26",
+  "session": "pm",
+  "time": "18:00",
+  "day": 97,
+  "title": "18:00 晚课｜Kotaknya Penyok, Boleh Dibuka Dulu? · 盒子压瘪了，能先拆开看吗？",
+  "write_status": "lesson_complete",
+  "phase": {
+    "theme_id": "logistics",
+    "day_role": "variation"
+  },
+  "new_words": [
+    "penyok",
+    "cabang"
+  ],
+  "vocab": [
+    {
+      "word": "penyok",
+      "display": "penyok",
+      "audio_text": "penyok",
+      "cn": "压瘪；凹陷（硬的东西被压、被撞后凹进去）",
+      "en": "dented",
+      "root": "penyok",
+      "root_cn": "凹陷；瘪",
+      "formation": "词根本身就是形容词，不加词缀直接用。常见搭配：kotaknya penyok（盒子压瘪了）、penyok sedikit / penyok parah（瘪了一点／瘪得很厉害）、penyok di satu sudut（一个角瘪了）、mobilnya penyok kena tabrak（车被撞瘪了）、kalengnya penyok（罐头瘪了）。",
+      "example": "Kotak paketnya penyok di satu sudut, tapi untungnya isinya nggak apa-apa.",
+      "example_cn": "包裹的盒子一个角压瘪了，不过幸好里面的东西没事。",
+      "synonym_note": "penyok、pecah、lecet、kempis 别混：penyok 是硬的东西（纸盒、铁罐、车门）被压凹进去，形状变了但没碎；pecah 是碎了、裂了（keramiknya pecah 陶瓷碎了）；lecet 是表面刮花、蹭掉一层（layarnya lecet 屏幕刮花了）；kempis 是有气的东西瘪了（bannya kempis 轮胎没气了）。签收时说 Kotaknya penyok, tapi isinya aman，意思是“外面瘪了，里面没坏”。口语说法：日常就说 penyok。",
+      "usage_note": "今晚新学（本周物流主题词）。Rina 在网点拿到包裹，发现盒子一个角压瘪了，里面装的是陶瓷摆件。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "cabang",
+      "display": "cabang",
+      "audio_text": "cabang",
+      "cn": "网点；分店；分公司",
+      "en": "branch (office)",
+      "root": "cabang",
+      "root_cn": "树枝；分支",
+      "formation": "词根本身是名词，原义是“树枝”（cabang pohon），引申为公司、银行、快递的“分支机构”。常见搭配：cabang terdekat（最近的网点）、ambil di cabang（去网点取）、kantor cabang（分公司、分行，较正式）、kantor pusat（总部，和 cabang 相对）、buka cabang baru（开新分店）。派生：bercabang（分岔：jalannya bercabang 路分岔了）。",
+      "example": "Kalau nggak ada orang di rumah, paketnya dibawa balik ke cabang terdekat, jadi bisa diambil sendiri.",
+      "example_cn": "如果家里没人，包裹会被带回最近的网点，可以自己去取。",
+      "synonym_note": "cabang 和 kantor pusat 相对：cabang 是分店、网点，kantor pusat 是总部（keluhan diteruskan ke kantor pusat 投诉转给总部）。和 agen 不同：agen 多是个人或小店代理的代收点（像早课辛塔姐的代收点），cabang 是公司自己开的网点。口语说法：日常就说 cabang。",
+      "everyday": "日常多说 cabang（Ambil di cabang aja）；招牌、正式通知上常写 kantor cabang",
+      "usage_note": "今晚新学（本周物流主题词）。快递员没送成，包裹被退回到 Rina 家附近的网点，她只好自己去取。",
+      "source_group": "new",
+      "is_new": true,
+      "is_oral_new": false
+    },
+    {
+      "word": "menyampaikan",
+      "display": "menyampaikan",
+      "audio_text": "menyampaikan",
+      "cn": "传达；转达；提出（意见、投诉）",
+      "en": "to convey; to pass on",
+      "root": "sampai",
+      "root_cn": "到达",
+      "formation": "meN- + sampai + -kan → menyampaikan（s 开头，s 脱落变 meny-），字面是“使（话）到达对方”。被动 disampaikan，命令式 sampaikan。常见搭配：menyampaikan keluhan（提出投诉）、menyampaikan pesan（转达口信）、menyampaikan salam（代为问候）、tolong sampaikan ke …（请转告……）、seperti yang sudah disampaikan（如前所述）。",
+      "example": "Nanti tolong sampaikan salam saya ke pasangan pengantin, ya, soalnya saya nggak bisa datang ke nikahannya.",
+      "example_cn": "到时候请替我向新郎新娘问好，因为我去不了婚礼。",
+      "synonym_note": "menyampaikan、bilang、memberi tahu：menyampaikan 重在“把话、意见、问候传到对方那里”，常用于投诉、会议、客服和替别人转话；memberi tahu（口语 kasih tahu）是“告诉、通知”某件事；bilang 是最随意的“说”。投诉时说 menyampaikan keluhan，比 bilang keluhan 自然得多。口语说法：sampein（Nanti aku sampein ke dia）。",
+      "everyday": "朋友之间多说 bilangin / sampein（Nanti aku sampein, ya）；menyampaikan 用在客服、投诉、会议等正式一点的场合",
+      "usage_note": "此前学过的词。网点工作人员告诉 Rina，签收后还可以在应用里提出投诉（menyampaikan keluhan）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "nyimak",
+      "display": "nyimak",
+      "audio_text": "nyimak",
+      "cn": "认真听；专心听着（口语）",
+      "en": "to listen closely; to pay attention",
+      "root": "simak",
+      "root_cn": "仔细听；留意",
+      "formation": "口语 N- + simak → nyimak（s 变 ny-），标准形 menyimak（meN- + simak），被动 disimak。常见搭配：nyimak baik-baik（好好听）、kurang nyimak（没太注意听）、lagi nyimak（正在认真听）、mohon disimak（请注意听／请留意，常见于广播、说明）。",
+      "example": "Semua orang nyimak baik-baik waktu bos ngomong soal karyawan yang dipecat bulan lalu.",
+      "example_cn": "老板说起上个月被开除的员工时，大家都听得很认真。",
+      "synonym_note": "nyimak、dengerin（标准 mendengarkan）、denger（标准 mendengar）：denger 只是“听到”，不一定在意；dengerin 是“去听”；nyimak 更进一步，是“专心听、跟着听懂内容”。所以没听清别人说什么时，说 Maaf, tadi saya kurang nyimak 很自然，意思是“刚才我没认真听”。口语说法：nyimak 本身就是口语；正式场合说 menyimak，广播里常听到 Mohon disimak。",
+      "usage_note": "此前学过的弱项词。Rina 看到盒子瘪了心里慌，没听清工作人员的办法，就说 tadi saya kurang nyimak，再确认一遍。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berjanji",
+      "display": "berjanji",
+      "audio_text": "berjanji",
+      "cn": "答应；承诺",
+      "en": "to promise",
+      "root": "janji",
+      "root_cn": "约定；承诺",
+      "formation": "ber- + janji → berjanji（作出承诺）。常见搭配：berjanji akan …（答应会……）、berjanji pada / sama …（向……保证）、sudah janji（口语：已经答应了）、menepati janji（守约）、ingkar janji（失约、食言）。同词根：janjian（约好见面）、perjanjian（协议、合同）。",
+      "example": "Adikku sudah berjanji nggak bakal kabur lagi waktu disuruh cuci piring.",
+      "example_cn": "我弟弟已经保证，以后叫他洗碗时不会再溜走了。",
+      "synonym_note": "berjanji 和 janjian 别混：berjanji 是“承诺、保证会做某事”（Kurirnya berjanji antar lagi）；janjian 是“约好见面”（Aku janjian sama dia jam tujuh）。承诺之后做到了说 menepati janji，没做到说 ingkar janji 或口语 nggak nepatin janji。口语说法：janji（Dia udah janji mau datang），比 berjanji 更常说。",
+      "usage_note": "此前学过的弱项词。昨天快递员答应今天再送一次，Rina 特意早下班，结果包裹却被退回了网点。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "minat",
+      "display": "minat",
+      "audio_text": "minat",
+      "cn": "兴趣；意愿（想不想做、想不想要）",
+      "en": "interest",
+      "root": "minat",
+      "root_cn": "兴趣；意愿",
+      "formation": "词根本身是名词。派生：berminat（有兴趣、想要：Kalau berminat, silakan hubungi kami）、peminat（感兴趣的人；报名、想买的人）、diminati（受欢迎、很多人想要）。常见搭配：minat baca（阅读兴趣）、minat pada / terhadap …（对……的兴趣）、sesuai minat（按照兴趣）、kurang minat（兴趣不大）；口语里 minat 也直接当动词用：nggak minat（不感兴趣、不想要）。",
+      "example": "Anakku nggak terlalu minat sama senam, dia lebih suka main bola.",
+      "example_cn": "我孩子对体操没什么兴趣，他更喜欢踢球。（sama = dengan / pada）",
+      "synonym_note": "minat、tertarik、hobi：tertarik 是“被吸引、感兴趣”（Saya tertarik dengan tawarannya），最常用；minat 偏“想不想要、有没有意愿”，口语 nggak minat 常用来客气地拒绝推销；hobi 是具体的爱好（Hobinya masak）。正式场合问“有兴趣吗”多说 Apakah Bapak berminat …?。口语说法：nggak minat（不感兴趣）。",
+      "usage_note": "最近常错的词。Rina 说，她本来不想加保价（nggak minat pakai asuransi），因为要多花钱。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mahir",
+      "display": "mahir",
+      "audio_text": "mahir",
+      "cn": "熟练的；精通的（练出来的本事）",
+      "en": "skilled; proficient",
+      "root": "mahir",
+      "root_cn": "熟练；精于",
+      "formation": "词根本身是形容词。派生：kemahiran（熟练程度、技能：kemahiran berbahasa 语言能力）。常见搭配：mahir + 动词（mahir menyetir 开车很熟练）、mahir dalam …（精通……）、mahir berbahasa Inggris（英语很熟练）、sudah mahir（已经熟练了）、belum mahir（还不熟练）。",
+      "example": "Sejak SMP dia sudah mahir bikin kuah soto sendiri, nggak perlu lihat resep lagi.",
+      "example_cn": "他从初中起就能熟练地自己做索多汤的汤底，不用再看菜谱。（bikin = membuat）",
+      "synonym_note": "mahir、pintar、jago：pintar 偏“聪明、学得好”（anak yang pintar）；mahir 强调“练得熟、手上的本事”，常见于技能、语言、工作；jago 是口语，意思和 mahir 接近，还带“很厉害”的语气（Dia jago masak）。正式介绍、简历里说 mahir，朋友聊天多说 jago。口语说法：jago（Bapak itu jago banget urusan paket）。",
+      "everyday": "聊天多说 jago（Dia jago banget）；mahir 多用在简历、介绍、比较正式的场合",
+      "usage_note": "最近常错的词。网点的工作人员说，处理压瘪的包裹他早就熟练了（sudah mahir）。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berusaha",
+      "display": "berusaha",
+      "audio_text": "berusaha",
+      "cn": "努力；设法",
+      "en": "to try hard; to make an effort",
+      "root": "usaha",
+      "root_cn": "努力；生意",
+      "formation": "ber- + usaha → berusaha（下功夫、想办法去做）。后面常直接接动词：berusaha menghubungi（设法联系）、berusaha tetap tenang（尽量保持冷静）、sudah berusaha（已经尽力了）、berusaha sebaik mungkin（尽最大努力）。usaha 单用还能指“生意、小买卖”（usaha kecil 小生意）。",
+      "example": "Kalau cuma marah-marah, nggak akan menghasilkan apa-apa. Lebih baik berusaha cari jalan tengah.",
+      "example_cn": "光发火什么用也没有，不如想办法找个折中的办法。",
+      "synonym_note": "berusaha 和 mencoba（口语 nyoba）：mencoba 是“试一试”，一次尝试也算；berusaha 强调“花了力气、想尽办法”。Kurirnya sudah mencoba menelepon 只是说打过电话，Kurirnya sudah berusaha menelepon 听起来是“他真的尽力联系了”。口语说法：日常也常说 usaha（Udah usaha, tapi nggak bisa），随口说“试试”用 nyoba。",
+      "usage_note": "此前学过的词，今晚换到取件场景里用：工作人员替快递员解释，他已经设法打了两次电话。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "title": "Kado di Cabang Jalur Express · 在网点取的结婚礼物",
+    "text": "Kamis siang, Rina pulang kerja lebih cepat karena menunggu paket penting. Isinya patung keramik pasangan pengantin yang saling memeluk. Rina sudah lama mengincar patung itu sebagai kado untuk pernikahan sahabatnya hari Sabtu. Kemarin kurir datang waktu Rina masih di kantor, lalu berjanji akan mengantar lagi hari ini. Tetapi sore itu status di aplikasi berubah: paket dikembalikan ke cabang Jalur Express dekat rumahnya. Rina langsung pergi ke sana. Seorang petugas separuh baya mengambil paketnya dari rak. Rina kaget. Satu sudut kotaknya penyok, dan tulisan \"PECAH BELAH\" di atasnya sudah pudar. Dia ingin membuka paket itu sebelum tanda tangan, tetapi menurut petugas, aturannya tidak begitu. Setelah berbicara sebentar, mereka menemukan jalan tengah.",
+    "cn": "星期四中午，Rina 提前下班，因为她在等一个重要的包裹。里面是一对新人相拥的陶瓷摆件。Rina 看中这个摆件很久了，打算当作好朋友星期六婚礼的贺礼。昨天快递员来的时候 Rina 还在公司，快递员答应今天再送一次。可是那天下午，应用里的状态变了：包裹被退回了她家附近的 Jalur Express 网点。Rina 马上赶了过去。一位中年工作人员从货架上取下她的包裹。Rina 吓了一跳：盒子一个角压瘪了，上面“易碎品”的字样也已经褪色。她想在签收之前先打开包裹，可工作人员说规定不是这样的。两人谈了一会儿，终于找到了一个折中的办法。"
+  },
+  "dialogue": {
+    "title": "取件：盒子压瘪了，能先拆开看吗？",
+    "twist": 4,
+    "lines": [
+      {
+        "speaker": "Pak Darto",
+        "id": "Sore, Mbak. Mau ambil paket, ya? Boleh lihat nomor paketnya?",
+        "cn": "下午好。来取包裹的吧？能看一下包裹单号吗？"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Ini, Pak. Kemarin kurirnya datang pas saya masih di kantor. Dia janji antar lagi hari ini, makanya saya pulang cepat. Eh, tiba-tiba di aplikasi paketnya balik ke cabang sini.",
+        "cn": "给您。昨天快递员来的时候我还在公司。他答应今天再送，所以我才提前回家。结果应用里突然显示包裹退回到你们网点了。（pas = waktu，janji = berjanji）"
+      },
+      {
+        "speaker": "Pak Darto",
+        "id": "Iya, Mbak. Kurirnya sudah berusaha nelepon dua kali, tapi nggak diangkat. Katanya dia juga sempat nyasar di putaran depan kompleks.",
+        "cn": "是的。快递员已经设法打了两次电话，可是没人接。他说还在小区门口的掉头处绕错了路。（nelepon = menelepon，nggak = tidak，nyasar = tersesat）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Waduh, maaf, HP saya di tas. Lho, Pak, kotaknya kok penyok begini? Isinya patung keramik. Boleh saya cek dulu isinya sebelum tanda tangan?",
+        "cn": "哎呀，不好意思，我手机放在包里了。咦，盒子怎么瘪成这样？里面是陶瓷摆件。我可以签收前先检查一下里面的东西吗？"
+      },
+      {
+        "speaker": "Pak Darto",
+        "id": "Maaf, Mbak, nggak bisa. Aturannya berlaku untuk semua paket: tanda tangan dulu, baru boleh dibuka.",
+        "cn": "不好意思，不行。这个规定对所有包裹都适用：先签收，才能拆。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Tapi kalau saya sudah tanda tangan, nanti dianggap paketnya diterima dalam kondisi baik, Pak. Kalau patungnya pecah, saya harus klaim ke siapa?",
+        "cn": "可是我一签字，就等于包裹是完好签收的。要是摆件碎了，我该找谁索赔？"
+      },
+      {
+        "speaker": "Pak Darto",
+        "id": "Saya ngerti, Mbak. Setelah tanda tangan, Mbak masih bisa menyampaikan keluhan lewat aplikasi, nanti dicek sama kantor pusat.",
+        "cn": "我明白。签收以后，您还可以在应用里提出投诉，总部会来核查。（ngerti = mengerti，sama = oleh）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Lewat aplikasi bisa lama, Pak. Sabtu ini kado nikahan sahabat saya. Mohon dibantu, ya, Pak, saya cuma mau tahu patungnya aman atau nggak.",
+        "cn": "走应用可能要很久。这个星期六就是我好朋友的婚礼，这是贺礼。麻烦您帮帮忙，我只是想知道摆件有没有事。（nikahan = pernikahan，cuma = hanya）"
+      },
+      {
+        "speaker": "Pak Darto",
+        "id": "Ya sudah, begini aja, Mbak. Buka di sini, di depan saya, sambil direkam videonya dari awal. Kalau ada yang pecah, videonya jadi bukti dan kita catat di formulir.",
+        "cn": "那好吧，这样：就在这儿、当着我的面拆，从头开始录视频。要是有东西碎了，视频就是证据，我们把情况记在表格上。（aja = saja）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Maaf, Pak, tadi saya kurang nyimak, soalnya panik. Jadi saya boleh buka di sini asal direkam, betul?",
+        "cn": "不好意思，刚才我太慌了，没认真听。所以只要录视频，我就可以在这儿拆，对吗？（soalnya = karena）"
+      },
+      {
+        "speaker": "Pak Darto",
+        "id": "Betul, Mbak. Silakan, saya pegang kotaknya, Mbak yang rekam. Tenang, saya sudah mahir urusan paket penyok begini.",
+        "cn": "对。请吧，我扶着盒子，您来录。放心，处理这种压瘪的包裹我已经很熟练了。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Syukurlah, patungnya utuh! Makasih banyak, Pak. Tadinya saya nggak minat pakai asuransi, soalnya nambah biaya. Lain kali pasti saya pakai.",
+        "cn": "谢天谢地，摆件完好无损！太感谢了。我本来不想加保价，因为要多花钱。下次一定加。（makasih = terima kasih，nambah = menambah）"
+      }
+    ],
+    "practice": {
+      "role": "Rina",
+      "lines": [
+        {
+          "speaker": "Pak Darto",
+          "id": "Paketnya sudah balik ke cabang, Mbak.",
+          "cn": "包裹已经退回网点了。"
+        },
+        {
+          "speaker": "Rina",
+          "id": "Lho, kotaknya penyok. Boleh saya cek dulu isinya?",
+          "cn": "咦，盒子瘪了。我可以先检查一下里面的东西吗？"
+        },
+        {
+          "speaker": "Pak Darto",
+          "id": "Maaf, aturannya berlaku untuk semua paket.",
+          "cn": "不好意思，规定对所有包裹都适用。"
+        },
+        {
+          "speaker": "Rina",
+          "id": "Kalau patungnya pecah, saya klaim ke siapa, Pak?",
+          "cn": "要是摆件碎了，我找谁索赔？"
+        },
+        {
+          "speaker": "Pak Darto",
+          "id": "Buka di sini aja, sambil direkam videonya.",
+          "cn": "就在这儿拆吧，边拆边录视频。"
+        },
+        {
+          "speaker": "Rina",
+          "id": "Jadi asal direkam, saya boleh buka, betul?",
+          "cn": "所以只要录视频，我就可以拆，对吗？"
+        }
+      ]
+    }
+  },
+  "rewrite": [
+    {
+      "kind": "twist",
+      "task": "转折应对：假如 Pak Darto 说网点不允许当场拆箱，录视频也不行。你是 Rina：先表示理解规定对所有包裹都适用；再用 Jadi …, betul? 确认签收以后还能在应用里投诉；然后用 Mohon dibantu …, ya. 请他在签收单上写明盒子压瘪了；最后说明你想先给这个盒子拍照留证据。尽量用上 berlaku、menyampaikan、penyok、cabang。",
+      "frame": "Saya ngerti, Pak, aturannya berlaku …… . Jadi kalau saya tanda tangan sekarang, saya masih bisa …… lewat aplikasi, betul? Mohon dibantu tulis …… di formulir, ya, Pak. Saya mau foto …… dulu sebelum keluar dari cabang.",
+      "reference_answer": "Saya ngerti, Pak, aturannya berlaku untuk semua paket. Jadi kalau saya tanda tangan sekarang, saya masih bisa menyampaikan keluhan lewat aplikasi, betul? Mohon dibantu tulis \"kotak penyok\" di formulir, ya, Pak. Saya mau foto kotak yang penyok ini dulu sebelum keluar dari cabang.",
+      "reference_cn": "我明白，规定对所有包裹都适用。所以如果我现在签收，还是可以在应用里投诉的，对吗？麻烦您在表格上写一下“盒子压瘪”。离开网点之前，我想先给这个压瘪的盒子拍张照。"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "Rina 拆开包裹后给好朋友发消息：“Tenang, patungnya utuh kok. Cuma sudut kotaknya ____ sedikit, kayaknya ketindih barang lain.” 哪项最自然？",
+        "options": [
+          "pecah",
+          "kempis",
+          "penyok",
+          "pudar"
+        ],
+        "answer_index": 2,
+        "answer": "penyok",
+        "explain": "纸盒被别的东西压到、一个角凹进去，说 penyok。pecah 是碎了、裂了，前面刚说摆件完好，而且纸盒也不说 pecah；kempis 是有气的东西瘪了（轮胎、气球）；pudar 是颜色、字迹褪色，和“被压”对不上。"
+      },
+      {
+        "type": "choice",
+        "prompt": "工作人员不让 Rina 先拆箱，他解释说：“Maaf, Mbak, aturan ini ____ untuk semua paket, bukan cuma punya Mbak.” 哪项最自然？",
+        "options": [
+          "laku",
+          "berlaku",
+          "melakukan",
+          "kelakuan"
+        ],
+        "answer_index": 1,
+        "answer": "berlaku",
+        "explain": "说规定“适用于”谁，用 berlaku untuk …。laku 是“卖得出去、受欢迎”（Patung ini laku banget）；melakukan 是“做、进行”，后面要接具体的事；kelakuan 是名词“行为、举止”，放在这里句子不通。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Pak Darto 说了一长串办法，可 Rina 正盯着瘪掉的盒子发慌，一句也没听进去。她想请对方再说一遍，哪句最自然？",
+        "options": [
+          "Maaf, Pak, tadi Bapak kurang nyimak. Bisa diulang?",
+          "Maaf, Pak, tadi saya kurang menyampaikan. Bisa diulang?",
+          "Maaf, Pak, tadi saya kurang berusaha. Bisa diulang?",
+          "Maaf, Pak, tadi saya kurang nyimak. Bisa diulang?"
+        ],
+        "answer_index": 3,
+        "answer": "Maaf, Pak, tadi saya kurang nyimak. Bisa diulang?",
+        "explain": "没认真听的是 Rina 自己，所以说 saya kurang nyimak（我刚才没认真听）。A 把主语换成了对方，变成在怪工作人员；B 的 menyampaikan 是“传达、表达”，是说话人做的事，不能用来表示“没听进去”；C 的 berusaha 是“努力、设法”，saya kurang berusaha 意思成了“我不够努力”，和没听清无关。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kalau nggak ada orang di rumah, paketnya bisa diambil di ____ terdekat.（网点）",
+        "answer": "cabang",
+        "explain": "快递公司的网点、分店是 cabang，最近的网点说 cabang terdekat。比较正式的说法是 kantor cabang，和总部 kantor pusat 相对。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kemarin kurirnya sudah ____ akan datang lagi hari ini.（答应、承诺）",
+        "answer": "berjanji",
+        "explain": "答应会做某事用 berjanji akan …，口语常省成 janji（Dia udah janji mau datang）。别和 janjian（约好见面）混。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：我想在应用里反映这个问题。",
+        "tokens": [
+          "Saya",
+          "mau",
+          "menyampaikan",
+          "masalah",
+          "ini",
+          "lewat",
+          "aplikasi."
+        ],
+        "answer": "Saya mau menyampaikan masalah ini lewat aplikasi.",
+        "answer_cn": "我想在应用里反映这个问题。",
+        "explain": "主语 Saya + mau（想）+ 动词 menyampaikan + 宾语 masalah ini + 途径 lewat aplikasi（通过应用）。投诉、反映问题用 menyampaikan 很自然，口语也可以说 Saya mau sampein masalah ini lewat aplikasi。"
+      }
+    ]
+  },
+  "review": {
+    "title": "可选 · 30 秒复述",
+    "steps": [
+      "用 cabang、penyok、berlaku、berusaha 说说 Rina 去网点取包裹时遇到了什么问题、最后怎么解决的。"
+    ],
+    "retell_reference": "Kurirnya sudah berusaha menelepon Rina, tapi nggak diangkat, jadi paketnya dibawa balik ke cabang. Di cabang, Rina lihat kotaknya penyok, padahal isinya patung keramik untuk kado nikahan sahabatnya. Petugas bilang aturannya berlaku untuk semua paket: tanda tangan dulu, baru boleh dibuka. Akhirnya Rina boleh membuka paket di depan petugas sambil direkam, dan patungnya ternyata utuh.",
+    "retell_reference_cn": "快递员已经设法给 Rina 打过电话，可是没人接，所以包裹被带回了网点。在网点，Rina 看到盒子压瘪了，而里面是送好朋友的结婚贺礼——陶瓷摆件。工作人员说规定对所有包裹都适用：先签收，才能拆。最后 Rina 获准当着工作人员的面边录视频边拆，摆件原来完好无损。"
+  },
+  "lesson_focus": {
+    "words": [
+      "penyok",
+      "cabang",
+      "menyampaikan"
+    ],
+    "patterns": [
+      {
+        "pattern": "Boleh saya cek dulu …?",
+        "cn": "我可以先核对（检查）一下……吗？（确认信息）",
+        "function": "confirm-info",
+        "example": "Boleh saya cek dulu isinya sebelum tanda tangan?",
+        "example_cn": "我可以签收前先检查一下里面的东西吗？"
+      },
+      {
+        "pattern": "… dulu, baru …",
+        "cn": "先……，才（再）……",
+        "example": "tanda tangan dulu, baru boleh dibuka.",
+        "example_cn": "先签收，才能拆。"
+      }
+    ]
+  }
+}
