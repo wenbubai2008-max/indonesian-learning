@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-26",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 97
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-25T10:55:44.603Z",
-    "lesson_watermark": "2026-11-25 18:00",
-    "index_updated": "2026-11-25",
-    "runtime_hash": "8b65bc7e3a848fa69c48a75a91054a2c9a5608f6fbf17a23b69df4b48b110fe9",
-    "index_hash": "358a7bb8183645810cbbfe01130dc30a51f14f2784762bdea89e0f70bccec8ee",
+    "runtime_generated_at": "2026-11-26T00:31:59.802Z",
+    "lesson_watermark": "2026-11-26 08:00",
+    "index_updated": "2026-11-26",
+    "runtime_hash": "b1ab364363a9c914160689f9d7ee9e11e5147cbcd9ad906afff704b87504b3c8",
+    "index_hash": "c8dedd1743a1a0d3d471d04a171782da86855812757e103952469f832326f36f",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -50,15 +50,16 @@
   "candidates": {
     "new_dont": [
       [
-        "garansi",
-        "保修"
-      ],
-      [
-        "stok habis",
-        "缺货；卖完了"
+        "penyok",
+        "压瘪；凹陷"
       ]
     ],
-    "new_fuzzy": [],
+    "new_fuzzy": [
+      [
+        "cabang",
+        "网点；分店；分公司"
+      ]
+    ],
     "review": [
       [
         "berlaku sampai",
@@ -699,16 +700,6 @@
         "泥土；土地",
         "tanah",
         "泥土；土地"
-      ],
-      [
-        "mengaku",
-        3,
-        0,
-        "",
-        "2026-11-18T07:07:31.647Z",
-        "承认；自称",
-        "aku",
-        "我；自我"
       ],
       [
         "pusat",
@@ -1901,16 +1892,6 @@
         "平常的；普通的"
       ],
       [
-        "menyediakan",
-        2,
-        1,
-        "2026-10-15T08:17:21.463Z",
-        "2026-10-28T03:33:44.841Z",
-        "提供；准备好（供人使用）",
-        "sedia",
-        "准备好的；有的"
-      ],
-      [
         "penelitian",
         2,
         0,
@@ -2059,16 +2040,6 @@
         "因此；这样一来",
         "demikian",
         "如此；这样"
-      ],
-      [
-        "menyiapkan",
-        2,
-        1,
-        "2026-10-15T13:40:34.757Z",
-        "2026-10-29T03:53:53.751Z",
-        "准备好某物",
-        "siap",
-        "准备好；就绪"
       ],
       [
         "berjanji",
@@ -2231,16 +2202,6 @@
         ""
       ],
       [
-        "nyari",
-        3,
-        0,
-        "",
-        "2026-11-15T03:30:07.572Z",
-        "找、寻找",
-        "cari",
-        ""
-      ],
-      [
         "deras",
         2,
         0,
@@ -2261,14 +2222,44 @@
         "申请；求职；求婚"
       ],
       [
-        "ongkir",
+        "tuntas",
         2,
         0,
         "",
+        "2026-10-26T07:53:53.366Z",
+        "彻底完成；解决完",
+        "tuntas",
+        "彻底完成"
+      ],
+      [
+        "kecuali",
+        3,
+        0,
         "",
-        "运费（寄东西的费用）",
-        "kirim",
-        "寄；发送"
+        "2026-10-26T07:53:30.628Z",
+        "除了……以外（不包括）；除非",
+        "kecuali",
+        "除外"
+      ],
+      [
+        "mager",
+        3,
+        0,
+        "",
+        "2026-11-15T03:32:42.478Z",
+        "懒得动、不想动",
+        "malas gerak",
+        "懒＋动"
+      ],
+      [
+        "mengingat",
+        3,
+        0,
+        "",
+        "2026-10-26T07:53:42.369Z",
+        "记住；想起；考虑到",
+        "ingat",
+        "记得、想起"
       ],
       [
         "resi",
@@ -2361,6 +2352,26 @@
         "kode：代码；pos：邮政"
       ],
       [
+        "garansi",
+        2,
+        0,
+        "",
+        "",
+        "保修；（服务的）保证、保障",
+        "garansi",
+        "保证（外来词）"
+      ],
+      [
+        "ongkir",
+        2,
+        0,
+        "",
+        "",
+        "运费（寄东西的费用）",
+        "kirim",
+        "寄；发送"
+      ],
+      [
         "pengirim",
         2,
         0,
@@ -2369,6 +2380,46 @@
         "寄件人；发送者",
         "kirim",
         "寄；送"
+      ],
+      [
+        "stok habis",
+        2,
+        0,
+        "",
+        "",
+        "缺货；卖完了",
+        "habis",
+        "完；用尽"
+      ],
+      [
+        "menyediakan",
+        2,
+        1,
+        "2026-10-15T08:17:21.463Z",
+        "2026-10-28T03:33:44.841Z",
+        "提供；准备好（供人使用）",
+        "sedia",
+        "准备好的；有的"
+      ],
+      [
+        "menyiapkan",
+        2,
+        1,
+        "2026-10-15T13:40:34.757Z",
+        "2026-10-29T03:53:53.751Z",
+        "准备好某物",
+        "siap",
+        "准备好；就绪"
+      ],
+      [
+        "mengaku",
+        3,
+        0,
+        "",
+        "2026-11-18T07:07:31.647Z",
+        "承认；自称",
+        "aku",
+        "我；自我"
       ]
     ],
     "focus": [
@@ -2840,6 +2891,21 @@
         "pengirim",
         "kode pos"
       ]
+    },
+    {
+      "date": "2026-11-26",
+      "session": "am",
+      "review_core": [
+        "ongkir",
+        "pengirim",
+        "penanganan",
+        "kalah",
+        "nyari"
+      ],
+      "new_words": [
+        "garansi",
+        "stok habis"
+      ]
     }
   ],
   "previous_pm": {
@@ -2856,7 +2922,60 @@
       "nyusahin"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-26",
+    "vocab": [
+      [
+        "garansi",
+        "保修；（服务的）保证、保障",
+        "warranty; guarantee",
+        "garansi",
+        "保证（外来词）"
+      ],
+      [
+        "stok habis",
+        "缺货；卖完了",
+        "out of stock; sold out",
+        "habis",
+        "完；用尽"
+      ],
+      [
+        "menerapkan",
+        "实施；推行；应用（规则、方法）",
+        "to implement; to apply (a rule, system, method)",
+        "terap",
+        "应用（多见于派生词）"
+      ],
+      [
+        "menyediakan",
+        "提供；备好（供人使用）",
+        "to provide; to make available",
+        "sedia",
+        "备有；愿意"
+      ],
+      [
+        "menyiapkan",
+        "准备（好）某物",
+        "to prepare; to get (something) ready",
+        "siap",
+        "准备好的"
+      ],
+      [
+        "mengaku",
+        "承认；自称",
+        "to admit; to claim (to be)",
+        "aku",
+        "我；承认"
+      ]
+    ],
+    "review_vocab": [
+      "ongkir",
+      "pengirim",
+      "penanganan",
+      "kalah",
+      "nyari"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

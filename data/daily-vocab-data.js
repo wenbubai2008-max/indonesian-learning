@@ -1879,21 +1879,23 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "原始课程"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-10-13 08:00",
+    "last_seen": "2026-11-26 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-08-29",
-      "2026-10-13"
+      "2026-10-13",
+      "2026-11-26"
     ],
     "example": "Aku lagi nyari charger.",
     "example_cn": "我正在找充电器。",
     "lesson_occurrences": [
       "2026-08-29 08:00",
-      "2026-10-13 08:00"
+      "2026-10-13 08:00",
+      "2026-11-26 08:00"
     ]
   },
   {
@@ -3015,24 +3017,28 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "19:00",
       "原始课程",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-25 19:00",
-    "last_seen": "2026-10-11 18:00",
+    "last_seen": "2026-11-26 08:00",
     "sessions": [
       "19:00",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-08-25",
-      "2026-10-11"
+      "2026-10-11",
+      "2026-11-26"
     ],
-    "example": "Sebelum berangkat, ia menyiapkan payung dan jas hujan.",
-    "example_cn": "出发之前，他准备好了伞和雨衣。",
+    "example": "Sebelum tamu datang, Ibu sudah menyiapkan sayur asam dan ikan goreng.",
+    "example_cn": "客人来之前，妈妈已经准备好了酸菜汤和炸鱼。",
     "lesson_occurrences": [
       "2026-08-25 19:00",
-      "2026-10-11 18:00"
+      "2026-10-11 18:00",
+      "2026-11-26 08:00"
     ],
     "root_cn": "准备好；就绪"
   },
@@ -11334,23 +11340,27 @@ window.DAILY_VOCAB_DB = [
     "en": "admit; claim",
     "root": "aku",
     "root_cn": "我；自我",
-    "example": "Dia akhirnya mengaku kalau datanya belum lengkap.",
-    "example_cn": "他最后承认数据还不完整。",
+    "example": "Ada orang yang mengaku menemukan dompet saya, tapi dia minta transfer dulu. Jelas itu penipuan.",
+    "example_cn": "有人说捡到了我的钱包，可他要我先转账。这明显是骗局。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 18:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-11-26 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
-      "2026-09-16 18:00"
+      "2026-09-16 18:00",
+      "2026-11-26 08:00"
     ]
   },
   {
@@ -16515,20 +16525,22 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-30 08:00",
-    "last_seen": "2026-11-22 18:00",
+    "last_seen": "2026-11-26 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-30",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
       "2026-09-30 08:00",
-      "2026-11-22 18:00"
+      "2026-11-22 18:00",
+      "2026-11-26 08:00"
     ]
   },
   {
@@ -20473,24 +20485,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to provide; to make available",
     "root": "sedia",
     "root_cn": "准备好的；有的",
-    "example": "Hotel ini menyediakan sarapan gratis untuk semua tamu.",
-    "example_cn": "这家酒店为所有客人提供免费早餐。",
+    "example": "Agen Kilat menyediakan bubble wrap dan lakban gratis untuk semua pelanggan.",
+    "example_cn": "闪电快递代收点为所有顾客免费提供气泡膜和胶带。",
     "categories": [
       "每日学习",
       "08:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-10 08:00",
-    "last_seen": "2026-10-10 08:00",
+    "last_seen": "2026-11-26 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-10"
+      "2026-10-10",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
-      "2026-10-10 08:00"
+      "2026-10-10 08:00",
+      "2026-11-26 08:00"
     ]
   },
   {
@@ -21892,16 +21906,16 @@ window.DAILY_VOCAB_DB = [
     "en": "to apply; to implement",
     "root": "terap",
     "root_cn": "应用；实施（词根少单独使用）",
-    "example": "Setelah klinik itu menerapkan antrean online, tingkat keluhan pasien turun jauh.",
-    "example_cn": "那家诊所实行线上排队以后，病人的投诉率大大下降了。",
+    "example": "Sejak bulan ini, agen kami menerapkan aturan baru: barang pecah belah wajib dibungkus bubble wrap.",
+    "example_cn": "从这个月起，我们代收点推行一条新规定：易碎物品必须用气泡膜包好。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 4,
+    "times_seen": 5,
     "first_seen": "2026-10-14 08:00",
-    "last_seen": "2026-10-25 18:00",
+    "last_seen": "2026-11-26 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -21910,13 +21924,15 @@ window.DAILY_VOCAB_DB = [
       "2026-10-14",
       "2026-10-15",
       "2026-10-21",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
       "2026-10-14 08:00",
       "2026-10-15 08:00",
       "2026-10-21 18:00",
-      "2026-10-25 18:00"
+      "2026-10-25 18:00",
+      "2026-11-26 08:00"
     ]
   },
   {
@@ -22212,9 +22228,9 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 7,
+    "times_seen": 8,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-11-23 18:00",
+    "last_seen": "2026-11-26 08:00",
     "sessions": [
       "08:00",
       "18:00"
@@ -22226,7 +22242,8 @@ window.DAILY_VOCAB_DB = [
       "2026-11-14",
       "2026-11-15",
       "2026-11-16",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
       "2026-10-15 08:00",
@@ -22235,7 +22252,8 @@ window.DAILY_VOCAB_DB = [
       "2026-11-14 18:00",
       "2026-11-15 18:00",
       "2026-11-16 08:00",
-      "2026-11-23 18:00"
+      "2026-11-23 18:00",
+      "2026-11-26 08:00"
     ]
   },
   {
@@ -33949,17 +33967,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-23 08:00",
-    "last_seen": "2026-11-23 08:00",
+    "last_seen": "2026-11-26 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
-      "2026-11-23 08:00"
+      "2026-11-23 08:00",
+      "2026-11-26 08:00"
     ]
   },
   {
@@ -34228,19 +34248,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "别忘了写寄件人的手机号，这样有问题时工作人员能联系到您。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-25 18:00",
-    "last_seen": "2026-11-25 18:00",
+    "last_seen": "2026-11-26 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
-      "2026-11-25 18:00"
+      "2026-11-25 18:00",
+      "2026-11-26 08:00"
     ]
   },
   {
@@ -34266,6 +34290,56 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-25 18:00"
+    ]
+  },
+  {
+    "word": "garansi",
+    "cn": "保修；（服务的）保证、保障",
+    "en": "warranty; guarantee",
+    "root": "garansi",
+    "root_cn": "保证（外来词）",
+    "example": "AC ini ada garansi resmi satu tahun. Kalau pendinginannya bermasalah, bawa saja ke service center.",
+    "example_cn": "这台空调有一年官方保修。要是制冷出问题，直接拿去售后服务中心就行。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-26 08:00",
+    "last_seen": "2026-11-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-26"
+    ],
+    "lesson_occurrences": [
+      "2026-11-26 08:00"
+    ]
+  },
+  {
+    "word": "stok habis",
+    "cn": "缺货；卖完了",
+    "en": "out of stock; sold out",
+    "root": "habis",
+    "root_cn": "完；用尽",
+    "example": "Barang di lemari pajangan itu cuma contoh, Kak. Stoknya habis, minggu depan baru datang lagi.",
+    "example_cn": "展示柜里那件只是样品。货卖完了，下周才会再到。",
+    "categories": [
+      "每日学习",
+      "08:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-26 08:00",
+    "last_seen": "2026-11-26 08:00",
+    "sessions": [
+      "08:00"
+    ],
+    "dates": [
+      "2026-11-26"
+    ],
+    "lesson_occurrences": [
+      "2026-11-26 08:00"
     ]
   }
 ];
