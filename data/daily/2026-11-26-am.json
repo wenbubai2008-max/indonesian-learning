@@ -1,0 +1,293 @@
+{
+  "date": "2026-11-26",
+  "session": "am",
+  "time": "08:00",
+  "day": 97,
+  "title": "08:00 早课｜Garansi Ongkir dan Telepon Aneh · 运费保障和奇怪的来电",
+  "phase": {
+    "theme_id": "logistics",
+    "day_role": "variation"
+  },
+  "story": {
+    "series": "Agen Kilat Mbak Sinta · 辛塔姐的快递代收点",
+    "episode": 4,
+    "previously_cn": "上集：寄件单上的咖啡渍盖住了迪马斯的房间号，辛塔姐帮布罗丝阿姨更新了收件人信息；可到了晚上，运单状态却变成“正在退回寄件人”。",
+    "next_cn": "下集：这个自称闪电快递工作人员的人，到底是不是骗子？布罗丝阿姨的手指已经放在验证码上了……"
+  },
+  "vocab": [
+    {
+      "word": "garansi",
+      "display": "garansi",
+      "audio_text": "garansi",
+      "cn": "保修；（服务的）保证、保障",
+      "en": "warranty; guarantee",
+      "root": "garansi",
+      "root_cn": "保证（外来词）",
+      "formation": "外来词（来自荷兰语 garantie），本身就是词根，日常没有常用的词缀派生。最常用在买东西：masa garansi（保修期）、kartu garansi（保修卡）、garansi resmi（官方保修）、garansi toko（店保）、klaim garansi（申请保修、理赔）。服务承诺也用：garansi uang kembali（不满意退款）、garansi ongkir kembali（延误退运费）。",
+      "example": "AC ini ada garansi resmi satu tahun. Kalau pendinginannya bermasalah, bawa saja ke service center.",
+      "example_cn": "这台空调有一年官方保修。要是制冷出问题，直接拿去售后服务中心就行。",
+      "synonym_note": "garansi 是日常最常说的“保修、保证”；正式说法是 jaminan（jaminan uang kembali）。jaminan 意思更宽，还指“担保、保障、抵押”：jaminan kesehatan（医疗保障）、barang jaminan（抵押品），这些不能换成 garansi。问还在不在保修期：Masih garansi nggak?",
+      "everyday": "日常说 garansi（Masih garansi nggak?）；正式文件、合同常写 jaminan",
+      "is_oral_new": false
+    },
+    {
+      "word": "stok habis",
+      "display": "stok habis",
+      "audio_text": "stok habis",
+      "cn": "缺货；卖完了",
+      "en": "out of stock; sold out",
+      "root": "habis",
+      "root_cn": "完；用尽",
+      "formation": "stok（库存，来自英语 stock）+ habis（完了、没了）。常说 stoknya habis（货卖完了）、stok tinggal dua（只剩两件）、stoknya datang lagi / restock（补货了）。同词根 habis：kehabisan（某人或某店“没有……了”：Tokonya kehabisan stok）、menghabiskan（用完、花光：menghabiskan uang）。",
+      "example": "Barang di lemari pajangan itu cuma contoh, Kak. Stoknya habis, minggu depan baru datang lagi.",
+      "example_cn": "展示柜里那件只是样品。货卖完了，下周才会再到。",
+      "synonym_note": "stok habis 的主语是货：Stok kaosnya habis；kehabisan 的主语是人或店：Kami kehabisan stok（我们这边没货了）、Saya kehabisan tiket（我没抢到票）。网店也常说 sold out，或者说 stoknya lagi kosong（暂时缺货）。口语说法：udah abis（abis = habis）：Kak, yang merah udah abis.",
+      "everyday": "网店、聊天常说 stoknya habis / lagi kosong；正式公告写 persediaan habis",
+      "is_oral_new": false
+    },
+    {
+      "word": "menerapkan",
+      "display": "menerapkan",
+      "audio_text": "menerapkan",
+      "cn": "实施；推行；应用（规则、方法）",
+      "en": "to implement; to apply (a rule, system, method)",
+      "root": "terap",
+      "root_cn": "应用（多见于派生词）",
+      "formation": "meN- + terap + -kan → menerapkan（t 脱落，像 menulis）。同词根：diterapkan（被实行）、penerapan（实施：penerapan aturan baru）、terapan（应用的：ilmu terapan 应用科学）。典型搭配：menerapkan sistem / aturan / strategi / protokol。",
+      "example": "Sejak bulan ini, agen kami menerapkan aturan baru: barang pecah belah wajib dibungkus bubble wrap.",
+      "example_cn": "从这个月起，我们代收点推行一条新规定：易碎物品必须用气泡膜包好。",
+      "synonym_note": "先回想：menerapkan 后面接什么？——接规则、制度、方法，意思是把它“用到实际里”。memberlakukan 偏“让规定、价格生效”（memberlakukan harga khusus）；melaksanakan 是“执行”任务、计划（melaksanakan tugas）。说“推行新规定”时 menerapkan 和 memberlakukan 都可以。口语说法：日常常说 pakai sistem baru、bikin aturan baru。",
+      "everyday": "日常常说 pakai sistem baru；menerapkan 多用在通知、工作场合、新闻里",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyediakan",
+      "display": "menyediakan",
+      "audio_text": "menyediakan",
+      "cn": "提供；备好（供人使用）",
+      "en": "to provide; to make available",
+      "root": "sedia",
+      "root_cn": "备有；愿意",
+      "formation": "meN- + sedia + -kan → menyediakan（s 变 ny）。同词根：tersedia（有、备有：Formulir tersedia di meja depan）、disediakan（被提供）、persediaan（库存、储备，正式说法的“stok”）、bersedia（愿意：Saya bersedia membantu）。典型搭配：menyediakan layanan / tempat parkir / Wi-Fi gratis。",
+      "example": "Agen Kilat menyediakan bubble wrap dan lakban gratis untuk semua pelanggan.",
+      "example_cn": "闪电快递代收点为所有顾客免费提供气泡膜和胶带。",
+      "synonym_note": "先回想：menyediakan 和 menyiapkan 差在哪？menyediakan 是“备好放在那里给别人用”，常说店家、单位提供的服务（menyediakan Wi-Fi gratis）；menyiapkan 是为某件事“亲手准备”（menyiapkan dokumen untuk besok）。说“准备饭菜”两个都能用：menyediakan makanan 偏“给客人备好”，menyiapkan makanan 偏“做准备的过程”。口语说法：nyediain（Mereka nyediain parkir gratis）。",
+      "everyday": "日常常说 ada …（Di sini ada bubble wrap gratis）或 nyediain；menyediakan 多见于告示、服务介绍",
+      "is_oral_new": false
+    },
+    {
+      "word": "menyiapkan",
+      "display": "menyiapkan",
+      "audio_text": "menyiapkan",
+      "cn": "准备（好）某物",
+      "en": "to prepare; to get (something) ready",
+      "root": "siap",
+      "root_cn": "准备好的",
+      "formation": "meN- + siap + -kan → menyiapkan（s 变 ny）。同词根：disiapkan（被准备好）、persiapan（准备工作：persiapan acara）、siap-siap（做准备、预备）、bersiap（准备好要……：bersiap berangkat）。",
+      "example": "Sebelum tamu datang, Ibu sudah menyiapkan sayur asam dan ikan goreng.",
+      "example_cn": "客人来之前，妈妈已经准备好了酸菜汤和炸鱼。",
+      "synonym_note": "先回想：menyiapkan 是为某件具体的事“动手准备”：menyiapkan bukti（准备好证据）、menyiapkan diri（做好心理准备）。要说“提供给别人用”，用 menyediakan。口语说法：siapin（Siapin KTP-nya, ya = 把身份证准备好哦）；正式场合用 menyiapkan / mempersiapkan。",
+      "everyday": "日常常说 siapin（Siapin KTP-nya, ya）",
+      "is_oral_new": false
+    },
+    {
+      "word": "mengaku",
+      "display": "mengaku",
+      "audio_text": "mengaku",
+      "cn": "承认；自称",
+      "en": "to admit; to claim (to be)",
+      "root": "aku",
+      "root_cn": "我；承认",
+      "formation": "meN- + aku → mengaku。同词根：mengakui（承认某事，后接名词宾语：mengakui kesalahan）、diakui（被承认、被认可）、pengakuan（坦白；认可）。mengaku 后面多接形容词、从句或 sebagai：mengaku salah（认错）、mengaku sudah bayar（说自己已经付了）、mengaku sebagai polisi（自称警察）。",
+      "example": "Ada orang yang mengaku menemukan dompet saya, tapi dia minta transfer dulu. Jelas itu penipuan.",
+      "example_cn": "有人说捡到了我的钱包，可他要我先转账。这明显是骗局。",
+      "synonym_note": "先回想：mengaku 有哪两个意思？①承认：CS-nya mengaku ada kesalahan sistem；②自称（不一定是真的）：mengaku petugas bank，诈骗新闻里很常见。和 mengakui 的区别：mengakui 直接接名词（mengakui kesalahannya），mengaku 接形容词或从句（mengaku salah）。口语说法：ngaku（Dia ngaku nggak tahu）。",
+      "everyday": "日常常说 ngaku（Dia ngaku udah bayar）",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "menerapkan",
+    "menyediakan",
+    "menyiapkan",
+    "mengaku"
+  ],
+  "review_vocab": [
+    "ongkir",
+    "pengirim",
+    "penanganan",
+    "kalah",
+    "nyari"
+  ],
+  "sentences": [
+    {
+      "text": "Bu, aku udah nyari sambal yang sama di Medan, tapi di mana-mana stoknya habis.",
+      "cn": "妈，我已经在棉兰找过一样的辣椒酱了，可到处都卖完了。（udah = sudah，nyari = mencari）"
+    },
+    {
+      "text": "Klaim garansi ongkir harus diajukan oleh pengirim, bukan oleh penerima.",
+      "cn": "运费保障的理赔必须由寄件人申请，而不是收件人。"
+    },
+    {
+      "text": "Saya memahami kekesalan Ibu. Penanganan klaimnya biasanya butuh tiga hari kerja.",
+      "cn": "我理解您的不满。理赔的处理一般需要三个工作日。"
+    },
+    {
+      "text": "Peristiwa longsor itu termasuk bencana alam, jadi keterlambatannya tidak bisa diklaim.",
+      "cn": "那次山体滑坡属于自然灾害，所以那段延误不能申请理赔。"
+    },
+    {
+      "text": "Soal sabar, Bang Jali kalah jauh sama Mbak Sinta.",
+      "cn": "论耐心，贾利哥比辛塔姐差远了。"
+    }
+  ],
+  "reading": {
+    "title": "Garansi Ongkir dan Telepon Aneh · 运费保障和奇怪的来电",
+    "text": "Kamis pagi, Mbak Sinta langsung menelepon CS soal status retur itu. CS-nya mengaku ada kesalahan sistem: data penerima sudah diperbarui, tapi sistem terlambat mencatatnya, jadi paketnya otomatis diretur. \"Jadi returnya sudah dibatalkan, betul?\" tanya Mbak Sinta. \"Betul, Kak. Tapi paketnya baru tiba di Medan hari Senin.\" Bu Ros langsung kesal. \"Telat tiga hari lagi? Ongkirnya juga nggak murah!\" Mbak Sinta menunjuk poster baru di dinding. Kilat Express baru menerapkan sistem garansi: kalau paket telat karena kesalahan mereka, ongkirnya dikembalikan. Katanya, mereka nggak mau kalah sama jasa kirim lain. Klaimnya harus diajukan oleh pengirim, dan penanganannya butuh tiga hari kerja. Agen menyediakan formulirnya di meja depan, dan Mbak Sinta sudah menyiapkan foto bukti pengiriman. Sambil mengisi formulir, Bu Ros bercerita dia sempat nyari sambal yang sama buat cadangan, tapi di warung langganannya stok habis. Tiba-tiba HP-nya berbunyi. Seorang laki-laki mengaku petugas Kilat Express dan minta kode OTP \"supaya uang klaimnya cepat cair\".",
+    "cn": "周四早上，辛塔姐一上班就给客服打电话，问退回状态的事。客服承认是系统出了错：收件人信息其实已经更新，但系统记录晚了，所以包裹被自动退回。“所以退回已经取消了，对吗？”辛塔姐问。“对的。不过包裹要到周一才能到棉兰。”布罗丝阿姨一下子火了：“又晚三天？运费也不便宜啊！”辛塔姐指了指墙上的新海报。闪电快递刚推行一项保障制度：如果包裹因为他们的过错延误，运费退还。听说他们是不想输给别的快递公司。理赔必须由寄件人申请，处理需要三个工作日。代收点在前台备好了申请表，辛塔姐也已经准备好了寄件凭证的照片。布罗丝阿姨一边填表，一边说她本来想找一样的辣椒酱当备用，可常去的那家小店已经卖完了。突然，她的手机响了。一个男人自称是闪电快递的工作人员，向她要验证码，说是“这样理赔的钱能快点到账”。"
+  },
+  "quiz": [
+    {
+      "kind": "zh2id",
+      "question": "说实话，闪电快递处理投诉还挺快的。",
+      "target": "penanganan",
+      "target_cn": "处理（名词）",
+      "options": [
+        "Jujur, penanganan keluhan di Kilat Express cukup lambat.",
+        "Jujur, penanganannya keluhan di Kilat Express cukup cepat.",
+        "Jujur, penanganan keluhan di Kilat Express cukup cepat.",
+        "Jujur, penerimaan keluhan di Kilat Express cukup cepat."
+      ],
+      "answer_index": 2,
+      "answer": "Jujur, penanganan keluhan di Kilat Express cukup cepat.",
+      "point": "penanganan（处理）/ penerimaan（接收）；名词短语 penanganan keluhan 中间不加 -nya；cepat / lambat",
+      "explain": "“处理投诉”是 penanganan keluhan，“挺快”是 cukup cepat，所以 C 对。A 把“快”说成了 lambat（慢），意思反了；B 的 -nya 放错了位置：penanganan 后面直接接 keluhan，不说 penanganannya keluhan（单说“它的处理”才用 penanganannya：Penanganannya cepat）；D 的 penerimaan 是“接收、受理”，只说投诉收得快，没说处理得快。也可以用动词说：Kilat Express cepat menangani keluhan，意思一样。"
+    },
+    {
+      "question": "Menurut cerita hari ini, kenapa paket Bu Ros diretur?",
+      "options": [
+        "Karena alamat penerimanya masih belum lengkap.",
+        "Karena sistem terlambat mencatat data penerima yang sudah diperbarui.",
+        "Karena paketnya rusak waktu jalan tertutup longsor.",
+        "Karena Bu Ros sendiri membatalkan pengirimannya."
+      ],
+      "answer_index": 1,
+      "answer": "Karena sistem terlambat mencatat data penerima yang sudah diperbarui.",
+      "explain": "课文里客服承认（mengaku）是系统出错：收件人信息已经更新，但系统记录晚了（sistem terlambat mencatatnya），所以包裹被自动退回，B 对。A 不对：地址上一集已经补全了；C 课文没说包裹坏了；D 布罗丝阿姨从来没有取消寄件，她一直在着急等包裹到。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "我们代收点免费提供气泡膜。",
+      "target": "menyediakan",
+      "target_cn": "提供（供人使用）",
+      "options": [
+        "Agen kami menyiapkan bubble wrap gratis.",
+        "Agen kami disediakan bubble wrap gratis.",
+        "Agen kami tersedia bubble wrap gratis.",
+        "Agen kami menyediakan bubble wrap gratis."
+      ],
+      "answer_index": 3,
+      "answer": "Agen kami menyediakan bubble wrap gratis.",
+      "point": "menyediakan（提供）/ menyiapkan（为某事准备）；主动 me- / 被动 di- / 状态 ter-",
+      "explain": "代收点“提供”东西给顾客用，主语是代收点，用主动的 menyediakan，所以 D 对。A 的 menyiapkan 是为某件事动手准备（Saya sudah menyiapkan bubble wrap untuk paket ini），不表示长期“提供”这项服务；B 的 disediakan 是被动，主语应该是东西：Bubble wrap disediakan gratis；C 的 tersedia 要换句子结构：Di agen kami tersedia bubble wrap gratis（我们代收点有免费的气泡膜），这样也对。"
+    }
+  ],
+  "output": {
+    "task": "接本集结尾：有个男人自称闪电快递工作人员，向布罗丝阿姨要验证码。你是辛塔姐，给闪电快递官方客服发一条 WhatsApp（4 句）：说明有人自称（mengaku）是他们的工作人员，向寄件人要 OTP；用 Boleh saya cek dulu …? 问能不能先核对这个人是不是他们的员工；用 Jadi …, betul? 确认申请运费保障不需要验证码；用 Kira-kira kapan …? 问理赔处理大概什么时候完成。按骨架填空，用上 mengaku、garansi、pengirim 和 penanganan。",
+    "frame": "Halo, Kak. Barusan ada orang yang mengaku …… dan minta kode OTP dari pengirim kami, Bu Ros. Boleh saya cek dulu apakah ……? Jadi klaim garansi ongkir ……, betul? Kira-kira kapan …… selesai?",
+    "reference_answer": "Halo, Kak. Barusan ada orang yang mengaku petugas Kilat Express dan minta kode OTP dari pengirim kami, Bu Ros. Boleh saya cek dulu apakah orang itu memang karyawan Kilat Express? Jadi klaim garansi ongkir tidak perlu kode OTP, betul? Kira-kira kapan penanganan klaimnya selesai?",
+    "reference_cn": "你好。刚才有个人自称是闪电快递的工作人员，向我们的寄件人布罗丝阿姨要验证码。我可以先核对一下这个人是不是闪电快递的员工吗？所以申请运费保障不需要验证码，对吗？理赔大概什么时候能处理完？"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 运费（口语）、寄件人、处理（名词）、输；比不过、找（口语）；再说出 保修；保障、缺货、推行（规定）、提供、准备、承认；自称。卡住的词回看词卡再说一遍。",
+    "易混词：menyediakan 是备好给别人用（Agen menyediakan formulir di meja depan），menyiapkan 是为某件事亲手准备（Mbak Sinta menyiapkan foto bukti pengiriman）；mengaku 后接从句或身份（mengaku petugas Kilat Express），mengakui 后接名词（mengakui kesalahan）。各说一句。",
+    "重点复习词 penanganan（最近常错）是名词“处理”：penanganan klaim butuh tiga hari kerja；说动作用动词 menangani：CS-nya menangani klaim Bu Ros。再用 kalah 说一句比较：Soal sabar, Bang Jali kalah jauh sama Mbak Sinta。"
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "运费（口语）",
+        "id": "ongkir"
+      },
+      {
+        "cn": "寄件人",
+        "id": "pengirim"
+      },
+      {
+        "cn": "处理（名词）",
+        "id": "penanganan"
+      },
+      {
+        "cn": "输；比不过",
+        "id": "kalah"
+      },
+      {
+        "cn": "找（口语）",
+        "id": "nyari"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "menyediakan",
+            "cn": "提供；备好给别人用"
+          },
+          {
+            "id": "menyiapkan",
+            "cn": "为某件事亲手准备"
+          }
+        ],
+        "note": "店家、单位提供服务用 menyediakan（menyediakan formulir, Wi-Fi gratis）；为某件事动手准备用 menyiapkan（menyiapkan bukti）。说“准备饭菜”两个都能用。"
+      },
+      {
+        "items": [
+          {
+            "id": "mengaku",
+            "cn": "承认；自称"
+          },
+          {
+            "id": "mengakui",
+            "cn": "承认（某事）"
+          }
+        ],
+        "note": "mengaku 接形容词、从句或身份（mengaku salah, mengaku petugas）；mengakui 直接接名词（mengakui kesalahan）。“自称”只用 mengaku。"
+      },
+      {
+        "items": [
+          {
+            "id": "penanganan",
+            "cn": "处理（名词）"
+          },
+          {
+            "id": "menangani",
+            "cn": "处理（动词）"
+          }
+        ],
+        "note": "同词根 tangan：做主语、宾语的“处理”用名词 penanganan（penanganan klaim butuh tiga hari）；说谁在处理用动词 menangani（CS menangani klaim）。"
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "garansi",
+      "stok habis",
+      "menyediakan"
+    ],
+    "patterns": [
+      {
+        "pattern": "Jadi …, betul?",
+        "cn": "所以……，对吗？",
+        "function": "confirm-info",
+        "example": "Jadi returnya sudah dibatalkan, betul?",
+        "example_cn": "所以退回已经取消了，对吗？"
+      },
+      {
+        "pattern": "… sempat …, tapi …",
+        "cn": "本来（一度）……，可是……",
+        "example": "Sambil mengisi formulir, Bu Ros bercerita dia sempat nyari sambal yang sama buat cadangan, tapi di warung langganannya stok habis.",
+        "example_cn": "布罗丝阿姨一边填表，一边说她本来想找一样的辣椒酱当备用，可常去的那家小店已经卖完了。"
+      }
+    ]
+  }
+}
